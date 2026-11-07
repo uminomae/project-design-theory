@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT="as"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
-python3 "$ROOT/transform/scripts/generate-awareness-topic-svg.py" "$@"
+python3 "$SCRIPT_DIR/generate-awareness-topic-svg.py" "$@"

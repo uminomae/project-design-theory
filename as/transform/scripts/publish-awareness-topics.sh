@@ -1,8 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT="as"
-PJDHIRO="pjdhiro/assets/awareness"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
+# pjdhiro の場所は PJDHIRO_DIR か、as/ から上へ探して決める。見つからなければ止まる
+# （作業ディレクトリに偽の pjdhiro/ を作らないため）
+# shellcheck source=pjdhiro-dir.sh
+source "$SCRIPT_DIR/pjdhiro-dir.sh"
+PJDHIRO_REPO="$(find_pjdhiro_dir "$ROOT")" || exit 1
+PJDHIRO="$PJDHIRO_REPO/assets/awareness"
 TOPICS_JA_MD_DIR="$PJDHIRO/topics/ja/md"
 TOPICS_EN_MD_DIR="$PJDHIRO/topics/en/md"
 TOPICS_JA_PDF_DIR="$PJDHIRO/topics/ja/pdf"

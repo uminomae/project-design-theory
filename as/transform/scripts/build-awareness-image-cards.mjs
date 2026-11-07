@@ -1,6 +1,8 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
+import { findAwarenessAssetsRoot } from './pjdhiro-dir.mjs';
+
 export const IMAGE_EXTENSIONS = new Set(['.png', '.jpg', '.jpeg', '.webp', '.gif']);
 export const AUTO_TITLE_PRESETS = {
     intent: {
@@ -293,7 +295,8 @@ export async function buildImageCardsManifest({
 }
 
 async function main() {
-    const awarenessAssetsRoot = 'pjdhiro/assets/awareness';
+    // pjdhiro の場所は PJDHIRO_DIR か、このスクリプトから上へ探して決める（見つからなければ止まる）
+    const awarenessAssetsRoot = findAwarenessAssetsRoot();
     const itemsDir = path.join(awarenessAssetsRoot, 'image-cards/items');
     const manifestPath = path.join(awarenessAssetsRoot, 'manifests/image-cards.json');
     const result = await buildImageCardsManifest({ itemsDir, manifestPath });

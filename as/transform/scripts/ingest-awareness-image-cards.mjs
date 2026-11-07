@@ -7,6 +7,7 @@ import {
     findOrphanImages,
     formatLocalDate,
 } from './build-awareness-image-cards.mjs';
+import { findAwarenessAssetsRoot } from './pjdhiro-dir.mjs';
 
 export function formatImageCardsIngestSummary({
     created = [],
@@ -20,7 +21,8 @@ export function formatImageCardsIngestSummary({
 }
 
 export async function ingestAwarenessImageCards({
-    awarenessAssetsRoot = 'pjdhiro/assets/awareness',
+    // 渡されなければ pjdhiro の場所を PJDHIRO_DIR か上へ探して決める（見つからなければ止まる）
+    awarenessAssetsRoot = findAwarenessAssetsRoot(),
     generatedAt = formatLocalDate(),
 } = {}) {
     const itemsDir = path.join(awarenessAssetsRoot, 'image-cards/items');

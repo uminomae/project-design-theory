@@ -20,7 +20,11 @@ GREEN='\033[0;32m'; YELLOW='\033[1;33m'; BLUE='\033[0;34m'; RED='\033[0;31m'; NC
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 AWARENESS_SPACE_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
-PJDHIRO_DIR="pjdhiro"
+# pjdhiro の場所は PJDHIRO_DIR か、as/ から上へ探して決める。見つからなければ止まる
+# shellcheck source=pjdhiro-dir.sh
+source "$SCRIPT_DIR/pjdhiro-dir.sh"
+PJDHIRO_DIR="$(find_pjdhiro_dir "$AWARENESS_SPACE_ROOT")" || exit 1
+export PJDHIRO_DIR
 GUIDES_BASE="$PJDHIRO_DIR/assets/awareness/guides"
 SURVEY_BASE="$PJDHIRO_DIR/assets/awareness/survey"
 TOPICS_BASE="$PJDHIRO_DIR/assets/awareness/topics"
@@ -571,6 +575,8 @@ main() {
                 echo "  --push                                           ビルド後に公開 assets を commit/push"
                 echo "                                                   公開時は --lang all を必須とする"
                 echo "  --setup                                          依存チェックのみ"
+                echo ""
+                echo "pjdhiro: $PJDHIRO_DIR（PJDHIRO_DIR で指定できる）"
                 exit 0
                 ;;
             *) echo -e "${RED}不明なオプション: $1${NC}"; exit 1 ;;

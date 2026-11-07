@@ -10,10 +10,28 @@ import sys
 import time
 from pathlib import Path
 
-ROOT = Path("as")
-PJDHIRO = Path("pjdhiro/assets/awareness")
+# as/ の場所はこのスクリプトの場所から決める
+ROOT = Path(__file__).resolve().parents[2]
 PROMPT_DIR = ROOT / "transform" / "topics" / "svg-prompts"
-OUTPUT_DIR = PJDHIRO / "img" / "svg" / "topics"
+
+
+def find_pjdhiro_dir() -> Path:
+    """pjdhiro の場所を PJDHIRO_DIR か、as/ から上へ探して決める。見つからなければ止まる。"""
+    env = os.environ.get("PJDHIRO_DIR")
+    if env:
+        candidate = Path(env).expanduser().resolve()
+        if (candidate / "assets" / "awareness").is_dir():
+            return candidate
+        sys.exit(f"pjdhiro: PJDHIRO_DIR={env} に assets/awareness が無い")
+    for parent in ROOT.parents:
+        candidate = parent / "pjdhiro"
+        if (candidate / "assets" / "awareness").is_dir():
+            return candidate
+    sys.exit(f"pjdhiro: {ROOT} から上に pjdhiro/assets/awareness が見つからない（PJDHIRO_DIR で指定できる）")
+
+
+def output_dir() -> Path:
+    return find_pjdhiro_dir() / "assets" / "awareness" / "img" / "svg" / "topics"
 MODEL = "gemini-2.5-pro"
 API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
 API_KEY = os.environ.get("GEMINI_API_KEY", "")
@@ -48,7 +66,7 @@ def report_path(slug: str, lang: str) -> Path:
 
 
 def output_path(slug: str, lang: str) -> Path:
-    return OUTPUT_DIR / lang / f"{slug}-01-overview-svg.svg"
+    return output_dir() / lang / f"{slug}-01-overview-svg.svg"
 
 
 def build_prompt(slug: str, lang: str) -> str:
@@ -168,6 +186,7 @@ def main() -> int:
     parser.add_argument("--slug", required=True, choices=sorted(SUPPORTED.keys()))
     parser.add_argument("--lang", default="all", choices=["ja", "en", "all"])
     args = parser.parse_args()
+    print(f"pjdhiro: {find_pjdhiro_dir()}")
 
     langs = ["ja", "en"] if args.lang == "all" else [args.lang]
     for lang in langs:
