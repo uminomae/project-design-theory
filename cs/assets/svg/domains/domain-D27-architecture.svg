@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <marker id="arrowD27" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666666"/>
+    </marker>
+    <style>
+      .title { font-family: 'Hiragino Sans', 'Noto Sans JP', sans-serif; font-size: 24px; fill: #2C2C2C; font-weight: bold; }
+      .stage-label { font-family: 'Hiragino Sans', 'Noto Sans JP', sans-serif; font-size: 14px; fill: #FAFAF8; font-weight: bold; }
+      .stage-sub { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 11px; fill: #FAFAF8; }
+      .concept { font-family: 'Hiragino Sans', 'Noto Sans JP', sans-serif; font-size: 12px; fill: #2C2C2C; }
+      .ref { font-family: 'Inter', 'Helvetica Neue', sans-serif; font-size: 11px; fill: #666666; }
+      .summary-title { font-family: 'Hiragino Sans', 'Noto Sans JP', sans-serif; font-size: 14px; fill: #2C2C2C; font-weight: bold; }
+      .summary-text { font-family: 'Hiragino Sans', 'Noto Sans JP', sans-serif; font-size: 12px; fill: #666666; }
+      .legend { font-family: 'Hiragino Sans', 'Noto Sans JP', sans-serif; font-size: 11px; fill: #666666; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FAFAF8" rx="8"/>
+  <rect x="20" y="20" width="760" height="560" fill="none" stroke="#E0DDD8" stroke-width="1" rx="6"/>
+
+  <!-- Title -->
+  <text x="400" y="60" text-anchor="middle" class="title">D27 建築学 — 5段階モデルとの構造対応図</text>
+
+  <!-- Stage boxes -->
+  <!-- Field -->
+  <rect x="50" y="100" width="120" height="70" rx="8" fill="#8B8682"/>
+  <text x="110" y="128" text-anchor="middle" class="stage-label">場（Field）</text>
+  <text x="110" y="148" text-anchor="middle" class="stage-sub">余白と潜在性</text>
+
+  <!-- Wave -->
+  <rect x="200" y="100" width="120" height="70" rx="8" fill="#5B8DB8"/>
+  <text x="260" y="128" text-anchor="middle" class="stage-label">波（Wave）</text>
+  <text x="260" y="148" text-anchor="middle" class="stage-sub">形態探索・変形</text>
+
+  <!-- Edge -->
+  <rect x="350" y="100" width="120" height="70" rx="8" fill="#D4A857"/>
+  <text x="410" y="128" text-anchor="middle" class="stage-label">縁（Edge）</text>
+  <text x="410" y="148" text-anchor="middle" class="stage-sub">中間領域・閾空間</text>
+
+  <!-- Vortex -->
+  <rect x="500" y="100" width="120" height="70" rx="8" fill="#C45B4D"/>
+  <text x="560" y="128" text-anchor="middle" class="stage-label">渦（Vortex）</text>
+  <text x="560" y="148" text-anchor="middle" class="stage-sub">構造保持変換</text>
+
+  <!-- Bundle -->
+  <rect x="650" y="100" width="120" height="70" rx="8" fill="#5B8B6A"/>
+  <text x="710" y="128" text-anchor="middle" class="stage-label">束（Bundle）</text>
+  <text x="710" y="148" text-anchor="middle" class="stage-sub">設計語彙の継承</text>
+
+  <!-- Arrows between stages -->
+  <line x1="170" y1="135" x2="198" y2="135" stroke="#666666" stroke-width="2" marker-end="url(#arrowD27)"/>
+  <line x1="320" y1="135" x2="348" y2="135" stroke="#666666" stroke-width="2" marker-end="url(#arrowD27)"/>
+  <line x1="470" y1="135" x2="498" y2="135" stroke="#666666" stroke-width="2" marker-end="url(#arrowD27)"/>
+  <line x1="620" y1="135" x2="648" y2="135" stroke="#666666" stroke-width="2" marker-end="url(#arrowD27)"/>
+
+  <!-- Concepts under each stage -->
+  <!-- Field concepts -->
+  <line x1="110" y1="170" x2="110" y2="195" stroke="#8B8682" stroke-width="2"/>
+  <rect x="40" y="195" width="140" height="110" rx="6" fill="none" stroke="#8B8682" stroke-width="1.5"/>
+  <text x="110" y="215" text-anchor="middle" class="concept">「間」の余白性</text>
+  <text x="110" y="235" text-anchor="middle" class="concept">Ottoの潜在的特性</text>
+  <text x="110" y="255" text-anchor="middle" class="concept">Aravenaの不完全さ</text>
+  <text x="110" y="280" text-anchor="middle" class="ref">(Otto/Aravena)</text>
+
+  <!-- Wave concepts -->
+  <line x1="260" y1="170" x2="260" y2="195" stroke="#5B8DB8" stroke-width="2"/>
+  <rect x="190" y="195" width="140" height="110" rx="6" fill="none" stroke="#5B8DB8" stroke-width="1.5"/>
+  <text x="260" y="215" text-anchor="middle" class="concept">力学的形態発見</text>
+  <text x="260" y="235" text-anchor="middle" class="concept">構造探索・変形</text>
+  <text x="260" y="255" text-anchor="middle" class="concept">都市の多様性生成</text>
+  <text x="260" y="280" text-anchor="middle" class="ref">(Otto/Jacobs)</text>
+
+  <!-- Edge concepts - strongest correspondence, thicker border -->
+  <line x1="410" y1="170" x2="410" y2="195" stroke="#D4A857" stroke-width="2.5"/>
+  <rect x="340" y="195" width="140" height="110" rx="6" fill="none" stroke="#D4A857" stroke-width="2.5"/>
+  <text x="410" y="215" text-anchor="middle" class="concept">中間領域(van Eyck)</text>
+  <text x="410" y="235" text-anchor="middle" class="concept">閾空間(Hertzberger)</text>
+  <text x="410" y="255" text-anchor="middle" class="concept">縁側・poche</text>
+  <text x="410" y="280" text-anchor="middle" class="ref">(5理論が全条件充足)</text>
+
+  <!-- Vortex concepts -->
+  <line x1="560" y1="170" x2="560" y2="195" stroke="#C45B4D" stroke-width="2"/>
+  <rect x="490" y="195" width="140" height="110" rx="6" fill="none" stroke="#C45B4D" stroke-width="1.5"/>
+  <text x="560" y="215" text-anchor="middle" class="concept">構造保持変換</text>
+  <text x="560" y="235" text-anchor="middle" class="concept">unfolding(Alexander)</text>
+  <text x="560" y="255" text-anchor="middle" class="concept">計算形態生成</text>
+  <text x="560" y="280" text-anchor="middle" class="ref">(Alexander/Menges)</text>
+
+  <!-- Bundle concepts -->
+  <line x1="710" y1="170" x2="710" y2="195" stroke="#5B8B6A" stroke-width="2"/>
+  <rect x="640" y="195" width="140" height="110" rx="6" fill="none" stroke="#5B8B6A" stroke-width="1.5"/>
+  <text x="710" y="215" text-anchor="middle" class="concept">15の性質(Alexander)</text>
+  <text x="710" y="235" text-anchor="middle" class="concept">設計語彙の継承</text>
+  <text x="710" y="255" text-anchor="middle" class="concept">制度化された教育</text>
+  <text x="710" y="280" text-anchor="middle" class="ref">(Lynch/Alexander)</text>
+
+  <!-- Legend -->
+  <rect x="40" y="325" width="720" height="80" rx="6" fill="none" stroke="#E0DDD8" stroke-width="1"/>
+  <text x="60" y="348" class="summary-title">対応の強さ</text>
+  <line x1="60" y1="365" x2="100" y2="365" stroke="#2C2C2C" stroke-width="2"/>
+  <text x="108" y="369" class="legend">強い対応</text>
+  <line x1="240" y1="365" x2="280" y2="365" stroke="#2C2C2C" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="288" y="369" class="legend">部分的対応</text>
+  <line x1="440" y1="365" x2="480" y2="365" stroke="#D0D0D0" stroke-width="2" stroke-dasharray="2,3"/>
+  <text x="488" y="369" class="legend">弱い対応</text>
+  <text x="60" y="392" class="summary-title" style="font-size:12px;">確定に近い: Alexander, Otto, van Eyck, Hertzberger, 間</text>
+  <text x="60" y="408" class="legend">対応なし: Schumacher(パラメトリシズム) — 縁の消去方向で5段階と構造的に矛盾</text>
+
+  <!-- Summary -->
+  <rect x="40" y="425" width="720" height="135" rx="6" fill="none" stroke="#E0DDD8" stroke-width="1"/>
+  <text x="60" y="448" class="summary-title">全体評価サマリ</text>
+  <text x="60" y="468" class="summary-text">12理論中10理論で構造対応確認。全30領域中でも特に有力な領域。</text>
+  <text x="60" y="488" class="summary-text">「縁」との共振密度が際立つ: 建築は本質的に「境界の設計」を扱う学問。</text>
+  <text x="60" y="508" class="summary-text">「境界は線ではなく帯域である」が複数の理論家により独立に発見されている。</text>
+  <text x="60" y="528" class="summary-text">縁の類型: 帯域設計型 — 「縁を設計する」唯一の領域。記述から操作へのシフト。</text>
+  <text x="60" y="548" class="summary-text">「場」は空白でなく余白の積極的構成として現れる（間、Aravena）。</text>
+</svg>

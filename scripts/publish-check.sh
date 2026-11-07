@@ -39,7 +39,7 @@ fi
 # 形で見つけるもの（拡張正規表現）
 patterns=(
   '/Users/[A-Za-z0-9._-]+'
-  '/home/[A-Za-z0-9._-]+'
+  '(^|[^A-Za-z0-9~._-])/home/[A-Za-z0-9._-]+'
   '[A-Za-z]:\\Users\\'
   'gh[pousr]_[A-Za-z0-9]{20,}'
   'github_pat_[A-Za-z0-9_]{20,}'

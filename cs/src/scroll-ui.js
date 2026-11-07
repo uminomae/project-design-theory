@@ -1,0 +1,196 @@
+// scroll-ui.js — スクロール連動のHTML UI制御
+// overlay, control-guide, scroll hints, surface button の表示/非表示を一元管理
+//
+// Scroll fade targets (must be checked when layout/classes are changed):
+// - IDs: #overlay, #control-guide
+// - Hint visibility by class toggle: #scroll-hint.visible, #scroll-hint-top.visible
+//
+// Update-time manual test checklist:
+// 1) At page top, bottom hint is visible and fade targets are visible.
+// 2) After downward scroll, fade targets lose opacity and bottom hint hides.
+// 3) Top hint appears only after leaving top and fade behavior remains stable.
+// 4) Near bottom, surface button behavior remains unchanged.
+
+import { toggles, breathConfig } from './config.js';
+import { requestScroll } from './scroll-coordinator.js';
+import { pxFromViewportHeight } from './nav/responsive.js';
+
+// --- DOM要素キャッシュ ---
+let _overlay;
+let _controlGuide;
+let _scrollHintBottom;
+let _scrollHintTop;
+let _surfaceBtn;
+let _articlesSection;
+let _graphicSwitcher;
+
+// --- T-014: クリーンアップ ---
+let _cleanup = null;
+
+/**
+ * DOM要素の取得とイベント登録
+ */
+export function initScrollUI() {
+    _cleanup?.();
+
+    _overlay = document.getElementById('overlay');
+    _controlGuide = document.getElementById('control-guide');
+    _scrollHintBottom = document.getElementById('scroll-hint');
+    _scrollHintTop = document.getElementById('scroll-hint-top');
+    _surfaceBtn = document.getElementById('surface-btn');
+    _articlesSection = document.getElementById('articles-section');
+    _graphicSwitcher = document.getElementById('graphic-switcher');
+
+    // 浮上ボタン: クリックでページ最上部へ
+    if (_surfaceBtn) {
+        _surfaceBtn.addEventListener('click', scrollToTop);
+    }
+    // 上部scroll hint: クリックでページ最上部へ
+    if (_scrollHintTop) {
+        _scrollHintTop.addEventListener('click', scrollToTop);
+    }
+
+    // --- クリーンアップ関数を登録 ---
+    _cleanup = () => {
+        if (_surfaceBtn) _surfaceBtn.removeEventListener('click', scrollToTop);
+        if (_scrollHintTop) _scrollHintTop.removeEventListener('click', scrollToTop);
+    };
+}
+
+/**
+ * 全リスナーを解除。
+ */
+export function destroyScrollUI() {
+    _cleanup?.();
+    _cleanup = null;
+}
+
+function scrollToTop() {
+    requestScroll(0, 'scroll-ui:scroll-to-top', { behavior: 'smooth' });
+}
+
+/**
+ * ページ最下部判定
+ */
+function isNearBottom() {
+    const scrollBottom = window.scrollY + window.innerHeight;
+    const docHeight = document.documentElement.scrollHeight;
+    // Phase C: px固定をビューポート基準へ置換（UI近接判定のみ対象）
+    const nearBottomThresholdPx = pxFromViewportHeight(60, { minScale: 0.7, maxScale: 1.4 });
+    return (docHeight - scrollBottom) < nearBottomThresholdPx;
+}
+
+/**
+ * 毎フレーム呼び出し: スクロール進捗に応じてUI更新
+ * @param {number} scrollProg - スクロール進捗 (0~1)
+ * @param {number} breathVal  - 呼吸値 (0~1)
+ */
+export function updateScrollUI(scrollProg, breathVal) {
+    const atTopThresholdPx = pxFromViewportHeight(20, { minScale: 0.7, maxScale: 1.4 });
+    const atTop = window.scrollY < atTopThresholdPx;
+    const atBottom = isNearBottom();
+
+    // --- 共通フェード係数 ---
+    const topFade = Math.max(0, 1 - scrollProg * 4);
+
+    // --- オーバーレイ（タイトル）: スクロール初期でフェードアウト ---
+    updateOverlayFade(scrollProg, breathVal);
+
+    // --- 操作ガイド: スクロール初期でフェードアウト ---
+    if (_controlGuide) {
+        _controlGuide.style.opacity = topFade;
+    }
+
+    // --- 背景スイッチャー: スクロール初期でフェードアウト ---
+    if (_graphicSwitcher) {
+        _graphicSwitcher.style.opacity = topFade;
+        _graphicSwitcher.style.pointerEvents = topFade < 0.1 ? 'none' : '';
+    }
+
+    // Language toggle is part of the fixed top navbar and must not follow scroll fade.
+
+    // --- 下部 scroll hint: ページ上部のみ表示（下方向スクロール後は非表示） ---
+    if (_scrollHintBottom) {
+        const showBottomHint = atTop && !atBottom;
+        _scrollHintBottom.classList.toggle('visible', showBottomHint);
+    }
+
+    // --- 上部 scroll hint: スクロール中のみ表示、最上部で消える ---
+    if (_scrollHintTop) {
+        const showTop = !atTop && scrollProg > 0.15;
+        if (showTop) {
+            _scrollHintTop.classList.add('visible');
+        } else {
+            _scrollHintTop.classList.remove('visible');
+        }
+    }
+
+    // --- 浮上ボタン: 80%以上で表示 ---
+    if (_surfaceBtn) {
+        const showSurface = scrollProg > 0.8;
+        _surfaceBtn.style.opacity = showSurface ? '1' : '0';
+        _surfaceBtn.style.pointerEvents = showSurface ? 'auto' : 'none';
+    }
+
+    updateArticlesFocusability(scrollProg);
+}
+
+function updateArticlesFocusability(scrollProg) {
+    if (!_articlesSection) return;
+
+    const rect = _articlesSection.getBoundingClientRect();
+    const windowH = window.innerHeight || document.documentElement.clientHeight;
+    const isNearViewport = rect.top <= windowH * 0.9;
+    const shouldEnable = scrollProg > 0.22 || isNearViewport;
+
+    const focusables = _articlesSection.querySelectorAll('a[href], button:not([disabled]), [tabindex]');
+
+    focusables.forEach((el) => {
+        if (!(el instanceof HTMLElement)) return;
+
+        if (shouldEnable) {
+            const prev = el.dataset.kessonPrevTabindex;
+            if (prev === undefined) return;
+            if (prev === '__none__') {
+                el.removeAttribute('tabindex');
+            } else {
+                el.setAttribute('tabindex', prev);
+            }
+            delete el.dataset.kessonPrevTabindex;
+            return;
+        }
+
+        if (el.dataset.kessonPrevTabindex === undefined) {
+            el.dataset.kessonPrevTabindex = el.hasAttribute('tabindex')
+                ? (el.getAttribute('tabindex') || '__none__')
+                : '__none__';
+        }
+        el.setAttribute('tabindex', '-1');
+    });
+}
+
+/**
+ * オーバーレイの呼吸+スクロールフェード
+ */
+function updateOverlayFade(scrollProg, breathVal) {
+    if (!_overlay) return;
+
+    const scrollFade = Math.max(0, 1 - scrollProg * 3.3);
+
+    if (toggles.htmlBreath && scrollFade > 0) {
+        const opacity = breathConfig.htmlMinOpacity
+            + breathVal * (breathConfig.htmlMaxOpacity - breathConfig.htmlMinOpacity);
+        const blur = breathConfig.htmlMaxBlur * (1 - breathVal);
+        const scale = breathConfig.htmlMinScale + breathVal * (1 - breathConfig.htmlMinScale);
+        _overlay.style.opacity = opacity * scrollFade;
+        _overlay.style.filter = `blur(${blur}px)`;
+        _overlay.style.transform = `scale(${scale})`;
+    } else if (scrollFade > 0) {
+        _overlay.style.opacity = breathConfig.htmlMaxOpacity * scrollFade;
+        _overlay.style.filter = 'none';
+        _overlay.style.transform = 'scale(1)';
+    } else {
+        _overlay.style.opacity = '0';
+        _overlay.style.pointerEvents = 'none';
+    }
+}

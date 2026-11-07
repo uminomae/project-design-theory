@@ -1,0 +1,122 @@
+{
+  "basePath": "./",
+  "presets": {
+    "design_system": {
+      "label": "Design System",
+      "path": "./dev-components.html",
+      "query": {},
+      "devOnly": true
+    },
+    "guide_general": {
+      "label": "解説: 一般向け",
+      "path": "./",
+      "query": {
+        "guide": "general"
+      }
+    },
+    "guide_designer": {
+      "label": "解説: 設計者向け",
+      "path": "./",
+      "query": {
+        "guide": "designer"
+      }
+    },
+    "guide_expert": {
+      "label": "解説: 専門家向け",
+      "path": "./",
+      "query": {
+        "guide": "expert"
+      }
+    },
+    "modal_status": {
+      "label": "ステータスレポート",
+      "path": "./",
+      "query": {
+        "modal": "status"
+      }
+    },
+    "modal_synthesis": {
+      "label": "領域横断統合レポート",
+      "path": "./",
+      "query": {
+        "modal": "synthesis"
+      }
+    },
+    "modal_phase8_recirculation": {
+      "label": "Phase8: 再循環メカニズム",
+      "path": "./",
+      "query": {
+        "modal": "phase8-recirculation"
+      }
+    },
+    "modal_verify_T7T9": {
+      "label": "検証: 盲点と反例",
+      "path": "./",
+      "query": {
+        "modal": "verify-T7T9"
+      }
+    },
+    "modal_verify_integration": {
+      "label": "検証: 5テーマ統合レポート",
+      "path": "./",
+      "query": {
+        "modal": "verify-integration"
+      }
+    },
+    "domain_d23_developmental_psychology": {
+      "label": "D23 発達心理学",
+      "path": "./",
+      "query": {
+        "domain": "D23"
+      }
+    },
+    "slide_d01_mathematics": {
+      "label": "D01 数学 スライド",
+      "path": "./",
+      "query": {
+        "slide": "D01"
+      }
+    },
+    "slide_d23_developmental_psychology": {
+      "label": "D23 発達心理学 スライド",
+      "path": "./",
+      "query": {
+        "slide": "D23"
+      }
+    },
+    "slide_synthesis": {
+      "label": "統合レポート スライド",
+      "path": "./",
+      "query": {
+        "slide": "synthesis"
+      }
+    },
+    "slide_phase8_edge_typology": {
+      "label": "Phase8: 縁の類型学 スライド",
+      "path": "./",
+      "query": {
+        "slide": "phase8-edge-typology"
+      }
+    },
+    "intent_utime7500_cam40": {
+      "label": "Intent: uTime 7500 / Cam 40deg",
+      "path": "./",
+      "query": {
+        "dev": 1,
+        "graphic": "i",
+        "utime": 7500,
+        "camdeg": 40
+      }
+    },
+    "intent_utime7500_cam220": {
+      "label": "Intent: uTime 7500 / Cam 220deg",
+      "path": "./",
+      "query": {
+        "dev": 1,
+        "graphic": "i",
+        "utime": 7500,
+        "camdeg": 220
+      }
+    }
+  }
+}
