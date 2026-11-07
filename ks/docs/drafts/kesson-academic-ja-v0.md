@@ -275,4 +275,4 @@ generated: 2026-11-03
 - 文献の出典と確認状況は統合表 v4（`docs/issues/ISS-216-candidate-survey.md`）に従う。本文の引用は統合表で原文照合済みのものだけ。Cook-Greuter 2013 の前提は techo `logs/2026-10-25-adult-development-axes.md` 経由
 - 未採点の正本・ガイド由来の主張は本文に入れていない
 - 使わなかった語: 「棄却される誤差」「捨てられる誤差」／定義番号／「保持」（語として。抱19 の原文引用「悪い保持」は S26 の本人の語なので本文では「悪いもの」「保ち方」に言い換えた）
-- 議論ノート: https://claude.ai/artifact/3FPSFTxjvJrgHvBcAxmXXU（本文タブ）
+- 議論ノート: （非公開のアーティファクト）（本文タブ）

@@ -70,7 +70,7 @@ docs/ に置かないもの:
 | `docs/quality-management.md` | **品質管理 正本**: 品質チェック・自動テストカタログ(§7)・ワークフロー×品質書類対応表(§8)・定期網羅ランブック(§9) |
 | `scripts/qc-all.sh` | 決定的 QC テスト 網羅ランナー（定期/backfill後に実行） |
 | `docs/guardian-matrix.md` | ルール × 守護者マトリクス（CS-001〜 採番） |
-| `evidence/CLAUDE.md` | `evidence/` 配下での補助ルール |
+| `evidence/RULES-creation-space.md` | `evidence/` 配下での補助ルール（今までの規約。見直すまで使わない。`docs/RULES-REVIEW.md`） |
 
 ## 5. 開発フロー
 

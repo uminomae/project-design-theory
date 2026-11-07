@@ -4,7 +4,7 @@
 **関連表現**: E11
 **関連発言**: pjdhiro 2026-11-02（抱16・抱17・抱18・抱19・定20・位16）、2026-02-06（S26・techo）、2026-10-25（techo 自己観察ログ）
 **状態**: active（仮説的定義の足場。#216 草案 v0.4 を正本に反映・2026-11-03）
-**出典**: 議論ノート https://claude.ai/artifact/3FPSFTxjvJrgHvBcAxmXXU ／公開予定版 https://claude.ai/artifact/Qauw5ETsYiwnaQU3egcCsX ／棚卸し `docs/issues/ISS-215-claims-inventory.md`
+**出典**: 議論ノート （非公開のアーティファクト） ／公開予定版 （非公開のアーティファクト） ／棚卸し `docs/issues/ISS-215-claims-inventory.md`
 
 ---
 

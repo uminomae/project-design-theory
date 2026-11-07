@@ -3,7 +3,7 @@
 **対象 Issue**: https://github.com/uminomae/project-design-theory/issues/45（段 2）／#215／#217
 **状態**: v0.1（2026-11-02）。v0（`ISS-216-outline-v0.md`）の組み方（§0・承認済み）を引き継ぎ、章の順序だけを本人の答えで組み直した。本文の採否・言い直しは pjdhiro
 **章の順序の根拠**: 位17（三軸の宣言）と、議論ノートの問い 3 への答え「a」（位18）＝ **案 A：②発達段階とゼロとする認知 → ①意識 → ③思考方法の種別**
-**議論ノート**: https://claude.ai/artifact/3FPSFTxjvJrgHvBcAxmXXU（決まったこと・問い・反映の控え）
+**議論ノート**: （非公開のアーティファクト）（決まったこと・問い・反映の控え）
 **材料の追加（v0 以降）**: 棚卸し 定20・抱16・抱17・抱18・抱19・位16・位17・位18。CN-009 §8 保持論点 13。techo `logs/2026-10-25-ego-development-self-observation.md`。pd `knowledge/research/stages-screener/README.md` §8 参照体系 7（非二元性）
 **v0 との関係**: v0 の §1〜§9・付録 A・B はそのまま有効。本書は「どの章にどの節を置くか」と「新しく足す材料」だけを書く。v0 にある本文・仮説・テスト文の中身は繰り返さない
 

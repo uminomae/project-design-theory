@@ -55,6 +55,7 @@
 | D | creation-space | `.claude/skills/domain-report/SKILL.md` | 84 | 8 | 0 | 2026-06-12 |
 | D | creation-space | `.claude/agents/source-reader.md` | 76 | 0 | 0 | 2026-04-10 |
 | D | awareness-space | `docs/report-structure.md` | 84 | 1 | 0 | 2026-03-17 |
+| D | creation-space | `cs/evidence/RULES-creation-space.md`（もとは `evidence/CLAUDE.md`。入れるまで自動で読まれないよう、2026-11-07 に名前を変えた） | 7 | 0 | 0 | — |
 | E | project-design | `.claude/rules/seo-llm.md` | 48 | 0 | 0 | 2026-03-27 |
 
 ## 対象外にしたもの
