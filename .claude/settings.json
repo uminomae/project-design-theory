@@ -1,0 +1,49 @@
+{
+  "permissions": {
+    "deny": [
+      "Bash(git push --force *)",
+      "Bash(git push -f *)",
+      "Bash(git reset --hard *)",
+      "Bash(git checkout -- *)",
+      "Bash(git clean *)",
+      "Bash(rm -rf *)",
+      "Bash(rm -r /)",
+      "Bash(curl * | bash)",
+      "Bash(wget * | bash)",
+      "Bash(chmod 777 *)",
+      "Read(~/dev-private/**)",
+      "Edit(~/dev-private/**)",
+      "Write(~/dev-private/**)",
+      "Bash(*dev-private*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/content-compile.sh",
+            "timeout": 20,
+            "statusMessage": "Content wiki-link compile..."
+          }
+        ]
+      }
+    ]
+  },
+  "sandbox": {
+    "excludedCommands": [
+      "git push",
+      "git push *",
+      "git fetch",
+      "git fetch *",
+      "git pull",
+      "git pull *",
+      "git ls-remote",
+      "git ls-remote *",
+      "gh",
+      "gh *"
+    ]
+  }
+}
