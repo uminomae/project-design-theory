@@ -16,7 +16,7 @@ const defaultState = {
 };
 const state = { ...defaultState };
 
-let scene, camera, renderer, material, animationId;
+let scene, camera, renderer, material, animationId, timer;
 const uniforms = {
     uTime: { value: 0.0 },
     uResolution: { value: new THREE.Vector2() },
@@ -197,7 +197,7 @@ export function init(container, variant) {
 
     resizeRenderer();
 
-    const timer = new THREE.Timer();
+    timer = new THREE.Timer();
     function animate(timestamp) {
         animationId = requestAnimationFrame(animate);
         timer.update(timestamp);
@@ -206,7 +206,8 @@ export function init(container, variant) {
     }
 
     applyState(state);
-    animate();
+    // 最初の呼び出しも rAF から行い、timer.update に rAF の timestamp を渡す
+    animationId = requestAnimationFrame(animate);
 }
 
 export function applyState(nextState = {}) {
@@ -246,6 +247,10 @@ export function cleanup() {
     if (animationId) {
         cancelAnimationFrame(animationId);
         animationId = null;
+    }
+    if (timer) {
+        timer.dispose();
+        timer = null;
     }
     if (scene) {
         scene.traverse((obj) => {
