@@ -184,10 +184,20 @@ export function createReportsHistoryController({
         if (state._isHistorySyncing) {
             state._isHistorySyncing = false;
             clearActiveDomainModalState();
+            // 戻る操作で閉じたとき。URL に domain が残っていれば外す（閉じたのに再読み込みで開かないように）
+            if (hasDomainQueryParam()) {
+                updateDomainHistoryEntry('', { method: 'replace' });
+            }
             return;
         }
 
-        if (!state.activeDomainId) return;
+        if (!state.activeDomainId) {
+            // 報告以外（画像カードなど）を閉じたときも、URL に domain が残っていれば外す
+            if (hasDomainQueryParam()) {
+                updateDomainHistoryEntry('', { method: 'replace' });
+            }
+            return;
+        }
 
         const activeDomainId = state.activeDomainId;
         const historyMode = state.activeDomainHistoryMode;

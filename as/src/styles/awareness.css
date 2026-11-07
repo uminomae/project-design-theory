@@ -22,6 +22,10 @@ body.awareness-page {
   --as-topbar-nav-border: rgba(var(--awareness-ui-text-rgb), 0.22);
   --as-topbar-toggler-border: rgba(var(--awareness-ui-text-rgb), 0.55);
   --as-topbar-toggler-focus: rgba(var(--awareness-ui-text-rgb), 0.28);
+  /* トップバーの地は明るく、下にカードが入っても文字が読める濃さにする（#63-5）。
+     今までは rgba(10,14,24,.10) で、暗いカードが下に来ると濃紺の文字が沈んだ。 */
+  --as-topbar-bg-start: rgba(238, 243, 250, 0.86);
+  --as-topbar-bg-end: rgba(230, 237, 246, 0.82);
   background:
     radial-gradient(circle at 18% 18%, rgba(46, 72, 116, 0.18), transparent 38%),
     radial-gradient(circle at 78% 28%, rgba(74, 114, 179, 0.14), transparent 42%),

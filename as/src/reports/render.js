@@ -309,6 +309,8 @@ export function createReportsRenderer({
             });
             tile.addEventListener('keydown', (event) => {
                 if (event.key !== 'Enter' && event.key !== ' ') return;
+                // 中の「スライド」ボタンで押した Enter / Space は、ボタンに任せる（報告を開かない）
+                if (event.target !== tile) return;
                 event.preventDefault();
                 openDomainModalById(report.id, {
                     historyMode: DOMAIN_HISTORY_MODE_PUSH,

@@ -13,6 +13,8 @@ let _surfaceBtn;
 let _articlesSection;
 let _graphicSwitcher;
 let _devVersionInline;
+let _heroSpacer;
+let _topbar;
 
 let _cleanup = null;
 
@@ -28,6 +30,8 @@ export function initScrollUI() {
     _articlesSection = document.getElementById('articles-section');
     _graphicSwitcher = document.getElementById('graphic-switcher');
     _devVersionInline = document.getElementById('dev-version-inline');
+    _heroSpacer = document.getElementById('hero-spacer');
+    _topbar = document.getElementById('kesson-topbar');
 
     if (_surfaceBtn) {
         _surfaceBtn.addEventListener('click', scrollToTop);
@@ -98,7 +102,8 @@ export function updateScrollUI(scrollProg, breathVal) {
     }
 
     if (_scrollHintTop) {
-        const showTop = !atTop && scrollProg > 0.15;
+        // 「▴ scroll」はヒーローの上だけで出す。本文（前置きの文・カード）がトップバーの下まで来たら消す（#63-5）
+        const showTop = !atTop && scrollProg > 0.15 && !isContentUnderTopHint();
         if (showTop) {
             _scrollHintTop.classList.add('visible');
         } else {
@@ -113,6 +118,14 @@ export function updateScrollUI(scrollProg, breathVal) {
     }
 
     updateArticlesFocusability(scrollProg);
+}
+
+function isContentUnderTopHint() {
+    if (!_heroSpacer) return false;
+    const topbarBottom = _topbar ? _topbar.getBoundingClientRect().bottom : 0;
+    const hintHeight = _scrollHintTop ? _scrollHintTop.offsetHeight : 0;
+    // ヒーローの下端（＝本文の始まり）が「▴ scroll」の下端より上に来たら、本文と重なる
+    return _heroSpacer.getBoundingClientRect().bottom < topbarBottom + hintHeight + 24;
 }
 
 function updateArticlesFocusability(scrollProg) {

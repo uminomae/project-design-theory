@@ -37,10 +37,35 @@ export function createReportsModalController({
         return markedParser;
     }
 
+    let modalOpener = null;
+
+    function rememberModalOpener() {
+        // 開いたカード（ボタン）を覚えておき、閉じたらそこへフォーカスを戻す
+        if (isMdModalVisible()) return;
+        const active = document.activeElement;
+        modalOpener = active instanceof HTMLElement
+            && active !== document.body
+            && !state.dom.mdModal?.contains(active)
+            ? active
+            : null;
+    }
+
+    function restoreModalOpenerFocus() {
+        const opener = modalOpener;
+        modalOpener = null;
+        if (!(opener instanceof HTMLElement) || !opener.isConnected) return;
+        try {
+            opener.focus({ preventScroll: true });
+        } catch {
+            // ignore
+        }
+    }
+
     function ensureMdModalInstance() {
         if (!state.dom.mdModal || !globalThis.bootstrap?.Modal) return null;
         if (!state.mdModalInstance) {
             state.mdModalInstance = globalThis.bootstrap.Modal.getOrCreateInstance(state.dom.mdModal);
+            state.dom.mdModal.addEventListener('hidden.bs.modal', restoreModalOpenerFocus);
         }
         return state.mdModalInstance;
     }
@@ -96,6 +121,7 @@ export function createReportsModalController({
         setActiveDomainModalState('', '');
         const requestId = ++state.mdRequestId;
         setMarkdownModalLoading({ title, pdfUrl, wikiUrl, hidePdfButton });
+        rememberModalOpener();
         modal.show();
 
         const safeHtml = DOMPurify.sanitize(injectWikiLinks(html));
@@ -148,6 +174,7 @@ export function createReportsModalController({
 
         const requestId = ++state.mdRequestId;
         setMarkdownModalLoading({ title, pdfUrl: '', wikiUrl, hidePdfButton: !hasAnyPdfSource });
+        rememberModalOpener();
         modal.show();
 
         try {

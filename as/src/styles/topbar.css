@@ -234,7 +234,13 @@
     letter-spacing: 0.05em;
     margin-left: 0.36rem;
     padding-left: 0.36rem;
-    max-width: min(40vw, 9.8rem);
+    /* 英語（Working with AI collaboration）が途中で切れないよう、狭い幅では折り返す（#63-5） */
+    flex: 0 1 auto;
+    max-width: none;
+    white-space: normal;
+    line-height: 1.2;
+    overflow: visible;
+    text-overflow: clip;
   }
 
 }
