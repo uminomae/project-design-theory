@@ -48,8 +48,8 @@ patterns=(
   '-----BEGIN [A-Z ]*PRIVATE KEY-----'
   '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}'
 )
-# 公開してよいメールアドレス（commit の trailer など）
-allow_email='noreply@anthropic\.com|@users\.noreply\.github\.com'
+# 公開してよいメールアドレス（commit の trailer、同梱した他者のソフトウェア（Quartz・Dataview）の作者欄）
+allow_email='noreply@anthropic\.com|@users\.noreply\.github\.com|j\.zhao2k19@gmail\.com|blacksmithgu@gmail\.com'
 
 found=0
 while IFS= read -r f; do

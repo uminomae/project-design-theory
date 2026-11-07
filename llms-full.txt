@@ -105,7 +105,7 @@ Starting from two felt experiences — a two-axis sense of consciousness (surviv
 An academic-format paper version (Japanese, non-peer-reviewed, AI-authored with human adjudication, CC BY 4.0) presents the same findings with a normalized reference list (each entry annotated with reading depth: primary / abstract / as-cited-in) and an appendix of 20 re-runnable verification scripts:
 Paper PDF (Japanese, canonical): https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/PAPER-division-algebra-ja.pdf
 Paper PDF (English translation): https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/en/pdf/PAPER-division-algebra-en.pdf
-Paper source (canonical MD): https://github.com/uminomae/project-design/blob/main/knowledge/research/two-axis-closure/PAPER-division-algebra-ja.md
+Paper source (canonical MD): https://github.com/uminomae/project-design-theory/blob/main/knowledge/research/two-axis-closure/PAPER-division-algebra-ja.md
 
 #### 感情も、関係も、時代も「エネルギーの流れ」なのか — エネルギーの流れ仮説
 URL: https://uminomae.github.io/project-design-theory/reader/energy-flow.html

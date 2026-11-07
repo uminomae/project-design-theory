@@ -6,7 +6,7 @@ This note is a cross-disciplinary survey of academic literature on the definitio
 
 ## Summary
 
-"Value" is a polysemous term bundling at least five distinct problem domains: price, utility, norms, meaning, and the symbolic. Japanese [価値](/project-design/wiki/concepts/%E4%BE%A1%E5%80%A4) (kachi) branches into the English terms value / values / worth / utility / significance / merit / price, making cross-domain confusion common in translation. Value is neither something fixed inside an object nor merely a subjective feeling; it is a multi-layered concept that arises within the relations among object, subject, institution, and context.
+"Value" is a polysemous term bundling at least five distinct problem domains: price, utility, norms, meaning, and the symbolic. Japanese [価値](/project-design-theory/wiki/concepts/%E4%BE%A1%E5%80%A4) (kachi) branches into the English terms value / values / worth / utility / significance / merit / price, making cross-domain confusion common in translation. Value is neither something fixed inside an object nor merely a subjective feeling; it is a multi-layered concept that arises within the relations among object, subject, institution, and context.
 
 ## Five Problem Domains
 

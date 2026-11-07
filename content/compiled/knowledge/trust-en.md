@@ -6,7 +6,7 @@ This note is a cross-disciplinary survey of academic literature on the definitio
 
 ## Summary
 
-"Trust" is not a single concept but a composite one. Depending on the discipline, it is treated as an emotion, attitude, expectation, relational quality, institutional capital, behavioral strategy, epistemological condition, or experiential structure. The common core lies in "vulnerability," "expectation," "dependence," "unpredictability," "limits of monitoring," and "reparability." Between Japanese and English, the distinctions among trust / confidence / reliance / faith do not map one-to-one onto Japanese terms such as [信頼](/project-design/wiki/concepts/%E4%BF%A1%E9%A0%BC) (shinrai), 信用 (shin'yō), and 安心 (anshin).
+"Trust" is not a single concept but a composite one. Depending on the discipline, it is treated as an emotion, attitude, expectation, relational quality, institutional capital, behavioral strategy, epistemological condition, or experiential structure. The common core lies in "vulnerability," "expectation," "dependence," "unpredictability," "limits of monitoring," and "reparability." Between Japanese and English, the distinctions among trust / confidence / reliance / faith do not map one-to-one onto Japanese terms such as [信頼](/project-design-theory/wiki/concepts/%E4%BF%A1%E9%A0%BC) (shinrai), 信用 (shin'yō), and 安心 (anshin).
 
 ## Multi-Layered Definition of "Trust"
 

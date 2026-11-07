@@ -1,7 +1,7 @@
 
 # 価値とは — 調査ノート
 
-本稿は「[価値](/project-design/wiki/concepts/%E4%BE%A1%E5%80%A4)」の定義・多義性・日英翻訳ズレをめぐる学術文献を LLM（Claude / GPT）で横断調査し、pjdhiro が構成・検証した調査ノートです。pjdhiro 独自の理論ではなく、一般に参照できる文献群の整理です。
+本稿は「[価値](/project-design-theory/wiki/concepts/%E4%BE%A1%E5%80%A4)」の定義・多義性・日英翻訳ズレをめぐる学術文献を LLM（Claude / GPT）で横断調査し、pjdhiro が構成・検証した調査ノートです。pjdhiro 独自の理論ではなく、一般に参照できる文献群の整理です。
 
 
 ## 要約

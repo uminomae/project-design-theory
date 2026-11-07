@@ -83,7 +83,7 @@ Johansson-Sköldberg et al. 2013 の区分に基づく。
 ## 主要論争
 
 1. **方法か、能力か、態度か** — d.school は process から abilities への転換を提唱。Kimbell は3つの語られ方を整理（2011）
-2. **Abduction と framing は同一か** — Dorst は framing を abduction の設計的拡張として位置づけるが、framing は[価値](/project-design/wiki/concepts/%E4%BE%A1%E5%80%A4)判断・外化を含むため Peirce 的 abduction より広い
+2. **Abduction と framing は同一か** — Dorst は framing を abduction の設計的拡張として位置づけるが、framing は[価値](/project-design-theory/wiki/concepts/%E4%BE%A1%E5%80%A4)判断・外化を含むため Peirce 的 abduction より広い
 3. **形骸化は本質的欠陥か、普及過程の歪みか** — designerly thinking と management DT の分断（Johansson-Sköldberg et al.）。パッケージ化は教育・普及に不可避な側面もある
 4. **HCD は全体か一部か** — IDEO は HCD を design thinking の一部と整理するが、流通版では HCD = DT として消費されやすい
 5. **Wicked problems の射程** — 元来は社会計画論（Rittel & Webber）。あらゆる設計問題が wicked であるわけではない

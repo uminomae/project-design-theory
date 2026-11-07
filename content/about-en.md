@@ -24,7 +24,7 @@ Not yet complete. Thinking while writing.
 
 ---
 
-<a href="#" data-modal-open="slides">View Slides</a> / <a href="#" data-modal-open="howto">Feed to AI</a> / <a href="/project-design/wiki/" target="_blank" rel="noopener">Wiki</a>
+<a href="#" data-modal-open="slides">View Slides</a> / <a href="#" data-modal-open="howto">Feed to AI</a> / <a href="/project-design-theory/wiki/" target="_blank" rel="noopener">Wiki</a>
 
 ---
 
