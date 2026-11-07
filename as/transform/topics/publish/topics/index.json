@@ -1,0 +1,88 @@
+{
+  "version": "0.3",
+  "generated_at": "2026-03-26",
+  "note": "awareness-space reports manifest",
+  "progress_taxonomy": [
+    {
+      "id": "planned",
+      "label_ja": "設計中",
+      "label_en": "Planned",
+      "description_ja": "topic 定義のみ。読者向け report は未配置",
+      "description_en": "Topic defined, but no reader-facing report yet",
+      "order": 10,
+      "tone": "secondary"
+    },
+    {
+      "id": "source_ready",
+      "label_ja": "素材移設済",
+      "label_en": "Source ready",
+      "description_ja": "移設済み素材または overview を参照できる",
+      "description_en": "Imported source material or overview is available",
+      "order": 20,
+      "tone": "warning"
+    },
+    {
+      "id": "report_ready",
+      "label_ja": "公開中",
+      "label_en": "Published",
+      "description_ja": "読者向け report を参照できる",
+      "description_en": "A reader-facing report is available",
+      "order": 30,
+      "tone": "success"
+    }
+  ],
+  "reports": [
+    {
+      "id": "A01",
+      "slug": "survival-trust-axis",
+      "name_ja": "生存-信頼軸",
+      "name_en": "Survival-Trust Axis",
+      "progress_level": "report_ready",
+      "progress_note": "公開本文あり",
+      "summary_ja": "経験の向きを生存と信頼の二軸から捉えるための報告。",
+      "summary_en": "A report on the two-axis model of survival and intersubjectivity.",
+      "generator_model": {
+        "ja": "codex:gpt-5",
+        "en": "codex:gpt-5"
+      },
+      "generated": {
+        "ja": "2026-03-23",
+        "en": "2026-03-23"
+      },
+      "md": {
+        "ja": "./knowledge/topics/survival-trust-axis/ja/report.md",
+        "en": "./knowledge/topics/survival-trust-axis/en/report.md"
+      },
+      "pdf": {
+        "ja": "https://uminomae.github.io/pjdhiro/assets/awareness/topics/ja/pdf/survival-trust-axis.pdf",
+        "en": "https://uminomae.github.io/pjdhiro/assets/awareness/topics/en/pdf/survival-trust-axis.pdf"
+      }
+    },
+    {
+      "id": "A02",
+      "slug": "four-layers",
+      "name_ja": "4層モデル",
+      "name_en": "Four Layers",
+      "progress_level": "report_ready",
+      "progress_note": "公開本文あり",
+      "summary_ja": "意識を身体状態から見直しの余地までの流れとして捉える報告。",
+      "summary_en": "A report on awareness as a processing chain from bodily state to response margin.",
+      "generator_model": {
+        "ja": "codex:gpt-5",
+        "en": "codex:gpt-5"
+      },
+      "generated": {
+        "ja": "2026-03-23",
+        "en": "2026-03-23"
+      },
+      "md": {
+        "ja": "./knowledge/topics/four-layers/ja/report.md",
+        "en": "./knowledge/topics/four-layers/en/report.md"
+      },
+      "pdf": {
+        "ja": "https://uminomae.github.io/pjdhiro/assets/awareness/topics/ja/pdf/four-layers.pdf",
+        "en": "https://uminomae.github.io/pjdhiro/assets/awareness/topics/en/pdf/four-layers.pdf"
+      }
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- Google Analytics (skip on localhost / dev ports) -->
+  <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+  </script>
+  <script type="module">
+    import { initScrollCoordinator } from './src/scroll-coordinator.js';
+    initScrollCoordinator();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>意識とは — pjdhiro</title>
+  <meta name="description" content="「意識とは何か」を生存-信頼軸仮説で探索する。意識体験が生存と信頼の二方向でズレを評価し、その誤適用が苦しみの核心ではないかを問う。">
+  <meta name="description" lang="en" content="What is Consciousness? — Exploring consciousness through the Survival-Trust Axis hypothesis. Conscious experience evaluates discrepancies along survival and trust dimensions; misapplication between them may be a core source of human suffering.">
+  <link rel="canonical" href="https://uminomae.github.io/project-design-theory/as/">
+  <meta property="og:title" content="意識とは — pjdhiro">
+  <meta property="og:description" content="「意識とは何か」を生存-信頼軸仮説で探索する — 意識体験が生存と信頼の二方向でズレを評価し、その誤適用が苦しみの核心ではないかを問う">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://uminomae.github.io/project-design-theory/as/">
+  <meta property="og:image" content="https://uminomae.github.io/pjdhiro/assets/images/101631407.jpeg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="意識とは — pjdhiro">
+  <meta name="twitter:description" content="「意識とは何か」を生存-信頼軸仮説で探索する — 意識体験が生存と信頼の二方向でズレを評価し、その誤適用が苦しみの核心ではないかを問う">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "name": "意識とは — pjdhiro",
+      "url": "https://uminomae.github.io/project-design-theory/as/",
+      "description": "What is Consciousness? — Exploring consciousness through the Survival-Trust Axis hypothesis: conscious experience evaluates discrepancies along survival and trust dimensions, and misapplication between them is a core source of human suffering.",
+      "inLanguage": ["ja", "en"],
+      "keywords": ["意識", "consciousness", "生存-信頼軸", "survival-trust axis", "intersubjectivity", "間主観性", "neurophenomenology", "ネガティブケイパビリティ", "negative capability"],
+      "author": {
+        "@type": "Person",
+        "name": "pjdhiro",
+        "url": "https://uminomae.github.io/pjdhiro/",
+        "description": "プロジェクトデザイン論の提唱者。Doing と Being を包含するプロジェクトの構想・設計・実行を理論化。",
+        "jobTitle": "Project Design Theorist",
+        "knowsAbout": ["Project Design", "Kesson-Driven Thinking", "Love-Driven Development", "Emotional Processing in Projects", "Beauty-Driven Thinking"],
+        "sameAs": [
+          "https://github.com/uminomae",
+          "https://uminomae.github.io/pjdhiro/",
+          "https://uminomae.github.io/project-design-theory/",
+          "https://uminomae.github.io/creation-space/",
+          "https://uminomae.github.io/project-design-theory/as/",
+          "https://uminomae.github.io/kesson-space/"
+        ]
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "間主観性",
+      "alternateName": ["Intersubjectivity"],
+      "description": "主体間で共有される体験的空間。信頼軸の中核にある探索テーマであり、意識が関係性の中でどう立ち上がるかを問う概念。単なる情報伝達ではなく、体験の共有として対人関係を捉える。",
+      "url": "https://uminomae.github.io/project-design-theory/as/",
+      "inDefinedTermSet": "https://uminomae.github.io/pjdhiro/"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "生存-信頼軸",
+      "alternateName": "Survival-Trust Axis",
+      "description": "意識体験が生存（脅威・安全・地位・資源）と信頼（愛着・所属・間主観性）の少なくとも二方向でズレや欠損を評価しているという探索的仮説",
+      "inDefinedTermSet": {
+        "@type": "DefinedTermSet",
+        "name": "プロジェクトデザイン論用語集",
+        "url": "https://uminomae.github.io/project-design-theory/"
+      }
+    }
+  ]
+}
+</script>
+  <link rel="icon" href="./favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./src/styles/shell.css">
+  <link rel="stylesheet" href="./src/styles/topbar.css">
+  <link rel="stylesheet" href="./src/styles/reports.css">
+  <link rel="stylesheet" href="./src/styles/viewer.css">
+  <link rel="stylesheet" href="./src/styles/awareness.css">
+  <link rel="stylesheet" href="./src/styles/about-modal.css">
+  <link rel="stylesheet" href="./src/styles/dev-legacy.css">
+  <link rel="stylesheet" href="./src/styles/slides.css">
+  <link rel="stylesheet" href="./src/styles/slides-typography.css">
+  <link rel="stylesheet" href="./src/styles/slides-responsive.css">
+  <link rel="stylesheet" href="./src/styles/dev-panel.css">
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/",
+        "marked": "https://cdn.jsdelivr.net/npm/marked@15.0.7/lib/marked.esm.js",
+        "dompurify": "https://cdn.jsdelivr.net/npm/dompurify@3.2.4/dist/purify.es.mjs"
+      }
+    }
+  </script>
+
+  <script type="module" src="./src/main.js"></script>
+</head>
+<body class="awareness-page">
+  <div id="canvas-container" aria-hidden="true"></div>
+
+  <header id="kesson-topbar" class="navbar navbar-expand-xl navbar-dark" aria-label="Main menu">
+    <div class="container-fluid px-3 px-md-4">
+      <div class="topbar-brand-wrap">
+        <a id="topbar-main-title" class="navbar-brand topbar-main-title" href="./">
+          意識とは
+        </a>
+        <span id="credit-collab" class="topbar-collab-note">AIとの協働作業中</span>
+      </div>
+      <button
+        class="navbar-toggler topbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#kessonTopbarNav"
+        aria-controls="kessonTopbarNav"
+        aria-expanded="false"
+        aria-label="Toggle menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="kessonTopbarNav">
+        <ul class="navbar-nav align-items-md-center gap-md-1">
+          <li class="nav-item">
+            <a id="topbar-project-design-link" class="nav-link topbar-link" href="https://uminomae.github.io/project-design-theory/">PROJECT DESIGN</a>
+          </li>
+          <li class="nav-item">
+            <a id="topbar-wiki-link" class="nav-link topbar-link" href="https://uminomae.github.io/project-design-theory/wiki/" target="_blank" rel="noopener">Wiki</a>
+          </li>
+          <li class="nav-item">
+            <a id="topbar-home-link" class="nav-link topbar-link" href="../kesson-space/">kesson-driven</a>
+          </li>
+          <li class="nav-item">
+            <a id="topbar-creation-link" class="nav-link topbar-link" href="../creation-space/">creation</a>
+          </li>
+          <li class="nav-item">
+            <div class="btn-group btn-group-sm topbar-font-size-ctrl" role="group" aria-label="文字サイズ調整">
+              <button type="button" class="btn topbar-font-btn" id="font-size-down" aria-label="文字を小さく">A-</button>
+              <button type="button" class="btn topbar-font-btn" id="font-size-reset" aria-label="文字サイズをリセット" disabled>↺</button>
+              <button type="button" class="btn topbar-font-btn" id="font-size-up" aria-label="文字を大きく">A+</button>
+            </div>
+          </li>
+          <li class="nav-item topbar-lang-item">
+            <button
+              type="button"
+              id="lang-toggle"
+              class="nav-link topbar-link topbar-link-btn topbar-lang-btn"
+              data-lang-button
+              aria-label="言語を英語に切り替え">
+              English
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <nav id="graphic-switcher" role="group" aria-label="背景グラフィック切り替え">
+    <span class="graphic-switcher-label">背景</span>
+    <button type="button" data-graphic-mode="raijin" class="active" aria-pressed="true" data-i18n="graphicModeRaijin">風神雷神</button>
+  </nav>
+  <div id="dev-version-inline" class="dev-version-inline" aria-live="polite" hidden></div>
+  <a id="dev-components-link" class="dev-components-link" href="./dev-components.html">Components</a>
+
+  <div id="overlay" role="presentation">
+    <div id="taglines">
+      <div class="tagline" data-i18n="heroTaglinePrimary">
+        生存と間主観性から、意識を捉え直す。
+      </div>
+      <div class="tagline-en" data-i18n="heroTaglineSecondary">
+        生存-信頼軸を起点にした探索の入口。
+      </div>
+    </div>
+    <h1 id="title-h1">意識とは</h1>
+    <button
+      id="about-trigger"
+      class="about-trigger"
+      type="button"
+      data-modal-open="about"
+      aria-label="このページについて"
+      aria-controls="about-overlay">
+      <span class="about-trigger__letter" aria-hidden="true">i</span>
+    </button>
+  </div>
+
+  <div
+    id="about-overlay"
+    role="dialog"
+    aria-modal="true"
+    aria-hidden="true"
+    aria-labelledby="about-overlay-title">
+    <div class="about-glass">
+      <h2 id="about-overlay-title" class="about-title visually-hidden">このページについて</h2>
+      <button id="about-close" class="about-close" type="button" data-about-close aria-label="閉じる">×</button>
+      <div
+        id="about-body"
+        class="about-body"
+        data-md-ja="./assets/about/ja.md"
+        data-md-en="./assets/about/en.md"></div>
+    </div>
+  </div>
+
+  <!-- control-guide は camera 操作がある背景用の説明枠。
+       現在の公開モードは風神雷神のみで camera 操作を使わないため、JS 側で非表示にする。 -->
+  <div id="control-guide">
+    <div class="guide-row guide-desktop">
+      <span class="guide-key" data-i18n="controlGuideScroll">scroll</span>
+      <span class="guide-sep">—</span>
+      <span class="guide-action" data-i18n="controlGuideExplore">探索を進める</span>
+    </div>
+  </div>
+
+  <div id="scroll-hint">
+    <span>scroll</span>
+    <div class="arrow">▾</div>
+  </div>
+
+  <div id="scroll-hint-top">
+    <div class="arrow">▴</div>
+    <span>scroll</span>
+  </div>
+
+  <div id="hero-spacer"></div>
+
+  <div class="container">
+    <p id="reports-ai-notice" class="reports-ai-notice">AIが執筆しているため間違いがある場合があります。</p>
+  </div>
+
+  <div class="room-narration">
+    <p class="room-narration-text" data-i18n="narrationModelSection">三つの入口から、同じ問いに触れられます。</p>
+  </div>
+
+  <section id="model-section" aria-labelledby="model-section-heading">
+    <div class="section-content-wrap">
+      <div class="container">
+        <h2 class="section-heading">
+          <a id="model-section-heading" href="#model-section" class="section-heading-link" aria-label="意識モデルの解説 セクションへジャンプ">意識モデルの解説</a>
+        </h2>
+        <div class="kesson-panel">
+          <div id="model-guide-cards" class="row row-cols-1 row-cols-md-3 g-2" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="room-narration">
+    <p class="room-narration-text" data-i18n="narrationNotesSection">モデルになる前の思考が、ここに残っています。</p>
+  </div>
+
+  <section id="notes-section" aria-labelledby="notes-section-heading">
+    <div class="section-content-wrap">
+      <div class="container">
+        <h2 class="section-heading">
+          <a id="notes-section-heading" href="#notes-section" class="section-heading-link" aria-label="発散思考時note セクションへジャンプ">発散思考時note</a>
+        </h2>
+        <div class="card-section-container">
+          <div id="image-card-grid" class="row row-cols-1 row-cols-md-3 g-3 card-container" aria-live="polite">
+            <div class="col-12 text-body-secondary">読み込み中...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="room-narration">
+    <p class="room-narration-text" data-i18n="narrationReportsSection">問いの一部は、調査へと進んでいます。</p>
+  </div>
+
+  <section id="reports-section" aria-labelledby="reports-section-heading">
+    <div class="section-content-wrap">
+      <div class="container">
+        <h2 class="section-heading">
+          <a id="reports-section-heading" href="#reports-section" class="section-heading-link" aria-label="RESEARCH セクションへジャンプ">RESEARCH</a>
+        </h2>
+        <div id="reports-error" class="alert alert-danger py-2 px-3 d-none mb-3" role="alert"></div>
+        <div class="kesson-panel mb-3">
+          <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2" id="reports-primary-actions">
+            <button id="reports-open-status-btn" type="button" class="btn btn-outline-light btn-sm reports-status-cta">調査の現在地</button>
+            <a id="reports-open-wiki-btn" class="btn btn-outline-light btn-sm" href="https://uminomae.github.io/project-design-theory/wiki/" target="_blank" rel="noopener">用語 Wiki</a>
+          </div>
+          <div id="reports-metrics" class="row g-2 d-none" aria-live="polite"></div>
+        </div>
+        <div class="kesson-panel">
+          <div id="reports-table-filters" class="d-none flex-wrap gap-2 mb-2" role="group" aria-label="調査トピックレポート絞り込み"></div>
+          <div id="reports-domain-grid" class="reports-domain-grid row row-cols-2 row-cols-md-5 g-2" aria-live="polite">
+            <div class="reports-domain-empty col-12 text-body-secondary">読み込み中...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="reports-md-modal" tabindex="-1" aria-labelledby="reports-md-modal-title">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+      <div class="modal-content reports-md-modal-content border border-secondary-subtle">
+        <div class="modal-header">
+          <h5 id="reports-md-modal-title" class="modal-title">Markdown</h5>
+          <div class="reports-md-header-actions d-flex align-items-center gap-2 flex-shrink-0 ms-auto">
+            <a id="reports-md-open-pdf" class="btn btn-outline-light btn-sm" href="#" target="_blank" rel="noopener">PDFを開く</a>
+            <a id="reports-md-open-wiki" class="btn btn-outline-light btn-sm" href="https://uminomae.github.io/project-design-theory/wiki/" target="_blank" rel="noopener">Wiki を開く</a>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="modal-body pt-2 px-3 pb-3">
+          <div id="reports-md-meta" class="small text-body-secondary px-2 pt-1"></div>
+          <article id="reports-md-content" class="reports-md-content mt-2"></article>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="tech-footer">
+    <div class="tech-footer-line">GitHub Pages</div>
+    <div class="tech-footer-line">Vanilla JS · ES Modules</div>
+    <div class="tech-footer-line">Three.js · Bootstrap</div>
+    <div class="tech-footer-line">MIT License</div>
+    <div id="footer-signature" class="footer-signature">Project Designer: pjdhiro</div>
+    <div class="tech-footer-line"><a id="footer-dev-link" class="footer-dev-link" href="./?dev">dev</a></div>
+  </footer>
+
+  <div class="offcanvas offcanvas-end offcanvas-kesson" tabindex="-1" id="siteOffcanvas" data-bs-backdrop="true">
+    <div class="offcanvas-header">
+      <h2 id="offcanvas-sections-title" class="offcanvas-title">SECTIONS</h2>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="list-group awareness-offcanvas-list">
+        <a id="offcanvas-model-link" class="list-group-item list-group-item-action" href="#model-section">MODEL</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<\!-- SEO: 主要コンテンツの静的要約（クローラー向け） -->
+<div class="visually-hidden" aria-hidden="true" id="seo-content-summary">
+  <h2>意識とは — 生存-信頼軸仮説による探索</h2>
+  <h3>生存-信頼軸（Survival-Trust Axis）</h3>
+  <p>意識（Consciousness / Awareness）とは、主観的経験の総体です。本探索では、生存-信頼軸という仮説を出発点にしています。人間の意識体験は、少なくとも二つの方向でズレや欠損を評価しているのではないか — 生存軸（脅威・安全・地位・資源）と信頼軸（愛着・所属・信頼・間主観性）です。</p>
+  <p>多くの苦しみは、信頼軸の問題を生存軸の達成で解こうとする誤適用から生じる — これがこの仮説の核心です。身体からの信号、予測のずれ、そして他者との関係のなかで意識がどう作動するかを、学術横断的に探索しています。</p>
+  <h3>間主観性について</h3>
+  <p>間主観性（Intersubjectivity）は信頼軸の中核にある探索テーマです。意識が関係性の中でどう立ち上がるかを問う概念であり、単なる情報伝達ではなく体験の共有として対人関係を捉えます。</p>
+  <h3>関連探索</h3>
+  <p>本探索は、<a href="https://uminomae.github.io/kesson-space/">欠損駆動思考（Kesson-Driven Thinking）</a>における「欠損を捉える主観的経験」の基盤理論であり、<a href="https://uminomae.github.io/creation-space/">創造の5段階モデル（Creation Space）</a>における創造プロセスの意識的基盤を提供しています。</p>
+</div>
+
+<noscript>
+  <section>
+    <h2>意識とは — 生存-信頼軸仮説による探索</h2>
+    <p>What is Consciousness? This research explores consciousness through the Survival-Trust Axis hypothesis. It asks whether conscious experience evaluates discrepancies along at least two directions — survival (threat, safety, status, resources) and trust (attachment, belonging, intersubjectivity) — and whether misapplication between them is a core source of human suffering.</p>
+    <p>意識（Consciousness / Awareness）とは、主観的経験の総体です。本探索では、生存-信頼軸という仮説を出発点に、意識体験が生存と信頼の少なくとも二方向でズレや欠損を評価しているのではないかを問います。信頼軸の問題を生存軸の達成で解こうとする誤適用が、多くの苦しみの核心ではないかという仮説です。</p>
+    <h3>公開ページ / Report Pages</h3>
+    <ul>
+      <li><a href="https://uminomae.github.io/pjdhiro/assets/awareness/guides/ja/md/awareness-general/">意識とは何か — 身体・予測・情動・社会性から間主観性へ</a> · <a href="https://uminomae.github.io/pjdhiro/assets/awareness/guides/en/md/awareness-general/">What Is Awareness? — From Body, Prediction, Emotion, and Sociality to Intersubjectivity</a></li>
+      <li><a href="https://uminomae.github.io/pjdhiro/assets/awareness/guides/ja/md/awareness-designer/">意識の探索を観察の手がかりに — 教育・支援・チームの現場で</a> · <a href="https://uminomae.github.io/pjdhiro/assets/awareness/guides/en/md/awareness-designer/">Turning the Exploration of Awareness into Observational Tools — For Education, Support, and Team Contexts</a></li>
+      <li><a href="https://uminomae.github.io/pjdhiro/assets/awareness/guides/ja/md/awareness-academic/">意識と間主観性 — 神経現象学・心理学・哲学からの状況証拠</a> · <a href="https://uminomae.github.io/pjdhiro/assets/awareness/guides/en/md/awareness-academic/">Awareness and Intersubjectivity — Circumstantial Evidence from Neurophenomenology, Psychology, and Philosophy</a></li>
+      <li><a href="https://uminomae.github.io/pjdhiro/assets/awareness/topics/ja/md/survival-trust-axis/">生存-信頼軸</a> · <a href="https://uminomae.github.io/pjdhiro/assets/awareness/topics/en/md/survival-trust-axis/">Survival-Trust Axis</a></li>
+      <li><a href="https://uminomae.github.io/pjdhiro/assets/awareness/survey/ja/md/survey-status/">意識モデル探索: 調査概要</a> · <a href="https://uminomae.github.io/pjdhiro/assets/awareness/survey/en/md/survey-status/">Awareness Model Exploration: Survey Overview</a></li>
+      <li><a href="https://uminomae.github.io/pjdhiro/assets/awareness/survey/ja/md/survey-topic-index/">意識モデル探索: 調査索引</a> · <a href="https://uminomae.github.io/pjdhiro/assets/awareness/survey/en/md/survey-topic-index/">Awareness Model Exploration: Survey Index</a></li>
+      <li><a href="https://uminomae.github.io/pjdhiro/assets/awareness/domains/ja/presentations/html/domain-A01-survival-trust-axis-presentation-ja.html">A01 生存-信頼軸（スライド）</a> · <a href="https://uminomae.github.io/pjdhiro/assets/awareness/domains/en/presentations/html/domain-A01-survival-trust-axis-presentation-en.html">A01 Survival-Trust Axis (slides)</a></li>
+    </ul>
+    <p>Related: <a href="https://uminomae.github.io/project-design-theory/">Project Design</a> | <a href="https://uminomae.github.io/kesson-space/">Kesson-Driven Thinking</a> | <a href="https://uminomae.github.io/creation-space/">Creation Space</a></p>
+  </section>
+</noscript>
+</body>
+</html>
