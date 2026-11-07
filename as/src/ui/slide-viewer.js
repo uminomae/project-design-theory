@@ -3,6 +3,44 @@ let slidesState = [];
 let currentSlideIndex = 0;
 let previousBodyOverflow = '';
 let onCloseCallback = null;
+let richState = null;
+let narrowQuery = null;
+
+// 狭い幅（スマートフォンの縦向き）では、スライドを 16:9 の枠に縮めず、縦に並べた読み物にする（#63-2）。
+const NARROW_SLIDE_QUERY = '(max-width: 575.98px)';
+const RICH_NAV_HEIGHT = '3rem';
+
+// スライドの HTML は pjdhiro の repo にあり、as からは変えられない。ビューアの側で、取ってきた HTML に
+// 組み方だけを足す。中身（文と図）は変えない。
+// 広い幅：下の Prev / Next の帯にスライドの下端が潜らないよう、デッキの高さから帯の分を引く。
+// 帯に潜らないときは、今までと同じ大きさ（92vw と 88vh の小さいほう）のまま。
+const RICH_WIDE_CSS = `
+  .deck { height: calc(100vh - ${RICH_NAV_HEIGHT}); }
+  .slide-inner { width: min(92vw, calc(88vh * 16 / 9), calc((100vh - ${RICH_NAV_HEIGHT} - 0.5rem) * 16 / 9)); }
+`;
+// 狭い幅：全部のスライドを縦に並べ、読める文字の大きさにする。Prev / Next の帯は使わない。
+const RICH_VERTICAL_CSS = `
+  html, body { height: auto; min-height: 100%; overflow-x: hidden; overflow-y: auto; }
+  .deck { width: auto; height: auto; overflow: visible; display: flex; flex-direction: column; gap: 14px; padding: 12px 10px 28px; }
+  .slide { position: static; inset: auto; display: block; opacity: 1; visibility: visible; transition: none; }
+  .slide-inner { width: 100%; aspect-ratio: auto; box-shadow: none; }
+  .slide-content { height: auto; padding: 1.25rem 1.1rem 1.1rem; }
+  .layout-title .slide-content { min-height: 14rem; }
+  h1, .layout-title h1 { font-size: 1.6rem; max-width: none; }
+  h2 { font-size: 1.2rem; }
+  h3 { font-size: 1rem; }
+  p, .layout-title .subtitle { font-size: 0.95rem; max-width: none; }
+  ul li { font-size: 0.92rem; }
+  .list--small li { font-size: 0.8rem; }
+  .cite { font-size: 0.72rem; }
+  .domain-tag, .layout-title .domain-tag { font-size: 0.75rem; }
+  .metric-value { font-size: 1.8rem; }
+  .metric-label { font-size: 0.75rem; }
+  .metrics-grid, .layout-split .split-col { grid-template-columns: 1fr; }
+  .slide [style*="font-size"] { font-size: 0.86rem !important; }
+  .slide .animate-in { animation: none !important; }
+  .nav-bar, .progress-bar { display: none !important; }
+`;
 
 function getOverlayPart(selector) {
     return overlayNode ? overlayNode.querySelector(selector) : null;
@@ -133,6 +171,7 @@ function createOverlay() {
             <button class="slide-viewer-fullscreen" aria-label="Enter fullscreen" aria-pressed="false">\u26F6</button>
             <div class="slide-viewer-frame">
                 <div class="slide-viewer-stage"></div>
+                <div class="slide-viewer-loading" role="status" aria-live="polite" hidden></div>
             </div>
             <div class="slide-viewer-toolbar">
                 <button class="slide-viewer-nav slide-viewer-nav-prev" aria-label="Previous slide">Prev</button>
@@ -206,8 +245,15 @@ export function closeSlideViewer() {
     }
     setBodyScrollLock(false);
 
+    if (narrowQuery) {
+        narrowQuery.removeEventListener('change', onNarrowChange);
+        narrowQuery = null;
+    }
+    richState = null;
+
     if (overlayNode) {
-        overlayNode.classList.remove('visible');
+        overlayNode.classList.remove('visible', 'is-vertical');
+        setLoading(false);
         const stage = getOverlayPart('.slide-viewer-stage');
         if (stage) {
             stage.innerHTML = '';
@@ -230,17 +276,125 @@ export function closeSlideViewer() {
     }
 }
 
+function setLoading(loading) {
+    const node = getOverlayPart('.slide-viewer-loading');
+    if (!node) return;
+    if (loading) {
+        const lang = (document.documentElement.lang || 'ja').toLowerCase();
+        node.textContent = lang.startsWith('en') ? 'Loading slides…' : 'スライドを読み込み中…';
+        node.hidden = false;
+    } else {
+        node.hidden = true;
+    }
+    overlayNode?.classList.toggle('is-loading', loading);
+}
+
+function isNarrowViewport() {
+    return typeof window.matchMedia === 'function' && window.matchMedia(NARROW_SLIDE_QUERY).matches;
+}
+
+function escapeAttribute(value) {
+    return String(value).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+}
+
+/**
+ * 取ってきたスライドの HTML に、相対パスの基点と、幅に合わせた組み方を足す。
+ * スライドの文と図には手を入れない。
+ */
+export function buildRichSlideDocument(html, { baseUrl = '', vertical = false } = {}) {
+    const css = vertical ? RICH_VERTICAL_CSS : RICH_WIDE_CSS;
+    const injected = `${baseUrl ? `<base href="${escapeAttribute(baseUrl)}">` : ''}`
+        + `<style data-as-slide-viewer="${vertical ? 'vertical' : 'wide'}">${css}</style>`;
+    const source = String(html || '');
+    if (/<\/head>/i.test(source)) {
+        return source.replace(/<\/head>/i, `${injected}</head>`);
+    }
+    return `${injected}${source}`;
+}
+
+function attachIframeEscape(iframe) {
+    // ESC handler: inject into iframe's contentDocument after load.
+    // IMPORTANT: iframe is a separate browsing context -- keydown events
+    // inside iframe do NOT reach the parent document (not even in capture
+    // phase). We must register directly on iframe.contentDocument.
+    // Same-origin only; cross-origin silently falls back to close button.
+    // Do NOT remove this handler during refactoring.
+    try {
+        iframe.contentDocument.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeSlideViewer();
+            }
+        });
+    } catch (_) {
+        // Cross-origin (e.g. file:// opening https:// iframe):
+        // contentDocument is inaccessible. Use postMessage fallback.
+        // The rich HTML slides call parent.postMessage({type:'slide-escape'})
+        // when ESC is pressed inside them.
+        console.warn('[slide-viewer] cross-origin iframe -- ESC uses postMessage fallback');
+    }
+}
+
+function revealAllSlides(iframe) {
+    // 縦に並べたときは、どのスライドも読み上げの対象にする（デッキの script は今の 1 枚以外を aria-hidden にする）。
+    try {
+        iframe.contentDocument.querySelectorAll('.slide[aria-hidden]').forEach((slide) => {
+            slide.removeAttribute('aria-hidden');
+        });
+    } catch (_) {
+        // cross-origin: nothing to do
+    }
+}
+
+function renderRichIframe() {
+    if (!richState || !overlayNode) return;
+    const stage = getOverlayPart('.slide-viewer-stage');
+    if (!stage) return;
+
+    const vertical = Boolean(richState.html) && isNarrowViewport();
+    overlayNode.classList.toggle('is-vertical', vertical);
+    stage.innerHTML = '';
+
+    const iframe = document.createElement('iframe');
+    iframe.title = richState.title || 'Slides';
+    iframe.setAttribute('allowfullscreen', '');
+    iframe.addEventListener('load', () => {
+        if (!richState || !iframe.isConnected) return;
+        attachIframeEscape(iframe);
+        if (vertical) revealAllSlides(iframe);
+        setLoading(false);
+    });
+    if (richState.html) {
+        iframe.srcdoc = buildRichSlideDocument(richState.html, {
+            baseUrl: richState.htmlUrl,
+            vertical,
+        });
+    } else {
+        // HTML を取ってこられなかったときは、今までどおり URL で開く（組み方は足せない）。
+        iframe.src = richState.htmlUrl;
+    }
+    setLoading(true);
+    stage.appendChild(iframe);
+}
+
+function onNarrowChange() {
+    if (!richState?.html) return;
+    renderRichIframe();
+}
+
 /**
  * Open a pre-generated rich HTML slide deck in the viewer modal.
  *
  * The rich HTML is self-contained (CSS + JS inlined) and has its own
  * navigation, so we display it via iframe and hide the parent toolbar.
+ * The HTML is fetched and shown through srcdoc with a small layout stylesheet
+ * added (wide: keep the slide above its nav bar / narrow: stack slides vertically).
+ * If the fetch fails, the iframe falls back to loading htmlUrl directly.
  *
  * @param {Object} options
  * @param {string} options.htmlUrl - URL of the rich HTML slide file
  * @param {string} [options.title] - Title for the overlay aria-label
  */
-export function openRichSlideViewer({ htmlUrl, title = '', onClose = null }) {
+export async function openRichSlideViewer({ htmlUrl, title = '', onClose = null }) {
     if (!htmlUrl) return;
 
     try {
@@ -262,40 +416,42 @@ export function openRichSlideViewer({ htmlUrl, title = '', onClose = null }) {
             toolbar.style.display = 'none';
         }
 
-        // Create iframe that fills the frame
-        const iframe = document.createElement('iframe');
-        iframe.src = htmlUrl;
-        iframe.style.cssText = 'width:100%;height:100%;border:none;border-radius:inherit;';
-        iframe.setAttribute('allowfullscreen', '');
-        iframe.setAttribute('loading', 'lazy');
-        stage.appendChild(iframe);
-
-        // ESC handler: inject into iframe's contentDocument after load.
-        // IMPORTANT: iframe is a separate browsing context -- keydown events
-        // inside iframe do NOT reach the parent document (not even in capture
-        // phase). We must register directly on iframe.contentDocument.
-        // Same-origin only; cross-origin silently falls back to close button.
-        // Do NOT remove this handler during refactoring.
-        iframe.addEventListener('load', () => {
-            try {
-                iframe.contentDocument.addEventListener('keydown', (e) => {
-                    if (e.key === 'Escape') {
-                        closeSlideViewer();
-                    }
-                });
-            } catch (_) {
-                // Cross-origin (e.g. file:// opening https:// iframe):
-                // contentDocument is inaccessible. Use postMessage fallback.
-                // The rich HTML slides call parent.postMessage({type:'slide-escape'})
-                // when ESC is pressed inside them.
-                console.warn('[slide-viewer] cross-origin iframe -- ESC uses postMessage fallback');
-            }
-        });
+        const state = { htmlUrl, title, html: '' };
+        richState = state;
 
         overlayNode.classList.add('visible');
         overlayNode.setAttribute('aria-label', title || 'Rich Slides');
         setBodyScrollLock(true);
         updateFullscreenUi();
+        // 取ってくるあいだも、真っ黒のままにせず読み込み中と出す。
+        setLoading(true);
+
+        try {
+            const response = await fetch(htmlUrl, { cache: 'no-store' });
+            if (!response.ok) {
+                // スライドが無い（404 など）。開いたままにせず閉じる。
+                if (richState === state) {
+                    console.warn('[slide-viewer] rich HTML slide unavailable:', htmlUrl, response.status);
+                    closeSlideViewer();
+                }
+                return;
+            }
+            state.html = await response.text();
+        } catch {
+            // 取れなければ URL で開く
+        }
+        // 取ってくるあいだに閉じられた・別のスライドが開かれたときは何もしない
+        if (richState !== state) return;
+
+        if (narrowQuery) {
+            narrowQuery.removeEventListener('change', onNarrowChange);
+            narrowQuery = null;
+        }
+        if (typeof window.matchMedia === 'function') {
+            narrowQuery = window.matchMedia(NARROW_SLIDE_QUERY);
+            narrowQuery.addEventListener('change', onNarrowChange);
+        }
+        renderRichIframe();
     } catch (err) {
         console.error('[slide-viewer] rich slide ERROR:', err);
     }

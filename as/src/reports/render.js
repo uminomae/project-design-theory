@@ -378,24 +378,15 @@ export function createReportsRenderer({
                 const slideKey = report.id;
                 const slideOnClose = typeof wrapSlideOpen === 'function' ? wrapSlideOpen(slideKey) : null;
 
-                // Try rich HTML first
+                // ビューアがすぐ開いて読み込み中と出し、HTML を取ってくる（取れなければ閉じる）。
                 if (source.htmlUrl) {
-                    try {
-                        const htmlResp = await fetch(source.htmlUrl, { method: 'HEAD', cache: 'no-store' });
-                        if (htmlResp.ok) {
-                            openRichSlideViewer({
-                                htmlUrl: source.htmlUrl,
-                                title: `${report.id} ${domainLabel}`,
-                                onClose: slideOnClose,
-                            });
-                            return;
-                        }
-                    } catch {
-                        // Rich HTML not available
-                    }
+                    openRichSlideViewer({
+                        htmlUrl: source.htmlUrl,
+                        title: `${report.id} ${domainLabel}`,
+                        onClose: slideOnClose,
+                    });
+                    return;
                 }
-
-                // Rich HTML HEAD check failed; warn and give up silently
                 console.warn('[render] rich HTML slide unavailable for', report.id);
             });
             btnGroup.appendChild(slideBtn);

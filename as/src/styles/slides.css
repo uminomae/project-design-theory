@@ -281,3 +281,48 @@
   border-radius: inherit;
   background: var(--slide-bg-deep);
 }
+
+/* -- Loading (#63-2) -- */
+
+#slide-viewer-overlay .slide-viewer-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--slide-text-secondary);
+  font-family: var(--slide-font-body);
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  pointer-events: none;
+}
+
+#slide-viewer-overlay .slide-viewer-loading[hidden] {
+  display: none;
+}
+
+#slide-viewer-overlay.is-loading .slide-viewer-stage > iframe {
+  visibility: hidden;
+}
+
+/* -- Vertical reading on phones (#63-2) --
+   狭い幅では 16:9 の枠をやめ、画面の高さいっぱいの枠の中でスライドを縦に読む。 */
+
+#slide-viewer-overlay.is-vertical .slide-viewer-shell {
+  justify-content: flex-start;
+  padding: 3.6rem 0.5rem 0.5rem;
+}
+
+#slide-viewer-overlay.is-vertical .slide-viewer-frame {
+  width: 100%;
+  max-width: 100%;
+  max-height: none;
+  aspect-ratio: auto;
+  flex: 1 1 auto;
+  min-height: 0;
+  border-radius: 12px;
+}
+
+#slide-viewer-overlay.is-vertical .slide-viewer-fullscreen {
+  display: none;
+}
