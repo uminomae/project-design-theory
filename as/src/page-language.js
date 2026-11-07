@@ -69,8 +69,6 @@ export function applyPageLanguageToDocument(doc, lang) {
     const modelSectionHeading = doc.getElementById('model-section-heading');
     const notesSectionHeading = doc.getElementById('notes-section-heading');
     const reportsSectionHeading = doc.getElementById('reports-section-heading');
-    const offcanvasSectionsTitle = doc.getElementById('offcanvas-sections-title');
-    const offcanvasModelLink = doc.getElementById('offcanvas-model-link');
     const aboutTrigger = doc.getElementById('about-trigger');
     const aboutModalTitle = doc.getElementById('about-overlay-title');
     const aboutClose = doc.getElementById('about-close');
@@ -86,8 +84,6 @@ export function applyPageLanguageToDocument(doc, lang) {
     setText(reportsAiNotice, strings.reportsAiNotice);
     setText(modelSectionHeading, strings.modelSectionHeading);
     setText(notesSectionHeading, strings.notesSectionHeading);
-    setText(offcanvasSectionsTitle, strings.offcanvasSectionsTitle);
-    setText(offcanvasModelLink, strings.offcanvasModelLink);
     setText(aboutModalTitle, aboutStrings.modalTitle);
 
     setAttr(topbar, 'aria-label', strings.topbarNavAria);
@@ -101,7 +97,6 @@ export function applyPageLanguageToDocument(doc, lang) {
     setAttr(modelSectionHeading, 'aria-label', strings.modelSectionHeadingAria);
     setAttr(notesSectionHeading, 'aria-label', strings.notesSectionHeadingAria);
     setAttr(reportsSectionHeading, 'aria-label', strings.reportsSectionHeadingAria);
-    setAttr(offcanvasModelLink, 'aria-label', strings.offcanvasModelAria);
     setAttr(aboutTrigger, 'aria-label', aboutStrings.triggerAria);
     setAttr(aboutClose, 'aria-label', aboutStrings.closeAria);
     setText(langToggle, strings.langToggleLabel);

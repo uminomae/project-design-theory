@@ -41,3 +41,8 @@ test('reports scope note avoids published and integrated wording', () => {
     // Verify the static HTML does not contain the old wording.
     assert.doesNotMatch(indexHtml, /公開中ですが、統合版ではありません/);
 });
+
+test('unused site offcanvas (SECTIONS / MODEL) is removed', () => {
+    assert.doesNotMatch(indexHtml, /id="siteOffcanvas"/);
+    assert.doesNotMatch(indexHtml, /offcanvas-model-link/);
+});

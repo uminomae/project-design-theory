@@ -185,12 +185,6 @@ html.as-bg-static #canvas-container canvas {
   line-height: 1.9;
 }
 
-.awareness-offcanvas-list .list-group-item {
-  background: rgba(20, 25, 40, 0.42);
-  border-color: rgba(var(--color-accent), 0.12);
-  color: rgba(var(--color-heading), 0.84);
-}
-
 .offcanvas-kesson {
   --bs-offcanvas-width: var(--as-offcanvas-width);
   width: var(--as-offcanvas-width);
@@ -213,12 +207,6 @@ html.as-bg-static #canvas-container canvas {
 .offcanvas-kesson .offcanvas-body::-webkit-scrollbar-thumb {
   background: var(--as-scrollbar-thumb);
   border-radius: 3px;
-}
-
-.awareness-offcanvas-list .list-group-item:hover,
-.awareness-offcanvas-list .list-group-item:focus-visible {
-  background: rgba(46, 72, 116, 0.4);
-  color: rgba(var(--color-heading), 0.98);
 }
 
 @media (max-width: 767.98px) {
