@@ -46,3 +46,9 @@ test('unused site offcanvas (SECTIONS / MODEL) is removed', () => {
     assert.doesNotMatch(indexHtml, /id="siteOffcanvas"/);
     assert.doesNotMatch(indexHtml, /offcanvas-model-link/);
 });
+
+test('three.js is loaded from the vendored copy, not from a CDN', () => {
+    assert.match(indexHtml, /"three": "\.\/vendor\/three@0\.183\.0\/build\/three\.module\.js"/);
+    assert.match(indexHtml, /"three\/addons\/": "\.\/vendor\/three@0\.183\.0\/examples\/jsm\/"/);
+    assert.doesNotMatch(indexHtml, /cdn\.jsdelivr\.net\/npm\/three@/);
+});
