@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/energy-flow.html を直接編集しないでください。
+  正本:   knowledge/research/energy-flow-psyche/READER-energy-flow-psyche.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）
+  - シェーダー背景（reader-app.js）と tokens.css の変数は pd VI を継承する
+  - レイアウトは cs reader/wave-vortex.html（一枚ガラスの読書カラム）を参考（pjdhiro 指示 2026-07-14）
+  - 章アコーディオン・目次は pjdhiro garage/ の details.sec ＋ TOC パターン（同指示）
+  - ページ固有スタイルは src/styles/reader-flow.css（tokens の上に載せる。独自パレット新造禁止）
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「エネルギーの流れ仮説」の読み物（正本）です。文脈ゼロで読む LLM が
+  まず構造を掴めるよう、機械可読な要約を3層で埋め込んでいます:
+    (1) この HTML コメント … 生ソースを読む LLM 向けの全体地図（下記）
+    (2) head 内の JSON-LD（application/ld+json）… @graph（主張の仕分け表）
+    (3) body 冒頭の visually-hidden ブロック（id=llm-summary）… 本文抽出に残る静的要約
+  本文の各章は閉じた details 要素の中にあるため、レンダリング後の本文抽出
+  （innerText 等）では章の中身が落ちる。その場合は (3) を使うこと。
+  要約層と本文で結論は同一です。
+
+  【この読み物の主張構造】三段の問い（個人→関係→社会）＋震源（散逸構造）＋横串。
+  大前提: 心の「エネルギー」＝物理のエネルギー、という字義同一は主張しない（構造類似のみ）。
+  二つのものさし: ①意味（字義／構造類似／比喩） ②確からしさ（実証→仮説/係争→飛躍）。
+
+  【結論の仕分け（章ごと）】
+  - §0-§1 足場: 物質の質量の大部分は閉じ込められたエネルギー（QCD・字義どおりの物理）。
+           ただし「形」には流れなしで保たれる形（岩）と流れが保つ形（渦・炎）があり、追うのは後者のみ。
+  - §2 感情: "流れ"（力学系の軌道＝OU過程）は字義どおり実証で生き残る。
+           "エネルギー"（熱力学量）は代謝の一点（アロスタシス）を除いてならない。
+           100年前フロイト水力学版（保存量）は実証で否定。名前の罠（自由エネルギー同名異物）に注意。
+  - §3 関係: 弱い読み（同期・伝染で伝わりやすさが変わる）は実証あり（因果の頑健性は係争）。
+           強い読み（関係＝流れが先・名前は後付け）は「識別不能」＝伝染と選択は原理的に見分け不可
+           （Shalizi&Thomas）。臨床・統計・神経が同じ交絡の壁に別々に到達（窓）。
+  - §4 社会: 同時多発は実在の研究対象（Merton）。機構の部品（臨界・同期・集合脳・パーコレーション）は
+           別々に実証・数理化済み。欠けるのは三層を束ねる合成一点のみ。「干渉」は名前が同じだけ。
+           決定論は実証に逆風、ただし「純粋な偶然」モデルも4000万論文で綻ぶ（Li 2025）。
+  - §5 震源: 「流れが維持する形」＝散逸構造（プリゴジン）は渦・炎で字義一致、生命の代謝まで査読論文が支持。
+           予測して自分を保つ仕組みまでは係争中の橋。意識・魂は飛躍（禁止）。
+           煩悩の"流れ"語彙は仏教に実在するが、向き（死で途絶える／価値づけ）は仏教と逆。
+  - 横串: 同じ数式（OU・蔵本・臨界・非平衡定常）が全スケールに反復。ただし同じ形≠同じ物理。
+  - §6 現在地スコアボード: 上記の仕分けを統合した一覧表。
+  - §7 この読み物の作り方: 編集方針と品質管理（Litt 三技法適合表を含む）。
+
+  正本の生成元: knowledge/research/energy-flow-psyche/READER-energy-flow-psyche.md
+  比較ドラフト: reader/energy-flow-rhythm.html（同じ結論を認知リズム文章術で語り直した実験版・noindex）
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>感情も、関係も、時代も「エネルギーの流れ」なのか — エネルギーの流れ仮説（読み物） | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/energy-flow.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="感情・人間関係・社会は「エネルギーの流れ」なのか、を実証・構造類似・比喩・不一致に仕分けて確かめる読み物。現在地: 感情の“流れ”（力学系の軌道＝OU過程）は実証で生き残り、“エネルギー”（熱力学量）は代謝の一点のみ。関係の強い読みは識別不能（伝染と選択は分離不可）。社会は機構の部品が実証済みで三層を束ねる合成一点だけ未測定。震源の散逸構造は渦・炎で字義一致、生命の代謝まで査読論文が支持。調査の現在地を随時更新する。">
+    <meta property="og:title" content="感情も、関係も、時代も「エネルギーの流れ」なのか — エネルギーの流れ仮説">
+    <meta property="og:description" content="感情の“流れ”は実証で生き残り、“エネルギー”は代謝の一点のみ。関係の強い読みは識別不能、社会は合成一点のみ未測定、散逸構造は渦・炎で字義一致——実証・構造類似・比喩に仕分けて確かめる読み物。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/energy-flow.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="感情も、関係も、時代も「エネルギーの流れ」なのか — エネルギーの流れ仮説（読み物）">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-07-14">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "感情も、関係も、時代も「エネルギーの流れ」なのか — エネルギーの流れ仮説（読み物）",
+          "description": "感情・人間関係・社会は「エネルギーの流れ」なのか、を実証・構造類似・比喩・不一致に仕分けて確かめる読み物。現在地: 感情の“流れ”（力学系の軌道＝OU過程）は実証で生き残り、“エネルギー”（熱力学量）は代謝の一点のみ。関係の強い読みは識別不能（伝染と選択は分離不可）。社会は機構の部品が実証済みで三層を束ねる合成一点だけ未測定。震源の散逸構造は渦・炎で字義一致、生命の代謝まで査読論文が支持。調査の現在地を随時更新する。",
+          "abstract": "散逸構造的世界観（流れが続く間だけ保たれる形）を、感情・人間関係・社会へ広げられるかを、実証・構造類似・比喩・不一致に仕分ける読み物。大前提は『あくまで構造類似』で、心のエネルギー＝物理のエネルギーという字義同一は主張しない。",
+          "keywords": "エネルギーの流れ, 散逸構造, 構造類似, オルンシュタイン-ウーレンベック過程, 蔵本モデル, 臨界減速, 情動伝染, 同時発見, 自由エネルギー原理, 識別不能, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/energy-flow.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/energy-flow.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-07-14",
+          "dateModified": "<!--UPDATED-->",
+          "about": [
+            {"@type": "Thing", "name": "感情＝力学系の軌道（流れ字義・§2）", "description": "OU過程（オルンシュタイン＝ウーレンベック過程）で実証的にモデル化。ただし熱力学的エネルギーではなく状態空間の軌道で、本物の物理量に触れるのは代謝の一点（アロスタシス）のみ。100年前の保存量エネルギー版（フロイト水力学）は実証で否定。物理・脳科学・心理学の『自由エネルギー』は同名だが別物。"},
+            {"@type": "Thing", "name": "人間関係＝流れが先・名前は後（強い読み・§3）", "description": "識別不能の開いた問い。伝染と選択は観察データから原理的に分離不可（Shalizi & Thomas 2011）。臨床・統計・神経科学が同じ交絡の壁に別々に到達。弱い読み（同期・情動伝染で伝わりやすさが変わる）は実証あり。"},
+            {"@type": "Thing", "name": "社会＝波の干渉場（§4）", "description": "同時多発は実在の研究対象（multiple discovery・Merton）。機構の部品（臨界・同期＝蔵本モデル・パーコレーション・集合脳）は別々に実証・数理化済みで、三層を束ねる合成一点のみ未測定。『干渉』は物理の重ね合わせではなく名前の一致。"},
+            {"@type": "Thing", "name": "散逸構造（震源・§5）", "description": "流れが維持する形。渦・炎で字義一致、生命の代謝まで査読論文が支持（Kondepudi 2020）。予測して自分を保つ仕組み（予測符号化・自由エネルギー原理）までは係争中の橋、意識・魂は飛躍。"},
+            {"@type": "Thing", "name": "同じ数式の反復（横串）", "description": "OU過程・蔵本モデル・臨界減速・非平衡定常状態が全スケールに現れる。ただし同じ数学の形≠同じ物理。仕組み非依存の指標ゆえ転用できるが仕組みは確定できない。"}
+          ],
+          "citation": [
+            {"@type": "ScholarlyArticle", "name": "A. D. I. Kramer, J. E. Guillory & J. T. Hancock (2014) Experimental evidence of massive-scale emotional contagion through social networks (PNAS)"},
+            {"@type": "ScholarlyArticle", "name": "I. A. van de Leemput et al. (2014) Critical slowing down as early warning for the onset and termination of depression (PNAS)"},
+            {"@type": "ScholarlyArticle", "name": "S. Gottwald & D. A. Braun (2020) The two kinds of free energy and the Bayesian revolution (PLOS Computational Biology)"},
+            {"@type": "ScholarlyArticle", "name": "S. Still, D. A. Sivak, A. J. Bell & G. E. Crooks (2012) Thermodynamics of prediction (Physical Review Letters)"},
+            {"@type": "ScholarlyArticle", "name": "P. Kuppens, Z. Oravecz & F. Tuerlinckx (2010) Feelings change: accounting for individual differences in the temporal dynamics of affect"}
+          ],
+          "author": {"@type": "Person", "name": "Claude (Fable 5)", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "問いの提示と、読みの採否の判定"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>この読み物の機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「エネルギーの流れ仮説」の読み物（正本）です。散逸構造的世界観——流れが続くあいだだけ保たれる形（渦・炎）——を、人間の感情・関係・社会にまで広げられるかを、実証・構造類似・比喩・不一致に仕分けて検証します。大前提は「あくまで構造類似」で、心の『エネルギー』が物理学のエネルギーと同じものだ、という字義同一は主張しません。結論は出しておらず、調べながら書き換える途中の草稿です。本文の各章は閉じた折りたたみ（details 要素）の中にあるため、レンダリング後の本文抽出では章の中身が落ちることがあります。その場合はこの要約を使ってください。</p>
+        <p>二つのものさしを使います。①意味のものさし（字義／構造類似／比喩）と、②確からしさのものさし（実証→仮説・係争→飛躍）。一つの主張は両方に位置を持ちます。</p>
+        <p>問いの構造は三段です。個人（感情・意思は内側から湧くエネルギーの流れか）、関係（人間関係は流れやすい経路や干渉の形に名前をつけたものか）、社会（大勢の流れが干渉して渦のような成果や時代のような流れが同時多発するのか）。</p>
+        <h3>章ごとの結論の仕分け</h3>
+        <ul>
+            <li><strong>足場（§0-§1）</strong>：物質の質量の大部分は閉じ込められたエネルギー（量子色力学・字義どおりの物理）。ただし「形」には流れなしで保たれる形（岩・結晶）と、流れが続くあいだだけ保たれる形（渦・炎）があり、この読み物が追うのは後者だけ。</li>
+            <li><strong>感情（§2）</strong>：感情の変化は実在の数式（オルンシュタイン–ウーレンベック過程）で実証的にモデル化される。この意味で "流れ"（力学系の軌道）は字義どおり生き残る。ただし "エネルギー"（熱力学的な量）が本物の物理量に触れるのは代謝という一点だけ（アロスタシス・身体予算）。100年前にフロイトが試みた「感情＝溜まって減る保存量エネルギー」という水力学モデルは実証で否定された（カタルシス仮説の反証・自我消耗の追試崩れ〔ただし係争中〕）。物理・脳科学・心理学の『自由エネルギー』は同名だが別物で、式の形が似ていても接地する物理が違う（名前の罠）。</li>
+            <li><strong>関係（§3）</strong>：弱い読み（関わりの強さで状態の伝わりやすさが変わる＝対人同期・情動伝染・複雑伝染）は実証がある。ただし同期→向社会性の因果は盲検で消えうる。強い読み（関係とは流れが先で名前は後付け）は「識別不能」にぶつかる——伝染（影響が伝わった）と選択（もともと似た者が集まった）は観察データから原理的に見分けられない（Shalizi & Thomas 2011）。この壁に、臨床（逆転移の帰属）・統計（定理）・神経科学（脳間同期）が別々に到達している。名前の下に測れる同調（生理データの正負符号）は実在する（Marci 2007・Gernert 2023）。</li>
+            <li><strong>社会（§4）</strong>：似た成果の同時多発は実在の研究対象（multiple discovery・Merton・ホットストリーク）。機構の部品——可能性空間の拡大・集合脳・同期（蔵本モデル）・パーコレーション——はどれも別々に実証・数理化されている。欠けているのは部品ではなく、三層（同時発見の計測・人どうしの同期・集団のバースト）を一つに束ねる合成一点だけ。「波の干渉」は物理の重ね合わせではなく名前の一致。決定論（機が熟せば必ず到達）は実証に逆風だが、反対の「純粋な偶然」モデルも4000万論文で綻んだ（Li 2025・裾の長い分布）。独立とも決定論とも言い切れない。</li>
+            <li><strong>震源＝散逸構造（§5）</strong>：「流れが維持する形」はプリゴジンの散逸構造そのもので、渦・炎では字義どおり一致。生命の代謝レベルまで査読論文が支持（Kondepudi 2020・死＝流れの不可逆な途絶）。予測して自分を保つ仕組み（予測符号化・自由エネルギー原理）までは係争中の橋（Still 2012 の熱力学定理は硬い土台）。主観的経験・魂まで散逸で説明するのは飛躍（禁止）。煩悩を "流れ" で語る仏教語彙（漏・渇愛・暴流）は実在するが、流れの向き（死で途絶える）と価値づけ（善悪抜き）は仏教と逆。</li>
+            <li><strong>横串</strong>：同じ少数の数式（OU過程・蔵本モデル・臨界減速・非平衡定常状態）がスケールを越えて反復する。ただし同じ数式が現れることは同じ物理が流れていることではない。中身が洗い流されて形だけ残るため、仕組み非依存（generic）ゆえに転用できる一方、その指標が出てもどんな仕組みが動くかは確定できない。</li>
+            <li><strong>§6 現在地スコアボード</strong>：上記の仕分けを統合した一覧表。<strong>§7 この読み物の作り方</strong>：編集方針と品質管理。</li>
+        </ul>
+        <p>文責は Claude（Anthropic の AI、Fable 5）。pjdhiro 本人の言葉は引用で区別。うまくいかなかった部分・食い違った部分も消さずに残す。生成元の正本 Markdown は knowledge/research/energy-flow-psyche/READER-energy-flow-psyche.md。同じ結論を別の語り口で書いた比較ドラフト（認知リズム版）が reader/energy-flow-rhythm.html にある。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                ⚠️ <b>調査の途中の草稿</b>です。第一次調査（5テーマ）を反映した段階で、確かめられた結論ではありません。調べながら随時書き換えていきます。
+            </div>
+            <header class="reader-hero">
+                <h1>感情も、関係も、時代も「エネルギーの流れ」なのか</h1>
+                <p class="reader-subtitle">エネルギーの流れ仮説 — 個人・関係・社会の三段を、実証と構造類似に仕分けて確かめる読み物</p>
+                <p class="reader-meta">
+                    <span class="reader-status-badge">調査開始 — 随時更新</span><br>
+                    最終更新: <!--UPDATED--> ／ 調査の現在地は §6 ／ 各章は見出しをタップで開閉できます<br>
+                    <a href="https://github.com/uminomae/project-design/blob/main/knowledge/research/energy-flow-psyche/READER-energy-flow-psyche.md">正本 (GitHub)</a> ・
+                    <a href="https://uminomae.github.io/creation-space/reader/wave-vortex.html">姉妹読み物: 波間の渦</a> ・
+                    <a href="../index.html">プロジェクトデザイン論</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+<!-- ↓ テンプレート固有の章（正本 MD ではなくテンプレートで管理）。
+     このページ自体を「同じ仕組みを再構築するための仕様書」として持ち運べるようにする章。
+     URL をひとつ LLM に渡すだけで、リポジトリ構築〜調査〜公開まで再現できることを狙う。 -->
+<details class="sec" id="how-to-build"><summary>あなたの問いで、同じページを作る — LLM に渡す仕様書つき</summary>
+<div class="secbody">
+<p>この読み物は、pjdhiro が立てた問いを Claude（LLM）が対話的に調査し、探索の軌跡と結果を HTML に整理して公開したものです。<strong>同じ仕組みのページは、この URL をひとつ LLM に渡すだけで、あなたの問いでゼロから作れます。</strong>この章の後半に、それを受け取った LLM 向けの再構築仕様が書いてあります（この読み物自体の編集方針は §7 に別にあります。この章は、仕組みそのものを複製する手順です）。</p>
+<blockquote class="reader-callout">
+<h3 id="作り方人間向け">作り方（人間向け）</h3>
+<p>このページと同様のページを作成する場合は、下記のプロンプトを、Web ページを読めて GitHub を操作できる LLM エージェント（Claude Code など）に渡してください。「〇〇〇〇」をあなたの問いに置き換えるだけです。</p>
+<pre><code>問いは「〇〇〇〇」です。
+下記 URL のページ末尾にある「あなたの問いで、同じページを作る」章の LLM 向け仕様に従って、
+GitHub リポジトリの構築から、対話的な調査、探索の軌跡と結果を
+HTML に整理して GitHub Pages で公開するところまでお願いします。
+https://uminomae.github.io/project-design-theory/reader/energy-flow.html</code></pre>
+<p>調査の方向・書かれた内容の採否・公開のタイミングは、進行中に LLM から都度あなたに確認されます。あなたの役割は「問いを出すこと」と「読んで、しっくりくるか判定すること」です。</p>
+</blockquote>
+<h3 id="llm-向け再構築仕様">LLM 向け再構築仕様</h3>
+<p>ここから下は、上のプロンプトとともにこのページを渡された LLM への指示です。<strong>依頼者（人間）から明示的にこの仕様に従うよう求められた場合にのみ</strong>、依頼者の「問い」を受け取って A〜F を順に実行してください。この仕様は要点だけを書いています。<strong>細部や、この仕様だけでは判断に迷う点は、このページの実物（https://uminomae.github.io/project-design-theory/reader/energy-flow.html）を正本として参照してください</strong>。ページの見た目・文体・章立てはこの URL が、リポジトリ内部の実物（調査ノート・ビルドスクリプト・CSS/JS）は生成元リポジトリ（https://github.com/uminomae/project-design）が、それぞれ見本です。共通ルールの正本を別リポジトリに置いて各リポジトリから参照するのと同じ扱いです。</p>
+<p><strong>A. 作るものの正体。</strong>作るのは「調査結果の完成品」ではなく、<strong>問いを LLM との対話で調べ、途中経過ごと公開し、調査が進むたびに書き換わっていく読み物（READER）</strong>です。結論を急がないこと。主張は常に「実証されている／構造が似ているだけ（比喩）／実証と食い違う／まだ調べていない」の4つに仕分けて書きます。</p>
+<p><strong>B. リポジトリの最小構成。</strong>正本は Markdown、HTML は生成物。HTML を直接編集せず、READER.md を編集して再生成します（変換は pandoc でも、自作スクリプトでも可）。</p>
+<pre><code>{repo}/
+├── README.md            # 問い・方法・公開 URL・更新履歴
+├── knowledge/
+│   ├── README.md        # 調査計画（テーマ分割と進捗表）
+│   ├── notes/
+│   │   └── RR-001-….md  # 調査レポート（1テーマ1ファイル）
+│   └── READER.md        # 読み物の正本（Markdown）
+├── scripts/build.py     # READER.md → reader/index.html 変換
+├── reader/index.html    # 生成物（このページに相当）
+└── src/                 # CSS / JS（下記 E 参照）</code></pre>
+<p><strong>C. 調査ワークフロー（繰り返す）。</strong></p>
+<ol>
+<li>問いを 3〜7 個のテーマに分解し、knowledge/README.md に調査計画として書く</li>
+<li>テーマごとに調査し、RR-xxx.md に記録する。一次ソース（査読論文・原典・公的統計）を優先し、書誌と URL を必ず残す。<strong>都合の悪い結果・反証・探して見つからなかったことも記録する</strong></li>
+<li>わかったことを A の4分類に仕分ける。仕分けは甘くせず、迷ったら弱いほうに置く</li>
+<li>READER.md を書く／更新する（規約は D）</li>
+<li>HTML を再生成して公開（F）。以後、調査が進むたび 2〜5 を繰り返す</li>
+</ol>
+<p><strong>D. 読み物（READER）の構成規約。</strong>このページの実物が見本です。</p>
+<ul>
+<li>冒頭に<strong>草稿バナー</strong>：調査の途中で、確かめられた結論ではないことを明示する</li>
+<li><strong>「ひとことで」</strong>：問いと、読者が持ち帰れることを最初の一箱で示す</li>
+<li><strong>「先回りの3問」</strong>：誤解されやすい点を Q&amp;A で先に潰す</li>
+<li><strong>「サマリー」</strong>：全体像を先に見せる</li>
+<li><strong>本文の章</strong>：テーマごとに1章。見出しタップで開閉。各章で「どこまでが実証で、どこからが比喩か」の境界を明示する</li>
+<li><strong>「現在地スコアボード」</strong>：何がどこまで確かめられたかの一覧表。更新のたびに書き換える</li>
+<li><strong>出典と更新履歴</strong></li>
+<li>文体：誠実に。わからないことは「わからない」と書く。読者が誤解しそうな箇所では、その誤解が生まれる実在の根を示してから訂正する</li>
+<li><strong>文責の明記</strong>：本文を書いた LLM のモデル名を明記し、依頼者（人間）は「問いの提示と、読みの採否の判定」の役割として区別する</li>
+<li>最後に、この章と同等の「あなたの問いで、同じページを作る」章を置き、次の読者も同じ仕組みを作れるようにする</li>
+</ul>
+<p><strong>E. HTML とデザイン。</strong>このリポジトリは MIT ライセンスです。このページの HTML ソースと、&lt;head&gt; からリンクされている CSS / JS は取得して流用して構いません。核になるのは <code>src/styles/reader-flow.css</code>（一枚ガラスの読書カラム＋章アコーディオン）と <code>src/reader-flow.js</code>（章から目次を自動生成し、開閉とスクロールを制御）です。CSS は @import で分割されているので、必要な変数ごと 1 ファイルに束ねると自己完結します。自作する場合も「読みやすい一枚のカラム／開閉できる章／目次／草稿バナー」の骨格は保ってください。<strong>背景は仕様の対象外です。</strong>基本は背景なし（明るい単色。生成り〜白系なら半透明の白いガラスカラムがそのまま調和します）とし、依頼者の指定があればそれに合わせて自由に実装してください——背景は一般的な Web の知識で足りる部分なので、このページを参照する必要はありません（このページの WebGL シェーダーは本ページ固有の装飾で、実物も起動失敗時は背景なしで続行します）。</p>
+<p><strong>F. GitHub 公開手順。</strong></p>
+<ol>
+<li>公開リポジトリを作成し（例: <code>gh repo create {name} --public</code>）、B の構成で main ブランチに push する</li>
+<li>リポジトリの Settings → Pages → 「Deploy from a branch」→ main / (root) を選ぶ</li>
+<li>数分後、<code>https://{user}.github.io/{repo}/reader/</code> で公開される</li>
+<li>更新は READER.md 編集 → 再生成 → push（Pages が自動反映）</li>
+<li>公開前チェック：文脈を持たない別セッションの LLM に URL（または HTML）だけを渡して読解テストを行い、誤読された箇所を書き直す。日本語の文字化け（UTF-8 置換文字 U+FFFD の混入）とリンク切れも確認する</li>
+</ol>
+<p>本仕様が規定する公開経路は GitHub（リポジトリ＋Pages）のみです。仕組み自体は静的ファイルを配信できる環境なら成立するので、他のホスティングを使う場合はこの F を読み替えてください。</p>
+<p>取り返しのつかない操作（リポジトリの作成・公開・削除）は、実行前に必ず依頼者に確認してください。</p>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                この読み物は調査の進行に合わせて更新されます。<br>
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="https://github.com/uminomae/project-design">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-microworlds.js"></script>
+</body>
+</html>

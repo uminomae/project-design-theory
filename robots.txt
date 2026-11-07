@@ -1,0 +1,35 @@
+User-agent: *
+Allow: /
+
+# AI crawlers are explicitly welcome.
+# This site is designed to be uniquely readable by LLMs (README rule 16);
+# see /llms.txt and /llms-full.txt for a structured overview.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://uminomae.github.io/project-design-theory/sitemap.xml
+Sitemap: https://uminomae.github.io/project-design-theory/wiki/sitemap.xml

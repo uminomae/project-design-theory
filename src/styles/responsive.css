@@ -1,0 +1,45 @@
+@media (max-width: 768px) {
+    .container { padding: 0 1.5rem; }
+    .page-hero h1,
+    .hero h1 { font-size: 3rem; }
+    h2 { font-size: 2rem; }
+    .content-section { padding: 5rem 0; min-height: auto; }
+    .noscript-fallback { padding: 5rem 1.5rem; }
+    .grid { grid-template-columns: 1fr; }
+    .glow-card { padding: 1.5rem; }
+    .glow-link { padding: 1rem 1.5rem; }
+    .top-bar { top: 1rem; right: 1rem; }
+    .site-menu { top: 3.5rem; right: 1rem; }
+    .section-prose { max-width: 100%; }
+}
+
+@media (max-width: 480px) {
+    .container { padding: 0 1rem; }
+    .page-hero,
+    .hero { padding: 4rem 0; }
+    .page-hero h1,
+    .hero h1 { font-size: 2.5rem; margin-bottom: 2rem; }
+    h2 { font-size: 1.5rem; margin-bottom: 1.5rem; }
+    .content-section { padding: 3rem 0; }
+    .noscript-fallback { padding: 3rem 1rem; }
+    .glow-card { padding: 1.25rem; }
+    .glow-link { padding: 0.75rem 1rem; }
+    .pills { gap: 0.5rem; }
+    .site-footer a { margin: 0 0.75rem; font-size: 1rem; }
+    .modal__panel { width: calc(100% - 1.5rem); padding: 1.5rem; }
+    .knowledge-modal__body table { font-size: 0.8rem; }
+    .knowledge-modal__body th,
+    .knowledge-modal__body td { padding: 0.4rem 0.5rem; }
+}
+
+/* Touch targets: min 44px */
+.pill,
+.glow-link,
+.menu-toggle,
+.lang-toggle button,
+.about-trigger,
+.modal__close {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+}

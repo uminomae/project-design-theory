@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロジェクトデザイン論 — 進め方・管理方法そのものを設計する | pjdhiro</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/">
+    <link rel="icon" href="./favicon.ico">
+    <meta name="description" content="プロジェクト管理手法を「選んで使う」だけでなく、実行・管理の方法そのものを対象化して設計する——プロジェクトデザイン論の探索拠点。PMBOK 第7版の環境適応を前提知とし、Doing（やること）に Being（起きていること）を加え、とくに感情処理とコミュニケーションを設計対象にする。Love駆動開発・欠損駆動思考。">
+    <meta name="description" lang="en" content="Project Design Theory — designing not only projects but the very methods by which they are run and managed. Taking PMBOK 7th edition as a premise, it adds Being (what is happening) to Doing (what we do) and treats emotional processing and communication as design concerns. Love-Driven Development, Kesson-Driven Thinking.">
+    <meta property="og:title" content="プロジェクトデザイン論 — 進め方・管理方法そのものを設計する | pjdhiro">
+    <meta property="og:description" content="プロジェクト管理手法を「選んで使う」だけでなく、実行・管理の方法そのものを対象化して設計する——プロジェクトデザイン論の探索拠点。PMBOK 第7版の環境適応を前提知とし、Doing（やること）に Being（起きていること）を加え、とくに感情処理とコミュニケーションを設計対象にする。Love駆動開発・欠損駆動思考。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/">
+    <meta property="og:image" content="https://uminomae.github.io/pjdhiro/assets/images/101631407.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="プロジェクトデザイン論 — 進め方・管理方法そのものを設計する | pjdhiro">
+    <meta name="twitter:description" content="プロジェクト管理手法を選んで使うだけでなく、進め方・管理方法そのものを設計する。Doing に Being を加え、感情処理を設計対象に。Love駆動開発。">
+    <meta name="twitter:image" content="https://uminomae.github.io/pjdhiro/assets/images/101631407.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "プロジェクトデザイン論 — 進め方・管理方法そのものを設計する | pjdhiro",
+          "alternateName": "Project Design | Love-Driven Dev — pjdhiro",
+          "url": "https://uminomae.github.io/project-design-theory/",
+          "description": "Project Design Theory — designing not only projects but the very methods by which they are run and managed. Taking PMBOK 7th edition as a premise, it adds Being (what is happening) to Doing (what we do) and treats emotional processing and communication as design concerns. Love-Driven Development, Kesson-Driven Thinking.",
+          "inLanguage": ["ja", "en"],
+          "keywords": ["プロジェクトデザイン", "project design", "プロジェクト管理手法の設計", "プロジェクトマネジメント手法", "プロジェクトの進め方", "project management methodology design", "PMBOK", "PMBOK 第7版", "事業構想", "Love-Driven Development", "感情処理", "emotional processing", "欠損駆動思考", "Kesson-Driven Thinking", "ネガティブケイパビリティ", "negative capability"],
+          "audience": {
+            "@type": "Audience",
+            "audienceType": "プロジェクト管理手法・進め方そのものをどう設計するかに関心がある人（プロジェクトマネージャー、事業責任者、チームリーダー、方法論の研究者） / People interested in how to design project management methods themselves"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "pjdhiro",
+            "url": "https://uminomae.github.io/pjdhiro/",
+            "description": "プロジェクトデザイン論の提唱者。Doing と Being を包含するプロジェクトの構想・設計・実行を理論化。",
+            "jobTitle": "Project Design Theorist",
+            "knowsAbout": ["Project Design", "Kesson-Driven Thinking", "Love-Driven Development", "Emotional Processing in Projects", "Beauty-Driven Thinking"],
+            "sameAs": [
+              "https://github.com/uminomae",
+              "https://uminomae.github.io/pjdhiro/",
+              "https://uminomae.github.io/project-design-theory/",
+              "https://uminomae.github.io/creation-space/",
+              "https://uminomae.github.io/awareness-space/",
+              "https://uminomae.github.io/kesson-space/"
+            ]
+          }
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "プロジェクトデザイン",
+          "alternateName": "Project Design",
+          "description": "Doing（やること）と Being（起きていること）を包含するプロジェクトの構想・設計・実行の理論体系",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "プロジェクトデザイン論用語集",
+            "url": "https://uminomae.github.io/project-design-theory/"
+          }
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Love駆動開発",
+          "alternateName": "Love-Driven Development",
+          "description": "関係・感情・意図が駆動する局面に名前を与える試み",
+          "url": "https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html",
+          "inDefinedTermSet": {
+            "@type": "DefinedTermSet",
+            "name": "プロジェクトデザイン論用語集",
+            "url": "https://uminomae.github.io/project-design-theory/"
+          }
+        },
+        {
+          "@type": "AboutPage",
+          "name": "About — Project Design",
+          "url": "https://uminomae.github.io/project-design-theory/?about",
+          "description": "Love駆動開発と呼びたい現象を、これまで何度も経験してきました。プロジェクトには「やること（Doing）」と「起きていること（Being）」があります。感情処理、欠損駆動思考、間主観性、創造の5段階を軸に、その構造を言語化しようとしています。",
+          "inLanguage": ["ja", "en"],
+          "author": {"@type": "Person", "name": "pjdhiro"}
+        },
+        {
+          "@type": "ItemList",
+          "name": "プロジェクトデザイン論の構成要素",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "欠損駆動思考 (Kesson-Driven Thinking)", "url": "https://uminomae.github.io/kesson-space/"},
+            {"@type": "ListItem", "position": 2, "name": "創造の5段階モデル (Five Stages of Creation)", "url": "https://uminomae.github.io/creation-space/"},
+            {"@type": "ListItem", "position": 3, "name": "アウェアネスモデル (Awareness Model)", "url": "https://uminomae.github.io/awareness-space/"}
+          ]
+        },
+        {
+          "@type": "Article",
+          "name": "デザイン思考とは — 調査ノート",
+          "alternateName": "What is Design Thinking? — Research Notes",
+          "url": "https://uminomae.github.io/project-design-theory/?knowledge=design-thinking",
+          "description": "デザイン思考の定義・系譜・形骸化をめぐる学術文献の横断調査。3層構造（designerly thinking / Stanford-IDEO / business DT）の区分、abduction・framing の核心、形骸化の6パターンを整理。",
+          "inLanguage": "ja",
+          "author": {"@type": "Person", "name": "pjdhiro"},
+          "datePublished": "2026-03-28"
+        },
+        {
+          "@type": "Article",
+          "name": "信頼とは — 調査ノート",
+          "alternateName": "What is Trust? — Research Notes",
+          "url": "https://uminomae.github.io/project-design-theory/?knowledge=trust",
+          "description": "信頼の定義・多層構造・日英翻訳ズレをめぐる学術文献の横断調査。感情・態度・期待・関係・制度・行動戦略・認識論・経験構造の8層と、trust/confidence/reliance の区別を整理。",
+          "inLanguage": "ja",
+          "author": {"@type": "Person", "name": "pjdhiro"},
+          "datePublished": "2026-03-28"
+        },
+        {
+          "@type": "Article",
+          "name": "価値とは — 調査ノート",
+          "alternateName": "What is Value? — Research Notes",
+          "url": "https://uminomae.github.io/project-design-theory/?knowledge=value",
+          "description": "価値の定義・多義性・日英翻訳ズレをめぐる学術文献の横断調査。価格・効用・規範・意味・象徴の5問題系と、value/values/worth/utility の区別を整理。",
+          "inLanguage": "ja",
+          "author": {"@type": "Person", "name": "pjdhiro"},
+          "datePublished": "2026-03-28"
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "name": "なぜ 3 と 7 だけが特別なのか — 可除代数‑意識/組織仮説（読み物）",
+          "alternateName": "Why Are 3 and 7 Special? — Division Algebras, Consciousness and Organization",
+          "url": "https://uminomae.github.io/project-design-theory/reader/three-and-seven.html",
+          "sameAs": ["https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/PAPER-division-algebra-ja.pdf", "https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/en/pdf/PAPER-division-algebra-en.pdf"],
+          "description": "「チームは3がベスト・7が上限」という体感と意識の二軸の体験から、「掛け算の経営」が回転の掛け算だとしたら？を数の梯子（ℝ→ℂ→ℍ→𝕆）で確かめる読み物。定理・採用した読み・見送った読みを分けて、検証の現在地を随時更新する。",
+          "inLanguage": "ja",
+          "author": {"@type": "Person", "name": "Claude (Fable 5)"},
+          "contributor": {"@type": "Person", "name": "pjdhiro"},
+          "datePublished": "2026-07-03"
+        },
+        {
+          "@type": "Article",
+          "name": "感情も、関係も、時代も「エネルギーの流れ」なのか — エネルギーの流れ仮説（読み物）",
+          "alternateName": "Are Emotions, Relationships and Eras Flows of Energy?",
+          "url": "https://uminomae.github.io/project-design-theory/reader/energy-flow.html",
+          "description": "散逸構造（流れが続く間だけ形が保たれる）に触発された独立探究。感情・人間関係・時代をエネルギーの流れとして読めるかを、意味のものさし（字義／構造類似／比喩）と確からしさのものさしで仕分けながら確かめる読み物。",
+          "inLanguage": "ja",
+          "author": {"@type": "Person", "name": "Claude (Fable 5)"},
+          "contributor": {"@type": "Person", "name": "pjdhiro"},
+          "datePublished": "2026-07-14"
+        },
+        {
+          "@type": "Article",
+          "name": "愛は、重力に似ていないか — 動かず、何もなく、自分からは見えないのに、すべてを回す中心",
+          "alternateName": "Is Love Like Gravity? — On a Leader's Role",
+          "url": "https://uminomae.github.io/project-design-theory/reader/gravity-love.html",
+          "description": "重力の井戸の中心は、動かず、何もなく、自分からは見えないのに、周りのすべてを回している。愛はそれに似ていないか。その構造類似を踏まえて、「経営者の役割とは？」に仮説的に答える読み物。役割は意思決定である。しかし存在についての役割は未解明——存在そのものが源ということもあるだろうか。",
+          "inLanguage": "ja",
+          "author": {"@type": "Person", "name": "Claude"},
+          "contributor": {"@type": "Person", "name": "pjdhiro"},
+          "datePublished": "2026-11-01"
+        },
+        {
+          "@type": "Article",
+          "name": "プロジェクトデザイン — 総論（射程・領域・用語）",
+          "alternateName": "Project Design — Overview (scope, domains, terms)",
+          "url": "https://uminomae.github.io/pjdhiro/project-design/",
+          "description": "プロジェクトデザインとは、プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営み。射程（営利・非営利の事業を主対象）、領域（コミュニケーション＝情報処理／感情処理、環境適応＝PMBOK 第7版を前提知）、Doing／Being の二分、PMBOK との違いを固定する総論ページ。",
+          "inLanguage": "ja",
+          "author": {
+            "@type": "Person",
+            "name": "pjdhiro"
+          },
+          "dateModified": "2026-06-01"
+        },
+        {
+          "@type": "FAQPage",
+          "name": "プロジェクト管理手法をどう設計するか — よくある問い",
+          "url": "https://uminomae.github.io/project-design-theory/",
+          "inLanguage": "ja",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "プロジェクト管理手法「そのもの」を設計するとは、どういうことですか？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "PMBOK などの既存の手法を選んで当てはめるだけでなく、「このプロジェクトをどう進め、どう管理するか」という方法自体を設計の対象にすることです。プロジェクトデザイン論は、対象を「プロジェクトの構想・設計・実行」と「プロジェクトの実行・管理方法の構想・設計」の二つとして定義しています。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "PMBOK とどう違いますか？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "置き換えではなく拡張です。PMBOK 第7版が詳しく扱う環境適応（物質的条件）は前提知として使います。そのうえで、PMBOK が Doing（やること）の計画と管理を中心にするのに対し、Doing に Being（起きていること）を加えます。感情はステークホルダー管理の一要素ではなく設計対象に、コミュニケーションは情報伝達だけでなく間主観的体験として、創造性は創造の5段階モデルで構造化して扱います。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "進め方を設計するとき、何を設計対象に加えるのですか？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "プロジェクト実務を環境適応（物質的条件）とコミュニケーション（非物質的条件）に分け、コミュニケーションをさらに情報処理と感情処理に分けます。とくに感情処理——情動伝染、感情メタ認知、心理的境界、受容、価値——を中心に扱います。欠けているものへの気づきから考える欠損駆動思考も、思考法の一つとして使います。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "どんなプロジェクトに使えますか？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "営利・非営利の事業が主な対象です。ただし枠組みは、研究や人生など、目的を持って構想・意思決定・実行・調整を繰り返す営み一般にも当てられます。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "どこから読めばよいですか？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "まず総論（射程・領域・用語を固定するページ）を読むと全体像がつかめます。チームの人数（3と7）を扱う読み物と、感情・関係を流れとして読む読み物が具体例です。理論はまだ完成しておらず、探索の途中を公開しています。"
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar" role="group" data-i18n-aria-label-key="controls.topBarAria" aria-label="Site controls">
+        <button
+            class="menu-toggle"
+            type="button"
+            data-menu-toggle
+            data-i18n-key="menu.toggle"
+            aria-expanded="false"
+            aria-controls="site-menu"
+        >Menu</button>
+        <div class="lang-toggle" data-i18n-aria-label-key="controls.languageAria" aria-label="Language toggle">
+            <button type="button" class="active" data-lang-button="ja">JA</button>
+            <button type="button" data-lang-button="en">EN</button>
+        </div>
+    </div>
+
+    <!-- Dropdown Menu -->
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+
+    <div id="webgl-container" aria-hidden="true"></div>
+
+    <!-- Scroll hint -->
+    <div id="scroll-hint" class="scroll-hint visible" aria-hidden="true">
+        <span>scroll</span>
+        <div class="scroll-hint__arrow">&#9662;</div>
+    </div>
+
+    <div id="content" class="page-shell">
+        <main class="container page-main" id="main-content">
+
+            <!-- Hero -->
+            <header class="hero page-hero" id="hero">
+                <span class="hero-label glow-heading hero-label--ai" data-i18n-key="hero.aiDisclaimer">AIが執筆しているため間違いがある場合があります。</span>
+                <span class="hero-label glow-heading">Love-Driven Dev — pjdhiro</span>
+                <h1 class="glow-heading">Project<br>Design</h1>
+                <div class="hero-notice prose-block glow-text section-prose">
+                    <p data-i18n-key="hero.notice"><a href="./reader/love-driven-dev.html">Love駆動開発と呼びたい現象</a>を、これまで何度も経験してきました。<br>
+                    ここでいうプロジェクトは「やること（Doing）」だけでなく「起きていること（Being）」まで含む出来事です。</p>
+                </div>
+                <details class="misconception">
+                    <summary class="glow-heading" data-i18n-key="love.faq.summary">よくある誤解</summary>
+                    <div class="misconception-body prose-block glow-text section-prose" data-i18n-key="love.faq.body">
+                        <ul>
+                            <li><strong>「Love は恋愛・愛情のことだ」</strong> → つながりを生む引力一般を指します。縁を生む力であって、特定の感情ではありません。</li>
+                            <li><strong>「『生存と同等に重要』は論証済みの事実だ」</strong> → 構え（仮説）です。生存と並ぶ駆動力ではないか、という問いとして置いています。</li>
+                        </ul>
+                    </div>
+                </details>
+                <button class="about-trigger" type="button" data-modal-open="about" data-i18n-aria-label-key="hero.aboutAria" aria-label="このサイトについて">
+                    <span class="about-trigger__letter">i</span>
+                </button>
+            </header>
+
+            <!-- Overview -->
+            <section class="content-section content-section--overview" id="overview" aria-labelledby="overview-title">
+                <span class="section-label glow-heading" data-i18n-key="section.overview.label">Overview</span>
+                <h2 class="glow-heading" id="overview-title" data-i18n-key="section.overview.title">概要</h2>
+                <div class="overview-text prose-block glow-text section-prose">
+                    <p data-i18n-key="overview.p1">プロジェクトデザインとは、プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営みです。</p>
+                    <p data-i18n-key="overview.p2">まず、その基底として射程と領域を固定し、以降の議論を「やること（Doing）」と「起きてること（Being）」に分けて整理します。</p>
+                    <p data-i18n-key="overview.p3">プロジェクト実務は、環境適応（物質的条件）とコミュニケーション（非物質的条件）に大別できます。本サイトでは環境適応を前提知（PMBOK等）とし、コミュニケーションを情報処理／感情処理に分解して、とくに感情処理を中心に扱います。</p>
+                </div>
+                <div class="grid">
+                    <div class="card glow-card">
+                        <h3 data-i18n-key="overview.definition.title">定義</h3>
+                        <ul>
+                            <li data-i18n-key="overview.definition.item1">プロジェクトの構想・設計・実行</li>
+                            <li data-i18n-key="overview.definition.item2">実行・管理方法の構想・設計</li>
+                        </ul>
+                    </div>
+                    <div class="card glow-card">
+                        <h3 data-i18n-key="overview.scope.title">射程</h3>
+                        <p data-i18n-key="overview.scope.body">営利・非営利の事業を主たる適用対象とする（論証の射程）。研究、人生など、主体が目的を持って行為する営み一般へは、構造の類似を手がかりに広げて考える（論証ではなく試み）。</p>
+                    </div>
+                    <div class="card glow-card">
+                        <h3 data-i18n-key="overview.domain.title">領域</h3>
+                        <p data-i18n-key="overview.domain.body">コミュニケーション（情報処理＋感情処理）と環境適応（経営学など）</p>
+                    </div>
+                </div>
+                <details class="misconception">
+                    <summary class="glow-heading" data-i18n-key="overview.faq.summary">よくある誤解</summary>
+                    <div class="misconception-body prose-block glow-text section-prose" data-i18n-key="overview.faq.body">
+                        <ul>
+                            <li><strong>「Doing/Being と 環境適応/コミュニケーション は四象限に組める」</strong> → これらは直交軸ではなく、一つの全体への相補的な切り口です。四象限に押し込むと現象が痩せます。</li>
+                            <li><strong>「主観・客観、個はどこまでかをクリアに線引きできる」</strong> → 微細な領域では量子と古典の境界のように揺れます。切り口であって実在の分割ではありません。</li>
+                            <li><strong>「構想→設計→実行は決まった順序で循環する」</strong> → 実行と設計はメタとオブジェクトをまたいで折り返す、止揚を伴うスパイラルです。同じ所に戻る循環ではありません。</li>
+                        </ul>
+                    </div>
+                </details>
+            </section>
+
+            <!-- Doing -->
+            <section class="content-section content-section--doing" id="doing" aria-labelledby="doing-title">
+                <span class="section-label glow-heading" data-i18n-key="section.doing.label">Doing</span>
+                <h2 class="glow-heading" id="doing-title" data-i18n-key="section.doing.title">やること</h2>
+                <div class="grid">
+                    <div class="card glow-card">
+                        <h3 data-i18n-key="doing.principles.title">行動原理</h3>
+                        <ul>
+                            <li data-i18n-key="doing.principles.item1">多様な価値観を受容れる</li>
+                            <li data-i18n-key="doing.principles.item2">バランスを達成する</li>
+                            <li data-i18n-key="doing.principles.item3">状況に常に適応する</li>
+                        </ul>
+                    </div>
+                    <div class="card glow-card">
+                        <h3 data-i18n-key="doing.environment.title">環境適応</h3>
+                        <p data-i18n-key="doing.environment.body">「PMBOK第7版」等に基づく物質的条件の整理。本サイトでは前提知とし、非物質的条件へ焦点を当てます。</p>
+                    </div>
+                    <div class="card glow-card">
+                        <h3 data-i18n-key="doing.communication.title">コミュニケーション</h3>
+                        <p data-i18n-key="doing.communication.body">情報処理と感情処理。心の反応を通じて感じ取る感情の側面を中心に扱います。</p>
+                    </div>
+                </div>
+                <div class="pills">
+                    <a href="/kesson-space/" class="pill pill--doing" data-i18n-key="pill.kesson">欠損駆動思考</a>
+                    <a href="/pjdhiro/thinking-bi/" class="pill pill--doing" data-i18n-key="pill.beauty">美駆動思考</a>
+                    <a href="/pjdhiro/emotional-processing/" class="pill pill--doing" data-i18n-key="pill.emotionalProcessing">感情処理（総論）</a>
+                    <a href="/pjdhiro/meditation/" class="pill pill--doing" data-i18n-key="pill.meditation">瞑想</a>
+                </div>
+            </section>
+
+            <!-- Being -->
+            <section class="content-section content-section--being" id="being" aria-labelledby="being-title">
+                <span class="section-label glow-heading" data-i18n-key="section.being.label">Being</span>
+                <h2 class="glow-heading" id="being-title" data-i18n-key="section.being.title">起きていること</h2>
+                <div class="being-desc prose-block glow-text section-prose">
+                    <p data-i18n-key="section.being.body">場（Field）が現れ、差異＝波（Wave）が立ち上がり、縁＝境界（Relation）で衝突が生まれ、渦（Spinor）として止揚・統合され、成果が束（Bundle）として成る。プロジェクトの現在地を知ること。</p>
+                </div>
+                <details class="misconception">
+                    <summary class="glow-heading" data-i18n-key="being.faq.summary">よくある誤解</summary>
+                    <div class="misconception-body prose-block glow-text section-prose" data-i18n-key="being.faq.body">
+                        <ul>
+                            <li><strong>「回転は渦だけのもの」</strong> → 回転は全段階に遍在します。波も回転です。「位相」も回転の一種で、あえて一般的・曖昧な語を当てています。</li>
+                            <li><strong>「衝突は渦で統合される」</strong> → 衝突は縁（境界）で生まれ、渦はそれを止揚・統合する段階です。</li>
+                            <li><strong>「束→場は同じ場に戻る閉じた循環」</strong> → 次サイクルの場へ前進する循環で、螺旋的に展開し元へは戻りません。</li>
+                        </ul>
+                    </div>
+                </details>
+                <div class="pills">
+                    <a href="/creation-space/" class="pill pill--being" data-i18n-key="pill.creationModel">創造のモデル</a>
+                    <a href="/awareness-space/" class="pill pill--being" data-i18n-key="pill.awarenessModel">意識のモデル</a>
+                </div>
+            </section>
+
+            <!-- Future + Repos -->
+            <section class="content-section content-section--direction" id="direction" aria-labelledby="direction-title">
+                <span class="section-label glow-heading" data-i18n-key="section.direction.label">Direction</span>
+                <h2 class="glow-heading" id="direction-title" data-i18n-key="section.direction.title">今後の方向性</h2>
+                <div class="future-text prose-block glow-text section-prose">
+                    <p data-i18n-key="section.direction.body">本ページで固定した「射程・領域・Doing/Beingの二分」は基底（土台・骨格）です。以降の各ページは、この骨格の上に展開します。</p>
+                </div>
+                <div class="grid repo-grid">
+                    <a href="./reader/love-driven-dev.html" class="repo-card glow-link">
+                        <span class="repo-card__title" data-i18n-key="repo.loveDrivenDev">Love駆動開発と呼びたいもの β</span>
+                        <span class="repo-card__desc"></span>
+                    </a>
+                    <a href="/kesson-space/" class="repo-card glow-link">
+                        <span class="repo-card__title" data-i18n-key="repo.kesson">欠損駆動思考</span>
+                        <span class="repo-card__desc"></span>
+                    </a>
+                    <a href="/creation-space/" class="repo-card glow-link">
+                        <span class="repo-card__title" data-i18n-key="repo.creation">創造とは</span>
+                        <span class="repo-card__desc"></span>
+                    </a>
+                    <a href="/awareness-space/" class="repo-card glow-link">
+                        <span class="repo-card__title" data-i18n-key="repo.awareness">意識とは</span>
+                        <span class="repo-card__desc"></span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Questions -->
+            <section class="content-section content-section--questions" id="questions" aria-labelledby="questions-title">
+                <span class="section-label glow-heading" data-i18n-key="section.questions.label">Questions</span>
+                <h2 class="glow-heading" id="questions-title" data-i18n-key="section.questions.title">問い</h2>
+                <div class="questions-desc prose-block glow-text section-prose">
+                    <p data-i18n-key="section.questions.body">プロジェクトデザイン論の途中で生まれた問いを、読み物として公開し、調べながら更新しています。確定した結論ではなく、検証の現在地の共有です。</p>
+                </div>
+                <div class="grid repo-grid">
+                    <a href="./reader/gravity-love.html" class="repo-card repo-card--feature glow-link">
+                        <span class="repo-card__title" data-i18n-key="repo.gravityLove">愛は、重力に似ていないか — 動かず、何もなく、自分からは見えないのに、すべてを回す中心</span>
+                        <span class="repo-card__desc" data-i18n-key="repo.gravityLoveDesc">重力の井戸の中心は、動かず、何もなく、自分からは見えないのに、周りのすべてを回している。愛はそれに似ていないか。その構造類似を踏まえて、「経営者の役割とは？」に仮説的に答える読み物。役割は意思決定である。しかし存在についての役割は未解明——存在そのものが源ということもあるだろうか。</span>
+                    </a>
+                    <a href="./reader/energy-flow.html" class="repo-card repo-card--feature glow-link">
+                        <span class="repo-card__title" data-i18n-key="repo.energyFlow">感情も、関係も、時代も「エネルギーの流れ」なのか</span>
+                        <span class="repo-card__desc" data-i18n-key="repo.energyFlowDesc">物質＝閉じ込められたエネルギーという物理の構造類似から、感情・人間関係・社会の渦までを、実証と比喩に仕分けて確かめる読み物（調査開始）</span>
+                    </a>
+                    <a href="https://uminomae.github.io/creation-space/reader/wave-vortex.html" class="repo-card repo-card--feature glow-link">
+                        <span class="repo-card__title" data-i18n-key="repo.waveVortex">波間の渦 — 宇宙は「モノ」でできているか、「流れ」でできているか</span>
+                        <span class="repo-card__desc" data-i18n-key="repo.waveVortexDesc">「エネルギーの流れ」の姉妹読み物。「宇宙は海の渦のような現象でできている」という直観を、物理学と思想史のどこまでが支えるか三層に分けて接地する（creation-space）</span>
+                    </a>
+                    <a href="./reader/three-and-seven.html" class="repo-card repo-card--feature glow-link">
+                        <span class="repo-card__title" data-i18n-key="repo.multiplication">足し算ではなく、掛け算の経営 — 答えは「3 と 7」</span>
+                        <span class="repo-card__desc" data-i18n-key="repo.multiplicationDesc">複利の話ではない。向きと位相が振幅を決める「回転の掛け算」——チームの 3 と 7 を数学で確かめる読み物</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Tools -->
+            <section class="content-section content-section--tools" id="tools" aria-labelledby="tools-title">
+                <span class="section-label glow-heading" data-i18n-key="section.tools.label">Tools</span>
+                <h2 class="glow-heading" id="tools-title" data-i18n-key="section.tools.title">ツール</h2>
+                <div class="tools-desc prose-block glow-text section-prose">
+                    <p data-i18n-key="section.tools.body">読むだけでなく、自分で試して確かめるためのページです。診断ではなく、自分の見方に気づくきっかけとして置いています。</p>
+                </div>
+                <div class="grid repo-grid">
+                    <a href="./reader/stages-screener.html" class="repo-card repo-card--feature glow-link">
+                        <span class="repo-card__title" data-i18n-key="repo.screener">ものの見方の広さスクリーナー</span>
+                        <span class="repo-card__desc" data-i18n-key="repo.screenerDesc">視座・メタ認知・インクルーシブ（包摂）——どこまでを含めて観ているかを16問×5択で確かめる。6.0・6.5 では非二元性も見る</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- References -->
+            <section class="content-section content-section--references" id="references" aria-labelledby="references-title">
+                <span class="section-label glow-heading" data-i18n-key="section.references.label">References</span>
+                <h2 class="glow-heading" id="references-title" data-i18n-key="section.references.title">参考文献</h2>
+                <div class="tools-desc prose-block glow-text section-prose">
+                    <p data-i18n-key="section.references.body">pjdhiro が影響を受けてきた論を、分野ごとにまとめたページです。</p>
+                </div>
+                <div class="grid repo-grid">
+                    <a href="./reader/influences-psychology.html" class="repo-card repo-card--feature glow-link">
+                        <span class="repo-card__title" data-i18n-key="repo.refPsychology">心理学</span>
+                        <span class="repo-card__desc" data-i18n-key="repo.refPsychologyDesc">精神分析と発達心理。学者の名前、主要な論の短い説明、pjdhiro の印象の順に紹介する</span>
+                    </a>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- SEO: About コンテンツの静的要約（クローラー向け） -->
+        <div class="visually-hidden" aria-hidden="true" id="seo-content-summary">
+            <h2>プロジェクト管理手法をどう設計するか — このサイトが扱う問い</h2>
+            <p>プロジェクトデザインとは、プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営みです。PMBOK などの既存の手法を選んで当てはめるだけでなく、「このプロジェクトをどう進め、どう管理するか」を設計の対象にします。</p>
+            <p>PMBOK 第7版が扱う環境適応（物質的条件）は前提知として使い、置き換えません。そのうえで Doing（やること）の計画と管理に Being（起きていること）を加え、コミュニケーションを情報処理と感情処理に分けて、とくに感情処理（情動伝染、感情メタ認知、心理的境界、受容）を設計対象にします。主な対象は営利・非営利の事業で、研究や人生など目的を持って構想・意思決定・実行・調整を繰り返す営みにも枠組みを当てられます。総論: <a href="https://uminomae.github.io/pjdhiro/project-design/">https://uminomae.github.io/pjdhiro/project-design/</a></p>
+            <p>Project Design is the practice of designing not only projects themselves but the very methods by which they are run and managed. Rather than just picking an existing method such as PMBOK and applying it, it treats "how this project should be run and managed" as a design object. It takes the environmental adaptation covered by PMBOK 7th edition as a premise, adds Being (what is happening) to Doing (what we do), splits communication into information processing and emotional processing, and focuses on emotional processing as a design concern.</p>
+            <h2>About — Project Design</h2>
+            <p>Love駆動開発と呼びたい現象を、これまで何度も経験してきました。プロジェクトには「やること（Doing）」と「起きていること（Being）」があります。このサイトでは事業構想から感情処理、欠損駆動思考、間主観性、創造の5段階までを軸に、その構造を言語化しようとしています。</p>
+            <p>Love駆動開発と呼びたいもの β の解説ページ: <a href="./reader/love-driven-dev.html">reader/love-driven-dev.html</a>。Love駆動開発は、pjdhiro がそう呼びたいプロジェクトの一つのやり方で、プロジェクトデザインを構成する一例。そのやり方は構想の手前から動いている。構想から先の開発の行為（Doing）は経営学が書いてきた。その手前の見えないものを、重力や渦に似た形と、生存と信頼の信号から書く。</p>
+            <p>I have experienced what I want to call Love-Driven Development many times. Every project has "Doing" and "Being." This site attempts to articulate that structure — from business planning through emotional processing, Kesson-Driven Thinking, intersubjectivity, and the Five Stages of Creation.</p>
+            <p>参考文献 — 影響を受けた心理学（工事中）: <a href="./reader/influences-psychology.html">reader/influences-psychology.html</a>。pjdhiro が影響を受けてきた心理学の論を、学者の名前、主要な論の短い説明、pjdhiro の印象の順に紹介する。精神分析（フロイト・ユング・河合隼雄・クライン・ウィニコット・ビオン・新田信也）と発達心理（クック＝グロイター・ウィルバー・リソ）。</p>
+            <h2>デザイン思考とは — 調査ノート</h2>
+            <p>デザイン思考は単一の方法論ではなく、設計学的思考（designerly thinking）、Stanford-IDEO型教育実践、経営コンサルパッケージの3層が混在している。核心は abduction・framing・問題設定の往還にあり、5段階プロセスは導入用の recipe であって本質ではない。論理的思考の対立物ではなく補完物である。</p>
+            <p>Design thinking is not a single methodology but a mixture of three layers: designerly thinking, Stanford-IDEO educational practice, and business consulting packages. Its core lies in the interplay of abduction, framing, and problem definition. The five-stage process is a recipe for introduction, not the essence. It complements, rather than opposes, logical thinking.</p>
+            <h2>信頼とは — 調査ノート</h2>
+            <p>「信頼」は単一概念ではなく複合概念である。分野ごとに感情、態度、期待、関係の性質、制度的資本、行動戦略、認識論的条件、経験構造として扱われる。共通核は「脆弱性」「期待」「依存」「予測不能性」にある。</p>
+            <p>Trust is not a single concept but a composite one. Across disciplines it is treated as emotion, attitude, expectation, relational quality, institutional capital, behavioral strategy, epistemological condition, and experiential structure.</p>
+            <h2>価値とは — 調査ノート</h2>
+            <p>「価値」は価格・効用・規範・意味・象徴の少なくとも5つの問題系が束になった多義語である。価値は対象の内部に固定的にあるものでも主体の気分だけでもなく、対象・主体・制度・文脈の関係のなかで立ち上がる多層概念である。</p>
+            <p>Value is a polysemous term bundling at least five problem domains: price, utility, norms, meaning, and symbolism. It emerges not as a fixed property of objects nor as mere subjective feeling, but as a multi-layered concept arising from relationships among objects, subjects, institutions, and contexts.</p>
+            <h2>読み物 — なぜ 3 と 7 だけが特別なのか</h2>
+            <p>「チームは3がベスト・7が上限」という体感と意識の二軸の体験から、「掛け算の経営」が回転の掛け算だとしたら？を数の梯子（ℝ→ℂ→ℍ→𝕆、フルヴィッツの定理）で確かめる読み物。定理・採用した読み・見送った読みを分けて公開している。<a href="./reader/three-and-seven.html">reader/three-and-seven.html</a></p>
+            <h2>読み物 — 感情も、関係も、時代も「エネルギーの流れ」なのか</h2>
+            <p>散逸構造（流れが続く間だけ形が保たれる）に触発された独立探究。感情・人間関係・時代をエネルギーの流れとして読めるかを、意味のものさし（字義／構造類似／比喩）と確からしさのものさしで仕分けながら確かめる読み物。<a href="./reader/energy-flow.html">reader/energy-flow.html</a></p>
+            <h2>読み物 — 愛は、重力に似ていないか — 動かず、何もなく、自分からは見えないのに、すべてを回す中心</h2>
+            <p>重力の井戸の中心は、動かず、何もなく、自分からは見えないのに、周りのすべてを回している。愛はそれに似ていないか。その構造類似を踏まえて、「経営者の役割とは？」に仮説的に答える読み物。役割は意思決定である。しかし存在についての役割は未解明——存在そのものが源ということもあるだろうか。<a href="./reader/gravity-love.html">reader/gravity-love.html</a></p>
+        </div>
+
+        <footer class="site-footer">
+            <a href="./wiki/">Wiki</a>
+            <a href="/pjdhiro/">Blog</a>
+            <a href="https://x.com/pjdhiro">X</a>
+            <a href="https://github.com/uminomae/project-design">GitHub</a>
+            <div class="site-footer__license">MIT License</div>
+        </footer>
+    </div>
+
+    <!-- About Modal -->
+    <div id="about-modal" class="modal modal--about" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
+        <div class="modal__backdrop" data-modal-close="about"></div>
+        <div class="modal__panel modal__panel--about">
+            <h2 id="about-modal-title" class="visually-hidden" data-i18n-key="modal.aboutTitle">About this site</h2>
+            <button class="modal__close" type="button" data-modal-close="about" data-i18n-aria-label-key="modal.close" aria-label="閉じる">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+            </button>
+            <div id="about-body" class="about-modal__body"></div>
+        </div>
+    </div>
+
+    <!-- Knowledge Modal -->
+    <div id="knowledge-modal" class="modal modal--knowledge" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="knowledge-modal-title">
+        <div class="modal__backdrop" data-modal-close="knowledge"></div>
+        <div class="modal__panel modal__panel--knowledge">
+            <h2 id="knowledge-modal-title" class="visually-hidden" data-i18n-key="modal.knowledgeTitle">Knowledge note</h2>
+            <div class="knowledge-modal__header">
+                <a id="knowledge-pdf-link" class="knowledge-modal__pdf" href="#" target="_blank" rel="noopener" aria-disabled="true" data-i18n-key="knowledge.pdf.pending">PDF準備中</a>
+                <button class="modal__close" type="button" data-modal-close="knowledge" data-i18n-aria-label-key="modal.close" aria-label="閉じる">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                </button>
+            </div>
+            <div id="knowledge-body" class="knowledge-modal__body"></div>
+        </div>
+    </div>
+
+    <!-- How-to Modal -->
+    <div id="howto-modal" class="modal modal--howto" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="howto-modal-title">
+        <div class="modal__backdrop" data-modal-close="howto"></div>
+        <div class="modal__panel modal__panel--howto">
+            <div class="howto-modal__header">
+                <h2 id="howto-modal-title" data-i18n-key="howto.title">このプロジェクトを AI に読ませる</h2>
+                <button class="modal__close" type="button" data-modal-close="howto" data-i18n-aria-label-key="modal.close" aria-label="閉じる">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                </button>
+            </div>
+            <div class="howto-modal__body">
+
+                <!-- Part 1: 3ステップ -->
+                <section class="howto-section">
+                    <h3 data-i18n-key="howto.steps.heading">3ステップで始める</h3>
+                    <ol class="howto-steps">
+                        <li data-i18n-key="howto.steps.1">LLM（Claude.ai / ChatGPT / Gemini 等）を開く</li>
+                        <li data-i18n-key="howto.steps.2">下のプロンプトをコピーして貼り付ける</li>
+                        <li data-i18n-key="howto.steps.3">「○○」を自分のテーマに置き換えて送信</li>
+                    </ol>
+                    <div class="howto-prompt">
+                        <div class="howto-prompt__head">
+                            <span class="howto-prompt__label" data-i18n-key="howto.prompt.basic.label">基本プロンプト</span>
+                            <button class="howto-copy" type="button" data-copy-target="prompt-basic" aria-label="Copy">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><rect x="5" y="5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.3"/><path d="M11 5V3.5A1.5 1.5 0 009.5 2h-6A1.5 1.5 0 002 3.5v6A1.5 1.5 0 003.5 11H5" stroke="currentColor" stroke-width="1.3"/></svg>
+                                <span data-i18n-key="howto.copy">コピー</span>
+                            </button>
+                        </div>
+                        <pre class="howto-prompt__code" id="prompt-basic" data-i18n-key="howto.prompt.basic.code">https://github.com/uminomae/project-design
+
+このrepoと関連repoを読んでください。
+このプロジェクトの知見やフレームワークを活用して
+「○○」を手伝ってください。関連repoも参照してください。</pre>
+                    </div>
+                </section>
+
+                <!-- Part 2A: 調査・分析 -->
+                <section class="howto-section">
+                    <h3 data-i18n-key="howto.research.heading">A. 調査・分析に使う</h3>
+                    <p class="howto-desc" data-i18n-key="howto.research.desc">このプロジェクトの理論構造や調査手法を、自分のテーマに転用できます。</p>
+                    <ul class="howto-examples">
+                        <li data-i18n-key="howto.research.ex1">「Being×Doingの二軸で、自分のプロジェクトを見直したい」</li>
+                        <li data-i18n-key="howto.research.ex2">「30領域の三角測量手法を参考に、○○を多角的に調査して」</li>
+                        <li data-i18n-key="howto.research.ex3">「創造の5段階モデルで、私の創作プロセスを構造化したい」</li>
+                        <li data-i18n-key="howto.research.ex4">「間主観性の視点を使って、チームの関係性を分析したい」</li>
+                    </ul>
+                    <div class="howto-prompt">
+                        <div class="howto-prompt__head">
+                            <span class="howto-prompt__label" data-i18n-key="howto.prompt.research.label">調査向けプロンプト</span>
+                            <button class="howto-copy" type="button" data-copy-target="prompt-research" aria-label="Copy">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><rect x="5" y="5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.3"/><path d="M11 5V3.5A1.5 1.5 0 009.5 2h-6A1.5 1.5 0 002 3.5v6A1.5 1.5 0 003.5 11H5" stroke="currentColor" stroke-width="1.3"/></svg>
+                                <span data-i18n-key="howto.copy">コピー</span>
+                            </button>
+                        </div>
+                        <pre class="howto-prompt__code" id="prompt-research" data-i18n-key="howto.prompt.research.code">https://github.com/uminomae/project-design
+
+このrepoと関連repoを読んで、中にある理論構造
+（Doing/Being の二軸、創造の5段階モデル、
+間主観性の意識モデル、三角測量など）を参考に、
+「○○」というテーマを多角的に分析してください。</pre>
+                    </div>
+                </section>
+
+                <!-- Part 2B: ハーネス導入 -->
+                <section class="howto-section">
+                    <h3 data-i18n-key="howto.harness.heading">B. LLM協働環境を自分のプロジェクトに導入する</h3>
+                    <p class="howto-desc" data-i18n-key="howto.harness.desc">CLAUDE.md・hooks・skills・agents などのハーネス設計を参考にできます。</p>
+                    <ul class="howto-examples">
+                        <li data-i18n-key="howto.harness.ex1">「CLAUDE.mdやhooksの設計を参考に、LLM協働環境を構築したい」</li>
+                        <li data-i18n-key="howto.harness.ex2">「マルチエージェント構成（Claude/Gemini/Codex）を設計したい」</li>
+                    </ul>
+                    <div class="howto-prompt">
+                        <div class="howto-prompt__head">
+                            <span class="howto-prompt__label" data-i18n-key="howto.prompt.harness.label">ハーネス導入プロンプト</span>
+                            <button class="howto-copy" type="button" data-copy-target="prompt-harness" aria-label="Copy">
+                                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><rect x="5" y="5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.3"/><path d="M11 5V3.5A1.5 1.5 0 009.5 2h-6A1.5 1.5 0 002 3.5v6A1.5 1.5 0 003.5 11H5" stroke="currentColor" stroke-width="1.3"/></svg>
+                                <span data-i18n-key="howto.copy">コピー</span>
+                            </button>
+                        </div>
+                        <pre class="howto-prompt__code" id="prompt-harness" data-i18n-key="howto.prompt.harness.code">https://github.com/uminomae/project-design
+
+このrepoと関連repoの .claude/ ディレクトリ構造を読んで、
+仮説検証型の文献調査をLLMに自律実行させるための
+ハーネス（CLAUDE.md、hooks、skills、agents）の設計を分析して、
+私のプロジェクトにも導入する方法を提案してください。</pre>
+                    </div>
+                </section>
+
+                <!-- Part 2C: 思考の整理 -->
+                <section class="howto-section">
+                    <h3 data-i18n-key="howto.thinking.heading">C. 思考の整理・対人スキル</h3>
+                    <ul class="howto-examples">
+                        <li data-i18n-key="howto.thinking.ex1">「感情処理やメタ認知のフレームワークを私の状況に当てはめて」</li>
+                        <li data-i18n-key="howto.thinking.ex2">「意識の4点仮説を使って、チームの関係性を考えたい」</li>
+                        <li data-i18n-key="howto.thinking.ex3">「5段階モデル（場→波→縁→渦→束）で創作プロセスを設計して」</li>
+                    </ul>
+                </section>
+
+                <!-- Part 3: repo マップ -->
+                <section class="howto-section">
+                    <h3 data-i18n-key="howto.map.heading">なぜ1つのURLで済むのか</h3>
+                    <p class="howto-desc" data-i18n-key="howto.map.desc">project-design（pd）は理論のトップに位置し、READMEから関連repoへリンクしています。LLMがそれらを辿り、目的に最適な知見を引き出します。</p>
+                    <table class="howto-repo-table">
+                        <thead>
+                            <tr>
+                                <th data-i18n-key="howto.map.colTitle">ページタイトル</th>
+                                <th data-i18n-key="howto.map.colContent">コンテンツ概要</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Project Design</strong></td>
+                                <td data-i18n-key="howto.map.pd">Doing（やること）と Being（起きていること）を包含するプロジェクトの構想・設計・実行の理論</td>
+                            </tr>
+                            <tr>
+                                <td><strong data-i18n-key="howto.map.cs.title">創造とは</strong></td>
+                                <td data-i18n-key="howto.map.cs">30の学術領域から「創造とは何か」を探索。創造の5段階モデル（場→波→縁→渦→束）</td>
+                            </tr>
+                            <tr>
+                                <td><strong data-i18n-key="howto.map.as.title">意識とは</strong></td>
+                                <td data-i18n-key="howto.map.as">身体・予測・情動・社会性の知見から間主観性を中核に据えた意識の探索</td>
+                            </tr>
+                            <tr>
+                                <td><strong data-i18n-key="howto.map.ks.title">欠損駆動思考とは</strong></td>
+                                <td data-i18n-key="howto.map.ks">違和感・未定義要件・弱い信号を「保持すべき問い」として扱う思考フレームワーク</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Tips -->
+                <section class="howto-section">
+                    <h3>Tips</h3>
+                    <ul class="howto-tips">
+                        <li data-i18n-key="howto.tips.1">具体的に「何をしたいか」を伝えるほど良い結果が出ます</li>
+                        <li data-i18n-key="howto.tips.2">「関連repoも見て」と追加すると、深掘りされます</li>
+                        <li data-i18n-key="howto.tips.3">Claude.ai、ChatGPT、Gemini など、どのLLMでも使えます</li>
+                    </ul>
+                </section>
+
+                <section class="howto-section--note">
+                    <p data-i18n-key="howto.note">MIT License — 商用利用・改変・再配布すべて自由です。出典表示の義務はありません。詳細は各リポジトリの LICENSE ファイルをご覧ください。</p>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Slides Modal -->
+    <div id="slides-modal" class="modal modal--slides" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="slides-modal-title">
+        <div class="modal__backdrop" data-modal-close="slides"></div>
+        <div class="modal__panel modal__panel--slides">
+            <div class="slides-modal__header">
+                <h2 id="slides-modal-title" data-i18n-key="slides.title">プレゼン資料</h2>
+                <button class="modal__close" type="button" data-modal-close="slides" data-i18n-aria-label-key="modal.close" aria-label="閉じる">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                </button>
+            </div>
+            <div class="slides-modal__canvas-wrap" id="slides-canvas-wrap">
+                <canvas id="slides-canvas"></canvas>
+            </div>
+            <div class="slides-modal__nav">
+                <button class="slides-modal__nav-btn" type="button" id="slides-prev" aria-label="Previous slide">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <span class="slides-modal__page" id="slides-page"></span>
+                <button class="slides-modal__nav-btn" type="button" id="slides-next" aria-label="Next slide">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="src/app.js"></script>
+
+<noscript>
+  <section class="noscript-fallback">
+    <h2>プロジェクトデザイン論 — Doing と Being を包含する事業構想と設計</h2>
+    <p>Project Design Theory explores the envisioning, design, and execution of projects that encompass both Doing (what we do) and Being (what is happening). It focuses on Love-Driven Development, emotional processing, and Kesson-Driven Thinking.</p>
+    <p>プロジェクトデザイン論は、Doing（やること）と Being（起きていること）を包含する事業構想・設計・実行を探索します。Love駆動開発、感情処理、欠損駆動思考を軸に、その構造を言語化しようとしています。</p>
+    <h3>プロジェクト管理手法をどう設計するか</h3>
+    <p>プロジェクトデザインとは、プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営みです。PMBOK 第7版の環境適応を前提知とし、Doing（やること）に Being（起きていること）を加え、とくに感情処理とコミュニケーションを設計対象にします。総論: <a href="https://uminomae.github.io/pjdhiro/project-design/">https://uminomae.github.io/pjdhiro/project-design/</a></p>
+    <p>Project Design designs not only projects but the methods by which they are run and managed — building on PMBOK 7, adding Being to Doing, and treating emotional processing as a design concern.</p>
+    <h3>About</h3>
+    <p>Love駆動開発と呼びたい現象を、これまで何度も経験してきました。プロジェクトには「やること（Doing）」と「起きていること（Being）」があります。このサイトでは、感情処理、欠損駆動思考、間主観性、創造の5段階を軸に、その構造を言語化しようとしています。まだ完成していません。書きながら考えています。— pjdhiro</p>
+    <p>Love駆動開発と呼びたいもの β（解説ページ）: <a href="./reader/love-driven-dev.html">reader/love-driven-dev.html</a></p>
+    <h3>デザイン思考とは — 調査ノート</h3>
+    <p>デザイン思考は単一の方法論ではなく、設計学的思考・Stanford-IDEO型教育実践・経営コンサルパッケージの3層が混在している。核心は abduction・framing・問題設定の往還にあり、5段階プロセスは導入用の recipe であって本質ではない。</p>
+    <h3>信頼とは — 調査ノート</h3>
+    <p>「信頼」は単一概念ではなく複合概念である。分野ごとに感情、態度、期待、関係の性質、制度的資本、行動戦略、認識論的条件、経験構造として扱われる。</p>
+    <h3>価値とは — 調査ノート</h3>
+    <p>「価値」は価格・効用・規範・意味・象徴の少なくとも5つの問題系が束になった多義語である。</p>
+  </section>
+</noscript>
+</body>
+</html>

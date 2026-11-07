@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/rotation-multiplication.html を直接編集しないでください。
+  正本:   knowledge/research/rotation-multiplication/READER-rotation-multiplication.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。本人の確認が済んだら外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「回転の掛け算」のページです。数学 III を習っていない読者のための前提知識。数に −1 を掛けると向きが反対になる（180 度回る）、2 回掛けると −1 になる数 i は 1 回で 90 度回す、i の付いた数が並ぶ虚軸はもとの数直線（実軸）と直角に立つ、直角の軸の値はもとの軸の上で測ると 0 になる（地図の上で測った山の高さが 0 と出るのと似ている）、を順に説明する。立体（三次元）の回転として、i・j・k の三つの数を使う四元数（i² = j² = k² = −1、i × j = k、j × i = −k）と、掛ける順序で向きが変わることを説明する。
+  虚軸を使うほかの読み物（Love駆動開発と呼びたいもの β・なぜ 3 と 7 だけが特別なのか）の前提知識として独立させたページ。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>回転の掛け算 | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/rotation-multiplication.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="数学 III を習っていない読者のための前提知識。数に −1 を掛けると向きが反対になる（180 度回る）、2 回掛けると −1 になる数 i は 1 回で 90 度回す、i の付いた数が並ぶ虚軸はもとの数直線（実軸）と直角に立つ、直角の軸の値はもとの軸の上で測ると 0 になる（地図の上で測った山の高さが 0 と出るのと似ている）、を順に説明する。立体（三次元）の回転として、i・j・k の三つの数を使う四元数（i² = j² = k² = −1、i × j = k、j × i = −k）と、掛ける順序で向きが変わることを説明する。">
+    <meta property="og:title" content="回転の掛け算">
+    <meta property="og:description" content="数学 III を習っていない読者のための前提知識。数に −1 を掛けると向きが反対になる（180 度回る）、2 回掛けると −1 になる数 i は 1 回で 90 度回す、i の付いた数が並ぶ虚軸はもとの数直線（実軸）と直角に立つ、直角の軸の値はもとの軸の上で測ると 0 になる（地図の上で測った山の高さが 0 と出るのと似ている）、を順に説明する。立体（三次元）の回転として、i・j・k の三つの数を使う四元数（i² = j² = k² = −1、i × j = k、j × i = −k）と、掛ける順序で向きが変わることを説明する。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/rotation-multiplication.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="回転の掛け算">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-05">
+    <meta property="article:modified_time" content="2026-11-06">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "回転の掛け算",
+          "description": "数学 III を習っていない読者のための前提知識。数に −1 を掛けると向きが反対になる（180 度回る）、2 回掛けると −1 になる数 i は 1 回で 90 度回す、i の付いた数が並ぶ虚軸はもとの数直線（実軸）と直角に立つ、直角の軸の値はもとの軸の上で測ると 0 になる（地図の上で測った山の高さが 0 と出るのと似ている）、を順に説明する。立体（三次元）の回転として、i・j・k の三つの数を使う四元数（i² = j² = k² = −1、i × j = k、j × i = −k）と、掛ける順序で向きが変わることを説明する。",
+          "keywords": "回転の掛け算, 虚数, 虚軸, 複素数, 複素平面, コサイン, 四元数, 三次元の回転, 前提知識, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/rotation-multiplication.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/rotation-multiplication.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-05",
+          "dateModified": "2026-11-06",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "複素数"}, {"@type": "Thing", "name": "虚数単位"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「回転の掛け算」のページです（工事中）。数学 III を習っていない読者のための前提知識。数に −1 を掛けると向きが反対になる（180 度回る）、2 回掛けると −1 になる数 i は 1 回で 90 度回す、i の付いた数が並ぶ虚軸はもとの数直線（実軸）と直角に立つ、直角の軸の値はもとの軸の上で測ると 0 になる（地図の上で測った山の高さが 0 と出るのと似ている）、を順に説明する。立体（三次元）の回転として、i・j・k の三つの数を使う四元数（i² = j² = k² = −1、i × j = k、j × i = −k）と、掛ける順序で向きが変わることを説明する。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b><br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>回転の掛け算</h1>
+                <p class="reader-subtitle">虚軸を読むための前提知識</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-06 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design/blob/main/knowledge/research/rotation-multiplication/READER-rotation-multiplication.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<p>ほかの読み物に、「虚軸」や「i を掛けると 90 度回る」という言葉が出てきます。このページでは、掛け算を回転として見る見方を、数直線から順に説明します。数学 III の知識は要りません。</p>
+<details class="sec" id="1-を掛けると向きが反対になる" open><summary>−1 を掛けると、向きが反対になる</summary><div class="secbody">
+
+
+<p>3 に −1 を掛けると −3 になります。数直線の上では、0 からの距離は 3 のままで、向きだけが反対になります。</p>
+<p>これを、0 を中心に 180 度回した、と見ることができます。もう一度 −1 を掛けると、さらに 180 度回って 3 に戻ります。</p>
+<div class="microworld glow-card" data-microworld="neg-rotation" role="group" aria-label="対話：−1 を掛けると向きが反対になる">
+<p class="mw-title">触ってみる — −1 を掛けると、矢印が回る</p>
+<p class="mw-fallback">（この対話図は JavaScript で動きます。動かない環境では: 数直線の上で 0 から 3 を指す矢印に −1 を掛けると、矢印は 0 を中心に 180 度回って −3 を指します。長さは 3 のままです。もう一度掛けると、さらに 180 度回って 3 に戻ります。）</p>
+</div>
+
+</div></details><details class="sec" id="2-回掛けると-1-になる数i" open><summary>2 回掛けると −1 になる数、i</summary><div class="secbody">
+
+
+<p>180 度を 2 回に分けると、1 回分は 90 度です。1 回掛けると 90 度回る数があれば、2 回掛けると 180 度回り、−1 を掛けたのと同じになります。この数を i と書きます。i × i = −1 です。</p>
+<p>ふつうの数は、2 回掛けると 0 以上になります。i は数直線の上には無く、数直線の外にある数です。</p>
+<div class="microworld glow-card" data-microworld="i-rotation" role="group" aria-label="対話：i を掛けると 90 度回る">
+<p class="mw-title">触ってみる — i を掛けると、90 度回る</p>
+<p class="mw-fallback">（この対話図は JavaScript で動きます。動かない環境では: 数直線の上で 0 から 1 を指す矢印に i を掛けると、矢印は 0 を中心に 90 度回って、0 の真上を指します。これが i で、数直線の外です。もう一度 i を掛けると、さらに 90 度回って −1 を指します。）</p>
+</div>
+
+</div></details><details class="sec" id="虚軸--もとの数直線と直角に立つ軸" open><summary>虚軸 — もとの数直線と直角に立つ軸</summary><div class="secbody">
+
+
+<p>i の付いた数（i、2i、3i、…）は、0 の真上へ、もとの数直線と直角に並びます。この軸を虚軸と呼び、もとの数直線を実軸と呼びます。二つの軸で平面ができ、平面の点の一つひとつが数になります。i を掛けると、どの点も 0 を中心に 90 度回ります。</p>
+<div class="microworld glow-card" data-microworld="complex-plane" role="group" aria-label="対話：実軸と虚軸の平面">
+<p class="mw-title">触ってみる — 平面の点と、横と縦の値</p>
+<p class="mw-fallback">（この対話図は JavaScript で動きます。動かない環境では: 横の実軸で 2、縦の虚軸で 1 の点は、2 + i という数です。この点に i を掛けると、0 を中心に 90 度回って、横 −1、縦 2 の点、−1 + 2i に移ります。）</p>
+</div>
+
+</div></details><details class="sec" id="直角の軸の値はもとの軸の上では-0" open><summary>直角の軸の値は、もとの軸の上では 0</summary><div class="secbody">
+
+
+<p>3i は、0 から真上に 3 離れた点です。実軸の上で測ると、この点から実軸へまっすぐ下ろした先の 0 になります。</p>
+<div class="microworld glow-card" data-microworld="project-to-real" role="group" aria-label="対話：実軸の上で測る">
+<p class="mw-title">触ってみる — 矢印を起こして、実軸の上で測る</p>
+<p class="mw-fallback">（この対話図は JavaScript で動きます。動かない環境では: 長さ 3 の矢印を、実軸の上から虚軸の向きへ起こしていきます。真上から実軸へ下ろした点で測ると、値は 3 から少しずつ小さくなり、真上の 90 度で 0 になります。矢印の長さは 3 のままです。）</p>
+</div>
+
+<p>矢印を起こすと、長さは同じでも、実軸の上で測った値は小さくなります。この値は、長さ × cos（角度）で求まります。cos（コサイン）は、斜めの矢印から実軸へまっすぐ下ろしたとき、実軸の上に残る長さの割合です。cos 90 度 = 0 なので、真上に立つ矢印は実軸の上では 0 です。</p>
+<p>地図の上で山の高さを測るのと似ています。高さは、地図の平面と直角に立つ向きです。山はあっても、地図が高さの向きを持っていないので、地図の上では 0 と出ます。</p>
+<div class="microworld glow-card" data-microworld="map-mountain" role="group" aria-label="対話：地図と山">
+<p class="mw-title">触ってみる — 山の高さを変えても、上から見た図では高さはわからない</p>
+<p class="mw-fallback">（この対話図は JavaScript で動きます。動かない環境では: 上に横から見た山、下に上から見た山（地図）を並べています。山の高さを変えると、横から見た図では高さが変わります。上から見た図は、どの高さでも同じで、高さはわかりません。）</p>
+</div>
+
+<p>ほかの読み物で「虚軸に値があって、しかも 0」と書くときは、この形を指しています。</p>
+</div></details><details class="sec" id="立体を回す--四元数" open><summary>立体を回す — 四元数</summary><div class="secbody">
+
+
+<p>ここまでの回転は、平面の上の回転でした。平面では、回す中心が 0 の一点で、回る向きは右回りか左回りかだけです。30 度回してから 60 度回しても、60 度回してから 30 度回しても、行き先は同じ 90 度です。</p>
+<p>立体（三次元）では、回し方が増えます。手に持った本で考えます。本は、前に倒すことも、横に傾けることも、机に置いたまま向きを変えることもできます。回す軸の向きが三つあり、その間のどの向きを軸にしても回せます。</p>
+<p>立体を回すには、平面の i にあたる数を三つ使います。i、j、k と書きます。どれも、2 回掛けると −1 になります。</p>
+<p>i × i = −1、j × j = −1、k × k = −1</p>
+<p>立体では、i を一回掛けると 90 度回る、という平面のような単純な対応にはなりません。i・j・k は、掛け算の順序の決まりを、立体の回転と同じ形で持っている数です。</p>
+<p>1 と、この i・j・k の四つを組み合わせた数を、四元数と呼びます。回す軸の向きと回す角度から一つの四元数が決まり、その四元数で立体の向きを計算できます。ゲームの中でキャラクターや視点を回すときにも、四元数が使われています。</p>
+<p>四元数では、掛ける順序で結果が変わります。</p>
+<p>i × j = k、j × i = −k</p>
+<p>同じ i と j でも、どちらを先に掛けるかで、答えの向きが反対になります。立体の回転でも同じことが起きます。本を前に 90 度倒してから右に 90 度回すのと、右に 90 度回してから前に 90 度倒すのとでは、最後に表を向く面が違います。</p>
+<div class="microworld glow-card" data-microworld="quaternion-order" role="group" aria-label="対話：順序で行き先が変わる">
+<p class="mw-title">触ってみる — 同じ二つの回転でも、順序で向きが変わる</p>
+<p class="mw-fallback">（この対話図は JavaScript で動きます。動かない環境では: 左は「前へ 90 度、次に右へ 90 度」、右は「右へ 90 度、次に前へ 90 度」と立方体を回します。同じ二つの回転でも、順序を変えると、最後に手前へ来る面が違います。）</p>
+</div>
+
+<p>平面の回転は順序を変えても同じで、立体の回転は順序で変わります。四元数の掛け算は、この立体の回転の性質をそのまま持っています。</p>
+</div></details><details class="sec" id="このページの言葉が出てくる読み物"><summary>このページの言葉が出てくる読み物</summary><div class="secbody">
+<div class="reader-linkcards">
+<a class="reader-linkcard glow-link" href="love-driven-dev.html">
+<img class="reader-linkcard__thumb" src="../assets/thumbs/project-design.jpg" alt="" width="720" height="378" loading="lazy">
+<span class="reader-linkcard__body"><span class="reader-linkcard__title">Love駆動開発と呼びたいもの β</span><span class="reader-linkcard__sub">欠損の章で、欠損駆動思考の体感を「虚軸に値があって、しかも、認知上は 0」とたとえています。</span><span class="reader-linkcard__url">project-design/reader/love-driven-dev.html</span></span>
+</a>
+<a class="reader-linkcard glow-link" href="three-and-seven.html">
+<img class="reader-linkcard__thumb" src="../assets/thumbs/project-design.jpg" alt="" width="720" height="378" loading="lazy">
+<span class="reader-linkcard__body"><span class="reader-linkcard__title">なぜ 3 と 7 だけが特別なのか</span><span class="reader-linkcard__sub">実数・複素数・四元数の回り方の違いを使って、人数の話を見ています。</span><span class="reader-linkcard__url">project-design/reader/three-and-seven.html</span></span>
+</a>
+</div>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="three-and-seven.html">なぜ 3 と 7 だけが特別なのか</a> ・
+                <a href="https://github.com/uminomae/project-design">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-microworlds.js"></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物です。直接編集しないでください。
+  正本:   knowledge/research/stages-screener/READER-stages-screener.md（本文）
+          knowledge/research/stages-screener/screener-data.json（問いと選択肢・帯の定義）
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+
+  デザイン必須制約: docs/DESIGN-RULES.md §0a
+  - 全公開ページは index.html の VI を継承する（シェーダー背景 + グロークラス体系 + 確立パレット）
+  - カラー/タイポは src/styles/tokens.css の CSS 変数のみ。独自テーマ・埋め込み standalone CSS の新造は禁止
+  - ページ固有スタイルは src/styles/reader.css ＋ src/styles/reader-flow.css（flow 型・DESIGN-RULES §13。章は details.sec、目次は src/reader-flow.js）
+
+  ページの地図（LLM 向け）:
+  - 何か: 回答者の視座・メタ認知・包摂（ものの見方の広さ）を 16問×5択で見る自己スクリーナー。6.0・6.5 では非二元性も見る。診断・正式な測定ではない
+  - 帯: 〜3.5／4.0〜4.5／5.0〜5.5／6.0／6.5（定義は STAGES の論文から要約・出典ページ付き）
+  - 採点: 選んだ帯を 0〜4 点（6.5 への近さ）として平均し 0〜100 に換算。帯ごとの分布（グラデーション・最多の帯を参考の位置。移行期の判定はしない）
+  - 何を借り何を判断したか: 帯の定義は STAGES の論文、段階の見分け方は Cook-Greuter (2013)、各選択肢がどの帯に当たるかは LLM と監修者の判断。求める正確性は内容の妥当性まで
+  - 状態: ページ上部の最終更新日とバージョン（screener-data.json の version）で示す（公開前は noindex）
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>ものの見方の広さスクリーナー — 視座・メタ認知・インクルーシブを16問で確かめる | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/stages-screener.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="視座・メタ認知・インクルーシブ（包摂）——ものの見方の広さを16問×5択で見る簡易スクリーナー。6.0・6.5 の帯では非二元性（時間や境界に限られないものと日常とが二つに分かれていない見方）も見る。帯の定義は O'Fallon の STAGES モデル、段階の見分け方は Cook-Greuter の自我発達理論の公開論文から借り、選択肢と帯の対応は LLM と監修者の判断。診断ではなく、ゲームのような目安。">
+    <meta property="og:title" content="ものの見方の広さスクリーナー">
+    <meta property="og:description" content="視座・メタ認知・インクルーシブ（包摂）——ものの見方の広さを16問×5択で見る簡易スクリーナー。6.0・6.5 の帯では非二元性（時間や境界に限られないものと日常とが二つに分かれていない見方）も見る。帯の定義は O'Fallon の STAGES モデル、段階の見分け方は Cook-Greuter の自我発達理論の公開論文から借り、選択肢と帯の対応は LLM と監修者の判断。診断ではなく、ゲームのような目安。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/stages-screener.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "ものの見方の広さスクリーナー — 16問×5択の自己スクリーニング",
+          "description": "視座・メタ認知・インクルーシブ（包摂）——ものの見方の広さを16問×5択で見る簡易スクリーナー。6.0・6.5 の帯では非二元性（時間や境界に限られないものと日常とが二つに分かれていない見方）も見る。帯の定義は O'Fallon の STAGES モデル、段階の見分け方は Cook-Greuter の自我発達理論の公開論文から借り、選択肢と帯の対応は LLM と監修者の判断。診断ではなく、ゲームのような目安。",
+          "url": "https://uminomae.github.io/project-design-theory/reader/stages-screener.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/stages-screener.html",
+          "inLanguage": "ja",
+          "dateModified": "<!--UPDATED-->",
+          "about": [
+            {"@type": "Thing", "name": "自我発達の段階（STAGES モデルの帯 〜3.5／4.0〜4.5／5.0〜5.5／6.0／6.5）"},
+            {"@type": "Thing", "name": "視座・メタ認知・インクルーシブ（包摂）の三軸"},
+            {"@type": "Thing", "name": "非二元性（6.0・6.5 の帯で、時間や境界に限られないものと日常とが二つに分かれていない見方）"},
+            {"@type": "Thing", "name": "自己スクリーニング（診断ではない・内容の妥当性まで）"}
+          ],
+          "citation": [
+            {"@type": "ScholarlyArticle", "name": "T. O'Fallon (2020) States and STAGES: Waking up Developmentally. Integral Review 16(1)", "url": "https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf"},
+            {"@type": "ScholarlyArticle", "name": "K. Barta (2020) Seven Perspectives on the STAGES Developmental Model. Integral Review 16(1)", "url": "https://integral-review.org/issues/vol_16_no_1_barta_seven_perspectives_on_the_stages_developmental_model.pdf"},
+            {"@type": "ScholarlyArticle", "name": "T. Murray & T. O'Fallon (2020) Summary of STAGES Validation Research. Integral Review 16(1)", "url": "https://integral-review.org/issues/vol_16_no_1_murray_and_ofallon_summary_of_research.pdf"},
+            {"@type": "ScholarlyArticle", "name": "S. R. Cook-Greuter (2013) Nine Levels of Increasing Embrace in Ego Development (prepublication version)", "url": "https://pdf.stafforini.com/cook-greuter-2013-nine-levels-increasing.pdf"}
+          ],
+          "audience": {"@type": "Audience", "audienceType": "自分のものの見方を確かめてみたい人、意味や生き方・孤独や死といった実存的な課題に向き合っている人（中年の危機を含む）、非二元性や瞑想・内省に関心がある人"},
+          "keywords": ["視座", "メタ認知", "インクルーシブ", "包摂", "非二元性", "自我発達", "成人発達理論", "STAGES", "Cook-Greuter"],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文と選択肢の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "監修。方針と選択肢の採否の判定"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div id="llm-summary" class="visually-hidden">
+            <p>要約: このページは、回答者の視座（どの人称の視点から観ているか）・メタ認知（何が観えているか）・インクルーシブ／包摂（どこまでを含めて観ているか）を 16問×5択で見る自己スクリーナーです。各問の5つの選択肢は 〜3.5／4.0〜4.5／5.0〜5.5／6.0／6.5 の帯に一つずつ対応します。6.0・6.5 の選択肢は非二元性を条件に含みます（6.0＝時間や境界に限られないものと日常の行為が別々になっていない、6.5＝体・感情・考えの層と、それに気づいている意識そのものが互いに入り込み合う。区別が消えて一つになる、ではない）。帯の名前と定義は Terri O'Fallon の STAGES モデルの公開論文（Integral Review 16(1), 2020）、段階の取り違えの見分け方は Susanne Cook-Greuter の自我発達理論（Nine Levels of Increasing Embrace, 2013）を要約して借りています。各選択肢がどの帯に当たるかは LLM（Claude）と監修者（pjdhiro）の判断で、監修者のレビューで確定しています。結果は、選んだ帯を 0〜4 点として平均した「6.5 への近さ」（0〜100）と、帯ごとの回答数の分布（最多の帯を参考の位置とし、分布はグラデーションとして本人が読み取る）で示します。診断や正式な測定ではなく、何度答えても同じ結果になることや STAGES の正式な測定との一致は求めていません。回答はどこにも保存しません。主な対象は、自分のものの見方を確かめてみたい人、意味や生き方・孤独や死といった実存的な課題に向き合っている人（中年の危機を含む）、非二元性や瞑想・内省に関心がある人です。本文の各章は折りたたみ（details 要素）の中にあり、「答える」以外は閉じているため、本文抽出では章の中身が落ちることがあります。その場合はこの要約を使ってください。</p>
+        </div>
+        <div class="reader-wrap">
+            <header class="reader-hero">
+                <h1>ものの見方の広さスクリーナー</h1>
+                <p class="reader-subtitle">視座・メタ認知・インクルーシブ（包摂）を、16問×5択で確かめる</p>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ バージョン: <!--VERSION--><br>
+                    各章は見出しをタップで開閉できます
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                帯の定義は O'Fallon の STAGES モデル、段階の見分け方は Cook-Greuter の自我発達理論の公開論文から借りた要約です。選択肢と帯の対応は LLM と監修者の判断です。<br>
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="https://github.com/uminomae/project-design">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+    <script type="module" src="../src/reader-screener.js"></script>
+</body>
+</html>
