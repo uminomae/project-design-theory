@@ -683,3 +683,8 @@ html[lang="en"] #taglines {
   font-family: 'Noto Serif JP', Georgia, serif;
   text-align: center;
 }
+
+/* 読み物の言語：<html lang> に合わせて、日本語と英語の本文のどちらかを見せる */
+.reading-body { display: flex; flex-direction: column; gap: 2.25rem; }
+html:not([lang="en"]) [data-reading-lang="en"],
+html[lang="en"] [data-reading-lang="ja"] { display: none !important; }
