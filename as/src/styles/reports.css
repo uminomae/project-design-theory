@@ -381,6 +381,20 @@
   background: rgba(var(--color-accent), 0.06);
 }
 
+/* 長い題に押されて × が画面の外へ出ないよう、題は折り返せるようにする */
+.reports-md-modal-content .modal-title {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* 狭い幅では、PDF・Wiki・× を題の下の行へ回す */
+@media (max-width: 575.98px) {
+  .reports-md-modal-content .modal-header {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
+}
+
 #reports-md-meta {
   color: rgba(var(--color-sub-text), 0.62) !important;
   font-family: var(--reports-font-mono);
