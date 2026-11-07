@@ -19,7 +19,7 @@ test('normalizeLang returns ja for uppercase "JA"', () => {
 });
 
 test('normalizeLang returns en for uppercase "EN"', () => {
-    // 'EN' \!== 'en', so falls back to 'ja'
+    // 'EN' !== 'en', so falls back to 'ja'
     // This documents the current strict-comparison behavior.
     assert.equal(normalizeLang('EN'), 'ja');
 });

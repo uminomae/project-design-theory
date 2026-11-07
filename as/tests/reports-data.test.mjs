@@ -116,8 +116,8 @@ test('parseFrontmatter handles null/undefined input gracefully', () => {
 // looksLikeHtmlDocument
 
 test('looksLikeHtmlDocument returns true for doctype html', () => {
-    assert.equal(looksLikeHtmlDocument('<\!doctype html><html>'), true);
-    assert.equal(looksLikeHtmlDocument('<\!DOCTYPE HTML><html>'), true);
+    assert.equal(looksLikeHtmlDocument('<!doctype html><html>'), true);
+    assert.equal(looksLikeHtmlDocument('<!DOCTYPE HTML><html>'), true);
 });
 
 test('looksLikeHtmlDocument returns true for bare html tag', () => {
