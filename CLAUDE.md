@@ -3,10 +3,20 @@
 プロジェクトデザイン論のサイトと、その論拠を置く repo。構築中。方針は `docs/BUILD-PLAN.md`。
 対話する人間の固有名詞は **pjdhiro**。
 
+## 置き場
+
+| 場所 | 中身 |
+|---|---|
+| `pd/` | プロジェクトデザイン論（今までの project-design から複製）。サイト・読み物・knowledge・wiki |
+| `cs/`・`as/`・`ks/` | 創造とは・意識とは・欠損駆動思考（これから順に移す） |
+| 根の `docs/`・`scripts/`・`.githooks/`・`.github/` | この repo 全体の方針・規約・公開前の点検・公開の手順 |
+
+公開するのは `pd/` のサイトのファイルと wiki だけ（`.github/workflows/pages.yml`）。
+
 ## 絶対原則
 
 - **この repo は公開**。入れる前に `docs/PUBLISH-CHECK.md` の点検を通す。迷うものは入れずに pjdhiro に確かめる。
-- **今までの repo（project-design・creation-space・kesson-space・awareness-space）は材料として読む**。そのまま写さない。調査結果は一次ソースで照合し直し、通ったものを書き直す。ただし、プロジェクトデザイン論のサイトだけは、今の状態を複製してここで更新していく（pjdhiro 2026-11-07・`docs/BUILD-PLAN.md`）。今までの repo は四つとも更新しない。直しはこの repo で行う。
+- **今までの repo（project-design・creation-space・kesson-space・awareness-space）は、中身をここに複製して移し、ここで更新する**（`pd/`・`cs/`・`as/`・`ks/`）。今までの repo は四つとも更新しない。調査結果を新しく書くときは、一次ソースで照合し直し、通ったものを書く（pjdhiro 2026-11-07・`docs/BUILD-PLAN.md`）。
 - **pjdhiro の発言は趣旨を残す**。誤字・脱字は直してよい。何への答えだったかを添え、Claude の推測を混ぜない。趣旨が変わりうる直しは pjdhiro に確かめる。
 - **取り消せない操作、価値判断を伴う操作は pjdhiro の明示的承認なしに実行しない**。
 - **しっくり感の判定・理論の採否・公開判定は pjdhiro が行う**。

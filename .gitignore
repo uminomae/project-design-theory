@@ -14,7 +14,7 @@ build/
 test-results/
 **/.obsidian/workspace.json
 **/.obsidian/workspace-mobile.json
-quartz/node_modules/
-quartz/public/
-quartz/.quartz-cache/
+**/quartz/node_modules/
+**/quartz/public/
+**/quartz/.quartz-cache/
 wiki-out/

@@ -1,22 +1,11 @@
 name: Deploy Pages
 
-# 公開するのはサイトのファイルと wiki だけ。規約・docs・knowledge・scripts は出さない。
+# 公開するのは pd/ のサイトのファイルと wiki だけ。規約・docs・knowledge・scripts は出さない。
 on:
   push:
     branches: [main]
     paths:
-      - 'index.html'
-      - 'robots.txt'
-      - 'llms.txt'
-      - 'llms-full.txt'
-      - 'sitemap.xml'
-      - 'favicon.ico'
-      - 'src/**'
-      - 'content/**'
-      - 'assets/**'
-      - 'reader/**'
-      - 'wiki/**'
-      - 'quartz/**'
+      - 'pd/**'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -40,19 +29,20 @@ jobs:
           node-version: 22
 
       - name: Install Quartz dependencies
-        working-directory: quartz
+        working-directory: pd/quartz
         run: npm ci
 
       - name: Build wiki with Quartz
-        working-directory: quartz
+        working-directory: pd/quartz
         run: npx quartz build --directory ../wiki --output ../wiki-out
 
       - name: Assemble site
         run: |
           mkdir -p _site
-          cp -r index.html src/ content/ assets/ reader/ _site/
-          cp robots.txt llms.txt llms-full.txt sitemap.xml favicon.ico _site/
-          cp -r wiki-out/ _site/wiki/
+          cd pd
+          cp -r index.html src/ content/ assets/ reader/ ../_site/
+          cp robots.txt llms.txt llms-full.txt sitemap.xml favicon.ico ../_site/
+          cp -r wiki-out/ ../_site/wiki/
 
       - uses: actions/upload-pages-artifact@v3
 
