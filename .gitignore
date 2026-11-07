@@ -5,3 +5,16 @@ node_modules/
 .claude/worktrees/
 # 公開してよいかの点検で使う、手元だけの語の一覧（公開しない）
 .publish-check-terms
+
+# 今までの repo から引き継いだもの
+memo.md
+preview.html
+build/
+.build-tmp/
+test-results/
+**/.obsidian/workspace.json
+**/.obsidian/workspace-mobile.json
+quartz/node_modules/
+quartz/public/
+quartz/.quartz-cache/
+wiki-out/
