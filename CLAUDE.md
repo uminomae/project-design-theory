@@ -10,6 +10,9 @@
 | `pd/` | プロジェクトデザイン論（今までの project-design から複製）。サイト・読み物・knowledge・wiki |
 | `cs/`・`as/`・`ks/` | 創造とは・意識とは・欠損駆動思考（今までの creation-space・awareness-space・kesson-space から複製） |
 | 根の `docs/`・`scripts/`・`.githooks/`・`.github/` | この repo 全体の方針・規約・公開前の点検・公開の手順 |
+| `redirects/` | 今までの URL（`uminomae.github.io/project-design/` ほか）を今の場所へ送る転送ページの雛形。同じ名前の公開 repo に置いて出す |
+
+今までの四つの repo は `-archive` を付けて非公開にし、開いていた Issue はこの repo に移した（ラベル pd・as・ks・cs）。移した Issue の中の `pd#N` などは今までの repo の番号で、`#N` はこの repo の番号。
 
 公開は `.github/workflows/pages.yml`。`pd/` はサイトのファイルと wiki だけを根に、`as/`・`ks/`・`cs/` はディレクトリごと `/as/` などに出す。
 

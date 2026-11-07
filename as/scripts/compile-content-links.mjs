@@ -18,7 +18,7 @@ import {
   WIKI_BASE,
   buildTermMap,
   injectLinks,
-} from "../../project-design/scripts/compile-content-links.mjs";
+} from "../../pd/scripts/compile-content-links.mjs";
 
 const ROOT = new URL("..", import.meta.url).pathname.replace(/\/$/, "");
 const CONTENT_DIR = join(ROOT, "assets", "about");

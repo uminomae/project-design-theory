@@ -14,20 +14,25 @@
 
 ## 今までのサイトとの関係
 
-今までは四つのサイトに分かれていました。
+今までは四つのサイトに分かれていました。2026-11-07 に、中身をこの repo にまとめました。
 
-- プロジェクトデザイン論：https://uminomae.github.io/project-design/
-- 創造とは：https://uminomae.github.io/creation-space/
-- 欠損駆動思考：https://uminomae.github.io/kesson-space/
-- 意識とは：https://uminomae.github.io/awareness-space/
+| 今までのサイト | 今の場所 |
+|---|---|
+| プロジェクトデザイン論（`uminomae.github.io/project-design/`） | https://uminomae.github.io/project-design-theory/ |
+| 意識とは（`uminomae.github.io/awareness-space/`） | https://uminomae.github.io/project-design-theory/as/ |
+| 欠損駆動思考（`uminomae.github.io/kesson-space/`） | https://uminomae.github.io/project-design-theory/ks/ |
+| 創造とは（`uminomae.github.io/creation-space/`） | https://uminomae.github.io/project-design-theory/cs/ |
 
-この repo では、それらを材料にして、新しいサイトを一から組み直しています。ページを作るたびに、要る主張を一次ソースで確かめ直してから書きます。新しいサイトが育つまでは、今までのサイトもそのまま公開しています。
+今までの URL は、下の階層も含めて、今の場所へ転送します。今までの repo は非公開にし、開いていた Issue はこの repo に移しました。
+
+この repo では、今までのサイトを材料にして、新しいサイトを組み直しています。ページを作るたびに、要る主張を一次ソースで確かめ直してから書きます。
 
 ## 置き場
 
 - `pd/`：プロジェクトデザイン論（サイト・読み物・knowledge・wiki）
 - `cs/`・`as/`・`ks/`：創造とは・意識とは・欠損駆動思考
 - `docs/`：この repo 全体の方針と規約
+- `redirects/`：今までの URL を今の場所へ送る転送ページの雛形（`python3 redirects/build.py`）
 
 ## AI に読ませるとき
 

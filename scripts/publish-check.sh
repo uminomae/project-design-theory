@@ -10,6 +10,11 @@ set -u
 ROOT=$(git rev-parse --show-toplevel)
 cd "$ROOT" || exit 2
 TERMS_FILE="$ROOT/.publish-check-terms"
+# worktree で動くときは、一覧が本体の checkout にだけある。そちらを見る。
+if [ ! -f "$TERMS_FILE" ]; then
+  main_root=$(dirname "$(git rev-parse --path-format=absolute --git-common-dir 2>/dev/null)")
+  [ -f "$main_root/.publish-check-terms" ] && TERMS_FILE="$main_root/.publish-check-terms"
+fi
 
 mode=staged
 [ "${1:-}" = "--all" ] && mode=all
@@ -32,6 +37,7 @@ if [ -f "$TERMS_FILE" ]; then
     line="${line%%#*}"; line="$(printf '%s' "$line" | sed 's/[[:space:]]*$//')"
     [ -n "$line" ] && terms+=("$line")
   done < "$TERMS_FILE"
+  [ ${#terms[@]} -eq 0 ] && echo "publish-check: 注意 — .publish-check-terms に語がありません。手元だけの語の点検は空です。" >&2
 else
   echo "publish-check: 注意 — .publish-check-terms がありません。手元だけの語の点検は行っていません。" >&2
 fi
