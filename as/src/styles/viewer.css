@@ -31,6 +31,8 @@
 .md-body h1 {
   font-size: 1.2rem;
   color: var(--as-md-h1);
+  /* ページ全体の h1（ヒーローの「意識とは」）の広い字間を受け継がない（#63-5） */
+  letter-spacing: 0.04em;
   margin: 2rem 0 0.8rem;
   line-height: 1.4;
 }

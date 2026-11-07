@@ -9,6 +9,7 @@ import {
     resolveFirstAvailablePdfUrl,
 } from './data.js';
 import { injectWikiLinks, WIKI_INDEX_URL } from '../wiki-links.js';
+import { linkRelatedDocuments } from './related-links.js';
 
 function rewriteRelativeUrls(html, baseUrl) {
     if (!baseUrl) return html;
@@ -206,6 +207,7 @@ export function createReportsModalController({
             const mdBaseUrl = resolvedSource.mdUrl ? resolvedSource.mdUrl.replace(/\/[^/]*$/, '/') : '';
             let parsedHtml = marked.parse(body || raw);
             parsedHtml = rewriteRelativeUrls(parsedHtml, mdBaseUrl);
+            parsedHtml = linkRelatedDocuments(parsedHtml);
             parsedHtml = injectWikiLinks(parsedHtml);
             const html = DOMPurify.sanitize(parsedHtml);
             const availablePdfUrl = await resolveFirstAvailablePdfUrl(modalSources);
