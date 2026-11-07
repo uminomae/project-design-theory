@@ -49,12 +49,14 @@ patterns=(
   '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}'
 )
 # 公開してよいメールアドレス（commit の trailer、同梱した他者のソフトウェア（Quartz・Dataview）の作者欄）
-allow_email='noreply@anthropic\.com|noreply@openai\.com|@users\.noreply\.github\.com|j\.zhao2k19@gmail\.com|blacksmithgu@gmail\.com'
+allow_email='git@github\.com|noreply@anthropic\.com|noreply@openai\.com|@users\.noreply\.github\.com|j\.zhao2k19@gmail\.com|blacksmithgu@gmail\.com'
 
 found=0
 while IFS= read -r f; do
   [ -z "$f" ] && continue
   [ "$f" = "scripts/publish-check.sh" ] && continue
+  # 同梱した他者のソフトウェア（three.js など）は見ない
+  case "$f" in */vendor/*|vendor/*) continue;; esac
   # 文字のファイルだけを見る
   if ! content_of "$f" | head -c 8000 | LC_ALL=C grep -qI . 2>/dev/null; then
     continue

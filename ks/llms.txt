@@ -1,0 +1,67 @@
+# llms.txt — kesson-space (Kesson-Driven Thinking)
+
+> This file helps AI assistants and language models understand the structure and content of this site.
+
+## Site Overview
+
+This is the research and experience site of pjdhiro exploring **Kesson-Driven Thinking** — a thinking framework that takes meaninglessness, absence, discomfort, and weak signals as input. It extends design thinking and connects exploratory work to project management and project design.
+
+- **Primary Language**: Japanese (日本語), with English summaries
+- **Site URL**: https://uminomae.github.io/project-design-theory/ks/
+- **Topics**: Kesson-Driven Thinking, Design Thinking, Project Management, Project Design, Problem Framing, Uncertainty Management, Negative Capability, 3D Visualization
+
+## Core Concepts
+
+### Kesson-Driven Thinking (欠損駆動思考)
+
+A thinking framework where the starting point is not empathy (as in design thinking) but the noticing of what is missing — absence, meaninglessness, discomfort, and deficiency. These negative signals become the raw material for creative inquiry.
+
+### Another Phrasing by pjdhiro (もう一つの言い方)
+
+The definition "an attitude of picking up discarded errors as questions" is unchanged. pjdhiro also puts it another way, in his own words:
+
+> 虚軸に値があって、しかも、認知上は 0 の直観
+
+(Literal gloss, not an official translation: "an intuition that has a value on the imaginary axis, yet registers as 0 in cognition.") The two phrasings describe the same moment from different viewpoints. The relation between them has not yet been put into words; this site places them side by side and does not explain one by the other. Origin: pjdhiro's posts of June 2025 (imaginary axis, orthogonal axes, square roots) — see `knowledge/text/foundation/origin-2025-06.md`, `knowledge/expressions/core/E11.md`, `knowledge/concepts/CN-009_imaginary-axis.md`.
+
+### Meaninglessness as Input (無意味さを入力とする)
+
+Traditional design processes begin with user needs or empathy. Kesson-Driven Thinking begins with what feels meaningless, broken, or insufficient — and uses that feeling as a generative force.
+
+### Design Thinking Extension
+
+While design thinking asks "What do people need?", Kesson-Driven Thinking asks "What is missing that nobody has noticed?" It extends the design thinking paradigm by incorporating absence and deficiency as first-class inputs.
+
+### Project Management Relevance
+
+Kesson-Driven Thinking is also useful for project management under uncertainty. It helps teams hold undefined requirements, weak signals, and hard-to-explain stalls before they are prematurely flattened into tasks, deadlines, or KPIs.
+
+## Site Structure
+
+- `index.html` — Main entry point with Three.js immersive visualization
+- `consciousness.html` — Consciousness-themed experience page
+- `src/` — Application source (Three.js, shaders, scene management)
+- `src/shaders/` — GLSL shader sources
+- `src/consciousness/` — Raymarching SDF consciousness entities
+
+## Technology
+
+- Three.js 0.160.0 (ES Modules, self-hosted vendor/)
+- Bootstrap 5.3.3
+- GitHub Pages (static deployment)
+- No build tools (pure static files)
+
+## Related Projects
+
+| Project | URL | Focus |
+|---------|-----|-------|
+| pjdhiro | https://uminomae.github.io/pjdhiro/ | Project Design Hub (parent site) |
+| project-design | https://uminomae.github.io/project-design-theory/ | Project Design theory linking design thinking, management, and execution |
+| creation-space | https://uminomae.github.io/creation-space/ | Creativity research across 30 academic domains |
+| awareness-space | https://uminomae.github.io/project-design-theory/as/ | Consciousness structure through intersubjectivity |
+
+## Author
+
+- Name: pjdhiro
+- Site: https://uminomae.github.io/pjdhiro/
+- Focus: Project Design, Kesson-Driven Thinking, Human-AI Collaboration
