@@ -1,15 +1,12 @@
 # What Is Consciousness
 
-Does consciousness happen only inside the head?
+What do we cut the world with?
 
-This exploration starts from a hypothesis called the Survival-Trust Axis. It asks whether human conscious experience evaluates discrepancies and deficits along at least two directions.
+The reading on Love-Driven Development describes what moves before a vision takes shape, from the side of what it moves. This page is one of those explorations, and it looks at the receiving side.
 
-Survival axis — evaluation of threat, safety, status, and resources. The mismatch between bodily signals and predictions forms the foundation of awareness.
-Trust axis — evaluation of attachment, belonging, trust, and intersubjectivity. It asks how consciousness operates within relationships.
+People may cut the world by anticipating two values: whether they can survive, and whether they can stay connected (trust). The two are easier to see when written apart, yet they are not separate; they are mistaken for each other and woven into each other. Awareness, too, may be one of the names given to a shape cut out this way.
 
-Much human suffering arises from misapplication — attempting to solve trust-axis problems through survival-axis achievement. This is the core of the hypothesis.
-
-Structuring through AI collaboration. Still in progress.
+Explored in collaboration with AI. Still in progress.
 
 ---
 

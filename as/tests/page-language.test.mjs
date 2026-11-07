@@ -105,7 +105,7 @@ test('applyPageLanguageToDocument updates page chrome in english', () => {
     assert.equal(doc.nodes['graphic-switcher'].attributes['aria-label'], 'Switch background graphics');
     assert.equal(doc.nodes['lang-toggle'].textContent, '日本語');
     assert.equal(doc.nodes['lang-toggle'].attributes['aria-label'], 'Switch language to Japanese');
-    assert.equal(doc.nodes.translatedNode.textContent, 'Rethinking awareness from survival and intersubjectivity.');
+    assert.equal(doc.nodes.translatedNode.textContent, 'What do we cut the world with?');
     assert.equal(doc.nodes.attrNode.attributes['aria-label'], 'Switch background graphics');
     assert.equal(doc.nodes['notes-section-heading'].textContent, 'Notes from divergent thinking');
     assert.equal(doc.nodes['notes-section-heading'].attributes['aria-label'], 'Jump to the Notes from divergent thinking section');

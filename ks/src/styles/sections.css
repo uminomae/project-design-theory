@@ -102,3 +102,80 @@
       font-size: 0.65rem;
     }
 
+
+    /* ── 読み物の本文（2026-11-07・Love駆動開発の筋に合わせて組み直した） ── */
+    #reading-section {
+      position: relative;
+      z-index: var(--ks-z-raised);
+      padding-bottom: .9rem;
+    }
+    .reading-article {
+      max-width: 46rem;
+      margin: 0 auto;
+      padding: clamp(1.25rem, 4vw, 2.25rem);
+      color: rgba(225, 233, 250, 0.94);
+      font-size: 1rem;
+      line-height: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 2.25rem;
+    }
+    .reading-header { display: flex; flex-direction: column; gap: .9rem; }
+    .reading-title {
+      font-family: 'Noto Serif JP', Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(1.4rem, 4vw, 1.9rem);
+      letter-spacing: .08em;
+      margin: 0;
+    }
+    .reading-lead { margin: 0; }
+    .reading-chapter { display: flex; flex-direction: column; gap: .8rem; }
+    .reading-chapter p { margin: 0; }
+    .reading-chapter-title {
+      font-family: 'Noto Serif JP', Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(1.1rem, 3vw, 1.3rem);
+      line-height: 1.6;
+      margin: 0;
+      text-wrap: balance;
+    }
+    .reading-chapter-sub {
+      font-size: .82em;
+      color: rgba(175, 190, 222, 0.85);
+    }
+    .reading-quote {
+      border-left: 2px solid rgba(var(--color-accent), .45);
+      padding-left: .9rem;
+    }
+    .reading-details {
+      border-top: 1px solid rgba(var(--color-accent), .18);
+      padding-top: .5rem;
+    }
+    .reading-details > summary {
+      cursor: pointer;
+      color: rgba(175, 200, 245, 0.95);
+      font-size: .92rem;
+    }
+    .reading-details[open] > summary { margin-bottom: .6rem; }
+    .reading-details > p,
+    .reading-details > ul { margin: 0 0 .7rem; font-size: .95rem; }
+    .reading-links { padding-left: 1.2rem; }
+    .reading-article a { color: rgba(170, 200, 255, 1); }
+    .reading-article a:focus-visible,
+    .reading-details > summary:focus-visible,
+    .records-fold-summary:focus-visible {
+      outline: 1px solid rgba(var(--color-focus-ring), 0.7);
+      outline-offset: 4px;
+    }
+
+    .records-fold { position: relative; z-index: var(--ks-z-raised); }
+    .records-fold-summary {
+      max-width: 46rem;
+      margin: 1rem auto 3rem;
+      padding: .8rem 1rem;
+      cursor: pointer;
+      color: rgba(210, 225, 250, 0.9);
+      font-family: 'Noto Serif JP', Georgia, serif;
+      text-align: center;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    }
