@@ -28,6 +28,18 @@ body.awareness-page {
     #050508;
 }
 
+/* WebGL が使えないとき・動きを減らす設定のときの、動かない背景（#63-4）。
+   シェーダーの色合いに近い、白から淡い水色へのグラデーション。下のヒーローの文字が読めるよう、下端も明るく保つ。 */
+html.as-bg-static #canvas-container {
+  background:
+    radial-gradient(ellipse at 62% 46%, rgba(186, 236, 250, 0.45), transparent 55%),
+    linear-gradient(180deg, #f4f8fc 0%, #e4eef7 48%, #d2e1ee 100%);
+}
+
+html.as-bg-static #canvas-container canvas {
+  display: none;
+}
+
 #canvas-container canvas {
   display: block;
   width: 100%;
