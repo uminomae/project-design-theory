@@ -1,4 +1,4 @@
-# llms-full.txt — kesson-space (Kesson-Driven Thinking)
+# llms-full.txt — 欠損駆動思考 / Kesson-Driven Thinking
 
 > Extended version of llms.txt with full content descriptions for AI assistants and language models.
 
@@ -12,25 +12,25 @@ This page is one of the explorations behind the reading "Love駆動開発と呼�
 
 ## Core Concepts
 
-The top page is one continuous reading. Each chapter has one visible paragraph; explanations are folded under "詳しく". All claims are held as tentative views.
+The top page is one continuous reading, in Japanese and English. Each chapter has a short visible part; explanations are folded under "詳しく" (More). All claims are held as tentative views.
 
 ### Kesson (欠損)
 
-The subjective experience in which awareness grasps the error between expectation and reality as something "missing". When thought and the signals arising in the body drift apart, people may feel that something is missing. pjdhiro sees this as felt passively, because what pjdhiro wants to call Love is driving.
+The subjective experience in which awareness grasps the error between expectation and reality as something "missing". When thought and mind drift apart from the signals arising in the body, people may feel that something is missing. pjdhiro sees this as felt passively, without meaning to, because what pjdhiro wants to call Love is driving things.
 
 ### Kesson-Driven Thinking (欠損駆動思考)
 
-The stance of holding that lack as a question instead of resolving it at once.
+A way of thinking, a stance of mind, driven by the sense of lack or unease. Holding (below) is one of its workings.
 
-pjdhiro's analogies: "虚軸に値があって、しかも、認知上は 0 の直観" (an intuition with a value on the imaginary axis, yet zero to cognition). A value on an axis at right angles reads zero when measured on the original axis (cos 90° = 0). Or: "質量で歪んだ方向に吸い寄せられるように感じる信号とのギャップ" (the gap with a signal felt as being drawn toward the direction warped by mass). pjdhiro also sees existential i and meaninglessness as cos 90°: meaningless on the real axis.
+pjdhiro's analogies: "虚軸に値があって、しかも、認知上は 0 の直観" (an intuition with a value on the imaginary axis, yet zero to cognition). A value on an axis at right angles reads zero when measured on the original axis (cos 90° = 0). Or: "質量で歪んだ方向に吸い寄せられるように感じる信号とのギャップ" (the gap with a signal felt as being drawn toward the direction warped by mass). pjdhiro also sees an existential i and meaninglessness as cos 90°: "meaningless on the real axis. And yet."
 
 ### Holding (抱持)
 
-Not processing reflexively, but keeping the error as a question. A safe place, someone to share the question with, and records to return to support it.
+Not processing reflexively, but keeping the error as a question. pjdhiro sees a safe place, someone to share the question with, and records to return to as possible footing for it.
 
 ### Where vision and design begin
 
-The lack eventually becomes a problem to solve. pjdhiro sees vision, design, and planning as beginning here; the problem solving after that is what management studies have covered. Design thinking and project management work well once a problem has taken some shape; Kesson-Driven Thinking looks at the lack before it does.
+The lack eventually becomes a problem to solve. pjdhiro sees vision, design, and planning as beginning here; the problem solving after that is what management studies have covered. Kesson-Driven Thinking picks up the lack as a question before that.
 
 ## Site Structure (Detailed)
 
@@ -49,7 +49,7 @@ Development log documenting the creation process of kesson-space itself — a me
 
 ## Technology Stack
 
-- Three.js 0.160.0 (ES Modules, self-hosted vendor/)
+- Three.js 0.183.0 (ES Modules, self-hosted vendor/)
 - Bootstrap 5.3.3 (CDN)
 - Custom GLSL shaders for visual experiences
 - GitHub Pages (static deployment)
@@ -60,9 +60,9 @@ Development log documenting the creation process of kesson-space itself — a me
 | Project | URL | Focus |
 |---------|-----|-------|
 | pjdhiro | https://uminomae.github.io/pjdhiro/ | Project Design Hub (parent site) |
-| project-design | https://uminomae.github.io/project-design-theory/ | Project Design theory linking design thinking, management, and execution |
-| creation-space | https://uminomae.github.io/project-design-theory/cs/ | Creativity research across 30 academic domains |
-| awareness-space | https://uminomae.github.io/project-design-theory/as/ | Consciousness structure through intersubjectivity |
+| プロジェクトデザイン論 / Project Design | https://uminomae.github.io/project-design-theory/ | The reading on Love-Driven Development and its parts |
+| 創造とは / What Is Creation | https://uminomae.github.io/project-design-theory/cs/ | Creativity research across 30 academic domains |
+| 意識とは / What Is Awareness | https://uminomae.github.io/project-design-theory/as/ | What people cut the world with: signals of survival and trust |
 
 ## Author
 

@@ -1,4 +1,4 @@
-# llms.txt — 意識とは / What Is Awareness (Consciousness Research)
+# llms.txt — 意識とは / What Is Awareness
 
 > This file helps AI assistants and language models understand the structure and content of this site.
 
@@ -12,7 +12,7 @@ This page is one of the explorations behind the reading "Love駆動開発と呼�
 
 ## Core Concepts
 
-The top page is one continuous reading. Each chapter has one visible paragraph; explanations and sources are folded under "詳しく". All claims are held as tentative views (〜かもしれない), not conclusions.
+The top page is one continuous reading, in Japanese and English. Each chapter has a short visible part; explanations and sources are folded under "詳しく" (More). All claims are held as tentative views (〜かもしれない), not conclusions.
 
 ### Awareness as a named vortex (意識も、波間に見えた渦の一つ)
 
@@ -20,17 +20,17 @@ Awareness may be one of the names people gave to a vortex they could cut out at 
 
 ### Signals of survival and trust (生存と信頼の信号)
 
-People may cut the world by anticipating two values: whether they can survive (threat, safety, status, resources) and whether they can stay connected (attachment, belonging, trust, intersubjectivity). The two are written apart for clarity but are not separate; they are mistaken for each other and woven into each other.
+pjdhiro sees people as possibly cutting the world by anticipating two values: whether they can survive (threat, safety, status, resources) and whether they can stay connected (attachment, belonging, trust, intersubjectivity). The two are written apart for clarity but are not separate; they are mistaken for each other and woven into each other.
 
-An earlier version of this site called the misreading of trust problems as survival problems "misapplication (誤適用)" and treated it as the core of the hypothesis. It is now read as one example of the two being mistaken for each other.
+An earlier version of this site called trying to solve trust problems through survival achievements "misapplication (誤適用)" and treated it as the core of the hypothesis. It is now read as one example of the two being mistaken for each other.
 
 ### Where the contour blurs (一列の記号には、二つの値が乗りきらない)
 
-Words and numbers line up in one row. When a person anticipates two values, a symbol can agree on survival while the trust value stays unknown. The source of that unease is not found on the symbols. The page "欠損駆動思考" (../ks/) looks at the lack felt there.
+Words and numbers line up in one row. When a person anticipates two values, a symbol can agree on survival while the trust value stays unknown. The source of that unease is not found on the symbols, and the contour of what was cut out may blur there. The page "欠損駆動思考" (../ks/) looks at the lack felt there.
 
 ### Intersubjectivity (間主観性)
 
-A word that asks how awareness arises within relationships between people. One of the things the trust signal looks at.
+Experience and meaning being shared between people. One of the things the trust signal looks at. This page also asks how awareness arises within relationships between people.
 
 ## Important Note
 
@@ -70,9 +70,9 @@ Published on pjdhiro (GitHub Pages). The top page renders these as JS cards; the
 | Project | URL | Focus |
 |---------|-----|-------|
 | pjdhiro | https://uminomae.github.io/pjdhiro/ | Project Design Hub (parent site) |
-| プロジェクトデザイン論 / Project Design Theory | https://uminomae.github.io/project-design-theory/ | Project Design theory linking design thinking, management, and execution |
+| プロジェクトデザイン論 / Project Design Theory | https://uminomae.github.io/project-design-theory/ | The reading on Love-Driven Development and its parts |
 | 創造とは / What Is Creation | https://uminomae.github.io/project-design-theory/cs/ | Creativity research across 30 academic domains |
-| 欠損駆動思考 / Kesson-Driven Thinking | https://uminomae.github.io/project-design-theory/ks/ | Kesson-Driven Thinking framework |
+| 欠損駆動思考 / Kesson-Driven Thinking | https://uminomae.github.io/project-design-theory/ks/ | What people sense where symbols read zero, and the lack it drives |
 
 ## Author
 

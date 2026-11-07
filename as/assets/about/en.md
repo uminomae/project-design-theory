@@ -1,4 +1,4 @@
-# What Is Consciousness
+# What Is Awareness
 
 What do we cut the world with?
 
