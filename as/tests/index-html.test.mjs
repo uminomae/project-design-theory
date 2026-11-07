@@ -21,9 +21,9 @@ test('image cards section exists in model area', () => {
     assert.match(indexHtml, /id="image-card-grid" class="row row-cols-1 row-cols-md-3 g-3 card-container"/);
 });
 
-test('topbar includes creation-space navigation link', () => {
+test('topbar includes creation (cs) navigation link', () => {
     assert.match(indexHtml, /id="topbar-creation-link"/);
-    assert.match(indexHtml, /href="\.\.\/creation-space\/"/);
+    assert.match(indexHtml, /href="\.\.\/cs\/"/);
     assert.match(indexHtml, />creation<\/a>/);
 });
 
