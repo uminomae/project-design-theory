@@ -1,0 +1,570 @@
+<title>ものの見方の広さスクリーナー</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<!--
+  Claude 版スクリーナー（claude.ai アーティファクト https://claude.ai/artifact/VY7XMLt7g4v5PLzzmUDTu1）のテンプレート。
+  生成: python3 scripts/build-screener-artifact.py（問い・選択肢・帯・バージョンは screener-data.json から差し込む）
+  公開ページ reader/stages-screener.html と同じ中身・同じ採点（src/reader-screener.js の score() と同じ決まり）。
+-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one narrow column, a single card per step; the five-band ruler (〜3.5 → 6.5) recurs as the motif */
+:root{
+  --bg:#eef1f2; --surface:#fbfcfc; --ink:#1d2a30; --muted:#5b6b72; --line:#cfd8db;
+  --accent:#2f5d6b; --accent-soft:#dbe7ea; --warn:#9a4a2e;
+  --display:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+  --body:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141c1f; --surface:#1b2529; --ink:#e3eaec; --muted:#97a7ad; --line:#2f3d42;
+  --accent:#8cc0cd; --accent-soft:#233a40; --warn:#e29a7c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141c1f; --surface:#1b2529; --ink:#e3eaec; --muted:#97a7ad; --line:#2f3d42;
+  --accent:#8cc0cd; --accent-soft:#233a40; --warn:#e29a7c; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.75;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 56px}
+.wrap{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+header{display:flex;flex-direction:column;gap:8px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(24px,5vw,30px);line-height:1.35;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:20px;line-height:1.5;margin:0;text-wrap:balance}
+h3{font-size:14px;font-weight:700;margin:0;color:var(--muted);letter-spacing:.04em}
+p{margin:0}
+a{color:var(--accent)}
+.lead{font-size:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:22px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.notes{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px}
+.btn{font:inherit;font-weight:700;border-radius:4px;padding:10px 18px;cursor:pointer;border:1px solid var(--accent);background:var(--accent);color:var(--surface)}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn:disabled{opacity:.45;cursor:default}
+.btn:focus-visible,.opt:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.small{font-size:13px;color:var(--muted)}
+.ruler{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;font-family:var(--mono);font-size:12px}
+.ruler span{border-top:3px solid var(--line);padding-top:4px;color:var(--muted);text-align:center;white-space:nowrap}
+.ruler span.on{border-color:var(--accent);color:var(--ink);font-weight:500}
+.progress{display:flex;justify-content:space-between;gap:8px;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.bar{height:3px;background:var(--line);border-radius:2px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);transition:width .25s}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opt{font:inherit;text-align:left;display:grid;grid-template-columns:2em 1fr;gap:8px;align-items:baseline;
+  padding:12px 14px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink);cursor:pointer}
+.opt b{font-family:var(--mono);color:var(--accent)}
+.opt:hover{border-color:var(--accent)}
+.opt.picked{border-color:var(--accent);background:var(--accent-soft)}
+.hint{min-height:1.4em;font-size:13px;color:var(--warn)}
+.big{font-family:var(--display);font-size:44px;font-weight:700;line-height:1.1;font-variant-numeric:tabular-nums}
+.big small{font-family:var(--body);font-size:15px;font-weight:500;color:var(--muted);margin-left:6px}
+.position{font-family:var(--display);font-size:18px;font-weight:700;line-height:1.5}
+.meter{height:8px;background:var(--line);border-radius:2px;min-width:40px}
+.meter i{display:block;height:100%;background:var(--accent);border-radius:2px}
+.dist{display:grid;grid-template-columns:auto 1fr auto;gap:8px 12px;align-items:center;font-size:14px}
+.dist .lbl{font-family:var(--mono);color:var(--muted);white-space:nowrap}
+.dist .num{font-family:var(--mono);font-variant-numeric:tabular-nums;color:var(--muted);text-align:right;white-space:nowrap}
+.bands{display:flex;flex-direction:column;gap:14px}
+.bands div{display:flex;flex-direction:column;gap:2px;border-top:1px solid var(--line);padding-top:10px}
+.bands b{font-family:var(--display)}
+.bands span{font-size:14px}
+.alist{display:flex;flex-direction:column}
+.alist details{border-bottom:1px solid var(--line);padding:8px 0}
+.alist summary{cursor:pointer;display:grid;grid-template-columns:3.2em 1fr auto;gap:8px;align-items:baseline;list-style:none}
+.alist summary::-webkit-details-marker{display:none}
+.alist .qn{font-family:var(--mono);color:var(--muted);font-size:13px}
+.alist .stage{font-family:var(--mono);font-size:12px;white-space:nowrap;padding:1px 8px;border-radius:99px;background:var(--accent-soft);color:var(--accent)}
+.alist ul{margin:8px 0 0 3.2em;padding:0;list-style:none;display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--muted)}
+.alist li.mine{color:var(--ink);font-weight:500}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tabs button{font:inherit;font-size:13px;padding:4px 12px;border-radius:99px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+.tabs button[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);font-weight:700}
+pre.out{font-family:var(--mono);font-size:12px;line-height:1.6;background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:12px;margin:0;overflow:auto;max-height:260px;white-space:pre-wrap;word-break:break-word}
+textarea{font:inherit;width:100%;box-sizing:border-box;min-height:56px;padding:10px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink);resize:vertical}
+.chat{display:flex;flex-direction:column;gap:10px}
+.msg{padding:10px 14px;border-radius:4px;white-space:pre-wrap;word-break:break-word}
+.msg.user{background:var(--accent-soft);align-self:flex-end;max-width:90%}
+.msg.ai{background:var(--bg);border:1px solid var(--line)}
+.help{display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--line);padding-top:16px}
+.docs details{border-top:1px solid var(--line);padding-top:10px}
+.docs summary{cursor:pointer;font-weight:700;color:var(--ink)}
+.stages-body{display:flex;flex-direction:column;gap:12px}
+.tbl{overflow-x:auto}
+.tbl table{border-collapse:collapse;width:100%;min-width:560px;font-size:13px;line-height:1.6}
+.tbl th,.tbl td{border-top:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+.tbl thead th{font-size:12px;color:var(--muted);font-weight:700}
+.tbl b{font-family:var(--mono)}
+.mx-scroll{overflow-x:auto;padding:2px}
+.mx{display:grid;grid-template-columns:5.6rem repeat(4,minmax(7rem,1fr));gap:6px;min-width:560px}
+.mx-corner{display:flex;flex-direction:column;justify-content:space-between;font-size:11px;color:var(--muted);padding:2px 0}
+.mx-corner span:first-child{text-align:right}
+.mx-col{display:flex;flex-direction:column;padding:2px 6px 6px;border-bottom:2px solid var(--accent)}
+.mx-col b{font-size:13px;color:var(--accent)}
+.mx-col span,.mx-row span{font-size:11px;line-height:1.45;color:var(--muted)}
+.mx-row{display:flex;flex-direction:column;justify-content:center;gap:2px;padding-right:8px;border-right:2px solid var(--accent)}
+.mx-row b{font-family:var(--display);font-size:16px}
+.cell{display:flex;flex-direction:column;gap:1px;min-width:0;padding:8px 9px;border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:6px;background:var(--bg)}
+.cell b{font-family:var(--mono);font-size:15px;font-variant-numeric:tabular-nums;line-height:1.3}
+.cell i{font-style:normal;font-size:11px;color:var(--muted)}
+.cell p{font-size:12px;line-height:1.55;margin-top:2px}
+.cell.out{border-top-color:var(--line);opacity:.75}
+.docs details[open] summary{margin-bottom:8px}
+.axes{display:flex;flex-direction:column}
+.axes details{padding:8px 0}
+.axes summary{font-weight:500}
+.axes .tbl table{min-width:0;table-layout:fixed}
+.axes .tbl td:first-child,.axes .tbl th:first-child{width:5.5em;white-space:nowrap}
+@media (prefers-reduced-motion: reduce){.bar i{transition:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow" id="eyebrow">Breadth-of-view screener</span>
+    <h1>ものの見方の広さスクリーナー</h1>
+    <p class="lead"><strong>視座</strong>・<strong>メタ認知</strong>・<strong>インクルーシブ（包摂）</strong>——どの視点から観ているか、何が観えているか、どこまでを含めて観ているか。ふだんの考え方のこの三つを、16問で確かめるスクリーナーです。いちばん奥の帯（6.0・6.5）では、<strong>非二元性</strong>——時間や境界に限られないものと日常とが二つに分かれていない見方——があるかどうかも見ています。</p>
+    <p class="small"><strong>こんな人に</strong>：自分のものの見方を確かめてみたい人／意味や生き方、孤独や死といった実存的な課題に向き合っている人／これまでの見方が通じなくなったと感じている人／非二元性や瞑想・内省に関心がある人</p>
+    <p class="small" id="meta"></p>
+  </header>
+
+  <div class="ruler" aria-hidden="true" id="ruler"></div>
+
+  <section class="card" id="intro">
+    <h2>やってみると分かること</h2>
+    <ul class="notes">
+      <li><strong>包摂の度合い</strong>：考えるときに、どれだけの視点・人間関係・時間の幅を取り込んでいるか。</li>
+      <li><strong>メタ認知の層</strong>：考えている自分に気づいているか、さらに「気づいている自分」まで観えているか。</li>
+      <li><strong>自分の経験に言葉と境界線がつく</strong>：なんとなくやっていたことに名前がつき、似た経験どうしの違いを言い分けられるようになります。</li>
+      <li><strong>余裕のなさに気づく目安になる</strong>：いつもの自分の見方を知っておくと、ふだんより狭い基準で判断していると感じたときに、比べる目安になります。</li>
+      <li><strong>すれ違いの理由を言葉にできる</strong>：相手と自分が、違う範囲を観ながら話していたのかもしれない、と気づけます。</li>
+      <li><strong>実存的な課題の手がかりになる</strong>：自分の見方の広さに気づくこと自体が、意味や生き方をめぐる課題への直接の対策になる、というのが監修者（pjdhiro）の見立てです。確かめられた効果ではなく、気づきのきっかけとして置いています。</li>
+    </ul>
+    <h2>始める前に</h2>
+    <ul class="notes">
+      <li>これは<strong>診断ではありません</strong>。傾向をざっくり見るための、ゲームのような目安です。他人と比べたり、絶対的な段階を当てたりするものではありません。</li>
+      <li>一時的な体験ではなく、<strong>ふだんの見方</strong>に近いものを選んでください。</li>
+      <li>各問5つの選択肢から1つ選びます（キーボードの A〜E でも答えられます）。選択肢の並びは問ごとにランダムです。迷う問は飛ばせます。</li>
+      <li>回答はどこにも保存されません。ページを閉じると消えます。</li>
+    </ul>
+    <p class="small">実存的な課題の中にいる人、これまでの見方が通じなくなった、意味が見えなくなったと感じている最中の人へ：下の帯の選択肢を選ぶことは、何かが欠けているという意味ではありません。どの帯も、次の見方へ移っていく途中の一つの場所です。</p>
+    <div class="row"><button class="btn" id="start">Q1 から始める</button></div>
+  </section>
+
+  <section class="card" id="quiz" hidden>
+    <div class="progress"><span id="qcount"></span><span id="qdone"></span></div>
+    <div class="bar"><i id="qbar" style="width:0"></i></div>
+    <h2 id="qtext"></h2>
+    <div class="opts" id="opts"></div>
+    <p class="hint" id="hint" aria-live="polite"></p>
+    <div class="row"><button class="btn ghost" id="back">前の問に戻る</button><button class="btn ghost" id="skip">この問を飛ばす</button></div>
+    <div class="help" id="qhelp" hidden>
+      <h3>この問について Claude に聞く</h3>
+      <p class="small">言葉の意味や選択肢の違いを質問できます。どれを選ぶべきか、どの帯に当たるかは答えません。返答にはあなたの Claude の利用枠が使われます。</p>
+      <div class="chat" id="qchat"></div>
+      <textarea id="qIn" placeholder="例：B と D の違いがよく分かりません"></textarea>
+      <div class="row"><button class="btn" id="qSend">質問する</button><button class="btn ghost" id="qStop" hidden>止める</button><span class="small" id="qNote" aria-live="polite"></span></div>
+    </div>
+  </section>
+
+  <section id="result" hidden>
+    <div class="wrap" style="max-width:none">
+      <div class="card">
+        <h3>6.5 への近さ</h3>
+        <p class="big" id="closeness"></p>
+        <div class="meter" style="height:10px"><i id="closenessBar"></i></div>
+        <p class="small">数字は優劣ではありません。どの帯も、次の見方へ移る途中の一つの場所です。</p>
+        <p class="small" id="points"></p>
+      </div>
+      <div class="card">
+        <h3>いまの位置（参考）</h3>
+        <p class="position" id="position"></p>
+        <div class="dist" id="dist"></div>
+        <p class="small">いちばん多い帯を位置としていますが、帯の境目ははっきり分かれるものではありません。どの帯にどれだけ広がっているかを、グラデーションとして読み取ってください。</p>
+      </div>
+      <div class="card">
+        <h3>あなたの回答と対応する帯</h3>
+        <p class="small">問を開くと、ほかの選択肢の帯も見られます。選ばなかった答えと見比べると、帯ごとの違いが見えてきます。</p>
+        <div class="alist" id="answerList"></div>
+      </div>
+      <div class="card">
+        <h3>五つの帯</h3>
+        <p class="small">帯の名前と定義は Terri O'Fallon の STAGES モデルの論文を、段階の見分け方は Cook-Greuter の自我発達理論を、自分の言葉で要約して借りています。数字は段階を表す便宜上の記号です。</p>
+        <div class="bands" id="bands"></div>
+      </div>
+      <div class="card" id="chatCard" hidden>
+        <h3>結果について Claude と話す</h3>
+        <div class="chat" id="chat"><p class="small">結果の読み方や、自分の経験との結びつきを質問できます。返答にはあなたの Claude の利用枠が使われます。</p></div>
+        <textarea id="chatIn" placeholder="例：6.0 と 5.0〜5.5 に分かれたのは、どう読めばいいですか"></textarea>
+        <div class="row"><button class="btn" id="chatSend">送信</button><button class="btn ghost" id="chatStop" hidden>止める</button><span class="small" id="chatNote" aria-live="polite"></span></div>
+      </div>
+      <div class="card">
+        <h3>結果を書き出す</h3>
+        <div class="tabs" role="group" aria-label="形式"><button data-f="text" aria-pressed="true">テキスト</button><button data-f="csv" aria-pressed="false">CSV</button><button data-f="json" aria-pressed="false">JSON</button></div>
+        <pre class="out" id="out"></pre>
+        <div class="row"><button class="btn" id="copy">コピー</button><button class="btn ghost" id="save" hidden>ファイルに保存</button><span class="small" id="copyNote" aria-live="polite"></span></div>
+      </div>
+      <div class="row"><button class="btn ghost" id="restart">最初からやり直す</button></div>
+    </div>
+  </section>
+
+  <section class="card docs">
+    <h2>このスクリーナーについて</h2>
+    <p class="small">公開ページ版：<a href="https://uminomae.github.io/project-design-theory/reader/stages-screener.html">ものの見方の広さスクリーナー（Project Design）</a>。設計と論拠は <a href="https://github.com/uminomae/project-design/blob/main/knowledge/research/stages-screener/README.md">README（GitHub）</a> にあります。このページと公開ページは同じ問い・同じ採点です。</p>
+    <details open>
+      <summary>段階のしくみ</summary>
+      <div class="stages-body">
+        <p>段階は、<strong>どこまでを包容しているか</strong>と、<strong>何を対象にできるか</strong>で決まります。スクリーナーの三つの軸で言えば、包容は包摂に、何を対象にできるかは視座とメタ認知にあたります。</p>
+        <p class="small">段階の名前と定義は、Terri O'Fallon の STAGES モデルの論文から借りています。下の図と表は論文の記述を自分の言葉で要約したもので、原文は「資料」で読めます。数字は段階を表す便宜上の記号です。</p>
+
+        <h3>スクリーナーの五つの帯</h3>
+        <p class="small">結果は、次の五つの帯で示します。</p>
+        <ul class="notes">
+          <li><strong>〜3.5　Achiever まで</strong>（正しさと目標の見方）：3.0 Expert、3.5 Achiever</li>
+          <li><strong>4.0〜4.5　Pluralist〜Strategist</strong>（関係と仕組みを見渡す見方）</li>
+          <li><strong>5.0〜5.5　Construct Aware〜Transpersonal</strong>（意味の作られ方に気づく見方）</li>
+          <li><strong>6.0　Universal</strong>（時間や境界のなさと日常が分かれない見方）</li>
+          <li><strong>6.5　Illumined</strong>（すべての層を照らす見方）</li>
+        </ul>
+
+        <h3>どこまでを包容しているか</h3>
+        <p class="small">縦に対象の層、横に関わり方。関わり方は、受け取る（そのまま取り込む）→ 選ぶ（一方を選んで動かす）→ 両方を見る（二つを並べて両立させる）→ 入り込み合う（互いが互いを形づくる）の順に深くなります。左下の 1.0 から右へ、上の層へと進むほど、含む範囲が広がります（O p.26, B p.101）。</p>
+        <div class="mx-scroll">
+          <div class="mx" role="table" aria-label="STAGES の12段階を、対象の層と関わり方の掛け合わせで並べた図">
+            <div class="mx-corner" role="columnheader"><span>関わり方 →</span><span>↑ 対象の層</span></div>
+            <div class="mx-col" role="columnheader"><b>受け取る</b><span>そのまま取り込む</span></div>
+            <div class="mx-col" role="columnheader"><b>選ぶ</b><span>一方を選んで動かす</span></div>
+            <div class="mx-col" role="columnheader"><b>両方を見る</b><span>二つを並べて両立させる</span></div>
+            <div class="mx-col" role="columnheader"><b>入り込み合う</b><span>互いが互いを形づくる</span></div>
+
+            <div class="mx-row" role="rowheader"><b>メタ</b><span>気づき・意味の作られ方</span></div>
+            <div class="cell in" role="cell"><b>5.0</b><i>Construct Aware</i><p>言葉・境界・意味を心が作っていると観る</p></div>
+            <div class="cell in" role="cell"><b>5.5</b><i>Transpersonal</i><p>気づきそのもの（日常とは別）</p></div>
+            <div class="cell in" role="cell"><b>6.0</b><i>Universal</i><p>時間や境界のなさと日常が別々でない</p></div>
+            <div class="cell in" role="cell"><b>6.5</b><i>Illumined</i><p>層と、気づいている意識が入り込み合う</p></div>
+
+            <div class="mx-row" role="rowheader"><b>微細</b><span>考え・感情・視点・仕組み</span></div>
+            <div class="cell in" role="cell"><b>3.0</b><i>Expert</i><p>自分の考えと専門知識。正解は一つ</p></div>
+            <div class="cell in" role="cell"><b>3.5</b><i>Achiever</i><p>目標・成果・因果</p></div>
+            <div class="cell in" role="cell"><b>4.0</b><i>Pluralist</i><p>複数の視点と文脈</p></div>
+            <div class="cell in" role="cell"><b>4.5</b><i>Strategist</i><p>仕組み全体と、自他の成長の道筋</p></div>
+
+            <div class="mx-row" role="rowheader"><b>具体</b><span>体・物・目の前の人・決まり</span></div>
+            <div class="cell out" role="cell"><b>1.0</b><i>Impulsive</i><p>体の欲求と目の前の出来事</p></div>
+            <div class="cell out" role="cell"><b>1.5</b><i>Egocentric</i><p>欲しいものを取りにいく</p></div>
+            <div class="cell out" role="cell"><b>2.0</b><i>Rule-Oriented</i><p>決まりと、やりとりの公平さ</p></div>
+            <div class="cell out" role="cell"><b>2.5</b><i>Conformist</i><p>集団の一員として形づくられる</p></div>
+          </div>
+        </div>
+        <ul class="notes small">
+          <li>横の関わり方が、包容の深さです。選ぶ段では一方を外し、両方を見る段で二つを並べて抱え、入り込み合う段で分けずに抱えます。層が上がるたびに、より大きな対象で同じ型を繰り返します。</li>
+          <li>6.0・6.5 は、メタの層の「両方を見る」「入り込み合う」です。6.0・6.5 の選択肢が非二元性を条件にしているのは、このためです。</li>
+          <li>色の濃いマスがこのスクリーナーの帯（3.0〜6.5）です。</li>
+        </ul>
+
+        <h3>何を対象にできるか、できないか</h3>
+        <p class="small">ある段階で対象にできないもの（その中から観ているもの）が、次の段階では対象として観えるようになります。論文は、段階そのものを一つの視点として定義し、何人称の視点を取れるかで数えています（数字の整数の部分。O p.18）。ここで言う視点はふだんの見方のことで、一時的に入れ替わる「見る位置」とは別のものです（O p.22）。</p>
+        <div class="tbl"><table>
+          <thead><tr><th>段階</th><th>対象にできる（観えている）</th><th>対象にできない（その中から観ている）</th></tr></thead>
+          <tbody>
+            <tr><td><b>1.0</b></td><td>目の前の物と出来事</td><td>体の欲求と衝動</td></tr>
+            <tr><td><b>1.5</b></td><td>自分の欲求。自分と他人が別であること</td><td>損か得かという物差し</td></tr>
+            <tr><td><b>2.0</b></td><td>決まりと、やりとりの公平さ。相手から自分がどう観えるか</td><td>決まりに従えば受け入れられる、という見方</td></tr>
+            <tr><td><b>2.5</b></td><td>自分の欲求、相手の気持ち</td><td>所属する集団の決まりと関係</td></tr>
+            <tr><td><b>3.0</b></td><td>集団の決まり（離れて自分の声を持てる）。少し離れて観た自分</td><td>自分のやり方の正しさ、専門の基準</td></tr>
+            <tr><td><b>3.5</b></td><td>自分の考えと行動のつながり、目標と結果、自分の信念の矛盾</td><td>自分で選んだ価値観。客観的な正解があるという前提</td></tr>
+            <tr><td><b>4.0</b></td><td>自分の価値観が育ちや文化で作られたこと。考えている自分</td><td>「どの見方も等しく正しい」という構え</td></tr>
+            <tr><td><b>4.5</b></td><td>自分の意味づけの仕組み、仕組みどうしの関係、自他の成長の道筋。相手が自分をどう観ているか</td><td>意味づけをしている自分の物語。対話と検証で真理に近づけるという信念</td></tr>
+            <tr><td><b>5.0</b></td><td>言葉・境界・意味、自我も心が作っていること</td><td>言葉と地図で理解しようとする構え</td></tr>
+            <tr><td><b>5.5</b></td><td>自我が物語を作り続ける働き。気づきそのもの</td><td>時間や境界を超えたものを、日常と切り離していること</td></tr>
+            <tr><td><b>6.0</b></td><td>時間や境界に限られないものと日常の現実（別々でないものとして）。自分と相手の、気づいている意識そのものが響き合う全体</td><td>観ている位置そのもの（6.5 で層の一つになる）</td></tr>
+            <tr><td><b>6.5</b></td><td>体・感情・考えの層と、それに気づいている意識そのものが入り込み合うところ。物質・生命・心の進化の流れ全体で、わずかな動きが全体に響く</td><td>（データが少なく、書けない）</td></tr>
+          </tbody>
+        </table></div>
+        <ul class="notes small">
+          <li>このスクリーナーの帯は 3.0〜6.5 です。1.0〜2.5 は名前と大枠の確認にとどめ、7.0 はデータがないので置いていません。</li>
+          <li>図の各マスと「対象にできる」は論文の定義の要約です（主に O pp.28–29、B pp.73・78・79）。「対象にできない」は、同じ資料と Cook-Greuter の段階の記述から読み取って書きました。</li>
+        </ul>
+
+        <h3>三つの軸のほかに</h3>
+        <p class="small">段階を分ける軸は、理論によって違います。代表的な成人発達理論を原文で確かめると、視座・メタ認知・包容のほかに、次のような軸が使われていました。このスクリーナーが見ているのは三つの軸だけです。下の軸は、自分の見方を別の角度から振り返るための手がかりとして置いています。「未確認」と添えた名前は、本文を確かめられず、よく言われる説明に拠っています。</p>
+        <ul class="notes">
+          <li><strong>時間の幅</strong>：どれだけ先まで（そして後まで）見通して考え、働けるか（Cook-Greuter の各段階の Time frame、Jaques の時間の地平〔未確認〕、Baltes らの生涯の文脈）</li>
+          <li><strong>個人の見方か、集団の見方か</strong>：同じ対象でも、自分ひとりの内側を中心に観るか、人と人のあいだ・関係や仕組みの側から観るか。個人主義か集団主義かのことではない（STAGES が段階を定める三つの問いの一つ。Torbert は会話や組織にも段階を置く）</li>
+          <li><strong>気づきが行動を変える深さ</strong>：行動を直す／やり方の枠を変える／気づきそのものが変わる、の三重のループ（Torbert）</li>
+          <li><strong>感情の扱い</strong>：感情の細やかさと、緊張やつらい感情も抱えたまま保つ力（Labouvie-Vief、Cook-Greuter の「在る」の次元）</li>
+          <li><strong>知ることの前提</strong>：知識はどれくらい確かか、どう確かめるか（King &amp; Kitchener、Perry〔未確認〕）</li>
+          <li><strong>関与と責任</strong>：答えが一つでないと分かったうえで、どこに立つか（Perry〔未確認〕）</li>
+          <li><strong>課題の複雑さ</strong>：内容に依らず、どれだけ入れ子の深い課題を扱えるか（Commons、Fischer、Dawson）</li>
+          <li><strong>支えと状況による幅</strong>：支えがあるときと、ないとき、緊張しているときで、出せる見方が違う（Fischer、King &amp; Kitchener、Loevinger〔未確認〕）</li>
+          <li><strong>権威と世界のまとまり</strong>：何を権威とするか、世界をどうまとまったものとして思い描くか、象徴とどう関わるか（Fowler）</li>
+          <li><strong>暮らしの条件との合い方</strong>：外の世界を変える向きと、内側と和解する向きが、条件に応じて交互に来る（Graves）</li>
+          <li><strong>ケアに自分を含めること</strong>：他人だけでなく、自分もケアの受け手に含め直す（Gilligan）</li>
+        </ul>
+        <p class="small">下の一覧は、ここに挙げた軸と、非二元性・状態との関係のうち、<strong>理論の著者が段階ごとに書いている記述</strong>を、スクリーナーの帯に当てて並べたものです。軸の名前を開くと、帯ごとの記述が出ます。O は STAGES の帯そのものについての記述、CG と Torbert は自分の段階についての記述で、段階の名前と視点の対応で帯に移しています（3.0 Expert・3.5 Achiever・4.0 Individualist・4.5 Strategist・5.0〜5.5 Construct-aware と Ego-aware〈Torbert の Alchemist〉）。CG は 6.0 と 6.5 を分けず、一つの段階（Unitive）としているので、6.5 は「6.0 と同じ」としています。「—」は、著者の記述が見つからない帯です。ここに載せていない軸は、段階ごとの記述を確かめられていないか、帯に当てると LLM の判断になるものです。気になる軸があれば、括弧の資料（下の「資料」）で原文を読めます。CG の各段階をもっと詳しく知りたい方は、日本語の学習ノート<a href="https://claude.ai/artifact/RU7CnNTSe6qQW2i4EpHyCy">自我発達の9段階ノート</a>も参考にしてください。</p>
+        <div class="axes">
+          <details><summary>非二元性</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>4.0〜4.5</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>5.0〜5.5</b></td><td>5.5：時間にも境界にも限られないものが観えるが、切り離されている（O p.29）。5/6：記号を介した理解は、どれほど深くても非二元から切り離されている（CG p.76）</td></tr><tr><td><b>6.0</b></td><td>時間にも境界にも限られないものが、相対の現実と統合される（O p.29）。両者のあいだの相互性。大海と波のたとえ（O p.33）</td></tr><tr><td><b>6.5</b></td><td>目撃するもの（気づいている意識）と、目撃される層が入り込み合う（O p.33）</td></tr></tbody></table></div><p class="small">見出しの「非二元性」は、このスクリーナーの呼び名です。著者が段階の記述で「非二元」の語を使うのは、5.0〜5.5 の CG の一文だけで、6.0・6.5 を非二元とは呼んでいません。どう読むかは検討中です。</p></details>
+          <details><summary>状態との関係</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>4.0〜4.5</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>5.0〜5.5</b></td><td>別の知り方を、瞑想やふだんと違う意識の状態で垣間見る（p.78）。自分と時間を見失う至高体験がある。考えや感情を目撃する瞬間はあるが、長く続かない（p.82）（CG）</td></tr><tr><td><b>6.0</b></td><td>神秘的な体験や一体の体験を垣間見せていた状態が、目撃の構えの中でいつも使えるようになる。至高体験は、ふだんの在り方になる（CG p.87, p.89）</td></tr><tr><td><b>6.5</b></td><td>6.0 と同じ（CG は 6.0 と 6.5 を分けない）</td></tr></tbody></table></div></details>
+          <details><summary>時間の幅</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>3.5：今のままの自分（特性）と、あるべき自分（目標・理想）（CG p.41）</td></tr><tr><td><b>4.0〜4.5</b></td><td>4.0：未来へ進むより、「いま」に向く（CG p.56）／4.5：歴史の見方、一生の見方（CG p.62）</td></tr><tr><td><b>5.0〜5.5</b></td><td>自分の一生を超え、地球規模で歴史を観る（CG p.76）。5.5：時間に限られないものが観えるが、切り離されている（O p.29）</td></tr><tr><td><b>6.0</b></td><td>時間にも境界にも限られないものが、相対の現実と統合される（O p.29）。地球の歴史と未来の全体を、この瞬間の一部として含む（CG p.89）</td></tr><tr><td><b>6.5</b></td><td>物質・生命・心の進化の流れに気づいている（O p.29）。CG の記述は 6.0 と同じ</td></tr></tbody></table></div><p class="small">「時間に限られないもの」は、O の timeless（時間のなさ）を訳したものです。時計で測れる、過去から未来へ流れる時間の外にあるもの、という意味で、「とても長い時間」や「永遠に続くこと」ではありません（無限・永遠との取り違えは 6.0 の典型的な取り違え・O p.30）。O は、時間の感覚が、いまだけの時間（幼いころ）→ 過去を思い出す時計の時間（8歳ごろ）→ 先の見通し → 永遠の理解、と育ち、時計の時間を知ったあとで、それを映す空（から）の鏡として時間のなさに出会えるとしています（O pp.23–24）。Torbert も、流れる時間と直角に交わる時間の次元として、「永遠の今」を描いています（Starr &amp; Torbert p.92）。</p></details>
+          <details><summary>自分ひとりの側から観るか、人と人のあいだから観るか</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>3.5：個人の見方。自分の考えや感情と、それが自分の行動にどう関わるかを振り返る（O p.28）／3.0：個人として決め、動き始める（O p.30）</td></tr><tr><td><b>4.0〜4.5</b></td><td>4.5：集団の見方。相手が自分に気づいていること、自分が相手に気づいていることに気づく。自分と相手の内と外の文脈や仕組み、互いの成長の道筋が観える（O p.29）</td></tr><tr><td><b>5.0〜5.5</b></td><td>5.0：個人が、言葉の意味と境界が空であること、解体されることを観る（O p.32）／5.5：個人の見方。気づいている意識そのものに気づく（O p.29）</td></tr><tr><td><b>6.0</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>6.5</b></td><td>集団の見方。目撃する場が、心と感覚のすべての層の入り込み合いを、物質・生命・心の進化の流れとともに照らす（O p.29）</td></tr></tbody></table></div><p class="small">ここでいう個人・集団は、個人を大切にするか集団を大切にするか（個人主義・集団主義）のことではありません。O は、その段階の人が<strong>自分ひとりの内側を中心に観るか</strong>、<strong>人と人のあいだ・関係や仕組みの側から観るか</strong>、という見方の重心で段階を分けています（O p.18）。</p></details>
+          <details><summary>属することと、唯一の自分であること</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>3.0：自分と他人は、違いを持つ別々の人（p.35）。特別でありたく、集団は要るが、その端に立つ（p.37）／3.5：目的の違う複数の集団に、引き裂かれずに同時に属せる（p.46）。独立を手放すことは、自分を失うように感じる（p.48）（CG）</td></tr><tr><td><b>4.0〜4.5</b></td><td>4.0：社会が用意した役割から離れ、自分の経験と価値で自分を独自に定義し直す（p.55）。役割に依らない、自分ならではの貢献に関心を持つ（p.57）／4.5：関係を、避けられない相互依存として観る。自律と自分の場所も求めながら、関係に責任を持つ（p.71）（CG）</td></tr><tr><td><b>5.0〜5.5</b></td><td>「人は無限に比べれば無、無に比べれば無限」（パスカル）という二つの見方の緊張の中にいて、その間を揺れ動く（Ego-aware・p.84）（CG）</td></tr><tr><td><b>6.0</b></td><td>自分と他者を、続いていく人類の一部として観る。どこかに属している感じと、自分が他と別の、かけがえのない一人だという感じ（パスカルの逆説の両側）が統合され、無理な緊張なく感じられる（p.87）（CG）</td></tr><tr><td><b>6.5</b></td><td>6.0 と同じ（CG は 6.0 と 6.5 を分けない）</td></tr></tbody></table></div><p class="small">Cook-Greuter が各段階の自己同一性（自分を何者として感じるか）の記述の中で書いていることです。感情の扱いとも、上の「自分ひとりの側から観るか、人と人のあいだから観るか」（O&#x27;Fallon の、見方の重心の話）とも別のことなので、分けて置いています。</p></details>
+          <details><summary>三重のループ</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>3.5：一重のループ（行為と結果の差を見て、行為を直す）が確かになる（Torbert pp.90–91）</td></tr><tr><td><b>4.0〜4.5</b></td><td>4.0：戦略と実際の差を埋める独自の仕組みをつくり、人前での振り返りを促す（Torbert p.91）／4.5：二重のループ（いまの行為の論理の外からのフィードバックで、やり方の枠を変える）が確かになる（Torbert pp.90–91）</td></tr><tr><td><b>5.0〜5.5</b></td><td>瞬間瞬間の三重のループ（気づきそのものが変わる）を持続させることに打ち込む（Alchemist・Torbert p.91）</td></tr><tr><td><b>6.0</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>6.5</b></td><td>—（著者の記述が見つからない）</td></tr></tbody></table></div></details>
+          <details><summary>感情の扱い</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>3.5：見かけと本当の気持ち、口に出したことと出さなかったことを、細かく区別する（CG p.44）</td></tr><tr><td><b>4.0〜4.5</b></td><td>4.0：感情が体中に広がっていて、感情・考え・体の感覚が影響し合うと気づく（CG p.57）／4.5：相反する感情は自然なもの。つらい感情にも耐えられ、そこから洞察を得る（CG pp.67–68）</td></tr><tr><td><b>5.0〜5.5</b></td><td>どんな感情も感じられるが、感じたそばから、その正しさや妥当さを疑う（Ego-aware・CG p.83）</td></tr><tr><td><b>6.0</b></td><td>生と成長と死、喜びと痛みを、時間の流れの中の自然な変化として観る（CG p.87。CG は Unitive に感情の欄を置いていないので、喜びと痛みについての記述を置いた）</td></tr><tr><td><b>6.5</b></td><td>6.0 と同じ（CG は 6.0 と 6.5 を分けない）</td></tr></tbody></table></div></details>
+          <details><summary>知ることの前提</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>3.0：権威や受け取った知識に頼る（CG p.47）／3.5：真理は、適切な科学的方法で、いまでなくてもいずれ見つかる（CG p.41）</td></tr><tr><td><b>4.0〜4.5</b></td><td>4.0：真理は見つからない。すべては相対的（CG p.53）／4.5：真理には近づける。すべての立場が同じ質ではない（CG p.62）</td></tr><tr><td><b>5.0〜5.5</b></td><td>表象（言葉や記号）による理解は、つねに部分的で、視点に依る（CG p.76）</td></tr><tr><td><b>6.0</b></td><td>いちばん単純な扁形動物も、いちばん洗練された思想家と同じくらい真理に近い（CG p.89）</td></tr><tr><td><b>6.5</b></td><td>6.0 と同じ（CG は 6.0 と 6.5 を分けない）</td></tr></tbody></table></div></details>
+          <details><summary>課題の複雑さ</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>3.0：抽象的操作（CG p.35）／3.5：形式的操作（CG p.41）</td></tr><tr><td><b>4.0〜4.5</b></td><td>4.0：系統的操作（CG p.52）／4.5：メタ系統的＝複数の系を比べて調整する（CG pp.52, 62）</td></tr><tr><td><b>5.0〜5.5</b></td><td>交差パラダイム的（CG pp.73, 76）</td></tr><tr><td><b>6.0</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>6.5</b></td><td>—（著者の記述が見つからない）</td></tr></tbody></table></div></details>
+          <details><summary>権威</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>3.0：権威や受け取った知識に頼る／3.5：通念に懐疑的になれる（CG p.47）</td></tr><tr><td><b>4.0〜4.5</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>5.0〜5.5</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>6.0</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>6.5</b></td><td>—（著者の記述が見つからない）</td></tr></tbody></table></div></details>
+          <details><summary>ケアに自分を含める</summary><div class="tbl"><table><thead><tr><th>帯</th><th>著者の記述（資料）</th></tr></thead><tbody><tr><td><b>〜3.5</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>4.0〜4.5</b></td><td>4.5：この段階から、他者への善意と、自分への思いやりが、続く構えになりうる（CG p.69）</td></tr><tr><td><b>5.0〜5.5</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>6.0</b></td><td>—（著者の記述が見つからない）</td></tr><tr><td><b>6.5</b></td><td>—（著者の記述が見つからない）</td></tr></tbody></table></div></details>
+        </div>
+        <p class="small">段階とは別の軸として扱われているものもあります。</p>
+        <ul class="notes">
+          <li><strong>状態</strong>：一時的な体験の深さ（粗大・微細・元因・非二元）。ふだんの見方である段階とは別です（O'Fallon、Wilber）</li>
+          <li><strong>人生の時期</strong>：年齢と結びついた課題（Erikson、Levinson、ユング）。同じ年齢でも段階は違います</li>
+          <li><strong>様式（タイプ）</strong>：変わらない好み。段階の違いと取り違えないための区別です（Kegan）</li>
+          <li><strong>知恵の目安</strong>：不確かさの扱い方、価値の違いへの寛容など（Baltes、Ardelt）</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>何を借り、何を判断したか</summary>
+      <ul class="notes">
+        <li><strong>借りたもの</strong>：帯の名前と定義（STAGES の論文の要約）、段階の取り違えの見分け方（Cook-Greuter の要約）。</li>
+        <li><strong>LLM と監修者が判断したもの</strong>：16 の問い、各選択肢の文、各選択肢がどの帯に当たるか。「段階のしくみ」の表の「対象にできない」の列（資料からの読み取り）。</li>
+        <li><strong>LLM がまとめたもの</strong>：「三つの軸のほかに」の軸の分け方。各理論の原文で、段階の軸を定めている箇所を確かめてまとめました。</li>
+        <li><strong>求めている正確さ</strong>：各選択肢が、借りた定義と合っていること（内容の妥当性）まで。同じ人が何度答えても同じ結果になるか、STAGES の正式な測定（訓練を受けた採点者による文章完成法）と一致するかは確かめていません。</li>
+        <li>6.0・6.5 の選択肢は非二元性を条件に含みます（6.0＝時間や境界に限られないものと日常の行為が別々になっていない、6.5＝体・感情・考えの層と、それに気づいている意識そのものが互いに入り込み合う。どちらも「区別が消えて一つになる」ことではありません）。</li>
+      </ul>
+    </details>
+    <details>
+      <summary>採点のしかた</summary>
+      <ul class="notes">
+        <li>選んだ選択肢の帯を 〜3.5=0、4.0〜4.5=1、5.0〜5.5=2、6.0=3、6.5=4 として平均し、100 点に換算したものが「6.5 への近さ」です。飛ばした問は数えません。</li>
+        <li>帯ごとに何問選んだかを数え、回答が 8 問以上なら、いちばん多い帯を「いまの位置（参考）」とします。移行期などの判定はしません。</li>
+      </ul>
+    </details>
+    <details>
+      <summary>知っておいてほしいこと</summary>
+      <ul class="notes">
+        <li>6.5 はデータが少ない段階です。STAGES の検証研究では、統計的な結論が成り立つのは 2.0〜6.0 で、6.5 は確かな結論を出すにはデータが足りないとされています。</li>
+        <li>上の段階の人も、4.0〜4.5 に当たる答えを多く選ぶことがあります。</li>
+        <li>理論を「知っている」ことと、その見方で「ふだん生きている」ことは別です。知識で答えると、結果は上に寄ります。</li>
+      </ul>
+    </details>
+    <details>
+      <summary>資料</summary>
+      <ul class="notes">
+        <li>O'Fallon, T. (2020) States and STAGES: Waking up Developmentally. Integral Review 16(1). <a href="https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf">PDF</a></li>
+        <li>Barta, K. (2020) Seven Perspectives on the STAGES Developmental Model. Integral Review 16(1). <a href="https://integral-review.org/issues/vol_16_no_1_barta_seven_perspectives_on_the_stages_developmental_model.pdf">PDF</a></li>
+        <li>Murray, T. &amp; O'Fallon, T. (2020) Summary of STAGES Validation Research. Integral Review 16(1). <a href="https://integral-review.org/issues/vol_16_no_1_murray_and_ofallon_summary_of_research.pdf">PDF</a></li>
+        <li>Cook-Greuter, S. R. (2013) Nine Levels of Increasing Embrace in Ego Development (prepublication version). <a href="https://pdf.stafforini.com/cook-greuter-2013-nine-levels-increasing.pdf">PDF</a></li>
+        <li>より詳しく知りたい方へ：<a href="https://claude.ai/artifact/RU7CnNTSe6qQW2i4EpHyCy">自我発達の9段階ノート</a>（CG の 9 段階を、章立てに沿って日本語でまとめた学習ノート。翻訳ではありません）</li>
+      </ul>
+      <p class="small">「三つの軸のほかに」の資料</p>
+      <ul class="notes small">
+        <li>Cook-Greuter (2013)：上の論文（Time frame・Embrace の欄、行う・在る・考えるの三つの次元）</li>
+        <li>Torbert &amp; Livne-Tarandach (2009). Integral Review 5(2)／Starr &amp; Torbert (2005). Integral Review 1. <a href="https://integral-review.org/issues/vol_5_no_2_torbert_reliability_and_validity_tests_of_the_harthill_leadership_development_profile.pdf">PDF</a></li>
+        <li>Commons, M. L. (2007). Introduction to the Model of Hierarchical Complexity. Behavioral Development Bulletin 13.</li>
+        <li>Fischer, K. W. (1980). Psychological Review 87／Dawson（Lectica）による解説 <a href="https://lectica.org/about/fischer">Skill theory</a></li>
+        <li>Basseches, M. (2005). Integral Review 1. <a href="https://integral-review.org/issues/issue_1_basseches_the_development_of_dialectical_thinking.pdf">PDF</a></li>
+        <li>King, P. M. &amp; Kitchener, K. S. (2004). Educational Psychologist 39(1).</li>
+        <li>Perry, W. G. (1970). Forms of Intellectual and Ethical Development in the College Years.（本文未確認）</li>
+        <li>Gilligan, C. (1977). Harvard Educational Review 47(4).</li>
+        <li>Fowler, J. W. (2004). Faith Development at 30. Religious Education 99(4). <a href="https://old.religiouseducation.net/journal/archive/fowler_v99_4.pdf">PDF</a></li>
+        <li>Labouvie-Vief, G. et al. (2007). Psychology and Aging 22(4). <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2440634/">PMC</a></li>
+        <li>Graves, C. W. (1974). Human Nature Prepares for a Momentous Leap. The Futurist.</li>
+        <li>Loevinger, J. (1976). Ego Development.（本文未確認）</li>
+        <li>Kegan, R. (1994). In Over Our Heads.</li>
+        <li>Erikson, E. H. (1959). Identity and the Life Cycle.</li>
+        <li>Levinson, D. J. (1978). The Seasons of a Man's Life.</li>
+        <li>Jung, C. G. The Stages of Life（Modern Man in Search of a Soul, 1933 所収）</li>
+        <li>Jaques, E. (1989). Requisite Organization.（本文未確認）</li>
+        <li>Wilber, K. (1997). Journal of Consciousness Studies 4(1).</li>
+        <li>Baltes, P. B. &amp; Staudinger, U. M. (2000). American Psychologist 55(1)／Ardelt, M. (2003). Research on Aging 25(3).</li>
+      </ul>
+    </details>
+  </section>
+</div>
+
+<script>
+const DATA = /*SCREENER_DATA*/null;
+const BANDS = DATA.bands, QS = DATA.questions;
+const BY = Object.fromEntries(BANDS.map(b => [b.id, b]));
+const KEYS = ["A", "B", "C", "D", "E"];
+const MIN_FOR_POSITION = 8;
+const CARE = "数字は優劣ではありません。どの帯も、次の見方へ移る途中の一つの場所です。";
+const bandName = b => `${b.label} ${b.name}（${b.phrase}）`;
+
+// 採点（公開ページ src/reader-screener.js の score() と同じ決まり。移行期の判定はしない）
+function score(answers) {
+  const picked = answers.filter(a => a && BY[a]);
+  const n = picked.length;
+  const counts = Object.fromEntries(BANDS.map(b => [b.id, 0]));
+  picked.forEach(a => { counts[a] += 1; });
+  if (n === 0) return { answered: 0, closeness: null, counts, top: [] };
+  const avg = picked.reduce((s, a) => s + BY[a].points, 0) / n;
+  const closeness = Math.round(avg / 4 * 100);
+  if (n < MIN_FOR_POSITION) return { answered: n, closeness, counts, top: [] };
+  const max = Math.max(...Object.values(counts));
+  return { answered: n, closeness, counts, top: BANDS.filter(b => counts[b.id] === max).map(b => b.id) };
+}
+
+const $ = id => document.getElementById(id);
+let answers = [], cur = 0, perms = [], result = null, qLogs = [], chatLog = [];
+$("meta").textContent = `バージョン ${DATA.version}（${DATA.updated}）`;
+$("ruler").innerHTML = BANDS.map(b => `<span>${b.label}</span>`).join("");
+
+function shuffled(len) { const a = [...Array(len).keys()]; for (let i = len - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function show(id) { ["intro", "quiz", "result"].forEach(x => $(x).hidden = x !== id); window.scrollTo(0, 0); }
+
+function renderQ() {
+  const q = QS[cur];
+  $("qcount").textContent = `Q${cur + 1} / ${QS.length}`;
+  $("qdone").textContent = `回答 ${answers.filter(Boolean).length}`;
+  $("qbar").style.width = (cur / QS.length * 100) + "%";
+  $("qtext").textContent = `Q${cur + 1}. ${q.text}`;
+  $("opts").innerHTML = "";
+  perms[cur].forEach((oi, pos) => {
+    const o = q.options[oi];
+    const b = document.createElement("button");
+    b.className = "opt"; b.type = "button";
+    if (answers[cur] === o.band) b.classList.add("picked");
+    b.innerHTML = `<b>${KEYS[pos]}</b><span></span>`; b.lastChild.textContent = o.text;
+    b.onclick = () => pick(o.band);
+    $("opts").appendChild(b);
+  });
+  $("hint").textContent = ""; $("back").disabled = cur === 0;
+  $("qchat").innerHTML = ""; (qLogs[cur] || []).forEach(m => addMsg($("qchat"), m.role, m.content)); $("qNote").textContent = "";
+}
+function pick(band) { answers[cur] = band; next(); }
+function next() { if (cur < QS.length - 1) { cur++; renderQ(); } else finish(); }
+document.addEventListener("keydown", e => {
+  if ($("quiz").hidden || e.metaKey || e.ctrlKey || e.altKey || e.target.tagName === "TEXTAREA") return;
+  const k = e.key.toUpperCase();
+  if (KEYS.includes(k)) pick(QS[cur].options[perms[cur][KEYS.indexOf(k)]].band);
+  else if (k.length === 1) $("hint").textContent = "A〜E のいずれか1つで答えてください。";
+});
+$("start").onclick = () => { answers = Array(QS.length).fill(null); cur = 0; qLogs = []; perms = QS.map(q => shuffled(q.options.length)); show("quiz"); renderQ(); };
+$("back").onclick = () => { if (cur > 0) { cur--; renderQ(); } };
+$("skip").onclick = () => { answers[cur] = null; next(); };
+$("restart").onclick = () => { result = null; chatLog = []; $("chat").innerHTML = '<p class="small">結果の読み方や、自分の経験との結びつきを質問できます。返答にはあなたの Claude の利用枠が使われます。</p>'; show("intro"); };
+
+function finish() {
+  result = score(answers);
+  const r = result;
+  $("closeness").innerHTML = r.closeness == null ? "—<small>回答がありません</small>" : `${r.closeness}<small>/ 100（${r.answered}問に回答）</small>`;
+  $("closenessBar").style.width = (r.closeness ?? 0) + "%";
+  $("points").textContent = "選んだ選択肢の帯を 〜3.5=0、4.0〜4.5=1、5.0〜5.5=2、6.0=3、6.5=4 として平均し、100 点に換算したものです。飛ばした問は数えません。";
+  $("position").textContent = r.answered < MIN_FOR_POSITION ? `回答が ${MIN_FOR_POSITION} 問に満たないため、位置は出していません。下の分布だけを見てください。` : r.top.map(id => bandName(BY[id])).join("／");
+  const max = Math.max(1, ...Object.values(r.counts));
+  $("dist").innerHTML = "";
+  [...BANDS].reverse().forEach(b => {
+    const l = document.createElement("span"); l.className = "lbl"; l.textContent = b.label;
+    const m = document.createElement("div"); m.className = "meter"; m.innerHTML = `<i style="width:${r.counts[b.id] / max * 100}%"></i>`;
+    const n = document.createElement("span"); n.className = "num"; n.textContent = `${r.counts[b.id]}問`;
+    $("dist").append(l, m, n);
+  });
+  $("answerList").innerHTML = "";
+  QS.forEach((q, i) => {
+    const a = answers[i];
+    const d = document.createElement("details");
+    const sm = document.createElement("summary");
+    sm.innerHTML = `<span class="qn">Q${i + 1}</span><span></span><span class="stage"></span>`;
+    const o = a && q.options.find(x => x.band === a);
+    sm.children[1].textContent = o ? o.text : "（飛ばした）";
+    sm.children[2].textContent = a ? BY[a].label : "—";
+    const ul = document.createElement("ul");
+    q.options.forEach(x => { const li = document.createElement("li"); if (x.band === a) li.className = "mine"; li.textContent = `${BY[x.band].label}：${x.text}`; ul.appendChild(li); });
+    d.append(sm, ul); $("answerList").appendChild(d);
+  });
+  [...$("ruler").children].forEach((sp, i) => sp.classList.toggle("on", r.top.includes(BANDS[i].id)));
+  $("qbar").style.width = "100%";
+  setFormat("text");
+  show("result");
+}
+
+$("bands").innerHTML = BANDS.map(b => `<div><b></b><span></span><span class="small"></span></div>`).join("");
+[...$("bands").children].forEach((el, i) => {
+  const b = BANDS[i];
+  el.children[0].textContent = bandName(b);
+  el.children[1].textContent = `何が観えているか：${b.metacognition}／何を取り込むか：${b.inclusion}`;
+  el.children[2].textContent = `視座：${b.perspective}（出典 ${b.source}）`;
+});
+
+// 書き出し
+let fmt = "text";
+function exportText(f) {
+  const r = result;
+  const rows = QS.map((q, i) => { const a = answers[i]; const o = a && q.options.find(x => x.band === a); return { q: `Q${i + 1}`, text: q.text, answer: o ? o.text : null, band: a ? BY[a].label : null }; });
+  if (f === "csv") return ["問,問い,選んだ選択肢,帯", ...rows.map(x => `${x.q},"${x.text}","${x.answer ?? "（飛ばした）"}",${x.band ?? ""}`)].join("\n");
+  if (f === "json") return JSON.stringify({ version: DATA.version, closeness: r.closeness, answered: r.answered, position: r.top.map(id => BY[id].label), counts: Object.fromEntries(BANDS.map(b => [b.label, r.counts[b.id]])), answers: rows }, null, 2);
+  return [r.closeness == null ? "6.5 への近さ：回答なし" : `6.5 への近さ：${r.closeness}（0〜100・${r.answered}問に回答）`, CARE,
+    r.top.length ? `いまの位置（参考）：${r.top.map(id => BY[id].label).join("・")}` : "いまの位置（参考）：回答が少ないため出していません",
+    `帯ごとの回答数：${BANDS.map(b => `${b.label}=${r.counts[b.id]}`).join(" ")}`, "回答：",
+    ...rows.map(x => `${x.q} ${x.text} → ${x.answer ? `${x.answer}（${x.band}）` : "（飛ばした）"}`),
+    `バージョン：${DATA.version}`].join("\n");
+}
+function setFormat(f) { fmt = f; document.querySelectorAll(".tabs button").forEach(b => b.setAttribute("aria-pressed", b.dataset.f === f)); $("out").textContent = exportText(f); $("copyNote").textContent = ""; }
+document.querySelectorAll(".tabs button").forEach(b => b.onclick = () => setFormat(b.dataset.f));
+$("copy").onclick = () => {
+  navigator.clipboard.writeText($("out").textContent).then(() => $("copyNote").textContent = "コピーしました", () => {
+    const r = document.createRange(); r.selectNodeContents($("out")); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+    $("copyNote").textContent = "選択しました。⌘C / Ctrl+C でコピーしてください";
+  });
+};
+
+// Claude（sample）と保存（downloads）。使えないときは機能ごと隠す
+let sample = null, downloads = null, ctl = null;
+window.claude?.use?.("downloads").then(d => { downloads = d; if (d) $("save").hidden = false; }).catch(() => {});
+$("save").onclick = () => {
+  const ext = { text: "txt", csv: "csv", json: "json" }[fmt];
+  downloads.save({ filename: `screener-result.${ext}`, data: $("out").textContent }).then(() => $("copyNote").textContent = "保存しました", e => { if (e?.code !== "cancelled" && e?.code !== "declined") $("copyNote").textContent = "保存できませんでした"; });
+};
+window.claude?.use?.("sample").then(s => { sample = s; $("qhelp").hidden = !s; $("chatCard").hidden = !s; }).catch(() => {});
+
+const BAND_TEXT = BANDS.map(b => `- ${bandName(b)}：視座＝${b.perspective}。観えているもの＝${b.metacognition}。取り込むもの＝${b.inclusion}。`).join("\n");
+const COMMON = `このスクリーナー（ものの見方の広さスクリーナー、バージョン ${DATA.version}）は、視座・メタ認知・インクルーシブ（包摂）——どの視点から観ているか、何が観えているか、どこまでを含めて観ているか——を16問×5択で確かめる。6.0・6.5 では非二元性（時間や境界に限られないものと日常とが二つに分かれていない見方。「区別が消えて一つになる」ではない）も見る。帯の定義は Terri O'Fallon の STAGES モデル、段階の見分け方は Cook-Greuter の自我発達理論の要約で、各選択肢がどの帯に当たるかは LLM と監修者の判断。診断ではなく、内容の妥当性までを求めた目安。主な対象は、自分のものの見方を確かめてみたい人、意味や生き方・孤独や死といった実存的な課題に向き合っている人、非二元性や瞑想・内省に関心がある人。`;
+const QHELP = `${COMMON}
+あなたは回答中の説明役。回答者がいま答えている問いの言葉や選択肢の違いについて、質問に答える。
+厳守：
+- どの選択肢がどの帯に当たるか、採点のしかた、どれが「高い」「進んでいる」かは言わない。聞かれても、回答に影響するので答えられないと伝える。
+- どれを選ぶべきか勧めない。回答者の話からどれに当てはまるかを判定しない。
+- 選択肢を説明するときは、A〜E を同じ分量・同じ温度で、日常の具体的な場面に置き換える。どれかを魅力的に、どれかを劣って見せない。
+- 一時的な特別な体験ではなく、ふだんの見方として最も近いものを選べばよい、と必要に応じて添える。
+- 医療・臨床的な表現は避ける。日本語で、簡潔に（300字程度まで）。`;
+const RESULT_RULES = `${COMMON}
+帯：
+${BAND_TEXT}
+あなたは結果の読み方を一緒に考える役。下の結果はページが決まりどおりに計算したもので、点や位置を書き換えない。
+方針：
+- 数字は優劣ではない。どの帯も次の見方へ移る途中の一つの場所。下の帯を「欠けている」と読ませない。
+- 移行期などの判定はしない。分布はグラデーションとして示し、どう読むかは回答者に委ねる。問いかけて、回答者が自分で読むのを助ける。
+- 一時的な体験（状態）とふだんの見方（段階）を分ける。理論を知っていることと、その見方で生きていることは別。
+- 結果を断定しない。病気や能力の判定に使わない。医療・臨床的な表現は避ける。治療や解決を約束しない。
+- 実存的な課題の中にいる人が読む前提で、落ち着いた言葉で話す。日常の場面に結びつけ、専門用語は必要なら括弧で説明する。日本語で、400字程度まで。`;
+function qContext() {
+  const q = QS[cur];
+  return `${QHELP}\n\n# いまの問い（記号は回答者の画面の並び）\nQ${cur + 1}. ${q.text}\n${perms[cur].map((oi, pos) => `${KEYS[pos]}. ${q.options[oi].text}`).join("\n")}`;
+}
+function rContext() { return `${RESULT_RULES}\n\n# 結果\n${exportText("text")}`; }
+
+const PANELS = {
+  result: { chat: "chat", send: "chatSend", stop: "chatStop", note: "chatNote", log: () => chatLog, ctx: rContext },
+  quiz: { chat: "qchat", send: "qSend", stop: "qStop", note: "qNote", log: () => (qLogs[cur] ||= []), ctx: qContext },
+};
+function addMsg(box, role, text) { box.querySelector(".small")?.remove(); const d = document.createElement("div"); d.className = "msg " + (role === "user" ? "user" : "ai"); d.textContent = text; box.appendChild(d); return d; }
+const ERR = { not_granted: "Claude の利用が許可されませんでした", sampling_disabled: "この表示では Claude を使えません", rate_limited: "混み合っています。少し待ってから送ってください", prompt_too_large: "会話が長くなりすぎました。やり直すと続けられます", session_expired: "Claude にもう一度ログインしてください" };
+async function ask(text, which) {
+  const P = PANELS[which];
+  if (!sample || ctl) return;
+  const log = P.log(), box = $(P.chat), qAt = cur;
+  log.push({ role: "user", content: text }); addMsg(box, "user", text);
+  const bubble = addMsg(box, "ai", "考えています…");
+  ctl = new AbortController(); $(P.send).disabled = true; $(P.stop).hidden = false; $(P.note).textContent = "";
+  try {
+    const r = await sample([{ role: "user", content: P.ctx() }, { role: "assistant", content: "方針と内容を確認しました。" }, ...log], { cache: false, signal: ctl.signal, modelTier: "complex", onText: ({ text }) => { bubble.textContent = text; } });
+    bubble.textContent = r.text; log.push({ role: "assistant", content: r.text });
+  } catch (e) {
+    if (e?.text) { bubble.textContent = e.text; log.push({ role: "assistant", content: e.text }); } else { bubble.remove(); log.pop(); }
+    if (e?.code === "not_granted" || e?.code === "sampling_disabled") { $("qhelp").hidden = true; $("chatCard").hidden = true; }
+    else if (e?.code !== "cancelled") $(P.note).textContent = ERR[e?.code] || "返答を受け取れませんでした。少し待ってから送ってください";
+  } finally { ctl = null; $(P.send).disabled = false; $(P.stop).hidden = true; if (which === "quiz" && cur !== qAt && !$("quiz").hidden) renderQ(); }
+}
+$("chatSend").onclick = () => { const t = $("chatIn").value.trim(); if (!t) return; $("chatIn").value = ""; ask(t, "result"); };
+$("chatStop").onclick = () => ctl?.abort();
+$("qSend").onclick = () => { const t = $("qIn").value.trim(); if (!t) return; $("qIn").value = ""; ask(t, "quiz"); };
+$("qStop").onclick = () => ctl?.abort();
+</script>

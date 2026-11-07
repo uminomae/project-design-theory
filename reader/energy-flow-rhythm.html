@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「エネルギーの流れ仮説」の読み物（認知リズム版）です。文脈ゼロで
+  読む LLM がまず構造を掴めるよう、機械可読な要約を3層で埋め込んでいます:
+    (1) この HTML コメント … 生ソースを読む LLM 向けの全体地図（下記）
+    (2) head 内の JSON-LD（application/ld+json）… @graph（主張の仕分け表）
+    (3) body 冒頭の visually-hidden ブロック（id=llm-summary）… 本文抽出に残る静的要約
+  人間向けの読み物本体は main 要素以下。要約層と本文で結論は同一です。
+
+  【この読み物の主張構造】三段の問い（個人→関係→社会）＋震源（散逸構造）＋横串。
+  大前提: 心の「エネルギー」＝物理のエネルギー、という字義同一は主張しない（構造類似のみ）。
+  二つのものさし: ①意味（字義／構造類似／比喩） ②確からしさ（実証→仮説/係争→飛躍）。
+
+  【結論の仕分け（節ごと）】
+  - §01 感情: "流れ"（力学系の軌道＝OU過程）は字義どおり実証で生き残る。
+           "エネルギー"（熱力学量）は代謝の一点を除いてならない。
+           100年前フロイト水力学版（保存量）は実証で否定。名前の罠（自由エネルギー同名異物）に注意。
+  - §02 関係: 弱い読み（同期・伝染で伝わりやすさが変わる）は実証あり（因果の頑健性は係争）。
+           強い読み（関係＝流れが先・名前は後付け）は「識別不能」＝伝染と選択は原理的に見分け不可
+           （Shalizi&Thomas）。臨床・統計・神経が同じ交絡の壁に別々に到達（窓）。
+  - §03 社会: 同時多発は実在の研究対象（Merton）。機構の部品（臨界・同期・集合脳・パーコレーション）は
+           別々に実証・数理化済み。欠けるのは三層を束ねる合成一点のみ。「干渉」は名前が同じだけ。
+           決定論は実証に逆風、ただし「純粋な偶然」モデルも4000万論文で綻ぶ（Li 2025）。
+  - §04 震源: 「流れが維持する形」＝散逸構造（プリゴジン）は渦・炎で字義一致、生命の代謝まで査読論文が支持。
+           予測して自分を保つ仕組みまでは係争中の橋。意識・魂は飛躍（禁止）。
+           煩悩の"流れ"語彙は仏教に実在するが、向き（死で途絶える／価値づけ）は仏教と逆。
+  - 横串: 同じ数式（OU・蔵本・臨界・非平衡定常）が全スケールに反復。ただし同じ形≠同じ物理。
+  - §結び: 実感（怒り・意欲・相性・時代）に戻り、開いた問いを一つ残す。
+
+  正本の読み物: reader/energy-flow.html（生成元: knowledge/research/energy-flow-psyche/READER-energy-flow-psyche.md）
+  この版は「認知リズムを意識した文章術」7原則で語り直した比較実験。調査結論は正本と同一・配列と語り口のみ変更。
+  意図的に独自テーマ（明朝＋ティール）を使用。pd VI の正式ページではないため noindex。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>感情も、関係も、時代も「流れ」なのだろうか — 認知リズム版（比較ドラフト） | Project Design</title>
+    <meta name="description" content="読み物「エネルギーの流れ仮説」を、認知リズムを意識した文章術（cognitive-rhythm-writing）で語り直した比較用ドラフト。調査結論は正本と同じで、配列と語り口だけを変えている。感情＝力学系の軌道（流れ）は実証・エネルギーは代謝の一点のみ、関係の強い読みは識別不能、社会は合成一点のみ未測定、震源の散逸構造は渦炎で字義一致。">
+    <link rel="icon" href="../favicon.ico">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "感情も、関係も、時代も「流れ」なのだろうか — 認知リズム版（比較ドラフト）",
+          "inLanguage": "ja",
+          "isBasedOn": "https://uminomae.github.io/project-design-theory/reader/energy-flow.html",
+          "abstract": "散逸構造的世界観（流れが続く間だけ保たれる形）を、感情・人間関係・社会へ広げられるかを、実証・構造類似・比喩・不一致に仕分ける読み物。大前提は『あくまで構造類似』で、心のエネルギー＝物理のエネルギーという字義同一は主張しない。",
+          "keywords": "エネルギーの流れ, 散逸構造, 構造類似, オルンシュタイン-ウーレンベック過程, 蔵本モデル, 臨界減速, 同時発見, 自由エネルギー原理, 識別不能, プロジェクトデザイン論",
+          "about": [
+            {"@type":"Thing","name":"感情＝力学系の軌道（流れ字義）","description":"OU過程で実証的にモデル化。ただし熱力学的エネルギーではなく状態空間の軌道。100年前の保存量エネルギー版（フロイト水力学）は実証で否定。"},
+            {"@type":"Thing","name":"人間関係＝流れが先・名前は後（強い読み）","description":"識別不能の開いた問い。伝染と選択は観察データから原理的に分離不可（Shalizi & Thomas 2011）。臨床・統計・神経が同じ交絡に別々に到達。"},
+            {"@type":"Thing","name":"社会＝波の干渉場","description":"同時多発は実在の研究対象。機構の部品は別々に実証・数理化済みで、三層を束ねる合成一点のみ未測定。『干渉』は物理の重ね合わせではなく名前の一致。"},
+            {"@type":"Thing","name":"散逸構造（震源）","description":"流れが維持する形。渦・炎で字義一致、生命の代謝まで査読論文が支持（Kondepudi 2020）。予測系までは係争中の橋、意識・魂は飛躍。"},
+            {"@type":"Thing","name":"同じ数式の反復（横串）","description":"OU・蔵本・臨界・非平衡定常が全スケールに現れる。ただし同じ数学の形≠同じ物理。仕組み非依存の指標ゆえ転用できるが仕組みは確定できない。"}
+          ]
+        }
+      ]
+    }
+    </script>
+
+<style>
+  :root{
+    --paper:#F2F3F1;
+    --paper-raise:#FBFBF9;
+    --ink:#1A211E;
+    --muted:#5B635E;
+    --faint:#8A918C;
+    --accent:#1C6E68;
+    --accent-soft:#E2ECEA;
+    --line:rgba(26,33,30,.12);
+    --line-strong:rgba(26,33,30,.22);
+    --mark:#9C6A16;
+    --mark-soft:#F2E3C4;
+    --measure:37em;
+    --fs-body:1.125rem;
+    --lh-body:1.95;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --paper:#13181A;
+      --paper-raise:#1A2124;
+      --ink:#E8EAE5;
+      --muted:#A3ABA5;
+      --faint:#6E7671;
+      --accent:#63BBB1;
+      --accent-soft:#1E2E2C;
+      --line:rgba(232,234,229,.14);
+      --line-strong:rgba(232,234,229,.26);
+      --mark:#D9A64C;
+      --mark-soft:#33291A;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#13181A;
+    --paper-raise:#1A2124;
+    --ink:#E8EAE5;
+    --muted:#A3ABA5;
+    --faint:#6E7671;
+    --accent:#63BBB1;
+    --accent-soft:#1E2E2C;
+    --line:rgba(232,234,229,.14);
+    --line-strong:rgba(232,234,229,.26);
+    --mark:#D9A64C;
+    --mark-soft:#33291A;
+  }
+  :root[data-theme="light"]{
+    --paper:#F2F3F1;
+    --paper-raise:#FBFBF9;
+    --ink:#1A211E;
+    --muted:#5B635E;
+    --faint:#8A918C;
+    --accent:#1C6E68;
+    --accent-soft:#E2ECEA;
+    --line:rgba(26,33,30,.12);
+    --line-strong:rgba(26,33,30,.22);
+    --mark:#9C6A16;
+    --mark-soft:#F2E3C4;
+  }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Hiragino Mincho ProN","Yu Mincho","YuMincho","Noto Serif JP",serif;
+    font-size:var(--fs-body);
+    line-height:var(--lh-body);
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+  .gothic{
+    font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","YuGothic","Noto Sans JP",system-ui,sans-serif;
+  }
+
+  /* ---- masthead ---- */
+  header.masthead{
+    position:relative;
+    overflow:hidden;
+    border-bottom:1px solid var(--line);
+  }
+  header.masthead canvas{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    display:block;
+    opacity:.5;
+  }
+  @media (prefers-reduced-motion:reduce){
+    header.masthead canvas{display:none}
+  }
+  .masthead-inner{
+    position:relative;
+    max-width:var(--measure);
+    margin:0 auto;
+    padding:5.5rem 1.5rem 3.25rem;
+  }
+  .eyebrow{
+    font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+    font-size:.72rem;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    color:var(--accent);
+    margin:0 0 1.4rem;
+    font-weight:600;
+  }
+  h1{
+    font-size:clamp(1.85rem,5.2vw,2.7rem);
+    line-height:1.42;
+    font-weight:600;
+    letter-spacing:.01em;
+    margin:0 0 1.5rem;
+    text-wrap:balance;
+  }
+  .standfirst{
+    color:var(--muted);
+    font-size:1.05rem;
+    line-height:1.9;
+    margin:0;
+  }
+  .draftnote{
+    font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+    font-size:.82rem;
+    line-height:1.75;
+    color:var(--faint);
+    margin:1.75rem 0 0;
+    padding-top:1.2rem;
+    border-top:1px solid var(--line);
+  }
+
+  /* ---- article ---- */
+  main{
+    max-width:var(--measure);
+    margin:0 auto;
+    padding:3.5rem 1.5rem 5rem;
+  }
+  section{margin:0 0 4.25rem}
+  .sec-num{
+    font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+    font-size:.72rem;
+    letter-spacing:.2em;
+    color:var(--accent);
+    font-weight:600;
+    display:block;
+    margin:0 0 .5rem;
+  }
+  h2{
+    font-size:clamp(1.35rem,3.6vw,1.72rem);
+    line-height:1.5;
+    font-weight:600;
+    margin:0 0 1.6rem;
+    text-wrap:balance;
+  }
+  h3{
+    font-size:1.12rem;
+    font-weight:600;
+    line-height:1.6;
+    margin:2.4rem 0 1.1rem;
+    color:var(--ink);
+  }
+  p{margin:0 0 1.5rem}
+  main a{color:var(--accent);text-underline-offset:.18em;text-decoration-thickness:1px}
+  strong{font-weight:600}
+  em.turn{
+    font-style:normal;
+    font-weight:600;
+    color:var(--accent);
+  }
+
+  /* recurring "open question" marker */
+  .openq{
+    margin:2rem 0;
+    padding:.9rem 0 .9rem 1.35rem;
+    border-left:3px solid var(--mark);
+    background:linear-gradient(90deg,var(--mark-soft),transparent 85%);
+    font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+    font-size:.94rem;
+    line-height:1.8;
+  }
+  .openq .lab{
+    display:block;
+    font-size:.68rem;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--mark);
+    font-weight:700;
+    margin-bottom:.35rem;
+  }
+  .openq p{margin:0}
+
+  blockquote.source-voice{
+    margin:2rem 0;
+    padding:1.4rem 1.5rem;
+    background:var(--paper-raise);
+    border:1px solid var(--line);
+    border-radius:2px;
+    color:var(--ink);
+    font-size:1rem;
+    line-height:1.85;
+  }
+  blockquote.source-voice .attr{
+    display:block;
+    margin-top:.9rem;
+    font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+    font-size:.76rem;
+    letter-spacing:.04em;
+    color:var(--faint);
+  }
+
+  .figure{
+    margin:2.25rem 0;
+    padding:1.5rem;
+    background:var(--paper-raise);
+    border:1px solid var(--line);
+    border-radius:3px;
+  }
+  .figure .cap{
+    font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+    font-size:.8rem;
+    letter-spacing:.02em;
+    color:var(--muted);
+    margin:1rem 0 0;
+    line-height:1.7;
+  }
+  .figure canvas{display:block;width:100%;height:160px}
+
+  /* the "watershed" one-line verdicts */
+  .verdict{
+    margin:2rem 0;
+    padding:1.25rem 1.4rem;
+    border:1px solid var(--accent);
+    border-radius:3px;
+    background:var(--accent-soft);
+    font-weight:600;
+    line-height:1.75;
+  }
+  .verdict .lab{
+    display:block;
+    font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+    font-size:.68rem;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--accent);
+    font-weight:700;
+    margin-bottom:.4rem;
+  }
+
+  hr.divider{
+    border:0;
+    height:1px;
+    background:var(--line);
+    margin:4.25rem 0;
+  }
+
+  /* colophon */
+  footer.colophon{
+    max-width:var(--measure);
+    margin:0 auto;
+    padding:2.5rem 1.5rem 5rem;
+    border-top:1px solid var(--line);
+    font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+    font-size:.82rem;
+    line-height:1.85;
+    color:var(--faint);
+  }
+  footer.colophon h4{
+    font-size:.7rem;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin:0 0 .9rem;
+    font-weight:700;
+  }
+  footer.colophon p{margin:0 0 1rem}
+  footer.colophon a{color:var(--accent)}
+
+  .compare-tag{
+    max-width:var(--measure);
+    margin:0 auto;
+    padding:1.1rem 1.5rem;
+    font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+    font-size:.78rem;
+    line-height:1.7;
+    color:var(--faint);
+    border-bottom:1px solid var(--line);
+    background:var(--paper-raise);
+  }
+  .compare-tag b{color:var(--accent);font-weight:600}
+  .compare-tag a{color:var(--accent);text-underline-offset:.18em}
+
+  ::selection{background:var(--accent);color:var(--paper)}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+  /* 文脈ゼロ LLM 向けの静的要約。人間には非表示だが本文抽出（innerText）には残る。
+     display:none / visibility:hidden は抽出でも消えるため使わない。 */
+  .visually-hidden{
+    position:absolute !important;
+    width:1px;height:1px;
+    padding:0;margin:-1px;
+    overflow:hidden;
+    clip:rect(0 0 0 0);
+    clip-path:inset(50%);
+    white-space:nowrap;
+    border:0;
+  }
+</style>
+</head>
+<body>
+
+<div id="llm-summary" class="visually-hidden" aria-hidden="true">
+  <h2>この読み物の機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+  <p>これは「エネルギーの流れ仮説」の読み物（認知リズム版・比較ドラフト）です。散逸構造的世界観——流れが続くあいだだけ保たれる形（渦・炎）——を、人間の感情・関係・社会にまで広げられるかを、実証・構造類似・比喩・不一致に仕分けて検証します。大前提は「あくまで構造類似」で、心の『エネルギー』が物理学のエネルギーと同じものだ、という字義同一は主張しません。結論は出しておらず、調べながら書き換える途中の草稿です。</p>
+  <p>二つのものさしを使います。①意味のものさし（字義／構造類似／比喩）と、②確からしさのものさし（実証→仮説・係争→飛躍）。一つの主張は両方に位置を持ちます。</p>
+  <p>問いの構造は三段です。個人（感情・意思は内側から湧くエネルギーの流れか）、関係（人間関係は流れやすい経路や干渉の形に名前をつけたものか）、社会（大勢の流れが干渉して渦のような成果や時代のような流れが同時多発するのか）。</p>
+  <h3>節ごとの結論の仕分け</h3>
+  <ul>
+    <li><strong>感情（§01）</strong>：感情の変化は実在の数式（オルンシュタイン–ウーレンベック過程）で実証的にモデル化される。この意味で "流れ"（力学系の軌道）は字義どおり生き残る。ただし "エネルギー"（熱力学的な量）が本物の物理量に触れるのは代謝という一点だけ（アロスタシス・身体予算）。100年前にフロイトが試みた「感情＝溜まって減る保存量エネルギー」という水力学モデルは実証で否定された（カタルシス仮説の反証・自我消耗の追試崩れ〔ただし係争中〕）。物理・脳科学・心理学の『自由エネルギー』は同名だが別物で、式の形が似ていても接地する物理が違う（名前の罠）。</li>
+    <li><strong>関係（§02）</strong>：弱い読み（関わりの強さで状態の伝わりやすさが変わる＝対人同期・情動伝染・複雑伝染）は実証がある。ただし同期→向社会性の因果は盲検で消えうる。強い読み（関係とは流れが先で名前は後付け）は「識別不能」にぶつかる——伝染（影響が伝わった）と選択（もともと似た者が集まった）は観察データから原理的に見分けられない（Shalizi & Thomas 2011）。この壁に、臨床（逆転移の帰属）・統計（定理）・神経科学（脳間同期）が別々に到達している。名前の下に測れる同調（生理データの正負符号）は実在する（Marci 2007・Gernert 2023）。</li>
+    <li><strong>社会（§03）</strong>：似た成果の同時多発は実在の研究対象（multiple discovery・Merton・ホットストリーク）。機構の部品——可能性空間の拡大・集合脳・同期（蔵本モデル）・パーコレーション——はどれも別々に実証・数理化されている。欠けているのは部品ではなく、三層（同時発見の計測・人どうしの同期・集団のバースト）を一つに束ねる合成一点だけ。「波の干渉」は物理の重ね合わせではなく名前の一致。決定論（機が熟せば必ず到達）は実証に逆風だが、反対の「純粋な偶然」モデルも4000万論文で綻んだ（Li 2025・裾の長い分布）。独立とも決定論とも言い切れない。</li>
+    <li><strong>震源＝散逸構造（§04）</strong>：「流れが維持する形」はプリゴジンの散逸構造そのもので、渦・炎では字義どおり一致。生命の代謝レベルまで査読論文が支持（Kondepudi 2020・死＝流れの不可逆な途絶）。予測して自分を保つ仕組み（予測符号化・自由エネルギー原理）までは係争中の橋（Still 2012 の熱力学定理は硬い土台）。主観的経験・魂まで散逸で説明するのは飛躍（禁止）。煩悩を "流れ" で語る仏教語彙（漏・渇愛・暴流）は実在するが、流れの向き（死で途絶える）と価値づけ（善悪抜き）は仏教と逆。</li>
+    <li><strong>横串</strong>：同じ少数の数式（OU過程・蔵本モデル・臨界減速・非平衡定常状態）がスケールを越えて反復する。ただし同じ数式が現れることは同じ物理が流れていることではない。中身が洗い流されて形だけ残るため、仕組み非依存（generic）ゆえに転用できる一方、その指標が出てもどんな仕組みが動くかは確定できない。</li>
+  </ul>
+  <p>文責は Claude（Anthropic の AI、Fable 5）。pjdhiro 本人の言葉は引用で区別。うまくいかなかった部分・食い違った部分も消さずに残す。正本の読み物は reader/energy-flow.html。</p>
+</div>
+
+<div class="compare-tag gothic">
+  <b>比較用・認知リズム版</b>　同じ調査結論を、スキル「cognitive-rhythm-writing」の7原則で語り直した版です。正本の <a href="./energy-flow.html">READER（エネルギーの流れ仮説）</a>（要約ボックス先出し・全編ヘッジ・多数の詳細折りたたみ）と読み比べるために作りました。
+</div>
+
+<header class="masthead">
+  <canvas id="flowfield" aria-hidden="true"></canvas>
+  <div class="masthead-inner">
+    <p class="eyebrow">Energy · Flow · Psyche</p>
+    <h1>感情も、関係も、時代も、「流れ」なのだろうか</h1>
+    <p class="standfirst">怒りはこみ上げ、意欲は満ちたり枯れたりする。人には、うまく流れる相手とせき止められる相手がいる。時代にも、大きな流れがあるように見える。——では、それは本当に「エネルギーの流れ」なのか。それとも、ただの言葉のあやなのか。</p>
+    <p class="draftnote gothic">これは確定した結論ではありません。調べながら書き換えている途中の草稿です。分けたいのは一つだけ——どこまでが実証で、どこからが「形が似ているだけ」で、どこからは実証と食い違うか。</p>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <p>まず、いちばん外側から始めます。あなたの体重の大部分は、実は「もの」の重さではありません。</p>
+    <p>陽子——原子核をつくる粒——の重さのうち、中のクォーク自身の重さはわずか数%です。残りの大部分は、クォークが動きまわる運動と、それを閉じ込めている力の、<strong>エネルギーの重さ</strong>です。これは詩的な言い換えではなく、量子色力学の計算で分解まで示されている物理です。「エネルギーが質量として中に閉じ込められる」という言い方は、少なくともここでは誇張ではありません。</p>
+    <p>だとすると、「もの」とは固定した実体というより、<strong>エネルギーの状態が保っている形</strong>だ、と言い換えられそうです。ただし、ここで一つだけ分けておかないと後で足をすくわれます。「形」には二種類ある。岩や結晶のように、いったんできれば流れがなくても保たれる形と、渦や炎のように、流れが続くあいだ<strong>だけ</strong>保たれる形。この読み物が追いかけるのは、後者だけです。</p>
+    <div class="openq gothic">
+      <span class="lab">まだ閉じていない問い</span>
+      <p>物理の内側でなら、「もの＝流れが保つ形」は成り立つ。問題はその次の一歩——これを<strong>心に持ち込めるのか</strong>。ここから先が、この読み物の本題です。</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <span class="sec-num gothic">01 — 感情</span>
+    <h2>感情はエネルギーの流れか — 100年前に、すでに試されていた</h2>
+    <p>「感情や本能はエネルギーの流れだ」というのは、新しい思いつきではありません。<strong>フロイトとユングが、100年前に本気で試みています。</strong>しかも比喩のつもりではなく、物理をそのまま心に持ち込もうとしていました。</p>
+    <p>フロイトが学んだ生理学の研究室は、「生き物の中に働くのは、ふつうの物理化学的な力だけだ」という信条の一派でした。彼の「リビドー」——心を動かす一定量のエネルギー——は、その物理の枠組みを心に持ち込む試みです。ユングはそれを性的なものに限らず「生命エネルギー一般」へ広げました。pjdhiro の「内側から湧く感情や意思」という言い方に、歴史上いちばん近い先行者はユングです。</p>
+    <p>そして、この試みのある一つの形は、実らない道でした。感情を「溜まって放出される保存量」として扱う、水力学のようなモデルです。「怒りは溜まった圧力だから発散すれば軽くなる」というカタルシス仮説は、実験でむしろ逆が出ました——パンチングバッグで発散した人はかえって攻撃的になり、何もしないほうが怒りは収まった（Bushman 2002）。「意志力は使うと減る資源だ」という現代版（自我消耗）も、大規模な追試で効果がほぼ消えています（2016年23研究室・2021年3531名）。ここは決着とまでは言えず、提唱者が反論を続けている係争中の論点です。</p>
+
+    <p><em class="turn">ところが、否定されたのはその一つの形だけでした。</em></p>
+    <p>一次資料を掘ると、否定されたのは「感情＝溜まって減る保存量」の版であって、<strong>"流れ" のほうは、現代科学の一線に字義どおり生き残っている</strong>ことがわかります。しかも生き残り方は二つに分かれていて、それぞれ「何が字義で、何が言葉のあやか」の線が違います。</p>
+
+    <h3>床①：代謝の流れ — ここだけ、"エネルギー" が本物の物理量に触れる</h3>
+    <p>脳は、体のグルコースや酸素を、足りなくなってから補うのではなく、<strong>必要を予測して先回りで配ります</strong>（アロスタシス。Sterling）。脳の活動だけで体の総エネルギーの約2割を使い、その配分は kcal やジュールで実際に測れます。ここでの "エネルギー" は比喩ではありません。</p>
+    <p>感情研究の有力な見方（Barrett の身体予算説）は、感情をこう置きます——感情とは、この代謝予算の予測的なやりくりを、体の内側から感じ取ったものだ、と。ただし言い過ぎないように。正確には「感情はエネルギーである」ではなく、「感情は、字義の代謝エネルギーの予測的な調整を、<strong>内から感じ取ったもの</strong>」。エネルギーそのものではなく、その調整の"感じ"という一段が挟まります。この一段を飛ばすかどうかが、支持できる主張とできない主張の境目です。</p>
+
+    <h3>床②：力学系の流れ — ここでは "流れ" がモデルの数式そのものになる</h3>
+    <p>先に、名前を出す前に、動きを見てください。くぼみの底に置かれたボールを想像します。つつけば転がるけれど、やがて底へ戻ってくる。この「底へ引き戻す力」と「つつくランダムな揺れ」の釣り合いが、動き方を決めます。</p>
+    <div class="figure">
+      <canvas id="wellcanvas" aria-hidden="true"></canvas>
+      <p class="cap gothic">くぼみのボール。引き戻す力と、つつく揺れの釣り合い。くぼみが浅くなるほど、底へ戻るのに時間がかかり、ばらつきが広がる。</p>
+    </div>
+    <p>この動きに、あとから名前がつきます。気分を「快−不快」と「活性−不活性」の平面上の一点として捉えると、その点は自分の"定位置"（ホームベース）へ引き戻されながら揺れ動く。使われるのは、物理でブラウン運動を書くのと<strong>同じ確率微分方程式</strong>（オルンシュタイン–ウーレンベック過程）です（DynAffect、Kuppens ら）。ここで "流れ" は飾りの言葉ではなく、状態空間を点が流れていく軌道そのもの——数式の本体です。</p>
+    <p>さらに踏み込んだ報告があります。うつへ近づくとき、この「くぼみ」がだんだん浅くなり、一度つつかれると底へ戻るのに時間がかかる。物理で相転移の直前に現れる「臨界減速」とそっくりのサインが、心の状態の切り替わりの前に現れる、というものです（van de Leemput ら 2014）。実証の強さには注意が要ります。これは「確かめられた事実」ではなく「最初の実証的支持」の段階で、方法をめぐる批判と応答が公刊されています。ただ、一次資料まで当たると押し返しているのはむしろ著者の側で、譲ったのは「状態が切り替わる"最中"の一人の時系列は、まだ直接は測れていない」という一点だけでした。有望で、初期的な支持がある——それが正確な現在地です。</p>
+
+    <div class="verdict">
+      <span class="lab gothic">分水嶺</span>
+      感情については、<strong>"流れ"（力学系の軌道）は字義どおり生き残り、"エネルギー"（熱力学的な量）は代謝という一点を除いてならない。</strong>100年前に否定されたのは後者であって、"流れ" の方ではありませんでした。
+    </div>
+
+    <p>捨てたのは「溜まって減る保存量」という素朴な像だけで、"エネルギー" 由来の語彙は、より精密な形に置き換わって生き延びています。二つだけ、直前の話に戻して見せます。「覚醒（arousal）」は今も心拍や皮膚反応で測られますが、これは「エネルギーの量」ではなく、系全体の動き方を左右する<strong>弁のような制御装置</strong>（青斑核-ノルアドレナリン系）として定式化されました——さきほどの「くぼみ」の形そのものを絞る弁です。「意志力が減る」も、心理学の主流は「その都度のコスト計算」に置き換えつつあります（機会費用モデル）——疲れは"燃料切れ"ではなく、「この計算資源を今これに使うと、他の使い道を諦める」という代償の"感じ"だ、という説明です。</p>
+    <p>最後に、いちばん警戒すべき罠を一つ。物理の自由エネルギー、脳科学の「自由エネルギー原理」（Friston）、心理学の「心的エネルギー」は、どれも "エネルギー" という語を使いますが、指すものは別です。しかも厄介なことに、Friston の変分自由エネルギーと熱力学の自由エネルギーは<strong>同じ関数の形</strong>を共有しています（Gottwald &amp; Braun 2020）。名前が同じどころか、式の形まで似ているのに、接地している物理が別。「名前が同じだから同じもの」と滑るのは誤り、しかし「ただの偶然」と切り捨てるのも不正確で、正しくは「同じ数学の形・別の物理的な接地」です。</p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <span class="sec-num gothic">02 — 関係</span>
+    <h2>人間関係は「流れに名前をつけたもの」か</h2>
+    <p>川に「淵」や「瀬」という名前がつくとき、名前は流れの形につけられています。pjdhiro の読みは、人間関係も同じ順序ではないか、というものです——「友情」「信頼」「確執」という「もの」が先にあるのではなく、流れやすい経路や干渉でできた形が先にあって、人はそれに名前をつけているだけではないか。</p>
+    <p>この読みは、強さで二つに分けると、調査結果がきれいに割れます。まず弱いほうから。</p>
+    <p><strong>「関わりの強さや種類で、状態の伝わりやすさが変わる」には、実証があります。</strong>人と人が関わると、動作・心拍・脳活動がそろっていく（対人同期）。感情が人から人へ波及することも、表情や姿勢を自動的にまねる機序として定式化されています（情動伝染）。関係の強弱が伝わりやすさを左右することも実証済みで、直観に反して、リスクのある行動はむしろ<strong>強い紐帯</strong>を通らないと伝わりにくい（複雑伝染）。ひとつ留保を。「対人同期が高いほど助け合いが増える」は二つのメタ分析が効果の大きさで一致していますが、実験者に条件を伏せた研究に絞ると効果はゼロと見分けがつかなくなる、という指摘があり（Rennung &amp; Göritz 2016）、因果としてはまだ確立していません。</p>
+    <p>pjdhiro の芯——<strong>名前は後付けで、その下に測れる何かが先にある</strong>——に、もう一歩近づく一次研究があります。心理療法の場で、患者とセラピストの発汗反応を同時に測ると、二人がそろう度合いが、患者があとで評定した「共感」と相関しました（Marci 2007、r=0.47）。「共感」という主観的な名前の下に、二人の神経活動の同調が実際に測れる。しかもこの同調には<strong>向き（符号）</strong>があって、同じ向きにそろう「正の一致」が多いほど症状は改善し、逆向きが優勢だと悪化を予測しました（Gernert 2023）。二人でボートを漕ぐとき、息が合えば進み、逆に漕げば止まる——その差が生理データに出た、という具合です。おもしろいのは、患者本人の主観的な「うまくいき具合」より、<strong>測れる同調のほうが予後をよく当てた</strong>こと。名前より、名前の下の同調のほうが情報を持っていた、という本題そのものの一例です（ただし14組の小さな概念実証で、相関であって因果ではありません）。</p>
+    <p>ここで別分野の呼応が一つ。精神分析には、相手の気持ちが自分にも湧く「一致的」な共鳴と、相手が押しつけた役をつい生きる「相補的」な巻き込まれ、という古典的な二分があります（Racker 1957）。生理データの正負符号と響き合って見えます——が、慎重に。両者は別の軸です。Gernert の符号は「予後が良いか悪いか」を測り、Racker の型は「分析家がどの心に同一化するか」を指す。相補的な巻き込まれは「悪化」でも「確執」でもなく、むしろ正常な、診断の手がかりにすらなる反応です。言えるのは、無関係な二分野が関係を「二値の形」で別々に捉えた、という響き合いまで。「同じ分類だ」と言うと踏み外します。</p>
+
+    <p>さて、強いほうの読みです。<strong>「関係とは流れが先で、名前は後付け」</strong>——ここは、「見分けがつかない」という答えにぶつかります。ただしこれは、壁でもあり、窓でもあります。</p>
+    <p>土台になった発見はこうです。「幸せは友人ネットワークを伝播する」といった主張に対し、統計学者が形式的に証明しました——観察データからは、「感情が伝わった（伝染）」と「もともと似た者同士が集まっただけ（選択）」を、<strong>原理的に見分けられない</strong>（Shalizi &amp; Thomas 2011）。「流れているように見えるもの」が本当に流れなのか、似た人が寄り集まっただけなのか、データだけでは決められない。SNS で約69万人規模の感情を操作した大実験でも、伝染は統計的には検出されましたが、効果は0.1%にも届きませんでした（Kramer ら 2014）。滑らかな流れというより、ノイズに埋もれた微小な効果です。</p>
+    <p>ここで「見分けがつかない」を行き止まりの壁と見て閉じると、この節でいちばん深いものを取り逃します。<strong>まったく無関係な三つの分野が、同じ形の壁に別々に突き当たっている</strong>からです。精神分析家は昔から「自分に湧いたこの感情は、もともと自分のものか、患者が引き起こしたものか」を実務で切り分けられずに困ってきました（Winnicott は逆転移を分類しかけて「あるいはそれが難しければ」と言い淀みます）。統計学者は、それを定理として証明しました。神経科学者は、二人の脳の同期について同じ問題を指摘します（Novembre &amp; Iannetti 2021）。三者は同じ「共通の原因か、伝わった影響か」という交絡に、違う強さで触れている——数学的に閉じた壁（統計）、実務で越えにくい壁（臨床）、介入すれば解ける余地の残る壁（神経）。「見分けがつかない」は、三つの井戸が同じ地下水脈に別々に届いた、と読むほうが正確です。</p>
+    <p>最後に、踏み外しやすい一歩を先に潰します。「源が混ざって見分けられないのだから、流れは実在するのだ」と読みたくなりますが、順序が逆です。源が混ざるのは、流れが実在する証拠ではなく、一回の観察では原因と影響を切り分けられないという統計の性質そのものから来ます。地図が読めないことを「だから道がある」の証拠にはできません。</p>
+    <div class="verdict">
+      <span class="lab gothic">この節の到達点</span>
+      「同期・伝染という流れは実在し、関係の質と一緒に動く」までは実証で弁護できる。しかし「関係という概念そのものが流れに還元され、名前はただの後付けだ」という強い消去までは、実証は支えない。支えないし、否定もしない。<strong>「見分けがつかない」が正確です。</strong>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <span class="sec-num gothic">03 — 社会</span>
+    <h2>社会は波の干渉場か — 渦のような成果、時代のような流れ</h2>
+    <p>問いの三段目です。「社会では波が干渉し合い、渦のような成果や時代のような流れが同時多発的に生まれる」。ここは主張を実証の厚みで三段に分けて追います。段をまたぐときは、はっきり言います。</p>
+    <p><strong>確かなところ。</strong>「似た成果が、離れた場所でほぼ同時に生まれる」——この同時多発そのものは、実在の研究対象です。同時発見（multiple discovery）と呼ばれ、100年以上の蓄積があります。1922年には148件の事例リストが作られ、社会学者マートンは「単独発見のほうがむしろ例外だ」とまで論じました。進化論のダーウィンとウォレスは、1858年に同じ学会で同時発表した堅い実例です。個人の中でも、成果が一時期に集中する「ホットストリーク」が約3万人のキャリアで測定されています（Liu ら 2018）。</p>
+    <p><strong>決着していないところ。</strong>ではなぜ同時多発するのか。よく挙がるのは三つ巴です——①偶然（多数の独立した試みがたまに重なるだけ）②社会・制度の条件（自由な都市に人材が集まる）③「発見」というくくり自体が事後の後付けだ、という懐疑。ただし、説明はこの三つで尽きません。物理や複雑系の側に、別系統の部品が揃っています。可能性空間が広がる動態（Tria ら）、つながりが並行到達を生む集合脳、閾値で一斉に揃う同期（蔵本モデル）、一斉に届く／届かないの臨界（パーコレーション、Watts 2002）。<strong>そのどれもが、別々に実証・数理化されています。</strong>「波の干渉に居場所がない」のではなく、部品はむしろ豊富にある。</p>
+    <p><strong>比喩・系譜のところ。</strong>「時代の精神（ツァイトガイスト）が個々人を通して現れる」という考えには、ヘーゲル以来の長い系譜があります。「社会という媒質を波が伝わって干渉する」という pjdhiro の像は、その隣に置けます。ただしこの語は「社会の対立を覆い隠し、均質さを偽って見せる」という批判も受けていて、それも一緒に引き継ぐ必要があります。そして防波堤を一つ——<strong>アナロジーは同一性ではない</strong>。社会を波の干渉場として見ることが有効でも、社会が物理的な波<strong>である</strong>ことにはなりません。</p>
+
+    <p>ここで、pjdhiro の読みに正直な線を三本引きます。</p>
+    <p>一本目。<strong>欠けているのは部品ではなく、部品を束ねる"合成"一点だけです。</strong>同時発見の大規模計測も、人どうしの同期の直接測定（ハイパースキャンニング）も、集団注意のバースト（Lorenz-Spreen ら 2019）も、すでにそれぞれ測られています。にもかかわらず、「多数の独立した創造的到達が、時代スケールで、たがいの同期・干渉として組み上がる」を丸ごと一つのモデルにした研究は、見つかりませんでした。空白は「何も分かっていない」ではなく、「部品は揃っているが、まだ縫い合わされていない」という形をしています。</p>
+    <p>二本目。<strong>「干渉」という言葉は、ここでは名前が同じだけです。</strong>同時多発を字義どおり架け直すと、その正体は「みんなが共有する広がりつづける可能性空間へ、それぞれ独立に並行して到達し、ある閾値で一斉に届く」こと。水面の波が重なり合う干渉ではありません。</p>
+    <p>三本目。<strong>「機が熟せば必ず誰かが到達する」という決定論は、実証に押し返されています——ただし反対の極（ただの偶然）も、最近ゆらぎ始めました。</strong>古くは、統計的に検証すると「偶然＝独立事象」モデルのほうがよく当てはまり、「時代が必ず決める」説は劣勢でした（Simonton 1978）。ところが2025年、4000万本の論文を解析した研究が、その「偶然」モデルの綻びを見つけます——重なりの分布が、独立な偶然の予測からずれて、裾の長い形になっていた（Li ら 2025）。「必ず」は依然として強すぎる。しかし「まったくの偶然」でも説明しきれない。<strong>独立とも決定論とも言い切れない</strong>、というのが更新された現在地です。</p>
+    <div class="openq gothic">
+      <span class="lab">まだ閉じていない問い</span>
+      <p>この"ずれ"の正体は、共通の原因が偏っているのか、人どうしの影響なのか。じつは <strong>02 の「関係」で突き当たった壁と、同じ形の交絡</strong>です。時代スケールでそれを見分ける手立ては、まだ誰も持っていません。</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <span class="sec-num gothic">04 — 震源</span>
+    <h2>煩悩と、死に向かって途絶えるまで — 流れが維持する形</h2>
+    <p>ここでいったん、いちばん外側で置いた見方——流れが続くあいだだけ形が保たれる——へ戻ります。この読み物全体の震源だからです。</p>
+    <p>先に、名前より先に、現象を。川の渦。ろうそくの炎。台所の味噌汁に立つ対流のもよう。どれも、エネルギーや物質が通り抜け続けるあいだ<strong>だけ</strong>、秩序ある形が自発的に立ち上がり、流れが止まれば、ほどけて消えます。</p>
+    <p>この現象に、あとから名前がつきました。プリゴジンという物理学者が「散逸構造」と名づけ、ノーベル賞（1977年）の対象になった理論です。「流れが維持する形」という直観は、この理論と構造が似ている——どころか、そのまま一致します。ここは比喩ではなく、物理の理論の字義そのものでした。</p>
+    <p>さらに一歩、<strong>生き物にも</strong>この見方を当てる査読論文があります（Kondepudi ら 2020）。「生物は疑いなく散逸構造である。その存在は、エネルギーと物質の絶え間ない流れに支えられているから」。恒常性（体温や血糖を保つこと）は、物理では「非平衡定常状態」——流れがあるからこそ保たれる、動きながらの一定——として厳密に定式化されています。この見方でいくと、「生きている＝代謝の流れで形を保っている／死＝その流れが不可逆に途絶え、形が平衡へ崩れていく」が、渦や炎とまったく同じ論理で書ける。pjdhiro の「死に向かって途絶えるまで」は、ここでは物理の言葉にきれいに乗ります。</p>
+
+    <h3>煩悩を「流れ」で語る言葉は、確かにあった。ただし向きは逆だった</h3>
+    <p>仏教は、欲望や煩悩を実際に流れの言葉で語ってきました。「漏（ろ）」——有漏・無漏の「漏」——は、パーリ語 āsava の訳で、語源は「流れる（√sru）」。しかも漢訳仏教では、「漏」は煩悩そのものの別名です。「渇愛」は文字どおり「渇き」、「暴流」は「洪水」。欲望を水の言葉で語る語彙は、単発の比喩ではなく体系立ってそろっていました。pjdhiro の「煩悩と呼ばれるエネルギー」と、語彙のレベルで重なります。</p>
+    <p>ただし、この重なりには逆向きが埋まっています。仏教で心の流れは、死で途絶えるどころか<strong>次の生へ続く</strong>（輪廻）とされ、むしろ目標はその流れを人為的に<strong>断ち切る</strong>こと（解脱）です。価値づけも逆で、pjdhiro が煩悩を成果や関係を生む力として（善悪抜きに）見るのに対し、仏教では煩悩の流れは「消すべき穢れ」。流れの終わり方も、良し悪しも、正反対でした。この「逆」は、直観の弱点というより、<strong>pjdhiro の見方が仏教の借り物ではなく独立している</strong>ことの印として残しておきます。</p>
+
+    <h3>震源だからこそ、飛躍に釘を打つ</h3>
+    <p>「流れが維持する形」という直観は、どこまで橋が架かり、どこから思弁になるのか。一致か禁止かの二択ではなく、地図として置きます。</p>
+    <p><strong>渦・炎</strong>では、字義どおり直接一致します（物理現象そのもの）。<strong>生命の代謝レベル</strong>でも査読論文が支持します——ただし著者自身が「自己複製という生命の核心は、まだこの枠組みで再現できていない」と限界を認めています。その上の<strong>「予測して自分を保つ仕組み」</strong>までは、係争中ながら橋を架ける研究が実在します（環境の情報を無駄なく使う系は、その記憶を"予測"に使っていなければならない、という定理。Still ら 2012）。硬い土台です。しかし「だから存在するものはみな推論している」まで進むと、提唱者 Friston 自身の言葉が「〜しているように見える」へ後退します。そしていちばん上、<strong>主観的な経験や魂まで散逸で説明できる</strong>へ進むと、それは実証を超えた飛躍です。散逸構造が語れるのは物理的な形の維持までで、「なぜそれが内側から感じられるのか」とは同一視できません。</p>
+    <p>念のため、いちばん誤解されやすい一歩を潰しておきます。<strong>「渦・炎が散逸構造だと確かめられている」ことは、「だから感情や社会もエネルギーの流れだと裏づけられた」を意味しません。</strong>直接一致するのは渦・炎という物理現象だけ。震源が固いことと、そこから伸ばした枝が固いことは、別の話です。</p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <span class="sec-num gothic">横串</span>
+    <h2>同じ数式が、心にも関係にも社会にも現れる</h2>
+    <p>ここまでの各章を横に眺めると、あることに気づきます。<strong>同じ少数の数学の型が、スケールを越えて何度も現れる</strong>のです。感情がくぼみの底へ戻る動きと、物理の粒子がゆらぎながら落ち着く動きは、同じ確率微分方程式で書けます。二人の体が引き込まれてそろう同期と、社会規模で一斉に何かが揃う相転移の候補と、ホタルの一斉明滅は、同じ結合振動子（蔵本モデル）の仲間です。</p>
+    <div class="figure">
+      <canvas id="synccanvas" aria-hidden="true"></canvas>
+      <p class="cap gothic">結合した振り子。バラバラに回る点を、結合の強さで引き込み合わせると、ある閾値を超えたところで位相が一斉に揃う（ホタルの一斉明滅と同じ仲間）。</p>
+    </div>
+    <p>これは、「もの＝流れが保つパターン」という背骨の、数学の側からの裏づけに見えます。パターンが過程で保たれるなら、その過程を書く数式が、中身を問わず何度も顔を出すのは自然だからです。</p>
+    <p><em class="turn">ただし、ここにこの読み物でいちばん深い落とし穴があります。</em></p>
+    <p>同じ数式が現れることは、同じ物理が流れていることではありません。同じ方程式の同じ記号が、感情では統計的な平均回帰を、ブラウン運動では熱のゆらぎを、株価では裁定を指します——<strong>中身はまるで別</strong>です。むしろ「同じ形が現れる」のは、中身が洗い流されて形だけが残るからで、そのこと自体は中身について何も教えません。面白いことに、この歯止めは当の研究者たち自身が明言しています。臨界減速を提唱した人たちは、その早期警告のサインを「仕組みに依存しない（generic な）指標だ」と述べる——気候だろうと生態系だろうと気分だろうと、中身を問わず現れる型だ、と。これは諸刃です。仕組みを問わないからこそ物理から心へ転用できる。しかし仕組みを問わないからこそ、その指標が出たところで、どんな仕組みが動いているかは確定できない。</p>
+    <p>01 で警戒した「名前の罠」の、もっと手ごわい版がこれです。名前の罠は「言葉がたまたま同じ」でしたが、こちらは<strong>式の形が本当に同じ</strong>——だから「深い接続が実在する」ぶん、「すべては一つの流れだ」へ滑る誘惑がずっと強い。深い接続に驚くのは正しい。けれど、その驚きを「だから中身も同じだ」に横流ししない——それが、横串を引くときの唯一の歯止めです。</p>
+  </section>
+
+  <hr class="divider">
+
+  <section>
+    <span class="sec-num gothic">結び</span>
+    <h2>で、感情や関係は「流れ」に見えるか</h2>
+    <p>最初の実感に戻ります。怒りはこみ上げ、意欲は満ちたり枯れたりする。人には流れる相手とせき止められる相手がいる。時代にも流れがあるように見える。——これは「エネルギーの流れ」なのか。ここまで調べて、どこまで答えられたか、正直に置きます。</p>
+    <p>感情については、<strong>"流れ"（力学系の軌道）は字義どおり生き残りました</strong>。ただし "エネルギー" が本物の物理量に触れるのは、代謝という一点だけ。渦・炎・生命の代謝までは、散逸構造として<strong>直接一致</strong>します。関係については、測れる同調は実在するが、「名前は後付けにすぎない」という強い読みは<strong>見分けがつかないまま開いている</strong>。社会については、部品はすべて揃っているのに、それを束ねる合成だけが、まだ誰も書いていない空白として残っています。そして煩悩の語彙は確かにあったけれど、流れの向きは仏教とは逆でした。</p>
+    <p>一つだけ、うっかり超えてはいけない線があります。同じ数式が心にも物理にも現れることは、同じ物理が流れている証拠ではない。深い形の一致に驚くのは正しくても、その驚きを「だから中身も同じだ」へ横流しした瞬間に、この読み物のすべての仕分けが崩れます。</p>
+    <div class="openq gothic">
+      <span class="lab">最後に、開いたままにしておく問い</span>
+      <p>ここまでは、実証と突き合わせた"外からの"仕分けでした。では、<strong>あなた自身の実感</strong>では——感情や関係は「流れ」に見えますか。それとも、別の像ですか。その問いは、まだ閉じていません。保留の欄を動かすのは、次の一次資料であり、あなたの指摘でもあります。</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="colophon gothic">
+  <h4>この読み物について</h4>
+  <p>文責は Claude（Anthropic の AI、Fable 5）。pjdhiro 本人の言葉は「pjdhiro の問い」の形で引用して区別しています。大前提は「あくまで構造類似」——心のエネルギーが物理のエネルギー<em>である</em>という字義の同一は主張しません。強い断定には必ず適用範囲を添え、要約の途中で留保を落とさないことをルールにしています。</p>
+  <p>元となった調査：pd#129（散逸構造的世界観からの独立探究）、第一次調査 R1–R5＋各テーマの一次資料への深掘り。姉妹調査 TH-001（creation-space・波/渦の存在論）を引用。うまくいかなかった部分・食い違った部分も、消さずに残しています。</p>
+  <p>この版は、作文術スキル「cognitive-rhythm-writing」を元の READER に適用して語り直した比較用の草稿です。中身（調査結論）は元版と同じで、変えたのは配列と語り口だけ——実感から入り、要約の先出しをやめ、断定と留保を往復させ、道案内の実況を削り、結びを冒頭の実感へ戻しています。</p>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function ink(){
+    var s = getComputedStyle(document.documentElement);
+    return {
+      accent: s.getPropertyValue('--accent').trim() || '#1C6E68',
+      faint:  s.getPropertyValue('--faint').trim()  || '#8A918C'
+    };
+  }
+  function fit(cv){
+    var dpr = Math.min(window.devicePixelRatio||1, 2);
+    var r = cv.getBoundingClientRect();
+    cv.width = Math.max(1, r.width*dpr);
+    cv.height= Math.max(1, r.height*dpr);
+    var ctx = cv.getContext('2d');
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    return {ctx:ctx, w:r.width, h:r.height};
+  }
+
+  // ---- masthead flow field ----
+  var flow = document.getElementById('flowfield');
+  if(flow && !reduce){
+    var F = fit(flow), parts=[], N=46;
+    for(var i=0;i<N;i++){parts.push({x:Math.random()*F.w,y:Math.random()*F.h,s:0.3+Math.random()*0.7});}
+    var t=0;
+    function drawFlow(){
+      var c=ink();
+      F.ctx.clearRect(0,0,F.w,F.h);
+      F.ctx.lineWidth=1;
+      for(var i=0;i<parts.length;i++){
+        var p=parts[i];
+        var a=Math.sin((p.y*0.012)+(t*0.008))+Math.cos((p.x*0.010)-(t*0.006));
+        p.x+=Math.cos(a)*p.s*0.9; p.y+=Math.sin(a)*p.s*0.5+0.05;
+        if(p.x<-10)p.x=F.w+10; if(p.x>F.w+10)p.x=-10;
+        if(p.y>F.h+10){p.y=-10;p.x=Math.random()*F.w;}
+        F.ctx.globalAlpha=0.16+0.14*p.s;
+        F.ctx.strokeStyle=c.accent;
+        F.ctx.beginPath();
+        F.ctx.moveTo(p.x,p.y);
+        F.ctx.lineTo(p.x-Math.cos(a)*6,p.y-Math.sin(a)*6);
+        F.ctx.stroke();
+      }
+      t++;
+      flowRAF=requestAnimationFrame(drawFlow);
+    }
+    var flowRAF=requestAnimationFrame(drawFlow);
+  }
+
+  // ---- well (OU) ----
+  var well=document.getElementById('wellcanvas');
+  if(well){
+    var W=fit(well), bx=W.w/2, vx=0, wt=0;
+    function drawWell(){
+      var c=ink();
+      W.ctx.clearRect(0,0,W.w,W.h);
+      // bowl
+      W.ctx.strokeStyle=c.faint; W.ctx.globalAlpha=0.5; W.ctx.lineWidth=1.5;
+      W.ctx.beginPath();
+      for(var x=0;x<=W.w;x+=4){
+        var nx=(x-W.w/2)/(W.w/2);
+        var y=W.h*0.28 + (W.h*0.5)*(nx*nx);
+        if(x===0)W.ctx.moveTo(x,y); else W.ctx.lineTo(x,y);
+      }
+      W.ctx.stroke();
+      // ball physics: pulled toward center + noise
+      if(!reduce){
+        var target=W.w/2;
+        var accel=(target-bx)*0.004;
+        vx += accel + (Math.random()-0.5)*0.9;
+        vx *= 0.94;
+        bx += vx;
+      }
+      var nbx=(bx-W.w/2)/(W.w/2);
+      var by=W.h*0.28 + (W.h*0.5)*(nbx*nbx) - 9;
+      W.ctx.globalAlpha=1; W.ctx.fillStyle=c.accent;
+      W.ctx.beginPath(); W.ctx.arc(bx,by,7,0,Math.PI*2); W.ctx.fill();
+      wt++;
+      if(!reduce) wellRAF=requestAnimationFrame(drawWell);
+    }
+    var wellRAF=requestAnimationFrame(drawWell);
+    if(reduce) drawWell();
+  }
+
+  // ---- sync (Kuramoto-ish) ----
+  var sync=document.getElementById('synccanvas');
+  if(sync){
+    var S=fit(sync), M=13, ph=[], om=[];
+    for(var k=0;k<M;k++){ph.push(Math.random()*Math.PI*2); om.push(0.02+Math.random()*0.05);}
+    var st=0;
+    function drawSync(){
+      var c=ink();
+      S.ctx.clearRect(0,0,S.w,S.h);
+      var K = 0.5 + 0.5*Math.sin(st*0.004); // coupling oscillates to show threshold
+      // mean phase
+      var sx=0, sy=0;
+      for(var i=0;i<M;i++){sx+=Math.cos(ph[i]); sy+=Math.sin(ph[i]);}
+      var mean=Math.atan2(sy,sx);
+      var r=Math.sqrt(sx*sx+sy*sy)/M;
+      if(!reduce){
+        for(var i=0;i<M;i++){
+          ph[i]+= om[i] + K*r*Math.sin(mean-ph[i])*0.15;
+        }
+      }
+      var cx=S.w/2, cy=S.h/2, rad=Math.min(S.w,S.h)*0.33;
+      W_ring: for(var i=0;i<M;i++){
+        var ang = (i/M)*Math.PI*2;
+        var px = cx + Math.cos(ang)*rad;
+        var py = cy + Math.sin(ang)*rad;
+        var lum = 0.35 + 0.65*(0.5+0.5*Math.sin(ph[i]));
+        S.ctx.globalAlpha=lum;
+        S.ctx.fillStyle=c.accent;
+        S.ctx.beginPath(); S.ctx.arc(px,py,5.5,0,Math.PI*2); S.ctx.fill();
+      }
+      // order label
+      S.ctx.globalAlpha=0.8; S.ctx.fillStyle=c.faint;
+      S.ctx.font='11px system-ui,sans-serif';
+      S.ctx.fillText('r = '+r.toFixed(2), 10, S.h-10);
+      st++;
+      if(!reduce) syncRAF=requestAnimationFrame(drawSync);
+    }
+    var syncRAF=requestAnimationFrame(drawSync);
+    if(reduce) drawSync();
+  }
+
+  window.addEventListener('resize', function(){
+    if(well){var w2=fit(well);}
+    if(sync){var s2=fit(sync);}
+    if(flow){var f2=fit(flow);}
+  });
+})();
+</script>
+</body>
+</html>

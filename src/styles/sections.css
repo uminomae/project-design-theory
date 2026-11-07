@@ -1,0 +1,134 @@
+/* === Hero === */
+.page-hero,
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem 0;
+}
+
+.hero-label {
+    font-family: var(--serif-en);
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    color: var(--coral);
+    margin-bottom: 1.5rem;
+}
+
+.hero-label--ai {
+    margin-bottom: 2.5rem;
+    color: var(--mid);
+    text-shadow: none;
+}
+
+.page-hero h1,
+.hero h1 {
+    font-size: clamp(3.5rem, 10vw, 6rem);
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    color: var(--ink);
+    margin-bottom: 3rem;
+}
+
+/* === Content Sections === */
+.content-section {
+    min-height: 100vh;
+    padding: 8rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-label {
+    font-family: var(--serif-en);
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--mute);
+    margin-bottom: 0.75rem;
+}
+
+.section-prose {
+    max-width: 680px;
+}
+
+.hero-notice,
+.overview-text,
+.being-desc {
+    margin-bottom: 2rem;
+}
+
+.overview-text {
+    margin-bottom: 3rem;
+}
+
+.hero-notice a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+/* === Grid === */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.repo-grid {
+    margin-top: 3rem;
+}
+
+/* === Footer === */
+.site-footer {
+    padding: 5rem 0 3rem;
+    text-align: center;
+}
+
+.site-footer__license {
+    margin: 1.2rem 0 0;
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    color: var(--mute);
+}
+
+.site-footer a {
+    font-family: var(--serif-en);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--mute);
+    text-decoration: none;
+    margin: 0 1.25rem;
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+    color: var(--ink);
+}
+
+.site-footer__license {
+    font-family: var(--serif-en);
+    font-size: 0.75rem; /* 12px @16px base — WCAG 2.2 AA 最小可読サイズ (pd#120) */
+    font-weight: 400;
+    color: var(--mute);
+    letter-spacing: 0.05em;
+    margin-top: 1.5rem;
+}
+
+/* === No Script Fallback === */
+.noscript-fallback {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 8rem 2rem;
+}
+
+.noscript-fallback h2,
+.noscript-fallback h3,
+.noscript-fallback p {
+    max-width: 680px;
+}

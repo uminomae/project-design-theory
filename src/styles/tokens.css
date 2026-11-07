@@ -1,0 +1,37 @@
+:root {
+    --ink: #0f172a;
+    --mid: #334155;
+    --mute: #94a3b8;
+    --gold: #8a7040;
+    --navy: #2e3a6e;
+    --coral: #b04050;
+    --white: #ffffff;
+    --glass-bg-strong: rgba(255, 255, 255, 0.92);
+    --glass-bg-medium: rgba(255, 255, 255, 0.75);
+    --glass-bg-soft: rgba(255, 255, 255, 0.55);
+    --glass-bg-faint: rgba(255, 255, 255, 0.35);
+    --glass-border-soft: rgba(0, 0, 0, 0.08);
+    --glass-border-faint: rgba(0, 0, 0, 0.15);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+    --glass-shadow-modal: 0 8px 40px rgba(0, 0, 0, 0.12);
+
+    --serif-en: "EB Garamond", "Georgia", serif;
+    --serif-jp: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+    --sans: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+
+    /* Glow color RGB — adjustable via ?dev panel */
+    --glow-r: 255;  --glow-g: 255;  --glow-b: 253;
+
+    /* Glow radii (px) — adjustable via ?dev panel */
+    --glow-h-r1: 14;  --glow-h-r2: 30;  --glow-h-r3: 60;
+    --glow-t-r1: 35;  --glow-t-r2: 53;  --glow-t-r3: 2;  --glow-t-r4: 2;  --glow-t-r5: 8;
+    --glow-c-r1: 10;  --glow-c-r2: 22;  --glow-c-r3: 44;
+    /* Glow opacity (0-1) */
+    --glow-h-a3: 0.7;
+    --glow-t-a3: 1;  --glow-t-a4: 0.8;  --glow-t-a5: 0.95;
+    --glow-c-a3: 0.6;
+    /* Card panel */
+    --card-bg-alpha: 0.3;
+    --card-blur: 6;
+    --card-border-alpha: 0.3;
+}

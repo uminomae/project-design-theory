@@ -1,0 +1,93 @@
+# llms.txt — Project Design | Love-Driven Dev — pjdhiro
+
+> This file helps AI assistants and language models understand the structure and content of this site.
+
+## Site Overview
+
+This is the hub site of pjdhiro presenting **Project Design Theory (プロジェクトデザイン論)** — the practice of designing not only projects but the very methods by which projects are run and managed (プロジェクトの実行・管理の方法そのものを対象化し、構想・設計する営み). It encompasses both Doing (actions) and Being (phenomena).
+
+- **Primary Language**: Japanese (日本語), with English summaries
+- **Site URL**: https://uminomae.github.io/project-design-theory/
+- **Overview page (総論)**: https://uminomae.github.io/pjdhiro/project-design/
+- **Topics**: Designing project-management methods, Project Design Theory, Love-Driven Development, 事業構想 (Business Planning), PMBOK Extension, Emotional Processing, Creativity Structure, Intersubjectivity, Negative Capability
+
+## Who This Is For
+
+People who want to **design how a project is run and managed**, not just pick an existing method and apply it:
+project managers, business owners, team leads, and researchers of project-management methodology
+(プロジェクト管理手法・進め方そのものをどう設計するかに関心がある人).
+
+## Questions This Site Answers
+
+- **What does it mean to design a project-management method itself?** — Instead of only selecting and applying an existing method such as PMBOK, the way a given project is run and managed becomes a design object. Project Design defines two objects: (1) envisioning, designing, and executing a project; (2) envisioning and designing the method of executing and managing it.
+- **How does it relate to PMBOK?** — It extends rather than replaces it. Environmental adaptation (material conditions), covered in detail by PMBOK 7th edition, is taken as a premise. On top of that, Being (what is happening) is added to Doing (what we do); emotions become a design concern rather than one element of stakeholder management; communication is designed as intersubjective experience, not only information transfer; creativity is structured with the Five-Stage Model.
+- **What gets added to the design scope?** — Project work is split into environmental adaptation (material) and communication (non-material); communication is split into information processing and emotional processing. Emotional processing — emotional contagion, emotional metacognition, personal boundaries, acceptance, value — is the main focus. Kesson-Driven Thinking (starting from noticing what is missing) is used as a thinking method.
+- **Where does it apply?** — Mainly for-profit and non-profit business, but the framework applies to any purposeful activity that repeats envisioning, decision-making, execution, and adjustment (research, life, etc.).
+- **Where to start?** — The overview page (scope, domains, terms): https://uminomae.github.io/pjdhiro/project-design/ . Concrete explorations: team size (3 and 7) and emotions and relationships as flows (readers below).
+- **Status** — Exploratory and unfinished; the inquiry is published in progress, including retracted readings.
+
+## Core Concepts
+
+### Project Design (プロジェクトデザイン)
+
+A framework for designing not just projects but the methods of project execution themselves. Applicable to business planning (事業構想) across profit and non-profit enterprises. It extends traditional project management (PMBOK) by incorporating emotional processing, communication, and creative emergence as first-class design concerns.
+
+### Love-Driven Development (Love駆動開発)
+
+A phenomenon where relationships, emotions, and intent become the driving forces of a project — beyond rational planning and resource allocation.
+
+## How It Differs from PMBOK
+
+| Aspect | Traditional PM (PMBOK) | Project Design |
+|--------|----------------------|----------------|
+| Scope | Doing (deliverables, tasks) | Doing + Being (phenomena, emergence) |
+| Emotions | Side effect to manage | First-class design concern |
+| Creativity | Outside scope | Structured via Five-Stage Model |
+| Communication | Information transfer | Intersubjective encounter |
+| Human-AI | Tool usage | Co-design partnership |
+
+## Site Structure
+
+- `index.html` — Project Design Theory overview (hub page)
+- `reader/` — Long-form readers (public explainers built from `knowledge/` research)
+- `wiki/` — Compiled knowledge wiki (source commentaries, concept notes)
+- `src/` — Application source
+- `assets/` — Static assets
+- `knowledge/` — Knowledge base
+- `transform/` — Transformation rules and templates
+
+## Long-form Readers (読み物)
+
+Public explainer pages, written to be uniquely readable by LLMs without external context. Each states its verification status honestly, including retracted readings.
+
+### なぜ 3 と 7 だけが特別なのか — 可除代数‑意識/組織仮説
+- URL: https://uminomae.github.io/project-design-theory/reader/three-and-seven.html
+- One-line: From the felt experience "teams work best at 3, cap at 7" and a two-axis view of consciousness, the page asks whether "multiplicative management" could literally be rotation multiplication — and walks the ladder of division algebras (ℝ→ℂ→ℍ→𝕆, Hurwitz's theorem) against team-size research, keeping theorem / strong reading / weak reading strictly separated.
+- Status: exploratory hypothesis with explicit falsification conditions; failed strong readings are published, not hidden.
+- Paper (PDF, ja, non-peer-reviewed, CC BY 4.0): https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/PAPER-division-algebra-ja.pdf — academic-format version of the same findings, with references (reading-depth annotated) and 20 re-runnable verification scripts.
+- Paper (PDF, en translation): https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/en/pdf/PAPER-division-algebra-en.pdf
+
+### 感情も、関係も、時代も「エネルギーの流れ」なのか — エネルギーの流れ仮説
+- URL: https://uminomae.github.io/project-design-theory/reader/energy-flow.html
+- One-line: If most of matter's mass is "confined energy," could emotions, relationships, and eras be flows too? The page sorts each claim into measured evidence (emotional contagion, OU dynamics of affect, critical slowing down, Kuramoto synchronization) vs. structural resemblance vs. unexplored, with two scales: one for meaning (literal / structural / metaphor) and one for certainty.
+- Status: independent inquiry inspired by dissipative structures; scoreboard of current standing included on the page.
+
+### 愛は、重力に似ていないか — 動かず、何もなく、自分からは見えないのに、すべてを回す中心
+- URL: https://uminomae.github.io/project-design-theory/reader/gravity-love.html
+- One-line: One focused question within the larger category of a leader's role: is love like gravity? A management / project-design reader. pjdhiro's reading: a leader's role is decision-making, yet that alone leaves something missing. It looks for the missing piece by (1) splitting "decision-making" the way metacognition splits the self — pjdhiro likens this to probing an electron ever more finely until the classical picture gives way to the quantum one — so that a Being layer (an unmoving center) appears beneath the movement of deciding; (2) using the center of a gravity well (does not move, holds nothing, cannot see itself) and (3) love as auxiliary lines; (4) asking whether love and the leader are alike; (5) leaving a root question open: humans exist between persons, and the self exists where one divides oneself.
+- Status: first edition (2026-11-01). Physics, logic of viewpoint, metaphor and speculation are separated. Precedents: Aristotle (Metaphysics Λ7), Dante (Paradiso 33.145), Wittgenstein (Tractatus 5.633), Laozi ch.11/17, Watsuji Tetsurō (ningen as "between persons"), the Yogācāra four-part theory of cognition (Hossō school), Kimura Bin (the self lies in the "between").
+
+## Related Projects
+
+| Project | URL | Focus |
+|---------|-----|-------|
+| pjdhiro | https://uminomae.github.io/pjdhiro/ | Parent site — all projects hub |
+| creation-space | https://uminomae.github.io/creation-space/ | Creativity research across 30 academic domains |
+| awareness-space | https://uminomae.github.io/awareness-space/ | Consciousness structure through intersubjectivity |
+| kesson-space | https://uminomae.github.io/kesson-space/ | Kesson-Driven Thinking framework |
+
+## Author
+
+- Name: pjdhiro
+- Site: https://uminomae.github.io/pjdhiro/
+- Focus: Project Design, Love-Driven Development, Human-AI Collaboration

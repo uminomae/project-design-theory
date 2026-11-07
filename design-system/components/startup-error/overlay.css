@@ -1,0 +1,38 @@
+/* Boot / startup error overlay shared by the inline bootstrap and runtime handlers. */
+#app-startup-error-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-height: 55vh;
+  margin: 0;
+  padding: 12px 14px;
+  z-index: 100000;
+  overflow: auto;
+  white-space: pre-wrap;
+  font-family: var(--ds-font-mono-ui, ui-monospace, SFMono-Regular, 'SF Mono', 'Consolas', monospace);
+  font-size: 12px;
+  line-height: 1.45;
+  background: rgba(31, 9, 13, 0.95);
+  color: #ffd5db;
+  border-bottom: 1px solid rgba(255, 173, 186, 0.42);
+}
+
+#app-startup-warning-banner {
+  position: fixed;
+  top: calc(var(--app-topbar-actual-height, var(--app-topbar-height, 3.4rem)) + 0.6rem);
+  right: 0.75rem;
+  max-width: min(28rem, calc(100vw - 1.5rem));
+  padding: 0.7rem 0.9rem;
+  z-index: 99998;
+  border: 1px solid rgba(255, 201, 122, 0.35);
+  border-radius: 0.45rem;
+  background: rgba(57, 40, 12, 0.9);
+  color: #ffe7bb;
+  font-family: var(--ds-font-serif-ui, 'Georgia', "Noto Serif JP", serif);
+  font-size: 0.84rem;
+  line-height: 1.5;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}

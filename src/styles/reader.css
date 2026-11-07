@@ -1,0 +1,958 @@
+/* Reader LP（長文読み物ページ）— DESIGN-RULES §0a 準拠
+ * index.html の VI を継承し、tokens.css の変数と glow 体系の上にのみ載せる。
+ * 新色のハードコード禁止。 */
+
+.reader-hero {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 5rem 2rem 1.5rem;
+    text-align: center;
+}
+
+.reader-hero h1 {
+    font-family: var(--serif-jp);
+    font-size: clamp(2rem, 6vw, 3rem);
+    font-weight: 400;
+    color: var(--ink);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.reader-subtitle {
+    font-family: var(--serif-jp);
+    font-size: 1rem;
+    color: var(--mid);
+    margin-bottom: 1.5rem;
+}
+
+.reader-meta {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    line-height: 2;
+    color: var(--mute);
+}
+
+.reader-meta a,
+.reader-footer a {
+    color: var(--navy);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+}
+
+.reader-article {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 2rem 5rem;
+}
+
+.reader-article h2 {
+    margin: 4.5rem 0 1.5rem;
+}
+
+.reader-article h3 {
+    margin: 3rem 0 1rem;
+}
+
+.reader-article ul,
+.reader-article ol {
+    font-family: var(--serif-jp);
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 2.1;
+    color: var(--mid);
+    margin: 0 0 1.5rem;
+    padding-left: 1.5em;
+}
+
+.reader-article li {
+    margin: 0.4em 0;
+}
+
+.reader-article a {
+    color: var(--navy);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.reader-article code {
+    font-family: "SF Mono", "Consolas", monospace;
+    font-size: 0.88em;
+    background: var(--glass-bg-medium);
+    border-radius: 4px;
+    padding: 0.1em 0.4em;
+}
+
+.reader-article pre {
+    background: var(--glass-bg-strong);
+    border: 1px solid var(--glass-border-soft);
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    overflow-x: auto;
+    margin: 0 0 1.5rem;
+    line-height: 1.7;
+}
+
+.reader-article pre code {
+    background: none;
+    padding: 0;
+}
+
+.reader-article blockquote.reader-callout {
+    border-left: 3px solid var(--gold);
+    padding: 1.1rem 1.4rem;
+    margin: 1.75rem 0;
+}
+
+.reader-article blockquote p {
+    color: var(--mute);
+}
+
+.reader-article hr {
+    border: none;
+    border-top: 1px solid var(--glass-border-faint);
+    margin: 3.5rem 0;
+}
+
+/* 図版・表は glow-card（白ガラスパネル）に載せる */
+.reader-figure {
+    margin: 2.5rem 0;
+    padding: 1.5rem;
+}
+
+.reader-figure svg,
+.reader-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.reader-table {
+    margin: 2rem 0;
+    padding: 1rem 1.5rem;
+    overflow-x: auto;
+}
+
+.reader-table table {
+    border-collapse: collapse;
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    line-height: 1.8;
+    min-width: 100%;
+}
+
+.reader-table th,
+.reader-table td {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--glass-border-soft);
+    text-align: left;
+    vertical-align: top;
+    color: var(--mid);
+    font-weight: 300;
+}
+
+.reader-table th {
+    color: var(--ink);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* 誤解FAQ アコーディオン（DESIGN-RULES §9 パターン）
+ * T11（pd#123）: 畳まれている/開けることが一目でわかる見た目に強化。
+ * 「開けるカード」らしい面（背景・影・ホバー）＋開閉マーカーの回転＋「詳しく」ラベル。 */
+.reader-article details {
+    background: var(--glass-bg-soft);
+    border: 1px solid var(--glass-border-soft);
+    border-radius: 10px;
+    padding: 0 1.25rem;
+    margin: 1.25rem 0;
+    box-shadow: var(--glass-shadow);
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.reader-article details:hover {
+    background: var(--glass-bg-medium);
+    border-color: var(--glass-border-faint);
+}
+
+.reader-article summary {
+    cursor: pointer;
+    list-style: none;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    color: var(--ink);
+    padding: 0.6rem 0;
+}
+
+.reader-article summary::-webkit-details-marker {
+    display: none;
+}
+
+/* 開閉マーカー（▶ が開くと ▼ へ回転）。装飾のみで意味は「詳しく」ラベル側が担う */
+.reader-article summary::before {
+    content: "▶";
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7em;
+    color: var(--gold);
+    transition: transform 0.2s ease;
+}
+
+.reader-article details[open] > summary::before {
+    transform: rotate(90deg);
+}
+
+/* 「詳しく」の常設ラベル。開くと「閉じる」に切り替える */
+.reader-article summary::after {
+    content: "詳しく";
+    flex: none;
+    margin-left: auto;
+    padding-left: 1rem;
+    font-size: 0.78rem;
+    color: var(--mute);
+    white-space: nowrap;
+}
+
+.reader-article details[open] > summary::after {
+    content: "閉じる";
+}
+
+.reader-article details[open] {
+    padding-bottom: 1rem;
+}
+
+/* 寄り道コラム（本筋から独立の補足）: 「詳しく」より一段控えめに見せる。
+ * 本筋の深掘り（詳しく）と補足（コラム）を同列に並べないための降格表現
+ * （2026-07-05 pjdhiro 指示・DESIGN-RULES §1）。 */
+.reader-article details.pd-column {
+    background: transparent;
+    border-style: dashed;
+    box-shadow: none;
+}
+
+.reader-article details.pd-column > summary {
+    font-size: 0.9rem;
+}
+
+.reader-article details.pd-column > summary::before {
+    color: var(--mute);
+}
+
+.reader-article details.pd-column > summary::after {
+    content: "寄り道";
+}
+
+.reader-article details.pd-column[open] > summary::after {
+    content: "閉じる";
+}
+
+/* ⓘ 補足（論と無関係な操作説明・出典など）: 寄り道よりさらに一段控えめにしまう。
+ * 背景・枠・影なし、小さな文字、▶ の代わりに丸囲みの i（2026-11-01 pjdhiro 指示・pd#138・DESIGN-RULES §9a）。 */
+.reader-article details.pd-info {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0.4rem 0 1rem;
+}
+.reader-article details.pd-info:hover { background: transparent; }
+.reader-article details.pd-info > summary {
+    font-size: 0.8rem;
+    color: var(--mute);
+    min-height: 44px;
+    padding: 0;
+}
+.reader-article details.pd-info > summary::before {
+    content: "i";
+    width: 1.3em;
+    height: 1.3em;
+    border: 1px solid var(--mute);
+    border-radius: 50%;
+    font-family: var(--serif-en);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 0.85rem;
+    line-height: 1;
+    color: var(--mute);
+    transition: none;
+}
+.reader-article details.pd-info[open] > summary::before { transform: none; }
+.reader-article details.pd-info > summary::after { content: none; }
+.reader-article details.pd-info[open] { padding-bottom: 0; }
+.reader-article details.pd-info > :not(summary) {
+    font-size: 0.85rem;
+    color: var(--mid);
+}
+
+/* Micro-worlds（触って直感できる対話的環境・pd#128 / CN-011 §2「Micro-worlds」）
+ * DESIGN-RULES §0a 準拠: 独自テーマを新造せず tokens と glow-card の上にのみ載せる。新色なし。
+ * 各ウィジェットは src/reader-microworlds.js が canvas + コントロールをマウントする。 */
+.reader-article .microworld {
+    margin: 2.5rem 0;
+    padding: 1.5rem;
+}
+
+.microworld .mw-title {
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin: 0 0 0.75rem;
+}
+
+.microworld .mw-fallback {
+    font-family: var(--serif-jp);
+    font-size: 0.9rem;
+    color: var(--mute);
+    margin: 0.75rem 0 0;
+}
+
+/* JS でマウントできた場合は no-JS フォールバック文を隠す（SEO/no-JS 用に DOM には残す） */
+.microworld.mw-ready .mw-fallback { display: none; }
+
+.mw-canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    touch-action: pan-y;
+}
+
+.mw-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem 0.9rem;
+    margin: 0.9rem 0 0.3rem;
+}
+
+.mw-btn {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    color: var(--navy);
+    background: var(--glass-bg-soft);
+    border: 1px solid var(--glass-border-soft);
+    border-radius: 8px;
+    padding: 0.5rem 0.9rem;
+    min-height: 44px;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.mw-btn:hover { background: var(--glass-bg-medium); }
+
+.mw-btn.is-on {
+    background: var(--navy);
+    color: #fff;
+    border-color: var(--navy);
+}
+
+.mw-slider {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    color: var(--mid);
+    flex: 1 1 220px;
+}
+
+.mw-slider input[type="range"] {
+    flex: 1;
+    min-width: 120px;
+    accent-color: var(--navy);
+}
+
+.mw-slider-label { white-space: nowrap; }
+
+.mw-status {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--mid);
+    margin: 0.6rem 0 0;
+}
+
+.mw-status code {
+    font-family: "SF Mono", "Consolas", monospace;
+    font-size: 0.85em;
+    background: var(--glass-bg-medium);
+    border-radius: 4px;
+    padding: 0.05em 0.35em;
+}
+
+.mw-status .mw-note { color: var(--mute); }
+
+/* 二枚並置の井戸（pd#138・src/reader-gravity-love.js）。同じ形を左右に並べ、狭い画面では上下に積む */
+.gl-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.gl-pair > *, .gl-stage { min-width: 0; }  /* canvas の px 幅で列が押し広げられないように */
+.gl-canvas { max-width: 100%; touch-action: pan-y; cursor: grab; }  /* 縦スクロールは奪わない＝指では横ドラッグで回す */
+.reader-article .gl-caption {
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    color: var(--mid);
+    margin: 0.4rem 0 0;
+}
+@media (max-width: 600px) {
+    .gl-pair { grid-template-columns: 1fr; }
+}
+
+/* 見出しの上に置く大きなカテゴリのラベル（このページがどの問いの一部かを示す・pd#138） */
+.reader-hero .reader-kicker {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    color: var(--mute);
+    margin: 0 0 0.5rem;
+}
+.reader-hero .reader-kicker .nb { white-space: nowrap; }  /* 「欠けているもの」を語の途中で折らない */
+
+/* 題辞（冒頭に説明なしで置く引用の一行・pd#138）。.prose-block p に負けないよう .reader-article で詳細度を上げる */
+.reader-article .reader-epigraph {
+    margin: 0.5rem 0 2rem auto;
+    max-width: 26em;
+    text-align: right;
+}
+.reader-article .reader-epigraph p {
+    font-family: var(--serif-jp);
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: var(--mid);
+    margin: 0;
+}
+.reader-article .reader-epigraph .reader-epigraph-orig {
+    font-family: var(--serif-en);
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--mute);
+}
+/* ページの出発点になる依頼・問いの引用は本文と同じ濃さで読ませる（通常の引用は --mute・pd#138） */
+.reader-article blockquote.reader-request p {
+    color: var(--mid);
+}
+.reader-article .reader-sources {
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    line-height: 1.8;
+    color: var(--mid);
+}
+.reader-article .reader-epigraph .reader-epigraph-src {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    color: var(--mute);
+    margin-top: 0.3rem;
+}
+
+/* 理解度テスト（任意）— 関門にしない自己チェック。各セクション直後にその都度置く。
+ * DESIGN-RULES §0a 準拠: tokens と glow-card の上にのみ載せる。JS は src/reader-quiz.js。
+ * no-JS では選択肢は静的リストのまま、「答えと解説」details で同じ内容が読める。 */
+.reader-article .reader-quiz {
+    margin: 2.5rem 0;
+    padding: 1.75rem 1.5rem;
+}
+
+.reader-article .quiz-label {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--mute);
+    margin: 0 0 1.1rem;
+}
+
+.quiz-q + .quiz-q {
+    margin-top: 1.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--glass-border-soft);
+}
+
+.reader-article .quiz-question {
+    font-family: var(--sans);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin: 0 0 0.75rem;
+}
+
+.reader-article .quiz-choices {
+    list-style: lower-latin;
+    margin: 0 0 0.75rem;
+    padding-left: 1.75rem;
+}
+
+.quiz-choices li {
+    font-family: var(--sans);
+    font-size: 1rem;
+    margin: 0.45rem 0;
+    padding-left: 0.25rem;
+}
+
+/* JS が選択肢を包むボタン（押すとその場で答え合わせ）。タッチターゲット 44px 以上 */
+.quiz-choice {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-family: var(--sans);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--mid);
+    background: var(--glass-bg-soft);
+    border: 1px solid var(--glass-border-soft);
+    border-radius: 8px;
+    padding: 0.6rem 0.9rem;
+    min-height: 44px;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.quiz-choice:hover { background: var(--glass-bg-medium); }
+
+.quiz-choice.is-correct {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: #fff;
+}
+
+.quiz-choice.is-wrong {
+    border-color: var(--coral);
+    color: var(--coral);
+}
+
+.reader-article .quiz-status {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--mid);
+    margin: 0.6rem 0 0;
+}
+
+/* 解説の details は「詳しく」ラベルでなく「答え合わせ」に */
+.reader-article details.quiz-explain > summary::after { content: "答え合わせ"; }
+.reader-article details.quiz-explain[open] > summary::after { content: "閉じる"; }
+
+.reader-footer {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 1rem 2rem 4rem;
+    text-align: center;
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    line-height: 2;
+    color: var(--mute);
+}
+
+/* 図のキャプション（B4: 全 SVG に 1 行要旨） */
+.reader-figure figcaption {
+    margin-top: 0.8rem;
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: var(--mute);
+    text-align: center;
+}
+
+/* 目次（A1: build-reader-lp.py が h1/h2 から生成） */
+.reader-toc {
+    margin: 2.5rem 0;
+    padding: 1.4rem 1.8rem;
+    font-family: var(--sans);
+}
+
+.reader-toc-title {
+    margin: 0 0 0.7rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    color: var(--ink);
+}
+
+.reader-toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.reader-toc li {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.reader-toc li.reader-toc-part {
+    margin-top: 0.9rem;
+    font-weight: 500;
+}
+
+.reader-toc li.reader-toc-part:first-child { margin-top: 0; }
+
+.reader-toc li:not(.reader-toc-part) { padding-left: 1em; }
+
+/* 文脈ゼロ LLM 向けの静的要約ブロック（#llm-summary）。
+   人間には非表示だが本文抽出（innerText）には残す必要があるため、
+   display:none / visibility:hidden は使わない（抽出でも消える）。 */
+.visually-hidden {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* 検証ステータスバッジ（D3） */
+.reader-status-badge {
+    display: inline-block;
+    padding: 0.18em 0.85em;
+    margin-bottom: 0.35em;
+    border: 1px solid var(--gold);
+    border-radius: 999px;
+    background: var(--glass-bg-medium);
+    color: var(--gold);
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+}
+
+/* ---- スクリーナー（16問×5択・src/reader-screener.js・knowledge/research/stages-screener §10） ----
+ * DESIGN-RULES §0a 準拠: tokens と glow-card の上にのみ載せる。選択肢ボタンは .quiz-choice と同じ作り。
+ * no-JS では .screener-static（問いと5択、帯は details）がそのまま読める。 */
+.reader-article .screener {
+    margin: 2.5rem 0;
+    padding: 1.75rem 1.5rem;
+}
+
+.reader-article .screener p { margin: 0 0 0.9rem; }
+
+.reader-article .screener-label {
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--mute);
+    margin-top: 1.75rem;
+}
+
+.reader-article .screener-label:first-child { margin-top: 0; }
+
+.reader-article .screener-question {
+    font-family: var(--sans);
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--ink);
+}
+
+.reader-article .screener-lead,
+.reader-article .screener-small,
+.reader-article .screener-status {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    line-height: 1.7;
+    color: var(--mid);
+}
+
+.screener-progress {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    color: var(--mute);
+    margin-bottom: 0.4rem;
+}
+
+.screener-bar,
+.screener-meter {
+    height: 4px;
+    background: var(--glass-border-soft);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.screener-meter { height: 8px; margin-bottom: 0.6rem; min-width: 60px; }
+
+.screener-bar i,
+.screener-meter i {
+    display: block;
+    height: 100%;
+    background: var(--navy);
+}
+
+.screener-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.screener-option,
+.screener-btn {
+    font-family: var(--sans);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--mid);
+    background: var(--glass-bg-soft);
+    border: 1px solid var(--glass-border-soft);
+    border-radius: 8px;
+    padding: 0.6rem 0.9rem;
+    min-height: 44px;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.screener-option {
+    display: grid;
+    grid-template-columns: 1.6em 1fr;
+    gap: 0.5rem;
+    align-items: baseline;
+    width: 100%;
+    text-align: left;
+}
+
+.screener-option b { color: var(--navy); font-weight: 600; }
+
+.screener-option:hover,
+.screener-btn:hover { background: var(--glass-bg-medium); }
+
+.screener-option.is-picked { border-color: var(--navy); background: var(--glass-bg-medium); }
+
+.screener-btn.is-primary {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: #fff;
+}
+
+.screener-btn:disabled { opacity: 0.45; cursor: default; }
+
+.screener-option:focus-visible,
+.screener-btn:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+
+.screener-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    align-items: center;
+    margin-top: 0.75rem;
+}
+
+.reader-article .screener-closeness {
+    font-family: var(--serif-en);
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: var(--ink);
+    margin-bottom: 0.4rem;
+}
+
+.screener-closeness small {
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    color: var(--mute);
+}
+
+.reader-article .screener-position {
+    font-family: var(--sans);
+    font-weight: 500;
+    color: var(--ink);
+}
+
+.screener-dist { width: 100%; border-collapse: collapse; font-family: var(--sans); font-size: 0.9rem; }
+.screener-dist th { text-align: left; font-weight: 400; color: var(--mid); white-space: nowrap; padding: 0.2rem 0.6rem 0.2rem 0; width: 5.5em; }
+.screener-dist td { padding: 0.2rem 0; vertical-align: middle; }
+.screener-dist .screener-meter { margin: 0; }
+.screener-dist .screener-num { text-align: right; width: 3.5em; color: var(--mid); white-space: nowrap; }
+
+/* 回答一覧の details は読み物の「詳しく」アコーディオンと別物なので装飾を外す */
+.reader-article .screener-answers details,
+.reader-article .screener-answers details[open] {
+    margin: 0;
+    padding: 0.5rem 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--glass-border-soft);
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.reader-article .screener-answers summary {
+    display: grid;
+    grid-template-columns: 2.6em 1fr auto;
+    gap: 0.5rem;
+    align-items: baseline;
+    padding: 0;
+    font-family: var(--sans);
+    font-size: 0.9rem;
+    color: var(--ink);
+}
+
+.reader-article .screener-answers summary::before,
+.reader-article .screener-answers summary::after { content: none; }
+
+.screener-qn { color: var(--mute); }
+
+.screener-chip {
+    font-size: 0.78rem;
+    white-space: nowrap;
+    padding: 0.05em 0.7em;
+    border: 1px solid var(--gold);
+    border-radius: 999px;
+    color: var(--gold);
+}
+
+.reader-article .screener-answers ul {
+    margin: 0.4rem 0 0 2.6em;
+    padding: 0;
+    list-style: none;
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    color: var(--mid);
+}
+
+.screener-answers li.is-mine { color: var(--ink); font-weight: 500; }
+
+.reader-article details.screener-notes > summary::after { content: "開く"; }
+.reader-article details.screener-notes[open] > summary::after { content: "閉じる"; }
+.screener-notes dt { font-weight: 600; color: var(--navy); margin-top: 0.6rem; }
+.screener-notes dd { margin: 0.1rem 0 0; display: flex; flex-direction: column; font-size: 0.9rem; }
+.screener-notes .screener-example { color: var(--mid); }
+
+.reader-article pre.screener-out {
+    white-space: pre-wrap;
+    word-break: break-word;
+    max-height: 16rem;
+    overflow: auto;
+    font-size: 0.8rem;
+}
+
+/* no-JS の静的リスト（JS が対話 UI に置き換える） */
+.reader-article .screener-static { padding-left: 1.5rem; }
+.reader-article .screener-static > li { margin: 1rem 0; }
+.reader-article .screener-static ul { list-style: lower-latin; padding-left: 1.5rem; }
+
+
+@media (max-width: 768px) {
+    .reader-hero { padding: 4rem 1.5rem 1rem; }
+    .reader-article { padding: 0 1.5rem 4rem; }
+    .reader-figure { padding: 1rem; }
+    .reader-table { padding: 0.75rem 1rem; }
+    .reader-article .microworld { padding: 1rem; }
+    .reader-article .screener { padding: 1.25rem 1rem; }
+}
+
+@media (max-width: 480px) {
+    .reader-hero { padding: 3.5rem 1rem 1rem; }
+    .reader-article { padding: 0 1rem 3rem; }
+    .reader-article h2 { margin-top: 3.5rem; }
+}
+
+/* ---- Claude で再現するプロンプト（stages-screener・build の <!--CLAUDE-PROMPT-->） ---- */
+.reader-article .prompt-box { margin: 1rem 0 1.5rem; }
+.reader-article .prompt-box .screener-btn { margin-bottom: 0.75rem; }
+.reader-article .prompt-text {
+    max-height: 22rem;
+    overflow: auto;
+    margin: 0;
+    padding: 1rem 1.1rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: var(--sans);
+    font-size: 0.82rem;
+    line-height: 1.7;
+    color: var(--mid);
+    background: var(--glass-bg-medium);
+    border: 1px solid var(--glass-border-soft);
+    border-radius: 8px;
+}
+
+/* === リンクカード（repo のメインページへの目立つ導線・ブログカード型） ===
+   サムネイル 1.91:1（OGP と同比率・assets/thumbs/{repo}.jpg）＋タイトル＋サブタイトル。ページ幅で一枚ずつ。
+   寸法は Zenn 等の一般的なリンクカードに合わせる：常に横並び・サムネイルは固定幅（PC 200px／スマホ 112px）。
+   タップ対象なので .glow-link を付ける（DESIGN-RULES §2）。 */
+.reader-linkcards {
+    display: grid;
+    gap: 0.75rem;
+    margin: 1.25rem 0 1.5rem;
+}
+
+.reader-article a.reader-linkcard {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 0.75rem;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+}
+
+.reader-article a.reader-linkcard:hover {
+    padding-left: 0.75rem;
+    border-color: rgba(0, 0, 0, 0.18);
+}
+
+.reader-linkcard__thumb {
+    flex: 0 0 auto;
+    width: 200px;
+    height: auto;
+    aspect-ratio: 1200 / 630;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+
+.reader-linkcard__body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    min-width: 0;
+}
+
+.reader-linkcard__title {
+    font-family: var(--serif-jp);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.5;
+}
+
+.reader-linkcard__sub {
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: var(--mid);
+    line-height: 1.7;
+}
+
+.reader-linkcard__url {
+    font-size: 0.8rem;
+    color: var(--mid);
+    letter-spacing: 0.02em;
+}
+
+@media (max-width: 480px) {
+    .reader-article a.reader-linkcard { gap: 0.75rem; padding: 0.6rem; }
+    .reader-linkcard__thumb { width: 112px; }
+    .reader-linkcard__title { font-size: 1rem; }
+    .reader-linkcard__sub {
+        font-size: 0.85rem;
+        line-height: 1.6;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .reader-linkcard__url { display: none; }
+}

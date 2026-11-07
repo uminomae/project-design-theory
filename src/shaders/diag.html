@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>background shader diag</title>
+<style>
+  body { margin: 0; padding: 12px; font: 13px/1.5 -apple-system, Menlo, monospace; background: #fff; color: #111; }
+  h1 { font-size: 15px; margin: 0 0 6px; }
+  h2 { font-size: 13px; margin: 12px 0 4px; }
+  pre { white-space: pre-wrap; word-break: break-all; margin: 0 0 10px; background: #f4f4f4; padding: 8px; border-radius: 6px; }
+  .thumbs { display: flex; gap: 8px; flex-wrap: wrap; margin: 0 0 10px; }
+  .thumb { text-align: center; font-size: 11px; }
+  canvas { width: 112px; height: 112px; image-rendering: pixelated; border: 1px solid #ccc; background: #fff; }
+  canvas.big { width: 168px; height: 168px; }
+  .err { color: #b00020; }
+</style>
+</head>
+<body>
+<h1>background shader diag v3（検証用・noindex）</h1>
+<pre id="env">環境を調べています…</pre>
+<h2>A. 4 本を 128x128・time=1 で 1 フレーム</h2>
+<div class="thumbs" id="thumbs"></div>
+<pre id="stats"></pre>
+<h2>B. main3 / main4 を 256x256・時刻違いで</h2>
+<div class="thumbs" id="thumbs2"></div>
+<pre id="stats2"></pre>
+<h2>C. main3 の部品を compute で評価</h2>
+<pre id="probes3"></pre>
+<h2>D. main4 の部品を compute で評価</h2>
+<pre id="probes4"></pre>
+<h2>E. main3 t=33・256x256 で dla 最大の画素を探し、中間値を出す</h2>
+<pre id="probes5"></pre>
+<script type="module">
+const $ = (id) => document.getElementById(id);
+const SHADERS = ['main-webgpu.js', 'main3-webgpu.js', 'main4-webgpu.js', 'main2-webgpu.js'];
+const SIZE = 128;
+const SIZE2 = 256;
+const TIMES2 = [1.0, 9.0, 33.0];
+const TIME = 1.0, SCROLL = 0.0;
+
+function fmt(x) { return Number.isFinite(x) ? x.toFixed(4) : String(x); }
+
+async function extractShaderCode(file) {
+  const real = file === 'main-webgpu.js' ? 'webgpu-background-core.js' : file;
+  const src = await (await fetch(`./${real}?diag=${Date.now()}`)).text();
+  const m = src.match(/const shaderCode = \/\* wgsl \*\/`([\s\S]*?)`;/);
+  if (!m) throw new Error(`${file}: shaderCode が見つからない`);
+  return m[1];
+}
+
+async function compileChecked(device, code, label) {
+  const module = device.createShaderModule({ code });
+  const info = await module.getCompilationInfo();
+  const errors = info.messages.filter((x) => x.type === 'error').map((x) => `${x.lineNum}:${x.linePos} ${x.message}`);
+  if (errors.length) throw new Error(`${label} compile: ${errors.join(' / ')}`);
+  return module;
+}
+
+async function renderOffscreen(device, code, label, size, time) {
+  const module = await compileChecked(device, code, label);
+  const bgl = device.createBindGroupLayout({ entries: [{ binding: 0, visibility: GPUShaderStage.FRAGMENT, buffer: { type: 'uniform' } }] });
+  const pipeline = device.createRenderPipeline({
+    layout: device.createPipelineLayout({ bindGroupLayouts: [bgl] }),
+    vertex: { module, entryPoint: 'vs' },
+    fragment: { module, entryPoint: 'fs', targets: [{ format: 'rgba8unorm' }] },
+    primitive: { topology: 'triangle-list' },
+  });
+  const ub = device.createBuffer({ size: 16, usage: GPUBufferUsage.UNIFORM | GPUBufferUsage.COPY_DST });
+  device.queue.writeBuffer(ub, 0, new Float32Array([size, size, time, SCROLL]));
+  const bg = device.createBindGroup({ layout: bgl, entries: [{ binding: 0, resource: { buffer: ub } }] });
+  const tex = device.createTexture({ size: [size, size], format: 'rgba8unorm', usage: GPUTextureUsage.RENDER_ATTACHMENT | GPUTextureUsage.COPY_SRC });
+  const readback = device.createBuffer({ size: size * size * 4, usage: GPUBufferUsage.COPY_DST | GPUBufferUsage.MAP_READ });
+  const enc = device.createCommandEncoder();
+  const pass = enc.beginRenderPass({ colorAttachments: [{ view: tex.createView(), clearValue: { r: 0, g: 0, b: 0, a: 0 }, loadOp: 'clear', storeOp: 'store' }] });
+  pass.setPipeline(pipeline); pass.setBindGroup(0, bg); pass.draw(3); pass.end();
+  enc.copyTextureToBuffer({ texture: tex }, { buffer: readback, bytesPerRow: size * 4 }, [size, size]);
+  device.queue.submit([enc.finish()]);
+  await readback.mapAsync(GPUMapMode.READ);
+  const px = new Uint8Array(readback.getMappedRange().slice(0));
+  readback.unmap();
+  return px;
+}
+
+function statsOf(px, size) {
+  const n = px.length / 4; const sum = [0, 0, 0, 0]; const max = [0, 0, 0, 0];
+  let over = 0, gold = 0, strong = 0, rough = 0;
+  for (let i = 0; i < px.length; i += 4) {
+    for (let c = 0; c < 4; c++) { sum[c] += px[i + c]; if (px[i + c] > max[c]) max[c] = px[i + c]; }
+    if (px[i] > px[i + 3] + 1 || px[i + 1] > px[i + 3] + 1 || px[i + 2] > px[i + 3] + 1) over++;
+    if (px[i] >= 150 && px[i + 2] <= px[i] * 0.6) gold++;   // 黄色っぽい（main3 の gold が飽和）
+    if (px[i + 3] >= 180) strong++;                          // 濃い画素
+  }
+  // 粗さ: 隣の画素との alpha 差が 60 以上の画素の割合（粒・砂状のノイズを拾う）
+  for (let y = 0; y < size; y++) for (let x = 1; x < size; x++) {
+    const i = (y * size + x) * 4;
+    if (Math.abs(px[i + 3] - px[i - 4 + 3]) >= 60) rough++;
+  }
+  return { mean: sum.map((v) => (v / n).toFixed(1)), max, over, gold, strong, rough: (100 * rough / n).toFixed(1) };
+}
+
+function showThumb(host, label, px, size, big) {
+  const wrap = document.createElement('div'); wrap.className = 'thumb';
+  const cv = document.createElement('canvas'); cv.width = size; cv.height = size; if (big) cv.className = 'big';
+  const ctx = cv.getContext('2d'); const img = ctx.createImageData(size, size);
+  for (let i = 0; i < px.length; i += 4) {
+    const a = px[i + 3];
+    img.data[i] = Math.min(255, px[i] + 255 - a);
+    img.data[i + 1] = Math.min(255, px[i + 1] + 255 - a);
+    img.data[i + 2] = Math.min(255, px[i + 2] + 255 - a);
+    img.data[i + 3] = 255;
+  }
+  ctx.putImageData(img, 0, 0);
+  wrap.appendChild(cv); wrap.appendChild(document.createTextNode(label));
+  $(host).appendChild(wrap);
+}
+
+function statLine(label, s) {
+  return `${label.padEnd(14)} max=${s.max.join(',')} mean_a=${s.mean[3]} 黄=${s.gold} 濃=${s.strong} 粗=${s.rough}% 色>α=${s.over}`;
+}
+
+// fs を関数化する: uniforms を引数に置き換え、戻り値を差し替える
+function functionizeFs(code, fnName, returnReplace) {
+  const fsStart = code.indexOf('@fragment');
+  const helpers = code.slice(0, fsStart).replace(/@vertex[\s\S]*$/, '').replace(/@group\(0\) @binding\(0\) var<uniform> uniforms: Uniforms;/, '');
+  let body = code.slice(fsStart).replace(/@fragment\s*fn fs\(.*?\)\s*->\s*@location\(0\)\s*vec4f\s*\{/, `fn ${fnName}(fragCoord: vec4f, res: vec2f, tm: f32, sc: f32) -> vec4f {`);
+  if (!body.startsWith(`fn ${fnName}`)) throw new Error('fs の署名を関数化できない');
+  body = body.replace(/uniforms\.resolution/g, 'res').replace(/uniforms\.time/g, 'tm').replace(/uniforms\.scroll/g, 'sc');
+  const [from, to] = returnReplace;
+  if (!body.includes(from)) throw new Error('return 文が想定と違う');
+  body = body.replace(from, to);
+  return `${helpers}\n${body}\n`;
+}
+
+// 入力は out[32..] に JS から書く（定数にするとコンパイラが CPU で畳んでしまい GPU の挙動を測れない）
+const INPUTS = [1000.0, 31415.9, 1234.567, -0.1, 0.0, 3.0, 4.0, 0.37, 0.61, 0.03, 0.2, 40.0, 90.0, 70.0, SIZE, TIME, SCROLL, -1e-7, 3.0,
+  0.3, 0.2, -0.7, 0.5, 0.1, -0.9, 1e-6, 0.5, 1.0];
+const PROBE3 = ['sin(1000)', 'sin(31415.9)', 'fract(sin(1234.567)*43758.5453)', 'pow(-0.1,1)', 'pow(0,1)',
+  'hash22(3,4).x', 'hash22(3,4).y', 'hash21(p*256)', 'noise(p)', 'noise(p+e)', 'noise(p-e)', 'noise(p+e.yx)', 'noise(p-e.yx)',
+  'laplacian', 'divFBM(p,0)', 'wcurve(0.2,1,1)', 'wcurve(0.2,2,1)',
+  'px(40,40) dla', 'px(40,40) r', 'px(40,40) g', 'px(40,40) alpha', 'px(90,70) dla', 'px(90,70) r', 'px(90,70) g', 'px(90,70) alpha',
+  'loop/select (42)', 'fract(-1e-7)', '1/3'];
+const PROBE3_CODE = `
+@group(0) @binding(1) var<storage, read_write> out: array<f32>;
+@compute @workgroup_size(1)
+fn probe() {
+  let big1 = out[32]; let big2 = out[33]; let big3 = out[34];
+  let neg = out[35]; let zero = out[36];
+  let hx = out[37]; let hy = out[38];
+  let p = vec2f(out[39], out[40]);
+  let e = vec2f(out[41], zero);
+  let x02 = out[42];
+  let fx1 = out[43]; let fx2 = out[44]; let fy2 = out[45];
+  let size = out[46]; let tm = out[47]; let sc = out[48];
+  let tiny = out[49]; let three = out[50];
+  out[0] = sin(big1);
+  out[1] = sin(big2);
+  out[2] = fract(sin(big3) * 43758.5453);
+  out[3] = pow(neg, 1.0);
+  out[4] = pow(zero, 1.0);
+  let h = hash22(vec2f(hx, hy));
+  out[5] = h.x; out[6] = h.y;
+  out[7] = hash21(p * 256.0);
+  out[8] = smoothNoise(p);
+  out[9] = smoothNoise(p + e.xy);
+  out[10] = smoothNoise(p - e.xy);
+  out[11] = smoothNoise(p + e.yx);
+  out[12] = smoothNoise(p - e.yx);
+  out[13] = out[9] + out[10] + out[11] + out[12] - 4.0 * out[8];
+  out[14] = divFBM(p, zero);
+  out[15] = wcurve(x02, 1.0, 1.0);
+  out[16] = wcurve(x02, 2.0, 1.0);
+  let r1 = evalMain3(vec4f(fx1, fx1, 0.0, 1.0), vec2f(size, size), tm, sc);
+  out[17] = r1.x; out[18] = r1.y; out[19] = r1.z; out[20] = r1.w;
+  let r2 = evalMain3(vec4f(fx2, fy2, 0.0, 1.0), vec2f(size, size), tm, sc);
+  out[21] = r2.x; out[22] = r2.y; out[23] = r2.z; out[24] = r2.w;
+  var acc = 0.0;
+  for (var i = 0; i < 4; i = i + 1) { acc = acc + select(10.0, 1.0, (i % 2) == 0) * f32(i); }
+  out[25] = acc;
+  out[26] = fract(tiny);
+  out[27] = 1.0 / three;
+}`;
+
+const PROBE4 = ['lyap(0.3,0.2,t=1)', 'lyap(-0.7,0.5,t=1)', 'lyap(0.1,-0.9,t=1)', 'lyap(0.3,0.2,t=33)', 'log(1e-6)', 'log(0.5)',
+  'logistic x10 r=3.9 (x)', 'sin(0.3*1.5+0.1)',
+  'px(40,40) lambda', 'px(40,40) r', 'px(40,40) g', 'px(40,40) alpha', 'px(90,70) lambda', 'px(90,70) r', 'px(90,70) g', 'px(90,70) alpha',
+  'px(200,120)@256 lambda', 'px(200,120)@256 alpha'];
+const PROBE4_CODE = `
+@group(0) @binding(1) var<storage, read_write> out: array<f32>;
+@compute @workgroup_size(1)
+fn probe() {
+  let zero = out[36];
+  let fx1 = out[43]; let fx2 = out[44]; let fy2 = out[45];
+  let size = out[46]; let tm = out[47]; let sc = out[48];
+  let a1 = vec2f(out[51], out[52]); let a2 = vec2f(out[53], out[54]); let a3 = vec2f(out[55], out[56]);
+  let tiny = out[57]; let half = out[58]; let one = out[59];
+  out[0] = lyapunovFractal(a1, one);
+  out[1] = lyapunovFractal(a2, one);
+  out[2] = lyapunovFractal(a3, one);
+  out[3] = lyapunovFractal(a1, one * 33.0);
+  out[4] = log(tiny);
+  out[5] = log(half);
+  var x = half;
+  let r = 3.9 * one;
+  for (var i = 0; i < 10; i = i + 1) { x = r * x * (one - x); }
+  out[6] = x;
+  out[7] = sin(a1.x * 1.5 + 0.1 * one);
+  let r1 = evalMain4(vec4f(fx1, fx1, 0.0, 1.0), vec2f(size, size), tm, sc);
+  out[8] = r1.x; out[9] = r1.y; out[10] = r1.z; out[11] = r1.w;
+  let r2 = evalMain4(vec4f(fx2, fy2, 0.0, 1.0), vec2f(size, size), tm, sc);
+  out[12] = r2.x; out[13] = r2.y; out[14] = r2.z; out[15] = r2.w;
+  let r3 = evalMain4(vec4f(200.0 * one, 120.0 * one, 0.0, 1.0), vec2f(256.0 * one, 256.0 * one), tm, sc);
+  out[16] = r3.x; out[17] = r3.w;
+}`;
+
+// E: main3 の fs を手で展開し、中間値を out[] に書く（helpers は main3-webgpu.js から）
+const DUMP_BASE = 4;
+const PROBE5_CODE = `
+@group(0) @binding(1) var<storage, read_write> out: array<f32>;
+fn dumpDivFBM(inputP: vec2f, t: f32, base: u32) {
+  var p = inputP;
+  let e = vec2f(0.03, 0.0);
+  for (var o = 0u; o < 2u; o = o + 1u) {
+    let pp = p + vec2f(t * 0.2, t * 0.2);
+    let i = floor(pp); let f = fract(pp);
+    let h00 = hash22(i); let h10 = hash22(i + vec2f(1.0, 0.0)); let h01 = hash22(i + vec2f(0.0, 1.0)); let h11 = hash22(i + vec2f(1.0, 1.0));
+    let n0 = smoothNoise(pp);
+    let nx = smoothNoise(pp + e.xy) + smoothNoise(pp - e.xy);
+    let ny = smoothNoise(pp + e.yx) + smoothNoise(pp - e.yx);
+    let b = base + o * 16u;
+    out[b] = i.x; out[b + 1u] = i.y; out[b + 2u] = f.x; out[b + 3u] = f.y;
+    out[b + 4u] = h00.x; out[b + 5u] = h00.y; out[b + 6u] = h10.x; out[b + 7u] = h10.y;
+    out[b + 8u] = h01.x; out[b + 9u] = h01.y; out[b + 10u] = h11.x; out[b + 11u] = h11.y;
+    out[b + 12u] = n0; out[b + 13u] = nx; out[b + 14u] = ny; out[b + 15u] = nx + ny - 4.0 * n0;
+    p = rot(p, 1.57) * 2.1;
+  }
+}
+fn dumpMain3(fragCoord: vec4f, res: vec2f, tm: f32, sc: f32, base: u32) {
+  let coord = vec2f(fragCoord.x, res.y - fragCoord.y);
+  var p = (coord * 2.0 - res) / min(res.x, res.y);
+  let s = sc;
+  let w2 = smoothstep(0.10, 0.20, s) * (1.0 - smoothstep(0.30, 0.40, s));
+  let w3 = smoothstep(0.30, 0.40, s) * (1.0 - smoothstep(0.50, 0.60, s));
+  let w4 = smoothstep(0.50, 0.60, s) * (1.0 - smoothstep(0.75, 0.85, s));
+  let w5 = smoothstep(0.75, 0.85, s);
+  let tRhythmic = tm * 0.4 + sin(tm * 1.2) * 0.3;
+  p = p * 2.0;
+  p = rot(p, tRhythmic * 0.1 + s * 3.14);
+  let pBase = p;
+  let pWave = p + normalize(pBase) * cos(length(pBase) * 20.0 - tRhythmic * 4.0) * 0.05;
+  p = mix(p, pWave, w2);
+  let pFold = foldSpace(p, tRhythmic);
+  p = mix(p, pFold, w3);
+  let rLen = length(p);
+  var a = atan2(p.y, p.x);
+  a = a + (1.0 / (rLen + 0.3)) * mix(0.5, 2.0, s) * sin(tRhythmic * 0.8);
+  p = mix(p, vec2f(cos(a), sin(a)) * rLen, w4);
+  let pHopf = cdiv(p + vec2f(0.5, 0.0), p - vec2f(0.5, 0.0)) * 0.5;
+  p = mix(p, rot(pHopf, tRhythmic * 0.3), w5);
+  let tc = vec2f(0.0, 0.0) - p;
+  let rnd = hash21(p * 256.0) * 0.75;
+  let drvT = 1.5 * cos(tm + sin(0.4 * tm + cos(0.1 * tm))) * (cos(0.4 * tm + cos(0.1 * tm)) * (0.4 - 0.1 * sin(0.1 * tm)) + 1.0) + 2.1;
+  let strength = 0.01 + drvT * 0.01;
+  out[base] = p.x; out[base + 1u] = p.y; out[base + 2u] = rnd; out[base + 3u] = drvT;
+  var dla = 0.0;
+  var tw = 0.001;
+  var lastSample = vec2f(0.0, 0.0);
+  for (var i = 0; i < 2; i = i + 1) {
+    let sr2 = (f32(i) + rnd) / 2.0;
+    let weight = wcurve(sr2, 1.0, 1.0);
+    let displ = wcurve(sr2, 2.0, 1.0);
+    let sampleP = p + (tc * sr2 * strength * displ);
+    let ns = divFBM(sampleP * 2.5, tm);
+    dla = dla + ns * weight;
+    tw = tw + 0.9 * weight;
+    let b = base + 4u + u32(i) * 6u;
+    out[b] = sr2; out[b + 1u] = weight; out[b + 2u] = displ; out[b + 3u] = sampleP.x; out[b + 4u] = sampleP.y; out[b + 5u] = ns;
+    lastSample = sampleP;
+  }
+  out[base + 16u] = tw; out[base + 17u] = dla / tw;
+  dumpDivFBM(lastSample * 2.5, tm, base + 18u);
+}
+@compute @workgroup_size(1)
+fn probe() {
+  let tm = out[100]; let size = out[101]; let ox = out[102]; let oy = out[103]; let sc = out[104];
+  var best = -1.0; var bx = 0.0; var by = 0.0;
+  for (var y = 0u; y < 256u; y = y + 2u) {
+    for (var x = 0u; x < 256u; x = x + 2u) {
+      let r = evalMain3(vec4f(f32(x) + 0.5, f32(y) + 0.5, 0.0, 1.0), vec2f(size, size), tm, sc);
+      if (r.x > best) { best = r.x; bx = f32(x) + 0.5; by = f32(y) + 0.5; }
+    }
+  }
+  out[0] = bx; out[1] = by; out[2] = best;
+  var px = bx; var py = by;
+  if (ox >= 0.0) { px = ox; py = oy; }
+  out[3] = px * 1000.0 + py;
+  dumpMain3(vec4f(px, py, 0.0, 1.0), vec2f(size, size), tm, sc, ${DUMP_BASE}u);
+}`;
+const PROBE5_LABELS = (() => {
+  const l = ['argmax x', 'argmax y', 'max dla（2px 刻み走査）', 'dump 画素 (x*1000+y)'];
+  l.push('p.x', 'p.y', 'rnd', 'drvT');
+  for (const i of [0, 1]) l.push(`s${i} sr2`, `s${i} weight`, `s${i} displ`, `s${i} sampleP.x`, `s${i} sampleP.y`, `s${i} divFBM`);
+  l.push('tw', 'dla');
+  for (const o of [0, 1]) l.push(`o${o} i.x`, `o${o} i.y`, `o${o} f.x`, `o${o} f.y`, `o${o} h00.x`, `o${o} h00.y`, `o${o} h10.x`, `o${o} h10.y`,
+    `o${o} h01.x`, `o${o} h01.y`, `o${o} h11.x`, `o${o} h11.y`, `o${o} n0`, `o${o} nx`, `o${o} ny`, `o${o} laplacian`);
+  return l;
+})();
+
+async function runProbes5(device, code) {
+  const module = await compileChecked(device, code, 'probe5');
+  const TOTAL = 128;
+  const q = new URLSearchParams(location.search);
+  const t = parseFloat(q.get('t') || '33');
+  const pxq = (q.get('px') || '').split(',').map(Number);
+  const inputs = new Float32Array(TOTAL);
+  inputs[100] = t; inputs[101] = 256; inputs[102] = pxq.length === 2 && Number.isFinite(pxq[0]) ? pxq[0] : -1; inputs[103] = pxq.length === 2 ? pxq[1] : -1; inputs[104] = 0;
+  const buf = device.createBuffer({ size: TOTAL * 4, usage: GPUBufferUsage.STORAGE | GPUBufferUsage.COPY_SRC | GPUBufferUsage.COPY_DST });
+  device.queue.writeBuffer(buf, 0, inputs);
+  const bgl = device.createBindGroupLayout({ entries: [{ binding: 1, visibility: GPUShaderStage.COMPUTE, buffer: { type: 'storage' } }] });
+  const pipeline = device.createComputePipeline({ layout: device.createPipelineLayout({ bindGroupLayouts: [bgl] }), compute: { module, entryPoint: 'probe' } });
+  const bg = device.createBindGroup({ layout: bgl, entries: [{ binding: 1, resource: { buffer: buf } }] });
+  const rb = device.createBuffer({ size: TOTAL * 4, usage: GPUBufferUsage.COPY_DST | GPUBufferUsage.MAP_READ });
+  const enc = device.createCommandEncoder();
+  const pass = enc.beginComputePass(); pass.setPipeline(pipeline); pass.setBindGroup(0, bg); pass.dispatchWorkgroups(1); pass.end();
+  enc.copyBufferToBuffer(buf, 0, rb, 0, TOTAL * 4);
+  device.queue.submit([enc.finish()]);
+  await rb.mapAsync(GPUMapMode.READ);
+  const vals = Array.from(new Float32Array(rb.getMappedRange().slice(0)));
+  rb.unmap();
+  const head = `t=${t}・dump 画素=${inputs[102] >= 0 ? `${inputs[102]},${inputs[103]}（?px= 指定）` : 'argmax'}（?t=33&px=x,y で変更可）\n`;
+  return head + PROBE5_LABELS.map((l, i) => `${String(i).padStart(2)} ${l.padEnd(22)} ${fmt(vals[i])}`).join('\n');
+}
+
+async function runProbes(device, code, labels, label) {
+  const module = await compileChecked(device, code, label);
+  const TOTAL = 64;
+  const buf = device.createBuffer({ size: TOTAL * 4, usage: GPUBufferUsage.STORAGE | GPUBufferUsage.COPY_SRC | GPUBufferUsage.COPY_DST });
+  const inputs = new Float32Array(TOTAL);
+  INPUTS.forEach((v, i) => { inputs[32 + i] = v; });
+  device.queue.writeBuffer(buf, 0, inputs);
+  const bgl = device.createBindGroupLayout({ entries: [{ binding: 1, visibility: GPUShaderStage.COMPUTE, buffer: { type: 'storage' } }] });
+  const pipeline = device.createComputePipeline({ layout: device.createPipelineLayout({ bindGroupLayouts: [bgl] }), compute: { module, entryPoint: 'probe' } });
+  const bg = device.createBindGroup({ layout: bgl, entries: [{ binding: 1, resource: { buffer: buf } }] });
+  const rb = device.createBuffer({ size: TOTAL * 4, usage: GPUBufferUsage.COPY_DST | GPUBufferUsage.MAP_READ });
+  const enc = device.createCommandEncoder();
+  const pass = enc.beginComputePass(); pass.setPipeline(pipeline); pass.setBindGroup(0, bg); pass.dispatchWorkgroups(1); pass.end();
+  enc.copyBufferToBuffer(buf, 0, rb, 0, TOTAL * 4);
+  device.queue.submit([enc.finish()]);
+  await rb.mapAsync(GPUMapMode.READ);
+  const vals = Array.from(new Float32Array(rb.getMappedRange().slice(0)));
+  rb.unmap();
+  return labels.map((l, i) => `${String(i).padStart(2)} ${l.padEnd(26)} ${fmt(vals[i])}`).join('\n');
+}
+
+async function main() {
+  const lines = [`UA: ${navigator.userAgent}`, `dpr: ${devicePixelRatio}  screen: ${screen.width}x${screen.height}`];
+  if (!('gpu' in navigator)) { $('env').textContent = lines.concat('WebGPU: navigator.gpu なし（この端末は WebGL 版にフォールバックする。HTTP では secure context でないため出ない）').join('\n'); return; }
+  const adapter = await navigator.gpu.requestAdapter();
+  if (!adapter) { $('env').textContent = lines.concat('WebGPU: adapter なし（WebGL 版にフォールバックする）').join('\n'); return; }
+  const ai = adapter.info || {};
+  lines.push(`adapter: vendor=${ai.vendor || '?'} arch=${ai.architecture || '?'} device=${ai.device || '?'} desc=${ai.description || '?'}`);
+  lines.push(`preferred canvas format: ${navigator.gpu.getPreferredCanvasFormat()}  shader-f16: ${adapter.features.has('shader-f16')}`);
+  const device = await adapter.requestDevice();
+  device.addEventListener('uncapturederror', (ev) => { $('stats').textContent += `\nGPU error: ${ev.error.message}`; });
+  $('env').textContent = lines.join('\n');
+
+  const codes = {};
+  const stats = [];
+  for (const file of SHADERS) {
+    try {
+      const code = await extractShaderCode(file);
+      codes[file] = code;
+      const px = await renderOffscreen(device, code, file, SIZE, TIME);
+      showThumb('thumbs', file.replace('-webgpu.js', ''), px, SIZE, false);
+      stats.push(statLine(file.replace('-webgpu.js', ''), statsOf(px, SIZE)));
+    } catch (err) { stats.push(`${file}: ${err.message}`); }
+  }
+  $('stats').textContent = '黄=黄色っぽい画素数・濃=alpha≥180 の画素数・粗=隣と alpha 差≥60 の割合・色>α=premultiplied 範囲外\n' + stats.join('\n');
+
+  const stats2 = [];
+  for (const file of ['main3-webgpu.js', 'main4-webgpu.js']) {
+    for (const t of TIMES2) {
+      try {
+        const px = await renderOffscreen(device, codes[file], file, SIZE2, t);
+        const name = `${file.replace('-webgpu.js', '')} t=${t}`;
+        showThumb('thumbs2', name, px, SIZE2, true);
+        stats2.push(statLine(name, statsOf(px, SIZE2)));
+      } catch (err) { stats2.push(`${file} t=${t}: ${err.message}`); }
+    }
+  }
+  $('stats2').textContent = stats2.join('\n');
+
+  try {
+    const code3 = functionizeFs(codes['main3-webgpu.js'], 'evalMain3',
+      ['return vec4f(color * clamp(alpha, 0.0, 1.0), clamp(alpha, 0.0, 1.0));', 'return vec4f(dlaIntensity, color.r, color.g, clamp(alpha, 0.0, 1.0));']) + PROBE3_CODE;
+    $('probes3').textContent = await runProbes(device, code3, PROBE3, 'probe3');
+  } catch (err) { $('probes3').innerHTML = `<span class="err">probe3 失敗: ${err.message}</span>`; }
+  try {
+    const code5 = functionizeFs(codes['main3-webgpu.js'], 'evalMain3',
+      ['return vec4f(color * clamp(alpha, 0.0, 1.0), clamp(alpha, 0.0, 1.0));', 'return vec4f(dlaIntensity, color.r, color.g, clamp(alpha, 0.0, 1.0));']) + PROBE5_CODE;
+    $('probes5').textContent = '計算中…';
+    $('probes5').textContent = await runProbes5(device, code5);
+  } catch (err) { $('probes5').innerHTML = `<span class="err">probe5 失敗: ${err.message}</span>`; }
+  try {
+    const code4 = functionizeFs(codes['main4-webgpu.js'], 'evalMain4',
+      ['return vec4f(safeColor * safeAlpha, safeAlpha);', 'return vec4f(lambda, color.r, color.g, safeAlpha);']) + PROBE4_CODE;
+    $('probes4').textContent = await runProbes(device, code4, PROBE4, 'probe4');
+  } catch (err) { $('probes4').innerHTML = `<span class="err">probe4 失敗: ${err.message}</span>`; }
+}
+main().catch((err) => { $('env').innerHTML = `<span class="err">失敗: ${err.message}</span>`; });
+</script>
+</body>
+</html>

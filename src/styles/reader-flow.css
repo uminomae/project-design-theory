@@ -1,0 +1,457 @@
+/* reader-flow.css — READER「エネルギーの流れ仮説」ページ固有スタイル（body.reader-flow スコープ）
+   参考（pjdhiro 指示 2026-07-14）:
+   - cs reader/wave-vortex.html … シェーダー背景の上に「一枚のガラス読書カラム」を敷く型
+   - pjdhiro garage/ … 章ごとの details.sec アコーディオン＋PC常設/モバイルドロワーの目次
+   制約: DESIGN-RULES §0a — 色・タイポは tokens.css の変数のみ。シェーダー背景は reader-app.js を共用。
+   tokens + style.css + reader.css の上に載せる（読み込み順は template 参照）。 */
+
+/* ===== 一枚ガラスの読書カラム（cs wave-vortex 型） ===== */
+body.reader-flow .reader-wrap {
+    max-width: 860px;
+    margin: 0 auto 48px;
+    padding: 8px clamp(16px, 4vw, 36px) 40px;
+    background: var(--glass-bg-medium);
+    border: 1px solid var(--glass-border-soft);
+    border-radius: 16px;
+    box-shadow: var(--glass-shadow);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+body.reader-flow .reader-hero,
+body.reader-flow .reader-article {
+    max-width: none;
+}
+body.reader-flow .reader-hero {
+    padding: 28px 0 8px;
+    text-align: left;
+}
+body.reader-flow .reader-hero h1 {
+    font-family: var(--serif-jp);
+    color: var(--navy);
+    text-shadow: none;
+}
+body.reader-flow .reader-subtitle,
+body.reader-flow .reader-meta {
+    text-shadow: none;
+    color: var(--mid);
+}
+
+/* 冒頭の宣言（pd#144）：副題の下に、本文と同じ大きさで置く */
+body.reader-flow .reader-lead {
+    font-family: var(--serif-jp);
+    font-size: 1rem;
+    line-height: 1.9;
+    color: var(--ink);
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+/* 草稿バナー（cs draft-banner 型） */
+body.reader-flow .draft-banner {
+    background: var(--glass-bg-soft);
+    border: 1px solid var(--glass-border-soft);
+    border-left: 4px solid var(--gold);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin: 18px 0 8px;
+    font-size: 0.88rem;
+    color: var(--mid);
+}
+body.reader-flow .draft-banner b { color: var(--ink); }
+
+/* ガラス面の上では発光は不要（可読性はカラムが担う） */
+body.reader-flow .glow-text,
+body.reader-flow .glow-heading {
+    text-shadow: none;
+}
+
+/* リード部（ひとことで・FAQ・サマリー）のコールアウト */
+body.reader-flow .reader-article blockquote.reader-callout {
+    background: var(--glass-bg-strong);
+    border: 1px solid var(--glass-border-soft);
+    border-left: 4px solid var(--navy);
+    border-radius: 10px;
+    margin: 0 0 18px;
+    padding: 14px 20px;
+    box-shadow: none;
+}
+body.reader-flow .reader-article blockquote.reader-callout h3 {
+    margin-top: 0.4em;
+    color: var(--navy);
+}
+
+/* ===== 章アコーディオン（garage details.sec 型） ===== */
+body.reader-flow details.sec {
+    margin: 0 0 2px;
+    background: none;
+    border: none;
+    padding: 0;
+    scroll-margin-top: 12px; /* scrollIntoView の着地オフセット */
+}
+body.reader-flow details.sec > summary {
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    font-family: var(--serif-jp);
+    font-size: clamp(1.1rem, 3.4vw, 1.35rem);
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.5;
+    padding: 26px 44px 10px 0;
+    margin-bottom: 6px;
+    border-bottom: 2px solid var(--glass-border-faint);
+}
+body.reader-flow details.sec > summary::-webkit-details-marker { display: none; }
+body.reader-flow details.sec > summary::after {
+    content: "＋";
+    position: absolute;
+    right: 8px;
+    bottom: 12px;
+    color: var(--gold);
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+body.reader-flow details.sec[open] > summary::after { content: "−"; }
+body.reader-flow details.sec > summary:hover { color: var(--gold); }
+body.reader-flow details.sec .secbody { padding: 2px 0 10px; }
+body.reader-flow details.sec .secbody > *:first-child { margin-top: 14px; }
+
+/* ===== 部の区切り（章をまとめる。正本 MD の <!--PART:第一部|題-->・pd#144） ===== */
+body.reader-flow .reader-article .reader-part {
+    margin: 56px 0 4px;
+    padding: 0 0 8px;
+    scroll-margin-top: 12px;
+}
+body.reader-flow .reader-article .reader-part:first-child,
+body.reader-flow .reader-article .reader-part + details.sec { margin-top: 0; }
+body.reader-flow .reader-article .reader-part__no {
+    margin: 0;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+}
+body.reader-flow .reader-article .reader-part__title {
+    margin: 4px 0 0;
+    font-family: var(--serif-jp);
+    font-size: clamp(1.25rem, 4vw, 1.6rem);
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--navy);
+}
+
+/* ===== 参照の一覧（巻末・build-reader-lp.py の collect_refs が作る・pd#144） ===== */
+body.reader-flow .reader-article ul.reader-refs {
+    list-style: none;
+    padding: 0;
+    margin: 4px 0 18px;
+    font-size: 0.85rem;
+    line-height: 1.7;
+}
+body.reader-flow .reader-article ul.reader-refs li { margin: 0 0 8px; }
+body.reader-flow .reader-article .reader-refs__where {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--gold);
+    text-decoration: none;
+}
+body.reader-flow .reader-article .reader-refs__where::before { content: "章："; }
+body.reader-flow .reader-article .reader-refs__where:hover { text-decoration: underline; }
+
+/* ===== 本文中の畳み（garage details.acc 型カード） ===== */
+body.reader-flow .reader-article details.acc {
+    background: var(--glass-bg-strong);
+    border: 1px solid var(--glass-border-soft);
+    border-radius: 12px;
+    margin: 12px 0;
+    padding: 0 20px 4px;
+    overflow: hidden;
+}
+body.reader-flow .reader-article details.acc > summary {
+    cursor: pointer;
+    list-style: none;
+    margin: 0 -20px;
+    padding: 14px 46px 14px 20px;
+    font-weight: 700;
+    font-size: 0.92rem;
+    color: var(--navy);
+    position: relative;
+}
+body.reader-flow .reader-article details.acc > summary::-webkit-details-marker { display: none; }
+body.reader-flow .reader-article details.acc > summary::after {
+    content: "＋";
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--mute);
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+body.reader-flow .reader-article details.acc[open] > summary::after { content: "−"; }
+body.reader-flow .reader-article details.acc > summary:hover { background: var(--glass-bg-medium); }
+
+/* ===== 表（garage tablewrap 型 = 横スクロール枠） ===== */
+body.reader-flow .reader-article .tablewrap {
+    overflow-x: auto;
+    margin: 18px 0;
+    border: 1px solid var(--glass-border-soft);
+    border-radius: 12px;
+    background: var(--glass-bg-strong);
+    padding: 0;
+    box-shadow: none;
+}
+body.reader-flow .reader-article .tablewrap table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.88rem;
+    min-width: 520px;
+    margin: 0;
+}
+body.reader-flow .reader-article .tablewrap th,
+body.reader-flow .reader-article .tablewrap td {
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--glass-border-soft);
+    vertical-align: top;
+}
+body.reader-flow .reader-article .tablewrap thead th {
+    background: var(--glass-bg-medium);
+    color: var(--navy);
+    font-weight: 700;
+    white-space: nowrap;
+}
+body.reader-flow .reader-article .tablewrap tbody tr:last-child td { border-bottom: none; }
+
+/* 横スクロールなしで収める表（正本 MD で <div class="tablefit"> に囲む。DESIGN-RULES B1: 320px 幅で横スクロールなし） */
+body.reader-flow .reader-article .tablefit .tablewrap { overflow-x: visible; }
+body.reader-flow .reader-article .tablefit table {
+    min-width: 0;
+    table-layout: fixed;
+}
+body.reader-flow .reader-article .tablefit thead th { white-space: normal; }
+body.reader-flow .reader-article .tablefit th:first-child,
+body.reader-flow .reader-article .tablefit td:first-child { width: 16%; }
+/* 三列をほぼ均等に割る比較表（概念｜駆動源｜条件など。pjdhiro 2026-11-04 pd#144「表の方が見やすい。横スクロールせずに見たい。スマホを考慮」） */
+body.reader-flow .reader-article .tablefit.cols-3 th:first-child,
+body.reader-flow .reader-article .tablefit.cols-3 td:first-child { width: 32%; }
+body.reader-flow .reader-article .tablefit.cols-3 th:nth-child(2),
+body.reader-flow .reader-article .tablefit.cols-3 td:nth-child(2) { width: 30%; }
+body.reader-flow .reader-article .tablefit.cols-4 th:first-child,
+body.reader-flow .reader-article .tablefit.cols-4 td:first-child { width: 22%; }
+body.reader-flow .reader-article .tablefit.cols-4 th:nth-child(2),
+body.reader-flow .reader-article .tablefit.cols-4 td:nth-child(2),
+body.reader-flow .reader-article .tablefit.cols-4 th:nth-child(3),
+body.reader-flow .reader-article .tablefit.cols-4 td:nth-child(3) { width: 26%; }
+body.reader-flow .reader-article .tablefit .en {
+    display: block;
+    margin-top: 2px;
+    font-size: 0.82em;
+    color: var(--mute);
+}
+@media (max-width: 600px) {
+    body.reader-flow .reader-article .tablefit th,
+    body.reader-flow .reader-article .tablefit td {
+        padding: 8px 6px;
+        font-size: 0.8rem;
+        overflow-wrap: anywhere;
+    }
+    body.reader-flow .reader-article .tablefit .en { display: none; }
+}
+
+/* ===== 目次（garage 型: PC=常設サイドバー / モバイル=右下ボタン＋ドロワー） ===== */
+body.reader-flow #toc-btn {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 60;
+    background: var(--navy);
+    color: var(--white);
+    border: none;
+    border-radius: 99px;
+    padding: 12px 18px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    font-family: var(--sans);
+    box-shadow: var(--glass-shadow-modal);
+    cursor: pointer;
+}
+body.reader-flow #toc-btn:active { transform: scale(0.96); }
+body.reader-flow #toc-bd {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.35);
+    z-index: 59;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+}
+body.reader-flow.toc-open #toc-bd { opacity: 1; visibility: visible; }
+body.reader-flow #toc {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: min(84vw, 330px);
+    z-index: 61;
+    background: var(--glass-bg-strong);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-left: 1px solid var(--glass-border-soft);
+    padding: 20px 14px;
+    overflow-y: auto;
+    transform: translateX(105%);
+    transition: transform 0.26s ease;
+    box-shadow: var(--glass-shadow-modal);
+}
+body.reader-flow.toc-open #toc { transform: translateX(0); }
+body.reader-flow #toc .toc-h {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    font-weight: 700;
+    margin: 0 0 10px;
+    padding: 0 8px;
+}
+body.reader-flow #toc .toc-x {
+    background: none;
+    border: none;
+    color: var(--mute);
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 4px;
+}
+body.reader-flow #toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: toc;
+}
+body.reader-flow #toc li { counter-increment: toc; }
+/* 部の行（章をまとめる区切り・番号を数えない・pd#144） */
+body.reader-flow #toc li.toc-part { counter-increment: none; margin-top: 10px; }
+body.reader-flow #toc li.toc-part:first-child { margin-top: 0; }
+body.reader-flow #toc li.toc-part a {
+    font-family: var(--serif-jp);
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--gold);
+    padding: 6px 10px 2px;
+    letter-spacing: 0.04em;
+}
+body.reader-flow #toc li.toc-part a::before { content: none; }
+body.reader-flow #toc li.toc-part a:hover { background: none; color: var(--navy); }
+body.reader-flow #toc a {
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 0.875rem;
+    line-height: 1.45;
+}
+body.reader-flow #toc a::before {
+    content: counter(toc) ".";
+    color: var(--mute);
+    font-weight: 700;
+    margin-right: 8px;
+}
+body.reader-flow #toc a:hover { background: var(--glass-bg-medium); }
+body.reader-flow #toc a.active {
+    background: var(--glass-bg-medium);
+    color: var(--navy);
+    box-shadow: inset 3px 0 0 var(--gold);
+}
+body.reader-flow #toc a.active::before { color: var(--gold); }
+body.reader-flow #toc .toc-main { display: inline; }
+body.reader-flow #toc .toc-sub2 {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--mute);
+    margin: 1px 0 0 1.4em;
+    line-height: 1.35;
+}
+body.reader-flow #toc a.active .toc-sub2 { color: var(--navy); }
+@media (min-width: 1260px) {
+    /* PC: 左マージンに常設 TOC。ボタン・背景は不要 */
+    body.reader-flow #toc {
+        left: 20px;
+        right: auto;
+        top: 92px;
+        height: auto;
+        max-height: calc(100vh - 116px);
+        width: 206px;
+        transform: none;
+        box-shadow: var(--glass-shadow);
+        border: 1px solid var(--glass-border-soft);
+        border-radius: 12px;
+    }
+    body.reader-flow #toc .toc-x { display: none; }
+    body.reader-flow #toc-btn,
+    body.reader-flow #toc-bd { display: none; }
+}
+
+/* トップと同じ Menu（.top-bar・position: fixed）を置くページで、冒頭の草稿バナーが Menu ボタンの下に潜らないよう
+   先頭のバナーだけ下げる（love-driven-dev・2026-11-03）。スクリーナーはバナーを持たないので影響しない */
+body.reader-flow .top-bar ~ #content .reader-wrap > .draft-banner:first-child {
+    margin-top: 4.25rem;
+}
+
+/* ===== 畳みの中の見出し（表の行に対応＝h4 群・h5 概念名。DESIGN-RULES §13） ===== */
+body.reader-flow .reader-article details.acc h4 {
+    margin: 22px 0 4px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    color: var(--gold);
+    border-bottom: 1px solid var(--glass-border-soft);
+    padding-bottom: 4px;
+}
+body.reader-flow .reader-article details.acc h5 {
+    margin: 14px 0 2px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--navy);
+}
+body.reader-flow .reader-article details.acc h5 + p { margin-top: 2px; }
+/* 二列の項目表（概念ごとの 出どころ／考え方／よく効く場面／届かないところ。pjdhiro 2026-11-04 pd#144「２列三行がいい」） */
+body.reader-flow .reader-article .tablefit.cols-2 th:first-child,
+body.reader-flow .reader-article .tablefit.cols-2 td:first-child { width: 28%; color: var(--mute); }
+body.reader-flow .reader-article details.acc .tablefit.cols-2 .tablewrap { margin: 6px 0 14px; }
+
+/* ===== 章と章のあいだの転回点（正本 MD の <!--TURN-->。章を閉じていても見える。pd#144） ===== */
+body.reader-flow .reader-article .reader-turn {
+    margin: 36px auto;
+    padding: 22px 8px;
+    max-width: 30em;
+    text-align: center;
+    border-top: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+}
+body.reader-flow .reader-article .reader-turn p {
+    font-family: var(--serif-jp);
+    font-weight: 300;
+    line-height: 1.9;
+    color: var(--mid);
+    margin: 0;
+}
+body.reader-flow .reader-article .reader-turn p:first-child {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--navy);
+    margin-bottom: 10px;
+}
+
+/* ===== 章本文の小見出し（構成要素の「主張」「仮説」など。h3 の下の短いラベル。DESIGN-RULES §13） ===== */
+body.reader-flow .reader-article .secbody > h4 {
+    margin: 16px 0 2px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+}
+body.reader-flow .reader-article .secbody > h4 + p { margin-top: 2px; }

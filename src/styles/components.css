@@ -1,0 +1,230 @@
+/* === Cards === */
+.glow-card {
+    background: rgba(var(--glow-r),var(--glow-g),var(--glow-b), 0.85);
+    border: 1px solid rgba(var(--glow-r),var(--glow-g),var(--glow-b), var(--card-border-alpha));
+    border-radius: 6px;
+    padding: 2rem;
+}
+
+.glow-card p,
+.glow-card li,
+.glow-card h3,
+.glow-card span {
+    text-shadow:
+        0 0 10px rgba(255, 255, 255, 1),
+        0 0 20px rgba(255, 255, 255, 0.67);
+}
+
+.card h3 {
+    color: var(--gold);
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+.card ul {
+    list-style: none;
+    margin: 0;
+}
+
+.card ul li {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--mid);
+    padding: 0.4rem 0;
+    padding-left: 1.25rem;
+    position: relative;
+}
+
+.card ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 6px;
+    height: 1px;
+    background: var(--mute);
+}
+
+/* === Pill Links === */
+.pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    margin-top: 2rem;
+}
+
+.pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    font-family: var(--sans);
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.pill--doing {
+    color: var(--coral);
+    border: 1px solid rgba(176, 64, 80, 0.3);
+}
+
+.pill--doing:hover {
+    background: var(--coral);
+    color: #fff;
+    border-color: var(--coral);
+}
+
+.pill--being {
+    color: var(--navy);
+    border: 1px solid rgba(46, 58, 110, 0.3);
+}
+
+.pill--being:hover {
+    background: var(--navy);
+    color: #fff;
+    border-color: var(--navy);
+}
+
+/* === Repos === */
+.repo-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.repo-card__title {
+    display: block;
+    font-family: var(--serif-en);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--ink);
+}
+
+.repo-card__desc {
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--mute);
+    margin-top: 0.5rem;
+}
+
+/* 全幅のフィーチャーカード（読み物への導線。3カラムの下に一枚で敷く） */
+.repo-card.repo-card--feature {
+    grid-column: 1 / -1;
+    margin-top: 0.75rem;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.repo-card--feature .repo-card__title {
+    font-family: var(--serif-jp);
+    line-height: 1.6;
+}
+
+/* 説明文: --mute では両背景で沈むため本文色 --mid + グロー（.glow-link span 既定）で可読性を確保。
+   階層差は色でなく文字サイズで付ける（title 1.1rem / desc 0.95rem） */
+.repo-card.repo-card--feature .repo-card__desc {
+    color: var(--mid);
+    font-size: 0.95rem;
+    line-height: 1.9;
+}
+
+/* === About Trigger === */
+.about-trigger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.85);
+    color: var(--ink);
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+    border: 1px solid var(--glass-border-faint);
+}
+
+.about-trigger__letter {
+    font-family: var(--serif-en);
+    font-style: italic;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1;
+    pointer-events: none;
+}
+
+.about-trigger:hover {
+    color: var(--ink);
+    background: var(--glass-bg-soft);
+}
+
+/* === Link — コンパクト、下線、ホバーで光る */
+.glow-link {
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glow-link span {
+    text-shadow:
+        0 0 10px rgba(255, 255, 255, 1),
+        0 0 20px rgba(255, 255, 255, 0.67);
+}
+
+.glow-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-bottom-color: rgba(0, 0, 0, 0.15);
+    padding-left: 1.75rem;
+}
+
+/* 誤解FAQ アコーディオン（DESIGN-RULES §9 / pd#110） */
+.misconception {
+    margin-top: 1.25rem;
+}
+
+.misconception > summary {
+    cursor: pointer;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    min-height: 44px;
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
+.misconception > summary::-webkit-details-marker {
+    display: none;
+}
+
+.misconception > summary::before {
+    content: "▸";
+    transition: transform 0.2s ease;
+}
+
+.misconception[open] > summary::before {
+    transform: rotate(90deg);
+}
+
+.misconception-body {
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
+}
+
+.misconception-body ul {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.misconception-body li {
+    margin-bottom: 0.5rem;
+}
