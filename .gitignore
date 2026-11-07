@@ -1,0 +1,7 @@
+.DS_Store
+node_modules/
+.cache/
+.claude/settings.local.json
+.claude/worktrees/
+# 公開してよいかの点検で使う、手元だけの語の一覧（公開しない）
+.publish-check-terms

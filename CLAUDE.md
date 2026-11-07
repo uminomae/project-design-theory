@@ -1,0 +1,22 @@
+# CLAUDE.md
+
+プロジェクトデザイン論のサイトと、その論拠を置く repo。構築中。方針は `docs/BUILD-PLAN.md`。
+対話する人間の固有名詞は **pjdhiro**。
+
+## 絶対原則
+
+- **この repo は公開**。入れる前に `docs/PUBLISH-CHECK.md` の点検を通す。迷うものは入れずに pjdhiro に確かめる。
+- **今までの repo（project-design・creation-space・kesson-space・awareness-space）は材料として読む**。そのまま写さない。調査結果は一次ソースで照合し直し、通ったものを書き直す。
+- **pjdhiro の発言は趣旨を残す**。誤字・脱字は直してよい。何への答えだったかを添え、Claude の推測を混ぜない。趣旨が変わりうる直しは pjdhiro に確かめる。
+- **取り消せない操作、価値判断を伴う操作は pjdhiro の明示的承認なしに実行しない**。
+- **しっくり感の判定・理論の採否・公開判定は pjdhiro が行う**。
+
+## 規約の持ち込み
+
+今までの repo の規約（調べ方・執筆・品質の検査）は、見直してから一つずつ入れる。入れるまでは、この CLAUDE.md と `docs/` にあるものだけが規約。
+
+## Git
+
+- 作業ブランチは `develop`。`main` へのマージは公開にあたるので、pjdhiro が判断する。
+- commit の末尾：`Co-Authored-By: Claude <noreply@anthropic.com>`
+- 初回だけ `git config core.hooksPath .githooks` を実行して、公開前の点検を有効にする。

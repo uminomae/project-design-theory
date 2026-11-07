@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# 公開してよいかの点検（docs/PUBLISH-CHECK.md）
+exec "$(git rev-parse --show-toplevel)/scripts/publish-check.sh"
