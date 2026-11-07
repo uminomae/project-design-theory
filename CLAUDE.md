@@ -13,7 +13,15 @@
 
 ## 規約の持ち込み
 
-今までの repo の規約（調べ方・執筆・品質の検査）は、見直してから一つずつ入れる。入れるまでは、この CLAUDE.md と `docs/` にあるものだけが規約。
+今までの repo の規約（調べ方・執筆・品質の検査）は、見直してから一つずつ入れる。入れるまでは、この CLAUDE.md と `docs/` にあるものだけが規約。見直しの記録は `docs/RULES-REVIEW.md`。
+
+## 対話・執筆の前に読む
+
+1. `docs/rules/stance.md`：pjdhiro の見方と判断の仕方。迷ったら、pjdhiro ならどう判断するかをここで確かめる。
+2. `docs/rules/corrections.md`：Claude が繰り返す誤りの型。自分の案がどの型に当たるかを見る。
+3. `docs/rules/writing.md`：公開文の書き方。
+
+新しい指摘を受けたら、同じセッションで stance.md か corrections.md に足す。
 
 ## Git
 
