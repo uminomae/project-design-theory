@@ -20,6 +20,7 @@
 1. `docs/rules/stance.md`：pjdhiro の見方と判断の仕方。迷ったら、pjdhiro ならどう判断するかをここで確かめる。
 2. `docs/rules/corrections.md`：Claude が繰り返す誤りの型。自分の案がどの型に当たるかを見る。
 3. `docs/rules/writing.md`：公開文の書き方。
+4. `docs/rules/sources.md`：調べ方と原典の照合（調べもの・引用をするとき）。
 
 新しい指摘を受けたら、同じセッションで stance.md か corrections.md に足す。
 
