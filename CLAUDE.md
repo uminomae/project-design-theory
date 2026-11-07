@@ -8,10 +8,12 @@
 | 場所 | 中身 |
 |---|---|
 | `pd/` | プロジェクトデザイン論（今までの project-design から複製）。サイト・読み物・knowledge・wiki |
-| `cs/`・`as/`・`ks/` | 創造とは・意識とは・欠損駆動思考（これから順に移す） |
+| `cs/`・`as/`・`ks/` | 創造とは・意識とは・欠損駆動思考（今までの creation-space・awareness-space・kesson-space から複製） |
 | 根の `docs/`・`scripts/`・`.githooks/`・`.github/` | この repo 全体の方針・規約・公開前の点検・公開の手順 |
 
-公開するのは `pd/` のサイトのファイルと wiki だけ（`.github/workflows/pages.yml`）。
+公開は `.github/workflows/pages.yml`。`pd/` はサイトのファイルと wiki だけを根に、`as/`・`ks/`・`cs/` はディレクトリごと `/as/` などに出す。
+
+原典の PDF（`cs/knowledge/raw/`・`cs/evidence/**/*.pdf`）と、サイトで使わない素材（`cs/resources/`）は git に入れず、手元だけに置く。大きくなりそうなものは、入れる前に `.gitignore` を考える。
 
 ## 絶対原則
 
