@@ -1,4 +1,4 @@
-# llms.txt — awareness-space (Consciousness Research)
+# llms.txt — 意識とは / What Is Awareness (Consciousness Research)
 
 > This file helps AI assistants and language models understand the structure and content of this site.
 
@@ -46,7 +46,7 @@ This research is in progress. It distinguishes between established knowledge (bo
 
 - `index.html` — Main entry point with visualization (report cards are rendered by JS)
 - Report pages (guides, topic, survey, slides) are published on pjdhiro: https://uminomae.github.io/pjdhiro/assets/awareness/
-- Source repository (research notes under `evidence/` and `knowledge/`): https://github.com/uminomae/awareness-space
+- Source repository (research notes under `evidence/` and `knowledge/`): https://github.com/uminomae/project-design-theory/tree/main/as
 
 ## Report Pages
 
@@ -76,9 +76,9 @@ Published on pjdhiro (GitHub Pages). The top page renders these as JS cards; the
 | Project | URL | Focus |
 |---------|-----|-------|
 | pjdhiro | https://uminomae.github.io/pjdhiro/ | Project Design Hub (parent site) |
-| project-design | https://uminomae.github.io/project-design-theory/ | Project Design theory linking design thinking, management, and execution |
-| creation-space | https://uminomae.github.io/project-design-theory/cs/ | Creativity research across 30 academic domains |
-| kesson-space | https://uminomae.github.io/project-design-theory/ks/ | Kesson-Driven Thinking framework |
+| プロジェクトデザイン論 / Project Design Theory | https://uminomae.github.io/project-design-theory/ | Project Design theory linking design thinking, management, and execution |
+| 創造とは / What Is Creation | https://uminomae.github.io/project-design-theory/cs/ | Creativity research across 30 academic domains |
+| 欠損駆動思考 / Kesson-Driven Thinking | https://uminomae.github.io/project-design-theory/ks/ | Kesson-Driven Thinking framework |
 
 ## Author
 

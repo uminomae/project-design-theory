@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO="${REPO:-uminomae/awareness-space}"
+REPO="${REPO:-uminomae/project-design-theory}"
 OUTBOX="${OUTBOX:-.cache/outbox}"
 
 collect_issues_from_done() {
