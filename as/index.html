@@ -99,6 +99,14 @@
   <link rel="stylesheet" href="./src/styles/slides-typography.css">
   <link rel="stylesheet" href="./src/styles/slides-responsive.css">
   <link rel="stylesheet" href="./src/styles/dev-panel.css">
+  <!-- 見本（#63-1・公開しない）：?contrast=navy / ?contrast=band のときだけ文字の色の見本を出す。正式にするときに消す -->
+  <script>
+    (function () {
+      var sample = new URLSearchParams(location.search).get('contrast');
+      if (sample === 'navy' || sample === 'band') document.documentElement.dataset.contrastSample = sample;
+    })();
+  </script>
+  <link rel="stylesheet" href="./src/styles/contrast-samples.css">
 
   <script type="importmap">
     {
