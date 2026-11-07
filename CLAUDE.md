@@ -34,6 +34,7 @@
 
 ## Git
 
-- 作業ブランチは `develop`。`main` へのマージは公開にあたるので、pjdhiro が判断する。
+- 作業は `develop` で行い、確かめたら基本的に毎回 `main` に入れて公開する。確かめは手元のサーバーで行う（速いから）。git は履歴のためで、編集者は pjdhiro 一人（pjdhiro 2026-11-07）。
+- 公開は GitHub Actions（`.github/workflows/pages.yml`）。出すのはサイトのファイルだけ。
 - commit の末尾：`Co-Authored-By: Claude <noreply@anthropic.com>`
 - 初回だけ `git config core.hooksPath .githooks` を実行して、公開前の点検を有効にする。
