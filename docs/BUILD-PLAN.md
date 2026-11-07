@@ -16,7 +16,7 @@
 - 四つの repo（project-design・creation-space・awareness-space・kesson-space）を、この repo の一つの git でまとめて扱う。repo ごとに `pd/`・`cs/`・`as/`・`ks/` に分けて入れる。一つの論として明確になる。原典の PDF（creation-space の `knowledge/raw/` など）は git に入れず、手元だけで、この repo のディレクトリの中に置く（`.gitignore` で外す）。原典を除けば、まとめても 200MB ほど。（pjdhiro 2026-11-07）
 - 手元の置き方の最終形：この repo（`~/dev/pd/project-design-theory/`）の中に `pd/`・`cs/`・`as/`・`ks/` がある。原典の PDF も、この中の git の外に置く。今までの四つの repo は名前を変えて非公開にし、手元では `~/dev/` の外に置く（`~/dev/` には公開の repo だけを置く）。`~/dev/` 直下の移行用のリンクは、移し終えたら外す。今は移行の途中なので、新旧が並んでいる。（pjdhiro 2026-11-07）
 - 今までの公開ページ（`uminomae.github.io/project-design/` ほか四つ）は、転送元として残す。中身は持たず、新しい場所へのリンクと転送だけのシンプルなページにする。公開ページは公開 repo からしか出せない。また GitHub Pages の URL は repo の名前で決まる。なので、次の順で行う。（pjdhiro 2026-11-07）
-  1. 今までの repo の名前を変え（アーカイブ用の名前。まだ決めていない）、非公開にする。
+  1. 今までの repo の名前を変え（アーカイブ用の名前は、末尾に `-archive` を付ける。例：`awareness-space-archive`）、非公開にする。
   2. 同じ名前（project-design ほか）で、中身のない公開 repo を作り直す。
   3. `python3 redirects/build.py` で作った `redirects/<名前>/` の中身だけを置き、Pages で出す。今までの URL の下の階層も、新しい場所の同じ階層へ送る（404.html）。
 - リンクは一度に揃えない。徐々に更新していき、そのたびに要るリンクを張り直す。（pjdhiro 2026-11-07）
