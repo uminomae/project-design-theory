@@ -186,24 +186,18 @@
   background-size: 1.15rem 2px, 1.15rem 2px, 1.15rem 2px;
 }
 
+/* 開いたメニューの地は、どの幅でもトップバーと同じ明るい地（#63-3）。
+   狭い幅だけ暗い地にすると、明るい地向けの文字色が読めなくなる。 */
 #kessonTopbarNav {
   margin-top: 0.35rem;
   padding: 0.35rem 0.2rem 0.5rem;
-  border-radius: 0.6rem;
-  background: var(--as-topbar-nav-bg);
-  border: 1px solid var(--as-topbar-nav-border);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: transparent;
 }
 
 @media (min-width: 768px) {
   #kessonTopbarNav {
     margin-top: 0;
     padding: 0;
-    background: transparent;
-    border: 0;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
   }
 
   #kesson-topbar .topbar-link-btn {
