@@ -177,20 +177,18 @@ h1 {
 
 .tagline {
   font-size: var(--ds-overlay-tagline, 0.80rem);
-  color: rgba(var(--awareness-hero-tagline-rgb, var(--color-heading)), 0.88);
+  color: rgb(var(--awareness-hero-tagline-rgb, var(--color-heading)));
   font-family: var(--ds-font-serif-display);
   letter-spacing: 0.05em;
   line-height: 1.8;
-  text-shadow: 0 0 30px rgba(var(--color-accent), 0.3);
 }
 
 .tagline-en {
   font-size: var(--ds-overlay-tagline-en, 0.80rem);
-  color: rgba(var(--awareness-hero-tagline-sub-rgb, var(--color-heading)), 0.82);
+  color: rgb(var(--awareness-hero-tagline-sub-rgb, var(--color-heading)));
   font-family: var(--ds-font-serif-ui);
   letter-spacing: 0.03em;
   line-height: 1.6;
-  text-shadow: 0 0 30px rgba(var(--color-accent), 0.3);
 }
 
 html[lang="en"] h1 {
@@ -443,15 +441,12 @@ html[lang="en"] #taglines {
 .room-narration-text {
   font-family: 'Noto Serif JP', Georgia, serif;
   font-size: clamp(0.95rem, 2.8vmin, 1.35rem);
-  font-weight: 300;
-  color: rgba(210, 225, 250, 0.9);
+  font-weight: 400;
+  color: rgba(31, 51, 87, 1);
   letter-spacing: 0.08em;
   line-height: 2.2;
   max-width: 580px;
   margin: 0 auto;
-  text-shadow:
-    0 0 10px rgba(0, 0, 0, 1.0),
-    0 0 20px rgba(0, 0, 0, 0.67);
 }
 
 .section-content-wrap {
@@ -463,14 +458,19 @@ html[lang="en"] #taglines {
 .section-heading {
   font-size: var(--ds-section-heading, 0.80rem);
   font-weight: 400;
-  color: rgba(var(--color-sub-text), 0.5);
+  color: rgba(31, 51, 87, 1);
   letter-spacing: 0.15em;
   text-transform: uppercase;
   font-family: var(--ds-font-mono-ui);
   margin: 0 0 0.85rem;
-  text-shadow:
-    0 0 10px rgba(0, 0, 0, 1.0),
-    0 0 20px rgba(0, 0, 0, 0.67);
+}
+
+/* 「用語 Wiki」は暗いパネルの上にあるので、文字を明るく不透明にする（#63-1） */
+#reports-open-wiki-btn {
+  --bs-btn-color: rgba(240, 245, 255, 0.96);
+  --bs-btn-border-color: rgba(220, 232, 252, 0.55);
+  color: rgba(240, 245, 255, 0.96);
+  border-color: rgba(220, 232, 252, 0.55);
 }
 
 .section-heading-link {
