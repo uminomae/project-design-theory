@@ -6,7 +6,7 @@
 ## 絶対原則
 
 - **この repo は公開**。入れる前に `docs/PUBLISH-CHECK.md` の点検を通す。迷うものは入れずに pjdhiro に確かめる。
-- **今までの repo（project-design・creation-space・kesson-space・awareness-space）は材料として読む**。そのまま写さない。調査結果は一次ソースで照合し直し、通ったものを書き直す。ただし、プロジェクトデザイン論のサイトだけは、今の状態を複製してここで更新していく（pjdhiro 2026-11-07・`docs/BUILD-PLAN.md`）。
+- **今までの repo（project-design・creation-space・kesson-space・awareness-space）は材料として読む**。そのまま写さない。調査結果は一次ソースで照合し直し、通ったものを書き直す。ただし、プロジェクトデザイン論のサイトだけは、今の状態を複製してここで更新していく（pjdhiro 2026-11-07・`docs/BUILD-PLAN.md`）。今までの repo は四つとも更新しない。直しはこの repo で行う。
 - **pjdhiro の発言は趣旨を残す**。誤字・脱字は直してよい。何への答えだったかを添え、Claude の推測を混ぜない。趣旨が変わりうる直しは pjdhiro に確かめる。
 - **取り消せない操作、価値判断を伴う操作は pjdhiro の明示的承認なしに実行しない**。
 - **しっくり感の判定・理論の採否・公開判定は pjdhiro が行う**。
