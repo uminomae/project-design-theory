@@ -24,11 +24,26 @@ export const WIKI_DIRS = [
   { dir: join(ROOT, "wiki", "entities"), category: "entities" },
 ];
 
-/** wiki ページ名から {term, url} のマップを生成 */
-export async function buildTermMap() {
+/**
+ * wiki ページの URL を Quartz の slug に合わせて作る。
+ * Quartz は空白を `-` に置き換える（`Love 駆動開発` → `Love-駆動開発`）。
+ * `%20` のままだと公開の wiki で 404 になる。
+ * category が空のときは wiki の根のページ。
+ */
+export function wikiPageUrl(category, stem) {
+  const slug = stem.replace(/\s/g, "-");
+  const path = category ? `${category}/${encodeURIComponent(slug)}` : encodeURIComponent(slug);
+  return `${WIKI_BASE}/${path}`;
+}
+
+// 用語にしないメタページ
+const META_STEMS = new Set(["wikilink", "index", "about", "log"]);
+
+/** wiki ページ名から {term, url} のマップを生成（dirs を渡せば、その置き場から作る） */
+export async function buildTermMap(dirs = WIKI_DIRS) {
   const terms = [];
 
-  for (const { dir, category } of WIKI_DIRS) {
+  for (const { dir, category } of dirs) {
     if (!existsSync(dir)) continue;
     const files = await readdir(dir);
 
@@ -37,11 +52,11 @@ export async function buildTermMap() {
       const stem = file.replace(/\.md$/, "");
 
       // wikilink.md 等のメタページは除外
-      if (stem === "wikilink" || stem === "index") continue;
+      if (META_STEMS.has(stem)) continue;
 
       terms.push({
         term: stem,
-        url: `${WIKI_BASE}/${category}/${encodeURIComponent(stem)}`,
+        url: wikiPageUrl(category, stem),
       });
     }
   }

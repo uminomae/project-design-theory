@@ -3,7 +3,8 @@
  * compile-content-links.mjs
  *
  * pd (project-design) の正本スクリプトから buildTermMap / injectLinks を
- * import し、as (awareness-space) の about MD に wiki リンクを注入する。
+ * import し、as の about MD に wiki リンクを注入する。
+ * 用語マップは scripts/build-wiki-terms.mjs と同じ（concepts/・keywords/・根）。
  *
  * 正本: pd/scripts/compile-content-links.mjs
  *
@@ -13,12 +14,8 @@
 import { readdir, readFile, writeFile, mkdir } from "node:fs/promises";
 import { join, basename, relative } from "node:path";
 
-import {
-  WIKI_DIRS,
-  WIKI_BASE,
-  buildTermMap,
-  injectLinks,
-} from "../../pd/scripts/compile-content-links.mjs";
+import { injectLinks } from "../../pd/scripts/compile-content-links.mjs";
+import { buildAsTermMap } from "./build-wiki-terms.mjs";
 
 const ROOT = new URL("..", import.meta.url).pathname.replace(/\/$/, "");
 const CONTENT_DIR = join(ROOT, "assets", "about");
@@ -36,7 +33,7 @@ async function compileFile(filePath, termMap) {
 
 async function main() {
   await mkdir(COMPILED_DIR, { recursive: true });
-  const termMap = await buildTermMap();
+  const termMap = await buildAsTermMap();
 
   if (termMap.length === 0) {
     console.error("No wiki pages found, nothing to link.");

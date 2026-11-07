@@ -2,53 +2,19 @@
  * wiki-links.js
  *
  * ブラウザ render-time で HTML 内の wiki 用語初出をリンクに置換する。
- * 用語マップは pd (project-design) wiki の正本から生成。
+ * 用語マップは pd/wiki の実在するページから生成した src/wiki-terms.js を読む。
  *
  * Usage:
  *   import { injectWikiLinks } from './wiki-links.js';
  *   const html = injectWikiLinks(parsedHtml);
  */
 
+import { TERM_MAP } from './wiki-terms.js';
+
 export const WIKI_BASE = '/project-design-theory/wiki';
 export const WIKI_INDEX_URL = `${WIKI_BASE}/`;
 
-// pd wiki/concepts/ + wiki/entities/ から生成（長い順にソート済み）
-const TERM_MAP = [
-  { term: 'シュワルツの基本的価値理論', category: 'entities' },
-  { term: 'PDブリッジ保持論点', category: 'concepts' },
-  { term: 'Value-Sensitive-Design', category: 'entities' },
-  { term: 'ウィキッド・プロブレム', category: 'entities' },
-  { term: 'デイヴィッド・グレーバー', category: 'entities' },
-  { term: 'ネガティブケイパビリティ', category: 'entities' },
-  { term: 'アウェアネスモデル', category: 'concepts' },
-  { term: 'プロジェクトデザイン', category: 'concepts' },
-  { term: 'アネット・ベイアー', category: 'entities' },
-  { term: '創造の5段階モデル', category: 'entities' },
-  { term: '信頼の多元的記述', category: 'concepts' },
-  { term: 'ドナルド・ショーン', category: 'entities' },
-  { term: 'ナイジェル・クロス', category: 'entities' },
-  { term: 'ニクラス・ルーマン', category: 'entities' },
-  { term: 'ピエール・ブルデュー', category: 'entities' },
-  { term: 'Love 駆動開発', category: 'concepts' },
-  { term: '信頼の定義仮説', category: 'concepts' },
-  { term: 'プロスペクト理論', category: 'entities' },
-  { term: '欠損駆動思考', category: 'entities' },
-  { term: 'デザイン思考', category: 'entities' },
-  { term: '測定設計原則', category: 'concepts' },
-  { term: '内受容感覚', category: 'entities' },
-  { term: '山岸俊男', category: 'entities' },
-  { term: '情動の構成', category: 'entities' },
-  { term: '愛着理論', category: 'entities' },
-  { term: '間主観性', category: 'entities' },
-  { term: 'アブダクション', category: 'entities' },
-  { term: '感情処理', category: 'concepts' },
-  { term: '4層モデル', category: 'entities' },
-  { term: '欠損', category: 'entities' },
-  { term: '抱持', category: 'entities' },
-].map(({ term, category }) => ({
-  term,
-  url: `${WIKI_BASE}/${category}/${encodeURIComponent(term)}`,
-}));
+// 用語マップは src/wiki-terms.js（scripts/build-wiki-terms.mjs が pd/wiki から生成。長い順）
 
 /**
  * 文字列内に含まれる wiki 用語を長い順に走査し、最初に見つかった用語の URL を返す。

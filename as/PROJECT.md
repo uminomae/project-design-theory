@@ -27,6 +27,7 @@
 5. `docs/README.md` と `evidence/PROJECT.md` を読む
 6. 対象タスクの Issue と関連ファイルを読む
 7. UI 確認が必要なら `bash server.sh 3003` でローカル確認する
+8. `pd/wiki` のページが増えた・名前が変わったときは `node scripts/build-wiki-terms.mjs` で用語リンクの `src/wiki-terms.js` を作り直す
 
 開始時点でタスクが曖昧なら、まず `DONE-session` と open Issue を起点に現在地を復元してから進める。
 
