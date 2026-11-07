@@ -74,8 +74,8 @@ Laughlin と Pines は、非相対論的量子力学の基本方程式が日常�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D02/D02-S11_laughlin-2000.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D02/D02-S11_laughlin-2000.md)（manifest_id: `D02-S11`）
-- **cs 精読ノート**: [knowledge/source-notes/D02/D02-S11_laughlin-2000.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D02/D02-S11_laughlin-2000.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D02/D02-S11_laughlin-2000.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D02/D02-S11_laughlin-2000.md)（manifest_id: `D02-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D02/D02-S11_laughlin-2000.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D02/D02-S11_laughlin-2000.md)
 - **この wiki ページ（pd）**: [wiki/sources/D02_laughlin_2000_the-theory-of-everything.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D02_laughlin_2000_the-theory-of-everything.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

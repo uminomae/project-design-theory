@@ -62,8 +62,8 @@ Zipf 法則と Pareto 法則に基づく離散・連続相関関数の理論的�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D27/D27-S16_chen-2011.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D27/D27-S16_chen-2011.md)（manifest_id: `D27-S16`）
-- **cs 精読ノート**: [knowledge/source-notes/D27/D27-S16_chen-2011.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D27/D27-S16_chen-2011.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D27/D27-S16_chen-2011.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D27/D27-S16_chen-2011.md)（manifest_id: `D27-S16`）
+- **cs 精読ノート**: [knowledge/source-notes/D27/D27-S16_chen-2011.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D27/D27-S16_chen-2011.md)
 - **この wiki ページ（pd）**: [wiki/sources/D27_chen_2011_modeling-fractal-structure-of.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D27_chen_2011_modeling-fractal-structure-of.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

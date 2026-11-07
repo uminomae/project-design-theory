@@ -81,7 +81,7 @@ note: "cs 既要約なし、本ページは pd 側で WebFetch (Frontiers HTML) 
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 精読ノート**: [knowledge/source-notes/D24/D24-S16_berkovich-ohana-2014.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D24/D24-S16_berkovich-ohana-2014.md)
+- **cs 精読ノート**: [knowledge/source-notes/D24/D24-S16_berkovich-ohana-2014.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D24/D24-S16_berkovich-ohana-2014.md)
 - **この wiki ページ（pd）**: [wiki/sources/D24_berkovichohana_2014_the-consciousness-state-space.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D24_berkovichohana_2014_the-consciousness-state-space.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

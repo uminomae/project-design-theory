@@ -49,7 +49,7 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D02_zurek_2003_decoherence-einselection-quantum-origins-classical.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D02_zurek_2003_decoherence-einselection-quantum-origins-classical.pdf)（manifest_id: `D02-S09`）
-- **cs 精読ノート**: [knowledge/source-notes/D02/D02-S09_zurek-2003.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D02/D02-S09_zurek-2003.md)
+- **cs 原典ファイル**: [knowledge/raw/D02_zurek_2003_decoherence-einselection-quantum-origins-classical.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D02_zurek_2003_decoherence-einselection-quantum-origins-classical.pdf)（manifest_id: `D02-S09`）
+- **cs 精読ノート**: [knowledge/source-notes/D02/D02-S09_zurek-2003.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D02/D02-S09_zurek-2003.md)
 - **この wiki ページ（pd）**: [wiki/sources/D02_zurek_2003_decoherence-einselection-quantum-origins-classical.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D02_zurek_2003_decoherence-einselection-quantum-origins-classical.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

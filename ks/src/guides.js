@@ -58,7 +58,7 @@ const GUIDE_LINKS = [
 const EXTERNAL_LINKS = [
     {
         key: 'creation',
-        url: 'https://uminomae.github.io/creation-space/',
+        url: 'https://uminomae.github.io/project-design-theory/cs/',
     },
     {
         key: 'awareness',

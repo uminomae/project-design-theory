@@ -74,8 +74,8 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D28/D28-S13_randazzo-2026-emergence-dance-improvisation.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D28/D28-S13_randazzo-2026-emergence-dance-improvisation.md)（manifest_id: `D28-S13`）
-- **cs 精読ノート**: [knowledge/source-notes/D28/D28-S13_randazzo-2026-emergence-dance-improvisation.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D28/D28-S13_randazzo-2026-emergence-dance-improvisation.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D28/D28-S13_randazzo-2026-emergence-dance-improvisation.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D28/D28-S13_randazzo-2026-emergence-dance-improvisation.md)（manifest_id: `D28-S13`）
+- **cs 精読ノート**: [knowledge/source-notes/D28/D28-S13_randazzo-2026-emergence-dance-improvisation.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D28/D28-S13_randazzo-2026-emergence-dance-improvisation.md)
 - **この wiki ページ（pd）**: [wiki/sources/D28_randazzo_2026_emergence-a-parameter-of.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D28_randazzo_2026_emergence-a-parameter-of.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

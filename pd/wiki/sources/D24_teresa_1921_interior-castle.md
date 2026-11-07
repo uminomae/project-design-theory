@@ -54,7 +54,7 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D24_teresa_1921_interior-castle.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D24_teresa_1921_interior-castle.pdf)（manifest_id: `D24-S07`）
-- **cs 精読ノート**: [knowledge/source-notes/D24/D24-S07_teresa-16c.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D24/D24-S07_teresa-16c.md)
+- **cs 原典ファイル**: [knowledge/raw/D24_teresa_1921_interior-castle.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D24_teresa_1921_interior-castle.pdf)（manifest_id: `D24-S07`）
+- **cs 精読ノート**: [knowledge/source-notes/D24/D24-S07_teresa-16c.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D24/D24-S07_teresa-16c.md)
 - **この wiki ページ（pd）**: [wiki/sources/D24_teresa_1921_interior-castle.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D24_teresa_1921_interior-castle.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

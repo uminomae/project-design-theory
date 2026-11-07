@@ -80,8 +80,8 @@ Granovetter (1973) は社会ネットワーク分析をミクロ（対人的相�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D18/D18-S04_granovetter-1973.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D18/D18-S04_granovetter-1973.md)（manifest_id: `D18-S04`）
-- **cs 精読ノート**: [knowledge/source-notes/D18/D18-S04_granovetter-1973.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D18/D18-S04_granovetter-1973.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D18/D18-S04_granovetter-1973.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D18/D18-S04_granovetter-1973.md)（manifest_id: `D18-S04`）
+- **cs 精読ノート**: [knowledge/source-notes/D18/D18-S04_granovetter-1973.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D18/D18-S04_granovetter-1973.md)
 - **この wiki ページ（pd）**: [wiki/sources/D18_granovetter_1973_1973.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D18_granovetter_1973_1973.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

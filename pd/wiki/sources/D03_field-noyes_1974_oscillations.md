@@ -71,7 +71,7 @@ BZ 反応は、実在の化学系が熱力学的平衡から遠く離れた条�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D03_field-noyes_1974_oscillations.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D03_field-noyes_1974_oscillations.pdf)（manifest_id: `D03-S04`）
-- **cs 精読ノート**: [knowledge/source-notes/D03/D03-S04_field-noyes-1974.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D03/D03-S04_field-noyes-1974.md)
+- **cs 原典ファイル**: [knowledge/raw/D03_field-noyes_1974_oscillations.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D03_field-noyes_1974_oscillations.pdf)（manifest_id: `D03-S04`）
+- **cs 精読ノート**: [knowledge/source-notes/D03/D03-S04_field-noyes-1974.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D03/D03-S04_field-noyes-1974.md)
 - **この wiki ページ（pd）**: [wiki/sources/D03_field-noyes_1974_oscillations.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D03_field-noyes_1974_oscillations.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

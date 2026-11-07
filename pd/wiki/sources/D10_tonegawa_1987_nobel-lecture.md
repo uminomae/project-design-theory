@@ -50,7 +50,7 @@ V(D)J組み換えを触媒する組み換え活性化遺伝子（RAG1・RAG2）�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D10_tonegawa_1987_nobel-lecture.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D10_tonegawa_1987_nobel-lecture.pdf)（manifest_id: `D10-S04`）
-- **cs 精読ノート**: [knowledge/source-notes/D10/D10-S04_tonegawa-1987.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D10/D10-S04_tonegawa-1987.md)
+- **cs 原典ファイル**: [knowledge/raw/D10_tonegawa_1987_nobel-lecture.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D10_tonegawa_1987_nobel-lecture.pdf)（manifest_id: `D10-S04`）
+- **cs 精読ノート**: [knowledge/source-notes/D10/D10-S04_tonegawa-1987.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D10/D10-S04_tonegawa-1987.md)
 - **この wiki ページ（pd）**: [wiki/sources/D10_tonegawa_1987_nobel-lecture.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D10_tonegawa_1987_nobel-lecture.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

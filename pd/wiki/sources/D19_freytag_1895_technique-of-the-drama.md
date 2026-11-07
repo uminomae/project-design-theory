@@ -74,8 +74,8 @@ Freytag はドラマの構成技法を体系的に論じ、劇的行為（dramat
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D19/D19-S11_freytag-1895.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D19/D19-S11_freytag-1895.md)（manifest_id: `D19-S11`）
-- **cs 精読ノート**: [knowledge/source-notes/D19/D19-S11_freytag-1895.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D19/D19-S11_freytag-1895.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D19/D19-S11_freytag-1895.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D19/D19-S11_freytag-1895.md)（manifest_id: `D19-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D19/D19-S11_freytag-1895.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D19/D19-S11_freytag-1895.md)
 - **この wiki ページ（pd）**: [wiki/sources/D19_freytag_1895_technique-of-the-drama.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D19_freytag_1895_technique-of-the-drama.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

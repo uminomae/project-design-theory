@@ -74,7 +74,7 @@ Hadamard は Max Müller 等の「思考は言語なしには不可能」とい�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D01_hadamard_1945_psychology-invention.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D01_hadamard_1945_psychology-invention.pdf)（manifest_id: `D01-S07`）
-- **cs 精読ノート**: [knowledge/source-notes/D01/D01-S07_hadamard-1945.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D01/D01-S07_hadamard-1945.md)
+- **cs 原典ファイル**: [knowledge/raw/D01_hadamard_1945_psychology-invention.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D01_hadamard_1945_psychology-invention.pdf)（manifest_id: `D01-S07`）
+- **cs 精読ノート**: [knowledge/source-notes/D01/D01-S07_hadamard-1945.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D01/D01-S07_hadamard-1945.md)
 - **この wiki ページ（pd）**: [wiki/sources/D01_hadamard_1945_psychology-invention.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D01_hadamard_1945_psychology-invention.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

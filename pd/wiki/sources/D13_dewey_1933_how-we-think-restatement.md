@@ -58,8 +58,8 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D13_dewey_1933_how-we-think-restatement.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D13_dewey_1933_how-we-think-restatement.pdf)（manifest_id: `D13-S06`）
-- **cs 精読ノート**: [knowledge/source-notes/D13/D13-S06_dewey-1933.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D13/D13-S06_dewey-1933.md)
+- **cs 原典ファイル**: [knowledge/raw/D13_dewey_1933_how-we-think-restatement.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D13_dewey_1933_how-we-think-restatement.pdf)（manifest_id: `D13-S06`）
+- **cs 精読ノート**: [knowledge/source-notes/D13/D13-S06_dewey-1933.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D13/D13-S06_dewey-1933.md)
   - ⚠️ **cs 精読は1910年初版に基づく**: 取得 PDF が 1910 年初版（序文 "New York City, December, 1909"）だったため、cs ノートは 1910 年版の読解である。本ページが 1933 年版固有として記す「探究の五段階の再編成」「三態度」は確立知識に基づく記述で、1933 年版そのものの cs 精読は未実施（pd#112 cross-check 記録）。
 - **この wiki ページ（pd）**: [wiki/sources/D13_dewey_1933_how-we-think-restatement.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D13_dewey_1933_how-we-think-restatement.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

@@ -64,8 +64,8 @@ Hesse & Gross (2014) はレビュー論文として、脳が自己組織化臨�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D14/D14-S07_hesse-2014.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D14/D14-S07_hesse-2014.md)（manifest_id: `D14-S07`）
-- **cs 精読ノート**: [knowledge/source-notes/D14/D14-S07_hesse-2014.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D14/D14-S07_hesse-2014.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D14/D14-S07_hesse-2014.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D14/D14-S07_hesse-2014.md)（manifest_id: `D14-S07`）
+- **cs 精読ノート**: [knowledge/source-notes/D14/D14-S07_hesse-2014.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D14/D14-S07_hesse-2014.md)
 - **この wiki ページ（pd）**: [wiki/sources/D14_hesse_2014_self-organized-criticality-as.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D14_hesse_2014_self-organized-criticality-as.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

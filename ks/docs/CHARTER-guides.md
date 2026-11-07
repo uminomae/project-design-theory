@@ -118,7 +118,7 @@ GUIDES
 
 | 参照先 | URL パターン |
 |---|---|
-| creation-space | `https://uminomae.github.io/creation-space/` |
+| creation-space | `https://uminomae.github.io/project-design-theory/cs/` |
 | awareness-space | `https://uminomae.github.io/project-design-theory/as/` |
 | pjdhiro（ガイド） | `https://uminomae.github.io/pjdhiro/assets/kesson/` |
 

@@ -54,7 +54,7 @@ l0ノルム（非ゼロ成分の数）最小化は組み合わせ爆発で計算
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D07_candes-romberg-tao_2006_robust-uncertainty.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D07_candes-romberg-tao_2006_robust-uncertainty.pdf)（manifest_id: `D07-S06`）
-- **cs 精読ノート**: [knowledge/source-notes/D07/D07-S06_candes-romberg-tao-2006.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D07/D07-S06_candes-romberg-tao-2006.md)
+- **cs 原典ファイル**: [knowledge/raw/D07_candes-romberg-tao_2006_robust-uncertainty.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D07_candes-romberg-tao_2006_robust-uncertainty.pdf)（manifest_id: `D07-S06`）
+- **cs 精読ノート**: [knowledge/source-notes/D07/D07-S06_candes-romberg-tao-2006.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D07/D07-S06_candes-romberg-tao-2006.md)
 - **この wiki ページ（pd）**: [wiki/sources/D07_candes-romberg-tao_2006_robust-uncertainty.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D07_candes-romberg-tao_2006_robust-uncertainty.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

@@ -74,8 +74,8 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D07/D07-S12_doyle-csete-2011.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D07/D07-S12_doyle-csete-2011.md)（manifest_id: `D07-S12`）
-- **cs 精読ノート**: [knowledge/source-notes/D07/D07-S12_doyle-csete-2011.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D07/D07-S12_doyle-csete-2011.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D07/D07-S12_doyle-csete-2011.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D07/D07-S12_doyle-csete-2011.md)（manifest_id: `D07-S12`）
+- **cs 精読ノート**: [knowledge/source-notes/D07/D07-S12_doyle-csete-2011.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D07/D07-S12_doyle-csete-2011.md)
 - **この wiki ページ（pd）**: [wiki/sources/D07_doyle_2011_architecture-constraints-and-behavior.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D07_doyle_2011_architecture-constraints-and-behavior.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

@@ -51,7 +51,7 @@ Lyon (2014/2015) は、Dreyfus & Dreyfus の技能習得モデル (model of skil
 
 ## ソース参照（GitHub・検証用）
 
-- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D22-S11`）
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D22-S11`）
 - **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
 - **この wiki ページ（pd）**: [wiki/sources/D22_lyon_2014_dreyfus-model-of-skill.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D22_lyon_2014_dreyfus-model-of-skill.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

@@ -52,7 +52,7 @@ Rainer Feistel (2024) は、生命の起源を、化学ネットワーク（RNA 
 
 ## ソース参照（GitHub・検証用）
 
-- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D05-S15`）
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D05-S15`）
 - **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
 - **この wiki ページ（pd）**: [wiki/sources/D05_feistel_2024_origin-of-life-a.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D05_feistel_2024_origin-of-life-a.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

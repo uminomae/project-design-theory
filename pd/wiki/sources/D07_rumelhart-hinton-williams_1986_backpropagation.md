@@ -58,7 +58,7 @@ David E. Rumelhart、Geoffrey E. Hinton、Ronald J. Williams による1986年の
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D07_rumelhart-hinton-williams_1986_backpropagation.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D07_rumelhart-hinton-williams_1986_backpropagation.pdf)（manifest_id: `D07-S04`）
-- **cs 精読ノート**: [knowledge/source-notes/D07/D07-S04_rumelhart-hinton-williams-1986.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D07/D07-S04_rumelhart-hinton-williams-1986.md)
+- **cs 原典ファイル**: [knowledge/raw/D07_rumelhart-hinton-williams_1986_backpropagation.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D07_rumelhart-hinton-williams_1986_backpropagation.pdf)（manifest_id: `D07-S04`）
+- **cs 精読ノート**: [knowledge/source-notes/D07/D07-S04_rumelhart-hinton-williams-1986.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D07/D07-S04_rumelhart-hinton-williams-1986.md)
 - **この wiki ページ（pd）**: [wiki/sources/D07_rumelhart-hinton-williams_1986_backpropagation.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D07_rumelhart-hinton-williams_1986_backpropagation.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

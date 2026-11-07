@@ -68,7 +68,7 @@ Lavelli & Fogel の研究は乳児が「視覚的に注意深く陽性に覚醒�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 精読ノート**: [knowledge/source-notes/D23/D23-S16_kartner-koster-2024.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D23/D23-S16_kartner-koster-2024.md)
+- **cs 精読ノート**: [knowledge/source-notes/D23/D23-S16_kartner-koster-2024.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D23/D23-S16_kartner-koster-2024.md)
 - **この wiki ページ（pd）**: [wiki/sources/D23_kartner_2024_early-social-cognitive-development.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D23_kartner_2024_early-social-cognitive-development.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

@@ -82,7 +82,7 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D20_uncitral_2021_mediation-rules.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D20_uncitral_2021_mediation-rules.pdf)（manifest_id: `D20-S07`）
-- **cs 精読ノート**: [knowledge/source-notes/D20/D20-S07_uncitral-2021-mediation-rules.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D20/D20-S07_uncitral-2021-mediation-rules.md)
+- **cs 原典ファイル**: [knowledge/raw/D20_uncitral_2021_mediation-rules.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D20_uncitral_2021_mediation-rules.pdf)（manifest_id: `D20-S07`）
+- **cs 精読ノート**: [knowledge/source-notes/D20/D20-S07_uncitral-2021-mediation-rules.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D20/D20-S07_uncitral-2021-mediation-rules.md)
 - **この wiki ページ（pd）**: [wiki/sources/D20_uncitral_2021_mediation-rules.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D20_uncitral_2021_mediation-rules.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

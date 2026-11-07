@@ -68,8 +68,8 @@ generation の正の係数（0.973, p<0.001）と generation² の負の係数�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D17/D17-S11_beckner-2017.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D17/D17-S11_beckner-2017.md)（manifest_id: `D17-S11`）
-- **cs 精読ノート**: [knowledge/source-notes/D17/D17-S11_beckner-2017.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D17/D17-S11_beckner-2017.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D17/D17-S11_beckner-2017.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D17/D17-S11_beckner-2017.md)（manifest_id: `D17-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D17/D17-S11_beckner-2017.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D17/D17-S11_beckner-2017.md)
 - **この wiki ページ（pd）**: [wiki/sources/D17_beckner_2017_the-emergence-of-linguistic.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D17_beckner_2017_the-emergence-of-linguistic.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

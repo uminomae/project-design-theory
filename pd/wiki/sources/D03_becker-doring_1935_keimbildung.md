@@ -58,7 +58,7 @@ R. Becker と W. Döring が1935年に Annalen der Physik に発表した論文�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D03_becker-doring_1935_keimbildung.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D03_becker-doring_1935_keimbildung.pdf)（manifest_id: `D03-S01`）
-- **cs 精読ノート**: [knowledge/source-notes/D03/D03-S01_becker-doring-1935.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D03/D03-S01_becker-doring-1935.md)
+- **cs 原典ファイル**: [knowledge/raw/D03_becker-doring_1935_keimbildung.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D03_becker-doring_1935_keimbildung.pdf)（manifest_id: `D03-S01`）
+- **cs 精読ノート**: [knowledge/source-notes/D03/D03-S01_becker-doring-1935.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D03/D03-S01_becker-doring-1935.md)
 - **この wiki ページ（pd）**: [wiki/sources/D03_becker-doring_1935_keimbildung.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D03_becker-doring_1935_keimbildung.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

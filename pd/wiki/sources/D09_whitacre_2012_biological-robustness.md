@@ -70,8 +70,8 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D09/D09-S14_whitacre-2012.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D09/D09-S14_whitacre-2012.md)（manifest_id: `D09-S14`）
-- **cs 精読ノート**: [knowledge/source-notes/D09/D09-S14_whitacre-2012.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D09/D09-S14_whitacre-2012.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D09/D09-S14_whitacre-2012.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D09/D09-S14_whitacre-2012.md)（manifest_id: `D09-S14`）
+- **cs 精読ノート**: [knowledge/source-notes/D09/D09-S14_whitacre-2012.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D09/D09-S14_whitacre-2012.md)
 - **この wiki ページ（pd）**: [wiki/sources/D09_whitacre_2012_biological-robustness.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D09_whitacre_2012_biological-robustness.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

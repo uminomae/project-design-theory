@@ -50,7 +50,7 @@ Immanuel Wallerstein『近代世界システムI——資本主義的農業と�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D16-S10`）
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D16-S10`）
 - **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
 - **この wiki ページ（pd）**: [wiki/sources/D16_wallerstein_1974_1974.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D16_wallerstein_1974_1974.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

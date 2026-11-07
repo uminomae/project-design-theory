@@ -50,7 +50,7 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D20_idea_2011_practical-guide-constitution-building.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D20_idea_2011_practical-guide-constitution-building.pdf)（manifest_id: `D20-S06`）
-- **cs 精読ノート**: [knowledge/source-notes/D20/D20-S06_idea-2011.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D20/D20-S06_idea-2011.md)
+- **cs 原典ファイル**: [knowledge/raw/D20_idea_2011_practical-guide-constitution-building.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D20_idea_2011_practical-guide-constitution-building.pdf)（manifest_id: `D20-S06`）
+- **cs 精読ノート**: [knowledge/source-notes/D20/D20-S06_idea-2011.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D20/D20-S06_idea-2011.md)
 - **この wiki ページ（pd）**: [wiki/sources/D20_idea_2011_practical-guide-constitution-building.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D20_idea_2011_practical-guide-constitution-building.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

@@ -68,8 +68,8 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D07/D07-S11_ashby-1956.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D07/D07-S11_ashby-1956.md)（manifest_id: `D07-S11`）
-- **cs 精読ノート**: [knowledge/source-notes/D07/D07-S11_ashby-1956.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D07/D07-S11_ashby-1956.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D07/D07-S11_ashby-1956.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D07/D07-S11_ashby-1956.md)（manifest_id: `D07-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D07/D07-S11_ashby-1956.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D07/D07-S11_ashby-1956.md)
 - **この wiki ページ（pd）**: [wiki/sources/D07_ashby_1956_ashby-1956-an-introduction.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D07_ashby_1956_ashby-1956-an-introduction.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

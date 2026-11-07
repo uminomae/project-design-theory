@@ -82,8 +82,8 @@ Turing (1952) は、組織中を拡散しながら相互に反応する化学物
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D03/D03-S05_turing-1952.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D03/D03-S05_turing-1952.md)（manifest_id: `D03-S05`）
-- **cs 精読ノート**: [knowledge/source-notes/D03/D03-S05_turing-1952.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D03/D03-S05_turing-1952.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D03/D03-S05_turing-1952.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D03/D03-S05_turing-1952.md)（manifest_id: `D03-S05`）
+- **cs 精読ノート**: [knowledge/source-notes/D03/D03-S05_turing-1952.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D03/D03-S05_turing-1952.md)
 - **この wiki ページ（pd）**: [wiki/sources/D03_unknown_0000_the-chemical-basis-of.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D03_unknown_0000_the-chemical-basis-of.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

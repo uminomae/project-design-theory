@@ -11,4 +11,4 @@
 - 防衛の成熟と段階の重なりと、ずれ
 - 段階と組織
 
-調べの記録は [GitHub](https://github.com/uminomae/project-design/tree/main/knowledge/research/developmental-stages) にあります。
+調べの記録は [GitHub](https://github.com/uminomae/project-design-theory/tree/main/pd/knowledge/research/developmental-stages) にあります。

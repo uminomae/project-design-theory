@@ -53,7 +53,7 @@ Graham Wallas『思考の技法 (The Art of Thought)』(1926) は、創造的・
 
 ## ソース参照（GitHub・検証用）
 
-- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D14-S05`）
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D14-S05`）
 - **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
 - **この wiki ページ（pd）**: [wiki/sources/D14_wallas_1926_wallas-1926-the-art.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D14_wallas_1926_wallas-1926-the-art.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

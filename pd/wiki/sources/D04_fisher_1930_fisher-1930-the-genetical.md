@@ -74,8 +74,8 @@ Fisher は自然選択の理論をダーウィンの進化論全体から切り�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D04/D04-S13_fisher-1930.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D04/D04-S13_fisher-1930.md)（manifest_id: `D04-S13`）
-- **cs 精読ノート**: [knowledge/source-notes/D04/D04-S13_fisher-1930.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D04/D04-S13_fisher-1930.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D04/D04-S13_fisher-1930.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D04/D04-S13_fisher-1930.md)（manifest_id: `D04-S13`）
+- **cs 精読ノート**: [knowledge/source-notes/D04/D04-S13_fisher-1930.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D04/D04-S13_fisher-1930.md)
 - **この wiki ページ（pd）**: [wiki/sources/D04_fisher_1930_fisher-1930-the-genetical.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D04_fisher_1930_fisher-1930-the-genetical.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

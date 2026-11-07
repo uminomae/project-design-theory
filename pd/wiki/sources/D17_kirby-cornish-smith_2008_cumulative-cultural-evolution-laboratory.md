@@ -71,7 +71,7 @@ Kirby, Cornish, Smith (2008) は **iterated learning**（反復学習）と呼�
 ## ソース参照（GitHub・検証用）
 
 - **cs 原典ファイル**: ローカル raw PDF なし（web.archive.org 経由 PNAS full PDF；manifest_id: `D17-S12`）
-- **cs 精読ノート**: [knowledge/source-notes/D17/D17-S12_kirby-cornish-smith-2008.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D17/D17-S12_kirby-cornish-smith-2008.md)
+- **cs 精読ノート**: [knowledge/source-notes/D17/D17-S12_kirby-cornish-smith-2008.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D17/D17-S12_kirby-cornish-smith-2008.md)
 - **この wiki ページ（pd）**: [wiki/sources/D17_kirby-cornish-smith_2008_cumulative-cultural-evolution-laboratory.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D17_kirby-cornish-smith_2008_cumulative-cultural-evolution-laboratory.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

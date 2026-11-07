@@ -23,7 +23,7 @@ const PD_ROOT = path.resolve(__dirname, '..');
 const CS_ROOT = path.resolve(PD_ROOT, '..', 'creation-space');
 const SOURCES_DIR = path.join(PD_ROOT, 'wiki', 'sources');
 
-const CS_BLOB = 'https://github.com/uminomae/creation-space/blob/main';
+const CS_BLOB = 'https://github.com/uminomae/project-design-theory/blob/main/cs';
 const PD_BLOB = 'https://github.com/uminomae/project-design-theory/blob/main';
 
 const TICK = '`'; // markdown インラインコード用のバッククォート（リテラル）

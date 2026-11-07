@@ -71,8 +71,8 @@ Cygnus A など双極電波源の hot spot で観測される電子エネルギ�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D06/D06-S06_blandford-ostriker-1978.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D06/D06-S06_blandford-ostriker-1978.md)（manifest_id: `D06-S06`）
-- **cs 精読ノート**: [knowledge/source-notes/D06/D06-S06_blandford-ostriker-1978.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D06/D06-S06_blandford-ostriker-1978.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D06/D06-S06_blandford-ostriker-1978.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D06/D06-S06_blandford-ostriker-1978.md)（manifest_id: `D06-S06`）
+- **cs 精読ノート**: [knowledge/source-notes/D06/D06-S06_blandford-ostriker-1978.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D06/D06-S06_blandford-ostriker-1978.md)
 - **この wiki ページ（pd）**: [wiki/sources/D06_blandford_1978_ostriker-j-p.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D06_blandford_1978_ostriker-j-p.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

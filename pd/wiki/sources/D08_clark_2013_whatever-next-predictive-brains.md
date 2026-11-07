@@ -76,8 +76,8 @@ Clark (2013) は「階層的予測処理（hierarchical predictive processing）
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D08/D08-S13_clark-2013.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D08/D08-S13_clark-2013.md)（manifest_id: `D08-S13`）
-- **cs 精読ノート**: [knowledge/source-notes/D08/D08-S13_clark-2013.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D08/D08-S13_clark-2013.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D08/D08-S13_clark-2013.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D08/D08-S13_clark-2013.md)（manifest_id: `D08-S13`）
+- **cs 精読ノート**: [knowledge/source-notes/D08/D08-S13_clark-2013.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D08/D08-S13_clark-2013.md)
 - **この wiki ページ（pd）**: [wiki/sources/D08_clark_2013_whatever-next-predictive-brains.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D08_clark_2013_whatever-next-predictive-brains.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

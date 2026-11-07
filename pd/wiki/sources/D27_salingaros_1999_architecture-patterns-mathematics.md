@@ -68,8 +68,8 @@ Frank Lloyd Wright の建築は広範囲のスケールにわたり自己相似�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D27/D27-S11_salingaros-1999.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D27/D27-S11_salingaros-1999.md)（manifest_id: `D27-S11`）
-- **cs 精読ノート**: [knowledge/source-notes/D27/D27-S11_salingaros-1999.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D27/D27-S11_salingaros-1999.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D27/D27-S11_salingaros-1999.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D27/D27-S11_salingaros-1999.md)（manifest_id: `D27-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D27/D27-S11_salingaros-1999.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D27/D27-S11_salingaros-1999.md)
 - **この wiki ページ（pd）**: [wiki/sources/D27_salingaros_1999_architecture-patterns-mathematics.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D27_salingaros_1999_architecture-patterns-mathematics.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

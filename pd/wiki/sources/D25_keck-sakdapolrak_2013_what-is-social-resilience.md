@@ -56,8 +56,8 @@ Keck & Sakdapolrak (2013) は、ここ十年で急速に増えた「社会的レ
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D25_keck-sakdapolrak_2013_what-is-social-resilience.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D25_keck-sakdapolrak_2013_what-is-social-resilience.pdf)（manifest_id: `D25-S13`）
-- **cs 精読ノート**: [knowledge/source-notes/D25/D25-S13_keck-sakdapolrak-2013.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D25/D25-S13_keck-sakdapolrak-2013.md)
+- **cs 原典ファイル**: [knowledge/raw/D25_keck-sakdapolrak_2013_what-is-social-resilience.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D25_keck-sakdapolrak_2013_what-is-social-resilience.pdf)（manifest_id: `D25-S13`）
+- **cs 精読ノート**: [knowledge/source-notes/D25/D25-S13_keck-sakdapolrak-2013.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D25/D25-S13_keck-sakdapolrak-2013.md)
 - **この wiki ページ（pd）**: [wiki/sources/D25_keck-sakdapolrak_2013_what-is-social-resilience.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D25_keck-sakdapolrak_2013_what-is-social-resilience.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

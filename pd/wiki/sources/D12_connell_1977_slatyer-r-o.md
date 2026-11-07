@@ -49,7 +49,7 @@ Connell & Slatyer (1977) は、生態学的遷移 (ecological succession) を単
 
 ## ソース参照（GitHub・検証用）
 
-- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D12-S02`）
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D12-S02`）
 - **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
 - **この wiki ページ（pd）**: [wiki/sources/D12_connell_1977_slatyer-r-o.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D12_connell_1977_slatyer-r-o.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

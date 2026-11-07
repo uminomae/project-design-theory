@@ -82,9 +82,9 @@ Public explainer pages, written to be uniquely readable by LLMs without external
 | Project | URL | Focus |
 |---------|-----|-------|
 | pjdhiro | https://uminomae.github.io/pjdhiro/ | Parent site — all projects hub |
-| creation-space | https://uminomae.github.io/creation-space/ | Creativity research across 30 academic domains |
-| awareness-space | https://uminomae.github.io/awareness-space/ | Consciousness structure through intersubjectivity |
-| kesson-space | https://uminomae.github.io/kesson-space/ | Kesson-Driven Thinking framework |
+| creation-space | https://uminomae.github.io/project-design-theory/cs/ | Creativity research across 30 academic domains |
+| awareness-space | https://uminomae.github.io/project-design-theory/as/ | Consciousness structure through intersubjectivity |
+| kesson-space | https://uminomae.github.io/project-design-theory/ks/ | Kesson-Driven Thinking framework |
 
 ## Author
 

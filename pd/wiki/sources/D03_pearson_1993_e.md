@@ -74,8 +74,8 @@ Gray-Scott 反応拡散モデルの数値シミュレーションにより、従
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D03/D03-S11_pearson-1993.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D03/D03-S11_pearson-1993.md)（manifest_id: `D03-S11`）
-- **cs 精読ノート**: [knowledge/source-notes/D03/D03-S11_pearson-1993.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D03/D03-S11_pearson-1993.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D03/D03-S11_pearson-1993.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D03/D03-S11_pearson-1993.md)（manifest_id: `D03-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D03/D03-S11_pearson-1993.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D03/D03-S11_pearson-1993.md)
 - **この wiki ページ（pd）**: [wiki/sources/D03_pearson_1993_e.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D03_pearson_1993_e.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

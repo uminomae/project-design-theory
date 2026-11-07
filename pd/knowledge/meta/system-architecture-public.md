@@ -61,7 +61,7 @@ GitHubからGitHub Pagesを通じて、2つのサイトが自動でデプロイ�
 
 理論を3D空間として追体験するサイト。
 
-- URL: https://uminomae.github.io/kesson-space/
+- URL: https://uminomae.github.io/project-design-theory/ks/
 - 技術: Three.js, GLSL Shaders
 - 内容: 闇の中に光が滲み出す——意識の内側で起きていることを視覚で感じ取る空間
 - デプロイ: GitHubにpush → GitHub Pagesが自動生成

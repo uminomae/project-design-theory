@@ -70,8 +70,8 @@ TD で学習された価値関数は、環境中の各点に「期待報酬の�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D09/D09-S07_schultz-1997.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D09/D09-S07_schultz-1997.md)（manifest_id: `D09-S07`）
-- **cs 精読ノート**: [knowledge/source-notes/D09/D09-S07_schultz-1997.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D09/D09-S07_schultz-1997.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D09/D09-S07_schultz-1997.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D09/D09-S07_schultz-1997.md)（manifest_id: `D09-S07`）
+- **cs 精読ノート**: [knowledge/source-notes/D09/D09-S07_schultz-1997.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D09/D09-S07_schultz-1997.md)
 - **この wiki ページ（pd）**: [wiki/sources/D09_schultz_1997_schultz-dayan-montague-1997.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D09_schultz_1997_schultz-dayan-montague-1997.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

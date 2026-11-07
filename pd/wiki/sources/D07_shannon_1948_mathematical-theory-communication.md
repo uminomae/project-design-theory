@@ -64,7 +64,7 @@ H = - Σ p_i log p_i
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D07_shannon_1948_mathematical-theory-communication.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D07_shannon_1948_mathematical-theory-communication.pdf)（manifest_id: `D07-S05`）
-- **cs 精読ノート**: [knowledge/source-notes/D07/D07-S05_shannon-1948.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D07/D07-S05_shannon-1948.md)
+- **cs 原典ファイル**: [knowledge/raw/D07_shannon_1948_mathematical-theory-communication.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D07_shannon_1948_mathematical-theory-communication.pdf)（manifest_id: `D07-S05`）
+- **cs 精読ノート**: [knowledge/source-notes/D07/D07-S05_shannon-1948.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D07/D07-S05_shannon-1948.md)
 - **この wiki ページ（pd）**: [wiki/sources/D07_shannon_1948_mathematical-theory-communication.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D07_shannon_1948_mathematical-theory-communication.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

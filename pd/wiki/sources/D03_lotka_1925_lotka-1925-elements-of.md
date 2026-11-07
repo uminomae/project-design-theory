@@ -76,8 +76,8 @@ Spencer の生命定義（内的関係の外的関係への連続的適応）を
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D03/D03-S13_lotka-1925.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D03/D03-S13_lotka-1925.md)（manifest_id: `D03-S13`）
-- **cs 精読ノート**: [knowledge/source-notes/D03/D03-S13_lotka-1925.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D03/D03-S13_lotka-1925.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D03/D03-S13_lotka-1925.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D03/D03-S13_lotka-1925.md)（manifest_id: `D03-S13`）
+- **cs 精読ノート**: [knowledge/source-notes/D03/D03-S13_lotka-1925.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D03/D03-S13_lotka-1925.md)
 - **この wiki ページ（pd）**: [wiki/sources/D03_lotka_1925_lotka-1925-elements-of.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D03_lotka_1925_lotka-1925-elements-of.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

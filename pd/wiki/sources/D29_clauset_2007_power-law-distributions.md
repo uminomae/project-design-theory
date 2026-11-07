@@ -58,7 +58,7 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D29_clauset_2007_power-law-distributions.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D29_clauset_2007_power-law-distributions.pdf)（manifest_id: `D29-S06`）
-- **cs 精読ノート**: [knowledge/source-notes/D29/D29-S06_clauset-2009.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D29/D29-S06_clauset-2009.md)
+- **cs 原典ファイル**: [knowledge/raw/D29_clauset_2007_power-law-distributions.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D29_clauset_2007_power-law-distributions.pdf)（manifest_id: `D29-S06`）
+- **cs 精読ノート**: [knowledge/source-notes/D29/D29-S06_clauset-2009.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D29/D29-S06_clauset-2009.md)
 - **この wiki ページ（pd）**: [wiki/sources/D29_clauset_2007_power-law-distributions.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D29_clauset_2007_power-law-distributions.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

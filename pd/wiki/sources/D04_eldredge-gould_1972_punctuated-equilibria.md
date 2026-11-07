@@ -49,7 +49,7 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D04_eldredge-gould_1972_punctuated-equilibria.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D04_eldredge-gould_1972_punctuated-equilibria.pdf)（manifest_id: `D04-S02`）
-- **cs 精読ノート**: [knowledge/source-notes/D04/D04-S02_eldredge-gould-1972.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D04/D04-S02_eldredge-gould-1972.md)
+- **cs 原典ファイル**: [knowledge/raw/D04_eldredge-gould_1972_punctuated-equilibria.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D04_eldredge-gould_1972_punctuated-equilibria.pdf)（manifest_id: `D04-S02`）
+- **cs 精読ノート**: [knowledge/source-notes/D04/D04-S02_eldredge-gould-1972.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D04/D04-S02_eldredge-gould-1972.md)
 - **この wiki ページ（pd）**: [wiki/sources/D04_eldredge-gould_1972_punctuated-equilibria.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D04_eldredge-gould_1972_punctuated-equilibria.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

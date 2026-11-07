@@ -59,7 +59,7 @@ John Maynard Keynes による1936年刊行の経済学書。大恐慌（1929年�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D21_keynes_1936_general-theory.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D21_keynes_1936_general-theory.pdf)（manifest_id: `D21-S07`）
-- **cs 精読ノート**: [knowledge/source-notes/D21/D21-S07_keynes-1936.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D21/D21-S07_keynes-1936.md)
+- **cs 原典ファイル**: [knowledge/raw/D21_keynes_1936_general-theory.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D21_keynes_1936_general-theory.pdf)（manifest_id: `D21-S07`）
+- **cs 精読ノート**: [knowledge/source-notes/D21/D21-S07_keynes-1936.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D21/D21-S07_keynes-1936.md)
 - **この wiki ページ（pd）**: [wiki/sources/D21_keynes_1936_general-theory.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D21_keynes_1936_general-theory.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

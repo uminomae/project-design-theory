@@ -130,12 +130,12 @@ https://www.facebook.com/uminomae/posts/29505925165720214
 ### 関連リンク（原文末尾）
 
 - 回転で生まれる客観とか物質とか科学みたいな世界について。ハードっぽいほう:
-  【創造とは — pjdhiro】 https://uminomae.github.io/creation-space/
+  【創造とは — pjdhiro】 https://uminomae.github.io/project-design-theory/cs/
 - それと90度回転するような主観とか精神とか感情のような世界について。ソフトっぽいほう：
-  【意識とは — pjdhiro】 https://uminomae.github.io/awareness-space
+  【意識とは — pjdhiro】 https://uminomae.github.io/project-design-theory/as
 - それらの”対象”を捉えるべき主軸に対して、回転させたかのような軸に走る信号を、信号のまま”問い”として
   抱持する物事の進め方について：
   【欠損駆動思考とは？ デザイン思考とプロジェクトマネジメントをつなぐ視点 — pjdhiro】
-  https://uminomae.github.io/kesson-space/
+  https://uminomae.github.io/project-design-theory/ks/
 - それらの世界観でざっくりまとめた、”生きる”のような日々の営みについて：
   【Project Design | Love-Driven Dev — pjdhiro】 https://uminomae.github.io/project-design-theory/

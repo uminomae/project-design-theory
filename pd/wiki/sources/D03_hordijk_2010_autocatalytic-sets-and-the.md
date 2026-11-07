@@ -68,8 +68,8 @@ RAF: (1) 全反応が集合内の分子により触媒される（RA: Reflexivel
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D03/D03-S14_hordijk-2010.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D03/D03-S14_hordijk-2010.md)（manifest_id: `D03-S14`）
-- **cs 精読ノート**: [knowledge/source-notes/D03/D03-S14_hordijk-2010.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D03/D03-S14_hordijk-2010.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D03/D03-S14_hordijk-2010.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D03/D03-S14_hordijk-2010.md)（manifest_id: `D03-S14`）
+- **cs 精読ノート**: [knowledge/source-notes/D03/D03-S14_hordijk-2010.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D03/D03-S14_hordijk-2010.md)
 - **この wiki ページ（pd）**: [wiki/sources/D03_hordijk_2010_autocatalytic-sets-and-the.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D03_hordijk_2010_autocatalytic-sets-and-the.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

@@ -49,7 +49,7 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D15_motoori_1799_tama-no-ogushi.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D15_motoori_1799_tama-no-ogushi.pdf)（manifest_id: `D15-S04`）
-- **cs 精読ノート**: [knowledge/source-notes/D15/D15-S04_motoori-1799.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D15/D15-S04_motoori-1799.md)
+- **cs 原典ファイル**: [knowledge/raw/D15_motoori_1799_tama-no-ogushi.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D15_motoori_1799_tama-no-ogushi.pdf)（manifest_id: `D15-S04`）
+- **cs 精読ノート**: [knowledge/source-notes/D15/D15-S04_motoori-1799.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D15/D15-S04_motoori-1799.md)
 - **この wiki ページ（pd）**: [wiki/sources/D15_motoori_1799_tama-no-ogushi.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D15_motoori_1799_tama-no-ogushi.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

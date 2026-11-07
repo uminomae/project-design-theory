@@ -85,7 +85,7 @@ D29「複雑性科学」において本論文は**全5段階が強く現れる**
 ## ソース参照（GitHub・検証用）
 
 - **cs 原典ファイル**: ローカル raw PDF なし（SciELO タイムアウト → arXiv cond-mat/9910454 v2 PDF で取得；manifest_id: `D29-S11`）
-- **cs 精読ノート**: [knowledge/source-notes/D29/D29-S11_dickman-munoz-vespignani-zapperi-2000.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D29/D29-S11_dickman-munoz-vespignani-zapperi-2000.md)
+- **cs 精読ノート**: [knowledge/source-notes/D29/D29-S11_dickman-munoz-vespignani-zapperi-2000.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D29/D29-S11_dickman-munoz-vespignani-zapperi-2000.md)
 - **この wiki ページ（pd）**: [wiki/sources/D29_dickman-munoz-vespignani-zapperi_2000_paths-self-organized-criticality.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D29_dickman-munoz-vespignani-zapperi_2000_paths-self-organized-criticality.md)
 - **参照先（原典 DOI / arXiv）**: 下記「書誌情報」を参照
 

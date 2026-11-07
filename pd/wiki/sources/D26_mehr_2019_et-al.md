@@ -77,8 +77,8 @@ Mehr ら (2019) は、315 社会の民族誌テキスト（NHS Ethnography）と
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D26/D26-S07_mehr-2019.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D26/D26-S07_mehr-2019.md)（manifest_id: `D26-S07`）
-- **cs 精読ノート**: [knowledge/source-notes/D26/D26-S07_mehr-2019.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D26/D26-S07_mehr-2019.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D26/D26-S07_mehr-2019.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D26/D26-S07_mehr-2019.md)（manifest_id: `D26-S07`）
+- **cs 精読ノート**: [knowledge/source-notes/D26/D26-S07_mehr-2019.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D26/D26-S07_mehr-2019.md)
 - **この wiki ページ（pd）**: [wiki/sources/D26_mehr_2019_et-al.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D26_mehr_2019_et-al.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

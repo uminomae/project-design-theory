@@ -75,7 +75,7 @@ Alexander 1977 *A Pattern Language* の現代 AI 時代における更新版と�
 ## ソース参照（GitHub・検証用）
 
 - **cs 原典ファイル**: ローカル raw PDF なし（preprints.org Akamai 403 → web.archive.org スナップショット HTML から Python3 で本文抽出；manifest_id: `D27-S15`）
-- **cs 精読ノート**: [knowledge/source-notes/D27/D27-S15_salingaros-2025.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D27/D27-S15_salingaros-2025.md)
+- **cs 精読ノート**: [knowledge/source-notes/D27/D27-S15_salingaros-2025.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D27/D27-S15_salingaros-2025.md)
 - **この wiki ページ（pd）**: [wiki/sources/D27_salingaros_2025_design-epistemology-living-geometry.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D27_salingaros_2025_design-epistemology-living-geometry.md)
 - **参照先（原典 DOI）**: 下記「書誌情報」を参照
 

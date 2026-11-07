@@ -60,7 +60,7 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D10_rosenblum_2015_autoimmunity.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D10_rosenblum_2015_autoimmunity.pdf)（manifest_id: `D10-S02`）
-- **cs 精読ノート**: [knowledge/source-notes/D10/D10-S02_rosenblum-2015.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D10/D10-S02_rosenblum-2015.md)
+- **cs 原典ファイル**: [knowledge/raw/D10_rosenblum_2015_autoimmunity.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D10_rosenblum_2015_autoimmunity.pdf)（manifest_id: `D10-S02`）
+- **cs 精読ノート**: [knowledge/source-notes/D10/D10-S02_rosenblum-2015.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D10/D10-S02_rosenblum-2015.md)
 - **この wiki ページ（pd）**: [wiki/sources/D10_rosenblum_2015_autoimmunity.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D10_rosenblum_2015_autoimmunity.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

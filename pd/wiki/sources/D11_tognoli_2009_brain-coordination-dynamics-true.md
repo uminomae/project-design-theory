@@ -73,7 +73,7 @@ EEG の電場が頭皮を通じて拡散する性質が、空間的に近い電�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 精読ノート**: [knowledge/source-notes/D11/D11-S17_tognoli-kelso-2009.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D11/D11-S17_tognoli-kelso-2009.md)
+- **cs 精読ノート**: [knowledge/source-notes/D11/D11-S17_tognoli-kelso-2009.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D11/D11-S17_tognoli-kelso-2009.md)
 - **この wiki ページ（pd）**: [wiki/sources/D11_tognoli_2009_brain-coordination-dynamics-true.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D11_tognoli_2009_brain-coordination-dynamics-true.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

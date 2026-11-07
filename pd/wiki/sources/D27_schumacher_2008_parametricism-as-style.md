@@ -95,8 +95,8 @@ Lakatos の「research programme」概念を明示的に援用し、避けるべ
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D27/D27-S10_schumacher-2008.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D27/D27-S10_schumacher-2008.md)（manifest_id: `D27-S10`）
-- **cs 精読ノート**: [knowledge/source-notes/D27/D27-S10_schumacher-2008.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D27/D27-S10_schumacher-2008.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D27/D27-S10_schumacher-2008.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D27/D27-S10_schumacher-2008.md)（manifest_id: `D27-S10`）
+- **cs 精読ノート**: [knowledge/source-notes/D27/D27-S10_schumacher-2008.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D27/D27-S10_schumacher-2008.md)
 - **この wiki ページ（pd）**: [wiki/sources/D27_schumacher_2008_parametricism-as-style.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D27_schumacher_2008_parametricism-as-style.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

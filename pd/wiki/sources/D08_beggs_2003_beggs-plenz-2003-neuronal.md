@@ -79,8 +79,8 @@ Beggs & Plenz (2003) は、ラット皮質の器官型培養と急性スライ�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D08/D08-S11_beggs-plenz-2003.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D08/D08-S11_beggs-plenz-2003.md)（manifest_id: `D08-S11`）
-- **cs 精読ノート**: [knowledge/source-notes/D08/D08-S11_beggs-plenz-2003.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D08/D08-S11_beggs-plenz-2003.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D08/D08-S11_beggs-plenz-2003.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D08/D08-S11_beggs-plenz-2003.md)（manifest_id: `D08-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D08/D08-S11_beggs-plenz-2003.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D08/D08-S11_beggs-plenz-2003.md)
 - **この wiki ページ（pd）**: [wiki/sources/D08_beggs_2003_beggs-plenz-2003-neuronal.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D08_beggs_2003_beggs-plenz-2003-neuronal.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

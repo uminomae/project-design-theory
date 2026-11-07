@@ -23,7 +23,7 @@
 
 理論を3D空間として追体験できる場所。闇の中から光が滲み出し、呼吸し、漂う——意識の内側で起きていることを、視覚と身体感覚で感じ取るための空間。
 
-- ライブ: https://uminomae.github.io/kesson-space/
+- ライブ: https://uminomae.github.io/project-design-theory/ks/
 - 技術: Three.js, GLSL Shaders, GitHub Pages
 
 ### 言語（pjdhiro）

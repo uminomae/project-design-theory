@@ -80,7 +80,7 @@ Nowak は、自然選択が利己性を選ぶはずなのに協力が広範に�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 精読ノート**: [knowledge/source-notes/D18/D18-S09_nowak-2006.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D18/D18-S09_nowak-2006.md)
+- **cs 精読ノート**: [knowledge/source-notes/D18/D18-S09_nowak-2006.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D18/D18-S09_nowak-2006.md)
 - **この wiki ページ（pd）**: [wiki/sources/D18_nowak_2006_five-rules-for-the.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D18_nowak_2006_five-rules-for-the.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

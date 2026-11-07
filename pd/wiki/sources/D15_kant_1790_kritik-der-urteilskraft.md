@@ -55,7 +55,7 @@ Immanuel Kant による1790年刊行の哲学書。純粋理性批判（1781年�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D15_kant_1790_kritik-der-urteilskraft.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D15_kant_1790_kritik-der-urteilskraft.pdf)（manifest_id: `D15-S07`）
-- **cs 精読ノート**: [knowledge/source-notes/D15/D15-S07_kant-1790.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D15/D15-S07_kant-1790.md)
+- **cs 原典ファイル**: [knowledge/raw/D15_kant_1790_kritik-der-urteilskraft.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D15_kant_1790_kritik-der-urteilskraft.pdf)（manifest_id: `D15-S07`）
+- **cs 精読ノート**: [knowledge/source-notes/D15/D15-S07_kant-1790.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D15/D15-S07_kant-1790.md)
 - **この wiki ページ（pd）**: [wiki/sources/D15_kant_1790_kritik-der-urteilskraft.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D15_kant_1790_kritik-der-urteilskraft.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

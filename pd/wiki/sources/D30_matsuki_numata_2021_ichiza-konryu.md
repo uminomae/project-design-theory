@@ -61,7 +61,7 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D30_matsuki_numata_2021_ichiza-konryu.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D30_matsuki_numata_2021_ichiza-konryu.pdf)（manifest_id: `D30-S09`）
-- **cs 精読ノート**: [knowledge/source-notes/D30/D30-S09_matsuki-2021.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D30/D30-S09_matsuki-2021.md)
+- **cs 原典ファイル**: [knowledge/raw/D30_matsuki_numata_2021_ichiza-konryu.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D30_matsuki_numata_2021_ichiza-konryu.pdf)（manifest_id: `D30-S09`）
+- **cs 精読ノート**: [knowledge/source-notes/D30/D30-S09_matsuki-2021.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D30/D30-S09_matsuki-2021.md)
 - **この wiki ページ（pd）**: [wiki/sources/D30_matsuki_numata_2021_ichiza-konryu.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D30_matsuki_numata_2021_ichiza-konryu.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

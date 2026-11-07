@@ -61,7 +61,7 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D25_vangennep_1909_rites-of-passage.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D25_vangennep_1909_rites-of-passage.pdf)（manifest_id: `D25-S01b`）
+- **cs 原典ファイル**: [knowledge/raw/D25_vangennep_1909_rites-of-passage.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D25_vangennep_1909_rites-of-passage.pdf)（manifest_id: `D25-S01b`）
 - **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
 - **この wiki ページ（pd）**: [wiki/sources/D25_vangennep_1909_rites-of-passage.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D25_vangennep_1909_rites-of-passage.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

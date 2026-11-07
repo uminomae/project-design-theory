@@ -59,7 +59,7 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D11_li_2014_network-pharmacology-qishenyiqi.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D11_li_2014_network-pharmacology-qishenyiqi.pdf)（manifest_id: `D11-S09`）
-- **cs 精読ノート**: [knowledge/source-notes/D11/D11-S09_li-2014.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D11/D11-S09_li-2014.md)
+- **cs 原典ファイル**: [knowledge/raw/D11_li_2014_network-pharmacology-qishenyiqi.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D11_li_2014_network-pharmacology-qishenyiqi.pdf)（manifest_id: `D11-S09`）
+- **cs 精読ノート**: [knowledge/source-notes/D11/D11-S09_li-2014.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D11/D11-S09_li-2014.md)
 - **この wiki ページ（pd）**: [wiki/sources/D11_li_2014_network-pharmacology-qishenyiqi.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D11_li_2014_network-pharmacology-qishenyiqi.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

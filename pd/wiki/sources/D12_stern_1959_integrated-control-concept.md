@@ -53,7 +53,7 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D12_stern_1959_integrated-control-concept.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D12_stern_1959_integrated-control-concept.pdf)（manifest_id: `D12-S05`）
-- **cs 精読ノート**: [knowledge/source-notes/D12/D12-S05_stern-1959.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D12/D12-S05_stern-1959.md)
+- **cs 原典ファイル**: [knowledge/raw/D12_stern_1959_integrated-control-concept.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D12_stern_1959_integrated-control-concept.pdf)（manifest_id: `D12-S05`）
+- **cs 精読ノート**: [knowledge/source-notes/D12/D12-S05_stern-1959.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D12/D12-S05_stern-1959.md)
 - **この wiki ページ（pd）**: [wiki/sources/D12_stern_1959_integrated-control-concept.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D12_stern_1959_integrated-control-concept.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

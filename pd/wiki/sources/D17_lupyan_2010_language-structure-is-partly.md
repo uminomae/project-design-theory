@@ -68,8 +68,8 @@ WALS の類型論データと、Ethnologue・Global Mapping International の人
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D17/D17-S15_lupyan-2010.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D17/D17-S15_lupyan-2010.md)（manifest_id: `D17-S15`）
-- **cs 精読ノート**: [knowledge/source-notes/D17/D17-S15_lupyan-2010.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D17/D17-S15_lupyan-2010.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D17/D17-S15_lupyan-2010.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D17/D17-S15_lupyan-2010.md)（manifest_id: `D17-S15`）
+- **cs 精読ノート**: [knowledge/source-notes/D17/D17-S15_lupyan-2010.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D17/D17-S15_lupyan-2010.md)
 - **この wiki ページ（pd）**: [wiki/sources/D17_lupyan_2010_language-structure-is-partly.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D17_lupyan_2010_language-structure-is-partly.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

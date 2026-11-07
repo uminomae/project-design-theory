@@ -63,8 +63,8 @@ Hermann von Helmholtz (1821–1894) の『音感覚論』(原書 1863, Ellis 英
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D26/D26-S15_helmholtz-1895.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D26/D26-S15_helmholtz-1895.md)（manifest_id: `D26-S15`）
-- **cs 精読ノート**: [knowledge/source-notes/D26/D26-S15_helmholtz-1895.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D26/D26-S15_helmholtz-1895.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D26/D26-S15_helmholtz-1895.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D26/D26-S15_helmholtz-1895.md)（manifest_id: `D26-S15`）
+- **cs 精読ノート**: [knowledge/source-notes/D26/D26-S15_helmholtz-1895.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D26/D26-S15_helmholtz-1895.md)
 - **この wiki ページ（pd）**: [wiki/sources/D26_helmholtz_1895_helmholtz-1895-on-the.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D26_helmholtz_1895_helmholtz-1895-on-the.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

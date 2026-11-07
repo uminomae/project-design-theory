@@ -52,8 +52,8 @@ GP では損失正接 tan δ が周波数に依存しなくなる。これを利
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D03_chambon-winter_1987_gel-point.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D03_chambon-winter_1987_gel-point.pdf)（manifest_id: `D03-S08`）
-- **cs 精読ノート**: [knowledge/source-notes/D03/D03-S08_chambon-winter-1987.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D03/D03-S08_chambon-winter-1987.md)
+- **cs 原典ファイル**: [knowledge/raw/D03_chambon-winter_1987_gel-point.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D03_chambon-winter_1987_gel-point.pdf)（manifest_id: `D03-S08`）
+- **cs 精読ノート**: [knowledge/source-notes/D03/D03-S08_chambon-winter-1987.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D03/D03-S08_chambon-winter-1987.md)
 - **この wiki ページ（pd）**: [wiki/sources/D03_chambon-winter_1987_gel-point.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D03_chambon-winter_1987_gel-point.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

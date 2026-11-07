@@ -84,8 +84,8 @@ Bak, Tang, Wiesenfeld (1988) は、多数の等価な自由度を持つ散逸動
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D05/D05-S14_bak-tang-wiesenfeld-1988-self-organized-criticality.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D05/D05-S14_bak-tang-wiesenfeld-1988-self-organized-criticality.md)（manifest_id: `D05-S14`）
-- **cs 精読ノート**: [knowledge/source-notes/D05/D05-S14_bak-tang-wiesenfeld-1988-self-organized-criticality.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D05/D05-S14_bak-tang-wiesenfeld-1988-self-organized-criticality.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D05/D05-S14_bak-tang-wiesenfeld-1988-self-organized-criticality.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D05/D05-S14_bak-tang-wiesenfeld-1988-self-organized-criticality.md)（manifest_id: `D05-S14`）
+- **cs 精読ノート**: [knowledge/source-notes/D05/D05-S14_bak-tang-wiesenfeld-1988-self-organized-criticality.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D05/D05-S14_bak-tang-wiesenfeld-1988-self-organized-criticality.md)
 - **この wiki ページ（pd）**: [wiki/sources/D05_bak_1988_wiesenfeld-k.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D05_bak_1988_wiesenfeld-k.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

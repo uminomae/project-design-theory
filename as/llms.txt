@@ -77,8 +77,8 @@ Published on pjdhiro (GitHub Pages). The top page renders these as JS cards; the
 |---------|-----|-------|
 | pjdhiro | https://uminomae.github.io/pjdhiro/ | Project Design Hub (parent site) |
 | project-design | https://uminomae.github.io/project-design-theory/ | Project Design theory linking design thinking, management, and execution |
-| creation-space | https://uminomae.github.io/creation-space/ | Creativity research across 30 academic domains |
-| kesson-space | https://uminomae.github.io/kesson-space/ | Kesson-Driven Thinking framework |
+| creation-space | https://uminomae.github.io/project-design-theory/cs/ | Creativity research across 30 academic domains |
+| kesson-space | https://uminomae.github.io/project-design-theory/ks/ | Kesson-Driven Thinking framework |
 
 ## Author
 

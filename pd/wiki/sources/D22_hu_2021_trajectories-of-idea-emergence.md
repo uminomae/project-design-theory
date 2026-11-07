@@ -60,8 +60,8 @@ Hu & Chen (2021) は、複雑動的システム（CDS）理論とバフチンの
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D22/D22-S16_hu-2021.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D22/D22-S16_hu-2021.md)（manifest_id: `D22-S16`）
-- **cs 精読ノート**: [knowledge/source-notes/D22/D22-S16_hu-2021.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D22/D22-S16_hu-2021.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D22/D22-S16_hu-2021.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D22/D22-S16_hu-2021.md)（manifest_id: `D22-S16`）
+- **cs 精読ノート**: [knowledge/source-notes/D22/D22-S16_hu-2021.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D22/D22-S16_hu-2021.md)
 - **この wiki ページ（pd）**: [wiki/sources/D22_hu_2021_trajectories-of-idea-emergence.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D22_hu_2021_trajectories-of-idea-emergence.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

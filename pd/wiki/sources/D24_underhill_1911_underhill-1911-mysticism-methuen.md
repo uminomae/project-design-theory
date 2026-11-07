@@ -52,8 +52,8 @@ Evelyn Underhill『神秘主義 (Mysticism: A Study in the Nature and Developmen
 
 ## ソース参照（GitHub・検証用）
 
-- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D24-S14`）
-- **cs 精読ノート**: [knowledge/source-notes/D24/D24-S14_underhill-1911.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D24/D24-S14_underhill-1911.md)
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D24-S14`）
+- **cs 精読ノート**: [knowledge/source-notes/D24/D24-S14_underhill-1911.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D24/D24-S14_underhill-1911.md)
 - **この wiki ページ（pd）**: [wiki/sources/D24_underhill_1911_underhill-1911-mysticism-methuen.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D24_underhill_1911_underhill-1911-mysticism-methuen.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

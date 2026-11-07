@@ -72,8 +72,8 @@ Aristotle は詩作術（ポイエーティケー）を体系的に論じ、と�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D19/D19-S12_aristotle-1907.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D19/D19-S12_aristotle-1907.md)（manifest_id: `D19-S12`）
-- **cs 精読ノート**: [knowledge/source-notes/D19/D19-S12_aristotle-1907.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D19/D19-S12_aristotle-1907.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D19/D19-S12_aristotle-1907.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D19/D19-S12_aristotle-1907.md)（manifest_id: `D19-S12`）
+- **cs 精読ノート**: [knowledge/source-notes/D19/D19-S12_aristotle-1907.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D19/D19-S12_aristotle-1907.md)
 - **この wiki ページ（pd）**: [wiki/sources/D19_aristotle_1907_poetics.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D19_aristotle_1907_poetics.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

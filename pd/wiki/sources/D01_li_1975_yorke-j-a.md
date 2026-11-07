@@ -66,8 +66,8 @@ Appendix 1 で反例を提示。周期 3 が他のすべての周期を含意す
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D01/D01-S10_li-yorke-1975.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D01/D01-S10_li-yorke-1975.md)（manifest_id: `D01-S10`）
-- **cs 精読ノート**: [knowledge/source-notes/D01/D01-S10_li-yorke-1975.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D01/D01-S10_li-yorke-1975.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D01/D01-S10_li-yorke-1975.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D01/D01-S10_li-yorke-1975.md)（manifest_id: `D01-S10`）
+- **cs 精読ノート**: [knowledge/source-notes/D01/D01-S10_li-yorke-1975.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D01/D01-S10_li-yorke-1975.md)
 - **この wiki ページ（pd）**: [wiki/sources/D01_li_1975_yorke-j-a.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D01_li_1975_yorke-j-a.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

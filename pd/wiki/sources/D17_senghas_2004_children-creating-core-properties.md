@@ -60,8 +60,8 @@ Senghas, Kita & Ozyurek (2004) は、ニカラグア手話（NSL）の世代間�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D17/D17-S14_senghas-2004.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D17/D17-S14_senghas-2004.md)（manifest_id: `D17-S14`）
-- **cs 精読ノート**: [knowledge/source-notes/D17/D17-S14_senghas-2004.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D17/D17-S14_senghas-2004.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D17/D17-S14_senghas-2004.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D17/D17-S14_senghas-2004.md)（manifest_id: `D17-S14`）
+- **cs 精読ノート**: [knowledge/source-notes/D17/D17-S14_senghas-2004.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D17/D17-S14_senghas-2004.md)
 - **この wiki ページ（pd）**: [wiki/sources/D17_senghas_2004_children-creating-core-properties.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D17_senghas_2004_children-creating-core-properties.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

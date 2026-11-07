@@ -76,8 +76,8 @@ Schulkin & Raglan (2014) はレビュー論文として、音楽を人間の認�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D26/D26-S17_schulkin-2014.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D26/D26-S17_schulkin-2014.md)（manifest_id: `D26-S17`）
-- **cs 精読ノート**: [knowledge/source-notes/D26/D26-S17_schulkin-2014.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D26/D26-S17_schulkin-2014.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D26/D26-S17_schulkin-2014.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D26/D26-S17_schulkin-2014.md)（manifest_id: `D26-S17`）
+- **cs 精読ノート**: [knowledge/source-notes/D26/D26-S17_schulkin-2014.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D26/D26-S17_schulkin-2014.md)
 - **この wiki ページ（pd）**: [wiki/sources/D26_schulkin_2014_the-evolution-of-music.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D26_schulkin_2014_the-evolution-of-music.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

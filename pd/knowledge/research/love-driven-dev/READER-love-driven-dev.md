@@ -194,9 +194,9 @@ pjdhiro はこれを「場と揺らぎが渦を生む」と縮めます。渦は
 ただ、「創造とは」のトップページには、何が渦を巻くまでの波を生み出しているのか、つまり駆動源の問いは、置かれていません。もう一本の指が指そうとしているのは、そこです。
 
 <div class="reader-linkcards">
-<a class="reader-linkcard glow-link" href="https://uminomae.github.io/creation-space/">
+<a class="reader-linkcard glow-link" href="https://uminomae.github.io/project-design-theory/cs/">
 <img class="reader-linkcard__thumb" src="../assets/thumbs/creation-space.jpg" alt="" width="720" height="378" loading="lazy">
-<span class="reader-linkcard__body"><span class="reader-linkcard__title">創造とは</span><span class="reader-linkcard__sub">創造の5段階（場→波→縁→渦→束）を 30 の学問領域から探る。</span><span class="reader-linkcard__url">uminomae.github.io/creation-space</span></span>
+<span class="reader-linkcard__body"><span class="reader-linkcard__title">創造とは</span><span class="reader-linkcard__sub">創造の5段階（場→波→縁→渦→束）を 30 の学問領域から探る。</span><span class="reader-linkcard__url">uminomae.github.io/project-design-theory/cs</span></span>
 </a>
 </div>
 
@@ -282,12 +282,12 @@ pjdhiro は、この創造の形を、大海と波の像にいちばん近いと
 
 この章では、駆動源を受け取る側を見ます。Love と呼びたいものは、直接は観えません。重力と同じように、それに動かされているものから見ていくことになります。人のすぐ近くで動かされているものの一つが、体に湧いて意識に上る信号です。後の価値の章も、この信号の話の上に立っています。
 
-コウモリと人とでは、世界の切り取り方が違いました。では、人は何で切り取っているのでしょうか。人は、目や耳で受け取ったものの中から、何を大事なものとして拾うかを選んでいます。[「意識とは」](https://uminomae.github.io/awareness-space/)は、その選び方に、二つの方向があると置いています。生き延びられるかどうか（生存）と、つながっていられるかどうか（信頼）です。生存の側は脅威・安全・地位・資源を、信頼の側は愛着・所属・信頼・間主観性を見ています。
+コウモリと人とでは、世界の切り取り方が違いました。では、人は何で切り取っているのでしょうか。人は、目や耳で受け取ったものの中から、何を大事なものとして拾うかを選んでいます。[「意識とは」](https://uminomae.github.io/project-design-theory/as/)は、その選び方に、二つの方向があると置いています。生き延びられるかどうか（生存）と、つながっていられるかどうか（信頼）です。生存の側は脅威・安全・地位・資源を、信頼の側は愛着・所属・信頼・間主観性を見ています。
 
 <div class="reader-linkcards">
-<a class="reader-linkcard glow-link" href="https://uminomae.github.io/awareness-space/">
+<a class="reader-linkcard glow-link" href="https://uminomae.github.io/project-design-theory/as/">
 <img class="reader-linkcard__thumb" src="../assets/thumbs/awareness-space.jpg" alt="" width="720" height="378" loading="lazy">
-<span class="reader-linkcard__body"><span class="reader-linkcard__title">意識とは</span><span class="reader-linkcard__sub">「意識とは何か」を生存と信頼の二軸で探る。分けた先に現れる二つの信号の、論拠を探している場所。</span><span class="reader-linkcard__url">uminomae.github.io/awareness-space</span></span>
+<span class="reader-linkcard__body"><span class="reader-linkcard__title">意識とは</span><span class="reader-linkcard__sub">「意識とは何か」を生存と信頼の二軸で探る。分けた先に現れる二つの信号の、論拠を探している場所。</span><span class="reader-linkcard__url">uminomae.github.io/project-design-theory/as</span></span>
 </a>
 </div>
 
@@ -319,7 +319,7 @@ pjdhiro は、この創造の形を、大海と波の像にいちばん近いと
 
 <strong>pjdhiro の問い：</strong>メタ認知の対象と包容に対して、身体と意識を結ぶ信号がどのようなものか？これは心と体の接続点の謎と絡むとても重要なこと。
 
-この問いは、[「意識とは」](https://uminomae.github.io/awareness-space/)で、神経現象学の研究と照らし合わせて調べ始めたところです。不安を、先の脅威が不確かなことへの備えとして捉える研究があります（Grupe と Nitschke 2013 年）。不確かさが生存の信号を鳴らしている、と読むこともできます。
+この問いは、[「意識とは」](https://uminomae.github.io/project-design-theory/as/)で、神経現象学の研究と照らし合わせて調べ始めたところです。不安を、先の脅威が不確かなことへの備えとして捉える研究があります（Grupe と Nitschke 2013 年）。不確かさが生存の信号を鳴らしている、と読むこともできます。
 
 <!--REF:神経と情動-->
 
@@ -335,7 +335,7 @@ pjdhiro は、この創造の形を、大海と波の像にいちばん近いと
 
 この章では、構想や設計、計画のいちばん最初の段階を見ます。Love と呼びたいものは、そのものとしては見えません。考えや心と、体で湧く信号とが別々になるとき、人は何かが欠けていると感じやすくなる、と pjdhiro は見ています。生存と信頼の信号の見込みと経験がずれたときに、それが感じられるのかもしれません。pjdhiro は、Love と呼びたいものが駆動しているから、人は受け身でこの欠けを感じてしまう、と見ています。欠けは、やがて解くべき問題になります。pjdhiro は、構想や設計、計画はここから始まり、その先の問題解決は経営学がこれまで扱ってきた範囲だと見ています。
 
-[「欠損駆動思考」](https://uminomae.github.io/kesson-space/)は、この欠けを欠損と呼び、「予想と現実の誤差を意識が『欠け』として捉えた主観的経験」と置いています。欠損駆動思考は、欠けている感じや違和感などを駆動源にする思考や精神の構えです。その範囲や構造、プロセスは、いまも探索中です。
+[「欠損駆動思考」](https://uminomae.github.io/project-design-theory/ks/)は、この欠けを欠損と呼び、「予想と現実の誤差を意識が『欠け』として捉えた主観的経験」と置いています。欠損駆動思考は、欠けている感じや違和感などを駆動源にする思考や精神の構えです。その範囲や構造、プロセスは、いまも探索中です。
 
 欠損駆動思考は、誤差を問いとして拾う態度とも、見えている面とは別の向きに何かがあると感じていることとも言えます。pjdhiro は、これを Love駆動開発に必要な考え方の一つと見ています。人が認知できないものに触れる手段は、ほかにもあるかもしれません。
 
@@ -348,9 +348,9 @@ pjdhiro は、「考えて決める」行動の軸と直角に、存在の軸が
 「欠損駆動思考」は、反射的に処理せず、誤差を問いとして保持する機能を抱持と呼び、欠損に気づいたとき、すぐに答えを出さず、問いのまま持ち続けることを大切にしています。違和感をすぐに解消せずに抱えておくと、一つの面だけに縛られた判断を、しにくくなるのかもしれません。
 
 <div class="reader-linkcards">
-<a class="reader-linkcard glow-link" href="https://uminomae.github.io/kesson-space/">
+<a class="reader-linkcard glow-link" href="https://uminomae.github.io/project-design-theory/ks/">
 <img class="reader-linkcard__thumb" src="../assets/thumbs/kesson-space.jpg" alt="" width="720" height="378" loading="lazy">
-<span class="reader-linkcard__body"><span class="reader-linkcard__title">欠損駆動思考</span><span class="reader-linkcard__sub">違和感・未定義要件・弱いシグナルを、問いとして扱う思考。</span><span class="reader-linkcard__url">uminomae.github.io/kesson-space</span></span>
+<span class="reader-linkcard__body"><span class="reader-linkcard__title">欠損駆動思考</span><span class="reader-linkcard__sub">違和感・未定義要件・弱いシグナルを、問いとして扱う思考。</span><span class="reader-linkcard__url">uminomae.github.io/project-design-theory/ks</span></span>
 </a>
 </div>
 
@@ -378,7 +378,7 @@ pjdhiro は、「考えて決める」行動の軸と直角に、存在の軸が
 
 <strong>pjdhiro の見方：</strong>価値は顧客の意識で生まれる。その前段の信号によって。
 
-作り手が商品に価値を込めることも、実際に起きています。込めることと、顧客の意識で感じることがどうつながるかを見るために、「価値」という言葉を分けておきます。価値は曖昧な言葉で、性質の違うものが一つの語に混ざっています。[渦の章](#動かされているものは渦の形をしている--場と揺らぎが渦を生む)で見た、[「創造とは」](https://uminomae.github.io/creation-space/)が置く創造の過程、場 → 波 → 縁 → 渦 → 束 を、受け取る側に当てはめてみると、たとえば次のように分けられます。
+作り手が商品に価値を込めることも、実際に起きています。込めることと、顧客の意識で感じることがどうつながるかを見るために、「価値」という言葉を分けておきます。価値は曖昧な言葉で、性質の違うものが一つの語に混ざっています。[渦の章](#動かされているものは渦の形をしている--場と揺らぎが渦を生む)で見た、[「創造とは」](https://uminomae.github.io/project-design-theory/cs/)が置く創造の過程、場 → 波 → 縁 → 渦 → 束 を、受け取る側に当てはめてみると、たとえば次のように分けられます。
 
 - 場：顧客が生きている状況、関係、知っていること、価値観。世界や時代、文化のような広いものも含みます。
 - 波：場の中に差が生まれ、顧客と製品に分かれます。需要と供給のように、求める側と差し出す側が向かい合います。
@@ -396,7 +396,7 @@ pjdhiro は、「考えて決める」行動の軸と直角に、存在の軸が
 
 波は、分かれることです。同じ場の中に差が生まれることで、顧客と製品が、求める側と差し出す側として向かい合います。
 
-縁で湧く信号は、[生存と信頼の信号の章](#人は何で世界を切り取っているか--生存と信頼の信号)で見た、[「意識とは」](https://uminomae.github.io/awareness-space/)が置く二つの方向の信号です。体の層で湧き、意識がそれを受け取ります。
+縁で湧く信号は、[生存と信頼の信号の章](#人は何で世界を切り取っているか--生存と信頼の信号)で見た、[「意識とは」](https://uminomae.github.io/project-design-theory/as/)が置く二つの方向の信号です。体の層で湧き、意識がそれを受け取ります。
 
 渦について、pjdhiro は、価値も Love と構造が似ていて、言葉にしづらい信号のまとまりだ、と見ています。欠損の章で見た虚軸の値も含めて、たくさんの軸があり、おそらく形容詞と同じくらいの数の軸の総合だ、とも見ています。
 
@@ -856,7 +856,7 @@ pjdhiro が考えているのは、脳の神経に伝わる神経伝達物質と
 
 - [創造の5段階——先行研究との構造比較](https://uminomae.github.io/pjdhiro/assets/creation/guides/ja/md/creation-academic/)：「創造とは」が、30 の学術領域の調査から、創造の5段階を先行研究と比べたもの。
 - [意識と間主観性 — 神経現象学・心理学・哲学からの状況証拠](https://uminomae.github.io/pjdhiro/assets/awareness/guides/ja/md/awareness-academic/)：「意識とは」が、生存と信頼の信号の足場にしている知見。
-- [欠損駆動思考](https://uminomae.github.io/kesson-space/)：欠損と抱持の調査。
+- [欠損駆動思考](https://uminomae.github.io/project-design-theory/ks/)：欠損と抱持の調査。
 - [影響を受けた心理学](influences-psychology.html)：精神分析と発達心理から、pjdhiro が影響を受けた論。
 - [補足資料 — 物理との、構造の類似](#補足資料--物理との構造の類似)：このページが章ごとに借りた物理の形。
 
@@ -871,6 +871,6 @@ pjdhiro が考えているのは、脳の神経に伝わる神経伝達物質と
 - [プロジェクトデザイン論（トップ）](../index.html)：[Doing](../index.html#doing)・[Being](../index.html#being)・[問い](../index.html#questions)。
 - [愛は、重力に似ていないか](gravity-love.html)：駆動源の仮説の一次情報。経営者の役割とは、に仮説的に答える。
 - [ものの見方の広さスクリーナー](stages-screener.html)：自分を分けていく作業を、自分で試す道具。
-- [欠損駆動思考](https://uminomae.github.io/kesson-space/)：合わないところに欠損を感じ、問いとして拾う。
-- [意識とは](https://uminomae.github.io/awareness-space/)：生存と信頼の信号で、世界を切り取る。
-- [創造とは](https://uminomae.github.io/creation-space/)：渦がどれだけありふれているかを、30 の学問領域で示す。姉妹読み物「[波間の渦](https://uminomae.github.io/creation-space/reader/wave-vortex.html)」。
+- [欠損駆動思考](https://uminomae.github.io/project-design-theory/ks/)：合わないところに欠損を感じ、問いとして拾う。
+- [意識とは](https://uminomae.github.io/project-design-theory/as/)：生存と信頼の信号で、世界を切り取る。
+- [創造とは](https://uminomae.github.io/project-design-theory/cs/)：渦がどれだけありふれているかを、30 の学問領域で示す。姉妹読み物「[波間の渦](https://uminomae.github.io/project-design-theory/cs/reader/wave-vortex.html)」。

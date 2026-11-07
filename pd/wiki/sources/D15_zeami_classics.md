@@ -53,7 +53,7 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D28_zeami_classics_part1.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D28_zeami_classics_part1.pdf)（manifest_id: `D15-S03`）
-- **cs 精読ノート**: [knowledge/source-notes/D15/D15-S03_zeami-15c.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D15/D15-S03_zeami-15c.md)
+- **cs 原典ファイル**: [knowledge/raw/D28_zeami_classics_part1.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D28_zeami_classics_part1.pdf)（manifest_id: `D15-S03`）
+- **cs 精読ノート**: [knowledge/source-notes/D15/D15-S03_zeami-15c.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D15/D15-S03_zeami-15c.md)
 - **この wiki ページ（pd）**: [wiki/sources/D15_zeami_classics.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D15_zeami_classics.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

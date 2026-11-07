@@ -82,7 +82,7 @@ BTW は自身のセルオートマトンを「散逸動力学の Ising 模型」
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D29_bak-tang-wiesenfeld_1988_self-organized-criticality.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D29_bak-tang-wiesenfeld_1988_self-organized-criticality.pdf)（manifest_id: `D29-S04`）
+- **cs 原典ファイル**: [knowledge/raw/D29_bak-tang-wiesenfeld_1988_self-organized-criticality.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D29_bak-tang-wiesenfeld_1988_self-organized-criticality.pdf)（manifest_id: `D29-S04`）
 - **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
 - **この wiki ページ（pd）**: [wiki/sources/D29_bak-tang-wiesenfeld_1988_self-organized-criticality.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D29_bak-tang-wiesenfeld_1988_self-organized-criticality.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

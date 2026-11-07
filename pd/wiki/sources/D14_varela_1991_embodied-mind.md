@@ -62,7 +62,7 @@ Merleau-Pontyに倣い、身体化を2つの意味で用いる。
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D14_varela_1991_embodied-mind.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D14_varela_1991_embodied-mind.pdf)（manifest_id: `D14-S01`）
-- **cs 精読ノート**: [knowledge/source-notes/D14/D14-S01_varela-1991.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D14/D14-S01_varela-1991.md)
+- **cs 原典ファイル**: [knowledge/raw/D14_varela_1991_embodied-mind.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D14_varela_1991_embodied-mind.pdf)（manifest_id: `D14-S01`）
+- **cs 精読ノート**: [knowledge/source-notes/D14/D14-S01_varela-1991.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D14/D14-S01_varela-1991.md)
 - **この wiki ページ（pd）**: [wiki/sources/D14_varela_1991_embodied-mind.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D14_varela_1991_embodied-mind.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

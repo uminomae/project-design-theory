@@ -70,8 +70,8 @@ TEK はリスクを空間・時間・資産クラス・共同体間に分散す�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D30/D30-S18_gomez-2013.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D30/D30-S18_gomez-2013.md)（manifest_id: `D30-S18`）
-- **cs 精読ノート**: [knowledge/source-notes/D30/D30-S18_gomez-2013.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D30/D30-S18_gomez-2013.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D30/D30-S18_gomez-2013.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D30/D30-S18_gomez-2013.md)（manifest_id: `D30-S18`）
+- **cs 精読ノート**: [knowledge/source-notes/D30/D30-S18_gomez-2013.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D30/D30-S18_gomez-2013.md)
 - **この wiki ページ（pd）**: [wiki/sources/D30_gmezbaggethun_2013_traditional-ecological-knowledge-and.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D30_gmezbaggethun_2013_traditional-ecological-knowledge-and.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

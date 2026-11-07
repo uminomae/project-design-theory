@@ -55,7 +55,7 @@ Robert Ghrist による2008年のサーベイ論文で、Carlsson らによる�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D01_ghrist_2008_barcodes.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D01_ghrist_2008_barcodes.pdf)（manifest_id: `D01-S03`）
-- **cs 精読ノート**: [knowledge/source-notes/D01/D01-S03_ghrist-2008.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D01/D01-S03_ghrist-2008.md)
+- **cs 原典ファイル**: [knowledge/raw/D01_ghrist_2008_barcodes.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D01_ghrist_2008_barcodes.pdf)（manifest_id: `D01-S03`）
+- **cs 精読ノート**: [knowledge/source-notes/D01/D01-S03_ghrist-2008.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D01/D01-S03_ghrist-2008.md)
 - **この wiki ページ（pd）**: [wiki/sources/D01_ghrist_2008_barcodes.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D01_ghrist_2008_barcodes.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

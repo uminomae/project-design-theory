@@ -86,8 +86,8 @@ N400 を誘発する priming 実験は、音楽が意味情報を担えること
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D26/D26-S19_koelsch-siebel-2005.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D26/D26-S19_koelsch-siebel-2005.md)（manifest_id: `D26-S19`）
-- **cs 精読ノート**: [knowledge/source-notes/D26/D26-S19_koelsch-siebel-2005.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D26/D26-S19_koelsch-siebel-2005.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D26/D26-S19_koelsch-siebel-2005.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D26/D26-S19_koelsch-siebel-2005.md)（manifest_id: `D26-S19`）
+- **cs 精読ノート**: [knowledge/source-notes/D26/D26-S19_koelsch-siebel-2005.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D26/D26-S19_koelsch-siebel-2005.md)
 - **この wiki ページ（pd）**: [wiki/sources/D26_koelsch_2005_siebel-w-a.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D26_koelsch_2005_siebel-w-a.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

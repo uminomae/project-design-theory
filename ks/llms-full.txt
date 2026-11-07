@@ -82,7 +82,7 @@ Development log documenting the creation process of kesson-space itself — a me
 |---------|-----|-------|
 | pjdhiro | https://uminomae.github.io/pjdhiro/ | Project Design Hub (parent site) |
 | project-design | https://uminomae.github.io/project-design-theory/ | Project Design theory linking design thinking, management, and execution |
-| creation-space | https://uminomae.github.io/creation-space/ | Creativity research across 30 academic domains |
+| creation-space | https://uminomae.github.io/project-design-theory/cs/ | Creativity research across 30 academic domains |
 | awareness-space | https://uminomae.github.io/project-design-theory/as/ | Consciousness structure through intersubjectivity |
 
 ## Author

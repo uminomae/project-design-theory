@@ -67,7 +67,7 @@ Q9(R1)では、品質・製造上の問題から生じる製品供給リスク�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D11_ich_2023_q9-r1-guideline.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D11_ich_2023_q9-r1-guideline.pdf)（manifest_id: `D11-S12`）
-- **cs 精読ノート**: [knowledge/source-notes/D11/D11-S12_ich-q9r1-2023.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D11/D11-S12_ich-q9r1-2023.md)
+- **cs 原典ファイル**: [knowledge/raw/D11_ich_2023_q9-r1-guideline.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D11_ich_2023_q9-r1-guideline.pdf)（manifest_id: `D11-S12`）
+- **cs 精読ノート**: [knowledge/source-notes/D11/D11-S12_ich-q9r1-2023.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D11/D11-S12_ich-q9r1-2023.md)
 - **この wiki ページ（pd）**: [wiki/sources/D11_ich_2023_q9-r1-guideline.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D11_ich_2023_q9-r1-guideline.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

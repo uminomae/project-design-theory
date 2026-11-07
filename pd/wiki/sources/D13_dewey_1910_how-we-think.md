@@ -58,7 +58,7 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D13_dewey_1910_how-we-think.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D13_dewey_1910_how-we-think.pdf)（manifest_id: `D13-S05`）
-- **cs 精読ノート**: [knowledge/source-notes/D13/D13-S05_dewey-1910.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D13/D13-S05_dewey-1910.md)
+- **cs 原典ファイル**: [knowledge/raw/D13_dewey_1910_how-we-think.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D13_dewey_1910_how-we-think.pdf)（manifest_id: `D13-S05`）
+- **cs 精読ノート**: [knowledge/source-notes/D13/D13-S05_dewey-1910.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D13/D13-S05_dewey-1910.md)
 - **この wiki ページ（pd）**: [wiki/sources/D13_dewey_1910_how-we-think.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D13_dewey_1910_how-we-think.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

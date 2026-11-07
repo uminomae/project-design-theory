@@ -54,7 +54,7 @@ He 薄膜への適用に加え、二次元平面磁性体や液晶薄膜でも�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D02_nelson-kosterlitz_1977_universal-jump-superfluid.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D02_nelson-kosterlitz_1977_universal-jump-superfluid.pdf)（manifest_id: `D02-S06`）
-- **cs 精読ノート**: [knowledge/source-notes/D02/D02-S06_nelson-1977.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D02/D02-S06_nelson-1977.md)
+- **cs 原典ファイル**: [knowledge/raw/D02_nelson-kosterlitz_1977_universal-jump-superfluid.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D02_nelson-kosterlitz_1977_universal-jump-superfluid.pdf)（manifest_id: `D02-S06`）
+- **cs 精読ノート**: [knowledge/source-notes/D02/D02-S06_nelson-1977.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D02/D02-S06_nelson-1977.md)
 - **この wiki ページ（pd）**: [wiki/sources/D02_nelson-kosterlitz_1977_universal-jump-superfluid.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D02_nelson-kosterlitz_1977_universal-jump-superfluid.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

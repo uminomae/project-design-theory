@@ -73,7 +73,7 @@ null result の発見——「縁の形は平均構造化に影響しないが�
 ## ソース参照（GitHub・検証用）
 
 - **cs 原典ファイル**: ローカル raw PDF なし（Wiley Cloudflare 403 → philpapers self-archive PDF 経由；manifest_id: `D17-S13`）
-- **cs 精読ノート**: [knowledge/source-notes/D17/D17-S13_raviv-2020.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D17/D17-S13_raviv-2020.md)
+- **cs 精読ノート**: [knowledge/source-notes/D17/D17-S13_raviv-2020.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D17/D17-S13_raviv-2020.md)
 - **この wiki ページ（pd）**: [wiki/sources/D17_raviv_2020_social-network-linguistic-structure.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D17_raviv_2020_social-network-linguistic-structure.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

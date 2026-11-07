@@ -72,8 +72,8 @@ Daisyworld は地球の近似ではなく、仮説の構造を純化するため
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D05/D05-S11_watson-lovelock-1983-daisyworld.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D05/D05-S11_watson-lovelock-1983-daisyworld.md)（manifest_id: `D05-S11`）
-- **cs 精読ノート**: [knowledge/source-notes/D05/D05-S11_watson-lovelock-1983-daisyworld.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D05/D05-S11_watson-lovelock-1983-daisyworld.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D05/D05-S11_watson-lovelock-1983-daisyworld.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D05/D05-S11_watson-lovelock-1983-daisyworld.md)（manifest_id: `D05-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D05/D05-S11_watson-lovelock-1983-daisyworld.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D05/D05-S11_watson-lovelock-1983-daisyworld.md)
 - **この wiki ページ（pd）**: [wiki/sources/D05_watson_1983_daisyworld.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D05_watson_1983_daisyworld.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

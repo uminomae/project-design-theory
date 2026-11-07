@@ -70,8 +70,8 @@ Wallas (1926) 以来の古典的モデルから一貫して確認される中核
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D15/D15-S15_botella-2018.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D15/D15-S15_botella-2018.md)（manifest_id: `D15-S15`）
-- **cs 精読ノート**: [knowledge/source-notes/D15/D15-S15_botella-2018.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D15/D15-S15_botella-2018.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D15/D15-S15_botella-2018.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D15/D15-S15_botella-2018.md)（manifest_id: `D15-S15`）
+- **cs 精読ノート**: [knowledge/source-notes/D15/D15-S15_botella-2018.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D15/D15-S15_botella-2018.md)
 - **この wiki ページ（pd）**: [wiki/sources/D15_botella_2018_what-are-the-stages.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D15_botella_2018_what-are-the-stages.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

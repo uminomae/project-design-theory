@@ -57,7 +57,7 @@ Povinelliらの先行研究を発展させ、木下は以下の手続きを採�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D23_kinoshita_2001_self-image.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D23_kinoshita_2001_self-image.pdf)（manifest_id: `D23-S06`）
-- **cs 精読ノート**: [knowledge/source-notes/D23/D23-S06_kinoshita-2001.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D23/D23-S06_kinoshita-2001.md)
+- **cs 原典ファイル**: [knowledge/raw/D23_kinoshita_2001_self-image.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D23_kinoshita_2001_self-image.pdf)（manifest_id: `D23-S06`）
+- **cs 精読ノート**: [knowledge/source-notes/D23/D23-S06_kinoshita-2001.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D23/D23-S06_kinoshita-2001.md)
 - **この wiki ページ（pd）**: [wiki/sources/D23_kinoshita_2001_self-image.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D23_kinoshita_2001_self-image.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

@@ -6,9 +6,9 @@ set -euo pipefail
 #
 # 正しいパターン:
 #   https://uminomae.github.io/project-design-theory/
-#   https://uminomae.github.io/awareness-space/
-#   https://uminomae.github.io/kesson-space/
-#   https://uminomae.github.io/creation-space/
+#   https://uminomae.github.io/project-design-theory/as/
+#   https://uminomae.github.io/project-design-theory/ks/
+#   https://uminomae.github.io/project-design-theory/cs/
 #
 # 誤りやすいパターン:
 #   /pjdhiro/project-design/  (旧パス)

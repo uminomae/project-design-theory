@@ -49,7 +49,7 @@ Planck データと他の天体物理学的データを組み合わせること�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D06_planck-collaboration_2016_cosmological-parameters.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D06_planck-collaboration_2016_cosmological-parameters.pdf)（manifest_id: `D06-S08`）
-- **cs 精読ノート**: [knowledge/source-notes/D06/D06-S08_planck-2016.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D06/D06-S08_planck-2016.md)
+- **cs 原典ファイル**: [knowledge/raw/D06_planck-collaboration_2016_cosmological-parameters.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D06_planck-collaboration_2016_cosmological-parameters.pdf)（manifest_id: `D06-S08`）
+- **cs 精読ノート**: [knowledge/source-notes/D06/D06-S08_planck-2016.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D06/D06-S08_planck-2016.md)
 - **この wiki ページ（pd）**: [wiki/sources/D06_planck-collaboration_2016_cosmological-parameters.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D06_planck-collaboration_2016_cosmological-parameters.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

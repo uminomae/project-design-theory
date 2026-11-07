@@ -48,7 +48,7 @@ creation-spaceの調査では、DIDSは5段階モデル（場・波・縁・渦�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D23_nakama_2014_dids-japanese-version.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D23_nakama_2014_dids-japanese-version.pdf)（manifest_id: `D23-S09`）
-- **cs 精読ノート**: [knowledge/source-notes/D23/D23-S09_nakama-2014.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D23/D23-S09_nakama-2014.md)
+- **cs 原典ファイル**: [knowledge/raw/D23_nakama_2014_dids-japanese-version.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D23_nakama_2014_dids-japanese-version.pdf)（manifest_id: `D23-S09`）
+- **cs 精読ノート**: [knowledge/source-notes/D23/D23-S09_nakama-2014.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D23/D23-S09_nakama-2014.md)
 - **この wiki ページ（pd）**: [wiki/sources/D23_nakama_2014_dids-japanese-version.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D23_nakama_2014_dids-japanese-version.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

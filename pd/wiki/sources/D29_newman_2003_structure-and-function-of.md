@@ -77,8 +77,8 @@ clustering coefficient C は「三角形数 × 3 / 接続三項数」として�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D29/D29-S14_newman-2003-structure-function-complex-networks.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D29/D29-S14_newman-2003-structure-function-complex-networks.md)（manifest_id: `D29-S14`）
-- **cs 精読ノート**: [knowledge/source-notes/D29/D29-S14_newman-2003-structure-function-complex-networks.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D29/D29-S14_newman-2003-structure-function-complex-networks.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D29/D29-S14_newman-2003-structure-function-complex-networks.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D29/D29-S14_newman-2003-structure-function-complex-networks.md)（manifest_id: `D29-S14`）
+- **cs 精読ノート**: [knowledge/source-notes/D29/D29-S14_newman-2003-structure-function-complex-networks.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D29/D29-S14_newman-2003-structure-function-complex-networks.md)
 - **この wiki ページ（pd）**: [wiki/sources/D29_newman_2003_structure-and-function-of.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D29_newman_2003_structure-and-function-of.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

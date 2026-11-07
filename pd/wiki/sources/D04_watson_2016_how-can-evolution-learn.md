@@ -74,8 +74,8 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D04/D04-S12_watson-szathmary-2016.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D04/D04-S12_watson-szathmary-2016.md)（manifest_id: `D04-S12`）
-- **cs 精読ノート**: [knowledge/source-notes/D04/D04-S12_watson-szathmary-2016.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D04/D04-S12_watson-szathmary-2016.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D04/D04-S12_watson-szathmary-2016.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D04/D04-S12_watson-szathmary-2016.md)（manifest_id: `D04-S12`）
+- **cs 精読ノート**: [knowledge/source-notes/D04/D04-S12_watson-szathmary-2016.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D04/D04-S12_watson-szathmary-2016.md)
 - **この wiki ページ（pd）**: [wiki/sources/D04_watson_2016_how-can-evolution-learn.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D04_watson_2016_how-can-evolution-learn.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

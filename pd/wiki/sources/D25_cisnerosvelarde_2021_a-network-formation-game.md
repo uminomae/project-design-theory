@@ -68,8 +68,8 @@ Cisneros-Velarde & Bullo はネットワーク形成ゲームの枠組みを用�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D25/D25-S16_cisneros-2021.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D25/D25-S16_cisneros-2021.md)（manifest_id: `D25-S16`）
-- **cs 精読ノート**: [knowledge/source-notes/D25/D25-S16_cisneros-2021.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D25/D25-S16_cisneros-2021.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D25/D25-S16_cisneros-2021.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D25/D25-S16_cisneros-2021.md)（manifest_id: `D25-S16`）
+- **cs 精読ノート**: [knowledge/source-notes/D25/D25-S16_cisneros-2021.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D25/D25-S16_cisneros-2021.md)
 - **この wiki ページ（pd）**: [wiki/sources/D25_cisnerosvelarde_2021_a-network-formation-game.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D25_cisnerosvelarde_2021_a-network-formation-game.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

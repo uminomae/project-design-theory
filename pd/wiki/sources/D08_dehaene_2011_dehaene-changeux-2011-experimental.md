@@ -64,8 +64,8 @@ GNW の枠組みは、麻酔・昏睡・植物状態・統合失調症といっ�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D08-S05`）
-- **cs 精読ノート**: [knowledge/source-notes/D08/D08-S05_dehaene-changeux-2011.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D08/D08-S05_dehaene-changeux-2011.md)
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D08-S05`）
+- **cs 精読ノート**: [knowledge/source-notes/D08/D08-S05_dehaene-changeux-2011.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D08/D08-S05_dehaene-changeux-2011.md)
 - **この wiki ページ（pd）**: [wiki/sources/D08_dehaene_2011_dehaene-changeux-2011-experimental.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D08_dehaene_2011_dehaene-changeux-2011-experimental.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

@@ -54,7 +54,7 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D04_darwin_1859_origin-of-species.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D04_darwin_1859_origin-of-species.pdf)（manifest_id: `D04-S01`）
-- **cs 精読ノート**: [knowledge/source-notes/D04/D04-S01_darwin-1859.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D04/D04-S01_darwin-1859.md)
+- **cs 原典ファイル**: [knowledge/raw/D04_darwin_1859_origin-of-species.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D04_darwin_1859_origin-of-species.pdf)（manifest_id: `D04-S01`）
+- **cs 精読ノート**: [knowledge/source-notes/D04/D04-S01_darwin-1859.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D04/D04-S01_darwin-1859.md)
 - **この wiki ページ（pd）**: [wiki/sources/D04_darwin_1859_origin-of-species.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D04_darwin_1859_origin-of-species.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

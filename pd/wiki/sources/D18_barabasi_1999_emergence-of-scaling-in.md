@@ -73,8 +73,8 @@ Barabasi & Albert (1999) は、遺伝子ネットワークから WWW まで、�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D18/D18-S06_barabasi-1999.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D18/D18-S06_barabasi-1999.md)（manifest_id: `D18-S06`）
-- **cs 精読ノート**: [knowledge/source-notes/D18/D18-S06_barabasi-1999.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D18/D18-S06_barabasi-1999.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D18/D18-S06_barabasi-1999.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D18/D18-S06_barabasi-1999.md)（manifest_id: `D18-S06`）
+- **cs 精読ノート**: [knowledge/source-notes/D18/D18-S06_barabasi-1999.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D18/D18-S06_barabasi-1999.md)
 - **この wiki ページ（pd）**: [wiki/sources/D18_barabasi_1999_emergence-of-scaling-in.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D18_barabasi_1999_emergence-of-scaling-in.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

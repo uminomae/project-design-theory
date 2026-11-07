@@ -52,7 +52,7 @@ MEP が基礎づけられた物理法則なのか、有用な発見的原理に�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D05-S13`）
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D05-S13`）
 - **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
 - **この wiki ページ（pd）**: [wiki/sources/D05_dyke_2010_maximum-entropy-production-principle.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D05_dyke_2010_maximum-entropy-production-principle.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

@@ -52,8 +52,8 @@ Jacob Bjerknes (1969) は、赤道太平洋における海洋と大気の相互�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D05-S10`）
-- **cs 精読ノート**: [knowledge/source-notes/D05/D05-S10_bjerknes-1969.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D05/D05-S10_bjerknes-1969.md)
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D05-S10`）
+- **cs 精読ノート**: [knowledge/source-notes/D05/D05-S10_bjerknes-1969.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D05/D05-S10_bjerknes-1969.md)
 - **この wiki ページ（pd）**: [wiki/sources/D05_bjerknes_1969_bjerknes-1969-atmospheric-teleconnections.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D05_bjerknes_1969_bjerknes-1969-atmospheric-teleconnections.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

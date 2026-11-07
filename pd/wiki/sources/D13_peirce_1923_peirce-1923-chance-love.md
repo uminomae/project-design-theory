@@ -54,8 +54,8 @@ Charles Sanders Peirce『偶然・愛・論理 (Chance, Love, and Logic)』(1923
 
 ## ソース参照（GitHub・検証用）
 
-- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D13-S13`）
-- **cs 精読ノート**: [knowledge/source-notes/D13/D13-S13_peirce-1923.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D13/D13-S13_peirce-1923.md)
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D13-S13`）
+- **cs 精読ノート**: [knowledge/source-notes/D13/D13-S13_peirce-1923.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D13/D13-S13_peirce-1923.md)
 - **この wiki ページ（pd）**: [wiki/sources/D13_peirce_1923_peirce-1923-chance-love.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D13_peirce_1923_peirce-1923-chance-love.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

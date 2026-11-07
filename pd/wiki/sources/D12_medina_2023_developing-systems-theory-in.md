@@ -72,8 +72,8 @@ Michaelis-Menten 動力学に支配されてきた土壌モデリングで、乗
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D12/D12-S15_medina-2023.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D12/D12-S15_medina-2023.md)（manifest_id: `D12-S15`）
-- **cs 精読ノート**: [knowledge/source-notes/D12/D12-S15_medina-2023.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D12/D12-S15_medina-2023.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D12/D12-S15_medina-2023.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D12/D12-S15_medina-2023.md)（manifest_id: `D12-S15`）
+- **cs 精読ノート**: [knowledge/source-notes/D12/D12-S15_medina-2023.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D12/D12-S15_medina-2023.md)
 - **この wiki ページ（pd）**: [wiki/sources/D12_medina_2023_developing-systems-theory-in.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D12_medina_2023_developing-systems-theory-in.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

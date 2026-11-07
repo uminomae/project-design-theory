@@ -153,7 +153,7 @@ git status --short
 # 原文のまま入っていること（各ファイル 1 件以上）
 grep -c '虚軸に値があって、しかも、認知上は 0 の直観' content/guides/meta-overview.md content/guides/meta-overview.html index.html llms.txt llms-full.txt README.md
 # 定義番号・内部用語が公開面に出ていないこと（0 件）
-grep -nE '\bD[1-4]\b|creation-space|awareness-space|生存軸|信頼軸|比喩|本質' content/guides/meta-overview.md index.html | grep -v 'uminomae.github.io/creation-space\|uminomae.github.io/project-design-theory/as\|生存軸（生存\|生存軸（生存：Survival）' 
+grep -nE '\bD[1-4]\b|creation-space|awareness-space|生存軸|信頼軸|比喩|本質' content/guides/meta-overview.md index.html | grep -v 'uminomae.github.io/project-design-theory/cs\|uminomae.github.io/project-design-theory/as\|生存軸（生存\|生存軸（生存：Survival）' 
 # スライド md の新規行が 1 文 40 字以内であること（句点で区切って数える。超過行を表示）
 awk 'NR>1' content/guides/meta-overview.md | sed -n '/0 に見えるのに、ある/,/まだ言葉になっていません/p' | tr '。' '\n' | awk 'length($0) > 120 {print "LONG: " $0}'
 # 生成 HTML にスライドが 1 枚増えていること（現行 7 枚 → 8 枚）

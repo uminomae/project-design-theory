@@ -50,8 +50,8 @@ Le Pichon (1968) は、地球表面を相互に相対運動する剛体ブロッ
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D05_le-pichon_1968_sea-floor-spreading.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D05_le-pichon_1968_sea-floor-spreading.pdf)（manifest_id: `D05-S03`）
-- **cs 精読ノート**: [knowledge/source-notes/D05/D05-S03_le-pichon-1968.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D05/D05-S03_le-pichon-1968.md)
+- **cs 原典ファイル**: [knowledge/raw/D05_le-pichon_1968_sea-floor-spreading.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D05_le-pichon_1968_sea-floor-spreading.pdf)（manifest_id: `D05-S03`）
+- **cs 精読ノート**: [knowledge/source-notes/D05/D05-S03_le-pichon-1968.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D05/D05-S03_le-pichon-1968.md)
 - **この wiki ページ（pd）**: [wiki/sources/D05_le-pichon_1968_sea-floor-spreading.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D05_le-pichon_1968_sea-floor-spreading.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

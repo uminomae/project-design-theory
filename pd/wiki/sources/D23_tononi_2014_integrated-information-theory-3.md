@@ -68,8 +68,8 @@ IIT の中核的アイデンティティ命題。
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D23/D23-S17_tononi-2014.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D23/D23-S17_tononi-2014.md)（manifest_id: `D23-S17`）
-- **cs 精読ノート**: [knowledge/source-notes/D23/D23-S17_tononi-2014.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D23/D23-S17_tononi-2014.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D23/D23-S17_tononi-2014.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D23/D23-S17_tononi-2014.md)（manifest_id: `D23-S17`）
+- **cs 精読ノート**: [knowledge/source-notes/D23/D23-S17_tononi-2014.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D23/D23-S17_tononi-2014.md)
 - **この wiki ページ（pd）**: [wiki/sources/D23_tononi_2014_integrated-information-theory-3.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D23_tononi_2014_integrated-information-theory-3.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

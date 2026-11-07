@@ -83,8 +83,8 @@ Varela, Maturana & Uribe (1974) は、多様な生物に共通する「生きて
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典 PDF**: [knowledge/raw/D13_varela-maturana-uribe_1974_autopoiesis.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D13_varela-maturana-uribe_1974_autopoiesis.pdf)（画像スキャン 10 頁・Monoskop 公開）
-- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/manifest.md)（manifest_id: `D13-S14`）
+- **cs 原典 PDF**: [knowledge/raw/D13_varela-maturana-uribe_1974_autopoiesis.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D13_varela-maturana-uribe_1974_autopoiesis.pdf)（画像スキャン 10 頁・Monoskop 公開）
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D13-S14`）
 - **cs 精読ノート**: 未生成（cs#258 で raw 確保済み。生成後 `wiki-cross-check.mjs` で照合）
 - **この wiki ページ（pd）**: [wiki/sources/D13_varela-maturana-uribe_1974_autopoiesis.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D13_varela-maturana-uribe_1974_autopoiesis.md)
 

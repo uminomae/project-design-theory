@@ -71,8 +71,8 @@ Michaelis-Menten に先立つ Henri は、生成物の変旋光を考慮せず p
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D03/D03-S02_johnson-2011.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D03/D03-S02_johnson-2011.md)（manifest_id: `D03-S02`）
-- **cs 精読ノート**: [knowledge/source-notes/D03/D03-S02_johnson-2011.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D03/D03-S02_johnson-2011.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D03/D03-S02_johnson-2011.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D03/D03-S02_johnson-2011.md)（manifest_id: `D03-S02`）
+- **cs 精読ノート**: [knowledge/source-notes/D03/D03-S02_johnson-2011.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D03/D03-S02_johnson-2011.md)
 - **この wiki ページ（pd）**: [wiki/sources/D03_johnson_2011_johnson-goody-2011-the.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D03_johnson_2011_johnson-goody-2011-the.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

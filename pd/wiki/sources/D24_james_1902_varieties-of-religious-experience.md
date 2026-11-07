@@ -74,8 +74,8 @@ Lecture XVI で神秘的状態を定義し、4 つの標識を提示する（ine
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D24/D24-S11_james-1902.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D24/D24-S11_james-1902.md)（manifest_id: `D24-S11`）
-- **cs 精読ノート**: [knowledge/source-notes/D24/D24-S11_james-1902.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D24/D24-S11_james-1902.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D24/D24-S11_james-1902.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D24/D24-S11_james-1902.md)（manifest_id: `D24-S11`）
+- **cs 精読ノート**: [knowledge/source-notes/D24/D24-S11_james-1902.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D24/D24-S11_james-1902.md)
 - **この wiki ページ（pd）**: [wiki/sources/D24_james_1902_varieties-of-religious-experience.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D24_james_1902_varieties-of-religious-experience.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

@@ -57,7 +57,7 @@ dx/dt = σ(y - x)、dy/dt = rx - y - xz、dz/dt = xy - bz
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D02_lorenz_1963_deterministic-nonperiodic-flow.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D02_lorenz_1963_deterministic-nonperiodic-flow.pdf)（manifest_id: `D02-S12`）
-- **cs 精読ノート**: [knowledge/source-notes/D02/D02-S12_lorenz-1963.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D02/D02-S12_lorenz-1963.md)
+- **cs 原典ファイル**: [knowledge/raw/D02_lorenz_1963_deterministic-nonperiodic-flow.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D02_lorenz_1963_deterministic-nonperiodic-flow.pdf)（manifest_id: `D02-S12`）
+- **cs 精読ノート**: [knowledge/source-notes/D02/D02-S12_lorenz-1963.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D02/D02-S12_lorenz-1963.md)
 - **この wiki ページ（pd）**: [wiki/sources/D02_lorenz_1963_deterministic-nonperiodic-flow.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D02_lorenz_1963_deterministic-nonperiodic-flow.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

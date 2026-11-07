@@ -69,8 +69,8 @@ Bourdieu は文学場（literary field）の生成と構造を分析し、芸術
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D19/D19-S09_bourdieu-1996.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D19/D19-S09_bourdieu-1996.md)（manifest_id: `D19-S09`）
-- **cs 精読ノート**: [knowledge/source-notes/D19/D19-S09_bourdieu-1996.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D19/D19-S09_bourdieu-1996.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D19/D19-S09_bourdieu-1996.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D19/D19-S09_bourdieu-1996.md)（manifest_id: `D19-S09`）
+- **cs 精読ノート**: [knowledge/source-notes/D19/D19-S09_bourdieu-1996.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D19/D19-S09_bourdieu-1996.md)
 - **この wiki ページ（pd）**: [wiki/sources/D19_bourdieu_1996_rules-of-art.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D19_bourdieu_1996_rules-of-art.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

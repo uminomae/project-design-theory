@@ -400,9 +400,9 @@ OU 過程が感情にもブラウン運動にも現れるのは、両者に同�
 ## 参照 — 出典メモ（本文と別枠）
 
 - 先行調査（pd リポジトリ・two-axis-closure ピラー）
-  - [RR-020 感情＝放出エネルギー横断調査](https://github.com/uminomae/project-design/blob/main/knowledge/research/two-axis-closure/RR-020-emotion-release-energy-survey.md) — 積→放出の等式対応なし・二段階の構造類似・free energy 同名性
-  - [RR-021 精神＝素粒子の構造類似調査](https://github.com/uminomae/project-design/blob/main/knowledge/research/two-axis-closure/RR-021-psyche-particle-analogy-survey.md) — E=mc² の二文脈・陽子質量の分解（arXiv:1710.09011）
-  - [RR-022 光はどこから現れるか](https://github.com/uminomae/project-design/blob/main/knowledge/research/two-axis-closure/RR-022-light-origin-psyche-analogy-survey.md) — 大前提「あくまで構造類似」の確定
+  - [RR-020 感情＝放出エネルギー横断調査](https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/two-axis-closure/RR-020-emotion-release-energy-survey.md) — 積→放出の等式対応なし・二段階の構造類似・free energy 同名性
+  - [RR-021 精神＝素粒子の構造類似調査](https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/two-axis-closure/RR-021-psyche-particle-analogy-survey.md) — E=mc² の二文脈・陽子質量の分解（arXiv:1710.09011）
+  - [RR-022 光はどこから現れるか](https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/two-axis-closure/RR-022-light-origin-psyche-analogy-survey.md) — 大前提「あくまで構造類似」の確定
 - 姉妹調査（creation-space リポジトリ）
-  - [TH-001 波・渦の存在論](https://github.com/uminomae/creation-space/tree/develop/evidence/themes/TH-001-wave-vortex-ontology) — 三層分離（実証＝アナログ重力／仮説＝時空・媒質／思想・系譜）・「analogy is not identity」
-- この調査の憲章: [energy-flow-psyche README](https://github.com/uminomae/project-design/blob/main/knowledge/research/energy-flow-psyche/README.md)
+  - [TH-001 波・渦の存在論](https://github.com/uminomae/project-design-theory/tree/main/cs/evidence/themes/TH-001-wave-vortex-ontology) — 三層分離（実証＝アナログ重力／仮説＝時空・媒質／思想・系譜）・「analogy is not identity」
+- この調査の憲章: [energy-flow-psyche README](https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/energy-flow-psyche/README.md)

@@ -52,8 +52,8 @@ Eduardo Viveiros de Castro『宇宙論的ダイクシスとアメリンディア
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D25_viveiros-de-castro_2017_amerindian-perspectivism.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D25_viveiros-de-castro_2017_amerindian-perspectivism.pdf)（manifest_id: `D25-S15`）
-- **cs 精読ノート**: [knowledge/source-notes/D25/D25-S15_viveiros-de-castro-1998.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D25/D25-S15_viveiros-de-castro-1998.md)
+- **cs 原典ファイル**: [knowledge/raw/D25_viveiros-de-castro_2017_amerindian-perspectivism.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D25_viveiros-de-castro_2017_amerindian-perspectivism.pdf)（manifest_id: `D25-S15`）
+- **cs 精読ノート**: [knowledge/source-notes/D25/D25-S15_viveiros-de-castro-1998.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D25/D25-S15_viveiros-de-castro-1998.md)
 - **この wiki ページ（pd）**: [wiki/sources/D25_viveiros-de-castro_2017_amerindian-perspectivism.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D25_viveiros-de-castro_2017_amerindian-perspectivism.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

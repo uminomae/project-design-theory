@@ -52,8 +52,8 @@ Frank Macfarlane Burnet『獲得免疫のクローン選択説 (The Clonal Selec
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D10_burnet_1959_clonal-selection-acquired-immunity.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D10_burnet_1959_clonal-selection-acquired-immunity.pdf)（manifest_id: `D10-S03`）
-- **cs 精読ノート**: [knowledge/source-notes/D10/D10-S03_burnet-1959.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D10/D10-S03_burnet-1959.md)
+- **cs 原典ファイル**: [knowledge/raw/D10_burnet_1959_clonal-selection-acquired-immunity.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D10_burnet_1959_clonal-selection-acquired-immunity.pdf)（manifest_id: `D10-S03`）
+- **cs 精読ノート**: [knowledge/source-notes/D10/D10-S03_burnet-1959.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D10/D10-S03_burnet-1959.md)
 - **この wiki ページ（pd）**: [wiki/sources/D10_burnet_1959_clonal-selection-acquired-immunity.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D10_burnet_1959_clonal-selection-acquired-immunity.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

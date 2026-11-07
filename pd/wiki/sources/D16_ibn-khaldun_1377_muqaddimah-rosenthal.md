@@ -56,8 +56,8 @@ Ibn Khaldun『歴史序説 (Muqaddimah, An Introduction to History)』(1377) は
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D16_ibn-khaldun_1377_muqaddimah-rosenthal.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D16_ibn-khaldun_1377_muqaddimah-rosenthal.pdf)（manifest_id: `D16-S09`）
-- **cs 精読ノート**: [knowledge/source-notes/D16/D16-S09_ibn-khaldun-1377-rosenthal.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D16/D16-S09_ibn-khaldun-1377-rosenthal.md)
+- **cs 原典ファイル**: [knowledge/raw/D16_ibn-khaldun_1377_muqaddimah-rosenthal.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D16_ibn-khaldun_1377_muqaddimah-rosenthal.pdf)（manifest_id: `D16-S09`）
+- **cs 精読ノート**: [knowledge/source-notes/D16/D16-S09_ibn-khaldun-1377-rosenthal.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D16/D16-S09_ibn-khaldun-1377-rosenthal.md)
 - **この wiki ページ（pd）**: [wiki/sources/D16_ibn-khaldun_1377_muqaddimah-rosenthal.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D16_ibn-khaldun_1377_muqaddimah-rosenthal.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

@@ -102,7 +102,7 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D02_feynman_1948_space-time-approach-nonrelativistic-quantum-mechanics.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D02_feynman_1948_space-time-approach-nonrelativistic-quantum-mechanics.pdf)（manifest_id: `D02-S01`）
-- **cs 精読ノート**: [knowledge/source-notes/D02/D02-S01_feynman-1948.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D02/D02-S01_feynman-1948.md)
+- **cs 原典ファイル**: [knowledge/raw/D02_feynman_1948_space-time-approach-nonrelativistic-quantum-mechanics.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D02_feynman_1948_space-time-approach-nonrelativistic-quantum-mechanics.pdf)（manifest_id: `D02-S01`）
+- **cs 精読ノート**: [knowledge/source-notes/D02/D02-S01_feynman-1948.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D02/D02-S01_feynman-1948.md)
 - **この wiki ページ（pd）**: [wiki/sources/D02_feynman_1948_space-time-approach-nonrelativistic-quantum-mechanics.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D02_feynman_1948_space-time-approach-nonrelativistic-quantum-mechanics.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

@@ -76,8 +76,8 @@ Castellano, Fortunato & Loreto (2009) はレビュー論文として、統計物
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D18/D18-S08_castellano-2009.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D18/D18-S08_castellano-2009.md)（manifest_id: `D18-S08`）
-- **cs 精読ノート**: [knowledge/source-notes/D18/D18-S08_castellano-2009.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D18/D18-S08_castellano-2009.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D18/D18-S08_castellano-2009.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D18/D18-S08_castellano-2009.md)（manifest_id: `D18-S08`）
+- **cs 精読ノート**: [knowledge/source-notes/D18/D18-S08_castellano-2009.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D18/D18-S08_castellano-2009.md)
 - **この wiki ページ（pd）**: [wiki/sources/D18_castellano_2009_statistical-physics-of-social.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D18_castellano_2009_statistical-physics-of-social.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

@@ -58,7 +58,7 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D13_dewey_1929_quest-for-certainty.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D13_dewey_1929_quest-for-certainty.pdf)（manifest_id: `D13-S08`）
-- **cs 精読ノート**: [knowledge/source-notes/D13/D13-S08_dewey-1929.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D13/D13-S08_dewey-1929.md)
+- **cs 原典ファイル**: [knowledge/raw/D13_dewey_1929_quest-for-certainty.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D13_dewey_1929_quest-for-certainty.pdf)（manifest_id: `D13-S08`）
+- **cs 精読ノート**: [knowledge/source-notes/D13/D13-S08_dewey-1929.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D13/D13-S08_dewey-1929.md)
 - **この wiki ページ（pd）**: [wiki/sources/D13_dewey_1929_quest-for-certainty.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D13_dewey_1929_quest-for-certainty.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

@@ -63,8 +63,8 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D28/D28-S12_mcneilly-2022.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D28/D28-S12_mcneilly-2022.md)（manifest_id: `D28-S12`）
-- **cs 精読ノート**: [knowledge/source-notes/D28/D28-S12_mcneilly-2022.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D28/D28-S12_mcneilly-2022.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D28/D28-S12_mcneilly-2022.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D28/D28-S12_mcneilly-2022.md)（manifest_id: `D28-S12`）
+- **cs 精読ノート**: [knowledge/source-notes/D28/D28-S12_mcneilly-2022.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D28/D28-S12_mcneilly-2022.md)
 - **この wiki ページ（pd）**: [wiki/sources/D28_mcneilly_2022_improvisation-and-emergence.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D28_mcneilly_2022_improvisation-and-emergence.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

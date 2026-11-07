@@ -72,8 +72,8 @@ self-coordination の本質は、誰かが意図的に組織したのではな�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D27/D27-S12_moroni-2019.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D27/D27-S12_moroni-2019.md)（manifest_id: `D27-S12`）
-- **cs 精読ノート**: [knowledge/source-notes/D27/D27-S12_moroni-2019.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D27/D27-S12_moroni-2019.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D27/D27-S12_moroni-2019.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D27/D27-S12_moroni-2019.md)（manifest_id: `D27-S12`）
+- **cs 精読ノート**: [knowledge/source-notes/D27/D27-S12_moroni-2019.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D27/D27-S12_moroni-2019.md)
 - **この wiki ページ（pd）**: [wiki/sources/D27_moroni_2019_forms-of-self-organization-urban.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D27_moroni_2019_forms-of-self-organization-urban.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

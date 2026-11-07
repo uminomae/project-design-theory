@@ -74,8 +74,8 @@ Mauss は、古代社会および「原始」社会における贈与交換の�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D25/D25-S07_mauss-1925.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D25/D25-S07_mauss-1925.md)（manifest_id: `D25-S07`）
-- **cs 精読ノート**: [knowledge/source-notes/D25/D25-S07_mauss-1925.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D25/D25-S07_mauss-1925.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D25/D25-S07_mauss-1925.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D25/D25-S07_mauss-1925.md)（manifest_id: `D25-S07`）
+- **cs 精読ノート**: [knowledge/source-notes/D25/D25-S07_mauss-1925.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D25/D25-S07_mauss-1925.md)
 - **この wiki ページ（pd）**: [wiki/sources/D25_mauss_1925_essai-sur-le-don.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D25_mauss_1925_essai-sur-le-don.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

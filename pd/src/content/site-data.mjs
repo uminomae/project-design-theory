@@ -32,11 +32,11 @@ export const KNOWLEDGE_ENTRIES = {
 const SITE_MENU_LINKS = [
   { siteId: "home", href: "/project-design-theory/", labelKey: "menu.home" },
   { siteId: "wiki", href: "/project-design-theory/wiki/", labelKey: "menu.wiki" },
-  { siteId: "kesson", href: "/kesson-space/", labelKey: "menu.kesson" },
-  { siteId: "creation", href: "/creation-space/", labelKey: "menu.creation" },
+  { siteId: "kesson", href: "/project-design-theory/ks/", labelKey: "menu.kesson" },
+  { siteId: "creation", href: "/project-design-theory/cs/", labelKey: "menu.creation" },
   {
     siteId: "awareness",
-    href: "/awareness-space/",
+    href: "/project-design-theory/as/",
     labelKey: "menu.awareness",
   },
   { siteId: "blog", href: "/pjdhiro/", labelKey: "menu.blog" },

@@ -78,8 +78,8 @@ slow-start は名前に反して指数的（log₂W ラウンドトリップ）�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D07/D07-S03_jacobson-1988.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D07/D07-S03_jacobson-1988.md)（manifest_id: `D07-S03`）
-- **cs 精読ノート**: [knowledge/source-notes/D07/D07-S03_jacobson-1988.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D07/D07-S03_jacobson-1988.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D07/D07-S03_jacobson-1988.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D07/D07-S03_jacobson-1988.md)（manifest_id: `D07-S03`）
+- **cs 精読ノート**: [knowledge/source-notes/D07/D07-S03_jacobson-1988.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D07/D07-S03_jacobson-1988.md)
 - **この wiki ページ（pd）**: [wiki/sources/D07_jacobson_1988_jacobson-1988-congestion-avoidance.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D07_jacobson_1988_jacobson-1988-congestion-avoidance.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

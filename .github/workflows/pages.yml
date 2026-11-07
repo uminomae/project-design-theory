@@ -1,11 +1,14 @@
 name: Deploy Pages
 
-# 公開するのは pd/ のサイトのファイルと wiki だけ。規約・docs・knowledge・scripts は出さない。
+# pd/ はサイトのファイルと wiki だけを根に出す。as/・ks/・cs/ は今までのサイトと同じく、ディレクトリごと出す。
 on:
   push:
     branches: [main]
     paths:
       - 'pd/**'
+      - 'as/**'
+      - 'ks/**'
+      - 'cs/**'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -43,6 +46,8 @@ jobs:
           cp -r index.html src/ content/ assets/ reader/ ../_site/
           cp robots.txt llms.txt llms-full.txt sitemap.xml favicon.ico ../_site/
           cp -r wiki-out/ ../_site/wiki/
+          cd ..
+          cp -r as ks cs _site/
 
       - uses: actions/upload-pages-artifact@v3
 

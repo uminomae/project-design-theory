@@ -55,8 +55,8 @@ Holling (1973) は、生態系の振る舞いを理解する二つの異なる�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D12_holling_1973_resilience-stability.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D12_holling_1973_resilience-stability.pdf)（manifest_id: `D20-S13`）
-- **cs 精読ノート**: [knowledge/source-notes/D20/D20-S13_holling-1973.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D20/D20-S13_holling-1973.md)
+- **cs 原典ファイル**: [knowledge/raw/D12_holling_1973_resilience-stability.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D12_holling_1973_resilience-stability.pdf)（manifest_id: `D20-S13`）
+- **cs 精読ノート**: [knowledge/source-notes/D20/D20-S13_holling-1973.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D20/D20-S13_holling-1973.md)
 - **この wiki ページ（pd）**: [wiki/sources/D20_holling_1973_resilience-stability.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D20_holling_1973_resilience-stability.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

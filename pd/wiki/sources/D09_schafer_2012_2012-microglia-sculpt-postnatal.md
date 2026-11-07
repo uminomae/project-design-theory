@@ -78,8 +78,8 @@ CR3 ノックアウトマウスでは、成体期まで持続する 1.3 倍の�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D09/D09-S03_schafer-2012.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D09/D09-S03_schafer-2012.md)（manifest_id: `D09-S03`）
-- **cs 精読ノート**: [knowledge/source-notes/D09/D09-S03_schafer-2012.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D09/D09-S03_schafer-2012.md)
+- **cs 原典ファイル**: [knowledge/source-notes/D09/D09-S03_schafer-2012.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D09/D09-S03_schafer-2012.md)（manifest_id: `D09-S03`）
+- **cs 精読ノート**: [knowledge/source-notes/D09/D09-S03_schafer-2012.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D09/D09-S03_schafer-2012.md)
 - **この wiki ページ（pd）**: [wiki/sources/D09_schafer_2012_2012-microglia-sculpt-postnatal.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D09_schafer_2012_2012-microglia-sculpt-postnatal.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

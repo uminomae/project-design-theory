@@ -66,7 +66,7 @@ Schumpeterは出発点として「静態的な循環（Kreislauf）」経済—�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D21_schumpeter_1912_theorie-der-wirtschaftlichen-entwicklung.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D21_schumpeter_1912_theorie-der-wirtschaftlichen-entwicklung.pdf)（manifest_id: `D21-S01`）
-- **cs 精読ノート**: [knowledge/source-notes/D21/D21-S01_schumpeter-1912.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D21/D21-S01_schumpeter-1912.md)
+- **cs 原典ファイル**: [knowledge/raw/D21_schumpeter_1912_theorie-der-wirtschaftlichen-entwicklung.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D21_schumpeter_1912_theorie-der-wirtschaftlichen-entwicklung.pdf)（manifest_id: `D21-S01`）
+- **cs 精読ノート**: [knowledge/source-notes/D21/D21-S01_schumpeter-1912.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D21/D21-S01_schumpeter-1912.md)
 - **この wiki ページ（pd）**: [wiki/sources/D21_schumpeter_1912_theorie-der-wirtschaftlichen-entwicklung.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D21_schumpeter_1912_theorie-der-wirtschaftlichen-entwicklung.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

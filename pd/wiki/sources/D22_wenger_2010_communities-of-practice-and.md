@@ -70,7 +70,7 @@ Snyder と Wenger は、実践コミュニティ論を組織学習の枠内か�
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 精読ノート**: [knowledge/source-notes/D22/D22-S14_wenger-2010.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D22/D22-S14_wenger-2010.md)
+- **cs 精読ノート**: [knowledge/source-notes/D22/D22-S14_wenger-2010.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D22/D22-S14_wenger-2010.md)
 - **この wiki ページ（pd）**: [wiki/sources/D22_wenger_2010_communities-of-practice-and.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D22_wenger_2010_communities-of-practice-and.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 

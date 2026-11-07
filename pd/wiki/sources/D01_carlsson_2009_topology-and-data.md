@@ -55,7 +55,7 @@ Gunnar Carlsson による2009年の論文で、位相的データ解析（TDA: T
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D01_carlsson_2009_topology-and-data.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D01_carlsson_2009_topology-and-data.pdf)（manifest_id: `D01-S02`）
-- **cs 精読ノート**: [knowledge/source-notes/D01/D01-S02_carlsson-2009.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D01/D01-S02_carlsson-2009.md)
+- **cs 原典ファイル**: [knowledge/raw/D01_carlsson_2009_topology-and-data.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D01_carlsson_2009_topology-and-data.pdf)（manifest_id: `D01-S02`）
+- **cs 精読ノート**: [knowledge/source-notes/D01/D01-S02_carlsson-2009.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D01/D01-S02_carlsson-2009.md)
 - **この wiki ページ（pd）**: [wiki/sources/D01_carlsson_2009_topology-and-data.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D01_carlsson_2009_topology-and-data.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

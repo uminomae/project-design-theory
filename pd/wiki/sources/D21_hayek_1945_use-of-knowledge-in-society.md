@@ -49,7 +49,7 @@ review_state: 未レビュー
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D21_hayek_1945_use-of-knowledge-in-society.pdf](https://github.com/uminomae/creation-space/blob/main/knowledge/raw/D21_hayek_1945_use-of-knowledge-in-society.pdf)（manifest_id: `D21-S04`）
-- **cs 精読ノート**: [knowledge/source-notes/D21/D21-S04_hayek-1945.md](https://github.com/uminomae/creation-space/blob/main/knowledge/source-notes/D21/D21-S04_hayek-1945.md)
+- **cs 原典ファイル**: [knowledge/raw/D21_hayek_1945_use-of-knowledge-in-society.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D21_hayek_1945_use-of-knowledge-in-society.pdf)（manifest_id: `D21-S04`）
+- **cs 精読ノート**: [knowledge/source-notes/D21/D21-S04_hayek-1945.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D21/D21-S04_hayek-1945.md)
 - **この wiki ページ（pd）**: [wiki/sources/D21_hayek_1945_use-of-knowledge-in-society.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D21_hayek_1945_use-of-knowledge-in-society.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
