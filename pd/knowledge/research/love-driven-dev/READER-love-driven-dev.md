@@ -185,7 +185,7 @@ Love と呼びたいものも、動かされているものの形から見てい
 
 <!--OPEN-->
 
-「創造とは」は、創造が、場 → 波 → 縁 → 渦 → 束 と進むと置いています。場が現れ、波が立ち、異なるものが縁で出会い、渦として結びつき、束として新しい形になる。この形と似たものが、30 の学問領域で報告されています。
+「創造とは」は、創造が、場 → 波 → 縁 → 渦 → 束 と進むと置いています。場が現れ、波が立ち、異なるものが縁で出会い、渦として結びつき、束として新しい形になる。この形と似たものが、[30 の学問領域](https://uminomae.github.io/project-design-theory/cs/?modal=domains)で報告されています。
 
 <figure class="glow-card reader-figure"><img src="../assets/img/creation-five-stages-spinor-v1-2.jpg" alt="創造の構造とプロセス：スピノル的5段階。場（まだ分かれていない、すべてが溶けている海のような状態）、波（場の中に差が生まれ、揺れとして立ち上がる）、縁（境界で起きる出来事。接し、影響し合い、関係や法則が生まれる場所）、渦（ひとつのまとまりとして立ち上がる）、束（渦どうしが影響し合い、構造として残る集まり）。下の表は、構造とプロセスを、場＝無と漂う、波＝ゆれ・対立と分離、縁＝境界・関係と繋がり、渦＝個・立ち上がりと包摂・融合、束＝方向と集合、と対応させている。" width="2048" height="1152" loading="lazy"><figcaption>創造の構造とプロセス — スピノル的5段階（Ver.1.2）</figcaption></figure>
 
@@ -724,7 +724,7 @@ pjdhiro は、価値は顧客の意識で生まれ、顧客の知識や意識で
 
 <details><summary>駆動源を探していた</summary>
 
-創造の五段階に似た現象が分野を越えて多いことから、「創造とは」は似ているものを 30 の学問領域で調べてきました。駆動源を探す流れで、海と波の背後で動かしているものをイメージしようとしたとき、無、ゼロ、空という語を当てるとかえって混乱し、目と素朴な感覚でつかめる形を探していました。
+創造の五段階に似た現象が分野を越えて多いことから、「創造とは」は似ているものを [30 の学問領域](https://uminomae.github.io/project-design-theory/cs/?modal=domains)で調べてきました。駆動源を探す流れで、海と波の背後で動かしているものをイメージしようとしたとき、無、ゼロ、空という語を当てるとかえって混乱し、目と素朴な感覚でつかめる形を探していました。
 
 <strong>pjdhiro の依頼：</strong>重力を z 方向のゆがみとして 3D で描いた宇宙の模式図。その太陽のような中心に、愛という概念があるとしたら。動いていない場所が駆動エンジンであること。無で、ゼロで、自身を見ることが自身からは見えづらい場所。それを描いて。
 
@@ -854,7 +854,7 @@ pjdhiro が考えているのは、脳の神経に伝わる神経伝達物質と
 
 このページが引いている知見の多くは、部品にしている三つの探究と、愛と重力の読み物が調べてきたものです。物理学との構造の類似は補足資料に、pjdhiro が影響を受けた心理学は別のページにまとめています。
 
-- [創造の5段階——先行研究との構造比較](https://uminomae.github.io/pjdhiro/assets/creation/guides/ja/md/creation-academic/)：「創造とは」が、30 の学術領域の調査から、創造の5段階を先行研究と比べたもの。
+- [創造の5段階——先行研究との構造比較](https://uminomae.github.io/pjdhiro/assets/creation/guides/ja/md/creation-academic/)：「創造とは」が、[30 の学術領域](https://uminomae.github.io/project-design-theory/cs/?modal=domains)の調査から、創造の5段階を先行研究と比べたもの。
 - [意識と間主観性 — 神経現象学・心理学・哲学からの状況証拠](https://uminomae.github.io/pjdhiro/assets/awareness/guides/ja/md/awareness-academic/)：「意識とは」が、生存と信頼の信号の足場にしている知見。
 - [欠損駆動思考](https://uminomae.github.io/project-design-theory/ks/)：欠損と抱持の調査。
 - [影響を受けた心理学](influences-psychology.html)：精神分析と発達心理から、pjdhiro が影響を受けた論。
@@ -873,4 +873,4 @@ pjdhiro が考えているのは、脳の神経に伝わる神経伝達物質と
 - [ものの見方の広さスクリーナー](stages-screener.html)：自分を分けていく作業を、自分で試す道具。
 - [欠損駆動思考](https://uminomae.github.io/project-design-theory/ks/)：合わないところに欠損を感じ、問いとして拾う。
 - [意識とは](https://uminomae.github.io/project-design-theory/as/)：生存と信頼の信号で、世界を切り取る。
-- [創造とは](https://uminomae.github.io/project-design-theory/cs/)：渦がどれだけありふれているかを、30 の学問領域で示す。姉妹読み物「[波間の渦](https://uminomae.github.io/project-design-theory/cs/reader/wave-vortex.html)」。
+- [創造とは](https://uminomae.github.io/project-design-theory/cs/)：渦がどれだけありふれているかを、[30 の学問領域](https://uminomae.github.io/project-design-theory/cs/?modal=domains)で示す。姉妹読み物「[波間の渦](https://uminomae.github.io/project-design-theory/cs/reader/wave-vortex.html)」。
