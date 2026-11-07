@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 780" font-family="'Noto Serif JP', 'Hiragino Mincho ProN', 'Yu Mincho', serif">
+  <!-- 光円錐（時間 1 次元・空間 1 次元の切り口）。過去の表面に月・太陽・星を光の所要時間の距離で置く。pd design-system の色（bg #050508・accent 100,150,255・sub-text 180,200,230・warm glow） -->
+  <defs>
+    <linearGradient id="pastGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgb(100,150,255)" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="rgb(100,150,255)" stop-opacity="0.03"/>
+    </linearGradient>
+    <linearGradient id="futureGlow" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="rgb(100,150,255)" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="rgb(100,150,255)" stop-opacity="0.0"/>
+    </linearGradient>
+    <radialGradient id="sunGlow">
+      <stop offset="0%" stop-color="#ffd27f" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffd27f" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hereGlow">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="rgb(100,150,255)" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="1.2"/></filter>
+  </defs>
+
+  <rect width="1000" height="780" fill="#050508"/>
+
+  <!-- 領域の塗り: 未来の内側・過去の内側 -->
+  <polygon points="500,420 160,80 840,80" fill="url(#futureGlow)"/>
+  <polygon points="500,420 160,760 840,760" fill="url(#pastGlow)"/>
+
+  <!-- 時間軸 -->
+  <line x1="500" y1="60" x2="500" y2="760" stroke="rgb(180,200,230)" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="512" y="78" fill="rgb(255,255,255)" font-size="15" letter-spacing="0.1em">時間</text>
+
+  <!-- 現在の面（届かない・理屈） -->
+  <line x1="80" y1="420" x2="920" y2="420" stroke="rgb(180,200,230)" stroke-opacity="0.45" stroke-width="1" stroke-dasharray="6 6"/>
+  <text x="84" y="408" fill="rgb(180,200,230)" font-size="13" letter-spacing="0.06em">現在の面 ── 届かない。理屈でしかない</text>
+  <text x="916" y="440" fill="rgb(180,200,230)" fill-opacity="0.55" font-size="12" text-anchor="end" letter-spacing="0.06em">今あそこ（空間的に隔たる・信号はまだ出ていない）</text>
+
+  <!-- 光円錐の線 -->
+  <line x1="500" y1="420" x2="160" y2="80" stroke="rgb(100,150,255)" stroke-opacity="0.6" stroke-width="1.2"/>
+  <line x1="500" y1="420" x2="840" y2="80" stroke="rgb(100,150,255)" stroke-opacity="0.6" stroke-width="1.2"/>
+  <line x1="500" y1="420" x2="160" y2="760" stroke="rgb(100,150,255)" stroke-opacity="0.95" stroke-width="2"/>
+  <line x1="500" y1="420" x2="840" y2="760" stroke="rgb(100,150,255)" stroke-opacity="0.95" stroke-width="2"/>
+
+  <!-- 領域ラベル -->
+  <text x="500" y="150" fill="rgb(180,200,230)" font-size="14" text-anchor="middle" letter-spacing="0.08em">未来光円錐 ── 行ける先の全部</text>
+  <text x="500" y="172" fill="rgb(180,200,230)" fill-opacity="0.6" font-size="12" text-anchor="middle">予想はできない。円錐の内側であることだけが決まっている</text>
+  <text x="330" y="700" fill="rgb(180,200,230)" font-size="14" text-anchor="middle" letter-spacing="0.08em">過去光円錐</text>
+  <text x="330" y="722" fill="rgb(180,200,230)" fill-opacity="0.6" font-size="12" text-anchor="middle">見えているものは全部この線の上</text>
+
+  <!-- 過去の表面に置く天体: 原点からの距離＝光の所要時間（目盛は等間隔でない） -->
+  <!-- 今の位置（理屈）: 現在の面の上に薄く -->
+  <g stroke="rgb(180,200,230)" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="2 4">
+    <line x1="570" y1="420" x2="570" y2="490"/>
+    <line x1="650" y1="420" x2="650" y2="570"/>
+    <line x1="730" y1="420" x2="730" y2="650"/>
+    <line x1="810" y1="420" x2="810" y2="730"/>
+  </g>
+  <g fill="rgb(180,200,230)" fill-opacity="0.35">
+    <circle cx="570" cy="420" r="4"/>
+    <circle cx="650" cy="420" r="6"/>
+    <circle cx="730" cy="420" r="3"/>
+    <circle cx="810" cy="420" r="5"/>
+  </g>
+  <text x="575" y="398" fill="rgb(180,200,230)" fill-opacity="0.55" font-size="11">今の位置（理屈）</text>
+
+  <!-- 見えている位置: 過去の表面の上 -->
+  <circle cx="570" cy="490" r="5" fill="#dfe6f2"/>
+  <text x="584" y="486" fill="#ffffff" font-size="14">月</text>
+  <text x="584" y="504" fill="rgb(180,200,230)" font-size="12">1.3 秒前の光</text>
+
+  <circle cx="650" cy="570" r="16" fill="url(#sunGlow)"/>
+  <circle cx="650" cy="570" r="7" fill="#ffd27f"/>
+  <text x="668" y="566" fill="#ffffff" font-size="14">太陽</text>
+  <text x="668" y="584" fill="rgb(180,200,230)" font-size="12">8.3 分前の光</text>
+
+  <circle cx="730" cy="650" r="3.5" fill="#ffffff"/>
+  <text x="744" y="646" fill="#ffffff" font-size="14">いちばん近い恒星</text>
+  <text x="744" y="664" fill="rgb(180,200,230)" font-size="12">4.2 年前の光</text>
+
+  <ellipse cx="810" cy="730" rx="9" ry="4" fill="#c9b8ff" fill-opacity="0.85" transform="rotate(-25 810 730)"/>
+  <text x="826" y="726" fill="#ffffff" font-size="14">アンドロメダ銀河</text>
+  <text x="826" y="744" fill="rgb(180,200,230)" font-size="12">250 万年前の光</text>
+
+  <!-- 縦の差＝光が届くまでの時間 -->
+  <text x="420" y="602" fill="rgb(180,200,230)" fill-opacity="0.7" font-size="12" text-anchor="end">点線の縦の差 ＝ 光が届くまでの時間</text>
+  <text x="420" y="620" fill="rgb(180,200,230)" fill-opacity="0.7" font-size="12" text-anchor="end">遠いほど、古い</text>
+
+  <!-- 原点: 今ここ -->
+  <circle cx="500" cy="420" r="22" fill="url(#hereGlow)"/>
+  <circle cx="500" cy="420" r="4.5" fill="#ffffff"/>
+  <text x="488" y="452" fill="#ffffff" font-size="15" text-anchor="end" letter-spacing="0.08em">今ここ（私）</text>
+  <text x="488" y="470" fill="rgb(180,200,230)" fill-opacity="0.7" font-size="12" text-anchor="end">触れられる現在は、この一点だけ</text>
+
+  <!-- 見出しと一文 -->
+  <text x="80" y="42" fill="#ffffff" font-size="19" letter-spacing="0.12em">光円錐 ── 見えている空間は、過去の光</text>
+  <text x="920" y="42" fill="rgb(180,200,230)" fill-opacity="0.6" font-size="12" text-anchor="end">横軸＝空間（一次元に切る）・縦軸＝時間・光の線は 45°</text>
+</svg>

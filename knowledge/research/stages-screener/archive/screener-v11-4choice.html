@@ -1,0 +1,673 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>STAGES 6.5 スクリーナー</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one narrow column, a single card per step; a stage ruler (5.0–7.0+) recurs as the visual motif */
+:root{
+  --bg:#eef1f2; --surface:#fbfcfc; --ink:#1d2a30; --muted:#5b6b72; --line:#cfd8db;
+  --accent:#2f5d6b; --accent-soft:#dbe7ea; --ref:#8a6d3b; --warn:#9a4a2e;
+  --display:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+  --body:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141c1f; --surface:#1b2529; --ink:#e3eaec; --muted:#97a7ad; --line:#2f3d42;
+  --accent:#8cc0cd; --accent-soft:#233a40; --ref:#d1b37a; --warn:#e29a7c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141c1f; --surface:#1b2529; --ink:#e3eaec; --muted:#97a7ad; --line:#2f3d42;
+  --accent:#8cc0cd; --accent-soft:#233a40; --ref:#d1b37a; --warn:#e29a7c; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.75;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 56px}
+.wrap{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+header{display:flex;flex-direction:column;gap:4px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(24px,5vw,30px);line-height:1.35;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:20px;line-height:1.5;margin:0;text-wrap:balance}
+h3{font-size:14px;font-weight:700;margin:0;color:var(--muted);letter-spacing:.04em}
+p{margin:0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:22px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.notes{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px}
+.btn{font:inherit;font-weight:700;border-radius:4px;padding:10px 18px;cursor:pointer;border:1px solid var(--accent);background:var(--accent);color:var(--surface)}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn:disabled{opacity:.45;cursor:default}
+.btn:focus-visible,.opt:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.small{font-size:13px;color:var(--muted)}
+/* ruler */
+.ruler{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;font-family:var(--mono);font-size:12px}
+.ruler span{border-top:3px solid var(--line);padding-top:4px;color:var(--muted);text-align:center}
+.ruler span.on{border-color:var(--accent);color:var(--ink);font-weight:500}
+.ruler span.ref{border-top-style:dashed}
+/* question */
+.progress{display:flex;justify-content:space-between;gap:8px;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.bar{height:3px;background:var(--line);border-radius:2px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);transition:width .25s}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opt{font:inherit;text-align:left;display:grid;grid-template-columns:2em 1fr;gap:8px;align-items:baseline;
+  padding:12px 14px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink);cursor:pointer}
+.opt b{font-family:var(--mono);color:var(--accent)}
+.opt:hover{border-color:var(--accent)}
+.opt.picked{border-color:var(--accent);background:var(--accent-soft)}
+.hint{min-height:1.4em;font-size:13px;color:var(--warn)}
+/* result */
+.verdict{font-family:var(--display);font-size:26px;font-weight:700;line-height:1.4}
+.sub{display:flex;flex-direction:column;gap:8px;border-top:1px solid var(--line);padding-top:14px}
+.subverdict{font-family:var(--display);font-size:18px;font-weight:700}
+.verdict small{font-size:15px;font-weight:500;color:var(--muted);margin-left:6px}
+.pill{display:inline-block;font-size:12px;font-weight:700;padding:2px 10px;border-radius:99px;border:1px solid currentColor}
+.pill.warn{color:var(--warn)} .pill.ok{color:var(--accent)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+td,th{padding:6px 4px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-weight:500;color:var(--muted);font-size:12px}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+.meter{height:8px;background:var(--line);border-radius:2px;min-width:60px}
+.meter i{display:block;height:100%;background:var(--accent);border-radius:2px}
+tr.ref .meter i{background:var(--ref)}
+.scroll{overflow-x:auto}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tabs button{font:inherit;font-size:13px;padding:4px 12px;border-radius:99px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+.tabs button[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);font-weight:700}
+pre.out{font-family:var(--mono);font-size:12px;line-height:1.6;background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:12px;margin:0;overflow:auto;max-height:260px;white-space:pre}
+textarea{font:inherit;width:100%;box-sizing:border-box;min-height:72px;padding:10px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink);resize:vertical}
+label{font-size:14px;font-weight:500}
+.chat{display:flex;flex-direction:column;gap:10px}
+.msg{padding:10px 14px;border-radius:4px;white-space:pre-wrap;word-break:break-word}
+.msg.user{background:var(--accent-soft);align-self:flex-end;max-width:90%}
+.msg.ai{background:var(--bg);border:1px solid var(--line)}
+.help{display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--line);padding-top:16px}
+.help textarea{min-height:52px}
+.ex summary{cursor:pointer;color:var(--accent);font-weight:500;font-size:14px}
+.ex dl{margin:12px 0 0;display:flex;flex-direction:column;gap:12px}
+.ex dt{font-family:var(--mono);color:var(--accent);font-weight:500}
+.ex dd{margin:2px 0 0;font-size:14px;display:flex;flex-direction:column;gap:2px}
+.ex dd span{color:var(--muted)}
+.model{font-family:var(--mono);font-size:11px;color:var(--muted);align-self:flex-start}
+.docs details{border-top:1px solid var(--line);padding-top:10px}
+.docs summary{cursor:pointer;font-weight:700;color:var(--ink)}
+.docs details[open] summary{margin-bottom:8px}
+.docs code{font-family:var(--mono);font-size:12px;background:var(--bg);padding:1px 4px;border-radius:3px}
+.docs a{color:var(--accent)}
+.callout{background:var(--accent-soft);border-radius:4px;padding:12px 14px;display:flex;flex-direction:column;gap:4px}
+.alist{display:flex;flex-direction:column}
+.alist details{border-bottom:1px solid var(--line);padding:8px 0}
+.alist summary{cursor:pointer;display:grid;grid-template-columns:3.2em 1fr auto;gap:8px;align-items:baseline;list-style:none}
+.alist summary::-webkit-details-marker{display:none}
+.alist .qn{font-family:var(--mono);color:var(--muted);font-size:13px}
+.alist .stage{font-family:var(--mono);font-size:12px;white-space:nowrap;padding:1px 8px;border-radius:99px;background:var(--accent-soft);color:var(--accent)}
+.alist .stage.ref{color:var(--ref)}
+.alist ul{margin:8px 0 0 3.2em;padding:0;list-style:none;display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--muted)}
+.alist li.mine{color:var(--ink);font-weight:500}
+@media (prefers-reduced-motion: reduce){.bar i{transition:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Ego development screening · STAGES</span>
+    <h1>自我発達ステージ簡易スクリーナー</h1>
+    <p class="small">Terri O’Fallon の STAGES の段階名を借りて、6.5（Illumined）の特徴がどれくらいあるかを見ます。6.0（Universal）などの選択肢は、6.5 と比べるために置いています。</p>
+    <p class="small"><strong>各段階の中身と境界線は、監修者が自分の感覚で独断で決めたものです。</strong>STAGES の論文に照らして確かめたものではありません。その程度のものとして楽しんでください。</p>
+  </header>
+
+  <div class="ruler" aria-hidden="true" id="ruler">
+    <span>5.0</span><span>5.5</span><span class="on">6.0</span><span class="on">6.5</span><span class="ref">7.0+</span>
+  </div>
+
+  <!-- intro -->
+  <section class="card" id="intro">
+    <h2>性格ではなく「ものの見方の広さ」を測ります</h2>
+    <p>性格診断は「どんなタイプか」を見ます。このスクリーナーが見るのは、考えるときに<strong>どこまでを含めて見ているか</strong>です。16問、5分ほどで答えられます。</p>
+    <h3>やってみると分かること</h3>
+    <ul class="notes">
+      <li><strong>包摂（インクルーシブ）の度合い</strong>：考えるときに、どれだけの視点・人間関係・時間の幅を取り込んでいるか。</li>
+      <li><strong>メタ認知の層</strong>：考えている自分に気づいているか、さらに「気づいている自分」まで見えているか。</li>
+      <li><strong>自分の経験に言葉と境界線がつく</strong>：なんとなくやっていたことに名前がつき、似た経験どうしの違いを言い分けられるようになります。</li>
+      <li><strong>余裕のなさに気づく目安になる</strong>：疲れやストレスがあると、ふだんより狭い基準で判断しがちです。いつもの自分の見方を知っておくと、「今日は余裕がないな」と気づきやすくなります。</li>
+      <li><strong>すれ違いの理由が分かる</strong>：相手は合意を作ろうとし、自分は流れを読もうとしていた、のように、話がかみ合わない理由を言葉にできます。</li>
+    </ul>
+    <p class="small">どの段階が良い・悪いということはありません。</p>
+    <h2>始める前に</h2>
+    <ul class="notes">
+      <li>これは傾向をざっくり推定する<strong>スクリーニング</strong>で、心理検査や診断ではありません。</li>
+      <li>結果を個人のラベルとして固定しないでください。</li>
+      <li>一時的な体験（状態）と、日常の認知の型（段階）は区別して答えてください。</li>
+      <li>全16問、各問 A〜D から1つだけ選びます（キーボードの A〜D でも回答できます）。選択肢の並びは問ごとにランダムです。</li>
+      <li>回答はどこにも保存されません。途中でページを閉じると、次回は最初からになります。</li>
+    </ul>
+    <div class="row"><button class="btn" id="start">Q1 から始める</button></div>
+  </section>
+
+  <!-- question -->
+  <section class="card" id="quiz" hidden>
+    <div class="progress"><span id="qsec"></span><span id="qcount"></span></div>
+    <div class="bar"><i id="qbar" style="width:0"></i></div>
+    <h2 id="qtext"></h2>
+    <div class="opts" id="opts"></div>
+    <details class="ex" id="qex"><summary>選択肢の補足と例を見る</summary><dl id="qexList"></dl></details>
+    <p class="hint" id="hint" aria-live="polite"></p>
+    <div class="row"><button class="btn ghost" id="back">前の問に戻る</button></div>
+    <div class="help" id="qhelp">
+      <h3>この問について Claude に聞く</h3>
+      <p class="small">言葉の意味や選択肢の違いを質問できます。どれを選ぶべきか、どの段階に当たるかは答えません。返答にはあなたの Claude の利用枠が使われます。</p>
+      <div class="chat" id="qchat"></div>
+      <textarea id="qIn" placeholder="例：B と C の違いがよく分かりません"></textarea>
+      <div class="row"><button class="btn" id="qSend">質問する</button><button class="btn ghost" id="qStop" hidden>止める</button><span class="small" id="qNote" aria-live="polite"></span></div>
+    </div>
+  </section>
+
+  <!-- result -->
+  <section id="result" hidden style="display:flex;flex-direction:column;gap:20px">
+    <div class="card">
+      <h3>6.5 の度合い</h3>
+      <div class="verdict" id="degree"></div>
+      <div class="meter" style="height:10px"><i id="degreeBar"></i></div>
+      <p class="small" id="degreeNote"></p>
+      <div class="sub">
+        <h3>区分での判定（補足）</h3>
+        <p class="subverdict" id="verdict"></p>
+        <div class="row" id="pills"></div>
+        <p class="small" id="confText"></p>
+      </div>
+    </div>
+    <div class="card">
+      <h3>根拠（6.5寄りの回答）</h3>
+      <div id="rationale"></div>
+    </div>
+    <div class="card">
+      <h3>あなたの回答と対応する段階</h3>
+      <p class="small">各問で選んだ選択肢が、どの段階に当たるかです。問を開くと、ほかの選択肢の段階も見られます。段階の割り当ては監修者が決めたものです。</p>
+      <div id="answerList" class="alist"></div>
+    </div>
+    <div class="card">
+      <h3>ステージ別スコア</h3>
+      <div class="scroll"><table id="scoreTable"></table></div>
+      <p class="small">本体 Q5〜Q16 の合計。各問で典型段階に +2、一つ下の段階に +1。7.0+ は参考表示で、判定には使いません。</p>
+    </div>
+    <div class="card">
+      <h3>段階ごとの違い（監修者が決めた区分）</h3>
+      <p class="small">答え終えたので、選択肢の背後にある違いを示します。自分の答えと、選ばなかった答えを見比べてください。</p>
+      <div class="scroll"><table>
+        <tr><th>段階</th><th>取り込んでいるもの（包摂）</th><th>見えているもの（メタ認知）</th></tr>
+        <tr><td class="num">5.5</td><td>一貫した基準・定義・正解</td><td>自分の考えや判断の中身</td></tr>
+        <tr><td class="num">6.0</td><td>複数の視点と、互いの影響</td><td>自分と他者の影響の与え合い</td></tr>
+        <tr><td class="num">6.5</td><td>変化の流れ（軌道）と、境界の重なり</td><td>意味や境界を作り出している過程そのもの</td></tr>
+        <tr class="ref"><td class="num">7.0+</td><td>区別そのものが薄れる（参考）</td><td>見る側と見られる側の区別が薄れる（参考）</td></tr>
+      </table></div>
+      <p class="small">どの段階が良い・悪いということはありません。場面や状態によって、ふだんと違う答え方をすることもあります。</p>
+    </div>
+    <div class="card">
+      <h3>日常での使い方</h3>
+      <ul class="notes">
+        <li><strong>自分の経験に名前をつける</strong>：根拠に挙がった問いを読み返し、「あのとき自分がしていたのはこれだ」と思い当たる場面を一つ探してみてください。</li>
+        <li><strong>余裕のなさに気づく</strong>：疲れているときにもう一度答えると、いつもより狭い基準の答えが増えることがあります。違いが出たら、それは休みどきの合図かもしれません。</li>
+        <li><strong>すれ違いを言葉にする</strong>：話がかみ合わなかった相手を思い浮かべ、相手ならどの選択肢を選びそうか考えてみてください。</li>
+      </ul>
+    </div>
+    <div class="card" id="followCard" hidden>
+      <h3>追加質問（移行帯のため）</h3>
+      <p class="small">具体例を短く書いて送ると、Claude が回答の構造を読んで補足します。返答にはあなたの Claude の利用枠が使われます。</p>
+      <div style="display:flex;flex-direction:column;gap:6px"><label for="f1">1. reciprocity（相互調整）より trajectory（発達軌道）が先に立った具体例</label><textarea id="f1"></textarea></div>
+      <div style="display:flex;flex-direction:column;gap:6px"><label for="f2">2. fullness-emptiness（現れと空）の相互浸透は、一時的な「状態」か、日常の認知スタイルか</label><textarea id="f2"></textarea></div>
+      <div style="display:flex;flex-direction:column;gap:6px"><label for="f3">3. 介入が「調整」から「最小介入」へ変わった具体例</label><textarea id="f3"></textarea></div>
+      <div class="row"><button class="btn" id="sendFollow">Claude に読んでもらう</button></div>
+    </div>
+    <div class="card" id="chatCard">
+      <h3>結果について Claude と話す</h3>
+      <div class="chat" id="chat"><p class="small" id="chatEmpty">結果の読み方や、追加で確かめたい点を質問できます。返答にはあなたの Claude の利用枠が使われます。</p></div>
+      <textarea id="chatIn" placeholder="例：Q12 で C を選んだことは何を示しますか"></textarea>
+      <div class="row"><button class="btn" id="chatSend">送信</button><button class="btn ghost" id="chatStop" hidden>止める</button><span class="small" id="chatNote" aria-live="polite"></span></div>
+    </div>
+    <div class="card">
+      <h3>結果を書き出す</h3>
+      <div class="tabs" role="group" aria-label="形式"><button data-f="text" aria-pressed="true">テキスト</button><button data-f="csv" aria-pressed="false">CSV</button><button data-f="json" aria-pressed="false">JSON</button></div>
+      <pre class="out" id="out"></pre>
+      <div class="row"><button class="btn" id="copy">コピー</button><button class="btn ghost" id="save" hidden>ファイルに保存</button><span class="small" id="copyNote" aria-live="polite"></span></div>
+    </div>
+    <div class="row"><button class="btn ghost" id="restart">最初からやり直す</button></div>
+  </section>
+
+  <section class="card docs" id="docs">
+    <h2>設計ドキュメント（移植・カスタマイズ用）</h2>
+    <p>このスクリーナーを自分の環境に移して作り変えたい人のために、設計で決めたことをすべて書いておきます。自由に移植・改変してかまいません。ただし、下に挙げた資料の著作権は各著者にあります。</p>
+    <div class="callout">
+      <strong>今のページと設計の差</strong>
+      <p>このページはまだ旧版の4択（GPTs から移植したもの）で動いています。下に書いた設計（1問5択、6.5 への近さでの採点）に沿った選択肢は下書きの段階で、監修者のレビュー待ちです。</p>
+    </div>
+    <div class="row"><button class="btn" id="saveSource" hidden>このページの HTML を保存</button><span class="small" id="saveSourceNote" aria-live="polite"></span></div>
+
+    <details open>
+      <summary>1. 目的</summary>
+      <ul class="notes">
+        <li><strong>主</strong>：回答者に 6.5 の特徴がどれくらいあるか（6.5 の度合い）を知る。</li>
+        <li><strong>副</strong>：いまの位置を、〜3.5／4.0〜4.5／5.0〜5.5／6.0／6.5 の5つの帯で示す。隣り合う帯にまたがるときは移行期（例：4〜5 の移行期）として示す。</li>
+        <li><strong>実用面</strong>：包摂の度合い（どれだけの視点・関係・時間を取り込むか）とメタ認知の層（何が見えているか）に気づく。自分の経験に言葉と境界線がつく。余裕のなさに気づく目安になる。人とのすれ違いの理由を言葉にできる。実存的な課題の理解につながる（監修者の見立てでは、自分の見方の広さに気づくこと自体が、実存的な課題への直接の対策になる）。</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>2. 対象と位置づけ</summary>
+      <ul class="notes">
+        <li>対象は、性格診断が好きな一般の人と、中年の危機の中にいる人（Claude アカウントを持つ人）。</li>
+        <li>揺れている最中の人が読む前提で書く。下の帯を「欠けている」と読ませず、「次の見方へ移る途中」と読めるようにする。治療や解決は約束しない。</li>
+        <li>不調な人に向けた案内（専門家への相談を勧める一文など）は置かない。気軽に相談できる環境にない人が多く、勧めても実際の助けにならないため。</li>
+        <li>診断ではない。医療・臨床的な断定をしない。段階の優劣を言わない。</li>
+        <li><strong>位置づけはゲームのようなもの</strong>。他人と比べたり、絶対的な段階を当てたりするものではない。</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>3. レベルと定義</summary>
+      <ul class="notes">
+        <li>レベルとその定義は、Terri O'Fallon の STAGES モデルの論文から借りる。「6.0」「6.5」は便宜上の記号で、呼び方は変えてよい。</li>
+        <li>呼び方は「数字＋論文の名前＋日本語の一言」にする（例：6.5 Illumined）。</li>
+        <li>選択肢がどのレベルに当たるかは、LLM と監修者が判断して決める。</li>
+      </ul>
+      <div class="scroll"><table>
+        <tr><th>帯</th><th>視座</th><th>何が見えているか（メタ認知）</th><th>何を取り込むか（包摂）</th></tr>
+        <tr><td class="num">〜3.5</td><td>3人称まで</td><td>考えや感情と、それが自分の行動にどう関わるかを振り返る</td><td>正しいやり方、専門知識、目標、自分の役割</td></tr>
+        <tr><td class="num">4.0〜4.5</td><td>4人称</td><td>考えている自分に気づく。相手が自分をどう見ているかにも気づく</td><td>複数の視点、文脈、複雑な仕組み、人の成長の流れ</td></tr>
+        <tr><td class="num">5.0〜5.5</td><td>5人称</td><td>言葉・境界・意味を心が作っていると見える。気づきそのものに気づく</td><td>意味づけの仕組み。時間や境界を超えたもの（まだ日常とは別）</td></tr>
+        <tr><td class="num">6.0</td><td>6人称</td><td>時間や境界を超えたものと、日常の現実が一つになっている</td><td>自他の気づきが響き合う全体</td></tr>
+        <tr><td class="num">6.5</td><td>6人称</td><td>見ている場そのものから、体・考え・気づきの層が互いに入り込み合うのが見える</td><td>物質・生命・心の進化の流れ全体。わずかな動きが全体に響く</td></tr>
+      </table></div>
+      <p class="small">論文の記述を自分の言葉で要約したもの。原文は「8. 論拠」の資料を見てください。</p>
+    </details>
+
+    <details>
+      <summary>4. 選択肢の原則</summary>
+      <ol class="notes">
+        <li>1問5択。各問に5つの帯の選択肢を一つずつ置く。7.0+ は置かない。</li>
+        <li>一つの選択肢＝一つの帯。複数の帯で選べる書き方をしない。どうしても一つに絞れないときは「4.0〜4.5」のように範囲で示してよい。</li>
+        <li>視座・メタ認知・包摂の3軸が同じ帯を指すように書く。視座は「段階としての視点」で、一時的な「見る位置（状態）」と混ぜない。</li>
+        <li>ふだんの見方（段階）を聞く。一時的な体験（状態）を聞かない。問いは「ふだん、〜」で始め、「ことがある」「常に」などの頻度の言葉は使わない。</li>
+        <li>一つの選択肢で一つのことだけを聞く。</li>
+        <li>採点の鍵になる言葉（軌道、相互浸透など）をそのまま使わない。帯ごとに決まった言い回しが目印にならないよう、問ごとに言い方を変える。</li>
+        <li>下の帯ほど人数が多い。下の帯の選択肢も「自分のこと」「かつての自分」と思える具体的な書き方にする。文の長さを帯の間でそろえ、優劣を感じさせない。</li>
+        <li>各選択肢に補足と例を付け、回答中の説明の基準にする。</li>
+      </ol>
+    </details>
+
+    <details>
+      <summary>5. 回答中の扱い</summary>
+      <ul class="notes">
+        <li>選択肢の表示順は問ごとにランダムにする。採点は選択肢の中身で行い、画面上の記号（A〜E）は使わない。</li>
+        <li>各問で Claude に質問できる。Claude は言葉や選択肢の違いを説明するが、どれを選ぶべきか、どの段階に当たるか、採点方法は言わない。</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>6. 採点と結果</summary>
+      <ul class="notes">
+        <li>16問すべてを同じ形の5択にする（旧版の前段 Q1〜Q4 はやめる）。</li>
+        <li>採点は 6.5 への近さで点をつける：〜3.5=0、4.0〜4.5=1、5.0〜5.5=2、6.0=3、6.5=4。16問の平均をとる。隣の帯への加点はしない。</li>
+        <li>結果の見出しは「6.5 への近さ」：平均 ÷ 4 × 100 を 0〜100 のバーで示す。</li>
+        <li>いまの位置：帯ごとに何問選んだかを示し、いちばん多い帯を位置とする。隣り合う2つの帯がどちらも6問以上（全体の 1/3 以上）なら移行期とする。</li>
+        <li>各回答がどの帯に当たるかを示す。ほかの選択肢の帯も見られる。</li>
+        <li>段階ごとの違いを、視座・メタ認知・包摂で示す。日常での使い方も示す（余裕のなさは「いつもの自分と比べる目安」として、断定しない）。</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>7. 品質基準</summary>
+      <ul class="notes">
+        <li>求める正確性は「内容の妥当性」まで。各選択肢が借りたレベルの定義と合っていればよい。何度答えても同じ結果になるか（一貫性）や、STAGES の正式な測定（訓練を受けた採点者による文章完成法）との一致は求めない。</li>
+        <li>過去の自分との比較は、回答者の頭の中で起きればよい。選択肢を選ぶときに「以前の自分ならこっちを選んだだろう」と気づく程度でよい。過去の結果は保存しない。</li>
+        <li>内容の妥当性は、各選択肢を定義と「4. 選択肢の原則」に照らして点検し、監修者がレビューして確かめる。</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>8. 論拠</summary>
+      <p>段階の定義は次の資料（いずれも Integral Review 16(1), 2020 の STAGES 特集号、無料で読める）に拠ります。全文や長い引用は載せず、要約と出典だけを示しています。</p>
+      <ul class="notes">
+        <li>O'Fallon, T. States and STAGES: Waking up Developmentally. <a href="https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf">PDF</a>（各段階の記述 pp.28–29、学習の流れ p.26、人称の視点 pp.18, 20）</li>
+        <li>Barta, K. Seven Perspectives on the STAGES Developmental Model. <a href="https://integral-review.org/issues/vol_16_no_1_barta_seven_perspectives_on_the_stages_developmental_model.pdf">PDF</a>（階層ごとの対象 p.73、相互と相互浸透 pp.78–79）</li>
+        <li>Murray, T. &amp; O'Fallon, T. Summary of STAGES Validation Research. <a href="https://integral-review.org/issues/vol_16_no_1_murray_and_ofallon_summary_of_research.pdf">PDF</a></li>
+      </ul>
+      <p><strong>知っておいてほしいこと</strong></p>
+      <ul class="notes">
+        <li>検証研究によると、統計的な結論が成り立つのは 2.0〜6.0 で、6.5 はデータが足りません（Murray &amp; O'Fallon p.55）。6.5 の選択肢は、論文の短い記述から広げて書いた部分がいちばん多くなっています。</li>
+        <li>5.0〜6.0 の人も、4.5 と採点される答えを多く書きます（同 pp.52–53）。1問1択でも、上の段階の人が 4.5 の選択肢を選ぶことは珍しくないと考えられます。</li>
+        <li>旧版で 6.5 の目印にしていた「発達の軌道」は、論文では 4.5 の特徴として書かれています（O'Fallon p.29）。</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>9. 検討中のこと</summary>
+      <ul class="notes">
+        <li>監修者の仮説：段階が高いほど、リソ＝ハドソンのエニアグラムでいう健全な状態に近づく。結果画面で「段階が高いと何が起きるのか」の目安として、9タイプの健全な状態を短く示す案がある。</li>
+        <li>ただし Barta（p.87）は、陰（シャドー）の課題は解消されるまで段階とともに巧妙になると書いており、段階が高いことはそのまま健全であることを意味しない。示すなら「監修者の仮説」と明記する。</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>10. 移植とカスタマイズの方法</summary>
+      <p>このページは1枚の HTML で、外部のサーバーを使いません。上のボタンで保存した HTML を、自分の環境で開くか、Claude のアーティファクトとして公開し直せば動きます。</p>
+      <ul class="notes">
+        <li><strong>質問と選択肢</strong>：スクリプト冒頭の <code>Q</code>（問いと選択肢の文）と <code>X</code>（各選択肢の補足と例）を書き換えます。</li>
+        <li><strong>採点</strong>：<code>score()</code> 関数と <code>MAP</code>／<code>TYPICAL</code>（選択肢と段階の対応）です。5択にするときは、ここを「6.5 への近さ」の点に置き換えます。</li>
+        <li><strong>Claude への指示</strong>：<code>SYSTEM</code>（結果の解説役）と <code>QHELP</code>（回答中の説明役）の文です。方針を変えたら、ここも合わせて直します。</li>
+        <li><strong>Claude を呼ぶ仕組み</strong>：アーティファクトの <code>sample</code> 機能を使っています（宣言 <code>capabilities: {sample: {}, downloads: true}</code>）。返答には閲覧者自身の Claude の利用枠が使われます。モデルは <code>claude-opus-5-5</code> を指定し、使えないときは高性能区分（<code>complex</code>）で答えます。</li>
+        <li><strong>保存しないこと</strong>：回答はどこにも保存しません。途中で閉じると最初からになります。</li>
+        <li>Claude 以外の環境に移すときは、<code>sample</code> の呼び出しを、その環境の LLM の API に置き換えてください。</li>
+      </ul>
+    </details>
+  </section>
+</div>
+
+<script>
+// Snapshot before any rendering, so a saved copy starts clean
+const SOURCE = document.documentElement.outerHTML;
+const Q = [
+ {t:"自分の信念や価値観についての感覚に近いものは？",o:["正しい／間違いがまず重要で、筋の通る基準を守りたい","複数の視点を比較して、状況に合う枠組みを選ぶ","そもそも「枠組みや意味」は自分が構成していると強く感じる","意味づけ以前に「気づき（awareness）」そのものが前景に来ることが多い"]},
+ {t:"自分の内面を観察するときの“手触り”は？",o:["感情や欲求に巻き込まれることが多い","思考・感情を整理して、より良い選択に使う","「観察している自分／構成している自分」を同時に見ている","「観察者すら現象」として透明になっていく感覚がある"]},
+ {t:"言葉や概念の扱いに近いのは？",o:["定義を固定して正確に運用したい","文脈で定義が変わるのは理解し、使い分ける","言葉は境界を作る装置で、意味は構成物だと見える","言葉が落ちた“余白”で分かることが増える"]},
+ {t:"矛盾やパラドクスへの反応は？",o:["どちらかを正として整合させたい","両立条件を整理して、折衷・最適化したい","矛盾は「枠組みの限界のサイン」として観察対象になる","矛盾がほどけ、同じ場の異なる現れに見えることがある"]},
+ {t:"「他者」との関係の捉え方で近いのは？",o:["相手は相手、自分は自分。境界を守る","互いの影響（相互作用）を理解し調整する","相手との相互性を超えて、関係そのものが“生成プロセス”に見える","自他の区別自体が薄れ、出来事として立ち上がる"],s:"関係を相互調整でなく生成過程として捉える"},
+ {t:"何かを学ぶ／変えるときの基本様式は？",o:["情報を集めて最適解を選ぶ","フィードバックループを回して改善する（相互調整）","「変化の軌道（trajectory）」そのものを掴み、介入点を読む","介入という感覚が薄れ、自然に更新が起きる"],s:"変化をループでなく軌道として読み、介入点を選ぶ"},
+ {t:"“時間”の感覚に近いのは？",o:["過去→現在→未来の順で進む","過去のパターンから未来を予測して設計する","個別の出来事が、より大きな発達の流れの一部として見える","時間が広がり、今の一点に凝縮して見える"],s:"出来事を大きな発達の流れの一部として位置づける"},
+ {t:"意思決定のときに起きやすいことは？",o:["ルール・目的・制約から決める","関係者の相互利益を見て落としどころを作る","目的の背後にある“生成の流れ”を読み、最小介入で整える","決定が起こる前に、すでに答えが満ちている感じがある"],s:"利害調整でなく生成の流れを読み、最小介入で決める"},
+ {t:"「全体」をどう扱うか？",o:["全体像は必要だが、最終的には分解して管理する","全体は相互接続のネットワークとして把握する","全体は“展開する過程”として把握し、軌道を読む","全体と部分が同一の現れに見える"],s:"全体をネットワークでなく展開する過程として把握する"},
+ {t:"自己と世界の境界について",o:["境界は基本的に明確であるべき","境界は文脈で変化し、調整できる","境界は生成されるもので、重なり合い（浸透）が見える","境界が消える（が、機能としては残る）"],s:"境界を生成物とみなし、相互浸透を見る"},
+ {t:"内省が深いときに現れる理解は？",o:["反省して改善点が分かる","自分と他者の相互影響が分かる","自分・他者・世界が“同じ発達軌道上の現れ”として統合される","統合という言葉すら不要になる"],s:"自他と世界を同じ発達軌道上の現れとして統合する"},
+ {t:"“矛盾の扱い”の最頻は？",o:["解消する","両立条件を作る","解消せずに保持し、軌道の中で意味づけが変わるのを待てる","矛盾がそもそも別の次元の記述に見える"],s:"矛盾を解消せず保持し、軌道上の意味の変化を待つ"},
+ {t:"「現れ（fullness）」と「空／気づき（emptiness）」に相当する感覚",o:["そういう二分はあまり関係ない","状態としては分かるが、基本は現実問題優先","現れと空が“相互浸透”して見えることがある","常に非二元である"],s:"現れと空の相互浸透を見る（状態寄りの設問）"},
+ {t:"他者支援・介入のスタイル",o:["手順と正解を提示する","対話で相互理解を作り、合意形成する","相手の発達軌道（trajectory）を尊重し、環境を整える","支援者／被支援者の区別が薄れる"],s:"合意形成でなく、相手の軌道を尊重して環境を整える"},
+ {t:"世界の説明が必要なとき",o:["モデルは一つに定める","複数モデルを目的で使い分ける","モデルの背後にある生成原理（パターン）を語る","語るほど離れるので、指し示すだけになる"],s:"モデルの使い分けでなく、背後の生成原理を語る"},
+ {t:"最後に、あなたが「最も“違い”として感じる能力」は？",o:["正確さ（定義・整合性）","関係調整（相互作用・合意）","軌道把握（trajectory）と相互浸透（interpenetration）の理解","不二（統合）の常住"],s:"自分の差異を軌道把握と相互浸透の理解に置く"},
+];
+// Per option: [補足（意味の言い換え）, 例（日常の場面）]. Draft — to be reviewed by the author.
+const X = [
+ [["判断のよりどころとして、筋の通った一貫した基準を持ち、それを守ることを大事にする。","会議で意見が割れたとき、まず「どちらが正しいか」を決める根拠を探し、決めた基準は場面が変わっても曲げない。"],
+  ["自分の見方も複数ある見方の一つと考え、場面に合わせて使う枠組みを選び直す。","同じ問題を「コスト」「現場の負担」「顧客」の観点で並べ、今回はどれを重く見るかをその都度決める。"],
+  ["価値観や枠組みは外にあるものではなく、自分（たち）が作り上げているという実感が強い。","「これは大事だ」と感じた瞬間に、自分がそう意味づけていることにも気づき、その意味づけ自体を眺めている。"],
+  ["何かを意味づける前の、ただ気づいている状態そのものが、ふだんから前面にある。","議論の最中でも、考えや評価が浮かんでは消えていくのを、気づきの側からそのまま見ていることが多い。"]],
+ [["感情や欲求が起きると、それと一体になって動くことが多い。","腹が立ったとき、気づいたらもう言い返していて、あとから「怒っていた」と分かる。"],
+  ["思考や感情を見分けて整理し、判断の材料として使う。","不安を感じたら「何が不安か」を書き出し、対処できるものから手をつける。"],
+  ["感じている自分だけでなく、それを観察し意味づけている自分も同時に見えている。","不安を整理しながら、「いま自分は『不安』という枠でこの状況を切り取っている」ことにも気づいている。"],
+  ["観察している「自分」もまた、浮かんでは消える現象の一つとして見えてくる。","内省を続けるうちに、見ている側と見られている側の区別がはっきりしなくなり、ただ起きていることがある。"]],
+ [["言葉の定義を一つに決め、ぶれずに正確に使うことを重視する。","「顧客」という言葉の意味を最初に定め、資料全体でその意味以外には使わない。"],
+  ["同じ言葉でも文脈で意味が変わることを前提に、相手や場面で使い分ける。","「品質」を、開発の人と話すときと営業の人と話すときで違う意味で使い、必要なら言い換える。"],
+  ["言葉は物事に境界線を引く道具で、意味は人が作るものだと見えている。","「成功」という言葉を使うと成功／失敗の線が引かれ、そこから外れるものが見えにくくなることに気づく。"],
+  ["言葉にしないところ、言葉が途切れたところで分かることが多い。","説明しようとするより、黙って一緒にいる時間に相手の状況が分かることがよくある。"]],
+ [["矛盾があれば、どちらが正しいかを決めて筋を通したい。","「早く」と「丁寧に」を同時に求められたら、どちらを優先すべきかをはっきりさせる。"],
+  ["両方が成り立つ条件を探し、折り合いや最適なバランスを作る。","「早く」と「丁寧に」なら、工程ごとに優先度を変える案を作って両立させる。"],
+  ["矛盾が出ること自体を、いま使っている枠組みの限界を示すサインとして観察する。","「早く」と「丁寧に」がぶつかるのは仕事を時間で測る前提のせいかもしれない、と前提のほうを見る。"],
+  ["矛盾していたものが、同じ一つの場の違う現れとして見え、対立がほどけることがある。","「早く」と「丁寧に」が、同じ一つの仕事の二つの面として感じられ、対立として迫ってこなくなる。"]],
+ [["相手と自分は別々で、互いの領分を守ることを大切にする。","同僚が困っていても、頼まれない限り相手の仕事には立ち入らない。"],
+  ["自分と相手は互いに影響し合っていると捉え、その影響を見ながら調整する。","自分の言い方で相手の反応が変わるのを見て、伝え方を合わせていく。"],
+  ["影響のやり取りというより、関係そのものが何かを生み出し続けている過程に見える。","チームの対話を、意見の調整ではなく、そこから新しい考えや役割が生まれてくる流れとして見ている。"],
+  ["自分と他者の区別が薄れ、関わりがただ一つの出来事として起きている感覚がある。","対話の中で、誰の考えかという区別が消え、話がひとりでに進んでいくように感じる。"]],
+ [["情報を集めて比較し、最も良い答えを選ぶ。","新しいツールを入れるとき、候補を調べて比較表を作り、一番評価の高いものに決める。"],
+  ["試して、反応を見て、直す、を繰り返して良くしていく。","小さく試してみて、使った人の声を聞き、少しずつ改善していく。"],
+  ["変化がどこへ向かって流れているか（軌道）をつかみ、どこで手を入れるかを読む。","チームの変化の流れを見て、「今は待つ」「ここで一言だけ入れる」と介入の時期と場所を選ぶ。"],
+  ["自分が介入しているという感覚が薄れ、更新や変化が自然に起きていく。","何かを変えようと意図しないまま、気づくとやり方が自然に変わっている。"]],
+ [["時間は過去から現在、未来へと順に進むものとして扱う。","計画は「これまで」「いま」「これから」と時系列に並べて立てる。"],
+  ["過去のパターンを手がかりに未来を予測し、それに合わせて設計する。","去年の繁忙期のデータから来年の山を予測し、人員配置を前もって決める。"],
+  ["一つ一つの出来事を、より長く大きな成長・発達の流れの一部として位置づけて見る。","部下の失敗を、その人の何年かの成長の流れの中の一場面として受け取る。"],
+  ["時間の幅が広がり、過去も未来も「いま」の一点に凝縮しているように感じられる。","長い経緯を振り返っているのに、それが全部いまここにあるように感じることがある。"]],
+ [["ルール、目的、制約条件を確認し、それに沿って決める。","予算と期限と規程を確認し、その範囲で成り立つ案を選ぶ。"],
+  ["関係者それぞれの利益を見て、皆が受け入れられる落としどころを作る。","各部署の要望を聞き取り、全員が納得できる妥協案をまとめる。"],
+  ["目的の奥で動いている流れを読み、できるだけ少ない手出しで整える。","議論がすでに向かっている方向を見極め、決め方を一つ変えるだけにとどめる。"],
+  ["決める前から答えがすでにそこにある感じがして、決定が自然に起きる。","考え込む前に「こうだな」と分かっていて、あとは確認するだけのことが多い。"]],
+ [["全体像は押さえるが、管理するためには部分に分けて扱う。","プロジェクト全体を把握したうえで、作業を細かく分けて担当と期限を割り振る。"],
+  ["全体を、要素どうしが互いにつながったネットワークとして捉える。","一つの部署の変更が、どの部署にどう波及するかをつながりの図として考える。"],
+  ["全体を、時間とともに展開していく過程として捉え、その向かう先を読む。","組織を「いまどういう段階にあり、次にどう展開しそうか」という流れで見る。"],
+  ["全体と部分が別々ではなく、同じ一つのものの現れに見える。","一人のメンバーの振る舞いを見ていると、それがそのまま組織全体の姿に見える。"]],
+ [["自分と世界の境界は、はっきりしているべきだと考える。","仕事と私生活、自分の責任と他人の責任の線をきちんと引いておきたい。"],
+  ["境界は場面によって変わり、自分で調整できるものだと考える。","相手や状況に合わせて、どこまで踏み込むか、どこで線を引くかを変える。"],
+  ["境界はもともとあるものではなく作られるもので、重なり合い、互いに染み込み合っているのが見える。","自分の考えと相手の考えの境目が、話すうちに作られ、重なっていく様子が見える。"],
+  ["境界の感覚は消えているが、日常の役割や区別としては普通に機能している。","自他の区別を感じないことがあっても、仕事の分担や約束はふだん通り守っている。"]],
+ [["振り返って、自分の改善点が分かる。","一日を振り返り、「あの場面ではこう言えばよかった」と次の課題を見つける。"],
+  ["自分と他者が互いにどう影響し合っていたかが分かる。","振り返ると、自分の焦りが相手の態度を硬くし、それがまた自分を焦らせていたと気づく。"],
+  ["自分、他者、世界が、同じ一つの発達の流れの上に現れているものとしてまとまって見える。","自分の迷いも相手の変化も組織の動きも、同じ大きな流れの別々の現れとして腑に落ちる。"],
+  ["まとまる・統合するといった言葉すら必要なくなる。","振り返っても結論を言葉にする必要を感じず、そのままで分かっている。"]],
+ [["矛盾は、どちらかに揃えて解消する。","方針が食い違っていたら、どちらかに揃えて終わらせる。"],
+  ["矛盾は、両方が成り立つ条件を作って扱う。","方針が食い違っていたら、適用する範囲を分けて両方を生かす。"],
+  ["すぐに解消せずに抱えておき、流れの中で意味づけが変わっていくのを待てる。","方針の食い違いをしばらくそのままにし、状況が進んで見え方が変わるのを待つ。"],
+  ["矛盾が、そもそも別々の次元のことを言っているだけに見える。","食い違って見える二つの方針が、違う層の話をしているだけで、ぶつかっていないように見える。"]],
+ [["「現れ」と「空」といった区別は、自分にはあまり関係がない。","そういう話を聞いても、日々の生活や仕事とは結びつかないと感じる。"],
+  ["そういう状態を体験として知ってはいるが、ふだんは現実の問題への対応を優先する。","瞑想中などにそういう感覚を味わったことはあるが、仕事中は目の前の課題に集中する。"],
+  ["形ある出来事（現れ）と、何もない気づきの広がり（空）が、互いに染み込み合って見えることがある。","会議の議論が進んでいる最中にも、その背後の静かな広がりが同時に感じられることがある。"],
+  ["現れと空を二つに分ける感覚がなく、いつも一つである。","どんな場面でも、出来事と静けさが分かれずにある。"]],
+ [["正しい手順と答えを示して支援する。","後輩が困っていたら、やり方を手順にして教える。"],
+  ["対話を通じて互いに理解し、合意を作っていく。","後輩の考えを聞き、一緒に話し合って進め方を決める。"],
+  ["相手自身の成長の流れを尊重し、自分は環境を整える側に回る。","後輩が自分で気づける時期を見極め、必要な経験ができる場を用意しておく。"],
+  ["支援する側とされる側の区別が薄れる。","後輩を支えているつもりが、気づけば互いに支え合い、どちらが支援者か分からなくなる。"]],
+ [["説明に使うモデルは一つに決める。","組織の問題を説明するとき、一つの理論に沿って一貫して説明する。"],
+  ["目的に応じて複数のモデルを使い分ける。","業績の説明には経済の枠組み、人間関係の説明には心理の枠組みと切り替える。"],
+  ["個々のモデルの背後で働いている、ものごとが生まれる原理やパターンを語る。","複数の理論に共通して現れる「変化の起き方」のパターンを取り出して説明する。"],
+  ["言葉で語るほど本質から離れると感じ、指し示すだけにとどめる。","説明を求められても、体験や場面を指さすようにしか伝えない。"]],
+ [["定義や整合性を保つ力。","他の人より、話の矛盾や定義のずれにすぐ気づく。"],
+  ["相互作用を読み、関係を調整して合意を作る力。","他の人より、意見の違う人どうしをつないでまとめられる。"],
+  ["流れの向かう先（軌道）をつかむ力と、物事が互いに染み込み合っていることを理解する力。","他の人より、状況がどこへ向かっているかを早く読み、境目の重なりにも目が行く。"],
+  ["分かれていない一つのあり方に、いつもとどまっていること。","他の人と比べて、どんな状況でも分離の感覚が起きにくい。"]],
+];
+const L = ["A","B","C","D"];
+const STAGES = ["5.0","5.5","6.0","6.5","7.0+"];
+const MAP = {A:[["5.5",2],["5.0",1]],B:[["6.0",2],["5.5",1]],C:[["6.5",2],["6.0",1]],D:[["7.0+",2]]};
+const TYPICAL = {A:"5.5",B:"6.0",C:"6.5",D:"7.0+"};
+// Label shown in results: gate questions (Q1–Q4) only signal 5.0+ or not
+function stageOf(i,k){ return i<4 ? (k==="C"||k==="D" ? "5.0+ シグナル" : "シグナルなし") : (k==="D" ? "7.0+（参考）" : TYPICAL[k]); }
+
+// Pure scoring: answers = array of 16 letters
+function score(ans){
+  const s = Object.fromEntries(STAGES.map(k=>[k,0]));
+  const gateHits = ans.slice(0,4).filter(a=>a==="C"||a==="D").length;
+  const otherC = ans.slice(4).filter((a,i)=>i!==8 && a==="C").length;  // Q5–Q16 excluding Q13
+  const q13 = ans[12];
+  const q13Full = (q13==="C"||q13==="D") && otherC>=1;                 // Q13 C/D + other C = 2 or more
+  const rows = [], cum = Object.fromEntries(STAGES.map(k=>[k,0]));
+  ans.forEach((a,i)=>{
+    const n=i+1;
+    if(n<=4){ rows.push({q:n,a,typical:TYPICAL[a],pts:"ゲート（加点なし）",cum:""}); return; }
+    const w = n===13 && !q13Full ? 0.5 : 1;
+    MAP[a].forEach(([k,p])=>{ s[k]+=p*w; cum[k]+=p*w; });
+    rows.push({q:n,a,typical:TYPICAL[a],pts:MAP[a].map(([k,p])=>`${k}+${p*w}`).join(" "),cum:cum[TYPICAL[a]],w});
+  });
+  const d = s["6.5"]-s["6.0"];
+  let decision, note="";
+  if(d>=4 && s["6.5"]>=18) decision="6.5有力";
+  else if(-d>=4) decision="6.0有力";
+  else if(Math.abs(d)<=3) decision="6.0/6.5移行帯";
+  else { decision="6.0/6.5移行帯"; note="6.5寄りだが 6.5 の合計が 18 点未満"; }
+  if(!note && s["6.0"]+s["6.5"]<8) note="6.0/6.5 の判定材料が少ない";
+  const conf = Math.abs(d)>=8 ? "高" : Math.abs(d)>=4 ? "中" : "低";
+  const top = STAGES.slice(0,4).reduce((m,k)=>s[k]>s[m]?k:m,"5.0");
+  return {scores:s,gate:{hits:gateHits,passed:gateHits>=2},q13Weight:q13Full?1:0.5,diff:d,decision,note,confidence:conf,topStage:top,rows};
+}
+
+const $ = id=>document.getElementById(id);
+let answers = [], cur = 0, result = null;
+
+function show(id){ ["intro","quiz","result"].forEach(x=>$(x).hidden = x!==id); window.scrollTo(0,0); }
+function renderQ(){
+  const q=Q[cur], n=cur+1;
+  $("qsec").textContent = n<=4 ? "ゲート Q1–Q4" : "6.0/6.5 差分 Q5–Q16";
+  $("qcount").textContent = `Q${n} / 16`;
+  $("qbar").style.width = (cur/16*100)+"%";
+  $("qtext").textContent = `Q${n}. ${q.t}`;
+  $("opts").innerHTML="";
+  // shown letter = position on screen; answers keep the option's own key (meaning)
+  perms[cur].forEach((oi,pos)=>{
+    const b=document.createElement("button"); b.className="opt"; b.id="opt"+L[pos];
+    if(answers[cur]===L[oi]) b.classList.add("picked");
+    b.innerHTML=`<b>${L[pos]}</b><span></span>`; b.lastChild.textContent=q.o[oi];
+    b.onclick=()=>pick(L[oi]); $("opts").appendChild(b);
+  });
+  $("qexList").innerHTML="";
+  perms[cur].map(oi=>X[cur][oi]).forEach(([def,eg],i)=>{
+    const dt=document.createElement("dt"); dt.textContent=L[i];
+    const dd=document.createElement("dd"); dd.innerHTML="<div></div><span></span>";
+    dd.firstChild.textContent=def; dd.lastChild.textContent="例："+eg;
+    $("qexList").append(dt,dd);
+  });
+  $("qex").open=false;
+  $("hint").textContent=""; $("back").disabled = cur===0;
+  const log=qLogs[cur]||[]; $("qchat").innerHTML=""; log.forEach(m=>addMsg($("qchat"),m.role,m.content)); $("qNote").textContent="";
+}
+function pick(l){
+  answers[cur]=l; answers.length=cur+1;
+  if(cur<15){ cur++; renderQ(); } else finish();
+}
+document.addEventListener("keydown",e=>{
+  if($("quiz").hidden || e.metaKey||e.ctrlKey||e.altKey) return;
+  if(e.target.tagName==="TEXTAREA") return;
+  const k=e.key.toUpperCase();
+  if(L.includes(k)) pick(L[perms[cur][L.indexOf(k)]]);
+  else if(k.length===1) $("hint").textContent="A・B・C・D のいずれか1つで答えてください。";
+});
+function shuffled(){ const a=[0,1,2,3]; for(let i=3;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+let perms = Q.map(()=>[0,1,2,3]);
+$("start").onclick=()=>{ answers=[]; cur=0; qLogs=[]; perms=Q.map(shuffled); show("quiz"); renderQ(); };
+$("back").onclick=()=>{ if(cur>0){ cur--; renderQ(); } };
+$("restart").onclick=()=>{ result=null; chatLog=[]; $("chat").innerHTML='<p class="small" id="chatEmpty">結果の読み方や、追加で確かめたい点を質問できます。返答にはあなたの Claude の利用枠が使われます。</p>'; ["f1","f2","f3","chatIn"].forEach(i=>$(i).value=""); show("intro"); };
+
+function finish(){
+  result = score(answers);
+  const r=result, s=r.scores;
+  const nC=answers.slice(4).filter(a=>a==="C").length;
+  $("degree").innerHTML=`12問中 ${nC}問<small>6.5 の選択肢を選んだ数</small>`;
+  $("degreeBar").style.width=(s["6.5"]/24*100)+"%";
+  $("degreeNote").textContent=`6.5 のスコアは 24 点中 ${s["6.5"]} 点です（6.5 の選択肢に 2 点、6.0 の選択肢に 1 点。Q13 は条件により半分）。`;
+  $("verdict").textContent = r.decision;
+  const pills=[];
+  pills.push(r.gate.passed?`<span class="pill ok">ゲート通過（C/D ${r.gate.hits}/4）</span>`:`<span class="pill warn">参考度低：ゲート未満（C/D ${r.gate.hits}/4）</span>`);
+  if(r.note) pills.push(`<span class="pill warn">${r.note}</span>`);
+  if((r.topStage==="5.0"||r.topStage==="5.5") && s[r.topStage]>0) pills.push(`<span class="pill warn">参考：最高点は ${r.topStage}</span>`);
+  if(s["7.0+"]>=s["6.5"] && s["7.0+"]>0) pills.push(`<span class="pill warn">参考：7.0+ 相当の回答が多い（判定は 6.5 中心）</span>`);
+  $("pills").innerHTML=pills.join("");
+  $("confText").textContent = `確信度：${r.confidence}（6.5 ${s["6.5"]} 点 − 6.0 ${s["6.0"]} 点 = 差 ${r.diff>0?"+":""}${r.diff}）。Q13 の重み ${r.q13Weight===1?"通常":"半分"}。`;
+  const cs = answers.map((a,i)=>({a,n:i+1})).filter(x=>x.n>=5 && x.a==="C");
+  $("rationale").innerHTML = cs.length
+    ? `<ul class="notes">${cs.map(x=>`<li><strong>Q${x.n}</strong>　${Q[x.n-1].s}</li>`).join("")}</ul>`
+    : `<p class="small">Q5〜Q16 で 6.5 典型の回答はありませんでした。</p>`;
+  $("answerList").innerHTML="";
+  answers.forEach((a,i)=>{
+    const d=document.createElement("details");
+    const sm=document.createElement("summary");
+    sm.innerHTML=`<span class="qn">Q${i+1}</span><span></span><span class="stage${a==="D"&&i>=4?" ref":""}"></span>`;
+    sm.children[1].textContent=Q[i].o[L.indexOf(a)];
+    sm.children[2].textContent=stageOf(i,a);
+    const ul=document.createElement("ul");
+    L.forEach(k=>{ const li=document.createElement("li"); if(k===a) li.className="mine"; li.textContent=`${stageOf(i,k)}：${Q[i].o[L.indexOf(k)]}`; ul.appendChild(li); });
+    d.append(sm,ul); $("answerList").appendChild(d);
+  });
+  const max = Math.max(24, ...Object.values(s));
+  $("scoreTable").innerHTML = `<tr><th>段階</th><th style="width:60%"></th><th class="num">点</th></tr>` +
+    STAGES.slice().reverse().map(k=>`<tr class="${k==="7.0+"?"ref":""}"><td>${k}${k==="7.0+"?"（参考）":""}</td><td><div class="meter"><i style="width:${s[k]/max*100}%"></i></div></td><td class="num">${s[k]}</td></tr>`).join("");
+  $("followCard").hidden = r.decision!=="6.0/6.5移行帯";
+  [...document.querySelectorAll("#ruler span")].forEach(sp=>{
+    const k=sp.textContent; sp.classList.toggle("on", r.decision==="6.5有力"?k==="6.5":r.decision==="6.0有力"?k==="6.0":(k==="6.0"||k==="6.5"));
+  });
+  $("qbar").style.width="100%";
+  setFormat("text");
+  show("result");
+}
+
+// exports
+let fmt="text";
+function exportText(f){
+  const r=result, s=r.scores;
+  if(f==="csv"){
+    return ["Q,選択（内容の記号）,選んだ選択肢,典型段階,加点,累積", ...r.rows.map(x=>`Q${x.q},${x.a},"${Q[x.q-1].o[L.indexOf(x.a)]}",${x.typical},${x.pts},${x.cum}`)].join("\n");
+  }
+  if(f==="json"){
+    return JSON.stringify({degree65:{count:answers.slice(4).filter(a=>a==="C").length,of:12,score:s["6.5"],max:24},answers:Object.fromEntries(answers.map((a,i)=>["Q"+(i+1),a])),scores:s,gate:r.gate,q13Weight:r.q13Weight,
+      rationale:answers.map((a,i)=>({q:i+1,a})).filter(x=>x.q>=5&&x.a==="C").map(x=>({q:x.q,summary:Q[x.q-1].s})),
+      decision:{label:r.decision,note:r.note||null,diff:r.diff,confidence:r.confidence}},null,2);
+  }
+  const cs=answers.map((a,i)=>({a,n:i+1})).filter(x=>x.n>=5&&x.a==="C");
+  return [`6.5 の度合い：12問中 ${cs.length}問（6.5 スコア ${s["6.5"]}/24 点）`,
+    `区分での判定：${r.decision}${r.note?`（${r.note}）`:""}${r.gate.passed?"":"（参考度低：ゲート未満）"}`,
+    `根拠：${cs.length?cs.map(x=>`Q${x.n} ${Q[x.n-1].s}`).join("／"):"6.5典型の回答なし"}`,
+    `確信度：${r.confidence}（6.5=${s["6.5"]} / 6.0=${s["6.0"]} / 差${r.diff}、ゲート C/D ${r.gate.hits}/4）`,
+    `スコア：${STAGES.map(k=>`${k}=${s[k]}`).join(" ")}（7.0+は参考）`,
+    `回答（内容の記号。画面の並びとは別）：${answers.map((a,i)=>`Q${i+1}${a}`).join(" ")}`].join("\n");
+}
+function setFormat(f){ fmt=f; document.querySelectorAll(".tabs button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.f===f)); $("out").textContent=exportText(f); $("copyNote").textContent=""; }
+document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>setFormat(b.dataset.f));
+$("copy").onclick=()=>{
+  const t=$("out").textContent;
+  navigator.clipboard.writeText(t).then(()=>$("copyNote").textContent="コピーしました",()=>{
+    const r=document.createRange(); r.selectNodeContents($("out")); const sel=getSelection(); sel.removeAllRanges(); sel.addRange(r);
+    $("copyNote").textContent="選択しました。⌘C / Ctrl+C でコピーしてください";
+  });
+};
+
+// capabilities: light up when available
+let sample=null, downloads=null, chatLog=[], qLogs=[], ctl=null;
+window.claude?.use?.("downloads").then(d=>{ downloads=d; if(d){ $("save").hidden=false; $("saveSource").hidden=false; } }).catch(()=>{});
+$("saveSource").onclick=()=>{
+  const html="<!doctype html>\n"+SOURCE;
+  downloads.save({filename:"stages-screener.html",data:html}).then(()=>$("saveSourceNote").textContent="保存しました",e=>{ if(e?.code!=="cancelled" && e?.code!=="declined") $("saveSourceNote").textContent="保存できませんでした"; });
+};
+window.claude?.use?.("sample").then(s=>{ sample=s; if(!s){ $("chatCard").hidden=true; $("qhelp").hidden=true; $("sendFollow").closest(".row").hidden=true; } }).catch(()=>{});
+setTimeout(()=>{ if(!sample){ const m="この表示では Claude に質問できません（Claude にログインして開くと使えます）"; $("chatNote").textContent=m; $("qNote").textContent=m; ["chatSend","sendFollow","qSend"].forEach(i=>$(i).disabled=true); } },11000);
+
+$("save").onclick=()=>{
+  const ext={text:"txt",csv:"csv",json:"json"}[fmt];
+  downloads.save({filename:`stages-screening.${ext}`,data:$("out").textContent}).then(()=>$("copyNote").textContent="保存しました",e=>{ if(e?.code!=="cancelled" && e?.code!=="declined") $("copyNote").textContent="保存できませんでした"; });
+};
+
+const SYSTEM = `あなたは自我発達ステージ簡易スクリーナーの補助役。このスクリーナーは、回答者に 6.5 の特徴がどれくらいあるか（6.5 の度合い）を“推定”するために作られている。6.0 などの選択肢は 6.5 と比べるための相手。段階名は Terri O'Fallon の STAGES から借りているが、各段階の中身と境界線は監修者が独断で決めたもので、論文に照らして検証したものではない。「STAGES ではこうだ」と理論の権威で語らず、この質問票での区分として話す。STAGES 本来の定義を聞かれたら、このスクリーナーの区分とは別物でありうると伝える。確定診断ではない。6.0（Universal）と6.5（Illumined）の差分に焦点を当て、6.5 は Interpenetrative／trajectory（発達軌道）／fullness-emptiness の相互浸透の理解で特徴づける。
+方針：
+- 美談や自己申告の印象操作には反応せず、回答の構造（観察・意思決定・言語運用の癖）を手がかりに読む。
+- 状態体験と段階を区別する。個人のラベルを固定しない。個人や集団を蔑視しない。医療・臨床的な断定や精神医療上の表現は避ける。
+- 具体的助言を求められても、段階の推定を前提にした選択肢の示唆に留める。
+- 7.0+ 相当の内容は参考扱いに留め、6.5 中心で読む。
+- 採点結果（下の JSON）はページが規則どおりに計算したもの。点数を書き換えたり判定を覆したりしない。追加質問への回答を読んだ場合は「6.0寄り／6.5寄り／判断材料不足」のいずれかで補足し、構造的な根拠を2〜3点挙げる。
+- このスクリーナーは推定が主眼だが、包摂（どれだけの視点・関係・時間を取り込むか）とメタ認知（何が見えているか）の違いに気づき、自分の経験に言葉と境界線をつける助けにもなる。解説ではその気づきにつながる言い方を選ぶ。段階の優劣は言わない。
+- 疲れやストレスで判断の基準が狭まることがある、という点に触れてよいが、「ストレス状態だ」などと推定・断定しない。いつもの自分と比べて気づくための目安として話す。
+- 読み手は性格診断が好きな一般の人。親しみやすく中立に、日常の場面に結びつけて話す。専門用語は必要最小限で括弧付けで説明。日本語で、400字程度まで。`;
+function context(){ return `${SYSTEM}\n\n# 採点結果\n${exportText("json")}`; }
+
+// Help while answering: explain wording, never steer the choice
+const QHELP = `あなたは自我発達ステージ簡易スクリーナー（性格診断が好きな一般の人向け、診断ではない）の回答補助役。回答者がいま答えている設問の言葉や選択肢の違いについて質問に答える。
+厳守：
+- どの選択肢がどの段階（5.0/5.5/6.0/6.5/7.0+）に対応するか、採点方法、どれが「高い」「進んでいる」かは一切言わない。尋ねられても、回答に影響するので答えられないと伝える。
+- どれを選ぶべきか勧めない。回答者の話からどれに当てはまるかを判定しない。
+- 選択肢を説明するときは、A〜D を同じ分量・同じ温度で、日常の具体的な場面に置き換えて説明する。どれかを魅力的に、どれかを劣って見せない。
+- 一時的な特別な体験（状態）ではなく、ふだんの考え方・やり方として最も近いものを選べばよい、と必要に応じて添える。
+- 専門用語（trajectory, interpenetration, reciprocity, awareness など）は平易に言い換える。
+- 下の「補足」と「例」を各選択肢の定義の基準とし、それと食い違う説明をしない。例を足すときも、同じ趣旨の範囲で、A〜D に同じ数だけ挙げる。
+- 医療・臨床的な表現は避ける。日本語で、簡潔に（300字程度まで）。`;
+function qContext(){ const q=Q[cur]; return `${QHELP}\n\n# いまの設問（記号は回答者の画面に出ている並び）\nQ${cur+1}. ${q.t}\n${perms[cur].map((oi,pos)=>`${L[pos]}. ${q.o[oi]}\n   補足：${X[cur][oi][0]}\n   例：${X[cur][oi][1]}`).join("\n")}`; }
+
+const PANELS = {
+  result:{chat:"chat",send:"chatSend",stop:"chatStop",note:"chatNote",extra:["sendFollow"],log:()=>chatLog,ctx:()=>[{role:"user",content:context()},{role:"assistant",content:"採点結果と方針を確認しました。"}]},
+  quiz:{chat:"qchat",send:"qSend",stop:"qStop",note:"qNote",extra:[],log:()=>(qLogs[cur] ||= []),ctx:()=>[{role:"user",content:qContext()},{role:"assistant",content:"設問と方針を確認しました。"}]},
+};
+function addMsg(box,role,text){ box.querySelector(".small")?.remove(); const d=document.createElement("div"); d.className="msg "+(role==="user"?"user":"ai"); d.textContent=text; box.appendChild(d); return d; }
+async function ask(text,which="result"){
+  const P=PANELS[which];
+  if(!sample||ctl) return;
+  const log=P.log(), box=$(P.chat), qAt=cur;
+  log.push({role:"user",content:text}); addMsg(box,"user",text);
+  const bubble=addMsg(box,"ai","考えています…");
+  const btns=[P.send,...P.extra].map($);
+  ctl=new AbortController(); btns.forEach(b=>b.disabled=true); $(P.stop).hidden=false; $(P.note).textContent="";
+  const msgs=[...P.ctx(),...log];
+  try{
+    const r=await sample(msgs,{cache:false,signal:ctl.signal,model:"claude-opus-5-5",modelTier:"complex",onText:({text})=>{bubble.textContent=text;}});
+    bubble.textContent=r.text; log.push({role:"assistant",content:r.text});
+    const m=document.createElement("span"); m.className="model"; m.textContent=r.modelApplied||r.modelTierApplied||""; if(m.textContent) bubble.after(m);
+  }catch(e){
+    if(e?.text){ bubble.textContent=e.text; log.push({role:"assistant",content:e.text}); } else bubble.remove();
+    if(e?.code!=="cancelled"){ log.length && log[log.length-1].role==="user" && log.pop();
+      $(P.note).textContent = ({not_granted:"Claude の利用が許可されませんでした",rate_limited:"混み合っています。少し待ってから送ってください",prompt_too_large:"会話が長くなりすぎました。やり直すと続けられます",sampling_disabled:"この表示では Claude を使えません"})[e?.code] || "返答を受け取れませんでした。少し待ってから送ってください"; }
+  }finally{ ctl=null; btns.forEach(b=>b.disabled=false); $(P.stop).hidden=true; if(which==="quiz" && cur!==qAt && !$("quiz").hidden) renderQ(); }
+}
+$("chatSend").onclick=()=>{ const t=$("chatIn").value.trim(); if(!t) return; $("chatIn").value=""; ask(t); };
+$("chatStop").onclick=()=>ctl?.abort();
+$("qSend").onclick=()=>{ const t=$("qIn").value.trim(); if(!t) return; $("qIn").value=""; ask(t,"quiz"); };
+$("qStop").onclick=()=>ctl?.abort();
+$("sendFollow").onclick=()=>{
+  const a=["f1","f2","f3"].map(i=>$(i).value.trim());
+  if(!a.some(Boolean)){ $("chatNote").textContent="追加質問に1つ以上答えてから送ってください"; $("chatCard").scrollIntoView({block:"nearest"}); return; }
+  ask(`移行帯の追加質問に答えます。\n1. trajectory が先に立つ具体例：${a[0]||"（未回答）"}\n2. 相互浸透は状態か日常の認知スタイルか：${a[1]||"（未回答）"}\n3. 調整から最小介入への変化の具体例：${a[2]||"（未回答）"}`);
+  $("chatCard").scrollIntoView({behavior:"smooth",block:"start"});
+};
+</script>
+
+</body></html>

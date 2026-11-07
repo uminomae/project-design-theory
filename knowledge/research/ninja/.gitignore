@@ -1,0 +1,4 @@
+# NDL から取得した画像（大容量のためリポジトリに含めない）
+images/
+# OCR 出力（再生成可能）
+transcription/
