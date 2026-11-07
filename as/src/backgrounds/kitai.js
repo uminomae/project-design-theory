@@ -197,10 +197,11 @@ export function init(container, variant) {
 
     resizeRenderer();
 
-    const clock = new THREE.Clock();
-    function animate() {
+    const timer = new THREE.Timer();
+    function animate(timestamp) {
         animationId = requestAnimationFrame(animate);
-        uniforms.uTime.value = clock.getElapsedTime();
+        timer.update(timestamp);
+        uniforms.uTime.value = timer.getElapsed();
         renderer.render(scene, camera);
     }
 
