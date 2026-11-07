@@ -1,7 +1,7 @@
 # love-driven-dev — 「Love駆動開発とは」のページ（正本・計画）
 
 **このページの正本は本ディレクトリ。** 方針を変えるときは本ファイルを直す。Issue: **pd#144**
-https://github.com/uminomae/project-design/issues/144
+https://github.com/uminomae/project-design-theory/issues/20
 
 | 役割 | ファイル |
 |---|---|

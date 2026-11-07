@@ -1,7 +1,7 @@
 # INSTRUCTION-42: 言語切替時スクロール位置修正
 
 ## Issue
-https://github.com/uminomae/kesson-space/issues/42
+https://github.com/uminomae/kesson-space-archive/issues/42
 
 ## ブランチ
 `feature/kesson-codex-app-scroll42`（dev から分岐）

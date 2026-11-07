@@ -112,7 +112,7 @@ READER の要注意数値を RR と照合（すべて一致）:
 | P5 | 分水嶺（§2）の前方リンク欠落 | §2 の分水嶺一文に「この線は §5・§6 でも同じ形で効く」の一句、または §6 スコアボード側から §2 へ戻るリンク | 相互参照 |
 | P6 | Litt 適合バッジ不在（three-and-seven §9 との非対称） | §7 に「この読み物の手法」小節を新設し、Litt 三技法の適合状況を **honest な ✅/⚠️/❌ 表**で公開（Explanations＋speed regulator＝✅／Micro-worlds・Shared Spaces＝⚠️ 今後の課題）＋参照 URL | 手法公開 |
 
-**別 issue 化（pjdhiro「②」承認 2026-07-15 → pd#130 起票）**: L2 Micro-worlds（energy-flow に触れる小世界を実装）／L3 Shared Spaces（判定台帳をページに surface）。three-and-seven は pd#128 で実装済みだが energy-flow は未着手。→ **pd#130「energy-flow READER に Micro-worlds / Shared Spaces を実装」** https://github.com/uminomae/project-design/issues/130
+**別 issue 化（pjdhiro「②」承認 2026-07-15 → pd#130 起票）**: L2 Micro-worlds（energy-flow に触れる小世界を実装）／L3 Shared Spaces（判定台帳をページに surface）。three-and-seven は pd#128 で実装済みだが energy-flow は未着手。→ **pd#130「energy-flow READER に Micro-worlds / Shared Spaces を実装」** https://github.com/uminomae/project-design-archive/issues/130
 
 ---
 

@@ -108,7 +108,7 @@ trust は trustor（信頼する側）の態度、trustworthiness は trustee（
 ## 書誌情報
 
 - 作成: 2026-03-27, Claude (agent-team-workflow, cs#188 プロトコル)
-- 関連 Issue: [project-design#34](https://github.com/uminomae/project-design/issues/34)
+- 関連 Issue: [project-design#34](https://github.com/uminomae/project-design-archive/issues/34)
 - 入力レポート:
   - `trust-chatgpt-20260326.md` (GPT-4o)
   - `trust-chatgpt-pro-20260326.md` (GPT-5.4 Pro)

@@ -2,7 +2,7 @@
 
 **担当**: Claude Code CLI（Agent-WT・`isolation: "worktree"`）
 **対象リポジトリ**: uminomae/kesson-space
-**対象 Issue**: https://github.com/uminomae/kesson-space/issues/215
+**対象 Issue**: https://github.com/uminomae/project-design-theory/issues/44
 **ブランチ**: Agent-WT のワークツリーに自動で切られるブランチ（起点＝`claude/cosine-90-restructure-c87c30` の HEAD）。**push しない**。Main が取り込む
 **前提**: `docs/issues/ISS-215-restructure-plan.md` §0・§3・§6、`transform/rules/slide-content-rules.md` §1・§3・§5 を読んでから着手する
 **reasoning**: high（文面は本指示書で確定済み。作業は配置・生成・検証）

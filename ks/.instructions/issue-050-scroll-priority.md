@@ -4,7 +4,7 @@
 URL deep link 優先 + 戻り復元の正本統一。
 scroll-coordinator に priority 機構を導入し、起動時のナビゲーション意図を決定論的に解決する。
 
-Issue: https://github.com/uminomae/kesson-space/issues/50
+Issue: https://github.com/uminomae/kesson-space-archive/issues/50
 
 ## 作業ブランチ
 `dev`

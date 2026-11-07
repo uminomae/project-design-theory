@@ -1,6 +1,6 @@
 # ISS-216 段 1.5 候補調査ブリーフ — pjdhiro の主張に近い既存の論を三系で並べる
 
-**対象 Issue**: https://github.com/uminomae/kesson-space/issues/216
+**対象 Issue**: https://github.com/uminomae/project-design-theory/issues/45
 **作成日**: 2026-11-02
 **実行**: agent-team-workflow・light（Phase 1 SURVEY ×3 並行 → Phase 2 REVIEW ×1）
 **reasoning**: xhigh（解釈・分析を伴う）

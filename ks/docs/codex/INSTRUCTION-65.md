@@ -5,7 +5,7 @@
 自身の環境を判定してから操作マッピングに従って実装すること。
 
 ## Issue
-https://github.com/uminomae/kesson-space/issues/65
+https://github.com/uminomae/kesson-space-archive/issues/65
 
 ## 作業ブランチ
 - ベース: `dev`

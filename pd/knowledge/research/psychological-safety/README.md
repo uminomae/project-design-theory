@@ -1,7 +1,7 @@
 # psychological-safety — 「心理的安全性とは」のページ（正本・計画）
 
 **このページの正本は本ディレクトリ。** 方針を変えるときは本ファイルを直す。Issue: **pd#151**
-https://github.com/uminomae/project-design/issues/151 （発達段階の足場は **pd#152**）
+https://github.com/uminomae/project-design-theory/issues/26 （発達段階の足場は **pd#152**）
 
 | 役割 | ファイル |
 |---|---|

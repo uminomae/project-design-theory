@@ -1,6 +1,6 @@
 # ISS-216 段 1.5 候補調査ブリーフ round 3 — 追加照合 6 件を 1 レーン 1 件で埋める
 
-**対象 Issue**: https://github.com/uminomae/kesson-space/issues/216
+**対象 Issue**: https://github.com/uminomae/project-design-theory/issues/45
 **作成日**: 2026-11-02（統合表 v3 `ISS-216-candidate-survey.md` §6「round 3」の 6 件。pjdhiro「round 3 を先に」2026-11-02）
 **実行**: agent-team-workflow・light（Phase 1 SURVEY ×6 を 3 並行 ×2 組 → Phase 2 REVIEW ×1）。成果は Main が統合表 **v4** に反映
 **round 2 の教訓**: 3 レーン × 2〜3 件では researcher の 20 ターン上限に届かず「書誌のみ」「内容未読」が多く残った。round 3 は **1 レーン 1 件**。各レーンは照合そのものに集中し、比較表や接続は書かない（Main が統合表で行う）

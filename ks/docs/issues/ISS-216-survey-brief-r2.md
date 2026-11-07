@@ -1,6 +1,6 @@
 # ISS-216 段 1.5 候補調査ブリーフ round 2 — critic の missing と棚卸し 抱12/抱13 を三レーンで埋める
 
-**対象 Issue**: https://github.com/uminomae/kesson-space/issues/216
+**対象 Issue**: https://github.com/uminomae/project-design-theory/issues/45
 **作成日**: 2026-11-02（round 1 ブリーフ `ISS-216-survey-brief.md`・critic `survey-216/review-critic-r1.md`・統合表 v2 `ISS-216-candidate-survey.md` §6 の追加ラウンド 7 件を受けて）
 **実行**: agent-team-workflow・light（Phase 1 SURVEY ×3 並行 → Phase 2 REVIEW ×1）。成果は Main が統合表 **v3** に反映
 **pjdhiro の採点（棚卸しの重要度）は未完**（位1 × のみ）。本ラウンドは採点に依存しない「候補を並べる」作業に限る。論の骨子 v0 は採点後

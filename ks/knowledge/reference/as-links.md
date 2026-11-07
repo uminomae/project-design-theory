@@ -25,7 +25,7 @@
 | プロジェクト定義 | https://github.com/uminomae/project-design-theory/blob/main/as/PROJECT.md | 強い原則・スコープ・正本参照 |
 | 公開サイト | https://uminomae.github.io/project-design-theory/as/ | 一般向け入口（main） |
 | リポジトリ | https://github.com/uminomae/awareness-space | |
-| 「気づき」の定義 Issue | https://github.com/uminomae/awareness-space/issues/149 | ks#216 からの渡し。pjdhiro の言葉（原文）・候補・完了条件 |
+| 「気づき」の定義 Issue | https://github.com/uminomae/project-design-theory/issues/36 | ks#216 からの渡し。pjdhiro の言葉（原文）・候補・完了条件 |
 
 ## 2. コミット固定の参照（文言を引くときはこちら）
 

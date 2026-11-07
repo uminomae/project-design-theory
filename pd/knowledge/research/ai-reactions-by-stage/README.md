@@ -1,6 +1,6 @@
 # ai-reactions-by-stage — AI への反応を帯に置いてみる（仮説・初回収集）
 
-Issue: **pd#140** https://github.com/uminomae/project-design/issues/140
+Issue: **pd#140** https://github.com/uminomae/project-design-theory/issues/17
 作成: 2026-11-03（Claude・初回収集と仮配置）。状態: **仮説のまま**。帯の定義・スクリーナーへの反映はしていない（§8 判断待ち）。
 
 > **段階を人の等級にしない。** ここで置くのは「その文章に出ている見え方の構造」であって、人の値打ちや正しさではない。

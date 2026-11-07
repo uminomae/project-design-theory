@@ -3,8 +3,8 @@
 **status**: **Superseded** (2026-05-03, Claude Design 方針転換)
 **date**: 2026-04-28 (proposed) / 2026-04-29 (accepted) / 2026-05-03 (superseded)
 **deciders**: pjdhiro
-**parent issue**: [pd#86](https://github.com/uminomae/project-design/issues/86)
-**related**: [pd#85](https://github.com/uminomae/project-design/issues/85) major #2 / [techo#127](https://github.com/uminomae/techo/issues/127) 横断サマリ「構造的課題 3」
+**parent issue**: [pd#86](https://github.com/uminomae/project-design-archive/issues/86)
+**related**: [pd#85](https://github.com/uminomae/project-design-archive/issues/85) major #2 / [techo#127](https://github.com/uminomae/techo/issues/127) 横断サマリ「構造的課題 3」
 
 > **Superseded note (2026-05-03)**: Claude Design は GitHub repo を直接読み込む方式のため、cross-repo CDN 配信ではなく **各 repo 自己完結 css** が前提。本 ADR の決定（CDN jsDelivr）は撤回し、3 repo は `--ds-*` token を inline 取り込み済み。pd 自身の `design-system/` ディレクトリは pd 専用 visual language として残置。
 

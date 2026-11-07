@@ -105,7 +105,7 @@ related_concepts: [価値, 信頼, 欠損駆動思考, 欠損, 情動の構成]
 ## 書誌情報
 
 - 作成: 2026-03-27, Claude (agent-team-workflow, cs#188 プロトコル)
-- 関連 Issue: [project-design#33](https://github.com/uminomae/project-design/issues/33)
+- 関連 Issue: [project-design#33](https://github.com/uminomae/project-design-archive/issues/33)
 - 入力レポート:
   - `value-chatgpt-20260326.md` (GPT-5.2 Thinking)
   - `value-chatgptpro-20260327.md` (GPT-5.4 Pro)

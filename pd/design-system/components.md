@@ -36,4 +36,4 @@
 ## 参照
 
 - 親 issue: [techo#126](https://github.com/uminomae/techo/issues/126)
-- 本 repo issue: [#84](https://github.com/uminomae/project-design/issues/84)
+- 本 repo issue: [#84](https://github.com/uminomae/project-design-archive/issues/84)

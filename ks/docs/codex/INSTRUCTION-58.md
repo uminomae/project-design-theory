@@ -1,7 +1,7 @@
 # 指示書: メインシーンとxLogoシーンの呼吸（明滅）を同期
 
 ## Issue
-https://github.com/uminomae/kesson-space/issues/58
+https://github.com/uminomae/kesson-space-archive/issues/58
 
 ## 環境判別
 本指示書を受け取ったエージェントは `.claude/rules/env-adaptive.md` §2 に従い、

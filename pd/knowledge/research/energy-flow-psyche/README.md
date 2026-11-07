@@ -12,7 +12,7 @@
 
 - **pd#115 とは無関係な、独立した直観**（pjdhiro 明言 2026-07-14）。**散逸構造的な世界観**——流れが続く間だけ形（渦・炎）が保たれ、途絶えれば形も消える——からインスピレーションを得ている。震源は R5（散逸構造と死）。
 - **個人 → 関係 → 社会**の三段で問う。3と7のレンズ（two-axis-closure）とは混ぜない（レンズ溶接禁止）。
-- Issue: **pd#129**（2026-07-14 起票）https://github.com/uminomae/project-design/issues/129
+- Issue: **pd#129**（2026-07-14 起票）https://github.com/uminomae/project-design-theory/issues/8
 
 ## 前提資産（引用元 — 再調査しない）
 

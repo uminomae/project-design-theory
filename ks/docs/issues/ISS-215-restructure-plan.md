@@ -1,6 +1,6 @@
 # ISS-215 構成見直し案 — 「虚軸に値があって、認知上は 0 の直観」（仮説・表現）を中心に
 
-**対象 Issue**: https://github.com/uminomae/kesson-space/issues/215
+**対象 Issue**: https://github.com/uminomae/project-design-theory/issues/44
 **状態**: 章立て・位置づけは pjdhiro 承認（2026-11-02「これで進める」）。 **§4 の章立ては `ISS-216-outline-v0.md`（骨子 v0・2026-11-02）が置き換える**（前提「定義は変えない」「欠損 5 類型」は同日の採点で外れた）。段 2（正本改訂）を `docs/prompts/INSTRUCTION-215-A.md` で Agent-WT に委譲中。
 **作成日**: 2026-11-01
 **書き手**: Claude（調査・整理）。判断は pjdhiro。

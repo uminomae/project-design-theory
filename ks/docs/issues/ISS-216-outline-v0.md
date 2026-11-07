@@ -1,6 +1,6 @@
 # ISS-216 論の骨子 v0 — 専門家向けの論を一から組む（Claude 案 → pjdhiro）
 
-**対象 Issue**: https://github.com/uminomae/kesson-space/issues/216（段 2）／#215
+**対象 Issue**: https://github.com/uminomae/project-design-theory/issues/45（段 2）／#215
 **状態**: v0（2026-11-02）。組み方は pjdhiro 承認（同日「これで進める」）。本文の採否・節の順序・言い直しは pjdhiro
 **材料**: 棚卸し `ISS-215-claims-inventory.md`（採点 1 巡目・原文）／統合表 `ISS-216-candidate-survey.md` v4／`knowledge/concepts/CN-009_imaginary-axis.md`／正本 `knowledge/schema/core-definitions.md`
 **追記（2026-11-02・組み方承認の後）**: pjdhiro「今ある情報から欠損駆動思考を定義したほうがいい。もちろん探索中の箇所は曖昧にしながら」「公開ページに公開する論は…Fableがゼロベースで書き直したほうがいい」→ 節 3 の「Claude は言い直さない」は上書き。定義の草案は `docs/drafts/kesson-academic-ja-v0.md`（本体セッションが直接書く）。「捨てられる誤差」は使わず（定13）、中身を列挙する（定14）。行 ID は同日に用語頭字へ改名（旧 B12＝定12 など。棚卸し冒頭の対応表）

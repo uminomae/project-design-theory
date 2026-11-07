@@ -1,6 +1,6 @@
 # ISS-216 論の骨子 v0.1 — 三つの分析の軸で章を組み直す（Claude 案 → pjdhiro）
 
-**対象 Issue**: https://github.com/uminomae/kesson-space/issues/216（段 2）／#215／#217
+**対象 Issue**: https://github.com/uminomae/project-design-theory/issues/45（段 2）／#215／#217
 **状態**: v0.1（2026-11-02）。v0（`ISS-216-outline-v0.md`）の組み方（§0・承認済み）を引き継ぎ、章の順序だけを本人の答えで組み直した。本文の採否・言い直しは pjdhiro
 **章の順序の根拠**: 位17（三軸の宣言）と、議論ノートの問い 3 への答え「a」（位18）＝ **案 A：②発達段階とゼロとする認知 → ①意識 → ③思考方法の種別**
 **議論ノート**: https://claude.ai/artifact/3FPSFTxjvJrgHvBcAxmXXU（決まったこと・問い・反映の控え）

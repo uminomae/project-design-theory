@@ -122,7 +122,7 @@ Design framing は Peirce の abduction を拡張した設計実践上の呼び�
 ## 書誌情報
 
 - 作成: 2026-03-27, Claude (agent-team-workflow, cs#188 プロトコル)
-- 関連 Issue: [project-design#35](https://github.com/uminomae/project-design/issues/35)
+- 関連 Issue: [project-design#35](https://github.com/uminomae/project-design-archive/issues/35)
 - 入力レポート:
   - `design_thinking_gpt-deep-research-report.md` (GPT-4o Deep Research)
   - `design_thinking_gptpro_report.md` (GPT-5.4 Pro)

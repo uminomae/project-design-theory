@@ -1,6 +1,6 @@
 # ISS-216 候補調査（段 1.5）統合 — pjdhiro の主張に近い既存の論を、主張ごとに並べる
 
-**対象 Issue**: https://github.com/uminomae/kesson-space/issues/216
+**対象 Issue**: https://github.com/uminomae/project-design-theory/issues/45
 **状態**: 統合版 **v5**。round 1 critic（SPLIT。`survey-216/review-critic-r1.md`）の critical・major を v2 で反映。round 2（追加ラウンド 1〜5・7）と critic r2（CONSENSUS-3 条件付き）の major 6 件を v3 で反映。**round 3**（追加照合 6 件を 1 レーン 1 件で。`survey-216/r3-lane1.md`〜`r3-lane6.md`。pjdhiro「round 3 を先に」2026-11-02）と critic r3（CONSENSUS-3 条件付き・critical 0・major 2。`survey-216/review-critic-r3.md`）を本版で反映（§0・§1・§6・§7・§8）。追加ラウンド 6 は as#149。critic r3 は「round 4 は不要」としたが、pjdhiro の方針変更（2026-11-02「claudeがわからないものは、調べるしかない。つまりその問いは調べるべき項目です」）でセルフレビュー §4 の穴 9 件＋位14 を調査項目にし、**round 4**（1 レーン 1 件・11 レーン。`survey-216/r4-lane1.md`〜`r4-lane10b.md`。critic r4 `survey-216/review-critic-r4.md`）を本版 **v5** で §9 に反映（§0 に 11・12 を追加）
 **作成日**: 2026-11-02
 **元データ**: round 1 `docs/issues/survey-216/lane1-existential.md`（実存主義）、`lane2-neuro.md`（神経現象学・予測誤差・好奇心）、`lane3-design.md`（デザイン研究の違和感）。round 2 `r2-laneA.md`（「保つ」の既存論・原典照合）、`r2-laneB.md`（解消しない好奇心・gap 認識なしの違和感・緊張と precision・OM）、`r2-laneC.md`（保つために何が必要か）。round 3 `r3-lane1.md`（Tillich 版頁）・`r3-lane2.md`（Frankl・Jaspers 逐語）・`r3-lane3.md`（Litman I/D 定義）・`r3-lane4.md`（Koriat・Hart・Polanyi）・`r3-lane5.md`（忍耐力 4 語）・`r3-lane6.md`（Cross・Lawson）。ブリーフ `docs/issues/ISS-216-survey-brief.md`・`ISS-216-survey-brief-r2.md`・`ISS-216-survey-brief-r3.md`

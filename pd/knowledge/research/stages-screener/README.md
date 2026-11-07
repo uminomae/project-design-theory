@@ -1,7 +1,7 @@
 # stages-screener — 自我発達ステージ簡易スクリーナー（正本）
 
 **このテーマの正本は本ファイル。** 方針を変えるときは本文を直す。Issue: **pd#131**
-https://github.com/uminomae/project-design/issues/131
+https://github.com/uminomae/project-design-theory/issues/9
 
 回答者の「ものの見方の広さ」を 16問×5択で見る簡易スクリーナー。段階の名前と定義は Terri O'Fallon の
 STAGES モデルの公開論文から借り、選択肢は LLM（Claude）と監修者（pjdhiro）が判断して作る。

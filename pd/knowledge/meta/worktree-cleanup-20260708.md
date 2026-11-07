@@ -66,7 +66,7 @@
 - repo 本線（RR-010 / LP 磨き込み）はこのセッションでは動かしていない。次セッションは state.md seq06b の続きから
 
 ## 関連Issue
-- pd#115（OPEN・epic、本投稿の元ネタ）: https://github.com/uminomae/project-design/issues/115 — 投稿レビューのみでコメント不要と判断
+- pd#115（OPEN・epic、本投稿の元ネタ）: https://github.com/uminomae/project-design-theory/issues/5 — 投稿レビューのみでコメント不要と判断
 - pd#116（CLOSED 済み）
 
 ## ブランチ・コミット

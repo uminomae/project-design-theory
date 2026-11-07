@@ -1,6 +1,6 @@
 # ISS-216 候補調査ブリーフ round 4 — セルフレビューの穴 9 件＋アブダクションとの切り分け 1 件を調査項目として埋める（1 レーン 1 件）
 
-**対象 Issue**: https://github.com/uminomae/kesson-space/issues/216
+**対象 Issue**: https://github.com/uminomae/project-design-theory/issues/45
 **作成日**: 2026-11-02
 **起点**: `docs/issues/ISS-216-self-review-v0.md` §4 の穴 1〜9。pjdhiro（原文）「決められないものを調べもせずに決めようとすることが問題だと思う。claudeがわからないものは、調べるしかない。つまりその問いは調べるべき項目です。」
 **実行**: agent-team-workflow・light（Phase 1 SURVEY ×10 を 3 並行 ×3 組＋1 → Phase 2 REVIEW ×1）。成果は Main が統合表 **v5**（`ISS-216-candidate-survey.md` §9）と草案 **v0.2**（`docs/drafts/kesson-academic-ja-v0.md`）に反映

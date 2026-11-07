@@ -79,7 +79,7 @@ knowledge/ (raw)  ──LLM読み取り──▶  plain markdown 生成
 |---|---|---|---|---|
 | **Step 1** | pd 内 同一ディレクトリ | `knowledge/concepts/CN-*.md` | `concepts/` | 完了 |
 | **Step 2** | pd 内 cross-directory | `knowledge/research/` | `keywords/`, `concepts/`, `cross-refs/` | 完了 |
-| **Step 3** | cross-repo | ks, as, cs の knowledge | `concepts/` 充実化 + `keywords/` + `cross-refs/` 拡充 | 完了（[#53](https://github.com/uminomae/project-design/issues/53)） |
+| **Step 3** | cross-repo | ks, as, cs の knowledge | `concepts/` 充実化 + `keywords/` + `cross-refs/` 拡充 | 完了（[#53](https://github.com/uminomae/project-design-archive/issues/53)） |
 
 ### front matter の読み方
 
@@ -265,6 +265,6 @@ Step 3 で参照した各リポジトリの範囲。
 |---|---|
 | wiki-compile スキル | `.claude/skills/wiki-compile/SKILL.md` |
 | wiki-lint スキル | `.claude/skills/wiki-lint/SKILL.md` |
-| 計画 Issue | [pd#48](https://github.com/uminomae/project-design/issues/48) |
-| Obsidian 設定 Issue | [pd#49](https://github.com/uminomae/project-design/issues/49) |
-| Cross-Repo Compile Issue | [pd#53](https://github.com/uminomae/project-design/issues/53) |
+| 計画 Issue | [pd#48](https://github.com/uminomae/project-design-archive/issues/48) |
+| Obsidian 設定 Issue | [pd#49](https://github.com/uminomae/project-design-archive/issues/49) |
+| Cross-Repo Compile Issue | [pd#53](https://github.com/uminomae/project-design-archive/issues/53) |

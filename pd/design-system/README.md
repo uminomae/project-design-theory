@@ -34,7 +34,7 @@ GitHub Pages のように各 repo が**別 URL prefix で配置される**環境
 
 ### 採用方式の決定
 
-ADR は [pd#86](https://github.com/uminomae/project-design/issues/86) で進行中。CDN / submodule / build-time inline / 絶対パス / 現状維持 を比較検討中。
+ADR は [pd#86](https://github.com/uminomae/project-design-archive/issues/86) で進行中。CDN / submodule / build-time inline / 絶対パス / 現状維持 を比較検討中。
 
 決着後、本セクションを採用方式に書き換える。
 
@@ -54,5 +54,5 @@ ADR は [pd#86](https://github.com/uminomae/project-design/issues/86) で進行�
 ## 参照
 
 - 親 issue: [techo#126](https://github.com/uminomae/techo/issues/126)
-- 本 repo issue: [#84](https://github.com/uminomae/project-design/issues/84)
+- 本 repo issue: [#84](https://github.com/uminomae/project-design-archive/issues/84)
 - 観点A 棚卸し結果: `docs/reviews/UI-assets-20260420.md`（pd）/ 他 3 repo の同名ファイル

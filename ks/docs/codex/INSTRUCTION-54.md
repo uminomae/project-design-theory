@@ -1,7 +1,7 @@
 # 指示書: x-logoの浮遊アニメーション復活
 
 ## Issue
-https://github.com/uminomae/kesson-space/issues/54
+https://github.com/uminomae/kesson-space-archive/issues/54
 
 ## 環境判別
 本指示書を受け取ったエージェントは `.claude/rules/env-adaptive.md` §2 に従い、

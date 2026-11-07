@@ -1,6 +1,6 @@
 # ISS-215 一般向けガイドの「筋」案 — 概念の並びを、一本の流れに
 
-**対象 Issue**: https://github.com/uminomae/kesson-space/issues/215
+**対象 Issue**: https://github.com/uminomae/project-design-theory/issues/44
 **状態**: 案。**順番が変わった（pjdhiro・2026-11-02）**: 「抜本的に見直す。まず専門家向けに筋の通った論を作り、その後にコンテンツを埋める」。本文書の 8 段は一般向けの筋であり、**専門家向けの論（#216）が通ってから**、その論に従って埋める側の材料として使う。ガイド本文の書き換えは未着手
 **作成日**: 2026-11-02
 **書き手**: Claude（読みと整理）。判断は pjdhiro
