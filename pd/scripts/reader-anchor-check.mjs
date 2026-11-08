@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// reader-anchor-check.mjs — READER 公開ページの内部アンカー健全性チェック (pd#129)
+// reader-anchor-check.mjs — READER 公開ページの内部アンカー健全性チェック (#8)
 //
 // 動機: energy-flow READER で本文の「§2/§3/§4/§5」等の相互参照がプレーンテキストの
 // ままクリックできない欠陥が公開まで通ってしまった（回遊性/内部リンク健全性が

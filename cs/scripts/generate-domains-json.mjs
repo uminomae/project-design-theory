@@ -8,11 +8,12 @@
 import { readFile, readdir, stat, writeFile } from 'node:fs/promises';
 import { dirname, isAbsolute, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { findPjdhiroDir } from '../../scripts/pjdhiro-dir.mjs';
 
 const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(SCRIPT_DIR, '..');
 const DEFAULT_INDEX_JSON = resolve(ROOT, 'transform', 'domains', 'publish', 'domains', 'index.json');
-const DEFAULT_PUBLISH_REPO = resolve(ROOT, '..', 'pjdhiro');
+const DEFAULT_PUBLISH_REPO = findPjdhiroDir(ROOT, 'assets/creation');
 
 function printHelp() {
   console.log('Generate domains.json from index.json (cs#27)');
@@ -22,7 +23,7 @@ function printHelp() {
   console.log('');
   console.log('Options:');
   console.log('  --index-json <path>    Source index.json (default: transform/domains/publish/domains/index.json)');
-  console.log('  --publish-repo <path>  Publish repo root (default: ../pjdhiro)');
+  console.log('  --publish-repo <path>  Publish repo root (default: pjdhiro beside this repo)');
   console.log('  --output <path>        Output path (default: <publish-repo>/assets/creation/manifests/domains.json)');
   console.log('  --dry-run              Print to stdout instead of writing');
   console.log('  --check                Compare with existing file and report differences');

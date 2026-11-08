@@ -68,7 +68,7 @@ Visual Description:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("svg_path", help="Path to the source SVG file")
-    parser.add_argument("--output-dir", default="creation-space/assets/img/generated/", help="Directory to save the image")
+    parser.add_argument("--output-dir", default="cs/assets/img/generated/", help="Directory to save the image")
     args = parser.parse_args()
 
     generate_diagram_image(args.svg_path, args.output_dir)

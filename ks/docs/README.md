@@ -27,7 +27,7 @@ kesson-spaceは欠損駆動思考プロジェクトの**3D体験空間**。
 ## タスク管理
 
 **GitHub Issues が唯一の正本。**
-→ https://github.com/uminomae/kesson-space/issues
+→ https://github.com/uminomae/project-design-theory/issues?q=label%3Aks
 
 - 進捗追跡: Issue コメントで記録（AGENTS.md §5.2）
 - 優先度: P0〜P3 ラベル
@@ -43,7 +43,7 @@ kesson-spaceは欠損駆動思考プロジェクトの**3D体験空間**。
 |---------|------|
 | [../README.md](../README.md) | セッション起動（エントリーポイント） |
 | [../AGENTS.md](../AGENTS.md) | ブランチルール・Issue進捗コメント・品質ガード |
-| [GitHub Issues](https://github.com/uminomae/kesson-space/issues) | タスク正本・進捗追跡 |
+| [GitHub Issues](https://github.com/uminomae/project-design-theory/issues?q=label%3Aks) | タスク正本・進捗追跡 |
 
 ### Tier 2: タスクに応じて参照
 
@@ -105,7 +105,7 @@ kesson-spaceは欠損駆動思考プロジェクトの**3D体験空間**。
 
 - [ライブサイト](https://uminomae.github.io/project-design-theory/ks/)
 - [ブログ記事](https://uminomae.github.io/pjdhiro/thinking-kesson/)
-- [GitHub Actions](https://github.com/uminomae/kesson-space/actions)
+- [GitHub Actions](https://github.com/uminomae/project-design-theory/actions)
 
 ---
 

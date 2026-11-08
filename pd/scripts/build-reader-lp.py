@@ -116,7 +116,7 @@ def fold_sections(html: str) -> str:
     """
     parts = re.split(r'(<h2 id="[^"]+">.*?</h2>)', html, flags=re.S)
     # 正本 MD で章の前に <!--PART:第一部|部の題--> を置くと、章をまとめる部の区切りを
-    # 章の外に出す（目次では src/reader-flow.js が部の行にする・pd#144「章を4つくらいの分類に」）
+    # 章の外に出す（目次では src/reader-flow.js が部の行にする・#20「章を4つくらいの分類に」）
     part_no = [0]
 
     def part_html(mark: str) -> str:
@@ -145,7 +145,7 @@ def fold_sections(html: str) -> str:
         if opened:
             body = body.replace("<!--OPEN-->", "", 1)
         # 正本 MD で章末に <!--TURN-->…<!--/TURN--> を置くと、章の外（次の章との間）に
-        # 転回点として出す。章を閉じていても見える（pd#144「独立して章を繋ぐ言葉として印象的に」）
+        # 転回点として出す。章を閉じていても見える（#20「独立して章を繋ぐ言葉として印象的に」）
         turn = ""
         m = re.search(r"<!--TURN-->(.*?)<!--/TURN-->", body, flags=re.S)
         if m:
@@ -162,7 +162,7 @@ def collect_refs(html: str) -> str:
     """正本 MD で「出典：」段落の前に <!--REF:分野--> を置くと、巻末の <!--REFS--> に分野ごとに集める。
 
     各行には出典が置かれた章（h2）へのリンクを付ける。章の中の出典はそのまま残す
-    （pd#144「論文的な参照を見やすくしたい」）。<!--REFS--> が無いページは何もしない。
+    （#20「論文的な参照を見やすくしたい」）。<!--REFS--> が無いページは何もしない。
     """
     marker = re.search(r"(?:<p>)?<!--REFS-->(?:</p>)?", html)
     if not marker:
@@ -338,7 +338,7 @@ def build(SRC: Path, TPL: Path, OUT: Path, STYLE: str) -> None:
         # 表は garage 型の横スクロール枠、引用はコールアウト、MD の畳みは .acc カードに
         html = re.sub(r"(<table\b.*?</table>)", r'<div class="tablewrap">\1</div>', html, flags=re.S)
         html = html.replace("<blockquote>", '<blockquote class="reader-callout">')
-        # pjdhiro 本人の言葉（「pjdhiro の問い：」等で始まる段落）は gravity-love と同じ引用カードに載せる（pd#144）
+        # pjdhiro 本人の言葉（「pjdhiro の問い：」等で始まる段落）は gravity-love と同じ引用カードに載せる（#20）
         html = re.sub(
             r"(?<!<blockquote class=\"reader-callout\">\n)<p>(<strong>pjdhiro の[^<：]{1,8}：</strong>.*?)</p>",
             r'<blockquote class="reader-callout reader-request">\n<p>\1</p>\n</blockquote>',

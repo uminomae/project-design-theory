@@ -15,7 +15,7 @@ const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
 const MANIFEST_SUBPATH = ['assets', 'creation', 'manifests', 'domains.json'];
 
 // pjdhiro の repo は PJDHIRO_DIR か、このスクリプトから上へ探して見つける（as/transform/scripts/pjdhiro-dir.mjs と同じ決め方）。
-// 今までの creation-space は pjdhiro の隣にあったので ../../pjdhiro で足りたが、この repo では深さが違う。
+// 今までの creation-space は pjdhiro の隣にあったので決め打ちで足りたが、この repo では深さが違う。
 function defaultPath() {
   if (process.env.PJDHIRO_DIR) return resolve(process.env.PJDHIRO_DIR, ...MANIFEST_SUBPATH);
   let dir = SCRIPT_DIR;
@@ -24,7 +24,7 @@ function defaultPath() {
     const candidate = resolve(dir, 'pjdhiro', ...MANIFEST_SUBPATH);
     if (existsSync(candidate)) return candidate;
   }
-  return resolve(SCRIPT_DIR, '..', '..', 'pjdhiro', ...MANIFEST_SUBPATH);
+  return resolve(SCRIPT_DIR, '..', '..', '..', 'pjdhiro', ...MANIFEST_SUBPATH); // 見つからないときは repo の隣（old-repo-refs: ok）
 }
 const DEFAULT_PATH = defaultPath();
 

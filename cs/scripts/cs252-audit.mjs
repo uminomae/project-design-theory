@@ -6,7 +6,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const csRoot = join(dirname(fileURLToPath(import.meta.url)), '..');
-const pdWikiSources = join(csRoot, '..', 'project-design', 'wiki', 'sources');
+const pdWikiSources = join(csRoot, '..', 'pd', 'wiki', 'sources');
 const manifestPath = join(csRoot, 'knowledge', 'raw', 'manifest.md');
 
 const manifest = readFileSync(manifestPath, 'utf8');

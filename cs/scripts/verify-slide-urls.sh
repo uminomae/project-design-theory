@@ -3,7 +3,7 @@
 #
 # 用途: domains.json の slug から生成される URL が実在するか確認
 # CI/CD: push 前 or 定期レビューで実行
-# 前提: pjdhiro リポがローカルにある (~/dev/pjdhiro/)
+# 前提: pjdhiro リポがローカルにある（この repo の隣。~/dev/pd/pjdhiro/）
 #
 # 使い方:
 #   bash scripts/verify-slide-urls.sh           # ローカルファイルチェック
@@ -11,7 +11,8 @@
 
 set -euo pipefail
 
-PJDHIRO_DIR="${PJDHIRO_DIR:-$HOME/dev/pjdhiro}"
+. "$(cd "$(dirname "$0")/../.." && pwd)/scripts/pjdhiro-dir.sh"
+PJDHIRO_DIR="$(find_pjdhiro_dir "$(dirname "$0")" assets/creation)"
 MANIFEST="$PJDHIRO_DIR/assets/creation/manifests/domains.json"
 REMOTE_BASE="https://uminomae.github.io/pjdhiro/assets/creation"
 MODE="${1:-local}"

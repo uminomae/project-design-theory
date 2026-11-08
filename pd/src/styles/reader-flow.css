@@ -36,7 +36,7 @@ body.reader-flow .reader-meta {
     color: var(--mid);
 }
 
-/* 冒頭の宣言（pd#144）：副題の下に、本文と同じ大きさで置く */
+/* 冒頭の宣言（#20）：副題の下に、本文と同じ大きさで置く */
 body.reader-flow .reader-lead {
     font-family: var(--serif-jp);
     font-size: 1rem;
@@ -125,7 +125,7 @@ body.reader-flow details.sec > summary:hover { color: var(--gold); }
 body.reader-flow details.sec .secbody { padding: 2px 0 10px; }
 body.reader-flow details.sec .secbody > *:first-child { margin-top: 14px; }
 
-/* ===== 部の区切り（章をまとめる。正本 MD の <!--PART:第一部|題-->・pd#144） ===== */
+/* ===== 部の区切り（章をまとめる。正本 MD の <!--PART:第一部|題-->・#20） ===== */
 body.reader-flow .reader-article .reader-part {
     margin: 56px 0 4px;
     padding: 0 0 8px;
@@ -148,7 +148,7 @@ body.reader-flow .reader-article .reader-part__title {
     color: var(--navy);
 }
 
-/* ===== 参照の一覧（巻末・build-reader-lp.py の collect_refs が作る・pd#144） ===== */
+/* ===== 参照の一覧（巻末・build-reader-lp.py の collect_refs が作る・#20） ===== */
 body.reader-flow .reader-article ul.reader-refs {
     list-style: none;
     padding: 0;
@@ -240,7 +240,7 @@ body.reader-flow .reader-article .tablefit table {
 body.reader-flow .reader-article .tablefit thead th { white-space: normal; }
 body.reader-flow .reader-article .tablefit th:first-child,
 body.reader-flow .reader-article .tablefit td:first-child { width: 16%; }
-/* 三列をほぼ均等に割る比較表（概念｜駆動源｜条件など。pjdhiro 2026-11-04 pd#144「表の方が見やすい。横スクロールせずに見たい。スマホを考慮」） */
+/* 三列をほぼ均等に割る比較表（概念｜駆動源｜条件など。pjdhiro 2026-11-04 #20「表の方が見やすい。横スクロールせずに見たい。スマホを考慮」） */
 body.reader-flow .reader-article .tablefit.cols-3 th:first-child,
 body.reader-flow .reader-article .tablefit.cols-3 td:first-child { width: 32%; }
 body.reader-flow .reader-article .tablefit.cols-3 th:nth-child(2),
@@ -340,7 +340,7 @@ body.reader-flow #toc ol {
     counter-reset: toc;
 }
 body.reader-flow #toc li { counter-increment: toc; }
-/* 部の行（章をまとめる区切り・番号を数えない・pd#144） */
+/* 部の行（章をまとめる区切り・番号を数えない・#20） */
 body.reader-flow #toc li.toc-part { counter-increment: none; margin-top: 10px; }
 body.reader-flow #toc li.toc-part:first-child { margin-top: 0; }
 body.reader-flow #toc li.toc-part a {
@@ -427,12 +427,12 @@ body.reader-flow .reader-article details.acc h5 {
     color: var(--navy);
 }
 body.reader-flow .reader-article details.acc h5 + p { margin-top: 2px; }
-/* 二列の項目表（概念ごとの 出どころ／考え方／よく効く場面／届かないところ。pjdhiro 2026-11-04 pd#144「２列三行がいい」） */
+/* 二列の項目表（概念ごとの 出どころ／考え方／よく効く場面／届かないところ。pjdhiro 2026-11-04 #20「２列三行がいい」） */
 body.reader-flow .reader-article .tablefit.cols-2 th:first-child,
 body.reader-flow .reader-article .tablefit.cols-2 td:first-child { width: 28%; color: var(--mute); }
 body.reader-flow .reader-article details.acc .tablefit.cols-2 .tablewrap { margin: 6px 0 14px; }
 
-/* ===== 章と章のあいだの転回点（正本 MD の <!--TURN-->。章を閉じていても見える。pd#144） ===== */
+/* ===== 章と章のあいだの転回点（正本 MD の <!--TURN-->。章を閉じていても見える。#20） ===== */
 body.reader-flow .reader-article .reader-turn {
     margin: 36px auto;
     padding: 22px 8px;

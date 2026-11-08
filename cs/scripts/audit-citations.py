@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""cs#253 A軸: 書誌実在性監査.
+"""#55 A軸: 書誌実在性監査.
 
 manifest の raw-confirmed / url-verified 行の (著者/題/年) を Crossref で照合し、
 canonical DOI と一致判定を構造化して書き出す。コンテキスト保護のため、
@@ -249,7 +249,7 @@ def main():
     # markdown summary
     md = os.path.join(OUTDIR, 'citation-audit.md')
     with open(md, 'w') as f:
-        f.write('# cs#253 A軸: 書誌実在性監査レポート\n\n')
+        f.write('# #55 A軸: 書誌実在性監査レポート\n\n')
         f.write(f'対象: {", ".join(sorted(statuses))} / {len(rows)} 行\n\n')
         f.write('2 軸で分類: **entry_quality**（書誌の整形度）× **existence**（Crossref 実在）\n\n')
         f.write('## 軸1: entry_quality\n\n')

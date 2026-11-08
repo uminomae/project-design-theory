@@ -18,7 +18,8 @@ GREEN='\033[0;32m'; YELLOW='\033[1;33m'; RED='\033[0;31m'; NC='\033[0m'
 # ── パス ──
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 CREATION_SPACE_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
-PJDHIRO_DIR="pjdhiro"
+. "$CREATION_SPACE_ROOT/../scripts/pjdhiro-dir.sh"
+PJDHIRO_DIR="$(find_pjdhiro_dir "$CREATION_SPACE_ROOT" assets/creation)"
 DOMAINS_BASE="$PJDHIRO_DIR/assets/creation/domains"
 SOURCE_DIR="$CREATION_SPACE_ROOT/transform/domains/publish/domains"
 DOMAINS_JSON="$PJDHIRO_DIR/assets/creation/manifests/domains.json"

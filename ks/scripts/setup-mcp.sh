@@ -4,7 +4,7 @@
 set -e
 
 CONFIG_FILE="$HOME/Library/Application Support/Claude/claude_desktop_config.json"
-PROJECT_DIR="~/Documents/GitHub/kesson-space"
+PROJECT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 
 # jq がなければインストール
 if ! command -v jq &> /dev/null; then

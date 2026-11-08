@@ -17,14 +17,14 @@ import { fileURLToPath } from 'node:url';
 
 const pdRoot = join(dirname(fileURLToPath(import.meta.url)), '..');
 const sourcesDir = join(pdRoot, 'wiki', 'sources');
-const manifestPath = join(pdRoot, '..', 'creation-space', 'knowledge', 'raw', 'manifest.md');
+const manifestPath = join(pdRoot, '..', 'cs', 'knowledge', 'raw', 'manifest.md');
 
 if (!existsSync(sourcesDir)) {
   console.log('SKIP — wiki/sources/ なし');
   process.exit(0);
 }
 if (!existsSync(manifestPath)) {
-  console.log('SKIP — cs manifest が見つからない (creation-space 未配置)');
+  console.log('SKIP — cs manifest が見つからない (cs/knowledge/raw/ は git に入れず手元だけに置く)');
   process.exit(0);
 }
 

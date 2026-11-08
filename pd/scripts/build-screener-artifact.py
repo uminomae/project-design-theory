@@ -19,7 +19,7 @@ OUT = ROOT / "knowledge/research/stages-screener/artifact/screener.html"
 
 def main() -> None:
     data = json.loads(DATA.read_text(encoding="utf-8"))
-    # 回答中の補足と例はまだない（pd#133）。帯・問い・バージョンだけを渡す
+    # 回答中の補足と例はまだない（#11）。帯・問い・バージョンだけを渡す
     payload = {
         "version": data["version"],
         "updated": data["updated"],

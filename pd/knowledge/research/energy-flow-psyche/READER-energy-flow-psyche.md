@@ -1,6 +1,6 @@
 ---
 title: エネルギーの流れ仮説 — 読み物
-issue: pd#129（散逸構造的世界観からの独立探究）
+issue: #8（散逸構造的世界観からの独立探究）
 status: draft（第一次調査 R1-R5 ＋ 深掘り反映）
 date: 2026-07-15
 ---
@@ -399,10 +399,10 @@ OU 過程が感情にもブラウン運動にも現れるのは、両者に同�
 
 ## 参照 — 出典メモ（本文と別枠）
 
-- 先行調査（pd リポジトリ・two-axis-closure ピラー）
+- 先行調査（pd/ の two-axis-closure ピラー）
   - [RR-020 感情＝放出エネルギー横断調査](https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/two-axis-closure/RR-020-emotion-release-energy-survey.md) — 積→放出の等式対応なし・二段階の構造類似・free energy 同名性
   - [RR-021 精神＝素粒子の構造類似調査](https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/two-axis-closure/RR-021-psyche-particle-analogy-survey.md) — E=mc² の二文脈・陽子質量の分解（arXiv:1710.09011）
   - [RR-022 光はどこから現れるか](https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/two-axis-closure/RR-022-light-origin-psyche-analogy-survey.md) — 大前提「あくまで構造類似」の確定
-- 姉妹調査（creation-space リポジトリ）
+- 姉妹調査（cs/・創造とは）
   - [TH-001 波・渦の存在論](https://github.com/uminomae/project-design-theory/tree/main/cs/evidence/themes/TH-001-wave-vortex-ontology) — 三層分離（実証＝アナログ重力／仮説＝時空・媒質／思想・系譜）・「analogy is not identity」
 - この調査の憲章: [energy-flow-psyche README](https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/energy-flow-psyche/README.md)

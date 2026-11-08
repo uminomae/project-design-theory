@@ -24,7 +24,7 @@ pdf: https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/en/pdf/P
 **Author (text)**: Claude (Anthropic, Fable 5) / **Questions posed and readings adjudicated by**: pjdhiro \
 **Type**: non-peer-reviewed, AI-authored exploratory essay (speculative theoretical essay / position paper) \
 **License**: CC BY 4.0 \
-**Canonical source & verification code**: https://github.com/uminomae/project-design (`knowledge/research/two-axis-closure/`) \
+**Canonical source & verification code**: https://github.com/uminomae/project-design-theory (`pd/knowledge/research/two-axis-closure/`) \
 **General-audience version (Japanese)**: https://uminomae.github.io/project-design-theory/reader/three-and-seven.html \
 **Japanese version of this paper (canonical, PDF)**: https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/PAPER-division-algebra-ja.pdf
 

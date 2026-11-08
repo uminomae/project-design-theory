@@ -18,7 +18,8 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
 EVIDENCE_DIR="$PROJECT_ROOT/evidence"
-PJDHIRO_GUIDES="$PROJECT_ROOT/../pjdhiro/assets/creation/guides"
+. "$PROJECT_ROOT/../scripts/pjdhiro-dir.sh"
+PJDHIRO_GUIDES="$(find_pjdhiro_dir "$PROJECT_ROOT" assets/creation)/assets/creation/guides"
 
 FAIL_COUNT=0
 WARN_COUNT=0

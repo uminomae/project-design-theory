@@ -13,9 +13,9 @@
 - **Intersubjectivity** (間主観性): The shared experiential space between subjects. Central to the trust axis and a key investigative question of this exploration.
 
 ### Related Explorations
-- [project-design](https://github.com/uminomae/project-design): Project Design Theory -- the overarching framework
-- [creation-space](https://github.com/uminomae/creation-space): Exploring creative processes across 30 academic domains
-- [kesson-space](https://github.com/uminomae/kesson-space): 3D experiential space for Kesson-Driven Thinking
+- [project-design](https://uminomae.github.io/project-design-theory/) (`pd/` in this repo): Project Design Theory -- the overarching framework
+- [creation-space](https://uminomae.github.io/project-design-theory/cs/) (`cs/` in this repo): Exploring creative processes across 30 academic domains
+- [kesson-space](https://uminomae.github.io/project-design-theory/ks/) (`ks/` in this repo): 3D experiential space for Kesson-Driven Thinking
 
 > For the full theoretical framework, see [Project Design](https://uminomae.github.io/project-design-theory/).
 
@@ -47,12 +47,12 @@ Exploring "What is consciousness?" through the Survival-Trust Axis hypothesis. I
 
 ## 関連探索 / Related Explorations
 
-| リポジトリ / Repository | 概要 / Description |
+| 場所 / Where | 概要 / Description |
 |---|---|
 | [pjdhiro](https://github.com/uminomae/pjdhiro) | GitHub Pages ホスティング、ブログ |
-| [creation-space](https://github.com/uminomae/creation-space) | 「創造とは」の探索 — 30領域の学術横断調査 |
-| [kesson-space](https://github.com/uminomae/kesson-space) | 欠損駆動思考の3D体験空間 |
-| [project-design](https://github.com/uminomae/project-design) | プロジェクトデザイン論 — Doing と Being を包含する構想・設計・実行 |
+| [creation-space](https://uminomae.github.io/project-design-theory/cs/)（この repo の `cs/`） | 「創造とは」の探索 — 30領域の学術横断調査 |
+| [kesson-space](https://uminomae.github.io/project-design-theory/ks/)（この repo の `ks/`） | 欠損駆動思考の3D体験空間 |
+| [project-design](https://uminomae.github.io/project-design-theory/)（この repo の `pd/`） | プロジェクトデザイン論 — Doing と Being を包含する構想・設計・実行 |
 
 ## Author
 
@@ -60,4 +60,4 @@ Exploring "What is consciousness?" through the Survival-Trust Axis hypothesis. I
 
 ## License
 
-[MIT License](LICENSE)
+[MIT License](../LICENSE)

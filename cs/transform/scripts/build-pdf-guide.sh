@@ -41,7 +41,8 @@ GREEN='\033[0;32m'; YELLOW='\033[1;33m'; BLUE='\033[0;34m'; RED='\033[0;31m'; NC
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 CREATION_SPACE_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 # 環境変数で上書き可（pjdhiro の develop worktree で組むとき等）
-PJDHIRO_DIR="${PJDHIRO_DIR:-pjdhiro}"
+. "$CREATION_SPACE_ROOT/../scripts/pjdhiro-dir.sh"
+PJDHIRO_DIR="$(find_pjdhiro_dir "$CREATION_SPACE_ROOT" assets/creation)"
 GUIDES_BASE="$PJDHIRO_DIR/assets/creation/guides"
 DOMAINS_BASE="$PJDHIRO_DIR/assets/creation/domains"
 THEMES_BASE="$PJDHIRO_DIR/assets/creation/phase8-themes"

@@ -13,8 +13,9 @@ done
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 CS_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
-PJDHIRO_DIR="${CS_DIR}/../pjdhiro"
-PD_DIR="${CS_DIR}/../project-design"
+. "${CS_DIR}/../scripts/pjdhiro-dir.sh"
+PJDHIRO_DIR="$(find_pjdhiro_dir "$CS_DIR" assets/creation)"
+PD_DIR="${CS_DIR}/../pd"
 
 INDEX_JSON="${CS_DIR}/transform/domains/publish/domains/index.json"
 DATA_JS="${CS_DIR}/src/reports/data.js"
@@ -241,12 +242,12 @@ else
     warnings=$((warnings + 1))
 fi
 
-# --- Check 10: 同一領域内の原典重複検知 (cs#249) ---
+# --- Check 10: 同一領域内の原典重複検知 (#52) ---
 # 背景: D15-S09/D15-S10 (Dewey 1934) / D26-S06/D26-S09 (Huron 2006) /
 #   D16-S03/D16-S04 (Toynbee A Study of History) のように、同一原典・同一領域の
 #   manifest 行が複数存在する重複ミスが放置されていた。
 #   重複は「原典→source-note 1:1 原則」(.claude/rules/source-note-invariants.md §1) に反する。
-# 判定方針 (cs#249, pjdhiro 指示=実務標準の書誌重複ルールを採用):
+# 判定方針 (#52, pjdhiro 指示=実務標準の書誌重複ルールを採用):
 #   1. 候補グルーピング: (領域, 正規化書名)。同一領域で書名一致＝重複候補。
 #   2. DOI 主キー: ペアの両方が DOI を持ち、それが *異なれば別 publication* として除外
 #      （速報 letter 版 vs 拡張 full article 版、版違い等。例: Bak SOC は別 DOI で自動判定）。
@@ -255,7 +256,7 @@ fi
 #   クロス領域 anchor (同一原典を *異なる領域* で再利用) は領域が異なるため掛からない（正規）。
 DUP_EXC="$(dirname "$MANIFEST")/duplicate-exceptions.md"
 echo ""
-echo "[10] 原典重複検知: 同一領域・同一書名 (DOI 相違は別publicationとして自動除外, cs#249)"
+echo "[10] 原典重複検知: 同一領域・同一書名 (DOI 相違は別publicationとして自動除外, #52)"
 if [[ -f "$MANIFEST" ]]; then
     python3 - "$MANIFEST" "$DUP_EXC" <<'PY' || errors=$((errors + 1))
 import re, sys

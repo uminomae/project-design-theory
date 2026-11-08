@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""cs#253 C軸: confidence tier 統合.
+"""#55 C軸: confidence tier 統合.
 
 A軸(citation-audit.jsonl=実在) × B軸(access-audit.jsonl=取得) × source-note有無 ×
 manifest の採録マーカーを sid で join し、各行に信頼度ティアを付与する。
@@ -101,7 +101,7 @@ def main():
     md = os.path.join(AUD, 'confidence-tier.md')
     total = sum(counts.values())
     with open(md, 'w') as f:
-        f.write('# cs#253 C軸: confidence tier（A実在 × B取得 × source-note × 採録根拠）\n\n')
+        f.write('# #55 C軸: confidence tier（A実在 × B取得 × source-note × 採録根拠）\n\n')
         f.write(f'対象 {total} 行。A軸/B軸 jsonl と source-note 有無・採録マーカーの決定的 join。\n\n')
         f.write('## ティア分布\n\n| tier | 件数 | 意味 |\n|---|---|---|\n')
         f.write(f'| T1_READ | {counts["T1_READ"]} | source-note あり=精読済（最高位） |\n')

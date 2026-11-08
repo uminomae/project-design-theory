@@ -24,7 +24,8 @@ GREEN='\033[0;32m'; YELLOW='\033[1;33m'; BLUE='\033[0;34m'; RED='\033[0;31m'; NC
 # ── パス ──
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 CREATION_SPACE_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
-PJDHIRO_DIR="pjdhiro"
+. "$CREATION_SPACE_ROOT/../scripts/pjdhiro-dir.sh"
+PJDHIRO_DIR="$(find_pjdhiro_dir "$CREATION_SPACE_ROOT" assets/creation)"
 DOMAINS_BASE="$PJDHIRO_DIR/assets/creation/domains"
 BUILD_PDF="$CREATION_SPACE_ROOT/transform/scripts/build-pdf-guide.sh"
 VERIFY_DATES="$SCRIPT_DIR/verify-domain-dates.sh"
@@ -211,5 +212,5 @@ echo -e "${GREEN}═════════════════════
 echo ""
 echo -e "次のステップ:"
 echo -e "  1. pjdhiro で git add & commit & push"
-echo -e "  2. creation-space で git add & commit & push"
-echo -e "  3. （公開時）creation-space develop → main マージ"
+echo -e "  2. project-design-theory で git add & commit & push"
+echo -e "  3. （公開時）project-design-theory の develop を main へ送る（git push origin develop:main）"

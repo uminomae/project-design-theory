@@ -3,7 +3,7 @@
 
 背景: Check 8/10 は「ファイル名・書誌テキスト」ベースで、PDF の中身は見ていない。
 D05-S15 / D23 で「ファイル名は正しいが中身が別論文」の取り違えが発覚した
-(cs#249 backfill)。本スクリプトは raw-confirmed の各 PDF について冒頭数頁を
+(#52 backfill)。本スクリプトは raw-confirmed の各 PDF について冒頭数頁を
 pdftotext で抽出し、manifest の source_title(著者姓/年/タイトル語) と照合して
 不一致候補を WARN 出力する。
 
