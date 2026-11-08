@@ -482,7 +482,7 @@ pjdhiro は、「考えて決める」行動の軸と直角に、存在の軸が
 
 <!--OPEN-->
 
-<a id="ldd-uncertain"></a>🚧 工事中です。この章では、先が見えない不確かさの中で湧く信号が、人によって、また成長の段階によって、生存の側にも信頼の側にも寄ることを見ます（参考：[「意識とは」](https://uminomae.github.io/project-design-theory/as/)）。
+<a id="ldd-uncertain"></a>🚧 工事中です。この章では、先が見えない不確かさの中で湧く信号が、人によって、また成長の段階によって、生存の側にも信頼の側にも寄ることを見ます（参考：[「意識とは」](https://uminomae.github.io/project-design-theory/as/)）。（探索：[#82](https://github.com/uminomae/project-design-theory/issues/82)）
 
 ## 信頼は、関係の積み重ねの中で育つ
 
@@ -554,13 +554,13 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 
 <!--OPEN-->
 
-<a id="ldd-defense"></a>🚧 工事中です。この章では、不安から心を守る動き（理想化・空想・否認など）を見ます（参考：[影響を受けた心理学](influences-psychology.html)）。
+<a id="ldd-defense"></a>🚧 工事中です。この章では、不安から心を守る動き（理想化・空想・否認など）を見ます（参考：[影響を受けた心理学](influences-psychology.html)）。（探索：[#83](https://github.com/uminomae/project-design-theory/issues/83)）
 
 ## 発達の段階で、何が脅威に見えるかが変わる
 
 <!--OPEN-->
 
-<a id="ldd-stages"></a>🚧 工事中です。この章では、人の成長には段階があり、段階ごとに何が脅威に見え、どう守るかが変わることを見ます（参考：[精神の発達段階とは](developmental-stages.html)）。
+<a id="ldd-stages"></a>🚧 工事中です。この章では、人の成長には段階があり、段階ごとに何が脅威に見え、どう守るかが変わることを見ます（参考：[精神の発達段階とは](developmental-stages.html)）。（探索：[#84](https://github.com/uminomae/project-design-theory/issues/84)）
 
 <!--TURN-->
 
@@ -637,7 +637,7 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 
 ただし、測られているのは、名指せる相手の像の効果です。臍の緒の像のような、誰とも名指せない相手とのつながりや、その先が宇宙とつながっているような安定は、まだ測られていません。
 
-🚧 名指せない相手とのつながりの安定を測った研究は、まだ見つけていません。見つかれば書き足します。
+🚧 名指せない相手とのつながりの安定を測った研究は、まだ見つけていません。見つかれば書き足します。（探索：[#85](https://github.com/uminomae/project-design-theory/issues/85)）
 
 <details><summary>詳しく — 見えない相手の像が安心をもたらすことを測った実験</summary>
 
@@ -719,7 +719,7 @@ Mikulincer、Gillath、Shaver（2002 年）は、意識に上らない速さで�
 
 <!--OPEN-->
 
-<a id="ldd-development"></a>🚧 工事中です。この章では、開発と呼ばれるものが、どこまでを指すかを見ます。意図して進めるものだけでなく、意図せず育つもの、変わっていくものも入ります。手順には、無意識の動き、暗黙のこと、非合理なこと、感情、意欲、心の準備も入る、と pjdhiro は見ています（参考：「[何がプロジェクトを動かしているのか](#ldd-question)」の章の畳み「構想が言葉になる前に起きていること」・[ミンツバーグの学派を、駆動源と創造の流れで見る](mintzberg-schools.html)）。
+<a id="ldd-development"></a>🚧 工事中です。この章では、開発と呼ばれるものが、どこまでを指すかを見ます。意図して進めるものだけでなく、意図せず育つもの、変わっていくものも入ります。手順には、無意識の動き、暗黙のこと、非合理なこと、感情、意欲、心の準備も入る、と pjdhiro は見ています（参考：「[何がプロジェクトを動かしているのか](#ldd-question)」の章の畳み「構想が言葉になる前に起きていること」・[ミンツバーグの学派を、駆動源と創造の流れで見る](mintzberg-schools.html)）。（探索：[#86](https://github.com/uminomae/project-design-theory/issues/86)）
 
 ## 構想は、まだ分からない
 
@@ -906,7 +906,7 @@ Mikulincer、Gillath、Shaver（2002 年）は、意識に上らない速さで�
 
 <!--OPEN-->
 
-<a id="ldd-design-field"></a>🚧 工事中です。この章では、デザインが、渦だけでなく、その渦が生まれる場にも関わることを見ます。「[価値創造は、どこで誤解されるか](#ldd-creation)」の章の終わりで、一文だけ触れたところです（参考：[創造とは](https://uminomae.github.io/project-design-theory/cs/)）。
+<a id="ldd-design-field"></a>🚧 工事中です。この章では、デザインが、渦だけでなく、その渦が生まれる場にも関わることを見ます。「[価値創造は、どこで誤解されるか](#ldd-creation)」の章の終わりで、一文だけ触れたところです（参考：[創造とは](https://uminomae.github.io/project-design-theory/cs/)）。（探索：[#87](https://github.com/uminomae/project-design-theory/issues/87)）
 
 ## 五つの効き目と効く範囲
 
@@ -1149,7 +1149,7 @@ pjdhiro は、この一年の作業を、自分というアプリのリファク
 | 2026-11-01 | 読み物「愛は、重力に似ていないか」 |
 | 2026-11-03 | 四つの探究が一本の線に並ぶ |
 
-🚧 git の日付で辿る一年の軌跡の文書（別の作業で作成中）を、ここに合流させます。
+🚧 git の日付で辿る一年の軌跡の文書（別の作業で作成中）を、ここに合流させます。（探索：[#88](https://github.com/uminomae/project-design-theory/issues/88)）
 
 </details>
 
