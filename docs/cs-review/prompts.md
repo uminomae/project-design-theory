@@ -1,0 +1,114 @@
+# エージェントに頼む文の雛形
+
+cs の全体レビュー（`README.md`）で、エージェントに頼む文。試しの一巡（2026-11-08）で使った文を、本番で使える形に直した。`{…}` を埋めて使う。R は `~/dev/pd/project-design-theory`（本体の checkout。原典の PDF はここの手元にしか無い）。
+
+どの頼む文にも、次の三つを入れる。
+
+- 日本語で作業し、日本語で報告すること（型 Q）。
+- 書いてよい場所（読むだけか、記録のファイル一つだけか）。commit と push はしない。
+- 材料の在りか。書かないと、探すのに時間の半分を使う。
+
+## 1. 内容の照合（一つの領域）
+
+```
+日本語で作業・報告してください。書いてよいのは R/docs/cs-review/{Dxx}.md の一つだけです（新しく作る）。ほかのファイルは書き換えず、commit も push もしないでください。R は ~/dev/pd/project-design-theory です。
+
+## 背景
+R の cs/ は「創造とは」というサイトで、30 の学術領域に「創造の5段階モデル（場・波・縁・渦・束）」と似た構造があるかを調べた成果です。調査の手法は正しいが、当時の LLM（Opus 4）と作ったため、誤り・誤解・中途半端な箇所が多いと、持ち主の pjdhiro は見ています。あなたの仕事は、{領域名}（{Dxx}）を点検し、記録を書くことです。
+
+## 先に読む
+- R/docs/cs-review/README.md（計画。「何を正とするか」「レビューの決まり」「規約で決めたこと」「判断が要ること」）
+- R/docs/cs-review/D01.md（記録の見本）
+- R/docs/rules/sources.md・writing.md・corrections.md、R/docs/rules/stance.md の §1・§2-6・§3・§4
+{領域ごとの注意（下の「領域ごとの注意」から写す）}
+
+## 材料の在りか
+- 公開報告（日本語）：~/dev/pd/pjdhiro/assets/creation/domains/ja/md/domain-{Dxx}-{slug}.md。英語版は en/md/、プレゼン版は ja/presentations/md/。
+- evidence：R/cs/evidence/evidence-{Dxx}-*.md は再監査待ちの stub。2026-04-07 までの本文は R/cs/evidence/archive/pre-rerun-20260407/evidence/ にある（今の判定の正当化には使わない、と決めてある）。ほかに R/cs/evidence/archive/ の pre-revise 版があれば見る。
+- 調べた跡：R/cs/evidence/investigation/{Dxx}-*/、R/cs/evidence/202602-deep-research-30domains-gpt/DR-{Dxx}-*.md（GPT の Deep Research。原文が保存されておらず、出典は手がかりにしかならない）
+- 精読ノート：R/pd/wiki/sources/{Dxx}_*.md、R/cs/knowledge/source-notes/{Dxx}/
+- 原典の PDF：R/cs/knowledge/raw/{Dxx}_*.pdf（git の外。pdftotext などで読む）。一覧は R/cs/knowledge/raw/manifest.md
+- 5段階の定義：R/cs/knowledge/five-stages-guide.md・glossary.md・schema/five-stages.md（定義はまだ決まっていない。README の「判断が要ること」1）
+
+## やること
+1. 公開報告（日本語）の主張を、主なものから一行ずつ取り出す（多ければ、5段階との対応・人名と年・数の主張を優先して 15 行まで）。
+2. 各主張の根拠の文献を特定し、wiki・source-notes・PDF の有無を書く。
+3. PDF があるものは、本文の該当箇所を読み、ページを控える。少なくとも 3 本。PDF が無く精読ノートしか無いものは「精読ノートのみ」と書き、ノートの引用が主張を支えているかを見る。
+4. 書誌（著者・年・題・DOI）を、wiki・PDF の表紙・Crossref（https://api.crossref.org/works/{DOI}）で突き合わせる。
+5. 当てはめ（その理論を5段階のどこに対応させたか）がこじつけでないかを見る。合うところを増やすより、反例・語が同じだけの対応・藁人形の議論を探す。
+6. 日本語版・英語版・プレゼン版・evidence の退避版の間で、数や提唱者が食い違っていないかを見る。
+7. 文章を writing.md と corrections.md の型で見る。代表例を引用付きで数件。
+
+## 書くもの
+R/docs/cs-review/{Dxx}.md を、D01.md と同じ形で書く（冒頭の要約・主張の表・文体・判断が要るもの・手順について分かったこと）。表の列は、場所・主張・根拠の文献・照合の状態・ページ・判定（一致／言い過ぎ／取り違え／帰属違い／付け足し／未判定）・重さ・直し案。照合の状態は sources.md §3 の四つ（本文照合済・要旨照合済・二次資料のみ・未照合）で書く。
+
+## 報告（2000 字まで）
+- 高の指摘を全部と、中の主なもの。それぞれ確かめた度合いを添える。
+- 判断が要るもの。
+- 手順について：かかった時間・迷った所・この雛形で足りなかったこと。
+推測と確かめたことを分けてください。
+```
+
+### 領域ごとの注意
+
+- 数学・物理・複雑系：物理と数学の主張に、教科書・研究の一線・Claude の読み替えのどれかを添える（`sources.md` §6）。数学の記述の正しさは Claude が引き受ける。
+- 経営学・心理学・社会学など、pjdhiro が理論との距離を記録している分野：stance.md §3 の表（期待・信頼・心理的安全性・内発的動機・価値・創造・経営・エフェクチュエーション）と writing.md §7（既存の理論を扱うとき）を先に読む。報告が理論の理想の像を、pjdhiro の見方や5段階と結びつけていないかを見る。
+- 人文系（哲学・宗教学・伝統知・文芸学など）：原典が書籍で、PDF が無いものが多い。「精読ノートのみ」「二次資料のみ」を正直に書き、取得できないことを理由に判定を上げない。東洋の像は、原典の文脈で照合する（writing.md §2-9）。
+
+## 2. 定義と wiki
+
+```
+日本語で作業・報告してください。読むだけの仕事です（書き換え・commit・push をしない）。R は ~/dev/pd/project-design-theory です。
+
+## 背景
+R の cs/（創造とは）は、最近書き直された正本（Love駆動開発の読み物・ks＝欠損駆動思考・as＝意識とは）と、語や定義がずれていると見られています。あなたの仕事は、{見るもの：5段階の定義／隣の概念の定義／wiki の frontmatter など}の整合を点検することです。
+
+## 先に読む
+R/CLAUDE.md、R/docs/cs-review/README.md、R/docs/rules/stance.md（§1、§3 理論との距離の表、§4 語彙）、R/docs/rules/corrections.md（型 A〜S）、R/docs/rules/writing.md。
+
+## 材料
+- cs の定義：R/cs/README.md、R/cs/knowledge/glossary.md・five-stages-guide.md・schema/、R/cs/index.html と R/cs/src/i18n/dict.js、R/cs/llms.txt・llms-full.txt
+- 公開報告のガイド：~/dev/pd/pjdhiro/assets/creation/guides/ja/md/、synthesis/ja/md/、phase8-themes/ja/md/
+- wiki：R/pd/wiki/concepts/・sources/・about.md
+- 正本：Love駆動開発（R/pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md）、R/ks/ と R/as/ の公開ページ
+
+## やること
+{置き場ごとの対照表を作る・正本の文と一字ずつ照らす・数で対応を見る、など}
+
+## 報告（3000 字まで）
+- A. ずれ：高／中／低ごとに、ファイルと行・何がずれているか・正とすべき見込み（正本の文を引用）。
+- B. 機械で検査できること・手作業が要ること・順序。
+- C. pjdhiro に聞かないと決められないこと（stance.md で答えを予想して添える）。
+推測と確かめたことを分けてください。
+```
+
+## 3. 画面
+
+ブラウザは一つなので、同時に一つだけ走らせる。
+
+```
+日本語で作業・報告してください。読むだけの仕事です（書き換え・commit・push をしない）。
+
+## やること
+http://localhost:3001/cs/（{見るページ}）を、PC の幅とスマートフォンの幅（375px）で見てください。止まっていたら launchctl kickstart -k gui/$(id -u)/com.uminomae.project-design-theory で起こす。
+- 文言：R/docs/rules/writing.md §4（演出をしない）・stance.md §2-4・§2-7 で見る。演出の文・言い過ぎ・LLM の記号（Phase など）・読者を分ける入口。
+- 操作：タップで開くか、戻れるか、横スクロールが出ないか、コンソールのエラー。
+- 読みやすさ：背景の上の文字の濃さ、文字の大きさ、最初の画面で何のページか分かるか。
+画面の幅を変えたら、終わる前に元に戻す。
+
+## 報告（2000 字まで）
+指摘ごとに、ページ・幅・どこ・何が問題か。スクリーンショットで見たことと、推測を分ける。
+```
+
+## 4. 画面のコード
+
+```
+日本語で作業・報告してください。読むだけの仕事です（書き換え・commit・push をしない）。R は ~/dev/pd/project-design-theory です。
+
+## やること
+次の画面の指摘について、原因を R/cs/index.html と R/cs/src/ のコードの行で示してください。直し方の案を一つずつ添える（直さない）。
+{画面の役の指摘を貼る}
+
+## 報告（2000 字まで）
+指摘ごとに、原因のファイルと行・直し方の案・直すと影響が出そうな所。コードで確かめたことと推測を分ける。
+```
