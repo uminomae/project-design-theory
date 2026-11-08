@@ -47,11 +47,19 @@
 
 1. このセッションで pjdhiro が示した判断や見方を、`docs/rules/stance.md` に足すか直す。何への答えだったかを添える。
 2. このセッションで Claude が指摘された誤りを、`docs/rules/corrections.md` の型に当てはめる。当てはまる型が無ければ型を足す。同じ誤りを繰り返さないよう、その型の「書く前の確認」を直す。
-3. 足したもの・直したものを pjdhiro に短く伝える。何も無ければ、無いと伝える。
+3. セッションの記録を書く（下の「セッションの記録」）。
+4. 足したもの・直したものを pjdhiro に短く伝える。何も無ければ、無いと伝える。
+
+## セッションの記録
+
+- 本体の checkout の `.cache/session/` に、一つのセッションにつき一つ、`log-YYYYMMDD-<話題>.md` を書く。`.cache/` は git に入れない。worktree の `.cache/` は worktree と一緒に消えるので、worktree で作業したときも本体の側に書く（場所は `git rev-parse --git-common-dir` の一つ上）。
+- 書くこと：見出しに日付・話題・worktree の名前。直したこと、pjdhiro の判断（趣旨と、何への答えか）、残したこと・次に回したこと、commit。
+- 作業を始める前に、その日と前の日の記録を読み、今の状態を確かめる（型 K）。
 
 ## Git
 
 - 作業は `develop` で行い、確かめたら基本的に毎回 `main` に入れて公開する。確かめは手元のサーバーで行う（速いから）。手元のサーバーは一つだけ：本体の checkout（develop）を launchd（`com.uminomae.project-design-theory`）が `scripts/serve.sh` で http://localhost:3001/ に常駐させている。worktree で確かめるときは `.claude/launch.json` の `site`（3010）を使う。git は履歴のためで、編集者は pjdhiro 一人（pjdhiro 2026-11-07）。
 - 公開は GitHub Actions（`.github/workflows/pages.yml`）。出すのはサイトのファイルだけ。
+- サイトのファイルを直したら、commit の前に `bash scripts/check.sh` を走らせる（旧 repo へのリンク・読み物の内部アンカー・as と ks のテスト）。同じものを `.github/workflows/check.yml` が develop と main で走らせる。
 - commit の末尾：`Co-Authored-By: Claude <noreply@anthropic.com>`
 - 初回だけ `git config core.hooksPath .githooks` を実行して、公開前の点検を有効にする。
