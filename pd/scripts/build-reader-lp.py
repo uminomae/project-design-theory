@@ -52,6 +52,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/gravity-well/READER-gravity-well.md",
+        ROOT / "scripts/reader-gravity-well-template.html",
+        ROOT / "reader/gravity-well.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/influences-psychology/READER-influences-psychology.md",
         ROOT / "scripts/reader-influences-psychology-template.html",
         ROOT / "reader/influences-psychology.html",
