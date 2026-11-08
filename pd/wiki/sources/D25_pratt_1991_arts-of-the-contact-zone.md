@@ -53,7 +53,7 @@ review_state: 未レビュー
 - 年: 1991
 - 出典: Profession 91, MLA（後に Ways of Reading, 5th edition, Bedford/St. Martin's, 1999 に収録）
 - access_status: raw-confirmed
-- **オープンアクセス**: [PDF（Texas State University）](https://www.txstate.edu/)
+- **オープンアクセス**: 手元の写しは、テキサス州立大学のサイトに置かれていた *Ways of Reading* 5th ed.（1999）の再録の打ち直しで、*Profession* の頁番号は無い（台帳 D25-S10。前のリンクは大学のトップページを指していたので外した。2026-11-09 #73）
 
 ## ソース参照（GitHub・検証用）
 
