@@ -66,6 +66,11 @@
       "id": "D04",
       "file": "evidence-D04-evolutionary-biology.md",
       "reviewed": "2026-11-09"
+    },
+    {
+      "id": "D05",
+      "file": "evidence-D05-earth-science.md",
+      "reviewed": "2026-11-09"
     }
   ]
 }
