@@ -94,6 +94,7 @@ pjdhiro の repo は、その repo の規約（`develop` で直す・commit の�
 - [ ] 中の検査がスキップしても PASS と数える所を直す。試しの日は「manifest 整合」が、worktree に `knowledge/raw/manifest.md` が無くて中でスキップし、PASS と出た。manifest.md は同じ日に公開され git に入った（aba9785・pjdhiro 2026-11-08）ので、回し直して確かめる。PDF を使う検査は本体の checkout で回す（旧 `cs/docs/quality-management.md` 100 行も同じ）。
 - [ ] 報告の本文の写しを片付ける方針を決める。`cs/knowledge/domains/D*/ja/report.md` に 30 本の写しがあり（旧 cs#121 で「ソース」と決めたもの）、公開版との違いはほぼ SVG の行だけ。ただし D13・D15・D17 の直しは公開版にしか入っておらず、写しは古い。照合の対象は公開版（日本語）にする。
 - [ ] `cs/docs/` の 13 ファイル（2026-11-08 時点）が参照する今は無い `.claude/rules/` を片付ける。旧 repo への参照は、別のセッションが片付け、`scripts/check-old-repo-refs.mjs` で再発を止めた（aed76ee）。
+- [ ] #55 の書誌監査の記録（`cs/knowledge/raw/audit/`。A 軸：305 行のうち STRONG 177・WEAK 85・MISMATCH 39・NOMATCH 4、DOI で直接確かめたのは 25。B 軸：url-verified 180 行のうち 133 が取得でき、40 は出版社側のブロック）は、本体の checkout にだけある（git の外）。機械の点検の DOI 照合は、`cs/scripts/audit-citations.py` などを使い直す。監査の T1（精読済み）は書誌が実在して取れることの確かめで、主張が正しいことの確かめではない。照合の状態の根拠にしない。
 - [ ] 機械でできる点検を一つのスクリプトにまとめる（下の「機械の点検」）。`scripts/check.sh` に入れるかは、点検が安定してから決める。
 - [ ] 主張の一覧表の雛形を作る（下の「記録の形」）。
 
@@ -102,6 +103,7 @@ pjdhiro の repo は、その repo の規約（`develop` で直す・commit の�
 - [ ] 5段階の定義の置き場を一覧にし、食い違いを並べる（試しの一巡で始めた）。
 - [ ] pjdhiro に、正とする定義を決めてもらう。見本を画面で並べて見せる（stance 2-7）。
 - [ ] 決めた定義を一つの表にする（置き場の候補：`cs/knowledge/schema/five-stages.md`）。サイトの文言（`src/i18n/dict.js`・`index.html`）・`llms.txt`・ガイド・wiki は、この表から写す。今は「正本」を名乗るものが四つある：`cs/knowledge/schema/five-stages.md`（2026-07 の追記はここにだけある）、`pjdhiro/assets/creation/kb/`（`cs/knowledge/README.md` は正本がここに移ったと書く）、報告の規則 `cs/transform/domains/reader-rules/reader-rules-creation-report.md` §5 の自前の表（D01 §3 の定義のずれの出どころの見込み）、five-stages-guide。
+- [ ] #50（どんな対立が創造を生むのか）は、対立を波（Stage 2「ゆれ・対立／分離」）に置いている。pjdhiro の言い換え（波＝状況変化、縁＝衝突）とそろえてから、#50 の問いを段 3 で使う。報告の多くも、縁の定義に「対立」を入れながら、当てはめでは対立を波に、縁を接続や選択として読んでいる（D11〜D20 を読んだ所見）。
 - [ ] 報告の冒頭の文責を、`writing.md` §1-1・§1-8 に合わせる。今の日本語版 30 本は、冒頭が「立ち位置明示」で、文責の書き方が無い。§2 に「著者（pjdhiro）自身の精読による検証が完了していない箇所」とあり、著者を pjdhiro としている。英語版で AI に触れるのは 3 本（D17・D22・D23）だけ。一つの高い指摘として、テンプレートで直す。
 - [ ] Love駆動開発の正本（`pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md` の 243 行・396 行）が、cs のトップの文と抱持の旧い定義をそのまま引いている。cs を直すときに一緒に直す。
 - [ ] 隣の概念（抱持・欠損・欠損駆動思考・美駆動思考・Love駆動開発）の cs と wiki の定義を、正本の文に合わせる。wiki の concepts には、旧い定義（「棄却される誤差」）・L1〜L4 の上下・四象限・F/O 軸・4層モデルが残っている。
@@ -133,12 +135,14 @@ pjdhiro の repo は、その repo の規約（`develop` で直す・commit の�
 ### 3. 横断とテーマ
 
 - [ ] 30 領域の一面の表を並べ、対立・衝突・統合・新たな安定のしかたの違いを見る（中心の問い）。今の 5 テーマ（縁の類型・再循環・場の多層性・盲点と反例・閾値）と横断分析は、この並べ方で読み直す。「28/30」「19 ドメイン」のような数は、2 の結果から確かめ直すが、主役にしない。
-- [ ] 反証（`evidence/falsification/`）と盲検の設計（#57）を、2 の結果と並べて読み、どこまで言えるかを書く。
+- [ ] 反証（`cs/evidence/falsification/`）と盲検の結果を、2 の結果と並べて読む。盲検は設計だけでなく 2026-11-03 に実行済み（`cs/evidence/falsification/blind-test-5stage/RESULTS.md`。Claude の 3 モデル・9 run。対照の棄却 35/36、対照に縁が付いた判定 0/36、近い理論にシモンドンとプリゴジンが 9/9、Bohm とは「渦は独立の実体でない」で食い違う、束は手がかりから再構成されない 0/9）。所見の「縁の限定条件 3 つ」「束の根拠」は段 1 の定義の材料にもする。反証のスコア（`robustness-score.md`。縁：方法論の堅牢性 3/10、「26/30 の高該当率はトリビアリティの疑い」）も並べる。ただし盲検も反証も LLM の閉じた輪の中の評価で、Fable 5.1 の本番もその中にある（#57）。人間の読み手（#57 の②・#61）はまだいない。
+- [ ] 反証の theme-07-09 の「秩序解体は射程外」という推奨と、#50 が「硬直・消耗・破壊」を創造でない側に置く仮説は、そのまま採らない。「良いこと以外と衝突するように包摂して進む」（中心の問い）に照らして読み直す（型 C）。
 
 ### 4. wiki との整合
 
 - [ ] wiki の精読ノートの書誌（DOI・帰属）を、原典と Crossref で確かめる。2 で触れたものから。
 - [ ] wiki の frontmatter（`status`・`review_state`・`source` の repo 名）を、今の repo の形に合わせる。repo 名は creation-space 319・project-design 77・kesson-space 15・awareness-space 1 か所。cs・pd・ks・as に置き換えれば、パスは 386 件中 382 件が今もある。`status` は「正典・正準・暫定」が混ざり、「正典」なのに「未レビュー」のものがある。
+- [ ] manifest に行の無い 3 件（D15-S10・D16-S04・D25-S01b）は、#52 で重複として外したものと、pjdhiro の判断待ちのもの。ほかに判断待ちが二つある（Simondon A2 の source_id、D05-S01 Wilson の Phase 3 が citation-only の Dewey & Bird を根拠にしていること）。#52 の記録から片付ける。
 - [ ] 同じ原典の番号（manifest_id）が二枚ある 6 組（D02-S04 ほか）と、manifest に行が無い 3 件（D15-S10・D16-S04・D25-S01b）を、原典で照らし合わせる。
 - [ ] `pd/scripts/wiki-lint.mjs`・`wiki-cross-check.mjs` が、今は無い `~/dev/creation-space` を見ている。直してから回す（2026-08-17 の最後の PASS は当てにならない）。
 - [ ] wiki から GitHub の原典 PDF へのリンク（PDF は git に入れていないので行き先が無い）を外すか、書き方を決める。
@@ -177,7 +181,7 @@ pjdhiro の repo は、その repo の規約（`develop` で直す・commit の�
 
 試しの一巡で見たのは、D01 数学の日本語版の報告と wiki、5段階と隣の概念の定義、トップの画面（PC とスマートフォン幅）、`qc-all.sh` だけ。次のものは見ておらず、手順が合うかも確かめていない。本番で初めて触るときは、まず一つで試してから広げる。
 
-- 段 3 の材料：5 テーマ（`pjdhiro/assets/creation/phase8-themes/`）、横断分析（`synthesis/`）、反証（`cs/evidence/falsification/`）、盲検の設計。
+- 段 3 の材料：5 テーマ（`pjdhiro/assets/creation/phase8-themes/`）、横断分析（`synthesis/`）、反証（`cs/evidence/falsification/`）、盲検の結果（`blind-test-5stage/RESULTS.md`）。
 - cs のほかのページ：`reader/wave-vortex.html`（10 万字ほどの読み物）、`sources.html`、`dashboard.html`。
 - 報告の英語版・プレゼン版・PDF・図（SVG）。D01 では件数の食い違いを見つけたが、英語版の文体や図の中身は見ていない。
 - 人文系の領域（哲学・宗教学・伝統知など）。数学と違って原典が書籍で、取得できないもの（blocked-access）が多い見込み。社会科学の D22 でも、11 理論のうち原典の本文に当たれたのは 3 つだった。照合の周の進め方を変える要るかもしれない。
@@ -248,6 +252,9 @@ pjdhiro の repo は、その repo の規約（`develop` で直す・commit の�
 | 今までの「承認」「pjdhiro 承認」の判定 | 判定としては引き継がない。退避版の evidence にある「承認」は、今の照合の状態の根拠にしない。「pjdhiro 解釈」と明記されたもの（D01 のスピノルの仮説 B など）は、本人の見方の材料として残し、使うときに今の見方と合うかを pjdhiro に見せる | 旧 `reader-rules-creation-report.md` の NL-013（AI 由来の分析は、確認しても AI の分析であることは変わらない）、退避版の README（verified / accepted の正当化に使わない）、`sources.md` §3 |
 | 原典の一覧（`cs/knowledge/raw/manifest.md`）を公開するか | 公開する。2026-11-08 に公開した（aba9785） | pjdhiro 2026-11-08、stance 2-7 |
 | 旧い規則（`cs/transform/`・`cs/docs/`）のどれを使うか | 使う：報告に欠損駆動思考・抱持を持ち込まない、理論の説明のあとに構造の解釈を置く、読んでいない原典にページつきの帰属をしない。使わない：先行研究を「指月的に参照」（S04）、「立ち位置明示・安全弁・温度開示」、照合できなかった主張の「除外」、url-verified を本文確認と同じに扱うこと、別のエンジンの独立レビューや「多段階検証済」を品質の証にすること | 使うものは今の規約と合う（writing §7）。使わないものは stance §3「指月」・型 F・`sources.md` §3・#57 と合わない |
+| LLM どうしの判定（監査の T1・盲検の「合格線」・Accept／CA／Reject・Generator-Evaluator の検出）を、照合の状態の根拠にするか | しない。照合の状態は `sources.md` §3 の四つで、原典の本文を読んだかで決める。分野や理論に合否を付けない | `sources.md` §3、型 L、#57「LLM の閉じた輪」 |
+| citation-only（書誌だけ確かめた文献）を、今の論で参照するか | 参照してよい。照合の状態を「未照合」などと書く。#52 の「一切参照しない」は採らない | `sources.md` §3-3 |
+| 射程を狭める推奨（秩序解体は射程外、硬直・消耗・破壊は創造でない側） | 採らない。良いこと以外との衝突を包んで進むのが芯 | 型 C、pjdhiro 2026-11-08 |
 
 ## 判断が要ること
 
@@ -267,6 +274,7 @@ pjdhiro に聞く。Claude の予想を添える。答えが出たら、ここ�
 2. 報告の本文をどこで直すか。今の pjdhiro の repo（`assets/creation/`。108MB、多くは PDF）で直すか、この repo の `cs/` に移して直すか。手がかり：旧い規則は、md を「API 層」としてパスを頻繁に動かさないと決め（pjdhiro「API のように .md のデータをとりに来る実装を予定」）、PDF は生成物とした。移設の決めは見つからない。cs の中に古い写し（`cs/knowledge/domains/D*/ja/report.md`）もある。予想：md の正本をこの repo の `cs/` に一つにし、PDF と図は pjdhiro の repo に置き（stance 2-8「画像の置き場は別 repo も考える」）、公開の URL は変えない。どちらにしても、写しとの二重を先に片付ける。
 3. 美駆動思考を cs に残すか。今は cs のトップと README にしか出てこず、正本（ks・as・Love駆動開発）に定義が無い。プロジェクトデザイン論のトップ（`pd/index.html`）は pjdhiro の `/thinking-bi/` にリンクしているが、そのページは「作成中」（2026-01-28）。定義を決めた記録は見つからない。予想：置き場所が決まるまで部品として持っておく（stance 2-2）。cs のトップには定義を書かず、名前とリンクだけにする。
 4. `progress_level`・`quality_level` と、トップの「多段階検証済」の表示を、照合し直した結果に合わせて下げてよいか。旧い規則は「逆行は原則禁止」で、誤りを見つけても下げられない。予想：下げる、または表示そのものを外す（stance 2-6 誠実さ、#57「評価は LLM の閉じた輪の中」）。
+5. 関わる Issue をどう扱うか。予想：#51（ソロと Generator-Evaluator の比較）は、LLM どうしの評価を品質の証にする前提なので閉じる。#54（ロードマップ）は役目をこの文書に移して閉じる。#57 の②（人間の読み手）と #61（近い論者に意見をもらう）は、本番のあとに置く。#59（クローラー）・#72 の見張り（独立の追試）は、レビューとは別に続ける。#49（圏論）・#58（近い論との対応表）は段 3 の外側の問いとして、段 3 の表とつなぐだけにする。
 
 ## 関わる Issue
 
