@@ -17,7 +17,7 @@
 
 ## 2. 要旨（読んだ内容に基づく）
 
-Tuckman は 1965 年時点で存在した小集団発達研究 50 篇（therapy group 26、T-group 11、natural/laboratory group 13）を設定別にレビューし、「group structure（集団構造）」と「task activity（課題活動）」という 2 つの realm において、4 段階の発達系列が横断的に同定できることを論じる。各段階は Stage 1: Testing and Dependence / Orientation、Stage 2: Intragroup Conflict / Emotional Response to Task Demands、Stage 3: Development of Group Cohesion / Open Exchange of Relevant Interpretations、Stage 4: Functional Role-Relatedness / Emergence of Solutions と命名される。Tuckman 自身はこの 4 段階を「仮説的整理 (a conceptual statement)」と位置付けており、後年有名になる "forming–storming–norming–performing" のリズミック命名は 1977 年の改訂版（Tuckman & Jensen）で登場する。
+Tuckman は 1965 年時点で存在した小集団発達研究 50 篇（therapy group 26、T-group 11、natural/laboratory group 13）を設定別にレビューし、「group structure（集団構造）」と「task activity（課題活動）」という 2 つの realm において、4 段階の発達系列が横断的に同定できることを論じる。各段階は Stage 1: Testing and Dependence / Orientation、Stage 2: Intragroup Conflict / Emotional Response to Task Demands、Stage 3: Development of Group Cohesion / Open Exchange of Relevant Interpretations、Stage 4: Functional Role-Relatedness / Emergence of Solutions と命名される。Tuckman 自身はこの 4 段階を「仮説的整理 (a conceptual statement)」と位置付けており、"forming–storming–norming–performing" の四語は、1965 年原典の要約（p.396）にも出る（2026-11-08 に原典で確かめた。以前は 1977 年の改訂版で初めて登場すると書いていた）。
 
 ## 3. 主要主張（原文引用付き）
 
@@ -96,7 +96,7 @@ Stage 4 では集団構造が「他者を対象化し役割を柔軟に演じる
 ## 6. 限界・留意事項
 
 - **論文種別**: これは review 論文であり、Tuckman 独自の実証データや新しい理論構築ではない。4 段階は「文献整理のための conceptual vehicle」として提案されており、著者自身もその暫定性を明示する (p.386)
-- **「forming/storming/norming/performing」の語は 1965 年原典にない**: 後年の Tuckman & Jensen (1977) — D22-S09 — で初めて韻を踏んだ名称が与えられる。本論文の命名は "Testing and Dependence"、"Intragroup Conflict"、"Development of Group Cohesion"、"Functional Role-Relatedness"
+- **「forming/storming/norming/performing」の語は 1965 年原典の p.396 にある**（2026-11-08 の照合で直した。以前は「1965 年原典にない」と書いていた）。本文の段階名は本論文の命名は "Testing and Dependence"、"Intragroup Conflict"、"Development of Group Cohesion"、"Functional Role-Relatedness"
 - **創造プロセスとの類比は原典に存在しない**: 著者の問題設定は小集団の社会心理学的発達であり、「創造の位相遷移」ではない。5段階対応は構造類似の判定にすぎず、著者の意図ではない
 - **レビュー対象の偏り**: 50 篇中 26 篇が therapy group であり、集団の目的が「治癒」である設定に重みが置かれている。創造・問題解決を主目的とする集団への一般化には留保が必要
 

@@ -19,7 +19,7 @@
 
 ## 2. 要旨（読んだ内容に基づく）
 
-Tuckman (1965)（→ D22-S08）が 55 篇の文献から帰納した 4 段階モデル（forming–storming–norming–performing）が、その後 10 年間で実証的に検証されたかをレビューした follow-up 論文。Science / Social Science Citation Index で 1965 年論文を引用する 57 篇を収集し、うち実証研究約 22 篇を検討した。結果、モデルを直接検証しようとした研究は Runkel et al. (1971) の 1 篇のみで（しかも観察者バイアスを持つ方法論）、大半は理論的記述か、既存モデルに類似した独自モデルの提示だった。重要な発見は、複数の研究（Lacoursiere 1974、Spitz & Sadock 1973、Mann 1967、Gibbard & Hartman 1973 の life-cycle 概念、Braaten 1975 のレビュー）が、Tuckman が見落とした「終結 (termination/separation)」を有意な最終段階として同定していたことである。これを受け、著者らは 1965 モデルに第 5 段階 **adjourning（解散）** を追加し、モデルを「forming, storming, norming, performing, and adjourning」へと改訂した。今日広く流布する 5 段階命名はこの論文に由来する。
+Tuckman (1965)（→ D22-S08）が 50 篇の文献から帰納した 4 段階モデル（forming–storming–norming–performing）が、その後 10 年間で実証的に検証されたかをレビューした follow-up 論文。Science / Social Science Citation Index で 1965 年論文を引用する 57 篇を収集し、うち実証研究約 22 篇を検討した。結果、モデルを直接検証しようとした研究は Runkel et al. (1971) の 1 篇のみで（しかも観察者バイアスを持つ方法論）、大半は理論的記述か、既存モデルに類似した独自モデルの提示だった。重要な発見は、複数の研究（Lacoursiere 1974、Spitz & Sadock 1973、Mann 1967、Gibbard & Hartman 1973 の life-cycle 概念、Braaten 1975 のレビュー）が、Tuckman が見落とした「終結 (termination/separation)」を有意な最終段階として同定していたことである。これを受け、著者らは 1965 モデルに第 5 段階 **adjourning（解散）** を追加し、モデルを「forming, storming, norming, performing, and adjourning」へと改訂した。今日広く流布する 5 段階命名はこの論文に由来する。
 
 ## 3. 主要主張（原文引用付き）
 
@@ -105,3 +105,9 @@ Zurcher 7 段階 → forming(orientation)/storming(catharsis)/norming(focus,acti
 - **D22-S08** Tuckman (1965) — 本論文が改訂する原型 4 段階モデル。adjourning 追加前の状態
 - cs 5段階 schema: `knowledge/schema/five-stages.md`
 - 領域サマリ: `knowledge/source-notes/D22/D22-summary.md`
+
+
+## 2026-11-08 の照合（#73）
+
+- 1965 年の要旨は「50 articles」（p.384）。以前の「55 篇」を直した。
+- このノートが読んだ OA の写し（faculty.wiu.edu）は 6 頁に打ち直したもので、誌面の頁番号が無い。上の (p.420) などの頁は確かめられていない。照合の記録は `cs/evidence/evidence-D22-business-management.md`。

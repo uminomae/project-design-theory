@@ -1,5 +1,21 @@
 {
   "note": "cs の全体レビュー（#73）で、論ごとに一次情報で確かめ直した分野。cs のトップの「30領域調査報告」は、ここにある分野だけ evidence-Dxx-*.md を先に読む。済んだ分野を一行ずつ足す。",
   "updated": "2026-11-08",
-  "domains": []
+  "domains": [
+    {
+      "id": "D22",
+      "file": "evidence-D22-business-management.md",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "id": "D08",
+      "file": "evidence-D08-neuroscience.md",
+      "reviewed": "2026-11-08"
+    },
+    {
+      "id": "D10",
+      "file": "evidence-D10-clinical-medicine.md",
+      "reviewed": "2026-11-08"
+    }
+  ]
 }
