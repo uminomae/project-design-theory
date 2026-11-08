@@ -76,6 +76,8 @@ export function createNavObjects(scene) {
 
     NAV_ORB_ANGLES.forEach((_angle, index) => {
         const navItem = strings.nav[index];
+        // 2026-11-08：nav が角度の数より少ない（ガイドの玉を外して空にした）ときは、その角度に玉を置かない。
+        if (!navItem) return;
         const group = new THREE.Group();
         const navPosition = getNavOrbWorldPosition(index);
         group.position.set(...navPosition);
