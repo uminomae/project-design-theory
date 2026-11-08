@@ -59,7 +59,7 @@ BTW の original formulation には活動を監視する暗黙の「baby-sitter�
 
 **SOCの定義の再定式化**
 
-> "SOC refers neither to spontaneous or parameter-free criticality, nor to self-tuning. It becomes, rather, a useful concept for describing systems that, in isolation, would manifest a phase transition between active and frozen regimes, and that are in fact driven slowly from outside."
+> "“self-organized criticality” refers neither to spontaneous or parameter-free criticality, nor to self-tuning. It becomes, rather, a useful concept for describing systems that, in isolation, would manifest a phase transition between active and frozen regimes, and that are in fact driven slowly from outside."
 
 ## 創造（creation-space）との関連
 

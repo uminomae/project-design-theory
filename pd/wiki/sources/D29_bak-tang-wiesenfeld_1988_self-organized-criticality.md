@@ -78,7 +78,7 @@ BTW は自身のセルオートマトンを「散逸動力学の Ising 模型」
 - access_status: raw-confirmed
 - **DOI**: [10.1103/PhysRevA.38.364](https://doi.org/10.1103/PhysRevA.38.364)
 - **オープンアクセス**: [PDF](https://psychsafety.com/wp-content/uploads/2025/04/SOC.pdf)
-- **前身論文**: Bak, Tang & Wiesenfeld (1987) "Self-Organized Criticality: An Explanation of 1/f Noise." *Physical Review Letters* 59, 381-384. [DOI: 10.1103/PhysRevLett.59.381](https://doi.org/10.1103/PhysRevLett.59.381)（本論文はその拡張完全版）
+- **前身論文**: Bak, Tang & Wiesenfeld (1987) "Self-organized criticality: An explanation of the 1/f noise." *Physical Review Letters* 59, 381-384. [DOI: 10.1103/PhysRevLett.59.381](https://doi.org/10.1103/PhysRevLett.59.381)（本論文はその拡張完全版）
 
 ## ソース参照（GitHub・検証用）
 

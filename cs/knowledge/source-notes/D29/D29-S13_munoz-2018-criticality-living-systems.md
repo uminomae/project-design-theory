@@ -23,7 +23,7 @@
 
 ### 主張 1: 生物系は臨界点近傍で動作することから機能的利益を引き出しうる
 
-> "A celebrated and controversial hypothesis conjectures that some biological systems —parts, aspects, or groups of them— may extract important functional benefits from operating at the edge of instability, halfway between order and disorder, i.e. in the vicinity of the critical point of a phase transition." (Abstract, p.1)
+> "A celebrated and controversial hypothesis suggests that some biological systems —parts, aspects, or groups of them— may extract important functional benefits from operating at the edge of instability, halfway between order and disorder, i.e. in the vicinity of the critical point of a phase transition." (Abstract, p.1)
 
 > "Criticality has been argued to provide biological systems with an optimal balance between robustness against perturbations and flexibility to adapt to changing conditions, as well as to confer on them optimal computational capabilities, huge dynamical repertoires, unparalleled sensitivity to stimuli, etc." (Abstract, p.1)
 
