@@ -41,6 +41,11 @@
       "id": "D25",
       "file": "evidence-D25-anthropology.md",
       "reviewed": "2026-11-09"
+    },
+    {
+      "id": "D01",
+      "file": "evidence-D01-mathematics.md",
+      "reviewed": "2026-11-09"
     }
   ]
 }
