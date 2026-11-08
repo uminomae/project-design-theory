@@ -6,6 +6,7 @@ pjdhiro の骨格（2026-11-08・#65）：結論は「入力を整える（渦�
 
 - 〔原〕原典・著者の公式の頁で確かめた
 - 〔二〕抄録・出版社の紹介・信頼できる二次資料で確かめた（原典の本文は未照合）
+- 〔抄〕抄録を、論文の書誌データベースで確かめた（本文は未見）
 - 〔記〕Claude の記憶。未照合
 
 ## 1. 視点・次元を増やす（①）
@@ -14,7 +15,7 @@ pjdhiro の骨格（2026-11-08・#65）：結論は「入力を整える（渦�
 
 | 何 | 中身 | 出典 | 度合い |
 |---|---|---|---|
-| 成長率・市場占有率の行列（BCG） | 事業を「市場の魅力（成長率）」と「競争力（相対的な占有率）」の二軸で見る。BCG 自身の振り返りは「単純だが強力な道具」と呼ぶ。一つの数（成長だけ・利益だけ）では見えない、事業の組み合わせの釣り合いが見える。限界も同じ振り返りが書く：占有率は今では業績を強く予測しない、四象限にとどまる期間が半分になった | Henderson (1970) "The Product Portfolio", *BCG Perspectives*／Reeves, Moose & Venema (2014) "BCG Classics Revisited: The Growth Share Matrix", BCG | 〔二〕（1970 年の原文は未見。2014 年の振り返りは本文で確かめた） |
+| 成長率・市場占有率の行列（BCG） | 事業を「市場の魅力（成長率）」と「競争力（相対的な占有率）」の二軸で見る。BCG 自身の振り返りは「単純だが強力な道具」と呼ぶ。一つの数（成長だけ・利益だけ）では見えない、事業の組み合わせの釣り合いが見える。限界も同じ振り返りが書く：占有率は今では業績を強く予測しない、四象限にとどまる期間が半分になった | Henderson (1970) "The Product Portfolio", *BCG Perspectives*／Reeves, Moose & Venema (2014) "BCG Classics Revisited: The Growth Share Matrix", BCG | 〔原〕（1970 年の原文は BCG の公開頁で、2014 年の振り返りは本文で確かめた。四つの名前は cash cows・stars・question marks・pets） |
 | 2×2 で考える | 二つの力が引っ張り合うところ（ジレンマ）を、二軸に置いて両側から見る。著者はこれを「2×2 思考」と呼び、決まりきった考え方の道から抜ける手段とする。55 の行列を集めている。評価は分かれる（strategy+business は「着想は見事だが、作りは期待外れ」） | Lowy & Hood (2004) *The Power of the 2×2 Matrix*, Jossey-Bass | 〔二〕（出版社の紹介と書評） |
 | MECE | 漏れなく、重なりなく分ける。ミント（マッキンゼー）が自分が名付けたと語り、考えはアリストテレスまで遡ると言う | Minto, *The Pyramid Principle*（1987・1996 改訂）／マッキンゼー同窓会の記事「Barbara Minto: MECE. I invented it, so I get to say how to pronounce it」 | 〔二〕 |
 | 日本での紹介 | MECE とロジック・ツリーを日本に広めた本 | 照屋華子・岡田恵子『ロジカル・シンキング』東洋経済新報社（2001） | 〔記〕 |
@@ -25,8 +26,8 @@ pjdhiro の骨格（2026-11-08・#65）：結論は「入力を整える（渦�
 
 | 何 | 中身 | 出典 | 度合い |
 |---|---|---|---|
-| 狐とハリネズミ | 専門家の予測を長く追った研究。一つの大きな考えを何にでも広げる人（ハリネズミ）より、いくつもの見方を使い、反対の結果の言い分も見て、考えを改める人（狐）のほうが、予測が当たった。ただし狐も統計モデルには負ける | Tetlock (2005) *Expert Political Judgment*, Princeton UP | 〔二〕（書評。数値は原典で照合する） |
-| 一人の中の「群衆の知恵」 | 一度見積もったあと、なぜそれが間違っているかを考えて二つ目の見積もりを出し、二つを平均すると、ただ二度見積もるより当たる。反論（White & Antonakis 2013）と再反論がある | Herzog & Hertwig (2009) "The wisdom of many in one mind", *Psychological Science* 20(2):231 | 〔二〕（数値はブログの要約。原典で照合する） |
+| 狐とハリネズミ | 専門家の予測を長く追った研究。一つの大きな考えを何にでも広げる人（ハリネズミ）より、いくつもの見方を使い、反対の結果の言い分も見て、考えを改める人（狐）のほうが、予測が当たった。ただし狐も統計モデルには負ける | Tetlock (2005) *Expert Political Judgment*, Princeton UP | 〔二〕（本は未見） |
+| 一人の中の「群衆の知恵」 | 一度見積もったあと、なぜそれが間違っているかを考えて二つ目の見積もりを出し、二つを平均すると、ただ二度見積もるより当たる。反論（White & Antonakis 2013）と再反論がある | Herzog & Hertwig (2009) "The wisdom of many in one mind", *Psychological Science* 20(2):231 | 〔抄〕（抄録を Europe PMC で確かめた：*Psychological Science* 20(2):231–237。「一つの心が多くの知恵をまねられる」。数値は抄録に無く、ブログの要約の数値は使わない） |
 
 ## 2. 認知しやすいものに惑わされにくくなる（②）
 
@@ -34,8 +35,8 @@ pjdhiro の骨格（2026-11-08・#65）：結論は「入力を整える（渦�
 
 | 何 | 中身 | 出典 | 度合い |
 |---|---|---|---|
-| 置き違えられた具体性の誤り（fallacy of misplaced concreteness） | 抽象を、具体的な現実と取り違える誤り。機械・波・粒子のような心の中の模型を、世界そのものと同じだと思うこと。ホワイトヘッドは抽象を捨てろとは言っていない | Whitehead (1925) *Science and the Modern World* 第3章 | 〔二〕（原文の頁は未照合） |
-| ジングル・ジャングルの誤り | 同じ名前だから同じものだと思う誤り（ジングル・Thorndike 1904）と、名前が違うから別物だと思う誤り（ジャングル・Kelley 1927）。心理学の構成概念で今も問題にされる | Thorndike (1904) *An Introduction to the Theory of Mental and Social Measurements*／Kelley (1927) *Interpretation of Educational Measurements* | 〔二〕 |
+| 置き違えられた具体性の誤り（fallacy of misplaced concreteness） | 抽象を、具体的な現実と取り違える誤り。機械・波・粒子のような心の中の模型を、世界そのものと同じだと思うこと。ホワイトヘッドは抽象を捨てろとは言っていない | Whitehead (1925) *Science and the Modern World* 第3章 | 〔原〕（Project Gutenberg 版の第 3 章「天才の世紀」：「抽象を具体と取り違える、偶然の誤り」。知性がその罠に落ちる必要はない、とも書く） |
+| ジングル・ジャングルの誤り | 同じ名前だから同じものだと思う誤り（ジングル・Thorndike 1904）と、名前が違うから別物だと思う誤り（ジャングル・Kelley 1927）。心理学の構成概念で今も問題にされる | Thorndike (1904) *An Introduction to the Theory of Mental and Social Measurements*／Kelley (1927) *Interpretation of Educational Measurements* | 〔二〕（1904 年の本文は archive.org にあるが、該当の頁は未確認） |
 
 **このページとのつながり（Claude の読み）**：「心の言葉は、どこで誤解されるか」の章（心理的安全性・GRIT・内発的動機 など）は、ジングルの誤り（同じ言葉が現場で別のものになる）の事例集として読める。「渦を渦として扱っていないか」は、置き違えられた具体性の誤りへの問いと同じ形。どちらも、このページの見方が既存の論と同じものを指していることの、外からの手がかりになる。
 
@@ -43,8 +44,8 @@ pjdhiro の骨格（2026-11-08・#65）：結論は「入力を整える（渦�
 
 | 何 | 中身 | 出典 | 度合い |
 |---|---|---|---|
-| 反対を考える | 「公平に、偏らずに」と指示するより、「反対の可能性を考えて」と頼むほうが、証拠の偏った取り込みと、偏った仮説の確かめ方を減らした | Lord, Lepper & Preston (1984) "Considering the opposite: A corrective strategy for social judgment", *JPSP* 47(6):1231 | 〔二〕 |
-| 一度の訓練で減る | ゲームか動画で一度訓練すると、帰属の誤り・アンカリング・代表性・社会的投影などのバイアスが、すぐに中〜大きく減り、2 か月後も残った。教えていない形の問題にも効いた。訓練だけでなく、誘因・情報の見せ方・ナッジと組み合わせるよう勧める | Morewedge, Yoon, Scopelliti, Symborski, Korris & Kassam (2015) "Debiasing decisions", *Policy Insights from the Behavioral and Brain Sciences* 2(1):129 | 〔二〕（抄録と著者版の紹介） |
+| 反対を考える | 「公平に、偏らずに」と指示するより、「反対の可能性を考えて」と頼むほうが、証拠の偏った取り込みと、偏った仮説の確かめ方を減らした | Lord, Lepper & Preston (1984) "Considering the opposite: A corrective strategy for social judgment", *JPSP* 47(6):1231 | 〔抄〕（抄録を Europe PMC で確かめた：*JPSP* 47(6):1231–1243。偏りはフランシス・ベーコンが最初に記した、反対の可能性を考えないことから来る、と書く） |
+| 一度の訓練で減る | ゲームか動画で一度訓練すると、バイアスの盲点・確証バイアス・根本的な帰属の誤り（実験 1）、アンカリング・代表性・社会的投影（実験 2）が、すぐに中〜大きく減り、2 か月後も残った。教えていない形の問題にも効いた。訓練だけでなく、誘因・情報の見せ方・ナッジと組み合わせるよう勧める | Morewedge, Yoon, Scopelliti, Symborski, Korris & Kassam (2015) "Debiasing decisions", *Policy Insights from the Behavioral and Brain Sciences* 2(1):129 | 〔原〕（著者版の本文。実験 1 はバイアスの盲点・確証バイアス・根本的な帰属の誤り、実験 2 はアンカリング・代表性・社会的投影。直後にゲーム ≥ −31.94%・動画 ≥ −18.60%、2 か月後にゲーム ≥ −23.57%・動画 ≥ −19.20%） |
 | 古典的な整理 | バイアスを減らす手立てを、課題を変える・人を訓練する・両方、に分けて整理した章 | Fischhoff (1982) "Debiasing", Kahneman, Slovic & Tversky (eds.) *Judgment under Uncertainty* | 〔記〕 |
 | 内側の見方と外側の見方 | 計画の中から見ると楽観的になる。似た事例の集まりから見ると補正できる | Kahneman & Lovallo (1993) *Management Science* 39(1):17（ページ内で引用済み） | 〔原〕（ページで既に照合） |
 
@@ -52,9 +53,9 @@ pjdhiro の骨格（2026-11-08・#65）：結論は「入力を整える（渦�
 
 | 何 | 中身 | 出典 | 度合い |
 |---|---|---|---|
-| 大きな決定の前の 12 の問い | 提案を持ってくるチームのバイアスを見つけるための点検の問い。手に入っていない情報を考える問い（利用可能性）や、自信過剰を見る問いがある | Kahneman, Lovallo & Sibony (2011) "Before You Make That Big Decision", *HBR* 89(6):50 | 〔二〕（12 の問いの全文は未照合） |
-| 取引は財産に有害 | 6 万 6 千の家計を 1991〜96 年に追った研究。いちばんよく売買した家計の年の運用成績は 11.4%、市場は 17.9%。売買の多さと成績の悪さを、自信過剰で説明する | Barber & Odean (2000) "Trading is hazardous to your wealth", *Journal of Finance* 55(2):773 | 〔二〕（公開版の数値。著者の頁で確かめる） |
-| 格子状の心の模型 | 一つの学問の小さな部屋には、世界の知恵は全部は入っていない。いくつもの分野の模型を格子のように組み合わせて持つ。80〜90 の模型で、知恵の 9 割は運べる | Munger (1994) "A Lesson on Elementary, Worldly Wisdom As It Relates To Investment Management & Business", 南カリフォルニア大学マーシャル経営大学院での講演 | 〔二〕（講演録の複数の転載） |
+| 大きな決定の前の 12 の問い | 提案を持ってくるチームのバイアスを見つけるための点検の問い。手に入っていない情報を考える問い（利用可能性）や、自信過剰を見る問いがある | Kahneman, Lovallo & Sibony (2011) "Before You Make That Big Decision", *HBR* 89(6):50 | 〔二〕（転載の PDF は画像で、12 の問いの本文は読めなかった） |
+| 取引は財産に有害 | 6 万 6 千の家計を 1991〜96 年に追った研究。いちばんよく売買した家計の年の運用成績は 11.4%、市場は 17.9%。売買の多さと成績の悪さを、自信過剰で説明する | Barber & Odean (2000) "Trading is hazardous to your wealth", *Journal of Finance* 55(2):773 | 〔原〕（公開版の本文：*Journal of Finance* 55(2):773。いちばんよく売買した家計 11.4%、市場 17.9%、平均の家計 16.4%、年の回転率 75%。冒頭にグレアムの「投資家の最大の問題、最悪の敵でさえあるのは、おそらく自分自身」を引く） |
+| 格子状の心の模型 | 一つの学問の小さな部屋には、世界の知恵は全部は入っていない。いくつもの分野の模型を格子のように組み合わせて持つ。80〜90 の模型で、知恵の 9 割は運べる | Munger (1994) "A Lesson on Elementary, Worldly Wisdom As It Relates To Investment Management & Business", 南カリフォルニア大学マーシャル経営大学院での講演 | 〔原〕（講演録の転載：「事実が理論の格子の上でつながっていなければ、使える形で持っていない」「世界の知恵は一つの小さな学部には無い」「ハンマーしか持たない人には、どの問題も釘に見える」「80〜90 の大事な模型で、知恵の 9 割は運べる」） |
 | 人の誤判断の心理 | 誤判断を生む心の傾向を並べた講演 | Munger (1995) "The Psychology of Human Misjudgment", ハーバード大学での講演 | 〔記〕 |
 
 **このページとのつながり（Claude の読み）**：マンガーの「格子状の心の模型」は、①（視点を増やす）と②（惑わされにくくなる）を一つの手立てで言っている。いくつもの分野の模型を持つことが、一つの模型（ハンマーを持つと何でも釘に見える）に縛られる誤りを減らす。pjdhiro の「二種類」が、実学では一続きのものとして語られてきた例。
@@ -67,8 +68,8 @@ pjdhiro「分析が鋭くなる。バイアスが減るの2つの他に。……
 
 | 何 | 中身 | 出典 | 度合い |
 |---|---|---|---|
-| 理論の境界条件 | 理論の「誰に、どこで、いつ」を境界条件と呼び、それを探ることが理論を育て、研究の妥当性を上げ、研究と実務の溝を小さくする、とする。境界条件の探り方の道具と、12 の提案を出す | Busse, Kach & Wagner (2017) "Boundary Conditions: What They Are, How to Explore Them, Why We Need Them, and When to Consider Them", *Organizational Research Methods* 20(4):574 | 〔二〕（抄録） |
-| 理論の貢献は「どこで・いつ」まで | 理論の貢献には、誰が・何を・どこで・いつ・なぜ・どのように、の答えが要る。時と文脈の条件が、一般化できる範囲を決める | Whetten (1989) "What constitutes a theoretical contribution?", *Academy of Management Review* 14(4):490 | 〔二〕（抄録と、同じ号の Van de Ven の論説の要約） |
+| 理論の境界条件 | 理論の「誰に、どこで、いつ」を境界条件と呼び、それを探ることが理論を育て、研究の妥当性を上げ、研究と実務の溝を小さくする、とする。境界条件の探り方の道具と、12 の提案を出す | Busse, Kach & Wagner (2017) "Boundary Conditions: What They Are, How to Explore Them, Why We Need Them, and When to Consider Them", *Organizational Research Methods* 20(4):574 | 〔二〕（抄録の要約） |
+| 理論の貢献は「どこで・いつ」まで | 理論の貢献には、誰が・何を・どこで・いつ・なぜ・どのように、の答えが要る。時と文脈の条件が、一般化できる範囲を決める | Whetten (1989) "What constitutes a theoretical contribution?", *Academy of Management Review* 14(4):490 | 〔二〕 |
 | 唯一最善の組織はない | 同じ業界の六つの組織を比べ、業績が良いのは、環境の求めに合わせて分化と統合を両立させた組織だった。組織の正解は環境によって変わる（状況適合理論） | Lawrence & Lorsch (1967) *Organization and Environment*, Harvard Business School | 〔二〕 |
 
 **つながり（Claude の読み）**：経営学の表の「効果的な状況」の列と、心の言葉の表の「効く条件」の行は、境界条件を書く試みそのもの。「善とされたものが条件付きであったことに気づく」（本人）は、境界条件を探ることの、経営の現場での言い方と読める。
@@ -77,8 +78,8 @@ pjdhiro「分析が鋭くなる。バイアスが減るの2つの他に。……
 
 | 何 | 中身 | 出典 | 度合い |
 |---|---|---|---|
-| マクナマラの誤り | 測りやすいものを測る → 測りにくいものを無視するか、適当な数を当てる → 測りにくいものは重要でないと考える → 測りにくいものは存在しないと考える、の四段 | Yankelovich (1971) "Interpreting the New Life Styles", *Sales Management*（1972 年の *Corporate Priorities* とする資料もある） | 〔二〕（初出の年が資料で割れている。原文は未見） |
-| 指標は目標にすると壊れる | 制御のために圧力をかけると、観察された統計の規則性は崩れる（グッドハート）。量的な社会指標を意思決定に使うほど、指標は歪められる（キャンベル）。「測るものが目標になると、良い測り方でなくなる」という広く知られた言い方は、Strathern (1997) によるもの | Goodhart (1975) "Problems of Monetary Management: The U.K. Experience"／Campbell (1979) "Assessing the impact of planned social change", *Evaluation and Program Planning*／Strathern (1997) | 〔二〕（言い回しと年が資料で割れている） |
+| マクナマラの誤り | 測りやすいものを測る → 測りにくいものを無視するか、適当な数を当てる → 測りにくいものは重要でないと考える → 測りにくいものは存在しないと考える、の四段 | Yankelovich (1971) "Interpreting the New Life Styles", *Sales Management*（1972 年の *Corporate Priorities* とする資料もある） | 〔二〕（初出の記事は公開されておらず、原文は照合できない。引くなら「マクナマラの誤りと呼ばれる考え方」として、出典の年が割れていることを書く） |
+| 指標は目標にすると壊れる | 制御のために圧力をかけると、観察された統計の規則性は崩れる（グッドハート）。量的な社会指標を意思決定に使うほど、指標は歪められる（キャンベル）。「測るものが目標になると、良い測り方でなくなる」という広く知られた言い方は、Strathern (1997) によるもの | Goodhart (1975) "Problems of Monetary Management: The U.K. Experience"／Campbell (1979) "Assessing the impact of planned social change", *Evaluation and Program Planning*／Strathern (1997) | 〔原〕（1976 年のダートマス大学の論文の再掲 *JMDE* 7(15) で本文を確かめた：「量的な社会指標を社会の意思決定に使えば使うほど、それは腐敗の圧力を受けやすくなり、見張るはずの社会の過程を歪め腐敗させやすくなる」。1979 年の *Evaluation and Program Planning* 2(1):67 にも載る。グッドハートの原文と Strathern は未照合） |
 | 指標の専制 | 測ることが目的になり、数を操作したり、測りやすいものだけを測ったりする。指標を捨てろとは言わず、経験と判断と組み合わせて使う、とする | Muller (2018) *The Tyranny of Metrics*, Princeton UP | 〔二〕（出版社の紹介と書評） |
 
 **つながり（Claude の読み）**：マクナマラの誤りの四段目「測りにくいものは存在しない」は、ページの「記号の上では 0 に読まれるもの」（虚軸）と同じ場所を指している。信頼の側の価値・価値は形容詞の数ほどの軸、と重なる。指標を捨てない（Muller）は、二元にしない書き方とも合う。
@@ -87,7 +88,7 @@ pjdhiro「分析が鋭くなる。バイアスが減るの2つの他に。……
 
 | 何 | 中身 | 出典 | 度合い |
 |---|---|---|---|
-| 計画された偶発性 | 予定外の出来事を、キャリアの決定から取り除くのでなく、待ち受けて使うものとして扱う。好奇心・粘り・柔軟さ・楽観・冒険の五つを育てる | Mitchell, Levin & Krumboltz (1999) "Planned happenstance: Constructing unexpected career opportunities", *Journal of Counseling & Development* 77:115 | 〔二〕（要約。原典は DOI 10.1002/j.1556-6676.1999.tb02431.x で照合する） |
+| 計画された偶発性 | 予定外の出来事を、キャリアの決定から取り除くのでなく、待ち受けて使うものとして扱う。好奇心・粘り・柔軟さ・楽観・冒険の五つを育てる | Mitchell, Levin & Krumboltz (1999) "Planned happenstance: Constructing unexpected career opportunities", *Journal of Counseling & Development* 77:115 | 〔二〕（題・巻・頁は Semantic Scholar で確かめた。本文と抄録は未見） |
 | 反脆弱 | 揺らぎ・偶然・負荷から得をするもの。頑健（衝撃に耐えて変わらない）や回復力（元に戻る）の先に、負荷で良くなるものがある | Taleb (2012) *Antifragile: Things That Gain from Disorder* | 〔二〕 |
 | 予期しないことに備える組織 | 高信頼性組織の五つの原則：失敗への注意、解釈を単純にしない、現場の動きへの感度、回復力への関与、専門性への敬意 | Weick & Sutcliffe (2001・第 3 版 2015) *Managing the Unexpected* | 〔二〕 |
 | 四象限にとどまる期間が半分に | BCG の振り返りで、事業が一つの象限にとどまる期間が、1992 年の約 4 年から 2012 年の 2 年足らずへ縮んだ | Reeves, Moose & Venema (2014) BCG | 〔二〕（§1 と同じ） |
@@ -112,3 +113,21 @@ pjdhiro「分析が鋭くなる。バイアスが減るの2つの他に。……
 - 日本のコンサルタントの文献で、二軸や行列の意義を語ったもの（照屋・岡田 2001 のほか）。
 - バイアス研究の総説（Larrick 2004 など）。
 - ③〜⑤の原典：Busse ほか（2017）・Whetten（1989）の本文、Yankelovich の初出（1971 か 1972 か）、Goodhart（1975）と Campbell（1979）の原文の言い回し、Mitchell ほか（1999）の本文、Taleb（2012）・Weick & Sutcliffe の該当箇所。
+
+## 5. 原典の照合（2026-11-08）
+
+印を一つ足した：〔抄〕＝抄録を、論文の書誌データベースで確かめた（本文は未見）。
+
+| 照合の結果 | 出典 |
+|---|---|
+| 〔原〕本文で確かめた | Henderson (1970)・Reeves ほか (2014)・Whitehead (1925)・Morewedge ほか (2015)・Barber & Odean (2000)・Munger (1994) の講演録・Campbell (1976/1979) |
+| 〔抄〕抄録で確かめた | Herzog & Hertwig (2009)・Lord, Lepper & Preston (1984) |
+| 本しかなく、出版社の紹介と書評で確かめた | Lowy & Hood (2004)・Minto・Tetlock (2005)・Lawrence & Lorsch (1967)・Muller (2018)・Taleb (2012)・Weick & Sutcliffe |
+| 照合できないもの | Yankelovich（初出の記事が公開されていない）・Goodhart (1975)（1981 年の論集）・Strathern (1997)・Kahneman ほか (2011) の 12 の問い（転載が画像）・Thorndike (1904) の該当の頁・Kelley (1927) |
+
+**直したこと**：
+- Morewedge ほか (2015) のバイアスの並びを、原文どおり実験ごとに分けた（前は「帰属の誤り・アンカリング・代表性・社会的投影」と一続きに書いていた）。
+- Barber & Odean (2000) の回転率は、公開版では 75%（作業論文の 80% と違う）。
+- Herzog & Hertwig (2009) の数値は、抄録に無いので使わない。
+
+**本文での書き方**：〔原〕と〔抄〕のものは出典を付けて書く。本しかないものは、本の主張を一文で紹介する程度にとどめ、「（紹介文と書評で確かめた）」と添える。照合できないものは、本文に書かないか、「〜と呼ばれる考え方」として名前だけを紹介する。
