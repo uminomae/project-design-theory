@@ -4,7 +4,7 @@
 **access_status**: url-verified
 **読解日**: 2026-04-22 | **読解者**: Claude Opus 4.7
 **読解方法**: WebFetch → Read PDF image mode (全 20 ページ)
-**原典ページ数**: 20 pp. (Neuron Vol. 70 No. 2, pp. 200-219) | **読解ページ範囲**: 全文
+**原典ページ数**: 20 pp. (Neuron Vol. 70 No. 2, pp. 200-227) | **読解ページ範囲**: 全文
 
 ---
 
@@ -17,7 +17,7 @@
   - ⁴ Collège de France, Paris
   - ⁵ Institut Pasteur CNRS URA 2182, Paris
 - **タイトル**: Experimental and Theoretical Approaches to Conscious Processing
-- **出典**: *Neuron* 70(2): 200-219 (April 28, 2011)
+- **出典**: *Neuron* 70(2): 200-227 (April 28, 2011)
 - **DOI**: 10.1016/j.neuron.2011.03.018
 - **URL**: https://www.unicog.org/publications/DehaeneChangeux_ReviewConsciousness_Neuron2011.pdf (UNICOG author self-archive)
 - **分類**: Neuron Review

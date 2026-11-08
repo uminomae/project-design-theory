@@ -13,7 +13,7 @@
 - **著者**: Rajesh P. N. Rao, Dana H. Ballard
 - **タイトル**: Predictive coding in the visual cortex: a functional interpretation of some extra-classical receptive-field effects
 - **出典**: Nature Neuroscience, volume 2, no 1, January 1999, pp. 79-87
-- **DOI / URL**: http://neurosci.nature.com
+- **DOI / URL**: 10.1038/4580（2026-11-08 に Crossref で確かめて直した。以前は http://neurosci.nature.com と書いていた）
 
 ## 2. 要旨（読んだ内容に基づく）
 
@@ -41,7 +41,7 @@
 
 ### 主張 4: フィードバックの除去はエンドストッピングを消失させる
 
-> "Disabling top-down feedback eliminated endstopping in the model neuron in a manner qualitatively similar to that observed in the cortical neuron after inactivation of layer 6" (p.83)
+> "Disabling top-down feedback eliminated endstopping in the model neuron in a manner qualitatively similar to that observed in the cortical neuron after inactivation of layer 6" (p.84)
 
 レベル2からのフィードバックを遮断すると、モデルニューロンのエンドストッピングが消失する。これは実際の皮質で第6層を不活性化した場合の実験結果と定性的に一致する。
 

@@ -2,42 +2,386 @@
 file_id: EV-D22
 domain: business-management
 domain_id: D22
-last_updated: 2026-04-07
-entry_count: 0
-origin: "Archived pre-rerun snapshot for cs#207"
-status: "再監査待ち（原典アクセス状態の棚卸し前）"
+title: "経営学：論ごとの照合の記録"
+last_updated: 2026-11-08
+status: "照合中（#73）"
 source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-business-management.md"
-original_access_status: not-yet-reviewed
 ---
 
-# 論拠DB：経営学（Business Management）（再監査待ち）
+# 経営学：論ごとの照合の記録
 
-このファイルは `cs#207` 対応として、2026-04-07 時点の分析本文を archive に退避したうえで、再監査用の stub に差し替えたものです。
+この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。記録の中に pjdhiro の言葉が出てくるときは、Claude の要約を読んだ感想です。
 
-## 現在の扱い
+経営学の論の多くは、組織や集まりが、それまでの安定を崩す出来事にぶつかり、それを取り込んで新しい形に落ち着く過程を書いています。野中らは、暗黙知と形式知、秩序とカオスのような相反する組を挙げ、揺らぎがもたらす「breakdown」と危機感を、知識が生まれる条件に数えています。Tuckman は、小集団が対人の対立を経て規範をつくる順を書き、Gersick は、締切の中間点で古いやり方を捨てる転換を書いています。March は、探索と活用のどちらかに偏ると、未熟な案が散らばるか、最適でない安定に閉じ込められると書いています。Weick の Mann Gulch の分析は、意味と役割が一緒に崩れて統合に至らなかった例と、火で火から逃げるという逆向きの手で生き延びた例を、同じ出来事の中に並べています。一方、デザイン思考とエフェクチュエーションは、衝突をそれほど前に出さずに書いています。
 
-- 原典アクセス状態: evidence 本文としては `not-yet-reviewed`
-- source manifest には D22 first/second batch 10件を反映済み
-- source 内訳は `raw-confirmed` 2 / `blocked-access` 0 / `citation-only` 8
-- [P] 主張の verified / accepted 判定は現時点では再保証しない
-- `knowledge/raw/` の整備と原典アクセス棚卸しが完了するまで、本文の再構成を優先する
+この記録は、創造とはの公開報告「経営学」（2026-03-18 生成。以下、今の報告）を、原典の本文で確かめ直したものです。今の報告は、この記録が済むまでそのまま公開されています。今の報告の誤りは、論ごとの節の「今の報告から直すこと」に書きました。2026-04-07 までのこの記録の本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D22-business-management.md) にあります。退避版は探す手がかりとしてだけ使い、照合の状態の根拠にはしていません。
 
-## 2026-04-07 first/second batch
+5段階（場・波・縁・渦・束）の定義は、まだ決まっていません。この記録では、各論の対立・衝突・統合・新たな安定を、原典に書いてあることとして並べます。それを5段階のどこに当てるかの判定は、定義が決まるまで保留にします。
 
-- raw-confirmed:
-  `Design Thinking Process Guide`, `Akiike & Ichikohji (2021)` は official PDF を `knowledge/raw/` に格納した
-- blocked-access:
-  0件
-- citation-only:
-  残る 8 source は archive refs / ref-check 起点の first-pass source rows
-## History
+照合の状態は四つで書きます。本文照合済（原典の本文を読み、ページを控えた）、要旨照合済（要旨まで）、二次資料のみ（何の二次かを添える）、未照合（記憶。書誌も内容も確かめていない）です。
 
-- スナップショット: [`evidence/archive/pre-rerun-20260407/evidence/evidence-D22-business-management.md`](archive/pre-rerun-20260407/evidence/evidence-D22-business-management.md)
-- 退避日: 2026-04-07
-- 理由: 原典未入手・本文未確認・LLM 補完混入の可能性を切り分けずに維持しないため
+## 一面の表
 
-## 次の作業
+論ごとに、何と何が対立し（対立）、どうぶつかり（衝突）、どう包まれ（統合）、何が残ったか（新たな安定）を一行に書きます。統合に至らなかった形も、同じ表に書きます。ページは各節に控えました。
 
-- D22 の残る citation-only source で official full-text route の有無を順送りで切り分ける
-- institutional/public teaching materials を優先して second pass を継続する
-- 再調査後に、このファイルへ history 参照つきで新しい本文を戻す
+| 論 | 対立 | 衝突 | 統合／新たな安定、または至らずにどう終わったか | 論の微細さ | 照合の状態 |
+|---|---|---|---|---|---|
+| 野中ら：組織的知識創造（1996・2000） | 暗黙知と形式知。秩序とカオス、個と他など、相反して見える組 | 外からの変化や上からの難題（揺らぎ）が入り、ルーチン・習慣・認知の枠組みが「breakdown」し、危機感が生まれる | 対話で概念が生まれ、正当化を経て原型になる。原型は他の部署や階層へ移り、次のサイクルを始める。至らない形として、完全な無秩序に落ちること、集団思考と過去の成功への過剰適応が挙がる | 組織とプロジェクトの単位。数か月から数年 | 本文照合済 |
+| デザイン思考（d.school 2010・Brown 2008） | 利用者の望み・技術の実現性・事業の成り立ち。問題の中の、ときに矛盾する面 | 試作をテストし、早く安く失敗する。問題の枠づけそのものが誤っていたと分かることもある | 二者択一でなく、矛盾する面を見たうえで新しい解をつくる。実装に至る | プロジェクトの単位。週から月 | 本文照合済 |
+| Tuckman（1965）・Tuckman & Jensen（1977） | 集団の中の対人の問題。課題の要求と、それへの情緒的な反発 | 対人の問題をめぐる対立と二極化（storming） | 抵抗が乗り越えられ、まとまりの感覚・新しい基準・新しい役割が生まれる（norming）。役割が柔軟になり課題に力が向く（performing）。1977 年に解散（adjourning）を足した。至らない形として、看護学生の集団では集団内の対立がほとんど見られなかったという報告がある | 小集団。数週から数か月 | 本文照合済（1977 は打ち直しの写し） |
+| Gersick（1988） | 初回の会合で決まった枠組みと、期限・外部の要求 | 暦の中間点で、古い型を捨て、外の相手と関わり直す | 第一局面で揉めたチームほど、中間点の会合が協働の山になり、合意した計画で第二局面の慣性に入る。至らない形として、中間点でも意見が割れたままの一チームは、リーダーが集団を解散し、案を一人で決めた | プロジェクトチーム。数日から数か月 | 本文照合済 |
+| March（1991） | 探索（新しい可能性）と活用（既知の確かさ） | 短期と長期、個人の知と組織の知の利得がぶつかる。組織のコードは、コードから外れた人からしか学べない | 学びの遅い人や人の入れ替わりが多様さを保ち、コードの知が上がる。至らない形は二つ。探索だけだと未熟な案が多すぎて散る。活用だけだと最適でない安定した均衡に閉じ込められる | 組織学習のモデル（シミュレーション） | 本文照合済 |
+| Weick（1993）Mann Gulch | 消防隊の役割の体系と意味の枠組み。その枠に合わない火事の展開 | 意味と、意味を立て直す手段が一緒に崩れる（cosmology episode）。「道具を捨てろ」に従えない | 統合に至らない形として、役割構造が解体し、パニックの中で 13 人が亡くなった。生き延びた形として、隊長は唯一の逃げ道の真ん中に見える場所で火を放ち（escape fire）、その焼け跡に伏せた。二人は小集団を崩さずに尾根の割れ目を抜けた。分かれ目として、即興・頭の中の役割体系・知恵の態度・敬意ある相互作用の四つが挙がる | 十数人の小集団。数十分 | 本文照合済（再録版） |
+| Sarasvathy（2001）エフェクチュエーション | 予測の論理（causation）と制御の論理（effectuation）。ただし著者は、二つが同時に重なって働くと書く | 予期せぬ偶然を活かす。衝突は前には出ていない | 手持ちの手段と、関わる人の約束から、企業や市場がつくられる | 起業家の意思決定。個人から市場まで | 本文照合済（画像の写し） |
+| Scharmer：U 理論（著者側の要約版 2007） | 過去のパターン（downloading）と、出現しつつある未来 | 下る側の内なる敵（判断・冷笑・恐れの声）。底で、要らないものを手放す閾値 | 手放したあとに、来るものを迎え入れる（presencing）。結晶化・試作を経て実践になる。至らない形として、上る側の三つの敵（反射的な行動・行動しない分析・源につながらない話）が挙がる | 個人・チーム・社会。会話から社会変革まで | 本文照合済（要約版のみ。書籍は未照合） |
+| Christensen：破壊的イノベーション | 未照合 | 未照合 | 未照合 | 産業と企業 | 未照合（書誌のみ Crossref） |
+| Senge・Bion：学習する組織と基本想定 | ビジョンと現実（二次資料） | 未照合 | 未照合 | 組織・集団 | 二次資料のみ（Senge）・未照合（Bion） |
+| トヨタ生産方式・リーン | 流れ（ジャスト・イン・タイム）と異常 | 異常が起きたら止まる（自働化） | 毎日の改善 | 工場・現場 | 二次資料のみ（トヨタの公式ページ） |
+| Taleb：反脆弱性 | 未照合 | 未照合 | 未照合 | システム全般 | 未照合 |
+
+ここまでで見えたことを、見立てとして書きます。本文で確かめられた八つの論のうち、六つ（野中・デザイン思考・Tuckman・Gersick・March・Weick）は、安定を崩す出来事や外れたものを過程の中に置き、それとのぶつかりを経て新しい形に至る書き方をしています。統合に至らない形も、四つの論（野中・Gersick・March・Weick）が原典の中に書いています。Gersick の「解散して一人で決めた」、March の「散る」と「閉じ込められる」、Weick の「解体」は、並べ方の三つ（統合・片方の勝利・そのほかの至らない形）のどれに当たるかを見る材料になりそうです。一方、Tuckman の第三段階は調和を重んじて課題の対立を避けると書かれ、エフェクチュエーションは衝突を前に出していません。
+
+## 論ごとの節
+
+### 1. 野中ら：組織的知識創造（5 フェーズ・SECI・ba・創造的カオス）
+
+**要旨**：組織は知識を処理するだけでなく、つくり出す。暗黙知と形式知の変換（共同化・表出化・連結化・内面化、SECI）が渦を巻くように進み、それを実務に近い五つのフェーズとして書いたものがある。知識が生まれる条件として、意図・自律・揺らぎと創造的カオス・冗長性・最小有効多様性を挙げる。2000 年の論文は、知識が共有され生まれる文脈を「ba」と呼ぶ。
+
+**一次情報**：
+
+- Nonaka, I., Umemoto, K. & Senoo, D. (1996). From information processing to knowledge creation: A paradigm shift in business management. *Technology in Society* 18(2), 203–218. DOI 10.1016/0160-791X(96)00001-2。manifest D22-S02。OA の写し http://www.sietmanagement.fr/wp-content/uploads/2016/04/nonaka-1996.pdf 。読んだ頁：pp.205–216。
+- Nonaka, I., Toyama, R. & Konno, N. (2000). SECI, Ba and leadership: a unified model of dynamic knowledge creation. *Long Range Planning* 33(1), 5–34. DOI 10.1016/S0024-6301(99)00115-6。manifest D22-S03。OA の写し https://agileconsortium.pbworks.com/f/Nonaka_etal_2000_SECI.pdf 。読んだ頁：p.7・pp.13–14・pp.26–28。
+- Nonaka & Takeuchi (1995) の書籍（manifest D22-S01）は開けていない。
+- 書誌は二本とも Crossref と PDF の表紙で一致した。
+
+**照合の状態**：本文照合済（1996・2000）。書籍（1995）は未照合。
+
+**原典に書いてあること**：
+
+- 5 フェーズは 1996 年の論文の p.213〜215 にある。「暗黙知の共有」から始まり（p.213）、概念の創出（p.213）、正当化（p.214）、原型（archetype）づくり（p.214）、知識の cross-leveling（p.215）へ進む。p.214 の図 4 の出典は「Nonaka & Takeuchi (1995), p.84」。
+- cross-leveling は、原型になった概念が、階層の上下や部署の境を越えて移り、「thereby starting new cycles of knowledge creation」（p.215）。
+- 揺らぎは「a change that is hard to predict」で、それが入ると、組織の人は「a "breakdown" of routines, habits, or cognitive frameworks」と、続く混乱に向き合い、危機感が生まれる（1996 p.211）。この秩序がカオスから生まれる現象を創造的カオスと呼ぶ（p.212）。
+- 2000 年の論文は、知識は「two seemingly antithetical concepts」（秩序とカオス、暗黙と形式、自己と他者など）を通る渦の中でつくられ、それを導く鍵は「dialectical thinking, which transcends and synthesises such contradictions」と書く（p.7）。
+- 創造的カオスは、リーダーが難しい目標を出して危機感を呼ぶ意図的なカオスで、人はルーチンの崩れを経験する。リーダーは、組織が「complete disorder」に落ちないように導く（2000 pp.26–27）。プリウスの開発では、燃費 50% 改善の案を経営陣が退けて 100% を求め、チームが混乱した末にハイブリッド車を開発した（p.27）。
+- 日本型の知識創造は「group think」と「overadaptation to the past success」に陥りうる（1996 pp.215–216）。
+- ba は「originally proposed by the Japanese philosopher Kitaro Nishida and was further developed by Shimizu」とされ、「a shared context in which knowledge is shared, created and utilised」と定義される（2000 p.14）。1996 年の論文は、共同化の起点を相互作用の「field」と書く（p.205）。
+
+**対立・衝突・統合の読み**：原典は、相反する組（対立）、揺らぎによるルーチンの崩れと危機感（衝突）、弁証法的な総合（統合）、原型と cross-leveling（新たな安定）を、どれも本文で書いている。衝突は過程の外の阻害ではなく、知識創造の条件に数えられている。至らない形も、完全な無秩序と、集団思考・過去の成功への過剰適応として書かれている。ここまでは原典に書いてあることで、これを5段階のどこに当てるかは Claude の読み替えになるので、定義が決まるまで保留する。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 81・85 行「Gourlay（2006）による批判…特に『問題発見』段階の欠落が指摘」 | 付け足し | 高 | Gourlay の要旨（Crossref）にある批判は、四つのモードに証拠が無いこと・暗黙の知を落としていること・知識の定義が主観的なこと。問題発見は出てこない（要旨照合済。2026-11-08 の試しの点検で確かめた） |
+| ja 85 行「5段階の波が SECI の構造的盲点を指している可能性」 | 取り違え | 中 | 野中ら自身が、揺らぎと創造的カオス（1996 pp.211–212、2000 pp.26–27）を知識創造の条件に挙げている。SECI に差異を起こすものの記述が無い、とは言えない |
+| ja 81 行「5つのフェーズとして記述しました（Nonaka & Takeuchi, 1995）」 | 一致（二次経由） | ― | 5 フェーズは 1996 年の論文の pp.213–215 で本文照合済。1995 年の書籍は、その論文の図の出典（p.214）として確かめたまでで、書籍そのものは未照合。試しの点検の記録にあった「5 フェーズは書籍でしか確かめられない」は直す |
+| ja 81・83 行「また『場（Ba）』の概念を導入し」（1995 年の竹内との仕事として） | 未判定 | 中 | ba の定義と、西田・清水への帰属は 2000 年の論文 p.14 で本文照合済。1995 年の書籍に ba があるかは未照合 |
+| ja 85 行 cross-leveling は束の定義と「正確に一致」 | 言い過ぎ | 中 | 「次のサイクルを始める」は原典どおり（1996 p.215）。「正確に一致」は、5段階の定義が決まっていないので言えない |
+| pres 46・64 行「野中・竹内（SECI/Ba）」が 5 フェーズに高整合 | 取り違え | 高 | SECI は四つのモード（1996 p.206 ほか）、5 フェーズは別の枠組み（pp.213–215）。二つを分けて書く |
+
+### 2. デザイン思考（d.school 2010・Brown 2008）
+
+**要旨**：d.school のガイドは、共感・定義・発想・試作・テストの五つのモードを示す。Brown は、デザインの過程を決まった手順でなく三つの空間（inspiration・ideation・implementation）として書き、利用者の望みと技術と事業をつなぐ規律と位置づける。
+
+**一次情報**：
+
+- Hasso Plattner Institute of Design at Stanford (2010). *An Introduction to Design Thinking: Process Guide*. manifest D22-S05。手元の PDF（6 頁）。読んだ頁：pp.1–6。
+- Brown, T. (2008). Design thinking. *Harvard Business Review*, June 2008（抜き刷り R0806E）。manifest D22-S06。手元の PDF。OA の写し https://readings.design/PDF/Tim%20Brown,%20Design%20Thinking.pdf 。読んだ頁：抜き刷りの pp.2–4。
+- Akiike, A. & Ichikohji, T. (2021). What are the requirements for design thinking articles? *Annals of Business Administrative Science* 20(6), 197–209. DOI 10.7880/abas.0210930a。manifest D22-S07。手元の PDF。経営学の雑誌でデザイン思考がどう研究されてきたかのレビューで、要旨は、近年の実証研究が Brown（2009）と Martin（2009）に拠り、利用者中心と実験を論じている、とまとめる（p.197）。5段階との対応には使っていない。
+
+**照合の状態**：本文照合済。
+
+**原典に書いてあること**：
+
+- Brown は、優れたデザイン思考者の特徴に「integrative thinking」を挙げ、二者択一の分析に頼るだけでなく、「the salient—and sometimes contradictory—aspects of a confounding problem」を見て、今ある案を越える新しい解をつくる、と書く（抜き刷り p.3）。
+- Brown は、デザインの過程を「a system of spaces rather than a predefined series of orderly steps」と書き、初めての人には「chaotic」に感じられる、とも書く（p.4）。
+- d.school のガイドは、試作の目的の一つに「To fail quickly and cheaply」を挙げ（p.5）、テストで、問題の枠づけそのものを誤っていたと分かることがある、と書く（p.6）。五つのモードは簡単のため線形に並べたが、いろいろな順で使える（p.6）。
+
+**対立・衝突・統合の読み**：Brown は矛盾する面を見て新しい解をつくることを書き、d.school は失敗とテストでの枠づけの崩れを過程に含めている。衝突は過程の中に置かれているが、どちらの文書も手引きなので、衝突がなぜ欠かせないかまでは論じていない。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 91・93 行 Empathize→Ideate→Define の順で対応させ、「これ自体が『手順ではなく構造的対応』であることの証拠になりえます」 | 取り違え | 中 | ガイドは定義から発想へ移る順で書く（p.3）。並べ替えて合わせたことを証拠に数えると、何でも合うことになる。合わないところとして書く |
+| ja 59・89 行 提唱者「d.school / Brown（2008）」の「5モード」 | 帰属違い | 中 | Brown 2008 は五つのモードでなく三つの空間（p.4）。五つのモードは d.school |
+| ja 89 行「公式には…非線形・反復的なプロセスであると明言」 | 一致 | 低 | ガイド p.6 とほぼ一致 |
+
+### 3. Tuckman（1965）・Tuckman & Jensen（1977）：小集団の発達
+
+**要旨**：Tuckman（1965）は、小集団の発達を扱った 50 の論文を整理し、forming・storming・norming・performing の四つの段階にまとめた。Tuckman & Jensen（1977）は、その後 10 年の研究を見直し、第五の段階 adjourning を足した。
+
+**一次情報**：
+
+- Tuckman, B. W. (1965). Developmental sequence in small groups. *Psychological Bulletin* 63(6), 384–399. DOI 10.1037/h0022100。manifest D22-S08。OA の写し https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Group_Dynamics/Tuckman_1965_Developmental_sequence_in_small_groups.pdf 。読んだ頁：p.384・p.386・p.396。
+- Tuckman, B. W. & Jensen, M. A. C. (1977). Stages of small-group development revisited. *Group & Organization Studies* 2(4), 419–427. DOI 10.1177/105960117700200404。manifest D22-S09。OA の写し http://faculty.wiu.edu/P-Schlag/articles/Stages_of_Small_Group_Development.pdf 。この写しは 6 頁に打ち直したもので、誌面の頁番号が無い。以下の頁は写しの頁。読んだ頁：写しの pp.1–5。
+- 書誌は二本とも Crossref と PDF の表紙で一致した。
+
+**照合の状態**：本文照合済（1977 は打ち直しの写しで、誌面の頁は確かめられない）。
+
+**原典に書いてあること**：
+
+- 1965 年の要旨は「50 articles」（p.384）。
+- 第二の段階は「conflict and polarization around interpersonal issues」で特徴づけられ、storming と呼べる（p.396）。
+- 「Resistance is overcome in the third stage」で、まとまりの感覚が育ち、新しい基準と役割が生まれる。これが norming（p.396）。第四の段階では、対人の構造が課題の道具になる。これが performing（p.396）。
+- 一方、第三段階の別の記述は「Harmony is of maximum importance, and task conflicts are avoided to insure harmony」（p.386）。
+- 1977 年の見直しでは、22 の研究のうち仮説を直接確かめたのは一つ（Runkel ら 1971）だけ（写し p.1・p.2）。看護学生の集団では集団内の対立がほとんど見られず、storming が「for the most part been eliminated」という報告がある（写し p.3）。モデルは「forming, storming, norming, performing, and adjourning」となった（写し p.5）。
+
+**対立・衝突・統合の読み**：1965 年のモデルは、対人の対立（衝突）を経て抵抗が乗り越えられ、新しい基準が生まれる（統合）と書く。衝突は過程の中にある。ただし、統合の段階は調和を重んじ課題の対立を避けるとも書かれ、1977 年の見直しには、対立の段階が見られない集団の報告がある。adjourning は集団の解散で、何が次に残るかは書かれていない。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 101 行「Norming は、『関係の網が編まれる』という縁の定義と正確に一致」 | 言い過ぎ | 中 | p.386 の「調和を重んじ課題の対立を避ける」と、ja §3 の縁「対立する要素が共存し、どちらにも収束しない」は向きが逆。どの段階に当てるかは定義が決まるまで保留 |
+| ja 101 行 Storming を波に、Norming を縁に当てる | 未判定 | 中 | storming は原典で「対立と二極化」（p.396）。衝突を波に当てて、縁を関係の形成として読んでいる。定義が決まってから見直す |
+| ja 101 行・pres 45・56 行 Adjourning を束として読む | 言い過ぎ | 中 | 原典の adjourning は集団の解散と分離の問題（写し p.5）。ja は「原典を超える解釈が必要」、en は「自然に読める」、pres は「高整合」と、版で強さが違う |
+| ja 101 行「前半4段階の対応は…最も直観的かつ忠実」 | 言い過ぎ | 中 | 1977 年の見直しで、直接の検証は一つだけ、対立の段階が見られない集団の報告がある（写し pp.1–3）。合わないところとして書く |
+| ja 97 行「1977年に Adjourning を追加」の主語が Tuckman 一人 | 帰属違い | 低 | Tuckman & Jensen の共著 |
+| source-notes の S08（1965）・S09（1977）のノート | 取り違え | 高 | 試しの点検で見つけたもの。S08 は四つの語が 1965 年に無いとするが p.396 にある。S09 は「55 篇」とするが要旨は 50（p.384） |
+
+### 4. Gersick（1988）：時間と転換（断続平衡）
+
+**要旨**：八つのチームの全期間を観察し、チームは決まった段階を順に通るのでなく、初回の会合で決まった枠組みのまま慣性で進み、締切までの暦の中間点で急に転換し、その計画で第二の慣性の局面に入る、と書いた。
+
+**一次情報**：Gersick, C. J. G. (1988). Time and transition in work teams: Toward a new model of group development. *Academy of Management Journal* 31(1), 9–41. DOI 10.2307/256496。manifest D22-S10。OA の写し https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Group_Dynamics/Gersick_1988_Time_and_transition.pdf 。読んだ頁：p.9・p.10・p.16・p.18・pp.27–28・p.30。書誌は PDF の表紙と一致した。Crossref の題は「TIME AN TRANSITION」と綴りが崩れているが、同じ論文を指す。
+
+**照合の状態**：本文照合済。
+
+**原典に書いてあること**：
+
+- 研究の出発点は、チームが「a universal series of stages」を少しずつ通って仕事を進めたのではなかった、という予想外の発見（p.9）。Tuckman の型は、理論上どの集団にも同じ系列だった（p.10）。
+- 中間点の転換で、チームは「dropped old patterns, reengaged with outside supervisors, adopted new perspectives」（p.16）。
+- ある一チームには、初めの storming が無かった（p.18）。
+- 第一局面で揉めたチームほど、中間点の会合は協働の山になった。中間点でも意見が割れていた一チームでは、リーダーが集団を解散し、案を一人で選び、仕事を別の人の手に移した（p.28）。このチーム G は、中間点で前触れなく解散した唯一のチームだった（p.27）。
+- 仕事の変わり方は全体として「tended to be dialectical」で、速く始めたチームは中間点で立ち止まって見直し、ゆっくり始めたチームは中間点で動き出した（p.28）。
+- 第二局面では、先に対立なしに成果を出し始めたチームもあれば、転換のあとに内部の対立に戻ったチームもあった（p.30）。
+
+**対立・衝突・統合の読み**：原典は、古い枠組みと期限の圧力のぶつかりを中間点の転換として書き、そこで古い型を捨てて新しい計画に至る形を書いている。転換の時期の分かれ目は暦の中間点という時間の閾値で、内容の熟し方ではない。統合に至らない形として、意見が割れたままのチームが解散し、リーダーが一人で決めた例がある。これは片方の勝利、または分裂の例として並べられそうだ。一方、対立なしに進んだチームもあり、衝突がいつも欠かせない形とは書かれていない。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 101 行「Gersick の punctuated equilibrium は反証ではなく、5段階の非線形性…の経営学的裏付け」 | 取り違え（出典を逆向きに当てている） | 高 | 原典は段階を順に通る型を退けている（p.9・p.10）。反例として書き、5段階のどこが合わないかを書く |
+| ja 97 行 Gersick の要約「締切等の時間認知で駆動される変化パターン」 | 一致 | ― | p.9・p.16 と合う |
+
+### 5. March（1991）：探索と活用
+
+**要旨**：組織学習では、新しい可能性の探索と、既知の確かさの活用のあいだで資源の配分がぶつかる。適応の過程は活用を探索より速く磨くので、短期には効くが長期には自分を損なう。組織のコードと個人が互いに学ぶモデルと、競争のモデルで、その仕組みを見せる。
+
+**一次情報**：March, J. G. (1991). Exploration and exploitation in organizational learning. *Organization Science* 2(1), 71–87. DOI 10.1287/orsc.2.1.71。manifest に行は無い（足す案は下の「手順について」の前に書いた）。授業用の写し（JSTOR から 2015 年に取られたもの）https://arken.nmbu.no/~sigury/AOS_234/320_Pensum/March_91_Exploration%20and%20exploitation.pdf 。読んだ頁：pp.71–76。書誌は Crossref と PDF の表紙で一致した。
+
+**照合の状態**：本文照合済。
+
+**原典に書いてあること**：
+
+- 探索だけに偏る系は「too many undeveloped new ideas and too little distinctive competence」を示し、活用だけに偏る系は「trapped in suboptimal stable equilibria」になりやすい。だから二つの釣り合いを保つことが、生き延びて栄えることの主な要因になる（p.71）。
+- 既存の手順での能力が上がると、ほかの試みが魅力を失う（Levitt and March 1988 を引く。p.72）。劣った活動での能力が十分に高まり、経験の少ない優れた活動を締め出すことがある（p.73）。
+- 探索と活用の兼ね合いは、短期と長期の関心のぶつかり、個人の知の利得と集団の知の利得のぶつかりを含む（p.74）。
+- 組織のコードは、コードから外れた個人からしか学べない。学びの遅い個人は多様さを長く保ち、それがコードの知を上げる探索になる（p.76）。
+
+**対立・衝突・統合の読み**：原典は、探索と活用を、どちらも欠かせないのにぶつかる組として書く。コードから外れた人、つまりコードから見れば誤った人が、コードが学ぶのに欠かせない。統合に至らない形が二つはっきり書かれている。探索に偏ると散らばり、活用に偏ると最適でない安定に閉じ込められる。後者は、統合はしたが固まって動かない「悪い束」の候補になりそうだ。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 121 行「過剰な活用はコンピテンシー・トラップ…を生みます」（March 1991 の要約として） | 帰属違い（語） | 低 | 考え方は p.73 にあるが、March 1991 の本文に「competency trap」の語は無い。語の出所として Levitt & March（1988）が引かれている（p.72）。1988 年の論文は未照合 |
+| ja 121 行「両者のバランスの重要性を論じました」 | 一致 | ― | p.71 |
+| ja 125 行「縁は探索/活用の二分法では明示的に記述されません」 | 未判定 | 中 | コードと、そこから外れた個人とのやりとり（p.76）が、ぶつかりの界面として書かれている。どの段階に当てるかは保留 |
+| ja 121・125 行 O'Reilly & Tushman（2004）、Cohen, March & Olsen（1972）のゴミ箱モデル、「場の最も社会学的に精密な経営学的記述」 | 言い過ぎ・未照合 | 中 | ゴミ箱モデルは Crossref で書誌（ASQ 17(1)）だけ確かめた。本文は読んでいない。「最も」は 30 領域を数えた跡が無い |
+
+### 6. Weick：センスメイキングと Mann Gulch（1993）
+
+**要旨**：1949 年の Mann Gulch の森林火災で、降下した消防隊などのうち 13 人が亡くなった（再録版 p.2）。Weick は、Maclean の記録をもとに、この出来事を、最小限の組織で役割構造と意味づけが互いに崩れていく過程として分析し、崩れにくくする四つの源を挙げた。
+
+**一次情報**：
+
+- Weick, K. E. (1993). The collapse of sensemaking in organizations: The Mann Gulch disaster. *Administrative Science Quarterly* 38(4), 628–652. DOI 10.2307/2393339。manifest に行は無い。ALNAP の再録版 https://alnap.org/documents/12477/The_Collapse_of_Sensemaking_in_Organizations_The_Mann_Gulch.pdf 。この再録版には誌面の頁番号が無いので、以下の頁は再録版の PDF の頁。読んだ頁：pp.1–2・pp.6–12。書誌は Crossref と再録版の冒頭の注で一致した。
+- Weick（1995）の『Sensemaking in Organizations』と、Weick & Sutcliffe（2007）の高信頼性組織の五原則は、開けていない。
+
+**照合の状態**：1993 は本文照合済（再録版）。1995・2007 は未照合。
+
+**原典に書いてあること**：
+
+- 要旨は、この出来事を「interactive disintegration of role structure and sensemaking in a minimal organization」として分析し、崩れを防ぐ源として、即興、頭の中の役割体系（virtual role systems）、知恵の態度、敬意ある相互作用を挙げる（p.1）。
+- cosmology episode は Weick（1985）の語で、人が、世界はもう合理的で秩序立った系ではないと突然深く感じるときに起きる。「both the sense of what is occurring and the means to rebuild that sense collapse together」（p.6）。
+- 隊長 Dodge の「Drop your tools」に、隊員は従えなかった。道具を捨てたら自分たちは何者か、という問いになる（p.7）。隊長は唯一の逃げ道の真ん中に見える場所で火を放った（p.7）。
+- 集団が解体してパニックが起きた。生き延びた三人のうち二人は、二人の小集団を崩さずに、尾根の割れ目を抜けた。Dodge は集団のことを考え続け、自分の放った火の焼け跡に伏せて助かった（p.9・p.2）。
+- escape fire は、火に向き直り、火に穴を開けて通り抜け、火が当たる場所を自分で選ぶ手だった（p.11）。
+- 知恵は、知っていることを確かだと思いすぎず、疑いすぎもしない態度で、過信も過剰な用心も、好奇心と開かれた感知を壊す（p.12）。
+
+**対立・衝突・統合の読み**：原典は、役割と意味の枠組みが、それに合わない火事の展開とぶつかり、どちらも崩れた過程を書いている。多くの隊員にとっては、統合に至らずに解体した例になる。同じ出来事の中で、隊長は、敵である火を逃げる手段として取り込む手で生き延びた。これは「良いこと以外のものを過程の中に取り込む」形の、はっきりした一例として読めそうだ。ただし、隊長の火を、ほかの隊員は意味づけられなかった（p.2・p.7）。分かれ目として原典が挙げるのは、即興・頭の中の役割体系・知恵の態度・敬意ある相互作用の四つ。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 129 行 Cosmology episode を Mann Gulch の 1993 年論文の概念として書く | 帰属違い | 低 | 1993 年の論文は、この語を Weick（1985）から引いている（p.6）。崩れの説明は p.6 と一致 |
+| ja 131〜133 行 センスメイキングを場から束までの五つにすべて当てる | 言い過ぎ | 中 | 本文で読めた 1993 年の論文は、意味が崩れて統合に至らなかった出来事の分析で、生き延びた形と並べて書いている。崩れの側を行として書かずに、うまく進む五段の流れだけを取り出している |
+| ja 133 行「イナクトメントは本調査で最も社会学的に精緻な縁の記述」、HRO の「単純化への抵抗」は「早すぎる渦への凝集を防ぐ安全弁」 | 言い過ぎ・未照合 | 中 | 1995・2007 は未照合。「最も」は数えた跡が無い。「安全弁」は管理の語彙（型 D） |
+
+### 7. Sarasvathy（2001）：エフェクチュエーション
+
+**要旨**：企業や市場のような人工物がどうつくられるかを説明するには、目標を所与として手段を選ぶ causation のほかに、手段を所与として、その手段でつくれる効果の中から選ぶ effectuation が要る。causation は予測の論理、effectuation は制御の論理に立つ。
+
+**一次情報**：Sarasvathy, S. D. (2001). Causation and effectuation: Toward a theoretical shift from economic inevitability to entrepreneurial contingency. *Academy of Management Review* 26(2), 243–263. DOI 10.2307/259121。manifest に行は無い。effectuation.org が置く写し https://effectuation.org/hubfs/Journal%20Articles/2016/06/amr01-inevitability-to-contingency-1.pdf 。この写しは画像だけで文字の層が無いので、頁を画像で読んだ。読んだ頁：p.243・p.245・pp.250–252。書誌は Crossref と表紙で一致した。Sarasvathy（2008）の書籍は開けていない。
+
+**照合の状態**：2001 は本文照合済。2008 は未照合。
+
+**原典に書いてあること**：
+
+- 「Both causation and effectuation are integral parts of human reasoning that can occur simultaneously, overlapping and intertwining over different contexts」。この論文で二つを二分法として並べるのは、説明を分かりやすくするためだと書く（p.245）。
+- effectuation の過程は、人の意思決定では causation より一般的で広く見られるかもしれない、と推測し、たいていの夜、たいていの人は、台所の戸棚にあるもので夕食をつくる、という例を挙げる（p.250）。
+- リスクと不確実性の区別は Knight（1921）に拠る（p.250）。
+- 表 1 は二つの過程を対比し、effectuation の結果を「New markets created through alliances and other cooperative strategies」と書く（p.251）。
+- effectuation の原則は四つ。期待収益でなく許容できる損失、競争分析でなく戦略的な提携、既存の知識の活用でなく偶然の活用、予測でなく予測できない未来の制御（p.252）。
+
+**対立・衝突・統合の読み**：原典は、二つの論理を対立としてでなく、同時に重なって働くものとして書いている。偶然を活かすことは過程に含まれているが、嫌なことや悪いこととぶつかることが欠かせない形にはなっていない。似ているかどうかの芯（対立や衝突が欠かせないこと）から見ると、この論は、ほかの論より弱い一面になりそうだ。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 145 行「5つの原則——Bird-in-hand…Crazy quilt…Lemonade…Pilot-in-the-plane——を提示しました」（Sarasvathy 2001, 2008） | 帰属違い | 高 | 2001 年の論文の原則は四つで、名前も違う（p.252）。五つの名は 2008 年の書籍か後の文献から来たらしいが、未照合。en 155 行も同じ |
+| ja 149 行「因果論理/エフェクチュエーションの対比は、束（固着した構造の運用）と場…の対比と構造的に対応」 | 取り違え（出典と逆向き） | 高 | 原典は、二つが同時に重なって働くと書く（p.245）。二つの論理を5段階の両端に分けて置き、因果論理を「固着」と呼ぶのは、善悪の判断を持ち込んだ二分（型 B） |
+| ja 149 行「渦→束はエフェクチュエーション理論の射程外…因果論理の領域に移行」 | 取り違え | 中 | 原典は、effectuation で企業や新しい市場がつくられると書く（p.243・p.251）。en 157 行は渦と束にも当てていて、版で食い違う |
+| ja 147・149・185 行 Crazy quilt は「縁の三条件を全て満たす最も精密な記述の一つ」、表で「強い対応」 | 言い過ぎ | 中 | 「三条件」は five-stages-guide に無い。Crazy quilt の名は 2001 年の論文に無い |
+| ja 145 行「Knight（1921）の…不確実性を理論的基盤」 | 一致 | ― | p.250 |
+
+### 8. Scharmer：U 理論
+
+**要旨**：社会の場の質を変える過程を U 字で書く。過去のパターンを繰り返すところから、見る・感じ取るを経て底に下り、手放したあとに来るものを迎え入れ（presencing）、結晶化・試作・実践へ上る。
+
+**一次情報**：Scharmer, C. O. (2007). *Addressing the Blind Spot of Our Time: An executive summary of the new book by Otto Scharmer, Theory U: Leading from the Future as It Emerges*. Presencing Institute（著者側の要約版。原本は theoryU.com で配布）。読んだのは授業用の写し https://csasupervisors.c1448228.myzen.co.uk/files/uk15/mod1/theory-u-exec-summary.pdf 。読んだ頁：要約版の p.7・pp.11–12・p.18。書籍（2007）は開けていない。
+
+**照合の状態**：要約版は本文照合済。書籍は未照合。
+
+**原典に書いてあること**：
+
+- U の底で、人や集団は「a threshold that requires a "letting go" of everything that is not essential」に来る（p.7）。
+- 下る側の内なる敵は、判断の声（VOJ）・冷笑の声（VOC）・恐れの声（VOF）。上る側の敵は、即興も気づきも無い反射的な行動、行動する意志の無い終わらない省察、源と行動につながらないおしゃべり（p.11）。
+- 図 4 の七つの能力は、holding the space・observing・sensing・presencing・crystallizing・prototyping・performing（p.12）。
+- 著者紹介は、Scharmer が『Presence』（2005）を Peter Senge・Joseph Jaworski・Betty Sue Flowers と共著したと書く（p.18）。
+
+**対立・衝突・統合の読み**：要約版は、過去のパターンと出現しつつある未来の対立、判断・冷笑・恐れとのぶつかり、底の閾値での手放しを書いている。至らない形も上る側の三つの敵として書かれている。ただし、U 理論は実践の手引きとして書かれていて、恐れや冷笑は乗り越える相手として置かれている。それらを取り込んで進むのか、退けて進むのかは、要約版からは読み分けられない。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 161・165 行「シャーマーはセンゲの弟子」 | 未判定 | 中 | 確かめられたのは『Presence』の共著（要約版 p.18）まで。師弟の典拠は退避版の主張だけ。影響関係は共著として書く |
+| ja 161 行 七段階を「Downloading→Seeing→Sensing→Presencing→…」とする | 取り違え（未照合を含む） | 低 | 要約版の七つは holding the space から始まり、downloading は含まない（p.12）。書籍の図は未照合 |
+| ja 161 行「3つの敵」 | 一致 | ― | p.11。上る側の三つの敵は書かれていない |
+| ja 163・165 行 Presencing を場、Seeing/Sensing を波に当てる | 未判定 | 中 | U の左半分を右半分より後の段に置き、163 行の「右半分が場→束と方向が一致」と食い違う。定義が決まってから見直す |
+| ja 165 行「5段階モデルはセンゲからではなく神経科学・精神分析・日本思想から構築された」 | 帰属違い | 高 | 5段階は、体験が先で 30 領域の調査はそのあと（cs のレビューの規約）。モデルの由来に寄りかからずに書く |
+
+### 9. Christensen：破壊的イノベーション
+
+**要旨（今の報告から）**：性能の劣る技術が低価格帯や新市場から入り、既存の市場を置き換える。既存の企業は、今の顧客に応える「正しい」判断のために失敗する。
+
+**一次情報**：本文を開けなかった。試した経路は、Bower & Christensen（1995, HBR）の写し、Christensen & Bower（1996）の写し、Christensen & Rosenbloom（1995）の写し、学術検索。書誌は Crossref で次の二本を確かめた。
+
+- Christensen, C. M. & Bower, J. L. (1996). Customer power, strategic investment, and the failure of leading firms. *Strategic Management Journal* 17(3), 197–218. DOI 10.1002/(SICI)1097-0266(199603)17:3<197::AID-SMJ804>3.0.CO;2-U。
+- Christensen, C. M. & Rosenbloom, R. S. (1995). Explaining the attacker's advantage: Technological paradigms, organizational dynamics, and the value network. *Research Policy* 24(2), 233–257. DOI 10.1016/0048-7333(93)00764-K。
+
+**照合の状態**：未照合（書誌のみ）。書籍（1997）・King & Baatartogtokh（2015）も未照合。
+
+**今の報告から直すこと**：ja 105〜109 行の要約と当てはめは、すべて未照合と書く。ja 107 行の「その内部では破壊的技術が誤差として見えない」は、調べた跡（phase7）の「棄却される誤差」の語から来ていて、欠損の旧い定義を持ち込んでいる（中。試しの点検で見つけたもの）。理論の言葉で書き直す。
+
+### 10. Senge・Bion：学習する組織と基本想定
+
+**一次情報**：Senge（1990）の書籍と、同じ年の論文「The Leader's New Work」（*Sloan Management Review*, Fall 1990, pp.7–23）は開けなかった。コロラド大学の授業用の学習ガイド（https://leeds-faculty.colorado.edu/larsenk/learnorg/senge2.html 。Aldo Santos 作）は、創造的緊張の原則を、今の現実の正確な像が、望む未来の像と同じくらい大事で、その差が変化を進める力になる、とまとめている。Bion（1961）の書籍は開けていない。
+
+**照合の状態**：Senge は二次資料のみ（学習ガイド）。Bion は未照合。
+
+**今の報告から直すこと**：ja 113〜117 行の「差異を検出しそれを反射的に解消せず保持する」「反射的に処理してしまう」は、調べた跡（phase7）が創造的緊張を抱持の旧い定義に結び付けた語で、学習ガイドの要約には無い（中）。Senge の対応段階は ja が場・波・縁、en が「Wave to Bundle」で、版で食い違う（中）。どちらも、二次資料のみ・未照合と書く。
+
+### 11. トヨタ生産方式・リーン・アジャイル
+
+**一次情報**：大野（1978）の書籍と Ries（2011）は開けていない。トヨタの公式ページ「Toyota Production System」（https://global.toyota/en/company/vision-and-philosophy/production-system/ ）は、TPS を自働化とジャスト・イン・タイムの二本柱で書き、異常が起きると設備が止まるか作業者が止め、アンドンが知らせる、と書く。由来は豊田佐吉の自動織機にさかのぼり、ジャスト・イン・タイムは豊田喜一郎が考え、豊田英二の後押しで大野耐一が土台を築いた、と書く。
+
+**照合の状態**：二次資料のみ（トヨタの公式ページ）。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 137 行「大野耐一（1978）は TPS を…二本柱として体系化」 | 帰属違い（二次資料のみ） | 低 | 二本柱は公式ページと一致。公式ページは、佐吉・喜一郎・英二・大野の仕事として書き、大野一人に帰していない |
+| ja 139・195 行「スプリントが2週間…で場→束の全構造を圧縮反復」を「経営学的証拠」とする | 付け足し | 中 | スプリントはスクラムの語で、TPS の語ではない（未照合・記憶）。退避版 413 行では着想として書かれたものが、本文で証拠になった（試しの点検で見つけたもの） |
+
+### 12. Taleb：反脆弱性
+
+**一次情報**：Taleb（2007・2012・2018）の書籍は開けていない。
+
+**照合の状態**：未照合。
+
+**今の報告から直すこと**：ja 153〜157 行は、すべて未照合と書く。ja 157 行の「5段階の『メタ記述』」「場と束の両極を意図的に保持する」は、原典で確かめていない当てはめ。
+
+## 公開報告の点検のまとめ
+
+### 版の間の食い違い
+
+試しの点検（2026-11-08）で見つけたもの：
+
+- 件数：ja の表を数えると強い 4・部分 6・条件付き 1。ja 71 行は確定 4・有力 4・仮説 2・未解決 1（デザイン思考を二度数え、March が抜け、表では「部分的」の Scharmer を「仮説」に）。ja 221 行は 4・4・2。Colophon は 4・5・2。en は「中核」を五つ。pres は Tuckman だけ「高」で Weick は「中」。退避版は 11 件とも Accept。
+- Adjourning の読み：ja「原典を超える解釈が必要」、en「自然に読める」、pres「高整合」。
+
+この記録で新しく見つけたもの：
+
+- 対応段階：エフェクチュエーションは ja が場・波・縁で渦と束は「射程外」、en は五つ全部（en 157 行）。Senge は ja が場・波・縁、en が「Wave to Bundle」。Tuckman は ja が場から渦、en が「Field to Bundle」。March は ja が場・波・渦・束、en が「Field and Bundle」。Weick は ja が五つ全部、en が「Wave to Boundary to Bundle」。
+- 5 フェーズの出典：ja は 1995 年の書籍だけを挙げるが、本文で確かめられるのは 1996 年の論文（pp.213–215）。
+
+### テンプレート由来の表示
+
+「立ち位置明示」（3 行）、「方法論的開示」（28 行）、「Phase 5（論拠監査）」ほか（24 行）、「温度帯の分布」（71 行）、「安全弁」（73 行）、「結びの温度開示」（227 行）、「Colophon generator_model」（232 行）。D01 と同じく、報告のテンプレートが原因で、個別でなくテンプレートで直す。
+
+### 誤りの出どころ
+
+| 誤り | 出どころ |
+|---|---|
+| Gourlay の「問題発見の欠落」 | DR-D22 59 行が名を挙げずに書き、退避版 39 行で Gourlay 2006 に結び付いた |
+| 「センゲの弟子」 | 退避版 567 行の主張（[P]） |
+| 「神経科学・精神分析・日本思想から構築された」 | 退避版 584 行と調べた跡（phase7） |
+| エフェクチュエーションの「5原則」の名 | 退避版 460 行の主張（[P]）。2001 年の論文と照合していない |
+| 「コンピテンシー・トラップ」を March 1991 に帰す | 退避版 294 行の主張（[P]） |
+| スプリントを証拠とする | 退避版 413・426 行の着想（[M]）が本文で証拠になった |
+| 「誤差」「反射的に処理」「保持」 | 調べた跡（phase7）が欠損・抱持の旧い定義と結び付けた語 |
+| 版ごとの件数と対応段階の食い違い | ja・en・pres が同じ報告の訳でなく、別々に生成されたこと |
+| 型 F の表示 | 報告のテンプレート |
+
+### 文体（writing.md・corrections.md の型）
+
+- 型 E と退ける語：「cross-leveling は束の…定義と正確に一致します」（85 行）、「Norming は…縁の定義と正確に一致する記述です」（101 行）、「縁の三条件を全て満たす」（147・149・185 行）、「この二面がどう統合されるか」（213 行）。
+- 型 D（管理の語彙）：「波の制度的増幅装置」「早すぎる渦への凝集を防ぐ安全弁」（133 行）、「遷移阻害メカニズムの体系」「分類枠」（173・179 行）。
+- 型 B：「因果論理/エフェクチュエーションの対比は、束…と場…の対比と構造的に対応」（149 行）、「場は受動的か能動的か」（215 行）。
+- 「30 領域の中でも最も」の言い切り：16・175・195・221 行。30 領域を数えた跡が無い。
+- 段階が進むのを正しい向きとし、止まることを「阻害」とする書き方（173〜179 行）。統合に至らない形を、過程の外の失敗として置いている。この記録では、至らない形も一面の表の行として書いた。
+- 型 J：ダッシュ（——）での挿入が 85・91・97・107・113 行ほか多い。
+
+## 判断が要るもの
+
+1. 本文で確かめられない論（Christensen・Senge と Bion・トヨタ生産方式とリーン・Taleb）を、この分野の論として残すか。予想：残し、照合の状態を書く（本文を読めない出典は、確かめたことまでしか書かない）。流れに沿わないものは外す。Taleb は対立や衝突の書き方を確かめられていないので、外す候補。代わりに、本文で読めた Gersick と Weick（1993）を独立した論として立てた。
+2. エフェクチュエーションを残す書き方。予想：理論の紹介として残し、「強い対応」「最も精密」と、二つの論理を両端に分ける対比を外す。2001 年の原典が二つは同時に重なると書いていることを書く。この理論と pjdhiro の見方との関わりは、本文に書かない。
+3. 野中の「場（Ba）」と5段階の「場」。five-stages-guide は Ba を場の対応概念に挙げていた。答え（pjdhiro 2026-11-08）：野中の場とは違う。発想は量子の場で、素朴な感覚として、環境や状況や世界の安定したイメージを空間的な表現として選んだもの。時間は含まない（時間も入れるなら「時代」）。よって、Ba と5段階の場は語が同じだけで、系譜は別。この記録では対応の根拠に数えず、guide の対応概念の例からも外した。
+4. Tuckman の storming（対立と二極化）を5段階のどこに当てるか。今の報告は波に当てている。5段階を「安定・変化・衝突・統合・新たな安定」と言い換える案では、衝突は縁に当たる。定義が決まるまで保留。
+
+## 新しく見つけた原典（台帳に足す案）
+
+| source_id の案 | 書誌 | 取得先 | 状態の案 |
+|---|---|---|---|
+| D22-S18 | March, J. G. (1991). Exploration and exploitation in organizational learning. *Organization Science* 2(1), 71–87. DOI 10.1287/orsc.2.1.71 | https://arken.nmbu.no/~sigury/AOS_234/320_Pensum/March_91_Exploration%20and%20exploitation.pdf （授業用の写し。JSTOR の表紙つき） | url-verified |
+| D22-S19 | Weick, K. E. (1993). The collapse of sensemaking in organizations: The Mann Gulch disaster. *Administrative Science Quarterly* 38(4), 628–652. DOI 10.2307/2393339 | https://alnap.org/documents/12477/The_Collapse_of_Sensemaking_in_Organizations_The_Mann_Gulch.pdf （再録版。誌面の頁番号なし） | url-verified |
+| D22-S20 | Sarasvathy, S. D. (2001). Causation and effectuation. *Academy of Management Review* 26(2), 243–263. DOI 10.2307/259121 | https://effectuation.org/hubfs/Journal%20Articles/2016/06/amr01-inevitability-to-contingency-1.pdf （画像のみ） | url-verified |
+| D22-S21 | Scharmer, C. O. (2007). *Addressing the Blind Spot of Our Time*（Theory U の要約版）. Presencing Institute | https://csasupervisors.c1448228.myzen.co.uk/files/uk15/mod1/theory-u-exec-summary.pdf （写し。原本は theoryU.com） | url-verified |
+| D22-S22 | Christensen, C. M. & Bower, J. L. (1996). Customer power, strategic investment, and the failure of leading firms. *Strategic Management Journal* 17(3), 197–218 | 本文 OA なし | citation-only |
+| D22-S23 | Christensen, C. M. & Rosenbloom, R. S. (1995). Explaining the attacker's advantage. *Research Policy* 24(2), 233–257. DOI 10.1016/0048-7333(93)00764-K | 本文 OA なし | citation-only |
+| D22-S24 | Cohen, M. D., March, J. G. & Olsen, J. P. (1972). A garbage can model of organizational choice. *Administrative Science Quarterly* 17(1). DOI 10.2307/2392088 | 本文は探していない | citation-only |
+
+## 手順について分かったこと
+
+- manifest にある OA の写しと、新しく探した写しを、作業用の一時置き場に取ってきて読んだ（repo には入れていない）。本文で読めた論は 12 のうち 8。
+- 写しには、誌面の頁番号が無いもの（Tuckman & Jensen 1977 の打ち直し、Weick 1993 の再録）と、文字の層が無いもの（Sarasvathy 2001）があった。頁を誌面の頁で書けるかは、写しごとに確かめる必要がある。精読ノート S09 は、頁番号の無い写しから誌面の頁（pp.420–425）を書いている。
+- 精読ノート S02 は、1996 年の論文の後半（pp.213–216 の 5 フェーズ・創造的カオス・集団思考）を扱っていない。試しの点検は、このノートを根拠に「5 フェーズは書籍でしか確かめられない」と書いたが、原典の本文を開くと、5 フェーズは論文の中にあった。ノートに無いことを、原典に無いことと読まない。
+- 衝突と、統合に至らない形は、今の報告にも精読ノートにもほとんど書かれていなかった。原典を開くと、野中の breakdown、Gersick の解散、March の閉じ込め、Weick の解体のように、はっきり書かれていた。一面の表は、報告やノートからは作れず、原典を読み直す必要がある。
