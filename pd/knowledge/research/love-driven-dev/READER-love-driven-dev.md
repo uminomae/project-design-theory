@@ -654,7 +654,7 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 
 この流れの最初にある期待は、先に向いた感情です。これから起きることを、望む方向で思い描きます。期待には、過去の経験や、確率の見積もりを精確にする働きはありません。働きは、動き出すためのエネルギーです。信頼は、過去から今までの積み重ねの上に立ち、良いことも悪いことも含めて持っています。[人は、生存と信頼の信号で世界を切り取る](#ldd-signals)の章の、信頼の側の信号が積み重なったもの、と読むこともできます。期待は、良い結果だけを見る側に寄りやすい。二つは日常語では混ざりますが、向いている時間と、含んでいる中身が違います。
 
-構想が持つ先の像には、期待が乗っています。構想が人を動かすのは、ここです。像が期待外れになるかどうかは、能力と、心理防衛の強さによります。能力が像に追いつけば、像は現実になります。防衛が強いと、裏切られを認めずに像を保つ（理想化）か、裏切られる手前で動きを止めます。精神分析は、不安から心を守る動きの中に、相手や計画を良い面だけで見る理想化や、現実の代わりに頭の中の像で満たす空想を数えてきました。
+構想が持つ先の像には、期待が乗っています。構想が人を動かすのは、ここです。像が期待外れになるかどうかは、能力と、心理防衛の強さによります。能力が像に追いつけば、像は現実になります。防衛が強いと、裏切られを認めずに像を保つ（理想化）か、裏切られる手前で動きを止めます。精神分析と防衛機制の研究は、不安から心を守る動きの中に、相手や計画を良い面だけで見る理想化（クライン、1946 年）や、現実の代わりに頭の中の像で満たす空想（ヴァイラント、1977 年）を数えてきました。
 
 <strong>pjdhiro の見方：</strong>新田信也は、「期待は悪か」という問いを立てて、答えています。私も経験から同意していて、期待は裏切られてからがキックオフだと思う。そのあとに人は、絶望したり、他責したり、受容したりします。
 
@@ -677,7 +677,7 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 
 <!--REF:心理学-->
 
-出典：pjdhiro「対話: 受容について」（uminomae.github.io/pjdhiro/dialogue-acceptance/）／Kübler-Ross (1969) *On Death and Dying*／新田信也『精神分析統合理論』（ひきこもりからの脱却の五つの順と「期待は悪か」の問いと答えは pjdhiro の読み。著者のサイトの[ダイジェスト版の目次](https://www.seishin-bunseki.jp/category/1935273.html)に、期待（当て）・うぬぼれ・お節介・諦念・ひきこもりの項があることまでは確かめた。五つの順と「期待は悪か」は原典未照合）／期待と信頼の軸＝awareness-space CN-006／Klein (1946) "Notes on some schizoid mechanisms"／Vaillant (1977) *Adaptation to Life*（理想化と空想を防衛に数えることは、どちらも二次資料で確かめた。原典は未照合）／Whitson & Galinsky (2008) *Science* 322:115／Kay, Gaucher, Napier, Callan & Laurin (2008) *JPSP* 95(1):18・追試 Hoogeveen ら (2018) *Comprehensive Results in Social Psychology*／Cooper, Woo & Dunkelberg (1988) *J. Business Venturing* 3(2):97／Kahneman & Lovallo (1993) *Management Science* 39(1):17／Taylor & Brown (1988) *Psychological Bulletin* 103(2):193。
+出典：pjdhiro「対話: 受容について」（uminomae.github.io/pjdhiro/dialogue-acceptance/）／Kübler-Ross (1969) *On Death and Dying*／新田信也『精神分析統合理論』（ひきこもりからの脱却の五つの順と「期待は悪か」の問いと答えは、pjdhiro が読んだ本の中にあったもの。Claude は本文を見ていない。著者のサイトの[ダイジェスト版の目次](https://www.seishin-bunseki.jp/category/1935273.html)に、期待（当て）・うぬぼれ・お節介・諦念・ひきこもりの項があることは確かめた）／期待と信頼の軸＝awareness-space CN-006／Klein (1946) "Notes on some schizoid mechanisms"／Vaillant (1977) *Adaptation to Life*（クラインが理想化を、ヴァイラントが空想を防衛に数えることは、どちらも二次資料で確かめた。原典は未照合）／Whitson & Galinsky (2008) *Science* 322:115／Kay, Gaucher, Napier, Callan & Laurin (2008) *JPSP* 95(1):18・追試 Hoogeveen ら (2018) *Comprehensive Results in Social Psychology*／Cooper, Woo & Dunkelberg (1988) *J. Business Venturing* 3(2):97／Kahneman & Lovallo (1993) *Management Science* 39(1):17／Taylor & Brown (1988) *Psychological Bulletin* 103(2):193。
 
 </details>
 
@@ -756,7 +756,7 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 
 <div class="tablefit cols-2">
 
-| 定義 | 答えの出ない事態の中に留まる力（詩人キーツの手紙の言葉、1817 年。精神分析家ビオンが 1970 年に取り上げた） |
+| 定義 | 答えの出ない事態の中に留まる力（詩人キーツの手紙の言葉、1817 年） |
 |---|---|
 | よくある誤解 | 我慢する力。決めない優柔不断。鍛える能力 |
 | Love駆動開発の視点で見た解釈 | 「信号と考えがずれると、欠けを感じる」の章の、違和感をすぐに解消せずに抱えておく態度（抱持）と、近いところを指しているように見える。能力と呼ぶと個人の資質の量の話に戻る。見えない先を抱えていられるかどうかは、そのとき湧いている信号によって変わる。脅威と感じているほど、早く埋めたくなる。GRIT の項の pjdhiro の見方（忍耐は諦念と受容）とも重なる |
@@ -790,7 +790,7 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 
 <!--REF:心理学-->
 
-出典：[Edmondson (1999)](https://doi.org/10.2307/2666999) *Administrative Science Quarterly* 44(2):350／[Schein (1995)](https://hdl.handle.net/1721.1/2576) MIT Sloan Working Paper 3821／[Edmondson & Lei (2014)](https://doi.org/10.1146/annurev-orgpsych-031413-091305) *Annual Review of Organizational Psychology and Organizational Behavior* 1:23／[Eldor, Hodor & Cappelli (2023)](https://doi.org/10.1016/j.obhdp.2023.104255) *Organizational Behavior and Human Decision Processes* 177:104255／[Duckworth, Peterson, Matthews & Kelly (2007)](https://doi.org/10.1037/0022-3514.92.6.1087) *Journal of Personality and Social Psychology* 92(6):1087／[Credé, Tynan & Harms (2017)](https://doi.org/10.1037/pspp0000102) *Journal of Personality and Social Psychology* 113(3):492／[Luthar, Cicchetti & Becker (2000)](https://doi.org/10.1111/1467-8624.00164) *Child Development* 71(3):543／[Masten (2001)](https://doi.org/10.1037/0003-066X.56.3.227) *American Psychologist* 56(3):227／[Ryan & Deci (2000)](https://doi.org/10.1037/0003-066X.55.1.68) *American Psychologist* 55(1):68／[Keats, letter to George and Tom Keats (1817 年 12 月)](https://keatslettersproject.com/letters/negcapletter/)／[Bion (1970) *Attention and Interpretation*](https://www.routledge.com/Attention-and-Interpretation-A-scientific-approach-to-insight-in-psycho-analysis-and-groups/Bion/p/book/9780415846158)／[Bateson, Jackson, Haley & Weakland (1956)](https://doi.org/10.1002/bs.3830010402) *Behavioral Science* 1(4):251／[Thomas & Kilmann (1974) *Thomas-Kilmann Conflict Mode Instrument*](https://kilmanndiagnostics.com/assessments/)。ルーサーほかとマステンは本文で確かめました（ルーサーほか p.543、マステン pp.227・234）。ダックワースほか・クレデほか・エルドアほかは抄録で、ビオンがキーツの言葉を取り上げたことと、トーマスとキルマンの年は二次資料で確かめたもので、本文は未照合です。よくある誤解の例は、出典のない見聞です。
+出典：[Edmondson (1999)](https://doi.org/10.2307/2666999) *Administrative Science Quarterly* 44(2):350／[Schein (1995)](https://hdl.handle.net/1721.1/2576) MIT Sloan Working Paper 3821／[Edmondson & Lei (2014)](https://doi.org/10.1146/annurev-orgpsych-031413-091305) *Annual Review of Organizational Psychology and Organizational Behavior* 1:23／[Eldor, Hodor & Cappelli (2023)](https://doi.org/10.1016/j.obhdp.2023.104255) *Organizational Behavior and Human Decision Processes* 177:104255／[Duckworth, Peterson, Matthews & Kelly (2007)](https://doi.org/10.1037/0022-3514.92.6.1087) *Journal of Personality and Social Psychology* 92(6):1087／[Credé, Tynan & Harms (2017)](https://doi.org/10.1037/pspp0000102) *Journal of Personality and Social Psychology* 113(3):492／[Luthar, Cicchetti & Becker (2000)](https://doi.org/10.1111/1467-8624.00164) *Child Development* 71(3):543／[Masten (2001)](https://doi.org/10.1037/0003-066X.56.3.227) *American Psychologist* 56(3):227／[Ryan & Deci (2000)](https://doi.org/10.1037/0003-066X.55.1.68) *American Psychologist* 55(1):68／[Keats, letter to George and Tom Keats (1817 年 12 月)](https://keatslettersproject.com/letters/negcapletter/)／[Bateson, Jackson, Haley & Weakland (1956)](https://doi.org/10.1002/bs.3830010402) *Behavioral Science* 1(4):251／[Thomas & Kilmann (1974) *Thomas-Kilmann Conflict Mode Instrument*](https://kilmanndiagnostics.com/assessments/)。ルーサーほかとマステンは本文で確かめました（ルーサーほか p.543、マステン pp.227・234）。ダックワースほか・クレデほか・エルドアほかは抄録で、トーマスとキルマンの年は二次資料で確かめたもので、本文は未照合です。よくある誤解の例は、出典のない見聞です。
 
 </details>
 
