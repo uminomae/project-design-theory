@@ -51,8 +51,11 @@
 
 ## Git
 
-- 作業は `develop` で行い、確かめたら基本的に毎回 `main` に入れて公開する。確かめは手元のサーバーで行う（速いから）。手元のサーバーは一つだけ：本体の checkout（develop）を launchd（`com.uminomae.project-design-theory`）が `scripts/serve.sh` で http://localhost:3001/ に常駐させている。worktree で確かめるときは `.claude/launch.json` の `site`（3010）を使う。git は履歴のためで、編集者は pjdhiro 一人（pjdhiro 2026-11-07）。
-- 修正したら、そのつど `develop` に入れる（worktree で作業したときも、本体の checkout の develop に取り込む）。pjdhiro の確かめはブラウザが基本で、速さのために手元の http://localhost:3001/ で見る。3001 はいつでも見られる状態にしておく：取り込んだら 3001 で開いて確かめ、止まっていたら `launchctl kickstart -k gui/$(id -u)/com.uminomae.project-design-theory` で起こす。`main` に入れるのは、pjdhiro が確かめてから（pjdhiro 2026-11-08）。
+この repo は、複数の人がプログラムを開発するための git の使い方をしない。自然言語の文章を、LLM のために管理している個人のプロジェクトで、git は履歴のため。編集者は pjdhiro 一人（pjdhiro 2026-11-07・2026-11-08「何度も言ってることなのでルールに入れて」）。
+
+- **ブランチ・worktree・マージ・プルリクエストは使わない。** 本体の checkout（`~/dev/pd/project-design-theory`）の `develop` で、直接編集して commit する。セッションが worktree で始まったときも、編集は本体の checkout で行う。
+- **確かめは、手元のサーバーをブラウザで見るのが基本。** 最速で目視できるから使っている。本体の checkout（develop）を launchd（`com.uminomae.project-design-theory`）が `scripts/serve.sh` で http://localhost:3001/ に常駐させている。直したらすぐ 3001 で見られる状態にしておく：直したら 3001 で開いて確かめ、止まっていたら `launchctl kickstart -k gui/$(id -u)/com.uminomae.project-design-theory` で起こす。
+- **公開は、`develop` を `main` へ送るだけ**（`git push origin develop:main`）。話の流れで確かめが済んでいれば、いちいち聞かずに送る。
 - 公開は GitHub Actions（`.github/workflows/pages.yml`）。出すのはサイトのファイルだけ。
 - commit の末尾：`Co-Authored-By: Claude <noreply@anthropic.com>`
 - 初回だけ `git config core.hooksPath .githooks` を実行して、公開前の点検を有効にする。
