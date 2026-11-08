@@ -55,6 +55,15 @@ body.reader-flow .reader-lead__label {
     color: var(--gold);
 }
 
+/* 冒頭の問いの一行目（pjdhiro 2026-11-09「大きくして」）：段落の頭に一行で大きく置く */
+body.reader-flow .reader-lead__question {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 1.35rem;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
 /* 草稿バナー（cs draft-banner 型） */
 body.reader-flow .draft-banner {
     background: var(--glass-bg-soft);
