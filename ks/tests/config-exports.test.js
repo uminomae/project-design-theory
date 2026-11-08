@@ -65,7 +65,9 @@ const threeStubModule = new vm.SourceTextModule(
     }
 );
 
-async function loadModuleFromFile(filePath) {
+// 作るだけで link しない。依存は、入口の link(linker) が辿って link する。
+// 依存の側で link すると、循環する import が Node 25 で ERR_VM_MODULE_LINK_FAILURE になる。
+function loadModuleFromFile(filePath) {
     const normalizedPath = resolve(filePath);
     if (moduleCache.has(normalizedPath)) {
         return moduleCache.get(normalizedPath);
@@ -81,7 +83,6 @@ async function loadModuleFromFile(filePath) {
     });
 
     moduleCache.set(normalizedPath, module);
-    await module.link(linker);
     return module;
 }
 
@@ -106,7 +107,8 @@ async function linker(specifier, referencingModule) {
 
 section('2. re-export チェーンの実行検証');
 
-const entryModule = await loadModuleFromFile(ENTRY_PATH);
+const entryModule = loadModuleFromFile(ENTRY_PATH);
+await entryModule.link(linker);
 await threeStubModule.evaluate();
 await entryModule.evaluate();
 
