@@ -775,9 +775,7 @@ pjdhiro は、Love駆動開発を、入力と出力を持つ仕組みの図と�
 
 愛着の研究は、人が心の中に、頼れる相手の像を持っていると見てきました。脅威を感じたとき、人は目の前にいない相手の像に、意識の手前で手を伸ばしています。その像を思い浮かべるだけでも、少なくとも一時、安心は湧きます。見えない相手でも、心の中の像が安心をもたらすことは、ここまで実験で示されています。
 
-ただし、測られているのは、名指せる相手の像の効果です。臍の緒の像のような、誰とも名指せない相手とのつながりや、その先が宇宙とつながっているような安定は、まだ測られていません。
-
-🚧 名指せない相手とのつながりの安定を測った研究は、まだ見つけていません。見つかれば書き足します。（探索：[#85](https://github.com/uminomae/project-design-theory/issues/85)）
+ただし、測られているのは、名指せる相手の像の効果です。名を当てない相手に近いところまで測った実験もあります。雄大な自然の映像を見ているあいだ、見えない存在を感じた強さを刻々と記録させると、その感覚は始まりから終わりまで続き、見たあとには、神や仏のような働き手より、自然を包む空気のようなもの、として感じられていました。意識に上らない速さで、聖なるものを表す語を見せると、神を信じる人では、誤りをしたときの脳の反応が小さくなりました。どちらも、相手は見えず、名も当てていません。けれども、前の実験の感覚は大きな景色を見せて起こしたもので、安定そのものは測っておらず、後の実験の効果は、本人がすでに持つ信仰の中でだけ起きています。臍の緒の像のように、景色も教えも無いところで湧く、名指せない相手とのつながりの安定は、これらの実験の外にあります。
 
 <details><summary>詳しく — 見えない相手の像が安心をもたらすことを測った実験</summary>
 
@@ -786,6 +784,22 @@ Mikulincer、Gillath、Shaver（2002 年）は、意識に上らない速さで�
 <!--REF:心理学-->
 
 出典：Mikulincer, Gillath & Shaver (2002) "Activation of the attachment system in adulthood: Threat-related primes increase the accessibility of mental representations of attachment figures", *Journal of Personality and Social Psychology* 83(4):881／Shaver & Mikulincer (2008) "Augmenting the sense of security in romantic, leader–follower, therapeutic, and group relationships", 第 4 章 pp.55–（どちらも著者のサイトの PDF で本文を照合した。2008 年の章を収めた本の書誌は、PDF からは確かめていない）。
+
+</details>
+
+<details><summary>詳しく — 名を当てない相手に近いところまで測った実験</summary>
+
+Takano と Nomura（2023 年）は、大学生 77 人に、雄大な自然の映像、おもしろい動物の映像、公園を歩く映像を 2 分ずつ見せ、見ているあいだに「見えない存在」を感じたらジョイスティックを倒させ、同時に皮膚の電気反応と瞳孔の大きさを測りました。見えない存在は、自分より大きく、広大で、超自然のもので、その場に行けば感じる風や匂いとは別のもの、と前もって説明しています。雄大な映像では、この感覚は始まって 10 秒ほどで上がり、終わりまで保たれました。見たあとの評定では、その存在は「神や仏のような、人を超えた働き手」より、「実体ではなく、自然を包む空気のようなもの」として感じられていました。皮膚の電気反応は、雄大な映像で多く急に起きる一方、元に戻るまでの時間は最も短く、著者はこれを静かな心の表れかもしれないと読んでいます。ただし、安定（恒常性）そのものは測っていない、と著者自身が書いています。感覚の枠を実験者が言葉で与えていることも、名を当てずに湧く臍の緒の像との違いです。
+
+Inzlicht と Tullett（2010 年）は、文を並べ替える課題の中に、気づかれない形で spirit・divine・sacred などの語を入れ、そのあとの課題で誤りをしたときの脳波の成分（誤り関連陰性電位）を測りました。神を信じる人ではこの反応が小さくなり、信じない人では逆に大きくなりました。相手を見せず、名も当てず、本人も気づいていないのに、脳の側の反応が変わった実験です。ただし、効いたのは、本人がすでに持つ信仰の体系の中でだけです。
+
+Zilcha-Mano、Mikulincer、Shaver（2012 年）は、犬か猫の飼い主に難しい課題をさせ、ペットが部屋にいる、部屋にいないが思い浮かべる、思い浮かべない、の三つの条件で血圧を比べました。部屋にいなくても、思い浮かべるだけで、課題のあいだの血圧の上がりは、いるときと同じくらい抑えられました。見えない相手でも体の反応が変わることを示していますが、相手は自分のペットで、名指せる、日々の応答で確かめてきた相手です。Mikulincer と Shaver（2020 年）の総説は、神・仏陀・聖母のような象徴的な人物も、安全な避難所と安全基地になりうる、と書いています。ただし、不安定な人にとって、その人物は本人の関係の型の映しにすぎず、応答で型を覆してくれる相手ではない、とも書いています。
+
+瞑想の研究では、自分と世界の境がうすれる状態を熟練者に起こさせ、脳の活動と一人称の報告を突き合わせたものがあります（Dor-Ziderman ら 2013 年）。報告には、「経験はあったが、宛先が無く、中心や主体に結びついていなかった」「経験と存在の中で休んでいる。楽で心地よい」がありました。ただし、測られたのは境が消える方向で、区別が残ったまま見えない先へつながる、という像の側ではありません。
+
+<!--REF:心理学-->
+
+出典：Takano & Nomura (2023) "A closer look at the time course of bodily responses to awe experiences", *Scientific Reports* 13:22506（オープンアクセスの本文を照合。方法と評定の項目 p.3、結果 pp.4–5、考察 p.7）／Inzlicht & Tullett (2010) "Reflecting on God: Religious primes can reduce neurophysiological response to errors", *Psychological Science* 21(8):1184（著者のサイトの PDF で本文を照合。要旨 p.1184、実験 2 pp.1186–1187）／Zilcha-Mano, Mikulincer & Shaver (2012) "Pets as safe havens and secure bases: The moderating role of pet attachment orientations", *Journal of Research in Personality* 46(5):571（著者の大学の研究室のサイトの PDF で本文を照合。条件 p.573、結果 p.577）／Mikulincer & Shaver (2020) "Enhancing the 'Broaden and Build' cycle of attachment security in adulthood: From the laboratory to relational contexts and societal systems", *International Journal of Environmental Research and Public Health* 17(6):2054（PMC の本文を照合。第 11 節）／Dor-Ziderman, Berkovich-Ohana, Glicksohn & Goldstein (2013) "Mindfulness-induced selflessness: A MEG neurophenomenological study", *Frontiers in Human Neuroscience* 7:582（オープンアクセスの本文を照合。教示 p.4、参加者の記述 p.6）。
 
 </details>
 
