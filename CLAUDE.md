@@ -51,7 +51,7 @@
 
 ## Git
 
-- 作業は `develop` で行い、確かめたら基本的に毎回 `main` に入れて公開する。確かめは手元のサーバーで行う（速いから）。git は履歴のためで、編集者は pjdhiro 一人（pjdhiro 2026-11-07）。
+- 作業は `develop` で行い、確かめたら基本的に毎回 `main` に入れて公開する。確かめは手元のサーバーで行う（速いから）。手元のサーバーは一つだけ：本体の checkout（develop）を launchd（`com.uminomae.project-design-theory`）が `scripts/serve.sh` で http://localhost:3001/ に常駐させている。worktree で確かめるときは `.claude/launch.json` の `site`（3010）を使う。git は履歴のためで、編集者は pjdhiro 一人（pjdhiro 2026-11-07）。
 - 公開は GitHub Actions（`.github/workflows/pages.yml`）。出すのはサイトのファイルだけ。
 - commit の末尾：`Co-Authored-By: Claude <noreply@anthropic.com>`
 - 初回だけ `git config core.hooksPath .githooks` を実行して、公開前の点検を有効にする。
