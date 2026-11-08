@@ -23,7 +23,7 @@ ocr_verified: true
 
 H. Henning Winter と Francois Chambon が 1986 年に Journal of Rheology 30(2) に発表した論文（PDMS 系を用いた実験報告）。架橋反応によってポリマーがゲル化する瞬間（ゲル点 GP: gel point）において、**応力緩和モジュラス G(t) がべき乗則 G(t) = S·t^(-n)（n = 1/2）** に従うことを実験と理論の両面で示し、ゲル点を動的に特徴づける定量的基準（以後「**Winter-Chambon 基準**」と呼ばれる）を確立した。この基準は後に、反応条件や化学種を超えて普遍的にゲル点を検出する手段として広く用いられることになる。
 
-なお、knowledge/raw/ に格納されている PDF は本論文の続編である Chambon-Winter (1987, J. Rheol. 31(8), 683-697)「Linear Viscoelasticity at the Gel Point of a Crosslinking PDMS with Imbalanced Stoichiometry」の本文を含む。この続編は、化学量論が非対称な PDMS 試料では指数 n が 1/2 より大きい値（1/2 < n < 1）を取り得ることを示し、1986 年原論文の一般化を行う（PDF p.684 の Synopsis 部分より）。
+なお、knowledge/raw/ に格納されている PDF は本論文の続編である Chambon-Winter (1987, J. Rheol. 31(8), 683-697)「Linear Viscoelasticity at the Gel Point of a Crosslinking PDMS with Imbalanced Stoichiometry」の本文を含む。この続編は、化学量論が非対称な PDMS 試料では指数 n が 1/2 より大きい値（1/2 < n < 1）を取り得ることを示し、1986 年原論文の一般化を行う（PDF p.683 の Synopsis 部分より）。
 
 ## 主要概念
 
