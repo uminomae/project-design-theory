@@ -46,7 +46,23 @@ const TARGETS = {
     html: 'reader/psychological-safety.html',
     spec: 'knowledge/research/psychological-safety/TEST-comprehension-log.md',
   },
+  // spec が無いページは、下の DEFAULT_QUESTIONS（docs/rules/review.md の⑤）を使う（2026-11-09・#79）
+  'love-history': {
+    html: 'reader/love-history.html',
+    spec: null,
+  },
 };
+
+// spec の無いページに使う規定質問群（docs/rules/review.md「五つの点検」⑤・writing.md §6）
+const DEFAULT_QUESTIONS = `
+1. 冒頭（最初の見出しとその下の数段落）だけを読んで、このページが何の話で、答え（または並べているもの）は何か、一、二文で言ってください。言えない場合は、何が足りないかを書いてください。
+2. 本文の途中で、説明なしに出てきた用語・固有名詞・サイト特有の語（初出で定義や説明が無いもの）をすべて挙げてください。
+3. 「誰の言葉か」が本文だけから分からない箇所を挙げてください（著者の主張か、引用した原典の主張か、ページの持ち主の見方か）。
+4. 「どこまで確かめたか」（原典を読んだのか、要旨だけか、確かめていないのか）が本文だけから読み取れない箇所を挙げてください。
+5. 二通り以上に読める文、または前後で言っていることが食い違うと読める箇所を、場所と二つの読みを添えて挙げてください。
+6. ページの中で、良い・悪い、正しい・誤り の判断が入っていると読める箇所があれば挙げてください。
+7. 中学生に説明するつもりで、このページの全体を 200 字ほどで言い直してください。
+`.trim();
 const TARGET = process.argv[2] || 'three-and-seven';
 if (!TARGETS[TARGET]) {
   console.error(`未知の対象: ${TARGET}. 選択肢: ${Object.keys(TARGETS).join(' / ')}`);
@@ -54,7 +70,7 @@ if (!TARGETS[TARGET]) {
 }
 
 const HTML = resolve(ROOT, TARGETS[TARGET].html);
-const SPEC = resolve(ROOT, TARGETS[TARGET].spec);
+const SPEC = TARGETS[TARGET].spec ? resolve(ROOT, TARGETS[TARGET].spec) : null;
 const OUT_DIR = resolve(ROOT, '.cache/active');
 const OUT_TEXT = resolve(OUT_DIR, `reader-context-zero-${TARGET}.txt`);
 const OUT_PROMPT = resolve(OUT_DIR, `reader-llm-test-prompt-${TARGET}.md`);
@@ -137,9 +153,8 @@ ${questions}
 
 function main() {
   const html = readFileSync(HTML, 'utf-8');
-  const spec = readFileSync(SPEC, 'utf-8');
   const pageText = extractContextZero(html);
-  const questions = extractQuestions(spec);
+  const questions = SPEC ? extractQuestions(readFileSync(SPEC, 'utf-8')) : DEFAULT_QUESTIONS;
   const prompt = buildPrompt(pageText, questions);
 
   mkdirSync(OUT_DIR, { recursive: true });

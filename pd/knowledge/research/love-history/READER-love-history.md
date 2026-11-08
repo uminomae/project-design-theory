@@ -804,7 +804,7 @@ date: 2026-11-09
 | 『論語』12.22 | 本文照合済（原文・Legge 訳） | zh.wikisource・ctext.org（手で開いた） |
 | 『墨子』兼愛中 | 本文照合済（原文） | zh.wikisource |
 | 『孟子』4B28・7A45・3A5・3B9 | 本文照合済（原文）・Legge 訳は 4B28・7A45 だけ照合済 | zh.wikisource・ctext.org（手で開いた） |
-| ヘシオドス『神統記』117–122 | 本文照合済 | Perseus |
+| ヘシオドス『神統記』116–122 | 本文照合済 | Perseus |
 | パルメニデス B13 | 本文照合済（引用者の本文として） | Perseus |
 | エンペドクレス B17・B26・B35 | 本文照合済（訳） | Diels 1906・Burnet 1908 |
 | プラトン『饗宴』 | 本文照合済 | Perseus |
@@ -818,7 +818,7 @@ date: 2026-11-09
 | 七十人訳のアガペー | 二次資料のみ（LSJ が用例の場所を挙げる。七十人訳の本文は未照合） | Perseus の LSJ（手で開いた） |
 | マタイ 22・ヨハネ 13・1 コリント 13・1 ヨハネ 4 | 本文照合済（ギリシャ語） | SBLGNT |
 | ヨハネ 21:15–17 | 本文照合済（動詞の分布のみ） | SBLGNT |
-| アウグスティヌス 五か所 | 本文照合済（ラテン語） | The Latin Library・augustinus.it |
+| アウグスティヌス 六か所 | 本文照合済（ラテン語） | The Latin Library・augustinus.it |
 | ダンテ 煉獄篇 17・18、天国篇 1・33 | 本文照合済 | Digital Dante・青空文庫 |
 | スピノザ『エチカ』III・V | 本文照合済 | la.wikisource・Gutenberg |
 | ショーペンハウアー 第 44 章 | 本文照合済（訳） | Gutenberg |
