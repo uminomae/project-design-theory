@@ -101,7 +101,7 @@ date: 2026-11-08
 
 <a id="gw-uses"></a>Love駆動開発の読み物では、重力の井戸を次の箇所で使っています。
 
-- [Love駆動開発は、何を駆動源と見るのか](love-driven-dev.html#ldd-well)：Love を重力にたとえる箇所。この絵の初出です。
+- [Love は、重力に似ていないか](love-driven-dev.html#ldd-well)：Love を重力にたとえる箇所。この絵の初出です。
 - [見えない中心を、自分を分けて見る](love-driven-dev.html#ldd-center)：中心が自分から見えないことと、メタ認知。
 - [ここまでのまとめ — 重力の井戸の絵の上に](love-driven-dev.html#ldd-summary)：四つの探究を、この絵の上に並べた表。
 - [まだ分からないこと](love-driven-dev.html#ldd-open)：くぼみの中に立つ自分は、人と人との間にいるのか。
