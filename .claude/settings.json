@@ -42,6 +42,10 @@
       "git pull *",
       "git ls-remote",
       "git ls-remote *",
+      "git -C * push",
+      "git -C * push *",
+      "git -C * fetch *",
+      "git -C * pull *",
       "gh",
       "gh *"
     ]
