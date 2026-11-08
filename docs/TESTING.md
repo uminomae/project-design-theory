@@ -30,6 +30,7 @@
 | ks：config の整合・export | 3D の設定と開発パネルと言語の構造 | kesson-space の `test.yml` |
 | ks：devlog の移動と深いリンク・日英 | 開発記録のページ送り・深いリンク・日英の対応 | kesson-space の `devlog.yml`・`package.json` |
 | 公開するファイルの文字化け | 公開するページ・データ・読み物の正本に U+FFFD が無い | project-design の `ci.yml` |
+| cs：照合の記録 | 分野ごとの照合の記録（`cs/evidence/evidence-Dxx-*.md`）の形：frontmatter・文責・一面の表・照合の状態と判定の語・確かめ先・台帳の行・絶対パス・文末。見るものは `docs/cs-review/README.md`「記録の品質の点検」 | 新しく書いた（`scripts/check-cs-evidence.mjs`、2026-11-08・#73。pjdhiro「レビュー時のルールもテストを作っていかないとね」） |
 
 公開してよいかの点検（`docs/PUBLISH-CHECK.md`）は、commit のときに `.githooks/` が回す。
 

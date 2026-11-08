@@ -31,6 +31,8 @@ run "ks：config の整合" bash -c 'cd ks && node tests/config-consistency.test
 run "ks：config の export" bash -c 'cd ks && node --experimental-vm-modules tests/config-exports.test.js'
 run "ks：devlog の移動と深いリンク" bash -c 'cd ks && node tests/devlog-navigation.test.js && node tests/offcanvas-deeplink.test.js'
 run "ks：devlog の日英" bash -c 'cd ks && node scripts/validate-devlog-i18n.mjs'
+# 創造とはの、分野ごとの照合の記録（cs/evidence/evidence-Dxx-*.md）。見るものは docs/cs-review/README.md「記録の品質の点検」。
+run "cs：照合の記録" node scripts/check-cs-evidence.mjs
 
 # 公開するページ・データ・読み物の正本に、文字化け（U+FFFD）が無いか。scripts/ の中の検査の文字は除く。
 # 今までの project-design の ci.yml の文字化けの検査の考え方を継いだ（docs/TESTING.md）。
