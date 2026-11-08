@@ -61,6 +61,11 @@
       "id": "D03",
       "file": "evidence-D03-chemistry.md",
       "reviewed": "2026-11-09"
+    },
+    {
+      "id": "D04",
+      "file": "evidence-D04-evolutionary-biology.md",
+      "reviewed": "2026-11-09"
     }
   ]
 }
