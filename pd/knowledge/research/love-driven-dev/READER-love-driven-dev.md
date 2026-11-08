@@ -145,7 +145,7 @@ Love と呼びたいものは、言葉で論理的に説明しにくいところ
 
 <!--REF:物理と科学史-->
 
-出典：Rubin & Ford (1970) *ApJ* 159:379／Rubin, Ford & Thonnard (1980) *ApJ* 238:471（銀河の回転曲線）／Event Horizon Telescope Collaboration (2019) *ApJL* 875:L1（M87 の画像）／『楞厳経』巻二（大正蔵 T19 No.945）・『大智度論』巻九（大正蔵 T25 No.1509）。
+出典：[Rubin & Ford (1970)](https://doi.org/10.1086/150317) *ApJ* 159:379／[Rubin, Ford & Thonnard (1980)](https://doi.org/10.1086/158003) *ApJ* 238:471（銀河の回転曲線）／[Event Horizon Telescope Collaboration (2019)](https://doi.org/10.3847/2041-8213/ab0ec7) *ApJL* 875:L1（M87 の画像）／『楞厳経』巻二（大正蔵 T19 No.945）・『大智度論』巻九（大正蔵 T25 No.1509）。
 
 </details>
 
@@ -677,7 +677,7 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 
 <!--REF:心理学-->
 
-出典：pjdhiro「対話: 受容について」（uminomae.github.io/pjdhiro/dialogue-acceptance/）／Kübler-Ross (1969) *On Death and Dying*／新田信也『精神分析統合理論』（ひきこもりからの脱却の五つの順と「期待は悪か」の問いと答えは pjdhiro の読み・原典未照合）／期待と信頼の軸＝awareness-space CN-006／Klein (1946) "Notes on some schizoid mechanisms"／Vaillant (1977) *Adaptation to Life*／Whitson & Galinsky (2008) *Science* 322:115／Kay, Gaucher, Napier, Callan & Laurin (2008) *JPSP* 95(1):18・追試 Hoogeveen ら (2018) *Comprehensive Results in Social Psychology*／Cooper, Woo & Dunkelberg (1988) *J. Business Venturing* 3(2):97／Kahneman & Lovallo (1993) *Management Science* 39(1):17／Taylor & Brown (1988) *Psychological Bulletin* 103(2):193。
+出典：pjdhiro「対話: 受容について」（uminomae.github.io/pjdhiro/dialogue-acceptance/）／Kübler-Ross (1969) *On Death and Dying*／新田信也『精神分析統合理論』（ひきこもりからの脱却の五つの順と「期待は悪か」の問いと答えは pjdhiro の読み。著者のサイトの[ダイジェスト版の目次](https://www.seishin-bunseki.jp/category/1935273.html)に、期待（当て）・うぬぼれ・お節介・諦念・ひきこもりの項があることまでは確かめた。五つの順と「期待は悪か」は原典未照合）／期待と信頼の軸＝awareness-space CN-006／Klein (1946) "Notes on some schizoid mechanisms"／Vaillant (1977) *Adaptation to Life*（理想化と空想を防衛に数えることは、どちらも二次資料で確かめた。原典は未照合）／Whitson & Galinsky (2008) *Science* 322:115／Kay, Gaucher, Napier, Callan & Laurin (2008) *JPSP* 95(1):18・追試 Hoogeveen ら (2018) *Comprehensive Results in Social Psychology*／Cooper, Woo & Dunkelberg (1988) *J. Business Venturing* 3(2):97／Kahneman & Lovallo (1993) *Management Science* 39(1):17／Taylor & Brown (1988) *Psychological Bulletin* 103(2):193。
 
 </details>
 
@@ -728,7 +728,7 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 
 <div class="tablefit cols-2">
 
-| 定義 | 大きな逆境の中で、前向きな適応が起きる過程（ルーサーほか、2000 年）。関係や養育や文化といった、ありふれた適応のしくみから生まれる（マステン、2001 年） |
+| 定義 | 大きな逆境の中で、前向きな適応が起きる過程（ルーサーほか、2000 年）。脳と認知の発達、養育者との関係、気持ちと行動の調整、学び関わろうとする意欲といった、人にふつうに備わる適応のしくみから生まれる（マステン、2001 年） |
 |---|---|
 | よくある誤解 | 折れない心。鍛えて身につける、個人の強さ。立ち直れなかった人には無かったもの |
 | Love駆動開発の視点で見た解釈 | 研究では、レジリエンスは、逆境のあとに起きる立ち直りの流れとして書かれ、本人の力と周りの支えの両方で起きる。職場では、そのうち本人が持つ強さの面だけが取り出されやすい。pjdhiro の見方では、立ち直りは、新たな自分が創られていく自己刷新の過程に近い。その鍵は、心理防衛機制を外すような自己受容にある。逆境で生まれた揺らぎと内側の対立が渦を巻き、そこから次の自分が形になる。「価値は、どこで生まれるのか」の章で見た、一人の内側で揺らぎが対立し、葛藤が何かを生み出す形と同じ |
@@ -790,7 +790,7 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 
 <!--REF:心理学-->
 
-出典：[Edmondson (1999)](https://doi.org/10.2307/2666999) *Administrative Science Quarterly* 44(2):350／[Schein (1995)](https://hdl.handle.net/1721.1/2576) MIT Sloan Working Paper 3821／[Edmondson & Lei (2014)](https://doi.org/10.1146/annurev-orgpsych-031413-091305) *Annual Review of Organizational Psychology and Organizational Behavior* 1:23／[Eldor, Hodor & Cappelli (2023)](https://doi.org/10.1016/j.obhdp.2023.104255) *Organizational Behavior and Human Decision Processes* 177:104255／[Duckworth, Peterson, Matthews & Kelly (2007)](https://doi.org/10.1037/0022-3514.92.6.1087) *Journal of Personality and Social Psychology* 92(6):1087／[Credé, Tynan & Harms (2017)](https://doi.org/10.1037/pspp0000102) *Journal of Personality and Social Psychology* 113(3):492／[Luthar, Cicchetti & Becker (2000)](https://doi.org/10.1111/1467-8624.00164) *Child Development* 71(3):543／[Masten (2001)](https://doi.org/10.1037/0003-066X.56.3.227) *American Psychologist* 56(3):227／[Ryan & Deci (2000)](https://doi.org/10.1037/0003-066X.55.1.68) *American Psychologist* 55(1):68／[Keats, letter to George and Tom Keats (1817 年 12 月)](https://keatslettersproject.com/letters/negcapletter/)／[Bion (1970) *Attention and Interpretation*](https://www.routledge.com/Attention-and-Interpretation-A-scientific-approach-to-insight-in-psycho-analysis-and-groups/Bion/p/book/9780415846158)／[Bateson, Jackson, Haley & Weakland (1956)](https://doi.org/10.1002/bs.3830010402) *Behavioral Science* 1(4):251／[Thomas & Kilmann (1974) *Thomas-Kilmann Conflict Mode Instrument*](https://kilmanndiagnostics.com/assessments/)。ダックワースほか・クレデほか・エルドアほか・ルーサーほか・マステンは、抄録や二次資料で確かめたもので、本文は未照合です。よくある誤解の例は、出典のない見聞です。
+出典：[Edmondson (1999)](https://doi.org/10.2307/2666999) *Administrative Science Quarterly* 44(2):350／[Schein (1995)](https://hdl.handle.net/1721.1/2576) MIT Sloan Working Paper 3821／[Edmondson & Lei (2014)](https://doi.org/10.1146/annurev-orgpsych-031413-091305) *Annual Review of Organizational Psychology and Organizational Behavior* 1:23／[Eldor, Hodor & Cappelli (2023)](https://doi.org/10.1016/j.obhdp.2023.104255) *Organizational Behavior and Human Decision Processes* 177:104255／[Duckworth, Peterson, Matthews & Kelly (2007)](https://doi.org/10.1037/0022-3514.92.6.1087) *Journal of Personality and Social Psychology* 92(6):1087／[Credé, Tynan & Harms (2017)](https://doi.org/10.1037/pspp0000102) *Journal of Personality and Social Psychology* 113(3):492／[Luthar, Cicchetti & Becker (2000)](https://doi.org/10.1111/1467-8624.00164) *Child Development* 71(3):543／[Masten (2001)](https://doi.org/10.1037/0003-066X.56.3.227) *American Psychologist* 56(3):227／[Ryan & Deci (2000)](https://doi.org/10.1037/0003-066X.55.1.68) *American Psychologist* 55(1):68／[Keats, letter to George and Tom Keats (1817 年 12 月)](https://keatslettersproject.com/letters/negcapletter/)／[Bion (1970) *Attention and Interpretation*](https://www.routledge.com/Attention-and-Interpretation-A-scientific-approach-to-insight-in-psycho-analysis-and-groups/Bion/p/book/9780415846158)／[Bateson, Jackson, Haley & Weakland (1956)](https://doi.org/10.1002/bs.3830010402) *Behavioral Science* 1(4):251／[Thomas & Kilmann (1974) *Thomas-Kilmann Conflict Mode Instrument*](https://kilmanndiagnostics.com/assessments/)。ルーサーほかとマステンは本文で確かめました（ルーサーほか p.543、マステン pp.227・234）。ダックワースほか・クレデほか・エルドアほかは抄録で、ビオンがキーツの言葉を取り上げたことと、トーマスとキルマンの年は二次資料で確かめたもので、本文は未照合です。よくある誤解の例は、出典のない見聞です。
 
 </details>
 
@@ -956,7 +956,7 @@ pjdhiro が考えているのは、脳の神経に伝わる神経伝達物質と
 
 <!--REF:物理と科学史-->
 
-出典：Born (1926) *Z. Phys.* 37:863（確率は絶対値の二乗）／von Neumann (1932) *Mathematische Grundlagen der Quantenmechanik* 第 VI 章（測定で装置と対象が一つの系になる）／Ozawa (2003) *Phys. Rev. A* 67:042105・Rozema et al. (2012) *Phys. Rev. Lett.* 109:100404（擾乱はゼロにならないが、素朴な限界より小さくできる）／Onsager (1949) *Nuovo Cimento Suppl.* 6:279・Feynman (1955) *Prog. Low Temp. Phys.* 1:17・Vinen (1961) *Proc. R. Soc. A* 260:218（超流動の渦の量子化）。
+出典：Born (1926) *Z. Phys.* 37:863（確率は絶対値の二乗）／von Neumann (1932) *Mathematische Grundlagen der Quantenmechanik* 第 VI 章（測定で装置と対象が一つの系になる）／Ozawa (2003) *Phys. Rev. A* 67:042105・Rozema et al. (2012) *Phys. Rev. Lett.* 109:100404（擾乱はゼロにならないが、素朴な限界より小さくできる）／[Onsager (1949)](https://doi.org/10.1007/BF02780991) *Nuovo Cimento Suppl.* 6:279・[Feynman (1955)](https://doi.org/10.1016/S0079-6417(08)60077-3) *Prog. Low Temp. Phys.* 1:17・[Vinen (1961)](https://doi.org/10.1098/rspa.1961.0029) *Proc. R. Soc. A* 260:218（超流動の渦の量子化）。
 
 </details>
 
