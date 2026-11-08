@@ -10,6 +10,9 @@ const DOMAIN_ID_PATTERN = /^D\d+$/i;
 const CREATION_GUIDE_GENERATOR_MODEL = 'claude-opus-4-6';
 
 export const DEFAULT_REPORTS_DATA_URL = `${PJDHIRO_CREATION_RAW}/manifests/domains.json`;
+// 一次情報で確かめ直した分野の一覧（#73）。cs のサイトの中にあり、ページからの相対で読む。
+export const REVIEWED_RECORDS_URL = 'evidence/reviewed.json';
+export const REVIEWED_RECORDS_BASE = 'evidence/';
 export const DEFAULT_REPORTS_ASSET_BASE = `${PJDHIRO_CREATION_PAGES}/`;
 export const DEFAULT_REPORTS_MD_ASSET_BASE = `${PJDHIRO_RAW_BASE}${CREATION_PATH}/`;
 
@@ -610,6 +613,7 @@ function dedupeSources(sources = []) {
             pdfUrl: normalizePdfBrowserUrl(source?.pdfUrl),
             generatorModel: hasText(source?.generatorModel) ? source.generatorModel.trim() : '',
             generated: hasText(source?.generated) ? source.generated.trim() : '',
+            kind: hasText(source?.kind) ? source.kind.trim() : 'report',
         });
     });
 
@@ -736,6 +740,18 @@ export function resolveDomainReportSources(
     const reportGenerated = hasText(report?.generated) ? report.generated.trim() : '';
     const reportGeneratorModel = hasText(report?.generatorModel) ? report.generatorModel.trim() : '';
 
+    // 一次情報で確かめ直した分野は、その記録（cs/evidence/evidence-Dxx-*.md）を先に読む（#73）。
+    // 記録は日本語だけなので、英語の画面では今までの報告のまま。
+    if (report?.reviewRecord?.mdUrl && normalizedLang === 'ja') {
+        sources.push({
+            mdUrl: report.reviewRecord.mdUrl,
+            pdfUrl: '',
+            generated: report.reviewRecord.reviewed || '',
+            generatorModel: '',
+            kind: 'review',
+        });
+    }
+
     if (report?.mdByLang) {
         const mdUrl = resolveV2LangPath(report.mdByLang, normalizedLang, PJDHIRO_CREATION_RAW);
         const pdfUrl = resolveV2LangPath(report.pdfByLang, normalizedLang, PJDHIRO_CREATION_PAGES);
@@ -778,6 +794,38 @@ export function countReportsByProgressLevel(reports = []) {
         counts[level] = (counts[level] || 0) + 1;
         return counts;
     }, {});
+}
+
+export async function loadReviewedRecords(url = REVIEWED_RECORDS_URL, baseHref = window.location.href) {
+    try {
+        const response = await fetch(url, { cache: 'no-store' });
+        if (!response.ok) return new Map();
+        const payload = await response.json();
+        const entries = Array.isArray(payload?.domains) ? payload.domains : [];
+        const map = new Map();
+        entries.forEach((entry) => {
+            const id = normalizeDomainId(entry?.id);
+            const file = hasText(entry?.file) ? entry.file.trim() : '';
+            if (!id || !file || !/\.md$/i.test(file)) return;
+            const mdUrl = safeUrl(`${REVIEWED_RECORDS_BASE}${file}`, '', baseHref);
+            if (!mdUrl) return;
+            map.set(id, {
+                mdUrl,
+                reviewed: hasText(entry?.reviewed) ? entry.reviewed.trim() : '',
+            });
+        });
+        return map;
+    } catch {
+        return new Map();
+    }
+}
+
+export function attachReviewRecords(reports = [], reviewedMap = new Map()) {
+    if (!(reviewedMap instanceof Map) || !reviewedMap.size) return reports;
+    return reports.map((report) => {
+        const record = reviewedMap.get(normalizeDomainId(report?.id));
+        return record ? { ...report, reviewRecord: record } : report;
+    });
 }
 
 export async function loadGuidesGeneratedAt(url = GUIDES_MANIFEST_URL) {
@@ -825,7 +873,8 @@ export async function loadReportsData({
     const normalizedAssetBaseUrl = normalizeAssetBaseUrl(assetBaseUrl);
     const normalizedAssetMdBaseUrl = normalizeAssetBaseUrl(assetMdBaseUrl, DEFAULT_REPORTS_MD_ASSET_BASE);
     const rawReports = Array.isArray(payload?.reports) ? payload.reports : (Array.isArray(payload?.domains) ? payload.domains : []);
-    const reports = sortReportsById(rawReports.map(normalizeReport));
+    const reviewedMap = await loadReviewedRecords();
+    const reports = attachReviewRecords(sortReportsById(rawReports.map(normalizeReport)), reviewedMap);
     const progressTaxonomy = normalizeProgressTaxonomy(getManifestProgressTaxonomy(payload), reports);
 
     return {

@@ -473,6 +473,9 @@ export function createReportsRenderer({
         head.appendChild(statusNode);
         body.appendChild(head);
         body.appendChild(nameNode);
+        if (report.reviewRecord) {
+            body.appendChild(createReviewedChip(report));
+        }
 
         // Presentation buttons
         const presSources = resolveDomainPresentationSources(report, { lang: state.config.lang });
@@ -522,6 +525,19 @@ export function createReportsRenderer({
         col.appendChild(tile);
 
         return col;
+    }
+
+    // 一次情報で確かめ直した分野の印（#73）。日本語の画面では記録が先に開く。
+    function createReviewedChip(report) {
+        const strings = getReportsStrings(state.config.lang);
+        const chip = document.createElement('span');
+        chip.className = 'reports-reviewed-chip';
+        chip.textContent = strings.reviewedChip;
+        const reviewed = report?.reviewRecord?.reviewed;
+        if (reviewed) {
+            chip.title = `${strings.modalReviewed}: ${reviewed}`;
+        }
+        return chip;
     }
 
     function renderDomainGrid() {
@@ -651,6 +667,9 @@ export function createReportsRenderer({
             cell.appendChild(idBadge);
             cell.appendChild(name);
             cell.appendChild(progress);
+            if (report.reviewRecord) {
+                cell.appendChild(createReviewedChip(report));
+            }
             cell.appendChild(contentArea);
             fragment.appendChild(cell);
         });

@@ -28,7 +28,7 @@ R の cs/ は「創造とは」というサイトで、30 の学術領域に「�
 ## 先に読む
 - R/docs/cs-review/README.md（計画。「何を正とするか」「レビューの決まり」「規約で決めたこと」「判断が要ること」）
 - R/docs/cs-review/D01.md・D22.md（点検の見本。記録の形は README「記録の形」に移った。最初に済んだ分野の evidence-Dxx が、次からの見本になる）
-- R/docs/rules/sources.md・writing.md・corrections.md、R/docs/rules/stance.md の §1・§2-6・§3・§4
+- R/docs/rules/sources.md・writing.md・corrections.md（当たりそうな型は corrections-examples.md の行も）、R/docs/rules/stance.md の §1・§2-6・§4、R/docs/rules/stance-theories.md（理論との距離の表）
 - 旧い規則（R/cs/transform/・R/cs/docs/）は、README の「規約で決めたこと」の最後の行で、使うものと使わないものを分けてある。判定の語は sources.md §3 の四つと、README の判定（一致・言い過ぎ・取り違え・帰属違い・付け足し・未判定）だけを使う。旧い語（verified・accepted・plausible・direct・sim など）は使わず、照合できなかった主張を「除外」しない。
 {領域ごとの注意（下の「領域ごとの注意」から写す）}
 
@@ -70,7 +70,7 @@ R の cs/ は「創造とは」というサイトで、30 の学術領域に「�
 ### 領域ごとの注意
 
 - 数学・物理・複雑系：物理と数学の主張に、教科書・研究の一線・Claude の読み替えのどれかを添える（`sources.md` §6）。数学の記述の正しさは Claude が引き受ける。
-- 経営学・心理学・社会学など、pjdhiro が理論との距離を記録している分野：stance.md §3 の表（期待・信頼・心理的安全性・内発的動機・価値・創造・経営・エフェクチュエーション）と writing.md §7（既存の理論を扱うとき）を先に読む。報告が理論の理想の像を、pjdhiro の見方や5段階と結びつけていないかを見る。報告が理論を「強い対応」「最も精密」と持ち上げていないか、二つの論理を5段階の両端に分けて置いていないか（D22 で、因果論理を束、エフェクチュエーションを場に置いていた。型 B）も見る。調べた跡（phase5〜7）が欠損・抱持を持ち込んでいないか（報告に持ち込まない、は今も使う旧い規則）も見る。
+- 経営学・心理学・社会学など、pjdhiro が理論との距離を記録している分野：stance-theories.md の表（期待・信頼・心理的安全性・内発的動機・価値・創造・経営・エフェクチュエーション）と writing.md §7（既存の理論を扱うとき）を先に読む。報告が理論の理想の像を、pjdhiro の見方や5段階と結びつけていないかを見る。報告が理論を「強い対応」「最も精密」と持ち上げていないか、二つの論理を5段階の両端に分けて置いていないか（D22 で、因果論理を束、エフェクチュエーションを場に置いていた。型 B）も見る。調べた跡（phase5〜7）が欠損・抱持を持ち込んでいないか（報告に持ち込まない、は今も使う旧い規則）も見る。
 - 人文系（哲学・宗教学・伝統知・文芸学など）：原典が書籍で、PDF が無いものが多い。「精読ノートのみ」「二次資料のみ」を正直に書き、取得できないことを理由に判定を上げない。東洋の像は、原典の文脈で照合する（writing.md §2-9）。
 
 ## 2. 定義と wiki
@@ -82,7 +82,7 @@ R の cs/ は「創造とは」というサイトで、30 の学術領域に「�
 R の cs/（創造とは）は、最近書き直された正本（Love駆動開発の読み物・ks＝欠損駆動思考・as＝意識とは）と、語や定義がずれていると見られています。あなたの仕事は、{見るもの：5段階の定義／隣の概念の定義／wiki の frontmatter など}の整合を点検することです。
 
 ## 先に読む
-R/CLAUDE.md、R/docs/cs-review/README.md、R/docs/rules/stance.md（§1、§3 理論との距離の表、§4 語彙）、R/docs/rules/corrections.md（型 A〜S）、R/docs/rules/writing.md。
+R/CLAUDE.md、R/docs/cs-review/README.md、R/docs/rules/stance.md（§1、§4 語彙）、R/docs/rules/stance-theories.md（理論との距離の表）、R/docs/rules/corrections.md（型 A〜S）、R/docs/rules/writing.md。
 
 ## 材料
 - cs の定義：R/cs/README.md、R/cs/knowledge/glossary.md・five-stages-guide.md・schema/、R/cs/index.html と R/cs/src/i18n/dict.js、R/cs/llms.txt・llms-full.txt
