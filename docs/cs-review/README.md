@@ -41,7 +41,7 @@ pjdhiro の repo は、その repo の規約（`develop` で直す・commit の�
 - [x] `cs/scripts/` を、今の置き場に合わせる。pjdhiro の repo を `cs/../pjdhiro` で探していた所は、別のセッションが `scripts/pjdhiro-dir.sh`・`pjdhiro-dir.mjs` で直した（aed76ee・d35e433、2026-11-08）。
 - [ ] `qc-all.sh` を回し直す。直したあと worktree で回すと PASS 5・FAIL 2（dashboard-stats の鮮度、報告ページへの静的リンクの鮮度）・SKIP 1 だった。FAIL の二つを見る。
 - [ ] 中の検査がスキップしても PASS と数える所を直す。「manifest 整合」は、worktree では `knowledge/raw/manifest.md`（git の外）が無くて中でスキップし、PASS と出る。原典を使う検査は本体の checkout で回す。
-- [ ] `cs/docs/` の 27 ファイルが参照する今は無い `.claude/rules/` を片付ける。旧 repo への参照は、別のセッションが片付け、`scripts/check-old-repo-refs.mjs` で再発を止めた（aed76ee）。
+- [ ] `cs/docs/` の 13 ファイル（2026-11-08 時点）が参照する今は無い `.claude/rules/` を片付ける。旧 repo への参照は、別のセッションが片付け、`scripts/check-old-repo-refs.mjs` で再発を止めた（aed76ee）。
 - [ ] 機械でできる点検を一つのスクリプトにまとめる（下の「機械の点検」）。`scripts/check.sh` に入れるかは、点検が安定してから決める。
 - [ ] 主張の一覧表の雛形を作る（下の「記録の形」）。
 
