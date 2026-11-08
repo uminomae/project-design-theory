@@ -177,4 +177,12 @@
     if (!ticking) { ticking = true; requestAnimationFrame(spy); }
   }, { passive: true });
   spy();
+
+  /* ---- 本文の左に目次が収まるときだけ常設にする（toc.css の .toc-fits・2026-11-08） ---- */
+  var wrap = document.querySelector('.reader-wrap');
+  function fit() {
+    document.body.classList.toggle('toc-fits', !!wrap && wrap.getBoundingClientRect().left >= 242);
+  }
+  window.addEventListener('resize', fit, { passive: true });
+  fit();
 })();
