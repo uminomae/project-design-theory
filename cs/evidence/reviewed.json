@@ -71,6 +71,11 @@
       "id": "D05",
       "file": "evidence-D05-earth-science.md",
       "reviewed": "2026-11-09"
+    },
+    {
+      "id": "D06",
+      "file": "evidence-D06-astronomy.md",
+      "reviewed": "2026-11-09"
     }
   ]
 }
