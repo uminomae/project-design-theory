@@ -48,8 +48,8 @@
   --ds-card-title: 1.0rem;
   --ds-card-text: 0.92rem;
   --ds-card-summary: 0.92rem;
-  --ds-overlay-tagline: 0.92rem;
-  --ds-overlay-tagline-en: 0.88rem;
+  --ds-overlay-tagline: 1.00rem; /* JS（font-size-ctrl.js）の既定と同じにした（#70） */
+  --ds-overlay-tagline-en: 0.95rem;
   --ds-control-guide: 0.82rem;
   --ds-footer-line: 0.82rem;
   --ds-surface-btn: 0.88rem;
