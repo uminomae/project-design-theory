@@ -36,7 +36,10 @@ pjdhiro（2026-11-08）：
 pjdhiro（2026-11-08）：「熱の波間の渦としての質量が、時間に値を与える」は、β = 8πGM/c³ という式。これは今後何度も使う足場。
 
 - 式：シュヴァルツシルトのブラックホールでは、時間を虚時間にすると（t = −iτ）、τ は周期 8πM を持つ。この周期が逆温度 β になる（自然単位 G = c = 1。単位を戻すと 8πGM/c³ で、時間の長さ）。質量 M がそのまま時間の長さを決める。
-- 確かめ：Schulz (2014) *Review on the quantization of gravity*, arXiv:1409.7977, 式 (473) の前後で、「t = −iτ とすると τ は周期 8πM を持つ」「β = 8πM」とあるのを読んだ。元の論文 Gibbons & Hawking (1977) *Action integrals and partition functions in quantum gravity*, Phys. Rev. D 15, 2752 は読んでいない。単位を戻したのは Claude。
+- 確かめ（教科書。2026-11-08・#76）：
+  - 原典：Hawking (1975) *Particle creation by black holes*, Commun. Math. Phys. 43, 199–220（DOI 10.1007/BF02345020）で、温度を「幾何単位で κ/2π」（p. 201・p. 211 の式 (2.29) の後）、シュヴァルツシルトのブラックホールで「κ = 1/(4M)」（p. 209）と書いているのを読んだ。ここから幾何単位の温度は T = 1/(8πM)、その逆数が β = 8πM になる（この一行の掛け合わせは Claude）。要旨（p. 199）では温度を ħκ/(2πk) と書いている。読んだのは大学の講義ページに上げられた写し（jgluza.us.edu.pl/QM/CMPhawking.pdf。権利は未確認）で、出版社の版（Springer・Project Euclid）は自動取得を拒まれて開けていない。本文照合済（写し）。
+  - 二次：Schulz (2014) *Review on the quantization of gravity*, arXiv:1409.7977, 式 (473) の前後に、「t = −iτ とすると τ は周期 8πM を持つ」「β = 8πM」とある。虚時間の周期として 8πM を出した元の論文 Gibbons & Hawking (1977) *Action integrals and partition functions in quantum gravity*, Phys. Rev. D 15, 2752–2756（DOI 10.1103/PhysRevD.15.2752）は、書誌を APS で確かめたが、本文は有料で開けていない（OpenAlex・Semantic Scholar・Web 検索・scholar.archive.org でも公開の写しは見つからなかった）。虚時間の周期という言い方は二次資料のみ。
+  - 単位を戻す（Claude。次元と数値を確かめた）：表面重力は κ = c⁴/(4GM)（加速度）、温度は T = ħκ/(2π k_B c) = ħc³/(8πG M k_B)。虚時間の周期は ħ/(k_B T) = 8πGM/c³ で、GM/c³ は (m³ kg⁻¹ s⁻²)(kg)/(m³ s⁻³) = s なので時間の長さになる。β を逆温度 1/(k_B T) と書くときは、ħβ = 8πGM/c³。太陽質量（1.988×10³⁰ kg）では、周期が約 1.24×10⁻⁴ 秒、温度が約 6.2×10⁻⁸ K（CODATA 2018 の定数で計算）。Hawking (1975) の要旨は「≈ 10⁻⁶ (M☉/M) K」と桁の目安で書いていて、計算した値より一桁半ほど大きい。
 - 注意：この導き方（量子重力の分配関数を鞍点で近似すること）は、足元が確かでないとも言われる（Banihashemi & Jacobson, arXiv:2411.00267 の要旨「stands on shaky ground」）。
 
 ## これから
