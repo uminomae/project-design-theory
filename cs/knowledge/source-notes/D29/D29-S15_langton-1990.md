@@ -45,9 +45,9 @@ Langton は「計算 (computation) はどのような物理的条件で自発的
 
 ### 主張 4: transient length は phase transition の近傍で critical slowing down を示す
 
-> "First, transients grow rapidly in the vicinity of the transition between ordered and disordered dynamics, a phenomenon known in the study of phase-transitions as *critical slowing down*." (§4, p. 16)
+> "First, transients grow rapidly in the vicinity of the transition between ordered and disordered dynamics, a phenomenon known in the study of phase-transitions as *critical slowing down*." (§4, p. 25（誌面の頁。Physica D 42, 12-37）)
 
-> "transient length depends *exponentially* on array size at λ = 0.50" (§4, p. 16)
+> "transient length depends *exponentially* on array size at λ = 0.50" (§4, p. 25（誌面の頁。Physica D 42, 12-37）)
 
 これは 2 次相転移での発散 (divergence) の CA 版であり、Langton は CA dynamics と物理的相転移の深い関係を示唆する。
 
