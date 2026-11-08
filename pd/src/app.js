@@ -5,6 +5,7 @@ import { createModalRouter } from './app/modal-router.js';
 import { loadRandomShader } from './bootstrap/shaders.js';
 import { KNOWLEDGE_ENTRIES, MENU_ITEMS, SHADER_PATHS, TRANSLATIONS } from './content/site-data.mjs';
 import { getSearchParams } from './lib/query-state.js';
+import { createHomeToc } from './ui/home-toc.js';
 import { createI18n, detectLang } from './ui/i18n.js';
 import { createMenuController, renderSiteMenu } from './ui/menu.js';
 import { createModalController } from './ui/modal.js';
@@ -82,6 +83,8 @@ bindAppEvents({
     modalRouter,
     slideViewer,
 });
+
+createHomeToc();
 
 async function init() {
     await i18n.switchLang(detectLang());
