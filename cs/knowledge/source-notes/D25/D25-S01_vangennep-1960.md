@@ -10,7 +10,7 @@
 
 ## 1. 書誌情報
 
-- **著者**: Arnold van Gennep (1908 原著), 英訳 Monika B. Vizedom & Gabrielle L. Caffee
+- **著者**: Arnold van Gennep (1909 原著。著者の序文は 1908 年 12 月の日付), 英訳 Monika B. Vizedom & Gabrielle L. Caffee
 - **タイトル**: The Rites of Passage
 - **出典**: The University of Chicago Press, 1960 (英訳版)
 - **DOI / URL**: ISBN 0-226-84848-5
