@@ -51,9 +51,9 @@
 
 ## Git
 
-この repo は、複数の人がプログラムを開発するための git の使い方をしない。自然言語の文章を、LLM のために管理している個人のプロジェクトで、git は履歴のため。編集者は pjdhiro 一人（pjdhiro 2026-11-07・2026-11-08「何度も言ってることなのでルールに入れて」）。
+この repo は、複数の人がプログラムを開発するための git の使い方をしない。自然言語の文章を、LLM のために管理している個人のプロジェクトで、git は履歴のため。編集者は pjdhiro 一人（pjdhiro 2026-11-07・2026-11-08「何度も言ってることなのでルールに入れて」「別セッションも動くからワークツリーは便利」「編集したらdevelopに最速で統合してほしい」）。
 
-- **ブランチ・worktree・マージ・プルリクエストは使わない。** 本体の checkout（`~/dev/pd/project-design-theory`）の `develop` で、直接編集して commit する。セッションが worktree で始まったときも、編集は本体の checkout で行う。
+- **編集したら、`develop` に最速で統合する。** プルリクエストは使わない。worktree は、別のセッションが同時に動くときや、クラウドでスマートフォンから動かすときに便利なので使ってよい。その場合も、作業を worktree の枝に溜めずに、本体の checkout（`~/dev/pd/project-design-theory`）の `develop` へ早く取り込む。最速がどのタイミングかは状況による（ほかのセッションと同じファイルを触っているとき、pjdhiro の判断を待って手が止まっているとき など）。取り込みの段取りを説明して pjdhiro の手を止めない。
 - **確かめは、手元のサーバーをブラウザで見るのが基本。** 最速で目視できるから使っている。本体の checkout（develop）を launchd（`com.uminomae.project-design-theory`）が `scripts/serve.sh` で http://localhost:3001/ に常駐させている。直したらすぐ 3001 で見られる状態にしておく：直したら 3001 で開いて確かめ、止まっていたら `launchctl kickstart -k gui/$(id -u)/com.uminomae.project-design-theory` で起こす。
 - **公開は、`develop` を `main` へ送るだけ**（`git push origin develop:main`）。話の流れで確かめが済んでいれば、いちいち聞かずに送る。
 - 公開は GitHub Actions（`.github/workflows/pages.yml`）。出すのはサイトのファイルだけ。
