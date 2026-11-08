@@ -58,7 +58,7 @@ Kirby, Cornish, Smith (2008) は **iterated learning**（反復学習）と呼�
 - **渦 (Vortex)**：invisible hand による非意図的な構造立ち上がり（参加者は全員無自覚）
 - **束 (Bundle)**：実験1では underspecification 言語、実験2では compositional 言語という 2 種の「束」が2つの異なる圧力条件に応じて出現する
 
-後続研究として [[社会ネットワーク構造と言語構造の創発]] (Raviv 2020, D17-S13) が iterated learning パラダイムを同期的グループコミュニケーションに拡張している。
+後続研究として [[D17_raviv_2020_social-network-linguistic-structure|社会ネットワーク構造と言語構造の創発]] (Raviv 2020, D17-S13) が iterated learning パラダイムを同期的グループコミュニケーションに拡張している。
 
 ## 書誌情報
 

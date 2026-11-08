@@ -52,7 +52,7 @@ Raviv, Meyer, Lev-Ari (2020) は、社会ネットワーク構造の違いが言
 
 ## 創造（creation-space）との関連
 
-本論文は [[実験室での累積的文化進化：人間言語の構造的起源への実験的アプローチ]] (Kirby 2008, D17-S12) の iterated learning パラダイムを**同期的グループコミュニケーション**に拡張し、かつ**「縁」にあたるネットワーク構造を直接操作した**点で D17 領域の理論的補完となる。5段階との対応：
+本論文は [[D17_kirby-cornish-smith_2008_cumulative-cultural-evolution-laboratory|実験室での累積的文化進化：人間言語の構造的起源への実験的アプローチ]] (Kirby 2008, D17-S12) の iterated learning パラダイムを**同期的グループコミュニケーション**に拡張し、かつ**「縁」にあたるネットワーク構造を直接操作した**点で D17 領域の理論的補完となる。5段階との対応：
 
 - **場 (Field)**：23個の動画刺激空間（形 × 動き × パターン）と letter inventory が場を定義する
 - **波 (Wave)**：16ラウンドの繰返し相互作用で accuracy / convergence / stability / structure が同期的に上昇する
