@@ -48,7 +48,7 @@ Issue #251 の実装時（2026-03-14）に作成。#278（2026-03-17）で内容
 
 ## 元ファイルの所在
 
-参照先は全て `~/dev/creation-space/evidence/` 配下:
+参照先は全て、この repo の `cs/evidence/` 配下（今までの creation-space の `evidence/`。2026-11-07 に cs/ へ移した）:
 
 - `evidence/review/memo-level2.md`
 - `evidence/review/p1-cross-domain-insights.md`
