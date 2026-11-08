@@ -1,7 +1,7 @@
 ---
 title: Love とは、どう言われてきたか — 読み物
 issue: "#79"
-status: 初稿（工事中。Love駆動開発の結論の章「Love と呼びたいものとは」の出発点。一次情報で照合したものから並べている）
+status: 初稿（工事中。Love駆動開発の結論の章「Love と呼びたいものとは」の出発点。原典の本文を読めたものだけを並べている）
 date: 2026-11-09
 ---
 
@@ -23,19 +23,9 @@ date: 2026-11-09
 
 このページでは、誰が、いつ、何を Love と呼んだかを、出典つきで並べるだけにします。それぞれが Love を何として書いているか（感情、力、原理、関係、欠乏、徳、神 など）は、原文の語で添えます。それが場・波・縁・渦・束のどの段に当てた言葉なのかを見直す作業は、ここでは行いません。良い・悪いの判断も持ち込みません。
 
-<details><summary>読み方 — 照合の状態と、表の形</summary>
+<details><summary>読み方 — 載せた出典と、表の形</summary>
 
-出典ごとに、どこまで確かめたかを添えています。
-
-| 状態 | 意味 |
-|---|---|
-| 本文照合済 | 原典の本文を開いて、該当箇所を位置（節・番号・ページ）つきで確かめた |
-| 要旨照合済 | 論文の要旨（abstract）まで確かめた。本文は読んでいない |
-| 書誌のみ | 著者・年・題の実在だけ確かめた。中身は読んでいない |
-| 二次資料のみ | 事典や解説で読んだ。何の二次かを添える |
-| 未照合 | 確かめていない |
-
-本文を読めない出典（紙の本だけ、有料の壁）は、確かめたことまでしか書きません。確かめ先は、だれでもブラウザで開けるもの（Perseus、Internet Archive、SAT 大蔵経データベース、CBETA、中国哲学書電子化計画、DOI など）を選んでいます。訳で読んだときは、訳者を添えています。
+このページに載せたのは、原典の本文を開いて、該当箇所を位置（節・番号・ページ）つきで確かめた出典だけです。確かめ先は、だれでもブラウザで開けるもの（SuttaCentral、CBETA、Perseus、Internet Archive、PMC など）を選んでいます。訳で読んだときは訳者を、著者や大学のサイトにある写しで読んだときは、だれのサイトかを添えています。
 
 原典の項目は、出どころ・何を Love と呼んだか・Love を何として書いているか・鍵の文・出典と照合の状態、の表にしています。心理学の理論の言葉は、定義・よくある誤解・Love駆動開発の視点で見た解釈・効く条件、の四行の表にしています。
 
@@ -113,12 +103,12 @@ date: 2026-11-09
 
 <div class="tablefit cols-2">
 
-| 出どころ | 『大智度論』（T1509）。鳩摩羅什の漢訳。サンスクリット原典は伝わっていません。龍樹作とする伝承には議論があります（二次資料・未照合） |
+| 出どころ | 『大智度論』（T1509）。鳩摩羅什の漢訳。サンスクリット原典は伝わっていません |
 |---|---|
 | 何を Love と呼んだか | 巻 27 で、大慈は一切衆生に楽を与え、大悲は一切衆生の苦を抜く、と分けます。牢につながれた子を父が手立てを尽くして救い出すのが大悲、救ったあとに五欲を与えるのが大慈、というたとえが添えられています。巻 20 と巻 40 は、慈悲に三種あるとします。生きものを対象にする衆生縁、衆生は五蘊にすぎないと知って起こす法縁、心に対象を立てない無縁の三つです。巻 40 は、凡夫は衆生縁、声聞・辟支仏・菩薩は初めは衆生縁で後に法縁、諸仏は無縁、と配します |
 | Love を何として書いているか | 慈心・悲心という心。楽を与え（与楽）、苦を抜く（抜苦）はたらき。何を対象（縁）にするかで段階が分けられ、無縁では対象そのものが立ちません |
 | 鍵の文 | 「大慈與一切眾生樂，大悲拔一切眾生苦；大慈以喜樂因緣與眾生，大悲以離苦因緣與眾生。」（T1509, 25.256b・巻 27）<br>「慈悲心有三種：眾生緣、法緣、無緣。凡夫人，眾生緣；聲聞、辟支佛及菩薩，初眾生緣，後法緣；諸佛善修行畢竟空，故名為無緣」（25.350b・巻 40） |
-| 出典と照合の状態 | 本文照合済（漢文）。CBETA [T1509 巻 27](https://cbetaonline.dila.edu.tw/zh/T1509_027)・巻 20（209a）・巻 40（350b）。巻 20 は三種の出典を『無尽意菩薩問』に帰しています。慈を maitrī、悲を karuṇā に当てる対応は通説（二次資料） |
+| 出典と照合の状態 | 本文照合済（漢文）。CBETA [T1509 巻 27](https://cbetaonline.dila.edu.tw/zh/T1509_027)・巻 20（209a）・巻 40（350b）。巻 20 は三種の出典を『無尽意菩薩問』に帰しています |
 
 </div>
 
@@ -131,7 +121,7 @@ date: 2026-11-09
 | 何を Love と呼んだか | まず自分と他人が等しいこと（parātmasamatā）を修めよ、苦も楽も等しい皆を自分のように守るべきだ、と書きます（8.90）。自分も他人もすばやく救いたい者は、最高の秘密である自他の交換（parātmaparivartana）を行え、と続けます（8.120） |
 | Love を何として書いているか | 修める観想の手順。鍵になる語は「愛」ではなく、平等（samatā）・守る（pālanīya）・交換（parivartana）です |
 | 鍵の文 | 「parātmasamatām ādau bhāvayed evam ādarāt / samaduḥkhasukhāḥ sarve pālanīyā mayātmavat」（8.90）<br>「ātmānaṃ ca parāṃś caiva yaḥ śīghraṃ trātum icchati / sa caret paramaṃ guhyaṃ parātmaparivartanam」（8.120） |
-| 出典と照合の状態 | 本文照合済（サンスクリット。底本の校訂本は確かめていない）。[GRETIL の電子テキスト](https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zAntideva-bodhicaryAvatAra.txt)（入力 Richard Mahoney・CC BY-NC-SA 4.0）。版によって偈の番号がずれます（二次資料） |
+| 出典と照合の状態 | 本文照合済（サンスクリット。底本の校訂本は確かめていない）。[GRETIL の電子テキスト](https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zAntideva-bodhicaryAvatAra.txt)（入力 Richard Mahoney・CC BY-NC-SA 4.0） |
 
 </div>
 
@@ -345,21 +335,13 @@ date: 2026-11-09
 
 </div>
 
-<details><summary>まだ照合できていないもの — ヒエロクレスの同心円、プロティノスの「エロスについて」</summary>
-
-ヒエロクレス（2 世紀）には、自分を中心に家族・親族・地域・人類と円が広がり、外の円の人を内へ引き寄せるよう努めるべきだ、という断片がストバイオスによって伝わる、と解説されています。原文は確かめていません。状態は二次資料のみ（Wikipedia）。
-
-プロティノス『エンネアデス』III.5「エロスについて」（3 世紀）は、エロスは神か、ダイモーンか、魂の状態か、と問うところから始まります。英訳（MacKenna 訳の転載。権利は未確認）の第 1 節だけを読みました。状態は本文照合済（訳）・第 1 節のみ。
-
-</details>
-
 <!--REF:ギリシャ哲学-->
 
-出典：Diogenes Laertius, *Lives* 7.85・7.113・7.129–130（Perseus, Hicks 1925）／Cicero, *De finibus* III.16・62–63（The Latin Library）／Hierocles（Wikipedia・二次資料のみ）／Plotinus, *Enneads* III.5.1（MacKenna 訳・第 1 節のみ）。
+出典：Diogenes Laertius, *Lives* 7.85・7.113・7.129–130（Perseus, Hicks 1925）／Cicero, *De finibus* III.16・62–63（The Latin Library）。
 
 ## 新約聖書 — アガペー
 
-<a id="lh-agape"></a>この章は、新約聖書のギリシャ語本文で、愛の語がどう使われているかを見ます。多くの場所で使われているのは、名詞のアガペー（ἀγάπη）ではなく、動詞のアガパオー（ἀγαπάω）です。七十人訳（ギリシャ語訳旧約）の本文は、まだ開いていません。辞書の LSJ（Liddell–Scott–Jones）は、ἀγάπη の最初の意味を love とし、七十人訳の用例にエレミヤ 2:2・雅歌 2:7・コヘレト 9:1（「愛と憎しみ」）を、神の人への愛と人の神への愛の用例に知恵の書 3:9 を挙げています（[Perseus の LSJ](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0057:entry=a)ga/ph) を手で開いて読んだ。2026-11-09）。
+<a id="lh-agape"></a>この章は、新約聖書のギリシャ語本文で、愛の語がどう使われているかを見ます。多くの場所で使われているのは、名詞のアガペー（ἀγάπη）ではなく、動詞のアガパオー（ἀγαπάω）です。
 
 ### 福音書と手紙（1 世紀）
 
@@ -370,13 +352,13 @@ date: 2026-11-09
 | 何を Love と呼んだか | マタイ 22 で、最も大きな掟を問われたイエスは二つを挙げます。神を心・魂・思いを尽くして愛することと、隣人を自分のように愛することです。どちらも旧約（申命記 6:5・レビ記 19:18）の引用です。ヨハネ 13:34 は「私があなたがたを愛したように、互いに愛し合え」を新しい掟として与えます。1 コリント 13 は、愛は寛容で、親切で、ねたまない、と性質を並べ、愛は決して絶えない、信・望・愛のうち最も大きいのは愛だ、と結びます。1 ヨハネ 4:8 は「神は愛である」と書き、4:16 は「愛のうちにとどまる者は神のうちにとどまる」と続けます |
 | Love を何として書いているか | 掟（ἐντολή）として命じられる行い（マタイ・ヨハネ 13）。主語として振る舞い、残り続けるもの（1 コリント 13）。神そのもの、そして人がとどまる場所（1 ヨハネ 4） |
 | 鍵の文 | 「Ἀγαπήσεις τὸν πλησίον σου ὡς σεαυτόν.」（マタイ 22:39）訳：あなたの隣人を、あなた自身のように愛せ<br>「Ἡ ἀγάπη οὐδέποτε πίπτει.」（1 コリント 13:8）訳：愛は決して絶えない<br>「ὁ θεὸς ἀγάπη ἐστίν」（1 ヨハネ 4:8）訳：神は愛である |
-| 出典と照合の状態 | 本文照合済（ギリシャ語）。[SBLGNT](https://sblgnt.com/)（CC BY 4.0。本文は [公式の GitHub 版](https://github.com/LogosBible/SBLGNT)で読んだ）。KJV が ἀγάπη を charity と訳すことは記憶で、KJV は開いていません |
+| 出典と照合の状態 | 本文照合済（ギリシャ語）。[SBLGNT](https://sblgnt.com/)（CC BY 4.0。本文は [公式の GitHub 版](https://github.com/LogosBible/SBLGNT)で読んだ） |
 
 </div>
 
 <details><summary>詳しく — ヨハネ 21 章の、二つの動詞</summary>
 
-ヨハネ 21:15–17 では、復活したイエスがペトロに三度「私を愛するか」と問います。原文で見ると、イエスの問いは一回目と二回目が ἀγαπᾷς、三回目が φιλεῖς です。ペトロの答えは三回とも φιλῶ です。この使い分けに意味の違いを読む解釈と、文体の言い換えとみる解釈があります（二次資料・未照合）。「アガペーは神の無償の愛、フィリアは人の友愛」とは言い切れません。
+ヨハネ 21:15–17 では、復活したイエスがペトロに三度「私を愛するか」と問います。原文で見ると、イエスの問いは一回目と二回目が ἀγαπᾷς、三回目が φιλεῖς です。ペトロの答えは三回とも φιλῶ です。「アガペーは神の無償の愛、フィリアは人の友愛」とは言い切れません。
 
 </details>
 
@@ -445,7 +427,7 @@ date: 2026-11-09
 
 <details><summary>寄り道 — ショーペンハウアー「性愛の形而上学」（1844 年）</summary>
 
-ショーペンハウアー『意志と表象としての世界』続編の第 44 章は、どれほど霊妙に見える恋愛も、性の衝動だけに根ざし、それが特定の個人へ向けて個別化されたものにすぎない、と書きます。恋愛によって決まるのは「次の世代の構成」だ、とします。「For all love, however ethereally it may bear itself, is rooted in the sexual impulse alone」（Haldane & Kemp 英訳・第 44 章冒頭近く）。Love を、生きんとする意志が働く本能、個別化された性衝動として書いています。本文照合済（訳）。[Project Gutenberg #40868](https://www.gutenberg.org/ebooks/40868)。ドイツ語の原文は開いていません。
+ショーペンハウアー『意志と表象としての世界』続編の第 44 章は、どれほど霊妙に見える恋愛も、性の衝動だけに根ざし、それが特定の個人へ向けて個別化されたものにすぎない、と書きます。恋愛によって決まるのは「次の世代の構成」だ、とします。「For all love, however ethereally it may bear itself, is rooted in the sexual impulse alone」（Haldane & Kemp 英訳・第 44 章冒頭近く）。Love を、生きんとする意志が働く本能、個別化された性衝動として書いています。本文照合済（訳）。[Project Gutenberg #40868](https://www.gutenberg.org/ebooks/40868)。
 
 </details>
 
@@ -480,47 +462,13 @@ date: 2026-11-09
 
 出典：Peirce, C. S. (1893) "Evolutionary Love", *The Monist* 3(2):176–200（Internet Archive の原誌）／Peirce, *Chance, Love, and Logic*, ed. M. R. Cohen (1923) pp.267–300（Internet Archive）。
 
-## ルイスとフロム — 二十世紀の、愛の分け方
-
-<a id="lh-lewis-fromm"></a>この章は、二十世紀に愛を分けて書いた二冊を見ます。どちらも著作権が残っているので、本文を自由に読める確かめ先がありません。確かめたところまでを書きます。
-
-### C・S・ルイス『四つの愛』（1960 年）
-
-<div class="tablefit cols-2">
-
-| 出どころ | C. S. Lewis, *The Four Loves* (London: Geoffrey Bles, 1960)。1958 年にラジオ講話として録音されたことは二次資料（Christian History Institute の記事）による |
-|---|---|
-| 何を Love と呼んだか | 序章は「神は愛なり」から書き始め、最初の区別として与える愛（Gift-love）と求める愛（Need-love）を立てます。神の愛は与える愛だとしつつ、求める愛を愛と呼ばないのは現実に合わない、とも書きます。章は、愛情（Affection）・友情（Friendship）・エロス（Eros）・愛徳（Charity）の四つです。愛情はギリシャ人が storge と呼んだもの、と書きます。エロスは「恋している」状態で、その中の性的な要素を Venus と呼び分けます。快楽では、求めの快楽と、賞賛の快楽を分け、賞賛の愛（Appreciative love）も加えます |
-| Love を何として書いているか | 求める・与える・賞賛するという愛の型と、四つの種類 |
-| 鍵の文 | 「The first distinction I made was therefore between what I called Gift-love and Need-love.」（p.9）<br>「Divine Love is Gift-love.」（p.9） |
-| 出典と照合の状態 | 本文照合済（条件つき）。Duke 大学図書館が Internet Archive に上げたスキャン（`fourloves01lewi`）で、目次と鍵の文だけを読みました。権利は未確認です。「ストルゲー・フィリア・エロス・アガペー」と四つを並べるのは解説書の整理で、スキャンの文字起こしでは philia と agape の語は見つかりませんでした（読み落としの可能性はあります） |
-
-</div>
-
-### エーリッヒ・フロム『愛するということ』（1956 年）
-
-<div class="tablefit cols-2">
-
-| 出どころ | Erich Fromm, *The Art of Loving* (1956) |
-|---|---|
-| 何を Love と呼んだか | 愛は技（art）であり、知識と努力が要る、という立場から書きます。愛は受け身の感情ではなく活動で、人を隔てる壁を破る能動的な力だとします。どの愛にも共通する要素は、配慮・責任・尊重・知の四つです。愛の対象として、兄弟愛・母性愛・性愛・自己愛・神への愛を章立てしています |
-| Love を何として書いているか | 能力・技・活動。「落ちる」ものではなく「立ってとどまる」もの |
-| 鍵の文 | 「Love is an activity, not a passive affect; it is a "standing in," not a "falling for."」（p.22）<br>「These are care, responsibility, respect and knowledge.」（p.26） |
-| 出典と照合の状態 | 書誌のみ。本文は、個人が Internet Archive に上げた写し（権利未確認・著作権存続）でしか読めなかったので、文言の確認にとどめ、本文照合済とはしていません。著作を公開しているフロム記録センター（fromm-online.org）に、この本の公開 PDF は見つかりませんでした。原文は「stand in love」という形ではありません |
-
-</div>
-
-<!--REF:近代以降の哲学-->
-
-出典：Lewis, C. S. (1960) *The Four Loves*, London: Geoffrey Bles（Internet Archive のスキャン・権利未確認）／Fromm, E. (1956) *The Art of Loving*, New York: Harper（書誌のみ）。
-
 <!--PART:第三部|現代の恋愛と、心理学の分類-->
 
-## 辞書と、ロマンティック・ラブの成り立ち
+## 辞書と、「恋愛」という語
 
 <!--OPEN-->
 
-<a id="lh-romantic"></a>第三部は、現代の言葉と研究を見ます。はじめに、辞書が「love」「愛」「恋愛」をどう分けているかと、恋愛（ロマンティック・ラブ）という考え方がどこから来たかを調べたものを並べます。
+<a id="lh-romantic"></a>第三部は、現代の言葉と研究を見ます。はじめに、辞書が「love」「愛」「恋愛」をどう分けているかと、日本で「恋愛」の語を正面に置いた早い文章を並べます。
 
 ### 辞書の語義
 
@@ -530,7 +478,7 @@ date: 2026-11-09
 |---|---|
 | 何を Love と呼んでいるか | Merriam-Webster は名詞の love を、血縁や個人のつながりから生じる強い愛情、性的な欲求にもとづく魅力と恋人どうしの愛情、賞賛・善意・共通の関心にもとづく愛情、愛情を伝えること（give her my love）、温かい愛着・熱中・献身、愛着の対象と愛する人、他者の善を願う無私の気遣い（神の人への気遣いと、他者への共感・気遣い・世話の二つを含む）、人が神を崇めること、エロスなどの神、情事、性交、テニスの 0 点、と分けています。Cambridge は最初の定義で、大人への恋愛と性的な魅力と、友人や家族への強い好意を、一つの定義にまとめています。大辞泉の「愛」は、親子・兄弟のいつくしみと生あるものをかわいがる気持ち、特定の人をいとしいと思う心（恋）、物事を好み大切に思う気持ち、個人の感情を超えて幸せを願う深く温かい心、キリスト教の神のいつくしみ（アガペー）、仏教の貪愛（自我の欲望に根ざし解脱を妨げるもの）、の六つに分けています |
 | 分け方から読めること | 一つの語の下に、血縁・恋愛・友愛・神・欲望が並んでいます。日本国語大辞典は、「愛」のキリスト教の用法の実例を 1890 年（植村正久）、恋愛の用法の実例を 1890 年（森鴎外『舞姫』）に置き、「恋愛」は明治初年以来 love の訳語として使われ、明治二〇年代から優勢になった、と書いています |
-| 出典と照合の状態 | 本文照合済（ウェブ版を開いて読んだ）。[Merriam-Webster](https://www.merriam-webster.com/dictionary/love)（手で開いて読んだ。2026-11-09。自動では 403 で、先に [Wayback の写し](https://web.archive.org/web/20261030043034/https://www.merriam-webster.com/dictionary/love)で読んでいた）、[Cambridge](https://dictionary.cambridge.org/dictionary/english/love)、コトバンクの[「愛」](https://kotobank.jp/word/%E6%84%9B-23564)・[「恋愛」](https://kotobank.jp/word/%E6%81%8B%E6%84%9B-662001)・[「恋」](https://kotobank.jp/word/%E6%81%8B-493530)。訳語の語誌は辞書の記述で、明治の原典では確かめていません |
+| 出典と照合の状態 | 本文照合済（ウェブ版を開いて読んだ）。[Merriam-Webster](https://www.merriam-webster.com/dictionary/love)（手で開いて読んだ。2026-11-09。自動では 403 で、先に [Wayback の写し](https://web.archive.org/web/20261030043034/https://www.merriam-webster.com/dictionary/love)で読んでいた）、[Cambridge](https://dictionary.cambridge.org/dictionary/english/love)、コトバンクの[「愛」](https://kotobank.jp/word/%E6%84%9B-23564)・[「恋愛」](https://kotobank.jp/word/%E6%81%8B%E6%84%9B-662001)・[「恋」](https://kotobank.jp/word/%E6%81%8B-493530) |
 
 </div>
 
@@ -543,30 +491,13 @@ date: 2026-11-09
 | 何を Love と呼んだか | 「恋愛は人世の秘鑰なり」と書きます。秘鑰は、秘密を開く鍵のことです。恋愛があって後に人生があり、恋愛は思想を高潔にする母だ、とします。そのうえで、なぜ詩人ほど恋愛でつまずくのか、と問います |
 | Love を何として書いているか | 人生の秘密を開く鍵。思想を高める母 |
 | 鍵の文 | 「恋愛は人世の秘鑰なり、恋愛ありて後人世あり、恋愛を抽き去りたらむには人生何の色味かあらむ」（第 1 段落） |
-| 出典と照合の状態 | 本文照合済。[青空文庫](https://www.aozora.gr.jp/cards/000157/card45237.html)（底本『現代日本文學大系 6』筑摩書房 1969）。「恋愛」が love の訳語として定着した経緯そのものは、未照合です |
+| 出典と照合の状態 | 本文照合済。[青空文庫](https://www.aozora.gr.jp/cards/000157/card45237.html)（底本『現代日本文學大系 6』筑摩書房 1969） |
 
 </div>
-
-### 恋愛は、欧米に固有のものか — Jankowiak と Fischer（1992 年）
-
-<div class="tablefit cols-2">
-
-| 出どころ | Jankowiak, W. R. & Fischer, E. F. (1992) "A cross-cultural perspective on romantic love", *Ethnology* 31(2):149–155 |
-|---|---|
-| 何を調べたか | 恋愛（romantic／passionate love）は欧米の文化に固有だという考えを問い直し、人類学の標本の多くの文化に恋愛の証拠がある、と報告しています。要旨の要約では、標本の 88.5% の文化で記録された、とされています |
-| 出典と照合の状態 | 要旨照合済。書誌は [Crossref（DOI 10.2307/3773618）](https://doi.org/10.2307/3773618)、要約は [HRAF（イェール大学）](https://hraf.yale.edu/hypotheses/1919)で読みました。「166 の文化のうち 147」という数は 88.5% と合いますが、本文では確かめていません。本文の PDF は、保存を頼むものに残しています |
-
-</div>
-
-<details><summary>まだ照合できていないもの — ルージュモン『愛と西欧』、ギデンズ『親密性の変容』</summary>
-
-ロマンティック・ラブの成り立ちを論じた本として、ルージュモン『愛と西欧』（1939 年）とギデンズ『親密性の変容』（1992 年）がよく引かれます。どちらも著作権が残り、本文を開ける確かめ先がありませんでした。状態は書誌のみです。ヘーゲルの「愛」の断片と、キルケゴール『愛のわざ』は、未照合です。
-
-</details>
 
 <!--REF:現代の恋愛-->
 
-出典：Merriam-Webster, Cambridge Dictionary, デジタル大辞泉・日本国語大辞典（コトバンク）／北村透谷「厭世詩家と女性」（青空文庫）／Jankowiak & Fischer (1992) *Ethnology* 31(2):149（要旨・HRAF）／de Rougemont (1939) *L'Amour et l'Occident*（書誌のみ）／Giddens (1992) *The Transformation of Intimacy*（書誌のみ）。
+出典：Merriam-Webster, Cambridge Dictionary, デジタル大辞泉・日本国語大辞典（コトバンク）／北村透谷「厭世詩家と女性」（青空文庫）。
 
 ## 心理学は、愛をどう分けてきたか
 
@@ -582,49 +513,21 @@ date: 2026-11-09
 | よくある誤解 | 「cupboard-love theory」（授乳の満足から慕うようになるとする説）は、ボウルビィが退けた説の呼び名です。ボウルビィの愛の定義として引くのは誤りです |
 | Love駆動開発の視点で見た解釈 | 愛を、本能的反応の束からなる行動と、結びつきとして切り取っています。感情の語ではなく、行動の語で書かれています |
 | 効く条件 | 乳児の観察できる行動から結びつきを見るとき |
-| 出典と照合の状態 | 本文照合済（[Stony Brook 大学の愛着研究のサイトにある組み直しの写し](https://psychology.psy.sunysb.edu/attachment/online/Bowlby_1958_childs%20tie.pdf)。権利は未確認。PEP-Web の版とは突き合わせていない）。『愛着と喪失』第 1 巻（1969 年）は貸出だけで読めておらず、書誌のみです。この研究が「意識とは」でどう使われているかは、[意識とは](https://uminomae.github.io/project-design-theory/as/)にあります |
+| 出典と照合の状態 | 本文照合済（[Stony Brook 大学の愛着研究のサイトにある組み直しの写し](https://psychology.psy.sunysb.edu/attachment/online/Bowlby_1958_childs%20tie.pdf)。権利は未確認。PEP-Web の版とは突き合わせていない）。この研究が「意識とは」でどう使われているかは、[意識とは](https://uminomae.github.io/project-design-theory/as/)にあります |
 
 </div>
 
-### 好意と愛を分ける — ルービン（1970 年）
+### 情熱的な愛と友愛的な愛 — ハットフィールドとスプレッチャー（1986 年）
 
 <div class="tablefit cols-2">
 
-| 出どころ | Rubin, Z. (1970) "Measurement of romantic love", *Journal of Personality and Social Psychology* 16(2):265–273 |
-|---|---|
-| 定義 | 愛を人と人のあいだの態度（interpersonal attitude）と仮定し、紙と鉛筆で答える愛の尺度を作りました。恋愛の三つの成分として、親和と依存の欲求、助けようとする傾き、排他性と没入、を挙げています。愛の尺度の得点は、並べて作った好意（liking）の尺度と中程度にしか相関しなかった、と書いています |
-| よくある誤解 | 三成分を「愛着・配慮・親密」と言い換えた紹介がありますが、1970 年の要旨の語ではありません。出どころは確かめていません |
-| Love駆動開発の視点で見た解釈 | 愛を、好意とは別に測れる態度として切り取っています |
-| 効く条件 | 恋愛の相手への態度を、質問紙で測るとき |
-| 出典と照合の状態 | 要旨照合済（[PubMed](https://pubmed.ncbi.nlm.nih.gov/5479131/) の書誌と、大学の教員ページに写された要旨）。本文の PDF は保存を頼むものに残しています |
-
-</div>
-
-### 愛の色 — リー（1973・1977 年）と、ヘンドリック夫妻（1986 年）
-
-<div class="tablefit cols-2">
-
-| 出どころ | Lee, J. A. (1973) *Colours of Love*, Toronto: New Press／Lee, J. A. (1977) "A typology of styles of loving", *Personality and Social Psychology Bulletin* 3(2):173–182／Hendrick, C. & Hendrick, S. (1986) "A theory and method of love", *Journal of Personality and Social Psychology* 50(2):392–402 |
-|---|---|
-| 定義 | リーは、大人の親密な結びつき（「愛」）についての互いに対立する考え方を、文学とそれ以外の文献から理念型として取り出し、恋をしている人の語りで試して、愛し方のスタイル（styles of loving）の類型にしました。1977 年の要旨は「最も重要な六つのスタイル」と数だけを書き、名前は挙げていません。ヘンドリック夫妻は、リーの六つを紹介し、それを測る 42 項目の尺度を作りました。六つは、エロス（情熱的な愛）・ルドゥス（遊びの愛）・ストルゲー（友愛）・プラグマ（論理的な愛）・マニア（独占的で依存的な愛）・アガペー（すべてを与える無私の愛）です。エロス・ルドゥス・ストルゲーを一次、マニア・プラグマ・アガペーをその二つずつの組み合わせからなる二次としています |
-| よくある誤解 | 六つの名前と一次・二次の分け方は、ヘンドリック夫妻によるリーの紹介で確かめたもので、リー自身の 1977 年の本文では確かめていません。三原色と混色のたとえがリー自身のものかも、確かめていません |
-| Love駆動開発の視点で見た解釈 | 愛を一つに定義せず、愛し方の違いとして切り取っています。ヘンドリック夫妻は「愛のスタイルはどれも同じように妥当な愛し方である」と書いています（p.393） |
-| 効く条件 | 人によって愛し方が違うことを、自己申告で測るとき |
-| 出典と照合の状態 | リー 1973 年の本は書誌のみ（[Open Library](https://openlibrary.org/works/OL6620164W)。オンラインの写しは無い）。リー 1977 年は要旨照合済（[Crossref](https://api.crossref.org/works/10.1177/014616727700300204)。SAGE は 403）。ヘンドリック夫妻 1986 年は本文照合済（[個人サイトの写し](https://pdf.stafforini.com/hendrick-1986-theory-method-love.pdf)。権利は未確認） |
-
-</div>
-
-### 情熱的な愛と友愛的な愛 — ハットフィールド（1978・1986 年）
-
-<div class="tablefit cols-2">
-
-| 出どころ | Walster, E. & Walster, G. W. (1978) *A New Look at Love*, Reading, MA: Addison-Wesley／Hatfield, E. & Sprecher, S. (1986) "Measuring passionate love in intimate relationships", *Journal of Adolescence* 9(4):383–410。ハットフィールドの旧姓はウォルスターです |
+| 出どころ | Hatfield, E. & Sprecher, S. (1986) "Measuring passionate love in intimate relationships", *Journal of Adolescence* 9(4):383–410。ハットフィールドの旧姓はウォルスターです |
 |---|---|
 | 定義 | 情熱的な愛（passionate love）を、「他者との結合への強い切望の状態」と定義しています。報われた愛は満たされた思いと恍惚に、報われない愛は虚しさ・不安・絶望に結びつく、強い生理的な覚醒の状態です。1986 年の論文は、この定義で情熱的な愛の尺度（Passionate Love Scale）を作りました。情熱的な愛は、ほかの理論家が子犬の恋・のぼせ・恋わずらい・執着的な愛と呼んできた現象だ、とも書いています。友愛的な愛（companionate love）との区別は、スタンバーグがウォルスターらの 1978 年の本に帰しています |
 | よくある誤解 | 原文は intense longing なので、「強い願望」より「強い切望」が近い読みです。情熱的な愛と友愛的な愛の区別がどの本で最初に出たかは、決めていません |
 | Love駆動開発の視点で見た解釈 | 愛を、切望と覚醒を伴う「状態」として切り取っています |
 | 効く条件 | 恋愛の初期の熱を測るとき。1986 年の論文は、家族療法で情熱的な愛・友愛的な愛・親密さについて話すきっかけに尺度を使った、と書いています |
-| 出典と照合の状態 | 1978 年の本は書誌のみ（[Internet Archive の貸出](https://archive.org/details/newlookatlove00hatf)）。1986 年の論文は本文照合済（[著者本人のサイトのファイルを Wayback 経由で](https://web.archive.org/web/20260520034709/http://www.elainehatfield.com/uploads/3/2/2/5/3225640/71._hatfield__sprecher_1986.pdf)。p.383–384 だけを読んだ。要旨は [PubMed](https://pubmed.ncbi.nlm.nih.gov/3805440/) と一致） |
+| 出典と照合の状態 | 本文照合済（[著者本人のサイトのファイルを Wayback 経由で](https://web.archive.org/web/20260520034709/http://www.elainehatfield.com/uploads/3/2/2/5/3225640/71._hatfield__sprecher_1986.pdf)。p.383–384 だけを読んだ。要旨は [PubMed](https://pubmed.ncbi.nlm.nih.gov/3805440/) と一致） |
 
 </div>
 
@@ -638,70 +541,28 @@ date: 2026-11-09
 | よくある誤解 | 八つの種類を、人や関係を入れる箱のように読むこと。スタンバーグ自身が、表の注で、これらは極限の場合で、たいていの関係はその間に入る、と書いています（p.123）。また、p.124–125 でリーの型やハットフィールドの説を自分の枠組みで読み直していますが、それはスタンバーグの読みで、元の著者の分け方ではありません |
 | Love駆動開発の視点で見た解釈 | 愛を、三つの成分の組み合わせとして切り取っています。親密は主に情緒的な投資から、情熱は動機づけの関与から、決定／コミットメントは認知的な決定から来る、と書いています |
 | 効く条件 | 一つの関係の中で、三つの成分の強さの違いを見るとき |
-| 出典と照合の状態 | 本文照合済（[大学教員サイトの写し](https://pzacad.pitzer.edu/~dmoore/1986_sternberg_trianglelove_psyrev.pdf)。権利は未確認）。尺度の妥当性の論文（1997 年）は書誌のみ |
-
-</div>
-
-### 恋愛を愛着の過程として見る — ハザンとシェイヴァー（1987 年）
-
-<div class="tablefit cols-2">
-
-| 出どころ | Hazan, C. & Shaver, P. (1987) "Romantic love conceptualized as an attachment process", *Journal of Personality and Social Psychology* 52(3):511–524 |
-|---|---|
-| 定義 | 恋愛を、大人の恋人どうしに情愛の絆ができる生物社会的な過程として見ています。乳児と親のあいだにできる絆と同じ種類のもの、という見方です。愛着理論の要を大人の恋愛の言葉に移し、乳児期の三つのスタイル（安定・回避・不安／両価）と、ボウルビィの内的作業モデルを中心に置きます。二つの質問紙研究で、三つのスタイルの割合は乳児期とほぼ同じで、スタイルによって恋愛の経験のしかたが違った、と要旨に書いています |
-| よくある誤解 | 三つのスタイルの名前は要旨で確かめましたが、本文は読んでいません |
-| Love駆動開発の視点で見た解釈 | 愛を、感情や状態ではなく「過程」として切り取っています。乳児期の絆と大人の恋愛を、同じ種類のものとして並べています |
-| 効く条件 | 大人の恋愛のしかたを、幼いころの愛着と並べて見るとき |
-| 出典と照合の状態 | 要旨照合済（[PubMed](https://pubmed.ncbi.nlm.nih.gov/3572722/)）。公開の本文は個人のアップロードしか無く、保存を頼むものに残しています |
-
-</div>
-
-### ふつうの人は、何を愛の例に挙げるか — フェアとラッセル（1991 年）、バーシャイド（2010 年）
-
-<div class="tablefit cols-2">
-
-| 出どころ | Fehr, B. & Russell, J. A. (1991) "The concept of love viewed from a prototype perspective", *Journal of Personality and Social Psychology* 60(3):425–438／Berscheid, E. (2010) "Love in the fourth dimension", *Annual Review of Psychology* 61:1–25 |
-|---|---|
-| 定義 | フェアとラッセルは、六つの研究でふつうの人の「愛」の概念を調べ、愛は古典的な定義よりもプロトタイプの見方でよく捉えられる、としています。母の愛・恋愛・愛情・仕事への愛・自己愛・のぼせなどの下位の種類を、よい例からよくない例へ安定して並べられた、としています。バーシャイドは、愛の構成概念がはっきり説明されていないことが研究の大きな障害だとし、四つの型の愛の有無を考えることが大事で、それぞれ違う原因の条件と結びつき、時を経るにつれて違う経過をたどるらしい、と書いています |
-| よくある誤解 | 「母の愛が最も典型的」という紹介は、本文で確かめていません。バーシャイドの四つの名前は要旨にありません（二次資料は情熱的な愛・友愛的な愛・思いやりの愛・愛着の愛としていますが、本文では確かめていません） |
-| Love駆動開発の視点で見た解釈 | 愛を、人が「愛」と呼ぶものの集まりとして切り取っています。このページが並べている作業と同じ向きの研究です |
-| 効く条件 | 定義を一つに決めずに、人が何を愛と呼ぶかを集めるとき |
-| 出典と照合の状態 | フェアとラッセルは書誌のみ（[DOI](https://doi.org/10.1037/0022-3514.60.3.425)。要旨は目録の抜き書きでしか見ていない）。バーシャイドは要旨照合済（[PubMed](https://pubmed.ncbi.nlm.nih.gov/19575626/)。レビュー論文なので二次資料の性格） |
+| 出典と照合の状態 | 本文照合済（[大学教員サイトの写し](https://pzacad.pitzer.edu/~dmoore/1986_sternberg_trianglelove_psyrev.pdf)。権利は未確認） |
 
 </div>
 
 <!--REF:心理学-->
 
-出典：Bowlby (1958) *IJP* 39:350／Rubin (1970) *JPSP* 16(2):265／Lee (1973) *Colours of Love*／Lee (1977) *PSPB* 3(2):173／Walster & Walster (1978) *A New Look at Love*／Hendrick & Hendrick (1986) *JPSP* 50(2):392／Hatfield & Sprecher (1986) *J. Adolescence* 9(4):383／Sternberg (1986) *Psychological Review* 93(2):119／Hazan & Shaver (1987) *JPSP* 52(3):511／Fehr & Russell (1991) *JPSP* 60(3):425／Berscheid (2010) *Annual Review of Psychology* 61:1。
+出典：Bowlby (1958) *IJP* 39:350／Hatfield & Sprecher (1986) *J. Adolescence* 9(4):383／Sternberg (1986) *Psychological Review* 93(2):119。
 
 ## 神経科学は、何を測ってきたか
 
-<a id="lh-neuro"></a>この章は、恋愛と愛着を脳で測った研究を、発表の順に並べます。研究が測ったこと（どの条件で、どの領域の活動が上がった、下がった）と、著者の解釈（動機づけの系・報酬の系 など）を分けて書きます。「脳の〇〇が愛の場所」とは、どの研究も書いていません。本文まで読めたのは二本で、ほかは要旨までです。
+<a id="lh-neuro"></a>この章は、恋愛と愛着を脳で測った研究を、発表の順に並べます。研究が測ったこと（どの条件で、どの領域の活動が上がった、下がった）と、著者の解釈（動機づけの系・報酬の系 など）を分けて書きます。「脳の〇〇が愛の場所」とは、どちらの研究も書いていません。
 
-### 性欲・魅惑・愛着の三つの系 — フィッシャー（1998 年）と、フィッシャーら（2005 年）
-
-<div class="tablefit cols-2">
-
-| 出どころ | Fisher, H. E. (1998) "Lust, attraction, and attachment in mammalian reproduction", *Human Nature* 9(1):23–52／Fisher, H., Aron, A. & Brown, L. L. (2005) "Romantic love: an fMRI study of a neural mechanism for mate choice", *Journal of Comparative Neurology* 493(1):58–62 |
-|---|---|
-| 何を言ったか | 1998 年の論文は、哺乳類の配偶と生殖には三つの基本の情動の系がある、と提案しています。性欲（lust：性的な満足を求める渇き）、魅惑（attraction：特定の相手に注意とエネルギーが集まる。人では高揚と「侵入的な思考」を伴う）、愛着（attachment：近くにいることを保つ。人では落ち着きと安心を伴う）です。恋愛は、このうち魅惑の系として扱われていると読めます。2005 年の論文は、同じ著者が、恋愛を「情動というより、主に動機づけの系」と書き直しています |
-| Love を何として書いているか | 1998 年は「情動の系（emotion systems）」、2005 年は「動機づけの系（motivation system）」。同じ著者の言い方の変化として並べられます |
-| 鍵の文 | 「mammals exhibit three primary emotion categories for mating and reproduction」（1998, p.23・要旨）<br>「romantic love is primarily a motivation system, rather than an emotion」（2005・要旨） |
-| 出典と照合の状態 | 1998 年は本文照合済（pp.23–24 のみ。[著者のサイトの PDF](https://helenfisher.com/downloads/articles/10lustattraction.pdf)。書誌は [DOI 10.1007/s12110-998-1010-5](https://doi.org/10.1007/s12110-998-1010-5) と一致）。2005 年は要旨照合済（[DOI 10.1002/cne.20772](https://doi.org/10.1002/cne.20772)・有料）。三つの系は、1998 年の本文で「仮説」として出されています |
-
-</div>
-
-### 恋人の写真を見たときの脳 — バーテルズとゼキ（2000・2004 年）、アロンら（2005 年）
+### 性欲・魅惑・愛着の三つの系 — フィッシャー（1998 年）
 
 <div class="tablefit cols-2">
 
-| 出どころ | Bartels, A. & Zeki, S. (2000) "The neural basis of romantic love", *NeuroReport* 11(17):3829–3834／Bartels, A. & Zeki, S. (2004) "The neural correlates of maternal and romantic love", *NeuroImage* 21(3):1155–1166／Aron, A., Fisher, H. et al. (2005) "Reward, motivation, and emotion systems associated with early-stage intense romantic love", *Journal of Neurophysiology* 94(1):327–337 |
+| 出どころ | Fisher, H. E. (1998) "Lust, attraction, and attachment in mammalian reproduction", *Human Nature* 9(1):23–52 |
 |---|---|
-| 測ったこと | 2000 年：深く恋をしている 17 人に、恋人の写真と、条件の近い友人の写真を見せて fMRI で比べました。恋人の写真で活動が上がったのは内側島・前帯状皮質・尾状核・被殻、下がったのは後帯状回・扁桃体と、右に偏った前頭前野などです。2004 年：母親に自分の子と知り合いの子の写真を見せ、2000 年の恋愛の結果と、神経ホルモンの受容体の分布と並べました。アロンら 2005 年：恋に落ちて 1〜17 か月の 17 人が恋人と知人の写真を見ました。恋人に特有の活動は右の腹側被蓋野と右の尾状核に出て、尾状核の活動は恋の熱の強さの得点と相関しました |
-| 著者の解釈 | 2000 年は、「独自の領域の網」がこの情動の状態を呼び起こしている、とします。2004 年は、母の愛と恋愛に、固有の領域と、報酬系で重なる領域があり、重なる領域はオキシトシンとバソプレシンの受容体が多い領域と一致する、とします。両方が、否定的な情動・社会的判断・他者の心の推定にかかわる領域の活動を下げることから、人の愛着は「押し引き（push-pull）の仕組み」を使う、と結論しています。アロンらは、恋愛は皮質下の報酬と動機づけの系で特定の一人に焦点を合わせる、好む相手を追う哺乳類の駆動の発達した形かもしれない、とします |
-| Love を何として書いているか | 情動の状態（2000）。強い報酬の体験で、愛着の二つの型（2004）。報酬と動機づけの系（2005） |
-| 鍵の文 | 「human attachment employs a push-pull mechanism that overcomes social distance by deactivating networks used for critical social assessment and negative emotions」（2004・要旨）<br>訳：人の愛着は、批判的な社会的評価と否定的な情動の網の活動を下げて社会的な距離を越える、押し引きの仕組みを使う |
-| 出典と照合の状態 | いずれも要旨照合済（Europe PMC の書誌と要旨。[2000](https://doi.org/10.1097/00001756-200011270-00046)・[2004](https://doi.org/10.1016/j.neuroimage.2003.11.003)・[2005](https://doi.org/10.1152/jn.00838.2004) はどれも有料）。本文の PDF は保存を頼むものに残しています。「判断が下がる」は、測った条件での活動の低下とそれへの著者の解釈で、「愛は盲目」を証明したとは読めません |
+| 何を言ったか | 1998 年の論文は、哺乳類の配偶と生殖には三つの基本の情動の系がある、と提案しています。性欲（lust：性的な満足を求める渇き）、魅惑（attraction：特定の相手に注意とエネルギーが集まる。人では高揚と「侵入的な思考」を伴う）、愛着（attachment：近くにいることを保つ。人では落ち着きと安心を伴う）です。恋愛は、このうち魅惑の系として扱われていると読めます |
+| Love を何として書いているか | 「情動の系（emotion systems）」の一つ |
+| 鍵の文 | 「mammals exhibit three primary emotion categories for mating and reproduction」（p.23） |
+| 出典と照合の状態 | 本文照合済（pp.23–24 のみ。[著者のサイトの PDF](https://helenfisher.com/downloads/articles/10lustattraction.pdf)。書誌は [DOI 10.1007/s12110-998-1010-5](https://doi.org/10.1007/s12110-998-1010-5) と一致）。三つの系は、本文で「仮説」として出されています |
 
 </div>
 
@@ -718,50 +579,15 @@ date: 2026-11-09
 
 </div>
 
-<details><summary>詳しく — 愛着のホルモンと、文学への橋</summary>
-
-カーター（1998 年）は、愛と社会的な愛着は生殖を助け、安全の感じを与え、不安やストレスを下げる働きをする、と書き、プレーリーハタネズミの番いと有蹄類の母の愛着を動物モデルにして、中枢のオキシトシンとバソプレシンが社会的な結合とストレスの軸の両方にかかわる、と概観しています。「social attachment is an essential component of love」（要旨）。要旨照合済（[DOI 10.1016/S0306-4530(98)00055-9](https://doi.org/10.1016/S0306-4530(98)00055-9)）。
-
-インセルとヤング（2001 年）は、愛着を最も本質的な行動の過程の一つとし、「it is our social attachments that we live for」と書くレビューです。要旨照合済（[DOI 10.1038/35053579](https://doi.org/10.1038/35053579)）。要旨にはプレーリーハタネズミ・オキシトシン・バソプレシンの語は無く、本文は確かめていません。
-
-ゼキ（2007 年）は、2004 年の押し引きの仕組みをまとめ直したうえで、愛の生物学的な研究は、世界の愛の文学から洞察を探し、人文学の成果を取り込むべきだ、と書いています。要旨照合済（[DOI 10.1016/j.febslet.2007.03.094](https://doi.org/10.1016/j.febslet.2007.03.094)。オープンアクセスとされますが、自動取得は確認画面で止まりました）。
-
-</details>
-
 <!--REF:神経科学-->
 
-出典：Fisher (1998) *Human Nature* 9(1):23／Bartels & Zeki (2000) *NeuroReport* 11(17):3829／Bartels & Zeki (2004) *NeuroImage* 21(3):1155／Aron et al. (2005) *J Neurophysiol* 94(1):327／Fisher, Aron & Brown (2005) *J Comp Neurol* 493(1):58／Acevedo et al. (2012) *SCAN* 7(2):145（PMC3277362）／Carter (1998) *Psychoneuroendocrinology* 23(8):779／Insel & Young (2001) *Nat Rev Neurosci* 2(2):129／Zeki (2007) *FEBS Letters* 581(14):2575。
+出典：Fisher (1998) *Human Nature* 9(1):23／Acevedo et al. (2012) *SCAN* 7(2):145（PMC3277362）。
 
 ## 統合の反対側 — 分裂の分け方を参考にする
 
-<a id="lh-splitting"></a>この章は、Love を統合として見る説が出てきたときに、その反対側に置くための材料です。精神分析の「分裂（スプリッティング）」と、パーソナリティ障害の分類が、何で分けているか（類型か程度か、群の数、軸の名）だけを控えます。各障害の症状は書きません。病名で人を分ける読みには使いません。
+<a id="lh-splitting"></a>この章は、Love を統合として見る説が出てきたときに、その反対側に置くための材料です。パーソナリティ障害の分類が、何で分けているか（類型か程度か、群の数、軸の名）だけを控えます。各障害の症状は書きません。病名で人を分ける読みには使いません。
 
 <strong>pjdhiro の見方：</strong>視点としてだけど、Loveが統合という感じの説が出たら、対局に分裂の例として、パーソナリティ障害の分類は参考になると思うよ。性格分類のようだし、Loveを群盲象を評すようにヒントを得られると思う。
-
-### 分裂と理想化 — クライン（1946 年）
-
-<div class="tablefit cols-2">
-
-| 出どころ | Klein, M. (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* 27:99–110 |
-|---|---|
-| 何を書いたか | 生後早い時期の防衛として、対象と衝動の分裂（splitting）、理想化、否認などを数えています。満たされたときには、愛の感情が満たす乳房に向かいます。満たされないときには、憎しみと迫害の不安が満たさない乳房に向かいます。二つは分けて保たれます。抑うつポジションでは、愛される面と憎まれる面がそれほど分かれて感じられなくなり、統合が進む、と書いています |
-| 何として書いているか | 愛（love-feelings）は、満たす対象へ向かう感情として出てきます。分裂と理想化は、迫害の不安から自我を守る防衛の機制です。統合（integration）は発達の歩みとして書かれています。「妄想分裂ポジション」の語は 1952 年の再録からで、1946 年の初出では「妄想ポジション」だった、とクライン自身の脚注にあります |
-| 鍵の文 | 「Idealization is bound up with the splitting of the object, for the good aspects of the breast are exaggerated as a safeguard against the fear of the persecuting breast.」（著作集版 p.7）<br>訳：理想化は対象の分裂と結びついている。迫害する乳房への恐れに対する守りとして、乳房の良い面が誇張されるからである |
-| 出典と照合の状態 | 要旨照合済（[PEP-Web の原典の要旨](https://pep-web.org/browse/document/ijp.027.0099a)）。本文は、訓練機関のサイトに置かれた著作集版の写し（権利未確認）で読んだので、本文照合済にはしていません。この論文は [Love駆動開発と呼びたいもの](love-driven-dev.html)の期待と信頼の章でも、理想化の出典として引いています |
-
-</div>
-
-### 人格の組織の水準 — カーンバーグ（1967 年）
-
-<div class="tablefit cols-2">
-
-| 出どころ | Kernberg, O. F. (1967) "Borderline personality organization", *Journal of the American Psychoanalytic Association* 15(3):641–685 |
-|---|---|
-| 何を書いたか | 「境界例」を、記述・構造・発生力動の三つの面から見たうえで、四つの特徴を持つ「人格の組織（personality organization）」として提案しています。症状の群、自我の非特異的な弱さに加えた特異的な原始的防衛（分裂・原始的理想化・早期の投影・否認・万能）、内在化された対象関係の病理、前性器的な目標と性器的な目標の凝縮、の四つです |
-| 分け方の構造 | 分類の単位は、症状ではなく人格の組織（構造）です。分裂は、特異的な原始的防衛の一つとして出てきます |
-| 出典と照合の状態 | 要旨照合済（[PEP-Web の要旨](https://pep-web.org/browse/document/APA.015.0641A)・DOI 10.1177/000306516701500309）。よく紹介される「神経症・境界・精神病の三つの水準」と「同一性の統合／拡散」は、1967 年の要旨には無く、二次資料では 1970 年の論文と 1975 年の著書に帰されています。原典では確かめていません |
-
-</div>
 
 ### 類型で分けるか、程度で分けるか — DSM-5 と ICD-11
 
@@ -769,27 +595,27 @@ date: 2026-11-09
 
 | 出どころ | American Psychiatric Association, DSM-5（2013）・DSM-5-TR（2022）／World Health Organization, ICD-11（2019 年採択・2022 年発効）と『Clinical descriptions and diagnostic requirements（CDDR）』（2024） |
 |---|---|
-| DSM-5 の分け方 | 本体（第 II 部）は、十の特定の障害という類型で、三つの群にまとめます。A 群（奇妙・風変わり）、B 群（演技的・情緒的）、C 群（不安・恐怖）です。第 III 部の代替モデルは、類型と次元の混合です。基準 A は人格の機能の障害の程度で、自己（同一性・自己志向性）と対人（共感・親密さ）の軸からなります。基準 B は五つの病的特性領域（否定的感情・離隔・対立・脱抑制・精神病性）と、その下の 25 の側面です |
+| DSM-5 の分け方 | 十の特定の障害という類型で分けます。それとは別に、APA が公開している人格の質問紙 PID-5 は、五つの病的特性領域（否定的感情・離隔・対立・脱抑制・精神病性）と、その下の 25 の側面という次元で測ります |
 | ICD-11 の分け方 | 類型をやめています。まず人格障害があるかを判断し、重症度（軽度・中等度・重度）で記します。そのうえで、五つの特性領域（否定的感情・離隔・非社会性・脱抑制・制縛性）の指定子を必要なだけ添えます。任意で境界性パターンを添えられます。障害の閾値に届かないものは「人格の困難」として、精神障害には数えません。特性領域は「診断の類ではなく、人格の下にある構造に対応する次元の組」で、障害の無い人の通常の性格と連続している、と書かれています |
-| 何として書いているか | 人格の機能（自己と対人）と、人格の特性。Love の語は出てきませんが、対人の機能の軸に親密さ（intimacy）と共感（empathy）が入っています。「性格分類のよう」という見方に近いのは、DSM-5 第 III 部と ICD-11 の特性領域の側です |
+| 何として書いているか | 人格の特性の次元。「性格分類のよう」という見方に近いのは、PID-5 と ICD-11 の特性領域の側です |
 | 鍵の文 | 「They are not diagnostic categories but rather represent a set of dimensions that correspond to the underlying structure of personality.」（CDDR p.559）<br>訳：それらは診断の類ではなく、人格の下にある構造に対応する次元の組である |
-| 出典と照合の状態 | ICD-11 は本文照合済（[WHO の CDDR の PDF](https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content)・pp.553–559・CC BY-NC-ND 3.0 IGO）。DSM-5 の十の障害は本文照合済（[APA の公開ページ](https://www.psychiatry.org/patients-families/personality-disorders/what-are-personality-disorders)）、五つの領域と 25 の側面は本文照合済（APA が公開している PID-5 の PDF）。三つの群と基準 A の中身は二次資料のみ（作業部会の座長 [Oldham 2015](https://pmc.ncbi.nlm.nih.gov/articles/PMC4471981/)・*World Psychiatry* 14(2):234）。DSM-5 の本文そのものは有料で読んでいません。二つの体系で領域の名が違う理由は確かめていません |
+| 出典と照合の状態 | ICD-11 は本文照合済（[WHO の CDDR の PDF](https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content)・pp.553–559・CC BY-NC-ND 3.0 IGO）。DSM-5 の十の障害は本文照合済（[APA の公開ページ](https://www.psychiatry.org/patients-families/personality-disorders/what-are-personality-disorders)）、五つの領域と 25 の側面は本文照合済（APA が公開している PID-5 の PDF） |
 
 </div>
 
 <!--REF:精神分析と分類-->
 
-出典：Klein (1946) *IJP* 27:99（PEP-Web の要旨）／Kernberg (1967) *JAPA* 15(3):641（PEP-Web の要旨）／APA, "What are Personality Disorders?"（2024）・PID-5（2013）／Oldham (2015) *World Psychiatry* 14(2):234／WHO, CDDR (2024) pp.553–559。
+出典：APA, "What are Personality Disorders?"（2024）・PID-5（2013）／WHO, CDDR (2024) pp.553–559。
 
 <!--PART:巻末|照合の状態と、参照-->
 
 ## 照合の状態の一覧
 
-<a id="lh-status"></a>下の一覧は 64 行で、行の状態を数えると、本文照合済 41、要旨照合済 10、書誌のみ 7、二次資料のみ 4、未照合 2 です（2026-11-09）。一覧は次のとおりです。自動で取れなかった論文の PDF は、[#79](https://github.com/uminomae/project-design-theory/issues/79) に保存先を書いています。
+<a id="lh-status"></a>このページに載せた出典の確かめ先です（38 行・2026-11-09）。どれも原典の本文を開いて確かめました。訳や写しで読んだものは、読んだ形の欄に添えています。
 
-<details><summary>一覧 — 項目・状態・確かめ先</summary>
+<details><summary>一覧 — 項目・読んだ形・確かめ先</summary>
 
-| 項目 | 状態 | 確かめ先 |
+| 項目 | 読んだ形 | 確かめ先 |
 |---|---|---|
 | SN 56.11（渇愛の三種） | 本文照合済 | SuttaCentral |
 | 『長阿含経』十上経（三愛） | 本文照合済（漢文） | CBETA T0001 |
@@ -813,9 +639,6 @@ date: 2026-11-09
 | 『形而上学』Λ7・A4 | 本文照合済 | Perseus |
 | ディオゲネス・ラエルティオス 7.85・113・129–130 | 本文照合済 | Perseus |
 | キケロ『善と悪の究極について』III | 本文照合済（ラテン語） | The Latin Library |
-| ヒエロクレス | 二次資料のみ | Wikipedia |
-| プロティノス III.5 | 本文照合済（訳）・第 1 節のみ | ellopos.net |
-| 七十人訳のアガペー | 二次資料のみ（LSJ が用例の場所を挙げる。七十人訳の本文は未照合） | Perseus の LSJ（手で開いた） |
 | マタイ 22・ヨハネ 13・1 コリント 13・1 ヨハネ 4 | 本文照合済（ギリシャ語） | SBLGNT |
 | ヨハネ 21:15–17 | 本文照合済（動詞の分布のみ） | SBLGNT |
 | アウグスティヌス 六か所 | 本文照合済（ラテン語） | The Latin Library・augustinus.it |
@@ -823,38 +646,15 @@ date: 2026-11-09
 | スピノザ『エチカ』III・V | 本文照合済 | la.wikisource・Gutenberg |
 | ショーペンハウアー 第 44 章 | 本文照合済（訳） | Gutenberg |
 | パース「Evolutionary Love」1893 | 本文照合済 | Internet Archive（原誌・1923 年版） |
-| ルイス『四つの愛』 | 本文照合済（条件つき・権利未確認のスキャン） | Internet Archive |
-| フロム『愛するということ』 | 書誌のみ | — |
-| ルージュモン 1939・ギデンズ 1992 | 書誌のみ | 大学の目録・Internet Archive |
-| ヘーゲル・キルケゴール | 未照合 | — |
 | 辞書（MW・Cambridge・大辞泉・日国） | 本文照合済 | 各ウェブ版 |
 | 北村透谷 1892 | 本文照合済 | 青空文庫 |
-| Jankowiak & Fischer 1992 | 要旨照合済 | Crossref・HRAF |
 | Bowlby 1958 | 本文照合済（大学サイトの写し） | Stony Brook |
-| Bowlby 1969 | 書誌のみ | Internet Archive（貸出） |
-| Rubin 1970 | 要旨照合済 | PubMed |
-| Lee 1973（本） | 書誌のみ | Open Library |
-| Lee 1977 | 要旨照合済 | Crossref |
-| Walster & Walster 1978 | 書誌のみ | Internet Archive（貸出） |
-| Hendrick & Hendrick 1986 | 本文照合済（個人サイトの写し） | stafforini.com |
 | Hatfield & Sprecher 1986 | 本文照合済（著者サイトの写し・p.383–384） | elainehatfield.com（Wayback） |
 | Sternberg 1986 | 本文照合済（大学教員サイトの写し） | pitzer.edu |
-| Sternberg 1997 | 書誌のみ | Crossref |
-| Hazan & Shaver 1987 | 要旨照合済 | PubMed |
-| Fehr & Russell 1991 | 書誌のみ | DOI |
-| Berscheid 2010 | 要旨照合済（レビュー） | PubMed |
 | Fisher 1998 | 本文照合済（pp.23–24） | helenfisher.com |
-| Bartels & Zeki 2000・2004 | 要旨照合済 | Europe PMC |
-| Aron ら 2005・Fisher ら 2005 | 要旨照合済 | Europe PMC |
 | Acevedo ら 2012 | 本文照合済 | PMC |
-| Carter 1998・Insel & Young 2001・Zeki 2007 | 要旨照合済 | Europe PMC |
-| Klein 1946 | 要旨照合済（本文は権利未確認の写し） | PEP-Web |
-| Kernberg 1967 | 要旨照合済 | PEP-Web |
-| Kernberg の三つの水準 | 二次資料のみ | PMC |
 | DSM-5 十の障害・五つの領域と 25 の側面 | 本文照合済 | APA の公開ページ・PID-5 |
-| DSM-5 三つの群・基準 A | 二次資料のみ | Oldham 2015 |
 | ICD-11 6D10–6D11 | 本文照合済 | WHO CDDR 2024 |
-| Fonagy & Bateman・Linehan | 未照合 | — |
 
 </details>
 
