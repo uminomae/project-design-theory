@@ -2,28 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "pd",
+      "name": "site",
       "runtimeExecutable": "bash",
-      "runtimeArgs": ["-c", "cd pd && python3 -m http.server ${PORT:-3010}"],
+      "runtimeArgs": ["-c", "bash scripts/serve.sh ${PORT:-3010}"],
       "port": 3010
-    },
-    {
-      "name": "as",
-      "runtimeExecutable": "bash",
-      "runtimeArgs": ["-c", "cd as && python3 serve.py ${PORT:-3003}"],
-      "port": 3003
-    },
-    {
-      "name": "ks",
-      "runtimeExecutable": "bash",
-      "runtimeArgs": ["-c", "cd ks && python3 -m http.server ${PORT:-3001}"],
-      "port": 3001
-    },
-    {
-      "name": "cs",
-      "runtimeExecutable": "bash",
-      "runtimeArgs": ["-c", "cd cs && python3 serve.py ${PORT:-3002}"],
-      "port": 3002
     }
   ]
 }

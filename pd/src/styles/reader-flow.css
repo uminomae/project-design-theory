@@ -45,6 +45,15 @@ body.reader-flow .reader-lead {
     text-align: left;
     margin-bottom: 1.5rem;
 }
+/* 冒頭のまとめの見出し（問い・見立て）：部の番号と同じ系統の小さなラベルを、段落の上に置く */
+body.reader-flow .reader-lead__label {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-family: var(--serif-jp);
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+}
 
 /* 草稿バナー（cs draft-banner 型） */
 body.reader-flow .draft-banner {
