@@ -131,3 +131,24 @@ pjdhiro「分析が鋭くなる。バイアスが減るの2つの他に。……
 - Herzog & Hertwig (2009) の数値は、抄録に無いので使わない。
 
 **本文での書き方**：〔原〕と〔抄〕のものは出典を付けて書く。本しかないものは、本の主張を一文で紹介する程度にとどめ、「（紹介文と書評で確かめた）」と添える。照合できないものは、本文に書かないか、「〜と呼ばれる考え方」として名前だけを紹介する。
+
+## 6. 本文に引くもの（2026-11-08・pjdhiro「引用箇所が読めるURLへのリンクを貼って」「それがないものは私が読めないので、外してほしい。または私が知っていることを引用してほしい」）
+
+引用した箇所を読める URL があるものだけを、本文に引く。
+
+| 引く | URL |
+|---|---|
+| Henderson (1970) | https://www.bcg.com/publications/1970/strategy-the-product-portfolio |
+| Reeves ほか (2014) | https://www.bcg.com/en-gb/publications/2014/growth-share-matrix-bcg-classics-revisited |
+| Herzog & Hertwig (2009) | https://doi.org/10.1111/j.1467-9280.2009.02271.x （抄録） |
+| Whitehead (1925) | https://www.gutenberg.org/ebooks/68611 （第 3 章） |
+| Lord, Lepper & Preston (1984) | https://doi.org/10.1037/0022-3514.47.6.1231 （抄録） |
+| Morewedge ほか (2015) | https://openaccess.city.ac.uk/id/eprint/12324/ |
+| Barber & Odean (2000) | https://faculty.haas.berkeley.edu/odean/Papers%20current%20versions/Individual_Investor_Performance_Final.pdf |
+| Munger (1994) | https://fs.blog/great-talks/a-lesson-on-worldly-wisdom/ |
+| Busse ほか (2017) | https://doi.org/10.1177/1094428116641191 （抄録） |
+| Campbell (1976) | https://jmde.journals.publicknowledgeproject.org/index.php/jmde_1/article/view/297 |
+| Jobs (2005) | https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says （pjdhiro が挙げたもの。Stanford の頁は自動の取得を拒んだので、複数の転載で中身を確かめた） |
+
+外したもの：Tetlock・Whetten・Lawrence & Lorsch・Muller・マクナマラの誤り・Mitchell ほか・Taleb・Lowy & Hood・Minto・Weick & Sutcliffe・Kahneman ほか (2011)（本だけ、または引用箇所を読める URL が無い）。
+
