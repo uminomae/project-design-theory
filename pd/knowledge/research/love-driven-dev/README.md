@@ -88,6 +88,8 @@ pjdhiro「このセッションはclaudeの常識と私を擦り合わせる作�
 工事中のあいだは `noindex`（スクリーナーと同じ扱い・pd#135 の「noindex のページは sitemap・llms.txt に入れない」に従う）。
 本文が揃ったら noindex を外し、`sitemap.xml`・`llms.txt`・HOME の JSON-LD に入れる。
 
+2026-11-08：noindex を外した（pjdhiro「Love駆動開発だけ外す」・#71。工事中の札は残す）。`sitemap.xml`・`llms.txt` に入れた。HOME の JSON-LD には前から入っている。
+
 ## 3. 素材（出所）
 
 | 素材 | 使う章 |

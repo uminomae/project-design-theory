@@ -8,7 +8,7 @@
   デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
   - シェーダー背景（reader-app.js）と tokens.css の変数は pd VI を継承する
   - ページ固有スタイルは src/styles/reader-flow.css（tokens の上に載せる。独自パレット新造禁止）
-  - 工事中のあいだは noindex。本文が揃ったら外し、sitemap.xml・llms.txt に入れる（README §2）
+  - noindex は外した（pjdhiro 2026-11-08・#71）。sitemap.xml・llms.txt に入れてある
 -->
 <!--
   ============================================================================
@@ -43,7 +43,6 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
     <title>Love駆動開発と呼びたいもの β | Project Design</title>
     <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html">
     <link rel="icon" href="../favicon.ico">
