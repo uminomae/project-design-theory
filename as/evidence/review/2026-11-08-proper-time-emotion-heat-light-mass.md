@@ -37,7 +37,7 @@ pjdhiro（2026-11-08）：「熱の波間の渦としての質量が、時間に
 
 - 式：シュヴァルツシルトのブラックホールでは、時間を虚時間にすると（t = −iτ）、τ は周期 8πM を持つ。この周期が逆温度 β になる（自然単位 G = c = 1。単位を戻すと 8πGM/c³ で、時間の長さ）。質量 M がそのまま時間の長さを決める。
 - 確かめ：Schulz (2014) *Review on the quantization of gravity*, arXiv:1409.7977, 式 (473) の前後で、「t = −iτ とすると τ は周期 8πM を持つ」「β = 8πM」とあるのを読んだ。元の論文 Gibbons & Hawking (1977) *Action integrals and partition functions in quantum gravity*, Phys. Rev. D 15, 2752 は読んでいない。単位を戻したのは Claude。
-- 注意：この導き方（ユークリッドの経路積分）には批判もある（Banihashemi & Jacobson, arXiv:2411.00267 ほか）。
+- 注意：この導き方（量子重力の分配関数を鞍点で近似すること）は、足元が確かでないとも言われる（Banihashemi & Jacobson, arXiv:2411.00267 の要旨「stands on shaky ground」）。
 
 ## これから
 
