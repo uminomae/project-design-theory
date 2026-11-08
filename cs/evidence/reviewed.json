@@ -76,6 +76,11 @@
       "id": "D06",
       "file": "evidence-D06-astronomy.md",
       "reviewed": "2026-11-09"
+    },
+    {
+      "id": "D07",
+      "file": "evidence-D07-engineering.md",
+      "reviewed": "2026-11-09"
     }
   ]
 }
