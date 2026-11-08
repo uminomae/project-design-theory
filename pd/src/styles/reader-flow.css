@@ -64,6 +64,24 @@ body.reader-flow .reader-lead__question {
     font-weight: 600;
 }
 
+/* 冒頭の概要の見出し（pjdhiro 2026-11-09「概要だね」）：第一部より前の四段が、ページ全体の概要だと分かるように */
+body.reader-flow .reader-summary__title {
+    font-family: var(--serif-jp);
+    font-size: 1.1rem;
+    letter-spacing: 0.2em;
+    color: var(--ink);
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 0.3rem;
+    margin: 1.5rem 0 1rem;
+}
+body.reader-flow .reader-lead__list {
+    margin: 0.5rem 0 0;
+    padding-left: 1.2rem;
+}
+body.reader-flow .reader-lead__list li {
+    margin-bottom: 0.4rem;
+}
+
 /* 草稿バナー（cs draft-banner 型） */
 body.reader-flow .draft-banner {
     background: var(--glass-bg-soft);
