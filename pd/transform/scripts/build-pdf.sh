@@ -27,6 +27,10 @@
 #   bash ../pd/transform/scripts/build-pdf.sh \
 #     knowledge/report.md output/report.pdf
 #
+# 表紙の日付:
+#   既定は作った日。中身が変わらない作り直し（リンクの直しなど）では、PDF_DATE=YYYY-MM-DD で元の日付を保つ。
+#   例: PDF_DATE=2026-07-17 bash build-pdf.sh PAPER.md PAPER.pdf
+#
 # 互換性:
 #   bash 3.2以上（macOS標準）。${var^^} は使用しない。
 #
@@ -140,7 +144,11 @@ check_deps() {
 make_header_ja() {
     local title="$1" subtitle="$2"
     local date_str
-    date_str=$(TZ=Asia/Tokyo date "+%Y年%m月%d日")
+    if [ -n "${PDF_DATE:-}" ]; then
+        date_str=$(python3 -c 'import sys, datetime; print(datetime.date.fromisoformat(sys.argv[1]).strftime("%Y年%m月%d日"))' "$PDF_DATE")
+    else
+        date_str=$(TZ=Asia/Tokyo date "+%Y年%m月%d日")
+    fi
 
     cat << YAML
 ---
@@ -175,7 +183,7 @@ YAML
 make_header_en() {
     local title="$1" subtitle="$2"
     local date_str
-    date_str=$(TZ=Asia/Tokyo date "+%Y-%m-%d")
+    date_str="${PDF_DATE:-$(TZ=Asia/Tokyo date "+%Y-%m-%d")}"
 
     cat << YAML
 ---
