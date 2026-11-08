@@ -95,4 +95,16 @@ export function createHomeToc({ root = document } = {}) {
         }
     }, { passive: true });
     spy();
+
+    /* 本文の左に目次が収まるときだけ常設にする（toc.css の .toc-fits）。
+       左 20px ＋ 幅 206px ＋ 間 16px = 242px */
+    const content = root.querySelector('#main-content');
+    const fit = () => {
+        if (!content) return;
+        /* .container は左右に padding を持つので、文字の始まる位置で測る */
+        const textLeft = content.getBoundingClientRect().left + parseFloat(getComputedStyle(content).paddingLeft || 0);
+        document.body.classList.toggle('toc-fits', textLeft >= 242);
+    };
+    window.addEventListener('resize', fit, { passive: true });
+    fit();
 }

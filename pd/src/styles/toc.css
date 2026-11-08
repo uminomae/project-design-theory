@@ -118,21 +118,22 @@
     line-height: 1.35;
 }
 :is(body.reader-flow, body.home-toc) #toc a.active .toc-sub2 { color: var(--navy); }
-@media (min-width: 1260px) {
-    /* PC: 左マージンに常設 TOC。ボタン・背景は不要 */
-    :is(body.reader-flow, body.home-toc) #toc {
-        left: 20px;
-        right: auto;
-        top: 92px;
-        height: auto;
-        max-height: calc(100vh - 116px);
-        width: 206px;
-        transform: none;
-        box-shadow: var(--glass-shadow);
-        border: 1px solid var(--glass-border-soft);
-        border-radius: 12px;
-    }
-    :is(body.reader-flow, body.home-toc) #toc .toc-x { display: none; }
-    :is(body.reader-flow, body.home-toc) #toc-btn,
-    :is(body.reader-flow, body.home-toc) #toc-bd { display: none; }
+/* PC: 左の余白に常設 TOC。本文の左端が目次の右端より右にあるとき（.toc-fits）だけにする。
+   幅だけで決めると、本文の幅しだいで目次が本文に重なる（2026-11-08・pjdhiro）。
+   .toc-fits は reader-flow.js / ui/home-toc.js が本文の位置を測って付け外しする */
+:is(body.reader-flow, body.home-toc).toc-fits #toc {
+    left: 20px;
+    right: auto;
+    top: 92px;
+    height: auto;
+    max-height: calc(100vh - 116px);
+    width: 206px;
+    transform: none;
+    transition: none;
+    box-shadow: var(--glass-shadow);
+    border: 1px solid var(--glass-border-soft);
+    border-radius: 12px;
 }
+:is(body.reader-flow, body.home-toc).toc-fits #toc .toc-x { display: none; }
+:is(body.reader-flow, body.home-toc).toc-fits #toc-btn,
+:is(body.reader-flow, body.home-toc).toc-fits #toc-bd { display: none; }
