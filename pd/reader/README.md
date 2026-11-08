@@ -15,6 +15,7 @@
 | `intrinsic-motivation.html` | `knowledge/research/intrinsic-motivation/READER-intrinsic-motivation.md`（内発的動機とは・#29。調べは同ディレクトリ `SURVEY-00-first-pass.md`） | flow（トップと同じ Menu。**工事中＝noindex**。pjdhiro の確認後に noindex を外し sitemap・llms.txt へ。Love駆動開発の心の言葉の章の内発的動機の表からリンク） |
 | `psychological-safety.html` | `knowledge/research/psychological-safety/READER-psychological-safety.md`（心理的安全性とは・#26。調べは同ディレクトリ SURVEY-00〜04） | flow（トップと同じ Menu。**工事中＝noindex**・本文は骨格承認後。冒頭バナーに工事中。Love駆動開発の心の言葉の章の心理的安全性の表からリンク） |
 | `developmental-stages.html` | `knowledge/research/developmental-stages/READER-developmental-stages.md`（精神の発達段階とは・#27。調べは同ディレクトリ README） | flow（トップと同じ Menu。**工事中＝noindex**・本文は骨格承認後。冒頭バナーに工事中。Love駆動開発の心の言葉の章の内発的動機の「詳しくは」の行からリンク） |
+| `love-history.html` | `knowledge/research/love-history/READER-love-history.md`（Love とは、どう言われてきたか・#79。Love と呼ばれてきたものを、仏教の流れと西洋哲学の流れに沿って歴史の順に並べ、現代の恋愛の定義と心理学の分類・神経科学を足す。誰が何を Love と呼んだかを、出典と照合の状態つきで並べる。段への当てはめは Love駆動開発の結論の側（#80）で行う） | flow（トップと同じ Menu。**工事中＝noindex**。Love駆動開発の結論の章「Love と呼びたいものとは」からリンクする予定） |
 | `management-drivers.html` | `knowledge/research/management-drivers/READER-management-drivers.md`（経営学の考え方は、どこまで効くか。七つの駆動源の考え方を、よく効く場面と、正解として広げたときの取り違えで見る。Love駆動開発の「経営学が見てきた七つの駆動源」の章の詳しくを切り出したもの） | flow（トップと同じ Menu。**工事中＝noindex**。pjdhiro の確認後に noindex を外し sitemap・llms.txt へ。Love駆動開発の七つの駆動源の章からリンク） |
 
 ## このページが何で、どう育てるか
