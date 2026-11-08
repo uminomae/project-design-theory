@@ -14,7 +14,7 @@ description: 創造とは（cs）の全体レビューで、一つの分野（D0
 
 ## 始める前に（セッションで一度）
 
-1. CLAUDE.md、`docs/rules/` の四本、本体の checkout の `.cache/session/` のその日と前の日の記録、`docs/cs-review/README.md`・`history.md` を読む。
+1. CLAUDE.md、`docs/rules/`（CLAUDE.md の表のとおり。理論を扱うので `stance-theories.md` も）、本体の checkout の `.cache/session/` のその日と前の日の記録、`docs/cs-review/README.md`・`history.md` を読む。
 2. `git log --oneline -20 develop` で、ほかのセッションが cs・wiki・`docs/rules/`・`docs/cs-review/` を直していないかを見る。
 3. Issue #73（cs の全体レビュー）のチェックリストで、次の分野を決める。README の「判断が要ること」に答えが出ていないものがあっても、照合は進める。
 
