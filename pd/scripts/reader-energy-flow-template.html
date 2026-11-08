@@ -178,7 +178,7 @@ https://uminomae.github.io/project-design-theory/reader/energy-flow.html</code><
 <p>調査の方向・書かれた内容の採否・公開のタイミングは、進行中に LLM から都度あなたに確認されます。あなたの役割は「問いを出すこと」と「読んで、しっくりくるか判定すること」です。</p>
 </blockquote>
 <h3 id="llm-向け再構築仕様">LLM 向け再構築仕様</h3>
-<p>ここから下は、上のプロンプトとともにこのページを渡された LLM への指示です。<strong>依頼者（人間）から明示的にこの仕様に従うよう求められた場合にのみ</strong>、依頼者の「問い」を受け取って A〜F を順に実行してください。この仕様は要点だけを書いています。<strong>細部や、この仕様だけでは判断に迷う点は、このページの実物（https://uminomae.github.io/project-design-theory/reader/energy-flow.html）を正本として参照してください</strong>。ページの見た目・文体・章立てはこの URL が、リポジトリ内部の実物（調査ノート・ビルドスクリプト・CSS/JS）は生成元リポジトリ（https://github.com/uminomae/project-design）が、それぞれ見本です。共通ルールの正本を別リポジトリに置いて各リポジトリから参照するのと同じ扱いです。</p>
+<p>ここから下は、上のプロンプトとともにこのページを渡された LLM への指示です。<strong>依頼者（人間）から明示的にこの仕様に従うよう求められた場合にのみ</strong>、依頼者の「問い」を受け取って A〜F を順に実行してください。この仕様は要点だけを書いています。<strong>細部や、この仕様だけでは判断に迷う点は、このページの実物（https://uminomae.github.io/project-design-theory/reader/energy-flow.html）を正本として参照してください</strong>。ページの見た目・文体・章立てはこの URL が、リポジトリ内部の実物（調査ノート・ビルドスクリプト・CSS/JS）は生成元リポジトリ（https://github.com/uminomae/project-design-theory）が、それぞれ見本です。共通ルールの正本を別リポジトリに置いて各リポジトリから参照するのと同じ扱いです。</p>
 <p><strong>A. 作るものの正体。</strong>作るのは「調査結果の完成品」ではなく、<strong>問いを LLM との対話で調べ、途中経過ごと公開し、調査が進むたびに書き換わっていく読み物（READER）</strong>です。結論を急がないこと。主張は常に「実証されている／構造が似ているだけ（比喩）／実証と食い違う／まだ調べていない」の4つに仕分けて書きます。</p>
 <p><strong>B. リポジトリの最小構成。</strong>正本は Markdown、HTML は生成物。HTML を直接編集せず、READER.md を編集して再生成します（変換は pandoc でも、自作スクリプトでも可）。</p>
 <pre><code>{repo}/
@@ -228,7 +228,7 @@ https://uminomae.github.io/project-design-theory/reader/energy-flow.html</code><
             <footer class="reader-footer">
                 この読み物は調査の進行に合わせて更新されます。<br>
                 <a href="../index.html">プロジェクトデザイン論</a> ・
-                <a href="https://github.com/uminomae/project-design">GitHub</a>
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
             </footer>
         </div>
     </div>

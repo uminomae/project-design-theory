@@ -235,7 +235,7 @@ export const TRANSLATIONS = {
     "howto.copied": "OK!",
     "howto.prompt.basic.label": "基本プロンプト",
     "howto.prompt.basic.code":
-      "https://github.com/uminomae/project-design\n\nこのrepoと関連repoを読んでください。\nこのプロジェクトの知見やフレームワークを活用して\n「○○」を手伝ってください。関連repoも参照してください。",
+      "https://github.com/uminomae/project-design-theory\n\nこのrepoを読んでください。\nこのプロジェクトの知見やフレームワークを活用して\n「○○」を手伝ってください。",
     "howto.research.heading": "A. 調査・分析に使う",
     "howto.research.desc":
       "このプロジェクトの理論構造や調査手法を、自分のテーマに転用できます。",
@@ -249,17 +249,17 @@ export const TRANSLATIONS = {
       "「間主観性の視点を使って、チームの関係性を分析したい」",
     "howto.prompt.research.label": "調査向けプロンプト",
     "howto.prompt.research.code":
-      "https://github.com/uminomae/project-design\n\nこのrepoと関連repoを読んで、中にある理論構造\n（Doing/Being の二軸、創造の5段階モデル、\n間主観性の意識モデル、三角測量など）を参考に、\n「○○」というテーマを多角的に分析してください。",
+      "https://github.com/uminomae/project-design-theory\n\nこのrepoを読んで、中にある理論構造\n（Doing/Being の二軸、創造の5段階モデル、\n間主観性の意識モデル、三角測量など）を参考に、\n「○○」というテーマを多角的に分析してください。",
     "howto.harness.heading": "B. LLM協働環境を自分のプロジェクトに導入する",
     "howto.harness.desc":
-      "CLAUDE.md・hooks・skills・agents などのハーネス設計を参考にできます。",
+      "CLAUDE.md と docs/rules/（判断の仕方・誤りの型・書き方・調べ方）の設計を参考にできます。",
     "howto.harness.ex1":
-      "「CLAUDE.mdやhooksの設計を参考に、LLM協働環境を構築したい」",
+      "「CLAUDE.mdと規約の設計を参考に、LLM協働環境を構築したい」",
     "howto.harness.ex2":
-      "「マルチエージェント構成（Claude/Gemini/Codex）を設計したい」",
+      "「LLMが繰り返す誤りを型にまとめ、書く前に確かめる仕組みを作りたい」",
     "howto.prompt.harness.label": "ハーネス導入プロンプト",
     "howto.prompt.harness.code":
-      "https://github.com/uminomae/project-design\n\nこのrepoと関連repoの .claude/ ディレクトリ構造を読んで、\n仮説検証型の文献調査をLLMに自律実行させるための\nハーネス（CLAUDE.md、hooks、skills、agents）の設計を分析して、\n私のプロジェクトにも導入する方法を提案してください。",
+      "https://github.com/uminomae/project-design-theory\n\nこのrepoの CLAUDE.md と docs/rules/ を読んで、\nLLMと協働して調べ・書くための規約\n（判断の仕方・誤りの型・書き方・調べ方）の設計を分析して、\n私のプロジェクトにも導入する方法を提案してください。",
     "howto.thinking.heading": "C. 思考の整理・対人スキル",
     "howto.thinking.ex1":
       "「感情処理やメタ認知のフレームワークを私の状況に当てはめて」",
@@ -268,7 +268,7 @@ export const TRANSLATIONS = {
       "「5段階モデル（場→波→縁→渦→束）で創作プロセスを設計して」",
     "howto.map.heading": "なぜ1つのURLで済むのか",
     "howto.map.desc":
-      "project-design（pd）は理論のトップに位置し、READMEから関連repoへリンクしています。LLMがそれらを辿り、目的に最適な知見を引き出します。",
+      "四つの論を一つのrepoにまとめています（pd/・cs/・as/・ks/）。LLMがそれらを辿り、目的に最適な知見を引き出します。",
     "howto.map.colTitle": "ページタイトル",
     "howto.map.colContent": "コンテンツ概要",
     "howto.map.pd":
@@ -283,10 +283,10 @@ export const TRANSLATIONS = {
     "howto.map.ks":
       "違和感・未定義要件・弱い信号を「保持すべき問い」として扱う思考フレームワーク",
     "howto.tips.1": "具体的に「何をしたいか」を伝えるほど良い結果が出ます",
-    "howto.tips.2": "「関連repoも見て」と追加すると、深掘りされます",
+    "howto.tips.2": "「cs/・as/・ks/ も見て」と追加すると、深掘りされます",
     "howto.tips.3": "Claude.ai、ChatGPT、Gemini など、どのLLMでも使えます",
     "howto.note":
-      "MIT License — 商用利用・改変・再配布すべて自由です。出典表示の義務はありません。詳細は各リポジトリの LICENSE ファイルをご覧ください。",
+      "MIT License — 商用利用・改変・再配布すべて自由です。出典表示の義務はありません。詳細は repo の LICENSE ファイルをご覧ください。",
     "slides.trigger": "プレゼン資料",
     "slides.title": "プレゼン資料",
   },
@@ -414,7 +414,7 @@ export const TRANSLATIONS = {
     "howto.copied": "OK!",
     "howto.prompt.basic.label": "Basic Prompt",
     "howto.prompt.basic.code":
-      'https://github.com/uminomae/project-design\n\nPlease read this repo and its related repos.\nUsing the knowledge and frameworks in this project,\nhelp me with "○○". Please also refer to related repos.',
+      "https://github.com/uminomae/project-design-theory\n\nPlease read this repo.\nUsing the knowledge and frameworks in this project,\nhelp me with \"○○\".",
     "howto.research.heading": "A. Use for Research & Analysis",
     "howto.research.desc":
       "Apply the theoretical structures and research methods in this project to your own topic.",
@@ -428,17 +428,17 @@ export const TRANSLATIONS = {
       '"I want to analyze team dynamics using the intersubjectivity perspective"',
     "howto.prompt.research.label": "Research Prompt",
     "howto.prompt.research.code":
-      'https://github.com/uminomae/project-design\n\nPlease read this repo and related repos, and using the\ntheoretical structures within (Doing/Being dual-axis,\nFive-Stage Model of Creation, awareness model of\nintersubjectivity, triangulation, etc.), analyze the topic\n"○○" from multiple perspectives.',
+      "https://github.com/uminomae/project-design-theory\n\nPlease read this repo, and using the\ntheoretical structures within (Doing/Being dual-axis,\nFive-Stage Model of Creation, awareness model of\nintersubjectivity, triangulation, etc.), analyze the topic\n\"○○\" from multiple perspectives.",
     "howto.harness.heading": "B. Set Up LLM Collaboration in Your Project",
     "howto.harness.desc":
-      "Reference the harness design: CLAUDE.md, hooks, skills, agents, and more.",
+      "Reference the design of CLAUDE.md and docs/rules/ (how to judge, recurring error types, how to write, how to research).",
     "howto.harness.ex1":
-      '"I want to build an LLM collaboration environment based on the CLAUDE.md and hooks design"',
+      "\"I want to build an LLM collaboration environment based on the CLAUDE.md and rules design\"",
     "howto.harness.ex2":
-      '"I want to design a multi-agent setup (Claude/Gemini/Codex)"',
+      "\"I want to sort an LLM's recurring errors into types and check them before writing\"",
     "howto.prompt.harness.label": "Harness Setup Prompt",
     "howto.prompt.harness.code":
-      "https://github.com/uminomae/project-design\n\nPlease read the .claude/ directory structure of this repo\nand related repos, analyze the harness design (CLAUDE.md,\nhooks, skills, agents) for autonomous LLM-driven hypothesis\nresearch, and suggest how to introduce it to my project.",
+      "https://github.com/uminomae/project-design-theory\n\nPlease read CLAUDE.md and docs/rules/ in this repo,\nanalyze the design of the rules for researching and\nwriting with an LLM (how to judge, recurring error types,\nhow to write, how to research), and suggest how to\nintroduce it to my project.",
     "howto.thinking.heading": "C. Organize Thinking & Interpersonal Skills",
     "howto.thinking.ex1":
       '"Apply the emotional processing and metacognition framework to my situation"',
@@ -448,7 +448,7 @@ export const TRANSLATIONS = {
       '"Design a creative process using the 5-stage model (Ba → Wave → En → Vortex → Bundle)"',
     "howto.map.heading": "Why One URL Is Enough",
     "howto.map.desc":
-      "project-design (pd) sits at the top of the theory structure, with README links to related repos. The LLM follows these to find the best knowledge for your purpose.",
+      "The four theories live in one repo (pd/, cs/, as/, ks/). The LLM follows them to find the best knowledge for your purpose.",
     "howto.map.colTitle": "Page Title",
     "howto.map.colContent": "Content Overview",
     "howto.map.pd":
@@ -465,10 +465,10 @@ export const TRANSLATIONS = {
     "howto.tips.1":
       "The more specific you are about your goal, the better the results",
     "howto.tips.2":
-      'Adding "also check related repos" enables deeper exploration',
+      "Adding \"also check cs/, as/, ks/\" enables deeper exploration",
     "howto.tips.3": "Works with any LLM: Claude.ai, ChatGPT, Gemini, etc.",
     "howto.note":
-      "MIT License — Free for commercial use, modification, and redistribution. No attribution required. See the LICENSE file in each repository for details.",
+      "MIT License — Free for commercial use, modification, and redistribution. No attribution required. See the LICENSE file in the repo for details.",
     "slides.trigger": "Slides",
     "slides.title": "Presentation Slides",
   },

@@ -129,4 +129,4 @@ LLM のプロジェクト知識として使う場合:
 
 著者: pjdhiro
 ホームページ: https://uminomae.github.io/pjdhiro/
-リポジトリ: https://github.com/uminomae/creation-space
+リポジトリ: https://github.com/uminomae/project-design-theory（cs/）

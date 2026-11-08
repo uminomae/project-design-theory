@@ -135,7 +135,7 @@
       <span id="fetched">読み込み中…</span>
       <button class="rf" onclick="load()">最新に更新</button>
       <a href="sources.html">原典リスト ↗</a>
-      <a href="https://github.com/uminomae/creation-space/commits/develop" target="_blank" rel="noopener">変更履歴 ↗</a>
+      <a href="https://github.com/uminomae/project-design-theory/commits/main/cs" target="_blank" rel="noopener">変更履歴 ↗</a>
       <a href="https://github.com/uminomae/project-design-theory/issues/54" target="_blank" rel="noopener">計画 ↗</a>
     </div>
   </header>
@@ -234,7 +234,7 @@
 </div>
 
 <script>
-const REPO = "uminomae/creation-space";
+const REPO = "uminomae/project-design-theory";
 const DONE = [
   ["D13","Deleuze 1966","シモンドンの個体化＝創造論の核心"],
   ["D22","Nonaka 2000","知識創造 SECI と「場（ba）」"],
@@ -307,7 +307,7 @@ function cleanMsg(m){
 }
 async function loadCommits(){
   try{
-    const res=await fetch("https://api.github.com/repos/"+REPO+"/commits?sha=develop&per_page=9",
+    const res=await fetch("https://api.github.com/repos/"+REPO+"/commits?sha=main&path=cs&per_page=9",
       {headers:{Accept:"application/vnd.github+json"}});
     if(!res.ok) throw new Error("HTTP "+res.status);
     const arr=await res.json();

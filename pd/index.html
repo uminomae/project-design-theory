@@ -559,11 +559,11 @@
                                 <span data-i18n-key="howto.copy">コピー</span>
                             </button>
                         </div>
-                        <pre class="howto-prompt__code" id="prompt-basic" data-i18n-key="howto.prompt.basic.code">https://github.com/uminomae/project-design
+                        <pre class="howto-prompt__code" id="prompt-basic" data-i18n-key="howto.prompt.basic.code">https://github.com/uminomae/project-design-theory
 
-このrepoと関連repoを読んでください。
+このrepoを読んでください。
 このプロジェクトの知見やフレームワークを活用して
-「○○」を手伝ってください。関連repoも参照してください。</pre>
+「○○」を手伝ってください。</pre>
                     </div>
                 </section>
 
@@ -585,9 +585,9 @@
                                 <span data-i18n-key="howto.copy">コピー</span>
                             </button>
                         </div>
-                        <pre class="howto-prompt__code" id="prompt-research" data-i18n-key="howto.prompt.research.code">https://github.com/uminomae/project-design
+                        <pre class="howto-prompt__code" id="prompt-research" data-i18n-key="howto.prompt.research.code">https://github.com/uminomae/project-design-theory
 
-このrepoと関連repoを読んで、中にある理論構造
+このrepoを読んで、中にある理論構造
 （Doing/Being の二軸、創造の5段階モデル、
 間主観性の意識モデル、三角測量など）を参考に、
 「○○」というテーマを多角的に分析してください。</pre>
@@ -597,10 +597,10 @@
                 <!-- Part 2B: ハーネス導入 -->
                 <section class="howto-section">
                     <h3 data-i18n-key="howto.harness.heading">B. LLM協働環境を自分のプロジェクトに導入する</h3>
-                    <p class="howto-desc" data-i18n-key="howto.harness.desc">CLAUDE.md・hooks・skills・agents などのハーネス設計を参考にできます。</p>
+                    <p class="howto-desc" data-i18n-key="howto.harness.desc">CLAUDE.md と docs/rules/（判断の仕方・誤りの型・書き方・調べ方）の設計を参考にできます。</p>
                     <ul class="howto-examples">
-                        <li data-i18n-key="howto.harness.ex1">「CLAUDE.mdやhooksの設計を参考に、LLM協働環境を構築したい」</li>
-                        <li data-i18n-key="howto.harness.ex2">「マルチエージェント構成（Claude/Gemini/Codex）を設計したい」</li>
+                        <li data-i18n-key="howto.harness.ex1">「CLAUDE.mdと規約の設計を参考に、LLM協働環境を構築したい」</li>
+                        <li data-i18n-key="howto.harness.ex2">「LLMが繰り返す誤りを型にまとめ、書く前に確かめる仕組みを作りたい」</li>
                     </ul>
                     <div class="howto-prompt">
                         <div class="howto-prompt__head">
@@ -610,11 +610,11 @@
                                 <span data-i18n-key="howto.copy">コピー</span>
                             </button>
                         </div>
-                        <pre class="howto-prompt__code" id="prompt-harness" data-i18n-key="howto.prompt.harness.code">https://github.com/uminomae/project-design
+                        <pre class="howto-prompt__code" id="prompt-harness" data-i18n-key="howto.prompt.harness.code">https://github.com/uminomae/project-design-theory
 
-このrepoと関連repoの .claude/ ディレクトリ構造を読んで、
-仮説検証型の文献調査をLLMに自律実行させるための
-ハーネス（CLAUDE.md、hooks、skills、agents）の設計を分析して、
+このrepoの CLAUDE.md と docs/rules/ を読んで、
+LLMと協働して調べ・書くための規約
+（判断の仕方・誤りの型・書き方・調べ方）の設計を分析して、
 私のプロジェクトにも導入する方法を提案してください。</pre>
                     </div>
                 </section>
@@ -632,7 +632,7 @@
                 <!-- Part 3: repo マップ -->
                 <section class="howto-section">
                     <h3 data-i18n-key="howto.map.heading">なぜ1つのURLで済むのか</h3>
-                    <p class="howto-desc" data-i18n-key="howto.map.desc">project-design（pd）は理論のトップに位置し、READMEから関連repoへリンクしています。LLMがそれらを辿り、目的に最適な知見を引き出します。</p>
+                    <p class="howto-desc" data-i18n-key="howto.map.desc">四つの論を一つのrepoにまとめています（pd/・cs/・as/・ks/）。LLMがそれらを辿り、目的に最適な知見を引き出します。</p>
                     <table class="howto-repo-table">
                         <thead>
                             <tr>
@@ -666,13 +666,13 @@
                     <h3>Tips</h3>
                     <ul class="howto-tips">
                         <li data-i18n-key="howto.tips.1">具体的に「何をしたいか」を伝えるほど良い結果が出ます</li>
-                        <li data-i18n-key="howto.tips.2">「関連repoも見て」と追加すると、深掘りされます</li>
+                        <li data-i18n-key="howto.tips.2">「cs/・as/・ks/ も見て」と追加すると、深掘りされます</li>
                         <li data-i18n-key="howto.tips.3">Claude.ai、ChatGPT、Gemini など、どのLLMでも使えます</li>
                     </ul>
                 </section>
 
                 <section class="howto-section--note">
-                    <p data-i18n-key="howto.note">MIT License — 商用利用・改変・再配布すべて自由です。出典表示の義務はありません。詳細は各リポジトリの LICENSE ファイルをご覧ください。</p>
+                    <p data-i18n-key="howto.note">MIT License — 商用利用・改変・再配布すべて自由です。出典表示の義務はありません。詳細は repo の LICENSE ファイルをご覧ください。</p>
                 </section>
 
             </div>
