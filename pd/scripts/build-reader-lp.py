@@ -367,13 +367,22 @@ def build(SRC: Path, TPL: Path, OUT: Path, STYLE: str) -> None:
         )
 
     page = TPL.read_text(encoding="utf-8")
-    page = page.replace("<!--BODY-->", html).replace("<!--UPDATED-->", updated)
+    page = page.replace("<!--BODY-->", html).replace("<!--UPDATED-->", UPDATED_MARK)
     # 状態は日付とバージョンで示す（pjdhiro 2026-10-24）。バージョンはスクリーナーの正本 JSON から取る
     if "<!--VERSION-->" in page:
         if OUT.name not in SCREENER_DATA:
             sys.exit(f"ERROR: <!--VERSION--> needs a data source ({OUT.name})")
         version = json.loads(SCREENER_DATA[OUT.name].read_text(encoding="utf-8"))["version"]
         page = page.replace("<!--VERSION-->", version)
+
+    # 中身が今の HTML と同じなら、今の HTML の日付を保ち、書き換えない。
+    # git の最終コミット日は、移動やリンクの一括置換でも進むので、それだけでは日付を変えない
+    # （repo の引っ越しで全ページが 2026-11-07 になりかけた。pjdhiro 2026-11-08）
+    kept = kept_date(OUT, page)
+    if kept:
+        print(f"SAME: {OUT.relative_to(ROOT)} (updated {kept} のまま)")
+        return
+    page = page.replace(UPDATED_MARK, updated)
 
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(page, encoding="utf-8")
@@ -384,6 +393,23 @@ def build(SRC: Path, TPL: Path, OUT: Path, STYLE: str) -> None:
     print(f"OK: {OUT.relative_to(ROOT)} ({len(page):,} bytes, updated {updated})")
 
     update_sitemap_lastmod(OUT, updated)
+
+
+UPDATED_MARK = "\x00UPDATED\x00"
+
+
+def kept_date(out: Path, page: str) -> "str | None":
+    """日付の所を除いて out と page が同じなら、out の日付を返す。違えば None。"""
+    if not out.exists():
+        return None
+    parts = page.split(UPDATED_MARK)
+    pattern = (
+        re.escape(parts[0])
+        + r"(?P<d>\d{4}-\d{2}-\d{2}|unknown)"
+        + r"(?P=d)".join(re.escape(p) for p in parts[1:])
+    )
+    m = re.fullmatch(pattern, out.read_text(encoding="utf-8"), re.S)
+    return m.group("d") if m else None
 
 
 def update_sitemap_lastmod(out: Path, updated: str) -> None:
