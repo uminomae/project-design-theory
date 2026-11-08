@@ -309,7 +309,7 @@ pjdhiro は、この創造の形を、大海と波の像にいちばん近いと
 <div class="reader-linkcards">
 <a class="reader-linkcard glow-link" href="https://uminomae.github.io/project-design-theory/as/">
 <img class="reader-linkcard__thumb" src="../assets/thumbs/awareness-space.jpg" alt="" width="720" height="378" loading="lazy">
-<span class="reader-linkcard__body"><span class="reader-linkcard__title">意識とは</span><span class="reader-linkcard__sub">「意識とは何か」を生存と信頼の二軸で探る。分けた先に現れる二つの信号の、論拠を探している場所。</span><span class="reader-linkcard__url">uminomae.github.io/project-design-theory/as</span></span>
+<span class="reader-linkcard__body"><span class="reader-linkcard__title">意識とは</span><span class="reader-linkcard__sub">人は何で世界を切り取っているか。生存と信頼の信号から、意識という名前を当てた渦を見る。</span><span class="reader-linkcard__url">uminomae.github.io/project-design-theory/as</span></span>
 </a>
 </div>
 
@@ -333,7 +333,7 @@ pjdhiro は、この創造の形を、大海と波の像にいちばん近いと
 
 <strong>pjdhiro の例：</strong>お金を追っていたつもりが、実は、負けると惨めだから、つまり人との間での自分の位置を気にしていた。
 
-「意識とは」は、多くの苦しみは、信頼軸の問題を生存軸の達成で解こうとする誤適用から生じる、と置いています。事業でいえば、「価値は、どこで生まれるのか」の章の[利益と長期の問い](#ldd-profit)がその例です。
+「意識とは」は以前、多くの苦しみは、信頼軸の問題を生存軸の達成で解こうとする誤適用から生じる、と置いていました。いまは、二つが取り違えられている場面の一つとして読んでいます。事業でいえば、「価値は、どこで生まれるのか」の章の[利益と長期の問い](#ldd-profit)がその例です。
 
 </details>
 
@@ -363,7 +363,7 @@ pjdhiro は、この創造の形を、大海と波の像にいちばん近いと
 
 <strong>pjdhiro のたとえ：</strong>欠損駆動思考と呼んでいる私の体感をたとえるなら、虚軸に値があって、しかも、認知上は 0 の直観です。
 
-虚軸は、回転の掛け算から来た言葉です。数に −1 を掛けると、向きが反対になります。数直線の上で 180 度回したことになります。2 回掛けると −1 になる数を i と書き、i を 1 回掛けると 90 度回ります。i の付いた数が並ぶ軸は、もとの数直線と直角に立ちます。これが虚軸です（くわしくは前提知識のページ「[回転の掛け算](rotation-multiplication.html)」）。直角に立つ軸の値は、もとの軸の上で測ると 0 になります。地図の上から高さを測ると、どれほど高い山でも 0 と出るのと似ています。
+虚軸は、回転の掛け算で見ると分かりやすい軸です。数に −1 を掛けると、向きが反対になります。数直線の上で 180 度回したことになります。自分自身を掛けると −1 になる数を i と書き、i を 1 回掛けると 90 度回ります。i の付いた数が並ぶ軸は、もとの数直線と直角に立ちます。これが虚軸です（くわしくは前提知識のページ「[回転の掛け算](rotation-multiplication.html)」）。直角に立つ軸の値は、もとの軸の上で測ると 0 になります。地図の上から高さを測ると、どれほど高い山でも 0 と出るのと似ています。
 
 pjdhiro は、「考えて決める」行動の軸と直角に、存在の軸が立っているかもしれない、と見ています。言葉や数値の記号は、「考えて決める」軸の上に並ぶものです。前の章「人は、生存と信頼の信号で世界を切り取る」で、記号の上では 0 と出るところでも体は何かを受け取っている、と書いたのは、この 0 のことです。
 
@@ -758,7 +758,7 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 - <span id="term-vortex">**波間の渦**</span>：言葉や記号で切り取れるのは、人が認知できた大きさの世界、海の波間に見えた渦のほう、というたとえ。渦は波と、波は海とひと続きです（[初出](#ldd-field)）。
 - <span id="term-signals">**生存と信頼の信号**</span>：「意識とは」が置く、人が世界を切り取る二つの方向。生き延びられるかどうか（生存）と、つながっていられるかどうか（信頼）です（[初出](#ldd-signals)）。
 - <span id="term-kesson">**欠損**</span>：「欠損駆動思考」の言葉で、予想と現実の誤差を、意識が「欠け」として捉えた主観的経験（[初出](#ldd-kesson)）。
-- <span id="term-imaginary">**虚軸**</span>：回転の掛け算から来た言葉。もとの数直線と直角に立つ軸で、その上の値は、もとの軸の上で測ると 0 になります。pjdhiro は、欠損の体感を「虚軸に値があって、しかも、認知上は 0 の直観」とたとえます（[初出](#ldd-kesson)）。
+- <span id="term-imaginary">**虚軸**</span>：回転の掛け算で見ると分かりやすい軸。もとの数直線と直角に立つ軸で、その上の値は、もとの軸の上で測ると 0 になります。pjdhiro は、欠損の体感を「虚軸に値があって、しかも、認知上は 0 の直観」とたとえます（[初出](#ldd-kesson)）。
 - <span id="term-hold">**抱持**</span>：「欠損駆動思考」の言葉で、欠損に気づいたとき、すぐに答えを出さず、問いのまま持ち続けること（[初出](#ldd-kesson)）。
 
 ## なぜこの問いに来たか — 背景と経緯
