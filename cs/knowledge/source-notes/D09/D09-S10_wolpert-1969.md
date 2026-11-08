@@ -36,7 +36,7 @@
 
 ### 主張 1: パターン形成は位置情報の特定と解釈という2段階に分離できる
 
-> "It is suggested that pattern formation is at least a two-step process. First, and independent of molecular differentiation, is the specification of positional information. Then the cells differentiate according to the interpretation of the positional information. The nature of the interpretation will depend on the cells' genome and its positional history." (p.18)
+> "It should be clear that the concepts developed here suggest that pattern formation is at least a two-step process. First, and independent of molecular differentiation, is the specification of positional information. Then the cells differentiate according to the interpretation of the positional information. The nature of the interpretation will depend on the cells' genome and its positional history." (p.18)
 
 パターン形成を「座標付け」と「読み出し」に分離する点がモデルの核心。これにより、遺伝子変異がパターンを変える機構（解釈の変化）とサイズ不変性（位置情報の相対性）が統一的に説明される。
 
@@ -116,3 +116,5 @@ Table 1で具体的な計測値を示す（ヒドラ外胚葉60細胞、ウニ�
 - cs 5段階 schema: `knowledge/schema/five-stages.md`
 - 領域サマリ: `knowledge/source-notes/D09/D09-summary.md`（存在する場合）
 - 関連原典: D09-S16_levin-2012.md（生物電気による位置情報との接続）
+
+> 追記（2026-11-09・#73）：39 行の引用を原典（p.18）の文字で直した（元は「It is suggested that pattern formation is…」）。

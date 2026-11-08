@@ -54,7 +54,7 @@ David Attwell と Simon Laughlin (2001) は、げっ歯類の脳灰白質にお�
 - 著者: David Attwell, Simon B. Laughlin
 - 年: 2001
 - 出典: *Journal of Cerebral Blood Flow & Metabolism* 21(10), 1133–1145
-- access_status: url-verified
+- access_status: raw-confirmed
 - **DOI**: [10.1097/00004647-200110000-00001](https://doi.org/10.1097/00004647-200110000-00001)
 - **オープンアクセス**: [SAGE PDF](https://journals.sagepub.com/doi/pdf/10.1097/00004647-200110000-00001)
 
@@ -70,3 +70,5 @@ David Attwell と Simon Laughlin (2001) は、げっ歯類の脳灰白質にお�
 - 一次入力: PubMed 公式 abstract（PMID 11598490, 2026-06-14 efetch）。出版社 PDF は SAGE で本文全文は本セッション未読。
 - cs source-note は未生成（manifest D09-S02 として url-verified 登録のみ）。生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。
 - 生成: 2026-06-14, Claude Opus 4.8（Main 逐次）
+
+> 追記（2026-11-09・#73）：access_status を台帳（raw-confirmed）に合わせた。
