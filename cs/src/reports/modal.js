@@ -151,7 +151,9 @@ export function createReportsModalController({
                 });
             }
             const html = DOMPurify.sanitize(parsedHtml, { FORBID_TAGS: ['a'] });
-            const availablePdfUrl = await availablePdfUrlPromise;
+            const isReviewRecord = resolvedSource.kind === 'review';
+            // 照合の記録（#73）には PDF が無い。今までの報告の PDF を出すと中身と食い違うので出さない。
+            const availablePdfUrl = isReviewRecord ? '' : await availablePdfUrlPromise;
 
             if (requestId !== state.modal.mdRequestId) return;
 
@@ -198,14 +200,20 @@ export function createReportsModalController({
 
             const strings = getStrings(state.config.lang);
             const metaParts = [];
-            const generatorModel = hasText(meta.generator_model) ? meta.generator_model.trim() : resolvedSource.generatorModel;
-            const generated = hasText(meta.generated) ? meta.generated.trim() : resolvedSource.generated;
-            const guideDate = state.data.guidesGeneratedAt || '';
-            if (generatorModel) metaParts.push(`${strings.modalModel}: ${generatorModel}`);
-            if (generated) {
-                metaParts.push(`${strings.modalGenerated}: ${formatDate(generated)}`);
-            } else if (guideDate) {
-                metaParts.push(`${strings.modalGenerated}: ${formatDate(guideDate)}`);
+            if (isReviewRecord) {
+                const reviewed = hasText(meta.last_updated) ? meta.last_updated.trim() : resolvedSource.generated;
+                metaParts.push(strings.modalReviewNote);
+                if (reviewed) metaParts.push(`${strings.modalReviewed}: ${formatDate(reviewed)}`);
+            } else {
+                const generatorModel = hasText(meta.generator_model) ? meta.generator_model.trim() : resolvedSource.generatorModel;
+                const generated = hasText(meta.generated) ? meta.generated.trim() : resolvedSource.generated;
+                const guideDate = state.data.guidesGeneratedAt || '';
+                if (generatorModel) metaParts.push(`${strings.modalModel}: ${generatorModel}`);
+                if (generated) {
+                    metaParts.push(`${strings.modalGenerated}: ${formatDate(generated)}`);
+                } else if (guideDate) {
+                    metaParts.push(`${strings.modalGenerated}: ${formatDate(guideDate)}`);
+                }
             }
             if (state.dom.mdModalMeta) {
                 state.dom.mdModalMeta.textContent = metaParts.join(' / ');

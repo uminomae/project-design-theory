@@ -92,6 +92,9 @@ export const dict = {
             modalModel: 'モデル',
             generatorModel: '生成モデル',
             modalGenerated: '生成日',
+            modalReviewed: '照合日',
+            modalReviewNote: '論ごとに一次情報で確かめ直した記録（文責 Claude）',
+            reviewedChip: '一次情報で照合済',
             features: {
                 general: {
                     title: '一般向け',
@@ -264,6 +267,9 @@ export const dict = {
             modalModel: 'Model',
             generatorModel: 'Generator model',
             modalGenerated: 'Generated',
+            modalReviewed: 'Checked on',
+            modalReviewNote: 'Re-checked theory by theory against primary sources (written by Claude)',
+            reviewedChip: 'Checked against sources',
             features: {
                 general: {
                     title: 'General',
