@@ -5,6 +5,7 @@
 //
 //   node scripts/check-cs-evidence.mjs            点検。落ちたら 1 で終わる
 //   node scripts/check-cs-evidence.mjs --stats    文末の数え方の確認（点検はしない）
+//   node scripts/check-cs-evidence.mjs cs/evidence/evidence-D20-law-politics.md   一つの記録だけ（reviewed.json に入れる前に）
 //
 // 見るもの（2026-11-08・#73 の 5 分野のあとに作った）：
 //  1. cs/evidence/reviewed.json の各行：id の形、file が実在、reviewed が日付。
@@ -193,6 +194,21 @@ function checkRecord(file, domainId) {
 }
 
 function main() {
+  // 引数に記録のパスがあれば、その記録だけを見る（reviewed.json に入れる前の確かめ）。
+  const files = process.argv.slice(2).filter((a) => a.endsWith('.md'));
+  if (files.length) {
+    for (const f of files) {
+      const file = path.resolve(f);
+      const m = path.basename(file).match(/^evidence-(D\d\d)-/);
+      if (!m) { err(file, 'ファイル名が evidence-Dxx-… でない'); continue; }
+      if (!fs.existsSync(file)) { err(file, 'ファイルが無い'); continue; }
+      checkRecord(file, m[1]);
+    }
+    if (STATS) return;
+    if (errors.length) { for (const e of errors) console.log(`  × ${e}`); console.log(`${errors.length} 件`); process.exit(1); }
+    console.log(`照合の記録 ${files.length} 本：問題なし`);
+    return;
+  }
   if (!fs.existsSync(REVIEWED)) { console.error('cs/evidence/reviewed.json が無い'); process.exit(1); }
   const reviewed = JSON.parse(fs.readFileSync(REVIEWED, 'utf8'));
   const domains = Array.isArray(reviewed.domains) ? reviewed.domains : [];
