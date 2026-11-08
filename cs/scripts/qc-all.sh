@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# qc-all.sh — creation-space 品質テスト 網羅ランナー (cs#249)
+# qc-all.sh — creation-space 品質テスト 網羅ランナー (#52)
 #
 # 用途: 決定的(LLM不要)な QC テストを 1 コマンドで一括実行する。
 #   定期レビュー(periodic-review skill)・大きな backfill 後・push 前に回す。
@@ -14,7 +14,8 @@ set -uo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 CS_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
-PJDHIRO_DIR="${CS_DIR}/../pjdhiro"
+. "${CS_DIR}/../scripts/pjdhiro-dir.sh"
+PJDHIRO_DIR="$(find_pjdhiro_dir "$CS_DIR" assets/creation)"
 cd "$CS_DIR"
 
 DEEP=0

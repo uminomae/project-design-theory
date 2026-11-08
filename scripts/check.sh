@@ -18,21 +18,10 @@ run() {
   if "$@"; then echo "   ok"; else echo "   失敗：$name"; failed+=("$name"); fi
 }
 
-# 今までの repo（転送だけ・非公開のアーカイブ）の GitHub を、公開ファイルが指していないか。
-# 記録（knowledge・docs・wiki ほか）は経緯として残すので見ない。-theory・-archive は今の repo とアーカイブ。
-old_repo_links() {
-  local hits
-  hits=$(git ls-files 'pd/*' 'as/*' 'ks/*' 'cs/*' \
-    | grep -E '\.(html|js|mjs|txt|xml|json)$' \
-    | grep -vE '/(knowledge|docs|evidence|transform|wiki|vendor|node_modules|quartz|tests)/' \
-    | grep -vE '^[a-z]+/scripts/' \
-    | { cat; git ls-files 'pd/scripts/*template.html' 'cs/scripts/*template.html'; } \
-    | xargs grep -nE 'github\.com/uminomae/(project-design|creation-space|awareness-space|kesson-space)([^-a-zA-Z]|$)' 2>/dev/null)
-  [ -z "$hits" ] && return 0
-  echo "$hits"; return 1
-}
-
-run "旧 repo の GitHub へのリンク" old_repo_links
+# 今までの四つの repo（転送だけ・非公開のアーカイブ）を前提にした参照。公開ファイルの GitHub・raw・api・Pages の URL、
+# 今の repo の GitHub で git に無いファイル（原典の PDF など）へのリンク、repo 名の決め打ち、スクリプトの兄弟の並び。
+# 記録（knowledge・docs・wiki ほか）は経緯として残すので見ない。中身は scripts/check-old-repo-refs.mjs。
+run "今までの repo を前提にした参照" node scripts/check-old-repo-refs.mjs
 run "pd：repo をまたぐ URL" bash -c 'cd pd && bash scripts/check-cross-repo-urls.sh'
 run "pd：読み物の内部アンカー" bash -c 'cd pd && node scripts/reader-anchor-check.mjs'
 run "as：テスト" bash -c 'cd as && node --test tests/*.test.mjs'

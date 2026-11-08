@@ -31,7 +31,7 @@ import { homedir } from "node:os";
 
 const ROOT = resolve(new URL("..", import.meta.url).pathname.replace(/\/$/, ""));
 const PD_SOURCES = join(ROOT, "wiki", "sources");
-const CS_ROOT = join(homedir(), "dev", "creation-space");
+const CS_ROOT = join(ROOT, "..", "cs");
 const CS_SOURCE_NOTES = join(CS_ROOT, "knowledge", "source-notes");
 const CS_MANIFEST = join(CS_ROOT, "knowledge", "raw", "manifest.md");
 const OUT_DIR = join(ROOT, ".cache");

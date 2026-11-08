@@ -30,13 +30,15 @@ const CN_REPORT = join(HEALTH, "cn-divergence-report.md");
 // Cross-repo base path mapping (for WL-5)
 const REPO_BASE = {
   "project-design": ROOT,
-  "kesson-space": join(homedir(), "dev", "kesson-space"),
+  // 今までの四つの repo は、この repo の pd/・ks/・cs/・as/ に移した（2026-11-07）。
+  // kesson-driven-thinking（と、それを指していた "ks"）はこの repo に無い。
+  "kesson-space": join(ROOT, "..", "ks"),
   "kesson-driven-thinking": join(homedir(), "dev", "kesson-driven-thinking"),
-  "creation-space": join(homedir(), "dev", "creation-space"),
-  "awareness-space": join(homedir(), "dev", "awareness-space"),
-  "cs": join(homedir(), "dev", "creation-space"),
+  "creation-space": join(ROOT, "..", "cs"),
+  "awareness-space": join(ROOT, "..", "as"),
+  "cs": join(ROOT, "..", "cs"),
   "ks": join(homedir(), "dev", "kesson-driven-thinking"),
-  "as": join(homedir(), "dev", "awareness-space"),
+  "as": join(ROOT, "..", "as"),
   "pd": ROOT,
 };
 

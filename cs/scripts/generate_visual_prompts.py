@@ -56,7 +56,7 @@ SVG 内容:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("svg_path", help="Path to the source SVG file")
-    parser.add_argument("--output-file", default="creation-space/assets/img/generated/prompts.md", help="Markdown file to save prompts")
+    parser.add_argument("--output-file", default="cs/assets/img/generated/prompts.md", help="Markdown file to save prompts")
     args = parser.parse_args()
 
     # Ensure output directory exists

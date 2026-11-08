@@ -20,7 +20,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PD_ROOT = path.resolve(__dirname, '..');
-const CS_ROOT = path.resolve(PD_ROOT, '..', 'creation-space');
+const CS_ROOT = path.resolve(PD_ROOT, '..', 'cs');
 const SOURCES_DIR = path.join(PD_ROOT, 'wiki', 'sources');
 
 const CS_BLOB = 'https://github.com/uminomae/project-design-theory/blob/main/cs';
@@ -73,7 +73,7 @@ function buildSection(fileName, src) {
   if (note) {
     lines.push('- **cs 精読ノート**: [' + note + '](' + CS_BLOB + '/' + encodeURI(note) + ')');
   } else {
-    lines.push('- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 ' + TICK + 'wiki-cross-check.mjs' + TICK + ' で照合）');
+    lines.push('- **cs 精読ノート**: 未生成（#52 で生成予定。生成後 ' + TICK + 'wiki-cross-check.mjs' + TICK + ' で照合）');
   }
   // pd ページ自身
   lines.push('- **この wiki ページ（pd）**: [wiki/sources/' + fileName + '](' + PD_BLOB + '/wiki/sources/' + encodeURI(fileName) + ')');

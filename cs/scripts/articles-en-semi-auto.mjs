@@ -12,8 +12,10 @@ const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(SCRIPT_DIR, '..');
 const DEFAULT_LOCAL_FILE = resolve(ROOT, 'assets', 'articles', 'articles.json');
 const DEFAULT_API_URL = 'https://uminomae.github.io/pjdhiro/api/creation-articles.json';
-const DEFAULT_REPO = 'uminomae/creation-space';
-const DEFAULT_ISSUE = 19;
+const DEFAULT_REPO = 'uminomae/project-design-theory';
+// 通知先の Issue は既定で決めない。今までの creation-space#19 は、移した先の repo では別の番号になる。
+const DEFAULT_ISSUE = null;
+
 
 function printHelp() {
   console.log('Creation Articles EN Semi-Auto Routine');
@@ -24,8 +26,8 @@ function printHelp() {
   console.log('Options:');
   console.log('  --mode <check|sync|routine>   Default: check');
   console.log('  --notify-issue                Post summary comment to GitHub Issue');
-  console.log('  --issue <number>              Issue number for notification (default: 19)');
-  console.log('  --repo <owner/repo>           GitHub repo (default: uminomae/creation-space)');
+  console.log('  --issue <number>              Issue number for notification (required to notify)');
+  console.log('  --repo <owner/repo>           GitHub repo (default: uminomae/project-design-theory)');
   console.log('  --api-url <url>               Remote API URL');
   console.log('  --local-file <path>           Local articles JSON path');
   console.log('  --timeout <ms>                Fetch timeout in ms (default: 12000)');
@@ -34,7 +36,7 @@ function printHelp() {
   console.log('Modes:');
   console.log('  check   : Compare API vs local and print pending EN translation queue');
   console.log('  sync    : check + update local file with new/updated API items');
-  console.log('  routine : sync + issue notification (auto-enables --notify-issue)');
+  console.log('  routine : sync + issue notification when --issue is given');
 }
 
 function parseArgs(argv) {
@@ -91,8 +93,11 @@ function parseArgs(argv) {
   if (!['check', 'sync', 'routine'].includes(options.mode)) {
     throw new Error(`Unsupported --mode: ${options.mode}`);
   }
-  if (!Number.isFinite(options.issue) || options.issue <= 0) {
+  if (options.issue !== null && (!Number.isFinite(options.issue) || options.issue <= 0)) {
     throw new Error('--issue must be a positive integer');
+  }
+  if (options.notifyIssue && options.issue === null) {
+    throw new Error('--notify-issue needs --issue <number>');
   }
   if (!options.repo || !options.repo.includes('/')) {
     throw new Error('--repo must be owner/repo');
@@ -106,7 +111,7 @@ function parseArgs(argv) {
   if (!Number.isFinite(options.timeoutMs) || options.timeoutMs <= 0) {
     throw new Error('--timeout must be a positive integer');
   }
-  if (options.mode === 'routine') {
+  if (options.mode === 'routine' && options.issue !== null) {
     options.notifyIssue = true;
   }
   if (!isAbsolute(options.localFile)) {

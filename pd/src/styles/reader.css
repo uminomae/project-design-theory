@@ -255,7 +255,7 @@
 }
 
 /* ⓘ 補足（論と無関係な操作説明・出典など）: 寄り道よりさらに一段控えめにしまう。
- * 背景・枠・影なし、小さな文字、▶ の代わりに丸囲みの i（2026-11-01 pjdhiro 指示・pd#138・DESIGN-RULES §9a）。 */
+ * 背景・枠・影なし、小さな文字、▶ の代わりに丸囲みの i（2026-11-01 pjdhiro 指示・#15・DESIGN-RULES §9a）。 */
 .reader-article details.pd-info {
     background: transparent;
     border: none;
@@ -390,7 +390,7 @@
 
 .mw-status .mw-note { color: var(--mute); }
 
-/* 二枚並置の井戸（pd#138・src/reader-gravity-love.js）。同じ形を左右に並べ、狭い画面では上下に積む */
+/* 二枚並置の井戸（#15・src/reader-gravity-love.js）。同じ形を左右に並べ、狭い画面では上下に積む */
 .gl-pair {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -408,7 +408,7 @@
     .gl-pair { grid-template-columns: 1fr; }
 }
 
-/* 見出しの上に置く大きなカテゴリのラベル（このページがどの問いの一部かを示す・pd#138） */
+/* 見出しの上に置く大きなカテゴリのラベル（このページがどの問いの一部かを示す・#15） */
 .reader-hero .reader-kicker {
     font-family: var(--sans);
     font-size: 0.85rem;
@@ -418,7 +418,7 @@
 }
 .reader-hero .reader-kicker .nb { white-space: nowrap; }  /* 「欠けているもの」を語の途中で折らない */
 
-/* 題辞（冒頭に説明なしで置く引用の一行・pd#138）。.prose-block p に負けないよう .reader-article で詳細度を上げる */
+/* 題辞（冒頭に説明なしで置く引用の一行・#15）。.prose-block p に負けないよう .reader-article で詳細度を上げる */
 .reader-article .reader-epigraph {
     margin: 0.5rem 0 2rem auto;
     max-width: 26em;
@@ -438,7 +438,7 @@
     font-size: 0.95rem;
     color: var(--mute);
 }
-/* ページの出発点になる依頼・問いの引用は本文と同じ濃さで読ませる（通常の引用は --mute・pd#138） */
+/* ページの出発点になる依頼・問いの引用は本文と同じ濃さで読ませる（通常の引用は --mute・#15） */
 .reader-article blockquote.reader-request p {
     color: var(--mid);
 }

@@ -7,7 +7,9 @@
 
 set -euo pipefail
 
-PJDHIRO="pjdhiro/assets/creation"
+. "$(cd "$(dirname "$0")/../.." && pwd)/scripts/pjdhiro-dir.sh"
+PJDHIRO_ROOT="$(find_pjdhiro_dir "$(dirname "$0")" assets/creation)"
+PJDHIRO="$PJDHIRO_ROOT/assets/creation"
 BASE_URL="https://uminomae.github.io/pjdhiro/assets/creation"
 PASS=0; FAIL=0; WARN=0
 FIX_XMLNS=false
@@ -396,7 +398,6 @@ fi
 
 # Git push sync check
 echo "  Checking pjdhiro git sync..."
-PJDHIRO_ROOT="pjdhiro"
 LOCAL_HEAD=$(cd "$PJDHIRO_ROOT" && git rev-parse HEAD 2>/dev/null || echo "unknown")
 REMOTE_HEAD=$(cd "$PJDHIRO_ROOT" && git rev-parse origin/main 2>/dev/null || echo "unknown")
 if [ "$LOCAL_HEAD" = "$REMOTE_HEAD" ] && [ "$LOCAL_HEAD" != "unknown" ]; then

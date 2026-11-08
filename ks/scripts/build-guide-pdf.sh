@@ -6,8 +6,8 @@
 # 入力: $PJDHIRO_DIR/assets/kesson/guides/{lang}/md/kesson-{audience}.md
 # 出力: $PJDHIRO_DIR/assets/kesson/guides/{lang}/pdf/kesson-{audience}.pdf
 #
-# 変換本体は project-design の共通正本 build-pdf.sh（pandoc + lualatex）。
-# creation-space の transform/scripts/build-pdf-guide.sh と同じ呼び方で、
+# 変換本体は pd/ の共通正本 build-pdf.sh（pandoc + lualatex）。
+# cs/transform/scripts/build-pdf-guide.sh と同じ呼び方で、
 # ここでは kesson 固有のタイトル・サブタイトルだけを持つ。
 #
 # 使い方:
@@ -17,15 +17,17 @@
 #   bash scripts/build-guide-pdf.sh --setup                                                # 依存チェックのみ
 #
 # 環境変数:
-#   PJDHIRO_DIR  pjdhiro の checkout（既定 pjdhiro）
+#   PJDHIRO_DIR  pjdhiro の checkout（既定は scripts/pjdhiro-dir.sh で上へ探す。この repo の隣の pjdhiro）
 #   BUILD_PDF    共通正本のパス（既定 pd/transform/scripts/build-pdf.sh）
 #
 # bash 3.2（macOS 標準）で動く書き方にしている。
 
 set -euo pipefail
 
-PJDHIRO_DIR="${PJDHIRO_DIR:-pjdhiro}"
-BUILD_PDF="${BUILD_PDF:-pd/transform/scripts/build-pdf.sh}"
+REPO_ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
+. "$REPO_ROOT/scripts/pjdhiro-dir.sh"
+PJDHIRO_DIR="$(find_pjdhiro_dir "$(dirname "$0")" assets/kesson)"
+BUILD_PDF="${BUILD_PDF:-$REPO_ROOT/pd/transform/scripts/build-pdf.sh}"
 GUIDES_BASE="$PJDHIRO_DIR/assets/kesson/guides"
 
 # ── タイトル（表紙と PDF メタデータ）──

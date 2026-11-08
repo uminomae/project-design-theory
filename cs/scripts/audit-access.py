@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""cs#253 B軸: OA 取得実態監査.
+"""#55 B軸: OA 取得実態監査.
 
 manifest の raw-confirmed / url-verified 行が notes に記す OA URL を実際に叩き、
 「今この環境でオープンに本文取得できるか」を分類する。`url-verified` は一回限りの
@@ -132,7 +132,7 @@ def main():
 
     md = os.path.join(OUTDIR, 'access-audit.md')
     with open(md, 'w') as f:
-        f.write('# cs#253 B軸: OA 取得実態監査レポート\n\n')
+        f.write('# #55 B軸: OA 取得実態監査レポート\n\n')
         f.write(f'対象: {", ".join(sorted(statuses))} / {len(rows)} 行\n\n')
         f.write('## 集計\n\n| verdict | 件数 | 意味 |\n|---|---|---|\n')
         f.write(f'| OA_PDF | {counts["OA_PDF"]} | 200+PDF = オープンに本文取得可 ✓ |\n')

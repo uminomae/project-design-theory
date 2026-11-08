@@ -18,9 +18,9 @@
 - **Emotional Constitution** (情動の構成): The process by which kesson is evaluated along the Survival-axis (survival/threat) and Trust-axis (love/attachment), and constituted as emotion.
 
 ### Related Projects
-- [project-design](https://github.com/uminomae/project-design): Project Design Theory -- the overarching framework
-- [creation-space](https://github.com/uminomae/creation-space): Exploring creative processes across 30 academic domains
-- [awareness-space](https://github.com/uminomae/awareness-space): Exploring consciousness through the Four-Layer Model
+- [project-design](https://uminomae.github.io/project-design-theory/) (`pd/` in this repo): Project Design Theory -- the overarching framework
+- [creation-space](https://uminomae.github.io/project-design-theory/cs/) (`cs/` in this repo): Exploring creative processes across 30 academic domains
+- [awareness-space](https://uminomae.github.io/project-design-theory/as/) (`as/` in this repo): Exploring consciousness through the Four-Layer Model
 
 > For the full theoretical framework, see [Project Design](https://uminomae.github.io/project-design-theory/).
 
@@ -63,12 +63,12 @@ Three.js による欠損駆動思考の視覚的・体験的表現。概念を�
 
 ## 関連プロジェクト / Related Projects
 
-| リポジトリ / Repository | 概要 / Description |
+| 場所 / Where | 概要 / Description |
 |---|---|
 | [pjdhiro](https://github.com/uminomae/pjdhiro) | GitHub Pages ホスティング、ブログ（[欠損駆動思考の記事](https://uminomae.github.io/pjdhiro/thinking-kesson/)） |
-| [creation-space](https://github.com/uminomae/creation-space) | 「創造とは」の探索 — 30領域の学術横断調査 |
-| [awareness-space](https://github.com/uminomae/awareness-space) | 「意識とは」の探索 — 内受容感覚・予測-誤差ループ・生存-信頼評価・抱持の4層モデル |
-| [project-design](https://github.com/uminomae/project-design) | プロジェクトデザイン論 — Doing と Being を包含する構想・設計・実行 |
+| [creation-space](https://uminomae.github.io/project-design-theory/cs/)（この repo の `cs/`） | 「創造とは」の探索 — 30領域の学術横断調査 |
+| [awareness-space](https://uminomae.github.io/project-design-theory/as/)（この repo の `as/`） | 「意識とは」の探索 — 内受容感覚・予測-誤差ループ・生存-信頼評価・抱持の4層モデル |
+| [project-design](https://uminomae.github.io/project-design-theory/)（この repo の `pd/`） | プロジェクトデザイン論 — Doing と Being を包含する構想・設計・実行 |
 
 ## Author
 
@@ -76,4 +76,4 @@ Three.js による欠損駆動思考の視覚的・体験的表現。概念を�
 
 ## License
 
-[MIT License](LICENSE)
+[MIT License](../LICENSE)

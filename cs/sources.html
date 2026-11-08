@@ -74,7 +74,7 @@
 <div class="wrap">
   <p class="back"><a href="dashboard.html">← ダッシュボードへ戻る</a></p>
   <h1>原典リスト（材料の論文）</h1>
-  <p class="sub">調査の材料にしている論文の台帳（manifest）をライブ表示。リンクで原文（リポジトリ内PDF または 公開URL）に飛べます。</p>
+  <p class="sub">調査の材料にしている論文の台帳（manifest）をライブ表示。公開 URL のある原文には、リンクで飛べます。</p>
 
   <div class="counts" id="counts"></div>
   <div class="gloss" id="gloss">読み込み中…</div>
@@ -89,8 +89,9 @@
 </div>
 
 <script>
-const OWNER="uminomae", REPO="creation-space", BRANCH="main";
-const RAWBASE="https://github.com/"+OWNER+"/"+REPO+"/blob/"+BRANCH+"/";
+// 今までの repo の中身は、この repo の cs/ に移した（2026-11-07）。原典の PDF（cs/knowledge/raw/）は git に入れず手元だけに置く。
+const OWNER="uminomae", REPO="project-design-theory", BRANCH="main", DIR="cs/";
+const TREEBASE="https://github.com/"+OWNER+"/"+REPO+"/tree/"+BRANCH+"/"+DIR;
 let ROWS=[];
 
 function b64utf8(b64){return new TextDecoder().decode(Uint8Array.from(atob(b64.replace(/\s/g,"")),function(c){return c.charCodeAt(0);}));}
@@ -109,8 +110,8 @@ function parseManifest(md){
     const title=cleanTitle(c[4]||""), local=(c[5]||"").replace(/`/g,""), notes=c.slice(7).join(" | ");
     let url=null, kind=null;
     if(access==="raw-confirmed"){
-      const m=local.match(/knowledge\/raw\/[^\s`|]+\.pdf/);
-      if(m){url=RAWBASE+m[0]; kind="pdf";} else {url=firstUrl(notes); kind=url?"link":"local";}
+      // 原典の PDF は公開していないので、公開 URL があるときだけリンクにする
+      url=firstUrl(notes); kind=url?"link":"local";
     } else if(access==="url-verified"){
       url=firstUrl(notes); kind="link";
     }
@@ -123,8 +124,8 @@ function render(){
   const q=document.getElementById("q").value.trim().toLowerCase();
   const df=document.getElementById("dom").value;
   const groups=[
-    {key:"pdf",cls:"gpdf",ic:"📄",label:"リポジトリ保存（PDF）",test:function(r){return r.access==="raw-confirmed";},
-     note:"PDFが repo 内 (knowledge/raw/) にあり本文確認済み。リンクで GitHub のPDFへ。"},
+    {key:"pdf",cls:"gpdf",ic:"📄",label:"原典を手元に保管（PDF）",test:function(r){return r.access==="raw-confirmed";},
+     note:"PDF を手元に保管し、本文を確認済み。PDF は公開していないので、リンクは公開 URL があるときだけ。"},
     {key:"link",cls:"glink",ic:"🔗",label:"リンクで閲覧（Web上）",test:function(r){return r.access==="url-verified";},
      note:"repo には保存せず、公開URLの原文を読んで確認。リンクで原文サイトへ。"},
     {key:"no",cls:"gno",ic:"⛔",label:"未取得（本文を読めていない）",test:function(r){return r.access==="blocked-access"||r.access==="citation-only";},
@@ -143,8 +144,8 @@ function render(){
     html+='<div class="grp '+g.cls+'">';
     if(!items.length) html+='<p class="muted" style="padding:7px 0">該当なし</p>';
     items.forEach(function(r){
-      const lk = r.url ? '<a class="lk" href="'+esc(r.url)+'" target="_blank" rel="noopener">'+(r.kind==="pdf"?"PDF↗":"原文↗")+'</a>'
-                       : '<span class="lk muted">'+(r.access==="citation-only"?"目録のみ":"取得不可")+'</span>';
+      const lk = r.url ? '<a class="lk" href="'+esc(r.url)+'" target="_blank" rel="noopener">'+"原文↗"+'</a>'
+                       : '<span class="lk muted">'+(r.access==="citation-only"?"目録のみ":r.access==="raw-confirmed"?"手元に保管":"取得不可")+'</span>';
       html+='<div class="row"><span class="dom">'+esc(r.dom)+'</span><span class="ti">'+esc(r.title)+
             ' <span class="src">'+esc(r.id)+'</span></span>'+lk+'</div>';
     });
@@ -160,20 +161,19 @@ function renderCounts(){
   document.getElementById("counts").innerHTML=
     '<div class="cc"><div class="n">'+ROWS.length+'</div><div class="l">登録 合計</div></div>'+
     '<div class="cc read"><div class="n">'+read+'</div><div class="l">本文を読めた</div></div>'+
-    '<div class="cc"><div class="n">'+by["raw-confirmed"]+'</div><div class="l">📄 repo保存(PDF)</div></div>'+
+    '<div class="cc"><div class="n">'+by["raw-confirmed"]+'</div><div class="l">📄 手元に保管(PDF)</div></div>'+
     '<div class="cc link"><div class="n">'+by["url-verified"]+'</div><div class="l">🔗 リンク閲覧</div></div>'+
     '<div class="cc no"><div class="n">'+no+'</div><div class="l">⛔ 未取得</div></div>';
   document.getElementById("gloss").innerHTML=
-    '<b>用語:</b> <b style="color:var(--green)">repo保存(PDF) '+by["raw-confirmed"]+'</b>=PDFが <a href="'+RAWBASE+
-    'knowledge/raw" target="_blank" rel="noopener">knowledge/raw/</a> にあり本文確認済（大容量5本のみローカル）。 '+
+    '<b>用語:</b> <b style="color:var(--green)">手元に保管(PDF) '+by["raw-confirmed"]+'</b>=PDF を手元（knowledge/raw/・公開していない）に保管し本文確認済。 '+
     '<b style="color:var(--teal)">リンク閲覧 '+by["url-verified"]+'</b>=repoには無く公開URLで閲覧。 '+
     '<b>未取得 '+no+'</b>=取得ブロック '+by["blocked-access"]+' ＋ 目録のみ '+by["citation-only"]+
-    '（本文未読）。 精読ノートは <a href="'+RAWBASE+'knowledge/source-notes" target="_blank" rel="noopener">knowledge/source-notes/</a>。';
+    '（本文未読）。 精読ノートは <a href="'+TREEBASE+'knowledge/source-notes" target="_blank" rel="noopener">knowledge/source-notes/</a>。';
 }
 
 async function load(){
   try{
-    const res=await fetch("https://api.github.com/repos/"+OWNER+"/"+REPO+"/contents/knowledge/raw/manifest.md?ref="+BRANCH,
+    const res=await fetch("https://api.github.com/repos/"+OWNER+"/"+REPO+"/contents/"+DIR+"knowledge/raw/manifest.md?ref="+BRANCH,
       {headers:{Accept:"application/vnd.github+json"}});
     if(!res.ok) throw new Error("HTTP "+res.status);
     const j=await res.json();
@@ -184,7 +184,7 @@ async function load(){
       const o=document.createElement("option");o.value=d;o.textContent=d;sel.appendChild(o);});
     renderCounts(); render();
   }catch(e){
-    document.getElementById("gloss").textContent="台帳を取得できませんでした（"+e.message+"）。GitHub の knowledge/raw/manifest.md を直接ご覧ください。";
+    document.getElementById("gloss").textContent="台帳を取得できませんでした（"+e.message+"）。台帳（cs/knowledge/raw/manifest.md）は、原典の PDF と同じ場所にあり、今は公開していません。";
   }
 }
 load();

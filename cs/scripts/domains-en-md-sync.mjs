@@ -3,11 +3,12 @@
 import { copyFile, mkdir, readFile, readdir, stat } from 'node:fs/promises';
 import { dirname, isAbsolute, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { findPjdhiroDir } from '../../scripts/pjdhiro-dir.mjs';
 
 const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(SCRIPT_DIR, '..');
-const DEFAULT_BUILD_REPO = resolve(ROOT, '..', 'pjdhiro');
-const DEFAULT_PUBLISH_REPO = resolve(ROOT, '..', 'pjdhiro');
+const DEFAULT_BUILD_REPO = findPjdhiroDir(ROOT, 'assets/creation');
+const DEFAULT_PUBLISH_REPO = DEFAULT_BUILD_REPO;
 
 function printHelp() {
   console.log('Creation domain EN markdown sync');
@@ -17,8 +18,8 @@ function printHelp() {
   console.log('');
   console.log('Options:');
   console.log('  --mode <check|sync>        Default: check');
-  console.log('  --build-repo <path>        Source repo root (default: ../pjdhiro)');
-  console.log('  --publish-repo <path>      Publish repo root (default: ../pjdhiro)');
+  console.log('  --build-repo <path>        Source repo root (default: pjdhiro beside this repo)');
+  console.log('  --publish-repo <path>      Publish repo root (default: pjdhiro beside this repo)');
   console.log('  --manifest <path>          Override manifest path');
   console.log('  --dry-run                  Print sync actions without writing files');
   console.log('  --help, -h                 Show this help');
@@ -26,7 +27,7 @@ function printHelp() {
   console.log('Behavior:');
   console.log('  - Reads EN domain markdown paths from pjdhiro/assets/creation/manifests/domains.json');
   console.log('  - Verifies build and publish copies for domains/en/md/*.md');
-  console.log('  - In sync mode, copies missing or changed files from build repo's build/creation/');
+  console.log("  - In sync mode, copies missing or changed files from build repo's build/creation/");
 }
 
 function parseArgs(argv) {

@@ -16,7 +16,7 @@ CL-010: §・頁引用は source-note が実在するときのみ許される。
 
 出力:
   knowledge/raw/audit/public-grounding.jsonl / .md
-  cs#253 audit family と同様、API 不要・既存成果物の決定的 join + 正規表現抽出のみ。
+  #55 audit family と同様、API 不要・既存成果物の決定的 join + 正規表現抽出のみ。
 """
 import re, os, json, glob
 
@@ -25,7 +25,17 @@ AUD = os.path.join(ROOT, 'knowledge/raw/audit')
 MANIFEST = os.path.join(ROOT, 'knowledge/raw/manifest.md')
 TIER = os.path.join(AUD, 'confidence-tier.jsonl')
 # 公開 MD 正本は pjdhiro/assets/creation
-PJDHIRO = os.path.normpath(os.path.join(ROOT, '..', 'pjdhiro'))
+def _find_pjdhiro():
+    # 今までの creation-space は pjdhiro の隣にあったので、一つ上を見れば足りた。この repo では上へ探す（scripts/pjdhiro-dir.mjs と同じ決め方）
+    if os.environ.get('PJDHIRO_DIR'):
+        return os.path.abspath(os.environ['PJDHIRO_DIR'])
+    d = ROOT
+    while os.path.dirname(d) != d:
+        d = os.path.dirname(d)
+        if os.path.isdir(os.path.join(d, 'pjdhiro', 'assets', 'creation')):
+            return os.path.join(d, 'pjdhiro')
+    return os.path.normpath(os.path.join(ROOT, '..', '..', 'pjdhiro'))  # この repo の隣（old-repo-refs: ok）
+PJDHIRO = _find_pjdhiro()
 REPORTS_GLOB = os.path.join(PJDHIRO, 'assets/creation/domains/*/md/domain-D*.md')
 
 # 精密アンカー: §, pp./p., 〜頁, 第N章

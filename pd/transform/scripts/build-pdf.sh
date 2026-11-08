@@ -23,8 +23,8 @@
 #   3. 最初の H1 見出し
 #   4. ファイル名
 #
-# 他リポからの呼び出し例:
-#   bash ~/dev/project-design/transform/scripts/build-pdf.sh \
+# cs/・ks/ からの呼び出し例（今までは別の repo から ~/dev/ の下の決め打ちで呼んでいた）:
+#   bash ../pd/transform/scripts/build-pdf.sh \
 #     knowledge/report.md output/report.pdf
 #
 # 互換性:

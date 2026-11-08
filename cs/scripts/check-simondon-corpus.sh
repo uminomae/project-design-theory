@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# check-simondon-corpus.sh — Simondon コーパス取得→精読→記録 台帳の整合テスト（cs#249 / D13）
+# check-simondon-corpus.sh — Simondon コーパス取得→精読→記録 台帳の整合テスト（#52 / D13）
 # 正本台帳: knowledge/raw/simondon-corpus-acquisition.md
 # 用途: 「①取得・保存 → ②精読 → ③記録」手順の⑥検証段階で実行する。
 #   T1 台帳が存在する
@@ -19,7 +19,7 @@ NOTE_DIR="${CS_DIR}/knowledge/source-notes/D13"
 MANIFEST="${CS_DIR}/knowledge/raw/manifest.md"
 
 errors=0
-echo "=== check-simondon-corpus (cs#249 / D13) ==="
+echo "=== check-simondon-corpus (#52 / D13) ==="
 
 # T1: 台帳の存在
 echo ""
