@@ -196,7 +196,7 @@ export const TRANSLATIONS = {
       "物質＝閉じ込められたエネルギーという物理の構造類似から、感情・人間関係・社会の渦までを、実証と比喩に仕分けて確かめる読み物（調査開始）",
     "repo.gravityLove": "愛は、重力に似ていないか — 動かず、何もなく、自分からは見えないのに、すべてを回す中心",
     "repo.gravityLoveDesc":
-      "重力の井戸の中心は、動かず、何もなく、自分からは見えないのに、周りのすべてを回している。愛はそれに似ていないか。その構造類似を踏まえて、「経営者の役割とは？」に仮説的に答える読み物。役割は意思決定である。しかし存在についての役割は未解明——存在そのものが源ということもあるだろうか。",
+      "重力の井戸の中心は、動かず、何もなく、自分からは見えないのに、周りのすべてを回している。愛はそれに似ていないか。周りを動かす駆動源としての力を、二つの現象の構造の類似から探す読み物。後半で、その類似を踏まえて「経営者の役割とは？」に仮説的に答える。",
     "repo.waveVortex": "波間の渦 — 宇宙は「モノ」でできているか、「流れ」でできているか",
     "repo.waveVortexDesc":
       "「エネルギーの流れ」の姉妹読み物。「宇宙は海の渦のような現象でできている」という直観を、物理学と思想史のどこまでが支えるか三層に分けて接地する（creation-space）",
@@ -286,7 +286,7 @@ export const TRANSLATIONS = {
     "howto.tips.2": "「cs/・as/・ks/ も見て」と追加すると、深掘りされます",
     "howto.tips.3": "Claude.ai、ChatGPT、Gemini など、どのLLMでも使えます",
     "howto.note":
-      "MIT License — 商用利用・改変・再配布すべて自由です。出典表示の義務はありません。詳細は repo の LICENSE ファイルをご覧ください。",
+      "MIT License — 商用利用・改変・再配布すべて自由です。コピーや改変したものを配るときは、著作権表示と許諾の文（LICENSE）を残してください。詳細は repo の LICENSE ファイルをご覧ください。",
     "slides.trigger": "プレゼン資料",
     "slides.title": "プレゼン資料",
   },
@@ -375,7 +375,7 @@ export const TRANSLATIONS = {
       "From the physics analogy of matter as confined energy to emotions, relationships, and the vortices of society — a reader that sorts evidence from metaphor (inquiry just started)",
     "repo.gravityLove": "Is Love Like Gravity? — On a Leader's Role",
     "repo.gravityLoveDesc":
-      "The center of a gravity well does not move, holds nothing and cannot see itself, yet everything turns around it. Is love like that? Building on that likeness, a hypothetical answer to “what is a leader's role?”: decision-making, yes — but the role of their being is unexplored. Could being itself be the source?",
+      "The center of a gravity well does not move, holds nothing and cannot see itself, yet everything turns around it. Is love like that? A reader that looks for the driving force that moves things around, through the structural likeness of the two. In the second half, building on that likeness, it gives a hypothetical answer to “what is a leader's role?”",
     "repo.waveVortex": "Vortices Between Waves — Is the Universe Made of 'Things' or 'Flows'?",
     "repo.waveVortexDesc":
       "A sister reader to 'Flows of Energy.' Grounds the intuition that 'the universe is made of ocean-like vortices' by sorting how far physics and intellectual history support it, in three layers (creation-space)",
@@ -468,7 +468,7 @@ export const TRANSLATIONS = {
       "Adding \"also check cs/, as/, ks/\" enables deeper exploration",
     "howto.tips.3": "Works with any LLM: Claude.ai, ChatGPT, Gemini, etc.",
     "howto.note":
-      "MIT License — Free for commercial use, modification, and redistribution. No attribution required. See the LICENSE file in the repo for details.",
+      "MIT License — Free for commercial use, modification, and redistribution. When you share copies or modified versions, keep the copyright and permission notice (LICENSE). See the LICENSE file in the repo for details.",
     "slides.trigger": "Slides",
     "slides.title": "Presentation Slides",
   },
