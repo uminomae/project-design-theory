@@ -104,7 +104,7 @@
 
 | 出どころ | ドラッカー『現代の経営』（1954 年）ほか |
 |---|---|
-| 考え方 | 目標を先に定め、働く人がそれを手がかりに自分の仕事を律する（ドラッカーの語は「目標と自己管理による経営」）。のちに、上から数値目標で進み具合を管理する形でも広まった |
+| 考え方 | 目標を先に定め、働く人がそれを手がかりに自分の仕事を律する（ドラッカーの言い方では、目標と自己管理による経営）。のちに、上から数値目標で進み具合を管理する形でも広まった |
 | よく効く場面 | 目標が先に見えている仕事。先が見通せ、同じことをくり返せるとき |
 | 正解として広げたときの取り違え | 目標を先に決めれば、仕事が進むと思うこと。動いたあとで目標が言葉になる仕事もある。数値目標が、自分の仕事を律する手がかりから、上からの管理の道具に変わることもある |
 
@@ -194,9 +194,9 @@
 
 | 出どころ | 野中・竹内『知識創造企業』（1995 年）ほか |
 |---|---|
-| 考え方 | 個人の暗黙知が、共同化・表出化・連結化・内面化（SECI）を回って組織の知になる。その後、場（紺野登と、1998 年）、賢慮（フロネシス）のリーダー（竹内と、2011 年）、『共感経営』（勝見明と、2020 年）へと、問いの重心が、人の思いや共感の側へ寄ってきた |
+| 考え方 | 個人の暗黙知が、共同化・表出化・連結化・内面化（SECI）を回って組織の知になる。その後、場（紺野登と、1998 年）、賢慮（フロネシス）のリーダー（竹内と、2011 年）、『共感経営』（勝見明と、2020 年）へと、問いの重心が、人の思いや共感の側へ寄ってきたように見える |
 | よく効く場面 | 人と人のあいだで知が生まれ、共有されていく場 |
-| 正解として広げたときの取り違え | SECI を回す仕組みを整えれば、知が生まれると思うこと。野中自身が、のちに場や共感の側へ問いの重心を移している |
+| 正解として広げたときの取り違え | SECI を回す仕組みを整えれば、知が生まれると思うこと。野中自身が、のちに SECI の土台としての場や、賢慮と共感を論じている |
 
 </div>
 
@@ -270,12 +270,12 @@
 
 <div class="tablefit cols-2">
 
-| 出どころ | サラスバシー（2001 年） |
+| 出どころ | サラスバシー（2001 年。五つの原理の形は 2008 年の本） |
 |---|---|
 | 考え方 | 熟達した起業家は、目的から逆算するより、手元の手段（自分は誰か、何を知っているか、誰を知っているか）から始める |
 | よく効く場面 | 目的がまだ定まらないまま、動き出すとき |
-| 正解として広げたときの取り違え | 熟達した起業家の振る舞いを、誰でも使える手順として写せると思うこと。原理は、熟達した起業家の考え方を調べて取り出したもの |
+| 正解として広げたときの取り違え | 原理を手順として回せば、熟達した起業家と同じ判断ができると思うこと。サラスバシーらは学べる考え方だとしている。原理は、経験を重ねた起業家の判断を調べて取り出したもの |
 
 </div>
 
-出典：Mintzberg, Ahlstrand & Lampel (1998) *Strategy Safari*／Saxe "The Blind Men and the Elephant"／Friedman (1970) *New York Times Magazine* 9 月 13 日／Porter (1980) *Competitive Strategy*／Christensen (1997) *The Innovator's Dilemma*・Lepore (2014) "The Disruption Machine" *The New Yorker* 6 月 23 日（有料で本文は未照合。論点は二次資料の要約で確かめた）／Kotler, Kartajaya & Setiawan (2010) *Marketing 3.0*・(2016) *Marketing 4.0*・(2021) *Marketing 5.0*／Freeman (1984) *Strategic Management: A Stakeholder Approach*／Hannan & Freeman (1977) *AJS* 82:929／Barney (1991) *J. Management* 17:99・(1995) *Acad. Manag. Exec.* 9(4):49／Drucker (1954) *The Practice of Management*／Taylor (1911) *The Principles of Scientific Management*／Krafcik (1988) *Sloan Manag. Rev.*・Womack, Jones & Roos (1990)／Ries (2011) *The Lean Startup*／Black & Scholes (1973) *JPE* 81:637・Merton (1973) *Bell J. Econ.* 4:141・Myers (1977) *JFE* 5:147・[Staw (1976)](https://doi.org/10.1016/0030-5073(76)90005-2) *OBHP* 16(1):27（本文と抄録は未照合。結果は二次資料で確かめた。追試は Białek ら 2021 が再現せず、Schultze & Schulz-Hardt 2022 は一部だけ）／Mintzberg & Waters (1985) *SMJ* 6:257／Schein (1985) *Organizational Culture and Leadership*／Nonaka & Takeuchi (1995) *The Knowledge-Creating Company*・Nonaka & Konno (1998) *CMR* 40(3):40・Nonaka & Takeuchi (2011) *HBR* 5 月号・野中・勝見 (2020)『共感経営』／Deci & Ryan (1985)・Herzberg, Mausner & Snyderman (1959) *The Motivation to Work*／Simon (1955) *QJE* 69:99／Sarasvathy (2001) *AMR* 26:243。表の分け方と「よく効く場面」「正解として広げたときの取り違え」の列は、Claude による整理です。
+出典：Mintzberg, Ahlstrand & Lampel (1998) *Strategy Safari*／Saxe "The Blind Men and the Elephant"／Friedman (1970) *New York Times Magazine* 9 月 13 日／Porter (1980) *Competitive Strategy*／Christensen (1997) *The Innovator's Dilemma*・Lepore (2014) "The Disruption Machine" *The New Yorker* 6 月 23 日（有料で本文は未照合。論点は二次資料の要約で確かめた）／Kotler, Kartajaya & Setiawan (2010) *Marketing 3.0*・(2016) *Marketing 4.0*・(2021) *Marketing 5.0*／Freeman (1984) *Strategic Management: A Stakeholder Approach*／Hannan & Freeman (1977) *AJS* 82:929／Barney (1991) *J. Management* 17:99・(1995) *Acad. Manag. Exec.* 9(4):49／Drucker (1954) *The Practice of Management*／Taylor (1911) *The Principles of Scientific Management*／Krafcik (1988) *Sloan Manag. Rev.*・Womack, Jones & Roos (1990)／Ries (2011) *The Lean Startup*／Black & Scholes (1973) *JPE* 81:637・Merton (1973) *Bell J. Econ.* 4:141・Myers (1977) *JFE* 5:147・[Staw (1976)](https://doi.org/10.1016/0030-5073(76)90005-2) *OBHP* 16(1):27（本文と抄録は未照合。結果は二次資料で確かめた。追試は Białek ら 2021 が再現せず、Schultze & Schulz-Hardt 2022 は一部だけ）／Mintzberg & Waters (1985) *SMJ* 6:257／Schein (1985) *Organizational Culture and Leadership*／Nonaka & Takeuchi (1995) *The Knowledge-Creating Company*・Nonaka & Konno (1998) *CMR* 40(3):40・Nonaka & Takeuchi (2011) *HBR* 5 月号・野中・勝見 (2020)『共感経営』／Deci & Ryan (1985)・Herzberg, Mausner & Snyderman (1959) *The Motivation to Work*／Simon (1955) *QJE* 69:99／Sarasvathy (2001) *AMR* 26:243・(2008) *Effectuation: Elements of Entrepreneurial Expertise*／effectuation.org（学べる考え方としての説明）。表の分け方と「よく効く場面」「正解として広げたときの取り違え」の列は、Claude による整理です。
