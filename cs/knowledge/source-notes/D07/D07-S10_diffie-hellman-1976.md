@@ -35,7 +35,7 @@
 
 ### 主張 3: 一方向関数とトラップドア関数の概念化
 
-> "We note that computing log mod q is in fact close to optimal and hence that q^(1/2) is a good measure of the problem's complexity, for a properly chosen q." (p.649)
+> "For now we assume that the best known algorithm for computing logs mod q is in fact close to optimal and hence that q^(1/2) is a good measure of the problem's complexity, for a properly chosen q." (p.649)
 
 一方向関数（計算は容易だが逆関数の計算は困難な関数）とトラップドア関数（特別な情報があれば逆関数も計算可能）を明確に定義し、これらが公開鍵暗号と認証システムの基盤となることを示した。
 
@@ -89,3 +89,5 @@
 ## 7. 未読解セクション（部分読解の場合）
 
 全ページ読了
+
+> 追記（2026-11-09・#73）：p.649 の引用を原典の文字で直した（元のノートは「We note that computing log mod q is in fact close to optimal」で、原文は「For now we assume that the best known algorithm for computing logs mod q is in fact close to optimal」）。
