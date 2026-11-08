@@ -11,7 +11,7 @@
 ## 1. 書誌情報
 
 - **著者**: Volker Springel, Simon D. M. White, Adrian Jenkins, Carlos S. Frenk, Naoki Yoshida, Liang Gao, Julio Navarro, Robert Thacker, Darren Croton, John Helly, John A. Peacock, Shaun Cole, Peter Thomas, Hugh Couchman, August Evrard, Joerg Colberg, Frazer Pearce
-- **タイトル**: Simulating the joint evolution of quasars, galaxies and their large-scale distribution
+- **タイトル**: Simulations of the formation, evolution and clustering of galaxies and quasars（arXiv の題は Simulating the joint evolution of quasars, galaxies and their large-scale distribution）
 - **出典**: *Nature* 435, 629-636 (2005)
 - **DOI / URL**: https://doi.org/10.1038/nature03597 / arXiv: astro-ph/0504097
 
@@ -82,3 +82,5 @@ CMB パワースペクトルに検出されるバリオン音響振動が、非�
 ## 7. 未読解セクション
 
 全ページ読了（本文 p.1-21, 参考文献 p.21-25）。ただし Supplementary Information は arXiv プレプリントに含まれておらず、未読。
+
+> 追記（2026-11-09・#73）：Nature の題を Crossref（DOI 10.1038/nature03597）で直した。元の題は arXiv の題。
