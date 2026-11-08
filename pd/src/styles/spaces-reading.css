@@ -1,0 +1,95 @@
+/* 欠損駆動思考（ks/）と意識とは（as/）のトップページにある、読み物の本文の形。
+   2026-11-07 に Love駆動開発の筋に合わせて組み直したとき、二つのページに同じ形を書いていたので、ここにまとめた（#70）。
+   読み込むのは ks/src/styles/main.css と as/src/styles/shell.css。
+   色と重なりの順は、ページごとに次の変数で決める（ks/src/styles/sections.css・as/src/styles/shell-content.css）。
+     --reading-z                 本文と記録の畳みの重なりの順
+     --reading-text              本文の文字
+     --reading-sub               章の副題
+     --reading-quote-rule        pjdhiro の言葉の左の線
+     --reading-details-rule      畳みの上の線
+     --reading-summary           畳みの見出し
+     --reading-link              リンク
+     --reading-focus-outline     キーボードで選んだときの枠
+     --reading-fold-text         記録の畳みの見出し
+   本文の地・枠・影は、ページの CSS に残す（ks は kesson-panel の地、as は白く透かした地）。 */
+
+#reading-section {
+  position: relative;
+  z-index: var(--reading-z);
+  padding-bottom: .9rem;
+}
+.reading-article {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: clamp(1.25rem, 4vw, 2.25rem);
+  color: var(--reading-text);
+  font-size: 1rem;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+.reading-header { display: flex; flex-direction: column; gap: .9rem; }
+.reading-title {
+  font-family: 'Noto Serif JP', Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(1.4rem, 4vw, 1.9rem);
+  letter-spacing: .08em;
+  margin: 0;
+}
+.reading-lead { margin: 0; }
+.reading-chapter { display: flex; flex-direction: column; gap: .8rem; }
+.reading-chapter p { margin: 0; }
+.reading-chapter-title {
+  font-family: 'Noto Serif JP', Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(1.1rem, 3vw, 1.3rem);
+  line-height: 1.6;
+  margin: 0;
+  text-wrap: balance;
+}
+.reading-chapter-sub { font-size: .82em; color: var(--reading-sub); }
+.reading-quote {
+  border-left: 2px solid var(--reading-quote-rule);
+  padding-left: .9rem;
+}
+.reading-details {
+  border-top: 1px solid var(--reading-details-rule);
+  padding-top: .5rem;
+}
+.reading-details > summary { cursor: pointer; color: var(--reading-summary); font-size: .92rem; }
+.reading-details[open] > summary { margin-bottom: .6rem; }
+.reading-details > p,
+.reading-details > ul { margin: 0 0 .7rem; font-size: .95rem; }
+.reading-links { padding-left: 1.2rem; }
+.reading-article a { color: var(--reading-link); }
+.reading-article a:focus-visible,
+.reading-details > summary:focus-visible,
+.records-fold-summary:focus-visible {
+  outline: var(--reading-focus-outline);
+  outline-offset: 4px;
+}
+
+.records-fold { position: relative; z-index: var(--reading-z); }
+.records-fold-summary {
+  max-width: 46rem;
+  margin: 1rem auto 3rem;
+  padding: .8rem 1rem;
+  cursor: pointer;
+  color: var(--reading-fold-text);
+  font-family: 'Noto Serif JP', Georgia, serif;
+  text-align: center;
+}
+
+/* 読み物の言語：<html lang> に合わせて、日本語と英語の本文のどちらかを見せる。
+   英語の URL（?lang=en）では、ページの <head> の小さなスクリプトが、本体の JS より先に lang を en にする */
+.reading-body { display: flex; flex-direction: column; gap: 2.25rem; }
+html:not([lang="en"]) [data-reading-lang="en"],
+html[lang="en"] [data-reading-lang="ja"] { display: none !important; }
+
+/* 英語の URL で、本体の JS が言葉を英語に替えるまで、JS が書き換える見出しや案内を隠しておく
+   （JS が id で書き換えるものには data-lang-pending を付ける。data-i18n（as）と data-ja・data-en（ks）は、付けなくても隠れる）。
+   lang-pending は <head> のスクリプトが付け、言葉を替えた JS が外す。JS が動かないときも、少し待てば外れる */
+html.lang-pending [data-lang-pending],
+html.lang-pending [data-i18n],
+html.lang-pending [data-ja][data-en] { visibility: hidden; }

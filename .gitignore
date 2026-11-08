@@ -21,6 +21,8 @@ wiki-out/
 **/.env*
 
 # 原典と素材（git に入れず、手元だけに置く。docs/BUILD-PLAN.md）
-cs/knowledge/raw/
+cs/knowledge/raw/*
+# 原典の台帳（書誌と取得の状況だけ。PDF は含まない）は公開する。cs/sources.html が読む（pjdhiro 2026-11-08）
+!cs/knowledge/raw/manifest.md
 cs/evidence/**/*.pdf
 cs/resources/

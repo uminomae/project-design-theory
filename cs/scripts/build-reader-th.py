@@ -138,8 +138,14 @@ def main() -> None:
         sys.exit("ERROR: <!--TOC--> marker (placeholder) not found in generated body")
     html = ph.sub(lambda _: toc_html, html, count=1)
 
-    page = TPL.read_text(encoding="utf-8")
-    page = page.replace("<!--BODY-->", html).replace("<!--UPDATED-->", updated)
+    page = TPL.read_text(encoding="utf-8").replace("<!--BODY-->", html)
+    # 中身が日付の所しか違わなければ、今の日付を保って書き換えない（pd の build-reader-lp.py と同じ）。
+    # 日付は正本のコミット日なので、repo の引っ越しのような中身の変わらないコミットでも進んでしまう
+    kept = kept_date(out, page)
+    if kept:
+        print(f"SAME: {out} (updated {kept} のまま)")
+        return
+    page = page.replace("<!--UPDATED-->", updated)
 
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(page, encoding="utf-8")
@@ -152,6 +158,20 @@ def main() -> None:
     except ValueError:
         shown = out
     print(f"OK: {shown} ({len(page.encode('utf-8')):,} bytes, updated {updated}, converter: {converter})")
+
+
+def kept_date(out, page):
+    """日付の所を除いて out と page が同じなら、out の日付を返す。違えば None。"""
+    if not out.exists():
+        return None
+    parts = page.split("<!--UPDATED-->")
+    pattern = (
+        re.escape(parts[0])
+        + r"(?P<d>\d{4}-\d{2}-\d{2}|unknown)"
+        + r"(?P=d)".join(re.escape(p) for p in parts[1:])
+    )
+    m = re.fullmatch(pattern, out.read_text(encoding="utf-8"), re.S)
+    return m.group("d") if m else None
 
 
 if __name__ == "__main__":

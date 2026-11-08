@@ -22,8 +22,9 @@ const CLASS_VARS = {
     '--ds-card-summary': 0.80,
 
     // -- Overlay & guide --
-    '--ds-overlay-tagline': 0.80,
-    '--ds-overlay-tagline-en': 0.80,
+    // CHANGED(2026-11-08): ヒーローの説明を大きくした（#70・案 C）。0.80 → 1.00・二行目 0.95
+    '--ds-overlay-tagline': 1.00,
+    '--ds-overlay-tagline-en': 0.95,
     '--ds-control-guide': 0.80,
     '--ds-surface-btn': 0.80,
 

@@ -2,7 +2,7 @@
 title: 波間の渦 — 宇宙は「モノ」でできているか、「流れ」でできているか
 status: draft-fable-reviewed
 updated: 2026-07-11
-issue: cs#258 / cs#259 / cs#261
+issue: #72（今までの cs#258 / cs#259 / cs#261 を引き継ぐ）
 source_of_truth: evidence/themes/TH-001-wave-vortex-ontology/output.md
 note: 本ファイルが READER の正本。reader/wave-vortex.html は生成物（直接編集禁止）
 

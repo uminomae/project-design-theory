@@ -45,7 +45,7 @@ function createMockDocument() {
         attributes: { 'data-i18n': 'graphicModeRaijin' },
     });
     const translatedNode = new MockElement({
-        textContent: '生存と間主観性から、意識を捉え直す。',
+        textContent: '人は、何で世界を切り取っているか。',
         attributes: { 'data-i18n': 'heroTaglinePrimary' },
     });
     const attrNode = new MockElement({
@@ -112,4 +112,12 @@ test('applyPageLanguageToDocument updates page chrome in english', () => {
     assert.equal(doc.nodes['about-trigger'].attributes['aria-label'], 'About this page');
     assert.equal(doc.nodes['about-overlay-title'].textContent, 'About this page');
     assert.equal(doc.nodes['about-close'].attributes['aria-label'], 'Close');
+});
+
+test('applyPageLanguageToDocument removes lang-pending set by the head script (#70)', () => {
+    const doc = createMockDocument();
+    const classes = new Set(['lang-pending']);
+    doc.documentElement.classList = { remove: (name) => classes.delete(name) };
+    applyPageLanguageToDocument(doc, 'en');
+    assert.equal(classes.has('lang-pending'), false);
 });

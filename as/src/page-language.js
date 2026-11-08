@@ -102,6 +102,8 @@ export function applyPageLanguageToDocument(doc, lang) {
     setText(langToggle, strings.langToggleLabel);
 
     doc.documentElement.lang = normalized;
+    // 英語の URL で <head> のスクリプトが付けた lang-pending を外し、隠していた見出しや案内を見せる（#70）
+    doc.documentElement.classList?.remove('lang-pending');
     doc.title = strings.documentTitle;
 }
 

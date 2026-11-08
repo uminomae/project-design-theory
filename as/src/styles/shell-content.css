@@ -611,80 +611,22 @@ html[lang="en"] #taglines {
 }
 
 /* ── 読み物の本文（2026-11-07・Love駆動開発の筋に合わせて組み直した）
-   明るい背景の上に置くので、文字は濃紺にし、背景は少しだけ白く透かす ── */
-#reading-section {
-  position: relative;
-  z-index: var(--as-z-raised);
-  padding-bottom: .9rem;
+   明るい背景の上に置くので、文字は濃紺にし、背景は少しだけ白く透かす。
+   形は ks と共通の ../../../src/styles/spaces-reading.css（shell.css が読み込む）。ここでは色・地・重なりの順だけを決める ── */
+:root {
+  --reading-z: var(--as-z-raised);
+  --reading-text: rgba(31, 51, 87, 1);
+  --reading-sub: rgba(31, 51, 87, 0.7);
+  --reading-quote-rule: rgba(31, 51, 87, 0.35);
+  --reading-details-rule: rgba(31, 51, 87, 0.15);
+  --reading-summary: rgba(31, 51, 87, 0.85);
+  --reading-link: rgba(28, 66, 150, 1);
+  --reading-focus-outline: 2px solid var(--ds-focus-ring);
+  --reading-fold-text: rgba(31, 51, 87, 1);
 }
 .reading-article {
-  max-width: 46rem;
-  margin: 0 auto;
-  padding: clamp(1.25rem, 4vw, 2.25rem);
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid rgba(31, 51, 87, 0.12);
   border-radius: .5rem;
-  color: rgba(31, 51, 87, 1);
-  font-size: 1rem;
-  line-height: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 2.25rem;
 }
-.reading-header { display: flex; flex-direction: column; gap: .9rem; }
-.reading-title {
-  font-family: 'Noto Serif JP', Georgia, serif;
-  font-weight: 400;
-  font-size: clamp(1.4rem, 4vw, 1.9rem);
-  letter-spacing: .08em;
-  margin: 0;
-}
-.reading-lead { margin: 0; }
-.reading-chapter { display: flex; flex-direction: column; gap: .8rem; }
-.reading-chapter p { margin: 0; }
-.reading-chapter-title {
-  font-family: 'Noto Serif JP', Georgia, serif;
-  font-weight: 400;
-  font-size: clamp(1.1rem, 3vw, 1.3rem);
-  line-height: 1.6;
-  margin: 0;
-  text-wrap: balance;
-}
-.reading-chapter-sub { font-size: .82em; color: rgba(31, 51, 87, 0.7); }
-.reading-quote {
-  border-left: 2px solid rgba(31, 51, 87, 0.35);
-  padding-left: .9rem;
-}
-.reading-details {
-  border-top: 1px solid rgba(31, 51, 87, 0.15);
-  padding-top: .5rem;
-}
-.reading-details > summary { cursor: pointer; color: rgba(31, 51, 87, 0.85); font-size: .92rem; }
-.reading-details[open] > summary { margin-bottom: .6rem; }
-.reading-details > p,
-.reading-details > ul { margin: 0 0 .7rem; font-size: .95rem; }
 .reading-source { font-size: .85rem !important; color: rgba(31, 51, 87, 0.75); }
-.reading-links { padding-left: 1.2rem; }
-.reading-article a { color: rgba(28, 66, 150, 1); }
-.reading-article a:focus-visible,
-.reading-details > summary:focus-visible,
-.records-fold-summary:focus-visible {
-  outline: 2px solid var(--ds-focus-ring);
-  outline-offset: 4px;
-}
-
-.records-fold { position: relative; z-index: var(--as-z-raised); }
-.records-fold-summary {
-  max-width: 46rem;
-  margin: 1rem auto 3rem;
-  padding: .8rem 1rem;
-  cursor: pointer;
-  color: rgba(31, 51, 87, 1);
-  font-family: 'Noto Serif JP', Georgia, serif;
-  text-align: center;
-}
-
-/* 読み物の言語：<html lang> に合わせて、日本語と英語の本文のどちらかを見せる */
-.reading-body { display: flex; flex-direction: column; gap: 2.25rem; }
-html:not([lang="en"]) [data-reading-lang="en"],
-html[lang="en"] [data-reading-lang="ja"] { display: none !important; }

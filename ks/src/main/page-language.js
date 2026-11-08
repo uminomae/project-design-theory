@@ -53,6 +53,8 @@ export function applyPageLanguage(lang) {
     // CHANGED(2026-03-28): allow static SEO copy and other plain-text nodes to follow lang toggle.
     applyDatasetLanguage(resolvedLang);
     document.documentElement.lang = resolvedLang;
+    // 英語の URL で <head> のスクリプトが付けた lang-pending を外し、隠していた見出しや案内を見せる（#70）
+    document.documentElement.classList.remove('lang-pending');
 }
 
 // DECISION: language-change side effects live with page-language updates so one module owns "lang -> DOM refresh".

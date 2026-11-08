@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+  <!-- 英語の URL（?lang=en）では、本体の JS を待たずに <html lang> を en にし、読み物の本文を英語にする。
+       JS が書き換える見出しや案内は、言葉が替わるまで隠す（lang-pending。外すのは JS。動かなくても 4 秒で外れる）（#70） -->
+  <script>
+    (function () {
+      if (new URLSearchParams(location.search).get('lang') !== 'en') return;
+      var root = document.documentElement;
+      root.lang = 'en';
+      root.classList.add('lang-pending');
+      setTimeout(function () { root.classList.remove('lang-pending'); }, 4000);
+    })();
+  </script>
   <!-- Google Analytics (skip on localhost / dev ports) -->
   <script>
     if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
@@ -138,10 +149,10 @@
   <header id="kesson-topbar" class="navbar navbar-expand-xl navbar-dark" aria-label="Main menu">
     <div class="container-fluid px-3 px-md-4">
       <div class="topbar-brand-wrap">
-        <a id="topbar-main-title" class="navbar-brand topbar-main-title" href="./">
+        <a id="topbar-main-title" data-lang-pending class="navbar-brand topbar-main-title" href="./">
           意識とは
         </a>
-        <span id="credit-collab" class="topbar-collab-note">AIとの協働作業中</span>
+        <span id="credit-collab" data-lang-pending class="topbar-collab-note">AIとの協働作業中</span>
       </div>
       <button
         class="navbar-toggler topbar-toggler"
@@ -177,7 +188,7 @@
           <li class="nav-item topbar-lang-item">
             <button
               type="button"
-              id="lang-toggle"
+              id="lang-toggle" data-lang-pending
               class="nav-link topbar-link topbar-link-btn topbar-lang-btn"
               data-lang-button
               aria-label="言語を英語に切り替え">
@@ -190,7 +201,7 @@
   </header>
 
   <nav id="graphic-switcher" role="group" aria-label="背景グラフィック切り替え">
-    <span class="graphic-switcher-label">背景</span>
+    <span class="graphic-switcher-label" data-lang-pending>背景</span>
     <button type="button" data-graphic-mode="raijin" class="active" aria-pressed="true" data-i18n="graphicModeRaijin">風神雷神</button>
   </nav>
   <div id="dev-version-inline" class="dev-version-inline" aria-live="polite" hidden></div>
@@ -205,7 +216,7 @@
         生存と信頼の信号から、意識という名前を当てた渦を見る。
       </div>
     </div>
-    <h1 id="title-h1">意識とは</h1>
+    <h1 id="title-h1" data-lang-pending>意識とは</h1>
     <button
       id="about-trigger"
       class="about-trigger"
@@ -257,7 +268,7 @@
   <div id="hero-spacer"></div>
 
   <div class="container">
-    <p id="reports-ai-notice" class="reports-ai-notice">AIが執筆しているため間違いがある場合があります。</p>
+    <p id="reports-ai-notice" data-lang-pending class="reports-ai-notice">AIが執筆しているため間違いがある場合があります。</p>
   </div>
 
   <!-- CHANGED(2026-11-07): 読み物の本文。Love駆動開発の筋に合わせて組み直した（見える一文が骨格・説明は畳み） -->
@@ -453,7 +464,7 @@
     <div class="section-content-wrap">
       <div class="container">
         <h2 class="section-heading">
-          <a id="model-section-heading" href="#model-section" class="section-heading-link" aria-label="意識モデルの解説 セクションへジャンプ">意識モデルの解説</a>
+          <a id="model-section-heading" data-lang-pending href="#model-section" class="section-heading-link" aria-label="意識モデルの解説 セクションへジャンプ">意識モデルの解説</a>
         </h2>
         <div class="kesson-panel">
           <div id="model-guide-cards" class="row row-cols-1 row-cols-md-3 g-2" aria-live="polite"></div>
@@ -470,7 +481,7 @@
     <div class="section-content-wrap">
       <div class="container">
         <h2 class="section-heading">
-          <a id="notes-section-heading" href="#notes-section" class="section-heading-link" aria-label="発散思考時note セクションへジャンプ">発散思考時note</a>
+          <a id="notes-section-heading" data-lang-pending href="#notes-section" class="section-heading-link" aria-label="発散思考時note セクションへジャンプ">発散思考時note</a>
         </h2>
         <div class="card-section-container">
           <div id="image-card-grid" class="row row-cols-1 row-cols-md-3 g-3 card-container" aria-live="polite">
