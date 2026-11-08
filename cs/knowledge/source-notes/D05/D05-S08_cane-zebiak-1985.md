@@ -41,7 +41,7 @@
 
 ### 主張 4: モデルはENSOの不規則な再発間隔を再現する
 
-> "One intent is to reproduce the salient features of the ENSO cycle with as simple a model as the essential physics will allow, so to simulate it precisely. We formulate a minimum model for the perturbations about a basic state derived from monthly mean climatologies of SST, surface winds, and thermocline depth" (p.1)
+> "Our intent is to reproduce the salient features of the ENSO cycle with as simple a model as the essential physics will allow, not to simulate it precisely. We formulate a nonlinear model for the perturbations about a basic state derived from monthly mean climatologies of SST, surface winds, and thermocline depth" (p.1085)
 
 最小限の物理過程からなるモデルが、3-4年間隔で不規則に発生するENSOイベントの時間パターンや空間構造を再現した。
 
@@ -81,3 +81,6 @@
 ## 7. 未読解セクション（部分読解の場合）
 
 全ページ読了（2ページの短報）。ただしPDFの3ページ目は別論文（"The Diversification of the Leguminosae"）であり、本論文とは無関係。
+
+
+> 追記（2026-11-09・#73）：主張 4 の引用を原典（*Science* 228, p.1085）の文字で直した。元のノートは「so to simulate it precisely」「minimum model」で、原文は「not to simulate it precisely」「nonlinear model」。頁は誌面の頁に直した。
