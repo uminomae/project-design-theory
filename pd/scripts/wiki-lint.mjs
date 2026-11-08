@@ -232,9 +232,8 @@ function main() {
     for (const alias of parseAliases(raw)) {
       if (!byStem.has(alias)) byStem.set(alias, stem);
     }
-    // also title field as alias
-    const { front } = parseFrontMatter(text);
-    if (front.title && !byStem.has(front.title)) byStem.set(front.title, stem);
+    // title はリンクの行き先にしない。サイトの wiki を組む Quartz は、ファイル名（stem）と
+    // aliases でしかリンクを解決しないので、[[題]] は無いページへのリンクになる（#66・2026-11-08）。
   }
 
   // Build backlink map: canonical stem -> Set of referring canonical stems

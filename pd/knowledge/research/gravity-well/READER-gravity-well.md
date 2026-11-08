@@ -54,7 +54,7 @@ date: 2026-11-08
 
 中心は、それに動かされているものの動き方から書かれてきました。
 
-出典：Rubin & Ford (1970) *ApJ* 159:379／Rubin, Ford & Thonnard (1980) *ApJ* 238:471（銀河の回転曲線）／Event Horizon Telescope Collaboration (2019) *ApJL* 875:L1（M87 の画像）／Wittgenstein (1921) *Tractatus Logico-Philosophicus* 5.633。
+出典：[Rubin & Ford (1970)](https://doi.org/10.1086/150317) *ApJ* 159:379／[Rubin, Ford & Thonnard (1980)](https://doi.org/10.1086/158003) *ApJ* 238:471（銀河の回転曲線）／[Event Horizon Telescope Collaboration (2019)](https://doi.org/10.3847/2041-8213/ab0ec7) *ApJL* 875:L1（M87 の画像）／Wittgenstein (1921) *Tractatus Logico-Philosophicus* 5.633。
 
 </details>
 
