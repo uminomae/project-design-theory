@@ -1,6 +1,8 @@
 <!-- Ported from: creation-space (2026-03-24) -->
 # フロントエンド Smoke Test チェックリスト (#139)
 
+> 2026-11-08：この文書は今までの kesson-space の手順で、今は使わない。今の検査と自動化は、この repo の `docs/TESTING.md` にある（考え方はそこに継いだ）。記録として残す。
+
 UI 変更を含む Issue の close 前に確認する。
 
 ## 手動チェック項目

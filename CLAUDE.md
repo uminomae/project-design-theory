@@ -64,6 +64,6 @@
 - **確かめは、手元のサーバーをブラウザで見るのが基本。** 最速で目視できるから使っている。本体の checkout（develop）を launchd（`com.uminomae.project-design-theory`）が `scripts/serve.sh` で http://localhost:3001/ に常駐させている。直したらすぐ 3001 で見られる状態にしておく：直したら 3001 で開いて確かめ、止まっていたら `launchctl kickstart -k gui/$(id -u)/com.uminomae.project-design-theory` で起こす。
 - **公開は、`develop` を `main` へ送るだけ**（`git push origin develop:main`）。話の流れで確かめが済んでいれば、いちいち聞かずに送る。
 - 公開は GitHub Actions（`.github/workflows/pages.yml`）。出すのはサイトのファイルだけ。
-- サイトのファイルを直したら、commit の前に `bash scripts/check.sh` を走らせる（旧 repo へのリンク・読み物の内部アンカー・as と ks のテスト）。同じものを `.github/workflows/check.yml` が develop と main で走らせる。
+- サイトのファイルを直したら、commit の前に `bash scripts/check.sh` を走らせる（旧 repo へのリンク・読み物の内部アンカー・wiki・as と ks のテスト・文字化け）。同じものを `.github/workflows/check.yml` が develop と main で走らせる。何を機械で見て、何を画面で見て、何がまだ無いかは `docs/TESTING.md`。
 - commit の末尾：`Co-Authored-By: Claude <noreply@anthropic.com>`
 - 初回だけ `git config core.hooksPath .githooks` を実行して、公開前の点検を有効にする。

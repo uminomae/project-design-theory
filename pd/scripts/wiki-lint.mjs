@@ -52,6 +52,10 @@ const FORBIDDEN_TERMS = [
 ];
 
 const QUIET = process.argv.includes("--quiet");
+// --check：報告（wiki/health/*.md）を書き換えず、孤立ページ・不在の source path・旧用語があれば 1 で終わる。
+// scripts/check.sh から呼ぶ（2026-11-08・docs/TESTING.md）。指定しないときは今までどおり報告を書き換え、0 で終わる。
+const CHECK = process.argv.includes("--check");
+function writeReport(path, text) { if (!CHECK) writeFileSync(path, text); }
 const log = (...args) => { if (!QUIET) console.error(...args); };
 
 // ---- helpers ----
@@ -361,7 +365,7 @@ function main() {
     const status = orphans.length > 0 ? "WARN" : "PASS";
     text = text.replace(/^(status:\s*).*$/m, `$1${status}`);
     text = replaceAutoBlock(text, autoBlock);
-    writeFileSync(ORPHAN_REPORT, text);
+    writeReport(ORPHAN_REPORT, text);
     log(`orphan-report updated: ${orphans.length} orphans, ${broken} broken, ${totalLinks} links`);
   }
 
@@ -440,7 +444,7 @@ function main() {
     const fstatus = missingSources.length > 0 ? "FAIL" : "PASS";
     text = text.replace(/^(status:\s*).*$/m, `$1${fstatus}`);
     text = replaceAutoBlock(text, freshAutoBlock);
-    writeFileSync(FRESHNESS_REPORT, text);
+    writeReport(FRESHNESS_REPORT, text);
     log(`freshness-report updated: ${missingSources.length} missing sources`);
   }
 
@@ -470,10 +474,15 @@ function main() {
     const cstatus = cnHits.length > 0 ? "FAIL" : "PASS";
     text = text.replace(/^(status:\s*).*$/m, `$1${cstatus}`);
     text = replaceAutoBlock(text, cnAutoBlock);
-    writeFileSync(CN_REPORT, text);
+    writeReport(CN_REPORT, text);
     log(`cn-divergence-report updated: ${cnHits.length} forbidden term hits`);
   }
 
+  if (CHECK) {
+    const problems = orphans.length + missingSources.length + cnHits.length;
+    console.log(`wiki-lint --check: 孤立 ${orphans.length}・不在の source path ${missingSources.length}・旧用語 ${cnHits.length}（壊れたリンク ${broken} は数えない）`);
+    return problems > 0 ? 1 : 0;
+  }
   return 0;
 }
 
@@ -481,5 +490,5 @@ try {
   process.exit(main());
 } catch (err) {
   log(`wiki-lint error: ${err.message}`);
-  process.exit(0); // never block the hook
+  process.exit(CHECK ? 1 : 0); // hook として呼ぶときは止めない。--check のときは落とす
 }

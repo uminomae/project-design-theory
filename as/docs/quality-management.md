@@ -1,5 +1,7 @@
 # docs/quality-management.md
 
+> 2026-11-08：この文書は今までの awareness-space の手順で、今は使わない。今の検査と自動化は、この repo の `docs/TESTING.md` にある（考え方はそこに継いだ）。記録として残す。
+
 ## 目的
 
 `awareness-space` の文書・UI・変換物の品質基準を定める。

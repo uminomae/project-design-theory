@@ -1,7 +1,7 @@
 name: Check
 
 # サイトの検査（scripts/check.sh）を、develop と main に入れるたびに走らせる。
-# 今までの repo の ci.yml・test.yml の代わり（docs/harness-pending/README.md）。
+# 今までの repo の ci.yml・test.yml の代わり。何を入れているかは docs/TESTING.md。
 on:
   push:
     branches: [develop, main]

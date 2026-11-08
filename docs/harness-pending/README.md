@@ -10,6 +10,8 @@
 
 読んだ版は各 repo の `develop`（2026-11-07 時点。project-design 43391af）。
 
+検査と自動化に当たるもの（まとまり C の品質の検査・テスト・レビューの手順、hooks の検査、`github/workflows/`）は、2026-11-08 に `docs/TESTING.md` へまとめた。今の形で動くものはそこの「今あるもの」に入れ、まだ形の決まらないものは「作りたいもの」に作りたい内容だけを書いた。下の表は、もとの名前と迷った理由の記録として残す（pjdhiro 2026-11-08）。
+
 ## 入れたもの
 
 | 入れた先 | もと | 直したこと |
@@ -35,7 +37,7 @@
 - `cs/scripts/smoke-test.js`：hooks の確かめを外し、`\!` の書き損じを直し、pjdhiro の場所を上へ探すようにした
 - `ks/tests/config-exports.test.js`：Node 25 で循環する import が読めずに落ちていたので、入口だけで link するようにした
 - `ks/scripts/articles-en-semi-auto.mjs` ほか：通知先が今までの `kesson-space#107` だったので、既定では通知しないようにした
-- `ks/scripts/agent-post-check.sh`・`cs/scripts/agent-post-check.sh` は、下の `agent-completion.md` と一緒に決めるので残した。cs のスクリプトの多くは pjdhiro を `../pjdhiro` で探すが、cs の調査を再開するときに直す
+- `ks/scripts/agent-post-check.sh`・`cs/scripts/agent-post-check.sh` は、下の `agent-completion.md` と一緒に決めるので残した。2026-11-08 に外した（`docs/TESTING.md` の「外したもの」）。cs のスクリプトの多くは pjdhiro を `../pjdhiro` で探すが、cs の調査を再開するときに直す
 
 ## 名前だけ置いたもの（判断に迷うもの）
 
