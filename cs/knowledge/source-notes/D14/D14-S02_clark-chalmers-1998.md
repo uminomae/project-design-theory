@@ -27,7 +27,7 @@
 
 Putnam/Burge の「双子地球」型外在主義は外部特徴が *passive*（遠位・歴史的）であるのに対し、著者の外在主義では外部特徴が *here-and-now* で直接的な因果役割を果たす。
 
-### 主張 2: カップルド・システム基準（the Parity Principle）
+### 主張 2: カップルド・システム基準（後に「parity principle」と呼ばれる。1998 年の本文にこの語は無い。2026-11-08 に確かめた）
 
 > "If, as we confront some task, a part of the world functions as a process which, *were it done in the head*, we would have no hesitation in recognizing as part of the cognitive process, then that part of the world *is* (so we claim) part of the cognitive process." (p.8)
 
