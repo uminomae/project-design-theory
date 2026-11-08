@@ -81,6 +81,11 @@
       "id": "D07",
       "file": "evidence-D07-engineering.md",
       "reviewed": "2026-11-09"
+    },
+    {
+      "id": "D09",
+      "file": "evidence-D09-life-sciences.md",
+      "reviewed": "2026-11-09"
     }
   ]
 }

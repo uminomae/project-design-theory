@@ -4,7 +4,7 @@
 **access_status**: url-verified
 **読解日**: 2026-04-10 | **読解者**: claude-opus-4-6
 **読解方法**: WebFetch (URL) -> PDF Read
-**原典ページ数**: 5 (pp.1593-1597) | **読解ページ範囲**: 1-5 (全ページ)
+**原典ページ数**: 7 (pp.1593-1599) | **読解ページ範囲**: 1-5 (全ページ)
 **注記**: D07-S07 と同一論文。D07 (神経科学) の文脈でも読解済み
 
 ---
@@ -13,8 +13,8 @@
 
 - **著者**: Wolfram Schultz, Peter Dayan, P. Read Montague
 - **タイトル**: A Neural Substrate of Prediction and Reward
-- **出典**: Science, Vol. 275, 14 March 1997, pp. 1593-1597
-- **DOI / URL**: http://www.cs.utexas.edu/~dana/Reward.pdf
+- **出典**: Science, Vol. 275, 14 March 1997, pp. 1593-1599
+- **DOI / URL**: DOI 10.1126/science.275.5306.1593。http://www.cs.utexas.edu/~dana/Reward.pdf（2026-11-09 に 502）。共著者 Dayan のサイトの写し http://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf
 
 ## 2. 要旨（読んだ内容に基づく）
 
@@ -76,3 +76,5 @@ TD予測に基づく価値関数が環境中の「価値面（value surface）�
 ## 7. 未読解セクション
 
 全ページ読了
+
+> 追記（2026-11-09・#73）：頁を pp.1593-1597 から pp.1593-1599 に直し（Crossref と誌面の写し）、DOI と Dayan のサイトの写しを足した。27・33・63 行の引用と頁は原典で確かめていないので直していない（63 行の引用は原典に無いという報告がある）。
