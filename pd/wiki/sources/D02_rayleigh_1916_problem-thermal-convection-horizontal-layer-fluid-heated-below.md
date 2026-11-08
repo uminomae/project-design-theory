@@ -1,5 +1,5 @@
 ---
-title: "下方加熱された水平流体層における熱対流の問題"
+title: "下から熱した水平な流体の層の対流（On convection currents in a horizontal layer of fluid）"
 description: "レイリー卿によるベナール対流の理論的解析。加熱された流体層が臨界温度勾配を超えると規則的な対流セルを形成する不安定性を数学的に解明した。"
 aliases: ["On Convection Currents in a Horizontal Layer of Fluid, when the Higher Temperature is on the Under Side", "The Problem of Thermal Convection in a Horizontal Layer of Fluid Heated from Below"]
 tags: [source, "D02", "原典解説"]
