@@ -101,3 +101,7 @@
 ## 入れていない、ハーネス以外のもの
 
 - awareness-space の `build/theory/what-is-consciousness.md`：根の `.gitignore` の `build/` で外れていた。移すかは #35 で pjdhiro が決める
+
+## 片付けたこと（repo の外）
+
+- 2026-11-08（#75）：`~/.claude/settings.json` の hooks 4 本（exfil-guard・credential-guard・backslash-bang-guard・instruction-lint。今までの project-design の場所を指していて、ツールを呼ぶたびに失敗していた）を外し、`~/.claude/skills/` の切れた symlink 5 本（agent-team-workflow・cli-instruction・codex-review・codex-worker-instruction・periodic-review）を消した。要るものは、この repo の `.claude/` に新しく書く。

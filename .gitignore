@@ -26,3 +26,6 @@ cs/knowledge/raw/*
 !cs/knowledge/raw/manifest.md
 cs/evidence/**/*.pdf
 cs/resources/
+
+# pjdhiro と Claude の対話の記録（手元の足場。公開しない。pjdhiro 2026-11-08）
+/dialogues/
