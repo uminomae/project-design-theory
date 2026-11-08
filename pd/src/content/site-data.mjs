@@ -134,6 +134,10 @@ export const TRANSLATIONS = {
     "love.faq.body":
       "<ul><li><strong>「Love は恋愛・愛情のことだ」</strong> → つながりを生む引力一般を指します。縁を生む力であって、特定の感情ではありません。</li><li><strong>「『生存と同等に重要』は論証済みの事実だ」</strong> → 構え（仮説）です。生存と並ぶ駆動力ではないか、という問いとして置いています。</li></ul>",
     "hero.aboutAria": "このサイトについて",
+    "toc.title": "目次",
+    "toc.button": "☰ 目次",
+    "toc.open": "目次を開く",
+    "toc.close": "閉じる",
     "section.overview.label": "Overview",
     "section.overview.title": "概要",
     "overview.p1":
@@ -311,6 +315,10 @@ export const TRANSLATIONS = {
     "love.faq.body":
       "<ul><li><strong>“The ‘Love’ here means romance or affection”</strong> → It refers to the attractive force that creates connection in general — the force that gives rise to relation, not a specific emotion.</li><li><strong>“‘As important as survival’ is a proven fact”</strong> → It is a stance (a hypothesis), posed as the question of whether it stands alongside survival as a driver.</li></ul>",
     "hero.aboutAria": "About this site",
+    "toc.title": "Contents",
+    "toc.button": "☰ Contents",
+    "toc.open": "Open contents",
+    "toc.close": "Close",
     "section.overview.label": "Overview",
     "section.overview.title": "Overview",
     "overview.p1":

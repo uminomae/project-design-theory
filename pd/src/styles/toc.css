@@ -1,0 +1,138 @@
+/* toc.css — 目次（garage 型: PC=常設サイドバー / モバイル=右下ボタン＋ドロワー）
+   読み物（body.reader-flow・reader-flow.js が作る）と HOME（body.home-toc・ui/home-toc.js が作る）で共用。
+   reader-flow.css から移した（2026-11-08・HOME に目次を付けるため）。 */
+:is(body.reader-flow, body.home-toc) #toc-btn {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 60;
+    background: var(--navy);
+    color: var(--white);
+    border: none;
+    border-radius: 99px;
+    padding: 12px 18px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    font-family: var(--sans);
+    box-shadow: var(--glass-shadow-modal);
+    cursor: pointer;
+}
+:is(body.reader-flow, body.home-toc) #toc-btn:active { transform: scale(0.96); }
+:is(body.reader-flow, body.home-toc) #toc-bd {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.35);
+    z-index: 59;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s;
+}
+:is(body.reader-flow, body.home-toc).toc-open #toc-bd { opacity: 1; visibility: visible; }
+:is(body.reader-flow, body.home-toc) #toc {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: min(84vw, 330px);
+    z-index: 61;
+    background: var(--glass-bg-strong);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-left: 1px solid var(--glass-border-soft);
+    padding: 20px 14px;
+    overflow-y: auto;
+    transform: translateX(105%);
+    transition: transform 0.26s ease;
+    box-shadow: var(--glass-shadow-modal);
+}
+:is(body.reader-flow, body.home-toc).toc-open #toc { transform: translateX(0); }
+:is(body.reader-flow, body.home-toc) #toc .toc-h {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    font-weight: 700;
+    margin: 0 0 10px;
+    padding: 0 8px;
+}
+:is(body.reader-flow, body.home-toc) #toc .toc-x {
+    background: none;
+    border: none;
+    color: var(--mute);
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 4px;
+}
+:is(body.reader-flow, body.home-toc) #toc ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: toc;
+}
+:is(body.reader-flow, body.home-toc) #toc li { counter-increment: toc; }
+/* 部の行（章をまとめる区切り・番号を数えない・#20） */
+:is(body.reader-flow, body.home-toc) #toc li.toc-part { counter-increment: none; margin-top: 10px; }
+:is(body.reader-flow, body.home-toc) #toc li.toc-part:first-child { margin-top: 0; }
+:is(body.reader-flow, body.home-toc) #toc li.toc-part a {
+    font-family: var(--serif-jp);
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--gold);
+    padding: 6px 10px 2px;
+    letter-spacing: 0.04em;
+}
+:is(body.reader-flow, body.home-toc) #toc li.toc-part a::before { content: none; }
+:is(body.reader-flow, body.home-toc) #toc li.toc-part a:hover { background: none; color: var(--navy); }
+:is(body.reader-flow, body.home-toc) #toc a {
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 0.875rem;
+    line-height: 1.45;
+}
+:is(body.reader-flow, body.home-toc) #toc a::before {
+    content: counter(toc) ".";
+    color: var(--mute);
+    font-weight: 700;
+    margin-right: 8px;
+}
+:is(body.reader-flow, body.home-toc) #toc a:hover { background: var(--glass-bg-medium); }
+:is(body.reader-flow, body.home-toc) #toc a.active {
+    background: var(--glass-bg-medium);
+    color: var(--navy);
+    box-shadow: inset 3px 0 0 var(--gold);
+}
+:is(body.reader-flow, body.home-toc) #toc a.active::before { color: var(--gold); }
+:is(body.reader-flow, body.home-toc) #toc .toc-main { display: inline; }
+:is(body.reader-flow, body.home-toc) #toc .toc-sub2 {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--mute);
+    margin: 1px 0 0 1.4em;
+    line-height: 1.35;
+}
+:is(body.reader-flow, body.home-toc) #toc a.active .toc-sub2 { color: var(--navy); }
+@media (min-width: 1260px) {
+    /* PC: 左マージンに常設 TOC。ボタン・背景は不要 */
+    :is(body.reader-flow, body.home-toc) #toc {
+        left: 20px;
+        right: auto;
+        top: 92px;
+        height: auto;
+        max-height: calc(100vh - 116px);
+        width: 206px;
+        transform: none;
+        box-shadow: var(--glass-shadow);
+        border: 1px solid var(--glass-border-soft);
+        border-radius: 12px;
+    }
+    :is(body.reader-flow, body.home-toc) #toc .toc-x { display: none; }
+    :is(body.reader-flow, body.home-toc) #toc-btn,
+    :is(body.reader-flow, body.home-toc) #toc-bd { display: none; }
+}
