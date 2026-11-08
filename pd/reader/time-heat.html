@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/time-heat.html を直接編集しないでください。
+  正本:   knowledge/research/time-heat/READER-time-heat.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。本人の確認が済んだら外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「時間と熱の式」のページです。ブラックホールの虚時間の周期 β = 8πGM/c³ が、質量だけで時間の長さと温度を決めることを説明する。原典（Hawking 1975）で確かめた部分、教科書の事実、Claude の計算、pjdhiro の見方・仮説を分けて書く。プロジェクトデザイン論の問いの読み物から参照される足場のページ。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>時間と熱の式 | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/time-heat.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="ブラックホールのまわりでは、時間と熱が一つの式 β = 8πGM/c³ で結ばれる。β は熱の輪（虚時間の周期）の一周の長さで、質量だけで決まる。記号、式までの道筋（ホーキング 1975 年の論文で確かめた）、太陽の質量での値、向きが逆のコンプトンの式との対、プロジェクトデザイン論での使い方を、確かめた度合いと分けて書く。">
+    <meta property="og:title" content="時間と熱の式">
+    <meta property="og:description" content="ブラックホールのまわりでは、時間と熱が一つの式 β = 8πGM/c³ で結ばれる。β は熱の輪（虚時間の周期）の一周の長さで、質量だけで決まる。記号、式までの道筋（ホーキング 1975 年の論文で確かめた）、太陽の質量での値、向きが逆のコンプトンの式との対、プロジェクトデザイン論での使い方を、確かめた度合いと分けて書く。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/time-heat.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="時間と熱の式">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-08">
+    <meta property="article:modified_time" content="2026-11-08">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "時間と熱の式",
+          "description": "ブラックホールのまわりでは、時間と熱が一つの式 β = 8πGM/c³ で結ばれる。β は熱の輪（虚時間の周期）の一周の長さで、質量だけで決まる。記号、式までの道筋（ホーキング 1975 年の論文で確かめた）、太陽の質量での値、向きが逆のコンプトンの式との対、プロジェクトデザイン論での使い方を、確かめた度合いと分けて書く。",
+          "keywords": "時間, 熱, ブラックホール, ホーキング温度, 虚時間, ウィック回転, 質量, 固有時間, コンプトン, プランク質量, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/time-heat.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/time-heat.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-08",
+          "dateModified": "2026-11-08",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "ホーキング放射"}, {"@type": "Thing", "name": "虚時間"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「時間と熱の式」のページです（工事中）。ブラックホールのまわりでは、時間と熱が一つの式 β = 8πGM/c³ で結ばれる。β は熱の輪（虚時間の周期）の一周の長さで、質量だけで決まる。記号、式までの道筋（ホーキング 1975 年の論文で確かめた）、太陽の質量での値、向きが逆のコンプトンの式との対、プロジェクトデザイン論での使い方を、確かめた度合いと分けて書く。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b><br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>時間と熱の式</h1>
+                <p class="reader-subtitle">β = 8πGM/c³ — 質量が、熱の輪の一周（時間）を決める</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-08 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/time-heat/READER-time-heat.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<details class="sec" id="この式は何を言っているか" open><summary>この式は何を言っているか</summary><div class="secbody">
+
+
+<p><a id="th-what"></a>ブラックホールのまわりでは、時間と熱が一つの式で結ばれます。その式が次のものです。</p>
+<div class="glow-card"><p><strong>β = 8πGM / c³</strong></p></div>
+
+<p>β は、熱の輪の一周の長さです。単位は秒で、時間の長さを表します。M はブラックホールの質量です。式の右側には、質量のほかに定数しかありません。質量が決まると、時間の長さが決まります。</p>
+<p>この式は、pjdhiro の次の見方を、物理の式として書いたものです。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>熱の波間の渦としての質量が、時間に値を与える。</p>
+</blockquote>
+<p>このページの文責は Claude です。式の確かめは Claude が行い、原典で確かめた部分と、まだ確かめていない部分とを分けて書きます。pjdhiro は、物理の式の真偽を判定する立場ではなく、この式を「今後何度も使う足場」として置いています。</p>
+</div></details><details class="sec" id="式の記号" open><summary>式の記号</summary><div class="secbody">
+
+
+<p><a id="th-symbols"></a>式に出てくる記号は、次のとおりです。</p>
+<div class="tablefit cols-4">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>記号</th>
+<th>名前</th>
+<th>値と単位</th>
+<th>この式での役</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>β</td>
+<td>熱の輪の一周（虚時間の周期）</td>
+<td>秒</td>
+<td>時間の値</td>
+</tr>
+<tr>
+<td>M</td>
+<td>ブラックホールの質量</td>
+<td>kg</td>
+<td>ただ一つの変数</td>
+</tr>
+<tr>
+<td>G</td>
+<td>重力定数</td>
+<td>6.674×10⁻¹¹ m³ kg⁻¹ s⁻²</td>
+<td>質量を時空の曲がりに結ぶ</td>
+</tr>
+<tr>
+<td>c</td>
+<td>光の速さ</td>
+<td>2.998×10⁸ m s⁻¹</td>
+<td>時間と空間を結ぶ</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>GM/c³ の単位を計算すると、(m³ kg⁻¹ s⁻²)(kg) ÷ (m³ s⁻³) = s になります。式の右側は、時間の長さです。</p>
+</div></details><details class="sec" id="熱の輪とは何か" open><summary>熱の輪とは何か</summary><div class="secbody">
+
+
+<p><a id="th-ring"></a>量子力学では、時間が進むことと、熱を持った状態とを、ほとんど同じ形の式で書きます。時間 t に虚数 i を掛けて 90 度回すと、時間の式が熱の式に変わります。この操作をウィック回転と呼びます。回したあとの時間を、虚時間と呼びます。</p>
+<p>ブラックホールのまわりでは、虚時間が輪になって閉じます。輪の一周の長さが決まっていて、その長さが温度の逆数になります。この一周の長さが β です。質量が大きいほど輪は長くなり、温度は低くなります。</p>
+<details class="acc"><summary>式の形で見る — 時間を 90 度回すと、熱になる</summary>
+
+<p>量子力学で、時間が進むことは e^(−iHt/ħ) と書きます。H はエネルギー、ħ は換算プランク定数です。熱を持った状態は e^(−βH) の形で書きます。t を −iτ に置き換えると、前の式が後の式と同じ形になります。</p>
+<p>ブラックホールのまわりでは、τ が周期を持ちます。その周期が β です。ここまでは物理の教科書で扱われている内容です。</p>
+</details>
+
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>熱と時間と空間が i で回転すると法則ができる。というのは重要。それは群盲象として当たっているのだろう。それを包摂する際のメタな視点が私の身体にない。数学でしか眺めることができない。</p>
+</blockquote>
+</div></details><details class="sec" id="式までの道筋" open><summary>式までの道筋</summary><div class="secbody">
+
+
+<p><a id="th-path"></a>この式は、ブラックホールの温度から、四つの段で導かれます。</p>
+<ol type="1">
+<li>ブラックホールの温度は、地平面の表面重力 κ で決まります。T = ħκ / (2π c k_B)。k_B はボルツマン定数です。</li>
+<li>回転していないブラックホールでは、表面重力は κ = c⁴ / (4GM) です。</li>
+<li>1 に 2 を入れると、T = ħc³ / (8πG M k_B) になります。これをホーキング温度と呼びます。</li>
+<li>温度の逆数を時間の長さとして書くと、ħ / (k_B T) = 8πGM / c³ になります。これが β です。</li>
+</ol>
+<details class="acc"><summary>どの原典で確かめたか</summary>
+
+<p>1 と 2 は、ホーキングの 1975 年の論文の本文で確かめました。温度は幾何単位で κ/2π と書かれ（p. 201、p. 211 の式 (2.29) の後）、回転していないブラックホールでは κ = 1/(4M) と書かれています（p. 209）。幾何単位から、ふつうの単位へ戻したのは Claude です。単位が時間になることも確かめました。</p>
+<p>虚時間の周期が 8πM（幾何単位）であることは、量子重力の総説（Schulz 2014）の式 (473) の前後で確かめました。この周期を最初に示したのはギボンズとホーキングの 1977 年の論文ですが、その本文はまだ読めていません。</p>
+<p>ブラックホールの温度を、虚時間の周期から導くやり方には、足元が確かでないという指摘もあります（Banihashemi &amp; Jacobson）。</p>
+<p>出典：<a href="https://doi.org/10.1007/BF02345020">Hawking (1975)</a> <em>Commun. Math. Phys.</em> 43:199–220／<a href="https://doi.org/10.1103/PhysRevD.15.2752">Gibbons &amp; Hawking (1977)</a> <em>Phys. Rev. D</em> 15:2752（本文は未読）／<a href="https://arxiv.org/abs/1409.7977">Schulz (2014)</a> arXiv:1409.7977／<a href="https://arxiv.org/abs/2411.00267">Banihashemi &amp; Jacobson</a> arXiv:2411.00267。</p>
+</details>
+
+</div></details><details class="sec" id="数で見る" open><summary>数で見る</summary><div class="secbody">
+
+
+<p><a id="th-numbers"></a>太陽と同じ質量のブラックホールでは、熱の輪の一周は約 1.24×10⁻⁴ 秒です。地平面の温度は約 6.2×10⁻⁸ K で、絶対零度にとても近い冷たさです。</p>
+<p>質量が 10 倍になると、一周の長さも 10 倍になり、温度は 10 分の 1 になります。重いブラックホールほど、輪は長く、輪郭は冷たくなります。</p>
+<details class="acc"><summary>計算に使った値</summary>
+
+<p>太陽の質量 1.988×10³⁰ kg と、CODATA 2018 の定数を使いました。ホーキングの 1975 年の論文の要旨は、温度を「およそ 10⁻⁶ (M☉/M) K」と桁の目安で書いていて、ここで計算した値より一桁半ほど大きくなっています。</p>
+</details>
+
+</div></details><details class="sec" id="向きが逆のもう一つの式" open><summary>向きが逆の、もう一つの式</summary><div class="secbody">
+
+
+<p><a id="th-pair"></a>質量と時間を結ぶ式は、もう一つあります。一つの粒子が持つ時計の一刻みです。質量 m の粒子は、2πħ / (mc²) の長さで刻みます。こちらは、質量が大きいほど一刻みが短くなります。</p>
+<div class="tablefit cols-4">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>式</th>
+<th>何の時間か</th>
+<th>長さ</th>
+<th>質量が大きいと</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>コンプトンの式</td>
+<td>一つの粒子の時計の一刻み</td>
+<td>2πħ / (mc²)</td>
+<td>短くなる</td>
+</tr>
+<tr>
+<td>このページの式</td>
+<td>ブラックホールの熱の輪の一周</td>
+<td>8πGM / c³</td>
+<td>長くなる</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>二つの式で、増え方の向きが逆です。どちらの式でも、時間の長さはいつも正の値です。時間が逆に流れるわけではありません。</p>
+<details class="acc"><summary>二つが入れ替わるところ — プランク質量のあたり</summary>
+
+<p>二つの長さを掛けると、質量が消えて一定の値になります。2πħ/(mc²) × 8πGm/c³ = 16π²ħG/c⁵ です。これはプランク時間（約 5.4×10⁻⁴⁴ 秒）を使って (4π t_P)² と書けます。二つはシーソーのように、一方が短くなると他方が長くなります。</p>
+<p>二つが同じ長さになるのは、質量が √(ħc/4G)、約 1.1×10⁻⁸ kg のときです。これより軽いものでは粒子の時計が、重いものではブラックホールの熱の輪が、時間を決める側になります。このあたりは、量子の効き目と重力の効き目が同じくらいになるところです。</p>
+<p>この節の計算は Claude が行いました。原典では確かめていません。</p>
+</details>
+
+</div></details><details class="sec" id="この式をどう使っているか" open><summary>この式を、どう使っているか</summary><div class="secbody">
+
+
+<p><a id="th-use"></a>プロジェクトデザイン論では、この式を、時間と熱と質量の関係を考える足場として使っています。pjdhiro は、この式のまわりに次の仮説を立てています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の仮説：</strong>時間は、相対性理論では質量の誕生と同時。時間を誕生させる対立は、質量か熱か、というのは面白い。</p>
+</blockquote>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の仮説：</strong>質量とは、熱の働きによって輪郭めいたものが与えられた渦、というのが素朴には理解が楽。質量の渦の輪郭は熱の波の形。時間はそこで誕生する。</p>
+</blockquote>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>時間は人間が思うほど絶対でない。どちらかというと真空や質量の方が絶対。</p>
+</blockquote>
+<p>ブラックホールでは、地平面が渦の輪郭にあたります。地平面は温度を持ち、外から見ると、時間の進みはそこで止まったように見えます。輪郭と熱と時間が、一つの面に集まっています。</p>
+<p>この式がそのまま当てはまるのは、地平面を持つブラックホールだけです。人や星に当てるときは、式そのものではなく、形を借りています。たとえば、たくさんの粒子が集まった大きなものでは、時間の向き（戻れないこと）は熱から来る、と教科書で説明されます。仮説が借りているのは、この形です。</p>
+</div></details><details class="sec" id="どこまでが確かめたことか" open><summary>どこまでが確かめたことか</summary><div class="secbody">
+
+
+<p><a id="th-facts"></a>このページの記述を、確かめた度合いで分けます。</p>
+<div class="tablefit cols-3">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>記述</th>
+<th>種類</th>
+<th>補足</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>β = 8πGM/c³（虚時間の周期が質量で決まる）</td>
+<td>原典で確かめた</td>
+<td>ホーキング 1975 年の論文と、量子重力の総説</td>
+</tr>
+<tr>
+<td>ホーキング温度 T = ħc³/(8πGMk_B)</td>
+<td>原典で確かめた</td>
+<td>同上。単位を戻したのは Claude</td>
+</tr>
+<tr>
+<td>太陽の質量で約 1.24×10⁻⁴ 秒・約 6.2×10⁻⁸ K</td>
+<td>計算で確かめた</td>
+<td>CODATA 2018 の定数</td>
+</tr>
+<tr>
+<td>時間を 90 度回すと熱の式になる（ウィック回転）</td>
+<td>教科書の事実</td>
+<td>このページでは原典を照合していない</td>
+</tr>
+<tr>
+<td>コンプトンの式と、プランク質量のあたりで入れ替わること</td>
+<td>Claude の計算</td>
+<td>原典では確かめていない</td>
+</tr>
+<tr>
+<td>質量・熱・時間についての仮説</td>
+<td>pjdhiro の見方</td>
+<td>物理として確かめる対象ではなく、構造の似かたを見る足場</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+</div></details><details class="sec" id="この式が出てくる場所"><summary>この式が出てくる場所</summary><div class="secbody">
+<p><a id="th-uses"></a></p>
+<ul>
+<li><a href="gravity-love.html">愛は、重力に似ていないか</a>：ブラックホールの中心と、外から時間が止まって見える地平面を扱う読み物。</li>
+</ul>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="gravity-love.html">愛は、重力に似ていないか</a> ・
+                <a href="rotation-multiplication.html">回転の掛け算</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
