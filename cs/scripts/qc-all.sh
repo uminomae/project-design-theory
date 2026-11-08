@@ -75,13 +75,9 @@ else
     skip_msg "報告ページへの静的リンク鮮度 — 配信先 pjdhiro repo が無い(worktree等)"
 fi
 
-# --- 3. hooks 健全性 (相対symlink依存のため main checkout でのみ意味を持つ) ---
-if [[ $IS_WORKTREE -eq 0 ]]; then
-    run "hooks 存在・権限・依存 (verify-hooks)" \
-        bash scripts/verify-hooks.sh
-else
-    skip_msg "hooks 健全性 — linked worktree では hooks symlink が切れるため(main checkout で実行)"
-fi
+# --- 3. hooks 健全性 ---
+# 今までの creation-space の .claude/hooks.json を見る verify-hooks.sh は、この repo に hooks が無いので外した
+# （docs/harness-pending/README.md・2026-11-08）。
 
 # --- 4. ドメインレポート日付一致 ---
 run "ドメインレポート日付 (verify-domain-dates --all)" \

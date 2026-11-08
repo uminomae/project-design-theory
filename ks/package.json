@@ -9,7 +9,7 @@
     "test:devlog-nav": "node tests/devlog-navigation.test.js && node tests/offcanvas-deeplink.test.js",
     "articles:en:check": "node scripts/articles-en-semi-auto.mjs --mode check",
     "articles:en:sync": "node scripts/articles-en-semi-auto.mjs --mode sync",
-    "articles:en:routine": "node scripts/articles-en-semi-auto.mjs --mode routine --notify-issue --issue 107 --repo uminomae/kesson-space"
+    "articles:en:routine": "node scripts/articles-en-semi-auto.mjs --mode routine"
   },
   "devDependencies": {
     "puppeteer": "^24.37.3"

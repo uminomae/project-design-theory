@@ -14,8 +14,9 @@ fi
 ARGS=(--mode "${MODE}")
 
 if [[ "${MODE}" == "routine" ]]; then
-  # Defaults for this repository. Additional CLI args can override these values.
-  ARGS+=(--notify-issue --issue 107 --repo uminomae/kesson-space)
+  # 通知先の Issue は既定で決めない（今までの kesson-space#107 は移した先で番号が違う）。
+  # 通知するときは --issue <番号> を足す。
+  :
 fi
 
 exec node "${NODE_SCRIPT}" "${ARGS[@]}" "$@"

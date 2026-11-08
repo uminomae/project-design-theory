@@ -6,12 +6,27 @@
  * Usage: node scripts/smoke-test.js [path-to-domains.json]
  */
 
+import { existsSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
-const DEFAULT_PATH = resolve(SCRIPT_DIR, '..', '..', 'pjdhiro', 'assets', 'creation', 'manifests', 'domains.json');
+const MANIFEST_SUBPATH = ['assets', 'creation', 'manifests', 'domains.json'];
+
+// pjdhiro の repo は PJDHIRO_DIR か、このスクリプトから上へ探して見つける（as/transform/scripts/pjdhiro-dir.mjs と同じ決め方）。
+// 今までの creation-space は pjdhiro の隣にあったので ../../pjdhiro で足りたが、この repo では深さが違う。
+function defaultPath() {
+  if (process.env.PJDHIRO_DIR) return resolve(process.env.PJDHIRO_DIR, ...MANIFEST_SUBPATH);
+  let dir = SCRIPT_DIR;
+  while (dirname(dir) !== dir) {
+    dir = dirname(dir);
+    const candidate = resolve(dir, 'pjdhiro', ...MANIFEST_SUBPATH);
+    if (existsSync(candidate)) return candidate;
+  }
+  return resolve(SCRIPT_DIR, '..', '..', 'pjdhiro', ...MANIFEST_SUBPATH);
+}
+const DEFAULT_PATH = defaultPath();
 
 const REQUIRED_TOP_KEYS = ['version', 'generated_at', 'namespace', 'progress_taxonomy', 'reports'];
 const REQUIRED_REPORT_KEYS = ['id', 'name_ja', 'slug', 'status', 'progress_level'];
@@ -84,63 +99,36 @@ async function main() {
     unknownLevels.map(r => `${r.id}=${r.progress_level}`).join(', '));
 
 
-  // Hooks infrastructure (cs#110)
-  const hooksDir = resolve(SCRIPT_DIR, '..', '.claude', 'hooks');
-  const hooksJsonPath = resolve(SCRIPT_DIR, '..', '.claude', 'hooks.json');
-
-  const { existsSync, statSync } = await import('node:fs');
-
-  assert('hooks.json exists', existsSync(hooksJsonPath));
-  assert('_common exists', existsSync(resolve(hooksDir, '_common')));
-  assert('progress-level-guard.sh exists', existsSync(resolve(hooksDir, 'progress-level-guard.sh')));
-  assert('domains-json-sync-guard.sh exists', existsSync(resolve(hooksDir, 'domains-json-sync-guard.sh')));
-
-  // Verify hooks.json references valid scripts
-  if (existsSync(hooksJsonPath)) {
-    const hooksJson = JSON.parse(await readFile(hooksJsonPath, 'utf8'));
-    const commands = new Set();
-    for (const eventHooks of Object.values(hooksJson.hooks || {})) {
-      for (const group of eventHooks) {
-        for (const hook of group.hooks || []) {
-          if (hook.command) commands.add(hook.command);
-        }
-      }
-    }
-    const repoRoot = resolve(SCRIPT_DIR, '..');
-    const missingHooks = [...commands].filter(cmd => !existsSync(resolve(repoRoot, cmd)));
-    assert('all hooks.json commands reference existing files', missingHooks.length === 0,
-      missingHooks.join(', '));
-  }
+  // Hooks infrastructure (cs#110)：今までの creation-space の .claude/hooks.json を見ていた。
+  // この repo には無い（docs/harness-pending/README.md）ので外した。
 
 
   // quality_level fields (cs#111)
   const VALID_QUALITY_LEVELS = ['not_generated', 'generated', 'self_tested', 'independent_reviewed', 'pjdhiro_reviewed'];
 
-  const missingQuality = reports.filter(r => typeof r.quality_level \!== 'string' || \!r.quality_level.trim());
+  const missingQuality = reports.filter(r => typeof r.quality_level !== 'string' || !r.quality_level.trim());
   assert('all reports have quality_level', missingQuality.length === 0,
     missingQuality.map(r => r.id).join(', '));
 
-  const invalidQuality = reports.filter(r => r.quality_level && \!VALID_QUALITY_LEVELS.includes(r.quality_level));
+  const invalidQuality = reports.filter(r => r.quality_level && !VALID_QUALITY_LEVELS.includes(r.quality_level));
   assert('all quality_level values are valid', invalidQuality.length === 0,
     invalidQuality.map(r => `${r.id}=${r.quality_level}`).join(', '));
 
   // quality_level + review_engine consistency
   const reviewedNoEngine = reports.filter(r =>
     r.quality_level === 'independent_reviewed' &&
-    (typeof r.review_engine \!== 'string' || \!r.review_engine.trim())
+    (typeof r.review_engine !== 'string' || !r.review_engine.trim())
   );
   assert('independent_reviewed reports have review_engine', reviewedNoEngine.length === 0,
     reviewedNoEngine.map(r => r.id).join(', '));
 
   const reviewedNoResult = reports.filter(r =>
     r.quality_level === 'independent_reviewed' &&
-    (typeof r.review_result \!== 'string' || \!r.review_result.trim())
+    (typeof r.review_result !== 'string' || !r.review_result.trim())
   );
   assert('independent_reviewed reports have review_result', reviewedNoResult.length === 0,
     reviewedNoResult.map(r => r.id).join(', '));
 
-  // quality-level-guard.sh hook exists (cs#111)
-  assert('quality-level-guard.sh exists', existsSync(resolve(hooksDir, 'quality-level-guard.sh')));
 
   // Summary
   console.log(`\n  ${passed} passed, ${failed} failed`);
