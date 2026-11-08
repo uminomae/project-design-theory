@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/gravity-well.html を直接編集しないでください。
+  正本:   knowledge/research/gravity-well/READER-gravity-well.md
+  計画:   Issue #64
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+-->
+<!--
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  この文書は「重力の井戸とは」の解説ページです。プロジェクトデザイン論の読み物「Love駆動開発と呼びたいもの β」が
+  たとえとして使う「重力の井戸」の絵が何を描いているか、中心の三つの性質、なぜたとえに使うのか、
+  どこまでが物理の事実でどこからがたとえか、をまとめます。文責は Claude。pjdhiro 本人の言葉は引用で区別。
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>重力の井戸とは | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/gravity-well.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="重力の井戸は、重力のはたらきを、すり鉢のようなくぼみとして描いた絵。重力場を重力ポテンシャルの深さとして描いた模式図で、中心は動かず、何もないかのように見え、自分からは見えない。Love駆動開発の読み物は、この絵を、見えない駆動源を考えるたとえとして使う。どこまでが物理の事実で、どこからがたとえかを分けて書く。">
+    <meta property="og:title" content="重力の井戸とは">
+    <meta property="og:description" content="重力の井戸は、重力のはたらきを、すり鉢のようなくぼみとして描いた絵。重力場を重力ポテンシャルの深さとして描いた模式図で、中心は動かず、何もないかのように見え、自分からは見えない。Love駆動開発の読み物は、この絵を、見えない駆動源を考えるたとえとして使う。どこまでが物理の事実で、どこからがたとえかを分けて書く。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/gravity-well.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta property="og:image" content="https://uminomae.github.io/project-design-theory/assets/ogp/gravity-love.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="重力の井戸とは">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="重力の井戸とは">
+    <meta name="twitter:image" content="https://uminomae.github.io/project-design-theory/assets/ogp/gravity-love.png">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-08">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css?v=20261107">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "重力の井戸とは",
+          "description": "重力の井戸は、重力のはたらきを、すり鉢のようなくぼみとして描いた絵。重力場を重力ポテンシャルの深さとして描いた模式図で、中心は動かず、何もないかのように見え、自分からは見えない。Love駆動開発の読み物は、この絵を、見えない駆動源を考えるたとえとして使う。どこまでが物理の事実で、どこからがたとえかを分けて書く。",
+          "keywords": "重力の井戸, 重力場, 重力ポテンシャル, 一般相対性理論, Love駆動開発, プロジェクトデザイン論, たとえ",
+          "url": "https://uminomae.github.io/project-design-theory/reader/gravity-well.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/gravity-well.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-08",
+          "dateModified": "<!--UPDATED-->",
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "たとえの発案と、採否の判定"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>この読み物の機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「重力の井戸とは」の解説ページです。重力の井戸は、重力のはたらきを、すり鉢のようなくぼみとして描いた絵。重力場を重力ポテンシャルの深さとして描いた模式図で、中心は動かず、何もないかのように見え、自分からは見えない。Love駆動開発の読み物は、この絵を、見えない駆動源を考えるたとえとして使う。どこまでが物理の事実で、どこからがたとえかを分けて書く。記述は、教科書の事実（重力場の歪み・重力ポテンシャル・ケプラーの法則）、模式図の約束（中心は動かない）、たとえ（中心は自分から見えない・中心に愛を置く）に分けている。Love駆動開発の読み物でこの絵が出てくる箇所へのリンクを末尾に置く。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>たとえを発案し、しっくり来るかを判定するのは pjdhiro です。
+            </div>
+            <header class="reader-hero">
+                <h1>重力の井戸とは</h1>
+                <p class="reader-lead">このサイトでは、重力のはたらきを、すり鉢のようなくぼみの絵で表し、「重力の井戸」と呼んでいます。<a href="love-driven-dev.html">Love駆動開発の読み物</a>は、この絵を、見えない駆動源を考えるたとえとして何度も使います。このページは、その絵が何を描いているか、どこまでが物理の事実で、どこからがたとえかをまとめます。</p>
+                <p class="reader-meta">最終更新: <!--UPDATED--></p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの</a> ・
+                <a href="gravity-love.html">愛は、重力に似ていないか</a> ・
+                <a href="../index.html">プロジェクトデザイン論</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+    <script type="module" src="../src/reader-gravity-love.js"></script>
+</body>
+</html>
