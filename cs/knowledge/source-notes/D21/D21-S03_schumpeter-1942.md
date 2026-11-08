@@ -21,6 +21,8 @@ Schumpeter は、資本主義を「静的な価格競争の均衡」として扱
 
 ## 3. 主要主張（原文引用付き）
 
+> **注記（2026-11-08・#73 の照合）**：主張 2〜5 の「原文引用」四つ（"perpetual disruption…"・"monopolistic gains … incentivize…"・"The entrepreneur's drive…"・"He distinguishes between static monopoly…"）は、同じ Internet Archive の資料の OCR の文字（`_djvu.txt`）で探しても原典に無い。シュンペーターを三人称で語る文で、WebFetch の要約を引用の形で写したものと見られる。原典の第 7 章の鍵の文は「incessantly revolutionizes the economic structure from within, incessantly destroying the old one, incessantly creating a new one」（p.83）と「perennial gale of creative destruction」（p.84）。主張 1 の二つの引用は断片で、原典の文とは照らしていない。主張の中身そのもの（創造的破壊・一時的独占・企業家）は第 7〜8 章の論旨と大きく食い違わないが、下の引用を原典の文として使わないこと。原典で読んだ箇所は `cs/evidence/evidence-D21-economics.md` の 1 節にある。
+
 ### 主張 1: 資本主義は静的均衡でなく、不断に自己を革命する evolutionary process である
 
 > "incessant revolutionizing" through new commodities, production methods, and commercial opportunities.
