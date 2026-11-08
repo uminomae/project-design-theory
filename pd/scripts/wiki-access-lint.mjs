@@ -24,7 +24,7 @@ if (!existsSync(sourcesDir)) {
   process.exit(0);
 }
 if (!existsSync(manifestPath)) {
-  console.log('SKIP — cs manifest が見つからない (cs/knowledge/raw/ は git に入れず手元だけに置く)');
+  console.log('SKIP — cs manifest が見つからない (cs/knowledge/raw/manifest.md)');
   process.exit(0);
 }
 

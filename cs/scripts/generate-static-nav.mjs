@@ -290,19 +290,43 @@ function git(args) {
   return execFileSync('git', args, { cwd: ROOT, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim();
 }
 
-/** 最終更新日 = 未コミットの変更があれば今日、なければ最後のコミット日 */
-function lastModified(relPath, pendingChanges) {
+/**
+ * 最終更新日 = 未コミットの変更があれば今日。前に sitemap.xml を書いたコミットからファイルが変わっていなければ、
+ * 前の sitemap.xml の日付を保つ。変わっていれば最後のコミット日。
+ * コミット日だけで決めると、repo の引っ越し（2026-11-07）のような中身の変わらないコミットで日付が進んでしまう。
+ */
+function lastModified(relPath, pendingChanges, previous) {
   const today = new Date().toISOString().slice(0, 10);
   if (pendingChanges.has(relPath)) return today;
   try {
     if (git(['status', '--porcelain', '--', relPath])) return today;
+    const prev = previous.get(relPath);
+    const since = prev && git(['log', '-1', '--format=%H', '--', 'sitemap.xml']);
+    if (since && unchangedSince(since, relPath)) return prev;
     return git(['log', '-1', '--format=%cs', '--', relPath]) || today;
   } catch {
     return today;
   }
 }
 
-function renderSitemap(localPages, pendingChanges) {
+function unchangedSince(commit, relPath) {
+  try {
+    execFileSync('git', ['diff', '--quiet', commit, '--', relPath], { cwd: ROOT, stdio: 'ignore' });
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+/** 前の sitemap.xml の loc → lastmod */
+function previousLastmods(sitemapText) {
+  const map = new Map();
+  for (const m of sitemapText.matchAll(/<loc>([^<]+)<\/loc>\s*<lastmod>([^<]+)<\/lastmod>/g)) map.set(m[1], m[2]);
+  return map;
+}
+
+function renderSitemap(localPages, pendingChanges, sitemapText = '') {
+  const byLoc = previousLastmods(sitemapText);
   const entries = [{ loc: SITE_URL, file: 'index.html', priority: '1.0' }];
   for (const page of localPages) {
     if (!page.noindex) entries.push({ loc: `${SITE_URL}${page.relPath}`, file: page.relPath, priority: '0.8' });
@@ -314,7 +338,8 @@ function renderSitemap(localPages, pendingChanges) {
   for (const entry of entries) {
     lines.push('  <url>');
     lines.push(`    <loc>${escapeHtml(entry.loc)}</loc>`);
-    lines.push(`    <lastmod>${lastModified(entry.file, pendingChanges)}</lastmod>`);
+    const previous = new Map(byLoc.has(entry.loc) ? [[entry.file, byLoc.get(entry.loc)]] : []);
+    lines.push(`    <lastmod>${lastModified(entry.file, pendingChanges, previous)}</lastmod>`);
     lines.push(`    <priority>${entry.priority}</priority>`);
     lines.push('  </url>');
   }
@@ -355,7 +380,7 @@ async function main() {
   const pendingChanges = new Set();
   if (nextIndex !== indexText) pendingChanges.add('index.html');
   if (nextLlms !== llmsText) pendingChanges.add('llms.txt');
-  const nextSitemap = renderSitemap(localPages, pendingChanges);
+  const nextSitemap = renderSitemap(localPages, pendingChanges, sitemapText);
 
   const outputs = [
     { label: 'index.html', path: indexPath, before: indexText, after: nextIndex },

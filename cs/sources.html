@@ -89,7 +89,7 @@
 </div>
 
 <script>
-// 今までの repo の中身は、この repo の cs/ に移した（2026-11-07）。原典の PDF（cs/knowledge/raw/）は git に入れず手元だけに置く。
+// 今までの repo の中身は、この repo の cs/ に移した（2026-11-07）。原典の PDF（cs/knowledge/raw/）は git に入れず手元だけに置く。台帳 manifest.md だけは公開している。
 const OWNER="uminomae", REPO="project-design-theory", BRANCH="main", DIR="cs/";
 const TREEBASE="https://github.com/"+OWNER+"/"+REPO+"/tree/"+BRANCH+"/"+DIR;
 let ROWS=[];
@@ -165,7 +165,7 @@ function renderCounts(){
     '<div class="cc link"><div class="n">'+by["url-verified"]+'</div><div class="l">🔗 リンク閲覧</div></div>'+
     '<div class="cc no"><div class="n">'+no+'</div><div class="l">⛔ 未取得</div></div>';
   document.getElementById("gloss").innerHTML=
-    '<b>用語:</b> <b style="color:var(--green)">手元に保管(PDF) '+by["raw-confirmed"]+'</b>=PDF を手元（knowledge/raw/・公開していない）に保管し本文確認済。 '+
+    '<b>用語:</b> <b style="color:var(--green)">手元に保管(PDF) '+by["raw-confirmed"]+'</b>=PDF を手元に保管し本文確認済（PDF は公開していない。<a href="'+TREEBASE.replace('/tree/','/blob/')+'knowledge/raw/manifest.md" target="_blank" rel="noopener">台帳</a>は公開）。 '+
     '<b style="color:var(--teal)">リンク閲覧 '+by["url-verified"]+'</b>=repoには無く公開URLで閲覧。 '+
     '<b>未取得 '+no+'</b>=取得ブロック '+by["blocked-access"]+' ＋ 目録のみ '+by["citation-only"]+
     '（本文未読）。 精読ノートは <a href="'+TREEBASE+'knowledge/source-notes" target="_blank" rel="noopener">knowledge/source-notes/</a>。';
@@ -184,7 +184,7 @@ async function load(){
       const o=document.createElement("option");o.value=d;o.textContent=d;sel.appendChild(o);});
     renderCounts(); render();
   }catch(e){
-    document.getElementById("gloss").textContent="台帳を取得できませんでした（"+e.message+"）。台帳（cs/knowledge/raw/manifest.md）は、原典の PDF と同じ場所にあり、今は公開していません。";
+    document.getElementById("gloss").textContent="台帳を取得できませんでした（"+e.message+"）。GitHub の cs/knowledge/raw/manifest.md を直接ご覧ください。";
   }
 }
 load();
