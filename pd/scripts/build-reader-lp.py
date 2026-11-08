@@ -105,6 +105,12 @@ PAGES = [
         ROOT / "reader/time-heat.html",
         "flow",
     ),
+    (
+        ROOT / "knowledge/research/time-from-heat/READER-time-from-heat.md",
+        ROOT / "scripts/reader-time-from-heat-template.html",
+        ROOT / "reader/time-from-heat.html",
+        "flow",
+    ),
 ]
 
 # スクリーナーのデータ（正本 JSON）。出力 HTML 名 → JSON。正本 MD の <!--SCREENER--> に

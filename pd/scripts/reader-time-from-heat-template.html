@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/time-from-heat.html を直接編集しないでください。
+  正本:   knowledge/research/time-from-heat/READER-time-from-heat.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。本人の確認が済んだら外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「時間は、熱が生み出しているのか」のページです。pjdhiro の田んぼの体験（風神）から生まれた問いを、時間と質量と熱の関係から見る読み物。足場の式は「時間と熱の式」（time-heat.html）。原典で確かめたこと・教科書の事実・Claude の読み・pjdhiro の体験と仮説を分けて書く。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>時間は、熱が生み出しているのか | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/time-from-heat.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="pjdhiro が初夏の田んぼで、無風の空気の中に穏やかな時間の感覚と安心感を感じた体験（風神）から生まれた問い。物理では時間は質量と同時に生まれ、時間の向きは熱から来る。ブラックホールでは質量が熱の輪の長さ（時間）を決める。人の体を、外の空気の熱と食べ物から生み出す熱との温度差の渦として見て、穏やかな時間を考える読み物（骨格・工事中）。">
+    <meta property="og:title" content="時間は、熱が生み出しているのか">
+    <meta property="og:description" content="pjdhiro が初夏の田んぼで、無風の空気の中に穏やかな時間の感覚と安心感を感じた体験（風神）から生まれた問い。物理では時間は質量と同時に生まれ、時間の向きは熱から来る。ブラックホールでは質量が熱の輪の長さ（時間）を決める。人の体を、外の空気の熱と食べ物から生み出す熱との温度差の渦として見て、穏やかな時間を考える読み物（骨格・工事中）。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/time-from-heat.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="時間は、熱が生み出しているのか">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-08">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "時間は、熱が生み出しているのか",
+          "description": "pjdhiro が初夏の田んぼで、無風の空気の中に穏やかな時間の感覚と安心感を感じた体験（風神）から生まれた問い。物理では時間は質量と同時に生まれ、時間の向きは熱から来る。ブラックホールでは質量が熱の輪の長さ（時間）を決める。人の体を、外の空気の熱と食べ物から生み出す熱との温度差の渦として見て、穏やかな時間を考える読み物（骨格・工事中）。",
+          "keywords": "時間, 熱, 質量, 固有時間, 時間の矢, ブラックホール, 人体, 温度差, 風神, 創造の五段階, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/time-from-heat.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/time-from-heat.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-08",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "時間"}, {"@type": "Thing", "name": "熱"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「時間は、熱が生み出しているのか」のページです（工事中・骨格）。pjdhiro が初夏の田んぼで、無風の空気の中に穏やかな時間の感覚と安心感を感じた体験（風神）から生まれた問い。物理では時間は質量と同時に生まれ、時間の向きは熱から来る。ブラックホールでは質量が熱の輪の長さ（時間）を決める。人の体を、外の空気の熱と食べ物から生み出す熱との温度差の渦として見て、穏やかな時間を考える読み物（骨格・工事中）。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b><br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>時間は、熱が生み出しているのか</h1>
+                <p class="reader-subtitle">田んぼで感じた、穏やかな時間から</p>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/time-from-heat/READER-time-from-heat.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="gravity-love.html">愛は、重力に似ていないか</a> ・
+                <a href="time-heat.html">時間と熱の式</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
