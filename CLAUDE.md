@@ -34,12 +34,16 @@
 
 ## 対話・執筆の前に読む
 
-1. `docs/rules/stance.md`：pjdhiro の見方と判断の仕方。迷ったら、pjdhiro ならどう判断するかをここで確かめる。
-2. `docs/rules/corrections.md`：Claude が繰り返す誤りの型。自分の案がどの型に当たるかを見る。
-3. `docs/rules/writing.md`：公開文の書き方。
-4. `docs/rules/sources.md`：調べ方と原典の照合（調べもの・引用をするとき）。
+毎回読むのは最初の行の二つ。残りは、その作業をするときに読む。毎回読む分を小さく保つため（pjdhiro 2026-11-08）。
 
-新しい指摘を受けたら、同じセッションで stance.md か corrections.md に足す。
+| いつ | 読むもの |
+|---|---|
+| 毎回 | `docs/rules/stance.md`：pjdhiro の見方と判断の仕方。迷ったら、pjdhiro ならどう判断するかをここで確かめる。`docs/rules/corrections.md`：Claude が繰り返す誤りの型。自分の案がどの型に当たるかを見る |
+| 公開文を書く・直す | `docs/rules/writing.md`：公開文の書き方。`docs/rules/corrections-examples.md`：当たりそうな型の行だけ |
+| 既存の理論・東洋思想・五段階の語を扱う | `docs/rules/stance-theories.md`：理論との距離 |
+| 調べる・引用する | `docs/rules/sources.md`：調べ方と原典の照合 |
+
+新しい指摘を受けたら、同じセッションで stance.md か corrections.md に足す。足すときは、まず既にある行に溶かせるかを見る。代表例（corrections-examples.md）は型ごとに一、二件に保ち、足すなら入れ替える。
 
 ## セッションの終わりに
 
@@ -53,8 +57,8 @@
 ## セッションの記録
 
 - 本体の checkout の `.cache/session/` に、一つのセッションにつき一つ、`log-YYYYMMDD-<話題>.md` を書く。`.cache/` は git に入れない。worktree の `.cache/` は worktree と一緒に消えるので、worktree で作業したときも本体の側に書く（場所は `git rev-parse --git-common-dir` の一つ上）。
-- 書くこと：見出しに日付・話題・worktree の名前。直したこと、pjdhiro の判断（趣旨と、何への答えか）、残したこと・次に回したこと、commit。
-- 作業を始める前に、その日と前の日の記録を読み、今の状態を確かめる（型 K）。
+- 書くこと：見出しに日付・話題・worktree の名前。見出しの直下に `## 要点` を置き、直したこと・残したこと・commit を 5 行ほどで書く。その下に本文：直したこと、pjdhiro の判断（趣旨と、何への答えか）、残したこと・次に回したこと、commit。
+- 作業を始める前に、`bash scripts/session-digest.sh` で、その日と前の日の記録の要点（`## 要点` と「残したこと」「commit」の節）を読み、今の状態を確かめる（型 K）。本文は、関わる記録だけを開く。全部を読まない（pjdhiro 2026-11-08・毎回読む分を小さく保つため）。
 
 ## Git
 
