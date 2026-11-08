@@ -15,8 +15,6 @@
 | `intrinsic-motivation.html` | `knowledge/research/intrinsic-motivation/READER-intrinsic-motivation.md`（内発的動機とは・#29。調べは同ディレクトリ `SURVEY-00-first-pass.md`） | flow（トップと同じ Menu。**工事中＝noindex**。pjdhiro の確認後に noindex を外し sitemap・llms.txt へ。Love駆動開発の心の言葉の章の内発的動機の表からリンク） |
 | `psychological-safety.html` | `knowledge/research/psychological-safety/READER-psychological-safety.md`（心理的安全性とは・#26。調べは同ディレクトリ SURVEY-00〜04） | flow（トップと同じ Menu。**工事中＝noindex**・本文は骨格承認後。冒頭バナーに工事中。Love駆動開発の心の言葉の章の心理的安全性の表からリンク） |
 | `developmental-stages.html` | `knowledge/research/developmental-stages/READER-developmental-stages.md`（精神の発達段階とは・#27。調べは同ディレクトリ README） | flow（トップと同じ Menu。**工事中＝noindex**・本文は骨格承認後。冒頭バナーに工事中。Love駆動開発の心の言葉の章の内発的動機の「詳しくは」の行からリンク） |
-| `time-from-heat.html` | `knowledge/research/time-from-heat/READER-time-from-heat.md`（問い「時間は、熱が生み出しているのか」・#78。田んぼの風神の体験から。足場は time-heat.html） | flow（トップと同じ Menu。**工事中＝noindex**。2026-11-08 の独立レビューで「読み物として成り立っていない」（pjdhiro）。HOME と time-heat からのリンクを外し、未リンクで置いている） |
-| `time-heat.html` | `knowledge/research/time-heat/READER-time-heat.md`（時間と熱の式 β = 8πGM/c³・#76。記号・式までの道筋・数値・コンプトンの式との対・この論での使い方・確かめた度合い） | flow（トップと同じ Menu。**工事中＝noindex**。pjdhiro の確認後に noindex を外し sitemap・llms.txt へ。「愛は、重力に似ていないか」のブラックホールの段からリンク） |
 | `management-drivers.html` | `knowledge/research/management-drivers/READER-management-drivers.md`（経営学の考え方は、どこまで効くか。七つの駆動源の考え方を、よく効く場面と、正解として広げたときの取り違えで見る。Love駆動開発の「経営学が見てきた七つの駆動源」の章の詳しくを切り出したもの） | flow（トップと同じ Menu。**工事中＝noindex**。pjdhiro の確認後に noindex を外し sitemap・llms.txt へ。Love駆動開発の七つの駆動源の章からリンク） |
 
 ## このページが何で、どう育てるか
