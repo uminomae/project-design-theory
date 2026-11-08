@@ -171,7 +171,7 @@ date: 2026-11-09
 | 何を Love と呼んだか | 弟子の樊遅が仁を問うと、孔子は「人を愛すること」と答えます。続けて知を問うと、「人を知ること」と答えます |
 | Love を何として書いているか | 徳（仁）の中身。問いへの短い答えとして書かれていて、定義の体系ではありません |
 | 鍵の文 | 「樊遲問仁。子曰：愛人。問知。子曰：知人。」 |
-| 出典と照合の状態 | 本文照合済（原文）。[中国語版 Wikisource](https://zh.wikisource.org/wiki/論語/顏淵第十二)。Legge の英訳は未照合（[ctext.org](https://ctext.org/analects/yan-yuan) は自動取得を断ったので、手で開いて確かめるものとして残しています）。「仁者愛人」の四字は『論語』ではなく『孟子』の句です |
+| 出典と照合の状態 | 本文照合済（原文）。[中国語版 Wikisource](https://zh.wikisource.org/wiki/論語/顏淵第十二)。Legge の英訳は [ctext.org](https://ctext.org/analects/yan-yuan) を手で開いて照合済（2026-11-09）："It is to love all men."／"It is to know all men." 原文は「愛人」「知人」の二字で、"all" にあたる字はありません。訳者が足した語です。「仁者愛人」の四字は『論語』ではなく『孟子』の句です |
 
 </div>
 
@@ -197,7 +197,7 @@ date: 2026-11-09
 | 何を Love と呼んだか | 「仁ある者は人を愛し、礼ある者は人を敬う。人を愛する者は、人もまた常にその人を愛する」（離婁下 28）。尽心上 45 は、物（生きものやものごと）には「愛」するが「仁」はしない、民には「仁」するが「親」しまない、と分け、親を親しみ、民を仁し、物を愛する、という順序を置きます。滕文公上 5 では、墨家の夷之が「愛には差等が無い。施しは親から始める」と言い、孟子は、兄の子を親しむのと隣人の赤子を親しむのが本当に同じだと思うのか、と問い返します |
 | Love を何として書いているか | 仁という徳の現れ。近い者から遠い者へ順に広がる関係。「愛」「仁」「親」の三語を、向ける相手によって使い分けています |
 | 鍵の文 | 「君子之於物也，愛之而弗仁；於民也，仁之而弗親。親親而仁民，仁民而愛物。」（尽心上 45）<br>「仁者愛人，有禮者敬人。愛人者，人恒愛之」（離婁下 28）<br>「之則以為愛無差等，施由親始」（滕文公上 5・夷之の言葉） |
-| 出典と照合の状態 | 本文照合済（原文）。[尽心上](https://zh.wikisource.org/wiki/孟子/盡心上)・[離婁下](https://zh.wikisource.org/wiki/孟子/離婁下)・[滕文公上](https://zh.wikisource.org/wiki/孟子/滕文公上)・[滕文公下](https://zh.wikisource.org/wiki/孟子/滕文公下)（中国語版 Wikisource）。Legge の英訳は未照合。「愛に差等あり」は孟子の文に出てくる語ではなく、原文にあるのは夷之の「愛無差等」です |
+| 出典と照合の状態 | 本文照合済（原文）。[尽心上](https://zh.wikisource.org/wiki/孟子/盡心上)・[離婁下](https://zh.wikisource.org/wiki/孟子/離婁下)・[滕文公上](https://zh.wikisource.org/wiki/孟子/滕文公上)・[滕文公下](https://zh.wikisource.org/wiki/孟子/滕文公下)（中国語版 Wikisource）。Legge の英訳は、離婁下 28（ctext.org の番号では 56）と尽心上 45 を [ctext.org](https://ctext.org/mengzi/li-lou-ii) で手で開いて照合済（2026-11-09。滕文公上・下は未照合）。離婁下 28 は "The benevolent man loves others. … He who loves others is constantly loved by them." です。尽心上 45 では、Legge は「愛」を "kind"、「仁」を "loving"、「親」を "affectionate" と訳しています。英語の love が当たっているのは「愛」でなく「仁」です（"the superior man is kind to them, but not loving"）。「愛に差等あり」は孟子の文に出てくる語ではなく、原文にあるのは夷之の「愛無差等」です |
 
 </div>
 
@@ -794,9 +794,9 @@ date: 2026-11-09
 | 『入菩提行論』8.90・8.120 | 本文照合済（底本の版は未確認） | GRETIL |
 | 『歎異抄』第四条 | 本文照合済（講座資料の翻刻） | 親鸞仏教センター |
 | 道元「愛語」 | 未照合（英訳のみ） | — |
-| 『論語』12.22 | 本文照合済（原文）・Legge 訳は未照合 | zh.wikisource |
+| 『論語』12.22 | 本文照合済（原文・Legge 訳） | zh.wikisource・ctext.org（手で開いた） |
 | 『墨子』兼愛中 | 本文照合済（原文） | zh.wikisource |
-| 『孟子』4B28・7A45・3A5・3B9 | 本文照合済（原文）・Legge 訳は未照合 | zh.wikisource |
+| 『孟子』4B28・7A45・3A5・3B9 | 本文照合済（原文）・Legge 訳は 4B28・7A45 だけ照合済 | zh.wikisource・ctext.org（手で開いた） |
 | ヘシオドス『神統記』117–122 | 本文照合済 | Perseus |
 | パルメニデス B13 | 本文照合済（引用者の本文として） | Perseus |
 | エンペドクレス B17・B26・B35 | 本文照合済（訳） | Diels 1906・Burnet 1908 |
