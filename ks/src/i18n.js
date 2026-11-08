@@ -2,11 +2,6 @@
 
 import { armManualRestoration, lockScroll, requestScroll, unlockScroll } from './scroll-coordinator.js';
 
-const PDF_BASE_JA = 'https://uminomae.github.io/pjdhiro/assets/kesson/guides/ja/pdf/';
-const PDF_BASE_EN = 'https://uminomae.github.io/pjdhiro/assets/kesson/guides/en/pdf/';
-const RAW_BASE = 'https://raw.githubusercontent.com/uminomae/pjdhiro/main';
-const DRAFT_BASE_JA = `${RAW_BASE}/assets/kesson/guides/ja/md/`;
-const DRAFT_BASE_EN = `${RAW_BASE}/assets/kesson/guides/en/md/`;
 export const LANG_CHANGE_EVENT = 'kesson:lang-change';
 
 const STRINGS = {
@@ -20,11 +15,8 @@ const STRINGS = {
         ],
         credit: 'AIとの協働で探索中',
         creditSignature: 'Project Designer: pjdhiro',
-        nav: [
-            { label: '一般向け', url: PDF_BASE_JA + 'kesson-general.pdf', pdfUrl: PDF_BASE_JA + 'kesson-general.pdf', draftUrl: DRAFT_BASE_JA + 'kesson-general.md' },
-            { label: '設計者向け', url: PDF_BASE_JA + 'kesson-designer.pdf', pdfUrl: PDF_BASE_JA + 'kesson-designer.pdf', draftUrl: DRAFT_BASE_JA + 'kesson-designer.md' },
-            { label: '学術版', url: PDF_BASE_JA + 'kesson-academic.pdf', pdfUrl: PDF_BASE_JA + 'kesson-academic.pdf', draftUrl: DRAFT_BASE_JA + 'kesson-academic.md' },
-        ],
+        // 2026-11-08：ガイド（一般向け・設計者向け・学術版）と PDF への玉を外した。トップを一続きの読み物にしたため（pjdhiro・#67）。
+        nav: [],
         gem: {
             label: 'Gem',
             url: 'https://gemini.google.com/gem/1KtKkuMSS95qeHBArr3-LgH4Y0XCOs-z-?usp=sharing',
@@ -44,11 +36,8 @@ const STRINGS = {
         ],
         credit: 'Exploring with AI collaboration',
         creditSignature: 'Project Designer: pjdhiro',
-        nav: [
-            { label: 'General', url: PDF_BASE_EN + 'kesson-general.pdf', pdfUrl: PDF_BASE_EN + 'kesson-general.pdf', draftUrl: DRAFT_BASE_EN + 'kesson-general.md' },
-            { label: 'For Designers', url: PDF_BASE_EN + 'kesson-designer.pdf', pdfUrl: PDF_BASE_EN + 'kesson-designer.pdf', draftUrl: DRAFT_BASE_EN + 'kesson-designer.md' },
-            { label: 'Academic', url: PDF_BASE_EN + 'kesson-academic.pdf', pdfUrl: PDF_BASE_EN + 'kesson-academic.pdf', draftUrl: DRAFT_BASE_EN + 'kesson-academic.md' },
-        ],
+        // 2026-11-08：ガイド（一般向け・設計者向け・学術版）と PDF への玉を外した。トップを一続きの読み物にしたため（pjdhiro・#67）。
+        nav: [],
         gem: {
             label: 'Gem',
             url: 'https://gemini.google.com/gem/1KtKkuMSS95qeHBArr3-LgH4Y0XCOs-z-?usp=sharing',

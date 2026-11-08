@@ -286,7 +286,7 @@ export const TRANSLATIONS = {
     "howto.tips.2": "「cs/・as/・ks/ も見て」と追加すると、深掘りされます",
     "howto.tips.3": "Claude.ai、ChatGPT、Gemini など、どのLLMでも使えます",
     "howto.note":
-      "MIT License — 商用利用・改変・再配布すべて自由です。出典表示の義務はありません。詳細は repo の LICENSE ファイルをご覧ください。",
+      "MIT License — 商用利用・改変・再配布すべて自由です。コピーや改変したものを配るときは、著作権表示と許諾の文（LICENSE）を残してください。詳細は repo の LICENSE ファイルをご覧ください。",
     "slides.trigger": "プレゼン資料",
     "slides.title": "プレゼン資料",
   },
@@ -468,7 +468,7 @@ export const TRANSLATIONS = {
       "Adding \"also check cs/, as/, ks/\" enables deeper exploration",
     "howto.tips.3": "Works with any LLM: Claude.ai, ChatGPT, Gemini, etc.",
     "howto.note":
-      "MIT License — Free for commercial use, modification, and redistribution. No attribution required. See the LICENSE file in the repo for details.",
+      "MIT License — Free for commercial use, modification, and redistribution. When you share copies or modified versions, keep the copyright and permission notice (LICENSE). See the LICENSE file in the repo for details.",
     "slides.trigger": "Slides",
     "slides.title": "Presentation Slides",
   },
