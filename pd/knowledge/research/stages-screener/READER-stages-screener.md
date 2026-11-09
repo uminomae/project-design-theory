@@ -361,7 +361,7 @@ Cook-Greuter が各段階の自己同一性（自分を何者として感じる�
 <summary>「三つの軸のほかに」の資料</summary>
 
 - Cook-Greuter (2013)：上の **CG**（Time frame・Embrace の欄、行う・在る・考えるの三つの次元）
-- Torbert & Livne-Tarandach (2009). *Integral Review* 5(2)／Starr & Torbert (2005). *Integral Review* 1. [PDF](https://integral-review.org/issues/vol_5_no_2_torbert_reliability_and_validity_tests_of_the_harthill_leadership_development_profile.pdf)
+- Torbert & Livne-Tarandach (2009). *Integral Review* 5(2). [PDF](https://integral-review.org/issues/vol_5_no_2_torbert_reliability_and_validity_tests_of_the_harthill_leadership_development_profile.pdf)／Starr & Torbert (2005). Timely and Transforming Leadership Inquiry and Action: Toward Triple-loop Awareness. *Integral Review* 1, pp.85–97. [PDF](https://integral-review.org/issues/issue_1_starr_and_torbert_timely_and_transforming_leadership_inquiry_and_action.pdf)（誌面の版。帯の表で引いた pp.90–91 は、本文と表 1（Rooke & Torbert 2005 から許可を得て転載）で確かめた）
 - Commons, M. L. (2007). Introduction to the Model of Hierarchical Complexity. *Behavioral Development Bulletin* 13.
 - Fischer, K. W. (1980). *Psychological Review* 87／Dawson（Lectica）による解説 [Skill theory](https://lectica.org/about/fischer)
 - Basseches, M. (2005). *Integral Review* 1. [PDF](https://integral-review.org/issues/issue_1_basseches_the_development_of_dialectical_thinking.pdf)
