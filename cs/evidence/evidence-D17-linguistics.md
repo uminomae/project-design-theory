@@ -16,7 +16,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D17-lingu
 
 今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D17-linguistics.md`、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論を取り上げ、3 つを「強い対応」としています。報告は §7 で「言語学の10の理論は全て『構造の生成』を記述しており、『構造の解体』…を扱うものがありません」と書いていますが、本文で読めた原典の多くは、上のとおり至らない形や消える形を書いていました。報告が「全5段階」に当てた反復学習は、原典では実験 1 で構造が出ずに曖昧さが増え、伝達の手を加えた実験 2 で構造が出た、と二つに分けて書かれています。「波→縁の移行を駆動する二重メカニズム」「縁の型の多様性」は、原典でなく、調べた跡（phase6 の仮説 H1 と phase7）で LLM が作った構成から来ていました。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
-11 の論のうち、本文照合済は 8 つです（構文の創発・反復学習・音変化・臨界期・最適性理論・クレオール形成・言語相対性・弁別素性）。ニカラグア手話は要旨までで、別の新しい手話（Sandler ら 2005）は本文で読みました。文法化は、Haspelmath（1999）を Zenodo の写しで本文まで読みましたが、上げた人が著者と確かめられないので未照合と書いています。語用論は書籍と書籍の章だけで、本文に当たれませんでした。
+11 の論のうち、本文照合済は 9 つです（構文の創発・反復学習・音変化・臨界期・最適性理論・クレオール形成・言語相対性・弁別素性・文法化）。追記（2026-11-09）：はじめの照合の日は Internet Archive が落ちていて、本文照合済は 8 つでした。同じ日のあとで、文法化の語の出どころの Meillet (1912) を Internet Archive のイリノイ大学の蔵書の走査で、臨界期の Johnson & Newport (1989) を Wayback Machine の記録で読めたので、文法化を本文照合済に上げ、臨界期の節に書き足しました。ニカラグア手話は要旨までで、別の新しい手話（Sandler ら 2005）は本文で読みました。文法化は、Haspelmath（1999）を Zenodo の写しで本文まで読みましたが、上げた人が著者と確かめられないので未照合と書いています。語用論は書籍と書籍の章だけで、本文に当たれませんでした。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D17-linguistics.md) にあります。退避版の判定（Accept・CA など）は、今の照合の状態の根拠にしていません。
 
@@ -29,7 +29,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | 1. ニカラグア手話の出現（Senghas ら 2004）と、ベドウィンの手話（Sandler ら 2005） | 要旨からは読めない。周りの話し言葉の身ぶりと、子どもが分けて組み直す表現 | 要旨からは読めない | 子どもが出来事を要素に分け、階層に組み、後の学年がそれを広げて、身ぶりの形から言語の体系に変えた（要旨）。ベドウィンの手話では、一世代のうちに語順が定まった。至らない形として、Sandler らはマーサズ・ヴィニヤードの手話が一世紀ほど前に消えたと書く | 学年（コホート）・一つの村の三世代 | 要旨照合済（Senghas ら 2004）・本文照合済（Sandler ら 2005。別の手話） |
 | 2. 構文の創発（用法基盤。Bybee 2006） | 古くからの頻度の高い形と、新しく生産的な形 | 新しい形の圧力。低い頻度の語は規則の形に作り直され（weep→weeped）、高い頻度の語は逆らう | 高い頻度の例は古い形を長く保つ。古い否定（no-negation）は高い頻度の言い回しに残り、新しい否定（not-negation）が広がる。片方が広がり、もう片方が限られた所に残る形 | 一つの語・言い回しから、数世紀の英語まで | 本文照合済（Bybee 2006。著者の学科のサイト）・未照合（Tomasello 2003・Goldberg 1995 の書籍） |
 | 3. 反復学習（Kirby ら 2008・2015。Beckner ら 2017・Raviv ら 2020） | 学びやすさ（圧縮）と、伝わりやすさ（表現力） | 学ぶ圧力だけでは、曖昧さが増えて語の数が 27 から 2〜5 に減る。伝える圧力だけでは、丸ごとの覚えにくい言語になる | 二つがそろうと、部分を組み合わせる構造が出る。至らない形として、退化した言語（2008 の実験 1）と丸ごとの言語が書かれている。後の追試では、組み合わせの度合いが上がったあと下がる・頭打ちになる（Beckner ら 2017）、ネットワークの形の効果は出ない（Raviv ら 2020） | 実験室の 10 世代の連鎖・小さな集団 | 本文照合済（PMC の HTML・機関リポジトリの写し） |
-| 4. 文法化（Haspelmath 1999） | 話し手の目立とうとする言い方（extravagance）と、使われるほど縮む形。伝統の説明では、省力と分かりやすさ | 頻度が上がると形が縮み、新しい言い方がまた入る（Gabelentz の循環として紹介され、Haspelmath は不可逆の説明としては退ける） | 文法化はほぼ戻らない。戻す力（anti-extravagance）が無いため。逆向きの例はとても少ない。不可逆を疑う側（Newmeyer 1998）の反例の一覧にも触れる | 一つの語から言語の歴史まで | 未照合（Zenodo の写しで本文を読んだ。上げた人と権利は未確認）・未照合（Hopper & Traugott 2003 の書籍） |
+| 4. 文法化（Meillet 1912・Haspelmath 1999） | 話し手の目立とうとする言い方（extravagance）と、使われるほど縮む形。伝統の説明では、省力と分かりやすさ | 頻度が上がると形が縮み、新しい言い方がまた入る（Gabelentz の循環として紹介され、Haspelmath は不可逆の説明としては退ける） | 文法化はほぼ戻らない。戻す力（anti-extravagance）が無いため。逆向きの例はとても少ない。不可逆を疑う側（Newmeyer 1998）の反例の一覧にも触れる | 一つの語から言語の歴史まで | 本文照合済（Meillet 1912。イリノイ大学の蔵書の走査の OCR の文字で読んだ。追記 2026-11-09）。Haspelmath 1999 は未照合（Zenodo の写しで本文を読んだ。上げた人と権利は未確認）、Hopper & Traugott 2003 は未照合（書籍） |
 | 5. 音変化の広がり（Weinreich, Labov & Herzog 1968） | 共同体の中で共にある、言い方のばらつき。言語の構造と社会の構造 | ある下位集団で広がった形が社会の意味を帯び、評価される。新しい集団が入って、進行中の変化を読み替える | 変化が終わると、ばらつきは定数になり、社会の意味を失い、ばらつきの片方が選ばれる（片方の勝利）。至らない形として、ほかの共同体に広がると構造が失われる（Labov 2007 の要旨）、競う変化で取り残される語（Wang 1969 の要旨） | 話者・下位集団・共同体・数世代 | 本文照合済（UT Austin の公開の全文。頁は節で控えた） |
 | 6. 語用論の推論と意味の変化（Grice 1975・Sperber & Wilson 1986・Horn 1984） | 未照合 | 未照合 | 未照合 | 一つの発話から慣習まで（報告による） | 未照合（書籍と書籍の章） |
 | 7. 臨界期（Lenneberg 1969・Hartshorne ら 2018） | 学ぶ力の成熟と、入力に触れる時期 | 早い十代を過ぎると、損傷から言語が戻る力が失われ、外国語の訛りと母語の干渉を越えにくくなる | 窓の中では言語が自然に身に付く。至らない形として、窓を過ぎた損傷は言語を永く損なう（Lenneberg）。文法を学ぶ力は 17.4 歳ごろまで保たれ、そのあと下がり続ける。母語話者並みに届くのは、それよりかなり前に始めた人（Hartshorne ら） | 一人の生涯。66 万 9498 人の集まり | 本文照合済（授業用の写し・著者のサイトの写し） |
@@ -149,10 +149,11 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 **一次情報**：
 
 - Haspelmath, M. (1999). Why is grammaticalization irreversible? *Linguistics* 37(6), 1043–1068. DOI 10.1515/ling.37.6.1043（Crossref で書誌を確かめた）。Zenodo の記録 571365（https://zenodo.org/records/571365 ）の PDF。誌面の組みで、頁番号がある。Zenodo の記録の作者は Haspelmath で、ライセンスは CC BY 4.0 と表示されている。上げたアカウントは Haspelmath を第一著者とする記録を 9 件持つが、著者本人かは確かめられなかった。読んだ頁：p.1043・p.1048・pp.1050–1052。
-- Hopper, P. J. & Traugott, E. C. (2003). *Grammaticalization*. 2nd ed. CUP（manifest D17-S01）。書籍。Traugott (1989) *Language* 65(1), 31–55（D17-S03）は JSTOR の壁。Meillet (1912)「L'évolution des formes grammaticales」は、Internet Archive がその日「Temporarily Offline」で探せなかった。
+- Hopper, P. J. & Traugott, E. C. (2003). *Grammaticalization*. 2nd ed. CUP（manifest D17-S01）。書籍。Traugott (1989) *Language* 65(1), 31–55（D17-S03）は JSTOR の壁。Meillet (1912)「L'évolution des formes grammaticales」は、はじめの照合の日は Internet Archive が「Temporarily Offline」で探せなかった。
+- 追記（2026-11-09）：Meillet, A. (1912). L'évolution des formes grammaticales. *Scientia* 12, n° 26（再録：*Linguistique historique et linguistique générale*. Paris: Champion, 1921, pp.130–148）。manifest D17-S32。Internet Archive の資料 linguistiquehist00meil（https://archive.org/details/linguistiquehist00meil 。イリノイ大学アーバナ・シャンペーン校の蔵書の走査。著者は 1936 年没）の OCR の文字（`_djvu.txt`）で読んだ。初出の書誌は、再録の p.130 の脚注（「Scientia (Rivista di scienza), vol. XII (1912), n° XXVI, 6」）による。読んだ頁：p.130〜131・p.133・pp.140–141（頁は OCR の文字の頁の頭の番号で数えた）。
 - 不可逆を疑う側の Newmeyer (2001)・Campbell (2001)（*Language Sciences* 23）は、Elsevier の壁の見込みで、試していない。
 
-**照合の状態**：未照合。Haspelmath 1999 は、上げた人の分からない写しで本文を読み、上の頁を控えました（`docs/cs-review/README.md`「規約で決めたこと」2026-11-09 D29 の行）。Hopper & Traugott は未照合（書籍）。
+**照合の状態**：本文照合済（Meillet 1912。OCR の文字で読んだ。追記 2026-11-09）。Haspelmath 1999 は未照合で、上げた人の分からない写しで本文を読み、上の頁を控えました（`docs/cs-review/README.md`「規約で決めたこと」2026-11-09 D29 の行）。Hopper & Traugott は未照合（書籍）。不可逆をめぐる議論は Haspelmath の側だけで読んでいて、Meillet で確かめたのは、語の出どころと、弱まりと足し直しのくり返しです。
 
 **原典に書いてあること**（誌面の頁）：
 
@@ -160,8 +161,10 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 - 逆向きの例はとても少なく、非対称は説明を要する。逆向きの例を長く並べた Newmeyer（1998）も、そう認める、と書く（p.1048）。
 - 機能主義の伝統は、言語の変異の多くを、省力（economy）と分かりやすさ（clarity）の二つの相反する動機の兼ね合いに帰してきた。省力のために文法の要素は縮み、分かりやすさのために、より長い言い回しが入り、それもまた縮む。Gabelentz（1891）の説明として紹介する（pp.1050–1051）。
 - この説明では、なぜ一部の語だけが大きく縮むのか、なぜ機能の範疇が意味も一般化するのかが言えない（p.1052）。
+- 追記（2026-11-09）Meillet（1921 年の再録の頁）：文法の形ができる道は二つで、一つは類推、もう一つは「le passage d'un mot autonome au rôle d'élément grammatical」（pp.130–131）。類推は形の細部を新しくするが体系の全体の設計はたいてい手つかずに残すのに対し、「la « grammaticalisation » de certains mots crée des formes neuves, introduit des catégories qui n'avaient pas d'expression linguistique, transforme l'ensemble du système」（p.133）。
+- Meillet（pp.140–141）：仏語の否定の pas は、否定の添え物として使われるうちに元の意味を失い、それだけで否定を表す語になり、今度は表現の強さを失って「pas du tout」などの足し直しを呼ぶ。「Les langues suivent ainsi une sorte de développement en spirale」。強い表現のために語を足し、その語は弱まって文法の道具になり、また新しい語を足し、弱まりがまた始まり、「et ainsi sans fin」。
 
-**対立・衝突・統合の読み**：原典は、省力と分かりやすさの兼ね合いという伝統の説明を紹介したうえで、不可逆の説明としては退け、目立とうとする言い方が広がって縮むという一方向の過程で説明します。不可逆そのものは、研究の一線です（Newmeyer・Campbell は文法化を独立の過程と見ることに異を唱える）。報告は文法化を「一方向的な過程」と定義として書き、争いに触れていません。
+**対立・衝突・統合の読み**：Meillet は、強く言い表したいことと、使われるうちに語が弱まることの兼ね合いを書き、足し直しと弱まりが終わりなくくり返す（螺旋）と書いています（追記 2026-11-09。弱まった語が文法の道具として残る所を新たな安定と読むのは Claude の読み替えです）。Haspelmath は、省力と分かりやすさの兼ね合いという伝統の説明を紹介したうえで、不可逆の説明としては退け、目立とうとする言い方が広がって縮むという一方向の過程で説明します。不可逆そのものは、研究の一線です（Newmeyer・Campbell は文法化を独立の過程と見ることに異を唱える）。報告は文法化を「一方向的な過程」と定義として書き、争いに触れていません。
 
 **今の報告から直すこと**：
 
@@ -169,7 +172,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 |---|---|---|---|
 | ja 128 行「文法化とは、語彙項目が文法機能へ移行する一方向的な過程です」 | 言い過ぎ | 中 | 一方向かどうかは研究の一線。Haspelmath は「overwhelmingly irreversible」と書き、反例の一覧（Newmeyer 1998）にも触れる（pp.1043・1048）。報告は一方の立場を定義として書いている |
 | ja 130 行「原典は OA 版がなく本プロジェクトでは直接精読していない」 | 一致 | ― | Hopper & Traugott は書籍のまま未照合 |
-| ja 130〜134 行 省力と分かりやすさの兼ね合い・循環に触れていない | 抜け | 低 | Haspelmath（pp.1050–1051）が伝統の説明として紹介する |
+| ja 130〜134 行 省力と分かりやすさの兼ね合い・循環に触れていない | 抜け | 低 | Haspelmath（pp.1050–1051）が伝統の説明として紹介する。Meillet（pp.140–141）は、弱まりと足し直しのくり返しを螺旋と書く（追記 2026-11-09） |
 | ja 73 行「部分的な対応」、en 56 行「Partial, but strong」、pres 45 行「強い対応」 | 未判定（版の食い違い） | 中 | 下の「版の間の食い違い」 |
 
 ### 5. 音変化の広がり
@@ -235,17 +238,19 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 - Lenneberg, E. H. (1969). On explaining language. *Science* 164(3880), 635–643. DOI 10.1126/science.164.3880.635（Crossref で書誌を確かめた）。manifest D17-S08。手元の PDF は JSTOR の表紙つきの写しで、台帳はバスク大学の授業の頁（ehu.eus）の写しと書く。その URL は今回 SSL の誤りで取れず、同じファイルかは比べていない。誌面の頁番号がある。読んだ頁：pp.639–640。1967 年の書籍の要約として著者が書いた論文で、書籍そのものを確かめたことにはしない。
 - Hartshorne, J. K., Tenenbaum, J. B. & Pinker, S. (2018). A critical period for second language acquisition: Evidence from 2/3 million English speakers. *Cognition* 177, 263–277. DOI 10.1016/j.cognition.2018.04.007。manifest D17-S10。手元の PDF は Pinker のサイトの写しで、「Cognition xxx (xxxx) xxx–xxx」の組み（受理後の校正の版）。頁は PDF の頁で控えた：p.1・p.8・p.9・p.12。
-- Johnson, J. S. & Newport, E. L. (1989). *Cognitive Psychology* 21(1), 60–99（D17-S09）。台帳の UT Dallas の授業の頁の URL は、別の案内の頁（atlas.utdallas.edu）に飛ばされた。Internet Archive はその日落ちていた。
+- Johnson, J. S. & Newport, E. L. (1989). *Cognitive Psychology* 21(1), 60–99（D17-S09）。台帳の UT Dallas の授業の頁の URL は、別の案内の頁（atlas.utdallas.edu）に飛ばされた。Internet Archive はその日落ちていた。追記（2026-11-09）：Wayback Machine の記録（2026-04-11 の取得。https://web.archive.org/web/20260411195607/https://personal.utdallas.edu/~assmann/hcs6367/johnson_newport89.pdf ）で取れた。UT Dallas の授業の頁の写し（権利は未確認）で、誌面の走査。PDF の頁に 59 を足すと誌面の頁（表 3 の頁の頭の「78」で確かめた）。読んだ頁：p.60（要旨）・p.78。
 - Newport, E. L. (1990). Maturational constraints on language learning. *Cognitive Science* 14(1), 11–28. DOI 10.1207/s15516709cog1401_2。要旨は OpenAlex で読んだ。Mayberry, Lock & Kazmi (2002) *Nature* 417, 38 は壁。
 
-**照合の状態**：Lenneberg 1969 は本文照合済（授業用の写し。台帳による）。Hartshorne ら 2018 は本文照合済（著者のサイトの写し）。Newport 1990 は要旨照合済。Johnson & Newport 1989 と Lenneberg 1967 の書籍は未照合。
+**照合の状態**：Lenneberg 1969 は本文照合済（授業用の写し。台帳による）。Hartshorne ら 2018 は本文照合済（著者のサイトの写し）。Newport 1990 は要旨照合済。Johnson & Newport 1989 は本文照合済（授業用の写しの Wayback の記録。追記 2026-11-09）。Lenneberg 1967 の書籍は未照合。
 
 **原典に書いてあること**：
 
 - Lenneberg（p.639）：左の半球の損傷が早く起きれば右の半球が言語を担えるが、病が早い十代という「certain critical period」のあとに起きると、この調整の力は失われ、言語は「interfered with permanently」。
 - Lenneberg（pp.639–640）：子どもは早い十代の前と遅い十代のあとで外国語の身に付き方が大きく違い、あいだは移り変わりの時期である。若い大人には、第二言語の学びは学業の練習になり、訛りと母語の干渉を越えるのが急に難しくなる。
 - Hartshorne ら（p.1、要旨）：66 万 9498 人の資料と計算のモデルで、文法を学ぶ力が 17.4 歳ごろまで保たれ、そのあと下がり続けると推定した。はっきりした臨界期があることを支えるが、終わる年齢は言われてきたより遅い。
-- Hartshorne ら（p.9）：Vanhove（2013）は、到達度の違いが統計として意味があるかを問い、数千人が要ると示した、と紹介する。Johnson & Newport は、8〜10 歳で始めた人は母語話者並みに届かず、もっと早く始めた人は届いた、と報告した、と書く（Johnson & Newport の本文は二次経由）。
+- Hartshorne ら（p.9）：Vanhove（2013）は、到達度の違いが統計として意味があるかを問い、数千人が要ると示した、と紹介する。Johnson & Newport は、8〜10 歳で始めた人は母語話者並みに届かず、もっと早く始めた人は届いた、と報告した、と書く。
+- 追記（2026-11-09）Johnson & Newport（p.60、要旨）：3 歳から 39 歳のあいだに米国に着いた、韓国語か中国語を母語とする 46 人の英語の文法の判断を調べた。成績は「linearly related to age of arrival up to puberty」で、思春期のあとは「low but highly variable and unrelated to age of arrival」。
+- Johnson & Newport（p.78）：3〜7 歳で着いた群は母語話者の群と成績に有意な差が無く、ほかの年齢の群はどれも母語話者より有意に低い。3〜7 歳の群と 8〜10 歳の群の差も有意で、7 歳を過ぎてすぐに触れ始めても最終の成績は下がる、と書く。
 - Hartshorne ら（p.12）：母語話者並みに届く最後の始め年は、17 歳よりかなり前と見られる。
 - Newport（要旨）：遅く触れるほど最終の成績は下がり、子どもの間はほぼ直線で、大人になると平らになる。学ぶ力が下がるのは、言語に特有の制約の衰えか、言語でない認知の力が広がるためか、二つの仮説を挙げる。
 
@@ -260,7 +265,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 160 行「Vanhove (2013) は…『臨界期が年齢効果を一意に規定する』とは言いにくい」、ja 164 行「『臨界期』の存在自体が統計的に争点」 | 言い過ぎ | 低 | Hartshorne ら（p.9）は Vanhove を、標本の大きさの問題として紹介し、自分たちの結果ははっきりした臨界期を支えると書く（p.1）。争点は、あるかどうかより、いつ閉じ、何が下がるか |
 | ja 160〜164 行 窓を過ぎて言語が永く損なわれる・母語話者並みに届かないことに触れていない | 抜け | 中 | Lenneberg p.639、Hartshorne ら p.12、Newport の要旨 |
 | ja 76 行「場（時間窓）に独自の知見」 | 未判定 | 中 | 5段階の定義が決まってから。窓の後の至らない形を、場の条件としてだけ読んでいる |
-| ja 160 行 Johnson & Newport (1989) の要約 | 未判定 | 低 | 未照合。Hartshorne ら（p.9）の紹介とは食い違わない |
+| ja 160 行 Johnson & Newport (1989) の要約（思春期までは到達度が年齢と強く相関し、以後は低い平均と大きい個人差） | 一致 | ― | 要旨（p.60）と合う（追記 2026-11-09。はじめは未照合で未判定としていた） |
 
 ### 8. 最適性理論
 
@@ -469,14 +474,14 @@ pjdhiro に聞くものは、この分野からは新しく出ていません（
 |---|---|---|---|---|
 | D17-S14 | Senghas, Kita & Özyürek (2004). *Science* 305 | https://pure.mpg.de/pubman/item/item_59126_3/component/file_59127/Senghas_2004_children.pdf | `D17_senghas-kita-ozyurek_2004_children-creating-core-properties.pdf` | 「Making sure you're not a bot!」の確認画面。学年ごとの様態と経路の表し方（精読ノートの引用、pp.1780–1781）と、第 1 学年の大人の言葉が後の学年と違ったままか（至らない形）を確かめられる |
 | D17-S27（案） | Labov (2007). Transmission and diffusion. *Language* 83 | https://www.ling.upenn.edu/~wlabov/Papers/TD.html から PDF | `D17_labov_2007_transmission-and-diffusion.pdf` | 403。共同体のあいだで構造が失われる形（ニューヨークの短い a の広がり）を本文の頁で確かめられる |
-| D17-S09 | Johnson & Newport (1989). *Cognitive Psychology* 21 | 台帳の URL は無くなった。Internet Archive の記録（web.archive.org で personal.utdallas.edu/~assmann/hcs6367/johnson_newport89.pdf）を、日をおいて取り直す | `D17_johnson-newport_1989_critical-period-effects.pdf` | 2026-11-09 は Internet Archive が落ちていた（確認画面ではない）。年齢と到達度の関係（8〜10 歳で始めた人）を本文で確かめられる |
-| D17-S01 の関わり | Meillet (1912). L'évolution des formes grammaticales. *Scientia* 12 | Internet Archive で『Linguistique historique et linguistique générale』（1921）を探す | `D17_meillet_1912_evolution-des-formes-grammaticales.pdf` | 2026-11-09 は Internet Archive が落ちていた。「文法化」の語の初出と、Meillet が書く変化の循環を確かめられる（パブリックドメイン） |
+| D17-S09 | Johnson & Newport (1989). *Cognitive Psychology* 21 | 台帳の URL は無くなった。Internet Archive の記録（web.archive.org で personal.utdallas.edu/~assmann/hcs6367/johnson_newport89.pdf）を、日をおいて取り直す | `D17_johnson-newport_1989_critical-period-effects.pdf` | 2026-11-09 は Internet Archive が落ちていた（確認画面ではない）。追記（2026-11-09）：同じ日のあとで Wayback の記録から取れた。保存は要らない |
+| D17-S01 の関わり | Meillet (1912). L'évolution des formes grammaticales. *Scientia* 12 | Internet Archive で『Linguistique historique et linguistique générale』（1921）を探す | `D17_meillet_1912_evolution-des-formes-grammaticales.pdf` | 2026-11-09 は Internet Archive が落ちていた。追記（2026-11-09）：同じ日のあとで、1921 年の再録の走査（イリノイ大学の蔵書）の OCR の文字を取って読めた。保存は要らない（台帳 D17-S32） |
 | ― | Goldberg (2003) の著者が許したポルトガル語訳 | https://lume.ufrgs.br/bitstream/10183/249233/1/000987282.pdf | `D17_goldberg_2003_constructions-pt.pdf` | SSL の接続の誤り（確認画面ではない）。構文の論の芯を（訳）で確かめられる |
 
 ## 手順について分かったこと
 
 - 報告が「OA 版がなく」と書いた論のうち二つ（音変化の Weinreich, Labov & Herzog 1968、最適性理論の ROA 版）は、頼む文の当たりの場所で全文が公開されていました。書籍だけの論も、同じ論の核になる章や著者版を探すと本文に当たれました（D07・D21・D25 と同じ）。
 - 出版社と PMC の PDF（PNAS・OUP・Wiley・MPG PuRe）は確認画面を返しましたが、PMC の記事の頁（HTML）と機関リポジトリ（ORA・グラスゴー・スターリング）の写しで、四つの論文を読めました。OpenAlex の挙げた写しは、どれも 1 頁目の書誌が狙った論文と合いました。
-- 2026-11-09 は Internet Archive が「Temporarily Offline」で、Wayback と古典の走査（Meillet）を使えませんでした。確認画面と分けて書きました。
+- 2026-11-09 は Internet Archive が「Temporarily Offline」で、Wayback と古典の走査（Meillet）を使えませんでした。確認画面と分けて書きました。追記（2026-11-09）：同じ日のあとで司令塔が取り直し、Johnson & Newport (1989) と Meillet (1912) を読んで、上の節に書き足しました。
 - 読めた原典は、至らない形を論の中心に書いていました（退化した言語・窓を過ぎた損傷・限られたまま残るピジン・取り残される語・失語の後退）。報告は §7 で「解体を扱う論が無い」と書いていて、原典を読まずに無いと書いた例でした。
 - 精読ノートと台帳について：`cs/knowledge/source-notes/D17/D17-S13_raviv-2020.md` 100〜107 行は、ネットワークの形を「縁の実体」とし、全 5 段階を「強」としますが、原典の要旨（同じノートの 28 行に引く）は、ネットワークの形の効果は出なかったと書きます。出典を主張と逆の向きに当てています（中）。`cs/knowledge/source-notes/D17/D17-S08_lenneberg-1967.md` は、ファイル名が 1967 で、中身は 1969 年の論文です（低）。`pd/wiki/sources/D17_jakobson_1956_halle-m.md` は、ファイル名の題の部分が共著者の名（halle-m）になっています（低）。精読ノートと wiki の DOI（9 本）は、Crossref の書誌と合っていました。

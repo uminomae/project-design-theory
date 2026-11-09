@@ -246,6 +246,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 - Bartlett, F. C. (1932). *Remembering*. Cambridge University Press。archive.org にあるのは、貸出制限つきの版と、個人がアップロードした 1995 年版の写しで、後者は権利の確かめがつかないので使わなかった。
 - Piaget, J. (1952). *The Origins of Intelligence in Children*. International Universities Press。archive.org の版は貸出制限つき。
+- 追記（2026-11-09）：Piaget が均衡化（外からの乱れに補いを返す自己調整）を自分で短く書いた論文（Piaget 1964, *Journal of Research in Science Teaching* 2(3), 176–186 の再録）は、D23 発達心理学の記録（`evidence-D23-developmental-psychology.md` の 8）が本文で読んでいます。この論の照合の状態（未照合）は変えていません。同化と調節の定義を、その論文の頁で確かめていないためです。
 - Neisser, U. (1976). *Cognition and Reality*. W. H. Freeman。開けていない。
 
 **照合の状態**：未照合。

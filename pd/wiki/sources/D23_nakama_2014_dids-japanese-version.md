@@ -41,7 +41,7 @@ creation-spaceの調査では、DIDSは5段階モデル（場・波・縁・渦�
 ## 書誌情報
 
 - 著者: 中間玲子ほか
-- 年: 2014
+- 年: 2015（J-STAGE の早期公開は 2014）
 - 出典: J-STAGE掲載論文（発達心理学領域）
 - access_status: raw-confirmed（注: 格納ファイルはJ-STAGEメンテナンス中のHTMLページ。論文本文の直接確認未了）
 - **オープンアクセス**: [J-STAGE](https://www.jstage.jst.go.jp/)
