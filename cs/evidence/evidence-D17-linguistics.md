@@ -1,44 +1,482 @@
 ---
-file_id: EV-LI
+file_id: EV-D17
 domain: linguistics
 domain_id: D17
-last_updated: 2026-04-07
-entry_count: 0
-origin: "Archived pre-rerun snapshot for cs#207"
-status: "再監査待ち（原典アクセス状態の棚卸し前）"
+title: "言語学：論ごとの照合の記録"
+last_updated: 2026-11-09
+status: "照合中（#73）"
 source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D17-linguistics.md"
-original_access_status: not-yet-reviewed
 ---
 
-# 論拠DB：言語学（Linguistics）（再監査待ち）
+# 言語学：論ごとの照合の記録
 
-このファイルは `cs#207` 対応として、2026-04-07 時点の分析本文を archive に退避したうえで、再監査用の stub に差し替えたものです。
+この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。
 
-## 現在の扱い
+言語学の原典は、二つの力の兼ね合いを論の芯に置いているものが多くありました。最適性理論（Prince & Smolensky 1993、ROA 版 2002）は、一つの言語で働く制約は「highly conflicting」で、文法はその衝突を順位で解く仕組みだと書いています（pp.2–3）。反復学習の実験（Kirby ら 2015）は、学びやすさ（圧縮）の圧力だけでは何でも一語で指す退化した言語に、伝わりやすさ（表現力）の圧力だけでは覚えにくい丸ごとの言語に落ち、二つがそろって構造が出ると書いています（pp.89–90）。Weinreich, Labov & Herzog（1968）は、言語の変化を、ばらつきどうしの競り合いと社会の評価の中で起き、片方の形が定数として選ばれて終わるものとして書いています。至らない形も原典に書かれています。早い十代を過ぎた脳の損傷は言語を「permanently」に損なうこと（Lenneberg 1969、p.639）、ピジンを話す大人の世代の言葉が限られたまま残ること（Bickerton 1981、p.11）、ほかの共同体へ広がる変化が構造を失うこと（Labov 2007 の要旨）、高い頻度の古い形が新しい形の圧力に逆らって残ること（Bybee 2006、pp.715・728–729）です。
 
-- 原典アクセス状態: evidence 本文としては `not-yet-reviewed`
-- source manifest には D17 first batch 10件を反映済み
-- source 内訳は `raw-confirmed` 1 / `blocked-access` 1 / `citation-only` 8
-- [P] 主張の verified / accepted 判定は現時点では再保証しない
-- `knowledge/raw/` の整備と原典アクセス棚卸しが完了するまで、本文の再構成を優先する
+今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D17-linguistics.md`、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論を取り上げ、3 つを「強い対応」としています。報告は §7 で「言語学の10の理論は全て『構造の生成』を記述しており、『構造の解体』…を扱うものがありません」と書いていますが、本文で読めた原典の多くは、上のとおり至らない形や消える形を書いていました。報告が「全5段階」に当てた反復学習は、原典では実験 1 で構造が出ずに曖昧さが増え、伝達の手を加えた実験 2 で構造が出た、と二つに分けて書かれています。「波→縁の移行を駆動する二重メカニズム」「縁の型の多様性」は、原典でなく、調べた跡（phase6 の仮説 H1 と phase7）で LLM が作った構成から来ていました。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
-## 2026-04-08 second/third batch
+11 の論のうち、本文照合済は 8 つです（構文の創発・反復学習・音変化・臨界期・最適性理論・クレオール形成・言語相対性・弁別素性）。ニカラグア手話は要旨までで、別の新しい手話（Sandler ら 2005）は本文で読みました。文法化は、Haspelmath（1999）を Zenodo の写しで本文まで読みましたが、上げた人が著者と確かめられないので未照合と書いています。語用論は書籍と書籍の章だけで、本文に当たれませんでした。
 
-- raw-confirmed:
-  `knowledge/raw/D17_bickerton_1981_roots-of-language.pdf`
-- blocked-access:
-  `Hartshorne et al. (2018)` は Harvard Scholar file route が 403 HTML に着地し raw 未取得。manual/browser 再試行余地あり
-- citation-only: 8件。archive refs / ref-check 起点の first-pass source rows
-- manual/browser 余地:
-  blocked-access source は CLI challenge / login redirect / HTML landing の可能性を残すため、notes を維持する
-## History
+History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D17-linguistics.md) にあります。退避版の判定（Accept・CA など）は、今の照合の状態の根拠にしていません。
 
-- スナップショット: [`evidence/archive/pre-rerun-20260407/evidence/evidence-D17-linguistics.md`](archive/pre-rerun-20260407/evidence/evidence-D17-linguistics.md)
-- 退避日: 2026-04-07
-- 理由: 原典未入手・本文未確認・LLM 補完混入の可能性を切り分けずに維持しないため
+## 一面の表
 
-## 次の作業
+照合の状態は `docs/rules/sources.md` §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。「未照合」の行の対立・衝突・統合は、報告の言い分でなく、原典で確かめられたことだけを書くので、空けています。各行の「対立」「衝突」は原典の構造で、それを対立・衝突・統合と呼ぶのは Claude の読み替えです。
 
-- 原典アクセス状態を `raw-confirmed` / `citation-only` / `blocked-access` / `not-yet-reviewed` で棚卸しする
-- `knowledge/raw/README.md` の manifest に候補原典を記録する
-- 再調査後に、このファイルへ history 参照つきで新しい本文を戻す
+| 論 | 対立 | 衝突 | 統合／新たな安定、または統合に至らずにどう終わったか | 論の微細さ | 照合の状態 |
+|---|---|---|---|---|---|
+| 1. ニカラグア手話の出現（Senghas ら 2004）と、ベドウィンの手話（Sandler ら 2005） | 要旨からは読めない。周りの話し言葉の身ぶりと、子どもが分けて組み直す表現 | 要旨からは読めない | 子どもが出来事を要素に分け、階層に組み、後の学年がそれを広げて、身ぶりの形から言語の体系に変えた（要旨）。ベドウィンの手話では、一世代のうちに語順が定まった。至らない形として、Sandler らはマーサズ・ヴィニヤードの手話が一世紀ほど前に消えたと書く | 学年（コホート）・一つの村の三世代 | 要旨照合済（Senghas ら 2004）・本文照合済（Sandler ら 2005。別の手話） |
+| 2. 構文の創発（用法基盤。Bybee 2006） | 古くからの頻度の高い形と、新しく生産的な形 | 新しい形の圧力。低い頻度の語は規則の形に作り直され（weep→weeped）、高い頻度の語は逆らう | 高い頻度の例は古い形を長く保つ。古い否定（no-negation）は高い頻度の言い回しに残り、新しい否定（not-negation）が広がる。片方が広がり、もう片方が限られた所に残る形 | 一つの語・言い回しから、数世紀の英語まで | 本文照合済（Bybee 2006。著者の学科のサイト）・未照合（Tomasello 2003・Goldberg 1995 の書籍） |
+| 3. 反復学習（Kirby ら 2008・2015。Beckner ら 2017・Raviv ら 2020） | 学びやすさ（圧縮）と、伝わりやすさ（表現力） | 学ぶ圧力だけでは、曖昧さが増えて語の数が 27 から 2〜5 に減る。伝える圧力だけでは、丸ごとの覚えにくい言語になる | 二つがそろうと、部分を組み合わせる構造が出る。至らない形として、退化した言語（2008 の実験 1）と丸ごとの言語が書かれている。後の追試では、組み合わせの度合いが上がったあと下がる・頭打ちになる（Beckner ら 2017）、ネットワークの形の効果は出ない（Raviv ら 2020） | 実験室の 10 世代の連鎖・小さな集団 | 本文照合済（PMC の HTML・機関リポジトリの写し） |
+| 4. 文法化（Haspelmath 1999） | 話し手の目立とうとする言い方（extravagance）と、使われるほど縮む形。伝統の説明では、省力と分かりやすさ | 頻度が上がると形が縮み、新しい言い方がまた入る（Gabelentz の循環として紹介され、Haspelmath は不可逆の説明としては退ける） | 文法化はほぼ戻らない。戻す力（anti-extravagance）が無いため。逆向きの例はとても少ない。不可逆を疑う側（Newmeyer 1998）の反例の一覧にも触れる | 一つの語から言語の歴史まで | 未照合（Zenodo の写しで本文を読んだ。上げた人と権利は未確認）・未照合（Hopper & Traugott 2003 の書籍） |
+| 5. 音変化の広がり（Weinreich, Labov & Herzog 1968） | 共同体の中で共にある、言い方のばらつき。言語の構造と社会の構造 | ある下位集団で広がった形が社会の意味を帯び、評価される。新しい集団が入って、進行中の変化を読み替える | 変化が終わると、ばらつきは定数になり、社会の意味を失い、ばらつきの片方が選ばれる（片方の勝利）。至らない形として、ほかの共同体に広がると構造が失われる（Labov 2007 の要旨）、競う変化で取り残される語（Wang 1969 の要旨） | 話者・下位集団・共同体・数世代 | 本文照合済（UT Austin の公開の全文。頁は節で控えた） |
+| 6. 語用論の推論と意味の変化（Grice 1975・Sperber & Wilson 1986・Horn 1984） | 未照合 | 未照合 | 未照合 | 一つの発話から慣習まで（報告による） | 未照合（書籍と書籍の章） |
+| 7. 臨界期（Lenneberg 1969・Hartshorne ら 2018） | 学ぶ力の成熟と、入力に触れる時期 | 早い十代を過ぎると、損傷から言語が戻る力が失われ、外国語の訛りと母語の干渉を越えにくくなる | 窓の中では言語が自然に身に付く。至らない形として、窓を過ぎた損傷は言語を永く損なう（Lenneberg）。文法を学ぶ力は 17.4 歳ごろまで保たれ、そのあと下がり続ける。母語話者並みに届くのは、それよりかなり前に始めた人（Hartshorne ら） | 一人の生涯。66 万 9498 人の集まり | 本文照合済（授業用の写し・著者のサイトの写し） |
+| 8. 最適性理論（Prince & Smolensky 1993／ROA 版 2002） | 普遍の制約どうし。出力の形を整える制約（有標性）と、入力を保つ制約（忠実性） | 制約は「highly conflicting」で、ほとんどの入力で、どの候補も多くの制約を破る | 制約の順位（厳密な支配）が衝突を解き、最も調和の高い候補が出力になる。言語の違いは順位の違い。破られた制約は消えずに残る | 一つの語の音節から、言語の類型まで | 本文照合済（著者版。ROA-537） |
+| 9. クレオール形成（Bickerton 1981・2016 年の再刊） | 構造の乏しいピジンと、子どもが持つ文法のしくみ（bioprogram）。親の言語（基層） | 伝達が大きく途切れた接触の場。前の世代の言葉に証拠の無い規則を、最初のクレオールの世代が作る | クレオールは一世代で、子どもが作る（Bickerton の説）。至らない形として、移民の大人の世代のピジンは限られ、ばらついたまま残る。Thomason & Kaufman（1988）は未照合 | 移民の世代と、その子の世代 | 本文照合済（Language Science Press の CC BY の再刊）・未照合（Thomason & Kaufman 1988 の書籍） |
+| 10. 言語相対性（Boroditsky 2001・Winawer ら 2007） | 話す言語の分け方（時間の縦と横、青の二つの語）と、言語によらない知覚や推論 | ― | 言語の分け方が、判断の速さに差を生む。ただし、色の効果は言葉を使う課題を同時にすると消える（Winawer ら）。時間の効果は、英語の話者に縦の言い方を教えると同じ偏りが出る（Boroditsky）。至らない形として、Boroditsky 2001 は追試で再現されなかったと題に書く論文が二つある（January & Kako 2007・Chen 2007。書誌のみ） | 一人の判断の数百ミリ秒 | 本文照合済（著者のサイトの写し・PMC の HTML） |
+| 11. 弁別素性の二項対立（Jakobson & Halle 1956） | 一つの素性の二つの極（低い音と高い音、有声と無声） | 聞き手は素性ごとに「yes-no decision」を迫られる | 二項の対立が音の体系を組む。至らない形として、失語では、子どもが身に付けた順と逆の順で区別が失われ、回復は身に付けた順に進む | 一つの音素から、世界の言語の音の体系まで | 本文照合済（著者 Halle の MIT の頁の写し） |
+
+## 論ごとの節
+
+### 1. ニカラグア手話の出現
+
+**要旨**（Senghas ら 2004 の要旨）：ニカラグアのろうの人々が、過去 25 年ほどで新しい手話を作った。言語を最初に作るとき、子どもは複雑な出来事を基本の要素に分け、周りの話し言葉に添う身ぶりには見られない原則で、階層のある表現に並べた。後の学年の学び手がこれを広げ、ニカラグアの手話を初めの身ぶりの形から言語の体系に変えた。
+
+**一次情報**：
+
+- Senghas, A., Kita, S. & Özyürek, A. (2004). Children creating core properties of language: Evidence from an emerging sign language in Nicaragua. *Science* 305(5691), 1779–1782. DOI 10.1126/science.1100199（Crossref で書誌を確かめた）。manifest D17-S14。台帳の取得先の MPG PuRe（https://pure.mpg.de/pubman/item/item_59126_3/component/file_59127/Senghas_2004_children.pdf ）は、自動取得に「Making sure you're not a bot!」の確認画面を返した。ブラウザでの保存が要る。要旨は OpenAlex の要旨で読んだ。
+- Sandler, W., Meir, I., Padden, C. & Aronoff, M. (2005). The emergence of grammar: Systematic structure in a new language. *PNAS* 102(7), 2661–2665. DOI 10.1073/pnas.0405448102。PMC548320 の記事の頁（HTML）で読んだ。節で控えた：Abstract・冒頭・Methods（Subjects）。
+- 精読ノート：`cs/knowledge/source-notes/D17/D17-S14_senghas-2004.md`（pp.1779–1782 を読んだと書く）。
+
+**照合の状態**：Senghas ら 2004 は要旨照合済。精読ノートの引用（第 1 学年は様態と経路を同時に、第 2・第 3 学年は順に表す）は、本文で確かめていません（二次資料のみ（精読ノート））。Sandler ら 2005 は本文照合済で、ニカラグアとは別の手話です。
+
+**原典に書いてあること**：
+
+- Senghas ら（要旨）：上の要旨のとおり。子どもは言語に基本の構造を与えられる学ぶ力を持つ、と結ぶ。
+- Sandler ら（Abstract）：アル＝サイイドのベドウィンの手話は、孤立した族内婚の共同体で、この 70 年に生まれた。一世代のうちに、語の並びの規則で文法の関係を示す体系ができた。その語順は、周りの話し言葉とも、近くの手話とも違う。
+- Sandler ら（冒頭）：クレオールとニカラグアの手話は「unusual social and linguistic environments」で作られ、ふつうの社会の言語の使い方・身に付け方・伝わり方を表していない、と書く。マーサズ・ヴィニヤードの手話はこの種の言語だったが、一世紀ほど前に消え、記述されなかった。
+- Sandler ら（Methods）：最初の世代のろうの人は 10 人足らずで全員が亡くなっている。研究は第二世代の 8 人の言語だけを扱う。
+
+**対立・衝突・統合の読み**：Senghas らの要旨からは、身ぶりから言語の体系への変わり目は読めますが、何と何がぶつかったかは読めません。Sandler らは、外からの影響の無い中で構造が出たことを主張の芯にしていて、衝突は書いていません。消えた手話（マーサズ・ヴィニヤード）は、共同体が無くなると言語も残らない形として書かれています（Claude の読み）。「子どもが言語を作った」と読むことには留保があり、子どもの学ぶ力に帰すのは研究の一線です（Senghas らの要旨は「We propose」と書く）。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 96 行 子どもが出来事を基本要素へ分解し階層的に組み立てる・後続コホートが拡張 | 一致 | ― | Senghas ら 2004 の要旨と合う |
+| pres 61 行「最初の世代の子どもたちは…ホームサインを持ち寄りました。…後続の世代は出来事を基本要素へ分解し」 | 取り違え | 中 | 要旨は、言語を最初に作った子どもが分けて組んだ、と書く。分けることを後の世代に移している |
+| ja 96 行「Kocaba et al. (2016)」 | 取り違え（書誌） | 低 | Crossref では Kocab, A., Senghas, A. & Snedeker, J. (2016). *Cognition* 156, 147–163（DOI 10.1016/j.cognition.2016.08.005）。pres 61 行は Kocab と正しい。出どころは DR 77・112 行と退避版 170・180 行 |
+| ja 96 行「（Senghas, 2011）」 | 未判定（書誌） | 低 | Crossref で見つかるのは Senghas (2010). The emergence of two functions for spatial devices in Nicaraguan Sign Language. *Human Development*（DOI 10.1159/000321455）。年が合わない。本文は読んでいない |
+| ja 98〜100 行 全5段階に当てる、ja 77 行「強い対応」 | 未判定 | 中 | 5段階の定義が決まってから。要旨からは衝突が読めず、対立や衝突が欠かせない形かどうかは本文を読むまで言えない |
+| ja 94 行「1970年代後半」 | 未判定 | 低 | 要旨は「over the past 25 years」（2004 年から数えて 1979 年ごろ）。学校の年は本文で確かめていない |
+
+### 2. 構文の創発（用法基盤）
+
+**要旨**（Bybee 2006）：用法基盤の見方は、文法を、言語の経験の認知の組み立てとして捉える。使われる頻度は表象に跡を残す。頻度の高い構文の例は、文法化をたどり、構文のつくる範疇の中心になり、新しい形の圧力の下で古い形を長く保つ。
+
+**一次情報**：
+
+- Bybee, J. (2006). From usage to grammar: The mind's response to repetition. *Language* 82(4), 711–733. DOI 10.1353/lan.2006.0186（Crossref で書誌を確かめた）。ニューメキシコ大学の言語学科のサイトの写し（https://ling.unm.edu/assets/documents/bybee2006fromusage.pdf ）。先頭が %PDF で、題と著者を確かめた。誌面の頁番号がある。manifest に行は無い。読んだ頁：p.711・p.715・pp.728–729。
+- Tomasello, M. (2003). *Constructing a Language*. Harvard UP、Goldberg, A. E. (1995). *Constructions*. Chicago UP は書籍で、開ける版を探していない。Goldberg (2003) *TiCS* 7(5), 219–224（DOI 10.1016/S1364-6613(03)00080-9）は、著者の Princeton の頁に PDF が見つからず、著者が許したポルトガル語訳がリオグランデ・ド・スル連邦大学の機関リポジトリ（https://lume.ufrgs.br/bitstream/10183/249233/1/000987282.pdf ）にあるが、接続できなかった（SSL の誤り）。
+- Bybee & Beckner (2010) は、報告が引くが、書誌を確かめていない。
+
+**照合の状態**：Bybee 2006 は本文照合済（著者の学科のサイトの写し）。Tomasello と Goldberg は未照合（書籍）。
+
+**原典に書いてあること**：
+
+- 頻度の効果の二つ目「CONSERVING EFFECT」：頻度の高い並びは形態と統語の構造が根づき、生産的な型による作り直しに逆らう。低い頻度の不規則動詞は規則の形になりやすく（weep, weeped）、高い頻度の動詞は不規則を保つ（keep, kept）（p.715）。
+- §15「Resistance to change」：古い否定（He saw nothing）は新しい否定（He did not see anything）より数世紀前からある。新しい形はより生産的で使われ方を増やしている。古い形は頻度の高い構文と言い回しに主に残り、新しい形がほかの文脈に広がる、と予測し、Tottie の資料で確かめる（pp.728–729）。
+- 頻度の高い語と言い回しは、音の縮みが速く進む（p.715 の前後）。
+
+**対立・衝突・統合の読み**：原典は、新しい形と古い形の競り合いを書き、その結果を、片方が広がり、もう片方が頻度の高い所に残る形として書いています。統合して一つにまとまる形ではなく、片方の勝利の途中に、負けた側が限られた場所で残る形です（Claude の読み）。報告の「頻度の偏りがチャンク化を駆動し、チャンク化がカテゴリ化を駆動する」という連鎖は、読んだ頁には一続きの因果としては書かれていません。用法基盤の見方と生得説の争いは、研究の一線です。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 108 行 Tomasello (2003)・Goldberg (1995) の要約 | 未判定 | 中 | 未照合（書籍） |
+| ja 108 行「Bybee & Beckner (2010) は…因果連鎖を整理しています」 | 未判定（書誌） | 中 | 書誌を確かめていない。同じ著者の Bybee 2006 は、頻度の効果を、縮み・保守・自立の三つとして書いていて（p.715）、一続きの連鎖としては書いていない |
+| ja 106〜112 行 新しい形と古い形の競り合い・古い形が残ることに触れていない | 抜け | 中 | pp.715・728–729 |
+| ja 112 行・78 行 全5段階・「強い対応」 | 未判定 | 中 | 5段階の定義が決まってから |
+| ja 114 行 生成文法との対立を「前提の共有として認識しておくべき」 | 一致 | ― | 研究の一線として書いている点は合う |
+
+### 3. 反復学習
+
+**要旨**：言語は、学ぶ人から学ぶ人へ繰り返し伝わるうちに、学びやすくなるように変わる。人工の言語を 10 世代の連鎖で伝える実験で、伝わる誤りが減り、構造が増えた。学ぶ圧力だけでは曖昧さが増え、伝える圧力が加わって、組み合わせの構造が出た。
+
+**一次情報**：
+
+- Kirby, S., Cornish, H. & Smith, K. (2008). Cumulative cultural evolution in the laboratory: An experimental approach to the origins of structure in human language. *PNAS* 105(31), 10681–10686. DOI 10.1073/pnas.0707835105。manifest D17-S12（raw-confirmed だが local_file が空）。PNAS の PDF は自動取得に確認画面（Cloudflare）を返した。PMC2504810 の記事の頁（HTML）で読んだ。節で控えた：Abstract・Results（実験 1・Table 1）・Design of Experiment 2・Results of Experiment 2・Discussion。2017 年に訂正が出ている（PMC の頁の注）。
+- Kirby, S., Tamariz, M., Cornish, H. & Smith, K. (2015). Compression and communication in the cultural evolution of linguistic structure. *Cognition* 141, 87–102. DOI 10.1016/j.cognition.2015.03.016。スターリング大学の機関リポジトリ（https://dspace.stir.ac.uk/bitstream/1893/22564/1/Kirby%20et%20al_Cognition_2015.pdf ）の出版社の版。CC BY 4.0。CORE の写しは 403 を返した。manifest に行は無い。読んだ頁：p.87・pp.89–90。
+- Beckner, C., Pierrehumbert, J. B. & Hay, J. (2017). The emergence of linguistic structure in an online iterated learning task. *Journal of Language Evolution* 2(2), 160–176. DOI 10.1093/jole/lzx001。manifest D17-S11。台帳の OUP の PDF は確認画面を返した。オックスフォード大学の機関リポジトリ（ORA）の写しで読んだ。写しの頁は 1–16 で、誌面の頁ではない。読んだ頁：写しの p.1・p.3。
+- Raviv, L., Meyer, A. & Lev-Ari, S. (2020). The role of social network structure in the emergence of linguistic structure. *Cognitive Science* 44(8), e12876. DOI 10.1111/cogs.12876。manifest D17-S13（raw-confirmed だが local_file が空）。Wiley の PDF は確認画面を返した。グラスゴー大学の機関リポジトリの出版社の版（https://eprints.gla.ac.uk/281184/1/281184.pdf ）で読んだ。読んだ頁：p.1。
+- 関わる論：Lupyan, G. & Dale, R. (2010). Language structure is partly determined by social structure. *PLoS ONE* 5(1), e8559（manifest D17-S15。PLOS の PDF で要旨を読んだ）。
+
+**照合の状態**：本文照合済（Kirby ら 2008 は PMC の HTML、2015 は機関リポジトリの CC BY の版）。Beckner ら・Raviv らも機関リポジトリの写しで本文照合済。Lupyan & Dale は本文照合済（PLOS。要旨の頁）。
+
+**原典に書いてあること**：
+
+- 2008（Results、実験 1）：初めの言語はでたらめで、どの意味も別の語で表す。伝わるうちに、一つの語が多くの意味に使われ、曖昧さが積み重なる。Table 1 では、語の数が 27 から 10 世代で 2〜5 に減る。
+- 2008（Design of Experiment 2）：学ぶ前に、二つ以上の意味に当てられた語を一つの意味だけ残して除く「filter」を入れた。これで曖昧さを増やす道は「an evolutionary dead-end」になる。これは、伝える必要から来る表現力の圧力の代わりだ、と書く。
+- 2008（Results of Experiment 2）：語の数は多いまま保たれ、部分を組み合わせる構造が出て、出たあとは世代から世代へ伝わった。
+- 2008（Discussion）：伝わり方の狭さ（各人が言語の一部にしか触れない bottleneck）のもとで、言語は意味の構造を使って伝わるように適応した。学ぶ人の意図した設計は無い。
+- 2015（p.87、要旨）：構造は、学ぶときの圧縮の圧力と、伝えるときの表現力の圧力の「trade-off」から生まれる。
+- 2015（pp.89–90）：学ぶ圧力だけでは、圧縮はできるが伝えるのに役立たない退化した言語に、伝える圧力だけでは、表現できるが圧縮できない丸ごとの言語になる。両方が働くと、表現でき圧縮できる構造の言語が出る。p.89 は、これを先の研究の「three-way contrast」としてまとめる。
+- Beckner ら（要旨）：Kirby ら 2008 の資料を解析し直すと、組み合わせの度合いは上がったあと下がる。四つの連鎖の小さな資料の偶然と見られる。24 の連鎖で確かめると、組み合わせは増えるが、10 世代より前に頭打ちになる。
+- Raviv ら（要旨）：ネットワークの形（全部つながる・小世界・スケールフリー）を変えても、どの測り方にも効果は出なかった。小世界のネットワークは、偶然の変化（drift）へのばらつきが大きかった。
+- Lupyan & Dale（要旨）：話す人の多い言語ほど屈折の形態が単純である。大人の学び手にとって難しい特徴は、次の学び手に伝わりにくい、と書く。
+
+**対立・衝突・統合の読み**：原典は、二つの圧力の兼ね合いを論の芯に置き、片方だけのときの二つの至らない形（退化した言語・丸ごとの言語）を、構造が出る形と並べて書いています。2008 の実験 1 は、学ぶ圧力だけで曖昧さが増える方向へ進んだ例で、構造は実験 2 で手を加えたときに出ました。報告は、反復学習を「ランダムな初期状態から…組合せ構造が自発的に創発」と一つにまとめ、実験 1 の形を落としています。後の追試で、上がったあと下がる・頭打ちになる・ネットワークの効果が出ない、という結果が出ていることも、報告にはありません。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 120 行「Kirby et al. (2008, PNAS) は、実験室実験でランダムな初期状態から世代間伝達を繰り返すと組合せ構造が自発的に創発することを実証しました」 | 抜け | 高 | 原典の実験 1 では、構造でなく曖昧さが増え、語が 27 から 2〜5 に減った（Table 1）。組み合わせの構造は、曖昧な語を除く手を加えた実験 2 で出た。報告は二つの実験を一つにし、至らない形を落としている |
+| ja 120 行「全入力を伝達できないという制約が、組合せ的で体系的な構造への圧力を生む」 | 一致 | ― | 2008 の Discussion と合う。ただし 2015（pp.89–90）は、狭さによる学ぶ圧力だけでは退化した言語になると書く |
+| ja 120 行「Smith & Kirby (2008) は、文化的伝達の忠実度と表現力のトレードオフ」 | 未判定（書誌） | 低 | 書誌を確かめていない。圧縮と表現力の兼ね合いを題にしているのは Kirby ら 2015 |
+| ja 124 行・82 行 全5段階・「強い対応」 | 未判定 | 中 | 5段階の定義が決まってから。原典の芯は二つの圧力の兼ね合いで、片方だけのときの至らない形が書かれている |
+| ja 206 行「入力が不十分な場合に主に作動するメカニズム」、ja 204 行「十分な反復がある場合に主に作動」 | 付け足し | 中 | 原典は入力の多少で二つの仕組みを分けていない。出どころは phase6 209〜227 行の H1（[SPECULATIVE]）と phase7 7〜17 行 |
+| Beckner ら 2017・Raviv ら 2020 の結果に触れていない | 抜け | 中 | 上の要旨。manifest には二つとも行があるのに、報告の本文に入っていない |
+| pres 54 行 提唱者「Kirby et al. (2014)」、ja 82 行「Kirby et al.」 | 未判定（版の食い違い） | 低 | ja の本文は 2008 を中心に引く |
+
+### 4. 文法化
+
+**要旨**（Haspelmath 1999）：語彙の範疇が機能の範疇になる変化（文法化）は、ほとんど戻らない。これまでの説明（予測できなさ・省力と分かりやすさの兼ね合い・学ぶときの単純さの好み）では、戻らないことを説明できない。話し手が注意を引くために目立つ言い方をする（extravagance）ことの副産物として文法化が起き、それを戻す力が無いので、戻る変化はほぼ起きない。
+
+**一次情報**：
+
+- Haspelmath, M. (1999). Why is grammaticalization irreversible? *Linguistics* 37(6), 1043–1068. DOI 10.1515/ling.37.6.1043（Crossref で書誌を確かめた）。Zenodo の記録 571365（https://zenodo.org/records/571365 ）の PDF。誌面の組みで、頁番号がある。Zenodo の記録の作者は Haspelmath で、ライセンスは CC BY 4.0 と表示されている。上げたアカウントは Haspelmath を第一著者とする記録を 9 件持つが、著者本人かは確かめられなかった。読んだ頁：p.1043・p.1048・pp.1050–1052。
+- Hopper, P. J. & Traugott, E. C. (2003). *Grammaticalization*. 2nd ed. CUP（manifest D17-S01）。書籍。Traugott (1989) *Language* 65(1), 31–55（D17-S03）は JSTOR の壁。Meillet (1912)「L'évolution des formes grammaticales」は、Internet Archive がその日「Temporarily Offline」で探せなかった。
+- 不可逆を疑う側の Newmeyer (2001)・Campbell (2001)（*Language Sciences* 23）は、Elsevier の壁の見込みで、試していない。
+
+**照合の状態**：未照合。Haspelmath 1999 は、上げた人の分からない写しで本文を読み、上の頁を控えました（`docs/cs-review/README.md`「規約で決めたこと」2026-11-09 D29 の行）。Hopper & Traugott は未照合（書籍）。
+
+**原典に書いてあること**（誌面の頁）：
+
+- 要旨：文法化は「overwhelmingly irreversible」で、逆向きの変化はとても少ない（p.1043）。
+- 逆向きの例はとても少なく、非対称は説明を要する。逆向きの例を長く並べた Newmeyer（1998）も、そう認める、と書く（p.1048）。
+- 機能主義の伝統は、言語の変異の多くを、省力（economy）と分かりやすさ（clarity）の二つの相反する動機の兼ね合いに帰してきた。省力のために文法の要素は縮み、分かりやすさのために、より長い言い回しが入り、それもまた縮む。Gabelentz（1891）の説明として紹介する（pp.1050–1051）。
+- この説明では、なぜ一部の語だけが大きく縮むのか、なぜ機能の範疇が意味も一般化するのかが言えない（p.1052）。
+
+**対立・衝突・統合の読み**：原典は、省力と分かりやすさの兼ね合いという伝統の説明を紹介したうえで、不可逆の説明としては退け、目立とうとする言い方が広がって縮むという一方向の過程で説明します。不可逆そのものは、研究の一線です（Newmeyer・Campbell は文法化を独立の過程と見ることに異を唱える）。報告は文法化を「一方向的な過程」と定義として書き、争いに触れていません。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 128 行「文法化とは、語彙項目が文法機能へ移行する一方向的な過程です」 | 言い過ぎ | 中 | 一方向かどうかは研究の一線。Haspelmath は「overwhelmingly irreversible」と書き、反例の一覧（Newmeyer 1998）にも触れる（pp.1043・1048）。報告は一方の立場を定義として書いている |
+| ja 130 行「原典は OA 版がなく本プロジェクトでは直接精読していない」 | 一致 | ― | Hopper & Traugott は書籍のまま未照合 |
+| ja 130〜134 行 省力と分かりやすさの兼ね合い・循環に触れていない | 抜け | 低 | Haspelmath（pp.1050–1051）が伝統の説明として紹介する |
+| ja 73 行「部分的な対応」、en 56 行「Partial, but strong」、pres 45 行「強い対応」 | 未判定（版の食い違い） | 中 | 下の「版の間の食い違い」 |
+
+### 5. 音変化の広がり
+
+**要旨**（Weinreich, Labov & Herzog 1968）：言語を均質なものとして書く見方を退け、秩序だったばらつき（orderly heterogeneity）を持つものとして見る。変化を説く理論は、制約・移り変わり・埋め込み・評価・始動の五つの問いに答えねばならない。変化は、ある下位集団で広がった形が社会の意味を帯びることから始まり、終わるとばらつきは定数になる。
+
+**一次情報**：
+
+- Weinreich, U., Labov, W. & Herzog, M. I. (1968). Empirical foundations for a theory of language change. In W. P. Lehmann & Y. Malkiel (Eds.), *Directions for Historical Linguistics* (pp.97–195). University of Texas Press。テキサス大学オースティン校の Linguistics Research Center の公開の全文（https://lrc.la.utexas.edu/books/directions/5-weinreich ）。HTML で、誌面の頁番号が無い。節の名前で控えた：§1（冒頭）・§3.4「The Evaluation Problem」「The Actuation Problem」・§3.5「Some General Principles for the Study of Language Change」。manifest に行は無い。
+- Labov, W. (2007). Transmission and diffusion. *Language* 83(2), 344–387. DOI 10.1353/lan.2007.0082。著者のペンシルベニア大学の頁（https://www.ling.upenn.edu/~wlabov/Papers/TD.html ）は 403 を返した。Internet Archive はその日落ちていた。要旨は OpenAlex で読んだ。
+- Wang, W. S.-Y. (1969). Competing changes as a cause of residue. *Language* 45(1), 9–25. DOI 10.2307/411748、Labov, W. (1981). Resolving the Neogrammarian controversy. *Language* 57(2), 267–308. DOI 10.2307/413692。どちらも JSTOR の壁。要旨は OpenAlex で読んだ。
+- Labov, W. (1963). The social motivation of a sound change. *Word* 19(3), 273–309. DOI 10.1080/00437956.1963.11659799。Taylor & Francis で、試していない。
+- Labov (1994・2001)『Principles of Linguistic Change』（manifest D17-S04・S05）は書籍。
+
+**照合の状態**：Weinreich, Labov & Herzog 1968 は本文照合済（UT Austin の公開の全文。頁は節で控えた）。Labov 2007・Wang 1969・Labov 1981 は要旨照合済。Labov 1994・2001 は未照合（書籍）。
+
+**原典に書いてあること**：
+
+- §1：言語を、通時でも共時でも「orderly heterogeneity」を持つものとして見ることが要る。ばらつきの事実は、構造の見方とうまく合ってこなかった。その衝突の種をソシュールに見る。
+- §3.4「The Actuation Problem」の前後：変化は、ばらつきの中の一つの特徴が、ある下位集団に広がることで始まる。その特徴は社会の意味を帯び、その集団の価値を表す。体系の中で少しずつ一般化されるが、終わる前に共同体の構造が変わり、新しい集団が入って進行中の変化を読み替える。変化が終わると、ばらつきは定数に移り、社会の意味を失う。音変化の規則性の高さは「the selection of one of the alternants as a constant」の産物である。
+- §3.4「The Evaluation Problem」：変化には主観の評価が伴い、社会の気づきの度合いが変化の大きな性質になる。否定的な態度を持つ学生はフランス語を学びにくいという Lambert の例を引き、評価が下位の体系の発達か廃れを決める、と書く。
+- §3.5：「Not all variability and heterogeneity in language structure involves change; but all change involves variability and heterogeneity.」変化は親子の世代の切れ目でなく共同体の全体の中で伝わり、切れ目は共同体の切れ目から来る。
+- Labov 2007（要旨）：共同体の中の伝達は、型を忠実に写しながら少しずつ進む。共同体のあいだの広がりは、元の型を弱め、構造の特徴を失う。子どもと大人の学ぶ力の違いによる、と書く。
+- Wang 1969（要旨）：音の変化は、音としては急だが語ごとに少しずつ広がり、当てはまる語のすべてに届かないことがある。競う変化があると、取り残される語（residue）が出る。
+- Labov 1981（要旨）：語ごとに広がる変化と、例外の無い規則的な変化の両方が観察され、抽象の度合いで分けられる、と書く。
+
+**対立・衝突・統合の読み**：原典は、ばらつきどうしの競り合いと、社会の評価を変化の中に置き、変化が終わることを、片方が選ばれて定数になり、社会の意味を失うこととして書いています。片方の勝利が変化の完了の形として書かれている、と Claude は読みました。至らない形として、ほかの共同体へ広がると構造が失われる形（Labov 2007）と、競う変化で取り残される語（Wang 1969）が要旨にあります。音変化が規則的か語ごとに広がるかは、研究の一線で、Labov 1981 は両方を認める立場です。報告は、拡散と収束の流れだけを書き、競り合いと取り残しに触れていません。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 140 行「原典は OA 版がなく本プロジェクトでは直接精読していない」 | 抜け | 中 | 同じ論の核になる Weinreich, Labov & Herzog（1968）は UT Austin で全文が公開されている。台帳にも行が無い |
+| ja 140〜144 行 ばらつきの競り合い・片方が定数として選ばれる・評価・取り残される語に触れていない | 抜け | 中 | §3.4・§3.5、Labov 2007 と Wang 1969 の要旨 |
+| ja 142 行「S字曲線（初期の遅い拡散→急速な拡散→飽和）」 | 未判定 | 低 | 読んだ原典では確かめていない |
+| ja 144 行「先導集団での安定化（渦）→共同体標準としての規範化（束）」 | 未判定 | 中 | 5段階の定義が決まってから。原典の完了の形は、片方の選択と社会の意味の消失 |
+| ja 74 行「部分的な対応」、en 57 行「Partial, but strong」、pres 46 行「強い対応」 | 未判定（版の食い違い） | 中 | 下の「版の間の食い違い」 |
+
+### 6. 語用論の推論と意味の変化
+
+**一次情報**：
+
+- Grice, H. P. (1975). Logic and conversation. In P. Cole & J. L. Morgan (Eds.), *Syntax and Semantics 3: Speech Acts* (pp.41–58). Academic Press。パーズマーニ・ペーテル・カトリック大学のサイトの写しの URL は 404 を返した。
+- Sperber, D. & Wilson, D. (1986). *Relevance*. Blackwell（書籍）。Wilson & Sperber (2004) は Horn & Ward 編『The Handbook of Pragmatics』の章。著者のサイトは探していない。
+- Horn, L. R. (1984). Toward a new taxonomy for pragmatic inference: Q-based and R-based implicature. In D. Schiffrin (Ed.), *Meaning, Form, and Use in Context* (GURT '84). Georgetown UP。頁は pp.11–42 と pp.11–48 の二つが流布している。Georgetown のリポジトリでは見つけていない。
+- Traugott & Dasher (2002) は書籍。
+
+**照合の状態**：未照合（書籍と書籍の章）。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 150 行 Grice の協調の原則と四つの格率、Sperber & Wilson の関連性 | 未判定 | 中 | 未照合 |
+| ja 152〜154 行「格率からの逸脱が推論を生む→推論の反復が意味を固定する」 | 未判定 | 中 | 未照合。報告は話し手の省力と聞き手の分かりやすさの兼ね合い（Horn の Q と R）に触れていない。Horn 1984 は題そのものが二つの原理の分け方で、本文に当たれれば兼ね合いを確かめられる |
+| ja 79 行「部分的な対応」、en 58 行「Partial, but strong」、pres 51 行「部分的な対応」 | 未判定（版の食い違い） | 低 | en だけが強めている |
+
+### 7. 臨界期
+
+**要旨**：言語は、ある年齢までの時期に自然に身に付き、その時期を過ぎると身に付きにくくなる（Lenneberg）。文法を学ぶ力は 17.4 歳ごろまでほぼ保たれ、そのあと下がり続ける（Hartshorne ら）。
+
+**一次情報**：
+
+- Lenneberg, E. H. (1969). On explaining language. *Science* 164(3880), 635–643. DOI 10.1126/science.164.3880.635（Crossref で書誌を確かめた）。manifest D17-S08。手元の PDF は JSTOR の表紙つきの写しで、台帳はバスク大学の授業の頁（ehu.eus）の写しと書く。その URL は今回 SSL の誤りで取れず、同じファイルかは比べていない。誌面の頁番号がある。読んだ頁：pp.639–640。1967 年の書籍の要約として著者が書いた論文で、書籍そのものを確かめたことにはしない。
+- Hartshorne, J. K., Tenenbaum, J. B. & Pinker, S. (2018). A critical period for second language acquisition: Evidence from 2/3 million English speakers. *Cognition* 177, 263–277. DOI 10.1016/j.cognition.2018.04.007。manifest D17-S10。手元の PDF は Pinker のサイトの写しで、「Cognition xxx (xxxx) xxx–xxx」の組み（受理後の校正の版）。頁は PDF の頁で控えた：p.1・p.8・p.9・p.12。
+- Johnson, J. S. & Newport, E. L. (1989). *Cognitive Psychology* 21(1), 60–99（D17-S09）。台帳の UT Dallas の授業の頁の URL は、別の案内の頁（atlas.utdallas.edu）に飛ばされた。Internet Archive はその日落ちていた。
+- Newport, E. L. (1990). Maturational constraints on language learning. *Cognitive Science* 14(1), 11–28. DOI 10.1207/s15516709cog1401_2。要旨は OpenAlex で読んだ。Mayberry, Lock & Kazmi (2002) *Nature* 417, 38 は壁。
+
+**照合の状態**：Lenneberg 1969 は本文照合済（授業用の写し。台帳による）。Hartshorne ら 2018 は本文照合済（著者のサイトの写し）。Newport 1990 は要旨照合済。Johnson & Newport 1989 と Lenneberg 1967 の書籍は未照合。
+
+**原典に書いてあること**：
+
+- Lenneberg（p.639）：左の半球の損傷が早く起きれば右の半球が言語を担えるが、病が早い十代という「certain critical period」のあとに起きると、この調整の力は失われ、言語は「interfered with permanently」。
+- Lenneberg（pp.639–640）：子どもは早い十代の前と遅い十代のあとで外国語の身に付き方が大きく違い、あいだは移り変わりの時期である。若い大人には、第二言語の学びは学業の練習になり、訛りと母語の干渉を越えるのが急に難しくなる。
+- Hartshorne ら（p.1、要旨）：66 万 9498 人の資料と計算のモデルで、文法を学ぶ力が 17.4 歳ごろまで保たれ、そのあと下がり続けると推定した。はっきりした臨界期があることを支えるが、終わる年齢は言われてきたより遅い。
+- Hartshorne ら（p.9）：Vanhove（2013）は、到達度の違いが統計として意味があるかを問い、数千人が要ると示した、と紹介する。Johnson & Newport は、8〜10 歳で始めた人は母語話者並みに届かず、もっと早く始めた人は届いた、と報告した、と書く（Johnson & Newport の本文は二次経由）。
+- Hartshorne ら（p.12）：母語話者並みに届く最後の始め年は、17 歳よりかなり前と見られる。
+- Newport（要旨）：遅く触れるほど最終の成績は下がり、子どもの間はほぼ直線で、大人になると平らになる。学ぶ力が下がるのは、言語に特有の制約の衰えか、言語でない認知の力が広がるためか、二つの仮説を挙げる。
+
+**対立・衝突・統合の読み**：原典は、学ぶ力の成熟と入力に触れる時期の兼ね合いを書き、窓を過ぎた形を、言語が永く損なわれる・訛りと干渉が越えにくい・母語話者並みに届かない形として書いています。至らない形が論の中心にあります。報告は臨界期を「場（時間窓）に独自の知見」とし、窓を過ぎた至らない形に触れていません。臨界期があるか、いつ閉じるかは研究の一線で、Johnson & Newport の年齢と Hartshorne らの年齢は違います（Hartshorne らは学ぶ力と最終の到達度を分けて測る、と書く）。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 160 行「Hartshorne et al. (2018) は約67万人のデータから文法学習能力が17.4歳頃まで保たれる」 | 一致 | ― | p.1 と合う |
+| ja 160 行「Lenneberg (1967) は、言語獲得が乳幼児期から思春期までの生物学的時間窓に依存する」 | 一致 | ― | 1969 年の論文の pp.639–640 と合う（「early teens」）。1967 年の書籍は未照合 |
+| ja 160 行「Vanhove (2013) は…『臨界期が年齢効果を一意に規定する』とは言いにくい」、ja 164 行「『臨界期』の存在自体が統計的に争点」 | 言い過ぎ | 低 | Hartshorne ら（p.9）は Vanhove を、標本の大きさの問題として紹介し、自分たちの結果ははっきりした臨界期を支えると書く（p.1）。争点は、あるかどうかより、いつ閉じ、何が下がるか |
+| ja 160〜164 行 窓を過ぎて言語が永く損なわれる・母語話者並みに届かないことに触れていない | 抜け | 中 | Lenneberg p.639、Hartshorne ら p.12、Newport の要旨 |
+| ja 76 行「場（時間窓）に独自の知見」 | 未判定 | 中 | 5段階の定義が決まってから。窓の後の至らない形を、場の条件としてだけ読んでいる |
+| ja 160 行 Johnson & Newport (1989) の要約 | 未判定 | 低 | 未照合。Hartshorne ら（p.9）の紹介とは食い違わない |
+
+### 8. 最適性理論
+
+**要旨**：文法は、普遍の制約の組と、その衝突を解く一般の手立てからなる。制約は表面で破られうる。候補の中から、順位の高い制約をよく満たすものが出力に選ばれる。言語の違いは、制約の違いでなく、順位の違いである。
+
+**一次情報**：Prince, A. & Smolensky, P. (1993/2004). *Optimality Theory: Constraint Interaction in Generative Grammar*。Rutgers Optimality Archive の ROA-537（https://roa.rutgers.edu/files/537-0802/537-0802-PRINCE-0-0.PDF ）。表紙に「ROA Version, 8/2002」「First circulated: April, 1993」「RuCCS-TR-2; CU-CS-696-93: July, 1993」とあり、技術報告とほぼ同じで頁づけが変わったと書く。2004 年の Blackwell の版（DOI 10.1002/9780470759400）とは別の版。読んだ頁（ROA 版の頁）：pp.2–3・p.18。manifest に行は無い。
+
+**照合の状態**：本文照合済（著者版。ROA 版 2002 の頁）。Blackwell 2004 年版の頁は控えていません。
+
+**原典に書いてあること**：
+
+- 「the constraints operating in a particular language are highly conflicting and make sharply contrary claims about the well-formedness of most representations」。文法は、制約と、その衝突を解く一般の手立てからなる（p.2）。
+- 文法を定める条件の多くは、実際の形でたびたび破られる。ほとんどの入力で、どの候補も多くの制約を破る（p.2）。
+- 衝突を解く手立ては、制約を厳密な支配の順に並べることで、上の制約は下のすべての制約より絶対に優先する（p.2）。
+- 普遍文法は、しばしば衝突する一般の制約を与え、言語は「how they resolve the conflicts」で違う（p.3）。制約の満たされ方の度合いを、統計物理から来た尺度で「Harmony」と呼ぶ（p.3）。
+- 出力の形を求める制約（markedness）と、入力をそのまま保つことを求める制約（faithfulness）を分ける（p.3。第 I 部で導入）。
+- 制約どうしの衝突は「ubiquitous」で、それを扱うために支配の関係を置く（p.18）。
+
+**対立・衝突・統合の読み**：原典は、制約の衝突を、取り除くべきものでなく文法の芯として書いています。衝突は順位で解かれますが、負けた制約は消えず、ほかの候補の比べでは働き続けます。区別を残したまま一つの出力が決まる形と読めます（Claude の読み）。原典は共時の文法の理論で、変化の過程の理論ではありません。報告もこれを書いています。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 170 行 忠実性と有標性の二つの制約が競合・ランキングの違いで言語の違いを書く | 一致 | ― | pp.2–3 |
+| ja 170 行「制約は『違反可能』であり、完全な充足は存在しないという原理を持ちます」 | 言い過ぎ | 低 | 原典は「for most inputs」どの候補も多くの制約を破る、と書く（p.2）。完全な充足が無いことを原理とはしていない |
+| ja 174 行「制約ランキングの確定（縁）→最適候補の選択（渦）」 | 未判定 | 中 | 5段階の定義が決まってから。原典で衝突が欠かせない形になっている点は、照合で確かめられた |
+| ja 81 行「部分的な対応」、en 59 行「Partial, but strong」、pres 53 行「強い対応」 | 未判定（版の食い違い） | 中 | 下の「版の間の食い違い」 |
+| 報告の書誌「Prince & Smolensky (1993/2004)」 | 一致 | 低 | 1993 年の技術報告と 2004 年の書籍の二つを指す。読める版は 2002 年の ROA 版で、頁を引くときはどの版かを書く |
+
+### 9. クレオール形成
+
+**要旨**（Bickerton 1981。2016 年の再刊の序文による）：クレオールは一世代のうちに、ほとんど構造の無いピジンから、子どもによって作られる。子どもは、大人が使えない普遍の文法に触れられ、親の言語（基層）にはあまり頼らない。
+
+**一次情報**：
+
+- Bickerton, D. (1981/2016). *Roots of Language*（Classics in Linguistics 3）. Berlin: Language Science Press. DOI 10.17169/langsci.b91.109。CC BY 4.0。初版は 1981 年の Karoma。manifest D17-S07（台帳の書誌は Karoma で、手元の PDF は 2016 年の再刊）。読んだ頁：pp.vii–ix（2016 年の序文）・p.1・p.9・p.11・p.17。
+- Thomason, S. G. & Kaufman, T. (1988). *Language Contact, Creolization, and Genetic Linguistics*. UC Press（manifest D17-S06）。de Gruyter の再刊（DOI 10.1525/9780520912793）は前付けだけが公開。OA の版は見つからなかった。
+- DeGraff, M. (2003). Against Creole exceptionalism. *Language* 79(2), 391–410. DOI 10.1353/lan.2003.0114。著者の MIT の頁に PDF は見つからなかった。OpenAlex が要旨の欄に載せる冒頭の文だけを読んだ。McWhorter (2001) は試していない。
+
+**照合の状態**：Bickerton は本文照合済（Language Science Press の CC BY の再刊）。Thomason & Kaufman は未照合（書籍）。DeGraff 2003 は要旨照合済（OpenAlex の冒頭の文）。
+
+**原典に書いてあること**：
+
+- 2016 年の序文（p.vii）：35 年たっても中心の主張を変える要はない、と書き、クレオールは一世代で子どもが作る、と主張を繰り返す。一方で、最大の弱さは、どの言語を指すかを定めなかったことで、クレオールと呼ばれてきた言語は自然な一つの類を成さない、とも書く。
+- 2016 年の序文（p.ix）：既定の範疇と省力の原則から、形態素の数を最も少なくしながら区別できる出来事の型を最も多くする仕組み（三つの標識と無標の形）を、ほとんどのクレオールが採る、と書く。
+- p.1：ピジン化とクレオール化は、言語の伝達が最もひどく途切れる場で起きる。「a catastrophic break in linguistic tradition that is unparalleled」（Sankoff 1979 の引用）。
+- p.9：ハワイでは、最初のクレオールの世代が、前の世代の言葉に証拠の無い規則を作った。
+- p.11：年長のピジンの話し手の言葉は「both highly restricted and highly variable」である。
+- p.17：基層の違う多くのクレオールが同じ形にたどり着くことは、基層の影響を受けたピジンの均しでは説明できない、と書く。
+- DeGraff（冒頭）：クレオールを「ふつうの」言語と別の類とする前提が、植民地の歴史から引き継がれてきた、と書く。
+
+**対立・衝突・統合の読み**：Bickerton は、伝達の大きな途切れの中で、子どもの世代が前の世代に無い規則を作る形を書き、大人の世代の言葉は限られ、ばらついたまま残る形を書いています。世代のあいだの断絶が論の芯で、大人の世代は至らない形として書かれている、と Claude は読みました。序文の、省力と区別の数の兼ね合いも原典にあります。クレオールが特別な類かどうかは研究の一線で、Bickerton は 2016 年にも主張を保ち、DeGraff は特別とする見方そのものを退けます。報告は、提唱者を Thomason & Kaufman とし、Bickerton を「現在では大きく批判されており、社会歴史的条件の重視が主流」と、一方の立場を事実として書いています。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 75 行・180 行 クレオール形成の提唱者を Thomason & Kaufman (1988) とする | 未判定（帰属） | 中 | Thomason & Kaufman は未照合（書籍）。報告が書く同書の中身は、権力関係・植民地・人口移動が接触の形を決めることだけで、形成の過程の説ではない。形成の過程を説として出しているのは、読めた原典では Bickerton |
+| ja 180 行「Bickerton (1981) の『生物学的プログラム仮説』…は現在では大きく批判されており、社会歴史的条件の重視が主流となっています」 | 言い過ぎ | 中 | 研究の一線。Bickerton は 2016 年の序文で中心の主張を保つ（p.vii）。批判の側（DeGraff 2003 など）は要旨までしか読んでいない。報告は一方を確立した事実のように書いている |
+| ja 184 行「場が外部力（植民地化）により強制的に作られる」、ja 75 行「場（強制的創出）に独自の知見」 | 未判定 | 中 | 5段階の定義が決まってから。原典は、伝達の途切れと、世代のあいだで規則が作られる形を書く（pp.1・9）。大人の世代の言葉が限られたまま残る至らない形（p.11）を、報告は落としている（抜け） |
+| ja 180〜184 行 世代のあいだの断絶・大人のピジンが残ることに触れていない | 抜け | 中 | pp.1・9・11 |
+| manifest D17-S07 の書誌「Karoma.」 | 未判定（台帳の書誌） | 低 | 手元の PDF は Language Science Press の 2016 年の再刊（CC BY 4.0、DOI 10.17169/langsci.b91.109）。2016 年の序文が付く |
+
+### 10. 言語相対性
+
+**要旨**：話す言語の分け方は、判断の速さに差を生む。英語は時間を横に、中国語は縦にも言う。中国語の話者は、英語で考えるときも時間を縦に考える傾向があった（Boroditsky 2001）。ロシア語の話者は、二つの青の語の境をまたぐ色を速く見分け、その差は言葉を使う課題を同時にすると消えた（Winawer ら 2007）。
+
+**一次情報**：
+
+- Boroditsky, L. (2001). Does language shape thought?: Mandarin and English speakers' conceptions of time. *Cognitive Psychology* 43(1), 1–22. DOI 10.1006/cogp.2001.0748。著者のサイトの写し（https://lera.ucsd.edu/papers/mandarin.pdf ）。出版社の版で、誌面の頁がある。読んだ頁：p.1・p.3。
+- Winawer, J., Witthoft, N., Frank, M. C., Wu, L., Wade, A. R. & Boroditsky, L. (2007). Russian blues reveal effects of language on color discrimination. *PNAS* 104(19), 7780–7785. DOI 10.1073/pnas.0701644104。PMC1876524 の記事の頁（HTML）。節で控えた：Abstract。
+- January, D. & Kako, E. (2007). Re-evaluating evidence for linguistic relativity: Reply to Boroditsky (2001). *Cognition* 104(2), 417–426. DOI 10.1016/j.cognition.2006.07.008、Chen, J.-Y. (2007). Do Chinese and English speakers think about time differently? Failure of replicating Boroditsky (2001). *Cognition* 104(2), 427–436. DOI 10.1016/j.cognition.2006.09.012。どちらも Crossref で書誌だけ確かめた。OA の版は見つからず、OpenAlex に要旨も無かった。
+- Slobin (1996)・Whorf (1940)・Regier & Kay (2009) は試していない。
+
+**照合の状態**：Boroditsky 2001 は本文照合済（著者のサイトの写し）。Winawer ら 2007 は本文照合済（PMC。要旨の節）。January & Kako 2007 と Chen 2007 は未照合（書誌のみ）。
+
+**原典に書いてあること**：
+
+- Boroditsky（p.1、要旨）：三つの実験。中国語の話者は、縦の並びを見た直後に、英語で「3 月は 4 月より前か」を速く確かめた。英語を学び始めた年齢が、縦に考える度合いと関わった。英語の話者に縦の言い方を教えると、同じ偏りが出た。母語は習慣の考え方を形づくるが、強い意味でのウォーフの仮説のように考えを決めはしない、と結ぶ。
+- Winawer ら（Abstract）：ロシア語の話者は、二つの青の語の境をまたぐ組を速く見分けた。この利点は、言葉を使う課題を同時にすると消え、空間の課題では消えなかった。英語の話者には利点が無かった。言語の効果は「online」で、言葉の妨げで崩れる、と書く。
+
+**対立・衝突・統合の読み**：原典の兼ね合いは、言語の分け方と、言語によらない知覚や推論のあいだにあります。効果は、言葉を同時に使うと消え（Winawer ら）、別の言い方を教えると移る（Boroditsky）と書かれていて、固まった構造が次の考えを縛る形より、その場で言葉が働くあいだの効果として書かれています（Claude の読み）。Boroditsky 2001 の再現は研究の一線で、再現されなかったと題に書く論文が二つあります。報告は Boroditsky (2001) が「実証しています」と書き、この争いに触れていません。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 190 行「Boroditsky (2001) は時間概念について、Winawer et al. (2007) は色彩カテゴリについて、言語差による認知差を実証しています」 | 言い過ぎ | 中 | Boroditsky 2001 は追試で再現されなかったという論文が二つある（January & Kako 2007・Chen 2007。書誌のみ）。研究の一線として書く |
+| ja 190 行「強い仮説…は放棄されていますが、弱い仮説…は実験的に支持されています」 | 未判定 | 低 | Boroditsky（p.1）は強い意味の仮説を退ける。分野の全体の判断としては確かめていない |
+| ja 192〜194 行「既存の言語体系（束）が次の認知サイクルの初期条件（場）を制約する」、ja 80 行「束→場の制約関係のみ」 | 未判定 | 中 | 5段階の定義が決まってから。原典の効果は、言葉を使う課題で消え、教えると移る（Winawer ら・Boroditsky p.1）。固まった体系が場を縛る形とは逆向きの読みもできる |
+| ja 190 行 Slobin (1996) の「thinking for speaking」 | 未判定 | 低 | 未照合。Boroditsky（p.3）が Slobin を引いて語を使っていることは確かめた |
+
+### 11. 弁別素性の二項対立（似た論文から足した論）
+
+**要旨**：音素は、二つの極からなる弁別素性の束に分けられる。聞き手は素性ごとに二つのどちらかを選ぶ。子どもが区別を身に付ける順と、失語で区別が失われる順は、同じ含みの法則に従い、逆になる。
+
+**一次情報**：Jakobson, R. & Halle, M. (1956). *Fundamentals of Language*. The Hague: Mouton。manifest D17-S16。Morris Halle の MIT の頁（https://web.mit.edu/morrishalle/pubworks/papers/1956_Jakobson_Halle_Fundamentals_of_Language.pdf ）の写しで、図書館の本の走査に文字の層が付いている。誌面の頁番号がある。読んだ頁：pp.4–5・pp.26–27。
+
+**照合の状態**：本文照合済（著者 Halle の MIT の頁の写し）。
+
+**原典に書いてあること**：
+
+- 「Each of the distinctive features involves a choice between two terms of an opposition」。聞き手は、届いた知らせの中で、素性ごとに「yes-no decision」を迫られる（p.4）。
+- 二つの対になる項のうち一つだけが知らせにある場合を「opposition」、並んで現れて極の違いが際立つ場合を「contrast」と呼び、どちらも極の原理の現れとする（pp.4–5）。
+- 子どもの音の進みと失語の後退は、同じ含みの法則に従う。子どもが B を身に付けることが A を前提にするなら、失語で A を失うことは B が無いことを含み、回復は子どもの発達と同じ順に進む。世界の言語でも、B は A が無ければ現れず、B がある間は A は消えない（pp.26–27）。
+
+**対立・衝突・統合の読み**：原典は、二項の対立を音の体系の芯に置き、体系が壊れる順（失語）と育つ順（子ども）を同じ法則の両側として書いています。壊れる形が過程の外でなく、同じ法則の中に置かれています。二項の対立を「衝突」と読むかは Claude の読み替えで、原典は選ぶことと区別を書いていて、ぶつかり合いは書いていません。報告には入っていない論で、本文に当たれて、壊れる形をはっきり書いているので足しました（README「調査の手順」1）。
+
+**今の報告から直すこと**：報告に無い論です。直すことはありません。
+
+## 公開報告の点検のまとめ
+
+### 版の間の食い違い
+
+| 項目 | ja | en | pres | 退避版 |
+|---|---|---|---|---|
+| 件数 | 強い 3・部分 5・条件付き 2（84 行・Colophon 267 行） | Strong 3・Partial, but strong 4・Partial 1・Conditional 2（51〜62 行。49 行は「eight showed strong or partial」） | 強い 6・部分 2・条件付き 2（23 行） | Accept 8・CA 2 |
+| 文法化・音変化・最適性理論 | 部分 | Partial, but strong | 強い（場→波→縁→渦→束） | Accept |
+| 語用論 | 部分 | Partial, but strong | 部分（波→縁→渦） | Accept |
+| 臨界期の提唱者 | Lenneberg, Johnson & Newport | ― | Lenneberg (1967) | Lenneberg (1967) |
+| 反復学習の提唱者 | Kirby et al. | ― | Kirby et al. (2014) | ― |
+| ニカラグア手話の時間表現 | Kocaba et al. (2016) | ― | Kocab et al. (2016) | Kocaba et al. (2016) |
+
+同じ報告の訳でなく、版ごとに別に生成されたことが、件数と段の食い違いの出どころと見られます（D18・D22・D25 と同じ）。pres は 10 のうち 8 に「場→波→縁→渦→束」と書いていて、ja の対応段階の欄と合いません。
+
+### 領域全体の主張
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 234 行「言語学の10の理論は全て『構造の生成』を記述しており、『構造の解体』（言語の衰退・消滅）を扱うものがありません」、ja 42 行「言語の衰退・消滅のプロセスについても、現在の調査範囲には含まれていません」 | 取り違え | 高 | 本文で読めた原典は、至らない形と消える形を書いている。窓を過ぎた言語の損傷（Lenneberg p.639）、退化した言語（Kirby ら 2015 pp.89–90・2008 の実験 1）、広がりで構造が失われる（Labov 2007 の要旨）、取り残される語（Wang 1969 の要旨）、限られたまま残るピジン（Bickerton p.11）、消えた手話（Sandler ら 2005）、失語で区別が失われる順（Jakobson & Halle pp.26–27）。報告は、読んでいない原典について「無い」と書き、射程の外に置いた。出どころは phase7 125〜127 行の Blind-1 |
+| ja 200〜208 行・252 行「波→縁の移行を駆動する二重メカニズム」の「発見」 | 付け足し | 高 | 原典に無い構成。phase6 209 行の H1 は [SPECULATIVE] と書いていた。phase7 7〜17 行・141〜143 行で「Pattern-1」になり、報告では結論の「発見」になった。反復学習の原典の兼ね合いは、圧縮と表現力（Kirby ら 2015）で、蓄積と制約の二つではない |
+| ja 84 行・212 行・252 行「10の理論が10種類の異なる縁の型を提示」「他の単一領域では見られない多様性」「最も明確に示す領域」 | 付け足し | 中 | 型の名（制度型・伝播型・界面型など）は原典に無い。phase6 203 行・phase7 60 行で LLM が付けた。30 領域を比べた跡は無い |
+| ja 250 行「言語学は、5段階モデルとの構造的対応が高い領域です」、pres 107 行「全体として強い領域であると確認されました」 | 言い過ぎ | 中 | 11 の論のうち、原典で衝突や兼ね合いが確かめられたのは 8 つほどで、「全5段階」とした反復学習も、原典は二つの実験に分けて至らない形を書いている |
+| ja 238 行「完全に意図なき極（ニカラグア手話、反復的学習モデル）」 | 未判定 | 低 | Kirby ら 2008 は、学ぶ人の意図した設計は無いと書く（Discussion）。実験 2 の filter は実験する人の手。ニカラグア手話は要旨まで |
+| ja 53〜63 行 5段階の定義（縁「対立する要素が共存し、どちらにも収束しない緊張状態」） | 未判定 | 中 | 5段階の定義の置き場ごとの食い違い（README「判断が要ること」1）。報告は縁の定義に「対立」を入れながら、当てはめでは忠実性と有標性の「競合」を波に（ja 174 行）、縁を「ランキングの確定」「機能分化」として読んでいる（D11〜D20 と同じ） |
+
+### テンプレート由来の表示
+
+「立ち位置明示」（3 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6」「Phase 7」（30・38 行）、「方法論的開示（S60）」（44 行）、「温度帯の分布」（84 行）、「安全弁」（86 行）、「結びの温度開示」「温度帯」（256〜259 行）、「Colophon」「generator_model」（261〜271 行）。46〜49 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（writing.md §1-1・§1-8）。英語版は AI に触れる 3 本の一つ（README 段 1）。報告のテンプレートが原因で、個別でなくテンプレートで直します。
+
+### 誤りの出どころ
+
+| 誤り | 出どころ |
+|---|---|
+| 「構造の解体」を扱う論が無い | phase7 125〜127 行の Blind-1 → 報告 §7 |
+| 波→縁の二重メカニズム | phase6 209〜227 行の H1 [SPECULATIVE] → phase7 7〜17 行の Pattern-1・141〜143 行の PT-1 → 報告 §6・§8 で「発見」 |
+| 10 種類の縁の型 | phase6 203 行 → phase7 60 行・159 行 |
+| Kocaba（Kocab の綴り違い） | DR 77・112 行 → 退避版 170・180 行 → ja 96 行 |
+| 反復学習の実験 1 と 2 を一つにする | 退避版の要約（D17-S12 の精読ノートが 2026-04 に実験を分けて読んだあとも、報告は 2026-03 のまま） |
+| Bickerton を「大きく批判」とし、提唱者を Thomason & Kaufman にする | 退避版 98〜120 行（「Bickerton(1981)の生得主義的解釈は後退し、社会歴史的条件の重視が主流」） |
+| 版ごとの件数と段の食い違い | ja・en・pres が別々に生成されたこと |
+| 型 F の表示 | 報告のテンプレート |
+
+### 文体（writing.md・corrections.md の型）
+
+- 型 H（原典に無い体系）：「言語学の10の理論は、10種類の異なる『縁』の型を提示しています」（212 行）、「大きく『内生的』と『外生的』に分類できます」（214 行）。型の名は原典に無い。
+- 型 E（急いで解く・言い切る）と「最も」：「言語学で最も重要な横断的パターンは」（202 行）、「言語学がこの調査に対して最も豊かに貢献する領域の一つ」（212 行）、「最も明確に示す領域」（252 行）、「5段階モデルの記述が最も弱い部分への具体的な貢献」（252 行）。30 領域を数えた跡は無い。
+- 型 C（範囲を狭める）：「言語の衰退・消滅のプロセスについても、現在の調査範囲には含まれていません」（42 行）。至らない形を射程の外に置いている。
+- 型 J：ダッシュの挿入（206 行「世代間伝達のボトルネック——全入力を伝達できないという制約——が」）。
+- 至らない形を外に置く書き方：反復学習の実験 1、臨界期の窓を過ぎた形、ピジンのまま残る大人の世代を、報告は書いていない。読めた原典では、どれも論の中心に書かれている。
+
+## 判断が要るもの
+
+pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは `docs/cs-review/README.md` の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
+
+- Haspelmath（1999）の Zenodo の写しは、作者の欄とライセンスの表示が著者を指しますが、上げたアカウントが著者本人かを確かめられませんでした。D29 の決め（Zenodo の表示は権利の確かめにならない）に従い、未照合とし、読んだ頁を書きました。著者のサイト（MPI EVA の頁）に同じ PDF があれば、本文照合済に上げられます。
+- 弁別素性（Jakobson & Halle 1956）は、似た論文の行ですが、本文に当たれて、壊れる順を同じ法則の中に書いているので、論として足しました（README「調査の手順」1）。Lupyan & Dale（2010）は、論として足さず、反復学習の節で関わる論として挙げました。
+- クレオール形成の提唱者を Thomason & Kaufman とするのは、同書を読めないので「未判定（帰属）」としました。stance 2-1 から、確かめられない帰属は外さずに状態を書く、と予想しました。
+
+## 新しく見つけた原典（台帳に足す案）
+
+| source_id の案 | 書誌 | 取得先 | 状態の案 |
+|---|---|---|---|
+| D17-S17 | Weinreich, U., Labov, W. & Herzog, M. I. (1968). Empirical foundations for a theory of language change. In Lehmann & Malkiel (Eds.), *Directions for Historical Linguistics* (pp.97–195). University of Texas Press | https://lrc.la.utexas.edu/books/directions/5-weinreich （UT Austin の Linguistics Research Center の公開の全文。HTML。保存名の案 `D17_weinreich-labov-herzog_1968_empirical-foundations.html`） | url-verified（HTML。頁は節） |
+| D17-S18 | Prince, A. & Smolensky, P. (1993/2002). *Optimality Theory: Constraint Interaction in Generative Grammar*. ROA-537（ROA 版 8/2002。RuCCS-TR-2）。書籍は Blackwell 2004（DOI 10.1002/9780470759400） | https://roa.rutgers.edu/files/537-0802/537-0802-PRINCE-0-0.PDF （著者版。保存名の案 `D17_prince-smolensky_1993-2002_optimality-theory-roa537.pdf`） | raw-confirmed（手元に置くなら） |
+| D17-S19 | Kirby, S., Tamariz, M., Cornish, H. & Smith, K. (2015). Compression and communication in the cultural evolution of linguistic structure. *Cognition* 141, 87–102. DOI 10.1016/j.cognition.2015.03.016 | https://dspace.stir.ac.uk/bitstream/1893/22564/1/Kirby%20et%20al_Cognition_2015.pdf （スターリング大学。CC BY 4.0。保存名の案 `D17_kirby-tamariz-cornish-smith_2015_compression-and-communication.pdf`） | raw-confirmed（手元に置くなら） |
+| D17-S20 | Sandler, W., Meir, I., Padden, C. & Aronoff, M. (2005). The emergence of grammar: Systematic structure in a new language. *PNAS* 102(7), 2661–2665. DOI 10.1073/pnas.0405448102 | https://pmc.ncbi.nlm.nih.gov/articles/PMC548320/ （HTML。保存名の案 `D17_sandler-meir-padden-aronoff_2005_emergence-of-grammar.html`） | url-verified |
+| D17-S21 | Bybee, J. (2006). From usage to grammar: The mind's response to repetition. *Language* 82(4), 711–733. DOI 10.1353/lan.2006.0186 | https://ling.unm.edu/assets/documents/bybee2006fromusage.pdf （ニューメキシコ大学の言語学科。保存名の案 `D17_bybee_2006_from-usage-to-grammar.pdf`） | raw-confirmed（手元に置くなら） |
+| D17-S22 | Haspelmath, M. (1999). Why is grammaticalization irreversible? *Linguistics* 37(6), 1043–1068. DOI 10.1515/ling.37.6.1043 | https://zenodo.org/records/571365 （上げた人と権利は未確認。CC BY 4.0 の表示。保存名の案 `D17_haspelmath_1999_why-grammaticalization-irreversible.pdf`） | url-verified（上げた人が未確認の写し） |
+| D17-S23 | Boroditsky, L. (2001). Does language shape thought?: Mandarin and English speakers' conceptions of time. *Cognitive Psychology* 43(1), 1–22. DOI 10.1006/cogp.2001.0748 | https://lera.ucsd.edu/papers/mandarin.pdf （著者のサイト。保存名の案 `D17_boroditsky_2001_does-language-shape-thought.pdf`） | raw-confirmed（手元に置くなら） |
+| D17-S24 | Winawer, J., Witthoft, N., Frank, M. C., Wu, L., Wade, A. R. & Boroditsky, L. (2007). Russian blues reveal effects of language on color discrimination. *PNAS* 104(19), 7780–7785. DOI 10.1073/pnas.0701644104 | https://pmc.ncbi.nlm.nih.gov/articles/PMC1876524/ （HTML。保存名の案 `D17_winawer-et-al_2007_russian-blues.html`） | url-verified |
+| D17-S25 | January, D. & Kako, E. (2007). Re-evaluating evidence for linguistic relativity: Reply to Boroditsky (2001). *Cognition* 104(2), 417–426. DOI 10.1016/j.cognition.2006.07.008 | Elsevier（有料） | citation-only |
+| D17-S26 | Chen, J.-Y. (2007). Do Chinese and English speakers think about time differently? Failure of replicating Boroditsky (2001). *Cognition* 104(2), 427–436. DOI 10.1016/j.cognition.2006.09.012 | Elsevier（有料） | citation-only |
+| D17-S27 | Labov, W. (2007). Transmission and diffusion. *Language* 83(2), 344–387. DOI 10.1353/lan.2007.0082 | https://www.ling.upenn.edu/~wlabov/Papers/TD.html （著者の頁。自動取得に 403） | blocked-access |
+| D17-S28 | Wang, W. S.-Y. (1969). Competing changes as a cause of residue. *Language* 45(1), 9–25. DOI 10.2307/411748 | JSTOR（有料） | citation-only（要旨は OpenAlex） |
+| D17-S29 | Labov, W. (1981). Resolving the Neogrammarian controversy. *Language* 57(2), 267–308. DOI 10.2307/413692 | JSTOR（有料） | citation-only（要旨は OpenAlex） |
+| D17-S30 | Newport, E. L. (1990). Maturational constraints on language learning. *Cognitive Science* 14(1), 11–28. DOI 10.1207/s15516709cog1401_2 | Wiley（OpenAlex は pdfdirect を OA と挙げる。試していない） | citation-only（要旨は OpenAlex） |
+| D17-S31 | DeGraff, M. (2003). Against Creole exceptionalism. *Language* 79(2), 391–410. DOI 10.1353/lan.2003.0114 | Project MUSE（有料） | citation-only |
+
+既存の行に書き足す案：
+
+- D17-S07：手元の PDF は Language Science Press の 2016 年の再刊（Classics in Linguistics 3、CC BY 4.0、DOI 10.17169/langsci.b91.109）。初版の Karoma 1981 ではない。
+- D17-S08：手元の PDF は JSTOR の表紙つきの写し。台帳の ehu.eus の URL は今回 SSL の誤りで取れず、同じファイルかは比べていない。
+- D17-S09：台帳の UT Dallas の URL は、別の案内の頁（atlas.utdallas.edu）に飛ばされる。写しは無くなった見込み。
+- D17-S11：書誌に頁 160–176 を足す。OUP の PDF は確認画面を返す。ORA の写し（https://ora.ox.ac.uk/objects/uuid:48356b4a-41c9-43c9-95b2-d231b197f3d5 ）で読めた。
+- D17-S12：raw-confirmed だが local_file が空。PNAS の PDF は確認画面を返す。PMC2504810 の HTML で読めた（保存名の案 `D17_kirby-cornish-smith_2008_cumulative-cultural-evolution.html`）。
+- D17-S13：raw-confirmed だが local_file が空。グラスゴー大学の機関リポジトリ（https://eprints.gla.ac.uk/281184/1/281184.pdf ）の出版社の版で読めた（保存名の案 `D17_raviv-meyer-lev-ari_2020_social-network-structure.pdf`）。
+- D17-S14：MPG PuRe は自動取得に確認画面を返す。下の表。
+- D17-S15：PLOS の PDF を取れた（保存名の案 `D17_lupyan-dale_2010_language-structure-social-structure.pdf`）。url-verified の行を raw-confirmed に上げられる。
+- D17-S16：MIT の Halle の頁の PDF を取れ、本文を読めた（保存名の案 `D17_jakobson-halle_1956_fundamentals-of-language.pdf`）。url-verified の行を raw-confirmed に上げられる。
+
+## ブラウザでの保存が要る PDF
+
+| 台帳の行 | 文献 | ダウンロード先 | 保存名の案 | 止まった理由と、保存できると何を確かめられるか |
+|---|---|---|---|---|
+| D17-S14 | Senghas, Kita & Özyürek (2004). *Science* 305 | https://pure.mpg.de/pubman/item/item_59126_3/component/file_59127/Senghas_2004_children.pdf | `D17_senghas-kita-ozyurek_2004_children-creating-core-properties.pdf` | 「Making sure you're not a bot!」の確認画面。学年ごとの様態と経路の表し方（精読ノートの引用、pp.1780–1781）と、第 1 学年の大人の言葉が後の学年と違ったままか（至らない形）を確かめられる |
+| D17-S27（案） | Labov (2007). Transmission and diffusion. *Language* 83 | https://www.ling.upenn.edu/~wlabov/Papers/TD.html から PDF | `D17_labov_2007_transmission-and-diffusion.pdf` | 403。共同体のあいだで構造が失われる形（ニューヨークの短い a の広がり）を本文の頁で確かめられる |
+| D17-S09 | Johnson & Newport (1989). *Cognitive Psychology* 21 | 台帳の URL は無くなった。Internet Archive の記録（web.archive.org で personal.utdallas.edu/~assmann/hcs6367/johnson_newport89.pdf）を、日をおいて取り直す | `D17_johnson-newport_1989_critical-period-effects.pdf` | 2026-11-09 は Internet Archive が落ちていた（確認画面ではない）。年齢と到達度の関係（8〜10 歳で始めた人）を本文で確かめられる |
+| D17-S01 の関わり | Meillet (1912). L'évolution des formes grammaticales. *Scientia* 12 | Internet Archive で『Linguistique historique et linguistique générale』（1921）を探す | `D17_meillet_1912_evolution-des-formes-grammaticales.pdf` | 2026-11-09 は Internet Archive が落ちていた。「文法化」の語の初出と、Meillet が書く変化の循環を確かめられる（パブリックドメイン） |
+| ― | Goldberg (2003) の著者が許したポルトガル語訳 | https://lume.ufrgs.br/bitstream/10183/249233/1/000987282.pdf | `D17_goldberg_2003_constructions-pt.pdf` | SSL の接続の誤り（確認画面ではない）。構文の論の芯を（訳）で確かめられる |
+
+## 手順について分かったこと
+
+- 報告が「OA 版がなく」と書いた論のうち二つ（音変化の Weinreich, Labov & Herzog 1968、最適性理論の ROA 版）は、頼む文の当たりの場所で全文が公開されていました。書籍だけの論も、同じ論の核になる章や著者版を探すと本文に当たれました（D07・D21・D25 と同じ）。
+- 出版社と PMC の PDF（PNAS・OUP・Wiley・MPG PuRe）は確認画面を返しましたが、PMC の記事の頁（HTML）と機関リポジトリ（ORA・グラスゴー・スターリング）の写しで、四つの論文を読めました。OpenAlex の挙げた写しは、どれも 1 頁目の書誌が狙った論文と合いました。
+- 2026-11-09 は Internet Archive が「Temporarily Offline」で、Wayback と古典の走査（Meillet）を使えませんでした。確認画面と分けて書きました。
+- 読めた原典は、至らない形を論の中心に書いていました（退化した言語・窓を過ぎた損傷・限られたまま残るピジン・取り残される語・失語の後退）。報告は §7 で「解体を扱う論が無い」と書いていて、原典を読まずに無いと書いた例でした。
+- 精読ノートと台帳について：`cs/knowledge/source-notes/D17/D17-S13_raviv-2020.md` 100〜107 行は、ネットワークの形を「縁の実体」とし、全 5 段階を「強」としますが、原典の要旨（同じノートの 28 行に引く）は、ネットワークの形の効果は出なかったと書きます。出典を主張と逆の向きに当てています（中）。`cs/knowledge/source-notes/D17/D17-S08_lenneberg-1967.md` は、ファイル名が 1967 で、中身は 1969 年の論文です（低）。`pd/wiki/sources/D17_jakobson_1956_halle-m.md` は、ファイル名の題の部分が共著者の名（halle-m）になっています（低）。精読ノートと wiki の DOI（9 本）は、Crossref の書誌と合っていました。
