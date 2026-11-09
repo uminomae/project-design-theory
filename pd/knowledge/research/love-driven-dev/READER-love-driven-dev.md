@@ -726,9 +726,9 @@ pjdhiro は、Love駆動開発を、入力と出力を持つ仕組みの図と�
 
 <a id="ldd-love-history"></a>その前に、Love という言葉が、これまで何を指してきたかを見ておきます。別のページ「[Love とは、どう言われてきたか](love-history.html)」（工事中・[#79](https://github.com/uminomae/project-design-theory/issues/79)）は、誰が、いつ、何を Love と呼んだかを、原典に当たって歴史の順に並べています。並べ方は、仏教の流れ、西洋哲学の流れ、現代の恋愛と心理学の分類の三つです。
 
-並べてみると、Love や愛と訳されてきた言葉は、原典では別々の語で、何として書かれているかも一つではありません。苦の原因としての渇き、育てる心、欠けているものを求める欲求、互いに善を願う関係、神そのもの、自分を運ぶ重さ、喜びの一種、進化の様式、切望の状態、三つの成分の組み合わせ、というように書かれてきました。
+並べてみると、Love や愛と訳されてきた言葉は、原典では別々の語で、何として書かれているかも一つではありません。苦の原因としての渇き、育てる心、欠けているものを求める欲求、互いに善を願う関係、「神は愛である」と神について言われるもの、自分を運ぶ重さ、喜びの一種、進化の様式、切望の状態、三つの成分の組み合わせ、というように書かれてきました。
 
-別のページの章「[Love の範囲と種類](love-history.html#lh-scope)」は、その全体を二つの表で見渡しています。一つ目は範囲で、Love に当たる語が、何に向けたものとして書かれているかです。向ける先は、原典ごとに違います。特定の一人、互いに善を願う相手、近い者から順に広げた先、区切りを置かないすべての生きもの、神、人ではないもの、自分、世界の成り立ち、と並びます。二つ目は種類で、原典が自分で立てている区別です。区別の数は、二つから八つまであります。
+別のページの章「[Love の範囲と種類](love-history.html#lh-scope)」は、その全体を二つの表で見渡しています。一つ目は範囲で、Love に当たる語が、何を対象にしているか（何に向けたものとして書かれているか）です。対象は、原典ごとに違います。特定の一人、互いに善を願う相手、近い者から順に広げた先、区切りを置かないすべての生きもの、神、人ではないもの、自分、世界の成り立ち、と並びます。二つ目は種類で、原典が自分で立てている区別です。区別の数は、二つから八つまであります。
 
 <details><summary>詳しく — 別のページが並べているもの</summary>
 
@@ -736,9 +736,9 @@ pjdhiro は、Love駆動開発を、入力と出力を持つ仕組みの図と�
 
 | 流れ | 並べているもの | 読む |
 |---|---|---|
-| 見渡し | 範囲（何に向けたものとして書かれているか）と、種類（原典が立てている区別）の二つの表。向ける先の寄せ方は、別のページがしたものです | [寄せた表](love-history.html#lh-overview)・[範囲](love-history.html#lh-scope-range)・[種類](love-history.html#lh-scope-kinds) |
+| 見渡し | 範囲（何に向けたものとして書かれているか）と、種類（原典が立てている区別）の二つの表。対象（向ける先）の寄せ方は、別のページがしたものです | [寄せた表](love-history.html#lh-overview)・[範囲](love-history.html#lh-scope-range)・[種類](love-history.html#lh-scope-kinds) |
 | 仏教の流れ | 初期仏教の渇愛と慈、大乗仏教の慈悲。そばに、儒教の仁と墨子の兼愛 | [渇愛](love-history.html#lh-tanha)・[慈と悲](love-history.html#lh-metta)・[大乗の慈悲](love-history.html#lh-karuna)・[仁と兼愛](love-history.html#lh-ren) |
-| 西洋哲学の流れ | エンペドクレスの混ぜる力としての愛、プラトンのエロス、アリストテレスの友愛、ストア派、新約聖書のアガペー、アウグスティヌス、ダンテ、スピノザ、パース | [エンペドクレス](love-history.html#lh-empedocles)・[プラトン](love-history.html#lh-plato)・[アリストテレス](love-history.html#lh-aristotle)・[ストア派](love-history.html#lh-stoa)・[新約聖書](love-history.html#lh-agape)・[アウグスティヌス](love-history.html#lh-augustine)・[ダンテ](love-history.html#lh-dante)・[スピノザ](love-history.html#lh-spinoza)・[パース](love-history.html#lh-peirce) |
+| 西洋哲学の流れ | エンペドクレスの愛（Φιλότης）、プラトンのエロス、アリストテレスの友愛、ストア派、新約聖書のアガペー、アウグスティヌス、ダンテ、スピノザ、パース | [エンペドクレス](love-history.html#lh-empedocles)・[プラトン](love-history.html#lh-plato)・[アリストテレス](love-history.html#lh-aristotle)・[ストア派](love-history.html#lh-stoa)・[新約聖書](love-history.html#lh-agape)・[アウグスティヌス](love-history.html#lh-augustine)・[ダンテ](love-history.html#lh-dante)・[スピノザ](love-history.html#lh-spinoza)・[パース](love-history.html#lh-peirce) |
 | 現代の恋愛と、心理学の分類 | 辞書の語義と「恋愛」という語、心理学の分類（愛着、情熱的な愛と友愛的な愛、愛の三角理論）、神経科学が測ってきたこと | [辞書と「恋愛」](love-history.html#lh-romantic)・[心理学](love-history.html#lh-psychology)・[神経科学](love-history.html#lh-neuro) |
 
 </div>
