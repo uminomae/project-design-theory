@@ -1492,7 +1492,7 @@ pjdhiro は、この一年の作業を、自分というアプリのリファク
 | 2026-11-01 | 読み物「愛は、重力に似ていないか」 |
 | 2026-11-03 | 四つの探究が一本の線に並ぶ |
 
-🚧 git の日付で辿る一年の軌跡の文書（別の作業で作成中）を、ここに合流させます。（探索：[#88](https://github.com/uminomae/project-design-theory/issues/88)）
+🚧 この一年をどうたどってきたかは、なぞりながら追体験できる別の読み物にする予定です。（探索：[#88](https://github.com/uminomae/project-design-theory/issues/88)）
 
 </details>
 
