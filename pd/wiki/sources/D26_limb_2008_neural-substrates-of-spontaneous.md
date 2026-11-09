@@ -45,7 +45,7 @@ Limb & Braun (2008) は、6 名の右利きプロジャズピアニストを対�
 
 **創造的直観と意識的注意の抑制**
 
-> "creative intuition may operate when an attenuated DLPFC no longer regulates the contents of consciousness, allowing unfettered, unconscious, or random thoughts and sensations to emerge" (p.4)
+> "creative intuition may operate when an attenuated DLPFC no longer regulates the contents of consciousness, allowing unfiltered, unconscious, or random thoughts and sensations to emerge" (p.4)
 
 DLPFC の不活性化により意識的フィルターが弱まり、無意識的な連想や直観が表面化する可能性が論じられる。
 

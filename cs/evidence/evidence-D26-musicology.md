@@ -2,49 +2,503 @@
 file_id: EV-D26
 domain: musicology
 domain_id: D26
-last_updated: 2026-04-08
-entry_count: 0
-origin: "Archived pre-rerun snapshot for cs#207"
-status: "再監査待ち（原典アクセス状態の棚卸し前）"
+title: "音楽学：論ごとの照合の記録"
+last_updated: 2026-11-09
+status: "照合中（#73）"
 source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D26-musicology.md"
-original_access_status: not-yet-reviewed
 ---
 
-# 論拠DB：音楽学（Musicology）（再監査待ち）
+# 音楽学：論ごとの照合の記録
 
-このファイルは `cs#207` 対応として、2026-04-07 時点の分析本文を archive に退避したうえで、再監査用の stub に差し替えたものです。
+この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。
 
-## 現在の扱い
+音楽学の原典は、二つの働きの兼ね合いを、聴き手の一回の聴取や一つの楽句の単位で書いているものが多くありました。Meyer（1956）は、Dewey の「conflict theory of emotions」から、傾向が妨げられたときに情動が生まれると考えた、と Huron & Margulis（2010）はまとめています（p.584）。Huron の ITPRA は、速いが粗い反応と、遅いが確かな評価という「two usually contradictory goals」を二つの応答に分けて書いています（同 p.589）。グルーヴの研究は、拍の予測（拍子）とずれ（シンコペーション）の兼ね合いを、ずれが少なすぎると予測誤差がほとんど生まれず、多すぎると拍子の予測そのものが崩れる、という両端の形で書いています（Vuust & Witek 2014、p.9）。聴覚景分析は、音を前後でつなぐまとまり方と、同時に重ねるまとまり方が「Often they compete」と書きます（Bregman 2008 の著者稿、p.10）。歌の普遍性の研究は、どの社会にも歌があることと、社会の内の違いが社会の間の違いの六倍ほどあることを、同じ論文の中で書いています（Mehr ら 2019）。
 
-- 原典アクセス状態: evidence 本文としては `not-yet-reviewed`
-- source manifest には D26 first batch 10件を反映済み
-- source 内訳は `raw-confirmed` 0 / `blocked-access` 2 / `citation-only` 8
-- [P] 主張の verified / accepted 判定は現時点では再保証しない
-- `knowledge/raw/` の整備と原典アクセス棚卸しが完了するまで、本文の再構成を優先する
+至らない形も原典に書かれています。期待がはっきり立って、そのとおりに満たされる音楽は、情動の生まれない「banal」な場合とされています（Huron & Margulis 2010 が Meyer をまとめた所、p.585）。二つの流れに分かれた音どうしの順序は聞き取れなくなります（Bregman & Campbell 1971、p.244）。流れが一つか二つかの聞こえ方は、聞こうとする意図があっても入れ替わり続け、長い目で見ても落ち着きません（Pressnitzer & Hupé 2006 の著者稿、pp.5–8）。アーラープを欠くと、演奏者がラーガの外の音を弾いて「unity」を壊すおそれがある、と Fox Strangways（1914）は書きます（p.281）。
 
-## 2026-04-08 first/second batch
+今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D26-musicology.md`、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論を取り上げ、2 つを「強い対応」としています。報告の芯の「期待→誤差→再評価の創造的ループ」と、即興の「誤差が修正対象ではなく次の創造の入力になる」は、原典でなく、退避版と調べた跡（phase6・phase7）から来ていました。phase6 は、この語を欠損駆動思考の旧い定義（「棄却される誤差を問いとして拾う」）と直接つないでいて、報告はつなぎの語だけを消して写しています。報告の節の題「ソナタ形式の弁証法的構造」は、Hepokoski（2010）自身が、Dahlhaus と Schmalfeldt の「dialectical, Hegelian/Adornian」な読みと区別して、自分の Sonata Theory を「dialogic form」と呼んでいるのと食い違います。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
-- raw-confirmed: 0件
-- blocked-access:
-  `Mehr et al. (2019)` は Science official PDF route が Cloudflare challenge 403 HTML、Harvard Scholar mirror file route も 403 HTML に着地し raw 未取得。manual/browser 再試行余地あり
-  `Savage et al. (2015)` は PNAS official PDF route が Cloudflare challenge 403 HTML、PMC mirror PDF route も HTML interstitial に着地し raw 未取得。manual/browser 再試行余地あり
-- citation-only: 8件。archive refs / ref-check 起点の first-pass source rows
-- manual/browser 余地:
-  blocked-access source は CLI challenge / login redirect / HTML landing の可能性を残すため、notes を維持する
-## 2026-06-13 理論系ギャップ是正（cs#245 follow-up）
+11 の論のうち、提唱者か同じ論の著者の本文に当たれたのは 7 つです（ITPRA・ソナタ形式・グルーヴ・聴覚景分析・歌の普遍性・ラーガ・協和と不協和）。期待理論と即興は、提唱者の本（Meyer 1956・Pressing 1988）を開けず、同じ論を確かめた実験の論文（Egermann ら 2013・Limb & Braun 2008）を本文で読みました。Tonal Pitch Space と生態学的音楽知覚は、書籍と有料の論文だけで、本文に当たれませんでした。協和と不協和（Helmholtz 1895）は、台帳の似た論文の行から論として足しました。
 
-- cs#245 C-1 網羅性分析は D26 を「全空白(CRITICAL)」と記載したが、これは測定バグ（`raw-confirmed=0` を「全件空白」と誤認）。実測は url-verified 10件・source-note 8本で、神経科学・実証系のカバレッジは十分。
-- 真のギャップは **理論・美学系の薄さ**（Meyer 1956 / Huron 2006 は citation-only/blocked、Lerdahl & Jackendoff 1983 / Hanslick は不在）。
-- 是正: **Hanslick『The Beautiful in Music』(1854/1891 Cohen 英訳)** を public domain OA で取得し `url-verified` 登録、source-note `D26-S21_hanslick-1891.md` を生成。音楽美学の自律的形式論（tönend bewegte Formen = 創造的精神の直接的産物）を Stage 2-4 アンカーとして追加。
+History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D26-musicology.md) にあります。退避版の判定（Accept・CA など）は、今の照合の状態の根拠にしていません。
 
-## History
+## 一面の表
 
-- スナップショット: [`evidence/archive/pre-rerun-20260407/evidence/evidence-D26-musicology.md`](archive/pre-rerun-20260407/evidence/evidence-D26-musicology.md)
-- 退避日: 2026-04-07
-- 理由: 原典未入手・本文未確認・LLM 補完混入の可能性を切り分けずに維持しないため
+照合の状態は `docs/rules/sources.md` §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。「未照合」の行の対立・衝突・統合は、報告の言い分でなく、原典で確かめられたことだけを書くので、空けています。各行の「対立」「衝突」は原典の構造で、それを対立・衝突・統合と呼ぶのは Claude の読み替えです。どの行も、聴き手の過程か、作品の構造か、演奏者の過程かを、論の微細さの欄に書き添えました。
 
-## 次の作業
+| 論 | 対立 | 衝突 | 統合／新たな安定、または統合に至らずにどう終わったか | 論の微細さ | 照合の状態 |
+|---|---|---|---|---|---|
+| 1. 期待・阻害・遅延（Meyer 1956。Egermann ら 2013） | 様式から学んだ傾向（次はこう来るはず）と、それを妨げる出来事 | 傾向が妨げられると情動が生まれる（Dewey の葛藤説から）。ライブの演奏会では、情報量の高い音で皮膚の電気反応が上がり、心拍が下がる | 予期しない出来事のあと、聴き手はそれを様式の中に収めようとする（報告による。原典は未照合）。至らない形として、期待がはっきり立ってそのとおり満たされると情動は生まれない（banal）。様式を知らないと期待そのものが立たない | 一つの音・一つの終止から、一曲の聴取まで。聴き手の過程 | 本文照合済（Egermann ら 2013。著者の研究室の頁）・二次資料のみ（Huron & Margulis 2010 による Meyer の要約）・未照合（Meyer 1956・1957） |
+| 2. ITPRA（Huron 2006。Huron & Margulis 2010） | 速く粗い反応（最悪を想定する）と、遅く確かな評価 | 二つは「usually contradictory」な目的（できるだけ速く・できるだけ正しく）に応える。評価は反応を抑える | 一つの出来事への感じは五つの応答の混ざり合い。悪い反応のあとに良い評価が来ると、良い感じが強まる（対照的情動価）。至らない形として、慣れても様式からの驚きは消えきらない（Bharucha の区別） | 出来事の前後の数百ミリ秒から数秒。聴き手の過程 | 本文照合済（Huron & Margulis 2010。著者の研究室のサイトの校正刷り、Wayback の記録）・未照合（Huron 2006 の書籍） |
+| 3. 即興の情報処理（Pressing 1988。Limb & Braun 2008） | 自分を見張る働き（外側の前頭前野）と、内から湧く演奏（内側の前頭前野） | 即興では、見張りの働きが広く下がり、内側の働きが上がる。見張りと集中が自発性を妨げることがある、と著者は他分野の例を引く | 覚えた型の演奏と比べた差として、自発の演奏が立ち上がる（実験の対照）。Pressing の七つの段の循環と「誤差を次の創造の入力にする」は、原典で確かめていない | 一人の演奏者の数十秒。演奏者の過程 | 未照合（Pressing 1988 の章・Johnson-Laird 2002）・本文照合済（Limb & Braun 2008。関わる実験） |
+| 4. ソナタ形式（Rosen 1988・Hepokoski & Darcy 2006。Hepokoski 2010） | 時代の型（主題の区域・推移などの規範）と、作曲家の一回ごとの選択 | 作曲家の選択は、規範とそうでない選択肢との「tense dialogue」に入る。規範に逆らう形（deformation）もある | 型は固い鋳型でなく、柔らかい規範の空間（action-space）として残り、選択はその上に重なる。Dahlhaus は型を「thwarts and negates」する弁証法の過程と読み、Hepokoski はその読みを退けずに補う形で dialogic form を置く。至らない形（閉じない提示部・解決しない再現部）は、原典で確かめていない | 一楽章の数分から、様式の数十年。作品の構造と、作曲家の過程 | 本文照合済（Hepokoski 2010。Music Theory Online、Wayback の記録）・未照合（Rosen 1988・Hepokoski & Darcy 2006 の書籍、Hepokoski 2001・2002 の論文） |
+| 5. グルーヴ（Witek ら 2014・Vuust & Witek 2014。Matthews ら 2019） | 拍の予測（拍子）と、リズムのずれ（シンコペーション） | ずれが予測誤差を生む。ずれが多すぎると、拍子の予測が崩れる | 中くらいのずれで、動きたい気持ちと快が最も高い（逆 U 字）。至らない形として、ずれが少ないと予測誤差がほとんど無く何も起きない、多いと予測の型そのものが崩れる。繰り返しで驚きが減るはずなのに効果が残る、という難しさを著者は書く | 数秒のドラムの一節。聴き手の評定 | 本文照合済（Witek ら 2014・Vuust & Witek 2014・Matthews ら 2019。いずれも CC BY）・未照合（Madison 2006・Janata ら 2012・Keil 1987） |
+| 6. 聴覚景分析（Bregman 1990。Bregman & Campbell 1971・Bregman 2008・Pressnitzer & Hupé 2006） | 音を前後でつなぐまとまり方と、同時に重ねて一つにするまとまり方。手がかりどうし | 二つのまとまり方は競り合い、手がかりは「vote」するように互いを強めたり競ったりする | 今の聞こえ方を、反対の証拠がたまるまで保つ。至らない形として、別の流れに分かれた音の順序は聞き取れない。流れが一つか二つかの聞こえ方は、意図があっても入れ替わり続け、最初の一回のあとは長さに傾向が出ない | 数百ミリ秒の音の列から数十秒。聴き手の知覚の過程 | 本文照合済（Bregman & Campbell 1971・Bregman 2008。著者の McGill の頁の写し、Wayback の記録。Pressnitzer & Hupé 2006。HAL の著者稿）・未照合（Bregman 1990 の書籍・van Noorden 1975） |
+| 7. 歌の普遍性と多様性（Mehr ら 2019・Savage ら 2015） | どの社会にもあることと、社会の内と間の違い。単調と混沌 | 民族誌では、社会の内の違いが、社会の間の違いの六倍ほど。旋律とリズムは、単調と混沌の間で釣り合う | 歌はどの社会にもあるが、決まった生物の反応ではない（Mehr ら）。絶対の普遍は無く、統計の普遍が多くある（Savage ら）。至らない形として、普遍と予想された八つの特徴は基準に届かなかった。方法への批判（社会どうしの独立・「普遍」の定義）が査読の公開版に残る | 60 の社会・118 の録音・304 の録音。研究の手続きでなく、歌そのものについての論 | 本文照合済（Mehr ら 2019。PMC の著者稿の HTML。Savage ら 2015。PMC の HTML。Savage の査読の公開版。PsyArXiv） |
+| 8. Tonal Pitch Space（Lerdahl 2001） | 未照合 | 未照合 | 未照合 | 一つの和音から調の間の距離まで（報告による） | 未照合（書籍と有料の論文） |
+| 9. ラーガの段階（アーラープ・ジョール・ジャーラー） | 拍を立てない美の決まりと、拍を刻もうとする体の傾き。主音の持続音と、ラーガの核の音（アンシャ） | アーラープは拍を持たないとされるが、聴き手は規則的に拍を打つ。著者らは、拍の無さを、体の規則性を隠すか越える美の要請と読む | アーラープで核の音と持続音の関係をはっきりさせ、そのあと曲の本体に入る（Fox Strangways）。至らない形として、アーラープを欠くと、聴き手は調の中心を知らずに旋律が「aimless」になり、演奏者はラーガの外の音を弾いて「unity」を壊しうる | 一つの演奏の数十分。演奏者と聴き手の過程 | 本文照合済（Fox Strangways 1914。パブリックドメイン。OCR の文字で読んだ。Will ら 2015。CC BY）・未照合（Widdess 2011・Clayton 2000・Powers & Widdess 2001） |
+| 10. 生態学的音楽知覚（Clarke 2005） | 未照合 | 未照合 | 未照合 | 聴き手と環境（報告による） | 未照合（書籍。Windsor & de Bézenac 2012 は機関リポジトリで公開されていない） |
+| 11. 協和と不協和（Helmholtz 1895。似た論文から足した論） | 同時に鳴る二つの音（とその倍音） | 近い高さの音はうなりを生み、速いうなりは神経を途切れ途切れに刺激して、粗さとして感じられる | 協和は途切れない感覚、不協和は途切れる感覚。協和では二つの音が「flow on quietly side by side」、不協和では互いを脈に切る。とても遅いうなりは粗さにならず、毎秒 30〜40 回で最も鋭い | 一つの和音の数十ミリ秒。音と耳の生理 | 本文照合済（訳）（Ellis 訳、第 3 版 1895。パブリックドメイン。OCR の文字で読んだ） |
 
-- 原典アクセス状態を `raw-confirmed` / `citation-only` / `blocked-access` / `not-yet-reviewed` で棚卸しする
-- `knowledge/raw/README.md` の manifest に候補原典を記録する
-- 再調査後に、このファイルへ history 参照つきで新しい本文を戻す
+ここまでで見えたことを、見立てとして書きます。本文で確かめた論の多くは、二つの働きが同じ時に働いて競り合う形を書いていて、片方だけでは何も起きないか、型が崩れるか、という両端を論の中に置いていました（期待の banal と不確かさ、グルーヴの逆 U 字の両端、流れの行き来、うなりの速さ）。報告はこれらを「縁」の「どちらにも収束しない緊張状態」とまとめていますが、原典が書く分かれ目（中くらいのずれ、反対の証拠がたまるまで保つ、遅すぎるうなり）は、統合に至る形と至らない形の境目として読めるかもしれません。どの段に当たるかは保留にします。
+
+## 論ごとの節
+
+### 1. 期待・阻害・遅延（Meyer）
+
+**要旨**（Huron & Margulis 2010 が Meyer 1956 をまとめた所）：Meyer は、Dewey の葛藤説（MacCurdy が直したもの）から、傾向が妨げられたときに情動が生まれると考えた。様式から学んだ規範のもとで、ある出来事は別の出来事を含意し、そこへ向かう傾向を生む。その傾向が妨げられると情動が生まれる。偽終止で主和音への解決が拒まれる例、ロンドで主題の戻りが遅れて緊張が生まれる例が挙げられる。
+
+**一次情報**：
+
+- Meyer, L. B. (1956). *Emotion and Meaning in Music*. University of Chicago Press。manifest D26-S04（blocked-access）。Internet Archive の写しは貸出の形（emotionmeaningin0000meye ほか）で、読んでいない。
+- Meyer, L. B. (1957). Meaning in music and information theory. *Journal of Aesthetics and Art Criticism* 15(4), 412–424. DOI 10.2307/427154（Crossref で書誌を確かめた）。JSTOR と Wiley で有料。find-source.sh で OA の写しは見つからなかった。
+- Huron, D. & Margulis, E. H. (2010). Musical expectancy and thrills. In Juslin & Sloboda (Eds.), *Handbook of Music and Emotion* (pp.575–604). Oxford University Press. DOI 10.1093/acprof:oso/9780199230143.003.0021（Crossref で書誌と頁を確かめた）。Ohio State の Huron の研究室のサイトに置かれた校正刷り（http://www.musiccog.ohio-state.edu/home/data/_uploaded/pdf/LabPublications%28DanEdit%29/Huron_Margulis_proofs.pdf ）を Wayback の記録（2017-07-05）で読んだ。PDF の 1 頁目が誌面の p.575 で、頁の下の組版の番号（「Ch-21.indd 575」）で対応を確かめた。誌面の頁は PDF の頁に 574 を足したもの。校正刷りなので、刊行版と文字が違う所があるかもしれない。
+- Egermann, H., Pearce, M. T., Wiggins, G. A. & McAdams, S. (2013). Probabilistic models of expectation violation predict psychophysiological emotional responses to live concert music. *Cognitive, Affective, & Behavioral Neuroscience* 13(3), 533–553. DOI 10.3758/s13415-013-0161-y（Crossref で確かめた）。manifest D26-S05。McGill の研究室の頁の PDF（https://www.mcgill.ca/mpcl/files/mpcl/egermann_2013_cabn.pdf ）は、出版社の「Author's personal copy」（23 頁、誌面の頁番号が無い版）。頁は PDF の頁で控えた。
+
+**照合の状態**：Meyer 1956・1957 は未照合です。Meyer の主張は、Huron & Margulis（2010）の要約で読んだので二次資料のみ（Huron & Margulis 2010）です。Egermann ら（2013）は本文照合済です。
+
+**原典に書いてあること**：
+
+- Huron & Margulis（p.584）：Meyer は「conflict theory of emotions」から、情動は「the inhibition of tendency」から生まれると考えた。タバコを探して見つかる場面と、見つからない場面の比べ方が例。
+- Huron & Margulis（p.585）：Meyer は、期待が拒まれる場合のほかに、不確かさから生まれる「apprehension and anxiety」も挙げる。不確かさは、はっきりした期待が無いこと（なじみのない様式を聴くとき）か、互いに排し合う複数の期待が立つこと。期待がはっきり立って満たされる場合は情動が生まれない既定の場面で、そのような「banal music」はまれだとされる。
+- Huron & Margulis（p.584）：Meyer は、聴き手の反応を、聴き手でなく音楽そのものを調べて論じられるようにした。理想の有能な聴き手を置いたことで、心理の分析の難しさを避けた。
+- Egermann ら（PDF p.3 の要旨）：50 人の聴き手のライブのフルートの演奏会で、情報量の高い音、聴き手の予期しなかったという評定、情動の反応（主観の覚醒と自律神経の働き）の関係が予測どおり出た。
+- Egermann ら（PDF p.19）：とても予期しない区間では、覚醒の評定と皮膚の電気反応が上がり、心拍は下がった。とても予期した区間でも皮膚の電気反応は上がった。表情筋の筋電図には、どの分析でも反応が出なかった。結果は「corroborate parts of the theory proposed by Huron (2006)」。
+- Egermann ら（PDF p.20）：演奏会の場なので、参加者の振る舞いを統制しきれない。区間どうしが、予期の度合い以外の演奏の表現でも違うかもしれない。
+
+**対立・衝突・統合の読み**：Meyer の論は、Huron & Margulis の要約では、傾向とそれを妨げるものの「conflict」を情動の源に置いていて、衝突が欠かせない形になっています（二次資料による）。原典に書かれた至らない形は二つで、期待が満たされるだけで何も起きない形（banal）と、期待が立たない形（様式を知らない聴き手）です。互いに排し合う期待が並ぶ形は、Meyer では不確かさとして情動を生む側に置かれています。報告が縁に当てる「代替的継続可能性の並立」は、この不確かさの記述に近いかもしれませんが、Meyer 1956 の本文で確かめていません。Egermann らは、期待の違反が生理の反応と関わることを示しましたが、確かめたのは理論の一部で、表情には出なかったと書いています（研究の一線）。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 94 行「構造対応が最も直接的な理論」、ja 84 行「最も堅い接続点」、ja 231 行「一次文献がプロセスの段階性を明示しており、5段階との全段階対応が堅く成立」 | 言い過ぎ | 中 | Meyer 1956 は読まれていない（台帳 D26-S04 は blocked-access）。DR の「最強候補（🔴）」と退避版の Accept 🔴 から来ている。どの段に当たるかの判定は保留 |
+| ja 100 行「Meyer自身が一次文献の中で明示しており…縁の定義…と直接合致」 | 未判定 | 中 | 「alternative continuations」の語は Meyer 1956 で確かめていない。DR 101 行前後の「遅延の瞬間に代替的継続可能性が立ち上がる」が出どころ |
+| ja 96 行 Egermann et al. (2013)「ライブ演奏実験において期待違反と生理反応（皮膚電気反応・心拍数）の対応を実験的に確認」 | 一致 | ― | PDF p.3・p.19 と合う。ただし筋電図には反応が無く、予期した区間でも皮膚の電気反応が上がった（抜けとして下の行） |
+| ja 96〜100 行（至らない形を書いていない） | 抜け | 中 | Meyer は、期待が満たされるだけの banal な場合と、期待が立たない場合を書いている（Huron & Margulis p.585 の要約）。報告は阻害→解決の一本の流れだけを書く |
+| ja 96 行「聴取者は経験を既存の信念体系に統合します」 | 未判定 | 低 | DR の「信念体系の中へ"急速に適合させようとする"」が出どころ。Meyer 1956 で確かめていない |
+
+### 2. ITPRA（Huron）
+
+**要旨**（Huron & Margulis 2010、pp.587–589）：未来の出来事への応答を、Imagination・Tension・Prediction・Reaction・Appraisal の五つに分ける。前の二つは出来事の前、後の三つは出来事の後に働く。予測が当たると良い感じ、外れると悪い感じが生まれる。反応は速く最悪を想定し、評価は遅く状況を確かめる。
+
+**一次情報**：
+
+- Huron, D. (2006). *Sweet Anticipation: Music and the Psychology of Expectation*. MIT Press. DOI 10.7551/mitpress/6575.001.0001。manifest D26-S06（blocked-access）。MIT Press Direct に OA の版は見つからなかった。Internet Archive の写しは貸出の形。Huron の研究室の二つのドメイン（musiccog.ohio-state.edu・csml.som.ohio-state.edu）の Wayback の PDF の一覧に、書籍の章は無かった。
+- Huron & Margulis (2010)。上の節と同じ確かめ先。著者の一人が書いた ITPRA の説明として読んだ。
+
+**照合の状態**：Huron & Margulis（2010）は本文照合済です（著者の研究室のサイトの写し、Wayback の記録）。Huron 2006 は未照合（書籍）です。
+
+**原典に書いてあること**：
+
+- p.588：五つの応答は、出来事の前と後に分けられる。前では、考えられる結果を想像して感じを先に味わい（I）、それとは別に、出来事が近づくと覚醒と注意が調えられる（T）。
+- pp.588–589：後では三つの働きが始まる。予測の正しさが評価され、当たれば良い感じ、外れれば悪い感じになる（P）。速い反応（驚愕の反射など）は守りのためで、最悪を想定するので多くは過剰な反応になる（R）。評価は社会や状況を考えた遅い判断で、皮質から起きるが「not necessarily conscious」。評価は反応を抑えることが多い（A）。
+- p.589：速い反応と遅い反応は「two usually contradictory goals」、つまりできるだけ速く応じることと、できるだけ正しく判断することを体に表している。
+- p.589：一つの音の出来事への感じは、五つの応答の混ざり合いで、多くは良い感じと悪い感じが混ざる。
+- p.598：対照的情動価は、悪い感じのあとに良い感じが来ると良い感じが強まる、という形。驚かされたパーティーで、最初の恐れが半秒ほどで喜びに変わる例。反応（R）と評価（A）の対比として書かれる。
+- p.580・p.590：Bharucha の区別。様式一般の期待（schematic）と、その曲の期待（veridical）は並んで働く。曲を知っていても偽終止は偽終止に聞こえる。慣れは驚きを弱めるが、様式からの驚きを消しきらない。
+
+**対立・衝突・統合の読み**：ITPRA の芯には、速さと正しさという二つの目的の食い違いがあり、評価が反応を抑えるという形で二つがぶつかっています（原典の構造）。対照的情動価は、悪い反応を通ってから良い評価に至ることで、良い感じが強まる形で、悪いものが過程の中に入っています（Claude の読み替え）。至らない形として、評価が反応を抑えきれない形は、この章には書かれていません。慣れの記述は、驚きが消えずに残ることを書いています。五つの応答が互いに独立かどうかは、章では「Independent of the emotions evoked by imagining outcomes」と I と T の間でだけ書かれています（研究の一線。書籍で確かめていない）。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 106 行「Appraisal（事後の意識的再評価）」、ja 110 行「意識的再評価と信念体系への統合」 | 取り違え | 中 | 章は評価を「not necessarily conscious」と書く（p.589）。退避版 186 行から来ている |
+| ja 106 行「対照的情動価…事前のTension応答の負の情動が解決時に正の情動に転じる」 | 取り違え | 中 | 章は、速い反応（R）の悪い感じと遅い評価（A）の良い感じの対比として書く（p.598）。Huron 2006 での書き方は確かめていない。出どころは退避版 188 行 |
+| ja 106 行「5つの機能的に独立した応答系」 | 未判定 | 低 | 章は「five components」と書き、独立は I と T の間でだけ書く（p.588）。書籍で確かめていない |
+| ja 108 行「各応答系の機能的内容…が5段階の各段階の定義と個別に合致」、ja 77 行「強い対応」 | 未判定 | 中 | 5段階の定義が決まってから。数が五つで同じことは対応の根拠に数えない（README「規約で決めたこと」）。章が書く芯は、五つの並びより、反応と評価の食い違い |
+| ja 106〜110 行（速さと正しさの食い違い、慣れで驚きが消えきらないこと） | 抜け | 中 | 原典の芯の兼ね合い（p.589）と、慣れの扱い（p.590）を書いていない |
+
+### 3. 即興の情報処理（Pressing）
+
+**要旨**（報告による）：Pressing は即興を、出来事の生成・感覚の見張り・認知の表象・評価・次の行為の計画・次の行為・フィードバックの循環として書いた。この要旨は原典で確かめていません。
+
+**一次情報**：
+
+- Pressing, J. (1988). Improvisation: methods and models. In J. Sloboda (Ed.), *Generative Processes in Music* (pp.129–178). Oxford University Press。再刊の DOI 10.1093/acprof:oso/9780198508465.003.0007（Crossref は 2001 年の Oxford の電子版として返す）。manifest D26-S01（blocked-access）。OA の写しは見つからなかった。
+- Johnson-Laird, P. N. (2002). How jazz musicians improvise. *Music Perception* 19(3), 415–442. DOI 10.1525/mp.2002.19.3.415。有料。著者の Princeton のサイトの Wayback の一覧にも見つからなかった。
+- Limb, C. J. & Braun, A. R. (2008). Neural substrates of spontaneous musical performance: An fMRI study of jazz improvisation. *PLoS ONE* 3(2), e1679. DOI 10.1371/journal.pone.0001679。manifest D26-S12。PLOS の PDF（9 頁。米国政府の職員の研究で、パブリックドメインの表示）。
+- 精読ノート：`cs/knowledge/source-notes/D26/D26-S12_limb-2008.md`。
+
+**照合の状態**：Pressing の章と Johnson-Laird（2002）は未照合です。Limb & Braun（2008）は本文照合済で、即興の脳の働きの実験です。Pressing のモデルを確かめた論文ではありません。
+
+**原典に書いてあること**（Limb & Braun）：
+
+- p.1（要旨）・p.2（方法）：プロのジャズのピアニスト 6 人で、覚えた型の演奏と比べ、即興では背外側前頭前野と外側眼窩野が広く働きを下げ、内側前頭前野（前頭極）が働きを上げた。自分を見張り、意識して演奏を制御する中心の働きが無いところで、内から動機づけられた振る舞いが広がると著者は読む。
+- p.4：外側の働きは自分の見張りと集中した注意を支え、その働きが下がると、焦点の緩い注意が、計画しない連想や突然の気づきを許すのかもしれない。他の分野では、集中と意識した見張りが「can inhibit spontaneity and impair performance」と示されている。
+
+**対立・衝突・統合の読み**：Limb & Braun が書くのは、見張る働きと内から湧く働きが逆向きに動く形で、見張りが強すぎると自発性が妨げられるという、片方が他方を抑える関係です（原典の読み）。報告の「誤差が修正対象ではなく次の創造の入力になる」は、この論文にも書かれていません。即興が破綻する形や、型の繰り返しに落ちる形は、読めた原典には書かれていません。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 114 行「誤差が修正対象ではなく次の創造の入力になる点が即興の本質です」、en 81 行「error is taken up and incorporated」、pres 72 行 | 付け足し | 高 | Pressing の章で確かめていない。出どころは退避版 33 行の [P]。phase6 18 行はこの語を欠損駆動思考の旧い定義（「棄却される誤差を問いとして拾う態度」）と直接つなぎ、「即興演奏は欠損駆動思考の身体的実践」と書く。報告はつなぎの語を消して写している |
+| ja 114 行「7ステップ循環」、ja 73 行「全5段階」 | 未判定 | 中 | Pressing の章で確かめていない。DR と退避版 32 行から来ている |
+| ja 116 行「束から場への循環的回帰がPressingモデルに内在している点は…循環的であることの傍証」 | 言い過ぎ | 中 | 読んでいない原典を傍証に数えている。phase6 10 行の「強い傍証」から来ている |
+| en 59 行 Pressing「Strong」、en 64 行 グルーヴの提唱者に「Pressing (2002)」 | 未判定（版の食い違い） | 低 | ja は「部分的な対応」。Pressing (2002) の書誌は確かめていない |
+
+### 4. ソナタ形式
+
+**要旨**（Hepokoski 2010）：Sonata Theory は、ソナタ形式を、時代の型の規範（主題の区域・推移などの「action-space」）と、作曲家の一回ごとの選択との対話として読む（dialogic form）。Dahlhaus が『テンペスト』の冒頭に見た、型を退ける「過程としての形式」の読みを、Hepokoski は誇張と見て、補う読みを置く。
+
+**一次情報**：
+
+- Rosen, C. (1988). *Sonata Forms* (Revised ed.). Norton。manifest D26-S02（blocked-access）。
+- Hepokoski, J. & Darcy, W. (2006). *Elements of Sonata Theory: Norms, Types, and Deformations in the Late-Eighteenth-Century Sonata*. Oxford University Press。manifest D26-S03（blocked-access）。
+- Hepokoski, J. & Darcy, W. (1997). The medial caesura and its role in the eighteenth-century sonata exposition. *Music Theory Spectrum* 19(2), 115–154. DOI 10.2307/745751。Hepokoski, J. (2001). Back and forth from Egmont: Beethoven, Mozart, and the nonresolving recapitulation. *19th-Century Music* 25(2–3), 127–154. DOI 10.1525/ncm.2001.25.2-3.127。Hepokoski, J. (2002). Beyond the sonata principle. *JAMS* 55(1), 91–154. DOI 10.1525/jams.2002.55.1.91。三つとも Crossref で書誌を確かめたが、有料で OA の写しは見つからなかった（題は Crossref の返事で確かめていない部分がある）。
+- Hepokoski, J. (2010). Formal process, Sonata Theory, and the first movement of Beethoven's "Tempest" Sonata. *Music Theory Online* 16(2). DOI 10.30535/mto.16.2.7（Crossref で確かめた）。Society for Music Theory の OA の誌（https://mtosmt.org/issues/mto.10.16.2/mto.10.16.2.hepokoski.html ）。2026-11-09 は mtosmt.org への接続が時間切れになったので、Wayback の記録（2026-07-27）で読んだ。誌面に頁が無いので、段落の番号 [1]〜[20] で控えた。
+
+**照合の状態**：Hepokoski（2010）は本文照合済です（学会の OA の誌、Wayback の記録）。Rosen 1988 と Hepokoski & Darcy 2006 は未照合（書籍）、2001・2002・1997 の論文は未照合です。
+
+**原典に書いてあること**（Hepokoski 2010）：
+
+- [2]：Schmalfeldt（1995）は「the dialectical, Hegelian/Adornian argument」を進めた。Hepokoski は、Dahlhaus の「process」の議論に、Sonata Theory と「its grounding principle of dialogic form」から論じる。
+- [3]：Dahlhaus にとって『テンペスト』の冒頭は「a dialectical process」で、ソナタの受け継いだ範疇を「thwarts and negates」するものだった。Hepokoski は「a large claim indeed」と書く。
+- [17]：冒頭の 1〜21 小節は、次の action-space である推移へ向かう大きな弱起でもある。Dahlhaus の「becoming」の議論は誇張だとする。
+- [18]：作品の中の連続した生成の印象そのものは否定しない。争うのは、それが『テンペスト』で新しく現れたという主張と、生成の見方が型を見る必要を消すという主張。
+- [19]：生成の見方と dialogic な見方は対立しない。区域は「not as rigid templates but as relatively open spaces controlled by flexible guidelines and norms」として背後に残り、作曲家はその上に主題の変形の網を重ねた。
+- [20]：dialogic form は、作曲家の選択を、規範の選択肢とそうでない選択肢との「tense dialogue」に入る創造の決定として読む。
+
+**対立・衝突・統合の読み**：Hepokoski が書く兼ね合いは、時代の規範と個々の作品の選択で、選択は規範との緊張した対話に入り、規範に逆らう形（deformation）も対話の一つとして読まれます（原典の構造）。Dahlhaus の読みでは型が退けられて新しい形式が生まれ、Hepokoski の読みでは型が背後に残ったまま選択が重なります。片方を退けて新しいものが出る形と、区別を残したまま重なる形の二つが、研究者の間の論争として並んでいる、と Claude は読みます（研究の一線）。報告が縁に当てる展開部の「調性的緊張が最大化」と、再現部の「統合」は、読めた原典で確かめていません。閉じない提示部・解決しない再現部の至らない形は、2001・2002 の論文と書籍で扱われているはずですが、読めていません。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 74 行・ja 120 行の題「ソナタ形式の弁証法的構造」を Rosen と Hepokoski & Darcy に帰す、en 60 行「The dialectical structure」 | 帰属違い | 高 | Hepokoski（2010 [2]・[3]）は、弁証法の読みを Dahlhaus と Schmalfeldt のものとし、自分の Sonata Theory を dialogic form と呼んで区別する。Rosen 1988 での語は確かめていない。「弁証法」の語は DR と退避版の題から来ている |
+| ja 122 行「Rosen (1988) は…『大規模な不協和』として捉え、再現部で解決されるべき構造的問題」 | 未判定 | 中 | Rosen 1988 を読めていない。DR 31 行の [P] がそのまま写っている |
+| ja 122 行 Hepokoski & Darcy (2006)「ソナタ形式を固定テンプレートではなく動的な『行為空間』（action space）として記述」 | 一致 | ― | Hepokoski 2010 [19] と合う。ただし action-space は区域ごとの語で、形式の全体の語ではない（書籍は未照合） |
+| ja 122 行「展開部では…調性的緊張が最大化されます」、ja 126 行「再現部での主調回収・統合が渦」 | 未判定 | 中 | 読めた原典に無い。至らない形（閉じない提示部・解決しない再現部）を報告は書いていない（抜けかどうかは書籍と 2001 年の論文を読んでから） |
+
+### 5. グルーヴ
+
+**要旨**（Witek ら 2014 の要旨）：ファンクのドラムの一節で、シンコペーションの度合いを変え、動きたい気持ちと快の評定を集めた。中くらいのシンコペーションで、動きたい気持ちと快が最も高く、シンコペーションと評定の間に逆 U 字の関係があった。
+
+**一次情報**：
+
+- Witek, M. A. G., Clarke, E. F., Wallentin, M., Kringelbach, M. L. & Vuust, P. (2014). Syncopation, body-movement and pleasure in groove music. *PLoS ONE* 9(4), e94446. DOI 10.1371/journal.pone.0094446。PLOS の PDF（12 頁、CC BY）。台帳には D26-S10 の備考の「OA代替」としてだけある。
+- Vuust, P. & Witek, M. A. G. (2014). Rhythmic complexity and predictive coding: a novel approach to modeling rhythm and meter perception in music. *Frontiers in Psychology* 5, 1111. DOI 10.3389/fpsyg.2014.01111。Frontiers の PDF（14 頁、CC BY）。
+- Matthews, T. E., Witek, M. A. G., Heggli, O. A., Penhune, V. B. & Vuust, P. (2019). The sensation of groove is affected by the interaction of rhythmic and harmonic complexity. *PLoS ONE* 14(1), e0204539. DOI 10.1371/journal.pone.0204539（Crossref で確かめた）。PLOS の PDF（17 頁）。
+- Madison, G. (2006). Experiencing groove induced by music. *Music Perception* 24(2), 201–208. DOI 10.1525/mp.2006.24.2.201。manifest D26-S10（blocked-access）。Janata, P., Tomic, S. T. & Haberman, J. M. (2012). *J. Exp. Psychol. Gen.* 141(1), 54–75. DOI 10.1037/a0024208。Zenodo の写しは上げた人が分からず、取っていない。Keil (1987). *Cultural Anthropology* 2(3). DOI 10.1525/can.1987.2.3.02a00010。
+- 集団の同期：Ellamil, M. ら (2016). One in the dance. *PLOS ONE* 11(10), e0164783. DOI 10.1371/journal.pone.0164783。manifest D26-S18。
+
+**照合の状態**：Witek ら 2014・Vuust & Witek 2014・Matthews ら 2019・Ellamil ら 2016 は本文照合済です。Madison 2006・Janata ら 2012・Keil 1987 は未照合です。
+
+**原典に書いてあること**：
+
+- Witek ら p.1：ウェブの調査で、評定を集めた。体の動きそのものは測っていない。
+- Witek ら p.7：シンコペーションが増えると評定は上がるが、ある点を越えると下がる。シンコペーションの多すぎる一節は、拍に合わせることを妨げ、動きたい気持ちを抑えるのかもしれない。
+- Witek ら p.8：シンコペーションが少ないと、拍の期待はほぼ全部満たされ、違反するものが少ない。多いと、複雑さが拍の知覚を乱すので、違反される期待そのものが弱い。中くらいで、拍が感じられるだけの予測しやすさと、期待が破られるだけの複雑さが釣り合う。期待の説明の難しさとして、繰り返しで予期しなさと快が減るはず、という点を挙げる。
+- Vuust & Witek p.9：シンコペーションが少ないと、入力と拍子の予測モデルの食い違いが小さく、予測誤差はほとんど上がらず、効果は弱い。多いと、入力が拍子の枠から外れすぎて「the predicted model breaks down」。中くらいで、入力とモデルは「incongruent, but not incompatible」。逆 U 字は Wundt 以来の音楽心理学でなじみの関数だと書く。
+- Matthews ら p.1（要旨）：リズムの複雑さは、快と動きたい気持ちの評定と逆 U 字の関係を示した。同じ研究の集まり（Witek・Vuust を含む）による。
+- Ellamil ら p.1（要旨）：クラブでの集団の動きの同期は、歩く速さに近い拍と、よく聴かれた曲で強かった。同期は、動きのなじみと曲のなじみに制約されると著者は書く。
+
+**対立・衝突・統合の読み**：グルーヴの原典は、拍の予測とずれの兼ね合いを、聴き手の評定の単位で書いていて、両端に至らない形を置いています。ずれが少ない側は何も起きない形（片方の勝利が続いて場に留まる、と Claude は読む）、多い側は予測のモデルそのものが崩れる形です。中くらいの範囲が分かれ目で、入力とモデルが食い違うが両立しない所までは行かない、と Vuust & Witek は書きます（研究の一線。追試は同じ研究の集まりの Matthews ら 2019 で、独立の追試は確かめていません）。報告が束に当てる「集団的同期」は、Witek らは測っておらず、Ellamil らは同期がなじみに支えられると書いています。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 130 行「中程度のシンコペーション（リズム的偏差）が最も強い身体的反応を引き起こすことを実験的に確認」 | 取り違え | 中 | Witek らはウェブの評定（動きたい気持ちと快）を集めた（p.1）。体の反応は測っていない |
+| ja 130 行「単純すぎるリズムは退屈を、複雑すぎるリズムは混乱を生みます」 | 付け足し | 低 | 原典の語は、少ないと違反するものが少ない、多いと拍の知覚が乱れる（Witek p.8）、予測モデルが崩れる（Vuust & Witek p.9）。「退屈」は原典に無い |
+| ja 134 行「集団的同期が束に対応…楽曲が終われば解体する点で…時間スケールが異なります」 | 付け足し | 中 | Witek らは集団の同期を扱っていない。両端の至らない形を書かず、終わり方を「時間スケールが異なる」と外に置いている |
+| ja 130〜134 行（両端の形と、繰り返しの難しさ） | 抜け | 中 | 原典の分かれ目（Vuust & Witek p.9）と、繰り返しで驚きが減るはずという難しさ（Witek p.8）を書いていない |
+| ja 78 行「Witek et al. (2014) 他」、en 64 行の提唱者に Madison・Pressing・Janata | 未判定（版の食い違い） | 低 | 提唱者の欄が版で違う |
+
+### 6. 聴覚景分析（Bregman）
+
+**要旨**（Bregman 2008 の著者稿の Synopsis）：環境の中では別々の音の混ざりが、耳には一つの圧力の波として届く。聴き手はそこから別々の音源の信号を取り出す。そのために、学ばずに働く下からのまとまり方（primitive）と、学んだ型（schema）の二つの働きがある。
+
+**一次情報**：
+
+- Bregman, A. S. (1990). *Auditory Scene Analysis*. MIT Press. DOI 10.7551/mitpress/1486.001.0001。Internet Archive の写しは貸出の形（auditorysceneana0000breg）で、読んでいない。
+- Bregman, A. S. & Campbell, J. (1971). Primary auditory stream segregation and perception of order in rapid sequences of tones. *Journal of Experimental Psychology* 89(2), 244–249. DOI 10.1037/h0031163。Bregman の McGill の頁（http://webpages.mcgill.ca/staff/Group2/abregm1/web/pdf/1971_Bregman_Campbell.pdf ）。2026-11-09 はこの頁の置き場が「Web Hosting Unavailable」を返したので、Wayback の記録（2025-08-11）で読んだ。誌面の走査（6 頁）。
+- Bregman, A. S. (2008). Auditory scene analysis. In L. Squire (Ed.), *New Encyclopedia of Neuroscience*. Elsevier。同じ頁の著者稿（2008-New-Encyclopedia-Neuroscience.pdf、21 頁）を Wayback の記録（2025-08-11）で読んだ。頁は著者稿の「Page n of 21」で控えた。刊行版の頁と DOI は確かめていない。
+- Pressnitzer, D. & Hupé, J.-M. (2006). Temporal dynamics of auditory and visual bistability reveal common principles of perceptual organization. *Current Biology* 16(13), 1351–1357. DOI 10.1016/j.cub.2006.05.054（Crossref で確かめた）。Cell の PDF は確認画面の扱い。HAL の著者稿（https://hal.science/hal-00111082v1/document 、27 頁）で読んだ。頁は著者稿の頁で控えた。
+- van Noorden, L. P. A. S. (1975). *Temporal coherence in the perception of tone sequences*（学位論文、TU Eindhoven）。OpenAlex が挙げた DOI 10.6100/ir152538 は、TU/e のリポジトリで別の学位論文（半導体レーザー）に飛んだ。読んでいない。
+
+**照合の状態**：Bregman & Campbell 1971・Bregman 2008・Pressnitzer & Hupé 2006 は本文照合済です（著者の頁と機関リポジトリの写し）。Bregman 1990 と van Noorden 1975 は未照合です。
+
+**原典に書いてあること**：
+
+- Bregman & Campbell p.244（要旨）：速い速さで高い三音と低い三音を回すと、聴き手は「invariably」に音を高さで流れに分け、同じ流れの中の音どうしの型しか知覚できなかった。
+- Bregman 2008 p.4：学ばずに働く下からのまとまり方と、学んだ型の二つ。
+- Bregman 2008 pp.8–9：van Noorden の二つの境（temporal coherence boundary と fission boundary）。一つの流れとして聞き続けようとするのを妨げるのは下からのまとまり方で、二つに分けて聞こうとするのは選んで向ける注意。流れが強く分かれると、旋律もリズムも流れの中の音だけで作られ、どんな型もはっきり知覚されるには一つの流れの音だけで成り立つ必要がある。
+- Bregman 2008 p.10：手がかりはどれも完全には頼れないので、多くの手がかりを互いに強め合わせたり「compete」させたりする。今の解釈を、間違いだという証拠がたまるまで保つ控えめなやり方を取る。はじめは全部の入力を一つの音と仮定し、証拠が増えると別々の音の組み立てが現れる。前後のまとまりと同時のまとまりは「Often they compete」。
+- Pressnitzer & Hupé pp.3・5–8：変わらない刺激で、別の解釈が自然に入れ替わる（双安定）。聴覚の流れでも、解釈は互いに排し合い、長さはばらつき、意図での制御は限られる。最初の一回は長いが、そのあとの長さに長い目の傾向は無い。まとめようと意図すると、まとまった聞こえ方の割合は増えるが、入れ替わりは続く。
+
+**対立・衝突・統合の読み**：聴覚景分析の原典は、まとまり方どうしの競り合いを、知覚の単位で書いています。競り合いは、今の解釈を保つ控えめなやり方で一つの組み立てに落ち着く場合と、双安定のように入れ替わり続けて落ち着かない場合に分かれます（原典の構造）。落ち着かない入れ替わりは、片方が勝ちきらずに波のように行き来する形として並べられる、と Claude は読みます。分かれた流れの間で順序が聞き取れないことは、分かれたことの代わりに失われるものです。報告が渦に当てる「ストリーム分離の結晶化」は、双安定の原典では、結晶化せずに入れ替わりが続くと書かれています。報告の「知覚は能動的構成」という条件は、原典の下からの働きと学んだ型の区別と関わりますが、原典はそれを「創造」と呼んではいません。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 138 行「原始的グルーピング（前注意的・自動的な処理）とスキーマ駆動のグルーピング（学習に基づくトップダウン処理）」 | 一致 | ― | Bregman 2008 p.4 と合う（書籍は未照合） |
+| ja 138 行「双安定状態——同一の音信号が1つのストリームとしても2つのストリームとしても知覚されうる状態」 | 一致 | ― | Pressnitzer & Hupé p.3 と合う。ダッシュの挿入は文体（型 J） |
+| ja 142 行「双安定状態…が縁に、ストリーム分離の結晶化が渦に、知覚的安定性が束」 | 抜け | 中 | 原典は、入れ替わりが意図があっても続き、落ち着かないと書く（pp.5–8）。分かれた流れの間で順序が失われることも書いていない（Bregman & Campbell p.244） |
+| ja 142 行「原始的グルーピング（前注意的な予測と逸脱の検出）が波」、ja 182 行「ミリ秒レベルではASAの原始的グルーピング（前注意的な予測と逸脱の検出）」 | 付け足し | 低 | 読めた原典は、下からのまとまりを予測と逸脱の検出としては書いていない。phase7 10 行から来ている |
+| en 66〜67 行 ASA「Strong」、ja 81 行「部分的な対応」 | 未判定（版の食い違い） | 低 | 版で判定が違う |
+
+### 7. 歌の普遍性と多様性
+
+**要旨**（Mehr ら 2019 の要旨）：世界の社会を代表する民族誌の文と、録音の集まりを作った。音楽は観察したどの社会にもあり、形式性・覚醒・宗教性の三つの次元で変わり、その変わり方は社会の間より社会の内で大きい。歌の音の特徴は、その歌が使われる場面を予測する。調性は広く、おそらく普遍で、旋律とリズムはべき乗の分布に従う。
+
+**一次情報**：
+
+- Mehr, S. A. ら（19 人）(2019). Universality and diversity in human song. *Science* 366(6468), eaax0868. DOI 10.1126/science.aax0868（Crossref で確かめた）。manifest D26-S07。PMC の著者稿（PMC7001657）の記事の頁（HTML）で読んだ。頁が無いので節の名前で控えた。Science の PDF と PMC の PDF は確認画面の扱い。
+- 台帳 D26-S07 の取得先 https://osf.io/gxzfq_v1/download は、Mehr らの論文ではなく、Savage, P. E. (2025 [2019]). Public peer review of "A natural history of song" / "Universality and diversity in human song" (Mehr et al., 2019). PsyArXiv, https://doi.org/10.31234/osf.io/gxzfq だった（OSF の API で題と著者を確かめた。DOI は Crossref で引けなかった）。PDF（8 頁）を本文まで読んだ。
+- Savage, P. E., Brown, S., Sakai, E. & Currie, T. E. (2015). Statistical universals reveal the structures and functions of human music. *PNAS* 112(29), 8987–8992. DOI 10.1073/pnas.1414495112。manifest D26-S08。PMC4517223 の記事の頁（HTML）で読んだ。Europe PMC の REST は 2026-11-09 に 500 を返した（落ちていた）。
+- 精読ノート：`cs/knowledge/source-notes/D26/D26-S07_mehr-2019.md`・`D26-S08_savage-2015.md`。
+
+**照合の状態**：Mehr ら 2019・Savage ら 2015・Savage の査読の公開版は、本文照合済です。
+
+**原典に書いてあること**：
+
+- Mehr ら「Music appears in all measured human societies」：eHRAF の 315 の社会の民族誌のうち 309 に音楽の記述があり、残りの 6 も外の資料で音楽がある。音楽を持つ社会の割合の 95% 信用区間は [0.994, 1]。NHS Ethnography は、60 の社会の歌の演奏の記述 4,709 件。
+- Mehr ら「Reducing the dimensionality…」：三つの潜在の次元が最適で、注釈のばらつきの 26.6% を説明する。
+- Mehr ら「The range of musical behavior is similar across societies」と以下：社会の内のばらつきは社会の間のおよそ六倍（形式性 5.58・覚醒 6.39・宗教性 6.21）。
+- Mehr ら「A new science of music」：音楽を理解する難しさは、普遍と多様を両立させること。音楽はどの社会にもあり、社会の間より内で変わる。決まった生物の反応ではない。旋律とリズムは「balanced between monotony and chaos」。
+- Savage ら（Significance・Abstract）：304 の録音で、絶対の普遍は無いが、九つの地域で一貫する統計の普遍が多くある。個別の特徴 18 と、互いに結びつく特徴 10 の網。
+- Savage ら「Universal Features」：普遍と予想された特徴のうち 8 つ（声の装飾・音節ごとの歌い方・意味の無い音節・膜鳴楽器・体鳴楽器・気鳴楽器・不協和な和声・五音音階）は基準に届かなかった。北インドのアーラープは、等間隔の拍を使わない例として挙げられる（序の終わり）。
+- Savage の査読（p.1・p.3・p.4）：社会どうしが独立でないこと（Galton の問題、自己相関）の扱い、先の比較音楽学の成果との位置づけ、「music」と「universal」の定義が、刊行版でも十分に直されなかった。「universal」は分析ごとに違う意味で使われている。
+
+**対立・衝突・統合の読み**：Mehr らは、歌そのものについて、どこにでもあることと、社会の内で大きく変わることを、同時に成り立つものとして書いていて、旋律とリズムが単調と混沌の間で釣り合うことも書いています（原典の構造）。Savage らの結果は、普遍と予想された特徴が基準に届かない形を含んでいます。報告はこの論を「研究プロセスへの写像」として、研究の手続きの段に当てています。README の「規約で決めたこと」（領域の対象は分野の理論の構造）に照らすと、原典が歌そのものについて書く普遍と多様の兼ね合いで見直すことになります。普遍の主張には方法への批判があり、研究の一線です（Savage の査読）。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 146 行「315社会中309社会で音楽記述」「60社会・4,709件」 | 一致 | ― | Mehr ら（節の名前は上）と合う |
+| ja 146 行「音楽の存在比率はほぼ100%と推定」 | 一致 | ― | 原典は「100% of a large sample」、信用区間 [0.994, 1] |
+| ja 146 行「3次元が歌行動の変動を最もよく説明」 | 一致 | 低 | 原典は三つが最適で、説明するのはばらつきの 26.6%。割合を添えると誤解が少ない |
+| ja 148〜150 行「研究プロセスの順序構造」「知識生成プロセスへの写像」「5段階構造が…メタレベル（研究プロセス）にも現れることの傍証」 | 取り違え | 中 | 原典は研究の手続きを段階の理論として書いていない。領域の対象（分野の理論の構造）と食い違う。出どころは DR の「メタレベル注意」・phase5 68〜71 行・phase6 62 行（「フラクタル性の傍証」） |
+| ja 146〜150 行（普遍と多様の兼ね合い、届かなかった特徴、方法への批判） | 抜け | 中 | 原典の芯（社会の内のばらつきが大きい・単調と混沌の釣り合い）と、Savage らの届かなかった 8 つの特徴、Savage の査読の批判を書いていない |
+| en 62 行 NHS「Strong」、ja 76 行「条件付きの対応」 | 未判定（版の食い違い） | 低 | 版で判定が違う |
+
+### 8. Tonal Pitch Space（Lerdahl）
+
+**要旨**（報告による）：音高・和音・調・地域の層にわたる距離の空間を定め、音楽の緊張を距離の関数として量にするモデル。この要旨は原典で確かめていません。
+
+**一次情報**：
+
+- Lerdahl, F. (2001). *Tonal Pitch Space*. Oxford University Press。台帳に行が無い。
+- Lerdahl, F. (1988). Tonal pitch space. *Music Perception* 5(3), 315–349. DOI 10.2307/40285402。Lerdahl, F. & Krumhansl, C. L. (2007). Modeling tonal tension. *Music Perception* 24(4), 329–366. DOI 10.1525/mp.2007.24.4.329。どちらも Crossref で書誌を確かめたが、有料。Cornell の二つのドメインの Wayback の PDF の一覧に、題の語の合う写しは無かった。Columbia の頁の一覧は、引いたときに Internet Archive が「Temporarily Offline」を返した。
+
+**照合の状態**：未照合（書籍と有料の論文）です。
+
+**対立・衝突・統合の読み**：原典を読めていないので書きません。報告は、TPS を「空間的モデル」と「時間的プロセス」の記述水準の違いで「限定的」としています（ja 158 行）。これは原典の中身ではなく、調べた跡（phase5 97 行・phase6 の「分析生成 vs 存在生成」）の分け方です。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 154 行「音高・和音・調・地域の4層」「同じ距離概念が異なるスケールで再帰的に適用」 | 未判定 | 低 | 原典で確かめていない |
+| ja 156〜158 行「事後的に分析するモデル…プロセス理論ではありません」「直接的な構造対応は限定的」 | 未判定 | 中 | 「分析生成と存在生成」の区別は phase5・phase7（89 行）と退避版 17 行の方法の語で、原典の主張ではない。緊張と解決を扱う論を、記述の水準を理由に外に置いている |
+| en 65 行の提唱者「Lerdahl & Jackendoff (1983)」を足す | 未判定（版の食い違い） | 低 | ja は Lerdahl (2001) だけ |
+
+### 9. ラーガの段階（アーラープ・ジョール・ジャーラー）
+
+**要旨**（Will ら 2015、p.2）：北インドの古典音楽の演奏の、伴奏の無い旋律の部分（アーラープ・ジョール・ジャーラー。まとめてアーラープとも呼ばれる）は、規則の無い時間のアーラープから、より規則的なジョール、速さと強さとリズムの密度の増すジャーラーへと移る。アーラープの主な目的はラーガの旋律の提示で、拍を持たないとする見方が多いが、異論もある。
+
+**一次情報**：
+
+- Fox Strangways, A. H. (1914). *The Music of Hindostan*. Oxford: Clarendon Press。Internet Archive の Universal Digital Library の走査（musicofhindostan000108mbp）の OCR の文字（_djvu.txt）で読んだ。1929 年より前の刊行でパブリックドメイン。頁は OCR の文字に残る誌面の頁の番号で控えた。
+- Will, U., Clayton, M., Wertheim, I., Leante, L. & Berg, E. (2015). Pulse and entrainment to non-isochronous auditory stimuli: The case of North Indian alap. *PLoS ONE* 10(4), e0123247. DOI 10.1371/journal.pone.0123247（Crossref で確かめた）。PLOS の PDF（26 頁、CC BY）。
+- Widdess, R. (2011). Dynamics of melodic discourse in Indian music. In Tenzer & Roeder (Eds.), *Analytical and Cross-Cultural Studies in World Music*. Oxford University Press. DOI 10.1093/acprof:oso/9780195384581.003.0005。SOAS Research Online の刊行前の版（https://eprints.soas.ac.uk/13295/ ）は、2026-11-09 に接続が 502 で切れた（落ちていた）。読んでいない。
+- Napier, J. (2019). Structure and proportion in Hindustani ālāp. *Empirical Musicology Review* 14(1–2), 53–65. DOI 10.18061/emr.v14i1-2.5502。雑誌の頁と UNSW の機関リポジトリの取得先は、どちらも PDF でなく案内の頁を返した。読んでいない。
+- 英語版が挙げる Powers & Widdess (2001, *New Grove*)・Jairazbhoy (1971)・Clayton (2000, *Time in Indian Music*) は書籍で、読んでいない。
+
+**照合の状態**：Fox Strangways（1914）は本文照合済（パブリックドメイン、OCR の文字で読んだ）、Will ら（2015）は本文照合済です。Widdess 2011・Napier 2019・Clayton 2000・Powers & Widdess 2001・Jairazbhoy 1971 は未照合です。
+
+**原典に書いてあること**：
+
+- Fox Strangways p.281：歌の最初の仕事は、アンシャ（ラーガの核の音）と持続音（主音）の関係を確かなものにすることで、それをアーラープ（prelude）がする。ラーガの音は、厳しい拍でなく、息の都合と音にかける仕事の量で決まる「a loose kind of rhythm」で、言葉でなく母音の音節で歌われる。アーラープが無いと、聴き手は曲の一部を調の中心を知らずに聴き、旋律は「an aimless running up and down hill」になる。演奏者は、ラーガの外の音を一つ二つ弾いて「unity」を壊しうる。そのあと歌の本体（北インドではアスターイーなど）の型が続く。
+- Fox Strangways pp.280–281：アンシャは持続音に対して選ばれた音として対照を作り、その対照がそのラーガの統一も生む。統一は、内からの必然でなく「freedom of choice」から来る。
+- Will ら p.2：アーラープは拍を持たないとする見方が多いが、異論がある。拍を持たないことそのものが謎だ、と著者は書く。
+- Will ら p.24：多くのインドの音楽家はアーラープに「there is a pulse」と考える。著者らは、アーラープが拍を持つべきでないという見方を、規則的に体を動かそうとするほぼ避けられない傾きを越えるか隠す「aesthetic imperative」と読み直す。規則性を目立たない層（チカーリーの弦）に移すのが、その一つのやり方。
+- Savage ら 2015（序の終わり）：北インドのアーラープは、等間隔の拍を使わない音楽の例として挙げられる。
+
+**対立・衝突・統合の読み**：読めた原典は、アーラープを、何も分かれていない漂いとしてではなく、二つの兼ね合いで書いています。Fox Strangways は、核の音と持続音の対照をはっきりさせ、その対照が統一を生むと書き、アーラープを欠いた至らない形（旋律があてもなくなり、ラーガの外の音が統一を壊す）も書いています。Will らは、拍を立てない美の決まりと、体の規則的な傾きのぶつかりを、アーラープの芯として読んでいます（研究の一線）。報告の「無拍節の旋法空間を漂う」は、Fox Strangways の「loose kind of rhythm」と、調の中心を確かにする目的とは向きが違う、と Claude は読みます。アーラープ→ジョール→ジャーラー→ガトの並びは、Will らが器楽（チカーリーの弦を持つ楽器）の例で書く並びと合いますが、どの伝統（ドゥルパドの声楽か器楽か）の決まりかを報告は書いていません。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 80 行・ja 162 行 提唱者「インド古典音楽理論」、原典を挙げない | 未判定（版の食い違い） | 中 | en 66・133 行は Powers & Widdess (2001)・Jairazbhoy (1971)・Clayton (2000) を挙げる。ja は一つも挙げない。三つとも読めていない |
+| ja 162 行「アーラープ（無拍節の旋法探索）→ジョール（パルス導入）→ジャーラー（加速）→ガト（楽曲本体）」 | 一致 | 低 | Will ら p.2 のアーラープ・ジョール・ジャーラーの並びと合う（ガトは Will らに無い）。どの伝統かを書いていない |
+| ja 162 行「アーラープでは拍節構造を持たず、旋法の可能性空間を漂う探索的な演奏」 | 言い過ぎ | 中 | 拍を持たないとするのは一つの見方で、異論がある（Will ら p.2・p.24）。Fox Strangways はアーラープの目的を、核の音と持続音の関係を確かにすることと書く（p.281）。「漂う」は退避版 349 行の語 |
+| ja 166 行「10件中最も純粋な『場』の音楽的実現」「5段階の場の定義と直接合致」 | 言い過ぎ | 中 | 段の判定は保留。phase6 の「すべてが溶けている海のような状態」と退避版 352・360 行から来ている |
+| ja 160〜166 行（拍の無さをめぐる兼ね合い、アーラープを欠いた形） | 抜け | 中 | 原典にある、美の決まりと体の傾きのぶつかり（Will ら p.24）と、アーラープが無いと統一が壊れうること（Fox Strangways p.281）を書いていない |
+| ja 166 行「規則への従順さと即興的逸脱の緊張…この解釈は仮説段階」 | 未判定 | 低 | 読めた原典では確かめていない。仮説と書いているのは誠実 |
+
+### 10. 生態学的音楽知覚（Clarke）
+
+**要旨**（報告による）：Gibson の生態学的知覚論を音楽に当て、聴き手と音楽を分けず、音楽の環境のアフォーダンスを直接知覚するとする。この要旨は原典で確かめていません。Gibson のアフォーダンスは、D14 心理学の記録（`cs/evidence/evidence-D14-psychology.md` の 5）でも未照合です。
+
+**一次情報**：
+
+- Clarke, E. F. (2005). *Ways of Listening: An Ecological Approach to the Perception of Musical Meaning*. Oxford University Press. DOI 10.1093/acprof:oso/9780195151947.001.0001。台帳に行が無い。OA の写しは見つからなかった。
+- Windsor, W. L. & de Bézenac, C. (2012). Music and affordances. *Musicae Scientiae* 16(1), 102–120. DOI 10.1177/1029864911435734。White Rose Research Online の行（https://eprints.whiterose.ac.uk/75863/ ）は、本文のファイルが公開されていない（restricted）。
+
+**照合の状態**：未照合（書籍）です。
+
+**対立・衝突・統合の読み**：原典を読めていないので書きません。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 172 行「『有機体-環境結合系』という前提が5段階モデルの非二元的理解と共鳴」、ja 174 行「5段階の場（主客未分の全体性）から始まるプロセスと構造的に一致」 | 付け足し | 高 | 原典を読まずに、5段階の側の語（非二元・主客未分）を Clarke に重ねている（writing §7-3・§7-5）。出どころは退避版の CHK-A（非二元性）の欄（50・91・125・168・223・281 行、486 行「主客非分離」）と phase6 168 行 |
+| ja 170 行「Clarkeの理論は離散的な『段階』モデルを明示的に批判」、ja 221 行 | 未判定 | 中 | 原典で確かめていない。退避版 493 行の「学び」から来ている |
+| ja 203〜205 行「情報処理的記述と生態学的記述の両方から対応が成立…5段階が特定の認識論に依存しない構造的記述である可能性」 | 付け足し | 中 | 原典の主張ではない。phase6 199 行と 243 行（Q-D26-9）の構成。対応を両方に見つけたことを、5段階の側の性質に格上げしている |
+
+### 11. 協和と不協和（Helmholtz。似た論文から足した論）
+
+**要旨**（Helmholtz、Ellis 訳）：近い高さの二つの音は、うなりを生む。速いうなりは聴神経を途切れ途切れに刺激し、粗さとして感じられる。協和と不協和の違いは、この粗さの有る無しにある。
+
+**一次情報**：
+
+- Helmholtz, H. von (1895). *On the Sensations of Tone as a Physiological Basis for the Theory of Music*. Trans. A. J. Ellis. Third edition（Second Edition 1885 からの再刷）. Longmans, Green。manifest D26-S15。台帳の取得先の Internet Archive の写し（onsensationston02helmgoog。Google の走査で、どの図書館の本かは「unknown library」）の OCR の文字（_djvu.txt）で読んだ。パブリックドメイン。頁は OCR の文字に残る頁の番号で控えた。
+- 精読ノート：`cs/knowledge/source-notes/D26/D26-S15_helmholtz-1895.md`。
+
+**照合の状態**：本文照合済（訳）です。OCR の文字で読みました。
+
+**原典に書いてあること**：
+
+- pp.169–170（第 8 章）：うなりは、聴神経のある繊維を途切れ途切れに刺激する。途切れる刺激は、同じ強さの続く刺激より不快に働く。神経は強く刺激されると感じにくくなり、刺激がやむと戻るので、途切れる刺激はそのたびに新しく強く働く（Claude の要約）。2 秒に 3 回ほどのとても遅いうなりは、注意しないと気づかず、粗さを感じさせない。最も鋭い粗さは、毎秒 30〜40 回のうなりから生まれる。遅いうなりは粗い「chattering」、速いうなりは細かく「cutting」な粗さになる。
+- p.226（第 12 章）：不協和の本質は、とても速いうなりにある。協和は途切れない感覚、不協和は途切れる感覚で、協和する二つの音は「flow on quietly side by side in an undisturbed stream」、不協和の音は互いを脈に切る。Euclid の古い定義（協和は高い音と低い音が混ざること、不協和は混ざらず粗く聞こえること）と合う、と書く。
+
+**対立・衝突・統合の読み**：Helmholtz は、二つの音が同時に鳴るときの干渉（うなり）を、粗さとして書いていて、二つが乱さずに並んで流れる形（協和）と、互いを切る形（不協和）を、同じ仕組みの両側として書いています（原典の構造）。うなりの速さに分かれ目があり、とても遅いと粗さにならず、毎秒 30〜40 回で最も鋭くなります（p.170。うなりと粗さで不協和を説明すること自体は、今の心理音響でも教科書に載る説明の一つですが、ほかの説明と並ぶ研究の一線でもあります）。協和を「混ざる」と書くのは Euclid の定義で、Helmholtz は二つの音が区別を残したまま乱さずに並ぶ形として書いている、と Claude は読みます。この論は報告に無く、台帳の似た論文の行から足しました。
+
+**今の報告から直すこと**：報告に無い論です。報告の「調性対立の生成」（ja 55 行）と「協和」の関係は、原典で確かめていません。
+
+## 公開報告の点検のまとめ
+
+### 版の間の食い違い
+
+| 項目 | ja | en | pres | 退避版 |
+|---|---|---|---|---|
+| 件数 | 強い 2・部分 4・条件付き 4（84 行・Colophon 251 行） | Strong 7・Conditional 3（59〜68 行・177 行「7 of the 10」） | 「主要理論 7件」「強い 1・部分 1・条件付き 2」（21・23 行）。表では「確定に近い」2・「有力」5・「条件つき」3（46〜48 行） | Accept 7・CA 3、縁の旗 🔴 2・🟡 5（523〜531 行） |
+| Pressing・ソナタ形式・NHS・グルーヴ・ASA | 部分・部分・条件付き・部分・部分 | Strong（五つとも） | 有力 | Accept |
+| ラーガの提唱者 | 「インド古典音楽理論」 | Powers & Widdess (2001)・Jairazbhoy (1971)・Clayton (2000) | ― | Powers & Widdess (2001)・Jairazbhoy (1971)・Clayton (2000)（344 行） |
+| グルーヴの提唱者 | Witek et al. (2014) 他 | Madison (2006)・Witek et al. (2014)・Pressing (2002)・Janata et al. (2012) | ― | ― |
+| TPS の提唱者 | Lerdahl (2001) | Lerdahl (2001)・Lerdahl & Jackendoff (1983) | ― | ― |
+
+pres は「7件」と書きながら表に 10 の理論を並べ、件数の二つの書き方も合いません。版ごとに別に生成されたことが、件数と提唱者の食い違いの出どころと見られます（D17・D18・D22・D25 と同じ）。
+
+### 領域全体の主張
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 14 行「音楽学は『期待→誤差→再評価』の創造的ループを最も明示的に記述する領域の一つ」、ja 182 行・ja 231 行「期待に対する誤差が創造を駆動する」 | 付け足し | 高 | 読めた原典は、期待の違反を情動や快の源として書き、「創造」を駆動するとは書いていない。phase7 16 行の循環構造と phase6 209〜213 行の仮説 1「音楽は『欠損駆動思考の時間的具体化』である」[SPECULATIVE] から来ていて、欠損駆動思考の語を消して残っている |
+| ja 182 行「ミリ秒から世紀に至るあらゆる時間スケールで確認」 | 付け足し | 中 | 原典で確かめた跡が無い。phase7 7〜16 行の時間の並べ方 |
+| ja 57 行・ja 186〜193 行・ja 233 行「縁の記述が最も豊かな領域」「4種の異なるメカニズム」 | 付け足し | 中 | 型の名（可能性空間型・身体的・形式的・知覚的）は原典に無い。phase5 31・179 行と phase6 191 行、phase7 20〜24 行で LLM が付けた。30 領域を比べた跡は無い |
+| ja 61 行・ja 197〜199 行・ja 235 行「束の記述は一貫して最も薄い」「時間芸術であることに起因する」 | 付け足し | 中 | phase5 182 行・phase6 203 行・phase7 31〜41 行の構成。原典はこう書いていない。束を「作品を超えて残る変化に求めるべき」とするのは調べた跡の提案 |
+| ja 84 行「強い対応が確認された2件…最も堅い接続点」、ja 229〜231 行 | 言い過ぎ | 中 | 強いとされた二つの提唱者の本（Meyer 1956・Huron 2006）は読まれていない |
+| ja 18〜20 行・ja 225 行「西洋音楽理論に偏った選定」 | 一致 | 低 | 偏りの自己点検としては合う。ただしラーガも NHS も原典を挙げずに数えていた |
+
+### テンプレート由来の表示
+
+「立ち位置明示」（3 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6」「Phase 7」（28・30 行）、「方法論的開示（S60）」（42 行）、「温度帯の分布」（84 行）、「安全弁」（86 行）、「結びの温度開示」「温度帯」（239〜243 行）、「Colophon」「generator_model」（245〜255 行）。46〜47 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と書き、著者を pjdhiro としていて、文責の書き方（writing §1-1・§1-8）と合いません。pres 46 行の「温度」の表も同じです。テンプレートで一度に直すものです（README 段 1）。
+
+### 誤りの出どころ
+
+| 誤り | 出どころ |
+|---|---|
+| 即興の「誤差が修正対象ではなく次の創造の入力」 | 退避版 33 行の [P] → phase6 18 行で欠損駆動思考の旧い定義に接続 → ja 114 行・en 81 行・pres 72 行（つなぎの語を消して残る） |
+| 「期待→誤差→再評価」の創造的ループ・誤差が創造を駆動 | phase6 209〜213 行の仮説 1（欠損駆動思考の時間的具体化、[SPECULATIVE]）・phase7 52〜63 行のパターン 5 → ja 14・182・231 行 |
+| ソナタ形式の「弁証法的構造」・Rosen の「大規模な不協和」 | DR 30〜31 行 → 退避版 68 行 → ja 74・120〜122 行 |
+| ITPRA の「意識的再評価」と、Tension から解決への対照的情動価 | 退避版 186・188 行 → ja 106 行 |
+| アーラープの「漂う」「最も純粋な場」 | 退避版 349・352・360 行 → phase6 の EV-MU-008 → ja 162・166 行 |
+| Clarke の「主客未分」「非二元的理解と共鳴」 | 退避版の CHK-A（非二元性）の欄と 486〜493 行 → phase5 125・198 行・phase6 168 行 → ja 172〜174 行 |
+| NHS の「研究プロセスへの写像」「メタレベル」 | DR の「メタレベル注意」 → phase5 68〜71・155・190 行 → phase6 61〜62 行 → ja 148〜150 行 |
+| 縁の 4 種・束が薄い・時間スケール | phase5 31・179・182 行 → phase6 191・203 行 → phase7 10〜41 行 → ja §6 |
+| TPS の「分析生成 vs 存在生成」 | 退避版 17・302 行 → phase5 97・192 行 → phase7 89・122 行 → ja 156〜158 行・pres 47 行 |
+| 版ごとの件数と提唱者の食い違い | ja・en・pres が別々に生成されたこと |
+| 型 F の表示 | 報告のテンプレート |
+
+### 文体（writing.md・corrections.md の型）
+
+- 型 H（原典に無い体系）：「4種の異なるメカニズムが確認されました」「可能性空間型」「身体的」「形式的」「知覚的」（ja 186〜191 行）。型の名は原典に無く、「確認されました」は確かめた跡の無い語です。
+- 型 E（言い切る）と「最も」：「最も直接的な理論」（94 行）、「最も堅い接続点」（84 行）、「10件中最も純粋な『場』」（166 行）、「最も豊かな記述が得られた段階」（57 行）、「5段階との全段階対応が堅く成立します」（231 行）。
+- writing §7-3・§7-5（理論の理想の像や5段階の語を原典に重ねる）：「5段階モデルの非二元的理解と共鳴する」（172 行）、「場（主客未分の全体性）」（174 行）。
+- 至らない形を外に置く書き方：グルーヴの集団同期の解体を「時間スケールが異なります」（134 行）とし、TPS を記述の水準の違いで「限定的」（158 行）とし、束を「時間芸術において固有の困難」（197 行）としています。読めた原典は、期待が立たない形・何も起きない形・予測が崩れる形・入れ替わり続ける形を論の中に書いていました。
+- 型 J：ダッシュの挿入（138 行「双安定状態——同一の音信号が…——が特徴的です」、130 行「逆U字型の最適複雑性として記述されます——単純すぎる…」）。
+
+## 判断が要るもの
+
+pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは `docs/cs-review/README.md` の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
+
+- Huron & Margulis（2010）は、Huron の研究室のサイトに置かれた校正刷りを Wayback の記録で読みました。著者のサイトの写しなので、性格を添えて本文照合済にしました（README「規約で決めたこと」の D16 の行）。校正刷りと刊行版の文字の違いは確かめていません。
+- Fox Strangways（1914）は、Internet Archive の Universal Digital Library の走査で、上げた人の欄は個人のアカウントですが、集まり（universallibrary）が図書館の走査の計画なので、D16 の Digital Library of India と同じ扱いにしました。1914 年の刊行でパブリックドメインです。
+- Mehr ら（2019）の論で、報告は研究の手続きを段に当てていましたが、README の領域の対象の行に従い、歌そのものについての原典の書き方で並べ直しました。
+- Helmholtz（1895）は、似た論文の行ですが、本文に当たれて、二つの音のぶつかりと、その分かれ目を書いているので、論として足しました（README「調査の手順」1）。Hanslick（1891）・Schulkin & Raglan（2014）・Koelsch & Siebel（2005）・Ellamil ら（2016）・Zatorre & Salimpoor（2013）・Eerola & Lahdelma（2021）は、論として足していません。Ellamil らはグルーヴの節で関わる論として挙げました。
+
+## 新しく見つけた原典（台帳に足す案）
+
+| source_id の案 | 書誌 | 取得先 | 状態の案 |
+|---|---|---|---|
+| D26-S22 | Huron, D. & Margulis, E. H. (2010). Musical expectancy and thrills. In P. N. Juslin & J. A. Sloboda (Eds.), *Handbook of Music and Emotion* (pp.575–604). Oxford University Press. DOI 10.1093/acprof:oso/9780199230143.003.0021 | https://web.archive.org/web/20170705123734/http://www.musiccog.ohio-state.edu/home/data/_uploaded/pdf/LabPublications%28DanEdit%29/Huron_Margulis_proofs.pdf （著者の研究室のサイトの校正刷り、Wayback の記録。保存名の案 `D26_huron-margulis_2010_musical-expectancy-and-thrills-proofs.pdf`） | raw-confirmed |
+| D26-S23 | Hepokoski, J. (2010). Formal process, Sonata Theory, and the first movement of Beethoven's "Tempest" Sonata. *Music Theory Online* 16(2). DOI 10.30535/mto.16.2.7 | https://mtosmt.org/issues/mto.10.16.2/mto.10.16.2.hepokoski.html （2026-11-09 は接続が時間切れ。Wayback の記録 2026-07-27 で読んだ。HTML。保存名の案 `D26_hepokoski_2010_formal-process-sonata-theory-tempest.html`） | raw-confirmed |
+| D26-S24 | Witek, M. A. G., Clarke, E. F., Wallentin, M., Kringelbach, M. L. & Vuust, P. (2014). Syncopation, body-movement and pleasure in groove music. *PLoS ONE* 9(4), e94446. DOI 10.1371/journal.pone.0094446 | https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0094446&type=printable （CC BY。保存名の案 `D26_witek-et-al_2014_syncopation-body-movement-pleasure.pdf`） | raw-confirmed |
+| D26-S25 | Vuust, P. & Witek, M. A. G. (2014). Rhythmic complexity and predictive coding: a novel approach to modeling rhythm and meter perception in music. *Frontiers in Psychology* 5, 1111. DOI 10.3389/fpsyg.2014.01111 | https://www.frontiersin.org/articles/10.3389/fpsyg.2014.01111/pdf （CC BY。保存名の案 `D26_vuust-witek_2014_rhythmic-complexity-predictive-coding.pdf`） | raw-confirmed |
+| D26-S26 | Matthews, T. E., Witek, M. A. G., Heggli, O. A., Penhune, V. B. & Vuust, P. (2019). The sensation of groove is affected by the interaction of rhythmic and harmonic complexity. *PLoS ONE* 14(1), e0204539. DOI 10.1371/journal.pone.0204539 | https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0204539&type=printable （保存名の案 `D26_matthews-et-al_2019_groove-rhythmic-harmonic-complexity.pdf`） | raw-confirmed |
+| D26-S27 | Bregman, A. S. & Campbell, J. (1971). Primary auditory stream segregation and perception of order in rapid sequences of tones. *Journal of Experimental Psychology* 89(2), 244–249. DOI 10.1037/h0031163 | https://web.archive.org/web/20250811134001/https://webpages.mcgill.ca/staff/Group2/abregm1/web/pdf/1971_Bregman_Campbell.pdf （著者の McGill の頁、Wayback の記録。元の置き場は 2026-11-09 に「Web Hosting Unavailable」。保存名の案 `D26_bregman-campbell_1971_primary-auditory-stream-segregation.pdf`） | raw-confirmed |
+| D26-S28 | Bregman, A. S. (2008). Auditory scene analysis. In L. Squire (Ed.), *New Encyclopedia of Neuroscience*. Elsevier（著者稿。刊行版の頁と DOI は未確認） | https://web.archive.org/web/20250811133643/https://webpages.mcgill.ca/staff/Group2/abregm1/web/pdf/2008-New-Encyclopedia-Neuroscience.pdf （保存名の案 `D26_bregman_2008_auditory-scene-analysis-encyclopedia.pdf`） | raw-confirmed |
+| D26-S29 | Pressnitzer, D. & Hupé, J.-M. (2006). Temporal dynamics of auditory and visual bistability reveal common principles of perceptual organization. *Current Biology* 16(13), 1351–1357. DOI 10.1016/j.cub.2006.05.054 | https://hal.science/hal-00111082v1/document （HAL の著者稿。保存名の案 `D26_pressnitzer-hupe_2006_auditory-visual-bistability.pdf`） | raw-confirmed |
+| D26-S30 | Savage, P. E. (2025 [2019]). Public peer review of "A natural history of song" / "Universality and diversity in human song" (Mehr et al., 2019). PsyArXiv. https://doi.org/10.31234/osf.io/gxzfq | https://osf.io/download/b69xt/ （著者の公開。保存名の案 `D26_savage_2025_public-peer-review-mehr-2019.pdf`） | raw-confirmed |
+| D26-S31 | Will, U., Clayton, M., Wertheim, I., Leante, L. & Berg, E. (2015). Pulse and entrainment to non-isochronous auditory stimuli: The case of North Indian alap. *PLoS ONE* 10(4), e0123247. DOI 10.1371/journal.pone.0123247 | https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0123247&type=printable （CC BY。保存名の案 `D26_will-et-al_2015_pulse-entrainment-north-indian-alap.pdf`） | raw-confirmed |
+| D26-S32 | Fox Strangways, A. H. (1914). *The Music of Hindostan*. Oxford: Clarendon Press | https://archive.org/details/musicofhindostan000108mbp （Universal Digital Library の走査。パブリックドメイン。OCR の文字で読んだ。保存名の案 `D26_fox-strangways_1914_music-of-hindostan.pdf`） | raw-confirmed |
+| D26-S33 | Widdess, R. (2011). Dynamics of melodic discourse in Indian music. In M. Tenzer & J. Roeder (Eds.), *Analytical and Cross-Cultural Studies in World Music*. Oxford University Press. DOI 10.1093/acprof:oso/9780195384581.003.0005（題は OpenAlex の返事。編者と書名は Crossref で確かめていない） | https://eprints.soas.ac.uk/13295/1/Dynamics%20of%20melodic%20discourse%20%5Bpre-proof%20version.pdf （SOAS Research Online の刊行前の版。2026-11-09 は 502 で落ちていた） | url-verified（取り直す） |
+| D26-S34 | Napier, J. (2019). Structure and proportion in Hindustani ālāp. *Empirical Musicology Review* 14(1–2), 53–65. DOI 10.18061/emr.v14i1-2.5502 | https://emusicology.org/article/download/5502/5450 ・ https://unsworks.unsw.edu.au/bitstreams/47569e14-d92a-432c-8783-d998e53b27a5/download （どちらも案内の頁を返した） | blocked-access |
+| D26-S35 | Meyer, L. B. (1957). Meaning in music and information theory. *Journal of Aesthetics and Art Criticism* 15(4), 412–424. DOI 10.2307/427154 | JSTOR・Wiley（有料） | citation-only |
+| D26-S36 | Hepokoski, J. (2001). Back and forth from Egmont: Beethoven, Mozart, and the nonresolving recapitulation. *19th-Century Music* 25(2–3), 127–154. DOI 10.1525/ncm.2001.25.2-3.127 | UC Press（有料） | citation-only |
+| D26-S37 | Hepokoski, J. (2002). Beyond the sonata principle. *Journal of the American Musicological Society* 55(1), 91–154. DOI 10.1525/jams.2002.55.1.91 | UC Press（有料） | citation-only |
+| D26-S38 | Hepokoski, J. & Darcy, W. (1997). The medial caesura and its role in the eighteenth-century sonata exposition. *Music Theory Spectrum* 19(2), 115–154. DOI 10.2307/745751 | Oxford・JSTOR（有料） | citation-only |
+| D26-S39 | Lerdahl, F. & Krumhansl, C. L. (2007). Modeling tonal tension. *Music Perception* 24(4), 329–366. DOI 10.1525/mp.2007.24.4.329 | UC Press（有料） | citation-only |
+| D26-S40 | Lerdahl, F. (1988). Tonal pitch space. *Music Perception* 5(3), 315–349. DOI 10.2307/40285402 | UC Press・JSTOR（有料） | citation-only |
+| D26-S41 | Johnson-Laird, P. N. (2002). How jazz musicians improvise. *Music Perception* 19(3), 415–442. DOI 10.1525/mp.2002.19.3.415 | UC Press（有料） | citation-only |
+| D26-S42 | Bregman, A. S. (1990). *Auditory Scene Analysis: The Perceptual Organization of Sound*. MIT Press. DOI 10.7551/mitpress/1486.001.0001 | Internet Archive は貸出の形 | blocked-access |
+| D26-S43 | Clarke, E. F. (2005). *Ways of Listening*. Oxford University Press. DOI 10.1093/acprof:oso/9780195151947.001.0001。関わる論文 Windsor, W. L. & de Bézenac, C. (2012). Music and affordances. *Musicae Scientiae* 16(1), 102–120. DOI 10.1177/1029864911435734 | Oxford（有料）。White Rose の行 75863 は本文が restricted | blocked-access |
+| D26-S44 | Janata, P., Tomic, S. T. & Haberman, J. M. (2012). Sensorimotor coupling in music and the psychology of the groove. *Journal of Experimental Psychology: General* 141(1), 54–75. DOI 10.1037/a0024208 | https://zenodo.org/record/997607/files/article.pdf （上げた人と権利は未確認。取っていない） | citation-only |
+
+取ってきたファイルは、司令塔が手元の `cs/knowledge/raw/` に置き、下の書き足しを台帳に入れました（2026-11-09。D26-S15 の版の表示は、司令塔が OCR の文字で確かめられたのは刊年の 1895 までなので、台帳の版の語は変えずに書き添えています）。既存の行に書き足した案：
+
+- D26-S05：題を全体に直す（Probabilistic models of expectation violation predict psychophysiological emotional responses to live concert music. *CABN* 13(3), 533–553）。McGill の PDF は出版社の「Author's personal copy」（23 頁、誌面の頁番号が無い版）で、先頭は %PDF。url-verified の行を raw-confirmed に上げられる（保存名の案 `D26_egermann-pearce-wiggins-mcadams_2013_expectation-violation-live-concert.pdf`）。
+- D26-S07：取得先 https://osf.io/gxzfq_v1/download は、Mehr らの論文でなく、Savage の査読の公開版（上の D26-S30）。Mehr らの著者稿は PMC7001657 の記事の頁（HTML）で読めた（保存名の案 `D26_mehr-et-al_2019_universality-diversity-human-song.html`）。OpenAlex は PsyArXiv の著者稿（https://osf.io/emq8r ）も挙げる（試していない）。
+- D26-S08：PMC4517223 の記事の頁（HTML）で読めた（保存名の案 `D26_savage-brown-sakai-currie_2015_statistical-universals.html`）。
+- D26-S10：備考の「OA代替」の Witek ら 2014 は別の論文で、Madison 2006 の代わりにはならない。上の D26-S24 を独立の行にする。
+- D26-S12：PLOS の PDF を取れた（9 頁。パブリックドメインの表示。保存名の案 `D26_limb-braun_2008_neural-substrates-jazz-improvisation.pdf`）。url-verified の行を raw-confirmed に上げられる。
+- D26-S15：「2nd English ed.」を「3rd ed. (1895), reprinted from the 2nd ed. (1885)」に直す。写しの題の頁に「THIRD EDITION」「1895」とある。Google の走査（unknown library）。_djvu.txt で読んだ。
+- D26-S16：SAGE の PDF は Cloudflare の確認画面（「Just a moment...」）を返した。OpenAlex は Durham Research Online（http://dro.dur.ac.uk/33628/ ）と OSF の著者稿（https://osf.io/6aqhx ）を挙げる（試していない）。
+- D26-S17・D26-S18・D26-S19：PDF を取れ、1 頁目の書誌が合った（保存名の案 `D26_schulkin-raglan_2014_evolution-of-music.pdf`・`D26_ellamil-et-al_2016_one-in-the-dance.pdf`・`D26_koelsch-siebel_2005_towards-neural-basis-music-perception.pdf`）。url-verified の行を raw-confirmed に上げられる。
+- D26-S20：Europe PMC の PDF の取得先は Cloudflare の確認画面、PMC の記事の頁は reCAPTCHA の確認画面を返した。NCBI の efetch（db=pmc）は要旨だけ。下の表。
+- D26-S21：Internet Archive の写しは、ノースカロライナ大学チャペルヒル校の音楽図書館の本の走査で、Cohen 訳は独語の第 7 版（1885）から（Novello 1891）。_djvu.txt を取れた。
+
+## ブラウザでの保存が要る PDF
+
+| 台帳の行 | 文献 | ダウンロード先 | 保存名の案 | 止まった理由と、保存できると何を確かめられるか |
+|---|---|---|---|---|
+| D26-S20 | Zatorre & Salimpoor (2013). *PNAS* 110(Suppl 2), 10430–10437 | https://pmc.ncbi.nlm.nih.gov/articles/PMC3690607/ （記事の頁を開き、そのまま HTML で保存するか、頁の PDF のリンクから保存） | `D26_zatorre-salimpoor_2013_from-perception-to-pleasure.pdf` | PMC の記事の頁が reCAPTCHA、Europe PMC の PDF が Cloudflare の確認画面。報酬の系と予測の節（「expectancy」で探す）で、期待と報酬の兼ね合いを確かめられる |
+| D26-S16 | Eerola & Lahdelma (2021). *Music & Science* 4 | https://journals.sagepub.com/doi/pdf/10.1177/20592043211030471 | `D26_eerola-lahdelma_2021_anatomy-of-consonance-dissonance.pdf` | Cloudflare の確認画面。協和と不協和の論（節 11）で、粗さ・倍音・なじみの三つの説明の兼ね合いを確かめられる（Durham の写しを先に試してもよい） |
+| D26-S35 | Meyer (1957). *JAAC* 15(4) | https://doi.org/10.2307/427154 （JSTOR。ログインが要る） | `D26_meyer_1957_meaning-in-music-and-information-theory.pdf` | 有料。Meyer 自身の論文で、「alternative continuations」と不確かさ（uncertainty）の語を探し、報告 ja 100 行の主張を確かめられる |
+| D26-S36 | Hepokoski (2001). *19th-Century Music* 25 | https://doi.org/10.1525/ncm.2001.25.2-3.127 | `D26_hepokoski_2001_nonresolving-recapitulation.pdf` | 有料。解決しない再現部の至らない形を、本文の頁で確かめられる |
+| D26-S39 | Lerdahl & Krumhansl (2007). *Music Perception* 24(4) | https://doi.org/10.1525/mp.2007.24.4.329 | `D26_lerdahl-krumhansl_2007_modeling-tonal-tension.pdf` | 有料。TPS の緊張の量と、緊張が高まって解けない形があるかを確かめられる（節 8 が未照合のまま） |
+| D26-S33 | Widdess (2011). SOAS の刊行前の版 | https://eprints.soas.ac.uk/13295/ | `D26_widdess_2011_dynamics-of-melodic-discourse.pdf` | 2026-11-09 は 502 で落ちていた（確認画面ではない）。日をおいて取り直す。アーラープの段の並びを、どの伝統（器楽）の決まりとして書いているかを確かめられる |
+| D26-S34 | Napier (2019). *Empirical Musicology Review* 14 | https://doi.org/10.18061/emr.v14i1-2.5502 から PDF | `D26_napier_2019_structure-proportion-hindustani-alap.pdf` | 自動取得で案内の頁だけが返った。アーラープの部分の長さの割合と、ジョール・ジャーラーへの移り方を確かめられる |
+| D26-S04 | Meyer (1956). *Emotion and Meaning in Music* | https://archive.org/details/emotionmeaningin0000meye （Internet Archive の貸出。ログインして借りる） | ― | 貸出の形。自動では読まない。第 1 章の「inhibition of tendency」と不確かさの節を確かめられる（図書館か購入は pjdhiro が決める） |
+
+## 手順について分かったこと
+
+- 書籍の多い分野でしたが、同じ論の著者の短い文章（Huron & Margulis の章の校正刷り、Hepokoski の Music Theory Online の論文、Bregman の事典の項目の著者稿）が、著者のサイトや学会の OA の誌に残っていて、Wayback の CDX の一覧で見つかりました。Huron と Bregman のサイトは今は無いか落ちていて、Wayback の記録で読みました。
+- 台帳が url-verified と書く D26-S07 の取得先は、同じ論文の別の文書（査読者の公開版）でした。題の語が合うだけの URL を取得先にした例です。中身は、普遍の主張への方法の批判として、この分野の研究の一線を書くのに使えました。
+- OpenAlex が van Noorden（1975）の学位論文に挙げた DOI は、別の学位論文に飛びました。
+- 出版社や PMC の PDF（SAGE・Europe PMC の PDF・PMC の Zatorre の記事）は確認画面を返しましたが、PMC の記事の頁（HTML）は Mehr と Savage では読めました。Europe PMC の REST はこの日 500 を返しました。mtosmt.org と SOAS は接続が切れ、確認画面と分けて書きました。
+- 精読ノートと wiki の機械的な誤り（直していません）：
+  - `cs/knowledge/source-notes/D26/D26-S12_limb-2008.md` 44 行と `pd/wiki/sources/D26_limb_2008_neural-substrates-of-spontaneous.md` 48 行の引用「allowing unfettered, unconscious…」は、原文（PDF p.4）では「allowing unfiltered, unconscious…」です。同じノートの 7 行「原典ページ数: 8」は、PLOS の PDF では 9 頁です。
+  - `cs/knowledge/source-notes/D26/D26-S07_mehr-2019.md` 32・38・44・50・63 行は、要約を引用符の中に書いていて、原文の文ではありません。48・52 行「調性は普遍的特徴である」「普遍的特徴であることが示された」は、原文（Abstract）では「tonality is widespread, perhaps universal」です。
+  - `cs/knowledge/source-notes/D26/D26-S08_savage-2015.md` 32 行の引用「[Eighteen] musical features that individually appear across cultures...」は原文に無く、Abstract は「These universals include 18 musical features that are common individually as well as a network of 10 features…」です。
+  - wiki の D26 の 10 枚の frontmatter の `source.repo` は「creation-space」のままです（段 4）。
+- 調べた跡の語が言い換えられて報告に入っていた所は、即興の「誤差を次の創造の入力にする」（phase6 18 行の欠損駆動思考との接続）と、「期待に対する誤差が創造を駆動する」（phase6 209 行の仮説 1）でした。欠損・抱持の語は報告に無く、grep だけでは見つからない形でした。phase6 53・195 行の「抱持（保持）」は、報告では「阻害・遅延によって複数の可能性が共存」（ja 98 行）として、語を消した形で残っている見込みです。
