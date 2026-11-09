@@ -53,6 +53,7 @@ R の as/ は「意識とは」というサイトで、持ち主の pjdhiro は�
 
 ## 書くもの
 {W}/as/evidence/evidence-{Axx}-{slug}.md。並びは README の「記録の形」のとおり（frontmatter：file_id: EV-{Axx}・area_id: {Axx}・title・last_updated・status: reviewed／冒頭／探し方／一面の表／論ごとの節／分からなかったこと・取れなかった原典）。文は writing.md に従い（教科書のような普通の文・演出しない・断定しない・一文に一つのこと・文末は「です・ます」）、冒頭に文責が Claude であることを書く。
+本文（frontmatter・URL を除く）に、領域や原典の記号（{Axx}・{Axx}-S01 など）、repo のパスやファイル名（docs/…・as/evidence/…・*.md）、手元の PDF の保存名を書かない。領域は名前で、原典は著者・年・題で、as の資料は題で書く。ブラウザでの保存が要る原典の表は記録に置かず、報告に書く。一面の表の体験の列は番号だけで、研究の語の括弧を付けない。
 
 ## 報告
 次を日本語で報告してください。

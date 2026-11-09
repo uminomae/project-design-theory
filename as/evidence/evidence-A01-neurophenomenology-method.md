@@ -16,22 +16,22 @@ status: reviewed
 
 「気づき」に名前を与えている記述として、Depraz・Varela・Vermersch の、宙づり・向け直し・受け入れの三つの動きを、2000 年の章の著者稿で確かめました。その章には予測と誤差の語はありません。2003 年の本は読めていません。神経現象学そのものへの批判（Bayne 2004・Kirchhoff & Hutto 2016）と、一人称と二人称の方法を確かめる提案（Froese ら 2011）は、本文を読めず、要旨か二次の紹介までです。
 
-この領域は方法の領域なので、体験の記述との関わりは、主に「体験の記述をどう取るか・どこまで信頼できるか」になります。並べる相手（`docs/as-review/README.md` の体験 1〜4・問い・見立て）との対応は、Claude の読みとして番号だけで書きます。
+この領域は方法の領域なので、体験の記述との関わりは、主に「体験の記述をどう取るか・どこまで信頼できるか」になります。並べる相手は、意識とはの公開ページにある体験の言葉です。体験 1・2 は「切り取り方は、受け取る側で決まる」の節、体験 3 は「二つに分けて書くが、二つでない」の節、体験 4 は「一列の記号には、二つの値が乗りきらない」の節、「問い」は「まだ分からないこと」の節、「見立て」はページの問い（生存と信頼の二つの値）です。対応は、Claude の読みとして番号だけで書きます。
 
 ## 探し方
 
 探した日は、すべて 2026-11-09 です。
 
-1. 出発点：司令塔が Crossref で書誌を照らした 13 本の候補（`docs/as-review/README.md` の A01 の行）と、ks のレーン 2 の報告（`ks/docs/issues/survey-216/lane2-neuro.md`）、Issue #36 の本文を読みました。
-2. 置き場を引く：`bash scripts/find-source.sh find` に DOI を渡し、Crossref・OpenAlex・Semantic Scholar・Europe PMC・Internet Archive・Wayback を引きました。Unpaywall と CORE は、連絡先とキーが無いので飛ばしました。DOI の無い JCS の論文（Varela 1996）は、題・著者・年で引き、Crossref は「近い候補なし」でした。試した経路は、本体の checkout の `.cache/raw/find-ledger.md` に追記しました。
+1. 出発点：文献レビューの計画で Crossref で書誌を照らした 13 本の候補と、欠損駆動思考の調査のレーン 2 の報告（神経現象学・予測誤差・気づき・好奇心、2026-11-02）、[Issue #36](https://github.com/uminomae/project-design-theory/issues/36) の本文を読みました。
+2. 置き場を引く：原典を探す道具（find-source）に DOI を渡し、Crossref・OpenAlex・Semantic Scholar・Europe PMC・Internet Archive・Wayback を引きました。Unpaywall と CORE は、連絡先とキーが無いので飛ばしました。DOI の無い JCS の論文（Varela 1996）は、題・著者・年で引き、Crossref は「近い候補なし」でした。試した経路は、手元の記録に残しました。
 3. 総説から辿る：Timmermann ら（2023）の文献表、Berkovich-Ohana ら（2020）の表 1・表 2（神経現象学の実験の一覧）、Olivares ら（2015）、Lutz & Thompson（2003）の序と結び、Petitmengin ら（2019）の文献表から、批判と追試を辿りました。
-4. 広く探す：`find-source.sh discover --topic "neurophenomenology review"` は、OpenAlex と Semantic Scholar がどちらも HTTP 429 を返し、引けませんでした。代わりに Europe PMC の検索 API で、次の三つを被引用の多い順に引き、上から 25 件の題を見ました。
+4. 広く探す：道具の主題検索（語は neurophenomenology review）は、OpenAlex と Semantic Scholar がどちらも HTTP 429 を返し、引けませんでした。代わりに Europe PMC の検索 API で、次の三つを被引用の多い順に引き、上から 25 件の題を見ました。
    - 題に neurophenomenology / neurophenomenological を含むもの：89 件。ここから、批判の Head & Helton（2018）を足しました。Fazelpour & Thompson（2015）・Northoff & Ventura（2025）の総説は、題と要旨を見て、今回は足しませんでした（下の「足さなかったもの」）。
-   - micro-phenomenology / microphenomenology / micro-phenomenological を含むもの：177 件。多くは瞑想・幻覚剤の個別の研究で、A03 の材料です。
+   - micro-phenomenology / microphenomenology / micro-phenomenological を含むもの：177 件。多くは瞑想・幻覚剤の個別の研究で、自己と境界の領域の材料です。
    - 題に introspection を含み、reliability か unreliability を含むもの：18 件。この領域に当たるものは無く、内観の批判は文献表から辿りました。
    - 批判と追試を探すために、さらに三つを引きました。choice blindness と interview / introspection / micro-phenomenology の組み合わせ（31 件。Johansson ら 2006 を見つけました）、micro-phenomenology / elicitation interview と critique / criticism / bias / validity の組み合わせ（347 件。上から 12 件はどれも医療の面接の研究で、この領域の批判は当たりませんでした）、descriptive experience sampling と critique / reliability / validity の組み合わせ（55 件。Hurlburt ら 2016 の fMRI の研究を見つけました）。
 5. ウェブ検索：題で 8 回引きました（Varela 1996・Lutz & Thompson 2003・Froese ら 2011・Hurlburt & Akhter 2006・Bayne 2004・Kirchhoff & Hutto 2016・Bitbol & Petitmengin 2013 の写しの置き場）。見つかった写しは、上げた人を頁で確かめてから使いました。PhilPapers は確認画面を返したので使っていません。Google Scholar は使っていません。
-6. Varela の研究室の昔のサイト（`www.ccr.jussieu.fr/varela/`）を、Wayback の一覧（CDX）で探しました。Varela 1996 の HTML 版、Varela & Shear 1999 の HTML 版、Depraz・Varela・Vermersch の章の著者稿（PDF）が残っていました。
+6. Varela の研究室の昔のサイト（www.ccr.jussieu.fr/varela/）を、Wayback の一覧（CDX）で探しました。Varela 1996 の HTML 版、Varela & Shear 1999 の HTML 版、Depraz・Varela・Vermersch の章の著者稿（PDF）が残っていました。
 
 選んだ理由は、README の (a)〜(d) の四つ（相互制約・聞き出す方法・内観の信頼性とその批判・瞑想者の報告を使った研究）に、支える論と批判する論をそろえることです。批判の側として、候補に無かった Nisbett & Wilson（1977）・Johansson ら（2005）・Head & Helton（2018）・Petitmengin ら（2013）・Bayne（2004）・Kirchhoff & Hutto（2016）・Olivares ら（2015）を足しました。足した論の DOI・題・年は、Crossref で照らしました（Kirchhoff & Hutto 2016 と Froese ら 2011 は DOI が無く、Crossref に当たりがありませんでした。書誌は雑誌の頁と、Olivares ら 2015 の文献表で確かめました）。
 
@@ -41,11 +41,11 @@ status: reviewed
 - Fazelpour & Thompson（2015, DOI 10.1016/j.conb.2014.12.006）と Northoff & Ventura（2025, DOI 10.1016/j.neubiorev.2025.106139）。神経現象学の総説ですが、Timmermann ら（2023）と Berkovich-Ohana ら（2020）で今の到達点は足りると見て、読んでいません。
 - Lutz ら（2026）「Training experience: Neurophenomenology and first-person and second-person methods in meditation research」（*Consciousness: A Comprehensive Reference*, pp.177–194, DOI 10.1016/b978-0-443-29258-3.00046-x）。いちばん新しい総説の章ですが、開ける版を探していません。
 - Johansson ら（2006, DOI 10.1016/j.concog.2006.09.004）と Krumm & Hurlburt（2023, DOI 10.1007/s11097-021-09763-w）、Hurlburt ら（2016, DOI 10.1371/journal.pone.0147932）。選択盲の続報と、DES の事前登録の研究、DES と fMRI を組んだ研究です。題を見たところまでです。
-- Petitmengin ら（2007）の発作前の体験の研究（ks のレーン 2 が挙げたもの）と、Dor-Ziderman ら（2013・2016）・Garrison ら（2013）の瞑想者の研究。体験の中身に近いので A03 に回します。
+- Petitmengin ら（2007）の発作前の体験の研究（欠損駆動思考の調査のレーン 2 が挙げたもの）と、Dor-Ziderman ら（2013・2016）・Garrison ら（2013）の瞑想者の研究。体験の中身に近いので、自己と境界の領域に回します。
 
 ## 一面の表
 
-照合の状態は `docs/rules/sources.md` §3 の四つで書きます。厚みは `sources.md` §1-3 の四つ（経験則・実証済み・見送り・仮説）です。「似ている体験」「食い違う体験」の列は Claude の読みで、番号は README の「並べる相手：体験の記述」の番号です。この領域では、体験の中身との対応より、記述の取り方に関わるものが多くなりました。そうしたものは「方法：」を付けて書きます。列には番号だけを書き、どこが似ているか・食い違うかは、論ごとの節の「並べる相手とのかかわり」に書きます。
+照合の状態は、本文照合済・要旨照合済・二次資料のみ・未照合の四つで書きます。厚みは、経験則・実証済み・見送り・仮説の四つです。「似ている体験」「食い違う体験」の列は Claude の読みで、番号は冒頭に書いた体験の番号です。この領域では、体験の中身との対応より、記述の取り方に関わるものが多くなりました。そうしたものは「方法：」を付けて書きます。列には番号だけを書き、どこが似ているか・食い違うかは、論ごとの節の「並べる相手とのかかわり」に書きます。
 
 | 論 | 何を見たか | 型と厚み | 批判・反対の知見 | 似ている体験 | 食い違う体験 | 照合の状態 |
 |---|---|---|---|---|---|---|
@@ -109,7 +109,7 @@ status: reviewed
 **確かめ先と読んだ頁**：
 
 - Lutz, A., Lachaux, J.-P., Martinerie, J., & Varela, F. J. (2002). Guiding the study of brain dynamics by using first-person data: Synchrony patterns correlate with ongoing conscious states during a simple visual task. *PNAS* 99(3), 1586–1591. DOI 10.1073/pnas.032658199（Crossref と一致）。
-- 読んだ版：Wayback の記録（元は出版社 PNAS の PDF。http://www.pnas.org:80/cgi/reprint/99/3/1586.pdf の 2005-05-24 の写し）。手元の `A01_Lutz_2002_first-person-data.pdf`（6 頁。`check` で書誌と合う）。PMC と PNAS の頁は確認画面を返しました。
+- 読んだ版：Wayback の記録（元は出版社 PNAS の PDF。http://www.pnas.org:80/cgi/reprint/99/3/1586.pdf の 2005-05-24 の写し）。手元の PDF（6 頁。書誌と突き合わせて合う）。PMC と PNAS の頁は確認画面を返しました。
 - 読んだ頁：p.1586（要旨・枠組み）、p.1587（方法）、p.1590（考察）、p.1591。
 
 **照合の状態**：本文照合済（出版社の PDF の Wayback の記録）。
@@ -138,8 +138,8 @@ status: reviewed
 
 **確かめ先と読んだ頁**：
 
-- Lutz, A., & Thompson, E. (2003). Neurophenomenology: Integrating subjective experience and brain dynamics in the neuroscience of consciousness. *JCS* 10(9–10), 31–52。DOI はありません。Evan Thompson のサイトの PDF（https://evanthompson.me/wp-content/uploads/2012/11/jcs-neurophenomenology.pdf 、誌面の組版。著者のサイト）。手元の `A01_Lutz_2003_neurophenomenology.pdf`（22 頁）。読んだ頁：pp.31–32・37–40・43–46。
-- Thompson, E., Lutz, A., & Cosmelli, D. (2005). Neurophenomenology: An introduction for neurophilosophers. In A. Brook & K. Akins (Eds.), *Cognition and the Brain* (pp.40–97). Cambridge UP. DOI 10.1017/cbo9780511610608.003（Crossref と一致）。読んだ版：Lutz の研究室の頁にあった著者稿（「Forthcoming in」と表紙にある版）。Wayback の記録（http://brainimaging.waisman.wisc.edu/~lutz/ET%26AL%26DC.Neuropheno_intro_2004.pdf の 2023-09-25 の写し。元の頁は今は 502 を返します）。手元の `A01_Thompson_2005_neurophenomenology-intro.pdf`（66 頁）。読んだ頁：著者稿の pp.2・9。頁は本と違います。
+- Lutz, A., & Thompson, E. (2003). Neurophenomenology: Integrating subjective experience and brain dynamics in the neuroscience of consciousness. *JCS* 10(9–10), 31–52。DOI はありません。Evan Thompson のサイトの PDF（https://evanthompson.me/wp-content/uploads/2012/11/jcs-neurophenomenology.pdf 、誌面の組版。著者のサイト）。手元の PDF（22 頁）。読んだ頁：pp.31–32・37–40・43–46。
+- Thompson, E., Lutz, A., & Cosmelli, D. (2005). Neurophenomenology: An introduction for neurophilosophers. In A. Brook & K. Akins (Eds.), *Cognition and the Brain* (pp.40–97). Cambridge UP. DOI 10.1017/cbo9780511610608.003（Crossref と一致）。読んだ版：Lutz の研究室の頁にあった著者稿（「Forthcoming in」と表紙にある版）。Wayback の記録（http://brainimaging.waisman.wisc.edu/~lutz/ET%26AL%26DC.Neuropheno_intro_2004.pdf の 2023-09-25 の写し。元の頁は今は 502 を返します）。手元の PDF（66 頁）。読んだ頁：著者稿の pp.2・9。頁は本と違います。
 
 **照合の状態**：本文照合済（2003 は著者のサイトの誌面の写し。2005 は著者稿の Wayback の記録）。
 
@@ -166,7 +166,7 @@ status: reviewed
 **確かめ先と読んだ頁**：
 
 - Depraz, N., Varela, F. J., & Vermersch, P. (2000). The gesture of awareness: An account of its structural dynamics. In M. Velmans (Ed.), *Investigating Phenomenal Consciousness* (pp.121–137). John Benjamins. DOI 10.1075/aicr.13.10dep（Crossref と一致。Crossref の頁は 121–137）。
-- 読んだ版：Varela の研究室のサイトにあった著者稿（表紙に「To appear in」「1999」）。Wayback の記録（http://www.ccr.jussieu.fr:80/varela/human_consciousness/GestureAwareness.pdf の 2000-09-29 の写し）。手元の `A01_Depraz_2000_gesture-of-awareness.pdf`（17 頁）。読んだ頁：著者稿の pp.2–6。頁は本と違います。
+- 読んだ版：Varela の研究室のサイトにあった著者稿（表紙に「To appear in」「1999」）。Wayback の記録（http://www.ccr.jussieu.fr:80/varela/human_consciousness/GestureAwareness.pdf の 2000-09-29 の写し）。手元の PDF（17 頁）。読んだ頁：著者稿の pp.2–6。頁は本と違います。
 - Depraz, N., Varela, F. J., & Vermersch, P. (2003). *On Becoming Aware: A Pragmatics of Experiencing*. John Benjamins. DOI 10.1075/aicr.43（Crossref で著者と題が一致）。開ける版を探していません。
 
 **照合の状態**：2000 年の章は本文照合済（著者稿の Wayback の記録）。2003 年の本は未照合（書籍）。
@@ -194,7 +194,7 @@ status: reviewed
 **確かめ先と読んだ頁**：
 
 - Petitmengin, C. (2006). Describing one's subjective experience in the second person: An interview method for the science of consciousness. *Phenomenology and the Cognitive Sciences* 5(3–4), 229–269. DOI 10.1007/s11097-006-9022-2（Crossref と一致）。
-- 読んだ版：著者が HAL に上げた誌面の組版（https://hal.science/hal-02524326v1/document 、CC BY-NC-ND 4.0）。手元の `A01_Petitmengin_2006_second-person.pdf`（42 頁）。読んだ頁：pp.229–233・239・253・255–259。
+- 読んだ版：著者が HAL に上げた誌面の組版（https://hal.science/hal-02524326v1/document 、CC BY-NC-ND 4.0）。手元の PDF（42 頁）。読んだ頁：pp.229–233・239・253・255–259。
 
 **照合の状態**：本文照合済（機関リポジトリの著者の写し。誌面の頁）。
 
@@ -220,7 +220,7 @@ status: reviewed
 **確かめ先と読んだ頁**：
 
 - Petitmengin, C., Remillieux, A., & Valenzuela-Moguillansky, C. (2019). Discovering the structures of lived experience: Towards a micro-phenomenological analysis method. *Phenomenology and the Cognitive Sciences* 18(4), 691–730. DOI 10.1007/s11097-018-9597-4（Crossref の発行年は 2018 のオンライン公開）。
-- 読んだ版：著者稿（HAL、https://hal.science/hal-02264833 。表紙に「This text is a preprint」）。手元の `A01_Petitmengin_2019_structures-lived-experience.pdf`（48 頁）。読んだ頁：著者稿の pp.1–2・8・38–42。頁は誌面と違います。
+- 読んだ版：著者稿（HAL、https://hal.science/hal-02264833 。表紙に「This text is a preprint」）。手元の PDF（48 頁）。読んだ頁：著者稿の pp.1–2・8・38–42。頁は誌面と違います。
 
 **照合の状態**：本文照合済（著者稿・機関リポジトリ）。
 
@@ -245,7 +245,7 @@ status: reviewed
 **確かめ先と読んだ頁**：
 
 - Hurlburt, R. T., & Akhter, S. A. (2006). The Descriptive Experience Sampling method. *Phenomenology and the Cognitive Sciences* 5(3–4), 271–301. DOI 10.1007/s11097-006-9024-0（Crossref と一致）。
-- 読んだ版：Hurlburt の大学の頁（https://hurlburt.faculty.unlv.edu/hurlburt-akhter-2006.pdf 、誌面の組版。著者のサイト）。手元の `A01_Hurlburt_2006_descriptive-experience-sampling.pdf`（31 頁）。読んだ頁：pp.271–274・283–284・286–290。
+- 読んだ版：Hurlburt の大学の頁（https://hurlburt.faculty.unlv.edu/hurlburt-akhter-2006.pdf 、誌面の組版。著者のサイト）。手元の PDF（31 頁）。読んだ頁：pp.271–274・283–284・286–290。
 
 **照合の状態**：本文照合済（著者の大学の頁の誌面の写し）。
 
@@ -296,7 +296,7 @@ status: reviewed
 **確かめ先と読んだ頁**：
 
 - Schwitzgebel, E. (2008). The unreliability of naive introspection. *The Philosophical Review* 117(2), 245–273. DOI 10.1215/00318108-2007-037（Crossref と一致）。
-- 読んだ版：著者の大学の頁（https://faculty.ucr.edu/~eschwitz/SchwitzPapers/Naive1.pdf 、誌面の組版。著者のサイト）。手元の `A01_Schwitzgebel_2008_naive-introspection.pdf`（30 頁）。読んだ頁：pp.245–246・259・266–268。
+- 読んだ版：著者の大学の頁（https://faculty.ucr.edu/~eschwitz/SchwitzPapers/Naive1.pdf 、誌面の組版。著者のサイト）。手元の PDF（30 頁）。読んだ頁：pp.245–246・259・266–268。
 
 **照合の状態**：本文照合済（著者のサイトの誌面の写し）。
 
@@ -320,8 +320,8 @@ status: reviewed
 
 **確かめ先と読んだ頁**：
 
-- Petitmengin, C., Remillieux, A., Cahour, B., & Carter-Thomas, S. (2013). A gap in Nisbett and Wilson's findings? A first-person access to our cognitive processes. *Consciousness and Cognition* 22(2), 654–669. DOI 10.1016/j.concog.2013.02.004（Crossref と一致）。読んだ版：著者稿（HAL、https://hal.science/hal-00940422 ）。手元の `A01_Petitmengin_2013_gap-nisbett-wilson.pdf`（40 頁）。読んだ頁：著者稿の pp.2–5・13–15。頁は誌面と違います。
-- Bitbol, M., & Petitmengin, C. (2013). On the possibility and reality of introspection. *Kairos* 6, 173–198. DOI 10.56526/10451/60029（Crossref と一致）。読んだ版：雑誌のサイトの PDF（https://kairos.campus.ciencias.ulisboa.pt/wp-content/uploads/sites/17/2023/04/On-the-possibility-and-reality-of-introspection.pdf 。リスボン大学の雑誌の公開版）。手元の `A01_Bitbol_2013_introspection.pdf`（26 頁）。読んだ頁：pp.173–174・190–191・193–194。リスボン大学の機関リポジトリの写しは証明書の不一致で取れませんでした。
+- Petitmengin, C., Remillieux, A., Cahour, B., & Carter-Thomas, S. (2013). A gap in Nisbett and Wilson's findings? A first-person access to our cognitive processes. *Consciousness and Cognition* 22(2), 654–669. DOI 10.1016/j.concog.2013.02.004（Crossref と一致）。読んだ版：著者稿（HAL、https://hal.science/hal-00940422 ）。手元の PDF（40 頁）。読んだ頁：著者稿の pp.2–5・13–15。頁は誌面と違います。
+- Bitbol, M., & Petitmengin, C. (2013). On the possibility and reality of introspection. *Kairos* 6, 173–198. DOI 10.56526/10451/60029（Crossref と一致）。読んだ版：雑誌のサイトの PDF（https://kairos.campus.ciencias.ulisboa.pt/wp-content/uploads/sites/17/2023/04/On-the-possibility-and-reality-of-introspection.pdf 。リスボン大学の雑誌の公開版）。手元の PDF（26 頁）。読んだ頁：pp.173–174・190–191・193–194。リスボン大学の機関リポジトリの写しは証明書の不一致で取れませんでした。
 - 同じ題の論文が *Mind and Matter* 14(1), 51–75（2016）にもあると、Petitmengin ら（2019）の文献表にあります。読んでいません。
 
 **照合の状態**：どちらも本文照合済（2013 の実験は著者稿、Kairos は出版社の版）。
@@ -373,7 +373,7 @@ status: reviewed
 **確かめ先と読んだ頁**：
 
 - Froese, T., Gould, C., & Seth, A. K. (2011). Validating and calibrating first- and second-person methods in the science of consciousness. *JCS* 18(2), 38–64。DOI はなく、Crossref にも当たりませんでした。書誌は Olivares ら（2015）の文献表と、サセックス大学の機関リポジトリの記録（本文は非公開）で確かめました。本文は読めていません。
-- Olivares, F. A., Vargas, E., Fuentes, C., Martínez-Pernía, D., & Canales-Johnson, A. (2015). Neurophenomenology revisited: Second-person methods for the study of human consciousness. *Frontiers in Psychology* 6, 673. DOI 10.3389/fpsyg.2015.00673（Crossref と一致）。出版社の PDF（CC BY）。手元の `A01_Olivares_2015_neurophenomenology-revisited.pdf`（12 頁）。読んだ頁：pp.1・4・8–10。
+- Olivares, F. A., Vargas, E., Fuentes, C., Martínez-Pernía, D., & Canales-Johnson, A. (2015). Neurophenomenology revisited: Second-person methods for the study of human consciousness. *Frontiers in Psychology* 6, 673. DOI 10.3389/fpsyg.2015.00673（Crossref と一致）。出版社の PDF（CC BY）。手元の PDF（12 頁）。読んだ頁：pp.1・4・8–10。
 
 **照合の状態**：Froese ら 2011 は二次資料のみ（Olivares ら 2015 の紹介）。Olivares ら 2015 は本文照合済（出版社の版）。
 
@@ -395,7 +395,7 @@ status: reviewed
 
 **要旨**：宇宙飛行の模擬（宇宙船の内部を模した部屋で、窓に地球や星を映す）で、畏敬や驚異の体験を、脳波・心電図・近赤外分光と、質問紙と、現象学の面接で調べた基礎の研究を振り返り、三つの教訓を出します。分野をまたぐチームで共有の心の模型を作ること、実験の設計の水準を心理学と同じに保つこと、面接の訓練は参加者でなく面接者に求めること、です。
 
-**確かめ先と読んだ頁**：Bockelman, P., Reinerman-Jones, L., & Gallagher, S. (2013). Methodological lessons in neurophenomenology: Review of a baseline study and recommendations for research approaches. *Frontiers in Human Neuroscience* 7, 608. DOI 10.3389/fnhum.2013.00608（Crossref と一致）。出版社の PDF（CC BY）。手元の `A01_Bockelman_2013_methodological-lessons.pdf`（10 頁）。読んだ頁：pp.1–3・5–6。
+**確かめ先と読んだ頁**：Bockelman, P., Reinerman-Jones, L., & Gallagher, S. (2013). Methodological lessons in neurophenomenology: Review of a baseline study and recommendations for research approaches. *Frontiers in Human Neuroscience* 7, 608. DOI 10.3389/fnhum.2013.00608（Crossref と一致）。出版社の PDF（CC BY）。手元の PDF（10 頁）。読んだ頁：pp.1–3・5–6。
 
 **照合の状態**：本文照合済（出版社の版）。
 
@@ -417,7 +417,7 @@ status: reviewed
 
 **要旨**：神経現象学を実際に行うための手引きです。一人称の記述を「薄い」から「厚い」までの連続で捉え、一人称と三人称の間の橋を四つ以上の型（現象学の知見を設計に前もって入れる・現象学で神経の説明を確かめる・二つのデータを合わせて解析する・生理のデータで体験の探りを導く など）に分けます。後半では、長く瞑想してきた人の自己の境界が溶ける体験を、十年かけて脳磁図と面接で調べた流れを書きます。
 
-**確かめ先と読んだ頁**：Berkovich-Ohana, A., Dor-Ziderman, Y., Trautwein, F.-M., Schweitzer, Y., Nave, O., Fulder, S., & Ataria, Y. (2020). The hitchhiker's guide to neurophenomenology: The case of studying self boundaries with meditators. *Frontiers in Psychology* 11, 1680. DOI 10.3389/fpsyg.2020.01680（Crossref と一致）。出版社の PDF（CC BY）。手元の `A01_Berkovich-Ohana_2020_hitchhikers-guide.pdf`。読んだ頁：pp.1–3・7・13・15。
+**確かめ先と読んだ頁**：Berkovich-Ohana, A., Dor-Ziderman, Y., Trautwein, F.-M., Schweitzer, Y., Nave, O., Fulder, S., & Ataria, Y. (2020). The hitchhiker's guide to neurophenomenology: The case of studying self boundaries with meditators. *Frontiers in Psychology* 11, 1680. DOI 10.3389/fpsyg.2020.01680（Crossref と一致）。出版社の PDF（CC BY）。手元の PDF。読んだ頁：pp.1–3・7・13・15。
 
 **照合の状態**：本文照合済（出版社の版）。
 
@@ -433,13 +433,13 @@ status: reviewed
 
 **一人称と三人称**：一人称は、瞑想の中での自己の境界の感じの記述です。三人称は、脳磁図の周波数と部位です。
 
-**並べる相手とのかかわり（Claude の読み）**：自己の境界が溶ける体験を扱う点で、体験 1・2 と構造が似ています。研究の中身は A03 で見ます。
+**並べる相手とのかかわり（Claude の読み）**：自己の境界が溶ける体験を扱う点で、体験 1・2 と構造が似ています。研究の中身は、自己と境界の領域で見ます。
 
 ### 15. ふだんと違う意識の状態（Timmermann ら 2023）
 
 **要旨**：催眠・瞑想・幻覚剤による、ふだんと違う意識の状態を、神経現象学で調べる枠組みを出す総説です。こうした状態は、体験の中身（何が現れるか）と構造（どう現れるか）の両方を動かすので、体験の可塑性を、心・脳・身体・文脈の多くの尺度で調べられる、と書きます。
 
-**確かめ先と読んだ頁**：Timmermann, C., Bauer, P. R., Gosseries, O., Vanhaudenhuyse, A., Vollenweider, F., Laureys, S., Singer, T., MLE ENCECON Research Group, Antonova, E., & Lutz, A. (2023). A neurophenomenological approach to non-ordinary states of consciousness: Hypnosis, meditation, and psychedelics. *Trends in Cognitive Sciences* 27(2), 139–159. DOI 10.1016/j.tics.2022.11.006（Crossref と一致）。ロンドン大学キングス・カレッジの機関リポジトリの PDF（表紙に「Publisher's PDF, also known as Version of record」）。手元の `A01_Timmermann_2023_non-ordinary-states.pdf`（22 頁）。読んだ頁：pp.139–140・149・155–156。チューリッヒ大学のリポジトリは確認画面を、リエージュ大学のものは接続の時間切れを返しました。
+**確かめ先と読んだ頁**：Timmermann, C., Bauer, P. R., Gosseries, O., Vanhaudenhuyse, A., Vollenweider, F., Laureys, S., Singer, T., MLE ENCECON Research Group, Antonova, E., & Lutz, A. (2023). A neurophenomenological approach to non-ordinary states of consciousness: Hypnosis, meditation, and psychedelics. *Trends in Cognitive Sciences* 27(2), 139–159. DOI 10.1016/j.tics.2022.11.006（Crossref と一致）。ロンドン大学キングス・カレッジの機関リポジトリの PDF（表紙に「Publisher's PDF, also known as Version of record」）。手元の PDF（22 頁）。読んだ頁：pp.139–140・149・155–156。チューリッヒ大学のリポジトリは確認画面を、リエージュ大学のものは接続の時間切れを返しました。
 
 **照合の状態**：本文照合済（機関リポジトリの出版社の版）。
 
@@ -455,7 +455,7 @@ status: reviewed
 
 **一人称と三人称**：一人称の構造の記述（ふだんの構え、自然な態度が乱れる）と、三人称の測定（デフォルトモード網の活動など）を分けて書いています。
 
-**並べる相手とのかかわり（Claude の読み）**：ふだんの「自然な態度」や体験との「融合」が乱れる状態を対象にしている点で、体験 1・2 と構造が似ています。中身は A03 で見ます。
+**並べる相手とのかかわり（Claude の読み）**：ふだんの「自然な態度」や体験との「融合」が乱れる状態を対象にしている点で、体験 1・2 と構造が似ています。中身は、自己と境界の領域で見ます。
 
 ## 既存の as の資料と学術版の判定
 
@@ -463,21 +463,21 @@ status: reviewed
 
 | 番号 | 資料と所 | 主張 | 判定 | 重さ | 中身 |
 |---|---|---|---|---|---|
-| 1 | `as/evidence/review/band-signal-source-reading.md` §2-6 | Varela（1996）は、訓練された一人称の報告と三人称の脳の測定を互いに制約させる方法を提案した | 一致 | ― | Varela 1996 の III.2（相互制約）と II.2（訓練）と合う |
+| 1 | as の調べの記録「band × signal source reading」§2-6 | Varela（1996）は、訓練された一人称の報告と三人称の脳の測定を互いに制約させる方法を提案した | 一致 | ― | Varela 1996 の III.2（相互制約）と II.2（訓練）と合う |
 | 2 | 同 §2-6 | Lutz ら（2002）は、課題の前の構えの一人称の報告で試行を分け、分けたごとに脳の同期の型が違うことを示した | 一致（注記） | 低 | 本文（pp.1586–1590）と合う。4 人の予備的な研究で、著者は「first step」と書き、報告の分け方が反応時間だけの分け方と大きく重なったと書く（p.1590）。「示した」は、この厚みを添えて読む |
 | 3 | 同 §2-6 の見出し「瞑想の神経現象学」と §9 の書誌の見出し | Varela 1996 と Lutz ら 2002 を「瞑想の神経現象学」に置く | 取り違え（分類） | 低 | PNAS の本文は、4 人を課題で訓練したと書き、瞑想の経験に触れていない（p.1587）。Varela 1996 は瞑想の研究でなく方法の提案。Timmermann ら（2023, p.140）は経験のある瞑想者と書くが、引いているのは PCS の別の論文で、未確認 |
 | 4 | 同 §2-6 | H1〜H3 の検証もこの型（一人称の報告で分けてから生理を見る）で組める | 未判定 | 中 | 原典の主張でなく、as の設計の提案。原典の側から添えることは二つ。この型は相互制約のうち一方向だけで（Thompson ら 2005, 著者稿 p.9）、報告の分類が行動の分類と重なる恐れがある（Lutz ら 2002, p.1590、Bockelman ら 2013, p.2） |
 | 5 | 同 §9 の書誌 | Varela 1996 *JCS* 3(4), 330–349。Lutz ら 2002 *PNAS* 99(3), 1586–1591, DOI 10.1073/pnas.032658199 | 一致 | ― | Lutz ら 2002 は Crossref と一致。Varela 1996 は Timmermann ら 2023 の文献表と一致 |
-| 6 | `as/evidence/review/first-person-vs-third-person.md` §6・§8 | 一人称経験が本論、三人称記述は参照枠 | 抜け | 中 | as の設計の原則で、神経現象学への帰属は書いていない。神経現象学は二つの記述に「equal status」を求め（Varela 1996 III.2）、三人称のデータが一人称の記述を直すことも相互制約に含める（Thompson ら 2005, 著者稿 p.9）。as の原則がこの点で神経現象学と違うことが書かれていない |
-| 7 | `as/evidence/review/neurophenomenology-design.md` §1・§6 | 神経現象学を、一人称経験の記述の単位を支える参照枠として使う。最初の読書セットは欠損駆動思考の旧資料など 8 点 | 抜け | 中 | 読書セットに、神経現象学の方法の原典（一人称の方法・面接・内観の信頼性の議論）が一つも無い。記述の単位を論じるなら、Petitmengin（2006）の六つの難しさや、Depraz ら（2000）の気づきの三つの動きが要になる |
-| 8 | `as/evidence/review/neurophenomenology-intake-map.md` §3-4・§6 | 前反省的気づきの記述の単位と層の対応は未確定 | 抜け | 低 | 前反省的なものが反省的な気づきになる過程は、Depraz ら（2000）と Petitmengin（2006）が方法の主題として扱っている。出典が無い |
-| 9 | `ks/docs/issues/survey-216/lane2-neuro.md` handoff と Issue #36 | 神経現象学は一人称報告と脳動態を相互制約させる方法論 | 一致 | ― | Varela 1996 III.2、Lutz & Thompson 2003 pp.31–32 と合う |
+| 6 | as の調べの記録「first-person vs third-person」§6・§8 | 一人称経験が本論、三人称記述は参照枠 | 抜け | 中 | as の設計の原則で、神経現象学への帰属は書いていない。神経現象学は二つの記述に「equal status」を求め（Varela 1996 III.2）、三人称のデータが一人称の記述を直すことも相互制約に含める（Thompson ら 2005, 著者稿 p.9）。as の原則がこの点で神経現象学と違うことが書かれていない |
+| 7 | as の調べの記録「neurophenomenology design」§1・§6 | 神経現象学を、一人称経験の記述の単位を支える参照枠として使う。最初の読書セットは欠損駆動思考の旧資料など 8 点 | 抜け | 中 | 読書セットに、神経現象学の方法の原典（一人称の方法・面接・内観の信頼性の議論）が一つも無い。記述の単位を論じるなら、Petitmengin（2006）の六つの難しさや、Depraz ら（2000）の気づきの三つの動きが要になる |
+| 8 | as の調べの記録「neurophenomenology intake map」§3-4・§6 | 前反省的気づきの記述の単位と層の対応は未確定 | 抜け | 低 | 前反省的なものが反省的な気づきになる過程は、Depraz ら（2000）と Petitmengin（2006）が方法の主題として扱っている。出典が無い |
+| 9 | 欠損駆動思考の調査のレーン 2 の報告の引き継ぎの節と Issue #36 | 神経現象学は一人称報告と脳動態を相互制約させる方法論 | 一致 | ― | Varela 1996 III.2、Lutz & Thompson 2003 pp.31–32 と合う |
 | 10 | 同 | 神経現象学は「気づき」の定義を与えない | 言い過ぎ | 低 | 定義の形ではないが、Depraz・Varela・Vermersch（2000）と Lutz & Thompson（2003, p.37）は、気づきになる行為の構造を三つの動きとして記述している |
 | 11 | 同 | 気づき（becoming aware）に名前がある概念は、エポケーの三相（suspension／redirection／letting-go） | 一致 | ― | Depraz ら（2000）著者稿 p.2・p.4、Lutz & Thompson（2003）p.37 と合う。2000 年の本文は二つめを「conversion of attention」、図では「redirection」と呼ぶ。Lutz & Thompson は三つめを「receptivity」と呼ぶ。根拠は lane2 では 2003 年の本の目次で、本文は今回も未照合 |
 | 12 | Issue #36 | 神経現象学で「気づき」に名前がある唯一の概念 | 言い過ぎ | 低 | 唯一かどうかは確かめていない。Petitmengin（2006）は、体験に触れて話す「speech position」や、注意を「何」から「どのように」へ向ける動きなど、気づきにかかわる行為に名前を付けている（pp.255–257） |
 | 13 | 同 | 予測誤差の語彙は無い | 一致 | ― | 2000 年の章の著者稿には predict・error の語が一度も出ない。2003 年の本は未照合 |
-| 14 | 学術版 `assets/awareness/guides/ja/md/awareness-academic.md` の題と「本書の目的」 | 「意識と間主観性 — 神経現象学・心理学・哲学からの状況証拠」。対象読者に神経現象学 | 言い過ぎ | 中 | §2 の状況証拠に、神経現象学の方法（訓練した一人称の記述と神経の測定を互いの制約にする）を使った研究は一つも無い。挙がるのは三人称の測定（Coan ら 2006 の脳の測定など）と疫学・行動の研究。題の「神経現象学」は、方法の意味では当たらない |
-| 15 | `as/index.html`（調べ始めたところの段） | 神経現象学（体験の記述と、神経の働きの知見を突き合わせる見方） | 一致 | ― | Varela 1996 の相互制約と合う。「突き合わせる」は、片方を他方の説明に使わない書き方で、原典の向きと合う |
+| 14 | 学術版の報告「意識と間主観性」の題と「本書の目的」 | 「意識と間主観性 — 神経現象学・心理学・哲学からの状況証拠」。対象読者に神経現象学 | 言い過ぎ | 中 | §2 の状況証拠に、神経現象学の方法（訓練した一人称の記述と神経の測定を互いの制約にする）を使った研究は一つも無い。挙がるのは三人称の測定（Coan ら 2006 の脳の測定など）と疫学・行動の研究。題の「神経現象学」は、方法の意味では当たらない |
+| 15 | 意識とはの公開ページ（調べ始めたところの段） | 神経現象学（体験の記述と、神経の働きの知見を突き合わせる見方） | 一致 | ― | Varela 1996 の相互制約と合う。「突き合わせる」は、片方を他方の説明に使わない書き方で、原典の向きと合う |
 
 ## 分からなかったこと・取れなかった原典
 
@@ -489,14 +489,12 @@ status: reviewed
 - 神経現象学への批判（Bayne 2004）の本文の議論。紹介でしか読めていません。
 - 気づきの三つの動き（Depraz ら 2003）の本の本文と、2000 年の章からの変化。
 
-取れなかった原典（ブラウザでの保存が要るもの）：
+本文を読めなかった原典：
 
-| 文献 | 開く URL | 保存名の案 | 止まった理由 | 確かめられること |
-|---|---|---|---|---|
-| Nisbett & Wilson 1977 | https://deepblue.lib.umich.edu/handle/2027.42/92167 | `A01_Nisbett_1977_telling-more.pdf` | 道具には案内の頁、手で開くと 403 | p.231 の文と、実験の組み立て（二次経由の解消） |
-| Johansson ら 2005 | https://lup.lub.lu.se/record/220623 （ルンド大学）または https://philpapers.org/archive/JOHFTD.pdf | `A01_Johansson_2005_choice-blindness.pdf` | PhilPapers は確認画面 | 120 人・13%・26% の数（今は Petitmengin ら 2013 の紹介） |
-| Bayne 2004 | https://doi.org/10.1023/B:PHEN.0000048934.34397.ca | `A01_Bayne_2004_closing-the-gap.pdf` | 有料 | 批判の本文の議論 |
-| Kirchhoff & Hutto 2016 | https://constructivist.info/11/2/346 | `A01_Kirchhoff_2016_never-mind-the-gap.pdf` | PDF はログインを返す | 批判の本文と、同じ号の論評 |
-| Froese, Gould & Seth 2011 | https://sro.sussex.ac.uk/id/eprint/56444/ （本文非公開） | `A01_Froese_2011_validating-calibrating.pdf` | 機関リポジトリの本文が非公開。雑誌は有料 | 二重盲検の面接の手順 |
-| Head & Helton 2018 | https://doi.org/10.1007/s00221-016-4623-7 | `A01_Head_2018_troubling-neurophenomenology.pdf` | 有料 | 実験の人数と、神経現象学への批判の範囲 |
-| Depraz, Varela & Vermersch 2003 | https://doi.org/10.1075/aicr.43 | ― | 書籍（購入か図書館） | 三つの動きの本の版での記述 |
+- Nisbett & Wilson（1977）：リポジトリの写しが自動では開けませんでした。p.231 の文と実験の組み立ては、紹介で読んだところまでです。
+- Johansson ら（2005）：写しの置き場が確認画面を返しました。120 人・13%・26% の数は、Petitmengin ら（2013）の紹介によります。
+- Bayne（2004）：有料です。批判の議論は、Bockelman ら（2013）の紹介で読んだところまでです。
+- Kirchhoff & Hutto（2016）：本文はログインが要ります。雑誌の頁の要旨までです。
+- Froese・Gould・Seth（2011）：機関リポジトリの本文が非公開で、雑誌は有料です。二重盲検の面接の手順は、Olivares ら（2015）の紹介によります。
+- Head & Helton（2018）：有料です。実験の人数と批判の範囲は要旨までです。
+- Depraz・Varela・Vermersch（2003）：書籍です。
