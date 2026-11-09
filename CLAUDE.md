@@ -43,6 +43,7 @@
 | 既存の理論・東洋思想・五段階の語を扱う | `docs/rules/stance-theories.md`：理論との距離 |
 | 調べる・引用する | `docs/rules/sources.md`：調べ方と原典の照合 |
 | 特定のページ・Issue を触る | `docs/rules/decisions.md`：そのページ・Issue の行だけ |
+| 「違和感帳」と言われた | `docs/tools/iwakan-cho.md`：pd/ の違和感を置く帳面（アーティファクト）の読み方・返事の書き方・しまい方 |
 
 新しい指摘を受けたら、同じセッションで stance.md か corrections.md に足す。足すときは、まず既にある行に溶かせるかを見る。ページや Issue ごとの判定は decisions.md に、見方として一般化できる一行だけを stance.md に書く。代表例（corrections-examples.md）は型ごとに一、二件に保ち、足すなら入れ替える。
 
