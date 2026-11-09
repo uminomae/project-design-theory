@@ -371,3 +371,8 @@ compile 実行の履歴。append-only。
 - sources: 4
 - pages: 4
 - notes: 初回 compile。pd/knowledge/concepts/ から wiki/concepts/ へ
+
+## [2026-11-09] fix | 原典の取り違えを直す（D13-S06・D24-S02。#73）
+- scope: 出典ページ 2・リンク 6
+- sources: cs の台帳（D13-S05・D13-S06・D24-S02・D24-S17）
+- pages: `sources/D13_dewey_1933_how-we-think-restatement` を外した（手元の PDF は 1910 年版で、1933 年版は読んでいなかった。台帳は `blocked-access`）。`sources/D24_dimarzio_2019_affiliation-conversion-departure` を `sources/D24_dimarzio_2020_people-trapped-inside-shincheonji` に直した（読んだ論文は 2020 年の別の論文。台帳の行は D24-S17）。index・cross-refs・concepts 2・keywords 1 のリンクを合わせた

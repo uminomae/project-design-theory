@@ -1,18 +1,18 @@
 ---
-title: "新宗教運動への加入・改宗・脱プログラミング・離脱の経験"
+title: "「新天地に囚われた人々」：脱プログラミングの暗い面の放映"
 description: "ラファエッラ・ディ・マルツィオ（2020）による韓国のキリスト教系新宗教「新天地」を対象としたテレビ番組の心理学的分析。脱プログラミングの実態と問題を批判的に検討した。"
-aliases: ["Experiences of Affiliation, Conversion, Brainwashing, and Departure", "DiMarzio 2019"]
+aliases: ["People Trapped Inside Shincheonji", "Di Marzio 2020"]
 tags: [source, "D24", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/raw/D24_dimarzio_2019_affiliation-conversion-departure.pdf"
-  manifest_id: "D24-S02"
+  path: "knowledge/raw/D24_dimarzio_2020_people-trapped-inside-shincheonji.pdf"
+  manifest_id: "D24-S17"
 compiled: "2026-04-10"
 status: 正典
 review_state: 未レビュー
 ---
 
-# 新宗教運動への加入・改宗・脱プログラミング・離脱の経験
+# 「新天地に囚われた人々」：脱プログラミングの暗い面の放映
 
 > **高校生向けのやさしい解説**
 >
@@ -46,11 +46,11 @@ review_state: 未レビュー
 - 出典: The Journal of CESNUR, Volume 4, Issue 3, May-June 2020, pages 57-69（"People Trapped Inside Shincheonji: Broadcasting the Darker Side of Deprogramming"）
 - access_status: raw-confirmed
 - **DOI**: [10.26338/tjoc.2020.4.3.4](https://doi.org/10.26338/tjoc.2020.4.3.4)
-- ⚠️ **manifest 登録との不一致**: cs manifest（`D24-S02`）とファイル名は Di Marzio (2019) "Experiences of Affiliation, Conversion, 'Brainwashing,' and Departure"（DOI 10.26338/tjoc.2019.3.2.3）を登録しているが、実際に取得・精読された PDF は同著者 (2020) の Shincheonji 論文である。**本ページの内容・DOI は実読の2020年論文に準拠**。cs 側 manifest の正規化は別途（pd#112 cross-check 記録）。
+- 台帳の行：cs の台帳の `D24-S17`。以前は `D24-S02`（Di Marzio 2019）の名前で登録されていたが、別の論文と分かり、2026-11-09 に行とページの名前を直した（#73）。
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D24_dimarzio_2019_affiliation-conversion-departure.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D24_dimarzio_2019_affiliation-conversion-departure.pdf)（manifest_id: `D24-S02`）
-- **cs 精読ノート**: [knowledge/source-notes/D24/D24-S02_dimarzio-2019.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D24/D24-S02_dimarzio-2019.md)
-- **この wiki ページ（pd）**: [wiki/sources/D24_dimarzio_2019_affiliation-conversion-departure.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D24_dimarzio_2019_affiliation-conversion-departure.md)
+- **cs 原典ファイル**: [knowledge/raw/D24_dimarzio_2020_people-trapped-inside-shincheonji.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D24_dimarzio_2020_people-trapped-inside-shincheonji.pdf)（manifest_id: `D24-S17`）
+- **cs 精読ノート**: [knowledge/source-notes/D24/D24-S17_dimarzio-2020.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D24/D24-S17_dimarzio-2020.md)
+- **この wiki ページ（pd）**: [wiki/sources/D24_dimarzio_2020_people-trapped-inside-shincheonji.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D24_dimarzio_2020_people-trapped-inside-shincheonji.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照

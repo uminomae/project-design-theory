@@ -1,6 +1,6 @@
 # "People Trapped Inside Shincheonji": Broadcasting the Darker Side of Deprogramming
 
-**source_id**: S02 | **domain_id**: D24
+**source_id**: D24-S17 | **domain_id**: D24
 **access_status**: raw-confirmed
 **読解日**: 2026-04-11 | **読解者**: claude-opus-4-6
 **読解方法**: Read (PDF)
@@ -15,7 +15,7 @@
 - **出典**: The Journal of CESNUR, Volume 4, Issue 3, May-June 2020, pp.57-69
 - **DOI / URL**: DOI: 10.26338/tjoc.2020.4.3.4
 
-**注記**: manifest に記載のタイトル "Affiliation, Conversion, Brainwashing, Departure" (J. CESNUR 3(2), 2019) と、実際の PDF の書誌情報（上記）が異なる。実際に読んだのは上記の論文である。
+**注記**（2026-11-09・#73）: このノートは、以前は D24-S02 の名前だった。台帳の D24-S02 の書誌（Di Marzio 2019）とは別の論文と分かり、台帳の行を D24-S17 に分けて、ノートの名前と source_id を直した。読んだのは上記の論文（2020 年）である。
 
 ---
 
