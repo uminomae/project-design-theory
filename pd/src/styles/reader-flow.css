@@ -365,3 +365,9 @@ body.reader-flow .reader-article .tablefit.refs td:nth-child(3) { width: 17%; }
 @media (max-width: 600px) {
     body.reader-flow .reader-article .tablefit.refs td:nth-child(1) { font-size: 0.72rem; }
 }
+
+/* 見渡しの表（語｜向ける先・区別｜出どころ）。中の列を広く取る（love-history の「Love の範囲と種類」・2026-11-09 #79） */
+body.reader-flow .reader-article .tablefit.scope th:nth-child(1),
+body.reader-flow .reader-article .tablefit.scope td:nth-child(1) { width: 22%; }
+body.reader-flow .reader-article .tablefit.scope th:nth-child(3),
+body.reader-flow .reader-article .tablefit.scope td:nth-child(3) { width: 27%; }
