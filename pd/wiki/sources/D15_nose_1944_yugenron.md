@@ -42,7 +42,7 @@ review_state: 未レビュー
 ## 書誌情報
 
 - 著者: 能勢朝次
-- 年: 1940/1944年
+- 年: 1944年（序の日付は 1943 年 9 月）
 - 出典: 河出書房
 - access_status: raw-confirmed
 - **全文**: [Wikimedia Commons](https://commons.wikimedia.org/)
