@@ -21,9 +21,10 @@ description: 創造とは（cs）の全体レビューで、一つの分野（D0
 ## 一つの分野の順番
 
 1. **頼む**：`docs/cs-review/prompts.md` の「1. 内容の照合」を、分野の番号・slug・作業場所（W）・領域ごとの注意で埋め、Opus のエージェントに頼む。報告が引く理論ごとに、台帳にある原典か、無ければ OA の当たり（著者の論文版・PMC・archive.org）を頼む文に書くと、探す時間が減る。slug は `ls ~/dev/pd/pjdhiro/assets/creation/domains/ja/md/` で確かめる。論は、すでに集めた原典（台帳・手元の PDF・精読ノート）をベースにする。読める原典が 10 に届かない分野（README「調査の手順」の表）は、さらに探すよう頼む文に書く。
-   - 原典を探す手順は `docs/rules/sources.md` §5「順番」で固定する。頼む文に、次を書き写す：台帳に無い原典は、まず `bash scripts/find-source.sh find --doi …`（DOI が無ければ `--title … --author … --year …`）を、著者のサイトと雑誌のサイトを `--domain <ドメイン>:author`・`:publisher` で添えて走らせる。`--ledger` には本体の checkout の `cs/knowledge/raw/find-ledger.md` を渡す（worktree の中に書かない）。Bash の allowed_domains に `api.crossref.org`・`api.unpaywall.org`・`api.openalex.org`・`api.semanticscholar.org`・`api.core.ac.uk`・`web.archive.org` を並べる。探す前に台帳で、すでに試した経路を見る。取った PDF は `find-source.sh check` で書誌と突き合わせ、合わなければ捨てて台帳に書く。表の「誰が上げた版か」が個人・不明のものは、頁を開いて上げた人を確かめる（sources §5-8）。表に無い経路は、そのあとに試す。（2026-11-09）
+   - 原典を探す手順は、スキル `find-source`（`.claude/skills/find-source/SKILL.md`）と `docs/rules/sources.md` §5 で固定する。頼む文には、そのスキルを Read して従うことと、次を書く：台帳に無い原典・読めない行は、まず `bash scripts/find-source.sh find`（DOI か `--cite "<台帳の書誌の一行>"`。止まった PDF の URL は `--url`、著者・雑誌のサイトは `--domain <ドメイン>:author`・`:publisher`）で置き場所を引く。`--ledger` は本体の checkout の `cs/knowledge/raw/find-ledger.md`、`--hosts-file` は同じ場所の `find-hosts.tsv`（worktree の中に書かない）。Bash の allowed_domains はスキルの「始める前に」の並び。判定が「自動で取れそう」なら `fetch` で取り（一度だけ。%PDF・末尾・書誌を道具が確かめる）、「ブラウザでの保存が要る」は取りに行かず表に残す。書籍だけで読めない理論は、`discover --author`・`--cited-by` で同じ著者の OA の論文版と、その理論で衝突や至らない形を書いている論文を探す（見つけたものを分野の論として足すかは README「調査の手順」1 の目安のまま）。（2026-11-09）
+   - 分野を始める前に、司令塔が `bash scripts/find-source.sh batch --manifest cs/knowledge/raw/manifest.md --status blocked-access,citation-only --domain-id Dxx --note-urls --out <本体の .cache/raw/ の下> --ledger …` を裏で流しておくと、頼む文に書く「OA の当たり」が先にそろう（2026-11-09）。
 2. **確かめ直す**：報告が届いたら、要の点を二つ三つ自分で確かめる（DOI を Crossref で引く、原典か精読ノートの引用を一つ開く、今の報告の行を一つ開く）。報告をうのみにしない。
-   - エージェントが新しく見つけた原典は、司令塔が `cs/knowledge/raw/manifest.md` に行を足し（公開）、PDF は手元の `cs/knowledge/raw/` に置く（git の外）。足す前に、`bash scripts/find-source.sh check <PDF> --title … --author … --year …` で、先頭が %PDF か、頭の頁の書誌が合うかを見る。
+   - エージェントが新しく見つけた原典は、司令塔が `cs/knowledge/raw/manifest.md` に行を足し（公開）、PDF は手元の `cs/knowledge/raw/` に置く（git の外）。足す前に、`bash scripts/find-source.sh check <PDF> --cite "<台帳の書誌の一行>"` で、先頭が %PDF か、頭の頁の書誌・頁数・版（再録・訳・著者稿・前付けだけ）が合うかを見る。「注意がある」「合わない」は目で確かめ、版を台帳に書く。
 3. **仕上げる**：`node scripts/check-cs-evidence.mjs` を走らせて機械の点検を通し、エージェントが書いた `cs/evidence/evidence-Dxx-*.md` を README「記録の品質の点検」の人の目の項目で読んで直す。
    - 中心の問い：論ごとに、対立・衝突・統合・新たな安定（または至らない形）が一行になっているか。悪い統合も統合、片方の勝利は波に留まるか場に戻る（README「中心の問い」）。
    - 一次情報：各論に確かめ先（URL・DOI）と読んだ頁があるか。照合の状態は `sources.md` §3 の四つか。
@@ -45,5 +46,6 @@ CLAUDE.md の「セッションの終わりに」を行う。このスキルで�
 
 足した行には日付を付ける（pjdhiro 2026-11-08）。
 
+- 2026-11-09：原典を探す手順をスキル `find-source` に分け、頼む文と PDF の突き合わせからそれを指すようにした。分野の前に台帳の読めない行を `batch` で流す段を足した。
 - 2026-11-09：原典を探す順番を `scripts/find-source.sh` に固定し、頼む文・PDF の突き合わせ・手で頼む表の書き方から使うようにした（sources §5「順番」）。
 - 2026-11-08：スキルを書いた（試しの一巡のあと）。本番の 5 分野のあとに、UI の段（reviewed.json）、確かめ直しの三つ、Issue のコメントの形、PDF の依頼の表、機械の点検、同時に一つずつ、セッションの終わりの追記先を足した。
