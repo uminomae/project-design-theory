@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!-- 背景だけを映す枠。samples.html が iframe で開く。?bg=orbit|lens|binary・?motion=still -->
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>背景の見本</title>
+    <link rel="stylesheet" href="../styles/tokens.css">
+    <style>
+        html, body { margin: 0; height: 100%; background: #05070d; overflow: hidden; }
+        #webgl-container { position: fixed; inset: 0; }
+    </style>
+</head>
+<body>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <script type="module" src="./love-field.js"></script>
+</body>
+</html>
