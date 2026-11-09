@@ -229,7 +229,7 @@ date: 2026-11-09
 | 何を Love と呼んだか | 愛語とは、衆生を見て、まず慈愛の心を起こし、顧愛の言葉をかけること、とします。乱暴な言葉が無いこと、世俗の挨拶や仏道の「珍重」の言葉もそこに入れます。衆生を赤子のように思う心を蓄えて話すのが愛語で、徳のある人はほめ、徳の無い人はあわれむ、と続けます。愛語を好めば愛語は少しずつ増え、怨敵を降し、君子を和睦させる根本になる、とします。向かい合って聞けば顔を喜ばせ、陰で聞けば肝に銘じる、とも書きます |
 | Love を何として書いているか | 言葉として外に出る行い。愛語は愛心から起こり、愛心は慈心を種とする、という順で、言葉・愛の心・慈の心をつないでいます。四つの方法は互いに他の三つを含むので十六になる、と結びます |
 | 鍵の文 | 「愛語トイフハ。衆生ヲミルニ。マツ慈愛ノ心ヲオコシ。顧愛ノ言語ヲホトコスナリ。」（T2582, 82.174c29–175a02）<br>「シルヘシ愛語ハ愛心ヨリオコル。愛心ハ慈心ヲ種子トセリ。愛語ヨク迴天ノチカラアルコトヲ學スヘキナリ。」（82.175a17–a19） |
-| 出典と照合の状態 | 本文照合済（大正蔵の本文）。[SAT 大正新脩大藏經テキストデータベース 2018](https://21dzk.l.u-tokyo.ac.jp/SAT2018/master30.php) の T2582（大正蔵 82 巻）で読みました。大正蔵の本文はカタカナ交じりで、よく引かれる平仮名の形（「愛語よく廻天の力あることを学すべきなり」）とは表記が違います。大正蔵は「迴天」です。愛語の段は 82.174c29〜175a19 |
+| 出典と照合の状態 | 本文照合済（大正蔵の本文）。[SAT 大正新脩大藏經テキストデータベース 2018](https://21dzk.l.u-tokyo.ac.jp/SAT2018/satdb2018pre.php?mode=detail&ob=1&mode2=2&useid=2582_,82,0174c29) の T2582（大正蔵 82 巻）で読みました。大正蔵の本文はカタカナ交じりで、よく引かれる平仮名の形（「愛語よく廻天の力あることを学すべきなり」）とは表記が違います。大正蔵は「迴天」です。愛語の段は 82.174c29〜175a19 |
 
 </div>
 
@@ -286,7 +286,7 @@ date: 2026-11-09
 
 <details><summary>手前に — ヘシオドスとパルメニデスのエロス</summary>
 
-ヘシオドス『神統記』（前 700 年ごろ）は、カオス・ガイア・タルタロスに続いて生まれた神としてエロスを数え、「不死の神々の中で最も美しく、手足を緩ませ、すべての神々と人間の胸の中で心と賢い思慮を打ち負かす」と書いています（117〜122 行。原文は「ἠδʼ Ἔρος, ὃς κάλλιστος ἐν ἀθανάτοισι θεοῖσι, λυσιμελής, πάντων δὲ θεῶν πάντων τʼ ἀνθρώπων δάμναται ἐν στήθεσσι νόον καὶ ἐπίφρονα βουλήν」）。本文照合済（Perseus の TEI XML・Evelyn-White 版）。
+ヘシオドス『神統記』（前 700 年ごろ）は、カオス・ガイア・タルタロスに続いて生まれた神としてエロスを数え、「不死の神々の中で最も美しく、手足を緩ませ、すべての神々と人間の胸の中で心と賢い思慮を打ち負かす」と書いています（116〜122 行。原文は「ἠδʼ Ἔρος, ὃς κάλλιστος ἐν ἀθανάτοισι θεοῖσι, λυσιμελής, πάντων δὲ θεῶν πάντων τʼ ἀνθρώπων δάμναται ἐν στήθεσσι νόον καὶ ἐπίφρονα βουλήν」）。本文照合済（Perseus の TEI XML・Evelyn-White 版）。
 
 パルメニデス（前 5 世紀前半）には「すべての神々のうち最初にエロスを工夫した」（πρώτιστον μὲν ἔρωτα θεῶν μητίσατο πάντων・DK 28 B13）の一行が伝わります。『饗宴』178b と『形而上学』984b26 が引いている形で確かめました（本文照合済・引用者の本文として）。主語が誰かは、引用している側の本文からは読めません。アリストテレスは、二人がエロスを原理（ἀρχή）として置いた、と読んでいます（『形而上学』A4, 984b23–29）。
 
@@ -301,7 +301,7 @@ date: 2026-11-09
 | 何を Love と呼んだか | 四つの根（火・水・土・空気）が、あるときは愛（Φιλότης）で一つに集まり、あるときは争い（Νεῖκος）の憎しみで分かれる、という交替を語ります。愛は四つの根と並ぶもので「長さも幅も等しい」とされ、人の体に宿って親しい思いと和合の仕事をさせ、「喜び」「アフロディテ」とも呼ばれる、と書かれています |
 | Love を何として書いているか | 四つの根を一つに集める働き（原理）。同時に、長さと幅を持つもの。アフロディテという神の名でも呼ばれます。英訳者 Burnet は「非物体的な力ではなく、物体的な要素」と注しています（Burnet の解釈） |
 | 鍵の文 | 「ἄλλοτε μὲν Φιλότητι συνερχόμεν' εἰς ἓν ἅπαντα, ἄλλοτε δ' αὖ δίχ' ἕκαστα φορεύμενα Νείκεος ἔχθει.」（B17, 7–8）<br>訳：あるときはすべてが愛によって集まって一つになり、あるときは争いの憎しみによって、それぞれがばらばらに運ばれる |
-| 出典と照合の状態 | 本文照合済（訳）。[Diels『Fragmente der Vorsokratiker』第 2 版 第 1 巻（1906）](https://archive.org/details/diefragmentederv01dieluoft)の 177〜178 ページ（ドイツ語訳で読み、ギリシャ語は OCR の字形と照らした）と、[Burnet『Early Greek Philosophy』第 2 版（1908・Project Gutenberg）](https://www.gutenberg.org/ebooks/67097)の英訳。エンペドクレス自身の語は Φιλότης で、Φιλία はアリストテレス（『形而上学』985a3–5）などの言い換えです |
+| 出典と照合の状態 | 本文照合済（訳）。[Diels『Fragmente der Vorsokratiker』第 2 版 第 1 巻（1906）](https://archive.org/details/diefragmentederv01dieluoft)の B17 は 177〜179 ページ、B26 は 182〜183 ページ、B35 は 185〜186 ページ（ドイツ語訳で読み、ギリシャ語は OCR の字形と照らした）と、[Burnet『Early Greek Philosophy』第 2 版（1908・Project Gutenberg）](https://www.gutenberg.org/ebooks/67097)の英訳。エンペドクレス自身の語は Φιλότης で、Φιλία はアリストテレス（『形而上学』985a3–5）などの言い換えです |
 
 </div>
 
@@ -648,13 +648,13 @@ date: 2026-11-09
 | 仏教 | 『大智度論』T1509, 25.256b（巻 27）・209a（巻 20）・350b（巻 40） | 漢文 | [CBETA T1509 巻 27](https://cbetaonline.dila.edu.tw/zh/T1509_027)・[巻 20](https://cbetaonline.dila.edu.tw/zh/T1509_020)・[巻 40](https://cbetaonline.dila.edu.tw/zh/T1509_040) |
 | 仏教 | Śāntideva, *Bodhicaryāvatāra* 8.90・8.120 | 原文 | [GRETIL](https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zAntideva-bodhicaryAvatAra.txt) |
 | 仏教 | 『歎異抄』第四条（蓮如書写本） | 講座資料の翻刻 | [親鸞仏教センターの講座資料](https://shinran-bc.higashihonganji.or.jp/site/wp-content/uploads/2025/12/kaimei20250218.pdf) |
-| 仏教 | 道元『正法眼蔵』菩提薩埵四摂法 T2582, 82.174c29–175a19 | 大正蔵の本文 | [SAT 2018](https://21dzk.l.u-tokyo.ac.jp/SAT2018/master30.php)（手で開いた）・T2582, 82.174c29–175a19 |
+| 仏教 | 道元『正法眼蔵』菩提薩埵四摂法 T2582, 82.174c29–175a19 | 大正蔵の本文 | [SAT 2018](https://21dzk.l.u-tokyo.ac.jp/SAT2018/satdb2018pre.php?mode=detail&ob=1&mode2=2&useid=2582_,82,0174c29)・T2582, 82.174c29–175a19 |
 | 中国の思想 | 『論語』顔淵 12.22 | 原文・Legge 訳 | [zh.wikisource](https://zh.wikisource.org/wiki/論語/顏淵第十二)・[ctext.org](https://ctext.org/analects/yan-yuan)（手で開いた） |
 | 中国の思想 | 『墨子』兼愛中 | 原文 | [zh.wikisource](https://zh.wikisource.org/wiki/墨子/兼愛中) |
 | 中国の思想 | 『孟子』離婁下 28・尽心上 45・滕文公上 5・滕文公下 9 | 原文・Legge 訳は 4B28・7A45 だけ照合済 | zh.wikisource の[離婁下](https://zh.wikisource.org/wiki/孟子/離婁下)・[尽心上](https://zh.wikisource.org/wiki/孟子/盡心上)・[滕文公上](https://zh.wikisource.org/wiki/孟子/滕文公上)・[滕文公下](https://zh.wikisource.org/wiki/孟子/滕文公下)／ctext.org の[離婁下](https://ctext.org/mengzi/li-lou-ii)・[尽心上](https://ctext.org/mengzi/jin-xin-i)（手で開いた） |
-| ギリシャ哲学 | Hesiod, *Theogony* 116–122（Evelyn-White 版） | 原文 | [Perseus](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0130:card=116) |
+| ギリシャ哲学 | Hesiod, *Theogony* 116–122（Evelyn-White 版） | 原文 | [Perseus](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0129:card=116) |
 | ギリシャ哲学 | Parmenides DK 28 B13（Plato, *Symposium* 178b・Aristotle, *Metaphysics* 984b26 の引用） | 引用者の本文として | [Perseus（『饗宴』178b の引用）](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0173:text=Sym.:section=178b) |
-| ギリシャ哲学 | Empedocles DK 31 B17・B26・B35（Diels 1906, pp.177–178・Burnet 1908 英訳） | 訳 | [Diels 1906](https://archive.org/details/diefragmentederv01dieluoft)・[Burnet 1908](https://www.gutenberg.org/ebooks/67097) |
+| ギリシャ哲学 | Empedocles DK 31 B17・B26・B35（Diels 1906, B17 pp.177–179・B26 pp.182–183・B35 pp.185–186・Burnet 1908 英訳） | 訳 | [Diels 1906](https://archive.org/details/diefragmentederv01dieluoft)・[Burnet 1908](https://www.gutenberg.org/ebooks/67097) |
 | ギリシャ哲学 | Plato, *Symposium* 180c–185c・189c–193d・199c–201c・202d–212a（Burnet 1903・Fowler 1925） | 原文 | [Perseus（ギリシャ語）](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0173:text=Sym.:section=203b)・[Fowler 訳](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0174:text=Sym.:section=203b) |
 | ギリシャ哲学 | Plato, *Phaedrus* 244a–257b（Burnet 1903・Fowler 1925） | 原文 | [Perseus（ギリシャ語）](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0173:text=Phaedrus:section=244a)・[Fowler 訳](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0174:text=Phaedrus:section=244a) |
 | ギリシャ哲学 | Aristotle, *Nicomachean Ethics* VIII–IX, 1155a–1172a（Bywater・Rackham） | 原文 | [Perseus（Rackham 訳）](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0054:bekker+page=1155a) |
