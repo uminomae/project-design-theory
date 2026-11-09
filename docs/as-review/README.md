@@ -9,7 +9,7 @@
 | `README.md`（この文書） | 計画・規約・判断が要ること |
 | `prompts.md` | エージェントに頼む文の雛形 |
 
-入口の Issue は #95。
+入口の Issue は #95。確かめ用のページ（判断が要ることを並べ、pjdhiro がコメントで答える。stance 2-8）：https://claude.ai/artifact/Cc9LoUfrxQbsuCkZ3HEWVM 。この文書を直したら、ページも今の状態に合わせる。
 
 ## 始め方
 
