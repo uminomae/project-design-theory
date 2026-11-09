@@ -354,7 +354,7 @@ Cook-Greuter が各段階の自己同一性（自分を何者として感じる�
 
 段階の記述の補い（「段階のしくみ」の表）：
 
-- **CG**：Cook-Greuter, S. R. (2013). Nine Levels of Increasing Embrace in Ego Development (prepublication version). [PDF](https://pdf.stafforini.com/cook-greuter-2013-nine-levels-increasing.pdf)
+- **CG**：Cook-Greuter, S. R. (2013). Nine Levels of Increasing Embrace in Ego Development (prepublication version). [PDF（著者のサイトに置かれていた版）](https://web.archive.org/web/20140928135208/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1%2714%2097p%5B1%5D.pdf)
   - より詳しく知りたい方へ：[自我発達の9段階ノート](https://claude.ai/artifact/RU7CnNTSe6qQW2i4EpHyCy)（CG の 9 段階を、章立てに沿って日本語でまとめた学習ノート。翻訳ではありません）
 
 <details>
