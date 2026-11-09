@@ -1,12 +1,14 @@
 # How We Think
 
-**source_id**: D13-S06 | **domain_id**: D13 (哲学)
+**source_id**: D13-S05（別の走査） | **domain_id**: D13 (哲学)
 **access_status**: raw-confirmed
 **読解日**: 2026-04-10 | **読解者**: Claude Opus 4.6
 **読解方法**: Read (PDF)
 **原典ページ数**: 推定 224+ | **読解ページ範囲**: pp.1-87 (表紙、序文、目次、第1-7章)
 
 **注**: manifest では「How We Think: A Restatement (1933)」と記載されているが、実際に取得された PDF は 1910 年初版（序文の日付 "New York City, December, 1909"、出版社 D.C. Heath & Company）である。1933 年改訂版（副題 "A Restatement of the Relation of Reflective Thinking to the Educative Process"）とは内容に差異がある可能性がある。以下は 1910 年初版に基づく読解である。
+
+**追記**（2026-11-09・#73）: このノートは、以前は D13-S06（1933 年版）の名前だった。読んだ PDF が 1910 年版（Internet Archive の item HowWeThink の走査）なので、D13-S05 の別の走査のノートとして名前と source_id を直した。台帳の D13-S06（1933 年版）は `blocked-access` に下げた。手元のファイルは `knowledge/raw/D13_dewey_1910_how-we-think_ia-scan.pdf`。
 
 ---
 
