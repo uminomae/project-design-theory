@@ -46,6 +46,22 @@
 
 ## 5. 取得する
 
+原典の置き場所は、決まった順番で探す。経路を思いつきで選ぶと、早く当たったところで止まったり、同じ名前の別の文献を掴んだりする（2026-11-09・stages-screener の出典の行が、Starr & Torbert 2005 の名前のまま別の論文の PDF を指していた。Cook-Greuter 2013 は個人の写ししか無いと思っていたが、著者の昔のサイトにあった。pjdhiro「claude は間違えたり、見つけられなかったりする。どうすれば精度が上がるか」）。
+
+### 順番
+
+1. **スクリプトで全部引く**：`bash scripts/find-source.sh find` に DOI か題（＋著者・年）を渡す。Crossref（書誌の確定）→ Unpaywall（無料の版と host_type・version）→ OpenAlex（locations）→ Semantic Scholar（openAccessPdf）→ CORE → Wayback の CDX（`--domain` で渡した著者のサイト・雑誌のサイトの PDF の一覧）を、早く当たっても止めずに全部引き、見つかった場所を「誰が上げた版か」（出版社／大学・機関リポジトリ／著者のサイト／個人／不明）つきの表で出す。
+   - 著者のサイトと雑誌のサイトは、今のものと昔のもの（Wayback）の両方を `--domain <ドメイン>:author`・`:publisher` で渡す。ドメインは、著者の所属・雑誌の名前・今までの記録の URL から探す。
+   - サンドボックスでは allowed_domains に `api.crossref.org`・`api.unpaywall.org`・`api.openalex.org`・`api.semanticscholar.org`・`api.core.ac.uk`・`web.archive.org` を並べる。連絡先のメール（Unpaywall に要る）と CORE のキーは、環境変数 `FIND_SOURCE_EMAIL`・`CORE_API_KEY` で渡す。repo には書かない。無ければその経路は「飛ばした」と表に出る。
+   - Crossref が「近い候補なし」「著者が違う」と言ったら、その DOI を使わない。DOI の無い文献（未刊の論文・小さな雑誌・本）のことが多い。
+   - 「誰が上げた版か」はドメインからの見立て。載せる前に、その頁を開いて上げた人を確かめる（下の 8）。
+   - 表に無い経路（書籍の検索・大学の図書館・著者の出版物の一覧など）は、そのあとに試す（下の 1）。
+2. **突き合わせる**：取った PDF は `bash scripts/find-source.sh check <PDF> --title … --author … --year … [--pages …]` で、先頭が `%PDF` か、頭の頁に題と著者があるか、頁数が合うかを見る（下の 3・4）。写しを差し替えるときは `bash scripts/find-source.sh compare <前の写し> <新しい写し>` で、本文の語の並びを突き合わせる。
+3. **台帳に残す**：`find` に `--ledger <ファイル>` を付けて、試した経路と結果を追記する。次のセッションが同じ場所を叩かないため（下の 2）。創造とはの分野のレビューでは `cs/knowledge/raw/find-ledger.md`、それ以外は `.cache/raw/find-ledger.md`。どちらも git の外なので、worktree で作業するときも本体の checkout の側に書く（場所は `git rev-parse --git-common-dir` の一つ上。worktree の中に書くと worktree と一緒に消える）。探す前に台帳を開き、すでに試した経路を先に見る。
+4. **最後に pjdhiro に手で開いてもらう**：自動で取れなかったもの（確認画面・ログイン・403）だけを、一件ずつ表にして頼む（下の 7）。列は、開く URL・ページ内で探す語・持ち帰るもの（貼る範囲、または保存先と保存名）・それで何を確かめるのか。何を見ればよいかが分からない頼み方をしない（corrections 型 R）。
+
+### 決まり
+
 1. 早く諦めない。取れないと言う前に、別の経路を四つ以上試す（オープンアクセスの検索・著者や大学のサイト・機関リポジトリ・学術検索の PDF リンク・公開書籍のアーカイブ・書籍の検索 など）。（2026-06-26 の指摘）
 2. 同じ方法で同じ場所を何度も叩かない。自動取得を拒むサイトや、出版社の 403 は、繰り返しても取れない。そのときは pjdhiro にブラウザでの保存を頼む。
 3. 取れたかどうかは、返事の番号でなく中身で判断する。PDF なら先頭が `%PDF` か。HTML の案内ページを掴んでいないか。
