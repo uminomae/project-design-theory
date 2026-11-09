@@ -51,15 +51,21 @@
 
 ### 順番
 
-1. **スクリプトで全部引く**：`bash scripts/find-source.sh find` に DOI か題（＋著者・年）を渡す。Crossref（書誌の確定）→ Unpaywall（無料の版と host_type・version）→ OpenAlex（locations）→ Semantic Scholar（openAccessPdf）→ CORE → Wayback の CDX（`--domain` で渡した著者のサイト・雑誌のサイトの PDF の一覧）を、早く当たっても止めずに全部引き、見つかった場所を「誰が上げた版か」（出版社／大学・機関リポジトリ／著者のサイト／個人／不明）つきの表で出す。
-   - 著者のサイトと雑誌のサイトは、今のものと昔のもの（Wayback）の両方を `--domain <ドメイン>:author`・`:publisher` で渡す。ドメインは、著者の所属・雑誌の名前・今までの記録の URL から探す。
-   - サンドボックスでは allowed_domains に `api.crossref.org`・`api.unpaywall.org`・`api.openalex.org`・`api.semanticscholar.org`・`api.core.ac.uk`・`web.archive.org` を並べる。連絡先のメール（Unpaywall に要る）と CORE のキーは、環境変数 `FIND_SOURCE_EMAIL`・`CORE_API_KEY` で渡す。repo には書かない。無ければその経路は「飛ばした」と表に出る。
-   - Crossref が「近い候補なし」「著者が違う」と言ったら、その DOI を使わない。DOI の無い文献（未刊の論文・小さな雑誌・本）のことが多い。
-   - 「誰が上げた版か」はドメインからの見立て。載せる前に、その頁を開いて上げた人を確かめる（下の 8）。
-   - 表に無い経路（書籍の検索・大学の図書館・著者の出版物の一覧など）は、そのあとに試す（下の 1）。
-2. **突き合わせる**：取った PDF は `bash scripts/find-source.sh check <PDF> --title … --author … --year … [--pages …]` で、先頭が `%PDF` か、頭の頁に題と著者があるか、頁数が合うかを見る（下の 3・4）。写しを差し替えるときは `bash scripts/find-source.sh compare <前の写し> <新しい写し>` で、本文の語の並びを突き合わせる。
-3. **台帳に残す**：`find` に `--ledger <ファイル>` を付けて、試した経路と結果を追記する。次のセッションが同じ場所を叩かないため（下の 2）。創造とはの分野のレビューでは `cs/knowledge/raw/find-ledger.md`、それ以外は `.cache/raw/find-ledger.md`。どちらも git の外なので、worktree で作業するときも本体の checkout の側に書く（場所は `git rev-parse --git-common-dir` の一つ上。worktree の中に書くと worktree と一緒に消える）。探す前に台帳を開き、すでに試した経路を先に見る。
-4. **最後に pjdhiro に手で開いてもらう**：自動で取れなかったもの（確認画面・ログイン・403）だけを、一件ずつ表にして頼む（下の 7）。列は、開く URL・ページ内で探す語・持ち帰るもの（貼る範囲、または保存先と保存名）・それで何を確かめるのか。何を見ればよいかが分からない頼み方をしない（corrections 型 R）。
+道具は `scripts/find-source.sh`。使い方・結果の読み方・写しの性格の書き方・止めどころは、スキル `find-source`（`.claude/skills/find-source/SKILL.md`）にまとめてある。ここには順番と決まりだけを書く。
+
+1. **スクリプトで全部引く**：`bash scripts/find-source.sh find` に DOI か書誌の一行（`--cite`）か題（＋著者・年）を渡す。Crossref（書誌の確定）→ Unpaywall → OpenAlex → Semantic Scholar → Europe PMC → CORE → Internet Archive（本・DOI の無い文献・古い文献）→ Wayback（`--url` で渡した URL そのものの写しと、`--domain` で渡した著者のサイト・雑誌のサイトの PDF の一覧）を、早く当たっても止めずに全部引く。見つかった場所は、取りやすい順に、「誰が上げた版か」（出版社／大学・機関リポジトリ／著者のサイト／授業・個人の頁／個人／不明）と「自動で取れそうか」つきの表で出て、頭に判定が一行で書かれる。
+   - 著者のサイトと雑誌のサイトは、今のものと昔のもの（Wayback）の両方を `--domain <ドメイン>:author`・`:publisher` で渡す。確認画面で止まった PDF の URL は `--url` で渡す（同じ URL の Wayback の写しを引く）。
+   - 連絡先のメール（Unpaywall に要る）とキー（CORE ほか）は、環境変数で渡す。repo には書かない。無ければその経路は「飛ばした」と表に出る。
+   - Crossref が「近い候補なし」「著者が違う」と言ったら、その DOI を使わない。DOI の無い文献（未刊の論文・小さな雑誌・本）のことが多い。年の食い違い・題の重なりの少なさの注意が出たら、巻と頁を目で確かめる。
+   - 「誰が上げた版か」「自動で取れそうか」はドメインと API の返事からの見立て。載せる前に、その頁を開いて上げた人を確かめる（下の 8）。
+   - 表に無い経路（著者の出版物の一覧・大学の図書館・講演・訳の公開アーカイブなど）は、そのあとに試す（下の 1）。
+2. **取って、突き合わせる**：判定が「自動で取れそう」なら `bash scripts/find-source.sh fetch <場所> --out <保存名> --cite …` で一度だけ取る。道具は、先頭が `%PDF` か、途中で切れていないか、頭の頁の題・著者・頁数が合うかを確かめてから保存し、確認画面・ログイン・403 を返したホストを手元の一覧に足して止まる（下の 2・3・4・7）。手元にある PDF は `check <PDF> --cite …` で同じ突き合わせをする（頁の範囲・掲載誌・再録や訳の印・本の前付けだけ、も見る）。写しを差し替えるときは `compare <前の写し> <新しい写し>` で、本文の語の並びを突き合わせる。
+3. **台帳に残す**：`find`・`batch`・`discover` に `--ledger <ファイル>` を付けて、試した経路と結果を追記する。次のセッションが同じ場所を叩かないため（下の 2）。創造とはの分野のレビューでは `cs/knowledge/raw/find-ledger.md`、それ以外は `.cache/raw/find-ledger.md`。どちらも git の外なので、worktree で作業するときも本体の checkout の側に書く（場所は `git rev-parse --git-common-dir` の一つ上。worktree の中に書くと worktree と一緒に消える）。探す前に台帳を開き、すでに試した経路を先に見る。台帳の行や表をまとめて引き直すときは `batch`（済んだものは飛ばす）。
+4. **最後に pjdhiro に手で開いてもらう**：自動で取れなかったもの（確認画面・ログイン・403・貸出だけ）だけを、一件ずつ表にして頼む（下の 7）。列は、開く URL・ページ内で探す語・持ち帰るもの（貼る範囲、または保存先と保存名）・それで何を確かめるのか。何を見ればよいかが分からない頼み方をしない（corrections 型 R）。
+
+### 広く探す
+
+なるべく広く論文を探すのは良いこと（pjdhiro 2026-11-09）。置き場所を引く `find` とは別に、主題や理論の名前・ある論文を引用している論文・その参考文献・著者の論文を、OA かどうかつきで並べる入口 `bash scripts/find-source.sh discover` がある。出るのは候補の一覧で、被引用の数は論の確かさではない。選んだものを `find` → `fetch` → `check` → 読む、の順に進め、読めたものだけを使う（§3）。見つけたものを分野の論として足すかは、その作業の目安に従う（創造とはのレビューでは `docs/cs-review/README.md`「調査の手順」）。
 
 ### 決まり
 
