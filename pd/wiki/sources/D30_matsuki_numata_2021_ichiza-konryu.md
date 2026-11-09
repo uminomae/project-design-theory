@@ -55,7 +55,7 @@ review_state: 未レビュー
 ## 書誌情報
 - 著者: 松木孝和、沼田秀穂
 - 年: 2021
-- 出典: 香川大学大学院地域マネジメント研究科（Graduate School of Management, Kagawa University）
+- 出典: 『社会情報学会大会研究発表論文集』2021, pp.7–11。DOI 10.14836/ssiproceedings.2021.0_7（著者の所属は香川大学大学院地域マネジメント研究科）
 - access_status: raw-confirmed
 - **オープンアクセス**: [J-STAGE](https://www.jstage.jst.go.jp/)
 
