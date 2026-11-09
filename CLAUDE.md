@@ -43,7 +43,7 @@
 | 既存の理論・東洋思想・五段階の語を扱う | `docs/rules/stance-theories.md`：理論との距離 |
 | 調べる・引用する | `docs/rules/sources.md`：調べ方と原典の照合 |
 | 特定のページ・Issue を触る | `docs/rules/decisions.md`：そのページ・Issue の行だけ |
-| 「違和感帳」と言われた | `docs/tools/iwakan-cho.md`：pd/ の違和感を置く帳面（アーティファクト）の読み方・返事の書き方・しまい方 |
+| 司令塔のセッションの始め・「違和感帳」と言われた | `docs/tools/iwakan-cho.md`：pd/ の違和感を置く帳面（アーティファクト）の読み方・返事の書き方・しまい方 |
 
 新しい指摘を受けたら、同じセッションで stance.md か corrections.md に足す。足すときは、まず既にある行に溶かせるかを見る。ページや Issue ごとの判定は decisions.md に、見方として一般化できる一行だけを stance.md に書く。代表例（corrections-examples.md）は型ごとに一、二件に保ち、足すなら入れ替える。
 
@@ -64,6 +64,7 @@
 - 本体の checkout の `.cache/session/` に、一つのセッションにつき一つ、`log-YYYYMMDD-<話題>.md` を書く。`.cache/` は git に入れない。worktree の `.cache/` は worktree と一緒に消えるので、worktree で作業したときも本体の側に書く（場所は `git rev-parse --git-common-dir` の一つ上）。
 - 書くこと：見出しに日付・話題・worktree の名前。見出しの直下に `## 要点` を置き、直したこと・残したこと・commit を 5 行ほどで書く。その次に `## ずれ`（上の手順 3）を置く。その下に本文：直したこと、pjdhiro の判断（趣旨と、何への答えか）、残したこと・次に回したこと、commit。
 - 作業を始める前に、`bash scripts/session-digest.sh` で、その日と前の日の記録の要点（`## 要点`・`## ずれ` と「残したこと」「commit」の節）を読み、今の状態を確かめる（型 K）。本文は、関わる記録だけを開く。全部を読まない（pjdhiro 2026-11-08・毎回読む分を小さく保つため）。
+- 司令塔のセッションは、続けて違和感帳の `items` を読み、Claude がまだ読んでいないものを拾う（`docs/tools/iwakan-cho.md`・pjdhiro 2026-11-09）。
 
 ## Git
 
