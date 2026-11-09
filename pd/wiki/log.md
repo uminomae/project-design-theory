@@ -376,3 +376,8 @@ compile 実行の履歴。append-only。
 - scope: 出典ページ 2・リンク 6
 - sources: cs の台帳（D13-S05・D13-S06・D24-S02・D24-S17）
 - pages: `sources/D13_dewey_1933_how-we-think-restatement` を外した（手元の PDF は 1910 年版で、1933 年版は読んでいなかった。台帳は `blocked-access`）。`sources/D24_dimarzio_2019_affiliation-conversion-departure` を `sources/D24_dimarzio_2020_people-trapped-inside-shincheonji` に直した（読んだ論文は 2020 年の別の論文。台帳の行は D24-S17）。index・cross-refs・concepts 2・keywords 1 のリンクを合わせた
+
+## [2026-11-10] fix | #73 で正本を直したのに写っていなかったところを合わせる
+- scope: 概念ページ 1・出典ページ 5
+- sources: cs/knowledge/five-stages-guide.md（a63af55）、cs の出典ノート D04-S09・D29-S13・D25-S07・D07-S07・D06-S11（#73 の照合）
+- pages: `concepts/創造の5段階モデル` の「場」の対応概念から野中郁次郎の「場（Ba）」を外し、語が同じだけで系譜が別と添えた。`sources/D04_woese_2002…`・`sources/D29_munoz_2018…`・`sources/D25_mauss_1925…` の引用を原典で直した文に合わせた。`sources/D07_schultz_1997…` の頁を 1593–1599 に、`sources/D06_springel_2005…` に Nature の題を足した

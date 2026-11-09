@@ -33,7 +33,7 @@ Woese は、細胞進化の初期段階では水平遺伝子移動（HGT）が�
 
 **ダーウィン閾の存在**
 
-> "there would come a stage in the evolution of cellular organization where the organizational genealogical trace (record) ... would be ephemeral; no stable record could exist. ... at its beginning, cellular evolution would have been driven in the main by HGT" (p.8743)
+> "there would come a stage in the evolution of cellular organization where the organismal genealogical trace (recorded) ... would be ephemeral; no stable record could exist. Suppose that the primitive ancestors of modern cells were of this nature. That would mean that at its beginning, cellular evolution would have been driven in the main by HGT" (p.8743)
 
 細胞組織の複雑さがある閾値を超えると、HGT の頻度が低下し、系統樹的進化が可能になる。
 

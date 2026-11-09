@@ -33,7 +33,7 @@ Mauss は、古代社会および「原始」社会における贈与交換の�
 
 **三つの義務 — 与える・受ける・返す**
 
-> "total prestation does not bring with it only the obligation to return the gifts received; it presupposes two others, of equal importance: the obligation to give them, on the one hand, and the obligation to receive them, on the other." (p.73)
+> "total prestation does not bring with it only the obligation to return the gifts (cadeaux) received; it presupposes two others, of equal importance: the obligation to give them, on the one hand, and the obligation to receive them, on the other." (p.73)
 
 全体的給付を完全に理解するには、返礼の義務だけでなく、与える義務と受ける義務の三つを同一の複合体として捉える必要がある。
 

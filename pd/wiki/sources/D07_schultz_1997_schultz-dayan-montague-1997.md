@@ -41,7 +41,7 @@ D07（神経科学）文脈では、本論文は脳の計算論的視座の中�
 
 - 著者: Wolfram Schultz, Peter Dayan, P. Read Montague
 - 年: 1997
-- 出典: *Science* 275(5306), 1593–1597
+- 出典: *Science* 275(5306), 1593–1599
 - access_status: url-verified
 - **DOI**: [10.1126/science.275.5306.1593](https://doi.org/10.1126/science.275.5306.1593)
 - **オープンアクセス**: [著者公開 PDF](http://www.cs.utexas.edu/~dana/Reward.pdf)
