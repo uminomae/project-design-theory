@@ -500,6 +500,11 @@ details.archive summary { cursor: pointer; font-family: var(--font-display); fon
       if (bS.disabled) bS.title = "司令塔のセッションが開いていません";
       bS.addEventListener("click", () => instructAndCall(id, d, bS, ta.value));
       acts.append(bS);
+      const bM = el("button", "call-item", "直して develop へ取り込む"); bM.type = "button";
+      bM.disabled = canSend !== "available";
+      bM.title = bM.disabled ? "司令塔のセッションが開いていません" : "司令塔が直して develop に取り込み、報告を置きます。書く欄の言葉も添えて送ります";
+      bM.addEventListener("click", () => fixAndMerge(id, d, bM, ta.value));
+      acts.append(bM);
     }
     acts.append(el("span", "spacer"));
     const lab = el("label", null, "状態"); lab.htmlFor = "status-" + id;
@@ -738,6 +743,19 @@ details.archive summary { cursor: pointer; font-family: var(--font-display); fon
     const msg = `違和感帳の一件に${answer ? "答え" : "指示"}を置きました。\n一件：${d.title || firstLine(d.text || "")}（id: ${id}）\n${answer ? "答え" : "指示"}：${text}`;
     const ok = await sendToCommander(btn, msg);
     if (ok) await sendNote(id, answer ? "comment" : "instruction", text);
+    else btn.disabled = false;
+  }
+  async function fixAndMerge(id, d, btn, text) {
+    text = (text || "").trim();
+    btn.disabled = true;
+    const lines = [
+      "違和感帳の一件を直して、develop に取り込んでください。",
+      `一件：${d.title || firstLine(d.text || "")}（id: ${id}）`,
+    ];
+    if (d.choice) lines.push(`選んだ：${d.choice}`);
+    if (text) lines.push(`添えた言葉：${text}`);
+    const ok = await sendToCommander(btn, lines.join("\n"));
+    if (ok) await sendNote(id, "instruction", "直して develop へ取り込む" + (text ? "：" + text : ""));
     else btn.disabled = false;
   }
   document.addEventListener("visibilitychange", () => { if (!document.hidden) refreshCan(); });
