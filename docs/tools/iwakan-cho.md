@@ -35,4 +35,20 @@ pjdhiro が pd/ を読んでいて引っかかったところを、五月雨に�
 5. **しまう。** `done` にするのは pjdhiro が確かめたあと。pjdhiro がページで「しまう」か「取り下げる」を押すと、その一件は `archive` へ移る。
 6. **詳細ページを消す。** `archive` で `linksCleared` が `false` のものは、`links` のアーティファクトを消す待ち。pjdhiro に「片づけて」と言われたら、一つずつ消し（Artifact ツールの delete。毎回 pjdhiro の承認が出る）、消し終えたら `linksCleared: true` にする。消す前に、そのページの判断が `stance.md`・`decisions.md`・Issue に写っているかを見る。
 
+## Claude から置く：判断と報告
+
+対話で pjdhiro に判断を仰ぐときと、作業を報告するときは、チャットでなくこの帳面に置く。チャットには「帳面に置いた」と一行だけ書く（`stance.md` 2-8・pjdhiro 2026-11-09）。
+
+- 一件の形：`from: "claude"`、`kind` は `判断` か `報告`。題は `title`（`text` も同じ文）、中身は `detail`（`## ` は小見出し、`- ` は箇条、空行で段落）。`place` は話の場所（repo の規約や道具なら `repo`）。`lastFrom: "claude"`・`claudeReadAt` は置いた時刻。
+- **判断**：`status: "decide"`。`options: [{label, note}]` を置くと、pjdhiro は押して答える（`choice` に入り、`thread` に「選んだ：…」が足される）。選択肢は 2〜4 個で、推奨を先に。聞く前に、答えの予想をセッションの記録に書く（`CLAUDE.md` の手順 3）。答えを受けたら、規約に写し、`thread` に何をしたかを書いて `status: "done"` にする。
+- **報告**：`status: "done"`。何をしたか・残したこと・確かめていないことを `detail` に短く書く。pjdhiro が「読んだ（しまう）」を押すと、しまったものへ移る。
+- 詳しいことは、別のアーティファクトを作らず `detail` に書く。別のページを作るのは、見本を画面で並べるときだけ。
+
+## 溜めない決まり
+
+- 報告は、読まれなくても 7 日で Claude がしまう（`archive` へ移し、`outcome: "読んだ（7 日）"`）。
+- 別に作ったページは、一件をしまうときに消す（消すたびに承認の画面が出る）。
+- 司令塔を呼んだコメントのスレッドは、返したら resolve する。
+- しまったものをいつ消すかは、pjdhiro の判断を待っている（帳面の判断「しまったものを、いつ消すか」）。決まったら、ここと帳面の `meta/settings` の `archiveRule`（しまったものの欄に出る一文）に書く。消すのは司令塔のセッションの始めで、消す前に判断が stance・decisions・Issue に写っているかを見る。
+
 pjdhiro の判断や見方が `thread` に出たら、ふだんの対話と同じく `stance.md`・`corrections.md`・`decisions.md` に写す。帳面のしまったものは、判断の正本ではない。
