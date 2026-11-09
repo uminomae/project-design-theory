@@ -46,6 +46,8 @@
       "git -C * push *",
       "git -C * fetch *",
       "git -C * pull *",
+      "git merge --ff-only develop",
+      "git -C * merge --ff-only develop",
       "gh",
       "gh *"
     ]
