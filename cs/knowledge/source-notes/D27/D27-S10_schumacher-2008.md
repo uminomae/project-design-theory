@@ -12,7 +12,7 @@
 
 - **著者**: Patrik Schumacher
 - **タイトル**: Parametricism as Style – Parametricist Manifesto
-- **出典**: Dark Side Club, 11th Architecture Biennale, Venice 2008 にて発表（著者サイト掲載日: January 9, 2008）
+- **出典**: Dark Side Club, 11th Architecture Biennale, Venice 2008 にて発表（発表は 2008 年。著者のサイトの今の頁の日付の表示は January 9, 2024）
 - **DOI / URL**: https://patrikschumacher.com/parametricism-as-style-parametricist-manifesto/ （旧 URL `Texts/Parametricism%20as%20Style.htm` は 404、新 URL パスで取得）
 
 ## 2. 要旨（読んだ内容に基づく）
@@ -60,7 +60,7 @@ Parametricism は単なる形式的好みではなく、後期資本主義社会
 
 Agenda 2 の例示:
 
-> "The ambition is to enhance the overall sense of organic integration through intricate correlations that favour deviation amplification rather than compensatory adaptations."
+> "The ambition is to enhance the overall sense of organic integration through intricate correlations that favour deviation amplification rather than compensatory or ameliorating adaptations."
 
 「deviation amplification（偏差増幅）」を正のフィードバックとして受け入れる姿勢は、古典的な調和（補償的適応）と真逆の方針である。
 
@@ -83,8 +83,8 @@ Lakatos の「research programme」概念を明示的に援用し、避けるべ
 | 段階 | 対応候補 | 強度 | 原文引用 |
 |------|---------|------|---------|
 | 1 場 (Field) | Field as fluid medium（Parametricism の存在論的基底） | 強 | "Parametricism differentiates fields. Fields are full, as if filled with a fluid medium." |
-| 2 波 (Wave) | Continuous differentiation / deviation amplification | 弱 | "continuous differentiation (rather than mere variety)" / "deviation amplification rather than compensatory adaptations" |
-| 3 縁 (Relation) | Inter-articulation of subsystems / intricate correlations | 強 | agenda 1 "Inter-articulation of multiple subsystems" / "intricate correlations that favour deviation amplification" |
+| 2 波 (Wave) | Continuous differentiation / deviation amplification | 弱 | "continuous differentiation (rather than mere variety)" / "deviation amplification rather than compensatory or ameliorating adaptations" |
+| 3 縁 (Relation) | Inter-articulation of subsystems / intricate correlations | 強 | agenda 1 "Inter-articulation of sub-systems" / "intricate correlations that favour deviation amplification" |
 | 4 渦 (Vortex) | Parametric responsiveness (kinetic adaptation) / swarm formations | 弱 | agenda 4 "kinetic adaptation" / agenda 5 "swarm formations" |
 | 5 束 (Bundle) | なし | なし | （明示的に subsystems を束ねて wholeness / 閉じた統合体にする記述なし。inter-articulation は結合論であって束ね論ではない） |
 

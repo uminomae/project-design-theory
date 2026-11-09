@@ -57,7 +57,7 @@ Parametricism は単なる形式的好みではなく、後期資本主義社会
 
 著者が列挙する 5 agendas:
 
-1. Inter-articulation of multiple subsystems（複数サブシステム間の相互接続）
+1. Inter-articulation of sub-systems（サブシステム間の相互接続）
 2. Parametric accentuation amplifying differentiation（差異化を増幅するパラメトリック強調）
 3. Parametric figuration with gestalt-sensitive variables（ゲシュタルト感応変数によるパラメトリック造形）
 4. Parametric responsiveness enabling kinetic adaptation（動的適応を可能にするパラメトリック応答性）
@@ -65,7 +65,7 @@ Parametricism は単なる形式的好みではなく、後期資本主義社会
 
 Agenda 2 について:
 
-> "The ambition is to enhance the overall sense of organic integration through intricate correlations that favour deviation amplification rather than compensatory adaptations."
+> "The ambition is to enhance the overall sense of organic integration through intricate correlations that favour deviation amplification rather than compensatory or ameliorating adaptations."
 
 「deviation amplification（偏差増幅）」を正のフィードバックとして受け入れる姿勢は、古典的な調和（補償的適応）と真逆の方針である。
 
@@ -89,7 +89,7 @@ Lakatos の「research programme」概念を明示的に援用し、避けるべ
 
 - 著者: Patrik Schumacher
 - 年: 2008
-- 出典: Dark Side Club, 11th Architecture Biennale, Venice 2008（著者サイト掲載日: January 9, 2008）
+- 出典: Dark Side Club, 11th Architecture Biennale, Venice 2008（発表は 2008 年。著者のサイトの今の頁の日付の表示は January 9, 2024）
 - access_status: url-verified（WebFetch HTML）
 - **公式 URL**: [patrikschumacher.com / Parametricism as Style](https://patrikschumacher.com/parametricism-as-style-parametricist-manifesto/)
 

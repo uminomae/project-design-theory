@@ -1,45 +1,430 @@
 ---
 file_id: EV-D27
-domain: architecture-design
+domain: architecture
 domain_id: D27
-last_updated: 2026-04-08
-entry_count: 0
-origin: "Archived pre-rerun snapshot for cs#207"
-status: "再監査待ち（原典アクセス状態の棚卸し前）"
+title: "建築・デザイン学：論ごとの照合の記録"
+last_updated: 2026-11-09
+status: "照合中（#73）"
 source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D27-architecture.md"
-original_access_status: not-yet-reviewed
 ---
 
-# 論拠DB：建築・空間デザイン（Architecture & Design）（再監査待ち）
+# 建築・デザイン学：論ごとの照合の記録
 
-このファイルは `cs#207` 対応として、2026-04-07 時点の分析本文を archive に退避したうえで、再監査用の stub に差し替えたものです。
+この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。
 
-## 現在の扱い
+建築の論の多くは、現象の理論を実証した論文ではなく、設計者の宣言・講演・設計の方法・批評です。それでも本文に当たれた原典は、二つのものの兼ね合いと、それが崩れた形を書いていました。Alexander（1965）は、計画で一つの部分を木の形に置き換えるたびに都市は「解離」へ一歩進む、と書きます。Alexander の 1996 年の講演は、構造を保つ変換で進む過程と、設定の空間を手探りで動かす今の設計の過程を対に置き、後者からは生きた構造が出てこないと言います。Schumacher（2008）は、様式を研究計画と見て、一つの様式の中で積み重ねる時期と、様式どうしが入れ替わる革命の時期が交互に来ると書きます。Menges（2013）は、形を決めてから材料を当てる一方向の階層と、材料のふるまいを形の生成に入れる方法を対に置きます。O'Brien と Carrasco（2021）は、ELEMENTAL の「半分の家」の 15 年後を調べ、住み手の増築が設計の枠を越えて平均で 230% に広がり、窓の無い部屋と共有の中庭の取り合いが生まれたと書きます。Nitschke（1988）は、「間」の字が隔たりと関係の両方を指す両義性を持つと書きます。原典は、至らない形（解離・生気の無い構造・様式の取り残し・中庭の取り合いとスラムに似た状態への戻り）を、論の中に書いていました。
 
-- 原典アクセス状態: evidence 本文としては `not-yet-reviewed`
-- source manifest には D27 first batch 10件を反映済み
-- source 内訳は `raw-confirmed` 1 / `blocked-access` 2 / `citation-only` 7
-- [P] 主張の verified / accepted 判定は現時点では再保証しない
-- `knowledge/raw/` の整備と原典アクセス棚卸しが完了するまで、本文の再構成を優先する
+今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D27-architecture.md`、2026-03-18 に LLM が生成、以下「報告」）は、12 の論を取り上げ、日本語版では 8 を「強い対応」としています。報告は、どの論も「境界は線ではなく帯域である」という一つの見方に寄せて読み、Schumacher を「対応なし」として外に置いています。§7 は「本調査の理論群は『成功した建築』『生きた建築』に偏っています」と書きますが、上の至らない形は、読めた原典の中にありました。この記録は、報告の 12 の論を一次情報で確かめ直したものです。論は足していません。報告が提唱者に挙げた原典の多くは書籍で（Alexander『The Nature of Order』・Otto & Rasch『Finding Form』・Hertzberger・Jacobs・Pallasmaa・Lynch）、本文に当たれたのは 12 のうち 5 です。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
-## 2026-04-08 second/third batch
+History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D27-architecture.md) にあります。退避版の判定（Accept・CA・Reject・温度帯・CHK-A〜D）は、この記録の照合の状態の根拠にしていません。
 
-- raw-confirmed:
-  `knowledge/raw/D27_alexander_1977_pattern-language.pdf`
-- blocked-access:
-  `Menges & Knippers / ICD-ITKE pavilion cluster` は CAD Journal / ScienceDirect PDF route が Cloudflare challenge 403 HTML、Architectural Design DOI route は Wiley landing へ進むが 403 HTML challenge に着地し raw 未取得。manual/browser 再試行余地あり
-  `Aravena & Iacobelli (2012)` は ELEMENTAL official PDF route が Vercel 403 text/plain `Forbidden` を返し raw 未取得。manual/browser 再試行余地あり
-- citation-only: 7件。archive refs / ref-check 起点の first-pass source rows
-- manual/browser 余地:
-  blocked-access source は CLI challenge / login redirect / HTML landing の可能性を残すため、notes を維持する
-## History
+## 読み方
 
-- スナップショット: [`evidence/archive/pre-rerun-20260407/evidence/evidence-D27-architecture.md`](archive/pre-rerun-20260407/evidence/evidence-D27-architecture.md)
-- 退避日: 2026-04-07
-- 理由: 原典未入手・本文未確認・LLM 補完混入の可能性を切り分けずに維持しないため
+- 照合の状態は `docs/rules/sources.md` §3 の四つで書きます。著者・大学・出版社のサイトに置かれた写しで読んだものは、誰が置いた写しかを添えます。本文照合済の論には、文書の性格（宣言・講演・設計の手引き・評価の調査・批評）を添えます。現象の理論を確かめたという意味ではありません。
+- 今の報告への判定は、一致・言い過ぎ・取り違え・帰属違い・付け足し・抜け・未判定で書きます。「抜け」は、原典にある衝突や至らない形を報告が落としていることです。
+- 「ja 98 行」は日本語版の行、「en」は英語版（`en/md/domain-D27-architecture.md`）、「pres」はプレゼン版（`ja/presentations/md/domain-D27-architecture-presentation-ja.md`）、「退避版」は上の History のファイル、「調べた跡」は `cs/evidence/investigation/D27-architecture/` の phase5〜7、「DR」は `cs/evidence/202602-deep-research-30domains-gpt/DR-D27-architecture-design.md` を指します。
+- 建築の主張には、教科書（分野で確立した記述）・研究の一線（争いがある、または一つの研究が示した）・Claude の読み替え（5段階の問いに当てた解釈）のどれかを添えます。
+- 著者が「生きた」「死んだ」「生気の無い」と書く所は、著者の語として引きます。善い悪いの判断は、この記録ではしていません。
+- 重なる分野：Alexander のパターン・ランゲージがソフトウェアのパターンに渡ったことは工学・情報（D07）の記録にあります。アフォーダンス（Gibson）は心理学（D14）、自己組織化は複雑系（D29）の記録にあります。ここでは読み直していません。
 
-## 次の作業
+## 一面の表
 
-- 原典アクセス状態を `raw-confirmed` / `citation-only` / `blocked-access` / `not-yet-reviewed` で棚卸しする
-- `knowledge/raw/README.md` の manifest に候補原典を記録する
-- 再調査後に、このファイルへ history 参照つきで新しい本文を戻す
+対立・衝突・統合の列は、原典に書いてある構造を、Claude が中心の問いの言葉に読み替えたものです。建築の原典は「対立」「衝突」の語をほとんど使いません。原典に書いてあるのは、何と何の兼ね合いか、どの単位（一つの敷居・一棟・一街区・都市）で書いているか、それが崩れたときに何が起きるかです。原典で確かめられなかった論は、報告の言い分を写さず「未照合」としています。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。
+
+| 論 | 対立（何と何が） | 衝突（どうぶつかるか） | 統合（新たな安定、または至らずにどう終わったか） | 論の微細さ | 照合の状態 |
+|---|---|---|---|---|---|
+| 1. 構造保持変換と生成の過程（Alexander） | 重なり合う単位の網（semilattice）と、重なりを許さない木の形の計画。構造を保つ変換で進む過程と、設定の空間を手探りで動かす今の設計・契約・資金の過程 | 計画が都市の一部を木の形に置き換えるたびに、重なりが切られる。今の建設の過程の中では、設計者は生きた構造を作れない、と著者は言う | 変換が構造を保ち強めるなら、終わりに生きた構造が残る（著者の語）。木の形に置き換えると都市は「解離」へ進み、極端な区画化と解離は「来る破壊の最初の兆し」（至らない形。分裂）。過程を変えないかぎり生気の無い構造になる（至らない形。固着） | 一つの部屋から都市の社会構造まで | 本文照合済（講演の記録と論説の再録。著者のサイト。節の名前で控えた）。『The Nature of Order』は未照合（書籍） |
+| 2. 形態発見（Otto） | 未照合（報告は、材料・力学・境界条件と、設計者の恣意と書く） | 未照合 | 未照合（報告は、平衡形の成立と書く。つりあいの形が見つからない場合などの至らない形は確かめていない） | 一枚の膜・一つの網 | 未照合（書籍）。Liddell 2015 は確認画面 |
+| 3. 中間領域（van Eyck） | 近代建築（CIAM）の機能の分離と、場所・出来事・対の両方を含む設計（二次資料の要約）。遊具の標準化と、子どもの動きのばらつき | CIAM の計画に反発した。1962 年の会合では Alexander らと正面からぶつかった（二次資料） | 734 か所ほどの遊び場が作られ、今は 17 が残る（二次資料）。標準化した遊具は遊びやすさを下げうる（二次資料）。Forum の建築家たちの反発は、都市計画の慣習を壊したが「ぎこちない空白」を残した、と後の都市計画家は書く（二次資料。至らない形） | 一つの敷居・一つの遊び場から都市 | 二次資料のみ（Withagen & Caljouw 2017、Team 10 の会議録 2006）。van Eyck の著作そのものは未照合（書籍） |
+| 4. 閾空間（Hertzberger） | 未照合（報告は、公と私と書く） | 未照合 | 未照合 | 一つの敷居から一棟 | 未照合（書籍。Internet Archive の貸し出し） |
+| 5. 都市の多様性の条件（Jacobs） | 未照合（報告は、多様性を生む四条件と、境界の真空と書く） | 未照合 | 未照合（境界の真空・スラム化など、原典が書く見込みの至らない形は確かめていない） | 一つの街路から一つの地区 | 未照合（書籍。Internet Archive の貸し出し）。Jacobs 1958 は 403 |
+| 6. 間 | 隔たり（間隔・すき間）と、関係（両端を同時に意識すること）。形と形の無い所、動きと休み、音と沈黙 | 原典は衝突を書かない。「間」がうまい・悪い、という判断と、「間抜け」（間を欠く者）のような欠けの語を挙げる | 能を「間の芸術」とする言い方を引き、対象と空間、動きと休みの釣り合いを最も高く表すと書く。空（くう）の体験は、合理の思考で至る概念でなく、言葉で伝えられない個の体験だと書く | 柱の間から社会の中の人の位置まで | 本文照合済（Nitschke 1988。Kyoto Journal の出版社のサイトの再録。節の名前で控えた）。磯崎の展覧会カタログは未照合 |
+| 7. 計算形態生成（Menges） | 形を先に決めて材料を受け身に当てる一方向の階層と、材料のふるまいを形の生成に入れる方法。仮想の形の生成と、物の世界での現れ | 計算による設計でも、形と力は別々に扱われ、形を作ってから材料の性質で試算する、と著者は書く | 曲げた合板の帯のふるまいを形の計算に直接入れたパビリオン（2010）で、材料が「形の受け手でなく、設計の生み手」になる、と著者は書く。至らない形は、著者の言う「分裂」（仮想の形と物の世界の隔たりが広がる今の状態） | 一枚の板から一つのパビリオン | 本文照合済（Menges 2013、SAJ 5, pp.92–105。授業の頁の写し）。AD 2012 は未照合（有料） |
+| 8. 少しずつ育つ住まい（Aravena・ELEMENTAL） | 専門家が作る半分と、住み手が足す半分。設計の枠と、住み手の広げたい量 | 住み手は設計の想定を越えて広げた。1 階の住戸は裏庭を塞ぎ、3 割は共有の中庭に建て増した | 典型の住戸は 230% に広がり、設計の枠（36 m² から 72 m²）を越えた。窓の無い部屋が増え、中庭の取り合いで家どうしに摩擦が生じ、元の「スラムに似た」状態に戻るおそれがある、と著者らは書く（至らない形。悪い統合の見込み） | 一戸から 93 戸の集まり | 本文照合済（O'Brien & Carrasco 2021。大学の機関リポジトリの出版社の版）。ELEMENTAL の手引きは未照合（書籍） |
+| 9. 身体感覚の建築（Pallasmaa） | 未照合（報告は、視覚の偏りと多感覚と書く） | 未照合 | 未照合 | 一人の身体と一つの空間 | 未照合（書籍。Internet Archive の貸し出し） |
+| 10. パラメトリシズム（Schumacher） | 近代建築の「空間」と分離した部分系、パラメトリシズムの「場」と連続的な差異化。積み重ねの時期と、様式が入れ替わる革命の時期 | 新しい様式は、古い型への逆戻りを禁じる規則（否定の発見法）で守られる。同じ道具を使う後期の近代建築家は、複雑さを目立たないように吸収する、と著者は書く | 著者は、パラメトリシズムが前衛の中で「覇権」を得た新しい様式だと宣言する。どの研究計画も「反駁されて生まれ、反駁されて死ぬ」という Lakatos の言葉を引く（片方の勝利。統合ではない） | 家具から都市 | 本文照合済（宣言。著者のサイト。頁なし、段落と議題の番号で控えた）。AD 2009 は未照合（有料） |
+| 11. 壁の厚み（poché） | 未照合（報告は原典を挙げていない） | 未照合 | 未照合 | 一枚の壁から都市の残り | 未照合（原典が特定できない。Venturi 1966 の公開版は見つからなかった） |
+| 12. 都市の認知的境界（Lynch） | 未照合（報告は、edge の障壁と縫い目と書く） | 未照合 | 未照合 | 一つの都市の像 | 未照合（書籍）。Lynch 1984 の見直しは有料 |
+
+12 の論のうち本文照合済は 5 です（Alexander・間・Menges・Aravena・Schumacher）。van Eyck は二次資料のみ、ほかの 6 つは未照合です。本文照合済の 5 つのうち、論文の形をしているのは Menges と O'Brien & Carrasco だけで、あとは講演の記録・論説・宣言・随筆です。O'Brien & Carrasco は Aravena の論そのものでなく、その実作の 15 年後の評価です。
+
+## 論ごとの節
+
+### 1. 構造保持変換と生成の過程（Alexander）
+
+**要旨**：生きた構造は、全体を保ったまま差異を一つずつ入れていく変換（structure-preserving transformations）の積み重ねでしか作れない、という論です。報告は『The Nature of Order』（2002–2005）を提唱の原典に挙げています。
+
+**一次情報**：
+
+- Alexander, C. (1999). The origins of pattern theory: the future of the theory, and the generation of a living world. *IEEE Software* 16(5), 71–82. DOI: [10.1109/52.795104](https://doi.org/10.1109/52.795104)（Crossref で題・巻号・頁を確かめました）。IEEE は有料です。著者のサイトに、1996 年 10 月の OOPSLA の基調講演の記録として同じ題の全文があります（https://www.patternlanguage.com/archive/ieee.html 。Jim Coplien の紹介文つき）。著者のサイトの写しです。誌面と一字ずつ同じかは確かめていません。頁が無いので、講演の節（Part B など）で控えました。読んだ所：Part B の前半（1970 年代の終わりから、生きた建築に繰り返し現れる 15 の幾何の性質に気づいた。「boundaries」は輪郭を描くだけでなく内と外をつなぐ。生きた構造と生きていない構造を経験で見分ける方法を作った。「建築に真理など無い」と言う建築家は間違っている）、Part B の後半（15 の性質で全体の像が分かると、良い過程と悪い過程の違いを言える。生きた構造は「unfolding wholeness」でしか作れない。構造を保つ変換で進まない過程からは、決して生きた構造は出てこない。今の設計は設定の空間をほとんど手探りで動いていて、今の都市や建物が生気を欠くのはそのため。今の建設業の条件の下では生きた構造は作れない。だから社会・経済・行政の過程を変える仕事をしている）。
+- Alexander, C. (1965). A City is Not a Tree. *Architectural Forum* 122(1), 58–62（Part I）、122(2), 58–62（Part II）。書誌は著者のサイトの記載で、Crossref では引いていません。著者のサイトの再録（https://www.patternlanguage.com/archive/cityisnotatree.html ）。頁は Part I・II で控えました。読んだ所：Part I（長い年月で自然に生じた都市を「自然の都市」、設計者が意図して作った都市を「人工の都市」と呼ぶ。重なり合う集合の集まりを semilattice、重なりを許さないものを木と呼ぶ）、Part II（人と車の分離、遊びの分離、仕事と住まいの分離は木の考え。柵で囲った遊び場は「遊び」が切り離された概念であることの絵にすぎない。都市の一部が引き裂かれ、semilattice の代わりに木が作られるたびに、都市は解離へ一歩進む。組織された物では、極端な区画化と内部の要素の解離は来る破壊の最初の兆しで、社会では解離は無秩序）。
+- Alexander, C., Ishikawa, S., Silverstein, M. ら (1977). *A Pattern Language*. Oxford University Press。台帳 D27-S01。手元の PDF は 313 頁の走査で、文字の層がありません。表紙・序・選んだ型の頁だけを抜いたもので、最後は p.1165 です（走査の画像で見た）。pdf の p.8 が誌面の p.x で、精読ノートの引く二つの文（型は問題と解決の核を書く、町と建物は社会の全ての人が作らなければ生きたものにならない）があることを確かめました。台帳は「Cornell University hosted」と書きますが、走査は PFU の ScanSnap で作られたもので、上げた人は確かめていません。
+- Jiang, B. (2019). Living Structure Down to Earth and Up to Heaven: Christopher Alexander. *Urban Science* 3(3), 96. DOI: [10.3390/urbansci3030096](https://doi.org/10.3390/urbansci3030096)（Crossref で確かめました）。台帳 D27-S13。MDPI の PDF は自動取得で 403（確認画面）でした。arXiv の著者稿（https://arxiv.org/abs/1909.11757 ）で読みました。二次資料で、Alexander を擁護する立場の論文です。読んだ所：写しの p.1（要旨。この論文は、生きた構造を物理現象・数学の概念として擁護し、よくある疑いと誤解を晴らすためのもの）、p.2（生きた構造の反対は生きていない、死んだ構造で、その間に幅がある）。
+
+**照合の状態**：Alexander 1999（講演の記録）と 1965 は本文照合済（著者のサイトの写し。講演と論説）。『A Pattern Language』は本文照合済（p.x のみ。走査の画像で見た。出どころ未確認）。『The Nature of Order』と『Notes on the Synthesis of Form』は未照合（書籍）。Jiang 2019 は二次資料。
+
+**対立・衝突・統合の読み**：原典に書いてあるのは、重なり合う単位の網を、計画が木の形に置き換えると、都市が解離へ進むことです（1965 Part II）。講演では、構造を保つ変換で進む過程と、今の設計・建設の過程を対に置き、後者からは生きた構造が出てこないと書きます（講演 Part B）。Claude の読み替えでは、既にある全体と新しく入れる差異が一歩ごとにぶつかり、全体を保つ形で差異が入れば生きた構造が残ります。全体を切る形で入れば、解離と生気の無さ（著者の語）に終わります（至らない形。分裂と固着）。著者は、今の建設の過程そのものを変えなければならないと書いており、過程の外の制度との衝突も論の中に置いています。「生」が測れるか、客観的かは、著者自身が「多くの建築家が否定する」と書く争いのある所で（講演 Part B の注）、Jiang 2019 は擁護の側の論文です（研究の一線）。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 82 行「15の性質が『生きた全体性』の特徴として整理」 | 一致 | ― | 講演 Part B。15 の性質は生きた構造の「相関」と書く。『The Nature of Order』の本文は未照合 |
+| ja 82 行「deep feelingの評価に基づいて一手ずつ変換を加え」 | 未判定 | 低 | 講演は一手ずつの変換を書くが、その評価を deep feeling とは書いていない。書籍は未照合 |
+| ja 84 行「Boundaries（境界）が…『centerを強める厚みのある輪郭』と定義」 | 未判定 | 中 | 講演 Part B は boundaries を「輪郭を描くだけでなく内と外をつなぐ」と書く。「厚み」の語は確かめていない。調べた跡 phase7 7 行の「境界は帯域」に寄せた言い換えの見込み |
+| ja 82〜86 行（解離・生気の無さ・今の過程との衝突に触れない） | 抜け | 高 | 1965 Part II、講演 Part B。原典は、木の形の計画による解離と、構造を保たない過程が生気の無い構造に終わることを、論の中心に書く |
+| ja 59 行「全段階に明瞭な対応」「強い対応」 | 言い過ぎ | 中 | 型 E。どの段に当たるかの判定は定義が決まってから。原典は過程を五つに分けていない |
+| ja 208 行「『壊さずに強める』という操作は…Turnerが描く…プロセスとは破壊の有無という点で異なって」 | 抜け | 中 | 1965 Part II は「引き裂く」計画を論の相手に置いており、壊すことは論の中にある。壊す変換が至らない形として書かれている |
+
+### 2. 形態発見（Otto）
+
+**要旨**：軽い構造の良い形は、図面の上の恣意でなく、材料・力・境界条件がつり合う形を物の模型で探して見つける、という論です。
+
+**一次情報**：
+
+- Otto, F. & Rasch, B. (1996). *Finding Form*. Edition Axel Menges。台帳 D27-S02（書誌だけ）。書籍で、OA の版は見つかりませんでした。
+- Liddell, I. (2015). Frei Otto and the development of gridshells. *Case Studies in Structural Engineering* 4, 39–49. DOI: [10.1016/j.csse.2015.08.001](https://doi.org/10.1016/j.csse.2015.08.001)（Crossref で確かめました）。OA（CC BY-NC-ND）ですが、ScienceDirect の PDF は自動取得で確認画面を返しました。同じ URL の Wayback の写しはありませんでした。
+- Goldsmith, N. (2016). The physical modeling legacy of Frei Otto. *Int. J. Space Struct.* 31(1), 25–30. DOI: [10.1177/0266351116642071](https://doi.org/10.1177/0266351116642071)（Crossref で確かめました）。有料で、OA の写しは見つかりませんでした。
+- Veenendaal, D. & Block, P. (2012). An overview and comparison of structural form finding methods for general networks. *Int. J. Solids Struct.* 49(26), 3741–3753. DOI: [10.1016/j.ijsolstr.2012.08.008](https://doi.org/10.1016/j.ijsolstr.2012.08.008)（Crossref で確かめました）。研究室のサイト（block.arch.ethz.ch）を Wayback の一覧で引くと、同じ研究室の別の論文の PDF だけが出て、この論文の写しはありませんでした。
+
+**照合の状態**：未照合（書籍）。解説の論文三本も本文に当たれていません。
+
+**対立・衝突・統合の読み**：原典で確かめられていないので、報告の言い分（平衡形の成立）を写していません。つりあいの形が見つからない場合や、模型のしわ・破れのような至らない形を原典が書くかは確かめていません。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 90 行「Frei Otto（1925-2015）…平衡形…の探索によって見出される」 | 未判定 | 低 | 原典は未照合 |
+| ja 94 行「物理的に検証可能であるため、構造対応の中でも信頼度の高い事例」 | 言い過ぎ | 中 | 型 E。物の模型で形を確かめられることと、5段階との対応が確かなことは別のこと |
+| ja 92 行「意識や意図を介さない生成」 | 未判定 | 中 | 報告自身が、設計者が境界条件を定義すると書く（ja 90 行）。退避版 109 行の非二元性の点検（「設計者の意図と物理法則を対立させない」）から来た読みの見込み |
+
+### 3. 中間領域（van Eyck）
+
+**要旨**：内と外、個と集団のような対の間に、どちらにも属し両方をつなぐ領域（in-between realm）を設計する、という論です。
+
+**一次情報**：
+
+- Withagen, R. & Caljouw, S. R. (2017). Aldo van Eyck's Playgrounds: Aesthetics, Affordances, and Creativity. *Front. Psychol.* 8, 1130. DOI: [10.3389/fpsyg.2017.01130](https://doi.org/10.3389/fpsyg.2017.01130)（Crossref で確かめました）。出版社の OA の PDF（CC BY）。二次資料です。読んだ頁：p.1（要旨。1947〜1978 年に数百の遊び場を作り、今残るのは 17。抽象的な遊具は子どもの創造を促すが、遊具の標準化は遊びやすさを下げる）、p.2（van Eyck は CIAM のやり方を厳しく批判した。1947〜1978 年に 734 の遊び場。van Eyck 1962/2008 p.55 の引用「家から都市の規模まで、この in-between realm を作ることが仕事」）、p.3（700 を超える遊び場。柵で囲わず、危険を見越して扱う力を育てる）、p.7（標準化した遊具の間隔は、合った能力の子にしか面白くないかもしれない）。
+- Risselada, M., van den Heuvel, D. & de Waal, G. (eds.) (2006). *Team 10: Keeping the Language of Modern Architecture Alive*. Delft University of Technology の会議（2006 年 1 月）の記録。台帳 D27-S03 の URL（http://www.team10online.org/research/papers/Team%2010.pdf 。233 頁）は、台帳の書く「van Eyck の Team 10 の著作」でなく、この会議録でした。研究者の会のサイトの写しです。二次資料です。読んだ頁：p.38（Boyer。「内と外、部分と全体などの対を解かなければならない」という文は、Smithson 夫妻の 1956 年の草案からの引用）、pp.99–101（van den Heuvel。遊び場はおそらく 860 ほど（Lefaivre による）。1959 年の Otterlo の図に「建築はいつ対の質と解決を結びつけるのか」と書いた）、pp.103–104（1962 年の Royaumont の会合で、van Eyck の「木は葉、葉は木」の図に Alexander が怒って反論した。van Eyck は後に Alexander の 1965 年の論説に答え、都市は semilattice で混沌だと書いた。Blom の計画は住み手の暮らしを縛ると Smithson と Bakema に批判された）、pp.230–231（Palmboom。Forum の建築家は敷居や in-between を設計から外す都市計画に反発した。Bakema と van Eyck の二つの反発は慣習を壊したが、「ぎこちない空白」を残し、オランダの都市計画を危機に投げ込んだ）。
+- van Eyck, A. (1962/2008). *The Child, the City and the Artist*. SUN。書籍で、本文は未照合です。上の二本の引用で読んだだけです。
+
+**照合の状態**：二次資料のみ（Withagen & Caljouw 2017 は出版社の版、Team 10 の会議録は研究者の会のサイトの写し）。van Eyck の著作そのものは未照合（書籍）。
+
+**対立・衝突・統合の読み**：二次資料に書いてあるのは、van Eyck が CIAM の機能の分離に反発し、対の両方を含む場所を作ろうとしたことです（Withagen & Caljouw p.2、van den Heuvel p.101）。その論は、同じ Team 10 の中で Alexander や Smithson と正面からぶつかっていました（van den Heuvel pp.103–104）。Claude の読み替えでは、機能を分ける計画と、対の間を作る設計がぶつかり、遊び場という小さな形で新しい安定が残りました。ただし遊び場の多くは今は残っておらず（p.1）、標準化した遊具は子どもの動きのばらつきと合わないことがある、と二次資料は書きます（p.7）。都市の規模では、慣習を壊したあとに空白が残った、と後の都市計画家は書きます（Palmboom p.231。至らない形。消散の見込み）。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 98 行「アムステルダムで700以上の遊び場」 | 一致 | ― | Withagen & Caljouw p.3（734 は p.2）。van den Heuvel p.100 は「おそらく 860 ほど」（Lefaivre による）と書く。数は資料で違う |
+| ja 98 行「近代建築の二項対立（内/外、公/私、個人/集団など）を批判」 | 未判定 | 中 | 対を挙げて「解かなければならない」と書いた文は、会議録 p.38 では Smithson 夫妻の 1956 年の草案。van Eyck 自身の文は未照合 |
+| ja 100 行「二項対立を解消するのではなく、その間に厚みのある領域を挿入することで新たな質を生む」 | 付け足し | 中 | 退避版 158 行の非二元性の点検（「二項対立の『超克』ではなく『媒介』…その間に新たな質を生む」）を、点検の語だけ外して写した文。原典の文は確かめていない |
+| ja 98〜102 行（ぶつかりと至らない形に触れない） | 抜け | 中 | 会議録 pp.103–104・pp.230–231、Withagen & Caljouw pp.1・7。Royaumont での衝突、空白を残した反発、標準化の問題 |
+| ja 182 行「理論的系譜の異なる5つのアプローチが独立に」 | 取り違え | 高 | van Eyck と Alexander は 1962 年に会合で直接ぶつかり、van Eyck は Alexander の 1965 年の論説に答えている（会議録 pp.103–104。二次資料）。独立とは言えない |
+| ja 64 行「縁が極めて明瞭」 | 言い過ぎ | 低 | 型 E |
+
+### 4. 閾空間（Hertzberger）
+
+**要旨**：公と私の間を、段階のある移り変わりとして設計する、という論です。
+
+**一次情報**：Hertzberger, H. (1991). *Lessons for Students in Architecture*. 010 Publishers。台帳 D27-S04 の URL は Internet Archive の貸し出しで、ログインが要るので読んでいません。著者の事務所のサイト（ahh.nl）を Wayback の一覧で引くと、ニュースの記事の PDF だけで、閾の論の文章は見つかりませんでした。
+
+**照合の状態**：未照合（書籍）。
+
+**対立・衝突・統合の読み**：原典で確かめられていません。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 106 行「Herman Hertzberger（1932-2025）」「アクセス可能性・責任・視線の3つの設計変数」 | 未判定 | 低 | 没年と三つの変数は確かめていない。没年は DR に、三つの変数は退避版にある |
+| ja 110 行「『縁』が操作可能な設計対象であることの最も具体的な記述」 | 言い過ぎ | 低 | 型 E |
+| ja 182 行（van Eyck と並べて独立に数える） | 未判定 | 中 | Hertzberger は van Eyck と同じ Forum の世代とされる。系譜の重なりを確かめる（README 段 3「独立性の検討」） |
+
+### 5. 都市の多様性の条件（Jacobs）
+
+**要旨**：用途の混合・短い街区・古さの違う建物・十分な密度の四つが都市の多様性を生む、という論です。
+
+**一次情報**：Jacobs, J. (1961). *The Death and Life of Great American Cities*. Random House。台帳 D27-S05 の URL は Internet Archive の貸し出しで、読んでいません。同じ著者の短い論説 Jacobs (1958)「Downtown is for People」の Fortune の再録の頁は 403 を返しました。
+
+**照合の状態**：未照合（書籍）。
+
+**対立・衝突・統合の読み**：原典で確かめられていません。報告の言う「境界の真空」や、多様性が自らを壊す形・スラム化と脱スラム化のような至らない形を原典が書くかは、本文で確かめていません。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 114 行「4条件」「border vacuum」「sidewalk ballet」 | 未判定 | 低 | 原典は未照合 |
+| ja 116〜118 行「逆照射的に…」「実証的証拠として…特に堅い事例」 | 付け足し | 中 | 「逆照射」は調べた跡 phase5 97 行・phase6 78 行の語。原典の語でない。「実証的証拠」は言い過ぎ（型 E） |
+| ja 116 行（境界の真空を「縁の不在」として外に置く） | 未判定 | 中 | 原典が境界の真空を都市の過程の中にどう置くかは未照合。報告は至らない形を「縁が無い」ことの証拠にだけ使っている |
+
+### 6. 間
+
+**要旨**：日本語の「間」は、空間の隔たりと時間の間合いを一つの語で指し、建築・芸能・社会の関係にまで使われる、という論です。報告は提唱者を「磯崎ほか」とし、1978 年のパリ装飾美術館の展覧会を挙げています。
+
+**一次情報**：
+
+- Nitschke, G. (1988). MA: Place, Space, Void. *Kyoto Journal* 8。出版社の Kyoto Journal のサイトの再録（https://kyotojournal.org/hidden-japan/ma-place-space-void/ 。「KJ 8（1988 年秋）に初めて載り、著者の許しを得て再録」と書かれている）。出版社のサイトの再録で、頁が無いので節の名前で控えました。読んだ所：冒頭（「間」の訳を place とするのは著者の選び。伊藤ていじの「imaginary space」は主観の面だけを扱う）、「The One-Dimensional Realm」（梁間・柱間。aida として、二点の間の隔たりと、両端を同時に意識することの両方を指す両義性を持つ）、「間取り」の節の前（書や水墨画の「間が悪い・うまい」、落語の間。能は対象と空間、動きと休み、音と沈黙の釣り合いを最も高く表す。世阿弥の「せぬところが面白き」を引く）、「Ma: The Realm of Society」（「間抜け」「間違う」を欠けの例に挙げる。人間・世間・仲間。西洋の個人と日本の社会を対に置く）、「The Domain of the Metaphysics」（仏教の空は合理の思考で至る概念でなく、伝えられない個の体験。建築の現象学の範囲を出る）、末尾（磯崎新の展覧会「Ma: Space/Time in Japan」を「1976 年、ニューヨークのクーパー・ヒューイット美術館」と書く）。
+- Nitschke, G. (1966). MA: The Japanese Sense of Place. *Architectural Design* 36。Crossref で書誌を確定できず、OA の写しも見つかりませんでした。
+- Pilgrim, R. B. (1986). Intervals ("Ma") in Space and Time: Foundations for a Religio-Aesthetic Paradigm in Japan. *History of Religions* 25(3), 255–277. DOI: [10.1086/463043](https://doi.org/10.1086/463043)（Crossref で確かめました）。有料で、OA の写しは見つかりませんでした。
+- 磯崎新 (1978). 展覧会カタログ『MA: Space-Time in Japan』。台帳 D27-S06（書誌だけ）。未照合です。
+
+**照合の状態**：Nitschke 1988 は本文照合済（随筆。出版社のサイトの再録。節の名前で控えた）。磯崎のカタログ・Nitschke 1966・Pilgrim 1986 は未照合。世阿弥の語は Nitschke の引用で読んだだけで、原文は確かめていません。
+
+**対立・衝突・統合の読み**：原典に書いてあるのは、「間」が隔たりと関係の両方を指す両義性を持つこと（「The One-Dimensional Realm」）と、芸能では対象と空間、動きと休みの釣り合いとして判断されることです（能の節）。原典は衝突を書きません。「間が悪い」「間抜け」のような語は、釣り合いが欠けた形を言葉が持っていることを示しますが、過程として書かれてはいません。Claude の読み替えでは、「間」は二つのものを区別したまま関係させる語の構造として読めますが、対立がぶつかって何かが生まれる過程の論ではありません。原典から対立・衝突・統合を読むのは難しい、と書いておきます。著者は東と西を対に置く書き方をしており（「The Realm of Society」）、これは著者の見方です。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 122 行「1978年のパリ装飾美術館での展覧会『間——日本の時空間』によって国際的に提示」 | 未判定 | 中 | Nitschke 1988 の末尾は「1976 年、クーパー・ヒューイット美術館」と書く。どちらもカタログで確かめていない |
+| ja 64 行「磯崎ほか」（提唱者） | 帰属違い | 中 | 語は日本語の古くからの語で、展覧会の企画者を提唱者とは言えない。Nitschke は 1966 年に建築の雑誌で「間」を論じている（1988 年の注 2） |
+| ja 122・124 行「余白性（何もないことが何かである）」 | 付け足し | 中 | Nitschke 1988 に無い。退避版 284 行の言い方。原典は空（くう）を合理の概念でなく個の体験と書き、建築の範囲を出ると書く |
+| ja 122・126 行「縁側の建具開閉による内外の動的調停」「縁側は『縁』の可変的な実装」 | 未判定 | 中 | Nitschke 1988 は縁側を挙げない。建具の付け外しで住まいを季節と使い方に合わせることは「間取り」の節にある（清家清による）。縁側の「縁」と5段階の「縁」は語が同じだけで、対応の根拠に数えない（README「規約で決めたこと」） |
+| ja 126 行「にじり口…『縁』が身体的変容を強制する装置」 | 未判定 | 低 | 原典で確かめていない |
+| ja 64 行「全段階に通底的対応」 | 言い過ぎ | 中 | 型 E。「通底」は退避版 281 行の語。原典は過程を書いていない |
+
+### 7. 計算形態生成（Menges）
+
+**要旨**：材料のふるまいとロボットによる製作の条件を、形を計算で生成する段階から入れる、という論です。
+
+**一次情報**：
+
+- Menges, A. (2013). Performative Morphology in Architecture: Integrative Design Research by the Institute for Computational Design. *SAJ (Serbian Architectural Journal)* 5, 92–105。台帳 D27-S07 の備考の「OA 代替」の URL（https://openlab.citytech.cuny.edu/anzalonearch3631spring2015-/files/2011/06/SAJ-2013-2-A.Menges.pdf ）の PDF で、台帳の書く題「Morphospaces of Robotic Fabrication」とは別の論文でした。ニューヨーク市立大学の授業の頁の写しで、権利は未確認です。誌面の頁が頁の下にあります。Crossref では引いていません。読んだ頁：p.92（要旨。機械の計算と材料の計算が重なり、強く作用し合う所を探る）、p.93（建築では情報・形成・材料化の関係が一方向で階層的。材料は他で決まった形の受け身の受け手とされる。ルネサンス以来、設計と製作が分かれてきた。仮想の形の生成と物の世界での現れの間の溝は広がっていて、その「分裂」を象徴するのが、珍しい形を作る力と、それを作る製作の力が一緒に育ったこと）、p.95（物の世界では形は外の力と切り離せないが、計算の設計では形と力は別に扱われる。2010 年のパビリオンでは、形の計算を材料のふるまいが直接導いた）、p.97（材料は形の受け身の受け手でなく、設計の生み手になる。設計の計算と材料化の階層的な考えを越えることを目指す）。
+- Menges, A. (2012). Material Computation. *Architectural Design* 82(2), 14–21. DOI: [10.1002/ad.1374](https://doi.org/10.1002/ad.1374)、Reichert, S., Menges, A. & Correa, D. (2015). Meteorosensitive architecture. *Computer-Aided Design* 60, 50–69. DOI: [10.1016/j.cad.2014.02.010](https://doi.org/10.1016/j.cad.2014.02.010)（どちらも Crossref で確かめました）。どちらも有料で、OA の写しは見つかりませんでした。
+
+**照合の状態**：Menges 2013 は本文照合済（研究の報告。授業の頁の写し。pp.92–93・95・97）。Menges 2012・Reichert ら 2015 は未照合。
+
+**対立・衝突・統合の読み**：原典に書いてあるのは、形を先に決める一方向の階層と、材料のふるまいを形の生成に入れる方法の対です（pp.93・97）。Claude の読み替えでは、計算で作れる形と、材料が実際にとれる形がぶつかり、そのぶつかりを設計の出発点に置いたときに、曲げた合板の帯のような新しい構造が残ります。著者は、今の多くの実践では仮想の形と物の世界の溝が広がっていると書いており（p.93）、これは原典が書く至らない形（分裂）です。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 130 行「材料の固有特性が形態生成に参与し」 | 一致 | ― | p.97 |
+| ja 130 行「木材の含水率変化による自己形状変化が実験されています」 | 未判定 | 低 | Menges 2013 は 2010〜2012 年のパビリオンを扱い、含水率に触れない。Reichert ら 2015 は未照合 |
+| ja 134 行「Ottoのform-findingの構造がデジタル環境でも保存されていることは、構造対応の堅さの証拠」 | 言い過ぎ | 中 | 型 E。Menges 2013 は自らの方法を、計算の設計の主流との対で書いている。Otto との連続を証拠に数える文は原典に無い |
+| ja 128〜134 行（溝・分裂に触れない） | 抜け | 中 | p.93 |
+| ja 65 行「部分的対応」、en 67 行「Strong」 | 未判定（版の食い違い） | 中 | 下の「版の間の食い違い」 |
+
+### 8. 少しずつ育つ住まい（Aravena・ELEMENTAL）
+
+**要旨**：住まいの半分を専門家が作り、残りを住み手が時間をかけて足す、という設計の方法です。報告の引く ELEMENTAL の手引き（2012）は書籍です。
+
+**一次情報**：
+
+- O'Brien, D. & Carrasco, S. (2021). Contested incrementalism: Elemental's Quinta Monroy settlement fifteen years on. *Frontiers of Architectural Research* 10(2), 263–273. DOI: [10.1016/j.foar.2020.11.002](https://doi.org/10.1016/j.foar.2020.11.002)（Crossref で確かめました）。OA（CC BY-NC-ND）。ScienceDirect は確認画面、メルボルン大学のリポジトリは Incapsula の確認画面でした。ニューカッスル大学の機関リポジトリ（Figshare で運用。https://openresearch.newcastle.edu.au/articles/journal_contribution/Contested_incrementalism_Elemental_s_Quinta_Monroy_settlement_fifteen_years_on/28996025 ）の出版社の版で読みました。評価の調査（空間と民族誌の調べ）です。読んだ頁：p.263（要旨。93 家族の住まい。住み手は ELEMENTAL が前もって定めた場所に部屋を足したが、多くは住戸を倍にし、ELEMENTAL の想定しなかった形に作り変えた。住み手の広げる力は建築家の予想を越え、規制の無い増築が住みやすさを損なう。別のスラムが生まれるおそれ）、p.267（36 m² の住戸を 72 m² まで広げる設計。Aravena は 72 m² を越えて広げるとは思っておらず、広げる権利はそこまでとした）、p.268（1 階の 96% が裏庭に建て増し、31% が共有の中庭に建て増した。上の階の 49% が張り出した。典型の住戸は 230% に広がった）、p.271（15 年、開発を見る仕組みが無く、中庭への張り出しが減る兆しは無い。中庭に面する 1 階の 29 戸のうち 8 戸は、部屋の三分の一しか光と風を得ない）、p.272（中庭の建て増しの三分の二以上は拾った材料や軽い材料。元の「スラムに似た」状態に戻るおそれは退けられない。1 階の住戸がいちばん不利で、限られた空間を争う家どうしに摩擦が生じる）。
+- Aravena, A. & Iacobelli, A. (2012). *ELEMENTAL: Incremental Housing and Participatory Design Manual*. Hatje Cantz。台帳 D27-S08。公式の PDF は 2026-04-08 に 403 でした。書籍で、本文は未照合です。
+
+**照合の状態**：O'Brien & Carrasco 2021 は本文照合済（評価の調査。大学の機関リポジトリの出版社の版。pp.263・267–268・271–272）。ELEMENTAL の手引きは未照合（書籍）。
+
+**対立・衝突・統合の読み**：原典に書いてあるのは、専門家が作る半分と、住み手が足す半分の兼ね合いが、設計の想定どおりには収まらなかったことです（p.263・p.268）。住み手は設計の枠（72 m²）を越えて広げ、共有の中庭を取り合い、光と風を失う部屋が増えました（pp.271–272）。Claude の読み替えでは、設計の枠と住み手の広げたい量がぶつかり、その結果は、増築された集まりとして固まりつつあります。著者らは、この形が元のスラムに似た状態に戻るおそれを書きます（p.272）。中心の問いの並べ方では、統合はしたが住みやすさを損なう形に固まる、悪い統合の見込みとして並べます。一方で著者らは、住み手の高い関わりが ELEMENTAL のねらいを裏付けたとも書き（p.268）、成果と問題の両方を書いています。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 138 行「住宅の半分を専門家が供給し、残りの半分を居住者が時間をかけて増築」 | 一致 | ― | p.267（36 m² から 72 m²） |
+| ja 142 行「居住者の増築は意識的・計画的な行為であり」 | 取り違え | 中 | 原典は、増築が設計の想定を越え、規制の無いまま進んだと書く（pp.263・271） |
+| ja 136〜142 行（15 年後の評価に触れない） | 抜け | 高 | pp.263・268・271–272。枠を越えた増築、中庭の取り合い、窓の無い部屋、スラムに似た状態へ戻るおそれ |
+| ja 142 行「供給部分と増築部分の界面は『縁』の時間的設計として堅い対応」 | 言い過ぎ | 中 | 型 E。原典の界面は、取り合いと摩擦の起きる所として書かれている |
+| ja 66 行「部分的対応」、en 68 行「Strong」 | 未判定（版の食い違い） | 中 | 下の「版の間の食い違い」 |
+
+### 9. 身体感覚の建築（Pallasmaa）
+
+**要旨**：視覚に偏った近代建築を批判し、触覚・聴覚などを含む経験として建築を論じる、という論です。
+
+**一次情報**：
+
+- Pallasmaa, J. (1996/2005). *The Eyes of the Skin*. Wiley。台帳 D27-S09 の URL は Internet Archive の貸し出しで、読んでいません。
+- 頼む文の挙げた Pallasmaa (2014)「Space, place and atmosphere」は、Crossref では『Architectural Atmospheres』（Birkhäuser）の章 pp.18–41（DOI: [10.1515/9783038211785.18](https://doi.org/10.1515/9783038211785.18)）として引け、有料でした。OA の誌 Lebenswelt の版は、誌のサイト（riviste.unimi.it）に接続できず（TLS の途中で切れた）、確かめられていません。
+
+**照合の状態**：未照合（書籍）。
+
+**対立・衝突・統合の読み**：原典で確かめられていません。視覚の偏りで身体が置き去りになる、という批判の相手を原典がどう書くかも確かめていません。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 146 行「多感覚的統合としてのatmosphereを建築の本質として論じました」 | 未判定 | 低 | 原典は未照合 |
+| en 153 行「how lack is detected under different perceptual modes」「the detection of predictive error」 | 付け足し | 高 | 英語版だけにある、欠損（lack）と誤差の語の持ち込み。退避版・調べた跡・DR に出どころが無く、英語版を書いたときに入った |
+| ja 67 行「場への対応のみ明瞭」、pres 47 行「場と波への部分的対応」 | 未判定（版の食い違い） | 低 | 対応する段が版で違う |
+
+### 10. パラメトリシズム（Schumacher）
+
+**要旨**：連続的な差異化と、部分系どうしを関係づける規則で、都市から家具までを設計する、という前衛の様式の宣言です。
+
+**一次情報**：Schumacher, P. (2008). Parametricism as Style – Parametricist Manifesto. 2008 年のヴェネツィア・ビエンナーレの Dark Side Club で発表。台帳 D27-S10 の URL（https://www.patrikschumacher.com/Texts/Parametricism%20as%20Style.htm ）は 404 で、著者のサイトの新しい頁（https://patrikschumacher.com/parametricism-as-style-parametricist-manifesto/ 。頁は「January 9, 2024」に ZHA_Press が掲載と表示）で読みました。著者のサイトの宣言です。頁が無いので段落と議題の番号で控えました。読んだ所：第 1 段落（連続的な差異化を都市から製品まで貫く）、様式の段（様式は設計の研究計画。一つの様式の中で積み重ねる時期と、様式の間を移る革命の時期が交互に来る。新しい原理を困難に抗して守ることが成功の条件で、ときに頑固な教条にも見える。Lakatos を引き、どの研究計画も「反駁されて生まれ、反駁されて死ぬ」）、発見法の段（否定の発見法は古い型への逆戻りを防ぐ。はっきりした区域や領域・反復・直線・直角・角を避ける。否定の発見法の最も大事なものは、念入りな相互の関係づけなしに足したり引いたりしないこと）、成熟の段（後期の近代建築家は同じ道具で複雑さを目立たないように吸収し、近代の美学を保つ。我々の感性は逆に、目立つ差異化を最大に強調する。自然の系のように、部分系に分けられないほど統合されている）、議題 1〜5（部分系の相互の関係づけ。補償や和らげる適応でなく、偏差を増幅する相関。ゲシュタルトの破局。使い方に応じて動く環境。建物の群れとしての都市）、場の段（近代は空間に、パラメトリシズムは場に立つ。鋭い輪郭の離散的な図は無い。変形はもはや秩序の崩れを意味しない。目印も軸も越える境界も無い、と想像する）。
+- Schumacher, P. (2009). Parametricism: A New Global Style for Architecture and Urban Design. *Architectural Design* 79(4), 14–23. DOI: [10.1002/ad.912](https://doi.org/10.1002/ad.912)（Crossref で確かめました）。有料で、OA の写しは見つかりませんでした。
+
+**照合の状態**：本文照合済（宣言。著者のサイト。段落と議題の番号で控えた）。AD 2009 は未照合。
+
+**対立・衝突・統合の読み**：原典に書いてあるのは、近代建築とパラメトリシズムを、空間と場、分けられる部分系と分けられない統合として対に置くことです（成熟の段・場の段）。様式どうしは、積み重ねの時期と革命の時期を交互に繰り返し、新しい様式は古い型への逆戻りを規則で禁じて守られます（様式の段・発見法の段）。Claude の読み替えでは、ここで書かれているのは二つの様式の衝突で、著者は片方が「覇権」を得ることを宣言しています。統合ではなく片方の勝利の形で、中心の問いの並べ方では「片方の勝利」に当たります。著者が「はっきりした区域を避ける」「越える境界も無い」と書くのは様式の規則で、境界の無い都市を作ったという観察ではありません。宣言そのものは、実作の結果では検証も反駁もできないと著者は書きます（様式の段）。パラメトリシズムを様式と呼ぶことへの批判は研究の一線ですが、この記録では批判の側の原典を読んでいません。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 154 行「連続的差異化によって均質な空間を解体し、パラメータの操作により全体を統合する設計思想」 | 一致 | ― | 成熟の段・場の段 |
+| ja 156・158 行「連続的差異化=境界の消去」 | 言い過ぎ | 中 | 原典の規則は「はっきりした区域を避ける」「鋭い輪郭の離散的な図は無い」で、等号でつないだ定式は報告のもの |
+| ja 68 行「対応なし」、ja 158 行「縁との構造的矛盾」、ja 226 行「5段階モデルの適用限界」 | 抜け | 高 | 原典は様式どうしの衝突と、片方の勝利を書いている（様式の段・発見法の段）。報告は至らない形を外に置き、原典の衝突を落としている（README「中心の問い」） |
+| ja 158 行「Jacobsのborder vacuum…と構造的に同型であり、『縁なき生成』…の建築的実験」 | 付け足し | 中 | 調べた跡 phase6 168 行の読み。原典に無い。Jacobs は未照合 |
+
+### 11. 壁の厚み（poché）
+
+**要旨**：図面で壁の厚みを塗りつぶす表し方から来た語で、壁の中の空間や、都市の残りの部分を指すのに使われる、と報告は書きます。
+
+**一次情報**：報告は原典を挙げていません。退避版と英語版は Rowe & Koetter（1978）『Collage City』を挙げます。Venturi（1966）『Complexity and Contradiction in Architecture』の MoMA の公開版を探しましたが、道具の検索は Internet Archive の段で止まり、MoMA のサイトの Wayback の一覧にも見つかりませんでした。ボザールの教程（Guadet）は試していません。
+
+**照合の状態**：未照合（原典が特定できない）。
+
+**対立・衝突・統合の読み**：原典で確かめられていません。内の形と外の形のずれを poché がどう扱うかは、Venturi の本文で確かめる候補です。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 69 行「建築史的概念」（提唱者）、ja 162 行「ボザール以来の建築教育の中で制度化」 | 未判定 | 中 | 出典が無い。en 71 行は Rowe & Koetter を挙げる |
+| ja 164〜166 行「構造的残余から空間的資源への転化」「場から波への移行…のメカニズム候補」 | 付け足し | 中 | 調べた跡 phase6 184 行・222 行の「残余の資源化」。原典に無い |
+| ja 69 行「強い対応」 | 言い過ぎ | 中 | 原典が無いまま強い対応としている |
+
+### 12. 都市の認知的境界（Lynch）
+
+**要旨**：住む人が描く都市の像は、道・縁・地区・結節点・目印の五つで書ける、という論です。
+
+**一次情報**：
+
+- Lynch, K. (1960). *The Image of the City*. MIT Press。台帳に行がありません。書籍で、OA の版は見つかりませんでした。
+- Lynch, K. (1984). Reconsidering The Image of the City. In L. Rodwin & R. M. Hollister (eds.), *Cities of the Mind*, 151–161. DOI: [10.1007/978-1-4757-9697-1_9](https://doi.org/10.1007/978-1-4757-9697-1_9)（Crossref で確かめました）。有料で、OA の写しは見つかりませんでした。
+
+**照合の状態**：未照合（書籍）。
+
+**対立・衝突・統合の読み**：原典で確かめられていません。縁が障壁になって地区が切れる形を原典がどう書くか、著者が 1984 年に方法をどう見直したかは、確かめていません。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 170 行「edge（縁辺）は『障壁にも縫い目にもなる』両義的な性質」 | 未判定 | 低 | 原典は未照合 |
+| ja 174 行「方法論的に確立された認知地図研究に基づく点で、構造対応の信頼性が高い」 | 言い過ぎ | 中 | 型 E。調べ方が確立していることと、5段階との対応が確かなことは別。著者自身の見直し（1984）は読んでいない |
+| ja 70 行「強い対応」 | 言い過ぎ | 中 | 原典を読まずに強い対応としている |
+
+## 公開報告の点検のまとめ
+
+### 版の間の食い違い
+
+| 版 | 強い対応 | 部分・条件付き | 対応なし |
+|---|---|---|---|
+| 日本語版（ja 57〜72 行） | 8 | 3（Menges・Aravena・Pallasmaa） | 1（Schumacher） |
+| 英語版（en 58〜74 行） | 10（Menges・Aravena も Strong） | 1（Pallasmaa） | 1 |
+| プレゼン版（pres 23 行） | 冒頭「強い対応 1件、条件付きの対応 1件」 | ― | ― |
+| プレゼン版（pres 43〜48 行） | 確定に近い 5・有力 5 | 1 | 1 |
+| 退避版（651〜653 行） | Accept 10 | CA 1 | Reject 1 |
+| 調べた跡 phase5（23 行） | Anchor 8 | ― | ― |
+
+判定は「未判定（版の食い違い）」です。重さは高です。プレゼン版の冒頭は、同じ版の表と合っていません。
+
+### 至らない形を外に置いていること
+
+報告 §7（ja 212 行）は「本調査の理論群は『成功した建築』『生きた建築』に偏っています」と書きます。読めた原典では、Alexander が解離と生気の無い構造を（1965 Part II、講演 Part B）、O'Brien & Carrasco が枠を越えた増築と取り合いを（pp.271–272）、Menges が仮想の形と物の世界の分裂を（p.93）、Schumacher が様式どうしの衝突と逆戻りの禁止を書いていました。二次資料でも、van Eyck の論は会合で衝突し、都市計画に空白を残したと書かれています。報告は、これらを落とすか、Schumacher のように「対応なし」として外に置いています（抜け。型 K「無いと言う前に原典で数え直す」）。
+
+### 横断の節は報告の作った分け方
+
+- ja 180〜184 行「境界は帯域である」の独立収束：調べた跡 phase7 5〜17 行から来ています。Alexander と van Eyck は直接ぶつかっていて（Team 10 の会議録 pp.103–104。二次資料）、独立とは言えません（取り違え、高）。「帯域」は Alexander の講演の語でも Nitschke の語でもありません。
+- ja 186〜190 行「主体性のスペクトラム」：調べた跡 phase7 19〜31 行の表です。phase7 は「構造そのもの」を記述していることの「証拠」と書き、報告は「示唆します」に弱めて写しています（付け足し、中）。
+- ja 192〜196 行「縁の10の顔」・ja 198〜202 行「残余の資源化」：調べた跡 phase6 214〜232 行・phase7 33〜61 行の分け方で、原典に無い名前です（付け足し、中。型 H）。
+- ja 222 行「12のエントリ中10が『縁』への対応を持ち、そのうち7件が強い対応」：退避版 673 行と phase5 230 行の数から来ています。照合した原典からは数えられません（未判定）。
+
+### テンプレート由来の表示
+
+「立ち位置明示」（ja 3 行）・「方法論的開示」の「著者（pjdhiro）自身の精読による検証が完了していない箇所」（ja 30〜33 行。文責を pjdhiro としている）・「安全弁」（ja 74 行）・「温度帯」（ja 72 行）・「結びの温度開示」（ja 228 行）・Colophon（ja 233〜243 行）・Phase 1〜7（ja 24 行）。どれも型 F と LLM の記号で、テンプレートで一度に直すものです（README 段 1）。
+
+### 誤りの出どころ
+
+- 「全段階に明瞭な対応」「強い対応」の数：退避版の Accept と、調べた跡 phase5 の Anchor。
+- 「逆照射」「通底」「10の顔」「残余の資源化」「主体性のスペクトラム」「独立収束」：調べた跡 phase5〜7 の着想が、本文で「事実として」に近い形に上がったもの。
+- 「二項対立を解消するのではなく…新たな質を生む」（ja 100 行）：退避版 158 行の非二元性の点検（CHK-A）の文を、点検の語だけ外して写したもの。退避版は 12 の論すべてに非二元性の点検の欄を持っています（62・109・158・207・260・315・369・420・468・523・571・618 行）。「意識や意図を介さない生成」（ja 92 行）も退避版 109 行の点検の読みに近い言い方です。
+- 「何もないことが何かである」・縁側：退避版 284〜285 行。
+- 英語版の「lack」「predictive error」（en 153 行）：退避版・調べた跡・DR に無く、英語版を書いたときに入ったもの。
+- 「1978 年のパリ装飾美術館」・「磯崎ほか」：DR と退避版 274 行。Nitschke 1988 の書く年と場所と違う。
+
+### 文体（writing.md・corrections.md の型）
+
+- 型 E（言い切り・格上げ）：「構造対応の中でも特に堅い事例」（ja 118 行）、「最も直接的な建築理論的定式化」（ja 102 行）、「最も豊かに確認された領域の一つ」（ja 220 行）、「本調査の中で最も堅い発見の一つ」（ja 222 行）。
+- 型 J（独自の比喩ラベル）：「逆照射型」「居場所型」「未完型」などの「縁」の 10 の顔（ja 194 行）。
+- 型 B（対で切る）：「主体性がほぼゼロ」から「協働」までの一列のスペクトラム（ja 188 行）。
+- 型 H（原典に無い名前）：「残余の資源化」「縁の10の顔」。
+
+### 精読ノートと wiki・台帳の誤り（司令塔が原典で確かめて直した。2026-11-09）
+
+- `cs/knowledge/source-notes/D27/D27-S10_schumacher-2008.md` 63 行・86 行、`pd/wiki/sources/D27_schumacher_2008_parametricism-as-style.md` 68 行：引用「…rather than compensatory adaptations」は、原文では「rather than compensatory or ameliorating adaptations」。省略の印なしに語を落としている。
+- 同じノートの 87 行と wiki 60 行：議題 1 の題を「Inter-articulation of multiple subsystems」と引用符に入れているが、原文の題は「Inter-articulation of sub-systems」（「multiple subsystems」は本文の語）。
+- 同じノートの 15 行と wiki 92 行：「著者サイト掲載日: January 9, 2008」。今の頁の表示は「January 9, 2024」（発表は 2008 年）。
+- `cs/knowledge/source-notes/D27/D27-S13_jiang-2019.md` 80 行：引用「a whole comes from parts... it is incorrect. It is the wholeness that induces centers to generate a coherent whole」は、原文の語順を入れ替えている。原文は「it is incorrect to say a whole comes from parts, or a whole consists of parts; it is the wholeness that induces centers to generate a coherent whole」（arXiv 版 p.5）。
+- 台帳 D27-S03：URL の PDF は van Eyck の著作でなく、2006 年の Delft の会議録『Team 10: Keeping the Language of Modern Architecture Alive』（Risselada・van den Heuvel・de Waal 編）。
+- 台帳 D27-S07 の備考：「OA 代替」の URL の PDF は「Morphospaces of Robotic Fabrication」でなく、Menges (2013) Performative Morphology in Architecture, SAJ 5, 92–105。
+- 台帳 D27-S10：URL は 404。新しい URL は https://patrikschumacher.com/parametricism-as-style-parametricist-manifesto/ 。
+- 台帳 D27-S12：巻号を 47(6) と書くが、手元の PDF の表紙（Groningen 大学のリポジトリの出版社の版）と Crossref では 47(2), 220–234（2020 年刊）。
+- 台帳 D27-S13：MDPI の PDF は自動取得で 403。arXiv の著者稿（1909.11757）を取得先に足す。
+- 台帳 D27-S01：手元の PDF は 313 頁の抜粋の走査（文字の層なし）。全 1171 頁の本ではない。
+
+## 判断が要るもの
+
+- 本文に当たれない論（Otto・Hertzberger・Jacobs・Pallasmaa・poché・Lynch。12 のうち 6）を、分野の論として残すか。予想：残して照合の状態を書く（README「判断が要ること」5 の三つ目の予想と同じ。`sources.md` §3-3）。Internet Archive の貸し出しの 3 冊（S04・S05・S09）は、pjdhiro がログインして借りれば読める見込みです。
+- 「間」の論は、原典（Nitschke 1988）から対立・衝突・統合を読むのが難しく、語の構造の論です。予想：外さずに「原典から読むのは難しい」と書いて並べる（D12 の境界の理論と同じ扱い）。縁側の「縁」は語が同じだけなので数えない（規約で決めたこと）。
+
+## 新しく見つけた原典（台帳に足す案）
+
+エージェントは manifest を書き換えていません。番号は D27-S17 から振りました。取ってきたファイルは、司令塔が手元の `cs/knowledge/raw/` に置き、下の行と書き足しを台帳に入れました（2026-11-09）。
+
+| source_id の案 | 書誌 | 取得先 | 状態の案 |
+|---|---|---|---|
+| D27-S17 | Alexander, C. (1965). A City is Not a Tree. *Architectural Forum* 122(1), 58–62; 122(2), 58–62 | https://www.patternlanguage.com/archive/cityisnotatree.html （著者のサイトの再録。書誌は著者のサイトの記載） | raw-confirmed（著者の写し。HTML） |
+| D27-S18 | Alexander, C. (1999). The origins of pattern theory: the future of the theory, and the generation of a living world. *IEEE Software* 16(5), 71–82. DOI 10.1109/52.795104 | https://www.patternlanguage.com/archive/ieee.html （著者のサイトの 1996 年の講演の記録。誌面との一致は未確認）。IEEE は有料 | raw-confirmed（著者の写し。HTML） |
+| D27-S19 | Withagen, R. & Caljouw, S. R. (2017). Aldo van Eyck's Playgrounds: Aesthetics, Affordances, and Creativity. *Front. Psychol.* 8, 1130. DOI 10.3389/fpsyg.2017.01130 | https://www.frontiersin.org/articles/10.3389/fpsyg.2017.01130/pdf （出版社の OA。CC BY） | raw-confirmed（二次資料） |
+| D27-S20 | O'Brien, D. & Carrasco, S. (2021). Contested incrementalism: Elemental's Quinta Monroy settlement fifteen years on. *Front. Archit. Res.* 10(2), 263–273. DOI 10.1016/j.foar.2020.11.002 | https://ndownloader.figshare.com/files/54377570 （ニューカッスル大学の機関リポジトリの出版社の版。CC BY-NC-ND） | raw-confirmed |
+| D27-S21 | Nitschke, G. (1988). MA: Place, Space, Void. *Kyoto Journal* 8 | https://kyotojournal.org/hidden-japan/ma-place-space-void/ （出版社のサイトの再録） | raw-confirmed（出版社のサイトの再録。HTML） |
+| D27-S22 | Menges, A. (2013). Performative Morphology in Architecture: Integrative Design Research by the Institute for Computational Design. *SAJ (Serbian Architectural Journal)* 5, 92–105 | https://openlab.citytech.cuny.edu/anzalonearch3631spring2015-/files/2011/06/SAJ-2013-2-A.Menges.pdf （授業の頁の写し。権利は未確認） | raw-confirmed（授業用の写し） |
+| D27-S23 | Liddell, I. (2015). Frei Otto and the development of gridshells. *Case Studies in Structural Engineering* 4, 39–49. DOI 10.1016/j.csse.2015.08.001 | ScienceDirect（OA だが自動取得で確認画面） | blocked-access |
+| D27-S24 | Goldsmith, N. (2016). The physical modeling legacy of Frei Otto. *Int. J. Space Struct.* 31(1), 25–30. DOI 10.1177/0266351116642071 | Sage（有料） | citation-only |
+| D27-S25 | Veenendaal, D. & Block, P. (2012). An overview and comparison of structural form finding methods for general networks. *Int. J. Solids Struct.* 49(26), 3741–3753. DOI 10.1016/j.ijsolstr.2012.08.008 | Elsevier（有料）。研究室のサイトの Wayback に写しなし | citation-only |
+| D27-S26 | Schumacher, P. (2009). Parametricism: A New Global Style for Architecture and Urban Design. *Architectural Design* 79(4), 14–23. DOI 10.1002/ad.912 | Wiley（有料） | citation-only |
+| D27-S27 | Reichert, S., Menges, A. & Correa, D. (2015). Meteorosensitive architecture. *Computer-Aided Design* 60, 50–69. DOI 10.1016/j.cad.2014.02.010 | Elsevier（有料） | citation-only |
+| D27-S28 | Pilgrim, R. B. (1986). Intervals ("Ma") in Space and Time. *History of Religions* 25(3), 255–277. DOI 10.1086/463043 | UChicago（有料） | citation-only |
+| D27-S29 | Lynch, K. (1960). *The Image of the City*. MIT Press | 書籍 | citation-only |
+| D27-S30 | Lynch, K. (1984). Reconsidering The Image of the City. In *Cities of the Mind*, 151–161. DOI 10.1007/978-1-4757-9697-1_9 | Springer（有料） | citation-only |
+| D27-S31 | Venturi, R. (1966). *Complexity and Contradiction in Architecture*. The Museum of Modern Art | MoMA の公開版は見つからなかった。追記（2026-11-09）：MoMA のサイトにあるのは 2019 年の版の見本の PDF（16 頁。review 用）で、司令塔が取って全文を「poch」で検索したが、poché の箇所は入っていなかった | citation-only |
+| D27-S32 | Pallasmaa, J. (2014). Space, Place, and Atmosphere: Peripheral Perception in Existential Experience. In *Architectural Atmospheres*, 18–41. DOI 10.1515/9783038211785.18 | De Gruyter（有料）。Lebenswelt の版は誌のサイトに接続できなかった | citation-only |
+
+既存の行に書き足す案：
+
+- D27-S01：手元の PDF は 313 頁の抜粋の走査で文字の層が無い。p.x（pdf の p.8）を確かめた。走査は PFU ScanSnap で作られ、上げた人は未確認。
+- D27-S03：書誌を、Risselada, M., van den Heuvel, D. & de Waal, G. (eds.) (2006). *Team 10: Keeping the Language of Modern Architecture Alive*. TU Delft に直す。研究者の会のサイトの写し（233 頁）。raw-confirmed の候補（二次資料）。
+- D27-S07：「OA 代替」の題を Menges (2013) Performative Morphology in Architecture に直す（D27-S22）。
+- D27-S10：URL を新しい頁に直す。raw-confirmed の候補（宣言。著者のサイト）。
+- D27-S12：巻号を 47(2), 220–234 に直す。
+- D27-S13：arXiv の著者稿（https://arxiv.org/pdf/1909.11757 ）を足す。MDPI は 403。
+
+## ブラウザでの保存が要る PDF
+
+| 台帳の行 | 文献 | 開く URL・止まった理由 | 保存名の案 | それで何を確かめるのか |
+|---|---|---|---|---|
+| D27-S23（案） | Liddell 2015 | https://www.sciencedirect.com/science/article/pii/S2214399815300011/pdf （確認画面。OA） | D27_liddell_2015_frei-otto-gridshells.pdf | Otto の模型による形の探し方と、うまく行かなかった試み（しわ・破れ・つりあいが見つからない形）を原典の共同者が書いているか |
+| D27-S04 | Hertzberger 1991 | https://archive.org/details/lessonsforstuden0000hert （Internet Archive の貸し出し。ログインの壁） | D27_hertzberger_1991_lessons-for-students.pdf | 閾（threshold）と公私の段階を書く章。報告の「3つの設計変数」があるか |
+| D27-S05 | Jacobs 1961 | https://archive.org/details/deathlifeofgreat0000jaco_e4x9 （同上） | D27_jacobs_1961_death-and-life.pdf | 多様性の四条件の章と、「border vacuums」「self-destruction of diversity」「unslumming」の章。至らない形の書き方 |
+| D27-S09 | Pallasmaa 1996/2005 | https://archive.org/details/eyesofskinarchit0000pall （同上） | D27_pallasmaa_2005_eyes-of-the-skin.pdf | 視覚の偏りへの批判と、周辺視の段 |
+| ― | Jacobs 1958「Downtown is for People」 | https://fortune.com/2011/09/18/downtown-is-for-people-fortune-classic-1958/ （403） | D27_jacobs_1958_downtown-is-for-people.pdf（頁の保存） | 書籍の前の論説で、街路の多様性と大規模な再開発の衝突を書いているか |
+| D27-S13 | Jiang 2019（出版社の版） | https://www.mdpi.com/2413-8851/3/3/96/pdf （403 Access Denied） | D27_jiang_2019_living-structure.pdf | arXiv 版で読んだので急がない。誌面の頁で引くときだけ |
+
+取得先に接続できなかったもの（確認画面とは分けて書きます）：Lebenswelt（riviste.unimi.it）は TLS の途中で接続が切れました。日をおいて取り直します。Pallasmaa の Lebenswelt の版があるかどうかもまだ確かめていません。
+
+## 手順について分かったこと
+
+- 建築の論の原典は書籍が多く、本文に当たれたのは、著者のサイトの講演と論説（Alexander）、宣言（Schumacher）、出版社の再録（Nitschke）、授業の頁の論文（Menges）、機関リポジトリの評価の論文（O'Brien & Carrasco）でした。評価の論文は、至らない形を正面から書いていて、中心の問いに直接効きました（D05 と同じ）。
+- 台帳が url-verified と書く行の写しは、二つが別の文書でした（D27-S03 は会議録、D27-S07 の「OA 代替」は別の題の論文）。取ってから表紙で確かめる手順が要りました。
+- Elsevier の OA の論文は ScienceDirect で確認画面でしたが、同じ論文の機関リポジトリの写しを Figshare の API で引けました（メルボルン大学のリポジトリは Incapsula の確認画面）。
+- 道具の題での検索は、Internet Archive の段で長く止まることがありました（Venturi）。一件ずつ時間の上限を付けて走らせました。
+- 報告の非二元性の言い方は、退避版の 12 の論すべてにある点検の欄（CHK-A）から、語を外して本文に入っていました。英語版には、退避版にも調べた跡にも無い欠損の語が入っていました。版ごとに grep する必要があります。
