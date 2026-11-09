@@ -15,6 +15,10 @@
 |---------|-------------|-----------|
 | main-webgpu.js | WebGPU math port | `main.js` の数式を WGSL に移植した背景 |
 
+## ページ固有の背景
+
+- `src/backgrounds/love-field.js`：Love駆動開発の背景の見本（three.js の WebGL・三つ）。`reader-app.js` が body の `data-background="love-…"` か `?bg=orbit|lens|binary` のときに読み、失敗したら上のプールに戻す。見比べは `src/backgrounds/samples.html`（noindex）。`?motion=still` で止めた一枚を出す
+
 ## 方針
 
 - develop では `main-webgpu.js`・`main3-webgpu.js`・`main4-webgpu.js` を採用する（`src/content/site-data.mjs` の `SHADER_PATHS`）
