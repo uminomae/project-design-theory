@@ -1,7 +1,7 @@
 # Cook-Greuter 2013 — 段階ごとの主な不安・防衛・引き寄せられる組織の索引
 
 **確認日**: 2026-11-06（原典 PDF をテキスト化して本文照合）
-**一次ソース**: Cook-Greuter, S. R. (2013). *Nine Levels of Increasing Embrace in Ego Development: A Full-Spectrum Theory of Vertical Growth and Meaning Making*. Prepublication version, revised Dec. 2013. https://pdf.stafforini.com/cook-greuter-2013-nine-levels-increasing.pdf
+**一次ソース**: Cook-Greuter, S. R. (2013). *Nine Levels of Increasing Embrace in Ego Development: A Full-Spectrum Theory of Vertical Growth and Meaning Making*. Prepublication version, revised Dec. 2013. https://web.archive.org/web/20140928135208/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1%2714%2097p%5B1%5D.pdf （著者本人が cook-greuter.com に置いていた版の Wayback の写し・2014-09-28。表紙は「Revised Dec. 2013」で 97 頁。以前の確かめ先 pdf.stafforini.com の写しと全文が一致することを 2026-11-09 に確かめた）
 **ページ**: 論文の刷りのページ（＝PDF の頁 − 2）。stages-screener README §6 と同じ数え方。
 **使い方**: 心の言葉（心理的安全性・安心・信頼・内発的動機など）を、段階ごとに「何が脅威に見え、どう守るか」で読むときに引く。pd・cs・ks・as の読み物に共通して効く。
 **注意**: 原文の表紙に「許可なく配布・翻訳しないこと」とあるので、要約とページの指示だけにとどめる。長い引用は載せない。段階を上下の評価で読まない。

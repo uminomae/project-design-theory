@@ -87,7 +87,7 @@ ChatGPT の GPTs で作った旧版を Claude のアーティファクトに移�
 - **[O]** O'Fallon, T. States and STAGES: Waking up Developmentally. https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf
 - **[B]** Barta, K. Seven Perspectives on the STAGES Developmental Model. https://integral-review.org/issues/vol_16_no_1_barta_seven_perspectives_on_the_stages_developmental_model.pdf
 - **[V]** Murray, T. & O'Fallon, T. Summary of STAGES Validation Research. https://integral-review.org/issues/vol_16_no_1_murray_and_ofallon_summary_of_research.pdf
-- **[CG]** Cook-Greuter, S. R. (2013). Nine Levels of Increasing Embrace in Ego Development: A Full-Spectrum Theory of Vertical Growth and Meaning Making. Prepublication version, revised Dec. 2013. https://pdf.stafforini.com/cook-greuter-2013-nine-levels-increasing.pdf （頁は論文の刷り頁＝PDF の頁−2。原文の表紙に「許可なく配布・翻訳しないこと」とあるので、ここでも要約と頁の指示だけにとどめる。pd#132 で追加・2026-10-24）
+- **[CG]** Cook-Greuter, S. R. (2013). Nine Levels of Increasing Embrace in Ego Development: A Full-Spectrum Theory of Vertical Growth and Meaning Making. Prepublication version, revised Dec. 2013. https://web.archive.org/web/20140928135208/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1%2714%2097p%5B1%5D.pdf （著者本人が cook-greuter.com に置いていた版の Wayback の写し・2014-09-28。表紙は「Revised Dec. 2013」で 97 頁。以前の確かめ先 pdf.stafforini.com の写しと全文が一致することを 2026-11-09 に確かめた）（頁は論文の刷り頁＝PDF の頁−2。原文の表紙に「許可なく配布・翻訳しないこと」とあるので、ここでも要約と頁の指示だけにとどめる。pd#132 で追加・2026-10-24）
 
 STAGES International 自体の段階記述はネット上で見つからなかった。論文の**全文や長い引用は載せない**（転載の許諾を確認していないため）。以下は Claude が自分の言葉で要約したもの。原文はリンク先で読める。
 
