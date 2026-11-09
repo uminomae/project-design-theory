@@ -463,6 +463,19 @@
             </article>
         </div>
     </div>
+    <script>
+    // リンクで畳みの中へ飛んできたとき、その畳みを開く（#92）
+    (function () {
+        function openTarget() {
+            var id = decodeURIComponent(location.hash.slice(1));
+            var el = id && document.getElementById(id);
+            for (var d = el && el.closest('details'); d; d = d.parentElement && d.parentElement.closest('details')) d.open = true;
+            if (el) el.scrollIntoView();
+        }
+        window.addEventListener('hashchange', openTarget);
+        openTarget();
+    })();
+    </script>
     <script type="module" src="../src/reader-app.js"></script>
     <script type="module" src="../src/reader-gravity-love.js"></script>
 </body>
