@@ -50,6 +50,7 @@ pjdhiro が pd/ を読んでいて引っかかったところを、五月雨に�
 - 報告は、読まれなくても 7 日で Claude がしまう（`archive` へ移し、`outcome: "読んだ（7 日）"`）。
 - 別に作ったページは、一件をしまうときに消す（消すたびに承認の画面が出る）。
 - 司令塔を呼んだコメントのスレッドは、返したら resolve する。
-- しまったものをいつ消すかは、pjdhiro の判断を待っている（帳面の判断「しまったものを、いつ消すか」）。決まったら、ここと帳面の `meta/settings` の `archiveRule`（しまったものの欄に出る一文）に書く。消すのは司令塔のセッションの始めで、消す前に判断が stance・decisions・Issue に写っているかを見る。
+- しまったものは、`closedAt` から 30 日たったら消す（pjdhiro 2026-11-09・帳面の判断「しまったものを、いつ消すか」で「30 日たったら消す」を選んだ）。消すのは司令塔のセッションの始めで、`archive` を list し、30 日を過ぎたものを batch で delete する。消す前に、その一件の判断が stance・decisions・Issue に写っているかを見る。帳面の `meta/settings` に `archiveDays: 30`・`reportDays: 7` と、しまったものの欄に出す一文 `archiveRule` を置いた。
+- 答えを受けた判断は、規約に写したら Claude がしまう（pjdhiro が「しまう」を押すのを待たない）。
 
 pjdhiro の判断や見方が `thread` に出たら、ふだんの対話と同じく `stance.md`・`corrections.md`・`decisions.md` に写す。帳面のしまったものは、判断の正本ではない。
