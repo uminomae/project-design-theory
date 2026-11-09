@@ -500,6 +500,8 @@ details.archive summary { cursor: pointer; font-family: var(--font-display); fon
       if (bS.disabled) bS.title = "司令塔のセッションが開いていません";
       bS.addEventListener("click", () => instructAndCall(id, d, bS, ta.value));
       acts.append(bS);
+    }
+    if (comments && canSend !== "off" && canSend !== "writers_only" && d.kind !== "報告") {
       const bM = el("button", "call-item", "直して develop へ取り込む"); bM.type = "button";
       bM.disabled = canSend !== "available";
       bM.title = bM.disabled ? "司令塔のセッションが開いていません" : "司令塔が直して develop に取り込み、報告を置きます。書く欄の言葉も添えて送ります";
