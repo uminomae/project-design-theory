@@ -1,0 +1,15 @@
+{
+  "note": "意識とはの文献レビュー（#95）で、原典から照合し直した領域の記録。as のトップに一覧で出し、押すと記録を開く。済んだ領域を一行ずつ足す。name と summary は画面に出す文で、領域の記号を入れない。点検は scripts/check-as-evidence.mjs。",
+  "updated": "2026-11-10",
+  "areas": [
+    {
+      "id": "A01",
+      "file": "evidence-A01-neurophenomenology-method.md",
+      "reviewed": "2026-11-09",
+      "name_ja": "神経現象学の方法",
+      "name_en": "Methods of neurophenomenology",
+      "summary_ja": "体験の記述をどう取り、神経の測定とどう突き合わせるか。その記述はどこまで信頼できるか",
+      "summary_en": "How descriptions of experience are gathered and set against neural measures, and how far those descriptions can be trusted"
+    }
+  ]
+}

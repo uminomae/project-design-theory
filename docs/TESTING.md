@@ -31,6 +31,7 @@
 | ks：devlog の移動と深いリンク・日英 | 開発記録のページ送り・深いリンク・日英の対応 | kesson-space の `devlog.yml`・`package.json` |
 | 公開するファイルの文字化け | 公開するページ・データ・読み物の正本に U+FFFD が無い | project-design の `ci.yml` |
 | cs：照合の記録 | 分野ごとの照合の記録（`cs/evidence/evidence-Dxx-*.md`）の形：frontmatter・文責・一面の表・照合の状態と判定の語・確かめ先・台帳の行・絶対パス・文末。見るものは `docs/cs-review/README.md`「記録の品質の点検」 | 新しく書いた（`scripts/check-cs-evidence.mjs`、2026-11-08・#73。pjdhiro「レビュー時のルールもテストを作っていかないとね」） |
+| as：照合の記録と台帳 | 領域ごとの照合の記録（`as/evidence/evidence-Axx-*.md`）の形：frontmatter・文責・探し方・一面の表・照合の状態と判定の語・確かめ先・絶対パス・文末・本文の記号とパス。原典の台帳（`as/knowledge/raw/manifest.md`）の行の形と、台帳の「使う記録」の行の書誌（第一著者・年・題の頭・DOI）が記録の本文にあるか。画面に出す一覧（`as/evidence/reviewed.json`）の形。見るものは `docs/as-review/README.md`「記録の品質の点検」 | 新しく書いた（`scripts/check-as-evidence.mjs`、2026-11-10・#95。形の元は cs の点検） |
 | 道具：原典を探す find-source | `scripts/find_source.py` の書誌の一行の読み取り・置き場の分類（誰が上げた版か・確認画面のホスト）・判定の段・PDF との突き合わせ（前付けだけ・再録の印・別の題・別の DOI・著者稿）。ネットワークと PDF には触らない。例は cs のレビューで実際に起きた取り違えから取った（2026-11-09） | この repo で新しく書いた（`scripts/test_find_source.py`） |
 
 公開してよいかの点検（`docs/PUBLISH-CHECK.md`）は、commit のときに `.githooks/` が回す。
@@ -59,6 +60,7 @@ const { run } = await import('../src/page-check.js'); await run();
 | `pd/scripts/reader-attribution-audit.mjs <正本.md>` | 読み物に pjdhiro の言葉や出典を足したとき | 一文ごとの帰属の形。間接話法や帰属の無い地の文が、本人の言葉や原典とずれていないか（型 G・H） |
 | `pd/scripts/wiki-cross-check.mjs --all --dry-run` | wiki の出典ページと cs の出典ノートを直したとき | 二つの食い違いの候補。書き出すときは `pd/.cache/` に出る |
 | cs の検査（`cs/scripts/qc-all.sh` ほか） | cs を直したとき | cs の全体のレビューで、今の形に合わせる（`docs/cs-review/README.md` の段 0）。それまではここで扱わない |
+| `NODE_USE_ENV_PROXY=1 node scripts/check-as-evidence.mjs --crossref` | as の領域を回して台帳に行を足したとき | 台帳の DOI を Crossref で引き、題の頭と年が台帳と合うかを見る。年は号とオンラインの公開で違うことがあるので、合わない行は台帳の書誌の注記と見比べる（2026-11-10 に A01 の 18 本で回し、すべて合った） |
 | `bash scripts/find-source.sh check <PDF> --cite "<台帳の書誌の一行>"` | 原典の PDF を手元に足したとき・台帳の行を直したとき | 判定が「合わない」「注意がある」の行を目で見る。画像だけの PDF は「機械では確かめられない」と出るので、表紙を見る。手元の全部に流す形はスキル `find-source`（2026-11-09 に 223 本に流し、版の違い 7 と取り違え 2 が出た） |
 
 ### 自動で動くもの
