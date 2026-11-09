@@ -19,6 +19,7 @@
 
 - `src/backgrounds/love-gemini.js`：Love駆動開発の背景（Gemini 作・2026-11-10）。`?bg=gemini`。頼む文は `pd/docs/gemini-prompt-love-background.md`。Gemini の出力から直したのは、動かすための二か所だけ（ファイルの頭に書いた）
 - `src/backgrounds/love-gemini2.js`：同じく Gemini 作の二つ目（蔵本モデルの同期とトーラスの網目）。`?bg=gemini2`。直したのは vertexColors の一か所だけ
+- `src/backgrounds/love-gemini3.js`：同じく Gemini 作の三つ目（複素ポテンシャルの渦の粒と、中央の液体のような面）。`?bg=gemini3`。直したのは ParametricGeometry（`parametric-geometry.js` を使う）と vertexColors の二か所
 - `src/backgrounds/love-field.js`：Love駆動開発の背景の見本（three.js の WebGL・三つ）。`reader-app.js` が body の `data-background="love-…"` か `?bg=orbit|lens|binary` のときに読み、失敗したら上のプールに戻す。見比べは `src/backgrounds/samples.html`（noindex）。`?motion=still` で止めた一枚を出す
 
 ## 方針
