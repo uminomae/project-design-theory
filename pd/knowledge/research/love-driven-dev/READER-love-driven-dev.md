@@ -37,7 +37,7 @@ date: 2026-11-09
 
 <!--REF:経営学・起業研究-->
 
-出典：Shane & Venkataraman (2000) "The promise of entrepreneurship as a field of research", *Academy of Management Review* 25(1):217／Alvarez & Barney (2007) "Discovery and creation: alternative theories of entrepreneurial action", *Strategic Entrepreneurship Journal* 1(1–2):11。
+出典：Shane & Venkataraman (2000) "The promise of entrepreneurship as a field of research", *Academy of Management Review* 25(1):217（リヴァプール大学のサーバーに置かれた誌面の写しで本文照合済。分野の定義 p.218）／Alvarez & Barney (2007) "Discovery and creation: alternative theories of entrepreneurial action", *Strategic Entrepreneurship Journal* 1(1–2):11（研究団体 effectuation.org のサイトに置かれた誌面の写しで本文照合済。発見の理論と創造の理論 p.11）。
 
 </details>
 
@@ -47,15 +47,15 @@ date: 2026-11-09
 
 「事業開発」という言葉は、事業を意図して起こし、思うように進めていく行為を思わせます。研究の側から見ると、意図・コントロール・意識の三つとも、言葉が思わせるほど確かではなさそうです。
 
-- **意図**：ミンツバーグとウォーターズ（1985 年）は、意図した戦略がそのまま実現するとは限らず、意図していなかったのに行動の積み重ねの中から形をとる戦略（創発的戦略）もある、と書きました。現実の戦略は、意図と創発のあいだのどこかにあります。
+- **意図**：ミンツバーグとウォーターズ（1983 年）は、意図して実現した戦略、意図したが実現しなかった戦略、意図していなかったのに形をとった戦略（創発的戦略）を分けました。ミンツバーグは 1994 年に、戦略はどれも創発の性質をいくらか帯びる、とも書いています。
 - **コントロール**：ナイト（1921 年）は、確率で見積もれる「リスク」と、確率さえ分からない「不確実性」を分けました。そして、事業の利潤はこの不確実性を引き受けるところから生まれる、と考えました。
-- **意識**：ワイク（1995 年）は、人は行動したあとで、その意味を振り返って組み立てる、と書きました。ウェグナー（2002 年）は、「自分がやった」という感じそのものが、あとから組み立てられる解釈かもしれない、と論じています。
+- **意識**：ワイクらは 1999 年の論文で、人は動き出してから、その結果を手がかりに、何が起きているのかを振り返って見いだす、と書きました。ウェグナー（1999 年・2003 年）は、「自分がやった」という感じそのものが、考えと行為の関係から心が推し量って組み立てる解釈かもしれない、と論じています。
 
 こうして並べると、「事業開発」は、起きたことを後から一本の物語に整えた呼び名、という面を持っているのかもしれません。その物語に入らなかったもの、物語の手前で動いていたものを、このページは問います。同じ形は、一人の中でも、人の集まりでも、社会でも現れます。
 
 <!--REF:経営学・起業研究-->
 
-出典：Mintzberg & Waters (1985) "Of strategies, deliberate and emergent", *Strategic Management Journal* 6(3):257／Knight (1921) *Risk, Uncertainty and Profit*／Weick (1995) *Sensemaking in Organizations*／Wegner (2002) *The Illusion of Conscious Will*。
+出典：Mintzberg & Waters (1983) "The Mind of the Strategist(s)", in S. Srivastva and Associates, *The Executive Mind*, Jossey-Bass, pp.58–83（著者のサイトにある本のスキャンで本文照合済。三つの戦略の定義 p.60）／Mintzberg (1994) "Rethinking Strategic Planning Part I", *Long Range Planning* 27(3):12–21（著者のサイトにある誌面の PDF で本文照合済。戦略が創発の性質を帯びる箇所 p.19）／Knight (1921) *Risk, Uncertainty and Profit*（Liberty Fund の Library of Economics and Liberty にあるパブリックドメインの全文で本文照合済。リスクと不確実性の区別は第 III 部第 8 章の段落 III.VIII.1、利潤と不確実性は第 III 部第 10 章の段落 III.X.33）／Colville, Waterman & Weick (1999) "Organizing and the Search for Excellence: Making Sense of the Times in Theory and Practice", *Organization* 6(1):129–148（ミシガン大学の機関リポジトリにあった誌面の PDF の Wayback の記録（2017 年 8 月 20 日）で本文照合済。Weick 1995 の p.55 を引く箇所 p.141）／Wegner & Wheatley (1999) "Apparent mental causation", *American Psychologist* 54(7):480（著者のハーバード大学の頁にあった誌面の PDF の Wayback の記録（2005 年 12 月 15 日）で本文照合済。要旨 p.480）／Wegner (2003) "The mind's best trick", *Trends in Cognitive Sciences* 7(2):65（同じ頁にあった誌面の PDF の Wayback の記録（2005 年 11 月 9 日）で本文照合済。p.65）。
 
 </details>
 
@@ -95,7 +95,7 @@ date: 2026-11-09
 
 <!--REF:経営学・起業研究-->
 
-出典：Mintzberg, Ahlstrand & Lampel (1998) *Strategy Safari*／Saxe "The Blind Men and the Elephant"／Kotler, Kartajaya & Setiawan (2010) *Marketing 3.0*・(2016) *Marketing 4.0*・(2021) *Marketing 5.0*／Nonaka & Takeuchi (1995) *The Knowledge-Creating Company*・野中・勝見 (2020)『共感経営』。表の分け方と「効果的な状況」の列は、Claude による整理です。
+出典：Mintzberg, Ahlstrand & Lampel (1998) *Strategy Safari*（独訳 *Strategy Safari. Der Wegweiser durch den Dschungel des strategischen Managements*, 訳 J. T. A. Wegberg, FinanzBuch Verlag, 2012 の、出版社の試し読みの Wayback の記録（2019 年 10 月 20 日）で本文照合済（訳）。冒頭のサックスの詩 pp.15–17）／Saxe "The Blind Men and the Elephant"（Wikisource にあるパブリックドメインの *The Poems of John Godfrey Saxe*（1872 年）の版で本文照合済。スキャンの 279–281 枚目）／Kotler, Kartajaya & Setiawan (2010) *Marketing 3.0*（出版社 Wiley の試し読みで本文照合済。第 1 章 p.4）・(2021) *Marketing 5.0*（出版社 Wiley の試し読みで本文照合済。第 1 章 pp.3・5）／野中・勝見 (2020)『共感経営』（版元の親会社の日経BP が日経BOOKプラスで 2023 年 1 月 20 日に公開した「はじめに」で本文照合済）。表の分け方と「効果的な状況」の列は、Claude による整理です。
 
 ## Love駆動開発は、何を駆動源と見るのか
 
@@ -117,7 +117,7 @@ Love駆動開発は、この駆動源と、それが生む構造やプロセス�
 
 #### 物理の前例 — 重力は、動かされているもので書かれてきた
 
-見えないものを書いてきた前例は、物理にあります。重力そのものを見た人はいません。それでも、落ちるりんごと回る月が同じ法則に従うことや、銀河の外側の星の回り方から光では見えない質量があることが、推し量られてきました。重力は、それに動かされているものの動き方で書かれてきました。ブラックホールの画像（2019 年公表）にも、中心そのものは写っていません。写っているのは、暗い影と、それを縁取る光の輪です。中心がどこにあるかは、まわりの光で分かります。
+見えないものを書いてきた前例は、物理にあります。重力そのものを見た人はいません。それでも、落ちるりんごと回る月が同じ法則に従うことや、銀河の外側のガスや星の回り方から光では見えない質量があることが、推し量られてきました。重力は、それに動かされているものの動き方で書かれてきました。ブラックホールの画像（2019 年公表）にも、中心そのものは写っていません。写っているのは、暗い影と、それを縁取る光の輪です。中心がどこにあるかは、まわりの光で分かります。
 
 #### このページの書き方 — 円を重ねる
 
@@ -137,7 +137,7 @@ Love駆動開発は、この駆動源と、それが生む構造やプロセス�
 
 <!--REF:物理と科学史-->
 
-出典：[Rubin & Ford (1970)](https://doi.org/10.1086/150317) *ApJ* 159:379／[Rubin, Ford & Thonnard (1980)](https://doi.org/10.1086/158003) *ApJ* 238:471（銀河の回転曲線）／[Event Horizon Telescope Collaboration (2019)](https://doi.org/10.3847/2041-8213/ab0ec7) *ApJL* 875:L1（M87 の画像）／『楞厳経』巻二（大正蔵 T19 No.945）・『大智度論』巻九（大正蔵 T25 No.1509）。
+出典：[Rubin & Ford (1970)](https://doi.org/10.1086/150317) *ApJ* 159:379（NASA ADS が公開している誌面の走査で本文照合済。要旨 p.379、外側で平らな回転曲線 p.392）／[Rubin, Ford & Thonnard (1980)](https://doi.org/10.1086/158003) *ApJ* 238:471（銀河の回転曲線。NASA ADS が公開している誌面の走査で本文照合済。光学像の外の質量 p.471 の要旨）／[Event Horizon Telescope Collaboration (2019)](https://doi.org/10.3847/2041-8213/ab0ec7) *ApJL* 875:L1（M87 の画像。arXiv 1906.11238 にある誌面の版（CC BY）で本文照合済。光の輪と中心の暗さ p.1 の要旨）／『楞厳経』巻二（大正蔵 T19 No.945、111 頁上段）・『大智度論』巻九（大正蔵 T25 No.1509、125 頁中段）（どちらも SAT 大蔵経テキストデータベースで本文照合済）。
 
 </details>
 
@@ -272,7 +272,7 @@ pjdhiro は、この創造の形を、大海と波の像にいちばん近いと
 
 <!--REF:東洋の思想-->
 
-出典：『大乗起信論』真諦訳（大正蔵 32 巻 No.1666、576 頁下段「如大海水因風波動，水相風相不相捨離」）・実叉難陀訳（大正蔵 32 巻 No.1667「如海水與波非一非異」）。
+出典：『大乗起信論』真諦訳（大正蔵 32 巻 No.1666、576 頁下段「如大海水因風波動，水相風相不相捨離」）・実叉難陀訳（大正蔵 32 巻 No.1667、585 頁中段「如海水與波非一非異」）（どちらも SAT 大蔵経テキストデータベースで本文照合済）。
 
 </details>
 
@@ -294,17 +294,17 @@ pjdhiro は、この創造の形を、大海と波の像にいちばん近いと
 
 <!--REF:物理と科学史-->
 
-出典：Kelvin (1901) "Nineteenth Century Clouds over the Dynamical Theory of Heat and Light", *Phil. Mag.* 6th ser. 2:1–40（1900 年 4 月 27 日の王立研究所での講演）／Planck (1900) *Verh. Dtsch. Phys. Ges.* 2:237／Heisenberg (1927) *Z. Phys.* 43:172／Dyson & Lenard (1967) *J. Math. Phys.* 8:423（物質の安定性とパウリの排他原理）／Heitler & London (1927) *Z. Phys.* 44:455／Gamow (1928) *Z. Phys.* 51:204（α崩壊のトンネル効果）／Atkinson & Houtermans (1929) *Z. Phys.* 54:656（恒星の核融合への適用）／Bethe (1939) *Phys. Rev.* 55:434。
+出典：Kelvin (1901) "Nineteenth Century Clouds over the Dynamical Theory of Heat and Light", *Phil. Mag.* 6th ser. 2:1–40（1900 年 4 月 27 日の王立研究所での講演。Internet Archive にある Smithsonian Libraries 蔵の誌面の走査（パブリックドメイン）で本文照合済。二つの雲 pp.1–2、エーテルの実験 p.7、比熱 p.18）／Passon (2021) "Kelvin's clouds", *Am. J. Phys.* 89(11):1037–1041（二つの雲がのちに特殊相対論と量子力学で解かれたこと。arXiv 2106.16033 の版（CC BY）で本文照合済。p.1 の要旨）／Planck (1900) *Verh. Dtsch. Phys. Ges.* 2:237（Internet Archive にあるハーバード大学図書館蔵の走査（パブリックドメイン）で本文照合済。エネルギーを有限の等しい塊から成るとする箇所 pp.239–240）／Heisenberg (1927) *Z. Phys.* 43:172（NASA の英訳 TM-77379（1983 年、NASA の公開 PDF）で本文照合済（訳）。訳 p.2・p.7）／Lieb (1990) "The stability of matter: from atoms to stars", *Bull. Amer. Math. Soc.* 22(1):1–49（物質の安定性とパウリの排他原理。Dyson と Lenard 1967 の証明を引く。出版社 AMS の PDF の Wayback の記録（2022 年 8 月 11 日）で本文照合済。pp.1・7・15）／Pauling (1954) ノーベル講演 "Modern structural chemistry"（ハイトラーとロンドン 1927 の水素分子の扱い。nobelprize.org の PDF で本文照合済。p.2）／Bethe (1967) ノーベル講演 "Energy production in stars"（障壁を通り抜ける理論と、その恒星への適用の歴史。nobelprize.org の PDF で本文照合済。pp.2・6）／Bethe (1939) *Phys. Rev.* 55:434（出版社 APS の PDF の Wayback の記録（2026 年 9 月 8 日）で本文照合済。p.434 の要旨）。
 
 </details>
 
 <details><summary>詳しく — 熱いという感じは、分子の動きだった</summary>
 
-十九世紀の後半、クラウジウス、マクスウェル、ボルツマンは、気体の温度を、目に見えない無数の分子の動きの平均として説明しました。手を近づけて熱いと感じるとき、体は、分子が速く動いていることを、一つの感じとして受け取っています。熱いという感じそのものは、分子の動きが分かったあとも、変わらずそこにあります。微細な世界の説明は、体の感じを消さずに、何を受け取っていたのかを教えてくれました。
+十九世紀の後半、クラウジウスとマクスウェルは、気体の温度を、目に見えない無数の分子の動きの平均として説明しました。手を近づけて熱いと感じるとき、体は、分子が速く動いていることを、一つの感じとして受け取っています。熱いという感じそのものは、分子の動きが分かったあとも、変わらずそこにあります。微細な世界の説明は、体の感じを消さずに、何を受け取っていたのかを教えてくれました。
 
 <!--REF:物理と科学史-->
 
-出典：Clausius (1857) *Ann. Phys.* 176:353／Maxwell (1860) *Phil. Mag.* 4th ser. 19:19, 20:21／Boltzmann (1872) *Wien. Ber.* 66:275。
+出典：Clausius (1857) *Ann. Phys.* 176:353（同時代の英訳 "On the Nature of the Motion which we call Heat", *Phil. Mag.* 4th ser. 14:108–127（1857 年。訳者名は誌面に無い）を、Internet Archive にあるロンドン自然史博物館図書館蔵の走査（パブリックドメイン）で本文照合済（訳）。訳 p.111）／Maxwell (1860) *Phil. Mag.* 4th ser. 19:19, 20:21（Internet Archive にあるロンドン自然史博物館図書館蔵の走査（パブリックドメイン）で本文照合済。第 1 部 pp.19・30）。
 
 </details>
 
@@ -312,13 +312,13 @@ pjdhiro は、この創造の形を、大海と波の像にいちばん近いと
 
 物理の微細な世界にも、波間の渦と同じ形があります。場の量子論では、電子や光子は、場の揺れ方の一つ（励起）として扱われます。電子という名前は、場のある揺れ方に、人が当てた言葉です。
 
-量子論ができたあと、1920 年代の後半から、光や電子を「場」の側から書く理論が組み立てられました。ディラックは 1927 年、電磁場を量子論で扱い、光子を電磁場の揺れのひと塊として書きました。のちに電子も、電子の場の揺れとして書かれるようになります。この見方では、場が揺れると粒子が現れ、揺れが収まると粒子は消えます。何もないように見える真空でも、場は揺らいでいます。
+量子論ができたあと、1920 年代の後半から、光や電子を「場」の側から書く理論が組み立てられました。ディラックは 1927 年、電磁場を量子論で扱い、光子を電磁場の揺れのひと塊として書きました。この見方では、場が揺れると粒子が現れ、揺れが収まると粒子は消えます。何もないように見える真空でも、場は揺らいでいます。
 
 一個の電子を、それだけで独立した小さな玉として思い描くと、この世界ではつまずきます。電子は、一つの粒として数えられるものでもあり、場のある揺れ方に人がつけた名前でもあります。
 
 <!--REF:物理と科学史-->
 
-出典：Born, Heisenberg & Jordan (1926) *Z. Phys.* 35:557／Dirac (1927) "The Quantum Theory of the Emission and Absorption of Radiation", *Proc. R. Soc. A* 114:243／Jordan & Wigner (1928) *Z. Phys.* 47:631。
+出典：Dirac (1927) "The Quantum Theory of the Emission and Absorption of Radiation", *Proc. R. Soc. A* 114:243（出版社 Royal Society の PDF の Wayback の記録（2021 年 9 月 21 日）で本文照合済。pp.243–245）。
 
 </details>
 
@@ -373,11 +373,11 @@ pjdhiro は、この創造の形を、大海と波の像にいちばん近いと
 
 <strong>pjdhiro の問い：</strong>メタ認知の対象と包容に対して、身体と意識を結ぶ信号がどのようなものか？これは心と体の接続点の謎と絡むとても重要なこと。
 
-この問いは、[「意識とは」](https://uminomae.github.io/project-design-theory/as/)で、神経現象学の研究と照らし合わせて調べ始めたところです。不安を、先の脅威が不確かなことへの備えとして捉える研究があります（Grupe と Nitschke 2013 年）。不確かさが生存の信号を鳴らしている、と読むこともできます。
+この問いは、[「意識とは」](https://uminomae.github.io/project-design-theory/as/)で、神経現象学の研究と照らし合わせて調べ始めたところです。不安を、先の脅威の不確かさと、それに備える働きの側から捉える研究があります（Grupe と Nitschke 2013 年）。不確かさが生存の信号を鳴らしている、と読むこともできます。
 
 <!--REF:神経と情動-->
 
-出典：Grupe & Nitschke (2013) "Uncertainty and anticipation in anxiety", *Nature Reviews Neuroscience* 14:488。
+出典：Grupe & Nitschke (2013) "Uncertainty and anticipation in anxiety", *Nature Reviews Neuroscience* 14:488（PMC の著者稿で本文照合済。要旨と導入の不確かさと備えの段）。
 
 </details>
 
@@ -389,7 +389,7 @@ pjdhiro は、この創造の形を、大海と波の像にいちばん近いと
 
 <a id="ldd-body"></a>記号の上に出どころの見えないその違和感は、体の内側から湧いている信号なのかもしれません。この章では、[「意識とは」](https://uminomae.github.io/project-design-theory/as/)が置いている見方から、信号がどこで湧き、どう受け取られるかを見ます。結論の章「それが、プロジェクトの駆動源である」の「体は、つながりの安定と、そこからのずれを、信号として受け取っています」は、この章の上に立っています。
 
-体は、心拍や呼吸、内臓の具合のような内側の状態を、いつも受け取っています。この感覚は内受容感覚と呼ばれ、体の生理的な状態の感覚と定義されています（Craig 2002 年）。「意識とは」は、信号の出どころをここに置いています。意識は、抽象的な考えから始まるのでなく、体の状態の上に立ち上がる、という見方です。
+体は、心拍や呼吸、内臓の具合のような内側の状態を、いつも受け取っています。この感覚は内受容感覚と呼ばれ、体の生理的な状態の感覚と定義されています（Seth 2013 年。定義は Craig 2002 年による）。「意識とは」は、信号の出どころをここに置いています。意識は、抽象的な考えから始まるのでなく、体の状態の上に立ち上がる、という見方です。
 
 体の内側の感覚の多くは、予測でできている、と考える研究があります（Barrett と Simmons 2015 年、Seth 2013 年）。脳は体の状態を先に見込み、体から届いた信号で、その見込みを直していきます。この見方では、信号として目立つのは、見込みと、受け取ったものとのずれです。前の章の pjdhiro の見立てでは、人は生存と信頼の二つの値を見込んでいました。信頼の側でいえば、見込まれているのはつながりの安定で、そこからのずれが違和感として湧く、と読むことができます。
 
@@ -401,13 +401,13 @@ pjdhiro は、この創造の形を、大海と波の像にいちばん近いと
 
 <details><summary>詳しく — 測られたものと、感じたものは、食い違うことがある</summary>
 
-体の内側に注意を向ける訓練を長く積んだ瞑想者でも、自分の心拍を感じ取る課題の成績は、訓練していない人より良くありませんでした。それでも瞑想者は、自分の成績を良いと評価し、課題を易しいと感じていました（Khalsa ら 2008 年）。体の内側の感覚については、感じ取りの正確さと、自分の感じ取りへの評価と、その評価が当たっているかの気づきを、別々のものとして分ける研究もあります（Garfinkel ら 2015 年）。
+体の内側の感覚については、感じ取りの正確さと、自分の感じ取りへの評価と、その評価が当たっているかの気づきを、別々のものとして分ける研究があります（Garfinkel ら 2015 年）。
 
 一人称で感じていることと、外から測られることは、いつも重なるとは限りません。二つを照らし合わせる調べ方は、[「意識とは」](https://uminomae.github.io/project-design-theory/as/)で始めたところです。
 
 <!--REF:神経と情動-->
 
-出典：Craig (2002) "How do you feel? Interoception", *Nature Reviews Neuroscience* 3:655／Seth (2013) "Interoceptive inference, emotion, and the embodied self", *Trends in Cognitive Sciences* 17:565／Barrett & Simmons (2015) "Interoceptive predictions in the brain", *Nature Reviews Neuroscience* 16:419／Barrett (2017) "The theory of constructed emotion", *Social Cognitive and Affective Neuroscience* 12:1／Khalsa ら (2008) "Interoceptive awareness in experienced meditators", *Psychophysiology* 45:671／Garfinkel ら (2015) "Knowing your own heart", *Biological Psychology* 104:65（Craig・Seth・Khalsa ら・Garfinkel らは要旨で確かめた。Barrett と Simmons、Barrett の二つは本文で確かめた）。
+出典：Seth (2013) "Interoceptive inference, emotion, and the embodied self", *Trends in Cognitive Sciences* 17:565（サセックス大学の機関リポジトリにある誌面の PDF で本文照合済。内受容感覚の定義（Craig 2002 を引く）と内受容の推論 p.565、予測とのずれで直す箇所 p.566 の Box 1、図 2 p.568）／Barrett & Simmons (2015) "Interoceptive predictions in the brain", *Nature Reviews Neuroscience* 16:419（本文照合済）／Barrett (2017) "The theory of constructed emotion", *Social Cognitive and Affective Neuroscience* 12:1（PMC5390700 の全文で本文照合済）／Garfinkel ら (2015) "Knowing your own heart", *Biological Psychology* 104:65（サセックス大学の機関リポジトリにある誌面の PDF（CC BY-NC-ND 3.0 の公開）で本文照合済。三つの次元の区別 p.65 の要旨）。
 
 </details>
 
@@ -490,7 +490,7 @@ pjdhiro は、「考えて決める」行動の軸と直角に、存在の軸が
 
 <a id="ldd-uncertain"></a>「[人は、生存と信頼の信号で世界を切り取る](#ldd-signals)」の章の畳みで、不確かさが生存の信号を鳴らしている、と読めることに触れました。では、先が見えないとき、湧くのはいつも生存の信号なのでしょうか。この章では、同じ先の見えない状況で湧く信号が、安全と感じられているかどうかで、また人によって、成長の段階によって、違って現れることを見ます。
 
-先が見えないとき、体はまず備える、と研究は書いてきました。不安を、先の脅威が不確かなことへの備えとして捉える研究があります（Grupe と Nitschke 2013 年）。ストレスの反応は、不確かさの下では、何かが起きてから生まれるのでなく、はじめから働いているもので、安全だと感じているあいだだけ抑えられている、と置く研究もあります（Brosschot、Verkuil、Thayer 2016 年・2018 年）。この読みでは、生存の信号は、ある人や、ある成長の段階に固有のものではなく、安全が感じられなくなれば誰にでも戻ってくるものになります。
+先が見えないとき、体はまず備える、と研究は書いてきました。不安を、先の脅威の不確かさと、それに備える働きの側から捉える研究があります（Grupe と Nitschke 2013 年）。ストレスの反応は、不確かさの下では、何かが起きてから生まれるのでなく、はじめから働いているもので、安全だと感じているあいだだけ抑えられている、と置く研究もあります（Brosschot、Verkuil、Thayer 2016 年・2018 年）。この読みでは、生存の信号は、ある人や、ある成長の段階に固有のものではなく、安全が感じられなくなれば誰にでも戻ってくるものになります。
 
 安全の感じは、どこから来るのでしょうか。同じ研究は、安全の感じの源の一つに、人や、群れで生きる動物にとっての、強いつながりの網を数えています（Brosschot、Verkuil、Thayer 2018 年）。ここから、二つの信号の関係を、一つの形で読み直せます。生存の信号を、安全が感じられないときに戻ってくるもの、信頼の信号を、それを抑えている安全の感じとして書く形です。[「意識とは」](https://uminomae.github.io/project-design-theory/as/)は、二つの信号を二つの方向として書いています。二つの別々の信号なのか、一つの備えとそれを抑えるものなのかは、「意識とは」の書き方の根に触れるので、まだ決めていません。どちらの書き方でも、二つは同時に体の中にあり、切り離されてはいません。
 
@@ -560,15 +560,15 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 
 <details><summary>詳しく — 愛着の研究が書いてきたこと</summary>
 
-ボウルビィは、愛着を、栄養や生殖と並んで、生き延びるために大切な仕組みとして置いた、と言われています。信頼の側の信号と生存の側の信号が、入り込み合っている例の一つと読むこともできます（「[人は、生存と信頼の信号で世界を切り取る](#ldd-signals)」の章）。
+エインズワースとボウルビィは 1991 年の論文で、ボウルビィが愛着の行動を、食べることや性の行動と並ぶ人の行動の大きな柱とし、その働きを身を守ることに見た、と書いています。信頼の側の信号と生存の側の信号が、入り込み合っている例の一つと読むこともできます（「[人は、生存と信頼の信号で世界を切り取る](#ldd-signals)」の章）。
 
-エインズワースらは、子どもが養育する人と離れ、また会う場面を観察し、そのときの振る舞いから、愛着をいくつかの型に分けました（1978 年）。再会で近づいて落ち着く子どももいれば、近づかない子どもも、近づきながら怒る子どももいます。
+エインズワースらは、子どもが養育する人と離れ、また会う場面を観察し、そのときの振る舞いから、愛着を安定した型と不安定な型に分けました。再会で喜んで迎える子どももいれば、避ける子どももいます。不安定な型は、避ける型と、両価的で抵抗する型に分けられました。
 
-体の側では、人は近くに他者がいることを前提にして、脅威への反応を節約している、と置く理論があります（Beckes と Coan 2011 年）。手を握る相手がいると、先の見えない脅威への脳の反応が弱まる実験は、「Love と呼びたいものとは」の章の畳みで触れています。ただし、心の中に残った関係で同じ効果が出るかは、照らし合わせられる研究をまだ見つけていません（参考：[「意識とは」](https://uminomae.github.io/project-design-theory/as/)）。
+体の側では、人は近くに他者がいることを前提にして、脅威への反応を節約している、と置く理論があります（Coan と Sbarra 2015 年）。手を握る相手がいると、先の見えない脅威への脳の反応が弱まる実験は、「Love と呼びたいものとは」の章の畳みで触れています。ただし、心の中に残った関係で同じ効果が出るかは、照らし合わせられる研究をまだ見つけていません（参考：[「意識とは」](https://uminomae.github.io/project-design-theory/as/)）。
 
 <!--REF:心理学-->
 
-出典：Bowlby (1969/1982) *Attachment and Loss, Vol. 1: Attachment*／Ainsworth, Blehar, Waters & Wall (1978) *Patterns of Attachment*（どちらも原典は未照合。内的作業モデル・安全基地・愛着の型の説明は、二次資料と記録による）／Beckes & Coan (2011) "Social baseline theory", *Social and Personality Psychology Compass* 5:976（要旨で確かめた）。
+出典：Ainsworth & Bowlby (1991) "An ethological approach to personality development", *American Psychologist* 46(4):333–341（ストーニーブルック大学の愛着研究のサイトにあった打ち直しの写しの Wayback の記録（2005 年 5 月 14 日）で本文照合済。頁は写しの頁。安全基地 pp.2・6、愛着の行動の働き p.5、再会の振る舞い p.7、内的作業モデル pp.7–8、不安定な型の二つ p.8、関係への見込み p.9）／Coan & Sbarra (2015) "Social Baseline Theory: the social regulation of risk and effort", *Current Opinion in Psychology* 1:87–91（PMC の著者稿で本文照合済。導入と結び）。
 
 </details>
 
@@ -586,23 +586,15 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 
 <details><summary>詳しく — 心を守る動きと、裏切られてから</summary>
 
-精神分析と防衛機制の研究は、不安から心を守る動きの中に、相手や計画を良い面だけで見る理想化（クライン、1946 年）や、現実の代わりに頭の中の像で満たす空想（ヴァイラント、1977 年）を数えてきました。
+精神分析と防衛機制の研究は、不安から心を守る動きの中に、相手や計画を良い面だけで見る理想化（クライン、1946 年）や、現実の代わりに頭の中の像で満たす空想（ヴァイラント、2011 年）を数えてきました。
 
 <strong>pjdhiro の見方：</strong>新田信也は、「期待は悪か」という問いを立てて、答えています。私も経験から同意していて、期待は裏切られてからがキックオフだと思う。そのあとに人は、絶望したり、他責したり、受容したりします。
 
-期待の像が立ったとき、人は動き出します。その像が裏切られたところから、始まるものがあります。裏切られは、「信号と考えがずれると、欠けを感じる」の章で見た、予想と現実の誤差を欠けとして捉える経験と、同じ場所です。新田の流れの「裏切られ」から「諦念」への移りは、三つのうちの受容にあたります。
-
-</details>
-
-<details><summary>詳しく — 先が見えないとき、人は像を信じる</summary>
-
-期待が強く湧く条件の一つは、先が見えず、自分では動かせないと感じることです。Whitson と Galinsky（2008 年）の六つの実験では、自分に制御が無いと感じさせられた人は、ノイズの画像に像を見、株価の数字に無い関連を見、陰謀や迷信を信じやすくなりました。自分の大切にしている価値を確かめ直すと、この傾向は弱まりました。Kay ら（2008 年）は、自分の制御が弱いと感じた人ほど、世界を動かしている神や政府をより強く信じることを示しました（のちの追試では、制御感を実験で動かしても神への信じ方は動きにくく、もとからの制御感の低さと信じ方の結びつきだけが残りました）。
-
-先が見えないとき、人は像を信じることで先を埋めます。これは信仰に近い動きです。信仰は、見えない先に向けて信じることです。信頼は、過去から今までの積み重ねの上に立ちます。信仰と信頼も、期待と信頼と同じ形で、向いている時間が違います。
+期待の像が立ったとき、人は動き出します。その像が裏切られたところから、始まるものがあります。裏切られは、「信号と考えがずれると、欠けを感じる」の章で見た、予想と現実の誤差を欠けとして捉える経験と、同じ場所です。pjdhiro の言う流れの「裏切られ」から「諦念」への移りは、三つのうちの受容にあたります。
 
 <!--REF:心理学-->
 
-出典：pjdhiro「対話: 受容について」（uminomae.github.io/pjdhiro/dialogue-acceptance/）／Kübler-Ross (1969) *On Death and Dying*／新田信也『精神分析統合理論』（ひきこもりからの脱却の五つの順と「期待は悪か」の問いと答えは、pjdhiro が読んだ本の中にあったもの。Claude は本文を見ていない。著者のサイトの[ダイジェスト版の目次](https://www.seishin-bunseki.jp/category/1935273.html)に、期待（当て）・うぬぼれ・お節介・諦念・ひきこもりの項があることは確かめた）／期待と信頼の軸＝awareness-space CN-006／Klein (1946) "Notes on some schizoid mechanisms"／Vaillant (1977) *Adaptation to Life*（クラインが理想化を、ヴァイラントが空想を防衛に数えることは、どちらも二次資料で確かめた。原典は未照合）／Whitson & Galinsky (2008) *Science* 322:115／Kay, Gaucher, Napier, Callan & Laurin (2008) *JPSP* 95(1):18・追試 Hoogeveen ら (2018) *Comprehensive Results in Social Psychology*。
+出典：pjdhiro「対話: 受容について」（uminomae.github.io/pjdhiro/dialogue-acceptance/）／期待と信頼の軸＝awareness-space CN-006／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* 27:99（本文照合済。早い時期の防衛に理想化を数える箇所は p.99、良い面を大きくして迫害の恐れから守る箇所は p.101。写しは、Internet Archive にある国際精神分析大学ベルリンのコレクション）／Vaillant (2011) "Involuntary coping mechanisms: a psychodynamic perspective", *Dialogues in Clinical Neuroscience* 13(3):366（本文照合済。PMC3182012 の全文。空想を未熟な防衛に数える箇所は、冒頭の節「What are involuntary coping mechanisms?」と「Classification of defenses」の節）。
 
 </details>
 
@@ -838,7 +830,7 @@ pjdhiro は、そこで感じるものを、臍の緒にたとえています。
 
 <!--REF:神経と情動-->
 
-出典：Brosschot, Verkuil & Thayer (2016) "The default response to uncertainty and the importance of perceived safety in anxiety and stress", *Journal of Anxiety Disorders* 41:22／Coan, Schaefer & Davidson (2006) "Lending a hand", *Psychological Science* 17(12):1032。
+出典：Brosschot, Verkuil & Thayer (2016) "The default response to uncertainty and the importance of perceived safety in anxiety and stress", *Journal of Anxiety Disorders* 41:22（本文照合済）／Coan, Schaefer & Davidson (2006) "Lending a hand", *Psychological Science* 17(12):1032（共著者 Davidson のウィスコンシン大学 Center for Healthy Minds のサイトにある誌面の PDF で本文照合済。要旨 p.1032、脅威の手がかり p.1033）。
 
 </details>
 
@@ -854,7 +846,7 @@ Mikulincer、Gillath、Shaver（2002 年）は、意識に上らない速さで�
 
 <!--REF:心理学-->
 
-出典：Mikulincer, Gillath & Shaver (2002) "Activation of the attachment system in adulthood: Threat-related primes increase the accessibility of mental representations of attachment figures", *Journal of Personality and Social Psychology* 83(4):881／Shaver & Mikulincer (2008) "Augmenting the sense of security in romantic, leader–follower, therapeutic, and group relationships", 第 4 章 pp.55–（どちらも著者のサイトの PDF で本文を照合した。2008 年の章を収めた本の書誌は、PDF からは確かめていない）。
+出典：Mikulincer, Gillath & Shaver (2002) "Activation of the attachment system in adulthood: Threat-related primes increase the accessibility of mental representations of attachment figures", *Journal of Personality and Social Psychology* 83(4):881／Shaver & Mikulincer (2008) "Augmenting the sense of security in romantic, leader–follower, therapeutic, and group relationships: A relational model of psychological change", in J. P. Forgas & J. Fitness (Eds.), *Social Relationships: Cognitive, Affective, and Motivational Processes*, Psychology Press, 第 4 章 pp.55–（DOI 10.4324/9780203888124-10。頁は著者の PDF の刷りの頁）（どちらも著者のサイトの PDF で本文を照合した）。
 
 </details>
 
@@ -1047,20 +1039,18 @@ Zilcha-Mano、Mikulincer、Shaver（2012 年）は、犬か猫の飼い主に難
 
 像が期待外れになるかどうかは、能力と、心理防衛の強さによります。能力が像に追いつけば、像は現実になります。防衛が強いと、裏切られを認めずに像を保つ（理想化）か、裏切られる手前で動きを止めます。
 
-先の脅威が不確かなときに不安が備えとして立ち上がること（Grupe と Nitschke 2013 年）は、「人は、生存と信頼の信号で世界を切り取る」の章で見ました。見えない先を脅威と感じ、生存の信号が湧いているとき、構想は先を埋める像として求められやすいのかもしれません。信頼の問題を生存の達成で解こうとする誤適用と、同じ形に見えます。
-
-事業の場面でも測られています。Cooper、Woo、Dunkelberg（1988 年）が開業直後の 2,994 人の事業主に成功の見込みを尋ねると、81% が 10 のうち 7 以上、33% は 10 のうち 10 と答え、自分と似た他の事業には、それより低い見込みを付けました。当時の統計では、新しい事業の三分の一から半分が、二年で閉じるか人手に渡っていました。見込みの高さは、動き出すエネルギーの現れとして読めます。見積もりの精度は、上がっていません。
+先の脅威が不確かだと備えが難しくなり、それが不安につながること（Grupe と Nitschke 2013 年）は、「人は、生存と信頼の信号で世界を切り取る」の章で見ました。見えない先を脅威と感じ、生存の信号が湧いているとき、構想は先を埋める像として求められやすいのかもしれません。信頼の問題を生存の達成で解こうとする誤適用と、同じ形に見えます。
 
 見分けの手がかりは、期待と信頼の違いから出てきます。
 
-- 期待は見積もりを精確にしないので、見積もりは別の道具で行います。Kahneman と Lovallo（1993 年）は、計画や筋書きの中から見る内側の見方と、似た過去の事例の集まりから見る外側の見方を分け、楽観的すぎる予測は内側の見方から来る、と書きました。似た事例の数字と並べたとき、構想がそのまま残るかどうかが、一つの手がかりです。
+- 期待は見積もりを精確にしないので、見積もりは別の道具で行います。Kahneman と Tversky（1977 年）は、目の前の計画の中身から見る見方と、似た事例の結果の分布から見る見方を分け、前者に頼ると計画は甘くなりやすい、と書きました。似た事例の数字と並べたとき、構想がそのまま残るかどうかが、一つの手がかりです。
 - 像が、良いことだけでできているか、合わないところも含んでいるか。「信号と考えがずれると、欠けを感じる」の章の言葉で言えば、合わないところを欠損として抱えたままの構想は、信頼の側の中身を持っている、と読めます。理想化は、合わないものを切り離して像を保ちます。
 
-期待が動き出すエネルギーだということは、防衛として働く構想が、人を動かし続けることもある、ということです。Taylor と Brown（1988 年）は、自分や将来を少し良く見る傾向が、健康な心の働きと結びついていることを示しました。開業した人の多くが見込みを高く見ていたのも、その期待が無ければ始められなかった、という面を持っています。ひきこもりからの脱却の流れでも、期待と自惚れは、通り道の最初の段です。見分ける人も、同じ不確かさの中に立っています。だから見分けは一度で済まず、動きながらくり返されます。
+期待が動き出すエネルギーだということは、防衛として働く構想が、人を動かし続けることもある、ということです。Taylor と Brown（1988 年）は、自分や将来を実際より良く見る傾向が、ふつうの考え方の特徴で、心の健康の他の面を支えているようだ、と研究をまとめて論じました。期待が無ければ始められなかった、という面もあります。ひきこもりからの脱却の流れでも、期待と自惚れは、通り道の最初の段です。見分ける人も、同じ不確かさの中に立っています。だから見分けは一度で済まず、動きながらくり返されます。
 
 <!--REF:心理学-->
 
-出典：Cooper, Woo & Dunkelberg (1988) *J. Business Venturing* 3(2):97／Kahneman & Lovallo (1993) *Management Science* 39(1):17／Taylor & Brown (1988) *Psychological Bulletin* 103(2):193。
+出典：Kahneman & Tversky (1977) *Intuitive Prediction: Biases and Corrective Procedures*, Decision Research Technical Report PTR-1042-77-6（米国防高等研究計画局の委託の技術報告書。DTIC ADA047747 の PDF の Wayback の記録（2015 年 2 月 4 日）で本文照合済。p.2-2）／Taylor & Brown (1988) *Psychological Bulletin* 103(2):193（著者 Taylor の UCLA の研究室のサイトにある誌面の PDF で本文照合済。p.193 の要旨）。
 
 </details>
 
@@ -1087,7 +1077,7 @@ Zilcha-Mano、Mikulincer、Shaver（2012 年）は、犬か猫の飼い主に難
 |---|---|
 | よくある誤解 | 仲が良いこと、厳しさが無いこと。罰されない仕組みのこと。「何でも言ってください」と宣言し、制度を整えれば作れるもの。どの組織でも、高いほど良いもの |
 | Love駆動開発の視点で見た解釈 | 原典は、罰や嘲笑を恐れずに済むことと、信頼され、尊重されることの両方を包んでいる。現場では、仕組みや制度で確かめやすい前者だけが使われることがある。pjdhiro の問いの言葉では、いつの間にか低次欲求だけをケアしている形。pjdhiro の見方では、保身や日和見から求められる安心・安全は、心理防衛機制による依存のような状態で、組織によくない効果をもつ |
-| 効く条件 | 不確かさがあり、創造や協働が要る仕事。手順が決まった仕事では、理論上の重みが小さいとされる（エドモンドソンとレイ、2014 年）。高すぎると定型の仕事の出来が下がるという報告もある（エルドアほか、2023 年）。誤りや危険を止めて知らせる「言える」は、医療や航空では仕事の性質を問わず要るものとして扱われてきたように見える。pjdhiro は、サービスやデザインのような無形のものを扱う仕事で効くのではないか、と見ている |
+| 効く条件 | 不確かさがあり、創造や協働が要る仕事。誤りや危険を止めて知らせる「言える」は、医療や航空では仕事の性質を問わず要るものとして扱われてきたように見える。pjdhiro は、サービスやデザインのような無形のものを扱う仕事で効くのではないか、と見ている |
 
 </div>
 
@@ -1101,7 +1091,7 @@ Zilcha-Mano、Mikulincer、Shaver（2012 年）は、犬か猫の飼い主に難
 |---|---|
 | よくある誤解 | 我慢や根性。歯を食いしばって耐える力。やめた人には無かったもの |
 | Love駆動開発の視点で見た解釈 | 粘り続けられるのは、中心に引き寄せられて、その周りを回っているから、と読める。測ると粘りだけが見え、何に引かれていたかは数に出ない |
-| 効く条件 | 引き寄せられて続けている人の振る舞いを、あとから記述するとき。のちのメタ分析では、成果との相関は中くらいで、誠実性と強く相関し、効いていたのは粘りの面だった（クレデほか、2017 年） |
+| 効く条件 | 引き寄せられて続けている人の振る舞いを、あとから記述するとき |
 
 </div>
 
@@ -1151,7 +1141,7 @@ Zilcha-Mano、Mikulincer、Shaver（2012 年）は、犬か猫の飼い主に難
 
 <div class="tablefit cols-2">
 
-| 定義 | 矛盾する二つの指示に挟まれ、そこから出ることも許されない状況（ベイトソンほか、1956 年）。葛藤の処理には、競う、譲る、避ける、妥協する、協力する、といった型の整理がある（トーマスとキルマン、1974 年） |
+| 定義 | 葛藤の処理には、競う、譲る、避ける、妥協する、協力する、といった型の整理がある（トーマスとキルマン、1974 年） |
 |---|---|
 | よくある誤解 | 矛盾した指示を出す側が悪い。処理の型を正しく選べば解ける |
 | Love駆動開発の視点で見た解釈 | 一列に並んだ記号（指示や目標）に、信頼の側が載らないところから生まれていると読める。葛藤のいくつかは、生存と信頼の二つの信号が別の向きを指すときに起きている、と読める。[利益と長期の問い](#ldd-profit)も、その一つ |
@@ -1173,7 +1163,7 @@ Zilcha-Mano、Mikulincer、Shaver（2012 年）は、犬か猫の飼い主に難
 
 <!--REF:心理学-->
 
-出典：[Edmondson (1999)](https://doi.org/10.2307/2666999) *Administrative Science Quarterly* 44(2):350／[Schein (1995)](https://hdl.handle.net/1721.1/2576) MIT Sloan Working Paper 3821／[Edmondson & Lei (2014)](https://doi.org/10.1146/annurev-orgpsych-031413-091305) *Annual Review of Organizational Psychology and Organizational Behavior* 1:23／[Eldor, Hodor & Cappelli (2023)](https://doi.org/10.1016/j.obhdp.2023.104255) *Organizational Behavior and Human Decision Processes* 177:104255／[Duckworth, Peterson, Matthews & Kelly (2007)](https://doi.org/10.1037/0022-3514.92.6.1087) *Journal of Personality and Social Psychology* 92(6):1087／[Credé, Tynan & Harms (2017)](https://doi.org/10.1037/pspp0000102) *Journal of Personality and Social Psychology* 113(3):492／[Luthar, Cicchetti & Becker (2000)](https://doi.org/10.1111/1467-8624.00164) *Child Development* 71(3):543／[Masten (2001)](https://doi.org/10.1037/0003-066X.56.3.227) *American Psychologist* 56(3):227／[Ryan & Deci (2000)](https://doi.org/10.1037/0003-066X.55.1.68) *American Psychologist* 55(1):68／[Keats, letter to George and Tom Keats (1817 年 12 月)](https://keatslettersproject.com/letters/negcapletter/)／[Bateson, Jackson, Haley & Weakland (1956)](https://doi.org/10.1002/bs.3830010402) *Behavioral Science* 1(4):251／[Thomas & Kilmann (1974) *Thomas-Kilmann Conflict Mode Instrument*](https://kilmanndiagnostics.com/assessments/)。ルーサーほかとマステンは本文で確かめました（ルーサーほか p.543、マステン pp.227・234）。ダックワースほか・クレデほか・エルドアほかは抄録で、トーマスとキルマンの年は二次資料で確かめたもので、本文は未照合です。よくある誤解の例は、出典のない見聞です。
+出典：[Edmondson (1999)](https://doi.org/10.2307/2666999) *Administrative Science Quarterly* 44(2):350（MIT の授業の読み物として大学のサーバーに置かれた誌面の走査で本文照合済。定義 p.354）／[Schein (1995)](https://hdl.handle.net/1721.1/2576) MIT Sloan Working Paper 3821（MIT の機関リポジトリにある PDF の Wayback の記録（2025 年 6 月 22 日）で本文照合済。pp.3–5）／[Duckworth, Peterson, Matthews & Kelly (2007)](https://doi.org/10.1037/0022-3514.92.6.1087) *Journal of Personality and Social Psychology* 92(6):1087（著者のペンシルベニア大学の頁にあった誌面の PDF の Wayback の記録（2014 年 7 月 26 日）で本文照合済。定義 pp.1087–1088）／[Luthar, Cicchetti & Becker (2000)](https://doi.org/10.1111/1467-8624.00164) *Child Development* 71(3):543（本文照合済。p.543）／[Masten (2001)](https://doi.org/10.1037/0003-066X.56.3.227) *American Psychologist* 56(3):227（本文照合済。pp.227・234）／[Ryan & Deci (2000)](https://doi.org/10.1037/0003-066X.55.1.68) *American Psychologist* 55(1):68（著者たちの Center for Self-Determination Theory のサイトにある誌面の PDF で本文照合済。pp.70–72）／[Keats, letter to George and Tom Keats (1817 年 12 月)](https://keatslettersproject.com/letters/negcapletter/)（Colvin 編 *Letters of John Keats to His Family and Friends* Letter XXIV を、Project Gutenberg の公開版で本文照合済）／[Kilmann & Thomas (1977)](https://doi.org/10.1177/001316447703700204) "Developing a forced-choice measure of conflict-handling behavior: The 'MODE' instrument", *Educational and Psychological Measurement* 37(2):309–325（共著者 Kilmann の会社のサイトにある誌面の PDF で本文照合済。五つの型 p.309 の要旨、Thomas と Kilmann の 1974 年の質問紙 p.313・p.325）。よくある誤解の例は、出典のない見聞です。
 
 </details>
 
@@ -1259,13 +1249,13 @@ Zilcha-Mano、Mikulincer、Shaver（2012 年）は、犬か猫の飼い主に難
 
 <details><summary>詳しく — 二つの軸で見る、いくつもの見方を使う</summary>
 
-経営の実務にも、軸を増やして見る道具があります。1970 年、ボストン・コンサルティング・グループの創業者ヘンダーソンは、製品を市場の成長率と市場占有率の二つの軸で四つに分け、それぞれを「金のなる木」「花形」「問題児」「負け犬」（原文は cash cows・stars・question marks・pets）と呼びました。成長だけ、利益だけ、という一つの物差しでは見えない、事業の組み合わせの釣り合いが見えるようになります。同じ会社は 2014 年の振り返りで、市場占有率がもう業績をよく予測しないこと、事業が一つの区分にとどまる期間が 1992 年の約 4 年から 2012 年の 2 年足らずに縮んだことも書いています。軸そのものも、時代とともに古くなります。
+経営の実務にも、軸を増やして見る道具があります。1970 年、ボストン・コンサルティング・グループの創業者ヘンダーソンは、製品を市場の成長率と市場占有率の二つの軸で四つに分け、それぞれを「金のなる木」「花形」「問題児」「負け犬」（原文は cash cows・stars・question marks・pets）と呼びました。成長だけ、利益だけ、という一つの物差しでは見えない、事業の組み合わせの釣り合いが見えるようになります。同じ会社は 2014 年の振り返りで、市場占有率がもう業績をよく予測しないこと、事業が一つの区分にとどまる期間が、全体の 75% の業界で、1992 年の約 4 年から 2012 年の 2 年足らずに縮んだことも書いています。軸そのものも、時代とともに古くなります。
 
-研究の側では、一人の中でも、最初の答えとは少し違う知識に戻って二つ目の答えを出し、二つを平均すると、誤りが減るという研究があります（ヘルツォークとヘルトヴィヒ、2009 年。抄録で確かめました）。
+研究の側では、一人の中でも、最初の答えとは少し違う知識に戻って二つ目の答えを出し、二つを平均すると、誤りが減るという研究があります（ヘルツォークとヘルトヴィヒ、2009 年）。
 
 <!--REF:意思決定とバイアス-->
 
-出典：Henderson (1970) "[The Product Portfolio](https://www.bcg.com/publications/1970/strategy-the-product-portfolio)", BCG／Reeves, Moose & Venema (2014) "[BCG Classics Revisited: The Growth Share Matrix](https://www.bcg.com/en-gb/publications/2014/growth-share-matrix-bcg-classics-revisited)", BCG／Herzog & Hertwig (2009) "[The wisdom of many in one mind](https://doi.org/10.1111/j.1467-9280.2009.02271.x)", *Psychological Science* 20(2):231。
+出典：Henderson (1970) "[The Product Portfolio](https://www.bcg.com/publications/1970/strategy-the-product-portfolio)", BCG（BCG が公開している頁で本文照合済）／Reeves, Moose & Venema (2014) "[BCG Classics Revisited: The Growth Share Matrix](https://www.bcg.com/en-gb/publications/2014/growth-share-matrix-bcg-classics-revisited)", BCG（BCG が公開している頁で本文照合済）／Herzog & Hertwig (2009) "[The wisdom of many in one mind](https://doi.org/10.1111/j.1467-9280.2009.02271.x)", *Psychological Science* 20(2):231（マックス・プランク人間発達研究所の図書館にあった誌面の PDF の Wayback の記録（2017 年 8 月 9 日）で本文照合済。p.231 の要旨）。
 
 </details>
 
@@ -1277,13 +1267,13 @@ Zilcha-Mano、Mikulincer、Shaver（2012 年）は、犬か猫の飼い主に難
 
 哲学者のホワイトヘッドは、1925 年の『科学と近代世界』の第 3 章で、抽象を具体と取り違える誤りを「置き違えられた具体性の誤り」と名付けました。同じ箇所で、知性がこの罠に落ちる必要はない、とも書いています。抽象を捨てるのでなく、抽象だと分かったうえで使う、という向きです。渦に名前を当てることと、名前の付いた渦を物として扱うことの違いは、この区別と同じ形をしています。
 
-心理学では、偏りを減らす方法が調べられてきました。ロードらは 1984 年、「公平に、偏らずに」と指示するより、「反対の可能性を考えて」と促すほうが、証拠の偏った取り込みを減らしたと報告しています（抄録で確かめました）。モアウェッジらは 2015 年、ゲームか動画で一度訓練するだけで、確証バイアスやアンカリングなど六つのバイアスが中〜大きく減り、2 か月後も効果が残ったと報告しています。
+心理学では、偏りを減らす方法が調べられてきました。モアウェッジらは 2015 年、ゲームか動画で一度訓練するだけで、確証バイアスやアンカリングなど六つのバイアスが中〜大きく減り、2 か月後も効果が残ったと報告しています。
 
 投資の実務でも、同じことが語られてきました。バーバーとオディーンは 2000 年、6 万 6 千あまりの家計の売買を調べ、いちばんよく売買した家計の年の成績が 11.4% で、市場の 17.9% を大きく下回ったこと、それを自信過剰で説明できることを示しました。投資家のチャーリー・マンガーは 1994 年の講演で、「ハンマーしか持たない人には、どの問題も釘に見える」という言い回しを引き、いくつもの分野の考え方を格子のように組み合わせて持つよう勧めました。視点を増やすことと、偏りを減らすことを、一つの手立てとして語っている例です。
 
 <!--REF:意思決定とバイアス-->
 
-出典：Whitehead (1925) *[Science and the Modern World](https://www.gutenberg.org/ebooks/68611)*, Chapter III／Lord, Lepper & Preston (1984) "[Considering the opposite: A corrective strategy for social judgment](https://doi.org/10.1037/0022-3514.47.6.1231)", *JPSP* 47(6):1231／Morewedge, Yoon, Scopelliti, Symborski, Korris & Kassam (2015) "[Debiasing decisions](https://openaccess.city.ac.uk/id/eprint/12324/)", *Policy Insights from the Behavioral and Brain Sciences* 2(1):129／Barber & Odean (2000) "[Trading is hazardous to your wealth](https://faculty.haas.berkeley.edu/odean/Papers%20current%20versions/Individual_Investor_Performance_Final.pdf)", *Journal of Finance* 55(2):773／Munger (1994) "[A Lesson on Elementary, Worldly Wisdom](https://fs.blog/great-talks/a-lesson-on-worldly-wisdom/)", 南カリフォルニア大学での講演。
+出典：Whitehead (1925) *[Science and the Modern World](https://www.gutenberg.org/ebooks/68611)*, Chapter III（Project Gutenberg にあるパブリックドメインの Macmillan 1925 年の版で本文照合済。第 III 章、本の索引で p.72）／Morewedge, Yoon, Scopelliti, Symborski, Korris & Kassam (2015) "[Debiasing decisions](https://openaccess.city.ac.uk/id/eprint/12324/)", *Policy Insights from the Behavioral and Brain Sciences* 2(1):129（City, University of London の機関リポジトリにある著者稿で本文照合済。著者稿 pp.2–3）／Barber & Odean (2000) "[Trading is hazardous to your wealth](https://faculty.haas.berkeley.edu/odean/Papers%20current%20versions/Individual_Investor_Performance_Final.pdf)", *Journal of Finance* 55(2):773（著者 Odean のカリフォルニア大学バークレー校の頁にある誌面の PDF の Wayback の記録（2026 年 10 月 6 日）で本文照合済。p.773 の要旨）／Munger (1994) "[A Lesson on Elementary, Worldly Wisdom](https://www.stripe.press/poor-charlies-almanack/book)", 南カリフォルニア大学での講演（出版社 Stripe Press が公開している *Poor Charlie's Almanack* のウェブ版の Talk Two で本文照合済）。
 
 </details>
 
@@ -1295,16 +1285,6 @@ Zilcha-Mano、Mikulincer、Shaver（2012 年）は、犬か猫の飼い主に難
 
 pjdhiro が挙げる例は、他者の視点を取ることです。ある発達段階に向かう人にとっては成長を意味しても、その段階にすでに到達している人にとっては停滞を意味します。このページでは、[経営学の表](#ldd-management)の「効果的な状況」の列と、[心の言葉の表](#ldd-words)の「効く条件」の行が、この条件を書く試みです。[利益と長期の問い](#ldd-profit)も、同じ形をしています。
 
-<details><summary>詳しく — 理論の「誰に、どこで、いつ」</summary>
-
-経営学の研究では、理論が成り立つ「誰に、どこで、いつ」を、境界条件と呼んできました。ブッセらは 2017 年、境界条件を探ることが、理論を育て、研究と実務の溝を小さくすると論じました（抄録で確かめました）。
-
-<!--REF:意思決定とバイアス-->
-
-出典：Busse, Kach & Wagner (2017) "[Boundary Conditions](https://doi.org/10.1177/1094428116641191)", *Organizational Research Methods* 20(4):574。
-
-</details>
-
 ### ④ 定性的なことへの配慮ができる
 
 <a id="ldd-use-4"></a>数に出ないものを、取りこぼしにくくなります。このページでは、[虚軸](#ldd-kesson)の値が、記号の上では 0 に読まれることを見ました。信頼の側の価値や、形容詞の数ほどの軸でできている価値も、数に載せると抜け落ちやすいものです。
@@ -1315,7 +1295,7 @@ pjdhiro が挙げる例は、他者の視点を取ることです。ある発達
 
 <!--REF:意思決定とバイアス-->
 
-出典：Campbell (1976) "[Assessing the Impact of Planned Social Change](https://jmde.journals.publicknowledgeproject.org/index.php/jmde_1/article/view/297)", Dartmouth College Occasional Paper 8（*Evaluation and Program Planning* 2(1):67, 1979 にも所収。リンク先は *Journal of MultiDisciplinary Evaluation* の再掲）。
+出典：Campbell (1976) "[Assessing the Impact of Planned Social Change](https://jmde.journals.publicknowledgeproject.org/index.php/jmde_1/article/view/297)", Dartmouth College Occasional Paper 8（*Evaluation and Program Planning* 2(1):67, 1979 にも所収。リンク先の *Journal of MultiDisciplinary Evaluation* 7(15), 2011 の再掲（オープンアクセス誌の出版社の版）で本文照合済。p.34）。
 
 </details>
 
@@ -1329,7 +1309,7 @@ pjdhiro が挙げる例は、他者の視点を取ることです。ある発達
 
 <!--REF:意思決定とバイアス-->
 
-出典：Jobs (2005) "[You've got to find what you love](https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says)", スタンフォード大学の卒業式のスピーチ（Stanford Report, 2005 年 6 月 14 日に全文）。
+出典：Jobs (2005) "[You've got to find what you love](https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says)", スタンフォード大学の卒業式のスピーチ（Stanford Report, 2005 年 6 月 14 日に全文。リンク先と元の頁の Wayback の記録（2024 年 5 月 15 日・2005 年 6 月 17 日）で本文照合済）。
 
 </details>
 
@@ -1516,25 +1496,25 @@ pjdhiro が考えているのは、脳の神経に伝わる神経伝達物質と
 
 認知の上では 0 なのに働いている値、という欠損駆動思考の形と、ここが重なります。重なるのは、振る舞いのほうです。虚軸の値は大きさで、行動の軸への射影が 0 になります。位相は向きで、絶対値をとると消えます。数に出ない理由は別ですが、それだけでは数に出ないのに働いている、というところが同じです。
 
-**意識と、観測。** 量子の世界では、測定は相手の状態を変えます（その擾乱はゼロにはなりませんが、かつて考えられた限界より小さくできることは分かっています）。測る装置と測られる電子は、測る瞬間につながって、一つの系として扱われます。観る側と観られる側が分けられなくなる、という形は、自分を分けていくメタ認知の行き着く先と重なります。
+**意識と、観測。** 量子の世界では、測定は相手の状態を変えます（測る誤差と擾乱を両方ゼロにはできませんが、その積は、かつて考えられた限界より小さくできることが分かっています）。測る装置と測られる電子は、測る瞬間につながって、一つの系として扱われます。観る側と観られる側が分けられなくなる、という形は、自分を分けていくメタ認知の行き着く先と重なります。
 
-**創造と、場の揺らぎ。** 場の量子論では、粒子は場の揺れ方の一つ（励起）として現れます。超流動のヘリウムでは、巨視的な波の位相が巻く渦が、決まった単位でしか現れません。渦が、場から切り離せない場の形として現れる場面は、物理の側にもあります。
+**創造と、場の揺らぎ。** 場の量子論では、粒子は場の揺れ方の一つ（励起）として現れます。超流動のヘリウムでは、渦の回りの流れ（循環）が、決まった単位でしか現れません。渦が、場から切り離せない場の形として現れる場面は、物理の側にもあります。
 
 <!--REF:物理と科学史-->
 
-出典：Born (1926) *Z. Phys.* 37:863（確率は絶対値の二乗）／von Neumann (1932) *Mathematische Grundlagen der Quantenmechanik* 第 VI 章（測定で装置と対象が一つの系になる）／Ozawa (2003) *Phys. Rev. A* 67:042105・Rozema et al. (2012) *Phys. Rev. Lett.* 109:100404（擾乱はゼロにならないが、素朴な限界より小さくできる）／[Onsager (1949)](https://doi.org/10.1007/BF02780991) *Nuovo Cimento Suppl.* 6:279・[Feynman (1955)](https://doi.org/10.1016/S0079-6417(08)60077-3) *Prog. Low Temp. Phys.* 1:17・[Vinen (1961)](https://doi.org/10.1098/rspa.1961.0029) *Proc. R. Soc. A* 260:218（超流動の渦の量子化）。
+出典：Born (1954) ノーベル講演 "The statistical interpretation of quantum mechanics"（確率は絶対値の二乗。nobelprize.org の PDF で本文照合済。PDF の p.7）／Ozawa (2003) *Phys. Rev. A* 67:042105（測定で装置と対象が一つの系になる。著者の arXiv の投稿稿 quant-ph/0207121v1 で本文照合済。測定の模型 p.2、誤差と擾乱が両方ゼロにはならない箇所 p.3）・Rozema et al. (2012) *Phys. Rev. Lett.* 109:100404（著者の arXiv の投稿稿 1208.0034v2 で本文照合済。p.1 の要旨）（誤差と擾乱を両方ゼロにはできないが、その積は素朴な限界より小さくできる）／[Vinen (1961)](https://doi.org/10.1098/rspa.1961.0029) *Proc. R. Soc. A* 260:218（超流動の渦の量子化。出版社 Royal Society の PDF の Wayback の記録（2019 年 10 月 26 日）で本文照合済。p.218 の要旨）。
 
 </details>
 
 <details><summary>詳しく — 心という解釈装置</summary>
 
-体の中で起きた信号を、心が解釈して感情として感じ取る、という見方は、情動の研究にもあります。バレットの構成主義的な情動の理論は、脳が体の内側からの信号を、それまでに覚えた概念で解釈し、その場で情動をつくっている、と考えます。同じ心臓の高鳴りが、ある場面では不安に、別の場面では興奮になる、という説明です。
+体の中で起きた信号を、心が解釈して感情として感じ取る、という見方は、情動の研究にもあります。バレットの構成主義的な情動の理論は、脳が体の内側からの信号を、それまでに覚えた概念で解釈し、その場で情動をつくっている、と考えます。同じ感覚にも、いくつもの原因がありうる、という説明です。
 
 この読み物の言葉で言えば、体は値そのものの大きさを受け取り、心という解釈装置が、それを射影して、愛や不安として読む。同じ見えない先が、どう読まれるかは、湧いている信号で変わります。
 
 <!--REF:神経と情動-->
 
-出典：Barrett (2017) *How Emotions Are Made*（邦訳『情動はこうしてつくられる』高橋洋訳、紀伊國屋書店、2019 年）。
+出典：Barrett (2017) "The theory of constructed emotion", *Social Cognitive and Affective Neuroscience* 12(1):1（PMC5390700 の全文で本文照合済。概念で感覚を分類して情動をつくる箇所は「The computational architecture of the brain is a conceptual system plus pattern generators」の節、同じ感覚にいくつもの原因がありうる箇所は用語集）。
 
 </details>
 
@@ -1544,13 +1524,13 @@ pjdhiro が考えているのは、脳の神経に伝わる神経伝達物質と
 
 生き物の中で量子の効果が働くことは、量子生物学として調べられています。たとえば、酵素の反応で、粒子が壁をすり抜けるトンネル効果が関わっていることが知られています。
 
-脳については、いくつかの提案があります。ペンローズとハメロフは、神経細胞の中の微小管で量子の過程が進み、それがある条件で自ずと収縮するたびに意識の瞬間が生じる、という説を出しました。フィッシャーは、リンの原子核のスピンが、脳の中で量子の情報を長く保てるかもしれない、と提案しました。イオンチャネルの中で、量子のコヒーレンスがイオンの通り方に関わる、という計算もあります。
+脳については、いくつかの提案があります。ペンローズとハメロフは、神経細胞の中の微小管で量子の過程が進み、それがある条件で自ずと収縮するたびに意識の瞬間が生じる、という説を出しました。フィッシャーは、リンの原子核のスピンが、脳の中で量子の情報を長く保てるかもしれない、と提案しました。イオンチャネルの中で、量子のコヒーレンスがイオンの通り方に関わるかもしれない、という提案と計算もあります。
 
 反対の計算もあります。テグマークは、体温の脳の中では量子の重なりがごく短い時間で壊れ、神経の信号の速さには届かない、と見積もりました。いまの神経科学は、神経伝達物質の放出と受け取り、その後の電気の信号を、ほとんど古典の物理で書いています。量子の効果が神経の信号の処理に効いているかは、確かめられても、否定されきってもいない、というのが現在地です。
 
 <!--REF:神経と情動-->
 
-出典：Klinman & Kohen (2013) *Annu. Rev. Biochem.* 82:471（酵素のトンネル効果）／Hameroff & Penrose (2014) *Phys. Life Rev.* 11:39／Fisher (2015) *Ann. Phys.* 362:593／Vaziri & Plenio (2010) *New J. Phys.* 12:085001／Tegmark (2000) *Phys. Rev. E* 61:4194。
+出典：Klinman & Kohen (2013) *Annu. Rev. Biochem.* 82:471（酵素のトンネル効果。NIH の PMC にある著者稿の頁の Wayback の記録（2025 年 2 月 15 日）で本文照合済。要旨と「Tunneling」の節）／Hameroff & Penrose (2014) *Phys. Life Rev.* 11:39（著者 Hameroff のサイトにあった誌面の PDF の Wayback の記録（2015 年 5 月 22 日）で本文照合済。p.39 の要旨）／Fisher (2015) *Ann. Phys.* 362:593（著者の arXiv の投稿稿 1508.05929v2 で本文照合済。p.1 の要旨）／Vaziri & Plenio (2010) *New J. Phys.* 12:085001（出版社 IOP の公開版（CC BY）で本文照合済。p.1 の要旨）／Tegmark (2000) *Phys. Rev. E* 61:4194（著者の arXiv の投稿稿 quant-ph/9907009v2 で本文照合済。p.1 の要旨）。
 
 </details>
 
