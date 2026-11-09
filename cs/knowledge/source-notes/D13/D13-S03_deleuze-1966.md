@@ -37,7 +37,7 @@ Deleuze による Simondon『個体とその物理生物学的発生』(1966) �
 
 ### 主張 3: 前個体的存在は「特異的だが個体的でない」
 
-> "Singular without being individual, such is the state of pre-individual being. It is difference, disparity, disparation." (p.45)
+> "Singular without being individual, such is the state of pre-individual being. It is difference, disparity, disparation." (p.44)
 
 前個体的存在は、潜在性の分布に対応する特異性（singularities）を完全に備えているが、まだ個体ではない。差異・隔たりそのものである。
 
@@ -49,7 +49,7 @@ Deleuze による Simondon『個体とその物理生物学的発生』(1966) �
 
 ### 主張 5: 個体化は disparation という問題の「解（resolution）」である
 
-> "Thus, individuation is the organization of a solution, of a `resolution' for [a problem posed by disparates]." (p.49 付近)
+> "Thus, individuation is the organization of a solution, of a 'resolution' for an objectively problematic system." (p.46)
 
 個体化は、隔たり（disparates）が提起する問題を、特異性を統合し潜在エネルギーを現実化することで「解く」過程である。個体は解であると同時に個体化の場（milieu）である。
 
@@ -61,10 +61,10 @@ Deleuze による Simondon『個体とその物理生物学的発生』(1966) �
 
 | 段階 | 対応候補 | 強度 | 原文引用 |
 |------|---------|------|---------|
-| 1 場 (Field) | 前個体的存在（pre-individual being）＝個体化に先立つ未分化の潜在性 | 強 | "Singular without being individual, such is the state of pre-individual being." (p.45) |
+| 1 場 (Field) | 前個体的存在（pre-individual being）＝個体化に先立つ未分化の潜在性 | 強 | "Singular without being individual, such is the state of pre-individual being." (p.44) |
 | 2 波 (Wave) | disparation（隔たり・差異・非対称）＝対立に先立つゆれ | 強 | "the idea of disparation is deeper than that of opposition" (p.45) |
 | 3 縁 (Relation) | 隔たった秩序が「伝達に入る（communication）」境界 | 強 | "heterogeneous orders that will only enter into communication later, in extension" (p.44) |
-| 4 渦 (Vortex) | 個体化＝特異性の統合・問題の解として個が立ち上がる | 強 | "individuation is the organization of a solution, of a `resolution'" (p.49) |
+| 4 渦 (Vortex) | 個体化＝特異性の統合・問題の解として個が立ち上がる | 強 | "individuation is the organization of a solution, of a 'resolution'" (p.46) |
 | 5 束 (Bundle) | 個体化の連鎖（結果が次の個体化の場になる） | 弱 | "The individual is not only the result but the element [milieu] of individuation" (p.43) |
 
 **判定根拠**:
