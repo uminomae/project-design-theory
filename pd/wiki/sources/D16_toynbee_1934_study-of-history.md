@@ -25,11 +25,11 @@ Arnold J. Toynbee (1934) は、複数の独立した文明の比較分析を通�
 ## 書誌情報
 
 - **著者**: Toynbee, Arnold Joseph
-- **タイトル**: A Study of History, Volume I (Parts I-III)
+- **タイトル**: A Study of History, Volume I (Part I・Part II A–C)
 - **出版年**: 1934年（第1版）、1935年（第2版）
 - **出版社**: Oxford University Press
 - **言語**: 英語
-- **全文**: [Internet Archive](https://archive.org/details/studyofhistory0010toyn)
+- **全文**: [Internet Archive](https://archive.org/details/in.gov.ignca.2921)
 - **access_status**: raw-confirmed（ローカル保持、73MB）
 
 ## 主要概念
