@@ -354,3 +354,14 @@ body.reader-flow .reader-article .secbody > h4 {
     color: var(--gold);
 }
 body.reader-flow .reader-article .secbody > h4 + p { margin-top: 2px; }
+
+/* 参照の一覧（分野｜出典｜読んだ形｜確かめ先）。出典の列を広く取り、320px でも語の途中で折れにくくする（love-history・pjdhiro 2026-11-09「全て一つの表でいいよね」） */
+body.reader-flow .reader-article .tablefit.refs th:nth-child(1),
+body.reader-flow .reader-article .tablefit.refs td:nth-child(1) { width: 13%; }
+body.reader-flow .reader-article .tablefit.refs th:nth-child(2),
+body.reader-flow .reader-article .tablefit.refs td:nth-child(2) { width: 43%; }
+body.reader-flow .reader-article .tablefit.refs th:nth-child(3),
+body.reader-flow .reader-article .tablefit.refs td:nth-child(3) { width: 17%; }
+@media (max-width: 600px) {
+    body.reader-flow .reader-article .tablefit.refs td:nth-child(1) { font-size: 0.72rem; }
+}
