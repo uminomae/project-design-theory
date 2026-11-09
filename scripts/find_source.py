@@ -1681,7 +1681,7 @@ def main():
     f.add_argument("--ledger", help="試した経路と結果を追記する台帳（Markdown）")
     f.add_argument("--hosts-file", help="確認画面などを返したホストの手元の一覧（fetch が足す。TSV）")
 
-    g = sub.add_parser("fetch", help="置き場から PDF を一度だけ取り、%PDF と書誌を確かめて保存する")
+    g = sub.add_parser("fetch", help="置き場から PDF を一度だけ取り、%%PDF と書誌を確かめて保存する")
     g.add_argument("url")
     g.add_argument("--out", required=True, help="保存名（台帳の名前の付け方：Dxx_姓_年_題の語.pdf）。既にあれば上書きしない")
     bib(g, author_append=True)
