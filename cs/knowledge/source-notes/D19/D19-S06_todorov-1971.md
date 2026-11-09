@@ -23,7 +23,7 @@
 
 ### 主張 1: 物語の最小構造は5要素の均衡サイクルである
 
-> "this story includes five indispensable elements—1) the situation of equilibrium at the beginning 2) the breakdown of the situation by the kidnapping of the boy 3) the girl's recognition of the loss of equilibrium 4) the successful search for the boy 5) the re-establishment of the initial equilibrium, the return to the father's house." (p.41)
+> "this story includes five indispensable elements—1) the situation of equilibrium at the beginning 2) the breakdown of the situation by the kidnapping of the boy 3) the girl's recognition of the loss of equilibrium 4) the successful search for the boy 5) the re-establishment of the initial equilibrium, the return to the father's house." (p.39)
 
 Propp の『白鳥雁（The Swan-geese）』分析から、均衡→破綻→認知→探索→均衡の再建という5要素を抽出。「これらのいずれを省いても物語はその同一性を失う」とし、このサイクルが物語の定義の一部であるとする。
 
@@ -59,11 +59,11 @@ Propp の『白鳥雁（The Swan-geese）』分析から、均衡→破綻→認
 
 | 段階 | 対応候補 | 強度 | 原文引用 |
 |------|---------|------|---------|
-| 1 場 (Field) | 初期均衡（the situation of equilibrium） | 強 | "the situation of equilibrium at the beginning" (p.41) |
-| 2 波 (Wave) | 均衡の破綻（breakdown）＝対立・ゆれの発生 | 強 | "the breakdown of the situation" (p.41) |
-| 3 縁 (Relation) | 破綻の認知＝関係の組み替えが起きる契機 | 弱 | "the girl's recognition of the loss of equilibrium" (p.41) |
-| 4 渦 (Vortex) | 回復の試み（探索）＝まとまりへの収束運動 | 弱 | "the successful search for the boy" (p.41) |
-| 5 束 (Bundle) | 初期均衡の再建＝方向を持った帰結（変換の完了） | 強 | "the re-establishment of the initial equilibrium" (p.41) |
+| 1 場 (Field) | 初期均衡（the situation of equilibrium） | 強 | "the situation of equilibrium at the beginning" (p.39) |
+| 2 波 (Wave) | 均衡の破綻（breakdown）＝対立・ゆれの発生 | 強 | "the breakdown of the situation" (p.39) |
+| 3 縁 (Relation) | 破綻の認知＝関係の組み替えが起きる契機 | 弱 | "the girl's recognition of the loss of equilibrium" (p.39) |
+| 4 渦 (Vortex) | 回復の試み（探索）＝まとまりへの収束運動 | 弱 | "the successful search for the boy" (p.39) |
+| 5 束 (Bundle) | 初期均衡の再建＝方向を持った帰結（変換の完了） | 強 | "the re-establishment of the initial equilibrium" (p.39) |
 
 **判定根拠**:
 
