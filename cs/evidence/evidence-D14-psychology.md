@@ -3,7 +3,7 @@ file_id: EV-D14
 domain: psychology
 domain_id: D14
 title: "心理学：論ごとの照合の記録"
-last_updated: 2026-11-08
+last_updated: 2026-11-09
 status: "照合中（#73）"
 source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D14-psychology.md"
 ---
@@ -27,7 +27,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | 1. 洞察問題の解決（Ohlsson 1992、Knoblich ら 1999・2001） | 過去の経験から来た初期の表象（制約・知覚のまとまり）と、それでは解けない新しい問題 | 解けないことが続き、何をすればよいか分からない行き詰まり（インパス）になる | 制約がゆるみ、まとまりがほどけて表象が変わると、解が速く迷わず実行される。至らない形として、役に立たない思いつきのあとは行き詰まりが続く。制限時間の中で解けない人もいる | 一人。数秒から数分 | 本文照合済（Knoblich ら 1999 pp.1534–1536・p.1553）・要旨照合済（2001）・二次経由（Ohlsson 1992 は Knoblich ら 1999 p.1535 の紹介） |
 | 2. 認知的不協和（Festinger 1957、Festinger & Carlsmith 1959） | 私的な意見と、それに反する公の発言 | 合わない二つの認知が不協和を生む。大きさは、不協和と協和の比で決まる | 1 ドルで頼まれた人は、退屈な課題を面白かったと自分を説得し、意見が言ったことの方へ変わった。20 ドルの人は、報酬という協和の理由が大きく、意見はほとんど変わらなかった。報酬の価値や実験の重要さを大きく見る道も、低減の一つとして書かれている | 一人。一時間ほどの実験 | 本文照合済（Festinger & Carlsmith 1959 pp.203–210）・未照合（Festinger 1957 の書籍） |
 | 3. フロー体験（Csikszentmihalyi 1990） | 未照合（報告と二次資料では、挑戦と技能） | 未照合 | 未照合 | 一人。分から時間 | 未照合（書籍）。要旨照合済（Jackson & Marsh 1996）・書誌のみ（Liu ら 2023） |
-| 4. 4E 認知（Varela・Thompson・Rosch 1991、Clark & Chalmers 1998） | あらかじめある世界をあらかじめある心が写す、という見方と、行為の歴史から世界と心が立ち上がる、という見方 | 環境は、系が壊れたとき（breakdown）や、構造で満たせない出来事に会ったときに、説明の中に入ってくる | 生き延びる制約に合わないものが捨てられ、満足できるところで足りる選びが続く（自然の漂流。神経科学の記録で照合）。Clark & Chalmers は対立や衝突を主題にしていない | 認知の枠組み。個体と環境 | 本文照合済（Varela ら p.9・p.207、Clark & Chalmers p.8・p.13） |
+| 4. 4E 認知（Varela・Thompson・Rosch 1991、Clark & Chalmers 1998） | あらかじめある世界をあらかじめある心が写す、という見方と、行為の歴史から世界と心が立ち上がる、という見方 | 環境は、系が壊れたとき（breakdown）や、構造で満たせない出来事に会ったときに、説明の中に入ってくる | 生き延びる制約に合わないものが捨てられ、満足できるところで足りる選びが続く（自然の漂流。神経科学の記録で照合）。Clark & Chalmers は対立や衝突を主題にしていない | 認知の枠組み。個体と環境 | 本文照合済（Clark & Chalmers p.8・p.13）・未照合（Varela ら。上げた人の分からない写しで p.9・p.207 を読んだ） |
 | 5. アフォーダンス（Gibson 1979） | 未照合 | 未照合 | 未照合 | 生物と環境 | 未照合 |
 | 6. 概念メタファー（Lakoff & Johnson 1980） | 未照合 | 未照合 | 未照合 | 言語と概念 | 未照合 |
 | 7. 予測処理（Friston 2010、Clark 2013） | 予測と、感覚からの入力 | 入力が予測と食い違う（予測誤差） | 内部の推定を変えるか、行為で入力を変えるかで誤差を減らす。至らない形として、二つの仮説を行き来し続ける（両眼視野闘争）、精度の重みが狂って偽の推論が固まる（悪い統合） | 神経から個体。ミリ秒から年 | 本文照合済（神経科学の記録による。Friston pp.127–129・132、Clark p.185・p.197）・要旨照合済（Feldman & Friston 2010） |
@@ -147,11 +147,11 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Varela, F. J., Thompson, E., & Rosch, E. (1991). *The Embodied Mind: Cognitive Science and Human Experience*. MIT Press。manifest D14-S01。手元の PDF（309 頁。著作権の頁の文字は崩れているが、1991・MIT・三人の名が読める）。読んだ頁：p.9・p.207。自然の漂流（pp.186–188）は、神経科学の記録（`evidence-D08-neuroscience.md`）で本文照合済のものを使った。
+- Varela, F. J., Thompson, E., & Rosch, E. (1991). *The Embodied Mind: Cognitive Science and Human Experience*. MIT Press。manifest D14-S01。手元の PDF（309 頁。著作権の頁の文字は崩れているが、1991・MIT・三人の名が読める）。台帳は出どころを「Monoskop 公開 PDF」と書く。Monoskop は利用者が文書を上げる置き場で、上げた人と権利は確かめていない（2026-11-09）。読んだ頁：p.9・p.207。自然の漂流（pp.186–188）は、神経科学の記録（`evidence-D08-neuroscience.md`）で同じ PDF を読んだものを使った。
 - Clark, A., & Chalmers, D. (1998). The extended mind. *Analysis* 58(1), 7–19. DOI 10.1093/analys/58.1.7（Crossref と表紙で一致）。manifest D14-S02 の OA の URL（https://www.alice.id.tue.nl/references/clark-chalmers-1998.pdf 、JSTOR の写し、14 頁、先頭が %PDF）。読んだ頁：p.8・p.13。
 - Newen, A., De Bruin, L., & Gallagher, S. (Eds.) (2018). *The Oxford Handbook of 4E Cognition*. DOI 10.1093/oxfordhb/9780198735410.001.0001。書誌のみ（Crossref）。
 
-**照合の状態**：本文照合済（Varela ら p.9・p.207、Clark & Chalmers p.8・p.13）。Newen ら は書誌のみ。
+**照合の状態**：Clark & Chalmers は本文照合済（p.8・p.13）。Varela らは未照合（上げた人の分からない写しで p.9・p.207 を読んだ。2026-11-09 の一巡で、本文照合済から改めた）。Newen ら は書誌のみ。
 
 **原典に書いてあること**：
 

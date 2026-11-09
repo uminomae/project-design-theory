@@ -3,7 +3,7 @@ file_id: EV-D22
 domain: business-management
 domain_id: D22
 title: "経営学：論ごとの照合の記録"
-last_updated: 2026-11-08
+last_updated: 2026-11-09
 status: "照合中（#73）"
 source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-business-management.md"
 ---
@@ -26,17 +26,17 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 
 | 論 | 対立 | 衝突 | 統合／新たな安定、または至らずにどう終わったか | 論の微細さ | 照合の状態 |
 |---|---|---|---|---|---|
-| 野中ら：組織的知識創造（1996・2000） | 暗黙知と形式知。秩序とカオス、個と他など、相反して見える組 | 外からの変化や上からの難題（揺らぎ）が入り、ルーチン・習慣・認知の枠組みが「breakdown」し、危機感が生まれる | 対話で概念が生まれ、正当化を経て原型になる。原型は他の部署や階層へ移り、次のサイクルを始める。至らない形として、完全な無秩序に落ちること、集団思考と過去の成功への過剰適応が挙がる | 組織とプロジェクトの単位。数か月から数年 | 本文照合済 |
-| デザイン思考（d.school 2010・Brown 2008） | 利用者の望み・技術の実現性・事業の成り立ち。問題の中の、ときに矛盾する面 | 試作をテストし、早く安く失敗する。問題の枠づけそのものが誤っていたと分かることもある | 二者択一でなく、矛盾する面を見たうえで新しい解をつくる。実装に至る | プロジェクトの単位。週から月 | 本文照合済 |
-| Tuckman（1965）・Tuckman & Jensen（1977） | 集団の中の対人の問題。課題の要求と、それへの情緒的な反発 | 対人の問題をめぐる対立と二極化（storming） | 抵抗が乗り越えられ、まとまりの感覚・新しい基準・新しい役割が生まれる（norming）。役割が柔軟になり課題に力が向く（performing）。1977 年に解散（adjourning）を足した。至らない形として、看護学生の集団では集団内の対立がほとんど見られなかったという報告がある | 小集団。数週から数か月 | 本文照合済（1977 は打ち直しの写し） |
+| 野中ら：組織的知識創造（1996・2000） | 暗黙知と形式知。秩序とカオス、個と他など、相反して見える組 | 外からの変化や上からの難題（揺らぎ）が入り、ルーチン・習慣・認知の枠組みが「breakdown」し、危機感が生まれる | 対話で概念が生まれ、正当化を経て原型になる。原型は他の部署や階層へ移り、次のサイクルを始める。至らない形として、集団思考と過去の成功への過剰適応が挙がる（1996）。2000 年の論文は、完全な無秩序に落ちることを挙げる（未照合の写しで読んだ） | 組織とプロジェクトの単位。数か月から数年 | 本文照合済（1996）・未照合（2000。利用者が編集する wiki の写しで読んだ） |
+| デザイン思考（d.school 2010・Brown 2008） | 利用者の望み・技術の実現性・事業の成り立ち。問題の中の、ときに矛盾する面 | 試作をテストし、早く安く失敗する。問題の枠づけそのものが誤っていたと分かることもある | 二者択一でなく、矛盾する面を見たうえで新しい解をつくる。実装に至る。至らない形は、読んだ範囲に書かれていない | プロジェクトの単位。週から月 | 本文照合済 |
+| Tuckman（1965）・Tuckman & Jensen（1977） | 集団の中の対人の問題。課題の要求と、それへの情緒的な反発 | 対人の問題をめぐる対立と二極化（storming） | 抵抗が乗り越えられ、まとまりの感覚・新しい基準・新しい役割が生まれる（norming）。役割が柔軟になり課題に力が向く（performing）。1977 年に解散（adjourning）を足した。至らない形として、看護学生の集団では集団内の対立がほとんど見られなかったという報告がある（1977。未照合の写しで読んだ） | 小集団。数週から数か月 | 本文照合済（1965）・未照合（1977。大学の教員の置き場の打ち直しで読んだ） |
 | Gersick（1988） | 初回の会合で決まった枠組みと、期限・外部の要求 | 暦の中間点で、古い型を捨て、外の相手と関わり直す | 第一局面で揉めたチームほど、中間点の会合が協働の山になり、合意した計画で第二局面の慣性に入る。至らない形として、中間点でも意見が割れたままの一チームは、リーダーが集団を解散し、案を一人で決めた | プロジェクトチーム。数日から数か月 | 本文照合済 |
 | March（1991） | 探索（新しい可能性）と活用（既知の確かさ） | 短期と長期、個人の知と組織の知の利得がぶつかる。組織のコードは、コードから外れた人からしか学べない | 学びの遅い人や人の入れ替わりが多様さを保ち、コードの知が上がる。至らない形は二つ。探索だけだと未熟な案が多すぎて散る。活用だけだと最適でない安定した均衡に閉じ込められる | 組織学習のモデル（シミュレーション） | 本文照合済 |
 | Weick（1993）Mann Gulch | 消防隊の役割の体系と意味の枠組み。その枠に合わない火事の展開 | 意味と、意味を立て直す手段が一緒に崩れる（cosmology episode）。「道具を捨てろ」に従えない | 統合に至らない形として、役割構造が解体し、パニックの中で 13 人が亡くなった。生き延びた形として、隊長は唯一の逃げ道の真ん中に見える場所で火を放ち（escape fire）、その焼け跡に伏せた。二人は小集団を崩さずに尾根の割れ目を抜けた。分かれ目として、即興・頭の中の役割体系・知恵の態度・敬意ある相互作用の四つが挙がる | 十数人の小集団。数十分 | 本文照合済（再録版） |
-| Sarasvathy（2001）エフェクチュエーション | 予測の論理（causation）と制御の論理（effectuation）。ただし著者は、二つが同時に重なって働くと書く | 予期せぬ偶然を活かす。衝突は前には出ていない | 手持ちの手段と、関わる人の約束から、企業や市場がつくられる | 起業家の意思決定。個人から市場まで | 本文照合済（画像の写し） |
+| Sarasvathy（2001）エフェクチュエーション | 予測の論理（causation）と制御の論理（effectuation）。ただし著者は、二つが同時に重なって働くと書く | 予期せぬ偶然を活かす。衝突は前には出ていない | 手持ちの手段と、関わる人の約束から、企業や市場がつくられる。至らない形は、読んだ範囲に書かれていない | 起業家の意思決定。個人から市場まで | 本文照合済（画像の写し） |
 | Scharmer：U 理論（著者側の要約版 2007） | 過去のパターン（downloading）と、出現しつつある未来 | 下る側の内なる敵（判断・冷笑・恐れの声）。底で、要らないものを手放す閾値 | 手放したあとに、来るものを迎え入れる（presencing）。結晶化・試作を経て実践になる。至らない形として、上る側の三つの敵（反射的な行動・行動しない分析・源につながらない話）が挙がる | 個人・チーム・社会。会話から社会変革まで | 本文照合済（要約版のみ。書籍は未照合） |
 | Christensen：破壊的イノベーション | 未照合 | 未照合 | 未照合 | 産業と企業 | 未照合（書誌のみ Crossref） |
 | Senge・Bion：学習する組織と基本想定 | ビジョンと現実（二次資料） | 未照合 | 未照合 | 組織・集団 | 二次資料のみ（Senge）・未照合（Bion） |
-| トヨタ生産方式・リーン | 流れ（ジャスト・イン・タイム）と異常 | 異常が起きたら止まる（自働化） | 毎日の改善 | 工場・現場 | 二次資料のみ（トヨタの公式ページ） |
+| トヨタ生産方式・リーン | 流れ（ジャスト・イン・タイム）と異常 | 異常が起きたら止まる（自働化） | 毎日の改善。至らない形は、読んだ公式ページに書かれていない | 工場・現場 | 二次資料のみ（トヨタの公式ページ） |
 | Taleb：反脆弱性 | 未照合 | 未照合 | 未照合 | システム全般 | 未照合 |
 
 ここまでで見えたことを、見立てとして書きます。本文で確かめられた八つの論のうち、六つ（野中・デザイン思考・Tuckman・Gersick・March・Weick）は、安定を崩す出来事や外れたものを過程の中に置き、それとのぶつかりを経て新しい形に至る書き方をしています。統合に至らない形も、四つの論（野中・Gersick・March・Weick）が原典の中に書いています。Gersick の「解散して一人で決めた」、March の「散る」と「閉じ込められる」、Weick の「解体」は、並べ方の三つ（統合・片方の勝利・そのほかの至らない形）のどれに当たるかを見る材料になりそうです。一方、Tuckman の第三段階は調和を重んじて課題の対立を避けると書かれ、エフェクチュエーションは衝突を前に出していません。
@@ -49,12 +49,12 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 
 **一次情報**：
 
-- Nonaka, I., Umemoto, K. & Senoo, D. (1996). From information processing to knowledge creation: A paradigm shift in business management. *Technology in Society* 18(2), 203–218. DOI 10.1016/0160-791X(96)00001-2。manifest D22-S02。OA の写し http://www.sietmanagement.fr/wp-content/uploads/2016/04/nonaka-1996.pdf 。読んだ頁：pp.205–216。
-- Nonaka, I., Toyama, R. & Konno, N. (2000). SECI, Ba and leadership: a unified model of dynamic knowledge creation. *Long Range Planning* 33(1), 5–34. DOI 10.1016/S0024-6301(99)00115-6。manifest D22-S03。OA の写し https://agileconsortium.pbworks.com/f/Nonaka_etal_2000_SECI.pdf 。読んだ頁：p.7・pp.13–14・pp.26–28。
+- Nonaka, I., Umemoto, K. & Senoo, D. (1996). From information processing to knowledge creation: A paradigm shift in business management. *Technology in Society* 18(2), 203–218. DOI 10.1016/0160-791X(96)00001-2。manifest D22-S02。OA の写し http://www.sietmanagement.fr/wp-content/uploads/2016/04/nonaka-1996.pdf 。出版社（Elsevier）の誌面の写しで、置き場は教科書『Systèmes d'information et Management』の付属サイト（発行の責任者はモンペリエ大学の名誉教授で教科書の共著者、連絡先は同じ大学の研究所。2026-11-09 にサイトの法定表示で確かめた）。権利は未確認。教員の教育用の置き場の写しとして扱う（`docs/cs-review/README.md`「規約で決めたこと」D19・D25 の行）。読んだ頁：pp.205–216。
+- Nonaka, I., Toyama, R. & Konno, N. (2000). SECI, Ba and leadership: a unified model of dynamic knowledge creation. *Long Range Planning* 33(1), 5–34. DOI 10.1016/S0024-6301(99)00115-6。manifest D22-S03。写し https://agileconsortium.pbworks.com/f/Nonaka_etal_2000_SECI.pdf 。pbworks は利用者が編集する wiki の置き場で、この写しは個人の wiki（Agile Consortium）に置かれたもの。上げた人と権利は未確認なので、本文照合済にしない（同じ「規約で決めたこと」D29 の行）。`find-source.sh` では OA の写しが見つからなかった（2026-11-09）。ノルウェー技術博物館のサイトにも写しがあるが、公的な機関のサイトの写しの扱い（D30 の行）は pjdhiro の判断を待っているので使っていない。読んだ頁：p.7・pp.13–14・pp.26–28。
 - Nonaka & Takeuchi (1995) の書籍（manifest D22-S01）は開けていない。
 - 書誌は二本とも Crossref と PDF の表紙で一致した。
 
-**照合の状態**：本文照合済（1996・2000）。書籍（1995）は未照合。
+**照合の状態**：1996 は本文照合済。2000 は未照合（上の写しで読んだ頁を書く。2026-11-09 の一巡で、本文照合済から改めた）。書籍（1995）は未照合。下の 2000 年の論文の箇条は、未照合の写しで読んだものです。
 
 **原典に書いてあること**：
 
@@ -66,7 +66,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 - 日本型の知識創造は「group think」と「overadaptation to the past success」に陥りうる（1996 pp.215–216）。
 - ba は「originally proposed by the Japanese philosopher Kitaro Nishida and was further developed by Shimizu」とされ、「a shared context in which knowledge is shared, created and utilised」と定義される（2000 p.14）。1996 年の論文は、共同化の起点を相互作用の「field」と書く（p.205）。
 
-**対立・衝突・統合の読み**：原典は、相反する組（対立）、揺らぎによるルーチンの崩れと危機感（衝突）、弁証法的な総合（統合）、原型と cross-leveling（新たな安定）を、どれも本文で書いている。衝突は過程の外の阻害ではなく、知識創造の条件に数えられている。至らない形も、完全な無秩序と、集団思考・過去の成功への過剰適応として書かれている。ここまでは原典に書いてあることで、これを5段階のどこに当てるかは Claude の読み替えになるので、定義が決まるまで保留する。
+**対立・衝突・統合の読み**：原典は、相反する組（対立）、揺らぎによるルーチンの崩れと危機感（衝突）、弁証法的な総合（統合）、原型と cross-leveling（新たな安定）を、どれも本文で書いています（弁証法的な総合は 2000 年の論文で、未照合の写しで読みました）。衝突は過程の外の阻害ではなく、知識創造の条件に数えられています。至らない形も、集団思考・過去の成功への過剰適応（1996）と、完全な無秩序（2000）として書かれています。ここまでは原典に書いてあることで、これを5段階のどこに当てるかは Claude の読み替えになるので、定義が決まるまで保留します。
 
 **今の報告から直すこと**：
 
@@ -86,25 +86,25 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 **一次情報**：
 
 - Hasso Plattner Institute of Design at Stanford (2010). *An Introduction to Design Thinking: Process Guide*. manifest D22-S05。手元の PDF（6 頁）。読んだ頁：pp.1–6。
-- Brown, T. (2008). Design thinking. *Harvard Business Review*, June 2008（抜き刷り R0806E）。manifest D22-S06。手元の PDF。OA の写し https://readings.design/PDF/Tim%20Brown,%20Design%20Thinking.pdf 。読んだ頁：抜き刷りの pp.2–4。
+- Brown, T. (2008). Design thinking. *Harvard Business Review* 86(6), 84–92（抜き刷り R0806E）。manifest D22-S06。手元の PDF は抜き刷りで、readings.design（上げた人の分からない読み物の一覧のサイト）の写しとバイト単位で同じ。確かめ先は、著者が率いた IDEO のサイトに置かれていた誌面（pp.84–92。Wayback の記録 2008-12-02、http://www.ideo.com/images/uploads/news/pdfs/IDEO_HBR_Design_Thinking_08.pdf ）に差し替えた。著者の側の写しとして扱う（`docs/rules/sources.md` §5-8。権利は未確認）。下の頁は誌面の頁で、括弧に抜き刷りの頁を添える。読んだ頁：誌面の pp.86–88（抜き刷りの pp.2–4）。
 - Akiike, A. & Ichikohji, T. (2021). What are the requirements for design thinking articles? *Annals of Business Administrative Science* 20(6), 197–209. DOI 10.7880/abas.0210930a。manifest D22-S07。手元の PDF。経営学の雑誌でデザイン思考がどう研究されてきたかのレビューで、要旨は、近年の実証研究が Brown（2009）と Martin（2009）に拠り、利用者中心と実験を論じている、とまとめる（p.197）。5段階との対応には使っていない。
 
-**照合の状態**：本文照合済。
+**照合の状態**：本文照合済（Brown は 2026-11-09 に、著者の側の写しの誌面で語を確かめ直した）。
 
 **原典に書いてあること**：
 
-- Brown は、優れたデザイン思考者の特徴に「integrative thinking」を挙げ、二者択一の分析に頼るだけでなく、「the salient—and sometimes contradictory—aspects of a confounding problem」を見て、今ある案を越える新しい解をつくる、と書く（抜き刷り p.3）。
-- Brown は、デザインの過程を「a system of spaces rather than a predefined series of orderly steps」と書き、初めての人には「chaotic」に感じられる、とも書く（p.4）。
+- Brown は、優れたデザイン思考者の特徴に「integrative thinking」を挙げ、二者択一の分析に頼るだけでなく、「the salient—and sometimes contradictory—aspects of a confounding problem」を見て、今ある案を越える新しい解をつくる、と書く（誌面 p.87、抜き刷り p.3）。
+- Brown は、デザインの過程を「a system of spaces rather than a predefined series of orderly steps」と書き、初めての人には「chaotic」に感じられる、とも書く（誌面 p.88、抜き刷り p.4）。
 - d.school のガイドは、試作の目的の一つに「To fail quickly and cheaply」を挙げ（p.5）、テストで、問題の枠づけそのものを誤っていたと分かることがある、と書く（p.6）。五つのモードは簡単のため線形に並べたが、いろいろな順で使える（p.6）。
 
-**対立・衝突・統合の読み**：Brown は矛盾する面を見て新しい解をつくることを書き、d.school は失敗とテストでの枠づけの崩れを過程に含めている。衝突は過程の中に置かれているが、どちらの文書も手引きなので、衝突がなぜ欠かせないかまでは論じていない。
+**対立・衝突・統合の読み**：Brown は矛盾する面を見て新しい解をつくることを書き、d.school は失敗とテストでの枠づけの崩れを過程に含めています。衝突は過程の中に置かれていますが、どちらの文書も手引きなので、衝突がなぜ欠かせないかまでは論じていません。統合に至らない形（実装に至らずに終わる形）は、読んだ範囲に書かれていません。
 
 **今の報告から直すこと**：
 
 | 今の報告の行 | 判定 | 重さ | 中身 |
 |---|---|---|---|
 | ja 91・93 行 Empathize→Ideate→Define の順で対応させ、「これ自体が『手順ではなく構造的対応』であることの証拠になりえます」 | 取り違え | 中 | ガイドは定義から発想へ移る順で書く（p.3）。並べ替えて合わせたことを証拠に数えると、何でも合うことになる。合わないところとして書く |
-| ja 59・89 行 提唱者「d.school / Brown（2008）」の「5モード」 | 帰属違い | 中 | Brown 2008 は五つのモードでなく三つの空間（p.4）。五つのモードは d.school |
+| ja 59・89 行 提唱者「d.school / Brown（2008）」の「5モード」 | 帰属違い | 中 | Brown 2008 は五つのモードでなく三つの空間（誌面 p.88、抜き刷り p.4）。五つのモードは d.school |
 | ja 89 行「公式には…非線形・反復的なプロセスであると明言」 | 一致 | 低 | ガイド p.6 とほぼ一致 |
 
 ### 3. Tuckman（1965）・Tuckman & Jensen（1977）：小集団の発達
@@ -114,10 +114,10 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 **一次情報**：
 
 - Tuckman, B. W. (1965). Developmental sequence in small groups. *Psychological Bulletin* 63(6), 384–399. DOI 10.1037/h0022100。manifest D22-S08。OA の写し https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Group_Dynamics/Tuckman_1965_Developmental_sequence_in_small_groups.pdf 。読んだ頁：p.384・p.386・p.396。
-- Tuckman, B. W. & Jensen, M. A. C. (1977). Stages of small-group development revisited. *Group & Organization Studies* 2(4), 419–427. DOI 10.1177/105960117700200404。manifest D22-S09。OA の写し http://faculty.wiu.edu/P-Schlag/articles/Stages_of_Small_Group_Development.pdf 。この写しは 6 頁に打ち直したもので、誌面の頁番号が無い。以下の頁は写しの頁。読んだ頁：写しの pp.1–5。
+- Tuckman, B. W. & Jensen, M. A. C. (1977). Stages of small-group development revisited. *Group & Organization Studies* 2(4), 419–427. DOI 10.1177/105960117700200404。manifest D22-S09。写し http://faculty.wiu.edu/P-Schlag/articles/Stages_of_Small_Group_Development.pdf 。この写しは 6 頁に打ち直したもので、誌面の頁番号が無い。以下の頁は写しの頁。読んだ頁：写しの pp.1–5。置き場は西イリノイ大学の教員の頁の、読み物を並べた置き場（2010 年に置かれた。新聞記事や授業の宿題の雛形と同じ所）で、この写しをどの授業で使ったかを示す頁は見つからなかった（2026-11-09。Wayback の記録 2015 年の一覧で確かめた）。授業との関わりの分からない打ち直しなので、本文照合済にしない（`docs/cs-review/README.md`「規約で決めたこと」D19 の行）。`find-source.sh` では OA の写しが見つからなかった。
 - 書誌は二本とも Crossref と PDF の表紙で一致した。
 
-**照合の状態**：本文照合済（1977 は打ち直しの写しで、誌面の頁は確かめられない）。
+**照合の状態**：1965 は本文照合済（授業用の写し）。1977 は未照合（上の打ち直しで読んだ写しの頁を書く。2026-11-09 の一巡で、本文照合済から改めた）。
 
 **原典に書いてあること**：
 
@@ -127,7 +127,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 - 一方、第三段階の別の記述は「Harmony is of maximum importance, and task conflicts are avoided to insure harmony」（p.386）。
 - 1977 年の見直しでは、22 の研究のうち仮説を直接確かめたのは一つ（Runkel ら 1971）だけ（写し p.1・p.2）。看護学生の集団では集団内の対立がほとんど見られず、storming が「for the most part been eliminated」という報告がある（写し p.3）。モデルは「forming, storming, norming, performing, and adjourning」となった（写し p.5）。
 
-**対立・衝突・統合の読み**：1965 年のモデルは、対人の対立（衝突）を経て抵抗が乗り越えられ、新しい基準が生まれる（統合）と書く。衝突は過程の中にある。ただし、統合の段階は調和を重んじ課題の対立を避けるとも書かれ、1977 年の見直しには、対立の段階が見られない集団の報告がある。adjourning は集団の解散で、何が次に残るかは書かれていない。
+**対立・衝突・統合の読み**：1965 年のモデルは、対人の対立（衝突）を経て抵抗が乗り越えられ、新しい基準が生まれる（統合）と書きます。衝突は過程の中にあります。ただし、統合の段階は調和を重んじ課題の対立を避けるとも書かれ、1977 年の見直し（未照合の写しで読みました）には、対立の段階が見られない集団の報告があります。adjourning は集団の解散で、何が次に残るかは書かれていません。
 
 **今の報告から直すこと**：
 
@@ -157,7 +157,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 - 仕事の変わり方は全体として「tended to be dialectical」で、速く始めたチームは中間点で立ち止まって見直し、ゆっくり始めたチームは中間点で動き出した（p.28）。
 - 第二局面では、先に対立なしに成果を出し始めたチームもあれば、転換のあとに内部の対立に戻ったチームもあった（p.30）。
 
-**対立・衝突・統合の読み**：原典は、古い枠組みと期限の圧力のぶつかりを中間点の転換として書き、そこで古い型を捨てて新しい計画に至る形を書いている。転換の時期の分かれ目は暦の中間点という時間の閾値で、内容の熟し方ではない。統合に至らない形として、意見が割れたままのチームが解散し、リーダーが一人で決めた例がある。これは片方の勝利、または分裂の例として並べられそうだ。一方、対立なしに進んだチームもあり、衝突がいつも欠かせない形とは書かれていない。
+**対立・衝突・統合の読み**：原典は、古い枠組みと期限の圧力のぶつかりを中間点の転換として書き、そこで古い型を捨てて新しい計画に至る形を書いています。転換の時期の分かれ目は暦の中間点という時間の閾値で、内容の熟し方ではありません。統合に至らない形として、意見が割れたままのチームが解散し、リーダーが一人で決めた例があります。これは片方の勝利、または分裂の例として並べられそうです。一方、対立なしに進んだチームもあり、衝突がいつも欠かせない形とは書かれていません。
 
 **今の報告から直すこと**：
 
@@ -181,7 +181,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 - 探索と活用の兼ね合いは、短期と長期の関心のぶつかり、個人の知の利得と集団の知の利得のぶつかりを含む（p.74）。
 - 組織のコードは、コードから外れた個人からしか学べない。学びの遅い個人は多様さを長く保ち、それがコードの知を上げる探索になる（p.76）。
 
-**対立・衝突・統合の読み**：原典は、探索と活用を、どちらも欠かせないのにぶつかる組として書く。コードから外れた人、つまりコードから見れば誤った人が、コードが学ぶのに欠かせない。統合に至らない形が二つはっきり書かれている。探索に偏ると散らばり、活用に偏ると最適でない安定に閉じ込められる。後者は、統合はしたが固まって動かない「悪い束」の候補になりそうだ。
+**対立・衝突・統合の読み**：原典は、探索と活用を、どちらも欠かせないのにぶつかる組として書きます。コードから外れた人、つまりコードから見れば誤った人が、コードが学ぶのに欠かせません。統合に至らない形が二つはっきり書かれています。探索に偏ると散らばり、活用に偏ると最適でない安定に閉じ込められます。後者は、統合はしたが固まって動かない「悪い束」の候補になりそうです。
 
 **今の報告から直すこと**：
 
@@ -212,7 +212,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 - escape fire は、火に向き直り、火に穴を開けて通り抜け、火が当たる場所を自分で選ぶ手だった（p.11）。
 - 知恵は、知っていることを確かだと思いすぎず、疑いすぎもしない態度で、過信も過剰な用心も、好奇心と開かれた感知を壊す（p.12）。
 
-**対立・衝突・統合の読み**：原典は、役割と意味の枠組みが、それに合わない火事の展開とぶつかり、どちらも崩れた過程を書いている。多くの隊員にとっては、統合に至らずに解体した例になる。同じ出来事の中で、隊長は、敵である火を逃げる手段として取り込む手で生き延びた。これは「良いこと以外のものを過程の中に取り込む」形の、はっきりした一例として読めそうだ。ただし、隊長の火を、ほかの隊員は意味づけられなかった（p.2・p.7）。分かれ目として原典が挙げるのは、即興・頭の中の役割体系・知恵の態度・敬意ある相互作用の四つ。
+**対立・衝突・統合の読み**：原典は、役割と意味の枠組みが、それに合わない火事の展開とぶつかり、どちらも崩れた過程を書いています。多くの隊員にとっては、統合に至らずに解体した例になります。同じ出来事の中で、隊長は、敵である火を逃げる手段として取り込む手で生き延びました。これは「良いこと以外のものを過程の中に取り込む」形の、はっきりした一例として読めそうです。ただし、隊長の火を、ほかの隊員は意味づけられませんでした（p.2・p.7）。分かれ目として原典が挙げるのは、即興・頭の中の役割体系・知恵の態度・敬意ある相互作用の四つです。
 
 **今の報告から直すこと**：
 
@@ -238,7 +238,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 - 表 1 は二つの過程を対比し、effectuation の結果を「New markets created through alliances and other cooperative strategies」と書く（p.251）。
 - effectuation の原則は四つ。期待収益でなく許容できる損失、競争分析でなく戦略的な提携、既存の知識の活用でなく偶然の活用、予測でなく予測できない未来の制御（p.252）。
 
-**対立・衝突・統合の読み**：原典は、二つの論理を対立としてでなく、同時に重なって働くものとして書いている。偶然を活かすことは過程に含まれているが、嫌なことや悪いこととぶつかることが欠かせない形にはなっていない。似ているかどうかの芯（対立や衝突が欠かせないこと）から見ると、この論は、ほかの論より弱い一面になりそうだ。
+**対立・衝突・統合の読み**：原典は、二つの論理を対立としてでなく、同時に重なって働くものとして書いています。偶然を活かすことは過程に含まれていますが、嫌なことや悪いこととぶつかることが欠かせない形にはなっていません。読んだ頁（p.243・p.245・pp.250–252）には、統合に至らない形（企業や市場がつくられずに終わる形）も書かれていません。似ているかどうかの芯（対立や衝突が欠かせないこと）から見ると、この論は、ほかの論より弱い一面になりそうです。
 
 **今の報告から直すこと**：
 
@@ -254,9 +254,9 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 
 **要旨**：社会の場の質を変える過程を U 字で書く。過去のパターンを繰り返すところから、見る・感じ取るを経て底に下り、手放したあとに来るものを迎え入れ（presencing）、結晶化・試作・実践へ上る。
 
-**一次情報**：Scharmer, C. O. (2007). *Addressing the Blind Spot of Our Time: An executive summary of the new book by Otto Scharmer, Theory U: Leading from the Future as It Emerges*. Presencing Institute（著者側の要約版。原本は theoryU.com で配布）。読んだのは授業用の写し https://csasupervisors.c1448228.myzen.co.uk/files/uk15/mod1/theory-u-exec-summary.pdf 。読んだ頁：要約版の p.7・pp.11–12・p.18。書籍（2007）は開けていない。
+**一次情報**：Scharmer, C. O. (2007). *Addressing the Blind Spot of Our Time: An executive summary of the new book by Otto Scharmer, Theory U: Leading from the Future as It Emerges*. Presencing Institute（著者側の要約版。原本は theoryU.com で配布）。はじめに読んだのは、コーチの指導者の養成講座（Coaching Supervision Academy の UK15 期・第 1 単元）の資料の置き場の写し https://csasupervisors.c1448228.myzen.co.uk/files/uk15/mod1/theory-u-exec-summary.pdf （2013 年に作り直された版で、文字の層が崩れている）。2026-11-09 に、著者の研究所のサイトに置かれていた同じ要約版（Wayback の記録 2011-01-03、http://presencing.com/docs/publications/execsums/Theory_U_Exec_Summary.pdf 。2007 年 9 月の版、21 面）を取り、下の頁の語が同じ頁にあることを確かめた。著者のサイト（ottoscharmer.com、Wayback の記録 2021-04-06）にも同じ組版の版がある。確かめ先は著者の側の写しとする（`docs/rules/sources.md` §5-8）。読んだ頁：要約版の p.7・pp.11–12・p.18。書籍（2007）は開けていない。
 
-**照合の状態**：要約版は本文照合済。書籍は未照合。
+**照合の状態**：要約版は本文照合済（著者の研究所のサイトの写し）。書籍は未照合。
 
 **原典に書いてあること**：
 
@@ -265,7 +265,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 - 図 4 の七つの能力は、holding the space・observing・sensing・presencing・crystallizing・prototyping・performing（p.12）。
 - 著者紹介は、Scharmer が『Presence』（2005）を Peter Senge・Joseph Jaworski・Betty Sue Flowers と共著したと書く（p.18）。
 
-**対立・衝突・統合の読み**：要約版は、過去のパターンと出現しつつある未来の対立、判断・冷笑・恐れとのぶつかり、底の閾値での手放しを書いている。至らない形も上る側の三つの敵として書かれている。ただし、U 理論は実践の手引きとして書かれていて、恐れや冷笑は乗り越える相手として置かれている。それらを取り込んで進むのか、退けて進むのかは、要約版からは読み分けられない。
+**対立・衝突・統合の読み**：要約版は、過去のパターンと出現しつつある未来の対立、判断・冷笑・恐れとのぶつかり、底の閾値での手放しを書いています。至らない形も上る側の三つの敵として書かれています。ただし、U 理論は実践の手引きとして書かれていて、恐れや冷笑は乗り越える相手として置かれています。それらを取り込んで進むのか、退けて進むのかは、要約版からは読み分けられません。
 
 **今の報告から直すこと**：
 
@@ -374,7 +374,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 | D22-S18 | March, J. G. (1991). Exploration and exploitation in organizational learning. *Organization Science* 2(1), 71–87. DOI 10.1287/orsc.2.1.71 | https://arken.nmbu.no/~sigury/AOS_234/320_Pensum/March_91_Exploration%20and%20exploitation.pdf （授業用の写し。JSTOR の表紙つき） | url-verified |
 | D22-S19 | Weick, K. E. (1993). The collapse of sensemaking in organizations: The Mann Gulch disaster. *Administrative Science Quarterly* 38(4), 628–652. DOI 10.2307/2393339 | https://alnap.org/documents/12477/The_Collapse_of_Sensemaking_in_Organizations_The_Mann_Gulch.pdf （再録版。誌面の頁番号なし） | url-verified |
 | D22-S20 | Sarasvathy, S. D. (2001). Causation and effectuation. *Academy of Management Review* 26(2), 243–263. DOI 10.2307/259121 | https://effectuation.org/hubfs/Journal%20Articles/2016/06/amr01-inevitability-to-contingency-1.pdf （画像のみ） | url-verified |
-| D22-S21 | Scharmer, C. O. (2007). *Addressing the Blind Spot of Our Time*（Theory U の要約版）. Presencing Institute | https://csasupervisors.c1448228.myzen.co.uk/files/uk15/mod1/theory-u-exec-summary.pdf （写し。原本は theoryU.com） | url-verified |
+| D22-S21 | Scharmer, C. O. (2007). *Addressing the Blind Spot of Our Time*（Theory U の要約版）. Presencing Institute | http://presencing.com/docs/publications/execsums/Theory_U_Exec_Summary.pdf （著者の研究所のサイト。Wayback の記録 2011-01-03）。講座の資料の置き場の写し https://csasupervisors.c1448228.myzen.co.uk/files/uk15/mod1/theory-u-exec-summary.pdf も読んだ | url-verified |
 | D22-S22 | Christensen, C. M. & Bower, J. L. (1996). Customer power, strategic investment, and the failure of leading firms. *Strategic Management Journal* 17(3), 197–218 | 本文 OA なし | citation-only |
 | D22-S23 | Christensen, C. M. & Rosenbloom, R. S. (1995). Explaining the attacker's advantage. *Research Policy* 24(2), 233–257. DOI 10.1016/0048-7333(93)00764-K | 本文 OA なし | citation-only |
 | D22-S24 | Cohen, M. D., March, J. G. & Olsen, J. P. (1972). A garbage can model of organizational choice. *Administrative Science Quarterly* 17(1). DOI 10.2307/2392088 | 本文は探していない | citation-only |

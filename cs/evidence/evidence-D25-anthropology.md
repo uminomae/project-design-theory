@@ -301,7 +301,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 - Giddens, A. (1984). *The Constitution of Society*。社会学の記録（`cs/evidence/evidence-D18-sociology.md` の 10）で、書籍を開けず未照合。読み直していない。
 - Bourdieu, P. (1980). *Le sens pratique*. Minuit。書籍。開ける写しは見つからなかった。
 - 英訳：Bourdieu, P. (1990). *The Logic of Practice*. R. Nice 訳. Polity / Stanford UP。archive.org に個人が上げた写し（https://archive.org/details/BOURDIEUPierreTheLogicOfPractice ）の文字の層（djvu.txt）で読んだ。権利は確かめていない。文字の層に柱の頁番号が残っていて、それで頁を控えた。読んだ頁：p.53・p.62・pp.212–213。
-- ブルデュー（1986）「資本の形」は D18 の記録の 6 で本文照合済。
+- ブルデュー（1986）「資本の形」は D18 の記録の 6 を参照（有志の文書館の打ち直しで節を読んだので未照合。2026-11-09 の一巡で、D18 が本文照合済から改めた）。
 
 **照合の状態**：未照合（書籍）。ギデンズは未照合（D18 の記録を参照）。ブルデューは英訳の個人が上げた写しで、上の頁を読みました。
 
