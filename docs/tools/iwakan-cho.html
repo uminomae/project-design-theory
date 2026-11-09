@@ -1,0 +1,617 @@
+<title>違和感帳</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+/* 一列の帳面。上に書く欄、下に場所ごとの目次。カードは開くと返事と進み具合が見える。 */
+:root {
+  --bg: #f3f5f9;
+  --surface: #ffffff;
+  --sunken: #e9edf4;
+  --ink: #18202e;
+  --muted: #5b6579;
+  --line: #d9dfe9;
+  --accent: #2c5bd0;
+  --accent-soft: #e3eafb;
+  --wait: #a35f00;
+  --wait-soft: #fbefd9;
+  --done: #2c7a4b;
+  --done-soft: #ddf1e4;
+  --claude: #6a4fc4;
+  --claude-soft: #ece7fb;
+  --danger: #b4372f;
+  --font-display: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --font-body: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #07090e; --surface: #10141c; --sunken: #171c27; --ink: #e2e8f3; --muted: #8f9ab0;
+    --line: #252c3a; --accent: #7ea2ff; --accent-soft: #18233f; --wait: #f0b45a; --wait-soft: #33260f;
+    --done: #6fcf97; --done-soft: #12291c; --claude: #b29cff; --claude-soft: #231c3d; --danger: #f2877e;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #07090e; --surface: #10141c; --sunken: #171c27; --ink: #e2e8f3; --muted: #8f9ab0;
+  --line: #252c3a; --accent: #7ea2ff; --accent-soft: #18233f; --wait: #f0b45a; --wait-soft: #33260f;
+  --done: #6fcf97; --done-soft: #12291c; --claude: #b29cff; --claude-soft: #231c3d; --danger: #f2877e;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--font-body);
+  font-size: 15px; line-height: 1.7;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 20px 64px;
+}
+.wrap { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
+a { color: var(--accent); }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+header { display: flex; flex-direction: column; gap: 4px; }
+h1 { font-family: var(--font-display); font-weight: 600; font-size: 1.7rem; letter-spacing: 0.06em; margin: 0; text-wrap: balance; }
+.lead { margin: 0; color: var(--muted); font-size: 0.9rem; }
+.conn { font-size: 0.78rem; color: var(--muted); }
+.conn.bad { color: var(--danger); }
+
+/* 進み具合のまとめ */
+.tally { display: flex; flex-wrap: wrap; gap: 6px; }
+.tally button {
+  display: inline-flex; align-items: baseline; gap: 6px; border: 1px solid var(--line);
+  background: var(--surface); border-radius: 999px; padding: 3px 12px; font-size: 0.82rem;
+}
+.tally button b { font-variant-numeric: tabular-nums; font-weight: 700; }
+.tally button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.tally button.wait b { color: var(--wait); }
+.tally button.claude b { color: var(--claude); }
+
+/* 書く欄 */
+.capture { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 10px; }
+.capture textarea { width: 100%; min-height: 84px; resize: vertical; border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; background: var(--bg); line-height: 1.6; }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.row > * { min-width: 0; }
+select, input[type="text"] { border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; background: var(--bg); max-width: 100%; }
+#cap-place { flex: 1 1 220px; }
+#cap-where { flex: 2 1 220px; }
+.kinds { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.kinds label { padding: 6px 12px; font-size: 0.85rem; cursor: pointer; border-right: 1px solid var(--line); }
+.kinds label:last-child { border-right: 0; }
+.kinds input { position: absolute; opacity: 0; pointer-events: none; }
+.kinds input:checked + span { color: var(--accent); font-weight: 700; }
+.kinds label:has(input:checked) { background: var(--accent-soft); }
+.kinds label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: -2px; }
+.primary { background: var(--accent); color: var(--surface); border: 0; border-radius: 8px; padding: 8px 18px; font-weight: 700; }
+.primary:disabled { opacity: 0.45; cursor: default; }
+.quiet { background: none; border: 1px solid var(--line); border-radius: 8px; padding: 6px 12px; font-size: 0.85rem; }
+.spacer { flex: 1; }
+
+/* 目次の切り替え */
+.viewbar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.viewbar h2 { margin: 0; font-size: 1rem; font-family: var(--font-display); font-weight: 600; letter-spacing: 0.08em; }
+.seg { display: inline-flex; gap: 2px; background: var(--sunken); border-radius: 8px; padding: 2px; }
+.seg button { border: 0; background: none; border-radius: 6px; padding: 3px 10px; font-size: 0.82rem; color: var(--muted); }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); font-weight: 700; }
+
+.group { display: flex; flex-direction: column; gap: 8px; }
+.group-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-top: 6px; }
+.group-head h3 { margin: 0; font-size: 0.98rem; font-weight: 700; }
+.group-head .n { font-size: 0.78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.group-head a { font-size: 0.78rem; }
+.list { display: flex; flex-direction: column; gap: 8px; }
+.empty { color: var(--muted); font-size: 0.9rem; padding: 18px; border: 1px dashed var(--line); border-radius: 10px; text-align: center; }
+
+/* 一件 */
+.item { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+.item.attn { border-color: var(--wait); }
+.item-head { display: grid; grid-template-columns: auto 1fr; gap: 4px 10px; padding: 11px 14px; width: 100%; text-align: left; background: none; border: 0; border-radius: 10px; }
+.pill { grid-row: span 2; align-self: start; margin-top: 3px; font-size: 0.72rem; padding: 1px 8px; border-radius: 999px; white-space: nowrap; background: var(--sunken); color: var(--muted); font-weight: 700; }
+.pill.look, .pill.work { background: var(--accent-soft); color: var(--accent); }
+.pill.decide, .pill.check { background: var(--wait-soft); color: var(--wait); }
+.pill.done { background: var(--done-soft); color: var(--done); }
+.title { font-weight: 500; min-width: 0; overflow-wrap: anywhere; }
+.meta { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 0.76rem; color: var(--muted); min-width: 0; }
+.meta .tag-claude { color: var(--claude); font-weight: 700; }
+.meta .tag-reply { color: var(--wait); font-weight: 700; }
+.meta .kind-指示 { color: var(--accent); font-weight: 700; }
+.meta .kind-問い { color: var(--claude); font-weight: 700; }
+.num { font-variant-numeric: tabular-nums; font-family: var(--font-mono); font-size: 0.72rem; }
+
+.item-body { border-top: 1px solid var(--line); padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 14px; }
+.fulltext { white-space: pre-wrap; overflow-wrap: anywhere; margin: 0; }
+.where { margin: 0; font-size: 0.85rem; color: var(--muted); border-left: 3px solid var(--line); padding-left: 10px; overflow-wrap: anywhere; }
+
+/* 進み具合：六つの段の点 */
+.track { display: flex; gap: 0; align-items: center; overflow-x: auto; }
+.step { display: flex; flex-direction: column; align-items: center; gap: 3px; flex: 1 0 64px; font-size: 0.7rem; color: var(--muted); position: relative; }
+.step i { width: 10px; height: 10px; border-radius: 50%; background: var(--line); display: block; z-index: 1; }
+.step::before { content: ""; position: absolute; top: 4px; left: -50%; width: 100%; height: 2px; background: var(--line); }
+.step:first-child::before { display: none; }
+.step.past i, .step.past::before { background: var(--accent); }
+.step.now i { background: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+.step.now.wait i { background: var(--wait); box-shadow: 0 0 0 4px var(--wait-soft); }
+.step.now.done i { background: var(--done); box-shadow: 0 0 0 4px var(--done-soft); }
+.step.now { color: var(--ink); font-weight: 700; }
+
+.facts { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px; font-size: 0.8rem; background: var(--bg); max-width: 100%; overflow-wrap: anywhere; text-decoration: none; }
+a.chip:hover { border-color: var(--accent); }
+.chip small { color: var(--muted); }
+
+.thread { display: flex; flex-direction: column; gap: 10px; }
+.note { border-radius: 8px; padding: 8px 12px; background: var(--sunken); }
+.note.claude { background: var(--claude-soft); }
+.note.status { background: none; padding: 0 12px; font-size: 0.8rem; color: var(--muted); }
+.note-head { display: flex; gap: 8px; font-size: 0.75rem; color: var(--muted); flex-wrap: wrap; }
+.note-head b { color: var(--ink); }
+.note.claude .note-head b { color: var(--claude); }
+.note-head .ins { color: var(--accent); font-weight: 700; }
+.note p { margin: 2px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+
+.reply { display: flex; flex-direction: column; gap: 8px; }
+.reply textarea { width: 100%; min-height: 64px; resize: vertical; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; background: var(--bg); }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 0.85rem; }
+.actions label { color: var(--muted); }
+.confirm { display: flex; flex-direction: column; gap: 8px; background: var(--sunken); border-radius: 8px; padding: 10px 12px; }
+.confirm p { margin: 0; font-size: 0.85rem; }
+.confirm input { width: 100%; }
+
+/* しまったもの */
+details.archive { border-top: 1px solid var(--line); padding-top: 10px; }
+details.archive summary { cursor: pointer; font-family: var(--font-display); font-weight: 600; letter-spacing: 0.08em; }
+.arow { display: grid; grid-template-columns: 5.2em 1fr; gap: 2px 12px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 0.88rem; }
+.arow .d { color: var(--muted); grid-row: span 2; }
+.arow .t { min-width: 0; overflow-wrap: anywhere; }
+.arow .o { font-size: 0.78rem; color: var(--muted); min-width: 0; overflow-wrap: anywhere; }
+.arow .o .pend { color: var(--wait); font-weight: 700; }
+
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); background: var(--ink); color: var(--bg); padding: 8px 16px; border-radius: 8px; font-size: 0.85rem; max-width: calc(100% - 32px); z-index: 20; }
+@media (prefers-reduced-motion: no-preference) { .item { transition: border-color 0.2s ease; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>違和感帳</h1>
+    <p class="lead">pd/ を読んでいて引っかかったところを、一行ずつ置いておく帳面です。Claude が読んで返事を書き、進み具合をここで動かします。済んだものは「しまったもの」へ移ります。</p>
+    <span class="conn" id="conn">つないでいます…</span>
+  </header>
+
+  <div class="tally" id="tally" aria-label="進み具合で絞る"></div>
+
+  <form class="capture" id="capture" autocomplete="off">
+    <textarea id="cap-text" placeholder="気づいたこと（一行目が題になります）" aria-label="気づいたこと"></textarea>
+    <div class="row">
+      <select id="cap-place" aria-label="場所"></select>
+      <input type="text" id="cap-where" placeholder="箇所（章の題・引用など。空でもよい）" aria-label="箇所">
+    </div>
+    <div class="row">
+      <span class="kinds" role="radiogroup" aria-label="種類">
+        <label><input type="radio" name="kind" id="kind-0" value="違和感" checked><span>違和感</span></label>
+        <label><input type="radio" name="kind" id="kind-1" value="指示"><span>指示</span></label>
+        <label><input type="radio" name="kind" id="kind-2" value="問い"><span>問い</span></label>
+      </span>
+      <span class="spacer"></span>
+      <button type="submit" class="primary" id="cap-send">置く</button>
+    </div>
+  </form>
+
+  <section class="group" aria-labelledby="toc-h">
+    <div class="viewbar">
+      <h2 id="toc-h">目次</h2>
+      <span class="seg" id="viewseg">
+        <button type="button" data-view="place" aria-pressed="true">場所ごと</button>
+        <button type="button" data-view="recent" aria-pressed="false">新しい順</button>
+      </span>
+    </div>
+    <div id="board" class="group"><div class="empty">読み込んでいます…</div></div>
+  </section>
+
+  <details class="archive" id="archive">
+    <summary>しまったもの <span class="num" id="arch-n"></span></summary>
+    <div id="arch-list"><div class="empty">開くと読み込みます。</div></div>
+  </details>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+(() => {
+  const SITE = "https://uminomae.github.io/project-design-theory/";
+  const LOCAL = "http://localhost:3001/";
+  const REPO = "https://github.com/uminomae/project-design-theory/";
+  const PLACES = [
+    { key: "love-driven-dev", label: "Love駆動開発と呼びたいもの", path: "reader/love-driven-dev.html" },
+    { key: "love-history", label: "Love とは、どう言われてきたか", path: "reader/love-history.html" },
+    { key: "management-drivers", label: "経営学の考え方は、どこまで効くか", path: "reader/management-drivers.html" },
+    { key: "mintzberg-schools", label: "ミンツバーグの学派を、駆動源と創造の流れで見る", path: "reader/mintzberg-schools.html" },
+    { key: "gravity-love", label: "愛は、重力に似ていないか", path: "reader/gravity-love.html" },
+    { key: "gravity-well", label: "重力の井戸とは", path: "reader/gravity-well.html" },
+    { key: "energy-flow", label: "感情も、関係も、時代も「エネルギーの流れ」なのか", path: "reader/energy-flow.html" },
+    { key: "energy-flow-rhythm", label: "感情も、関係も、時代も「流れ」なのだろうか（比較ドラフト）", path: "reader/energy-flow-rhythm.html" },
+    { key: "three-and-seven", label: "なぜ 3 と 7 だけが特別なのか", path: "reader/three-and-seven.html" },
+    { key: "rotation-multiplication", label: "回転の掛け算", path: "reader/rotation-multiplication.html" },
+    { key: "developmental-stages", label: "精神の発達段階とは", path: "reader/developmental-stages.html" },
+    { key: "stages-screener", label: "ものの見方の広さスクリーナー", path: "reader/stages-screener.html" },
+    { key: "intrinsic-motivation", label: "内発的動機とは", path: "reader/intrinsic-motivation.html" },
+    { key: "psychological-safety", label: "心理的安全性とは", path: "reader/psychological-safety.html" },
+    { key: "influences-psychology", label: "影響を受けた心理学", path: "reader/influences-psychology.html" },
+    { key: "home", label: "HOME", path: "" },
+    { key: "wiki", label: "wiki", path: "wiki/" },
+    { key: "site", label: "pd/ 全体", path: null },
+    { key: "other", label: "その他", path: null },
+  ];
+  const PLACE = Object.fromEntries(PLACES.map(p => [p.key, p]));
+  const STATUS = [
+    { key: "new", label: "届いた" },
+    { key: "look", label: "見ている" },
+    { key: "decide", label: "判断を待つ" },
+    { key: "work", label: "直している" },
+    { key: "check", label: "確かめを待つ" },
+    { key: "done", label: "済んだ" },
+  ];
+  const SLABEL = Object.fromEntries(STATUS.map(s => [s.key, s.label]));
+  const SORDER = Object.fromEntries(STATUS.map((s, i) => [s.key, i]));
+  const WAITING = new Set(["decide", "check"]);
+
+  const $ = id => document.getElementById(id);
+  const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+  const iso = () => new Date().toISOString();
+  const fmt = s => { if (!s) return ""; const d = new Date(s); if (isNaN(d)) return ""; const p = n => String(n).padStart(2, "0"); return `${d.getMonth() + 1}/${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`; };
+  const fmtDay = s => { if (!s) return ""; const d = new Date(s); if (isNaN(d)) return ""; return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
+  const firstLine = t => { const l = (t.split(/\r?\n/).find(x => x.trim()) || "").trim(); return l.length > 80 ? l.slice(0, 80) + "…" : l; };
+  const safeUrl = u => { try { const x = new URL(u); return (x.protocol === "https:" || x.protocol === "http:") ? x.href : null; } catch { return null; } };
+
+  const store = {
+    get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
+  };
+
+  let db = null;
+  let items = new Map();
+  let loaded = false;
+  let view = store.get("iwakan.view", "place");
+  let filter = null;
+  const open = new Set();
+  const drafts = new Map();
+  const confirming = new Map(); // id -> "archive" | "withdraw"
+  let seen = store.get("iwakan.seen", {});
+
+  function toast(msg) {
+    const t = $("toast"); t.textContent = msg; t.hidden = false;
+    clearTimeout(toast.t); toast.t = setTimeout(() => { t.hidden = true; }, 2600);
+  }
+  function setConn(msg, bad) { const c = $("conn"); c.textContent = msg; c.classList.toggle("bad", !!bad); }
+
+  // 自動でリンクにする
+  function linkify(parent, text) {
+    const re = /(https?:\/\/[^\s<>"）」]+)/g; let last = 0, m;
+    while ((m = re.exec(text))) {
+      if (m.index > last) parent.append(text.slice(last, m.index));
+      const u = safeUrl(m[1]);
+      if (u) { const a = el("a", null, m[1]); a.href = u; a.target = "_blank"; a.rel = "noopener"; parent.append(a); }
+      else parent.append(m[1]);
+      last = m.index + m[1].length;
+    }
+    if (last < text.length) parent.append(text.slice(last));
+  }
+
+  // 場所の選択肢
+  (function fillPlaces() {
+    const sel = $("cap-place");
+    for (const p of PLACES) { const o = el("option", null, p.label); o.value = p.key; sel.append(o); }
+    sel.value = store.get("iwakan.place", "love-driven-dev");
+    if (!PLACE[sel.value]) sel.value = "love-driven-dev";
+  })();
+
+  function needsClaude(d) { return d.lastFrom === "pjdhiro" && (!d.claudeReadAt || (d.lastAt && d.lastAt > d.claudeReadAt)); }
+  function hasReply(id, d) { return d.lastFrom === "claude" && d.lastAt && (!seen[id] || d.lastAt > seen[id]); }
+  function attention(id, d) { return WAITING.has(d.status) || hasReply(id, d); }
+
+  function renderTally() {
+    const t = $("tally"); t.textContent = "";
+    const all = [...items.entries()];
+    const counts = {}; for (const s of STATUS) counts[s.key] = 0;
+    let claude = 0, reply = 0;
+    for (const [id, d] of all) { counts[d.status] = (counts[d.status] || 0) + 1; if (needsClaude(d)) claude++; if (hasReply(id, d)) reply++; }
+    const mk = (key, label, n, cls) => {
+      const b = el("button", cls || null); b.type = "button";
+      b.append(el("span", null, label), el("b", null, String(n)));
+      b.setAttribute("aria-pressed", String(filter === key));
+      b.addEventListener("click", () => { filter = filter === key ? null : key; render(); });
+      t.append(b);
+    };
+    mk(null, "すべて", all.length);
+    for (const s of STATUS) if (counts[s.key]) mk(s.key, s.label, counts[s.key], WAITING.has(s.key) ? "wait" : "");
+    if (reply) mk("@reply", "返事あり", reply, "wait");
+    if (claude) mk("@claude", "Claude がまだ読んでいない", claude, "claude");
+    if (filter === null) t.firstChild.setAttribute("aria-pressed", "true");
+  }
+
+  function passes(id, d) {
+    if (!filter) return true;
+    if (filter === "@claude") return needsClaude(d);
+    if (filter === "@reply") return hasReply(id, d);
+    return d.status === filter;
+  }
+  function sortItems(arr) {
+    return arr.sort((a, b) => {
+      const aa = attention(a[0], a[1]) ? 0 : 1, bb = attention(b[0], b[1]) ? 0 : 1;
+      if (aa !== bb) return aa - bb;
+      return (b[1].updatedAt || "").localeCompare(a[1].updatedAt || "");
+    });
+  }
+
+  function placeLinks(container, key) {
+    const p = PLACE[key];
+    if (!p || p.path == null) return;
+    const a1 = el("a", null, "サイト"); a1.href = SITE + p.path; a1.target = "_blank"; a1.rel = "noopener";
+    const a2 = el("a", null, "3001"); a2.href = LOCAL + p.path; a2.target = "_blank"; a2.rel = "noopener";
+    container.append(a1, a2);
+  }
+
+  function renderItem(id, d) {
+    const card = el("article", "item" + (attention(id, d) ? " attn" : ""));
+    card.id = "item-" + id;
+    const head = el("button", "item-head"); head.type = "button";
+    head.setAttribute("aria-expanded", String(open.has(id)));
+    head.append(el("span", "pill " + (d.status || "new"), SLABEL[d.status] || "届いた"));
+    head.append(el("span", "title", d.title || firstLine(d.text || "") || "（題なし）"));
+    const meta = el("span", "meta");
+    if (d.kind && d.kind !== "違和感") meta.append(el("span", "kind-" + d.kind, d.kind));
+    if (view !== "place") meta.append(el("span", null, (PLACE[d.place] || { label: d.place || "その他" }).label));
+    meta.append(el("span", "num", fmt(d.createdAt)));
+    const n = (d.thread || []).filter(x => x.kind !== "status").length;
+    if (n) meta.append(el("span", null, `やりとり ${n}`));
+    if ((d.links || []).length) meta.append(el("span", null, `詳細ページ ${(d.links || []).length}`));
+    if (d.issue) meta.append(el("span", "num", "#" + d.issue));
+    if (hasReply(id, d)) meta.append(el("span", "tag-reply", "返事あり"));
+    if (needsClaude(d)) meta.append(el("span", "tag-claude", "Claude まだ"));
+    head.append(meta);
+    head.addEventListener("click", () => {
+      if (open.has(id)) open.delete(id); else { open.add(id); markSeen(id, d); }
+      render();
+    });
+    card.append(head);
+    if (open.has(id)) card.append(renderBody(id, d));
+    return card;
+  }
+
+  function markSeen(id, d) {
+    if (d.lastAt && (!seen[id] || seen[id] < d.lastAt)) { seen[id] = d.lastAt; store.set("iwakan.seen", seen); }
+  }
+
+  function renderBody(id, d) {
+    const body = el("div", "item-body");
+    body.append(el("p", "fulltext", d.text || ""));
+    if (d.where) body.append(el("p", "where", d.where));
+
+    // 進み具合
+    const track = el("div", "track"); track.setAttribute("aria-label", "進み具合");
+    const cur = SORDER[d.status] ?? 0;
+    STATUS.forEach((s, i) => {
+      let cls = "step";
+      if (i < cur) cls += " past";
+      if (i === cur) cls += " now" + (WAITING.has(s.key) ? " wait" : "") + (s.key === "done" ? " done" : "");
+      const st = el("span", cls); st.append(el("i"), el("span", null, s.label)); track.append(st);
+    });
+    body.append(track);
+
+    // 場所・詳細ページ・Issue・セッション・commit
+    const facts = el("div", "facts");
+    const p = PLACE[d.place] || { label: d.place || "その他", path: null };
+    if (p.path != null) {
+      const a = el("a", "chip"); a.href = SITE + p.path; a.target = "_blank"; a.rel = "noopener";
+      a.append(el("small", null, "場所"), document.createTextNode(p.label)); facts.append(a);
+    } else { const c = el("span", "chip"); c.append(el("small", null, "場所"), document.createTextNode(p.label)); facts.append(c); }
+    for (const l of d.links || []) {
+      const u = safeUrl(l.url); if (!u) continue;
+      const a = el("a", "chip"); a.href = u; a.target = "_blank"; a.rel = "noopener";
+      a.append(el("small", null, "詳細"), document.createTextNode(l.label || "ページ")); facts.append(a);
+    }
+    if (d.issue) { const a = el("a", "chip"); a.href = REPO + "issues/" + encodeURIComponent(d.issue); a.target = "_blank"; a.rel = "noopener"; a.append(el("small", null, "Issue"), document.createTextNode("#" + d.issue)); facts.append(a); }
+    if (d.session) { const c = el("span", "chip"); c.append(el("small", null, "セッション"), document.createTextNode(d.session)); facts.append(c); }
+    for (const sha of d.commits || []) {
+      if (!/^[0-9a-f]{6,40}$/i.test(sha)) continue;
+      const a = el("a", "chip num"); a.href = REPO + "commit/" + sha; a.target = "_blank"; a.rel = "noopener"; a.append(el("small", null, "commit"), document.createTextNode(sha.slice(0, 7))); facts.append(a);
+    }
+    body.append(facts);
+
+    // やりとり
+    const thread = el("div", "thread");
+    for (const note of d.thread || []) {
+      if (note.kind === "status") { thread.append(el("div", "note status", `${fmt(note.at)}　${note.from === "claude" ? "Claude" : "pjdhiro"}：${note.text}`)); continue; }
+      const nd = el("div", "note" + (note.from === "claude" ? " claude" : ""));
+      const nh = el("div", "note-head");
+      nh.append(el("b", null, note.from === "claude" ? "Claude" : "pjdhiro"));
+      if (note.kind === "instruction") nh.append(el("span", "ins", "指示"));
+      nh.append(el("span", "num", fmt(note.at)));
+      const tx = el("p"); linkify(tx, note.text || "");
+      nd.append(nh, tx); thread.append(nd);
+    }
+    if ((d.thread || []).length) body.append(thread);
+
+    // 返事を書く
+    const reply = el("div", "reply");
+    const ta = el("textarea"); ta.id = "reply-" + id; ta.placeholder = "コメントか指示を書く"; ta.setAttribute("aria-label", "コメントか指示");
+    ta.value = drafts.get(id) || "";
+    ta.addEventListener("input", () => drafts.set(id, ta.value));
+    reply.append(ta);
+    const acts = el("div", "actions");
+    const bC = el("button", "quiet", "コメントを送る"); bC.type = "button";
+    const bI = el("button", "primary", "指示として送る"); bI.type = "button";
+    bC.addEventListener("click", () => sendNote(id, "comment", ta.value));
+    bI.addEventListener("click", () => sendNote(id, "instruction", ta.value));
+    acts.append(bC, bI, el("span", "spacer"));
+    const lab = el("label", null, "状態"); lab.htmlFor = "status-" + id;
+    const sel = el("select"); sel.id = "status-" + id;
+    for (const s of STATUS) { const o = el("option", null, s.label); o.value = s.key; sel.append(o); }
+    sel.value = d.status || "new";
+    sel.addEventListener("change", () => setStatus(id, sel.value));
+    acts.append(lab, sel);
+    reply.append(acts);
+    body.append(reply);
+
+    // しまう・取り下げる
+    const mode = confirming.get(id);
+    if (mode) {
+      const cf = el("div", "confirm");
+      cf.append(el("p", null, mode === "withdraw"
+        ? "取り下げて「しまったもの」へ移します。理由があれば一行で。"
+        : "「しまったもの」へ移します。どう終わったかを一行で（空でもよい）。"
+          + ((d.links || []).length ? `詳細ページ ${(d.links || []).length} 件は、次に Claude が消します。` : "")));
+      const inp = el("input"); inp.type = "text"; inp.id = "outcome-" + id; inp.placeholder = mode === "withdraw" ? "取り下げの理由" : "どう終わったか";
+      const row = el("div", "actions");
+      const ok = el("button", "primary", mode === "withdraw" ? "取り下げる" : "しまう"); ok.type = "button";
+      const no = el("button", "quiet", "やめる"); no.type = "button";
+      ok.addEventListener("click", () => archiveItem(id, mode, inp.value.trim()));
+      no.addEventListener("click", () => { confirming.delete(id); render(); });
+      row.append(ok, no); cf.append(inp, row); body.append(cf);
+    } else {
+      const row = el("div", "actions");
+      if (d.status === "done") {
+        const b = el("button", "quiet", "しまう"); b.type = "button";
+        b.addEventListener("click", () => { confirming.set(id, "archive"); render(); }); row.append(b);
+      }
+      const w = el("button", "quiet", "取り下げる"); w.type = "button";
+      w.addEventListener("click", () => { confirming.set(id, "withdraw"); render(); }); row.append(w);
+      body.append(row);
+    }
+    return body;
+  }
+
+  function render() {
+    const active = document.activeElement;
+    const aid = active && active.id; const sel = active && "selectionStart" in active ? [active.selectionStart, active.selectionEnd] : null;
+    renderTally();
+    for (const b of $("viewseg").children) b.setAttribute("aria-pressed", String(b.dataset.view === view));
+    const board = $("board"); board.textContent = "";
+    if (!loaded) { board.append(el("div", "empty", db ? "読み込んでいます…" : "この表示では帳面を読めません。claude.ai で開いてください。")); return; }
+    const all = sortItems([...items.entries()].filter(([id, d]) => passes(id, d)));
+    if (!items.size) { board.append(el("div", "empty", "まだ何も置かれていません。上の欄に、気づいたことを一行で書いて「置く」を押してください。")); return; }
+    if (!all.length) { board.append(el("div", "empty", "この絞り込みに当たるものはありません。")); return; }
+    if (view === "place") {
+      const groups = new Map();
+      for (const e of all) { const k = PLACE[e[1].place] ? e[1].place : "other"; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(e); }
+      for (const p of PLACES) {
+        const g = groups.get(p.key); if (!g) continue;
+        const sec = el("div", "group");
+        const gh = el("div", "group-head"); gh.append(el("h3", null, p.label), el("span", "n", `${g.length} 件`)); placeLinks(gh, p.key);
+        const list = el("div", "list"); for (const [id, d] of g) list.append(renderItem(id, d));
+        sec.append(gh, list); board.append(sec);
+      }
+    } else {
+      const list = el("div", "list"); for (const [id, d] of all) list.append(renderItem(id, d)); board.append(list);
+    }
+    if (aid) { const again = document.getElementById(aid); if (again) { again.focus(); if (sel && "setSelectionRange" in again) try { again.setSelectionRange(sel[0], sel[1]); } catch {} } }
+  }
+
+  async function withDb(fn, okMsg) {
+    if (!db) { toast("この表示では書けません。claude.ai で開いてください。"); return false; }
+    try { await fn(); if (okMsg) toast(okMsg); return true; }
+    catch (e) {
+      const c = e && e.code;
+      toast(c === "invalid_argument" ? "書けませんでした。この帳面に書く権限が無いようです。" : c === "quota_exceeded" ? "帳面がいっぱいです。しまったものを減らしてください。" : "書けませんでした。少し置いてもう一度押してください。");
+      return false;
+    }
+  }
+
+  $("capture").addEventListener("submit", async ev => {
+    ev.preventDefault();
+    const text = $("cap-text").value.trim(); if (!text) { $("cap-text").focus(); return; }
+    const place = $("cap-place").value; const where = $("cap-where").value.trim();
+    const kind = (document.querySelector('input[name="kind"]:checked') || {}).value || "違和感";
+    const now = iso();
+    const id = "i" + now.replace(/\D/g, "").slice(0, 14) + Math.random().toString(36).slice(2, 5);
+    $("cap-send").disabled = true;
+    const ok = await withDb(() => db.collection("items").doc(id).set({
+      text, title: firstLine(text), place, where, kind, status: "new",
+      thread: [], links: [], commits: [], issue: null, session: "",
+      createdAt: now, updatedAt: now, lastFrom: "pjdhiro", lastAt: now, claudeReadAt: null,
+    }), "置きました");
+    $("cap-send").disabled = false;
+    if (ok) { $("cap-text").value = ""; $("cap-where").value = ""; store.set("iwakan.place", place); store.set("iwakan.draft", ""); }
+  });
+  $("cap-text").value = store.get("iwakan.draft", "");
+  $("cap-text").addEventListener("input", () => store.set("iwakan.draft", $("cap-text").value));
+  $("cap-place").addEventListener("change", () => store.set("iwakan.place", $("cap-place").value));
+
+  for (const b of $("viewseg").children) b.addEventListener("click", () => { view = b.dataset.view; store.set("iwakan.view", view); render(); });
+
+  async function sendNote(id, kind, text) {
+    text = (text || "").trim(); if (!text) { toast("書く欄が空です"); return; }
+    const ref = db && db.doc("items/" + id);
+    const ok = await withDb(async () => {
+      const snap = await ref.get(); if (!snap.exists) throw { code: "gone" };
+      const d = snap.data(); const now = iso();
+      await ref.update({ thread: [...(d.thread || []), { from: "pjdhiro", kind, text, at: now }], lastFrom: "pjdhiro", lastAt: now, updatedAt: now });
+    }, kind === "instruction" ? "指示を送りました" : "コメントを送りました");
+    if (ok) { drafts.delete(id); render(); }
+  }
+
+  async function setStatus(id, status) {
+    const ref = db && db.doc("items/" + id);
+    await withDb(async () => {
+      const snap = await ref.get(); if (!snap.exists) throw { code: "gone" };
+      const d = snap.data(); if (d.status === status) return; const now = iso();
+      await ref.update({ status, thread: [...(d.thread || []), { from: "pjdhiro", kind: "status", text: `${SLABEL[d.status] || d.status} → ${SLABEL[status]}`, at: now }], lastFrom: "pjdhiro", lastAt: now, updatedAt: now });
+    }, `「${SLABEL[status]}」にしました`);
+  }
+
+  async function archiveItem(id, mode, outcome) {
+    const d = items.get(id); if (!d) return;
+    const now = iso();
+    const links = d.links || [];
+    const ok = await withDb(async () => {
+      await db.doc("archive/" + id).set({
+        text: d.text || "", title: d.title || firstLine(d.text || ""), place: d.place || "other", where: d.where || "", kind: d.kind || "違和感",
+        thread: d.thread || [], links, commits: d.commits || [], issue: d.issue || null, session: d.session || "",
+        createdAt: d.createdAt || now, closedAt: now,
+        outcome: mode === "withdraw" ? ("取り下げ" + (outcome ? "：" + outcome : "")) : outcome,
+        linksCleared: links.length === 0,
+      });
+      await db.doc("items/" + id).delete();
+    }, mode === "withdraw" ? "取り下げました" : "しまいました");
+    if (ok) { confirming.delete(id); open.delete(id); }
+  }
+
+  // しまったもの（開いたときだけ読む）
+  let archSub = null;
+  $("archive").addEventListener("toggle", () => {
+    if (!$("archive").open || archSub || !db) return;
+    archSub = db.collection("archive").orderBy("closedAt", "desc").limit(300).onSnapshot(snap => {
+      $("arch-n").textContent = String(snap.size);
+      const list = $("arch-list"); list.textContent = "";
+      if (snap.empty) { list.append(el("div", "empty", "まだ何もしまっていません。")); return; }
+      for (const doc of snap.docs) {
+        const d = doc.data();
+        const row = el("div", "arow");
+        row.append(el("span", "d num", fmtDay(d.closedAt)));
+        row.append(el("span", "t", d.title || firstLine(d.text || "")));
+        const o = el("span", "o");
+        o.append(document.createTextNode((PLACE[d.place] || { label: d.place || "その他" }).label));
+        if (d.outcome) o.append(document.createTextNode("　" + d.outcome));
+        if (!d.linksCleared && (d.links || []).length) o.append(document.createTextNode("　"), el("span", "pend", `詳細ページ ${(d.links || []).length} 件を消す待ち`));
+        row.append(o); list.append(row);
+      }
+    }, () => { $("arch-list").textContent = ""; $("arch-list").append(el("div", "empty", "しまったものを読めませんでした。")); });
+  });
+
+  render();
+
+  (async () => {
+    const timer = setTimeout(() => setConn("帳面にまだつながりません。少し待つか、開き直してください。", true), 10000);
+    try { db = await window.claude?.use?.("db"); } catch { db = null; }
+    if (!db) { clearTimeout(timer); setConn("この表示では帳面を読めません。claude.ai で開いてください。", true); loaded = true; render(); return; }
+    db.collection("items").onSnapshot(snap => {
+      const m = new Map(); for (const doc of snap.docs) m.set(doc.id, doc.data());
+      items = m; loaded = true;
+      for (const id of [...open]) if (!items.has(id)) open.delete(id);
+      if (!snap.metadata.fromCache) { clearTimeout(timer); setConn(`つながっています　開いているもの ${m.size} 件`); }
+      render();
+    }, () => { clearTimeout(timer); setConn("帳面を読めなくなりました。開き直してください。", true); });
+  })();
+})();
+</script>
