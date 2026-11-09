@@ -1,6 +1,6 @@
 ---
 title: "ネットワーク薬理学による漢方処方「君臣佐使」の検証"
-description: "Wu ら（2014）によるQiShenYiQi（気参益気）処方の急性心筋虚血治療効果をネットワーク薬理学で解析した研究。「君・臣・佐・使」という漢方の配合原理を分子ネットワークレベルで実証した。"
+description: "Wu ら（2014）によるQiShenYiQi（芪参益気）処方の急性心筋虚血治療効果をネットワーク薬理学で解析した研究。「君・臣・佐・使」という漢方の配合原理を分子ネットワークレベルで実証した。"
 aliases: ["Chinese herbal medicine network pharmacology", "Jun-Chen-Zuo-Shi"]
 tags: [source, "D11", "原典解説"]
 source:
