@@ -244,7 +244,6 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D13_deleuze_1966_1966-2001|ジルベール・シモンドン論（Deleuze, Review of Simondon 1966）]]
 - [[sources/D13_dewey_1910_how-we-think|思考の方法（1910年版）]]
 - [[sources/D13_dewey_1929_quest-for-certainty|確実性の探求]]
-- [[sources/D13_dewey_1933_how-we-think-restatement|思考の方法（1933年改訂版）]]
 - [[sources/D13_dewey_1934_art-as-experience|経験としての芸術（探究・思考論の観点）]]
 - [[sources/D13_dewey_1938_1938|論理学：探究の理論（Logic: The Theory of Inquiry, Dewey 1938）]]
 - [[sources/D13_james_1890_principles-of-psychology-vol|心理学原理（The Principles of Psychology, James 1890, Vol.1）— 意識の流れ]]
@@ -382,7 +381,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 #### D24 宗教学 (10件)
 - [[sources/D24_berkovichohana_2014_the-consciousness-state-space|意識状態空間（CSS）— 意識と自己の統合モデル]]
 - [[sources/D24_bucke_1901_bucke-1901-cosmic-consciousness|宇宙意識（Cosmic Consciousness, Bucke 1901）]]
-- [[sources/D24_dimarzio_2019_affiliation-conversion-departure|新宗教運動への加入・改宗・脱プログラミング・離脱の経験]]
+- [[sources/D24_dimarzio_2020_people-trapped-inside-shincheonji|「新天地に囚われた人々」：脱プログラミングの暗い面の放映]]
 - [[sources/D24_james_1902_varieties-of-religious-experience|宗教的経験の諸相]]
 - [[sources/D24_otto_1917_idea-of-the-holy|聖なるもの — ヌミノーゼと mysterium tremendum]]
 - [[sources/D24_pew_2025_religious-switching-reports|世界の宗教スイッチング（Pew Research Center 2025）]]

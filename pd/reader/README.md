@@ -7,7 +7,7 @@
 | `three-and-seven.html` | `knowledge/research/two-axis-closure/READER-division-algebra-consciousness-organization.md` | glow（透過記事＋glow-card） |
 | `stages-screener.html` | `knowledge/research/stages-screener/READER-stages-screener.md`（本文）＋ `screener-data.json`（問いと選択肢・version） | flow（`<!--SCREENER-->` に 16問×5択を差し込み、「答える」章だけ `<!--OPEN-->` で開く。上部にトップと同じ Menu（`src/reader-menu.js`）、状態は最終更新日とバージョン。DESIGN-RULES §13・§14） |
 | `gravity-love.html` | **初版・手書き（生成元なし）**。図は `src/reader-gravity-love.js`。後で正本 MD＋生成へ移す（#15） | flow（二枚並置の 3D 井戸） |
-| `gravity-well.html` | `knowledge/research/gravity-well/READER-gravity-well.md`（重力の井戸とは・#64。Love駆動開発がたとえに使う絵の説明。何を描いた絵か・中心の三つの性質・なぜたとえに使うか・事実とたとえの境目・出てくる場所へ戻るリンク） | flow（二枚並置の 3D 井戸は `src/reader-gravity-love.js`。**工事中＝noindex**。Love駆動開発の確認と一緒に外す） |
+| `gravity-well.html` | `knowledge/research/gravity-well/READER-gravity-well.md`（重力の井戸とは・#64。Love駆動開発がたとえに使う絵の説明。何を描いた絵か・中心の三つの性質・なぜたとえに使うか・事実とたとえの境目・出てくる場所へ戻るリンク。井戸の絵の説明はここにだけ置き、`gravity-love.html` からは `#gw-what`・`#gw-caution`・`#gw-center`・`#gw-faq`・`#gw-facts` へリンクする・#92） | flow（二枚並置の 3D 井戸は `src/reader-gravity-love.js`。**工事中＝noindex**。Love駆動開発の確認と一緒に外す） |
 | `energy-flow.html` | `knowledge/research/energy-flow-psyche/READER-energy-flow-psyche.md` | flow（一枚ガラスカラム＋章アコーディオン＋garage 型目次。DESIGN-RULES §13） |
 | `love-driven-dev.html` | `knowledge/research/love-driven-dev/READER-love-driven-dev.md`（計画と章の状態は同ディレクトリ `README.md`・#20） | flow（トップと同じ Menu・DESIGN-RULES §14。**工事中＝noindex**。本文が揃ったら noindex を外し sitemap・llms.txt へ） |
 | `influences-psychology.html` | `knowledge/research/influences-psychology/READER-influences-psychology.md`（学者名・主要な論の説明・pjdhiro の印象の順。印象は本人の言葉が届いたものから） | flow（トップと同じ Menu。**工事中＝noindex**。印象が揃ったら noindex を外し sitemap・llms.txt へ。Love駆動開発以外からもリンクする予定） |
@@ -15,7 +15,7 @@
 | `intrinsic-motivation.html` | `knowledge/research/intrinsic-motivation/READER-intrinsic-motivation.md`（内発的動機とは・#29。調べは同ディレクトリ `SURVEY-00-first-pass.md`） | flow（トップと同じ Menu。**工事中＝noindex**。pjdhiro の確認後に noindex を外し sitemap・llms.txt へ。Love駆動開発の心の言葉の章の内発的動機の表からリンク） |
 | `psychological-safety.html` | `knowledge/research/psychological-safety/READER-psychological-safety.md`（心理的安全性とは・#26。調べは同ディレクトリ SURVEY-00〜04） | flow（トップと同じ Menu。**工事中＝noindex**・本文は骨格承認後。冒頭バナーに工事中。Love駆動開発の心の言葉の章の心理的安全性の表からリンク） |
 | `developmental-stages.html` | `knowledge/research/developmental-stages/READER-developmental-stages.md`（精神の発達段階とは・#27。調べは同ディレクトリ README） | flow（トップと同じ Menu。**工事中＝noindex**・本文は骨格承認後。冒頭バナーに工事中。Love駆動開発の心の言葉の章の内発的動機の「詳しくは」の行からリンク） |
-| `love-history.html` | `knowledge/research/love-history/READER-love-history.md`（Love とは、どう言われてきたか・#79。Love と呼ばれてきたものを、仏教の流れと西洋哲学の流れに沿って歴史の順に並べ、現代の恋愛の定義と心理学の分類・神経科学を足す。誰が何を Love と呼んだかを、出典と照合の状態つきで並べる。段への当てはめは Love駆動開発の結論の側（#80）で行う） | flow（トップと同じ Menu。**工事中＝noindex**。Love駆動開発の結論の章「Love と呼びたいものとは」からリンクする予定） |
+| `love-history.html` | `knowledge/research/love-history/READER-love-history.md`（Love とは、どう言われてきたか・#79。Love と呼ばれてきたものを、仏教の流れと西洋哲学の流れに沿って歴史の順に並べ、現代の恋愛の定義と心理学の分類・神経科学を足す。誰が何を Love と呼んだかを、原典の本文を読めた出典だけで並べる。ほかのページとの関係を書かない独立した読み物で、どこから参照されてもよい（pjdhiro 2026-11-09）） | flow（トップと同じ Menu。**工事中＝noindex**） |
 | `management-drivers.html` | `knowledge/research/management-drivers/READER-management-drivers.md`（経営学の考え方は、どこまで効くか。七つの駆動源の考え方を、よく効く場面と、正解として広げたときの取り違えで見る。Love駆動開発の「経営学が見てきた七つの駆動源」の章の詳しくを切り出したもの） | flow（トップと同じ Menu。**工事中＝noindex**。pjdhiro の確認後に noindex を外し sitemap・llms.txt へ。Love駆動開発の七つの駆動源の章からリンク） |
 
 ## このページが何で、どう育てるか
