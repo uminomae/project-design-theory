@@ -17,6 +17,7 @@ description: 論文・本の原典を探す。DOI・題・書誌の一行から�
 - サンドボックスでは、Bash の allowed_domains に `api.crossref.org`・`api.unpaywall.org`・`api.openalex.org`・`api.semanticscholar.org`・`www.ebi.ac.uk`・`api.core.ac.uk`・`archive.org`・`web.archive.org` を並べる。`fetch` は、それに取りに行く先のホストを足す。
 - 環境変数は、環境に既に入っているときだけ使う。repo にも頼む文にも書かない。pjdhiro のメールアドレスを勝手に入れない。無ければその経路は「飛ばした」と表に出るので、報告にそう書く。
   - `FIND_SOURCE_EMAIL`（Unpaywall）・`CORE_API_KEY`（CORE）・`OPENALEX_API_KEY`・`S2_API_KEY`。
+  - Unpaywall 用の連絡先のメールは、今は使わない（pjdhiro 2026-11-09・#73 で「Unpaywall 用の連絡先メールを、手元の環境変数に入れて使いますか？」に「今は使わない」）。入っていないことを毎回聞き直さず、飛ばしたと報告に書く。
   - キーの無い OpenAlex は、題や主題での検索が一日 100 回ほどまで（DOI で引くぶんは数えられない）。だから DOI を先に確かめ、検索は要るときだけ使う。キーの無い Semantic Scholar は 429 が多く、道具は一度待って駄目なら飛ばす。
 
 ## 一つの文献を探す
