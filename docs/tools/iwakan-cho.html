@@ -59,6 +59,14 @@ h1 { font-family: var(--font-display); font-weight: 600; font-size: 1.7rem; lett
 .conn { font-size: 0.78rem; color: var(--muted); }
 .conn.bad { color: var(--danger); }
 
+/* 司令塔を呼ぶ */
+.call { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 8px; padding: 10px 12px; border-radius: 10px; background: var(--claude-soft); }
+.call-btn { background: var(--claude); color: var(--surface); border: 0; border-radius: 8px; padding: 7px 16px; font-weight: 700; }
+.call-btn:disabled { opacity: 0.45; cursor: default; }
+.call-note { font-size: 0.8rem; color: var(--muted); min-width: 0; flex: 1 1 200px; }
+.call-item { background: none; border: 1px solid var(--claude); color: var(--claude); border-radius: 8px; padding: 6px 12px; font-size: 0.85rem; font-weight: 700; }
+.call-item:disabled { opacity: 0.45; cursor: default; }
+
 /* 進み具合のまとめ */
 .tally { display: flex; flex-wrap: wrap; gap: 6px; }
 .tally button {
@@ -178,6 +186,10 @@ details.archive summary { cursor: pointer; font-family: var(--font-display); fon
     <h1>違和感帳</h1>
     <p class="lead">pd/ を読んでいて引っかかったところを、一行ずつ置いておく帳面です。Claude が読んで返事を書き、進み具合をここで動かします。済んだものは「しまったもの」へ移ります。</p>
     <span class="conn" id="conn">つないでいます…</span>
+    <div class="call" id="call" hidden>
+      <button type="button" class="call-btn" id="call-btn">司令塔を呼ぶ</button>
+      <span class="call-note" id="call-note"></span>
+    </div>
   </header>
 
   <div class="tally" id="tally" aria-label="進み具合で絞る"></div>
@@ -278,6 +290,8 @@ details.archive summary { cursor: pointer; font-family: var(--font-display); fon
   const drafts = new Map();
   const confirming = new Map(); // id -> "archive" | "withdraw"
   let seen = store.get("iwakan.seen", {});
+  let comments = null;
+  let canSend = "off";
 
   function toast(msg) {
     const t = $("toast"); t.textContent = msg; t.hidden = false;
@@ -444,7 +458,15 @@ details.archive summary { cursor: pointer; font-family: var(--font-display); fon
     const bI = el("button", "primary", "指示として送る"); bI.type = "button";
     bC.addEventListener("click", () => sendNote(id, "comment", ta.value));
     bI.addEventListener("click", () => sendNote(id, "instruction", ta.value));
-    acts.append(bC, bI, el("span", "spacer"));
+    acts.append(bC, bI);
+    if (comments && canSend !== "off" && canSend !== "writers_only") {
+      const bS = el("button", "call-item", "指示して司令塔を呼ぶ"); bS.type = "button";
+      bS.disabled = canSend !== "available";
+      if (bS.disabled) bS.title = "司令塔のセッションが開いていません";
+      bS.addEventListener("click", () => instructAndCall(id, d, bS, ta.value));
+      acts.append(bS);
+    }
+    acts.append(el("span", "spacer"));
     const lab = el("label", null, "状態"); lab.htmlFor = "status-" + id;
     const sel = el("select"); sel.id = "status-" + id;
     for (const s of STATUS) { const o = el("option", null, s.label); o.value = s.key; sel.append(o); }
@@ -577,6 +599,62 @@ details.archive summary { cursor: pointer; font-family: var(--font-display); fon
     if (ok) { confirming.delete(id); open.delete(id); }
   }
 
+  // 司令塔を呼ぶ：コメントを「Claude に送る」で出し、帳面を見張っている司令塔のセッションを起こす
+  const CALL_NOTE = {
+    available: "押すと、帳面を見張っている司令塔のセッションに届きます。返事はこの帳面とコメントに出ます。",
+    no_session: "司令塔のセッションが開いていません。Claude Code で司令塔を始めると押せます。",
+  };
+  function renderCall() {
+    const box = $("call");
+    if (!comments || canSend === "off" || canSend === "writers_only") { box.hidden = true; return; }
+    box.hidden = false;
+    $("call-btn").disabled = canSend !== "available";
+    $("call-note").textContent = CALL_NOTE[canSend] || CALL_NOTE.no_session;
+  }
+  async function refreshCan() {
+    if (!comments) return;
+    let c = "off";
+    try { c = await comments.canSendToClaude(); } catch { c = "off"; }
+    if (c !== canSend) { canSend = c; renderCall(); render(); }
+  }
+  async function sendToCommander(anchorEl, text) {
+    if (!comments) return false;
+    let anchor;
+    try { anchor = await comments.anchorFor(anchorEl); } catch { toast("呼べませんでした。もう一度押してください。"); return false; }
+    try {
+      await comments.sendToClaude({ anchor, text: text.slice(0, 3800) });
+      toast("司令塔に届けました");
+      return true;
+    } catch (e) {
+      const c = e && e.code;
+      if (c === "consent_required") toast("このページからコメントする許可が要ります。許可してから、もう一度押してください。");
+      else if (c === "forbidden") { toast("このページからはコメントできない設定になっています。"); canSend = "off"; renderCall(); render(); }
+      else if (c === "claude_unavailable") { toast("司令塔に届きませんでした。司令塔のセッションが開いているか確かめてください。"); refreshCan(); }
+      else if (c === "rate_limited") toast("続けて呼びすぎています。少し間を置いてください。");
+      else toast("呼べませんでした。少し置いてもう一度押してください。");
+      return false;
+    }
+  }
+  $("call-btn").addEventListener("click", async () => {
+    const btn = $("call-btn"); btn.disabled = true;
+    const waiting = [...items.values()].filter(needsClaude);
+    const lines = ["違和感帳を読んでください（手順は docs/tools/iwakan-cho.md）。"];
+    lines.push(waiting.length ? `Claude がまだ読んでいないもの ${waiting.length} 件：` : "Claude がまだ読んでいないものはありません。判断を待つもの・確かめを待つものの様子を見てください。");
+    for (const d of waiting.slice(0, 20)) lines.push("・" + (d.title || firstLine(d.text || "")));
+    await sendToCommander(btn, lines.join("\n"));
+    btn.disabled = canSend !== "available";
+  });
+  async function instructAndCall(id, d, btn, text) {
+    text = (text || "").trim(); if (!text) { toast("書く欄が空です"); return; }
+    btn.disabled = true;
+    const msg = `違和感帳の一件に指示を置きました。\n一件：${d.title || firstLine(d.text || "")}（id: ${id}）\n指示：${text}`;
+    const ok = await sendToCommander(btn, msg);
+    if (ok) await sendNote(id, "instruction", text);
+    else btn.disabled = false;
+  }
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) refreshCan(); });
+  window.addEventListener("focus", () => refreshCan());
+
   // しまったもの（開いたときだけ読む）
   let archSub = null;
   $("archive").addEventListener("toggle", () => {
@@ -600,6 +678,11 @@ details.archive summary { cursor: pointer; font-family: var(--font-display); fon
   });
 
   render();
+
+  (async () => {
+    try { comments = await window.claude?.use?.("comments"); } catch { comments = null; }
+    if (comments) refreshCan();
+  })();
 
   (async () => {
     const timer = setTimeout(() => setConn("帳面にまだつながりません。少し待つか、開き直してください。", true), 10000);
