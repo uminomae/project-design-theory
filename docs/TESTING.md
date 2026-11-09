@@ -68,6 +68,8 @@ const { run } = await import('../src/page-check.js'); await run();
 - GitHub Actions：`check.yml`（上の検査）と `pages.yml`（公開）。
 - 定期実行（launchd の定期・routine・scheduled task）は置いていない。
 
+- main へ送る前の確かめ（2026-11-09）：`.githooks/pre-push` が、main への push を、送る commit を `bash scripts/publish-main.sh <送る枝>` で見たあとでなければ止める。道具は、一緒に公開される commit・変わるファイル・その日の記録の「main には送っていない」を出す。develop には、公開の判断を待っている別のセッションの変更が入っていることがあるため（`docs/rules/corrections.md`「繰り返し」の表）。
+
 ## 作りたいもの（まだ定まらない）
 
 作る場面が来たら、ここから一つ選んで作り、上の「今あるもの」に移す。

@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# main へ送る前に、一緒に公開される変更を見たかを確かめる。見ていなければ push を止める。
+# 見る道具は scripts/publish-main.sh（見た commit の印を置く）。経緯は docs/rules/corrections.md「繰り返し」の表（型 K・2026-11-09）。
+common="$(cd "$(git rev-parse --git-common-dir)" && pwd)"
+while read -r local_ref local_sha remote_ref remote_sha; do
+  [ "$remote_ref" = "refs/heads/main" ] || continue
+  seen="$(cat "$common/PUBLISH_MAIN_CHECKED" 2>/dev/null)"
+  if [ "$seen" != "$local_sha" ]; then
+    {
+      echo "pre-push: main へ送る前に、一緒に公開される変更を見る → bash scripts/publish-main.sh <送る枝>"
+      echo "  送ろうとしている commit ${local_sha:0:7} は、まだ見ていない（見た印：${seen:0:7}）。"
+      echo "  develop には、公開の判断を待っている別のセッションの変更が入っていることがある。"
+    } >&2
+    exit 1
+  fi
+done
+exit 0
