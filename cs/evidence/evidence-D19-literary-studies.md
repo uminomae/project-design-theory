@@ -16,9 +16,9 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D19-liter
 
 文学の場の論では、Bourdieu が、すでに名のある者と新しく入る者の争いを場の変化の動力と書き、その争いが序列そのものをひっくり返すのは、外の変化（教育を受けた人口の増加など）が同じ向きに動くときだけだと書いています（『The Rules of Art』pp.126–127。上げた人の分からない写しで読んだ）。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D19-literary-studies.md`、2026-03-18 に LLM が生成、以下「報告」）は 10 の論を取り上げ、日本語版は「強い対応」を 3 つ（Shklovsky・Todorov・Bourdieu）としています。英語版は 9 つを「Strong」とし、Todorov だけを「原典で確かめていない」として条件付きにしています。プレゼン版は「確定に近い」を 3 つ（Shklovsky・Jauss/Iser・Bakhtin）とし、冒頭では「部分的な対応 1件、条件付きの対応 1件」と書いていて、版ごとに数も論も違います。報告 §7 が未解決に挙げた「Todorov の 5 要素の原典上の位置づけ」は、1971 年の論文の p.39 に五つが数で書かれていることで答えが出ました。一方で、報告が Todorov に帰す「新たな均衡は冒頭と同じだが同一ではない」は 1971 年の論文に無く、論文は「初めの均衡の回復」と書いています。報告 §6 の四つの横断パターン（循環駆動・多層同型性・逸脱-規範の弁証法・プロセス記述型と分析枠組み型）は、調べた跡（phase7）の §A の題と順のまま写したものでした。調べた跡は「『創造の失敗』の理論の不在」を盲点に挙げていましたが（phase7 72〜74 行）、本文を読めた原典は、悲劇の結末・半周期・主人公の破滅・試練に応えない主人公と偽の主人公・新しいものを形の無いものとして退ける正統を、論の中に書いていました。
+今の公開報告（「30 領域調査報告」の文学・文芸学の日本語版、2026-03-18 に LLM が生成、以下「報告」）は 10 の論を取り上げ、日本語版は「強い対応」を 3 つ（Shklovsky・Todorov・Bourdieu）としています。英語版は 9 つを「Strong」とし、Todorov だけを「原典で確かめていない」として条件付きにしています。プレゼン版は「確定に近い」を 3 つ（Shklovsky・Jauss/Iser・Bakhtin）とし、冒頭では「部分的な対応 1件、条件付きの対応 1件」と書いていて、版ごとに数も論も違います。報告 §7 が未解決に挙げた「Todorov の 5 要素の原典上の位置づけ」は、1971 年の論文の p.39 に五つが数で書かれていることで答えが出ました。一方で、報告が Todorov に帰す「新たな均衡は冒頭と同じだが同一ではない」は 1971 年の論文に無く、論文は「初めの均衡の回復」と書いています。報告 §6 の四つの横断パターン（循環駆動・多層同型性・逸脱-規範の弁証法・プロセス記述型と分析枠組み型）は、調べた跡（phase7）の §A の題と順のまま写したものでした。調べた跡は「『創造の失敗』の理論の不在」を盲点に挙げていましたが（phase7 72〜74 行）、本文を読めた原典は、悲劇の結末・半周期・主人公の破滅・試練に応えない主人公と偽の主人公・新しいものを形の無いものとして退ける正統を、論の中に書いていました。
 
-この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が兼ね合い、どうぶつかり、どう包まれ、何が残ったか（または至らずにどう終わったか）を並べたものです。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
+この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が兼ね合い、どうぶつかり、どう包まれ、何が残ったか（または至らずにどう終わったか）を並べたものです。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
 論は報告の 10 に、Aristotle と Freytag を足して 12 です。二つは、パブリックドメインで本文に当たれて、物語の中の衝突と至らない形をはっきり書いている論として足しました（README「調査の手順」1）。どちらも、一つの物語の筋や一つの劇の組み立ての論で、分野の理論の変化の論ではありません。Freytag は Aristotle を引いて書いているので、二つを独立の裏付けに数えません。本文照合済は 4 つ（Todorov＝教員のサイトの授業資料の JSTOR の誌面、Shklovsky（訳）＝出版社の論集の見本の抄録、Aristotle（訳）・Freytag（訳）＝図書館の本の走査）です。Propp・Bourdieu・Barthes は手元の Monoskop の写しで、Bakhtin・Genette・Frye（1951 年の論文の 1963 年の再録）は Internet Archive の利用者が上げた写しで本文を読んだので、未照合のまま読んだ頁を書いています。Jauss/Iser と Bloom は、書籍も核になる論文も開けず、未照合（書籍）です。提唱者の本文に当たれたのは、Todorov・Shklovsky・Aristotle・Freytag の 4 つです。
 
@@ -26,7 +26,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 ## 一面の表
 
-照合の状態は `docs/rules/sources.md` §3 の四つで書きます。各行で、まず原典が何について書いているかと単位を書き、対立・衝突・統合の欄は原典に書いてあることを先に、Claude の読み替えを「読み替え：」で分けて書きます。物語の構造の論（Propp・Todorov・Aristotle・Freytag・Frye）が書くのは、物語の中の対立と解決で、作品が生まれる過程でも、分野の理論の変化でもありません。上げた人の分からない写しで読んだ行は、未照合と書いたうえで、読んだ頁の中身を書いています。
+照合の状態は調べ方の規約 §3 の四つで書きます。各行で、まず原典が何について書いているかと単位を書き、対立・衝突・統合の欄は原典に書いてあることを先に、Claude の読み替えを「読み替え：」で分けて書きます。物語の構造の論（Propp・Todorov・Aristotle・Freytag・Frye）が書くのは、物語の中の対立と解決で、作品が生まれる過程でも、分野の理論の変化でもありません。上げた人の分からない写しで読んだ行は、未照合と書いたうえで、読んだ頁の中身を書いています。
 
 | 論 | 原典が書く対象と単位 | 対立 | 衝突 | 統合／新たな安定、または統合に至らずにどう終わったか | 論の微細さ | 照合の状態 |
 |---|---|---|---|---|---|---|
@@ -51,10 +51,10 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Propp, V. (1968). *Morphology of the Folktale*. 2nd ed. L. Scott 訳、L. A. Wagner 改訂、A. Dundes 序. University of Texas Press。manifest D19-S01。手元の PDF（185 面）の扉で、American Folklore Society Bibliographical and Special Series Vol. 9 / Revised Edition 1968 と確かめました。台帳のとおり Monoskop の写しで、上げた人と権利は確かめていません。PDF の面 n が本の n−27 頁に当たります（面 49 の頭の番号 22、面 80 の 53 で確かめた）。
+- Propp, V. (1968). *Morphology of the Folktale*. 2nd ed. L. Scott 訳、L. A. Wagner 改訂、A. Dundes 序. University of Texas Press。台帳に行がある。手元の PDF（185 面）の扉で、American Folklore Society Bibliographical and Special Series Vol. 9 / Revised Edition 1968 と確かめました。台帳のとおり Monoskop の写しで、上げた人と権利は確かめていません。PDF の面 n が本の n−27 頁に当たります（面 49 の頭の番号 22、面 80 の 53 で確かめた）。
 - 読んだ頁：pp.21–22・35・42・53・60・64–65・79–80。
 - Internet Archive の 1968 年の版（morphologyoffolk00prop）は貸し出しだけで、出版社の電子版（DOI 10.7560/783911）は有料です。
-- Lévi-Strauss（1960）の Propp への批判は、この記録では読んでいません。D25 人類学の記録にも出てきません。
+- Lévi-Strauss（1960）の Propp への批判は、この記録では読んでいません。人類学・民族学の記録にも出てきません。
 
 **照合の状態**：未照合（Monoskop の写しで読んだ）。
 
@@ -87,7 +87,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Bakhtin, M. M. (1981). Discourse in the Novel. *The Dialogic Imagination: Four Essays*. M. Holquist 編、C. Emerson & M. Holquist 訳. University of Texas Press, pp.259–422。manifest D19-S02。
+- Bakhtin, M. M. (1981). Discourse in the Novel. *The Dialogic Imagination: Four Essays*. M. Holquist 編、C. Emerson & M. Holquist 訳. University of Texas Press, pp.259–422。台帳に行がある。
 - Internet Archive に利用者が上げた写し（https://archive.org/details/the-dialogic-imagination-four-essays-m.-m.-bakhtin-berserker-books-2 。「Berserker Books」の打ち直しで、本の頁が角括弧で入っている）の `_djvu.txt` で読みました。上げた人と権利は確かめていません。読んだ頁：pp.270–273・342・346。
 - 図書館の版（dialogicimaginat0000bakh ほか）は貸し出しだけです。
 
@@ -117,9 +117,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Jauss, H. R. (1970). Literary History as a Challenge to Literary Theory. E. Benzinger 訳. *New Literary History* 2(1), 7–37. DOI 10.2307/468585（Crossref で確かめた）。`find-source.sh` で OA の写しは見つからず、出版社（JSTOR）の頁だけでした。大学の授業の頁（ベルガモ大学・カレル大学の Moodle）に置かれているという検索の結果がありましたが、ログインの頁に送られ、開けていません。
+- Jauss, H. R. (1970). Literary History as a Challenge to Literary Theory. E. Benzinger 訳. *New Literary History* 2(1), 7–37. DOI 10.2307/468585（Crossref で確かめた）。原典を探す道具で OA の写しは見つからず、出版社（JSTOR）の頁だけでした。大学の授業の頁（ベルガモ大学・カレル大学の Moodle）に置かれているという検索の結果がありましたが、ログインの頁に送られ、開けていません。
 - Iser, W. (1972). The Reading Process: A Phenomenological Approach. *New Literary History* 3(2), 279–299. DOI 10.2307/468316（Crossref で確かめた）。OA の写しは見つかりませんでした。検索で出た写し（Scribd・個人の頁）は上げた人が分からず、開いていません。
-- Jauss (1982) *Toward an Aesthetic of Reception*（D19-S03）と Iser (1974) *The Implied Reader*（D19-S04）は、Internet Archive の貸し出しだけです。
+- Jauss (1982) *Toward an Aesthetic of Reception*と Iser (1974) *The Implied Reader*は、Internet Archive の貸し出しだけです。
 
 **照合の状態**：未照合（書籍と有料の論文）。
 
@@ -140,9 +140,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Shklovsky, V. (1917). Art as Technique. L. T. Lemon & M. J. Reis 訳. *Russian Formalist Criticism: Four Essays*. University of Nebraska Press, 1965。manifest D19-S05。
+- Shklovsky, V. (1917). Art as Technique. L. T. Lemon & M. J. Reis 訳. *Russian Formalist Criticism: Four Essays*. University of Nebraska Press, 1965。台帳に行がある。
 - その抄録の再録：Rivkin, J. & Ryan, M. (eds.) (2017). *Literary Theory: An Anthology*. 3rd ed. Wiley-Blackwell, ch.2「Art as Technique」pp.8–14。出版社 Wiley の見本の PDF（https://catalogimages.wiley.com/images/db/pdf/9781119622604.c01.2.pdf 。各頁に「COPYRIGHTED MATERIAL」の透かし）で読みました。1 頁目に「Original publication details: … trans. Lee T. Lemon and Marion J. Reis, pp. 11–16. University of Nebraska Press, 1965. Reproduced with permission」とあり、本文には省略の印（…）があります。頁は論集の誌面の頁。読んだ頁：pp.8–14。
-- 台帳 D19-S05 の Warwick の URL は大学の SSO の壁で、取りに行っていません。Berlina の新訳（*Poetics Today* 36(3), 151–174, 2015。DOI 10.1215/03335372-3160709。Crossref で確かめた）は、`find-source.sh` で OA の写しが見つからず、出版社（Duke）の有料の頁だけでした。露語の原文は探していません。
+- 台帳の「Shklovsky 1917」の行の Warwick の URL は大学の SSO の壁で、取りに行っていません。Berlina の新訳（*Poetics Today* 36(3), 151–174, 2015。DOI 10.1215/03335372-3160709。Crossref で確かめた）は、原典を探す道具で OA の写しが見つからず、出版社（Duke）の有料の頁だけでした。露語の原文は探していません。
 
 **照合の状態**：本文照合済（訳。Lemon & Reis 訳の抄録を出版社の論集の見本で読んだ）。Lemon & Reis の 1965 年の本そのものと露語の原文は未照合です。
 
@@ -176,9 +176,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Todorov, T. (1971). The 2 Principles of Narrative. *Diacritics* 1(1), 37–44. DOI 10.2307/464558（Crossref で確かめた。1 頁目の JSTOR の表紙でも、著者・誌名・巻号・頁を確かめた）。manifest D19-S06。
+- Todorov, T. (1971). The 2 Principles of Narrative. *Diacritics* 1(1), 37–44. DOI 10.2307/464558（Crossref で確かめた。1 頁目の JSTOR の表紙でも、著者・誌名・巻号・頁を確かめた）。台帳に行がある。
 - 台帳の URL（https://www.davidbardschwarz.com/pdf/todorov.pdf ）から 2026-11-09 に取りました。JSTOR の誌面の画像に文字の層が付いた PDF（9 面。1 面目は JSTOR の表紙、2 面目の上は前の論文の終わり）で、各頁の下に「This content downloaded from 129.120.93.218 on Thu, 25 Feb 2016」とあります。サイトは北テキサス大学の教員 David Bard-Schwarz のもので、Wayback の一覧に授業の頁（/courses/）があります。授業の資料の写しで、権利は確かめていません。出版社の URL は https://www.jstor.org/stable/464558 です。PDF の面 n が誌面の n+35 頁に当たります（面 4 の右上の番号 39 を頁の画像で確かめた）。読んだ頁：pp.37–39（全文を通読し、要の箇所は p.39）。
-- 頼む文の当たりにあった Todorov (1969). Structural Analysis of Narrative. *NOVEL: A Forum on Fiction* 3(1), 70–76（DOI 10.2307/1345003。Crossref で確かめた）は、OA の写しが見つからず、読んでいません。『The Poetics of Prose』（1977、D19-S07）も書籍で開けていません。
+- 頼む文の当たりにあった Todorov (1969). Structural Analysis of Narrative. *NOVEL: A Forum on Fiction* 3(1), 70–76（DOI 10.2307/1345003。Crossref で確かめた）は、OA の写しが見つからず、読んでいません。『The Poetics of Prose』（1977、台帳の「Todorov 1977」の行）も書籍で開けていません。
 
 **照合の状態**：本文照合済（授業の資料の写し。JSTOR の誌面の画像。権利は未確認）。
 
@@ -212,9 +212,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Bourdieu, P. (1996). *The Rules of Art: Genesis and Structure of the Literary Field*. S. Emanuel 訳. Stanford University Press / Polity。manifest D19-S09。手元の PDF（214 面、見開き 2 頁が 1 面）は Monoskop の写しで、上げた人と権利は確かめていません。扉の OCR の文字は「Stanford … 1995」、裏は「This translation and Introduction © 1996 Polity Press」です。PDF の面 n の左が本の 2n−20 頁、右が 2n−19 頁に当たります（面 73 の左上 126・右上 127 を頁の画像で確かめた）。読んだ頁：pp.126–127・157–158。
-- Bourdieu, P. (1985). The Market of Symbolic Goods. R. Swyer 訳. *Poetics* 14(1–2), 13–44. DOI 10.1016/0304-422X(85)90003-8。台帳 D19-S08 の備考の写し（https://web.mit.edu/allanmc/www/bourdieu2.pdf ）を取りました。中身は『The Field of Cultural Production』（Columbia UP。写しの頭は「©1984」と書くが、この論集は 1993 年刊の見込みで、確かめていない）第 1 章の打ち直しで、注に「originally published as ‘Le marché des biens symboliques’ in L'année sociologique, 22 (1971), pp 49-126. The abbreviated translation, by R. Swyer, first appeared in Poetics … 14/1-2 (April 1985), pp. 13-44」とあります。置き場は MIT のサーバーにある美術家 Allan McCollum の個人の頁で、Wayback の一覧には同じ頁に Foucault・Freud・Lévi-Strauss・Mauss などの読み物が並んでいます。授業の頁かどうかは確かめていません。頁は写しの頁（1〜34）。読んだ頁：写しの pp.1–4・13・17。台帳の 2026-04 の記録（Durand 1989 を掴んだ）とは別の、狙いの文書でした。
-- Bourdieu, P. (1983). The field of cultural production, or: The economic world reversed. *Poetics* 12(4–5), 311–356. DOI 10.1016/0304-422X(83)90012-8（Crossref で確かめた）。`find-source.sh` と検索で OA の写しは見つからず、読んでいません。
+- Bourdieu, P. (1996). *The Rules of Art: Genesis and Structure of the Literary Field*. S. Emanuel 訳. Stanford University Press / Polity。台帳に行がある。手元の PDF（214 面、見開き 2 頁が 1 面）は Monoskop の写しで、上げた人と権利は確かめていません。扉の OCR の文字は「Stanford … 1995」、裏は「This translation and Introduction © 1996 Polity Press」です。PDF の面 n の左が本の 2n−20 頁、右が 2n−19 頁に当たります（面 73 の左上 126・右上 127 を頁の画像で確かめた）。読んだ頁：pp.126–127・157–158。
+- Bourdieu, P. (1985). The Market of Symbolic Goods. R. Swyer 訳. *Poetics* 14(1–2), 13–44. DOI 10.1016/0304-422X(85)90003-8。台帳の「Bourdieu 1971」の行の備考の写し（https://web.mit.edu/allanmc/www/bourdieu2.pdf ）を取りました。中身は『The Field of Cultural Production』（Columbia UP。写しの頭は「©1984」と書くが、この論集は 1993 年刊の見込みで、確かめていない）第 1 章の打ち直しで、注に「originally published as ‘Le marché des biens symboliques’ in L'année sociologique, 22 (1971), pp 49-126. The abbreviated translation, by R. Swyer, first appeared in Poetics … 14/1-2 (April 1985), pp. 13-44」とあります。置き場は MIT のサーバーにある美術家 Allan McCollum の個人の頁で、Wayback の一覧には同じ頁に Foucault・Freud・Lévi-Strauss・Mauss などの読み物が並んでいます。授業の頁かどうかは確かめていません。頁は写しの頁（1〜34）。読んだ頁：写しの pp.1–4・13・17。台帳の 2026-04 の記録（Durand 1989 を掴んだ）とは別の、狙いの文書でした。
+- Bourdieu, P. (1983). The field of cultural production, or: The economic world reversed. *Poetics* 12(4–5), 311–356. DOI 10.1016/0304-422X(83)90012-8（Crossref で確かめた）。原典を探す道具と検索で OA の写しは見つからず、読んでいません。
 
 **照合の状態**：未照合（『The Rules of Art』は Monoskop の写し、1985 年の英訳は大学のサーバーの個人の頁の打ち直しで読んだ）。
 
@@ -246,7 +246,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Barthes, R. (1990). *S/Z*. R. Miller 訳. Blackwell（訳 © 1974 Farrar, Straus and Giroux。原著 1970）。manifest D19-S10。手元の PDF（282 面）の扉と裏で、Blackwell の 1990 年版の 2002 年の刷と確かめました。Monoskop の写しで、上げた人と権利は確かめていません。PDF の面 n が本の n−11 頁に当たります（面 15 が p.4、面 30 が p.19）。読んだ頁：pp.4–5・18–19。
+- Barthes, R. (1990). *S/Z*. R. Miller 訳. Blackwell（訳 © 1974 Farrar, Straus and Giroux。原著 1970）。台帳に行がある。手元の PDF（282 面）の扉と裏で、Blackwell の 1990 年版の 2002 年の刷と確かめました。Monoskop の写しで、上げた人と権利は確かめていません。PDF の面 n が本の n−11 頁に当たります（面 15 が p.4、面 30 が p.19）。読んだ頁：pp.4–5・18–19。
 - 報告 §7 の「作者の死」（1967。Aspen 5+6）は読んでいません。
 
 **照合の状態**：未照合（Monoskop の写しで読んだ）。
@@ -274,9 +274,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Frye, N. (1951). The Archetypes of Literature. *The Kenyon Review* 13(1), 92–110。台帳に行が無い（D19-S23 の案）。Kenyon Review のサイトの頁はログインを求めます。
+- Frye, N. (1951). The Archetypes of Literature. *The Kenyon Review* 13(1), 92–110。台帳に行が無い（台帳に足す案）。Kenyon Review のサイトの頁はログインを求めます。
 - 1963 年の論集『Fables of Identity: Studies in Poetic Mythology』（Harcourt, Brace & World）への再録を、Internet Archive に利用者が上げた写し（https://archive.org/details/fables-of-identity-studies-in-poetic-mythology-northrop-frye-1963 ）の `_djvu.txt`（OCR の文字）で読みました。謝辞に「"The Archetypes of Literature" from The Kenyon Review, XIII, 1951」。上げた人と権利は確かめていません。読んだ頁：pp.15–16（OCR の文字で読み、頁の画像では確かめていない）。図書館の版（fablesofidentity00frye ほか）は貸し出しだけです。
-- Frye, N. (1957). *Anatomy of Criticism*. Princeton University Press。Internet Archive の版はどれも貸し出しだけで、開けていません（D19-S24 の案）。
+- Frye, N. (1957). *Anatomy of Criticism*. Princeton University Press。Internet Archive の版はどれも貸し出しだけで、開けていません（台帳に足す案）。
 
 **照合の状態**：未照合（1951 年の論文を、上げた人の分からない写しの OCR の文字で読んだ。1957 年の本は書籍）。
 
@@ -301,7 +301,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Genette, G. (1980). *Narrative Discourse: An Essay in Method*. J. E. Lewin 訳. Cornell University Press（原著『Figures III』1972 の「Discours du récit」）。manifest D19-S15。台帳の URL（https://archive.org/download/NarrativeDiscourseAnEssayInMethod/NarrativeDiscourse-AnEssayInMethod.pdf ）を取りました。Internet Archive の「opensource」「community」の集まりで、利用者が上げた写しです（上げた人と権利は確かめていない）。扉と裏で、Cornell 1980 年の版（1983 年の紙表紙の刷の記載あり）と確かめました。見開き 2 頁が 1 面に入っていて、PDF の面 n の左が本の 2n 頁、右が 2n+1 頁に当たります（面 13 の左 26・右 27 を頁の画像で確かめた）。読んだ頁：p.27・pp.186–187。
+- Genette, G. (1980). *Narrative Discourse: An Essay in Method*. J. E. Lewin 訳. Cornell University Press（原著『Figures III』1972 の「Discours du récit」）。台帳に行がある。台帳の URL（https://archive.org/download/NarrativeDiscourseAnEssayInMethod/NarrativeDiscourse-AnEssayInMethod.pdf ）を取りました。Internet Archive の「opensource」「community」の集まりで、利用者が上げた写しです（上げた人と権利は確かめていない）。扉と裏で、Cornell 1980 年の版（1983 年の紙表紙の刷の記載あり）と確かめました。見開き 2 頁が 1 面に入っていて、PDF の面 n の左が本の 2n 頁、右が 2n+1 頁に当たります（面 13 の左 26・右 27 を頁の画像で確かめた）。読んだ頁：p.27・pp.186–187。
 
 **照合の状態**：未照合（上げた人の分からない写しで読んだ）。
 
@@ -310,7 +310,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 - 物語の現実の三つの面に、それぞれ一つの語を当てる。語られる中身を story、テクストそのものを narrative、語る行為を narrating と呼ぶ。テクストの分析で直接扱えるのは narrative の水準だけである（p.27。面 13 の右）。
 - 叙法の問い「who is the character whose point of view orients the narrative perspective?」と、態の問い「who is the narrator?」、つまり「who sees?」と「who speaks?」を取り違えてきた、と書く（pp.186–187）。
 
-**対立・衝突・統合の読み**：原典は道具立てを書いていて、衝突も至らない形も、読んだ範囲には書いていません。原典から対立・衝突・統合を読むのは難しい論として並べます（README「規約で決めたこと」D12 の行と同じ扱い）。
+**対立・衝突・統合の読み**：原典は道具立てを書いていて、衝突も至らない形も、読んだ範囲には書いていません。原典から対立・衝突・統合を読むのは難しい論として並べます（README「規約で決めたこと」農学・生態学の行と同じ扱い）。
 
 **今の報告から直すこと**：
 
@@ -326,7 +326,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Bloom, H. (1973). *The Anxiety of Influence: A Theory of Poetry*. Oxford University Press。台帳に行が無い（D19-S25 の案）。Internet Archive の版（anxietyofinfluen0000bloo ほか）は貸し出しだけです。著者の論文版は探しきれていません。
+- Bloom, H. (1973). *The Anxiety of Influence: A Theory of Poetry*. Oxford University Press。台帳に行が無い（台帳に足す案）。Internet Archive の版（anxietyofinfluen0000bloo ほか）は貸し出しだけです。著者の論文版は探しきれていません。
 
 **照合の状態**：未照合（書籍）。
 
@@ -346,7 +346,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Butcher, S. H. (1907). *Aristotle's Theory of Poetry and Fine Art, with a Critical Text and Translation of the Poetics*. 4th ed. London: Macmillan。manifest D19-S12。手元の PDF は、Internet Archive の aristotlestheory00butcuoft（トロント大学 Robarts 図書館の本の走査、https://archive.org/details/aristotlestheory00butcuoft ）と MD5 が一致しました。扉の裏に「Fourth Edition 1907 / Reprinted with corrections 1911. Reprinted 1920, 1923」とあり、走査した本は第 4 版の後の刷です。左の頁に希語、右の頁に英訳が並び、英訳の頁の頭に章と頁の番号があります。同じ資料の `_djvu.txt`（OCR の文字）で読み、p.47 は頁の画像でも確かめました。パブリックドメイン（訳者は 1910 年没）。読んだ頁：pp.41・45・47・65・67。
+- Butcher, S. H. (1907). *Aristotle's Theory of Poetry and Fine Art, with a Critical Text and Translation of the Poetics*. 4th ed. London: Macmillan。台帳に行がある。手元の PDF は、Internet Archive の aristotlestheory00butcuoft（トロント大学 Robarts 図書館の本の走査、https://archive.org/details/aristotlestheory00butcuoft ）と MD5 が一致しました。扉の裏に「Fourth Edition 1907 / Reprinted with corrections 1911. Reprinted 1920, 1923」とあり、走査した本は第 4 版の後の刷です。左の頁に希語、右の頁に英訳が並び、英訳の頁の頭に章と頁の番号があります。同じ資料の `_djvu.txt`（OCR の文字）で読み、p.47 は頁の画像でも確かめました。パブリックドメイン（訳者は 1910 年没）。読んだ頁：pp.41・45・47・65・67。
 
 **照合の状態**：本文照合済（訳。図書館の本の走査。OCR の文字で読み、要の頁を画像で確かめた）。
 
@@ -360,7 +360,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **対立・衝突・統合の読み**：原典は、幸運と不運、無知と知を対にし、逆転と認知を筋の転回点に置き、結びと解きで筋を二つに分けています。至らない形として、不運に終わる結末を、悲劇のもっとも正しい終わりとして論の中心に書いています。善い者と悪い者に反対の結末を配る筋を、観客の弱さに合わせたものとして二番目に置いています。読み替え：悲劇の結末は、衝突が主人公の側の破滅で終わる形（片方の勝利）として行に並べられます（Claude の読み）。原典は善悪の判断を結末の配り方に持ち込む筋を退けています。
 
-**今の報告から直すこと**：報告は Aristotle を論として取り上げていません。台帳の D19-S12 の備考「Stage 2-4: ペリペテイア・カタルシス」は旧い当てはめで、この記録では使っていません。
+**今の報告から直すこと**：報告は Aristotle を論として取り上げていません。台帳の台帳の「Aristotle 1907」の行の備考「Stage 2-4: ペリペテイア・カタルシス」は旧い当てはめで、この記録では使っていません。
 
 ### 12. Freytag：劇の技法（足した論）
 
@@ -368,7 +368,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Freytag, G. (1895). *Freytag's Technique of the Drama: An Exposition of Dramatic Composition and Art*. E. J. MacEwan 訳（独語第 6 版から）. Chicago: S. C. Griggs（Copyright 1894）。原著『Die Technik des Dramas』1863。manifest D19-S11。手元の PDF は、Internet Archive の freytagstechniqu0000frey（Marygrove College の図書館の本の走査、https://archive.org/details/freytagstechniqu0000frey ）と MD5 が一致しました。PDF の面 n が本の n−16 頁に当たります（面 130 の頭の番号 114、面 131 の 115 を頁の画像で確かめた）。同じ資料の `_djvu.txt`（OCR の文字）で読みました。パブリックドメイン。読んだ頁：pp.104–105・114–115・137–138。
+- Freytag, G. (1895). *Freytag's Technique of the Drama: An Exposition of Dramatic Composition and Art*. E. J. MacEwan 訳（独語第 6 版から）. Chicago: S. C. Griggs（Copyright 1894）。原著『Die Technik des Dramas』1863。台帳に行がある。手元の PDF は、Internet Archive の freytagstechniqu0000frey（Marygrove College の図書館の本の走査、https://archive.org/details/freytagstechniqu0000frey ）と MD5 が一致しました。PDF の面 n が本の n−16 頁に当たります（面 130 の頭の番号 114、面 131 の 115 を頁の画像で確かめた）。同じ資料の `_djvu.txt`（OCR の文字）で読みました。パブリックドメイン。読んだ頁：pp.104–105・114–115・137–138。
 
 **照合の状態**：本文照合済（訳。図書館の本の走査。OCR の文字で読み、pp.114–115 を画像で確かめた）。
 
@@ -381,7 +381,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **対立・衝突・統合の読み**：原典は、劇と反劇、主人公と対立する力を、正しさで分けずに対にし、闘いを劇の芯に置いています。統合の形として、主人公の破滅によって対立する力の調整が生まれると書いています。読み替え：主人公の破滅は、主人公の側の敗北であると同時に、劇の中で対立する力が釣り合いを取り直す形として書かれていて、片方の勝利と統合の両方の面を持つ行として並べられます（Claude の読み）。Freytag は Aristotle を引いて書いているので（序と第 1 章の目次）、二つを独立の裏付けに数えません。
 
-**今の報告から直すこと**：報告は Freytag を論として取り上げていません。台帳の D19-S11 の備考「Stage 1-5: 物語の5段階構造」は旧い当てはめで、原典は五つの部分と三つの契機を書いていて、5段階との対応は書いていません。
+**今の報告から直すこと**：報告は Freytag を論として取り上げていません。台帳の台帳の「Freytag 1863」の行の備考「Stage 1-5: 物語の5段階構造」は旧い当てはめで、原典は五つの部分と三つの契機を書いていて、5段階との対応は書いていません。
 
 ## 公開報告の点検のまとめ
 
@@ -431,7 +431,7 @@ ja 3〜6 行「立ち位置明示」、44〜49 行「方法論的開示（S60）
 
 退避版と調べた跡には、この分野では隣の概念の語そのものは見つかりませんでした。「保持論点」の語は phase6 204 行・phase7 82 行と退避版 395 行にあり、報告の本文には「保留」（プレゼン版 94 行「判断を保留しています」）として出るだけで、理論の当てはめには入っていません。英語版の Propp の「Lack」（74 行）は、原典の機能の名です。
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 E（「最も」「正確に」の言い切り）：「本調査における最も直接的な構造対応の一つ」（114 行）、「渦の『自律的な立ち上がり』と正確に対応」（102 行）、「数的にも順序的にも最も直接的な対応」（249 行）、「最も顕著な横断パターン」（208 行）、「最も多層的な例証の一つ」（212 行）。比べた跡は無い。
 - 型 E（断定）：「この傾向は構造的に必然と考えられます」（220 行）、「確認されました」（86・249・251・255 行）。
@@ -440,71 +440,62 @@ ja 3〜6 行「立ち位置明示」、44〜49 行「方法論的開示（S60）
 
 ## 判断が要るもの
 
-pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは `docs/cs-review/README.md` の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
+pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは調べ方の計画と規約の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
 
-- Todorov 1971 の写しは、北テキサス大学の教員のサイトに置かれた JSTOR の誌面の画像で、Wayback の一覧にそのサイトの授業の頁があるので、授業用の写しとして本文照合済にしました（README「規約で決めたこと」D25 の行）。サイトは大学のサーバーではなく教員のドメインですが、連絡先は大学のアドレスで、「Courses」の欄に授業の頁があります（2026-11-09 に司令塔がサイトの頭の頁と Wayback の一覧で確かめました）。上げた人が分かり、授業の資料として置かれた出版社の誌面なので、授業用の写しの扱いにしています。
+- Todorov 1971 の写しは、北テキサス大学の教員のサイトに置かれた JSTOR の誌面の画像で、Wayback の一覧にそのサイトの授業の頁があるので、授業用の写しとして本文照合済にしました（README「規約で決めたこと」人類学・民族学の行）。サイトは大学のサーバーではなく教員のドメインですが、連絡先は大学のアドレスで、「Courses」の欄に授業の頁があります（2026-11-09 に司令塔がサイトの頭の頁と Wayback の一覧で確かめました）。上げた人が分かり、授業の資料として置かれた出版社の誌面なので、授業用の写しの扱いにしています。
 - Bourdieu 1985 の写しは、MIT のサーバーに置かれた美術家 Allan McCollum の個人の頁の打ち直しで、授業の頁かどうかを確かめられなかったので、未照合にしました。
 - Shklovsky は、出版社 Wiley が見本として出している論集の抄録で、出版社の版として本文照合済（訳）にしました。省略の印があり、Lemon & Reis の本の全文ではありません。
 - Aristotle と Freytag は、パブリックドメインで本文に当たれて、物語の中の衝突と至らない形をはっきり書いているので、論として足しました。どちらも物語の筋の論で、分野の変化の論ではありません。Freytag は Aristotle を引くので、段 3 で二つを一つの系譜として数えるかを見ます。
 - 似た論文のうち、Reagan ら（2016）は arXiv の著者稿を取り、六つの感情の弧（悲劇＝下降、Oedipus＝下降・上昇・下降を含む）を確かめましたが、物語の感情の推移を測る論文で、衝突を論の芯に置いていないので、論として足していません。Polti（1916）も足していません。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D19-S16 | Shklovsky, V. Art as Technique. Lemon & Reis 訳（1965）の抄録の再録. Rivkin, J. & Ryan, M. (eds.) (2017). *Literary Theory: An Anthology*. 3rd ed. Wiley-Blackwell, pp.8–14 | https://catalogimages.wiley.com/images/db/pdf/9781119622604.c01.2.pdf （出版社の見本の PDF） | raw-confirmed（保存名の案 `D19_shklovsky_2017_art-as-technique-rivkin-ryan-sample.pdf`） |
-| D19-S17 | Bourdieu, P. The Market of Symbolic Goods. R. Swyer 訳. *Poetics* 14(1–2), 13–44 (1985). DOI 10.1016/0304-422X(85)90003-8。写しは『The Field of Cultural Production』第 1 章の打ち直し | https://web.mit.edu/allanmc/www/bourdieu2.pdf （MIT のサーバーの個人の頁。権利は未確認） | url-verified（性格を添える。保存名の案 `D19_bourdieu_1985_market-symbolic-goods-mit-retyped.pdf`） |
-| D19-S18 | Bourdieu, P. (1983). The field of cultural production, or: The economic world reversed. *Poetics* 12(4–5), 311–356. DOI 10.1016/0304-422X(83)90012-8 | Elsevier（有料） | citation-only |
-| D19-S19 | Jauss, H. R. (1970). Literary History as a Challenge to Literary Theory. E. Benzinger 訳. *New Literary History* 2(1), 7–37. DOI 10.2307/468585 | JSTOR（有料） | citation-only |
-| D19-S20 | Iser, W. (1972). The Reading Process: A Phenomenological Approach. *New Literary History* 3(2), 279–299. DOI 10.2307/468316 | JSTOR・Project MUSE（有料） | citation-only |
-| D19-S21 | Shklovsky, V. (2015). Art, as Device. A. Berlina 訳. *Poetics Today* 36(3), 151–174. DOI 10.1215/03335372-3160709 | Duke（有料） | citation-only |
-| D19-S22 | Todorov, T. (1969). Structural Analysis of Narrative. A. Weinstein 訳. *NOVEL: A Forum on Fiction* 3(1), 70–76. DOI 10.2307/1345003 | JSTOR（有料） | citation-only |
-| D19-S23 | Frye, N. (1951). The Archetypes of Literature. *The Kenyon Review* 13(1), 92–110。再録：*Fables of Identity* (1963), Harcourt, Brace & World | https://archive.org/details/fables-of-identity-studies-in-poetic-mythology-northrop-frye-1963 （利用者が上げた写し。権利は未確認）・https://archive.org/details/fablesofidentity00frye （貸し出し） | citation-only（写しは読めるが、確かめ先にしない） |
-| D19-S24 | Frye, N. (1957). *Anatomy of Criticism: Four Essays*. Princeton University Press | https://archive.org/details/anatomyofcritici1957frye （貸し出し） | citation-only |
-| D19-S25 | Bloom, H. (1973). *The Anxiety of Influence: A Theory of Poetry*. Oxford University Press | https://archive.org/details/anxietyofinfluen0000bloo （貸し出し） | citation-only |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| Shklovsky, V. Art as Technique. Lemon & Reis 訳（1965）の抄録の再録. Rivkin, J. & Ryan, M. (eds.) (2017). *Literary Theory: An Anthology*. 3rd ed. Wiley-Blackwell, pp.8–14 | https://catalogimages.wiley.com/images/db/pdf/9781119622604.c01.2.pdf （出版社の見本の PDF） | 手元に保存した（保存名の案手元の PDF） |
+| Bourdieu, P. The Market of Symbolic Goods. R. Swyer 訳. *Poetics* 14(1–2), 13–44 (1985). DOI 10.1016/0304-422X(85)90003-8。写しは『The Field of Cultural Production』第 1 章の打ち直し | https://web.mit.edu/allanmc/www/bourdieu2.pdf （MIT のサーバーの個人の頁。権利は未確認） | 取得先を確かめた（性格を添える。保存名の案手元の PDF） |
+| Bourdieu, P. (1983). The field of cultural production, or: The economic world reversed. *Poetics* 12(4–5), 311–356. DOI 10.1016/0304-422X(83)90012-8 | Elsevier（有料） | 書誌だけ |
+| Jauss, H. R. (1970). Literary History as a Challenge to Literary Theory. E. Benzinger 訳. *New Literary History* 2(1), 7–37. DOI 10.2307/468585 | JSTOR（有料） | 書誌だけ |
+| Iser, W. (1972). The Reading Process: A Phenomenological Approach. *New Literary History* 3(2), 279–299. DOI 10.2307/468316 | JSTOR・Project MUSE（有料） | 書誌だけ |
+| Shklovsky, V. (2015). Art, as Device. A. Berlina 訳. *Poetics Today* 36(3), 151–174. DOI 10.1215/03335372-3160709 | Duke（有料） | 書誌だけ |
+| Todorov, T. (1969). Structural Analysis of Narrative. A. Weinstein 訳. *NOVEL: A Forum on Fiction* 3(1), 70–76. DOI 10.2307/1345003 | JSTOR（有料） | 書誌だけ |
+| Frye, N. (1951). The Archetypes of Literature. *The Kenyon Review* 13(1), 92–110。再録：*Fables of Identity* (1963), Harcourt, Brace & World | https://archive.org/details/fables-of-identity-studies-in-poetic-mythology-northrop-frye-1963 （利用者が上げた写し。権利は未確認）・https://archive.org/details/fablesofidentity00frye （貸し出し） | 書誌だけ（写しは読めるが、確かめ先にしない） |
+| Frye, N. (1957). *Anatomy of Criticism: Four Essays*. Princeton University Press | https://archive.org/details/anatomyofcritici1957frye （貸し出し） | 書誌だけ |
+| Bloom, H. (1973). *The Anxiety of Influence: A Theory of Poetry*. Oxford University Press | https://archive.org/details/anxietyofinfluen0000bloo （貸し出し） | 書誌だけ |
 
 既存の行に書き足す案：
 
-- D19-S01：手元の PDF は UT Press 1968 年 第 2 版（American Folklore Society Vol. 9 / Revised Edition 1968）の Monoskop の写し。PDF の面 n が本の n−27 頁。
-- D19-S02：Internet Archive に利用者が上げた打ち直しの写し（the-dialogic-imagination-four-essays-m.-m.-bakhtin-berserker-books-2。頁の番号は角括弧）がある。上げた人と権利は未確認。図書館の版は貸し出しだけ。
-- D19-S06：台帳の URL の PDF は JSTOR の誌面の画像（2016-02-25 に北テキサス大学の回線から取ったもの）で、北テキサス大学の教員 David Bard-Schwarz のサイトの授業の資料の写し。2026-11-09 に取り、1 頁目の書誌と p.39 を確かめた（raw-confirmed に上げられる。保存名の案 `D19_todorov_1971_two-principles-of-narrative.pdf`）。
-- D19-S08：備考の MIT の写しは、『The Field of Cultural Production』第 1 章（1985 年の英訳の再録）の打ち直しで、置き場は美術家 Allan McCollum の個人の頁（D19-S17 の案）。
-- D19-S09：手元の PDF は見開き 2 頁が 1 面の Monoskop の写し。扉の OCR は「Stanford … 1995」、訳の © は 1996 Polity。面 n の左が本の 2n−20 頁。
-- D19-S10：手元の PDF は Blackwell の 1990 年版の 2002 年の刷（訳 © 1974 Farrar, Straus and Giroux）。
-- D19-S11・S12：手元の PDF は Internet Archive の資料と MD5 が一致（Freytag は Marygrove College の図書館の本、Aristotle はトロント大学 Robarts 図書館の本の走査で、扉の裏の刷は 1923 年まで）。
-- D19-S13：Digital Library of India の走査は、1945 年の刷（Copyright 1916, 1917 The Editor Company ほか）。
-- D19-S14：出版社の PDF は 2026-11-09 に idp.springer.com へ送られ、取れなかった。arXiv の著者稿（https://arxiv.org/pdf/1606.07772 、v3）を取り、1 頁目の題・著者を確かめた（保存名の案 `D19_reagan_2016_emotional-arcs-arxiv.pdf`）。
-- D19-S15：Internet Archive の「opensource」「community」の集まりに利用者が上げた写し。見開き 2 頁が 1 面で、面 n の左が本の 2n 頁。上げた人と権利は未確認。
+- 台帳の「Propp 1928」の行：手元の PDF は UT Press 1968 年 第 2 版（American Folklore Society Vol. 9 / Revised Edition 1968）の Monoskop の写し。PDF の面 n が本の n−27 頁。
+- 台帳の「Bakhtin 1981」の行：Internet Archive に利用者が上げた打ち直しの写し（the-dialogic-imagination-four-essays-m.-m.-bakhtin-berserker-books-2。頁の番号は角括弧）がある。上げた人と権利は未確認。図書館の版は貸し出しだけ。
+- 台帳の「Todorov 1971」の行：台帳の URL の PDF は JSTOR の誌面の画像（2016-02-25 に北テキサス大学の回線から取ったもの）で、北テキサス大学の教員 David Bard-Schwarz のサイトの授業の資料の写し。2026-11-09 に取り、1 頁目の書誌と p.39 を確かめた（「手元に保存した」に上げられる。保存名の案手元の PDF）。
+- 台帳の「Bourdieu 1971」の行：備考の MIT の写しは、『The Field of Cultural Production』第 1 章（1985 年の英訳の再録）の打ち直しで、置き場は美術家 Allan McCollum の個人の頁（台帳に足す案）。
+- 台帳の「Bourdieu 1992」の行：手元の PDF は見開き 2 頁が 1 面の Monoskop の写し。扉の OCR は「Stanford … 1995」、訳の © は 1996 Polity。面 n の左が本の 2n−20 頁。
+- 台帳の「Barthes 1970」の行：手元の PDF は Blackwell の 1990 年版の 2002 年の刷（訳 © 1974 Farrar, Straus and Giroux）。
+- 台帳の「Freytag 1863」の行：手元の PDF は Internet Archive の資料と MD5 が一致（Freytag は Marygrove College の図書館の本、Aristotle はトロント大学 Robarts 図書館の本の走査で、扉の裏の刷は 1923 年まで）。
+- 台帳の「Polti 1895」の行：Digital Library of India の走査は、1945 年の刷（Copyright 1916, 1917 The Editor Company ほか）。
+- 台帳の「Reagan ら 2016」の行：出版社の PDF は 2026-11-09 に idp.springer.com へ送られ、取れなかった。arXiv の著者稿（https://arxiv.org/pdf/1606.07772 、v3）を取り、1 頁目の題・著者を確かめた（保存名の案手元の PDF）。
+- 台帳の「Genette 1980」の行：Internet Archive の「opensource」「community」の集まりに利用者が上げた写し。見開き 2 頁が 1 面で、面 n の左が本の 2n 頁。上げた人と権利は未確認。
 
 ## ブラウザでの保存が要る PDF
 
-| 台帳の行 | 文献 | ダウンロード先 | 保存名の案 | 止まった理由 | 保存できると何を確かめられるか |
-|---|---|---|---|---|---|
-| D19-S19 の案 | Jauss (1970) *New Literary History* 2(1) | https://www.jstor.org/stable/468585 | `D19_jauss_1970_literary-history-challenge.pdf` | 出版社（JSTOR）の有料の頁。OA の写しは見つからない | 「horizon of expectations」「aesthetic distance」と、期待をただ満たす作品（「culinary」）の箇所をページ内で探す。報告 ja 154 行の「作品の価値は…美的距離で測定」と、至らない形の書き方 |
-| D19-S20 の案 | Iser (1972) *New Literary History* 3(2) | https://www.jstor.org/stable/468316 | `D19_iser_1972_reading-process.pdf` | 出版社（JSTOR・MUSE）の有料の頁 | 「gaps」「blanks」と、読者が補えない・退屈・過剰の箇所。報告 ja 154・158 行 |
-| D19-S22 の案 | Todorov (1969) *NOVEL* 3(1) | https://www.jstor.org/stable/1345003 | `D19_todorov_1969_structural-analysis-narrative.pdf` | 出版社（JSTOR）の有料の頁 | 「the second equilibrium」「never identical」の箇所。報告 ja 110 行の「同じだが同一ではない」がこの論文の句か |
-| D19-S18 の案 | Bourdieu (1983) *Poetics* 12(4–5) | https://doi.org/10.1016/0304-422X(83)90012-8 | `D19_bourdieu_1983_field-of-cultural-production.pdf` | 出版社（Elsevier）の有料の頁 | 「new entrants」「position-takings」と、自律の極と他律の極の箇所。Monoskop の写しで読んだ『The Rules of Art』pp.126–127・157–158 と同じ論が出版社の版で読めるか |
-| D19-S21 の案 | Shklovsky (2015) Berlina 訳 *Poetics Today* 36(3) | https://doi.org/10.1215/03335372-3160709 | `D19_shklovsky_2015_art-as-device-berlina.pdf` | 出版社（Duke）の有料の頁 | 「automatization」「convention」の箇所。論集の抄録で読んだ p.13 のリズムの条件文と、省略された部分に周期の記述があるか |
-| D19-S24 の案 | Frye (1957) *Anatomy of Criticism* | https://archive.org/details/anatomyofcritici1957frye （頁の中の「Borrow」） | ― | Internet Archive の貸し出し | 第三論文の四つのミュトス（spring・summer・autumn・winter）と、第一論文の五つのモードの箇所。報告 ja 174 行の「春=喜劇、夏=ロマンス」と「アイロニーから神話への回帰」 |
-| D19-S25 の案 | Bloom (1973) *The Anxiety of Influence* | https://archive.org/details/anxietyofinfluen0000bloo （頁の中の「Borrow」） | ― | Internet Archive の貸し出し | 序の六つの修正比率の名と、強い詩人になれない形（「weaker talents」など）の箇所。報告 ja 194・198 行 |
-| D19-S01 | Propp (1968) *Morphology of the Folktale* | https://archive.org/details/morphologyoffolk00prop （頁の中の「Borrow」） | ― | Internet Archive の貸し出し | Monoskop の写しで読んだ pp.22・35・42・53・60・64・79–80 が図書館の版と同じか。同じなら本文照合済に上げられる |
+自動で取れなかった原典のうち、ブラウザでの保存を頼むものは、作業の記録（[Issue #73](https://github.com/uminomae/project-design-theory/issues/73)）の表にまとめました。
 
 ## 手順について分かったこと
 
 - 報告の論の多くは書籍で、提唱者の本文に当たれたのは、核になる論文が教員のサイトに残っていた Todorov、出版社が見本として出している論集の抄録の Shklovsky、パブリックドメインの Aristotle と Freytag でした。Jauss と Iser は、書籍の核になる論文（*New Literary History*）を探しましたが、OA の写しは見つからず、授業の頁はログインの壁でした。
-- 報告が自ら未解決に挙げていた問い（Todorov の五つ）は、原典の 1 頁を開くと答えが出ました。退避版の段階で原典の URL は台帳にあり（url-verified）、開かずに「未確認」が三つの版に残っていました。
+- 報告が自ら未解決に挙げていた問い（Todorov の五つ）は、原典の 1 頁を開くと答えが出ました。退避版の段階で原典の URL は台帳にあり（取得先を確かめた）、開かずに「未確認」が三つの版に残っていました。
 - 報告の §6 の題は、phase7 の §A の題と順がそのまま写っていました。隣の概念の語はこの分野の調べた跡に無く、写されたのは [SPECULATIVE] の印のついた仮説（渦の遅延・束の開放度）でした。印は報告で外されていました。
-- 出版社の論集の見本（Wiley の catalogimages）は、出版社の版として読める短い抄録が置かれていることがあり、`find-source.sh` の表には出ませんでした。検索で見つけました。
+- 出版社の論集の見本（Wiley の catalogimages）は、出版社の版として読める短い抄録が置かれていることがあり、原典を探す道具の表には出ませんでした。検索で見つけました。
 - Internet Archive の検索 API（contributor の欄）で、図書館の走査（トロント大学・Marygrove College・Digital Library of India）と利用者が上げた写しを分けられました。手元の Aristotle と Freytag は MD5 で図書館の走査と一致しました。
 - Springer Open の PDF は 2026-11-09 に idp.springer.com へ送られ、取れませんでした。arXiv の著者稿で代えました。Wayback の CDX は一度、時間切れで返事がありませんでした。
 - 手元の文字認識の道具は使っていません。文字の層の無い走査は、Internet Archive の OCR の文字（`_djvu.txt`）と頁の画像で読みました。
 
 ### 精読ノートと wiki の誤り
 
-追記（2026-11-09・司令塔）：精読ノート D19-S06 の五つの要素の頁（p.41 → p.39。誌面の右上の番号を頁の画像で確かめた）、D19-S13 の 26 行の引用（原典の OCR の文字で「Gozzi maintained that there can be but thirty-six tragic situations」を確かめた）、wiki の「ゲルツィ」（Gozzi）は直しました。D19-S13 の 56〜60 行の表の引用と、wiki の Aristotle の刷の書き方は、段 4（wiki との整合）に回します。Aristotle の「the right ending」と Freytag の「a real adjustment of conflicting forces」は、司令塔も OCR の文字で確かめました。
+追記（2026-11-09・司令塔）：精読ノート「Todorov 1971」の五つの要素の頁（p.41 → p.39。誌面の右上の番号を頁の画像で確かめた）、台帳の「Polti 1895」の行の 26 行の引用（原典の OCR の文字で「Gozzi maintained that there can be but thirty-six tragic situations」を確かめた）、wiki の「ゲルツィ」（Gozzi）は直しました。台帳の「Polti 1895」の行の 56〜60 行の表の引用と、wiki の Aristotle の刷の書き方は、段 4（wiki との整合）に回します。Aristotle の「the right ending」と Freytag の「a real adjustment of conflicting forces」は、司令塔も OCR の文字で確かめました。
 
-- `cs/knowledge/source-notes/D19/D19-S06_todorov-1971.md` 26 行と 62〜66 行：五つの要素の引用の頁「(p.41)」→「(p.39)」。誌面の右上の番号 39 を頁の画像で確かめた。
-- `cs/knowledge/source-notes/D19/D19-S13_polti-1895.md` 26 行：引用符の中の「There are only 36 tragic situations」は原典に無い。原典（1945 年の刷）の文は「Gozzi maintained that there can be but thirty-six tragic situations」。56〜60 行の表の「原文引用」の欄（「all dramatic narrative reduces to exactly 36 fundamental situations」「drama is fundamentally about *conflict*—the clash of opposing wills and circumstances」ほか）も、原典の OCR の文字に見つからない要約を引用符に入れている。引用符を外して要約と書く（低）。
-- `pd/wiki/sources/D19_polti_1895_1895-1916.md` 3 行：「ゲルツィ」は Gozzi の読み違いの見込み（同じ頁の 37 行は「ゴッツィ」）（低）。
-- `pd/wiki/sources/D19_aristotle_1907_poetics.md` 67 行「1907 (Butcher 4th ed.)」：手元の走査は第 4 版の後の刷（扉の裏は 1923 年まで）（低）。
-- 精読ノート D19-S12・D19-S11 の「5段階対応」の欄（台帳の「Stage 2-4」「Stage 1-5」）は旧い判定で、機械的な誤りではないので段 4 に回す。
+- 精読ノート「Todorov 1971」 26 行と 62〜66 行：五つの要素の引用の頁「(p.41)」→「(p.39)」。誌面の右上の番号 39 を頁の画像で確かめた。
+- 精読ノート「Polti 1895」 26 行：引用符の中の「There are only 36 tragic situations」は原典に無い。原典（1945 年の刷）の文は「Gozzi maintained that there can be but thirty-six tragic situations」。56〜60 行の表の「原文引用」の欄（「all dramatic narrative reduces to exactly 36 fundamental situations」「drama is fundamentally about *conflict*—the clash of opposing wills and circumstances」ほか）も、原典の OCR の文字に見つからない要約を引用符に入れている。引用符を外して要約と書く（低）。
+- wiki の頁「Polti 1895」 3 行：「ゲルツィ」は Gozzi の読み違いの見込み（同じ頁の 37 行は「ゴッツィ」）（低）。
+- wiki の頁「Aristotle 1907」 67 行「1907 (Butcher 4th ed.)」：手元の走査は第 4 版の後の刷（扉の裏は 1923 年まで）（低）。
+- 精読ノート「Aristotle 1907」・台帳の「Freytag 1863」の行の「5段階対応」の欄（台帳の「Stage 2-4」「Stage 1-5」）は旧い判定で、機械的な誤りではないので段 4 に回す。

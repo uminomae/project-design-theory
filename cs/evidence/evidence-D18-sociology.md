@@ -14,13 +14,13 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D18-socio
 
 社会学の古典は、対立や衝突を過程の中に書いているものが多くありました。デュルケームは、社会の密度が上がって生存の競争が激しくなると、均衡が崩れて衝突が起き、それは分業が進むことでしか解けない、と書いています。分業は競争の「和らげられた結末」で、競う者どうしが消し合わずに並んで生きられるようになる、と書きます（1893、第 4 版 p.253）。同じ本は、統合に至らない形として、規制の無い分業（アノミー）と、強制された分業も書いています。ウェーバーは、カリスマを伝統に縛られた時代の「大きな革命的な力」と呼び、それが後継者の問題をきっかけに日常の支配へ移ることを書きました。『プロテスタンティズムの倫理と資本主義の精神』では、新しい精神が不信・憎しみ・道徳的な憤りとぶつかって入ってきたこと、それが今は人を縛る「鉄の檻」になったことを書いています。バーガーとルックマンは、異端の挑戦に応えるうちに、正統の側の意味の体系そのものが作り変えられた例を挙げています。一方、グラノヴェッター（1973）は、紐帯を正の向きで対称なものに限ると断っていて、衝突は前に出ていません。その代わり、都市の再開発と闘う組織をつくれなかったボストンのウェストエンドを、統合に至らなかった例として分析しています。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D18-sociology.md`、2026-03-18 に LLM が生成、以下「報告」）は、11 の理論を取り上げ、5 つを「強い対応」としています。報告は、アノミーや鉄の檻を「束の病理」、儀礼の失敗を「失敗モード」、制度的同型化を「反創造」として、過程の外に置いて書いています。また、衝突の多くを波に当て、縁を弱い紐帯の「橋渡し」のような接続として読んでいます。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
+今の公開報告（「30 領域調査報告」の社会学の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、11 の理論を取り上げ、5 つを「強い対応」としています。報告は、アノミーや鉄の檻を「束の病理」、儀礼の失敗を「失敗モード」、制度的同型化を「反創造」として、過程の外に置いて書いています。また、衝突の多くを波に当て、縁を弱い紐帯の「橋渡し」のような接続として読んでいます。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D18-sociology.md) にあります。退避版の判定（Accept・CA・🔴 など）は、今の照合の状態の根拠にしていません。
 
 ## 一面の表
 
-照合の状態は `docs/rules/sources.md` §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。 この表で、原典の構造を対立・衝突・統合と呼ぶことと、括弧の中の並べ方の名（片方の勝利・固着など）は、Claude の読み替えです。
+照合の状態は調べ方の規約 §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。 この表で、原典の構造を対立・衝突・統合と呼ぶことと、括弧の中の並べ方の名（片方の勝利・固着など）は、Claude の読み替えです。
 
 | 論 | 対立 | 衝突 | 統合／新たな安定、または統合に至らずにどう終わったか | 論の微細さ | 照合の状態 |
 |---|---|---|---|---|---|
@@ -48,8 +48,8 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Durkheim, É. *De la division du travail social*. Paris: Félix Alcan. manifest D18-S01。手元の PDF（`cs/knowledge/raw/D18_durkheim_1893_division-labor.pdf`、Internet Archive の deladivisiondu00durk）。表紙を確かめると、**1922 年の第 4 版**で、第 2 版（1902）の序文が付いています。序文の注によると、第 2 版で初版の序論の 30 頁ほどを削っています。以下の頁は第 4 版の頁です。読んだ頁：p.24・p.46・pp.252–253・pp.344–345・pp.360–361・pp.368–370。
-- Durkheim, É. (1897). *Le suicide : étude de sociologie*. Paris: Félix Alcan. archive.org の lesuicidetudede00durkgoog（Google の走査、パブリックドメイン）。読んだ頁：p.311 の注。manifest に行は無い。
+- Durkheim, É. *De la division du travail social*. Paris: Félix Alcan. 台帳に行がある。手元の PDF（手元の PDF、Internet Archive の deladivisiondu00durk）。表紙を確かめると、**1922 年の第 4 版**で、第 2 版（1902）の序文が付いています。序文の注によると、第 2 版で初版の序論の 30 頁ほどを削っています。以下の頁は第 4 版の頁です。読んだ頁：p.24・p.46・pp.252–253・pp.344–345・pp.360–361・pp.368–370。
+- Durkheim, É. (1897). *Le suicide : étude de sociologie*. Paris: Félix Alcan. archive.org の lesuicidetudede00durkgoog（Google の走査、パブリックドメイン）。読んだ頁：p.311 の注。台帳に行は無い。
 - Durkheim, É. (1912). *Les formes élémentaires de la vie religieuse*. 英訳 *The Elementary Forms of the Religious Life*, J. W. Swain 訳, 1915。Project Gutenberg 41360（https://www.gutenberg.org/ebooks/41360 ）。この写しには頁番号が無いので、巻と章で控えます。読んだ所：第 2 巻第 7 章、第 3 巻第 5 章、結論。コリンズの「集合的沸騰」の出どころとして読んだ。
 - 『社会学的方法の規準』（1895）は開けていない。
 
@@ -78,15 +78,15 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 139 行 分業の進展を「差異の拡大（波）」、相互依存を縁に当てる | 未判定 | 中 | 原典は、密度の増加による競争の激化と衝突（p.253）を書く。報告はこの衝突を書かず、違いの出現を波、依存の形成を縁にしている。衝突をどこに当てるかは定義が決まってから |
 | ja 135〜139 行 強制された分業に触れていない | 取り違え（抜け） | 中 | 統合に至らない形として、原典に二つ目の型がある（pp.368–370）。分かれ目（自発性）も書かれている |
 | ja 81 行 判定「部分的な対応」、pres 53 行・en 70 行「強い構造対応」 | 未判定（版の食い違い） | 中 | 下の「版の間の食い違い」 |
-| manifest D18-S01 の書誌「Durkheim, É. (1893)」 | 取り違え（書誌） | 低 | 手元の PDF は 1922 年の第 4 版。精読ノート（source-notes S01）には第 4 版と書いてあるが、manifest の行には無い |
+| 台帳の「Durkheim 1893」の行の書誌「Durkheim, É. (1893)」 | 取り違え（書誌） | 低 | 手元の PDF は 1922 年の第 4 版。精読ノート（Durkheim 1893）には第 4 版と書いてあるが、台帳の行には無い |
 
 ### 2. ウェーバー：正統的支配の三類型とカリスマの日常化
 
 **要旨**：正統的支配には、合法的・伝統的・カリスマ的の三つの純粋型がある。カリスマ的支配は、日常の支配と正反対で、過去をひっくり返す革命的な力として働く。カリスマが一時のものでなく続く関係になると、後継者の問題をきっかけに、伝統化か合理化によって日常のものになる。
 
-**一次情報**：Weber, M. *Wirtschaft und Gesellschaft*（没後の 1921–22 刊。*Grundriss der Sozialökonomik* III. Abteilung）第 1 部第 3 章「Die Typen der Herrschaft」。はじめは textlog.de の写し（https://www.textlog.de/7353.html 、 https://www.textlog.de/7415.html 、 https://www.textlog.de/7414.html 。パブリックドメインの文の翻刻で、頁番号が無く、底本は書かれていない）で、節（§2・§10・§11）を読みました。2026-11-09 に、トロント大学ロバーツ図書館の本の走査（Internet Archive の資料 `wirtschaftundges00webeuoft`、1922 年の初版、contributor はトロント大学）の OCR の文字で、下に引いた語が同じ節にあることを確かめ、初版の頁を控えました。§2 は p.124、§10 は pp.140–142、§11 は pp.142–143。manifest に行は無い。
+**一次情報**：Weber, M. *Wirtschaft und Gesellschaft*（没後の 1921–22 刊。*Grundriss der Sozialökonomik* III. Abteilung）第 1 部第 3 章「Die Typen der Herrschaft」。はじめは textlog.de の写し（https://www.textlog.de/7353.html 、 https://www.textlog.de/7415.html 、 https://www.textlog.de/7414.html 。パブリックドメインの文の翻刻で、頁番号が無く、底本は書かれていない）で、節（§2・§10・§11）を読みました。2026-11-09 に、トロント大学ロバーツ図書館の本の走査（Internet Archive の資料 `wirtschaftundges00webeuoft`、1922 年の初版、contributor はトロント大学）の OCR の文字で、下に引いた語が同じ節にあることを確かめ、初版の頁を控えました。§2 は p.124、§10 は pp.140–142、§11 は pp.142–143。台帳に行は無い。
 
-**照合の状態**：本文照合済（1922 年の初版の図書館の走査の OCR の文字で読んだ。頁は初版）。2026-11-09 の一巡で、翻刻の写しに加えて、初版の走査を確かめ先にしました（`docs/cs-review/README.md`「規約で決めたこと」D11・D13・D16 の行）。
+**照合の状態**：本文照合済（1922 年の初版の図書館の走査の OCR の文字で読んだ。頁は初版）。2026-11-09 の一巡で、翻刻の写しに加えて、初版の走査を確かめ先にしました（調べ方の計画と規約「規約で決めたこと」薬学・哲学・歴史学の行）。
 
 **原典に書いてあること**：
 
@@ -112,7 +112,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨**：近代資本主義の精神は、天職の考えに立つ合理的な生き方で、キリスト教の禁欲の精神から生まれた。その精神は、伝統主義と闘って入ってきた。いまは宗教の支えを要さない機械の土台で回り、人を縛る。
 
-**一次情報**：Weber, M. (1930). *The Protestant Ethic and the Spirit of Capitalism*. Trans. T. Parsons. London: Allen & Unwin／New York: Scribner. manifest D18-S13。archive.org の protestantethics00webe（写しの奥付は 1950 年の第 3 刷）の文字の層を読んだ。読んだ頁：pp.58–59・p.69・pp.180–182。
+**一次情報**：Weber, M. (1930). *The Protestant Ethic and the Spirit of Capitalism*. Trans. T. Parsons. London: Allen & Unwin／New York: Scribner. 台帳に行がある。archive.org の protestantethics00webe（写しの奥付は 1950 年の第 3 刷）の文字の層を読んだ。読んだ頁：pp.58–59・p.69・pp.180–182。
 
 **照合の状態**：本文照合済（Parsons 訳）。原著（1904–05・1920）は未照合。
 
@@ -125,13 +125,13 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **対立・衝突・統合の読み**：原典は、新しい精神と伝統主義の対立、新しい企業家への不信と憤り（衝突）、近代の経済の秩序（統合）を書いています。その秩序はいまは人を縛る檻として書かれていて、統合はしたが固まって動かない形の、はっきりした例になります。原典は、この先を、新しい預言者・古い理想の復活・機械化された化石化の三つの見込みとして開いたままにしています。悪い統合も統合として並べ、その先に次の対立が来うるかを見る材料になりそうです。
 
-**今の報告から直すこと**：報告はこの著作を論として立てていない。ja 63・147・205・219 行の「鉄の檻」は、この著作の p.181 に当たる（上の §2 の表）。manifest D18-S13 の行は「Stage 1-5: 中世社会→…近代資本主義への統合」と書くが、これは段への当てはめで、原典の語ではない（低）。
+**今の報告から直すこと**：報告はこの著作を論として立てていない。ja 63・147・205・219 行の「鉄の檻」は、この著作の p.181 に当たる（上の §2 の表）。台帳の「Weber 1905」の行は「Stage 1-5: 中世社会→…近代資本主義への統合」と書くが、これは段への当てはめで、原典の語ではない（低）。
 
 ### 4. ディマジオ＆パウエル：制度的同型化と組織の場
 
 **要旨**：なぜ組織はこれほど似ているのか。組織の場（organizational field）ができると、組織を変えようとする合理的な行為者が、組織を互いに似させていく。合理化と官僚化の動力は、競争の市場から、国家と専門職に移った。
 
-**一次情報**：DiMaggio, P. J. & Powell, W. W. (1983). The iron cage revisited: Institutional isomorphism and collective rationality in organizational fields. *American Sociological Review* 48(2), 147–160. DOI 10.2307/2095101。manifest に行は無い。写し https://www.gwern.net/doc/sociology/1983-dimaggio.pdf （誌面の走査）。読んだ頁：pp.147–150・p.154・p.157。書誌は Crossref と PDF の表紙で一致した。
+**一次情報**：DiMaggio, P. J. & Powell, W. W. (1983). The iron cage revisited: Institutional isomorphism and collective rationality in organizational fields. *American Sociological Review* 48(2), 147–160. DOI 10.2307/2095101。台帳に行は無い。写し https://www.gwern.net/doc/sociology/1983-dimaggio.pdf （誌面の走査）。読んだ頁：pp.147–150・p.154・p.157。書誌は Crossref と PDF の表紙で一致した。
 
 **照合の状態**：本文照合済。
 
@@ -144,7 +144,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 - 組織は、資源と顧客だけでなく、政治的な力と制度上の正統性も争う（p.150）。三つの仕組みは、政治的な影響と正統性の問題から来る強制的同型化、不確かさへの標準的な応答から来る模倣的同型化、専門職化に伴う規範的同型化（p.150）。外の圧力にすぐ応える組織もあれば、長く抵抗したあとで変わる組織もある（p.154）。
 - 制度的同型化の理論は、組織の生活でありふれた「the irrationality, the frustration of power, and the lack of innovation」を理解する助けになる、と書く（p.157）。
 
-**対立・衝突・統合の読み**：原典は、多様な組織が、資源・力・正統性を争う中で、強制・模倣・規範の圧力を受け、互いに似ていく過程を書いています。抵抗する組織も書かれています。統合のあとに残るのは、のちに変わる力を縛る環境と、非合理・力の挫折・革新の欠けた形で、固まった統合の例として並べられそうです。報告はこれを「創造でなく同質化」「反創造」と呼んで、5段階の外の問いにしていますが、この記録では、悪い統合も統合として並べます（`docs/cs-review/README.md`「中心の問い」）。
+**対立・衝突・統合の読み**：原典は、多様な組織が、資源・力・正統性を争う中で、強制・模倣・規範の圧力を受け、互いに似ていく過程を書いています。抵抗する組織も書かれています。統合のあとに残るのは、のちに変わる力を縛る環境と、非合理・力の挫折・革新の欠けた形で、固まった統合の例として並べられそうです。報告はこれを「創造でなく同質化」「反創造」と呼んで、5段階の外の問いにしていますが、この記録では、悪い統合も統合として並べます（調べ方の計画と規約「中心の問い」）。
 
 **今の報告から直すこと**：
 
@@ -160,9 +160,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨**：社会は、外在化・客体化・内在化の三つの契機から成る弁証法の過程である。制度は、慣習化した行為が、行為者の型ごとに互いに類型化されるところに生まれる。正当化は意味の「二次の客体化」で、意味の体系（象徴的世界）を支える。
 
-**一次情報**：Berger, P. L. & Luckmann, T. (1966). *The Social Construction of Reality*. 読んだのは Penguin 版（1991 年の刷と見られる）の写しで、archive.org に個人が上げたもの（https://archive.org/details/BergerSocialConstructionOfReality_201901 ）。この写しは著作権のある本で、上げた人の権利は確かめていない。manifest D18-S02（blocked-access）の書籍に当たる。文字の層の頁の数字が飛び飛びなので、以下の頁は数字の並びから読んだ推定で、「前後」と書く。読んだ所：pp.70–72 前後（制度化）、pp.78–79 前後（三つの契機）、p.110 前後（正当化）、pp.123–124 前後（異端）、pp.129–131 前後（治療と無化）、p.149 前後（三つの契機の同時性）。
+**一次情報**：Berger, P. L. & Luckmann, T. (1966). *The Social Construction of Reality*. 読んだのは Penguin 版（1991 年の刷と見られる）の写しで、archive.org に個人が上げたもの（https://archive.org/details/BergerSocialConstructionOfReality_201901 ）。この写しは著作権のある本で、上げた人の権利は確かめていない。台帳に行がある（自動では取れない）の書籍に当たる。文字の層の頁の数字が飛び飛びなので、以下の頁は数字の並びから読んだ推定で、「前後」と書く。読んだ所：pp.70–72 前後（制度化）、pp.78–79 前後（三つの契機）、p.110 前後（正当化）、pp.123–124 前後（異端）、pp.129–131 前後（治療と無化）、p.149 前後（三つの契機の同時性）。
 
-**照合の状態**：未照合（個人が上げた写しで読んだ頁を書く。頁は推定）。2026-11-09 の一巡で、あとの決まり（上げた人の分からない写しで読んだものは、読んだ頁を書いて未照合とする。`docs/cs-review/README.md`「規約で決めたこと」）にそろえました。それまでは「本文照合済（写し）」と書いていました。
+**照合の状態**：未照合（個人が上げた写しで読んだ頁を書く。頁は推定）。2026-11-09 の一巡で、あとの決まり（上げた人の分からない写しで読んだものは、読んだ頁を書いて未照合とする。調べ方の計画と規約「規約で決めたこと」）にそろえました。それまでは「本文照合済（写し）」と書いていました。
 
 **原典に書いてあること**：
 
@@ -183,7 +183,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 111 行 三つの契機・制度化・正当化の要約、三つの契機は「同時並行的に作動すると明示」 | 一致 | ― | p.71・p.78・p.110・p.149 前後と合う。ただし原典は、個人の一生には時間の順があるとも書く（p.149 前後） |
 | ja 115 行 場→外在化（波）→制度化（縁）→正当化（渦）→内在化（束→場） | 未判定 | 中 | 原典で対立がはっきり書かれているのは異端との衝突（pp.123–124 前後）。報告の当てはめは衝突を含まない。定義が決まってから |
 | ja 77 行「強い対応」、pres 49 行「部分的な対応」、en 66 行「Strong… with reservation」 | 未判定（版の食い違い） | 中 | 下の「版の間の食い違い」 |
-| manifest D18-S02「blocked-access」 | 未判定（台帳の状態） | 低 | archive.org に個人が上げた写しは開ける。ただし権利が確かでないので、司令塔が状態の書き方を決める |
+| 台帳の「Berger & Luckmann 1966」の行「自動では取れない」 | 未判定（台帳の状態） | 低 | archive.org に個人が上げた写しは開ける。ただし権利が確かでないので、司令塔が状態の書き方を決める |
 
 ### 6. ブルデュー：資本・場・ハビトゥス
 
@@ -191,7 +191,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Bourdieu, P. (1986). The forms of capital. In J. G. Richardson (Ed.), *Handbook of Theory and Research for the Sociology of Education* (pp.241–258). Greenwood. R. Nice 訳。marxists.org の打ち直し（https://www.marxists.org/reference/subject/philosophy/works/fr/bourdieu-forms-capital.htm ）。この写しには誌面の頁番号が無いので、節の名と注の番号で控える。読んだ所：冒頭・「Cultural Capital」・「Conversions」の節、注 3・注 18。原文は 1983 年のドイツ語版。manifest に行は無い。marxists.org は有志が打ち直して置く文書館で、この訳（1986 年、権利は切れていない）を上げた人と権利は確かめていない。2026-11-09 に別の置き場を探すと、教員の個人の頁の打ち直し（Stanford の教員の頁）と、インド工科大学カンプール校の教員の頁の、読み物の論集に再録された抄録（省略の印「[. . .]」がある。どの授業の資料かを示す頁は見つからなかった）だけだった。どれも、それだけで本文照合済にしない（`docs/cs-review/README.md`「規約で決めたこと」D19 の行。D19 の記録は、同じ著者の打ち直しを未照合にしている）。
+- Bourdieu, P. (1986). The forms of capital. In J. G. Richardson (Ed.), *Handbook of Theory and Research for the Sociology of Education* (pp.241–258). Greenwood. R. Nice 訳。marxists.org の打ち直し（https://www.marxists.org/reference/subject/philosophy/works/fr/bourdieu-forms-capital.htm ）。この写しには誌面の頁番号が無いので、節の名と注の番号で控える。読んだ所：冒頭・「Cultural Capital」・「Conversions」の節、注 3・注 18。原文は 1983 年のドイツ語版。台帳に行は無い。marxists.org は有志が打ち直して置く文書館で、この訳（1986 年、権利は切れていない）を上げた人と権利は確かめていない。2026-11-09 に別の置き場を探すと、教員の個人の頁の打ち直し（Stanford の教員の頁）と、インド工科大学カンプール校の教員の頁の、読み物の論集に再録された抄録（省略の印「[. . .]」がある。どの授業の資料かを示す頁は見つからなかった）だけだった。どれも、それだけで本文照合済にしない（調べ方の計画と規約「規約で決めたこと」文学・文芸学の行。文学・文芸学の記録は、同じ著者の打ち直しを未照合にしている）。
 - 『ディスタンクシオン』（1979）・『実践感覚』（1980）は開けていない。
 
 **照合の状態**：未照合（1986 は上の打ち直しで節を読んだので、読んだ節を書く。2026-11-09 の一巡で、本文照合済から改めました）。1979・1980 は開けていない。
@@ -203,7 +203,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 - 客体化した文化資本は、文化生産の場や社会階級の場で続く闘争の中で、武器と賭け金として使われるかぎりで、働く資本として存在する（同じ節）。
 - 資本の転換は、資本と社会空間の位置の再生産を狙う戦略の土台になる。社会関係資本をつくる交換には、恩知らずの危うさが伴う（「Conversions」の節）。
 
-**対立・衝突・統合の読み**：原典は、場を、同じ財を争う資本の持ち手どうしの闘争の場として書いています。闘争の結果として残るのは、資本の配分と位置の再生産です。新しいものが生まれる過程は、1986 年の論文の中心ではありません。至らない形として書かれているのは、転換に伴う損失と、社会関係資本をつくる交換が恩知らずで報われない危うさまでで、それより先（転換が成り立たずにどう終わるか）は、読んだ節に書かれていません。報告は、ブルデューの「場」と5段階の「場」の違いに注意を促していて、これは正しい注意です。語が同じことは、対応の根拠にも反証にも数えません（`docs/cs-review/README.md`「規約で決めたこと」）。
+**対立・衝突・統合の読み**：原典は、場を、同じ財を争う資本の持ち手どうしの闘争の場として書いています。闘争の結果として残るのは、資本の配分と位置の再生産です。新しいものが生まれる過程は、1986 年の論文の中心ではありません。至らない形として書かれているのは、転換に伴う損失と、社会関係資本をつくる交換が恩知らずで報われない危うさまでで、それより先（転換が成り立たずにどう終わるか）は、読んだ節に書かれていません。報告は、ブルデューの「場」と5段階の「場」の違いに注意を促していて、これは正しい注意です。語が同じことは、対応の根拠にも反証にも数えません（調べ方の計画と規約「規約で決めたこと」）。
 
 **今の報告から直すこと**：
 
@@ -247,7 +247,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨**：近代の生活のいちばん深い問題は、個人が、社会の主権的な力・歴史の重み・外の文化と生活の技術に対して、自分の存在の独立と個性を保とうとすることから来る。大都市の刺激の洪水と貨幣経済は、知性化と無感動（blasé）を生む。人どうしの控えめさの内側には、嫌悪と反感がある。
 
-**一次情報**：Simmel, G. (1903). Die Großstädte und das Geistesleben. 英訳「The Metropolis and Mental Life」, D. N. Levine (Ed.), *On Individuality and Social Forms*. Chicago: University of Chicago Press, 1971, pp.324–339。German History in Documents and Images（GHDI）の写し（https://germanhistorydocs.org/en/wilhelmine-germany-and-the-first-world-war-1890-1918/georg-simmel-the-metropolis-and-mental-life-1903.pdf 、9 頁）。訳者の名は写しに書かれていない。以下の頁は写しの頁。manifest D18-S12。読んだ頁：pp.1–9（全文）。
+**一次情報**：Simmel, G. (1903). Die Großstädte und das Geistesleben. 英訳「The Metropolis and Mental Life」, D. N. Levine (Ed.), *On Individuality and Social Forms*. Chicago: University of Chicago Press, 1971, pp.324–339。German History in Documents and Images（GHDI）の写し（https://germanhistorydocs.org/en/wilhelmine-germany-and-the-first-world-war-1890-1918/georg-simmel-the-metropolis-and-mental-life-1903.pdf 、9 頁）。訳者の名は写しに書かれていない。以下の頁は写しの頁。台帳に行がある。読んだ頁：pp.1–9（全文）。
 
 **照合の状態**：本文照合済（英訳の写し。頁は写しの頁）。
 
@@ -266,7 +266,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨**：社会ネットワークの分析を、ミクロとマクロをつなぐ道具として示す。紐帯の強さを、時間・感情の強さ・親密さ・互いの奉仕の組み合わせとして定義する。強い紐帯で結ばれた二人は友人を共有しやすいので、ほぼ例外なく、強い紐帯は橋にならない。橋は弱い紐帯で、拡散・移動の機会・地域の組織化に大きな役割を持つ。
 
-**一次情報**：Granovetter, M. S. (1973). The strength of weak ties. *American Journal of Sociology* 78(6), 1360–1380. DOI 10.1086/225469。manifest D18-S04。OA の写し https://snap.stanford.edu/class/cs224w-readings/granovetter73weakties.pdf （画像だけの走査で、文字の層が無い。頁を画像で読んだ）。読んだ頁：pp.1360–1361・p.1364・p.1366・p.1371・pp.1373–1374・p.1377。書誌は Crossref と PDF の表紙で一致した。
+**一次情報**：Granovetter, M. S. (1973). The strength of weak ties. *American Journal of Sociology* 78(6), 1360–1380. DOI 10.1086/225469。台帳に行がある。OA の写し https://snap.stanford.edu/class/cs224w-readings/granovetter73weakties.pdf （画像だけの走査で、文字の層が無い。頁を画像で読んだ）。読んだ頁：pp.1360–1361・p.1364・p.1366・p.1371・pp.1373–1374・p.1377。書誌は Crossref と PDF の表紙で一致した。
 
 **照合の状態**：本文照合済。
 
@@ -285,7 +285,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 | 今の報告の行 | 判定 | 重さ | 中身 |
 |---|---|---|---|
-| ja 119 行 1973 年の論の要約のあとに「また『埋め込み』（embeddedness）概念により…論じました」 | 帰属違い | 高 | 埋め込みは Granovetter（1985）. Economic action and social structure: The problem of embeddedness. *AJS* 91(3), 481–510（DOI 10.1086/228311、Crossref で書誌だけ確かめた。本文は未照合）。1973 年の論文の中ではない。pres 81 行は 1985 年と書き分けていて正しい。history.md の「D18 の Granovetter」の疑いはこれに当たる |
+| ja 119 行 1973 年の論の要約のあとに「また『埋め込み』（embeddedness）概念により…論じました」 | 帰属違い | 高 | 埋め込みは Granovetter（1985）. Economic action and social structure: The problem of embeddedness. *AJS* 91(3), 481–510（DOI 10.1086/228311、Crossref で書誌だけ確かめた。本文は未照合）。1973 年の論文の中ではない。pres 81 行は 1985 年と書き分けていて正しい。調べ直しの経緯の「社会学の Granovetter」の疑いはこれに当たる |
 | ja 123 行「ロジャーズのキャズム理論が示すように」 | 帰属違い | 高 | 「キャズム」は Moore（1991）の語で、ロジャーズのものではない（未照合・記憶。退避版 122 行と調べた跡 phase6 59 行は Moore と書いている）。調べた跡 phase7 106 行で「Rogers のキャズム」になり、報告に入った |
 | ja 59 行・123 行「弱い紐帯は…縁の最も純粋な社会学的定式化」、en 83 行・85 行「one of the purest」「one of the strongest findings in the whole investigation」 | 言い過ぎ | 中 | 原典は紐帯を正で対称なものに限る（p.1361 の脚注 2）。衝突を含まない接続を縁の典型にすると、ja §3 の縁の定義「対立する要素が共存し」と向きが合わない。「最も」は 30 領域を数えた跡が無い |
 | ja 119 行「新奇な情報の伝達において効果的であることを示しました」 | 一致 | 低 | p.1366・p.1371 とおおむね合う。ただし論文の多くは理論の論証で、仕事の調査の数は N = 54（p.1371） |
@@ -296,7 +296,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 ### 10. ギデンズ：構造化理論
 
-**一次情報**：Giddens, A. (1984). *The Constitution of Society*. Polity Press（manifest D18-S03、blocked-access）。archive.org の三つの版はどれも貸し出しだけで、文字の層を読めなかった。ほかに、学術検索と一般の検索で本の写しを探したが、見つかったのは中身の無い案内のページだけだった。著者の論文版も見つけられなかった。
+**一次情報**：Giddens, A. (1984). *The Constitution of Society*. Polity Press（台帳に行がある、自動では取れない）。archive.org の三つの版はどれも貸し出しだけで、文字の層を読めなかった。ほかに、学術検索と一般の検索で本の写しを探したが、見つかったのは中身の無い案内のページだけだった。著者の論文版も見つけられなかった。
 
 **照合の状態**：未照合。
 
@@ -308,7 +308,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **照合の状態**：未照合。
 
-**今の報告から直すこと**：ja 151 行の採用者の割合（2.5・13.5・34・34・16%）と五つの属性は、未照合と書く。退避版の検証の跡は「教科書レベルの確立事実」を理由に verified としていた（`archive/pre-rerun-20260407/phase9/ref-check-D18.md`）。ja 75 行は「部分的な対応（波→渦→束）」、en 69 行と pres 47 行は「強い（場から束）」で、版で食い違う（中）。ja 123 行の「ロジャーズのキャズム理論」は §9 の表。
+**今の報告から直すこと**：ja 151 行の採用者の割合（2.5・13.5・34・34・16%）と五つの属性は、未照合と書く。退避版の検証の跡は「教科書レベルの確立事実」を理由に verified としていた（退避版の参照の点検）。ja 75 行は「部分的な対応（波→渦→束）」、en 69 行と pres 47 行は「強い（場から束）」で、版で食い違う（中）。ja 123 行の「ロジャーズのキャズム理論」は §9 の表。
 
 ### 12. 社会運動論：マッカーシー＆ザルド・タロウ
 
@@ -342,11 +342,11 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ギデンズ | 強い（全5段階） | 強い | 強い | Accept |
 | 埋め込み（embeddedness）の年 | 年を書かず 1973 年の論の続きに置く | 書いていない | 1985 年と書く | 1985 年と書く |
 
-同じ報告の訳でなく、版ごとに別に生成されたことが、件数と段の食い違いの出どころと見られます（D22 と同じ）。cs のトップの英語の題「D18 Sociology: Weak Ties Generate Structure」（`cs/index.html` 498 行）は、en の副題から来ていて、弱い紐帯が構造を生むとは 1973 年の論文は書いていません（言い過ぎ・中）。
+同じ報告の訳でなく、版ごとに別に生成されたことが、件数と段の食い違いの出どころと見られます（経営学と同じ）。cs のトップの英語の題「社会学 Sociology: Weak Ties Generate Structure」（創造とはのトップ 498 行）は、en の副題から来ていて、弱い紐帯が構造を生むとは 1973 年の論文は書いていません（言い過ぎ・中）。
 
 ### テンプレート由来の表示
 
-「立ち位置明示」（3 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6」「Phase 7」（30・38 行）、「方法論的開示（S60）」（44 行）、「温度帯の分布」（85 行）、「安全弁」（87 行）、「結びの温度開示」「温度帯」（231〜232 行）、「Colophon generator_model」（249〜259 行）。44〜49 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（writing.md §1-1・§1-8）。D22・D10 と同じく、報告のテンプレートが原因で、個別でなくテンプレートで直します。
+「立ち位置明示」（3 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6」「Phase 7」（30・38 行）、「方法論的開示（S60）」（44 行）、「温度帯の分布」（85 行）、「安全弁」（87 行）、「結びの温度開示」「温度帯」（231〜232 行）、「Colophon generator_model」（249〜259 行）。44〜49 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（書き方の規約 §1-1・§1-8）。経営学・臨床医学・免疫と同じく、報告のテンプレートが原因で、個別でなくテンプレートで直します。
 
 ### 誤りの出どころ
 
@@ -363,7 +363,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | 版ごとの件数と段の食い違い | ja・en・pres が別々に生成されたこと |
 | 型 F の表示 | 報告のテンプレート |
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 H（原典に無い体系）：「抽象型（ルーマン）、再帰型（ギデンズ）、伝播型（ロジャーズ）…11エントリに11タイプの異なる縁の型が対応し、重複がありません」（193 行）。型の名は原典に無く、退避版の表で LLM が付けたもの。「縁の多様性」の根拠にはならない。
 - 型 B と善悪の判断：「束の不足と過剰のいずれも病理を生む」（63 行）、「束の病理学」（203〜205 行）、「『健全な循環』と『病理的停滞』の区別」（205 行）、「『創造』のみを記述するのか、『創造と反創造の両方』を記述するのか」（223 行）。悪い統合も統合として並べる（stance 1-2、README「中心の問い」）。
@@ -376,35 +376,35 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 1. 本文を開けなかった論（ギデンズ・ロジャーズ・社会運動論・ルーマン）を、この分野の論として残すか。予想：残し、照合の状態を「未照合」と書く（本文を読めない出典は、確かめたことまでしか書かない）。どれも報告が「強い」としている論なので、外すより、未照合のまま「強い」を外すほうが stance 2-6 に合う。代わりに、本文を読めたウェーバーの『倫理』とジンメルを論として立てた。コリンズ（2004）は、ブラウザで写しを保存してもらえれば読める。
 2. ブルデューの「場」と5段階の「場」（ja 213〜215 行）。予想：語が同じことは対応の根拠にも反証にも数えない（規約で決めたこと）。5段階の「場」の語を変えるかは、5段階の定義の判断（README「判断が要ること」1）の中で見る。
-3. 個人が上げた写しや打ち直し（バーガー＆ルックマンの archive.org の写し、ブルデューの marxists.org の打ち直し、ウェーバーの textlog の写し）を、公開の記録の確かめ先として書いてよいか。予想：D22 で授業用の写しを書いた前例に合わせて書き、写しの性格（頁の推定・権利の未確認）を添える。司令塔の判断でよさそう。→ 規約で決まった（`docs/cs-review/README.md`「規約で決めたこと」2026-11-08 の D14・D18 の行と、2026-11-09 の D19・D29 の行）。読んでよいが、性格を添え、それだけで本文照合済にしない。2026-11-09 の一巡で、バーガー＆ルックマンとブルデューを未照合にし、ウェーバーは 1922 年の初版の図書館の走査を確かめ先に足しました。
+3. 個人が上げた写しや打ち直し（バーガー＆ルックマンの archive.org の写し、ブルデューの marxists.org の打ち直し、ウェーバーの textlog の写し）を、公開の記録の確かめ先として書いてよいか。予想：経営学で授業用の写しを書いた前例に合わせて書き、写しの性格（頁の推定・権利の未確認）を添える。司令塔の判断でよさそう。→ 規約で決まった（調べ方の計画と規約「規約で決めたこと」2026-11-08 の心理学・社会学の行と、2026-11-09 の文学・文芸学・複雑系科学の行）。読んでよいが、性格を添え、それだけで本文照合済にしない。2026-11-09 の一巡で、バーガー＆ルックマンとブルデューを未照合にし、ウェーバーは 1922 年の初版の図書館の走査を確かめ先に足しました。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D18-S14 | DiMaggio, P. J. & Powell, W. W. (1983). The iron cage revisited. *American Sociological Review* 48(2), 147–160. DOI 10.2307/2095101 | https://www.gwern.net/doc/sociology/1983-dimaggio.pdf （誌面の走査） | url-verified |
-| D18-S15 | Durkheim, É. (1897). *Le suicide : étude de sociologie*. Paris: Félix Alcan | https://archive.org/details/lesuicidetudede00durkgoog （パブリックドメイン） | url-verified |
-| D18-S16 | Durkheim, É. (1912/1915). *The Elementary Forms of the Religious Life*. Trans. J. W. Swain | https://www.gutenberg.org/ebooks/41360 （頁番号なし） | url-verified |
-| D18-S17 | Weber, M. (1921–22). *Wirtschaft und Gesellschaft*, 第 1 部第 3 章「Die Typen der Herrschaft」§2・§10・§11 | https://archive.org/details/wirtschaftundges00webeuoft （1922 年の初版。トロント大学の図書館の走査。p.124・pp.140–143）。翻刻 https://www.textlog.de/7415.html ほか（頁番号なし） | url-verified |
-| D18-S18 | Bourdieu, P. (1986). The forms of capital. In J. G. Richardson (Ed.), *Handbook of Theory and Research for the Sociology of Education*, 241–258 | https://www.marxists.org/reference/subject/philosophy/works/fr/bourdieu-forms-capital.htm （有志の文書館の打ち直し。頁番号なし。上げた人と権利は未確認） | url-verified（打ち直し） |
-| D18-S19 | Collins, R. (1981). On the microfoundations of macrosociology. *American Journal of Sociology* 86(5), 984–1014. DOI 10.1086/227351。スペイン語訳 *Sociológica México* 40(112), 2025, 271–322 | https://sociologicamexico.azc.uam.mx/index.php/Sociologica/article/view/1849 （訳。CC BY-NC-ND 4.0） | url-verified（訳） |
-| D18-S20 | Collins, R. (2004). *Interaction Ritual Chains*. Princeton UP | https://is.muni.cz/el/fss/jaro2018/SOC403/um/Collins-Interaction-Ritual-Chains.pdf （授業用の写し。自動取得を確かめる画面を返すので、ブラウザでの保存が要る） | blocked-access |
-| D18-S21 | Granovetter, M. (1985). Economic action and social structure: The problem of embeddedness. *American Journal of Sociology* 91(3), 481–510. DOI 10.1086/228311 | 本文 OA を探していない | citation-only |
-| D18-S22 | McCarthy, J. D. & Zald, M. N. (1977). Resource mobilization and social movements: A partial theory. *American Journal of Sociology* 82(6), 1212–1241. DOI 10.1086/226464 | 本文 OA なし | citation-only |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| DiMaggio, P. J. & Powell, W. W. (1983). The iron cage revisited. *American Sociological Review* 48(2), 147–160. DOI 10.2307/2095101 | https://www.gwern.net/doc/sociology/1983-dimaggio.pdf （誌面の走査） | 取得先を確かめた |
+| Durkheim, É. (1897). *Le suicide : étude de sociologie*. Paris: Félix Alcan | https://archive.org/details/lesuicidetudede00durkgoog （パブリックドメイン） | 取得先を確かめた |
+| Durkheim, É. (1912/1915). *The Elementary Forms of the Religious Life*. Trans. J. W. Swain | https://www.gutenberg.org/ebooks/41360 （頁番号なし） | 取得先を確かめた |
+| Weber, M. (1921–22). *Wirtschaft und Gesellschaft*, 第 1 部第 3 章「Die Typen der Herrschaft」§2・§10・§11 | https://archive.org/details/wirtschaftundges00webeuoft （1922 年の初版。トロント大学の図書館の走査。p.124・pp.140–143）。翻刻 https://www.textlog.de/7415.html ほか（頁番号なし） | 取得先を確かめた |
+| Bourdieu, P. (1986). The forms of capital. In J. G. Richardson (Ed.), *Handbook of Theory and Research for the Sociology of Education*, 241–258 | https://www.marxists.org/reference/subject/philosophy/works/fr/bourdieu-forms-capital.htm （有志の文書館の打ち直し。頁番号なし。上げた人と権利は未確認） | 取得先を確かめた（打ち直し） |
+| Collins, R. (1981). On the microfoundations of macrosociology. *American Journal of Sociology* 86(5), 984–1014. DOI 10.1086/227351。スペイン語訳 *Sociológica México* 40(112), 2025, 271–322 | https://sociologicamexico.azc.uam.mx/index.php/Sociologica/article/view/1849 （訳。CC BY-NC-ND 4.0） | 取得先を確かめた（訳） |
+| Collins, R. (2004). *Interaction Ritual Chains*. Princeton UP | https://is.muni.cz/el/fss/jaro2018/SOC403/um/Collins-Interaction-Ritual-Chains.pdf （授業用の写し。自動取得を確かめる画面を返すので、ブラウザでの保存が要る） | 自動では取れない |
+| Granovetter, M. (1985). Economic action and social structure: The problem of embeddedness. *American Journal of Sociology* 91(3), 481–510. DOI 10.1086/228311 | 本文 OA を探していない | 書誌だけ |
+| McCarthy, J. D. & Zald, M. N. (1977). Resource mobilization and social movements: A partial theory. *American Journal of Sociology* 82(6), 1212–1241. DOI 10.1086/226464 | 本文 OA なし | 書誌だけ |
 
-既存の行の直しの案：D18-S01 の書誌に「手元の PDF は 1922 年の第 4 版」を足す。D18-S02（Berger & Luckmann）は、archive.org に個人が上げた写し（https://archive.org/details/BergerSocialConstructionOfReality_201901 、Penguin 版）が開ける。権利が確かでないので、状態の書き方は司令塔が決める。
+既存の行の直しの案：台帳の「Durkheim 1893」の行の書誌に「手元の PDF は 1922 年の第 4 版」を足す。台帳の「Berger & Luckmann 1966」の行（Berger & Luckmann）は、archive.org に個人が上げた写し（https://archive.org/details/BergerSocialConstructionOfReality_201901 、Penguin 版）が開ける。権利が確かでないので、状態の書き方は司令塔が決める。
 
 ## 手順について分かったこと
 
-- manifest にある OA の写しと、新しく探した写しを、作業用の一時置き場に取ってきて読んだ（repo には入れていない）。本文で読めた論は 13 のうち 9。報告の 11 の論では 7。そのうちバーガー＆ルックマンとブルデューは、上げた人の分からない写しと打ち直しで読んだので、照合の状態は未照合（2026-11-09 の一巡のあとで、本文照合済は 13 のうち 7）。
+- 台帳にある OA の写しと、新しく探した写しを、作業用の一時置き場に取ってきて読んだ（repo には入れていない）。本文で読めた論は 13 のうち 9。報告の 11 の論では 7。そのうちバーガー＆ルックマンとブルデューは、上げた人の分からない写しと打ち直しで読んだので、照合の状態は未照合（2026-11-09 の一巡のあとで、本文照合済は 13 のうち 7）。
 - 社会学は原典が書籍のものが多く、ギデンズ・ロジャーズ・ルーマン・社会運動論は開けなかった。一方、著作権の切れた古典（デュルケーム・ウェーバー・ジンメル）は、全文を読めた。古典の方が、衝突と至らない形をはっきり書いていた。
 - 写しには、文字の層が無いもの（グラノヴェッター 1973）、頁番号が無いもの（textlog・marxists.org・Gutenberg。textlog のウェーバーは、あとで初版の走査で頁を控えた）、頁の数字が飛び飛びのもの（バーガー＆ルックマン）、翻訳しか読めないもの（コリンズ 1981）があった。頁を誌面の頁で書けるかは、写しごとに違う。
-- 手元の PDF（デュルケーム）は、manifest の書誌（1893）と違い、1922 年の第 4 版だった。表紙を突き合わせる手順で見つかった。
-- 精読ノートの S04（グラノヴェッター）は、後半（pp.1369–1380）を読まずに「実証部分は中心主張を修正する性質のものではない」と書いていた。その後半に、統合に至らない例（ウェストエンド）があった。ノートに無いことを、原典に無いことと読まない（D22 と同じ）。
+- 手元の PDF（デュルケーム）は、台帳の書誌（1893）と違い、1922 年の第 4 版だった。表紙を突き合わせる手順で見つかった。
+- 精読ノートの「Granovetter 1973」（グラノヴェッター）は、後半（pp.1369–1380）を読まずに「実証部分は中心主張を修正する性質のものではない」と書いていた。その後半に、統合に至らない例（ウェストエンド）があった。ノートに無いことを、原典に無いことと読まない（経営学と同じ）。
 
 ### 精読ノートの誤り（司令塔が直す）
 
-- `cs/knowledge/source-notes/D18/D18-S12_simmel-1903.md` 51 行：引用「The essence of the blasé attitude consists in the blunting of discrimination … experienced as insubstantial」（p.4）は、ノートが挙げる GHDI の写しの本文と合わない。写しは「The essence of the blasé attitude is an indifference toward the distinctions between things … experienced as meaningless」（p.4）。別の訳から写した見込み。49 行の「unconditionally reserved to the city」は写しの p.3（ノートは p.4）。67 行の「place for the conflict」は写しの p.8（ノートは p.9）。59 行の「One nowhere feels as lonely」は、写しでは「one never feels as lonely and as lost」（p.6）。
-- `pd/wiki/sources/D18_durkheim_1893_division-labor.md` 23 行：「デュルケームはパリ大学教授として」1893 年の本を論じた、と書く。1893 年のデュルケームはボルドー大学にいたと Claude は記憶している（未照合・記憶）。第 4 版（1922）の表紙の肩書は確かめていない。
-- `pd/wiki/sources/D18_granovetter_1973_1973.md` 19 行：「『禁じられた三項組』というシンプルな数理で証明しました」。原典は、この三者の組が「never」現れないと誇張して仮定したうえで帰結を見ている（ノート S04 の §4・§6 も同じことを書いている）。「証明」は言い過ぎ（低）。同じ行の「住居を見つけたり」は 1973 年の論文で確かめていない。
-- `cs/knowledge/source-notes/D18/D18-S04_granovetter-1973.md` §7：「求職と community mobilization の実証部分は未読のままだが、それらは論文の中心主張を補強するものであり、修正する性質のものではない」。未読の部分について推測で書いている。§7 の「ノーザン文化圏（Boston West End）」は、原典ではボストンのウェストエンドのイタリア系の地域（p.1373）。
+- 精読ノート「Simmel 1903」 51 行：引用「The essence of the blasé attitude consists in the blunting of discrimination … experienced as insubstantial」（p.4）は、ノートが挙げる GHDI の写しの本文と合わない。写しは「The essence of the blasé attitude is an indifference toward the distinctions between things … experienced as meaningless」（p.4）。別の訳から写した見込み。49 行の「unconditionally reserved to the city」は写しの p.3（ノートは p.4）。67 行の「place for the conflict」は写しの p.8（ノートは p.9）。59 行の「One nowhere feels as lonely」は、写しでは「one never feels as lonely and as lost」（p.6）。
+- wiki の頁「Durkheim 1893」 23 行：「デュルケームはパリ大学教授として」1893 年の本を論じた、と書く。1893 年のデュルケームはボルドー大学にいたと Claude は記憶している（未照合・記憶）。第 4 版（1922）の表紙の肩書は確かめていない。
+- wiki の頁「Granovetter 1973」 19 行：「『禁じられた三項組』というシンプルな数理で証明しました」。原典は、この三者の組が「never」現れないと誇張して仮定したうえで帰結を見ている（ノート「Granovetter 1973」の §4・§6 も同じことを書いている）。「証明」は言い過ぎ（低）。同じ行の「住居を見つけたり」は 1973 年の論文で確かめていない。
+- 精読ノート「Granovetter 1973」 §7：「求職と community mobilization の実証部分は未読のままだが、それらは論文の中心主張を補強するものであり、修正する性質のものではない」。未読の部分について推測で書いている。§7 の「ノーザン文化圏（Boston West End）」は、原典ではボストンのウェストエンドのイタリア系の地域（p.1373）。

@@ -10,23 +10,23 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D02-physi
 
 # 物理学：論ごとの照合の記録
 
-この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。物理の記述が正しいかどうかは Claude が引き受けます（`docs/rules/sources.md` §1-4・§6）。
+この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。物理の記述が正しいかどうかは Claude が引き受けます（調べ方の規約 §1-4・§6）。
 
 物理の原典には、二つのものが競い合って一つの形に落ち着く場合と、落ち着かない場合の両方が、式や実験の形で書かれていました。Becker と Döring（1935）は、過飽和の蒸気の中で、臨界の大きさより小さい滴は蒸発し、大きい滴だけが育つと書いています。Rayleigh（1916）は、下から温めた液体の層が、温度の勾配がある値を越えるまでは「まったく安定」だと式で示しています。Abrikosov（1957）は、磁場と超伝導が、どちらも消えずに「常伝導でも超伝導でもない」混合状態として共存すると書いています。Ulm ら（2013）は、離れた領域が別々に選んだ秩序が出会う所に欠陥が残り、系は全体の基底状態に至れないと書いています。Lorenz（1963）は、二つの対流の状態のまわりを行き来して、どちらにも落ち着かない流れを示しています。一方で、今の報告が「強い対応」に数えたレーザー発振（Haken 1983）は、手元の PDF が本の前付けだけで、本文に当たれていません。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D02-physics.md`、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論を取り上げ、そのうち 9 を「全5段階」に当てています。報告は「強い対応」の件数を版ごとに違えて書いており、日本語版の中でも本文と表が合いません。この記録は、報告の 10 の論に、報告に無い 1 つの論（Lorenz 1963。台帳にある）を足し、一次情報で確かめ直したものです。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
+今の公開報告（「30 領域調査報告」の物理学の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論を取り上げ、そのうち 9 を「全5段階」に当てています。報告は「強い対応」の件数を版ごとに違えて書いており、日本語版の中でも本文と表が合いません。この記録は、報告の 10 の論に、報告に無い 1 つの論（Lorenz 1963。台帳にある）を足し、一次情報で確かめ直したものです。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
-5段階の「場」の語は、pjdhiro が量子の場から発想したものです（`docs/rules/stance-theories.md` の場の行）。発想の由来であることと、場の量子論の構造が5段階と似ていることは別のことなので、この記録では分けて書きます。
+5段階の「場」の語は、pjdhiro が量子の場から発想したものです（理論との距離の規約の場の行）。発想の由来であることと、場の量子論の構造が5段階と似ていることは別のことなので、この記録では分けて書きます。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D02-physics.md) にあります。退避版の判定（Accept・CA・「hiro:承認」の印・confidence）は、この記録の照合の状態の根拠にしていません。
 
 ## 読み方
 
-- 照合の状態は `docs/rules/sources.md` §3 の四つで書きます。翻訳で読んだものは「（訳）」を添えます。著者自身のまとめ直し（ノーベル講演など）で読んだものは「著者のまとめ直し」と書き、原論文は未照合とします。
+- 照合の状態は調べ方の規約 §3 の四つで書きます。翻訳で読んだものは「（訳）」を添えます。著者自身のまとめ直し（ノーベル講演など）で読んだものは「著者のまとめ直し」と書き、原論文は未照合とします。
 - 今の報告への判定は、一致・言い過ぎ・取り違え・帰属違い・付け足し・抜け・未判定で書きます。「抜け」は、原典にある衝突や至らない形を報告が落としていることです。
-- 「ja 85 行」は日本語版の行、「en」は英語版（`en/md/domain-D02-physics.md`）、「pres」はプレゼン版（`ja/presentations/md/domain-D02-physics-presentation-ja.md`）、「退避版」は上の History のファイルを指します。
+- 「ja 85 行」は日本語版の行、「en」は英語版（「30 領域調査報告」の物理学の英語版）、「pres」はプレゼン版（「30 領域調査報告」の物理学のプレゼン版）、「退避版」は上の History のファイルを指します。
 - 物理の主張には、教科書（分野で確立した記述）・研究の一線（争いがある、または一つの研究が示した）・Claude の読み替え（5段階の問いに当てた解釈）のどれかを添えます。物理の対象に善悪は無いので、「悪い統合」の行は置いていません。
-- 語が同じこと（場と field、渦と vortex、束と bundle）は、対応の根拠にも反証にも数えません（`docs/cs-review/README.md`「規約で決めたこと」）。
+- 語が同じこと（場と field、渦と vortex、束と bundle）は、対応の根拠にも反証にも数えません（調べ方の計画と規約「規約で決めたこと」）。
 
 ## 一面の表
 
@@ -52,11 +52,11 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 ### 1. 場の量子論と経路の和（Feynman 1948 ほか）
 
-**要旨**：Feynman（1948）は、非相対論的な量子力学を経路の和として書き直しました。粒子がある経路をとる確率振幅は、経路ごとの寄与の和で、各寄与の位相は古典的な作用で決まります。場の量子論（粒子を場の揺れ方の一つとして書く理論）とは別の論文です。粒子を場の励起として書く見方は、ディラック（1927）に始まる場の量子化の流れのもので、Love駆動開発の正本もディラックの名で引いています（`pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md` 311 行。この記録ではディラックの原典を確かめていません）。
+**要旨**：Feynman（1948）は、非相対論的な量子力学を経路の和として書き直しました。粒子がある経路をとる確率振幅は、経路ごとの寄与の和で、各寄与の位相は古典的な作用で決まります。場の量子論（粒子を場の揺れ方の一つとして書く理論）とは別の論文です。粒子を場の励起として書く見方は、ディラック（1927）に始まる場の量子化の流れのもので、Love駆動開発の正本もディラックの名で引いています（Love駆動開発の読み物 311 行。この記録ではディラックの原典を確かめていません）。
 
 **一次情報**：
 
-- Feynman, R. P. (1948). Space-Time Approach to Non-Relativistic Quantum Mechanics. *Rev. Mod. Phys.* 20(2), 367–387. DOI: [10.1103/RevModPhys.20.367](https://doi.org/10.1103/RevModPhys.20.367)（Crossref で題・年・頁を確かめました）。台帳 D02-S01。手元の PDF は文字の層の無い画像で、p.367 を画像で読みました。p.367 の要旨に、確率は「各経路からの複素数の寄与の和」の絶対値の二乗で、一つの経路の寄与は位相が古典的作用に比例する指数だ、とあります。
+- Feynman, R. P. (1948). Space-Time Approach to Non-Relativistic Quantum Mechanics. *Rev. Mod. Phys.* 20(2), 367–387. DOI: [10.1103/RevModPhys.20.367](https://doi.org/10.1103/RevModPhys.20.367)（Crossref で題・年・頁を確かめました）。台帳に行がある。手元の PDF は文字の層の無い画像で、p.367 を画像で読みました。p.367 の要旨に、確率は「各経路からの複素数の寄与の和」の絶対値の二乗で、一つの経路の寄与は位相が古典的作用に比例する指数だ、とあります。
 - 報告が並べる Schwinger（1948）・Dyson（1949）の *Phys. Rev.* と、Weinberg（1995）の教科書は、取得を試していません。退避版の refs は Schwinger を 1951 年としており、報告の表は年を書いていません。
 
 **照合の状態**：Feynman 1948 は本文照合済（p.367）。報告の「量子場が一次的実体であり、粒子は場の励起状態」（ja 102 行）は、引かれた Feynman 1948 には書かれていません。場の量子論の原典は未照合です。
@@ -65,7 +65,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 報告の当てはめ（場＝量子場、波＝真空のゆらぎ、縁＝相互作用、渦＝束縛状態、束＝安定粒子。ja 106 行）は、場の量子論の教科書の用語を5段階の順に並べたもので、どれかの原典の一つの構造を指してはいません（Claude の読み替え）。「相互作用がなければ自由場のまま何も生まれない」（ja 106 行）は、自由場の粒子が散乱も束縛もしないという教科書の記述としては合っています。
 
-pjdhiro が場の語を量子の場から発想したことは、場の量子論の構造が5段階と似ていることの根拠になりません。逆に、似ていないことの根拠にもなりません。報告は「QFTとの対応の良さは着想の帰結」（ja 24 行・108 行）と書き、発想と構造の類似を一つにしています。退避版は「QFTの構造を抽出し一般化したものが5段階」（47 行）と書いており、これは「体験が先」（`docs/rules/stance.md` 1-4）と、場の語の由来（素朴な感覚として選んだ。`stance-theories.md`）の両方と食い違います。
+pjdhiro が場の語を量子の場から発想したことは、場の量子論の構造が5段階と似ていることの根拠になりません。逆に、似ていないことの根拠にもなりません。報告は「QFTとの対応の良さは着想の帰結」（ja 24 行・108 行）と書き、発想と構造の類似を一つにしています。退避版は「QFTの構造を抽出し一般化したものが5段階」（47 行）と書いており、これは「体験が先」（pjdhiro の見方の規約 1-4）と、場の語の由来（素朴な感覚として選んだ。理論との距離の規約）の両方と食い違います。
 
 **今の報告から直すこと**：
 
@@ -82,9 +82,9 @@ pjdhiro が場の語を量子の場から発想したことは、場の量子論
 
 **一次情報**：
 
-- Nelson, D. R. & Kosterlitz, J. M. (1977). Universal Jump in the Superfluid Density of Two-Dimensional Superfluids. *PRL* 39(19), 1201–1204. DOI: [10.1103/PhysRevLett.39.1201](https://doi.org/10.1103/PhysRevLett.39.1201)（Crossref は頁を 1201–1205 と返します）。台帳 D02-S06。読んだ頁：p.1201（要旨と序）、p.1203（式 (10)、ρs(T)/T が普遍の定数に近づく。転移温度より上では ρs は 0 と考えられる）。
+- Nelson, D. R. & Kosterlitz, J. M. (1977). Universal Jump in the Superfluid Density of Two-Dimensional Superfluids. *PRL* 39(19), 1201–1204. DOI: [10.1103/PhysRevLett.39.1201](https://doi.org/10.1103/PhysRevLett.39.1201)（Crossref は頁を 1201–1205 と返します）。台帳に行がある。読んだ頁：p.1201（要旨と序）、p.1203（式 (10)、ρs(T)/T が普遍の定数に近づく。転移温度より上では ρs は 0 と考えられる）。
 - Berezinskii, V. L. (1971). Destruction of long-range order in one-dimensional and two-dimensional systems having a continuous symmetry group. I. Classical systems. *Sov. Phys. JETP* 32(3), 493–500. JETP の公開アーカイブ：http://jetp.ras.ru/cgi-bin/dn/e_032_03_0493.pdf （英訳。原文は ЖЭТФ 59, 907 (1970)）。読んだ頁：p.493（要旨）。要旨に、二点の間でスピンが何回も回る配置の寄与が欠かせなくなり、二次元で相転移が要ることが出る、とあります。
-- Kosterlitz, J. M. & Thouless, D. J. (1973). Ordering, metastability and phase transitions in two-dimensional systems. *J. Phys. C* 6, 1181–1203. DOI: [10.1088/0022-3719/6/7/010](https://doi.org/10.1088/0022-3719/6/7/010)。IOP で有料。台帳の D02-S02 は、もともとこの論文の行でしたが、取得した PDF が Anderson（1972）だったので題を直した、と台帳に書かれています。
+- Kosterlitz, J. M. & Thouless, D. J. (1973). Ordering, metastability and phase transitions in two-dimensional systems. *J. Phys. C* 6, 1181–1203. DOI: [10.1088/0022-3719/6/7/010](https://doi.org/10.1088/0022-3719/6/7/010)。IOP で有料。台帳の台帳の「Anderson 1972」の行は、もともとこの論文の行でしたが、取得した PDF が Anderson（1972）だったので題を直した、と台帳に書かれています。
 - Kosterlitz, J. M. (2017). Nobel Lecture: Topological defects and phase transitions. *Rev. Mod. Phys.* 89, 040501. DOI: [10.1103/RevModPhys.89.040501](https://doi.org/10.1103/RevModPhys.89.040501)。nobelprize.org の PDF：https://www.nobelprize.org/uploads/2018/06/kosterlitz-lecture.pdf 。著者のまとめ直し。読んだ頁：pp.92–93（渦一つの自由エネルギーと、束縛した対と自由な電荷の相の間の転移）。
 
 **照合の状態**：Nelson & Kosterlitz 1977 は本文照合済（pp.1201・1203）。Berezinskii 1971 は要旨照合済（p.493）。Kosterlitz & Thouless 1973 は未照合（有料）。報告が引く Bishop & Reppy（1978）の実験は未照合です。
@@ -111,7 +111,7 @@ pjdhiro が場の語を量子の場から発想したことは、場の量子論
 
 **一次情報**：
 
-- Abrikosov, A. A. (1957). On the Magnetic Properties of Superconductors of the Second Group. *Sov. Phys. JETP* 5(6), 1174–1182（英訳。原文は ЖЭТФ 32, 1442 (1957)。訳者は精読ノートによると E. S. Troubetskoy と E. J. Saletan）。台帳 D02-S03。手元の PDF は JETP の誌面の写しで、1 枚目は前の論文の終わりから始まります。読んだ頁：p.1177（混合状態の名づけ）、pp.1177–1178（脚注。正方格子と三角格子）、p.1179（Hc1 の式 (35)）、p.1180（三角格子と正方格子の入れ替わり）。
+- Abrikosov, A. A. (1957). On the Magnetic Properties of Superconductors of the Second Group. *Sov. Phys. JETP* 5(6), 1174–1182（英訳。原文は ЖЭТФ 32, 1442 (1957)。訳者は精読ノートによると E. S. Troubetskoy と E. J. Saletan）。台帳に行がある。手元の PDF は JETP の誌面の写しで、1 枚目は前の論文の終わりから始まります。読んだ頁：p.1177（混合状態の名づけ）、pp.1177–1178（脚注。正方格子と三角格子）、p.1179（Hc1 の式 (35)）、p.1180（三角格子と正方格子の入れ替わり）。
 - Abrikosov, A. A. (2004). Nobel Lecture: Type-II superconductors and the vortex lattice. *Rev. Mod. Phys.* 76, 975–979. DOI: [10.1103/RevModPhys.76.975](https://doi.org/10.1103/RevModPhys.76.975)。nobelprize.org の PDF：https://www.nobelprize.org/uploads/2018/06/abrikosov-lecture.pdf 。著者のまとめ直し。読んだ頁：pp.60–61（三角格子が A＝1.16、正方格子が 1.18）、pp.65–66（1953 年の導出、Landau の反対、観測は中性子回折が先で、次に Essmann & Träuble の装飾法）。
 
 **照合の状態**：本文照合済（訳）（pp.1177–1180）。ノーベル講演は著者のまとめ直し。Essmann & Träuble（1967）・Deaver & Fairbank（1961）は未照合です。
@@ -147,7 +147,7 @@ pjdhiro が場の語を量子の場から発想したことは、場の量子論
 - Kibble, T. W. B. (1976). Topology of cosmic domains and strings. *J. Phys. A* 9, 1387–1398. DOI: [10.1088/0305-4470/9/8/029](https://doi.org/10.1088/0305-4470/9/8/029)。IOP で有料。
 - Zurek, W. H. (1985). Cosmological experiments in superfluid helium? *Nature* 317, 505–508. DOI: [10.1038/317505a0](https://doi.org/10.1038/317505a0)。有料。
 - Zurek, W. H. (1996). Cosmological experiments in condensed matter systems. *Phys. Rep.* 276, 177–221. DOI: [10.1016/S0370-1573(96)00009-9](https://doi.org/10.1016/S0370-1573(96)00009-9)。著者稿：https://arxiv.org/abs/cond-mat/9607135 。著者自身の総説。頁は arXiv 版の頁です。読んだ頁：pp.3–4（一次の転移では、別々に核をつくった島が別々に真空を選び、転移前の真空の断片が閉じ込められて残ることがある。二次の転移では、選択を伝える速さが有限なので、領域ごとに違う真空が選ばれ、欠陥は因果律の帰結だと Kibble が指摘した。Kibble はもともと Ginzburg 温度の相関長で密度を見積もり、Zurek は凍る瞬間で見積もった）、p.40（隣り合う領域の位相差が合わせて 2π になる所が欠陥になる）。
-- Ulm, S. et al. (2013). Observation of the Kibble–Zurek scaling law for defect formation in ion crystals. *Nat. Commun.* 4, 2290. DOI: [10.1038/ncomms3290](https://doi.org/10.1038/ncomms3290)。台帳 D02-S04。Nature の PDF は自動取得でログインの案内へ送られたので、著者稿 https://arxiv.org/abs/1302.5343 （v3）で読みました。読んだ頁：p.1（要旨。β＝2.68±0.06、予測は 8/3）、p.2（隣り合う区画の選択が両立しないと、相の境が出会う所に欠陥ができ、系は全体の基底状態に至れない）。
+- Ulm, S. et al. (2013). Observation of the Kibble–Zurek scaling law for defect formation in ion crystals. *Nat. Commun.* 4, 2290. DOI: [10.1038/ncomms3290](https://doi.org/10.1038/ncomms3290)。台帳に行がある。Nature の PDF は自動取得でログインの案内へ送られたので、著者稿 https://arxiv.org/abs/1302.5343 （v3）で読みました。読んだ頁：p.1（要旨。β＝2.68±0.06、予測は 8/3）、p.2（隣り合う区画の選択が両立しないと、相の境が出会う所に欠陥ができ、系は全体の基底状態に至れない）。
 - Pyka, K. et al. (2013). Topological defect formation and spontaneous symmetry breaking in ion Coulomb crystals. *Nat. Commun.* 4, 2291. DOI: [10.1038/ncomms3291](https://doi.org/10.1038/ncomms3291)。著者稿：https://arxiv.org/abs/1211.7005 （題は「Symmetry Breaking and Topological Defect Formation in Ion Coulomb Crystals」）。読んだ頁：p.1（要旨と序。因果的に離れた領域が独立に新しい状態を選び、局所の選択が両立しない所に欠陥ができる）。
 - 報告が引く Kibble（2002）は arXiv の講義録（cond-mat/0211110「Symmetry breaking and defects」）で、読んでいません。
 
@@ -173,11 +173,11 @@ pjdhiro が場の語を量子の場から発想したことは、場の量子論
 
 **一次情報**：
 
-- Higgs, P. W. (1964). Broken Symmetries and the Masses of Gauge Bosons. *PRL* 13(16), 508–509. DOI: [10.1103/PhysRevLett.13.508](https://doi.org/10.1103/PhysRevLett.13.508)。台帳 D02-S05。読んだ頁：p.508（ゴールドストーンの定理は、流れがゲージ場と結びつくときに限り成り立たない。ゲージ粒子の縦の自由度は、結合を 0 にするとゴールドストーン粒子に移る。Anderson が指摘したプラズモンの相対論版）、p.509（質量をもつスカラー粒子と、不完全な多重項の予言。Englert & Brout が独立に同じ結論に達した、という注）。
+- Higgs, P. W. (1964). Broken Symmetries and the Masses of Gauge Bosons. *PRL* 13(16), 508–509. DOI: [10.1103/PhysRevLett.13.508](https://doi.org/10.1103/PhysRevLett.13.508)。台帳に行がある。読んだ頁：p.508（ゴールドストーンの定理は、流れがゲージ場と結びつくときに限り成り立たない。ゲージ粒子の縦の自由度は、結合を 0 にするとゴールドストーン粒子に移る。Anderson が指摘したプラズモンの相対論版）、p.509（質量をもつスカラー粒子と、不完全な多重項の予言。Englert & Brout が独立に同じ結論に達した、という注）。
 - Nambu, Y. (2009). Nobel Lecture: Spontaneous symmetry breaking in particle physics: A case of cross fertilization. *Rev. Mod. Phys.* 81, 1015–1018. DOI: [10.1103/RevModPhys.81.1015](https://doi.org/10.1103/RevModPhys.81.1015)。nobelprize.org の PDF：https://www.nobelprize.org/uploads/2018/06/nambu_lecture.pdf （Jona-Lasinio が代読）。著者のまとめ直し。読んだ頁：p.58（自発的対称性の破れの性質：基底状態は大きく縮退し、実現するのは一つ。十分高い温度では破れは消える）。
 - Higgs, P. W. (2014). Nobel Lecture: Evading the Goldstone theorem. *Rev. Mod. Phys.* 86, 851–853. DOI: [10.1103/RevModPhys.86.851](https://doi.org/10.1103/RevModPhys.86.851)。https://www.nobelprize.org/uploads/2018/06/higgs-lecture.pdf 。著者のまとめ直し。Anderson（1963）と Englert & Brout の位置を確かめるために拾い読みしました。
 - Goldstone, J. (1961). *Nuovo Cimento* 19, 154–164. DOI: [10.1007/BF02812722](https://doi.org/10.1007/BF02812722)。Anderson, P. W. (1963). Plasmons, Gauge Invariance, and Mass. *Phys. Rev.* 130, 439–442. DOI: [10.1103/PhysRev.130.439](https://doi.org/10.1103/PhysRev.130.439)。Englert, F. & Brout, R. (1964). *PRL* 13, 321–323. DOI: [10.1103/PhysRevLett.13.321](https://doi.org/10.1103/PhysRevLett.13.321)。三つとも取得を試していません（Springer と APS で有料）。
-- 手元の Anderson（1972）"More is different"（D02-S02）は、対称性の破れと科学の階層の論で、報告は引いていません。画像の PDF で、この記録では読んでいません。
+- 手元の Anderson（1972）"More is different"は、対称性の破れと科学の階層の論で、報告は引いていません。画像の PDF で、この記録では読んでいません。
 
 **照合の状態**：Higgs 1964 は本文照合済（pp.508–509）。Nambu・Higgs の講演は著者のまとめ直し。Goldstone 1961・Anderson 1963・Englert & Brout 1964・Weinberg 1967 は未照合です。
 
@@ -208,7 +208,7 @@ pjdhiro が場の語を量子の場から発想したことは、場の量子論
 
 **対立・衝突・統合の読み**：原典に、二つのものがぶつかる構造は書かれていません。Wilson の講演に書いてあるのは、粗くする変換を繰り返すと、臨界温度からのずれだけが育ち、ほかの細部は消えて、異なる物質が同じ臨界指数を示すことです（pp.111–112）。Claude の読み替えでは、固定点は、臨界温度ちょうどという刃の上にだけある形で、少しでもずれると秩序の側か無秩序の側へ流れ去ります（教科書）。分かれ目は臨界温度で、変換の不安定な向きとして書かれています。
 
-報告は、relevant・irrelevant・marginal の三つを「情報を採用するか、棄却するか、保持するか」と読んでいます（ja 128 行・130 行）。これは欠損駆動思考の旧い枠組み「誤差の3運命」から来たもので（退避版 186 行、調べた跡 phase5 116 行）、物理の原典にも教科書にもありません。報告に欠損駆動思考を持ち込まない、という決め（`docs/cs-review/README.md`「規約で決めたこと」の旧い規則の行）にも合いません。
+報告は、relevant・irrelevant・marginal の三つを「情報を採用するか、棄却するか、保持するか」と読んでいます（ja 128 行・130 行）。これは欠損駆動思考の旧い枠組み「誤差の3運命」から来たもので（退避版 186 行、調べた跡 phase5 116 行）、物理の原典にも教科書にもありません。報告に欠損駆動思考を持ち込まない、という決め（調べ方の計画と規約「規約で決めたこと」の旧い規則の行）にも合いません。
 
 **今の報告から直すこと**：
 
@@ -226,7 +226,7 @@ pjdhiro が場の語を量子の場から発想したことは、場の量子論
 
 **一次情報**：
 
-- Haken, H. (1983). *Synergetics: An Introduction*, 3rd ed. Springer Series in Synergetics 1. DOI: [10.1007/978-3-642-88338-5](https://doi.org/10.1007/978-3-642-88338-5)。台帳 D02-S07。手元の PDF は 12 頁で、表紙・著作権の頁・三つの版の序文・目次だけです。目次に「8.1 Cooperative Effects in the Laser: Self-Organization and Phase Transition」「8.5 The Multimode Laser」「12.4 Chaos and the Failure of the Slaving Principle」があります。第一版の序文（pp.VIII–IX）は、この本が 1975 年の *Rev. Mod. Phys.* の総説を広げたものだと書いています。著作権の頁は初版を 1977 年としています。
+- Haken, H. (1983). *Synergetics: An Introduction*, 3rd ed. Springer Series in Synergetics 1. DOI: [10.1007/978-3-642-88338-5](https://doi.org/10.1007/978-3-642-88338-5)。台帳に行がある。手元の PDF は 12 頁で、表紙・著作権の頁・三つの版の序文・目次だけです。目次に「8.1 Cooperative Effects in the Laser: Self-Organization and Phase Transition」「8.5 The Multimode Laser」「12.4 Chaos and the Failure of the Slaving Principle」があります。第一版の序文（pp.VIII–IX）は、この本が 1975 年の *Rev. Mod. Phys.* の総説を広げたものだと書いています。著作権の頁は初版を 1977 年としています。
 - Haken, H. (1975). Cooperative phenomena in systems far from thermal equilibrium and in nonphysical systems. *Rev. Mod. Phys.* 47, 67–121. DOI: [10.1103/RevModPhys.47.67](https://doi.org/10.1103/RevModPhys.47.67)。APS で有料（自動取得は案内の頁を返しました）。
 - Haken, H. (2007). Synergetics. *Scholarpedia* 2(1):1400. DOI: [10.4249/scholarpedia.1400](https://doi.org/10.4249/scholarpedia.1400)。http://www.scholarpedia.org/article/Synergetics 。著者のまとめ直し。制御変数が臨界の値に達すると系は不安定になり、新しい巨視の状態をとること、そこでは少数の秩序変数が個々の部分のふるまいを決めること（隷属原理）が書かれています。レーザーのモードの競い合いの詳しい記述はありません。
 - Maiman（1960）・Lamb（1964）は読んでいません。
@@ -250,7 +250,7 @@ pjdhiro が場の語を量子の場から発想したことは、場の量子論
 
 **一次情報**：
 
-- Rayleigh, Lord (1916). LIX. On convection currents in a horizontal layer of fluid, when the higher temperature is on the under side. *Phil. Mag.* (6) 32(192), 529–546. DOI: [10.1080/14786441608635602](https://doi.org/10.1080/14786441608635602)。台帳 D02-S08（台帳の題は違っています。下の「新しく見つけた原典」）。手元の PDF は Taylor & Francis の誌面です。読んだ頁：p.529（Bénard の実験の要約。細胞は 4〜7 辺の多角形から正六角形へ）、p.530（不安定な平衡から離れるとき、初めの乱れが十分小さければ、いちばん速く育つ型が勝る）、pp.532–533（伝導と粘性が小さすぎなければ、高温が下でも平衡はまったく安定でありうる。境の条件は Bénard の実験と違う。六角形への移り変わりは扱わない）、p.539（式 (43)・(44)。β′γ が 27π⁴κν/4ζ⁴ を越えなければ不安定は無い）、p.540（空気の例）。
+- Rayleigh, Lord (1916). LIX. On convection currents in a horizontal layer of fluid, when the higher temperature is on the under side. *Phil. Mag.* (6) 32(192), 529–546. DOI: [10.1080/14786441608635602](https://doi.org/10.1080/14786441608635602)。台帳に行がある（台帳の題は違っています。下の「新しく見つけた原典」）。手元の PDF は Taylor & Francis の誌面です。読んだ頁：p.529（Bénard の実験の要約。細胞は 4〜7 辺の多角形から正六角形へ）、p.530（不安定な平衡から離れるとき、初めの乱れが十分小さければ、いちばん速く育つ型が勝る）、pp.532–533（伝導と粘性が小さすぎなければ、高温が下でも平衡はまったく安定でありうる。境の条件は Bénard の実験と違う。六角形への移り変わりは扱わない）、p.539（式 (43)・(44)。β′γ が 27π⁴κν/4ζ⁴ を越えなければ不安定は無い）、p.540（空気の例）。
 - Bénard, H. (1901). *Les tourbillons cellulaires dans une nappe liquide propageant de la chaleur par convection, en régime permanent*（学位論文）. Paris: Gauthier-Villars。同じ内容は *Ann. Chim. Phys.* (7) 23, 62–144 (1901)。Internet Archive（イリノイ大学のデジタル化。パブリックドメイン）：https://archive.org/details/lestourbillonsce00bena 。原文（仏語）。OCR の文字で読みました。読んだ頁：pp.1–6（序、安定性、正六角形の網、二つの段）。1900 年の *Revue générale des Sciences* の記事（11 巻）は取得していません。
 
 **照合の状態**：Rayleigh 1916 は本文照合済（pp.529–540）。Bénard 1901 は本文照合済（OCR の文字で読んだ。pp.1–6）。Bénard 1900 と、報告が引く Cross & Hohenberg（1993）は未照合です。
@@ -282,13 +282,13 @@ Rayleigh 自身が、境の条件が Bénard の実験と違い、六角形へ�
 
 **一次情報**：
 
-- Zurek, W. H. (2003). Decoherence, einselection, and the quantum origins of the classical. *Rev. Mod. Phys.* 75, 715–775. DOI: [10.1103/RevModPhys.75.715](https://doi.org/10.1103/RevModPhys.75.715)。台帳 D02-S09。手元の PDF は著者稿（arXiv quant-ph/0105127v3、71 頁）で、誌面の頁はありません。頁は arXiv 版の頁です。読んだ頁：p.1（要旨）、p.3（I.B 節。デコヒーレンスと einselection は同じ過程の二つの見方。環境が量子系を閉じきれないことを強調したのは Zeh 1970・1973 で、環境が古典を取り出すしくみの理解は Zurek 1981・1982・1993）、pp.4–5（I.D 節。量子ダーウィニズム）。
+- Zurek, W. H. (2003). Decoherence, einselection, and the quantum origins of the classical. *Rev. Mod. Phys.* 75, 715–775. DOI: [10.1103/RevModPhys.75.715](https://doi.org/10.1103/RevModPhys.75.715)。台帳に行がある。手元の PDF は著者稿（arXiv quant-ph/0105127v3、71 頁）で、誌面の頁はありません。頁は arXiv 版の頁です。読んだ頁：p.1（要旨）、p.3（I.B 節。デコヒーレンスと einselection は同じ過程の二つの見方。環境が量子系を閉じきれないことを強調したのは Zeh 1970・1973 で、環境が古典を取り出すしくみの理解は Zurek 1981・1982・1993）、pp.4–5（I.D 節。量子ダーウィニズム）。
 - Zurek, W. H. (2002). Decoherence and the Transition from Quantum to Classical—Revisited. *Los Alamos Science* 27, 2–25。著者稿：https://arxiv.org/abs/quant-ph/0306072 （1991 年の *Physics Today* の記事を著者が書き足したもの）。読んだ頁：pp.13–14（温度 300 K、質量 1 g、距離 1 cm のとき、デコヒーレンスの時間と緩和の時間の比は 10⁻⁴⁰ ほどで、緩和が宇宙の年齢ほどでも、デコヒーレンスは 10⁻²³ 秒ほどで起きる）。
 - Zurek, W. H. (1981). Pointer basis of quantum apparatus: Into what mixture does the wave packet collapse? *Phys. Rev. D* 24, 1516–1525. DOI: [10.1103/PhysRevD.24.1516](https://doi.org/10.1103/PhysRevD.24.1516)。APS で有料。
 
 **照合の状態**：Zurek 2003 は本文照合済（arXiv 版 pp.1–5）。Los Alamos Science の記事は本文照合済（arXiv 版 pp.13–14）。Zurek 1981・Zeh 1970 は未照合（有料）です。
 
-**対立・衝突・統合の読み**：原典に書いてあるのは、重ね合わせの状態と、系を見張り続ける環境の相互作用で、選ばれた状態どうしの干渉が壊れ、見張りに耐える状態だけが残ることです（Zurek 2003 p.3）。Zurek 自身がダーウィンのたとえを使い、ポインター状態は「もっとも適したもの」で、環境の見張りを生き延びて性質を受け継ぐ「子孫」を残す、と書いています（p.3）。Claude の読み替えでは、重ね合わせの中のいくつもの可能性が、環境という相手とぶつかり、一つの組だけが残る形で、選ばれなかった可能性は事実上除かれます（片方の勝利に近い形）。区別を残したまま切り離せなくなる形（五段階の渦）は、ここには書かれていません。報告が「渦段階が欠如」と書いたこと（ja 204 行）は、この読みと向きが合います。ただし報告は、これを「5段階の必須性への直接的な問い」（ja 288 行）として過程の外に置いています。片方の勝利は、統合に至らない並べ方の一つとして、行の中に置けます（`docs/cs-review/README.md`「中心の問い」）。
+**対立・衝突・統合の読み**：原典に書いてあるのは、重ね合わせの状態と、系を見張り続ける環境の相互作用で、選ばれた状態どうしの干渉が壊れ、見張りに耐える状態だけが残ることです（Zurek 2003 p.3）。Zurek 自身がダーウィンのたとえを使い、ポインター状態は「もっとも適したもの」で、環境の見張りを生き延びて性質を受け継ぐ「子孫」を残す、と書いています（p.3）。Claude の読み替えでは、重ね合わせの中のいくつもの可能性が、環境という相手とぶつかり、一つの組だけが残る形で、選ばれなかった可能性は事実上除かれます（片方の勝利に近い形）。区別を残したまま切り離せなくなる形（五段階の渦）は、ここには書かれていません。報告が「渦段階が欠如」と書いたこと（ja 204 行）は、この読みと向きが合います。ただし報告は、これを「5段階の必須性への直接的な問い」（ja 288 行）として過程の外に置いています。片方の勝利は、統合に至らない並べ方の一つとして、行の中に置けます（調べ方の計画と規約「中心の問い」）。
 
 **今の報告から直すこと**：
 
@@ -304,13 +304,13 @@ Rayleigh 自身が、境の条件が Bénard の実験と違い、六角形へ�
 
 **要旨**：過飽和の蒸気から霧ができるとき、過飽和の度合いごとに臨界の滴の大きさが一つ決まります。それより小さい滴に対しては蒸気は未飽和で、滴は蒸発します。揺らぎで臨界の大きさの核が生まれたときだけ、滴は育ちます。Volmer と Weber（1926）がこれを初めて量で扱い、Becker と Döring（1935）は、核ができる頻度の前の係数を運動論から求めました。
 
-**一次情報**（D03 化学から参照できるように、確かめ先と頁をここに控えます）：
+**一次情報**（化学から参照できるように、確かめ先と頁をここに控えます）：
 
-- Becker, R. & Döring, W. (1935). Kinetische Behandlung der Keimbildung in übersättigten Dämpfen. *Ann. Phys.* (5) 24, 719–752（Wiley の通し巻では 416(8)）. DOI: [10.1002/andp.19354160806](https://doi.org/10.1002/andp.19354160806)（Crossref で題・著者・頁を確かめました）。台帳 D02-S10（blocked-access）。Wiley で有料。Internet Archive の雑誌のマイクロフィルムのデジタル化（Annalen der Physik 1935 年 12 月、24 巻 8 号）：https://archive.org/details/sim_annalen-der-physik_1935-12_24_8 。権利は未確認（1935 年の論文で、ドイツでは権利が残っている見込み）。OCR の文字で読みました。読んだ頁：p.719（序。過飽和ごとに臨界の滴の大きさがあり、それより大きい滴に対してだけ蒸気は過飽和、小さい滴に対しては未飽和。霧には揺らぎで臨界の大きさの核が生まれることが要る。頻度は e^(−A/kT) に比例。Volmer と Weber が初めて量で扱った）、pp.720–721（論文の組み立て。結晶の核、オストワルトの段階則）、p.722（§1。r_k を臨界の滴の半径と呼び、与えられた圧力で、それより小さい滴は蒸発し、大きい滴は育つ）、p.723（前の係数 K は熱力学では決まらず、運動論で求める）。式そのものは OCR で崩れていて、読めていません。
+- Becker, R. & Döring, W. (1935). Kinetische Behandlung der Keimbildung in übersättigten Dämpfen. *Ann. Phys.* (5) 24, 719–752（Wiley の通し巻では 416(8)）. DOI: [10.1002/andp.19354160806](https://doi.org/10.1002/andp.19354160806)（Crossref で題・著者・頁を確かめました）。台帳に行がある（自動では取れない）。Wiley で有料。Internet Archive の雑誌のマイクロフィルムのデジタル化（Annalen der Physik 1935 年 12 月、24 巻 8 号）：https://archive.org/details/sim_annalen-der-physik_1935-12_24_8 。権利は未確認（1935 年の論文で、ドイツでは権利が残っている見込み）。OCR の文字で読みました。読んだ頁：p.719（序。過飽和ごとに臨界の滴の大きさがあり、それより大きい滴に対してだけ蒸気は過飽和、小さい滴に対しては未飽和。霧には揺らぎで臨界の大きさの核が生まれることが要る。頻度は e^(−A/kT) に比例。Volmer と Weber が初めて量で扱った）、pp.720–721（論文の組み立て。結晶の核、オストワルトの段階則）、p.722（§1。r_k を臨界の滴の半径と呼び、与えられた圧力で、それより小さい滴は蒸発し、大きい滴は育つ）、p.723（前の係数 K は熱力学では決まらず、運動論で求める）。式そのものは OCR で崩れていて、読めていません。
 - Volmer, M. & Weber, A. (1926). Keimbildung in übersättigten Gebilden. *Z. Phys. Chem.* 119U, 277–301. DOI: [10.1515/zpch-1926-11927](https://doi.org/10.1515/zpch-1926-11927)。De Gruyter で有料。取得を試していません。
-- 台帳の D02-S10 の行は、OA の代わりに Dawoodian（2025、PMC12744345）と教科書（Kelton & Greer 2010）を挙げています。この記録では読んでいません。
+- 台帳の「Becker & Döring 1935」の行は、OA の代わりに Dawoodian（2025、PMC12744345）と教科書（Kelton & Greer 2010）を挙げています。この記録では読んでいません。
 
-**照合の状態**：本文照合済（訳）。追記（2026-11-09）：同じ論文の NACA の英訳（NACA TM 1374、1954 年、訳者 J. Vanier。パブリックドメイン。台帳 D03-S01、NTRS 19930093856）で本文に当たれることを、[化学の記録](evidence-D03-chemistry.md)の 1 で確かめたので、未照合から上げました。原文の頁は権利未確認の写しで pp.719–723 を読んだものです。Volmer & Weber 1926 は未照合（有料）。報告の式 r*＝2γ/|ΔGv| は教科書の書き方で、Becker & Döring の §1 は同じ関係を蒸気圧と滴の半径で書いています（式の形は OCR で確かめられていません）。
+**照合の状態**：本文照合済（訳）。追記（2026-11-09）：同じ論文の NACA の英訳（NACA TM 1374、1954 年、訳者 J. Vanier。パブリックドメイン。台帳の化学の行にある、NTRS 19930093856）で本文に当たれることを、[化学の記録](evidence-D03-chemistry.md)の 1 で確かめたので、未照合から上げました。原文の頁は権利未確認の写しで pp.719–723 を読んだものです。Volmer & Weber 1926 は未照合（有料）。報告の式 r*＝2γ/|ΔGv| は教科書の書き方で、Becker & Döring の §1 は同じ関係を蒸気圧と滴の半径で書いています（式の形は OCR で確かめられていません）。
 
 **対立・衝突・統合の読み**：原典に書いてあるのは、滴の表面をつくる仕事と、過飽和の蒸気から凝縮する利得の兼ね合いで臨界の大きさが決まり、それより小さい滴は蒸発して戻り、大きい滴だけが育つことです（p.719・p.722）。分かれ目は臨界の滴の半径で、原典にはっきり書かれています（教科書）。Claude の読み替えでは、蒸気の相と新しい相が、滴の表面でぶつかり、大きさによって勝ち負けが入れ替わります。小さい核が溶けて戻ることは、至らない形が常に起きていることの記述で、核ができる頻度が e^(−A/kT) に比例するのは、その至らない試みの中から、まれに臨界を越えるものが出るからです（p.719）。
 
@@ -328,11 +328,11 @@ Rayleigh 自身が、境の条件が Bénard の実験と違い、六角形へ�
 
 ### 11. 決定論的な非周期の流れ（Lorenz 1963。足した論）
 
-**要旨**：Lorenz（1963）は、細胞状の対流を三つの変数にまで縮めた常微分方程式の系を数値で解き、解のほとんどが周期をもたず、わずかに違う初めの状態がかなり違う状態へ育つことを示しました。報告は取り上げていませんが、台帳にあり（D02-S12）、二つの状態のどちらにも落ち着かない形をはっきり書いているので足しました。Rayleigh・Bénard の対流と同じ現象を縮めた模型です。
+**要旨**：Lorenz（1963）は、細胞状の対流を三つの変数にまで縮めた常微分方程式の系を数値で解き、解のほとんどが周期をもたず、わずかに違う初めの状態がかなり違う状態へ育つことを示しました。報告は取り上げていませんが、台帳にあり、二つの状態のどちらにも落ち着かない形をはっきり書いているので足しました。Rayleigh・Bénard の対流と同じ現象を縮めた模型です。
 
 **一次情報**：
 
-- Lorenz, E. N. (1963). Deterministic Nonperiodic Flow. *J. Atmos. Sci.* 20(2), 130–141. DOI: [10.1175/1520-0469(1963)020<0130:DNF>2.0.CO;2](https://doi.org/10.1175/1520-0469(1963)020<0130:DNF>2.0.CO;2)（Crossref で確かめました）。台帳 D02-S12。手元の PDF は AMS の誌面で、文字の層の無い画像です。p.130 と p.138 を画像で読みました。読んだ頁：p.130（要旨。有界な解をもつ系では、非周期の解はふつう小さな変更に対して不安定で、わずかに違う初めの状態がかなり違う状態へ育つ。細胞状の対流を表す単純な系で、解のほとんどが非周期だった）、p.138（軌道は C のまわりの渦巻きと C′ のまわりの渦巻きを行き来し、中心からある臨界の距離を越えたときだけ一方の渦巻きを離れる）。
+- Lorenz, E. N. (1963). Deterministic Nonperiodic Flow. *J. Atmos. Sci.* 20(2), 130–141. DOI: [10.1175/1520-0469(1963)020<0130:DNF>2.0.CO;2](https://doi.org/10.1175/1520-0469(1963)020<0130:DNF>2.0.CO;2)（Crossref で確かめました）。台帳に行がある。手元の PDF は AMS の誌面で、文字の層の無い画像です。p.130 と p.138 を画像で読みました。読んだ頁：p.130（要旨。有界な解をもつ系では、非周期の解はふつう小さな変更に対して不安定で、わずかに違う初めの状態がかなり違う状態へ育つ。細胞状の対流を表す単純な系で、解のほとんどが非周期だった）、p.138（軌道は C のまわりの渦巻きと C′ のまわりの渦巻きを行き来し、中心からある臨界の距離を越えたときだけ一方の渦巻きを離れる）。
 
 **照合の状態**：本文照合済（pp.130・138）。
 
@@ -365,11 +365,11 @@ Rayleigh 自身が、境の条件が Bénard の実験と違い、六角形へ�
 
 報告は 10 の論のうち 9 を「全5段階」としています（ja 76〜86 行）。原典で確かめると、9 の当てはめの多くは、場に「対称な相・準安定相」、波に「熱ゆらぎ・臨界ゆらぎ」を置く同じ型で、どの論の原典の構造から出てきたものでもありませんでした。合うところを数える基準（ja 36 行「全5段階に明確な物理的対応がある」）では、相転移の論はほぼどれでも全5段階に当たります。原典で二つのものの競り合いがはっきり書かれていたのは、BKT（エネルギーとエントロピー）、アブリコソフ（磁場と超伝導）、KZM（両立しない選択）、ベナール対流（浮力と粘性・伝導、型どうし）、核生成（表面の仕事と凝縮の利得）、Lorenz（二つの定常な状態）です。場の量子論（Feynman 1948）とくりこみ群の原典には、競り合いは書かれていませんでした。
 
-報告は、至らない形を、5段階の外の問い（ja 262〜280 行「渦段階の必須性」「束の多重性」など）として置いています。原典では、解離する渦の対（BKT）、両立しない選択の跡の欠陥（KZM）、蒸発する小さい核（核生成）、落ち着かない流れ（Bénard p.4、Lorenz）は、どれも論の中心にあります。D01・D08・D25 と同じ形です。
+報告は、至らない形を、5段階の外の問い（ja 262〜280 行「渦段階の必須性」「束の多重性」など）として置いています。原典では、解離する渦の対（BKT）、両立しない選択の跡の欠陥（KZM）、蒸発する小さい核（核生成）、落ち着かない流れ（Bénard p.4、Lorenz）は、どれも論の中心にあります。数学・神経科学・人類学・民族学と同じ形です。
 
 ### テンプレート由来の表示
 
-「立ち位置明示」（3 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6（構造再読）」「Phase 7（横断統合）」（32 行・40 行・224 行）、「方法論的開示（S60）」（46 行）、「温度帯の分布」（88 行）、「安全弁」（92〜94 行）、「結びの温度開示」「温度帯」（292〜297 行）、「Colophon」の generator_model（299〜309 行）。48〜51 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（writing.md §1-1・§1-8）。D01・D08・D22・D25 と同じく、テンプレートで一度に直します（`cs/transform/domains/reader-rules/reader-rules-creation.md`）。
+「立ち位置明示」（3 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6（構造再読）」「Phase 7（横断統合）」（32 行・40 行・224 行）、「方法論的開示（S60）」（46 行）、「温度帯の分布」（88 行）、「安全弁」（92〜94 行）、「結びの温度開示」「温度帯」（292〜297 行）、「Colophon」の generator_model（299〜309 行）。48〜51 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（書き方の規約 §1-1・§1-8）。数学・神経科学・経営学・人類学・民族学と同じく、テンプレートで一度に直します（旧い規則（創造とはの読み手の規則））。
 
 ### 誤りの出どころ
 
@@ -378,17 +378,17 @@ Rayleigh 自身が、境の条件が Bénard の実験と違い、六角形へ�
 | 判定の数が版ごとに違う | 退避版の Accept 9・CA 1（351 行）が en に、調べた跡 phase5 の Anchor・Scoped（29〜31 行）が ja の「強い・部分」の分け方に写った。ja の表の KZM の「強い」は、どちらとも合わない |
 | QFT の提唱者と Feynman 1948 の引用 | 退避版 58 行の refs（Weinberg・Feynman 1948・Schwinger 1951・Dyson 1949）が、報告の「提唱者」の列と「事実として」の出典に写った |
 | 「QFTの構造を抽出し一般化したものが5段階」 | 退避版 47 行 |
-| アブリコソフの三角格子 | 退避版 99 行。精読ノート D02-S03 37 行も、1957 年の脚注の値を取り違えている（下の「精読ノートと wiki の誤り」） |
+| アブリコソフの三角格子 | 退避版 99 行。精読ノート「Abrikosov 1957」 37 行も、1957 年の脚注の値を取り違えている（下の「精読ノートと wiki の誤り」） |
 | デコヒーレンスの 10⁻²⁰ 秒 | 調べた跡 phase6 165 行 |
 | relevant・irrelevant・marginal を採用・棄却・保持に読む | 退避版 186 行の「誤差の3運命」レンズ、調べた跡 phase5 116 行 |
 | 「縁の3条件」 | 調べた跡 phase6 19 行・53 行、退避版の縁フラグの欄、pres 95 行 |
 | 「縁の二類型」 | 調べた跡 phase6 220 行（H3）・phase7 30 行 |
 | 核の界面の「厚み」 | 退避版の核生成の項の「境界の厚み」レンズ |
-| Kibble 2002 | DR-D02 136 行（arXiv cond-mat/0211110） |
+| Kibble 2002 | 2026-02 の DR 136 行（arXiv cond-mat/0211110） |
 | 閾値遷移と欠損駆動思考を結ぶ文 | 調べた跡 phase7 28 行（報告の本文には写っていない） |
 | テンプレートの表示 | 報告のテンプレート |
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 E（断定・看板・「最も」）：「物理学領域の旗艦事例」（118 行）、「10件の中で最も直感的な実例」（142 行）、「状態ではなく操作として縁を捉えられる稀有な理論」（130 行）、「5段階モデルの最も視覚的な実例」（216 行）、「30の調査領域中でも渦段階の物理的可視性が最も高い領域の一つ」（244 行）、「驚くほど多様な物理的実現」（250 行）、「物理学領域で最も顕著な発見は『閾値遷移の普遍性』」（286 行）。
 - 型 H（原典に無い体系）：「縁の3条件（関係網・未決定性・渦への接続）」（90 行）、「縁の二類型——概念的縁と物理的縁」（232〜240 行）、「臨界・界面トリガ型」（44 行・274 行）。
@@ -398,66 +398,66 @@ Rayleigh 自身が、境の条件が Bénard の実験と違い、六角形へ�
 
 ### 精読ノートと wiki の誤り（司令塔が直す）
 
-- `cs/knowledge/source-notes/D02/D02-S03_abrikosov-1957.md` 37 行「三角格子（beta = 1.16）がさらにエネルギー的に有利であることも脚注で言及されている」、98 行：取り違え。1957 年の脚注（pp.1177–1178）は、三角格子は β＝1.32 で正方格子（1.18）より不利と書いている。1.16 は後の計算の値で、ノーベル講演（pp.60–61）に出る。
-- `pd/wiki/sources/D02_abrikosov_1957_magnetic-properties-superconductors-second-group.md` 42 行「この渦糸は互いの反発力により規則的な三角格子（アブリコソフ格子）を形成する」「Φ_0 = hc/2e」：帰属違い。1957 年の論文は上部臨界磁場の近くで正方格子。hc/2e は 1957 年の論文の値として確かめていない。
-- `cs/knowledge/source-notes/D02/D02-S04_pyka-2013.md`：ファイル名は Pyka だが、中身は Ulm ら（ncomms3290）。Pyka らは別の論文（ncomms3291）。
-- `pd/wiki/sources/D02_unknown_0000_observation-of-the-kibble.md` と `pd/wiki/sources/D02_ulm_2013_et-al.md`：同じ D02-S04（Ulm ら）の頁が二つある。
-- `pd/wiki/sources/D02_rayleigh_1916_problem-thermal-convection-horizontal-layer-fluid-heated-below.md` 2 行：題が「下方加熱された水平流体層における熱対流の問題」で、台帳の誤った題（下の D02-S08）から来ている。正しい題は aliases の先頭にある。
-- `pd/wiki/sources/D02_haken_1983_synergetics.md`：status が「正典」だが、元の PDF は前付けだけで、本文は読まれていない。
+- 精読ノート「Abrikosov 1957」 37 行「三角格子（beta = 1.16）がさらにエネルギー的に有利であることも脚注で言及されている」、98 行：取り違え。1957 年の脚注（pp.1177–1178）は、三角格子は β＝1.32 で正方格子（1.18）より不利と書いている。1.16 は後の計算の値で、ノーベル講演（pp.60–61）に出る。
+- wiki の頁「Abrikosov 1957」 42 行「この渦糸は互いの反発力により規則的な三角格子（アブリコソフ格子）を形成する」「Φ_0 = hc/2e」：帰属違い。1957 年の論文は上部臨界磁場の近くで正方格子。hc/2e は 1957 年の論文の値として確かめていない。
+- 精読ノート「Pyka 2013」：ファイル名は Pyka だが、中身は Ulm ら（ncomms3290）。Pyka らは別の論文（ncomms3291）。
+- wiki の頁「Unknown 0000」（著者の欄が unknown）と「Ulm 2013」：同じ原典（Ulm ら 2013）の頁が二つある。
+- wiki の頁「Rayleigh 1916」 2 行：題が「下方加熱された水平流体層における熱対流の問題」で、台帳の誤った題（下の台帳の「Rayleigh 1916」の行）から来ている。正しい題は aliases の先頭にある。
+- wiki の頁「Haken 1983」：status が「正典」だが、元の PDF は前付けだけで、本文は読まれていない。
 
 ## 判断が要るもの
 
-pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは `docs/cs-review/README.md` の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
+pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは調べ方の計画と規約の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
 
-- 5段階の場の語が量子の場から来ていることは、発想の由来として書き、場の量子論の構造が5段階と似ているかとは分けました。予想：pjdhiro の言葉（素朴な感覚として選んだ）から、発想の由来を構造の類似の証拠にも割り引きにも使わない形が合う見込みです（`stance-theories.md` の場の行、stance 1-4）。
-- Becker & Döring（1935）は、Internet Archive が雑誌のマイクロフィルムから作った写しで本文を読みました。権利が確かめられないので「未照合」とし、読んだ頁を書きました（`docs/cs-review/README.md`「規約で決めたこと」の archive.org の行、`sources.md` §5-8）。
-- アブリコソフの混合状態（磁場と超伝導が、糸の形で区別を残したまま一つの試料に入り込み合う）は、pjdhiro が渦について言う「二つに分けられるものが二つに分けられなくなる」形と近いかもしれません。KZM の欠陥（両立しない選択の跡が残る）と、自発的対称性の破れ（選ばれなかった向きが励起として残る）も、統合に至らない形と、衝突の跡が形に残る形の材料です。どれも Claude の読み替えで、しっくり感の判定は pjdhiro が行います。一面の表を並べる段 3 で見せる材料として残します。
+- 5段階の場の語が量子の場から来ていることは、発想の由来として書き、場の量子論の構造が5段階と似ているかとは分けました。予想：pjdhiro の言葉（素朴な感覚として選んだ）から、発想の由来を構造の類似の証拠にも割り引きにも使わない形が合う見込みです（理論との距離の規約の場の行、stance 1-4）。
+- Becker & Döring（1935）は、Internet Archive が雑誌のマイクロフィルムから作った写しで本文を読みました。権利が確かめられないので「未照合」とし、読んだ頁を書きました（調べ方の計画と規約「規約で決めたこと」の archive.org の行、調べ方の規約 §5-8）。
+- アブリコソフの混合状態（磁場と超伝導が、糸の形で区別を残したまま一つの試料に入り込み合う）は、pjdhiro が渦について言う「二つに分けられるものが二つに分けられなくなる」形と近いかもしれません。KZM の欠陥（両立しない選択の跡が残る）と、自発的対称性の破れ（選ばれなかった向きが励起として残る）も、統合に至らない形と、衝突の跡が形に残る形の材料です。どれも Claude の読み替えによる類推で、しっくり感の判定は pjdhiro が行います。一面の表を並べる段 3 で見せる材料として残します。答え（pjdhiro 2026-11-09）：既存の理論で本人の見方を論証はしないが、類推はする。この文は、論証でなく類推として残します（書き方の規約 §7-5）。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-manifest は書き換えていません。番号は台帳と同じ形で、D02-S16 から振りました。
+台帳は書き換えていません。
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D02-S16 | Kosterlitz, J. M. & Thouless, D. J. (1973). Ordering, metastability and phase transitions in two-dimensional systems. *J. Phys. C* 6, 1181–1203. DOI 10.1088/0022-3719/6/7/010 | IOP（有料） | citation-only |
-| D02-S17 | Berezinskii, V. L. (1971). Destruction of long-range order in one-dimensional and two-dimensional systems having a continuous symmetry group. I. Classical systems. *Sov. Phys. JETP* 32(3), 493–500 | http://jetp.ras.ru/cgi-bin/dn/e_032_03_0493.pdf （JETP の公開アーカイブ。英訳） | url-verified（要旨だけ読んだ） |
-| D02-S18 | Kosterlitz, J. M. (2017). Nobel Lecture: Topological defects and phase transitions. *Rev. Mod. Phys.* 89, 040501. DOI 10.1103/RevModPhys.89.040501 | https://www.nobelprize.org/uploads/2018/06/kosterlitz-lecture.pdf | url-verified（著者のまとめ直し） |
-| D02-S19 | Abrikosov, A. A. (2004). Nobel Lecture: Type-II superconductors and the vortex lattice. *Rev. Mod. Phys.* 76, 975–979. DOI 10.1103/RevModPhys.76.975 | https://www.nobelprize.org/uploads/2018/06/abrikosov-lecture.pdf | url-verified（著者のまとめ直し） |
-| D02-S20 | Kibble, T. W. B. (1976). Topology of cosmic domains and strings. *J. Phys. A* 9, 1387–1398. DOI 10.1088/0305-4470/9/8/029 | IOP（有料） | citation-only |
-| D02-S21 | Zurek, W. H. (1985). Cosmological experiments in superfluid helium? *Nature* 317, 505–508. DOI 10.1038/317505a0 | Nature（有料） | citation-only |
-| D02-S22 | Zurek, W. H. (1996). Cosmological experiments in condensed matter systems. *Phys. Rep.* 276, 177–221. DOI 10.1016/S0370-1573(96)00009-9 | https://arxiv.org/abs/cond-mat/9607135 （著者稿） | url-verified |
-| D02-S23 | Pyka, K. et al. (2013). Topological defect formation and spontaneous symmetry breaking in ion Coulomb crystals. *Nat. Commun.* 4, 2291. DOI 10.1038/ncomms3291 | https://arxiv.org/abs/1211.7005 （著者稿）。Nature の PDF https://www.nature.com/articles/ncomms3291.pdf は自動取得でログインの案内へ送られた（ブラウザでの保存が要る。保存名の案 `D02_pyka_2013_topological-defect-formation-ion-coulomb-crystals.pdf`） | url-verified（著者稿） |
-| D02-S24 | Nambu, Y. (2009). Nobel Lecture: Spontaneous symmetry breaking in particle physics: A case of cross fertilization. *Rev. Mod. Phys.* 81, 1015–1018. DOI 10.1103/RevModPhys.81.1015 | https://www.nobelprize.org/uploads/2018/06/nambu_lecture.pdf | url-verified（著者のまとめ直し） |
-| D02-S25 | Higgs, P. W. (2014). Nobel Lecture: Evading the Goldstone theorem. *Rev. Mod. Phys.* 86, 851–853. DOI 10.1103/RevModPhys.86.851 | https://www.nobelprize.org/uploads/2018/06/higgs-lecture.pdf | url-verified（著者のまとめ直し。拾い読み） |
-| D02-S26 | Goldstone, J. (1961). Field theories with « Superconductor » solutions. *Nuovo Cimento* 19, 154–164. DOI 10.1007/BF02812722 | Springer（有料） | citation-only |
-| D02-S27 | Anderson, P. W. (1963). Plasmons, Gauge Invariance, and Mass. *Phys. Rev.* 130, 439–442. DOI 10.1103/PhysRev.130.439 | APS（有料） | citation-only |
-| D02-S28 | Englert, F. & Brout, R. (1964). Broken Symmetry and the Mass of Gauge Vector Mesons. *PRL* 13, 321–323. DOI 10.1103/PhysRevLett.13.321 | APS（取得を試していない） | citation-only |
-| D02-S29 | Wilson, K. G. (1971). Renormalization Group and Critical Phenomena. I. *Phys. Rev. B* 4, 3174–3183. DOI 10.1103/PhysRevB.4.3174 | APS（有料） | citation-only |
-| D02-S30 | Wilson, K. G. (1983). The renormalization group and critical phenomena（ノーベル講演 1982）. *Rev. Mod. Phys.* 55, 583–600. DOI 10.1103/RevModPhys.55.583 | https://www.nobelprize.org/uploads/2018/06/wilson-lecture-2.pdf | url-verified（著者のまとめ直し） |
-| D02-S31 | Kadanoff, L. P. (1966). Scaling laws for Ising models near Tc. *Physics Physique Fizika* 2(6), 263–272. DOI 10.1103/PhysicsPhysiqueFizika.2.263 | https://journals.aps.org/ppf/pdf/10.1103/PhysicsPhysiqueFizika.2.263 （APS の無料の PDF） | url-verified |
-| D02-S32 | Haken, H. (1975). Cooperative phenomena in systems far from thermal equilibrium and in nonphysical systems. *Rev. Mod. Phys.* 47, 67–121. DOI 10.1103/RevModPhys.47.67 | APS（有料。自動取得は案内の頁） | citation-only |
-| D02-S33 | Haken, H. (2007). Synergetics. *Scholarpedia* 2(1):1400. DOI 10.4249/scholarpedia.1400 | http://www.scholarpedia.org/article/Synergetics | url-verified（著者のまとめ直し） |
-| D02-S34 | Bénard, H. (1901). *Les tourbillons cellulaires dans une nappe liquide propageant de la chaleur par convection, en régime permanent*（学位論文）. Paris: Gauthier-Villars（同じ内容は *Ann. Chim. Phys.* (7) 23, 62–144） | https://archive.org/details/lestourbillonsce00bena （イリノイ大学のデジタル化。パブリックドメイン） | url-verified（OCR の文字で読んだ） |
-| D02-S35 | Zurek, W. H. (2002). Decoherence and the Transition from Quantum to Classical—Revisited. *Los Alamos Science* 27, 2–25 | https://arxiv.org/abs/quant-ph/0306072 （著者稿） | url-verified |
-| D02-S36 | Zurek, W. H. (1981). Pointer basis of quantum apparatus: Into what mixture does the wave packet collapse? *Phys. Rev. D* 24, 1516–1525. DOI 10.1103/PhysRevD.24.1516 | APS（有料） | citation-only |
-| D02-S37 | Volmer, M. & Weber, A. (1926). Keimbildung in übersättigten Gebilden. *Z. Phys. Chem.* 119U, 277–301. DOI 10.1515/zpch-1926-11927 | De Gruyter（有料。取得を試していない） | citation-only |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| Kosterlitz, J. M. & Thouless, D. J. (1973). Ordering, metastability and phase transitions in two-dimensional systems. *J. Phys. C* 6, 1181–1203. DOI 10.1088/0022-3719/6/7/010 | IOP（有料） | 書誌だけ |
+| Berezinskii, V. L. (1971). Destruction of long-range order in one-dimensional and two-dimensional systems having a continuous symmetry group. I. Classical systems. *Sov. Phys. JETP* 32(3), 493–500 | http://jetp.ras.ru/cgi-bin/dn/e_032_03_0493.pdf （JETP の公開アーカイブ。英訳） | 取得先を確かめた（要旨だけ読んだ） |
+| Kosterlitz, J. M. (2017). Nobel Lecture: Topological defects and phase transitions. *Rev. Mod. Phys.* 89, 040501. DOI 10.1103/RevModPhys.89.040501 | https://www.nobelprize.org/uploads/2018/06/kosterlitz-lecture.pdf | 取得先を確かめた（著者のまとめ直し） |
+| Abrikosov, A. A. (2004). Nobel Lecture: Type-II superconductors and the vortex lattice. *Rev. Mod. Phys.* 76, 975–979. DOI 10.1103/RevModPhys.76.975 | https://www.nobelprize.org/uploads/2018/06/abrikosov-lecture.pdf | 取得先を確かめた（著者のまとめ直し） |
+| Kibble, T. W. B. (1976). Topology of cosmic domains and strings. *J. Phys. A* 9, 1387–1398. DOI 10.1088/0305-4470/9/8/029 | IOP（有料） | 書誌だけ |
+| Zurek, W. H. (1985). Cosmological experiments in superfluid helium? *Nature* 317, 505–508. DOI 10.1038/317505a0 | Nature（有料） | 書誌だけ |
+| Zurek, W. H. (1996). Cosmological experiments in condensed matter systems. *Phys. Rep.* 276, 177–221. DOI 10.1016/S0370-1573(96)00009-9 | https://arxiv.org/abs/cond-mat/9607135 （著者稿） | 取得先を確かめた |
+| Pyka, K. et al. (2013). Topological defect formation and spontaneous symmetry breaking in ion Coulomb crystals. *Nat. Commun.* 4, 2291. DOI 10.1038/ncomms3291 | https://arxiv.org/abs/1211.7005 （著者稿）。Nature の PDF https://www.nature.com/articles/ncomms3291.pdf は自動取得でログインの案内へ送られた（ブラウザでの保存が要る。保存名の案手元の PDF） | 取得先を確かめた（著者稿） |
+| Nambu, Y. (2009). Nobel Lecture: Spontaneous symmetry breaking in particle physics: A case of cross fertilization. *Rev. Mod. Phys.* 81, 1015–1018. DOI 10.1103/RevModPhys.81.1015 | https://www.nobelprize.org/uploads/2018/06/nambu_lecture.pdf | 取得先を確かめた（著者のまとめ直し） |
+| Higgs, P. W. (2014). Nobel Lecture: Evading the Goldstone theorem. *Rev. Mod. Phys.* 86, 851–853. DOI 10.1103/RevModPhys.86.851 | https://www.nobelprize.org/uploads/2018/06/higgs-lecture.pdf | 取得先を確かめた（著者のまとめ直し。拾い読み） |
+| Goldstone, J. (1961). Field theories with « Superconductor » solutions. *Nuovo Cimento* 19, 154–164. DOI 10.1007/BF02812722 | Springer（有料） | 書誌だけ |
+| Anderson, P. W. (1963). Plasmons, Gauge Invariance, and Mass. *Phys. Rev.* 130, 439–442. DOI 10.1103/PhysRev.130.439 | APS（有料） | 書誌だけ |
+| Englert, F. & Brout, R. (1964). Broken Symmetry and the Mass of Gauge Vector Mesons. *PRL* 13, 321–323. DOI 10.1103/PhysRevLett.13.321 | APS（取得を試していない） | 書誌だけ |
+| Wilson, K. G. (1971). Renormalization Group and Critical Phenomena. I. *Phys. Rev. B* 4, 3174–3183. DOI 10.1103/PhysRevB.4.3174 | APS（有料） | 書誌だけ |
+| Wilson, K. G. (1983). The renormalization group and critical phenomena（ノーベル講演 1982）. *Rev. Mod. Phys.* 55, 583–600. DOI 10.1103/RevModPhys.55.583 | https://www.nobelprize.org/uploads/2018/06/wilson-lecture-2.pdf | 取得先を確かめた（著者のまとめ直し） |
+| Kadanoff, L. P. (1966). Scaling laws for Ising models near Tc. *Physics Physique Fizika* 2(6), 263–272. DOI 10.1103/PhysicsPhysiqueFizika.2.263 | https://journals.aps.org/ppf/pdf/10.1103/PhysicsPhysiqueFizika.2.263 （APS の無料の PDF） | 取得先を確かめた |
+| Haken, H. (1975). Cooperative phenomena in systems far from thermal equilibrium and in nonphysical systems. *Rev. Mod. Phys.* 47, 67–121. DOI 10.1103/RevModPhys.47.67 | APS（有料。自動取得は案内の頁） | 書誌だけ |
+| Haken, H. (2007). Synergetics. *Scholarpedia* 2(1):1400. DOI 10.4249/scholarpedia.1400 | http://www.scholarpedia.org/article/Synergetics | 取得先を確かめた（著者のまとめ直し） |
+| Bénard, H. (1901). *Les tourbillons cellulaires dans une nappe liquide propageant de la chaleur par convection, en régime permanent*（学位論文）. Paris: Gauthier-Villars（同じ内容は *Ann. Chim. Phys.* (7) 23, 62–144） | https://archive.org/details/lestourbillonsce00bena （イリノイ大学のデジタル化。パブリックドメイン） | 取得先を確かめた（OCR の文字で読んだ） |
+| Zurek, W. H. (2002). Decoherence and the Transition from Quantum to Classical—Revisited. *Los Alamos Science* 27, 2–25 | https://arxiv.org/abs/quant-ph/0306072 （著者稿） | 取得先を確かめた |
+| Zurek, W. H. (1981). Pointer basis of quantum apparatus: Into what mixture does the wave packet collapse? *Phys. Rev. D* 24, 1516–1525. DOI 10.1103/PhysRevD.24.1516 | APS（有料） | 書誌だけ |
+| Volmer, M. & Weber, A. (1926). Keimbildung in übersättigten Gebilden. *Z. Phys. Chem.* 119U, 277–301. DOI 10.1515/zpch-1926-11927 | De Gruyter（有料。取得を試していない） | 書誌だけ |
 
 既存の行に書き足す案：
 
-- D02-S01（Feynman 1948）：手元の PDF は文字の層の無い画像。頁は 367–387（Crossref）。場の量子論ではなく、非相対論的な量子力学の論文。
-- D02-S02（Anderson 1972）：手元の PDF は文字の層の無い画像。
-- D02-S03（Abrikosov 1957）：英訳 *Sov. Phys. JETP* 5(6), 1174–1182。原文は ЖЭТФ 32, 1442。PDF の 1 枚目は前の論文の終わり。
-- D02-S04（Ulm ら 2013）：Nature の PDF は自動取得でログインの案内へ送られた。著者稿 https://arxiv.org/abs/1302.5343 （v3）で読める。精読ノートのファイル名（`D02-S04_pyka-2013.md`）が中身と合わない。
-- D02-S06（Nelson & Kosterlitz 1977）：Crossref の頁は 1201–1205（台帳と精読ノートは 1201–1204）。
-- D02-S07（Haken 1983）：手元の PDF は 12 頁の前付け（表紙・著作権の頁・序文・目次）だけで、本文は無い。raw-confirmed のままだと、本文を持っているように読める。
-- D02-S08（Rayleigh 1916）：題が違う。正しくは「On convection currents in a horizontal layer of fluid, when the higher temperature is on the under side」。*Phil. Mag.* (6) 32(192), 529–546。DOI 10.1080/14786441608635602。
-- D02-S10（Becker & Döring 1935）：Internet Archive の雑誌のマイクロフィルムの写し https://archive.org/details/sim_annalen-der-physik_1935-12_24_8 （権利は未確認）で、pp.719–752 が読める。誌面の巻は (5) 24。
-- D02-S12（Lorenz 1963）：手元の PDF は文字の層の無い画像。DOI 10.1175/1520-0469(1963)020<0130:DNF>2.0.CO;2。
+- 台帳の「Feynman 1948」の行（Feynman 1948）：手元の PDF は文字の層の無い画像。頁は 367–387（Crossref）。場の量子論ではなく、非相対論的な量子力学の論文。
+- 台帳の「Anderson 1972」の行（Anderson 1972）：手元の PDF は文字の層の無い画像。
+- 台帳の「Abrikosov 1957」の行（Abrikosov 1957）：英訳 *Sov. Phys. JETP* 5(6), 1174–1182。原文は ЖЭТФ 32, 1442。PDF の 1 枚目は前の論文の終わり。
+- 台帳の「Ulm ら 2013」の行（Ulm ら 2013）：Nature の PDF は自動取得でログインの案内へ送られた。著者稿 https://arxiv.org/abs/1302.5343 （v3）で読める。精読ノートのファイル名（精読ノート「Pyka 2013」）が中身と合わない。
+- 台帳の「Nelson & Kosterlitz 1977」の行（Nelson & Kosterlitz 1977）：Crossref の頁は 1201–1205（台帳と精読ノートは 1201–1204）。
+- 台帳の「Haken 1983」の行（Haken 1983）：手元の PDF は 12 頁の前付け（表紙・著作権の頁・序文・目次）だけで、本文は無い。手元に保存した のままだと、本文を持っているように読める。
+- 台帳の「Rayleigh 1916」の行（Rayleigh 1916）：題が違う。正しくは「On convection currents in a horizontal layer of fluid, when the higher temperature is on the under side」。*Phil. Mag.* (6) 32(192), 529–546。DOI 10.1080/14786441608635602。
+- 台帳の「Becker & Döring 1935」の行（Becker & Döring 1935）：Internet Archive の雑誌のマイクロフィルムの写し https://archive.org/details/sim_annalen-der-physik_1935-12_24_8 （権利は未確認）で、pp.719–752 が読める。誌面の巻は (5) 24。
+- 台帳の「Lorenz 1963」の行（Lorenz 1963）：手元の PDF は文字の層の無い画像。DOI 10.1175/1520-0469(1963)020<0130:DNF>2.0.CO;2。
 
 ## 手順について分かったこと
 
-- 台帳の D02 の行のうち三つ（S02・S06・S08）は、狙った文献と別の論文を掴んだか、題を誤っていました。S02 と S06 は台帳に直した跡があり、もともとの狙い（Kosterlitz & Thouless 1973 と Wilson のくりこみ群）は有料で残っていました。S08 は題だけが誤っていました。手元の PDF の表紙を突き合わせる手順が、この分野でも要りました。
+- 台帳の物理学の行のうち三つ（「Anderson 1972」・「Nelson & Kosterlitz 1977」・「Rayleigh 1916」）は、狙った文献と別の論文を掴んだか、題を誤っていました。「Anderson 1972」と「Nelson & Kosterlitz 1977」は台帳に直した跡があり、もともとの狙い（Kosterlitz & Thouless 1973 と Wilson のくりこみ群）は有料で残っていました。「Rayleigh 1916」は題だけが誤っていました。手元の PDF の表紙を突き合わせる手順が、この分野でも要りました。
 - 手元の PDF のうち三つ（Feynman・Anderson・Lorenz）は文字の層が無く、pdftotext が空でした。頁を画像にして読みました。
 - 報告が引く理論の多くは、原論文が APS・IOP・Springer で有料でしたが、著者のノーベル講演（Abrikosov・Kosterlitz・Nambu・Higgs・Wilson）と arXiv の著者稿（Zurek・Ulm・Pyka）で、仕組みの芯を読めました。原論文の頁は確かめていないので、講演で読んだものは「著者のまとめ直し」と分けて書きました。
 - 物理の原典は、二つのものの兼ね合いと、その分かれ目（Hc1、臨界の滴の半径、式 (44) の臨界値、πK(∞)＝2、凍る瞬間の相関長）を式で書いていました。分かれ目が式で書かれている分、統合に至らない形（溶けて戻る核・解離した渦・欠陥・落ち着かない流れ）も、論の中ではっきり書かれていました。
-- 核生成は D03 化学にも出ます。D03 で使えるように、Becker & Döring の頁と写しの性格を、この記録の 10 の節に控えました。
+- 核生成は化学にも出ます。化学で使えるように、Becker & Döring の頁と写しの性格を、この記録の 10 の節に控えました。

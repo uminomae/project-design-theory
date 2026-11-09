@@ -14,7 +14,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D16-histo
 
 歴史学の論の多くは、歴史の過程の理論である前に、歴史家が時間や叙述をどう切るかの枠組みとして書かれていました。それでも、本文に当たれた論は、どれも衝突を論の中に置いていました。トインビーは、文明の発生を「出会い」の結果として書き、神話の筋では出会いの結末が「創造でなく破壊」になる版もあると書いています（第 1 巻、pp.281・302 付近）。挑戦が強すぎると、文明は生まれかけて倒れるか（流産した文明）、応答に成功したまま動けなくなる（停止した文明）と書かれています（Somervell の抄約）。イブン・ハルドゥーンは、王権には戦いが要り、戦いには集団の連帯（アサビーヤ）が要ると書き、王朝は三世代（120 年）で衰え、攻める者が現れれば倒れると書いています（de Slane 訳 1863、pp.347–349）。ピアソンは、収穫逓増が「比較的釣り合った対立」を、一方が他方に意思を押しつけるまでもない不均衡に変えると書いています（APSR 2000、p.259）。ヴィーコは、腐った国民の行き先を、内から君主が出るか、外のよりよい国民に征服されるか、内戦で「反省の野蛮」へ戻るかの三つに書き分けています（1744、§§1103–1106）。マルクスの 1859 年の序言は、生産力と生産関係の衝突が社会革命の時期を開くと数頁で書いています。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D16-history.md`、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論を取り上げ、日本語版は「強い対応」を 1 つ（ヒューズ）としています。英語版は 9 つ、プレゼン版は 4 つを「強い対応」としていて、版ごとに数が違います。報告は、上の衝突や至らない形の多くを落とし、関係の形成（縁）の型として読んでいました。「10 の理論で 10 タイプの縁」「成功→自壊の独立的収束」「場の消極性」は、原典でなく調べた跡（phase5〜7）の構成から来ていました。ピアソンの「4 つの自己強化メカニズム（サンクコスト効果…）」は、ピアソンがアーサーから引いた四つの性質で、一つ目は「大きな初期費用・固定費」です。ピアソンは脚注で「サンクコスト」という言い方を不適切だと書いています。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったか（または至らずにどう終わったか）を並べたものです。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
+今の公開報告（「30 領域調査報告」の歴史学の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論を取り上げ、日本語版は「強い対応」を 1 つ（ヒューズ）としています。英語版は 9 つ、プレゼン版は 4 つを「強い対応」としていて、版ごとに数が違います。報告は、上の衝突や至らない形の多くを落とし、関係の形成（縁）の型として読んでいました。「10 の理論で 10 タイプの縁」「成功→自壊の独立的収束」「場の消極性」は、原典でなく調べた跡（phase5〜7）の構成から来ていました。ピアソンの「4 つの自己強化メカニズム（サンクコスト効果…）」は、ピアソンがアーサーから引いた四つの性質で、一つ目は「大きな初期費用・固定費」です。ピアソンは脚注で「サンクコスト」という言い方を不適切だと書いています。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったか（または至らずにどう終わったか）を並べたものです。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
 論は 11 で、報告の 10 にマルクスの史的唯物論を足しました。本文照合済は 7 つ（ブローデル・トインビー・経路依存・イブン・ハルドゥーン・ヴィーコ・ターチン・マルクス）です。ウォーラーステインは個人が上げた写しで本文を読んだので未照合のまま頁を書き、ホワイトは二次資料のみ、ヒューズとコゼレックは未照合（書籍）です。
 
@@ -22,7 +22,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 ## 一面の表
 
-照合の状態は `docs/rules/sources.md` §3 の四つで書きます。各行で、まず原典が何について書いているか（出来事の過程か、歴史家の時間や叙述の枠組みか）と単位を書き、対立・衝突・統合の欄は原典に書いてあることを先に、Claude の読み替えを「読み替え：」で分けて書きます。「未照合」の行の対立・衝突・統合は、報告の言い分を写さず、空けています。
+照合の状態は調べ方の規約 §3 の四つで書きます。各行で、まず原典が何について書いているか（出来事の過程か、歴史家の時間や叙述の枠組みか）と単位を書き、対立・衝突・統合の欄は原典に書いてあることを先に、Claude の読み替えを「読み替え：」で分けて書きます。「未照合」の行の対立・衝突・統合は、報告の言い分を写さず、空けています。
 
 | 論 | 原典が書く対象と単位 | 対立 | 衝突 | 統合／新たな安定、または統合に至らずにどう終わったか | 論の微細さ | 照合の状態 |
 |---|---|---|---|---|---|---|
@@ -46,8 +46,8 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Braudel, F. (1958). Histoire et Sciences sociales : La longue durée. *Annales. Économies, Sociétés, Civilisations* 13(4), 725–753. DOI 10.3406/ahess.1958.2781（Crossref で照らした書誌と表紙が一致）。manifest D16-S02。手元の PDF は Persée の PDF（仏語原文。pjdhiro がブラウザで保存）。https://www.persee.fr/doc/ahess_0395-2649_1958_num_13_4_2781 。読んだ頁：pp.725–728・731・733・741・753。
-- Braudel, F. (1949). *La Méditerranée et le monde méditerranéen à l'époque de Philippe II*. manifest D16-S01（blocked-access）。開けていません。
+- Braudel, F. (1958). Histoire et Sciences sociales : La longue durée. *Annales. Économies, Sociétés, Civilisations* 13(4), 725–753. DOI 10.3406/ahess.1958.2781（Crossref で照らした書誌と表紙が一致）。台帳に行がある。手元の PDF は Persée の PDF（仏語原文。pjdhiro がブラウザで保存）。https://www.persee.fr/doc/ahess_0395-2649_1958_num_13_4_2781 。読んだ頁：pp.725–728・731・733・741・753。
+- Braudel, F. (1949). *La Méditerranée et le monde méditerranéen à l'époque de Philippe II*. 台帳に行がある（自動では取れない）。開けていません。
 
 **照合の状態**：本文照合済（1958）。『地中海』（1949）は未照合（書籍）。
 
@@ -77,9 +77,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Toynbee, A. J. *A Study of History*, Vol. I. Oxford UP, 1934（手元の写しは第 2 版 1935 の第 6 刷 1955）。manifest D16-S03。手元の PDF（508 頁、文字の層なし）は、Internet Archive の in.gov.ignca.2921（https://archive.org/details/in.gov.ignca.2921 ）と MD5 が一致した。インド考古局の中央考古図書館（ニューデリー）の本を走査したもので、Digital Library of India の集まりに入っている。権利は確かめていない（著者は 1975 年没）。同じ資料の `_djvu.txt`（OCR の文字）で読んだ。読んだ頁：目次（第 1〜3 巻）・pp.201–204・271–281・302 付近。
+- Toynbee, A. J. *A Study of History*, Vol. I. Oxford UP, 1934（手元の写しは第 2 版 1935 の第 6 刷 1955）。台帳に行がある。手元の PDF（508 頁、文字の層なし）は、Internet Archive の in.gov.ignca.2921（https://archive.org/details/in.gov.ignca.2921 ）と MD5 が一致した。インド考古局の中央考古図書館（ニューデリー）の本を走査したもので、Digital Library of India の集まりに入っている。権利は確かめていない（著者は 1975 年没）。同じ資料の `_djvu.txt`（OCR の文字）で読んだ。読んだ頁：目次（第 1〜3 巻）・pp.201–204・271–281・302 付近。
 - Toynbee, A. J. *A Study of History. Abridgement of Volumes I–VI* by D. C. Somervell. Oxford UP, 1946（走査は 1954 年の第 5 刷）。Internet Archive の in.ernet.dli.2015.241704（Digital Library of India）。著者の序文つきの抄約。`_djvu.txt` で読んだ。読んだ頁：pp.140–141・153–154・164。
-- 台帳 D16-S03 の「public 検証リンク」in.ernet.dli.2015.241704 は、第 1 巻でなく Somervell の抄約だった（表紙と「ABRIDGEMENT OF VOLUMES I–VI」で確かめた）。
+- 台帳の「Toynbee 1934」の行の「public 検証リンク」in.ernet.dli.2015.241704 は、第 1 巻でなく Somervell の抄約だった（表紙と「ABRIDGEMENT OF VOLUMES I–VI」で確かめた）。
 
 **照合の状態**：本文照合済（第 1 巻。インド政府の図書館の走査の OCR の文字で読んだ。権利は未確認）。中庸・流産した文明・停止した文明（原著の第 2・3 巻）は二次資料のみ（Somervell の抄約）。
 
@@ -103,7 +103,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 144〜148 行 至らない形に触れていない | 抜け | 高 | 原典は、強すぎる挑戦の結末を流産した文明・停止した文明として章を立てて書く。神話の筋の結末が破壊になる版も書く（第 1 巻 p.281） |
 | ja 144 行「創造的少数者が応答を主導し、非創造的多数者が模倣で追随」 | 未判定 | 低 | 成長の巻（第 3 巻）の内容で、読んでいない |
 | ja 148 行 挑戦＝波、応答の編成＝縁 | 未判定 | 中 | 5段階の定義が決まってから。原典では、挑戦と応答は一つの「関係」として原因に置かれ、二つに分けられていない（p.271 付近） |
-| 台帳 D16-S03 の public 検証リンク in.ernet.dli.2015.241704 | 取り違え | 高 | 第 1 巻でなく Somervell の抄約。手元の PDF は in.gov.ignca.2921 と MD5 が一致 |
+| 台帳の「Toynbee 1934」の行の public 検証リンク in.ernet.dli.2015.241704 | 取り違え | 高 | 第 1 巻でなく Somervell の抄約。手元の PDF は in.gov.ignca.2921 と MD5 が一致 |
 
 ### 3. ピアソン／マホニー：経路依存と決定的な分岐点
 
@@ -111,11 +111,11 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Pierson, P. (2000). Increasing returns, path dependence, and the study of politics. *American Political Science Review* 94(2), 251–267. DOI 10.2307/2586011（Crossref で照らした）。manifest D16-S05。誌面の写しが UNC の授業の頁にある（https://fbaum.unc.edu/teaching/articles/Pierson_APSR_2000.pdf 。JSTOR の版。授業用の写しで、権利は未確認。文字の層が無く、頁の画像で読んだ）。読んだ頁：pp.251・254・259。
-- Pierson, P. (1997). *Increasing Returns, Path Dependence and the Study of Politics*. Jean Monnet Chair Papers 44, European University Institute。台帳 D16-S05 の取得先（EUI の機関リポジトリ Cadmus。今の URL は https://hdl.handle.net/1814/23648 。台帳の bitstream の URL は今は HTML を返し、API の https://cadmus.eui.eu/server/api/core/bitstreams/3cabf92b-7416-561a-b7ae-e2a9bb47afe3/content で PDF が取れた）。誌面より前の講演の版で、頁は作業論文の頁。読んだ頁：pp.12・15–16・35–39。
-- Mahoney, J. (2000). Path dependence in historical sociology. *Theory and Society* 29(4), 507–548. DOI 10.1023/A:1007113830879。manifest D16-S06。ETH の授業の頁の写し（http://archiv.soms.ethz.ch/teaching/OppFall09/MahoneyPathDependence.pdf 。JSTOR の版）。読んだ頁：pp.507–509・513–514・517・519–522・526–527・537。
+- Pierson, P. (2000). Increasing returns, path dependence, and the study of politics. *American Political Science Review* 94(2), 251–267. DOI 10.2307/2586011（Crossref で照らした）。台帳に行がある。誌面の写しが UNC の授業の頁にある（https://fbaum.unc.edu/teaching/articles/Pierson_APSR_2000.pdf 。JSTOR の版。授業用の写しで、権利は未確認。文字の層が無く、頁の画像で読んだ）。読んだ頁：pp.251・254・259。
+- Pierson, P. (1997). *Increasing Returns, Path Dependence and the Study of Politics*. Jean Monnet Chair Papers 44, European University Institute。台帳の「Pierson 2000」の行の取得先（EUI の機関リポジトリ Cadmus。今の URL は https://hdl.handle.net/1814/23648 。台帳の bitstream の URL は今は HTML を返し、API の https://cadmus.eui.eu/server/api/core/bitstreams/3cabf92b-7416-561a-b7ae-e2a9bb47afe3/content で PDF が取れた）。誌面より前の講演の版で、頁は作業論文の頁。読んだ頁：pp.12・15–16・35–39。
+- Mahoney, J. (2000). Path dependence in historical sociology. *Theory and Society* 29(4), 507–548. DOI 10.1023/A:1007113830879。台帳に行がある。ETH の授業の頁の写し（http://archiv.soms.ethz.ch/teaching/OppFall09/MahoneyPathDependence.pdf 。JSTOR の版）。読んだ頁：pp.507–509・513–514・517・519–522・526–527・537。
 - Capoccia, G. & Kelemen, R. D. (2007). The study of critical junctures. *World Politics* 59(3), 341–369. DOI 10.1017/S0043887100020852。OA の版は見つからなかった（Crossref・OpenAlex・Semantic Scholar。Unpaywall と CORE は鍵が無く飛ばした）。未照合。
-- アーサー（収穫逓増）とノース（制度）は D21 経済学の記録の 6・7 節を参照（`cs/evidence/evidence-D21-economics.md`）。
+- アーサー（収穫逓増）とノース（制度）は経済学の記録の 6・7 節を参照（経済学の記録）。
 
 **照合の状態**：本文照合済（ピアソンは授業用の写しの誌面と機関リポジトリの作業論文、マホニーは授業用の写し）。Capoccia & Kelemen は未照合。
 
@@ -135,13 +135,13 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 | 今の報告の行 | 判定 | 重さ | 中身 |
 |---|---|---|---|
-| ja 104 行「ピアソン（2000）は4つの自己強化メカニズム（…）を特定しました」 | 帰属違い | 高 | 四つは、ピアソンがアーサー（1994, p.112）から引いた技術の性質（p.254）。アーサーは D21 の記録を参照 |
+| ja 104 行「ピアソン（2000）は4つの自己強化メカニズム（…）を特定しました」 | 帰属違い | 高 | 四つは、ピアソンがアーサー（1994, p.112）から引いた技術の性質（p.254）。アーサーは経済学の記録を参照 |
 | ja 104 行・pres 60 行・en 96 行「サンクコスト効果（すでに投じた資源が撤退を困難にする）」 | 取り違え | 高 | 原典の一つ目は「大きな初期費用・固定費」。ピアソンは脚注 14（p.259）でサンクコストという言い方を「unfortunate」と書く。出どころは退避版 107 行 |
 | ja 104 行「クリティカル・ジャンクチャーとは、制度的柔軟性が一時的に高まり、複数の経路が開かれる瞬間」 | 未判定 | 低 | マホニーは「二つ以上の選択肢から一つが選ばれる」点と書く（p.513）。「制度的柔軟性が一時的に高まる」は Capoccia & Kelemen の言い方に近いが、読んでいない |
 | ja 108 行「経路依存理論は『不可逆性』を本質的に含んでおり、選択後の経路は選択前に戻れません」 | 言い過ぎ | 中 | マホニーは、どうひっくり返るかを説明ごとに論じ（pp.519–521）、反応の連なりは前の出来事を「reverse」しうると書く（p.526） |
 | ja 102〜108 行 権力の非対称と反動に触れていない | 抜け | 高 | 釣り合った対立が不均衡に変わる過程（Pierson p.259）と、エリートが制度を再生産する権力の説明（Mahoney p.521）、反応の連なり（pp.526–527） |
 | ja 108 行 クリティカル・ジャンクチャー＝縁、ロックイン＝束 | 未判定 | 中 | 5段階の定義が決まってから |
-| pres 62 行「North（1990）は…」・en 61 行の提唱者に North (1990) | 未判定 | 低 | ノースの 1990 年の本は未照合（D21 の記録の 7 節） |
+| pres 62 行「North（1990）は…」・en 61 行の提唱者に North (1990) | 未判定 | 低 | ノースの 1990 年の本は未照合（経済学の記録の 7 節） |
 
 ### 4. イブン・ハルドゥーン：アサビーヤと王朝の盛衰
 
@@ -150,8 +150,8 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 **一次情報**：
 
 - Ibn Khaldoun. *Les Prolégomènes*, tome I. Traduction par M. G. de Slane. Paris : Imprimerie Impériale, 1863（パブリックドメイン）。fr.wikisource の頁の名前空間「Page:Ibn Khaldoun - Prolégomènes, Slane, 1863, tome I.djvu/471–473・480–482」（底本の走査の OCR の文字で、校正の段は「pagequality level 1」＝未校正）。翻刻であり、底本の走査の頁と文字をすべて突き合わせてはいない。読んだ頁：目次（第 2・3 部）・pp.347–349・356–358。
-- Ibn Khaldûn. *The Muqaddimah: An Introduction to History*. F. Rosenthal 訳（1958）、N. J. Dawood 抄約（1967）。manifest D16-S09。手元の PDF は Internet Archive に利用者が上げた写し（上げた人と権利は未確認）。頁は写しの頁（「227 The Muqaddimah」のような写しの柱の番号）。読んだ頁：pp.16・173・187・227–229・232–235・306。
-- アラビア語の原文（manifest D16-S08。手元の PDF は画像）と ar.wikisource は開いていません。
+- Ibn Khaldûn. *The Muqaddimah: An Introduction to History*. F. Rosenthal 訳（1958）、N. J. Dawood 抄約（1967）。台帳に行がある。手元の PDF は Internet Archive に利用者が上げた写し（上げた人と権利は未確認）。頁は写しの頁（「227 The Muqaddimah」のような写しの柱の番号）。読んだ頁：pp.16・173・187・227–229・232–235・306。
+- アラビア語の原文（台帳に行がある。手元の PDF は画像）と ar.wikisource は開いていません。
 
 **照合の状態**：本文照合済（訳。de Slane 1863 の fr.wikisource の翻刻、未校正）。Rosenthal 訳は、同じ箇所が合うことを確かめましたが、写しの性格から、それだけでは本文照合済としません。
 
@@ -185,7 +185,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Wallerstein, I. (1974). *The Modern World-System I*. Academic Press（読んだのは University of California Press の 2011 年版、新しいプロローグつき）。manifest D16-S10 の取得先（https://archive.org/details/immanuel-wallerstein-the-modern-world-system-volumes-i-iv ）は、利用者が上げた写し（opensource の集まり。上げた人と権利は未確認）。`_djvu.txt` で読んだ。読んだ頁：第 7 章「Theoretical Reprise」pp.347–352（2011 年版の頁）。
+- Wallerstein, I. (1974). *The Modern World-System I*. Academic Press（読んだのは University of California Press の 2011 年版、新しいプロローグつき）。台帳の「Wallerstein 1974」の行の取得先（https://archive.org/details/immanuel-wallerstein-the-modern-world-system-volumes-i-iv ）は、利用者が上げた写し（opensource の集まり。上げた人と権利は未確認）。`_djvu.txt` で読んだ。読んだ頁：第 7 章「Theoretical Reprise」pp.347–352（2011 年版の頁）。
 - Wallerstein, I. (1974). The rise and future demise of the world capitalist system. *Comparative Studies in Society and History* 16(4), 387–415. DOI 10.1017/S0010417500007520（Crossref で照らした）。OA の版は見つからなかった。未照合。
 
 **照合の状態**：未照合（書籍。個人が上げた写しで上の頁を読んだ）。
@@ -283,7 +283,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 **一次情報**：
 
 - Vico, G. *Principj di scienza nuova*（1744 年版）。F. Nicolini 編 *La scienza nuova seconda*, vol. I, Bari: Laterza, 1928 を底本とする it.wikisource の「La scienza nuova seconda」（BEIC 1964037 の走査。頁の上の表示は「completo, ma ancora da rileggere」＝校正が済んでいない）。段落番号は Nicolini の番号。パブリックドメイン。読んだ節：第 4 巻の序（§915、pp.49–50）、第 5 巻の序（§1046、p.131）、結論（§§1097–1106、pp.157–163）。
-- 確かめ先：https://it.wikisource.org/wiki/La_scienza_nuova_seconda （台帳 D16-S22。読んだのは第 4 巻の序・第 5 巻の序・結び）。
+- 確かめ先：https://it.wikisource.org/wiki/La_scienza_nuova_seconda （台帳に行がある。読んだのは第 4 巻の序・第 5 巻の序・結び）。
 - Michelet の仏訳（1827）と Bergin & Fisch の英訳は開いていない。台帳に行が無い。
 
 **照合の状態**：本文照合済（原文の翻刻。Nicolini 1928 の版を底本とすることは翻刻の頁に書かれているが、底本の走査と文字を突き合わせてはいない）。
@@ -315,10 +315,10 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Turchin, P., Currie, T. E., Turner, E. A. L. & Gavrilets, S. (2013). War, space, and the evolution of Old World complex societies. *PNAS* 110(41), 16384–16389. DOI 10.1073/pnas.1308825110。manifest D16-S11。手元の PDF は PNAS の版（OA）。読んだ頁：pp.16384–16385。
+- Turchin, P., Currie, T. E., Turner, E. A. L. & Gavrilets, S. (2013). War, space, and the evolution of Old World complex societies. *PNAS* 110(41), 16384–16389. DOI 10.1073/pnas.1308825110。台帳に行がある。手元の PDF は PNAS の版（OA）。読んだ頁：pp.16384–16385。
 - Turchin, P. (2012). Dynamics of political instability in the United States, 1780–2010. *Journal of Peace Research* 49(4), 577–591. DOI 10.1177/0022343312442078（Crossref で照らした）。著者のサイトに置かれていた出版社の早期公開版（頁 1–15。「Downloaded from jpr.sagepub.com at UNIV OF CONNECTICUT」の印）を、Wayback の記録（https://web.archive.org/web/2024id_/https://peterturchin.com/wp-content/uploads/2012/06/Turchin_JPR2012.pdf ）で読んだ。今の著者のサイトは移っていて 404。頁は早期公開版の頁。読んだ頁：pp.1–3。
 - Turchin, P. (2009). A theory for formation of large empires. *Journal of Global History* 4(2), 191–217. DOI 10.1017/S174002280900312X（Crossref で照らした）。著者のサイトの写し（Wayback：https://web.archive.org/web/2024id_/https://peterturchin.com/wp-content/uploads/2023/06/Turchin_JGH_2009.pdf 。誌面の版）。読んだ頁：pp.191・195。
-- Turchin, P. (2014). Cultural evolution and cliodynamics. *Cliodynamics* 5(1)。DOI 10.21237/C7clio5125308（Crossref で題・著者・巻号を照らした）。manifest D16-S17。eScholarship の PDF は自動取得に確認画面（AWS の WAF の challenge）を返した。ブラウザでの保存が要る。
+- Turchin, P. (2014). Cultural evolution and cliodynamics. *Cliodynamics* 5(1)。DOI 10.21237/C7clio5125308（Crossref で題・著者・巻号を照らした）。台帳に行がある。eScholarship の PDF は自動取得に確認画面（AWS の WAF の challenge）を返した。ブラウザでの保存が要る。
 - Turchin, P. (2003). *Historical Dynamics*、Turchin & Nefedov (2009). *Secular Cycles*（ともに Princeton UP の書籍）。開けていない。出版社の見本の章の頁は見つからなかった（URL の候補は 404）。
 
 **照合の状態**：本文照合済（PNAS 2013 と、著者のサイトの写しの 2009・2012）。2003 年と 2009 年の書籍は未照合（書籍）。
@@ -341,7 +341,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 160 行「アサビーヤ概念を数理モデル化」 | 未判定 | 中 | 4 節の表を参照 |
 | ja 162〜164 行・214 行「破壊的渦」・「崩壊は束の解体過程として理解する方が整合的」 | 未判定 | 中 | 5段階の定義が決まってから。原典は崩壊を、次の周期の条件を整える過程として書く（2012, p.3） |
 | ja 160〜164 行 戦争と制度の進化に触れていない | 抜け | 中 | 2013（p.16384）と 2009（p.191）の、戦争と敵対が大きな社会をつくる論 |
-| ja 82 行「Turchin」の年・en 68 行「Turchin (2003, 2006)」・pres 54 行「Turchin (2003)」 | 未判定（版の食い違い） | 低 | 台帳の行（D16-S11・S17）は 2013・2014 |
+| ja 82 行「Turchin」の年・en 68 行「Turchin (2003, 2006)」・pres 54 行「Turchin (2003)」 | 未判定（版の食い違い） | 低 | 台帳の行は 2013・2014 |
 
 ### 11. マルクス：史的唯物論（報告に無い論として足した）
 
@@ -350,7 +350,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 **一次情報**：
 
 - Marx, K. (1859). *Zur Kritik der politischen Ökonomie*, Vorwort. 英訳：*A Contribution to the Critique of Political Economy*. N. I. Stone 訳（独語第 2 版から）. Chicago: Charles H. Kerr, 1904（パブリックドメイン）。Internet Archive の cu31924011249889（コーネル大学図書館の本の走査）の `_djvu.txt`（OCR の文字）で読んだ。読んだ頁：序言 pp.11–13。独語の原文は開いていない。台帳に行が無い。
-- 確かめ先：https://archive.org/details/cu31924011249889 （台帳 D16-S25。読んだのは著者の序言。頁は下に控えた）。
+- 確かめ先：https://archive.org/details/cu31924011249889 （台帳に行がある。読んだのは著者の序言。頁は下に控えた）。
 
 **照合の状態**：本文照合済（訳。Stone 訳 1904。OCR の文字で読んだ）。
 
@@ -362,7 +362,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 - 「No social order ever disappears before all the productive forces, for which there is room in it, have been developed」。新しい生産関係は、物質の条件が古い社会の胎内で熟すまで現れない（p.12）。
 - アジア的・古代的・封建的・近代ブルジョア的な生産様式を、社会の経済的構成の進む時代として挙げ、ブルジョア的生産関係を「the last antagonistic form」とする（p.13）。
 
-**対立・衝突・統合の読み**：原典は、生産力と生産関係の衝突を、社会の構成が移る原因として正面から書いています。衝突は、人がイデオロギーの形で「戦い抜く」ものとしても書かれています。至るかどうかの分かれ目として、古い秩序の中で生産力が発達しきり、新しい関係の物質の条件が熟しているかが書かれています。読み替え：生産関係が枷に変わった状態は、固まって動かない統合に近い。足した理由は、README「調査の手順」3（正反合の系譜は 30 領域のどこにも無い）と、本文に当たれて衝突をはっきり書いていることです。歴史学の中では、史的唯物論は 20 世紀の社会経済史に大きく影響した一方、決定論と単線の段階の図式に強い批判がある（研究の一線。この記録では批判の文を読んでいない）。ヘーゲルそのものは D13 哲学で扱います。
+**対立・衝突・統合の読み**：原典は、生産力と生産関係の衝突を、社会の構成が移る原因として正面から書いています。衝突は、人がイデオロギーの形で「戦い抜く」ものとしても書かれています。至るかどうかの分かれ目として、古い秩序の中で生産力が発達しきり、新しい関係の物質の条件が熟しているかが書かれています。読み替え：生産関係が枷に変わった状態は、固まって動かない統合に近い。足した理由は、README「調査の手順」3（正反合の系譜は 30 領域のどこにも無い）と、本文に当たれて衝突をはっきり書いていることです。歴史学の中では、史的唯物論は 20 世紀の社会経済史に大きく影響した一方、決定論と単線の段階の図式に強い批判がある（研究の一線。この記録では批判の文を読んでいない）。ヘーゲルそのものは哲学で扱います。
 
 **今の報告から直すこと**：報告に無い論です。ja 15〜16 行の「10の理論」の選び方に、正反合の系譜が入っていないことの点検として足しました。ブローデル（1958, p.741）は、商業資本主義をマルクスから引ける「モデル」の一つとして挙げています。
 
@@ -411,7 +411,7 @@ ja 3〜6 行「立ち位置明示」、44〜49 行「方法論的開示（S60）
 | 版ごとの件数 | ja・en・pres が別々に生成されたこと |
 | 型 F の表示 | 報告のテンプレート |
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 E（「最も」の言い切り）：「本調査において5段階モデルとの対応が最も明瞭な理論」（94 行）、「調査全体で最も堅固な対応の一つ」（100 行）、「5段階の中で最も精密なものの一つ」（124 行）、「縁の概念を社会科学的に最も精緻に定式化した事例の一つ」（132 行）、「本調査の最大の発見」（180 行）。比べた跡は無い。
 - 型 H（原典に無い体系）：「層間型（ブローデル）、応答型（トインビー）、分岐型（経路依存）…閾値型（ターチン）」（180 行）。
@@ -422,66 +422,60 @@ ja 3〜6 行「立ち位置明示」、44〜49 行「方法論的開示（S60）
 
 ## 判断が要るもの
 
-pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは `docs/cs-review/README.md` の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
+pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは調べ方の計画と規約の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
 
-- インド政府の図書館（考古局の中央考古図書館）の本を走査した Digital Library of India の写し（トインビー第 1 巻、Internet Archive の in.gov.ignca.2921）は、出所（どの図書館の本の走査か）が書けるので、大学の授業の頁や NTRS・ADS の走査と同じ扱いにし、性格と「権利は未確認」を添えて本文照合済にしました（README「規約で決めたこと」2026-11-09 の D06・D16 の行）。1934 年の本の権利は切れていないかもしれません。手元の PDF と Internet Archive の資料の MD5 が一致することは、司令塔も確かめました。
-- 足した論（マルクスの 1859 年の序言）は、本文に当たれて衝突をはっきり書いているので、分野の論として残しました（README「調査の手順」1・3）。哲学（D13）のヘーゲルと並べるときに、同じ系譜を二つに数えないよう段 3 で見ます。
+- インド政府の図書館（考古局の中央考古図書館）の本を走査した Digital Library of India の写し（トインビー第 1 巻、Internet Archive の in.gov.ignca.2921）は、出所（どの図書館の本の走査か）が書けるので、大学の授業の頁や NTRS・ADS の走査と同じ扱いにし、性格と「権利は未確認」を添えて本文照合済にしました（README「規約で決めたこと」2026-11-09 の天文学・宇宙物理学・歴史学の行）。1934 年の本の権利は切れていないかもしれません。手元の PDF と Internet Archive の資料の MD5 が一致することは、司令塔も確かめました。
+- 足した論（マルクスの 1859 年の序言）は、本文に当たれて衝突をはっきり書いているので、分野の論として残しました（README「調査の手順」1・3）。哲学（哲学）のヘーゲルと並べるときに、同じ系譜を二つに数えないよう段 3 で見ます。
 
 - 個人が上げた写しで本文を読んだ論（ウォーラーステインの 2011 年版）は、未照合とし、読んだ頁を書きました（README「規約で決めたこと」）。
 - 授業の頁と著者のサイトの写し（ピアソン・マホニー・ターチン 2009・2012）は、性格を添えて本文照合済にしました。著者のサイトは移っていて、Wayback の記録で読みました。
-- 翻刻（de Slane 訳と Vico の原文の wikisource）は、翻刻であることと校正の段を添えて本文照合済にしました（README 2026-11-09 D11 の行）。
+- 翻刻（de Slane 訳と Vico の原文の wikisource）は、翻刻であることと校正の段を添えて本文照合済にしました（README 2026-11-09 薬学の行）。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D16-S20 | Toynbee, A. J. (1946). *A Study of History. Abridgement of Volumes I–VI* by D. C. Somervell. Oxford UP | https://archive.org/details/in.ernet.dli.2015.241704 （Digital Library of India。今の D16-S03 の public 検証リンクがこれを指している） | url-verified（抄約。権利は未確認） |
-| D16-S21 | Ibn Khaldoun. *Les Prolégomènes*, tome I. M. G. de Slane 訳. Paris: Imprimerie Impériale, 1863 | https://fr.wikisource.org/wiki/Les_Prol%C3%A9gom%C3%A8nes （頁は「Page:Ibn Khaldoun - Prolégomènes, Slane, 1863, tome I.djvu/471–482」。OCR の未校正の翻刻） | url-verified（パブリックドメイン） |
-| D16-S22 | Vico, G. (1744). *Principj di scienza nuova*. F. Nicolini 編 *La scienza nuova seconda*, Bari: Laterza, 1928 | https://it.wikisource.org/wiki/La_scienza_nuova_seconda （未校正の翻刻） | url-verified（パブリックドメイン） |
-| D16-S23 | Turchin, P. (2012). Dynamics of political instability in the United States, 1780–2010. *Journal of Peace Research* 49(4), 577–591. DOI 10.1177/0022343312442078 | https://web.archive.org/web/2024id_/https://peterturchin.com/wp-content/uploads/2012/06/Turchin_JPR2012.pdf （著者のサイトの記録。早期公開版） | raw-confirmed（手元に置くなら。保存名の案 `D16_turchin_2012_political-instability-us.pdf`） |
-| D16-S24 | Turchin, P. (2009). A theory for formation of large empires. *Journal of Global History* 4(2), 191–217. DOI 10.1017/S174002280900312X | https://web.archive.org/web/2024id_/https://peterturchin.com/wp-content/uploads/2023/06/Turchin_JGH_2009.pdf （著者のサイトの記録） | raw-confirmed（保存名の案 `D16_turchin_2009_formation-large-empires.pdf`） |
-| D16-S25 | Marx, K. (1859/1904). *A Contribution to the Critique of Political Economy*. N. I. Stone 訳. Chicago: Charles H. Kerr | https://archive.org/details/cu31924011249889 （コーネル大学図書館の走査） | url-verified（パブリックドメイン） |
-| D16-S26 | Capoccia, G. & Kelemen, R. D. (2007). The study of critical junctures. *World Politics* 59(3), 341–369. DOI 10.1017/S0043887100020852 | Cambridge・Project MUSE（有料） | citation-only |
-| D16-S27 | Hughes, T. P. (1987). The evolution of large technological systems. Bijker, Hughes & Pinch 編 *The Social Construction of Technological Systems*. MIT Press（頁は未確認） | 本文 OA なし | citation-only |
-| D16-S28 | Hughes, T. P. (1969). Technological momentum in history. *Past & Present* 44(1), 106–132. DOI 10.1093/past/44.1.106 | OUP（有料） | citation-only |
-| D16-S29 | Koselleck, R. (2006). Crisis. M. W. Richter 訳. *Journal of the History of Ideas* 67(2), 357–400. DOI 10.1353/jhi.2006.0013 | Project MUSE（有料） | citation-only |
-| D16-S30 | Koselleck, R. (2011). Introduction and prefaces to the *Geschichtliche Grundbegriffe*. M. W. Richter 訳. *Contributions to the History of Concepts* 6(1), 1–37. DOI 10.3167/choc.2011.060102 | Berghahn（PDF の URL がサーバーの誤り 500） | citation-only |
-| D16-S31 | White, H. (1980). The value of narrativity in the representation of reality. *Critical Inquiry* 7(1), 5–27. DOI 10.1086/448086 | UChicago・JSTOR（有料） | citation-only |
-| D16-S32 | Řídký, J. (2019). The narrativism quarrel revisited: Can inquiry revive narrative? *Dějiny – teorie – kritika* 2019(1), 7–33 | https://medusa.is.cuni.cz/dejinyteoriekritika/article/download/2852/2224/14670 （カレル大学の雑誌のサイト） | url-verified（ホワイトの二次資料） |
-| D16-S33 | Wallerstein, I. (1974). The rise and future demise of the world capitalist system. *Comparative Studies in Society and History* 16(4), 387–415. DOI 10.1017/S0010417500007520 | Cambridge（有料） | citation-only |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| Toynbee, A. J. (1946). *A Study of History. Abridgement of Volumes I–VI* by D. C. Somervell. Oxford UP | https://archive.org/details/in.ernet.dli.2015.241704 （Digital Library of India。今の台帳の「Toynbee 1934」の行の public 検証リンクがこれを指している） | 取得先を確かめた（抄約。権利は未確認） |
+| Ibn Khaldoun. *Les Prolégomènes*, tome I. M. G. de Slane 訳. Paris: Imprimerie Impériale, 1863 | https://fr.wikisource.org/wiki/Les_Prol%C3%A9gom%C3%A8nes （頁は「Page:Ibn Khaldoun - Prolégomènes, Slane, 1863, tome I.djvu/471–482」。OCR の未校正の翻刻） | 取得先を確かめた（パブリックドメイン） |
+| Vico, G. (1744). *Principj di scienza nuova*. F. Nicolini 編 *La scienza nuova seconda*, Bari: Laterza, 1928 | https://it.wikisource.org/wiki/La_scienza_nuova_seconda （未校正の翻刻） | 取得先を確かめた（パブリックドメイン） |
+| Turchin, P. (2012). Dynamics of political instability in the United States, 1780–2010. *Journal of Peace Research* 49(4), 577–591. DOI 10.1177/0022343312442078 | https://web.archive.org/web/2024id_/https://peterturchin.com/wp-content/uploads/2012/06/Turchin_JPR2012.pdf （著者のサイトの記録。早期公開版） | 手元に保存した（手元に置くなら。保存名の案手元の PDF） |
+| Turchin, P. (2009). A theory for formation of large empires. *Journal of Global History* 4(2), 191–217. DOI 10.1017/S174002280900312X | https://web.archive.org/web/2024id_/https://peterturchin.com/wp-content/uploads/2023/06/Turchin_JGH_2009.pdf （著者のサイトの記録） | 手元に保存した（保存名の案手元の PDF） |
+| Marx, K. (1859/1904). *A Contribution to the Critique of Political Economy*. N. I. Stone 訳. Chicago: Charles H. Kerr | https://archive.org/details/cu31924011249889 （コーネル大学図書館の走査） | 取得先を確かめた（パブリックドメイン） |
+| Capoccia, G. & Kelemen, R. D. (2007). The study of critical junctures. *World Politics* 59(3), 341–369. DOI 10.1017/S0043887100020852 | Cambridge・Project MUSE（有料） | 書誌だけ |
+| Hughes, T. P. (1987). The evolution of large technological systems. Bijker, Hughes & Pinch 編 *The Social Construction of Technological Systems*. MIT Press（頁は未確認） | 本文 OA なし | 書誌だけ |
+| Hughes, T. P. (1969). Technological momentum in history. *Past & Present* 44(1), 106–132. DOI 10.1093/past/44.1.106 | OUP（有料） | 書誌だけ |
+| Koselleck, R. (2006). Crisis. M. W. Richter 訳. *Journal of the History of Ideas* 67(2), 357–400. DOI 10.1353/jhi.2006.0013 | Project MUSE（有料） | 書誌だけ |
+| Koselleck, R. (2011). Introduction and prefaces to the *Geschichtliche Grundbegriffe*. M. W. Richter 訳. *Contributions to the History of Concepts* 6(1), 1–37. DOI 10.3167/choc.2011.060102 | Berghahn（PDF の URL がサーバーの誤り 500） | 書誌だけ |
+| White, H. (1980). The value of narrativity in the representation of reality. *Critical Inquiry* 7(1), 5–27. DOI 10.1086/448086 | UChicago・JSTOR（有料） | 書誌だけ |
+| Řídký, J. (2019). The narrativism quarrel revisited: Can inquiry revive narrative? *Dějiny – teorie – kritika* 2019(1), 7–33 | https://medusa.is.cuni.cz/dejinyteoriekritika/article/download/2852/2224/14670 （カレル大学の雑誌のサイト） | 取得先を確かめた（ホワイトの二次資料） |
+| Wallerstein, I. (1974). The rise and future demise of the world capitalist system. *Comparative Studies in Society and History* 16(4), 387–415. DOI 10.1017/S0010417500007520 | Cambridge（有料） | 書誌だけ |
 
 既存の行に書き足す案：
 
-- D16-S03：手元の PDF は Internet Archive の in.gov.ignca.2921（インド考古局の中央考古図書館の本の走査。Digital Library of India）と MD5 が一致した。第 1 巻の第 2 版（1935）の第 6 刷（1955）。文字の層が無く、同じ資料の `2921_djvu.txt` で読める。今の public 検証リンク in.ernet.dli.2015.241704 は Somervell の抄約（D16-S20 の案）なので差し替える。第 4 巻の dli.ernet.12121 も Digital Library of India の走査（1948 年版）。
-- D16-S05：台帳の OA の URL（cadmus.eui.eu/bitstream/…）は今は HTML を返す。機関リポジトリの handle https://hdl.handle.net/1814/23648 と API の bitstream で PDF が取れる。これは 1997 年の作業論文版。誌面（APSR）は UNC の授業の頁の写し（https://fbaum.unc.edu/teaching/articles/Pierson_APSR_2000.pdf 。頁の画像）で読める。
-- D16-S06：ETH の写しは JSTOR の版（2008 年の取得の印つき）。
-- D16-S09：Rosenthal 訳の写しは Internet Archive に利用者が上げたもので、権利は未確認。de Slane 訳（D16-S21 の案）で同じ箇所を照らした。
-- D16-S10：Internet Archive の写しは利用者（opensource の集まり）が上げた 2011 年の UC Press の版で、権利は未確認。
-- D16-S17：eScholarship の PDF は自動取得に確認画面を返す。DOI 10.21237/C7clio5125308（Crossref で題・著者・巻号を照らした）。
+- 台帳の「Toynbee 1934」の行：手元の PDF は Internet Archive の in.gov.ignca.2921（インド考古局の中央考古図書館の本の走査。Digital Library of India）と MD5 が一致した。第 1 巻の第 2 版（1935）の第 6 刷（1955）。文字の層が無く、同じ資料の `2921_djvu.txt` で読める。今の public 検証リンク in.ernet.dli.2015.241704 は Somervell の抄約（台帳に足す案）なので差し替える。第 4 巻の dli.ernet.12121 も Digital Library of India の走査（1948 年版）。
+- 台帳の「Pierson 2000」の行：台帳の OA の URL（cadmus.eui.eu/bitstream/…）は今は HTML を返す。機関リポジトリの handle https://hdl.handle.net/1814/23648 と API の bitstream で PDF が取れる。これは 1997 年の作業論文版。誌面（APSR）は UNC の授業の頁の写し（https://fbaum.unc.edu/teaching/articles/Pierson_APSR_2000.pdf 。頁の画像）で読める。
+- 台帳の「Mahoney 2000」の行：ETH の写しは JSTOR の版（2008 年の取得の印つき）。
+- 台帳の「Ibn Khaldun 1377」の行：Rosenthal 訳の写しは Internet Archive に利用者が上げたもので、権利は未確認。de Slane 訳（台帳に足す案）で同じ箇所を照らした。
+- 台帳の「Wallerstein 1974」の行：Internet Archive の写しは利用者（opensource の集まり）が上げた 2011 年の UC Press の版で、権利は未確認。
+- 台帳の「Turchin 2014」の行：eScholarship の PDF は自動取得に確認画面を返す。DOI 10.21237/C7clio5125308（Crossref で題・著者・巻号を照らした）。
 
 ## ブラウザでの保存が要る PDF
 
-| 台帳の行 | 文献 | ダウンロード先 | 保存名の案 | 止まった理由 | 保存できると何を確かめられるか |
-|---|---|---|---|---|---|
-| D16-S17 | Turchin (2014). Cultural evolution and cliodynamics. *Cliodynamics* 5(1) | https://escholarship.org/content/qt63v195gz/qt63v195gz.pdf | `D16_turchin_2014_cultural-evolution-cliodynamics.pdf` | eScholarship が自動取得に AWS の WAF の確認画面（HTTP 202・x-amzn-waf-action: challenge）を返した | 精読ノート S17 と wiki の内容。ターチン自身が、文化の進化と世俗の周期をどうつなぐか（アサビーヤの数理化の帰属の手がかり） |
-| D16-S30 の案 | Koselleck (2011). *Contributions to the History of Concepts* 6(1), 1–37 | https://www.berghahnjournals.com/view/journals/contributions/6/1/choc060102.xml （頁の中の「PDF」） | `D16_koselleck_2011_basic-concepts-introduction.pdf` | PDF の URL がサーバーの誤り（500）を返した。確認画面かどうかは分からない。日をおいて取り直す | 鞍型期（Sattelzeit）の年と、経験と期待の書き方。報告 ja 120 行の「1750-1850年」 |
-| D16-S01 | Braudel (1949). *La Méditerranée…* | 台帳の行のとおり、archive.org は貸し出しのみ | ― | 借覧の制限（確認画面ではない） | 三部構成と三つの時間の層の関係（報告 ja 136 行） |
-
-ほかの有料の論文（Capoccia & Kelemen・Hughes 1969・Koselleck 2006・White 1966/1980/1984・Wallerstein 1974 CSSH）は、出版社の壁で、確認画面ではありません。図書館の手続きが要るかは pjdhiro が決めます。
+自動で取れなかった原典のうち、ブラウザでの保存を頼むものは、作業の記録（[Issue #73](https://github.com/uminomae/project-design-theory/issues/73)）の表にまとめました。
 
 ## 手順について分かったこと
 
 - 書籍が多い分野でしたが、パブリックドメインの訳と原文の翻刻（de Slane 1863・Vico 1744・Stone 1904）と、授業の頁と著者のサイトの写しで、11 の論のうち 7 つで本文に当たれました。著者のサイトが移って 404 のときは、Wayback の CDX で著者の uploads の一覧を引くと見つかりました（ターチン）。
 - 手元の PDF の表紙を突き合わせると、台帳の public 検証リンクが別の本（Somervell の抄約）を指していました。手元の PDF そのものは、Internet Archive の別の資料と MD5 が一致し、そこから OCR の文字が取れました。手元の PDF に文字の層が無いときは、まず MD5 で同じ資料を探すと早いです。
-- 精読ノート S05 は APSR を UNC の授業の頁で読んだと書いていて、その写しで誌面の頁に当たれました。台帳の取得先（EUI の作業論文）より、精読ノートの確かめ先のほうが良いことがありました。
+- 精読ノート「Pierson 2000」は APSR を UNC の授業の頁で読んだと書いていて、その写しで誌面の頁に当たれました。台帳の取得先（EUI の作業論文）より、精読ノートの確かめ先のほうが良いことがありました。
 - 報告が訳した語（サンクコスト）を、原典の脚注が名指しで退けていました。報告の語と原典の語を一つずつ突き合わせると、言い換えが逆向きになっている所が見つかります。
-- 本文に当たれた論は、どれも衝突と至らない形を書いていて、報告はそれを落としていました（D25・D18 と同じ形）。歴史の論は、至らない形と分かれ目（挑戦の強さ・攻める者の有無・内の君主と外の征服・生産力の発達の度合い）を、論の中で書き分けていました。
+- 本文に当たれた論は、どれも衝突と至らない形を書いていて、報告はそれを落としていました（人類学・民族学・社会学と同じ形）。歴史の論は、至らない形と分かれ目（挑戦の強さ・攻める者の有無・内の君主と外の征服・生産力の発達の度合い）を、論の中で書き分けていました。
 - OpenAlex が途中で回数の制限を返しました。Unpaywall と CORE は鍵が無く飛ばしました。
 
 ### 精読ノートと wiki の誤り（司令塔が直す）
 
-- `pd/wiki/sources/D16_toynbee_1934_study-of-history.md` 32 行：全文のリンク https://archive.org/details/studyofhistory0010toyn は第 10 巻（1954、貸し出しのみ）を指す。手元の PDF は in.gov.ignca.2921。
-- `pd/wiki/sources/D16_toynbee_1934_study-of-history.md` 28 行：「Volume I (Parts I-III)」。第 1 巻の目次では、第 1 巻は Part I と Part II の前半（II.A〜C）で、Part III は第 3 巻から。
-- `cs/knowledge/raw/manifest.md` D16-S03 の備考：public 検証リンク in.ernet.dli.2015.241704 は Somervell の抄約（第 1〜6 巻の要約）で、第 1 巻ではない。
-- `cs/knowledge/raw/manifest.md` D16-S05：OA の URL（bitstream の古い形）が今は DSpace の HTML を返す。
-- `pd/wiki/sources/D16_braudel_1958_longue-duree.md` 75 行：『地中海世界』（1949）の実践に基づいて精緻化したと書くが、1958 年の論文が 1949 年の本を引くのは都市の周期のモデル（p.741 の注）だけで、三つの層の出どころとは書いていない（低）。
+- wiki の頁「Toynbee 1934」 32 行：全文のリンク https://archive.org/details/studyofhistory0010toyn は第 10 巻（1954、貸し出しのみ）を指す。手元の PDF は in.gov.ignca.2921。
+- wiki の頁「Toynbee 1934」 28 行：「Volume I (Parts I-III)」。第 1 巻の目次では、第 1 巻は Part I と Part II の前半（II.A〜C）で、Part III は第 3 巻から。
+- 台帳の「Toynbee 1934」の行の備考：public 検証リンク in.ernet.dli.2015.241704 は Somervell の抄約（第 1〜6 巻の要約）で、第 1 巻ではない。
+- 台帳の「Pierson 2000」の行：OA の URL（bitstream の古い形）が今は DSpace の HTML を返す。
+- wiki の頁「Braudel 1958」 75 行：『地中海世界』（1949）の実践に基づいて精緻化したと書くが、1958 年の論文が 1949 年の本を引くのは都市の周期のモデル（p.741 の注）だけで、三つの層の出どころとは書いていない（低）。

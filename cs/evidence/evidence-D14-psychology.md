@@ -14,13 +14,13 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D14-psych
 
 心理学の論では、過去にうまくいったものと、今の新しい状況とのぶつかりが、過程の中に書かれていることが多くありました。たとえば、洞察の研究は「経験は助けでもあり妨げでもある」と書き、過去の経験から来た表象では解けないことが続いた末に、表象が変わると説明します（Knoblich ら 1999）。強制的な服従の実験では、私的な意見と、それに反する公の発言とがぶつかり、報酬が少ないほど意見が言ったことの方へ変わりました（Festinger & Carlsmith 1959）。注意の論では、限られた処理の容量を視野の中の複数の物が奪い合い、偏りで勝った物が残り、ほかは抑えられます（Desimone & Duncan 1995）。統合に至らない形も、原典に書かれています。役に立たない思いつきのあとは行き詰まりが続き、課題の切り替えでは前の構えが残ってコストになります。神経科学の記録で本文照合した予測処理の原典には、二つの仮説を行き来し続ける形と、偽の推論が固まる形が書かれています。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D14-psychology.md`、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論のうち 3 を「強い対応」としています。報告は、認知的不協和を合理化で解くことを「波の消去」と呼び、渦に至らない経路としています。原典は、意見の変化そのものを「自分を説得する」不協和の低減として書き、ほかの低減の道と同じ扱いにしています。この分け方は原典に無いものでした。また、報告は衝突を波（行き詰まり・不協和・予測誤差）に当て、縁を「どの制約を解くか」「どの方略を選ぶか」という選択として読んでいます。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
+今の公開報告（「30 領域調査報告」の心理学の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論のうち 3 を「強い対応」としています。報告は、認知的不協和を合理化で解くことを「波の消去」と呼び、渦に至らない経路としています。原典は、意見の変化そのものを「自分を説得する」不協和の低減として書き、ほかの低減の道と同じ扱いにしています。この分け方は原典に無いものでした。また、報告は衝突を波（行き詰まり・不協和・予測誤差）に当て、縁を「どの制約を解くか」「どの方略を選ぶか」という選択として読んでいます。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D14-psychology.md) にあります。退避版の判定（Accept・縁フラグ・採用確定など）は、今の照合の状態の根拠にしていません。
 
 ## 一面の表
 
-照合の状態は `docs/rules/sources.md` §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。 この表で、原典の構造を対立・衝突・統合と呼ぶことと、括弧の中の並べ方の名（片方の勝利・固着など）は、Claude の読み替えです。
+照合の状態は調べ方の規約 §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。 この表で、原典の構造を対立・衝突・統合と呼ぶことと、括弧の中の並べ方の名（片方の勝利・固着など）は、Claude の読み替えです。
 
 | 論 | 対立 | 衝突 | 統合／新たな安定、または統合に至らずにどう終わったか | 論の微細さ | 照合の状態 |
 |---|---|---|---|---|---|
@@ -34,7 +34,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | 8. スキーマ理論（Bartlett 1932、Piaget 1952、Neisser 1976） | 未照合（報告では、既存のスキーマと新しい情報） | 未照合 | 未照合 | 一人。記憶から発達まで | 未照合 |
 | 9. 注意のバイアス競合（Desimone & Duncan 1995） | 視野の中の複数の物（今の目的に合う物と合わない物） | 処理の容量が限られているので、物どうしが処理を奪い合う | 上からの偏り（目的）と下からの偏り（目立つこと）で競合が解かれ、勝った物の表象が残り、ほかは抑えられる（片方の勝利）。上からの偏りが、下からの強い刺激でくつがえることもある | ニューロンと視野。百ミリ秒ほど | 本文照合済（pp.193–194・199–202・217） |
 | 10. 認知的柔軟性（Monsell 2003、Diamond 2013） | 前の課題の構え（前の見方）と、新しい課題・新しい見方 | 切り替えるとき、前の構えの活性と抑制が残り、反応が遅れ誤りが増える（切り替えのコスト） | 前の見方を抑え、別の見方を作業記憶に載せる。コストは準備で減るが消えない（前の構えが残る）。至らない形は固さ。原典は、ストレス・悲しみ・孤独・睡眠不足を、実行機能を先に損なうものとして書く | 一人。秒（切り替え）から年（発達） | 本文照合済（Diamond 2013 の PMC 著者稿、節の名前で控えた）・要旨照合済（Monsell 2003） |
-| 参考：Wallas 1926 の四段階［似た論文。比べる補強］ | 精読ノートからは読み取れない | 精読ノートからは読み取れない | 準備・孵化・照明・検証の四つ。日々の思考では四つが重なり合う、と書く | 一人の創造の過程 | 二次資料のみ（精読ノート D14-S05） |
+| 参考：Wallas 1926 の四段階［似た論文。比べる補強］ | 精読ノートからは読み取れない | 精読ノートからは読み取れない | 準備・孵化・照明・検証の四つ。日々の思考では四つが重なり合う、と書く | 一人の創造の過程 | 二次資料のみ（精読ノート「Wallas 1926」 |
 
 ここまでで見えたことを、見立てとして書きます。本文で確かめられた六つの論（洞察・不協和・4E 認知・予測処理・バイアス競合・柔軟性）のうち、五つは、過去や今の安定（経験・意見・前の構え・予測・目的）と、それに合わないもののぶつかりを、過程の中に置いています。洞察の論は、行き詰まりを「続く失敗への心の応答」の起点として書き、失敗を過程に欠かせない形で含めています。不協和の論は、不協和そのものを変化の駆動として書いています。一方、終わり方は論ごとに違います。バイアス競合では片方が勝ち、ほかは抑えられます。柔軟性の論では前の構えが残り、不協和の実験では意見が変わる人と変わらない人に分かれました。どれを統合とし、どれを片方の勝利とするかは、5段階の定義が決まってから見ます。4E 認知は、対立と衝突を主題にしていません。フロー・アフォーダンス・概念メタファー・スキーマの四つは、原典の本文に当たれていません。
 
@@ -46,7 +46,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Knoblich, G., Ohlsson, S., Haider, H., & Rhenius, D. (1999). Constraint relaxation and chunk decomposition in insight problem solving. *Journal of Experimental Psychology: Learning, Memory, and Cognition* 25(6), 1534–1555. DOI 10.1037/0278-7393.25.6.1534。ケルン大学の公開 PDF（https://www.kognition.uni-koeln.de/literature/Knoblich_etal_1999.pdf、22 頁、先頭が %PDF、表紙の書誌が一致）。manifest に行が無い（下の案）。読んだ頁：pp.1534–1536・p.1551・p.1553。
+- Knoblich, G., Ohlsson, S., Haider, H., & Rhenius, D. (1999). Constraint relaxation and chunk decomposition in insight problem solving. *Journal of Experimental Psychology: Learning, Memory, and Cognition* 25(6), 1534–1555. DOI 10.1037/0278-7393.25.6.1534。ケルン大学の公開 PDF（https://www.kognition.uni-koeln.de/literature/Knoblich_etal_1999.pdf、22 頁、先頭が %PDF、表紙の書誌が一致）。台帳に行が無い（下の案）。読んだ頁：pp.1534–1536・p.1551・p.1553。
 - Knoblich, G., Ohlsson, S., & Raney, G. E. (2001). An eye movement study of insight problem solving. *Memory & Cognition* 29, 1000–1009. DOI 10.3758/BF03195762。要旨だけ（Europe PMC、PMID 11820744）。Springer の PDF は有料の壁で取れなかった。
 - Ohlsson, S. (1992). Information-processing explanations of insight and related phenomena. In M. Keane & K. Gilhooly (Eds.), *Advances in the psychology of thinking* (pp.1–44). Harvester-Wheatsheaf。章は開けていない。書誌は Knoblich ら 1999 の文献表で確かめた（そこでは Ohlsson 1992b）。
 - Hattori, M., Sloman, S. A., & Orita, R. (2013). Effects of subliminal hints on insight problem solving. *Psychonomic Bulletin & Review* 20, 790–797. DOI 10.3758/s13423-013-0389-0。要旨だけ（Europe PMC、PMID 23392651）。
@@ -79,7 +79,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 95 行「各段階の遷移が理論の内部に独立して存在しており、5段階への当てはめが後付けではない」、97 行「10件中で最も構造的に鮮明」 | 言い過ぎ | 中 | 原典にあるのは探索・行き詰まり・洞察・実行の並び（p.1534）で、場と束に当たる段は原典に名前が無い。「後付けではない」は言えない |
 | ja 95 行「眼球運動データによる縁→渦の遷移の客観追跡は…稀有な事例」 | 言い過ぎ | 低 | 2001 年の要旨は、表象変化の理論の予測と合ったと書くまで。縁や渦の語は Claude の当てはめ |
 
-重複：Wallas 1926 の四段階（D14-S05）は、Knoblich ら 1999 p.1534 が同じ並びの源の一つとして挙げています。
+重複：Wallas 1926 の四段階は、Knoblich ら 1999 p.1534 が同じ並びの源の一つとして挙げています。
 
 ### 2. 認知的不協和（Festinger 1957、Festinger & Carlsmith 1959）
 
@@ -87,7 +87,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Festinger, L., & Carlsmith, J. M. (1959). Cognitive consequences of forced compliance. *Journal of Abnormal and Social Psychology* 58, 203–210. DOI 10.1037/h0041593（Crossref で一致）。York University の Classics in the History of Psychology の打ち直し（http://psychclassics.yorku.ca/Festinger/ 。誌面の頁の標記つき）。manifest に行が無い（下の案）。読んだ頁：pp.203–204（序と理論の要約）、方法の節（参加者・除いた 11 人）、pp.207–208（結果）。
+- Festinger, L., & Carlsmith, J. M. (1959). Cognitive consequences of forced compliance. *Journal of Abnormal and Social Psychology* 58, 203–210. DOI 10.1037/h0041593（Crossref で一致）。York University の Classics in the History of Psychology の打ち直し（http://psychclassics.yorku.ca/Festinger/ 。誌面の頁の標記つき）。台帳に行が無い（下の案）。読んだ頁：pp.203–204（序と理論の要約）、方法の節（参加者・除いた 11 人）、pp.207–208（結果）。
 - Festinger, L. (1957). *A Theory of Cognitive Dissonance*. Evanston, IL: Row, Peterson（出版社は Festinger & Carlsmith 1959 の文献表による）。archive.org の版はどれも貸出制限つきで、本文は開けていない。
 - Veiga-Zarza, E., Álvarez, F., Harmon-Jones, E., & Carretié, L. (2026). Neural basis of attitude change motivated by cognitive dissonance: a scoping review. *Cognitive, Affective, & Behavioral Neuroscience* 26, 725–749. DOI 10.3758/s13415-025-01369-y。要旨だけ（Europe PMC、PMID 41667918）。
 
@@ -109,11 +109,11 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 | 今の報告の行 | 判定 | 重さ | 中身 |
 |---|---|---|---|
-| ja 105 行「重要度の切り下げや合理化で不快を解消する場合には、渦的な『新たな構造の自己組織化』は生じていません」、187 行「重要度切下げや合理化による不快の解消は『波の消去』にすぎず」「確認されました」 | 取り違え | 高 | 原典は意見の変化を「自分を説得する」低減として書き、報酬や重要さを大きく見る道と同じ低減の中に並べる（pp.204・207–208）。意見の変化と合理化を分ける線は原典に無い。分け方は調べた跡（phase6 の output.md 30・37 行）から来て、報告で「確認されました」になった |
-| ja 103 行「態度変更、行動変更、正当化、重要度の切り下げという4つの経路」、en 96・100 行 | 未判定 | 中 | 1959 年の論文が挙げるのは、意見の変化・報酬の価値を大きく見る・重要さを大きく見る、の三つ（p.204・p.208）。「重要度の切り下げ」は、論文では逆向き（協和する認知の重さを大きく見る）に出る。四つの経路は DR-D14 から来た。1957 年の書籍は未照合 |
+| ja 105 行「重要度の切り下げや合理化で不快を解消する場合には、渦的な『新たな構造の自己組織化』は生じていません」、187 行「重要度切下げや合理化による不快の解消は『波の消去』にすぎず」「確認されました」 | 取り違え | 高 | 原典は意見の変化を「自分を説得する」低減として書き、報酬や重要さを大きく見る道と同じ低減の中に並べる（pp.204・207–208）。意見の変化と合理化を分ける線は原典に無い。分け方は調べた跡（phase6 の出力 30・37 行）から来て、報告で「確認されました」になった |
+| ja 103 行「態度変更、行動変更、正当化、重要度の切り下げという4つの経路」、en 96・100 行 | 未判定 | 中 | 1959 年の論文が挙げるのは、意見の変化・報酬の価値を大きく見る・重要さを大きく見る、の三つ（p.204・p.208）。「重要度の切り下げ」は、論文では逆向き（協和する認知の重さを大きく見る）に出る。四つの経路は2026-02 の DRから来た。1957 年の書籍は未照合 |
 | ja 101 行「強制的服従実験（N=71）」 | 一致（注記） | 低 | 参加は 71 人、分析は 60 人（各条件 20 人）。除いた 11 人の理由も原典にある |
 | ja 101 行「Veiga-Zarza et al.（2026）のスコーピングレビュー」 | 一致 | ― | 要旨照合済。著者は 4 人（Crossref） |
-| 退避版の文献「Festinger (1957). Stanford University Press」、DR-D14 も同じ | 取り違え（書誌） | 低 | 1957 年の初版は Row, Peterson（Festinger & Carlsmith 1959 の文献表）。Stanford University Press は後の版。公開報告には出版社の行が無い |
+| 退避版の文献「Festinger (1957). Stanford University Press」、2026-02 の DRも同じ | 取り違え（書誌） | 低 | 1957 年の初版は Row, Peterson（Festinger & Carlsmith 1959 の文献表）。Stanford University Press は後の版。公開報告には出版社の行が無い |
 | ja 58 行・179 行「切断的縁——…不協和における重要度の切り下げ」「競合的縁——…不協和の低減方略の選択」 | 付け足し | 中 | 低減を縁の「切断」「競合」に分けるのは調べた跡（phase7）の構成で、原典に無い |
 
 ### 3. フロー体験（Csikszentmihalyi 1990）
@@ -137,7 +137,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | 今の報告の行 | 判定 | 重さ | 中身 |
 |---|---|---|---|
 | ja 109 行「Flow State Scale（FSS）を開発し、信頼性はα平均約0.83」 | 未判定 | 低 | 尺度の開発は要旨と一致。0.83 は Crossref の要旨が崩れていて確かめられない |
-| ja 109 行「メタ分析（Liu et al., 2023; k=113, N=60,110）…ρ=0.55」 | 未判定 | 低 | 書誌は Crossref と一致。数は確かめられない。DR-D14 から来た |
+| ja 109 行「メタ分析（Liu et al., 2023; k=113, N=60,110）…ρ=0.55」 | 未判定 | 低 | 書誌は Crossref と一致。数は確かめられない。2026-02 の DRから来た |
 | ja 60・113 行「瓦解条件（不安や退屈への逸脱）」「渦の境界条件」 | 未判定 | 中 | 書籍が不安や退屈を成長の駆動として書いているかもしれない（Claude の記憶、未照合）。確かめてから直す |
 | ja 113 行「渦の内部では5段階の線形的な進行が一時的に停止する可能性」、ja 60 行 | 付け足し | 低 | 時間感覚の変容（主観の報告）を、段階の進行の停止に結ぶのは Claude の読み。調べた跡（phase6）から来た |
 
@@ -147,8 +147,8 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Varela, F. J., Thompson, E., & Rosch, E. (1991). *The Embodied Mind: Cognitive Science and Human Experience*. MIT Press。manifest D14-S01。手元の PDF（309 頁。著作権の頁の文字は崩れているが、1991・MIT・三人の名が読める）。台帳は出どころを「Monoskop 公開 PDF」と書く。Monoskop は利用者が文書を上げる置き場で、上げた人と権利は確かめていない（2026-11-09）。読んだ頁：p.9・p.207。自然の漂流（pp.186–188）は、神経科学の記録（`evidence-D08-neuroscience.md`）で同じ PDF を読んだものを使った。
-- Clark, A., & Chalmers, D. (1998). The extended mind. *Analysis* 58(1), 7–19. DOI 10.1093/analys/58.1.7（Crossref と表紙で一致）。manifest D14-S02 の OA の URL（https://www.alice.id.tue.nl/references/clark-chalmers-1998.pdf 、JSTOR の写し、14 頁、先頭が %PDF）。読んだ頁：p.8・p.13。
+- Varela, F. J., Thompson, E., & Rosch, E. (1991). *The Embodied Mind: Cognitive Science and Human Experience*. MIT Press。台帳に行がある。手元の PDF（309 頁。著作権の頁の文字は崩れているが、1991・MIT・三人の名が読める）。台帳は出どころを「Monoskop 公開 PDF」と書く。Monoskop は利用者が文書を上げる置き場で、上げた人と権利は確かめていない（2026-11-09）。読んだ頁：p.9・p.207。自然の漂流（pp.186–188）は、神経科学の記録（神経科学の記録）で同じ PDF を読んだものを使った。
+- Clark, A., & Chalmers, D. (1998). The extended mind. *Analysis* 58(1), 7–19. DOI 10.1093/analys/58.1.7（Crossref と表紙で一致）。台帳の「Clark & Chalmers 1998」の行の OA の URL（https://www.alice.id.tue.nl/references/clark-chalmers-1998.pdf 、JSTOR の写し、14 頁、先頭が %PDF）。読んだ頁：p.8・p.13。
 - Newen, A., De Bruin, L., & Gallagher, S. (Eds.) (2018). *The Oxford Handbook of 4E Cognition*. DOI 10.1093/oxfordhb/9780198735410.001.0001。書誌のみ（Crossref）。
 
 **照合の状態**：Clark & Chalmers は本文照合済（p.8・p.13）。Varela らは未照合（上げた人の分からない写しで p.9・p.207 を読んだ。2026-11-09 の一巡で、本文照合済から改めた）。Newen ら は書誌のみ。
@@ -172,7 +172,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 137 行「場は『頭の中』ではなく『身体を含む系全体』であるという知見は、5段階モデルの場の理解を本質的に豊かにします」 | 言い過ぎ | 低 | 「本質的に」の格上げ。場の定義が決まっていない |
 | 退避版の EV-PS-004「エナクティヴィズム：認知は行為を通じて構成される。Varela et al. (1991)」 | 一致 | ― | p.9 と合う |
 
-重複：Varela ら 1991 は D08 神経科学（D08-S08）と同じ PDF です。意識とは（as）の公開ページは神経現象学を「調べ始めたところ」と書くまでで、Varela らの本を論じていません。
+重複：Varela ら 1991 は神経科学と同じ PDF です。意識とは（as）の公開ページは神経現象学を「調べ始めたところ」と書くまでで、Varela らの本を論じていません。
 
 ### 5. アフォーダンス（Gibson 1979）
 
@@ -214,17 +214,17 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨**：脳は世界のモデルから予測を作り、感覚からの入力とのずれ（予測誤差）を小さくするように、推定を変えるか、行為で入力を変える。精度の重みは、どのずれを重く見るかを決める。
 
-**一次情報**：神経科学の記録（`evidence-D08-neuroscience.md` の 2 の節）で本文照合済の原典を、読み直さずに参照した。
+**一次情報**：神経科学の記録（神経科学の記録の 2 の節）で本文照合済の原典を、読み直さずに参照した。
 
 - Friston, K. (2010). The free-energy principle: a unified brain theory? *Nature Reviews Neuroscience* 11(2), 127–138. DOI 10.1038/nrn2787。著者の UCL の頁の PDF。神経科学の記録で pp.127–129・132 を照合済。
-- Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. *Behavioral and Brain Sciences* 36(3), 181–204. DOI 10.1017/S0140525X12000477。manifest D08-S13。神経科学の記録で p.185・p.197 ほかを照合済。
+- Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. *Behavioral and Brain Sciences* 36(3), 181–204. DOI 10.1017/S0140525X12000477。台帳の神経科学の行にある。神経科学の記録で p.185・p.197 ほかを照合済。
 - Feldman, H., & Friston, K. J. (2010). Attention, uncertainty, and free-energy. *Frontiers in Human Neuroscience* 4, 215. DOI 10.3389/fnhum.2010.00215。PMC3001758。要旨だけ（Europe PMC）。
 
 **照合の状態**：本文照合済（神経科学の記録による）。Feldman & Friston は要旨照合済。
 
 **原典に書いてあること**（神経科学の記録から）：誤差は、推定を変えるか行為で入力を変えるかで減らされる（Friston p.129）。精度は、下からの予測誤差と上からの予測の相対的な影響を決める（p.132）。両眼視野闘争では、どの仮説も入力の全部を説明できず、二つを行き来する（Clark p.185）。精度の重みが狂うと、偽の推論が固まり、妄想と幻覚になる（p.197）。Feldman & Friston の要旨は、注意を、階層的な知覚の中で不確かさ（精度）の水準を推論することとして理解できる、と書きます。
 
-**対立・衝突・統合の読み**：予測と入力のずれは、過程の中心にあります。終わり方は一つでなく、ずれが減る形、行き来し続ける形、悪い統合として固まる形が、原典にあります。報告はこの論を「5段階の全段階に対応」「洞察問題解決と並んで最も構造的に強い」と書きますが、行き来し続ける形と固まる形には触れていません。意識とは（as）の調べた跡（`as/evidence/review/layer1-prediction-error-reading.md`）は、この系統の語を「説明し尽くす理論」としては採らず、どこまで似ていてどこでずれるかを見る参照枠として使う、と書いています。報告の「後付けではない」という書き方は、この扱いより強い言い方です（as は直さない）。
+**対立・衝突・統合の読み**：予測と入力のずれは、過程の中心にあります。終わり方は一つでなく、ずれが減る形、行き来し続ける形、悪い統合として固まる形が、原典にあります。報告はこの論を「5段階の全段階に対応」「洞察問題解決と並んで最も構造的に強い」と書きますが、行き来し続ける形と固まる形には触れていません。意識とは（as）の調べた跡（意識とはの点検の記録）は、この系統の語を「説明し尽くす理論」としては採らず、どこまで似ていてどこでずれるかを見る参照枠として使う、と書いています。報告の「後付けではない」という書き方は、この扱いより強い言い方です（as は直さない）。
 
 **今の報告から直すこと**：
 
@@ -236,7 +236,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 121 行「5段階が複数の階層で同時並行的に進行する可能性」 | 付け足し | 低 | 階層は原典にあるが、5段階の並行は Claude の読み |
 | pres 63 行「Helmholtz（1867）…Rao & Ballard（1999）」 | 未判定 | 低 | Rao & Ballard は神経科学の記録で照合済。Helmholtz は未照合 |
 
-重複：D08 神経科学と同じ論です。報告どうしも、精度を縁とする書き方が同じです。
+重複：神経科学と同じ論です。報告どうしも、精度を縁とする書き方が同じです。
 
 ### 8. スキーマ理論（Bartlett 1932、Piaget 1952、Neisser 1976）
 
@@ -246,12 +246,12 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 - Bartlett, F. C. (1932). *Remembering*. Cambridge University Press。archive.org にあるのは、貸出制限つきの版と、個人がアップロードした 1995 年版の写しで、後者は権利の確かめがつかないので使わなかった。
 - Piaget, J. (1952). *The Origins of Intelligence in Children*. International Universities Press。archive.org の版は貸出制限つき。
-- 追記（2026-11-09）：Piaget が均衡化（外からの乱れに補いを返す自己調整）を自分で短く書いた論文（Piaget 1964, *Journal of Research in Science Teaching* 2(3), 176–186 の再録）は、D23 発達心理学の記録（`evidence-D23-developmental-psychology.md` の 8）が本文で読んでいます。この論の照合の状態（未照合）は変えていません。同化と調節の定義を、その論文の頁で確かめていないためです。
+- 追記（2026-11-09）：Piaget が均衡化（外からの乱れに補いを返す自己調整）を自分で短く書いた論文（Piaget 1964, *Journal of Research in Science Teaching* 2(3), 176–186 の再録）は、発達心理学の記録（発達心理学の記録の 8）が本文で読んでいます。この論の照合の状態（未照合）は変えていません。同化と調節の定義を、その論文の頁で確かめていないためです。
 - Neisser, U. (1976). *Cognition and Reality*. W. H. Freeman。開けていない。
 
 **照合の状態**：未照合。
 
-**対立・衝突・統合の読み**：原典を読めていないので書きません。報告の「同化で処理できる場合には5段階が起動しないという発見」（ja 127 行）は、原典の主張ではなく、調べた跡（phase6 の output.md 136・142 行）で Claude が出した読みです。報告は、この読みから、同化・直接知覚・フロー中の自動の調整を「5段階の外にある」としています（183 行）。合うものを過程の外に置く書き方で、良いこと以外を外に置かずに含めるかという中心の問いとは、向きの違う線の引き方です。
+**対立・衝突・統合の読み**：原典を読めていないので書きません。報告の「同化で処理できる場合には5段階が起動しないという発見」（ja 127 行）は、原典の主張ではなく、調べた跡（phase6 の出力 136・142 行）で Claude が出した読みです。報告は、この読みから、同化・直接知覚・フロー中の自動の調整を「5段階の外にある」としています（183 行）。合うものを過程の外に置く書き方で、良いこと以外を外に置かずに含めるかという中心の問いとは、向きの違う線の引き方です。
 
 **今の報告から直すこと**：
 
@@ -265,7 +265,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨**：視野の中の物は、限られた処理の容量を奪い合う。注意は、その競合を解く多くの神経の仕組みから立ち上がる性質（emergent property）で、心のスポットライトではない。競合は、下からの偏り（目立つこと）と上からの偏り（今の目的に合うこと）で解かれる。
 
-**一次情報**：Desimone, R., & Duncan, J. (1995). Neural mechanisms of selective visual attention. *Annual Review of Neuroscience* 18, 193–222. DOI 10.1146/annurev.ne.18.030195.001205（Crossref と表紙で一致）。カリフォルニア大学サンディエゴ校の授業の読み物の PDF（https://pages.ucsd.edu/~msereno/201/readings/04.09-VisAttnRev.pdf 、先頭が %PDF、誌面 2 頁を 1 枚に収めた 16 枚）。manifest に行が無い（下の案）。読んだ頁：pp.193–194・199–202・217。
+**一次情報**：Desimone, R., & Duncan, J. (1995). Neural mechanisms of selective visual attention. *Annual Review of Neuroscience* 18, 193–222. DOI 10.1146/annurev.ne.18.030195.001205（Crossref と表紙で一致）。カリフォルニア大学サンディエゴ校の授業の読み物の PDF（https://pages.ucsd.edu/~msereno/201/readings/04.09-VisAttnRev.pdf 、先頭が %PDF、誌面 2 頁を 1 枚に収めた 16 枚）。台帳に行が無い（下の案）。読んだ頁：pp.193–194・199–202・217。
 
 **照合の状態**：本文照合済。
 
@@ -320,7 +320,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 ### 参考：Wallas 1926 の四段階［似た論文。比べる補強］
 
-Wallas, G. (1926). *The Art of Thought*. Jonathan Cape。manifest D14-S05。精読ノート（`cs/knowledge/source-notes/D14/D14-S05_wallas-1926.md`）だけを見た。ノートは、第 IV 章で準備・孵化・照明・検証の四つの段階が示され、日々の思考では四つが重なり合う（p.53）と引いています。照合の状態は二次資料のみ（精読ノート）です。Knoblich ら 1999 p.1534 は、探索・行き詰まり・洞察・実行の並びに Wallas が独立に至った、と書いています。5段階と似た段階モデルとして比べる材料になりますが、ぶつかりが段階の中でどう書かれているかは、ノートからは読み取れません。精読ノートに無いことを、原典に無いことと読んではいません。
+Wallas, G. (1926). *The Art of Thought*. Jonathan Cape。台帳に行がある。精読ノート「Wallas 1926」だけを見た。ノートは、第 IV 章で準備・孵化・照明・検証の四つの段階が示され、日々の思考では四つが重なり合う（p.53）と引いています。照合の状態は二次資料のみ（精読ノート）です。Knoblich ら 1999 p.1534 は、探索・行き詰まり・洞察・実行の並びに Wallas が独立に至った、と書いています。5段階と似た段階モデルとして比べる材料になりますが、ぶつかりが段階の中でどう書かれているかは、ノートからは読み取れません。精読ノートに無いことを、原典に無いことと読んではいません。
 
 ## 公開報告の点検のまとめ
 
@@ -352,19 +352,19 @@ Wallas, G. (1926). *The Art of Thought*. Jonathan Cape。manifest D14-S05。精�
 
 ### テンプレート由来の表示
 
-日本語版の「立ち位置明示」（3 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6」「Phase 7」（29・37 行）、「方法論的開示（S60）」（43 行）、「著者（pjdhiro）自身の精読による検証が完了していない箇所」（48 行。帰属違い・高）、「温度帯の分布」（83 行）、「安全弁：…以降の詳細分析は省略可能です」（85〜87 行）、「結びの温度開示」（241〜243 行）、「Colophon」の generator_model（245〜255 行）。プレゼン版の「温度」の列（43 行）。英語版 13 行「It is not a psychology textbook, nor is it a document intended to prove the five-stage model correct」（型 F）。D01・D10・D22 と同じく、テンプレートが原因です。また、日本語版 29 行「一次文献・主要なレビュー論文に基づいて事実を確認しました」「複数の独立した視点から」は、実際には DR（原文が残っていない）と LLM の読みに立っています。言い過ぎ・中。
+日本語版の「立ち位置明示」（3 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6」「Phase 7」（29・37 行）、「方法論的開示（S60）」（43 行）、「著者（pjdhiro）自身の精読による検証が完了していない箇所」（48 行。帰属違い・高）、「温度帯の分布」（83 行）、「安全弁：…以降の詳細分析は省略可能です」（85〜87 行）、「結びの温度開示」（241〜243 行）、「Colophon」の generator_model（245〜255 行）。プレゼン版の「温度」の列（43 行）。英語版 13 行「It is not a psychology textbook, nor is it a document intended to prove the five-stage model correct」（型 F）。数学・臨床医学・免疫・経営学と同じく、テンプレートが原因です。また、日本語版 29 行「一次文献・主要なレビュー論文に基づいて事実を確認しました」「複数の独立した視点から」は、実際には DR（原文が残っていない）と LLM の読みに立っています。言い過ぎ・中。
 
 ### 誤りの出どころ
 
-- 数（N=71・509 名・α≈0.83・k=113・N=60,110・ρ=0.55）、不協和の「4つの経路」、Hattori・Liu・Veiga-Zarza の引用：DR-D14（2026-02-25）から。数のうち、確かめられたのは 71（参加者の数）と 509 で、残りは確かめられていません。
-- 「波の消去」と「縁から渦に至らない経路」：調べた跡の phase6 の output.md（30・37・196 行）から、phase7（33・35 行）を経て、報告の 105・187 行に入った。phase7 では、この分かれ道を抱持に結んでいたが（35 行）、報告ではその結びが落ち、分け方だけが「確認されました」になった。
+- 数（N=71・509 名・α≈0.83・k=113・N=60,110・ρ=0.55）、不協和の「4つの経路」、Hattori・Liu・Veiga-Zarza の引用：2026-02 の DR（2026-02-25）から。数のうち、確かめられたのは 71（参加者の数）と 509 で、残りは確かめられていません。
+- 「波の消去」と「縁から渦に至らない経路」：調べた跡の phase6 の出力（30・37・196 行）から、phase7（33・35 行）を経て、報告の 105・187 行に入った。phase7 では、この分かれ道を抱持に結んでいたが（35 行）、報告ではその結びが落ち、分け方だけが「確認されました」になった。
 - 「同化で処理できる場合は5段階が起動しない」：phase6 の 136・142・184 行から。phase6 と phase7（26 行）は、これを欠損の定義に結んでいた。
 - 縁の三形態：phase6 の仮説 C-2（218 行）から phase7 のパターン A-1（5 行）へ。
 - 意識水準の三角測量（ja 191 行）：退避版 L-3 のレンズ③から。退避版はこれを「4層モデル（L0-L3）の意識関与度のスペクトラム」に結んでいた。報告では 4 層モデルの語は落ちた。
-- Festinger 1957 の出版社（Stanford University Press）：DR-D14 と退避版から。
+- Festinger 1957 の出版社（Stanford University Press）：2026-02 の DRと退避版から。
 - Neisser 1976・Feldman & Friston 2010・Newen ら 2018：退避版（Step 7、Claude）で足された。
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 E（断定・格上げ）：「この対応は5段階のすべてにわたって成立し、10件中で最も構造的に鮮明です」（97 行）。「5段階への対応が後付けの当てはめではない点で信頼性が高いと判断できます」（235 行）。「縁のこの三形態が一つの領域から導出されることが、心理学の大きな貢献です」（58 行）。「現時点での最善の対応と考えられます」（229 行）。
 - 型 J（ダッシュ）：「——これらの現象には」（14 行）、「結合的縁」——（58 行）、見出しの「——」（91・163 行）、111・113・117・119 行。
@@ -373,22 +373,22 @@ Wallas, G. (1926). *The Art of Thought*. Jonathan Cape。manifest D14-S05。精�
 
 ## 判断が要るもの
 
-1. 不協和の 1 ドル条件の意見の変化を、どの並べ方に置くか。README は、片方が勝つ形を統合でなく「波に留まる・場に戻る」として並べるとしています。私的な意見が公の発言に合わせて退いたと読めば片方の勝利、二つの認知が切り離せない新しい意見になったと読めば統合です。予想：両方の読みを書き、原典が意見の変化を「自分を説得する」こととして書いている点を添える（D10 のがんの逃避と同じ扱い）。README の段 3 の材料にある「D14 の不協和の合理化（波の消去）」は、原典に無い分け方なので、「不協和の低減（意見の変化と、ほかの認知の重さを変えることを含む）」として並べ直す。
-2. 正規の公開版が見つからなかった書籍 6 冊（Festinger 1957・Csikszentmihalyi 1990・Gibson 1979・Lakoff & Johnson 1980・Bartlett 1932・Piaget 1952）を、図書館や購入で確かめるか。お金や手続きが要るので、決めるのは pjdhiro です（`sources.md` §5-6）。予想：急がず（stance 2-2）、今は未照合として残す。Gibson 1977 の章は、ブラウザでの保存で取れる見込みがある。
+1. 不協和の 1 ドル条件の意見の変化を、どの並べ方に置くか。README は、片方が勝つ形を統合でなく「波に留まる・場に戻る」として並べるとしています。私的な意見が公の発言に合わせて退いたと読めば片方の勝利、二つの認知が切り離せない新しい意見になったと読めば統合です。予想：両方の読みを書き、原典が意見の変化を「自分を説得する」こととして書いている点を添える（臨床医学・免疫のがんの逃避と同じ扱い）。README の段 3 の材料にある「心理学の不協和の合理化（波の消去）」は、原典に無い分け方なので、「不協和の低減（意見の変化と、ほかの認知の重さを変えることを含む）」として並べ直す。
+2. 正規の公開版が見つからなかった書籍 6 冊（Festinger 1957・Csikszentmihalyi 1990・Gibson 1979・Lakoff & Johnson 1980・Bartlett 1932・Piaget 1952）を、図書館や購入で確かめるか。お金や手続きが要るので、決めるのは pjdhiro です（調べ方の規約 §5-6）。予想：急がず（stance 2-2）、今は未照合として残す。Gibson 1977 の章は、ブラウザでの保存で取れる見込みがある。
 3. 5段階の定義が決まるまで、段の当てはめ（縁を選択として読むか、衝突として読むか、など）は保留です。報告の「5段階は同化で処理できるときは起動しない」という命題は、原典に根拠が無く、定義（五段階が常に走っているか）に関わるので、定義を決めるときに一緒に見る。予想：報告の命題としては外す。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D14-S11 | Knoblich, G., Ohlsson, S., Haider, H., & Rhenius, D. (1999). Constraint relaxation and chunk decomposition in insight problem solving. *JEP: LMC* 25(6), 1534–1555. DOI 10.1037/0278-7393.25.6.1534 | https://www.kognition.uni-koeln.de/literature/Knoblich_etal_1999.pdf | raw-confirmed（本文を取れた） |
-| D14-S12 | Festinger, L., & Carlsmith, J. M. (1959). Cognitive consequences of forced compliance. *JASP* 58, 203–210. DOI 10.1037/h0041593 | http://psychclassics.yorku.ca/Festinger/ （York の打ち直し、誌面の頁の標記つき） | url-verified（本文を読めた） |
-| D14-S13 | Desimone, R., & Duncan, J. (1995). Neural mechanisms of selective visual attention. *Annu. Rev. Neurosci.* 18, 193–222. DOI 10.1146/annurev.ne.18.030195.001205 | https://pages.ucsd.edu/~msereno/201/readings/04.09-VisAttnRev.pdf （授業の読み物の写し） | raw-confirmed（本文を取れた） |
-| D14-S14 | Diamond, A. (2013). Executive functions. *Annu. Rev. Psychol.* 64, 135–168. DOI 10.1146/annurev-psych-113011-143750 | PMC4084861（著者稿） | url-verified（本文 XML を読めた） |
-| D14-S15 | Knoblich, G., Ohlsson, S., & Raney, G. E. (2001). An eye movement study of insight problem solving. *Memory & Cognition* 29, 1000–1009. DOI 10.3758/BF03195762 | 要旨：Europe PMC（PMID 11820744） | citation-only（本文は有料） |
-| D14-S16 | Monsell, S. (2003). Task switching. *TICS* 7(3), 134–140. DOI 10.1016/S1364-6613(03)00028-7 | 要旨：Europe PMC（PMID 12639695） | citation-only |
-| D14-S17 | Feldman, H., & Friston, K. J. (2010). Attention, uncertainty, and free-energy. *Front. Hum. Neurosci.* 4, 215. DOI 10.3389/fnhum.2010.00215 | PMC3001758 | url-verified（要旨まで読んだ。本文は OA） |
-| D14-S18 | Veiga-Zarza, E., Álvarez, F., Harmon-Jones, E., & Carretié, L. (2026). Neural basis of attitude change motivated by cognitive dissonance: a scoping review. *CABN* 26, 725–749. DOI 10.3758/s13415-025-01369-y | 要旨：Europe PMC（PMID 41667918） | citation-only |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| Knoblich, G., Ohlsson, S., Haider, H., & Rhenius, D. (1999). Constraint relaxation and chunk decomposition in insight problem solving. *JEP: LMC* 25(6), 1534–1555. DOI 10.1037/0278-7393.25.6.1534 | https://www.kognition.uni-koeln.de/literature/Knoblich_etal_1999.pdf | 手元に保存した（本文を取れた） |
+| Festinger, L., & Carlsmith, J. M. (1959). Cognitive consequences of forced compliance. *JASP* 58, 203–210. DOI 10.1037/h0041593 | http://psychclassics.yorku.ca/Festinger/ （York の打ち直し、誌面の頁の標記つき） | 取得先を確かめた（本文を読めた） |
+| Desimone, R., & Duncan, J. (1995). Neural mechanisms of selective visual attention. *Annu. Rev. Neurosci.* 18, 193–222. DOI 10.1146/annurev.ne.18.030195.001205 | https://pages.ucsd.edu/~msereno/201/readings/04.09-VisAttnRev.pdf （授業の読み物の写し） | 手元に保存した（本文を取れた） |
+| Diamond, A. (2013). Executive functions. *Annu. Rev. Psychol.* 64, 135–168. DOI 10.1146/annurev-psych-113011-143750 | PMC4084861（著者稿） | 取得先を確かめた（本文 XML を読めた） |
+| Knoblich, G., Ohlsson, S., & Raney, G. E. (2001). An eye movement study of insight problem solving. *Memory & Cognition* 29, 1000–1009. DOI 10.3758/BF03195762 | 要旨：Europe PMC（PMID 11820744） | 書誌だけ（本文は有料） |
+| Monsell, S. (2003). Task switching. *TICS* 7(3), 134–140. DOI 10.1016/S1364-6613(03)00028-7 | 要旨：Europe PMC（PMID 12639695） | 書誌だけ |
+| Feldman, H., & Friston, K. J. (2010). Attention, uncertainty, and free-energy. *Front. Hum. Neurosci.* 4, 215. DOI 10.3389/fnhum.2010.00215 | PMC3001758 | 取得先を確かめた（要旨まで読んだ。本文は OA） |
+| Veiga-Zarza, E., Álvarez, F., Harmon-Jones, E., & Carretié, L. (2026). Neural basis of attitude change motivated by cognitive dissonance: a scoping review. *CABN* 26, 725–749. DOI 10.3758/s13415-025-01369-y | 要旨：Europe PMC（PMID 41667918） | 書誌だけ |
 
 Friston 2010 は、神経科学の記録が台帳に足す案を出しているので、ここでは重ねません。Hattori ら 2013（DOI 10.3758/s13423-013-0389-0）・Jackson & Marsh 1996（DOI 10.1123/jsep.18.1.17）は、要旨まで確かめましたが、報告の数を確かめる補助なので、台帳に足すかは司令塔に任せます。
 
@@ -397,4 +397,4 @@ Friston 2010 は、神経科学の記録が台帳に足す案を出している�
 - 報告が引く理論の多くは書籍で、台帳に行があるのは Varela ら 1991 と Clark & Chalmers 1998 の二つだけでした。論文（Knoblich 1999・Festinger & Carlsmith 1959・Desimone & Duncan 1995・Diamond 2013）は、大学の公開 PDF・York の打ち直し・授業の読み物・PMC で本文が取れました。
 - archive.org の書籍は、ほとんどが貸出制限つきでした。制限の無いものは個人がアップロードした新しい版の写しで、権利の確かめがつかないので使いませんでした。
 - 予測処理は、神経科学の記録で本文照合済だったので、読み直さずに参照しました。分野をまたぐ論は、先に済んだ記録を見ると時間が省けます。
-- 「波の消去」のような報告の目立つ主張は、調べた跡（phase6・phase7）で Claude が出した読みが、報告で「確認されました」「発見」に変わっていたものでした。D10・D22 と同じく、出どころをたどると、原典の主張か Claude の読みかが分かります。
+- 「波の消去」のような報告の目立つ主張は、調べた跡（phase6・phase7）で Claude が出した読みが、報告で「確認されました」「発見」に変わっていたものでした。臨床医学・免疫・経営学と同じく、出どころをたどると、原典の主張か Claude の読みかが分かります。

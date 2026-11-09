@@ -14,7 +14,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D15-aesth
 
 美学の論は、現象を実証した理論ではなく、美的判断の分析・経験の記述・作品の存在の論・教育の論・批評・臨床の論・伝書です。それでも、本文に当たれた原典の多くは、二つのものの兼ね合いと、それが崩れる形を論の中に書いていました。カントは、美しいものでは構想力と悟性が「Einhelligkeit（一致）」によって、崇高では構想力と理性が「Widerstreit（争い）」によって心の働きの合目的性を生むと書き、崇高の感情を、構想力が理性の理念に及ばない不快と、そこで同時に呼び起こされる快として書いています（『判断力批判』アカデミー版 第 5 巻、pp.257–258）。シラーは、感性の側の衝動（1795 年の版では Sachtrieb）と形式衝動が互いに先回りすると、人は「決して自分自身にならない」か「決して別のものにならない」かで、どちらにしても「Null」になると書き（第 13 書簡、『Die Horen』1795 年 第 2 号 pp.72–73）、美は二つの状態を結んで対立を「aufheben」するが、二つは永遠に対立したままなので、そうでなければ「混ぜるだけで結ばない」と書いています（第 18 書簡、第 6 号 p.51）。デューイは、ただ流れるだけの世界にも、出来上がって終わった世界にも美的経験は起きないと書き、美的でないものの二つの極を、どこで始まりどこで止むのでもないだらだらした連なりと、機械的なつながりしか持たない停止・締めつけとして書いています（『Art as Experience』pp.16–17・p.40。上げた人の分からない写しで読んだ）。ベンヤミンは、複製の技術でアウラが衰え、芸術の社会的な働きが儀礼から政治へひっくり返ると書き、全体主義の国家が政治を美学化し、その行き着く先が戦争だと書いています（1936 年の仏語版、pp.45・65–66）。メルツァーは、乳児が母への情熱的な結びつきを保てないとき「冷たくなる」、乳房を噛む、叫んで対象を追い払う、と書き、発達の節目では「breakdown」と「breakthrough」がどちらも起こりうると書いています（1993 年の講演の書き起こし、pp.3–5）。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D15-aesthetics.md`、2026-03-18 に LLM が生成、以下「報告」）は 10 の論を取り上げ、日本語版は「強い対応」を 3 つ（Dewey・Schiller・Eco）としています。英語版は 10 のすべて、プレゼン版は冒頭で 9 つ・表で 5 つを「強い対応」としていて、版ごとに数が違います。報告は、上の衝突や至らない形の多くを落としていました。§6.1「処理の保留が美を生む」と §5.5 の見出し「保持の構造」、§7「縁に留まることの創造性」は、調べた跡（phase6・phase7）が抱持の語で立てた仮説（「『抱持』が美を生む」）から、抱持の語だけを消して写したものでした。シラーの節は、何も決まっていない最初の状態と、二つの衝動が働いたあとの美的な状態を、原典が分けているのに一つの「規定可能性」として場に当てています。能勢朝次『幽玄論』の年は 1940 と書かれていますが、序の日付は昭和十八年九月（1943 年）で、台帳は 1944 年刊としています。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が兼ね合い、どうぶつかり、どう包まれ、何が残ったか（または至らずにどう終わったか）を並べたものです。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
+今の公開報告（「30 領域調査報告」の美学の日本語版、2026-03-18 に LLM が生成、以下「報告」）は 10 の論を取り上げ、日本語版は「強い対応」を 3 つ（Dewey・Schiller・Eco）としています。英語版は 10 のすべて、プレゼン版は冒頭で 9 つ・表で 5 つを「強い対応」としていて、版ごとに数が違います。報告は、上の衝突や至らない形の多くを落としていました。§6.1「処理の保留が美を生む」と §5.5 の見出し「保持の構造」、§7「縁に留まることの創造性」は、調べた跡（phase6・phase7）が抱持の語で立てた仮説（「『抱持』が美を生む」）から、抱持の語だけを消して写したものでした。シラーの節は、何も決まっていない最初の状態と、二つの衝動が働いたあとの美的な状態を、原典が分けているのに一つの「規定可能性」として場に当てています。能勢朝次『幽玄論』の年は 1940 と書かれていますが、序の日付は昭和十八年九月（1943 年）で、台帳は 1944 年刊としています。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が兼ね合い、どうぶつかり、どう包まれ、何が残ったか（または至らずにどう終わったか）を並べたものです。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
 論は報告と同じ 10 です。足した論はありません。本文照合済は 5 つ（カント・シラー・ベンヤミン（訳）・メルツァー（著者の講演の書き起こし。本は未照合）・日本美学のうち世阿弥・能勢・岡倉）です。デューイ・ハイデガー・エーコは上げた人の分からない写しで本文を読んだので未照合のまま頁を書き、アドルノは二次資料のみ（Stanford Encyclopedia of Philosophy）、ランシエールは『感性的なもののパルタージュ』が未照合（書籍）で、2002 年の論文の冒頭だけを出版社の頁で読みました。提唱者か同じ論の著者の本文に当たれたのは、カント・シラー・ベンヤミン・メルツァー・世阿弥・能勢・岡倉です。
 
@@ -22,12 +22,12 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 ## 一面の表
 
-照合の状態は `docs/rules/sources.md` §3 の四つで書きます。各行で、まず原典が何について書いているか（判断の分析・経験の記述・作品の存在の論・教育の論・批評・臨床の論・伝書）と単位を書き、対立・衝突・統合の欄は原典に書いてあることを先に、Claude の読み替えを「読み替え：」で分けて書きます。二次資料しか読めなかった行は、二次資料が書くことだけを書いています。
+照合の状態は調べ方の規約 §3 の四つで書きます。各行で、まず原典が何について書いているか（判断の分析・経験の記述・作品の存在の論・教育の論・批評・臨床の論・伝書）と単位を書き、対立・衝突・統合の欄は原典に書いてあることを先に、Claude の読み替えを「読み替え：」で分けて書きます。二次資料しか読めなかった行は、二次資料が書くことだけを書いています。
 
 | 論 | 原典が書く対象と単位 | 対立 | 衝突 | 統合／新たな安定、または統合に至らずにどう終わったか | 論の微細さ | 照合の状態 |
 |---|---|---|---|---|---|---|
 | 1. メルツァー：美的葛藤（1988） | 臨床の論。乳児と母、分析家と被分析者 | 対象の目に迫る外側と、謎めいた内側（1988 年の本のカバーの文。2018 年版の序 p.xvi の引用） | 情熱的な結びつきが報われる時と、報われない時の揺れが、乳児の結びつきを保つ力を越えて揺さぶる（講演 p.3） | 至らない形として、乳児は冷たくなり、乳房を噛み、叫んで対象を追い払う（講演 p.4）。発達の節目ごとに「breakdown」と「breakthrough」がどちらも起こりうる（講演 p.5）。葛藤は一生続く（講演 p.5） | 乳児の一回の授乳から一生の発達まで | 本文照合済（著者の 1993 年の講演の書き起こし。財団のサイトの Wayback の記録）・未照合（1988 年の本） |
-| 2. 日本美学（世阿弥・本居宣長・久松真一・能勢朝次・岡倉覚三） | 伝書・注釈・茶の論・研究書。一つの論ではない | 世阿弥：見る人が知っていることと知らないこと（別紙口傳 p.60）。岡倉：完全と不完全（p.3・p.95） | 世阿弥の衝突と至らない形は D28 の記録（能が止まる・下がる・花が失せる）。岡倉は、完成よりも完成を求める過程に重きを置くと書く（p.95） | 世阿弥：秘することで花になる（p.60）。岡倉：不完全を心の中で完成させる者だけが美を見いだす（p.95）。能勢：幽玄の語の原義は「深遠であり窈冥」で人の智では窺い知れないこと（p.1）。宣長・久松は未照合 | 一回の上演・一つの茶室から時代の語の変遷まで | 本文照合済（世阿弥は D28 の記録を参照、能勢は 1944 年の本の走査、岡倉は 1906 年の本の走査）・未照合（宣長は手元が写本の画像で冒頭しか読めず、久松は書誌だけ） |
+| 2. 日本美学（世阿弥・本居宣長・久松真一・能勢朝次・岡倉覚三） | 伝書・注釈・茶の論・研究書。一つの論ではない | 世阿弥：見る人が知っていることと知らないこと（別紙口傳 p.60）。岡倉：完全と不完全（p.3・p.95） | 世阿弥の衝突と至らない形は舞台芸術の記録（能が止まる・下がる・花が失せる）。岡倉は、完成よりも完成を求める過程に重きを置くと書く（p.95） | 世阿弥：秘することで花になる（p.60）。岡倉：不完全を心の中で完成させる者だけが美を見いだす（p.95）。能勢：幽玄の語の原義は「深遠であり窈冥」で人の智では窺い知れないこと（p.1）。宣長・久松は未照合 | 一回の上演・一つの茶室から時代の語の変遷まで | 本文照合済（世阿弥は舞台芸術の記録を参照、能勢は 1944 年の本の走査、岡倉は 1906 年の本の走査）・未照合（宣長は手元が写本の画像で冒頭しか読めず、久松は書誌だけ） |
 | 3. カント：判断力批判（1790） | 美的判断の分析。一つの判断 | 美しいもの：構想力と悟性。崇高：構想力と理性（AA pp.217・258） | 美しいものでは二つが一致して自由な戯れに入る（p.217）。崇高では構想力が理性の理念に及ばず、生の力がいったん妨げられ、すぐにより強く流れ出る（pp.245・257–258） | 崇高では「Widerstreit」が心の合目的性を生む（p.258）。至らない形として、構想力は自らを失うことを恐れる「深淵」に出会う（p.258）。読み替え：崇高は、及ばないことそのものが別の能力を呼び起こす形 | 一回の判断 | 本文照合済（アカデミー版 第 5 巻 1908。パブリックドメイン。頁の画像で読んだ） |
 | 4. ハイデガー：芸術作品の根源（1935/36） | 作品の存在の論。一つの作品と一つの民族の歴史 | 世界と大地（英訳 p.48） | 世界と大地の対立は「striving」。それを不和や破壊と取り違えてはならない（p.49）。作品は争いを終わらせず「争いが争いのままであるように」する（p.49） | 争いは作品の中で解かれず、作品によって始まる（pp.62–63）。裂け目（Riß）は相手どうしを裂き離さず、共通の輪郭へ運ぶ（p.63） | 一つの作品から歴史の始まりまで | 未照合（上げた人の分からない英訳の写しで読んだ） |
 | 5. デューイ：経験としての芸術（1934） | 経験の記述。一つの経験と生きものの一生 | 生きものと環境。釣り合いを失うことと取り戻すこと（p.15） | 対立と葛藤の要因を越え、より力の高い生の分化した面へ変えていく（p.14）。限りを越えることは破壊と死で、そこから新しいリズムが立つ（p.16） | 釣り合いの時は新たな関係の始まりでもある（p.17）。至らない形として、ただ流れる世界と出来上がった世界（pp.16–17）、満たされた時を引き延ばす退き（p.17）、だらだらした連なりと機械的な停止の二つの極（p.40）、固着（p.41） | 一つの経験から一生のリズムまで | 未照合（上げた人の分からない写しで読んだ。Perigee 1980 年の刷） |
@@ -45,11 +45,11 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Meltzer, D. & Harris Williams, M. (1988). *The Apprehension of Beauty*. Clunie Press。manifest D15-S01。書籍で、Internet Archive の版（https://archive.org/details/apprehensionofbe0000dona ）は貸し出しだけです。`find-source.sh`（Crossref・OpenAlex・Semantic Scholar・Internet Archive・財団のドメインの Wayback の一覧）でも OA の版は見つかりませんでした。
-- Meltzer, D. (1993). Aesthetic Conflict and Creativity（スタヴァンゲルでの講演の書き起こし。Morten Andersen 提供）。Harris Meltzer Trust（著者の著作を管理する財団）のサイトの PDF（http://www.harris-meltzer-trust.org.uk/pdfs/MeltzerAestheticCreativity.pdf ）を Wayback の記録で読みました。頁は PDF の下の番号。読んだ頁：pp.1–5。台帳に行が無い（D15-S18 の案）。
-- Harris Williams, M. (2018). Foreword. Meltzer & Williams, *The Apprehension of Beauty* 2018 年版, pp.xv–xviii。同じ財団のサイトの PDF（https://www.harris-meltzer-trust.org.uk/pdfs/ApprehensionBeauty_Foreword.pdf 、Wayback の記録 2023-11-17）。共著者による序で、1988 年の本のカバーの文を引いています。台帳に行が無い（D15-S19 の案）。
-- Harris Williams, M. (2005/2011). Genesis of the 'aesthetic conflict'。同じ財団のサイトの PDF（https://www.harris-meltzer-trust.org.uk/pdfs/GenesisAesthetic.pdf 、Wayback の記録 2022-01-24）。台帳に行が無い（D15-S20 の案）。
-- 上田勝久（2016）（D15-S02）は書誌だけで、開けていません。
+- Meltzer, D. & Harris Williams, M. (1988). *The Apprehension of Beauty*. Clunie Press。台帳に行がある。書籍で、Internet Archive の版（https://archive.org/details/apprehensionofbe0000dona ）は貸し出しだけです。原典を探す道具（Crossref・OpenAlex・Semantic Scholar・Internet Archive・財団のドメインの Wayback の一覧）でも OA の版は見つかりませんでした。
+- Meltzer, D. (1993). Aesthetic Conflict and Creativity（スタヴァンゲルでの講演の書き起こし。Morten Andersen 提供）。Harris Meltzer Trust（著者の著作を管理する財団）のサイトの PDF（http://www.harris-meltzer-trust.org.uk/pdfs/MeltzerAestheticCreativity.pdf ）を Wayback の記録で読みました。頁は PDF の下の番号。読んだ頁：pp.1–5。台帳に行が無い（台帳に足す案）。
+- Harris Williams, M. (2018). Foreword. Meltzer & Williams, *The Apprehension of Beauty* 2018 年版, pp.xv–xviii。同じ財団のサイトの PDF（https://www.harris-meltzer-trust.org.uk/pdfs/ApprehensionBeauty_Foreword.pdf 、Wayback の記録 2023-11-17）。共著者による序で、1988 年の本のカバーの文を引いています。台帳に行が無い（台帳に足す案）。
+- Harris Williams, M. (2005/2011). Genesis of the 'aesthetic conflict'。同じ財団のサイトの PDF（https://www.harris-meltzer-trust.org.uk/pdfs/GenesisAesthetic.pdf 、Wayback の記録 2022-01-24）。台帳に行が無い（台帳に足す案）。
+- 上田勝久（2016）は書誌だけで、開けていません。
 
 **照合の状態**：本文照合済（著者の 1993 年の講演の書き起こし。財団のサイト）。1988 年の本は未照合（書籍）。
 
@@ -80,21 +80,21 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- 世阿彌（吉田東伍 校註）『世阿彌十六部集』能樂會、1909。manifest D15-S03（= D28-S01）。D28 舞台芸術の記録が頁の画像で読んでいて、ここでは読み直していません。別紙口傳の「秘スル花ヲ知ルコト、秘スレバ花ナリ、秘セズバ花ナルベカラズ」は p.60、花・面白さ・珍しさを同じものとする所は p.49（D28 の記録）。
-- 本居宣長『源氏物語玉の小櫛』。manifest D15-S04。手元の PDF（28 面）は版本でなく、一冊の写本の画像です。冒頭の面の題は「源氏物語玉乃小櫛」「本居宣長考」で、印は「□曜文庫」「佐知屋」と読めました（「九曜文庫」とすれば早稲田大学図書館の蔵書の可能性がありますが、確かめていません）。くずし字の写本で、読めたのは題と著者名と冒頭の数行だけです。「もののあはれ」の箇所は確かめていません。国立国会図書館サーチでは版本（九巻）の行が多数ありましたが、活字の翻刻の公開の版は、この作業では見つけられませんでした。
-- 久松真一（1965）「侘の茶」。manifest D15-S05。`find-source.sh`（Crossref・OpenAlex・Internet Archive）で置き場が見つからず、書誌だけです。
-- 能勢朝次『幽玄論』河出書房。manifest D15-S06。手元の PDF（part1、100 面）は図書館の本の走査で、文字の層はありません。頁の画像で、扉（著者名・書名・河出書房）、序の日付「昭和十八年九月」と献辞（久松潜一・岡崎義恵・谷山茂・小西甚一への謝辞）、目次、概説 p.1 を読みました。能勢は研究者で、この本は研究書（二次）です。
-- 岡倉覚三 Okakura-Kakuzo (1906). *The Book of Tea*. New York: Fox, Duffield（コーネル大学図書館の本を Microsoft が 2007 年に走査。https://archive.org/details/cu31924021575695 ）。奥付に「Copyright 1906」「Second Edition Published July, 1906」。`_djvu.txt`（OCR の文字）で読みました。パブリックドメイン。台帳に行が無い（D15-S24 の案）。
+- 世阿彌（吉田東伍 校註）『世阿彌十六部集』能樂會、1909。台帳に行がある。舞台芸術の記録が頁の画像で読んでいて、ここでは読み直していません。別紙口傳の「秘スル花ヲ知ルコト、秘スレバ花ナリ、秘セズバ花ナルベカラズ」は p.60、花・面白さ・珍しさを同じものとする所は p.49（舞台芸術の記録）。
+- 本居宣長『源氏物語玉の小櫛』。台帳に行がある。手元の PDF（28 面）は版本でなく、一冊の写本の画像です。冒頭の面の題は「源氏物語玉乃小櫛」「本居宣長考」で、印は「□曜文庫」「佐知屋」と読めました（「九曜文庫」とすれば早稲田大学図書館の蔵書の可能性がありますが、確かめていません）。くずし字の写本で、読めたのは題と著者名と冒頭の数行だけです。「もののあはれ」の箇所は確かめていません。国立国会図書館サーチでは版本（九巻）の行が多数ありましたが、活字の翻刻の公開の版は、この作業では見つけられませんでした。
+- 久松真一（1965）「侘の茶」。台帳に行がある。原典を探す道具（Crossref・OpenAlex・Internet Archive）で置き場が見つからず、書誌だけです。
+- 能勢朝次『幽玄論』河出書房。台帳に行がある。手元の PDF（part1、100 面）は図書館の本の走査で、文字の層はありません。頁の画像で、扉（著者名・書名・河出書房）、序の日付「昭和十八年九月」と献辞（久松潜一・岡崎義恵・谷山茂・小西甚一への謝辞）、目次、概説 p.1 を読みました。能勢は研究者で、この本は研究書（二次）です。
+- 岡倉覚三 Okakura-Kakuzo (1906). *The Book of Tea*. New York: Fox, Duffield（コーネル大学図書館の本を Microsoft が 2007 年に走査。https://archive.org/details/cu31924021575695 ）。奥付に「Copyright 1906」「Second Edition Published July, 1906」。`_djvu.txt`（OCR の文字）で読みました。パブリックドメイン。台帳に行が無い（台帳に足す案）。
 
-**照合の状態**：本文照合済（世阿弥は D28 の記録で頁の画像、能勢は 1944 年の本の走査を頁の画像、岡倉は 1906 年の本の走査の OCR の文字）。宣長は未照合（手元は写本の画像で冒頭しか読めていない）。久松は未照合（書誌だけ）。
+**照合の状態**：本文照合済（世阿弥は舞台芸術の記録で頁の画像、能勢は 1944 年の本の走査を頁の画像、岡倉は 1906 年の本の走査の OCR の文字）。宣長は未照合（手元は写本の画像で冒頭しか読めていない）。久松は未照合（書誌だけ）。
 
 **原典に書いてあること**：
 
-- 世阿弥（D28 の記録による）：見る人が花と知らないことで演者の花になる（別紙口傳 p.60）。どの花も散らずに残ることはなく、散るから咲くころが珍しい。能も住するところが無いことをまず花と知るべし（p.49）。
+- 世阿弥（舞台芸術の記録による）：見る人が花と知らないことで演者の花になる（別紙口傳 p.60）。どの花も散らずに残ることはなく、散るから咲くころが珍しい。能も住するところが無いことをまず花と知るべし（p.49）。
 - 能勢：幽玄の語は中国で作られた言葉で、中心は「玄」にあり、老荘の方面で愛用された。注釈者は「幽遠也」「黒色也」「天色也」「幽隠也」「幽深難知」などと注した。幽玄と熟すると「幽遠」「幽深難知」の意味に限られ、本来は「深遠であり窈冥であつて、人智を以てしては容易に窺ひ知る事が出来ない」という意味を持つ（概説「一、幽玄の意義」p.1）。
 - 岡倉：茶道は「essentially a worship of the Imperfect」で、不可能なものの中で何かを成し遂げようとする試みである（p.3）。完成そのものより、完成を求める過程に重きを置き、真の美は「mentally completed the incomplete」者だけが見いだせる（p.95）。読んだ範囲に「wabi」「sabi」の語は無く、OCR の文字でも見つかりませんでした。
 
-**対立・衝突・統合の読み**：世阿弥は見せることと秘すること、知られることと知られないことを、見る人との関係として書き、至らない形（能が止まる・下がる・花が失せる）も書いています（D28 の記録）。岡倉は完全と不完全を対にし、不完全を受け手が心の中で完成させると書きます。能勢は、幽玄を語の歴史として追う研究書で、対立や衝突の構造は書いていません。読み替え：これらを「保持」の一語でまとめるのは原典の語ではなく、調べた跡の構成です（下の表）。高い境地や悟りを良いものとして扱わず、原典の文脈ごとに並べるにとどめます。
+**対立・衝突・統合の読み**：世阿弥は見せることと秘すること、知られることと知られないことを、見る人との関係として書き、至らない形（能が止まる・下がる・花が失せる）も書いています（舞台芸術の記録）。岡倉は完全と不完全を対にし、不完全を受け手が心の中で完成させると書きます。能勢は、幽玄を語の歴史として追う研究書で、対立や衝突の構造は書いていません。読み替え：これらを「保持」の一語でまとめるのは原典の語ではなく、調べた跡の構成です（下の表）。高い境地や悟りを良いものとして扱わず、原典の文脈ごとに並べるにとどめます。
 
 **今の報告から直すこと**：
 
@@ -106,8 +106,8 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 119 行・退避版 59 行・71 行 能勢朝次「（1940）」 | 帰属違い | 中 | 序の日付は昭和十八年九月（1943）。台帳は 1944 年刊（河出書房）。精読ノートの「序文には昭和15年=1940年の日付」は走査の序と合わない |
 | ja 119 行「侘び寂びは久松真一（1965）…によって体系的に論じられています」 | 未判定 | 低 | 久松の文は書誌だけで読めていない。岡倉 1906 の読んだ範囲に「wabi」「sabi」の語は無い |
 | ja 119 行「もののあはれは本居宣長（1799）『源氏物語玉の小櫛』」 | 未判定 | 低 | 手元は写本の画像で、もののあはれの箇所を確かめていない |
-| ja 117 行「秘すれば花は、開示を保留することで美（花）が生じる」 | 付け足し | 低 | D28 の記録と同じ判定。原典は見る人が花と知らないことで花になると書く（p.60）。「保留」は phase6 の「開示の保留（抱持）」の語 |
-| ja 117〜123 行 世阿弥の至らない形に触れていない | 抜け | 中 | D28 の記録（能が止まる p.5、時分の花に迷う p.6、四十から下がる p.7、初心へ帰るのは能の下がる所 覺習條々 p.111） |
+| ja 117 行「秘すれば花は、開示を保留することで美（花）が生じる」 | 付け足し | 低 | 舞台芸術の記録と同じ判定。原典は見る人が花と知らないことで花になると書く（p.60）。「保留」は phase6 の「開示の保留（抱持）」の語 |
+| ja 117〜123 行 世阿弥の至らない形に触れていない | 抜け | 中 | 舞台芸術の記録（能が止まる p.5、時分の花に迷う p.6、四十から下がる p.7、初心へ帰るのは能の下がる所 覺習條々 p.111） |
 | ja 123 行「幽玄（見えないものを含む豊かさ）は場の質的特性」・ja 193 行「場を…最大の潜在性」 | 付け足し | 中 | 能勢 p.1 は、幽玄の原義を「深遠・窈冥で人の智では窺い知れない」と書く。「豊かさ」「潜在性」は phase6 22 行の読み |
 | en 90 行「Perception of lack or incompleteness corresponds to Wave」 | 付け足し | 中 | 「lack」は欠損の語。phase6 18 行の「予測誤差を欠陥ではなく美として受け取る態度」から来ている |
 
@@ -117,7 +117,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Kant, I. (1790). *Kritik der Urteilskraft*。『Kant's gesammelte Schriften』Bd. V（Königlich Preußische Akademie der Wissenschaften 編、Berlin: Georg Reimer, 1908）pp.165–485。manifest D15-S07。手元の PDF（329 面）の扉で、アカデミー版 第 5 巻と確かめました。同じ巻の前半は『実践理性批判』で、PDF には目次の頁と KU の部分（AA pp.165–485）が入っています。PDF の面 n がアカデミー版の n+156 頁に当たります（面 60 の頭の番号 216 で確かめた）。文字の層が無いので、頁の画像で読みました。台帳の「邦訳: 牧野英二訳『判断力批判』岩波文庫」は手元の PDF ではなく、PDF は独語原文の 1908 年版です。パブリックドメイン。
+- Kant, I. (1790). *Kritik der Urteilskraft*。『Kant's gesammelte Schriften』Bd. V（Königlich Preußische Akademie der Wissenschaften 編、Berlin: Georg Reimer, 1908）pp.165–485。台帳に行がある。手元の PDF（329 面）の扉で、アカデミー版 第 5 巻と確かめました。同じ巻の前半は『実践理性批判』で、PDF には目次の頁と KU の部分（AA pp.165–485）が入っています。PDF の面 n がアカデミー版の n+156 頁に当たります（面 60 の頭の番号 216 で確かめた）。文字の層が無いので、頁の画像で読みました。台帳の「邦訳: 牧野英二訳『判断力批判』岩波文庫」は手元の PDF ではなく、PDF は独語原文の 1908 年版です。パブリックドメイン。
 - 読んだ頁（AA）：p.204（§2）、p.217（§9）、p.245（§23）、pp.257–258（§27）。
 
 **照合の状態**：本文照合済（アカデミー版 第 5 巻 1908。パブリックドメイン。頁の画像で読んだ）。
@@ -140,7 +140,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 113 行「崇高は波の極大化（想像力の限界の突破）から縁・渦への急激な遷移」 | 抜け | 中 | 原典は、生の力が妨げられてより強く流れ出ること（p.245）、不快と快が同時であること（p.257）、構想力と理性の「Widerstreit」が合目的性を生むこと、自らを失う深淵（p.258）を書く。報告は争いと至らない形を書いていない |
 | ja 181 行・en 100 行「無関心性＝利害の停止」を「処理の保留」に数える | 付け足し | 中 | 原典は利害の無さを判断の性質として書く（p.204）。「保留」「停止」は phase7 9 行の抱持のパターンの語 |
 | ja 109 行「§6-9: 普遍性」「§23-29: 崇高」 | 一致 | 低 | §9 は p.216 から、§23・§27 は崇高の分析の中にある（読んだ範囲） |
-| manifest D15-S07「邦訳: 牧野英二訳『判断力批判』岩波文庫」・wiki `D15_kant_1790_kritik-der-urteilskraft.md` 52 行 | 未判定 | 低 | 手元の PDF は独語原文のアカデミー版 1908。訳は参照の候補で、手元のファイルの書誌ではない |
+| 台帳の「Kant 1790」の行「邦訳: 牧野英二訳『判断力批判』岩波文庫」・wiki wiki の頁「Kant 1790」 52 行 | 未判定 | 低 | 手元の PDF は独語原文のアカデミー版 1908。訳は参照の候補で、手元のファイルの書誌ではない |
 
 ### 4. ハイデガー：芸術作品の根源
 
@@ -148,7 +148,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Heidegger, M. (1971). The Origin of the Work of Art. *Poetry, Language, Thought*. A. Hofstadter 訳. New York: Harper & Row, pp.17–87。原文は 1935/36 年の講演（『Holzwege』1950 所収）。manifest D15-S08。台帳の URL（https://www.mission17.org/documents/Heidegger_TheOriginOfTheWorkOfArt.pdf ）は 2026-11-09 には PDF を返さず、別の頁へ送る HTML を返しました。同じ URL の Wayback の記録（https://web.archive.org/web/20190728081949/http://www.mission17.org:80/documents/Heidegger_TheOriginOfTheWorkOfArt.pdf 、写しの日 2019-07-28）を取りました。表紙は『Poetry, Language, Thought』（Hofstadter 訳）で、見開き 2 頁が横向きに 1 面に入った走査（33 面）、文字の層が無く、書き込みのある本です。上げた人と権利は未確認です。PDF の面 n の上が本の 2n+12 頁、下が 2n+13 頁に当たります（面 18 と 25 の頁の頭の番号で確かめた）。頁の画像で読みました。読んだ頁：pp.48–49・62–63。
+- Heidegger, M. (1971). The Origin of the Work of Art. *Poetry, Language, Thought*. A. Hofstadter 訳. New York: Harper & Row, pp.17–87。原文は 1935/36 年の講演（『Holzwege』1950 所収）。台帳に行がある。台帳の URL（https://www.mission17.org/documents/Heidegger_TheOriginOfTheWorkOfArt.pdf ）は 2026-11-09 には PDF を返さず、別の頁へ送る HTML を返しました。同じ URL の Wayback の記録（https://web.archive.org/web/20190728081949/http://www.mission17.org:80/documents/Heidegger_TheOriginOfTheWorkOfArt.pdf 、写しの日 2019-07-28）を取りました。表紙は『Poetry, Language, Thought』（Hofstadter 訳）で、見開き 2 頁が横向きに 1 面に入った走査（33 面）、文字の層が無く、書き込みのある本です。上げた人と権利は未確認です。PDF の面 n の上が本の 2n+12 頁、下が 2n+13 頁に当たります（面 18 と 25 の頁の頭の番号で確かめた）。頁の画像で読みました。読んだ頁：pp.48–49・62–63。
 - 独語原文（『Holzwege』）は Internet Archive の貸し出しだけで、開けていません。
 
 **照合の状態**：未照合（上げた人の分からない英訳の写しで読んだ）。
@@ -173,7 +173,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 133 行「大地の自己閉鎖性は場…、世界と大地の闘争は波に、『裂け目』は縁に」 | 未判定 | 中 | 原典では大地は争いの一方の相手で、争いと裂け目は一つの事（p.63）。5段階の定義が決まってから見る。出どころは退避版 139 行・phase6 50 行 |
 | ja 127〜133 行 原典が争いを不和や破壊と取り違えないよう書く所、勝利と敗北の決定に触れていない | 抜け | 中 | p.49・p.63（写しで読んだ）。至らない形の材料 |
 | en 64 行 Strong correspondence・ja 56 行「部分的対応」・pres 48 行「全5段階（縁に特に強い）」 | 未判定（版の食い違い） | 中 | 下の「版の間の食い違い」 |
-| wiki `D15_heidegger_1935_1935-36.md` 51 行の全文のリンク | 未判定 | 低 | mission17.org は 2026-11-09 に PDF を返さない。Wayback の記録が残る。上げた人の分からない写し |
+| wiki wiki の頁「Heidegger 1935」 51 行の全文のリンク | 未判定 | 低 | mission17.org は 2026-11-09 に PDF を返さない。Wayback の記録が残る。上げた人の分からない写し |
 
 ### 5. デューイ：経験としての芸術
 
@@ -181,7 +181,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Dewey, J. (1934). *Art as Experience*. New York: Minton, Balch。manifest D15-S09（= D13-S09。D13 の記録はこの本を扱っていない）。手元の PDF（445 面）の扉は「A Wideview/Perigee Book」「Copyright © 1934, by John Dewey」「First Perigee Printing, 1980, 23rd Impression」で、1934 年の初版の走査ではありません。台帳は Internet Archive の「Art_as_Experience__Dewey.pdf」の経路と書きますが、上げた人は確かめていません（上げた人と権利は未確認）。文字の層は前の 40 頁ほどだけで、それより後は頁の画像で読みました。PDF の面 n が本の n−5 頁に当たります（面 40・41 の頭の番号で確かめた）。読んだ頁：pp.14–18（第 1 章）、pp.35・40–41（第 3 章）。
+- Dewey, J. (1934). *Art as Experience*. New York: Minton, Balch。台帳に行がある（台帳の「Dewey 1934」の行。哲学の記録はこの本を扱っていない）。手元の PDF（445 面）の扉は「A Wideview/Perigee Book」「Copyright © 1934, by John Dewey」「First Perigee Printing, 1980, 23rd Impression」で、1934 年の初版の走査ではありません。台帳は Internet Archive の「Art_as_Experience__Dewey.pdf」の経路と書きますが、上げた人は確かめていません（上げた人と権利は未確認）。文字の層は前の 40 頁ほどだけで、それより後は頁の画像で読みました。PDF の面 n が本の n−5 頁に当たります（面 40・41 の頭の番号で確かめた）。読んだ頁：pp.14–18（第 1 章）、pp.35・40–41（第 3 章）。
 - Internet Archive の 1934 年の版（artasexperience0000dewe ほか）は貸し出しだけです。
 
 **照合の状態**：未照合（上げた人の分からない写しで読んだ。Perigee 1980 年の刷）。
@@ -216,7 +216,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Benjamin, W. (1936). L'œuvre d'art à l'époque de sa reproduction mécanisée. P. Klossowski 訳. *Zeitschrift für Sozialforschung* 5(1), 40–68. Paris: Félix Alcan。Internet Archive の雑誌の号（https://archive.org/details/studies-in-philosophy-and-social-science_1936_5_1 。Internet Archive の雑誌の集まりで、走査の拠点は cebu）の `_djvu.txt`（OCR の文字）で読みました。目次に「WALTER BENJAMIN L'œuvre d'art à l'époque de sa reproduction mécanisée … 40」、論文の終わりに「(Traduit par Pierre Klossowski.)」。頁は誌面の頁（頁の頭の番号で控えた）。読んだ頁：pp.40–48・65–66。著者は 1940 年没、訳者の権利は確かめていません。台帳に行が無い（D15-S17 の案）。
+- Benjamin, W. (1936). L'œuvre d'art à l'époque de sa reproduction mécanisée. P. Klossowski 訳. *Zeitschrift für Sozialforschung* 5(1), 40–68. Paris: Félix Alcan。Internet Archive の雑誌の号（https://archive.org/details/studies-in-philosophy-and-social-science_1936_5_1 。Internet Archive の雑誌の集まりで、走査の拠点は cebu）の `_djvu.txt`（OCR の文字）で読みました。目次に「WALTER BENJAMIN L'œuvre d'art à l'époque de sa reproduction mécanisée … 40」、論文の終わりに「(Traduit par Pierre Klossowski.)」。頁は誌面の頁（頁の頭の番号で控えた）。読んだ頁：pp.40–48・65–66。著者は 1940 年没、訳者の権利は確かめていません。台帳に行が無い（台帳に足す案）。
 - 独語の稿（1935 年の初稿・第二稿・1939 年の第三稿）は読んでいません。Internet Archive の独語の写し（das-kunstwerk-im-zeitalter-…）は上げた人が分からず、開いていません。
 
 **照合の状態**：本文照合済（訳。1936 年の仏語版。雑誌の走査の OCR の文字で読んだ）。独語の稿は未照合。
@@ -249,9 +249,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Rancière, J. (2000). *Le Partage du sensible: Esthétique et politique*. Paris: La Fabrique。書籍で、OA の版は見つかりませんでした。台帳に行が無い（D15-S25 の案）。
-- Rancière, J. (2002). The aesthetic revolution and its outcomes. *New Left Review* 14, 133–151。出版社の頁（https://newleftreview.org/issues/ii14/articles/jacques-ranciere-the-aesthetic-revolution-and-its-outcomes ）で、ログインせずに読める冒頭の部分だけを読みました（頁の番号は無い）。台帳に行が無い（D15-S22 の案）。巻の頁は確かめていません。
-- Rancière, J. (2001). Ten theses on politics. *Theory & Event* 5(3). DOI 10.1353/tae.2001.0028（Crossref で確かめた）。`find-source.sh` で OA の写しは見つからず、出版社（Project MUSE）の有料の頁だけでした。台帳に行が無い（D15-S23 の案）。
+- Rancière, J. (2000). *Le Partage du sensible: Esthétique et politique*. Paris: La Fabrique。書籍で、OA の版は見つかりませんでした。台帳に行が無い（台帳に足す案）。
+- Rancière, J. (2002). The aesthetic revolution and its outcomes. *New Left Review* 14, 133–151。出版社の頁（https://newleftreview.org/issues/ii14/articles/jacques-ranciere-the-aesthetic-revolution-and-its-outcomes ）で、ログインせずに読める冒頭の部分だけを読みました（頁の番号は無い）。台帳に行が無い（台帳に足す案）。巻の頁は確かめていません。
+- Rancière, J. (2001). Ten theses on politics. *Theory & Event* 5(3). DOI 10.1353/tae.2001.0028（Crossref で確かめた）。原典を探す道具で OA の写しは見つからず、出版社（Project MUSE）の有料の頁だけでした。台帳に行が無い（台帳に足す案）。
 
 **照合の状態**：未照合（書籍）。2002 年の論文は本文照合済（冒頭の部分。出版社の頁で読める範囲）。
 
@@ -278,7 +278,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Schiller, F. (1795). Ueber die ästhetische Erziehung des Menschen, in einer Reihe von Briefen. *Die Horen* 1795 年 第 1 号 pp.7–48（第 1〜9 書簡）、第 2 号 pp.51–94（第 10〜16 書簡）、第 6 号 pp.45–124（第 17〜27 書簡）。Internet Archive の『Die Horen』v.1–2（イリノイ大学 Urbana-Champaign 図書館の本の走査。https://archive.org/details/diehoreneinemona12unse ）の `_djvu.txt`（OCR の文字）で読みました。頁は号ごとの誌面の頁で、頁の頭の番号で控えました。頁の画像では確かめていません。パブリックドメイン。台帳に行が無い（D15-S16 の案）。
+- Schiller, F. (1795). Ueber die ästhetische Erziehung des Menschen, in einer Reihe von Briefen. *Die Horen* 1795 年 第 1 号 pp.7–48（第 1〜9 書簡）、第 2 号 pp.51–94（第 10〜16 書簡）、第 6 号 pp.45–124（第 17〜27 書簡）。Internet Archive の『Die Horen』v.1–2（イリノイ大学 Urbana-Champaign 図書館の本の走査。https://archive.org/details/diehoreneinemona12unse ）の `_djvu.txt`（OCR の文字）で読みました。頁は号ごとの誌面の頁で、頁の頭の番号で控えました。頁の画像では確かめていません。パブリックドメイン。台帳に行が無い（台帳に足す案）。
 - 読んだ書簡と頁：第 1 書簡（第 1 号 p.8）、第 4 書簡（第 1 号 p.21）、第 12 書簡（第 2 号 p.64）、第 13 書簡（第 2 号 pp.72–73）、第 14 書簡（第 2 号 pp.79–80）、第 15 書簡（第 2 号 p.88）、第 18 書簡（第 6 号 pp.51–52）、第 19 書簡（第 6 号 p.54）、第 20 書簡（第 6 号 pp.63–64）、第 21 書簡（第 6 号 pp.67–68）。
 - 英訳（Project Gutenberg・Harvard Classics の訳）と、1801 年の『Kleinere prosaische Schriften』の改訂の版は読んでいません。
 
@@ -297,7 +297,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 - 第 20 書簡：受けることから自ら行うことへ移るには、人は一瞬すべての規定から自由になり、ただの規定可能性の状態を通らねばならない。マイナスからプラスへ進むにはゼロを通るからである（第 6 号 p.63）。課題は、状態の規定を「zugleich zu vernichten und beyzubehalten」で、それは別の規定を対置することでしかできない（第 6 号 p.64）。
 - 第 21 書簡：規定可能性には二つある。ただの規定の無さ（実在が無いので限りが無い）と、美的な規定可能性（すべての実在をあわせ持つので限りが無い）（第 6 号 p.67）。美的な状態の人は、一つの結果について見れば「Null」で、美は知にも意志にも一つの結果も与えない（第 6 号 p.68）。
 
-**対立・衝突・統合の読み**：原典は、二つの衝動の対立をまず厳密に分けて認め、そのうえで美がそれを aufheben すると書き、至らない形を三つの書き方で書いています（片方が先回りしてゼロになる・野蛮人と未開の教養人・混ぜるだけか切り離すだけで結ばない）。第 20 書簡の「同時に滅ぼし、保つ」は、後のヘーゲルの止揚の二つの意味（D13 の記録の 12 節、1812 年 pp.45–46）と同じ形の書き方で、二つの語の関係は研究の一線です（この記録では確かめていない）。第 18 書簡は二つが第三のものの中で「すっかり消える」と書いていて、ヘーゲルの「止揚されたものは消えていない」と書き方が違います。読み替え：片方の先回りは片方の勝利、混ぜるだけ・切り離すだけは統合に至らない形として行に並べられます（Claude の読み）。規定可能性は、原典では最初の空の状態（leere Unendlichkeit）と、衝動が働いたあとの美的な状態の二つに分けられています。
+**対立・衝突・統合の読み**：原典は、二つの衝動の対立をまず厳密に分けて認め、そのうえで美がそれを aufheben すると書き、至らない形を三つの書き方で書いています（片方が先回りしてゼロになる・野蛮人と未開の教養人・混ぜるだけか切り離すだけで結ばない）。第 20 書簡の「同時に滅ぼし、保つ」は、後のヘーゲルの止揚の二つの意味（哲学の記録の 12 節、1812 年 pp.45–46）と同じ形の書き方で、二つの語の関係は研究の一線です（この記録では確かめていない）。第 18 書簡は二つが第三のものの中で「すっかり消える」と書いていて、ヘーゲルの「止揚されたものは消えていない」と書き方が違います。読み替え：片方の先回りは片方の勝利、混ぜるだけ・切り離すだけは統合に至らない形として行に並べられます（Claude の読み）。規定可能性は、原典では最初の空の状態（leere Unendlichkeit）と、衝動が働いたあとの美的な状態の二つに分けられています。
 
 **今の報告から直すこと**：
 
@@ -318,9 +318,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Adorno, T. W. (1970). *Ästhetische Theorie*. Frankfurt am Main: Suhrkamp。英訳（1997、Hullot-Kentor 訳）は Internet Archive の貸し出しだけ（https://archive.org/details/aesthetictheory0000ador ）で、OA の版は見つかりませんでした。台帳に行が無い（D15-S26 の案）。
-- 二次資料：Pickford, H. "Theodor W. Adorno". *Stanford Encyclopedia of Philosophy*（2024 年 11 月の改訂）。https://plato.stanford.edu/entries/adorno/ 。§6「Aesthetic Theory」。D13 哲学の記録が同じ項目を二次資料にしています（台帳の案 D13-S28）。
-- D13 の記録が読んだ『否定弁証法』（1966。上げた人の分からない写し）は別の本で、ここでは使っていません。
+- Adorno, T. W. (1970). *Ästhetische Theorie*. Frankfurt am Main: Suhrkamp。英訳（1997、Hullot-Kentor 訳）は Internet Archive の貸し出しだけ（https://archive.org/details/aesthetictheory0000ador ）で、OA の版は見つかりませんでした。台帳に行が無い（台帳に足す案）。
+- 二次資料：Pickford, H. "Theodor W. Adorno". *Stanford Encyclopedia of Philosophy*（2024 年 11 月の改訂）。https://plato.stanford.edu/entries/adorno/ 。§6「Aesthetic Theory」。哲学の記録が同じ項目を二次資料にしています（台帳に足す案）。
+- 哲学の記録が読んだ『否定弁証法』（1966。上げた人の分からない写し）は別の本で、ここでは使っていません。
 
 **照合の状態**：二次資料のみ（SEP「Theodor W. Adorno」）。原典は未照合（書籍）。
 
@@ -341,7 +341,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Eco, U. (1989). *The Open Work*. A. Cancogni 訳. Cambridge, MA: Harvard University Press。第 1〜6 章は『Opera aperta』（1962）から。台帳に行が無い（D15-S21 の案）。`find-source.sh` は Internet Archive の貸し出し（https://archive.org/details/openwork0000ecou ）と、OpenAlex が挙げた Monoskop の写し（http://monoskop.org/images/6/6b/Eco_Umberto_The_Open_Work.pdf ）を出しました。Monoskop の写しを取り、扉と著作権の頁で Harvard 1989 年版の走査と確かめました（318 面、文字の層あり）。上げた人と権利は未確認です。頁は本の頁（頁の頭の番号）。読んだ頁：pp.19–20・60・64–67。
+- Eco, U. (1989). *The Open Work*. A. Cancogni 訳. Cambridge, MA: Harvard University Press。第 1〜6 章は『Opera aperta』（1962）から。台帳に行が無い（台帳に足す案）。原典を探す道具は Internet Archive の貸し出し（https://archive.org/details/openwork0000ecou ）と、OpenAlex が挙げた Monoskop の写し（http://monoskop.org/images/6/6b/Eco_Umberto_The_Open_Work.pdf ）を出しました。Monoskop の写しを取り、扉と著作権の頁で Harvard 1989 年版の走査と確かめました（318 面、文字の層あり）。上げた人と権利は未確認です。頁は本の頁（頁の頭の番号）。読んだ頁：pp.19–20・60・64–67。
 - 伊語原文（Bompiani 1962）は読んでいません。
 
 **照合の状態**：未照合（上げた人の分からない英訳の写しで読んだ）。
@@ -409,13 +409,13 @@ ja 3〜4 行「立ち位置明示」、24〜25 行「方法論的開示（S60）
 | アドルノの「否定と差異の発生の違い」 | 退避版 319 行・phase6 83 行（「欠損」の語を消した） |
 | 英語版の「lack」「error-driven logic」（デューイ・日本美学） | 退避版・調べた跡にこの文は無い（英語版を書いたときの付け足し。語は欠損駆動思考） |
 | 縁の 8 類型 | 退避版 366〜378 行 → phase7 17〜23 行 |
-| 能勢『幽玄論』を 1940 とする | 退避版 59・71 行（精読ノート D15-S06 も 1940） |
+| 能勢『幽玄論』を 1940 とする | 退避版 59・71 行（精読ノート「能勢朝次 1944」も 1940） |
 | 版ごとの件数 | ja・en・pres が別々に生成されたこと |
 | 型 F の表示 | 報告のテンプレート |
 
 退避版と調べた跡で、欠損・抱持・非二元の語は次の所にありました：退避版 99・100 行（予測誤差）、319 行（否定と欠損）、388〜394 行（「直接的」「非二元的」「二元性を保持」のレンズ）、phase6 18・28・83・129〜131・150 行、phase7 5〜11・72・112・129 行。報告の日本語版の本文に「欠損」「抱持」の語そのものはありません。
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 E（「最も」の言い切り）：「本調査で最も整合的な対応を示す理論の一つ」（83 行）、「5段階の初期状態の哲学的に最も精密な定式化」（91 行）、「縁の存在論的記述の中で最も根源的なものの一つ」（133 行）、「場への対応は本調査の10理論中で最も弱く」（143 行）、「渦の対応が最も弱い領域」（197 行）。比べた跡は無い。
 - 型 H（原典に無い体系）：「保持型・停止型・接合型・関係型・分岐型・境界型・結合型・緊張型」（185 行）。
@@ -424,52 +424,44 @@ ja 3〜4 行「立ち位置明示」、24〜25 行「方法論的開示（S60）
 
 ## 判断が要るもの
 
-pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは `docs/cs-review/README.md` の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
+pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは調べ方の計画と規約の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
 
 - 「日本美学」は、報告の論の単位のまま一つの節にし、中で原典ごとに分けて書きました。五つの原典を別々の論に割ると、報告と論の数が合わなくなり、宣長と久松は読めていないためです（stance 2-6「網羅しようとしない」）。
-- メルツァーの 1993 年の講演の書き起こしは、著者の著作を管理する財団のサイトの PDF で、著者のサイトの写しと同じ扱いにして本文照合済にしました（README「規約で決めたこと」D26 の行）。1988 年の本は未照合（書籍）と書き分けました。
+- メルツァーの 1993 年の講演の書き起こしは、著者の著作を管理する財団のサイトの PDF で、著者のサイトの写しと同じ扱いにして本文照合済にしました（README「規約で決めたこと」音楽学の行）。1988 年の本は未照合（書籍）と書き分けました。
 - ベンヤミンの 1936 年の仏語版は、Internet Archive の雑誌の集まりの走査で、出所（誌名・号・頁）が書けるので、図書館の走査と同じ扱いにして本文照合済（訳）にしました。訳者 Klossowski の権利は確かめていません。
 - デューイ 1934・ハイデガー・エーコは、上げた人の分からない写しで読んだので、未照合として読んだ頁を書きました。
-- シラーの第 20 書簡の「同時に滅ぼし、保つ」と D13 のヘーゲルの止揚は、正反合の系譜として段 3 で一つに数えるかを見ます（D16 のマルクスと同じ扱い）。
+- シラーの第 20 書簡の「同時に滅ぼし、保つ」と哲学のヘーゲルの止揚は、正反合の系譜として段 3 で一つに数えるかを見ます（歴史学のマルクスと同じ扱い）。
 - 論は足していません。似た論文（神経美学）は本文を取れましたが、報告の論の構造を確かめるものではなく、衝突や至らない形をはっきり書いているかを見ていないので、論として足していません（README「調査の手順」1）。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D15-S16 | Schiller, F. (1795). Ueber die ästhetische Erziehung des Menschen, in einer Reihe von Briefen. *Die Horen* 1795, 1. Stück pp.7–48・2. Stück pp.51–94・6. Stück pp.45–124 | https://archive.org/details/diehoreneinemona12unse （イリノイ大学 Urbana-Champaign 図書館の走査。v.1–2） | raw-confirmed（パブリックドメイン。手元に置いたのは同じ資料の OCR の文字 `D15_schiller_1795_horen-v1-2_djvu.txt`） |
-| D15-S17 | Benjamin, W. (1936). L'œuvre d'art à l'époque de sa reproduction mécanisée. P. Klossowski 訳. *Zeitschrift für Sozialforschung* 5(1), 40–68 | https://archive.org/details/studies-in-philosophy-and-social-science_1936_5_1 （Internet Archive の雑誌の走査） | raw-confirmed（訳者の権利は未確認。手元に置いたのは同じ資料の OCR の文字 `D15_benjamin_1936_zfs5-1_djvu.txt`） |
-| D15-S18 | Meltzer, D. (1993). Aesthetic Conflict and Creativity（Stavanger での講演の書き起こし） | https://web.archive.org/web/2023/http://www.harris-meltzer-trust.org.uk/pdfs/MeltzerAestheticCreativity.pdf （Wayback の記録。元は Harris Meltzer Trust のサイト） | raw-confirmed（保存名の案 `D15_meltzer_1993_aesthetic-conflict-creativity.pdf`） |
-| D15-S19 | Harris Williams, M. (2018). Foreword. Meltzer & Williams, *The Apprehension of Beauty*, 2nd ed., pp.xv–xviii | https://web.archive.org/web/20231117042449/https://www.harris-meltzer-trust.org.uk/pdfs/ApprehensionBeauty_Foreword.pdf （Wayback の記録。元は財団のサイト） | raw-confirmed（保存名の案 `D15_harris-williams_2018_apprehension-beauty-foreword.pdf`） |
-| D15-S20 | Harris Williams, M. (2005/2011). Genesis of the 'aesthetic conflict' | https://web.archive.org/web/20220124162214/https://www.harris-meltzer-trust.org.uk/pdfs/GenesisAesthetic.pdf （Wayback の記録。元は財団のサイト） | raw-confirmed（保存名の案 `D15_harris-williams_2011_genesis-aesthetic-conflict.pdf`） |
-| D15-S21 | Eco, U. (1989). *The Open Work*. A. Cancogni 訳. Harvard University Press | http://monoskop.org/images/6/6b/Eco_Umberto_The_Open_Work.pdf （Monoskop の写し。上げた人と権利は未確認）・https://archive.org/details/openwork0000ecou （貸し出し） | citation-only（写しは読めるが、確かめ先にしない） |
-| D15-S22 | Rancière, J. (2002). The aesthetic revolution and its outcomes. *New Left Review* 14 | https://newleftreview.org/issues/ii14/articles/jacques-ranciere-the-aesthetic-revolution-and-its-outcomes （出版社の頁。冒頭だけ無料） | url-verified（冒頭の部分だけ） |
-| D15-S23 | Rancière, J. (2001). Ten theses on politics. *Theory & Event* 5(3). DOI 10.1353/tae.2001.0028 | Project MUSE（有料） | citation-only |
-| D15-S24 | Okakura, K. (1906). *The Book of Tea*. New York: Fox, Duffield | https://archive.org/details/cu31924021575695 （コーネル大学図書館の走査） | raw-confirmed（パブリックドメイン。手元に置いたのは同じ資料の OCR の文字 `D15_okakura_1906_book-of-tea_djvu.txt`） |
-| D15-S25 | Rancière, J. (2000). *Le Partage du sensible: Esthétique et politique*. Paris: La Fabrique | OA なし | citation-only |
-| D15-S26 | Adorno, T. W. (1970). *Ästhetische Theorie*. Suhrkamp（英訳 1997、Hullot-Kentor 訳） | https://archive.org/details/aesthetictheory0000ador （貸し出し） | citation-only |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| Schiller, F. (1795). Ueber die ästhetische Erziehung des Menschen, in einer Reihe von Briefen. *Die Horen* 1795, 1. Stück pp.7–48・2. Stück pp.51–94・6. Stück pp.45–124 | https://archive.org/details/diehoreneinemona12unse （イリノイ大学 Urbana-Champaign 図書館の走査。v.1–2） | 手元に保存した（パブリックドメイン。手元に置いたのは同じ資料の OCR の文字手元のファイル） |
+| Benjamin, W. (1936). L'œuvre d'art à l'époque de sa reproduction mécanisée. P. Klossowski 訳. *Zeitschrift für Sozialforschung* 5(1), 40–68 | https://archive.org/details/studies-in-philosophy-and-social-science_1936_5_1 （Internet Archive の雑誌の走査） | 手元に保存した（訳者の権利は未確認。手元に置いたのは同じ資料の OCR の文字手元のファイル） |
+| Meltzer, D. (1993). Aesthetic Conflict and Creativity（Stavanger での講演の書き起こし） | https://web.archive.org/web/2023/http://www.harris-meltzer-trust.org.uk/pdfs/MeltzerAestheticCreativity.pdf （Wayback の記録。元は Harris Meltzer Trust のサイト） | 手元に保存した（保存名の案手元の PDF） |
+| Harris Williams, M. (2018). Foreword. Meltzer & Williams, *The Apprehension of Beauty*, 2nd ed., pp.xv–xviii | https://web.archive.org/web/20231117042449/https://www.harris-meltzer-trust.org.uk/pdfs/ApprehensionBeauty_Foreword.pdf （Wayback の記録。元は財団のサイト） | 手元に保存した（保存名の案手元の PDF） |
+| Harris Williams, M. (2005/2011). Genesis of the 'aesthetic conflict' | https://web.archive.org/web/20220124162214/https://www.harris-meltzer-trust.org.uk/pdfs/GenesisAesthetic.pdf （Wayback の記録。元は財団のサイト） | 手元に保存した（保存名の案手元の PDF） |
+| Eco, U. (1989). *The Open Work*. A. Cancogni 訳. Harvard University Press | http://monoskop.org/images/6/6b/Eco_Umberto_The_Open_Work.pdf （Monoskop の写し。上げた人と権利は未確認）・https://archive.org/details/openwork0000ecou （貸し出し） | 書誌だけ（写しは読めるが、確かめ先にしない） |
+| Rancière, J. (2002). The aesthetic revolution and its outcomes. *New Left Review* 14 | https://newleftreview.org/issues/ii14/articles/jacques-ranciere-the-aesthetic-revolution-and-its-outcomes （出版社の頁。冒頭だけ無料） | 取得先を確かめた（冒頭の部分だけ） |
+| Rancière, J. (2001). Ten theses on politics. *Theory & Event* 5(3). DOI 10.1353/tae.2001.0028 | Project MUSE（有料） | 書誌だけ |
+| Okakura, K. (1906). *The Book of Tea*. New York: Fox, Duffield | https://archive.org/details/cu31924021575695 （コーネル大学図書館の走査） | 手元に保存した（パブリックドメイン。手元に置いたのは同じ資料の OCR の文字手元のファイル） |
+| Rancière, J. (2000). *Le Partage du sensible: Esthétique et politique*. Paris: La Fabrique | OA なし | 書誌だけ |
+| Adorno, T. W. (1970). *Ästhetische Theorie*. Suhrkamp（英訳 1997、Hullot-Kentor 訳） | https://archive.org/details/aesthetictheory0000ador （貸し出し） | 書誌だけ |
 
 既存の行に書き足す案：
 
-- D15-S04：手元の PDF（28 面）は版本でなく写本の画像。冒頭の面に「源氏物語玉乃小櫛」「本居宣長考」と、印「□曜文庫」「佐知屋」。くずし字で、本文は題と冒頭の数行しか読めていない。
-- D15-S06：扉は「能勢朝次著 幽玄論 河出書房」、序の日付は「昭和十八年九月」。図書館の本の走査（ラベル 910-N97ウ）。概説 p.1 を頁の画像で読んだ。
-- D15-S07：書誌の「邦訳: 牧野英二訳『判断力批判』岩波文庫」は手元のファイルでない。手元は『Kant's gesammelte Schriften』Bd. V（Berlin: Reimer, 1908）の KU の部分（AA pp.165–485）。PDF の面 n が AA の n+156 頁。
-- D15-S08：mission17.org の URL は 2026-11-09 に PDF を返さない（別の頁へ送る HTML）。Wayback の記録（2017〜2025 年の写し。https://web.archive.org/web/20190728081949/http://www.mission17.org:80/documents/Heidegger_TheOriginOfTheWorkOfArt.pdf ）は『Poetry, Language, Thought』（Hofstadter 訳）の pp.17–81 の、書き込みのある走査。上げた人と権利は未確認。
-- D15-S09（D13-S09）：手元の PDF は Perigee 1980 年の刷（23rd Impression）の走査で、1934 年の初版ではない。上げた人は未確認。
-- D15-S11・S13・S15：Frontiers の PDF を 2026-11-09 に取り、1 頁目の題・著者・DOI を確かめた（raw-confirmed に上げられる。保存名の案 `D15_marin_2015_crossing-boundaries.pdf`・`D15_vessel_2012_brain-on-art.pdf`・`D15_botella_2018_stages-creative-process.pdf`）。中身は読んでいない。
-- D15-S14：SAGE の PDF は 403（HTML）を返した。Europe PMC の全文 XML（PMC3485814）は取れ、題を確かめた。
+- 台帳の「本居宣長 1799」の行：手元の PDF（28 面）は版本でなく写本の画像。冒頭の面に「源氏物語玉乃小櫛」「本居宣長考」と、印「□曜文庫」「佐知屋」。くずし字で、本文は題と冒頭の数行しか読めていない。
+- 台帳の「能勢朝次 1944」の行：扉は「能勢朝次著 幽玄論 河出書房」、序の日付は「昭和十八年九月」。図書館の本の走査（ラベル 910-N97ウ）。概説 p.1 を頁の画像で読んだ。
+- 台帳の「Kant 1790」の行：書誌の「邦訳: 牧野英二訳『判断力批判』岩波文庫」は手元のファイルでない。手元は『Kant's gesammelte Schriften』Bd. V（Berlin: Reimer, 1908）の KU の部分（AA pp.165–485）。PDF の面 n が AA の n+156 頁。
+- 台帳の「Heidegger 1935」の行：mission17.org の URL は 2026-11-09 に PDF を返さない（別の頁へ送る HTML）。Wayback の記録（2017〜2025 年の写し。https://web.archive.org/web/20190728081949/http://www.mission17.org:80/documents/Heidegger_TheOriginOfTheWorkOfArt.pdf ）は『Poetry, Language, Thought』（Hofstadter 訳）の pp.17–81 の、書き込みのある走査。上げた人と権利は未確認。
+- 台帳の「Dewey 1934」の行：手元の PDF は Perigee 1980 年の刷（23rd Impression）の走査で、1934 年の初版ではない。上げた人は未確認。
+- 台帳の「Marin 2015」の行：Frontiers の PDF を 2026-11-09 に取り、1 頁目の題・著者・DOI を確かめた（「手元に保存した」に上げられる。保存名の案手元の PDF・手元の PDF・手元の PDF）。中身は読んでいない。
+- 台帳の「Markovic 2012」の行：SAGE の PDF は 403（HTML）を返した。Europe PMC の全文 XML（PMC3485814）は取れ、題を確かめた。
 
 ## ブラウザでの保存が要る PDF
 
-| 台帳の行 | 文献 | ダウンロード先 | 保存名の案 | 止まった理由 | 保存できると何を確かめられるか |
-|---|---|---|---|---|---|
-| D15-S01 | Meltzer & Harris Williams (1988). *The Apprehension of Beauty* | https://archive.org/details/apprehensionofbe0000dona （頁の中の「Borrow」） | ― | Internet Archive の貸し出し（ログインして借りる形） | 第 1 章で「aesthetic conflict」を探し、外側と内側の葛藤と、それに耐えられない形（退き・押し入り）をどう書くか。報告 ja 167 行の「知りたい（curiosity）と怖い（fear）」が本にあるか |
-| D15-S26 の案 | Adorno (1997). *Aesthetic Theory*（英訳） | https://archive.org/details/aesthetictheory0000ador （頁の中の「Borrow」） | ― | Internet Archive の貸し出し | pp.118–135（「enigmatic character」）と「mimesis」「rationality」の箇所。報告 ja 137〜141 行の「謎性格」「ミメーシスと合理性の弁証法的緊張」「不可解消的緊張」 |
-| D15-S21 の案 | Eco (1989). *The Open Work* | https://archive.org/details/openwork0000ecou （頁の中の「Borrow」） | ― | Internet Archive の貸し出し | Monoskop の写しで読んだ pp.19–20・60・64–65 が図書館の版と同じか。同じなら本文照合済に上げられる |
-| D15-S14 | Marković (2012). *i-Perception* 3(1) | https://journals.sagepub.com/doi/pdf/10.1068/i0450aap | `D15_markovic_2012_components-aesthetic-experience.pdf` | SAGE が 403（HTML の頁）を返した。Europe PMC の XML は取れた | 誌面の頁。XML で足りるなら不要 |
-| D15-S08 | Heidegger, *Holzwege*（独語原文） | https://archive.org/details/holzwege0000mart_j3s2 （1950 年の版。「Borrow」） | ― | Internet Archive の貸し出し | 「Streit」「Riß」の原文の箇所。英訳の写しで読んだ pp.48–49・62–63 を独語で確かめる |
-
-ほかに、宣長の『源氏物語玉の小櫛』は活字の翻刻の公開の版を見つけられませんでした。国立国会図書館デジタルコレクションの版本（九巻）で「もののあはれ」の箇所を探すには、くずし字を読める人の手が要ります。図書館の手続きや翻刻の本の購入が要るかは pjdhiro が決めます。
+自動で取れなかった原典のうち、ブラウザでの保存を頼むものは、作業の記録（[Issue #73](https://github.com/uminomae/project-design-theory/issues/73)）の表にまとめました。
 
 ## 手順について分かったこと
 
@@ -478,17 +470,17 @@ pjdhiro に聞くものは、この分野からは新しく出ていません（
 - 報告が抱持の語で立てた仮説を語だけ替えて写した所は、「保持」「保留」「留まる」で調べた跡と突き合わせると見つかりました（phase7 の Pattern 1 の題「抱持 が美を生む」と、報告 §6.1 の最後の文がほぼ同じ）。英語版にだけ「lack」「error-driven logic」が入っていました。
 - 古い独語の雑誌（『Die Horen』）は OCR の文字が良く、書簡の番号と誌面の頁で控えられました。頁の画像では確かめていません。カントのアカデミー版は亀の子文字ですが、80〜90 dpi の頁の画像で読めました。
 - 縦書きのくずし字の写本（宣長）は、頁の画像でも読めませんでした。手元の文字認識の道具は使っていません。
-- `find-source.sh` は、書籍の題では Internet Archive の貸し出しと Monoskop の写ししか出しませんでした。図書館の走査は Internet Archive の検索 API（contributor の欄）で探しました。Semantic Scholar は回数の制限（429）を返しました。Unpaywall と CORE は鍵が無く飛ばしました。
+- 原典を探す道具は、書籍の題では Internet Archive の貸し出しと Monoskop の写ししか出しませんでした。図書館の走査は Internet Archive の検索 API（contributor の欄）で探しました。Semantic Scholar は回数の制限（429）を返しました。Unpaywall と CORE は鍵が無く飛ばしました。
 
 ### 精読ノートと wiki の誤り
 
-追記（2026-11-09・司令塔）：能勢『幽玄論』の年（精読ノート D15-S06 の題と 15 行、wiki の 45 行）は、序の面を頁の画像で開いて「昭和十八年九月」を確かめて直しました。精読ノート D15-S06 の 26 行の引用、D15-S08 の 51・78 行の引用、D15-S07 の 64 行、wiki のリンクは、司令塔が原文の頁で確かめていないので直さず、段 4（wiki との整合）に回します。シラーの第 13 書簡の「Null」と「leere Unendlichkeit」、ベンヤミンの仏語版の結びの二文は、司令塔も OCR の文字で確かめました。ハイデガーの写しは、Hofstadter 訳の走査（書き込みあり）であることを一面で見ました。
+追記（2026-11-09・司令塔）：能勢『幽玄論』の年（精読ノート「能勢朝次 1944」の題と 15 行、wiki の 45 行）は、序の面を頁の画像で開いて「昭和十八年九月」を確かめて直しました。精読ノート「能勢朝次 1944」の 26 行の引用、台帳の「Heidegger 1935」の行の 51・78 行の引用、台帳の「Kant 1790」の行の 64 行、wiki のリンクは、司令塔が原文の頁で確かめていないので直さず、段 4（wiki との整合）に回します。シラーの第 13 書簡の「Null」と「leere Unendlichkeit」、ベンヤミンの仏語版の結びの二文は、司令塔も OCR の文字で確かめました。ハイデガーの写しは、Hofstadter 訳の走査（書き込みあり）であることを一面で見ました。
 
-- `cs/knowledge/source-notes/D15/D15-S06_nose-1940.md` 15 行：直す前「河出書房, 昭和19年（1944年刊行、序文には昭和15年=1940年の日付）」→ 直したあと「河出書房, 昭和19年（1944年刊行、序文の日付は昭和十八年九月＝1943年）」。1 行目の題「能勢朝次 (1940)」とファイル名の「1940」も同じ。
+- 精読ノート「Nose 1940」 15 行：直す前「河出書房, 昭和19年（1944年刊行、序文には昭和15年=1940年の日付）」→ 直したあと「河出書房, 昭和19年（1944年刊行、序文の日付は昭和十八年九月＝1943年）」。1 行目の題「能勢朝次 (1940)」とファイル名の「1940」も同じ。
 - 同 26 行：引用符の中の文「『幽玄』は格形的に見れば支那に於ける造語であって、この熟語の中の『玄』にしろ、『幽』にしろ、老荘方面に愛用せられた文字」は概説 p.1 の文と違う。p.1 の文は「幽玄といふ語は支那で作られた言葉であつて、この熟語の中心は「玄」にあり、…「玄」といふ文字は、老子の所謂「道」を容形して、「玄之又玄」といひ、…老荘方面で愛用せられた言葉である」。引用符を外して要約と書くか、p.1 の文に差し替える。
-- `cs/knowledge/source-notes/D15/D15-S08_heidegger-1935.md` 51 行・78 行：引用符の中の「The striving does not tear them apart in discord and disputation, but rather carries the opponents into intimacy of simple belonging to one another」は p.49 に無い。p.49 の文は「we would surely all too easily falsify its nature if we were to confound striving with discord and dispute」と「the more inflexibly do the opponents let themselves go into the intimacy of simple belonging to one another」。引用符を外して要約と書くか、二つの文に分けて差し替える。
-- `cs/knowledge/source-notes/D15/D15-S07_kant-1790.md` 64 行：「"freies Spiel unsrer Erkenntniskraefte" (S9付近, p.217)」は p.217 の語のままではない。p.217 の文は「in einem freien Spiele」「Zustand eines freien Spiels der Erkenntnißvermögen」（低）。
-- `pd/wiki/sources/D15_nose_1944_yugenron.md` 45 行：「年: 1940/1944年」→「年: 1944年（序の日付は 1943 年 9 月）」。
-- `pd/wiki/sources/D15_kant_1790_kritik-der-urteilskraft.md` 52 行：「邦訳参照: 牧野英二訳」は手元の PDF の書誌ではない（低）。54 行・`D15_motoori_1799_tama-no-ogushi.md` 48 行・`D15_nose_1944_yugenron.md` 48 行の「全文: Wikimedia Commons」のリンクが Commons のトップを指していて、ファイルを指していない（低。D13 の記録の Whitehead と同じ形）。
-- `pd/wiki/sources/D15_heidegger_1935_1935-36.md` 51 行：mission17.org のリンクは今は PDF を返さない。Wayback の記録に差し替えるか、上げた人の分からない写しと添える（低）。
-- 精読ノート D15-S04 は「pp.1-20（表紙・序文・桐壺巻注釈の冒頭部分）」を読んだと書くが、手元の PDF は 28 面の写本で、冒頭の題は読めたものの、ノートの引用（「この物語は、もののあはれを知るを、むねとはしたる物語なり」p.2 付近）は確かめられなかった。段 4 に回す。
+- 精読ノート「Heidegger 1935」 51 行・78 行：引用符の中の「The striving does not tear them apart in discord and disputation, but rather carries the opponents into intimacy of simple belonging to one another」は p.49 に無い。p.49 の文は「we would surely all too easily falsify its nature if we were to confound striving with discord and dispute」と「the more inflexibly do the opponents let themselves go into the intimacy of simple belonging to one another」。引用符を外して要約と書くか、二つの文に分けて差し替える。
+- 精読ノート「Kant 1790」 64 行：「"freies Spiel unsrer Erkenntniskraefte" (S9付近, p.217)」は p.217 の語のままではない。p.217 の文は「in einem freien Spiele」「Zustand eines freien Spiels der Erkenntnißvermögen」（低）。
+- wiki の頁「Nose 1944」 45 行：「年: 1940/1944年」→「年: 1944年（序の日付は 1943 年 9 月）」。
+- wiki の頁「Kant 1790」 52 行：「邦訳参照: 牧野英二訳」は手元の PDF の書誌ではない（低）。54 行・wiki の頁「Motoori 1799」 48 行・wiki の頁「Nose 1944」 48 行の「全文: Wikimedia Commons」のリンクが Commons のトップを指していて、ファイルを指していない（低。哲学の記録の Whitehead と同じ形）。
+- wiki の頁「Heidegger 1935」 51 行：mission17.org のリンクは今は PDF を返さない。Wayback の記録に差し替えるか、上げた人の分からない写しと添える（低）。
+- 精読ノート「本居宣長 1799」は「pp.1-20（表紙・序文・桐壺巻注釈の冒頭部分）」を読んだと書くが、手元の PDF は 28 面の写本で、冒頭の題は読めたものの、ノートの引用（「この物語は、もののあはれを知るを、むねとはしたる物語なり」p.2 付近）は確かめられなかった。段 4 に回す。

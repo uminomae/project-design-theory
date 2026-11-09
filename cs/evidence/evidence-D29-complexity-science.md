@@ -10,22 +10,22 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D29-compl
 
 # 複雑系科学：論ごとの照合の記録
 
-この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。物理と数学の記述が正しいかどうかは Claude が引き受けます（`docs/rules/sources.md` §1-4・§6）。
+この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。物理と数学の記述が正しいかどうかは Claude が引き受けます（調べ方の規約 §1-4・§6）。
 
 複雑系科学の原典は、ある値の下では何も起きず、上では新しい形が現れる、という分かれ目を、はっきり書いていました。Prigogine（1977）は、温度の勾配がある値より小さいうちは対流のゆらぎは減衰して消え、値を越えると一部のゆらぎが育って巨視的な流れになると書いています。Hordijk と Steel（2004）は、触媒の度合いが低いうちは自己触媒集合（RAF）はほとんど現れず、ある幅で急に現れるようになると書いています。Dickman ら（2000）は、自己組織化臨界（SOC）を、活動が止まる吸収状態と活動が続く状態の間の相転移に、ゆっくりした駆動と散逸を組み合わせたものとして書き、臨界に留まるには時間の尺度を限りなく分ける調整が隠れていると書いています。Langton（1990）は、情報を蓄えることと伝えることの兼ね合いが、秩序の相と乱れた相の間の転移の近くで最もよく取れると書いています。原典は、分かれ目に届かない形（減衰・吸収状態・凍結・乱れ・とどまった種分化・協力が育たない）も、論の中心に置いていました。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D29-complexity-science.md`、2026-03-18 に LLM が生成、以下「報告」）は、10 の論を取り上げ、日本語版では 8 を「全5段階」に当て、「強い対応」を 5 件としています。英語版とプレゼン版は「強い対応」を 9 件としています。報告は「秩序の崩壊」「カスケード故障」「系の死」を調査の対象の外に置き（ja 40 行）、未解決の問いで「『破壊』と『消滅』の過程が未記述」と書いています（ja 255〜257 行）。上のとおり、至らない形は原典の中にありました。この記録は、報告の 10 の論を一次情報で確かめ直したものです。論の数は変えていません。SOC には Dickman ら（2000）と Watkins ら（2016）、カオスの縁には Mitchell ら（1993）、ネットワーク科学には Barabási と Albert（1999）・Newman（2003）・Broido と Clauset（2019）を、同じ論の中の確かめ先として足しました。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
+今の公開報告（「30 領域調査報告」の複雑系科学の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、10 の論を取り上げ、日本語版では 8 を「全5段階」に当て、「強い対応」を 5 件としています。英語版とプレゼン版は「強い対応」を 9 件としています。報告は「秩序の崩壊」「カスケード故障」「系の死」を調査の対象の外に置き（ja 40 行）、未解決の問いで「『破壊』と『消滅』の過程が未記述」と書いています（ja 255〜257 行）。上のとおり、至らない形は原典の中にありました。この記録は、報告の 10 の論を一次情報で確かめ直したものです。論の数は変えていません。SOC には Dickman ら（2000）と Watkins ら（2016）、カオスの縁には Mitchell ら（1993）、ネットワーク科学には Barabási と Albert（1999）・Newman（2003）・Broido と Clauset（2019）を、同じ論の中の確かめ先として足しました。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D29-complexity-science.md) にあります。退避版の判定（Accept・CA・「採用確定」・縁フラグ）は、この記録の照合の状態の根拠にしていません。
 
 ## 読み方
 
-- 照合の状態は `docs/rules/sources.md` §3 の四つで書きます。著者自身のまとめ直し（ノーベル講演など）で読んだものは「著者のまとめ直し」と書き、原論文は未照合とします。
+- 照合の状態は調べ方の規約 §3 の四つで書きます。著者自身のまとめ直し（ノーベル講演など）で読んだものは「著者のまとめ直し」と書き、原論文は未照合とします。
 - 今の報告への判定は、一致・言い過ぎ・取り違え・帰属違い・付け足し・抜け・未判定で書きます。「抜け」は、原典にある衝突や至らない形を報告が落としていることです。
-- 「ja 85 行」は日本語版の行、「en」は英語版（`en/md/domain-D29-complexity-science.md`）、「pres」はプレゼン版（`ja/presentations/md/domain-D29-complexity-science-presentation-ja.md`）、「退避版」は上の History のファイルを指します。
+- 「ja 85 行」は日本語版の行、「en」は英語版（「30 領域調査報告」の複雑系科学の英語版）、「pres」はプレゼン版（「30 領域調査報告」の複雑系科学のプレゼン版）、「退避版」は上の History のファイルを指します。
 - 物理と数学の主張には、教科書（分野で確立した記述）・研究の一線（争いがある、または一つの研究が示した）・Claude の読み替え（5段階の問いに当てた解釈）のどれかを添えます。
-- 物理学（D02）と重なる論（散逸構造のベナール対流・シナジェティクス・くりこみ群）は、[物理学の記録](evidence-D02-physics.md)で本文照合済の所を読み直さず、その記録を参照しています。
-- 語が同じこと（「縁」と edge of chaos の edge、「場」と field）は、対応の根拠にも反証にも数えません（`docs/cs-review/README.md`「規約で決めたこと」）。
+- 物理学（物理学）と重なる論（散逸構造のベナール対流・シナジェティクス・くりこみ群）は、[物理学の記録](evidence-D02-physics.md)で本文照合済の所を読み直さず、その記録を参照しています。
+- 語が同じこと（「縁」と edge of chaos の edge、「場」と field）は、対応の根拠にも反証にも数えません（調べ方の計画と規約「規約で決めたこと」）。
 
 ## 一面の表
 
@@ -54,8 +54,8 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Prigogine, I. (1977). Time, Structure and Fluctuations（ノーベル講演、1977 年 12 月 8 日）。https://www.nobelprize.org/uploads/2018/06/prigogine-lecture.pdf 。台帳 D29-S01。手元の PDF は Nobel 財団の PDF と同じものでした（バイト単位で一致）。表紙は題・日付・著者と合います。頁は講演集（Chemistry 1977）の頁で、PDF の 1 頁目が p.263 です。読んだ頁：p.267（ベナールの不安定。勾配がある臨界値より小さいとき、対流のゆらぎは減衰して消え、越えると一部のゆらぎが増幅されて巨視的な流れになる。新しい秩序は外とのエネルギーのやりとりで安定した巨大なゆらぎにあたる）、p.270（平衡から遠い所では化学反応の形によって系が不安定になりうる）、p.272（散逸構造が現れるには系の大きさがある臨界値を越えることが多い。化学の式・時空の構造・ゆらぎの三つはいつも結びついている。拡散を入れた不安定を「Turing 分岐」と呼ぶ）、p.273（分岐は物理に「歴史」を持ち込む。分岐点の近くではゆらぎが系の進む枝を決める）、p.277（有限の系では、ゆらぎがやがて振動の位相を乱す。無限の系でだけ長い時間の秩序が得られる）。
-- Prigogine & Stengers（1984）*Order Out of Chaos* は書籍で、台帳 D29-S02 の Internet Archive の借覧は読んでいません。
+- Prigogine, I. (1977). Time, Structure and Fluctuations（ノーベル講演、1977 年 12 月 8 日）。https://www.nobelprize.org/uploads/2018/06/prigogine-lecture.pdf 。台帳に行がある。手元の PDF は Nobel 財団の PDF と同じものでした（バイト単位で一致）。表紙は題・日付・著者と合います。頁は講演集（Chemistry 1977）の頁で、PDF の 1 頁目が p.263 です。読んだ頁：p.267（ベナールの不安定。勾配がある臨界値より小さいとき、対流のゆらぎは減衰して消え、越えると一部のゆらぎが増幅されて巨視的な流れになる。新しい秩序は外とのエネルギーのやりとりで安定した巨大なゆらぎにあたる）、p.270（平衡から遠い所では化学反応の形によって系が不安定になりうる）、p.272（散逸構造が現れるには系の大きさがある臨界値を越えることが多い。化学の式・時空の構造・ゆらぎの三つはいつも結びついている。拡散を入れた不安定を「Turing 分岐」と呼ぶ）、p.273（分岐は物理に「歴史」を持ち込む。分岐点の近くではゆらぎが系の進む枝を決める）、p.277（有限の系では、ゆらぎがやがて振動の位相を乱す。無限の系でだけ長い時間の秩序が得られる）。
+- Prigogine & Stengers（1984）*Order Out of Chaos* は書籍で、台帳の「Prigogine & Stengers 1984」の行の Internet Archive の借覧は読んでいません。
 
 **照合の状態**：本文照合済（pp.267・270・272–273・277）。
 
@@ -79,12 +79,12 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Bak, P., Tang, C. & Wiesenfeld, K. (1987). Self-organized criticality: An explanation of the 1/f noise. *PRL* 59, 381–384. DOI: [10.1103/PhysRevLett.59.381](https://doi.org/10.1103/PhysRevLett.59.381)（Crossref で題・頁を確かめました。台帳 D29-S03 の題「Self-Organized Criticality」は副題が抜けています）。APS の PDF は自動取得で案内の頁を返しました。Watkins ら（2016）p.20 が p.381 の文を引いています（二次経由）。
-- Bak, P., Tang, C. & Wiesenfeld, K. (1988). Self-organized criticality. *Phys. Rev. A* 38, 364–374. DOI: [10.1103/PhysRevA.38.364](https://doi.org/10.1103/PhysRevA.38.364)。台帳 D29-S04。手元の PDF は ResearchGate の表紙が 1 枚付いた誌面の写しで、上げた人は分かりません。台帳の取得先（psychsafety.com）も著者や出版社のサイトではありません。読んだ頁：p.364（要旨）、p.365（砂山。傾きが臨界の値に達すると、足した砂は滑り落ちる。急すぎる山は崩れて臨界の状態に戻る。臨界の状態は力学の引き寄せる先）、p.367（最も不安定な状態は小さなゆらぎに対して不安定で、ゆらぎの伝わりを妨げる部分が増え、雑音が無限の距離へ伝わらなくなった所で系が安定する）。
-- Dickman, R., Muñoz, M. A., Vespignani, A. & Zapperi, S. (2000). Paths to self-organized criticality. *Braz. J. Phys.* 30, 27–41. DOI: [10.1590/S0103-97332000000100004](https://doi.org/10.1590/S0103-97332000000100004)。台帳 D29-S11。著者稿：https://arxiv.org/abs/cond-mat/9910454 （v2）。頁は arXiv 版の頁です。読んだ頁：p.2（臨界はふつう自然には起きず、パラメータを合わせる必要がある。多くの例で、全体の監督か、ある過程の速さを 0 に合わせるかの選択がある）、p.3（臨界には調整、つまり時間の尺度の無限の分離が要る）、p.4（密度 ζ が ζc より小さいと、定常の状態は活動の止まった吸収状態だけで、大きいと活動の密度が育つ）、pp.7–8（SOC の作り方。活動が止まったときに少しずつ足し、活動中に少しずつ失わせる。密度を有限の刻みで変えると、ζc の上と下を跳んで臨界に当たらない。転移が不連続だと、くっつき滑りのふるまいになる）、p.18（「自己組織化臨界」は、自発的でパラメータのいらない臨界も、自分で合わせることも指さない、と結ぶ）。
-- Watkins, N. W., Pruessner, G., Chapman, S. C., Crosby, N. B. & Jensen, H. J. (2016). 25 Years of Self-organized Criticality: Concepts and Controversies. *Space Sci. Rev.* 198, 3–44. DOI: [10.1007/s11214-015-0155-x](https://doi.org/10.1007/s11214-015-0155-x)（Crossref の発行日は 2015 年 5 月のオンライン版）。台帳 D29-S05。オープンアクセス。読んだ頁：pp.19–20（SOC の三つの必要な特徴）、p.20（BTW 1987 p.381 の引用。有限の系には系の大きさという尺度が残る）、p.21（しきい値をもつ非線形と、駆動と緩和の時間の尺度の分離が、SOC を生む要素。駆動が速すぎると活動が途切れず、雪崩が見分けられない）、p.23（SOC が論争になった理由。よい検証が難しく、確かな経験の証拠は限られる）。
-- Clauset, A., Shalizi, C. R. & Newman, M. E. J. (2009). Power-law distributions in empirical data. *SIAM Rev.* 51, 661–703. DOI: [10.1137/070710111](https://doi.org/10.1137/070710111)。台帳 D29-S06。手元の PDF は arXiv 0706.1062v1（2007）で、表紙に arXiv の番号があります。読んだ頁：p.1（最小二乗のあてはめは偏った推定を生む。24 のデータのうち、べき乗則と合うものも、退けられるものもある）。
-- Muñoz, M. A. (2018). Colloquium: Criticality and dynamical scaling in living systems. *Rev. Mod. Phys.* 90, 031001. DOI: [10.1103/RevModPhys.90.031001](https://doi.org/10.1103/RevModPhys.90.031001)。台帳 D29-S13。著者稿：https://arxiv.org/abs/1712.04499 。p.1 の要旨で、生き物が臨界点の近く、秩序と無秩序の中間で働くという仮説を「名高く、論争のある」ものとしています。
+- Bak, P., Tang, C. & Wiesenfeld, K. (1987). Self-organized criticality: An explanation of the 1/f noise. *PRL* 59, 381–384. DOI: [10.1103/PhysRevLett.59.381](https://doi.org/10.1103/PhysRevLett.59.381)（Crossref で題・頁を確かめました。台帳の「Bak ら 1987」の行の題「Self-Organized Criticality」は副題が抜けています）。APS の PDF は自動取得で案内の頁を返しました。Watkins ら（2016）p.20 が p.381 の文を引いています（二次経由）。
+- Bak, P., Tang, C. & Wiesenfeld, K. (1988). Self-organized criticality. *Phys. Rev. A* 38, 364–374. DOI: [10.1103/PhysRevA.38.364](https://doi.org/10.1103/PhysRevA.38.364)。台帳に行がある。手元の PDF は ResearchGate の表紙が 1 枚付いた誌面の写しで、上げた人は分かりません。台帳の取得先（psychsafety.com）も著者や出版社のサイトではありません。読んだ頁：p.364（要旨）、p.365（砂山。傾きが臨界の値に達すると、足した砂は滑り落ちる。急すぎる山は崩れて臨界の状態に戻る。臨界の状態は力学の引き寄せる先）、p.367（最も不安定な状態は小さなゆらぎに対して不安定で、ゆらぎの伝わりを妨げる部分が増え、雑音が無限の距離へ伝わらなくなった所で系が安定する）。
+- Dickman, R., Muñoz, M. A., Vespignani, A. & Zapperi, S. (2000). Paths to self-organized criticality. *Braz. J. Phys.* 30, 27–41. DOI: [10.1590/S0103-97332000000100004](https://doi.org/10.1590/S0103-97332000000100004)。台帳に行がある。著者稿：https://arxiv.org/abs/cond-mat/9910454 （v2）。頁は arXiv 版の頁です。読んだ頁：p.2（臨界はふつう自然には起きず、パラメータを合わせる必要がある。多くの例で、全体の監督か、ある過程の速さを 0 に合わせるかの選択がある）、p.3（臨界には調整、つまり時間の尺度の無限の分離が要る）、p.4（密度 ζ が ζc より小さいと、定常の状態は活動の止まった吸収状態だけで、大きいと活動の密度が育つ）、pp.7–8（SOC の作り方。活動が止まったときに少しずつ足し、活動中に少しずつ失わせる。密度を有限の刻みで変えると、ζc の上と下を跳んで臨界に当たらない。転移が不連続だと、くっつき滑りのふるまいになる）、p.18（「自己組織化臨界」は、自発的でパラメータのいらない臨界も、自分で合わせることも指さない、と結ぶ）。
+- Watkins, N. W., Pruessner, G., Chapman, S. C., Crosby, N. B. & Jensen, H. J. (2016). 25 Years of Self-organized Criticality: Concepts and Controversies. *Space Sci. Rev.* 198, 3–44. DOI: [10.1007/s11214-015-0155-x](https://doi.org/10.1007/s11214-015-0155-x)（Crossref の発行日は 2015 年 5 月のオンライン版）。台帳に行がある。オープンアクセス。読んだ頁：pp.19–20（SOC の三つの必要な特徴）、p.20（BTW 1987 p.381 の引用。有限の系には系の大きさという尺度が残る）、p.21（しきい値をもつ非線形と、駆動と緩和の時間の尺度の分離が、SOC を生む要素。駆動が速すぎると活動が途切れず、雪崩が見分けられない）、p.23（SOC が論争になった理由。よい検証が難しく、確かな経験の証拠は限られる）。
+- Clauset, A., Shalizi, C. R. & Newman, M. E. J. (2009). Power-law distributions in empirical data. *SIAM Rev.* 51, 661–703. DOI: [10.1137/070710111](https://doi.org/10.1137/070710111)。台帳に行がある。手元の PDF は arXiv 0706.1062v1（2007）で、表紙に arXiv の番号があります。読んだ頁：p.1（最小二乗のあてはめは偏った推定を生む。24 のデータのうち、べき乗則と合うものも、退けられるものもある）。
+- Muñoz, M. A. (2018). Colloquium: Criticality and dynamical scaling in living systems. *Rev. Mod. Phys.* 90, 031001. DOI: [10.1103/RevModPhys.90.031001](https://doi.org/10.1103/RevModPhys.90.031001)。台帳に行がある。著者稿：https://arxiv.org/abs/1712.04499 。p.1 の要旨で、生き物が臨界点の近く、秩序と無秩序の中間で働くという仮説を「名高く、論争のある」ものとしています。
 
 **照合の状態**：Dickman ら 2000（arXiv 版）・Watkins ら 2016・Clauset ら（arXiv v1）は本文照合済。BTW 1987 は未照合（有料。Watkins の引用で二次経由）。BTW 1988 は、上げた人の分からない写しで pp.364–367 を読んだので、未照合としています。
 
@@ -110,14 +110,14 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Kauffman, S. A. (1986). Autocatalytic sets of proteins. *J. Theor. Biol.* 119, 1–24. DOI: [10.1016/S0022-5193(86)80047-9](https://doi.org/10.1016/S0022-5193(86)80047-9)（Crossref で題を確かめました。台帳 D29-S07 の題「Autocatalytic sets」は短すぎます）。Elsevier で有料。
-- Kauffman, S. A. (1993). *The Origins of Order*. Oxford UP。台帳 D29-S08。書籍で読んでいません。
-- Hordijk, W. & Steel, M. (2004). Detecting autocatalytic, self-sustaining sets in chemical reaction systems. *J. Theor. Biol.* 227, 451–461. DOI: [10.1016/j.jtbi.2003.11.020](https://doi.org/10.1016/j.jtbi.2003.11.020)（Crossref で題を確かめました。台帳 D29-S09 の題「Detecting autocatalytic sets」は違います）。著者（Steel）の大学の頁の写し：https://www.math.canterbury.ac.nz/~m.steel/Non_UC/files/research/autocatalytic-edited.pdf 。出版社の組版の校正刷り（ARTICLE IN PRESS）で、誌面の頁番号が無いので、写しの頁で控えました。読んだ頁：p.1（要旨。食物の源に支えられた自己触媒の系は生命の起源の大事な一歩だったかもしれない）、p.2（Kauffman のモデルでは触媒の確率が一定で、分子の種類が増えると一つの分子が触媒する反応の数が急に増える。Lifson（1997）の読みでは確率が反応の総数に反比例し、そのときは自己触媒集合ができるかは分からず、確率が十分低ければほぼ確実にできない）、p.3（RAF の定義と食物の集合 F）、p.8（触媒の度合い f(n) が小さいと RAF の現れる確率は無視できるほど小さく、1.25≦f(n)≦1.5 ほどで急に移り変わり、その後 1 に近づく）。
-- Hordijk, W., Hein, J. & Steel, M. (2010). Autocatalytic Sets and the Origin of Life. *Entropy* 12, 1733–1742. DOI: [10.3390/e12071733](https://doi.org/10.3390/e12071733)。台帳 D29-S10。オープンアクセス（MDPI の頁は自動取得で 403 でしたが、mdpi-res.com の PDF は取れました）。読んだ頁：p.1735（自己触媒集合はほぼ必ず現れるという主張は、触媒の働きが系の大きさに対して指数で増えるという現実的でない仮定を要する、と批判された）、p.1737（Kauffman の初めの主張は誤った議論に立っていた）、p.1738（触媒の働きは線形の増え方で足り、分子あたり 1〜2 の反応で RAF が現れる。これで Kauffman の主張を取り戻す）、p.1739（反応の速さや濃度の動きはまだ扱っていない）。
+- Kauffman, S. A. (1986). Autocatalytic sets of proteins. *J. Theor. Biol.* 119, 1–24. DOI: [10.1016/S0022-5193(86)80047-9](https://doi.org/10.1016/S0022-5193(86)80047-9)（Crossref で題を確かめました。台帳の「Kauffman 1986」の行の題「Autocatalytic sets」は短すぎます）。Elsevier で有料。
+- Kauffman, S. A. (1993). *The Origins of Order*. Oxford UP。台帳に行がある。書籍で読んでいません。
+- Hordijk, W. & Steel, M. (2004). Detecting autocatalytic, self-sustaining sets in chemical reaction systems. *J. Theor. Biol.* 227, 451–461. DOI: [10.1016/j.jtbi.2003.11.020](https://doi.org/10.1016/j.jtbi.2003.11.020)（Crossref で題を確かめました。台帳の「Hordijk & Steel 2004」の行の題「Detecting autocatalytic sets」は違います）。著者（Steel）の大学の頁の写し：https://www.math.canterbury.ac.nz/~m.steel/Non_UC/files/research/autocatalytic-edited.pdf 。出版社の組版の校正刷り（ARTICLE IN PRESS）で、誌面の頁番号が無いので、写しの頁で控えました。読んだ頁：p.1（要旨。食物の源に支えられた自己触媒の系は生命の起源の大事な一歩だったかもしれない）、p.2（Kauffman のモデルでは触媒の確率が一定で、分子の種類が増えると一つの分子が触媒する反応の数が急に増える。Lifson（1997）の読みでは確率が反応の総数に反比例し、そのときは自己触媒集合ができるかは分からず、確率が十分低ければほぼ確実にできない）、p.3（RAF の定義と食物の集合 F）、p.8（触媒の度合い f(n) が小さいと RAF の現れる確率は無視できるほど小さく、1.25≦f(n)≦1.5 ほどで急に移り変わり、その後 1 に近づく）。
+- Hordijk, W., Hein, J. & Steel, M. (2010). Autocatalytic Sets and the Origin of Life. *Entropy* 12, 1733–1742. DOI: [10.3390/e12071733](https://doi.org/10.3390/e12071733)。台帳に行がある。オープンアクセス（MDPI の頁は自動取得で 403 でしたが、mdpi-res.com の PDF は取れました）。読んだ頁：p.1735（自己触媒集合はほぼ必ず現れるという主張は、触媒の働きが系の大きさに対して指数で増えるという現実的でない仮定を要する、と批判された）、p.1737（Kauffman の初めの主張は誤った議論に立っていた）、p.1738（触媒の働きは線形の増え方で足り、分子あたり 1〜2 の反応で RAF が現れる。これで Kauffman の主張を取り戻す）、p.1739（反応の速さや濃度の動きはまだ扱っていない）。
 
 **照合の状態**：Hordijk & Steel 2004（著者の大学の頁の写し）と Hordijk ら 2010 は本文照合済。Kauffman 1986 は未照合（有料）。Kauffman の主張の中身は、Hordijk らのまとめ（二次）で読みました。
 
-**対立・衝突・統合の読み**：原典に書いてあるのは、閉じた集まりができるかどうかが、触媒の度合いという一つの量で決まり、その量のある幅で「ほとんど無い」から「ほぼ確実」へ急に移ることです（Hordijk & Steel p.8）。分かれ目の下では集まりは閉じず、至らない形です。この分野の中にも、はっきりした争いがあります。Kauffman の「ほぼ必ず現れる」は Lifson（1997）に、触媒の働きが指数で増える仮定を要すると批判され、Hordijk らが線形の増え方で足りると示して主張を取り戻しました（Hordijk ら 2010 pp.1735・1738）。Claude の読み替えでは、閉じた集まりは、外から得られる材料（食物）と、内で互いを作り合う関係の両方が揃ったときにだけ立ち上がります。原典は、RAF は生命の必要条件だが十分条件ではなく、濃度や化学量論、膜による閉じ込め、遺伝を扱っていない、と自分で限界を書いています（Hordijk ら 2010。精読ノート D29-S10 の引用を本文で確かめました）。
+**対立・衝突・統合の読み**：原典に書いてあるのは、閉じた集まりができるかどうかが、触媒の度合いという一つの量で決まり、その量のある幅で「ほとんど無い」から「ほぼ確実」へ急に移ることです（Hordijk & Steel p.8）。分かれ目の下では集まりは閉じず、至らない形です。この分野の中にも、はっきりした争いがあります。Kauffman の「ほぼ必ず現れる」は Lifson（1997）に、触媒の働きが指数で増える仮定を要すると批判され、Hordijk らが線形の増え方で足りると示して主張を取り戻しました（Hordijk ら 2010 pp.1735・1738）。Claude の読み替えでは、閉じた集まりは、外から得られる材料（食物）と、内で互いを作り合う関係の両方が揃ったときにだけ立ち上がります。原典は、RAF は生命の必要条件だが十分条件ではなく、濃度や化学量論、膜による閉じ込め、遺伝を扱っていない、と自分で限界を書いています（Hordijk ら 2010。精読ノート「Hordijk ら 2010」の引用を本文で確かめました）。
 
 報告は、食物の集合と RAF の「界面」を縁の構造的実現そのものと読み、「何が内で何が外か」を理論自体が定義している、と書いています（ja 124 行）。原典の食物の集合は、環境から自由に得られると仮定する分子の集まりで（Hordijk ら 2010 p.1735 付近、Hordijk & Steel p.3）、界面や境界の語は使っていません。界面と読むのは報告の読み替えです。
 
@@ -137,7 +137,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Haken, H. (1977). *Synergetics: An Introduction*. Springer（書籍）。第三版（1983）は台帳 D02-S07 で、手元の PDF は前付けだけです（[物理学の記録の 7](evidence-D02-physics.md)）。
+- Haken, H. (1977). *Synergetics: An Introduction*. Springer（書籍）。第三版（1983）は台帳の「Haken 1983」の行で、手元の PDF は前付けだけです（[物理学の記録の 7](evidence-D02-physics.md)）。
 - Haken, H. (1975). Cooperative phenomena in systems far from thermal equilibrium and in nonphysical systems. *Rev. Mod. Phys.* 47, 67–121. DOI: [10.1103/RevModPhys.47.67](https://doi.org/10.1103/RevModPhys.47.67)（Crossref で確かめました）。APS の PDF は自動取得で案内の頁を返しました（物理学の記録と同じ）。
 - Haken, H. (2007). Synergetics. *Scholarpedia* 2(1):1400。著者のまとめ直しで、物理学の記録が隷属原理の言い方だけを確かめています。この記録では、Scholarpedia の証明書が切れていて取得できませんでした。
 
@@ -159,8 +159,8 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Wilson, K. G. (1971). Renormalization Group and Critical Phenomena. I. *Phys. Rev. B* 4, 3174–3183. DOI: [10.1103/PhysRevB.4.3174](https://doi.org/10.1103/PhysRevB.4.3174)。APS で有料。物理学の記録の新しい原典 D02-S29。
-- Wilson, K. G. (1983). The renormalization group and critical phenomena（ノーベル講演、1982 年 12 月 8 日）. *Rev. Mod. Phys.* 55, 583–600. DOI: [10.1103/RevModPhys.55.583](https://doi.org/10.1103/RevModPhys.55.583)。https://www.nobelprize.org/uploads/2018/06/wilson-lecture-2.pdf 。物理学の記録の新しい原典 D02-S30。著者のまとめ直し。頁は講演集（Physics 1982）の頁です。読んだ頁：p.104（高温では熱のゆらぎが磁気の秩序を妨げる。冷やすと一つの向きのそろいが相関長まで届き、キュリー温度で相関長が無限になる）、pp.111–112（物理学の記録と同じ所。固定点が普遍性を説明する。固定点に達するのは臨界温度ちょうどのときだけ）。
+- Wilson, K. G. (1971). Renormalization Group and Critical Phenomena. I. *Phys. Rev. B* 4, 3174–3183. DOI: [10.1103/PhysRevB.4.3174](https://doi.org/10.1103/PhysRevB.4.3174)。APS で有料。物理学の記録の新しい原典（台帳の「Wilson 1971」の行）。
+- Wilson, K. G. (1983). The renormalization group and critical phenomena（ノーベル講演、1982 年 12 月 8 日）. *Rev. Mod. Phys.* 55, 583–600. DOI: [10.1103/RevModPhys.55.583](https://doi.org/10.1103/RevModPhys.55.583)。https://www.nobelprize.org/uploads/2018/06/wilson-lecture-2.pdf 。物理学の記録の新しい原典（台帳の「Wilson 1983」の行）。著者のまとめ直し。頁は講演集（Physics 1982）の頁です。読んだ頁：p.104（高温では熱のゆらぎが磁気の秩序を妨げる。冷やすと一つの向きのそろいが相関長まで届き、キュリー温度で相関長が無限になる）、pp.111–112（物理学の記録と同じ所。固定点が普遍性を説明する。固定点に達するのは臨界温度ちょうどのときだけ）。
 
 **照合の状態**：Wilson の講演は本文照合済（著者のまとめ直し。pp.104・111–112）。Wilson 1971 は未照合（有料）。くりこみ群の芯は[物理学の記録の 6](evidence-D02-physics.md)（Kadanoff 1966 は本文照合済）を参照しています。
 
@@ -185,7 +185,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 **一次情報**：
 
 - Broadbent, S. R. & Hammersley, J. M. (1957). Percolation processes: I. Crystals and mazes. *Math. Proc. Camb. Phil. Soc.* 53(3), 629–641. DOI: [10.1017/S0305004100032680](https://doi.org/10.1017/S0305004100032680)（Crossref で確かめました）。Cambridge Core の頁の要旨だけ読めました。PDF は有料です。要旨は、拡散の理論では流体のでたらめさが効くのに対し、ここでは媒体のでたらめさが効くと書き、例に溶質・電子・分子・共同体の病気を挙げています。
-- Newman, M. E. J. (2003). The structure and function of complex networks. *SIAM Rev.* 45, 167–256. DOI: [10.1137/S003614450342480](https://doi.org/10.1137/S003614450342480)。台帳 D29-S14。著者稿：https://arxiv.org/abs/cond-mat/0303516 。頁は arXiv 版の頁です。読んだ頁：p.21（でたらめなグラフは、成分がどれも小さい低い p の状態から、頂点の一定の割合が一つの巨大な成分にまとまる高い p の状態へ、相転移を示す）、p.15（Albert らの結果。インターネットは頂点がでたらめに壊れることには強いが、次数の高い頂点を狙って外すと、数 % で通信がほぼ壊れる）。
+- Newman, M. E. J. (2003). The structure and function of complex networks. *SIAM Rev.* 45, 167–256. DOI: [10.1137/S003614450342480](https://doi.org/10.1137/S003614450342480)。台帳に行がある。著者稿：https://arxiv.org/abs/cond-mat/0303516 。頁は arXiv 版の頁です。読んだ頁：p.21（でたらめなグラフは、成分がどれも小さい低い p の状態から、頂点の一定の割合が一つの巨大な成分にまとまる高い p の状態へ、相転移を示す）、p.15（Albert らの結果。インターネットは頂点がでたらめに壊れることには強いが、次数の高い頂点を狙って外すと、数 % で通信がほぼ壊れる）。
 - Stauffer & Aharony（1994）の教科書は読んでいません。
 
 **照合の状態**：Broadbent & Hammersley 1957 は要旨照合済。転移の構造は Newman 2003 の総説（二次資料）で読みました。
@@ -253,7 +253,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Langton, C. G. (1990). Computation at the edge of chaos: Phase transitions and emergent computation. *Physica D* 42, 12–37. DOI: [10.1016/0167-2789(90)90064-V](https://doi.org/10.1016/0167-2789(90)90064-V)（Crossref で確かめました）。台帳 D29-S15。台帳の取得先 OSTI（https://www.osti.gov/servlets/purl/7264125 、Los Alamos の報告 LA-UR-90-379）は、この日は 502 と接続の拒否で取れませんでした。Zenodo に上がっている誌面の写し（https://zenodo.org/records/1258375 。CC0 と表示されていますが、上げた人と権利は確かめられません）で読みました。頁は誌面の頁です。読んだ頁：p.12（要旨。情報の伝達・蓄積・変換に最もよい条件は相転移の近くにある）、p.31（情報の蓄積はエントロピーを下げ、伝達は上げる。計算には両方が要り、その兼ね合いは相転移の近くで最もよく取れる）、p.34（固体と流体は動力学の二つの普遍性のクラスで、相転移で分かれる。第三の道は、系が長い過渡に留まり、二つの行き着く先を避けること。停止問題は凍結の問題の一つの場合とみられる）、p.35（自然は条件を相転移の近くに保ち続けてはくれない。生き物の先駆けは自分の動力学の状態を制御する必要があった）。
+- Langton, C. G. (1990). Computation at the edge of chaos: Phase transitions and emergent computation. *Physica D* 42, 12–37. DOI: [10.1016/0167-2789(90)90064-V](https://doi.org/10.1016/0167-2789(90)90064-V)（Crossref で確かめました）。台帳に行がある。台帳の取得先 OSTI（https://www.osti.gov/servlets/purl/7264125 、Los Alamos の報告 LA-UR-90-379）は、この日は 502 と接続の拒否で取れませんでした。Zenodo に上がっている誌面の写し（https://zenodo.org/records/1258375 。CC0 と表示されていますが、上げた人と権利は確かめられません）で読みました。頁は誌面の頁です。読んだ頁：p.12（要旨。情報の伝達・蓄積・変換に最もよい条件は相転移の近くにある）、p.31（情報の蓄積はエントロピーを下げ、伝達は上げる。計算には両方が要り、その兼ね合いは相転移の近くで最もよく取れる）、p.34（固体と流体は動力学の二つの普遍性のクラスで、相転移で分かれる。第三の道は、系が長い過渡に留まり、二つの行き着く先を避けること。停止問題は凍結の問題の一つの場合とみられる）、p.35（自然は条件を相転移の近くに保ち続けてはくれない。生き物の先駆けは自分の動力学の状態を制御する必要があった）。
 - Mitchell, M., Hraber, P. T. & Crutchfield, J. P. (1993). Revisiting the Edge of Chaos: Evolving Cellular Automata to Perform Computations. Santa Fe Institute Working Paper 93-03-014（表紙に Complex Systems へ投稿とある）。https://arxiv.org/abs/adap-org/9303003 。頁は写しの頁です。読んだ頁：p.1（要旨。Packard の実験を繰り返し、まったく違う結果を得て、元の解釈は正しくないと書く。計算の戦略が現れて競い合うこと、対称性の破れがより高い計算の力への進化を妨げることを示す）、p.8（λ がふるまいをよく予言するのは規則の空間が大きいときだけだ、と Langton 自身が書いている）、p.29（集団が二つの山に分かれ、課題の対称性の最適でない破れが、遺伝的アルゴリズムの成功を左右する）、p.36（結論。早い世代での対称性の破れが、その後の最適化を妨げる。最適でない種分化が長い時間、安定か準安定に留まる）。
 
 **照合の状態**：Langton 1990 は未照合（権利未確認の写しで pp.12・31・34–35 を読んだ。OSTI の版は後で取り直す）。Mitchell ら 1993 は本文照合済（SFI 版 pp.1・8・29・36）。
@@ -341,11 +341,11 @@ Mitchell ら（1993）は、進化が計算をする規則を臨界の λ の近
 | カオスの縁 | 凍結・乱れ。最適でない種分化に留まる（Langton p.34、Mitchell ら p.36） | 秩序と乱れの間の転移、対称性の破れ方 |
 | ネットワーク科学 | 協力が育ちにくい。片方の要素だけでは失敗する（Watts & Strogatz p.442、Barabási & Albert p.6） | 近道の割合、成長と選好の有無 |
 
-D01・D02・D08・D25 と同じく、至らない形は原典の中心にありました。
+数学・物理学・神経科学・人類学・民族学と同じく、至らない形は原典の中心にありました。
 
 ### テンプレート由来の表示
 
-「立ち位置明示」（3 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6（構造再読）」「Phase 7（横断統合）」（28〜30 行）、「方法論的開示（S60）」（42 行）、「温度帯の分布」（84 行）、「安全弁」（88〜90 行）、「結びの温度開示」「温度帯」（265〜267 行）、「Colophon」の generator_model（277〜287 行）。47 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（writing.md §1-1・§1-8）。en 81・89・97 行などの「CX-004」のような番号も LLM の記号です。D01・D02・D22 と同じく、テンプレートで一度に直します（`cs/transform/domains/reader-rules/reader-rules-creation.md`）。
+「立ち位置明示」（3 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6（構造再読）」「Phase 7（横断統合）」（28〜30 行）、「方法論的開示（S60）」（42 行）、「温度帯の分布」（84 行）、「安全弁」（88〜90 行）、「結びの温度開示」「温度帯」（265〜267 行）、「Colophon」の generator_model（277〜287 行）。47 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（書き方の規約 §1-1・§1-8）。en 81・89・97 行などの「CX-004」のような番号も LLM の記号です。数学・物理学・経営学と同じく、テンプレートで一度に直します（旧い規則（創造とはの読み手の規則））。
 
 ### 誤りの出どころ
 
@@ -358,11 +358,11 @@ D01・D02・D08・D25 と同じく、至らない形は原典の中心にあり�
 | 縁の3条件、「10件中4件」 | 退避版の縁フラグ（114・190・230・272 行、418〜422 行）、phase7 79 行 |
 | 活性化因子・阻害因子を Turing に帰す | 退避版 304 行・317 行、phase6 75 行 |
 | λ が「信頼性の低い予測子」、トートロジー | 退避版 342 行・357 行、phase5 110 行、phase6 83 行 |
-| Broido & Clauset、Battiston | 退避版 73 行・370 行、DR-D29 176・196・257 行 |
+| Broido & Clauset、Battiston | 退避版 73 行・370 行、2026-02 の DR 176・196・257 行 |
 | RAF を Kauffman に帰す | 退避版 101〜128 行の EV-CX-003 |
 | テンプレートの表示 | 報告のテンプレート |
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 E（断定・看板・「最も」）：「5段階との構造対応が特に高い領域」（86 行）、「5段階の循環構造と最も整合する理論の一つ」（114 行）、「臨界点…縁に対応する強度は、本調査で最も高いもののひとつ」（134 行）、「縁の最も純粋な数学的モデル」（146 行）、「縁と渦の関係の最も明示的な記述」（156 行）、「従属原理は…最も明示的に記述する理論」（176 行）、pres 114 行「最も確定的な知見は、複雑系科学が『縁の学問』であるという点です」。
 - 型 H（原典に無い体系）：「縁の5つの実現型」（221〜231 行）、「束の多型性」（210〜219 行）、「縁の3条件」（269 行）。
@@ -371,67 +371,59 @@ D01・D02・D08・D25 と同じく、至らない形は原典の中心にあり�
 
 ### 精読ノートと wiki・台帳の誤り（司令塔が直す）
 
-- `cs/knowledge/raw/manifest.md` D29-S03 の行：題が「Self-Organized Criticality」。正しくは「Self-organized criticality: An explanation of the 1/f noise」（Crossref）。
-- 同 D29-S07 の行：題が「Autocatalytic sets」。正しくは「Autocatalytic sets of proteins」（Crossref）。
-- 同 D29-S09 の行：題が「Detecting autocatalytic sets」。正しくは「Detecting autocatalytic, self-sustaining sets in chemical reaction systems」（Crossref・著者の写しの表紙）。
-- 同 D29-S06 の行：取得版を「CMU tech report tr853, 2007 author version」とするが、手元の PDF の表紙は arXiv:0706.1062v1。
-- 同 D29-S04 の行：OA の取得先が psychsafety.com（著者・出版社のサイトでない）。手元の PDF には ResearchGate の表紙が付く。
-- 同 D29-S10・S11 の行：状態が raw-confirmed だが、local_file が「—」。
-- `pd/wiki/sources/D29_bak-tang-wiesenfeld_1988_self-organized-criticality.md` 81 行：1987 年の題が「An Explanation of 1/f Noise」。正しくは「An explanation of the 1/f noise」。
-- `cs/knowledge/source-notes/D29/D29-S13_munoz-2018-criticality-living-systems.md` 26 行：引用が「hypothesis conjectures that」。arXiv 版 p.1 は「hypothesis suggests that」。
-- `cs/knowledge/source-notes/D29/D29-S15_langton-1990.md` 48 行・50 行：頁を p.16 とするが、誌面では p.25（Physica D の頁。ノートが OSTI の報告の頁で書いた可能性はあるが、確かめていない）。
-- `pd/wiki/sources/D29_dickman-munoz-vespignani-zapperi_2000_paths-self-organized-criticality.md` 62 行：引用の頭が「SOC refers neither」。arXiv 版 p.18 は「"self-organized criticality" refers neither」で、略した語を引用符の中に入れている。
+- 台帳の「Bak ら 1987」の行：題が「Self-Organized Criticality」。正しくは「Self-organized criticality: An explanation of the 1/f noise」（Crossref）。
+- 台帳の「Kauffman 1986」の行：題が「Autocatalytic sets」。正しくは「Autocatalytic sets of proteins」（Crossref）。
+- 台帳の「Hordijk & Steel 2004」の行：題が「Detecting autocatalytic sets」。正しくは「Detecting autocatalytic, self-sustaining sets in chemical reaction systems」（Crossref・著者の写しの表紙）。
+- 台帳の「Clauset ら 2009」の行：取得版を「CMU tech report tr853, 2007 author version」とするが、手元の PDF の表紙は arXiv:0706.1062v1。
+- 台帳の「Bak ら 1988」の行：OA の取得先が psychsafety.com（著者・出版社のサイトでない）。手元の PDF には ResearchGate の表紙が付く。
+- 台帳の「Hordijk ら 2010」の行：状態が「手元に保存した」だが、local_file が「—」。
+- wiki の頁「Bak, Tang & Wiesenfeld 1988」 81 行：1987 年の題が「An Explanation of 1/f Noise」。正しくは「An explanation of the 1/f noise」。
+- 精読ノート「Munoz 2018」 26 行：引用が「hypothesis conjectures that」。arXiv 版 p.1 は「hypothesis suggests that」。
+- 精読ノート「Langton 1990」 48 行・50 行：頁を p.16 とするが、誌面では p.25（Physica D の頁。ノートが OSTI の報告の頁で書いた可能性はあるが、確かめていない）。
+- wiki の頁「Dickman ら 2000」 62 行：引用の頭が「SOC refers neither」。arXiv 版 p.18 は「"self-organized criticality" refers neither」で、略した語を引用符の中に入れている。
 
 ## 判断が要るもの
 
-pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは `docs/cs-review/README.md` の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
+pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは調べ方の計画と規約の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
 
-- BTW 1988 の手元の PDF（ResearchGate の表紙つき）と Langton 1990 の Zenodo の写し（CC0 と表示）は、上げた人と権利が確かめられないので、archive.org の個人の写しと同じ扱いにし、「未照合（読んだ頁）」と書きました（`docs/cs-review/README.md`「規約で決めたこと」の archive.org の行、`sources.md` §5-8）。予想：pjdhiro も同じ扱いを選ぶ見込みです（stance 2-6 誠実さ）。Langton は OSTI の版が取れれば本文照合済にできます。
+- BTW 1988 の手元の PDF（ResearchGate の表紙つき）と Langton 1990 の Zenodo の写し（CC0 と表示）は、上げた人と権利が確かめられないので、archive.org の個人の写しと同じ扱いにし、「未照合（読んだ頁）」と書きました（調べ方の計画と規約「規約で決めたこと」の archive.org の行、調べ方の規約 §5-8）。予想：pjdhiro も同じ扱いを選ぶ見込みです（stance 2-6 誠実さ）。Langton は OSTI の版が取れれば本文照合済にできます。
 - Turing（1952）と Watts & Strogatz（1998）は、大学の授業の頁に置かれた誌面の写しで読み、本文照合済にしました（「規約で決めたこと」2026-11-09 の行）。
 - SOC が自己調整か、隠れた調整か（Dickman ら 2000）は、研究の一線として書き、報告の「自己組織化」の主張を退けてはいません。物理の対象に善悪は無いので、「悪い統合」の行は置いていません。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-manifest は書き換えていません。番号は台帳と同じ形で、D29-S16 から振りました。Wilson の講演と 1971 年の論文、Haken の 1975 年の総説と Scholarpedia は、物理学の記録の案（D02-S29・S30・S32・S33）と同じ文献なので、行を足さずにそちらを参照します。
+台帳は書き換えていません。Wilson の講演と 1971 年の論文、Haken の 1975 年の総説と Scholarpedia は、物理学の記録の案と同じ文献なので、行を足さずにそちらを参照します。
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D29-S16 | Turing, A. M. (1952). The chemical basis of morphogenesis. *Phil. Trans. R. Soc. Lond. B* 237(641), 37–72. DOI 10.1098/rstb.1952.0012 | https://www.dna.caltech.edu/courses/cs191/paperscs191/turing.pdf （授業用の写し。JSTOR の誌面）。Royal Society の PDF は確認画面 | url-verified（授業用の写し） |
-| D29-S17 | Broadbent, S. R. & Hammersley, J. M. (1957). Percolation processes: I. Crystals and mazes. *Math. Proc. Camb. Phil. Soc.* 53(3), 629–641. DOI 10.1017/S0305004100032680 | Cambridge Core（要旨だけ。PDF は有料） | citation-only（要旨照合済） |
-| D29-S18 | Varela, F. G., Maturana, H. R. & Uribe, R. (1974). Autopoiesis: The organization of living systems, its characterization and a model. *BioSystems* 5(4), 187–196. DOI 10.1016/0303-2647(74)90031-8 | Elsevier（有料） | citation-only |
-| D29-S19 | Maturana, H. R. & Varela, F. J. (1980). *Autopoiesis and Cognition: The Realization of the Living*. Reidel | 書籍 | citation-only [no-oa] |
-| D29-S20 | Mitchell, M., Hraber, P. T. & Crutchfield, J. P. (1993). Revisiting the Edge of Chaos: Evolving Cellular Automata to Perform Computations. Santa Fe Institute Working Paper 93-03-014 | https://arxiv.org/abs/adap-org/9303003 | url-verified |
-| D29-S21 | Watts, D. J. & Strogatz, S. H. (1998). Collective dynamics of 'small-world' networks. *Nature* 393, 440–442. DOI 10.1038/30918 | https://snap.stanford.edu/class/cs224w-readings/watts98smallworld.pdf （授業用の写し。誌面）。Nature の PDF はログインの頁 | url-verified（授業用の写し） |
-| D29-S22 | Barabási, A.-L. & Albert, R. (1999). Emergence of Scaling in Random Networks. *Science* 286, 509–512. DOI 10.1126/science.286.5439.509 | https://arxiv.org/abs/cond-mat/9910332 （著者稿） | url-verified（著者稿） |
-| D29-S23 | Broido, A. D. & Clauset, A. (2019). Scale-free networks are rare. *Nat. Commun.* 10. DOI 10.1038/s41467-019-08746-5 | https://arxiv.org/abs/1801.03400 （著者稿）。出版社の版もオープンアクセス | url-verified |
-| D29-S24 | Gierer, A. & Meinhardt, H. (1972). A theory of biological pattern formation. *Kybernetik* 12, 30–39. DOI 10.1007/BF00289234 | Springer（取得を試していない） | citation-only |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| Turing, A. M. (1952). The chemical basis of morphogenesis. *Phil. Trans. R. Soc. Lond. B* 237(641), 37–72. DOI 10.1098/rstb.1952.0012 | https://www.dna.caltech.edu/courses/cs191/paperscs191/turing.pdf （授業用の写し。JSTOR の誌面）。Royal Society の PDF は確認画面 | 取得先を確かめた（授業用の写し） |
+| Broadbent, S. R. & Hammersley, J. M. (1957). Percolation processes: I. Crystals and mazes. *Math. Proc. Camb. Phil. Soc.* 53(3), 629–641. DOI 10.1017/S0305004100032680 | Cambridge Core（要旨だけ。PDF は有料） | 書誌だけ（要旨照合済） |
+| Varela, F. G., Maturana, H. R. & Uribe, R. (1974). Autopoiesis: The organization of living systems, its characterization and a model. *BioSystems* 5(4), 187–196. DOI 10.1016/0303-2647(74)90031-8 | Elsevier（有料） | 書誌だけ |
+| Maturana, H. R. & Varela, F. J. (1980). *Autopoiesis and Cognition: The Realization of the Living*. Reidel | 書籍 | 書誌だけ [no-oa] |
+| Mitchell, M., Hraber, P. T. & Crutchfield, J. P. (1993). Revisiting the Edge of Chaos: Evolving Cellular Automata to Perform Computations. Santa Fe Institute Working Paper 93-03-014 | https://arxiv.org/abs/adap-org/9303003 | 取得先を確かめた |
+| Watts, D. J. & Strogatz, S. H. (1998). Collective dynamics of 'small-world' networks. *Nature* 393, 440–442. DOI 10.1038/30918 | https://snap.stanford.edu/class/cs224w-readings/watts98smallworld.pdf （授業用の写し。誌面）。Nature の PDF はログインの頁 | 取得先を確かめた（授業用の写し） |
+| Barabási, A.-L. & Albert, R. (1999). Emergence of Scaling in Random Networks. *Science* 286, 509–512. DOI 10.1126/science.286.5439.509 | https://arxiv.org/abs/cond-mat/9910332 （著者稿） | 取得先を確かめた（著者稿） |
+| Broido, A. D. & Clauset, A. (2019). Scale-free networks are rare. *Nat. Commun.* 10. DOI 10.1038/s41467-019-08746-5 | https://arxiv.org/abs/1801.03400 （著者稿）。出版社の版もオープンアクセス | 取得先を確かめた |
+| Gierer, A. & Meinhardt, H. (1972). A theory of biological pattern formation. *Kybernetik* 12, 30–39. DOI 10.1007/BF00289234 | Springer（取得を試していない） | 書誌だけ |
 
 既存の行に書き足す案：
 
-- D29-S03（BTW 1987）：題を「Self-organized criticality: An explanation of the 1/f noise」に。APS の PDF は自動取得で案内の頁。
-- D29-S04（BTW 1988）：手元の PDF は ResearchGate の表紙つきの誌面の写しで、上げた人は不明。取得先の psychsafety.com は第三者のサイト。
-- D29-S06（Clauset ら）：手元の PDF は arXiv:0706.1062v1。
-- D29-S07（Kauffman 1986）：題を「Autocatalytic sets of proteins」に。
-- D29-S09（Hordijk & Steel 2004）：題を「Detecting autocatalytic, self-sustaining sets in chemical reaction systems」に。著者の頁の写しは出版社の校正刷りで、誌面の頁番号が無い。
-- D29-S10（Hordijk ら 2010）：https://mdpi-res.com/d_attachment/entropy/entropy-12-01733/article_deploy/entropy-12-01733.pdf で PDF が取れた（MDPI の頁は 403）。
-- D29-S15（Langton 1990）：OSTI は 2026-11-09 に 502 と接続の拒否。誌面の写しが Zenodo（records/1258375、CC0 と表示、権利未確認）にある。
+- 台帳の「Bak ら 1987」の行（BTW 1987）：題を「Self-organized criticality: An explanation of the 1/f noise」に。APS の PDF は自動取得で案内の頁。
+- 台帳の「Bak ら 1988」の行（BTW 1988）：手元の PDF は ResearchGate の表紙つきの誌面の写しで、上げた人は不明。取得先の psychsafety.com は第三者のサイト。
+- 台帳の「Clauset ら 2009」の行（Clauset ら）：手元の PDF は arXiv:0706.1062v1。
+- 台帳の「Kauffman 1986」の行（Kauffman 1986）：題を「Autocatalytic sets of proteins」に。
+- 台帳の「Hordijk & Steel 2004」の行（Hordijk & Steel 2004）：題を「Detecting autocatalytic, self-sustaining sets in chemical reaction systems」に。著者の頁の写しは出版社の校正刷りで、誌面の頁番号が無い。
+- 台帳の「Hordijk ら 2010」の行（Hordijk ら 2010）：https://mdpi-res.com/d_attachment/entropy/entropy-12-01733/article_deploy/entropy-12-01733.pdf で PDF が取れた（MDPI の頁は 403）。
+- 台帳の「Langton 1990」の行（Langton 1990）：OSTI は 2026-11-09 に 502 と接続の拒否。誌面の写しが Zenodo（records/1258375、CC0 と表示、権利未確認）にある。
 
 ## ブラウザでの保存が要る PDF
 
-| 台帳の行 | 文献 | ダウンロード先 | 保存名の案 |
-|---|---|---|---|
-| D29-S03 | Bak, Tang & Wiesenfeld (1987) *PRL* 59, 381 | https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.59.381 | `D29_bak-tang-wiesenfeld_1987_self-organized-criticality-1f-noise.pdf` |
-| D29-S07 | Kauffman (1986) *J. Theor. Biol.* 119, 1 | https://doi.org/10.1016/S0022-5193(86)80047-9 | `D29_kauffman_1986_autocatalytic-sets-of-proteins.pdf` |
-| D29-S16 | Turing (1952) *Phil. Trans. R. Soc. B* 237, 37 | https://royalsocietypublishing.org/doi/pdf/10.1098/rstb.1952.0012 | `D29_turing_1952_chemical-basis-of-morphogenesis.pdf` |
-| D29-S17 | Broadbent & Hammersley (1957) *Proc. Camb. Phil. Soc.* 53, 629 | https://doi.org/10.1017/S0305004100032680 | `D29_broadbent-hammersley_1957_percolation-processes.pdf` |
-| D29-S18 | Varela, Maturana & Uribe (1974) *BioSystems* 5, 187 | https://doi.org/10.1016/0303-2647(74)90031-8 | `D29_varela-maturana-uribe_1974_autopoiesis.pdf` |
-| D29-S21 | Watts & Strogatz (1998) *Nature* 393, 440 | https://www.nature.com/articles/30918.pdf | `D29_watts-strogatz_1998_small-world-networks.pdf` |
-| D29-S15 | Langton (1990) LA-UR-90-379 | https://www.osti.gov/servlets/purl/7264125 （確認画面ではなく接続の失敗。日をおいて取り直す） | `D29_langton_1990_computation-at-edge-of-chaos.pdf` |
+自動で取れなかった原典のうち、ブラウザでの保存を頼むものは、作業の記録（[Issue #73](https://github.com/uminomae/project-design-theory/issues/73)）の表にまとめました。
 
 ## 手順について分かったこと
 
 - 複雑系の原典は、分かれ目の上と下で何が起きるかを、式や数で書いていました（勾配の臨界値、密度 ζc、触媒の度合い 1.25〜1.5、臨界温度、パラメータ I の符号）。下で起きることは「何も起きない」でなく、減衰・吸収状態・閉じない集まり・均一のまま、という形で書かれていて、至らない形の材料になりました。
 - 報告の横断の節は、調べた跡（phase5〜7）が作った分け方を、そのまま本文に移したものでした。原典で確かめると、報告が数えた「拮抗」と、原典に書かれた兼ね合いは、半分ほどしか重なりませんでした。
 - 有料の原論文は、同じ分野の総説（Watkins ら・Dickman ら・Newman）と著者稿（arXiv）、著者の大学の頁、授業の頁で、論の芯に当たれました。物理学と同じく、ノーベル講演は著者のまとめ直しとして使えました。
-- 台帳の題が、Crossref の題と三つ合いませんでした（S03・S07・S09）。手元の PDF の表紙と Crossref の両方で突き合わせる手順が、この分野でも要りました。
+- 台帳の題が、Crossref の題と三つ合いませんでした（「Bak ら 1987」・「Kauffman 1986」・「Hordijk & Steel 2004」）。手元の PDF の表紙と Crossref の両方で突き合わせる手順が、この分野でも要りました。
 - OSTI のように台帳が OA と書く取得先が、その日は落ちていることがあります。落ちたのか確認画面なのかを分けて書きました。

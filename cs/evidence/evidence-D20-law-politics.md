@@ -14,13 +14,13 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D20-law-p
 
 法学・政治学で原典を読めた論は、対立や衝突を過程の中に書いているものが多くありました。オストロム（1990）は、ロサンゼルスの地下水盆で、汲み上げの競争が裁判に持ち込まれ、裁判所の命令の影の下で利用者が自分たちに制約を課す取り決めに至った経緯を書いています。同じ本の第 5 章は、トルコの漁場のように統合に至らなかった例を並べ、設計原理がいくつ当てはまるかで、長く続いた例・もろい例・失敗した例が分かれると書いています。シエイエス（1789）は、憲法を「pouvoir constituant」の仕事とし、身分どうしの「大きな訴訟」は国民が裁くと書きますが、特権身分を国民の外の敵として除く形をとっています。これは、包むよりも片方が勝つ形に近い一面です。憲法づくりの実務の手引き（International IDEA 2011）は、南アフリカの二度の失敗した会議、ケニアの国民投票での否決、グアテマラの頓挫を書き、新しい制度の失敗は紛争を呼び戻すと書いています。クラズナー（1982）は、レジームの中の変化・レジームの変化・レジームの弱まりを分け、植民地の体制の規範が、それを支えた力の衰えとともに崩れたことを挙げています。一方、ハート・イーストン・シュミット・コヘイン・ロールズ・ハーバーマス・キングダン・タイテルは、書籍の本文を開けず、未照合のままです。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D20-law-politics.md`、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論を取り上げ、3 つを「強い対応」としています。報告は、衝突を「波」に当て、「縁」を手続・設計原理・討議の条件として読んでいます。統合に至らない形は「縁の失敗モード」「不正義」「スコープ外」として、過程の外に置いています（ja 172 行・232〜236 行）。報告の表には、2026-07-03 に「接地の注記」が足されました（ja 69 行、en 57 行）。注記は「対応表は本モデル側の解釈的な対応づけで、原典の精読による検証を主張するものではない」と書きます。ただし注記は表にだけかかり、本文の「事実として」の段と、方法の節の「一次文献の特定箇所を参照し、理論の内在的構造を確認しました」（ja 28 行）は残っています。今の規約（`docs/rules/sources.md` §3）は、出典ごとに照合の状態を書くことを求めるので、表に一括でかける注記とは書き方が違います。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
+今の公開報告（「30 領域調査報告」の法学・政治学の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論を取り上げ、3 つを「強い対応」としています。報告は、衝突を「波」に当て、「縁」を手続・設計原理・討議の条件として読んでいます。統合に至らない形は「縁の失敗モード」「不正義」「スコープ外」として、過程の外に置いています（ja 172 行・232〜236 行）。報告の表には、2026-07-03 に「接地の注記」が足されました（ja 69 行、en 57 行）。注記は「対応表は本モデル側の解釈的な対応づけで、原典の精読による検証を主張するものではない」と書きます。ただし注記は表にだけかかり、本文の「事実として」の段と、方法の節の「一次文献の特定箇所を参照し、理論の内在的構造を確認しました」（ja 28 行）は残っています。今の規約（調べ方の規約 §3）は、出典ごとに照合の状態を書くことを求めるので、表に一括でかける注記とは書き方が違います。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D20-law-politics.md) にあります。退避版の判定（Accept・🔴・採用確定 など）は、今の照合の状態の根拠にしていません。
 
 ## 一面の表
 
-照合の状態は `docs/rules/sources.md` §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。 この表で、原典の構造を対立・衝突・統合と呼ぶことと、括弧の中の並べ方の名（片方の勝利・固着など）は、Claude の読み替えです。
+照合の状態は調べ方の規約 §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。 この表で、原典の構造を対立・衝突・統合と呼ぶことと、括弧の中の並べ方の名（片方の勝利・固着など）は、Claude の読み替えです。
 
 | 論 | 対立 | 衝突 | 統合／新たな安定、または統合に至らずにどう終わったか | 論の微細さ | 照合の状態 |
 |---|---|---|---|---|---|
@@ -45,7 +45,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨（報告による。未照合）**：法体系は、義務を課す一次ルールと、認定・変更・裁定の権能を与える二次ルールの結合として描かれる。一次ルールだけの社会には、不確実性・静態性・非効率性の三つの欠陥がある。承認のルールが、何が法かを決める究極の基準になる。
 
-**一次情報**：Hart, H. L. A. (1961). *The Concept of Law*. Oxford: Clarendon Press. manifest D20-S01（citation-only）。archive.org の conceptoflaw00hart は貸し出しだけの資料で（access-restricted、2026-11-08 に metadata で確かめた）、文字の層を読めませんでした。学術検索と一般の検索で第 5 章の写しを探しましたが、見つかったのは解説と要約だけでした。著者の論文版も見つけていません。
+**一次情報**：Hart, H. L. A. (1961). *The Concept of Law*. Oxford: Clarendon Press. 台帳に行がある（書誌だけ）。archive.org の conceptoflaw00hart は貸し出しだけの資料で（access-restricted、2026-11-08 に metadata で確かめた）、文字の層を読めませんでした。学術検索と一般の検索で第 5 章の写しを探しましたが、見つかったのは解説と要約だけでした。著者の論文版も見つけていません。
 
 **照合の状態**：未照合（書籍）。
 
@@ -61,7 +61,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨（報告による。未照合）**：政治システムは、要求と支持を入力として受け、決定を出力し、その帰結が次の入力に返る。システムの存続には、特定の政策への支持と別に、システムそのものへの「拡散的支持」が要る。
 
-**一次情報**：Easton, D. (1965). *A Systems Analysis of Political Life*. New York: Wiley. manifest D20-S02（citation-only）。archive.org の systemsanalysiso00east は貸し出しだけの資料でした（2026-11-08）。台帳の行には、4 月に六つの経路（論文版の 1957 年の World Politics を含む）が失敗した記録があり、今回は繰り返していません。
+**一次情報**：Easton, D. (1965). *A Systems Analysis of Political Life*. New York: Wiley. 台帳に行がある（書誌だけ）。archive.org の systemsanalysiso00east は貸し出しだけの資料でした（2026-11-08）。台帳の行には、4 月に六つの経路（論文版の 1957 年の World Politics を含む）が失敗した記録があり、今回は繰り返していません。
 
 **照合の状態**：未照合（書籍）。
 
@@ -78,9 +78,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨**：共有資源（CPR）は、国家の管理か市場の私有化かの二つにしか解けない、という見方に対し、利用者が自分たちで規則をつくり、長く資源を保ってきた例を示す。長く続いた例に共通する七つの設計原理と、大きく複雑な例に当てはまる八つ目を挙げる。同時に、制度が変わる過程（第 4 章）と、失敗ともろい例（第 5 章）を分析する。
 
-**一次情報**：Ostrom, E. (1990). *Governing the Commons: The Evolution of Institutions for Collective Action*. Cambridge University Press. DOI 10.1017/CBO9780511807763（Crossref で題・著者・年が一致）。manifest D20-S03。手元の PDF（`cs/knowledge/raw/D20_ostrom_1990_governing-the-commons.pdf`、Internet Archive の公開の写し）。先頭は %PDF で、表紙と奥付（First published 1990、ISBN 0 521 40599 8）が台帳の書誌と一致しました。2026-11-09 に写しを上げた人を確かめると、手元の PDF は、利用者が上げた二つの資料（`governingthecommons`、2020 年に community の集まりへ。`governing-the-commons`、2025 年に folkscanomy の集まりへ）の PDF と MD5 が一致し、図書館の走査ではありませんでした。図書館の走査（`governingcommons0000ostr`）は貸し出しだけです。上げた人と権利は確かめていません。読んだ頁：p.1・pp.89–90（表 3.1）・pp.110–112・pp.143–146・pp.178–181（表 5.2 は p.180）。
+**一次情報**：Ostrom, E. (1990). *Governing the Commons: The Evolution of Institutions for Collective Action*. Cambridge University Press. DOI 10.1017/CBO9780511807763（Crossref で題・著者・年が一致）。台帳に行がある。手元の PDF（手元の PDF、Internet Archive の公開の写し）。先頭は %PDF で、表紙と奥付（First published 1990、ISBN 0 521 40599 8）が台帳の書誌と一致しました。2026-11-09 に写しを上げた人を確かめると、手元の PDF は、利用者が上げた二つの資料（`governingthecommons`、2020 年に community の集まりへ。`governing-the-commons`、2025 年に folkscanomy の集まりへ）の PDF と MD5 が一致し、図書館の走査ではありませんでした。図書館の走査（`governingcommons0000ostr`）は貸し出しだけです。上げた人と権利は確かめていません。読んだ頁：p.1・pp.89–90（表 3.1）・pp.110–112・pp.143–146・pp.178–181（表 5.2 は p.180）。
 
-**照合の状態**：未照合（利用者が上げた写しで、上の頁を読んだ。2026-11-09 の一巡で、本文照合済から改めた。`docs/cs-review/README.md`「規約で決めたこと」D14・D18 の行）。
+**照合の状態**：未照合（利用者が上げた写しで、上の頁を読んだ。2026-11-09 の一巡で、本文照合済から改めた。調べ方の計画と規約「規約で決めたこと」心理学・社会学の行）。
 
 **原典に書いてあること**：
 
@@ -109,8 +109,8 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Sieyès, E. J. *Qu'est-ce que le Tiers État?*（初版 1789 年 1 月）。manifest D20-S04（url-verified）。https://archive.org/download/questcequeletie00sieygoog/questcequeletie00sieygoog.pdf （Google の走査、パブリックドメイン）を取り、先頭が %PDF であることと、表紙が 1822 年の新版（Paris, Alexandre Correard、Morellet の注 23 つき）であることを確かめました。PDF に文字の層が無いので、archive.org の OCR の文字（`_djvu.txt`）で読み、頁は走査の画像で確かめました。読んだ頁：pp.157–162・pp.166–168・p.201・p.225（p.158・p.160・p.201・p.225 は画像で頁を確かめ、ほかは前後から推定）。該当の箇所は、章の見出しが OCR で読めず、第 4 章の §7 が p.145 にあることから、第 5 章「Ce qu'on aurait dû faire」と推定しました。1789 年の初版の文面と一致するかは確かめていません。
-- Schmitt, C. (1928). *Verfassungslehre*. Duncker & Humblot. manifest D20-S05（blocked-access）。OA の版は無く、開けていません。
+- Sieyès, E. J. *Qu'est-ce que le Tiers État?*（初版 1789 年 1 月）。台帳に行がある（取得先を確かめた）。https://archive.org/download/questcequeletie00sieygoog/questcequeletie00sieygoog.pdf （Google の走査、パブリックドメイン）を取り、先頭が %PDF であることと、表紙が 1822 年の新版（Paris, Alexandre Correard、Morellet の注 23 つき）であることを確かめました。PDF に文字の層が無いので、archive.org の OCR の文字（`_djvu.txt`）で読み、頁は走査の画像で確かめました。読んだ頁：pp.157–162・pp.166–168・p.201・p.225（p.158・p.160・p.201・p.225 は画像で頁を確かめ、ほかは前後から推定）。該当の箇所は、章の見出しが OCR で読めず、第 4 章の §7 が p.145 にあることから、第 5 章「Ce qu'on aurait dû faire」と推定しました。1789 年の初版の文面と一致するかは確かめていません。
+- Schmitt, C. (1928). *Verfassungslehre*. Duncker & Humblot. 台帳に行がある（自動では取れない）。OA の版は無く、開けていません。
 
 **照合の状態**：シエイエスは本文照合済（1822 年版）。シュミットは未照合（書籍）。
 
@@ -139,7 +139,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨**：憲法づくりは、憲法の草案を書く時期だけでなく、長い歴史の過程として見る。変える必要と範囲の合意、包摂的な手続と制度の設置、批准、実施の段を含む。分極した社会や紛争後の社会での実務を、例とともに書く。
 
-**一次情報**：Böckenförde, M., Hedling, N. & Wahiu, W. (2011). *A Practical Guide to Constitution Building*. Stockholm: International IDEA. manifest D20-S06。手元の PDF（`cs/knowledge/raw/D20_idea_2011_practical-guide-constitution-building.pdf`、IDEA の公式の PDF）。先頭は %PDF で、表紙と著作権の頁（© International IDEA, 2011）が一致しました。頁は序章の頁で、PDF の頁を添えます。読んだ頁：Foreword（PDF 3 頁目）・序章 pp.2–3（PDF 10–11）・pp.6–8（PDF 14–16）。
+**一次情報**：Böckenförde, M., Hedling, N. & Wahiu, W. (2011). *A Practical Guide to Constitution Building*. Stockholm: International IDEA. 台帳に行がある。手元の PDF（手元の PDF、IDEA の公式の PDF）。先頭は %PDF で、表紙と著作権の頁（© International IDEA, 2011）が一致しました。頁は序章の頁で、PDF の頁を添えます。読んだ頁：Foreword（PDF 3 頁目）・序章 pp.2–3（PDF 10–11）・pp.6–8（PDF 14–16）。
 
 **照合の状態**：本文照合済。
 
@@ -168,8 +168,8 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- UNCITRAL (2021). *UNCITRAL Mediation Rules (2021)*. manifest D20-S07。手元の PDF（`cs/knowledge/raw/D20_uncitral_2021_mediation-rules.pdf`、uncitral.un.org の公式）。先頭は %PDF で、表紙の題が一致しました。読んだ頁：p.v（総会決議の前文）・p.6（第 9 条・第 10 条）・p.9（附属書の条項の例）。
-- United Nations (2018). *United Nations Convention on International Settlement Agreements Resulting from Mediation*. manifest D20-S08。手元の PDF（`cs/knowledge/raw/D20_singapore-convention_2018_mediation.pdf`）。表紙の題が一致しました。読んだ頁：前文・p.6（第 5 条）。
+- UNCITRAL (2021). *UNCITRAL Mediation Rules (2021)*. 台帳に行がある。手元の PDF（手元の PDF、uncitral.un.org の公式）。先頭は %PDF で、表紙の題が一致しました。読んだ頁：p.v（総会決議の前文）・p.6（第 9 条・第 10 条）・p.9（附属書の条項の例）。
+- United Nations (2018). *United Nations Convention on International Settlement Agreements Resulting from Mediation*. 台帳に行がある。手元の PDF。表紙の題が一致しました。読んだ頁：前文・p.6（第 5 条）。
 
 **照合の状態**：本文照合済。
 
@@ -187,7 +187,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 | 今の報告の行 | 判定 | 重さ | 中身 |
 |---|---|---|---|
-| ja 140 行「UNCITRALモデル法は、調停が『紛争の異なる段階で成功裏に利用可能』であり」 | 帰属違い | 高 | この句は手元の規則にも条約にも無い。出どころは DR（DR-D20 73 行「UNCITRAL調停ノートは…」）で、報告で「モデル法」に変わった。調停のノート（UNCITRAL Notes on Mediation）は開けていない（未照合） |
+| ja 140 行「UNCITRALモデル法は、調停が『紛争の異なる段階で成功裏に利用可能』であり」 | 帰属違い | 高 | この句は手元の規則にも条約にも無い。出どころは DR（2026-02 の DR 73 行「UNCITRAL調停ノートは…」）で、報告で「モデル法」に変わった。調停のノート（UNCITRAL Notes on Mediation）は開けていない（未照合） |
 | ja 140 行「調停は他の手続の開始有無を問わず、いつでも行うことができます」 | 一致 | ― | 規則 第 10 条 1（p.6） |
 | ja 140 行・144 行・208 行「交渉→調停→仲裁→訴訟」「介入の強度が段階的に上昇」 | 付け足し | 中 | 規則の条項の例は調停から仲裁への二段（p.9）。四段の並びと「強度のグラデーション」は調べた跡（phase6 38 行）の読み |
 | ja 136〜144 行 調停の打ち切りと、条約の救済の拒否に触れていない | 抜け | 中 | 至らない形が規則（第 9 条）と条約（第 5 条）に書かれている |
@@ -199,8 +199,8 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Krasner, S. D. (1982). Structural causes and regime consequences: Regimes as intervening variables. *International Organization* 36(2), 185–205. DOI 10.1017/S0020818300018920（Crossref で題・著者・年・巻号・頁が一致）。manifest D20-S09。台帳の OA の写し（uepb.edu.br）は、2026-11-08 に 502 を返して取れませんでした。代わりに、ポルトガル語訳を読みました：Krasner, S. D. (2012). Causas estruturais e consequências dos regimes internacionais: regimes como variáveis intervenientes. *Revista de Sociologia e Política* 20(42), 93–110. 訳者 Dalton Guimarães・Feliciano Guimarães・Gustavo Biscaia de Lacerda。https://www.redalyc.org/pdf/238/23823143008.pdf （Redalyc の OA。ライセンスの表示は PDF に見当たらず、未確認）。先頭は %PDF で、1 頁目の書誌が狙った文献の訳と一致しました。頁は訳の頁です。読んだ頁：p.93（要旨）・pp.95–96・p.103。
-- Keohane, R. O. (1984). *After Hegemony*. Princeton University Press. manifest D20-S10（citation-only）。archive.org の afterhegemonycoo00keoh は貸し出しだけでした（2026-11-08）。
+- Krasner, S. D. (1982). Structural causes and regime consequences: Regimes as intervening variables. *International Organization* 36(2), 185–205. DOI 10.1017/S0020818300018920（Crossref で題・著者・年・巻号・頁が一致）。台帳に行がある。台帳の OA の写し（uepb.edu.br）は、2026-11-08 に 502 を返して取れませんでした。代わりに、ポルトガル語訳を読みました：Krasner, S. D. (2012). Causas estruturais e consequências dos regimes internacionais: regimes como variáveis intervenientes. *Revista de Sociologia e Política* 20(42), 93–110. 訳者 Dalton Guimarães・Feliciano Guimarães・Gustavo Biscaia de Lacerda。https://www.redalyc.org/pdf/238/23823143008.pdf （Redalyc の OA。ライセンスの表示は PDF に見当たらず、未確認）。先頭は %PDF で、1 頁目の書誌が狙った文献の訳と一致しました。頁は訳の頁です。読んだ頁：p.93（要旨）・pp.95–96・p.103。
+- Keohane, R. O. (1984). *After Hegemony*. Princeton University Press. 台帳に行がある（書誌だけ）。archive.org の afterhegemonycoo00keoh は貸し出しだけでした（2026-11-08）。
 
 **照合の状態**：クラズナーは本文照合済（訳）。コヘインは未照合（書籍）。
 
@@ -300,7 +300,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨**：社会と生態系が結びついた系を、急な変化（危機）のときにどう統治するかを論じる総説。適応力（今の状態の中で変化に応じる力）と、変換力（今の系が成り立たないときに新しい系をつくる力）を分ける。指導者・信頼・社会の記憶・非公式のネットワークの役割を書く。
 
-**一次情報**：Folke, C., Hahn, T., Olsson, P. & Norberg, J. (2005). Adaptive governance of social-ecological systems. *Annual Review of Environment and Resources* 30, 441–473. DOI 10.1146/annurev.energy.30.050504.144511（Crossref で題・著者・年・巻・頁が一致）。manifest D20-S14。手元の PDF（`cs/knowledge/raw/D20_folke-et-al_2005_adaptive-governance.pdf`、web.archive.org の写し経由）。先頭は %PDF で、1 頁目の書誌が一致しました。読んだ頁：p.441（要旨）・pp.455–459。
+**一次情報**：Folke, C., Hahn, T., Olsson, P. & Norberg, J. (2005). Adaptive governance of social-ecological systems. *Annual Review of Environment and Resources* 30, 441–473. DOI 10.1146/annurev.energy.30.050504.144511（Crossref で題・著者・年・巻・頁が一致）。台帳に行がある。手元の PDF（手元の PDF、web.archive.org の写し経由）。先頭は %PDF で、1 頁目の書誌が一致しました。読んだ頁：p.441（要旨）・pp.455–459。
 
 **照合の状態**：本文照合済。
 
@@ -313,7 +313,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **対立・衝突・統合の読み**：原典は、危機（悪いこと）を、新しい統治の形が生まれる余地として過程の中に書き、同じ危機が、備えの無い系では望まない状態への転落になると書いています。統合に至るかどうかの分かれ目として、社会の記憶と社会関係資本、備える局面と非公式のネットワークが書かれています。オストロムが利用者の小さな集まりを見るのに対し、この総説は景観から国までの多層を見ています。
 
-**今の報告から直すこと**：報告はこの論を取り上げていません。台帳の行（D20-S14）は「Stage 1-5（1中・2中・3強・4強・5強）」と書きますが、これは段への当てはめで、原典の語ではありません（低）。
+**今の報告から直すこと**：報告はこの論を取り上げていません。台帳の行は「Stage 1-5（1中・2中・3強・4強・5強）」と書きますが、これは段への当てはめで、原典の語ではありません（低）。
 
 ## 公開報告の点検のまとめ
 
@@ -331,11 +331,11 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | 移行期正義 | 条件付き | 強い | 部分 | Accept（縁は ⚪） |
 | 制憲過程の提唱者 | Sieyes・Schmitt | Sieyes・Schmitt・International IDEA | 書いていない | Sieyès・Schmitt・International IDEA |
 
-pres の概要の行と表の件数が、同じファイルの中で違っています。D18・D22 と同じく、版ごとに別に生成されたことが出どころと見られます。en の §6 は「difference and conflict … are not mere obstacles but conditions under which new order rises」（162 行）と書き、ja の 236 行は「本調査の理論は概ね『制度形成の成功パターン』を記述」と書きます。衝突の置き方も版の間で違います。
+pres の概要の行と表の件数が、同じファイルの中で違っています。社会学・経営学と同じく、版ごとに別に生成されたことが出どころと見られます。en の §6 は「difference and conflict … are not mere obstacles but conditions under which new order rises」（162 行）と書き、ja の 236 行は「本調査の理論は概ね『制度形成の成功パターン』を記述」と書きます。衝突の置き方も版の間で違います。
 
 ### テンプレート由来の表示と、2026-07 の接地の注記
 
-「立ち位置明示」（3 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6」「Phase 7」（28・36 行ほか）、「方法論的開示（S60）」（42 行）、「温度帯の分布」（84 行）、「安全弁」（86 行）、「結びの温度開示」「温度帯」（242〜243 行）、「Colophon」「generator_model」（256〜266 行）。44〜47 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（writing.md §1-1・§1-8）。pres の「温度」の列（43 行）と「確定と有力の温度帯」（106 行）も同じです。D18・D22 と同じく、報告のテンプレートが原因で、個別でなくテンプレートで直します。
+「立ち位置明示」（3 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6」「Phase 7」（28・36 行ほか）、「方法論的開示（S60）」（42 行）、「温度帯の分布」（84 行）、「安全弁」（86 行）、「結びの温度開示」「温度帯」（242〜243 行）、「Colophon」「generator_model」（256〜266 行）。44〜47 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（書き方の規約 §1-1・§1-8）。pres の「温度」の列（43 行）と「確定と有力の温度帯」（106 行）も同じです。社会学・経営学と同じく、報告のテンプレートが原因で、個別でなくテンプレートで直します。
 
 2026-07-03 の接地の注記（pjdhiro の repo の e8a2f11、cs#254）は、ja 69 行と en 57 行に、表の対応は解釈で、原典の精読による検証を主張しない、と書き足しました。今の規約との違いは三つあります。一つ目に、注記は表にだけかかり、本文の「事実として」の段（たとえば ja 170 行のハーバーマスの四つの条件）は、精読を主張する書き方のまま残っています。二つ目に、方法の節（ja 28 行・32 行）は「一次文献の特定箇所を参照し」「一次文献の具体的テキスト箇所による裏付けがあるもの」を「強い対応」と定義していて、注記と食い違います。三つ目に、注記は出典ごとの照合の状態を書かないので、手元に PDF があって確かめられる論（オストロム・IDEA・調停の規則）と、書籍を開けていない論（ハート・ロールズ・ハーバーマス）の区別が、読者に見えません。pres には注記がありません。
 
@@ -344,7 +344,7 @@ pres の概要の行と表の件数が、同じファイルの中で違ってい
 | 誤り | 出どころ |
 |---|---|
 | ハーバーマスの「乖離条件」四つを原典が「明示」したとする | 退避版 EV-LP-008 の [M] の箇条（Claude の着想の層）→ 調べた跡 phase5 100 行・phase6 56〜59 行 → 報告で「事実として」 |
-| 「UNCITRALモデル法は…異なる段階で成功裏に利用可能」 | DR-D20 73 行（「UNCITRAL調停ノートは」）→ 報告で「モデル法」に変わった |
+| 「UNCITRALモデル法は…異なる段階で成功裏に利用可能」 | 2026-02 の DR 73 行（「UNCITRAL調停ノートは」）→ 報告で「モデル法」に変わった |
 | 「交渉→調停→仲裁→訴訟」の四段と「強度のグラデーション」 | 調べた跡 phase6 38 行・phase7 10 行 |
 | 「8設計原則が同時に満たされる」 | 調べた跡 phase6 24 行 |
 | 「縁の設計チェックリスト」 | 退避版 EV-LP-003 の [学び] |
@@ -358,7 +358,7 @@ pres の概要の行と表の件数が、同じファイルの中で違ってい
 | 型 F の表示 | 報告のテンプレート |
 | 表だけにかかる精読の否認 | 2026-07 の接地の注記（cs#254） |
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 E と「最も」の言い切り：「法学・政治学はこの『縁』の段階が最も豊かに具体化される領域です」（57 行・206 行）、「秩序生成の最も根源的な事例の一つ」（128 行）、「この理論の最大の貢献」（112 行）、「最も注目すべきは」（144 行）、「最も構造的対応が強いのは」（250 行）、「5段階の『位相的読み』を最も強く要求する領域の一つ」（222 行）。30 領域を数えた跡がありません。
 - 型 D（管理の語彙）：「縁の設計チェックリスト」（122 行・250 行）、「縁の強度のグラデーション」（144 行）、「権力は…全段階に浸透するメタ変数として作用します」（218 行）、「手続の挿入によって紛争を可制御化する」（142 行）。
@@ -368,30 +368,30 @@ pres の概要の行と表の件数が、同じファイルの中で違ってい
 
 ## 判断が要るもの
 
-1. 書籍だけで本文を開けなかった八つの論（ハート・イーストン・シュミット・コヘイン・ロールズ・ハーバーマス・キングダン・タイテル）を、この分野の論として残すか。報告の 10 の理論のうち、本文に当たれたのは、オストロム・シエイエス・IDEA・調停の規則・クラズナー（訳）だけです。予想：残し、照合の状態を「未照合（書籍）」と書き、「強い」「部分的」の判定を外す（stance 2-6、`sources.md` §3-3）。代わりに、本文を読めたフォルケら（2005）を論として立てました。タイテル（2003）は、ブラウザで PDF を保存してもらえれば読めます。司令塔の判断でよさそうです。
+1. 書籍だけで本文を開けなかった八つの論（ハート・イーストン・シュミット・コヘイン・ロールズ・ハーバーマス・キングダン・タイテル）を、この分野の論として残すか。報告の 10 の理論のうち、本文に当たれたのは、オストロム・シエイエス・IDEA・調停の規則・クラズナー（訳）だけです。予想：残し、照合の状態を「未照合（書籍）」と書き、「強い」「部分的」の判定を外す（stance 2-6、調べ方の規約 §3-3）。代わりに、本文を読めたフォルケら（2005）を論として立てました。タイテル（2003）は、ブラウザで PDF を保存してもらえれば読めます。司令塔の判断でよさそうです。
 2. シエイエスが特権身分を国民の外の敵として除く形を、三つの並べ方のどこに置くか。予想：片方の勝利として並べ、特権を捨てれば「真の国民」に戻れる道が開いていることを添える（README「判断が要ること」5 の二つ目と同じ問い）。段 3 で見直します。
 3. シュミットのように論争のある著者を、本文に当たらないまま「権威的決定による渦」の類型として残すか（ja 59 行・218 行）。予想：原典を読むまで類型から外し、未照合と書く。政治的な評価は持ち込まない（stance 1-2）。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D20-S17 | Krasner, S. D. (2012). Causas estruturais e consequências dos regimes internacionais: regimes como variáveis intervenientes. *Revista de Sociologia e Política* 20(42), 93–110（1982 年の論文の訳。訳者 D. Guimarães・F. Guimarães・G. B. de Lacerda） | https://www.redalyc.org/pdf/238/23823143008.pdf （Redalyc の OA。ライセンスは未確認） | url-verified（訳） |
-| D20-S18 | Teitel, R. G. (2003). Transitional justice genealogy. *Harvard Human Rights Journal* 16, 69–94 | https://digitalcommons.nyls.edu/cgi/viewcontent.cgi?article=1339&context=fac_articles_chapters （機関リポジトリ。自動取得を確かめる画面を返すので、ブラウザでの保存が要る） | blocked-access |
-| D20-S19 | ICTJ. What is Transitional Justice?（ウェブページ。日付なし） | https://www.ictj.org/what-transitional-justice | url-verified |
-| D20-S20 | UNCITRAL (2021). *UNCITRAL Notes on Mediation*（報告の「異なる段階で成功裏に利用可能」の出どころの見込み） | 取得先を探していない | citation-only |
-| D20-S21 | Rawls, J. (1971). *A Theory of Justice*. Harvard University Press | 本文 OA なし | citation-only |
-| D20-S22 | Habermas, J. (1992). *Faktizität und Geltung*. Suhrkamp（英訳 1996, MIT Press） | 本文 OA なし | citation-only |
-| D20-S23 | Kingdon, J. W. (1984). *Agendas, Alternatives, and Public Policies*. Little, Brown | 本文 OA なし | citation-only |
-| D20-S24 | Teitel, R. G. (2000). *Transitional Justice*. Oxford University Press | 本文 OA なし | citation-only |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| Krasner, S. D. (2012). Causas estruturais e consequências dos regimes internacionais: regimes como variáveis intervenientes. *Revista de Sociologia e Política* 20(42), 93–110（1982 年の論文の訳。訳者 D. Guimarães・F. Guimarães・G. B. de Lacerda） | https://www.redalyc.org/pdf/238/23823143008.pdf （Redalyc の OA。ライセンスは未確認） | 取得先を確かめた（訳） |
+| Teitel, R. G. (2003). Transitional justice genealogy. *Harvard Human Rights Journal* 16, 69–94 | https://digitalcommons.nyls.edu/cgi/viewcontent.cgi?article=1339&context=fac_articles_chapters （機関リポジトリ。自動取得を確かめる画面を返すので、ブラウザでの保存が要る） | 自動では取れない |
+| ICTJ. What is Transitional Justice?（ウェブページ。日付なし） | https://www.ictj.org/what-transitional-justice | 取得先を確かめた |
+| UNCITRAL (2021). *UNCITRAL Notes on Mediation*（報告の「異なる段階で成功裏に利用可能」の出どころの見込み） | 取得先を探していない | 書誌だけ |
+| Rawls, J. (1971). *A Theory of Justice*. Harvard University Press | 本文 OA なし | 書誌だけ |
+| Habermas, J. (1992). *Faktizität und Geltung*. Suhrkamp（英訳 1996, MIT Press） | 本文 OA なし | 書誌だけ |
+| Kingdon, J. W. (1984). *Agendas, Alternatives, and Public Policies*. Little, Brown | 本文 OA なし | 書誌だけ |
+| Teitel, R. G. (2000). *Transitional Justice*. Oxford University Press | 本文 OA なし | 書誌だけ |
 
-既存の行の直しの案：D20-S04 の行に「pouvoir constituant の箇所は 1822 年版 p.160（第 5 章と推定）。初版との一致は未確認」を足す。D20-S09 の uepb.edu.br の写しは、2026-11-08 に 502 を返した。D20-S01・S02・S10 の archive.org の資料は、どれも貸し出しだけ（access-restricted）。
+既存の行の直しの案：台帳の「Sieyès 1789」の行に「pouvoir constituant の箇所は 1822 年版 p.160（第 5 章と推定）。初版との一致は未確認」を足す。台帳の「Krasner 1982」の行の uepb.edu.br の写しは、2026-11-08 に 502 を返した。台帳の「Hart 1961」の行の archive.org の資料は、どれも貸し出しだけ（access-restricted）。
 
 ## 手順について分かったこと
 
 - 手元の PDF（オストロム・IDEA・調停の規則・条約・フォルケら）と、台帳の OA（シエイエス）と、新しく探した訳（クラズナー）を読んだ。本文で読めた論は 12 のうち 6。報告の 10 の理論では 5。そのうちオストロムは利用者が上げた写しで読んだので、照合の状態は未照合（2026-11-09 の一巡のあとで、本文照合済は 12 のうち 5）。
 - 法学・政治学は、報告の理論の多くが書籍（ハート・イーストン・シュミット・コヘイン・ロールズ・ハーバーマス・キングダン・タイテル）で、archive.org の三つは貸し出しだけだった。読めたのは、公的な機関の文書（IDEA・UNCITRAL）、パブリックドメインの古典（シエイエス）、OA の訳（クラズナー）だった。
-- 精読ノートが読まなかった所に、衝突と至らない形があった。オストロムのノート（D20-S03）は第 4 章の大半と第 5 章を読んでおらず、そこに訴訟と失敗の例があった。シエイエスのノート（D20-S04）は第 2 章までで、pouvoir constituant の箇所（第 5 章）は読んでいなかった。ノートに無いことを、原典に無いことと読まない（D18・D22 と同じ）。
+- 精読ノートが読まなかった所に、衝突と至らない形があった。オストロムのノートは第 4 章の大半と第 5 章を読んでおらず、そこに訴訟と失敗の例があった。シエイエスのノートは第 2 章までで、pouvoir constituant の箇所（第 5 章）は読んでいなかった。ノートに無いことを、原典に無いことと読まない（社会学・経営学と同じ）。
 - シエイエスの写しは PDF に文字の層が無く、archive.org の OCR の文字で読み、頁は走査の画像を開いて確かめた。OCR の文字には頁の区切りが無いので、頁の多くは前後から推定した。
 - 報告の言い回し（「UNCITRALモデル法は…」）が、DR の別の文書（調停のノート）から来ていた。手元の原典に無い句は、DR と退避版を grep すると出どころが分かることが多い。
-- ホリング（1973、D20-S13）は、ほかの分野でまだ照合されていないので、この分野では論として足さなかった。フリストン（2013、D20-S16）は D08 の記録を参照する対象だが、報告に出てこないので扱わなかった。
+- ホリング（1973、台帳の「Holling 1973」の行）は、ほかの分野でまだ照合されていないので、この分野では論として足さなかった。フリストン（2013、台帳の「Friston 2013」の行）は神経科学の記録を参照する対象だが、報告に出てこないので扱わなかった。

@@ -10,22 +10,22 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D03-chemi
 
 # 化学：論ごとの照合の記録
 
-この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。化学と物理の記述が正しいかどうかは Claude が引き受けます（`docs/rules/sources.md` §1-4・§6）。
+この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。化学と物理の記述が正しいかどうかは Claude が引き受けます（調べ方の規約 §1-4・§6）。
 
 化学の原典は、二つのものの取り合いと、その分かれ目の上と下で起きることを、はっきり書いていました。Becker と Döring（1935）は、過飽和の蒸気は臨界の大きさより小さい滴に対しては未飽和で、小さい滴は蒸発すると書いています。Field と Noyes（1974）は、臭化物イオンと臭素酸イオンが亜臭素酸を取り合い、臭化物イオンがある臨界の濃度を下回ると自己触媒の過程に切り替わることで振動が起きると書き、係数がある範囲を外れると振動はどの条件でも起きないと書いています。Semenov（1956 年のノーベル講演）は、連鎖の分岐の速さが停止の速さを上回れば雪崩のように爆発し、下回れば反応は起きもしないと書いています。Whitesides と Grzybowski（2002）は、部品がぶつかるたびに不可逆にくっつくと、結晶でなくガラスになると書いています。Ameta ら（2021）は、自己触媒の反応の網で、触媒しない「寄生体」の増え方が速いと寄生体が系を占め、複製が続かなくなると書いています。原典は、至らない形（蒸発する核・振動しない定常・何も起きない混合気体・ガラス・寄生体の支配）を、論の中心に置いていました。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D03-chemistry.md`、2026-03-18 に LLM が生成、以下「報告」）は、10 の論を取り上げ、日本語版では 5 を「強い対応」、英語版では 8 を「Strong」としています。報告は爆発を「秩序形成ではなく破壊的変換」として5段階への「重要な反例」に置き（ja 174 行）、未解決の問いで「創造的な縁と破壊的な縁の区別」を立てています（ja 252〜254 行）。上のとおり、原典では、何も起きない形と暴走する形は、同じ分かれ目の両側として書かれていました。この記録は、報告の 10 の論を一次情報で確かめ直したものです。論の数は変えていません。触媒サイクルには Johnson と Goody（2011）、化学振動には Goldbeter（2018）と Novák と Tyson（2008）、化学進化には Miller（1953）と Ameta ら（2021）を、同じ論の中の確かめ先として使いました。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
+今の公開報告（「30 領域調査報告」の化学の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、10 の論を取り上げ、日本語版では 5 を「強い対応」、英語版では 8 を「Strong」としています。報告は爆発を「秩序形成ではなく破壊的変換」として5段階への「重要な反例」に置き（ja 174 行）、未解決の問いで「創造的な縁と破壊的な縁の区別」を立てています（ja 252〜254 行）。上のとおり、原典では、何も起きない形と暴走する形は、同じ分かれ目の両側として書かれていました。この記録は、報告の 10 の論を一次情報で確かめ直したものです。論の数は変えていません。触媒サイクルには Johnson と Goody（2011）、化学振動には Goldbeter（2018）と Novák と Tyson（2008）、化学進化には Miller（1953）と Ameta ら（2021）を、同じ論の中の確かめ先として使いました。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D03-chemistry.md) にあります。退避版の判定（Accept・CA・縁フラグ・confidence・「hiro:承認待ち」の印）は、この記録の照合の状態の根拠にしていません。
 
 ## 読み方
 
-- 照合の状態は `docs/rules/sources.md` §3 の四つで書きます。翻訳で読んだものは「（訳）」を添えます。著者自身のまとめ直し（ノーベル講演など）で読んだものは「著者のまとめ直し」と書き、原論文は未照合とします。
+- 照合の状態は調べ方の規約 §3 の四つで書きます。翻訳で読んだものは「（訳）」を添えます。著者自身のまとめ直し（ノーベル講演など）で読んだものは「著者のまとめ直し」と書き、原論文は未照合とします。
 - 今の報告への判定は、一致・言い過ぎ・取り違え・帰属違い・付け足し・抜け・未判定で書きます。「抜け」は、原典にある衝突や至らない形を報告が落としていることです。
-- 「ja 85 行」は日本語版の行、「en」は英語版（`en/md/domain-D03-chemistry.md`）、「pres」はプレゼン版（`ja/presentations/md/domain-D03-chemistry-presentation-ja.md`）、「退避版」は上の History のファイル、「調べた跡」は `cs/evidence/investigation/D03-chemistry/` の phase5〜7 を指します。
+- 「ja 85 行」は日本語版の行、「en」は英語版（「30 領域調査報告」の化学の英語版）、「pres」はプレゼン版（「30 領域調査報告」の化学のプレゼン版）、「退避版」は上の History のファイル、「調べた跡」は、報告を作ったときの途中の出力（phase5〜7）の phase5〜7 を指します。
 - 化学と物理の主張には、教科書（分野で確立した記述）・研究の一線（争いがある、または一つの研究が示した）・Claude の読み替え（5段階の問いに当てた解釈）のどれかを添えます。
-- 物理学（D02）と複雑系科学（D29）と重なる論（核生成・散逸構造・反応拡散・パーコレーション・自己触媒集合）は、[物理学の記録](evidence-D02-physics.md)と[複雑系科学の記録](evidence-D29-complexity-science.md)で本文照合済の所を読み直さず、その記録を参照しています。
-- 語が同じこと（「渦」とスパイラル波、「波」と波数 q*）は、対応の根拠にも反証にも数えません（`docs/cs-review/README.md`「規約で決めたこと」）。
+- 物理学（物理学）と複雑系科学（複雑系科学）と重なる論（核生成・散逸構造・反応拡散・パーコレーション・自己触媒集合）は、[物理学の記録](evidence-D02-physics.md)と[複雑系科学の記録](evidence-D29-complexity-science.md)で本文照合済の所を読み直さず、その記録を参照しています。
+- 語が同じこと（「渦」とスパイラル波、「波」と波数 q*）は、対応の根拠にも反証にも数えません（調べ方の計画と規約「規約で決めたこと」）。
 
 ## 一面の表
 
@@ -54,8 +54,8 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Becker, R. & Döring, W. (1935). Kinetische Behandlung der Keimbildung in übersättigten Dämpfen. *Ann. Phys.* (5) 24, 719–752（Wiley の通し巻では 416(8)）. DOI: [10.1002/andp.19354160806](https://doi.org/10.1002/andp.19354160806)（Crossref で題・著者・頁を確かめました）。台帳 D03-S01。手元の PDF は、米国航空諮問委員会（NACA）の英訳 Technical Memorandum 1374「Kinetic Treatment of the Nucleation in Supersaturated Vapors」（Washington、1954 年 9 月、訳者 J. Vanier）です。表紙に原論文の誌名・巻・年があります。NASA の技術報告のサーバー（NTRS 19930093856）：https://ntrs.nasa.gov/citations/19930093856 。NTRS から取り直した PDF は、手元の PDF とバイト単位で同じでした。米国政府の著作物で、パブリックドメインです。頁は訳の頁で、原論文の頁とは対応しません。読んだ頁：p.1（序。臨界の滴の大きさがあり、蒸気はそれより大きい滴に対してだけ過飽和で、小さい滴に対しては過飽和でない。霧ができるには揺らぎで臨界の大きさの核が生まれることが要る。頻度は核をつくる仕事について e^(−A/kT) に比例。Volmer と Weber が初めて量で扱った）、p.3（§1。与えられた圧力で、それより小さい半径の滴は蒸発し、大きい滴は育つ。凝縮はエントロピーの減る揺らぎで核が生まれたときにだけ起きる）、pp.29–30（§6 Ostwald の段階則。過飽和の蒸気からは、凝固点よりかなり低くても、ふつう液体の相が先に分かれる。決め手は結晶の構造でなく、同じ過飽和に対応する核の表面が立方体のほうが球より大きいこと）。
-- Volmer & Weber（1926）は有料で、取得を試していません。物理学の記録の案 D02-S37 と同じ文献です。
+- Becker, R. & Döring, W. (1935). Kinetische Behandlung der Keimbildung in übersättigten Dämpfen. *Ann. Phys.* (5) 24, 719–752（Wiley の通し巻では 416(8)）. DOI: [10.1002/andp.19354160806](https://doi.org/10.1002/andp.19354160806)（Crossref で題・著者・頁を確かめました）。台帳に行がある。手元の PDF は、米国航空諮問委員会（NACA）の英訳 Technical Memorandum 1374「Kinetic Treatment of the Nucleation in Supersaturated Vapors」（Washington、1954 年 9 月、訳者 J. Vanier）です。表紙に原論文の誌名・巻・年があります。NASA の技術報告のサーバー（NTRS 19930093856）：https://ntrs.nasa.gov/citations/19930093856 。NTRS から取り直した PDF は、手元の PDF とバイト単位で同じでした。米国政府の著作物で、パブリックドメインです。頁は訳の頁で、原論文の頁とは対応しません。読んだ頁：p.1（序。臨界の滴の大きさがあり、蒸気はそれより大きい滴に対してだけ過飽和で、小さい滴に対しては過飽和でない。霧ができるには揺らぎで臨界の大きさの核が生まれることが要る。頻度は核をつくる仕事について e^(−A/kT) に比例。Volmer と Weber が初めて量で扱った）、p.3（§1。与えられた圧力で、それより小さい半径の滴は蒸発し、大きい滴は育つ。凝縮はエントロピーの減る揺らぎで核が生まれたときにだけ起きる）、pp.29–30（§6 Ostwald の段階則。過飽和の蒸気からは、凝固点よりかなり低くても、ふつう液体の相が先に分かれる。決め手は結晶の構造でなく、同じ過飽和に対応する核の表面が立方体のほうが球より大きいこと）。
+- Volmer & Weber（1926）は有料で、取得を試していません。物理学の記録の案（台帳の「Volmer & Weber 1926」の行）と同じ文献です。
 - Gibbs（1878）は、取得を試していません。
 
 **照合の状態**：Becker & Döring は本文照合済（訳）（NACA TM 1374 pp.1・3・29–30）。Volmer & Weber 1926 と Gibbs 1878 は未照合です。物理学の記録の 10 は、同じ論文を Internet Archive の権利の確かめられない写しで読み、未照合としていました。NACA の英訳はパブリックドメインなので、物理学の記録の照合の状態も「本文照合済（訳）」に上げられます（下の「判断が要るもの」）。
@@ -71,7 +71,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 100 行「臨界以下のクラスターは消滅し、臨界以上のクラスターは成長を続けます…（Gibbs 1878, Volmer-Weber 1926, Becker-Doring 1935）」 | 一致 | ― | Becker & Döring pp.1・3（訳）。体積と界面の 3 乗・2 乗の書き方は教科書 |
 | en 108 行「originating in Gibbs (1878) and refined by Becker-Doring (1935) and Turnbull-Fisher (1949)」 | 帰属違い | 中 | Becker & Döring p.1 は、初めて量で扱ったのは Volmer と Weber と書く。en は Volmer & Weber を落としている。物理学の記録の en 130 行と同じ形 |
 | ja 98 行「5段階モデルとの構造対応が最も直接的に確認される事例の一つ」 | 言い過ぎ | 低 | 型 E。判定は定義が決まってから |
-| ja 104 行「超臨界核の加速的成長は渦（正帰還による構造化）」 | 未判定 | 低 | 原典の運動論は臨界核ができる頻度までで、育ったあとの成長は扱っていない（精読ノート D03-S01 の 5 節も同じ読み） |
+| ja 104 行「超臨界核の加速的成長は渦（正帰還による構造化）」 | 未判定 | 低 | 原典の運動論は臨界核ができる頻度までで、育ったあとの成長は扱っていない（精読ノート「Becker-Doring 1935」の 5 節も同じ読み） |
 | ja 96〜106 行（核の競争に触れない） | 抜け | 低 | Becker & Döring §6（pp.29–30）。液体と結晶の核の競争で、液体が先に勝つ |
 | ja 106 行「CaCO3等で報告されている非古典的核生成経路」 | 未判定 | 低 | 読んでいない |
 | ja 75 行「強い対応」、en 63 行「Strong」、pres 46 行「強い対応」 | 一致 | ― | 三つの版で同じ。判定そのものは定義が決まってから |
@@ -82,7 +82,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Leibler, L. (1980). Theory of Microphase Separation in Block Copolymers. *Macromolecules* 13(6), 1602–1617. DOI: [10.1021/ma60078a047](https://doi.org/10.1021/ma60078a047)（Crossref で確かめました）。台帳 D03-S03（blocked-access）。ACS の PDF は自動取得で 403 でした。著者のサイトと機関リポジトリの写しは、検索で見つかりませんでした。
+- Leibler, L. (1980). Theory of Microphase Separation in Block Copolymers. *Macromolecules* 13(6), 1602–1617. DOI: [10.1021/ma60078a047](https://doi.org/10.1021/ma60078a047)（Crossref で確かめました）。台帳に行がある（自動では取れない）。ACS の PDF は自動取得で 403 でした。著者のサイトと機関リポジトリの写しは、検索で見つかりませんでした。
 - Fredrickson, G. H. & Helfand, E. (1987). Fluctuation effects in the theory of microphase separation in block copolymers. *J. Chem. Phys.* 87(1), 697–705. DOI: [10.1063/1.453566](https://doi.org/10.1063/1.453566)（Crossref で確かめました）。AIP の PDF は自動取得で 403 でした。検索で出た米国国防技術情報センター（DTIC）の報告 ADA175126 は、サーバーが要求を拒んだため、中身を確かめられていません。
 
 **照合の状態**：未照合（有料）。報告の題と提唱者の対は、Crossref の題（Fredrickson & Helfand は「Fluctuation effects」）と合っています。
@@ -105,7 +105,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Field, R. J. & Noyes, R. M. (1974). Oscillations in chemical systems. IV. Limit cycle behavior in a model of a real chemical reaction. *J. Chem. Phys.* 60(5), 1877–1884. DOI: [10.1063/1.1681288](https://doi.org/10.1063/1.1681288)（Crossref で確かめました）。台帳 D03-S04。手元の PDF は AIP の誌面（2012 年に AIP のサイトから取られた表紙つき）で、台帳はポーランドの大学の授業用の写しと書いています。授業用の写しで、権利は未確認です。頁は誌面の頁です。読んだ頁：p.1877（Lotka の機構は振動の周期と振幅が初めの濃度で決まり、乱すと軌道がずれる。リミットサイクルは定数だけで決まる周期に行き着く。自己触媒は持続振動に欠かせないわけではないが、少なくとも一つの段にフィードバックが要る。系は平衡から遠く、開いていなければならない）、p.1878（FKN の機構の芯は、臭化物イオンと臭素酸イオンが亜臭素酸を取り合う競合と、過程 B の自己触媒。臭化物イオンが臨界の濃度を上回ると過程 A、下回ると過程 B。過程 A が臭化物を消費して B を呼び、B が間接に臭化物を作って A に戻す）、p.1882（定常状態そのものが不安定で、ちょうど定常から始めても丸めの誤差で離れて同じ軌道に行き着く。振動には定常状態が小さな乱れに対して不安定であることが要るが、それはリミットサイクルを保証しない）、p.1883（図 6。定常状態が不安定なのは f と k_M5 のある範囲だけ。f が 1 から大きく外れると、どの k_M5 でも振動は起きない）、p.1884（閉じた系では、ほぼ安定な振動がやがて平衡への単調な接近に崩れる。拡散を足せば動く帯の模様も扱える）。
+- Field, R. J. & Noyes, R. M. (1974). Oscillations in chemical systems. IV. Limit cycle behavior in a model of a real chemical reaction. *J. Chem. Phys.* 60(5), 1877–1884. DOI: [10.1063/1.1681288](https://doi.org/10.1063/1.1681288)（Crossref で確かめました）。台帳に行がある。手元の PDF は AIP の誌面（2012 年に AIP のサイトから取られた表紙つき）で、台帳はポーランドの大学の授業用の写しと書いています。授業用の写しで、権利は未確認です。頁は誌面の頁です。読んだ頁：p.1877（Lotka の機構は振動の周期と振幅が初めの濃度で決まり、乱すと軌道がずれる。リミットサイクルは定数だけで決まる周期に行き着く。自己触媒は持続振動に欠かせないわけではないが、少なくとも一つの段にフィードバックが要る。系は平衡から遠く、開いていなければならない）、p.1878（FKN の機構の芯は、臭化物イオンと臭素酸イオンが亜臭素酸を取り合う競合と、過程 B の自己触媒。臭化物イオンが臨界の濃度を上回ると過程 A、下回ると過程 B。過程 A が臭化物を消費して B を呼び、B が間接に臭化物を作って A に戻す）、p.1882（定常状態そのものが不安定で、ちょうど定常から始めても丸めの誤差で離れて同じ軌道に行き着く。振動には定常状態が小さな乱れに対して不安定であることが要るが、それはリミットサイクルを保証しない）、p.1883（図 6。定常状態が不安定なのは f と k_M5 のある範囲だけ。f が 1 から大きく外れると、どの k_M5 でも振動は起きない）、p.1884（閉じた系では、ほぼ安定な振動がやがて平衡への単調な接近に崩れる。拡散を足せば動く帯の模様も扱える）。
 - Field, R. J., Kőrös, E. & Noyes, R. M. (1972). Oscillations in chemical systems. II. Thorough analysis of temporal oscillation in the bromate-cerium-malonic acid system. *J. Am. Chem. Soc.* 94(25), 8649–8664. DOI: [10.1021/ja00780a001](https://doi.org/10.1021/ja00780a001)（Crossref で確かめました）。有料で、取得を試していません。
 - Zhabotinsky, A. M. (2007). Belousov-Zhabotinsky reaction. *Scholarpedia* 2(9):1435. DOI: 10.4249/scholarpedia.1435 。http://www.scholarpedia.org/article/Belousov-Zhabotinsky_reaction 。反応の発見者の一人による解説です（二次資料。著者自身のまとめ）。節「History」「Chemical waves and patterns」を読みました。Belousov の報告は 1959 年。臭化物イオンは自己触媒の酸化を妨げる。Ce⁴⁺ が低い閾値に達すると臭化物が急に下がり、高い閾値に達すると臭化物が急に上がって自己触媒を止める。同心円の波がぶつかると、不応の帯のために打ち消し合う。波が切れるとスパイラル波になる（Zhabotinsky & Zaikin 1971・Winfree 1972）。
 
@@ -134,7 +134,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨**：反応しながら拡散する化学物質の系は、はじめ均一でも、均一な平衡が不安定になると、でたらめな乱れをきっかけに模様をつくりうる、という論です。
 
-**一次情報**：複雑系科学の記録の 8 で本文照合済です（Turing 1952 *Phil. Trans. R. Soc. B* 237, 37–72、DOI 10.1098/rstb.1952.0012、カリフォルニア工科大学の授業用の写し pp.37・41–44・51–52）。台帳 D03-S05 と D29-S16 は同じ文献です。この記録では読み直していません。
+**一次情報**：複雑系科学の記録の 8 で本文照合済です（Turing 1952 *Phil. Trans. R. Soc. B* 237, 37–72、DOI 10.1098/rstb.1952.0012、カリフォルニア工科大学の授業用の写し pp.37・41–44・51–52）。台帳の「Turing 1952」の行は同じ文献です。この記録では読み直していません。
 
 **照合の状態**：本文照合済（複雑系科学の記録を参照。授業用の写し）。
 
@@ -150,7 +150,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 132〜142 行（分かれ目の下で均一なまま続く形に触れない） | 抜け | 中 | Turing p.42。複雑系科学の記録と同じ |
 | ja 134 行「数学的に最も厳密な事例」、pres 74 行「数学的に最も厳密な記述」 | 言い過ぎ | 低 | 型 E |
 | ja 136 行「Castets et al.（1990）…Kondo & Miura（2010）」 | 未判定 | 低 | 読んでいない |
-| ja 79 行「強い対応」、en 67 行「Strong」、pres 50 行「強い対応」 | 一致 | ― | 三つの版で同じ。D29 の報告では「部分的な対応」（複雑系科学の記録の 8）で、分野をまたいで判定が違う |
+| ja 79 行「強い対応」、en 67 行「Strong」、pres 50 行「強い対応」 | 一致 | ― | 三つの版で同じ。複雑系科学の報告では「部分的な対応」（複雑系科学の記録の 8）で、分野をまたいで判定が違う |
 
 ### 5. ゾル－ゲル転移とパーコレーション（Flory 1941・Stockmayer 1943）
 
@@ -158,7 +158,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Chambon, F. & Winter, H. H. (1987). Linear Viscoelasticity at the Gel Point of a Crosslinking PDMS with Imbalanced Stoichiometry. *J. Rheol.* 31(8), 683–697. DOI: [10.1122/1.549955](https://doi.org/10.1122/1.549955)（Crossref で確かめました）。台帳 D03-S08。手元の PDF は誌面を走査した画像（文字の層なし）で、頁を画像にして読みました。台帳は rheology.tripod.com から手で保存したと書いています。個人向けの無料のホスティングで、上げた人は分かりません。読んだ頁：p.683（要旨。化学量論の釣り合った試料では n＝1/2、釣り合わない試料では 1/2＜n＜1。ゲル点は損失と貯蔵の弾性率の交わる点より前に来る）、p.684（系は臨界の進み具合 p＝pc でゲル点に達し、重量平均分子量が発散するか、最初の巨視的な分子の塊が試料を貫く。溶けなくなり、定常の粘度が発散し、平衡の弾性率が有限の値に立ち上がり始める。新しくできた網目は、まだつながっていない分岐分子と共存する。結晶化や相分離は除いた）、p.695（式 (17)。p＝pc で tanδ は周波数によらない。結論：臨界のゲルは液体と固体の間の新しい物質の状態）、p.696（最近のフラクタルの理論は、ゲル点の広いべき乗の領域を説明できる、と他の研究を紹介し、続く論文で論じるとする。ガラス化がゲル化に重なると、ふるまいはずっと複雑になる）。
+- Chambon, F. & Winter, H. H. (1987). Linear Viscoelasticity at the Gel Point of a Crosslinking PDMS with Imbalanced Stoichiometry. *J. Rheol.* 31(8), 683–697. DOI: [10.1122/1.549955](https://doi.org/10.1122/1.549955)（Crossref で確かめました）。台帳に行がある。手元の PDF は誌面を走査した画像（文字の層なし）で、頁を画像にして読みました。台帳は rheology.tripod.com から手で保存したと書いています。個人向けの無料のホスティングで、上げた人は分かりません。読んだ頁：p.683（要旨。化学量論の釣り合った試料では n＝1/2、釣り合わない試料では 1/2＜n＜1。ゲル点は損失と貯蔵の弾性率の交わる点より前に来る）、p.684（系は臨界の進み具合 p＝pc でゲル点に達し、重量平均分子量が発散するか、最初の巨視的な分子の塊が試料を貫く。溶けなくなり、定常の粘度が発散し、平衡の弾性率が有限の値に立ち上がり始める。新しくできた網目は、まだつながっていない分岐分子と共存する。結晶化や相分離は除いた）、p.695（式 (17)。p＝pc で tanδ は周波数によらない。結論：臨界のゲルは液体と固体の間の新しい物質の状態）、p.696（最近のフラクタルの理論は、ゲル点の広いべき乗の領域を説明できる、と他の研究を紹介し、続く論文で論じるとする。ガラス化がゲル化に重なると、ふるまいはずっと複雑になる）。
 - Winter, H. H. & Chambon, F. (1986). Analysis of Linear Viscoelasticity of a Crosslinking Polymer at the Gel Point. *J. Rheol.* 30(2), 367–382. DOI: [10.1122/1.549853](https://doi.org/10.1122/1.549853)（Crossref で確かめました）。手元にありません。
 - Flory, P. J. (1941). Molecular Size Distribution in Three Dimensional Polymers. I. Gelation. *J. Am. Chem. Soc.* 63(11), 3083–3090. DOI: [10.1021/ja01856a061](https://doi.org/10.1021/ja01856a061)（Crossref で確かめました）。有料です。Chambon & Winter の文献 4 は、同じ年の 3083・3091・3096 頁の三本を挙げています。
 - Stockmayer, W. H. (1943). Theory of Molecular Size Distribution and Gel Formation in Branched-Chain Polymers. *J. Chem. Phys.* 11(2), 45–55. DOI: [10.1063/1.1723803](https://doi.org/10.1063/1.1723803)（Crossref で確かめました）。有料です。
@@ -186,7 +186,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Johnson, K. A. & Goody, R. S. (2011). The Original Michaelis Constant: Translation of the 1913 Michaelis–Menten Paper. *Biochemistry* 50(39), 8264–8269. DOI: [10.1021/bi201284u](https://doi.org/10.1021/bi201284u)（Crossref で確かめました）。台帳 D03-S02。PMC の著者稿（PMC3381512）の本文を、NCBI の efetch で XML として取って読みました。頁が無いので節の名前で控えます。読んだ節：冒頭（Michaelis と Menten は生成物の阻害を含む積分の式で全経過のデータを合わせ、一つの定数を出した）、「Historical Perspective」（酵素と基質の複合体の式を最初に導いたのは Henri。Michaelis と Menten は生成物が反応を妨げることを知っており、初速度の測定で阻害を避けた。基質の結合は平衡にあると仮定した。反応が平衡に近づくと式が合わないことに気づいていた。定常状態の近似は 1925 年の Briggs と Haldane）、「Product Inhibition and the Integrated Rate Equation」（果糖とブドウ糖を競合阻害の物質として扱い、解離定数を見積もった）。原論文の英訳は出版社の補遺（PMC では補遺の PDF）にあり、PMC と Europe PMC の補遺は確認画面で止まりました（ブラウザでの保存が要る）。
+- Johnson, K. A. & Goody, R. S. (2011). The Original Michaelis Constant: Translation of the 1913 Michaelis–Menten Paper. *Biochemistry* 50(39), 8264–8269. DOI: [10.1021/bi201284u](https://doi.org/10.1021/bi201284u)（Crossref で確かめました）。台帳に行がある。PMC の著者稿（PMC3381512）の本文を、NCBI の efetch で XML として取って読みました。頁が無いので節の名前で控えます。読んだ節：冒頭（Michaelis と Menten は生成物の阻害を含む積分の式で全経過のデータを合わせ、一つの定数を出した）、「Historical Perspective」（酵素と基質の複合体の式を最初に導いたのは Henri。Michaelis と Menten は生成物が反応を妨げることを知っており、初速度の測定で阻害を避けた。基質の結合は平衡にあると仮定した。反応が平衡に近づくと式が合わないことに気づいていた。定常状態の近似は 1925 年の Briggs と Haldane）、「Product Inhibition and the Integrated Rate Equation」（果糖とブドウ糖を競合阻害の物質として扱い、解離定数を見積もった）。原論文の英訳は出版社の補遺（PMC では補遺の PDF）にあり、PMC と Europe PMC の補遺は確認画面で止まりました（ブラウザでの保存が要る）。
 - Michaelis, L. & Menten, M. L. (1913). Die Kinetik der Invertinwirkung. *Biochem. Z.* 49, 333–369。ドイツ語の原典は取得を試していません。
 - Langmuir, I. (1918). The adsorption of gases on plane surfaces of glass, mica and platinum. *J. Am. Chem. Soc.* 40(9), 1361–1403. DOI: [10.1021/ja02242a004](https://doi.org/10.1021/ja02242a004)（Crossref で確かめました）。有料で、取得を試していません。
 
@@ -216,13 +216,13 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 - Semenov, N. N. (1956). Some problems relating to chain reactions and to the theory of combustion（ノーベル講演、1956 年 12 月 11 日）。https://www.nobelprize.org/uploads/2018/06/semenov-lecture.pdf 。PDF の先頭は %PDF で、1 頁目に題・著者・日付があります。頁は講演集（Chemistry 1942–1962）の頁で、PDF の 1 頁目が p.487 です。読んだ頁：pp.487–488（反応の熱が反応を速め、その熱が壁へ逃げる。熱の自己加速が起きるかは、反応と放散の条件で決まる。着火の温度は物質の定数ではない）、p.490（1926〜1927 年に、熱によらない第二の着火、連鎖着火を見つけた。リンの着火の下の限界）、p.491（分岐の連鎖では、遊離基が一つできれば増えていく。遊離基は壁・混ぜ物・再結合で消え、連鎖が切れる。分岐が停止を上回れば連鎖の雪崩が起き、停止が上回れば雪崩は育たず、反応は起きもしない。リンの蒸気は限界の下で酸素と何日も触れていても反応の跡が無い。完全に不活性な状態から激しい反応（爆発）への移り変わりは、酸素の圧力・容器の大きさ・遊離基を吸う細い金属線の出し入れ・不活性な物質の追加で起こせる）、p.492（ごくわずかな変化で移り変わる。Hinshelwood は「第二の上の限界」を、気相の三体衝突による連鎖の停止で説明した。原子炉の制御棒も同じ限界の現象）。
 - Hinshelwood, C. N. (1956). Chemical kinetics in the past few decades（ノーベル講演、1956 年 12 月 11 日）。https://www.nobelprize.org/uploads/2018/06/hinshelwood-lecture.pdf 。PDF の先頭は %PDF で、1 頁目に題・著者・日付があります。頁は講演集の頁で、PDF の 1 頁目が p.474 です。読んだ頁：p.476（水素と酸素の下と上の爆発限界を観察した。下の限界は、無視できるほど遅い反応から発火への鋭い移り変わりで、連鎖の担い手が容器の壁で失われることで決まる。上の限界は、気相の三体衝突で担い手が除かれることで決まる）。
 - Semenov, N. N. (1928). *Z. Physik* 48, 571（講演の文献 1）。有料で、DOI を確かめていません。
-- Lewis & von Elbe（1961）の書籍（台帳 D03-S07）は読んでいません。
+- Lewis & von Elbe（1961）の書籍（台帳に行がある）は読んでいません。
 
 **照合の状態**：本文照合済（著者のまとめ直し：Semenov の講演 pp.487–488・490–492、Hinshelwood の講演 p.476）。Semenov 1928 の原論文と、報告の「第3限界」の機構は未照合です。
 
 **対立・衝突・統合の読み**：原典に書いてあるのは、分岐と停止の速さの兼ね合いで、行き先が二つに分かれることです（Semenov p.491）。分岐が上回れば雪崩のように爆発し、停止が上回れば反応は起きもしません。分かれ目は、圧力や容器の大きさのごくわずかな変化です（pp.491–492。教科書）。Claude の読み替えでは、遊離基が増える働きと消される働きがぶつかり、分かれ目の下では何も起きない（場に留まる）、上では暴走する、という二つの至らない形が、同じ分かれ目の両側にあります。定常の燃焼や制御された反応（原子炉の制御棒の例、p.492）は、その分かれ目の近くに留め置く形です。熱着火（pp.487–488）も、反応の熱と壁への放散の兼ね合いで同じ形をしています。
 
-報告は、爆発を「秩序形成ではなく破壊的変換」として、5段階の外の「重要な反例」に置いています（ja 174 行・ja 252〜254 行）。原典では、爆発と何も起きないことは、同じ分岐と停止の兼ね合いの二つの帰結です。悪い帰結を外に置かず、至らない形として並べる（`docs/cs-review/README.md` の中心の問い）と、この論は分かれ目の上と下の両方をはっきり書いた例になります。
+報告は、爆発を「秩序形成ではなく破壊的変換」として、5段階の外の「重要な反例」に置いています（ja 174 行・ja 252〜254 行）。原典では、爆発と何も起きないことは、同じ分岐と停止の兼ね合いの二つの帰結です。悪い帰結を外に置かず、至らない形として並べる（調べ方の計画と規約の中心の問い）と、この論は分かれ目の上と下の両方をはっきり書いた例になります。
 
 **今の報告から直すこと**：
 
@@ -242,7 +242,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 - Whitesides, G. M. & Grzybowski, B. (2002). Self-Assembly at All Scales. *Science* 295(5564), 2418–2421. DOI: [10.1126/science.1070821](https://doi.org/10.1126/science.1070821)（Crossref で確かめました）。デューク大学の授業の頁の写し（Science の誌面）：https://courses.cs.duke.edu/spring06/cps296.5/papers/WG02.pdf 。授業用の写しで、権利は未確認です。PDF の先頭は %PDF で、1 頁目に題・著者があります（同じ頁の上に前の論文の文献の終わりがあります）。著者のグループのサイトは自動取得で 403 でした。頁は誌面の頁です。読んだ頁：p.2418（自己組織化には静的と動的の二つがある。静的は大域か局所の平衡にあり、エネルギーを散逸しない）、p.2419（この語を、あらかじめある部品が、可逆に、部品の設計で制御できる形で組み上がる過程に限る。動的な自己組織化では、構造をつくる相互作用は系がエネルギーを散逸している間だけ起きる。振動する化学反応で反応と拡散の競合がつくる模様は、その単純な例。部品は動けねばならず、定常の位置は引力と斥力の釣り合いで決まる。規則正しい構造に至るにはふつう平衡化が要る。ぶつかるたびに不可逆にくっつくと、結晶でなくガラスになる。細胞はエネルギーの流れを止めると死ぬ）、p.2421（エネルギーの散逸が、乱れた部品から秩序ある構造を生む仕組みは、ほとんど分かっていない）。
 - Lehn, J.-M. (1987). Supramolecular Chemistry—Scope and Perspectives: Molecules, Supermolecules and Molecular Devices（ノーベル講演、1987 年 12 月 8 日）。https://www.nobelprize.org/uploads/2018/06/lehn-lecture.pdf 。同じ内容は *Angew. Chem. Int. Ed. Engl.* 27(1), 89–112 (1988)、DOI [10.1002/anie.198800891](https://doi.org/10.1002/anie.198800891)（Crossref で確かめました）。PDF の 1 頁目が講演集の p.444 です。文字の層は字間が空いていて、空白を除いて読みました。読んだ頁：p.445（超分子化学は「分子を超えた化学」）、p.447（認識は、ただの結合でなく、基質の選択を伴う結合。受容体の剛さと柔らかさの釣り合いが、動的な性質に特に大事）、p.483（同じ配位子どうしが選んで組む自己認識。設計された自己組織化）。
-- Lehn（1995）の書籍（台帳 D03-S06）と、報告が引く動的共有結合化学（Lehn 2007）は読んでいません。
+- Lehn（1995）の書籍（台帳に行がある）と、報告が引く動的共有結合化学（Lehn 2007）は読んでいません。
 
 **照合の状態**：Whitesides & Grzybowski 2002 は本文照合済（授業用の写し。pp.2418–2419・2421）。Lehn の講演は本文照合済（著者のまとめ直し。pp.445・447・483）。Lehn 1995・2007 は未照合です。
 
@@ -268,7 +268,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 - Goldbeter, A. (2018). Dissipative structures in biological systems: bistability, oscillations, spatial patterns and waves. *Phil. Trans. R. Soc. A* 376(2124), 20170376. DOI: [10.1098/rsta.2017.0376](https://doi.org/10.1098/rsta.2017.0376)（Crossref で確かめました）。PMC6000149。NCBI の efetch の XML は要旨だけでしたが、PMC の記事の頁（https://pmc.ncbi.nlm.nih.gov/articles/PMC6000149/ ）で全文を読みました。Royal Society の PDF と Europe PMC の PDF は確認画面（403）でした。頁が無いので節の名前で控えます。読んだ節：要旨（散逸構造の四つの型：多重安定・持続振動・Turing の模様・伝わる波）、「1. Introduction」（散逸構造は、定常状態が臨界の分岐点で不安定になるとき、平衡から遠い所で起きる。多くの生化学反応は、平衡から遠くても不安定を生まず、安定な定常状態に行き着く）、「2. Multiple steady states: bistability」（双安定の二つの枝が、健康と病気の状態にあたるモデルが多い。不可逆な双安定では逆向きの移り変わりが起きない）、「3. Biological rhythms as temporal dissipative structures」（Lotka は 1920 年に減衰しない化学振動のモデルを出した。Ca²⁺ の振動は刺激の強さのある窓の中でだけ起き、刺激が弱すぎても強すぎても、細胞は低いか高い安定な定常に行き着く。振動は正と負のフィードバックによる。Ca²⁺ の振動は周波数で情報を運ぶ）。
 - Novák, B. & Tyson, J. J. (2008). Design principles of biochemical oscillators. *Nat. Rev. Mol. Cell Biol.* 9(12), 981–991. DOI: [10.1038/nrm2530](https://doi.org/10.1038/nrm2530)（Crossref で確かめました）。PMC2796343 の著者稿を NCBI の efetch で取って読みました。節で控えます。読んだ節：要旨（生化学振動の三つの要件：遅れた負のフィードバック、反応の速さの十分な非線形性、逆向きの反応の時間の尺度の釣り合い。正のフィードバックは、負のフィードバックを遅らせる仕組みの一つ）、序（負のフィードバックの信号が十分に遅れなければ、反応は安定な定常状態に落ち着く）、「Negative feedback with time delay」（遅れの無いモデルは減衰振動で定常に落ち着き、持続振動はできない）、「Time delay by positive feedback」（振動は正のフィードバックが要り、K_I が小さすぎても大きすぎても消える。信号の強さも狭い範囲に入らねばならない）。
-- Goldbeter (1996) *Biochemical Oscillations and Cellular Rhythms*（台帳 D03-S10）は書籍で読んでいません。Prigogine & Lefever (1968) *J. Chem. Phys.* 48(4), 1695–1700（DOI 10.1063/1.1668896、Crossref で確かめました。ブリュッセレータ）は有料で、取得を試していません。同じ著者の散逸構造の論は、[複雑系科学の記録](evidence-D29-complexity-science.md)の 1（Prigogine 1977 のノーベル講演。本文照合済）を参照します。
+- Goldbeter (1996) *Biochemical Oscillations and Cellular Rhythms*（台帳に行がある）は書籍で読んでいません。Prigogine & Lefever (1968) *J. Chem. Phys.* 48(4), 1695–1700（DOI 10.1063/1.1668896、Crossref で確かめました。ブリュッセレータ）は有料で、取得を試していません。同じ著者の散逸構造の論は、[複雑系科学の記録](evidence-D29-complexity-science.md)の 1（Prigogine 1977 のノーベル講演。本文照合済）を参照します。
 
 **照合の状態**：Goldbeter 2018 と Novák & Tyson 2008 は本文照合済（PMC の全文と著者稿。節で控えた）。Goldbeter 1996 は未照合（書籍）。報告が引く Berridge（1997）と Dolmetsch ら（1998）は未照合です。
 
@@ -293,11 +293,11 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Miller, S. L. (1953). A Production of Amino Acids Under Possible Primitive Earth Conditions. *Science* 117(3046), 528–529. DOI: [10.1126/science.117.3046.528](https://doi.org/10.1126/science.117.3046.528)（Crossref で確かめました。著者は Miller 一人）。台帳 D03-S09（blocked-access）。国際生命起源学会（ISSOL）のサイトに置かれていた誌面の写しを、Internet Archive の Wayback Machine（2009 年 9 月 30 日の記録）で取りました：http://web.archive.org/web/20090930124014/http://www.issol.org/miller/miller1953.pdf 。今の ISSOL のサイトでは 404 です。PDF の先頭は %PDF で、文字の層の無い画像なので頁を画像にして読みました。頁は誌面の頁です。読んだ頁：p.528（Oparin・Urey・Bernal の仮説を確かめるため、CH₄・NH₃・H₂O・H₂ を放電のそばに循環させた。一週間で溶液は赤く濁った。黄色の有機物は一部しか抽出できなかった。脚注 2 で Urey の助言に謝辞）、p.529（グリシン・α-アラニン・β-アラニンを同定した。アスパラギン酸と α-アミノ-n-酪酸は斑点が弱く確かでない。原始の大気を再現しようとした試みで、アミノ酸の最適な条件を求めたのではない。総収量は使ったエネルギーの割に小さかった）。
-- Ameta, S., Matsubara, Y. J., Chakraborty, N., Krishna, S. & Thutupalli, S. (2021). Self-Reproduction and Darwinian Evolution in Autocatalytic Chemical Reaction Systems. *Life* 11(4), 308. DOI: [10.3390/life11040308](https://doi.org/10.3390/life11040308)（Crossref で確かめました。台帳 D03-S15 の題は違います）。オープンアクセス（CC BY）。https://mdpi-res.com/d_attachment/life/life-11-00308/article_deploy/life-11-00308.pdf 。PDF の先頭は %PDF で、1 頁目に題・著者があります。頁は論文の頁（1〜32）です。読んだ頁：p.3（反応の網のつながりが増えると、自己触媒集合のある確率が閾値で 0 から 1 へ移る。パーコレーションの転移と同じ）、p.4（反応のつながりの密度が閾値 ρ*∼1/M の下では、自己触媒集合はできそうにない。上ではほぼ全体を含む集合ができる）、p.6（運動の係数のばらつきが大きいか系が小さいと、一部の分子種が絶えて自己複製が続かない）、p.7（ハイパーサイクルの「寄生体」：触媒しない種の増え方が速いと、寄生体が系を占め、どちらの複製も続かない）、p.8（物質の量が保たれると、自己複製の単位どうしが資源を取り合い、増え方のいちばん速いものだけが残る）、p.10（複製の誤りがたまると、受け継げる情報の長さが縛られる（誤りの破局））、p.11（自己触媒の網が進化できるかは、批判する側と支持する側で争われている）。
-- Hordijk, W., Hein, J. & Steel, M. (2010). Autocatalytic Sets and the Origin of Life. *Entropy* 12(7), 1733–1742. DOI 10.3390/e12071733。台帳 D03-S14 と D29-S10 は同じ文献です。複雑系科学の記録の 3 で本文照合済（pp.1735・1737–1739）で、この記録では読み直していません。
+- Miller, S. L. (1953). A Production of Amino Acids Under Possible Primitive Earth Conditions. *Science* 117(3046), 528–529. DOI: [10.1126/science.117.3046.528](https://doi.org/10.1126/science.117.3046.528)（Crossref で確かめました。著者は Miller 一人）。台帳に行がある（自動では取れない）。国際生命起源学会（ISSOL）のサイトに置かれていた誌面の写しを、Internet Archive の Wayback Machine（2009 年 9 月 30 日の記録）で取りました：http://web.archive.org/web/20090930124014/http://www.issol.org/miller/miller1953.pdf 。今の ISSOL のサイトでは 404 です。PDF の先頭は %PDF で、文字の層の無い画像なので頁を画像にして読みました。頁は誌面の頁です。読んだ頁：p.528（Oparin・Urey・Bernal の仮説を確かめるため、CH₄・NH₃・H₂O・H₂ を放電のそばに循環させた。一週間で溶液は赤く濁った。黄色の有機物は一部しか抽出できなかった。脚注 2 で Urey の助言に謝辞）、p.529（グリシン・α-アラニン・β-アラニンを同定した。アスパラギン酸と α-アミノ-n-酪酸は斑点が弱く確かでない。原始の大気を再現しようとした試みで、アミノ酸の最適な条件を求めたのではない。総収量は使ったエネルギーの割に小さかった）。
+- Ameta, S., Matsubara, Y. J., Chakraborty, N., Krishna, S. & Thutupalli, S. (2021). Self-Reproduction and Darwinian Evolution in Autocatalytic Chemical Reaction Systems. *Life* 11(4), 308. DOI: [10.3390/life11040308](https://doi.org/10.3390/life11040308)（Crossref で確かめました。台帳の「Ameta ら 2021」の行の題は違います）。オープンアクセス（CC BY）。https://mdpi-res.com/d_attachment/life/life-11-00308/article_deploy/life-11-00308.pdf 。PDF の先頭は %PDF で、1 頁目に題・著者があります。頁は論文の頁（1〜32）です。読んだ頁：p.3（反応の網のつながりが増えると、自己触媒集合のある確率が閾値で 0 から 1 へ移る。パーコレーションの転移と同じ）、p.4（反応のつながりの密度が閾値 ρ*∼1/M の下では、自己触媒集合はできそうにない。上ではほぼ全体を含む集合ができる）、p.6（運動の係数のばらつきが大きいか系が小さいと、一部の分子種が絶えて自己複製が続かない）、p.7（ハイパーサイクルの「寄生体」：触媒しない種の増え方が速いと、寄生体が系を占め、どちらの複製も続かない）、p.8（物質の量が保たれると、自己複製の単位どうしが資源を取り合い、増え方のいちばん速いものだけが残る）、p.10（複製の誤りがたまると、受け継げる情報の長さが縛られる（誤りの破局））、p.11（自己触媒の網が進化できるかは、批判する側と支持する側で争われている）。
+- Hordijk, W., Hein, J. & Steel, M. (2010). Autocatalytic Sets and the Origin of Life. *Entropy* 12(7), 1733–1742. DOI 10.3390/e12071733。台帳の「Hordijk ら 2010」の行は同じ文献です。複雑系科学の記録の 3 で本文照合済（pp.1735・1737–1739）で、この記録では読み直していません。
 - Gilbert, W. (1986). Origin of life: The RNA world. *Nature* 319(6055), 618. DOI: [10.1038/319618a0](https://doi.org/10.1038/319618a0)（Crossref で確かめました。1 頁）。有料で、OA の写しは検索で見つかりませんでした。
-- Bada & Lazcano（2003）の OA の写し（台帳 D03-S09 の取得先、ハワイ大学の FTP）は、2026-11-09 に 502 でした。確認画面ではなく、取得先が落ちていました。
+- Bada & Lazcano（2003）の OA の写し（台帳の「Miller 1953」の行の取得先、ハワイ大学の FTP）は、2026-11-09 に 502 でした。確認画面ではなく、取得先が落ちていました。
 
 **照合の状態**：Miller 1953 は本文照合済（学会のサイトに置かれていた誌面の写しを Wayback で読んだ。pp.528–529）。Ameta ら 2021 は本文照合済（pp.3–4・6–8・10–11）。Hordijk ら 2010 は複雑系科学の記録を参照。Gilbert 1986 と、報告が引く Cech（1982）・Altman（1989）は未照合です。
 
@@ -355,11 +355,11 @@ ja の表の「主な対応段階」と pres の段の欄は、BZ（全5段階�
 | 化学振動 | 定常に落ち着く。刺激の窓の外では振動しない。双安定の病気の枝（Novák & Tyson、Goldbeter 2018 §1–3） | 遅れの長さ、刺激の強さ、時間の尺度 |
 | 化学進化 | 集合ができない。寄生体の支配。分子種の絶滅。誤りの破局（Ameta ら pp.4・6–7・10） | つながりの密度 ρ*∼1/M、増え方の速さの差、系の大きさ |
 
-D01・D02・D29 と同じく、至らない形は原典の中心にありました。爆発限界は、分かれ目の下（何も起きない）と上（暴走）の両方を一つの式の両側として書いており、創造的か破壊的かで分けるより、至る形と至らない形の境目の例として並べられます。
+数学・物理学・複雑系科学と同じく、至らない形は原典の中心にありました。爆発限界は、分かれ目の下（何も起きない）と上（暴走）の両方を一つの式の両側として書いており、創造的か破壊的かで分けるより、至る形と至らない形の境目の例として並べられます。
 
 ### テンプレート由来の表示
 
-「立ち位置明示」（3〜6 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6（構造再読）」「Phase 7（横断統合）」（30 行・38 行）、「方法論的開示（S60）」（44 行）、「温度帯の分布」（86 行）、「安全弁」（90〜92 行）、「結びの温度開示」「温度帯」（264〜265 行）、「Colophon」の generator_model（267〜277 行）。49 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（writing.md §1-1・§1-8）。pres 43 行の見出し「温度」も同じです。D01・D02・D22・D29 と同じく、テンプレートで一度に直します（`cs/transform/domains/reader-rules/reader-rules-creation.md`）。
+「立ち位置明示」（3〜6 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6（構造再読）」「Phase 7（横断統合）」（30 行・38 行）、「方法論的開示（S60）」（44 行）、「温度帯の分布」（86 行）、「安全弁」（90〜92 行）、「結びの温度開示」「温度帯」（264〜265 行）、「Colophon」の generator_model（267〜277 行）。49 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（書き方の規約 §1-1・§1-8）。pres 43 行の見出し「温度」も同じです。数学・物理学・経営学・複雑系科学と同じく、テンプレートで一度に直します（旧い規則（創造とはの読み手の規則））。
 
 ### 誤りの出どころ
 
@@ -378,7 +378,7 @@ D01・D02・D29 と同じく、至らない形は原典の中心にありまし�
 | pres 65 行の「ずれ（誤差）が構造の源泉」 | 欠損駆動思考の語の持ち込み。退避版の「誤差」のレンズの見込み（確かめていない） |
 | テンプレートの表示 | 報告のテンプレート |
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 E（断定・看板・「最も」）：「構造対応が最も直接的に確認される事例の一つ」（98 行）、「5段階モデルとの構造対応が数学的に最も厳密な事例」（134 行）、「縁を最も直観的に表現する事例」（146 行）、「化学領域では、縁の対応が最も強く現れました」（230 行）、「他領域にない貢献」（260 行）、en 78 行「among the strongest examples in the whole investigation」、pres 92 行「縁を物理的実体として定量的に記述できる稀有な領域」。
 - 型 H（原典に無い体系）：「縁の3条件」（204 行）、「平衡型縁」「分岐型縁」（242 行）、「制約が創造を可能にする」（118 行・218 行）。
@@ -388,75 +388,69 @@ D01・D02・D29 と同じく、至らない形は原典の中心にありまし�
 
 ### 精読ノートと wiki・台帳の誤り（司令塔が直す）
 
-- `pd/wiki/sources/D03_winter-chambon_1986_gel-point.md` 8 行：`source.path` が `knowledge/raw/D03_winter-chambon_1986_gel-point.pdf` で、そのファイルは無い（手元の PDF は 1987 年の論文）。9 行：manifest_id が D03-S08 で、`D03_chambon-winter_1987_gel-point.md` と同じ番号の頁が二つある。11〜13 行：status が「正典」、ocr_verified が true だが、1986 年の論文の本文は手元に無い。26 行「（PDF p.684 の Synopsis 部分より）」：Synopsis は p.683。
-- `pd/wiki/sources/D03_unknown_0000_the-chemical-basis-of.md` と `pd/wiki/sources/D03_turing_1952_1952.md`：同じ D03-S05（Turing 1952）の頁が二つある（どちらも 9 行が `manifest_id: "D03-S05"`）。
-- `pd/wiki/sources/D03_ameta_2021_2021.md` 4 行：aliases の題「Self-Reproduction in Autocatalytic Chemical Reaction Systems」は誤り。正しくは「Self-Reproduction and Darwinian Evolution in Autocatalytic Chemical Reaction Systems」（精読ノート D03-S15 1 行・14 行は正しい）。
-- 台帳 D03-S15（179 行）：題が上と同じく誤り。
-- 台帳 D03-S14（178 行）：「Hordijk & Steel (2010)」は著者が欠けている。正しくは Hordijk, Hein & Steel（精読ノート D03-S14 13 行は正しい）。
-- 台帳 D03-S01（165 行）：取得先は「UNT Digital Library (NASA technical reports)」とあるが、同じ PDF が NASA の NTRS 19930093856 にある（バイト単位で同じ）。NACA TM 1374（1954、訳者 J. Vanier）の英訳であることを書き足す案。
-- 台帳 D03-S08（172 行）：取得先の rheology.tripod.com は個人向けのホスティングで、上げた人が分からない。
-- 台帳 D03-S02（166 行）：OA の URL（europepmc.org の `?pdf=render`）は、2026-11-09 に確認画面（403）を返した。
+- wiki の頁「Winter & Chambon 1986」 8 行：`source.path` が手元の PDF で、そのファイルは無い（手元の PDF は 1987 年の論文）。9 行：manifest_id が台帳の「Chambon & Winter 1987」の行で、wiki の頁「Chambon & Winter 1987」と同じ番号の頁が二つある。11〜13 行：status が「正典」、ocr_verified が true だが、1986 年の論文の本文は手元に無い。26 行「（PDF p.684 の Synopsis 部分より）」：Synopsis は p.683。
+- wiki の頁「Unknown 0000」（著者の欄が unknown）と「Turing 1952」：同じ原典（Turing 1952）の頁が二つある（どちらも 9 行の台帳の番号の欄が、台帳の同じ行を指す）。
+- wiki の頁「Ameta 2021」 4 行：aliases の題「Self-Reproduction in Autocatalytic Chemical Reaction Systems」は誤り。正しくは「Self-Reproduction and Darwinian Evolution in Autocatalytic Chemical Reaction Systems」（精読ノート「Ameta ら 2021」 1 行・14 行は正しい）。
+- 台帳の「Ameta ら 2021」の行（179 行）：題が上と同じく誤り。
+- 台帳の「Hordijk ら 2010」の行（178 行）：「Hordijk & Steel (2010)」は著者が欠けている。正しくは Hordijk, Hein & Steel（精読ノート「Hordijk ら 2010」 13 行は正しい）。
+- 台帳の「Becker-Doring 1935」の行（165 行）：取得先は「UNT Digital Library (NASA technical reports)」とあるが、同じ PDF が NASA の NTRS 19930093856 にある（バイト単位で同じ）。NACA TM 1374（1954、訳者 J. Vanier）の英訳であることを書き足す案。
+- 台帳の「Chambon & Winter 1987」の行（172 行）：取得先の rheology.tripod.com は個人向けのホスティングで、上げた人が分からない。
+- 台帳の「Johnson & Goody 2011」の行（166 行）：OA の URL（europepmc.org の `?pdf=render`）は、2026-11-09 に確認画面（403）を返した。
 
-精読ノート D03-S01・S04・S08 の引用と頁は、読んだ所では原典と合っていました（S04 の p.1878・p.1882、S08 の p.684・p.695・p.696）。
+精読ノート「Becker-Doring 1935」・「Field & Noyes 1974」・「Chambon & Winter 1987」の引用と頁は、読んだ所では原典と合っていました（「Field & Noyes 1974」の p.1878・p.1882、「Chambon & Winter 1987」の p.684・p.695・p.696）。
 
 ## 判断が要るもの
 
-pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは `docs/cs-review/README.md` の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
+pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは調べ方の計画と規約の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
 
-- Chambon & Winter（1987）の手元の PDF は、個人向けのホスティング（rheology.tripod.com）から取られ、上げた人が分かりません。archive.org の個人の写しと同じ扱いにし、「未照合（読んだ頁）」と書きました（「規約で決めたこと」の archive.org の行、`sources.md` §5-8）。予想：pjdhiro も同じ扱いを選ぶ見込みです（stance 2-6 誠実さ）。Journal of Rheology の版がブラウザで保存できれば本文照合済にできます。
+- Chambon & Winter（1987）の手元の PDF は、個人向けのホスティング（rheology.tripod.com）から取られ、上げた人が分かりません。archive.org の個人の写しと同じ扱いにし、「未照合（読んだ頁）」と書きました（「規約で決めたこと」の archive.org の行、調べ方の規約 §5-8）。予想：pjdhiro も同じ扱いを選ぶ見込みです（stance 2-6 誠実さ）。Journal of Rheology の版がブラウザで保存できれば本文照合済にできます。
 - Miller（1953）は、国際生命起源学会（ISSOL）のサイトに置かれていた誌面の写しを、Wayback Machine の記録で読みました。学会のサイトは出所が書けるので、大学や著者のサイトの写しと同じ扱いにし、性格を添えて本文照合済にしました（「規約で決めたこと」2026-11-09 の授業用の写しの行）。予想：出所が書ける写しは認める、という同じ行の趣旨に合う見込みです。違えば「未照合（読んだ頁）」に下げます。
 - Becker & Döring（1935）は、NACA の英訳（パブリックドメイン）で本文照合済（訳）にしました。物理学の記録の 10 は、同じ論文を権利の確かめられない写しで読んで「未照合」としています。NACA の英訳を確かめ先に足せば、物理学の記録の照合の状態も上げられます。直すのは司令塔です（型 K の「済んだものを使う」の逆向き）。
-- 報告の「創造的な縁と破壊的な縁の区別」は、問いとして立てず、爆発限界を至らない形の行として並べました（`docs/cs-review/README.md` の中心の問い、規約で決めたこと「射程を狭める推奨は採らない」）。
+- 報告の「創造的な縁と破壊的な縁の区別」は、問いとして立てず、爆発限界を至らない形の行として並べました（調べ方の計画と規約の中心の問い、規約で決めたこと「射程を狭める推奨は採らない」）。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-manifest は書き換えていません。番号は台帳と同じ形で、D03-S16 から振りました。Volmer & Weber（1926）は物理学の記録の案 D02-S37、Turing（1952）は D29-S16、Hordijk ら（2010）は D29-S10 と同じ文献なので、行を足さずにそちらを参照します。
+台帳は書き換えていません。Volmer & Weber（1926）は物理学の記録の案（台帳の「Volmer & Weber 1926」の行）、Turing（1952）は台帳の「Turing 1952」の行、Hordijk ら（2010）は台帳の「Hordijk ら 2010」の行と同じ文献なので、行を足さずにそちらを参照します。
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D03-S16 | Semenov, N. N. (1956). Some problems relating to chain reactions and to the theory of combustion（ノーベル講演）. *Nobel Lectures, Chemistry 1942–1962*, pp.487–514 | https://www.nobelprize.org/uploads/2018/06/semenov-lecture.pdf | url-verified（著者のまとめ直し） |
-| D03-S17 | Hinshelwood, C. N. (1956). Chemical kinetics in the past few decades（ノーベル講演）. *Nobel Lectures, Chemistry 1942–1962*, pp.474–484 | https://www.nobelprize.org/uploads/2018/06/hinshelwood-lecture.pdf | url-verified（著者のまとめ直し） |
-| D03-S18 | Semenov, N. N. (1928). *Z. Physik* 48, 571（題と DOI は確かめていない） | Springer（有料。取得を試していない） | citation-only |
-| D03-S19 | Lehn, J.-M. (1987). Supramolecular Chemistry—Scope and Perspectives（ノーベル講演）. 同じ内容は *Angew. Chem. Int. Ed. Engl.* 27(1), 89–112 (1988). DOI 10.1002/anie.198800891 | https://www.nobelprize.org/uploads/2018/06/lehn-lecture.pdf | url-verified（著者のまとめ直し） |
-| D03-S20 | Whitesides, G. M. & Grzybowski, B. (2002). Self-Assembly at All Scales. *Science* 295(5564), 2418–2421. DOI 10.1126/science.1070821 | https://courses.cs.duke.edu/spring06/cps296.5/papers/WG02.pdf （授業用の写し。誌面） | url-verified（授業用の写し） |
-| D03-S21 | Field, R. J., Kőrös, E. & Noyes, R. M. (1972). Oscillations in chemical systems. II. *J. Am. Chem. Soc.* 94(25), 8649–8664. DOI 10.1021/ja00780a001 | ACS（有料。取得を試していない） | citation-only |
-| D03-S22 | Zhabotinsky, A. M. (2007). Belousov-Zhabotinsky reaction. *Scholarpedia* 2(9):1435. DOI 10.4249/scholarpedia.1435 | http://www.scholarpedia.org/article/Belousov-Zhabotinsky_reaction | url-verified（著者のまとめ） |
-| D03-S23 | Fredrickson, G. H. & Helfand, E. (1987). Fluctuation effects in the theory of microphase separation in block copolymers. *J. Chem. Phys.* 87(1), 697–705. DOI 10.1063/1.453566 | AIP（有料。自動取得で 403） | citation-only |
-| D03-S24 | Flory, P. J. (1941). Molecular Size Distribution in Three Dimensional Polymers. I. Gelation. *J. Am. Chem. Soc.* 63(11), 3083–3090. DOI 10.1021/ja01856a061 | ACS（有料。取得を試していない） | citation-only |
-| D03-S25 | Stockmayer, W. H. (1943). Theory of Molecular Size Distribution and Gel Formation in Branched-Chain Polymers. *J. Chem. Phys.* 11(2), 45–55. DOI 10.1063/1.1723803 | AIP（有料。取得を試していない） | citation-only |
-| D03-S26 | Winter, H. H. & Chambon, F. (1986). Analysis of Linear Viscoelasticity of a Crosslinking Polymer at the Gel Point. *J. Rheol.* 30(2), 367–382. DOI 10.1122/1.549853 | AIP（有料。取得を試していない） | citation-only |
-| D03-S27 | Flory, P. J. (1974). Spatial Configuration of Macromolecular Chains（ノーベル講演） | https://www.nobelprize.org/uploads/2018/06/flory-lecture.pdf | url-verified（ゲル化は扱っていない） |
-| D03-S28 | Langmuir, I. (1918). The adsorption of gases on plane surfaces of glass, mica and platinum. *J. Am. Chem. Soc.* 40(9), 1361–1403. DOI 10.1021/ja02242a004 | ACS（有料。取得を試していない） | citation-only |
-| D03-S29 | Goldbeter, A. (2018). Dissipative structures in biological systems: bistability, oscillations, spatial patterns and waves. *Phil. Trans. R. Soc. A* 376(2124), 20170376. DOI 10.1098/rsta.2017.0376 | https://pmc.ncbi.nlm.nih.gov/articles/PMC6000149/ （PMC の全文の頁。Royal Society と Europe PMC の PDF は確認画面） | url-verified |
-| D03-S30 | Novák, B. & Tyson, J. J. (2008). Design principles of biochemical oscillators. *Nat. Rev. Mol. Cell Biol.* 9(12), 981–991. DOI 10.1038/nrm2530 | PMC2796343（著者稿。NCBI の efetch で XML） | url-verified（著者稿） |
-| D03-S31 | Prigogine, I. & Lefever, R. (1968). Symmetry Breaking Instabilities in Dissipative Systems. II. *J. Chem. Phys.* 48(4), 1695–1700. DOI 10.1063/1.1668896 | AIP（有料。取得を試していない） | citation-only |
-| D03-S32 | Gilbert, W. (1986). Origin of life: The RNA world. *Nature* 319(6055), 618. DOI 10.1038/319618a0 | Nature（有料。取得を試していない） | citation-only |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| Semenov, N. N. (1956). Some problems relating to chain reactions and to the theory of combustion（ノーベル講演）. *Nobel Lectures, Chemistry 1942–1962*, pp.487–514 | https://www.nobelprize.org/uploads/2018/06/semenov-lecture.pdf | 取得先を確かめた（著者のまとめ直し） |
+| Hinshelwood, C. N. (1956). Chemical kinetics in the past few decades（ノーベル講演）. *Nobel Lectures, Chemistry 1942–1962*, pp.474–484 | https://www.nobelprize.org/uploads/2018/06/hinshelwood-lecture.pdf | 取得先を確かめた（著者のまとめ直し） |
+| Semenov, N. N. (1928). *Z. Physik* 48, 571（題と DOI は確かめていない） | Springer（有料。取得を試していない） | 書誌だけ |
+| Lehn, J.-M. (1987). Supramolecular Chemistry—Scope and Perspectives（ノーベル講演）. 同じ内容は *Angew. Chem. Int. Ed. Engl.* 27(1), 89–112 (1988). DOI 10.1002/anie.198800891 | https://www.nobelprize.org/uploads/2018/06/lehn-lecture.pdf | 取得先を確かめた（著者のまとめ直し） |
+| Whitesides, G. M. & Grzybowski, B. (2002). Self-Assembly at All Scales. *Science* 295(5564), 2418–2421. DOI 10.1126/science.1070821 | https://courses.cs.duke.edu/spring06/cps296.5/papers/WG02.pdf （授業用の写し。誌面） | 取得先を確かめた（授業用の写し） |
+| Field, R. J., Kőrös, E. & Noyes, R. M. (1972). Oscillations in chemical systems. II. *J. Am. Chem. Soc.* 94(25), 8649–8664. DOI 10.1021/ja00780a001 | ACS（有料。取得を試していない） | 書誌だけ |
+| Zhabotinsky, A. M. (2007). Belousov-Zhabotinsky reaction. *Scholarpedia* 2(9):1435. DOI 10.4249/scholarpedia.1435 | http://www.scholarpedia.org/article/Belousov-Zhabotinsky_reaction | 取得先を確かめた（著者のまとめ） |
+| Fredrickson, G. H. & Helfand, E. (1987). Fluctuation effects in the theory of microphase separation in block copolymers. *J. Chem. Phys.* 87(1), 697–705. DOI 10.1063/1.453566 | AIP（有料。自動取得で 403） | 書誌だけ |
+| Flory, P. J. (1941). Molecular Size Distribution in Three Dimensional Polymers. I. Gelation. *J. Am. Chem. Soc.* 63(11), 3083–3090. DOI 10.1021/ja01856a061 | ACS（有料。取得を試していない） | 書誌だけ |
+| Stockmayer, W. H. (1943). Theory of Molecular Size Distribution and Gel Formation in Branched-Chain Polymers. *J. Chem. Phys.* 11(2), 45–55. DOI 10.1063/1.1723803 | AIP（有料。取得を試していない） | 書誌だけ |
+| Winter, H. H. & Chambon, F. (1986). Analysis of Linear Viscoelasticity of a Crosslinking Polymer at the Gel Point. *J. Rheol.* 30(2), 367–382. DOI 10.1122/1.549853 | AIP（有料。取得を試していない） | 書誌だけ |
+| Flory, P. J. (1974). Spatial Configuration of Macromolecular Chains（ノーベル講演） | https://www.nobelprize.org/uploads/2018/06/flory-lecture.pdf | 取得先を確かめた（ゲル化は扱っていない） |
+| Langmuir, I. (1918). The adsorption of gases on plane surfaces of glass, mica and platinum. *J. Am. Chem. Soc.* 40(9), 1361–1403. DOI 10.1021/ja02242a004 | ACS（有料。取得を試していない） | 書誌だけ |
+| Goldbeter, A. (2018). Dissipative structures in biological systems: bistability, oscillations, spatial patterns and waves. *Phil. Trans. R. Soc. A* 376(2124), 20170376. DOI 10.1098/rsta.2017.0376 | https://pmc.ncbi.nlm.nih.gov/articles/PMC6000149/ （PMC の全文の頁。Royal Society と Europe PMC の PDF は確認画面） | 取得先を確かめた |
+| Novák, B. & Tyson, J. J. (2008). Design principles of biochemical oscillators. *Nat. Rev. Mol. Cell Biol.* 9(12), 981–991. DOI 10.1038/nrm2530 | PMC2796343（著者稿。NCBI の efetch で XML） | 取得先を確かめた（著者稿） |
+| Prigogine, I. & Lefever, R. (1968). Symmetry Breaking Instabilities in Dissipative Systems. II. *J. Chem. Phys.* 48(4), 1695–1700. DOI 10.1063/1.1668896 | AIP（有料。取得を試していない） | 書誌だけ |
+| Gilbert, W. (1986). Origin of life: The RNA world. *Nature* 319(6055), 618. DOI 10.1038/319618a0 | Nature（有料。取得を試していない） | 書誌だけ |
 
 既存の行に書き足す案：
 
-- D03-S01（Becker & Döring 1935）：手元の PDF は NACA TM 1374（1954 年 9 月、訳者 J. Vanier）の英訳。NTRS 19930093856（https://ntrs.nasa.gov/api/citations/19930093856/downloads/19930093856.pdf ）と同じファイル。パブリックドメイン。
-- D03-S02（Johnson & Goody 2011）：本文は PMC の著者稿で読める。1913 年の論文の英訳は補遺（`NIHMS324930-supplement-1_si_001.pdf`）で、PMC と Europe PMC で確認画面。
-- D03-S04（Field & Noyes 1974）：手元の PDF は AIP の誌面（2012 年の AIP のサイトの表紙つき）。授業用の写しの元の URL が台帳に無い。
-- D03-S08（Chambon & Winter 1987）：手元の PDF は走査の画像で文字の層が無い。取得先の rheology.tripod.com は上げた人が分からない。
-- D03-S09（Miller 1953）：誌面の写しが Wayback Machine の ISSOL のサイトの記録にある（http://web.archive.org/web/20090930124014/http://www.issol.org/miller/miller1953.pdf ）。台帳の OA の代替（ハワイ大学の FTP）は 2026-11-09 に 502。
-- D03-S14（Hordijk ら 2010）：著者を Hordijk, Hein & Steel に。D29-S10 と同じ文献。
-- D03-S15（Ameta ら 2021）：題を「Self-Reproduction and Darwinian Evolution in Autocatalytic Chemical Reaction Systems」に。PDF は https://mdpi-res.com/d_attachment/life/life-11-00308/article_deploy/life-11-00308.pdf で取れる。
+- 台帳の「Becker-Doring 1935」の行（Becker & Döring 1935）：手元の PDF は NACA TM 1374（1954 年 9 月、訳者 J. Vanier）の英訳。NTRS 19930093856（https://ntrs.nasa.gov/api/citations/19930093856/downloads/19930093856.pdf ）と同じファイル。パブリックドメイン。
+- 台帳の「Johnson & Goody 2011」の行（Johnson & Goody 2011）：本文は PMC の著者稿で読める。1913 年の論文の英訳は補遺（`NIHMS324930-supplement-1_si_001.pdf`）で、PMC と Europe PMC で確認画面。
+- 台帳の「Field & Noyes 1974」の行（Field & Noyes 1974）：手元の PDF は AIP の誌面（2012 年の AIP のサイトの表紙つき）。授業用の写しの元の URL が台帳に無い。
+- 台帳の「Chambon & Winter 1987」の行（Chambon & Winter 1987）：手元の PDF は走査の画像で文字の層が無い。取得先の rheology.tripod.com は上げた人が分からない。
+- 台帳の「Miller 1953」の行（Miller 1953）：誌面の写しが Wayback Machine の ISSOL のサイトの記録にある（http://web.archive.org/web/20090930124014/http://www.issol.org/miller/miller1953.pdf ）。台帳の OA の代替（ハワイ大学の FTP）は 2026-11-09 に 502。
+- 台帳の「Hordijk ら 2010」の行（Hordijk ら 2010）：著者を Hordijk, Hein & Steel に。台帳の「Hordijk ら 2010」の行と同じ文献。
+- 台帳の「Ameta ら 2021」の行（Ameta ら 2021）：題を「Self-Reproduction and Darwinian Evolution in Autocatalytic Chemical Reaction Systems」に。PDF は https://mdpi-res.com/d_attachment/life/life-11-00308/article_deploy/life-11-00308.pdf で取れる。
 
 ## ブラウザでの保存が要る PDF
 
-| 台帳の行 | 文献 | ダウンロード先 | 保存名の案 |
-|---|---|---|---|
-| D03-S02 | Johnson & Goody (2011) の補遺（Michaelis & Menten 1913 の英訳） | https://pmc.ncbi.nlm.nih.gov/articles/PMC3381512/ の補遺 `NIHMS324930-supplement-1_si_001.pdf` | `D03_johnson-goody_2011_michaelis-menten-1913-translation-si.pdf` |
-| D03-S03 | Leibler (1980) *Macromolecules* 13, 1602 | https://pubs.acs.org/doi/pdf/10.1021/ma60078a047 | `D03_leibler_1980_theory-microphase-separation-block-copolymers.pdf` |
-| D03-S23 | Fredrickson & Helfand (1987) *J. Chem. Phys.* 87, 697 | https://doi.org/10.1063/1.453566 | `D03_fredrickson-helfand_1987_fluctuation-effects-microphase-separation.pdf` |
-| D03-S08 | Chambon & Winter (1987) *J. Rheol.* 31, 683（出所の書ける版） | https://doi.org/10.1122/1.549955 | `D03_chambon-winter_1987_gel-point.pdf`（今のファイルと入れ替え） |
-| D03-S29 | Goldbeter (2018) *Phil. Trans. R. Soc. A* 376, 20170376（頁のある PDF） | https://royalsocietypublishing.org/doi/pdf/10.1098/rsta.2017.0376 | `D03_goldbeter_2018_dissipative-structures-biological-systems.pdf` |
+自動で取れなかった原典のうち、ブラウザでの保存を頼むものは、作業の記録（[Issue #73](https://github.com/uminomae/project-design-theory/issues/73)）の表にまとめました。
 
 ## 手順について分かったこと
 
 - 化学の原典は、分かれ目の上と下で何が起きるかを、はっきり書いていました（臨界の滴の半径、臭化物イオンの臨界の濃度と係数 f の範囲、分岐と停止の速さ、ゲル点 pc、つながりの密度 ρ*）。下で起きることは「何も起きない」でなく、蒸発する・定常に落ち着く・溶液のまま・反応の跡が無い・集合ができない、という形で書かれていて、至らない形の材料になりました。Semenov の講演は、何も起きない形と暴走する形を、同じ分かれ目の両側として書いていました。
 - 有料の原論文は、ノーベル講演（Semenov・Hinshelwood・Lehn）と PMC の著者稿（Johnson & Goody・Novák & Tyson）と授業の頁（Whitesides & Grzybowski）で、論の芯に当たれました。Flory のノーベル講演は鎖の形の話でゲル化を扱っておらず、講演がいつも論の確かめ先になるとは限りませんでした。
-- 古い論文の政府機関の英訳（NACA TM 1374）は、手元の PDF と NTRS の PDF がバイト単位で同じで、パブリックドメインとして本文照合済（訳）にできました。済んだ分野（D02）が同じ論文を権利の確かめられない写しで読んでいたので、分野をまたいで照合の状態を見直す必要がありました。
+- 古い論文の政府機関の英訳（NACA TM 1374）は、手元の PDF と NTRS の PDF がバイト単位で同じで、パブリックドメインとして本文照合済（訳）にできました。済んだ分野（物理学）が同じ論文を権利の確かめられない写しで読んでいたので、分野をまたいで照合の状態を見直す必要がありました。
 - PMC の XML（efetch）は、出版社の権利によって要旨だけのことがありました（Goldbeter 2018）。そのときは PMC の記事の頁（HTML）で全文が読めました。Europe PMC の REST は 500、Europe PMC の PDF は確認画面でした。
 - 台帳の取得先が、その日は落ちているもの（ハワイ大学の FTP の 502）と、今は無いもの（ISSOL の 404。Wayback に記録あり）がありました。確認画面と分けて書きました。
-- 台帳の題と著者が、Crossref と二つ合いませんでした（D03-S14・S15）。wiki に同じ原典の頁が二つある組も二つありました（D03-S05・S08）。
+- 台帳の題と著者が、Crossref と二つ合いませんでした。wiki に同じ原典の頁が二つある組も二つありました。

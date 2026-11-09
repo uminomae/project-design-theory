@@ -14,13 +14,13 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D21-econo
 
 経済学で原典を読めた論の多くは、古いものと新しいもののぶつかりや、期待が裏切られることを、過程の中に書いていました。シュンペーター（1912）は、新しい結合を行う人が、周りの社会の抵抗と自分の内の抵抗にぶつかり、それと戦うと書きます。新しい結合は、生産の手段を古い使い道から引き抜いて行われ、適応できない経営は滅びることがあります（1912・1942）。ハイエク（1968 年の講演、2002 年の英訳）は、競争の効き目は、ある意図をくじき、ある期待を裏切ることで現れると書き、期待が裏切られることを通して期待が一致していくと書きます。ケインズ（1936・1937）は、慣行に頼った見通しは脆い土台の上にあり、突然に激しく変わると書きます。ミンスキー（1992）は、長い好況のあいだに金融の構造が安定から不安定へ移り、資産の価値の崩落に至ると書きます。これは統合よりも、行き過ぎて崩れる形です。アーサー（1983）とクルーグマン（1990）は、収穫が増える条件で、競い合う技術や地域の片方が他方を締め出し、ときに劣ったほうに固まると書きます。一方、ネルソン＆ウィンター・ノースは要旨まで、セン・ペンローズは書籍の本文を開けず、未照合のままです。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D21-economics.md`、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論を取り上げ、アーサーとミンスキーを「強い対応」（全5段階）としています。英語版は 10 の理論を全部「Strong」とし、プレゼン版は 7 つを「強い対応」としています。報告は、調べた跡（phase6・phase7）が持ち込んだ抱持と欠損の語（「保持する第三の選択肢」「誤差の処理方法」）を、本文と英語版に残しています。シュンペーターの節は、古い経営が滅びることを5段階のどこにも置いていません。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
+今の公開報告（「30 領域調査報告」の経済学の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論を取り上げ、アーサーとミンスキーを「強い対応」（全5段階）としています。英語版は 10 の理論を全部「Strong」とし、プレゼン版は 7 つを「強い対応」としています。報告は、調べた跡（phase6・phase7）が持ち込んだ抱持と欠損の語（「保持する第三の選択肢」「誤差の処理方法」）を、本文と英語版に残しています。シュンペーターの節は、古い経営が滅びることを5段階のどこにも置いていません。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D21-economics.md) にあります。退避版の判定（Accept・採用確定・縁🔴 など）は、今の照合の状態の根拠にしていません。
 
 ## 一面の表
 
-照合の状態は `docs/rules/sources.md` §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。 この表で、原典の構造を対立・衝突・統合と呼ぶことと、括弧の中の並べ方の名（片方の勝利・固着など）は、Claude の読み替えです。
+照合の状態は調べ方の規約 §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。 この表で、原典の構造を対立・衝突・統合と呼ぶことと、括弧の中の並べ方の名（片方の勝利・固着など）は、Claude の読み替えです。
 
 | 論 | 対立 | 衝突 | 統合／新たな安定、または統合に至らずにどう終わったか | 論の微細さ | 照合の状態 |
 |---|---|---|---|---|---|
@@ -46,9 +46,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Schumpeter, J. (1912). *Theorie der wirtschaftlichen Entwicklung*. Leipzig: Duncker & Humblot. manifest D21-S01。手元の PDF（`cs/knowledge/raw/D21_schumpeter_1912_theorie-der-wirtschaftlichen-entwicklung.pdf`）。先頭は %PDF。表紙は「Nachdruck der 1. Auflage von 1912」で、2006 年の Duncker & Humblot の復刻（Röpke・Stiller の序文つき、© 2006）でした。本文の頁は 1912 年の頁です。読んだ頁：p.103・pp.110・117–121・132・158–159・174・452–453。
-- Schumpeter, J. A. (1939). *Business Cycles*, Vol. I. McGraw-Hill. manifest D21-S02。手元の PDF は文字の層が無いので、同じ Internet Archive の資料（in.ernet.dli.2015.150123）の OCR の文字（`_djvu.txt`）で読みました。表紙と著者・題・巻は一致しましたが、奥付の年は OCR で読み取れませんでした。読んだ頁：pp.100–101（第 3 章「How the Economic System Generates Evolution」）。
-- Schumpeter, J. A. (1942). *Capitalism, Socialism and Democracy*. Harper & Brothers. manifest D21-S03。https://archive.org/details/in.ernet.dli.2015.190072 （台帳の OA）の OCR の文字で読みました。表紙の裏に「SECOND EDITION」とあり、1947 年の第 2 版と見られます。第 7 章の頁は初版と同じ pp.81–86 と見られますが、初版で確かめてはいません。読んだ頁：p.61（第 2 部の序）・pp.81–86（第 7 章）・p.90（第 8 章）。
+- Schumpeter, J. (1912). *Theorie der wirtschaftlichen Entwicklung*. Leipzig: Duncker & Humblot. 台帳に行がある。手元の PDF。先頭は %PDF。表紙は「Nachdruck der 1. Auflage von 1912」で、2006 年の Duncker & Humblot の復刻（Röpke・Stiller の序文つき、© 2006）でした。本文の頁は 1912 年の頁です。読んだ頁：p.103・pp.110・117–121・132・158–159・174・452–453。
+- Schumpeter, J. A. (1939). *Business Cycles*, Vol. I. McGraw-Hill. 台帳に行がある。手元の PDF は文字の層が無いので、同じ Internet Archive の資料（in.ernet.dli.2015.150123）の OCR の文字（`_djvu.txt`）で読みました。表紙と著者・題・巻は一致しましたが、奥付の年は OCR で読み取れませんでした。読んだ頁：pp.100–101（第 3 章「How the Economic System Generates Evolution」）。
+- Schumpeter, J. A. (1942). *Capitalism, Socialism and Democracy*. Harper & Brothers. 台帳に行がある。https://archive.org/details/in.ernet.dli.2015.190072 （台帳の OA）の OCR の文字で読みました。表紙の裏に「SECOND EDITION」とあり、1947 年の第 2 版と見られます。第 7 章の頁は初版と同じ pp.81–86 と見られますが、初版で確かめてはいません。読んだ頁：p.61（第 2 部の序）・pp.81–86（第 7 章）・p.90（第 8 章）。
 
 **照合の状態**：本文照合済（1912 は 2006 年の復刻、1939 と 1942 は Internet Archive の OCR の文字）。
 
@@ -85,8 +85,8 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Hayek, F. A. (1945). The Use of Knowledge in Society. *American Economic Review* 35(4), 519–530. manifest D21-S04。手元の PDF（Liberty Fund の Online Library of Liberty の版）。先頭は %PDF で、著者・題・年が一致しました。この版には AER の頁が無いので、節の番号で控えます。読んだ所：§I・§II・§IV・§V・§VI。
-- Hayek, F. A. (2002 [1968]). Competition as a Discovery Procedure. Translated by M. S. Snow. *Quarterly Journal of Austrian Economics* 5(3), 9–23. DOI 10.1007/s12113-002-1029-0（Crossref で誌・巻・号・頁・年が一致。Crossref の著者の欄は訳者の Snow になっている）。manifest D21-S06。手元の PDF（Mises Institute の版）。読んだ頁：p.10・p.14・p.15・pp.19–20。
+- Hayek, F. A. (1945). The Use of Knowledge in Society. *American Economic Review* 35(4), 519–530. 台帳に行がある。手元の PDF（Liberty Fund の Online Library of Liberty の版）。先頭は %PDF で、著者・題・年が一致しました。この版には AER の頁が無いので、節の番号で控えます。読んだ所：§I・§II・§IV・§V・§VI。
+- Hayek, F. A. (2002 [1968]). Competition as a Discovery Procedure. Translated by M. S. Snow. *Quarterly Journal of Austrian Economics* 5(3), 9–23. DOI 10.1007/s12113-002-1029-0（Crossref で誌・巻・号・頁・年が一致。Crossref の著者の欄は訳者の Snow になっている）。台帳に行がある。手元の PDF（Mises Institute の版）。読んだ頁：p.10・p.14・p.15・pp.19–20。
 
 **照合の状態**：本文照合済。
 
@@ -108,7 +108,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 | 今の報告の行 | 判定 | 重さ | 中身 |
 |---|---|---|---|
-| ja 104 行「社会における知識の利用（1945）において…意図せざる秩序（自生的秩序、spontaneous order）を生みます」 | 帰属違い | 中 | 1945 年の論文に「spontaneous order」の語は無く、価格の体系が「spontaneously grown up」とする読みを退けている（§VI）。語は 1968 年の講演（2002 p.14）にある。en 87 行の「Hayek (1945, 1973)」の 1973（*Law, Legislation and Liberty*、D21-S05）は開けていない |
+| ja 104 行「社会における知識の利用（1945）において…意図せざる秩序（自生的秩序、spontaneous order）を生みます」 | 帰属違い | 中 | 1945 年の論文に「spontaneous order」の語は無く、価格の体系が「spontaneously grown up」とする読みを退けている（§VI）。語は 1968 年の講演（2002 p.14）にある。en 87 行の「Hayek (1945, 1973)」の 1973（*Law, Legislation and Liberty*、台帳の「Hayek 1973」の行）は開けていない |
 | ja 104 行「競争は発見手続きである」「競争プロセスの本質は結果が予測不能であることにある」 | 一致 | ― | 2002 p.10 |
 | ja 104〜108 行 意図をくじき期待を裏切ること、強制、多数が少数を止める場合に触れない | 抜け | 高 | 衝突と至らない形が原典にある（p.10・p.15・pp.19–20） |
 | ja 108 行「縁の対応はやや弱い…『競争プロセス全体』を縁として読む方が構造的に適切」、ja 200 行「出会い型」 | 未判定 | 中 | 縁を接続や出会いとして読む書き方。原典で衝突が書かれる所（裏切り・強制）とは別の所に縁を置いている |
@@ -120,8 +120,8 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Keynes, J. M. (1936). *The General Theory of Employment, Interest and Money*. London: Macmillan. manifest D21-S07。手元の PDF は文字の層が無いので、同じ Internet Archive の資料（in.ernet.dli.2015.115101）の OCR の文字で読みました。読んだ頁：pp.152–153・pp.161–162（第 12 章）。
-- Keynes, J. M. (1937). The General Theory of Employment. *Quarterly Journal of Economics* 51(2), 209–223. DOI 10.2307/1882087（Crossref で一致）。manifest D21-S08。https://www.hetwebsite.net/het/texts/keynes/keynes1937qje.pdf を取り、先頭が %PDF で、表紙の書誌が一致することを確かめました。これは JSTOR から落とした写しを第三者が置いたもので、権利は確かめていません。読んだ頁：pp.213–216。
+- Keynes, J. M. (1936). *The General Theory of Employment, Interest and Money*. London: Macmillan. 台帳に行がある。手元の PDF は文字の層が無いので、同じ Internet Archive の資料（in.ernet.dli.2015.115101）の OCR の文字で読みました。読んだ頁：pp.152–153・pp.161–162（第 12 章）。
+- Keynes, J. M. (1937). The General Theory of Employment. *Quarterly Journal of Economics* 51(2), 209–223. DOI 10.2307/1882087（Crossref で一致）。台帳に行がある。https://www.hetwebsite.net/het/texts/keynes/keynes1937qje.pdf を取り、先頭が %PDF で、表紙の書誌が一致することを確かめました。これは JSTOR から落とした写しを第三者が置いたもので、権利は確かめていません。読んだ頁：pp.213–216。
 
 **照合の状態**：1936 年の本は本文照合済（Internet Archive の OCR の文字）。1937 年の論文は未照合（第三者が置いた写しで読んだ頁を書く。2026-11-09 の一巡で書き分けた）。
 
@@ -148,7 +148,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨**：測れる不確かさ（リスク）は、実際には不確かさではない。測れない「真の」不確実性が、企業という経済の組織の形と、企業家の特別な所得（利潤）を生む。人は自分の判断にどれだけ自信があるかで違い、自信のある人が不確実性を引き受け、臆病な人に決まった所得を保証する。
 
-**一次情報**：Knight, F. H. (1921). *Risk, Uncertainty and Profit*. Boston: Houghton Mifflin. manifest D21-S09。手元の PDF（`cs/knowledge/raw/D21_knight_1921_risk-uncertainty-profit.pdf`、Internet Archive）。先頭は %PDF で、表紙は London School of Economics の「Series of Reprints of Scarce Tracts」の版（1933 年の新しい序文つき）でした。本文の頁は 1921 年の版と同じと見られますが、確かめていません。読んだ頁：p.20・pp.232–233・pp.269–270・pp.295–296。
+**一次情報**：Knight, F. H. (1921). *Risk, Uncertainty and Profit*. Boston: Houghton Mifflin. 台帳に行がある。手元の PDF（手元の PDF、Internet Archive）。先頭は %PDF で、表紙は London School of Economics の「Series of Reprints of Scarce Tracts」の版（1933 年の新しい序文つき）でした。本文の頁は 1921 年の版と同じと見られますが、確かめていません。読んだ頁：p.20・pp.232–233・pp.269–270・pp.295–296。
 
 **照合の状態**：本文照合済（LSE の再刊の版）。
 
@@ -178,12 +178,12 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Nelson, R. R. & Winter, S. G. (1982). *An Evolutionary Theory of Economic Change*. Harvard University Press. manifest D21-S10（blocked-access）。開けていません。
+- Nelson, R. R. & Winter, S. G. (1982). *An Evolutionary Theory of Economic Change*. Harvard University Press. 台帳に行がある（自動では取れない）。開けていません。
 - Nelson, R. R. & Winter, S. G. (2002). Evolutionary Theorizing in Economics. *Journal of Economic Perspectives* 16(2), 23–46. DOI 10.1257/0895330027247（Crossref で題・著者・年・巻・頁が一致し、要旨を読んだ）。AEA の JEP は OA ですが、2026-11-08 に自動の取得は確認画面（Cloudflare）で止まりました。ブラウザでの保存が要ります。
 
 **照合の状態**：要旨照合済（2002）・未照合（1982 の書籍）。
 
-**対立・衝突・統合の読み**：本文を読めていないので、書きません。近い論として、経営学の記録（D22）の March（1991）は、既存の手順での能力の高まりが、劣った活動で優れた活動を締め出すことがあると書いています。満足水準とルーティンの論が、同じ形を書くかは、本文を読んでから確かめます。
+**対立・衝突・統合の読み**：本文を読めていないので、書きません。近い論として、経営学の記録（経営学）の March（1991）は、既存の手順での能力の高まりが、劣った活動で優れた活動を締め出すことがあると書いています。満足水準とルーティンの論が、同じ形を書くかは、本文を読んでから確かめます。
 
 **今の報告から直すこと**：
 
@@ -247,7 +247,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 146 行「制度変化の源泉は相対価格や選好の変化が既存制度との摩擦を生むこと」 | 未判定 | 低 | 未照合（書籍） |
 | ja 150 行「束を変えても場が変わらない」 | 付け足し | 低 | 報告の読み替え。原典の語でない |
 | ja 146〜150 行 停滞・衰退に向かう変化に触れない | 抜け | 中 | 要旨にある（1991）。ja 188 行のパターン 1 は「経路依存による制度の慣性が場を固定化」と書くが、停滞と衰退は書かない |
-| en 133 行 ランシエールの感性の分配（D15）との構造の対応 | 未判定 | 低 | 分野をまたぐ対応で、どちらの原典も確かめていない |
+| en 133 行 ランシエールの感性の分配（美学）との構造の対応 | 未判定 | 低 | 分野をまたぐ対応で、どちらの原典も確かめていない |
 
 ### 8. セン：ケイパビリティ
 
@@ -289,7 +289,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 - 二つの定理（pp.7–8）。物価を抑えようと金融を引き締めると、投機的な主体はポンツィの主体になり、それまでのポンツィの主体の正味の価値は「quickly evaporate」。手持ちを売って帳尻を合わせることが「a collapse of asset values」に至りやすい（p.8）。
 - この仮説は、外からのショックに頼らない。景気循環は、資本主義の経済の内側の動きと、経済を妥当な範囲にとどめるための介入と規制の両方から組み上がる（p.8）。
 
-**対立・衝突・統合の読み**：原典は、安定が長く続くこと自体が不安定な構造をつくる、と書いています。悪いこと（ポンツィの金融、崩落）は、外からでなく過程の内側から生まれます。ただし、1992 年の論文が書くのは、崩落を包んで新しい安定に至る筋でなく、偏りが自らを養って広がり、介入がそれを抑える、の繰り返しです。ここまでは原典に書いてあることです。Claude は、これを統合に至らない形（暴走と崩落）として並べ、介入を、行き過ぎの両側を抑える仕組みとして読みます。history.md は、報告が創造的破壊とミンスキーを「包摂として読む」例に挙げています。原典は、悪いことを過程の中に置く点では包む側ですが、それが新しいものの生まれに欠かせない形とは書いていません。
+**対立・衝突・統合の読み**：原典は、安定が長く続くこと自体が不安定な構造をつくる、と書いています。悪いこと（ポンツィの金融、崩落）は、外からでなく過程の内側から生まれます。ただし、1992 年の論文が書くのは、崩落を包んで新しい安定に至る筋でなく、偏りが自らを養って広がり、介入がそれを抑える、の繰り返しです。ここまでは原典に書いてあることです。Claude は、これを統合に至らない形（暴走と崩落）として並べ、介入を、行き過ぎの両側を抑える仕組みとして読みます。調べ直しの経緯は、報告が創造的破壊とミンスキーを「包摂として読む」例に挙げています。原典は、悪いことを過程の中に置く点では包む側ですが、それが新しいものの生まれに欠かせない形とは書いていません。
 
 **今の報告から直すこと**：
 
@@ -325,7 +325,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Krugman, P. (1991). Increasing Returns and Economic Geography. *Journal of Political Economy* 99(3), 483–499. DOI 10.1086/261763（Crossref で一致）。manifest D21-S13（`[similar-papers]`）。
+- Krugman, P. (1991). Increasing Returns and Economic Geography. *Journal of Political Economy* 99(3), 483–499. DOI 10.1086/261763（Crossref で一致）。台帳に行がある（`[similar-papers]`）。
 - 同じ論文の作業論文の版：Krugman, P. (1990). Increasing Returns and Economic Geography. NBER Working Paper No. 3275（March 1990）。https://www.nber.org/system/files/working_papers/w3275/w3275.pdf を取り、先頭が %PDF で、表紙の著者・題・番号・年を確かめました。読んだ頁：pp.6–8（PDF pp.8–10）・p.21（PDF p.23）。
 
 **照合の状態**：本文照合済（1990 の作業論文）。
@@ -362,11 +362,11 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ペンローズ | 条件付き。場 | Strong。五つ | 部分。場→渦 | Accept |
 | 提唱者の年 | 本文に 1912・1942・1936・1937・1921・1982・1994・2015・1990・1999・1986・1992・1959 | 表にハイエク（1945, 1973）、ミンスキー（1986）だけ | 表にハイエク（1945, 1973） | ミンスキー 1986・1992 |
 
-三つの版の件数がすべて違います。D18・D20・D22 と同じく、版ごとに別に生成されたことが出どころと見られます。en の表には 2026-07-03 の接地の注記（57 行）があり、ネルソン＆ウィンターの節にだけ、原典を読んでいないという注記（117 行）があります。ja と pres には注記がありません。シュンペーターが外からか内からかも、ja（212 行「内部から」）と pres・en（外から来る力）で逆になっています。
+三つの版の件数がすべて違います。社会学・法学・政治学・経営学と同じく、版ごとに別に生成されたことが出どころと見られます。en の表には 2026-07-03 の接地の注記（57 行）があり、ネルソン＆ウィンターの節にだけ、原典を読んでいないという注記（117 行）があります。ja と pres には注記がありません。シュンペーターが外からか内からかも、ja（212 行「内部から」）と pres・en（外から来る力）で逆になっています。
 
 ### テンプレート由来の表示
 
-「立ち位置明示」（3 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6」「Phase 7」（30・38 行）、「方法論的開示（S60）」（46 行）、「温度帯の分布」（86 行）、「安全弁」（88 行）、「結びの温度開示」「温度帯」（242〜247 行）、「Colophon」「generator_model」（249〜259 行）。49〜51 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（writing.md §1-1・§1-8）。30 行の方法の節は「各理論について一次文献の特定箇所を参照し、理論の内在的構造を確認しました」と書き、34 行の「強い対応」を「一次文献の具体的テキスト箇所による裏付けがあるもの」と定義していますが、ネルソン＆ウィンター・セン・ペンローズの書籍は読まれていません。D18・D20・D22 と同じく、報告のテンプレートが原因で、個別でなくテンプレートで直します。
+「立ち位置明示」（3 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6」「Phase 7」（30・38 行）、「方法論的開示（S60）」（46 行）、「温度帯の分布」（86 行）、「安全弁」（88 行）、「結びの温度開示」「温度帯」（242〜247 行）、「Colophon」「generator_model」（249〜259 行）。49〜51 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（書き方の規約 §1-1・§1-8）。30 行の方法の節は「各理論について一次文献の特定箇所を参照し、理論の内在的構造を確認しました」と書き、34 行の「強い対応」を「一次文献の具体的テキスト箇所による裏付けがあるもの」と定義していますが、ネルソン＆ウィンター・セン・ペンローズの書籍は読まれていません。社会学・法学・政治学・経営学と同じく、報告のテンプレートが原因で、個別でなくテンプレートで直します。
 
 ### 誤りの出どころ
 
@@ -386,7 +386,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | 版ごとの件数と段の食い違い | ja・en・pres が別々に生成されたこと |
 | 型 F の表示 | 報告のテンプレート |
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 E と「最も」の言い切り：「全5段階にわたる構造的対応が最も鮮明な理論です」（140 行）、「解釈の恣意性が最も小さい理論です」（166 行）、「5段階のうち『縁』について最も多様な実装を提供しています」（200 行）、en「the most comprehensive description」（82 行）、「the only theory that…」（91・99・141・149 行ほか）。30 領域を数えた跡がありません。
 - 型 H（原典に無い体系と数）：「縁の多型性——7つの分岐タイプ」（198〜200 行）は九つの型を並べ、名は報告と退避版が付けたものです。「分岐の3つの構造的条件」（138 行）も報告の基準です。
@@ -396,38 +396,38 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 ## 判断が要るもの
 
-1. 書籍だけで本文を開けなかった論（セン・ペンローズ）と、要旨までの論（ネルソン＆ウィンター・ノース）は、この分野の論として残し、照合の状態を書き、「強い」「部分的」「条件付き」の判定を外します（規約で答えが出るので決めました。D14・D18・D20 と同じ。stance 2-6、`sources.md` §3-3）。ネルソン＆ウィンター（2002）とノース（1991）は JEP の OA で、ブラウザで保存してもらえれば本文に当たれます（Issue #73 に残します）。
+1. 書籍だけで本文を開けなかった論（セン・ペンローズ）と、要旨までの論（ネルソン＆ウィンター・ノース）は、この分野の論として残し、照合の状態を書き、「強い」「部分的」「条件付き」の判定を外します（規約で答えが出るので決めました。心理学・社会学・法学・政治学と同じ。stance 2-6、調べ方の規約 §3-3）。ネルソン＆ウィンター（2002）とノース（1991）は JEP の OA で、ブラウザで保存してもらえれば本文に当たれます（Issue #73 に残します）。
 2. アーサーとクルーグマンの「片方が他方を締め出し、ときに劣ったほうに固まる」形を、三つの並べ方のどこに置くか。予想：片方の勝利として並べ、そのあとの固着（ロックイン）を添える。悪い統合（March の閉じ込め）と分けるかは、README「判断が要ること」5 の二つ目と同じ問いで、段 3 で見直します。
 3. ミンスキーの崩落を、報告の「破壊的な渦」のまま渦の定義を広げて読むか、統合に至らない形（暴走）として並べるか。予想：原典に近いのは後者で、定義を広げる案（ja 168・224 行）は段 1 の材料として残す（stance 2-2）。
 
 ## 新しく見つけた原典（台帳に足した）
 
-台帳 `cs/knowledge/raw/manifest.md` に D21-S17〜S29 として足しました（2026-11-08）。取れた PDF は、先頭が %PDF で 1 ページ目の書誌が合うことを確かめ、手元の `cs/knowledge/raw/`（git の外）に置きました。
+台帳台帳に台帳の「Arthur 1983」の行として足しました（2026-11-08）。取れた PDF は、先頭が %PDF で 1 ページ目の書誌が合うことを確かめ、手元の原典の置き場（git の外）に置きました。
 
-| source_id | 書誌 | 取得先 | 状態 |
-|---|---|---|---|
-| D21-S17 | Arthur, W. B. (1983). On Competing Technologies and Historical Small Events: The Dynamics of Choice under Increasing Returns. IIASA Working Paper WP-83-90 | https://pure.iiasa.ac.at/id/file/4454 （IIASA の機関リポジトリ） | raw-confirmed（手元に保存） |
-| D21-S18 | Arthur, W. B. (1989). Competing Technologies, Increasing Returns, and Lock-In by Historical Events. *Economic Journal* 99(394), 116–131. DOI 10.2307/2234208 | JSTOR（有料）。ポルトガル語訳の候補が *Revista Brasileira de Inovação*（periodicos.sbu.unicamp.br、記事 8648991）にあるが、証明書の確かめで止まり、取れていない | citation-only |
-| D21-S19 | Minsky, H. P. (1992). The Financial Instability Hypothesis. Levy Economics Institute Working Paper No. 74 | https://www.levyinstitute.org/pubs/wp74.pdf | raw-confirmed（手元に保存） |
-| D21-S20 | Minsky, H. P. (1986). *Stabilizing an Unstable Economy*. Yale University Press | 本文 OA なし | citation-only |
-| D21-S21 | Nelson, R. R. & Winter, S. G. (2002). Evolutionary Theorizing in Economics. *Journal of Economic Perspectives* 16(2), 23–46. DOI 10.1257/0895330027247 | https://pubs.aeaweb.org/doi/pdf/10.1257/0895330027247 （OA。確認画面で止まるので、ブラウザでの保存が要る） | blocked-access |
-| D21-S22 | North, D. C. (1991). Institutions. *Journal of Economic Perspectives* 5(1), 97–112. DOI 10.1257/jep.5.1.97 | https://pubs.aeaweb.org/doi/pdf/10.1257/jep.5.1.97 （OA。確認画面で止まるので、ブラウザでの保存が要る） | blocked-access |
-| D21-S23 | North, D. C. (1990). *Institutions, Institutional Change and Economic Performance*. Cambridge University Press | 本文 OA なし | citation-only |
-| D21-S24 | North, D. C. (1993). Economic Performance through Time（ノーベル賞の講演） | nobelprize.org の講演のページ（403）。スペイン語訳 core.ac.uk/download/29398948.pdf（自動の取得では HTML を返す） | blocked-access |
-| D21-S25 | Sen, A. (1999). *Development as Freedom*. Oxford University Press | 本文 OA なし | citation-only |
-| D21-S26 | Sen, A. (1998). The Possibility of Social Choice（ノーベル賞の講演） | https://www.nobelprize.org/uploads/2018/06/sen-lecture.pdf （PDF は取れたが文字の層が無い） | raw-confirmed（画像のみ。手元に保存） |
-| D21-S27 | Penrose, E. T. (1959). *The Theory of the Growth of the Firm*. Basil Blackwell | 本文 OA なし | citation-only |
-| D21-S28 | Penrose, E. T. (1955). Limits to the Growth and Size of Firms. *American Economic Review* 45(2), 531–543 | JSTOR（有料） | citation-only |
-| D21-S29 | Krugman, P. (1990). Increasing Returns and Economic Geography. NBER Working Paper No. 3275（D21-S13 の作業論文の版） | https://www.nber.org/system/files/working_papers/w3275/w3275.pdf | raw-confirmed（手元に保存） |
+| 書誌 | 取得先 | 状態 |
+|---|---|---|
+| Arthur, W. B. (1983). On Competing Technologies and Historical Small Events: The Dynamics of Choice under Increasing Returns. IIASA Working Paper WP-83-90 | https://pure.iiasa.ac.at/id/file/4454 （IIASA の機関リポジトリ） | 手元に保存した（手元に保存） |
+| Arthur, W. B. (1989). Competing Technologies, Increasing Returns, and Lock-In by Historical Events. *Economic Journal* 99(394), 116–131. DOI 10.2307/2234208 | JSTOR（有料）。ポルトガル語訳の候補が *Revista Brasileira de Inovação*（periodicos.sbu.unicamp.br、記事 8648991）にあるが、証明書の確かめで止まり、取れていない | 書誌だけ |
+| Minsky, H. P. (1992). The Financial Instability Hypothesis. Levy Economics Institute Working Paper No. 74 | https://www.levyinstitute.org/pubs/wp74.pdf | 手元に保存した（手元に保存） |
+| Minsky, H. P. (1986). *Stabilizing an Unstable Economy*. Yale University Press | 本文 OA なし | 書誌だけ |
+| Nelson, R. R. & Winter, S. G. (2002). Evolutionary Theorizing in Economics. *Journal of Economic Perspectives* 16(2), 23–46. DOI 10.1257/0895330027247 | https://pubs.aeaweb.org/doi/pdf/10.1257/0895330027247 （OA。確認画面で止まるので、ブラウザでの保存が要る） | 自動では取れない |
+| North, D. C. (1991). Institutions. *Journal of Economic Perspectives* 5(1), 97–112. DOI 10.1257/jep.5.1.97 | https://pubs.aeaweb.org/doi/pdf/10.1257/jep.5.1.97 （OA。確認画面で止まるので、ブラウザでの保存が要る） | 自動では取れない |
+| North, D. C. (1990). *Institutions, Institutional Change and Economic Performance*. Cambridge University Press | 本文 OA なし | 書誌だけ |
+| North, D. C. (1993). Economic Performance through Time（ノーベル賞の講演） | nobelprize.org の講演のページ（403）。スペイン語訳 core.ac.uk/download/29398948.pdf（自動の取得では HTML を返す） | 自動では取れない |
+| Sen, A. (1999). *Development as Freedom*. Oxford University Press | 本文 OA なし | 書誌だけ |
+| Sen, A. (1998). The Possibility of Social Choice（ノーベル賞の講演） | https://www.nobelprize.org/uploads/2018/06/sen-lecture.pdf （PDF は取れたが文字の層が無い） | 手元に保存した（画像のみ。手元に保存） |
+| Penrose, E. T. (1959). *The Theory of the Growth of the Firm*. Basil Blackwell | 本文 OA なし | 書誌だけ |
+| Penrose, E. T. (1955). Limits to the Growth and Size of Firms. *American Economic Review* 45(2), 531–543 | JSTOR（有料） | 書誌だけ |
+| Krugman, P. (1990). Increasing Returns and Economic Geography. NBER Working Paper No. 3275（台帳の「Krugman 1991」の行の作業論文の版） | https://www.nber.org/system/files/working_papers/w3275/w3275.pdf | 手元に保存した（手元に保存） |
 
-既存の行に書き足したこと（2026-11-08）：D21-S01 の手元の PDF は 2006 年の Duncker & Humblot の復刻（Röpke・Stiller の序文つき）で、本文は 1912 年の頁。D21-S02 と D21-S07 の手元の PDF は文字の層が無く、同じ Internet Archive の資料の `_djvu.txt` で読める。D21-S03 の Internet Archive の資料は第 2 版（1947 年と見られる）。D21-S06 の DOI と、Crossref の著者の欄が訳者の Snow になっていること。D21-S08 の hetwebsite.net の写しは JSTOR から落としたもので、権利は未確認。D21 の番号の S12 は台帳に行が無い（S11 の次が S13）。
+既存の行に書き足したこと（2026-11-08）：台帳の「Schumpeter 1912」の行の手元の PDF は 2006 年の Duncker & Humblot の復刻（Röpke・Stiller の序文つき）で、本文は 1912 年の頁。台帳の「Schumpeter 1939」の行の手元の PDF は文字の層が無く、同じ Internet Archive の資料の `_djvu.txt` で読める。台帳の「Schumpeter 1942」の行の Internet Archive の資料は第 2 版（1947 年と見られる）。台帳の「Hayek 2002」の行の DOI と、Crossref の著者の欄が訳者の Snow になっていること。台帳の「Keynes 1937」の行の hetwebsite.net の写しは JSTOR から落としたもので、権利は未確認。経済学の台帳の番号に一つ抜けがある。
 
 ## 手順について分かったこと
 
 - 手元の PDF（シュンペーター 1912・ナイト・ハイエク二本）と、台帳の Internet Archive の資料の OCR の文字（シュンペーター 1939・1942、ケインズ 1936）と、台帳の OA（ケインズ 1937）を読んだ。新しく探した作業論文（アーサー 1983・ミンスキー 1992・クルーグマン 1990）で、書籍だけだった論のうち二つ（アーサー・ミンスキー）の本文に当たれた。本文で読めた論は 11 のうち 7。報告の 10 の理論では 6。
 - 手元の PDF の二本（ケインズ 1936・シュンペーター 1939）は画像だけで、pdftotext では何も出なかった。同じ Internet Archive の資料の `_djvu.txt` に OCR の文字があり、頁の番号も残っていた。
 - AEA の JEP（ネルソン＆ウィンター・ノース）は OA だが、自動の取得は確認画面で止まった。要旨は Crossref から読めた。
-- 精読ノートの誤り（確かめたもの）：D21-S03（シュンペーター 1942）の「原文引用」五つのうち四つ（「perpetual disruption」「incentivize」「The entrepreneur's drive…」「static monopoly」）は、OCR の文字で探しても原典に無い。読解の方法の欄が「WebFetch」で、要約の文を原文の引用の形で写したと見られる。原典の第 7 章の鍵の文（p.83「incessantly revolutionizes the economic structure from within…」）は、wiki の解説には訳で入っている。
-- 精読ノートの誤りの候補：D21-S04（ハイエク 1945）の主張 4 の見出し「自生的秩序は設計を超える」は、同じ段落でハイエクが「spontaneously grown up which is best suited」という読みを退けていることを落としている。D21-S07（ケインズ 1936）はアニマルスピリッツを渦に、報告は縁に置いていて、ノートと報告で食い違う。
-- 精読ノートが読まなかった所に、衝突があった。シュンペーター 1912 の抵抗の節（pp.117–132）と恐慌の章（pp.452–453）、ハイエク 2002 の多数が少数を止める所（pp.19–20）は、ノートの主張に入っていない。ノートに無いことを、原典に無いことと読まない（D18・D20・D22 と同じ）。
+- 精読ノートの誤り（確かめたもの）：台帳の「Schumpeter 1942」の行（シュンペーター 1942）の「原文引用」五つのうち四つ（「perpetual disruption」「incentivize」「The entrepreneur's drive…」「static monopoly」）は、OCR の文字で探しても原典に無い。読解の方法の欄が「WebFetch」で、要約の文を原文の引用の形で写したと見られる。原典の第 7 章の鍵の文（p.83「incessantly revolutionizes the economic structure from within…」）は、wiki の解説には訳で入っている。
+- 精読ノートの誤りの候補：台帳の「Hayek 1945」の行（ハイエク 1945）の主張 4 の見出し「自生的秩序は設計を超える」は、同じ段落でハイエクが「spontaneously grown up which is best suited」という読みを退けていることを落としている。台帳の「Keynes 1936」の行（ケインズ 1936）はアニマルスピリッツを渦に、報告は縁に置いていて、ノートと報告で食い違う。
+- 精読ノートが読まなかった所に、衝突があった。シュンペーター 1912 の抵抗の節（pp.117–132）と恐慌の章（pp.452–453）、ハイエク 2002 の多数が少数を止める所（pp.19–20）は、ノートの主張に入っていない。ノートに無いことを、原典に無いことと読まない（社会学・法学・政治学・経営学と同じ）。
 - 似た論文（`[similar-papers]`）のうち、ディックマン（物理）・デコ（脳）・ウォーカー（生態）・ヒダルゴ（経済の複雑性）は、経済学の論として足さなかった。クルーグマンは、台帳にあり、統合に至らない形と分かれ目をはっきり書いているので足した。

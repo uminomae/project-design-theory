@@ -14,15 +14,15 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D25-anthr
 
 人類学の論は、対立や衝突を、儀礼や交換の中に置いて書いているものが多くありました。モース（1925）は、与えることや招くことを拒むのは戦争を宣言するのと同じだと書き、出会った二つの集団は、戦うか、交渉するかしかないと書いています。贈与は、その戦争と孤立と停滞の代わりに、同盟と交易を置くものとして書かれています（Guyer 訳 2016、pp.74・196–197）。ターナー（1974 の論文）は、構造とコミュニタスのあいだの矛盾が、派閥への分裂や、抑圧と抵抗が渦を巻くような闘争を生むと書き、その闘争にもかかわらず、またその闘争のゆえに、コミュニタスが社会に重要な働きをすると書いています（pp.81–83）。プラットは、文化が出会い、ぶつかり、組み合う場を「接触領域」と呼び、共同体の価値も統合の望みも無いところで、怒りや痛みと並んで新しい理解が起きたと書いています。バルト（1969）は、同じ資源を争う集団の一方が他方を押しのける形も書いています。一方で、報告が「失敗分岐がモデルに内在する」例として挙げたターナーの社会劇の四局面は、書籍の本文を開けず、確かめられていません。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D25-anthropology.md`、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論を取り上げ、3 つを「強い対応」としています。報告は、贈与を「モノの移動を介して社会関係がゼロから立ち上がる」過程として読み、モースが書いた戦争と競争と破壊を落としています。リミナリティも、構造との闘争を落として「縁の内部」の記述として読んでいます。「縁の 8 形態」と「場と束が弱いのは人類学の性格による」という主張は、原典でなく、退避版と調べた跡で LLM が作った構成から来ていました。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
+今の公開報告（「30 領域調査報告」の人類学・民族学の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論を取り上げ、3 つを「強い対応」としています。報告は、贈与を「モノの移動を介して社会関係がゼロから立ち上がる」過程として読み、モースが書いた戦争と競争と破壊を落としています。リミナリティも、構造との闘争を落として「縁の内部」の記述として読んでいます。「縁の 8 形態」と「場と束が弱いのは人類学の性格による」という主張は、原典でなく、退避版と調べた跡で LLM が作った構成から来ていました。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
-人類学は原典が書籍のものが多く、10 の論のうち本文照合済は 4 つ（ターナーのリミナリティ・モース・ラモント＆モルナール・プラット）です。ファン・ヘネップ・バルト・ブルデューは、archive.org に個人が上げた写しで本文を読みましたが、権利が確かめられないので、照合の状態は未照合のまま、読んだ頁を書いています（`docs/cs-review/README.md`「規約で決めたこと」）。
+人類学は原典が書籍のものが多く、10 の論のうち本文照合済は 4 つ（ターナーのリミナリティ・モース・ラモント＆モルナール・プラット）です。ファン・ヘネップ・バルト・ブルデューは、archive.org に個人が上げた写しで本文を読みましたが、権利が確かめられないので、照合の状態は未照合のまま、読んだ頁を書いています（調べ方の計画と規約「規約で決めたこと」）。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D25-anthropology.md) にあります。退避版の判定（Accept・CA など）は、今の照合の状態の根拠にしていません。
 
 ## 一面の表
 
-照合の状態は `docs/rules/sources.md` §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。 この表で、原典の構造を対立・衝突・統合と呼ぶことと、括弧の中の並べ方の名（片方の勝利・固着など）は、Claude の読み替えです。「未照合」の行の対立・衝突・統合は、報告の言い分でなく、原典で確かめられたことだけを書くので、空けています。
+照合の状態は調べ方の規約 §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。 この表で、原典の構造を対立・衝突・統合と呼ぶことと、括弧の中の並べ方の名（片方の勝利・固着など）は、Claude の読み替えです。「未照合」の行の対立・衝突・統合は、報告の言い分でなく、原典で確かめられたことだけを書くので、空けています。
 
 | 論 | 対立 | 衝突 | 統合／新たな安定、または統合に至らずにどう終わったか | 論の微細さ | 照合の状態 |
 |---|---|---|---|---|---|
@@ -35,7 +35,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | 7. ルロワ＝グーラン／ルモニエ：操作連鎖（1964–65・1986・1992） | 未照合 | 未照合 | 未照合 | 一つの技術の工程 | 未照合（書籍と有料の論文） |
 | 8. ラモント＆モルナール：象徴の境界と社会の境界（2002） | 現実の定義と分類の体系をめぐって争う個人と集団 | 集団は、代わりの分類の体系を作り、広め、制度にすることを競う。象徴の境界は、現実の定義をめぐって争い、合意に至るための道具 | 広く合意された象徴の境界だけが、排除や分離の型として社会の境界になる。至らない形として、合意されないものは社会の境界にならない。象徴の境界は、社会の境界に異を唱え、意味を読み替えるのにも使われる | 研究の総説。個人の分類から国家まで | 本文照合済（授業用の写し） |
 | 9. プラット：接触領域（1991） | 出会う文化。征服者と被征服者、教室の学生どうし | 文化が出会い、ぶつかり、組み合う。しばしば非常に非対称な力の関係の中で。長い接触と、解けない不平等な対立 | 統合とは書かれていない。自己民族誌・文化の移し替え・批評・パロディなどの「技」が生まれる。教室では、怒り・無理解・痛みと並んで、驚き・相互理解・新しい知恵が起きた。至らない形として、グアマン・ポマの手紙は届かず、植民地の序列を脅かさない本が正典になり、テクストの序列は今も続く（片方の勝利） | 一つの文書と一つの教室から、植民地の数世紀まで | 本文照合済（再録の写し。頁は写しの頁） |
-| 10. ギデンズ／ブルデュー：構造化理論・実践感覚（1984・1980） | ブルデュー：ハビトゥスがつくられた条件と、今の条件。カビリアの分類で分けられた、対立する原理 | 条件がずれると、ハビトゥスは負の制裁を受ける。儀礼は、分けた原理を再び合わせねばならない矛盾を解く。合わせることは境界を侵すことで、切ることや殺すことを伴う | 儀礼は「否まれた侵犯」で、避けられない殺しを必要な犠牲に変える。至らない形として、ずれたハビトゥスが不適応・反乱・あきらめを生む形が書かれている。ギデンズは未照合 | 身体の傾向から社会の再生産まで | 未照合（書籍。ブルデューは英訳の個人が上げた写しで読んだ。ギデンズは D18 の記録を参照） |
+| 10. ギデンズ／ブルデュー：構造化理論・実践感覚（1984・1980） | ブルデュー：ハビトゥスがつくられた条件と、今の条件。カビリアの分類で分けられた、対立する原理 | 条件がずれると、ハビトゥスは負の制裁を受ける。儀礼は、分けた原理を再び合わせねばならない矛盾を解く。合わせることは境界を侵すことで、切ることや殺すことを伴う | 儀礼は「否まれた侵犯」で、避けられない殺しを必要な犠牲に変える。至らない形として、ずれたハビトゥスが不適応・反乱・あきらめを生む形が書かれている。ギデンズは未照合 | 身体の傾向から社会の再生産まで | 未照合（書籍。ブルデューは英訳の個人が上げた写しで読んだ。ギデンズは社会学の記録を参照） |
 
 ## 論ごとの節
 
@@ -46,7 +46,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 **一次情報**：
 
 - van Gennep, A. (1909). *Les rites de passage*. Paris: Émile Nourry. 原文はパブリックドメインだが、開ける写しが見つからなかった。archive.org の検索では 1981 年の Picard 版（貸し出しのみ）とドイツ語訳（個人が上げた写し）だけが出た。Gallica は自動取得に Cloudflare の確認画面を返し、Les Classiques des sciences sociales（classiques.uqac.ca）には接続できなかった。一般の検索でも原文の写しは見つからなかった。
-- 英訳：*The Rites of Passage*. M. B. Vizedom & G. L. Caffee 訳, S. T. Kimball 序文. University of Chicago Press, 1960（手元の写しは 1978 年ごろの刷）。manifest D25-S01。手元の PDF は archive.org の theritesofpassage（https://archive.org/details/theritesofpassage ）で、個人が上げた写しです。権利は確かめていません。著者の序文の日付は 1908 年 12 月。読んだ頁：pp.ix–x（Kimball）・p.3・pp.10–12・p.21・p.26・pp.185–186・pp.191–192。
+- 英訳：*The Rites of Passage*. M. B. Vizedom & G. L. Caffee 訳, S. T. Kimball 序文. University of Chicago Press, 1960（手元の写しは 1978 年ごろの刷）。台帳に行がある。手元の PDF は archive.org の theritesofpassage（https://archive.org/details/theritesofpassage ）で、個人が上げた写しです。権利は確かめていません。著者の序文の日付は 1908 年 12 月。読んだ頁：pp.ix–x（Kimball）・p.3・pp.10–12・p.21・p.26・pp.185–186・pp.191–192。
 
 **照合の状態**：未照合（書籍）。英訳の個人が上げた写しで、上の頁を読みました。フランス語の原文の頁は控えられていません。
 
@@ -71,7 +71,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 84〜88 行 移り変わりの害・よそ者の扱いに触れていない | 抜け | 中 | 原典は、移り変わりを社会への害のおそれとして書き（p.3）、よそ者を殺すか受け入れるかの両方を書く（p.26） |
 | ja 88 行 分離＝波・マージン＝縁・統合＝渦 | 未判定 | 中 | 5段階の定義が決まってから。原典の分離は「引き剥がし」の衝突としてでなく、儀礼の一段として書かれている |
 | pres 56 行「場と束への対応は…後続研究で補完されています」 | 未判定 | 低 | どの研究かが書かれていない。出どころは退避版 39 行 |
-| wiki `D25_vangennep_1909_rites-of-passage.md` の三相の仏語の語（séparation・marge・agrégation） | 未判定 | 低 | 原文を開けていないので、語は確かめていない |
+| wiki wiki の頁「van Gennep 1909」の三相の仏語の語（séparation・marge・agrégation） | 未判定 | 低 | 原文を開けていないので、語は確かめていない |
 
 ### 2. ターナー：社会劇の四局面
 
@@ -79,7 +79,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Turner, V. (1974). *Dramas, Fields, and Metaphors*. Cornell UP（manifest D25-S02、D24-S06 と同じ）。archive.org の dramasfieldsmeta00turn は貸し出しだけで、本文を開けなかった。
+- Turner, V. (1974). *Dramas, Fields, and Metaphors*. Cornell UP（台帳の「Turner 1974」の行と同じ）。archive.org の dramasfieldsmeta00turn は貸し出しだけで、本文を開けなかった。
 - Turner, V. (1957). *Schism and Continuity in an African Society*. Manchester UP。archive.org の schismcontinuity00turn・schismcontinuity0000turn は貸し出しだけだった。
 - Turner, V. (1980). Social dramas and stories about them. *Critical Inquiry* 7(1), 141–168. DOI 10.1086/448092（Crossref で書誌だけ確かめた。本文は JSTOR で有料。philpapers の要旨のページは 403 を返した）。
 - Turner, V. *The Anthropology of Performance*. PAJ Publications。archive.org の写し（anthropologyofpe0000turn）は 1988 年の刷で、貸し出しだけ。マサリク大学の授業用の写し（https://is.muni.cz/el/fss/jaro2016/SOC403/um/61766178/Turner_The-anthropology-of-performance.txt ）は、自動取得に確かめの画面を返した。ブラウザでの保存が要る。
@@ -87,9 +87,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **照合の状態**：未照合（書籍）。1980 年の論文は書誌だけ確かめました。
 
-**対立・衝突・統合の読み**：四局面の名・順・分裂（schism）の位置は、原典で確かめられていません。報告は、この論を、分裂という「失敗分岐がモデルに内在する」例として、包摂の読みの代表にしています（`docs/cs-review/history.md`「悪いことの扱い」）。中心の問いに要る論なので、上の授業用の写しをブラウザで保存してもらい、四局面を書いた頁を確かめるのがよさそうです。
+**対立・衝突・統合の読み**：四局面の名・順・分裂（schism）の位置は、原典で確かめられていません。報告は、この論を、分裂という「失敗分岐がモデルに内在する」例として、包摂の読みの代表にしています（調べ直しの経緯「悪いことの扱い」）。中心の問いに要る論なので、上の授業用の写しをブラウザで保存してもらい、四局面を書いた頁を確かめるのがよさそうです。
 
-**D24 宗教学から参照するときの確かめ先**：書籍の D25-S02（=D24-S06）と D25-S03（=D24-S04）は、どちらも開けていません。ターナー自身の論文で開けたのは、1974 年の Rice University Studies の論文だけで（下の 3）、読んだ頁は pp.55・57–60・78–79・81–83・85–86 です。
+**宗教学・神秘主義から参照するときの確かめ先**：書籍の台帳の「Turner 1974」の行は、どちらも開けていません。ターナー自身の論文で開けたのは、1974 年の Rice University Studies の論文だけで（下の 3）、読んだ頁は pp.55・57–60・78–79・81–83・85–86 です。
 
 **今の報告から直すこと**：
 
@@ -108,8 +108,8 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Turner, V. (1969). *The Ritual Process: Structure and Anti-Structure*. Aldine（manifest D25-S03、D24-S04 と同じ）。archive.org の写し（ritualprocessstr00turn ほか）は貸し出しだけで、開けなかった。
-- Turner, V. (1974). Liminal to liminoid, in play, flow, and ritual: An essay in comparative symbology. *Rice University Studies* 60(3), 53–92。ライス大学の機関リポジトリ（https://hdl.handle.net/1911/63159 ）の PDF。先頭が %PDF で、1 ページ目の題と著者を確かめた。誌面の頁番号がある。manifest に行は無い。読んだ頁：p.55・pp.57–60・pp.78–79・pp.81–83・pp.85–86。この論文は、1969 年の本の考えを著者自身がまとめ直したもので、本そのものを確かめたことにはしない。
+- Turner, V. (1969). *The Ritual Process: Structure and Anti-Structure*. Aldine（台帳の「Turner 1969」の行と同じ）。archive.org の写し（ritualprocessstr00turn ほか）は貸し出しだけで、開けなかった。
+- Turner, V. (1974). Liminal to liminoid, in play, flow, and ritual: An essay in comparative symbology. *Rice University Studies* 60(3), 53–92。ライス大学の機関リポジトリ（https://hdl.handle.net/1911/63159 ）の PDF。先頭が %PDF で、1 ページ目の題と著者を確かめた。誌面の頁番号がある。台帳に行は無い。読んだ頁：p.55・pp.57–60・pp.78–79・pp.81–83・pp.85–86。この論文は、1969 年の本の考えを著者自身がまとめ直したもので、本そのものを確かめたことにはしない。
 
 **照合の状態**：1974 年の論文は本文照合済。1969 年の書籍は未照合。
 
@@ -140,7 +140,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 ### 4. ダグラス：汚穢と禁忌
 
-**一次情報**：Douglas, M. (1966). *Purity and Danger*. Routledge（manifest D25-S04）。archive.org の四つの版は貸し出しだけだった（同じ題の二つの資料は音楽だった）。一般の検索でも、出版社の公開版や著者の論文版は見つからなかった。
+**一次情報**：Douglas, M. (1966). *Purity and Danger*. Routledge（台帳に行がある）。archive.org の四つの版は貸し出しだけだった（同じ題の二つの資料は音楽だった）。一般の検索でも、出版社の公開版や著者の論文版は見つからなかった。
 
 **照合の状態**：未照合（書籍）。
 
@@ -159,7 +159,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Barth, F. (1969). Introduction. In F. Barth (Ed.), *Ethnic Groups and Boundaries: The Social Organization of Culture Difference* (pp.9–38). Universitetsforlaget（manifest D25-S05）。手元の PDF は archive.org に個人が上げた序章の写しで（EthnicGroupsAndBoundaries）、権利は確かめていない。打ち直された版で、誌面の頁番号（9〜37）がある。PDF の 1 頁目は本の p.9。archive.org の出版社由来の写し（ethnicgroupsboun0000unse ほか）は貸し出しだけだった。
+- Barth, F. (1969). Introduction. In F. Barth (Ed.), *Ethnic Groups and Boundaries: The Social Organization of Culture Difference* (pp.9–38). Universitetsforlaget（台帳に行がある）。手元の PDF は archive.org に個人が上げた序章の写しで（EthnicGroupsAndBoundaries）、権利は確かめていない。打ち直された版で、誌面の頁番号（9〜37）がある。PDF の 1 頁目は本の p.9。archive.org の出版社由来の写し（ethnicgroupsboun0000unse ほか）は貸し出しだけだった。
 - 読んだ頁：pp.9–10・p.15・p.16・pp.19–20・p.25・p.37。
 
 **照合の状態**：未照合（書籍）。序章の個人が上げた写しで、上の頁を読みました。
@@ -182,7 +182,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 120 行「『境界が集団を作る』は『縁が渦を生む』と構造的に対応」 | 未判定 | 中 | 5段階の定義が決まってから |
 | en 117 行「Edge is the most enduring element within the five-stage model」 | 言い過ぎ | 低 | 原典は5段階を論じていない。「最も」の根拠が無い |
 | ja 61 行「部分的対応」、en 63 行「Strong」、pres 46 行「有力」 | 未判定（版の食い違い） | 中 | 下の「版の間の食い違い」 |
-| manifest D25-S06「Waveland Press (reprint).」 | 未判定（台帳の書誌） | 低 | 退避版 193 行の refs「Universitetsforlaget / Waveland Press (reprint)」が「/」で二つの行に分かれたもの。D25-S06 は、バルトの同じ本の Waveland Press の再刊を指すと見られる |
+| 台帳の「Barth 1969」の行「Waveland Press (reprint).」 | 未判定（台帳の書誌） | 低 | 退避版 193 行の refs「Universitetsforlaget / Waveland Press (reprint)」が「/」で二つの行に分かれたもの。台帳の「Barth 1969」の行は、バルトの同じ本の Waveland Press の再刊を指すと見られる |
 
 ### 6. モース：贈与論
 
@@ -191,7 +191,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 **一次情報**：
 
 - Mauss, M. (1925). Essai sur le don. *L'Année sociologique*, nouvelle série, t.1 (1923–1924)。原文はパブリックドメイン。Les Classiques des sciences sociales（classiques.uqac.ca）の打ち直しは、接続できなかった。Gallica は自動取得に Cloudflare の確認画面を返した。
-- 英訳：*The Gift: Expanded Edition*. J. I. Guyer 訳・注. Chicago: HAU Books, 2016（manifest D25-S07）。HAU Books が無料で公開している PDF（https://haubooks.org/wp-content/uploads/2020/11/Marcel-Mauss-The-Gift-Expanded-Edition-Selected-Annotated-and-Translated-by-Jane-Guyer.pdf ）。版権の表記は「© 2016 Hau Books and Jane I. Guyer」で、PDF の中に Creative Commons の表記は見当たらなかった。読んだ頁（訳の頁）：p.63・pp.73–74・p.193・pp.196–197。
+- 英訳：*The Gift: Expanded Edition*. J. I. Guyer 訳・注. Chicago: HAU Books, 2016（台帳に行がある）。HAU Books が無料で公開している PDF（https://haubooks.org/wp-content/uploads/2020/11/Marcel-Mauss-The-Gift-Expanded-Edition-Selected-Annotated-and-Translated-by-Jane-Guyer.pdf ）。版権の表記は「© 2016 Hau Books and Jane I. Guyer」で、PDF の中に Creative Commons の表記は見当たらなかった。読んだ頁（訳の頁）：p.63・pp.73–74・p.193・pp.196–197。
 
 **照合の状態**：本文照合済（訳）。原文の頁は控えていません。
 
@@ -211,7 +211,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 |---|---|---|---|
 | ja 124 行 全体的社会的事象・三つの義務 | 一致 | ― | 訳の pp.73・193 と合う |
 | ja 126 行「モノの移動を介して社会関係がゼロから立ち上がるプロセス」 | 取り違え | 中 | 原典は、集団どうしが戦うか交渉するかしかない状態から、贈与が戦争・孤立・停滞の代わりに置かれた、と書く（pp.196–197）。関係はゼロからでなく、敵対の中から立ち上がる |
-| ja 124〜128 行 ポトラッチの競争・殺し合い・富の破壊、拒むことは戦争の宣言、に触れていない | 抜け | 中 | p.63・p.74・p.196。精読ノート（source-notes S07）はポトラッチの文を引いているのに、報告に入っていない |
+| ja 124〜128 行 ポトラッチの競争・殺し合い・富の破壊、拒むことは戦争の宣言、に触れていない | 抜け | 中 | p.63・p.74・p.196。精読ノート（Mauss 1925）はポトラッチの文を引いているのに、報告に入っていない |
 | ja 128 行「贈与の開始は波（モノの移動による差異の顕在化）」 | 未判定 | 中 | 5段階の定義が決まってから。原典の対立は物の移動でなく、集団どうしの敵対と競争 |
 | ja 128 行「『全体的社会的事象』という概念は、5段階モデルが…領域横断的に適用されうることの間接的な示唆」、en 125 行「anthropological precursor」 | 言い過ぎ | 低 | 原典は社会の制度の全体を動かす事実として書く（p.193）。5段階の適用範囲の示唆にはならない |
 | ja 62 行「部分的対応」、en 64 行「Strong」、pres 46 行「有力」 | 未判定（版の食い違い） | 中 | 下の「版の間の食い違い」 |
@@ -220,7 +220,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Leroi-Gourhan, A. (1964–65). *Le Geste et la Parole*. Albin Michel（manifest D25-S08）。書籍。開ける写しは見つからなかった。
+- Leroi-Gourhan, A. (1964–65). *Le Geste et la Parole*. Albin Michel（台帳に行がある）。書籍。開ける写しは見つからなかった。
 - Lemonnier, P. (1986). The study of material culture today: Toward an anthropology of technical systems. *Journal of Anthropological Archaeology* 5(2), 147–186. DOI 10.1016/0278-4165(86)90012-7（Crossref で書誌だけ確かめた。Elsevier で有料）。
 - Lemonnier, P. (1992). *Elements for an Anthropology of Technology*. Anthropological Papers No. 88, University of Michigan Museum of Anthropology。Fulcrum（https://www.fulcrum.org/concern/monographs/w6634543v ）は機関のログインが要る。ミシガン大学の Deep Blue の検索は応答が読めず、一般の検索でも OA の写しは見つからなかった。
 
@@ -233,14 +233,14 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 132〜136 行 操作連鎖の要約と、場から束までの当てはめ | 未判定 | 中 | 未照合 |
 | ja 136 行「本理論は『場』対応が明確な唯一の理論です」 | 言い過ぎ | 中 | 原典を読まずに「唯一」としている。未加工の素材を「場」とするのは報告の読み替え |
 | en 135 行「it became the standard framework for debitage」 | 未判定 | 低 | 未照合 |
-| manifest D25-S08 の Lemonnier（1986）の題「The Study of Material Culture Today.」 | 未判定（台帳の書誌） | 低 | Crossref では副題「Toward an anthropology of technical systems」と号 5(2) がある |
+| 台帳の「Leroi-Gourhan 1964」の行の Lemonnier（1986）の題「The Study of Material Culture Today.」 | 未判定（台帳の書誌） | 低 | Crossref では副題「Toward an anthropology of technical systems」と号 5(2) がある |
 | ja 63 行「部分的対応」、en 65 行「Strong」、pres 46 行「有力」 | 未判定（版の食い違い） | 中 | 下の「版の間の食い違い」 |
 
 ### 8. ラモント＆モルナール：象徴の境界と社会の境界
 
 **要旨**：社会科学の境界の研究を総説する。象徴の境界は、人や物や時間を分類するための、社会の行為者がつくる概念の区別で、社会の境界は、資源と機会の不平等な配分として表れる社会の違いである。象徴の境界は、社会の境界があるための必要条件だが十分条件ではない。
 
-**一次情報**：Lamont, M. & Molnár, V. (2002). The study of boundaries in the social sciences. *Annual Review of Sociology* 28, 167–195. DOI 10.1146/annurev.soc.28.110601.141107（Crossref で書誌を確かめた）。manifest D25-S09。SSRN は確認画面を返す（台帳の注）。著者の大学のページ（lamont.scholars.harvard.edu）には PDF が無かった。読んだのは、トラキアのデモクリトス大学の授業のサイトに置かれた写し（https://eclass.duth.gr/modules/document/file.php/ALEX037108/Lamont%20Molnar_the_study_2002.pdf ）で、出版社の版の PDF です。先頭が %PDF で、1 ページ目の題・著者・誌名・DOI が一致しました。権利は確かめていません。読んだ頁：pp.168–169・p.186。
+**一次情報**：Lamont, M. & Molnár, V. (2002). The study of boundaries in the social sciences. *Annual Review of Sociology* 28, 167–195. DOI 10.1146/annurev.soc.28.110601.141107（Crossref で書誌を確かめた）。台帳に行がある。SSRN は確認画面を返す（台帳の注）。著者の大学のページ（lamont.scholars.harvard.edu）には PDF が無かった。読んだのは、トラキアのデモクリトス大学の授業のサイトに置かれた写し（https://eclass.duth.gr/modules/document/file.php/ALEX037108/Lamont%20Molnar_the_study_2002.pdf ）で、出版社の版の PDF です。先頭が %PDF で、1 ページ目の題・著者・誌名・DOI が一致しました。権利は確かめていません。読んだ頁：pp.168–169・p.186。
 
 **照合の状態**：本文照合済（授業用の写し）。
 
@@ -267,7 +267,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨**：接触領域とは、文化が出会い、ぶつかり、組み合う社会の空間で、しばしば非常に非対称な力の関係の中にある。征服された側が、征服者の表象に応えて自分たちを描く「自己民族誌」や、支配する文化から選び取り作り変える「文化の移し替え（transculturation）」は、接触領域の技である。この考えは、均質な共同体を前提にする教室や言語の見方を問い直すために使われる。
 
-**一次情報**：Pratt, M. L. (1991). Arts of the contact zone. *Profession* 91, 33–40（manifest D25-S10）。手元の PDF は、テキサス州立大学のサイトに置かれた写しで、冒頭に「From Ways of Reading, 5th edition, ed. David Bartholomae and Anthony Petroksky (New York: Bedford/St. Martin's, 1999)」とあります。*Profession* の誌面でなく、1999 年の教科書に再録された版の打ち直しで、誌面の頁番号がありません。頁は写しの頁（PDF の 1〜9）で控えます。読んだ頁：写しの p.2・p.3・p.5・p.8。
+**一次情報**：Pratt, M. L. (1991). Arts of the contact zone. *Profession* 91, 33–40（台帳に行がある）。手元の PDF は、テキサス州立大学のサイトに置かれた写しで、冒頭に「From Ways of Reading, 5th edition, ed. David Bartholomae and Anthony Petroksky (New York: Bedford/St. Martin's, 1999)」とあります。*Profession* の誌面でなく、1999 年の教科書に再録された版の打ち直しで、誌面の頁番号がありません。頁は写しの頁（PDF の 1〜9）で控えます。読んだ頁：写しの p.2・p.3・p.5・p.8。
 
 **照合の状態**：本文照合済（1999 年の再録の写し。頁は写しの頁）。
 
@@ -290,7 +290,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 152 行「他の理論が比較的対等な関係を前提とする中、Prattは…」 | 言い過ぎ | 中 | 同じ報告の中でも、モース（首長どうしの闘争）、バルト（資源の争いと押しのけ）、ターナー（抑圧と抵抗）が力の争いを書いている（各節） |
 | ja 148〜152 行 統合の望みの無さ・届かなかった手紙・テクストの序列・怒りと痛みに触れていない | 抜け | 中 | 写しの p.5・p.8 |
 | ja 196 行「『縁』が対等な関係者間の接触に限定されるなら、植民地的接触のような極端な非対称は射程外になります」 | 未判定 | 中 | 射程を狭める問いの立て方（型 C）。中心の問いでは、良いこと以外との衝突を包むかを見るので、非対称な衝突はむしろ照合の対象になる |
-| manifest D25-S10・wiki `D25_pratt_1991_arts-of-the-contact-zone.md` | 未判定（台帳の書誌） | 低 | 手元の PDF は 1999 年の再録で、*Profession* の頁が無い。精読ノートは再録であることを書いているが、台帳には無い |
+| 台帳の「Pratt 1991」の行・wiki wiki の頁「Pratt 1991」 | 未判定（台帳の書誌） | 低 | 手元の PDF は 1999 年の再録で、*Profession* の頁が無い。精読ノートは再録であることを書いているが、台帳には無い |
 
 ### 10. ギデンズ／ブルデュー：構造化理論と実践感覚
 
@@ -298,12 +298,12 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Giddens, A. (1984). *The Constitution of Society*。社会学の記録（`cs/evidence/evidence-D18-sociology.md` の 10）で、書籍を開けず未照合。読み直していない。
+- Giddens, A. (1984). *The Constitution of Society*。社会学の記録（社会学の記録の 10）で、書籍を開けず未照合。読み直していない。
 - Bourdieu, P. (1980). *Le sens pratique*. Minuit。書籍。開ける写しは見つからなかった。
 - 英訳：Bourdieu, P. (1990). *The Logic of Practice*. R. Nice 訳. Polity / Stanford UP。archive.org に個人が上げた写し（https://archive.org/details/BOURDIEUPierreTheLogicOfPractice ）の文字の層（djvu.txt）で読んだ。権利は確かめていない。文字の層に柱の頁番号が残っていて、それで頁を控えた。読んだ頁：p.53・p.62・pp.212–213。
-- ブルデュー（1986）「資本の形」は D18 の記録の 6 を参照（有志の文書館の打ち直しで節を読んだので未照合。2026-11-09 の一巡で、D18 が本文照合済から改めた）。
+- ブルデュー（1986）「資本の形」は社会学の記録の 6 を参照（有志の文書館の打ち直しで節を読んだので未照合。2026-11-09 の一巡で、社会学が本文照合済から改めた）。
 
-**照合の状態**：未照合（書籍）。ギデンズは未照合（D18 の記録を参照）。ブルデューは英訳の個人が上げた写しで、上の頁を読みました。
+**照合の状態**：未照合（書籍）。ギデンズは未照合（社会学の記録を参照）。ブルデューは英訳の個人が上げた写しで、上の頁を読みました。
 
 **原典に書いてあること**（英訳 1990 の頁）：
 
@@ -317,7 +317,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 | 今の報告の行 | 判定 | 重さ | 中身 |
 |---|---|---|---|
-| ja 156 行 ギデンズの構造の二重性 | 未判定 | 中 | 未照合（D18 の記録の 10 と同じ） |
+| ja 156 行 ギデンズの構造の二重性 | 未判定 | 中 | 未照合（社会学の記録の 10 と同じ） |
 | ja 156 行「ハビトゥスは、社会的構造が身体化された傾向性の体系」 | 一致 | ― | 英訳 p.53 と合う。ただし、読んだのは個人が上げた写しで、照合の状態は未照合（書籍） |
 | ja 156 行「場（field/champ）における実践が構造を再生産しつつ変容させうる」、en 159 行「improvisatory responses」 | 未判定 | 低 | 読んだ頁には、ずれから反乱やあきらめが生まれることは書かれている（p.62）。「即興の応答による変容」の箇所は確かめていない |
 | ja 156〜160 行 儀礼は否まれた侵犯、という章に触れていない | 抜け | 中 | pp.212–213 |
@@ -337,7 +337,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | 社会劇の分裂 | 縁で分岐 | failed Vortex | 波が渦にならなかった場合 | 渦不成立（場への回帰か二つの場への分岐） |
 | 縁に当たる論の数 | 10 のうち 8（70 行）、8 つの縁の顔（206 行） | 8 of 10（11 行） | 8 つの縁の顔（91 行） | 8 つの顔（458 行） |
 
-同じ報告の訳でなく、版ごとに別に生成されたことが、件数と段の食い違いの出どころと見られます（D18・D22 と同じ）。cs のトップの英語の題「D25 Boundary Processes and the Five-Stage Model in Anthropology and Ethnology」（`cs/index.html` 505 行）は en の題から来ています。
+同じ報告の訳でなく、版ごとに別に生成されたことが、件数と段の食い違いの出どころと見られます（社会学・経営学と同じ）。cs のトップの英語の題「人類学・民族学 Boundary Processes and the Five-Stage Model in Anthropology and Ethnology」（創造とはのトップ 505 行）は en の題から来ています。
 
 ### 領域全体の主張
 
@@ -350,11 +350,11 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 72 行 三つの中核的対応は一つの系譜で、独立した三つの証拠ではない | 一致 | ― | 1974 年の論文で、ターナーはファン・ヘネップの三段階から出発している（p.57）。系譜を独立に数えない注意は正しい |
 | ja 214 行「『縁』との構造対応は確定的な水準にあります（複数の独立した理論伝統から支持されています）」 | 言い過ぎ | 中 | 10 の論のうち本文で確かめられたのは 4 つで、報告が「縁」と読んだ所は、原典では争い・競争・戦争として書かれている所が多い |
 | ja 200 行「本調査で検討した10理論は全て西洋の研究者による理論です」 | 一致 | 低 | ただしプラットの論は、ケチュアの書き手グアマン・ポマの文書を主な例にしている（写しの p.2〜5） |
-| ja 37〜45 行 5段階の定義（場「すべてが溶け合っている」、縁「対立する要素が共存し、どちらにも収束しない」） | 未判定 | 中 | 5段階の定義の置き場ごとの食い違い（README「判断が要ること」1）。報告は縁の定義に「対立」を入れながら、当てはめでは対立を波（breach→crisis「対立化」、ja 96 行）に置き、縁を調停・関係の再設計として読んでいる（D11〜D20 と同じ） |
+| ja 37〜45 行 5段階の定義（場「すべてが溶け合っている」、縁「対立する要素が共存し、どちらにも収束しない」） | 未判定 | 中 | 5段階の定義の置き場ごとの食い違い（README「判断が要ること」1）。報告は縁の定義に「対立」を入れながら、当てはめでは対立を波（breach→crisis「対立化」、ja 96 行）に置き、縁を調停・関係の再設計として読んでいる（薬学〜法学・政治学と同じ） |
 
 ### テンプレート由来の表示
 
-「立ち位置明示」（3 行）、「Phase 1-4」「Phase 5（論拠監査）」「Phase 6」「Phase 7」（22 行）、「方法論的開示」（26 行）、「温度帯の分布」（68 行）、「安全弁」（74 行）、「結びの温度開示」「温度帯」（212〜217 行）、「Colophon generator_model」（219〜229 行）。28〜31 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所がある」と、著者を pjdhiro にしています（writing.md §1-1・§1-8）。D18・D22 と同じく、報告のテンプレートが原因で、個別でなくテンプレートで直します。
+「立ち位置明示」（3 行）、「Phase 1-4」「Phase 5（論拠監査）」「Phase 6」「Phase 7」（22 行）、「方法論的開示」（26 行）、「温度帯の分布」（68 行）、「安全弁」（74 行）、「結びの温度開示」「温度帯」（212〜217 行）、「Colophon generator_model」（219〜229 行）。28〜31 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所がある」と、著者を pjdhiro にしています（書き方の規約 §1-1・§1-8）。社会学・経営学と同じく、報告のテンプレートが原因で、個別でなくテンプレートで直します。
 
 ### 誤りの出どころ
 
@@ -367,11 +367,11 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | フラクタルの原典的根拠 | 退避版 36・46 行の CHK-B、phase6 9 行、phase7 21〜23 行 |
 | 「聖化→移行→脱聖化」を修練期・婚約期の例とする | DR 127 行・213 行（復讐の遠征の例を含む）を、退避版 33 行が修練期・婚約期と一つの文にまとめた |
 | 社会劇の四局面と閾の性格 | DR 22・132・257〜262 行。DR の出典記号は辿れず、原典で確かめた跡が無い（退避版 70 行の「DR検証済み」） |
-| モースを「ゼロからの関係の生成」と読む | 退避版の AN-006 の要約。精読ノート S07（2026-04）がポトラッチの文を引いたあとも、報告は 2026-03 のまま |
+| モースを「ゼロからの関係の生成」と読む | 退避版の AN-006 の要約。精読ノート「Mauss 1925」（2026-04）がポトラッチの文を引いたあとも、報告は 2026-03 のまま |
 | 版ごとの件数と段の食い違い | ja・en・pres が別々に生成されたこと |
 | 型 F の表示 | 報告のテンプレート |
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 H（原典に無い体系）：「8つの異なる『縁』の顔が同一領域内で確認されました」（206 行）、「帯域型・調停型・曖昧型・侵犯型・持続型・交換型・制作型・二層型という多様な形態」（208 行）。型の名は原典に無い。
 - 型 B（二つに切って置く）：「『渦』に創造型と回復型の二つの型があるのか、それとも回復は『渦』ではなく『場への回帰』なのか」（192 行）。原典を読まずに、渦を二つに分けて置いている。
@@ -382,45 +382,45 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 ## 判断が要るもの
 
-pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは `docs/cs-review/README.md` の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
+pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは調べ方の計画と規約の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
 
-- 個人が上げた写しで本文を読んだ論（ファン・ヘネップの英訳 1960、バルトの序章、ブルデューの英訳 1990）は、規約（`docs/rules/sources.md` §5-8）のとおり「未照合（書籍）」とし、読んだ頁と中身を書きました。D18 の記録は、バーガー＆ルックマンの同じ性格の写しを「本文照合済（写し）」としていて、分野の間でそろっていません。30 分野のあとの全記録の点検でそろえます（README「規約で決めたこと」2026-11-09 の行）。
-- 大学の授業のサイトに置かれた写し（ラモント＆モルナール・プラット）は、出版社の版か再録の文がそのまま読めるものなので、写しの性格と頁の性格を添えて「本文照合済」としました（README「規約で決めたこと」2026-11-09 の行。D22 と同じ扱い）。
+- 個人が上げた写しで本文を読んだ論（ファン・ヘネップの英訳 1960、バルトの序章、ブルデューの英訳 1990）は、規約（調べ方の規約 §5-8）のとおり「未照合（書籍）」とし、読んだ頁と中身を書きました。社会学の記録は、バーガー＆ルックマンの同じ性格の写しを「本文照合済（写し）」としていて、分野の間でそろっていません。30 分野のあとの全記録の点検でそろえます（README「規約で決めたこと」2026-11-09 の行）。
+- 大学の授業のサイトに置かれた写し（ラモント＆モルナール・プラット）は、出版社の版か再録の文がそのまま読めるものなので、写しの性格と頁の性格を添えて「本文照合済」としました（README「規約で決めたこと」2026-11-09 の行。経営学と同じ扱い）。
 - ターナーの社会劇の四局面は、中心の問いにいちばん関わる論ですが、未照合のまま論を残します。マサリク大学の授業用の写し（*The Anthropology of Performance*）をブラウザで保存してもらえれば、四局面を書いた頁を確かめられる見込みです（Issue #73 の保存の表）。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D25-S17 | Turner, V. (1974). Liminal to liminoid, in play, flow, and ritual: An essay in comparative symbology. *Rice University Studies* 60(3), 53–92 | https://hdl.handle.net/1911/63159 （ライス大学の機関リポジトリ。PDF の保存名の案 `D25_turner_1974_liminal-to-liminoid.pdf`）。英語とポルトガル語の再録が *Mediações* 17(2), 2012 にある（DOI 10.5433/2176-6665.2012v17n2p214。読んでいない） | raw-confirmed（手元に置くなら）または url-verified |
-| D25-S18 | Turner, V. (1980). Social dramas and stories about them. *Critical Inquiry* 7(1), 141–168. DOI 10.1086/448092 | JSTOR（有料） | citation-only |
-| D25-S19 | Turner, V. (1986/1988). *The Anthropology of Performance*. PAJ Publications | https://is.muni.cz/el/fss/jaro2016/SOC403/um/61766178/Turner_The-anthropology-of-performance.txt （授業用の写し。自動取得に確かめの画面を返すので、ブラウザでの保存が要る） | blocked-access |
-| D25-S20 | Turner, V. (1957). *Schism and Continuity in an African Society*. Manchester UP | archive.org の schismcontinuity00turn（貸し出しのみ） | blocked-access |
-| D25-S21 | Bourdieu, P. (1980/1990). *Le sens pratique* / *The Logic of Practice*. R. Nice 訳. Polity | https://archive.org/details/BOURDIEUPierreTheLogicOfPractice （英訳。個人が上げた写し。権利は未確認） | url-verified（個人が上げた写し） |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| Turner, V. (1974). Liminal to liminoid, in play, flow, and ritual: An essay in comparative symbology. *Rice University Studies* 60(3), 53–92 | https://hdl.handle.net/1911/63159 （ライス大学の機関リポジトリ。PDF の保存名の案手元の PDF）。英語とポルトガル語の再録が *Mediações* 17(2), 2012 にある（DOI 10.5433/2176-6665.2012v17n2p214。読んでいない） | 手元に保存した（手元に置くなら）または 取得先を確かめた |
+| Turner, V. (1980). Social dramas and stories about them. *Critical Inquiry* 7(1), 141–168. DOI 10.1086/448092 | JSTOR（有料） | 書誌だけ |
+| Turner, V. (1986/1988). *The Anthropology of Performance*. PAJ Publications | https://is.muni.cz/el/fss/jaro2016/SOC403/um/61766178/Turner_The-anthropology-of-performance.txt （授業用の写し。自動取得に確かめの画面を返すので、ブラウザでの保存が要る） | 自動では取れない |
+| Turner, V. (1957). *Schism and Continuity in an African Society*. Manchester UP | archive.org の schismcontinuity00turn（貸し出しのみ） | 自動では取れない |
+| Bourdieu, P. (1980/1990). *Le sens pratique* / *The Logic of Practice*. R. Nice 訳. Polity | https://archive.org/details/BOURDIEUPierreTheLogicOfPractice （英訳。個人が上げた写し。権利は未確認） | 取得先を確かめた（個人が上げた写し） |
 
 既存の行に書き足す案：
 
-- D25-S01：手元の PDF は archive.org に個人が上げた英訳の写し（theritesofpassage、1960 年の版の 1978 年ごろの刷）で、権利は未確認。フランス語の原文（1909、パブリックドメイン）は、archive.org・Gallica（確認画面）・classiques.uqac.ca（接続できない）で見つからなかった。
-- D25-S05：手元の PDF は archive.org に個人が上げた序章の打ち直し（EthnicGroupsAndBoundaries）。誌面の頁番号（9〜37）がある。
-- D25-S06：書誌の無い「Waveland Press (reprint).」は、退避版 193 行の refs「Universitetsforlaget / Waveland Press (reprint)」が分かれたもので、D25-S05 と同じ本の再刊を指すと見られる。D25-S05 に統合する案。
-- D25-S07：PDF に Creative Commons の表記は見当たらない（「© 2016 Hau Books and Jane I. Guyer」）。HAU Books が無料で公開している版。
-- D25-S08：Lemonnier（1986）の DOI 10.1016/0278-4165(86)90012-7 と副題・号 5(2)。Lemonnier（1992）は Fulcrum で機関のログインが要る。
-- D25-S09：授業用の写し https://eclass.duth.gr/modules/document/file.php/ALEX037108/Lamont%20Molnar_the_study_2002.pdf （出版社の版の PDF。権利は未確認）で本文を読めた。
-- D25-S10：手元の PDF は *Ways of Reading* 5th ed.（Bedford/St. Martin's, 1999）の再録の打ち直しで、*Profession* の頁番号は無い。
+- 台帳の「van Gennep 1909」の行：手元の PDF は archive.org に個人が上げた英訳の写し（theritesofpassage、1960 年の版の 1978 年ごろの刷）で、権利は未確認。フランス語の原文（1909、パブリックドメイン）は、archive.org・Gallica（確認画面）・classiques.uqac.ca（接続できない）で見つからなかった。
+- 台帳の「Barth 1969」の行：手元の PDF は archive.org に個人が上げた序章の打ち直し（EthnicGroupsAndBoundaries）。誌面の頁番号（9〜37）がある。
+- 台帳の「Barth 1969」の行：書誌の無い「Waveland Press (reprint).」は、退避版 193 行の refs「Universitetsforlaget / Waveland Press (reprint)」が分かれたもので、台帳の「Barth 1969」の行と同じ本の再刊を指すと見られる。台帳の「Barth 1969」の行に統合する案。
+- 台帳の「Mauss 1925」の行：PDF に Creative Commons の表記は見当たらない（「© 2016 Hau Books and Jane I. Guyer」）。HAU Books が無料で公開している版。
+- 台帳の「Leroi-Gourhan 1964」の行：Lemonnier（1986）の DOI 10.1016/0278-4165(86)90012-7 と副題・号 5(2)。Lemonnier（1992）は Fulcrum で機関のログインが要る。
+- 台帳の「Lamont & Molnar 2002」の行：授業用の写し https://eclass.duth.gr/modules/document/file.php/ALEX037108/Lamont%20Molnar_the_study_2002.pdf （出版社の版の PDF。権利は未確認）で本文を読めた。
+- 台帳の「Pratt 1991」の行：手元の PDF は *Ways of Reading* 5th ed.（Bedford/St. Martin's, 1999）の再録の打ち直しで、*Profession* の頁番号は無い。
 
 ## 手順について分かったこと
 
 - 本文で読めた論は 10 のうち 4（ターナーのリミナリティ・モース・ラモント＆モルナール・プラット）でした。ほかに 3 つ（ファン・ヘネップ・バルト・ブルデュー）は、個人が上げた写しで本文を読みましたが、照合の状態は未照合のままです。
 - 本文で読めた論は、どれも衝突をはっきり書いていました（戦争の代わりの贈与、構造とコミュニタスの闘争、境界をめぐる争い、接触領域の衝突）。報告は、その衝突の多くを落とし、「縁」の静かな記述として読んでいました。原典を読めていない論（社会劇・汚穢）に、報告の包摂の読みが立っています。
-- ターナーの書籍は読めませんでしたが、著者自身の論文（1974）が機関リポジトリで OA でした。書籍だけの論でも、著者の論文版を探す手順が効きました（D21 の作業論文と同じ）。
+- ターナーの書籍は読めませんでしたが、著者自身の論文（1974）が機関リポジトリで OA でした。書籍だけの論でも、著者の論文版を探す手順が効きました（経済学の作業論文と同じ）。
 - パブリックドメインの古典（ファン・ヘネップ 1909・モース 1925）の原文は、Gallica が確認画面を返し、classiques.uqac.ca に接続できず、取れませんでした。英訳で読んでいます。
-- 手元の PDF の表紙を突き合わせると、プラットの PDF は *Profession* の誌面でなく 1999 年の教科書の再録でした（D18 のデュルケームと同じ形）。
+- 手元の PDF の表紙を突き合わせると、プラットの PDF は *Profession* の誌面でなく 1999 年の教科書の再録でした（社会学のデュルケームと同じ形）。
 - ファン・ヘネップの「二次的な自律システム」「聖化→移行→脱聖化」は、DR の言い分を、英訳の pp.185–186 で確かめられました。DR の言い分が原典にある場合もあり、一律に退けず、一つずつ確かめるのがよさそうです。
 
 ### 精読ノートと wiki の誤り（司令塔が直す）
 
-- `pd/wiki/sources/D25_vangennep_1909_rites-of-passage.md` 8 行・64 行：`knowledge/raw/D25_vangennep_1909_rites-of-passage.pdf` を指すが、手元にこの PDF は無い（手元にあるのは `D25_van-gennep_1960_rites-of-passage.pdf` だけ）。同じページの 23 行は「本PDFは、D25-S01（英訳1960年版）と同一のスキャン内容」と書いていて、1909 年の原文の写しは無い。manifest に D25-S01b の行も無い（README 段 4 の 3 件の一つ）。
-- `pd/wiki/sources/D25_pratt_1991_arts-of-the-contact-zone.md` 56 行：「オープンアクセス」のリンクが大学のトップページ（https://www.txstate.edu/ ）で、PDF を指していない。
-- `cs/knowledge/source-notes/D25/D25-S10_pratt-1991.md` 26・57・58 行：定義の文を「(p.3)」とするが、手元の写しでは p.2。どちらも *Profession* の頁でなく写しの頁であることが書かれていない（7 行の「原典ページ数: 8」も、PDF は 9 頁）。
-- `cs/knowledge/source-notes/D25/D25-S01_vangennep-1960.md` 13 行：「Arnold van Gennep (1908 原著)」。著者の序文は 1908 年 12 月の日付で、刊行は 1909 年（報告と台帳は 1909）。読解範囲は pp.1–37 だけで、過渡の自律を書く pp.185–186・pp.191–192 を読んでいない（§7 に未読と書いてある）。
-- `cs/knowledge/source-notes/D25/D25-S07_mauss-1925.md` 32 行：引用「the obligation to return the gifts received」は、原文では「the gifts (cadeaux) received」（p.73）。省いたことの印が無い（低）。
+- wiki の頁「van Gennep 1909」 8 行・64 行：手元の PDF を指すが、手元にこの PDF は無い（手元にあるのは手元の PDF だけ）。同じページの 23 行は「本PDF は、台帳の「van Gennep 1909」の行（英訳1960年版）と同一のスキャン内容」と書いていて、1909 年の原文の写しは無い。台帳に台帳の行も無い（README 段 4 の 3 件の一つ）。
+- wiki の頁「Pratt 1991」 56 行：「オープンアクセス」のリンクが大学のトップページ（https://www.txstate.edu/ ）で、PDF を指していない。
+- 精読ノート「Pratt 1991」 26・57・58 行：定義の文を「(p.3)」とするが、手元の写しでは p.2。どちらも *Profession* の頁でなく写しの頁であることが書かれていない（7 行の「原典ページ数: 8」も、PDF は 9 頁）。
+- 精読ノート「Vangennep 1960」 13 行：「Arnold van Gennep (1908 原著)」。著者の序文は 1908 年 12 月の日付で、刊行は 1909 年（報告と台帳は 1909）。読解範囲は pp.1–37 だけで、過渡の自律を書く pp.185–186・pp.191–192 を読んでいない（§7 に未読と書いてある）。
+- 精読ノート「Mauss 1925」 32 行：引用「the obligation to return the gifts received」は、原文では「the gifts (cadeaux) received」（p.73）。省いたことの印が無い（低）。

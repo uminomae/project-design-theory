@@ -14,7 +14,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D17-lingu
 
 言語学の原典は、二つの力の兼ね合いを論の芯に置いているものが多くありました。最適性理論（Prince & Smolensky 1993、ROA 版 2002）は、一つの言語で働く制約は「highly conflicting」で、文法はその衝突を順位で解く仕組みだと書いています（pp.2–3）。反復学習の実験（Kirby ら 2015）は、学びやすさ（圧縮）の圧力だけでは何でも一語で指す退化した言語に、伝わりやすさ（表現力）の圧力だけでは覚えにくい丸ごとの言語に落ち、二つがそろって構造が出ると書いています（pp.89–90）。Weinreich, Labov & Herzog（1968）は、言語の変化を、ばらつきどうしの競り合いと社会の評価の中で起き、片方の形が定数として選ばれて終わるものとして書いています。至らない形も原典に書かれています。早い十代を過ぎた脳の損傷は言語を「permanently」に損なうこと（Lenneberg 1969、p.639）、ピジンを話す大人の世代の言葉が限られたまま残ること（Bickerton 1981、p.11）、ほかの共同体へ広がる変化が構造を失うこと（Labov 2007 の要旨）、高い頻度の古い形が新しい形の圧力に逆らって残ること（Bybee 2006、pp.715・728–729）です。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D17-linguistics.md`、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論を取り上げ、3 つを「強い対応」としています。報告は §7 で「言語学の10の理論は全て『構造の生成』を記述しており、『構造の解体』…を扱うものがありません」と書いていますが、本文で読めた原典の多くは、上のとおり至らない形や消える形を書いていました。報告が「全5段階」に当てた反復学習は、原典では実験 1 で構造が出ずに曖昧さが増え、伝達の手を加えた実験 2 で構造が出た、と二つに分けて書かれています。「波→縁の移行を駆動する二重メカニズム」「縁の型の多様性」は、原典でなく、調べた跡（phase6 の仮説 H1 と phase7）で LLM が作った構成から来ていました。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
+今の公開報告（「30 領域調査報告」の言語学の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論を取り上げ、3 つを「強い対応」としています。報告は §7 で「言語学の10の理論は全て『構造の生成』を記述しており、『構造の解体』…を扱うものがありません」と書いていますが、本文で読めた原典の多くは、上のとおり至らない形や消える形を書いていました。報告が「全5段階」に当てた反復学習は、原典では実験 1 で構造が出ずに曖昧さが増え、伝達の手を加えた実験 2 で構造が出た、と二つに分けて書かれています。「波→縁の移行を駆動する二重メカニズム」「縁の型の多様性」は、原典でなく、調べた跡（phase6 の仮説 H1 と phase7）で LLM が作った構成から来ていました。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
 11 の論のうち、本文照合済は 9 つです（構文の創発・反復学習・音変化・臨界期・最適性理論・クレオール形成・言語相対性・弁別素性・文法化）。追記（2026-11-09）：はじめの照合の日は Internet Archive が落ちていて、本文照合済は 8 つでした。同じ日のあとで、文法化の語の出どころの Meillet (1912) を Internet Archive のイリノイ大学の蔵書の走査で、臨界期の Johnson & Newport (1989) を Wayback Machine の記録で読めたので、文法化を本文照合済に上げ、臨界期の節に書き足しました。ニカラグア手話は要旨までで、別の新しい手話（Sandler ら 2005）は本文で読みました。文法化は、Haspelmath（1999）を Zenodo の写しで本文まで読みましたが、上げた人が著者と確かめられないので未照合と書いています。語用論は書籍と書籍の章だけで、本文に当たれませんでした。
 
@@ -22,7 +22,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 ## 一面の表
 
-照合の状態は `docs/rules/sources.md` §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。「未照合」の行の対立・衝突・統合は、報告の言い分でなく、原典で確かめられたことだけを書くので、空けています。各行の「対立」「衝突」は原典の構造で、それを対立・衝突・統合と呼ぶのは Claude の読み替えです。
+照合の状態は調べ方の規約 §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。「未照合」の行の対立・衝突・統合は、報告の言い分でなく、原典で確かめられたことだけを書くので、空けています。各行の「対立」「衝突」は原典の構造で、それを対立・衝突・統合と呼ぶのは Claude の読み替えです。
 
 | 論 | 対立 | 衝突 | 統合／新たな安定、または統合に至らずにどう終わったか | 論の微細さ | 照合の状態 |
 |---|---|---|---|---|---|
@@ -46,9 +46,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Senghas, A., Kita, S. & Özyürek, A. (2004). Children creating core properties of language: Evidence from an emerging sign language in Nicaragua. *Science* 305(5691), 1779–1782. DOI 10.1126/science.1100199（Crossref で書誌を確かめた）。manifest D17-S14。台帳の取得先の MPG PuRe（https://pure.mpg.de/pubman/item/item_59126_3/component/file_59127/Senghas_2004_children.pdf ）は、自動取得に「Making sure you're not a bot!」の確認画面を返した。ブラウザでの保存が要る。要旨は OpenAlex の要旨で読んだ。
+- Senghas, A., Kita, S. & Özyürek, A. (2004). Children creating core properties of language: Evidence from an emerging sign language in Nicaragua. *Science* 305(5691), 1779–1782. DOI 10.1126/science.1100199（Crossref で書誌を確かめた）。台帳に行がある。台帳の取得先の MPG PuRe（https://pure.mpg.de/pubman/item/item_59126_3/component/file_59127/Senghas_2004_children.pdf ）は、自動取得に「Making sure you're not a bot!」の確認画面を返した。ブラウザでの保存が要る。要旨は OpenAlex の要旨で読んだ。
 - Sandler, W., Meir, I., Padden, C. & Aronoff, M. (2005). The emergence of grammar: Systematic structure in a new language. *PNAS* 102(7), 2661–2665. DOI 10.1073/pnas.0405448102。PMC548320 の記事の頁（HTML）で読んだ。節で控えた：Abstract・冒頭・Methods（Subjects）。
-- 精読ノート：`cs/knowledge/source-notes/D17/D17-S14_senghas-2004.md`（pp.1779–1782 を読んだと書く）。
+- 精読ノート：精読ノート「Senghas 2004」（pp.1779–1782 を読んだと書く）。
 
 **照合の状態**：Senghas ら 2004 は要旨照合済。精読ノートの引用（第 1 学年は様態と経路を同時に、第 2・第 3 学年は順に表す）は、本文で確かめていません（二次資料のみ（精読ノート））。Sandler ら 2005 は本文照合済で、ニカラグアとは別の手話です。
 
@@ -78,7 +78,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Bybee, J. (2006). From usage to grammar: The mind's response to repetition. *Language* 82(4), 711–733. DOI 10.1353/lan.2006.0186（Crossref で書誌を確かめた）。ニューメキシコ大学の言語学科のサイトの写し（https://ling.unm.edu/assets/documents/bybee2006fromusage.pdf ）。先頭が %PDF で、題と著者を確かめた。誌面の頁番号がある。manifest に行は無い。読んだ頁：p.711・p.715・pp.728–729。
+- Bybee, J. (2006). From usage to grammar: The mind's response to repetition. *Language* 82(4), 711–733. DOI 10.1353/lan.2006.0186（Crossref で書誌を確かめた）。ニューメキシコ大学の言語学科のサイトの写し（https://ling.unm.edu/assets/documents/bybee2006fromusage.pdf ）。先頭が %PDF で、題と著者を確かめた。誌面の頁番号がある。台帳に行は無い。読んだ頁：p.711・p.715・pp.728–729。
 - Tomasello, M. (2003). *Constructing a Language*. Harvard UP、Goldberg, A. E. (1995). *Constructions*. Chicago UP は書籍で、開ける版を探していない。Goldberg (2003) *TiCS* 7(5), 219–224（DOI 10.1016/S1364-6613(03)00080-9）は、著者の Princeton の頁に PDF が見つからず、著者が許したポルトガル語訳がリオグランデ・ド・スル連邦大学の機関リポジトリ（https://lume.ufrgs.br/bitstream/10183/249233/1/000987282.pdf ）にあるが、接続できなかった（SSL の誤り）。
 - Bybee & Beckner (2010) は、報告が引くが、書誌を確かめていない。
 
@@ -108,11 +108,11 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Kirby, S., Cornish, H. & Smith, K. (2008). Cumulative cultural evolution in the laboratory: An experimental approach to the origins of structure in human language. *PNAS* 105(31), 10681–10686. DOI 10.1073/pnas.0707835105。manifest D17-S12（raw-confirmed だが local_file が空）。PNAS の PDF は自動取得に確認画面（Cloudflare）を返した。PMC2504810 の記事の頁（HTML）で読んだ。節で控えた：Abstract・Results（実験 1・Table 1）・Design of Experiment 2・Results of Experiment 2・Discussion。2017 年に訂正が出ている（PMC の頁の注）。
-- Kirby, S., Tamariz, M., Cornish, H. & Smith, K. (2015). Compression and communication in the cultural evolution of linguistic structure. *Cognition* 141, 87–102. DOI 10.1016/j.cognition.2015.03.016。スターリング大学の機関リポジトリ（https://dspace.stir.ac.uk/bitstream/1893/22564/1/Kirby%20et%20al_Cognition_2015.pdf ）の出版社の版。CC BY 4.0。CORE の写しは 403 を返した。manifest に行は無い。読んだ頁：p.87・pp.89–90。
-- Beckner, C., Pierrehumbert, J. B. & Hay, J. (2017). The emergence of linguistic structure in an online iterated learning task. *Journal of Language Evolution* 2(2), 160–176. DOI 10.1093/jole/lzx001。manifest D17-S11。台帳の OUP の PDF は確認画面を返した。オックスフォード大学の機関リポジトリ（ORA）の写しで読んだ。写しの頁は 1–16 で、誌面の頁ではない。読んだ頁：写しの p.1・p.3。
-- Raviv, L., Meyer, A. & Lev-Ari, S. (2020). The role of social network structure in the emergence of linguistic structure. *Cognitive Science* 44(8), e12876. DOI 10.1111/cogs.12876。manifest D17-S13（raw-confirmed だが local_file が空）。Wiley の PDF は確認画面を返した。グラスゴー大学の機関リポジトリの出版社の版（https://eprints.gla.ac.uk/281184/1/281184.pdf ）で読んだ。読んだ頁：p.1。
-- 関わる論：Lupyan, G. & Dale, R. (2010). Language structure is partly determined by social structure. *PLoS ONE* 5(1), e8559（manifest D17-S15。PLOS の PDF で要旨を読んだ）。
+- Kirby, S., Cornish, H. & Smith, K. (2008). Cumulative cultural evolution in the laboratory: An experimental approach to the origins of structure in human language. *PNAS* 105(31), 10681–10686. DOI 10.1073/pnas.0707835105。台帳に行がある（手元に保存した だが local_file が空）。PNAS の PDF は自動取得に確認画面（Cloudflare）を返した。PMC2504810 の記事の頁（HTML）で読んだ。節で控えた：Abstract・Results（実験 1・Table 1）・Design of Experiment 2・Results of Experiment 2・Discussion。2017 年に訂正が出ている（PMC の頁の注）。
+- Kirby, S., Tamariz, M., Cornish, H. & Smith, K. (2015). Compression and communication in the cultural evolution of linguistic structure. *Cognition* 141, 87–102. DOI 10.1016/j.cognition.2015.03.016。スターリング大学の機関リポジトリ（https://dspace.stir.ac.uk/bitstream/1893/22564/1/Kirby%20et%20al_Cognition_2015.pdf ）の出版社の版。CC BY 4.0。CORE の写しは 403 を返した。台帳に行は無い。読んだ頁：p.87・pp.89–90。
+- Beckner, C., Pierrehumbert, J. B. & Hay, J. (2017). The emergence of linguistic structure in an online iterated learning task. *Journal of Language Evolution* 2(2), 160–176. DOI 10.1093/jole/lzx001。台帳に行がある。台帳の OUP の PDF は確認画面を返した。オックスフォード大学の機関リポジトリ（ORA）の写しで読んだ。写しの頁は 1–16 で、誌面の頁ではない。読んだ頁：写しの p.1・p.3。
+- Raviv, L., Meyer, A. & Lev-Ari, S. (2020). The role of social network structure in the emergence of linguistic structure. *Cognitive Science* 44(8), e12876. DOI 10.1111/cogs.12876。台帳に行がある（手元に保存した だが local_file が空）。Wiley の PDF は確認画面を返した。グラスゴー大学の機関リポジトリの出版社の版（https://eprints.gla.ac.uk/281184/1/281184.pdf ）で読んだ。読んだ頁：p.1。
+- 関わる論：Lupyan, G. & Dale, R. (2010). Language structure is partly determined by social structure. *PLoS ONE* 5(1), e8559（台帳に行がある。PLOS の PDF で要旨を読んだ）。
 
 **照合の状態**：本文照合済（Kirby ら 2008 は PMC の HTML、2015 は機関リポジトリの CC BY の版）。Beckner ら・Raviv らも機関リポジトリの写しで本文照合済。Lupyan & Dale は本文照合済（PLOS。要旨の頁）。
 
@@ -139,7 +139,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 120 行「Smith & Kirby (2008) は、文化的伝達の忠実度と表現力のトレードオフ」 | 未判定（書誌） | 低 | 書誌を確かめていない。圧縮と表現力の兼ね合いを題にしているのは Kirby ら 2015 |
 | ja 124 行・82 行 全5段階・「強い対応」 | 未判定 | 中 | 5段階の定義が決まってから。原典の芯は二つの圧力の兼ね合いで、片方だけのときの至らない形が書かれている |
 | ja 206 行「入力が不十分な場合に主に作動するメカニズム」、ja 204 行「十分な反復がある場合に主に作動」 | 付け足し | 中 | 原典は入力の多少で二つの仕組みを分けていない。出どころは phase6 209〜227 行の H1（[SPECULATIVE]）と phase7 7〜17 行 |
-| Beckner ら 2017・Raviv ら 2020 の結果に触れていない | 抜け | 中 | 上の要旨。manifest には二つとも行があるのに、報告の本文に入っていない |
+| Beckner ら 2017・Raviv ら 2020 の結果に触れていない | 抜け | 中 | 上の要旨。台帳には二つとも行があるのに、報告の本文に入っていない |
 | pres 54 行 提唱者「Kirby et al. (2014)」、ja 82 行「Kirby et al.」 | 未判定（版の食い違い） | 低 | ja の本文は 2008 を中心に引く |
 
 ### 4. 文法化
@@ -149,11 +149,11 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 **一次情報**：
 
 - Haspelmath, M. (1999). Why is grammaticalization irreversible? *Linguistics* 37(6), 1043–1068. DOI 10.1515/ling.37.6.1043（Crossref で書誌を確かめた）。Zenodo の記録 571365（https://zenodo.org/records/571365 ）の PDF。誌面の組みで、頁番号がある。Zenodo の記録の作者は Haspelmath で、ライセンスは CC BY 4.0 と表示されている。上げたアカウントは Haspelmath を第一著者とする記録を 9 件持つが、著者本人かは確かめられなかった。読んだ頁：p.1043・p.1048・pp.1050–1052。
-- Hopper, P. J. & Traugott, E. C. (2003). *Grammaticalization*. 2nd ed. CUP（manifest D17-S01）。書籍。Traugott (1989) *Language* 65(1), 31–55（D17-S03）は JSTOR の壁。Meillet (1912)「L'évolution des formes grammaticales」は、はじめの照合の日は Internet Archive が「Temporarily Offline」で探せなかった。
-- 追記（2026-11-09）：Meillet, A. (1912). L'évolution des formes grammaticales. *Scientia* 12, n° 26（再録：*Linguistique historique et linguistique générale*. Paris: Champion, 1921, pp.130–148）。manifest D17-S32。Internet Archive の資料 linguistiquehist00meil（https://archive.org/details/linguistiquehist00meil 。イリノイ大学アーバナ・シャンペーン校の蔵書の走査。著者は 1936 年没）の OCR の文字（`_djvu.txt`）で読んだ。初出の書誌は、再録の p.130 の脚注（「Scientia (Rivista di scienza), vol. XII (1912), n° XXVI, 6」）による。読んだ頁：p.130〜131・p.133・pp.140–141（頁は OCR の文字の頁の頭の番号で数えた）。
+- Hopper, P. J. & Traugott, E. C. (2003). *Grammaticalization*. 2nd ed. CUP（台帳に行がある）。書籍。Traugott (1989) *Language* 65(1), 31–55は JSTOR の壁。Meillet (1912)「L'évolution des formes grammaticales」は、はじめの照合の日は Internet Archive が「Temporarily Offline」で探せなかった。
+- 追記（2026-11-09）：Meillet, A. (1912). L'évolution des formes grammaticales. *Scientia* 12, n° 26（再録：*Linguistique historique et linguistique générale*. Paris: Champion, 1921, pp.130–148）。台帳に行がある。Internet Archive の資料 linguistiquehist00meil（https://archive.org/details/linguistiquehist00meil 。イリノイ大学アーバナ・シャンペーン校の蔵書の走査。著者は 1936 年没）の OCR の文字（`_djvu.txt`）で読んだ。初出の書誌は、再録の p.130 の脚注（「Scientia (Rivista di scienza), vol. XII (1912), n° XXVI, 6」）による。読んだ頁：p.130〜131・p.133・pp.140–141（頁は OCR の文字の頁の頭の番号で数えた）。
 - 不可逆を疑う側の Newmeyer (2001)・Campbell (2001)（*Language Sciences* 23）は、Elsevier の壁の見込みで、試していない。
 
-**照合の状態**：本文照合済（Meillet 1912。OCR の文字で読んだ。追記 2026-11-09）。Haspelmath 1999 は未照合で、上げた人の分からない写しで本文を読み、上の頁を控えました（`docs/cs-review/README.md`「規約で決めたこと」2026-11-09 D29 の行）。Hopper & Traugott は未照合（書籍）。不可逆をめぐる議論は Haspelmath の側だけで読んでいて、Meillet で確かめたのは、語の出どころと、弱まりと足し直しのくり返しです。
+**照合の状態**：本文照合済（Meillet 1912。OCR の文字で読んだ。追記 2026-11-09）。Haspelmath 1999 は未照合で、上げた人の分からない写しで本文を読み、上の頁を控えました（調べ方の計画と規約「規約で決めたこと」2026-11-09 複雑系科学の行）。Hopper & Traugott は未照合（書籍）。不可逆をめぐる議論は Haspelmath の側だけで読んでいて、Meillet で確かめたのは、語の出どころと、弱まりと足し直しのくり返しです。
 
 **原典に書いてあること**（誌面の頁）：
 
@@ -181,11 +181,11 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Weinreich, U., Labov, W. & Herzog, M. I. (1968). Empirical foundations for a theory of language change. In W. P. Lehmann & Y. Malkiel (Eds.), *Directions for Historical Linguistics* (pp.97–195). University of Texas Press。テキサス大学オースティン校の Linguistics Research Center の公開の全文（https://lrc.la.utexas.edu/books/directions/5-weinreich ）。HTML で、誌面の頁番号が無い。節の名前で控えた：§1（冒頭）・§3.4「The Evaluation Problem」「The Actuation Problem」・§3.5「Some General Principles for the Study of Language Change」。manifest に行は無い。
+- Weinreich, U., Labov, W. & Herzog, M. I. (1968). Empirical foundations for a theory of language change. In W. P. Lehmann & Y. Malkiel (Eds.), *Directions for Historical Linguistics* (pp.97–195). University of Texas Press。テキサス大学オースティン校の Linguistics Research Center の公開の全文（https://lrc.la.utexas.edu/books/directions/5-weinreich ）。HTML で、誌面の頁番号が無い。節の名前で控えた：§1（冒頭）・§3.4「The Evaluation Problem」「The Actuation Problem」・§3.5「Some General Principles for the Study of Language Change」。台帳に行は無い。
 - Labov, W. (2007). Transmission and diffusion. *Language* 83(2), 344–387. DOI 10.1353/lan.2007.0082。著者のペンシルベニア大学の頁（https://www.ling.upenn.edu/~wlabov/Papers/TD.html ）は 403 を返した。Internet Archive はその日落ちていた。要旨は OpenAlex で読んだ。
 - Wang, W. S.-Y. (1969). Competing changes as a cause of residue. *Language* 45(1), 9–25. DOI 10.2307/411748、Labov, W. (1981). Resolving the Neogrammarian controversy. *Language* 57(2), 267–308. DOI 10.2307/413692。どちらも JSTOR の壁。要旨は OpenAlex で読んだ。
 - Labov, W. (1963). The social motivation of a sound change. *Word* 19(3), 273–309. DOI 10.1080/00437956.1963.11659799。Taylor & Francis で、試していない。
-- Labov (1994・2001)『Principles of Linguistic Change』（manifest D17-S04・S05）は書籍。
+- Labov (1994・2001)『Principles of Linguistic Change』（台帳に行がある）は書籍。
 
 **照合の状態**：Weinreich, Labov & Herzog 1968 は本文照合済（UT Austin の公開の全文。頁は節で控えた）。Labov 2007・Wang 1969・Labov 1981 は要旨照合済。Labov 1994・2001 は未照合（書籍）。
 
@@ -236,9 +236,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Lenneberg, E. H. (1969). On explaining language. *Science* 164(3880), 635–643. DOI 10.1126/science.164.3880.635（Crossref で書誌を確かめた）。manifest D17-S08。手元の PDF は JSTOR の表紙つきの写しで、台帳はバスク大学の授業の頁（ehu.eus）の写しと書く。その URL は今回 SSL の誤りで取れず、同じファイルかは比べていない。誌面の頁番号がある。読んだ頁：pp.639–640。1967 年の書籍の要約として著者が書いた論文で、書籍そのものを確かめたことにはしない。
-- Hartshorne, J. K., Tenenbaum, J. B. & Pinker, S. (2018). A critical period for second language acquisition: Evidence from 2/3 million English speakers. *Cognition* 177, 263–277. DOI 10.1016/j.cognition.2018.04.007。manifest D17-S10。手元の PDF は Pinker のサイトの写しで、「Cognition xxx (xxxx) xxx–xxx」の組み（受理後の校正の版）。頁は PDF の頁で控えた：p.1・p.8・p.9・p.12。
-- Johnson, J. S. & Newport, E. L. (1989). *Cognitive Psychology* 21(1), 60–99（D17-S09）。台帳の UT Dallas の授業の頁の URL は、別の案内の頁（atlas.utdallas.edu）に飛ばされた。Internet Archive はその日落ちていた。追記（2026-11-09）：Wayback Machine の記録（2026-04-11 の取得。https://web.archive.org/web/20260411195607/https://personal.utdallas.edu/~assmann/hcs6367/johnson_newport89.pdf ）で取れた。UT Dallas の授業の頁の写し（権利は未確認）で、誌面の走査。PDF の頁に 59 を足すと誌面の頁（表 3 の頁の頭の「78」で確かめた）。読んだ頁：p.60（要旨）・p.78。
+- Lenneberg, E. H. (1969). On explaining language. *Science* 164(3880), 635–643. DOI 10.1126/science.164.3880.635（Crossref で書誌を確かめた）。台帳に行がある。手元の PDF は JSTOR の表紙つきの写しで、台帳はバスク大学の授業の頁（ehu.eus）の写しと書く。その URL は今回 SSL の誤りで取れず、同じファイルかは比べていない。誌面の頁番号がある。読んだ頁：pp.639–640。1967 年の書籍の要約として著者が書いた論文で、書籍そのものを確かめたことにはしない。
+- Hartshorne, J. K., Tenenbaum, J. B. & Pinker, S. (2018). A critical period for second language acquisition: Evidence from 2/3 million English speakers. *Cognition* 177, 263–277. DOI 10.1016/j.cognition.2018.04.007。台帳に行がある。手元の PDF は Pinker のサイトの写しで、「Cognition xxx (xxxx) xxx–xxx」の組み（受理後の校正の版）。頁は PDF の頁で控えた：p.1・p.8・p.9・p.12。
+- Johnson, J. S. & Newport, E. L. (1989). *Cognitive Psychology* 21(1), 60–99。台帳の UT Dallas の授業の頁の URL は、別の案内の頁（atlas.utdallas.edu）に飛ばされた。Internet Archive はその日落ちていた。追記（2026-11-09）：Wayback Machine の記録（2026-04-11 の取得。https://web.archive.org/web/20260411195607/https://personal.utdallas.edu/~assmann/hcs6367/johnson_newport89.pdf ）で取れた。UT Dallas の授業の頁の写し（権利は未確認）で、誌面の走査。PDF の頁に 59 を足すと誌面の頁（表 3 の頁の頭の「78」で確かめた）。読んだ頁：p.60（要旨）・p.78。
 - Newport, E. L. (1990). Maturational constraints on language learning. *Cognitive Science* 14(1), 11–28. DOI 10.1207/s15516709cog1401_2。要旨は OpenAlex で読んだ。Mayberry, Lock & Kazmi (2002) *Nature* 417, 38 は壁。
 
 **照合の状態**：Lenneberg 1969 は本文照合済（授業用の写し。台帳による）。Hartshorne ら 2018 は本文照合済（著者のサイトの写し）。Newport 1990 は要旨照合済。Johnson & Newport 1989 は本文照合済（授業用の写しの Wayback の記録。追記 2026-11-09）。Lenneberg 1967 の書籍は未照合。
@@ -271,7 +271,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨**：文法は、普遍の制約の組と、その衝突を解く一般の手立てからなる。制約は表面で破られうる。候補の中から、順位の高い制約をよく満たすものが出力に選ばれる。言語の違いは、制約の違いでなく、順位の違いである。
 
-**一次情報**：Prince, A. & Smolensky, P. (1993/2004). *Optimality Theory: Constraint Interaction in Generative Grammar*。Rutgers Optimality Archive の ROA-537（https://roa.rutgers.edu/files/537-0802/537-0802-PRINCE-0-0.PDF ）。表紙に「ROA Version, 8/2002」「First circulated: April, 1993」「RuCCS-TR-2; CU-CS-696-93: July, 1993」とあり、技術報告とほぼ同じで頁づけが変わったと書く。2004 年の Blackwell の版（DOI 10.1002/9780470759400）とは別の版。読んだ頁（ROA 版の頁）：pp.2–3・p.18。manifest に行は無い。
+**一次情報**：Prince, A. & Smolensky, P. (1993/2004). *Optimality Theory: Constraint Interaction in Generative Grammar*。Rutgers Optimality Archive の ROA-537（https://roa.rutgers.edu/files/537-0802/537-0802-PRINCE-0-0.PDF ）。表紙に「ROA Version, 8/2002」「First circulated: April, 1993」「RuCCS-TR-2; CU-CS-696-93: July, 1993」とあり、技術報告とほぼ同じで頁づけが変わったと書く。2004 年の Blackwell の版（DOI 10.1002/9780470759400）とは別の版。読んだ頁（ROA 版の頁）：pp.2–3・p.18。台帳に行は無い。
 
 **照合の状態**：本文照合済（著者版。ROA 版 2002 の頁）。Blackwell 2004 年版の頁は控えていません。
 
@@ -302,8 +302,8 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Bickerton, D. (1981/2016). *Roots of Language*（Classics in Linguistics 3）. Berlin: Language Science Press. DOI 10.17169/langsci.b91.109。CC BY 4.0。初版は 1981 年の Karoma。manifest D17-S07（台帳の書誌は Karoma で、手元の PDF は 2016 年の再刊）。読んだ頁：pp.vii–ix（2016 年の序文）・p.1・p.9・p.11・p.17。
-- Thomason, S. G. & Kaufman, T. (1988). *Language Contact, Creolization, and Genetic Linguistics*. UC Press（manifest D17-S06）。de Gruyter の再刊（DOI 10.1525/9780520912793）は前付けだけが公開。OA の版は見つからなかった。
+- Bickerton, D. (1981/2016). *Roots of Language*（Classics in Linguistics 3）. Berlin: Language Science Press. DOI 10.17169/langsci.b91.109。CC BY 4.0。初版は 1981 年の Karoma。台帳に行がある（台帳の書誌は Karoma で、手元の PDF は 2016 年の再刊）。読んだ頁：pp.vii–ix（2016 年の序文）・p.1・p.9・p.11・p.17。
+- Thomason, S. G. & Kaufman, T. (1988). *Language Contact, Creolization, and Genetic Linguistics*. UC Press（台帳に行がある）。de Gruyter の再刊（DOI 10.1525/9780520912793）は前付けだけが公開。OA の版は見つからなかった。
 - DeGraff, M. (2003). Against Creole exceptionalism. *Language* 79(2), 391–410. DOI 10.1353/lan.2003.0114。著者の MIT の頁に PDF は見つからなかった。OpenAlex が要旨の欄に載せる冒頭の文だけを読んだ。McWhorter (2001) は試していない。
 
 **照合の状態**：Bickerton は本文照合済（Language Science Press の CC BY の再刊）。Thomason & Kaufman は未照合（書籍）。DeGraff 2003 は要旨照合済（OpenAlex の冒頭の文）。
@@ -328,7 +328,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 180 行「Bickerton (1981) の『生物学的プログラム仮説』…は現在では大きく批判されており、社会歴史的条件の重視が主流となっています」 | 言い過ぎ | 中 | 研究の一線。Bickerton は 2016 年の序文で中心の主張を保つ（p.vii）。批判の側（DeGraff 2003 など）は要旨までしか読んでいない。報告は一方を確立した事実のように書いている |
 | ja 184 行「場が外部力（植民地化）により強制的に作られる」、ja 75 行「場（強制的創出）に独自の知見」 | 未判定 | 中 | 5段階の定義が決まってから。原典は、伝達の途切れと、世代のあいだで規則が作られる形を書く（pp.1・9）。大人の世代の言葉が限られたまま残る至らない形（p.11）を、報告は落としている（抜け） |
 | ja 180〜184 行 世代のあいだの断絶・大人のピジンが残ることに触れていない | 抜け | 中 | pp.1・9・11 |
-| manifest D17-S07 の書誌「Karoma.」 | 未判定（台帳の書誌） | 低 | 手元の PDF は Language Science Press の 2016 年の再刊（CC BY 4.0、DOI 10.17169/langsci.b91.109）。2016 年の序文が付く |
+| 台帳の「Bickerton 1981」の行の書誌「Karoma.」 | 未判定（台帳の書誌） | 低 | 手元の PDF は Language Science Press の 2016 年の再刊（CC BY 4.0、DOI 10.17169/langsci.b91.109）。2016 年の序文が付く |
 
 ### 10. 言語相対性
 
@@ -363,7 +363,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨**：音素は、二つの極からなる弁別素性の束に分けられる。聞き手は素性ごとに二つのどちらかを選ぶ。子どもが区別を身に付ける順と、失語で区別が失われる順は、同じ含みの法則に従い、逆になる。
 
-**一次情報**：Jakobson, R. & Halle, M. (1956). *Fundamentals of Language*. The Hague: Mouton。manifest D17-S16。Morris Halle の MIT の頁（https://web.mit.edu/morrishalle/pubworks/papers/1956_Jakobson_Halle_Fundamentals_of_Language.pdf ）の写しで、図書館の本の走査に文字の層が付いている。誌面の頁番号がある。読んだ頁：pp.4–5・pp.26–27。
+**一次情報**：Jakobson, R. & Halle, M. (1956). *Fundamentals of Language*. The Hague: Mouton。台帳に行がある。Morris Halle の MIT の頁（https://web.mit.edu/morrishalle/pubworks/papers/1956_Jakobson_Halle_Fundamentals_of_Language.pdf ）の写しで、図書館の本の走査に文字の層が付いている。誌面の頁番号がある。読んだ頁：pp.4–5・pp.26–27。
 
 **照合の状態**：本文照合済（著者 Halle の MIT の頁の写し）。
 
@@ -390,7 +390,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | 反復学習の提唱者 | Kirby et al. | ― | Kirby et al. (2014) | ― |
 | ニカラグア手話の時間表現 | Kocaba et al. (2016) | ― | Kocab et al. (2016) | Kocaba et al. (2016) |
 
-同じ報告の訳でなく、版ごとに別に生成されたことが、件数と段の食い違いの出どころと見られます（D18・D22・D25 と同じ）。pres は 10 のうち 8 に「場→波→縁→渦→束」と書いていて、ja の対応段階の欄と合いません。
+同じ報告の訳でなく、版ごとに別に生成されたことが、件数と段の食い違いの出どころと見られます（社会学・経営学・人類学・民族学と同じ）。pres は 10 のうち 8 に「場→波→縁→渦→束」と書いていて、ja の対応段階の欄と合いません。
 
 ### 領域全体の主張
 
@@ -401,11 +401,11 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 84 行・212 行・252 行「10の理論が10種類の異なる縁の型を提示」「他の単一領域では見られない多様性」「最も明確に示す領域」 | 付け足し | 中 | 型の名（制度型・伝播型・界面型など）は原典に無い。phase6 203 行・phase7 60 行で LLM が付けた。30 領域を比べた跡は無い |
 | ja 250 行「言語学は、5段階モデルとの構造的対応が高い領域です」、pres 107 行「全体として強い領域であると確認されました」 | 言い過ぎ | 中 | 11 の論のうち、原典で衝突や兼ね合いが確かめられたのは 8 つほどで、「全5段階」とした反復学習も、原典は二つの実験に分けて至らない形を書いている |
 | ja 238 行「完全に意図なき極（ニカラグア手話、反復的学習モデル）」 | 未判定 | 低 | Kirby ら 2008 は、学ぶ人の意図した設計は無いと書く（Discussion）。実験 2 の filter は実験する人の手。ニカラグア手話は要旨まで |
-| ja 53〜63 行 5段階の定義（縁「対立する要素が共存し、どちらにも収束しない緊張状態」） | 未判定 | 中 | 5段階の定義の置き場ごとの食い違い（README「判断が要ること」1）。報告は縁の定義に「対立」を入れながら、当てはめでは忠実性と有標性の「競合」を波に（ja 174 行）、縁を「ランキングの確定」「機能分化」として読んでいる（D11〜D20 と同じ） |
+| ja 53〜63 行 5段階の定義（縁「対立する要素が共存し、どちらにも収束しない緊張状態」） | 未判定 | 中 | 5段階の定義の置き場ごとの食い違い（README「判断が要ること」1）。報告は縁の定義に「対立」を入れながら、当てはめでは忠実性と有標性の「競合」を波に（ja 174 行）、縁を「ランキングの確定」「機能分化」として読んでいる（薬学〜法学・政治学と同じ） |
 
 ### テンプレート由来の表示
 
-「立ち位置明示」（3 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6」「Phase 7」（30・38 行）、「方法論的開示（S60）」（44 行）、「温度帯の分布」（84 行）、「安全弁」（86 行）、「結びの温度開示」「温度帯」（256〜259 行）、「Colophon」「generator_model」（261〜271 行）。46〜49 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（writing.md §1-1・§1-8）。英語版は AI に触れる 3 本の一つ（README 段 1）。報告のテンプレートが原因で、個別でなくテンプレートで直します。
+「立ち位置明示」（3 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6」「Phase 7」（30・38 行）、「方法論的開示（S60）」（44 行）、「温度帯の分布」（84 行）、「安全弁」（86 行）、「結びの温度開示」「温度帯」（256〜259 行）、「Colophon」「generator_model」（261〜271 行）。46〜49 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（書き方の規約 §1-1・§1-8）。英語版は AI に触れる 3 本の一つ（README 段 1）。報告のテンプレートが原因で、個別でなくテンプレートで直します。
 
 ### 誤りの出どころ
 
@@ -415,12 +415,12 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | 波→縁の二重メカニズム | phase6 209〜227 行の H1 [SPECULATIVE] → phase7 7〜17 行の Pattern-1・141〜143 行の PT-1 → 報告 §6・§8 で「発見」 |
 | 10 種類の縁の型 | phase6 203 行 → phase7 60 行・159 行 |
 | Kocaba（Kocab の綴り違い） | DR 77・112 行 → 退避版 170・180 行 → ja 96 行 |
-| 反復学習の実験 1 と 2 を一つにする | 退避版の要約（D17-S12 の精読ノートが 2026-04 に実験を分けて読んだあとも、報告は 2026-03 のまま） |
+| 反復学習の実験 1 と 2 を一つにする | 退避版の要約（台帳の「Kirby ら 2008」の行の精読ノートが 2026-04 に実験を分けて読んだあとも、報告は 2026-03 のまま） |
 | Bickerton を「大きく批判」とし、提唱者を Thomason & Kaufman にする | 退避版 98〜120 行（「Bickerton(1981)の生得主義的解釈は後退し、社会歴史的条件の重視が主流」） |
 | 版ごとの件数と段の食い違い | ja・en・pres が別々に生成されたこと |
 | 型 F の表示 | 報告のテンプレート |
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 H（原典に無い体系）：「言語学の10の理論は、10種類の異なる『縁』の型を提示しています」（212 行）、「大きく『内生的』と『外生的』に分類できます」（214 行）。型の名は原典に無い。
 - 型 E（急いで解く・言い切る）と「最も」：「言語学で最も重要な横断的パターンは」（202 行）、「言語学がこの調査に対して最も豊かに貢献する領域の一つ」（212 行）、「最も明確に示す領域」（252 行）、「5段階モデルの記述が最も弱い部分への具体的な貢献」（252 行）。30 領域を数えた跡は無い。
@@ -430,58 +430,52 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 ## 判断が要るもの
 
-pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは `docs/cs-review/README.md` の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
+pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは調べ方の計画と規約の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
 
-- Haspelmath（1999）の Zenodo の写しは、作者の欄とライセンスの表示が著者を指しますが、上げたアカウントが著者本人かを確かめられませんでした。D29 の決め（Zenodo の表示は権利の確かめにならない）に従い、未照合とし、読んだ頁を書きました。著者のサイト（MPI EVA の頁）に同じ PDF があれば、本文照合済に上げられます。
+- Haspelmath（1999）の Zenodo の写しは、作者の欄とライセンスの表示が著者を指しますが、上げたアカウントが著者本人かを確かめられませんでした。複雑系科学の決め（Zenodo の表示は権利の確かめにならない）に従い、未照合とし、読んだ頁を書きました。著者のサイト（MPI EVA の頁）に同じ PDF があれば、本文照合済に上げられます。
 - 弁別素性（Jakobson & Halle 1956）は、似た論文の行ですが、本文に当たれて、壊れる順を同じ法則の中に書いているので、論として足しました（README「調査の手順」1）。Lupyan & Dale（2010）は、論として足さず、反復学習の節で関わる論として挙げました。
 - クレオール形成の提唱者を Thomason & Kaufman とするのは、同書を読めないので「未判定（帰属）」としました。stance 2-1 から、確かめられない帰属は外さずに状態を書く、と予想しました。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D17-S17 | Weinreich, U., Labov, W. & Herzog, M. I. (1968). Empirical foundations for a theory of language change. In Lehmann & Malkiel (Eds.), *Directions for Historical Linguistics* (pp.97–195). University of Texas Press | https://lrc.la.utexas.edu/books/directions/5-weinreich （UT Austin の Linguistics Research Center の公開の全文。HTML。保存名の案 `D17_weinreich-labov-herzog_1968_empirical-foundations.html`） | url-verified（HTML。頁は節） |
-| D17-S18 | Prince, A. & Smolensky, P. (1993/2002). *Optimality Theory: Constraint Interaction in Generative Grammar*. ROA-537（ROA 版 8/2002。RuCCS-TR-2）。書籍は Blackwell 2004（DOI 10.1002/9780470759400） | https://roa.rutgers.edu/files/537-0802/537-0802-PRINCE-0-0.PDF （著者版。保存名の案 `D17_prince-smolensky_1993-2002_optimality-theory-roa537.pdf`） | raw-confirmed（手元に置くなら） |
-| D17-S19 | Kirby, S., Tamariz, M., Cornish, H. & Smith, K. (2015). Compression and communication in the cultural evolution of linguistic structure. *Cognition* 141, 87–102. DOI 10.1016/j.cognition.2015.03.016 | https://dspace.stir.ac.uk/bitstream/1893/22564/1/Kirby%20et%20al_Cognition_2015.pdf （スターリング大学。CC BY 4.0。保存名の案 `D17_kirby-tamariz-cornish-smith_2015_compression-and-communication.pdf`） | raw-confirmed（手元に置くなら） |
-| D17-S20 | Sandler, W., Meir, I., Padden, C. & Aronoff, M. (2005). The emergence of grammar: Systematic structure in a new language. *PNAS* 102(7), 2661–2665. DOI 10.1073/pnas.0405448102 | https://pmc.ncbi.nlm.nih.gov/articles/PMC548320/ （HTML。保存名の案 `D17_sandler-meir-padden-aronoff_2005_emergence-of-grammar.html`） | url-verified |
-| D17-S21 | Bybee, J. (2006). From usage to grammar: The mind's response to repetition. *Language* 82(4), 711–733. DOI 10.1353/lan.2006.0186 | https://ling.unm.edu/assets/documents/bybee2006fromusage.pdf （ニューメキシコ大学の言語学科。保存名の案 `D17_bybee_2006_from-usage-to-grammar.pdf`） | raw-confirmed（手元に置くなら） |
-| D17-S22 | Haspelmath, M. (1999). Why is grammaticalization irreversible? *Linguistics* 37(6), 1043–1068. DOI 10.1515/ling.37.6.1043 | https://zenodo.org/records/571365 （上げた人と権利は未確認。CC BY 4.0 の表示。保存名の案 `D17_haspelmath_1999_why-grammaticalization-irreversible.pdf`） | url-verified（上げた人が未確認の写し） |
-| D17-S23 | Boroditsky, L. (2001). Does language shape thought?: Mandarin and English speakers' conceptions of time. *Cognitive Psychology* 43(1), 1–22. DOI 10.1006/cogp.2001.0748 | https://lera.ucsd.edu/papers/mandarin.pdf （著者のサイト。保存名の案 `D17_boroditsky_2001_does-language-shape-thought.pdf`） | raw-confirmed（手元に置くなら） |
-| D17-S24 | Winawer, J., Witthoft, N., Frank, M. C., Wu, L., Wade, A. R. & Boroditsky, L. (2007). Russian blues reveal effects of language on color discrimination. *PNAS* 104(19), 7780–7785. DOI 10.1073/pnas.0701644104 | https://pmc.ncbi.nlm.nih.gov/articles/PMC1876524/ （HTML。保存名の案 `D17_winawer-et-al_2007_russian-blues.html`） | url-verified |
-| D17-S25 | January, D. & Kako, E. (2007). Re-evaluating evidence for linguistic relativity: Reply to Boroditsky (2001). *Cognition* 104(2), 417–426. DOI 10.1016/j.cognition.2006.07.008 | Elsevier（有料） | citation-only |
-| D17-S26 | Chen, J.-Y. (2007). Do Chinese and English speakers think about time differently? Failure of replicating Boroditsky (2001). *Cognition* 104(2), 427–436. DOI 10.1016/j.cognition.2006.09.012 | Elsevier（有料） | citation-only |
-| D17-S27 | Labov, W. (2007). Transmission and diffusion. *Language* 83(2), 344–387. DOI 10.1353/lan.2007.0082 | https://www.ling.upenn.edu/~wlabov/Papers/TD.html （著者の頁。自動取得に 403） | blocked-access |
-| D17-S28 | Wang, W. S.-Y. (1969). Competing changes as a cause of residue. *Language* 45(1), 9–25. DOI 10.2307/411748 | JSTOR（有料） | citation-only（要旨は OpenAlex） |
-| D17-S29 | Labov, W. (1981). Resolving the Neogrammarian controversy. *Language* 57(2), 267–308. DOI 10.2307/413692 | JSTOR（有料） | citation-only（要旨は OpenAlex） |
-| D17-S30 | Newport, E. L. (1990). Maturational constraints on language learning. *Cognitive Science* 14(1), 11–28. DOI 10.1207/s15516709cog1401_2 | Wiley（OpenAlex は pdfdirect を OA と挙げる。試していない） | citation-only（要旨は OpenAlex） |
-| D17-S31 | DeGraff, M. (2003). Against Creole exceptionalism. *Language* 79(2), 391–410. DOI 10.1353/lan.2003.0114 | Project MUSE（有料） | citation-only |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| Weinreich, U., Labov, W. & Herzog, M. I. (1968). Empirical foundations for a theory of language change. In Lehmann & Malkiel (Eds.), *Directions for Historical Linguistics* (pp.97–195). University of Texas Press | https://lrc.la.utexas.edu/books/directions/5-weinreich （UT Austin の Linguistics Research Center の公開の全文。HTML。保存名の案手元のファイル） | 取得先を確かめた（HTML。頁は節） |
+| Prince, A. & Smolensky, P. (1993/2002). *Optimality Theory: Constraint Interaction in Generative Grammar*. ROA-537（ROA 版 8/2002。RuCCS-TR-2）。書籍は Blackwell 2004（DOI 10.1002/9780470759400） | https://roa.rutgers.edu/files/537-0802/537-0802-PRINCE-0-0.PDF （著者版。保存名の案手元の PDF） | 手元に保存した（手元に置くなら） |
+| Kirby, S., Tamariz, M., Cornish, H. & Smith, K. (2015). Compression and communication in the cultural evolution of linguistic structure. *Cognition* 141, 87–102. DOI 10.1016/j.cognition.2015.03.016 | https://dspace.stir.ac.uk/bitstream/1893/22564/1/Kirby%20et%20al_Cognition_2015.pdf （スターリング大学。CC BY 4.0。保存名の案手元の PDF） | 手元に保存した（手元に置くなら） |
+| Sandler, W., Meir, I., Padden, C. & Aronoff, M. (2005). The emergence of grammar: Systematic structure in a new language. *PNAS* 102(7), 2661–2665. DOI 10.1073/pnas.0405448102 | https://pmc.ncbi.nlm.nih.gov/articles/PMC548320/ （HTML。保存名の案手元のファイル） | 取得先を確かめた |
+| Bybee, J. (2006). From usage to grammar: The mind's response to repetition. *Language* 82(4), 711–733. DOI 10.1353/lan.2006.0186 | https://ling.unm.edu/assets/documents/bybee2006fromusage.pdf （ニューメキシコ大学の言語学科。保存名の案手元の PDF） | 手元に保存した（手元に置くなら） |
+| Haspelmath, M. (1999). Why is grammaticalization irreversible? *Linguistics* 37(6), 1043–1068. DOI 10.1515/ling.37.6.1043 | https://zenodo.org/records/571365 （上げた人と権利は未確認。CC BY 4.0 の表示。保存名の案手元の PDF） | 取得先を確かめた（上げた人が未確認の写し） |
+| Boroditsky, L. (2001). Does language shape thought?: Mandarin and English speakers' conceptions of time. *Cognitive Psychology* 43(1), 1–22. DOI 10.1006/cogp.2001.0748 | https://lera.ucsd.edu/papers/mandarin.pdf （著者のサイト。保存名の案手元の PDF） | 手元に保存した（手元に置くなら） |
+| Winawer, J., Witthoft, N., Frank, M. C., Wu, L., Wade, A. R. & Boroditsky, L. (2007). Russian blues reveal effects of language on color discrimination. *PNAS* 104(19), 7780–7785. DOI 10.1073/pnas.0701644104 | https://pmc.ncbi.nlm.nih.gov/articles/PMC1876524/ （HTML。保存名の案手元のファイル） | 取得先を確かめた |
+| January, D. & Kako, E. (2007). Re-evaluating evidence for linguistic relativity: Reply to Boroditsky (2001). *Cognition* 104(2), 417–426. DOI 10.1016/j.cognition.2006.07.008 | Elsevier（有料） | 書誌だけ |
+| Chen, J.-Y. (2007). Do Chinese and English speakers think about time differently? Failure of replicating Boroditsky (2001). *Cognition* 104(2), 427–436. DOI 10.1016/j.cognition.2006.09.012 | Elsevier（有料） | 書誌だけ |
+| Labov, W. (2007). Transmission and diffusion. *Language* 83(2), 344–387. DOI 10.1353/lan.2007.0082 | https://www.ling.upenn.edu/~wlabov/Papers/TD.html （著者の頁。自動取得に 403） | 自動では取れない |
+| Wang, W. S.-Y. (1969). Competing changes as a cause of residue. *Language* 45(1), 9–25. DOI 10.2307/411748 | JSTOR（有料） | 書誌だけ（要旨は OpenAlex） |
+| Labov, W. (1981). Resolving the Neogrammarian controversy. *Language* 57(2), 267–308. DOI 10.2307/413692 | JSTOR（有料） | 書誌だけ（要旨は OpenAlex） |
+| Newport, E. L. (1990). Maturational constraints on language learning. *Cognitive Science* 14(1), 11–28. DOI 10.1207/s15516709cog1401_2 | Wiley（OpenAlex は pdfdirect を OA と挙げる。試していない） | 書誌だけ（要旨は OpenAlex） |
+| DeGraff, M. (2003). Against Creole exceptionalism. *Language* 79(2), 391–410. DOI 10.1353/lan.2003.0114 | Project MUSE（有料） | 書誌だけ |
 
 既存の行に書き足す案：
 
-- D17-S07：手元の PDF は Language Science Press の 2016 年の再刊（Classics in Linguistics 3、CC BY 4.0、DOI 10.17169/langsci.b91.109）。初版の Karoma 1981 ではない。
-- D17-S08：手元の PDF は JSTOR の表紙つきの写し。台帳の ehu.eus の URL は今回 SSL の誤りで取れず、同じファイルかは比べていない。
-- D17-S09：台帳の UT Dallas の URL は、別の案内の頁（atlas.utdallas.edu）に飛ばされる。写しは無くなった見込み。
-- D17-S11：書誌に頁 160–176 を足す。OUP の PDF は確認画面を返す。ORA の写し（https://ora.ox.ac.uk/objects/uuid:48356b4a-41c9-43c9-95b2-d231b197f3d5 ）で読めた。
-- D17-S12：raw-confirmed だが local_file が空。PNAS の PDF は確認画面を返す。PMC2504810 の HTML で読めた（保存名の案 `D17_kirby-cornish-smith_2008_cumulative-cultural-evolution.html`）。
-- D17-S13：raw-confirmed だが local_file が空。グラスゴー大学の機関リポジトリ（https://eprints.gla.ac.uk/281184/1/281184.pdf ）の出版社の版で読めた（保存名の案 `D17_raviv-meyer-lev-ari_2020_social-network-structure.pdf`）。
-- D17-S14：MPG PuRe は自動取得に確認画面を返す。下の表。
-- D17-S15：PLOS の PDF を取れた（保存名の案 `D17_lupyan-dale_2010_language-structure-social-structure.pdf`）。url-verified の行を raw-confirmed に上げられる。
-- D17-S16：MIT の Halle の頁の PDF を取れ、本文を読めた（保存名の案 `D17_jakobson-halle_1956_fundamentals-of-language.pdf`）。url-verified の行を raw-confirmed に上げられる。
+- 台帳の「Bickerton 1981」の行：手元の PDF は Language Science Press の 2016 年の再刊（Classics in Linguistics 3、CC BY 4.0、DOI 10.17169/langsci.b91.109）。初版の Karoma 1981 ではない。
+- 台帳の「Lenneberg 1969」の行：手元の PDF は JSTOR の表紙つきの写し。台帳の ehu.eus の URL は今回 SSL の誤りで取れず、同じファイルかは比べていない。
+- 台帳の「Johnson & Newport 1989」の行：台帳の UT Dallas の URL は、別の案内の頁（atlas.utdallas.edu）に飛ばされる。写しは無くなった見込み。
+- 台帳の「Beckner ら 2017」の行：書誌に頁 160–176 を足す。OUP の PDF は確認画面を返す。ORA の写し（https://ora.ox.ac.uk/objects/uuid:48356b4a-41c9-43c9-95b2-d231b197f3d5 ）で読めた。
+- 台帳の「Kirby ら 2008」の行：手元に保存した だが local_file が空。PNAS の PDF は確認画面を返す。PMC2504810 の HTML で読めた（保存名の案手元のファイル）。
+- 台帳の「Raviv ら 2020」の行：手元に保存した だが local_file が空。グラスゴー大学の機関リポジトリ（https://eprints.gla.ac.uk/281184/1/281184.pdf ）の出版社の版で読めた（保存名の案手元の PDF）。
+- 台帳の「Senghas ら 2004」の行：MPG PuRe は自動取得に確認画面を返す。下の表。
+- 台帳の「Lupyan & Dale 2010」の行：PLOS の PDF を取れた（保存名の案手元の PDF）。取得先を確かめた の行を「手元に保存した」に上げられる。
+- 台帳の「Jakobson & Halle 1956」の行：MIT の Halle の頁の PDF を取れ、本文を読めた（保存名の案手元の PDF）。取得先を確かめた の行を「手元に保存した」に上げられる。
 
 ## ブラウザでの保存が要る PDF
 
-| 台帳の行 | 文献 | ダウンロード先 | 保存名の案 | 止まった理由と、保存できると何を確かめられるか |
-|---|---|---|---|---|
-| D17-S14 | Senghas, Kita & Özyürek (2004). *Science* 305 | https://pure.mpg.de/pubman/item/item_59126_3/component/file_59127/Senghas_2004_children.pdf | `D17_senghas-kita-ozyurek_2004_children-creating-core-properties.pdf` | 「Making sure you're not a bot!」の確認画面。学年ごとの様態と経路の表し方（精読ノートの引用、pp.1780–1781）と、第 1 学年の大人の言葉が後の学年と違ったままか（至らない形）を確かめられる |
-| D17-S27（案） | Labov (2007). Transmission and diffusion. *Language* 83 | https://www.ling.upenn.edu/~wlabov/Papers/TD.html から PDF | `D17_labov_2007_transmission-and-diffusion.pdf` | 403。共同体のあいだで構造が失われる形（ニューヨークの短い a の広がり）を本文の頁で確かめられる |
-| D17-S09 | Johnson & Newport (1989). *Cognitive Psychology* 21 | 台帳の URL は無くなった。Internet Archive の記録（web.archive.org で personal.utdallas.edu/~assmann/hcs6367/johnson_newport89.pdf）を、日をおいて取り直す | `D17_johnson-newport_1989_critical-period-effects.pdf` | 2026-11-09 は Internet Archive が落ちていた（確認画面ではない）。追記（2026-11-09）：同じ日のあとで Wayback の記録から取れた。保存は要らない |
-| D17-S01 の関わり | Meillet (1912). L'évolution des formes grammaticales. *Scientia* 12 | Internet Archive で『Linguistique historique et linguistique générale』（1921）を探す | `D17_meillet_1912_evolution-des-formes-grammaticales.pdf` | 2026-11-09 は Internet Archive が落ちていた。追記（2026-11-09）：同じ日のあとで、1921 年の再録の走査（イリノイ大学の蔵書）の OCR の文字を取って読めた。保存は要らない（台帳 D17-S32） |
-| ― | Goldberg (2003) の著者が許したポルトガル語訳 | https://lume.ufrgs.br/bitstream/10183/249233/1/000987282.pdf | `D17_goldberg_2003_constructions-pt.pdf` | SSL の接続の誤り（確認画面ではない）。構文の論の芯を（訳）で確かめられる |
+自動で取れなかった原典のうち、ブラウザでの保存を頼むものは、作業の記録（[Issue #73](https://github.com/uminomae/project-design-theory/issues/73)）の表にまとめました。
 
 ## 手順について分かったこと
 
-- 報告が「OA 版がなく」と書いた論のうち二つ（音変化の Weinreich, Labov & Herzog 1968、最適性理論の ROA 版）は、頼む文の当たりの場所で全文が公開されていました。書籍だけの論も、同じ論の核になる章や著者版を探すと本文に当たれました（D07・D21・D25 と同じ）。
+- 報告が「OA 版がなく」と書いた論のうち二つ（音変化の Weinreich, Labov & Herzog 1968、最適性理論の ROA 版）は、頼む文の当たりの場所で全文が公開されていました。書籍だけの論も、同じ論の核になる章や著者版を探すと本文に当たれました（工学・情報科学・経済学・人類学・民族学と同じ）。
 - 出版社と PMC の PDF（PNAS・OUP・Wiley・MPG PuRe）は確認画面を返しましたが、PMC の記事の頁（HTML）と機関リポジトリ（ORA・グラスゴー・スターリング）の写しで、四つの論文を読めました。OpenAlex の挙げた写しは、どれも 1 頁目の書誌が狙った論文と合いました。
 - 2026-11-09 は Internet Archive が「Temporarily Offline」で、Wayback と古典の走査（Meillet）を使えませんでした。確認画面と分けて書きました。追記（2026-11-09）：同じ日のあとで司令塔が取り直し、Johnson & Newport (1989) と Meillet (1912) を読んで、上の節に書き足しました。
 - 読めた原典は、至らない形を論の中心に書いていました（退化した言語・窓を過ぎた損傷・限られたまま残るピジン・取り残される語・失語の後退）。報告は §7 で「解体を扱う論が無い」と書いていて、原典を読まずに無いと書いた例でした。
-- 精読ノートと台帳について：`cs/knowledge/source-notes/D17/D17-S13_raviv-2020.md` 100〜107 行は、ネットワークの形を「縁の実体」とし、全 5 段階を「強」としますが、原典の要旨（同じノートの 28 行に引く）は、ネットワークの形の効果は出なかったと書きます。出典を主張と逆の向きに当てています（中）。`cs/knowledge/source-notes/D17/D17-S08_lenneberg-1967.md` は、ファイル名が 1967 で、中身は 1969 年の論文です（低）。`pd/wiki/sources/D17_jakobson_1956_halle-m.md` は、ファイル名の題の部分が共著者の名（halle-m）になっています（低）。精読ノートと wiki の DOI（9 本）は、Crossref の書誌と合っていました。
+- 精読ノートと台帳について：精読ノート「Raviv 2020」 100〜107 行は、ネットワークの形を「縁の実体」とし、全 5 段階を「強」としますが、原典の要旨（同じノートの 28 行に引く）は、ネットワークの形の効果は出なかったと書きます。出典を主張と逆の向きに当てています（中）。精読ノート「Lenneberg 1967」は、ファイル名が 1967 で、中身は 1969 年の論文です（低）。wiki の頁「Jakobson 1956」は、ファイル名の題の部分が共著者の名（halle-m）になっています（低）。精読ノートと wiki の DOI（9 本）は、Crossref の書誌と合っていました。

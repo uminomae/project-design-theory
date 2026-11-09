@@ -10,22 +10,22 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D09-life-
 
 # 生命科学：論ごとの照合の記録
 
-この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。生物学の記述が正しいかどうかは Claude が引き受け、主張ごとに教科書・研究の一線・Claude の読み替えのどれかを添えます（`docs/rules/sources.md` §1-4・§6）。
+この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。生物学の記述が正しいかどうかは Claude が引き受け、主張ごとに教科書・研究の一線・Claude の読み替えのどれかを添えます（調べ方の規約 §1-4・§6）。
 
 生命科学の原典は、二つのものの兼ね合いと、その兼ね合いが崩れたときに何が起きるかを書いていました。Pellerin と Magistretti（1994）は、アストロサイトのグルタミン酸の取り込みと解糖が互いを必要とする関係を書き、Attwell と Laughlin（2001）は、信号のエネルギーの費用と、少ない数のニューロンで情報を表す利得の兼ね合いを書いています。Schafer ら（2012）は、二つの眼からの入力が競り合うとき、弱いほうの入力がミクログリアに取り込まれ、取り込みが止まると余分なシナプスが大人まで残ると書いています。McEwen（1998）は、身を守るストレスの媒介物質が、止まらない・慣れない・足りないときに身を傷めると書き、Otto（2009）は、有性生殖が良い遺伝子の組み合わせを壊す費用と、それでも有性生殖が残る条件を書いています。オートファジーを欠く酵母は、窒素の飢餓で早く死に、胞子を作れません（Tsukada & Ohsumi 1993 の要旨、Ohsumi 2016 の講演）。原典は、至らない形（余分なシナプスが残る・媒介物質が身を傷める・飢餓で死ぬ・無性の系統が枝先に留まる・予測どおりで信号が出ない）を、論の中に書いていました。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D09-life-sciences.md`、2026-03-18 に LLM が生成、以下「報告」）は、11 の論を取り上げ、日本語版では 2 を「強い対応」、英語版では 11 のすべてを「accepted」としています。報告は、エネルギーの収支・ミエリン化・グリンパティック系の三つを、5段階の「構造」でなく「成立条件」「リセットプロセス」として段の外に置き（ja 163〜167 行）、アロスタティック負荷を「失敗モード」と呼んでいます（ja 143 行・201 行）。上のとおり、原典では、費用と利得の兼ね合い、守る働きと傷める働きは、論の芯として書かれていました。この記録は、報告の 11 の論を一次情報で確かめ直したものです。論の数は変えていません。ANLS の争いには Díaz-García ら（2017）、グリンパティック系の争いには Smith ら（2017）、有性生殖の年代には Speijer ら（2015）を、同じ論の中の確かめ先として使いました。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
+今の公開報告（「30 領域調査報告」の生命科学の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、11 の論を取り上げ、日本語版では 2 を「強い対応」、英語版では 11 のすべてを「accepted」としています。報告は、エネルギーの収支・ミエリン化・グリンパティック系の三つを、5段階の「構造」でなく「成立条件」「リセットプロセス」として段の外に置き（ja 163〜167 行）、アロスタティック負荷を「失敗モード」と呼んでいます（ja 143 行・201 行）。上のとおり、原典では、費用と利得の兼ね合い、守る働きと傷める働きは、論の芯として書かれていました。この記録は、報告の 11 の論を一次情報で確かめ直したものです。論の数は変えていません。ANLS の争いには Díaz-García ら（2017）、グリンパティック系の争いには Smith ら（2017）、有性生殖の年代には Speijer ら（2015）を、同じ論の中の確かめ先として使いました。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D09-life-sciences.md) にあります。退避版の判定（Accept・縁フラグ・強度 tier・「フック有効性」）は、この記録の照合の状態の根拠にしていません。
 
 ## 読み方
 
-- 照合の状態は `docs/rules/sources.md` §3 の四つで書きます。著者自身のまとめ直し（ノーベル講演・後の総説）で読んだものは「著者のまとめ直し」と書き、原論文は別に照合の状態を書きます。
+- 照合の状態は調べ方の規約 §3 の四つで書きます。著者自身のまとめ直し（ノーベル講演・後の総説）で読んだものは「著者のまとめ直し」と書き、原論文は別に照合の状態を書きます。
 - 今の報告への判定は、一致・言い過ぎ・取り違え・帰属違い・付け足し・抜け・未判定で書きます。「抜け」は、原典にある衝突や至らない形を報告が落としていることです。
-- 「ja 85 行」は日本語版の行、「en」は英語版（`en/md/domain-D09-life-sciences.md`）、「pres」はプレゼン版（`ja/presentations/md/domain-D09-life-sciences-presentation-ja.md`）、「退避版」は上の History のファイル、「調べた跡」は `cs/evidence/investigation/D09-life-sciences/` の phase5〜7、「DR」は `cs/evidence/202602-deep-research-30domains-gpt/DR-D09-life-sciences.md` を指します。
+- 「ja 85 行」は日本語版の行、「en」は英語版（「30 領域調査報告」の生命科学の英語版）、「pres」はプレゼン版（「30 領域調査報告」の生命科学のプレゼン版）、「退避版」は上の History のファイル、「調べた跡」は、報告を作ったときの途中の出力（phase5〜7）の phase5〜7、「DR」は2026-02 の DRを指します。
 - PMC の XML や HTML で読んだものには誌面の頁が無いので、節の名前で控えました。
 - 獲得免疫のクローン選択は [臨床医学の記録](evidence-D10-clinical-medicine.md) の 1、赤の女王（Van Valen 1973）は [進化生物学の記録](evidence-D04-evolutionary-biology.md) の 6、Turing（1952）の反応拡散は [化学の記録](evidence-D03-chemistry.md) の 4 と [複雑系科学の記録](evidence-D29-complexity-science.md) の 8 で本文照合済です。読み直さず、その記録を参照しています。
-- 語が同じこと（「束」と、ミエリンの鞘や神経線維の束）は、対応の根拠にも反証にも数えません（`docs/cs-review/README.md`「規約で決めたこと」）。
+- 語が同じこと（「束」と、ミエリンの鞘や神経線維の束）は、対応の根拠にも反証にも数えません（調べ方の計画と規約「規約で決めたこと」）。
 
 ## 一面の表
 
@@ -55,7 +55,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Pellerin, L. & Magistretti, P. J. (1994). Glutamate uptake into astrocytes stimulates aerobic glycolysis: a mechanism coupling neuronal activity to glucose utilization. *PNAS* 91(22), 10625–10629. DOI: [10.1073/pnas.91.22.10625](https://doi.org/10.1073/pnas.91.22.10625)（Crossref で題・著者・頁を確かめました）。台帳 D09-S01。台帳の OA の URL（PNAS の PDF）は、2026-11-09 に Cloudflare の確認画面（403）でした。PMC の PDF（`pnas01144-0392.pdf`）も「Preparing to download」の確認画面でした。PMC の記事の頁（PMC45074）は、誌面を頁ごとの画像で出しており、文字の層がありません。頁の画像を見て読みました。頁は誌面の頁です。読んだ頁：p.10625（要旨。グルタミン酸は受容体でなく Na⁺ 依存の取り込みの系を通して解糖を促す。仕組みは、取り込みと一緒に入った Na⁺ が Na⁺/K⁺-ATPase を動かすこと。神経の活動とブドウ糖の利用を結びつける単純で直接の仕組みを与えうる）、p.10628（アストロサイトの解糖でできた乳酸は、活性化のときのニューロンのエネルギーの需要を「少なくとも一部」満たしうる。直接のニューロンへのブドウ糖の取り込みも起こりうる。解糖を止めるとアストロサイトの取り込みは大きく落ち、低酸素では少ししか落ちない。取り込みが解糖を促し、解糖が取り込みに要る勾配を保つ協働の仕組みがあると示唆する。図 5 は、図を見やすくするため乳酸の取り込みを前シナプスの終末だけに描いたと書く）、p.10629（まとめ。脳の画像で見る活性化の解糖を、アストロサイトの仕組みで説明しうる）。
+- Pellerin, L. & Magistretti, P. J. (1994). Glutamate uptake into astrocytes stimulates aerobic glycolysis: a mechanism coupling neuronal activity to glucose utilization. *PNAS* 91(22), 10625–10629. DOI: [10.1073/pnas.91.22.10625](https://doi.org/10.1073/pnas.91.22.10625)（Crossref で題・著者・頁を確かめました）。台帳に行がある。台帳の OA の URL（PNAS の PDF）は、2026-11-09 に Cloudflare の確認画面（403）でした。PMC の PDF（`pnas01144-0392.pdf`）も「Preparing to download」の確認画面でした。PMC の記事の頁（PMC45074）は、誌面を頁ごとの画像で出しており、文字の層がありません。頁の画像を見て読みました。頁は誌面の頁です。読んだ頁：p.10625（要旨。グルタミン酸は受容体でなく Na⁺ 依存の取り込みの系を通して解糖を促す。仕組みは、取り込みと一緒に入った Na⁺ が Na⁺/K⁺-ATPase を動かすこと。神経の活動とブドウ糖の利用を結びつける単純で直接の仕組みを与えうる）、p.10628（アストロサイトの解糖でできた乳酸は、活性化のときのニューロンのエネルギーの需要を「少なくとも一部」満たしうる。直接のニューロンへのブドウ糖の取り込みも起こりうる。解糖を止めるとアストロサイトの取り込みは大きく落ち、低酸素では少ししか落ちない。取り込みが解糖を促し、解糖が取り込みに要る勾配を保つ協働の仕組みがあると示唆する。図 5 は、図を見やすくするため乳酸の取り込みを前シナプスの終末だけに描いたと書く）、p.10629（まとめ。脳の画像で見る活性化の解糖を、アストロサイトの仕組みで説明しうる）。
 - Díaz-García, C. M. ら (2017). Neuronal Stimulation Triggers Neuronal Glycolysis and Not Lactate Uptake. *Cell Metab.* 26(2), 361–374.e4. DOI: [10.1016/j.cmet.2017.06.021](https://doi.org/10.1016/j.cmet.2017.06.021)（Crossref で確かめました）。PMC の著者稿（PMC5559896）を NCBI の efetch で XML として読みました。読んだ節：要旨（エネルギーの需要に対する細胞の応答は争いがある。海馬の切片と起きているマウスで、刺激へのニューロンの代謝の応答はアストロサイトの刺激にもニューロンの乳酸の取り込みにも頼らず、ニューロンが直接ブドウ糖を使うことを映す）、Discussion の節「Astrocyte-to-neuron lactate shuttling may occur at rest, but not during neuronal stimulation」。
 - Dienel, G. A. (2019). Brain Glucose Metabolism: Integration of Energetics with Function. *Physiol. Rev.* 99(1), 949–1045. DOI: [10.1152/physrev.00062.2017](https://doi.org/10.1152/physrev.00062.2017)（Crossref で確かめました）。APS の PDF は Cloudflare の確認画面（403）でした。Europe PMC の要旨を読みました（活性化・神経伝達・記憶の固定のときの、アストロサイトからニューロンへの乳酸の受け渡しは争いのある話題で、別の仕組みが提案されている）。
 - Araque ら（1999）*Trends Neurosci.* 22, 208–215（DOI 10.1016/S0166-2236(98)01349-6、Crossref で書誌を確かめました）と Suzuki ら（2011）は、取得を試していません。
@@ -84,7 +84,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Attwell, D. & Laughlin, S. B. (2001). An Energy Budget for Signaling in the Grey Matter of the Brain. *J. Cereb. Blood Flow Metab.* 21(10), 1133–1145. DOI: [10.1097/00004647-200110000-00001](https://doi.org/10.1097/00004647-200110000-00001)（Crossref で確かめました）。台帳 D09-S02。手元の PDF（`cs/knowledge/raw/D09_attwell-laughlin_2001_energy-budget-signaling.pdf`、13 頁）は、表紙に誌名・巻・頁・Lippincott Williams & Wilkins があり、報告の引く書誌と合います。台帳は SAGE から手で保存したと書いています。PDF の改変の記録に iText（1T3XT）があり、出版社のサイトからのダウンロードの形と合います（推測）。台帳の取得先（SAGE の PDF）は 2026-11-09 に Cloudflare の確認画面（403）で、バイト単位で比べられませんでした。頁は誌面の頁です。読んだ頁：p.1133（要旨。活動電位とグルタミン酸の後シナプスの作用が多くを使う。信号に使うエネルギーは脳の全体の大きな割合で、エネルギーの効率のよい符号と配線を有利にする。同時に働くニューロンが 15％ 以下の分散の符号を予測する。序：人の脳は体重の 2％ で安静時の代謝の 20％ を使う。エネルギーの得やすさは脳の大きさを縛りうる。エネルギーの需要のため、脳は無酸素や虚血で損傷を受けやすい）、p.1139（計算したエネルギーのほとんどは Na⁺/K⁺ ポンプがイオンの勾配を戻すのに使う）、p.1141（4 Hz で働く細胞では、ニューロンの 15％ ほどが同時に働くのがよい。時間の分解能が要るほど、より少ない割合がよい。疎な符号は計算に有利なだけでなくエネルギーも節約する）、p.1143（高い代謝の速さは脳の大きさを縛り、エネルギーを効率よく使う仕組みを有利にする）。
+- Attwell, D. & Laughlin, S. B. (2001). An Energy Budget for Signaling in the Grey Matter of the Brain. *J. Cereb. Blood Flow Metab.* 21(10), 1133–1145. DOI: [10.1097/00004647-200110000-00001](https://doi.org/10.1097/00004647-200110000-00001)（Crossref で確かめました）。台帳に行がある。手元の PDF（手元の PDF、13 頁）は、表紙に誌名・巻・頁・Lippincott Williams & Wilkins があり、報告の引く書誌と合います。台帳は SAGE から手で保存したと書いています。PDF の改変の記録に iText（1T3XT）があり、出版社のサイトからのダウンロードの形と合います（推測）。台帳の取得先（SAGE の PDF）は 2026-11-09 に Cloudflare の確認画面（403）で、バイト単位で比べられませんでした。頁は誌面の頁です。読んだ頁：p.1133（要旨。活動電位とグルタミン酸の後シナプスの作用が多くを使う。信号に使うエネルギーは脳の全体の大きな割合で、エネルギーの効率のよい符号と配線を有利にする。同時に働くニューロンが 15％ 以下の分散の符号を予測する。序：人の脳は体重の 2％ で安静時の代謝の 20％ を使う。エネルギーの得やすさは脳の大きさを縛りうる。エネルギーの需要のため、脳は無酸素や虚血で損傷を受けやすい）、p.1139（計算したエネルギーのほとんどは Na⁺/K⁺ ポンプがイオンの勾配を戻すのに使う）、p.1141（4 Hz で働く細胞では、ニューロンの 15％ ほどが同時に働くのがよい。時間の分解能が要るほど、より少ない割合がよい。疎な符号は計算に有利なだけでなくエネルギーも節約する）、p.1143（高い代謝の速さは脳の大きさを縛り、エネルギーを効率よく使う仕組みを有利にする）。
 
 **照合の状態**：本文照合済（手元の SAGE の版。pp.1133・1139・1141・1143）。
 
@@ -108,7 +108,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Schafer, D. P. ら (2012). Microglia Sculpt Postnatal Neural Circuits in an Activity and Complement-Dependent Manner. *Neuron* 74(4), 691–705. DOI: [10.1016/j.neuron.2012.03.026](https://doi.org/10.1016/j.neuron.2012.03.026)（Crossref で確かめました）。台帳 D09-S03。PMC の著者稿（PMC3528177）を NCBI の efetch で XML として読みました。台帳の OA の URL（cell.com）は試していません（同じ日の cell.com の別の論文の PDF は確認画面でした）。読んだ節：要旨（CR3/C3 の信号を断つと、シナプスのつながりに続く障害が残る）、Results の「Disruption of CR3 signaling in microglia results in sustained deficits in structural remodeling of RGC inputs」（CR3 を欠くマウスでは二つの眼の入力の重なりが P10 と P30 で大きい）、「Disruption in CR3/C3-dependent signaling in microglia results in sustained deficits in synaptic connectivity」（CR3 を欠く大人のマウスでシナプスの密度が 1.3 倍）、Discussion の「Engulfment of RGC inputs by microglia is an activity-dependent process」（二つの眼の入力の競り合いを薬で強めると、ミクログリアは活動の弱い眼の入力を選んで取り込んだ）、「CR3/C3-dependent signaling…」（活性化した C3 が弱いシナプスに「標識」を付けうると提案する。別の仕組みもありうる。CR3 や C3 を欠くマウスの取り込みは野生型の 50％ ほどに減った）、「Complement-dependent engulfment…」（緑内障のモデルでは C1q と C3 が増えてシナプスに付く。補体やミクログリアの不調は、シナプスを失う病気に関わりうる）。
+- Schafer, D. P. ら (2012). Microglia Sculpt Postnatal Neural Circuits in an Activity and Complement-Dependent Manner. *Neuron* 74(4), 691–705. DOI: [10.1016/j.neuron.2012.03.026](https://doi.org/10.1016/j.neuron.2012.03.026)（Crossref で確かめました）。台帳に行がある。PMC の著者稿（PMC3528177）を NCBI の efetch で XML として読みました。台帳の OA の URL（cell.com）は試していません（同じ日の cell.com の別の論文の PDF は確認画面でした）。読んだ節：要旨（CR3/C3 の信号を断つと、シナプスのつながりに続く障害が残る）、Results の「Disruption of CR3 signaling in microglia results in sustained deficits in structural remodeling of RGC inputs」（CR3 を欠くマウスでは二つの眼の入力の重なりが P10 と P30 で大きい）、「Disruption in CR3/C3-dependent signaling in microglia results in sustained deficits in synaptic connectivity」（CR3 を欠く大人のマウスでシナプスの密度が 1.3 倍）、Discussion の「Engulfment of RGC inputs by microglia is an activity-dependent process」（二つの眼の入力の競り合いを薬で強めると、ミクログリアは活動の弱い眼の入力を選んで取り込んだ）、「CR3/C3-dependent signaling…」（活性化した C3 が弱いシナプスに「標識」を付けうると提案する。別の仕組みもありうる。CR3 や C3 を欠くマウスの取り込みは野生型の 50％ ほどに減った）、「Complement-dependent engulfment…」（緑内障のモデルでは C1q と C3 が増えてシナプスに付く。補体やミクログリアの不調は、シナプスを失う病気に関わりうる）。
 - Stevens, B. ら (2007). The Classical Complement Cascade Mediates CNS Synapse Elimination. *Cell* 131(6), 1164–1178. DOI: [10.1016/j.cell.2007.10.036](https://doi.org/10.1016/j.cell.2007.10.036)（Crossref で確かめました）。cell.com の PDF は Cloudflare の確認画面（403）でした。Europe PMC の要旨を読みました（C1q か C3 を欠くマウスでは、シナプスの除去に大きく続く障害がある。要らないシナプスに補体が標識を付けて除く、というモデルを支持する。緑内障のモデルでは、補体による除去が病的に再び働く）。
 - Paolicelli ら（2011）と Ransohoff（2016）は、取得を試していません。
 
@@ -137,7 +137,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Fields, R. D. (2015). A new mechanism of nervous system plasticity: activity-dependent myelination. *Nat. Rev. Neurosci.* 16(12), 756–767. DOI: [10.1038/nrn4023](https://doi.org/10.1038/nrn4023)（Crossref で確かめました）。台帳 D09-S04。PMC の著者稿（PMC6310485）を NCBI の efetch で XML として読みました。読んだ節：要旨（この Opinion の論文は、活動に依存するミエリン化の新しい研究をまとめる）、冒頭（ミエリンは軸索に巻く多層の鞘）、「Theoretical considerations — the importance of timing.」（よい網の働きは、すべての軸索の伝導を速くすることでは得られない。届く時刻の揃いが働きを高め、早く着きすぎることは害になる。伝導の遅れが最適でないと、脳の振動を通して広い障害につながる）、「White matter plasticity — current status and major questions.」（機能の活動がミエリン化に影響することは確立したが、それが回路の活動の全体への恒常的な応答か、学習に特有の変化かを分ける必要がある。年長の人の研究では、学習が白質の変化に頼ったのかはまだ分からない）、「Mechanisms of myelin plasticity」（培養で、オリゴデンドロサイトは選べるときには電気的に活動している軸索を選んでミエリンを作る。社会の経験がマウスの前頭前野のミエリン化に影響する）、Discussion（ミエリン化が最適の状態に達したことをオリゴデンドロサイトに伝える仕組みは分かっていない）。
+- Fields, R. D. (2015). A new mechanism of nervous system plasticity: activity-dependent myelination. *Nat. Rev. Neurosci.* 16(12), 756–767. DOI: [10.1038/nrn4023](https://doi.org/10.1038/nrn4023)（Crossref で確かめました）。台帳に行がある。PMC の著者稿（PMC6310485）を NCBI の efetch で XML として読みました。読んだ節：要旨（この Opinion の論文は、活動に依存するミエリン化の新しい研究をまとめる）、冒頭（ミエリンは軸索に巻く多層の鞘）、「Theoretical considerations — the importance of timing.」（よい網の働きは、すべての軸索の伝導を速くすることでは得られない。届く時刻の揃いが働きを高め、早く着きすぎることは害になる。伝導の遅れが最適でないと、脳の振動を通して広い障害につながる）、「White matter plasticity — current status and major questions.」（機能の活動がミエリン化に影響することは確立したが、それが回路の活動の全体への恒常的な応答か、学習に特有の変化かを分ける必要がある。年長の人の研究では、学習が白質の変化に頼ったのかはまだ分からない）、「Mechanisms of myelin plasticity」（培養で、オリゴデンドロサイトは選べるときには電気的に活動している軸索を選んでミエリンを作る。社会の経験がマウスの前頭前野のミエリン化に影響する）、Discussion（ミエリン化が最適の状態に達したことをオリゴデンドロサイトに伝える仕組みは分かっていない）。
 
 **照合の状態**：本文照合済（PMC の著者稿。節で控えた）。
 
@@ -159,7 +159,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- McEwen, B. S. (1998). Protective and Damaging Effects of Stress Mediators. *N. Engl. J. Med.* 338(3), 171–179. DOI: [10.1056/NEJM199801153380307](https://doi.org/10.1056/NEJM199801153380307)（Crossref で確かめました）。台帳 D09-S05。ウィスコンシン大学の授業の頁の写し：https://www.psychiatry.wisc.edu/courses/Nitschke/seminar/mcewen_njm_1998.pdf 。台帳の取得先から 2026-11-09 に取りました。PDF の先頭は %PDF で、1 頁目に題・著者があります。頁の下に「Downloaded from www.nejm.org at UW MADISON」とあり、NEJM の誌面です。授業用の写しで、権利は未確認です。頁は誌面の頁です。読んだ頁：p.171（Selye は、ストレスで働く系が身を守り立て直すだけでなく傷めもするという逆説を認めた。アロスタシスは変化を通して安定を得る力。アロスタティック負荷は、系の慢性の働きすぎか働かなさすぎから生じる消耗）、p.172（図 1。ホメオスタシスの系は狭い範囲に保たれるが、アロスタシスの系はずっと広い境を持つ。応答は脅威が去れば止まり、元の水準に戻る。止まりが悪いと、ストレスのホルモンにさらされ続ける。負荷に関わる四つの状況の一つ目は度重なるストレス、二つ目は同じストレスに慣れないこと）、p.173（三つ目は応答が止まらないこと。四つ目は、ある系の応答が足りないと他の系が補って働きすぎること）、p.174（図 3。題は「Three Types」だが、図の説明は四つの状況を挙げる）、p.175（負荷を測るのは大きな課題で、MacArthur の研究は八つの値の上位 4 分の 1 の数で近似した。繰り返すストレスは海馬 CA3 の樹状突起を萎縮させるが、この萎縮は元に戻る）、p.176（うつ病・PTSD・クッシング病で海馬の萎縮がある。萎縮が戻るか永続するかは分からない）、p.177（孤立と仕事の場での統制の無さが負荷の大きな原因に見える）。
+- McEwen, B. S. (1998). Protective and Damaging Effects of Stress Mediators. *N. Engl. J. Med.* 338(3), 171–179. DOI: [10.1056/NEJM199801153380307](https://doi.org/10.1056/NEJM199801153380307)（Crossref で確かめました）。台帳に行がある。ウィスコンシン大学の授業の頁の写し：https://www.psychiatry.wisc.edu/courses/Nitschke/seminar/mcewen_njm_1998.pdf 。台帳の取得先から 2026-11-09 に取りました。PDF の先頭は %PDF で、1 頁目に題・著者があります。頁の下に「Downloaded from www.nejm.org at UW MADISON」とあり、NEJM の誌面です。授業用の写しで、権利は未確認です。頁は誌面の頁です。読んだ頁：p.171（Selye は、ストレスで働く系が身を守り立て直すだけでなく傷めもするという逆説を認めた。アロスタシスは変化を通して安定を得る力。アロスタティック負荷は、系の慢性の働きすぎか働かなさすぎから生じる消耗）、p.172（図 1。ホメオスタシスの系は狭い範囲に保たれるが、アロスタシスの系はずっと広い境を持つ。応答は脅威が去れば止まり、元の水準に戻る。止まりが悪いと、ストレスのホルモンにさらされ続ける。負荷に関わる四つの状況の一つ目は度重なるストレス、二つ目は同じストレスに慣れないこと）、p.173（三つ目は応答が止まらないこと。四つ目は、ある系の応答が足りないと他の系が補って働きすぎること）、p.174（図 3。題は「Three Types」だが、図の説明は四つの状況を挙げる）、p.175（負荷を測るのは大きな課題で、MacArthur の研究は八つの値の上位 4 分の 1 の数で近似した。繰り返すストレスは海馬 CA3 の樹状突起を萎縮させるが、この萎縮は元に戻る）、p.176（うつ病・PTSD・クッシング病で海馬の萎縮がある。萎縮が戻るか永続するかは分からない）、p.177（孤立と仕事の場での統制の無さが負荷の大きな原因に見える）。
 - McEwen & Stellar（1993）*Arch. Intern. Med.* 153, 2093（DOI 10.1001/archinte.1993.00410180039004、Crossref で書誌を確かめました）は有料で、取得を試していません。Sterling & Eyer（1988）は書籍の章で、McEwen の文献 3 に挙がっています（読んでいません）。
 
 **照合の状態**：本文照合済（授業用の写し。NEJM の誌面 pp.171–177）。McEwen & Stellar 1993・Sterling & Eyer 1988・McEwen 2007・Lupien ら 2009 は未照合です。
@@ -176,7 +176,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 |---|---|---|---|
 | ja 139 行「アロスタシスは、変化を通じて安定性を維持するプロセスであり、ホメオスタシスの拡張概念です（McEwen 1998）」 | 言い過ぎ | 低 | 前半は p.171。原典は、狭い範囲に保つホメオスタシスの系と、広い境を持つアロスタシスの系を対で書く（p.172）。「拡張概念」の語は無い |
 | ja 139 行「アロスタティック負荷は、この適応反応の慢性的な累積コストです」 | 一致 | ― | p.171 |
-| ja 143 行「ストレスが予測誤差として蓄積し（波）」 | 付け足し | 中 | 原典に予測誤差の語は無い。D08 の予測処理の語の持ち込み |
+| ja 143 行「ストレスが予測誤差として蓄積し（波）」 | 付け足し | 中 | 原典に予測誤差の語は無い。神経科学の予測処理の語の持ち込み |
 | ja 143 行「海馬萎縮などの構造変化として固定化されます（病的な束）」 | 言い過ぎ | 中 | p.175（CA3 の萎縮は戻る）・p.176（人の萎縮が戻るかは分からない） |
 | ja 143 行「5段階の『失敗モード』——波が縁で適切に処理されず蓄積する病態」、ja 201 行 | 抜け | 中 | 原典は守る働きと傷める働きを同じ系の両面として書く（p.171）。四つの型のうち「足りない」型（p.173）を落とし、たまる形だけにしている |
 | ja 141 行「正常な循環が破綻して構造的損傷に至る」 | 一致 | ― | 図 1（p.172）。過剰にさらされると病気に至る |
@@ -190,7 +190,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 **一次情報**：
 
 - Xie, L. ら (2013). Sleep Drives Metabolite Clearance from the Adult Brain. *Science* 342(6156), 373–377. DOI: [10.1126/science.1241224](https://doi.org/10.1126/science.1241224)（Crossref で確かめました）。PMC の著者稿（PMC3880190）を NCBI の efetch で XML として読みました。報告の形の論文で節の見出しが無いので、要旨と本文の段落で控えます。読んだ所：要旨（自然の睡眠か麻酔で、細胞の間のすきまが 60％ 増え、脳脊髄液と間質液の入れ替わりが大きく増える。眠っている間に Aβ が速く除かれる。睡眠が回復させる働きは、起きている間にたまる神経に害になりうる老廃物を除くことの結果かもしれない）、本文の第 1 段落（眠りを奪うと齧歯類やハエは日から週の単位で死ぬ。人の致死性家族性不眠症は数か月から数年で認知症と死に至る）、本文（起きている状態では脳脊髄液の流入がほとんど無い。細胞の間のすきまは起きているとき 13.6％、麻酔で 22.7％。Aβ は眠っているマウスで起きているマウスの 2 倍の速さで除かれた。起きている状態のノルアドレナリンの受容体を遮ると流入が増えた）。
-- Iliff, J. J. ら (2012). A Paravascular Pathway Facilitates CSF Flow Through the Brain Parenchyma and the Clearance of Interstitial Solutes, Including Amyloid β. *Sci. Transl. Med.* 4(147), 147ra111. DOI: [10.1126/scitranslmed.3003748](https://doi.org/10.1126/scitranslmed.3003748)（Crossref で確かめました）。台帳 D09-S06。PMC の著者稿（PMC3551275）を NCBI の efetch で XML として読みました。読んだ節：要旨（アストロサイトの水チャネル AQP4 を欠く動物では流入が遅く、間質の溶質の除去が 70％ ほど減る。流れの間の大きな液の流れはアストロサイトの水の輸送に支えられることを示唆する）、Results の「Astroglial water transport supports CSF flux into the parenchyma」（AQP4 を欠くと、傍血管の空間から周りの間質への動きがほぼ無くなった）。
+- Iliff, J. J. ら (2012). A Paravascular Pathway Facilitates CSF Flow Through the Brain Parenchyma and the Clearance of Interstitial Solutes, Including Amyloid β. *Sci. Transl. Med.* 4(147), 147ra111. DOI: [10.1126/scitranslmed.3003748](https://doi.org/10.1126/scitranslmed.3003748)（Crossref で確かめました）。台帳に行がある。PMC の著者稿（PMC3551275）を NCBI の efetch で XML として読みました。読んだ節：要旨（アストロサイトの水チャネル AQP4 を欠く動物では流入が遅く、間質の溶質の除去が 70％ ほど減る。流れの間の大きな液の流れはアストロサイトの水の輸送に支えられることを示唆する）、Results の「Astroglial water transport supports CSF flux into the parenchyma」（AQP4 を欠くと、傍血管の空間から周りの間質への動きがほぼ無くなった）。
 - Smith, A. J. ら (2017). Test of the 'glymphatic' hypothesis demonstrates diffusive and aquaporin-4-independent solute transport in rodent brain parenchyma. *eLife* 6, e27679. DOI: [10.7554/eLife.27679](https://doi.org/10.7554/eLife.27679)（Crossref で確かめました）。eLife の PDF は自動取得で 406 でした。PMC の全文（PMC5578736、CC BY）を NCBI の efetch で XML として読みました。読んだ節：要旨（脳の実質の中の色素の動きは、大きさに頼る点で流れでなく拡散と合う。心停止の直後でも動きは変わらない。AQP4 の遺伝子を消しても動きは損なわれない。提案されたグリンパティック系の、実質の中を流れで運ぶ仕組みを支持しない）、Discussion（傍血管の空間にある程度の流れがあることは一般に認められているが、向き・大きさ・調節はまだはっきりしない）。
 
 **照合の状態**：Xie ら 2013・Iliff ら 2012・Smith ら 2017 は本文照合済（どれも PMC の全文。節で控えた）。
@@ -217,7 +217,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Schultz, W., Dayan, P. & Montague, P. R. (1997). A Neural Substrate of Prediction and Reward. *Science* 275(5306), 1593–1599. DOI: [10.1126/science.275.5306.1593](https://doi.org/10.1126/science.275.5306.1593)（Crossref で確かめました）。台帳 D09-S07（D07-S07 と同じ文献）。台帳の取得先（http://www.cs.utexas.edu/~dana/Reward.pdf ）は 2026-11-09 に 502 で落ちていました。共著者の Dayan のサイトの写し（http://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf ）を取りました。PDF の先頭は %PDF で、1 頁目に題・著者があり、Science の誌面です。手元の `cs/knowledge/raw/D07_schultz-dayan-montague_1997_neural-substrate.pdf` とバイト単位で同じでした。著者のサイトの写しで、権利は未確認です。頁は誌面の頁です（PDF の 1 頁目が p.1593）。読んだ頁：p.1594（ドーパミンニューロンは、予測より良ければ正の信号（発火の増加）、予測どおりなら信号無し（変化なし）、予測より悪ければ負の信号（発火の減少）を出す。学習のあとは、報酬そのものに応じなくなり、予告の光に応じる。報酬が来ないと、来るはずだった時刻にちょうど発火が基準より下がる）、p.1595（式 3 の TD 誤差と、式 5 の学習率）、p.1596（予測が「正しい」とされるのは平均の予測誤差が 0 になったとき。基準より多いドーパミンは「予想より良い」、少ないと「予想より悪い」）。
+- Schultz, W., Dayan, P. & Montague, P. R. (1997). A Neural Substrate of Prediction and Reward. *Science* 275(5306), 1593–1599. DOI: [10.1126/science.275.5306.1593](https://doi.org/10.1126/science.275.5306.1593)（Crossref で確かめました）。台帳に行がある（台帳の「Schultz ら 1997」の行と同じ文献）。台帳の取得先（http://www.cs.utexas.edu/~dana/Reward.pdf ）は 2026-11-09 に 502 で落ちていました。共著者の Dayan のサイトの写し（http://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf ）を取りました。PDF の先頭は %PDF で、1 頁目に題・著者があり、Science の誌面です。手元の PDF とバイト単位で同じでした。著者のサイトの写しで、権利は未確認です。頁は誌面の頁です（PDF の 1 頁目が p.1593）。読んだ頁：p.1594（ドーパミンニューロンは、予測より良ければ正の信号（発火の増加）、予測どおりなら信号無し（変化なし）、予測より悪ければ負の信号（発火の減少）を出す。学習のあとは、報酬そのものに応じなくなり、予告の光に応じる。報酬が来ないと、来るはずだった時刻にちょうど発火が基準より下がる）、p.1595（式 3 の TD 誤差と、式 5 の学習率）、p.1596（予測が「正しい」とされるのは平均の予測誤差が 0 になったとき。基準より多いドーパミンは「予想より良い」、少ないと「予想より悪い」）。
 - Schultz, W. (2016). Dopamine reward prediction error coding. *Dialogues Clin. Neurosci.* 18(1), 23–32. DOI: [10.31887/DCNS.2016.18.1/wschultz](https://doi.org/10.31887/DCNS.2016.18.1/wschultz)（Crossref で確かめました）。PMC の全文（PMC4826767）を NCBI の efetch で XML として読みました。著者のまとめ直しです。読んだ節：要旨（予測どおりの報酬には基準の活動のまま。依存の薬物はドーパミンの報酬信号を生み、乗っ取り、大きくし、可塑性に誇張された制御の効かない作用を引き起こす）、「Multiple components in dopamine responses」（主に顕著さを符号化するという想定は、おそらくもう退けてよい、と書く）。
 - Schultz（1998）*J. Neurophysiol.* 80, 1–27（DOI 10.1152/jn.1998.80.1.1、Crossref で書誌を確かめました）は、APS の PDF が Cloudflare の確認画面（403）でした。Fiorillo, Tobler & Schultz（2003）*Science* 299, 1898–1902（DOI 10.1126/science.1077349）は有料で、取得を試していません。
 
@@ -246,7 +246,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 - Otto, S. P. (2009). The Evolutionary Enigma of Sex. *Am. Nat.* 174(S1), S1–S14. DOI: [10.1086/599084](https://doi.org/10.1086/599084)（Crossref で確かめました）。著者のサイト（ブリティッシュコロンビア大学）の写し：https://www.zoology.ubc.ca/~otto/Reprints/Otto2009.pdf 。PDF の先頭は %PDF で、1 頁目に誌名・巻・題・著者があり、誌面の版です。著者のサイトの写しで、権利は未確認です。頁は誌面の頁です（PDF の 1 頁目が p.S1）。読んだ頁：p.S1（要旨。初めの模型は性の進化の説明に失敗した。最近の研究は、時間と空間で変わる選択と有限の集団を入れ、性がありふれる条件を明らかにした。序：性の親は遺伝子の 50％ しか伝えない。性の費用の名は Bell 1982。性は過去の選択が作った良い組み合わせを壊す。名のある動物種で無性だけのものは 0.1％ ほど。無性の分類群はほぼすべて系統樹の枝先にある）、p.S3（過去の選択が作った組み合わせを壊すので、性はほとんどいつも無性より子の平均の適応度を下げる。組み換えの荷重）、pp.S6–S7（環境が速く変わると、性は有利になりうる。宿主と寄生者の間で組み合わせの有利が速く揺れる仕組みは「赤の女王」の仮説と呼ばれる（名は Bell 1982、Jaenike 1978・Hamilton 1980）。限界：選択がかなり強くなければならない。主な抗原の座が一つのときは難しい。二倍体では分離の効果が勝ち、性の頻度を下げることが多い）、pp.S8–S10（有限の集団では、選択と浮動が合わさると遺伝的な関連がたまり、それを壊す性が有利になる。Muller のラチェット。二倍の費用があっても空間の構造があれば性が進化しうる）。
 - Speijer, D., Lukeš, J. & Eliáš, M. (2015). Sex is a ubiquitous, ancient, and inherent attribute of eukaryotic life. *PNAS* 112(29), 8827–8834. DOI: [10.1073/pnas.1501725112](https://doi.org/10.1073/pnas.1501725112)（Crossref で確かめました）。PMC の記事の頁（PMC4517231）の HTML を読みました。読んだ節：「Truly Asexual Eukaryotic (Micro)Organisms: Do They Exist for Long?」（長く無性のものはまれで、減数分裂の性は真核生物の最後の共通祖先にあったという合意が育っている）、「Could Eukaryotic Sex be a Further Symbiogenic Effect…」（真核生物が現れたのは 16〜21 億年前ほどで、原核生物は 35 億年より古い）。
 - Van Valen（1973）は、進化生物学の記録の 6 で本文照合済です（Oslo 大学 CEES の頁の写し pp.1・17–21）。この記録では読み直していません。
-- Maynard Smith, J. (1978). *The Evolution of Sex*. Cambridge UP（台帳 D09-S08、blocked-access）。書籍で、OA の版は見つかりませんでした。同じ著者の論文版（Maynard Smith 1971「What use is sex?」*J. Theor. Biol.*）は Elsevier の有料で、取得を試していません。
+- Maynard Smith, J. (1978). *The Evolution of Sex*. Cambridge UP（台帳に行がある、自動では取れない）。書籍で、OA の版は見つかりませんでした。同じ著者の論文版（Maynard Smith 1971「What use is sex?」*J. Theor. Biol.*）は Elsevier の有料で、取得を試していません。
 
 **照合の状態**：Otto 2009 は本文照合済（著者のサイトの写し。pp.S1・S3・S6–S10）。Speijer ら 2015 は本文照合済（PMC の HTML。節で控えた）。Van Valen 1973 は本文照合済（進化生物学の記録を参照）。Maynard Smith 1978 は未照合（書籍）です。
 
@@ -277,7 +277,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 **一次情報**：
 
 - Ohsumi, Y. (2016). Molecular Mechanisms of Autophagy in Yeast（ノーベル講演、2016 年 12 月 7 日）. https://www.nobelprize.org/uploads/2018/06/ohsumi-lecture.pdf 。PDF の先頭は %PDF で、1 頁目に題・著者・日付があります。頁は講演集の頁で、PDF の 1 頁目が p.277 です。著者のまとめ直しです。読んだ頁：p.283（秋の葉は葉緑体を分解して幹に運ぶ。分解は悪い過程ではなく、新しく作ることや作り直すことに欠かせない）、p.284（人の体は毎日 200〜300 g のタンパク質を作るが、食べるのは 70〜80 g。合成に要るアミノ酸の多くは自分のタンパク質の分解から来る。生命は合成と分解の厳しく制御された釣り合いで保たれる）、p.287（窒素の飢餓で、二倍体の酵母は減数分裂して胞子を作る。窒素を減らした培地に移した）、p.288（オートファジー体の中身は細胞質と同じで、選ばずに包むことを示す。隔離膜が細胞質の一部を包む）、p.291（最初の変異株 apg1（今の atg1）を Tsukada & Ohsumi 1993 で見つけた。この株では飢餓でタンパク質の分解が起きない。ホモの二倍体は胞子を作れない。栄養の多い培地では野生株と違いが無い。窒素の飢餓が長引くと野生株より早く生きる力を失う。生きる力の低下で選ぶと、14 の相補群に入るおよそ 100 の株が見つかった）。
-- Tsukada, M. & Ohsumi, Y. (1993). Isolation and characterization of autophagy-defective mutants of *Saccharomyces cerevisiae*. *FEBS Lett.* 333(1–2), 169–174. DOI: [10.1016/0014-5793(93)80398-E](https://doi.org/10.1016/0014-5793(93)80398-E)（Crossref で確かめました）。台帳 D09-S09（blocked-access）。Wiley の PDF は Cloudflare の確認画面（403）、ScienceDirect も 403 でした。Europe PMC の要旨（PMID 8224160）を読みました（apg1 では窒素の飢餓でタンパク質の分解が起きない。apg1 は窒素の飢餓のあいだ野生株より早く生きる力を失う。生きる力の低下で 75 の apg 変異株を選び、15 の相補群に入った。ホモの二倍体は胞子を作れなかった。飢餓での液胞の分解にはオートファジーが欠かせない）。
+- Tsukada, M. & Ohsumi, Y. (1993). Isolation and characterization of autophagy-defective mutants of *Saccharomyces cerevisiae*. *FEBS Lett.* 333(1–2), 169–174. DOI: [10.1016/0014-5793(93)80398-E](https://doi.org/10.1016/0014-5793(93)80398-E)（Crossref で確かめました）。台帳に行がある（自動では取れない）。Wiley の PDF は Cloudflare の確認画面（403）、ScienceDirect も 403 でした。Europe PMC の要旨（PMID 8224160）を読みました（apg1 では窒素の飢餓でタンパク質の分解が起きない。apg1 は窒素の飢餓のあいだ野生株より早く生きる力を失う。生きる力の低下で 75 の apg 変異株を選び、15 の相補群に入った。ホモの二倍体は胞子を作れなかった。飢餓での液胞の分解にはオートファジーが欠かせない）。
 - Kabeya, Y. ら (2000). LC3, a mammalian homologue of yeast Apg8p, is localized in autophagosome membranes after processing. *EMBO J.* 19(21), 5720–5728. DOI: [10.1093/emboj/19.21.5720](https://doi.org/10.1093/emboj/19.21.5720)（Crossref で確かめました）。PMC の記事の頁（PMC305793）の HTML を読みました。読んだ節：要旨（LC3 には LC3-I と LC3-II の二つの形があり、LC3-II は膜に付く。LC3-II の量はオートファゴソームの形成の程度と相関する。オートファゴソームの膜に特に付く最初の哺乳類のタンパク質）、Discussion（翻訳のあとの修飾が LC3-I と LC3-II を作ると提案する。C 末端の切断のあとの段は、なお確かめる必要がある）。本文に、ホスファチジルエタノールアミン（PE）との結合は書かれていません。
 
 **照合の状態**：Ohsumi 2016 は本文照合済（著者のまとめ直し。pp.283–284・287–288・291）。Tsukada & Ohsumi 1993 は要旨照合済（Europe PMC）。Kabeya ら 2000 は本文照合済（PMC。節で控えた）。
@@ -308,7 +308,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Wolpert, L. (1969). Positional information and the spatial pattern of cellular differentiation. *J. Theor. Biol.* 25(1), 1–47. DOI: [10.1016/S0022-5193(69)80016-0](https://doi.org/10.1016/S0022-5193(69)80016-0)（Crossref で確かめました）。台帳 D09-S10。ブエノスアイレス大学の授業の頁の写し：http://users.df.uba.ar/silvina/fisica_biologica/wolpert_positional_info.pdf 。台帳の取得先から 2026-11-09 に取りました。PDF の先頭は %PDF で、1 頁目に誌名・題・著者があり、誌面の走査（文字の層あり）です。授業用の写しで、権利は未確認です。頁は誌面の頁です。読んだ頁：p.1（要旨。模様の調整は、部分を除いたり足したりしても模様を作り、大きさによらない力で、細胞が位置情報を変えて解釈し直す力に頼る）、p.5（モザイク型の発生では、除いた部分が作るはずの所が欠ける。調整型では正常な模様ができる）、p.6（Child の勾配の理論は、量の違いを模様に変える仕組みを与えなかった）、p.7（フランス国旗の問題の解は二つの型しかない。一つは釣り合いの原理で、ある所で作る量を、ほかの所で作られ壊される量と釣り合うまで変える。もう一つが位置の原理。どの解も、極性の仕組み・閾値のような細胞の違った応答・少なくとも一つの基準点を要る）、p.10（両端を物質の源と吸い込みにすると直線の勾配ができ、その値が位置を表しうる）、p.13（極性の潜在量の勾配。小さな差は均され、閾値を超えたときだけ極性が反転する）、p.18（模様を決めるのは位置情報と解釈の規則で、模様の部分どうしの間に働きかけは無い。誘導や抑制の反応を要るほかの多くの考えと、この点で違う。模様の形成は少なくとも二段の過程）、p.22（ウニの初期の模様は 8 倍の大きさの幅で大きさによらない。動物極化・植物極化した幼生では比が保たれない）。
+- Wolpert, L. (1969). Positional information and the spatial pattern of cellular differentiation. *J. Theor. Biol.* 25(1), 1–47. DOI: [10.1016/S0022-5193(69)80016-0](https://doi.org/10.1016/S0022-5193(69)80016-0)（Crossref で確かめました）。台帳に行がある。ブエノスアイレス大学の授業の頁の写し：http://users.df.uba.ar/silvina/fisica_biologica/wolpert_positional_info.pdf 。台帳の取得先から 2026-11-09 に取りました。PDF の先頭は %PDF で、1 頁目に誌名・題・著者があり、誌面の走査（文字の層あり）です。授業用の写しで、権利は未確認です。頁は誌面の頁です。読んだ頁：p.1（要旨。模様の調整は、部分を除いたり足したりしても模様を作り、大きさによらない力で、細胞が位置情報を変えて解釈し直す力に頼る）、p.5（モザイク型の発生では、除いた部分が作るはずの所が欠ける。調整型では正常な模様ができる）、p.6（Child の勾配の理論は、量の違いを模様に変える仕組みを与えなかった）、p.7（フランス国旗の問題の解は二つの型しかない。一つは釣り合いの原理で、ある所で作る量を、ほかの所で作られ壊される量と釣り合うまで変える。もう一つが位置の原理。どの解も、極性の仕組み・閾値のような細胞の違った応答・少なくとも一つの基準点を要る）、p.10（両端を物質の源と吸い込みにすると直線の勾配ができ、その値が位置を表しうる）、p.13（極性の潜在量の勾配。小さな差は均され、閾値を超えたときだけ極性が反転する）、p.18（模様を決めるのは位置情報と解釈の規則で、模様の部分どうしの間に働きかけは無い。誘導や抑制の反応を要るほかの多くの考えと、この点で違う。模様の形成は少なくとも二段の過程）、p.22（ウニの初期の模様は 8 倍の大きさの幅で大きさによらない。動物極化・植物極化した幼生では比が保たれない）。
 - Turing（1952）は、化学の記録の 4 と複雑系科学の記録の 8 で本文照合済です。この記録では読み直していません。
 - Driever & Nüsslein-Volhard（1988）と Kondo & Asai（1995）は、取得を試していません。
 
@@ -339,7 +339,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Burnet（1959）*The Clonal Selection Theory of Acquired Immunity* pp.49–62 と Tonegawa（1987）のノーベル講演 pp.381–386 は、臨床医学の記録の 1 で本文照合済です。台帳 D09-S11（Burnet 1957）と D10-S03・D10-S04 は同じ論です。この記録では読み直していません。
+- Burnet（1959）*The Clonal Selection Theory of Acquired Immunity* pp.49–62 と Tonegawa（1987）のノーベル講演 pp.381–386 は、臨床医学の記録の 1 で本文照合済です。台帳に行がある（Burnet 1957）と台帳の「Burnet 1957」の行は同じ論です。この記録では読み直していません。
 - Schatz, D. G., Oettinger, M. A. & Baltimore, D. (1989). The V(D)J recombination activating gene, RAG-1. *Cell* 59(6), 1035–1048. DOI: [10.1016/0092-8674(89)90760-5](https://doi.org/10.1016/0092-8674(89)90760-5)（Crossref で確かめました）。cell.com の PDF は Cloudflare の確認画面（403）でした。Europe PMC の要旨（PMID 2598259）を読みました（RAG-1 の座を取り出した。RAG-1 は V(D)J 組み換えを間接に活性化するか、組み換えの酵素そのものをコードするかもしれない）。
 
 **照合の状態**：本文照合済（臨床医学の記録の 1 を参照）。Schatz ら 1989 は要旨照合済です。
@@ -377,7 +377,7 @@ ja の「強い 2・部分的 6・条件付き 3」は、調べた跡 phase5 の
 
 - 「場から波への内発的起動」は、オートファジーを「外部刺激なし」とした読みと（9 の節の取り違え）、Turing の均一な状態からの不安定に立っています。オートファジーの飢餓は、培地を移して起こす外の環境の変化です（Ohsumi p.287）。
 - 「渦の二方向性」の「分解的な渦」は、刈り込みとオートファジーの原典が、分解を作ることの一部として書いていることと重なります（Ohsumi p.283、Schafer の Discussion）。ただし原典の語ではなく、「渦の本質」を問う形は報告の作ったものです。
-- 「縁の実装多様性」の「第4の実装」（en 73 行・119 行）は、D08 の報告の「三つの系統」に足した数で、原典には根拠がありません。
+- 「縁の実装多様性」の「第4の実装」（en 73 行・119 行）は、神経科学の報告の「三つの系統」に足した数で、原典には根拠がありません。
 - 「スケール横断的な反復」の「確認されました」（ja 193 行）は、原典の確かめを経ていません。四つの論のうち、位置情報は部分どうしの働きかけを要らない論として書かれていて（Wolpert p.18）、同じパターンの反復とは読みにくいです。
 
 ### 至らない形を外に置いていること
@@ -397,11 +397,11 @@ ja の「強い 2・部分的 6・条件付き 3」は、調べた跡 phase5 の
 | オートファジー | 合成と分解（Ohsumi pp.283–284） | オートファジーを欠く株は飢餓で早く死に、胞子を作れない（p.291、Tsukada & Ohsumi の要旨） | 飢餓かどうか、分解の仕組みがあるか |
 | 位置情報 | 部分の除去や追加と、模様の比の保ち（Wolpert pp.1・7） | 閾値の下では極性が均される（p.13）。モザイク型では部分が作られない（p.5） | 極性の潜在量の閾値 |
 
-D03・D04・D29 と同じく、至らない形は原典の中心にありました。報告が外に置いた三つ（エネルギーの収支・ミエリン化・グリンパティック系）は、どれも兼ね合いと、それが崩れた形を原典が書いていて、外に置かず行として並べられます。アロスタティック負荷は、守る働きと傷める働きが同じ系の両面として書かれていて、片方を「失敗モード」として分ける形は原典に無いものです。
+化学・進化生物学・複雑系科学と同じく、至らない形は原典の中心にありました。報告が外に置いた三つ（エネルギーの収支・ミエリン化・グリンパティック系）は、どれも兼ね合いと、それが崩れた形を原典が書いていて、外に置かず行として並べられます。アロスタティック負荷は、守る働きと傷める働きが同じ系の両面として書かれていて、片方を「失敗モード」として分ける形は原典に無いものです。
 
 ### テンプレート由来の表示
 
-ja：「立ち位置明示」（3〜6 行）、「Phase 1-2」「Phase 3-4」（30 行）、「Phase 5（論拠監査）」「Phase 6（構造再読）」「Phase 7（横断統合）」（38 行）、「方法論的開示（S60）」（44 行）、「温度帯の分布」（89 行）、「安全弁」（91〜93 行）、「結びの温度開示」「温度帯」（219〜220 行）、「Colophon」の generator_model（222〜232 行）。49 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（writing.md §1-1・§1-8）。en 15 行「the three conditions associated with Edge」は、縁の三条件という報告の作った体系です。en 31 行「If these definitions already produce discomfort…Both are legitimate choices」は、読者への言い訳の文です（型 F）。pres 43 行の見出し「温度」と 107 行「温度帯」も同じです。D01・D02・D03・D22・D29 と同じく、テンプレートで一度に直します（`cs/transform/domains/reader-rules/reader-rules-creation.md`）。
+ja：「立ち位置明示」（3〜6 行）、「Phase 1-2」「Phase 3-4」（30 行）、「Phase 5（論拠監査）」「Phase 6（構造再読）」「Phase 7（横断統合）」（38 行）、「方法論的開示（S60）」（44 行）、「温度帯の分布」（89 行）、「安全弁」（91〜93 行）、「結びの温度開示」「温度帯」（219〜220 行）、「Colophon」の generator_model（222〜232 行）。49 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（書き方の規約 §1-1・§1-8）。en 15 行「the three conditions associated with Edge」は、縁の三条件という報告の作った体系です。en 31 行「If these definitions already produce discomfort…Both are legitimate choices」は、読者への言い訳の文です（型 F）。pres 43 行の見出し「温度」と 107 行「温度帯」も同じです。数学・物理学・化学・経営学・複雑系科学と同じく、テンプレートで一度に直します（旧い規則（創造とはの読み手の規則））。
 
 ### 誤りの出どころ
 
@@ -418,7 +418,7 @@ ja：「立ち位置明示」（3〜6 行）、「Phase 1-2」「Phase 3-4」（
 | 乳酸の受け渡しと長期記憶（Suzuki 2011） | 退避版 44 行、調べた跡 phase6 17 行 |
 | テンプレートの表示 | 報告のテンプレート |
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 E（断定・看板・「最も」）：「この領域で最も重要な横断的知見です」（177 行）、「5段階が特定のスケールに依存しない構造的パターンであることの証拠」（193 行）、「強い構造対応が確認されました」（213 行）、en 132 行「That is a settled physiological finding」、en 138 行「provides the largest body of evidence」、pres 104 行「全体として有力な領域であることが確認されました」。
 - 型 H（原典に無い体系）：「縁の第4の実装」（en 73 行・119 行）、「縁の三条件」（en 15 行）、「分解的な渦」「包摂的な渦」（ja 181 行）。
@@ -428,71 +428,63 @@ ja：「立ち位置明示」（3〜6 行）、「Phase 1-2」「Phase 3-4」（
 
 ### 精読ノートと wiki・台帳の誤り（司令塔が直す）
 
-- `cs/knowledge/source-notes/D09/D09-S07_schultz-1997.md` 7 行・16 行：頁を「pp.1593-1597」「5」としているが、Crossref と誌面では pp.1593–1599（7 頁）。17 行：「DOI / URL」の欄に DOI が無く、utexas.edu の URL だけ（2026-11-09 に 502）。27 行・33 行：引用の頁 p.1595 は p.1596。63 行：引用「the phasic activation of dopamine neurons should place plasticity only to the onset of light」(p.1594) は原典に無い。近い文は p.1596 の「the dopamine neurons should respond phasically only to the onset of light 1」。
-- `pd/wiki/sources/D09_schultz_1997_schultz-dayan-montague-1997.md` 66 行：「1593–1597」は 1593–1599。10 行・69 行：OA の URL が utexas.edu（502）。Dayan のサイトの写しに替える案。
-- `cs/knowledge/source-notes/D09/D09-S10_wolpert-1969.md` 39 行：引用「It is suggested that pattern formation is at least a two-step process」は原文と違う。原文（p.18）は「It should be clear that the concepts developed here suggest that pattern formation is at least a two-step process」。63 行：引用の文は p.1 の要旨の文で、注記の p.7–8 ではない（p.8 には似た文がある）。
-- `cs/knowledge/source-notes/D09/D09-S02_attwell-laughlin-2001.md` 41 行：引用の頁 p.1142 は p.1141。102 行：「1 spike/neuron/s equates to…6.5 µmol ATP/g/min」の頁 p.1143 は p.1140。
-- `cs/knowledge/source-notes/D09/D09-S05_mcewen-1998.md` 65 行：「turning on an allostatic response」の頁 p.171 は p.172。
-- `cs/knowledge/source-notes/D09/D09-S01_pellerin-magistretti-1994.md` 6 行：「PMC (PMC45074) 経由でHTML全文取得」とあるが、PMC45074 は誌面の頁の画像だけで、HTML の全文は無い。
-- `pd/wiki/sources/D09_attwell_2001_attwell-laughlin-2001-an.md` 57 行：access_status が url-verified で、台帳（raw-confirmed）と合わない。
-- 台帳 D09-S09（Tsukada & Ohsumi 1993）：「論で参照しない」とあるが、Europe PMC で要旨が読める（PMID 8224160）。要旨の相補群は 15、Ohsumi の講演 p.291 は 14 で合わない。
-- 台帳 D09-S01（Pellerin & Magistretti 1994）：OA の URL（PNAS の PDF）は確認画面。PMC45074 の頁の画像で読めることを書き足す案。
-- 台帳 D09-S07：Dayan のサイトの写しを取得先に足す案は、台帳にすでにある（D07 で足した）。
+- 精読ノート「Schultz 1997」 7 行・16 行：頁を「pp.1593-1597」「5」としているが、Crossref と誌面では pp.1593–1599（7 頁）。17 行：「DOI / URL」の欄に DOI が無く、utexas.edu の URL だけ（2026-11-09 に 502）。27 行・33 行：引用の頁 p.1595 は p.1596。63 行：引用「the phasic activation of dopamine neurons should place plasticity only to the onset of light」(p.1594) は原典に無い。近い文は p.1596 の「the dopamine neurons should respond phasically only to the onset of light 1」。
+- wiki の頁「Schultz 1997」 66 行：「1593–1597」は 1593–1599。10 行・69 行：OA の URL が utexas.edu（502）。Dayan のサイトの写しに替える案。
+- 精読ノート「Wolpert 1969」 39 行：引用「It is suggested that pattern formation is at least a two-step process」は原文と違う。原文（p.18）は「It should be clear that the concepts developed here suggest that pattern formation is at least a two-step process」。63 行：引用の文は p.1 の要旨の文で、注記の p.7–8 ではない（p.8 には似た文がある）。
+- 精読ノート「Attwell & Laughlin 2001」 41 行：引用の頁 p.1142 は p.1141。102 行：「1 spike/neuron/s equates to…6.5 µmol ATP/g/min」の頁 p.1143 は p.1140。
+- 精読ノート「Mcewen 1998」 65 行：「turning on an allostatic response」の頁 p.171 は p.172。
+- 精読ノート「Pellerin & Magistretti 1994」 6 行：「PMC (PMC45074) 経由でHTML全文取得」とあるが、PMC45074 は誌面の頁の画像だけで、HTML の全文は無い。
+- wiki の頁「Attwell 2001」 57 行：access_status が「取得先を確かめた」で、台帳（手元に保存した）と合わない。
+- 台帳に行がある（Tsukada & Ohsumi 1993）：「論で参照しない」とあるが、Europe PMC で要旨が読める（PMID 8224160）。要旨の相補群は 15、Ohsumi の講演 p.291 は 14 で合わない。
+- 台帳に行がある（Pellerin & Magistretti 1994）：OA の URL（PNAS の PDF）は確認画面。PMC45074 の頁の画像で読めることを書き足す案。
+- 台帳の「Schultz ら 1997」の行：Dayan のサイトの写しを取得先に足す案は、台帳にすでにある（工学・情報科学で足した）。
 
-精読ノート D09-S05（McEwen）の 28・34・40・46 行、D09-S02 の 31〜35 行・43〜65 行、D09-S10 の 45・51・57・83〜87 行の引用と頁は、読んだ所では原典と合っていました。D09-S03・S04・S06 は XML で読んだため頁の照合はしていません。
+精読ノート「McEwen 1998」の 28・34・40・46 行、台帳の「Attwell & Laughlin 2001」の行の 31〜35 行・43〜65 行、台帳の「Wolpert 1969」の行の 45・51・57・83〜87 行の引用と頁は、読んだ所では原典と合っていました。台帳の「Schafer ら 2012」の行は XML で読んだため頁の照合はしていません。
 
 ## 判断が要るもの
 
-pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは `docs/cs-review/README.md` の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
+pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは調べ方の計画と規約の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
 
 - Pellerin & Magistretti（1994）は、PNAS と PMC の PDF が確認画面で、PMC の記事の頁が出す誌面の画像を見て読み、本文照合済にしました。PMC は NIH の公的なアーカイブで出所が書けるので、学会・大学のサイトの写しと同じ扱いにしました（「規約で決めたこと」2026-11-09 の ADS の行に近い）。予想：pjdhiro も同じ扱いを選ぶ見込みです。
-- 位置情報（Wolpert 1969）は、原典が部分どうしの働きかけを要らないと書く論で、中心の問いの芯（対立や衝突が欠かせない形）に当たりにくい論です。論としては残し、閾値と調整に至らない形を行に書きました（`sources.md` §3-3、stance 2-1 の「粗い論も芯があれば数える」の逆の場合）。予想：pjdhiro は外さずに並べる見込みです（群盲象の一面として）。
-- 報告が段の外に置いた三つ（エネルギーの収支・ミエリン化・グリンパティック系）は、外に置かず、兼ね合いと至らない形の行として並べました（`docs/cs-review/README.md` の中心の問い、規約で決めたこと「射程を狭める推奨は採らない」）。
-- 有性生殖の「40億年以上」は、Speijer ら（2015）で真核生物の年代を確かめて取り違えとしました。直すのは段 6 で、日英・プレゼン版と退避版・調べた跡の出どころまで通します（`sources.md` §7-2）。
+- 位置情報（Wolpert 1969）は、原典が部分どうしの働きかけを要らないと書く論で、中心の問いの芯（対立や衝突が欠かせない形）に当たりにくい論です。論としては残し、閾値と調整に至らない形を行に書きました（調べ方の規約 §3-3、stance 2-1 の「粗い論も芯があれば数える」の逆の場合）。予想：pjdhiro は外さずに並べる見込みです（群盲象の一面として）。
+- 報告が段の外に置いた三つ（エネルギーの収支・ミエリン化・グリンパティック系）は、外に置かず、兼ね合いと至らない形の行として並べました（調べ方の計画と規約の中心の問い、規約で決めたこと「射程を狭める推奨は採らない」）。
+- 有性生殖の「40億年以上」は、Speijer ら（2015）で真核生物の年代を確かめて取り違えとしました。直すのは段 6 で、日英・プレゼン版と退避版・調べた跡の出どころまで通します（調べ方の規約 §7-2）。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-manifest は書き換えていません。番号は台帳と同じ形で、D09-S17 から振りました。Van Valen（1973）は D04-S06、Turing（1952）は D03-S05・D29-S16、Burnet（1959）と Tonegawa（1987）は D10-S03・D10-S04 と同じ文献なので、行を足さずにそちらを参照します。
+台帳は書き換えていません。Van Valen（1973）は台帳の「Van Valen 1973」の行、Turing（1952）は台帳の「Turing 1952」の行、Burnet（1959）と Tonegawa（1987）は台帳の「Burnet 1957」の行と同じ文献なので、行を足さずにそちらを参照します。
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D09-S17 | Díaz-García, C. M. ら (2017). Neuronal Stimulation Triggers Neuronal Glycolysis and Not Lactate Uptake. *Cell Metab.* 26(2), 361–374.e4. DOI 10.1016/j.cmet.2017.06.021 | PMC5559896（著者稿。NCBI の efetch で XML） | url-verified（著者稿） |
-| D09-S18 | Dienel, G. A. (2019). Brain Glucose Metabolism: Integration of Energetics with Function. *Physiol. Rev.* 99(1), 949–1045. DOI 10.1152/physrev.00062.2017 | APS（確認画面）。要旨は Europe PMC（PMID 30565508） | citation-only（要旨照合済） |
-| D09-S19 | Araque, A. ら (1999). Tripartite synapses: glia, the unacknowledged partner. *Trends Neurosci.* 22(5), 208–215. DOI 10.1016/S0166-2236(98)01349-6 | Elsevier（有料。取得を試していない） | citation-only |
-| D09-S20 | Stevens, B. ら (2007). The Classical Complement Cascade Mediates CNS Synapse Elimination. *Cell* 131(6), 1164–1178. DOI 10.1016/j.cell.2007.10.036 | cell.com（確認画面）。要旨は Europe PMC（PMID 18083105） | citation-only（要旨照合済） |
-| D09-S21 | Xie, L. ら (2013). Sleep Drives Metabolite Clearance from the Adult Brain. *Science* 342(6156), 373–377. DOI 10.1126/science.1241224 | PMC3880190（著者稿。NCBI の efetch で XML） | url-verified（著者稿） |
-| D09-S22 | Smith, A. J. ら (2017). Test of the 'glymphatic' hypothesis demonstrates diffusive and aquaporin-4-independent solute transport in rodent brain parenchyma. *eLife* 6, e27679. DOI 10.7554/eLife.27679 | PMC5578736（CC BY。NCBI の efetch で XML） | url-verified |
-| D09-S23 | Schultz, W. (2016). Dopamine reward prediction error coding. *Dialogues Clin. Neurosci.* 18(1), 23–32. DOI 10.31887/DCNS.2016.18.1/wschultz | PMC4826767（NCBI の efetch で XML） | url-verified（著者のまとめ直し） |
-| D09-S24 | Schultz, W. (1998). Predictive Reward Signal of Dopamine Neurons. *J. Neurophysiol.* 80(1), 1–27. DOI 10.1152/jn.1998.80.1.1 | APS（確認画面） | citation-only |
-| D09-S25 | Fiorillo, C. D., Tobler, P. N. & Schultz, W. (2003). Discrete Coding of Reward Probability and Uncertainty by Dopamine Neurons. *Science* 299(5614), 1898–1902. DOI 10.1126/science.1077349 | Science（有料。取得を試していない） | citation-only |
-| D09-S26 | Otto, S. P. (2009). The Evolutionary Enigma of Sex. *Am. Nat.* 174(S1), S1–S14. DOI 10.1086/599084 | https://www.zoology.ubc.ca/~otto/Reprints/Otto2009.pdf （著者のサイトの写し。誌面） | url-verified（著者のサイトの写し） |
-| D09-S27 | Speijer, D., Lukeš, J. & Eliáš, M. (2015). Sex is a ubiquitous, ancient, and inherent attribute of eukaryotic life. *PNAS* 112(29), 8827–8834. DOI 10.1073/pnas.1501725112 | PMC4517231（PMC の記事の頁の HTML） | url-verified |
-| D09-S28 | Ohsumi, Y. (2016). Molecular Mechanisms of Autophagy in Yeast（ノーベル講演）. *Nobel Lectures*, pp.277–313 | https://www.nobelprize.org/uploads/2018/06/ohsumi-lecture.pdf | url-verified（著者のまとめ直し） |
-| D09-S29 | Kabeya, Y. ら (2000). LC3, a mammalian homologue of yeast Apg8p, is localized in autophagosome membranes after processing. *EMBO J.* 19(21), 5720–5728. DOI 10.1093/emboj/19.21.5720 | PMC305793（PMC の記事の頁の HTML） | url-verified |
-| D09-S30 | Schatz, D. G., Oettinger, M. A. & Baltimore, D. (1989). The V(D)J recombination activating gene, RAG-1. *Cell* 59(6), 1035–1048. DOI 10.1016/0092-8674(89)90760-5 | cell.com（確認画面）。要旨は Europe PMC（PMID 2598259） | citation-only（要旨照合済） |
-| D09-S31 | McEwen, B. S. & Stellar, E. (1993). Stress and the Individual: Mechanisms Leading to Disease. *Arch. Intern. Med.* 153(18), 2093–2101. DOI 10.1001/archinte.1993.00410180039004 | JAMA（有料。取得を試していない） | citation-only |
-| D09-S32 | Magistretti, P. J. & Allaman, I. (2018). Lactate in the brain: from metabolic end-product to signalling molecule. *Nat. Rev. Neurosci.* 19(4), 235–249. DOI 10.1038/nrn.2018.19 | Nature（有料。取得を試していない） | citation-only |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| Díaz-García, C. M. ら (2017). Neuronal Stimulation Triggers Neuronal Glycolysis and Not Lactate Uptake. *Cell Metab.* 26(2), 361–374.e4. DOI 10.1016/j.cmet.2017.06.021 | PMC5559896（著者稿。NCBI の efetch で XML） | 取得先を確かめた（著者稿） |
+| Dienel, G. A. (2019). Brain Glucose Metabolism: Integration of Energetics with Function. *Physiol. Rev.* 99(1), 949–1045. DOI 10.1152/physrev.00062.2017 | APS（確認画面）。要旨は Europe PMC（PMID 30565508） | 書誌だけ（要旨照合済） |
+| Araque, A. ら (1999). Tripartite synapses: glia, the unacknowledged partner. *Trends Neurosci.* 22(5), 208–215. DOI 10.1016/S0166-2236(98)01349-6 | Elsevier（有料。取得を試していない） | 書誌だけ |
+| Stevens, B. ら (2007). The Classical Complement Cascade Mediates CNS Synapse Elimination. *Cell* 131(6), 1164–1178. DOI 10.1016/j.cell.2007.10.036 | cell.com（確認画面）。要旨は Europe PMC（PMID 18083105） | 書誌だけ（要旨照合済） |
+| Xie, L. ら (2013). Sleep Drives Metabolite Clearance from the Adult Brain. *Science* 342(6156), 373–377. DOI 10.1126/science.1241224 | PMC3880190（著者稿。NCBI の efetch で XML） | 取得先を確かめた（著者稿） |
+| Smith, A. J. ら (2017). Test of the 'glymphatic' hypothesis demonstrates diffusive and aquaporin-4-independent solute transport in rodent brain parenchyma. *eLife* 6, e27679. DOI 10.7554/eLife.27679 | PMC5578736（CC BY。NCBI の efetch で XML） | 取得先を確かめた |
+| Schultz, W. (2016). Dopamine reward prediction error coding. *Dialogues Clin. Neurosci.* 18(1), 23–32. DOI 10.31887/DCNS.2016.18.1/wschultz | PMC4826767（NCBI の efetch で XML） | 取得先を確かめた（著者のまとめ直し） |
+| Schultz, W. (1998). Predictive Reward Signal of Dopamine Neurons. *J. Neurophysiol.* 80(1), 1–27. DOI 10.1152/jn.1998.80.1.1 | APS（確認画面） | 書誌だけ |
+| Fiorillo, C. D., Tobler, P. N. & Schultz, W. (2003). Discrete Coding of Reward Probability and Uncertainty by Dopamine Neurons. *Science* 299(5614), 1898–1902. DOI 10.1126/science.1077349 | Science（有料。取得を試していない） | 書誌だけ |
+| Otto, S. P. (2009). The Evolutionary Enigma of Sex. *Am. Nat.* 174(S1), S1–S14. DOI 10.1086/599084 | https://www.zoology.ubc.ca/~otto/Reprints/Otto2009.pdf （著者のサイトの写し。誌面） | 取得先を確かめた（著者のサイトの写し） |
+| Speijer, D., Lukeš, J. & Eliáš, M. (2015). Sex is a ubiquitous, ancient, and inherent attribute of eukaryotic life. *PNAS* 112(29), 8827–8834. DOI 10.1073/pnas.1501725112 | PMC4517231（PMC の記事の頁の HTML） | 取得先を確かめた |
+| Ohsumi, Y. (2016). Molecular Mechanisms of Autophagy in Yeast（ノーベル講演）. *Nobel Lectures*, pp.277–313 | https://www.nobelprize.org/uploads/2018/06/ohsumi-lecture.pdf | 取得先を確かめた（著者のまとめ直し） |
+| Kabeya, Y. ら (2000). LC3, a mammalian homologue of yeast Apg8p, is localized in autophagosome membranes after processing. *EMBO J.* 19(21), 5720–5728. DOI 10.1093/emboj/19.21.5720 | PMC305793（PMC の記事の頁の HTML） | 取得先を確かめた |
+| Schatz, D. G., Oettinger, M. A. & Baltimore, D. (1989). The V(D)J recombination activating gene, RAG-1. *Cell* 59(6), 1035–1048. DOI 10.1016/0092-8674(89)90760-5 | cell.com（確認画面）。要旨は Europe PMC（PMID 2598259） | 書誌だけ（要旨照合済） |
+| McEwen, B. S. & Stellar, E. (1993). Stress and the Individual: Mechanisms Leading to Disease. *Arch. Intern. Med.* 153(18), 2093–2101. DOI 10.1001/archinte.1993.00410180039004 | JAMA（有料。取得を試していない） | 書誌だけ |
+| Magistretti, P. J. & Allaman, I. (2018). Lactate in the brain: from metabolic end-product to signalling molecule. *Nat. Rev. Neurosci.* 19(4), 235–249. DOI 10.1038/nrn.2018.19 | Nature（有料。取得を試していない） | 書誌だけ |
 
 既存の行に書き足す案：
 
-- D09-S01（Pellerin & Magistretti 1994）：PNAS の PDF と PMC の PDF は確認画面（2026-11-09）。PMC45074 の記事の頁が誌面を頁の画像で出していて、読める（文字の層なし）。
-- D09-S02（Attwell & Laughlin 2001）：SAGE の取得先は 2026-11-09 に Cloudflare の確認画面で、手元の PDF とバイト単位で比べられなかった。PDF の改変の記録に iText（1T3XT）がある。
-- D09-S05（McEwen 1998）：取得先の PDF は NEJM の誌面（頁の下に「Downloaded from www.nejm.org at UW MADISON」）。2026-11-09 に取れた。
-- D09-S06（Iliff ら 2012）：PMC3551275 の XML（efetch）で本文が読める。
-- D09-S09（Tsukada & Ohsumi 1993）：Wiley と ScienceDirect は確認画面（403）。要旨は Europe PMC（PMID 8224160）で読める。「論で参照しない」を「要旨照合済。本文は Ohsumi 2016 の講演（著者のまとめ直し）」に改める案。
-- D09-S10（Wolpert 1969）：取得先の PDF は誌面の走査（文字の層あり）で、2026-11-09 に取れた。
+- 台帳の「Pellerin & Magistretti 1994」の行（Pellerin & Magistretti 1994）：PNAS の PDF と PMC の PDF は確認画面（2026-11-09）。PMC45074 の記事の頁が誌面を頁の画像で出していて、読める（文字の層なし）。
+- 台帳の「Attwell & Laughlin 2001」の行（Attwell & Laughlin 2001）：SAGE の取得先は 2026-11-09 に Cloudflare の確認画面で、手元の PDF とバイト単位で比べられなかった。PDF の改変の記録に iText（1T3XT）がある。
+- 台帳の「McEwen 1998」の行（McEwen 1998）：取得先の PDF は NEJM の誌面（頁の下に「Downloaded from www.nejm.org at UW MADISON」）。2026-11-09 に取れた。
+- 台帳の「Iliff ら 2012」の行（Iliff ら 2012）：PMC3551275 の XML（efetch）で本文が読める。
+- 台帳の「Tsukada & Ohsumi 1993」の行（Tsukada & Ohsumi 1993）：Wiley と ScienceDirect は確認画面（403）。要旨は Europe PMC（PMID 8224160）で読める。「論で参照しない」を「要旨照合済。本文は Ohsumi 2016 の講演（著者のまとめ直し）」に改める案。
+- 台帳の「Wolpert 1969」の行（Wolpert 1969）：取得先の PDF は誌面の走査（文字の層あり）で、2026-11-09 に取れた。
 
 ## ブラウザでの保存が要る PDF
 
-| 台帳の行 | 文献 | ダウンロード先 | 保存名の案 |
-|---|---|---|---|
-| D09-S01 | Pellerin & Magistretti (1994) *PNAS* 91, 10625（文字の層のある版） | https://pmc.ncbi.nlm.nih.gov/articles/PMC45074/pdf/pnas01144-0392.pdf | `D09_pellerin-magistretti_1994_glutamate-uptake-aerobic-glycolysis.pdf` |
-| D09-S02 | Attwell & Laughlin (2001) *J. Cereb. Blood Flow Metab.* 21, 1133（手元の PDF とバイト単位で比べるため） | https://journals.sagepub.com/doi/pdf/10.1097/00004647-200110000-00001 | 比べるだけ（手元の `D09_attwell-laughlin_2001_energy-budget-signaling.pdf`） |
-| D09-S09 | Tsukada & Ohsumi (1993) *FEBS Lett.* 333, 169 | https://febs.onlinelibrary.wiley.com/doi/pdf/10.1016/0014-5793(93)80398-E | `D09_tsukada-ohsumi_1993_autophagy-defective-mutants.pdf` |
-| D09-S20 | Stevens ら (2007) *Cell* 131, 1164 | https://www.cell.com/action/showPdf?pii=S0092-8674(07)01354-2 | `D09_stevens_2007_complement-cascade-synapse-elimination.pdf` |
-| D09-S30 | Schatz, Oettinger & Baltimore (1989) *Cell* 59, 1035 | https://www.cell.com/action/showPdf?pii=0092-8674(89)90760-5 | `D09_schatz-oettinger-baltimore_1989_rag-1.pdf` |
-| D09-S24 | Schultz (1998) *J. Neurophysiol.* 80, 1 | https://journals.physiology.org/doi/pdf/10.1152/jn.1998.80.1.1 | `D09_schultz_1998_predictive-reward-signal-dopamine.pdf` |
-| D09-S18 | Dienel (2019) *Physiol. Rev.* 99, 949 | https://journals.physiology.org/doi/pdf/10.1152/physrev.00062.2017 | `D09_dienel_2019_brain-glucose-metabolism.pdf` |
+自動で取れなかった原典のうち、ブラウザでの保存を頼むものは、作業の記録（[Issue #73](https://github.com/uminomae/project-design-theory/issues/73)）の表にまとめました。
 
 ## 手順について分かったこと
 
@@ -500,5 +492,5 @@ manifest は書き換えていません。番号は台帳と同じ形で、D09-S
 - 報告が引く原論文の多く（PNAS・Science・Cell・APS・Wiley）は、自動取得で Cloudflare の確認画面になりました。PMC の著者稿（Schafer・Fields・Xie・Iliff・Díaz-García）、PMC の CC の全文（Smith・Schultz 2016）、著者のサイト（Otto・Dayan）、授業の頁（McEwen・Wolpert）で、論の芯に当たれました。古い PNAS（1994）は PMC に文字の層が無く、頁の画像を見て読みました。
 - 争いのある論（ANLS・グリンパティック系・性の進化）は、反対の側の OA の論文（Díaz-García ら 2017・Smith ら 2017）や、説明の限界を書く総説（Otto 2009）が PMC や著者のサイトで読め、研究の一線を本文で書けました。
 - 有料の原論文が読めないとき、同じ研究室の後の講演（Ohsumi 2016）は、原論文の要旨と数（相補群の数）が合わないことがありました。講演を確かめ先にするときは、要旨と突き合わせるのがよいと分かりました。
-- 共著者のサイトの写し（Dayan）は、別の分野（D07）で手元に置いた PDF とバイト単位で同じで、分野をまたいで同じファイルを使えました。
+- 共著者のサイトの写し（Dayan）は、別の分野（工学・情報科学）で手元に置いた PDF とバイト単位で同じで、分野をまたいで同じファイルを使えました。
 - 報告の誤りの多くは、調べた跡（phase6・phase7）が「最強の論拠」などとして作った読みが、本文で事実として書かれたところにありました（40億年・内発的起動・束ねる）。英語版には、退避版の「フック有効性」の欄から来た欠損駆動思考と抱持の語が多く残っていました。
