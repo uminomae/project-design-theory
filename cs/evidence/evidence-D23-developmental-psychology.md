@@ -14,7 +14,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D23-devel
 
 発達心理学の原典は、二つの働きの兼ね合いを、論の芯として書いているものが多くありました。Kegan（1982）は、人が埋め込まれている環境の働きを、確認（holding on）・矛盾（letting go）・その場にとどまること（remaining in place）の三つに分け、移り変わりで古い自分を失うことを「取り戻せる喪失」と「取り戻せない喪失」に分けて書いています（pp.118–130）。Thelen ら（2001）と Smith & Thelen（2003）は、隠し場所 A の記憶と、新しい場所 B の手がかりの競り合いを式で書き、場の働きが弱いと古い A が勝つ誤り（A-not-B の誤り）が出ると書いています。Piaget（1964）は、外からの乱れに対して主体が補いを返すことを均衡化と呼び、外からの強化だけでは論理の構造が身に付かなかった例を書いています。Tronick & Beeghly（2011）は、乳児と養育者のやり取りは合っている状態とずれた状態を行き来し、ずれを二人で直すことが新しい意味の土台になると書き、直せないことが続く形も書いています。Maslow（1943）も、満たされない欲求が下から再び人を支配する形と、葛藤がいつ病を生むかの条件を書いています。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D23-developmental-psychology.md`、2026-03-18 に LLM が生成、以下「報告」）は、15 の理論を取り上げ、9 つを「強い対応」（うち 5 つは「限定的射程」つき）としています。報告は、どの論でも、段が次へ進む側だけを五つの段に当てていて、原典にある衝突と至らない形（取り戻せない喪失・古い型の勝利・ずれが直らない形・反芻的な探求・退行）を落としていました。ピアジェの節の「5段階は不均衡を問いとして保持する」という対比は、調べた跡（phase6）が欠損駆動思考の語で書いた対比を、語を替えて写したものでした。原典では、均衡化は「安定した状態への回復」でなく、補いによって次の水準へ進む自己調整として書かれています。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
+今の公開報告（「30 領域調査報告」の発達心理学の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、15 の理論を取り上げ、9 つを「強い対応」（うち 5 つは「限定的射程」つき）としています。報告は、どの論でも、段が次へ進む側だけを五つの段に当てていて、原典にある衝突と至らない形（取り戻せない喪失・古い型の勝利・ずれが直らない形・反芻的な探求・退行）を落としていました。ピアジェの節の「5段階は不均衡を問いとして保持する」という対比は、調べた跡（phase6）が欠損駆動思考の語で書いた対比を、語を替えて写したものでした。原典では、均衡化は「安定した状態への回復」でなく、補いによって次の水準へ進む自己調整として書かれています。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
 12 の論のうち、本文照合済は 10 です。Kegan は Internet Archive に利用者が上げた写しで読んだので未照合とし、読んだ頁を書いています。Stern は書籍で、未照合（書籍）です。成人の発達段階の論（Kegan・Cook-Greuter）では、原典が後の段階を「良い」と書いていない所を控えました（Cook-Greuter 2013、p.3・p.17・p.87）。この記録でも、高い段階や安定した愛着の型を良いものとしては扱いません。
 
@@ -22,7 +22,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 ## 一面の表
 
-照合の状態は `docs/rules/sources.md` §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。原典の構造（何と何の兼ね合いか）と Claude の読み替えは各節で分けて書き、この表には原典に書いてあることだけを短く置きます。括弧の中の並べ方の名（片方の勝利など）は、Claude の読み替えです。
+照合の状態は調べ方の規約 §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。原典の構造（何と何の兼ね合いか）と Claude の読み替えは各節で分けて書き、この表には原典に書いてあることだけを短く置きます。括弧の中の並べ方の名（片方の勝利など）は、Claude の読み替えです。
 
 | 論 | 対立 | 衝突 | 統合／新たな安定、または統合に至らずにどう終わったか | 論の微細さ | 照合の状態 |
 |---|---|---|---|---|---|
@@ -39,7 +39,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | 11. Luyckx の DIDS（中間ら 2015 の日本語版） | 探求（広い・深い）と、コミットメント（形成・同一化） | 二重のサイクル。探求の中に、不安の高い反芻的な探求が混ざる | コミットメントの形成と同一化に至る。至らない形として、反芻的な探求はコミットメントに寄与せず、自尊感情と負の、抑うつと正の関係を持つ。拡散型拡散・無問題化型拡散の類型も出る | 一人の青年の数年 | 本文照合済（日本語版の論文） |
 | 12. Maslow：動機づけの理論（1943） | 優勢な欲求と、その上に現れる欲求 | 満たされない欲求は、再び現れて人を支配する。葛藤や欲求不満は、基本の欲求を脅かすときだけ病を生む | 下の欲求がある程度満たされると、上の欲求が少しずつ現れる。順は固定でなく、逆転もある。至らない形として、基本の欲求を阻まれた人を「病んだ人」と見る、と書かれる | 一人の動機。生涯 | 本文照合済（大学のサイトの写し） |
 
-ほかの三つ（Erikson・Wilber・Kohlberg）は、本文に当たれず、表には並べていません（論ごとの節の最後の項）。
+ほかの三つ（Erikson・Wilber・Kohlberg）は、本文に当たれず、表には並べていません（論ごとの節の最後の項）。本文に当たれないものは引用に使わない、という原則のとおり、表の外に置いたままにします（pjdhiro 2026-11-09）。
 
 ## 論ごとの節
 
@@ -49,10 +49,10 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Kegan, R. (1982). *The Evolving Self: Problem and Process in Human Development*. Harvard University Press。manifest D23-S01。手元の PDF は Internet Archive に利用者が上げた写し（ファイル名が「_compress.pdf」）で、上げた人と権利は確かめていません。335 頁で、書籍の頁が写しに刷られています。読んだ頁：p.31・p.44・p.86（表 6）・pp.118–120（表 7）・p.121・p.127・pp.129–130・p.149。
+- Kegan, R. (1982). *The Evolving Self: Problem and Process in Human Development*. Harvard University Press。台帳に行がある。手元の PDF は Internet Archive に利用者が上げた写し（ファイル名が「_compress.pdf」）で、上げた人と権利は確かめていません。335 頁で、書籍の頁が写しに刷られています。読んだ頁：p.31・p.44・p.86（表 6）・pp.118–120（表 7）・p.121・p.127・pp.129–130・p.149。
 - 著者の論文版 Kegan, R. (1980). Making meaning: The constructive-developmental approach to persons and practice. *The Personnel and Guidance Journal* 58(5), 373–380 は、検索では書誌だけが出て、開ける写しは見つかりませんでした（DOI を確かめていません）。
-- Kegan (1994) *In Over Our Heads*（manifest D23-S02）と Lahey ら (1988)（manifest D23-S03）は開けていません。
-- 精読ノート：`cs/knowledge/source-notes/D23/D23-S01_kegan-1982.md`（pp.vii–98 を読んだと書く）。ノートの p.31・p.44 の引用は写しの本文と合います。
+- Kegan (1994) *In Over Our Heads*（台帳に行がある）と Lahey ら (1988)（台帳に行がある）は開けていません。
+- 精読ノート：精読ノート「Kegan 1982」（pp.vii–98 を読んだと書く）。ノートの p.31・p.44 の引用は写しの本文と合います。
 
 **照合の状態**：未照合（書籍）。利用者が上げた写しで上の頁を読みました。報告が書く「意識の秩序（orders of consciousness）」の語、Subject-Object Interview、「成人の多くは秩序 3〜4」は 1982 年の本の本文に見当たらず（写しの全文を検索）、1994 年の本か Lahey ら 1988 の内容と見られます。これらは未照合（書籍）です。
 
@@ -70,10 +70,10 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | 今の報告の行 | 判定 | 重さ | 中身 |
 |---|---|---|---|
 | ja 87 行 主体が客体になる変化・段の並び | 一致 | ― | 1982 年の写しの p.31・p.86 と合う。照合の状態は未照合（書籍） |
-| ja 87 行「意識の秩序」「成人の多くは秩序3から4…秩序5に達する人は少数」「Subject-Object Interview」、en 41 行 | 未判定 | 中 | 1982 年の本に無い。1994 年の本（manifest D23-S02）と Lahey ら（D23-S03）の内容で、どちらも開けていない。退避版の claims（「Kegan 1994」と書く）から来ている |
+| ja 87 行「意識の秩序」「成人の多くは秩序3から4…秩序5に達する人は少数」「Subject-Object Interview」、en 41 行 | 未判定 | 中 | 1982 年の本に無い。1994 年の本（台帳に行がある）と Lahey らの内容で、どちらも開けていない。退避版の claims（「Kegan 1994」と書く）から来ている |
 | ja 87〜91 行 確認・矛盾・連続と、移り変わりの喪失に触れない | 抜け | 中 | 原典は、環境の三つの働きと、取り戻せる喪失・取り戻せない喪失を書く（pp.118–130）。報告は段が進む側だけを段に当てている |
 | ja 91 行 秩序3＝縁・秩序4＝渦・秩序5＝束、pres 55・57 行「最も強いのは 縁→渦→束」「後半三段階の骨格を最も明確に示す理論の一つ」 | 言い過ぎ | 中 | 段の当てはめは 5 段階の定義が決まってから。「最も」と言える比較の跡は無い。出どころは退避版 44 行と phase5 の「Anchor」 |
-| 退避版 EV-D23-001 の claims「5つの『意識の秩序』」と、同じ行の 0〜5 の六つ | 取り違え | 低 | 原典の表 6 は 0 から 5 の六つ（p.86） |
+| 退避版の最初の行の claims「5つの『意識の秩序』」と、同じ行の 0〜5 の六つ | 取り違え | 低 | 原典の表 6 は 0 から 5 の六つ（p.86） |
 
 ### 2. 動的システムアプローチ：A-not-B の誤り
 
@@ -83,9 +83,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 - Smith, L. B. & Thelen, E. (2003). Development as a dynamic system. *Trends in Cognitive Sciences* 7(8), 343–348. DOI 10.1016/S1364-6613(03)00156-6（Crossref で確かめた）。著者の研究室（Indiana University の cogdev labwork）に置かれていた誌面の PDF を、Wayback Machine の記録（https://web.archive.org/web/20160108223526/http://www.indiana.edu/~cogdev/labwork/dynamicsystem.pdf ）で読んだ。先頭が %PDF で、1 頁目の題と著者を確かめた。読んだ頁：pp.343–347。
 - Thelen, E., Schöner, G., Scheier, C. & Smith, L. B. (2001). The dynamics of embodiment: A field theory of infant perseverative reaching. *Behavioral and Brain Sciences* 24(1), 1–34. DOI 10.1017/S0140525X01003910。同じ研究室の誌面の PDF（https://web.archive.org/web/20151222143714/http://www.indiana.edu/~cogdev/labwork/DynamicsEmbodiment.pdf 、論評と応答を含む 86 頁）。読んだ頁：p.2・pp.4–9・p.17・pp.21–26。
-- van Geert, P. (1998). A dynamic systems model of basic developmental mechanisms: Piaget, Vygotsky, and beyond. *Psychological Review* 105(4), 634–677. DOI 10.1037/0033-295X.105.4.634-677。manifest D23-S14。手元の PDF は Groningen 大学のリポジトリの出版社版で、表紙と書誌が合う。読んだ頁：p.634・pp.644–645・p.655・p.661・p.665。
-- van Geert, P. (2019). Dynamic systems, process and development. *Human Development* 63(3–4), 153–179. DOI 10.1159/000503825。manifest D23-S11。台帳の取得先（Karger の PDF）は自動取得に 403 を返した。PMC7050700 の記事の頁（HTML。CC BY-NC-ND）で読んだ。頁が無いので節で控えた：Causality and Complex Dynamic Systems・Process and Structure。
-- Thelen & Smith (1994) の書籍（manifest D23-S10）と Thelen (2005)（DOI 10.1080/10481881509348831）は開けていません。
+- van Geert, P. (1998). A dynamic systems model of basic developmental mechanisms: Piaget, Vygotsky, and beyond. *Psychological Review* 105(4), 634–677. DOI 10.1037/0033-295X.105.4.634-677。台帳に行がある。手元の PDF は Groningen 大学のリポジトリの出版社版で、表紙と書誌が合う。読んだ頁：p.634・pp.644–645・p.655・p.661・p.665。
+- van Geert, P. (2019). Dynamic systems, process and development. *Human Development* 63(3–4), 153–179. DOI 10.1159/000503825。台帳に行がある。台帳の取得先（Karger の PDF）は自動取得に 403 を返した。PMC7050700 の記事の頁（HTML。CC BY-NC-ND）で読んだ。頁が無いので節で控えた：Causality and Complex Dynamic Systems・Process and Structure。
+- Thelen & Smith (1994) の書籍（台帳に行がある）と Thelen (2005)（DOI 10.1080/10481881509348831）は開けていません。
 
 **照合の状態**：Smith & Thelen 2003・Thelen ら 2001 は本文照合済（著者の研究室の写し）。van Geert 1998 は本文照合済（大学のリポジトリ）。van Geert 2019 は本文照合済（PMC の記事の頁。節で控えた）。Thelen & Smith 1994 は未照合（書籍）。
 
@@ -178,7 +178,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Bowlby, J. (1958). The nature of the child's tie to his mother. *International Journal of Psycho-Analysis* 39, 350–373（DOI は無い）。Stony Brook 大学の愛着研究のサイトの組み直しの写し（https://psychology.psy.sunysb.edu/attachment/online/Bowlby_1958_childs%20tie.pdf ）。この repo の Love の歴史の読み物（`pd/knowledge/research/love-history/READER-love-history.md` 480 行）が本文照合済にしている。読んだ頁：写しの p.2・p.16・pp.20–21。
+- Bowlby, J. (1958). The nature of the child's tie to his mother. *International Journal of Psycho-Analysis* 39, 350–373（DOI は無い）。Stony Brook 大学の愛着研究のサイトの組み直しの写し（https://psychology.psy.sunysb.edu/attachment/online/Bowlby_1958_childs%20tie.pdf ）。この repo の Love の歴史の読み物（読み物「Love とは、どう言われてきたか」 480 行）が本文照合済にしている。読んだ頁：写しの p.2・p.16・pp.20–21。
 - Ainsworth, M. D. S. & Bowlby, J. (1991). An ethological approach to personality development. *American Psychologist* 46(4), 333–341. DOI 10.1037/0003-066X.46.4.333。同じサイトの組み直しの写し（https://psychology.psy.sunysb.edu/attachment/online/ainsworth_bowlby_1991.pdf 、12 頁。誌面の頁は無く、写しの頁で控えた）。読んだ頁：写しの p.2・pp.6–9。
 - Bretherton, I. (1992). The origins of attachment theory: John Bowlby and Mary Ainsworth. *Developmental Psychology* 28(5), 759–775. DOI 10.1037/0012-1649.28.5.759。同じサイトの組み直しの写し（https://psychology.psy.sunysb.edu/attachment/online/inge_origins.pdf 、44 頁）。二次資料。読んだ頁：写しの p.1・p.11・pp.19–20・pp.23–24・p.27・p.30。
 - Waters, E., Merrick, S., Treboux, D., Crowell, J. & Albersheim, L. (2000). Attachment security in infancy and early adulthood: A twenty-year longitudinal study. *Child Development* 71(3), 684–689. DOI 10.1111/1467-8624.00176。同じサイトの写し（https://psychology.psy.sunysb.edu/attachment/online/ew_stability.pdf ）。読んだ頁：写しの pp.1–3。
@@ -211,7 +211,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Cook-Greuter, S. R. (2013). *Nine Levels of Increasing Embrace in Ego Development: A Full-Spectrum Theory of Vertical Growth and Meaning Making*. 刊行前の版（2013 年 12 月改訂）。著者が cook-greuter.com に置いていた版の Wayback Machine の記録（https://web.archive.org/web/20140928135208/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1%2714%2097p%5B1%5D.pdf 、97 頁）。この repo の `pd/knowledge/reference/cook-greuter-2013-stage-anxieties-index.md` が同じ版で本文を確かめている。頁は論文の刷りの頁（PDF の頁 − 2）。表紙に許可なく配布しないこととあるので、要約と頁の指示にとどめる。読んだ頁：pp.3–5・pp.7–10・pp.16–17・pp.19–20・p.29・pp.73–79・p.87。
+- Cook-Greuter, S. R. (2013). *Nine Levels of Increasing Embrace in Ego Development: A Full-Spectrum Theory of Vertical Growth and Meaning Making*. 刊行前の版（2013 年 12 月改訂）。著者が cook-greuter.com に置いていた版の Wayback Machine の記録（https://web.archive.org/web/20140928135208/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1%2714%2097p%5B1%5D.pdf 、97 頁）。この repo の手元の索引（Cook-Greuter 2013）が同じ版で本文を確かめている。頁は論文の刷りの頁（PDF の頁 − 2）。表紙に許可なく配布しないこととあるので、要約と頁の指示にとどめる。読んだ頁：pp.3–5・pp.7–10・pp.16–17・pp.19–20・p.29・pp.73–79・p.87。
 - Cook-Greuter (2004)（DOI 10.1108/00197850410563902）と Loevinger (1966)（DOI 10.1037/h0023376）は開けていません。
 
 **照合の状態**：本文照合済（著者のサイトの写し）。
@@ -273,7 +273,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 **一次情報**：
 
 - Piaget, J. (1964). Development and learning（Part I: Cognitive development in children）. *Journal of Research in Science Teaching* 2(3), 176–186. DOI 10.1002/tea.3660020306（Crossref で確かめた）。2003 年の同誌 40 周年の付録に再録された誌面（Vol. 40, Supplement, pp.S8–S18）を、Western Oregon University の教員の授業の頁（https://people.wou.edu/~girodm/611/Piaget.pdf ）で読んだ。PDF は付録の 50 頁で、Piaget は PDF の 8〜18 頁。文字の層が無く、頁の画像で読んだ。頁は再録の頁。読んだ頁：pp.S8・S10・S11・S13–S15。
-- Piaget (1952) の書籍と Piaget (1972)（DOI 10.1159/000271225）は開けていません。D14 心理学の記録は、Piaget 1952 を未照合（書籍）としています。
+- Piaget (1952) の書籍と Piaget (1972)（DOI 10.1159/000271225）は開けていません。心理学の記録は、Piaget 1952 を未照合（書籍）としています。
 
 **照合の状態**：本文照合済（授業用の写し。権利は未確認。頁は 2003 年の再録の頁で、頁の画像で読んだ）。
 
@@ -303,9 +303,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Rochat, P. (2003). Five levels of self-awareness as they unfold early in life. *Consciousness and Cognition* 12(4), 717–731. DOI 10.1016/S1053-8100(03)00081-3（Crossref で確かめた）。manifest D23-S04。著者の研究室（Emory University）のサイトに置かれていた誌面の PDF を、Wayback Machine の記録（https://web.archive.org/web/20101205011922/http://www.psychology.emory.edu/cognition/rochat/lab/PDF/Fivelevelsofselfawarenessastheyunfoldearlyinlife.pdf ）で読んだ。台帳の取得先（journalpsyche.org。意識をテーマにした個人の解説サイト）の PDF と、MD5 が一致した。読んだ頁：pp.717–730。
-- 木下孝司 (2001). 幼児は自己映像を“自分のこと”として見ているか？ 神戸大学発達科学部研究紀要 8(2), 91–100。manifest D23-S06。神戸大学のリポジトリの写し。報告はこの論文を引いていない。読んだ頁：冒頭の「問題」の節（鏡の像への反応の三つの段）。
-- 精読ノート：`cs/knowledge/source-notes/D23/D23-S04_rochat-2003.md`（pp.717–725 を読んだと書く）。
+- Rochat, P. (2003). Five levels of self-awareness as they unfold early in life. *Consciousness and Cognition* 12(4), 717–731. DOI 10.1016/S1053-8100(03)00081-3（Crossref で確かめた）。台帳に行がある。著者の研究室（Emory University）のサイトに置かれていた誌面の PDF を、Wayback Machine の記録（https://web.archive.org/web/20101205011922/http://www.psychology.emory.edu/cognition/rochat/lab/PDF/Fivelevelsofselfawarenessastheyunfoldearlyinlife.pdf ）で読んだ。台帳の取得先（journalpsyche.org。意識をテーマにした個人の解説サイト）の PDF と、MD5 が一致した。読んだ頁：pp.717–730。
+- 木下孝司 (2001). 幼児は自己映像を“自分のこと”として見ているか？ 神戸大学発達科学部研究紀要 8(2), 91–100。台帳に行がある。神戸大学のリポジトリの写し。報告はこの論文を引いていない。読んだ頁：冒頭の「問題」の節（鏡の像への反応の三つの段）。
+- 精読ノート：精読ノート「Rochat 2003」（pp.717–725 を読んだと書く）。
 
 **照合の状態**：本文照合済（著者の研究室の写し）。
 
@@ -327,7 +327,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 151 行 水準 0〜5、「ロシャ自身がこれらの水準を『動的システムのアトラクタ』として語っています」 | 一致 | ― | p.728（「dynamic systems jargon」を借りると書く）と合う |
 | ja 153 行「『新しい社会的場面で同型の再編が反復する』というフラクタル注記」、ja 179 行・201 行 | 付け足し | 中 | 原典に無い。出どころは phase6 36 行で、phase7 の A3 で横断の結論に格上げされた |
 | ja 151〜155 行 新生児は融合した状態で生まれるのでないこと、水準 5 の恥と評価、モデルの限界に触れない | 抜け | 中 | pp.722–723・p.722・p.729。とくに水準 0 を場（未分化の初期条件）に当てる読みは、原典の pp.722–723 と食い違って読まれうる |
-| manifest D23-S04 の取得先 journalpsyche.org | 未判定 | 低 | 個人の解説サイトの写し。著者の研究室の写し（上の Wayback）と同じファイルなので、確かめ先は研究室の写しに替えられる |
+| 台帳の「Rochat 2003」の行の取得先 journalpsyche.org | 未判定 | 低 | 個人の解説サイトの写し。著者の研究室の写し（上の Wayback）と同じファイルなので、確かめ先は研究室の写しに替えられる |
 
 ### 10. Fischer：技能の理論と動的発達
 
@@ -363,9 +363,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- 中間玲子・杉村和美・畑野快・溝上慎一・都筑学 (2015). 多次元アイデンティティ発達尺度（DIDS）によるアイデンティティ発達の検討と類型化の試み. 心理学研究 85(6), 549–559. DOI 10.4992/jjpsy.85.13074。J-STAGE の早期公開は 2014 年 11 月 11 日。manifest D23-S09。手元の PDF は J-STAGE の誌面。読んだ頁：pp.549–553。
-- Luyckx ら (2006)（manifest D23-S07）と Luyckx ら (2008)（manifest D23-S08）は開けていません。2008 年の論文は、OpenAlex が Ghent 大学の書誌の頁を挙げたが、本文のファイルは置かれていなかった。Marcia (1966)（DOI 10.1037/h0023281）も開けていません。
-- 精読ノート：`cs/knowledge/source-notes/D23/D23-S09_nakama-2014.md`（書誌は 2015 年と書く）。
+- 中間玲子・杉村和美・畑野快・溝上慎一・都筑学 (2015). 多次元アイデンティティ発達尺度（DIDS）によるアイデンティティ発達の検討と類型化の試み. 心理学研究 85(6), 549–559. DOI 10.4992/jjpsy.85.13074。J-STAGE の早期公開は 2014 年 11 月 11 日。台帳に行がある。手元の PDF は J-STAGE の誌面。読んだ頁：pp.549–553。
+- Luyckx ら (2006)（台帳に行がある）と Luyckx ら (2008)（台帳に行がある）は開けていません。2008 年の論文は、OpenAlex が Ghent 大学の書誌の頁を挙げたが、本文のファイルは置かれていなかった。Marcia (1966)（DOI 10.1037/h0023281）も開けていません。
+- 精読ノート：精読ノート「Nakama 2014」（書誌は 2015 年と書く）。
 
 **照合の状態**：中間ら 2015 は本文照合済。Luyckx ら 2006・2008 は未照合（中間らの論文の中の要約で読んだ。二次経由）。
 
@@ -384,7 +384,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 59 行（部分的対応）、pres 46 行（有力・「DIDS のアイデンティティ循環モデル」） | 未判定（版の食い違い） | 中 | 版で格が違う |
 | ja 179 行「DIDSのサイクル構造」 | 一致 | 低 | 二重サイクルモデル（p.550） |
 | 報告の全体 反芻的な探求と拡散の類型に触れない | 抜け | 中 | p.551・p.553 |
-| manifest D23-S09 の書誌「中間玲子ほか (2014)」、ファイル名・wiki の「2014」 | 未判定（書誌） | 低 | 誌面は 2015 年の第 85 巻第 6 号。2014 年は J-STAGE の早期公開の年 |
+| 台帳の「中間玲子ほか 2014」の行の書誌「中間玲子ほか (2014)」、ファイル名・wiki の「2014」 | 未判定（書誌） | 低 | 誌面は 2015 年の第 85 巻第 6 号。2014 年は J-STAGE の早期公開の年 |
 
 ### 12. Maslow：動機づけの理論
 
@@ -412,13 +412,14 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 |---|---|---|---|
 | ja 65 行「対応なし」、pres 47 行「条件つき」 | 未判定（版の食い違い） | 中 | 版で格が違う。原典は欲求の阻害・葛藤・病を書いており、「対応なし」とする理由は原典からは出ない |
 | ja 201 行「マズローの自己超越」 | 未判定 | 低 | 1943 年の論文に無い。後の著作の語と見られるが、確かめていない（未照合（記憶）） |
-| 退避版 EV-D23-009・phase5 の「段階数の近似」「5欲求」 | 未判定 | 低 | 原典は段の数より、優勢さと少しずつの出方を書く |
+| 退避版の九つ目の行・phase5 の「段階数の近似」「5欲求」 | 未判定 | 低 | 原典は段の数より、優勢さと少しずつの出方を書く |
 
 ### 表に並べなかった論（Erikson・Wilber・Kohlberg）
 
 - Erikson の心理社会的発達段階（『Childhood and Society』1950・『Identity and the Life Cycle』1959）：書籍で、開ける版を探しましたが見つからず、未照合（書籍）です。報告の「各段階の危機が波に集中」（ja 64 行）は確かめていません。
 - Wilber の AQAL：学術の論文でなく、書籍だけの論で、未照合（書籍）です。報告も「チェック枠としてのみ」「対応なし」としています（ja 67 行）。
 - Kohlberg の道徳発達段階（Kohlberg & Hersh 1977, *Theory Into Practice* 16(2), 53–59, DOI 10.1080/00405847709542675）：Crossref で書誌だけを確かめ、本文は開けていません。未照合です。Gilligan の批判も確かめていません。
+- 三つとも、本文に当たれないものは引用に使わない原則のとおり、表の外のままにします（pjdhiro 2026-11-09）。ウィルバーは、pjdhiro が本を読んで感想を持っているので、Claude が解説するのでなく、あとで pjdhiro の感想を聞く対話に回します。
 
 ## 公開報告の点検のまとめ
 
@@ -452,45 +453,42 @@ pres の冒頭の「2件・1件」は、同じ版の表とも合いません。�
 
 ## 判断が要るもの
 
-1. Kegan の 1982 年の本は、Internet Archive に利用者が上げた写しで読みました。照合の状態は未照合のままにしています。著者の論文版（1980）は開ける写しが見つかりませんでした。予想：README の写しの行のとおり、未照合のまま残し、読んだ頁を書く（stance 2-7、`sources.md` §5-8）。
+1. Kegan の 1982 年の本は、Internet Archive に利用者が上げた写しで読みました。照合の状態は未照合のままにしています。著者の論文版（1980）は開ける写しが見つかりませんでした。予想：README の写しの行のとおり、未照合のまま残し、読んだ頁を書く（stance 2-7、調べ方の規約 §5-8）。
 2. Stern と Tronick を一つの論にまとめました。Tronick は Stern の同期の見方を名指しで退けていて、同じ論の確かめ先にはならないためです。予想：Stern は未照合（書籍）で残し、Tronick を別の論として立てるかは、段 3 で至らない形（修復の失敗）を並べるときに決める（stance 2-2）。
-3. 衝突が芯にない論（Tomasello・Fischer・Vygotsky）をどう並べるか。予想：外さずに「原典から対立・衝突を読むのは難しい」と書いて並べる（README の D12 の行の境界の理論と同じ扱い）。
+3. 衝突が芯にない論（Tomasello・Fischer・Vygotsky）をどう並べるか。予想：外さずに「原典から対立・衝突を読むのは難しい」と書いて並べる（README の農学・生態学の行の境界の理論と同じ扱い）。
+4. 本文に当たれなかった Erikson・Wilber・Kohlberg を、表の行に置くか。答え（pjdhiro 2026-11-09）：本文に当たれないものは引用に使わないのが原則。表の外のままにする。ウィルバーは pjdhiro が本を読んで感想を持っているので、あとで pjdhiro の感想を聞く対話に回す。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D23-S19 | Smith, L. B. & Thelen, E. (2003). Development as a dynamic system. *Trends in Cognitive Sciences* 7(8), 343–348. DOI 10.1016/S1364-6613(03)00156-6 | https://web.archive.org/web/20160108223526/http://www.indiana.edu/~cogdev/labwork/dynamicsystem.pdf （著者の研究室の写し。保存名の案 `D23_smith-thelen_2003_development-dynamic-system.pdf`） | raw-confirmed |
-| D23-S20 | Thelen, E., Schöner, G., Scheier, C. & Smith, L. B. (2001). The dynamics of embodiment: A field theory of infant perseverative reaching. *Behavioral and Brain Sciences* 24(1), 1–34. DOI 10.1017/S0140525X01003910 | https://web.archive.org/web/20151222143714/http://www.indiana.edu/~cogdev/labwork/DynamicsEmbodiment.pdf （同じ研究室。論評と応答を含む。保存名の案 `D23_thelen-schoner-scheier-smith_2001_dynamics-of-embodiment.pdf`） | raw-confirmed |
-| D23-S21 | Vygotsky, L. S. (1978). Interaction between learning and development. In M. Cole ら (Eds.), *Mind in Society*, ch.6. Harvard University Press（編集した抄録） | https://www.oerafrica.org/system/files/2024-01/l-l-readersection-one-reading4.pdf （OER Africa の読本の Reading 4。保存名の案 `D23_vygotsky_1978_interaction-learning-development-extract.pdf`） | raw-confirmed（抄録。頁は読本の頁） |
-| D23-S22 | Tomasello, M., Carpenter, M., Call, J., Behne, T. & Moll, H. (2005). Understanding and sharing intentions: The origins of cultural cognition. *Behavioral and Brain Sciences* 28(5), 675–691. DOI 10.1017/S0140525X05000129 | https://web.archive.org/web/20161213115758/http://www.eva.mpg.de/documents/Cambridge/Tomasello_Understanding_BehBrainSci_2005_1555292.pdf （研究所のサイトの写し。論評を含む。保存名の案 `D23_tomasello-et-al_2005_understanding-sharing-intentions.pdf`） | raw-confirmed |
-| D23-S23 | Tomasello, M. & Carpenter, M. (2007). Shared intentionality. *Developmental Science* 10(1), 121–125. DOI 10.1111/j.1467-7687.2007.00573.x | https://web.archive.org/web/20180219135220/http://www.eva.mpg.de:80/documents/Wiley-Blackwell/Tomasello_Shared_DevScience_2007_1554748.pdf （保存名の案 `D23_tomasello-carpenter_2007_shared-intentionality.pdf`） | raw-confirmed |
-| D23-S24 | Bowlby, J. (1958). The nature of the child's tie to his mother. *International Journal of Psycho-Analysis* 39, 350–373 | https://psychology.psy.sunysb.edu/attachment/online/Bowlby_1958_childs%20tie.pdf （Stony Brook 大学。組み直しの写し。保存名の案 `D23_bowlby_1958_nature-of-childs-tie.pdf`） | raw-confirmed（写しの頁） |
-| D23-S25 | Ainsworth, M. D. S. & Bowlby, J. (1991). An ethological approach to personality development. *American Psychologist* 46(4), 333–341. DOI 10.1037/0003-066X.46.4.333 | https://psychology.psy.sunysb.edu/attachment/online/ainsworth_bowlby_1991.pdf （保存名の案 `D23_ainsworth-bowlby_1991_ethological-approach.pdf`） | raw-confirmed |
-| D23-S26 | Bretherton, I. (1992). The origins of attachment theory: John Bowlby and Mary Ainsworth. *Developmental Psychology* 28(5), 759–775. DOI 10.1037/0012-1649.28.5.759 | https://psychology.psy.sunysb.edu/attachment/online/inge_origins.pdf （組み直しの写し。保存名の案 `D23_bretherton_1992_origins-attachment-theory.pdf`） | raw-confirmed（二次資料。写しの頁） |
-| D23-S27 | Waters, E., Merrick, S., Treboux, D., Crowell, J. & Albersheim, L. (2000). Attachment security in infancy and early adulthood: A twenty-year longitudinal study. *Child Development* 71(3), 684–689. DOI 10.1111/1467-8624.00176 | https://psychology.psy.sunysb.edu/attachment/online/ew_stability.pdf （保存名の案 `D23_waters-et-al_2000_attachment-security-twenty-year.pdf`） | raw-confirmed（写しの頁） |
-| D23-S28 | Cook-Greuter, S. R. (2013). *Nine Levels of Increasing Embrace in Ego Development*. Prepublication version, revised Dec. 2013 | https://web.archive.org/web/20140928135208/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1%2714%2097p%5B1%5D.pdf （著者のサイトの写し。保存名の案 `D23_cook-greuter_2013_nine-levels-increasing-embrace.pdf`） | raw-confirmed（配布しない） |
-| D23-S29 | Tronick, E. & Beeghly, M. (2011). Infants' meaning-making and the development of mental health problems. *American Psychologist* 66(2), 107–119. DOI 10.1037/a0021631 | PMC3135310（https://pmc.ncbi.nlm.nih.gov/articles/PMC3135310/ 。保存名の案 `D23_tronick-beeghly_2011_infants-meaning-making.xml`） | raw-confirmed（PMC。節で控える） |
-| D23-S30 | Piaget, J. (1964). Development and learning. *Journal of Research in Science Teaching* 2(3), 176–186. DOI 10.1002/tea.3660020306（2003 年の再録 Vol. 40 Suppl., S8–S18） | https://people.wou.edu/~girodm/611/Piaget.pdf （授業用の写し。再録の付録の 50 頁。文字の層なし。保存名の案 `D23_piaget_1964_development-and-learning.pdf`） | raw-confirmed（頁の画像） |
-| D23-S31 | Fischer, K. W. (1980). A theory of cognitive development: The control and construction of hierarchies of skills. *Psychological Review* 87(6), 477–531. DOI 10.1037/0033-295X.87.6.477 | https://web.archive.org/web/20060907130313/http://gseweb.harvard.edu/%7Eddl/articlesCopy/FischerTheoryCognDev1980W.pdf （研究室の写し。保存名の案 `D23_fischer_1980_theory-cognitive-development.pdf`） | raw-confirmed（写しの頁） |
-| D23-S32 | Fischer, K. W. & Bidell, T. R. (2006). Dynamic development of action and thought. *Handbook of Child Psychology* (6th ed.) Vol. 1, 313–399. DOI 10.1002/9780470147658.chpsy0107 | https://web.archive.org/web/20060907132626/http://gseweb.harvard.edu/%7Eddl/articlesCopy/FischerBidellProofsCorrected.0706.pdf （研究室の写し。校正刷り。保存名の案 `D23_fischer-bidell_2006_dynamic-development.pdf`） | raw-confirmed |
-| D23-S33 | Maslow, A. H. (1943). A theory of human motivation. *Psychological Review* 50(4), 370–396. DOI 10.1037/h0054346 | http://psychclassics.yorku.ca/Maslow/motivation.htm （York University。HTML。誌面の頁の印あり。保存名の案 `D23_maslow_1943_theory-human-motivation.html`） | raw-confirmed（HTML） |
-| D23-S34 | Wood, D., Bruner, J. S. & Ross, G. (1976). The role of tutoring in problem solving. *Journal of Child Psychology and Psychiatry* 17(2), 89–100. DOI 10.1111/j.1469-7610.1976.tb00381.x | https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/j.1469-7610.1976.tb00381.x （Cloudflare の確認画面） | blocked-access |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| Smith, L. B. & Thelen, E. (2003). Development as a dynamic system. *Trends in Cognitive Sciences* 7(8), 343–348. DOI 10.1016/S1364-6613(03)00156-6 | https://web.archive.org/web/20160108223526/http://www.indiana.edu/~cogdev/labwork/dynamicsystem.pdf （著者の研究室の写し。保存名の案手元の PDF） | 手元に保存した |
+| Thelen, E., Schöner, G., Scheier, C. & Smith, L. B. (2001). The dynamics of embodiment: A field theory of infant perseverative reaching. *Behavioral and Brain Sciences* 24(1), 1–34. DOI 10.1017/S0140525X01003910 | https://web.archive.org/web/20151222143714/http://www.indiana.edu/~cogdev/labwork/DynamicsEmbodiment.pdf （同じ研究室。論評と応答を含む。保存名の案手元の PDF） | 手元に保存した |
+| Vygotsky, L. S. (1978). Interaction between learning and development. In M. Cole ら (Eds.), *Mind in Society*, ch.6. Harvard University Press（編集した抄録） | https://www.oerafrica.org/system/files/2024-01/l-l-readersection-one-reading4.pdf （OER Africa の読本の Reading 4。保存名の案手元の PDF） | 手元に保存した（抄録。頁は読本の頁） |
+| Tomasello, M., Carpenter, M., Call, J., Behne, T. & Moll, H. (2005). Understanding and sharing intentions: The origins of cultural cognition. *Behavioral and Brain Sciences* 28(5), 675–691. DOI 10.1017/S0140525X05000129 | https://web.archive.org/web/20161213115758/http://www.eva.mpg.de/documents/Cambridge/Tomasello_Understanding_BehBrainSci_2005_1555292.pdf （研究所のサイトの写し。論評を含む。保存名の案手元の PDF） | 手元に保存した |
+| Tomasello, M. & Carpenter, M. (2007). Shared intentionality. *Developmental Science* 10(1), 121–125. DOI 10.1111/j.1467-7687.2007.00573.x | https://web.archive.org/web/20180219135220/http://www.eva.mpg.de:80/documents/Wiley-Blackwell/Tomasello_Shared_DevScience_2007_1554748.pdf （保存名の案手元の PDF） | 手元に保存した |
+| Bowlby, J. (1958). The nature of the child's tie to his mother. *International Journal of Psycho-Analysis* 39, 350–373 | https://psychology.psy.sunysb.edu/attachment/online/Bowlby_1958_childs%20tie.pdf （Stony Brook 大学。組み直しの写し。保存名の案手元の PDF） | 手元に保存した（写しの頁） |
+| Ainsworth, M. D. S. & Bowlby, J. (1991). An ethological approach to personality development. *American Psychologist* 46(4), 333–341. DOI 10.1037/0003-066X.46.4.333 | https://psychology.psy.sunysb.edu/attachment/online/ainsworth_bowlby_1991.pdf （保存名の案手元の PDF） | 手元に保存した |
+| Bretherton, I. (1992). The origins of attachment theory: John Bowlby and Mary Ainsworth. *Developmental Psychology* 28(5), 759–775. DOI 10.1037/0012-1649.28.5.759 | https://psychology.psy.sunysb.edu/attachment/online/inge_origins.pdf （組み直しの写し。保存名の案手元の PDF） | 手元に保存した（二次資料。写しの頁） |
+| Waters, E., Merrick, S., Treboux, D., Crowell, J. & Albersheim, L. (2000). Attachment security in infancy and early adulthood: A twenty-year longitudinal study. *Child Development* 71(3), 684–689. DOI 10.1111/1467-8624.00176 | https://psychology.psy.sunysb.edu/attachment/online/ew_stability.pdf （保存名の案手元の PDF） | 手元に保存した（写しの頁） |
+| Cook-Greuter, S. R. (2013). *Nine Levels of Increasing Embrace in Ego Development*. Prepublication version, revised Dec. 2013 | https://web.archive.org/web/20140928135208/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1%2714%2097p%5B1%5D.pdf （著者のサイトの写し。保存名の案手元の PDF） | 手元に保存した（配布しない） |
+| Tronick, E. & Beeghly, M. (2011). Infants' meaning-making and the development of mental health problems. *American Psychologist* 66(2), 107–119. DOI 10.1037/a0021631 | PMC3135310（https://pmc.ncbi.nlm.nih.gov/articles/PMC3135310/ 。保存名の案手元のファイル） | 手元に保存した（PMC。節で控える） |
+| Piaget, J. (1964). Development and learning. *Journal of Research in Science Teaching* 2(3), 176–186. DOI 10.1002/tea.3660020306（2003 年の再録 Vol. 40 Suppl., S8–S18） | https://people.wou.edu/~girodm/611/Piaget.pdf （授業用の写し。再録の付録の 50 頁。文字の層なし。保存名の案手元の PDF） | 手元に保存した（頁の画像） |
+| Fischer, K. W. (1980). A theory of cognitive development: The control and construction of hierarchies of skills. *Psychological Review* 87(6), 477–531. DOI 10.1037/0033-295X.87.6.477 | https://web.archive.org/web/20060907130313/http://gseweb.harvard.edu/%7Eddl/articlesCopy/FischerTheoryCognDev1980W.pdf （研究室の写し。保存名の案手元の PDF） | 手元に保存した（写しの頁） |
+| Fischer, K. W. & Bidell, T. R. (2006). Dynamic development of action and thought. *Handbook of Child Psychology* (6th ed.) Vol. 1, 313–399. DOI 10.1002/9780470147658.chpsy0107 | https://web.archive.org/web/20060907132626/http://gseweb.harvard.edu/%7Eddl/articlesCopy/FischerBidellProofsCorrected.0706.pdf （研究室の写し。校正刷り。保存名の案手元の PDF） | 手元に保存した |
+| Maslow, A. H. (1943). A theory of human motivation. *Psychological Review* 50(4), 370–396. DOI 10.1037/h0054346 | http://psychclassics.yorku.ca/Maslow/motivation.htm （York University。HTML。誌面の頁の印あり。保存名の案手元のファイル） | 手元に保存した（HTML） |
+| Wood, D., Bruner, J. S. & Ross, G. (1976). The role of tutoring in problem solving. *Journal of Child Psychology and Psychiatry* 17(2), 89–100. DOI 10.1111/j.1469-7610.1976.tb00381.x | https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/j.1469-7610.1976.tb00381.x （Cloudflare の確認画面） | 自動では取れない |
 
-取ってきたファイルは、司令塔が手元の `cs/knowledge/raw/` に置きました（2026-11-09）。既にある行の直し（台帳に書き足した）：D23-S04 の取得先を、著者の研究室の写し（上の Rochat の節の Wayback の URL。journalpsyche.org の写しと MD5 が一致）に替え、raw-confirmed にする。D23-S11 は、Karger の PDF が 403 なので、PMC7050700 の記事の頁を取得先に足す。D23-S09 の年を「2015（早期公開 2014）」にする。
+取ってきたファイルは、司令塔が手元の原典の置き場に置きました（2026-11-09）。既にある行の直し（台帳に書き足した）：台帳の「Rochat 2003」の行の取得先を、著者の研究室の写し（上の Rochat の節の Wayback の URL。journalpsyche.org の写しと MD5 が一致）に替え、「手元に保存した」にする。台帳の「van Geert 2019」の行は、Karger の PDF が 403 なので、PMC7050700 の記事の頁を取得先に足す。台帳の「中間玲子ほか 2014」の行の年を「2015（早期公開 2014）」にする。
 
 ## ブラウザでの保存が要る PDF
 
-| 台帳の行 | 文献 | ダウンロード先 | 保存名の案 | 止まった理由と、保存できると何を確かめられるか |
-|---|---|---|---|---|
-| D23-S34（案） | Wood, Bruner & Ross (1976). *J. Child Psychol. Psychiatry* 17(2), 89–100 | https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/j.1469-7610.1976.tb00381.x | `D23_wood-bruner-ross_1976_role-of-tutoring.pdf` | Cloudflare の「Just a moment」の確認画面。OpenAlex は OA（出版社）と書く。scaffolding の語の定義（足場かけの六つの働き）と、子が自分でできるようになると助けを外すと書いてあるかを確かめられ、報告の「段階的撤去」の帰属を直せる |
-| D23-S11 | van Geert (2019). *Human Development* 63(3–4), 153–179 | https://www.karger.com/Article/Pdf/503825 | `D23_vangeert_2019_dynamic-systems-process-development.pdf` | 自動取得に 403（Karger）。PMC の記事の頁で読めたので、誌面の頁を控えたいときだけ要る |
-| D23-S22（案） | Tomasello ら (2005)。MPG PuRe の写し | https://hdl.handle.net/11858/00-001M-0000-0010-027E-A | （同じ文献を Wayback で読めたので不要） | Anubis の確認画面。研究所のサイトの Wayback の写しで読めたので、保存は急がない |
+自動で取れなかった原典のうち、ブラウザでの保存を頼むものは、作業の記録（[Issue #73](https://github.com/uminomae/project-design-theory/issues/73)）の表にまとめました。
 
 ## 手順について分かったこと
 
 - 研究室のサイトの写しは、今の URL が消えていても、Wayback Machine の CDX で研究室のドメインの PDF の一覧を引くと見つかりました（Indiana の cogdev・Harvard の ddl・Emory の Rochat・MPI EVA）。APA と Elsevier の壁の向こうの論文の多くは、この経路で読めました。
-- 台帳の取得先が個人のサイト（journalpsyche.org）だったものは、著者の研究室の写しと MD5 で比べ、同じファイルと確かめられました（D04 の行と同じ手順）。
+- 台帳の取得先が個人のサイト（journalpsyche.org）だったものは、著者の研究室の写しと MD5 で比べ、同じファイルと確かめられました（進化生物学の行と同じ手順）。
 - 授業の頁の Piaget 1964 は、文字の層の無い頁の画像で、読み取りの道具が無いので、頁の画像を一枚ずつ見て読みました。
 - 調べた跡の語が、言葉を替えて報告に入っていました（「欠損保持」→「不均衡を問いとして保持する」）。欠損・抱持の語を grep するだけでは見つからず、調べた跡の対比の語を報告と突き合わせて見つかりました。
-- 精読ノートの S04 は pp.717–725 だけを読んだと書き、報告の「アトラクタ」の帰属（p.728）を確かめていませんでした。精読ノートに無いことを原典に無いことと読まず、残りの頁を読むと確かめられました。
+- 精読ノートの「Rochat 2003」は pp.717–725 だけを読んだと書き、報告の「アトラクタ」の帰属（p.728）を確かめていませんでした。精読ノートに無いことを原典に無いことと読まず、残りの頁を読むと確かめられました。

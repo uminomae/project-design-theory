@@ -17,11 +17,15 @@
 //  5. 「判定」の列を持つ表：各行の判定が README の語（一致・言い過ぎ・取り違え・帰属違い・付け足し・抜け・未判定）で始まる。
 //  6. 論ごとの節（### で始まる節）：照合の状態の語が一つはある。本文照合済・要旨照合済と書く節には、
 //     確かめ先（DOI・URL・manifest の行）がある。
-//  7. 記録が引く manifest の行（Dxx-Snn）が cs/knowledge/raw/manifest.md にある。
+//  7. （2026-11-09 に外した）記録が引く manifest の行（Dxx-Snn）が台帳にあるか。本文に番号を書かなくなったので、10 に替えた。
 //  8. 手元の絶対パス（/Users/…）が無い。旧い判定の語（verified・accepted・plausible・Accept）を
 //     照合の状態や判定の欄に使っていない。
 //  9. 地の文（段落）の文末が「です・ます」。箇条書き・表・引用・見出しは見ない。
 //     「だ・である」の文末が地の文の 2 割を超えたら落とす。
+// 10. 本文（frontmatter とリンクの行き先・URL を除く）に、分野と原典の記号（D01・D30-S12 など）と、
+//     repo のパス・ファイル名（pjdhiro/assets/…・cs/knowledge/…・docs/…・*.md など）が無い。公開文に記号を出さない
+//     決まり（docs/rules/writing.md §6-3・§6-5）を、機械で止める（corrections の型 R の繰り返し。2026-11-09）。
+//     本文では、分野の名前と、著者・年・題で書く。台帳との対応は「台帳の「著者 年」の行」のように書く。
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -30,7 +34,6 @@ import { execSync } from 'node:child_process';
 const ROOT = execSync('git rev-parse --show-toplevel', { encoding: 'utf8' }).trim();
 const EVIDENCE_DIR = path.join(ROOT, 'cs', 'evidence');
 const REVIEWED = path.join(EVIDENCE_DIR, 'reviewed.json');
-const MANIFEST = path.join(ROOT, 'cs', 'knowledge', 'raw', 'manifest.md');
 const STATS = process.argv.includes('--stats');
 let OFFSET = 0; // 今見ている記録の frontmatter の行数
 
@@ -167,18 +170,20 @@ function checkRecord(file, domainId) {
       const hasStatus = STATUS_TERMS.some((t) => s.text.includes(t));
       if (!hasStatus) err(file, `節「${s.title}」（${s.lineNo} 行）に照合の状態の語が無い`);
       const claimsRead = /本文照合済|要旨照合済/.test(s.text);
-      const hasSource = /10\.\d{4,}\/|https?:\/\/|manifest D\d\d-S\d+|D\d\d-S\d+|PMC\d+/.test(s.text);
+      const hasSource = /10\.\d{4,}\/|https?:\/\/|台帳|の記録|PMC\d+/.test(s.text);
       if (claimsRead && !hasSource) err(file, `節「${s.title}」（${s.lineNo} 行）は本文・要旨照合済と書くが確かめ先（DOI・URL・manifest の行）が無い`);
       if (s.text.includes('精読ノートのみ')) err(file, `節「${s.title}」：「精読ノートのみ」は「二次資料のみ（精読ノート）」と書く`);
     }
   }
 
-  // 7. manifest の行
-  const manifest = fs.existsSync(MANIFEST) ? fs.readFileSync(MANIFEST, 'utf8') : '';
-  const ids = new Set(body.match(/\bD\d\d-S\d+\b/g) || []);
-  for (const id of ids) {
-    if (!new RegExp(`^\\| ${id} \\|`, 'm').test(manifest)) err(file, `台帳に無い行を引いている（${id}）`);
-  }
+  // 10. 記号とパス（リンクの行き先と URL は見ない）
+  lines.forEach((raw, i) => {
+    const line = raw.replace(/\]\([^)\s]*\)/g, ']()').replace(/https?:\/\/\S+/g, 'URL');
+    const code = line.match(/(?<![A-Za-z0-9])D(?:0[1-9]|[12]\d|30)(?:-S\d+[a-z]?)?(?!\d)/);
+    if (code) err(file, `${i + 1 + offset} 行に分野・原典の記号（${code[0]}）。分野の名前と、著者・年・題で書く`);
+    const p = line.match(/(?:pjdhiro\/assets|cs\/knowledge|cs\/evidence\/|cs\/transform|docs\/(?:rules|cs-review)|pd\/wiki|pd\/knowledge|source-notes|scripts\/)[^\s、。）]*|[\w.-]+\.(?:md|mjs|py|sh)\b/);
+    if (p) err(file, `${i + 1 + offset} 行に repo のパスかファイル名（${p[0]}）。読者に見える名前で書く`);
+  });
 
   // 9. 文末
   const sentences = proseSentences(lines);

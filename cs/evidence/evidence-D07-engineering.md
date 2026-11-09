@@ -10,23 +10,23 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D07-engin
 
 # 工学・情報科学：論ごとの照合の記録
 
-この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。工学と数学の記述が正しいかどうかは Claude が引き受けます（`docs/rules/sources.md` §1-4・§6）。
+この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。工学と数学の記述が正しいかどうかは Claude が引き受けます（調べ方の規約 §1-4・§6）。
 
 工学・情報科学の原典は、人が設計した系について、二つのものの兼ね合いと、その分かれ目の両側で何が起きるかを書いていました。Maxwell（1868）は、調速機の効きを強めていくと、ある限界で乱れが収まらず、激しさを増す振動に変わると書いています。Jacobson と Karels（1988）は、1986 年 10 月にインターネットの通信量が千分の一に落ちた「輻輳崩壊」から書き始め、待ち行列が指数で伸びる条件を式で示しています。Shannon（1948）は、情報源の速さが通信路の容量を下回れば誤りを任意に小さくでき、上回ればどんな符号でも曖昧さが残ると、分かれ目の両側を一つの定理に書いています。Sutton と Barto（2018）は、探索と活用のどちらか一方だけを追うと課題に失敗し、その兼ね合いは今も解けていないと書いています。Cunningham（1992）は、返されない技術的負債の重みで、開発の組織全体が止まりうると書いています。原典は、至らない形（発振・崩壊・誤りの残る通信・発散・停止・破られる暗号）を、論の中心に置いていました。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D07-engineering.md`、2026-03-18 に LLM が生成、以下「報告」）は、10 の論を取り上げ、日本語版では 3 を「強い対応」としています。報告は、どの論も「誤差を検出し、帰還させ、修正する」閉じた輪として読み、安定への収束を束に当てています。上の至らない形は、日本語版の本文にはほとんど出てきません。この記録は、報告の 10 の論を一次情報で確かめ直し、頑健さと脆さの兼ね合いを書いた Doyle と Csete（2011）を 11 番目の論として足したものです。フィードバック制御には Maxwell（1868）と Black（1934）、TCP には Chiu と Jain（1989）、強化学習には Sutton（1988）と Schultz ら（1997）、PDCA には Shewhart（1939）、リファクタリングには Cunningham（1992）を、同じ論の中の確かめ先として使いました。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
+今の公開報告（「30 領域調査報告」の工学・情報科学の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、10 の論を取り上げ、日本語版では 3 を「強い対応」としています。報告は、どの論も「誤差を検出し、帰還させ、修正する」閉じた輪として読み、安定への収束を束に当てています。上の至らない形は、日本語版の本文にはほとんど出てきません。この記録は、報告の 10 の論を一次情報で確かめ直し、頑健さと脆さの兼ね合いを書いた Doyle と Csete（2011）を 11 番目の論として足したものです。フィードバック制御には Maxwell（1868）と Black（1934）、TCP には Chiu と Jain（1989）、強化学習には Sutton（1988）と Schultz ら（1997）、PDCA には Shewhart（1939）、リファクタリングには Cunningham（1992）を、同じ論の中の確かめ先として使いました。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D07-engineering.md) にあります。退避版の判定（Accept・縁フラグ・rigor_type・温度帯）は、この記録の照合の状態の根拠にしていません。
 
 ## 読み方
 
-- 照合の状態は `docs/rules/sources.md` §3 の四つで書きます。著者や大学のサイトに置かれた写しで読んだものは、誰が置いた写しかを添えます。上げた人の分からない写しで読んだものは、読んだ頁を書いて「未照合」とします。
+- 照合の状態は調べ方の規約 §3 の四つで書きます。著者や大学のサイトに置かれた写しで読んだものは、誰が置いた写しかを添えます。上げた人の分からない写しで読んだものは、読んだ頁を書いて「未照合」とします。
 - 今の報告への判定は、一致・言い過ぎ・取り違え・帰属違い・付け足し・抜け・未判定で書きます。「抜け」は、原典にある衝突や至らない形を報告が落としていることです。
-- 「ja 98 行」は日本語版の行、「en」は英語版（`en/md/domain-D07-engineering.md`）、「pres」はプレゼン版（`ja/presentations/md/domain-D07-engineering-presentation-ja.md`）、「退避版」は上の History のファイル、「調べた跡」は `cs/evidence/investigation/D07-engineering/` の phase5〜7、「DR」は `cs/evidence/202602-deep-research-30domains-gpt/DR-D07-engineering.md` を指します。
+- 「ja 98 行」は日本語版の行、「en」は英語版（「30 領域調査報告」の工学・情報科学の英語版）、「pres」はプレゼン版（「30 領域調査報告」の工学・情報科学のプレゼン版）、「退避版」は上の History のファイル、「調べた跡」は、報告を作ったときの途中の出力（phase5〜7）の phase5〜7、「DR」は2026-02 の DRを指します。
 - 工学と数学の主張には、教科書（分野で確立した記述）・研究の一線（争いがある、または一つの研究が示した）・Claude の読み替え（5段階の問いに当てた解釈）のどれかを添えます。
 - この分野の理論は、人が設計した系の振る舞いを書いています。目標と、そこに至る仕組みを設計者が先に決めています。原典にある兼ね合いの多くは、設計者が選んだ目的（速さ・安定・公平・秘密）どうしの兼ね合いです。
 - 走査の画像だけの PDF（文字の層が無いもの）は、頁を画像にして読みました。その節に「走査の画像で読んだ」と書いています。Internet Archive の文字起こし（`_djvu.txt`）で読んだものは「OCR の文字で読んだ」と書いています。
-- 複雑系科学（D29）のネットワーク科学と、物理学（D02）の情報とエントロピーに重なる論は、この分野の報告にはありませんでした。Schultz ら（1997）は生命科学（D09）の台帳 D09-S07 と同じ論文です。
+- 複雑系科学（複雑系科学）のネットワーク科学と、物理学（物理学）の情報とエントロピーに重なる論は、この分野の報告にはありませんでした。Schultz ら（1997）は生命科学（生命科学）の台帳の「Schultz ら 1997」の行と同じ論文です。
 
 ## 一面の表
 
@@ -58,7 +58,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 - Maxwell, J. C. (1868). On Governors. *Proc. R. Soc. Lond.* 16, 270–283. DOI: [10.1098/rspl.1867.0055](https://doi.org/10.1098/rspl.1867.0055)（Crossref で題・頁を確かめました）。Royal Society の PDF は自動取得で確認画面（403）でした。Internet Archive の雑誌のマイクロフィルムの走査（https://archive.org/details/per_proceedings-of-the-royal-society-of-london_proceedings-of-the_june-6-1867-june-18-1868_16 ）の文字起こしで読みました。1868 年の刊行でパブリックドメインです。OCR の文字で読んだ頁：p.270（調速機は、駆動力や抵抗が変わっても機械の速さをほぼ一定に保つ部品）、p.271（機械の動きの乱れは、増え続ける・減り続ける・振幅の増す振動・振幅の減る振動の四つの成分に分けられる。一つ目と三つ目は動きの安定と両立せず、良い調速機で許されるのは二つ目と四つ目だけ。これはある方程式の根の実部がすべて負であることと同じ）、p.272（調整して調速の力を強め続けると、ある限界で乱れは早く収まる代わりに、激しさを増す振動とがくつく動きになる。Jenkin の調速機で実際に見えた）。
 - Black, H. S. (1934). Stabilized Feedback Amplifiers. *Bell Syst. Tech. J.* 13(1), 1–18. DOI: [10.1002/j.1538-7305.1934.tb00652.x](https://doi.org/10.1002/j.1538-7305.1934.tb00652.x)（Crossref で確かめました）。Internet Archive の BSTJ の写し（https://archive.org/details/bstj13-1-1 ）。Internet Archive の利用者が上げたもので、上げた人と権利は未確認です。PDF は走査の画像だけで、同じ資料の OCR の文字で読みました。読んだ頁：p.1（要旨。帰還で増幅の安定と変調の産物の減少が得られる。「鳴き」を避ける設計の原理を述べる）、p.2（帰還をこう使うのは簡単でない。増幅器と帰還の回路の位相のずれを、使う帯域の外まで特別に管理しなければならず、その関係が保たれないと鳴きが起きる）、pp.11–12（帰還の輪の利得が損失を上回り、位相のずれがゼロなら鳴くと思っていたが、実験はそれだけではないことを示し、Nyquist がより一般の判定を作った）。
-- Wiener, N. (1948). *Cybernetics*. 台帳 D07-S01。手元の PDF は、表紙と奥付で確かめると第 2 版（Copyright 1948 and 1961、MIT Press のペーパーバック 1965 年版の 1985 年の第 4 刷）です。台帳は出どころを「BG Agent 取得」としか書いておらず、上げた人の分からない写しとして扱います。PDF は走査の画像だけで、頁を画像にして読みました（走査の画像で読んだ）。頁は第 2 版の頁で、1948 年の初版とは合いません。読んだ頁：pp.7–8（序章。遅れのある条件で帰還が急すぎると、舵が行き過ぎ、逆向きの帰還でさらに行き過ぎ、激しい振動「ハンティング」になって壊れる。帰還が多すぎることは、帰還が欠けることと同じくらい組織だった動きの妨げになる。鉛筆を取ろうとして行き過ぎ、止められない振動に入る病気が企図振戦）、p.11（制御と通信の分野全体をサイバネティクスと呼ぶ。帰還の仕組みについての最初の重要な論文は Maxwell の 1868 年の調速機の論文）、pp.95–97（第 IV 章「帰還と振動」。運動失調の二人の患者。設計の悪い温度調節器は、家の温度を小脳の振戦に似た激しい振動に送り込む。Watt の調速機の帰還は、系がしていることに逆らう向きで負）、p.98（帰還の装置が誤って扱われたり負荷をかけすぎたりして振動に陥ることを、理論で扱う）。
+- Wiener, N. (1948). *Cybernetics*. 台帳に行がある。手元の PDF は、表紙と奥付で確かめると第 2 版（Copyright 1948 and 1961、MIT Press のペーパーバック 1965 年版の 1985 年の第 4 刷）です。台帳は出どころを「BG Agent 取得」としか書いておらず、上げた人の分からない写しとして扱います。PDF は走査の画像だけで、頁を画像にして読みました（走査の画像で読んだ）。頁は第 2 版の頁で、1948 年の初版とは合いません。読んだ頁：pp.7–8（序章。遅れのある条件で帰還が急すぎると、舵が行き過ぎ、逆向きの帰還でさらに行き過ぎ、激しい振動「ハンティング」になって壊れる。帰還が多すぎることは、帰還が欠けることと同じくらい組織だった動きの妨げになる。鉛筆を取ろうとして行き過ぎ、止められない振動に入る病気が企図振戦）、p.11（制御と通信の分野全体をサイバネティクスと呼ぶ。帰還の仕組みについての最初の重要な論文は Maxwell の 1868 年の調速機の論文）、pp.95–97（第 IV 章「帰還と振動」。運動失調の二人の患者。設計の悪い温度調節器は、家の温度を小脳の振戦に似た激しい振動に送り込む。Watt の調速機の帰還は、系がしていることに逆らう向きで負）、p.98（帰還の装置が誤って扱われたり負荷をかけすぎたりして振動に陥ることを、理論で扱う）。
 - Kalman, R. E. (1960). A New Approach to Linear Filtering and Prediction Problems. *J. Basic Eng.* 82(1), 35–45. DOI: [10.1115/1.3662552](https://doi.org/10.1115/1.3662552)（Crossref で確かめました）。ASME は有料です。イェール大学の授業の読み物の写し：https://www.cs.yale.edu/homes/yry/readings/general/Kalman1960.pdf 。打ち直しの版で、各頁の下に誌名と頁の範囲（35–45）があるだけで、誌面の頁番号はありません。授業用の写しで、権利は未確認です。読んだ頁：写しの p.1（要旨。雑音を含む過程の推定を状態遷移の方法で扱い直す。最適な推定の誤差の共分散の式を導く。フィルタの問題は、雑音の無い調節器の問題の双対）。
 
 **照合の状態**：Maxwell 1868 は本文照合済（OCR の文字で読んだ）。Kalman 1960 は本文照合済（授業用の写し、写しの p.1）。Wiener 1948 は未照合（上げた人の分からない第 2 版の写しで、上の頁を読みました）。Black 1934 は未照合（権利の確かめられない写しで、上の頁を読みました）。
@@ -86,7 +86,7 @@ Kalman（1960）は、帰還の輪そのものでなく、雑音を含む観測�
 
 **一次情報**：
 
-- Rumelhart, D. E., Hinton, G. E. & Williams, R. J. (1986). Learning representations by back-propagating errors. *Nature* 323(6088), 533–536. DOI: [10.1038/323533a0](https://doi.org/10.1038/323533a0)（Crossref で確かめました）。台帳 D07-S04。手元の PDF は Hinton のトロント大学のサイトの写し（https://www.cs.toronto.edu/~hinton/absps/naturebp.pdf ）と、バイト単位で同じでした。著者のサイトの写しで、誌面の走査です。文字の層が無いので、頁を画像にして読みました（走査の画像で読んだ）。読んだ頁：p.533（要旨。出力と望む出力の差の尺度を小さくするよう重みを繰り返し直す。隠れた素子が課題の大事な特徴を表すようになる）、p.535（式 8・9。全ての入出力の例について ∂E/∂w をためてから重みを変える。速さを変える加速の項 α を足す。変種は Parker と Le Cun も独立に見つけた。いちばん明らかな欠点は、誤差の面に局所解があり、勾配を下っても大域の最小に着く保証がないこと。実際には悪い局所解に止まることはごくまれで、そうなったのは課題をこなすのにちょうど足りる結合しかない網だけだった。結合を足すと、障壁を回る道ができる）、p.536（この手続きは脳の学習のもっともらしい模型ではない）。受理は 1986 年 7 月 31 日。
+- Rumelhart, D. E., Hinton, G. E. & Williams, R. J. (1986). Learning representations by back-propagating errors. *Nature* 323(6088), 533–536. DOI: [10.1038/323533a0](https://doi.org/10.1038/323533a0)（Crossref で確かめました）。台帳に行がある。手元の PDF は Hinton のトロント大学のサイトの写し（https://www.cs.toronto.edu/~hinton/absps/naturebp.pdf ）と、バイト単位で同じでした。著者のサイトの写しで、誌面の走査です。文字の層が無いので、頁を画像にして読みました（走査の画像で読んだ）。読んだ頁：p.533（要旨。出力と望む出力の差の尺度を小さくするよう重みを繰り返し直す。隠れた素子が課題の大事な特徴を表すようになる）、p.535（式 8・9。全ての入出力の例について ∂E/∂w をためてから重みを変える。速さを変える加速の項 α を足す。変種は Parker と Le Cun も独立に見つけた。いちばん明らかな欠点は、誤差の面に局所解があり、勾配を下っても大域の最小に着く保証がないこと。実際には悪い局所解に止まることはごくまれで、そうなったのは課題をこなすのにちょうど足りる結合しかない網だけだった。結合を足すと、障壁を回る道ができる）、p.536（この手続きは脳の学習のもっともらしい模型ではない）。受理は 1986 年 7 月 31 日。
 - Dauphin, Y. ら (2014). Identifying and attacking the saddle point problem in high-dimensional non-convex optimization. arXiv:1406.2572。要旨だけを arXiv の API で読みました（要旨：高次元の難しさは、局所解の多さより、高い誤差の台地に囲まれた鞍点の多さから来る）。
 
 **照合の状態**：Rumelhart ら 1986 は本文照合済（著者のサイトの写し pp.533・535–536。走査の画像で読んだ）。Dauphin ら 2014 は要旨照合済。Linnainmaa（1970）・Werbos（1974）・He ら（2016）は未照合です。
@@ -113,7 +113,7 @@ Kalman（1960）は、帰還の輪そのものでなく、雑音を含む観測�
 
 - Sutton, R. S. & Barto, A. G. (2018). *Reinforcement Learning: An Introduction*, 2nd ed. MIT Press. 著者のサイトの全文（http://incompleteideas.net/book/RLbook2020.pdf 。2020 年の訂正版。CC BY-NC-ND 2.0 と書かれている）。頁は書籍の頁です。読んだ頁：p.3（探索と活用の兼ね合い。どちらも、それだけを追うと課題に失敗する。数十年数学者に調べられてきたが、解けていない。教師ありの学習では、この問題そのものが起きない）、p.121（TD 誤差 δt＝Rt+1＋γV(St+1)−V(St) の定義）、p.264（§11.3 死の三つ組。関数近似・ブートストラップ・方策外の学習の三つがそろうと、不安定と発散の危険がある。二つだけなら避けられる）。
 - Sutton, R. S. (1988). Learning to predict by the methods of temporal differences. *Machine Learning* 3(1), 9–44. DOI: [10.1007/BF00115009](https://doi.org/10.1007/BF00115009)（Crossref で確かめました）。著者のサイトの写し（正誤表つき）：http://incompleteideas.net/papers/sutton-88-with-erratum.pdf 。誌面の頁です。読んだ頁：p.9（要旨。続く予測の差で学ぶ）、p.39（§6.4。終わりの無い予測には割引を入れ、続く予測の間の関係を式で書く）。
-- Schultz, W., Dayan, P. & Montague, P. R. (1997). A Neural Substrate of Prediction and Reward. *Science* 275(5306), 1593–1599. DOI: [10.1126/science.275.5306.1593](https://doi.org/10.1126/science.275.5306.1593)（Crossref で確かめました）。台帳 D07-S07 の取得先（utexas.edu）は 2026-11-09 に 502 を返し、落ちていました。共著者 Dayan のサイトの写し（http://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf ）は誌面の PDF でした。著者のサイトの写しです。読んだ頁：p.1593（予測を学んだあと、報酬への反応が手がかりの刺激へ移る）、p.1594（図 1。学習のあと、予測した報酬が来ないと、ドーパミン細胞の発火はちょうど報酬が来るはずだった時刻に下がる）。
+- Schultz, W., Dayan, P. & Montague, P. R. (1997). A Neural Substrate of Prediction and Reward. *Science* 275(5306), 1593–1599. DOI: [10.1126/science.275.5306.1593](https://doi.org/10.1126/science.275.5306.1593)（Crossref で確かめました）。台帳の「Schultz ら 1997」の行の取得先（utexas.edu）は 2026-11-09 に 502 を返し、落ちていました。共著者 Dayan のサイトの写し（http://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf ）は誌面の PDF でした。著者のサイトの写しです。読んだ頁：p.1593（予測を学んだあと、報酬への反応が手がかりの刺激へ移る）、p.1594（図 1。学習のあと、予測した報酬が来ないと、ドーパミン細胞の発火はちょうど報酬が来るはずだった時刻に下がる）。
 
 **照合の状態**：三つとも本文照合済（著者のサイトの写し）。Silver ら（2016・2017）と RLHF の記述は未照合です。
 
@@ -137,7 +137,7 @@ Kalman（1960）は、帰還の輪そのものでなく、雑音を含む観測�
 
 **一次情報**：
 
-- Jacobson, V. & Karels, M. J. (1988). Congestion Avoidance and Control. SIGCOMM '88, pp.314–329. DOI: [10.1145/52324.52356](https://doi.org/10.1145/52324.52356)（Crossref で頁を確かめました。Crossref の著者の欄は Jacobson だけですが、論文の題の下には Karels が並んでいます）。台帳 D07-S03 の OA の URL（dl.acm.org）は自動取得で確認画面（403）でした。ローレンス・バークレー研究所のサイトの写し（https://ee.lbl.gov/papers/congavoid.pdf ）は、1988 年 11 月の「ごくわずかに直した版」で、引くときは SIGCOMM の版を引くよう注に書かれています。著者の所属機関のサイトの写しです。頁は写しの頁です。読んだ頁：p.1（1986 年 10 月に最初の輻輳崩壊が起き、LBL と UC Berkeley の間の通信量は 32 Kbps から 40 bps に落ちた。窓で流す仕組みの「当たり前の」作り方が、混雑にちょうど間違った振る舞いをする）、p.2（パケットの保存の原理。それが破れる道は三つ）、p.8（脚注 5。輻輳崩壊は、再送の時計がまずいことによる正の帰還の不安定）、p.9（混んだ網では待ち行列が Li＝N＋γLi−1 で伸び、γ＞1 なら指数で伸びる。送り手が少なくとも同じ速さで絞らないと安定しない。窓を掛けて減らす。Jain の方法を写した）、p.10（加えて増やし掛けて減らす方針）、p.11（端の送り手の仕組みは容量を超えないようにはできるが、公平な分け方は保証できない。それができるのは流れが集まるゲートウェイだけ）。
+- Jacobson, V. & Karels, M. J. (1988). Congestion Avoidance and Control. SIGCOMM '88, pp.314–329. DOI: [10.1145/52324.52356](https://doi.org/10.1145/52324.52356)（Crossref で頁を確かめました。Crossref の著者の欄は Jacobson だけですが、論文の題の下には Karels が並んでいます）。台帳の「Jacobson 1988」の行の OA の URL（dl.acm.org）は自動取得で確認画面（403）でした。ローレンス・バークレー研究所のサイトの写し（https://ee.lbl.gov/papers/congavoid.pdf ）は、1988 年 11 月の「ごくわずかに直した版」で、引くときは SIGCOMM の版を引くよう注に書かれています。著者の所属機関のサイトの写しです。頁は写しの頁です。読んだ頁：p.1（1986 年 10 月に最初の輻輳崩壊が起き、LBL と UC Berkeley の間の通信量は 32 Kbps から 40 bps に落ちた。窓で流す仕組みの「当たり前の」作り方が、混雑にちょうど間違った振る舞いをする）、p.2（パケットの保存の原理。それが破れる道は三つ）、p.8（脚注 5。輻輳崩壊は、再送の時計がまずいことによる正の帰還の不安定）、p.9（混んだ網では待ち行列が Li＝N＋γLi−1 で伸び、γ＞1 なら指数で伸びる。送り手が少なくとも同じ速さで絞らないと安定しない。窓を掛けて減らす。Jain の方法を写した）、p.10（加えて増やし掛けて減らす方針）、p.11（端の送り手の仕組みは容量を超えないようにはできるが、公平な分け方は保証できない。それができるのは流れが集まるゲートウェイだけ）。
 - Chiu, D.-M. & Jain, R. (1989). Analysis of the increase and decrease algorithms for congestion avoidance in computer networks. *Computer Networks and ISDN Systems* 17(1), 1–14. DOI: [10.1016/0169-7552(89)90019-6](https://doi.org/10.1016/0169-7552(89)90019-6)（Crossref で確かめました）。Elsevier は有料です。Jain のワシントン大学のサイトの写し（https://www.cse.wustl.edu/~jain/papers/ftp/cong_av.pdf ）は誌面の走査で、文字の層が無いので頁を画像にして読みました（走査の画像で読んだ）。著者のサイトの写しです。読んだ頁：p.1（要旨。加えて増やし掛けて減らす単純な方法が、出発の状態によらず効率的で公平な状態に向かう十分条件を満たす）、p.5（公平さの指標。同じボトルネックを分ける利用者が等しい量を得るとき公平。帰還が二値なので、系は一つの定常の状態に落ち着かず、最適の状態の周りで振れる）、p.13（§5.1。実際には帰還に遅れがあり、遅れが長いと帰還は役に立たなくなり性能が落ちる。その評価は残った問い）。
 
 **照合の状態**：Jacobson & Karels 1988（LBL の写し）と Chiu & Jain 1989（著者のサイトの写し）は本文照合済。
@@ -160,7 +160,7 @@ Kalman（1960）は、帰還の輪そのものでなく、雑音を含む観測�
 
 **一次情報**：
 
-- Shannon, C. E. (1948). A Mathematical Theory of Communication. *Bell Syst. Tech. J.* 27(3), 379–423; 27(4), 623–656. DOI: [10.1002/j.1538-7305.1948.tb01338.x](https://doi.org/10.1002/j.1538-7305.1948.tb01338.x)・[10.1002/j.1538-7305.1948.tb00917.x](https://doi.org/10.1002/j.1538-7305.1948.tb00917.x)（Crossref で二つの部分を確かめました）。台帳 D07-S05。手元の PDF は、ハーバード大学数学科のサイトの写し（https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf ）とバイト単位で同じでした。冒頭に「Reprinted with corrections from The Bell System Technical Journal」とある訂正つきの再録（55 頁）で、頁は誌面の頁と合いません。大学のサイトの写しです。頁は写しの頁です。読んだ頁：p.1（通信の根本の問題は、ある点で選ばれた通報を別の点で再現すること。意味の面は工学の問題に関わらない）、p.15（言語の冗長とクロスワード。冗長がゼロならどの並びも文になり、多すぎると大きなクロスワードは作れない。50% でちょうど作れる）、p.22（定理 11。H≦C なら、誤りの頻度を任意に小さくする符号がある。H＞C なら、曖昧さを H−C より小さくする符号は無い）、p.24（定理 11 の証明は存在証明の欠点をいくらか持つ。証明の方法で理想の符号に近づこうとするのは一般に実用的でない。明示的な作り方は見つかっていない）、p.43（白色雑音の通信路の C＝W log((P＋N)/N)。それより速く送ると、どの符号でも誤りの頻度は正の値に残る）。
+- Shannon, C. E. (1948). A Mathematical Theory of Communication. *Bell Syst. Tech. J.* 27(3), 379–423; 27(4), 623–656. DOI: [10.1002/j.1538-7305.1948.tb01338.x](https://doi.org/10.1002/j.1538-7305.1948.tb01338.x)・[10.1002/j.1538-7305.1948.tb00917.x](https://doi.org/10.1002/j.1538-7305.1948.tb00917.x)（Crossref で二つの部分を確かめました）。台帳に行がある。手元の PDF は、ハーバード大学数学科のサイトの写し（https://people.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf ）とバイト単位で同じでした。冒頭に「Reprinted with corrections from The Bell System Technical Journal」とある訂正つきの再録（55 頁）で、頁は誌面の頁と合いません。大学のサイトの写しです。頁は写しの頁です。読んだ頁：p.1（通信の根本の問題は、ある点で選ばれた通報を別の点で再現すること。意味の面は工学の問題に関わらない）、p.15（言語の冗長とクロスワード。冗長がゼロならどの並びも文になり、多すぎると大きなクロスワードは作れない。50% でちょうど作れる）、p.22（定理 11。H≦C なら、誤りの頻度を任意に小さくする符号がある。H＞C なら、曖昧さを H−C より小さくする符号は無い）、p.24（定理 11 の証明は存在証明の欠点をいくらか持つ。証明の方法で理想の符号に近づこうとするのは一般に実用的でない。明示的な作り方は見つかっていない）、p.43（白色雑音の通信路の C＝W log((P＋N)/N)。それより速く送ると、どの符号でも誤りの頻度は正の値に残る）。
 - Hamming, R. W. (1950). Error Detecting and Error Correcting Codes. *Bell Syst. Tech. J.* 29(2), 147–160. DOI: [10.1002/j.1538-7305.1950.tb00463.x](https://doi.org/10.1002/j.1538-7305.1950.tb00463.x)（Crossref で確かめました）。Internet Archive の BSTJ の写し（https://archive.org/details/bstj29-2-147 ）。利用者が上げたもので、上げた人と権利は未確認です。OCR の文字で p.147（計算機では一つの故障が計算全体の失敗になる。電話局の並んだ道と違い、計算機は同じ装置を何度も通る一本の長い道）を読みました。
 
 **照合の状態**：Shannon 1948 は本文照合済（大学のサイトの写し。再録の頁）。Hamming 1950 は未照合（権利の確かめられない写しで p.147 を読みました）。Gallager（1962）と Berrou ら（1993）は未照合です。
@@ -184,7 +184,7 @@ Kalman（1960）は、帰還の輪そのものでなく、雑音を含む観測�
 
 **一次情報**：
 
-- Candès, E., Romberg, J. & Tao, T. (2006). Robust uncertainty principles: exact signal reconstruction from highly incomplete frequency information. *IEEE Trans. Inf. Theory* 52(2), 489–509. DOI: [10.1109/TIT.2005.862083](https://doi.org/10.1109/TIT.2005.862083)（Crossref で確かめました）。台帳 D07-S06。手元の PDF は arXiv:math/0409186v1（2004 年 9 月）と、バイト単位で同じでした。著者稿で、誌面の版とは違うことがあります。頁は arXiv の頁です。読んだ頁：p.1（要旨。台の大きさが観測した周波数の数を log N で割った値の定数倍以下なら、確率 1−O(N^−M) で ℓ1 最小化の解として元どおりになる。対数の因子を除いて条件は鋭い。凸最適化を解けばよい）、p.7（等間隔の櫛の形の信号は、倍数の周波数を除いた全ての周波数を観測しても、観測は全部ゼロになり、元どおりにならない。これは ℓ1 の問題ではなく、定理がどんな観測の数でもそのまま成り立つわけではないことを示す）、p.32（数値実験。|Ω|≧32 で |T|≦|Ω|/5 なら約 80%、|T|≦|Ω|/8 ならほぼ 100% 元どおりになる）。この版に「restricted isometry」の語はありませんでした。
+- Candès, E., Romberg, J. & Tao, T. (2006). Robust uncertainty principles: exact signal reconstruction from highly incomplete frequency information. *IEEE Trans. Inf. Theory* 52(2), 489–509. DOI: [10.1109/TIT.2005.862083](https://doi.org/10.1109/TIT.2005.862083)（Crossref で確かめました）。台帳に行がある。手元の PDF は arXiv:math/0409186v1（2004 年 9 月）と、バイト単位で同じでした。著者稿で、誌面の版とは違うことがあります。頁は arXiv の頁です。読んだ頁：p.1（要旨。台の大きさが観測した周波数の数を log N で割った値の定数倍以下なら、確率 1−O(N^−M) で ℓ1 最小化の解として元どおりになる。対数の因子を除いて条件は鋭い。凸最適化を解けばよい）、p.7（等間隔の櫛の形の信号は、倍数の周波数を除いた全ての周波数を観測しても、観測は全部ゼロになり、元どおりにならない。これは ℓ1 の問題ではなく、定理がどんな観測の数でもそのまま成り立つわけではないことを示す）、p.32（数値実験。|Ω|≧32 で |T|≦|Ω|/5 なら約 80%、|T|≦|Ω|/8 ならほぼ 100% 元どおりになる）。この版に「restricted isometry」の語はありませんでした。
 - Donoho, D. L. (2006). Compressed sensing. *IEEE Trans. Inf. Theory* 52(4), 1289–1306. DOI: [10.1109/TIT.2006.871582](https://doi.org/10.1109/TIT.2006.871582)（Crossref で確かめました）。IEEE は有料です。著者のスタンフォード大学の頁（statweb.stanford.edu）は 2026-11-09 に 502 を返し、落ちていました。web.stanford.edu の同じ道は 404 でした。
 
 **照合の状態**：Candès ら 2006 は本文照合済（arXiv の著者稿）。Donoho 2006 は未照合（取得先が落ちていた。日をおいて取り直す）。
@@ -207,7 +207,7 @@ Kalman（1960）は、帰還の輪そのものでなく、雑音を含む観測�
 
 **一次情報**：
 
-- Holland, J. H. (1975). *Adaptation in Natural and Artificial Systems*. University of Michigan Press. 台帳 D07-S08（blocked-access）。書籍で、著者や大学の公開版は見つかりませんでした。
+- Holland, J. H. (1975). *Adaptation in Natural and Artificial Systems*. University of Michigan Press. 台帳に行がある（自動では取れない）。書籍で、著者や大学の公開版は見つかりませんでした。
 - Holland, J. H. (1962). Outline for a Logical Theory of Adaptive Systems. *J. ACM* 9(3), 297–314. DOI: [10.1145/321127.321128](https://doi.org/10.1145/321127.321128)（Crossref で確かめました）。ACM の PDF は自動取得で確認画面（403）でした。
 - Holland の指導した De Jong の 1975 年の博士論文（遺伝的な適応の計画の振る舞い）は、ジョージ・メイソン大学の頁に走査が置かれていたと検索に出ましたが、その頁は大学の入口の頁へ送られ、取れませんでした。
 
@@ -234,7 +234,7 @@ Kalman（1960）は、帰還の輪そのものでなく、雑音を含む観測�
 - Moen, R. (2009). Foundation and History of the PDSA Cycle. Associates in Process Improvement。ウェールズ政府の Business Wales のサイトに置かれた PDF（https://businesswales.gov.wales/sites/main/files/documents/Foundation%20and%20the%20history%20of%20the%20PDSA%20cycle.pdf ）。2009 年の ANQ 東京大会の論文（Moen & Norman）をもとにした文書と書かれています。二次資料です。読んだ頁：p.3（Shewhart の 1939 年の輪。Deming が 1950 年に日本で直した輪）、p.4（Imai によれば、日本の経営者が 1950 年の JUSE のセミナーのデミングの輪を、計画・実行・評価・改善（PDCA）に作り直した。作った人の名は残っていない。1951 年の PDCA）、p.7（デミングは 1980 年に、QC サークルの計画・実行・評価・改善とデミングの輪は「互いに関係が無い」と答え、1990 年の手紙で「崩れたものである PDCA でなく PDSA と呼ぶように」と書いた）。
 - Moen, R. D. & Norman, C. L. (2010). Circling Back. *Quality Progress*（ASQ）。取れていません。
 - Deming, W. E. (1986). *Out of the Crisis*. MIT Press。書籍で、読んでいません。
-- ISO 9001:2015。台帳 D07-S02（blocked-access）。読んでいません。
+- ISO 9001:2015。台帳に行がある（自動では取れない）。読んでいません。
 
 **照合の状態**：Shewhart 1939 は本文照合済（パブリックドメイン。OCR の文字で読んだ）。PDCA の名の由来は二次資料のみ（Moen 2009）。Deming 1986 は未照合（書籍）。ISO 9001 は未照合です。
 
@@ -258,7 +258,7 @@ Kalman（1960）は、帰還の輪そのものでなく、雑音を含む観測�
 
 - Cunningham, W. (1992). The WyCash Portfolio Management System（OOPSLA '92 の経験報告）. *ACM SIGPLAN OOPS Messenger* 4(2), 29–30. DOI: [10.1145/157710.157715](https://doi.org/10.1145/157710.157715)（Crossref で確かめました）。著者のサイトの写し（http://c2.com/doc/oopsla92.html 、1992 年 3 月 26 日の日付）。HTML で頁が無いので、段落で控えました。読んだ所：終わりから二つ目の段落（初めてのコードを出すのは借金をすることに似ている。少しの借金は、すぐに書き直して返すかぎり開発を速める。危ないのは返さないとき。正しくないコードに費やす時間は利子に数えられる。組織全体が、まとめ直していない実装の負債の重さで止まりうる）、最後の段落（前もって全部払う考えに対して、少しずつ育てる開発は、できるが、いつも楽ではない）。
 - Opdyke, W. F. (1992). *Refactoring Object-Oriented Frameworks*. 博士論文、イリノイ大学アーバナ・シャンペーン校。大学のリポジトリ（IDEALS）の写しは学内の人だけに開かれています。研究仲間（Brian Foote）の個人のサイトの写し（https://www.laputan.org/pub/papers/opdyke-thesis.pdf ）で読みました。上げた人は著者でも大学でもなく、権利は未確認です。読んだ頁：p.iii（要旨。リファクタリングは前提の条件が満たされれば振る舞いを保つ。前提の条件のいくつかは一般には決められない）、p.4（どの変更も欠陥を入れる危険があることが、プログラムが直されない理由の一つ。安全に適用できても設計がよくなるとは限らず、勝手に選んだリファクタリングは設計をかえって崩しやすい）。
-- Fowler, M. (1999). *Refactoring*. Addison-Wesley. 台帳 D07-S09（blocked-access）。書籍で、読んでいません。
+- Fowler, M. (1999). *Refactoring*. Addison-Wesley. 台帳に行がある（自動では取れない）。書籍で、読んでいません。
 
 **照合の状態**：Cunningham 1992 は本文照合済（著者のサイトの写し。頁なし）。Opdyke 1992 は未照合（上げた人の分からない写しで pp.iii・4 を読みました）。Fowler 1999 は未照合（書籍）。
 
@@ -280,7 +280,7 @@ Kalman（1960）は、帰還の輪そのものでなく、雑音を含む観測�
 
 **一次情報**：
 
-- Diffie, W. & Hellman, M. E. (1976). New Directions in Cryptography. *IEEE Trans. Inf. Theory* IT-22(6), 644–654. DOI: [10.1109/TIT.1976.1055638](https://doi.org/10.1109/TIT.1976.1055638)（Crossref で確かめました）。台帳 D07-S10。手元の PDF は Hellman のスタンフォード大学のサイトの写し（https://ee.stanford.edu/~hellman/publications/24.pdf ）とバイト単位で同じでした。誌面の走査に OCR の文字の層がついたものです。著者のサイトの写しで、頁は誌面の頁です。読んだ頁：p.644（私たちは暗号の革命の入り口に立っている。前もって知り合っていない二人の私的な会話は商売でよくあるのに、鍵を物理的な手段で送るまで待たせるのは現実的でない）、pp.646–647（暗号を破る攻撃の分け方：暗号文だけ・既知の平文・選んだ平文）、p.649（mod q の指数を使う公開鍵の配送。この方法の安全は mod q の対数を計算する難しさに決定的に頼っており、log q の速さで解ける方法が見つかれば破られる。いまは知られている最良の解き方がほぼ最適だと仮定する）、p.653（公開鍵の方式も一方向の認証の方式も、無条件には安全になれない。公開の情報が秘密を有限の集合の中で一つに決めるので、計算に限りが無ければ総当たりで解ける）。
+- Diffie, W. & Hellman, M. E. (1976). New Directions in Cryptography. *IEEE Trans. Inf. Theory* IT-22(6), 644–654. DOI: [10.1109/TIT.1976.1055638](https://doi.org/10.1109/TIT.1976.1055638)（Crossref で確かめました）。台帳に行がある。手元の PDF は Hellman のスタンフォード大学のサイトの写し（https://ee.stanford.edu/~hellman/publications/24.pdf ）とバイト単位で同じでした。誌面の走査に OCR の文字の層がついたものです。著者のサイトの写しで、頁は誌面の頁です。読んだ頁：p.644（私たちは暗号の革命の入り口に立っている。前もって知り合っていない二人の私的な会話は商売でよくあるのに、鍵を物理的な手段で送るまで待たせるのは現実的でない）、pp.646–647（暗号を破る攻撃の分け方：暗号文だけ・既知の平文・選んだ平文）、p.649（mod q の指数を使う公開鍵の配送。この方法の安全は mod q の対数を計算する難しさに決定的に頼っており、log q の速さで解ける方法が見つかれば破られる。いまは知られている最良の解き方がほぼ最適だと仮定する）、p.653（公開鍵の方式も一方向の認証の方式も、無条件には安全になれない。公開の情報が秘密を有限の集合の中で一つに決めるので、計算に限りが無ければ総当たりで解ける）。
 
 **照合の状態**：本文照合済（著者のサイトの写し。誌面 pp.644・646–647・649・653）。RSA（1978）・PKI・TLS・量子鍵配送の記述は未照合です。
 
@@ -298,11 +298,11 @@ Kalman（1960）は、帰還の輪そのものでなく、雑音を含む観測�
 
 ### 11. 頑健さと脆さの兼ね合い（Doyle & Csete 2011。足した論）
 
-**要旨**：生き物の回路から技術の網まで、頑健な制御を組み込むほど、別のところに脆さが生まれる。その兼ね合いを、層や蝶ネクタイの形の構造が釣り合わせている、という論です。報告には無い論です。台帳の似た論文 D07-S12 の行にあり、本文に当たれて、兼ね合いと至らない形をはっきり書いているので、足しました（`docs/cs-review/README.md`「調査の手順」1）。
+**要旨**：生き物の回路から技術の網まで、頑健な制御を組み込むほど、別のところに脆さが生まれる。その兼ね合いを、層や蝶ネクタイの形の構造が釣り合わせている、という論です。報告には無い論です。台帳の似た論文の「Doyle & Csete 2011」の行にあり、本文に当たれて、兼ね合いと至らない形をはっきり書いているので、足しました（調べ方の計画と規約「調査の手順」1）。
 
 **一次情報**：
 
-- Doyle, J. C. & Csete, M. (2011). Architecture, constraints, and behavior. *PNAS* 108(Suppl. 3), 15624–15630. DOI: [10.1073/pnas.1103557108](https://doi.org/10.1073/pnas.1103557108)（Crossref で確かめました）。台帳 D07-S12。PMC の全文の頁（https://pmc.ncbi.nlm.nih.gov/articles/PMC3176601/ ）を HTML で読みました。頁が無いので節の名前で控えました。読んだ所：冒頭の節（頑健さと効率の兼ね合い・制約と、それを釣り合わせる制御系、その副作用としての脆さを扱う。回路と系の脆さは、頑健な制御を組み込むことの必然の帰結で、ただ両立するだけではない）、「Neuroscience and Robust Control」（平均で最適な制御は、ほかの不確かさには限りなく脆くなりうる。頑健な制御は、起きないこと（横滑り・失速・衝突・落ちたパケット）で分かる）、「Bowties, Hourglasses, Pathways, Flows, and Control」（共通の結び目のいちばんの脆さは、寄生体や捕食者に乗っ取られやすいこと。ウイルスは細胞の転写と翻訳を乗っ取る。報酬系のドーパミンは依存症に乗っ取られやすい）、「Hidden Complexity, Illusions, and Errors」（効率と頑健さ、ある乱れへの頑健さと別の乱れへの頑健さの兼ね合いは偶然でなく必然。人は環境への脆さを取り除き、自分で作った新しい破局の脆さに置き換えた）。
+- Doyle, J. C. & Csete, M. (2011). Architecture, constraints, and behavior. *PNAS* 108(Suppl. 3), 15624–15630. DOI: [10.1073/pnas.1103557108](https://doi.org/10.1073/pnas.1103557108)（Crossref で確かめました）。台帳に行がある。PMC の全文の頁（https://pmc.ncbi.nlm.nih.gov/articles/PMC3176601/ ）を HTML で読みました。頁が無いので節の名前で控えました。読んだ所：冒頭の節（頑健さと効率の兼ね合い・制約と、それを釣り合わせる制御系、その副作用としての脆さを扱う。回路と系の脆さは、頑健な制御を組み込むことの必然の帰結で、ただ両立するだけではない）、「Neuroscience and Robust Control」（平均で最適な制御は、ほかの不確かさには限りなく脆くなりうる。頑健な制御は、起きないこと（横滑り・失速・衝突・落ちたパケット）で分かる）、「Bowties, Hourglasses, Pathways, Flows, and Control」（共通の結び目のいちばんの脆さは、寄生体や捕食者に乗っ取られやすいこと。ウイルスは細胞の転写と翻訳を乗っ取る。報酬系のドーパミンは依存症に乗っ取られやすい）、「Hidden Complexity, Illusions, and Errors」（効率と頑健さ、ある乱れへの頑健さと別の乱れへの頑健さの兼ね合いは偶然でなく必然。人は環境への脆さを取り除き、自分で作った新しい破局の脆さに置き換えた）。
 
 **照合の状態**：本文照合済（PMC の全文。節で控えた）。
 
@@ -342,7 +342,7 @@ ja 88 行の「5件で部分的な対応」は、表の 6 件と合いません�
 | 公開鍵の配送 | 速い解き方が見つかれば破られる。無条件には安全でない（Diffie & Hellman pp.649・653） | 攻撃者の計算の力と、対数の難しさ |
 | 頑健さと脆さ | 乗っ取り（依存症・ウイルス）。新しい破局の脆さ（Doyle & Csete） | 兼ね合いは必然で、なくせない |
 
-D01〜D05・D29 と同じく、至らない形は原典の中心にありました。工学の原典は、設計者が避けたい形として至らない形を書き、どこまで攻めると至らない側に入るかの分かれ目を、式や数で示しています。
+数学〜地球科学・複雑系科学と同じく、至らない形は原典の中心にありました。工学の原典は、設計者が避けたい形として至らない形を書き、どこまで攻めると至らない側に入るかの分かれ目を、式や数で示しています。
 
 ### 横断の節は報告の作った分け方
 
@@ -350,7 +350,7 @@ D01〜D05・D29 と同じく、至らない形は原典の中心にありまし�
 
 ### テンプレート由来の表示
 
-「立ち位置明示」（3〜6 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6（構造再読）」「Phase 7（横断統合）」（30 行・38 行）、「方法論的開示（S60）」（44 行）、「温度帯の分布」（88 行）、「安全弁」（90〜92 行）、「結びの温度開示」「温度帯」（244〜248 行）、「Colophon」の generator_model（250〜260 行）。49 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（writing.md §1-1・§1-8）。pres 43 行の見出し「温度」、en の 3 節の終わりの「If these definitions already generate discomfort, that itself is an important perspective」（型 F）も同じです。D01〜D03・D22・D29 と同じく、テンプレートで一度に直します（`cs/transform/domains/reader-rules/reader-rules-creation.md`）。
+「立ち位置明示」（3〜6 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6（構造再読）」「Phase 7（横断統合）」（30 行・38 行）、「方法論的開示（S60）」（44 行）、「温度帯の分布」（88 行）、「安全弁」（90〜92 行）、「結びの温度開示」「温度帯」（244〜248 行）、「Colophon」の generator_model（250〜260 行）。49 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（書き方の規約 §1-1・§1-8）。pres 43 行の見出し「温度」、en の 3 節の終わりの「If these definitions already generate discomfort, that itself is an important perspective」（型 F）も同じです。数学〜化学・経営学・複雑系科学と同じく、テンプレートで一度に直します（旧い規則（創造とはの読み手の規則））。
 
 ### 誤りの出どころ
 
@@ -366,7 +366,7 @@ D01〜D05・D29 と同じく、至らない形は原典の中心にありまし�
 | 「産業制御の90%以上（Astrom & Hagglund 2006）」 | 退避版 31 行 |
 | テンプレートの表示 | 報告のテンプレート |
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 E（断定・看板・「最も」）：「5段階全段にわたる対応が確認されます」（102 行）、「この領域の最大の知見は」（240 行）、「5段階モデルの設計原理としての頑健性を示唆しています」（240 行）、en 86 行「This theory shows the most direct structural correspondence」、en 136 行「Shannon capacity is the purest formulation of Bundle」、en 198 行「unlikely to be a mere coincidence」、en 204 行「close to determinate」、pres 77 行「縁が持つ未決定性を工学的に最も鮮明に表現」。
 - 型 H（原典に無い体系）：「縁の3条件」（102 行、en 25〜29 行）、「束の分類学」の 6 つの型（202 行）、「5段階の入れ子構造」（208 行）。
@@ -376,65 +376,60 @@ D01〜D05・D29 と同じく、至らない形は原典の中心にありまし�
 
 ### 精読ノートと wiki・台帳の誤り（司令塔が直す）
 
-- 台帳 D07-S15（292 行）：Heylighen の年が 2025。PDF の頭書きは Received 18 December 2025・Published 13 March 2026・*Complexities* 2026, 2, 6 で、Crossref も 2026 年。精読ノート D07-S15 の 19 行は 2026 が正しいと書いている。同じ年は `pd/wiki/sources/D07_heylighen_2025_why-emergence-and-self.md` の 2・3・15・23 行と、手元の PDF の名前にもある。
-- 台帳 D07-S01（278 行）：題は 1948 年だが、手元の PDF は第 2 版（1961 年の版の 1985 年の第 4 刷）。出どころは「BG Agent 取得」としか書かれておらず、上げた人が分からない。
-- 台帳 D07-S03（280 行）：OA の URL（dl.acm.org）は 2026-11-09 に確認画面（403）を返した。LBL の写し（https://ee.lbl.gov/papers/congavoid.pdf ）は取れる。1988 年 11 月の改訂版であることを書き足す案。
-- 台帳 D07-S07（284 行）と D09-S07（323 行）：取得先（utexas.edu）は 2026-11-09 に 502 を返した。Dayan のサイトの写し（http://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf ）は誌面の PDF で取れる。
-- 台帳 D07-S05（282 行）：Harvard のサイトの写しは、1998 年の訂正つき再録（55 頁）で、頁は誌面の頁と合わない。精読ノート D07-S05 の 15〜16 行は誌面の頁を書くが、ノートの引用の頁（p.1・p.24 など）は再録の頁で、本文と合っていた。
-- 精読ノート D07-S07 の 7 行：「原典ページ数: 5 (pp.1593-1597)」。Crossref と写しでは pp.1593–1599（7 頁）。同じノートの 15 行は 1599 で正しい。
-- 精読ノート D07-S10 の 38 行：引用「We note that computing log mod q is in fact close to optimal…」は原文と違う。原文（p.649）は「For now we assume that the best known algorithm for computing logs mod q is in fact close to optimal and hence that q1/2 is a good measure of the problem's complexity, for a properly chosen q.」。見出しの主張 3（一方向関数とトラップドア）とも合っていない。
-- `pd/wiki/sources/D07_wiener_1948_cybernetics.md` 31 行：「情報とはエントロピーではなくネゲントロピーである」を Wiener の言葉のように書く。写しの p.11 には、情報の量はエントロピーの負だという書き方がある。「ネゲントロピー」の語が本にあるかは、全頁を見ていないので確かめていない（未判定）。
+- 台帳の「Heylighen 2026」の行（292 行）：Heylighen の年が 2025。PDF の頭書きは Received 18 December 2025・Published 13 March 2026・*Complexities* 2026, 2, 6 で、Crossref も 2026 年。精読ノート「Heylighen 2026」の 19 行は 2026 が正しいと書いている。同じ年はwiki の頁「Heylighen 2025」の 2・3・15・23 行と、手元の PDF の名前にもある。
+- 台帳の「Wiener 1948」の行（278 行）：題は 1948 年だが、手元の PDF は第 2 版（1961 年の版の 1985 年の第 4 刷）。出どころは「BG Agent 取得」としか書かれておらず、上げた人が分からない。
+- 台帳の「Jacobson 1988」の行（280 行）：OA の URL（dl.acm.org）は 2026-11-09 に確認画面（403）を返した。LBL の写し（https://ee.lbl.gov/papers/congavoid.pdf ）は取れる。1988 年 11 月の改訂版であることを書き足す案。
+- 台帳の「Schultz ら 1997」の行（284 行）と台帳の「Schultz ら 1997」の行（323 行）：取得先（utexas.edu）は 2026-11-09 に 502 を返した。Dayan のサイトの写し（http://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf ）は誌面の PDF で取れる。
+- 台帳の「Shannon 1948」の行（282 行）：Harvard のサイトの写しは、1998 年の訂正つき再録（55 頁）で、頁は誌面の頁と合わない。精読ノート「Shannon 1948」の 15〜16 行は誌面の頁を書くが、ノートの引用の頁（p.1・p.24 など）は再録の頁で、本文と合っていた。
+- 精読ノート「Schultz ら 1997」の 7 行：「原典ページ数: 5 (pp.1593-1597)」。Crossref と写しでは pp.1593–1599（7 頁）。同じノートの 15 行は 1599 で正しい。
+- 精読ノート「Diffie & Hellman 1976」の 38 行：引用「We note that computing log mod q is in fact close to optimal…」は原文と違う。原文（p.649）は「For now we assume that the best known algorithm for computing logs mod q is in fact close to optimal and hence that q1/2 is a good measure of the problem's complexity, for a properly chosen q.」。見出しの主張 3（一方向関数とトラップドア）とも合っていない。
+- wiki の頁「Wiener 1948」 31 行：「情報とはエントロピーではなくネゲントロピーである」を Wiener の言葉のように書く。写しの p.11 には、情報の量はエントロピーの負だという書き方がある。「ネゲントロピー」の語が本にあるかは、全頁を見ていないので確かめていない（未判定）。
 
-読んだ所では、精読ノート D07-S03（Jacobson）・S04（Rumelhart）・S05（Shannon）・S06（Candès ら）の引用は、原典の文と合っていました。
+読んだ所では、精読ノート「Jacobson 1988」・「Rumelhart ら 1986」・「Shannon 1948」・「Candes ら 2006」（Candès ら）の引用は、原典の文と合っていました。
 
 ## 判断が要るもの
 
-pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは `docs/cs-review/README.md` の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
+pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは調べ方の計画と規約の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
 
 - Wiener（1948）の手元の PDF は、出どころの分からない第 2 版の写しなので、読んだ頁を書いて「未照合」としました（「規約で決めたこと」の上げた人の分からない写しの行）。同じ論は、パブリックドメインの Maxwell（1868）で本文に当たれたので、論の照合の状態は本文照合済にしています。予想：pjdhiro も同じ扱いを選ぶ見込みです（stance 2-6 誠実さ）。
 - Kalman（1960）は、イェール大学の授業の読み物の写しで読みました。打ち直しの版で誌面の頁が無いので、写しの頁で控え、本文照合済にしました（「規約で決めたこと」2026-11-09 の授業用の写しの行）。
-- BSTJ の論文（Black 1934・Hamming 1950）は、Internet Archive の利用者が上げた写ししか見つからず、「未照合」として読んだ頁を書きました。Alcatel-Lucent がかつて自分のサイトで BSTJ を公開していたので、その記録が Wayback Machine に残っていれば、出所の書ける写しとして本文照合済に上げられます（「規約で決めたこと」2026-11-09 の D04 の行）。試していません。
+- BSTJ の論文（Black 1934・Hamming 1950）は、Internet Archive の利用者が上げた写ししか見つからず、「未照合」として読んだ頁を書きました。Alcatel-Lucent がかつて自分のサイトで BSTJ を公開していたので、その記録が Wayback Machine に残っていれば、出所の書ける写しとして本文照合済に上げられます（「規約で決めたこと」2026-11-09 の進化生物学の行）。試していません。
 - Doyle と Csete（2011）を論として足しました。報告の論が書籍だけで欠けた分の穴埋めではなく、本文に当たれて、兼ね合いと至らない形をはっきり書いているからです（README「調査の手順」1）。予想：pjdhiro は、似た論文を数のために並べないという決めの範囲と見る見込みです。外すなら、論 1 と論 3 の節に確かめ先として移せます。
 - 報告の「設計原理としての独立の証拠類型」（ja 198・240 行）は、問いとして立てず、設計者の意図が入る点を「読み方」の一行と各節に書くにとどめました（中心の問いは、分野に合否を付けず一面を並べること）。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-manifest は書き換えていません。番号は台帳と同じ形で、D07-S16 から振りました。
+台帳は書き換えていません。
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D07-S16 | Maxwell, J. C. (1868). On Governors. *Proc. R. Soc. Lond.* 16, 270–283. DOI 10.1098/rspl.1867.0055 | https://archive.org/details/per_proceedings-of-the-royal-society-of-london_proceedings-of-the_june-6-1867-june-18-1868_16 （パブリックドメイン。OCR の文字で読んだ）。Royal Society の PDF は確認画面 | url-verified |
-| D07-S17 | Kalman, R. E. (1960). A New Approach to Linear Filtering and Prediction Problems. *J. Basic Eng.* 82(1), 35–45. DOI 10.1115/1.3662552 | https://www.cs.yale.edu/homes/yry/readings/general/Kalman1960.pdf （授業用の写し。打ち直し） | url-verified（授業用の写し） |
-| D07-S18 | Black, H. S. (1934). Stabilized Feedback Amplifiers. *Bell Syst. Tech. J.* 13(1), 1–18. DOI 10.1002/j.1538-7305.1934.tb00652.x | https://archive.org/details/bstj13-1-1 （利用者が上げた写し。権利は未確認） | citation-only（写しで読んだ） |
-| D07-S19 | Hamming, R. W. (1950). Error Detecting and Error Correcting Codes. *Bell Syst. Tech. J.* 29(2), 147–160. DOI 10.1002/j.1538-7305.1950.tb00463.x | https://archive.org/details/bstj29-2-147 （利用者が上げた写し。権利は未確認） | citation-only（写しで読んだ） |
-| D07-S20 | Chiu, D.-M. & Jain, R. (1989). Analysis of the increase and decrease algorithms for congestion avoidance in computer networks. *Computer Networks and ISDN Systems* 17(1), 1–14. DOI 10.1016/0169-7552(89)90019-6 | https://www.cse.wustl.edu/~jain/papers/ftp/cong_av.pdf （著者のサイトの写し。走査の画像） | url-verified（著者の写し） |
-| D07-S21 | Sutton, R. S. & Barto, A. G. (2018). *Reinforcement Learning: An Introduction*, 2nd ed. MIT Press | http://incompleteideas.net/book/RLbook2020.pdf （著者のサイト。CC BY-NC-ND 2.0） | url-verified（著者の公開版） |
-| D07-S22 | Sutton, R. S. (1988). Learning to predict by the methods of temporal differences. *Machine Learning* 3(1), 9–44. DOI 10.1007/BF00115009 | http://incompleteideas.net/papers/sutton-88-with-erratum.pdf （著者のサイトの写し） | url-verified（著者の写し） |
-| D07-S23 | Donoho, D. L. (2006). Compressed sensing. *IEEE Trans. Inf. Theory* 52(4), 1289–1306. DOI 10.1109/TIT.2006.871582 | IEEE（有料）。著者のスタンフォードの頁は 2026-11-09 に 502 | citation-only |
-| D07-S24 | Holland, J. H. (1962). Outline for a Logical Theory of Adaptive Systems. *J. ACM* 9(3), 297–314. DOI 10.1145/321127.321128 | ACM（自動取得で確認画面） | citation-only |
-| D07-S25 | Shewhart, W. A. (1939). *Statistical Method from the Viewpoint of Quality Control*. Washington: The Graduate School, The Department of Agriculture | https://archive.org/details/CAT10502416 （米国農務省国立農業図書館の資料。パブリックドメイン） | url-verified |
-| D07-S26 | Moen, R. (2009). Foundation and History of the PDSA Cycle. Associates in Process Improvement | https://businesswales.gov.wales/sites/main/files/documents/Foundation%20and%20the%20history%20of%20the%20PDSA%20cycle.pdf （政府のサイトに置かれた写し。二次資料） | url-verified（二次資料） |
-| D07-S27 | Deming, W. E. (1986). *Out of the Crisis*. MIT Press | 書籍 | citation-only |
-| D07-S28 | Opdyke, W. F. (1992). *Refactoring Object-Oriented Frameworks*. PhD thesis, University of Illinois at Urbana-Champaign | https://www.laputan.org/pub/papers/opdyke-thesis.pdf （個人のサイトの写し。権利は未確認）。IDEALS は学内だけ | citation-only（写しで読んだ） |
-| D07-S29 | Cunningham, W. (1992). The WyCash Portfolio Management System. *ACM SIGPLAN OOPS Messenger* 4(2), 29–30. DOI 10.1145/157710.157715 | http://c2.com/doc/oopsla92.html （著者のサイト） | url-verified（著者の写し） |
-| D07-S30 | Dauphin, Y. ら (2014). Identifying and attacking the saddle point problem in high-dimensional non-convex optimization. arXiv:1406.2572 | https://arxiv.org/abs/1406.2572 （要旨だけ読んだ） | url-verified（要旨） |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| Maxwell, J. C. (1868). On Governors. *Proc. R. Soc. Lond.* 16, 270–283. DOI 10.1098/rspl.1867.0055 | https://archive.org/details/per_proceedings-of-the-royal-society-of-london_proceedings-of-the_june-6-1867-june-18-1868_16 （パブリックドメイン。OCR の文字で読んだ）。Royal Society の PDF は確認画面 | 取得先を確かめた |
+| Kalman, R. E. (1960). A New Approach to Linear Filtering and Prediction Problems. *J. Basic Eng.* 82(1), 35–45. DOI 10.1115/1.3662552 | https://www.cs.yale.edu/homes/yry/readings/general/Kalman1960.pdf （授業用の写し。打ち直し） | 取得先を確かめた（授業用の写し） |
+| Black, H. S. (1934). Stabilized Feedback Amplifiers. *Bell Syst. Tech. J.* 13(1), 1–18. DOI 10.1002/j.1538-7305.1934.tb00652.x | https://archive.org/details/bstj13-1-1 （利用者が上げた写し。権利は未確認） | 書誌だけ（写しで読んだ） |
+| Hamming, R. W. (1950). Error Detecting and Error Correcting Codes. *Bell Syst. Tech. J.* 29(2), 147–160. DOI 10.1002/j.1538-7305.1950.tb00463.x | https://archive.org/details/bstj29-2-147 （利用者が上げた写し。権利は未確認） | 書誌だけ（写しで読んだ） |
+| Chiu, D.-M. & Jain, R. (1989). Analysis of the increase and decrease algorithms for congestion avoidance in computer networks. *Computer Networks and ISDN Systems* 17(1), 1–14. DOI 10.1016/0169-7552(89)90019-6 | https://www.cse.wustl.edu/~jain/papers/ftp/cong_av.pdf （著者のサイトの写し。走査の画像） | 取得先を確かめた（著者の写し） |
+| Sutton, R. S. & Barto, A. G. (2018). *Reinforcement Learning: An Introduction*, 2nd ed. MIT Press | http://incompleteideas.net/book/RLbook2020.pdf （著者のサイト。CC BY-NC-ND 2.0） | 取得先を確かめた（著者の公開版） |
+| Sutton, R. S. (1988). Learning to predict by the methods of temporal differences. *Machine Learning* 3(1), 9–44. DOI 10.1007/BF00115009 | http://incompleteideas.net/papers/sutton-88-with-erratum.pdf （著者のサイトの写し） | 取得先を確かめた（著者の写し） |
+| Donoho, D. L. (2006). Compressed sensing. *IEEE Trans. Inf. Theory* 52(4), 1289–1306. DOI 10.1109/TIT.2006.871582 | IEEE（有料）。著者のスタンフォードの頁は 2026-11-09 に 502 | 書誌だけ |
+| Holland, J. H. (1962). Outline for a Logical Theory of Adaptive Systems. *J. ACM* 9(3), 297–314. DOI 10.1145/321127.321128 | ACM（自動取得で確認画面） | 書誌だけ |
+| Shewhart, W. A. (1939). *Statistical Method from the Viewpoint of Quality Control*. Washington: The Graduate School, The Department of Agriculture | https://archive.org/details/CAT10502416 （米国農務省国立農業図書館の資料。パブリックドメイン） | 取得先を確かめた |
+| Moen, R. (2009). Foundation and History of the PDSA Cycle. Associates in Process Improvement | https://businesswales.gov.wales/sites/main/files/documents/Foundation%20and%20the%20history%20of%20the%20PDSA%20cycle.pdf （政府のサイトに置かれた写し。二次資料） | 取得先を確かめた（二次資料） |
+| Deming, W. E. (1986). *Out of the Crisis*. MIT Press | 書籍 | 書誌だけ |
+| Opdyke, W. F. (1992). *Refactoring Object-Oriented Frameworks*. PhD thesis, University of Illinois at Urbana-Champaign | https://www.laputan.org/pub/papers/opdyke-thesis.pdf （個人のサイトの写し。権利は未確認）。IDEALS は学内だけ | 書誌だけ（写しで読んだ） |
+| Cunningham, W. (1992). The WyCash Portfolio Management System. *ACM SIGPLAN OOPS Messenger* 4(2), 29–30. DOI 10.1145/157710.157715 | http://c2.com/doc/oopsla92.html （著者のサイト） | 取得先を確かめた（著者の写し） |
+| Dauphin, Y. ら (2014). Identifying and attacking the saddle point problem in high-dimensional non-convex optimization. arXiv:1406.2572 | https://arxiv.org/abs/1406.2572 （要旨だけ読んだ） | 取得先を確かめた（要旨） |
 
 既存の行に書き足す案：
 
-- D07-S01（Wiener）：手元の PDF は第 2 版（1961 年の版の 1985 年の第 4 刷）。出どころ不明。
-- D07-S03（Jacobson）：著者に Karels を足す。取れる写しは LBL の 1988 年 11 月の改訂版。ACM は確認画面。
-- D07-S04（Rumelhart ら）・D07-S05（Shannon）・D07-S06（Candès ら）・D07-S10（Diffie & Hellman）：手元の PDF が、それぞれ Hinton・ハーバード大学数学科・arXiv・Hellman のサイトのファイルとバイト単位で同じことを確かめた。Shannon は 1998 年の訂正つき再録。
-- D07-S07（Schultz ら）：utexas.edu は 502。Dayan のサイトの写しを取得先に足す。D09-S07 も同じ。
-- D07-S15（Heylighen）：年を 2026 に。
+- 台帳の「Wiener 1948」の行（Wiener）：手元の PDF は第 2 版（1961 年の版の 1985 年の第 4 刷）。出どころ不明。
+- 台帳の「Jacobson 1988」の行（Jacobson）：著者に Karels を足す。取れる写しは LBL の 1988 年 11 月の改訂版。ACM は確認画面。
+- 台帳の「Rumelhart ら 1986」の行（Rumelhart ら）・台帳の「Shannon 1948」の行（Shannon）・台帳の「Candes ら 2006」の行（Candès ら）・台帳の「Diffie & Hellman 1976」の行（Diffie & Hellman）：手元の PDF が、それぞれ Hinton・ハーバード大学数学科・arXiv・Hellman のサイトのファイルとバイト単位で同じことを確かめた。Shannon は 1998 年の訂正つき再録。
+- 台帳の「Schultz ら 1997」の行（Schultz ら）：utexas.edu は 502。Dayan のサイトの写しを取得先に足す。台帳の「Schultz ら 1997」の行も同じ。
+- 台帳の「Heylighen 2026」の行（Heylighen）：年を 2026 に。
 
 ## ブラウザでの保存が要る PDF
 
-| 台帳の行 | 文献 | ダウンロード先 | 保存名の案 |
-|---|---|---|---|
-| D07-S24（案） | Holland (1962) *J. ACM* 9, 297 | https://dl.acm.org/doi/pdf/10.1145/321127.321128 | `D07_holland_1962_logical-theory-adaptive-systems.pdf` |
-| D07-S03 | Jacobson & Karels (1988) SIGCOMM '88（誌面の版） | https://dl.acm.org/doi/pdf/10.1145/52324.52356 | `D07_jacobson-karels_1988_congestion-avoidance-control.pdf` |
-| D07-S23（案） | Donoho (2006) *IEEE TIT* 52, 1289 | 著者のスタンフォードの頁（2026-11-09 は 502 で落ちていた。日をおいて取り直す）、または https://doi.org/10.1109/TIT.2006.871582 | `D07_donoho_2006_compressed-sensing.pdf` |
-| D07-S16（案） | Maxwell (1868) *Proc. R. Soc.* 16, 270（Royal Society の版） | https://royalsocietypublishing.org/doi/pdf/10.1098/rspl.1867.0055 | `D07_maxwell_1868_on-governors.pdf` |
+自動で取れなかった原典のうち、ブラウザでの保存を頼むものは、作業の記録（[Issue #73](https://github.com/uminomae/project-design-theory/issues/73)）の表にまとめました。
 
 ## 手順について分かったこと
 

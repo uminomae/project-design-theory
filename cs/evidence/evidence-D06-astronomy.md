@@ -10,22 +10,22 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D06-astro
 
 # 天文学・宇宙物理学：論ごとの照合の記録
 
-この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。天文学と物理の記述が正しいかどうかは Claude が引き受けます（`docs/rules/sources.md` §1-4・§6）。
+この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。天文学と物理の記述が正しいかどうかは Claude が引き受けます（調べ方の規約 §1-4・§6）。
 
 天文学の原典の多くは、重力と、それに逆らう圧力（熱・回転・磁気・放射）の兼ね合いを書き、その兼ね合いが崩れる分かれ目を式で示していました。Jeans（1902）は、星雲の各部分は重力で引き合い、気体の弾性で離されると書き、二つの力の比で安定と不安定が分かれるとしています。White と Rees（1978）は、ハローの中のガスが冷える時間と、落ち込む時間を比べ、冷える時間のほうが長いとガスは衝撃で熱せられたままになり、銀河にまとまりにくいと書いています。Balbus と Hawley（1991）は、磁場が流体を同じ角速度で回らせようとすることが不安定の芯で、磁場が強すぎると逆に安定になると書いています。Pollack ら（1996）は、ガスの円盤が消えるまでにガスの暴走的な降着に届かなかった惑星を、天王星と海王星の形成の筋書きとして書いています。Lynden-Bell と Wood（1968）は、自分の重力でまとまる系は比熱が負で、熱を失うほど熱くなり、平衡から離れて暴走すると書いています。原典は、至らない形（散る雲、冷えきらずに熱いまま残るガス、円盤が消えて止まる惑星、壊れる軟らかい連星、暴走する中心）を、論の中で分かれ目の片側として書いていました。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D06-astronomy.md`、2026-03-18 に LLM が生成、以下「報告」）は、10 の論を取り上げ、日本語版では 8 を「強い対応」、2 を「条件付きの対応」としています。英語版は 10 すべてを「strong」、プレゼン版は「強い対応 9・部分的な対応 1」としていて、版ごとに数が違います。報告は「10件すべてが5段階との対応が認められる事例」と書き（ja 208 行）、5段階に当てはまらない事例は「負の事例の探索不足」として未解決の問いに置いています。この記録は、報告の 10 の論を一次情報で確かめ直したものです。論の数は変えていません。原典の版は、ハーバード・スミソニアン天体物理学センターの天体物理データシステム（ADS）が出版社の許諾で置く誌面の走査、arXiv の著者稿、出版社の公開版を使いました。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
+今の公開報告（「30 領域調査報告」の天文学・宇宙物理学の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、10 の論を取り上げ、日本語版では 8 を「強い対応」、2 を「条件付きの対応」としています。英語版は 10 すべてを「strong」、プレゼン版は「強い対応 9・部分的な対応 1」としていて、版ごとに数が違います。報告は「10件すべてが5段階との対応が認められる事例」と書き（ja 208 行）、5段階に当てはまらない事例は「負の事例の探索不足」として未解決の問いに置いています。この記録は、報告の 10 の論を一次情報で確かめ直したものです。論の数は変えていません。原典の版は、ハーバード・スミソニアン天体物理学センターの天体物理データシステム（ADS）が出版社の許諾で置く誌面の走査、arXiv の著者稿、出版社の公開版を使いました。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D06-astronomy.md) にあります。退避版の判定（Accept・confidence・triage）は、この記録の照合の状態の根拠にしていません。
 
 ## 読み方
 
-- 照合の状態は `docs/rules/sources.md` §3 の四つで書きます。arXiv の著者稿で読んだものは「著者稿」と添え、頁は著者稿の頁と書きます。ADS の走査は、出版社の許諾で置かれた誌面の写しとして、性格を添えて本文照合済にしています。
+- 照合の状態は調べ方の規約 §3 の四つで書きます。arXiv の著者稿で読んだものは「著者稿」と添え、頁は著者稿の頁と書きます。ADS の走査は、出版社の許諾で置かれた誌面の写しとして、性格を添えて本文照合済にしています。
 - 今の報告への判定は、一致・言い過ぎ・取り違え・帰属違い・付け足し・抜け・未判定で書きます。「抜け」は、原典にある衝突や至らない形を報告が落としていることです。
-- 「ja 100 行」は日本語版の行、「en」は英語版（`en/md/domain-D06-astronomy.md`）、「pres」はプレゼン版（`ja/presentations/md/domain-D06-astronomy-presentation-ja.md`）、「退避版」は上の History のファイル、「調べた跡」は `cs/evidence/investigation/D06-astronomy/` の phase5〜7 を指します。
+- 「ja 100 行」は日本語版の行、「en」は英語版（「30 領域調査報告」の天文学・宇宙物理学の英語版）、「pres」はプレゼン版（「30 領域調査報告」の天文学・宇宙物理学のプレゼン版）、「退避版」は上の History のファイル、「調べた跡」は、報告を作ったときの途中の出力（phase5〜7）の phase5〜7 を指します。
 - 天文学と物理の主張には、教科書（分野で確立した記述）・研究の一線（争いがある、または一つの研究が示した）・Claude の読み替え（5段階の問いに当てた解釈）のどれかを添えます。
-- 物理学（D02）の古典核生成（臨界の大きさより小さい核は消える）は、ジーンズの不安定と同じ形の分かれ目を持ちます。読み直さず、[物理学の記録](evidence-D02-physics.md)の 10 を参照しています。報告は自己組織化臨界（D29）を太陽の論に使っていないので、[複雑系科学の記録](evidence-D29-complexity-science.md)とは重なりません。
-- 語が同じこと（物理の渦と5段階の「渦」、衝撃波と「波」、不連続面と「縁」）は、対応の根拠にも反証にも数えません（`docs/cs-review/README.md`「規約で決めたこと」）。
+- 物理学（物理学）の古典核生成（臨界の大きさより小さい核は消える）は、ジーンズの不安定と同じ形の分かれ目を持ちます。読み直さず、[物理学の記録](evidence-D02-physics.md)の 10 を参照しています。報告は自己組織化臨界（複雑系科学）を太陽の論に使っていないので、[複雑系科学の記録](evidence-D29-complexity-science.md)とは重なりません。
+- 語が同じこと（物理の渦と5段階の「渦」、衝撃波と「波」、不連続面と「縁」）は、対応の根拠にも反証にも数えません（調べ方の計画と規約「規約で決めたこと」）。
 
 ## 一面の表
 
@@ -54,7 +54,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Jeans, J. H. (1902). The Stability of a Spherical Nebula. *Phil. Trans. R. Soc. A* 199, 1–53. DOI: [10.1098/rsta.1902.0012](https://doi.org/10.1098/rsta.1902.0012)（Crossref で題・巻・頁を確かめました）。台帳 D06-S01。手元の PDF は Royal Society の誌面で、1902 年の刊行なのでパブリックドメインです。読んだ頁：p.2（§2。液体では重力が安定に、回転が不安定に働く。圧縮できる気体では、重力が不安定に働くことがあり、安定に働くのは気体の弾性）、pp.32–33（安定の関数。安定かどうかは密度と弾性の比で決まる。「The different elements of the nebula are attracted towards one another by their mutual gravitation, and are kept apart by the elasticity of the gas.」p.33）、p.50（§46。一様な媒質では、ある点のまわりへの物質の集中が、始めのうち時間とともに指数的に増える。一様な分布は不安定）、p.51（§47–48。物質は密度の極大のまわりの星雲の群れになる。星雲の間隔は、重力定数・平均の密度・平均の弾性の組み合わせだけで決まる）、p.52（定量でなく定性の結果をねらったと書く）。
+- Jeans, J. H. (1902). The Stability of a Spherical Nebula. *Phil. Trans. R. Soc. A* 199, 1–53. DOI: [10.1098/rsta.1902.0012](https://doi.org/10.1098/rsta.1902.0012)（Crossref で題・巻・頁を確かめました）。台帳に行がある。手元の PDF は Royal Society の誌面で、1902 年の刊行なのでパブリックドメインです。読んだ頁：p.2（§2。液体では重力が安定に、回転が不安定に働く。圧縮できる気体では、重力が不安定に働くことがあり、安定に働くのは気体の弾性）、pp.32–33（安定の関数。安定かどうかは密度と弾性の比で決まる。「The different elements of the nebula are attracted towards one another by their mutual gravitation, and are kept apart by the elasticity of the gas.」p.33）、p.50（§46。一様な媒質では、ある点のまわりへの物質の集中が、始めのうち時間とともに指数的に増える。一様な分布は不安定）、p.51（§47–48。物質は密度の極大のまわりの星雲の群れになる。星雲の間隔は、重力定数・平均の密度・平均の弾性の組み合わせだけで決まる）、p.52（定量でなく定性の結果をねらったと書く）。
 - Burbidge, E. M., Burbidge, G. R., Fowler, W. A. & Hoyle, F. (1957). Synthesis of the Elements in Stars. *Rev. Mod. Phys.* 29(4), 547–650. DOI: [10.1103/RevModPhys.29.547](https://doi.org/10.1103/RevModPhys.29.547)（Crossref で確かめました）。APS のサイトから取った誌面の PDF（https://journals.aps.org/rmp/pdf/10.1103/RevModPhys.29.547 、2026-11-09 に自動取得で取れた。先頭が %PDF、1 頁目の書誌が一致）。読んだ頁：p.551（星から出された物質が、のちに別の星に凝縮することがある。元素は一連の過程で進化してきたし、進化している）、p.569（星は核合成の産物を星間のガスへ出すので、純粋な水素でできていたのは最初の星だけだろう。鉄の芯をつくった星の不安定は、芯の一部と軽い元素の殻を星間の媒質へ投げ出す）。
 - Kippenhahn, R., Weigert, A. & Weiss, A. (2012). *Stellar Structure and Evolution*（2nd ed., Springer）。書籍で、OA の版は見つけていません。未照合（書籍）です。
 
@@ -80,7 +80,7 @@ B²FH は、星の中の核の燃焼が段を追って重い元素をつくり�
 
 **一次情報**：
 
-- White, S. D. M. & Rees, M. J. (1978). Core condensation in heavy halos: a two-stage theory for galaxy formation and clustering. *MNRAS* 183(3), 341–358. DOI: [10.1093/mnras/183.3.341](https://doi.org/10.1093/mnras/183.3.341)（Crossref で確かめました）。台帳 D06-S02。OUP の PDF は自動取得で確認画面（403）でした。ADS の誌面の走査（https://articles.adsabs.harvard.edu/pdf/1978MNRAS.183..341W ）で読みました。走査には文字の層が無いので、頁の画像を見て読みました。読んだ頁：p.341（要旨。暗黒の物質が階層的にまとまり、各段で緩和が中の構造を消す。銀河の明るい中身は、暗黒の物質がつくる一時的な井戸の中で、残ったガスが冷えて分かれたもの）、p.342（純粋に重力だけのまとまりでは、銀河と銀河団の両方はつくれない。Press & Schechter 1974 を引く）、p.347（§2.3。三つか四つの群れは、1 回の横断の時間のうちに緩和で形の無い系に変わる）、p.348（§3.1。冷える時間 t_cool が落ち込む時間 t_dyn より短ければ、ガスは中心へ冷えて落ち、星に分かれる。長ければ、次の段の合体で衝撃を受けてさらに熱く薄くなり、凝縮に向かなくなる）。
+- White, S. D. M. & Rees, M. J. (1978). Core condensation in heavy halos: a two-stage theory for galaxy formation and clustering. *MNRAS* 183(3), 341–358. DOI: [10.1093/mnras/183.3.341](https://doi.org/10.1093/mnras/183.3.341)（Crossref で確かめました）。台帳に行がある。OUP の PDF は自動取得で確認画面（403）でした。ADS の誌面の走査（https://articles.adsabs.harvard.edu/pdf/1978MNRAS.183..341W ）で読みました。走査には文字の層が無いので、頁の画像を見て読みました。読んだ頁：p.341（要旨。暗黒の物質が階層的にまとまり、各段で緩和が中の構造を消す。銀河の明るい中身は、暗黒の物質がつくる一時的な井戸の中で、残ったガスが冷えて分かれたもの）、p.342（純粋に重力だけのまとまりでは、銀河と銀河団の両方はつくれない。Press & Schechter 1974 を引く）、p.347（§2.3。三つか四つの群れは、1 回の横断の時間のうちに緩和で形の無い系に変わる）、p.348（§3.1。冷える時間 t_cool が落ち込む時間 t_dyn より短ければ、ガスは中心へ冷えて落ち、星に分かれる。長ければ、次の段の合体で衝撃を受けてさらに熱く薄くなり、凝縮に向かなくなる）。
 - Press, W. H. & Schechter, P. (1974). Formation of Galaxies and Clusters of Galaxies by Self-Similar Gravitational Condensation. *ApJ* 187, 425–438. DOI: [10.1086/152650](https://doi.org/10.1086/152650)。ADS（https://articles.adsabs.harvard.edu/pdf/1974ApJ...187..425P ）。p.425（要旨。質量の点がまとまり、十分に束縛されたものを一つの大きな質量の粒子とみなす。何段か進むと、質量の分布は自己相似になる）を読みました。
 - Bond, J. R., Cole, S., Efstathiou, G. & Kaiser, N. (1991). Excursion Set Mass Functions for Hierarchical Gaussian Fluctuations. *ApJ* 379, 440–460. DOI: [10.1086/170520](https://doi.org/10.1086/170520)。ADS（https://articles.adsabs.harvard.edu/pdf/1991ApJ...379..440B ）。p.440（要旨と序。多くの方法は、小さな塊がより大きな物体に呑み込まれることを数え違える「雲の中の雲」の問題を抱える。初めの密度の乱れが臨界の値を越える割合で質量関数を決め、鋭い k 空間のフィルターでは Press と Schechter の式が、その「ごまかしの係数 2」ごと出てくる）を読みました。
 
@@ -107,7 +107,7 @@ Bond らは、小さな塊が大きな物体に「呑み込まれる（subsumed�
 
 **一次情報**：
 
-- Tumlinson, J., Peeples, M. S. & Werk, J. K. (2017). The Circumgalactic Medium. *ARA&A* 55, 389–432. DOI: [10.1146/annurev-astro-091916-055240](https://doi.org/10.1146/annurev-astro-091916-055240)（Crossref で確かめました）。台帳 D06-S03。arXiv の著者稿（https://arxiv.org/pdf/1709.09180 、v1）で読みました。頁は著者稿の頁です。読んだ頁：p.1（要旨。CGM は星形成の燃料の源で、フィードバックと再循環の場で、ガスの供給の鍵の調節役かもしれない）、p.35（§7 の quenching。銀河の星形成が止まることは、理論の上でまだ大きな未解決の問題。模型によって、ハローの質量で星形成を人の手で止めるものと、CGM を熱して燃料を断つものがある）、p.37（止まった銀河のハローに冷たいガスが残っていることの矛盾は、まだ解けていない）。
+- Tumlinson, J., Peeples, M. S. & Werk, J. K. (2017). The Circumgalactic Medium. *ARA&A* 55, 389–432. DOI: [10.1146/annurev-astro-091916-055240](https://doi.org/10.1146/annurev-astro-091916-055240)（Crossref で確かめました）。台帳に行がある。arXiv の著者稿（https://arxiv.org/pdf/1709.09180 、v1）で読みました。頁は著者稿の頁です。読んだ頁：p.1（要旨。CGM は星形成の燃料の源で、フィードバックと再循環の場で、ガスの供給の鍵の調節役かもしれない）、p.35（§7 の quenching。銀河の星形成が止まることは、理論の上でまだ大きな未解決の問題。模型によって、ハローの質量で星形成を人の手で止めるものと、CGM を熱して燃料を断つものがある）、p.37（止まった銀河のハローに冷たいガスが残っていることの矛盾は、まだ解けていない）。
 - Dekel, A. & Birnboim, Y. (2006). Galaxy bimodality due to cold flows and shock heating. *MNRAS* 368(1), 2–20. DOI: [10.1111/j.1365-2966.2006.10145.x](https://doi.org/10.1111/j.1365-2966.2006.10145.x)（Crossref で確かめました）。arXiv の著者稿（https://arxiv.org/pdf/astro-ph/0412300 、v3）で読みました。p.1（要旨と序。臨界の衝撃加熱の質量 M_shock ≲ 10^12 太陽質量より下のハローでは、円盤は衝撃で熱せられない冷たい流れでつくられる。上では、ガスはビリアルの衝撃で熱せられ、薄いので活動銀河核などのフィードバックに弱くなり、ガスの供給が絶たれて星形成が止まる）。
 
 **照合の状態**：Tumlinson らと Dekel & Birnboim は本文照合済（著者稿）です。誌面の頁は控えていません。
@@ -130,7 +130,7 @@ Bond らは、小さな塊が大きな物体に「呑み込まれる（subsumed�
 
 **一次情報**：
 
-- Balbus, S. A. & Hawley, J. F. (1991). A Powerful Local Shear Instability in Weakly Magnetized Disks. I. Linear Analysis. *ApJ* 376, 214–222. DOI: [10.1086/170270](https://doi.org/10.1086/170270)（Crossref では、I と II の二つの論文が同じ DOI です）。台帳 D06-S04。手元の PDF は ADS の走査で、I（pp.214–222）と II（Hawley & Balbus、pp.223–233）の二つを含みます。読んだ頁：p.214（要旨。弱い磁場があれば、広い種類の降着円盤が不安定。最大の成長率は回転の角速度ほどで、磁場の強さによらない。ただし磁場のエネルギーが熱のエネルギーより小さいときに限る。角速度が外ほど小さいことが条件。弱い磁場は強い磁場よりずっと不安定にしうる）、p.215（§2.1。外へずれた要素は、磁場に硬い回転を強いられ、新しい場所に対して速く回りすぎ、余った遠心力でさらに外へ出る。元の位置へ戻す力は安定に働くが、長い波長では弱く、不安定が勝つ）、p.222（結び。不安定の条件は、外ほど小さい角速度と弱いポロイダルの磁場だけ。線形の解析を越えていないと書く）。
+- Balbus, S. A. & Hawley, J. F. (1991). A Powerful Local Shear Instability in Weakly Magnetized Disks. I. Linear Analysis. *ApJ* 376, 214–222. DOI: [10.1086/170270](https://doi.org/10.1086/170270)（Crossref では、I と II の二つの論文が同じ DOI です）。台帳に行がある。手元の PDF は ADS の走査で、I（pp.214–222）と II（Hawley & Balbus、pp.223–233）の二つを含みます。読んだ頁：p.214（要旨。弱い磁場があれば、広い種類の降着円盤が不安定。最大の成長率は回転の角速度ほどで、磁場の強さによらない。ただし磁場のエネルギーが熱のエネルギーより小さいときに限る。角速度が外ほど小さいことが条件。弱い磁場は強い磁場よりずっと不安定にしうる）、p.215（§2.1。外へずれた要素は、磁場に硬い回転を強いられ、新しい場所に対して速く回りすぎ、余った遠心力でさらに外へ出る。元の位置へ戻す力は安定に働くが、長い波長では弱く、不安定が勝つ）、p.222（結び。不安定の条件は、外ほど小さい角速度と弱いポロイダルの磁場だけ。線形の解析を越えていないと書く）。
 - Blandford, R. D. & Znajek, R. L. (1977). Electromagnetic extraction of energy from Kerr black holes. *MNRAS* 179(3), 433–456. DOI: [10.1093/mnras/179.3.433](https://doi.org/10.1093/mnras/179.3.433)（Crossref で確かめました）。ADS の走査（https://articles.adsabs.harvard.edu/pdf/1977MNRAS.179..433B ）。読んだ頁：p.433（要旨。回転するブラックホールを、赤道の円盤の電流が支える磁場が貫くと、電位差が生まれる。磁場が十分強ければ、真空は電子と陽電子の対の連鎖的な生成に対して不安定になり、力の無い磁気圏ができて、エネルギーと角運動量が電磁的に取り出される。磁力線が放物面のときは、エネルギーは反対向きの二方向に絞られる）、pp.436–437（真空が壊れる条件）。
 
 **照合の状態**：Balbus & Hawley と Blandford & Znajek は本文照合済です。
@@ -156,9 +156,9 @@ Blandford と Znajek は、磁場の強さに分かれ目があり、届けば�
 
 **一次情報**：
 
-- Pollack, J. B., Hubickyj, O., Bodenheimer, P., Lissauer, J. J., Podolak, M. & Greenzweig, Y. (1996). Formation of the Giant Planets by Concurrent Accretion of Solids and Gas. *Icarus* 124(1), 62–85. DOI: [10.1006/icar.1996.0190](https://doi.org/10.1006/icar.1996.0190)（Crossref で確かめました）。台帳 D06-S05。Elsevier の版は有料です。NASA の技術報告のサーバー（NTRS 19970037595、https://ntrs.nasa.gov/citations/19970037595 ）に、NASA の助成 NAG2-984 の最終報告（SETI Institute、O. Hubickyj、1997 年 10 月）があり、その中に Icarus の誌面がそのまま付いています（PDF の 11〜34 頁）。NTRS の表示は「GOV_PUBLIC_USE_PERMITTED」です。政府機関のサーバーに置かれた誌面の写しとして、性格を添えて本文照合済にしました（下の「判断が要るもの」）。読んだ頁：p.62（要旨。どの計算も三つの段を持つ。第一の段では微惑星の降着が暴走的に増え、養う帯が尽きると減る。第二の段では固体とガスの降着がどちらも小さく、ほぼ一定。第三の段は、固体とガスの質量がほぼ等しくなったときに始まるガスの暴走的な降着）、p.71（ガスの暴走に入るまでの時間は、木星と土星ではガスの円盤の寿命より短く、天王星と海王星では長くなければならない）、p.80（結び。三つの段）。助成の報告の本文（PDF の 3〜5 頁）は、太陽の星雲は天王星と海王星が第二の段にいる間に消えたと書いています。
+- Pollack, J. B., Hubickyj, O., Bodenheimer, P., Lissauer, J. J., Podolak, M. & Greenzweig, Y. (1996). Formation of the Giant Planets by Concurrent Accretion of Solids and Gas. *Icarus* 124(1), 62–85. DOI: [10.1006/icar.1996.0190](https://doi.org/10.1006/icar.1996.0190)（Crossref で確かめました）。台帳に行がある。Elsevier の版は有料です。NASA の技術報告のサーバー（NTRS 19970037595、https://ntrs.nasa.gov/citations/19970037595 ）に、NASA の助成 NAG2-984 の最終報告（SETI Institute、O. Hubickyj、1997 年 10 月）があり、その中に Icarus の誌面がそのまま付いています（PDF の 11〜34 頁）。NTRS の表示は「GOV_PUBLIC_USE_PERMITTED」です。政府機関のサーバーに置かれた誌面の写しとして、性格を添えて本文照合済にしました（下の「判断が要るもの」）。読んだ頁：p.62（要旨。どの計算も三つの段を持つ。第一の段では微惑星の降着が暴走的に増え、養う帯が尽きると減る。第二の段では固体とガスの降着がどちらも小さく、ほぼ一定。第三の段は、固体とガスの質量がほぼ等しくなったときに始まるガスの暴走的な降着）、p.71（ガスの暴走に入るまでの時間は、木星と土星ではガスの円盤の寿命より短く、天王星と海王星では長くなければならない）、p.80（結び。三つの段）。助成の報告の本文（PDF の 3〜5 頁）は、太陽の星雲は天王星と海王星が第二の段にいる間に消えたと書いています。
 - Johansen, A., Oishi, J. S., Mac Low, M.-M., Klahr, H., Henning, T. & Youdin, A. (2007). Rapid planetesimal formation in turbulent circumstellar disks. *Nature* 448, 1022–1025. DOI: [10.1038/nature06086](https://doi.org/10.1038/nature06086)。Nature の版は有料です。arXiv の著者稿（https://arxiv.org/pdf/0708.3890 ）で読みました。頁は著者稿の頁です。読んだ頁：p.1（メートルの岩はうまくくっつかず、遅く回るガスの向かい風で数百周のうちに原始星へ渦を巻いて落ちる。弱い乱れでも、固体が中央の面に沈むのを妨げる）、pp.1–2（岩は乱れたガスの一時的な高い圧力の所に集まり、ストリーミング不安定でさらに一桁集まり、局所的に重力でつぶれる）、p.4。
-- Drążkowska, J. ほか (2023). Planet Formation Theory in the Era of ALMA and Kepler: from Pebbles to Exoplanets. *Protostars and Planets VII*（ASP Conf. Ser. 534）。arXiv の著者稿（https://arxiv.org/pdf/2203.09759 、v3）。台帳 D06-S05 の注にある OA の代わり。読んだ頁（著者稿の PDF の頁）：p.9（粒の成長より内側への落下が速いと成長が止まる。落下の壁）、p.20（巨大惑星をつくる模型は、コア集積と重力不安定の二つ。重力不安定では、塊が十分速く冷えると重力が気体の圧力に勝つ）、p.22（重力不安定は Q < 1 の重い円盤で外側に塊をつくる。塊は数木星質量より重く、潮汐で壊れることがあり、ごく短い時間で内側へ移動して外側に留まれない。それでも、広い軌道の超木星を説明できるかもしれない）。
+- Drążkowska, J. ほか (2023). Planet Formation Theory in the Era of ALMA and Kepler: from Pebbles to Exoplanets. *Protostars and Planets VII*（ASP Conf. Ser. 534）。arXiv の著者稿（https://arxiv.org/pdf/2203.09759 、v3）。台帳の「Pollack ら 1996」の行の注にある OA の代わり。読んだ頁（著者稿の PDF の頁）：p.9（粒の成長より内側への落下が速いと成長が止まる。落下の壁）、p.20（巨大惑星をつくる模型は、コア集積と重力不安定の二つ。重力不安定では、塊が十分速く冷えると重力が気体の圧力に勝つ）、p.22（重力不安定は Q < 1 の重い円盤で外側に塊をつくる。塊は数木星質量より重く、潮汐で壊れることがあり、ごく短い時間で内側へ移動して外側に留まれない。それでも、広い軌道の超木星を説明できるかもしれない）。
 - Toomre, A. (1964). On the gravitational stability of a disk of stars. *ApJ* 139, 1217–1238. DOI: [10.1086/147861](https://doi.org/10.1086/147861)。ADS（https://articles.adsabs.harvard.edu/pdf/1964ApJ...139.1217T ）。p.1217（要旨。平たい星の円盤は、面に平行な乱れた速度が十分に大きくなければ、面の中に重い凝縮をつくる傾向に対して安定でいられない。すべての軸対称の不安定を抑えるのに要る速度の分散の最小値は 3.36 Gμ/κ）。
 - Boss, A. P. (1997). *Science* 276, 1836。有料で、取得を試していません。未照合です。
 
@@ -187,7 +187,7 @@ Johansen らは、メートルの岩がガスの向かい風で星に落ちる�
 
 - Taylor, G. I. (1950). The formation of a blast wave by a very intense explosion. I. Theoretical discussion. *Proc. R. Soc. A* 201(1065), 159–174. DOI: [10.1098/rspa.1950.0049](https://doi.org/10.1098/rspa.1950.0049)（Crossref で確かめました）。Royal Society の PDF は自動取得で確認画面（403）でした。ADS には全文がありません（403）。未照合です。
 - Sedov, L. I. (1959). *Similarity and Dimensional Methods in Mechanics*（Academic Press）。書籍で、未照合（書籍）です。
-- Blandford, R. D. & Ostriker, J. P. (1978). Particle Acceleration by Astrophysical Shocks. *ApJ* 221, L29–L32. DOI: [10.1086/182658](https://doi.org/10.1086/182658)。台帳 D06-S06。ADS（https://articles.adsabs.harvard.edu/pdf/1978ApJ...221L..29B ）。読んだ頁：p.L29（要旨と序。衝撃の近くの高いエネルギーの粒子は、収束する流れが運ぶアルヴェン波に散らされ、一次の加速を受ける。逃げる時間は自ずと加速の時間と同じほどになる。超新星の衝撃は、放射による損失がエネルギーを奪い始めるまで大きな体積を覆う）、p.L30。
+- Blandford, R. D. & Ostriker, J. P. (1978). Particle Acceleration by Astrophysical Shocks. *ApJ* 221, L29–L32. DOI: [10.1086/182658](https://doi.org/10.1086/182658)。台帳に行がある。ADS（https://articles.adsabs.harvard.edu/pdf/1978ApJ...221L..29B ）。読んだ頁：p.L29（要旨と序。衝撃の近くの高いエネルギーの粒子は、収束する流れが運ぶアルヴェン波に散らされ、一次の加速を受ける。逃げる時間は自ずと加速の時間と同じほどになる。超新星の衝撃は、放射による損失がエネルギーを奪い始めるまで大きな体積を覆う）、p.L30。
 - Bell, A. R. (1978). The acceleration of cosmic rays in shock fronts — I. *MNRAS* 182(2), 147–156. DOI: [10.1093/mnras/182.2.147](https://doi.org/10.1093/mnras/182.2.147)。ADS（https://articles.adsabs.harvard.edu/pdf/1978MNRAS.182..147B ）。読んだ頁：p.147（要旨。速い粒子は、自ら起こしたアルヴェン波に散らされて上流へ逃げられず、衝撃のまわりに留められ、何度も横切って一次のフェルミ加速を受ける。分布はべき乗になる。熱のエネルギーからの最初の加速は扱わない）、p.149（横切るたびに一部が逃げ、残りは衝撃へ戻る。逃げる確率）。
 
 **照合の状態**：Blandford & Ostriker と Bell は本文照合済です。Taylor は未照合（ブラウザでの保存が要る）、Sedov は未照合（書籍）です。
@@ -213,7 +213,7 @@ Johansen らは、メートルの岩がガスの向かい風で星に落ちる�
 
 - Babcock, H. W. (1961). The Topology of the Sun's Magnetic Field and the 22-Year Cycle. *ApJ* 133, 572ff.（ADS の走査は 18 頁）. DOI: [10.1086/147060](https://doi.org/10.1086/147060)（Crossref で確かめました）。ADS（https://articles.adsabs.harvard.edu/pdf/1961ApJ...133..572B ）。p.572（要旨。浅く沈んだ双極の磁力線が差動回転で経度方向に引き伸ばされ、3 年で 5 巻きになる。綱のように撚られた磁束が浮力で表面に出て、黒点をともなう双極の領域になる。領域をつくるのに要る磁場の強さには、周期の始めからの年数に応じて低い緯度へ移る緯度で届く。後ろ側は極へ移り、その磁力線は元の双極の磁場を打ち消し、置き換える）を読みました。
 - Parker, E. N. (1955). Hydromagnetic Dynamo Models. *ApJ* 122, 293–314. DOI: [10.1086/146087](https://doi.org/10.1086/146087)。ADS（https://articles.adsabs.harvard.edu/pdf/1955ApJ...122..293P ）。p.293（要旨。回転の不均一がトロイダルの磁場をつくり、低気圧のような流体の動きがそこからポロイダルの磁場をつくる。動いていくダイナモ波が太陽の活動の主な特徴を説明しうる）を読みました。
-- Charbonneau, P. (2010). Dynamo Models of the Solar Cycle. *Living Rev. Solar Phys.* 7, 3. DOI: [10.12942/lrsp-2010-3](https://doi.org/10.12942/lrsp-2010-3)（Crossref で確かめました）。台帳 D06-S07。手元の PDF は Living Reviews の公開版です。読んだ頁：p.9（太陽のダイナモの模型は、どう働くかについて合意と呼べるものがまったく無い状態から立ち直っていない）、p.62（§5.6.1。黒点の少なさは周期が止まったことを必ずしも意味しない。約 10 kG より弱い磁束の管は対流層を上りきれない。同じ周期が、閾値のすぐ下の振幅でマウンダー極小期を通して続いていたかもしれない）、p.64（ベリリウム 10 の記録は、マウンダー極小期を通して途切れない周期の信号を示す）、p.72（§6.5・6.7。子午面の流れは、バブコック・レイトン型の模型でポロイダルの磁場を深部へ運ぶのに要る。磁場がこの流れにどれだけ逆らうかは、主な未知のこと。大極小がなぜ起きるかは、強く調べられている問い）。
+- Charbonneau, P. (2010). Dynamo Models of the Solar Cycle. *Living Rev. Solar Phys.* 7, 3. DOI: [10.12942/lrsp-2010-3](https://doi.org/10.12942/lrsp-2010-3)（Crossref で確かめました）。台帳に行がある。手元の PDF は Living Reviews の公開版です。読んだ頁：p.9（太陽のダイナモの模型は、どう働くかについて合意と呼べるものがまったく無い状態から立ち直っていない）、p.62（§5.6.1。黒点の少なさは周期が止まったことを必ずしも意味しない。約 10 kG より弱い磁束の管は対流層を上りきれない。同じ周期が、閾値のすぐ下の振幅でマウンダー極小期を通して続いていたかもしれない）、p.64（ベリリウム 10 の記録は、マウンダー極小期を通して途切れない周期の信号を示す）、p.72（§6.5・6.7。子午面の流れは、バブコック・レイトン型の模型でポロイダルの磁場を深部へ運ぶのに要る。磁場がこの流れにどれだけ逆らうかは、主な未知のこと。大極小がなぜ起きるかは、強く調べられている問い）。
 - Charbonneau, P. (2020). Dynamo models of the solar cycle. *Living Rev. Sol. Phys.* 17, 4. DOI: [10.1007/s41116-020-00025-6](https://doi.org/10.1007/s41116-020-00025-6)（Crossref で確かめました）。Springer の PDF は自動取得で確認画面（Client Challenge）でした。未照合です。
 
 **照合の状態**：Babcock・Parker・Charbonneau 2010 は本文照合済です。Charbonneau 2020 は未照合で、報告が 2020 年版から書いた主張は、2010 年版で確かめた範囲だけを書いています（未判定（版の食い違い）の行があります）。
@@ -240,7 +240,7 @@ Charbonneau（2010）は、至らない形と分かれ目を書いています�
 **一次情報**：
 
 - Zel'dovich, Ya. B. (1970). Gravitational Instability: An Approximate Theory for Large Density Perturbations. *A&A* 5, 84–89。ADS の走査（https://articles.adsabs.harvard.edu/pdf/1970A%26A.....5...84Z ）。文字の層が無いので、頁の画像を見て読みました。DOI はありません。読んだ頁：p.84（要旨。無限の密度は、まず一方向の圧縮で円盤のような面に生じる。続く層は、まず断熱に、次に衝撃波で圧縮される）、p.85（いちばん大事な点は、無限の密度が一方向の圧縮から生じること。二つの方向の一致や三つの方向の一致の確率はゼロ）、p.88（ジーンズ質量の尺度では、気体の圧力が一方向の圧縮に逆らう）。
-- Planck Collaboration (2016). Planck 2015 results. XIII. Cosmological parameters. *A&A* 594, A13. DOI: [10.1051/0004-6361/201525830](https://doi.org/10.1051/0004-6361/201525830)（Crossref で確かめました）。台帳 D06-S08。手元の PDF は A&A の公式の版です。読んだ頁：pp.1–2（要旨。基本の ΛCDM はよく合うが、揺らぎの振幅が、銀河団の数や弱い重力レンズからの値より高い。こうした食い違いは、ΛCDM を簡単に変えても解けない）、p.31（表。宇宙の年齢は 13.8 Gyr）。
+- Planck Collaboration (2016). Planck 2015 results. XIII. Cosmological parameters. *A&A* 594, A13. DOI: [10.1051/0004-6361/201525830](https://doi.org/10.1051/0004-6361/201525830)（Crossref で確かめました）。台帳に行がある。手元の PDF は A&A の公式の版です。読んだ頁：pp.1–2（要旨。基本の ΛCDM はよく合うが、揺らぎの振幅が、銀河団の数や弱い重力レンズからの値より高い。こうした食い違いは、ΛCDM を簡単に変えても解けない）、p.31（表。宇宙の年齢は 13.8 Gyr）。
 
 **照合の状態**：Zel'dovich と Planck は本文照合済です。
 
@@ -266,7 +266,7 @@ Charbonneau（2010）は、至らない形と分かれ目を書いています�
 
 **一次情報**：
 
-- Abbott, B. P. ほか（LIGO Scientific Collaboration and Virgo Collaboration）(2017). GW170817: Observation of Gravitational Waves from a Binary Neutron Star Inspiral. *Phys. Rev. Lett.* 119, 161101. DOI: [10.1103/PhysRevLett.119.161101](https://doi.org/10.1103/PhysRevLett.119.161101)。台帳 D06-S09。手元の PDF は、台帳の注（arXiv 1710.05832）と違い、PRL の誌面です（1 頁目に誌名・号・CC-BY の表示）。読んだ頁：p.161101-1（要旨。ガンマ線バースト GRB 170817A は合体の 1.7 秒後に検出された。そのあと同じ場所で、電磁波の各帯の対応天体が見つかった）、p.161101-2、p.161101-7（合体のあとには、寿命の短いまたは長い中性子星が残るかもしれない。ブラックホールができれば、その減衰の重力波も出うる）。
+- Abbott, B. P. ほか（LIGO Scientific Collaboration and Virgo Collaboration）(2017). GW170817: Observation of Gravitational Waves from a Binary Neutron Star Inspiral. *Phys. Rev. Lett.* 119, 161101. DOI: [10.1103/PhysRevLett.119.161101](https://doi.org/10.1103/PhysRevLett.119.161101)。台帳に行がある。手元の PDF は、台帳の注（arXiv 1710.05832）と違い、PRL の誌面です（1 頁目に誌名・号・CC-BY の表示）。読んだ頁：p.161101-1（要旨。ガンマ線バースト GRB 170817A は合体の 1.7 秒後に検出された。そのあと同じ場所で、電磁波の各帯の対応天体が見つかった）、p.161101-2、p.161101-7（合体のあとには、寿命の短いまたは長い中性子星が残るかもしれない。ブラックホールができれば、その減衰の重力波も出うる）。
 - Lattimer, J. M. & Schramm, D. N. (1974). Black-Hole-Neutron-Star Collisions. *ApJ* 192, L145–L147. DOI: [10.1086/181612](https://doi.org/10.1086/181612)（Crossref で確かめました）。ADS（https://articles.adsabs.harvard.edu/pdf/1974ApJ...192L.145L ）。読んだ頁：p.L145（要旨。ブラックホールの近くで中性子星が潮汐で壊れる。投げ出される物質の量は、r 過程の元素の量とおおよそ同じほどになりうる）、p.L147。
 - Kasen, D., Metzger, B., Barnes, J., Quataert, E. & Ramirez-Ruiz, E. (2017). Origin of the heavy elements in binary neutron-star mergers from a gravitational-wave event. *Nature* 551, 80–84. DOI: [10.1038/nature24453](https://doi.org/10.1038/nature24453)（Crossref で確かめました）。arXiv の著者稿（https://arxiv.org/pdf/1710.05463 ）。頁は著者稿の頁です。読んだ頁：p.1（要旨。投げ出された物質は、質量数 140 より軽い r 過程の元素が主の成分と、重い元素の成分の二つ。投げ出された質量と合体の頻度から、こうした合体が r 過程の主な起源だと推定する）、p.2。
 
@@ -290,7 +290,7 @@ Charbonneau（2010）は、至らない形と分かれ目を書いています�
 
 **一次情報**：
 
-- Spitzer, L. (1987). *Dynamical Evolution of Globular Clusters*（Princeton University Press）。台帳 D06-S10。書籍で、OA の版は見つけていません。未照合（書籍）です。同じ著者の論文版として、Spitzer, L. (1969). Equipartition and the Formation of Compact Nuclei in Spherical Stellar Systems. *ApJ* 158, L139–L143. DOI: [10.1086/180451](https://doi.org/10.1086/180451)（Crossref で確かめました）を、ADS（https://articles.adsabs.harvard.edu/pdf/1969ApJ...158L.139S ）で読みました。p.L139（要旨。二つの質量の星の系で、重い星は運動エネルギーを失って中心へ沈む。重い星の総質量がある臨界の値を越えると、等分配は不可能になり、重い星の群れは縮み続けて密な核をつくる）。
+- Spitzer, L. (1987). *Dynamical Evolution of Globular Clusters*（Princeton University Press）。台帳に行がある。書籍で、OA の版は見つけていません。未照合（書籍）です。同じ著者の論文版として、Spitzer, L. (1969). Equipartition and the Formation of Compact Nuclei in Spherical Stellar Systems. *ApJ* 158, L139–L143. DOI: [10.1086/180451](https://doi.org/10.1086/180451)（Crossref で確かめました）を、ADS（https://articles.adsabs.harvard.edu/pdf/1969ApJ...158L.139S ）で読みました。p.L139（要旨。二つの質量の星の系で、重い星は運動エネルギーを失って中心へ沈む。重い星の総質量がある臨界の値を越えると、等分配は不可能になり、重い星の群れは縮み続けて密な核をつくる）。
 - Heggie, D. C. (1975). Binary Evolution in Stellar Dynamics. *MNRAS* 173(3), 729–787. DOI: [10.1093/mnras/173.3.729](https://doi.org/10.1093/mnras/173.3.729)（Crossref で確かめました）。ADS（https://articles.adsabs.harvard.edu/pdf/1975MNRAS.173..729H ）。読んだ頁：p.729（要旨。束縛の弱い対は遭遇で壊れやすい。強い対は、どの種類の遭遇でも、さらに強く結ばれる傾向を持つ）、p.732（硬い連星は遭遇に強く、軟らかい連星は壊れやすい）。
 - Lynden-Bell, D. & Wood, R. (1968). The Gravo-Thermal Catastrophe in Isothermal Spheres and the Onset of Red-Giant Structure for Stellar Systems. *MNRAS* 138(4), 495–525. DOI: [10.1093/mnras/138.4.495](https://doi.org/10.1093/mnras/138.4.495)（Crossref で確かめました）。ADS（https://articles.adsabs.harvard.edu/pdf/1968MNRAS.138..495L ）。p.495（要旨。自分の重力でまとまる系は比熱が負で、熱が流れると熱いほうは熱を失ってさらに熱くなる。進化は平衡から離れる向きになる。中心が十分に集中した等温の球では、半径が 0.335 GM²/(−E) より大きいと平衡の状態が無い。星が逃げることは進化に要らず、系は自然に芯と外層の構造を育てる）を読みました。
 - Hénon, M. (1961). *Ann. d'Astrophys.* 24, 369 は ADS の走査を取りましたが、フランス語の走査で文字の層が無く、読んでいません。報告は引いていません。
@@ -341,7 +341,7 @@ ja の「強い 8」は、調べた跡の High-risk 2（バリオンサイクル
 | 中性子星合体 | 残るのが中性子星かブラックホールか（Abbott ら p.161101-7） | 残った天体の質量（読んだ所には値が無い） |
 | 球状星団 | 軟らかい連星は壊れる（Heggie p.729）。中心が暴走して平衡が無くなる（Lynden-Bell & Wood p.495）。等分配に届かない（Spitzer 1969 p.L139） | 結合のエネルギー、半径 0.335 GM²/(−E)、重い星の総質量 |
 
-D01・D02・D03・D29 と同じく、至らない形は原典の中心にありました。天文学では、至らない形の多くが、片方の力が勝って形が決まる形（冷えきらないガス、止まった星形成）と、暴走（重力熱的破局）と、時間切れの凍結（円盤が消える）に分かれて見えます。報告が「負の事例」として外に探しにいくより前に、報告が挙げた論の原典の中にありました。
+数学・物理学・化学・複雑系科学と同じく、至らない形は原典の中心にありました。天文学では、至らない形の多くが、片方の力が勝って形が決まる形（冷えきらないガス、止まった星形成）と、暴走（重力熱的破局）と、時間切れの凍結（円盤が消える）に分かれて見えます。報告が「負の事例」として外に探しにいくより前に、報告が挙げた論の原典の中にありました。
 
 ### 横断の節は報告の作った分け方
 
@@ -349,7 +349,7 @@ D01・D02・D03・D29 と同じく、至らない形は原典の中心にあり�
 
 ### テンプレート由来の表示
 
-「立ち位置明示」（3〜6 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6（構造再読）」「Phase 7（横断統合）」（32 行・40 行）、「方法論的開示（S60）」（46 行）、「温度帯の分布」（90 行）、「安全弁」（92〜94 行）、「結びの温度開示」（222〜226 行）、「Colophon」の generator_model（228〜238 行）。51 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（writing.md §1-1）。en 45 行は「If anything in these definitions feels uneasy…」と、読者に読むのをやめる選択を勧めています（型 F）。en 25 行の「the three conditions of Edge」（縁の 3 条件）は、D03 と同じく原典に無い体系です（型 H）。
+「立ち位置明示」（3〜6 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6（構造再読）」「Phase 7（横断統合）」（32 行・40 行）、「方法論的開示（S60）」（46 行）、「温度帯の分布」（90 行）、「安全弁」（92〜94 行）、「結びの温度開示」（222〜226 行）、「Colophon」の generator_model（228〜238 行）。51 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（書き方の規約 §1-1）。en 45 行は「If anything in these definitions feels uneasy…」と、読者に読むのをやめる選択を勧めています（型 F）。en 25 行の「the three conditions of Edge」（縁の 3 条件）は、化学と同じく原典に無い体系です（型 H）。
 
 ### 誤りの出どころ
 
@@ -360,10 +360,10 @@ D01・D02・D03・D29 と同じく、至らない形は原典の中心にあり�
 | 「一方向→二方向→三方向崩壊」「パンケーキ→フィラメント→ノード」を Zel'dovich 1970 に帰す | 調べた跡 phase5 116 行・phase6 129 行 |
 | 「Maunder極小期＝渦が維持されなかった」 | 調べた跡 phase5 105 行・phase6 105 行 |
 | 判定の数が版ごとに違う | ja は phase5 の High-risk 2 を条件付きにした形。en は退避版の Accept 10。pres は追えない |
-| 「縁の3条件」 | 退避版と調べた跡の縁フラグ（D03 と同じテンプレート） |
+| 「縁の3条件」 | 退避版と調べた跡の縁フラグ（化学と同じテンプレート） |
 | テンプレートの表示 | 報告のテンプレート（Colophon の reader-rules-creation-report v2.2、domain-report-template v1.0） |
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 E（断定・看板・「最も」）：「30の調査領域のなかで『意識の不在』が最も純粋に確認される分野」（14 行）、「最も直接的に一致する事例の一つ」（120 行）、「縁の最も純粋な実現の一つ」（144 行）、「天文学は渦の『非目的的本質』を最も純粋に実証する領域」（198 行）、「最も広範に確認される領域の一つ」（216 行）、「大規模な実証を提供しています」（218 行）、「宇宙論的実証です」（112 行・168 行）、「直接的な観測的証拠です」（128 行）。
 - 型 J（演出）：「壮大な実例です」（168 行）、en 1 行の題「The Spiral of Unconscious Creation」。
@@ -373,74 +373,70 @@ D01・D02・D03・D29 と同じく、至らない形は原典の中心にあり�
 
 ### 精読ノートと wiki・台帳の誤り（司令塔が直す）
 
-- `cs/knowledge/source-notes/D06/D06-S01_jeans-1902.md` 34 行：「the whole question of stability depends upon the ratio of the density to the elasticity at infinity.」の頁を p.33 と書くが、PDF では p.32。
-- `cs/knowledge/source-notes/D06/D06-S04_balbus-1991.md` 44 行：引用が原文と違う。原文（p.222）は「The most important consequence of the instability is that…a deficiency at smaller radii. When restoring forces are not able to compensate…」。ノートは「this instability」と書き、「at smaller radii. When」を落として「a deficiency when restoring forces」とつないでいる。
-- `cs/knowledge/source-notes/D06/D06-S09_abbott-2017.md` 7 行：原典頁数を「10」と書くが、手元の PDF は 18 頁（誌面と著者の一覧）。
-- 台帳 D06-S09（249 行）：注は「arXiv 1710.05832」だが、手元の PDF は PRL の誌面（CC-BY）。
-- 台帳 D06-S11（251 行）・`cs/knowledge/source-notes/D06/D06-S11_springel-2005.md` 14 行：題「Simulating the joint evolution of quasars, galaxies and their large-scale distribution」は arXiv の題。Nature の題は「Simulations of the formation, evolution and clustering of galaxies and quasars」（Crossref）。
-- 台帳 D06-S04（244 行）：手元の PDF は、I（pp.214–222）と II（Hawley & Balbus、pp.223–233）の二つを含む。Crossref でも二つが同じ DOI 10.1086/170270。書き足す案。
-- 台帳 D06-S02（242 行）：OUP の PDF は 2026-11-09 に自動取得で確認画面（403）。ADS の走査（1978MNRAS.183..341W）で読める。
+- 精読ノート「Jeans 1902」 34 行：「the whole question of stability depends upon the ratio of the density to the elasticity at infinity.」の頁を p.33 と書くが、PDF では p.32。
+- 精読ノート「Balbus 1991」 44 行：引用が原文と違う。原文（p.222）は「The most important consequence of the instability is that…a deficiency at smaller radii. When restoring forces are not able to compensate…」。ノートは「this instability」と書き、「at smaller radii. When」を落として「a deficiency when restoring forces」とつないでいる。
+- 精読ノート「Abbott 2017」 7 行：原典頁数を「10」と書くが、手元の PDF は 18 頁（誌面と著者の一覧）。
+- 台帳の「Abbott ら 2017」の行（249 行）：注は「arXiv 1710.05832」だが、手元の PDF は PRL の誌面（CC-BY）。
+- 台帳の「Springel ら 2005」の行（251 行）・精読ノート「Springel 2005」 14 行：題「Simulating the joint evolution of quasars, galaxies and their large-scale distribution」は arXiv の題。Nature の題は「Simulations of the formation, evolution and clustering of galaxies and quasars」（Crossref）。
+- 台帳の「Balbus & Hawley 1991」の行（244 行）：手元の PDF は、I（pp.214–222）と II（Hawley & Balbus、pp.223–233）の二つを含む。Crossref でも二つが同じ DOI 10.1086/170270。書き足す案。
+- 台帳の「White & Rees 1978」の行（242 行）：OUP の PDF は 2026-11-09 に自動取得で確認画面（403）。ADS の走査（1978MNRAS.183..341W）で読める。
 
-精読ノート D06-S01（p.32 の安定の関数、p.50・p.51 の引用）、D06-S02（p.347・p.348 の引用）、D06-S07（p.9・p.62 の引用）は、読んだ所では原典と合っていました。
+精読ノート「Jeans 1902」（p.32 の安定の関数、p.50・p.51 の引用）、台帳の「White & Rees 1978」の行（p.347・p.348 の引用）、台帳の「Charbonneau 2010」の行（p.9・p.62 の引用）は、読んだ所では原典と合っていました。
 
 ## 判断が要るもの
 
-pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは `docs/cs-review/README.md` の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
+pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは調べ方の計画と規約の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
 
 - Pollack ら（1996）は、NASA の技術報告のサーバー（NTRS）に置かれた、NASA の助成の最終報告に付けられた Icarus の誌面で読み、性格を添えて本文照合済にしました。政府機関のサーバーは出所が書け、学会や大学のサイトの写しと同じ扱いにできる、と考えました（「規約で決めたこと」2026-11-09 の学会のサイトと政府機関の英訳の行）。予想：出所の書ける写しは認めるという同じ行の趣旨に合う見込みです。違えば「未照合（読んだ頁）」に下げます。
 - ADS の走査（ApJ・MNRAS・A&A の古い巻）は、頼む文の決め（出版社の許諾で置かれた写し）のとおり、性格を添えて本文照合済にしました。文字の層が無い走査（White & Rees・Zel'dovich）は、頁の画像を見て読みました。
 - Charbonneau は、報告が引く 2020 年版が取れず、手元の 2010 年版で確かめました。2020 年版で変わった所がありうるので、2020 年版から書かれた主張の一部は未判定（版の食い違い）にしました。2020 年版は OA で、ブラウザで保存できれば確かめ直せます。
-- 報告の「負の事例の探索不足」は、問いとして立てず、原典の中の至らない形を行として並べました（`docs/cs-review/README.md` の中心の問い、規約で決めたこと「射程を狭める推奨は採らない」）。
+- 報告の「負の事例の探索不足」は、問いとして立てず、原典の中の至らない形を行として並べました（調べ方の計画と規約の中心の問い、規約で決めたこと「射程を狭める推奨は採らない」）。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-manifest は書き換えていません。番号は台帳と同じ形で、D06-S16 から振りました。PDF は一時置き場に保存名の案で置いてあります（司令塔が `cs/knowledge/raw/` に移す）。
+台帳は書き換えていません。PDF は一時置き場に保存名の案で置いてあります（司令塔が手元の原典の置き場に移す）。
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D06-S16 | Burbidge, E. M., Burbidge, G. R., Fowler, W. A. & Hoyle, F. (1957). Synthesis of the Elements in Stars. *Rev. Mod. Phys.* 29(4), 547–650. DOI 10.1103/RevModPhys.29.547 | https://journals.aps.org/rmp/pdf/10.1103/RevModPhys.29.547 （APS の誌面。保存名 `D06_b2fh_1957_synthesis-elements-stars.pdf`） | raw-confirmed |
-| D06-S17 | Press, W. H. & Schechter, P. (1974). Formation of Galaxies and Clusters of Galaxies by Self-Similar Gravitational Condensation. *ApJ* 187, 425–438. DOI 10.1086/152650 | https://articles.adsabs.harvard.edu/pdf/1974ApJ...187..425P （`D06_press-schechter_1974_formation-galaxies-self-similar.pdf`） | raw-confirmed（ADS の走査） |
-| D06-S18 | Bond, J. R., Cole, S., Efstathiou, G. & Kaiser, N. (1991). Excursion Set Mass Functions for Hierarchical Gaussian Fluctuations. *ApJ* 379, 440–460. DOI 10.1086/170520 | https://articles.adsabs.harvard.edu/pdf/1991ApJ...379..440B （`D06_bond_1991_excursion-set-mass-functions.pdf`） | raw-confirmed（ADS の走査） |
-| D06-S19 | Dekel, A. & Birnboim, Y. (2006). Galaxy bimodality due to cold flows and shock heating. *MNRAS* 368(1), 2–20. DOI 10.1111/j.1365-2966.2006.10145.x | https://arxiv.org/pdf/astro-ph/0412300 （著者稿 v3。`D06_dekel-birnboim_2006_galaxy-bimodality-cold-flows.pdf`） | raw-confirmed（著者稿） |
-| D06-S20 | Blandford, R. D. & Znajek, R. L. (1977). Electromagnetic extraction of energy from Kerr black holes. *MNRAS* 179(3), 433–456. DOI 10.1093/mnras/179.3.433 | https://articles.adsabs.harvard.edu/pdf/1977MNRAS.179..433B （`D06_blandford-znajek_1977_electromagnetic-extraction-kerr.pdf`） | raw-confirmed（ADS の走査） |
-| D06-S21 | Shakura, N. I. & Sunyaev, R. A. (1973). Black Holes in Binary Systems. Observational Appearance. *A&A* 24, 337–355 | https://articles.adsabs.harvard.edu/pdf/1973A%26A....24..337S （文字の層の無い走査。`D06_shakura-sunyaev_1973_black-holes-binary-systems.pdf`） | raw-confirmed（p.337 の書誌だけ見た） |
-| D06-S22 | Johansen, A. ほか (2007). Rapid planetesimal formation in turbulent circumstellar disks. *Nature* 448, 1022–1025. DOI 10.1038/nature06086 | https://arxiv.org/pdf/0708.3890 （著者稿。`D06_johansen_2007_rapid-planetesimal-formation.pdf`） | raw-confirmed（著者稿） |
-| D06-S23 | Drążkowska, J. ほか (2023). Planet Formation Theory in the Era of ALMA and Kepler: from Pebbles to Exoplanets. *Protostars and Planets VII*（ASP Conf. Ser. 534） | https://arxiv.org/pdf/2203.09759 （著者稿 v3。`D06_drazkowska_2023_planet-formation-theory-alma-kepler.pdf`） | raw-confirmed（著者稿） |
-| D06-S24 | Toomre, A. (1964). On the gravitational stability of a disk of stars. *ApJ* 139, 1217–1238. DOI 10.1086/147861 | https://articles.adsabs.harvard.edu/pdf/1964ApJ...139.1217T （`D06_toomre_1964_gravitational-stability-disk-stars.pdf`） | raw-confirmed（ADS の走査） |
-| D06-S25 | Taylor, G. I. (1950). The formation of a blast wave by a very intense explosion. I. Theoretical discussion. *Proc. R. Soc. A* 201(1065), 159–174. DOI 10.1098/rspa.1950.0049 | Royal Society（自動取得で確認画面。ADS に全文なし） | blocked-access（ブラウザでの保存が要る） |
-| D06-S26 | Bell, A. R. (1978). The acceleration of cosmic rays in shock fronts — I. *MNRAS* 182(2), 147–156. DOI 10.1093/mnras/182.2.147 | https://articles.adsabs.harvard.edu/pdf/1978MNRAS.182..147B （`D06_bell_1978_acceleration-cosmic-rays-shock-I.pdf`） | raw-confirmed（ADS の走査） |
-| D06-S27 | Babcock, H. W. (1961). The Topology of the Sun's Magnetic Field and the 22-Year Cycle. *ApJ* 133, 572ff. DOI 10.1086/147060 | https://articles.adsabs.harvard.edu/pdf/1961ApJ...133..572B （`D06_babcock_1961_topology-sun-magnetic-field.pdf`） | raw-confirmed（ADS の走査） |
-| D06-S28 | Parker, E. N. (1955). Hydromagnetic Dynamo Models. *ApJ* 122, 293–314. DOI 10.1086/146087 | https://articles.adsabs.harvard.edu/pdf/1955ApJ...122..293P （`D06_parker_1955_hydromagnetic-dynamo-models.pdf`） | raw-confirmed（ADS の走査） |
-| D06-S29 | Charbonneau, P. (2020). Dynamo models of the solar cycle. *Living Rev. Sol. Phys.* 17, 4. DOI 10.1007/s41116-020-00025-6 | Springer（OA。自動取得で確認画面） | blocked-access（ブラウザでの保存が要る） |
-| D06-S30 | Zel'dovich, Ya. B. (1970). Gravitational Instability: An Approximate Theory for Large Density Perturbations. *A&A* 5, 84–89 | https://articles.adsabs.harvard.edu/pdf/1970A%26A.....5...84Z （文字の層の無い走査。`D06_zeldovich_1970_gravitational-instability-approximate.pdf`） | raw-confirmed（ADS の走査） |
-| D06-S31 | Lattimer, J. M. & Schramm, D. N. (1974). Black-Hole-Neutron-Star Collisions. *ApJ* 192, L145–L147. DOI 10.1086/181612 | https://articles.adsabs.harvard.edu/pdf/1974ApJ...192L.145L （`D06_lattimer-schramm_1974_black-hole-neutron-star-collisions.pdf`） | raw-confirmed（ADS の走査） |
-| D06-S32 | Kasen, D. ほか (2017). Origin of the heavy elements in binary neutron-star mergers from a gravitational-wave event. *Nature* 551, 80–84. DOI 10.1038/nature24453 | https://arxiv.org/pdf/1710.05463 （著者稿。`D06_kasen_2017_origin-heavy-elements-kilonova.pdf`） | raw-confirmed（著者稿） |
-| D06-S33 | Spitzer, L. (1969). Equipartition and the Formation of Compact Nuclei in Spherical Stellar Systems. *ApJ* 158, L139–L143. DOI 10.1086/180451 | https://articles.adsabs.harvard.edu/pdf/1969ApJ...158L.139S （`D06_spitzer_1969_equipartition-compact-nuclei.pdf`） | raw-confirmed（ADS の走査） |
-| D06-S34 | Heggie, D. C. (1975). Binary Evolution in Stellar Dynamics. *MNRAS* 173(3), 729–787. DOI 10.1093/mnras/173.3.729 | https://articles.adsabs.harvard.edu/pdf/1975MNRAS.173..729H （`D06_heggie_1975_binary-evolution-stellar-dynamics.pdf`） | raw-confirmed（ADS の走査） |
-| D06-S35 | Lynden-Bell, D. & Wood, R. (1968). The Gravo-Thermal Catastrophe in Isothermal Spheres and the Onset of Red-Giant Structure for Stellar Systems. *MNRAS* 138(4), 495–525. DOI 10.1093/mnras/138.4.495 | https://articles.adsabs.harvard.edu/pdf/1968MNRAS.138..495L （`D06_lynden-bell-wood_1968_gravo-thermal-catastrophe.pdf`） | raw-confirmed（ADS の走査） |
-| D06-S36 | Hénon, M. (1961). *Ann. d'Astrophys.* 24, 369（題は確かめていない） | https://articles.adsabs.harvard.edu/pdf/1961AnAp...24..369H （仏語、文字の層の無い走査。`D06_henon_1961_evolution-dynamique-amas-globulaires.pdf`。保存名の題は推測） | raw-confirmed（読んでいない） |
-| D06-S37 | Kippenhahn, R., Weigert, A. & Weiss, A. (2012). *Stellar Structure and Evolution*, 2nd ed. Springer | 書籍（OA なし） | citation-only |
-| D06-S38 | Sedov, L. I. (1959). *Similarity and Dimensional Methods in Mechanics*. Academic Press | 書籍（取得を試していない） | citation-only |
-| D06-S39 | Boss, A. P. (1997). *Science* 276, 1836（巻と頁は Drążkowska らの文献表から。題と DOI は確かめていない） | Science（有料。取得を試していない） | citation-only |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| Burbidge, E. M., Burbidge, G. R., Fowler, W. A. & Hoyle, F. (1957). Synthesis of the Elements in Stars. *Rev. Mod. Phys.* 29(4), 547–650. DOI 10.1103/RevModPhys.29.547 | https://journals.aps.org/rmp/pdf/10.1103/RevModPhys.29.547 （APS の誌面。保存名手元の PDF） | 手元に保存した |
+| Press, W. H. & Schechter, P. (1974). Formation of Galaxies and Clusters of Galaxies by Self-Similar Gravitational Condensation. *ApJ* 187, 425–438. DOI 10.1086/152650 | https://articles.adsabs.harvard.edu/pdf/1974ApJ...187..425P （手元の PDF） | 手元に保存した（ADS の走査） |
+| Bond, J. R., Cole, S., Efstathiou, G. & Kaiser, N. (1991). Excursion Set Mass Functions for Hierarchical Gaussian Fluctuations. *ApJ* 379, 440–460. DOI 10.1086/170520 | https://articles.adsabs.harvard.edu/pdf/1991ApJ...379..440B （手元の PDF） | 手元に保存した（ADS の走査） |
+| Dekel, A. & Birnboim, Y. (2006). Galaxy bimodality due to cold flows and shock heating. *MNRAS* 368(1), 2–20. DOI 10.1111/j.1365-2966.2006.10145.x | https://arxiv.org/pdf/astro-ph/0412300 （著者稿 v3。手元の PDF） | 手元に保存した（著者稿） |
+| Blandford, R. D. & Znajek, R. L. (1977). Electromagnetic extraction of energy from Kerr black holes. *MNRAS* 179(3), 433–456. DOI 10.1093/mnras/179.3.433 | https://articles.adsabs.harvard.edu/pdf/1977MNRAS.179..433B （手元の PDF） | 手元に保存した（ADS の走査） |
+| Shakura, N. I. & Sunyaev, R. A. (1973). Black Holes in Binary Systems. Observational Appearance. *A&A* 24, 337–355 | https://articles.adsabs.harvard.edu/pdf/1973A%26A....24..337S （文字の層の無い走査。手元の PDF） | 手元に保存した（p.337 の書誌だけ見た） |
+| Johansen, A. ほか (2007). Rapid planetesimal formation in turbulent circumstellar disks. *Nature* 448, 1022–1025. DOI 10.1038/nature06086 | https://arxiv.org/pdf/0708.3890 （著者稿。手元の PDF） | 手元に保存した（著者稿） |
+| Drążkowska, J. ほか (2023). Planet Formation Theory in the Era of ALMA and Kepler: from Pebbles to Exoplanets. *Protostars and Planets VII*（ASP Conf. Ser. 534） | https://arxiv.org/pdf/2203.09759 （著者稿 v3。手元の PDF） | 手元に保存した（著者稿） |
+| Toomre, A. (1964). On the gravitational stability of a disk of stars. *ApJ* 139, 1217–1238. DOI 10.1086/147861 | https://articles.adsabs.harvard.edu/pdf/1964ApJ...139.1217T （手元の PDF） | 手元に保存した（ADS の走査） |
+| Taylor, G. I. (1950). The formation of a blast wave by a very intense explosion. I. Theoretical discussion. *Proc. R. Soc. A* 201(1065), 159–174. DOI 10.1098/rspa.1950.0049 | Royal Society（自動取得で確認画面。ADS に全文なし） | 自動では取れない（ブラウザでの保存が要る） |
+| Bell, A. R. (1978). The acceleration of cosmic rays in shock fronts — I. *MNRAS* 182(2), 147–156. DOI 10.1093/mnras/182.2.147 | https://articles.adsabs.harvard.edu/pdf/1978MNRAS.182..147B （手元の PDF） | 手元に保存した（ADS の走査） |
+| Babcock, H. W. (1961). The Topology of the Sun's Magnetic Field and the 22-Year Cycle. *ApJ* 133, 572ff. DOI 10.1086/147060 | https://articles.adsabs.harvard.edu/pdf/1961ApJ...133..572B （手元の PDF） | 手元に保存した（ADS の走査） |
+| Parker, E. N. (1955). Hydromagnetic Dynamo Models. *ApJ* 122, 293–314. DOI 10.1086/146087 | https://articles.adsabs.harvard.edu/pdf/1955ApJ...122..293P （手元の PDF） | 手元に保存した（ADS の走査） |
+| Charbonneau, P. (2020). Dynamo models of the solar cycle. *Living Rev. Sol. Phys.* 17, 4. DOI 10.1007/s41116-020-00025-6 | Springer（OA。自動取得で確認画面） | 自動では取れない（ブラウザでの保存が要る） |
+| Zel'dovich, Ya. B. (1970). Gravitational Instability: An Approximate Theory for Large Density Perturbations. *A&A* 5, 84–89 | https://articles.adsabs.harvard.edu/pdf/1970A%26A.....5...84Z （文字の層の無い走査。手元の PDF） | 手元に保存した（ADS の走査） |
+| Lattimer, J. M. & Schramm, D. N. (1974). Black-Hole-Neutron-Star Collisions. *ApJ* 192, L145–L147. DOI 10.1086/181612 | https://articles.adsabs.harvard.edu/pdf/1974ApJ...192L.145L （手元の PDF） | 手元に保存した（ADS の走査） |
+| Kasen, D. ほか (2017). Origin of the heavy elements in binary neutron-star mergers from a gravitational-wave event. *Nature* 551, 80–84. DOI 10.1038/nature24453 | https://arxiv.org/pdf/1710.05463 （著者稿。手元の PDF） | 手元に保存した（著者稿） |
+| Spitzer, L. (1969). Equipartition and the Formation of Compact Nuclei in Spherical Stellar Systems. *ApJ* 158, L139–L143. DOI 10.1086/180451 | https://articles.adsabs.harvard.edu/pdf/1969ApJ...158L.139S （手元の PDF） | 手元に保存した（ADS の走査） |
+| Heggie, D. C. (1975). Binary Evolution in Stellar Dynamics. *MNRAS* 173(3), 729–787. DOI 10.1093/mnras/173.3.729 | https://articles.adsabs.harvard.edu/pdf/1975MNRAS.173..729H （手元の PDF） | 手元に保存した（ADS の走査） |
+| Lynden-Bell, D. & Wood, R. (1968). The Gravo-Thermal Catastrophe in Isothermal Spheres and the Onset of Red-Giant Structure for Stellar Systems. *MNRAS* 138(4), 495–525. DOI 10.1093/mnras/138.4.495 | https://articles.adsabs.harvard.edu/pdf/1968MNRAS.138..495L （手元の PDF） | 手元に保存した（ADS の走査） |
+| Hénon, M. (1961). *Ann. d'Astrophys.* 24, 369（題は確かめていない） | https://articles.adsabs.harvard.edu/pdf/1961AnAp...24..369H （仏語、文字の層の無い走査。手元の PDF。保存名の題は推測） | 手元に保存した（読んでいない） |
+| Kippenhahn, R., Weigert, A. & Weiss, A. (2012). *Stellar Structure and Evolution*, 2nd ed. Springer | 書籍（OA なし） | 書誌だけ |
+| Sedov, L. I. (1959). *Similarity and Dimensional Methods in Mechanics*. Academic Press | 書籍（取得を試していない） | 書誌だけ |
+| Boss, A. P. (1997). *Science* 276, 1836（巻と頁は Drążkowska らの文献表から。題と DOI は確かめていない） | Science（有料。取得を試していない） | 書誌だけ |
 
 既存の行に書き足す案：
 
-- D06-S02（White & Rees 1978）：ADS の走査（https://articles.adsabs.harvard.edu/pdf/1978MNRAS.183..341W 、`D06_white-rees_1978_core-condensation-heavy-halos.pdf`）で読める。OUP の PDF は 2026-11-09 に確認画面。
-- D06-S03（Tumlinson ら 2017）：arXiv の著者稿 v1 を取った（`D06_tumlinson_2017_circumgalactic-medium.pdf`）。
-- D06-S04（Balbus & Hawley 1991）：手元の PDF は I と II の二つを含む。
-- D06-S05（Pollack ら 1996）：NTRS 19970037595（https://ntrs.nasa.gov/api/citations/19970037595/downloads/19970037595.pdf ）は NASA の助成 NAG2-984 の最終報告で、PDF の 11〜34 頁に Icarus の誌面が付いている（`D06_pollack_1996_giant-planets-concurrent-accretion_ntrs.pdf`）。状態を blocked-access から raw-confirmed（政府の報告に付けられた誌面の写し）に。
-- D06-S06（Blandford & Ostriker 1978）：ADS の PDF を取った（`D06_blandford-ostriker_1978_particle-acceleration-shocks.pdf`）。
-- D06-S09（Abbott ら 2017）：手元の PDF は PRL の誌面（CC-BY）。注の「arXiv 1710.05832」を直す。
-- D06-S10（Spitzer 1987）：同じ著者の論文版 Spitzer 1969（D06-S33 の案）が読める。
-- D06-S11（Springel ら 2005）：Nature の題は「Simulations of the formation, evolution and clustering of galaxies and quasars」。
+- 台帳の「White & Rees 1978」の行（White & Rees 1978）：ADS の走査（https://articles.adsabs.harvard.edu/pdf/1978MNRAS.183..341W 、手元の PDF）で読める。OUP の PDF は 2026-11-09 に確認画面。
+- 台帳の「Tumlinson ら 2017」の行（Tumlinson ら 2017）：arXiv の著者稿 v1 を取った（手元の PDF）。
+- 台帳の「Balbus & Hawley 1991」の行（Balbus & Hawley 1991）：手元の PDF は I と II の二つを含む。
+- 台帳の「Pollack ら 1996」の行（Pollack ら 1996）：NTRS 19970037595（https://ntrs.nasa.gov/api/citations/19970037595/downloads/19970037595.pdf ）は NASA の助成 NAG2-984 の最終報告で、PDF の 11〜34 頁に Icarus の誌面が付いている（手元の PDF）。状態を 自動では取れない から 手元に保存した（政府の報告に付けられた誌面の写し）に。
+- 台帳の「Blandford & Ostriker 1978」の行（Blandford & Ostriker 1978）：ADS の PDF を取った（手元の PDF）。
+- 台帳の「Abbott ら 2017」の行（Abbott ら 2017）：手元の PDF は PRL の誌面（CC-BY）。注の「arXiv 1710.05832」を直す。
+- 台帳の「Spitzer 1987」の行（Spitzer 1987）：同じ著者の論文版 Spitzer 1969（台帳に足す案）が読める。
+- 台帳の「Springel ら 2005」の行（Springel ら 2005）：Nature の題は「Simulations of the formation, evolution and clustering of galaxies and quasars」。
 
 ## ブラウザでの保存が要る PDF
 
-| 台帳の行 | 文献 | ダウンロード先 | 保存名の案 |
-|---|---|---|---|
-| D06-S25（案） | Taylor (1950) *Proc. R. Soc. A* 201, 159 | https://royalsocietypublishing.org/doi/pdf/10.1098/rspa.1950.0049 | `D06_taylor_1950_blast-wave-intense-explosion-I.pdf` |
-| D06-S29（案） | Charbonneau (2020) *Living Rev. Sol. Phys.* 17, 4（OA） | https://link.springer.com/content/pdf/10.1007/s41116-020-00025-6.pdf | `D06_charbonneau_2020_dynamo-models-solar-cycle.pdf` |
-| D06-S02 | White & Rees (1978) *MNRAS* 183, 341（文字の層のある OUP の版。ADS の走査で読めたので急がない） | https://academic.oup.com/mnras/article-pdf/183/3/341/2943374/mnras183-0341.pdf | `D06_white-rees_1978_core-condensation-heavy-halos.pdf`（ADS の走査と入れ替え） |
+自動で取れなかった原典のうち、ブラウザでの保存を頼むものは、作業の記録（[Issue #73](https://github.com/uminomae/project-design-theory/issues/73)）の表にまとめました。
 
 ## 手順について分かったこと
 

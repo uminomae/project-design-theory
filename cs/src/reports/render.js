@@ -127,70 +127,12 @@ export function createReportsRenderer({
         state.dom.error.classList.add('d-none');
     }
 
+    // 進み具合・検証の段階（「多段階検証済」など）は内部連絡に当たるので、公開ページに出さない
+    // （pjdhiro 2026-11-09・stance 2-7）。凡例の置き場は空にして隠す。
     function renderLevelLegend() {
         if (!state.dom.levelLegend) return;
-
-        const strings = getReportsStrings(state.config.lang);
-        const legendNode = state.dom.levelLegend;
-        const presentTaxonomy = getPresentProgressTaxonomy();
-        const paletteMap = buildProgressPaletteMap(presentTaxonomy);
-        if (!presentTaxonomy.length) {
-            legendNode.textContent = state.data.loadError ? strings.levelLegendUnavailable : strings.levelLegend;
-            return;
-        }
-
-        if (presentTaxonomy.length === 1) {
-            const level = presentTaxonomy[0].id;
-            const count = state.data.progressLevelCounts[level] || 0;
-            const label = getProgressLevelLabel(level);
-            const description = getProgressLevelDescription(level);
-            const summaryText = strings.levelLegendSingle
-                .replace('{count}', String(count))
-                .replace('{label}', label);
-            legendNode.innerHTML = '';
-            const summaryNode = document.createElement('span');
-            summaryNode.className = 'd-block';
-            summaryNode.textContent = summaryText;
-            legendNode.appendChild(summaryNode);
-            if (description) {
-                const descNode = document.createElement('span');
-                descNode.className = 'reports-level-legend-description d-block mt-1';
-                descNode.textContent = `${label}: ${description}`;
-                legendNode.appendChild(descNode);
-            }
-            return;
-        }
-
-        legendNode.innerHTML = '';
-
-        const fragment = document.createDocumentFragment();
-        const prefixNode = document.createElement('span');
-        prefixNode.className = 'reports-level-legend-prefix d-block mb-1';
-        prefixNode.textContent = `${strings.levelLegendPrefix}:`;
-        fragment.appendChild(prefixNode);
-
-        presentTaxonomy.forEach((entry) => {
-            const paletteClass = getProgressPaletteClass(entry.id, paletteMap);
-            const lineNode = document.createElement('span');
-            lineNode.className = 'reports-level-legend-line d-flex align-items-start gap-2 mt-1';
-
-            const labelNode = document.createElement('span');
-            labelNode.className = `badge rounded-pill reports-progress-chip reports-level-legend-label ${paletteClass}`;
-            labelNode.textContent = getProgressLevelLabel(entry.id);
-            lineNode.appendChild(labelNode);
-
-            const description = getProgressLevelDescription(entry.id);
-            if (description) {
-                const descriptionNode = document.createElement('span');
-                descriptionNode.className = 'reports-level-legend-description';
-                descriptionNode.textContent = ` ${description}`;
-                lineNode.appendChild(descriptionNode);
-            }
-
-            fragment.appendChild(lineNode);
-        });
-
-        legendNode.appendChild(fragment);
+        state.dom.levelLegend.textContent = '';
+        state.dom.levelLegend.classList.add('d-none');
     }
 
     function createFilterButton({ filterKey, label, isActive, paletteClass = '' }) {
@@ -210,44 +152,13 @@ export function createReportsRenderer({
         return button;
     }
 
+    // 段階での絞り込みの釦も出さない（上の凡例と同じ理由）。
     function updateFilterButtons() {
         if (!state.dom.filterGroup) return;
-
-        const strings = getReportsStrings(state.config.lang);
-        const presentTaxonomy = getPresentProgressTaxonomy();
-        const paletteMap = buildProgressPaletteMap(presentTaxonomy);
-        if (presentTaxonomy.length <= 1) {
-            state.ui.tableFilter = 'all';
-            state.dom.filterGroup.innerHTML = '';
-            state.dom.filterGroup.classList.remove('d-flex');
-            state.dom.filterGroup.classList.add('d-none');
-            return;
-        }
-
-        state.dom.filterGroup.classList.remove('d-none');
-        state.dom.filterGroup.classList.add('d-flex');
-        if (!getAvailableFilterKeys().has(state.ui.tableFilter)) {
-            state.ui.tableFilter = 'all';
-        }
-
-        const fragment = document.createDocumentFragment();
-        fragment.appendChild(createFilterButton({
-            filterKey: 'all',
-            label: strings.filterAll,
-            isActive: state.ui.tableFilter === 'all',
-        }));
-
-        presentTaxonomy.forEach((entry) => {
-            fragment.appendChild(createFilterButton({
-                filterKey: entry.id,
-                label: getProgressLevelLabel(entry.id),
-                isActive: state.ui.tableFilter === entry.id,
-                paletteClass: getProgressPaletteClass(entry.id, paletteMap),
-            }));
-        });
-
+        state.ui.tableFilter = 'all';
         state.dom.filterGroup.innerHTML = '';
-        state.dom.filterGroup.appendChild(fragment);
+        state.dom.filterGroup.classList.remove('d-flex');
+        state.dom.filterGroup.classList.add('d-none');
     }
 
     function applyStaticText() {
@@ -369,21 +280,12 @@ export function createReportsRenderer({
         const strings = getReportsStrings(state.config.lang);
         const total = state.data.reports.length;
         const generatedValue = state.data.generatedAt ? state.data.generatedAt.slice(0, 10) : '-';
-        const presentTaxonomy = getPresentProgressTaxonomy();
-        const paletteMap = buildProgressPaletteMap(presentTaxonomy);
-
         state.dom.metrics.innerHTML = '';
         const fragment = document.createDocumentFragment();
         fragment.appendChild(createMetricCard(strings.metricGenerated, generatedValue));
         fragment.appendChild(createMetricCard(strings.metricTotal, String(total)));
 
-        presentTaxonomy.forEach((entry) => {
-            fragment.appendChild(createMetricCard(
-                getProgressLevelLabel(entry.id),
-                String(state.data.progressLevelCounts[entry.id] || 0),
-                { paletteClass: getProgressPaletteClass(entry.id, paletteMap) },
-            ));
-        });
+        // 進み具合の段階ごとの数は出さない（renderLevelLegend と同じ理由）。
 
         state.dom.metrics.appendChild(fragment);
     }
@@ -396,8 +298,6 @@ export function createReportsRenderer({
             : (report.nameEn || report.nameJa);
         const level = normalizeProgressLevelId(report.progressLevel) || 'not_surveyed';
         const paletteClass = getProgressPaletteClass(level, paletteMap);
-        const statusText = getProgressLevelLabel(level);
-        const statusDescription = formatProgressDescription(level);
         const sources = getReportSources(report);
         const clickable = sources.length > 0 && !muted;
         const col = document.createElement('div');
@@ -435,14 +335,7 @@ export function createReportsRenderer({
             muted ? 'is-filter-muted' : '',
         ].join(' ').trim();
         tile.setAttribute('data-report-level', level);
-        tile.setAttribute('aria-label', `${reportTitle} ${statusText}`);
-
-        const hoverHint = [statusDescription, report.progressNote]
-            .filter((part) => hasText(part))
-            .join('\n');
-        if (hoverHint) {
-            tile.setAttribute('title', hoverHint);
-        }
+        tile.setAttribute('aria-label', reportTitle);
         if (!clickable) {
             tile.setAttribute('aria-disabled', 'true');
         }
@@ -457,20 +350,12 @@ export function createReportsRenderer({
         idNode.className = 'reports-domain-item-id';
         idNode.textContent = report.id;
 
-        const statusNode = document.createElement('span');
-        statusNode.className = `badge rounded-pill reports-progress-chip reports-domain-item-status ${paletteClass}`;
-        statusNode.textContent = statusText;
-        if (hoverHint) {
-            statusNode.setAttribute('title', hoverHint);
-        }
-
         const nameNode = document.createElement('div');
         nameNode.className = 'reports-domain-item-name';
         nameNode.title = domainLabel;
         nameNode.textContent = domainLabel;
 
         head.appendChild(idNode);
-        head.appendChild(statusNode);
         body.appendChild(head);
         body.appendChild(nameNode);
         if (report.reviewRecord) {
@@ -630,8 +515,6 @@ export function createReportsRenderer({
         if (!allReports.length) return;
 
         const useJapanese = normalizeLang(state.config.lang) === 'ja';
-        const paletteMap = buildProgressPaletteMap(getPresentProgressTaxonomy());
-
         hoverContainer.innerHTML = '';
         const fragment = document.createDocumentFragment();
 
@@ -639,10 +522,6 @@ export function createReportsRenderer({
             const domainLabel = useJapanese
                 ? (report.nameJa || report.nameEn)
                 : (report.nameEn || report.nameJa);
-            const level = normalizeProgressLevelId(report.progressLevel) || 'not_surveyed';
-            const paletteClass = getProgressPaletteClass(level, paletteMap);
-            const statusText = getProgressLevelLabel(level);
-
             const cell = document.createElement('div');
             cell.className = `hover-grid-cell collapsed hg-color-${idx % 10}`;
             cell.dataset.index = idx;
@@ -656,17 +535,11 @@ export function createReportsRenderer({
             name.className = 'hover-grid-cell-name';
             name.textContent = domainLabel;
 
-            const progress = document.createElement('span');
-            progress.className = `hover-grid-cell-progress badge rounded-pill reports-progress-chip ${paletteClass}`;
-            progress.textContent = statusText;
-            progress.style.display = 'none';
-
             const contentArea = document.createElement('div');
             contentArea.className = 'hover-grid-cell-content';
 
             cell.appendChild(idBadge);
             cell.appendChild(name);
-            cell.appendChild(progress);
             if (report.reviewRecord) {
                 cell.appendChild(createReviewedChip(report));
             }

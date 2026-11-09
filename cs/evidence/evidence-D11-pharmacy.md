@@ -10,24 +10,24 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D11-pharm
 
 # 薬学：論ごとの照合の記録
 
-この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。薬学と生物学の記述が正しいかどうかは Claude が引き受けます（`docs/rules/sources.md` §1-4・§6）。
+この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。薬学と生物学の記述が正しいかどうかは Claude が引き受けます（調べ方の規約 §1-4・§6）。
 
 薬学の原典は、効き目と害の兼ね合いと、その兼ね合いが崩れる形を、はっきり書いていました。Fleming（1945 年のノーベル講演）は、殺すのに足りない量のペニシリンにさらされた菌が耐性になり、次の患者の治療が効かなくなると書いています。Davies と Davies（2010）は、耐性の出現は「容赦ない」と書き、抗菌薬を入れ替える方法も、耐性の菌が集団から消えないので長くは効かないと書いています。Holford（2018）は、狙う効果の選び方はいつも治療の利益と毒性の兼ね合いで、濃度の範囲の下の端は効かない側に、上の端は毒の側に近いと書いています。『黄帝内経素問』至真要大論は君・臣・使を処方の中の役として定め、『神農本草経』の序録は、毒のある薬を別の薬で抑える組み方と、組んではいけない組み合わせ（相悪・相反）を書いています。ICH のガイドラインは、品質を満たせなくなる「失敗の縁（edge of failure）」と、消しきれない危険を受け入れる判断を書いています。原典は、至らない形（効かない用量・耐性で薬が負けること・活性にならない前駆体・避けられない相互作用・品質の失敗）を、手順の中に置いていました。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D11-pharmacy.md`、2026-03-18 に LLM が生成、以下「報告」）は、10 の論を取り上げています。日本語版は本文で「強い対応 4、部分的対応 6」と書き、表では 5 つに「強い対応」と付けています。英語版は「縁と強く対応するもの 6、部分的なもの 4」、プレゼン版は「確定に近い 5・有力 3・条件つき 2」です。報告の芯は、縁を「制御できる度合いのスペクトラム」として並べる見方と、薬学が「関係を制度化している」という見方ですが、どちらも原典にはなく、調べた跡が作った分け方でした。この記録は、報告の 10 の論を一次情報で確かめ直したものです。論の数は変えていません。開発のパイプラインには Wong ら（2019）と Scannell と Bosley（2016）、PK/PD には Holford（2018）、耐性には Fleming（1945）・Melnyk ら（2015）・Baym ら（2016）、相互作用には Zhang ら（2009）と ICH M12（2024）、構造ベース創薬には van Montfort と Workman（2017）を、同じ論の中の確かめ先として使いました。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
+今の公開報告（「30 領域調査報告」の薬学の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、10 の論を取り上げています。日本語版は本文で「強い対応 4、部分的対応 6」と書き、表では 5 つに「強い対応」と付けています。英語版は「縁と強く対応するもの 6、部分的なもの 4」、プレゼン版は「確定に近い 5・有力 3・条件つき 2」です。報告の芯は、縁を「制御できる度合いのスペクトラム」として並べる見方と、薬学が「関係を制度化している」という見方ですが、どちらも原典にはなく、調べた跡が作った分け方でした。この記録は、報告の 10 の論を一次情報で確かめ直したものです。論の数は変えていません。開発のパイプラインには Wong ら（2019）と Scannell と Bosley（2016）、PK/PD には Holford（2018）、耐性には Fleming（1945）・Melnyk ら（2015）・Baym ら（2016）、相互作用には Zhang ら（2009）と ICH M12（2024）、構造ベース創薬には van Montfort と Workman（2017）を、同じ論の中の確かめ先として使いました。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D11-pharmacy.md) にあります。退避版の判定（Accept・縁フラグ・信頼度・「採用確定」の印）は、この記録の照合の状態の根拠にしていません。
 
 ## 読み方
 
-- 照合の状態は `docs/rules/sources.md` §3 の四つで書きます。PMC の XML や HTML で読んだものは頁が無いので、節の名前で控えます。著者稿（PMC の著者の原稿）で読んだものはそう書きます。
+- 照合の状態は調べ方の規約 §3 の四つで書きます。PMC の XML や HTML で読んだものは頁が無いので、節の名前で控えます。著者稿（PMC の著者の原稿）で読んだものはそう書きます。
 - 今の報告への判定は、一致・言い過ぎ・取り違え・帰属違い・付け足し・抜け・未判定で書きます。「抜け」は、原典にある衝突や至らない形を報告が落としていることです。
-- 「ja 98 行」は日本語版の行、「en」は英語版（`en/md/domain-D11-pharmacy.md`）、「pres」はプレゼン版（`ja/presentations/md/domain-D11-pharmacy-presentation-ja.md`）、「退避版」は上の History のファイル、「調べた跡」は `cs/evidence/investigation/D11-pharmacy/` の phase5〜7、「DR」は `cs/evidence/202602-deep-research-30domains-gpt/DR-D11-pharmacy.md` を指します。
+- 「ja 98 行」は日本語版の行、「en」は英語版（「30 領域調査報告」の薬学の英語版）、「pres」はプレゼン版（「30 領域調査報告」の薬学のプレゼン版）、「退避版」は上の History のファイル、「調べた跡」は、報告を作ったときの途中の出力（phase5〜7）の phase5〜7、「DR」は2026-02 の DRを指します。
 - 薬学の主張には、教科書（分野で確立した記述）・研究の一線（争いがある、または一つの研究が示した）・Claude の読み替え（5段階の問いに当てた解釈）のどれかを添えます。
 - この分野の論の多くは、人が設計した手順や規制の文書（開発の段階・ICH のガイドライン・製剤の設計・用語解説）で、現象の理論ではありません。各節では、原典が何を書いているか（手順・式・観察）を先に書き、読み替えと分けます。ガイドラインと用語解説は一次資料ですが、学術の論ではありません。そこには設計者の意図が入っています。
 - 自然選択そのものは[進化生物学の記録](evidence-D04-evolutionary-biology.md)の 1、共進化と赤の女王は同じ記録の 6、水平遺伝子移動は同じ記録の 9 で本文照合済です。この記録では読み直さず、耐性に固有の所だけを書きます。
 - 古典の原文（『素問』・『本草經集注』）は、ctext と維基文庫の翻刻（利用者が入力した文字）で読みました。底本の版は確かめていません。『素問』の君臣の定義の一文は、維基文庫の『黃帝內經』素問第二十二卷でも同じ文字でした。
-- 語が同じこと（「縁」と「相互作用」、「場」と「探索空間」）は、対応の根拠にも反証にも数えません（`docs/cs-review/README.md`「規約で決めたこと」）。
+- 語が同じこと（「縁」と「相互作用」、「場」と「探索空間」）は、対応の根拠にも反証にも数えません（調べ方の計画と規約「規約で決めたこと」）。
 
 ## 一面の表
 
@@ -56,7 +56,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Paul, S. M., Mytelka, D. S., Dunwiddie, C. T. ら (2010). How to improve R&D productivity: the pharmaceutical industry's grand challenge. *Nat. Rev. Drug Discov.* 9(3), 203–214. DOI: [10.1038/nrd3078](https://doi.org/10.1038/nrd3078)（Crossref で確かめました）。台帳 D11-S01（blocked-access）。Unpaywall は閉じた論文としています。
+- Paul, S. M., Mytelka, D. S., Dunwiddie, C. T. ら (2010). How to improve R&D productivity: the pharmaceutical industry's grand challenge. *Nat. Rev. Drug Discov.* 9(3), 203–214. DOI: [10.1038/nrd3078](https://doi.org/10.1038/nrd3078)（Crossref で確かめました）。台帳に行がある（自動では取れない）。Unpaywall は閉じた論文としています。
 - Wong, C. H., Siah, K. W. & Lo, A. W. (2019). Estimation of clinical trial success rates and related parameters. *Biostatistics* 20(2), 273–286. DOI: [10.1093/biostatistics/kxx069](https://doi.org/10.1093/biostatistics/kxx069)（Crossref で確かめました。電子版は 2018 年 1 月）。PMC6409418（CC BY）。NCBI の efetch で XML を取り、節で控えました。読んだ節：要旨（2000〜2015 年の 406,038 件の試験。腫瘍の成功率 3.4%）、4.1（Phase 1 から承認まで 13.8%。段階ごとに 66.4%・58.3%・59.0%。先行研究の 10.4%・9.6% より高い）、4.4（全体の成功率は 2005 年の 11.2% から 2013 年の 5.2% に下がり、そのあと上がった）、6（上がった理由の候補として、バイオマーカーの使用と、免疫療法のような新しい波を挙げる）。訂正（Corrigendum、DOI 10.1093/biostatistics/kxy072）があり、読んでいません。
 - Scannell, J. W. & Bosley, J. (2016). When Quality Beats Quantity: Decision Theory, Drug Discovery, and the Reproducibility Crisis. *PLOS ONE* 11(2), e0147215. DOI: [10.1371/journal.pone.0147215](https://doi.org/10.1371/journal.pone.0147215)（Crossref で確かめました）。PMC4749240。読んだ節：要旨（1950〜2010 年に、新しい薬一つあたりの研究開発の費用は物価を除いて 100 倍ほどに増えた。今の薬は 1970 年代より臨床で落ちやすい。予測の模型の当てになり具合が 0.1 変わると、試す数の 10〜100 倍の差が打ち消される）、Discussion §1（Eroom の法則は、1950〜2010 年に、10 億ドルあたりの承認の数がおよそ 9 年ごとに半分になったこと。「低い枝の実は取り尽くされた」という説明には批判がある。承認された薬が、まだ見つかっていない候補の値打ちを下げる「ビートルズよりよい」問題。著者は、当てになる模型が使い尽くされたという仮説を立てる）。
 - Scannell, J. W., Blanckley, A., Boldon, H. & Warrington, B. (2012). Diagnosing the decline in pharmaceutical R&D efficiency. *Nat. Rev. Drug Discov.* 11, 191–200. DOI 10.1038/nrd3681（Europe PMC の書誌）。有料で、取得を試していません。
@@ -85,7 +85,7 @@ Claude の読み替えでは、候補と、それを止める判断がぶつか�
 
 **一次情報**：
 
-- Gabrielsson, J. & Weiner, D. (2006). *Pharmacokinetic and Pharmacodynamic Data Analysis: Concepts and Applications*. 4th ed. Swedish Pharmaceutical Press. 台帳 D11-S02（blocked-access）。書籍で、OA の版は見つかりませんでした。
+- Gabrielsson, J. & Weiner, D. (2006). *Pharmacokinetic and Pharmacodynamic Data Analysis: Concepts and Applications*. 4th ed. Swedish Pharmaceutical Press. 台帳に行がある（自動では取れない）。書籍で、OA の版は見つかりませんでした。
 - Holford, N. (2018). Pharmacodynamic principles and target concentration intervention. *Transl. Clin. Pharmacol.* 26(4), 150. DOI: [10.12793/tcp.2018.26.4.150](https://doi.org/10.12793/tcp.2018.26.4.150)（Crossref で確かめました）。PMC6989251。NCBI の efetch で XML を取りました。読んだ節：「The target principle of dosing」（狙う効果の選び方はいつも治療の利益と毒性の兼ね合いで、臨床の判断が要る。Emax の式。狙う濃度から負荷量と維持量が出る）、「How does this work?」（「治療域」は試行錯誤で決まった許容の範囲で、狙う濃度ではない）、「Three ways to dose」（みなに同じ用量を与えると、足りない人と多すぎる人が出る）、「Unpredictable variability」、「Therapeutic drug monitoring or target concentration intervention?」（範囲の下の端は効かない側、上の端は毒の側に近いのに、範囲の中にあれば何もしない慣行を批判する）、「When to use TCI」（予測できない差は、ある所から先は減らせない）。
 - Holford, N. H. G. & Sheiner, L. B. (1981). Understanding the Dose-Effect Relationship. *Clin. Pharmacokinet.* 6(6), 429–453. DOI 10.2165/00003088-198106060-00002（Crossref で確かめました）。Unpaywall はオークランド大学のリポジトリの著者稿を示しますが、そのサイトは自動取得に確認の画面を返しました。
 
@@ -113,7 +113,7 @@ Claude の読み替えでは、利益と毒性がぶつかる所に、狙う濃�
 
 **一次情報**：
 
-- Davies, J. & Davies, D. (2010). Origins and Evolution of Antibiotic Resistance. *Microbiol. Mol. Biol. Rev.* 74(3), 417–433. DOI: [10.1128/MMBR.00016-10](https://doi.org/10.1128/MMBR.00016-10)（Crossref で確かめました）。台帳 D11-S03。手元の PDF は誌面（ASM の版。PMC2937522）で、表紙の書誌は台帳と合います。読んだ頁：p.417（どんな治療薬も、使い始めたときから耐性の危険がある。多くの勧告が出されたが、耐性の出現は「容赦ない」）、p.419（ペニシリンは 1928 年に Fleming が発見し、治療に使われる前の 1940 年に菌のペニシリン分解酵素が見つかっていた。図 1 の説明に、サリドマイドの災害のあとの FDA の新薬の部局）、pp.424–425（耐性は菌に大きな費用をかけ、薬が無ければ多剤耐性の株は長く続かないと考えられてきたが、その思い込みは「ほとんど作り話になった」。体の中では多くの変異を持つ株が生き延びる。見つかった変異は補う変化かもしれない。人の活動で強められた進化）、p.428（エリスロマイシンは 1950 年代のはじめにボストンの病院で使われ始め、1 年たたずに黄色ブドウ球菌の 70% が耐性になって引き上げられた。耐性は避けられないように見える）、p.429（化学の修飾は「時間を稼ぐ」だけ。薬の入れ替えは、耐性の株が集団から消えないので長くは効かず、戻すとすぐ選び直される。状況は厳しい。治療が効くのは判断のよさより運のおかげかもしれない）。
+- Davies, J. & Davies, D. (2010). Origins and Evolution of Antibiotic Resistance. *Microbiol. Mol. Biol. Rev.* 74(3), 417–433. DOI: [10.1128/MMBR.00016-10](https://doi.org/10.1128/MMBR.00016-10)（Crossref で確かめました）。台帳に行がある。手元の PDF は誌面（ASM の版。PMC2937522）で、表紙の書誌は台帳と合います。読んだ頁：p.417（どんな治療薬も、使い始めたときから耐性の危険がある。多くの勧告が出されたが、耐性の出現は「容赦ない」）、p.419（ペニシリンは 1928 年に Fleming が発見し、治療に使われる前の 1940 年に菌のペニシリン分解酵素が見つかっていた。図 1 の説明に、サリドマイドの災害のあとの FDA の新薬の部局）、pp.424–425（耐性は菌に大きな費用をかけ、薬が無ければ多剤耐性の株は長く続かないと考えられてきたが、その思い込みは「ほとんど作り話になった」。体の中では多くの変異を持つ株が生き延びる。見つかった変異は補う変化かもしれない。人の活動で強められた進化）、p.428（エリスロマイシンは 1950 年代のはじめにボストンの病院で使われ始め、1 年たたずに黄色ブドウ球菌の 70% が耐性になって引き上げられた。耐性は避けられないように見える）、p.429（化学の修飾は「時間を稼ぐ」だけ。薬の入れ替えは、耐性の株が集団から消えないので長くは効かず、戻すとすぐ選び直される。状況は厳しい。治療が効くのは判断のよさより運のおかげかもしれない）。
 - Fleming, A. (1945). Penicillin（ノーベル講演、1945 年 12 月 11 日）. *Nobel Lectures, Physiology or Medicine 1942–1962*. https://www.nobelprize.org/uploads/2018/06/fleming-lecture.pdf 。先頭は `%PDF`、1 頁目の書誌（著者・題・日付）は狙った講演と合いました。読んだ頁：pp.92–93（ペニシリンは毒がほとんど無いので多すぎる心配は無いが、足りない量には危険がある。殺すのに足りない濃度にさらすと、実験室でも体の中でも菌は耐性になる。のどの痛みに自分で足りない量を飲んだ人が妻にうつし、妻の肺炎に効かず妻が亡くなる、という仮の例）。
 - Melnyk, A. H., Wong, A. & Kassen, R. (2015). The fitness costs of antibiotic resistance mutations. *Evol. Appl.* 8(3), 273–283. DOI: [10.1111/eva.12196](https://doi.org/10.1111/eva.12196)（Crossref で確かめました。電子版は 2014 年）。PMC4380921（OA）。読んだ節：要旨と Introduction（薬の使用を止めれば、費用のある耐性は消えるという前提で対策が立てられてきた。止めても耐性が残る理由として、連鎖による共選択、補う変異、費用の無い変異の三つの仮説。三つは Andersson & Hughes 2010 の Box 1 を引く）、Discussion（耐性の変異は全体として費用があるが、薬や菌の種で差が大きい。補う変異は耐性が出て数世代で現れうる。費用と、処方を減らしたあとの耐性の割合の間に、単純なつながりは無い）。
 - Baym, M., Lieberman, T. D., Kelsic, E. D. ら (2016). Spatiotemporal microbial evolution on antibiotic landscapes. *Science* 353(6304), 1147–1151. DOI: [10.1126/science.aag0822](https://doi.org/10.1126/science.aag0822)（Crossref で確かめました）。PMC5534434（著者稿）。読んだ節：要旨と Main Text（120×60 cm の板に濃度の段を作ると、菌の前線が段を越えて広がる。濃度ゼロからいちばん高い段へは直接に適応できず、部分的に耐性の系統は先へ進まなかった。間の段を入れると適応したが、間の段が高すぎると妨げられた。とても耐性の高い変異体が、より感受性の系統の後ろに閉じ込められることがある）。
@@ -145,11 +145,11 @@ Claude の読み替えでは、これは統合でなく片方の勝利です。�
 
 **一次情報**：
 
-- Higuchi, T. (1963). Mechanism of sustained-action medication. Theoretical analysis of rate of release of solid drugs dispersed in solid matrices. *J. Pharm. Sci.* 52(12), 1145–1149. DOI 10.1002/jps.2600521210（Crossref で確かめました）。台帳 D11-S04（blocked-access）。Wiley の有料で、Unpaywall も閉じた論文としています。
-- Korsmeyer, R. W. ら (1983). *Int. J. Pharm.* 15, 25–35. DOI 10.1016/0378-5173(83)90064-9。台帳 D11-S05。Elsevier の有料です。
+- Higuchi, T. (1963). Mechanism of sustained-action medication. Theoretical analysis of rate of release of solid drugs dispersed in solid matrices. *J. Pharm. Sci.* 52(12), 1145–1149. DOI 10.1002/jps.2600521210（Crossref で確かめました）。台帳に行がある（自動では取れない）。Wiley の有料で、Unpaywall も閉じた論文としています。
+- Korsmeyer, R. W. ら (1983). *Int. J. Pharm.* 15, 25–35. DOI 10.1016/0378-5173(83)90064-9。台帳に行がある。Elsevier の有料です。
 - Siepmann, J. & Peppas, N. A. (2011). Higuchi equation: Derivation, applications, use and misuse. *Int. J. Pharm.* 418(1), 6–12. DOI 10.1016/j.ijpharm.2011.03.051（Europe PMC の書誌）。Unpaywall は閉じた論文としています。題に「誤用」とありますが、本文は読んでいません。
-- Rakoczy, R. ら (2026). Mathematical Modeling of Local Drug Delivery in the Oral Cavity: From Release Kinetics to Mini-PBPK and Local PK/PD with Applications to Periodontal Therapies. *Pharmaceutics* 18(1), 101. DOI: [10.3390/pharmaceutics18010101](https://doi.org/10.3390/pharmaceutics18010101)（Crossref で確かめました。電子版は 2026 年 1 月 12 日）。PMC12845442。台帳 D11-S04・S05 が「OA代替」と書く文献です。読んだ節：5.1（拡散で決まる系は Higuchi 式 Mt/M∞ = kH·t^1/2 で、Korsmeyer–Peppas の式は指数 n で拡散とゆるみを分ける。モデルの選び方は情報量の規準で比べ、雑音の多いデータの読みすぎを防ぐ）。口の中の局所の製剤の総説で、Higuchi の論文そのものの照合にはなりません。
-- 厚生省 (1988). 徐放性製剤（経口投与製剤）の設計及び評価に関するガイドライン。台帳 D11-S06（citation-only）。公開の本文を探していません。
+- Rakoczy, R. ら (2026). Mathematical Modeling of Local Drug Delivery in the Oral Cavity: From Release Kinetics to Mini-PBPK and Local PK/PD with Applications to Periodontal Therapies. *Pharmaceutics* 18(1), 101. DOI: [10.3390/pharmaceutics18010101](https://doi.org/10.3390/pharmaceutics18010101)（Crossref で確かめました。電子版は 2026 年 1 月 12 日）。PMC12845442。台帳の「Higuchi 1963」の行が「OA代替」と書く文献です。読んだ節：5.1（拡散で決まる系は Higuchi 式 Mt/M∞ = kH·t^1/2 で、Korsmeyer–Peppas の式は指数 n で拡散とゆるみを分ける。モデルの選び方は情報量の規準で比べ、雑音の多いデータの読みすぎを防ぐ）。口の中の局所の製剤の総説で、Higuchi の論文そのものの照合にはなりません。
+- 厚生省 (1988). 徐放性製剤（経口投与製剤）の設計及び評価に関するガイドライン。台帳に行がある（書誌だけ）。公開の本文を探していません。
 
 **照合の状態**：二次資料のみ（Rakoczy ら 2026 の総説。式の形だけ）。Higuchi 1963・Korsmeyer ら 1983・Siepmann & Peppas 2011・厚生省 1988 は未照合です。
 
@@ -163,7 +163,7 @@ Claude の読み替えでは、これは統合でなく片方の勝利です。�
 | ja 122 行「厚生省（1988年）のガイドラインで試験条件が標準化」 | 未判定 | 低 | 読んでいない |
 | ja 124 行「Higuchi式が波を定量化している点は堅実な対応」、en 108 行「an objective candidate in the sense that the Wave stage can be tracked mathematically」 | 言い過ぎ | 中 | 式が書くのは放出の量で、5段階の波ではない（型 E）。調べた跡 phase6 38 行の言い方 |
 | ja 124 行「自己組織的な渦とは質が異なります」 | 未判定 | 低 | 「意図して設計するもの」を渦の外に置く切り方（型 B・C）。判定は定義が決まってから |
-| 台帳 D11-S04・S05 の「Mathematical Modeling of Local Drug Delivery 2024」 | 取り違え | 低 | Crossref では 2026 年（電子版 2026-01-12）の口の中の局所製剤の総説。Higuchi と Korsmeyer の原典の代わりにはならない |
+| 台帳の「Higuchi 1963」の行の「Mathematical Modeling of Local Drug Delivery 2024」 | 取り違え | 低 | Crossref では 2026 年（電子版 2026-01-12）の口の中の局所製剤の総説。Higuchi と Korsmeyer の原典の代わりにはならない |
 | ja 80 行「場・波・束／部分的対応」、pres 47 行「条件つき」 | 未判定（版の食い違い） | 低 | ja は部分的、pres は条件つき |
 
 ### 5. 君臣佐使（『素問』至真要大論・『神農本草経』序録）
@@ -174,9 +174,9 @@ Claude の読み替えでは、これは統合でなく片方の勝利です。�
 
 - 『黄帝内経素問』至真要大論。ctext の原文：https://ctext.org/huangdi-neijing/zhi-zhen-yao-da-lun/zh （パブリックドメイン）。節で控えました。処方の大小を「君一臣二、制之小也、君一臣三佐五、制之中也、君一臣三佐九、制之大也」と書き、その前に「有毒無毒、所治為主」とあります。君臣の定義は「主病之謂君、佐君之謂臣、應臣之謂使、非上下三品之謂也」です。続けて、三品は「善悪の違いを明らかにするもの」と書きます。同じ段に「寒者熱之、熱者寒之、微者逆之、甚者従之」とあります。
 - 『神農本草経』序録。陶弘景『本草經集注』序錄上の原文（維基文庫）：https://zh.wikisource.org/wiki/本草經集注/序錄上 （パブリックドメイン）。『神農本草経』は失われ、今の本文は後の書物から集め直したもので、版によって文が違います（教科書）。読んだ所：上薬 120 種を君とし、無毒で長く飲んでも害が無い。中薬 120 種を臣とし、毒のあるものもある。下薬 125 種を佐・使とし、毒が多く、長く飲めない。「藥有君臣佐使、以相宣攝。合和者、宜用一君、二臣、五佐、又可一君、三臣、九佐也」。七情として「單行・相須・相使・相畏・相惡・相反・相煞」を挙げ、「相須、相使者良、勿用相惡、相反者。若有毒宜制、可用相畏、相煞、不爾、勿合用也」と書きます。陶弘景の注は、半夏には毒があるので生姜を必ず使う、と例を挙げます。
-- 日本薬学会 薬学用語解説「君臣佐使」。台帳 D11-S07（citation-only）。今のサイト（https://www.pharm.or.jp/dictionary/wiki.cgi?君臣佐使 ）は 2026-11-09 にサーバーの誤り（500）を返しました。確認画面ではなく、サイトの不具合です。Wayback Machine の 2023-02-04 の記録（http://web.archive.org/web/20230204154408/https://www.pharm.or.jp/dictionary/wiki.cgi?%E5%90%9B%E8%87%A3%E4%BD%90%E4%BD%BF ）で読みました。君薬は中心の生薬、臣薬は君薬を助け強める生薬、佐薬は君臣薬の効能を調節する生薬、使薬は補助的な役をし、作用を調節したり飲みやすくしたりする生薬、と書き、桂枝湯の例（桂皮が君、芍薬が臣、甘草が佐、生姜と大棗が使）を挙げます。掲載は 2009 年 5 月 25 日、更新は 2014 年 7 月です。二次資料です。
-- Wu, L., Wang, Y., Li, Z., Zhang, B., Cheng, Y. & Fan, X. (2014). Identifying roles of "Jun-Chen-Zuo-Shi" component herbs of QiShenYiQi formula in treating acute myocardial ischemia by network pharmacology. *Chin. Med.* 9, 24. DOI: [10.1186/1749-8546-9-24](https://doi.org/10.1186/1749-8546-9-24)（Crossref で確かめました）。台帳 D11-S08。手元の PDF は BMC の OA の誌面で、表紙の書誌は台帳と合います。頁は写しの頁（「Page n of 9」）です。読んだ頁：p.1（目的は君臣佐使の規則を試すこと。処方全体の回復の点数 864.48 はどの生薬より高い）、p.2（規則にしたがって、黄芪を君、丹参を臣、三七を佐、降香を使と置く）、p.5（四つの生薬のうち丹参の点数 734.31 がいちばん高く、黄芪 680.27 をわずかに上回る。規則から、君と臣は佐と使より回復させると見込まれ、結果はそれと合う。ただし経路の数では黄芪が処方全体より多い）、pp.5–6（三七と降香の経路はどれも黄芪か丹参にもあるので、佐の役かもしれない）、p.8（結論は君臣佐使の「ありうる役」を示した、とする。希少な病気には向かないかもしれない）。
-- Li, X., Wu, L., Liu, W. ら (2014). A Network Pharmacology Study of Chinese Medicine QiShenYiQi to Reveal Its Underlying Multi-Compound, Multi-Target, Multi-Pathway Mode of Action. *PLoS ONE* 9(5), e95004. DOI: [10.1371/journal.pone.0095004](https://doi.org/10.1371/journal.pone.0095004)（Europe PMC の書誌）。台帳 D11-S09。手元の PDF は PLOS の誌面です。読んだ頁：p.1（要旨。55 の標的の候補のうち 14 は文献で確かめられた。降香の三つの成分の抗炎症の作用を実験で確かめた）。本文に君臣佐使の語はありません。
+- 日本薬学会 薬学用語解説「君臣佐使」。台帳に行がある（書誌だけ）。今のサイト（https://www.pharm.or.jp/dictionary/wiki.cgi?君臣佐使 ）は 2026-11-09 にサーバーの誤り（500）を返しました。確認画面ではなく、サイトの不具合です。Wayback Machine の 2023-02-04 の記録（http://web.archive.org/web/20230204154408/https://www.pharm.or.jp/dictionary/wiki.cgi?%E5%90%9B%E8%87%A3%E4%BD%90%E4%BD%BF ）で読みました。君薬は中心の生薬、臣薬は君薬を助け強める生薬、佐薬は君臣薬の効能を調節する生薬、使薬は補助的な役をし、作用を調節したり飲みやすくしたりする生薬、と書き、桂枝湯の例（桂皮が君、芍薬が臣、甘草が佐、生姜と大棗が使）を挙げます。掲載は 2009 年 5 月 25 日、更新は 2014 年 7 月です。二次資料です。
+- Wu, L., Wang, Y., Li, Z., Zhang, B., Cheng, Y. & Fan, X. (2014). Identifying roles of "Jun-Chen-Zuo-Shi" component herbs of QiShenYiQi formula in treating acute myocardial ischemia by network pharmacology. *Chin. Med.* 9, 24. DOI: [10.1186/1749-8546-9-24](https://doi.org/10.1186/1749-8546-9-24)（Crossref で確かめました）。台帳に行がある。手元の PDF は BMC の OA の誌面で、表紙の書誌は台帳と合います。頁は写しの頁（「Page n of 9」）です。読んだ頁：p.1（目的は君臣佐使の規則を試すこと。処方全体の回復の点数 864.48 はどの生薬より高い）、p.2（規則にしたがって、黄芪を君、丹参を臣、三七を佐、降香を使と置く）、p.5（四つの生薬のうち丹参の点数 734.31 がいちばん高く、黄芪 680.27 をわずかに上回る。規則から、君と臣は佐と使より回復させると見込まれ、結果はそれと合う。ただし経路の数では黄芪が処方全体より多い）、pp.5–6（三七と降香の経路はどれも黄芪か丹参にもあるので、佐の役かもしれない）、p.8（結論は君臣佐使の「ありうる役」を示した、とする。希少な病気には向かないかもしれない）。
+- Li, X., Wu, L., Liu, W. ら (2014). A Network Pharmacology Study of Chinese Medicine QiShenYiQi to Reveal Its Underlying Multi-Compound, Multi-Target, Multi-Pathway Mode of Action. *PLoS ONE* 9(5), e95004. DOI: [10.1371/journal.pone.0095004](https://doi.org/10.1371/journal.pone.0095004)（Europe PMC の書誌）。台帳に行がある。手元の PDF は PLOS の誌面です。読んだ頁：p.1（要旨。55 の標的の候補のうち 14 は文献で確かめられた。降香の三つの成分の抗炎症の作用を実験で確かめた）。本文に君臣佐使の語はありません。
 
 **照合の状態**：『素問』至真要大論と『神農本草経』序録（『本草經集注』序錄上）は本文照合済（原文。パブリックドメイン。節で控えた）。Wu ら 2014 は本文照合済（pp.1–2・5–6・8）。Li ら 2014 は本文照合済（p.1）。日本薬学会の用語解説は二次資料のみ（Wayback の記録）です。
 
@@ -190,7 +190,7 @@ Wu らは、規則で役を先に置いてから、回復の点数を比べて�
 
 | 今の報告の行 | 判定 | 重さ | 中身 |
 |---|---|---|---|
-| ja 81 行「日本薬学会 (2024)」、ja 128 行、退避版 175 行・185 行、DR 59 行・80 行、台帳 D11-S07 | 取り違え | 高 | 用語解説の掲載は 2009-05-25、更新は 2014-07（Wayback の記録）。2024 年ではない。DR の書誌がそのまま写った |
+| ja 81 行「日本薬学会 (2024)」、ja 128 行、退避版 175 行・185 行、DR 59 行・80 行、台帳に行がある | 取り違え | 高 | 用語解説の掲載は 2009-05-25、更新は 2014-07（Wayback の記録）。2024 年ではない。DR の書誌がそのまま写った |
 | ja 81 行「提唱者/起源 日本薬学会 (2024), Wu et al. (2014)」 | 帰属違い | 高 | 語の出どころは『素問』至真要大論と『神農本草経』序録。日本薬学会は解説、Wu らは読み替え |
 | ja 130 行「主作用を担う君薬、補助する臣薬、調整する佐薬、調和する使薬の4層」 | 一致 | ― | 日本薬学会の用語解説（2009 年の版は「調和」、2014 年の版は「調節したり、服用しやすくする」）。『素問』は佐を定めず、使を「臣に応じるもの」とする |
 | ja 130 行「Wu et al.（2014）は…各生薬の役割を定量的に同定」 | 言い過ぎ | 中 | Wu らは規則で役を先に置いて点数を比べ、「ありうる役」と書く（pp.2・8）。君より臣の点数が高い（p.5） |
@@ -207,9 +207,9 @@ Wu らは、規則で役を先に置いてから、回復の点数を比べて�
 
 **一次情報**：
 
-- ICH (2009). Q8(R2) Pharmaceutical Development. Step 4, August 2009。台帳 D11-S10。手元の PDF は ICH の公式の文書で、表紙の書誌は台帳と合います。読んだ頁：pp.1–2（品質は製品に検査で作り込めず、設計で作り込む。開発や製造の変更、予期しない結果の実験も知識を得る機会。デザインスペースの中での操作は変更とみなされず、外に出ると変更として承認後の手続きが始まる）、p.7（用語集。デザインスペースは「品質を保証することが示された、入力の変数と工程のパラメータの多次元の組み合わせと相互作用」）、付属書 p.13（§2.4.6 デザインスペースと失敗の縁。品質の特性を満たせなくなる境の「失敗の縁」を決めると役に立つことがあるが、それはデザインスペースを立てるのに欠かせないものではない）。
-- ICH (2023). Q9(R1) Quality Risk Management. 2023 年 1 月 18 日採択。台帳 D11-S12。手元の PDF は ICH の公式の文書で、ファイルの題は 2025-01-15 の小さな訂正の版です。読んだ頁：p.1（危険は害の起きる確率と重さの組み合わせ。関わる人ごとに害の見方が違い、主観が判断に影響する。患者を守ることが第一）、p.5（§4.4 危険の受け入れ。よいやり方でも危険を消しきれない害があり、決めた水準まで下げて受け入れる）、p.9（§5.3 主観は消しきれないが、偏りと前提を見ることで抑えられる）。
-- ICH (2008). Q10 Pharmaceutical Quality System. Step 4, 4 June 2008。台帳 D11-S11。読んだ頁：p.8（§3.2.1。工程と品質の監視は、苦情・製品の不合格・不適合・回収・逸脱などからの声を入れ、デザインスペースを豊かにする知識を返す）、p.9（§3.2.2 是正と予防の処置。苦情・回収・逸脱などの調べから根本の原因を探し、製品と工程の改善につなげる）。
+- ICH (2009). Q8(R2) Pharmaceutical Development. Step 4, August 2009。台帳に行がある。手元の PDF は ICH の公式の文書で、表紙の書誌は台帳と合います。読んだ頁：pp.1–2（品質は製品に検査で作り込めず、設計で作り込む。開発や製造の変更、予期しない結果の実験も知識を得る機会。デザインスペースの中での操作は変更とみなされず、外に出ると変更として承認後の手続きが始まる）、p.7（用語集。デザインスペースは「品質を保証することが示された、入力の変数と工程のパラメータの多次元の組み合わせと相互作用」）、付属書 p.13（§2.4.6 デザインスペースと失敗の縁。品質の特性を満たせなくなる境の「失敗の縁」を決めると役に立つことがあるが、それはデザインスペースを立てるのに欠かせないものではない）。
+- ICH (2023). Q9(R1) Quality Risk Management. 2023 年 1 月 18 日採択。台帳に行がある。手元の PDF は ICH の公式の文書で、ファイルの題は 2025-01-15 の小さな訂正の版です。読んだ頁：p.1（危険は害の起きる確率と重さの組み合わせ。関わる人ごとに害の見方が違い、主観が判断に影響する。患者を守ることが第一）、p.5（§4.4 危険の受け入れ。よいやり方でも危険を消しきれない害があり、決めた水準まで下げて受け入れる）、p.9（§5.3 主観は消しきれないが、偏りと前提を見ることで抑えられる）。
+- ICH (2008). Q10 Pharmaceutical Quality System. Step 4, 4 June 2008。台帳に行がある。読んだ頁：p.8（§3.2.1。工程と品質の監視は、苦情・製品の不合格・不適合・回収・逸脱などからの声を入れ、デザインスペースを豊かにする知識を返す）、p.9（§3.2.2 是正と予防の処置。苦情・回収・逸脱などの調べから根本の原因を探し、製品と工程の改善につなげる）。
 - Yu, L. X., Amidon, G., Khan, M. A. ら (2014). Understanding Pharmaceutical Quality by Design. *AAPS J.* 16(4), 771–783. DOI: [10.1208/s12248-014-9598-3](https://doi.org/10.1208/s12248-014-9598-3)（Crossref で確かめました）。PMC4070262。NCBI の efetch の XML は要旨だけだったので、PMC の記事の頁（HTML）で読みました。読んだ節：INTRODUCTION（品質の危機や問題の多くは、製品の設計のしかたに由来する。QbD の目標は、臨床の働きに基づく規格、ばらつきと欠陥の低減、効率、原因の分析と承認後の変更の管理）、ELEMENTS OF PHARMACEUTICAL QUALITY BY DESIGN（添加剤はばらつきの大きな源で、選び方の原則がはっきりしていない。工程がよく分かっているとは、ばらつきの源が分かり、工程で抑えられ、品質を予測できること）。
 
 **照合の状態**：ICH Q8(R2)・Q9(R1)・Q10 は本文照合済（公式の PDF。上の頁）。Yu ら 2014 は本文照合済（PMC の HTML。節で控えた）です。ガイドラインは規制の手順の文書で、学術の論ではありません。
@@ -280,7 +280,7 @@ Claude の読み替えでは、品質を損なうもの（ばらつき・逸脱�
 | ja 154 行「FDA（2005）が薬理ゲノミクスデータ提出の枠組みを明確化」 | 未判定 | 低 | 読んでいない |
 | ja 156 行「ゲノム型が判明するまで個人の代謝パターンは未決定であるという点が、縁の未決定性と…」、en 106 行 | 取り違え | 中 | 原典の生まれつきの型（germline）は決まっていて、分からないだけ。未知と未決定の取り違え。退避版 285 行の言い方 |
 | ja 152〜158 行（検査の政策が害を減らさなかった例、学会の意見の分かれ、処方を変える薬が 7% ほどであることに触れない） | 抜け | 中 | Relling & Evans の三つの節 |
-| ja 158 行・198〜200 行「薬学では場が個人ごとに異なることが遺伝情報で裏付けられています」「物理学では場は普遍的法則に従い個体によりません」 | 付け足し | 中 | 5段階の「場」と、遺伝の型の個人差は語が同じだけ（型 H）。物理の場の言い方は D02 の記録で確かめていない |
+| ja 158 行・198〜200 行「薬学では場が個人ごとに異なることが遺伝情報で裏付けられています」「物理学では場は普遍的法則に従い個体によりません」 | 付け足し | 中 | 5段階の「場」と、遺伝の型の個人差は語が同じだけ（型 H）。物理の場の言い方は物理学の記録で確かめていない |
 | ja 84 行「場・縁／部分的対応」、pres 45 行「確定に近い」、退避版 392 行「縁フラグ🔴」 | 未判定（版の食い違い） | 中 | ja は部分的、pres は確定に近い |
 
 ### 9. 薬物相互作用（Huang ら 2007）
@@ -376,7 +376,7 @@ Claude の読み替えでは、二つの薬の取り合いで片方が負け、�
 | 相互作用 | 予期しない相互作用で、承認の直後に市場から引き上げられた（Zhang ら） | 予測の模型が写せる範囲 |
 | 構造ベース創薬 | 合う強さだけでは薬にならず、折り合いが要る（van Montfort & Workman） | 一つの分子に両立できる性質 |
 
-並べ方で見ると、耐性は片方の勝利（薬が負けて場に戻る）、相互作用での引き上げとパイプラインで止まる候補は場に戻る形、QbD の受け入れた危険は危険を抱えたままの統合（悪い統合とも読めます）です。善悪で分けず、統合に至ったかどうかで並べています（`docs/cs-review/README.md` の中心の問い）。
+並べ方で見ると、耐性は片方の勝利（薬が負けて場に戻る）、相互作用での引き上げとパイプラインで止まる候補は場に戻る形、QbD の受け入れた危険は危険を抱えたままの統合（悪い統合とも読めます）です。善悪で分けず、統合に至ったかどうかで並べています（調べ方の計画と規約の中心の問い）。
 
 ### テンプレート由来の表示
 
@@ -386,7 +386,7 @@ Claude の読み替えでは、二つの薬の取り合いで片方が負け、�
 
 | 誤り | 出どころ |
 |---|---|
-| 「日本薬学会 (2024)」 | DR 59 行・80 行。退避版 175 行・185 行に写り、台帳 D11-S07 にも入った |
+| 「日本薬学会 (2024)」 | DR 59 行・80 行。退避版 175 行・185 行に写り、台帳の「日本薬学会 2009」の行にも入った |
 | 「Paul et al. 2010の推定で約11.8%」 | 退避版 34 行（「他の大規模推定では約13.8%」と並べる。13.8% は Wong ら 2019 の数） |
 | 判定の数が版ごとに違う | ja 本文の 4 は出どころが分からない（phase5 の Anchor は 3）。en の 6 は退避版 392 行の縁フラグ🔴 6。pres の三つの温度は退避版にも phase5 にも無い |
 | 「縁のスペクトラム」 | 調べた跡 phase6 86 行・107 行・129 行（H2）、phase7 7 行、退避版 L-4（408 行） |
@@ -399,7 +399,7 @@ Claude の読み替えでは、二つの薬の取り合いで片方が負け、�
 | 「耐性の自己組織化」 | 調べた跡 phase5 186 行 |
 | テンプレートの表示 | 報告のテンプレート |
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 E（断定・看板・「最も」）：「『似ている』ではなく『規制語彙が同じ構造を記述している』と言いうる堅固な対応であり、薬学で最も強い構造類似を示す事例」（142 行）、「縁との最も直接的な対応」（132 行）、「5段階の定量的記述が可能な稀有な事例」（108 行）、「全30領域を通じても稀少」（220 行）、「一領域内で完全に示す」（220 行）。
 - 型 H（原典に無い体系）：「縁の制御可能性スペクトラム」（182〜188 行）、「意識的な螺旋」（196 行）、「場の解像度」（200 行）、en の「Fractal Structure Across Scales」（132 行）。
@@ -409,70 +409,65 @@ Claude の読み替えでは、二つの薬の取り合いで片方が負け、�
 
 ### 精読ノートと wiki・台帳の誤り（司令塔が直す）
 
-- `pd/wiki/sources/D11_li_2014_network-pharmacology-qishenyiqi.md` 58 行：DOI が 10.1371/journal.pone.0105865 で、Crossref では Lima ら「Cytoxicity and Apoptotic Mechanism of Ruthenium(II) Amino Acid Complexes in Sarcoma-180 Tumor Cells」（PLoS ONE 2014）を指す。正しくは 10.1371/journal.pone.0095004（同じ頁の 57 行の「e95004」と精読ノート D11-S09 16 行は正しい）。
+- wiki の頁「Li 2014」 58 行：DOI が 10.1371/journal.pone.0105865 で、Crossref では Lima ら「Cytoxicity and Apoptotic Mechanism of Ruthenium(II) Amino Acid Complexes in Sarcoma-180 Tumor Cells」（PLoS ONE 2014）を指す。正しくは 10.1371/journal.pone.0095004（同じ頁の 57 行の「e95004」と精読ノート「Li ら 2014」 16 行は正しい）。
 - 同じ頁 3 行・17 行：「気参益気滴丸」は「芪参益気」（芪は黄芪）の誤字。
-- `cs/knowledge/source-notes/D11/D11-S03_davies-2010.md` 118 行：「The tragedy is that most pharmaceutical companies are now shirking…」の頁が p.428 で、手元の PDF では p.430。
-- 台帳 D11-S04・S05：OA の代わりに挙げる「Mathematical Modeling of Local Drug Delivery 2024 PMC12845442」は、Crossref では Rakoczy ら（2026）*Pharmaceutics* 18(1), 101（口の中の局所の製剤の総説）。Higuchi と Korsmeyer の原典の照合の代わりにはならない。
-- 台帳 D11-S07：「日本薬学会 (2024)」は、用語解説の掲載が 2009-05-25、更新が 2014-07。今のサイトは 2026-11-09 に 500 を返し、Wayback の記録で読める。
-- 台帳 D11-S12：手元の PDF は 2025-01-15 の小さな訂正の版（ファイルの題）。採択は 2023-01-18 のまま。
+- 精読ノート「Davies 2010」 118 行：「The tragedy is that most pharmaceutical companies are now shirking…」の頁が p.428 で、手元の PDF では p.430。
+- 台帳の「Higuchi 1963」の行：OA の代わりに挙げる「Mathematical Modeling of Local Drug Delivery 2024 PMC12845442」は、Crossref では Rakoczy ら（2026）*Pharmaceutics* 18(1), 101（口の中の局所の製剤の総説）。Higuchi と Korsmeyer の原典の照合の代わりにはならない。
+- 台帳の「日本薬学会 2009」の行：「日本薬学会 (2024)」は、用語解説の掲載が 2009-05-25、更新が 2014-07。今のサイトは 2026-11-09 に 500 を返し、Wayback の記録で読める。
+- 台帳の「ICH 2023」の行：手元の PDF は 2025-01-15 の小さな訂正の版（ファイルの題）。採択は 2023-01-18 のまま。
 
-精読ノート D11-S03 のほかの引用の頁（p.417・p.418・p.419・p.423・p.429）と、D11-S08 の引用（p.1・p.8）は、読んだ所では原典と合っていました。
+精読ノート「Davies & Davies 2010」のほかの引用の頁（p.417・p.418・p.419・p.423・p.429）と、台帳の「Wu ら 2014」の行の引用（p.1・p.8）は、読んだ所では原典と合っていました。
 
 ## 判断が要るもの
 
-pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは `docs/cs-review/README.md` の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
+pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは調べ方の計画と規約の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
 
 - 君臣佐使は東洋の像なので、原典の文脈で照合しました（writing §2-9）。『素問』と『神農本草経』で君臣の定め方が違うことは、どちらを正とするかを決めず、両方を書きました（型 B「両立する面として書けないか」）。
 - 日本薬学会の用語解説の今の頁は 500 を返したので、Wayback Machine の記録で読み、二次資料としました。学会のサイトの記録なので出所は書けますが、用語解説は学術の論でも原典でもありません。
 - ICH のガイドラインは、規制の当局と業界が定めた手順の文書で、設計者の意図が入っています。「本文照合済」は、文書の本文を読んだという意味で、現象の理論を確かめたという意味ではありません。
 - プロドラッグの節で、報告の言い方が抱持の語の言い換えから来ていることを、調べた跡で確かめました。旧い規則の「欠損駆動思考・抱持を持ち込まない」の行に当たるので、付け足しとしました。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-manifest は書き換えていません。番号は台帳と同じ形で、D11-S18 から振りました。
+台帳は書き換えていません。
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D11-S18 | Wong, C. H., Siah, K. W. & Lo, A. W. (2019). Estimation of clinical trial success rates and related parameters. *Biostatistics* 20(2), 273–286. DOI 10.1093/biostatistics/kxx069 | PMC6409418（CC BY。NCBI の efetch で XML） | url-verified |
-| D11-S19 | Scannell, J. W. & Bosley, J. (2016). When Quality Beats Quantity: Decision Theory, Drug Discovery, and the Reproducibility Crisis. *PLOS ONE* 11(2), e0147215. DOI 10.1371/journal.pone.0147215 | PMC4749240 | url-verified |
-| D11-S20 | Scannell, J. W., Blanckley, A., Boldon, H. & Warrington, B. (2012). Diagnosing the decline in pharmaceutical R&D efficiency. *Nat. Rev. Drug Discov.* 11, 191–200. DOI 10.1038/nrd3681 | Nature（有料。取得を試していない） | citation-only |
-| D11-S21 | Holford, N. (2018). Pharmacodynamic principles and target concentration intervention. *Transl. Clin. Pharmacol.* 26(4), 150. DOI 10.12793/tcp.2018.26.4.150 | PMC6989251 | url-verified |
-| D11-S22 | Holford, N. H. G. & Sheiner, L. B. (1981). Understanding the Dose-Effect Relationship. *Clin. Pharmacokinet.* 6(6), 429–453. DOI 10.2165/00003088-198106060-00002 | https://hdl.handle.net/2292/33245 （オークランド大学のリポジトリ。自動取得で確認の画面） | blocked-access |
-| D11-S23 | Fleming, A. (1945). Penicillin（ノーベル講演）. *Nobel Lectures, Physiology or Medicine 1942–1962*, pp.83–93 | https://www.nobelprize.org/uploads/2018/06/fleming-lecture.pdf | raw-confirmed（保存名の案 `D11_fleming_1945_nobel-lecture-penicillin.pdf`） |
-| D11-S24 | Melnyk, A. H., Wong, A. & Kassen, R. (2015). The fitness costs of antibiotic resistance mutations. *Evol. Appl.* 8(3), 273–283. DOI 10.1111/eva.12196 | PMC4380921 | url-verified |
-| D11-S25 | Baym, M., Lieberman, T. D., Kelsic, E. D. ら (2016). Spatiotemporal microbial evolution on antibiotic landscapes. *Science* 353(6304), 1147–1151. DOI 10.1126/science.aag0822 | PMC5534434（著者稿） | url-verified（著者稿） |
-| D11-S26 | Andersson, D. I. & Hughes, D. (2010). Antibiotic resistance and its cost: is it possible to reverse resistance? *Nat. Rev. Microbiol.* 8(4), 260–271. DOI 10.1038/nrmicro2319 | Nature（有料。Unpaywall の Zenodo の記録は API で取れなかった） | citation-only |
-| D11-S27 | 『黄帝内経素問』至真要大論 | https://ctext.org/huangdi-neijing/zhi-zhen-yao-da-lun/zh （パブリックドメイン） | url-verified |
-| D11-S28 | 陶弘景『本草經集注』序錄上（『神農本草経』序録の本文を含む） | https://zh.wikisource.org/wiki/本草經集注/序錄上 （パブリックドメイン） | url-verified |
-| D11-S29 | Siepmann, J. & Peppas, N. A. (2011). Higuchi equation: Derivation, applications, use and misuse. *Int. J. Pharm.* 418(1), 6–12. DOI 10.1016/j.ijpharm.2011.03.051 | Elsevier（有料） | citation-only |
-| D11-S30 | Rakoczy, R. ら (2026). Mathematical Modeling of Local Drug Delivery in the Oral Cavity. *Pharmaceutics* 18(1), 101. DOI 10.3390/pharmaceutics18010101 | PMC12845442 | url-verified（二次資料。D11-S04・S05 の「OA代替」の書誌を直したもの） |
-| D11-S31 | Yu, L. X., Amidon, G., Khan, M. A. ら (2014). Understanding Pharmaceutical Quality by Design. *AAPS J.* 16(4), 771–783. DOI 10.1208/s12248-014-9598-3 | PMC4070262（XML は要旨だけ。記事の頁の HTML で全文） | url-verified |
-| D11-S32 | Rautio, J., Kumpulainen, H., Heimbach, T. ら (2008). Prodrugs: design and clinical applications. *Nat. Rev. Drug Discov.* 7, 255–270. DOI 10.1038/nrd2468 | Nature（有料） | citation-only |
-| D11-S33 | Huttunen, K. M., Raunio, H. & Rautio, J. (2011). Prodrugs—from Serendipity to Rational Design. *Pharmacol. Rev.* 63(3), 750–771. DOI 10.1124/pr.110.003459 | ASPET（自動取得で 403） | blocked-access |
-| D11-S34 | Relling, M. V. & Evans, W. E. (2015). Pharmacogenomics in the clinic. *Nature* 526, 343–350. DOI 10.1038/nature15817 | PMC4711261（著者稿） | url-verified（著者稿） |
-| D11-S35 | Evans, W. E. & McLeod, H. L. (2003). Pharmacogenomics—drug disposition, drug targets, and side effects. *N. Engl. J. Med.* 348, 538–549. DOI 10.1056/NEJMra020526 | NEJM（有料） | citation-only |
-| D11-S36 | Huang, S.-M., Temple, R., Throckmorton, D. C. ら (2007). Drug interaction studies: study design, data analysis, and implications for dosing and labeling. *Clin. Pharmacol. Ther.* 81(2), 298–304. DOI 10.1038/sj.clpt.6100054 | Wiley（有料） | citation-only |
-| D11-S37 | Zhang, L., Zhang, Y. D., Zhao, P. & Huang, S.-M. (2009). Predicting Drug–Drug Interactions: An FDA Perspective. *AAPS J.* 11(2), 300–306. DOI 10.1208/s12248-009-9106-3 | PMC2691466（記事の頁の HTML） | url-verified |
-| D11-S38 | ICH (2024). M12 Drug Interaction Studies. Adopted 21 May 2024 | https://database.ich.org/sites/default/files/ICH_M12_Step4_Guideline_2024_0521.pdf | raw-confirmed（保存名の案 `D11_ich_2024_m12-drug-interaction.pdf`） |
-| D11-S39 | Anderson, A. C. (2003). The Process of Structure-Based Drug Design. *Chem. Biol.* 10(9), 787–797. DOI 10.1016/j.chembiol.2003.09.002 | cell.com（Unpaywall は bronze。自動取得で 403） | blocked-access |
-| D11-S40 | van Montfort, R. L. M. & Workman, P. (2017). Structure-based drug design: aiming for a perfect fit. *Essays Biochem.* 61(5), 431–437. DOI 10.1042/EBC20170052 | PMC5869280 | url-verified |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| Wong, C. H., Siah, K. W. & Lo, A. W. (2019). Estimation of clinical trial success rates and related parameters. *Biostatistics* 20(2), 273–286. DOI 10.1093/biostatistics/kxx069 | PMC6409418（CC BY。NCBI の efetch で XML） | 取得先を確かめた |
+| Scannell, J. W. & Bosley, J. (2016). When Quality Beats Quantity: Decision Theory, Drug Discovery, and the Reproducibility Crisis. *PLOS ONE* 11(2), e0147215. DOI 10.1371/journal.pone.0147215 | PMC4749240 | 取得先を確かめた |
+| Scannell, J. W., Blanckley, A., Boldon, H. & Warrington, B. (2012). Diagnosing the decline in pharmaceutical R&D efficiency. *Nat. Rev. Drug Discov.* 11, 191–200. DOI 10.1038/nrd3681 | Nature（有料。取得を試していない） | 書誌だけ |
+| Holford, N. (2018). Pharmacodynamic principles and target concentration intervention. *Transl. Clin. Pharmacol.* 26(4), 150. DOI 10.12793/tcp.2018.26.4.150 | PMC6989251 | 取得先を確かめた |
+| Holford, N. H. G. & Sheiner, L. B. (1981). Understanding the Dose-Effect Relationship. *Clin. Pharmacokinet.* 6(6), 429–453. DOI 10.2165/00003088-198106060-00002 | https://hdl.handle.net/2292/33245 （オークランド大学のリポジトリ。自動取得で確認の画面） | 自動では取れない |
+| Fleming, A. (1945). Penicillin（ノーベル講演）. *Nobel Lectures, Physiology or Medicine 1942–1962*, pp.83–93 | https://www.nobelprize.org/uploads/2018/06/fleming-lecture.pdf | 手元に保存した（保存名の案手元の PDF） |
+| Melnyk, A. H., Wong, A. & Kassen, R. (2015). The fitness costs of antibiotic resistance mutations. *Evol. Appl.* 8(3), 273–283. DOI 10.1111/eva.12196 | PMC4380921 | 取得先を確かめた |
+| Baym, M., Lieberman, T. D., Kelsic, E. D. ら (2016). Spatiotemporal microbial evolution on antibiotic landscapes. *Science* 353(6304), 1147–1151. DOI 10.1126/science.aag0822 | PMC5534434（著者稿） | 取得先を確かめた（著者稿） |
+| Andersson, D. I. & Hughes, D. (2010). Antibiotic resistance and its cost: is it possible to reverse resistance? *Nat. Rev. Microbiol.* 8(4), 260–271. DOI 10.1038/nrmicro2319 | Nature（有料。Unpaywall の Zenodo の記録は API で取れなかった） | 書誌だけ |
+| 『黄帝内経素問』至真要大論 | https://ctext.org/huangdi-neijing/zhi-zhen-yao-da-lun/zh （パブリックドメイン） | 取得先を確かめた |
+| 陶弘景『本草經集注』序錄上（『神農本草経』序録の本文を含む） | https://zh.wikisource.org/wiki/本草經集注/序錄上 （パブリックドメイン） | 取得先を確かめた |
+| Siepmann, J. & Peppas, N. A. (2011). Higuchi equation: Derivation, applications, use and misuse. *Int. J. Pharm.* 418(1), 6–12. DOI 10.1016/j.ijpharm.2011.03.051 | Elsevier（有料） | 書誌だけ |
+| Rakoczy, R. ら (2026). Mathematical Modeling of Local Drug Delivery in the Oral Cavity. *Pharmaceutics* 18(1), 101. DOI 10.3390/pharmaceutics18010101 | PMC12845442 | 取得先を確かめた（二次資料。台帳の「Higuchi 1963」の行の「OA代替」の書誌を直したもの） |
+| Yu, L. X., Amidon, G., Khan, M. A. ら (2014). Understanding Pharmaceutical Quality by Design. *AAPS J.* 16(4), 771–783. DOI 10.1208/s12248-014-9598-3 | PMC4070262（XML は要旨だけ。記事の頁の HTML で全文） | 取得先を確かめた |
+| Rautio, J., Kumpulainen, H., Heimbach, T. ら (2008). Prodrugs: design and clinical applications. *Nat. Rev. Drug Discov.* 7, 255–270. DOI 10.1038/nrd2468 | Nature（有料） | 書誌だけ |
+| Huttunen, K. M., Raunio, H. & Rautio, J. (2011). Prodrugs—from Serendipity to Rational Design. *Pharmacol. Rev.* 63(3), 750–771. DOI 10.1124/pr.110.003459 | ASPET（自動取得で 403） | 自動では取れない |
+| Relling, M. V. & Evans, W. E. (2015). Pharmacogenomics in the clinic. *Nature* 526, 343–350. DOI 10.1038/nature15817 | PMC4711261（著者稿） | 取得先を確かめた（著者稿） |
+| Evans, W. E. & McLeod, H. L. (2003). Pharmacogenomics—drug disposition, drug targets, and side effects. *N. Engl. J. Med.* 348, 538–549. DOI 10.1056/NEJMra020526 | NEJM（有料） | 書誌だけ |
+| Huang, S.-M., Temple, R., Throckmorton, D. C. ら (2007). Drug interaction studies: study design, data analysis, and implications for dosing and labeling. *Clin. Pharmacol. Ther.* 81(2), 298–304. DOI 10.1038/sj.clpt.6100054 | Wiley（有料） | 書誌だけ |
+| Zhang, L., Zhang, Y. D., Zhao, P. & Huang, S.-M. (2009). Predicting Drug–Drug Interactions: An FDA Perspective. *AAPS J.* 11(2), 300–306. DOI 10.1208/s12248-009-9106-3 | PMC2691466（記事の頁の HTML） | 取得先を確かめた |
+| ICH (2024). M12 Drug Interaction Studies. Adopted 21 May 2024 | https://database.ich.org/sites/default/files/ICH_M12_Step4_Guideline_2024_0521.pdf | 手元に保存した（保存名の案手元の PDF） |
+| Anderson, A. C. (2003). The Process of Structure-Based Drug Design. *Chem. Biol.* 10(9), 787–797. DOI 10.1016/j.chembiol.2003.09.002 | cell.com（Unpaywall は bronze。自動取得で 403） | 自動では取れない |
+| van Montfort, R. L. M. & Workman, P. (2017). Structure-based drug design: aiming for a perfect fit. *Essays Biochem.* 61(5), 431–437. DOI 10.1042/EBC20170052 | PMC5869280 | 取得先を確かめた |
 
 既存の行に書き足す案：
 
-- D11-S01（Paul ら 2010）：Unpaywall は閉じた論文。段階ごとの成功率は D11-S18（Wong ら 2019）で確かめられる。
-- D11-S03（Davies & Davies 2010）：手元の PDF の表紙は ASM の誌面。p.430 の引用の頁は精読ノートと違う（上の「精読ノートと wiki・台帳の誤り」）。
-- D11-S04・S05：「OA代替」の書誌を D11-S30 に直す。
-- D11-S07：題を「薬学用語解説『君臣佐使』（2009-05-25 掲載、2014-07 更新）」に。今のサイトは 500。Wayback：http://web.archive.org/web/20230204154408/https://www.pharm.or.jp/dictionary/wiki.cgi?%E5%90%9B%E8%87%A3%E4%BD%90%E4%BD%BF
-- D11-S12：手元の PDF は 2025-01-15 の小さな訂正の版。
+- 台帳の「Paul ら 2010」の行（Paul ら 2010）：Unpaywall は閉じた論文。段階ごとの成功率は台帳の「Wong ら 2019」の行（Wong ら 2019）で確かめられる。
+- 台帳の「Davies & Davies 2010」の行（Davies & Davies 2010）：手元の PDF の表紙は ASM の誌面。p.430 の引用の頁は精読ノートと違う（上の「精読ノートと wiki・台帳の誤り」）。
+- 台帳の「Higuchi 1963」の行：「OA代替」の書誌を台帳の「Rakoczy 2026」の行に直す。
+- 台帳の「日本薬学会 2009」の行：題を「薬学用語解説『君臣佐使』（2009-05-25 掲載、2014-07 更新）」に。今のサイトは 500。Wayback：http://web.archive.org/web/20230204154408/https://www.pharm.or.jp/dictionary/wiki.cgi?%E5%90%9B%E8%87%A3%E4%BD%90%E4%BD%BF
+- 台帳の「ICH 2023」の行：手元の PDF は 2025-01-15 の小さな訂正の版。
 
 ## ブラウザでの保存が要る PDF
 
-| 台帳の行 | 文献 | ダウンロード先 | 保存名の案 |
-|---|---|---|---|
-| D11-S33 の案 | Huttunen, Raunio & Rautio (2011) *Pharmacol. Rev.* 63, 750 | https://pharmrev.aspetjournals.org/content/63/3/750.full.pdf | `D11_huttunen_2011_prodrugs-serendipity-rational-design.pdf` |
-| D11-S39 の案 | Anderson (2003) *Chem. Biol.* 10, 787 | http://www.cell.com/article/S1074552103001947/pdf | `D11_anderson_2003_process-structure-based-drug-design.pdf` |
-| D11-S22 の案 | Holford & Sheiner (1981) *Clin. Pharmacokinet.* 6, 429（著者稿） | https://hdl.handle.net/2292/33245 | `D11_holford-sheiner_1981_dose-effect-relationship.pdf` |
-| D11-S18 の案 | Wong, Siah & Lo (2019) *Biostatistics* 20, 273（頁のある PDF） | https://academic.oup.com/biostatistics/article/20/2/273/4817524 （PMC6409418 の PDF でもよい。取得は試していない） | `D11_wong_2019_clinical-trial-success-rates.pdf` |
+自動で取れなかった原典のうち、ブラウザでの保存を頼むものは、作業の記録（[Issue #73](https://github.com/uminomae/project-design-theory/issues/73)）の表にまとめました。
 
 ## 手順について分かったこと
 
@@ -480,6 +475,6 @@ manifest は書き換えていません。番号は台帳と同じ形で、D11-S
 - 有料の原論文（Nature Reviews・NEJM・Wiley・Elsevier）は、同じ論の中の OA の論文（Wong ら・Scannell & Bosley・Melnyk ら）、PMC の著者稿（Relling & Evans・Baym ら）、著者の後の解説（Holford 2018）、ノーベル講演（Fleming）、公式のガイドライン（ICH M12）で、論の芯に当たれました。
 - 君臣佐使は、ctext と維基文庫の原文で、語の出どころの二つの古典に当たれました。二つの古典で定め方が違い、報告の四つの役の説明は後の整理でした。
 - 頼む文に書かれた当たりのうち、Zhang ら（2009）の誌名（Drug Metab. Dispos.）は違い、Crossref では AAPS J でした。頼む文の書誌も Crossref で照らしてから使うと、取り違えを避けられます（型 H の確認）。
-- 台帳の「OA代替」が、別の主題の新しい総説を指していることがありました（D11-S04・S05）。台帳の代わりの文献も、書誌を Crossref で照らしてから使います。
+- 台帳の「OA代替」が、別の主題の新しい総説を指していることがありました。台帳の代わりの文献も、書誌を Crossref で照らしてから使います。
 - PMC の efetch の XML は、Springer の雑誌（AAPS J）では要旨だけでした。そのときは PMC の記事の頁（HTML）で全文が読めました。Europe PMC の fullTextXML は、この日はどれも 500 を返しました。
 - 学会のサイトの今の頁がサーバーの誤り（500）を返したときは、Wayback Machine の記録で読めました。確認画面とは分けて書きました。米国 FDA のガイダンスの頁は 404 で、置き場が変わったかは確かめていません。

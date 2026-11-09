@@ -10,8 +10,7 @@
 
 ### Key Concepts
 - **Five Stages of Creation** (創造の5段階モデル): Field (場) -- undifferentiated potential; Wave (波) -- separation into opposites; Edge (縁) -- connecting at boundaries; Vortex (渦) -- integrating into a whole; Bundle (束) -- converging into lasting structure.
-- **Beauty-Driven Thinking** (美駆動思考): An approach where aesthetic perception guides the recognition and pursuit of structural patterns across domains.
-- **Cross-Domain Validation** (領域横断検証): Multi-phase verification using multiple AI engines to validate structural similarities.
+- **Cross-Domain Survey** (領域横断の調査): Since 2026-11, each theory is being re-checked against the full text of its primary sources (Issue #73).
 
 ### Related Projects
 - [project-design](https://uminomae.github.io/project-design-theory/) (`pd/` in this repo): Project Design Theory -- the overarching framework
@@ -75,7 +74,7 @@ This project collects and analyzes structural similarity patterns of creative pr
 | D29 | 複雑系 | Complexity Science |
 | D30 | 伝統知 | Traditional Knowledge |
 
-各領域について、複数のAIエンジンによる多段階検証（幅優先スキャン、独立照合、深掘り調査、領域横断探索）を実施している。
+2026-02〜03 に、各領域を複数の AI エンジンで調べた（幅優先スキャン、独立照合、深掘り調査、領域横断探索）。2026-11 から、論ごとに原典の本文で照合し直している（Issue #73）。
 
 ## 調査方法 / Methodology
 

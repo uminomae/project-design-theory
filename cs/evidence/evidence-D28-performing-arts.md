@@ -14,15 +14,15 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D28-perfo
 
 舞台芸術の原典の多くは、現象の理論でなく、稽古の手順・伝書・宣言・上演の記録として書かれています。それでも、本文を読めた原典は、二つのものの兼ね合いと、それが崩れた形を書いていました。世阿弥の『風姿花伝』第一「年来稽古条々」は、一生の単位で、若さによる「時分の花」と、年を経ても失せない「まことの花」を分けます。十七八の声変わりで人に笑われる時期を「一期の堺」とし、ここで能を捨てれば「そのまゝ能はとまるへし」と書き、時分の花をまことの花と思う心が真実の花から遠ざかる心だと書き、三十四五で極めなければ四十から能は下がると書きます（吉田東伍校註 1909、pp.4–9）。Fischer-Lichte（2004）は、Abramović の上演で、観客が芸術と日常の規範のあいだ、美の要請と倫理の要請のあいだに置かれて「Krise」に陥り、演者を氷の十字架から運び出して上演を終わらせた、と書きます（pp.9–12）。スタニスラフスキーは、繰り返すほど役が化石のように固まり、「spiritual petrification」と悪い習慣の支配から役をどう救うか、という 1906 年の行き詰まりから「システム」を始めたと書いています（*My Life in Art*、pp.457–460）。Schechner（1981）は、稽古を、演者の抵抗を壊す段・行動の断片を積み上げる段・人前に出す段に分け、目当てが見えないままだと稽古は「falters, then fails」と書き、Grotowski の後期の活動には再統合の段が無く、参加者は「disabled rather than invigorated」になったと書きます（pp.35・38）。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D28-performing-arts.md`、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論を取り上げ、4 つを「強い対応」、2 つ（Laban・Schechner）を「対応なし」としています。報告は、即興の「ブロック」を「失敗モード」と呼び、Schechner の「移送」を「途中で止まるプロセス」として §7 に置いていますが、本文を読めた原典は、至らない形を論の中に書いていました。Schechner を「メタ理論で対応なし」とするのは、1981 年の論文の稽古の三つの段と失敗の記述を落としています。「初心忘るべからず」を「束が再び場に接続する螺旋構造」と読むのは、原典（吉田本の「覺習條々」）が「初心へかへるは、能のさかる所なるへし」と書くのと向きが違います。「方向不問性」「縁の多層性」「渦の一回性」は、原典でなく、調べた跡（phase6・phase7）の仮説から来ていました。英語版は 10 のうち 8 を「Strong」とし、スタニスラフスキーの「if」を「predictive discrepancy」の意図的な生成と書いていて、退避版の「予測誤差」の語が英語版にだけ残っています。
+今の公開報告（「30 領域調査報告」の舞台芸術の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論を取り上げ、4 つを「強い対応」、2 つ（Laban・Schechner）を「対応なし」としています。報告は、即興の「ブロック」を「失敗モード」と呼び、Schechner の「移送」を「途中で止まるプロセス」として §7 に置いていますが、本文を読めた原典は、至らない形を論の中に書いていました。Schechner を「メタ理論で対応なし」とするのは、1981 年の論文の稽古の三つの段と失敗の記述を落としています。「初心忘るべからず」を「束が再び場に接続する螺旋構造」と読むのは、原典（吉田本の「覺習條々」）が「初心へかへるは、能のさかる所なるへし」と書くのと向きが違います。「方向不問性」「縁の多層性」「渦の一回性」は、原典でなく、調べた跡（phase6・phase7）の仮説から来ていました。英語版は 10 のうち 8 を「Strong」とし、スタニスラフスキーの「if」を「predictive discrepancy」の意図的な生成と書いていて、退避版の「予測誤差」の語が英語版にだけ残っています。
 
-この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。10 の論のうち、提唱者の本文に当たれたのは 4 つ（世阿弥・Fischer-Lichte・スタニスラフスキー・Schechner）です。即興演劇は、提唱者の本（Johnstone・Spolin・Nachmanovitch）を開けず、同じ論の研究者 Sawyer の論文二本を本文で読みました。Grotowski と Boal は、上げた人の分からない写しで本文を読んだので、照合の状態は未照合のまま、読んだ頁を書いています。Meyerhold・Laban・Viewpoints は、本の本文に当たれていません。
+この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。10 の論のうち、提唱者の本文に当たれたのは 4 つ（世阿弥・Fischer-Lichte・スタニスラフスキー・Schechner）です。即興演劇は、提唱者の本（Johnstone・Spolin・Nachmanovitch）を開けず、同じ論の研究者 Sawyer の論文二本を本文で読みました。Grotowski と Boal は、上げた人の分からない写しで本文を読んだので、照合の状態は未照合のまま、読んだ頁を書いています。Meyerhold・Laban・Viewpoints は、本の本文に当たれていません。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D28-performing-arts.md) にあります。退避版の判定（Accept・CA など）は、今の照合の状態の根拠にしていません。
 
 ## 一面の表
 
-照合の状態は `docs/rules/sources.md` §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。「未照合」の行の対立・衝突・統合は、報告の言い分でなく、原典で確かめられたことだけを書くので、空けています。ただし、上げた人の分からない写しで読めた所は、そう添えて書きました。各行の「対立」「衝突」は原典の構造で、それを対立・衝突・統合と呼ぶのは Claude の読み替えです。原典の性格（伝書・稽古の手順・上演の記録・観察・実験）も添えました。
+照合の状態は調べ方の規約 §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。「未照合」の行の対立・衝突・統合は、報告の言い分でなく、原典で確かめられたことだけを書くので、空けています。ただし、上げた人の分からない写しで読めた所は、そう添えて書きました。各行の「対立」「衝突」は原典の構造で、それを対立・衝突・統合と呼ぶのは Claude の読み替えです。原典の性格（伝書・稽古の手順・上演の記録・観察・実験）も添えました。
 
 | 論 | 対立 | 衝突 | 統合／新たな安定、または統合に至らずにどう終わったか | 論の微細さ | 照合の状態 |
 |---|---|---|---|---|---|
@@ -45,10 +45,10 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- 世阿彌（吉田東伍 校註）『世阿彌十六部集』能樂會、1909 年（明治 42 年 2 月 13 日発行。編輯兼発行者 池内信嘉。奥付は part2 の PDF 98 頁の左）。manifest D28-S01。手元の PDF は一冊の本を part1・part2 の二つに分けた走査で、文字の層は無い。PDF の一頁に本の見開き二頁が入り、part1 の本編では PDF の頁 n の右が本の 2(n−40) 頁、左がその次の頁に当たる（頁の頭の番号で確かめた）。台帳の題「世阿弥古典集」は表紙の題（世阿彌十六部集）と違う。
+- 世阿彌（吉田東伍 校註）『世阿彌十六部集』能樂會、1909 年（明治 42 年 2 月 13 日発行。編輯兼発行者 池内信嘉。奥付は part2 の PDF 98 頁の左）。台帳に行がある。手元の PDF は一冊の本を part1・part2 の二つに分けた走査で、文字の層は無い。PDF の一頁に本の見開き二頁が入り、part1 の本編では PDF の頁 n の右が本の 2(n−40) 頁、左がその次の頁に当たる（頁の頭の番号で確かめた）。台帳の題「世阿弥古典集」は表紙の題（世阿彌十六部集）と違う。
 - 読んだ頁（本の頁）：目次 pp.1–2（PDF 3〜4）、序引 pp.24–35 の一部（PDF 16・19・21。編者の解題）、花傳書第一 年來稽古條々 pp.2–9（PDF 41〜44）、花傳書別紙口傳 p.49（PDF 64 左）・p.60（PDF 70 右）、覺習條々 pp.77–79（PDF 78〜79）・pp.110–113（PDF 95〜96）。頁の画像を切り出して読んだ。
 - 青空文庫には『風姿花伝』の公開の翻刻が見つからなかった（公開中の作品一覧「フ」と作家一覧を引いた）。J-TEXTS（j-texts.com）は中継が「HTTP/1.1 502 Bad Gateway」を返して届かず、同じドメインの Wayback の一覧（j-texts.com の中世の部）に世阿弥の伝書は無かった。二つ目の翻刻で突き合わせることはできていない。
-- 『花鏡』（D28-S02）は、吉田本では「覺習條々」の題で pp.77–114 に入っている（目次に「覺習條々（異瑞）」、本文の題の下に「舊題異端、々恐誤瑞者」）。覺習條々が『花鏡』に当たるという同定は、この本の中では確かめていない（研究の一線）。『至花道』（D28-S03）は「至花道書」として p.131 から入っているが、本文は読んでいない。
+- 『花鏡』は、吉田本では「覺習條々」の題で pp.77–114 に入っている（目次に「覺習條々（異瑞）」、本文の題の下に「舊題異端、々恐誤瑞者」）。覺習條々が『花鏡』に当たるという同定は、この本の中では確かめていない（研究の一線）。『至花道』は「至花道書」として p.131 から入っているが、本文は読んでいない。
 
 **照合の状態**：本文照合済（パブリックドメインの翻刻。伝書。頁の画像で読んだ）。翻刻は一つだけで、二つ目の翻刻とは突き合わせていません。
 
@@ -87,10 +87,10 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Johnstone, K. (1979). *Impro*（D28-S04）、Spolin, V. (1963). *Improvisation for the Theater*（D28-S05）、Nachmanovitch, S. (1990). *Free Play*（D28-S06）。どれも Internet Archive の貸し出し（ログインが要る）で、本文を読めなかった。
+- Johnstone, K. (1979). *Impro*、Spolin, V. (1963). *Improvisation for the Theater*、Nachmanovitch, S. (1990). *Free Play*。どれも Internet Archive の貸し出し（ログインが要る）で、本文を読めなかった。
 - Sawyer, R. K., & DeZutter, S. (2009). Distributed creativity: How collective creations emerge from collaboration. *Psychology of Aesthetics, Creativity, and the Arts* 3(2), 81–92. DOI 10.1037/a0013282。著者のサイトの写し（http://keithsawyer.com/PDFs/DC.pdf 、Wayback の記録 https://web.archive.org/web/2024/http://keithsawyer.com/PDFs/DC.pdf ）で、出版社の版の誌面。読んだ頁：pp.81–82・pp.86–87。
-- Sawyer, K. (2026). Creativity and emergence in improvisational theater and in social life. *Signs and Society* 14(1), 96–112. DOI 10.1017/sas.2025.10039（CC BY）。manifest D28-S11。読んだ頁：pp.96–99・pp.110–111。台帳は「Cambridge Elements」と書くが、表紙と Crossref では雑誌 *Signs and Society* の論文。
-- McNeilly (2022)（D28-S12、DOI 10.21083/csieci.v15i1.7119）は、雑誌の巻頭言（5 頁）で、論の確かめ先にはしなかった。
+- Sawyer, K. (2026). Creativity and emergence in improvisational theater and in social life. *Signs and Society* 14(1), 96–112. DOI 10.1017/sas.2025.10039（CC BY）。台帳に行がある。読んだ頁：pp.96–99・pp.110–111。台帳は「Cambridge Elements」と書くが、表紙と Crossref では雑誌 *Signs and Society* の論文。
+- McNeilly (2022)（台帳の「McNeilly 2022」の行、DOI 10.21083/csieci.v15i1.7119）は、雑誌の巻頭言（5 頁）で、論の確かめ先にはしなかった。
 
 **照合の状態**：本文照合済（同じ論の研究者 Sawyer の論文。観察と理論）。提唱者の本（Johnstone・Spolin・Nachmanovitch）は未照合（書籍）です。
 
@@ -119,8 +119,8 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Fischer-Lichte, E. (2004). *Ästhetik des Performativen*. Frankfurt am Main: Suhrkamp（edition suhrkamp 2373）。manifest D28-S07。https://www.geisteswissenschaften.fu-berlin.de/v/interart/media/dokumente/oberseminar/fischer-lichte_aesthetik_des_performativen.pdf （ベルリン自由大学 InterArt の上級ゼミの授業用の写し。権利は未確認）。21 頁の走査で、文字の層は無い。中身は、表題・奥付・目次と、本の pp.9–43（第 1 章「Begründung für eine Ästhetik des Performativen」と第 2 章の始め「Der Begriff der Aufführung」）。頁の画像で pp.9–12 を読み、残りは頁の画像を文字にして（macOS の文字認識）語を探した。
-- 英訳：*The Transformative Power of Performance*（2008）。DOI 10.4324/9780203894989（D28-S08。Routledge の壁）。
+- Fischer-Lichte, E. (2004). *Ästhetik des Performativen*. Frankfurt am Main: Suhrkamp（edition suhrkamp 2373）。台帳に行がある。https://www.geisteswissenschaften.fu-berlin.de/v/interart/media/dokumente/oberseminar/fischer-lichte_aesthetik_des_performativen.pdf （ベルリン自由大学 InterArt の上級ゼミの授業用の写し。権利は未確認）。21 頁の走査で、文字の層は無い。中身は、表題・奥付・目次と、本の pp.9–43（第 1 章「Begründung für eine Ästhetik des Performativen」と第 2 章の始め「Der Begriff der Aufführung」）。頁の画像で pp.9–12 を読み、残りは頁の画像を文字にして（macOS の文字認識）語を探した。
+- 英訳：*The Transformative Power of Performance*（2008）。DOI 10.4324/9780203894989（台帳の「Fischer-Lichte 2008」の行。Routledge の壁）。
 
 **照合の状態**：本文照合済（大学の授業用の写し。第 1 章の上演の記録と論考。pp.9–12）。報告の芯の「autopoietic feedback loop」は、写しに入っていない章（目次では第 6 章「Autopoiesis und Emergenz」p.284、第 3 章「Die leibliche Ko-Präsenz von Akteuren und Zuschauern」p.58）にあり、未照合です。
 
@@ -148,9 +148,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Grotowski, J. (1968). *Towards a Poor Theatre*. E. Barba 編. manifest D28-S09。手元に取った写しは Monoskop（https://monoskop.org/images/e/e2/Grotowski_Jerzy_Towards_a_Poor_Theatre_2002.pdf ）で、Routledge の 2002 年の刷の走査。上げた人と権利は未確認。読んだ頁：p.13・pp.15–17・p.23・pp.34–35・p.57・p.125・p.133。本の注記（p.13）は、表題の文章が *Tulane Drama Review*（T35, 1967）に載ったと書く。
+- Grotowski, J. (1968). *Towards a Poor Theatre*. E. Barba 編. 台帳に行がある。手元に取った写しは Monoskop（https://monoskop.org/images/e/e2/Grotowski_Jerzy_Towards_a_Poor_Theatre_2002.pdf ）で、Routledge の 2002 年の刷の走査。上げた人と権利は未確認。読んだ頁：p.13・pp.15–17・p.23・pp.34–35・p.57・p.125・p.133。本の注記（p.13）は、表題の文章が *Tulane Drama Review*（T35, 1967）に載ったと書く。
 - Grotowski, J. (1967). Towards the poor theatre. *The Tulane Drama Review* 11(3), 60–65. DOI 10.2307/1125118（Crossref で書誌だけ確かめた。JSTOR の壁。OpenAlex は oa_status=closed）。
-- Richards, T. (1995). *At Work with Grotowski on Physical Actions*. DOI 10.4324/9780203360231（D28-S10。Routledge の壁）。
+- Richards, T. (1995). *At Work with Grotowski on Physical Actions*. DOI 10.4324/9780203360231（台帳の「Richards 1995」の行。Routledge の壁）。
 - Schechner (1981) の Grotowski の後期の活動の記述は、10 の節で読んだ（p.38）。
 
 **照合の状態**：未照合（書籍。上げた人の分からない写しで上の頁を読んだ）。Schechner の記述（p.38）は本文照合済です。
@@ -326,7 +326,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 - Schechner, R. (1973). Drama, script, theatre, and performance. *The Drama Review* 17(3), 5–36. DOI 10.2307/1144841。Schechner, R. (1988). Performance studies: The broad spectrum approach. *TDR* 32(3), 4. DOI 10.2307/1145899。どちらも Crossref で書誌だけ確かめた（JSTOR の壁）。
 - 『Between Theater and Anthropology』（1985、書籍）は読んでいない。報告の「移送（transportation）」と「変容（transformation）」は 1981 年の論文には出てこない（文字にした全文で探した）。
 
-**照合の状態**：本文照合済（大学の機関リポジトリ。頁の画像を文字にして読んだ。観察にもとづく論考）。1985 年の本と TDR の論文は未照合です。Turner の社会劇は、D25 の記録を参照します（D25 では四局面は未照合）。
+**照合の状態**：本文照合済（大学の機関リポジトリ。頁の画像を文字にして読んだ。観察にもとづく論考）。1985 年の本と TDR の論文は未照合です。Turner の社会劇は、人類学・民族学の記録を参照します（人類学・民族学では四局面は未照合）。
 
 **原典に書いてあること**（1981 年の誌面の頁）：
 
@@ -398,7 +398,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | Schechner を「対応なし」 | 退避版 472〜492 行の「保留（CA）」 |
 | 型 F の表示 | 報告のテンプレート |
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 E（言い切り・「最も」）：「舞台芸術は縁の多次元構造を最も鮮明に示す領域です」（204 行）、「場から渦への非計画的な移行が最も純粋に現れる」（110 行）、「渦が持続的状態ではなく出来事として生起する性質が、舞台芸術に特に顕著な知見として確認されました」（240 行）。30 領域を並べた跡は無い。
 - 型 H（原典に無い構造）：「5段階は一回限りの線形プロセスではなく、束が次のサイクルの場として機能する循環構造を持つ可能性」（212 行）。例の「初心忘るべからず」は原典と逆向き。
@@ -408,68 +408,58 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 ## 判断が要るもの
 
-pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは `docs/cs-review/README.md` の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
+pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは調べ方の計画と規約の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
 
-- 吉田本の「覺習條々」を『花鏡』として引くかどうか。吉田本は『花鏡』の名を使っていません。記録では「覺習條々（花鏡に当たる）」と書き、同定は研究の一線として添えました（sources.md §3-6 の帰属の確かめ）。報告や wiki が「『花鏡』の『初心忘るべからず』」と書くときも、どの本のどの題で読んだかを添えるのがよさそうです。
-- 即興演劇は、提唱者の本を開けず、同じ論の研究者 Sawyer の観察と理論で読みました。D26 の決め（README「規約で決めたこと」2026-11-09 D26 の行）のとおり、読めたものごとに状態を書き分け、冒頭で「提唱者の本文に当たれた数」（4）を別に書きました。
+- 吉田本の「覺習條々」を『花鏡』として引くかどうか。吉田本は『花鏡』の名を使っていません。記録では「覺習條々（花鏡に当たる）」と書き、同定は研究の一線として添えました（調べ方の規約 §3-6 の帰属の確かめ）。報告や wiki が「『花鏡』の『初心忘るべからず』」と書くときも、どの本のどの題で読んだかを添えるのがよさそうです。
+- 即興演劇は、提唱者の本を開けず、同じ論の研究者 Sawyer の観察と理論で読みました。音楽学の決め（README「規約で決めたこと」2026-11-09 音楽学の行）のとおり、読めたものごとに状態を書き分け、冒頭で「提唱者の本文に当たれた数」（4）を別に書きました。
 - Grotowski（Monoskop）と Boal（Internet Archive の個人の写し）は、上げた人の分からない写しなので、本文を読んだ頁を書きつつ未照合としました（README「規約で決めたこと」の個人の写しの行）。どちらも中心の問いに要る衝突と至らない形を書いているので、ブラウザでの保存（下の表）か、出版社や大学の版を探すのがよさそうです。
-- Laban は道具立ての論として、外さずに「原典から対立・衝突・統合を読むのは難しい」と書いて並べました（README「規約で決めたこと」D12 の行）。
+- Laban は道具立ての論として、外さずに「原典から対立・衝突・統合を読むのは難しい」と書いて並べました（README「規約で決めたこと」農学・生態学の行）。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D28-S16 | Sawyer, R. K., & DeZutter, S. (2009). Distributed creativity: How collective creations emerge from collaboration. *Psychology of Aesthetics, Creativity, and the Arts* 3(2), 81–92. DOI 10.1037/a0013282 | 著者のサイト http://keithsawyer.com/PDFs/DC.pdf （Wayback の記録。出版社の版の誌面。保存名の案 `D28_sawyer-dezutter_2009_distributed-creativity.pdf`） | raw-confirmed |
-| D28-S17 | Schechner, R. (1981). Restoration of behavior. *Studies in Visual Communication* 7(3), 2–45 | https://repository.upenn.edu/entities/publication/d58bf6fd-38b4-4813-8355-fa52e8d19df8 （ペンシルベニア大学の機関リポジトリ。文字の層の無い走査。保存名の案 `D28_schechner_1981_restoration-of-behavior.pdf`） | raw-confirmed |
-| D28-S18 | Stanislavsky, C. (1924). *My Life in Art*. J. J. Robbins 訳. Boston: Little, Brown | https://archive.org/details/mylifeinart00stanrich （New College of California の図書館の本の 1938 年の刷。パブリックドメイン。OCR の文字） | raw-confirmed（OCR の文字） |
-| D28-S19 | Станиславский, К. С. (1938). *Работа актёра над собой*. Часть 1 | https://ru.wikisource.org/wiki/Работа_актёра_над_собой_(Станиславский) （利用者の翻刻。az.lib.ru 由来。底本未確認） | url-verified（翻刻） |
-| D28-S20 | Bernardet, U., ほか (2019). Assessing the reliability of the Laban Movement Analysis system. *PLOS ONE* 14(6), e0218179. DOI 10.1371/journal.pone.0218179 | https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0218179&type=printable （CC BY） | raw-confirmed |
-| D28-S21 | Tsachor, R. P., & Shafir, T. (2019). How shall I count the ways? *Frontiers in Psychology* 10, 572. DOI 10.3389/fpsyg.2019.00572 | https://www.frontiersin.org/articles/10.3389/fpsyg.2019.00572/pdf （CC BY） | raw-confirmed |
-| D28-S22 | Boal, A. (1979/2000/2008). *Theatre of the Oppressed*. London: Pluto Press | https://archive.org/details/TheTheatreOfTheOppressed-GetPolitical （個人が上げた写し。権利は未確認） | url-verified（個人が上げた写し） |
-| D28-S23 | Grotowski, J. (1967). Towards the poor theatre. *The Tulane Drama Review* 11(3), 60–65. DOI 10.2307/1125118 | JSTOR（有料） | citation-only |
-| D28-S24 | Schechner, R. (1973). Drama, script, theatre, and performance. *The Drama Review* 17(3), 5–36. DOI 10.2307/1144841 | JSTOR（有料） | citation-only |
-| D28-S25 | Schechner, R. (1988). Performance studies: The broad spectrum approach. *TDR* 32(3), 4. DOI 10.2307/1145899 | JSTOR（有料） | citation-only |
-| D28-S26 | Boal, A., & Epstein, S. (1990). The cop in the head: Three hypotheses. *TDR* 34(3), 35. DOI 10.2307/1146067 | JSTOR（有料） | citation-only |
-| D28-S27 | Gordon, M. (1974). Meyerhold's biomechanics. *The Drama Review* 18(3), 73–88. DOI 10.2307/1144927 | JSTOR（有料） | citation-only |
-| D28-S28 | Overlie, M. Biography（The Six Viewpoints の著者のサイト） | https://web.archive.org/web/20220817033945/https://www.sixviewpoints.com/biography （Wayback の記録） | url-verified |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| Sawyer, R. K., & DeZutter, S. (2009). Distributed creativity: How collective creations emerge from collaboration. *Psychology of Aesthetics, Creativity, and the Arts* 3(2), 81–92. DOI 10.1037/a0013282 | 著者のサイト http://keithsawyer.com/PDFs/DC.pdf （Wayback の記録。出版社の版の誌面。保存名の案手元の PDF） | 手元に保存した |
+| Schechner, R. (1981). Restoration of behavior. *Studies in Visual Communication* 7(3), 2–45 | https://repository.upenn.edu/entities/publication/d58bf6fd-38b4-4813-8355-fa52e8d19df8 （ペンシルベニア大学の機関リポジトリ。文字の層の無い走査。保存名の案手元の PDF） | 手元に保存した |
+| Stanislavsky, C. (1924). *My Life in Art*. J. J. Robbins 訳. Boston: Little, Brown | https://archive.org/details/mylifeinart00stanrich （New College of California の図書館の本の 1938 年の刷。パブリックドメイン。OCR の文字） | 手元に保存した（OCR の文字） |
+| Станиславский, К. С. (1938). *Работа актёра над собой*. Часть 1 | https://ru.wikisource.org/wiki/Работа_актёра_над_собой_(Станиславский) （利用者の翻刻。az.lib.ru 由来。底本未確認） | 取得先を確かめた（翻刻） |
+| Bernardet, U., ほか (2019). Assessing the reliability of the Laban Movement Analysis system. *PLOS ONE* 14(6), e0218179. DOI 10.1371/journal.pone.0218179 | https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0218179&type=printable （CC BY） | 手元に保存した |
+| Tsachor, R. P., & Shafir, T. (2019). How shall I count the ways? *Frontiers in Psychology* 10, 572. DOI 10.3389/fpsyg.2019.00572 | https://www.frontiersin.org/articles/10.3389/fpsyg.2019.00572/pdf （CC BY） | 手元に保存した |
+| Boal, A. (1979/2000/2008). *Theatre of the Oppressed*. London: Pluto Press | https://archive.org/details/TheTheatreOfTheOppressed-GetPolitical （個人が上げた写し。権利は未確認） | 取得先を確かめた（個人が上げた写し） |
+| Grotowski, J. (1967). Towards the poor theatre. *The Tulane Drama Review* 11(3), 60–65. DOI 10.2307/1125118 | JSTOR（有料） | 書誌だけ |
+| Schechner, R. (1973). Drama, script, theatre, and performance. *The Drama Review* 17(3), 5–36. DOI 10.2307/1144841 | JSTOR（有料） | 書誌だけ |
+| Schechner, R. (1988). Performance studies: The broad spectrum approach. *TDR* 32(3), 4. DOI 10.2307/1145899 | JSTOR（有料） | 書誌だけ |
+| Boal, A., & Epstein, S. (1990). The cop in the head: Three hypotheses. *TDR* 34(3), 35. DOI 10.2307/1146067 | JSTOR（有料） | 書誌だけ |
+| Gordon, M. (1974). Meyerhold's biomechanics. *The Drama Review* 18(3), 73–88. DOI 10.2307/1144927 | JSTOR（有料） | 書誌だけ |
+| Overlie, M. Biography（The Six Viewpoints の著者のサイト） | https://web.archive.org/web/20220817033945/https://www.sixviewpoints.com/biography （Wayback の記録） | 取得先を確かめた |
 
-取ってきたファイルは、司令塔が手元の `cs/knowledge/raw/` に置き、下の行と書き足しを台帳に入れました（2026-11-09。上げた人の分からない写し＝Grotowski・Boal は手元に置いていません）。既存の行に書き足した案：
+取ってきたファイルは、司令塔が手元の原典の置き場に置き、下の行と書き足しを台帳に入れました（2026-11-09。上げた人の分からない写し＝Grotowski・Boal は手元に置いていません）。既存の行に書き足した案：
 
-- D28-S01：表紙の題は『世阿彌十六部集』（吉田東伍 校註、能樂會、1909 年 2 月 13 日発行、編輯兼発行者 池内信嘉）。一冊を part1・part2 の二つの PDF に分けた走査で、文字の層は無い。『花鏡』は「覺習條々」の題で pp.77–114、『至花道』は「至花道書」として p.131 から入っている（D28-S02・S03 の在りか）。
-- D28-S07：FU Berlin の写しは、表題・奥付・目次と本の pp.9–43（第 1 章と第 2 章の始め）だけ。報告の芯の「autopoietische Feedback-Schleife」の章は入っていない。授業用の写し。
-- D28-S09：Monoskop の写しは Routledge の 2002 年の刷。上げた人と権利は未確認。
-- D28-S11：書誌は *Signs and Society* 14(1), 96–112（2026）、DOI 10.1017/sas.2025.10039。「Cambridge Elements」でない。
-- D28-S04〜S06：Internet Archive の貸し出し（ログインが要る）で、自動では本文を読めない。
+- 台帳の「世阿弥古典集」の行：表紙の題は『世阿彌十六部集』（吉田東伍 校註、能樂會、1909 年 2 月 13 日発行、編輯兼発行者 池内信嘉）。一冊を part1・part2 の二つの PDF に分けた走査で、文字の層は無い。『花鏡』は「覺習條々」の題で pp.77–114、『至花道』は「至花道書」として p.131 から入っている（台帳の「世阿弥」の行の在りか）。
+- 台帳の「Fischer-Lichte 2004」の行：FU Berlin の写しは、表題・奥付・目次と本の pp.9–43（第 1 章と第 2 章の始め）だけ。報告の芯の「autopoietische Feedback-Schleife」の章は入っていない。授業用の写し。
+- 台帳の「Grotowski 1968」の行：Monoskop の写しは Routledge の 2002 年の刷。上げた人と権利は未確認。
+- 台帳の「Sawyer 2026」の行：書誌は *Signs and Society* 14(1), 96–112（2026）、DOI 10.1017/sas.2025.10039。「Cambridge Elements」でない。
+- 台帳の「Johnstone 1979」の行：Internet Archive の貸し出し（ログインが要る）で、自動では本文を読めない。
 
 ## ブラウザでの保存が要る PDF
 
-| 台帳の行 | 文献 | 開く URL | ページ内で探す語 | 保存名の案 | それで何を確かめるのか |
-|---|---|---|---|---|---|
-| D28-S23 | Grotowski (1967) TDR 11(3) | https://doi.org/10.2307/1125118 （JSTOR） | 「via negativa」「eradication of blocks」 | `D28_grotowski_1967_towards-the-poor-theatre.pdf` | 写し（Monoskop）で読んだ via negativa の文が雑誌の本文にあるか。読めれば Grotowski を本文照合済にできる |
-| D28-S04 | Johnstone (1979) *Impro* | https://archive.org/details/improimprovisati00john （借りる） | 「blocking」「accept」「offer」 | 該当の頁の写し（画面の保存） | 報告の「ブロックは失敗モードとして明確に定義」が本にあるか |
-| D28-S05 | Spolin (1963) | https://archive.org/details/improvisationfor0000spol_e8h5 （借りる） | 目次のゲームの数、「side-coaching」 | 目次の頁の写し | 「130以上のゲーム」が 1963 年の本のものか |
-| D28-S22 | Boal *Theatre of the Oppressed* | https://archive.org/details/TheTheatreOfTheOppressed-GetPolitical の代わりに、出版社か図書館の版 | 「Forum theatre」「magical solutions」 | `D28_boal_1979_theatre-of-the-oppressed.pdf`（出版社の版なら） | 個人の写しで読んだ pp.114–120 が本と同じか |
-| ― | Schechner (1985) *Between Theater and Anthropology* | Internet Archive・図書館 | 「transportation」「transformation」 | 該当の頁の写し | 報告の「移送と変容」が本にあるか |
-| ― | Bogart & Landau (2005) *The Viewpoints Book* | https://archive.org/details/viewpointsbookpr0000boga | 「Overlie」「Soft Focus」 | 序章の頁の写し | 本自身が Overlie をどう書くか、報告の要素の並び |
-| D28-S08 | Fischer-Lichte (2008) 英訳 | https://doi.org/10.4324/9780203894989 | 「autopoietic feedback loop」 | 該当の章の写し | 報告の芯の語の定義と、Maturana & Varela から借りたと書いているか |
-
-どれも確認画面ではなく、壁（JSTOR・Routledge）か Internet Archive の貸し出しです。届かなかった取得先は一つで、J-TEXTS（j-texts.com）は中継が「HTTP/1.1 502 Bad Gateway」を返しました（ホスト名が引けないときも同じ返事が出ます。落ちていたとは決めていません）。同じドメインの Wayback の一覧に世阿弥の伝書は無かったので、J-TEXTS は表に入れていません。
+自動で取れなかった原典のうち、ブラウザでの保存を頼むものは、作業の記録（[Issue #73](https://github.com/uminomae/project-design-theory/issues/73)）の表にまとめました。
 
 ## 手順について分かったこと
 
 - 本文で読めた論は 10 のうち 5 つ（世阿弥・即興の Sawyer・Fischer-Lichte・スタニスラフスキー・Schechner）で、提唱者の本文は 4 つです。どれも至らない形をはっきり書いていて、報告はそれを落とすか、§7 で未解決として外に置いていました。
 - 文字の層の無い英語・ドイツ語の走査（Schechner 1981・Fischer-Lichte）は、macOS の文字認識（Vision）で頁を文字にでき、語を探せました。サンドボックスの中では Vision が動かず、外で走らせました。縦書きの日本語（吉田本）は文字にならず、頁の画像を切り出して読みました。
-- 『世阿彌十六部集』は一冊の本で、目次の頁と頁の頭の番号から、PDF の頁と本の頁の対応が一つの式で出ました。目次で、『花鏡』が「覺習條々」の題で入っていることが分かりました。台帳の「書誌だけ」の行（S02・S03）の本文は、手元の走査に入っていました。
+- 『世阿彌十六部集』は一冊の本で、目次の頁と頁の頭の番号から、PDF の頁と本の頁の対応が一つの式で出ました。目次で、『花鏡』が「覺習條々」の題で入っていることが分かりました。台帳の「書誌だけ」の行（『花鏡』と『至花道』）の本文は、手元の走査に入っていました。
 - 青空文庫には『風姿花伝』の公開の翻刻が見つからず、二つ目の翻刻での突き合わせはできていません。
 - ペンシルベニア大学のリポジトリ（DSpace 7）は、頁の HTML でなく REST の API（items → bundles → bitstreams）で PDF に届きました。
-- 著者のサイトの Wayback の一覧（keithsawyer.com）で、出版社の版の誌面（Sawyer & DeZutter 2009）が見つかりました（D23・D26 と同じ）。
-- 台帳が url-verified と書く D28-S11 は、取ってみると題は合うが、台帳の書誌（Cambridge Elements）と違う雑誌の論文でした。D28-S07 は本の一部だけの写しで、報告の芯の章を含みませんでした。
+- 著者のサイトの Wayback の一覧（keithsawyer.com）で、出版社の版の誌面（Sawyer & DeZutter 2009）が見つかりました（発達心理学・音楽学と同じ）。
+- 台帳が「取得先を確かめた」と書く台帳の「Sawyer 2026」の行は、取ってみると題は合うが、台帳の書誌（Cambridge Elements）と違う雑誌の論文でした。台帳の「Fischer-Lichte 2004」の行は本の一部だけの写しで、報告の芯の章を含みませんでした。
 - 報告が「対応なし」とした Schechner は、原典が稽古の段と失敗の形をはっきり書いていました。「対応なし」の判定は、原典を読んでから見直すのがよさそうです。
 
 ### 精読ノートと wiki の誤り（司令塔が直したのは、Crossref と表紙で確かめた Sawyer 2026 の書誌だけ。ほかは段 4 に回す。2026-11-09）
 
-- `pd/wiki/sources/D28_sawyer_2026_creativity-and-emergence-in.md` 3 行・64 行：「Cambridge Elements 論文」「*Signs and Society* (Cambridge Elements), pp.1–17」。表紙と Crossref では *Signs and Society* 14(1), 96–112 の論文。
-- `cs/knowledge/source-notes/D28/D28-S11_sawyer-2026.md` 15 行：「Signs and Society (2026), pp.1-17」→ 14(1), 96–112。32 行の引用は「performers. In jazz and」の間の一文（「Contrary to the ethnomethodologists…class relations.」）を省いた印が無い（p.99）。頁は PDF の頁（p.4・p.15）で、誌面の頁（p.99・p.110）でない。同じ引用が wiki 36 行にもある。
-- `cs/knowledge/source-notes/D28/D28-S01_zeami-fushikaden.md` 7 行：「岩波系古典大系の木版翻刻」。奥付は能樂會 1909 年、秀英舎の印刷（活版）。17 行：「奥書『應永卅七年六月日 世阿書』（PDF part1 p.21 序引に引用）」。PDF 21 の序引で読めるのは至花道書の「應永廿七年六月日」で、風姿花伝の奥書ではない。49 行：別紙口傳の奥書の年（應永廿五年）は合う。
-- `pd/wiki/sources/D28_zeami_classics.md` 27 行：「上下二冊に収録」「上冊には風姿花伝（花伝書）・花鏡・至花道を」。手元の本は一冊（奥付）で、PDF を二つに分けただけ。花鏡は「覺習條々」の題。35 行「花は見所同心より起こる」は原典の箇所を確かめていない。40〜41 行の「守・破・離」は、目次に無く、世阿弥の語として確かめていない（後の時代の芸道の語とされる。研究の一線）。62〜63 行「守・破・離と欠損駆動」は欠損の語の持ち込み（段 1 で直す）。72 行「花鏡: 一帖、合十三紙」は確かめていない（序引の覺習條々の解題は「一帖 合二十九紙」）。
-- `pd/wiki/sources/D28_shibolet_2018_bodyminds-in-movement-contact.md` 14 行：「cs 側読解は要旨レベルに留まる（本文 PDF アクセス不可）」。手元に CC BY の誌面の PDF（D28-S15）がある。
+- wiki の頁「Sawyer 2026」 3 行・64 行：「Cambridge Elements 論文」「*Signs and Society* (Cambridge Elements), pp.1–17」。表紙と Crossref では *Signs and Society* 14(1), 96–112 の論文。
+- 精読ノート「Sawyer 2026」 15 行：「Signs and Society (2026), pp.1-17」→ 14(1), 96–112。32 行の引用は「performers. In jazz and」の間の一文（「Contrary to the ethnomethodologists…class relations.」）を省いた印が無い（p.99）。頁は PDF の頁（p.4・p.15）で、誌面の頁（p.99・p.110）でない。同じ引用が wiki 36 行にもある。
+- 精読ノート「Zeami Fushikaden」 7 行：「岩波系古典大系の木版翻刻」。奥付は能樂會 1909 年、秀英舎の印刷（活版）。17 行：「奥書『應永卅七年六月日 世阿書』（PDF part1 p.21 序引に引用）」。PDF 21 の序引で読めるのは至花道書の「應永廿七年六月日」で、風姿花伝の奥書ではない。49 行：別紙口傳の奥書の年（應永廿五年）は合う。
+- wiki の頁「Zeami」 27 行：「上下二冊に収録」「上冊には風姿花伝（花伝書）・花鏡・至花道を」。手元の本は一冊（奥付）で、PDF を二つに分けただけ。花鏡は「覺習條々」の題。35 行「花は見所同心より起こる」は原典の箇所を確かめていない。40〜41 行の「守・破・離」は、目次に無く、世阿弥の語として確かめていない（後の時代の芸道の語とされる。研究の一線）。62〜63 行「守・破・離と欠損駆動」は欠損の語の持ち込み（段 1 で直す）。72 行「花鏡: 一帖、合十三紙」は確かめていない（序引の覺習條々の解題は「一帖 合二十九紙」）。
+- wiki の頁「Shibolet 2018」 14 行：「cs 側読解は要旨レベルに留まる（本文 PDF アクセス不可）」。手元に CC BY の誌面の PDF がある。

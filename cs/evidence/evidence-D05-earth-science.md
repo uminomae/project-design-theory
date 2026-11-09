@@ -10,22 +10,22 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D05-earth
 
 # 地球科学：論ごとの照合の記録
 
-この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。地球科学と物理の記述が正しいかどうかは Claude が引き受けます（`docs/rules/sources.md` §1-4・§6）。
+この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。地球科学と物理の記述が正しいかどうかは Claude が引き受けます（調べ方の規約 §1-4・§6）。
 
 地球科学の原典は、ためる力と抑える力の兼ね合いと、その分かれ目でどちらに転ぶかを書いていました。Reid（1910）は、断層の両側がゆっくり動いて岩にひずみがたまり、岩が耐えられる量を越えると破れて跳ね返ると書いています。Scholz（1998）は、摩擦の性質で断層を三つの領域に分け、不安定な領域でだけ地震が始まり、安定な領域に入った破壊はすぐに止まると書いています。Cane と Zebiak（1985）は、大気と海の正のフィードバックで暖かい事象が育つ一方、赤道の海の熱の量が平均より少ないとフィードバックは根づかず、事象は育たないと書いています。Moran ら（2011）は、マグマの噴火を促す要因と妨げる要因がぶつかり合い、マグマは地表に届く前に止まることが多いと書いています。Erwin（2001）は、大量絶滅のあとの回復に正のフィードバックがあり、絶滅を生き延びた系統の多くが回復の間に消えると書いています。Catuneanu ら（2009）は、海面の上がる速さと堆積の速さのどちらが勝つかで、海進と海退が分かれると書いています。原典は、育たない事象・止まる破壊・地表に届かないマグマ・回復の間に消える系統・残らない地層を、論の中心に置いていました。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D05-earth-science.md`、2026-03-18 に LLM が生成、以下「報告」）は、10 の論を取り上げ、日本語版では 7 を「強い対応」、2 を「部分的対応」、1 を「条件付きの対応」としています。報告は「不発の記録」（ja 180〜182 行）として、至らない形を地球科学の特徴に挙げています。この記録は、報告の 10 の論を一次情報で確かめ直したものです。論の数は変えていません。火山噴火には Moran ら（2011）、大量絶滅には Erwin（2001）と Hull（2015）、プレートテクトニクスには Nance（2022）を、同じ論の中の確かめ先として足しました。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
+今の公開報告（「30 領域調査報告」の地球科学の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、10 の論を取り上げ、日本語版では 7 を「強い対応」、2 を「部分的対応」、1 を「条件付きの対応」としています。報告は「不発の記録」（ja 180〜182 行）として、至らない形を地球科学の特徴に挙げています。この記録は、報告の 10 の論を一次情報で確かめ直したものです。論の数は変えていません。火山噴火には Moran ら（2011）、大量絶滅には Erwin（2001）と Hull（2015）、プレートテクトニクスには Nance（2022）を、同じ論の中の確かめ先として足しました。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D05-earth-science.md) にあります。退避版の判定（Accept・CA・縁フラグ・confidence）は、この記録の照合の状態の根拠にしていません。
 
 ## 読み方
 
-- 照合の状態は `docs/rules/sources.md` §3 の四つで書きます。著者自身の後の総説で読んだものは「著者のまとめ直し」と書き、原論文は未照合とします。
+- 照合の状態は調べ方の規約 §3 の四つで書きます。著者自身の後の総説で読んだものは「著者のまとめ直し」と書き、原論文は未照合とします。
 - 今の報告への判定は、一致・言い過ぎ・取り違え・帰属違い・付け足し・抜け・未判定で書きます。「抜け」は、原典にある衝突や至らない形を報告が落としていることです。
-- 「ja 96 行」は日本語版の行、「en」は英語版（`en/md/domain-D05-earth-science.md`）、「pres」はプレゼン版（`ja/presentations/md/domain-D05-earth-science-presentation-ja.md`）、「退避版」は上の History のファイル、「調べた跡」は `cs/evidence/investigation/D05-earth-science/` の phase5〜7 を指します。
+- 「ja 96 行」は日本語版の行、「en」は英語版（「30 領域調査報告」の地球科学の英語版）、「pres」はプレゼン版（「30 領域調査報告」の地球科学のプレゼン版）、「退避版」は上の History のファイル、「調べた跡」は、報告を作ったときの途中の出力（phase5〜7）の phase5〜7 を指します。
 - 地球科学の主張には、教科書（分野で確立した記述）・研究の一線（争いがある、または一つの研究が示した）・Claude の読み替え（5段階の問いに当てた解釈）のどれかを添えます。
-- 複雑系科学（D29）と進化生物学（D04）と重なる所（地震の大きさの分布と自己組織化臨界、大量絶滅のあとの適応放散）は、[複雑系科学の記録](evidence-D29-complexity-science.md)の 2 と[進化生物学の記録](evidence-D04-evolutionary-biology.md)の 10 を参照し、読み直していません。台帳 D05-S14（Bak, Tang & Wiesenfeld 1988）は D29-S04 と同じ文献です。
-- 語が同じこと（「波」と海洋の波、「渦」と外核の対流）は、対応の根拠にも反証にも数えません（`docs/cs-review/README.md`「規約で決めたこと」）。
+- 複雑系科学（複雑系科学）と進化生物学（進化生物学）と重なる所（地震の大きさの分布と自己組織化臨界、大量絶滅のあとの適応放散）は、[複雑系科学の記録](evidence-D29-complexity-science.md)の 2 と[進化生物学の記録](evidence-D04-evolutionary-biology.md)の 10 を参照し、読み直していません。台帳に行がある（Bak, Tang & Wiesenfeld 1988）は台帳の「Bak ら 1988」の行と同じ文献です。
+- 語が同じこと（「波」と海洋の波、「渦」と外核の対流）は、対応の根拠にも反証にも数えません（調べ方の計画と規約「規約で決めたこと」）。
 
 ## 一面の表
 
@@ -54,12 +54,12 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Morgan, W. J. (1968). Rises, trenches, great faults, and crustal blocks. *J. Geophys. Res.* 73(6), 1959–1982. DOI: [10.1029/JB073i006p01959](https://doi.org/10.1029/JB073i006p01959)（Crossref で題・著者・頁を確かめました）。台帳 D05-S02。手元の PDF は mantleplumes.org（研究者が運営するサイト）の写しで、表紙は誌名・巻・号・題・著者と合います。読んだ頁：p.1959（要旨。地表は硬い板に分かれ、板の境は、新しい地表ができる海嶺、地表が壊される海溝や若い褶曲山脈、そして大きな断層の三つ）、p.1980（海嶺の場所は深い熱源で決まっているのでなく、板の動きで決まると仮定する。板は不規則な駆動源を均して一様な動きにする強さを持つ）。
-- Le Pichon, X. (1968). Sea-floor spreading and continental drift. *J. Geophys. Res.* 73(12), 3661–3697. DOI: [10.1029/JB073i012p03661](https://doi.org/10.1029/JB073i012p03661)（Crossref で確かめました）。台帳 D05-S03。手元の PDF はパリ高等師範学校（ENS）のサイトの写しで、表紙は合います。読んだ頁：p.3673（地球が膨張していないなら何がこの動きを生むのか。海嶺の真下に昇る対流は想像しにくく、海の開き方は、厚いリソスフェアが弱い線に沿って割れることで下の応力の状態に応えたものに見える）、p.3679（動きは、駆動する応力の模様と、割れやすい弱い帯と、大きな沈み込みの場所で決まる。インド洋と北極海の海嶺は、大西洋の湧き出しとアルプス－ヒマラヤの沈み込みの幾何の両立しなさを和らげる役）、pp.3693–3694（Elsasser の、沈む板が隣の板を引く張力の考えを引き、トンガ・ケルマデック海溝では太平洋の板が隣から切り離されて自分で沈む）。
-- Conrad, C. P. & Lithgow-Bertelloni, C. (2002). How Mantle Slabs Drive Plate Tectonics. *Science* 298(5591), 207–209. DOI: [10.1126/science.1074161](https://doi.org/10.1126/science.1074161)（Crossref で確かめました）。台帳 D05-S05。台帳の取得先（ハワイ大学の FTP、https://ftp.soest.hawaii.edu/engels/Stanley/Textbook_update/Science_298/Conrad-02.pdf ）から 2026-11-09 に取れました（先頭は %PDF。1 頁目は Science の誌面で題・著者・DOI と合う）。大学のサイトに置かれた授業用の写しです。読んだ頁：p.207（マントル対流がプレートを動かす仕組みは長く議論されている。上部マントルのスラブは板につながっていて、全駆動力のおよそ半分を担う「引き」を生む。下部マントルのスラブは粘性の流れで板を「吸う」。予測は、駆動力と、粘性の流れの抵抗の釣り合いで計算する）。
-- Nance, R. D. (2022). The supercontinent cycle and Earth's long-term climate. *Ann. N. Y. Acad. Sci.* 1515(1), 33–49. DOI: [10.1111/nyas.14849](https://doi.org/10.1111/nyas.14849)（Crossref で確かめました）。PMC9796656（CC BY）。台帳 D05-S06（Nance ら 2014、有料）の注にある、同じ著者の後の総説です。PMC の記事の頁の HTML で読みました。誌面の頁が無いので節で控えます。読んだ節：「Introduction」（超大陸はおよそ 5 億年ごとに集まって割れてきた。Pannotia は実在が議論されている。Rodinia は約 9.5 億〜8 億年前）、「Background」（集まる時期は海面が下がり、浅い海の住みかが減って多様性が下がり、大量絶滅を招くことがある。割れる時期は海面が上がり、新しい種の放散が速まる。周期を動かすのは、大陸の熱の閉じ込め・マントルプルーム・スラブの後退の組み合わせらしい。開いた海は広がりきって外向きに閉じるか、古く重くなった海底が沈んで内向きに閉じる）。
-- Wilson, J. T. (1966). Did the Atlantic Close and then Re-Open? *Nature* 211(5050), 676–681. DOI: [10.1038/211676a0](https://doi.org/10.1038/211676a0)（Crossref で確かめました）。台帳 D05-S01。Nature のページは自動取得でログインの画面に送られました。授業用や著者の写しは、検索で見つかりませんでした。
-- Dewey & Bird（1970）は台帳 D05-S04（書誌のみ）で、読んでいません。
+- Morgan, W. J. (1968). Rises, trenches, great faults, and crustal blocks. *J. Geophys. Res.* 73(6), 1959–1982. DOI: [10.1029/JB073i006p01959](https://doi.org/10.1029/JB073i006p01959)（Crossref で題・著者・頁を確かめました）。台帳に行がある。手元の PDF は mantleplumes.org（研究者が運営するサイト）の写しで、表紙は誌名・巻・号・題・著者と合います。読んだ頁：p.1959（要旨。地表は硬い板に分かれ、板の境は、新しい地表ができる海嶺、地表が壊される海溝や若い褶曲山脈、そして大きな断層の三つ）、p.1980（海嶺の場所は深い熱源で決まっているのでなく、板の動きで決まると仮定する。板は不規則な駆動源を均して一様な動きにする強さを持つ）。
+- Le Pichon, X. (1968). Sea-floor spreading and continental drift. *J. Geophys. Res.* 73(12), 3661–3697. DOI: [10.1029/JB073i012p03661](https://doi.org/10.1029/JB073i012p03661)（Crossref で確かめました）。台帳に行がある。手元の PDF はパリ高等師範学校（ENS）のサイトの写しで、表紙は合います。読んだ頁：p.3673（地球が膨張していないなら何がこの動きを生むのか。海嶺の真下に昇る対流は想像しにくく、海の開き方は、厚いリソスフェアが弱い線に沿って割れることで下の応力の状態に応えたものに見える）、p.3679（動きは、駆動する応力の模様と、割れやすい弱い帯と、大きな沈み込みの場所で決まる。インド洋と北極海の海嶺は、大西洋の湧き出しとアルプス－ヒマラヤの沈み込みの幾何の両立しなさを和らげる役）、pp.3693–3694（Elsasser の、沈む板が隣の板を引く張力の考えを引き、トンガ・ケルマデック海溝では太平洋の板が隣から切り離されて自分で沈む）。
+- Conrad, C. P. & Lithgow-Bertelloni, C. (2002). How Mantle Slabs Drive Plate Tectonics. *Science* 298(5591), 207–209. DOI: [10.1126/science.1074161](https://doi.org/10.1126/science.1074161)（Crossref で確かめました）。台帳に行がある。台帳の取得先（ハワイ大学の FTP、https://ftp.soest.hawaii.edu/engels/Stanley/Textbook_update/Science_298/Conrad-02.pdf ）から 2026-11-09 に取れました（先頭は %PDF。1 頁目は Science の誌面で題・著者・DOI と合う）。大学のサイトに置かれた授業用の写しです。読んだ頁：p.207（マントル対流がプレートを動かす仕組みは長く議論されている。上部マントルのスラブは板につながっていて、全駆動力のおよそ半分を担う「引き」を生む。下部マントルのスラブは粘性の流れで板を「吸う」。予測は、駆動力と、粘性の流れの抵抗の釣り合いで計算する）。
+- Nance, R. D. (2022). The supercontinent cycle and Earth's long-term climate. *Ann. N. Y. Acad. Sci.* 1515(1), 33–49. DOI: [10.1111/nyas.14849](https://doi.org/10.1111/nyas.14849)（Crossref で確かめました）。PMC9796656（CC BY）。台帳に行がある（Nance ら 2014、有料）の注にある、同じ著者の後の総説です。PMC の記事の頁の HTML で読みました。誌面の頁が無いので節で控えます。読んだ節：「Introduction」（超大陸はおよそ 5 億年ごとに集まって割れてきた。Pannotia は実在が議論されている。Rodinia は約 9.5 億〜8 億年前）、「Background」（集まる時期は海面が下がり、浅い海の住みかが減って多様性が下がり、大量絶滅を招くことがある。割れる時期は海面が上がり、新しい種の放散が速まる。周期を動かすのは、大陸の熱の閉じ込め・マントルプルーム・スラブの後退の組み合わせらしい。開いた海は広がりきって外向きに閉じるか、古く重くなった海底が沈んで内向きに閉じる）。
+- Wilson, J. T. (1966). Did the Atlantic Close and then Re-Open? *Nature* 211(5050), 676–681. DOI: [10.1038/211676a0](https://doi.org/10.1038/211676a0)（Crossref で確かめました）。台帳に行がある。Nature のページは自動取得でログインの画面に送られました。授業用や著者の写しは、検索で見つかりませんでした。
+- Dewey & Bird（1970）は台帳に行がある（書誌のみ）で、読んでいません。
 
 **照合の状態**：Morgan・Le Pichon・Conrad & Lithgow-Bertelloni は本文照合済（研究者・大学のサイトの写し。頁は上のとおり）。Nance 2022 は本文照合済（PMC の全文。節で控えた）で、Nance ら 2014 の著者のまとめ直しです。Wilson 1966 と Dewey & Bird 1970 は未照合です。
 
@@ -88,10 +88,10 @@ Claude の読み替えでは、ためる力（マントルの熱の閉じ込め�
 
 **一次情報**：
 
-- Bjerknes, J. (1969). Atmospheric teleconnections from the equatorial Pacific. *Mon. Wea. Rev.* 97(3), 163–172. DOI: [10.1175/1520-0493(1969)097<0163:ATFTEP>2.3.CO;2](https://doi.org/10.1175/1520-0493(1969)097%3C0163:ATFTEP%3E2.3.CO;2)（Crossref で確かめました）。台帳 D05-S10。台帳の取得先（AMS）は自動取得で 403 でした。ハーバード大学の授業の頁の写し（https://courses.seas.harvard.edu/climate/eli/Courses/EPS281r/Sources/ENSO/Bjerknes-1969.pdf ）を読みました。先頭は %PDF で、1 頁目は誌名・巻・号・題・著者と合います。読んだ頁：p.170（Walker 循環の底の気圧の傾きが急になると、赤道の東風が強まり、湧昇が強まり、東西の水温の差が開く。この連鎖は、強まる Walker 循環が自分の原因である水温の差を強めることを示す。逆に東風が弱まると湧昇が弱まり、東が暖まり、水温の差が縮んで循環が遅くなる。こうして交互の傾向が終わりなく続くが、傾向の切り替わりがどう起きるかはまだはっきりしない）。
-- Cane, M. A. & Zebiak, S. E. (1985). A Theory for El Niño and the Southern Oscillation. *Science* 228(4703), 1085–1087. DOI: [10.1126/science.228.4703.1085](https://doi.org/10.1126/science.228.4703.1085)（Crossref で確かめました）。台帳 D05-S08。手元の PDF はコロンビア大学の機関リポジトリ（Academic Commons）の寄託で、表紙は合います。読んだ頁：p.1085（要旨。不規則な間隔での再発を再現する。ENSO の繰り返しは熱帯太平洋の中の決定論的な相互作用で保たれる）、p.1086（暖かい事象は、大気と海の異常の正のフィードバックで生じる。ただし、結合した系が不安定になる必要条件が満たされないと、フィードバックは根づかない。赤道の海の熱の量が平均より少ないと、エルニーニョは育たない。条件がそろえば、西風の突風などさまざまな乱れがきっかけになる。春に平均の条件が変わると結合が弱まり、暖かい事象は保てなくなる。系は平均を越えて冷たい側へ行き過ぎ、熱の貯えが数年で満ちると、また事象を支えられる。ENSO ははっきり非周期的で、モデルは決定論的なので、非周期性は決定論的な相互作用から来ていて、出どころの分からない偶然の揺らぎからではない）。
-- Suarez, M. J. & Schopf, P. S. (1988). A Delayed Action Oscillator for ENSO. *J. Atmos. Sci.* 45(21), 3283–3287. DOI: [10.1175/1520-0469(1988)045<3283:ADAOFE>2.0.CO;2](https://doi.org/10.1175/1520-0469(1988)045%3C3283:ADAOFE%3E2.0.CO;2)（Crossref で確かめました）。台帳 D05-S09。台帳の取得先（harmonyforearth.org）の PDF は、走査の画像で文字の層が無く、1 頁目を画像にして読みました。上げた人と権利は確かめられません。読んだ頁：p.3283（要旨と序。強い正のフィードバックと、西の境で跳ね返って戻る海洋の波による、遅れた負のフィードバック。定常状態はどれも不安定になりうる。振動の周期は遅れの数倍）。
-- Philander（1983）は台帳 D05-S07（有料）で、読んでいません。
+- Bjerknes, J. (1969). Atmospheric teleconnections from the equatorial Pacific. *Mon. Wea. Rev.* 97(3), 163–172. DOI: [10.1175/1520-0493(1969)097<0163:ATFTEP>2.3.CO;2](https://doi.org/10.1175/1520-0493(1969)097%3C0163:ATFTEP%3E2.3.CO;2)（Crossref で確かめました）。台帳に行がある。台帳の取得先（AMS）は自動取得で 403 でした。ハーバード大学の授業の頁の写し（https://courses.seas.harvard.edu/climate/eli/Courses/EPS281r/Sources/ENSO/Bjerknes-1969.pdf ）を読みました。先頭は %PDF で、1 頁目は誌名・巻・号・題・著者と合います。読んだ頁：p.170（Walker 循環の底の気圧の傾きが急になると、赤道の東風が強まり、湧昇が強まり、東西の水温の差が開く。この連鎖は、強まる Walker 循環が自分の原因である水温の差を強めることを示す。逆に東風が弱まると湧昇が弱まり、東が暖まり、水温の差が縮んで循環が遅くなる。こうして交互の傾向が終わりなく続くが、傾向の切り替わりがどう起きるかはまだはっきりしない）。
+- Cane, M. A. & Zebiak, S. E. (1985). A Theory for El Niño and the Southern Oscillation. *Science* 228(4703), 1085–1087. DOI: [10.1126/science.228.4703.1085](https://doi.org/10.1126/science.228.4703.1085)（Crossref で確かめました）。台帳に行がある。手元の PDF はコロンビア大学の機関リポジトリ（Academic Commons）の寄託で、表紙は合います。読んだ頁：p.1085（要旨。不規則な間隔での再発を再現する。ENSO の繰り返しは熱帯太平洋の中の決定論的な相互作用で保たれる）、p.1086（暖かい事象は、大気と海の異常の正のフィードバックで生じる。ただし、結合した系が不安定になる必要条件が満たされないと、フィードバックは根づかない。赤道の海の熱の量が平均より少ないと、エルニーニョは育たない。条件がそろえば、西風の突風などさまざまな乱れがきっかけになる。春に平均の条件が変わると結合が弱まり、暖かい事象は保てなくなる。系は平均を越えて冷たい側へ行き過ぎ、熱の貯えが数年で満ちると、また事象を支えられる。ENSO ははっきり非周期的で、モデルは決定論的なので、非周期性は決定論的な相互作用から来ていて、出どころの分からない偶然の揺らぎからではない）。
+- Suarez, M. J. & Schopf, P. S. (1988). A Delayed Action Oscillator for ENSO. *J. Atmos. Sci.* 45(21), 3283–3287. DOI: [10.1175/1520-0469(1988)045<3283:ADAOFE>2.0.CO;2](https://doi.org/10.1175/1520-0469(1988)045%3C3283:ADAOFE%3E2.0.CO;2)（Crossref で確かめました）。台帳に行がある。台帳の取得先（harmonyforearth.org）の PDF は、走査の画像で文字の層が無く、1 頁目を画像にして読みました。上げた人と権利は確かめられません。読んだ頁：p.3283（要旨と序。強い正のフィードバックと、西の境で跳ね返って戻る海洋の波による、遅れた負のフィードバック。定常状態はどれも不安定になりうる。振動の周期は遅れの数倍）。
+- Philander（1983）は台帳に行がある（有料）で、読んでいません。
 
 **照合の状態**：Bjerknes 1969（授業用の写し p.170）と Cane & Zebiak 1985（機関リポジトリの写し pp.1085–1086）は本文照合済です。Suarez & Schopf 1988 は、上げた人の分からない写しで p.3283 を読んだので未照合です。AMS の誌面（古い号は無料で公開）がブラウザで保存できれば本文照合済にできます。
 
@@ -373,11 +373,11 @@ ja の「強い 7」は、退避版の Accept 9 から ミランコビッチと�
 | シーケンス層序 | 削剥で削られ、欠乏でたまらず、地層が残らない（Catuneanu ら p.15） | 基準面の上がる速さと堆積の速さ |
 | 大量絶滅 | 生き延びた系統が回復の間に消える。生態の空きが崩れる（Erwin） | 書かれていない（絶滅の大きさと影響に相関は無い） |
 
-D01・D02・D03・D04・D29 と同じく、至らない形は原典の中心にありました。地球科学では、片方の勝利（海進と海退の入れ替わり、氷期と間氷期）と、場に戻って次を待つ形（ENSO の熱の貯え、地震のひずみの再蓄積）と、そのほかの至らない形（止まる破壊、止まるマグマ、残らない地層、消える系統）が、はっきり分かれて書かれていました。
+数学・物理学・化学・進化生物学・複雑系科学と同じく、至らない形は原典の中心にありました。地球科学では、片方の勝利（海進と海退の入れ替わり、氷期と間氷期）と、場に戻って次を待つ形（ENSO の熱の貯え、地震のひずみの再蓄積）と、そのほかの至らない形（止まる破壊、止まるマグマ、残らない地層、消える系統）が、はっきり分かれて書かれていました。
 
 ### テンプレート由来の表示
 
-「立ち位置明示」（3〜6 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6（構造再読）」「Phase 7（横断統合）」（30 行・38 行）、「方法論的開示（S60）」（44〜49 行）、「温度帯の分布」（86 行）、「安全弁」（88〜90 行）、「結びの温度開示」（232〜233 行）、「Colophon」の generator_model（235〜245 行）。49 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（writing.md §1-1・§1-8）。en 15 行の「three conditions associated with Edge」は、退避版の縁フラグの「縁の3条件」（40 行ほか）から来ています。en 31 行の「If these definitions already produce discomfort…Both are legitimate choices」は、読者への合いの手です（型 F）。D01・D02・D03・D22・D29 と同じく、テンプレートで一度に直します（`cs/transform/domains/reader-rules/reader-rules-creation.md`）。
+「立ち位置明示」（3〜6 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6（構造再読）」「Phase 7（横断統合）」（30 行・38 行）、「方法論的開示（S60）」（44〜49 行）、「温度帯の分布」（86 行）、「安全弁」（88〜90 行）、「結びの温度開示」（232〜233 行）、「Colophon」の generator_model（235〜245 行）。49 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（書き方の規約 §1-1・§1-8）。en 15 行の「three conditions associated with Edge」は、退避版の縁フラグの「縁の3条件」（40 行ほか）から来ています。en 31 行の「If these definitions already produce discomfort…Both are legitimate choices」は、読者への合いの手です（型 F）。数学・物理学・化学・経営学・複雑系科学と同じく、テンプレートで一度に直します（旧い規則（創造とはの読み手の規則））。
 
 ### 誤りの出どころ
 
@@ -391,10 +391,10 @@ D01・D02・D03・D04・D29 と同じく、至らない形は原典の中心に�
 | シーケンス層序の「最も厳密」 | 退避版、調べた跡 phase5・phase7 |
 | 「縁の3条件」（en 15 行） | 退避版の縁フラグの欄（40 行・264 行・301 行・338 行・375 行） |
 | 判定の数が版ごとに違う | ja は退避版の Accept 9 から二つを引いた形。en の「seven」は退避版 413 行の縁フラグ 🔴 7。pres は 14 件の別の表（DR の候補の表の形） |
-| ウィルソンサイクルの提唱者に Morgan・Le Pichon を並べる | 退避版の書誌の欄と、台帳 D05-S02・S03 がプレートテクトニクスの行に入っていること |
+| ウィルソンサイクルの提唱者に Morgan・Le Pichon を並べる | 退避版の書誌の欄と、台帳の「Morgan 1968」の行がプレートテクトニクスの行に入っていること |
 | テンプレートの表示 | 報告のテンプレート |
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 E（断定・看板・「最も」）：「5段階モデルとの対応が最も自然に読める地球科学理論の一つ」（108 行）、「対応は極めて明快」（124 行）、「『束』の定義においては30領域中で最も厳密」（140 行）、「構造対応が最も高密度な領域の一つ」（228 行）、「5段階モデルの記述力を示す顕著な事例」（228 行）、en 121 行「earth science provides one of the most direct supporting indications for that claim」、en 159 行「This is not merely a metaphorical resemblance」。
 - 型 E（研究の一線を事実として書く）：プレートの駆動力の配分（96 行）、10 万年問題の位置づけ（116 行）、地震予知の難しさを5段階の性質の裏付けにする所（124 行）。
@@ -404,76 +404,64 @@ D01・D02・D03・D04・D29 と同じく、至らない形は原典の中心に�
 
 ### 精読ノートと wiki・台帳の誤り（司令塔が直す）
 
-- `cs/knowledge/source-notes/D05/D05-S08_cane-zebiak-1985.md` 44 行：引用が原文と違い、意味が逆になっています。ノートは「One intent is to reproduce … so to simulate it precisely. We formulate a minimum model for the perturbations」、原文（p.1085）は「Our intent is to reproduce … not to simulate it precisely. We formulate a nonlinear model for the perturbations」です。同じノートの頁（p.1・p.2）は PDF の頁で、誌面では pp.1085・1086 です。
-- `pd/wiki/sources/D05_bjerknes_1969_bjerknes-1969-atmospheric-teleconnections.md` 62 行：「確立した学術的理解に基づいて記述した」「OA URL（AMS journals）は直接取得できなかった」とあり、原典を読まずに書いた頁です。ハーバード大学の授業の頁の写しで本文が読めます（上の 2 の節）。
-- 台帳 D05-S10（235 行）：取得先の AMS は、2026-11-09 に自動取得で 403 でした。ハーバード大学の授業の頁の写しを書き足す案です。
-- 台帳 D05-S09（234 行）：取得先の harmonyforearth.org は、上げた人が分かりません。PDF は走査の画像で文字の層がありません。AMS の誌面に替える案です。
-- 台帳 D05-S05（230 行）：取得先（ハワイ大学の FTP）は 2026-11-09 に取れました（同じ日の早い時刻に 502 だったと頼む文にあります）。
-- 台帳 D05-S06（231 行）：注にある Nance 2022 は、独立した行が無いので、下の案で D05-S16 にしました。
+- 精読ノート「Cane & Zebiak 1985」 44 行：引用が原文と違い、意味が逆になっています。ノートは「One intent is to reproduce … so to simulate it precisely. We formulate a minimum model for the perturbations」、原文（p.1085）は「Our intent is to reproduce … not to simulate it precisely. We formulate a nonlinear model for the perturbations」です。同じノートの頁（p.1・p.2）は PDF の頁で、誌面では pp.1085・1086 です。
+- wiki の頁「Bjerknes 1969」 62 行：「確立した学術的理解に基づいて記述した」「OA URL（AMS journals）は直接取得できなかった」とあり、原典を読まずに書いた頁です。ハーバード大学の授業の頁の写しで本文が読めます（上の 2 の節）。
+- 台帳の「Bjerknes 1969」の行（235 行）：取得先の AMS は、2026-11-09 に自動取得で 403 でした。ハーバード大学の授業の頁の写しを書き足す案です。
+- 台帳の「Suarez & Schopf 1988」の行（234 行）：取得先の harmonyforearth.org は、上げた人が分かりません。PDF は走査の画像で文字の層がありません。AMS の誌面に替える案です。
+- 台帳の「Conrad & Lithgow-Bertelloni 2002」の行（230 行）：取得先（ハワイ大学の FTP）は 2026-11-09 に取れました（同じ日の早い時刻に 502 だったと頼む文にあります）。
+- 台帳の「Nance ら 2014」の行（231 行）：注にある Nance 2022 は、独立した行が無いので、下の案で台帳の「Nance 2022」の行にしました。
 - Crossref の 10.1038/377203a0 の著者名が「Glatzmaiers」と綴られています（Crossref の側の誤りで、この repo の誤りではありません）。
 
-精読ノート D05-S08 の主張 1〜3 と主張 5 の引用は、読んだ所では原典と合っていました（p.1086）。ノートは、フィードバックが根づかない条件（p.1086）を落としています。
+精読ノート「Cane & Zebiak 1985」の主張 1〜3 と主張 5 の引用は、読んだ所では原典と合っていました（p.1086）。ノートは、フィードバックが根づかない条件（p.1086）を落としています。
 
 ## 判断が要るもの
 
-pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは `docs/cs-review/README.md` の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
+pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは調べ方の計画と規約の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
 
-- Suarez & Schopf（1988）の台帳の取得先（harmonyforearth.org）は、上げた人と権利が確かめられません。上げた人の分からない写しの扱い（「規約で決めたこと」2026-11-09 の D29 の行）に従い、読んだ頁を書いて未照合としました。予想：pjdhiro も同じ扱いを選ぶ見込みです（stance 2-6 誠実さ）。AMS の誌面をブラウザで保存すれば本文照合済にできます。
-- Reid（1910）は、イリノイ大学の図書館が走査した Internet Archive の資料の OCR の文字で読みました。1910 年の刊行でパブリックドメインなので本文照合済にし、「OCR の文字で読んだ」と添えました（「規約で決めたこと」の D21 の行）。
-- Hull（2015）は、著者の所属するイェール大学の学科のサイトの写しで読みました。大学のサイトの写しとして本文照合済にしました（`sources.md` §5-8 の「著者・大学の写しは載せる」）。
-- 火山噴火・大量絶滅・プレートテクトニクスで、報告が引かない後の総説（Moran ら 2011・Erwin 2001・Hull 2015・Nance 2022）を、同じ論の中の確かめ先として足しました。論の数は増やしていません（`docs/cs-review/README.md`「調査の手順」1）。
+- Suarez & Schopf（1988）の台帳の取得先（harmonyforearth.org）は、上げた人と権利が確かめられません。上げた人の分からない写しの扱い（「規約で決めたこと」2026-11-09 の複雑系科学の行）に従い、読んだ頁を書いて未照合としました。予想：pjdhiro も同じ扱いを選ぶ見込みです（stance 2-6 誠実さ）。AMS の誌面をブラウザで保存すれば本文照合済にできます。
+- Reid（1910）は、イリノイ大学の図書館が走査した Internet Archive の資料の OCR の文字で読みました。1910 年の刊行でパブリックドメインなので本文照合済にし、「OCR の文字で読んだ」と添えました（「規約で決めたこと」の経済学の行）。
+- Hull（2015）は、著者の所属するイェール大学の学科のサイトの写しで読みました。大学のサイトの写しとして本文照合済にしました（調べ方の規約 §5-8 の「著者・大学の写しは載せる」）。
+- 火山噴火・大量絶滅・プレートテクトニクスで、報告が引かない後の総説（Moran ら 2011・Erwin 2001・Hull 2015・Nance 2022）を、同じ論の中の確かめ先として足しました。論の数は増やしていません（調べ方の計画と規約「調査の手順」1）。
 - 報告の「死の渦」と「創造の渦」の区別は、問いとして立てず、回復の間に消える系統を至らない形の行として並べました（規約で決めたこと「射程を狭める推奨は採らない」、中心の問い）。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-manifest は書き換えていません。番号は台帳と同じ形で、D05-S16 から振りました。
+台帳は書き換えていません。
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D05-S16 | Nance, R. D. (2022). The supercontinent cycle and Earth's long-term climate. *Ann. N. Y. Acad. Sci.* 1515(1), 33–49. DOI 10.1111/nyas.14849 | https://pmc.ncbi.nlm.nih.gov/articles/PMC9796656/ （CC BY。PMC の記事の頁） | url-verified |
-| D05-S17 | Hays, J. D., Imbrie, J. & Shackleton, N. J. (1976). Variations in the Earth's Orbit: Pacemaker of the Ice Ages. *Science* 194(4270), 1121–1132. DOI 10.1126/science.194.4270.1121 | https://www2.atmos.umd.edu/~nigam/AOSC617/Hays.Imbrie.Shackelton.Orbital.theory.ice.age.Science.1976.pdf （授業用の写し。誌面） | raw-confirmed（授業用の写し） |
-| D05-S18 | Reid, H. F. (1910). *The Mechanics of the Earthquake*. The California Earthquake of April 18, 1906, Report of the State Earthquake Investigation Commission, Vol. II. Carnegie Institution of Washington, Publication 87 | https://archive.org/details/californiaearthq872cali （イリノイ大学の図書館の走査。パブリックドメイン。OCR の文字で読んだ） | url-verified（OCR の文字） |
-| D05-S19 | Scholz, C. H. (1998). Earthquakes and friction laws. *Nature* 391(6662), 37–42. DOI 10.1038/34097 | https://www.eoas.ubc.ca/courses/eosc562/scholz1998.pdf （授業用の写し。誌面） | raw-confirmed（授業用の写し） |
-| D05-S20 | Dieterich, J. H. (1979). Modeling of rock friction: 1. Experimental results and constitutive equations. *J. Geophys. Res.* 84(B5), 2161–2168. DOI 10.1029/JB084iB05p02161 | Wiley（刊行から 24 か月を過ぎて無料のはず。自動取得で 403） | citation-only（要旨照合済） |
-| D05-S21 | Ruina, A. (1983). Slip instability and state variable friction laws. *J. Geophys. Res.* 88(B12), 10359–10370. DOI 10.1029/JB088iB12p10359 | Wiley（自動取得で 403） | citation-only（要旨照合済） |
-| D05-S22 | Moran, S. C., Newhall, C. & Roman, D. C. (2011). Failed magmatic eruptions: late-stage cessation of magma ascent. *Bull. Volcanol.* 73(2), 115–122. DOI 10.1007/s00445-010-0444-x | https://www.eps.mcgill.ca/~courses/c567/Week%208%20-%20Failed%20eruptions/Moran%20et%20al%202011,%20failed%20eruptions.pdf （授業用の写し。誌面）。USGS の記録 https://pubs.usgs.gov/publication/70036578 | raw-confirmed（授業用の写し） |
-| D05-S23 | Cashman, K. V. & Sparks, R. S. J. (2013). How volcanoes work: A 25 year perspective. *GSA Bull.* 125(5–6), 664–690. DOI 10.1130/B30720.1 | GSA（自動取得で 403） | citation-only（要旨照合済） |
-| D05-S24 | Woods, A. W. (1995). The dynamics of explosive volcanic eruptions. *Rev. Geophys.* 33(4), 495–530. DOI 10.1029/95RG02096 | Wiley（自動取得で 403） | citation-only（要旨照合済） |
-| D05-S25 | Gudmundsson, A. (2012). Magma chambers: Formation, local stresses, excess pressures, and compartments. *J. Volcanol. Geotherm. Res.* 237–238, 19–41. DOI 10.1016/j.jvolgeores.2012.05.015 | Elsevier（有料。取得を試していない） | citation-only |
-| D05-S26 | Catuneanu, O., Abreu, V., Bhattacharya, J. P., Blum, M. D. ら (2009). Towards the standardization of sequence stratigraphy. *Earth-Sci. Rev.* 92(1–2), 1–33. DOI 10.1016/j.earscirev.2008.10.003 | https://basin.earth.ncu.edu.tw/download/courses/sequence_strat/reading/Catuneanu_etal_2009_ESR_Standardization%20of%20sequence%20stratigraphy.pdf （授業用の写し。誌面） | raw-confirmed（授業用の写し） |
-| D05-S27 | Raup, D. M. & Sepkoski, J. J. (1982). Mass Extinctions in the Marine Fossil Record. *Science* 215(4539), 1501–1503. DOI 10.1126/science.215.4539.1501 | Science（有料）。個人の GitHub の頁の JSTOR の写しは画像だけで、上げた人と権利は未確認 | citation-only（要旨照合済） |
-| D05-S28 | Alvarez, L. W., Alvarez, W., Asaro, F. & Michel, H. V. (1980). Extraterrestrial Cause for the Cretaceous-Tertiary Extinction. *Science* 208(4448), 1095–1108. DOI 10.1126/science.208.4448.1095 | mantleplumes.org の写し（2026-11-09 に接続できず）、OSTI（応答なし）。日をおいて取り直す | citation-only（要旨照合済） |
-| D05-S29 | Erwin, D. H. (2001). Lessons from the past: Biotic recoveries from mass extinctions. *PNAS* 98(10), 5399–5403. DOI 10.1073/pnas.091092698 | https://pmc.ncbi.nlm.nih.gov/articles/PMC33225/ （PMC の記事の頁。efetch の XML は要旨だけ） | url-verified |
-| D05-S30 | Hull, P. (2015). Life in the Aftermath of Mass Extinctions. *Curr. Biol.* 25(19), R941–R952. DOI 10.1016/j.cub.2015.08.053 | https://earth.yale.edu/sites/default/files/2024-12/Hull%20pdf%209.pdf （著者の所属の学科のサイトの写し。誌面） | raw-confirmed（大学のサイトの写し） |
-| D05-S31 | Goldich, S. S. (1938). A Study in Rock-Weathering. *J. Geol.* 46(1), 17–58. DOI 10.1086/624619 | シカゴ大学出版（自動取得で 403） | citation-only |
-| D05-S32 | Jenny, H. (1941). *Factors of Soil Formation*. McGraw-Hill | 書籍（個人のサイトの写しは取っていない） | citation-only（書籍） |
-| D05-S33 | Chadwick, O. A. & Chorover, J. (2001). The chemistry of pedogenic thresholds. *Geoderma* 100(3–4), 321–353. DOI 10.1016/S0016-7061(01)00027-1 | Elsevier（自動取得で 403） | citation-only |
-| D05-S34 | Glatzmaier, G. A. & Roberts, P. H. (1995). A three-dimensional self-consistent computer simulation of a geomagnetic field reversal. *Nature* 377(6546), 203–209. DOI 10.1038/377203a0 | Nature（ログインの画面） | citation-only |
-| D05-S35 | Roberts, P. H. & Glatzmaier, G. A. (2000). Geodynamo theory and simulations. *Rev. Mod. Phys.* 72(4), 1081–1123. DOI 10.1103/RevModPhys.72.1081 | APS（自動取得で 401） | citation-only |
-| D05-S36 | Kleine, T., Münker, C., Mezger, K. & Palme, H. (2002). Rapid accretion and early core formation on asteroids and the terrestrial planets from Hf–W chronometry. *Nature* 418(6901), 952–955. DOI 10.1038/nature00982 | Nature（ログインの画面） | citation-only |
-| D05-S37 | Elkins-Tanton, L. T. (2012). Magma Oceans in the Inner Solar System. *Annu. Rev. Earth Planet. Sci.* 40, 113–139. DOI 10.1146/annurev-earth-042711-105503 | Annual Reviews（自動取得で 403） | citation-only（要旨照合済） |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| Nance, R. D. (2022). The supercontinent cycle and Earth's long-term climate. *Ann. N. Y. Acad. Sci.* 1515(1), 33–49. DOI 10.1111/nyas.14849 | https://pmc.ncbi.nlm.nih.gov/articles/PMC9796656/ （CC BY。PMC の記事の頁） | 取得先を確かめた |
+| Hays, J. D., Imbrie, J. & Shackleton, N. J. (1976). Variations in the Earth's Orbit: Pacemaker of the Ice Ages. *Science* 194(4270), 1121–1132. DOI 10.1126/science.194.4270.1121 | https://www2.atmos.umd.edu/~nigam/AOSC617/Hays.Imbrie.Shackelton.Orbital.theory.ice.age.Science.1976.pdf （授業用の写し。誌面） | 手元に保存した（授業用の写し） |
+| Reid, H. F. (1910). *The Mechanics of the Earthquake*. The California Earthquake of April 18, 1906, Report of the State Earthquake Investigation Commission, Vol. II. Carnegie Institution of Washington, Publication 87 | https://archive.org/details/californiaearthq872cali （イリノイ大学の図書館の走査。パブリックドメイン。OCR の文字で読んだ） | 取得先を確かめた（OCR の文字） |
+| Scholz, C. H. (1998). Earthquakes and friction laws. *Nature* 391(6662), 37–42. DOI 10.1038/34097 | https://www.eoas.ubc.ca/courses/eosc562/scholz1998.pdf （授業用の写し。誌面） | 手元に保存した（授業用の写し） |
+| Dieterich, J. H. (1979). Modeling of rock friction: 1. Experimental results and constitutive equations. *J. Geophys. Res.* 84(B5), 2161–2168. DOI 10.1029/JB084iB05p02161 | Wiley（刊行から 24 か月を過ぎて無料のはず。自動取得で 403） | 書誌だけ（要旨照合済） |
+| Ruina, A. (1983). Slip instability and state variable friction laws. *J. Geophys. Res.* 88(B12), 10359–10370. DOI 10.1029/JB088iB12p10359 | Wiley（自動取得で 403） | 書誌だけ（要旨照合済） |
+| Moran, S. C., Newhall, C. & Roman, D. C. (2011). Failed magmatic eruptions: late-stage cessation of magma ascent. *Bull. Volcanol.* 73(2), 115–122. DOI 10.1007/s00445-010-0444-x | https://www.eps.mcgill.ca/~courses/c567/Week%208%20-%20Failed%20eruptions/Moran%20et%20al%202011,%20failed%20eruptions.pdf （授業用の写し。誌面）。USGS の記録 https://pubs.usgs.gov/publication/70036578 | 手元に保存した（授業用の写し） |
+| Cashman, K. V. & Sparks, R. S. J. (2013). How volcanoes work: A 25 year perspective. *GSA Bull.* 125(5–6), 664–690. DOI 10.1130/B30720.1 | GSA（自動取得で 403） | 書誌だけ（要旨照合済） |
+| Woods, A. W. (1995). The dynamics of explosive volcanic eruptions. *Rev. Geophys.* 33(4), 495–530. DOI 10.1029/95RG02096 | Wiley（自動取得で 403） | 書誌だけ（要旨照合済） |
+| Gudmundsson, A. (2012). Magma chambers: Formation, local stresses, excess pressures, and compartments. *J. Volcanol. Geotherm. Res.* 237–238, 19–41. DOI 10.1016/j.jvolgeores.2012.05.015 | Elsevier（有料。取得を試していない） | 書誌だけ |
+| Catuneanu, O., Abreu, V., Bhattacharya, J. P., Blum, M. D. ら (2009). Towards the standardization of sequence stratigraphy. *Earth-Sci. Rev.* 92(1–2), 1–33. DOI 10.1016/j.earscirev.2008.10.003 | https://basin.earth.ncu.edu.tw/download/courses/sequence_strat/reading/Catuneanu_etal_2009_ESR_Standardization%20of%20sequence%20stratigraphy.pdf （授業用の写し。誌面） | 手元に保存した（授業用の写し） |
+| Raup, D. M. & Sepkoski, J. J. (1982). Mass Extinctions in the Marine Fossil Record. *Science* 215(4539), 1501–1503. DOI 10.1126/science.215.4539.1501 | Science（有料）。個人の GitHub の頁の JSTOR の写しは画像だけで、上げた人と権利は未確認 | 書誌だけ（要旨照合済） |
+| Alvarez, L. W., Alvarez, W., Asaro, F. & Michel, H. V. (1980). Extraterrestrial Cause for the Cretaceous-Tertiary Extinction. *Science* 208(4448), 1095–1108. DOI 10.1126/science.208.4448.1095 | mantleplumes.org の写し（2026-11-09 に接続できず）、OSTI（応答なし）。日をおいて取り直す | 書誌だけ（要旨照合済） |
+| Erwin, D. H. (2001). Lessons from the past: Biotic recoveries from mass extinctions. *PNAS* 98(10), 5399–5403. DOI 10.1073/pnas.091092698 | https://pmc.ncbi.nlm.nih.gov/articles/PMC33225/ （PMC の記事の頁。efetch の XML は要旨だけ） | 取得先を確かめた |
+| Hull, P. (2015). Life in the Aftermath of Mass Extinctions. *Curr. Biol.* 25(19), R941–R952. DOI 10.1016/j.cub.2015.08.053 | https://earth.yale.edu/sites/default/files/2024-12/Hull%20pdf%209.pdf （著者の所属の学科のサイトの写し。誌面） | 手元に保存した（大学のサイトの写し） |
+| Goldich, S. S. (1938). A Study in Rock-Weathering. *J. Geol.* 46(1), 17–58. DOI 10.1086/624619 | シカゴ大学出版（自動取得で 403） | 書誌だけ |
+| Jenny, H. (1941). *Factors of Soil Formation*. McGraw-Hill | 書籍（個人のサイトの写しは取っていない） | 書誌だけ（書籍） |
+| Chadwick, O. A. & Chorover, J. (2001). The chemistry of pedogenic thresholds. *Geoderma* 100(3–4), 321–353. DOI 10.1016/S0016-7061(01)00027-1 | Elsevier（自動取得で 403） | 書誌だけ |
+| Glatzmaier, G. A. & Roberts, P. H. (1995). A three-dimensional self-consistent computer simulation of a geomagnetic field reversal. *Nature* 377(6546), 203–209. DOI 10.1038/377203a0 | Nature（ログインの画面） | 書誌だけ |
+| Roberts, P. H. & Glatzmaier, G. A. (2000). Geodynamo theory and simulations. *Rev. Mod. Phys.* 72(4), 1081–1123. DOI 10.1103/RevModPhys.72.1081 | APS（自動取得で 401） | 書誌だけ |
+| Kleine, T., Münker, C., Mezger, K. & Palme, H. (2002). Rapid accretion and early core formation on asteroids and the terrestrial planets from Hf–W chronometry. *Nature* 418(6901), 952–955. DOI 10.1038/nature00982 | Nature（ログインの画面） | 書誌だけ |
+| Elkins-Tanton, L. T. (2012). Magma Oceans in the Inner Solar System. *Annu. Rev. Earth Planet. Sci.* 40, 113–139. DOI 10.1146/annurev-earth-042711-105503 | Annual Reviews（自動取得で 403） | 書誌だけ（要旨照合済） |
 
 既存の行に書き足す案：
 
-- D05-S05（Conrad & Lithgow-Bertelloni 2002）：2026-11-09 に台帳の取得先から取れた。PDF の 1 頁目は Science の誌面（2006 年の取得の表紙つき）。
-- D05-S09（Suarez & Schopf 1988）：取得先は上げた人の分からない写しで、画像だけ。AMS の誌面（https://doi.org/10.1175/1520-0469(1988)045%3C3283:ADAOFE%3E2.0.CO;2 ）に替える案。
-- D05-S10（Bjerknes 1969）：ハーバード大学の授業の頁の写し（https://courses.seas.harvard.edu/climate/eli/Courses/EPS281r/Sources/ENSO/Bjerknes-1969.pdf ）で本文が読める。
+- 台帳の「Conrad & Lithgow-Bertelloni 2002」の行（Conrad & Lithgow-Bertelloni 2002）：2026-11-09 に台帳の取得先から取れた。PDF の 1 頁目は Science の誌面（2006 年の取得の表紙つき）。
+- 台帳の「Suarez & Schopf 1988」の行（Suarez & Schopf 1988）：取得先は上げた人の分からない写しで、画像だけ。AMS の誌面（https://doi.org/10.1175/1520-0469(1988)045%3C3283:ADAOFE%3E2.0.CO;2 ）に替える案。
+- 台帳の「Bjerknes 1969」の行（Bjerknes 1969）：ハーバード大学の授業の頁の写し（https://courses.seas.harvard.edu/climate/eli/Courses/EPS281r/Sources/ENSO/Bjerknes-1969.pdf ）で本文が読める。
 
 ## ブラウザでの保存が要る PDF
 
-| 台帳の行 | 文献 | ダウンロード先 | 保存名の案 |
-|---|---|---|---|
-| D05-S01 | Wilson (1966) *Nature* 211, 676 | https://www.nature.com/articles/211676a0.pdf | `D05_wilson_1966_did-the-atlantic-close.pdf` |
-| D05-S09 | Suarez & Schopf (1988) *J. Atmos. Sci.* 45, 3283（AMS の誌面） | https://journals.ametsoc.org/view/journals/atsc/45/21/1520-0469_1988_045_3283_adaofe_2_0_co_2.xml | `D05_suarez-schopf_1988_delayed-action-oscillator.pdf` |
-| D05-S20 の案 | Dieterich (1979) *JGR* 84, 2161 | https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/JB084iB05p02161 | `D05_dieterich_1979_modeling-rock-friction-1.pdf` |
-| D05-S21 の案 | Ruina (1983) *JGR* 88, 10359 | https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/JB088iB12p10359 | `D05_ruina_1983_slip-instability-state-variable-friction.pdf` |
-| D05-S23 の案 | Cashman & Sparks (2013) *GSA Bull.* 125, 664 | https://doi.org/10.1130/B30720.1 | `D05_cashman-sparks_2013_how-volcanoes-work.pdf` |
-| D05-S24 の案 | Woods (1995) *Rev. Geophys.* 33, 495 | https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/95RG02096 | `D05_woods_1995_dynamics-explosive-eruptions.pdf` |
-| D05-S28 の案 | Alvarez ら (1980) *Science* 208, 1095（日をおいて取り直す） | https://mantleplumes.awh.durham.ac.uk/WebDocuments/Alvarez1980.pdf | `D05_alvarez_1980_extraterrestrial-cause-kt-extinction.pdf` |
-| D05-S31 の案 | Goldich (1938) *J. Geol.* 46, 17 | https://www.journals.uchicago.edu/doi/pdf/10.1086/624619 | `D05_goldich_1938_study-in-rock-weathering.pdf` |
-| D05-S33 の案 | Chadwick & Chorover (2001) *Geoderma* 100, 321 | https://doi.org/10.1016/S0016-7061(01)00027-1 | `D05_chadwick-chorover_2001_pedogenic-thresholds.pdf` |
-| D05-S34 の案 | Glatzmaier & Roberts (1995) *Nature* 377, 203 | https://www.nature.com/articles/377203a0.pdf | `D05_glatzmaier-roberts_1995_geomagnetic-reversal-simulation.pdf` |
-| D05-S37 の案 | Elkins-Tanton (2012) *Annu. Rev. Earth Planet. Sci.* 40, 113 | https://www.annualreviews.org/doi/pdf/10.1146/annurev-earth-042711-105503 | `D05_elkins-tanton_2012_magma-oceans.pdf` |
+自動で取れなかった原典のうち、ブラウザでの保存を頼むものは、作業の記録（[Issue #73](https://github.com/uminomae/project-design-theory/issues/73)）の表にまとめました。
 
 ## 手順について分かったこと
 
