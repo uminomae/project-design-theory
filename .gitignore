@@ -25,6 +25,10 @@ cs/knowledge/raw/*
 # 原典の台帳（書誌と取得の状況だけ。PDF は含まない）は公開する。cs/sources.html が読む（pjdhiro 2026-11-08）
 !cs/knowledge/raw/manifest.md
 cs/evidence/**/*.pdf
+# as の原典も同じ。台帳だけを公開する（docs/as-review/README.md・2026-11-09）
+as/knowledge/raw/*
+!as/knowledge/raw/manifest.md
+as/evidence/**/*.pdf
 cs/resources/
 
 # pjdhiro と Claude の対話の記録（手元の足場。公開しない。pjdhiro 2026-11-08）
