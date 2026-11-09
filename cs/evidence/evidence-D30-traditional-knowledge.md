@@ -20,7 +20,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D30-tradi
 
 この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。報告の 10 の論に、本文に当たれて危機と組み替えをはっきり書いている Olsson ら（2004）を足して 11 の論にしました。本文照合済は 5 つ（TEK・一座建立・杜氏の事例研究・メーティス・Olsson ら）です。里山は要旨照合済です。正統的周辺参加・口承伝統・職人のわざ・民俗芸能は本の本文に当たれず、未照合（書籍）のままです。守破離は、語の出どころそのものを確かめられませんでした。
 
-重なる理論は、済んだ分野の記録を参照し、読み直していません：世阿弥の『風姿花伝』第一と覺習條々は[舞台芸術の記録](evidence-D28-performing-arts.md)の 1、野中の SECI は[経営学の記録](evidence-D22-business-management.md)の 1、Holling（1973）は[農学・生態学の記録](evidence-D12-agriculture.md)の 4、Ostrom と Folke らの適応的ガバナンスは[法学・政治学の記録](evidence-D20-law-politics.md)を参照しました。
+重なる理論は、済んだ分野の記録を参照し、読み直していません：世阿弥の『風姿花伝』第一と覺習條々は[舞台芸術の記録](evidence-D28-performing-arts.md)の 1、野中の SECI は[経営学の記録](evidence-D22-business-management.md)の 1、Holling（1973）は[農学・生態学の記録](evidence-D12-agriculture.md)の 4、Ostrom と Folke らの適応的ガバナンスは[法学・政治学の記録](evidence-D20-law-politics.md)を参照しました。参照先の照合の状態は、野中が 1996 年の論文で本文照合済（2000 年の論文は未照合）、Ostrom（1990）が未照合（利用者が上げた写しで読んだ）、Folke ら（2005）が本文照合済です（2026-11-09 の一巡で、経営学と法学・政治学の記録の写しの扱いをそろえたあと）。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D30-traditional-knowledge.md) にあります。退避版の判定（Accept・CA など）は、今の照合の状態の根拠にしていません。
 
