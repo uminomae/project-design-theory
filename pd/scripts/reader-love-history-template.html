@@ -52,6 +52,24 @@
     <link rel="stylesheet" href="../src/style.css">
     <link rel="stylesheet" href="../src/styles/reader.css">
     <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <style>
+    /* ギリシャ文字は、日本語フォントでは全角の字形で出て、語の区切りが読めない。
+       ギリシャ文字の範囲だけを、端末にある欧文フォントの字形に回す（このページの引用のため）。 */
+    @font-face {
+        font-family: "LH Greek Serif";
+        src: local("Times New Roman"), local("TimesNewRomanPSMT"), local("Noto Serif"), local("DejaVu Serif");
+        unicode-range: U+0370-03FF, U+1F00-1FFF;
+    }
+    @font-face {
+        font-family: "LH Greek Sans";
+        src: local("Helvetica Neue"), local("HelveticaNeue"), local("Arial"), local("Segoe UI"), local("Roboto"), local("Noto Sans");
+        unicode-range: U+0370-03FF, U+1F00-1FFF;
+    }
+    body.reader-flow {
+        --serif-jp: "LH Greek Serif", "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+        --sans: "LH Greek Sans", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    }
+    </style>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
