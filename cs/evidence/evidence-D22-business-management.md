@@ -26,7 +26,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 
 | 論 | 対立 | 衝突 | 統合／新たな安定、または至らずにどう終わったか | 論の微細さ | 照合の状態 |
 |---|---|---|---|---|---|
-| 野中ら：組織的知識創造（1996・2000） | 暗黙知と形式知。秩序とカオス、個と他など、相反して見える組 | 外からの変化や上からの難題（揺らぎ）が入り、ルーチン・習慣・認知の枠組みが「breakdown」し、危機感が生まれる | 対話で概念が生まれ、正当化を経て原型になる。原型は他の部署や階層へ移り、次のサイクルを始める。至らない形として、集団思考と過去の成功への過剰適応が挙がる（1996）。2000 年の論文は、完全な無秩序に落ちることを挙げる（未照合の写しで読んだ） | 組織とプロジェクトの単位。数か月から数年 | 本文照合済（1996）・未照合（2000。利用者が編集する wiki の写しで読んだ） |
+| 野中ら：組織的知識創造（1996・2000） | 暗黙知と形式知。秩序とカオス、個と他など、相反して見える組 | 外からの変化や上からの難題（揺らぎ）が入り、ルーチン・習慣・認知の枠組みが「breakdown」し、危機感が生まれる | 対話で概念が生まれ、正当化を経て原型になる。原型は他の部署や階層へ移り、次のサイクルを始める。至らない形として、集団思考と過去の成功への過剰適応が挙がる（1996）。2000 年の論文は、完全な無秩序に落ちることを挙げる | 組織とプロジェクトの単位。数か月から数年 | 本文照合済（1996・2000。2000 は博物館の研究計画のサイトの写し） |
 | デザイン思考（d.school 2010・Brown 2008） | 利用者の望み・技術の実現性・事業の成り立ち。問題の中の、ときに矛盾する面 | 試作をテストし、早く安く失敗する。問題の枠づけそのものが誤っていたと分かることもある | 二者択一でなく、矛盾する面を見たうえで新しい解をつくる。実装に至る。至らない形は、読んだ範囲に書かれていない | プロジェクトの単位。週から月 | 本文照合済 |
 | Tuckman（1965）・Tuckman & Jensen（1977） | 集団の中の対人の問題。課題の要求と、それへの情緒的な反発 | 対人の問題をめぐる対立と二極化（storming） | 抵抗が乗り越えられ、まとまりの感覚・新しい基準・新しい役割が生まれる（norming）。役割が柔軟になり課題に力が向く（performing）。1977 年に解散（adjourning）を足した。至らない形として、看護学生の集団では集団内の対立がほとんど見られなかったという報告がある（1977。未照合の写しで読んだ） | 小集団。数週から数か月 | 本文照合済（1965）・未照合（1977。大学の教員の置き場の打ち直しで読んだ） |
 | Gersick（1988） | 初回の会合で決まった枠組みと、期限・外部の要求 | 暦の中間点で、古い型を捨て、外の相手と関わり直す | 第一局面で揉めたチームほど、中間点の会合が協働の山になり、合意した計画で第二局面の慣性に入る。至らない形として、中間点でも意見が割れたままの一チームは、リーダーが集団を解散し、案を一人で決めた | プロジェクトチーム。数日から数か月 | 本文照合済 |
@@ -49,12 +49,12 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 
 **一次情報**：
 
-- Nonaka, I., Umemoto, K. & Senoo, D. (1996). From information processing to knowledge creation: A paradigm shift in business management. *Technology in Society* 18(2), 203–218. DOI 10.1016/0160-791X(96)00001-2。manifest D22-S02。OA の写し http://www.sietmanagement.fr/wp-content/uploads/2016/04/nonaka-1996.pdf 。出版社（Elsevier）の誌面の写しで、置き場は教科書『Systèmes d'information et Management』の付属サイト（発行の責任者はモンペリエ大学の名誉教授で教科書の共著者、連絡先は同じ大学の研究所。2026-11-09 にサイトの法定表示で確かめた）。権利は未確認。教員の教育用の置き場の写しとして扱う（`docs/cs-review/README.md`「規約で決めたこと」D19・D25 の行）。読んだ頁：pp.205–216。
-- Nonaka, I., Toyama, R. & Konno, N. (2000). SECI, Ba and leadership: a unified model of dynamic knowledge creation. *Long Range Planning* 33(1), 5–34. DOI 10.1016/S0024-6301(99)00115-6。manifest D22-S03。写し https://agileconsortium.pbworks.com/f/Nonaka_etal_2000_SECI.pdf 。pbworks は利用者が編集する wiki の置き場で、この写しは個人の wiki（Agile Consortium）に置かれたもの。上げた人と権利は未確認なので、本文照合済にしない（同じ「規約で決めたこと」D29 の行）。`find-source.sh` では OA の写しが見つからなかった（2026-11-09）。ノルウェー技術博物館のサイトにも写しがあるが、公的な機関のサイトの写しの扱い（D30 の行）は pjdhiro の判断を待っているので使っていない。読んだ頁：p.7・pp.13–14・pp.26–28。
-- Nonaka & Takeuchi (1995) の書籍（manifest D22-S01）は開けていない。
+- Nonaka, I., Umemoto, K. & Senoo, D. (1996). From information processing to knowledge creation: A paradigm shift in business management. *Technology in Society* 18(2), 203–218. DOI 10.1016/0160-791X(96)00001-2。台帳に行がある。OA の写し http://www.sietmanagement.fr/wp-content/uploads/2016/04/nonaka-1996.pdf 。出版社（Elsevier）の誌面の写しで、置き場は教科書『Systèmes d'information et Management』の付属サイト（発行の責任者はモンペリエ大学の名誉教授で教科書の共著者、連絡先は同じ大学の研究所。2026-11-09 にサイトの法定表示で確かめた）。権利は未確認。教員の教育用の置き場の写しとして扱う（調べ方の計画と規約「規約で決めたこと」文学・文芸学・人類学・民族学の行）。読んだ頁：pp.205–216。
+- Nonaka, I., Toyama, R. & Konno, N. (2000). SECI, Ba and leadership: a unified model of dynamic knowledge creation. *Long Range Planning* 33(1), 5–34. DOI 10.1016/S0024-6301(99)00115-6。台帳に行がある。はじめは、利用者が編集する wiki（pbworks の個人の wiki、Agile Consortium）に置かれた写し https://agileconsortium.pbworks.com/f/Nonaka_etal_2000_SECI.pdf で読んだ。2026-11-09 に、ノルウェー技術博物館の研究計画「Tingenes metode」のサイトの文献の一覧に置かれた出版社（Elsevier）の誌面 https://tingene.tekniskmuseum.no/images/PDF/Litteratur_MK/SECI_Ba_and_Leadership_a_Unified_Model.pdf （30 面、頁の頭に誌名と頁）を取り、下の語が同じ頁（p.7・p.14・pp.26–27）にあることを確かめた。公的な機関のサイトに置かれた写しは、匿名の個人の写しと違い、本文照合済として採る（pjdhiro 2026-11-09。調べ方の規約 §3）。権利は未確認。読んだ頁：p.7・pp.13–14・pp.26–28。
+- Nonaka & Takeuchi (1995) の書籍（台帳に行がある）は開けていない。
 - 書誌は二本とも Crossref と PDF の表紙で一致した。
 
-**照合の状態**：1996 は本文照合済。2000 は未照合（上の写しで読んだ頁を書く。2026-11-09 の一巡で、本文照合済から改めた）。書籍（1995）は未照合。下の 2000 年の論文の箇条は、未照合の写しで読んだものです。
+**照合の状態**：1996・2000 は本文照合済（2000 は博物館の研究計画のサイトの写し。2026-11-09 に、一度未照合にしたあと、機関のサイトの写しの決まりで戻した）。書籍（1995）は未照合。
 
 **原典に書いてあること**：
 
@@ -66,7 +66,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 - 日本型の知識創造は「group think」と「overadaptation to the past success」に陥りうる（1996 pp.215–216）。
 - ba は「originally proposed by the Japanese philosopher Kitaro Nishida and was further developed by Shimizu」とされ、「a shared context in which knowledge is shared, created and utilised」と定義される（2000 p.14）。1996 年の論文は、共同化の起点を相互作用の「field」と書く（p.205）。
 
-**対立・衝突・統合の読み**：原典は、相反する組（対立）、揺らぎによるルーチンの崩れと危機感（衝突）、弁証法的な総合（統合）、原型と cross-leveling（新たな安定）を、どれも本文で書いています（弁証法的な総合は 2000 年の論文で、未照合の写しで読みました）。衝突は過程の外の阻害ではなく、知識創造の条件に数えられています。至らない形も、集団思考・過去の成功への過剰適応（1996）と、完全な無秩序（2000）として書かれています。ここまでは原典に書いてあることで、これを5段階のどこに当てるかは Claude の読み替えになるので、定義が決まるまで保留します。
+**対立・衝突・統合の読み**：原典は、相反する組（対立）、揺らぎによるルーチンの崩れと危機感（衝突）、弁証法的な総合（統合）、原型と cross-leveling（新たな安定）を、どれも本文で書いています（弁証法的な総合は 2000 年の論文 p.7）。衝突は過程の外の阻害ではなく、知識創造の条件に数えられています。至らない形も、集団思考・過去の成功への過剰適応（1996）と、完全な無秩序（2000）として書かれています。ここまでは原典に書いてあることで、これを5段階のどこに当てるかは Claude の読み替えになるので、定義が決まるまで保留します。
 
 **今の報告から直すこと**：
 
@@ -85,9 +85,9 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 
 **一次情報**：
 
-- Hasso Plattner Institute of Design at Stanford (2010). *An Introduction to Design Thinking: Process Guide*. manifest D22-S05。手元の PDF（6 頁）。読んだ頁：pp.1–6。
-- Brown, T. (2008). Design thinking. *Harvard Business Review* 86(6), 84–92（抜き刷り R0806E）。manifest D22-S06。手元の PDF は抜き刷りで、readings.design（上げた人の分からない読み物の一覧のサイト）の写しとバイト単位で同じ。確かめ先は、著者が率いた IDEO のサイトに置かれていた誌面（pp.84–92。Wayback の記録 2008-12-02、http://www.ideo.com/images/uploads/news/pdfs/IDEO_HBR_Design_Thinking_08.pdf ）に差し替えた。著者の側の写しとして扱う（`docs/rules/sources.md` §5-8。権利は未確認）。下の頁は誌面の頁で、括弧に抜き刷りの頁を添える。読んだ頁：誌面の pp.86–88（抜き刷りの pp.2–4）。
-- Akiike, A. & Ichikohji, T. (2021). What are the requirements for design thinking articles? *Annals of Business Administrative Science* 20(6), 197–209. DOI 10.7880/abas.0210930a。manifest D22-S07。手元の PDF。経営学の雑誌でデザイン思考がどう研究されてきたかのレビューで、要旨は、近年の実証研究が Brown（2009）と Martin（2009）に拠り、利用者中心と実験を論じている、とまとめる（p.197）。5段階との対応には使っていない。
+- Hasso Plattner Institute of Design at Stanford (2010). *An Introduction to Design Thinking: Process Guide*. 台帳に行がある。手元の PDF（6 頁）。読んだ頁：pp.1–6。
+- Brown, T. (2008). Design thinking. *Harvard Business Review* 86(6), 84–92（抜き刷り R0806E）。台帳に行がある。手元の PDF は抜き刷りで、readings.design（上げた人の分からない読み物の一覧のサイト）の写しとバイト単位で同じ。確かめ先は、著者が率いた IDEO のサイトに置かれていた誌面（pp.84–92。Wayback の記録 2008-12-02、http://www.ideo.com/images/uploads/news/pdfs/IDEO_HBR_Design_Thinking_08.pdf ）に差し替えた。著者の側の写しとして扱う（調べ方の規約 §5-8。権利は未確認）。下の頁は誌面の頁で、括弧に抜き刷りの頁を添える。読んだ頁：誌面の pp.86–88（抜き刷りの pp.2–4）。
+- Akiike, A. & Ichikohji, T. (2021). What are the requirements for design thinking articles? *Annals of Business Administrative Science* 20(6), 197–209. DOI 10.7880/abas.0210930a。台帳に行がある。手元の PDF。経営学の雑誌でデザイン思考がどう研究されてきたかのレビューで、要旨は、近年の実証研究が Brown（2009）と Martin（2009）に拠り、利用者中心と実験を論じている、とまとめる（p.197）。5段階との対応には使っていない。
 
 **照合の状態**：本文照合済（Brown は 2026-11-09 に、著者の側の写しの誌面で語を確かめ直した）。
 
@@ -113,8 +113,8 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 
 **一次情報**：
 
-- Tuckman, B. W. (1965). Developmental sequence in small groups. *Psychological Bulletin* 63(6), 384–399. DOI 10.1037/h0022100。manifest D22-S08。OA の写し https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Group_Dynamics/Tuckman_1965_Developmental_sequence_in_small_groups.pdf 。読んだ頁：p.384・p.386・p.396。
-- Tuckman, B. W. & Jensen, M. A. C. (1977). Stages of small-group development revisited. *Group & Organization Studies* 2(4), 419–427. DOI 10.1177/105960117700200404。manifest D22-S09。写し http://faculty.wiu.edu/P-Schlag/articles/Stages_of_Small_Group_Development.pdf 。この写しは 6 頁に打ち直したもので、誌面の頁番号が無い。以下の頁は写しの頁。読んだ頁：写しの pp.1–5。置き場は西イリノイ大学の教員の頁の、読み物を並べた置き場（2010 年に置かれた。新聞記事や授業の宿題の雛形と同じ所）で、この写しをどの授業で使ったかを示す頁は見つからなかった（2026-11-09。Wayback の記録 2015 年の一覧で確かめた）。授業との関わりの分からない打ち直しなので、本文照合済にしない（`docs/cs-review/README.md`「規約で決めたこと」D19 の行）。`find-source.sh` では OA の写しが見つからなかった。
+- Tuckman, B. W. (1965). Developmental sequence in small groups. *Psychological Bulletin* 63(6), 384–399. DOI 10.1037/h0022100。台帳に行がある。OA の写し https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Group_Dynamics/Tuckman_1965_Developmental_sequence_in_small_groups.pdf 。読んだ頁：p.384・p.386・p.396。
+- Tuckman, B. W. & Jensen, M. A. C. (1977). Stages of small-group development revisited. *Group & Organization Studies* 2(4), 419–427. DOI 10.1177/105960117700200404。台帳に行がある。写し http://faculty.wiu.edu/P-Schlag/articles/Stages_of_Small_Group_Development.pdf 。この写しは 6 頁に打ち直したもので、誌面の頁番号が無い。以下の頁は写しの頁。読んだ頁：写しの pp.1–5。置き場は西イリノイ大学の教員の頁の、読み物を並べた置き場（2010 年に置かれた。新聞記事や授業の宿題の雛形と同じ所）で、この写しをどの授業で使ったかを示す頁は見つからなかった（2026-11-09。Wayback の記録 2015 年の一覧で確かめた）。授業との関わりの分からない打ち直しなので、本文照合済にしない（調べ方の計画と規約「規約で決めたこと」文学・文芸学の行）。原典を探す道具では OA の写しが見つからなかった。
 - 書誌は二本とも Crossref と PDF の表紙で一致した。
 
 **照合の状態**：1965 は本文照合済（授業用の写し）。1977 は未照合（上の打ち直しで読んだ写しの頁を書く。2026-11-09 の一巡で、本文照合済から改めた）。
@@ -138,13 +138,13 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 | ja 101 行・pres 45・56 行 Adjourning を束として読む | 言い過ぎ | 中 | 原典の adjourning は集団の解散と分離の問題（写し p.5）。ja は「原典を超える解釈が必要」、en は「自然に読める」、pres は「高整合」と、版で強さが違う |
 | ja 101 行「前半4段階の対応は…最も直観的かつ忠実」 | 言い過ぎ | 中 | 1977 年の見直しで、直接の検証は一つだけ、対立の段階が見られない集団の報告がある（写し pp.1–3）。合わないところとして書く |
 | ja 97 行「1977年に Adjourning を追加」の主語が Tuckman 一人 | 帰属違い | 低 | Tuckman & Jensen の共著 |
-| source-notes の S08（1965）・S09（1977）のノート | 取り違え | 高 | 試しの点検で見つけたもの。S08 は四つの語が 1965 年に無いとするが p.396 にある。S09 は「55 篇」とするが要旨は 50（p.384） |
+| 精読ノートの Tuckman 1965 と Tuckman & Jensen 1977 のノート | 取り違え | 高 | 試しの点検で見つけたもの。「Tuckman 1965」は四つの語が 1965 年に無いとするが p.396 にある。「Tuckman & Jensen 1977」は「55 篇」とするが要旨は 50（p.384） |
 
 ### 4. Gersick（1988）：時間と転換（断続平衡）
 
 **要旨**：八つのチームの全期間を観察し、チームは決まった段階を順に通るのでなく、初回の会合で決まった枠組みのまま慣性で進み、締切までの暦の中間点で急に転換し、その計画で第二の慣性の局面に入る、と書いた。
 
-**一次情報**：Gersick, C. J. G. (1988). Time and transition in work teams: Toward a new model of group development. *Academy of Management Journal* 31(1), 9–41. DOI 10.2307/256496。manifest D22-S10。OA の写し https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Group_Dynamics/Gersick_1988_Time_and_transition.pdf 。読んだ頁：p.9・p.10・p.16・p.18・pp.27–28・p.30。書誌は PDF の表紙と一致した。Crossref の題は「TIME AN TRANSITION」と綴りが崩れているが、同じ論文を指す。
+**一次情報**：Gersick, C. J. G. (1988). Time and transition in work teams: Toward a new model of group development. *Academy of Management Journal* 31(1), 9–41. DOI 10.2307/256496。台帳に行がある。OA の写し https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Group_Dynamics/Gersick_1988_Time_and_transition.pdf 。読んだ頁：p.9・p.10・p.16・p.18・pp.27–28・p.30。書誌は PDF の表紙と一致した。Crossref の題は「TIME AN TRANSITION」と綴りが崩れているが、同じ論文を指す。
 
 **照合の状態**：本文照合済。
 
@@ -170,7 +170,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 
 **要旨**：組織学習では、新しい可能性の探索と、既知の確かさの活用のあいだで資源の配分がぶつかる。適応の過程は活用を探索より速く磨くので、短期には効くが長期には自分を損なう。組織のコードと個人が互いに学ぶモデルと、競争のモデルで、その仕組みを見せる。
 
-**一次情報**：March, J. G. (1991). Exploration and exploitation in organizational learning. *Organization Science* 2(1), 71–87. DOI 10.1287/orsc.2.1.71。manifest に行は無い（足す案は下の「手順について」の前に書いた）。授業用の写し（JSTOR から 2015 年に取られたもの）https://arken.nmbu.no/~sigury/AOS_234/320_Pensum/March_91_Exploration%20and%20exploitation.pdf 。読んだ頁：pp.71–76。書誌は Crossref と PDF の表紙で一致した。
+**一次情報**：March, J. G. (1991). Exploration and exploitation in organizational learning. *Organization Science* 2(1), 71–87. DOI 10.1287/orsc.2.1.71。台帳に行は無い（足す案は下の「手順について」の前に書いた）。授業用の写し（JSTOR から 2015 年に取られたもの）https://arken.nmbu.no/~sigury/AOS_234/320_Pensum/March_91_Exploration%20and%20exploitation.pdf 。読んだ頁：pp.71–76。書誌は Crossref と PDF の表紙で一致した。
 
 **照合の状態**：本文照合済。
 
@@ -198,7 +198,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 
 **一次情報**：
 
-- Weick, K. E. (1993). The collapse of sensemaking in organizations: The Mann Gulch disaster. *Administrative Science Quarterly* 38(4), 628–652. DOI 10.2307/2393339。manifest に行は無い。ALNAP の再録版 https://alnap.org/documents/12477/The_Collapse_of_Sensemaking_in_Organizations_The_Mann_Gulch.pdf 。この再録版には誌面の頁番号が無いので、以下の頁は再録版の PDF の頁。読んだ頁：pp.1–2・pp.6–12。書誌は Crossref と再録版の冒頭の注で一致した。
+- Weick, K. E. (1993). The collapse of sensemaking in organizations: The Mann Gulch disaster. *Administrative Science Quarterly* 38(4), 628–652. DOI 10.2307/2393339。台帳に行は無い。ALNAP の再録版 https://alnap.org/documents/12477/The_Collapse_of_Sensemaking_in_Organizations_The_Mann_Gulch.pdf 。この再録版には誌面の頁番号が無いので、以下の頁は再録版の PDF の頁。読んだ頁：pp.1–2・pp.6–12。書誌は Crossref と再録版の冒頭の注で一致した。
 - Weick（1995）の『Sensemaking in Organizations』と、Weick & Sutcliffe（2007）の高信頼性組織の五原則は、開けていない。
 
 **照合の状態**：1993 は本文照合済（再録版）。1995・2007 は未照合。
@@ -226,7 +226,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 
 **要旨**：企業や市場のような人工物がどうつくられるかを説明するには、目標を所与として手段を選ぶ causation のほかに、手段を所与として、その手段でつくれる効果の中から選ぶ effectuation が要る。causation は予測の論理、effectuation は制御の論理に立つ。
 
-**一次情報**：Sarasvathy, S. D. (2001). Causation and effectuation: Toward a theoretical shift from economic inevitability to entrepreneurial contingency. *Academy of Management Review* 26(2), 243–263. DOI 10.2307/259121。manifest に行は無い。effectuation.org が置く写し https://effectuation.org/hubfs/Journal%20Articles/2016/06/amr01-inevitability-to-contingency-1.pdf 。この写しは画像だけで文字の層が無いので、頁を画像で読んだ。読んだ頁：p.243・p.245・pp.250–252。書誌は Crossref と表紙で一致した。Sarasvathy（2008）の書籍は開けていない。
+**一次情報**：Sarasvathy, S. D. (2001). Causation and effectuation: Toward a theoretical shift from economic inevitability to entrepreneurial contingency. *Academy of Management Review* 26(2), 243–263. DOI 10.2307/259121。台帳に行は無い。effectuation.org が置く写し https://effectuation.org/hubfs/Journal%20Articles/2016/06/amr01-inevitability-to-contingency-1.pdf 。この写しは画像だけで文字の層が無いので、頁を画像で読んだ。読んだ頁：p.243・p.245・pp.250–252。書誌は Crossref と表紙で一致した。Sarasvathy（2008）の書籍は開けていない。
 
 **照合の状態**：2001 は本文照合済。2008 は未照合。
 
@@ -254,7 +254,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 
 **要旨**：社会の場の質を変える過程を U 字で書く。過去のパターンを繰り返すところから、見る・感じ取るを経て底に下り、手放したあとに来るものを迎え入れ（presencing）、結晶化・試作・実践へ上る。
 
-**一次情報**：Scharmer, C. O. (2007). *Addressing the Blind Spot of Our Time: An executive summary of the new book by Otto Scharmer, Theory U: Leading from the Future as It Emerges*. Presencing Institute（著者側の要約版。原本は theoryU.com で配布）。はじめに読んだのは、コーチの指導者の養成講座（Coaching Supervision Academy の UK15 期・第 1 単元）の資料の置き場の写し https://csasupervisors.c1448228.myzen.co.uk/files/uk15/mod1/theory-u-exec-summary.pdf （2013 年に作り直された版で、文字の層が崩れている）。2026-11-09 に、著者の研究所のサイトに置かれていた同じ要約版（Wayback の記録 2011-01-03、http://presencing.com/docs/publications/execsums/Theory_U_Exec_Summary.pdf 。2007 年 9 月の版、21 面）を取り、下の頁の語が同じ頁にあることを確かめた。著者のサイト（ottoscharmer.com、Wayback の記録 2021-04-06）にも同じ組版の版がある。確かめ先は著者の側の写しとする（`docs/rules/sources.md` §5-8）。読んだ頁：要約版の p.7・pp.11–12・p.18。書籍（2007）は開けていない。
+**一次情報**：Scharmer, C. O. (2007). *Addressing the Blind Spot of Our Time: An executive summary of the new book by Otto Scharmer, Theory U: Leading from the Future as It Emerges*. Presencing Institute（著者側の要約版。原本は theoryU.com で配布）。はじめに読んだのは、コーチの指導者の養成講座（Coaching Supervision Academy の UK15 期・第 1 単元）の資料の置き場の写し https://csasupervisors.c1448228.myzen.co.uk/files/uk15/mod1/theory-u-exec-summary.pdf （2013 年に作り直された版で、文字の層が崩れている）。2026-11-09 に、著者の研究所のサイトに置かれていた同じ要約版（Wayback の記録 2011-01-03、http://presencing.com/docs/publications/execsums/Theory_U_Exec_Summary.pdf 。2007 年 9 月の版、21 面）を取り、下の頁の語が同じ頁にあることを確かめた。著者のサイト（ottoscharmer.com、Wayback の記録 2021-04-06）にも同じ組版の版がある。確かめ先は著者の側の写しとする（調べ方の規約 §5-8）。読んだ頁：要約版の p.7・pp.11–12・p.18。書籍（2007）は開けていない。
 
 **照合の状態**：要約版は本文照合済（著者の研究所のサイトの写し）。書籍は未照合。
 
@@ -335,13 +335,13 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 
 ### テンプレート由来の表示
 
-「立ち位置明示」（3 行）、「方法論的開示」（28 行）、「Phase 5（論拠監査）」ほか（24 行）、「温度帯の分布」（71 行）、「安全弁」（73 行）、「結びの温度開示」（227 行）、「Colophon generator_model」（232 行）。D01 と同じく、報告のテンプレートが原因で、個別でなくテンプレートで直す。
+「立ち位置明示」（3 行）、「方法論的開示」（28 行）、「Phase 5（論拠監査）」ほか（24 行）、「温度帯の分布」（71 行）、「安全弁」（73 行）、「結びの温度開示」（227 行）、「Colophon generator_model」（232 行）。数学と同じく、報告のテンプレートが原因で、個別でなくテンプレートで直す。
 
 ### 誤りの出どころ
 
 | 誤り | 出どころ |
 |---|---|
-| Gourlay の「問題発見の欠落」 | DR-D22 59 行が名を挙げずに書き、退避版 39 行で Gourlay 2006 に結び付いた |
+| Gourlay の「問題発見の欠落」 | 2026-02 の DR 59 行が名を挙げずに書き、退避版 39 行で Gourlay 2006 に結び付いた |
 | 「センゲの弟子」 | 退避版 567 行の主張（[P]） |
 | 「神経科学・精神分析・日本思想から構築された」 | 退避版 584 行と調べた跡（phase7） |
 | エフェクチュエーションの「5原則」の名 | 退避版 460 行の主張（[P]）。2001 年の論文と照合していない |
@@ -351,7 +351,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 | 版ごとの件数と対応段階の食い違い | ja・en・pres が同じ報告の訳でなく、別々に生成されたこと |
 | 型 F の表示 | 報告のテンプレート |
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 E と退ける語：「cross-leveling は束の…定義と正確に一致します」（85 行）、「Norming は…縁の定義と正確に一致する記述です」（101 行）、「縁の三条件を全て満たす」（147・149・185 行）、「この二面がどう統合されるか」（213 行）。
 - 型 D（管理の語彙）：「波の制度的増幅装置」「早すぎる渦への凝集を防ぐ安全弁」（133 行）、「遷移阻害メカニズムの体系」「分類枠」（173・179 行）。
@@ -367,21 +367,21 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 3. 野中の「場（Ba）」と5段階の「場」。five-stages-guide は Ba を場の対応概念に挙げていた。答え（pjdhiro 2026-11-08）：野中の場とは違う。発想は量子の場で、素朴な感覚として、環境や状況や世界の安定したイメージを空間的な表現として選んだもの。時間は含まない（時間も入れるなら「時代」）。よって、Ba と5段階の場は語が同じだけで、系譜は別。この記録では対応の根拠に数えず、guide の対応概念の例からも外した。
 4. Tuckman の storming（対立と二極化）を5段階のどこに当てるか。今の報告は波に当てている。5段階を「安定・変化・衝突・統合・新たな安定」と言い換える案では、衝突は縁に当たる。定義が決まるまで保留。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D22-S18 | March, J. G. (1991). Exploration and exploitation in organizational learning. *Organization Science* 2(1), 71–87. DOI 10.1287/orsc.2.1.71 | https://arken.nmbu.no/~sigury/AOS_234/320_Pensum/March_91_Exploration%20and%20exploitation.pdf （授業用の写し。JSTOR の表紙つき） | url-verified |
-| D22-S19 | Weick, K. E. (1993). The collapse of sensemaking in organizations: The Mann Gulch disaster. *Administrative Science Quarterly* 38(4), 628–652. DOI 10.2307/2393339 | https://alnap.org/documents/12477/The_Collapse_of_Sensemaking_in_Organizations_The_Mann_Gulch.pdf （再録版。誌面の頁番号なし） | url-verified |
-| D22-S20 | Sarasvathy, S. D. (2001). Causation and effectuation. *Academy of Management Review* 26(2), 243–263. DOI 10.2307/259121 | https://effectuation.org/hubfs/Journal%20Articles/2016/06/amr01-inevitability-to-contingency-1.pdf （画像のみ） | url-verified |
-| D22-S21 | Scharmer, C. O. (2007). *Addressing the Blind Spot of Our Time*（Theory U の要約版）. Presencing Institute | http://presencing.com/docs/publications/execsums/Theory_U_Exec_Summary.pdf （著者の研究所のサイト。Wayback の記録 2011-01-03）。講座の資料の置き場の写し https://csasupervisors.c1448228.myzen.co.uk/files/uk15/mod1/theory-u-exec-summary.pdf も読んだ | url-verified |
-| D22-S22 | Christensen, C. M. & Bower, J. L. (1996). Customer power, strategic investment, and the failure of leading firms. *Strategic Management Journal* 17(3), 197–218 | 本文 OA なし | citation-only |
-| D22-S23 | Christensen, C. M. & Rosenbloom, R. S. (1995). Explaining the attacker's advantage. *Research Policy* 24(2), 233–257. DOI 10.1016/0048-7333(93)00764-K | 本文 OA なし | citation-only |
-| D22-S24 | Cohen, M. D., March, J. G. & Olsen, J. P. (1972). A garbage can model of organizational choice. *Administrative Science Quarterly* 17(1). DOI 10.2307/2392088 | 本文は探していない | citation-only |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| March, J. G. (1991). Exploration and exploitation in organizational learning. *Organization Science* 2(1), 71–87. DOI 10.1287/orsc.2.1.71 | https://arken.nmbu.no/~sigury/AOS_234/320_Pensum/March_91_Exploration%20and%20exploitation.pdf （授業用の写し。JSTOR の表紙つき） | 取得先を確かめた |
+| Weick, K. E. (1993). The collapse of sensemaking in organizations: The Mann Gulch disaster. *Administrative Science Quarterly* 38(4), 628–652. DOI 10.2307/2393339 | https://alnap.org/documents/12477/The_Collapse_of_Sensemaking_in_Organizations_The_Mann_Gulch.pdf （再録版。誌面の頁番号なし） | 取得先を確かめた |
+| Sarasvathy, S. D. (2001). Causation and effectuation. *Academy of Management Review* 26(2), 243–263. DOI 10.2307/259121 | https://effectuation.org/hubfs/Journal%20Articles/2016/06/amr01-inevitability-to-contingency-1.pdf （画像のみ） | 取得先を確かめた |
+| Scharmer, C. O. (2007). *Addressing the Blind Spot of Our Time*（Theory U の要約版）. Presencing Institute | http://presencing.com/docs/publications/execsums/Theory_U_Exec_Summary.pdf （著者の研究所のサイト。Wayback の記録 2011-01-03）。講座の資料の置き場の写し https://csasupervisors.c1448228.myzen.co.uk/files/uk15/mod1/theory-u-exec-summary.pdf も読んだ | 取得先を確かめた |
+| Christensen, C. M. & Bower, J. L. (1996). Customer power, strategic investment, and the failure of leading firms. *Strategic Management Journal* 17(3), 197–218 | 本文 OA なし | 書誌だけ |
+| Christensen, C. M. & Rosenbloom, R. S. (1995). Explaining the attacker's advantage. *Research Policy* 24(2), 233–257. DOI 10.1016/0048-7333(93)00764-K | 本文 OA なし | 書誌だけ |
+| Cohen, M. D., March, J. G. & Olsen, J. P. (1972). A garbage can model of organizational choice. *Administrative Science Quarterly* 17(1). DOI 10.2307/2392088 | 本文は探していない | 書誌だけ |
 
 ## 手順について分かったこと
 
-- manifest にある OA の写しと、新しく探した写しを、作業用の一時置き場に取ってきて読んだ（repo には入れていない）。本文で読めた論は 12 のうち 8。
-- 写しには、誌面の頁番号が無いもの（Tuckman & Jensen 1977 の打ち直し、Weick 1993 の再録）と、文字の層が無いもの（Sarasvathy 2001）があった。頁を誌面の頁で書けるかは、写しごとに確かめる必要がある。精読ノート S09 は、頁番号の無い写しから誌面の頁（pp.420–425）を書いている。
-- 精読ノート S02 は、1996 年の論文の後半（pp.213–216 の 5 フェーズ・創造的カオス・集団思考）を扱っていない。試しの点検は、このノートを根拠に「5 フェーズは書籍でしか確かめられない」と書いたが、原典の本文を開くと、5 フェーズは論文の中にあった。ノートに無いことを、原典に無いことと読まない。
+- 台帳にある OA の写しと、新しく探した写しを、作業用の一時置き場に取ってきて読んだ（repo には入れていない）。本文で読めた論は 12 のうち 8。
+- 写しには、誌面の頁番号が無いもの（Tuckman & Jensen 1977 の打ち直し、Weick 1993 の再録）と、文字の層が無いもの（Sarasvathy 2001）があった。頁を誌面の頁で書けるかは、写しごとに確かめる必要がある。精読ノート「Tuckman & Jensen 1977」は、頁番号の無い写しから誌面の頁（pp.420–425）を書いている。
+- 精読ノート「Nonaka ら 1996」は、1996 年の論文の後半（pp.213–216 の 5 フェーズ・創造的カオス・集団思考）を扱っていない。試しの点検は、このノートを根拠に「5 フェーズは書籍でしか確かめられない」と書いたが、原典の本文を開くと、5 フェーズは論文の中にあった。ノートに無いことを、原典に無いことと読まない。
 - 衝突と、統合に至らない形は、今の報告にも精読ノートにもほとんど書かれていなかった。原典を開くと、野中の breakdown、Gersick の解散、March の閉じ込め、Weick の解体のように、はっきり書かれていた。一面の表は、報告やノートからは作れず、原典を読み直す必要がある。

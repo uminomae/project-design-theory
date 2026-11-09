@@ -14,15 +14,15 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D13-philo
 
 哲学の論は、現象を実証した理論ではなく、概念の組み立てと論証です。それでも、本文に当たれた論の多くは、二つのものの兼ね合いと、それが崩れる形を論の中に書いていました。ヘーゲルは、つぼみが花に「反駁される」ように形どうしが押しのけ合いながら一つの生きた全体の契機になると書き（『精神現象学』序文、Baillie 訳 1910、pp.2–3）、成ることは有と無を自らの中に合わせて「自らに矛盾し」、その合わさりは自らを壊して静かな結果に沈むと書いています（『大論理学』1812、p.44）。シェリングは、自然の産出する傾向とそれを止める傾向が出会わなければ産物は生まれず、二つが等しければ互いを打ち消して「産物は 0」になると書いています（1799、p.29）。パースは、疑いのいらだちが信念をめざす「struggle」を起こすと書き、探究でなく固執・権威・先験の方法で疑いを止める形を、それぞれの崩れ方とともに書いています（1877。1923 年の再録 pp.15–26）。デューイは、困難を「目の前の条件と望む結果の衝突」と書き、困難を確かめずに結論へ急ぐ形を「制御されない思考」と呼んでいます（1910、pp.72–74）。一方で、シモンドンは自分の相の図式を「弁証法の図式とはまったく違う」と書き、否定を進歩の原動力にしないと断っています（1958、p.159）。メルロ＝ポンティは、触れる手と触れられる手が重ならないことを「失敗ではない」と書いています（1964、p.194）。哲学の中には、対立と衝突を芯に置く論と、それを自ら退ける論の両方がありました。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D13-philosophy.md`、2026-03-18 に LLM が生成、以下「報告」）は 11 の理論を取り上げ、日本語版は「強い対応」を 3 つ（シモンドン・デューイ・パース）としています。英語版は 9 つ、プレゼン版は 5 つ（表を数えると 5・部分 4・条件付き 2 で、冒頭の「部分 5・条件付き 1」と合いません）を「強い対応」としていて、版ごとに数が違います。報告は、上の衝突や至らない形の多くを落とし、アドルノとドゥルーズ＝ガタリとシェリングを「批判的照射」「段階化への批判」として外に置いていました。「縁の 6 類型」「束→場循環の 5 つの駆動力」「受動性→能動性の勾配」は、原典でなく調べた跡（phase7）の構成から来ていました。パースの節のアブダクションの定式（「驚くべき事実」）は 1903 年の講義のもので、1877 年の論文にはありません。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が兼ね合い、どうぶつかり、どう包まれ、何が残ったか（または至らずにどう終わったか）を並べたものです。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
+今の公開報告（「30 領域調査報告」の哲学の日本語版、2026-03-18 に LLM が生成、以下「報告」）は 11 の理論を取り上げ、日本語版は「強い対応」を 3 つ（シモンドン・デューイ・パース）としています。英語版は 9 つ、プレゼン版は 5 つ（表を数えると 5・部分 4・条件付き 2 で、冒頭の「部分 5・条件付き 1」と合いません）を「強い対応」としていて、版ごとに数が違います。報告は、上の衝突や至らない形の多くを落とし、アドルノとドゥルーズ＝ガタリとシェリングを「批判的照射」「段階化への批判」として外に置いていました。「縁の 6 類型」「束→場循環の 5 つの駆動力」「受動性→能動性の勾配」は、原典でなく調べた跡（phase7）の構成から来ていました。パースの節のアブダクションの定式（「驚くべき事実」）は 1903 年の講義のもので、1877 年の論文にはありません。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が兼ね合い、どうぶつかり、どう包まれ、何が残ったか（または至らずにどう終わったか）を並べたものです。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
-論は 12 で、報告の 11 にヘーゲルを足しました。ヘーゲルは、D16 歴史学が足したマルクスの 1859 年の序言と同じ系譜なので、二つを別々の裏付けには数えません（README「規約で決めたこと」D16 の行）。本文照合済は 8 つ（シモンドン（訳）・デューイ・ホワイトヘッド・シェリング・メルロ＝ポンティ・パース・西田（1939 年の論文）・ヘーゲル）です。アドルノは上げた人の分からない写しで本文を読んだので未照合のまま頁を書き、フッサール・ガダマー・ドゥルーズ＝ガタリは二次資料のみ（Stanford Encyclopedia of Philosophy）です。
+論は 12 で、報告の 11 にヘーゲルを足しました。ヘーゲルは、歴史学が足したマルクスの 1859 年の序言と同じ系譜なので、二つを別々の裏付けには数えません（README「規約で決めたこと」歴史学の行）。本文照合済は 8 つ（シモンドン（訳）・デューイ・ホワイトヘッド・シェリング・メルロ＝ポンティ・パース・西田（1939 年の論文）・ヘーゲル）です。アドルノは上げた人の分からない写しで本文を読んだので未照合のまま頁を書き、フッサール・ガダマー・ドゥルーズ＝ガタリは二次資料のみ（Stanford Encyclopedia of Philosophy）です。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D13-philosophy.md) にあります。退避版の判定は、今の照合の状態の根拠にしていません。
 
 ## 一面の表
 
-照合の状態は `docs/rules/sources.md` §3 の四つで書きます。各行で、まず原典が何について書いているか（存在の生成の論か、思考の手順か、解釈の論か、批判か）と単位を書き、対立・衝突・統合の欄は原典に書いてあることを先に、Claude の読み替えを「読み替え：」で分けて書きます。二次資料しか読めなかった行は、二次資料が書くことだけを書き、報告の言い分は写していません。
+照合の状態は調べ方の規約 §3 の四つで書きます。各行で、まず原典が何について書いているか（存在の生成の論か、思考の手順か、解釈の論か、批判か）と単位を書き、対立・衝突・統合の欄は原典に書いてあることを先に、Claude の読み替えを「読み替え：」で分けて書きます。二次資料しか読めなかった行は、二次資料が書くことだけを書き、報告の言い分は写していません。
 
 | 論 | 原典が書く対象と単位 | 対立 | 衝突 | 統合／新たな安定、または統合に至らずにどう終わったか | 論の微細さ | 照合の状態 |
 |---|---|---|---|---|---|---|
@@ -47,10 +47,10 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Simondon, G. (2009). The position of the problem of ontogenesis. G. Flanders 訳. *Parrhesia* 7, 4–16。主論文『L'individuation à la lumière des notions de forme et d'information』の序論の英訳で、J.-H. Barthélémy の注が付く（注 14・16 で、序論が二冊に共通の序論であることを書く）。Parrhesia は OA の誌。誌のサイトの PDF（http://www.parrhesiajournal.org/parrhesia07/parrhesia07_simondon1.pdf ）は今は 404 で、Wayback の記録（https://web.archive.org/web/20201212101349/https://www.parrhesiajournal.org/parrhesia07/parrhesia07_simondon1.pdf 、写しの日 2020-12-12）で読みました。頁は誌面の頁。読んだ頁：pp.4–6・9–12。台帳に行が無い（D13-S16 の案）。
-- Deleuze, G. (2001). Review of Gilbert Simondon's *L'individu et sa genèse physico-biologique* (1966). I. Ramirez 訳. *Pli* 12, 43–49。manifest D13-S03。誌のサイト（https://www.plijournal.com/files/12_4_Deleuze.pdf 。見開き 2 頁で 4 面）。初出は *Revue philosophique de la France et de l'étranger* 156 (1966), 115–118（訳注による）。読んだ頁：pp.43–49 の全部。
-- Simondon, G. (1958). *Du mode d'existence des objets techniques*. Aubier（1989 年の版の走査）。manifest D13-S02。Monoskop の写し（https://monoskop.org/images/2/20/Simondon_Gilbert_Du_mode_d_existence_des_objets_techniques_1989.pdf ）は上げた人と権利が分からない写しで、文字の層が無いので頁の画像で読みました。読んだ頁：pp.159・163・248。
-- Simondon (1957/2005) の主論文（D13-S01）と Combes (1999/2013)（D13-S04）は書籍で、開けていません。
+- Simondon, G. (2009). The position of the problem of ontogenesis. G. Flanders 訳. *Parrhesia* 7, 4–16。主論文『L'individuation à la lumière des notions de forme et d'information』の序論の英訳で、J.-H. Barthélémy の注が付く（注 14・16 で、序論が二冊に共通の序論であることを書く）。Parrhesia は OA の誌。誌のサイトの PDF（http://www.parrhesiajournal.org/parrhesia07/parrhesia07_simondon1.pdf ）は今は 404 で、Wayback の記録（https://web.archive.org/web/20201212101349/https://www.parrhesiajournal.org/parrhesia07/parrhesia07_simondon1.pdf 、写しの日 2020-12-12）で読みました。頁は誌面の頁。読んだ頁：pp.4–6・9–12。台帳に行が無い（台帳に足す案）。
+- Deleuze, G. (2001). Review of Gilbert Simondon's *L'individu et sa genèse physico-biologique* (1966). I. Ramirez 訳. *Pli* 12, 43–49。台帳に行がある。誌のサイト（https://www.plijournal.com/files/12_4_Deleuze.pdf 。見開き 2 頁で 4 面）。初出は *Revue philosophique de la France et de l'étranger* 156 (1966), 115–118（訳注による）。読んだ頁：pp.43–49 の全部。
+- Simondon, G. (1958). *Du mode d'existence des objets techniques*. Aubier（1989 年の版の走査）。台帳に行がある。Monoskop の写し（https://monoskop.org/images/2/20/Simondon_Gilbert_Du_mode_d_existence_des_objets_techniques_1989.pdf ）は上げた人と権利が分からない写しで、文字の層が無いので頁の画像で読みました。読んだ頁：pp.159・163・248。
+- Simondon (1957/2005) の主論文と Combes (1999/2013)は書籍で、開けていません。
 
 **照合の状態**：本文照合済（訳。Parrhesia 7 の序論の英訳と、誌のサイトの Deleuze の書評）。1958 年の本は未照合（上げた人の分からない写しで読んだ）。主論文の本文と Combes は未照合（書籍）。
 
@@ -83,9 +83,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Dewey, J. (1910). *How We Think*. Boston: D. C. Heath。manifest D13-S05。手元の PDF は、コーネル大学図書館の本の走査（Internet Archive の cu31924014133221、表紙の頁に「There are no known copyright restrictions」）。読んだ頁：pp.72–77（第 6 章）。
-- 同じ 1910 年版の別の走査（ロンドンの D. C. Heath 版。D13-S05 の別の走査）は開いていません。1933 年の改訂版（D13-S06）は読めていません。
-- Dewey, J. (1938). *Logic: The Theory of Inquiry*. Henry Holt（1939 年 1 月の刷）。manifest D13-S07。Internet Archive の JohnDeweyLogicTheTheoryOfInquiry は利用者が上げた写し（上げた人と権利は未確認）で、`_djvu.txt` で読みました。読んだ頁：pp.104–106。
+- Dewey, J. (1910). *How We Think*. Boston: D. C. Heath。台帳に行がある。手元の PDF は、コーネル大学図書館の本の走査（Internet Archive の cu31924014133221、表紙の頁に「There are no known copyright restrictions」）。読んだ頁：pp.72–77（第 6 章）。
+- 同じ 1910 年版の別の走査（ロンドンの D. C. Heath 版。台帳の「Dewey 1910」の行の別の走査）は開いていません。1933 年の改訂版は読めていません。
+- Dewey, J. (1938). *Logic: The Theory of Inquiry*. Henry Holt（1939 年 1 月の刷）。台帳に行がある。Internet Archive の JohnDeweyLogicTheTheoryOfInquiry は利用者が上げた写し（上げた人と権利は未確認）で、`_djvu.txt` で読みました。読んだ頁：pp.104–106。
 
 **照合の状態**：本文照合済（1910。図書館の走査）。1938 年の本は未照合（上げた人の分からない写しで読んだ）。
 
@@ -118,7 +118,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Whitehead, A. N. (1929). *Process and Reality: An Essay in Cosmology*. New York: Macmillan（初版）。manifest D13-S10。手元の PDF（564 頁、Internet Archive の走査）の表紙と著作権の頁で初版を確かめた。台帳は Wikimedia Commons の経路と書くが、元の走査の出どころは確かめていない。1929 年の刊行（README の目安の 1930 年より前）。読んだ頁：pp.32・35・107・170–171・433–434。
+- Whitehead, A. N. (1929). *Process and Reality: An Essay in Cosmology*. New York: Macmillan（初版）。台帳に行がある。手元の PDF（564 頁、Internet Archive の走査）の表紙と著作権の頁で初版を確かめた。台帳は Wikimedia Commons の経路と書くが、元の走査の出どころは確かめていない。1929 年の刊行（README の目安の 1930 年より前）。読んだ頁：pp.32・35・107・170–171・433–434。
 
 **照合の状態**：本文照合済（1929 年の初版）。
 
@@ -146,7 +146,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Schelling, F. W. J. (1799). *Einleitung zu seinem Entwurf eines Systems der Naturphilosophie*. Jena und Leipzig: Gabler。Internet Archive の ersterentwurfein00sche（ブリガムヤング大学 Harold B. Lee Library の本の走査。資料の題は『Erster Entwurf eines Systems der Naturphilosophie』1799 で、頭に序論が綴じてある）。https://archive.org/details/ersterentwurfein00sche 。パブリックドメイン。PDF の 30・35・36 面を頁の画像で読み、ほかは `_djvu.txt`（OCR の文字）で読みました。読んだ頁：§6、pp.24–31。台帳に行が無い（D13-S20 の案）。
+- Schelling, F. W. J. (1799). *Einleitung zu seinem Entwurf eines Systems der Naturphilosophie*. Jena und Leipzig: Gabler。Internet Archive の ersterentwurfein00sche（ブリガムヤング大学 Harold B. Lee Library の本の走査。資料の題は『Erster Entwurf eines Systems der Naturphilosophie』1799 で、頭に序論が綴じてある）。https://archive.org/details/ersterentwurfein00sche 。パブリックドメイン。PDF の 30・35・36 面を頁の画像で読み、ほかは `_djvu.txt`（OCR の文字）で読みました。読んだ頁：§6、pp.24–31。台帳に行が無い（台帳に足す案）。
 - 『Von der Weltseele』（1798。Internet Archive の vonderweltseele01schegoog、ミシガン大学の本を Google が走査）は、OCR の文字が崩れていて読めませんでした。報告の「引力と斥力」は確かめていません。
 
 **照合の状態**：本文照合済（1799 年の序論。図書館の走査を頁の画像と OCR の文字で読んだ）。
@@ -175,7 +175,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Husserl, E. (2001). *Analyses Concerning Passive and Active Synthesis: Lectures on Transcendental Logic*. A. J. Steinbock 訳. Springer. DOI 10.1007/978-94-010-0846-4（Crossref で題・著者・年を確かめた）。独語原文は *Husserliana* XI (1966)。書籍で、OA の版は見つかりませんでした（Crossref・OpenAlex・Semantic Scholar・Internet Archive。Unpaywall と CORE は鍵が無く飛ばした）。台帳に行が無い（D13-S23 の案）。
+- Husserl, E. (2001). *Analyses Concerning Passive and Active Synthesis: Lectures on Transcendental Logic*. A. J. Steinbock 訳. Springer. DOI 10.1007/978-94-010-0846-4（Crossref で題・著者・年を確かめた）。独語原文は *Husserliana* XI (1966)。書籍で、OA の版は見つかりませんでした（Crossref・OpenAlex・Semantic Scholar・Internet Archive。Unpaywall と CORE は鍵が無く飛ばした）。台帳に行が無い（台帳に足す案）。
 - 二次資料：Zahavi, D. "Edmund Husserl". *Stanford Encyclopedia of Philosophy*（2025 年 8 月初出の版）。https://plato.stanford.edu/entries/husserl/ 。
 
 **照合の状態**：二次資料のみ（SEP）。原典は未照合（書籍）。
@@ -196,7 +196,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Merleau-Ponty, M. (1964). *Le visible et l'invisible*. C. Lefort 編. Paris: Gallimard。Les Classiques des sciences sociales（ケベック大学シクーティミ校と組んだ電子図書館）の 2020 年の打ち直しの版。文中の [ ] の番号が Gallimard 1964 の頁。カナダでは著者の没後 50 年でパブリックドメインと版に書かれ、70 年の国では権利が残る。大学のサイト（classiques.uqac.ca）には届かず（CONNECT tunnel failed、502 と接続の時間切れ）、同じ URL の Wayback の記録（https://web.archive.org/web/20210904115041/http://classiques.uqac.ca/classiques/merleau_ponty_maurice/visible_et_invisible/Le_visible_et_l_invisible.pdf 、写しの日 2021-09-04）で読みました。読んだ頁：pp.172・179・193–195（「L'entrelacs — le chiasme」）。台帳に行が無い（D13-S21 の案）。
+- Merleau-Ponty, M. (1964). *Le visible et l'invisible*. C. Lefort 編. Paris: Gallimard。Les Classiques des sciences sociales（ケベック大学シクーティミ校と組んだ電子図書館）の 2020 年の打ち直しの版。文中の [ ] の番号が Gallimard 1964 の頁。カナダでは著者の没後 50 年でパブリックドメインと版に書かれ、70 年の国では権利が残る。大学のサイト（classiques.uqac.ca）には届かず（CONNECT tunnel failed、502 と接続の時間切れ）、同じ URL の Wayback の記録（https://web.archive.org/web/20210904115041/http://classiques.uqac.ca/classiques/merleau_ponty_maurice/visible_et_invisible/Le_visible_et_l_invisible.pdf 、写しの日 2021-09-04）で読みました。読んだ頁：pp.172・179・193–195（「L'entrelacs — le chiasme」）。台帳に行が無い（台帳に足す案）。
 
 **照合の状態**：本文照合済（大学と組んだ電子図書館の打ち直し。カナダでのパブリックドメイン）。
 
@@ -225,7 +225,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Gadamer, H.-G. (1960). *Wahrheit und Methode*. Tübingen: Mohr。Internet Archive の版は貸し出しだけ（wahrheitundmetho0000gada_m7m1 ほか）で、自動では読めません。台帳に行が無い（D13-S24 の案）。
+- Gadamer, H.-G. (1960). *Wahrheit und Methode*. Tübingen: Mohr。Internet Archive の版は貸し出しだけ（wahrheitundmetho0000gada_m7m1 ほか）で、自動では読めません。台帳に行が無い（台帳に足す案）。
 - 二次資料：Malpas, J. "Hans-Georg Gadamer". *Stanford Encyclopedia of Philosophy*（2022 年改訂）。https://plato.stanford.edu/entries/gadamer/ 。§3.3 付近。
 
 **照合の状態**：二次資料のみ（SEP）。原典は未照合（書籍）。
@@ -246,7 +246,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Deleuze, G. & Guattari, F. (1980). *Mille plateaux*. Paris: Minuit。OA の版は見つかりませんでした（Crossref・OpenAlex・Semantic Scholar・Internet Archive）。台帳に行が無い（D13-S25 の案）。
+- Deleuze, G. & Guattari, F. (1980). *Mille plateaux*. Paris: Minuit。OA の版は見つかりませんでした（Crossref・OpenAlex・Semantic Scholar・Internet Archive）。台帳に行が無い（台帳に足す案）。
 - 二次資料：Smith, D. ほか "Gilles Deleuze". *Stanford Encyclopedia of Philosophy*（2022 年改訂）。https://plato.stanford.edu/entries/deleuze/ 。§5 付近。
 
 **照合の状態**：二次資料のみ（SEP）。原典は未照合（書籍）。
@@ -267,7 +267,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Peirce, C. S. (1877). The fixation of belief. *Popular Science Monthly* 12, 1–15。M. R. Cohen 編 *Chance, Love, and Logic*（London: Kegan Paul, 1923）pp.7–31 の再録（再録の脚注に「Popular Science Monthly, November, 1877」）。manifest D13-S13。トロント大学 Robarts 図書館の本の走査（https://archive.org/details/chanceloveandlog00peiruoft ）の `_djvu.txt`（OCR の文字）で読みました。頁は 1923 年の再録の頁。読んだ頁：pp.7・15–26。誌面の頁は確かめていません。
+- Peirce, C. S. (1877). The fixation of belief. *Popular Science Monthly* 12, 1–15。M. R. Cohen 編 *Chance, Love, and Logic*（London: Kegan Paul, 1923）pp.7–31 の再録（再録の脚注に「Popular Science Monthly, November, 1877」）。台帳に行がある。トロント大学 Robarts 図書館の本の走査（https://archive.org/details/chanceloveandlog00peiruoft ）の `_djvu.txt`（OCR の文字）で読みました。頁は 1923 年の再録の頁。読んだ頁：pp.7・15–26。誌面の頁は確かめていません。
 - アブダクションの定式（CP 5.189、1903 年の講義）は読んでいません。1923 年の本の目次と OCR の文字に「abduction」の語はありませんでした。
 
 **照合の状態**：本文照合済（1923 年の再録。図書館の走査の OCR の文字で読んだ）。
@@ -279,7 +279,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 - 疑問の形に置くだけでは探究は起きず、「a real and living doubt」が要る（p.17）。
 - 固執の方法は、心を乱すものから顔を背ける。ダチョウのように危険を隠す。社会の衝動がこれに逆らい、人の考えの違いに出会うと揺らぐ（pp.17–19）。
 - 権威の方法は、制度が教えを繰り返し、反対を禁じ、異なる考えの人を恐れさせ、罰し、ときに大量に殺してきた。残酷はいつもこの方法に伴う（pp.20–21）。変化はとても遅く、一人の生のあいだは固まって見える（p.22）。
-- 先験の方法は趣味の発達に似て、形而上学者は合意に至らず、振り子のように揺れてきた。「its failure has been the most manifest」。「the shock of opinions」が人をより広い好みに向かわせる（p.24）。
+- 先験の方法は趣味の発達に似て、形而上学者は合意に至らず、振り子のように揺れてきた。「its failure has been the most 台帳」。「the shock of opinions」が人をより広い好みに向かわせる（p.24）。
 - どの方法も、それを生む感情は「a dissatisfaction at two repugnant propositions」（p.26）。
 
 **対立・衝突・統合の読み**：原典は、疑いと信念、相容れない二つの命題を探究の出発に置き、探究を「もがき」として書いています。意見を落ち着かせる四つの方法を並べ、三つの方法がどう崩れるか（考えの違いに出会って揺らぐ・残酷を伴って固まる・揺れて定まらない）を書いています。読み替え：権威の方法で固まった信念は悪い統合、固執は片方の勝利、先験の方法の振り子は統合に至らず揺れ続ける形。報告の段の当てはめは5段階の定義が決まってから見ます。
@@ -300,7 +300,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Adorno, T. W. (1966). *Negative Dialektik*. Frankfurt am Main: Suhrkamp。Internet Archive の TheodorAdorno-NegativeDialektik（2012 年に利用者が上げた写し。上げた人と権利は未確認）の `_djvu.txt`（OCR の文字）で読みました。読んだ所：Vorrede の冒頭の段落、Einleitung の「Dialektik kein Standpunkt」「Realität und Dialektik」の柱の頁（写しの頭の番号 14–16）。Internet Archive の 1970 年の版（negativedialekti0000theo_l6i5）は貸し出しだけ。台帳に行が無い（D13-S26 の案）。
+- Adorno, T. W. (1966). *Negative Dialektik*. Frankfurt am Main: Suhrkamp。Internet Archive の TheodorAdorno-NegativeDialektik（2012 年に利用者が上げた写し。上げた人と権利は未確認）の `_djvu.txt`（OCR の文字）で読みました。読んだ所：Vorrede の冒頭の段落、Einleitung の「Dialektik kein Standpunkt」「Realität und Dialektik」の柱の頁（写しの頭の番号 14–16）。Internet Archive の 1970 年の版（negativedialekti0000theo_l6i5）は貸し出しだけ。台帳に行が無い（台帳に足す案）。
 - 二次資料：Pickford, H. "Theodor W. Adorno". *Stanford Encyclopedia of Philosophy*（2024 年改訂）。https://plato.stanford.edu/entries/adorno/ 。
 
 **照合の状態**：未照合（上げた人の分からない写しで読んだ）。
@@ -327,8 +327,8 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- 西田幾多郎（1939）「絶対矛盾的自己同一」『思想』202 号。青空文庫の翻刻（https://www.aozora.gr.jp/cards/000182/card1755.html 。底本『西田幾多郎哲学論集Ⅲ』岩波文庫 1989 年第 1 刷、底本の親本『西田幾多郎全集』第 9 巻。入力 nns、校正 ちはる）。著者は 1945 年没でパブリックドメイン。頁は無いので段落で控えました。台帳に行が無い（D13-S22 の案）。
-- 西田幾多郎（1926）「場所」『哲学研究』（『働くものから見るものへ』1927 所収）。青空文庫に無く、国立国会図書館デジタルコレクションの全集（1949・1965）は IIIF の manifest が「checkResult NG」で、インターネット公開ではないと見られます。台帳に行が無い（D13-S27 の案）。
+- 西田幾多郎（1939）「絶対矛盾的自己同一」『思想』202 号。青空文庫の翻刻（https://www.aozora.gr.jp/cards/000182/card1755.html 。底本『西田幾多郎哲学論集Ⅲ』岩波文庫 1989 年第 1 刷、底本の親本『西田幾多郎全集』第 9 巻。入力 nns、校正 ちはる）。著者は 1945 年没でパブリックドメイン。頁は無いので段落で控えました。台帳に行が無い（台帳に足す案）。
+- 西田幾多郎（1926）「場所」『哲学研究』（『働くものから見るものへ』1927 所収）。青空文庫に無く、国立国会図書館デジタルコレクションの全集（1949・1965）は IIIF の台帳が「checkResult NG」で、インターネット公開ではないと見られます。台帳に行が無い（台帳に足す案）。
 
 **照合の状態**：本文照合済（1939 年の論文。青空文庫の翻刻）。「場所」（1926）は未照合（書籍）。
 
@@ -361,7 +361,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 - Hegel, G. W. F. (1807). *Phänomenologie des Geistes*, Vorrede。G. Lasson 編『Phänomenologie des Geistes』Jubiläumsausgabe, Leipzig: Dürr, 1907（イリノイ大学図書館の本の走査。https://archive.org/details/phnomenologied00hege ）。`_djvu.txt`（OCR の文字）で読みました。読んだ頁：pp.4・33。
 - 英訳：*The Phenomenology of Mind*, Vol. I. J. B. Baillie 訳. London: Sonnenschein, 1910（コーネル大学図書館の本の走査。https://archive.org/details/cu31924097557171 。パブリックドメイン）。`_djvu.txt` で読みました。読んだ頁：Preface pp.2–3・17・30–31・46–47。
 - Hegel, G. W. F. (1812). *Wissenschaft der Logik*, Bd. 1（第 1 巻 第 1 部 第 1 編）。Nürnberg: Schrag（Graduate Theological Union の本の走査。https://archive.org/details/wissenschaftderl01hege ）。`_djvu.txt`（亀の子文字の OCR）で読みました。読んだ所：目次と「Werden」の節と「Aufheben」の注。頁は目次の頁の印（「Aufheben des Werdens S. 44」「Das Aufheben S. 45」）で控え、頁の画像では確かめていません。
-- 台帳に行が無い（D13-S17・S18・S19 の案）。
+- 台帳に行が無い（台帳の「Hegel 1910」の行の案）。
 
 **照合の状態**：本文照合済（独語原文と英訳。図書館の走査の OCR の文字で読んだ）。
 
@@ -376,7 +376,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **対立・衝突・統合の読み**：原典は、形どうしが相容れずに押しのけ合うこと、成ることが自らに矛盾して自らを壊すことを書き、その結果を、消えたのでなく保たれた契機として書いています。否定から目を逸らさずにとどまることを精神の力と書く所は、悪いことを過程の外に置かない書き方です（Claude の読み）。原典は三つ組の図式を当てはめるだけの形式主義を退けていて、「正・反・合」の語そのものはここで読んだ範囲にありません。「正・反・合」をフィヒテや後の解説者に帰す説がある（研究の一線。この記録では確かめていない）。
 
-**足した理由と系譜**：README「調査の手順」3（正反合の系譜は 30 領域のどこにも無い）と、本文に当たれて矛盾と止揚をはっきり書いていることです。D16 歴史学が足したマルクスの 1859 年の序言（生産力と生産関係の衝突）は、ヘーゲルの弁証法を引き継いだ同じ系譜なので、段 3 で二つを別々の裏付けには数えません。D26 音楽学の Dahlhaus の弁証法の読みも、同じ語を使う系譜です。エンペドクレスの愛と争い（愛と争いの読み物が Diels 1906 で確かめている）とヘラクレイトスは、この記録では開いていません。
+**足した理由と系譜**：README「調査の手順」3（正反合の系譜は 30 領域のどこにも無い）と、本文に当たれて矛盾と止揚をはっきり書いていることです。歴史学が足したマルクスの 1859 年の序言（生産力と生産関係の衝突）は、ヘーゲルの弁証法を引き継いだ同じ系譜なので、段 3 で二つを別々の裏付けには数えません。音楽学の Dahlhaus の弁証法の読みも、同じ語を使う系譜です。エンペドクレスの愛と争い（愛と争いの読み物が Diels 1906 で確かめている）とヘラクレイトスは、この記録では開いていません。
 
 **今の報告から直すこと**：報告に無い論です。ja 18 行の「7つの系譜から11の理論」の選び方に、正反合の系譜が入っていないことの点検として足しました。報告で「弁証法」の語が出るのは、アドルノの書名と西田の節の周りだけです。
 
@@ -424,7 +424,7 @@ ja 5〜8 行「立ち位置明示」、46〜51 行「方法論的開示（S60）
 | 版ごとの件数 | ja・en・pres が別々に生成されたこと |
 | 型 F の表示 | 報告のテンプレート |
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 E（「最も」の言い切り）：「30の調査領域のなかで最も抽象度が高い領域」（16 行）、「11件のなかで最も安定した構造対応」（97 行）、「対応付けの恣意性が最も低い理論」（107 行）、「『縁』を最も多角的に記述する領域」（189 行）。比べた跡は無い。
 - 型 H（原典に無い体系）：「伝播型・問題化型・跳躍型・可逆型・対話型・矛盾保持型」（189 行）。
@@ -434,73 +434,65 @@ ja 5〜8 行「立ち位置明示」、46〜51 行「方法論的開示（S60）
 
 ## 判断が要るもの
 
-pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは `docs/cs-review/README.md` の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
+pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは調べ方の計画と規約の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
 
-- ヘーゲルを論として足しました。本文に当たれて、矛盾と止揚をはっきり書いているためです（README「調査の手順」3）。D16 のマルクスと同じ系譜なので、段 3 で一つに数えます。
+- ヘーゲルを論として足しました。本文に当たれて、矛盾と止揚をはっきり書いているためです（README「調査の手順」3）。歴史学のマルクスと同じ系譜なので、段 3 で一つに数えます。
 - シモンドンは、原典が自分の図式を弁証法と区別しているので、正反合の系譜の裏付けには数えず、「緊張の解決」を書く別の一面として並べました。
 - メルロ＝ポンティの Les Classiques des sciences sociales の版は、大学と組んだ電子図書館の打ち直しで出所が書けるので、性格（カナダでのパブリックドメイン）を添えて本文照合済にしました。頁は版の中の [ ] の Gallimard の頁です。
 - シェリングの原典の「渦（Wirbel）」は、語が5段階と同じだけなので、対応の根拠に数えていません。
 - 1923 年の再録（パース）は、パブリックドメインの図書館の走査なので本文照合済にし、頁は再録の頁と書きました。
 - 上げた人の分からない写しで読んだ論（アドルノ・デューイ 1938・シモンドン 1958）は、未照合として読んだ頁を書きました。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D13-S16 | Simondon, G. (2009). The position of the problem of ontogenesis. G. Flanders 訳. *Parrhesia* 7, 4–16 | https://web.archive.org/web/20201212101349/https://www.parrhesiajournal.org/parrhesia07/parrhesia07_simondon1.pdf （Wayback の記録。元は誌のサイト。今の URL は 404） | raw-confirmed（保存名の案 `D13_simondon_2009_position-problem-ontogenesis.pdf`） |
-| D13-S17 | Hegel, G. W. F. (1910). *The Phenomenology of Mind*, Vol. I. J. B. Baillie 訳. London: Sonnenschein | https://archive.org/details/cu31924097557171 （コーネル大学図書館の走査） | raw-confirmed（パブリックドメイン。手元に置いたのは同じ資料の OCR の文字 `D13_hegel_1910_phenomenology-baillie-v1_djvu.txt`） |
-| D13-S18 | Hegel, G. W. F. (1807/1907). *Phänomenologie des Geistes*. G. Lasson 編. Leipzig: Dürr | https://archive.org/details/phnomenologied00hege （イリノイ大学図書館の走査） | raw-confirmed（パブリックドメイン。手元に置いたのは同じ資料の OCR の文字 `D13_hegel_1907_phaenomenologie-lasson_djvu.txt`） |
-| D13-S19 | Hegel, G. W. F. (1812). *Wissenschaft der Logik*, Bd. 1. Nürnberg: Schrag | https://archive.org/details/wissenschaftderl01hege （Graduate Theological Union の走査） | raw-confirmed（パブリックドメイン。手元に置いたのは同じ資料の OCR の文字 `D13_hegel_1812_wissenschaft-der-logik-bd1_djvu.txt`） |
-| D13-S20 | Schelling, F. W. J. (1799). *Einleitung zu seinem Entwurf eines Systems der Naturphilosophie* / *Erster Entwurf eines Systems der Naturphilosophie*. Jena und Leipzig: Gabler | https://archive.org/details/ersterentwurfein00sche （ブリガムヤング大学図書館の走査） | raw-confirmed（保存名の案 `D13_schelling_1799_erster-entwurf-einleitung.pdf`） |
-| D13-S21 | Merleau-Ponty, M. (1964). *Le visible et l'invisible*. C. Lefort 編. Gallimard（Les Classiques des sciences sociales の 2020 年の版） | https://web.archive.org/web/20210904115041/http://classiques.uqac.ca/classiques/merleau_ponty_maurice/visible_et_invisible/Le_visible_et_l_invisible.pdf （Wayback の記録。元は大学と組んだ電子図書館） | raw-confirmed（カナダでのパブリックドメイン。保存名の案 `D13_merleau-ponty_1964_visible-invisible.pdf`） |
-| D13-S22 | 西田幾多郎 (1939). 絶対矛盾的自己同一. 『思想』202 | https://www.aozora.gr.jp/cards/000182/card1755.html （青空文庫。底本『西田幾多郎哲学論集Ⅲ』岩波文庫 1989） | raw-confirmed（パブリックドメイン。手元に置いたのは青空文庫の頁 `D13_nishida_1939_zettai-mujunteki-jikodoitsu_aozora.html`） |
-| D13-S23 | Husserl, E. (2001). *Analyses Concerning Passive and Active Synthesis*. A. J. Steinbock 訳. Springer. DOI 10.1007/978-94-010-0846-4 | Springer（有料） | citation-only |
-| D13-S24 | Gadamer, H.-G. (1960). *Wahrheit und Methode*. Tübingen: Mohr | Internet Archive の貸し出しだけ | citation-only |
-| D13-S25 | Deleuze, G. & Guattari, F. (1980). *Mille plateaux*. Paris: Minuit | OA なし | citation-only |
-| D13-S26 | Adorno, T. W. (1966). *Negative Dialektik*. Suhrkamp | https://archive.org/details/TheodorAdorno-NegativeDialektik （利用者が上げた写し。上げた人と権利は未確認） | citation-only（写しは読めるが、確かめ先にしない） |
-| D13-S27 | 西田幾多郎 (1926). 場所. 『哲学研究』（『働くものから見るものへ』岩波書店 1927 所収） | 国立国会図書館デジタルコレクション（インターネット公開でない見込み） | citation-only |
-| D13-S28 | Stanford Encyclopedia of Philosophy の項目「Edmund Husserl」（Zahavi）・「Hans-Georg Gadamer」（Malpas）・「Gilles Deleuze」（Smith ほか）・「Theodor W. Adorno」（Pickford） | https://plato.stanford.edu/entries/husserl/ ほか | url-verified（二次資料） |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| Simondon, G. (2009). The position of the problem of ontogenesis. G. Flanders 訳. *Parrhesia* 7, 4–16 | https://web.archive.org/web/20201212101349/https://www.parrhesiajournal.org/parrhesia07/parrhesia07_simondon1.pdf （Wayback の記録。元は誌のサイト。今の URL は 404） | 手元に保存した（保存名の案手元の PDF） |
+| Hegel, G. W. F. (1910). *The Phenomenology of Mind*, Vol. I. J. B. Baillie 訳. London: Sonnenschein | https://archive.org/details/cu31924097557171 （コーネル大学図書館の走査） | 手元に保存した（パブリックドメイン。手元に置いたのは同じ資料の OCR の文字手元のファイル） |
+| Hegel, G. W. F. (1807/1907). *Phänomenologie des Geistes*. G. Lasson 編. Leipzig: Dürr | https://archive.org/details/phnomenologied00hege （イリノイ大学図書館の走査） | 手元に保存した（パブリックドメイン。手元に置いたのは同じ資料の OCR の文字手元のファイル） |
+| Hegel, G. W. F. (1812). *Wissenschaft der Logik*, Bd. 1. Nürnberg: Schrag | https://archive.org/details/wissenschaftderl01hege （Graduate Theological Union の走査） | 手元に保存した（パブリックドメイン。手元に置いたのは同じ資料の OCR の文字手元のファイル） |
+| Schelling, F. W. J. (1799). *Einleitung zu seinem Entwurf eines Systems der Naturphilosophie* / *Erster Entwurf eines Systems der Naturphilosophie*. Jena und Leipzig: Gabler | https://archive.org/details/ersterentwurfein00sche （ブリガムヤング大学図書館の走査） | 手元に保存した（保存名の案手元の PDF） |
+| Merleau-Ponty, M. (1964). *Le visible et l'invisible*. C. Lefort 編. Gallimard（Les Classiques des sciences sociales の 2020 年の版） | https://web.archive.org/web/20210904115041/http://classiques.uqac.ca/classiques/merleau_ponty_maurice/visible_et_invisible/Le_visible_et_l_invisible.pdf （Wayback の記録。元は大学と組んだ電子図書館） | 手元に保存した（カナダでのパブリックドメイン。保存名の案手元の PDF） |
+| 西田幾多郎 (1939). 絶対矛盾的自己同一. 『思想』202 | https://www.aozora.gr.jp/cards/000182/card1755.html （青空文庫。底本『西田幾多郎哲学論集Ⅲ』岩波文庫 1989） | 手元に保存した（パブリックドメイン。手元に置いたのは青空文庫の頁手元のファイル） |
+| Husserl, E. (2001). *Analyses Concerning Passive and Active Synthesis*. A. J. Steinbock 訳. Springer. DOI 10.1007/978-94-010-0846-4 | Springer（有料） | 書誌だけ |
+| Gadamer, H.-G. (1960). *Wahrheit und Methode*. Tübingen: Mohr | Internet Archive の貸し出しだけ | 書誌だけ |
+| Deleuze, G. & Guattari, F. (1980). *Mille plateaux*. Paris: Minuit | OA なし | 書誌だけ |
+| Adorno, T. W. (1966). *Negative Dialektik*. Suhrkamp | https://archive.org/details/TheodorAdorno-NegativeDialektik （利用者が上げた写し。上げた人と権利は未確認） | 書誌だけ（写しは読めるが、確かめ先にしない） |
+| 西田幾多郎 (1926). 場所. 『哲学研究』（『働くものから見るものへ』岩波書店 1927 所収） | 国立国会図書館デジタルコレクション（インターネット公開でない見込み） | 書誌だけ |
+| Stanford Encyclopedia of Philosophy の項目「Edmund Husserl」（Zahavi）・「Hans-Georg Gadamer」（Malpas）・「Gilles Deleuze」（Smith ほか）・「Theodor W. Adorno」（Pickford） | https://plato.stanford.edu/entries/husserl/ ほか | 取得先を確かめた（二次資料） |
 
 既存の行に書き足す案：
 
-- D13-S02：Monoskop の写しは 1989 年の Aubier の版の走査（見開き 2 頁で 1 面、182 面、文字の層なし。図版の頁が p.247 と p.248 の間に入る）。上げた人と権利は未確認。読めた頁：pp.159・163・248。
-- D13-S03：誌のサイトの PDF は今も取れる（2026-11-09）。見開き 2 頁で 4 面、pp.43–49 の全部。台帳が url-verified と書く行で、本文を読めた（raw-confirmed に上げられる。保存名の案 `D13_deleuze_2001_review-simondon-pli12.pdf`）。
-- D13-S07：Internet Archive の JohnDeweyLogicTheTheoryOfInquiry は利用者が上げた写し（Holt、1939 年 1 月の刷）。本文は読めるが、確かめ先としては上げた人と権利が未確認。
-- D13-S13：トロント大学 Robarts 図書館の走査（スポンサー MSN、2006 年）。「The Fixation of Belief」は pp.7–31 に再録。台帳が url-verified と書く行で、本文を読めた（raw-confirmed に上げられる）。
-- D13-S05：手元の PDF はコーネル大学図書館の走査（Internet Archive の cu31924014133221）。
-- D13-S14：D29 複雑系の記録は Varela ら 1974 を「未照合（有料）」としているが、この台帳の行の手元の PDF（Monoskop の走査、10 頁）の 1 頁目で、*BioSystems* 5 (1974) 187–196 の題と著者を確かめた。Monoskop の写しなので、上げた人と権利は未確認。
+- 台帳の「Simondon 1958」の行：Monoskop の写しは 1989 年の Aubier の版の走査（見開き 2 頁で 1 面、182 面、文字の層なし。図版の頁が p.247 と p.248 の間に入る）。上げた人と権利は未確認。読めた頁：pp.159・163・248。
+- 台帳の「Deleuze 1966」の行：誌のサイトの PDF は今も取れる（2026-11-09）。見開き 2 頁で 4 面、pp.43–49 の全部。台帳が「取得先を確かめた」と書く行で、本文を読めた（「手元に保存した」に上げられる。保存名の案手元の PDF）。
+- 台帳の「Dewey 1938」の行：Internet Archive の JohnDeweyLogicTheTheoryOfInquiry は利用者が上げた写し（Holt、1939 年 1 月の刷）。本文は読めるが、確かめ先としては上げた人と権利が未確認。
+- 台帳の「Peirce 1923」の行：トロント大学 Robarts 図書館の走査（スポンサー MSN、2006 年）。「The Fixation of Belief」は pp.7–31 に再録。台帳が「取得先を確かめた」と書く行で、本文を読めた（「手元に保存した」に上げられる）。
+- 台帳の「Dewey 1910」の行：手元の PDF はコーネル大学図書館の走査（Internet Archive の cu31924014133221）。
+- 台帳の「Varela ら 1974」の行：複雑系科学複雑系の記録は Varela ら 1974 を「未照合（有料）」としているが、この台帳の行の手元の PDF（Monoskop の走査、10 頁）の 1 頁目で、*BioSystems* 5 (1974) 187–196 の題と著者を確かめた。Monoskop の写しなので、上げた人と権利は未確認。
 
 ## ブラウザでの保存が要る PDF
 
-| 台帳の行 | 文献 | ダウンロード先 | 保存名の案 | 止まった理由 | 保存できると何を確かめられるか |
-|---|---|---|---|---|---|
-| D13-S24 の案 | Gadamer (1960). *Wahrheit und Methode* | https://archive.org/details/wahrheitundmetho0000gada_m7m1 （頁の中の「Borrow」） | ― | Internet Archive の貸し出し（ログインして借りる形） | 第 2 部の「Horizontverschmelzung」の箇所（ページ内で語を探す）。地平が融合しない形（誤解）を原典がどう書くか。報告 ja 141 行の「常に進行中の出来事」 |
-| D13-S26 の案 | Adorno (1966). *Negative Dialektik* | https://archive.org/details/negativedialekti0000theo_l6i5 （1970 年の版。頁の中の「Borrow」） | ― | Internet Archive の貸し出し | Einleitung の「Dialektik kein Standpunkt」の段（ページ内で「Nichtidentität im Bann」を探す）。利用者の写しで読んだ文を、図書館の版で確かめて本文照合済に上げる |
-| D13-S27 の案 | 西田 (1926)「場所」（『西田幾多郎全集』第 4 巻ほか） | https://dl.ndl.go.jp/pid/2987003 （国立国会図書館デジタルコレクション） | ― | IIIF の manifest が「checkResult NG」（インターネット公開でない見込み。個人送信の利用者登録が要るかもしれない） | 「有の場所」「相対的無の場所」「絶対無の場所」の語があるか。報告 ja 159 行の三層構造 |
-| D13-S06 | Dewey (1933). *How We Think: A Restatement* | https://archive.org/details/howwethinkrestat0000john | ― | Internet Archive の貸し出し（台帳の行のとおり） | 1933 年版の五つの相の名と数え方。1910 年版（pp.72–77）との違い |
-| D13-S21 の案 | Merleau-Ponty (1964). 大学の電子図書館の版 | http://classiques.uqac.ca/classiques/merleau_ponty_maurice/visible_et_invisible/Le_visible_et_l_invisible.pdf | `D13_merleau-ponty_1964_visible-invisible.pdf` | 確認画面ではない。サンドボックスから届かなかった（http は 502「Bad Gateway」、https は接続の時間切れ、curl の exit 56・28）。落ちていたとは決めていない。Wayback の記録（2021-09-04）は取れた | 今の版が Wayback の写しと同じか。日をおいて取り直す |
-
-フッサールの Husserliana XI と英訳、ドゥルーズ＝ガタリは、出版社の壁か本だけで、確認画面ではありません。図書館の手続きが要るかは pjdhiro が決めます。
+自動で取れなかった原典のうち、ブラウザでの保存を頼むものは、作業の記録（[Issue #73](https://github.com/uminomae/project-design-theory/issues/73)）の表にまとめました。
 
 ## 手順について分かったこと
 
 - 書籍が多い分野でしたが、パブリックドメインの原文と古い訳（ヘーゲル 1812・1907・1910、シェリング 1799、パース 1923、デューイ 1910）と、OA の誌の訳（Parrhesia の序論の英訳）、大学と組んだ電子図書館（メルロ＝ポンティ）、青空文庫（西田 1939）で、12 のうち 8 つの論の本文に当たれました。古い独語の走査は、亀の子文字の OCR が読める本（1799・1812）と崩れて読めない本（1798）がありました。読んだ頁は一つ頁の画像で確かめました（シェリング p.29・30）。
 - 報告が「対応が弱い」「外に置く」とした論ほど、原典は二つの力の兼ね合いと至らない形をはっきり書いていました（シェリングの「産物は 0」）。逆に、報告が「強い対応」とした論の一つ（シモンドン）は、原典が自ら弁証法との違いを書いていました。
-- 精読ノートが「原文引用」と書く所に、編者の序文の要約が引用符で入っていました（下の S13）。精読ノートの頁が、見開き 2 頁の PDF の面の読み違いでずれていました（下の S03）。
-- 台帳に無い古典は、Internet Archive の検索 API で図書館の走査（contributor が図書館のもの）を先に選ぶと、上げた人の分からない写しを避けられました。`find-source.sh` は書籍の題では Internet Archive の貸し出しと個人の写ししか出さないことが多く、図書館の走査は検索 API で探しました。
-- `find-source.sh --help` は Python の argparse の書式の誤り（help の文字列の「%」）で落ちます。サブコマンドの引数は `scripts/find_source.py` の `add_argument` で見ました。macOS に `timeout` が無いので、時間の上限は `perl -e 'alarm 120; exec @ARGV'` で付けました。
+- 精読ノートが「原文引用」と書く所に、編者の序文の要約が引用符で入っていました（下の「Peirce 1923」）。精読ノートの頁が、見開き 2 頁の PDF の面の読み違いでずれていました（下の「Deleuze 1966」）。
+- 台帳に無い古典は、Internet Archive の検索 API で図書館の走査（contributor が図書館のもの）を先に選ぶと、上げた人の分からない写しを避けられました。原典を探す道具は書籍の題では Internet Archive の貸し出しと個人の写ししか出さないことが多く、図書館の走査は検索 API で探しました。
+- 原典を探す道具の使い方の表示（`--help`）は Python の argparse の書式の誤り（help の文字列の「%」）で落ちます。サブコマンドの引数は原典を探す道具の `add_argument` で見ました。macOS に `timeout` が無いので、時間の上限は `perl -e 'alarm 120; exec @ARGV'` で付けました。
 - Semantic Scholar は回数の制限（429）を返しました。Unpaywall と CORE は鍵が無く飛ばしました。
 
 ### 精読ノートと wiki の誤り
 
-追記（2026-11-09・司令塔）：下の S03 の四か所と S13 の四か所（26・38・44・50 行）は、原典の文字と頁の画像（Pli 12 の pp.44・46、1923 年の再録の OCR の文字）で確かめて直しました。S13 のノートの読んだ範囲の書き足しと、wiki の二つのリンクは、段 4（wiki との整合）に回します。シェリングの p.29（PDF の 35 面）と、ヘーゲル 1812 年の「Es widerspricht sich also in sich selbst」の文（OCR の文字）は、司令塔も開いて確かめました。Les Classiques des sciences sociales のサーバーは、サンドボックスの外からも時間切れでした（名前は引けます。2026-11-09）。
+追記（2026-11-09・司令塔）：下の「Deleuze 1966」の四か所と「Peirce 1923」の四か所（26・38・44・50 行）は、原典の文字と頁の画像（Pli 12 の pp.44・46、1923 年の再録の OCR の文字）で確かめて直しました。「Peirce 1923」のノートの読んだ範囲の書き足しと、wiki の二つのリンクは、段 4（wiki との整合）に回します。シェリングの p.29（PDF の 35 面）と、ヘーゲル 1812 年の「Es widerspricht sich also in sich selbst」の文（OCR の文字）は、司令塔も開いて確かめました。Les Classiques des sciences sociales のサーバーは、サンドボックスの外からも時間切れでした（名前は引けます。2026-11-09）。
 
-- `cs/knowledge/source-notes/D13/D13-S03_deleuze-1966.md` 52 行：直す前「…of a `resolution' for [a problem posed by disparates]." (p.49 付近)」→ 直したあと「…of a 'resolution' for an objectively problematic system." (p.46)」。角括弧の中の語は原文に無く、頁は p.46（見開きの左の段）。
+- 精読ノート「Deleuze 1966」 52 行：直す前「…of a `resolution' for [a problem posed by disparates]." (p.49 付近)」→ 直したあと「…of a 'resolution' for an objectively problematic system." (p.46)」。角括弧の中の語は原文に無く、頁は p.46（見開きの左の段）。
 - 同 67 行：「(p.49)」→「(p.46)」。
 - 同 40 行・64 行：「Singular without being individual…」の頁「(p.45)」→「(p.44)」。
-- `cs/knowledge/source-notes/D13/D13-S13_peirce-1923.md` 26 行：引用符の中に要約が入っている。直す前「"laboratory work reveals that 'no two observers...get absolutely identical results,' suggesting that irregularity is fundamental to nature rather than merely observational error."」→ 直したあと、引用は「"no two observers, and no one observer in successive experiments, get absolutely identical results"」だけにし、残りは要約として引用符の外に書く（Cohen の序文）。
+- 精読ノート「Peirce 1923」 26 行：引用符の中に要約が入っている。直す前「"laboratory work reveals that 'no two observers...get absolutely identical results,' suggesting that irregularity is fundamental to nature rather than merely observational error."」→ 直したあと、引用は「"no two observers, and no one observer in successive experiments, get absolutely identical results"」だけにし、残りは要約として引用符の外に書く（Cohen の序文）。
 - 同 38 行：直す前「"ideas literally spread themselves continuously and become more and more general, generating order through habitual patterns."」→ 直したあと「"ideas literally spread themselves continuously and become more and more general or inclusive"」（後半は要約）。
 - 同 44 行・50 行：「"Peirce's approach integrated modern physics with medieval realism…"」「"establishing him as a foundational figure…"」は 1923 年の本の文に無い。引用符を外して要約と書く。
 - 同ノートは Cohen の序文だけを読んでいて、報告が頼る「The Fixation of Belief」（pp.7–31）を読んでいない（頁の範囲の欄に足す）。
-- `pd/wiki/sources/D13_whitehead_1929_process-and-reality.md` 61 行：「全文: Wikimedia Commons」のリンクが Commons のトップ（https://commons.wikimedia.org/ ）で、ファイルを指していない。
-- `pd/wiki/sources/D13_dewey_1938_1938.md` 55 行：全文のリンク（Internet Archive の JohnDeweyLogicTheTheoryOfInquiry）は利用者が上げた写しで、66 行の「archive.org 公開の原典」は性格が違う（低）。
+- wiki の頁「Whitehead 1929」 61 行：「全文: Wikimedia Commons」のリンクが Commons のトップ（https://commons.wikimedia.org/ ）で、ファイルを指していない。
+- wiki の頁「Dewey 1938」 55 行：全文のリンク（Internet Archive の JohnDeweyLogicTheTheoryOfInquiry）は利用者が上げた写しで、66 行の「archive.org 公開の原典」は性格が違う（低）。

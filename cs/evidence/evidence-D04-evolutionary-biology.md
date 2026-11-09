@@ -10,23 +10,23 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D04-evolu
 
 # 進化生物学：論ごとの照合の記録
 
-この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。生物学の記述が教科書の記述か、研究の一線か、Claude の読み替えかの仕分けは、Claude が引き受けます（`docs/rules/sources.md` §1-4・§6）。
+この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。生物学の記述が教科書の記述か、研究の一線か、Claude の読み替えかの仕分けは、Claude が引き受けます（調べ方の規約 §1-4・§6）。
 
 進化生物学の原典は、競り合いと、そこで消えるものを、論の中心に書いていました。Darwin（1859）は、生まれる数が養える数を上回るので生存闘争が必ず起き、それは同じ種の個体の間で最も厳しく、有利な形が増えると不利な形は減って絶滅すると書いています。Van Valen（1973）は、一つの種の成功がほかの種の損失になり、どの種も勝てず、新しい相手が敗者に入れ替わる、と書いています。Eldredge と Gould（1972）は、種は自分を保つ仕組みで安定していて、種分化は周辺の小さな隔離集団でだけ起きる「まれで難しい」出来事だと書いています。雑種帯の総説（Moran ら 2021）は、交雑のあとに入った外来の遺伝子の多くが選択で除かれると書いています。原典は、選択で消える変異・漂う変異・停滞・絶滅・除かれる雑種・閾値に届かない形を、過程の中に書いていました。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D04-evolutionary-biology.md`、2026-03-18 に LLM が生成、以下「報告」）は、10 の論を取り上げ、日本語版では 9 を「強い対応」、1 を「部分的な対応」としています。報告は、消える側（絶滅・淘汰・雑種の除去）をほとんど書かず、新しいものが立ち上がる側だけを五つの段に当てています。内共生は「細胞膜の融合」「境界の消失」と書いていますが、原典は取り込みと、取り込まれた側が自分の遺伝子を持ち続けることを書いています。この記録は、報告の 10 の論を一次情報で確かめ直したものです。論の数は変えていません。同じ論の中の確かめ先として、Fisher（1930）・Kimura（1991）・Ohta（2002）、Laland ら（1999・2016）、West-Eberhard（2005）、Moran ら（2021）、Schluter（1996）・Harmon ら（2010）、Goldenfeld と Woese（2007）を足しました。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留し、対立・衝突・統合の形で書いています。
+今の公開報告（「30 領域調査報告」の進化生物学の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、10 の論を取り上げ、日本語版では 9 を「強い対応」、1 を「部分的な対応」としています。報告は、消える側（絶滅・淘汰・雑種の除去）をほとんど書かず、新しいものが立ち上がる側だけを五つの段に当てています。内共生は「細胞膜の融合」「境界の消失」と書いていますが、原典は取り込みと、取り込まれた側が自分の遺伝子を持ち続けることを書いています。この記録は、報告の 10 の論を一次情報で確かめ直したものです。論の数は変えていません。同じ論の中の確かめ先として、Fisher（1930）・Kimura（1991）・Ohta（2002）、Laland ら（1999・2016）、West-Eberhard（2005）、Moran ら（2021）、Schluter（1996）・Harmon ら（2010）、Goldenfeld と Woese（2007）を足しました。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留し、対立・衝突・統合の形で書いています。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D04-evolutionary-biology.md) にあります。退避版の判定（Accept・縁フラグ・確信度）は、この記録の照合の状態の根拠にしていません。
 
 ## 読み方
 
-- 照合の状態は `docs/rules/sources.md` §3 の四つで書きます。著者自身の後の総説で読んだものは「著者のまとめ直し」と書き、原論文は未照合とします。
+- 照合の状態は調べ方の規約 §3 の四つで書きます。著者自身の後の総説で読んだものは「著者のまとめ直し」と書き、原論文は未照合とします。
 - 今の報告への判定は、一致・言い過ぎ・取り違え・帰属違い・付け足し・抜け・未判定で書きます。「抜け」は、原典にある衝突や至らない形を報告が落としていることです。
-- 「ja 100 行」は日本語版の行、「en」は英語版（`en/md/domain-D04-evolutionary-biology.md`）、「pres」はプレゼン版（`ja/presentations/md/domain-D04-evolutionary-biology-presentation-ja.md`）、「退避版」は上の History のファイルを指します。
+- 「ja 100 行」は日本語版の行、「en」は英語版（「30 領域調査報告」の進化生物学の英語版）、「pres」はプレゼン版（「30 領域調査報告」の進化生物学のプレゼン版）、「退避版」は上の History のファイルを指します。
 - 生物学の主張には、教科書（分野で確立した記述）・研究の一線（争いがある、または一つの研究が示した）・Claude の読み替え（5段階の問いに当てた解釈）のどれかを添えます。進化生物学は争いの多い分野なので、研究の一線と書く所が多くなっています。
 - PMC と eLife の全文は HTML か JSON で読んだので、頁が無く、節の名前で控えています。
-- 選択の論は、臨床医学（D10）のクローン選択説・がん免疫編集と同じ形を持ちます。[臨床医学の記録](evidence-D10-clinical-medicine.md)の 1・2 で本文照合済の所は読み直していません。生命の起源の手前の化学（自己触媒集合・化学進化）は、[複雑系科学の記録](evidence-D29-complexity-science.md)の 3 と[化学の記録](evidence-D03-chemistry.md)の 10 を参照しています。
-- 語が同じこと（「縁」と雑種帯の境、「束」と系統の束など）は、対応の根拠にも反証にも数えません（`docs/cs-review/README.md`「規約で決めたこと」）。
+- 選択の論は、臨床医学（臨床医学・免疫）のクローン選択説・がん免疫編集と同じ形を持ちます。[臨床医学の記録](evidence-D10-clinical-medicine.md)の 1・2 で本文照合済の所は読み直していません。生命の起源の手前の化学（自己触媒集合・化学進化）は、[複雑系科学の記録](evidence-D29-complexity-science.md)の 3 と[化学の記録](evidence-D03-chemistry.md)の 10 を参照しています。
+- 語が同じこと（「縁」と雑種帯の境、「束」と系統の束など）は、対応の根拠にも反証にも数えません（調べ方の計画と規約「規約で決めたこと」）。
 
 ## 一面の表
 
@@ -55,8 +55,8 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Darwin, C. (1859). *On the Origin of Species by Means of Natural Selection*. London: John Murray. 台帳 D04-S01。手元の PDF は Internet Archive が Harvard 大学の初版を撮った写し（onoriginofspecie1859darw）で、表紙は 1859 年の初版と合います。パブリックドメイン。頁は初版の頁です。読んだ頁：p.63（生まれる数が多いので生存闘争が必ず続く。同じ種の個体と、ほかの種の個体と、物理の条件との闘争）、p.75（闘争は同じ種の個体の間で最も厳しい）、p.81（有利な変異の保存と有害な変異の排除を自然選択と呼ぶ。有利でも有害でもない変異は自然選択の影響を受けず、揺らぐ要素として残る）、pp.109–110（選ばれた形が増えると、不利な形は減ってまれになり、まれは絶滅の前ぶれ）、p.111（形質の分岐）、pp.320–321（新しい形の出現と古い形の消失は結びついている。競争は最も似た形の間で最も厳しい）。
-- Fisher, R. A. (1930). *The Genetical Theory of Natural Selection*. Oxford: Clarendon Press. 台帳 D04-S13。https://archive.org/details/geneticaltheoryo031631mbp （インドの大学図書館の蔵書を撮った写し。表紙は 1930 年の Clarendon Press）。1930 年の刊で、米国ではパブリックドメインです。Internet Archive の OCR の文字で読みました。読んだ頁：p.35（ある時点での適応度の増える速さは、その時点の適応度の遺伝分散に等しい、という基本定理）、pp.41–42（大きな突然変異はほぼ有害で、除かれる速さと生まれる速さが釣り合う。物理の環境は大半の生物にとってたえず悪くなり、選択による改善がその損失を埋め合わせる）。
+- Darwin, C. (1859). *On the Origin of Species by Means of Natural Selection*. London: John Murray. 台帳に行がある。手元の PDF は Internet Archive が Harvard 大学の初版を撮った写し（onoriginofspecie1859darw）で、表紙は 1859 年の初版と合います。パブリックドメイン。頁は初版の頁です。読んだ頁：p.63（生まれる数が多いので生存闘争が必ず続く。同じ種の個体と、ほかの種の個体と、物理の条件との闘争）、p.75（闘争は同じ種の個体の間で最も厳しい）、p.81（有利な変異の保存と有害な変異の排除を自然選択と呼ぶ。有利でも有害でもない変異は自然選択の影響を受けず、揺らぐ要素として残る）、pp.109–110（選ばれた形が増えると、不利な形は減ってまれになり、まれは絶滅の前ぶれ）、p.111（形質の分岐）、pp.320–321（新しい形の出現と古い形の消失は結びついている。競争は最も似た形の間で最も厳しい）。
+- Fisher, R. A. (1930). *The Genetical Theory of Natural Selection*. Oxford: Clarendon Press. 台帳に行がある。https://archive.org/details/geneticaltheoryo031631mbp （インドの大学図書館の蔵書を撮った写し。表紙は 1930 年の Clarendon Press）。1930 年の刊で、米国ではパブリックドメインです。Internet Archive の OCR の文字で読みました。読んだ頁：p.35（ある時点での適応度の増える速さは、その時点の適応度の遺伝分散に等しい、という基本定理）、pp.41–42（大きな突然変異はほぼ有害で、除かれる速さと生まれる速さが釣り合う。物理の環境は大半の生物にとってたえず悪くなり、選択による改善がその損失を埋め合わせる）。
 - Kimura, M. (1991). The neutral theory of molecular evolution: A review of recent evidence. *Jpn. J. Genet.* 66, 367–386. DOI: [10.1266/jjg.66.367](https://doi.org/10.1266/jjg.66.367)（Crossref で確かめました）。J-STAGE の PDF（https://www.jstage.jst.go.jp/article/jjg/66/4/66_4_367/_pdf ）。先頭は %PDF で、文字の層が無いので頁を画像にして読みました。頁は誌面の頁です。読んだ頁：p.367（要旨。分子の進化の変化の圧倒的多数は、選択的に中立な変異の偶然の固定による。種の中の変異は、突然変異の入力と偶然の消失の釣り合いで保たれる。新ダーウィン主義者は批判を続けている）、p.369（中立説は出された当時から厳しい批判の的だった）、p.370（中立説は適応の進化での正の選択の役を否定しない）。著者のまとめ直しです。
 - Kimura, M. (1968). Evolutionary Rate at the Molecular Level. *Nature* 217, 624–626. DOI: [10.1038/217624a0](https://doi.org/10.1038/217624a0)（Crossref で確かめました）。有料で、読んでいません。
 - Ohta, T. (2002). Near-neutrality in evolution of genes and gene regulation. *PNAS* 99(25), 16134–16137. DOI: [10.1073/pnas.252626899](https://doi.org/10.1073/pnas.252626899)（Crossref で確かめました）。PMC138577 の HTML で読みました（PDF は自動取得の確認画面）。節：Synonymous vs. Nonsynonymous Substitutions（ほぼ中立の変異は、行方が選択と浮動の両方で決まるものと定める。Ns の絶対値は小さく、たとえば 2 より大きくない）、Three Levels of Weak Selection（遺伝子重複のあとの調節配列の変化は、初めは浮動で増えたり減ったりする）。著者のまとめ直しです。
@@ -72,7 +72,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 |---|---|---|---|
 | ja 100 行「木村の中立説（1968年）は、多くの分子変化…は中立的な遺伝的浮動で固定しうることを示しました」 | 一致 | ― | Kimura 1991 p.367・p.370（著者のまとめ直し）。1968 年の原論文は未照合 |
 | ja 100 行「太田のほぼ中立説（1973年; 1992年）は…N_e s の絶対値が1以下の弱い変異は…」 | 言い過ぎ | 低 | Ohta 2002 は「たとえば 2 より大きくない」と書く。1 以下と決めた文は読んだ原典に無い。1973・1992 年の原論文は未照合 |
-| ja 102 行「棄却されなかった変異が後に創造の素材となる」、en 53 行「The core claim of error-driven thinking is that errors headed for rejection can be taken up and retained as questions」、en 141 行 | 付け足し | 中 | 欠損駆動思考と抱持の旧い語（棄却される誤差・保持）を報告に持ち込んでいる。旧い規則でも、報告に欠損駆動思考・抱持を持ち込まないと決めている（`docs/cs-review/README.md`「規約で決めたこと」） |
+| ja 102 行「棄却されなかった変異が後に創造の素材となる」、en 53 行「The core claim of error-driven thinking is that errors headed for rejection can be taken up and retained as questions」、en 141 行 | 付け足し | 中 | 欠損駆動思考と抱持の旧い語（棄却される誤差・保持）を報告に持ち込んでいる。旧い規則でも、報告に欠損駆動思考・抱持を持ち込まないと決めている（調べ方の計画と規約「規約で決めたこと」） |
 | ja 100〜104 行（生存闘争・絶滅・競争の厳しさに触れない） | 抜け | 中 | Darwin pp.63・75・109–110・320–321。原典の芯は、闘争と、不利な形の絶滅。報告は「変異→選択→固定」の残る側だけを書く |
 | ja 104 行（多様性のプールを場、適応度差を波…に当てる） | 未判定 | ― | 定義が決まってから。報告自身が「総論的」と書く |
 | ja 77 行「部分的な対応」、en 41 行「confirmed in all ten cases」、pres 45 行「確定に近い」 | 未判定（版の食い違い） | 中 | 版ごとに判定の名と位置が違う（下の「版の間の食い違い」） |
@@ -83,7 +83,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Eldredge, N. & Gould, S. J. (1972). Punctuated equilibria: an alternative to phyletic gradualism. In T. J. M. Schopf (ed.), *Models in Paleobiology*, pp. 82–115. San Francisco: Freeman, Cooper. 台帳 D04-S02。DOI はありません。
+- Eldredge, N. & Gould, S. J. (1972). Punctuated equilibria: an alternative to phyletic gradualism. In T. J. M. Schopf (ed.), *Models in Paleobiology*, pp. 82–115. San Francisco: Freeman, Cooper. 台帳に行がある。DOI はありません。
   - 手元の PDF は、Blackwell Publishing が Ridley の教科書 *Evolution* のサイトの「Classic Texts」に置いていた PDF と、バイト単位で一致しました。そのサイトは今は無く、Internet Archive の Wayback Machine に 2006 年の記録があります（http://web.archive.org/web/2006/http://www.blackwellpublishing.com/ridley/classictexts/eldredge.pdf 。案内の頁は http://web.archive.org/web/20040812214033/http://www.blackwellpublishing.com:80/ridley/classictexts/eldredge.asp ）。誌面を撮った写しで、出版社の教科書のサイトに置かれていたものです。権利は確かめていません。
   - 台帳の取得先の Internet Archive の資料 B-001-004-118 は、個人（patron library collection）が 2017 年に上げた同じ写しです。
   - PDF は画像だけなので、Internet Archive の同じ資料の OCR の文字（eldredge_djvu.txt）で読みました。頁は誌面の頁です（各頁の下の番号で確かめました）。
@@ -111,7 +111,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Odling-Smee, F. J., Laland, K. N. & Feldman, M. W. (2003). *Niche Construction: The Neglected Process in Evolution*. Princeton UP. 台帳 D04-S03（書籍。OA 版なし）。読んでいません。
+- Odling-Smee, F. J., Laland, K. N. & Feldman, M. W. (2003). *Niche Construction: The Neglected Process in Evolution*. Princeton UP. 台帳に行がある（書籍。OA 版なし）。読んでいません。
 - Laland, K. N., Odling-Smee, F. J. & Feldman, M. W. (1999). Evolutionary consequences of niche construction and their implications for ecology. *PNAS* 96(18), 10242–10247. DOI: [10.1073/pnas.96.18.10242](https://doi.org/10.1073/pnas.96.18.10242)（Crossref で確かめました）。PMC17873 の HTML で読みました。節：Abstract、THE MODEL（正の構築と負の構築、資源の独立の回復と減少）、RESULTS、DISCUSSION（構築の効果は外の選択を覆し、新しい進化の軌道と平衡を作り、多型を生んだり消したりし、選択への応答を遅らせる。構築が生む選択は外の選択に逆らうことが多く、ほかでは有害な対立遺伝子を固定させ、期待されない多型を保つ。これは正の構築にも負の構築にも当てはまる）。
 - Laland, K., Matthews, B. & Feldman, M. W. (2016). An introduction to niche construction theory. *Evol. Ecol.* 30, 191–202. DOI: [10.1007/s10682-016-9821-z](https://doi.org/10.1007/s10682-016-9821-z)（Crossref で確かめました）。PMC4922671 の HTML で読みました。節：Introduction（Odling-Smee が 1988 年に語を作った）、The niche-construction perspective（ニッチ構築が起きることは争われていないが、その見方には今も争いがある。どこまで進化の理論を変える必要があるかで研究者の意見が分かれる。Laland ら 2014 と Wray ら 2014 を比べよ、と書く）。
 
@@ -135,7 +135,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Laland, K. N., Uller, T., Feldman, M. W., Sterelny, K., Müller, G. B., Moczek, A., Jablonka, E. & Odling-Smee, J. (2015). The extended evolutionary synthesis: its structure, assumptions and predictions. *Proc. R. Soc. B* 282, 20151019. DOI: [10.1098/rspb.2015.1019](https://doi.org/10.1098/rspb.2015.1019)（Crossref で確かめました）。台帳 D04-S04。PMC4632619 の HTML で読みました（Royal Society と PMC の PDF は確かめていません）。節：1. Introduction（四つの分野の所見には少なくとも二つの読みがあり、解釈の「断層」をなす）、Table 2（二つの読み）、4(b) Reciprocal causation、4(c) The structure of the extended evolutionary synthesis（最も目立ち争いのある違いは、自然選択と、生まれる変異のどちらが進化の向きと速さを決めるかで、進化生物学で最も古い論争の一つ）、6（EES はいつもどおりの延長以上で、概念の変更が要る。見方が複数あることは健全で、EES を標準の見方と並べて使う）。
+- Laland, K. N., Uller, T., Feldman, M. W., Sterelny, K., Müller, G. B., Moczek, A., Jablonka, E. & Odling-Smee, J. (2015). The extended evolutionary synthesis: its structure, assumptions and predictions. *Proc. R. Soc. B* 282, 20151019. DOI: [10.1098/rspb.2015.1019](https://doi.org/10.1098/rspb.2015.1019)（Crossref で確かめました）。台帳に行がある。PMC4632619 の HTML で読みました（Royal Society と PMC の PDF は確かめていません）。節：1. Introduction（四つの分野の所見には少なくとも二つの読みがあり、解釈の「断層」をなす）、Table 2（二つの読み）、4(b) Reciprocal causation、4(c) The structure of the extended evolutionary synthesis（最も目立ち争いのある違いは、自然選択と、生まれる変異のどちらが進化の向きと速さを決めるかで、進化生物学で最も古い論争の一つ）、6（EES はいつもどおりの延長以上で、概念の変更が要る。見方が複数あることは健全で、EES を標準の見方と並べて使う）。
 - Wray, G. A. ら (2014). 「Does evolutionary theory need a rethink? No, all is well」。Laland ら (2014) と同じ記事 *Nature* 514, 161–164. DOI: [10.1038/514161a](https://doi.org/10.1038/514161a)（Crossref で確かめました）。有料で、読んでいません。
 
 **照合の状態**：Laland ら 2015 は本文照合済（PMC の節）。Wray ら 2014 は未照合です。
@@ -158,7 +158,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Waddington, C. H. (1953). Genetic assimilation of an acquired character. *Evolution* 7(2), 118–126. DOI: [10.1111/j.1558-5646.1953.tb00070.x](https://doi.org/10.1111/j.1558-5646.1953.tb00070.x)（Crossref で確かめました）。台帳 D04-S05。手元の PDF は Zenodo の記録 10772157（DOI 10.5281/zenodo.10772157、CC BY 4.0 と表示）で、生物多様性の文献を集める共同体（biosyslit・taxodros）の利用者が上げたものです。上げた人は著者でも出版社でもないので、上げた人と権利は未確認として扱います。表紙は題・著者・誌名と合います。頁は誌面の頁です。読んだ頁：p.118（熱ショックで翅の横脈が欠ける形が現れる。それが自然の中で適応の価値を持つと考える理由は無いが、選択で遺伝的に同化されるかを見る。選ぶ線と選ばない線を立てた）、p.120（上向きの線で、処理しない蛹からは 14 世代まで横脈の欠けは現れず、14 世代でわずかに現れ、16 世代で 1〜2% になった）、p.122（元の系統では、関わる遺伝子が閾値を越えるほどの濃さで揃うことは無い）、p.124、p.125（発生の運河化は選択で生じる。選択は形の頻度を上げるだけでなく、その発生を安定させ、環境が元に戻っても形が現れるほどに運河化しうる。これを遺伝的同化と呼ぶ。外れたものを除くだけの選択とは分けて書く。上向きと下向きの両方に速く進んだ）、p.126（同化された形の遺伝の基盤は多くの遺伝子による）。
+- Waddington, C. H. (1953). Genetic assimilation of an acquired character. *Evolution* 7(2), 118–126. DOI: [10.1111/j.1558-5646.1953.tb00070.x](https://doi.org/10.1111/j.1558-5646.1953.tb00070.x)（Crossref で確かめました）。台帳に行がある。手元の PDF は Zenodo の記録 10772157（DOI 10.5281/zenodo.10772157、CC BY 4.0 と表示）で、生物多様性の文献を集める共同体（biosyslit・taxodros）の利用者が上げたものです。上げた人は著者でも出版社でもないので、上げた人と権利は未確認として扱います。表紙は題・著者・誌名と合います。頁は誌面の頁です。読んだ頁：p.118（熱ショックで翅の横脈が欠ける形が現れる。それが自然の中で適応の価値を持つと考える理由は無いが、選択で遺伝的に同化されるかを見る。選ぶ線と選ばない線を立てた）、p.120（上向きの線で、処理しない蛹からは 14 世代まで横脈の欠けは現れず、14 世代でわずかに現れ、16 世代で 1〜2% になった）、p.122（元の系統では、関わる遺伝子が閾値を越えるほどの濃さで揃うことは無い）、p.124、p.125（発生の運河化は選択で生じる。選択は形の頻度を上げるだけでなく、その発生を安定させ、環境が元に戻っても形が現れるほどに運河化しうる。これを遺伝的同化と呼ぶ。外れたものを除くだけの選択とは分けて書く。上向きと下向きの両方に速く進んだ）、p.126（同化された形の遺伝の基盤は多くの遺伝子による）。
 - West-Eberhard, M. J. (2005). Developmental plasticity and the origin of species differences. *PNAS* 102(suppl. 1), 6543–6549. DOI: [10.1073/pnas.0501844102](https://doi.org/10.1073/pnas.0501844102)（Crossref で確かめました）。PMC1131862 の HTML で読みました（PDF は自動取得の確認画面）。節：The Origin of Divergence: Sequence of Events（新しい入力が表現型の組み替えを起こし、遺伝的な成分があれば選択が遺伝的収容に至る）、Genetic Accommodation（調節の感度は上にも下にも動く。新しい形が選ばれれば、収容はその形を出す閾値を下げ、遺伝的同化や固定が起きうる。形が逆に選ばれれば、閾値を上げる。遺伝子は適応の進化で先導者でなく追従者だ、と書く）、Evolutionary Potential of Environmentally Induced Change。著者のまとめ直しです。
 - West-Eberhard (2003) *Developmental Plasticity and Evolution* は書籍で、読んでいません。Waddington (1942) *Nature* 150, 563 は有料で、読んでいません。
 
@@ -172,7 +172,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 |---|---|---|---|
 | ja 132 行「遺伝的同化（Waddington, 1953年）は、環境誘導形質が選択で安定化する現象です。遺伝的収容はこのより広い概念です」、pres 71 行「West-Eberhard（2003年）が体系化し、Waddingtonの遺伝的同化実験（1953年）がその先駆」 | 一致 | ― | Waddington p.125、West-Eberhard 2005 Genetic Accommodation。年と主張を分けて書けている |
 | pres 72 行「熱ショックで誘導した表現型が、選択を繰り返すことで熱ショックなしでも発現するようになりました」 | 一致 | ― | Waddington pp.120・125 |
-| ja 132 行・136 行・197 行「deep homology…（Pax6, Hoxなど）」 | 付け足し | 中 | Waddington にも West-Eberhard 2005 にも無い。退避版 178 行の [P] と DR-D04 75 行（Nature 論文と書くが出典は辿れない）から来た。「場の深層」（ja 197 行）は読み替え |
+| ja 132 行・136 行・197 行「deep homology…（Pax6, Hoxなど）」 | 付け足し | 中 | Waddington にも West-Eberhard 2005 にも無い。退避版 178 行の [P] と2026-02 の DR 75 行（Nature 論文と書くが出典は辿れない）から来た。「場の深層」（ja 197 行）は読み替え |
 | ja 134〜136 行（閾値を、新しい形が出る向きだけで書く） | 抜け | 中 | Waddington p.122（閾値を越えない元の系統）・p.125（下向きの選択）、West-Eberhard 2005（逆に選ばれる形は閾値が上がる） |
 | ja 136 行「G×Eは縁の条件――関係網…未決定性…渦への接続――を構造的に満たしています」 | 付け足し | 中 | 「縁の3条件」は退避版の縁フラグ（256・290 行など）の体系で、原典に無い |
 | ja 81 行「強い対応」、pres 45 行「確定に近い」 | 未判定（版の食い違い） | 中 | 下の「版の間の食い違い」 |
@@ -183,7 +183,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Van Valen, L. (1973). A new evolutionary law. *Evolutionary Theory* 1, 1–30. 台帳 D04-S06。https://www.mn.uio.no/cees/english/services/van-valen/evolutionary-theory/volume-1/vol-1-no-1-pages-1-30-l-van-valen-a-new-evolutionary-law.pdf （Oslo 大学の生態と進化の研究所 CEES が、誌の巻を置いている頁）。PDF の先頭は %PDF で、1 頁目は題・著者と合います。誌は著者自身が出していたもので、DOI はありません。頁は誌の頁です。読んだ頁：p.1（要旨。データのあるどの群も、群ごとに一定の率で絶滅する。生態の形で言えば、どの群にとっても実際の環境は確率的に一定の率で悪くなる。説明は、適応帯の中の両立しない最適と、ゼロ和のゲーム）、p.17（赤の女王の仮説。被食者・宿主は食べられ寄生される確率を下げ、捕食者・寄生者は捕まえる率を上げ、資源の競争者は互いの効果を変えることが選択で有利になる。一つの種の成功が他の種の損失を生み、損失を取り戻す応答がまた損失を生み、これは限りなく続きうる。悪化が大きすぎる種は、新しい種に置き換わる）、p.19（資源の量は決まっていて、一つの山が減ればほかが増える）、p.20（赤の女王は進化の進歩を否定しない）、p.21（相利は、同じ栄養の段では、負のやりとりに比べて進化で重要でない。地衣類やたぶん葉緑体のように一つの単位になる場合は別。各種はほかの種とのゼロ和のゲームの一部で、どの種も勝てず、新しい相手が敗者に入れ替わる。巨大な規模での動的な釣り合い）。
+- Van Valen, L. (1973). A new evolutionary law. *Evolutionary Theory* 1, 1–30. 台帳に行がある。https://www.mn.uio.no/cees/english/services/van-valen/evolutionary-theory/volume-1/vol-1-no-1-pages-1-30-l-van-valen-a-new-evolutionary-law.pdf （Oslo 大学の生態と進化の研究所 CEES が、誌の巻を置いている頁）。PDF の先頭は %PDF で、1 頁目は題・著者と合います。誌は著者自身が出していたもので、DOI はありません。頁は誌の頁です。読んだ頁：p.1（要旨。データのあるどの群も、群ごとに一定の率で絶滅する。生態の形で言えば、どの群にとっても実際の環境は確率的に一定の率で悪くなる。説明は、適応帯の中の両立しない最適と、ゼロ和のゲーム）、p.17（赤の女王の仮説。被食者・宿主は食べられ寄生される確率を下げ、捕食者・寄生者は捕まえる率を上げ、資源の競争者は互いの効果を変えることが選択で有利になる。一つの種の成功が他の種の損失を生み、損失を取り戻す応答がまた損失を生み、これは限りなく続きうる。悪化が大きすぎる種は、新しい種に置き換わる）、p.19（資源の量は決まっていて、一つの山が減ればほかが増える）、p.20（赤の女王は進化の進歩を否定しない）、p.21（相利は、同じ栄養の段では、負のやりとりに比べて進化で重要でない。地衣類やたぶん葉緑体のように一つの単位になる場合は別。各種はほかの種とのゼロ和のゲームの一部で、どの種も勝てず、新しい相手が敗者に入れ替わる。巨大な規模での動的な釣り合い）。
 - Ehrlich, P. R. & Raven, P. H. (1964). Butterflies and Plants: A Study in Coevolution. *Evolution* 18(4), 586–608. DOI: [10.2307/2406212](https://doi.org/10.2307/2406212)（Crossref で確かめました）。有料で、読んでいません。
 
 **照合の状態**：Van Valen 1973 は本文照合済（大学の研究所の頁の写し。pp.1・17・19–21）。Ehrlich & Raven 1964 は未照合です。
@@ -207,9 +207,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Barton, N. H. & Hewitt, G. M. (1985). Analysis of Hybrid Zones. *Annu. Rev. Ecol. Syst.* 16, 113–148. DOI: [10.1146/annurev.es.16.110185.000553](https://doi.org/10.1146/annurev.es.16.110185.000553)（Crossref で確かめました）。台帳 D04-S07（blocked-access）。有料で、読んでいません。
+- Barton, N. H. & Hewitt, G. M. (1985). Analysis of Hybrid Zones. *Annu. Rev. Ecol. Syst.* 16, 113–148. DOI: [10.1146/annurev.es.16.110185.000553](https://doi.org/10.1146/annurev.es.16.110185.000553)（Crossref で確かめました）。台帳に行がある（自動では取れない）。有料で、読んでいません。
 - Barton, N. H. & Hewitt, G. M. (1989). Adaptation, speciation and hybrid zones. *Nature* 341, 497–503. DOI: [10.1038/341497a0](https://doi.org/10.1038/341497a0)（Crossref で確かめました）。有料で、読んでいません。
-- Moran, B. M., Payne, C., Langdon, Q. ら (2021). The genomic consequences of hybridization. *eLife* 10, e69016. DOI: [10.7554/eLife.69016](https://doi.org/10.7554/eLife.69016)（Crossref で確かめました）。台帳 D04-S07 の注にある OA の代わり。CC BY。eLife の頁は自動取得で 406 を返したので、eLife の公開 API（https://api.elifesciences.org/articles/69016 ）の JSON で本文を読みました。節：Models of hybridization and introgression（張力帯の理論の伝統）、Principle 1（交雑のあと、外来の祖先が有害なら、初めの数十世代で速く、のちにゆっくり除かれ、ゲノムが安定する）、Ecological selection（雑種は両親の中間の形や合わない形を持つと、生態の選択で不利になる）、Box 2（両親の外の形質はよく出る。F1 の形質の 2 割ほどという研究もある。一般には選択で除かれると見込まれるが、新しい環境では両親の形より合うこともある）、Effects of hybrid demography（張力帯の理論では、接する所の分散と密度が交雑の行き先を左右する。Barton & Hewitt 1989 を引く）、Glossary の Tension zone（親の集団からの分散と、雑種に向かう強い選択の釣り合いで、雑種が狭い地域に見られる安定した帯）。
+- Moran, B. M., Payne, C., Langdon, Q. ら (2021). The genomic consequences of hybridization. *eLife* 10, e69016. DOI: [10.7554/eLife.69016](https://doi.org/10.7554/eLife.69016)（Crossref で確かめました）。台帳の「Barton & Hewitt 1985」の行の注にある OA の代わり。CC BY。eLife の頁は自動取得で 406 を返したので、eLife の公開 API（https://api.elifesciences.org/articles/69016 ）の JSON で本文を読みました。節：Models of hybridization and introgression（張力帯の理論の伝統）、Principle 1（交雑のあと、外来の祖先が有害なら、初めの数十世代で速く、のちにゆっくり除かれ、ゲノムが安定する）、Ecological selection（雑種は両親の中間の形や合わない形を持つと、生態の選択で不利になる）、Box 2（両親の外の形質はよく出る。F1 の形質の 2 割ほどという研究もある。一般には選択で除かれると見込まれるが、新しい環境では両親の形より合うこともある）、Effects of hybrid demography（張力帯の理論では、接する所の分散と密度が交雑の行き先を左右する。Barton & Hewitt 1989 を引く）、Glossary の Tension zone（親の集団からの分散と、雑種に向かう強い選択の釣り合いで、雑種が狭い地域に見られる安定した帯）。
 - Harrison & Larson (2014) *J. Hered.* 105, 795（DOI 10.1093/jhered/esu033）は、Oxford の頁が自動取得の確認画面を返し、読んでいません（下の表）。
 
 **照合の状態**：Moran ら 2021 は本文照合済（節の名前で控えた）。Barton & Hewitt 1985・1989 は未照合です。
@@ -233,9 +233,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Sagan, L. (1967). On the origin of mitosing cells. *J. Theor. Biol.* 14(3), 225–274. DOI: [10.1016/0022-5193(67)90079-3](https://doi.org/10.1016/0022-5193(67)90079-3)（Crossref で確かめました）。台帳 D04-S08。手元の PDF は誌面の写しで、1 頁目は題・著者・誌名・受付日（1966 年 6 月 8 日）と合います。台帳の取得先は Internet Archive の資料 ontheoriginofmitosingcellslynnsaganorlynnmargulis で、個人が上げた写し（fringe の集め）です。上げた人と権利は未確認です。PDF の頁と誌面の頁は図の頁がはさまるのでずれます。頁は誌面の頁で書きます。読んだ頁：p.225（要旨。三つの細胞小器官はかつて自由に生きた原核生物だった、という仮説）、p.228（光合成で出た酸素が危機を起こした。細胞は酸素に適応するか、限られた嫌気の環境で生きるかになった。好気の原核生物が嫌気の従属栄養の細胞の細胞質に取り込まれ、この共生は義務的になった。のちに運動性の原核生物を取り込み、共生した）、p.229（大きな細胞は小さな原核生物をいろいろ取り込んだ。その中で運動性の寄生者を取り込んだと仮定する）、p.247（取り込まれた光合成の原核生物は、自分の選択の利益のために宿主に留まり、義務的な共生の色素体になった）、p.254（共生体は自由に生きる細胞から始まったので、自分のタンパク質合成の仕組みで自分の DNA を複製できたはず）。
+- Sagan, L. (1967). On the origin of mitosing cells. *J. Theor. Biol.* 14(3), 225–274. DOI: [10.1016/0022-5193(67)90079-3](https://doi.org/10.1016/0022-5193(67)90079-3)（Crossref で確かめました）。台帳に行がある。手元の PDF は誌面の写しで、1 頁目は題・著者・誌名・受付日（1966 年 6 月 8 日）と合います。台帳の取得先は Internet Archive の資料 ontheoriginofmitosingcellslynnsaganorlynnmargulis で、個人が上げた写し（fringe の集め）です。上げた人と権利は未確認です。PDF の頁と誌面の頁は図の頁がはさまるのでずれます。頁は誌面の頁で書きます。読んだ頁：p.225（要旨。三つの細胞小器官はかつて自由に生きた原核生物だった、という仮説）、p.228（光合成で出た酸素が危機を起こした。細胞は酸素に適応するか、限られた嫌気の環境で生きるかになった。好気の原核生物が嫌気の従属栄養の細胞の細胞質に取り込まれ、この共生は義務的になった。のちに運動性の原核生物を取り込み、共生した）、p.229（大きな細胞は小さな原核生物をいろいろ取り込んだ。その中で運動性の寄生者を取り込んだと仮定する）、p.247（取り込まれた光合成の原核生物は、自分の選択の利益のために宿主に留まり、義務的な共生の色素体になった）、p.254（共生体は自由に生きる細胞から始まったので、自分のタンパク質合成の仕組みで自分の DNA を複製できたはず）。
 - Margulis, L. (1970) *Origin of Eukaryotic Cells* は書籍で、読んでいません。
-- Lane & Martin (2012) *Cell* 151, 1406–1416（台帳 D04-S15、DOI 10.1016/j.cell.2012.11.050）は、cell.com が自動取得の確認画面を返し、読んでいません。題（膜の生体エネルギーの起源）から見て、内共生そのものより生命の起源の論で、内共生の確かめ先にはならない見込みです（未照合）。
+- Lane & Martin (2012) *Cell* 151, 1406–1416（台帳に行がある、DOI 10.1016/j.cell.2012.11.050）は、cell.com が自動取得の確認画面を返し、読んでいません。題（膜の生体エネルギーの起源）から見て、内共生そのものより生命の起源の論で、内共生の確かめ先にはならない見込みです（未照合）。
 
 **照合の状態**：Sagan 1967 は未照合（上げた人と権利が未確認の写しで pp.225・228–229・247・254 を読んだ）。
 
@@ -246,7 +246,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | 今の報告の行 | 判定 | 重さ | 中身 |
 |---|---|---|---|
 | ja 156 行「細胞膜の融合を通じて」、ja 158 行「二つの個体の境界が融合し、以前の区別が消える」、ja 190 行「境界（細胞膜）の消失が新しい階層の創発」、pres 85 行、en 69 行 | 取り違え | 高 | 原典は取り込み（ingestion）を書き（pp.228–229）、共生体は自分の DNA を複製し続ける（p.254）。膜が融合して区別が消えるとは書いていない。退避版 283 行の [M] から来た |
-| ja 160 行・en 69 行「取り込みが共生になるか消化になるかの分岐」 | 付け足し | 中 | 写しで読んだ範囲に無い。退避版 304 行の [学び] から来た。`docs/cs-review/README.md`「中心の問い」が分かれ道の例に挙げているので、そこも直す |
+| ja 160 行・en 69 行「取り込みが共生になるか消化になるかの分岐」 | 付け足し | 中 | 写しで読んだ範囲に無い。退避版 304 行の [学び] から来た。調べ方の計画と規約「中心の問い」が分かれ道の例に挙げているので、そこも直す |
 | ja 84 行・154 行「Margulis (1967)」 | 帰属違い | 低 | 書誌は Sagan, L. (1967)。en 67 行は「publishing as Lynn Sagan」と書けている |
 | ja 156 行「この起源はDNA証拠で確立されています」 | 言い過ぎ | 中 | ミトコンドリアと葉緑体は教科書の記述。1967 年の論文の三つ目の柱（鞭毛の基部体）は確立していない（記憶。未照合）。論文全体が確立したように読める |
 | en 67 行「the manuscript was reportedly rejected by more than a dozen journals」 | 未判定 | 低 | 出典が示されず、確かめていない |
@@ -259,9 +259,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Woese, C. R. (2002). On the evolution of cells. *PNAS* 99(13), 8742–8747. DOI: [10.1073/pnas.132266999](https://doi.org/10.1073/pnas.132266999)（Crossref で確かめました）。台帳 D04-S09。台帳の取得先（Europe PMC の PDF）は自動取得の確認画面を返したので、PMC124369 の HTML で読みました。節：Abstract（原始の細胞の進化は基本的に共同体的。新しさは系統の中の変異でなく、水平の移動の場の共同の発明。設計が複雑になると臨界点に達する）、The Darwinian Threshold（部品が緩くつながっていれば系譜の記録は一時的。複雑になるにつれ水平の取得を受けつけなくなる。この移り変わりをダーウィン閾と呼ぶ。これを越えて初めて種分化ができる。結びつきが増えると臨界点で相転移が起きると「私は考える」と書く。名と基準は文献 21 にある）、Transforming an RNA-World の節の末（内共生は二次的な役に置かれ、ほとんど認められない、と書く）。
+- Woese, C. R. (2002). On the evolution of cells. *PNAS* 99(13), 8742–8747. DOI: [10.1073/pnas.132266999](https://doi.org/10.1073/pnas.132266999)（Crossref で確かめました）。台帳に行がある。台帳の取得先（Europe PMC の PDF）は自動取得の確認画面を返したので、PMC124369 の HTML で読みました。節：Abstract（原始の細胞の進化は基本的に共同体的。新しさは系統の中の変異でなく、水平の移動の場の共同の発明。設計が複雑になると臨界点に達する）、The Darwinian Threshold（部品が緩くつながっていれば系譜の記録は一時的。複雑になるにつれ水平の取得を受けつけなくなる。この移り変わりをダーウィン閾と呼ぶ。これを越えて初めて種分化ができる。結びつきが増えると臨界点で相転移が起きると「私は考える」と書く。名と基準は文献 21 にある）、Transforming an RNA-World の節の末（内共生は二次的な役に置かれ、ほとんど認められない、と書く）。
 - Woese, C. (1998). The universal ancestor. *PNAS* 95, 6854–6859. DOI: [10.1073/pnas.95.12.6854](https://doi.org/10.1073/pnas.95.12.6854)（Crossref で確かめました）。2002 年の論文が「ダーウィン閾」の名と基準の出どころとして引く文献 21。読んでいません。
-- Goldenfeld, N. & Woese, C. (2007). Biology's next revolution. *Nature* 445, 369. DOI: [10.1038/445369a](https://doi.org/10.1038/445369a)（Crossref で確かめました）。台帳 D04-S14。arXiv 版（https://arxiv.org/abs/q-bio/0702015 、v2）を読みました。頁は arXiv 版の頁です。p.1（水平の移動は微生物の水準で広く強い力。微生物のふるまいはおもに協力的と理解すべき。ウイルスが環境で活性化すると細胞が壊れ、宿主とウイルスの遺伝子が散る）。
+- Goldenfeld, N. & Woese, C. (2007). Biology's next revolution. *Nature* 445, 369. DOI: [10.1038/445369a](https://doi.org/10.1038/445369a)（Crossref で確かめました）。台帳に行がある。arXiv 版（https://arxiv.org/abs/q-bio/0702015 、v2）を読みました。頁は arXiv 版の頁です。p.1（水平の移動は微生物の水準で広く強い力。微生物のふるまいはおもに協力的と理解すべき。ウイルスが環境で活性化すると細胞が壊れ、宿主とウイルスの遺伝子が散る）。
 
 **照合の状態**：Woese 2002 は本文照合済（PMC の節）。Goldenfeld & Woese 2007 は本文照合済（arXiv 版 p.1）。Woese 1998 は未照合です。
 
@@ -284,7 +284,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Simpson, G. G. (1953) *The Major Features of Evolution* と Schluter, D. (2000) *The Ecology of Adaptive Radiation*（台帳 D04-S10）は書籍で、読んでいません。
+- Simpson, G. G. (1953) *The Major Features of Evolution* と Schluter, D. (2000) *The Ecology of Adaptive Radiation*（台帳に行がある）は書籍で、読んでいません。
 - Schluter, D. (1996). Ecological causes of adaptive radiation. *Am. Nat.* 148(Suppl.), S40–S64. DOI: [10.1086/285901](https://doi.org/10.1086/285901)（Crossref で確かめました）。著者の研究室の頁の写し（https://www.zoology.ubc.ca/~schluter/reprints/schluter%201996%20am%20nat%20supplement%20ecological%20causes.pdf ）。PDF の先頭は %PDF で、文字の層が無いので 1 頁目を画像にして読みました。1 頁目は題・著者・誌名と合います。読んだ頁：p.S40（要旨と序。適応放散は、資源をめぐる分岐の自然選択による表現型の分化、資源の競争による分化（生態の形質置換）、生態による種分化の三つの過程の結果とされてきた。資源の環境の間で、働きと育ちの速さに兼ね合いがあり、雑種への選択は野外で強い）。
 - Harmon, L. J., Losos, J. B., Davies, T. J. ら (2010). Early bursts of body size and shape evolution are rare in comparative data. *Evolution* 64(8), 2385–2396. DOI: [10.1111/j.1558-5646.2010.01025.x](https://doi.org/10.1111/j.1558-5646.2010.01025.x)（Crossref で確かめました）。Schluter の研究室の頁の写し（https://www.zoology.ubc.ca/~schluter/reprints/harmon%20et%20al%202010%20evolution%20-%20early%20bursts%20are%20rare%20in%20adaptive%20radiation.pdf ）。誌面の写しで、頁は誌面の頁です。読んだ頁：p.2385（要旨。49 の動物の系統群で、初めに速く後で遅くなる適応放散の型はほとんど支持されなかった。全体では、速い変化のあとの停滞でなく、制約がたえず進化を形づくる形が主だった）、p.2392（古典的な放散の中でも、若い姉妹種の組がまだ大きく違い、適応帯が埋まっていないことがある）、p.2393（鳥類全体はこの型を強く支持した。形の変化の速い噴出とその後の停滞は、生命の樹の中でまれかもしれない）。
 - Losos (2010) *Am. Nat.* 175, 623（DOI 10.1086/652433）と Stroud & Losos (2016) は読んでいません。
@@ -342,11 +342,11 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | 内共生 | 酸素に適応できない細胞は嫌気の環境に留まる（Sagan p.228。未照合の写し） | 酸素の大気 |
 | 適応放散 | 初めの速い放散の型が見えない系統群が多い（Harmon ら pp.2385・2393） | 研究の一線 |
 
-D01・D02・D08・D25・D29 と同じく、至らない形は原典の中心にありました。進化生物学では、片方の勝利（不利な形の絶滅・雑種の除去・祖先種の絶滅）と、勝ちの無い競り合いの続き（赤の女王）と、悪い統合（有害な対立遺伝子の固定）が、はっきり分かれて書かれていました。
+数学・物理学・神経科学・人類学・民族学・複雑系科学と同じく、至らない形は原典の中心にありました。進化生物学では、片方の勝利（不利な形の絶滅・雑種の除去・祖先種の絶滅）と、勝ちの無い競り合いの続き（赤の女王）と、悪い統合（有害な対立遺伝子の固定）が、はっきり分かれて書かれていました。
 
 ### テンプレート由来の表示
 
-「立ち位置明示」（3〜6 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6（構造再読）」「Phase 7（横断統合）」（30・38 行）、「方法論的開示（S60）」（44〜49 行）、「温度帯の分布」（88 行）、「安全弁」（92〜94 行）、「結びの温度開示」（229〜236 行）、「Colophon」の generator_model（238〜248 行）。47〜49 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（writing.md §1-1・§1-8）。pres の「温度」（43 行）も同じです。en は表示の名を変えていますが、33 行「If these definitions already produce discomfort … Both are legitimate responses」は読者への合いの手で、型 F に当たります。D01・D02・D29 と同じく、テンプレートで直すものです。
+「立ち位置明示」（3〜6 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6（構造再読）」「Phase 7（横断統合）」（30・38 行）、「方法論的開示（S60）」（44〜49 行）、「温度帯の分布」（88 行）、「安全弁」（92〜94 行）、「結びの温度開示」（229〜236 行）、「Colophon」の generator_model（238〜248 行）。47〜49 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（書き方の規約 §1-1・§1-8）。pres の「温度」（43 行）も同じです。en は表示の名を変えていますが、33 行「If these definitions already produce discomfort … Both are legitimate responses」は読者への合いの手で、型 F に当たります。数学・物理学・複雑系科学と同じく、テンプレートで直すものです。
 
 ### 誤りの出どころ
 
@@ -355,7 +355,7 @@ D01・D02・D08・D25・D29 と同じく、至らない形は原典の中心に�
 | 停滞期 10⁵〜10⁷ 年・急変期 10³〜10⁵ 年 | 退避版 74・78 行、調べた跡 phase7 55・58 行 |
 | 細胞膜の融合・境界の消失 | 退避版 283 行の [M]、300〜302 行 |
 | 共生か消化かの分岐 | 退避版 304 行の [学び] |
-| deep homology（Pax6・Hox） | 退避版 178 行の [P]、DR-D04 75 行 |
+| deep homology（Pax6・Hox） | 退避版 178 行の [P]、2026-02 の DR 75 行 |
 | 縁の4パターン | 調べた跡 phase7 9 行・133 行（H-09）、phase6 212・235 行、退避版 418・430 行 |
 | 縁の3条件（G×E ほか） | 退避版の縁フラグ（256・290 行ほか）、phase5 39 行 |
 | N_e s の絶対値が 1 以下 | 退避版 49 行の [類似] |
@@ -364,7 +364,7 @@ D01・D02・D08・D25・D29 と同じく、至らない形は原典の中心に�
 | 「誤差」「棄却」「保持」の語 | 退避版 15 行の概要（「誤差（変異）から創造（新規性）が生まれる」）。欠損駆動思考の旧い定義（棄却される誤差）の語 |
 | テンプレートの表示 | 報告のテンプレート |
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 E（断定・看板・「最も」）：「『誤差（変異）から新しいもの（新規性）が生まれる』構造を最も厚く実証してきた学問」（14 行）、「30領域中で『縁』の機能多様性が最も豊かな領域」（90 行・186 行）、「5段階モデルとの構造対応が最も豊かに確認された領域の一つ」（225 行）、「確立された事実に基づく確定的な知見です」（232 行）、「最も大規模な束→場回帰の一つ」（160 行）。
 - 型 H（原典に無い体系）：「縁の4パターン」（186〜193 行）、「縁の条件――関係網…未決定性…渦への接続」（136 行）、「束→場回帰の多様性」の五つの名（205 行）。
@@ -374,71 +374,62 @@ D01・D02・D08・D25・D29 と同じく、至らない形は原典の中心に�
 
 ### 精読ノートと wiki・台帳の誤り（司令塔が直す）
 
-- `pd/wiki/sources/D04_sagan_1967_origin-mitosing-cells.md` 53 行：DOI が 10.1016/S0022-5193(67)80274-8。Crossref に無い。正しくは 10.1016/0022-5193(67)90079-3（Crossref・表紙の PII）。
-- `cs/knowledge/source-notes/D04/D04-S08_sagan-1967.md` 16 行：「DOI / URL」の欄が「Received 8 June 1966」（受付日）。
-- `cs/knowledge/source-notes/D04/D04-S01_darwin-1859.md` 32 行：引用の頭が「A struggle for existence」。p.467 は「The struggle for existence inevitably follows from the high geometrical ratio of increase…」。「A struggle…」で始まる文は p.63 にあり、続きは「from the high rate at which all organic beings tend to increase」で、二つの文が混ざっている。
-- `cs/knowledge/source-notes/D04/D04-S09_woese-2002.md` 32 行：引用の語が原典と違う（「organizational genealogical trace (record)」→原典は「organismal genealogical trace (recorded in …)」、「Suppose that the ancestors」→「Suppose that the primitive ancestors」）。二つの段落の文を順を入れ替えてつないでいる。72 行「more complex and integrated」→原典の要旨は「more complex and interconnected」。74 行「a more solidified, organizational cell design」→原典は「a more solidified, organized cellular design」。
-- `cs/knowledge/raw/manifest.md` D04-S02 の行：取得先を Internet Archive の B-001-004-118 とするが、これは個人が 2017 年に上げた写し。手元の PDF は、Blackwell Publishing の Ridley *Evolution* の Classic Texts の PDF（Wayback 2006 年の記録）とバイト単位で一致した。
-- 同 D04-S05 の行：「Zenodo CC-BY deposit」とするが、上げた人は著者でも出版社でもない（Zenodo の記録 10772157、biosyslit・taxodros の共同体）。
-- 同 D04-S08 の行：Internet Archive の資料は個人が上げた写し（fringe の集め）。
-- 同 D04-S09 の行：Europe PMC の PDF は 2026-11-09 に自動取得の確認画面。PMC の HTML（PMC124369）は読めた。
-- 同 D04-S15 の行：Lane & Martin 2012 は膜の生体エネルギーの起源の論で、台帳の「Stage 2-4」のほかに、どの論の確かめ先かが書かれていない。
+- wiki の頁「Sagan 1967」 53 行：DOI が 10.1016/S0022-5193(67)80274-8。Crossref に無い。正しくは 10.1016/0022-5193(67)90079-3（Crossref・表紙の PII）。
+- 精読ノート「Sagan 1967」 16 行：「DOI / URL」の欄が「Received 8 June 1966」（受付日）。
+- 精読ノート「Darwin 1859」 32 行：引用の頭が「A struggle for existence」。p.467 は「The struggle for existence inevitably follows from the high geometrical ratio of increase…」。「A struggle…」で始まる文は p.63 にあり、続きは「from the high rate at which all organic beings tend to increase」で、二つの文が混ざっている。
+- 精読ノート「Woese 2002」 32 行：引用の語が原典と違う（「organizational genealogical trace (record)」→原典は「organismal genealogical trace (recorded in …)」、「Suppose that the ancestors」→「Suppose that the primitive ancestors」）。二つの段落の文を順を入れ替えてつないでいる。72 行「more complex and integrated」→原典の要旨は「more complex and interconnected」。74 行「a more solidified, organizational cell design」→原典は「a more solidified, organized cellular design」。
+- 台帳の「Eldredge & Gould 1972」の行：取得先を Internet Archive の B-001-004-118 とするが、これは個人が 2017 年に上げた写し。手元の PDF は、Blackwell Publishing の Ridley *Evolution* の Classic Texts の PDF（Wayback 2006 年の記録）とバイト単位で一致した。
+- 台帳の「Waddington 1953」の行：「Zenodo CC-BY deposit」とするが、上げた人は著者でも出版社でもない（Zenodo の記録 10772157、biosyslit・taxodros の共同体）。
+- 台帳の「Sagan 1967」の行：Internet Archive の資料は個人が上げた写し（fringe の集め）。
+- 台帳の「Woese 2002」の行：Europe PMC の PDF は 2026-11-09 に自動取得の確認画面。PMC の HTML（PMC124369）は読めた。
+- 台帳の「Lane & Martin 2012」の行：Lane & Martin 2012 は膜の生体エネルギーの起源の論で、台帳の「Stage 2-4」のほかに、どの論の確かめ先かが書かれていない。
 
 ## 判断が要るもの
 
 pjdhiro に聞くものは一つです。規約で答えが出たものは、そのとおり決めて書きました。
 
-- Eldredge & Gould（1972）の手元の PDF は、Blackwell Publishing が教科書（Ridley *Evolution*）のサイトに置いていた写しと同じものでした。出版社のサイトですが、章の出版社（Freeman, Cooper）とは違い、権利は確かめられません。「大学の授業のサイトや著者のサイトに置かれた出版社の版の写し」（`docs/cs-review/README.md`「規約で決めたこと」2026-11-09 の行）に近いとみて、本文照合済にしました。予想：pjdhiro も同じ扱いを選ぶ見込みです（教科書のサイトは出所が書け、Wayback で第三者が確かめられる。stance 2-6 誠実さ）。違えば「未照合（読んだ頁）」に直します。
+- Eldredge & Gould（1972）の手元の PDF は、Blackwell Publishing が教科書（Ridley *Evolution*）のサイトに置いていた写しと同じものでした。出版社のサイトですが、章の出版社（Freeman, Cooper）とは違い、権利は確かめられません。「大学の授業のサイトや著者のサイトに置かれた出版社の版の写し」（調べ方の計画と規約「規約で決めたこと」2026-11-09 の行）に近いとみて、本文照合済にしました。予想：pjdhiro も同じ扱いを選ぶ見込みです（教科書のサイトは出所が書け、Wayback で第三者が確かめられる。stance 2-6 誠実さ）。違えば「未照合（読んだ頁）」に直します。
 - Waddington（1953）の Zenodo の写しは、上げた人が著者でも出版社でもないので、規約どおり未照合（読んだ頁）にしました。遺伝的収容の論は、West-Eberhard（2005）で本文照合済です。
 - Sagan（1967）の Internet Archive の写しは個人のもので、規約どおり未照合（読んだ頁）にしました。内共生の論は、この分野で唯一の未照合の論です。出版社の版は有料の見込みです。
-- `docs/cs-review/README.md` の「中心の問い」は、分かれ道の例に「D04 内共生の共生か消化」を挙げています。写しで読んだ範囲の原典に消化の分かれ道は無く、報告と退避版が付け足したものでした。README の例を直すのは司令塔に任せます。
+- 調べ方の計画と規約の「中心の問い」は、分かれ道の例に「進化生物学内共生の共生か消化」を挙げています。写しで読んだ範囲の原典に消化の分かれ道は無く、報告と退避版が付け足したものでした。README の例を直すのは司令塔に任せます。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-manifest は書き換えていません。番号は D04-S16 から振りました。
+台帳は書き換えていません。
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D04-S16 | Kimura, M. (1991). The neutral theory of molecular evolution: A review of recent evidence. *Jpn. J. Genet.* 66, 367–386. DOI 10.1266/jjg.66.367 | https://www.jstage.jst.go.jp/article/jjg/66/4/66_4_367/_pdf （画像だけの PDF） | raw-confirmed（著者のまとめ直し） |
-| D04-S17 | Ohta, T. (2002). Near-neutrality in evolution of genes and gene regulation. *PNAS* 99, 16134–16137. DOI 10.1073/pnas.252626899 | PMC138577（HTML。PDF は確認画面） | url-verified（著者のまとめ直し） |
-| D04-S18 | Laland, K. N., Odling-Smee, F. J. & Feldman, M. W. (1999). Evolutionary consequences of niche construction and their implications for ecology. *PNAS* 96, 10242–10247. DOI 10.1073/pnas.96.18.10242 | PMC17873（HTML） | url-verified |
-| D04-S19 | Laland, K., Matthews, B. & Feldman, M. W. (2016). An introduction to niche construction theory. *Evol. Ecol.* 30, 191–202. DOI 10.1007/s10682-016-9821-z | PMC4922671（HTML） | url-verified |
-| D04-S20 | West-Eberhard, M. J. (2005). Developmental plasticity and the origin of species differences. *PNAS* 102(suppl. 1), 6543–6549. DOI 10.1073/pnas.0501844102 | PMC1131862（HTML。PDF は確認画面） | url-verified（著者のまとめ直し） |
-| D04-S21 | Moran, B. M. ら (2021). The genomic consequences of hybridization. *eLife* 10, e69016. DOI 10.7554/eLife.69016 | https://api.elifesciences.org/articles/69016 （CC BY。頁は 406） | url-verified |
-| D04-S22 | Schluter, D. (1996). Ecological causes of adaptive radiation. *Am. Nat.* 148, S40–S64. DOI 10.1086/285901 | 著者の研究室の頁の写し（画像だけの PDF） | raw-confirmed（著者のサイトの写し） |
-| D04-S23 | Harmon, L. J. ら (2010). Early bursts of body size and shape evolution are rare in comparative data. *Evolution* 64, 2385–2396. DOI 10.1111/j.1558-5646.2010.01025.x | Schluter の研究室の頁の写し | raw-confirmed（著者のサイトの写し） |
-| D04-S24 | Kimura, M. (1968). Evolutionary Rate at the Molecular Level. *Nature* 217, 624–626. DOI 10.1038/217624a0 | Nature（有料） | citation-only |
-| D04-S25 | Ohta, T. (1973). Slightly Deleterious Mutant Substitutions in Evolution. *Nature* 246, 96–98. DOI 10.1038/246096a0 | Nature（有料） | citation-only |
-| D04-S26 | Laland, K. ら / Wray, G. A. ら (2014). Does evolutionary theory need a rethink? *Nature* 514, 161–164. DOI 10.1038/514161a | Nature（有料） | citation-only |
-| D04-S27 | Ehrlich, P. R. & Raven, P. H. (1964). Butterflies and Plants: A Study in Coevolution. *Evolution* 18, 586–608. DOI 10.2307/2406212 | JSTOR・Wiley（有料） | citation-only |
-| D04-S28 | Harrison, R. G. & Larson, E. L. (2014). Hybridization, Introgression, and the Nature of Species Boundaries. *J. Hered.* 105(S1), 795–809. DOI 10.1093/jhered/esu033 | Oxford（OA。自動取得は確認画面） | url-verified（ブラウザでの保存が要る） |
-| D04-S29 | Woese, C. (1998). The universal ancestor. *PNAS* 95, 6854–6859. DOI 10.1073/pnas.95.12.6854 | PMC（取得を試していない） | citation-only |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| Kimura, M. (1991). The neutral theory of molecular evolution: A review of recent evidence. *Jpn. J. Genet.* 66, 367–386. DOI 10.1266/jjg.66.367 | https://www.jstage.jst.go.jp/article/jjg/66/4/66_4_367/_pdf （画像だけの PDF） | 手元に保存した（著者のまとめ直し） |
+| Ohta, T. (2002). Near-neutrality in evolution of genes and gene regulation. *PNAS* 99, 16134–16137. DOI 10.1073/pnas.252626899 | PMC138577（HTML。PDF は確認画面） | 取得先を確かめた（著者のまとめ直し） |
+| Laland, K. N., Odling-Smee, F. J. & Feldman, M. W. (1999). Evolutionary consequences of niche construction and their implications for ecology. *PNAS* 96, 10242–10247. DOI 10.1073/pnas.96.18.10242 | PMC17873（HTML） | 取得先を確かめた |
+| Laland, K., Matthews, B. & Feldman, M. W. (2016). An introduction to niche construction theory. *Evol. Ecol.* 30, 191–202. DOI 10.1007/s10682-016-9821-z | PMC4922671（HTML） | 取得先を確かめた |
+| West-Eberhard, M. J. (2005). Developmental plasticity and the origin of species differences. *PNAS* 102(suppl. 1), 6543–6549. DOI 10.1073/pnas.0501844102 | PMC1131862（HTML。PDF は確認画面） | 取得先を確かめた（著者のまとめ直し） |
+| Moran, B. M. ら (2021). The genomic consequences of hybridization. *eLife* 10, e69016. DOI 10.7554/eLife.69016 | https://api.elifesciences.org/articles/69016 （CC BY。頁は 406） | 取得先を確かめた |
+| Schluter, D. (1996). Ecological causes of adaptive radiation. *Am. Nat.* 148, S40–S64. DOI 10.1086/285901 | 著者の研究室の頁の写し（画像だけの PDF） | 手元に保存した（著者のサイトの写し） |
+| Harmon, L. J. ら (2010). Early bursts of body size and shape evolution are rare in comparative data. *Evolution* 64, 2385–2396. DOI 10.1111/j.1558-5646.2010.01025.x | Schluter の研究室の頁の写し | 手元に保存した（著者のサイトの写し） |
+| Kimura, M. (1968). Evolutionary Rate at the Molecular Level. *Nature* 217, 624–626. DOI 10.1038/217624a0 | Nature（有料） | 書誌だけ |
+| Ohta, T. (1973). Slightly Deleterious Mutant Substitutions in Evolution. *Nature* 246, 96–98. DOI 10.1038/246096a0 | Nature（有料） | 書誌だけ |
+| Laland, K. ら / Wray, G. A. ら (2014). Does evolutionary theory need a rethink? *Nature* 514, 161–164. DOI 10.1038/514161a | Nature（有料） | 書誌だけ |
+| Ehrlich, P. R. & Raven, P. H. (1964). Butterflies and Plants: A Study in Coevolution. *Evolution* 18, 586–608. DOI 10.2307/2406212 | JSTOR・Wiley（有料） | 書誌だけ |
+| Harrison, R. G. & Larson, E. L. (2014). Hybridization, Introgression, and the Nature of Species Boundaries. *J. Hered.* 105(S1), 795–809. DOI 10.1093/jhered/esu033 | Oxford（OA。自動取得は確認画面） | 取得先を確かめた（ブラウザでの保存が要る） |
+| Woese, C. (1998). The universal ancestor. *PNAS* 95, 6854–6859. DOI 10.1073/pnas.95.12.6854 | PMC（取得を試していない） | 書誌だけ |
 
 既存の行に書き足す案：
 
-- D04-S02（Eldredge & Gould 1972）：手元の PDF は Blackwell Publishing の Classic Texts の PDF（http://web.archive.org/web/2006/http://www.blackwellpublishing.com/ridley/classictexts/eldredge.pdf ）とバイト単位で一致。Internet Archive の B-001-004-118 は個人が上げた同じ写し。画像だけなので、同じ資料の `eldredge_djvu.txt`（OCR の文字）で読んだ。
-- D04-S05（Waddington 1953）：Zenodo の記録 10772157。上げた人は著者でも出版社でもない。権利は未確認。
-- D04-S08（Sagan 1967）：DOI 10.1016/0022-5193(67)90079-3。Internet Archive の資料 ontheoriginofmitosingcellslynnsaganorlynnmargulis は個人の写し。
-- D04-S09（Woese 2002）：Europe PMC の PDF は自動取得の確認画面。PMC124369 の HTML で読める。
-- D04-S13（Fisher 1930）：1930 年の Clarendon Press の初版の写し（インドの大学図書館の蔵書）。
-- D04-S14（Goldenfeld & Woese 2007）：arXiv の PDF を取得できた（v2）。
+- 台帳の「Eldredge & Gould 1972」の行（Eldredge & Gould 1972）：手元の PDF は Blackwell Publishing の Classic Texts の PDF（http://web.archive.org/web/2006/http://www.blackwellpublishing.com/ridley/classictexts/eldredge.pdf ）とバイト単位で一致。Internet Archive の B-001-004-118 は個人が上げた同じ写し。画像だけなので、同じ資料の `eldredge_djvu.txt`（OCR の文字）で読んだ。
+- 台帳の「Waddington 1953」の行（Waddington 1953）：Zenodo の記録 10772157。上げた人は著者でも出版社でもない。権利は未確認。
+- 台帳の「Sagan 1967」の行（Sagan 1967）：DOI 10.1016/0022-5193(67)90079-3。Internet Archive の資料 ontheoriginofmitosingcellslynnsaganorlynnmargulis は個人の写し。
+- 台帳の「Woese 2002」の行（Woese 2002）：Europe PMC の PDF は自動取得の確認画面。PMC124369 の HTML で読める。
+- 台帳の「Fisher 1930」の行（Fisher 1930）：1930 年の Clarendon Press の初版の写し（インドの大学図書館の蔵書）。
+- 台帳の「Goldenfeld & Woese 2007」の行（Goldenfeld & Woese 2007）：arXiv の PDF を取得できた（v2）。
 
 ## ブラウザでの保存が要る PDF
 
-| 台帳の行 | 文献 | ダウンロード先 | 保存名の案 |
-|---|---|---|---|
-| D04-S11 | Erwin (2015) *Curr. Biol.* 25, R930 | http://www.cell.com/article/S0960982215009902/pdf | `D04_erwin_2015_novelty-and-innovation.pdf` |
-| D04-S15 | Lane & Martin (2012) *Cell* 151, 1406 | http://www.cell.com/article/S0092867412014389/pdf | `D04_lane-martin_2012_origin-of-membrane-bioenergetics.pdf` |
-| D04-S28 | Harrison & Larson (2014) *J. Hered.* 105, 795 | https://academic.oup.com/jhered/article/105/S1/795/2961817 | `D04_harrison-larson_2014_hybridization-introgression.pdf` |
-| D04-S09 | Woese (2002) *PNAS* 99, 8742 | https://pmc.ncbi.nlm.nih.gov/articles/PMC124369/ （PDF の頁は確認画面。頁を控えるため） | `D04_woese_2002_on-the-evolution-of-cells.pdf` |
-| D04-S20 | West-Eberhard (2005) *PNAS* 102, 6543 | https://pmc.ncbi.nlm.nih.gov/articles/PMC1131862/ （同上） | `D04_west-eberhard_2005_developmental-plasticity.pdf` |
-| D04-S21 | Moran ら (2021) *eLife* 10, e69016 | https://cdn.elifesciences.org/articles/69016/elife-69016-v1.pdf （頁は 406。本文は API で読めた） | `D04_moran-et-al_2021_genomic-consequences-of-hybridization.pdf` |
-
-PMC の HTML は、同じ日に続けて取ると reCAPTCHA の頁を返すようになりました。確認画面で、取得先が落ちていたのではありません。Europe PMC・PNAS・cell.com・academic.oup.com は、Cloudflare の確認画面でした。
+自動で取れなかった原典のうち、ブラウザでの保存を頼むものは、作業の記録（[Issue #73](https://github.com/uminomae/project-design-theory/issues/73)）の表にまとめました。
 
 ## 手順について分かったこと
 
-- 進化生物学の原典は、競り合いと、そこで消えるもの（絶滅・除去・偶然の消失・閾値に届かない形）を、論の中心に書いていました。報告は、残る側と立ち上がる側だけを段に当てていました。D29 と同じく、分かれ目の下で起きることが、至らない形の材料になりました。
+- 進化生物学の原典は、競り合いと、そこで消えるもの（絶滅・除去・偶然の消失・閾値に届かない形）を、論の中心に書いていました。報告は、残る側と立ち上がる側だけを段に当てていました。複雑系科学と同じく、分かれ目の下で起きることが、至らない形の材料になりました。
 - 片方の勝利（不利な形の絶滅・雑種の除去）と、勝ちの無い競り合いの続き（赤の女王）と、悪い統合（ニッチ構築で有害な対立遺伝子が固定する）が、原典の中で分かれて書かれていました。三つの並べ方を試すのに向いた分野です。
 - 手元の PDF の出どころを、台帳の取得先と別の経路で確かめると、性格が変わることがありました。Eldredge & Gould の写しは、台帳では個人の写しでしたが、同じファイルが出版社の教科書のサイトに置かれていたことが Wayback で分かりました。ファイルのバイトを比べる手順は役に立ちました。
 - PNAS の論文は、PMC の XML が出版社の決めで取れず（efetch は「全文の XML を許さない」と返す）、PMC の HTML で読みました。eLife は頁が 406 を返し、公開 API の JSON で読めました。

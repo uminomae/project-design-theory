@@ -16,9 +16,9 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D30-tradi
 
 本文を読めた原典は、どれも二つのものの兼ね合いと、それが崩れる形を書いていました。Berkes ら（2000）は、クリーの人々が 1910 年代にカリブーを失ったことを教訓にして狩りの決まりを組み直し、二世代あとに長老がそれを守らせた例と、ニューファンドランドの沿岸の漁師が資源の危機に気づいていたのに管理する側を説得できず、群れがまるごと崩れた例を並べます（pp.1256–1257）。安定を目指す管理は、レジリエンスを少しずつ失わせ、その失い方は技術や資本市場で覆い隠される、とも書きます（p.1259）。Scott は、行政が自然と社会を秩序づけようとする志向、歯止めの無い国家の力、抵抗する力を失った市民社会の三つが重なると、悲劇的な開発の失敗が起きると書き（p.108）、その失敗は土地の実践に埋め込まれた知（メーティス）を無視するところから起きると書きます（p.118）。世阿弥は、位を極めた芸と、目の利かない見る人とのあいだで、初心を忘れず、時と所に応じて能をすることを「壽福」とし、どれほど上手でも衆人愛敬を欠けば寿福増長の為手とは言えないと書きます（吉田本 pp.46–47）。Olsson ら（2004）は、ラムサール条約の登録地なのに湿地の価値が失われ続け、「危機が迫っている」という懸念が広がったところから、管理の組み替えを三つの段で書きます。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D30-traditional-knowledge.md`、2026-03-18 に LLM が生成、以下「報告」）は、10 の論を取り上げ、日本語版で 2 つ（TEK・里山）を「強い対応」としています。英語版は序破急を足した 11 のうち 10 を「Strong」とし、プレゼン版は 4 を「強い対応」とします。報告は、TEK を「原著自身がプロセスを段階的に記述」と書きますが、Berkes らが書くのは社会の仕組みの四つの区分と分析の層で、順に進むサイクルではありません。報告は Scott を「反面教師」として過程の外に置きますが、Scott の論文は失敗そのものを主題にしています。§6 の五つの横断パターンは、調べた跡（phase7）の P1〜P5 の題と順をそのまま写したものです。守破離の節の「自己と型が未決定のまま保持される」は、原典でなく退避版の 144 行から来ています。英語版にだけ、生態のサプライズや素材の抵抗を「捨てずに問いとして取り上げる」と読む文が 3 か所あります。
+今の公開報告（「30 領域調査報告」の伝統知・技芸の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、10 の論を取り上げ、日本語版で 2 つ（TEK・里山）を「強い対応」としています。英語版は序破急を足した 11 のうち 10 を「Strong」とし、プレゼン版は 4 を「強い対応」とします。報告は、TEK を「原著自身がプロセスを段階的に記述」と書きますが、Berkes らが書くのは社会の仕組みの四つの区分と分析の層で、順に進むサイクルではありません。報告は Scott を「反面教師」として過程の外に置きますが、Scott の論文は失敗そのものを主題にしています。§6 の五つの横断パターンは、調べた跡（phase7）の P1〜P5 の題と順をそのまま写したものです。守破離の節の「自己と型が未決定のまま保持される」は、原典でなく退避版の 144 行から来ています。英語版にだけ、生態のサプライズや素材の抵抗を「捨てずに問いとして取り上げる」と読む文が 3 か所あります。
 
-この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。報告の 10 の論に、本文に当たれて危機と組み替えをはっきり書いている Olsson ら（2004）を足して 11 の論にしました。本文照合済は 5 つ（TEK・一座建立・杜氏の事例研究・メーティス・Olsson ら）です。里山は要旨照合済です。正統的周辺参加・口承伝統・職人のわざ・民俗芸能は本の本文に当たれず、未照合（書籍）のままです。守破離は、語の出どころそのものを確かめられませんでした。
+この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。報告の 10 の論に、本文に当たれて危機と組み替えをはっきり書いている Olsson ら（2004）を足して 11 の論にしました。本文照合済は 5 つ（TEK・一座建立・杜氏の事例研究・メーティス・Olsson ら）です。里山は要旨照合済です。正統的周辺参加・口承伝統・職人のわざ・民俗芸能は本の本文に当たれず、未照合（書籍）のままです。守破離は、語の出どころそのものを確かめられませんでした。
 
 重なる理論は、済んだ分野の記録を参照し、読み直していません：世阿弥の『風姿花伝』第一と覺習條々は[舞台芸術の記録](evidence-D28-performing-arts.md)の 1、野中の SECI は[経営学の記録](evidence-D22-business-management.md)の 1、Holling（1973）は[農学・生態学の記録](evidence-D12-agriculture.md)の 4、Ostrom と Folke らの適応的ガバナンスは[法学・政治学の記録](evidence-D20-law-politics.md)を参照しました。参照先の照合の状態は、野中が 1996 年の論文で本文照合済（2000 年の論文は未照合）、Ostrom（1990）が未照合（利用者が上げた写しで読んだ）、Folke ら（2005）が本文照合済です（2026-11-09 の一巡で、経営学と法学・政治学の記録の写しの扱いをそろえたあと）。
 
@@ -26,7 +26,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 ## 一面の表
 
-照合の状態は `docs/rules/sources.md` §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。「未照合」の行の対立・衝突・統合は、報告の言い分でなく、原典で確かめられたことだけを書くので、空けています。各行の「対立」「衝突」は原典の構造で、それを対立・衝突・統合と呼ぶのは Claude の読み替えです。
+照合の状態は調べ方の規約 §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。「未照合」の行の対立・衝突・統合は、報告の言い分でなく、原典で確かめられたことだけを書くので、空けています。各行の「対立」「衝突」は原典の構造で、それを対立・衝突・統合と呼ぶのは Claude の読み替えです。
 
 | 論 | 対立 | 衝突 | 統合／新たな安定、または統合に至らずにどう終わったか | 論の微細さ | 照合の状態 |
 |---|---|---|---|---|---|
@@ -50,10 +50,10 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Berkes, F., Colding, J. & Folke, C. (2000). Rediscovery of Traditional Ecological Knowledge as Adaptive Management. *Ecological Applications* 10(5), 1251–1262. DOI [10.1890/1051-0761(2000)010[1251:ROTEKA]2.0.CO;2](https://doi.org/10.1890/1051-0761(2000)010[1251:ROTEKA]2.0.CO;2)（find-source で Crossref の題・著者・年が一致）。manifest D30-S01。読んだ写し：https://wrrb.ca/sites/default/files/Berkes%20TK%20and%20Adaptive%20Management%20Ecol%20Appl%202000.pdf （カナダの資源の共同管理の機関 Wek'èezhìi Renewable Resources Board のサイトに置かれた JSTOR の誌面の写し。表紙に JSTOR の stable URL 2641280 と 2010 年の取得日。権利は未確認）。先頭が %PDF、13 面、1 頁目の書誌が一致。
+- Berkes, F., Colding, J. & Folke, C. (2000). Rediscovery of Traditional Ecological Knowledge as Adaptive Management. *Ecological Applications* 10(5), 1251–1262. DOI [10.1890/1051-0761(2000)010[1251:ROTEKA]2.0.CO;2](https://doi.org/10.1890/1051-0761(2000)010[1251:ROTEKA]2.0.CO;2)（find-source で Crossref の題・著者・年が一致）。台帳に行がある。読んだ写し：https://wrrb.ca/sites/default/files/Berkes%20TK%20and%20Adaptive%20Management%20Ecol%20Appl%202000.pdf （カナダの資源の共同管理の機関 Wek'èezhìi Renewable Resources Board のサイトに置かれた JSTOR の誌面の写し。表紙に JSTOR の stable URL 2641280 と 2010 年の取得日。権利は未確認）。先頭が %PDF、13 面、1 頁目の書誌が一致。
 - 読んだ頁：要旨と定義 pp.1251–1252、TEK の実践 pp.1253–1256、社会の仕組み pp.1256–1259、質的な管理と適応的管理 pp.1259–1260。
-- Gómez-Baggethun, E., Corbera, E. & Reyes-García, V. (2013). Traditional Ecological Knowledge and Global Environmental Change: research findings and policy implications. *Ecology and Society* 18(4), 72. DOI [10.5751/ES-06288-180472](https://doi.org/10.5751/ES-06288-180472)。manifest D30-S18（似た論文）。読んだ写し：https://www.ecologyandsociety.org/vol18/iss4/art72/ES-2013-6288.pdf （出版社の OA の PDF、CC BY）。読んだ頁：要旨と序論 p.1。
-- Huntington（2000、manifest D30-S02）は、台帳の取得先（www.cclmportal.ca）が確認画面（Cloudflare、HTTP 403）を返し、同じ URL の Wayback の写しも無かったので、読んでいません。精読ノートは S03・S04・S15・S17・S18 にあり、S01 Berkes の精読ノートはありません。
+- Gómez-Baggethun, E., Corbera, E. & Reyes-García, V. (2013). Traditional Ecological Knowledge and Global Environmental Change: research findings and policy implications. *Ecology and Society* 18(4), 72. DOI [10.5751/ES-06288-180472](https://doi.org/10.5751/ES-06288-180472)。台帳に行がある（似た論文）。読んだ写し：https://www.ecologyandsociety.org/vol18/iss4/art72/ES-2013-6288.pdf （出版社の OA の PDF、CC BY）。読んだ頁：要旨と序論 p.1。
+- Huntington（2000、台帳に行がある）は、台帳の取得先（www.cclmportal.ca）が確認画面（Cloudflare、HTTP 403）を返し、同じ URL の Wayback の写しも無かったので、読んでいません。精読ノートは「IPBES 2019」・「生物多様性条約 2018」・「Olsson ら 2004」・「Asmamaw ら 2020」・「Gómez-Baggethun ら 2013」にあり、「Berkes ら 2000」 Berkes の精読ノートはありません。
 
 **照合の状態**：Berkes ら（2000）は本文照合済（機関のサイトに置かれた誌面の写し。総説）。Gómez-Baggethun ら（2013）は本文照合済（出版社の OA。巻頭言）。Huntington（2000）は未照合です。
 
@@ -76,13 +76,13 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 96 行「原著自身がこのプロセスと社会メカニズムを段階的に記述している」、ja 232 行「TEKと里山は原著がプロセスを段階的に記述している」 | 言い過ぎ | 中 | Berkes らが書くのは、社会の仕組みの四つの区分（pp.1256–1259）と、知・管理・制度・世界観の分析の層（Fig.1、p.1257）。「観察→解釈→応答→制度化→更新」という順のサイクルは書いていない。出どころは phase7 §B の「著者自身がプロセスを段階的に記述」 |
 | ja 98 行「束→場回帰の循環を実証する最も強い事例の一つ」 | 言い過ぎ | 中 | 原典は事例の文献を集めた総説で、循環を実証した研究ではない |
 | ja 94〜98 行（危機・崩れ・覆い隠された喪失に触れない） | 抜け | 高 | カリブーの消失と組み直し（pp.1256–1257）、タラの資源の崩れ（p.1257）、安定を目指す管理によるレジリエンスの喪失（p.1259）、TEK が損なわれる理由（Gómez-Baggethun p.1） |
-| ja 220 行「TEKの『FPIC/ABS』」 | 未判定 | 低 | Berkes ら（2000）は FPIC・ABS に触れていない。名古屋議定書（D30-S04）と IPBES（D30-S03）の語で、この記録では確かめていない |
+| ja 220 行「TEKの『FPIC/ABS』」 | 未判定 | 低 | Berkes ら（2000）は FPIC・ABS に触れていない。名古屋議定書と IPBESの語で、この記録では確かめていない |
 
 ### 2. 正統的周辺参加（LPP）（Lave & Wenger 1991）
 
 **要旨**：報告によれば、学習を共同体の実践への参加の深まりとして書く論です。原典の本文は読めていません。
 
-**一次情報**：Lave, J. & Wenger, E. (1991). *Situated Learning: Legitimate Peripheral Participation*. Cambridge University Press. DOI [10.1017/CBO9780511815355](https://doi.org/10.1017/CBO9780511815355)（find-source で Crossref が一致）。manifest D30-S05。台帳は url-verified として archive.org の頁を挙げますが、Internet Archive の貸し出し（ログインして借りる形）で、自動では読めません。Wenger（1998、manifest D30-S06、DOI 10.1017/cbo9780511803932）も同じく貸し出しだけでした。著者の OA の論文版は見つかりませんでした。find-ledger の 5268 行・5521 行。
+**一次情報**：Lave, J. & Wenger, E. (1991). *Situated Learning: Legitimate Peripheral Participation*. Cambridge University Press. DOI [10.1017/CBO9780511815355](https://doi.org/10.1017/CBO9780511815355)（find-source で Crossref が一致）。台帳に行がある。台帳は「取得先を確かめた」として archive.org の頁を挙げますが、Internet Archive の貸し出し（ログインして借りる形）で、自動では読めません。Wenger（1998、台帳に行がある、DOI 10.1017/cbo9780511803932）も同じく貸し出しだけでした。著者の OA の論文版は見つかりませんでした。find-ledger の 5268 行・5521 行。
 
 **照合の状態**：未照合（書籍）。
 
@@ -102,9 +102,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- 世阿彌（吉田東伍 校註）『世阿彌十六部集』能樂會、1909 年。manifest D28-S01・D30-S07。手元の走査（part1。文字の層は無い）を頁の画像で読みました。PDF の頁 n の右が本の 2(n−40) 頁、左がその次の頁です（D28 の記録と同じ対応。PDF 58・61〜63 で頁の頭の番号を確かめた）。読んだ頁：花傳書 第四 神儀 pp.36–37（PDF 58）、奥義に当たる部分 pp.42–47（PDF 61〜63）。翻刻は一つだけで、二つ目の翻刻とは突き合わせていません。
-- 松木孝和・沼田秀穂 (2021). 茶の湯文化継続を目的とした未経験者に対する，予約サイトを介した体験茶事における“一座建立”の可否について. 『社会情報学会大会研究発表論文集』2021, pp.7–11. DOI [10.14836/ssiproceedings.2021.0_7](https://doi.org/10.14836/ssiproceedings.2021.0_7)（J-STAGE の頁の書誌で確かめた） https://www.jstage.jst.go.jp/article/ssiproceedings/2021/0/2021_7/_article/-char/ja 。manifest D30-S09。手元の PDF は 5 面で、PDF の 1〜5 面が誌面の pp.7–11 に当たります（誌名と頁は J-STAGE の頁で確かめ、PDF の面には頁の番号が無い）。全面を読みました。
-- 『山上宗二記』（1588 年ごろ。manifest D30-S08）の翻刻は手に入っていません。笠井哲「『山上宗二記』における茶道理念」（筑波大学の機関リポジトリ https://tsukuba.repo.nii.ac.jp/record/5333/files/3.pdf 。この日はリポジトリが保守で 503 を返したので、Wayback の記録 2026-04-18 の写しで読んだ。pp.15–23。掲載誌の名と号は PDF の面では確かめられなかった）を読みました。笠井は『茶道古典全集』第六巻（淡交社）を底本に引いています。笠井の論文に「一期に一度」の箇所は出てきません。
+- 世阿彌（吉田東伍 校註）『世阿彌十六部集』能樂會、1909 年。台帳の舞台芸術の行にある。手元の走査（part1。文字の層は無い）を頁の画像で読みました。PDF の頁 n の右が本の 2(n−40) 頁、左がその次の頁です（舞台芸術の記録と同じ対応。PDF 58・61〜63 で頁の頭の番号を確かめた）。読んだ頁：花傳書 第四 神儀 pp.36–37（PDF 58）、奥義に当たる部分 pp.42–47（PDF 61〜63）。翻刻は一つだけで、二つ目の翻刻とは突き合わせていません。
+- 松木孝和・沼田秀穂 (2021). 茶の湯文化継続を目的とした未経験者に対する，予約サイトを介した体験茶事における“一座建立”の可否について. 『社会情報学会大会研究発表論文集』2021, pp.7–11. DOI [10.14836/ssiproceedings.2021.0_7](https://doi.org/10.14836/ssiproceedings.2021.0_7)（J-STAGE の頁の書誌で確かめた） https://www.jstage.jst.go.jp/article/ssiproceedings/2021/0/2021_7/_article/-char/ja 。台帳に行がある。手元の PDF は 5 面で、PDF の 1〜5 面が誌面の pp.7–11 に当たります（誌名と頁は J-STAGE の頁で確かめ、PDF の面には頁の番号が無い）。全面を読みました。
+- 『山上宗二記』（1588 年ごろ。台帳に行がある）の翻刻は手に入っていません。笠井哲「『山上宗二記』における茶道理念」（筑波大学の機関リポジトリ https://tsukuba.repo.nii.ac.jp/record/5333/files/3.pdf 。この日はリポジトリが保守で 503 を返したので、Wayback の記録 2026-04-18 の写しで読んだ。pp.15–23。掲載誌の名と号は PDF の面では確かめられなかった）を読みました。笠井は『茶道古典全集』第六巻（淡交社）を底本に引いています。笠井の論文に「一期に一度」の箇所は出てきません。
 
 **照合の状態**：世阿弥の箇所は本文照合済（パブリックドメインの翻刻。伝書。頁の画像で読んだ）。松木と沼田は本文照合済（J-STAGE の会議論文。茶事の調査）。山上宗二記は二次資料のみ（笠井の論文の現代語の要約）で、「一期に一度」は未照合です。
 
@@ -137,9 +137,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- 台帳 D30-S10 は「武道文化論 守破離の説明」で書誌が足りません。退避版の refs（147〜150 行）も「武道文化論」「茶の湯のコミュニケーション」「世阿弥関連伝書（用語史的精査が必要）」で、書誌はありません。
+- 台帳の行は「武道文化論 守破離の説明」で書誌が足りません。退避版の refs（147〜150 行）も「武道文化論」「茶の湯のコミュニケーション」「世阿弥関連伝書（用語史的精査が必要）」で、書誌はありません。
 - 川上不白『不白筆記』（18 世紀）、横井淡所『茶話抄』、利休道歌とされる「規矩作法 守り尽くして破るとも 離るるとても本を忘るな」は、どれも原典の翻刻に当たれませんでした。『不白筆記』の校注本（谷晃 校注、中央公論新社、2019 年。国立国会図書館の書誌 https://ndlsearch.ndl.go.jp/en/books/R100000002-I030036812 ）があることだけを確かめました。J-STAGE で、守破離の語の出どころを扱う論文は見つかりませんでした。検索で出た解説は、角川『茶道大辞典』を引く利用者の頁など二次以下のものだけでした。
-- 世阿弥の伝書：D28 の記録は、吉田本の目次と読んだ範囲に守破離の語が無いことを書いています。この記録で読んだ pp.36–37・42–47 にも、守・破・離の語はありませんでした。
+- 世阿弥の伝書：舞台芸術の記録は、吉田本の目次と読んだ範囲に守破離の語が無いことを書いています。この記録で読んだ pp.36–37・42–47 にも、守・破・離の語はありませんでした。
 - 山上宗二記の修行の年齢の区切りは、上の 3 の笠井の論文の要約で読みました（二次）。守・破・離の語は使われていません。
 
 **照合の状態**：未照合。守破離の語の出どころは確かめられませんでした。
@@ -150,7 +150,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 | 報告の行 | 判定 | 重さ | 根拠 |
 |---|---|---|---|
-| ja 118 行「語源的には世阿弥の芸能論に淵源を持つとされます」 | 未判定 | 高 | 吉田本の読んだ範囲（D28 の記録とこの記録）に守破離の語は無い。出典の挙がっていない「とされます」 |
+| ja 118 行「語源的には世阿弥の芸能論に淵源を持つとされます」 | 未判定 | 高 | 吉田本の読んだ範囲（舞台芸術の記録とこの記録）に守破離の語は無い。出典の挙がっていない「とされます」 |
 | ja 122 行「自己と型が未決定のまま保持される境界のせめぎ合い（縁）」 | 付け足し | 中 | 原典は挙がっていない。出どころは退避版 144 行（「縁←守の中での型との境界のせめぎ合い（自己と型が未決定のまま保持される）」）と、その前の 143 行（「E03（創造は際に留まることを経て生じる）の実践的表現」）。phase6 65〜66 行はこれを「発見した事例」と書く |
 | ja 122 行「3段階の守破離に隠された内部構造を5段階の視点から見出した事例」 | 付け足し | 中 | 原典の無い所で、当てはめを「見出した」と書いている。出どころは phase6 66 行 |
 | en 62 行の提唱者「Zeami-related transmission texts」 | 未判定 | 中 | 世阿弥の伝書で守破離の語は確かめられていない |
@@ -162,7 +162,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 **一次情報**：
 
 - 報告は出典を挙げていません。退避版の refs は「田中恭子『変わり続けるという伝統』（旭酒造事例）」（181 行）と野中・竹内（1995）で、田中の文章の書誌は見つかりませんでした。
-- 粟島浩二 (2017).「中小製造業における海外市場展開―旭酒造「獺祭」を事例として―」『県立広島大学経営情報学部論集』第 10 号, pp.47–56. https://pu-hiroshima.repo.nii.ac.jp/record/870/files/keijoron10047.pdf （大学の機関リポジトリ。この日は保守中で、Wayback の記録 2025-04-15 の写しで読んだ。先頭が %PDF、10 面。PDF の 1〜10 面が誌面の pp.47–56 に当たる）。manifest D30-S29。この論文は検索で見つけたもので、報告や退避版が引いている文書ではありません。主題は海外市場への展開で、杜氏に触れるのは p.49 と p.50 の二つの段落です。PDF の文字の層は一字ずつ空きが入っているので、空きを詰めて読みました（2026-11-09・司令塔）。
+- 粟島浩二 (2017).「中小製造業における海外市場展開―旭酒造「獺祭」を事例として―」『県立広島大学経営情報学部論集』第 10 号, pp.47–56. https://pu-hiroshima.repo.nii.ac.jp/record/870/files/keijoron10047.pdf （大学の機関リポジトリ。この日は保守中で、Wayback の記録 2025-04-15 の写しで読んだ。先頭が %PDF、10 面。PDF の 1〜10 面が誌面の pp.47–56 に当たる）。台帳に行がある。この論文は検索で見つけたもので、報告や退避版が引いている文書ではありません。主題は海外市場への展開で、杜氏に触れるのは p.49 と p.50 の二つの段落です。PDF の文字の層は一字ずつ空きが入っているので、空きを詰めて読みました（2026-11-09・司令塔）。
 - 粟島は、杜氏が去った経緯を桜井（2014）pp.33–38 から引いています（p.49 の注 9）。桜井の本は読んでいません。
 - 野中の SECI は[経営学の記録](evidence-D22-business-management.md)の 1 を参照しました。
 
@@ -300,7 +300,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨**：スウェーデン南部のクリスチャンスタードの湿地で、ばらばらに働いていた担い手の管理が、十年ほどで生態系の適応的な共同管理に組み替えられた過程を追った事例研究です。組み替えを、変化への備え、機会の窓をつかむこと、新しい状態のレジリエンスを作ることの三つの段で書きます。
 
-**一次情報**：Olsson, P., Folke, C. & Hahn, T. (2004). Social-Ecological Transformation for Ecosystem Management: the Development of Adaptive Co-management of a Wetland Landscape in Southern Sweden. *Ecology and Society* 9(4), 2. DOI [10.5751/ES-00683-090402](https://doi.org/10.5751/ES-00683-090402)（find-source で Crossref が一致）。manifest D30-S15（= D16-S18）。読んだ写し：https://ecologyandsociety.org/vol9/iss4/art2/main.html （出版社の OA の記事の頁、CC BY。頁が無いので節の名前で控えた）。読んだ節：Abstract、Preparing the System for Change、Building Resilience of the Desired State after Inception、Conclusion。精読ノート：`cs/knowledge/source-notes/D30/D30-S15_olsson-2004.md`。
+**一次情報**：Olsson, P., Folke, C. & Hahn, T. (2004). Social-Ecological Transformation for Ecosystem Management: the Development of Adaptive Co-management of a Wetland Landscape in Southern Sweden. *Ecology and Society* 9(4), 2. DOI [10.5751/ES-00683-090402](https://doi.org/10.5751/ES-00683-090402)（find-source で Crossref が一致）。台帳に行がある。読んだ写し：https://ecologyandsociety.org/vol9/iss4/art2/main.html （出版社の OA の記事の頁、CC BY。頁が無いので節の名前で控えた）。読んだ節：Abstract、Preparing the System for Change、Building Resilience of the Desired State after Inception、Conclusion。精読ノート：精読ノート「Olsson 2004」。
 
 **照合の状態**：本文照合済（出版社の OA の記事の頁。事例研究）。
 
@@ -314,7 +314,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **対立・衝突・統合の読み**：原典に書いてあるのは、失われ続ける湿地の価値と、ばらばらの管理の兼ね合いで、危機の懸念から組み替えが始まり、新しい安定の形（Olsson らは「a new stability landscape」と書く）に移る過程です。Claude の読み替えでは、価値の喪失と今の管理がぶつかり、機会の窓が開いた短い時期に組み替えが起き、新しい組織と共同管理が新たな安定として残ります。至らない形として、少数の担い手に頼る形と信頼の喪失が書かれています。三つの段は一つの事例の段で、段の数が 5 段階と違うことは対応の反証でも根拠でもありません。
 
-**今の報告から直したこと**：報告にこの論はありません。台帳の備考（D30-S15）「Stage 2-5: 危機→適応的共同管理の自己組織化→制度化」は、原典の三つの段（備え・機会の窓・レジリエンスを作る）と区切り方が違います。
+**今の報告から直したこと**：報告にこの論はありません。台帳の備考「Stage 2-5: 危機→適応的共同管理の自己組織化→制度化」は、原典の三つの段（備え・機会の窓・レジリエンスを作る）と区切り方が違います。
 
 ## 公開報告の点検のまとめ
 
@@ -353,41 +353,33 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 ## 判断が要るもの
 
-1. Berkes ら（2000）を読んだ写しは、カナダの資源の共同管理の機関のサイトに置かれた JSTOR の誌面です。大学・研究室・学会のサイトでなく、公的な共同管理の機関のサイトで、上げた人と権利は確かめられていません。この記録では、出所が書ける機関のサイトとして本文照合済にしました。個人の写しと同じ扱いにするなら、TEK は未照合になり、本文照合済は 4 つになります。
+1. Berkes ら（2000）を読んだ写しは、カナダの資源の共同管理の機関のサイトに置かれた JSTOR の誌面です。大学・研究室・学会のサイトでなく、公的な共同管理の機関のサイトで、上げた人と権利は確かめられていません。この記録では、出所が書ける機関のサイトとして本文照合済にしました。個人の写しと同じ扱いにするなら、TEK は未照合になり、本文照合済は 4 つになります。答え（pjdhiro 2026-11-09）：著者・関係者・公的機関・信頼できる企業のサービスに置かれた写しは、匿名の個人の写しと違う。著作権に配慮されているものは本文照合済として採る。この記録の扱いはこのままです（調べ方の規約 §3）。
 2. 世阿弥の「一座建立」と茶の湯の「一座建立」を、一つの論として並べ続けるか。原文の世阿弥は為手と見る人の眼を扱い、茶事の調査は主客の交流を扱います。この記録では報告の単位のまま一つの節にし、中で分けて書きました。
-3. Olsson ら（2004）を論として足すか。この記録では足しました。台帳では似た論文（[similar-papers]）で、D16-S18 と同じ論文です。
+3. Olsson ら（2004）を論として足すか。この記録では足しました。台帳では似た論文（[similar-papers]）で、台帳の「Olsson ら 2004」の行と同じ論文です。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-| source_id の案 | 書誌 | 取得先と性格 | 状態の案 |
-|---|---|---|---|
-| D30-S19 | 笠井哲「『山上宗二記』における茶道理念」pp.15–23（掲載誌の名と号は未確認） | https://tsukuba.repo.nii.ac.jp/record/5333/files/3.pdf （筑波大学の機関リポジトリ。この日は 503 で、Wayback の記録 2026-04-18 で取った） | raw-confirmed（二次資料。山上宗二記の要約） |
-| D30-S20 | Scott, J. C. State Simplifications: Nature, Space and People. *Occasional Paper* Nr.14, Roskilde University, pp.82–122（刊行年は未確認） | http://ojs.ruc.dk/index.php/ocpa/article/download/3411/1608 （大学の OA の誌。この日は接続の拒否で、Wayback の記録 2018-04-11 で取った。文字の層が無い） | raw-confirmed |
-| D30-S21 | Takeuchi, K. (2010). Rebuilding the relationship between people and nature: the Satoyama Initiative. *Ecol. Res.* 25(5), 891–897. DOI 10.1007/s11284-010-0745-8 | 出版社（Wiley、CC BY-NC）。確認画面 | blocked-access（要旨は OpenAlex で読んだ） |
-| D30-S22 | Sillitoe, P. (1998). The Development of Indigenous Knowledge. *Current Anthropology* 39(2), 223–252. DOI 10.1086/204722 | 出版社と Durham 大学のリポジトリが確認画面 | blocked-access |
-| D30-S23 | Ong, W. J. (1982). *Orality and Literacy*. Methuen（Routledge 版 DOI 10.4324/9780203328064） | Internet Archive の貸し出し | citation-only |
-| D30-S24 | Vansina, J. (1985). *Oral Tradition as History*. University of Wisconsin Press. DOI 10.2307/jj.36106057 | Internet Archive の貸し出し | citation-only |
-| D30-S25 | Scott, J. C. (1998). *Seeing Like a State*. Yale University Press | Internet Archive の個人の写しと貸し出し | citation-only |
-| D30-S26 | Sennett, R. (2008). *The Craftsman*. Yale University Press | Internet Archive の貸し出し | citation-only |
-| D30-S27 | 生田久美子 (1987)『「わざ」から知る』東京大学出版会 | 見つからない | citation-only |
-| D30-S28 | 本田安次の著作（どの本かは未確定） | ― | citation-only |
-| D30-S29 | 粟島浩二 (2017).「中小製造業における海外市場展開―旭酒造「獺祭」を事例として―」『県立広島大学経営情報学部論集』第 10 号, pp.47–56 | https://pu-hiroshima.repo.nii.ac.jp/record/870/files/keijoron10047.pdf （大学の機関リポジトリ。この日は保守中。Wayback の記録 2025-04-15 で取った） | raw-confirmed |
+| 書誌 | 取得先と性格 | 台帳での扱いの案 |
+|---|---|---|
+| 笠井哲「『山上宗二記』における茶道理念」pp.15–23（掲載誌の名と号は未確認） | https://tsukuba.repo.nii.ac.jp/record/5333/files/3.pdf （筑波大学の機関リポジトリ。この日は 503 で、Wayback の記録 2026-04-18 で取った） | 手元に保存した（二次資料。山上宗二記の要約） |
+| Scott, J. C. State Simplifications: Nature, Space and People. *Occasional Paper* Nr.14, Roskilde University, pp.82–122（刊行年は未確認） | http://ojs.ruc.dk/index.php/ocpa/article/download/3411/1608 （大学の OA の誌。この日は接続の拒否で、Wayback の記録 2018-04-11 で取った。文字の層が無い） | 手元に保存した |
+| Takeuchi, K. (2010). Rebuilding the relationship between people and nature: the Satoyama Initiative. *Ecol. Res.* 25(5), 891–897. DOI 10.1007/s11284-010-0745-8 | 出版社（Wiley、CC BY-NC）。確認画面 | 自動では取れない（要旨は OpenAlex で読んだ） |
+| Sillitoe, P. (1998). The Development of Indigenous Knowledge. *Current Anthropology* 39(2), 223–252. DOI 10.1086/204722 | 出版社と Durham 大学のリポジトリが確認画面 | 自動では取れない |
+| Ong, W. J. (1982). *Orality and Literacy*. Methuen（Routledge 版 DOI 10.4324/9780203328064） | Internet Archive の貸し出し | 書誌だけ |
+| Vansina, J. (1985). *Oral Tradition as History*. University of Wisconsin Press. DOI 10.2307/jj.36106057 | Internet Archive の貸し出し | 書誌だけ |
+| Scott, J. C. (1998). *Seeing Like a State*. Yale University Press | Internet Archive の個人の写しと貸し出し | 書誌だけ |
+| Sennett, R. (2008). *The Craftsman*. Yale University Press | Internet Archive の貸し出し | 書誌だけ |
+| 生田久美子 (1987)『「わざ」から知る』東京大学出版会 | 見つからない | 書誌だけ |
+| 本田安次の著作（どの本かは未確定） | ― | 書誌だけ |
+| 粟島浩二 (2017).「中小製造業における海外市場展開―旭酒造「獺祭」を事例として―」『県立広島大学経営情報学部論集』第 10 号, pp.47–56 | https://pu-hiroshima.repo.nii.ac.jp/record/870/files/keijoron10047.pdf （大学の機関リポジトリ。この日は保守中。Wayback の記録 2025-04-15 で取った） | 手元に保存した |
 
-追記（2026-11-09・司令塔）：下の案のとおり台帳を直しました。取った写しは手元の raw/ に置きました（Berkes ら 2000 `D30_berkes_2000_rediscovery-tek.pdf`、Gómez-Baggethun ら 2013 `D30_gomez-baggethun_2013_tek-global-change.pdf`、Asmamaw ら 2020 `D30_asmamaw_2020_local-knowledge-resilience.pdf`、Olsson ら 2004 の記事の頁 `D30_olsson_2004_social-ecological-transformation.html`、Scott の論文の OCR の文字 `D30_scott_state-simplifications_roskilde-op14_ocr.txt`）。松木・沼田（2021）の書誌（『社会情報学会大会研究発表論文集』2021, pp.7–11、DOI 10.14836/ssiproceedings.2021.0_7）は、行を足さずに D30-S09 の備考に書きました。精読ノートと wiki の機械的な誤りは、司令塔が原典で確かめたものだけ直しました：精読ノート D30-S07 の「衆人愛嬌」（吉田本 p.46 の頁の画像は「衆人愛敬をもて」）と「機械読取不可」（頁の画像にすれば読める）、精読ノート D30-S09 の実施の回数（PDF 2 面は「合計 6 回」）・引用（PDF 3 面の文に合わせた）・出典と DOI、wiki の松木と沼田の出典。wiki `D30_zeami_classics.md` 28 行の「寿福増長のため、神楽・風流に長ずる者には…」と「一座＝場の全員」は、読んだ頁（pp.36–37・42–47）に見当たりませんが、全文は読んでいないので直さず、wiki との整合の段（段 4）に回しました。
+追記（2026-11-09・司令塔）：下の案のとおり台帳を直しました。取った写しは手元の raw/ に置きました（Berkes ら 2000 手元の PDF、Gómez-Baggethun ら 2013 手元の PDF、Asmamaw ら 2020 手元の PDF、Olsson ら 2004 の記事の頁手元のファイル、Scott の論文の OCR の文字手元のファイル）。松木・沼田（2021）の書誌（『社会情報学会大会研究発表論文集』2021, pp.7–11、DOI 10.14836/ssiproceedings.2021.0_7）は、行を足さずに台帳の「松木孝和 & 沼田秀穂 2021」の行の備考に書きました。精読ノートと wiki の機械的な誤りは、司令塔が原典で確かめたものだけ直しました：精読ノート「世阿弥」の「衆人愛嬌」（吉田本 p.46 の頁の画像は「衆人愛敬をもて」）と「機械読取不可」（頁の画像にすれば読める）、精読ノート「松木孝和 & 沼田秀穂 2021」の実施の回数（PDF 2 面は「合計 6 回」）・引用（PDF 3 面の文に合わせた）・出典と DOI、wiki の松木と沼田の出典。wiki wiki の頁「Zeami」 28 行の「寿福増長のため、神楽・風流に長ずる者には…」と「一座＝場の全員」は、読んだ頁（pp.36–37・42–47）に見当たりませんが、全文は読んでいないので直さず、wiki との整合の段（段 4）に回しました。
 
-台帳の行の直しの案：D30-S01 は取得先に wrrb.ca の写しを足して raw-confirmed に。D30-S05・S06 の「OA」は Internet Archive の貸し出しで OA ではない。D30-S15・S17・S18 は写しを取って読めた（S17 は PLOS の PDF の 1 面の書誌を確かめただけ）。D30-S01・S02・S05・S06・S08・S10 は domain の欄が「citation-only」になっている（欄のずれ）。
+台帳の行の直しの案：台帳の「Berkes ら 2000」の行は取得先に wrrb.ca の写しを足して「手元に保存した」に。台帳の「Lave & Wenger 1991」の行の「OA」は Internet Archive の貸し出しで OA ではない。台帳の「Olsson ら 2004」の行は写しを取って読めた（「Asmamaw ら 2020」は PLOS の PDF の 1 面の書誌を確かめただけ）。台帳の「Berkes ら 2000」の行は domain の欄が「書誌だけ」になっている（欄のずれ）。
 
 ## ブラウザでの保存が要る PDF
 
-| 台帳の行 | 文献 | 開く URL | 止まった理由 | 保存名の案 | 確かめること |
-|---|---|---|---|---|---|
-| D30-S02 | Huntington (2000) | https://www.cclmportal.ca/sites/default/files/2024-02/Ecological%20Applications%20-%202000%20-%20Huntington.pdf | 確認画面（Cloudflare、HTTP 403）。Wayback の写しは無い | D30_huntington_2000_using-tek-in-science.pdf | 1 頁目が Ecol. Appl. 10(5) p.1270 か。TEK と科学の食い違いの書き方 |
-| D30-S22 | Sillitoe (1998) | https://durham-repository.worktribe.com/file/1632337/1/Published%20Journal%20Article | 確認画面（Cloudflare、HTTP 403） | D30_sillitoe_1998_development-of-indigenous-knowledge.pdf | 1 頁目が Current Anthropology 39(2) p.223 か。ページ内で「failure」「conflict」を探し、土地の知と開発の衝突の書き方を見る |
-| D30-S21 | Takeuchi (2010) | https://onlinelibrary.wiley.com/doi/pdfdirect/10.1007/s11284-010-0745-8 | 確認画面と 403 | D30_takeuchi_2010_satoyama-initiative.pdf | ページ内で「underuse」「overuse」を探し、要旨の二つの崩れ方が本文でどう書かれているかを見る |
-| D30-S05 | Lave & Wenger (1991) | https://archive.org/details/situatedlearning0000lave | 貸し出し | （借りて読む。保存はしない） | ページ内で「continuity」「displacement」「butcher」を探し、新参者が周辺に留め置かれる形と、継続と置き換えの矛盾の書き方を見る |
-| D30-S23 | Ong (1982) | https://archive.org/details/oralityliteracyt00ongw | 貸し出し | （借りて読む） | 「homeostatic」の節を探し、文字にすることで失われるものの書き方を見る |
-| D30-S08 | 山上宗二記（『茶道古典全集』第六巻、淡交社） | 国立国会図書館デジタルコレクションで「山上宗二記」「茶道古典全集」を検索 | 図書館の送信サービスの見込み（試していない） | ― | 「一期に一度」と「茶湯者覚悟十体」の原文。笠井の要約の年齢の区切りが原文と合うか |
-| D30-S10 | 不白筆記・茶話抄 | 国立国会図書館デジタルコレクションで「不白筆記」「茶話抄」を検索 | 試していない | ― | 守・破・離の語の初出と、離と本の向き |
+自動で取れなかった原典のうち、ブラウザでの保存を頼むものは、作業の記録（[Issue #73](https://github.com/uminomae/project-design-theory/issues/73)）の表にまとめました。
 
 ## 手順について分かったこと
 

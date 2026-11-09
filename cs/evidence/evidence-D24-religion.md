@@ -12,24 +12,24 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D24-relig
 
 この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。
 
-宗教学の論は、回心の過程の調査、儀礼の論、心理学の講義のような研究者の論と、修行者に向けて書かれた祈りの手引き・頌と序・経典・論書が混ざっています。後者は現象の理論ではなく、修行の道を内側から書いた文書です。この記録で「本文照合済」と書くときは、その文書の本文を読んで頁か段を控えたという意味で、現象の理論を確かめたという意味ではありません（`docs/cs-review/README.md`「規約で決めたこと」D11 の行）。
+宗教学の論は、回心の過程の調査、儀礼の論、心理学の講義のような研究者の論と、修行者に向けて書かれた祈りの手引き・頌と序・経典・論書が混ざっています。後者は現象の理論ではなく、修行の道を内側から書いた文書です。この記録で「本文照合済」と書くときは、その文書の本文を読んで頁か段を控えたという意味で、現象の理論を確かめたという意味ではありません（調べ方の計画と規約「規約で決めたこと」薬学の行）。
 
 本文を読めた原典は、どれも道の途中にある衝突と、道が途切れる形を書いていました。廓庵の『十牛圖頌』は、牛を得たあとも「頑心尚勇，野性猶存」で鞭が要ると書き、序（慈遠）は、牛と人がともに見えなくなる所で終わる前の図が「落空亡」と疑われたと書きます。テレサ（1921 年の英訳）は、第二の住まいを悪魔との「fierce war」の場とし、第七の住まいでも「to stop is to go back」と書きます。al-Hujwīrī（1911 年の英訳）は、酔い（sukr）を重んじる Abū Yazīd と醒め（ṣaḥw）を重んじる Junayd の論争を並べ、酔いに出て「despair」を得て戻った修行者の話を引きます。『十住經』は、第八地の菩薩が諸仏に促されなければ涅槃を取り、衆生を捨てると書きます（T10 no.286 p.521b03–05）。『倶舎論』は、加行の四つの善根のうち頂を「進退兩際」と呼び、煖と頂は退いて失われうると書きます。ジェイムズ（1902）は、回心が宗教から離れる向きにも起きること（counter-conversion）、回心しない人、回心のあとのぶり返しを書いています。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D24-religion.md`、2026-03-18 に LLM が生成、以下「報告」）は 10 の論を取り上げ、日本語版で 3 つを「強い対応」としています。報告は、これらの衝突と途切れる形の多くを落とし、段階の上の側を5段階の段に当てていました。§6 の五つの横断パターンは、調べた跡（phase7）の五つのパターンの題と順をそのまま写したもので、パターン 3 は使わない決まりの「指月」を題にしています。ファナーを「自我の属性が神の属性に置き換わる」と読む所は、al-Hujwīrī と al-Sarrāj がはっきり退けている読みでした。
+今の公開報告（「30 領域調査報告」の宗教学・神秘主義の日本語版、2026-03-18 に LLM が生成、以下「報告」）は 10 の論を取り上げ、日本語版で 3 つを「強い対応」としています。報告は、これらの衝突と途切れる形の多くを落とし、段階の上の側を5段階の段に当てていました。§6 の五つの横断パターンは、調べた跡（phase7）の五つのパターンの題と順をそのまま写したもので、パターン 3 は使わない決まりの「指月」を題にしています。ファナーを「自我の属性が神の属性に置き換わる」と読む所は、al-Hujwīrī と al-Sarrāj がはっきり退けている読みでした。
 
-この記録は 11 の論を並べます（報告の 10 に、Underhill 1911 を足しました）。本文に当たれたのは 11 のうち 10 です。ただし、ランボーは 1999 年の論文のトルコ語訳で読み、本（1993）は読めていません。ターナーは D25 の記録が本文で読んだ 1974 年の論文を参照しています。エリアーデは未照合（書籍）です。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。一面の表は、原典の構造と Claude の読み替えを分けて書きます。高い段・悟り・合一・完成を良いものとしては扱いません。段の数が違う体系を、同じものを指すとは書きません。
+この記録は 11 の論を並べます（報告の 10 に、Underhill 1911 を足しました）。本文に当たれたのは 11 のうち 10 です。ただし、ランボーは 1999 年の論文のトルコ語訳で読み、本（1993）は読めていません。ターナーは人類学・民族学の記録が本文で読んだ 1974 年の論文を参照しています。エリアーデは未照合（書籍）です。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。一面の表は、原典の構造と Claude の読み替えを分けて書きます。高い段・悟り・合一・完成を良いものとしては扱いません。段の数が違う体系を、同じものを指すとは書きません。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D24-religion.md) にあります。退避版の判定（Accept・CA など）は、今の照合の状態の根拠にしていません。
 
 ## 一面の表
 
-照合の状態は `docs/rules/sources.md` §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。頁は各節に控えました。「対立」「衝突」「統合」の欄は、原典に書いてあることを先に書き、Claude の読み替えは「読み替え：」と添えます。
+照合の状態は調べ方の規約 §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。頁は各節に控えました。「対立」「衝突」「統合」の欄は、原典に書いてあることを先に書き、Claude の読み替えは「読み替え：」と添えます。
 
 | 論 | 対立 | 衝突 | 統合／新たな安定、または統合に至らずにどう終わったか | 論の微細さ | 照合の状態 |
 |---|---|---|---|---|---|
 | 1. ランボー：回心の七つの段（1993・1999） | 原典（1999 の訳）は対立の語で書かない。七つの段（文脈・危機・探求・出会い・相互作用・献身・帰結）を並べる | 読める範囲では書かれていない。Di Marzio（2019）は、段は順に進むとは限らず、互いに働き合うと書く | 著者は自分の段の論を普遍とは考えず、選択肢の地図だと書く。至らない形は、読めた範囲では書かれていない（Di Marzio の調査は、加入して離れた人を対象にしている） | 一人の回心から、宗教の伝播まで | 本文照合済（訳。1999 の論文のトルコ語訳）・未照合（書籍。1993） |
-| 2. ターナー：リミナリティと構造／反構造（1969／論文 1974） | 構造と、コミュニタス（反構造） | 抑圧と戦闘的な反対が渦を巻くような闘争（D25 の記録） | 闘争のゆえにもコミュニタスは社会に働く。派閥への分裂、先に組織した側の勝利も書かれる（D25 の記録） | 儀礼の小さな集まりから修道会・社会運動まで | 本文照合済（D25 の記録の 1974 年の論文）・未照合（1969 の書籍） |
+| 2. ターナー：リミナリティと構造／反構造（1969／論文 1974） | 構造と、コミュニタス（反構造） | 抑圧と戦闘的な反対が渦を巻くような闘争（人類学・民族学の記録） | 闘争のゆえにもコミュニタスは社会に働く。派閥への分裂、先に組織した側の勝利も書かれる（人類学・民族学の記録） | 儀礼の小さな集まりから修道会・社会運動まで | 本文照合済（人類学・民族学の記録の 1974 年の論文）・未照合（1969 の書籍） |
 | 3. テレサ：七つの住まい（1577／英訳 1921） | 魂が自ら得る「sweetness in devotion」と、神から来る「spiritual consolations」。魂と悪魔 | 第二の住まいでは悪魔が「fierce war」を仕掛ける。第四の住まいでも、毒のある生き物が入って魂と戦うほうがよいと書く | 第七の住まいの「spiritual marriage」では、ほかの住まいで戦いがあっても中心の平和は失われない。ただし安全ではなく、止まれば退く。マルタとマリアの両方が要る。至らない形として、神に背いて退けば、どれほど高い所にいても全部を失う、と書く | 一人の祈りの生涯 | 本文照合済（訳） |
 | 4. 廓庵：十牛図（『十牛圖頌』） | 牛を探す者と牛。覚に背いて離れたことと、もとから失っていないこと | 牛を得ても「頑心尚勇，野性猶存」で、鞭が要る。鞭と縄を身から離さない | 人と牛がともに空になり（第八）、本源に還ることも「已費功」と退け（第九）、市に入る（第十）。至らない形として、序（慈遠）は、人も牛も見えなくなる所で終わる図が「落空亡」「墮常見」と疑われたと書く。序は十の図そのものも「強起波瀾」と書く | 一人の修行の道 | 本文照合済（漢文の翻刻と Suzuki 1935 の英訳） |
 | 5. ファナーとバカー（スーフィズム） | 消えること（fanāʾ）ととどまること（baqāʾ）。酔い（sukr）と醒め（ṣaḥw） | Abū Yazīd の側は酔いを、Junayd の側は醒めを上に置いて争う | 一つの属性が消えるのは、別の属性がとどまることによる。人が別の者の属性でとどまることはない（鉄は火にならない）。至らない形として、酔いに出て「the evil of intoxication」を見て、絶望を得て戻った修行者の話が引かれる。ファナーを人の本質の消滅と読む人は誤ると書く | 一人の修行者の態度と、学派の論争 | 本文照合済（訳。OCR の文字と頁の画像で読んだ） |
@@ -48,10 +48,10 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Rambo, L. R. (1993). *Understanding Religious Conversion*. Yale UP. DOI 10.12987/9780300170016。manifest D24-S01。Internet Archive は貸し出しだけで、開けませんでした。
-- Rambo, L. R. (1999). Theories of Conversion: Understanding and Interpreting Religious Change. *Social Compass* 46(3), 259–271. DOI 10.1177/003776899046003003（Crossref で確かめた）。`find-source.sh` は OA の写しを見つけませんでした（OpenAlex は closed）。OpenAlex が挙げた CiteSeerX の写しは、Wayback に転送され、429（Temporarily Offline）が返りました。
-- トルコ語訳：Rambo, L.（Hatice Gül 訳）(2011). Din Değiştirme Teorileri: Dinî Değişimi Anlama ve Yorumlama. *KSÜ İlahiyat Fakültesi Dergisi* 17。https://dergipark.org.tr/tr/download/article-file/211775 （トルコの学術誌の公式の公開の場 DergiPark の PDF。先頭が %PDF。1 ページ目の訳注に「Social Compass dergisinde (1999, 46-3: 259-271)」とあり、`find-source.sh check` で題・著者・年が合った）。読んだ頁：誌面の p.216–217（「Süreç Teorisi」の節）。
-- Di Marzio, R. (2019). Experiences of Affiliation to the Italian Soka Gakkai: An Analysis According to the Rambo et al. Integrated Model. *The Journal of CESNUR* 3(5), 108–121. DOI 10.26338/tjoc.2019.3.5.3。manifest D24-S02（手元の PDF。表紙の誌名・巻号・頁・DOI が台帳の今の行と合う）。読んだ頁：pp.108–109・p.118–119。ランボーのモデルを五人の面接に当てた事例研究で、ランボーについては二次です。
+- Rambo, L. R. (1993). *Understanding Religious Conversion*. Yale UP. DOI 10.12987/9780300170016。台帳に行がある。Internet Archive は貸し出しだけで、開けませんでした。
+- Rambo, L. R. (1999). Theories of Conversion: Understanding and Interpreting Religious Change. *Social Compass* 46(3), 259–271. DOI 10.1177/003776899046003003（Crossref で確かめた）。原典を探す道具は OA の写しを見つけませんでした（OpenAlex は closed）。OpenAlex が挙げた CiteSeerX の写しは、Wayback に転送され、429（Temporarily Offline）が返りました。
+- トルコ語訳：Rambo, L.（Hatice Gül 訳）(2011). Din Değiştirme Teorileri: Dinî Değişimi Anlama ve Yorumlama. *KSÜ İlahiyat Fakültesi Dergisi* 17。https://dergipark.org.tr/tr/download/article-file/211775 （トルコの学術誌の公式の公開の場 DergiPark の PDF。先頭が %PDF。1 ページ目の訳注に「Social Compass dergisinde (1999, 46-3: 259-271)」とあり、原典を探す道具の突き合わせ で題・著者・年が合った）。読んだ頁：誌面の p.216–217（「Süreç Teorisi」の節）。
+- Di Marzio, R. (2019). Experiences of Affiliation to the Italian Soka Gakkai: An Analysis According to the Rambo et al. Integrated Model. *The Journal of CESNUR* 3(5), 108–121. DOI 10.26338/tjoc.2019.3.5.3。台帳の「Marzio 2019」の行（手元の PDF。表紙の誌名・巻号・頁・DOI が台帳の今の行と合う）。読んだ頁：pp.108–109・p.118–119。ランボーのモデルを五人の面接に当てた事例研究で、ランボーについては二次です。
 - Lofland, J. & Stark, R. (1965). Becoming a World-Saver. *American Sociological Review* 30(6), 862–875. DOI 10.2307/2090965（Crossref で確かめた）。OA の写しは見つからず、マサリク大学の授業の頁の写しは自動取得に確かめの画面（JavaScript の計算で人かを確かめる画面）を返しました。
 
 **照合の状態**：1999 年の論文は本文照合済（訳）。1993 年の本は未照合（書籍）。Lofland & Stark は未照合。
@@ -78,19 +78,19 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨**：通過儀礼の過渡の期間（リミナル）にある人は、前の地位も次の地位も持たない状態に置かれ、そこで平等な共同性（コミュニタス）が現れる。
 
-**一次情報**：D25 の記録（`evidence-D25-anthropology.md` の「3. ターナー：リミナリティとコミュニタス」）を参照します。Turner, V. (1974). Liminal to liminoid, in play, flow, and ritual. *Rice University Studies* 60(3), 53–92（ライス大学の機関リポジトリ https://hdl.handle.net/1911/63159 ）。台帳 D24-S04（1969 の書籍）・D24-S06（1974 の書籍）は取得できていません。ファン・ヘネップ（D24-S05）も D25 の記録を参照します（英訳 1960 の個人が上げた写しで読んだので未照合）。
+**一次情報**：人類学・民族学の記録（人類学・民族学の記録の「3. ターナー：リミナリティとコミュニタス」）を参照します。Turner, V. (1974). Liminal to liminoid, in play, flow, and ritual. *Rice University Studies* 60(3), 53–92（ライス大学の機関リポジトリ https://hdl.handle.net/1911/63159 ）。台帳の「Turner 1969」の行（1969 の書籍）・台帳の「Turner 1974」の行（1974 の書籍）は取得できていません。ファン・ヘネップも人類学・民族学の記録を参照します（英訳 1960 の個人が上げた写しで読んだので未照合）。
 
-**照合の状態**：本文照合済（D25 の記録の 1974 年の論文）。1969 年の書籍は未照合（書籍）。
+**照合の状態**：本文照合済（人類学・民族学の記録の 1974 年の論文）。1969 年の書籍は未照合（書籍）。
 
-**対立・衝突・統合の読み**：D25 の記録のとおり、原典は構造とコミュニタスの矛盾、抑圧と戦闘的な反対が渦を巻く闘争を書き、その闘争のゆえにもコミュニタスが社会に働くと書いています（1974 pp.81–83）。派閥への分裂と、先に組織した側の勝利も書かれています。
+**対立・衝突・統合の読み**：人類学・民族学の記録のとおり、原典は構造とコミュニタスの矛盾、抑圧と戦闘的な反対が渦を巻く闘争を書き、その闘争のゆえにもコミュニタスが社会に働くと書いています（1974 pp.81–83）。派閥への分裂と、先に組織した側の勝利も書かれています。
 
 **今の報告から直したこと**：
 
 | 今の報告の行 | 判定 | 重さ | 中身 |
 |---|---|---|---|
-| ja 104 行 betwixt and between、ファン・ヘネップの三段階から出発 | 一致 | ― | D25 の記録（1974 p.57） |
-| ja 104 行「構造→反構造→再構造化の弁証法的循環を提示」 | 未判定 | 中 | 1974 年の論文で「弁証法」の語を確かめていない。原典が書くのは循環より、闘争と分裂と片方の勝利（D25 の記録） |
-| ja 106〜108 行 リミナリティを縁に当て、構造との闘争に触れない | 抜け | 中 | D25 の記録と同じ指摘 |
+| ja 104 行 betwixt and between、ファン・ヘネップの三段階から出発 | 一致 | ― | 人類学・民族学の記録（1974 p.57） |
+| ja 104 行「構造→反構造→再構造化の弁証法的循環を提示」 | 未判定 | 中 | 1974 年の論文で「弁証法」の語を確かめていない。原典が書くのは循環より、闘争と分裂と片方の勝利（人類学・民族学の記録） |
+| ja 106〜108 行 リミナリティを縁に当て、構造との闘争に触れない | 抜け | 中 | 人類学・民族学の記録と同じ指摘 |
 | ja 76 行「部分的な対応」、en 62 行 Strong | 未判定（版の食い違い） | 中 | 下の「版の間の食い違い」 |
 
 ### 3. テレサ：七つの住まい
@@ -99,7 +99,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- St. Teresa of Jesus. *The Interior Castle or The Mansions*. The Benedictines of Stanbrook 訳、Benedict Zimmerman 編・注。第 3 版、Thomas Baker, London, 1921（Imprimatur 1921 年 2 月 24 日）。手元の PDF は Christian Classics Ethereal Library（CCEL）の組み直しで、印刷版の頁の番号が本文の欄外に入っています。manifest D24-S07。パブリックドメイン。頁は印刷版（1921）の頁で控え、括弧に CCEL の頁を添えます。読んだ頁：pp.58–60（第二の住まい）、pp.88–93（第四の住まい第一章）、p.114（第四の住まい第三章）、pp.275–277・pp.283–284（第七の住まい第二・三章）、pp.291–294（第七の住まい第四章）。
+- St. Teresa of Jesus. *The Interior Castle or The Mansions*. The Benedictines of Stanbrook 訳、Benedict Zimmerman 編・注。第 3 版、Thomas Baker, London, 1921（Imprimatur 1921 年 2 月 24 日）。手元の PDF は Christian Classics Ethereal Library（CCEL）の組み直しで、印刷版の頁の番号が本文の欄外に入っています。台帳に行がある。パブリックドメイン。頁は印刷版（1921）の頁で控え、括弧に CCEL の頁を添えます。読んだ頁：pp.58–60（第二の住まい）、pp.88–93（第四の住まい第一章）、p.114（第四の住まい第三章）、pp.275–277・pp.283–284（第七の住まい第二・三章）、pp.291–294（第七の住まい第四章）。
 - 西語の原文（『Las Moradas』）は読んでいません。
 
 **照合の状態**：本文照合済（訳）。
@@ -132,7 +132,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 **一次情報**：
 
 - 『十牛圖頌』（住鼎州梁山廓庵和尚十牛圖頌并序）。卍續藏（新纂大日本續藏經）第 64 冊 no.1269、pp.773b–775a。CBETA の翻刻（https://cbetaonline.dila.edu.tw/zh/X1269 。CBETA の API で取った）。翻刻の句読点は、CBETA が「AI」による句読と表示しています。校勘の注として、「已」「巳」などの文字の違いが卍續藏との間で 9 か所あります。二つ目の翻刻（SAT は大正藏だけで卍續藏を含まない）では照らしていません。頌のほかに、石鼓夷和尚と壞衲璉和尚の「和」が各図に付いています。
-- Suzuki, D. T. (1935). *Manual of Zen Buddhism*. Kyoto: The Eastern Buddhist Society（The Ataka Buddhist Library。序の日付 Kyoto, August 1935）。手元の走査は二つに分かれ、表紙に国立国会図書館の印があります。manifest D24-S10。走査は見開き二頁で一つの PDF の頁です。part1 の PDF の 87 頁が誌面の pp.150–151、93 頁が図版と p.157、95 頁が図版と p.159、96 頁が p.160 と図版、97 頁が図版と p.161、98 頁が pp.162–163。読んだ頁（頁の画像で）：pp.vii–ix（目次）、pp.150–151（前書き）、p.157、pp.159–161、pp.162–163。
+- Suzuki, D. T. (1935). *Manual of Zen Buddhism*. Kyoto: The Eastern Buddhist Society（The Ataka Buddhist Library。序の日付 Kyoto, August 1935）。手元の走査は二つに分かれ、表紙に国立国会図書館の印があります。台帳に行がある。走査は見開き二頁で一つの PDF の頁です。part1 の PDF の 87 頁が誌面の pp.150–151、93 頁が図版と p.157、95 頁が図版と p.159、96 頁が p.160 と図版、97 頁が図版と p.161、98 頁が pp.162–163。読んだ頁（頁の画像で）：pp.vii–ix（目次）、pp.150–151（前書き）、p.157、pp.159–161、pp.162–163。
 - Suzuki は二つの版を載せています。「The Ten Oxherding Pictures, I」（pp.150–161）は廓庵の版で、絵は周文（15 世紀）。「The Ten Oxherding Pictures, II」（p.162 から）は作者の分からない版で、普明の頌を英訳し、最初の図は「未牧」、二つ目は「初調」です。
 
 **照合の状態**：本文照合済（漢文の頌と序の翻刻、Suzuki 1935 の英訳）。文書の性格は修行の手引き（頌と序）です。
@@ -225,7 +225,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨**：ギフォード講義（1901–1902）。個人の宗教的な経験を、自伝や手紙の記述から集めて心理学的に分類した講義録。第 VIII 講で分裂した自己とその統一、第 IX・X 講で回心を扱います。
 
-**一次情報**：James, W. (1902). *The Varieties of Religious Experience: A Study in Human Nature*. New York: Longmans, Green, and Co. 手元の PDF は Internet Archive のトロント大学の走査（varietiesofrelig00jameuoft）で、文字の層があります（OCR）。manifest D24-S11。パブリックドメイン。目次の p.x は頁の画像でも確かめました。読んだ頁：pp.viii–x（目次）、pp.175–177、pp.204–208、pp.257–258、pp.271–272（注）。
+**一次情報**：James, W. (1902). *The Varieties of Religious Experience: A Study in Human Nature*. New York: Longmans, Green, and Co. 手元の PDF は Internet Archive のトロント大学の走査（varietiesofrelig00jameuoft）で、文字の層があります（OCR）。台帳に行がある。パブリックドメイン。目次の p.x は頁の画像でも確かめました。読んだ頁：pp.viii–x（目次）、pp.175–177、pp.204–208、pp.257–258、pp.271–272（注）。
 
 **照合の状態**：本文照合済。
 
@@ -253,7 +253,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨**：報告によれば、均質な俗の空間と時間が、聖なるものの現れ（ヒエロファニー）で質的に分けられる、とする比較宗教学の論。
 
-**一次情報**：Eliade, M. (1957). *Das Heilige und das Profane*. Rowohlt／英訳 *The Sacred and the Profane*. W. R. Trask 訳. Harcourt, Brace, 1959。台帳に行がありません。著者は 1986 年没で、書籍は保護期間の中です。ロリンズ大学の教員の授業の頁（myweb.rollins.edu の「the_Sacred & ProfaneEliade.htm」）は、教員の短いノートで、本文の写しではありませんでした。一般の検索で出た PDF は、上げた人の分からない写しか、見出しだけを並べた頁でした。Otto（1917／英訳 1923。手元 D24-S12。Oxford UP の第 2 版 1950 年・1952 年の刷）は、エリアーデが出発点にした本ですが、報告の論ではないので読んでいません。
+**一次情報**：Eliade, M. (1957). *Das Heilige und das Profane*. Rowohlt／英訳 *The Sacred and the Profane*. W. R. Trask 訳. Harcourt, Brace, 1959。台帳に行がありません。著者は 1986 年没で、書籍は保護期間の中です。ロリンズ大学の教員の授業の頁（myweb.rollins.edu の「the_Sacred & ProfaneEliade.htm」）は、教員の短いノートで、本文の写しではありませんでした。一般の検索で出た PDF は、上げた人の分からない写しか、見出しだけを並べた頁でした。Otto（1917／英訳 1923。手元台帳の「Otto 1917」の行。Oxford UP の第 2 版 1950 年・1952 年の刷）は、エリアーデが出発点にした本ですが、報告の論ではないので読んでいません。
 
 **照合の状態**：未照合（書籍）。
 
@@ -271,9 +271,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- al-Hujwīrī 1911（5 の節と同じ走査。https://archive.org/details/kashfalmahjub00usmauoft 。manifest D24-S22）。読んだ頁：pp.180–182（「The distinction between a 'State' (ḥál) and a 'Station' (maqám)」）。
-- al-Sarrāj 1914（5 の節と同じ走査。https://archive.org/details/kitaballuma00sarruoft 。manifest D24-S23）の英文の要約。読んだ頁：pp.12–16（第 XIX〜XXVIII 章）。
-- Nicholson, R. A. (1914). *The Mystics of Islam*. London: G. Bell。Internet Archive のジョージ・ワシントン大学図書館の走査（https://archive.org/details/39020000529167-themysticsofisl 。manifest D24-S24。1963 年の Routledge & Kegan Paul の再刊）を OCR の文字で読みました。頁の画像は見ていません。著者は 1945 年没で、本文は保護期間を過ぎています。読んだ頁：pp.28–30。
+- al-Hujwīrī 1911（5 の節と同じ走査。https://archive.org/details/kashfalmahjub00usmauoft 。台帳に行がある）。読んだ頁：pp.180–182（「The distinction between a 'State' (ḥál) and a 'Station' (maqám)」）。
+- al-Sarrāj 1914（5 の節と同じ走査。https://archive.org/details/kitaballuma00sarruoft 。台帳に行がある）の英文の要約。読んだ頁：pp.12–16（第 XIX〜XXVIII 章）。
+- Nicholson, R. A. (1914). *The Mystics of Islam*. London: G. Bell。Internet Archive のジョージ・ワシントン大学図書館の走査（https://archive.org/details/39020000529167-themysticsofisl 。台帳に行がある。1963 年の Routledge & Kegan Paul の再刊）を OCR の文字で読みました。頁の画像は見ていません。著者は 1945 年没で、本文は保護期間を過ぎています。読んだ頁：pp.28–30。
 - al-Qushayrī『Risāla』と al-Anṣārī『Manāzil al-Sāʾirīn』は読んでいません。
 
 **照合の状態**：本文照合済（訳。al-Hujwīrī と al-Sarrāj の要約）。Nicholson 1914 は研究者の概説で二次資料です。クシャイリーとアンサーリーは未照合です。
@@ -302,9 +302,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**（どれも CBETA の翻刻。大正藏が底本。CBETA の API で取った。句読点は CBETA の付けたもの）：
 
-- 『十住經』（鳩摩羅什 譯）、大正藏 T10 no.286（https://cbetaonline.dila.edu.tw/zh/T0286 。manifest D24-S19）。十地を説く経（『華嚴經』十地品・『十地經』と同じ本の別の訳）。読んだ段：卷 3 の不動地第八、p.521a17–b25。
-- 『阿毘達磨俱舍論』（世親 造、玄奘 譯）、大正藏 T29 no.1558（https://cbetaonline.dila.edu.tw/zh/T1558 。manifest D24-S20）、卷 22・23「分別賢聖品」。読んだ段：p.119b20–c07、p.120a10–c27。
-- 『成唯識論』（護法等 造、玄奘 譯）、大正藏 T31 no.1585（https://cbetaonline.dila.edu.tw/zh/T1585 。manifest D24-S21）、卷 9。読んだ段：p.48b05–24、p.49b11–21、p.51a14–23。
+- 『十住經』（鳩摩羅什 譯）、大正藏 T10 no.286（https://cbetaonline.dila.edu.tw/zh/T0286 。台帳に行がある）。十地を説く経（『華嚴經』十地品・『十地經』と同じ本の別の訳）。読んだ段：卷 3 の不動地第八、p.521a17–b25。
+- 『阿毘達磨俱舍論』（世親 造、玄奘 譯）、大正藏 T29 no.1558（https://cbetaonline.dila.edu.tw/zh/T1558 。台帳に行がある）、卷 22・23「分別賢聖品」。読んだ段：p.119b20–c07、p.120a10–c27。
+- 『成唯識論』（護法等 造、玄奘 譯）、大正藏 T31 no.1585（https://cbetaonline.dila.edu.tw/zh/T1585 。台帳に行がある）、卷 9。読んだ段：p.48b05–24、p.49b11–21、p.51a14–23。
 - 二つ目の翻刻（SAT 大正藏テキストデータベース）は、頁の本文が後から読み込まれる作りで、自動では取れませんでした。二つの翻刻での照らし合わせはしていません。
 
 **照合の状態**：本文照合済（漢文の翻刻）。文書の性格は経典と論書です。
@@ -330,9 +330,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 ### 11. Underhill：神秘家の道（報告に無い論を足した）
 
-**要旨**：多くの神秘家の伝記と著作を重ねた「composite portrait」から、神秘家の発達を五つの段（目覚め・浄化・照明・暗夜・合一）に分けた研究書（1911）。報告に無い論ですが、本文に当たれ、段の間の揺れと、先に進まない形をはっきり書いているので足しました（README「調査の手順」1）。台帳の [similar-papers] の行（D24-S14）です。段の数が5段階と同じであることは、似ていることの根拠に数えません。
+**要旨**：多くの神秘家の伝記と著作を重ねた「composite portrait」から、神秘家の発達を五つの段（目覚め・浄化・照明・暗夜・合一）に分けた研究書（1911）。報告に無い論ですが、本文に当たれ、段の間の揺れと、先に進まない形をはっきり書いているので足しました（README「調査の手順」1）。台帳の [similar-papers] の行です。段の数が5段階と同じであることは、似ていることの根拠に数えません。
 
-**一次情報**：Underhill, E. (1911). *Mysticism: A Study in the Nature and Development of Man's Spiritual Consciousness*. London: Methuen。台帳 D24-S14 の URL（https://archive.org/download/mysticismstudyin1911unde/mysticismstudyin1911unde.pdf ）の資料で、Internet Archive のブリガム・ヤング大学 Harold B. Lee Library の走査です。パブリックドメイン。同じ資料の OCR の文字で読み、p.205 は頁の画像で確かめました（走査の n224）。読んだ頁：pp.203–206（Part II 第 I 章「Introductory」）。
+**一次情報**：Underhill, E. (1911). *Mysticism: A Study in the Nature and Development of Man's Spiritual Consciousness*. London: Methuen。台帳の「Underhill 1911」の行の URL（https://archive.org/download/mysticismstudyin1911unde/mysticismstudyin1911unde.pdf ）の資料で、Internet Archive のブリガム・ヤング大学 Harold B. Lee Library の走査です。パブリックドメイン。同じ資料の OCR の文字で読み、p.205 は頁の画像で確かめました（走査の n224）。読んだ頁：pp.203–206（Part II 第 I 章「Introductory」）。
 
 **照合の状態**：本文照合済。研究者が伝記を重ねて作った分類で、文書の性格は研究書です。
 
@@ -359,7 +359,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | 強い対応の一つ | 「仏教五道」（86 行）と表の「菩薩十地と五道」（84 行） | ― | 「菩薩十地・五道」 | ― |
 | §6 の中身 | 五つの横断パターン（phase7 の題と順） | 三つの段落で、題も中身も違う | 91 行に「努力と恩寵」 | L-5 の保持論点 |
 
-同じ報告の訳でなく、版ごとに別に生成されたことが食い違いの出どころと見られます（D18・D22 と同じ）。pres は冒頭の数と表の数が同じ版の中で合いません。
+同じ報告の訳でなく、版ごとに別に生成されたことが食い違いの出どころと見られます（社会学・経営学と同じ）。pres は冒頭の数と表の数が同じ版の中で合いません。
 
 ### 横断の節（§6・§7・§8）
 
@@ -367,7 +367,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 |---|---|---|---|
 | ja 180〜184 行 パターン 1「『縁』における受動性への転換」「少なくとも4つの異なる文化圏」 | 付け足し | 中 | 題と中身は phase7 5〜14 行のパターン 1 の写しで、元は phase6 191〜193 行の「仮説1：『縁の受動性転換』仮説 [SPECULATIVE]」。報告は「記述されています」と事実として書く。原典は、テレサ（pp.90–91）・al-Hujwīrī（p.181）・ジェイムズ（p.208）でそれぞれの区別を書くが、どれも「縁」の段の性質としてでなく、テレサは順に決まりが無いと書き（p.89）、編者は観想を受け身の状態でないと注する（p.88 の注）。仏教の「般若は生じるもので作るものではない」は、出典が報告にも調べた跡にも無い |
 | ja 186〜190 行 パターン 2「束の二重構造——『持続』と『帰還』」 | 言い過ぎ | 中 | phase7 16〜29 行の写し。テレサの第七の住まいは安全でなく止まれば退く（pp.275–276・p.291）。十牛図の第十は本源に還ることを退けたあとに市に入る（4 の節）。エリアーデは未照合 |
-| ja 192 行 パターン 3 の題「段階数の多様性——『指月』の例証」 | 取り違え | 中 | 「異なる理論が同じ構造を指す」を指月で言わない決まり（README「規約で決めたこと」・`stance-theories.md` の指月の行）。題は phase7 31 行「『指月』の実証的基盤」の写しで、元は phase6 66 行・退避版 165 行・460 行 |
+| ja 192 行 パターン 3 の題「段階数の多様性——『指月』の例証」 | 取り違え | 中 | 「異なる理論が同じ構造を指す」を指月で言わない決まり（README「規約で決めたこと」・理論との距離の規約の指月の行）。題は phase7 31 行「『指月』の実証的基盤」の写しで、元は phase6 66 行・退避版 165 行・460 行 |
 | ja 196 行「3段階から100段階まで、『未分化→動揺→境界での転換→新秩序の成立→持続/帰還』という全体構造は共有されています」 | 付け足し | 中 | phase7 41 行の「同じ『月』…を指している」から指月の語だけを外した文。原典は、地図どうしが合わない（Nicholson p.28）、段が抜け順が逆になる（Underhill p.204）と書く。段の数が違う体系を同じものとは書けない |
 | ja 204〜206 行 パターン 5「全10理論において…『縁→渦』の接続」「最も構造的に堅い部分」 | 言い過ぎ | 中 | エリアーデは未照合、ジェイムズは段のモデルを出していない（報告自身 148 行）。phase7 57 行の写し |
 | ja 220〜222 行 §7「渦の二つの型——『置換』と『消失』」 | 取り違え | 高 | 「置換」は al-Hujwīrī（pp.244–245）と al-Sarrāj（要約 p.112）が退ける読み。出どころは phase6 211 行の保持論点 3（退避版 201 行） |
@@ -379,7 +379,7 @@ ks の公開ページの用語は、ja・en・pres・退避版・phase5〜7 の�
 
 ### テンプレート由来の表示
 
-「立ち位置明示」（3 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6」「Phase 7」（30 行・38 行）、「方法論的開示（S60）」（46 行）、「温度帯の分布」（86 行）、「安全弁」（88 行）、「結びの温度開示」「温度帯」（246〜250 行）、「Colophon」（252〜262 行。generator_model claude-opus-4-6）。51 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（writing.md §1-1・§1-8）。ほかの分野と同じく、テンプレートで直します。
+「立ち位置明示」（3 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6」「Phase 7」（30 行・38 行）、「方法論的開示（S60）」（46 行）、「温度帯の分布」（86 行）、「安全弁」（88 行）、「結びの温度開示」「温度帯」（246〜250 行）、「Colophon」（252〜262 行。generator_model claude-opus-4-6）。51 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（書き方の規約 §1-1・§1-8）。ほかの分野と同じく、テンプレートで直します。
 
 ### 誤りの出どころ
 
@@ -396,9 +396,9 @@ ks の公開ページの用語は、ja・en・pres・退避版・phase5〜7 の�
 | 版ごとの件数の食い違い | ja・en・pres が別々に生成されたこと |
 | 型 F の表示 | 報告のテンプレート |
 
-DR（`202602-deep-research-30domains-gpt/DR-D24-religious-studies.md`）には、普明・置換・ジュナイドの語は見つかりませんでした。
+DR（2026-02 の DR）には、普明・置換・ジュナイドの語は見つかりませんでした。
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 E（「最も」の言い切り）：「最も強い対応は束＝第七の住まいです」（116 行）、「束→場循環の最も視覚的に明瞭な表現」（124 行）、「本調査全体で最も精緻な『縁』の内部構造記述」（172 行）、「5段階モデルの中で最も構造的に堅い部分」（206 行・240 行）。30 領域を比べた跡はありません。
 - 型 H（原典に無い体系）：「段階数は『記述の解像度パラメータ』」（164 行・196 行）、渦の「置換型」「消失型」（132 行・222 行）。
@@ -411,41 +411,37 @@ DR（`202602-deep-research-30domains-gpt/DR-D24-religious-studies.md`）には�
 pjdhiro に聞くものは、この分野からは新しく出ていません。規約で答えが出たものは、次のとおり決めて書きました。
 
 - 報告に無い Underhill（1911）を 11 番目の論として足しました。本文に当たれ、段の間の揺れと先に進まない形をはっきり書いているからです（README「調査の手順」1）。五つの段という数の一致は、似ていることの根拠に数えていません（README「規約で決めたこと」の、語が同じことを対応の根拠に数えない、と同じ扱い）。
-- ランボーの 1999 年の論文は、学術誌に載ったトルコ語訳で読み、「本文照合済（訳）」としました（README「規約で決めたこと」D18 の翻訳の行）。1993 年の本は未照合（書籍）のままです。
-- ターナーは D25 の記録を参照し、読み直していません（「規約で決めたこと」分野をまたぐ理論の行）。
+- ランボーの 1999 年の論文は、学術誌に載ったトルコ語訳で読み、「本文照合済（訳）」としました（README「規約で決めたこと」社会学の翻訳の行）。1993 年の本は未照合（書籍）のままです。
+- ターナーは人類学・民族学の記録を参照し、読み直していません（「規約で決めたこと」分野をまたぐ理論の行）。
 - 漢文の翻刻（CBETA）は、底本（卍續藏・大正藏の冊・番号・頁）と、句読点の性格（『十牛圖頌』は CBETA が AI の句読と表示）を添えました。二つ目の翻刻での照らし合わせはできていません。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D24-S18 | 廓庵『十牛圖頌』（住鼎州梁山廓庵和尚十牛圖頌并序。総序 慈遠）。卍續藏 第 64 冊 no.1269, pp.773b–775a | https://cbetaonline.dila.edu.tw/zh/X1269 （CBETA の翻刻。句読は AI。API の JSON の保存名の案 `D24_kuoan_12c_shiniuto-song_cbeta-x1269.json`） | raw-confirmed（翻刻。CBETA の API の JSON を手元に置いた `D24_kuoan_12c_shiniuto-song_cbeta-x1269.json`） |
-| D24-S19 | 『十住經』鳩摩羅什 譯。大正藏 T10 no.286（卷 3 不動地第八） | https://cbetaonline.dila.edu.tw/zh/T0286 | raw-confirmed（翻刻。卷 3 の JSON を手元に置いた `D24_jujukyo_t0286-juan3_cbeta.json`） |
-| D24-S20 | 世親『阿毘達磨俱舍論』玄奘 譯。大正藏 T29 no.1558（卷 22・23 分別賢聖品） | https://cbetaonline.dila.edu.tw/zh/T1558 | raw-confirmed（翻刻。卷 22 と 23 の JSON を手元に置いた `D24_kusharon_t1558-juan22_cbeta.json`） |
-| D24-S21 | 護法等『成唯識論』玄奘 譯。大正藏 T31 no.1585（卷 9） | https://cbetaonline.dila.edu.tw/zh/T1585 | raw-confirmed（翻刻。卷 9 の JSON を手元に置いた `D24_joyuishikiron_t1585-juan9_cbeta.json`） |
-| D24-S22 | al-Hujwīrī. *The Kashf al-Maḥjūb*. R. A. Nicholson 訳. E. J. W. Gibb Memorial Series XVII. Leyden: Brill / London: Luzac, 1911 | https://archive.org/details/kashfalmahjub00usmauoft （トロント大学の走査。パブリックドメイン。PDF の保存名の案 `D24_hujwiri_1911_kashf-al-mahjub.pdf`） | raw-confirmed（手元に置いたのは同じ資料の OCR の文字 `D24_hujwiri_1911_kashf-al-mahjub_djvu.txt`） |
-| D24-S23 | al-Sarrāj. *The Kitáb al-Lumaʿ fi'l-Taṣawwuf*. R. A. Nicholson 校訂. Gibb Memorial Series XXII. Leyden: Brill / London: Luzac, 1914 | https://archive.org/details/kitaballuma00sarruoft （トロント大学の走査。保存名の案 `D24_sarraj_1914_kitab-al-luma.pdf`） | raw-confirmed（手元に置いたのは同じ資料の OCR の文字 `D24_sarraj_1914_kitab-al-luma_djvu.txt`） |
-| D24-S24 | Nicholson, R. A. (1914). *The Mystics of Islam*. London: G. Bell（読んだ走査は 1963 年の Routledge & Kegan Paul の再刊） | https://archive.org/details/39020000529167-themysticsofisl （ジョージ・ワシントン大学図書館の走査） | raw-confirmed（手元に置いたのは同じ資料の OCR の文字 `D24_nicholson_1914_mystics-of-islam_djvu.txt`） |
-| D24-S25 | Waite, A. E.（編訳）(1893). *The Hermetic Museum, Restored and Enlarged*. 2 vols. London: James Elliott | https://archive.org/details/b24927363_0001 ・ https://archive.org/details/b24927363_0002 （グラスゴー大学図書館の走査） | raw-confirmed（手元に置いたのは同じ資料の OCR の文字 `D24_waite_1893_hermetic-museum-v1_djvu.txt`。第 2 巻は `_v2_`） |
-| D24-S26 | Rambo, L. R. (1999). Theories of Conversion: Understanding and Interpreting Religious Change. *Social Compass* 46(3), 259–271. DOI 10.1177/003776899046003003。トルコ語訳：Hatice Gül 訳, *KSÜ İlahiyat Fakültesi Dergisi* 17 (2011) | 原文：SAGE（有料）。訳：https://dergipark.org.tr/tr/download/article-file/211775 （保存名の案 `D24_rambo_1999_theories-of-conversion_tr-2011.pdf`） | raw-confirmed（訳の PDF を手元に置いた `D24_rambo_1999_theories-of-conversion_tr-2011.pdf`。英語の原文は未取得） |
-| D24-S27 | Lofland, J. & Stark, R. (1965). Becoming a World-Saver: A Theory of Conversion to a Deviant Perspective. *American Sociological Review* 30(6), 862–875. DOI 10.2307/2090965 | JSTOR（有料）。マサリク大学の授業の写し（確かめの画面） | blocked-access |
-| D24-S28 | Eliade, M. (1957). *Das Heilige und das Profane*. Rowohlt／W. R. Trask 訳 *The Sacred and the Profane*. Harcourt, Brace, 1959 | 書籍 | citation-only |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| 廓庵『十牛圖頌』（住鼎州梁山廓庵和尚十牛圖頌并序。総序 慈遠）。卍續藏 第 64 冊 no.1269, pp.773b–775a | https://cbetaonline.dila.edu.tw/zh/X1269 （CBETA の翻刻。句読は AI。API の JSON の保存名の案手元のファイル） | 手元に保存した（翻刻。CBETA の API の JSON を手元に置いた手元のファイル） |
+| 『十住經』鳩摩羅什 譯。大正藏 T10 no.286（卷 3 不動地第八） | https://cbetaonline.dila.edu.tw/zh/T0286 | 手元に保存した（翻刻。卷 3 の JSON を手元に置いた手元のファイル） |
+| 世親『阿毘達磨俱舍論』玄奘 譯。大正藏 T29 no.1558（卷 22・23 分別賢聖品） | https://cbetaonline.dila.edu.tw/zh/T1558 | 手元に保存した（翻刻。卷 22 と 23 の JSON を手元に置いた手元のファイル） |
+| 護法等『成唯識論』玄奘 譯。大正藏 T31 no.1585（卷 9） | https://cbetaonline.dila.edu.tw/zh/T1585 | 手元に保存した（翻刻。卷 9 の JSON を手元に置いた手元のファイル） |
+| al-Hujwīrī. *The Kashf al-Maḥjūb*. R. A. Nicholson 訳. E. J. W. Gibb Memorial Series XVII. Leyden: Brill / London: Luzac, 1911 | https://archive.org/details/kashfalmahjub00usmauoft （トロント大学の走査。パブリックドメイン。PDF の保存名の案手元の PDF） | 手元に保存した（手元に置いたのは同じ資料の OCR の文字手元のファイル） |
+| al-Sarrāj. *The Kitáb al-Lumaʿ fi'l-Taṣawwuf*. R. A. Nicholson 校訂. Gibb Memorial Series XXII. Leyden: Brill / London: Luzac, 1914 | https://archive.org/details/kitaballuma00sarruoft （トロント大学の走査。保存名の案手元の PDF） | 手元に保存した（手元に置いたのは同じ資料の OCR の文字手元のファイル） |
+| Nicholson, R. A. (1914). *The Mystics of Islam*. London: G. Bell（読んだ走査は 1963 年の Routledge & Kegan Paul の再刊） | https://archive.org/details/39020000529167-themysticsofisl （ジョージ・ワシントン大学図書館の走査） | 手元に保存した（手元に置いたのは同じ資料の OCR の文字手元のファイル） |
+| Waite, A. E.（編訳）(1893). *The Hermetic Museum, Restored and Enlarged*. 2 vols. London: James Elliott | https://archive.org/details/b24927363_0001 ・ https://archive.org/details/b24927363_0002 （グラスゴー大学図書館の走査） | 手元に保存した（手元に置いたのは同じ資料の OCR の文字手元のファイル。第 2 巻は `_v2_`） |
+| Rambo, L. R. (1999). Theories of Conversion: Understanding and Interpreting Religious Change. *Social Compass* 46(3), 259–271. DOI 10.1177/003776899046003003。トルコ語訳：Hatice Gül 訳, *KSÜ İlahiyat Fakültesi Dergisi* 17 (2011) | 原文：SAGE（有料）。訳：https://dergipark.org.tr/tr/download/article-file/211775 （保存名の案手元の PDF） | 手元に保存した（訳の PDF を手元に置いた手元の PDF。英語の原文は未取得） |
+| Lofland, J. & Stark, R. (1965). Becoming a World-Saver: A Theory of Conversion to a Deviant Perspective. *American Sociological Review* 30(6), 862–875. DOI 10.2307/2090965 | JSTOR（有料）。マサリク大学の授業の写し（確かめの画面） | 自動では取れない |
+| Eliade, M. (1957). *Das Heilige und das Profane*. Rowohlt／W. R. Trask 訳 *The Sacred and the Profane*. Harcourt, Brace, 1959 | 書籍 | 書誌だけ |
 
 既存の行に書き足す案：
 
-- D24-S07：訳者は The Benedictines of Stanbrook、編・注は Benedict Zimmerman。第 3 版（Thomas Baker, London, 1921）。手元の PDF は CCEL の組み直しで、印刷版の頁が欄外にある。
-- D24-S10：手元の走査は 1935 年の京都版（The Eastern Buddhist Society、序の日付 August 1935）。見開き二頁で一つの PDF の頁。廓庵の版は pp.150–161（part1 の PDF の 87〜97 頁）、作者の分からない普明の頌の版は p.162 から。備考の「(1935/1950)」の 1950 年の版は手元に無い。
-- D24-S12：手元の PDF は Oxford UP の第 2 版（1950 年）の 1952 年の刷（Harvey 訳）。
-- D24-S14：url-verified の URL の資料（ブリガム・ヤング大学の走査）で本文を読めた。raw-confirmed に上げる候補。
-- D24-S02：手元の PDF の表紙の書誌（3(5), 108–121, DOI 10.26338/tjoc.2019.3.5.3）は台帳の今の行と合う。
+- 台帳の「テレサ 1577」の行：訳者は The Benedictines of Stanbrook、編・注は Benedict Zimmerman。第 3 版（Thomas Baker, London, 1921）。手元の PDF は CCEL の組み直しで、印刷版の頁が欄外にある。
+- 台帳の「Suzuki 1935」の行：手元の走査は 1935 年の京都版（The Eastern Buddhist Society、序の日付 August 1935）。見開き二頁で一つの PDF の頁。廓庵の版は pp.150–161（part1 の PDF の 87〜97 頁）、作者の分からない普明の頌の版は p.162 から。備考の「(1935/1950)」の 1950 年の版は手元に無い。
+- 台帳の「Otto 1917」の行：手元の PDF は Oxford UP の第 2 版（1950 年）の 1952 年の刷（Harvey 訳）。
+- 台帳の「Underhill 1911」の行：取得先を確かめた の URL の資料（ブリガム・ヤング大学の走査）で本文を読めた。「手元に保存した」に上げる候補。
+- 台帳の「Di Marzio 2019」の行：手元の PDF の表紙の書誌（3(5), 108–121, DOI 10.26338/tjoc.2019.3.5.3）は台帳の今の行と合う。
 
 ## ブラウザでの保存が要る PDF
 
-| 台帳の行 | 文献 | 開く URL | ページ内で探す語 | 保存名の案 | 止まった理由と、それで確かめられること |
-|---|---|---|---|---|---|
-| D24-S27（案） | Lofland & Stark 1965 | https://is.muni.cz/el/phil/podzim2023/RLBcB535/um/Lofland_Stark_Becoming_a_World-Saver.txt | 「predisposing conditions」「turning point」 | `D24_lofland-stark_1965_becoming-a-world-saver.txt` | 自動取得に、JavaScript の計算で人かを確かめる画面が返った。保存できれば、回心の段の条件と、条件がそろわずに途中で離れる人をどう書いているかを確かめられる |
-| D24-S26（案） | Rambo 1999（英語の原文） | https://doi.org/10.1177/003776899046003003 | 「process theory」「cartography」 | `D24_rambo_1999_theories-of-conversion.pdf` | SAGE の有料の頁。OpenAlex が挙げた CiteSeerX の写しは Wayback に転送され、429（Temporarily Offline）が返った。日をおいて CiteSeerX の Wayback を取り直す。保存できれば、トルコ語訳で読んだ p.216–217 の英語の原文を確かめられる |
-| D24-S01 | Rambo 1993 | https://archive.org/search?query=understanding+religious+conversion+rambo （貸し出しのみ） | 「context」「crisis」「quest」 | `D24_rambo_1993_understanding-religious-conversion.pdf` | Internet Archive の貸し出しだけで、自動では読めない。借りられれば、pp.16–19 で段が順に進まないと書いているか、離脱を扱っているかを確かめられる |
+自動で取れなかった原典のうち、ブラウザでの保存を頼むものは、作業の記録（[Issue #73](https://github.com/uminomae/project-design-theory/issues/73)）の表にまとめました。
 
 ## 手順について分かったこと
 
@@ -457,10 +453,10 @@ pjdhiro に聞くものは、この分野からは新しく出ていません。
 
 ### 精読ノートと wiki の誤り
 
-追記（2026-11-09・司令塔）：精読ノート D24-S11 の目次の頁（193→196、420→419）は手元の PDF の目次の文字で、wiki のテレサの訳者と版は扉の文字で確かめて直しました。精読ノート D24-S10 が普明の頌の版の図を廓庵の版として読んでいる所と、「part1 は読めない」という書き方は、ノートの書き直しになるので段 4（wiki との整合）に回します（Suzuki pp.150–151 の、清居の五図・自得の六図・普明の頌の版が十図という記述は、司令塔も頁の画像で確かめました）。『十牛圖頌』の「已費功」「負前賢之途轍」「落空亡」、『十住經』p.521b03–05、al-Hujwīrī p.244 の「it is absurd to suppose that anyone can subsist through the attributes of another individual」は、司令塔も翻刻と OCR の文字で確かめました。
+追記（2026-11-09・司令塔）：精読ノート「James 1902」の目次の頁（193→196、420→419）は手元の PDF の目次の文字で、wiki のテレサの訳者と版は扉の文字で確かめて直しました。精読ノート「Suzuki 1935」が普明の頌の版の図を廓庵の版として読んでいる所と、「part1 は読めない」という書き方は、ノートの書き直しになるので段 4（wiki との整合）に回します（Suzuki pp.150–151 の、清居の五図・自得の六図・普明の頌の版が十図という記述は、司令塔も頁の画像で確かめました）。『十牛圖頌』の「已費功」「負前賢之途轍」「落空亡」、『十住經』p.521b03–05、al-Hujwīrī p.244 の「it is absurd to suppose that anyone can subsist through the attributes of another individual」は、司令塔も翻刻と OCR の文字で確かめました。
 
-- `cs/knowledge/source-notes/D24/D24-S11_james-1902.md` 63 行：「Emotional excitements make new centres of personal energy, 193」。目次では 196（193 は「The psychology of character-changes」）。
+- 精読ノート「James 1902」 63 行：「Emotional excitements make new centres of personal energy, 193」。目次では 196（193 は「The psychology of character-changes」）。
 - 同 65 行：「Sense of union with the Absolute, 420」。目次の p.x では 419（頁の画像で確かめた）。
-- `cs/knowledge/source-notes/D24/D24-S10_suzuki-1935-manual-of-zen-buddhism.md` 104 行・67 行・70 行：「十牛図の第 7〜10 図（『任運』『相忘』『独照』『双泯』）」を十牛図として読み、第 10 図「双泯」を場に、第 9 図「独照」を渦に当てている。これは p.162 からの「The Ten Oxherding Pictures, II」（普明の頌の版）で、廓庵の版（pp.150–161）ではない。版を書き足す。
+- 精読ノート「Suzuki 1935」 104 行・67 行・70 行：「十牛図の第 7〜10 図（『任運』『相忘』『独照』『双泯』）」を十牛図として読み、第 10 図「双泯」を場に、第 9 図「独照」を渦に当てている。これは p.162 からの「The Ten Oxherding Pictures, II」（普明の頌の版）で、廓庵の版（pp.150–161）ではない。版を書き足す。
 - 同 7 行・85 行・97 行：part1 は「一切読めていない」とあるが、part1 は頁の画像で読める（この記録で pp.vii–ix・pp.150–163 を読んだ）。
-- `pd/wiki/sources/D24_teresa_1921_interior-castle.md` 49 行：「著者: アビラのテレサ…、編集: Benedict Zimmerman」に訳者が無い。訳者は The Benedictines of Stanbrook、版は第 3 版（Thomas Baker, London, 1921）。
+- wiki の頁「Teresa 1921」 49 行：「著者: アビラのテレサ…、編集: Benedict Zimmerman」に訳者が無い。訳者は The Benedictines of Stanbrook、版は第 3 版（Thomas Baker, London, 1921）。

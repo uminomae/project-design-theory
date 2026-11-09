@@ -10,27 +10,27 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D01-mathe
 
 # 数学：論ごとの照合の記録
 
-この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。数学の記述が正しいかどうかは Claude が引き受けます（`docs/rules/sources.md` §1-4・§6）。
+この記録の文責は Claude にあります。ここで扱う原典を、pjdhiro は読んでいません。数学の記述が正しいかどうかは Claude が引き受けます（調べ方の規約 §1-4・§6）。
 
 数学の論には、二つのものがぶつかって一つの形になる場合と、ならない場合の両方が、定理の形で書かれていました。Fatou（1919）は、二つの吸引する点の吸引域が一本の線を境に平面を分け、その境の点はどちらにも引かれないと書いています。Poincaré（1885）は、平衡の形の二つの系列が出会って一つの形を分け合う「分岐の形」と、出会ったあと二つとも消える「極限の形」を書いています。Galois（1831 年の日付、1846 年刊）は、方程式の群を根号の添加で段ごとに小さくできなければ、方程式は根号で解けないと書いています。Serre（1955）は、局所の層が重なりで食い違わない条件（θij∘θjk＝θik）を満たすときだけ大域の層に貼り合わせられると書いています。Prandtl（1904）は、壁に沿う薄い層が圧力の上がる所に入れずに、流れが壁からはがれると書いています。一方で、今の報告が「強い対応」の中心に置いた Milnor ファイブレーションとホッジ理論は、原典が書籍で、本文に当たれていません。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D01-mathematics.md`、2026-03-18 に LLM が生成、以下「報告」）は、11 の理論を取り上げ、「境界凝縮パターン」を数学でいちばん目立つ発見としています。報告は、多くの理論の「縁」を、未決定のまま緊張が続く所として読み、解の消滅・貼り合わせの障害・可解でない群のような至らない形を「5段階モデルにない概念」「非完遂パターン」として過程の外に置いています。5段階が「場→束の完遂を暗黙に前提する」という書き方は、5段階の手引き（`cs/knowledge/five-stages-guide.md` 126 行「渦のすべてが束になるわけではない」）と合いません。この記録は、報告の 11 の論に、報告に無い 2 つの論（Li & Yorke 1975、Perelman 2002。どちらも台帳にある）を足し、一次情報で確かめ直したものです。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
+今の公開報告（「30 領域調査報告」の数学の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、11 の理論を取り上げ、「境界凝縮パターン」を数学でいちばん目立つ発見としています。報告は、多くの理論の「縁」を、未決定のまま緊張が続く所として読み、解の消滅・貼り合わせの障害・可解でない群のような至らない形を「5段階モデルにない概念」「非完遂パターン」として過程の外に置いています。5段階が「場→束の完遂を暗黙に前提する」という書き方は、5段階の手引き（五段階の手引き 126 行「渦のすべてが束になるわけではない」）と合いません。この記録は、報告の 11 の論に、報告に無い 2 つの論（Li & Yorke 1975、Perelman 2002。どちらも台帳にある）を足し、一次情報で確かめ直したものです。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
-2026-11-08 の試しの点検（`docs/cs-review/D01.md`）で見つかったことは、原典で確かめ直して、この記録の論ごとの節に引き継ぎました。
+2026-11-08 の試しの点検（試しの点検の記録（数学））で見つかったことは、原典で確かめ直して、この記録の論ごとの節に引き継ぎました。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D01-mathematics.md) にあります。退避版の判定（Accept・CA・「hiro:承認」の印）は、この記録の照合の状態の根拠にしていません。
 
 ## 読み方
 
-- 照合の状態は `docs/rules/sources.md` §3 の四つで書きます。翻訳で読んだものは「（訳）」を添えます。
+- 照合の状態は調べ方の規約 §3 の四つで書きます。翻訳で読んだものは「（訳）」を添えます。
 - 今の報告への判定は、一致・言い過ぎ・取り違え・帰属違い・付け足し・抜け・未判定で書きます。「抜け」は、原典にある衝突や至らない形を報告が落としていることです。
-- 「ja 85 行」は日本語版の行、「en」は英語版（`en/md/domain-D01-mathematics.md`）、「pres」はプレゼン版（`ja/presentations/md/domain-D01-mathematics-presentation-ja.md`）、「退避版」は上の History のファイルを指します。
+- 「ja 85 行」は日本語版の行、「en」は英語版（「30 領域調査報告」の数学の英語版）、「pres」はプレゼン版（「30 領域調査報告」の数学のプレゼン版）、「退避版」は上の History のファイルを指します。
 - 数学の主張には、教科書（分野で確立した記述）・研究の一線（争いがある、または一つの研究が示した）・Claude の読み替え（5段階の問いに当てた解釈）のどれかを添えます。数学の対象に善悪は無いので、「悪い統合」の行は置いていません。
 - 古い仏語の論文は Numdam のデジタル化（ログインなしで読める）で、原文の仏語で読みました。頁は誌面の頁です。
 
 ## 一面の表
 
-照合の状態は `docs/rules/sources.md` §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。対立・衝突・統合の列は、原典に書いてある構造を Claude が中心の問いの言葉に読み替えたものです（数学の原典は「対立」「衝突」の語を使いません）。原典で確かめられなかった論は、報告の言い分を写さず「未照合」としています。
+照合の状態は調べ方の規約 §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。対立・衝突・統合の列は、原典に書いてある構造を Claude が中心の問いの言葉に読み替えたものです（数学の原典は「対立」「衝突」の語を使いません）。原典で確かめられなかった論は、報告の言い分を写さず「未照合」としています。
 
 | 論 | 対立（何と何が） | 衝突（どうぶつかるか） | 統合（新たな安定、または至らずにどう終わったか） | 論の微細さ | 照合の状態 |
 |---|---|---|---|---|---|
@@ -140,7 +140,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨（報告による）**：複素超曲面の孤立特異点の近くで、小さな球面からリンクを除いた空間が円周の上のファイバー束になり、円周を一周すると、ファイバーの自己同相（モノドロミー）が付く、という定理です。
 
-**一次情報**：Milnor, J. (1968). *Singular Points of Complex Hypersurfaces*. Annals of Mathematics Studies 61. Princeton University Press。書籍。archive.org の検索では見つからず、著者の論文版も OA の写しも見つかりませんでした。報告の「2024 年のモノドロミーの研究」は、DR-D01（138 行）の出典記号から来ていて、辿れません。
+**一次情報**：Milnor, J. (1968). *Singular Points of Complex Hypersurfaces*. Annals of Mathematics Studies 61. Princeton University Press。書籍。archive.org の検索では見つからず、著者の論文版も OA の写しも見つかりませんでした。報告の「2024 年のモノドロミーの研究」は、2026-02 の DR（138 行）の出典記号から来ていて、辿れません。
 
 **照合の状態**：未照合（書籍）。ファイブレーションの存在とモノドロミーは、教科書の記述として扱います（記憶で書いており、確かめていません）。
 
@@ -151,7 +151,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | 今の報告の行 | 判定 | 重さ | 中身 |
 |---|---|---|---|
 | ja 78 行「Milnor (1968)」、ja 107 行の定理の要旨 | 未判定 | ― | 書籍で、確かめていない。書誌は退避版 128 行と DR 120 行で一致 |
-| ja 110 行「『束』が比喩ではなく数学的定理として成立する点が際立ちます」、pres 71 行「最も文字通りに『束』が立つ理論」 | 取り違え | 中 | ファイバー束と5段階の束は語が同じだけ（README「規約で決めたこと」）。DR-D01 142〜143 行は自分で「モノドロミーは一般のファイバー束にもある概念」と注意している |
+| ja 110 行「『束』が比喩ではなく数学的定理として成立する点が際立ちます」、pres 71 行「最も文字通りに『束』が立つ理論」 | 取り違え | 中 | ファイバー束と5段階の束は語が同じだけ（README「規約で決めたこと」）。2026-02 の DR 142〜143 行は自分で「モノドロミーは一般のファイバー束にもある概念」と注意している |
 | ja 109 行「モノドロミーは2024年時点でも研究の直接対象」 | 未判定 | 低 | DR の出典記号から来ていて、文献が辿れない |
 | ja 113 行「消滅サイクル…は、5段階モデルが明示的に扱わない『構造の消滅』を示しており」 | 取り違え | 中 | 5段階の手引き（126 行）は「渦のすべてが束になるわけではない。…波や場に戻ることがある」と書く。消滅を扱わない、とするのは藁人形 |
 | ja 78 行「縁・渦・束」、pres 48 行「場・波・縁・渦・束」 | 未判定（版の食い違い） | 低 | |
@@ -169,7 +169,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **原典に書いてあること**（Baez & Dolan、arXiv 版）：弱めることの考えは「In any category it is unnatural and undesirable to speak about equality of two objects」という原則に立つ（p.13）。弱いモノイダル圏では、モノイドで成り立つ等式が「isomorphisms satisfying coherence laws」に置き換えられる（p.14。結合の同型の五角形の図）。自然に出てくるモノイダル圏はたいてい弱い（p.14）。
 
-**対立・衝突・統合の読み**：原典に書いてあるのは、合成の二つのやり方が等しくならないとき、等しいとは書かずに同型でつなぎ、その同型どうしの整合をさらに一段上で求めることです（研究の一線と教科書のあいだ。弱い n 圏は n≤3 までしかよく分かっていない、と原典 p.1 が書く）。Claude の読み替えでは、二つの違いは消されず、一つ上の射として残ったまま、切り離せない形で包まれます。pjdhiro が渦について言う「区別を残したまま切り離せなくなる」形と、構造が近いかもしれません。報告はこの「弱めること」に触れず、段の数（0 セルから n セル）だけを5段階に当てています。
+**対立・衝突・統合の読み**：原典に書いてあるのは、合成の二つのやり方が等しくならないとき、等しいとは書かずに同型でつなぎ、その同型どうしの整合をさらに一段上で求めることです（研究の一線と教科書のあいだ。弱い n 圏は n≤3 までしかよく分かっていない、と原典 p.1 が書く）。Claude の読み替えでは、二つの違いは消されず、一つ上の射として残ったまま、切り離せない形で包まれます。これを、pjdhiro が渦について言う「区別を残したまま切り離せなくなる」形に類推すると、構造が近いかもしれません（類推で、論証ではありません）。報告はこの「弱めること」に触れず、段の数（0 セルから n セル）だけを5段階に当てています。
 
 **今の報告から直すこと**：
 
@@ -246,8 +246,8 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 **一次情報**：
 
 - Edelsbrunner, H., Letscher, D. & Zomorodian, A. (2002). Topological persistence and simplification. *Discrete & Computational Geometry* 28(4), 511–533. DOI: [10.1007/s00454-002-2885-2](https://doi.org/10.1007/s00454-002-2885-2)（Crossref で確かめました）。著者の所属機関（ISTA）のサイトの写し：https://pub.ista.ac.at/~edels/Papers/2002-04-TopologicalPersistence.pdf 。この写しは 13 頁の二段組（作成名「acm.dvi」）で、2000 年の FOCS の会議版の見込みです。DCG 版の頁ではありません。読んだ頁：写しの p.1（要旨）・p.4。
-- Carlsson, G. (2009). Topology and data. *Bulletin of the AMS* 46(2), 255–308. DOI: [10.1090/S0273-0979-09-01249-X](https://doi.org/10.1090/S0273-0979-09-01249-X)。manifest D01-S02。手元の PDF の表紙と Crossref の書誌は一致しました。読んだ頁：p.255・p.259・p.265・p.269。
-- Ghrist, R. (2008). Barcodes: the persistent topology of data. *Bulletin of the AMS* 45(1), 61–75. DOI: [10.1090/S0273-0979-07-01191-3](https://doi.org/10.1090/S0273-0979-07-01191-3)（電子版は 2007-10-26）。manifest D01-S03。読んだ頁：p.61・p.65・p.67。
+- Carlsson, G. (2009). Topology and data. *Bulletin of the AMS* 46(2), 255–308. DOI: [10.1090/S0273-0979-09-01249-X](https://doi.org/10.1090/S0273-0979-09-01249-X)。台帳に行がある。手元の PDF の表紙と Crossref の書誌は一致しました。読んだ頁：p.255・p.259・p.265・p.269。
+- Ghrist, R. (2008). Barcodes: the persistent topology of data. *Bulletin of the AMS* 45(1), 61–75. DOI: [10.1090/S0273-0979-07-01191-3](https://doi.org/10.1090/S0273-0979-07-01191-3)（電子版は 2007-10-26）。台帳に行がある。読んだ頁：p.61・p.65・p.67。
 - Zomorodian, A. & Carlsson, G. (2005). Computing persistent homology. *DCG* 33(2), 249–274. DOI: [10.1007/s00454-004-1146-y](https://doi.org/10.1007/s00454-004-1146-y)。書誌だけ Crossref で確かめました。
 
 **照合の状態**：本文照合済（Carlsson・Ghrist は出版社の版、Edelsbrunner らは著者の所属機関の写しで会議版とみられるもの）。Zomorodian & Carlsson 2005 は未照合（書誌だけ）。
@@ -322,7 +322,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **一次情報**：
 
-- Bott, R. (1988). Morse theory indomitable. *Publications Mathématiques de l'IHÉS* 68, 99–114. DOI: [10.1007/BF02698544](https://doi.org/10.1007/BF02698544)（Crossref で確かめました）。Numdam：http://www.numdam.org/item?id=PMIHES_1988__68__99_0 。manifest D01-S01。手元の PDF の表紙と書誌は一致しました。読んだ頁：pp.99–105・p.110。
+- Bott, R. (1988). Morse theory indomitable. *Publications Mathématiques de l'IHÉS* 68, 99–114. DOI: [10.1007/BF02698544](https://doi.org/10.1007/BF02698544)（Crossref で確かめました）。Numdam：http://www.numdam.org/item?id=PMIHES_1988__68__99_0 。台帳に行がある。手元の PDF の表紙と書誌は一致しました。読んだ頁：pp.99–105・p.110。
 - Morse, M. (1925). Relations between the critical points of a real function of n independent variables. *Transactions of the AMS* 27(3), 345–396. DOI: [10.1090/S0002-9947-1925-1501318-X](https://doi.org/10.1090/S0002-9947-1925-1501318-X)（書誌は Crossref で確かめました）。AMS の PDF は自動取得に確認画面を返し、取れませんでした（ブラウザでの保存が要る）。
 - Milnor, J. (1963). *Morse Theory*. Annals of Mathematics Studies 51. Princeton UP。書籍。未照合。
 
@@ -355,7 +355,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨**：区間の上の連続な写像 F に、周期 3 の点（またはそれに当たる条件を満たす点）があれば、すべての周期の点があり、さらに周期の点を含まない数えきれない集まり S があって、S の二点の軌道は、限りなく近づくことも、離れることも、繰り返します。
 
-**一次情報**：Li, T.-Y. & Yorke, J. A. (1975). Period three implies chaos. *The American Mathematical Monthly* 82(10), 985–992. DOI: [10.1080/00029890.1975.11994008](https://doi.org/10.1080/00029890.1975.11994008)（Crossref で確かめました）。manifest D01-S10。写し：https://www.its.caltech.edu/~matilde/LiYorke.pdf （カリフォルニア工科大学の教員のサイトに置かれた JSTOR の版。権利は未確認）。読んだ頁：p.985・p.987。
+**一次情報**：Li, T.-Y. & Yorke, J. A. (1975). Period three implies chaos. *The American Mathematical Monthly* 82(10), 985–992. DOI: [10.1080/00029890.1975.11994008](https://doi.org/10.1080/00029890.1975.11994008)（Crossref で確かめました）。台帳に行がある。写し：https://www.its.caltech.edu/~matilde/LiYorke.pdf （カリフォルニア工科大学の教員のサイトに置かれた JSTOR の版。権利は未確認）。読んだ頁：p.985・p.987。
 
 **照合の状態**：本文照合済（p.987）。
 
@@ -375,7 +375,7 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 **要旨**：リッチフローは計量を曲率に沿って変えていく流れです。有限の時間で特異点ができることがあり、そのいちばん自然な形は、丸い円柱の首がくびれることです。そのとき首を切り開いて小さな蓋を貼り、流れを続けます（手術）。
 
-**一次情報**：Perelman, G. (2002). The entropy formula for the Ricci flow and its geometric applications. arXiv:math/0211159。https://arxiv.org/abs/math/0211159 。manifest D01-S09。読んだ頁：arXiv 版の p.2（序）。
+**一次情報**：Perelman, G. (2002). The entropy formula for the Ricci flow and its geometric applications. arXiv:math/0211159。https://arxiv.org/abs/math/0211159 。台帳に行がある。読んだ頁：arXiv 版の p.2（序）。
 
 **照合の状態**：本文照合済（arXiv 版 p.2）。手術の細部は後の論文（2003）で扱うと原典が書いていて、それは読んでいません。
 
@@ -391,11 +391,11 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 | 文献 | 段階や構造 | 衝突や至らない形 | 照合の状態 |
 |---|---|---|---|
-| Poincaré (1908/1914). *Science and Method*. F. Maitland 訳（パブリックドメイン）。manifest D01-S05 | 意識の仕事・無意識の仕事・突然のひらめき・意識での検証。美の感覚が、無意識の組み合わせをふるいにかける | ひらめきは、何日も「absolutely fruitless」に見え、間違った道にいると思えた努力のあとにだけ来る（訳 p.56）。ひらめいた考えが間違っていることもあり、それは数学の優雅さへの本能に合っていた（訳 p.60 前後） | 本文照合済（訳） |
-| Hadamard (1945). *The Psychology of Invention in the Mathematical Field*. Princeton UP。manifest D01-S07 | 準備・孵化・ひらめき・検証 | 三つの段（準備・孵化・ひらめき）は「Helmholtz and Poincaré have taught us to distinguish」、第四の段の必要は Poincaré が示した（p.56）。「illumination」の名は Wallas の提案（p.16）。準備の段の必要は Helmholtz も書いた（p.45）。Hadamard が四段を提唱したのではない | 本文照合済 |
-| Thurston (1994). On proof and progress in mathematics. *Bull. AMS* 30(2), 161–177（arXiv 版の記載。Crossref は 161–178）。manifest D01-S04 | 数学の進歩は、定理の証明より、人の理解の広がり | 葉層構造の分野で、Thurston が強い定理を続けて出すと、数年で人がその分野から去った（「evacuation」、arXiv 版 p.13）。片方の勝利が分野を止めた例として読める（Claude の読み替え） | 本文照合済（arXiv 版） |
-| Tao (2007). What is good mathematics? *Bull. AMS* 44(4), 623–634。manifest D01-S06 | 良い数学の多くの面。Szemerédi の定理の物語 | 組合せ・エルゴード理論・フーリエ解析の別々の道が、どれも「構造と乱雑さの二分法」で進んだ（arXiv 版 pp.7–8） | 本文照合済（arXiv 版） |
-| Lakatos (1976). *Proofs and Refutations*。manifest D01-S08 | 証明と反例の行き来 | 本文に当たれていない | 未照合（書籍） |
+| Poincaré (1908/1914). *Science and Method*. F. Maitland 訳（パブリックドメイン）。台帳に行がある | 意識の仕事・無意識の仕事・突然のひらめき・意識での検証。美の感覚が、無意識の組み合わせをふるいにかける | ひらめきは、何日も「absolutely fruitless」に見え、間違った道にいると思えた努力のあとにだけ来る（訳 p.56）。ひらめいた考えが間違っていることもあり、それは数学の優雅さへの本能に合っていた（訳 p.60 前後） | 本文照合済（訳） |
+| Hadamard (1945). *The Psychology of Invention in the Mathematical Field*. Princeton UP。台帳に行がある | 準備・孵化・ひらめき・検証 | 三つの段（準備・孵化・ひらめき）は「Helmholtz and Poincaré have taught us to distinguish」、第四の段の必要は Poincaré が示した（p.56）。「illumination」の名は Wallas の提案（p.16）。準備の段の必要は Helmholtz も書いた（p.45）。Hadamard が四段を提唱したのではない | 本文照合済 |
+| Thurston (1994). On proof and progress in mathematics. *Bull. AMS* 30(2), 161–177（arXiv 版の記載。Crossref は 161–178）。台帳に行がある | 数学の進歩は、定理の証明より、人の理解の広がり | 葉層構造の分野で、Thurston が強い定理を続けて出すと、数年で人がその分野から去った（「evacuation」、arXiv 版 p.13）。片方の勝利が分野を止めた例として読める（Claude の読み替え） | 本文照合済（arXiv 版） |
+| Tao (2007). What is good mathematics? *Bull. AMS* 44(4), 623–634。台帳に行がある | 良い数学の多くの面。Szemerédi の定理の物語 | 組合せ・エルゴード理論・フーリエ解析の別々の道が、どれも「構造と乱雑さの二分法」で進んだ（arXiv 版 pp.7–8） | 本文照合済（arXiv 版） |
+| Lakatos (1976). *Proofs and Refutations*。台帳に行がある | 証明と反例の行き来 | 本文に当たれていない | 未照合（書籍） |
 
 Poincaré と Hadamard の段階は、無意識の働きを中に含み、実らない努力をひらめきの前の欠かせない段として書いています。5段階と比べるなら、波と縁のあいだの長い揺れと、検証での誤りの発見が、過程の中に置かれている点が近いかもしれません（Claude の読み替え）。
 
@@ -419,11 +419,11 @@ Poincaré と Hadamard の段階は、無意識の働きを中に含み、実ら
 | 件数 | 表を数えると強い 6・部分 2・条件付き 3。本文 87 行・251 行・Colophon 269 行は「強い 5・部分 3・条件付き 3」 | 強い 7・部分 4（23 行） | 強い 6・部分 2・条件付き 3（69〜71 行・201 行） | Accept 8・CA 3 |
 
 - 高：ja の表と本文で件数が違います。本文の「5」は調べた跡 phase5 の分け方（Anchor 5・Scoped 3・CA 3、phase5 31〜35 行）を写し、表は Julia 集合を強いに上げたあとのものです（phase5 37 行が Julia を「Anchor 候補」としていた）。pres は別に生成され、どれとも合いません。
-- 高：ja の Colophon（270 行）の出典 evidence は、2026-04-07 から再監査待ちの stub でした。DR-D01 は原文が保存されていません（D08・D22 と同じ）。
+- 高：ja の Colophon（270 行）の出典 evidence は、2026-04-07 から再監査待ちの stub でした。2026-02 の DRは原文が保存されていません（神経科学・経営学と同じ）。
 - 中：en 74 行の確信度（0.85・0.80）は、退避版の confidence の値を写したもので、LLM が付けた値です。
-- 中：cs のトップ（`cs/index.html` 481 行）の英語の題「D01 Mathematics: Structure Condenses at Boundaries and Criticality」は、en の題から来ていて、照合されていない「境界凝縮」を題にしています。
+- 中：cs のトップ（創造とはのトップ 481 行）の英語の題「数学 Mathematics: Structure Condenses at Boundaries and Criticality」は、en の題から来ていて、照合されていない「境界凝縮」を題にしています。
 - 中：en 45 行「The five-stage model describes the structure traversed by creative processes」。README の「領域の対象」の決め（分野の理論の構造）と食い違います（英語版の 19/30 と同じ）。
-- 低：pres の frontmatter（7 行）の source「domain-D01-mathematics-academic-ja.md」は、`assets/creation/domains/ja/md/` に無い名前です。
+- 低：pres の frontmatter（7 行）の source（元ファイルの名）は、公開報告の日本語版の置き場に無い名前です。
 
 ### 領域全体の主張
 
@@ -432,12 +432,12 @@ Poincaré と Hadamard の段階は、無意識の働きを中に含み、実ら
 | ja 203 行・253 行「境界凝縮パターン」「6件が独立に…」「数学一般に内在するパターンと考えられます」「5段階モデルの『縁』段階が数学において豊かに実現されていることがわかりました」、en 203 行「six independent theories」 | 言い過ぎ | 中 | 6 件のうち本文で確かめたのは 4（Julia・層・分岐・境界層）で、原典の芯は「凝縮」でなく、二つのもののぶつかり（二つの吸引域、重なりの一致、二つの系列、外の流れと壁）。調べた跡 phase7 19 行は自分で「縁概念に引きずられた選択バイアスの結果かもしれない」と書いていた。独立かどうかも確かめていない（分岐・Morse・Julia は同じ力学系の系譜） |
 | ja 215 行「5段階モデルは場→束が必然的に完遂されることを暗黙に前提」、ja 219 行「消滅を明示的に扱いません」、ja 233〜239 行 | 取り違え | 中 | 5段階の手引き 116 行・126 行は、縁に至らない場合と、渦が束にならず波や場に戻る場合を書く。藁人形。出どころは phase6 222・228・242 行、phase7 57・71 行 |
 | ja 223 行「構成的対応と分析的対応の二分法…他の領域で5段階との対応を評価する際にも有効な基準」 | 付け足し | 低 | 調べた跡の切り口を一般の基準に上げている（型 B） |
-| ja 247 行「数学が記述するのは『意識なしの構造生成』」 | 未判定 | 低 | 創造は物質・生命・心のどこでも起きる現象と見る（stance-theories.md「創造」）。数学の対象に意識が無いことは、似ているかどうかの反証にならない |
+| ja 247 行「数学が記述するのは『意識なしの構造生成』」 | 未判定 | 低 | 創造は物質・生命・心のどこでも起きる現象と見る（理論との距離の規約「創造」）。数学の対象に意識が無いことは、似ているかどうかの反証にならない |
 | ja 16 行「合計11の理論・概念を評価」、ja 30 行「一次文献・教科書級文献に基づいて数学的事実を確認しました（Phase 1-2）」 | 言い過ぎ | 中 | 退避版の refs の多くは教科書・講義ノートで、原典の頁を控えた跡が無い（退避版の flags は 11 件のうち 3 件が「v:未検証」） |
 
 ### テンプレート由来の表示
 
-「立ち位置明示」（3 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6（構造再読）」「Phase 7（横断統合）」（30・38・199 行）、「方法論的開示（S60）」（44 行）、「温度帯の分布」（87 行）、「安全弁」（89〜91 行）、「結びの温度開示」「温度帯」（257〜261 行）、「Colophon」の generator_model（263〜273 行）。46〜49 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（writing.md §1-1・§1-8）。en 57 行の「If these definitions feel strange…」は型 F です。D08・D22・D25 と同じく、テンプレートで一度に直します（`cs/transform/domains/reader-rules/reader-rules-creation.md` 155〜179 行、`docs/cs-review/D01.md`）。
+「立ち位置明示」（3 行）、「Phase 1-2」「Phase 3-4」「Phase 5（論拠監査）」「Phase 6（構造再読）」「Phase 7（横断統合）」（30・38・199 行）、「方法論的開示（S60）」（44 行）、「温度帯の分布」（87 行）、「安全弁」（89〜91 行）、「結びの温度開示」「温度帯」（257〜261 行）、「Colophon」の generator_model（263〜273 行）。46〜49 行は「著者（pjdhiro）自身の精読による検証が完了していない箇所があります」と、著者を pjdhiro にしています（書き方の規約 §1-1・§1-8）。en 57 行の「If these definitions feel strange…」は型 F です。神経科学・経営学・人類学・民族学と同じく、テンプレートで一度に直します（旧い規則（創造とはの読み手の規則） 155〜179 行、試しの点検の記録（数学））。
 
 ### 誤りの出どころ
 
@@ -449,13 +449,13 @@ Poincaré と Hadamard の段階は、無意識の働きを中に含み、実ら
 | 確率的構造は一件も無い | 調べた跡 phase7 113〜117 行の「盲点 1」 |
 | 5段階は場→束の完遂を前提、消滅を扱わない | 調べた跡 phase6 158・222・228・242 行、phase7 57・71 行 |
 | 「棄却される誤差」「本質は捨てられたものに宿る」 | 欠損駆動思考の旧い定義の語。報告に欠損駆動思考を持ち込まない、という決めの前に書かれた |
-| 「束」が文字通り束として立つ | DR-D01 26 行・180 行・199 行（Milnor を「最も強い」とした基準）。DR 自身の注意（142〜143 行）は報告に写らなかった |
+| 「束」が文字通り束として立つ | 2026-02 の DR 26 行・180 行・199 行（Milnor を「最も強い」とした基準）。DR 自身の注意（142〜143 行）は報告に写らなかった |
 | 層の渦が版で違う | ja だけが「コサイクル条件」で、退避版 97 行・en・pres は「非自明なコサイクル」 |
 | ハンドル付けの「不可逆的再編成」 | 退避版 289 行・303 行 |
 | 確信度 0.85・0.80 | 退避版の confidence |
 | 型 F の表示と記号 | 報告のテンプレート |
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 E（断定・看板・「最も」）：「数学一般に内在するパターンと考えられます」（203 行）、「豊かに実現されていることがわかりました」（253 行）、「11件の中で『縁→渦→束』の流れが最もクリーン」（131 行）、「11件の中で全5段階への対応が最も精緻」（101 行）、「モノドロミーは『周回に伴う構造変化』という渦の核心を数学的に精密に記述」（111 行）。
 - 退ける語：「局所的な情報を大域的な対象へ統合します」（97 行）。数学の語としては「貼り合わせる」。
@@ -466,53 +466,53 @@ Poincaré と Hadamard の段階は、無意識の働きを中に含み、実ら
 
 ### 精読ノートと wiki の誤り（司令塔が直す）
 
-- `pd/wiki/sources/D01_bott_1988_morse-theory-indomitable.md` 53 行：DOI が 10.1007/BF02564666（別の論文）。正しくは 10.1007/BF02698544（Crossref で確かめました）。試しの点検で見つかり、まだ直っていません（`git log` で確かめました）。
-- `pd/wiki/sources/D01_hadamard_1945_psychology-invention.md` 3 行「準備 → 潜伏 → 照明 → 検証 の4段階を提唱した」、19 行「Hadamard は…4段階があると論じました」、29 行「Hadamard は第 4 段階として検証（Verification）を加え」：帰属違い。三つの段は Helmholtz と Poincaré、第四の段の必要は Poincaré（p.56）、illumination の名は Wallas（p.16）。まだ直っていません。
-- `pd/wiki/sources/D01_carlsson_2009_topology-and-data.md` 19 行「Carlsson はそれを実現する方法を提案しました」「分野を切り開いた論文です」：帰属違い。持続は Edelsbrunner ら（2000/2002）が導入し、Zomorodian & Carlsson（2005）が精緻化しました（Ghrist p.65）。Carlsson 2009 はサーベイを兼ねた論文です。
-- `cs/knowledge/source-notes/D01/D01-S04_thurston-1994.md` 15 行、`pd/wiki/sources/D01_thurston_1994_proof-and-progress.md` 59 行：頁が 161–177（arXiv 版の記載）。Crossref は 161–178。どちらかを書き足す（低）。
-- `cs/evidence/evidence-D01-mathematics.md` の以前の stub は、Carlsson と Ghrist を「blocked-access」と書いていましたが、台帳ではどちらも raw-confirmed です（この記録で置き換えました）。
+- wiki の頁「Bott 1988」 53 行：DOI が 10.1007/BF02564666（別の論文）。正しくは 10.1007/BF02698544（Crossref で確かめました）。試しの点検で見つかり、まだ直っていません（`git log` で確かめました）。
+- wiki の頁「Hadamard 1945」 3 行「準備 → 潜伏 → 照明 → 検証 の4段階を提唱した」、19 行「Hadamard は…4段階があると論じました」、29 行「Hadamard は第 4 段階として検証（Verification）を加え」：帰属違い。三つの段は Helmholtz と Poincaré、第四の段の必要は Poincaré（p.56）、illumination の名は Wallas（p.16）。まだ直っていません。
+- wiki の頁「Carlsson 2009」 19 行「Carlsson はそれを実現する方法を提案しました」「分野を切り開いた論文です」：帰属違い。持続は Edelsbrunner ら（2000/2002）が導入し、Zomorodian & Carlsson（2005）が精緻化しました（Ghrist p.65）。Carlsson 2009 はサーベイを兼ねた論文です。
+- 精読ノート「Thurston 1994」 15 行、wiki の頁「Thurston 1994」 59 行：頁が 161–177（arXiv 版の記載）。Crossref は 161–178。どちらかを書き足す（低）。
+- この記録の以前の stub は、Carlsson と Ghrist を「自動では取れない」と書いていましたが、台帳ではどちらも 手元に保存した です（この記録で置き換えました）。
 
 ## 判断が要るもの
 
-pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは `docs/cs-review/README.md` の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
+pjdhiro に聞くものは、この分野からは新しく出ていません（領域をまたぐ問いは調べ方の計画と規約の「判断が要ること」5）。規約で答えが出たものは、次のとおり決めて書きました。
 
-- スピノルの「仮説 B」は、判定として引き継がず、pjdhiro の解釈として記録にある、とだけ書きました（README「規約で決めたこと」）。今の見方（束＝新たな安定）と合うかを pjdhiro に見せるのは、5段階の定義を決めるときにします。予想：「720 度で元に戻る」は新たな安定ではないので、束の例としては外れる見込みです（stance-theories.md の場の行）。
-- 分岐理論（Poincaré 1885）とホッジ理論は、権利の確かめられない写しで本文や記述を読んだので、照合の状態は「未照合」とし、読んだ頁を書きました（`docs/rules/sources.md` §5-8）。
-- 高次圏の「弱めること」（違いを消さずに一つ上の射として残す）は、pjdhiro が渦について言う「区別を残したまま切り離せなくなる」形と近いかもしれません。これは Claude の読み替えで、しっくり感の判定は pjdhiro が行います。一面の表を並べる段 3 で見せる材料として残します。
+- スピノルの「仮説 B」は、判定として引き継がず、pjdhiro の解釈として記録にある、とだけ書きました（README「規約で決めたこと」）。今の見方（束＝新たな安定）と合うかを pjdhiro に見せるのは、5段階の定義を決めるときにします。予想：「720 度で元に戻る」は新たな安定ではないので、束の例としては外れる見込みです（理論との距離の規約の場の行）。
+- 分岐理論（Poincaré 1885）とホッジ理論は、権利の確かめられない写しで本文や記述を読んだので、照合の状態は「未照合」とし、読んだ頁を書きました（調べ方の規約 §5-8）。
+- 高次圏の「弱めること」（違いを消さずに一つ上の射として残す）は、pjdhiro が渦について言う「区別を残したまま切り離せなくなる」形と近いかもしれません。これは Claude の読み替えによる類推で、しっくり感の判定は pjdhiro が行います。一面の表を並べる段 3 で見せる材料として残します。答え（pjdhiro 2026-11-09）：既存の理論で本人の見方を論証はしないが、類推はする。この文は、論証でなく類推として残します（書き方の規約 §7-5）。
 
-## 新しく見つけた原典（台帳に足す案）
+## 新しく見つけた原典
 
-manifest は書き換えていません。番号は台帳と同じ形で、D01-S11 から振りました。
+台帳は書き換えていません。
 
-| source_id の案 | 書誌 | 取得先 | 状態の案 |
-|---|---|---|---|
-| D01-S11 | Morse, M. (1925). Relations between the critical points of a real function of n independent variables. *Trans. AMS* 27(3), 345–396. DOI 10.1090/S0002-9947-1925-1501318-X | https://www.ams.org/journals/tran/1925-027-03/S0002-9947-1925-1501318-X/S0002-9947-1925-1501318-X.pdf （AMS の無料の古い巻。自動取得に確認画面を返すので、ブラウザでの保存が要る。保存名の案 `D01_morse_1925_critical-points.pdf`） | blocked-access |
-| D01-S12 | Cartan, É. (1913). Les groupes projectifs qui ne laissent invariante aucune multiplicité plane. *Bull. SMF* 41, 53–96. DOI 10.24033/bsmf.916 | http://www.numdam.org/item/BSMF_1913__41__53_1/ | url-verified（本文を読んだ） |
-| D01-S13 | Julia, G. (1918). Mémoire sur l'itération des fonctions rationnelles. *J. Math. Pures Appl.* (8) 1, 47–245 | http://www.numdam.org/item/JMPA_1918_8_1__47_0/ | url-verified |
-| D01-S14 | Fatou, P. (1919). Sur les équations fonctionnelles. *Bull. SMF* 47, 161–271. DOI 10.24033/bsmf.998（続き：48 (1920), 33–94, DOI 10.24033/bsmf.1003） | http://www.numdam.org/item/BSMF_1919__47__161_0/ | url-verified |
-| D01-S15 | Leray, J. (1950). L'anneau spectral et l'anneau filtré d'homologie d'un espace localement compact et d'une application continue. *J. Math. Pures Appl.* (9) 29, 1–139 | http://www.numdam.org/item/JMPA_1950_9_29__1_0/ | url-verified（定義の頁だけ読んだ） |
-| D01-S16 | Serre, J.-P. (1955). Faisceaux algébriques cohérents. *Annals of Math.* 61(2), 197–278. DOI 10.2307/1969915 | 英訳（Achinger & Krupa）https://achinger.impan.pl/fac/fac.pdf 。仏語の写し https://www.college-de-france.fr/media/jean-pierre-serre/UPL5435398796951750634_Serre_FAC.pdf は接続の証明書の確かめで止まった（ブラウザでの保存が要る） | url-verified（訳） |
-| D01-S17 | Eilenberg, S. & Mac Lane, S. (1945). General theory of natural equivalences. *Trans. AMS* 58, 231–294. DOI 10.1090/S0002-9947-1945-0013131-6 | https://www.ams.org/journals/tran/1945-058-00/S0002-9947-1945-0013131-6/S0002-9947-1945-0013131-6.pdf （確認画面。ブラウザでの保存が要る。保存名の案 `D01_eilenberg-maclane_1945_natural-equivalences.pdf`） | blocked-access |
-| D01-S18 | Baez, J. C. & Dolan, J. (1995). Higher-dimensional algebra and topological quantum field theory. *J. Math. Phys.* 36(11), 6073–6105. DOI 10.1063/1.531236 | https://arxiv.org/abs/q-alg/9503002 | url-verified |
-| D01-S19 | Galois, É. (1846). Mémoire sur les conditions de résolubilité des équations par radicaux. *J. Math. Pures Appl.* 11, 417–433（Œuvres mathématiques, 381–444 の中） | http://www.numdam.org/item/JMPA_1846_1_11__381_0/ | url-verified |
-| D01-S20 | Poincaré, H. (1885). Sur l'équilibre d'une masse fluide animée d'un mouvement de rotation. *Acta Math.* 7, 259–380. DOI 10.1007/BF02402204 | Springer（ログインの画面）。再録 Œuvres VII（1952）は https://archive.org/details/ceuvresdrhenripo027751mbp （Universal Digital Library が上げた写し。権利は未確認） | blocked-access（原典）／url-verified（権利未確認の写し） |
-| D01-S21 | Edelsbrunner, H., Letscher, D. & Zomorodian, A. (2002). Topological persistence and simplification. *DCG* 28(4), 511–533. DOI 10.1007/s00454-002-2885-2 | https://pub.ista.ac.at/~edels/Papers/2002-04-TopologicalPersistence.pdf （著者の所属機関の写し。13 頁で、FOCS 2000 の会議版の見込み） | url-verified（会議版とみられる） |
-| D01-S22 | Zomorodian, A. & Carlsson, G. (2005). Computing persistent homology. *DCG* 33(2), 249–274. DOI 10.1007/s00454-004-1146-y | 取得を試していない | citation-only |
-| D01-S23 | Prandtl, L. (1904). Über Flüssigkeitsbewegung bei sehr kleiner Reibung. *Verh. III. Int. Math.-Kongr.*, 484–491。英訳 NACA TM 452 (1928) | https://ntrs.nasa.gov/citations/19930090813 （英訳。米国の政府の文書） | url-verified（訳） |
-| D01-S24 | Hodge, W. V. D. (1941). *The Theory and Applications of Harmonic Integrals*. Cambridge UP | https://archive.org/details/in.ernet.dli.2015.77572 （Digital Library of India の写し。権利は未確認） | blocked-access（書籍）／url-verified（権利未確認の写し） |
-| D01-S25 | Milnor, J. (1968). *Singular Points of Complex Hypersurfaces*. Annals of Math. Studies 61. Princeton UP | 見つからない | blocked-access（書籍） |
+| 書誌 | 取得先 | 台帳での扱いの案 |
+|---|---|---|
+| Morse, M. (1925). Relations between the critical points of a real function of n independent variables. *Trans. AMS* 27(3), 345–396. DOI 10.1090/S0002-9947-1925-1501318-X | https://www.ams.org/journals/tran/1925-027-03/S0002-9947-1925-1501318-X/S0002-9947-1925-1501318-X.pdf （AMS の無料の古い巻。自動取得に確認画面を返すので、ブラウザでの保存が要る。保存名の案手元の PDF） | 自動では取れない |
+| Cartan, É. (1913). Les groupes projectifs qui ne laissent invariante aucune multiplicité plane. *Bull. SMF* 41, 53–96. DOI 10.24033/bsmf.916 | http://www.numdam.org/item/BSMF_1913__41__53_1/ | 取得先を確かめた（本文を読んだ） |
+| Julia, G. (1918). Mémoire sur l'itération des fonctions rationnelles. *J. Math. Pures Appl.* (8) 1, 47–245 | http://www.numdam.org/item/JMPA_1918_8_1__47_0/ | 取得先を確かめた |
+| Fatou, P. (1919). Sur les équations fonctionnelles. *Bull. SMF* 47, 161–271. DOI 10.24033/bsmf.998（続き：48 (1920), 33–94, DOI 10.24033/bsmf.1003） | http://www.numdam.org/item/BSMF_1919__47__161_0/ | 取得先を確かめた |
+| Leray, J. (1950). L'anneau spectral et l'anneau filtré d'homologie d'un espace localement compact et d'une application continue. *J. Math. Pures Appl.* (9) 29, 1–139 | http://www.numdam.org/item/JMPA_1950_9_29__1_0/ | 取得先を確かめた（定義の頁だけ読んだ） |
+| Serre, J.-P. (1955). Faisceaux algébriques cohérents. *Annals of Math.* 61(2), 197–278. DOI 10.2307/1969915 | 英訳（Achinger & Krupa）https://achinger.impan.pl/fac/fac.pdf 。仏語の写し https://www.college-de-france.fr/media/jean-pierre-serre/UPL5435398796951750634_Serre_FAC.pdf は接続の証明書の確かめで止まった（ブラウザでの保存が要る） | 取得先を確かめた（訳） |
+| Eilenberg, S. & Mac Lane, S. (1945). General theory of natural equivalences. *Trans. AMS* 58, 231–294. DOI 10.1090/S0002-9947-1945-0013131-6 | https://www.ams.org/journals/tran/1945-058-00/S0002-9947-1945-0013131-6/S0002-9947-1945-0013131-6.pdf （確認画面。ブラウザでの保存が要る。保存名の案手元の PDF） | 自動では取れない |
+| Baez, J. C. & Dolan, J. (1995). Higher-dimensional algebra and topological quantum field theory. *J. Math. Phys.* 36(11), 6073–6105. DOI 10.1063/1.531236 | https://arxiv.org/abs/q-alg/9503002 | 取得先を確かめた |
+| Galois, É. (1846). Mémoire sur les conditions de résolubilité des équations par radicaux. *J. Math. Pures Appl.* 11, 417–433（Œuvres mathématiques, 381–444 の中） | http://www.numdam.org/item/JMPA_1846_1_11__381_0/ | 取得先を確かめた |
+| Poincaré, H. (1885). Sur l'équilibre d'une masse fluide animée d'un mouvement de rotation. *Acta Math.* 7, 259–380. DOI 10.1007/BF02402204 | Springer（ログインの画面）。再録 Œuvres VII（1952）は https://archive.org/details/ceuvresdrhenripo027751mbp （Universal Digital Library が上げた写し。権利は未確認） | 自動では取れない（原典）／取得先を確かめた（権利未確認の写し） |
+| Edelsbrunner, H., Letscher, D. & Zomorodian, A. (2002). Topological persistence and simplification. *DCG* 28(4), 511–533. DOI 10.1007/s00454-002-2885-2 | https://pub.ista.ac.at/~edels/Papers/2002-04-TopologicalPersistence.pdf （著者の所属機関の写し。13 頁で、FOCS 2000 の会議版の見込み） | 取得先を確かめた（会議版とみられる） |
+| Zomorodian, A. & Carlsson, G. (2005). Computing persistent homology. *DCG* 33(2), 249–274. DOI 10.1007/s00454-004-1146-y | 取得を試していない | 書誌だけ |
+| Prandtl, L. (1904). Über Flüssigkeitsbewegung bei sehr kleiner Reibung. *Verh. III. Int. Math.-Kongr.*, 484–491。英訳 NACA TM 452 (1928) | https://ntrs.nasa.gov/citations/19930090813 （英訳。米国の政府の文書） | 取得先を確かめた（訳） |
+| Hodge, W. V. D. (1941). *The Theory and Applications of Harmonic Integrals*. Cambridge UP | https://archive.org/details/in.ernet.dli.2015.77572 （Digital Library of India の写し。権利は未確認） | 自動では取れない（書籍）／取得先を確かめた（権利未確認の写し） |
+| Milnor, J. (1968). *Singular Points of Complex Hypersurfaces*. Annals of Math. Studies 61. Princeton UP | 見つからない | 自動では取れない（書籍） |
 
 既存の行に書き足す案：
 
-- D01-S01（Bott）：DOI 10.1007/BF02698544。
-- D01-S02・D01-S03：この記録で本文を読んだ頁（Carlsson p.255・259・265・269、Ghrist p.61・65・67）。
-- D01-S04（Thurston）：手元の PDF は arXiv 版で、頁は arXiv 版の 1–17。誌面は 161–177（arXiv の記載）、Crossref は 161–178。
-- D01-S10（Li & Yorke）：DOI 10.1080/00029890.1975.11994008。取得先の PDF は、カリフォルニア工科大学の教員のサイトに置かれた JSTOR の版（権利は未確認）。
+- 台帳の「Bott 1988」の行（Bott）：DOI 10.1007/BF02698544。
+- 台帳の「Carlsson 2009」の行：この記録で本文を読んだ頁（Carlsson p.255・259・265・269、Ghrist p.61・65・67）。
+- 台帳の「Thurston 1994」の行（Thurston）：手元の PDF は arXiv 版で、頁は arXiv 版の 1–17。誌面は 161–177（arXiv の記載）、Crossref は 161–178。
+- 台帳の「Li & Yorke 1975」の行（Li & Yorke）：DOI 10.1080/00029890.1975.11994008。取得先の PDF は、カリフォルニア工科大学の教員のサイトに置かれた JSTOR の版（権利は未確認）。
 
 ## 手順について分かったこと
 
 - 報告が引く理論の原典の多くは、19 世紀〜20 世紀前半の仏語の論文で、Numdam でログインなしに読めました（Cartan・Julia・Fatou・Leray・Galois）。台帳には行がありませんでした。
 - AMS の古い巻（Morse 1925・Eilenberg & Mac Lane 1945）は、無料で公開されているのに、自動取得には確認画面を返しました。Springer（Acta Mathematica の古い巻）はログインの画面に送られました。
-- 本文で読めた論の多くは、報告が「5段階にない」「非完遂」として外に置いた形（解の消滅・貼り合わせの障害・解けない方程式・はがれ・特徴の死）を、論の中心に書いていました。D08・D25 と同じ形です。
+- 本文で読めた論の多くは、報告が「5段階にない」「非完遂」として外に置いた形（解の消滅・貼り合わせの障害・解けない方程式・はがれ・特徴の死）を、論の中心に書いていました。神経科学・人類学・民族学と同じ形です。
 - 数学では、原典が「対立」「衝突」の語を使わないので、一面の表の対立・衝突・統合はどれも Claude の読み替えになります。原典に書いてある構造（二つの吸引域、二つの系列、重なりの一致）を先に書き、読み替えはそのあとに分けて書きました。
 - 試しの点検の「Morse 理論の不可逆的再編成は f を −f にすると入れ替わる」は、Bott p.104 で確かめられました。試しの点検で挙げた wiki の誤り（Bott の DOI、Hadamard の帰属）は、まだ直っていませんでした。

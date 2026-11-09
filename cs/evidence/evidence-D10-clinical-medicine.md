@@ -14,13 +14,13 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D10-clini
 
 臨床医学と免疫学の論では、衝突の相手が過程の中にはっきり書かれていることが多くありました。たとえば、クローン選択説では、自己に反応する細胞の除去が自己と非自己の境目を作ります（Burnet 1959）。胚中心では、明帯に来た B 細胞のうち選ばれて戻るのは 1〜3 割ほどで、残りは死ぬか出ていきます（Mesin ら 2016）。炎症の収束では、炎症を始める信号そのものが終わりの信号を呼びます（Serhan 2014）。一方で、統合に至らない形も原典に書かれています。慢性創傷は炎症期に留まり、敗血症は早い死・回復・長い免疫抑制に分かれ、自己免疫は、エフェクターと制御のせめぎ合いが続いて再燃と寛解をくり返します。骨折の修復には、断端の動きが多すぎても少なすぎても骨がつながらない「窓」がある、と書かれています。
 
-今の公開報告（`pjdhiro/assets/creation/domains/ja/md/domain-D10-clinical-medicine.md`、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論のうち 8 を「強い対応」としています。報告は、こうした衝突や至らない形の多くを「失敗モード」「適用限界」「病的バリエーション」として、5段階の外の型にまとめています。また、縁を、細胞どうしの接触や表現型の切り替えとして読んでいます。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（`docs/cs-review/README.md` の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
+今の公開報告（「30 領域調査報告」の臨床医学・免疫の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論のうち 8 を「強い対応」としています。報告は、こうした衝突や至らない形の多くを「失敗モード」「適用限界」「病的バリエーション」として、5段階の外の型にまとめています。また、縁を、細胞どうしの接触や表現型の切り替えとして読んでいます。この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D10-clinical-medicine.md) にあります。退避版の判定（Accept・🔴 など）は、今の照合の状態の根拠にしていません。
 
 ## 一面の表
 
-照合の状態は `docs/rules/sources.md` §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。 この表で、原典の構造を対立・衝突・統合と呼ぶことと、括弧の中の並べ方の名（片方の勝利・固着など）は、Claude の読み替えです。
+照合の状態は調べ方の規約 §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。 この表で、原典の構造を対立・衝突・統合と呼ぶことと、括弧の中の並べ方の名（片方の勝利・固着など）は、Claude の読み替えです。
 
 | 論 | 対立 | 衝突 | 統合／新たな安定、または統合に至らずにどう終わったか | 論の微細さ | 照合の状態 |
 |---|---|---|---|---|---|
@@ -43,9 +43,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 要旨：抗体を作る細胞は多くのクローンからなり、抗原は合うクローンを選んで増やす、という説です。Burnet は 1957 年の短い論文で示し、1959 年の講義録で詳しく論じました。抗体の多様性を体細胞で作る遺伝子の組み換えは、利根川らが 1976 年に示しました。
 
 確かめ先：
-- Burnet, F. M. (1959). *The Clonal Selection Theory of Acquired Immunity*. Cambridge University Press. manifest D10-S03。archive.org `clonalselectiont00burn`（https://archive.org/details/clonalselectiont00burn）。手元の PDF で pp.49–62 と p.34 を読んだ。
+- Burnet, F. M. (1959). *The Clonal Selection Theory of Acquired Immunity*. Cambridge University Press. 台帳に行がある。archive.org `clonalselectiont00burn`（https://archive.org/details/clonalselectiont00burn）。手元の PDF で pp.49–62 と p.34 を読んだ。
 - Burnet, F. M. (1957). A modification of Jerne's theory of antibody production using the concept of clonal selection. *Aust. J. Sci.* 20, 67–69。1976 年の再録 doi:10.3322/canjclin.26.2.119（Crossref で書誌だけ確かめた）。
-- Tonegawa, S. (1987). Somatic generation of immune diversity（ノーベル講演）。manifest D10-S04。手元の PDF で pp.381–386 と文献表を読んだ。
+- Tonegawa, S. (1987). Somatic generation of immune diversity（ノーベル講演）。台帳に行がある。手元の PDF で pp.381–386 と文献表を読んだ。
 - Tonegawa, S. (1983). Somatic generation of antibody diversity. *Nature* 302, 575–581. doi:10.1038/302575a0。要旨だけ（Europe PMC）。
 
 照合の状態：本文照合済（Burnet 1959、Tonegawa 1987）。Burnet 1957 と Tonegawa 1983 は要旨照合済か書誌のみ。
@@ -64,9 +64,9 @@ Claude の読み：この論では、衝突は過程の外にありません。�
 - 報告 93 行・プレゼン版 60 行「10 の 11 乗規模の異なる受容体」を Tonegawa 1983 に結ぶ。Tonegawa 1983 の要旨にも 1987 の講演にも、この数は無い（講演は「何百万」p.382、Burnet は「1 万かそれ以上」p.60）。数は退避版 CM-001 の [P] から来た。付け足し・高。
 - 報告 93 行「V(D)J 組換え…（Tonegawa 1983）」。組み換えを示したのは 1976 年の論文（Hozumi & Tonegawa, PNAS 73:3628、講演の文献 16）で、1983 年は総説。帰属違い（年）・中。
 - 英語版 84 行「First proposed by Jerne (1955) and elaborated by Burnet (1957)」。Jerne はクローン選択でなく自然選択説を出し、Burnet がクローンの考えで修正した（Burnet 1959 p.52・p.56・p.60）。帰属違い・中。
-- 報告 95 行「免疫系は場を計画的に生産しています」、プレゼン版 62・64 行「計画的な誤差生産」「制度化」。原典は「ランダム化」と書き、計画や意図の語を使わない。擬人化で、writing.md §4-7 に当たる。言い過ぎ・中。
+- 報告 95 行「免疫系は場を計画的に生産しています」、プレゼン版 62・64 行「計画的な誤差生産」「制度化」。原典は「ランダム化」と書き、計画や意図の語を使わない。擬人化で、書き方の規約 §4-7 に当たる。言い過ぎ・中。
 
-重複：D09 生命科学にもクローン選択説が出ます。
+重複：生命科学にもクローン選択説が出ます。
 
 ### 2. がん免疫編集（Dunn・Old・Schreiber）
 
@@ -93,7 +93,7 @@ Claude の読み：README の並べ方に当てると、排除は免疫の勝ち
 要旨：急性炎症の収束は、受け身に薄まるのではなく、脂質メディエーター（リポキシン・レゾルビン・プロテクチン・マレシン）が働く能動的な過程かもしれない、という論です。
 
 確かめ先：
-- Serhan, C. N. (2014). Pro-resolving lipid mediators are leads for resolution physiology. *Nature* 510, 92–101. doi:10.1038/nature13479。PMC4263681（著者稿。PMC 版の題は "Novel Pro-Resolving Lipid Mediators in Inflammation Are Leads for Resolution Physiology"）。manifest D10-S09。PMC の OAI で本文を取り、序と図 1 の説明を読んだ。著者稿なので雑誌のページは控えられない。
+- Serhan, C. N. (2014). Pro-resolving lipid mediators are leads for resolution physiology. *Nature* 510, 92–101. doi:10.1038/nature13479。PMC4263681（著者稿。PMC 版の題は "Novel Pro-Resolving Lipid Mediators in Inflammation Are Leads for Resolution Physiology"）。台帳に行がある。PMC の OAI で本文を取り、序と図 1 の説明を読んだ。著者稿なので雑誌のページは控えられない。
 - Serhan, C. N., & Savill, J. (2005). Resolution of inflammation: the beginning programs the end. *Nat. Immunol.* 6, 1191–1197. doi:10.1038/ni1276。要旨だけ（Europe PMC）。
 
 照合の状態：本文照合済（Serhan 2014 の PMC 版）。2005 は要旨照合済。
@@ -109,7 +109,7 @@ Claude の読み：この論では、炎症を起こす働きと収める働き�
 今の報告から直したこと：
 - 報告 113 行「能動的プログラムです（Serhan 2014）」。原典は「may be」とヘッジしている。言い過ぎ・低。
 - 報告 72 行の提唱者「Serhan (2005, 2014)」。2005 は Serhan & Savill の共著。プレゼン版は「Serhan (2000s〜)」。帰属・低。
-- 精読ノート `cs/knowledge/source-notes/D10/D10-S09_serhan-2014.md` 14 行の題は PMC の著者稿の題で、出版された題と違う。16 行の「DOI / URL」に DOI が無い。書誌・低。
+- 精読ノート「Serhan 2014」 14 行の題は PMC の著者稿の題で、出版された題と違う。16 行の「DOI / URL」に DOI が無い。書誌・低。
 
 ### 4. 創傷治癒（Guo & DiPietro、Landén ら、Rodrigues ら）
 
@@ -118,7 +118,7 @@ Claude の読み：この論では、炎症を起こす働きと収める働き�
 確かめ先：
 - Guo, S., & DiPietro, L. A. (2010). Factors affecting wound healing. *J. Dent. Res.* 89, 219–229. doi:10.1177/0022034509359125。PMC2903966（PMC では無料だが、自動取得では取れなかった）。要旨は Europe PMC。
 - Landén, N. X., Li, D., & Ståhle, M. (2016). Transition from inflammation to proliferation: a critical step during wound healing. *Cell. Mol. Life Sci.* 73, 3861–3885. doi:10.1007/s00018-016-2268-0。PMC5021733（CC BY）。序・炎症期・マクロファージの節を読んだ。
-- Rodrigues, M., Kosaric, N., Bonham, C. A., & Gurtner, G. C. (2019). Wound healing: a cellular perspective. *Physiol. Rev.* 99, 665–706. doi:10.1152/physrev.00067.2017。manifest D10-S05（[similar-papers]）。手元の PDF で pp.665–666 と p.688 を読んだ。
+- Rodrigues, M., Kosaric, N., Bonham, C. A., & Gurtner, G. C. (2019). Wound healing: a cellular perspective. *Physiol. Rev.* 99, 665–706. doi:10.1152/physrev.00067.2017。台帳に行がある（[similar-papers]）。手元の PDF で pp.665–666 と p.688 を読んだ。
 
 照合の状態：本文照合済（Landén・Rodrigues）。Guo & DiPietro は要旨照合済。
 
@@ -184,7 +184,7 @@ Claude の読み：作ることと壊すことが一つの過程にあります�
 
 確かめ先：
 - Akdis, C. A., & Akdis, M. (2015). Mechanisms of allergen-specific immunotherapy and immune tolerance to allergens. *World Allergy Organ. J.* 8, 17. doi:10.1186/s40413-015-0063-2。PMC4430874（OA）。要旨・寛容の定義・Treg と IgG4 の節を読んだ。
-- Akdis, M. (2014). New treatments for allergen immunotherapy. *World Allergy Organ. J.* 7, 23. doi:10.1186/1939-4551-7-23。manifest D10-S01。手元の PDF（p.1）と PMC4174392 を読んだ。
+- Akdis, M. (2014). New treatments for allergen immunotherapy. *World Allergy Organ. J.* 7, 23. doi:10.1186/1939-4551-7-23。台帳に行がある。手元の PDF（p.1）と PMC4174392 を読んだ。
 
 照合の状態：本文照合済（二本とも）。
 
@@ -197,7 +197,7 @@ Claude の読み：作ることと壊すことが一つの過程にあります�
 Claude の読み：症状を起こすアレルゲン（望まないもの）を過程の外に置かず、くり返し与えることが寛容を作ります。報告は「アレルギー感作状態（誤った束）」と書き（159 行）、善悪の判断を語に入れています（stance 1-2）。
 
 今の報告から直したこと：
-- 報告 76・155 行・英語版 130 行・プレゼン版 51 行の「Akdis & Akdis (2014)」。退避版 323 行は「Mechanisms of allergen-specific immunotherapy and immune tolerance to allergens. *World Allergy Organ. J.*, 7, 17」とするが、この題の論文は 2015 年・8 巻 17（doi:10.1186/s40413-015-0063-2）。7 巻 17 は Holgate の別の論文（doi:10.1186/1939-4551-7-17）。2014 年の Akdis & Akdis は *J. Allergy Clin. Immunol.* 133, 621–631（doi:10.1016/j.jaci.2013.12.1088）。手元の PDF（D10-S01）は M. Akdis 単著の別の論文。書誌の取り違え・高。
+- 報告 76・155 行・英語版 130 行・プレゼン版 51 行の「Akdis & Akdis (2014)」。退避版 323 行は「Mechanisms of allergen-specific immunotherapy and immune tolerance to allergens. *World Allergy Organ. J.*, 7, 17」とするが、この題の論文は 2015 年・8 巻 17（doi:10.1186/s40413-015-0063-2）。7 巻 17 は Holgate の別の論文（doi:10.1186/1939-4551-7-17）。2014 年の Akdis & Akdis は *J. Allergy Clin. Immunol.* 133, 621–631（doi:10.1016/j.jaci.2013.12.1088）。手元の PDF は M. Akdis 単著の別の論文。書誌の取り違え・高。
 - 報告 155 行「IgE 優位から IgG4 優位への抗体クラス転換」。原典は IgE/IgG4 比の低下と、IL-10 による IgG4 の増加を書く。おおむね一致。
 
 ### 8. 移植の拒絶と寛容（Medawar、Billingham・Brent・Medawar、Kawai ら）
@@ -224,7 +224,7 @@ Claude の読み：同じ処置から、拒絶（宿主の勝ち）と寛容（�
 
 要旨：自己免疫は、エフェクターと制御の応答の釣り合いが崩れたもので、発症・進展・収束の相を通る、という総説です。
 
-確かめ先：Rosenblum, M. D., Remedios, K. A., & Abbas, A. K. (2015). Mechanisms of human autoimmunity. *J. Clin. Invest.* 125, 2228–2233. doi:10.1172/JCI78088。PMC4518692。manifest D10-S02。手元の PDF で pp.2228–2229 と図 1 の説明を読みました。
+確かめ先：Rosenblum, M. D., Remedios, K. A., & Abbas, A. K. (2015). Mechanisms of human autoimmunity. *J. Clin. Invest.* 125, 2228–2233. doi:10.1172/JCI78088。PMC4518692。台帳に行がある。手元の PDF で pp.2228–2229 と図 1 の説明を読みました。
 
 照合の状態：本文照合済。
 
@@ -270,7 +270,7 @@ Claude の読み：競争と死が、親和性の上がる過程に欠かせな�
 
 要旨：生物医学のモデルは教条になり、説明できない心理・社会の事実を病気の外に除いています。それを中に含める生物心理社会モデルが要る、という提案です。
 
-確かめ先：Engel, G. L. (1977). The need for a new medical model: a challenge for biomedicine. *Science* 196, 129–136. doi:10.1126/science.847460（Crossref で書誌を確かめました）。manifest D10-S10。University of Rochester の公開 PDF（*Psychodynamic Psychiatry* 40, 377–396, 2012 の再録）を取り、pp.377–382 と p.386 を読みました。
+確かめ先：Engel, G. L. (1977). The need for a new medical model: a challenge for biomedicine. *Science* 196, 129–136. doi:10.1126/science.847460（Crossref で書誌を確かめました）。台帳に行がある。University of Rochester の公開 PDF（*Psychodynamic Psychiatry* 40, 377–396, 2012 の再録）を取り、pp.377–382 と p.386 を読みました。
 
 照合の状態：本文照合済（2012 年の再録。1977 年の原ページは控えていません）。
 
@@ -280,9 +280,9 @@ Claude の読み：競争と死が、親和性の上がる過程に欠かせな�
 - 研究の戦略として一時的に除くのはかまわないが、それが方針になって、除いた領域が忘れられると逆効果になる（p.382）。
 - 生物心理社会モデルの利点の節（p.386）。
 
-Claude の読み：この論の衝突は、身体の過程でなく、医学の考え方の中にあります。Engel は、合わないものを外に置くことそのものを問題にしていて、包摂の芯（良いこと以外を外に置かずに含める）に近い形です。D10 の報告が病気を「失敗モード」として外に置く書き方とも、対照になります。ただし、生物心理社会モデルがその後どう受け入れられたかは、原典の外で、確かめていません。
+Claude の読み：この論の衝突は、身体の過程でなく、医学の考え方の中にあります。Engel は、合わないものを外に置くことそのものを問題にしていて、包摂の芯（良いこと以外を外に置かずに含める）に近い形です。臨床医学・免疫の報告が病気を「失敗モード」として外に置く書き方とも、対照になります。ただし、生物心理社会モデルがその後どう受け入れられたかは、原典の外で、確かめていません。
 
-今の報告から直したこと：報告に出てきません。manifest と精読ノート（D10-S10）にはあり、5段階との対応も書かれています（Stage 1-4）。論として足しました。
+今の報告から直したこと：報告に出てきません。台帳と精読ノート「Engel 1977」にはあり、5段階との対応も書かれています（Stage 1-4）。論として足しました。
 
 ## 公開報告の点検のまとめ
 
@@ -302,8 +302,8 @@ Claude の読み：この論の衝突は、身体の過程でなく、医学の�
 | 胚中心 | 全段階・強い | Strong。螺旋の小さな周期 | 全段階・強い。MacLennan (1994) を足す | Accept・🔴 |
 
 - 件数は四つの版とも「強い 8・そのほか 2」でそろっている。ただし、そのほかの 2 を、日本語版とプレゼン版は「部分的」、英語版は「Conditional」と呼ぶ。日本語版 §2 は「条件付きの対応：病的プロセスへの適用」を定義しながら、病的プロセスの二つ（敗血症・自己免疫）を「部分的」にしている。
-- 英語版 61・150・176 行「Eight displayed strong correspondence with Edge, which is the highest level observed across the investigation of thirty domains」。30 領域を数えた跡は無い。調べた跡（phase5 の output.md 192 行）の「縁フラグ🔴 8件は全領域中最多級」から来た。言い過ぎ・中。日本語版 265 行「10件中8件で縁に対応する分子実体が具体的に特定」も、退避版の縁フラグ🔴 の数。
-- 日本語版 81・259 行「10件中8件で強い構造対応が確認され」。DR-D10 の総評は「構造類似の全体的強度：中」で、DR が評価したのは三つの候補だけ。「強い」の判定は、退避版（Step 7、Claude）で付いた。
+- 英語版 61・150・176 行「Eight displayed strong correspondence with Edge, which is the highest level observed across the investigation of thirty domains」。30 領域を数えた跡は無い。調べた跡（phase5 の出力 192 行）の「縁フラグ🔴 8件は全領域中最多級」から来た。言い過ぎ・中。日本語版 265 行「10件中8件で縁に対応する分子実体が具体的に特定」も、退避版の縁フラグ🔴 の数。
+- 日本語版 81・259 行「10件中8件で強い構造対応が確認され」。2026-02 の DRの総評は「構造類似の全体的強度：中」で、DR が評価したのは三つの候補だけ。「強い」の判定は、退避版（Step 7、Claude）で付いた。
 - 日本語版 §6 の失敗モードの表（214〜219 行）は、「持続」（がん）と「停滞」（慢性創傷）を、どちらも「縁から渦への遷移」の問題としていて、二つの型が同じ遷移に重なる。
 
 ### 中心の問いとの関わり
@@ -314,16 +314,16 @@ Claude の読み：この論の衝突は、身体の過程でなく、医学の�
 
 ### テンプレート由来の表示
 
-日本語版の「立ち位置明示」（3 行）、「Phase 1-4」「Phase 5（論拠監査）」ほか（28〜31 行）、「方法論的開示（S60）」（39 行）、「著者（pjdhiro）自身の精読による検証が完了していない箇所」（44 行）、「温度帯の分布」（81 行）、「安全弁：…以降の詳細分析は省略可能です」（83〜85 行）、「結びの温度開示」（253 行）、「Colophon」の generator_model（271〜281 行）。英語版 55 行「If any of these definitions feels discordant, … step away from the report at this point」（型 F）。D01・D22 と同じく、テンプレートが原因。
+日本語版の「立ち位置明示」（3 行）、「Phase 1-4」「Phase 5（論拠監査）」ほか（28〜31 行）、「方法論的開示（S60）」（39 行）、「著者（pjdhiro）自身の精読による検証が完了していない箇所」（44 行）、「温度帯の分布」（81 行）、「安全弁：…以降の詳細分析は省略可能です」（83〜85 行）、「結びの温度開示」（253 行）、「Colophon」の generator_model（271〜281 行）。英語版 55 行「If any of these definitions feels discordant, … step away from the report at this point」（型 F）。数学・経営学と同じく、テンプレートが原因。
 
 ### 誤りの出どころ
 
 - 「10 の 11 乗」・「Medawar (1944/1960)」・Akdis & Akdis の書誌（7, 17）・Mesin の共著者：退避版（Step 7、2026-03-01）の [P] と refs から。
-- 失敗モード 4 型：調べた跡の phase6 の output.md（H2、[SPECULATIVE] の印つき）から phase7 の P3 を経て、日本語版 §6 に入った。報告では [SPECULATIVE] の印が落ちて「調査の結果、以下の4つの失敗モードが整理されました」（212 行）になった。
+- 失敗モード 4 型：調べた跡の phase6 の出力（H2、[SPECULATIVE] の印つき）から phase7 の P3 を経て、日本語版 §6 に入った。報告では [SPECULATIVE] の印が落ちて「調査の結果、以下の4つの失敗モードが整理されました」（212 行）になった。
 - 「計画的な誤差生産」「制度的な誤差生産」と英語版の題「The Wisdom of Life That Institutionalizes Error」：退避版の評価レンズ「誤差の3運命（棄却・採用・保持）」から。欠損の旧い定義（「棄却される誤差」）と同じ語で、README 段 1 が外すとしている語に当たる。
-- 創傷治癒の段の当て方：DR-D10（臨床医学-004）から。縁は DR では「マクロファージ↔線維芽細胞の相互作用」、退避版で「M1→M2 転換を軸とした」に変わった。
+- 創傷治癒の段の当て方：2026-02 の DR（臨床医学-004）から。縁は DR では「マクロファージ↔線維芽細胞の相互作用」、退避版で「M1→M2 転換を軸とした」に変わった。
 
-### 文体（writing.md・corrections.md の型）
+### 文体（書き方と誤りの型の規約）
 
 - 型 E（断定）：「炎症の収束は自然消退ではなく…能動的プログラムです」（113 行。原典は may be）。「5段階モデルとの構造対応が最も明瞭な免疫学理論の一つです」（91 行、121 行も同じ形）。
 - 擬人化（writing §4-7）と意図の付与：「免疫系は場を計画的に生産しています」（95 行）、「SHM による『意図的誤差生産』」（189 行）。原典はどちらも「ランダム」と書く。
@@ -334,11 +334,11 @@ Claude の読み：この論の衝突は、身体の過程でなく、医学の�
 
 1. がん免疫編集の逃避と、移植の拒絶を、どの並べ方に置くか。README は、片方が勝つ形を統合でなく「波に留まる・場に戻る」として並べるとしている。逃避した腫瘍は免疫に削られた形を持ち、拒絶された移植片は線維化して残る。予想：片方の勝利として並べ、衝突の跡が形に残る点を一言添える（stance 1-2「悪い統合も統合とする」と、README の片方の勝利の扱いの両方を書く）。
 2. 報告の「失敗モード 4 型」（README の段 3 の材料に挙がっている）を、どう引き継ぐか。予想：4 型の名前（暴走・持続・誤認・停滞）はそのまま採らず、原典に書かれた終わり方（早い死・回復・長い免疫抑制、炎症期に留まる、せめぎ合いが続く、窓を外れて骨がつながらない）で並べ直す。原典に書かれた分かれ目（骨折の動きの窓、敗血症の患者の条件、Kawai の処置の条件）を、段 3 の境目の材料にする。
-3. Engel 1977 を D10 の論に入れるか。身体の過程でなく医学の枠組みの論で、領域の対象（その分野の理論の構造）には入る。予想：入れる。包摂の芯をそのまま論じている論として、段 3 で使える。
+3. Engel 1977 を臨床医学・免疫の論に入れるか。身体の過程でなく医学の枠組みの論で、領域の対象（その分野の理論の構造）には入る。予想：入れる。包摂の芯をそのまま論じている論として、段 3 で使える。
 4. 5段階の定義が決まるまで、段の当てはめ（縁＝接触か衝突か、など）は保留。
 
 ## 手順について分かったこと
 
 - PMC の著者稿と OA の論文は、PMC の OAI（`pmc.ncbi.nlm.nih.gov/api/oai/v1/mh/`）で本文の XML が取れた。PMC の PDF と Cell Press の PDF は、自動取得の確かめ画面で取れなかった。著者稿には雑誌のページが無いので、ページの代わりに節の名前を控えた。
-- 手元の PDF（D10-S01）が、報告が引く文献と同じ年・同じ誌の別の論文だった。表紙の書誌を、報告の書誌とも突き合わせる要がある。
-- 報告が引く理論の多くは、manifest に行が無かった（Dunn・Guo & DiPietro・Landén・Hotchkiss・Einhorn・Medawar・Kawai・Victora）。manifest の D10 の行のうち 5 本は似た論文で、報告に出てくる原典は Burnet・Tonegawa・Akdis・Rosenblum の 4 本だけだった。
+- 手元の PDF が、報告が引く文献と同じ年・同じ誌の別の論文だった。表紙の書誌を、報告の書誌とも突き合わせる要がある。
+- 報告が引く理論の多くは、台帳に行が無かった（Dunn・Guo & DiPietro・Landén・Hotchkiss・Einhorn・Medawar・Kawai・Victora）。台帳の臨床医学・免疫の行のうち 5 本は似た論文で、報告に出てくる原典は Burnet・Tonegawa・Akdis・Rosenblum の 4 本だけだった。
