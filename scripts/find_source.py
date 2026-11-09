@@ -585,6 +585,25 @@ def crossref(args, rep, email):
     return meta
 
 
+def other_work(args, by_doi, title, authors_text, year):
+    """題だけで引いた候補が、同じ題の別の文献でないかを見る。別の文献らしければ理由を返す（DOI で引いたときは見ない）。
+
+    短い題・よくある題（The Evolution of Sex、al-Muqaddimah）は、題の一致だけでは別の著者・別の年の文献を掴む
+    （2026-11-09 の batch で二件）。著者（姓）と年（±2）を突き合わせる。
+    """
+    if by_doi:
+        return ""
+    want = [norm(a) for a in family_names(args.author or "")]
+    got = norm(authors_text or "")
+    if want and got and not any(w in got for w in want):
+        return f"著者が違う（{clean(authors_text)[:40]}）"
+    if args.year and year and str(year).isdigit() and abs(int(year) - int(args.year)) > 2:
+        return f"年が違う（{year}）"
+    if args.title and title and title_score_strict(args.title, title) < 0.6:
+        return "題の重なりが足りない（副題・章・書評の恐れ）"
+    return ""
+
+
 def unpaywall(doi, rep, email, roles, authors):
     if not doi:
         rep.route("Unpaywall", "飛ばした（DOI が無い）")
@@ -644,6 +663,12 @@ def openalex(args, meta, rep, email, roles, authors):
     if s < 0.6:
         rep.route("OpenAlex", f"近い候補なし（いちばん近い「{clean(best.get('title'))}」で一致 {s:.2f}）")
         return None
+    why = other_work(args, bool(doi), best.get("title"),
+                     " ".join((a.get("author") or {}).get("display_name") or "" for a in best.get("authorships") or []),
+                     None if getattr(args, "book", False) else best.get("publication_year"))
+    if why:
+        rep.route("OpenAlex", f"同じ題の別の文献らしいので使わない（「{clean(best.get('title'))[:50]}」・{why}）")
+        return None
     locs = best.get("locations") or []
     n = 0
     for loc in locs:
@@ -656,7 +681,10 @@ def openalex(args, meta, rep, email, roles, authors):
         rep.hits.append(Hit("OpenAlex", url, kind, loc.get("version") or "",
                             f"{src.get('display_name') or '出どころ名なし'}・{why}"
                             + (f"・license={loc['license']}" if loc.get("license") else ""),
-                            oa=bool(loc.get("is_oa")), pdf=bool(loc.get("pdf_url"))))
+                            oa=bool(loc.get("is_oa")),
+                            # OpenAlex の pdf_url が案内の頁のことがある（UNT の ark: など）。PDF らしい URL だけを PDF と数える
+                            pdf=bool(loc.get("pdf_url")) and bool(re.search(
+                                r"\.pdf|/pdf|download|bitstream|/document$|/servlets/purl/", loc["pdf_url"], re.I))))
         n += 1
     oa = (best.get("open_access") or {}).get("oa_status", "")
     rep.route("OpenAlex", f"{n} 件（{best.get('id', '').rsplit('/', 1)[-1]}・一致 {s:.2f}・oa_status={oa}）{openalex_budget()}")
@@ -691,6 +719,11 @@ def semantic_scholar(args, meta, rep, roles, authors):
     if s < 0.6:
         rep.route("Semantic Scholar", f"近い候補なし（「{clean(paper.get('title'))}」で一致 {s:.2f}）")
         return
+    why = other_work(args, bool(doi), paper.get("title"), " ".join(a.get("name") or "" for a in paper.get("authors") or []),
+                     paper.get("year"))
+    if why:
+        rep.route("Semantic Scholar", f"同じ題の別の文献らしいので使わない（「{clean(paper.get('title'))[:50]}」・{why}）")
+        return
     oa = paper.get("openAccessPdf") or {}
     n = 0
     if oa.get("url"):
@@ -724,6 +757,12 @@ def europe_pmc(args, meta, rep, roles, authors):
         rep.route("Europe PMC", f"引けなかった（{note}）")
         return
     res = [r for r in res if not args.title or title_score(args.title, r.get("title") or "") >= 0.6]
+    dropped = [r for r in res if other_work(args, bool(doi), r.get("title"), r.get("authorString"), r.get("pubYear"))]
+    res = [r for r in res if r not in dropped]
+    if dropped and not res:
+        rep.route("Europe PMC", "同じ題の別の文献らしいので使わない（「" + clean(dropped[0].get("title"))[:50] + "」・"
+                  + other_work(args, False, dropped[0].get("title"), dropped[0].get("authorString"), dropped[0].get("pubYear")) + "）")
+        return
     if not res:
         rep.route("Europe PMC", "該当なし（生命・医学の外の文献は載らない）")
         return
@@ -825,6 +864,8 @@ def internet_archive(args, meta, rep, want_book):
 def wayback_urls(urls, rep, roles, authors, auto=False):
     """指定した URL そのものの Wayback の写し（PDF）を引く。確認画面を返すホストの PDF は、ここに残っていることがある。"""
     for u in urls:
+        if re.match(r"https?://(web\.)?archive\.org/", u):
+            continue  # Internet Archive 自身の URL は、CDX が 403 を返す
         cdx = ("https://web.archive.org/cdx/search/cdx?output=txt&fl=timestamp,original,length&filter=statuscode:200"
                f"&filter=mimetype:application/pdf&limit=-8&url={urllib.parse.quote(u, safe='')}")
         st, text, note = http_text(cdx, retry_timeout=False)

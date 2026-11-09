@@ -99,6 +99,17 @@ class Classify(unittest.TestCase):
         self.assertEqual(fs.verdict([])[0], 9)
 
 
+class OtherWork(unittest.TestCase):
+    def test_same_title_other_work(self):
+        import argparse
+        # 2026-11-09 の batch：Maynard Smith (1978) の本に、同じ題の 2025 年の論文を当てた
+        a = argparse.Namespace(title="The Evolution of Sex", author="Smith", year=1978)
+        self.assertIn("年が違う", fs.other_work(a, False, "The evolution of sex", "Smith J, Jones K", 2025))
+        self.assertIn("著者が違う", fs.other_work(a, False, "The evolution of sex", "Otto SP", 1978))
+        self.assertEqual(fs.other_work(a, False, "The Evolution of Sex", "John Maynard Smith", 1978), "")
+        self.assertEqual(fs.other_work(a, True, "anything", "anyone", 2025), "")  # DOI で引いたときは見ない
+
+
 class CheckText(unittest.TestCase):
     def check(self, head, n_pages, **want):
         base = {"title": None, "authors": [], "year": None, "pages": "", "journal": "", "doi": "", "book": False}
