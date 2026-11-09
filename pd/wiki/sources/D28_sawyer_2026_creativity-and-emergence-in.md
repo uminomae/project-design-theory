@@ -1,6 +1,6 @@
 ---
 title: "創造性と創発 — 即興演劇と社会生活"
-description: "Sawyer (2026) Cambridge Elements 論文。即興演劇のドラマチック・フレームが個々の俳優の行為から創発しつつ、創発後は俳優を制約する『下向き因果』を持つことを示し、ミクロ-マクロ問題への非還元的回答として『即興的創発』理論を構築した。"
+description: "Sawyer (2026) の *Signs and Society* 14(1) の論文。即興演劇のドラマチック・フレームが個々の俳優の行為から創発しつつ、創発後は俳優を制約する『下向き因果』を持つことを示し、ミクロ-マクロ問題への非還元的回答として『即興的創発』理論を構築した。"
 aliases: ["Creativity and Emergence in Improvisational Theater and in Social Life", "improvisational emergence"]
 tags: [source, "D28", "原典解説"]
 source:
@@ -61,7 +61,7 @@ review_state: 未レビュー
 
 - 著者: Keith Sawyer
 - 年: 2026
-- 出典: *Signs and Society* (Cambridge Elements), pp.1–17
+- 出典: *Signs and Society* 14(1), 96–112（2026）。DOI 10.1017/sas.2025.10039
 - access_status: url-verified
 - **DOI**: [10.1017/sas.2025.10039](https://doi.org/10.1017/sas.2025.10039)
 - **オープンアクセス**: [Cambridge Core PDF](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/21DAA8166D961C9E50FBCD4958E53B16/S2326448925100391a.pdf)
