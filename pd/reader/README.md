@@ -7,7 +7,7 @@
 | `three-and-seven.html` | `knowledge/research/two-axis-closure/READER-division-algebra-consciousness-organization.md` | glow（透過記事＋glow-card） |
 | `stages-screener.html` | `knowledge/research/stages-screener/READER-stages-screener.md`（本文）＋ `screener-data.json`（問いと選択肢・version） | flow（`<!--SCREENER-->` に 16問×5択を差し込み、「答える」章だけ `<!--OPEN-->` で開く。上部にトップと同じ Menu（`src/reader-menu.js`）、状態は最終更新日とバージョン。DESIGN-RULES §13・§14） |
 | `gravity-love.html` | **初版・手書き（生成元なし）**。図は `src/reader-gravity-love.js`。後で正本 MD＋生成へ移す（#15） | flow（二枚並置の 3D 井戸） |
-| `gravity-well.html` | `knowledge/research/gravity-well/READER-gravity-well.md`（重力の井戸とは・#64。Love駆動開発がたとえに使う絵の説明。何を描いた絵か・中心の三つの性質・なぜたとえに使うか・事実とたとえの境目・出てくる場所へ戻るリンク） | flow（二枚並置の 3D 井戸は `src/reader-gravity-love.js`。**工事中＝noindex**。Love駆動開発の確認と一緒に外す） |
+| `gravity-well.html` | `knowledge/research/gravity-well/READER-gravity-well.md`（重力の井戸とは・#64。Love駆動開発がたとえに使う絵の説明。何を描いた絵か・中心の三つの性質・なぜたとえに使うか・事実とたとえの境目・出てくる場所へ戻るリンク。井戸の絵の説明はここにだけ置き、`gravity-love.html` からは `#gw-what`・`#gw-caution`・`#gw-center`・`#gw-faq`・`#gw-facts` へリンクする・#92） | flow（二枚並置の 3D 井戸は `src/reader-gravity-love.js`。**工事中＝noindex**。Love駆動開発の確認と一緒に外す） |
 | `energy-flow.html` | `knowledge/research/energy-flow-psyche/READER-energy-flow-psyche.md` | flow（一枚ガラスカラム＋章アコーディオン＋garage 型目次。DESIGN-RULES §13） |
 | `love-driven-dev.html` | `knowledge/research/love-driven-dev/READER-love-driven-dev.md`（計画と章の状態は同ディレクトリ `README.md`・#20） | flow（トップと同じ Menu・DESIGN-RULES §14。**工事中＝noindex**。本文が揃ったら noindex を外し sitemap・llms.txt へ） |
 | `influences-psychology.html` | `knowledge/research/influences-psychology/READER-influences-psychology.md`（学者名・主要な論の説明・pjdhiro の印象の順。印象は本人の言葉が届いたものから） | flow（トップと同じ Menu。**工事中＝noindex**。印象が揃ったら noindex を外し sitemap・llms.txt へ。Love駆動開発以外からもリンクする予定） |
