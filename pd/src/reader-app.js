@@ -1,7 +1,7 @@
 // Reader LP 用ブートストラップ — index.html と同じシェーダー背景を起動する。
 // UI の振る舞いをページ内インラインに書かないための入口（DESIGN-RULES §6）。
 //
-// ページ固有の背景：body の data-background が `love-…` のとき、または `?bg=gemini|orbit|lens|binary`
+// ページ固有の背景：body の data-background が `love-…` のとき、または `?bg=gemini|gemini2|orbit|lens|binary`
 // のときは、Love駆動開発の背景（backgrounds/love-gemini.js＝Gemini 作、love-field.js＝Claude の見本）を使う。
 // 失敗したら、いつものランダムなシェーダー背景に戻す。
 import { loadRandomShader } from './bootstrap/shaders.js';
@@ -15,6 +15,7 @@ function loveBackgroundModule() {
     } catch (_) { /* window が無い環境 */ }
     const name = String(q || (document.body && document.body.dataset.background) || '').replace(/^love-/, '');
     if (name === 'gemini') return './backgrounds/love-gemini.js';
+    if (name === 'gemini2') return './backgrounds/love-gemini2.js';
     if (['orbit', 'lens', 'binary'].includes(name)) return './backgrounds/love-field.js';
     return null;
 }
