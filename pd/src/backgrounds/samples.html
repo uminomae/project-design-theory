@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <!--
-  Love駆動開発の背景の見本を三つ並べる（noindex・どこからもリンクしない確かめ用のページ）。
-  見本の中身は love-field.js。選んだものを reader-love-driven-dev-template.html の body に
-  data-background="love-<名前>" として入れる。
+  Love駆動開発の背景の見本を並べる（noindex・どこからもリンクしない確かめ用のページ）。
+  本文とガラスは重ねず、背景だけを見せる（pjdhiro 2026-11-10「ガラスがあって見づらいので、サンプルにテキスト入れないで」）。
+  どの見本を読むかは reader-app.js の loveBackgroundModule。選んだものを
+  reader-love-driven-dev-template.html の body に data-background="love-<名前>" として入れる。
 -->
 <html lang="ja">
 <head>
@@ -10,77 +11,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
     <title>Love駆動開発の背景の見本</title>
-    <link rel="stylesheet" href="../styles/tokens.css">
     <style>
         :root { color-scheme: dark; }
         * { box-sizing: border-box; }
-        body {
-            margin: 0;
-            background: #05070d;
-            color: #dfe3ee;
-            font-family: "Noto Sans JP", system-ui, sans-serif;
-            line-height: 1.8;
-        }
-        main { max-width: 1120px; margin: 0 auto; padding: 32px 16px 64px; }
-        h1 { font-weight: 400; font-size: 1.4rem; margin: 0 0 4px; }
-        .lead { color: #aab2c8; font-size: 0.92rem; margin: 0 0 28px; }
-        section { margin: 0 0 44px; }
-        h2 { font-weight: 500; font-size: 1.1rem; margin: 0 0 6px; }
-        h2 small { color: #8f98b0; font-weight: 400; font-size: 0.85rem; margin-left: 0.6em; }
-        .frame {
-            position: relative;
-            width: 100%;
-            aspect-ratio: 16 / 9;
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: 10px;
-            overflow: hidden;
-            background: #000;
-        }
+        body { margin: 0; background: #05070d; color: #dfe3ee; font-family: "Noto Sans JP", system-ui, sans-serif; line-height: 1.7; }
+        main { max-width: 1280px; margin: 0 auto; padding: 24px 16px 64px; }
+        h1 { font-weight: 400; font-size: 1.2rem; margin: 0 0 20px; }
+        section { margin: 0 0 36px; }
+        h2 { font-weight: 500; font-size: 1rem; margin: 0 0 8px; }
+        h2 a { color: #c9b98f; font-weight: 400; font-size: 0.85rem; margin-left: 0.8em; }
+        .frame { position: relative; width: 100%; aspect-ratio: 16 / 9; border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 10px; overflow: hidden; background: #000; }
         .frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-        p { margin: 10px 0 0; font-size: 0.92rem; }
-        .phys { color: #aab2c8; font-size: 0.86rem; }
-        a { color: #c9b98f; }
-        @media (max-width: 640px) {
-            .frame { aspect-ratio: 3 / 4; }
-        }
+        @media (max-width: 640px) { .frame { aspect-ratio: 3 / 4; } }
     </style>
 </head>
 <body>
 <main>
-    <h1>Love駆動開発の背景の見本</h1>
-    <p class="lead">
-        三つとも、物理の式から形を取り、細い光の線と粒で描いています。中心そのものは描かず、周りの動きだけで場所を示します。
-        本文の後ろでは、読み進めるほどカメラが真上へ回ります。
-    </p>
+    <h1>Love駆動開発の背景の見本（背景だけ）</h1>
 
     <section>
-        <h2>A　見えない中心 <small>orbit</small></h2>
-        <div class="frame"><iframe src="frame.html?bg=orbit" title="見本 A 見えない中心" loading="lazy"></iframe></div>
-        <p>渦を巻く円盤の真ん中に、何も映らない影があります。周りの回り方だけが、そこに重さがあることを示しています。</p>
-        <p class="phys">
-            銀河の平らな回転曲線（外側でも速さが落ちない）・密度波の二本の腕（腕の中で赤く光る電離ガス）・斜めに交わる淡い弧（見えない重さの広がり＝ハロー）・中心の影と光の輪（奥側の円盤が重力レンズで上に回り込む）。
-            <a href="../../reader/love-driven-dev.html?bg=orbit">本文と重ねて見る</a>
-        </p>
+        <h2>Gemini 1　二つの源のベクトル場と、クライン／トーラス型の面 <a href="frame.html?bg=gemini">全画面</a></h2>
+        <div class="frame"><iframe src="frame.html?bg=gemini" title="Gemini 1" loading="lazy"></iframe></div>
     </section>
 
     <section>
-        <h2>B　井戸と光の道 <small>lens</small></h2>
-        <div class="frame"><iframe src="frame.html?bg=lens" title="見本 B 井戸と光の道" loading="lazy"></iframe></div>
-        <p>井戸の形の格子の上を、遠くから来た光の束が流れ、底のまわりで曲がり、何周か回ってから出ていくか、落ちていきます。</p>
-        <p class="phys">
-            シュヴァルツシルト時空の赤道面の形（Flamm の放物面）・光の道（ヌル測地線を数値で解いたもの）・光子球（光が回り続ける半径）。道を井戸の面に載せて描くのは模式です。
-            <a href="../../reader/love-driven-dev.html?bg=lens">本文と重ねて見る</a>
-        </p>
+        <h2>Gemini 2　蔵本モデルの同期と、トーラスの網目 <a href="frame.html?bg=gemini2">全画面</a></h2>
+        <div class="frame"><iframe src="frame.html?bg=gemini2" title="Gemini 2" loading="lazy"></iframe></div>
     </section>
 
     <section>
-        <h2>C　二つで一つ <small>binary</small></h2>
-        <div class="frame"><iframe src="frame.html?bg=binary" title="見本 C 二つで一つ" loading="lazy"></iframe></div>
-        <p>見えない二つが互いを回り、その揺れが二本の腕のらせんになって、場の全体に広がっていきます。</p>
-        <p class="phys">
-            連星から出る重力波（回る速さの倍の振動数・遠くほど遅れて届く）・面の輪の伸び縮み（ひずみ）・空間に広がる波面の向きによる強さ。膜が上下に揺れる動きは、伸び縮みを見やすくするための模式です。
-            <a href="../../reader/love-driven-dev.html?bg=binary">本文と重ねて見る</a>
-        </p>
+        <h2>Gemini 3　複素ポテンシャルの渦と、中央の液体のような面 <a href="frame.html?bg=gemini3">全画面</a></h2>
+        <div class="frame"><iframe src="frame.html?bg=gemini3" title="Gemini 3" loading="lazy"></iframe></div>
     </section>
 </main>
 </body>
