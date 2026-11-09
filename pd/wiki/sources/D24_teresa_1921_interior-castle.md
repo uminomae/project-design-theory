@@ -46,7 +46,7 @@ review_state: 未レビュー
 
 ## 書誌情報
 
-- 著者: アビラのテレサ（Teresa of Avila, St.）、編集: Benedict Zimmerman
+- 著者: アビラのテレサ（Teresa of Avila, St.）、訳: The Benedictines of Stanbrook、編集・注: Benedict Zimmerman（第 3 版、Thomas Baker, London, 1921）
 - 年: 原著1577年頃（本版1921年）
 - 出典: Christian Classics Ethereal Library（Grand Rapids, MI）
 - access_status: raw-confirmed
