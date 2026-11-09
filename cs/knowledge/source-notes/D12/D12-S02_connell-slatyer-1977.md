@@ -41,7 +41,7 @@
 
 ### 主張 4: Inhibition モデルでは、後続種は在来種の「死」によってのみ入る — 競争でなく外的攪乱が駆動
 
-> "In contrast to the first model, the third holds that once earlier colonists secure the space and/or other resources, they inhibit the invasion of subsequent colonists or suppress the growth of those already present. The latter invade or grow only when the dominating residents are damaged or killed, thus releasing resources." (p.1122)
+> "In contrast to the first model, the third holds that once earlier colonists secure the space and/or other resources, they inhibit the invasion of subsequent colonists or suppress the growth of those already present. The latter invade or grow only when the dominating residents are damaged or killed, thus releasing resources." (p.1123)
 
 > "In model 3, however, this cannot happen; the early species are killed by local disturbances caused by physical extremes or natural enemies such as herbivores, parasites, or pathogens." (p.1124)
 
@@ -59,7 +59,7 @@ Facilitation/Tolerance では早期種は後続種との競争で死ぬが、Inh
 
 ### 主張 6: モデルは管理・予測に実践的含意を持つ（回復速度が異なる）
 
-> "In the facilitation model 1, early-succession species enhance the invasion and growth of late-succession species, so the former increase the rate of recovery. In the tolerance model 2 the early species reduce the rate of recovery ... [in the] inhibition model 3, the early species prevent recovery completely until they die." (pp.1138-1139)
+> "In the facilitation model 1, early-succession species enhance the invasion and growth of late-succession species, so the former increase the rate of recovery. In the tolerance model 2 the early species reduce the rate of recovery ... [in the] inhibition model 3, the early species prevent recovery completely until they die." (p.1132)
 
 どのモデルが効くかで「早期種を促すべきか抑えるべきか」が逆転する。
 
@@ -77,7 +77,7 @@ Facilitation/Tolerance では早期種は後続種との競争で死ぬが、Inh
 | 1 場 (Field) | 「攪乱で開いた相対的に大きな空間」が遷移の場。succession の定義そのもの | 強 | "Succession refers to the changes observed in an ecological community following a perturbation that opens up a relatively large space." (p.1119) |
 | 2 波 (Wave) | 種の逐次的侵入・置換の系列（sequence of species）= 時間的な集団的うねり。Inhibition では攪乱が波を駆動 | 中 | "the mechanisms which determine the changes during succession" (p.1119) |
 | 3 縁 (Relation) | 種間相互作用（facilitation / competition / inhibition）= 遷移を決める関係機構。本論文の中核 | 強 | "the biological interaction regarded as being of overriding importance is competition" (p.1120); 3 機構はすべて種間の関係様式 |
-| 4 渦 (Vortex) | Inhibition の自己永続的優占（在来種が空間を保持し続ける自己駆動構造） | 中 | "colonies of 'staghorn' corals that have grown up over all neighbors and now hold the space against invaders" (p.1135 付近) |
+| 4 渦 (Vortex) | Inhibition の自己永続的優占（在来種が空間を保持し続ける自己駆動構造） | 中 | "colonies of 'staghorn' corals that have grown up over all neighbors and now hold the space against invaders" (p.1137) |
 | 5 束 (Bundle) | 極相群集＝統合された安定終点。**ただし著者はこの「統合」像を目的論的類比として批判** | 中（批判付き） | "the community is a highly integrated, well-adjusted set of species" を引用しつつ "based solely on the analogy, not ... on evidence" と否定 (p.1136) |
 
 **判定基準の適用**:

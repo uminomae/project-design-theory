@@ -31,7 +31,7 @@
 
 ### 主張 2: 施用窒素の半分未満しか作物に回収されない
 
-> "In most intensive agricultural systems, on-farm trials consistently show that less than half of applied N is recovered in crops. Much of the remainder commonly is lost to the environment." (p.108)
+> "In most intensive agricultural systems, on-farm trials consistently show that less than half of applied N is recovered in crops. Much of the remainder commonly is lost to the environment." (p.107)
 
 集約農業では施用 N の半分未満しか作物に取り込まれず、残りの多くが環境に流出する。これが窒素農業の中心問題である。
 
