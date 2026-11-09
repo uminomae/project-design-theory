@@ -151,10 +151,6 @@ date: 2026-11-09
 
 </div>
 
-<!--REF:仏教-->
-
-出典：SN 56.11 Dhammacakkappavattana Sutta（SuttaCentral・Sujato 訳 CC0）／『長阿含経』十上経 T0001, 1.53a（CBETA）／Dhammapada 209–220（SuttaCentral）／『法句経』好喜品 T0210, 4.567c（CBETA）／Sn 1.8 Karaṇīya Mettā Sutta（SuttaCentral）／DN 13・AN 4.125（SuttaCentral）／『大智度論』T1509, 25.256b・209a・350b（CBETA）／Śāntideva, *Bodhicaryāvatāra* 8.90・8.120（GRETIL）／『歎異抄』第四条（親鸞仏教センター講座資料の翻刻）／道元『正法眼蔵』菩提薩埵四摂法 T2582, 82.174c29–175a19（SAT 2018）。
-
 ## 仏教のそばで — 儒教の仁と、墨子の兼愛
 
 <a id="lh-ren"></a>この章は、中国の古典が「愛」の字をどう使ったかを、三つの書で見ます。年代は前 5 世紀から前 4 世紀が目安ですが、三つの書はどれも没後に編まれたもので、年代は確かめていません。
@@ -198,10 +194,6 @@ date: 2026-11-09
 
 </div>
 
-<!--REF:中国の思想-->
-
-出典：『論語』顔淵 12.22／『墨子』兼愛中／『孟子』離婁下 28・尽心上 45・滕文公上 5・滕文公下 9（いずれも中国語版 Wikisource の原文）。
-
 <!--PART:第二部|西洋哲学の流れ-->
 
 ## エンペドクレス — 混ぜる力としての愛
@@ -230,10 +222,6 @@ date: 2026-11-09
 | 出典と照合の状態 | 本文照合済（訳）。[Diels『Fragmente der Vorsokratiker』第 2 版 第 1 巻（1906）](https://archive.org/details/diefragmentederv01dieluoft)の 177〜178 ページ（ドイツ語訳で確かめ、ギリシャ語は OCR の字形と突き合わせたところまで）と、[Burnet『Early Greek Philosophy』第 2 版（1908・Project Gutenberg）](https://www.gutenberg.org/ebooks/67097)の英訳。エンペドクレス自身の語は Φιλότης で、Φιλία はアリストテレス（『形而上学』985a3–5）などの言い換えです |
 
 </div>
-
-<!--REF:ギリシャ哲学-->
-
-出典：Hesiod, *Theogony* 116–122（Perseus・Evelyn-White 版）／Parmenides DK 28 B13（Plato, *Symposium* 178b・Aristotle, *Metaphysics* 984b26 の引用）／Empedocles DK 31 B17・B26・B35（Diels 1906, pp.177–178・Burnet 1908 英訳）。
 
 ## プラトン — 欠けているものを求めるエロス
 
@@ -267,10 +255,6 @@ date: 2026-11-09
 
 </div>
 
-<!--REF:ギリシャ哲学-->
-
-出典：Plato, *Symposium* 180c–185c・189c–193d・199c–201c・202d–212a／Plato, *Phaedrus* 244a–257b（Perseus, Burnet 1903 のギリシャ語・Fowler 1925 の英訳）。
-
 ## アリストテレス — 友愛と、愛されるものとして動かす中心
 
 <a id="lh-aristotle"></a>この章は、アリストテレスが二つの場所で書いたことを見ます。一つは人と人の友愛（フィリア）、もう一つは、動かずに世界を動かす中心が「愛されるものとして」動かすという一文です。後の方は、[愛は、重力に似ていないか](gravity-love.html)が既に引いています。
@@ -300,10 +284,6 @@ date: 2026-11-09
 | 出典と照合の状態 | 本文照合済。Perseus の [Ross 版ギリシャ語](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0051:book=12:section=1072b)と [Tredennick 英訳（Loeb 1933）](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0052:book=12:section=1072b)。Ross 版の読みは「δὴ」です。[愛は、重力に似ていないか](gravity-love.html)の引き方（自らは動かずに天を動かす不動の動者が、愛されるものとして動かす）は、原文と合っています。「天」は 1072a23 付近の流れから読んだもので、1072b3 の文そのものは「ほかのもの」と言っているだけです |
 
 </div>
-
-<!--REF:ギリシャ哲学-->
-
-出典：Aristotle, *Nicomachean Ethics* VIII–IX（1155a–1172a。Perseus, Bywater のギリシャ語・Rackham 英訳）／Aristotle, *Metaphysics* Λ7, 1072b3・A4, 984b23–985a7（Perseus, Ross 1924・Tredennick 1933）。
 
 ## ストア派 — 自分への親しみが、広がっていく
 
@@ -335,10 +315,6 @@ date: 2026-11-09
 
 </div>
 
-<!--REF:ギリシャ哲学-->
-
-出典：Diogenes Laertius, *Lives* 7.85・7.113・7.129–130（Perseus, Hicks 1925）／Cicero, *De finibus* III.16・62–63（The Latin Library）。
-
 ## 新約聖書 — アガペー
 
 <a id="lh-agape"></a>この章は、新約聖書のギリシャ語本文で、愛の語がどう使われているかを見ます。多くの場所で使われているのは、名詞のアガペー（ἀγάπη）ではなく、動詞のアガパオー（ἀγαπάω）です。
@@ -362,10 +338,6 @@ date: 2026-11-09
 
 </details>
 
-<!--REF:新約とアウグスティヌス-->
-
-出典：Matthew 22:37–39／John 13:34・21:15–17／1 Corinthians 13:4–13／1 John 4:8・16（SBLGNT, CC BY 4.0）。
-
 ## アウグスティヌス — わが重さは、わが愛
 
 <a id="lh-augustine"></a>この章は、アウグスティヌス（354〜430 年）が四つの著作で愛をどう書いたかを見ます。愛を、自分を運ぶ重さ、何に寄りすがるかという向き、行いの根、国を作る力、として書いています。
@@ -383,10 +355,6 @@ date: 2026-11-09
 
 </div>
 
-<!--REF:新約とアウグスティヌス-->
-
-出典：Augustinus, *Confessiones* 13.9.10／*De doctrina christiana* 1.4.4・1.27.28／*In Epistolam Ioannis ad Parthos tractatus* 7.8／*De civitate Dei* 14.28・15.22（The Latin Library・augustinus.it のラテン語）。
-
 ## ダンテ — 太陽とほかの星々を動かす愛
 
 <a id="lh-dante"></a>この章は、ダンテ『神曲』（1308 年ごろ〜1321 年）の四か所を見ます。最後の一行は、[愛は、重力に似ていないか](gravity-love.html)が冒頭に置いているものです。
@@ -403,10 +371,6 @@ date: 2026-11-09
 | 出典と照合の状態 | 本文照合済。Digital Dante（コロンビア大学。Petrocchi 版の原文と Longfellow 英訳）の [煉獄篇 17](https://digitaldante.columbia.edu/dante/divine-comedy/purgatorio/purgatorio-17/)・[18](https://digitaldante.columbia.edu/dante/divine-comedy/purgatorio/purgatorio-18/)・[天国篇 1](https://digitaldante.columbia.edu/dante/divine-comedy/paradiso/paradiso-1/)・[33](https://digitaldante.columbia.edu/dante/divine-comedy/paradiso/paradiso-33/)、青空文庫の山川丙三郎訳 [『浄火』](https://www.aozora.gr.jp/cards/000961/card42184.html)・[『天堂』](https://www.aozora.gr.jp/cards/000961/card4820.html)。煉獄篇 17 の講義は、愛の誤り方から七つの大罪の配置を説明する文脈にあります |
 
 </div>
-
-<!--REF:近代以降の哲学-->
-
-出典：Dante, *Commedia*, Purgatorio 17.91–139・18.19–75, Paradiso 1.103–141・33.145（Digital Dante・青空文庫 山川丙三郎訳）。
 
 ## スピノザ — 外部の原因の観念を伴う喜び
 
@@ -431,10 +395,6 @@ date: 2026-11-09
 
 </details>
 
-<!--REF:近代以降の哲学-->
-
-出典：Spinoza, *Ethica* III def. aff. 6・III P13 schol.・V P32 cor.–P36（la.wikisource・Gutenberg #3800 Elwes 訳）／Schopenhauer, *Die Welt als Wille und Vorstellung* II, Kap. 44（Gutenberg #40868 Haldane & Kemp 訳）。
-
 ## パース — 進化を駆動する愛
 
 <a id="lh-peirce"></a>この章は、パース「進化的な愛（Evolutionary Love）」（1893 年）を見ます。このサイトの [創造とは](https://uminomae.github.io/project-design-theory/cs/) の分野 D13 で既に扱っている論文で、今回はパース本人の本文を原誌で読み直しました。
@@ -457,10 +417,6 @@ date: 2026-11-09
 創造とはの分野 D13 の暫定の wiki ページ（未レビュー）と精読ノートには、今回の本文照合で、次の食い違いが見つかりました。anancasm を「闘争」と書いていますが、原文は機械的な必然（mechanical necessity）です。「異質なものを慈しみ育てる」の「異質」の語は原文に無く、原文にあるのは「憎むべきもの（the hateful）」「憎しみと憎むべきもの（hatred and hatefulness）」です。精読ノートの引用のうち三つは、Cohen の序文にも本文にも同じ文がありません。これらの直しは、創造とはの全体レビュー（[#73](https://github.com/uminomae/project-design-theory/issues/73)）の D13 の回に回します。
 
 </details>
-
-<!--REF:近代以降の哲学-->
-
-出典：Peirce, C. S. (1893) "Evolutionary Love", *The Monist* 3(2):176–200（Internet Archive の原誌）／Peirce, *Chance, Love, and Logic*, ed. M. R. Cohen (1923) pp.267–300（Internet Archive）。
 
 <!--PART:第三部|現代の恋愛と、心理学の分類-->
 
@@ -494,10 +450,6 @@ date: 2026-11-09
 | 出典と照合の状態 | 本文照合済。[青空文庫](https://www.aozora.gr.jp/cards/000157/card45237.html)（底本『現代日本文學大系 6』筑摩書房 1969） |
 
 </div>
-
-<!--REF:現代の恋愛-->
-
-出典：Merriam-Webster, Cambridge Dictionary, デジタル大辞泉・日本国語大辞典（コトバンク）／北村透谷「厭世詩家と女性」（青空文庫）。
 
 ## 心理学は、愛をどう分けてきたか
 
@@ -545,10 +497,6 @@ date: 2026-11-09
 
 </div>
 
-<!--REF:心理学-->
-
-出典：Bowlby (1958) *IJP* 39:350／Hatfield & Sprecher (1986) *J. Adolescence* 9(4):383／Sternberg (1986) *Psychological Review* 93(2):119。
-
 ## 神経科学は、何を測ってきたか
 
 <a id="lh-neuro"></a>この章は、恋愛と愛着を脳で測った研究を、発表の順に並べます。研究が測ったこと（どの条件で、どの領域の活動が上がった、下がった）と、著者の解釈（動機づけの系・報酬の系 など）を分けて書きます。「脳の〇〇が愛の場所」とは、どちらの研究も書いていません。
@@ -579,10 +527,6 @@ date: 2026-11-09
 
 </div>
 
-<!--REF:神経科学-->
-
-出典：Fisher (1998) *Human Nature* 9(1):23／Acevedo et al. (2012) *SCAN* 7(2):145（PMC3277362）。
-
 ## 統合の反対側 — 分裂の分け方を参考にする
 
 <a id="lh-splitting"></a>この章は、Love を統合として見る説が出てきたときに、その反対側に置くための材料です。パーソナリティ障害の分類が、何で分けているか（類型か程度か、群の数、軸の名）だけを控えます。各障害の症状は書きません。病名で人を分ける読みには使いません。
@@ -603,63 +547,53 @@ date: 2026-11-09
 
 </div>
 
-<!--REF:精神分析と分類-->
-
-出典：APA, "What are Personality Disorders?"（2024）・PID-5（2013）／WHO, CDDR (2024) pp.553–559。
-
-<!--PART:巻末|照合の状態と、参照-->
-
-## 照合の状態の一覧
-
-<a id="lh-status"></a>このページに載せた出典の確かめ先です（38 行・2026-11-09）。どれも原典の本文を開いて確かめました。訳や写しで読んだものは、読んだ形の欄に添えています。
-
-<details><summary>一覧 — 項目・読んだ形・確かめ先</summary>
-
-| 項目 | 読んだ形 | 確かめ先 |
-|---|---|---|
-| SN 56.11（渇愛の三種） | 本文照合済 | [SuttaCentral（パーリ）](https://suttacentral.net/sn56.11/pli/ms)・[Sujato 訳](https://suttacentral.net/sn56.11/en/sujato) |
-| 『長阿含経』十上経（三愛） | 本文照合済（漢文） | [CBETA T0001, 1.53a25](https://cbetaonline.dila.edu.tw/zh/T01n0001_p0053a25) |
-| Dhammapada 209–220 | 本文照合済 | [SuttaCentral（パーリ）](https://suttacentral.net/dhp209-220/pli/ms)・[Sujato 訳](https://suttacentral.net/dhp209-220/en/sujato) |
-| 漢訳『法句経』好喜品 | 本文照合済（漢文） | [CBETA T0210, 4.567c](https://cbetaonline.dila.edu.tw/zh/T04n0210_p0567c01) |
-| 慈経 Sn 1.8 | 本文照合済 | [SuttaCentral（パーリ）](https://suttacentral.net/snp1.8/pli/ms)・[Sujato 訳](https://suttacentral.net/snp1.8/en/sujato) |
-| DN 13・AN 4.125 | 本文照合済 | [DN 13](https://suttacentral.net/dn13/en/sujato)・[AN 4.125](https://suttacentral.net/an4.125/en/sujato)（SuttaCentral） |
-| 『大智度論』巻 27・20・40 | 本文照合済（漢文） | [CBETA T1509 巻 27](https://cbetaonline.dila.edu.tw/zh/T1509_027)・[巻 20](https://cbetaonline.dila.edu.tw/zh/T1509_020)・[巻 40](https://cbetaonline.dila.edu.tw/zh/T1509_040) |
-| 『入菩提行論』8.90・8.120 | 本文照合済（底本の版は未確認） | [GRETIL](https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zAntideva-bodhicaryAvatAra.txt) |
-| 『歎異抄』第四条 | 本文照合済（講座資料の翻刻） | [親鸞仏教センターの講座資料](https://shinran-bc.higashihonganji.or.jp/site/wp-content/uploads/2025/12/kaimei20250218.pdf) |
-| 道元「愛語」 | 本文照合済（大正蔵の本文） | [SAT 2018](https://21dzk.l.u-tokyo.ac.jp/SAT2018/master30.php)（手で開いた）・T2582, 82.174c29–175a19 |
-| 『論語』12.22 | 本文照合済（原文・Legge 訳） | [zh.wikisource](https://zh.wikisource.org/wiki/論語/顏淵第十二)・[ctext.org](https://ctext.org/analects/yan-yuan)（手で開いた） |
-| 『墨子』兼愛中 | 本文照合済（原文） | [zh.wikisource](https://zh.wikisource.org/wiki/墨子/兼愛中) |
-| 『孟子』4B28・7A45・3A5・3B9 | 本文照合済（原文）・Legge 訳は 4B28・7A45 だけ照合済 | zh.wikisource の[離婁下](https://zh.wikisource.org/wiki/孟子/離婁下)・[尽心上](https://zh.wikisource.org/wiki/孟子/盡心上)・[滕文公上](https://zh.wikisource.org/wiki/孟子/滕文公上)・[滕文公下](https://zh.wikisource.org/wiki/孟子/滕文公下)／ctext.org の[離婁下](https://ctext.org/mengzi/li-lou-ii)・[尽心上](https://ctext.org/mengzi/jin-xin-i)（手で開いた） |
-| ヘシオドス『神統記』116–122 | 本文照合済 | [Perseus](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0130:card=116) |
-| パルメニデス B13 | 本文照合済（引用者の本文として） | [Perseus（『饗宴』178b の引用）](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0173:text=Sym.:section=178b) |
-| エンペドクレス B17・B26・B35 | 本文照合済（訳） | [Diels 1906](https://archive.org/details/diefragmentederv01dieluoft)・[Burnet 1908](https://www.gutenberg.org/ebooks/67097) |
-| プラトン『饗宴』 | 本文照合済 | [Perseus（ギリシャ語）](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0173:text=Sym.:section=203b)・[Fowler 訳](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0174:text=Sym.:section=203b) |
-| プラトン『パイドロス』 | 本文照合済 | [Perseus（ギリシャ語）](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0173:text=Phaedrus:section=244a)・[Fowler 訳](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0174:text=Phaedrus:section=244a) |
-| 『ニコマコス倫理学』8・9 巻 | 本文照合済 | [Perseus（Rackham 訳）](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0054:bekker+page=1155a) |
-| 『形而上学』Λ7・A4 | 本文照合済 | [Perseus（Ross 版）](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0051:book=12:section=1072b)・[Tredennick 訳](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0052:book=12:section=1072b) |
-| ディオゲネス・ラエルティオス 7.85・113・129–130 | 本文照合済 | [Perseus（Hicks 訳）](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0258:book=7:chapter=1) |
-| キケロ『善と悪の究極について』III | 本文照合済（ラテン語） | [The Latin Library](https://www.thelatinlibrary.com/cicero/fin3.shtml) |
-| マタイ 22・ヨハネ 13・1 コリント 13・1 ヨハネ 4 | 本文照合済（ギリシャ語） | [SBLGNT](https://sblgnt.com/)（[GitHub 版](https://github.com/LogosBible/SBLGNT)） |
-| ヨハネ 21:15–17 | 本文照合済（動詞の分布のみ） | [SBLGNT](https://sblgnt.com/)（[GitHub 版](https://github.com/LogosBible/SBLGNT)） |
-| アウグスティヌス 六か所 | 本文照合済（ラテン語） | The Latin Library の[『告白』13](https://www.thelatinlibrary.com/augustine/conf13.shtml)・[『神の国』14](https://www.thelatinlibrary.com/augustine/civ14.shtml)・[15](https://www.thelatinlibrary.com/augustine/civ15.shtml)／augustinus.it の[『キリスト教の教え』1](https://www.augustinus.it/latino/dottrina_cristiana/dottrina_cristiana_1_libro.htm)・[『ヨハネの手紙一講解』7](https://www.augustinus.it/latino/commento_lsg/omelia_07_testo.htm) |
-| ダンテ 煉獄篇 17・18、天国篇 1・33 | 本文照合済 | Digital Dante の[煉獄篇 17](https://digitaldante.columbia.edu/dante/divine-comedy/purgatorio/purgatorio-17/)・[18](https://digitaldante.columbia.edu/dante/divine-comedy/purgatorio/purgatorio-18/)・[天国篇 1](https://digitaldante.columbia.edu/dante/divine-comedy/paradiso/paradiso-1/)・[33](https://digitaldante.columbia.edu/dante/divine-comedy/paradiso/paradiso-33/)／青空文庫の[『浄火』](https://www.aozora.gr.jp/cards/000961/card42184.html)・[『天堂』](https://www.aozora.gr.jp/cards/000961/card4820.html) |
-| スピノザ『エチカ』III・V | 本文照合済 | la.wikisource の[第三部](https://la.wikisource.org/wiki/Ethica/Pars_tertia_-_De_origine_et_natura_affectuum)・[第五部](https://la.wikisource.org/wiki/Ethica/Pars_quinta_-_De_potentia_intellectus_seu_de_libertate_humana)／[Gutenberg #3800](https://www.gutenberg.org/ebooks/3800) |
-| ショーペンハウアー 第 44 章 | 本文照合済（訳） | [Gutenberg #40868](https://www.gutenberg.org/ebooks/40868) |
-| パース「Evolutionary Love」1893 | 本文照合済 | Internet Archive の[原誌](https://archive.org/details/sim_monist_1893-01_3_2)・[1923 年版](https://archive.org/details/chanceloveandlog00peiruoft) |
-| 辞書（MW・Cambridge・大辞泉・日国） | 本文照合済 | [Merriam-Webster](https://www.merriam-webster.com/dictionary/love)・[Cambridge](https://dictionary.cambridge.org/dictionary/english/love)・コトバンクの[「愛」](https://kotobank.jp/word/%E6%84%9B-23564)・[「恋愛」](https://kotobank.jp/word/%E6%81%8B%E6%84%9B-662001)・[「恋」](https://kotobank.jp/word/%E6%81%8B-493530) |
-| 北村透谷 1892 | 本文照合済 | [青空文庫](https://www.aozora.gr.jp/cards/000157/card45237.html) |
-| Bowlby 1958 | 本文照合済（大学サイトの写し） | [Stony Brook 大学](https://psychology.psy.sunysb.edu/attachment/online/Bowlby_1958_childs%20tie.pdf) |
-| Hatfield & Sprecher 1986 | 本文照合済（著者サイトの写し・p.383–384） | [elainehatfield.com（Wayback）](https://web.archive.org/web/20260520034709/http://www.elainehatfield.com/uploads/3/2/2/5/3225640/71._hatfield__sprecher_1986.pdf) |
-| Sternberg 1986 | 本文照合済（大学教員サイトの写し） | [pitzer.edu](https://pzacad.pitzer.edu/~dmoore/1986_sternberg_trianglelove_psyrev.pdf) |
-| Fisher 1998 | 本文照合済（pp.23–24） | [helenfisher.com](https://helenfisher.com/downloads/articles/10lustattraction.pdf) |
-| Acevedo ら 2012 | 本文照合済 | [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC3277362/) |
-| DSM-5 十の障害・五つの領域と 25 の側面 | 本文照合済 | [APA の公開ページ](https://www.psychiatry.org/patients-families/personality-disorders/what-are-personality-disorders)・[PID-5（成人版）](https://www.psychiatry.org/getContentAsset/594673a6-1b9b-4298-8b52-c4c652c4a4e2/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/APA-DSM5TR-ThePersonalityInventoryForDSM5FullVersionAdult?language=en) |
-| ICD-11 6D10–6D11 | 本文照合済 | [WHO CDDR 2024](https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content) |
-
-</details>
+<!--PART:巻末|参照-->
 
 ## 参照
 
-<a id="lh-refs"></a>章ごとの出典を、分野別に集めています。
+<a id="lh-refs"></a><a id="lh-status"></a>このページに載せた出典です（38 件・2026-11-09）。どれも原典の本文を開いて確かめました。訳や写しで読んだものは、読んだ形の欄に添えています。
 
-<!--REFS-->
+<div class="tablefit cols-4">
+
+| 分野 | 出典 | 読んだ形 | 確かめ先 |
+|---|---|---|---|
+| 仏教 | SN 56.11 *Dhammacakkappavattana Sutta*（渇愛の三種） | 本文照合済 | [SuttaCentral（パーリ）](https://suttacentral.net/sn56.11/pli/ms)・[Sujato 訳](https://suttacentral.net/sn56.11/en/sujato) |
+| 仏教 | 『長阿含経』巻 9 十上経（三愛）T0001, 1.53a25 | 本文照合済（漢文） | [CBETA T0001, 1.53a25](https://cbetaonline.dila.edu.tw/zh/T01n0001_p0053a25) |
+| 仏教 | *Dhammapada* 209–220 | 本文照合済 | [SuttaCentral（パーリ）](https://suttacentral.net/dhp209-220/pli/ms)・[Sujato 訳](https://suttacentral.net/dhp209-220/en/sujato) |
+| 仏教 | 漢訳『法句経』好喜品 T0210, 4.567c | 本文照合済（漢文） | [CBETA T0210, 4.567c](https://cbetaonline.dila.edu.tw/zh/T04n0210_p0567c01) |
+| 仏教 | Sn 1.8 *Karaṇīya Mettā Sutta*（慈経） | 本文照合済 | [SuttaCentral（パーリ）](https://suttacentral.net/snp1.8/pli/ms)・[Sujato 訳](https://suttacentral.net/snp1.8/en/sujato) |
+| 仏教 | DN 13 *Tevijja Sutta*・AN 4.125 | 本文照合済 | [DN 13](https://suttacentral.net/dn13/en/sujato)・[AN 4.125](https://suttacentral.net/an4.125/en/sujato)（SuttaCentral） |
+| 仏教 | 『大智度論』T1509, 25.256b（巻 27）・209a（巻 20）・350b（巻 40） | 本文照合済（漢文） | [CBETA T1509 巻 27](https://cbetaonline.dila.edu.tw/zh/T1509_027)・[巻 20](https://cbetaonline.dila.edu.tw/zh/T1509_020)・[巻 40](https://cbetaonline.dila.edu.tw/zh/T1509_040) |
+| 仏教 | Śāntideva, *Bodhicaryāvatāra* 8.90・8.120 | 本文照合済（底本の版は未確認） | [GRETIL](https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_zAntideva-bodhicaryAvatAra.txt) |
+| 仏教 | 『歎異抄』第四条（蓮如書写本） | 本文照合済（講座資料の翻刻） | [親鸞仏教センターの講座資料](https://shinran-bc.higashihonganji.or.jp/site/wp-content/uploads/2025/12/kaimei20250218.pdf) |
+| 仏教 | 道元『正法眼蔵』菩提薩埵四摂法 T2582, 82.174c29–175a19 | 本文照合済（大正蔵の本文） | [SAT 2018](https://21dzk.l.u-tokyo.ac.jp/SAT2018/master30.php)（手で開いた）・T2582, 82.174c29–175a19 |
+| 中国の思想 | 『論語』顔淵 12.22 | 本文照合済（原文・Legge 訳） | [zh.wikisource](https://zh.wikisource.org/wiki/論語/顏淵第十二)・[ctext.org](https://ctext.org/analects/yan-yuan)（手で開いた） |
+| 中国の思想 | 『墨子』兼愛中 | 本文照合済（原文） | [zh.wikisource](https://zh.wikisource.org/wiki/墨子/兼愛中) |
+| 中国の思想 | 『孟子』離婁下 28・尽心上 45・滕文公上 5・滕文公下 9 | 本文照合済（原文）・Legge 訳は 4B28・7A45 だけ照合済 | zh.wikisource の[離婁下](https://zh.wikisource.org/wiki/孟子/離婁下)・[尽心上](https://zh.wikisource.org/wiki/孟子/盡心上)・[滕文公上](https://zh.wikisource.org/wiki/孟子/滕文公上)・[滕文公下](https://zh.wikisource.org/wiki/孟子/滕文公下)／ctext.org の[離婁下](https://ctext.org/mengzi/li-lou-ii)・[尽心上](https://ctext.org/mengzi/jin-xin-i)（手で開いた） |
+| ギリシャ哲学 | Hesiod, *Theogony* 116–122（Evelyn-White 版） | 本文照合済 | [Perseus](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0130:card=116) |
+| ギリシャ哲学 | Parmenides DK 28 B13（Plato, *Symposium* 178b・Aristotle, *Metaphysics* 984b26 の引用） | 本文照合済（引用者の本文として） | [Perseus（『饗宴』178b の引用）](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0173:text=Sym.:section=178b) |
+| ギリシャ哲学 | Empedocles DK 31 B17・B26・B35（Diels 1906, pp.177–178・Burnet 1908 英訳） | 本文照合済（訳） | [Diels 1906](https://archive.org/details/diefragmentederv01dieluoft)・[Burnet 1908](https://www.gutenberg.org/ebooks/67097) |
+| ギリシャ哲学 | Plato, *Symposium* 180c–185c・189c–193d・199c–201c・202d–212a（Burnet 1903・Fowler 1925） | 本文照合済 | [Perseus（ギリシャ語）](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0173:text=Sym.:section=203b)・[Fowler 訳](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0174:text=Sym.:section=203b) |
+| ギリシャ哲学 | Plato, *Phaedrus* 244a–257b（Burnet 1903・Fowler 1925） | 本文照合済 | [Perseus（ギリシャ語）](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0173:text=Phaedrus:section=244a)・[Fowler 訳](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0174:text=Phaedrus:section=244a) |
+| ギリシャ哲学 | Aristotle, *Nicomachean Ethics* VIII–IX, 1155a–1172a（Bywater・Rackham） | 本文照合済 | [Perseus（Rackham 訳）](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0054:bekker+page=1155a) |
+| ギリシャ哲学 | Aristotle, *Metaphysics* Λ7, 1072b3・A4, 984b23–985a7（Ross 1924・Tredennick 1933） | 本文照合済 | [Perseus（Ross 版）](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0051:book=12:section=1072b)・[Tredennick 訳](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0052:book=12:section=1072b) |
+| ギリシャ哲学 | Diogenes Laertius, *Lives* 7.85・7.113・7.129–130（Hicks 1925） | 本文照合済 | [Perseus（Hicks 訳）](https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0258:book=7:chapter=1) |
+| ギリシャ哲学 | Cicero, *De finibus* III.16・62–63 | 本文照合済（ラテン語） | [The Latin Library](https://www.thelatinlibrary.com/cicero/fin3.shtml) |
+| 新約とアウグスティヌス | Matthew 22:37–39／John 13:34／1 Corinthians 13:4–13／1 John 4:8・16 | 本文照合済（ギリシャ語） | [SBLGNT](https://sblgnt.com/)（[GitHub 版](https://github.com/LogosBible/SBLGNT)） |
+| 新約とアウグスティヌス | John 21:15–17 | 本文照合済（動詞の分布のみ） | [SBLGNT](https://sblgnt.com/)（[GitHub 版](https://github.com/LogosBible/SBLGNT)） |
+| 新約とアウグスティヌス | Augustinus, *Confessiones* 13.9.10／*De doctrina christiana* 1.4.4・1.27.28／*In Epistolam Ioannis ad Parthos tractatus* 7.8／*De civitate Dei* 14.28・15.22 | 本文照合済（ラテン語） | The Latin Library の[『告白』13](https://www.thelatinlibrary.com/augustine/conf13.shtml)・[『神の国』14](https://www.thelatinlibrary.com/augustine/civ14.shtml)・[15](https://www.thelatinlibrary.com/augustine/civ15.shtml)／augustinus.it の[『キリスト教の教え』1](https://www.augustinus.it/latino/dottrina_cristiana/dottrina_cristiana_1_libro.htm)・[『ヨハネの手紙一講解』7](https://www.augustinus.it/latino/commento_lsg/omelia_07_testo.htm) |
+| 近代以降の哲学 | Dante, *Commedia*, Purgatorio 17.91–139・18.19–75, Paradiso 1.103–141・33.145（山川丙三郎訳） | 本文照合済 | Digital Dante の[煉獄篇 17](https://digitaldante.columbia.edu/dante/divine-comedy/purgatorio/purgatorio-17/)・[18](https://digitaldante.columbia.edu/dante/divine-comedy/purgatorio/purgatorio-18/)・[天国篇 1](https://digitaldante.columbia.edu/dante/divine-comedy/paradiso/paradiso-1/)・[33](https://digitaldante.columbia.edu/dante/divine-comedy/paradiso/paradiso-33/)／青空文庫の[『浄火』](https://www.aozora.gr.jp/cards/000961/card42184.html)・[『天堂』](https://www.aozora.gr.jp/cards/000961/card4820.html) |
+| 近代以降の哲学 | Spinoza, *Ethica* III def. aff. 6・III P13 schol.・V P32 cor.–P36（Elwes 訳） | 本文照合済 | la.wikisource の[第三部](https://la.wikisource.org/wiki/Ethica/Pars_tertia_-_De_origine_et_natura_affectuum)・[第五部](https://la.wikisource.org/wiki/Ethica/Pars_quinta_-_De_potentia_intellectus_seu_de_libertate_humana)／[Gutenberg #3800](https://www.gutenberg.org/ebooks/3800) |
+| 近代以降の哲学 | Schopenhauer, *Die Welt als Wille und Vorstellung* II, Kap. 44（Haldane & Kemp 訳） | 本文照合済（訳） | [Gutenberg #40868](https://www.gutenberg.org/ebooks/40868) |
+| 近代以降の哲学 | Peirce, C. S. (1893) "Evolutionary Love", *The Monist* 3(2):176–200／*Chance, Love, and Logic*, ed. M. R. Cohen (1923) pp.267–300 | 本文照合済 | Internet Archive の[原誌](https://archive.org/details/sim_monist_1893-01_3_2)・[1923 年版](https://archive.org/details/chanceloveandlog00peiruoft) |
+| 現代の恋愛 | Merriam-Webster・Cambridge Dictionary「love」／デジタル大辞泉・日本国語大辞典「愛」「恋愛」「恋」 | 本文照合済 | [Merriam-Webster](https://www.merriam-webster.com/dictionary/love)・[Cambridge](https://dictionary.cambridge.org/dictionary/english/love)・コトバンクの[「愛」](https://kotobank.jp/word/%E6%84%9B-23564)・[「恋愛」](https://kotobank.jp/word/%E6%81%8B%E6%84%9B-662001)・[「恋」](https://kotobank.jp/word/%E6%81%8B-493530) |
+| 現代の恋愛 | 北村透谷「厭世詩家と女性」（1892） | 本文照合済 | [青空文庫](https://www.aozora.gr.jp/cards/000157/card45237.html) |
+| 心理学 | Bowlby, J. (1958) The nature of the child's tie to his mother. *IJP* 39:350 | 本文照合済（大学サイトの写し） | [Stony Brook 大学](https://psychology.psy.sunysb.edu/attachment/online/Bowlby_1958_childs%20tie.pdf) |
+| 心理学 | Hatfield, E. & Sprecher, S. (1986) *J. Adolescence* 9(4):383 | 本文照合済（著者サイトの写し・p.383–384） | [elainehatfield.com（Wayback）](https://web.archive.org/web/20260520034709/http://www.elainehatfield.com/uploads/3/2/2/5/3225640/71._hatfield__sprecher_1986.pdf) |
+| 心理学 | Sternberg, R. J. (1986) A triangular theory of love. *Psychological Review* 93(2):119 | 本文照合済（大学教員サイトの写し） | [pitzer.edu](https://pzacad.pitzer.edu/~dmoore/1986_sternberg_trianglelove_psyrev.pdf) |
+| 神経科学 | Fisher, H. E. (1998) *Human Nature* 9(1):23 | 本文照合済（pp.23–24） | [helenfisher.com](https://helenfisher.com/downloads/articles/10lustattraction.pdf) |
+| 神経科学 | Acevedo, B. P. et al. (2012) *SCAN* 7(2):145 | 本文照合済 | [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC3277362/) |
+| 精神分析と分類 | APA, "What are Personality Disorders?"（2024）／PID-5 成人版（2013） | 本文照合済 | [APA の公開ページ](https://www.psychiatry.org/patients-families/personality-disorders/what-are-personality-disorders)・[PID-5（成人版）](https://www.psychiatry.org/getContentAsset/594673a6-1b9b-4298-8b52-c4c652c4a4e2/dfc3d011-8f63-43f6-9ed8-4b444333a1d0/APA-DSM5TR-ThePersonalityInventoryForDSM5FullVersionAdult?language=en) |
+| 精神分析と分類 | WHO, ICD-11 CDDR (2024) 6D10–6D11, pp.553–559 | 本文照合済 | [WHO CDDR 2024](https://iris.who.int/server/api/core/bitstreams/dcf73611-9e0f-4d5c-85f6-85a58b0da6de/content) |
+
+</div>
