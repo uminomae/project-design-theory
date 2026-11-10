@@ -84,7 +84,7 @@ related_concepts: [...]                        # 任意
 
 ## 入れていないもの
 
-- 今までの `wiki-log-append`（commit のあとに log.md へ自動で書き足す）。今は手順 4 で手で書く。
+- 今までの `wiki-log-append`（commit のあとに log.md へ自動で書き足す）。入れない（pjdhiro 2026-11-10「A 入れない」）。log.md は、直したセッションが手順 4 で手で書く。
 
 ## 点検（wiki-lint）
 

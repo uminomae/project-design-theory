@@ -55,7 +55,7 @@
 | project-design | `rules/session-management.md` | 記録の置き場は CLAUDE.md の「セッションの記録」に新しく書いた（上の「新しく書いたもの」）。state.md・ハンドオフ・inbox の部分は今の進め方に無い |
 | project-design | `rules/seo-llm.md` | まとまり E（サイトの発見性）で決める。**当たり（弱い）**：ks の `llms.txt` を組み直しで書き換え、pd の読み物に OGP を足した |
 | project-design | `hooks/ui-lint.sh` | `docs/DESIGN-RULES.md` に沿う検査。デザインの規約（まとまり A の「あとで」・E）を決めてから。**当たり**：#63 で as の見た目を多く直した |
-| project-design | `hooks/wiki-build.sh`・`wiki-log-append.sh` | wiki を手元で組む・`wiki/log.md` に書き足す。公開は `pages.yml` が組む。手元で組むのは `scripts/serve.sh`（fswatch）がしている。log.md への書き足しは、今は wiki-compile のスキルの手順で手で書く（2026-11-10）。自動にするかは pjdhiro に聞く |
+| project-design | `hooks/wiki-build.sh`・`wiki-log-append.sh` | wiki を手元で組む・`wiki/log.md` に書き足す。公開は `pages.yml` が組む。手元で組むのは `scripts/serve.sh`（fswatch）がしている。`wiki-log-append` は入れない（pjdhiro 2026-11-10・違和感帳「log.md に自動で書き足す仕組みを入れるか」への答え「A 入れない」）。log.md は、wiki を直したセッションが wiki-compile のスキルの手順 4 で手で書く |
 | project-design | `scripts/static-checks.js`・`responsive-test.js`・`responsive-test.sh`・`scheduled-responsive-test.sh` | サイトの構造とスマートフォン表示の検査。まとまり C で決める。**当たり**：#63-2・#63-3 で、as のスマートフォンの表示を手で見て直した |
 | project-design | `skills/adversarial-review`・`agent-team-workflow`・`model-dispatch` | 複数のエージェントやモデルで確かめる手順。まとまり C で、道具立てを最小にして決める。**当たり**：11-07・11-08 に念入りなレビューを続けて頼まれた（stance.md「不具合が多そうなときのレビューは…」「レビューでは、使えるスキルや点検のスクリプトがあれば使う」） |
 | project-design | `skills/periodic-review`・`commands/periodic-review.md` | `~/dev/CLAUDE.md` に定期レビューの記録の置き方がある。この repo で定期レビューを置くかは決めていない |

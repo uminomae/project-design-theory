@@ -89,7 +89,6 @@ const { run } = await import('../src/page-check.js'); await run();
 | 読み込みの速さの目安 | 初めの表示までの時間・転送量・リクエスト数の目安を決め、超えたら知らせる | 3D や画像を足して重くなったとき | kesson-space の E2E（TC-08・TC-11） |
 | デザインの規約に沿うか | 色・文字の大きさ・余白が、決めたデザインの規約に沿うかを見る | デザインの規約（まとまり A の「あとで」・E）を決めたとき | project-design の `ui-lint.sh` |
 | ks の 3D の確かめ | シェーダーや 3D の設定を直したとき、設定の値と開発パネルと描画が揃っているかを見る。設定の整合は check.sh に入っている | ks のシェーダーを直すとき | kesson-space の `code-reviewer`・`config-validator` |
-| wiki の作り方の残り | `wiki/log.md` への自動の書き足し（今は手で書く）。古いページと未作成の出典ページの知らせは 2026-11-10 に入れた（上の「自動で動くもの」） | pjdhiro が要ると言ったとき | project-design の `wiki-log-append` |
 | 英語の記事をそろえる定期の作業 | ks の記事の日本語版と英語版のずれを定期に見る。手では `cd ks && npm run articles:en:check` で見られる。通知先は決めていない | 英語の記事を育てるとき | kesson-space の `articles-en-routine.sh` |
 | 定期のレビュー | この repo の中のことだけを、決まった間隔で見直す（`~/dev/CLAUDE.md`） | pjdhiro が頼んだとき | project-design の `periodic-review` |
 
@@ -100,6 +99,7 @@ const { run } = await import('../src/page-check.js'); await run();
 | ファイル | 外した理由と、考え方の行き先 |
 |---|---|
 | `ks/tests/e2e-runner.js`・`ks/tests/e2e-test-design.md`・`ks/src/pages/e2e-auto-run.js` | 今のページに無い部品（`h1#title-h1`・`.subtitle`・GUIDES のカード ほか）を見ていた。考え方は `pd/src/page-check.js` と、上の「キーボードで使えるか」「読み込みの速さの目安」に継いだ |
+| project-design の `wiki-log-append`（commit のあとに `wiki/log.md` へ自動で書き足す） | 入れない（pjdhiro 2026-11-10・違和感帳「log.md に自動で書き足す仕組みを入れるか」への答え「A 入れない」）。log.md は、wiki を直したセッションが `.claude/skills/wiki-compile/SKILL.md` の手順 4 で手で書く。古いページと未作成の出典ページの知らせは、上の「自動で動くもの」に入れた |
 | `ks/scripts/agent-post-check.sh`・`cs/scripts/agent-post-check.sh`・`as/scripts/check-issue-close-state.sh` | サブエージェントが `.cache/outbox/DONE-*.md` を書く、今までの進め方を確かめていた。今はその置き場を使わない。頼んだ仕事が終わったかは、セッションの報告を、commit・差分・画面で確かめてから伝える（型 K） |
 | `cs/scripts/budget-check.sh` | サブスクの枠からサブエージェントを起こしてよいかを決めていた。今は、大きな作業の前に、コンテキストを使いすぎないかを考える（stance.md 2-8） |
 
