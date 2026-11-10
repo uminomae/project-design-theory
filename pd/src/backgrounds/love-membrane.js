@@ -198,6 +198,11 @@ function start() {
     // 確かめ用の上書き（?yaw=&pitch=&vortex=&split=&t=）
     const q = (() => { try { return new URLSearchParams(window.location.search); } catch (_) { return new URLSearchParams(); } })();
     const qn = (k) => { const v = parseFloat(q.get(k)); return Number.isFinite(v) ? v : null; };
+    // 色の上書き（?cool=0.12,0.2,0.68 のように三つの数）
+    const qv = (k) => {
+        const parts = String(q.get(k) || '').split(',').map(Number);
+        return parts.length === 3 && parts.every(Number.isFinite) ? parts : null;
+    };
     const reduce = stillQuery || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
 
     const renderer = new THREE.WebGLRenderer({ antialias: false, alpha: false });
@@ -234,6 +239,10 @@ function start() {
         uGold: { value: new THREE.Vector3(1.08, 0.98, 0.86) },
         uSilver: { value: new THREE.Vector3(0.9, 0.97, 1.1) },
     };
+    for (const [key, name] of [['cool', 'uCool'], ['warm', 'uWarm'], ['gate', 'uGate'], ['gold', 'uGold'], ['silver', 'uSilver']]) {
+        const v = qv(key);
+        if (v) uniforms[name].value.set(v[0], v[1], v[2]);
+    }
     const material = new THREE.ShaderMaterial({
         uniforms,
         vertexShader: VERTEX_SHADER,
