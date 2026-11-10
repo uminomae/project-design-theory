@@ -1,5 +1,7 @@
 # 領域別レポート End-to-End ワークフロー v1.1
 
+> 2026-11-10：今までの creation-space の手順。今使うのは、生成の順番（日本語版が確定してから英語版。PDF は生成物で、手で直さない）だけ（根の `docs/cs-review/README.md`「6. 直す・公開する」）。Step 8〜9 と「完了条件」の git の手順（creation-space の develop を main へ merge・pjdhiro の repo の main への push）と、pjdhiro の repo への配置は、今は使わない。今までの「30 領域調査報告」は 2026-11-10 に下げた。今の規約は、repo の根の `CLAUDE.md` と根の `docs/`。中身は書き換えず、履歴として残す（Issue #111）。
+
 **用途**: 領域別レポート（domains）の生成→品質テスト→独立レビュー→PDF公開の全手順
 **前提**: evidence が `evidence/evidence-D{NN}-*.md` に存在すること
 **参照 Issue**: cs#103, cs#76

@@ -1,5 +1,7 @@
 # knowledge/raw/ 運用ポリシー（cs）
 
+> 2026-11-10：今までの creation-space の運用の記録。今は使わない。原典の PDF は git に入れない。今の決まりは、根の `docs/rules/sources.md` §5・§8 とスキル `find-source`。今の規約は、repo の根の `CLAUDE.md` と根の `docs/`。中身は書き換えず、履歴として残す（Issue #111）。
+
 > **正本**: techo/knowledge/pd/mgmt/knowledge-raw-policy.md
 > **上位参照**: project-design/knowledge/meta/knowledge-raw-policy.md
 > **本ファイルの位置づけ**: cs 固有の補足ルール + 上位への参照
