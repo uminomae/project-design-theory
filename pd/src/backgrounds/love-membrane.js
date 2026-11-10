@@ -221,12 +221,20 @@ function start() {
     const reduce = stillQuery || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
 
     const renderer = new THREE.WebGLRenderer({ antialias: false, alpha: false });
-    // cs と同じ：画素比は 1.4 まで、さらに 0.9 倍。
-    // ?rs=0.5 のように、描く細かさをさらに掛けられる（軽くする見本。1440×900・M4 で、1 のとき一枚 27〜29ms＝約 35fps、
-    // 0.75 で 18ms、0.5 で 10ms。重さは描く画素の数にほぼ比例する・2026-11-10 の測り）
-    const renderScale = Math.min(Math.max(qn('rs') ?? 1, 0.25), 1);
-    const pixelRatio = Math.max(0.25, Math.min(window.devicePixelRatio || 1, 1.4) * 0.9 * renderScale);
-    renderer.setPixelRatio(pixelRatio);
+    // 描く細かさは、画面の大きさで変える（描く画素の数に上限を置き、小さく描いて画面いっぱいに引き伸ばす）。
+    // 重さは描く画素の数にほぼ比例する（1440×900・M4 の測り：cs と同じ細かさ＝1814×1134 で一枚 27〜29ms＝約 35fps、
+    // 1361×851 で 18ms、907×567 で 10ms・2026-11-10）。上限は 907×567 ほど（52 万画素）。pjdhiro 2026-11-10「0.5 でも問題ないね。
+    // レスポンシブのように画面サイズで変えることはできないの？」。広い画面ほど細かさを下げ、狭い画面（スマートフォン）は上限に届かないので
+    // cs と同じ細かさ（画素比 1.4 まで、さらに 0.9 倍）のまま。
+    // ?rs=0.5 のように渡すと、上限を使わず、cs と同じ細かさに掛ける（見比べ用）。?px=800000 で上限を上書き。
+    const PIXEL_BUDGET = Math.max(qn('px') ?? 520000, 50000);
+    const rsOverride = qn('rs');
+    const pixelRatioFor = (w, h) => {
+        const base = Math.min(window.devicePixelRatio || 1, 1.4) * 0.9;
+        if (rsOverride !== null) return Math.max(0.25, base * Math.min(Math.max(rsOverride, 0.25), 1));
+        return Math.max(0.25, Math.min(base, Math.sqrt(PIXEL_BUDGET / (w * h))));
+    };
+    renderer.setPixelRatio(pixelRatioFor(window.innerWidth, window.innerHeight));
     renderer.setSize(window.innerWidth, window.innerHeight);
     // ?bgc=02050d：地の色の上書き
     let bgc = /^[0-9a-fA-F]{6}$/.test(q.get('bgc') || '') ? parseInt(q.get('bgc'), 16) : 0x02050d;
@@ -352,7 +360,7 @@ function start() {
         fpsWorst = Math.max(fpsWorst, gap);
         if (now - fpsT0 >= 1000) {
             const c = renderer.domElement;
-            fpsEl.textContent = `${Math.round((fpsN * 1000) / (now - fpsT0))} fps  最長 ${Math.round(fpsWorst)}ms\n描く画素 ${c.width}×${c.height}（rs ${renderScale}）`;
+            fpsEl.textContent = `${Math.round((fpsN * 1000) / (now - fpsT0))} fps  最長 ${Math.round(fpsWorst)}ms\n描く画素 ${c.width}×${c.height}（画素比 ${renderer.getPixelRatio().toFixed(2)}${rsOverride !== null ? '・rs ' + rsOverride : ''}）`;
             fpsN = 0; fpsT0 = now; fpsWorst = 0;
         }
     };
@@ -397,6 +405,7 @@ function start() {
     window.addEventListener('resize', () => {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(() => {
+            renderer.setPixelRatio(pixelRatioFor(window.innerWidth, window.innerHeight));
             renderer.setSize(window.innerWidth, window.innerHeight);
             uniforms.uResolution.value.set(window.innerWidth, window.innerHeight);
             uniforms.uMaxSteps.value = Math.min(window.innerWidth, window.innerHeight) < 900 ? 34 : 52;
