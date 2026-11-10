@@ -565,3 +565,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（畳み「手法の名前と、Love駆動開発の名前」）
 - pages: どちらのページも、この畳みの二段目（外したテストの語の対比）を引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] compile | Love駆動開発の内発的動機の表の「解釈」の行を短くし、表の下に説明の畳みを足したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「心の言葉は、どこで誤解されるか」の内発的動機の表と、畳み「理想状態の一面と、心理状態」）
+- pages: どちらのページも、この行と外した一文（取り入れに防衛機制が出ている）を引いていないので本文はそのまま。`compiled` は今日のまま
