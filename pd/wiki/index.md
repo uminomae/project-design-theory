@@ -128,11 +128,12 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D04_watson_2016_how-can-evolution-learn|進化はどのように学習するか — 進化と学習の数学的等価性]]
 - [[sources/D04_woese_2002_woese-2002-on-the|細胞の進化について — ダーウィン閾と HGT]]
 
-#### D05 地球科学 (10件)
+#### D05 地球科学 (11件)
 - [[sources/D05_bak_1988_wiesenfeld-k|自己組織化臨界性 — Bak-Tang-Wiesenfeld の砂山モデル]]
 - [[sources/D05_bjerknes_1969_atmospheric-teleconnections-equatorial-pacific|赤道太平洋からの大気のテレコネクション（Bjerknes 1969）]]
 - [[sources/D05_cane-zebiak_1985_enso-theory|エルニーニョと南方振動の理論]]
 - [[sources/D05_conrad_2002_lithgow-bertelloni-c|マントルのスラブはいかにプレートテクトニクスを駆動するか]]
+- [[sources/D05_dyke-kleidon_2010_maximum-entropy-production-principle|最大エントロピー生成原理の理論的な基礎と地球システムへの応用（Dyke & Kleidon 2010）]]
 - [[sources/D05_feistel_2024_origin-of-life-a|生命の起源：対称性の破れを伴う物理的相転移（Feistel 2024）]]
 - [[sources/D05_le-pichon_1968_sea-floor-spreading|海底拡大と大陸移動]]
 - [[sources/D05_lenton_2008_2008|地球気候系のティッピング要素]]
@@ -140,7 +141,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D05_suarez_1988_schopf-p-s|ENSO のための遅延作用振動子]]
 - [[sources/D05_watson_1983_daisyworld|Daisyworld — 生物-環境結合系のホメオスタシス寓話]]
 
-#### D06 天文学 (12件)
+#### D06 天文学 (13件)
 - [[sources/D06_abbott_2017_gw170817|GW170817：連星中性子星合体からの重力波観測]]
 - [[sources/D06_balbus-hawley_1991_shear-instability|磁気回転不安定性 — 弱磁場降着円盤における強力な局所剪断不安定性]]
 - [[sources/D06_blandford_1978_ostriker-j-p|天体物理学的衝撃波による粒子加速 — 一次 Fermi 加速]]
@@ -149,16 +150,18 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D06_friston_2012_a-free-energy-principle|生物システムの自由エネルギー原理（D06 文脈）]]
 - [[sources/D06_jeans_1902_stability-nebula|ジーンズ不安定性 — 自己重力ガス球の安定性条件の導出]]
 - [[sources/D06_navarro_1997_universal-density-profile|階層的クラスタリングからの普遍密度プロファイル — NFW プロファイル]]
+- [[sources/D06_nicolis_2016_stochastic-resonance-self-organization|多安定な系の確率共鳴・自己組織化・情報の動力学（Nicolis & Nicolis 2016）]]
 - [[sources/D06_planck-collaboration_2016_cosmological-parameters|Planck 2015 年成果 XIII. 宇宙論的パラメータ]]
 - [[sources/D06_springel_2005_2005|Millennium Simulation — クエーサー・銀河・大規模構造の同時進化]]
 - [[sources/D06_tumlinson_2017_tumlinson-peeples-werk-2017|周銀河媒質（Circumgalactic Medium）— 銀河進化の鍵を握る多相ガス領域]]
 - [[sources/D06_white_1978_white-rees-1978-core|重いハロにおけるコア凝縮 — 銀河形成と階層的クラスタリングの 2 段階理論]]
 
-#### D07 工学・情報科学 (10件)
+#### D07 工学・情報科学 (11件)
 - [[sources/D07_ashby_1956_ashby-1956-an-introduction|サイバネティクス入門 — Ashby]]
 - [[sources/D07_candes-romberg-tao_2006_robust-uncertainty|ロバスト不確実性原理――疎な信号のフーリエサンプルからの完全再構成]]
 - [[sources/D07_diffie-hellman_1976_new-directions-cryptography|暗号の新方向]]
 - [[sources/D07_doyle_2011_architecture-constraints-and-behavior|アーキテクチャ・制約・振る舞い — 層化アーキテクチャの普遍原理]]
+- [[sources/D07_friston_2012_free-energy-principle|生物システムの自由エネルギー原理（Friston 2012・工学と制御の角度）]]
 - [[sources/D07_heylighen_2025_why-emergence-and-self|創発と自己組織化はなぜ概念的に単純で、ありふれ、自然なのか（Heylighen 2026）]]
 - [[sources/D07_jacobson_1988_jacobson-1988-congestion-avoidance|輻輳回避と制御 — TCP の輻輳制御アルゴリズム]]
 - [[sources/D07_rumelhart-hinton-williams_1986_backpropagation|誤差逆伝播法による表現学習]]
@@ -193,8 +196,9 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D09_whitacre_2012_biological-robustness|生物学的ロバスト性 — パラダイム・メカニズム・系統原理]]
 - [[sources/D09_wolpert_1969_1969|位置情報と細胞分化の空間パターン（Wolpert 1969）]]
 
-#### D10 臨床医学 (6件)
+#### D10 臨床医学 (7件)
 - [[sources/D10_akdis_2014_allergen-immunotherapy|アレルゲン免疫療法の新治療戦略]]
+- [[sources/D10_burnet_1959_clonal-selection-acquired-immunity|獲得免疫のクローン選択説（Burnet 1959）]]
 - [[sources/D10_engel_1977_1977|新しい医療モデルの必要 — 生物心理社会モデル]]
 - [[sources/D10_rodrigues-et-al_2019_wound-healing-cellular-perspective|創傷治癒：細胞の視点]]
 - [[sources/D10_rosenblum_2015_autoimmunity|ヒト自己免疫疾患のメカニズム]]
@@ -213,7 +217,8 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D11_tognoli_2009_brain-coordination-dynamics-true|脳の協調ダイナミクス — 位相同期の真と偽]]
 - [[sources/D11_wu_2014_chinese-medicine|ネットワーク薬理学による漢方処方「君臣佐使」の検証]]
 
-#### D12 農学・生態学 (13件)
+#### D12 農学・生態学 (14件)
+- [[sources/D12_beisner_2003_alternative-stable-states-ecology|生態学における代替安定状態（Beisner, Haydon & Cuddington 2003）]]
 - [[sources/D12_clements_1916_plant-succession|植物遷移論]]
 - [[sources/D12_connell_1977_slatyer-r-o|自然群集における遷移のメカニズム]]
 - [[sources/D12_crdoba_2020_agroecosystem-resilience|農業生態系のレジリエンス — エージェンシーと構造変革]]
