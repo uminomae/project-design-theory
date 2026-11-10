@@ -312,7 +312,7 @@ status: reviewed
 **鍵の文**：
 
 - Dittmar ら：物質主義の価値と信念は幸福の低さと結びつき、「r = -.19」だった、と書きます（要旨）。結びつきは「poor psychological need satisfaction」で説明されるかもしれない、と書きます（要旨）。
-- Kasser ら（2013）：これまでの研究の多くが「crosssectional, correlational studies」だったことを限界として書きます（p.2）。
+- Kasser ら（2013）：これまでの研究の多くが「cross-sectional, correlational studies」だったことを限界として書きます（p.2）。
 - Kasser ら（2013）：幸福の変化が物質主義の変化をもたらすという「quite reasonable idea」も、補いの分析で支えられた、と書きます（p.11）。介入で変わった幸福の測りは自尊心だけだった、とも書きます（p.17）。
 - Peng ら：「Materialism exerted a stronger predictive effect on psychological insecurity than vice versa」と書き、結果は「challenge traditional compensation mechanisms theories」と書きます（要旨）。
 - Sun ら：安心を思い浮かべた群は、状態の物質主義が低かった、と書きます（要旨）。
