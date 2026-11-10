@@ -159,6 +159,17 @@
     white-space: nowrap;
 }
 
+/* スマートフォンの幅では、表を横に動かさずに折り返して収める（読み物の表は横スクロールさせない。2026-11-11） */
+@media (max-width: 600px) {
+    .reader-table th,
+    .reader-table td {
+        padding: 0.4rem 0.35rem;
+        font-size: 0.8rem;
+        overflow-wrap: anywhere;
+    }
+    .reader-table th { white-space: normal; }
+}
+
 /* 誤解FAQ アコーディオン（DESIGN-RULES §9 パターン）
  * T11（pd#123）: 畳まれている/開けることが一目でわかる見た目に強化。
  * 「開けるカード」らしい面（背景・影・ホバー）＋開閉マーカーの回転＋「詳しく」ラベル。 */

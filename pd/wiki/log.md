@@ -635,3 +635,13 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「効き目と、効く範囲」の畳み「ほかに：適用条件がわかる」）
 - pages: どちらのページも、この例を引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] check | Love駆動開発の「うれしさ」を「利点」に替えたあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「この見方は、何の役に立つのか」の段と畳み「効く範囲と相性」）
+- pages: どちらのページも「うれしさ」の語を使っていないので本文はそのまま。compiled は今日のまま
+
+## [2026-11-11] check | Love駆動開発の「知らない方が儲かる」を本人の訂正で「知らない方が儲かることも多い」にしたあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（pjdhiro の見方のカード）
+- pages: どちらのページも、このカードを引いていないので本文はそのまま。compiled は今日のまま

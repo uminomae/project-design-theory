@@ -1,4 +1,4 @@
-# llms.txt — creation-space (Creativity Research)
+# llms.txt — 創造とは / What Is Creation
 
 > This file helps AI assistants and language models understand the structure and content of this site.
 
@@ -128,9 +128,9 @@ Each of the 30 domains is reviewed one at a time. For about ten theories per dom
 | Project | URL | Focus |
 |---------|-----|-------|
 | pjdhiro | https://uminomae.github.io/pjdhiro/ | Project Design Hub (parent site) |
-| awareness-space | https://uminomae.github.io/project-design-theory/as/ | Consciousness structure through intersubjectivity |
-| kesson-space | https://uminomae.github.io/project-design-theory/ks/ | Kesson-Driven Thinking framework |
-| project-design | https://uminomae.github.io/project-design-theory/ | Project Design Theory |
+| 意識とは / What Is Consciousness | https://uminomae.github.io/project-design-theory/as/ | What do people cut the world with? An exploration through two signals: whether we can survive, and whether we can stay connected (trust) |
+| 欠損駆動思考 / Kesson-Driven Thinking | https://uminomae.github.io/project-design-theory/ks/ | What do people sense where symbols read zero? An exploration of a stance of mind driven by a sense of lack or unease |
+| プロジェクトデザイン論 / Project Design Theory | https://uminomae.github.io/project-design-theory/ | The reading on Love-Driven Development and its parts |
 
 ## Author
 
