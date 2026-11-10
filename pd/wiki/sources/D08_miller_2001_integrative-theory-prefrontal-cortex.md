@@ -5,7 +5,7 @@ aliases: ["An integrative theory of prefrontal cortex function", "PFC integrativ
 tags: [source, "D08", "原典解説"]
 source:
   repo: "creation-space"
-  path: "knowledge/source-notes/D08/D08-S04_miller-2001.md"
+  path: "knowledge/source-notes/D08/D08-S04_miller-cohen-2001.md"
   manifest_id: "D08-S04"
   doi: "10.1146/annurev.neuro.24.1.167"
   pubmed_id: "11283309"
@@ -63,14 +63,14 @@ Annual Review 誌のレビュー論文として、著者 2 名の既存研究と
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/source-notes/D08/D08-S04_miller-2001.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D08/D08-S04_miller-2001.md)（manifest_id: `D08-S04`）
+- **cs 原典ファイル**: [knowledge/source-notes/D08/D08-S04_miller-cohen-2001.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D08/D08-S04_miller-2001.md)（manifest_id: `D08-S04`）
 - **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
 - **この wiki ページ（pd）**: [wiki/sources/D08_miller_2001_integrative-theory-prefrontal-cortex.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D08_miller_2001_integrative-theory-prefrontal-cortex.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 
 ## 出典メモ
 
-- cs 側対応: `creation-space/knowledge/source-notes/D08/D08-S04_miller-2001.md`（raw PDF は cs の著者個人サイト `https://ekmillerlab.mit.edu/.../Miller-Cohen-20011.pdf` 経由で取得可能 — pd 側未確認）
+- cs 側対応: `creation-space/knowledge/source-notes/D08/D08-S04_miller-cohen-2001.md`（raw PDF は cs の著者個人サイト `https://ekmillerlab.mit.edu/.../Miller-Cohen-20011.pdf` 経由で取得可能 — pd 側未確認）
 - 本ページは PubMed abstract を一次入力として pd 形式に再編（pd#81 Phase C-2c PubMed-abstract 経路、2026-04-19）
 - 「主要概念」節は abstract から直接抽出。本文（200 頁超のレビュー）の詳細な論証・図表・具体例は本ページの射程外
 - 本ページは **部分読解**。本文精読後に要拡張

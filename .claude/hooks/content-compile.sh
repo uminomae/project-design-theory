@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# PostToolUse hook: 公開ページが読む Markdown を書き換えたら、
+# PostToolUse hook:
+# (1) wiki の材料（pd・cs・ks・as の正本）を直したら、それを出典にする wiki のページを Claude に知らせる（下の wiki-stale-check）。
+# (2) 公開ページが読む Markdown を書き換えたら、
 # wiki リンク入りの compiled 版を作り直す。
 #   pd/content/*.md     → pd/content/compiled/  （pd/scripts/compile-content-links.mjs）
 #   as/assets/about/*.md → as/assets/about/compiled/ （as/scripts/compile-content-links.mjs）
@@ -35,6 +37,22 @@ except ValueError:
     raise SystemExit(0)
 
 parts = rel.parts
+
+# wiki の材料（正本）を直したら、それを出典にする wiki のページを Claude に知らせる。
+# 今までの project-design の #72 の引き金を、一つの repo の形で戻した（2026-11-10）。
+# 中身は pd/scripts/wiki-stale-check.mjs。出典にしていないファイルなら何も出さない。
+# 知らせを受けたセッションが、同じ作業で wiki を作り直す（.claude/skills/wiki-compile/SKILL.md）。
+if len(parts) > 1 and parts[0] in ("pd", "cs", "ks", "as") and not (parts[0] == "pd" and parts[1] == "wiki"):
+    stale = repo_root / "pd" / "scripts" / "wiki-stale-check.mjs"
+    if stale.is_file():
+        try:
+            r = subprocess.run(["node", str(stale), "--hook", str(rel), "--session", str(payload.get("session_id") or "")],
+                               cwd=str(repo_root), capture_output=True, text=True, timeout=15)
+            if r.stdout.strip():
+                print(r.stdout.strip())
+        except Exception as e:
+            print(f"wiki-stale-check skipped: {e}", file=sys.stderr)
+
 targets = {
     ("pd", "content"): "pd",
     ("as", "assets", "about"): "as",

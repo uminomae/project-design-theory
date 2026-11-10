@@ -26,6 +26,8 @@ run "pd：repo をまたぐ URL" bash -c 'cd pd && bash scripts/check-cross-repo
 run "pd：読み物の内部アンカー" bash -c 'cd pd && node scripts/reader-anchor-check.mjs'
 run "pd：wiki の孤立ページ・不在の出典・旧用語" bash -c 'cd pd && node scripts/wiki-lint.mjs --check --quiet'
 run "pd：wiki が読めない原典を出典にしていない" bash -c 'cd pd && node scripts/wiki-access-lint.mjs'
+# 出典が compiled 日より後に変わった wiki のページの数。止めずに知らせるだけ（2026-11-10。一覧は pd/wiki/health/freshness-report.md）。
+run "pd：wiki の古いページ（知らせるだけ）" node pd/scripts/wiki-stale-check.mjs --count
 run "as：テスト" bash -c 'cd as && node --test tests/*.test.mjs'
 run "ks：config の整合" bash -c 'cd ks && node tests/config-consistency.test.js'
 run "ks：config の export" bash -c 'cd ks && node --experimental-vm-modules tests/config-exports.test.js'

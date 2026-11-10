@@ -2,302 +2,110 @@
 /**
  * wiki-stale-check.mjs
  *
- * knowledge/ 編集時に、その正本ファイルを参照している wiki/ ページを特定して
- * stale 通知を出す。#72
+ * wiki の材料（正本）を直したときに、それを出典にする wiki のページを知らせる。
+ * 今までの project-design の #72 の仕組みを、一つの repo の形に作り直した（2026-11-10）。
+ * #77 の inbox（.cache/inbox/wiki-restale-*.md と、セッションの始めの自動の作り直し）は入れない。
+ * 代わりに、正本を直したセッションが、知らされたページを同じ作業で作り直し、一緒に commit する
+ * （.claude/skills/wiki-compile/SKILL.md）。
  *
- * Usage:
- *   node scripts/wiki-stale-check.mjs --knowledge <path>
- *   node scripts/wiki-stale-check.mjs --knowledge <path> --write-inbox   # #77
- *   node scripts/wiki-stale-check.mjs --all   # 全 knowledge を対象に stale を走査
+ * Usage（repo のどこからでも）:
+ *   node pd/scripts/wiki-stale-check.mjs --knowledge <path>   # repo の根からのパス（例 pd/knowledge/meta/project-overview.md）
+ *   node pd/scripts/wiki-stale-check.mjs --hook <path> --session <id>
+ *        # .claude/hooks/content-compile.sh から呼ぶ。知らせを Claude に渡す JSON を標準出力に出す。
+ *        # 同じセッションで同じファイルは一度だけ知らせる（.cache/wiki-stale/<session>.txt）
+ *   node pd/scripts/wiki-stale-check.mjs --list    # 古いページ（出典が compiled 日より後に変わった）を並べる
+ *   node pd/scripts/wiki-stale-check.mjs --count   # 古いページの数だけ（scripts/check.sh が使う）
  *
- * knowledge path は pd repo 相対 (例: knowledge/meta/project-overview.md)。
- * 対応 repo: project-design (local) のみ。
- * cross-repo の knowledge 変更は別 repo の hook で扱うべき。
- *
- * --write-inbox 指定時は stderr 通知に加え、
- * .cache/inbox/wiki-restale-{YYYY-MM-DD}.md に auto-execute 依頼を書き出す。
- * 同日の依頼があればマージし、wiki_path で重複排除する。
- * 旧日付の wiki-restale-*.md は .cache/inbox/archive/ へ退避する。
- *
- * Exit 0: 常に 0 (hook がセッションを止めないように)
+ * いつも 0 で終わる（hook と検査を止めない）。
  */
 
-import { readdirSync, readFileSync, writeFileSync, existsSync, mkdirSync, renameSync } from "node:fs";
-import { join, basename, relative, resolve } from "node:path";
-
-const ROOT = resolve(new URL("..", import.meta.url).pathname.replace(/\/$/, ""));
-const WIKI = join(ROOT, "wiki");
+import { existsSync, mkdirSync, readFileSync, appendFileSync } from "node:fs";
+import { join, relative, isAbsolute, resolve } from "node:path";
+import {
+  REPO_ROOT, readWikiPages, resolveSource, stalePages, lastChangeDates, isShallow,
+} from "./wiki-sources.mjs";
 
 const args = process.argv.slice(2);
-const knowledgeIdx = args.indexOf("--knowledge");
-const targetKnowledge = knowledgeIdx >= 0 ? args[knowledgeIdx + 1] : null;
-const scanAll = args.includes("--all");
-const writeInbox = args.includes("--write-inbox");
+const arg = (k) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : null; };
 
-function walk(dir, out = []) {
-  for (const e of readdirSync(dir, { withFileTypes: true })) {
-    const p = join(dir, e.name);
-    if (e.isDirectory()) walk(p, out);
-    else if (e.name.endsWith(".md")) out.push(p);
-  }
-  return out;
+function toRepoPath(p) {
+  const abs = isAbsolute(p) ? p : resolve(process.cwd(), p);
+  const rel = relative(REPO_ROOT, abs);
+  return rel.startsWith("..") ? p.replace(/^\.\//, "") : rel;
 }
 
-/**
- * Parse front matter `source:` block.
- * Returns array of { repo, path } objects.
- * Minimal YAML parser (handles the specific shape used in this repo).
- */
-function parseSources(text) {
-  if (!text.startsWith("---\n")) return [];
-  const end = text.indexOf("\n---\n", 4);
-  if (end < 0) return [];
-  const fm = text.slice(4, end);
-  const lines = fm.split("\n");
-  const sources = [];
-  let inSource = false;
-  let current = null;
-  for (const line of lines) {
-    if (/^source:\s*$/.test(line)) {
-      inSource = true;
-      continue;
-    }
-    if (inSource) {
-      // next top-level key ends the block
-      if (/^[a-zA-Z_][\w-]*:/.test(line) && !/^\s+/.test(line)) {
-        if (current) sources.push(current);
-        current = null;
-        inSource = false;
-        continue;
-      }
-      const dashMatch = /^\s*-\s*repo:\s*(.+)$/.exec(line);
-      if (dashMatch) {
-        if (current) sources.push(current);
-        current = { repo: dashMatch[1].replace(/^["']|["']$/g, "").trim(), path: "" };
-        continue;
-      }
-      const pathMatch = /^\s*path:\s*(.+)$/.exec(line);
-      if (pathMatch && current) {
-        current.path = pathMatch[1].replace(/^["']|["']$/g, "").trim();
-        continue;
-      }
-    }
-  }
-  if (current) sources.push(current);
-  return sources;
+/** このパスを出典にするページ。原典の台帳そのものは数えない（行が増えるたびに全部の出典ページが当たる）。 */
+function referencing(target, pages) {
+  return pages.filter((p) =>
+    p.sources.some((s) => {
+      const r = resolveSource(s);
+      if (r.note === target) return true;
+      if (!r.path || /knowledge\/raw\//.test(r.path)) return false;
+      return r.path === target || target.startsWith(r.path + "/");
+    })
+  );
 }
 
-function parseCompiledDate(text) {
-  const m = /^compiled:\s*["']?([\d-]+)["']?/m.exec(text);
-  return m ? m[1] : null;
+function message(target, hits) {
+  const lines = [
+    `wiki の材料を直した：${target}`,
+    `これを出典にする wiki のページ（${hits.length}）：`,
+    ...hits.map((h) => `  - pd/wiki/${h.rel}（compiled ${h.compiled || "不明"}）`),
+    "同じ作業で、.claude/skills/wiki-compile/SKILL.md に沿ってこれらのページを今の正本から作り直し、正本と一緒に commit する。",
+    "直す必要が無いと確かめたページは、compiled を今日にする。どちらも pd/wiki/log.md に一行足す。",
+  ];
+  return lines.join("\n");
 }
-
-function parseTitle(text) {
-  const m = /^title:\s*["']?([^"'\n]+)["']?/m.exec(text);
-  return m ? m[1].trim() : null;
-}
-
-// ---- build wiki source index ----
-
-function buildWikiIndex() {
-  const files = walk(WIKI).filter((f) => !f.includes("/health/"));
-  const index = []; // { wikiPath, title, compiled, sources: [{repo, path}] }
-  for (const f of files) {
-    const text = readFileSync(f, "utf8");
-    const sources = parseSources(text);
-    if (sources.length === 0) continue;
-    index.push({
-      wikiPath: relative(WIKI, f),
-      title: parseTitle(text) || basename(f, ".md"),
-      compiled: parseCompiledDate(text),
-      sources,
-    });
-  }
-  return index;
-}
-
-// ---- inbox writer (#77) ----
-
-function todayISO() {
-  const d = new Date();
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, "0");
-  const day = String(d.getDate()).padStart(2, "0");
-  return `${y}-${m}-${day}`;
-}
-
-function inboxDir() {
-  return join(ROOT, ".cache", "inbox");
-}
-
-/**
- * 既存の wiki-restale-{today}.md をパースして entries を返す。
- * フォーマット崩れの場合は空配列にフォールバック。
- */
-function readExistingRestale(path) {
-  if (!existsSync(path)) return [];
-  const text = readFileSync(path, "utf8");
-  const lines = text.split("\n");
-  const entries = [];
-  let inTable = false;
-  for (const line of lines) {
-    if (/^\|\s*wiki_path\s*\|/.test(line)) {
-      inTable = true;
-      continue;
-    }
-    if (inTable && /^\|\s*-+\s*\|/.test(line)) continue;
-    if (inTable) {
-      if (!line.startsWith("|")) {
-        inTable = false;
-        continue;
-      }
-      const cells = line.split("|").slice(1, -1).map((c) => c.trim());
-      if (cells.length >= 4 && cells[0]) {
-        entries.push({
-          wiki_path: cells[0],
-          title: cells[1],
-          compiled: cells[2],
-          triggered_by: cells[3],
-        });
-      }
-    }
-  }
-  return entries;
-}
-
-function archiveOldRestale(today) {
-  const dir = inboxDir();
-  if (!existsSync(dir)) return;
-  const archive = join(dir, "archive");
-  const pat = /^wiki-restale-(\d{4}-\d{2}-\d{2})\.md$/;
-  for (const name of readdirSync(dir)) {
-    const m = pat.exec(name);
-    if (!m) continue;
-    if (m[1] >= today) continue;
-    if (!existsSync(archive)) mkdirSync(archive, { recursive: true });
-    let dst = join(archive, name);
-    if (existsSync(dst)) {
-      const stem = name.replace(/\.md$/, "");
-      dst = join(archive, `${stem}-stale.md`);
-    }
-    renameSync(join(dir, name), dst);
-  }
-}
-
-function writeRestaleInbox(newEntries) {
-  if (newEntries.length === 0) return null;
-  const today = todayISO();
-  archiveOldRestale(today);
-  const dir = inboxDir();
-  if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
-  const path = join(dir, `wiki-restale-${today}.md`);
-  const existing = readExistingRestale(path);
-  const byPath = new Map();
-  for (const e of existing) byPath.set(e.wiki_path, e);
-  for (const e of newEntries) byPath.set(e.wiki_path, e); // 新しい側で上書き
-  const merged = [...byPath.values()].sort((a, b) => a.wiki_path.localeCompare(b.wiki_path));
-
-  const body = [
-    "# wiki stale 再 compile 依頼",
-    "",
-    `generated: ${today}`,
-    "action: auto-execute",
-    "skill: wiki-compile (stale 再生成)",
-    "",
-    `## stale ${merged.length} 件`,
-    "",
-    "| wiki_path | title | compiled | triggered_by_knowledge |",
-    "|---|---|---|---|",
-    ...merged.map(
-      (e) => `| ${e.wiki_path} | ${e.title} | ${e.compiled || "unknown"} | ${e.triggered_by} |`
-    ),
-    "",
-    "## 処理手順",
-    "",
-    "1. 各 wiki ページを wiki-compile skill に従って再生成（triggered_by の knowledge を正本として反映）",
-    "2. UTF-8 文字化けチェック: `grep -rl '�' wiki/ --include='*.md'`",
-    "3. commit & push to develop",
-    "4. この依頼ファイルを `.cache/inbox/archive/` に移動",
-    "",
-  ].join("\n");
-  writeFileSync(path, body, "utf8");
-  return { path, count: merged.length, added: newEntries.length };
-}
-
-// ---- main ----
 
 function main() {
-  if (!existsSync(WIKI)) return 0;
-  const index = buildWikiIndex();
+  const pages = readWikiPages();
 
-  if (targetKnowledge) {
-    // normalize: strip leading ./
-    const norm = targetKnowledge.replace(/^\.\//, "");
-    const matched = [];
-    for (const entry of index) {
-      for (const src of entry.sources) {
-        if (src.repo === "project-design" && src.path === norm) {
-          matched.push(entry);
-          break;
-        }
-      }
-    }
-    if (matched.length === 0) {
-      console.error(`wiki-stale-check: no wiki page references ${norm}`);
-      return 0;
-    }
-    console.error(`wiki-stale-check: knowledge ${norm} 編集 → 以下の wiki ページが stale の可能性:`);
-    for (const m of matched) {
-      console.error(`  - ${m.title} (${m.wikiPath}, compiled: ${m.compiled || "unknown"})`);
-    }
-    console.error(`  ${matched.length} page(s). 必要なら /wiki-compile を実行して再生成すること。`);
-
-    if (writeInbox) {
-      const newEntries = matched.map((m) => ({
-        wiki_path: m.wikiPath,
-        title: m.title,
-        compiled: m.compiled || "unknown",
-        triggered_by: norm,
-      }));
-      const res = writeRestaleInbox(newEntries);
-      if (res) {
-        console.error(
-          `wiki-stale-check: ${res.added} 件を .cache/inbox/${relative(inboxDir(), res.path)} に記録 (計 ${res.count} 件)`
-        );
-      }
-    }
-    return 0;
+  const hookPath = arg("--hook");
+  if (hookPath) {
+    const target = toRepoPath(hookPath);
+    if (/^pd\/wiki\//.test(target) || !/^(pd|cs|ks|as)\//.test(target)) return;
+    const hits = referencing(target, pages);
+    if (!hits.length) return;
+    const session = (arg("--session") || "nosession").replace(/[^\w.-]/g, "_");
+    const dir = join(REPO_ROOT, ".cache", "wiki-stale");
+    const seenFile = join(dir, `${session}.txt`);
+    const seen = existsSync(seenFile) ? readFileSync(seenFile, "utf8").split("\n") : [];
+    if (seen.includes(target)) return;
+    mkdirSync(dir, { recursive: true });
+    appendFileSync(seenFile, target + "\n");
+    process.stdout.write(JSON.stringify({
+      hookSpecificOutput: { hookEventName: "PostToolUse", additionalContext: message(target, hits) },
+    }));
+    return;
   }
 
-  if (scanAll) {
-    // Cross-check all pd-local sources; report pages whose source is missing
-    // (light WL-5 for pd-local only)
-    const missing = [];
-    for (const entry of index) {
-      for (const src of entry.sources) {
-        if (src.repo !== "project-design") continue;
-        const abs = join(ROOT, src.path);
-        if (!existsSync(abs)) missing.push({ entry, src });
-      }
-    }
-    if (missing.length === 0) {
-      console.error("wiki-stale-check --all: 全 pd-local source パス実在 OK");
-    } else {
-      console.error(`wiki-stale-check --all: ${missing.length} 件の source path 不在`);
-      for (const m of missing) {
-        console.error(`  - ${m.entry.wikiPath} → missing: ${m.src.path}`);
-      }
-    }
-    return 0;
+  const k = arg("--knowledge");
+  if (k) {
+    const target = toRepoPath(k);
+    const hits = referencing(target, pages);
+    console.log(hits.length ? message(target, hits) : `wiki-stale-check: ${target} を出典にする wiki のページは無い`);
+    return;
   }
 
-  console.error("Usage: wiki-stale-check.mjs --knowledge <path> [--write-inbox] | --all");
-  return 0;
+  if (args.includes("--list") || args.includes("--count")) {
+    if (isShallow()) {
+      console.log("wiki-stale-check: git の履歴が浅いので、日付を比べない");
+      return;
+    }
+    const stale = stalePages(pages, lastChangeDates());
+    if (args.includes("--count")) {
+      console.log(`wiki の古いページ（出典が compiled 日より後に変わった）：${stale.length}（止めずに知らせるだけ。一覧は pd/wiki/health/freshness-report.md か --list）`);
+      return;
+    }
+    for (const s of stale) {
+      console.log(`${s.rel}（compiled ${s.compiled || "不明"}）← ${s.newer.map((n) => `${n.path} ${n.date}`).join("、")}`);
+    }
+    console.log(`計 ${stale.length}`);
+    return;
+  }
+
+  console.error("Usage: wiki-stale-check.mjs --knowledge <path> | --hook <path> --session <id> | --list | --count");
 }
 
-try {
-  process.exit(main());
-} catch (err) {
-  console.error(`wiki-stale-check error: ${err.message}`);
-  process.exit(0);
-}
+try { main(); } catch (err) { console.error(`wiki-stale-check error: ${err.message}`); }
+process.exit(0);

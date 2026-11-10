@@ -1,113 +1,78 @@
 ---
 title: "Freshness Report"
-checked: "2026-11-08"
-status: PASS
+checked: "2026-11-10"
+status: WARN
 ---
 # Freshness Report
 
 ## チェック内容
-wiki ページの compiled 日と source の git log 最終変更日を比較し、stale ページを検出する (WL-3)。
-source パスの実在を確認する (WL-5)。
 
-## 結果
+- WL-3：wiki のページの出典が、そのページの `compiled` 日より後に変わっていないか。出典の変更日は git の commit で見る。2026-11-07 は四つの repo をこの repo に移した日で、その日の commit は中身の直しでないので数えず、2026-11-08 からの commit と、まだ commit していない直しを数える。原典の台帳（`knowledge/raw/manifest.md`）と PDF は比べない。`manifest_id` のある出典ページは、cs の出典ノート（`cs/knowledge/source-notes/`）と比べる。
+- WL-5：front matter の出典のパスが、この repo にあるか。
 
-### concepts/
+下の自動の欄は `pd/scripts/wiki-lint.mjs` が書く（中身は `pd/scripts/wiki-sources.mjs`）。2026-04 に手で書いた FRESH の表は、日付を比べていなかったので外した（2026-11-10）。古いページを作り直すか、直す必要が無いと確かめたら、そのページの `compiled` を今日にする（`.claude/skills/wiki-compile/SKILL.md`）。
 
-| wiki ページ | compiled | source | source 最終変更 | 鮮度 |
-|---|---|---|---|---|
-| 信頼 | 2026-04-06 | knowledge/concepts/CN-005_trust-hypothesis-inventory.md | 2026-04-04 | FRESH |
-| 信頼 | 2026-04-06 | knowledge/concepts/CN-006_trust-analysis-axes.md | 2026-04-04 | FRESH |
-| 測定設計原則 | 2026-04-06 | knowledge/concepts/CN-007_iss42-measurement-design-principles.md | 2026-04-04 | FRESH |
-| PDブリッジ保持論点 | 2026-04-06 | knowledge/concepts/CN-008_pd-bridge-holding-issues.md | 2026-04-04 | FRESH |
-| Love 駆動開発 | 2026-04-06 | pd: knowledge/meta/project-overview.md, ks: knowledge/schema/core-definitions.md, ks: knowledge/text/clinical-psychology/part5-aesthetic-conflict-hoji.md | 2026-02-13 | FRESH |
-| 感情処理 | 2026-04-06 | ks: knowledge/text/clinical-psychology/part2-intersubjectivity-interoception.md, ks: knowledge/text/clinical-psychology/part3-splitting-integration-fo.md, ks: knowledge/text/clinical-psychology/part5-aesthetic-conflict-hoji.md, ks: knowledge/text/clinical-psychology/part6-psychopathology-4layer.md, ks: knowledge/schema/core-definitions.md | 2026-02-13 | FRESH |
-| プロジェクトデザイン | 2026-04-06 | pd: knowledge/meta/project-overview.md, pd: knowledge/meta/project-history.md | 2026-02-13 | FRESH |
-| wikilink | 2026-04-06 | (メタページ: ソースなし) | -- | FRESH |
-
-### keywords/ + concepts/ (旧 entities/)
-
-| wiki ページ | compiled | source | source 最終変更 | 鮮度 |
-|---|---|---|---|---|
-| 欠損 | 2026-04-06 | ks: knowledge/schema/core-definitions.md, knowledge/text/foundation/phase1-summary.md | 2026-02-13 | FRESH |
-| 欠損駆動思考 | 2026-04-06 | ks: knowledge/schema/core-definitions.md, knowledge/text/foundation/phase1-summary.md, knowledge/schema/glossary.md | 2026-03-04 | FRESH |
-| 抱持 | 2026-04-06 | ks: knowledge/schema/core-definitions.md, knowledge/schema/container-mapping.md, knowledge/schema/hoji-matching-v2.md, knowledge/schema/glossary.md | 2026-03-04 | FRESH |
-| デザイン思考 | 2026-04-06 | pd: knowledge/research/design-thinking/design-thinking-integrated.md | 2026-03-27 | FRESH |
-| ドナルド・ショーン | 2026-04-06 | knowledge/research/design-thinking/design-thinking-integrated.md | 2026-03-27 | FRESH |
-| ナイジェル・クロス | 2026-04-06 | knowledge/research/design-thinking/design-thinking-integrated.md | 2026-03-27 | FRESH |
-| アネット・ベイアー | 2026-04-06 | knowledge/research/trust/trust-integrated.md | 2026-03-27 | FRESH |
-| ニクラス・ルーマン | 2026-04-06 | knowledge/research/trust/trust-integrated.md | 2026-03-27 | FRESH |
-| 山岸俊男 | 2026-04-06 | knowledge/research/trust/trust-integrated.md, knowledge/research/kesson-bridge.md | 2026-04-04 | FRESH |
-| アブダクション | 2026-04-06 | knowledge/research/design-thinking/design-thinking-integrated.md, knowledge/research/kesson-bridge.md | 2026-04-04 | FRESH |
-| ウィキッド・プロブレム | 2026-04-06 | knowledge/research/design-thinking/design-thinking-integrated.md, knowledge/research/kesson-bridge.md | 2026-04-04 | FRESH |
-| 愛着理論 | 2026-04-06 | knowledge/research/trust/trust-integrated.md, knowledge/research/kesson-bridge.md | 2026-04-04 | FRESH |
-| シュワルツの基本的価値理論 | 2026-04-06 | knowledge/research/value/value-integrated.md | 2026-03-27 | FRESH |
-| ピエール・ブルデュー | 2026-04-06 | knowledge/research/value/value-integrated.md | 2026-03-27 | FRESH |
-| プロスペクト理論 | 2026-04-06 | knowledge/research/value/value-integrated.md | 2026-03-27 | FRESH |
-| デイヴィッド・グレーバー | 2026-04-06 | knowledge/research/value/value-integrated.md | 2026-03-27 | FRESH |
-| Value Sensitive Design | 2026-04-06 | knowledge/research/value/value-integrated.md | 2026-03-27 | FRESH |
-| ネガティブケイパビリティ | 2026-04-06 | ks: knowledge/text/clinical-psychology/part5-aesthetic-conflict-hoji.md, ks: knowledge/schema/core-definitions.md | 2026-02-13 | FRESH |
-| 間主観性 | 2026-04-06 | ks: knowledge/text/clinical-psychology/part2-intersubjectivity-interoception.md, as: knowledge/topics/survival-trust-axis/ja/report.md | 2026-03-23 | FRESH |
-| 情動の構成 | 2026-04-06 | ks: knowledge/schema/core-definitions.md, ks: knowledge/text/clinical-psychology/part3-splitting-integration-fo.md | 2026-02-13 | FRESH |
-| 内受容感覚 | 2026-04-06 | ks: knowledge/text/clinical-psychology/part2-intersubjectivity-interoception.md, as: knowledge/topics/four-layers/ja/report.md | 2026-03-23 | FRESH |
-| 創造の5段階モデル | 2026-04-06 | cs: knowledge/five-stages-guide.md, cs: knowledge/glossary.md, cs: knowledge/schema/five-stages.md, cs: knowledge/schema/academic-domains.md | 2026-02-21 | FRESH |
-
-### cross-refs/
-
-| wiki ページ | compiled | source | 鮮度 |
-|---|---|---|---|
-| concept-entity-map | 2026-04-06 | (集約ページ: wiki 内データ) | FRESH |
-| creation-space-domains | 2026-04-06 | cs: knowledge/domains/ (D01-D30) | FRESH |
-| kesson-space-overview | 2026-04-06 | (集約ページ: wiki 内データ) | FRESH |
-| awareness-space-overview | 2026-04-06 | (集約ページ: wiki 内データ) | FRESH |
-
-### WL-5: source パス実在確認
-
-全 source パスの実在を確認。
-
-| パス | 存在 |
-|---|---|
-| knowledge/concepts/CN-005_trust-hypothesis-inventory.md | OK |
-| knowledge/concepts/CN-006_trust-analysis-axes.md | OK |
-| knowledge/concepts/CN-007_iss42-measurement-design-principles.md | OK |
-| knowledge/concepts/CN-008_pd-bridge-holding-issues.md | OK |
-| knowledge/research/design-thinking/design-thinking-integrated.md | OK |
-| knowledge/research/trust/trust-integrated.md | OK |
-| knowledge/research/value/value-integrated.md | OK |
-| knowledge/research/kesson-bridge.md | OK |
-| ks: knowledge/schema/core-definitions.md | OK |
-| ks: knowledge/text/foundation/phase1-summary.md | OK |
-| ks: knowledge/schema/glossary.md | OK |
-| ks: knowledge/schema/container-mapping.md | OK |
-| ks: knowledge/schema/hoji-matching-v2.md | OK |
-| ks: knowledge/text/clinical-psychology/part1-alpha-function-4layer.md | OK |
-| ks: knowledge/text/clinical-psychology/part2-intersubjectivity-interoception.md | OK |
-| ks: knowledge/text/clinical-psychology/part3-splitting-integration-fo.md | OK |
-| ks: knowledge/text/clinical-psychology/part5-aesthetic-conflict-hoji.md | OK |
-| ks: knowledge/text/clinical-psychology/part6-psychopathology-4layer.md | OK |
-| as: knowledge/topics/four-layers/ja/report.md | OK |
-| as: knowledge/topics/survival-trust-axis/ja/report.md | OK |
-| pd: knowledge/meta/project-overview.md | OK |
-| pd: knowledge/meta/project-history.md | OK |
-| cs: knowledge/five-stages-guide.md | OK |
-| cs: knowledge/glossary.md | OK |
-| cs: knowledge/schema/five-stages.md | OK |
-| cs: knowledge/schema/academic-domains.md | OK |
-| cs: knowledge/domains/ (D01-D30) | OK |
 <!-- auto:start -->
-_auto-generated by scripts/wiki-lint.mjs at 2026-11-08_
+_auto-generated by scripts/wiki-lint.mjs at 2026-11-10_
 
-## WL-3 checked 日
+## WL-3 古いページ
 
-- wiki/ 内 392 ページを走査
-- 最終走査日: 2026-11-08
+wiki/ の 391 ページを見た。出典の最後の変更（git の commit。2026-11-08 から）が、ページの compiled 日より後のものを並べる。
+
+古いページ: **47**
+
+| wiki ページ | compiled | 後から変わった出典 |
+|---|---|---|
+| [[concepts/創造の5段階モデル\|創造の5段階モデル]] | 2026-04-06 | cs/knowledge/five-stages-guide.md（2026-11-08） |
+| [[cross-refs/creation-space-domains\|creation-space 30ドメイン横断]] | 2026-04-06 | cs/knowledge/five-stages-guide.md（2026-11-08） |
+| [[sources/D25_pratt_1991_arts-of-the-contact-zone\|コンタクト・ゾーンの技法]] | 2026-04-08 | cs/knowledge/source-notes/D25/D25-S10_pratt-1991.md（2026-11-09） |
+| [[sources/D04_sagan_1967_origin-mitosing-cells\|有糸分裂細胞の起源]] | 2026-04-10 | cs/knowledge/source-notes/D04/D04-S08_sagan-1967.md（2026-11-09） |
+| [[sources/D05_cane-zebiak_1985_enso-theory\|エルニーニョと南方振動の理論]] | 2026-04-10 | cs/knowledge/source-notes/D05/D05-S08_cane-zebiak-1985.md（2026-11-09） |
+| [[sources/D06_abbott_2017_gw170817\|GW170817：連星中性子星合体からの重力波観測]] | 2026-04-10 | cs/knowledge/source-notes/D06/D06-S09_abbott-2017.md（2026-11-09） |
+| [[sources/D07_diffie-hellman_1976_new-directions-cryptography\|暗号の新方向]] | 2026-04-10 | cs/knowledge/source-notes/D07/D07-S10_diffie-hellman-1976.md（2026-11-09） |
+| [[sources/D08_rao-ballard_1999_predictive-coding-visual-cortex\|視覚皮質における予測符号化]] | 2026-04-10 | cs/knowledge/source-notes/D08/D08-S01_rao-ballard-1999.md（2026-11-08） |
+| [[sources/D15_nose_1944_yugenron\|幽玄論]] | 2026-04-10 | cs/knowledge/source-notes/D15/D15-S06_nose-1940.md（2026-11-09） |
+| [[sources/D24_dimarzio_2020_people-trapped-inside-shincheonji\|「新天地に囚われた人々」：脱プログラミングの暗い面の放映]] | 2026-04-10 | cs/knowledge/source-notes/D24/D24-S17_dimarzio-2020.md（2026-11-09） |
+| [[sources/D25_van-gennep_1960_rites-of-passage\|通過儀礼（英訳版）]] | 2026-04-10 | cs/knowledge/source-notes/D25/D25-S01_vangennep-1960.md（2026-11-09） |
+| [[sources/D25_vangennep_1909_rites-of-passage\|Les rites de passage（仏語原典）]] | 2026-04-10 | cs/knowledge/source-notes/D25/D25-S01_vangennep-1960.md（2026-11-09） |
+| [[sources/D30_matsuki_numata_2021_ichiza-konryu\|茶事における場の共創：「一座建立」の意味空間]] | 2026-04-10 | cs/knowledge/source-notes/D30/D30-S09_matsuki-2021.md（2026-11-09） |
+| [[sources/D30_zeami_classics\|風姿花伝（一座建立・場の共創）]] | 2026-04-10 | cs/knowledge/source-notes/D30/D30-S07_zeami-15c.md（2026-11-09） |
+| [[sources/D06_balbus-hawley_1991_shear-instability\|磁気回転不安定性 — 弱磁場降着円盤における強力な局所剪断不安定性]] | 2026-04-11 | cs/knowledge/source-notes/D06/D06-S04_balbus-1991.md（2026-11-09） |
+| [[sources/D06_jeans_1902_stability-nebula\|ジーンズ不安定性 — 自己重力ガス球の安定性条件の導出]] | 2026-04-11 | cs/knowledge/source-notes/D06/D06-S01_jeans-1902.md（2026-11-09） |
+| [[sources/D11_davies_2010_antibiotic-resistance\|抗生物質耐性の起源と進化 — 耐性遺伝子の太古からの存在と人為的加速]] | 2026-04-11 | cs/knowledge/source-notes/D11/D11-S03_davies-2010.md（2026-11-09） |
+| [[sources/D09_schultz_1997_schultz-dayan-montague-1997\|予測と報酬の神経基盤 — ドーパミンによる予測誤差符号化]] | 2026-04-17 | cs/knowledge/source-notes/D09/D09-S07_schultz-1997.md（2026-11-09） |
+| [[sources/D26_limb_2008_neural-substrates-of-spontaneous\|ジャズ即興演奏の神経基盤 — 前頭前皮質の活動解離]] | 2026-04-17 | cs/knowledge/source-notes/D26/D26-S12_limb-2008.md（2026-11-09） |
+| [[sources/D04_woese_2002_woese-2002-on-the\|細胞の進化について — ダーウィン閾と HGT]] | 2026-04-18 | cs/knowledge/source-notes/D04/D04-S09_woese-2002.md（2026-11-09） |
+| [[sources/D06_springel_2005_2005\|Millennium Simulation — クエーサー・銀河・大規模構造の同時進化]] | 2026-04-18 | cs/knowledge/source-notes/D06/D06-S11_springel-2005.md（2026-11-09） |
+| [[sources/D07_schultz_1997_schultz-dayan-montague-1997\|予測と報酬の神経基盤（D07 文脈）— ドーパミン予測誤差]] | 2026-04-18 | cs/knowledge/source-notes/D07/D07-S07_schultz-dayan-montague-1997.md（2026-11-09） |
+| [[sources/D10_serhan_2014_pro-resolving-lipid-mediators\|炎症収束を促進する脂質メディエーター — Resolution Physiology]] | 2026-04-18 | cs/knowledge/source-notes/D10/D10-S09_serhan-2014.md（2026-11-08） |
+| [[sources/D22_tuckman_1965_1965\|小集団の発達系列 — Tuckman の 4 段階モデル]] | 2026-04-18 | cs/knowledge/source-notes/D22/D22-S08_tuckman-1965.md（2026-11-08） |
+| [[sources/D24_james_1902_varieties-of-religious-experience\|宗教的経験の諸相]] | 2026-04-18 | cs/knowledge/source-notes/D24/D24-S11_james-1902.md（2026-11-09） |
+| [[sources/D25_mauss_1925_essai-sur-le-don\|贈与論 — 全体的給付の体系]] | 2026-04-18 | cs/knowledge/source-notes/D25/D25-S07_mauss-1925.md（2026-11-09） |
+| [[sources/D27_jiang_2019_living-structure-christopher-alexander\|生きた構造 — Christopher Alexander の遺産]] | 2026-04-18 | cs/knowledge/source-notes/D27/D27-S13_jiang-2019.md（2026-11-09） |
+| [[sources/D28_sawyer_2026_creativity-and-emergence-in\|創造性と創発 — 即興演劇と社会生活]] | 2026-04-18 | cs/knowledge/source-notes/D28/D28-S11_sawyer-2026.md（2026-11-09） |
+| [[sources/D29_munoz_2018_criticality-and-dynamical-scaling\|生物系における臨界性と動的スケーリング]] | 2026-04-18 | cs/knowledge/source-notes/D29/D29-S13_munoz-2018-criticality-living-systems.md（2026-11-09） |
+| [[sources/D14_clark_1998_chalmers-d\|拡張された心 — Clark & Chalmers]] | 2026-04-19 | cs/knowledge/source-notes/D14/D14-S02_clark-chalmers-1998.md（2026-11-08） |
+| [[sources/D27_schumacher_2008_parametricism-as-style\|パラメトリシズム — スタイルとしての綱領]] | 2026-04-19 | cs/knowledge/source-notes/D27/D27-S10_schumacher-2008.md（2026-11-09） |
+| [[sources/D08_dehaene_2011_dehaene-changeux-2011-experimental\|意識的処理への実験的・理論的アプローチ — グローバル神経ワークスペース]] | 2026-06-14 | cs/knowledge/source-notes/D08/D08-S05_dehaene-changeux-2011.md（2026-11-08） |
+| [[sources/D09_attwell_2001_attwell-laughlin-2001-an\|脳灰白質の信号伝達のエネルギー収支]] | 2026-06-14 | cs/knowledge/source-notes/D09/D09-S02_attwell-laughlin-2001.md（2026-11-09） |
+| [[sources/D09_mcewen_1998_1998\|ストレス媒介物の保護と損傷 — アロスタシスとアロスタティック負荷]] | 2026-06-14 | cs/knowledge/source-notes/D09/D09-S05_mcewen-1998.md（2026-11-09） |
+| [[sources/D09_wolpert_1969_1969\|位置情報と細胞分化の空間パターン（Wolpert 1969）]] | 2026-06-14 | cs/knowledge/source-notes/D09/D09-S10_wolpert-1969.md（2026-11-09） |
+| [[sources/D12_connell_1977_slatyer-r-o\|自然群集における遷移のメカニズム]] | 2026-06-14 | cs/knowledge/source-notes/D12/D12-S02_connell-slatyer-1977.md（2026-11-09） |
+| [[sources/D12_pedigo_1986_et-al\|経済的被害許容水準：理論と実践]] | 2026-06-14 | cs/knowledge/source-notes/D12/D12-S06_pedigo-1986.md（2026-11-09） |
+| [[sources/D12_robertson_2009_vitousek-p-m\|農業における窒素：必須資源のコストの均衡]] | 2026-06-14 | cs/knowledge/source-notes/D12/D12-S04_robertson-2009.md（2026-11-09） |
+| [[sources/D13_deleuze_1966_1966-2001\|ジルベール・シモンドン論（Deleuze, Review of Simondon 1966）]] | 2026-06-14 | cs/knowledge/source-notes/D13/D13-S03_deleuze-1966.md（2026-11-09） |
+| [[sources/D13_peirce_1923_peirce-1923-chance-love\|偶然・愛・論理（Chance, Love, and Logic, Peirce 1923）]] | 2026-06-14 | cs/knowledge/source-notes/D13/D13-S13_peirce-1923.md（2026-11-09） |
+| [[sources/D19_polti_1895_1895-1916\|三十六の劇的状況（The Thirty-Six Dramatic Situations, Polti 1895/1916）]] | 2026-06-14 | cs/knowledge/source-notes/D19/D19-S13_polti-1895.md（2026-11-09） |
+| [[sources/D19_todorov_1971_1971\|物語の2つの原理]] | 2026-06-14 | cs/knowledge/source-notes/D19/D19-S06_todorov-1971.md（2026-11-09） |
+| [[sources/D21_schumpeter_1942_1942\|資本主義・社会主義・民主主義（Schumpeter 1942）]] | 2026-06-14 | cs/knowledge/source-notes/D21/D21-S03_schumpeter-1942.md（2026-11-08） |
+| [[sources/D22_nonaka_1996_senoo-d\|情報処理から知識創造へ：経営におけるパラダイム転換]] | 2026-06-14 | cs/knowledge/source-notes/D22/D22-S02_nonaka-1996.md（2026-11-08） |
+| [[sources/D22_tuckman_1977_jensen-m-a-c\|小集団発達の諸段階・再訪（Tuckman & Jensen 1977）]] | 2026-06-14 | cs/knowledge/source-notes/D22/D22-S09_tuckman-jensen-1977.md（2026-11-08） |
+| [[sources/D29_langton_1990_edge-of-chaos\|カオスの縁における計算]] | 2026-06-14 | cs/knowledge/source-notes/D29/D29-S15_langton-1990.md（2026-11-09） |
+| [[sources/D26_savage_2015_et-al\|統計的普遍項が明らかにする人間の音楽の構造と機能]] | 2026-07-03 | cs/knowledge/source-notes/D26/D26-S08_savage-2015.md（2026-11-09） |
 
 ## WL-5 source path 実在確認
 
 全 source パス実在: **OK**
 
 <!-- auto:end -->
-
-
-## 判定
-
-**PASS**: 全ページが FRESH。全 source パスが実在。P3 最終確認完了。

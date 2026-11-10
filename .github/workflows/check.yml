@@ -16,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # wiki の古いページを数えるのに、出典の commit の日付が要る（scripts/check.sh）
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
