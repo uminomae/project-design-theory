@@ -226,7 +226,7 @@ function start() {
     renderer.setPixelRatio(pixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
     // ?bgc=02050d：地の色の上書き
-    const bgc = /^[0-9a-fA-F]{6}$/.test(q.get('bgc') || '') ? parseInt(q.get('bgc'), 16) : 0x02050d;
+    let bgc = /^[0-9a-fA-F]{6}$/.test(q.get('bgc') || '') ? parseInt(q.get('bgc'), 16) : 0x02050d;
     renderer.setClearColor(bgc, 1);
     renderer.domElement.dataset.background = 'love-membrane';
     container.appendChild(renderer.domElement);
@@ -293,8 +293,11 @@ function start() {
     // 読み始め（スクロール 0）のまま e 秒たったときの落ちた量（呼吸の満ち引きも含めて積分したもの）
     const fallAt = (e) => FALL0 + 0.25 * e - (0.0625 / OMEGA_B) * (Math.sin(OMEGA_B * (T0 + e)) - Math.sin(OMEGA_B * T0));
     // 調整のページ（studio.html）が手で動かすもの。名前が入っている uniform は、自動で動かさない
-    // ?e=秒：読み始めのまま、その秒数たったときの時刻と位置から始める（調整のページの書き出し）
-    if (qn('e') !== null) { t = T0 + qn('e'); fall = fallAt(qn('e')); }
+    // 始める時刻と位置：読み始めのまま e 秒たったときと同じところから。既定は 1:30（pjdhiro 2026-11-10「開始位置は 1:30 のとこがいい」）。
+    // ?e=秒 で上書き（調整の板の書き出し）
+    const START_E = qn('e') ?? 90;
+    t = T0 + START_E;
+    fall = fallAt(START_E);
     const manual = new Set();
     let paused = false;
     let speedOverride = qn('speed');
@@ -377,8 +380,8 @@ function start() {
         if (document.hidden) stop(); else run();
     });
 
-    // 調整のページ（?studio）から動かすための入口。ふだんのページでは作らない
-    if (q.has('studio')) {
+    // 調整の板（membrane-panel.js）から動かすための入口
+    {
         window.loveMembrane = {
             uniforms,
             manual,
@@ -392,10 +395,15 @@ function start() {
             // 経過秒を指定して、その時刻・その位置へ跳ぶ（読み始めのまま e 秒たったときと同じ見え方）
             seek(e) { t = T0 + e; fall = fallAt(e); still(); },
             setFall(v) { fall = v; still(); },
-            setClearColor(hex) { renderer.setClearColor(hex, 1); still(); },
+            get clearHex() { return `#${bgc.toString(16).padStart(6, '0')}`; },
+            setClearColor(hex) { bgc = hex; renderer.setClearColor(hex, 1); still(); },
             redraw() { still(); },
         };
         window.dispatchEvent(new Event('love-membrane-ready'));
+    }
+    // 右端の dev ボタン（調整のページでは板を最初から開くので置かない。見本の iframe の中にも置かない）
+    if (!q.has('studio') && window.self === window.top) {
+        import('./membrane-panel.js').then((m) => m.mountDevButton()).catch((err) => console.warn('[love-membrane] dev button failed', err));
     }
 
     if (reduce) still(); else run();

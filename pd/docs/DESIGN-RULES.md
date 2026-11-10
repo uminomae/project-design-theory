@@ -43,6 +43,8 @@ hook `ui-lint.sh` が機械的に検証可能な項目を自動チェックす�
 
 **背景の WebGPU 判定とフォールバック（2026-11-05・pjdhiro「デフォルトで無効なのは困る。みんな見れない」）**: Safari 18 / iOS 18 以前は WebGPU が既定オフ（既定オンは Safari 26 / iOS 26 から）。背景は `navigator.gpu` の有無と `requestAdapter()` の結果で WebGPU の可否を判定し、使えなければ同じ数式の WebGL 版（`main.js`・`main3.js`・`main4.js`・three.js）に切り替える（`src/bootstrap/shaders.js`）。背景が無い状態で公開しない。WebGL 版はフォールバックの本番コードなので、WebGPU 版の直しは WebGL 版にも入れる。`?renderer=webgl` で強制できる。
 
+**Love駆動開発の背景（2026-11-10・pjdhiro と調えた）**: `reader/love-driven-dev.html` だけは、body の `data-background="love-membrane"` で、ランダムなプールでなく膜の渦（`src/backgrounds/love-membrane.js`・創造とはの `cs/src/scene-intent.js` の作り方を移したもの・WebGL）を使う。ページ右端の「dev」ボタンで、読者も調整の板（`src/backgrounds/membrane-panel.js`）を開ける。板の値はその人の画面の中だけで変わる。調整のページは `src/backgrounds/studio.html`。
+
 ## 2. グロークラス体系
 
 テキストの可読性は以下の3クラスで制御する。それ以外の箇所に個別の text-shadow / backdrop-filter を書かない。

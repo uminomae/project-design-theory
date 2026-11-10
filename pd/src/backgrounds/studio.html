@@ -27,11 +27,10 @@
 <body>
     <div id="webgl-container" aria-hidden="true"></div>
     <div id="readout"></div>
-    <textarea id="out" readonly></textarea>
     <script type="module">
-        import GUI from 'https://cdn.jsdelivr.net/npm/lil-gui@0.19.2/dist/lil-gui.esm.min.js';
+        import { createPanel } from './membrane-panel.js';
 
-        // 背景を ?studio 付きで読む（今のページの URL のクエリもそのまま渡る）
+        // 背景を ?studio 付きで読む（今のページの URL のクエリもそのまま渡る）。?studio のときは dev ボタンを置かない
         if (!new URLSearchParams(location.search).has('studio')) {
             const u = new URL(location.href);
             u.searchParams.set('studio', '1');
@@ -41,109 +40,9 @@
         const lm = window.loveMembrane;
         const U = lm.uniforms;
         const deg = (r) => (r * 180) / Math.PI;
-        const rad = (d) => (d * Math.PI) / 180;
-
-        // 色：uniform の値（1 を超えることがある）を、色と強さに分けて扱う
-        const toHex = (v) => {
-            const k = Math.max(v.x, v.y, v.z, 1e-6);
-            const h = (c) => Math.round(Math.min(1, Math.max(0, c / k)) * 255).toString(16).padStart(2, '0');
-            return { hex: `#${h(v.x)}${h(v.y)}${h(v.z)}`, k };
-        };
-        const fromHex = (hex, k, v) => {
-            const n = parseInt(hex.slice(1), 16);
-            v.set(((n >> 16) & 255) / 255 * k, ((n >> 8) & 255) / 255 * k, (n & 255) / 255 * k);
-        };
-
-        const P = {
-            一時停止: false,
-            経過秒: 0,
-            ドラッグの幅: 60,
-            '1:30 へ': () => lm.seek(90),
-            '4:30 へ': () => lm.seek(270),
-            落ちる速さ: 0.25,
-            速さを手で: false,
-            左右: deg(U.uYaw.value),
-            上下: deg(U.uPitch.value),
-            向きを手で: false,
-            距離: U.uDist.value,
-            渦: U.uVortex.value,
-            渦を手で: false,
-            歪み: U.uLens.value,
-            膜の間: U.uSplit.value,
-            膜の濃さ: U.uMembraneGain.value,
-            軸の光: U.uShell.value,
-            地: '#02050d',
-        };
-        const colors = {};
-        for (const [name, key] of [['手前（冷）', 'uCool'], ['奥（暖）', 'uWarm'], ['中心の門', 'uGate'], ['膜A', 'uGold'], ['膜B', 'uSilver']]) {
-            const { hex, k } = toHex(U[key].value);
-            colors[name] = { key, hex, k };
-        }
-
-        const gui = new GUI({ title: '膜の渦の調整' });
-
-        const g0 = gui.addFolder('時刻と位置');
-        g0.add(P, '一時停止').onChange((v) => { lm.paused = v; });
-        // 動かしながら映像が変わる（つまみを左右に滑らせて時刻を送り戻す）
-        const timeCtl = g0.add(P, '経過秒', 0, 600, 0.1).name('時刻（秒）').onChange((v) => lm.seek(v));
-        g0.add(P, 'ドラッグの幅', 10, 300, 1).name('画面の幅＝何秒');
-        g0.add(P, '1:30 へ');
-        g0.add(P, '4:30 へ');
-        g0.add(P, '速さを手で').onChange((v) => { lm.speed = v ? P.落ちる速さ : null; });
-        g0.add(P, '落ちる速さ', 0, 2, 0.01).onChange((v) => { if (P.速さを手で) lm.speed = v; });
-
-        const g1 = gui.addFolder('カメラ');
-        const setDir = () => {
-            if (P.向きを手で) { lm.manual.add('uYaw'); lm.manual.add('uPitch'); U.uYaw.value = rad(P.左右); U.uPitch.value = rad(P.上下); }
-            else { lm.manual.delete('uYaw'); lm.manual.delete('uPitch'); }
-            lm.redraw();
-        };
-        g1.add(P, '向きを手で').onChange(setDir);
-        g1.add(P, '左右', -180, 0, 0.1).name('左右（度）').onChange(setDir);
-        g1.add(P, '上下', -30, 30, 0.1).name('上下（度）').onChange(setDir);
-        g1.add(P, '距離', 1.2, 4.5, 0.01).name('中心からの距離').onChange((v) => { U.uDist.value = v; lm.redraw(); });
-
-        const g2 = gui.addFolder('形');
-        const setVortex = () => {
-            if (P.渦を手で) { lm.manual.add('uVortex'); U.uVortex.value = P.渦; } else lm.manual.delete('uVortex');
-            lm.redraw();
-        };
-        g2.add(P, '渦を手で').onChange(setVortex);
-        g2.add(P, '渦', 0, 2.5, 0.01).onChange(setVortex);
-        g2.add(P, '歪み', 0, 0.4, 0.005).name('歪み（重力レンズ）').onChange((v) => { U.uLens.value = v; lm.redraw(); });
-        g2.add(P, '膜の間', 0, 0.9, 0.01).name('二枚の膜の間').onChange((v) => { U.uSplit.value = v; lm.redraw(); });
-        g2.add(P, '膜の濃さ', 0.1, 1.5, 0.01).onChange((v) => { U.uMembraneGain.value = v; lm.redraw(); });
-        g2.add(P, '軸の光', 0, 3, 0.01).onChange((v) => { U.uShell.value = v; lm.redraw(); });
-
-        const g3 = gui.addFolder('色');
-        g3.addColor(P, '地').onChange((v) => lm.setClearColor(parseInt(v.slice(1), 16)));
-        for (const [name, c] of Object.entries(colors)) {
-            const sub = g3.addFolder(name);
-            const apply = () => { fromHex(c.hex, c.k, U[c.key].value); lm.redraw(); };
-            sub.addColor(c, 'hex').name('色').onChange(apply);
-            sub.add(c, 'k', 0, 2.5, 0.01).name('強さ').onChange(apply);
-        }
-
-        const out = document.getElementById('out');
-        const g4 = gui.addFolder('書き出し');
-        g4.add({ 書き出す: () => {
-            const v3 = (v) => [v.x, v.y, v.z].map((n) => +n.toFixed(3)).join(',');
-            const e = +lm.elapsed.toFixed(1);
-            const params = new URLSearchParams({ bg: 'membrane', e: String(e) });
-            if (P.速さを手で) params.set('speed', P.落ちる速さ);
-            if (P.向きを手で) { params.set('yaw', U.uYaw.value.toFixed(4)); params.set('pitch', U.uPitch.value.toFixed(4)); }
-            if (P.渦を手で) params.set('vortex', U.uVortex.value);
-            params.set('dist', U.uDist.value); params.set('lens', U.uLens.value);
-            params.set('split', U.uSplit.value); params.set('mg', U.uMembraneGain.value); params.set('shell', U.uShell.value);
-            params.set('bgc', P.地.slice(1));
-            for (const [k, key] of [['cool', 'uCool'], ['warm', 'uWarm'], ['gate', 'uGate'], ['gold', 'uGold'], ['silver', 'uSilver']]) params.set(k, v3(U[key].value));
-            const url = `${location.origin}${location.pathname.replace('studio.html', 'frame.html')}?${params}`;
-            const json = JSON.stringify({ 経過秒: e, 落ちた量: +lm.fall.toFixed(2), ...Object.fromEntries(params) }, null, 1);
-            out.value = `${url}\n\n${json}`;
-            out.style.display = 'block';
-            out.select();
-            navigator.clipboard?.writeText(out.value).catch(() => {});
-        } }, '書き出す').name('今の値を書き出す（コピー）');
+        const { gui, state } = await createPanel(lm);
+        const P2 = { ドラッグの幅: 60 };
+        gui.folders[0].add(P2, 'ドラッグの幅', 10, 300, 1).name('画面の幅＝何秒');
 
         // 画面を左右にドラッグして時刻を送り戻す（右へ＝先へ、左へ＝前へ）。ドラッグのあいだは止める。
         // Shift を押しながらだと 1/5 の細かさ
@@ -157,29 +56,26 @@
         stage.addEventListener('pointermove', (ev) => {
             if (!drag) return;
             const fine = ev.shiftKey ? 0.2 : 1;
-            const e = Math.max(0, drag.e + ((ev.clientX - drag.x) / window.innerWidth) * P.ドラッグの幅 * fine);
+            const e = Math.max(0, drag.e + ((ev.clientX - drag.x) / window.innerWidth) * P2.ドラッグの幅 * fine);
             lm.seek(e);
         });
         const endDrag = () => {
             if (!drag) return;
-            lm.paused = drag.wasPaused || P.一時停止;
+            lm.paused = drag.wasPaused;
             drag = null;
         };
         stage.addEventListener('pointerup', endDrag);
         stage.addEventListener('pointercancel', endDrag);
-        let sliding = false;
-        gui.domElement.addEventListener('pointerdown', () => { sliding = true; });
-        window.addEventListener('pointerup', () => { sliding = false; });
 
         const ro = document.getElementById('readout');
         const tick = () => {
             const e = lm.elapsed;
             const m = Math.floor(e / 60), s = Math.floor(e % 60).toString().padStart(2, '0');
-            if (!sliding && Math.abs(P.経過秒 - e) > 0.05) { P.経過秒 = Math.min(600, +e.toFixed(1)); timeCtl.updateDisplay(); }
             ro.textContent = `画面を左右にドラッグで時刻を送り戻し（Shift で細かく）  経過 ${m}:${s}（${e.toFixed(0)} 秒）  落ちた量 ${lm.fall.toFixed(2)}  左右 ${deg(U.uYaw.value).toFixed(1)}°  上下 ${deg(U.uPitch.value).toFixed(1)}°`;
             requestAnimationFrame(tick);
         };
         tick();
+        void state;
     </script>
 </body>
 </html>
