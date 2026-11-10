@@ -580,3 +580,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（`#ldd-development-relation` の段のカード）
 - pages: `concepts/Love 駆動開発` は、三つを一つの出来事に別々の側から触れた名前として読み関係を一つに定めない、と書いていて、意訳と合う。カードの言葉は引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] check | Love駆動開発の「〇〇駆動開発」の名前の段に、先に置くことについての pjdhiro の見方を足したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「開発とは、何を指すか」の名前の段）
+- pages: どちらのページも、この段を引いていないので本文はそのまま。compiled は今日のまま
