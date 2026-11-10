@@ -50,6 +50,16 @@ mojibake() {
 }
 run "公開するファイルの文字化け" mojibake
 
+# 道具の呼び出しの文字（Claude がファイルを書く道具の閉じタグなど）が、本文の終わりに紛れていないか。
+# 読み物の正本と精読ノートに残り、公開ページまで出ていた（2026-11-10・#111）。git に入っている文字のファイルを全部見る。
+# この検査自身と、検査の説明を書く docs/TESTING.md は除く。
+tool_residue() {
+  local hits
+  hits=$(git grep -n -I -E '</?(antml:)?(invoke|parameter|function_calls)[ >]|</content>|<parameter name=' -- . ':!scripts/check.sh' ':!docs/TESTING.md')
+  [ -z "$hits" ] || { echo "$hits" | cut -c1-200; echo "   道具の呼び出しの文字が残っている。その行を消す（正本なら、消したあと生成し直す）"; return 1; }
+}
+run "道具の呼び出しの文字の紛れ込み" tool_residue
+
 echo
 if [ ${#failed[@]} -gt 0 ]; then
   echo "落ちた検査：${failed[*]}"
