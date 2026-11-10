@@ -6,7 +6,8 @@
   再生成: python3 scripts/build-reader-lp.py
   手順:   reader/README.md
   デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
-  - シェーダー背景（reader-app.js）と tokens.css の変数は pd VI を継承する
+  - シェーダー背景（reader-app.js）と tokens.css の変数は pd VI を継承する。ただしこのページの背景は、body の data-background で
+    膜の渦（src/backgrounds/love-membrane.js）にしている（pjdhiro 2026-11-10）
   - ページ固有スタイルは src/styles/reader-flow.css（tokens の上に載せる。独自パレット新造禁止）
   - noindex は外した（pjdhiro 2026-11-08・#71）。sitemap.xml・llms.txt に入れてある
 -->
@@ -96,7 +97,7 @@
     }
     </script>
 </head>
-<body class="reader-flow">
+<body class="reader-flow" data-background="love-membrane">
     <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
     <div class="top-bar" role="group" aria-label="サイト操作">
         <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
