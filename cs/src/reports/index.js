@@ -19,7 +19,6 @@ import {
     normalizeProgressTaxonomy,
     resolveLocalizedSources,
     resolveDomainReportSources,
-    resolveDomainPresentationSources,
 } from './data.js';
 import {
     createReportsHistoryController,
@@ -132,11 +131,6 @@ const renderer = createReportsRenderer({
         assetBaseUrl: state.config.assetBaseUrl,
         assetMdBaseUrl: state.config.assetMdBaseUrl,
     }),
-    wrapSlideOpen: (slideKey) => {
-        if (!slideHistoryController) return null;
-        slideHistoryController.pushSlideHistory(slideKey);
-        return slideHistoryController.createSlideOnClose();
-    },
 });
 
 const phase8Renderer = createPhase8Renderer({
@@ -348,30 +342,7 @@ function buildSlideOpenerRegistry() {
     const openers = state._slideOpeners;
     openers.clear();
 
-    // Domain slide openers
-    state.data.reports.forEach((report) => {
-        const id = normalizeDomainId(report?.id);
-        if (!id) return;
-        openers.set(id, async () => {
-            const sources = resolveDomainPresentationSources(report, { lang: state.config.lang });
-            const source = sources[0];
-            if (!source) return;
-            const useJa = normalizeLang(state.config.lang) === 'ja';
-            const label = useJa ? (report.nameJa || report.nameEn) : (report.nameEn || report.nameJa);
-            const title = label || report.id;
-
-            if (source.htmlUrl) {
-                try {
-                    const resp = await fetch(source.htmlUrl, { method: 'HEAD', cache: 'no-store' });
-                    if (resp.ok) {
-                        openRichSlideViewer({ htmlUrl: source.htmlUrl, title, onClose: slideHistoryController.createSlideOnClose() });
-                        return;
-                    }
-                } catch { /* fall through */ }
-            }
-            console.warn('[slide-viewer] rich HTML unavailable for', id);
-        });
-    });
+    // 分野のスライド（今までのプレゼン版）は 2026-11-10 に下げたので、開く部品を置かない（#73）。
 
     // Synthesis slide opener
     openers.set('synthesis', async () => {
