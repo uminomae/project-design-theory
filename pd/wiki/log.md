@@ -394,6 +394,11 @@ compile 実行の履歴。append-only。
 - pages: ノートで直った引用・頁・題・DOI は、多くが 11-09 と 11-10 の fix ですでに写っていた。今回、題を足した（D10 Serhan）、parity principle は 1998 年の本文に無い語だと合わせた（D14）、悲劇の状況 36（D19 Polti）、四語は 1965 年の要約に出る（D22 Tuckman 1965）、直接の検証は 1 篇だけ（D22 Tuckman & Jensen 1977）、SECI の 4 モードはこの論文で定められている（D22 Nonaka）、予測可能性の結論を慎重に（D05）、D07 は工学情報（D07 Schultz）、仏語原文の写しは無い（D25 van Gennep 1909）。ノートに無い引用は、ノートの文に替えるか、引用の形を外して「原文は出典ノートで確かめていない」と書いた（D08・D09 Attwell・D11・D12 Pedigo・D13・D14・D15・D19 Todorov・D30 世阿弥）。読んでいない頁や章を読んだように書いていたところに、ノートの読んだ範囲を書いた（D09 Schultz・D14・D15・D24 James・D30 世阿弥・D30 松木・沼田の参加者の言葉）。「cs 精読ノート: 未生成」などの古い記録を、今のノートへのリンクと読んだ範囲に替えた（D08・D09・D12・D13・D19・D22 ほか）。全部の compiled を今日に
 - 確かめ: ページにある英語の引用 77 件が、すべて今の出典ノートにあることを抜き取って確かめた。ノートに無いだけで食い違っていない説明の文は触っていない
 
+## [2026-11-10] check | 農学・生態学の出典ノート 3 本の直し（#73）
+- scope: 出典ページ 3（確かめだけ。うち 1 は書誌に DOI を足した）
+- sources: `cs/knowledge/source-notes/D12/D12-S03_holling-1973.md`・`D12-S05_stern-1959.md`・`D12-S06_pedigo-1986.md`
+- pages: 出典ノートの直しは、Pedigo の引用の頁（p.345→p.343、p.347→p.344）と、Holling・Stern の DOI だけ。`sources/D12_pedigo_1986_et-al` は頁を書いておらず、`sources/D12_holling_1973_resilience-stability` は DOI を書いていたので、本文を変えずに compiled を今日にした。`sources/D12_stern_1959_integrated-control-concept` は書誌に DOI を足し、compiled を今日にした
+
 ## [2026-11-10] fix | #111 の束 1：出典ページ 10 枚の事実・書誌・DOI の誤りを、一次情報で確かめて直す
 - scope: 出典ページ 10。正本 3（台帳の Ghosh ら 2008 の行・精読ノート 2 本）
 - sources: Crossref（DOI 4 件）、Internet Archive の 1893 年初版（デュルケーム）、手元の原典（Abrikosov 1957 pp.1177–1180、Wiener 第 2 版 p.11、『世阿彌十六部集』の奥付・目次・p.46）、Granovetter 1973 p.1363（スタンフォード大学の授業の頁の写し）、cs の記録（舞台芸術・伝統知・物理・工学）
