@@ -425,13 +425,13 @@ pjdhiro は、この創造の形を、大海と波の像にいちばん近いと
 
 <details><summary>詳しく — 測られたものと、感じたものは、食い違うことがある</summary>
 
-体の内側の感覚については、感じ取りの正確さと、自分の感じ取りへの評価と、その評価が当たっているかの気づきを、別々のものとして分ける研究があります（Garfinkel ら 2015 年）。
+体の内側に注意を向ける訓練を長く積んだ瞑想者でも、自分の心拍を感じ取る課題の成績は、訓練していない人より良くありませんでした。それでも瞑想者は、訓練していない人より、自分の成績を良いと評価し、課題を易しいと感じていました（Khalsa ら 2008 年）。体の内側の感覚については、感じ取りの正確さと、自分の感じ取りへの評価と、その評価が当たっているかの気づきを、別々のものとして分ける研究もあります（Garfinkel ら 2015 年）。
 
 一人称で感じていることと、外から測られることは、いつも重なるとは限りません。二つを照らし合わせる調べ方は、[「意識とは」](https://uminomae.github.io/project-design-theory/as/)で始めたところです。
 
 <!--REF:神経と情動-->
 
-出典：Seth (2013) "Interoceptive inference, emotion, and the embodied self", *Trends in Cognitive Sciences* 17:565（サセックス大学の機関リポジトリにある誌面の PDF で本文照合済。内受容感覚の定義（Craig 2002 を引く）と内受容の推論 p.565、予測とのずれで直す箇所 p.566 の Box 1、図 2 p.568）／Barrett & Simmons (2015) "Interoceptive predictions in the brain", *Nature Reviews Neuroscience* 16:419（本文照合済）／Barrett (2017) "The theory of constructed emotion", *Social Cognitive and Affective Neuroscience* 12:1（PMC5390700 の全文で本文照合済）／Garfinkel ら (2015) "Knowing your own heart", *Biological Psychology* 104:65（サセックス大学の機関リポジトリにある誌面の PDF（CC BY-NC-ND 3.0 の公開）で本文照合済。三つの次元の区別 p.65 の要旨）。
+出典：Seth (2013) "Interoceptive inference, emotion, and the embodied self", *Trends in Cognitive Sciences* 17:565（サセックス大学の機関リポジトリにある誌面の PDF で本文照合済。内受容感覚の定義（Craig 2002 を引く）と内受容の推論 p.565、予測とのずれで直す箇所 p.566 の Box 1、図 2 p.568）／Barrett & Simmons (2015) "Interoceptive predictions in the brain", *Nature Reviews Neuroscience* 16:419（本文照合済）／Barrett (2017) "The theory of constructed emotion", *Social Cognitive and Affective Neuroscience* 12:1（PMC5390700 の全文で本文照合済）／Khalsa ら (2008) "Interoceptive awareness in experienced meditators", *Psychophysiology* 45(4):671（米国国立医学図書館の PMC にある著者稿 PMC2637372 で本文照合済。心拍の検出に群の差が無かったことは要旨と結果の節、成績と難しさの自己評価は結果の節）／Garfinkel ら (2015) "Knowing your own heart", *Biological Psychology* 104:65（サセックス大学の機関リポジトリにある誌面の PDF（CC BY-NC-ND 3.0 の公開）で本文照合済。三つの次元の区別 p.65 の要旨）。
 
 </details>
 

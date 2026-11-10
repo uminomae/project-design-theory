@@ -431,3 +431,8 @@ compile 実行の履歴。append-only。
 - sources: ks の core-definitions.md・トップ（ks/index.html）・knowledge の索引、as の knowledge/README.md・起点メモ・トップ（as/index.html）、pd の awareness-model v3・CN-005/006/008・kesson-bridge.md・調査レポート・site-data.mjs ほか（各ページの source）
 - pages: front matter の `note:` を、正本の path に替えた。本文は今の正本から作り直し、正本で確かめられない記述と、正本（v3 §5）で LLM 構成物とされた枠の上に書かれていた記述（Container の 6 類型・層の番号・脳部位の対応・Klein の分裂と統合の節・精神疾患の表ほか）を外した。概観の 2 枚は今のサイトのトップと knowledge の置き場に合わせ、concept-entity-map は今の concepts・keywords の並びに合わせて、正本に書いてある対応とリンクだけの対応を分けた
 - 仕組み: サイトのトップの HTML を正本にしたので、WL-3 の日付の比べを pd・cs・ks・as の全体に広げ、hook の知らせを .md でないファイルにも出すようにした
+
+## [2026-11-10] check | Love駆動開発の出典を戻した（#110）ときの二ページ
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第三部の畳み「測られたものと、感じたものは、食い違うことがある」に Khalsa ら 2008 の段と出典を戻した）
+- 結果: 二ページとも、この畳みの研究も出典の行も引いていない。直す所は無い。compiled は 2026-11-10 のまま
