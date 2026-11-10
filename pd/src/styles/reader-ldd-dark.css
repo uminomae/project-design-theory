@@ -112,6 +112,7 @@ html.ldd-dark[data-intro~="title"] .ldd-intro__title {
     color: rgba(230, 235, 245, 0.92);
     text-shadow: 0 0 18px rgba(2, 5, 13, 0.9), 0 0 2px rgba(2, 5, 13, 0.9);
 }
+.ldd-intro__title span { display: inline-block; }
 .ldd-intro__title i { font-family: var(--serif-en, "EB Garamond", serif); font-weight: 400; }
 
 /* 下へ促す印（細い縦の線の上を、光が下へ流れる） */
@@ -139,7 +140,8 @@ html.ldd-dark[data-intro~="cue"] .ldd-intro__cue {
 }
 .ldd-intro__cue::before {
     top: 8px; bottom: 8px;
-    background: rgba(200, 212, 240, 0.28);
+    background: rgba(214, 224, 248, 0.42);
+    box-shadow: 0 0 6px rgba(2, 5, 13, 0.8);
 }
 .ldd-intro__cue::after {
     top: 8px;
