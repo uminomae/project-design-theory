@@ -115,48 +115,45 @@ html.ldd-dark[data-intro~="title"] .ldd-intro__title {
 .ldd-intro__title span { display: inline-block; }
 .ldd-intro__title i { font-family: var(--serif-en, "EB Garamond", serif); font-weight: 400; }
 
-/* 下へ促す印（細い縦の線の上を、光が下へ流れる） */
+/* 下へ促す印。創造とはのトップ（cs/?graphic=i）の #scroll-hint に倣う：
+   「scroll」の小さな字と ▾、淡い青白、3 秒でゆっくり 4px 沈む（pjdhiro 2026-11-10「cs/?graphic=i を参考にして」）。
+   値は cs/src/styles/shell-content.css・tokens.css から写した */
 .ldd-intro__cue { display: none; }
 html.ldd-dark[data-intro~="cue"] .ldd-intro__cue {
     display: block;
     position: absolute;
     left: 50%;
-    bottom: 3.5vh;
-    bottom: 3.5svh;
+    bottom: 16px;
     transform: translateX(-50%);
-    width: 44px;
-    height: 64px;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
     pointer-events: auto;
-    color: transparent;
-    font-size: 0;
+    animation: ldd-cue 3s ease-in-out infinite;
 }
-.ldd-intro__cue::before,
-.ldd-intro__cue::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    width: 1px;
-    transform: translateX(-50%);
+.ldd-intro__cue span {
+    display: block;
+    margin-bottom: 4px;
+    font-family: Georgia, "Noto Serif JP", serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    color: rgba(180, 200, 230, 0.3);
+    transition: color 0.3s ease;
 }
-.ldd-intro__cue::before {
-    top: 8px; bottom: 8px;
-    background: rgba(214, 224, 248, 0.42);
-    box-shadow: 0 0 6px rgba(2, 5, 13, 0.8);
+.ldd-intro__cue .ldd-intro__arrow {
+    margin-bottom: 0;
+    font-size: clamp(0.7rem, 3.5vmin, 1.2rem);
+    color: rgba(180, 200, 230, 0.25);
 }
-.ldd-intro__cue::after {
-    top: 8px;
-    height: 16px;
-    background: linear-gradient(rgba(220, 230, 255, 0), rgba(220, 230, 255, 0.95));
-    animation: ldd-cue 2.6s cubic-bezier(0.45, 0, 0.55, 1) infinite;
-}
+.ldd-intro__cue:hover span,
+.ldd-intro__cue:focus-visible span { color: rgba(180, 200, 230, 0.7); }
+.ldd-intro__cue:focus-visible { outline: 2px solid rgba(174, 188, 255, 0.5); outline-offset: 3px; border-radius: 6px; }
 @keyframes ldd-cue {
-    0% { transform: translate(-50%, 0); opacity: 0; }
-    20% { opacity: 1; }
-    80% { opacity: 1; }
-    100% { transform: translate(-50%, 32px); opacity: 0; }
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(4px); }
 }
 @media (prefers-reduced-motion: reduce) {
-    .ldd-intro__cue::after { animation: none; transform: translate(-50%, 16px); }
+    html.ldd-dark[data-intro~="cue"] .ldd-intro__cue { animation: none; }
 }
 
 /* 最初の画面にいるあいだは、目次を出さない（常設の目次・右下のボタン） */

@@ -71,7 +71,7 @@
     <link rel="stylesheet" href="../src/styles/reader.css?v=20261107">
     <link rel="stylesheet" href="../src/styles/reader-flow.css?v=20261109">
     <!-- Love駆動開発だけのダークの見た目（docs/DESIGN-RULES-LDD.md） -->
-    <link rel="stylesheet" href="../src/styles/reader-ldd-dark.css?v=20261110b">
+    <link rel="stylesheet" href="../src/styles/reader-ldd-dark.css?v=20261110c">
     <!-- 最初の画面（背景を全画面で見せる）の形を、描く前に決める（docs/DESIGN-RULES-LDD.md §1） -->
     <script src="../src/ldd-intro.js?v=20261110b"></script>
     <script type="application/ld+json">
@@ -116,7 +116,7 @@
         <!-- 最初の画面：まず背景（膜の渦）を全画面で見せる。形は html の data-intro（docs/DESIGN-RULES-LDD.md §1） -->
         <div class="ldd-intro">
             <p class="ldd-intro__title" aria-hidden="true"><span>Love駆動開発と</span><span>呼びたいもの <i>β</i></span></p>
-            <a class="ldd-intro__cue" href="#ldd-read" aria-label="読み始める">読み始める</a>
+            <a class="ldd-intro__cue" href="#ldd-read" aria-label="読み始める"><span>scroll</span><span class="ldd-intro__arrow" aria-hidden="true">▾</span></a>
         </div>
         <div class="reader-wrap" id="ldd-read">
             <div class="draft-banner">
