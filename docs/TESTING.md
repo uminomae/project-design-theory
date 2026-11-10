@@ -37,7 +37,7 @@
 | cs：照合の記録 | 分野ごとの照合の記録（`cs/evidence/evidence-Dxx-*.md`）の形：frontmatter・文責・一面の表・照合の状態と判定の語・確かめ先・台帳の行・絶対パス・文末。見るものは `docs/cs-review/README.md`「記録の品質の点検」 | 新しく書いた（`scripts/check-cs-evidence.mjs`、2026-11-08・#73。pjdhiro「レビュー時のルールもテストを作っていかないとね」） |
 | as：照合の記録と台帳 | 領域ごとの照合の記録（`as/evidence/evidence-Axx-*.md`）の形：frontmatter・文責・探し方・一面の表・照合の状態と判定の語・確かめ先・絶対パス・文末・本文の記号とパス。原典の台帳（`as/knowledge/raw/manifest.md`）の行の形と、台帳の「使う記録」の行の書誌（第一著者・年・題の頭・DOI）が記録の本文にあるか。画面に出す一覧（`as/evidence/reviewed.json`）の形。見るものは `docs/as-review/README.md`「記録の品質の点検」 | 新しく書いた（`scripts/check-as-evidence.mjs`、2026-11-10・#95。形の元は cs の点検） |
 | cs・as：記録が書いた wiki の誤りの残り（知らせるだけ） | 調査の記録（cs・as の evidence）が「wiki の頁「…」のここが誤り」と書いた行を拾い、行が書かれた時刻（git blame）と、指された頁が最後に変わった時刻（git log）を比べる。頁がそのあと変わっていないものの数を出す。止めない。wiki の古いページの知らせは正本が変わったときにしか出ないので、記録にだけ書かれた誤りを別に拾う。頁が変わったものは、直ったかどうかを目で確かめる（機械では分からない）。一覧は `node scripts/check-evidence-wiki-notes.mjs`。2026-11-10 の数：52 件のうち、変わっていない 29・変わった 21・済みと書いてある 2 | 新しく書いた（`scripts/check-evidence-wiki-notes.mjs`・2026-11-10・#111） |
-| 公開のページと記録（知らせるだけ） | 今は当たりがあるので、落とさずに数を出す三つ。① 読み物（`pd/reader/*.html`）と入口（pd・cs・as・ks の `index.html`）の、読者に見える文字に、今までの repo の名前（project-design・creation-space・awareness-space・kesson-space）が出ていないか。タグ・script・style・URL は外して見る。JavaScript が後から差し込む文字は見ない（`docs/rules/writing.md` §6-3）。② 公開の調査の記録（`cs/evidence/evidence-D*.md`・`as/evidence/evidence-A*.md`）の見出しに、作業の節（照合中・判断が要る・司令塔が直す）が残っていないか（`stance.md` 2-7）。③ 読み物の表のうち、幅に収める囲み（`.tablefit`）が無く、スマートフォンの幅で表の中を横に送る形のもの（`pd/src/styles/reader-flow.css` が `.tablewrap` の表に `min-width: 520px` を付けている。数えるのは HTML の形で、画面の実際のはみ出しではない）。2026-11-10 の数：① 34 か所（7 本）・② 43 節（30 本）・③ 4 表（1 本）。0 になったものは、`scripts/check.sh` の呼び出しに `--strict names`（`sections`・`tables`）を付けて「止める」に上げる | 新しく書いた（`scripts/check-public-notices.mjs`・2026-11-10・#111） |
+| 公開のページと記録（作業の節は止める。ほかは知らせるだけ） | ② は 2026-11-10 に 0 になったので、当たりがあれば落とす（`--strict sections`）。① と ③ は今は当たりがあるので、落とさずに数を出す。① 読み物（`pd/reader/*.html`）と入口（pd・cs・as・ks の `index.html`）の、読者に見える文字に、今までの repo の名前（project-design・creation-space・awareness-space・kesson-space）が出ていないか。タグ・script・style・URL は外して見る。JavaScript が後から差し込む文字は見ない（`docs/rules/writing.md` §6-3）。② 公開の調査の記録（`cs/evidence/evidence-D*.md`・`as/evidence/evidence-A*.md`）の見出しに、作業の節（照合中・判断が要る・司令塔が直す）が残っていないか（`stance.md` 2-7）。③ 読み物の表のうち、幅に収める囲み（`.tablefit`）が無く、スマートフォンの幅で表の中を横に送る形のもの（`pd/src/styles/reader-flow.css` が `.tablewrap` の表に `min-width: 520px` を付けている。数えるのは HTML の形で、画面の実際のはみ出しではない）。2026-11-10 の数：① 34 か所（7 本）・② 43 節（30 本。同じ日に記録から作業の節を外して 0）・③ 4 表（1 本）。0 になったものは、`scripts/check.sh` の呼び出しに `--strict names`（`sections`・`tables`）を付けて「止める」に上げる | 新しく書いた（`scripts/check-public-notices.mjs`・2026-11-10・#111） |
 | cs：原典の台帳と記録の突き合わせ（知らせるだけ） | 記録が「本文照合済」とした原典の台帳の行（その分野で、書誌に第一著者の姓と年がある行）が、読めない状態（`blocked-access`・`citation-only`）のままになっていないか。台帳の行で、2 列目に状態の語が入り列がずれているもの。止めない。著者が欧文の姓と年で書かれていない原典（和書など）は拾えない。2026-11-10 の数：読めない状態のまま 3・列のずれ 28。直ったら `--strict` に上げる | 新しく書いた（`scripts/check-cs-ledger.mjs`・2026-11-10・#111） |
 | 道具：原典を探す find-source | `scripts/find_source.py` の書誌の一行の読み取り・置き場の分類（誰が上げた版か・確認画面のホスト）・判定の段・PDF との突き合わせ（前付けだけ・再録の印・別の題・別の DOI・著者稿）。ネットワークと PDF には触らない。例は cs のレビューで実際に起きた取り違えから取った（2026-11-09） | この repo で新しく書いた（`scripts/test_find_source.py`） |
 
@@ -54,6 +54,10 @@ const { run } = await import('../src/page-check.js'); await run();
 ```
 
 見ること：`<html lang>` と URL の言語、題と言語の切り替えの言葉、その言語の本文だけが見えていること、章と記録の畳みがあること、id が重ならないこと、英語の表示に日本語が残っていないこと、背景の canvas、画像の読み込み、横のはみ出し、本文のサイト内リンクとページ内リンク。もとは kesson-space の E2E のランナー（`?test` で読み込む `ks/tests/e2e-runner.js`）。今のページに無い部品を見ていたので、考え方だけを継いで書き直した。
+
+### 作る・直すたびの点検の表：`.claude/skills/public-page-review/SKILL.md`
+
+公開ページを作る・直すたびに、commit の前と main に送る前に通す表。これまで公開ページで起きた誤り（fix の commit・#111 の束）から項目を取り、各行に起きた commit を添えてある。直しや指摘があったら同じ作業で行を足し、二度目の誤りは機械の検査へ移す。履歴をどこまで読んだかもスキルに書いてある（2026-11-10）。公開ページを含む commit は、`.githooks/pre-commit` が、表を通した印（`bash scripts/public-page-review.sh --done`。今の index の tree の番号と時刻）が無ければ止める。
 
 ### 念入りなレビュー：`docs/rules/review.md`
 

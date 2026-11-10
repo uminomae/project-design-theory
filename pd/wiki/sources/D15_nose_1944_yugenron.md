@@ -45,7 +45,7 @@ review_state: 未レビュー
 - 年: 1944年（序の日付は 1943 年 9 月）
 - 出典: 河出書房
 - access_status: raw-confirmed
-- **全文**: [Wikimedia Commons](https://commons.wikimedia.org/)
+- **全文**: Wikimedia Commons に置かれた PDF（台帳にファイルの URL の記録が無いので、リンクは張っていない）
 
 ## ソース参照（GitHub・検証用）
 

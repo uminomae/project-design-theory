@@ -1,5 +1,7 @@
 # docs/guardian-matrix.md
 
+> 2026-11-10：今までの awareness-space の運用の記録。今は使わない。ここで守る側に挙げた hook と agent は、今は入っていない（根の `docs/harness-pending/`）。今の規約は、repo の根の `CLAUDE.md` と根の `docs/`。中身は書き換えず、履歴として残す（Issue #111）。
+
 `awareness-space` の最低限の守護者マトリクス。
 
 | ID | ルール | 守護対象 |

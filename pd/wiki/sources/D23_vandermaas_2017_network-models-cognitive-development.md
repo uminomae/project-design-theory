@@ -1,7 +1,7 @@
 ---
 title: "認知発達と知能のネットワークモデル"
 description: "van der Maas ら (2017) Journal of Intelligence 論文。認知の『機構』を扱う実験心理学と『個人差』を扱う相関心理学の分断を、ネットワークモデリングで架橋する。知能テスト得点間の正相関（正の多様体）を、脳内の単一実体 g を仮定せず、相互に成長を促進し合う認知過程の相利共生モデルから創発させる。Ising モデルと IRT の等価性を通じ、同一ネットワークが連続的発達と段階的発達の双方を生むことを示す。"
-aliases: ["Network Models for Cognitive Development and Intelligence", "mutualism model", "positive manifold"]
+aliases: ["Network Models for Cognitive Development and Intelligence", "mutualism model", "positive manifold", "D23_van_2017_2017"]
 tags: [source, "D23", "原典解説"]
 source:
   repo: "creation-space"

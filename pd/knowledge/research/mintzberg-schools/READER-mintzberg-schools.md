@@ -1,6 +1,6 @@
 # ミンツバーグの学派を、駆動源と創造の流れで見る
 
-経営学者のヘンリー・ミンツバーグは、戦略がどう形づくられるかについての論を、十の学派（スクール）に分けました。十の学派をまとめた長い論文（1990 年）のほかに、一部の学派に当たる論文も残しています。学派ごとの章を本にする計画もありましたが、多くは書かれないままでした（本人の振り返り、1993 年）。
+経営学者のヘンリー・ミンツバーグは、戦略がどう形づくられるかについての論を、十の学派（スクール）に分けました。本人の 1993 年の振り返りによると、十の学派をまとめた長い論文を 1990 年に書き、学派ごとの章を本にする計画もありましたが、章の多くは書かれないままでした。一部の学派には、当たる論文が残っています。
 
 のちの本『戦略サファリ』（1998 年）は、冒頭にサックスの詩「群盲象を評す」を置いています。目の見えない人たちが、象のそれぞれの部分に触れて、象を言い当てようとする詩です。著者たちは、戦略形成が象で、論じる側が目の見えない人たちだと書いています。
 
@@ -35,9 +35,9 @@
 
 </div>
 
-この並べ方では、十の学派が、場から束まで創造の流れに沿って並びます。最後のコンフィギュレーションは、束がほどけて次の束になるひと回りを見ています。
+このページの並べ方では、十の学派が、場から束まで創造の流れに沿って並びます。最後のコンフィギュレーションは、束がほどけて次の束になるひと回りを見ています。
 
-一方で、ミンツバーグの学派は、名前の付け方がそろっていません。章の副題には、やり方（形式的、分析的）、出どころ（ビジョン）、場所（心の中、集団）、応じ方（環境への反応）、進み方（創発的）、結果（変革）と、違う種類の言葉が並びます。中身も重なっています。たとえば、アントレプレナーとコグニティブは、どちらも一人の頭の中から見ています。ラーニングとエンバイロメントは、どちらも環境に応じる動きを見ています。
+一方で、この表の「どこから、何を見ているか」の列で並べると、学派どうしが重なります。たとえば、アントレプレナーとコグニティブは、どちらも一人の頭の中から見ています。ラーニングとエンバイロメントは、どちらも環境に応じる動きを見ています。
 
 <strong>pjdhiro の感想：</strong>違う言い方としては、同じような視点だが、アントレプレナーという現象から見たか、人の認知という現象を見たか、という対象の違いで分類することでさらに切り分けた、ということで消化できる。
 
@@ -65,9 +65,7 @@
 
 | 定義 | （近い論文から）戦略形成を、環境・リーダーシップ・組織の三つの力の絡み合いとして見る。組織ごとに、三つのうち違う一つが先導しやすい（ミンツバーグとウォーターズ、1983 年）。そのうちの環境の力を見る |
 |---|---|
-| よくある誤解 | 論文からは読み取れない |
 | Love駆動開発の視点で見た解釈 | <strong>区間：</strong>場 → 波。<strong>駆動源：</strong>場の揺らぎという状況。<strong>pjdhiro の感想：</strong>「場の揺らぎという、とある状況が戦略を変えさせる。作らせる。変化させる。」 |
-| 効く条件 | 論文からは読み取れない |
 
 </div>
 
@@ -75,9 +73,8 @@
 
 <div class="tablefit cols-2">
 
-| 定義 | （近い論文から）戦略づくりの型の一つ、適応型。意思決定する人たちの連合が、環境からの圧力に、小さな歩みで応じる（ミンツバーグ、1973 年）。意図した戦略と創発した戦略は、一本の連続体の両端にある（ミンツバーグとウォーターズ、1985 年） |
+| 定義 | （近い論文から）戦略づくりの型の一つ、適応型。はっきりした目標は無く、力を分け合う人たちの連合が、いまある問題に、小さな歩みで応じる（ミンツバーグ、1973 年） |
 |---|---|
-| よくある誤解 | 論文からは読み取れない |
 | Love駆動開発の視点で見た解釈 | <strong>区間：</strong>波 → 縁。<strong>駆動源：</strong>合わないところに感じる違和感。<strong>pjdhiro の感想：</strong>「組織や個人が　気づきのような概念として取り出せる、輪郭を持った何かを切り分ける渦に至るプロセス」 |
 | 効く条件 | 環境が複雑で動きが激しく、組織が既に確立していて、力が分かれているとき（1973 年） |
 
@@ -97,13 +94,12 @@
 
 ### デザイン
 
+🚧 定義とよくある誤解は工事中です。
+
 <div class="tablefit cols-2">
 
-| 定義 | 戦略形成を、外の脅威と機会、内の力との適合を得るための設計と見る。考えるのは最高経営者で、意識的にコントロールされた思考で行う。戦略は、実行の前に完全に形づくられている（ミンツバーグ、1990 年） |
-|---|---|
-| よくある誤解 | <strong>誤解：</strong>強みと弱みは意識して正しく評価できる、戦略ははっきり言葉にしておくべきだ、決めることと実行することは分けられる、と思うこと。<strong>論文では：</strong>この三つを前提ごと問い直している（訂正の中身は本文で確かめていない） |
 | Love駆動開発の視点で見た解釈 | <strong>区間：</strong>波 → 渦。<strong>駆動源：</strong>揺らぎに押されて渦が立ち上がること。<strong>pjdhiro の感想：</strong>「環境や状況という揺らぎの中でピンポイントに着地する場所」 |
-| 効く条件 | 論文からは読み取れない |
+|---|---|
 
 </div>
 
@@ -111,7 +107,7 @@
 
 <div class="tablefit cols-2">
 
-| 定義 | （近い論文から）戦略づくりの型の一つ、起業家型。力のある一人が大胆に決める（ミンツバーグ、1973 年）。起業家にとって戦略は、頭の中にある事業の像。それを生み、変える鍵は、事業についての細かな知識（ミンツバーグとウォーターズ、1983 年） |
+| 定義 | （近い論文から）戦略づくりの型の一つ、起業家型。力は最高経営者の手に集まり、その一人が、不確かさの中で大胆に決める（ミンツバーグ、1973 年）。起業家にとって戦略は、頭の中にある事業の像。それを生み、変える鍵は、事業についての細かな知識（ミンツバーグとウォーターズ、1983 年） |
 |---|---|
 | よくある誤解 | <strong>誤解：</strong>起業家の戦略は、紙に書かれた詳しい計画だと思うこと。<strong>論文では：</strong>多くは頭の中にある事業の像で、だから変えやすい |
 | Love駆動開発の視点で見た解釈 | <strong>区間：</strong>縁 → 渦。<strong>駆動源：</strong>起業家の欲や本能やビジョン。<strong>pjdhiro の感想：</strong>「アントレプレナー学派やエフェクチュエーションは、起業家の心が駆動源でしょうね。欲や本能のような。その背後にあるものを追っているのがLove駆動開発です」 |
@@ -157,9 +153,7 @@ pjdhiro の「創造とは」の五段階で見ると、一人の心の中で、
 
 | 定義 | 戦略の中身を、論理的な類型として扱う。ミンツバーグは、この章を書きながら、戦略の中身の類型を作るのを楽しんだ、と振り返っている（1993 年） |
 |---|---|
-| よくある誤解 | 論文からは読み取れない |
 | Love駆動開発の視点で見た解釈 | <strong>区間：</strong>束の中、場の構造の上。<strong>駆動源：</strong>競争の中で生き残ること |
-| 効く条件 | 論文からは読み取れない |
 
 </div>
 
@@ -167,11 +161,9 @@ pjdhiro の「創造とは」の五段階で見ると、一人の心の中で、
 
 <div class="tablefit cols-2">
 
-| 定義 | （近い論文から）組織の中で影響を及ぼす仕組みの一つ、イデオロギーは、暗黙だが広く受け入れられた規範と信念（ミンツバーグ、1985 年）。戦略の型の一つに、イデオロギー的な戦略がある（ミンツバーグとウォーターズ、1985 年） |
+| 定義 | （近い論文から）組織の中で影響を及ぼす仕組みの一つ、イデオロギーは、暗黙だが広く受け入れられた規範と信念（ミンツバーグ、1985 年） |
 |---|---|
-| よくある誤解 | 論文からは読み取れない |
 | Love駆動開発の視点で見た解釈 | <strong>区間：</strong>束 → 次の場。共有された規範と信念は束で、次の揺らぎの条件にもなる。<strong>駆動源：</strong>一緒にいたい、信じ合いたいという思い |
-| 効く条件 | 論文からは読み取れない |
 
 </div>
 
@@ -183,7 +175,6 @@ pjdhiro の「創造とは」の五段階で見ると、一人の心の中で、
 |---|---|
 | よくある誤解 | <strong>誤解：</strong>設計の要素を、市場で野菜を選ぶように、一つずつ選べると思うこと。<strong>論文では：</strong>要素は互いに筋の通ったまとまりに落ち着く |
 | Love駆動開発の視点で見た解釈 | <strong>区間：</strong>束 → 渦 → 束。<strong>駆動源：</strong>わからない。<strong>pjdhiro の感想：</strong>「コンフィグレーション　はわからない。ミンツバーグもよくわかってないんじゃないかな。」 |
-| 効く条件 | 論文からは読み取れない |
 
 </div>
 
@@ -203,7 +194,7 @@ pjdhiro の「創造とは」の五段階で見ると、決め方と組織と事
 
 <!--REF:経営学-->
 
-出典：Mintzberg (1973) "Strategy-Making in Three Modes", *California Management Review*／Mintzberg & Waters (1983) "The Mind of the Strategist(s)", in S. Srivastva (ed.) *The Executive Mind*, Jossey-Bass／Mintzberg (1984) "A Typology of Organizational Structure", in D. Miller & P. Friesen *Organizations: A Quantum View*, Prentice-Hall／Mintzberg (1985) "The Organization as Political Arena", *Journal of Management Studies* 22(2)／Mintzberg & Waters (1985) "Of Strategies, Deliberate and Emergent", *Strategic Management Journal* 6(3):257／Mintzberg (1990) "The Design School: Reconsidering the Basic Premises of Strategic Management", *Strategic Management Journal* 11(3):171／Mintzberg (1990) "Strategy Formation: Schools of Thought", in J.W. Fredrickson (ed.) *Perspectives on Strategic Management*（存在のみに触れた）／Mintzberg (1991) "Strategic Thinking as 'Seeing'", in J. Näsi (ed.) *Arenas of Strategic Thinking*／Mintzberg (1993) "25 Years Later... The Illusive Strategy", in A.G. Bedeian (ed.) *Management Laureates* Vol. II／Mintzberg (1994) "Rethinking Strategic Planning, Part I・II", *Long Range Planning* 27(3)／Mintzberg, Ahlstrand & Lampel (1998) *Strategy Safari*（冒頭の群盲象のみ）／Saxe "The Blind Men and the Elephant"。創造の五段階は「創造とは」のトップページによる。
+出典（どれも著者のサイト mintzberg.org に置かれた写しで、本文を読んで確かめた）：Mintzberg (1973) "Strategy-Making in Three Modes", *California Management Review* 16(2):44–53（起業家型 p.45・適応型 p.46）／Mintzberg & Waters (1983) "The Mind of the Strategist(s)", in S. Srivastva (ed.) *The Executive Mind*, Jossey-Bass／Mintzberg (1984) "A Typology of Organizational Structure", in D. Miller & P. Friesen *Organizations: A Quantum View*, Prentice-Hall／Mintzberg (1985) "The Organization as Political Arena", *Journal of Management Studies* 22(2):133–154／Mintzberg (1991) "Strategic Thinking as 'Seeing'", in J. Näsi (ed.) *Arenas of Strategic Thinking*／Mintzberg (1993) "25 Years Later... The Illusive Strategy", in A.G. Bedeian (ed.) *Management Laureates* Vol. II／Mintzberg (1994) "Rethinking Strategic Planning, Part I・II", *Long Range Planning* 27(3)。群盲象は、Mintzberg, Ahlstrand & Lampel (1998) *Strategy Safari* の冒頭（独訳の出版社の試し読みで確認）と、Saxe "The Blind Men and the Elephant"（Wikisource）。創造の五段階は「創造とは」のトップページによる。
 
 ## このページについて
 

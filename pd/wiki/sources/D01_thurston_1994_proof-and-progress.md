@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D01_thurston_1994_proof-and-progress.pdf"
   manifest_id: "D01-S04"
-compiled: "2026-04-10"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---
@@ -56,7 +56,7 @@ Thurston が強調する「理解の多層性」（視覚、触覚、位置感�
 
 - 著者: William P. Thurston
 - 年: 1994
-- 出典: Bulletin of the American Mathematical Society, Vol. 30, No. 2, pp. 161–177
+- 出典: Bulletin of the American Mathematical Society, Vol. 30, No. 2, pp. 161–178（Crossref。arXiv 版の記載は 161–177）
 - access_status: raw-confirmed
 - **DOI**: [10.1090/S0273-0979-1994-00502-6](https://doi.org/10.1090/S0273-0979-1994-00502-6)
 - **オープンアクセス**: [PDF](https://arxiv.org/pdf/math/9404236)

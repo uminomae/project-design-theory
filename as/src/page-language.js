@@ -78,6 +78,8 @@ export function applyPageLanguageToDocument(doc, lang) {
     setText(titleH1, strings.title);
     setText(topbarMainTitle, strings.topbarMainTitle);
     setText(topbarCollab, strings.topbarCollab);
+    setText(topbarHomeLink, strings.topbarHomeLabel);
+    setText(topbarCreationLink, strings.topbarCreationLabel);
     setText(footerSignature, strings.creditSignature);
     setText(graphicSwitcherLabel, strings.graphicSwitcherLabel);
     setText(graphicRaijinButton, strings.graphicModeRaijin);

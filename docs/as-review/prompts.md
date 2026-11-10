@@ -10,15 +10,19 @@ as の文献レビュー（`README.md`）で、一つの領域をエージェン
 どの頼む文にも、次の五つを入れる。
 
 - 日本語で作業し、日本語で報告すること（型 Q）。
-- 書いてよい場所（W の記録のファイル一つだけ）。commit と push はしない。手元の絶対パス（/Users/…）を書かない。例外は三つ：取った PDF を R/as/knowledge/raw/ に `Axx_姓_年_題の語.pdf` で保存すること（git の外）、`find-source.sh` が自分で追記する R/.cache/raw/find-ledger.md と find-hosts.tsv。頼む文にこの例外を書く（2026-11-09・A01 で「ほかは書き換えない」と ledger の追記が食い違った）。
+- 書いてよい場所は三つ（正はスキル `find-source`「書いてよい場所」。cs の頼む文も同じ）：W の記録のファイル一つ／`find-source.sh` が自分で追記する、本体の `.cache/raw/find-ledger.md` と `.cache/raw/find-hosts.tsv`／取った原典の PDF（道具の `fetch --out` で本体の `as/knowledge/raw/` に `Axx_姓_年_題の語.pdf` で。道具を通さずに取ったものは `$TMPDIR` の下）。二つ目と三つ目は git の外。commit と push はしない。手元の絶対パス（/Users/…）を記録に書かない。この三つは、雛形の一行目に入れてある（2026-11-09・A01 で「ほかは書き換えない」と ledger の追記が食い違った。2026-11-10 に、例外として頭にだけ書いてあったのを雛形の本文に入れた）。
 - 材料の在りか。
-- 原典の取り方（`sources.md` §5 とスキル `find-source`）。作業用の一時置き場に置き、repo には入れず、取ったものを報告に書く。台帳に足すのは司令塔。
+- 原典の取り方（`sources.md` §5 とスキル `find-source`）。取ったものを報告に書く。原典の台帳（`as/knowledge/raw/manifest.md`）に足すのは司令塔。
 - 支える研究だけを集めないこと。反対の知見と批判を探すこと。
 
 ## 1. 一つの領域
 
 ```
-日本語で作業・報告してください。書いてよいのは {W}/as/evidence/evidence-{Axx}-{slug}.md の一つだけです（新しく作る）。ほかのファイルは書き換えず、commit も push もしないでください。読むのは R＝~/dev/pd/project-design-theory です。手元の絶対パス（/Users/…）は記録に書かず、~/dev/… か repo の相対パスで書いてください。
+日本語で作業・報告してください。読むのは R＝~/dev/pd/project-design-theory です。書いてよい場所は次の三つだけです。ほかのファイルは書き換えず、commit も push もしないでください。
+- 記録：{W}/as/evidence/evidence-{Axx}-{slug}.md（新しく作る）
+- 原典を探す道具（bash scripts/find-source.sh）が自分で追記するもの：台帳 R/.cache/raw/find-ledger.md（--ledger）と、止まるホストの一覧 R/.cache/raw/find-hosts.tsv（--hosts-file）。どちらも git の外です。手で書き換えないでください。
+- 取った原典の PDF：道具の fetch --out で R/as/knowledge/raw/{Axx}_姓_年_題の語.pdf に保存します（git の外。既にある名前に上書きしない）。道具を通さずに取ったものは $TMPDIR の下の自分用のディレクトリに置きます。
+手元の絶対パス（/Users/…）は記録に書かないでください。
 
 ## 背景
 R の as/ は「意識とは」というサイトで、持ち主の pjdhiro は、ここを神経現象学と心理学の研究を足場に組み、自分の体験と擦り合わせていくつもりです。2026-11-09 に見ると、今までの「神経現象学の読み」は旧資料と ChatGPT のレビューを読んだもので、論文の原典に当たっていませんでした。あなたの仕事は、{領域名}（{Axx}）の文献を、研究論文のための文献調査の水準で探し、原典で確かめ、記録を書くことです。

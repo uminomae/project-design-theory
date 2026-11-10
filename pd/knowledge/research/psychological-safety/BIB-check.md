@@ -87,3 +87,12 @@ Sanner & Bunderson 2015（効果量は二次）／Eldor ら 2023（標本は二�
 | 「爬虫類」の語 | 04: 山岸には無い。出所は MacLean → Porges | 00／152: Cook-Greuter 2013 p.9 が防衛を「爬虫類の脳から来るもの（逃走・闘争・凍結）」と「心理的なもの」に分ける（本文照合済） | 山岸ではなく Cook-Greuter（pjdhiro が読んでいる発達段階の資料）に爬虫類の語がある。仰ぐこと 7 の材料 |
 | Higgins の研究 | 02: Higgins ら 2020（教員 17 万人縦断・Taylor 2022 経由） | 00: Higgins et al. 2022（低い安全×高い説明責任が最良・二次） | **未決**。同じ著者の別論文か同一か。原典未読 |
 | 自我発達の段階と防衛の成熟度 | — | 152: Vaillant & McCullough 1987（要旨）＝相関しなかった | 段階と防衛を一本の物差しに溶接しない根拠。READER の段階の章で引く |
+
+## 追記（2026-11-10・Issue #111 の出典の直し）
+
+公開文に載せるのは本文を読めたものだけ（sources §3-3）に合わせ、読み物から、要旨だけ・二次資料だけ・未照合・個人の写しだけで読んだ出典に頼る文を外した。外した文と書誌は Issue #111 のコメントに残した。
+
+- 本文照合済に上げた：Gerlach & Gockel (2022)（出版社 Frontiers の PDF。要旨 p.1：5 か月・自主管理チーム 61・N=236・三回の測定・"PS decreased from project beginning to end"。方法：学生 236 人）／Cesario, Johnson & Eisthen (2020)（著者が PsyArXiv https://osf.io/x83dq に置いた版。p.1："has long been discredited among neurobiologists"）。
+- Grossman (2023) の写しは Zenodo（10.5281/zenodo.7955274。Unpaywall が示した置き場）の著者稿。
+- 外した：Sanner & Bunderson 2015・Eldor ら 2023 とその批判・Anicich ら 2015・教員の縦断研究・Edmondson 1996・Pearsall & Ellis 2011・Kessel ら 2012・Baer & Frese 2003・Koopmann ら 2016・Marlow ら 2025・Vaillant & McCullough 1987・Morrison & Milliken 2000・Detert & Edmondson 2011・Argyris 1990・Janis 1972（個人の写しだけ）・Bion・Menzies 1960・Kahn 1990・Rogers 1954・Edmondson 2004・Edmondson 2018・Clark 2020 への断り書き・提唱者の会社のサイト・山岸 1999 への断り書き・一般向けの記事と実務の記事。
+

@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D13_whitehead_1929_process-and-reality.pdf"
   manifest_id: "D13-S10"
-compiled: "2026-04-10"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---
@@ -58,7 +58,7 @@ review_state: 未レビュー
 - 年: 1929
 - 出典: The Macmillan Company, New York（Gifford Lectures, University of Edinburgh, 1927–28）
 - access_status: raw-confirmed
-- **全文**: [Wikimedia Commons](https://commons.wikimedia.org/)
+- **全文**: Wikimedia Commons に置かれた PDF（台帳にファイルの URL の記録が無いので、リンクは張っていない）
 
 ## ソース参照（GitHub・検証用）
 

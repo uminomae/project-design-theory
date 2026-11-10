@@ -1,5 +1,7 @@
 # creation-space 品質管理
 
+> 2026-11-10：今までの creation-space（2026-03） の運用の記録。今は使わない。今の検査は、根の `docs/TESTING.md` と `docs/cs-review/README.md`「記録の品質の点検」。今の規約は、repo の根の `CLAUDE.md` と根の `docs/`。中身は書き換えず、履歴として残す（Issue #111）。
+
 **バージョン**: 1.0
 **更新日**: 2026-03-15
 
