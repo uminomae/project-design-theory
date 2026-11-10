@@ -515,3 +515,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（畳み「確かめずにつながる安定は、測れるか」「名を当てない相手に近いところまで測った実験」）
 - pages: どちらのページも、この畳みを引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] compile | Love駆動開発の「確かめずにつながる安定は、測れるか」の、聖なる語の実験の段を平易にしたあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（畳み「確かめずにつながる安定は、測れるか」）
+- pages: どちらのページも、この段を引いていないので本文はそのまま。`compiled` は今日のまま
