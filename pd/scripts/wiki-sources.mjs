@@ -161,19 +161,25 @@ export function lastChangeDates() {
   const dates = new Map();
   let out = "";
   try {
-    out = git(["log", `--since=${SINCE}T00:00:00`, "--format=@%cs", "--name-only", "--no-renames", "--",
+    out = git(["log", `--since=${SINCE}T00:00:00`, "--format=@%cs %ct", "--name-only", "--no-renames", "--",
       "pd", "cs", "ks", "as"]);
   } catch { return dates; }
+  // 同じ日のうちの前後を見るため、commit の時刻（秒）も持つ（2026-11-11・#111。compiled は日付だけなので、
+  // 作り直したあとの同じ日に正本が直ると、日付では拾えなかった）
+  const times = new Map();
+  dates.times = times;
   let date = null;
+  let time = 0;
   for (const line of out.split("\n")) {
-    if (line.startsWith("@")) { date = line.slice(1); continue; }
+    if (line.startsWith("@")) { [date, time] = line.slice(1).split(" "); time = Number(time); continue; }
     if (!line || !date) continue;
-    if (!dates.has(line)) dates.set(line, date); // 新しい順に出るので、最初の一つが最後の変更
+    if (!dates.has(line)) { dates.set(line, date); times.set(line, time); } // 新しい順に出るので、最初の一つが最後の変更
   }
   try {
     const t = today();
+    const now = Math.floor(Date.now() / 1000);
     for (const line of git(["status", "--porcelain", "-uall", "--", "pd", "cs", "ks", "as"]).split("\n")) {
-      if (line.length > 3) dates.set(line.slice(3).replace(/^"|"$/g, ""), t);
+      if (line.length > 3) { const f = line.slice(3).replace(/^"|"$/g, ""); dates.set(f, t); times.set(f, now); }
     }
   } catch { /* git が無いときは commit の分だけ */ }
   return dates;
@@ -185,6 +191,16 @@ function dateOf(path, dates) {
   let best = null;
   const prefix = path + "/";
   for (const [p, d] of dates) if (p.startsWith(prefix) && (!best || d > best)) best = d;
+  return best;
+}
+// 最後の変更の時刻（秒）。ディレクトリはその下の最後。分からなければ 0
+function timeOf(path, dates) {
+  const times = dates.times;
+  if (!times) return 0;
+  if (times.has(path)) return times.get(path);
+  let best = 0;
+  const prefix = path + "/";
+  for (const [p, s] of times) if (p.startsWith(prefix) && s > best) best = s;
   return best;
 }
 
@@ -204,6 +220,11 @@ export function stalePages(pages = readWikiPages(), dates = lastChangeDates()) {
         seen.add(path);
         const d = dateOf(path, dates);
         if (d && (!p.compiled || d > p.compiled)) newer.push({ path, date: d });
+        else if (d && d === p.compiled) {
+          // 同じ日：ページの最後の commit より後に出典が変わっていれば古い
+          const pageTime = timeOf(`pd/wiki/${p.rel}`, dates);
+          if (pageTime && timeOf(path, dates) > pageTime) newer.push({ path, date: `${d}（ページを作り直したあと）` });
+        }
       }
     }
     if (newer.length) stale.push({ rel: p.rel, title: p.title, compiled: p.compiled, newer });

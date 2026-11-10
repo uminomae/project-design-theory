@@ -10,7 +10,7 @@ description: pd/wiki/ のページを、今の正本（pd・cs・ks・as の kno
 ## いつ使うか
 
 1. **正本を直して、hook が知らせたとき。** `.claude/hooks/content-compile.sh` が、pd・cs・ks・as のファイルを直すたびに `pd/scripts/wiki-stale-check.mjs` を呼び、そのファイルを出典にする wiki のページを知らせる。知らせを受けたセッションが、**同じ作業で**そのページを作り直し、正本と一緒に commit する。後回しにしない（後回しにした分が、2026-04 から 11 月まで wiki が古いままだった理由）。
-2. **古いページを片付けるとき。** `node pd/scripts/wiki-stale-check.mjs --list`（または `pd/wiki/health/freshness-report.md` の WL-3）が、出典が `compiled` 日より後に変わったページを並べる。
+2. **古いページを片付けるとき。** `node pd/scripts/wiki-stale-check.mjs --list`（または `pd/wiki/health/freshness-report.md` の WL-3）が、出典が `compiled` 日より後に変わったページを並べる。`compiled` と同じ日に出典が変わったときは、ページの最後の commit の時刻と出典の commit の時刻で比べ、ページを作り直したあとに出典が直ったものも並べる（「（ページを作り直したあと）」と出る。2026-11-11・#111 の wiki の直しのセッションの指摘）。
 3. **新しいページを作るとき。** 概念・人物・出典・横断のページ。
 
 作り直すまでもないと確かめたページ（出典の直しが誤字や書式だけ、など）は、本文を変えずに `compiled` を今日にする。`compiled` は「このページを出典と照らした最後の日」で、WL-3 はこの日と出典の commit の日付を比べる。

@@ -75,13 +75,13 @@ const { run } = await import('../src/page-check.js'); await run();
 | `pd/scripts/wiki-cross-check.mjs --all --dry-run` | wiki の出典ページと cs の出典ノートを直したとき | 二つの食い違いの候補。書き出すときは `pd/.cache/` に出る |
 | cs の検査（`cs/scripts/qc-all.sh` ほか） | cs を直したとき | cs の全体のレビューで、今の形に合わせる（`docs/cs-review/README.md` の段 0）。それまではここで扱わない |
 | `NODE_USE_ENV_PROXY=1 node scripts/check-as-evidence.mjs --crossref` | as の領域を回して台帳に行を足したとき | 台帳の DOI を Crossref で引き、題の頭と年が台帳と合うかを見る。年は号とオンラインの公開で違うことがあるので、合わない行は台帳の書誌の注記と見比べる（2026-11-10 に A01 の 18 本で回し、すべて合った） |
-| `NODE_USE_ENV_PROXY=1 node scripts/check-cs-evidence.mjs --crossref` | cs の台帳に DOI のある行を足した・直したとき | 台帳（`cs/knowledge/raw/manifest.md`）の注記にある DOI を Crossref で引き、題の頭と年が台帳の書誌と合うかを見る。注記に DOI が二つあるときは最初のもの（「DOI」の語のあとを先に見る）。2026-11-11 に 191 本で回し、合う 167・合わない・引けない 24（入れ替わった DOI・訳や再刊の DOI・略した題・Crossref に無い DOI。一覧は Issue #111 のコメント）。意識とはの点検 10（台帳の行が記録に出てくるか）は、cs の台帳に記録が使う行を見分ける列が無い（`linked_evidence` は 864 行すべてでその分野の記録を指す）ので入れていない |
+| `NODE_USE_ENV_PROXY=1 node scripts/check-cs-evidence.mjs --crossref` | cs の台帳に DOI のある行を足した・直したとき | 台帳（`cs/knowledge/raw/manifest.md`）の書誌の欄か注記にある DOI を Crossref で引き、題の頭と年が台帳の書誌と合うかを見る。書誌の欄の DOI を先に、注記では「DOI」の語のあとを先に見る。2026-11-11 に回し、題の入れ替わり（D10-S11・S12）と、題が無いか略しすぎた行（7 行）を直した。直したあとは 427 本のうち 19 件が合わないと出るが、どれも誤りではない：版の違い（電子版・再刊・working paper・号とオンラインの年）、Crossref に無い登録先（DataCite・JaLC の DOI）、大文字・記号・Crossref の側の綴り。一覧は Issue #111 のコメント。意識とはの点検 10（台帳の行が記録に出てくるか）は、cs の台帳に記録が使う行を見分ける列が無い（`linked_evidence` は 864 行すべてでその分野の記録を指す）ので入れていない |
 | `bash scripts/find-source.sh check <PDF> --cite "<台帳の書誌の一行>"` | 原典の PDF を手元に足したとき・台帳の行を直したとき | 判定が「合わない」「注意がある」の行を目で見る。画像だけの PDF は「機械では確かめられない」と出るので、表紙を見る。手元の全部に流す形はスキル `find-source`（2026-11-09 に 223 本に流し、版の違い 7 と取り違え 2 が出た） |
 
 ### 自動で動くもの
 
 - `.claude/hooks/content-compile.sh`：公開ページが読む Markdown を書き換えたら、wiki のリンク入りの版を作り直す。pd・cs・ks・as の正本を直したら、それを出典にする wiki のページを Claude に知らせる（`pd/scripts/wiki-stale-check.mjs`・2026-11-10）。知らされたページは、同じ作業で `.claude/skills/wiki-compile/SKILL.md` に沿って作り直す。hook は本体の checkout（`~/dev/pd/project-design-theory`）の版が動く。worktree で hook を直したときは、develop に取り込んでから効く（2026-11-10 に確かめた）。
-- wiki の作り直しの指令：区切るとき、CLAUDE.md「セッションの終わりに」の手順 5 で `node pd/scripts/wiki-stale-check.mjs --session-end` を走らせ、古いページと、出典ノートがあるのに出典ページが無い原典があれば、司令塔として別のセッションに作り直しを出す（`.claude/skills/wiki-compile/SKILL.md` の雛形）。同じ一覧は `.claude/hooks/wiki-session-start.sh`（SessionStart）と `scripts/session-digest.sh` の終わりにも出て、「区切るときに出す」と添える（pjdhiro 2026-11-10）。
+- wiki の作り直しの指令：区切るとき、CLAUDE.md「セッションの終わりに」の手順 5 で `node pd/scripts/wiki-stale-check.mjs --session-end` を走らせ、古いページと、出典ノートがあるのに出典ページが無い原典があれば、司令塔として別のセッションに作り直しを出す（`.claude/skills/wiki-compile/SKILL.md` の雛形）。古いページは、出典が `compiled` 日より後に変わったものと、同じ日にページの最後の commit より後に変わったもの（2026-11-11 から。`compiled` が日付だけで、作り直したあとの同じ日の直しを拾えなかった）。同じ一覧は `.claude/hooks/wiki-session-start.sh`（SessionStart）と `scripts/session-digest.sh` の終わりにも出て、「区切るときに出す」と添える（pjdhiro 2026-11-10）。
 - launchd（`com.uminomae.project-design-theory`）：本体の checkout を `scripts/serve.sh` で 3001 に常駐させる。fswatch があれば、`pd/wiki/` が変わると wiki を組み直す（今までの `wiki-build.sh` の役目）。
 - GitHub Actions：`check.yml`（上の検査）と `pages.yml`（公開）。
 - 定期実行（launchd の定期・routine・scheduled task）は置いていない。
