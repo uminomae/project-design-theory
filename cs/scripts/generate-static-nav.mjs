@@ -149,68 +149,17 @@ async function collectReviewedDomainItems(domainsManifest, warnings) {
 
 async function collectReportGroups(publishRepo, warnings) {
   const manifestDir = join(publishRepo, 'assets', 'creation', 'manifests');
-  const [domains, guides, synthesis, phase8, survey] = await Promise.all([
-    readJson(join(manifestDir, 'domains.json')),
-    readJson(join(manifestDir, 'guides.json')),
-    readJson(join(manifestDir, 'synthesis.json')),
-    readJson(join(manifestDir, 'phase8-themes.json')),
-    readJson(join(manifestDir, 'survey.json')),
-  ]);
-  const link = (relPath, fallbackTitle) => makeReportLink(publishRepo, relPath, warnings, fallbackTitle);
-
-  const guideItems = [];
-  for (const guide of guides.guides || []) {
-    guideItems.push({
-      ja: await link(guide.md?.ja, `創造の5段階モデルの解説（${guide.title_ja}）`),
-      en: await link(guide.md?.en, `Guide to the Five-Stage Model of Creation (${guide.title_en})`),
-    });
-  }
+  const domains = await readJson(join(manifestDir, 'domains.json'));
 
   // 30 分野は、一次情報で確かめ直した記録（cs/evidence/evidence-Dxx-*.md）へ向ける（#73）。今までの報告は
   // 2026-11-10 に日本語を記録への転送にし、英語版を下げたので、pjdhiro の md は読まない。英語の記録は無い。
   // 題は記録の題の「：」の前（分野の名前）。番号（D01 など）は出さない（#73 の J9）。
   const domainItems = await collectReviewedDomainItems(domains, warnings);
 
-  const synthesisItems = [];
-  for (const report of synthesis.reports || []) {
-    synthesisItems.push({ ja: await link(report.md?.ja), en: await link(report.md?.en) });
-  }
-
-  const themeItems = [];
-  for (const theme of phase8.themes || []) {
-    themeItems.push({ ja: await link(theme.md?.ja), en: await link(theme.md?.en) });
-    themeItems.push({ ja: await link(theme.presentation_md?.ja), en: await link(theme.presentation_md?.en) });
-  }
-  themeItems.push({
-    ja: await link(phase8.conclusion_presentation_md?.ja),
-    en: await link(phase8.conclusion_presentation_md?.en),
-  });
-
-  // 5テーマの検証報告は manifest を持たない（src/reports/theme-verification.js が直接参照）。統合レポートを最後に置く
-  const verificationDir = join(publishRepo, 'assets', 'creation', 'phase8-themes', 'ja', 'verification');
-  const verificationFiles = (await readdir(verificationDir))
-    .filter((name) => name.endsWith('.md'))
-    .sort((a, b) => Number(a.includes('integration')) - Number(b.includes('integration')) || a.localeCompare(b));
-  const verificationItems = [];
-  for (const name of verificationFiles) {
-    verificationItems.push({ ja: await link(`phase8-themes/ja/verification/${name}`), en: null });
-  }
-
-  const surveyItems = [];
-  const surveyMd = (survey.files || []).filter((file) => file.format === 'md');
-  for (const file of surveyMd.filter((entry) => entry.lang === 'ja')) {
-    const enPath = file.path.replace('/ja/', '/en/');
-    const hasEn = surveyMd.some((entry) => entry.path === enPath);
-    surveyItems.push({ ja: await link(file.path), en: hasEn ? await link(enPath) : null });
-  }
-
+  // 旧ガイド三本・横断分析・領域横断テーマ・テーマの検証・旧「調査内容」は、照合し直す前の主張のままだったので、
+  // 2026-11-10 に一覧から外した（Issue #111）。照合し直した版を作ったら、その版の組をここに足す。
   return [
-    { headingJa: '創造の5段階モデルの解説', headingEn: 'Guides to the Five-Stage Model', items: guideItems },
     { headingJa: '30領域調査報告', headingEn: '30 Domain Reports', items: domainItems },
-    { headingJa: '30領域横断分析', headingEn: 'Cross-Domain Synthesis', items: synthesisItems },
-    { headingJa: '領域横断テーマ（5テーマ）', headingEn: 'Cross-Domain Themes', items: themeItems },
-    { headingJa: '5テーマの検証', headingEn: 'Theme Verification', items: verificationItems },
-    { headingJa: '調査の状況', headingEn: 'Survey Status', items: surveyItems },
   ].map((group) => ({ ...group, items: group.items.filter((item) => item.ja || item.en) }));
 }
 

@@ -578,6 +578,12 @@ export function openGuideModal(key) {
     const strings = getStrings(state.lang);
     const featureText = strings.features[key];
     const draftMd = getDraftMarkdownOverride(); // CHANGED(2026-11-02): #216
+    // 読者別の旧ガイド（pjdhiro の repo の md と PDF）は、2026-11-10 に読み込みをやめた（Issue #111）。
+    // 下書きの指定（draft-md）があるときだけ開く。
+    if (!draftMd) {
+        console.warn('[guides] 読者別の旧ガイドはしまってあります。下書きを見るときは draft-md を付けます:', key);
+        return;
+    }
     openMarkdownModal({
         mdUrl: draftMd || langLinks.mdUrl,
         title: featureText?.modalTitle || featureText?.title || key,

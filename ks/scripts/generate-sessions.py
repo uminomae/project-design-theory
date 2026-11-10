@@ -5,10 +5,17 @@
 写真フォルダのように振り返るためのデータ。
 
 Usage:
-    python scripts/generate-sessions.py                    # approved repos全部
-    python scripts/generate-sessions.py --repo kesson-space # 指定リポジトリのみ
-    python scripts/generate-sessions.py --since 2026-02-01  # 日付指定
-    python scripts/generate-sessions.py --dry-run           # 書き出さずに標準出力
+    python scripts/generate-sessions.py --dry-run           # 書き出さずに標準出力（まずこれで見る）
+    python scripts/generate-sessions.py --since 2026-11-07  # 日付指定
+    python scripts/generate-sessions.py --repo project-design-theory  # 指定リポジトリのみ
+    python scripts/generate-sessions.py --output /tmp/sessions.json   # 別の場所へ書く
+
+読む先（2026-11-10・Issue #111 の問い 14）：
+    設定（devlog-config.json）の approved_repos に local_path が無ければ、この道具が置かれている
+    repo（project-design-theory）の履歴を読む。pathspec があれば、その下（ks/）の commit だけを読む。
+    別の clone を読ませたいときは、設定に手元の置き場を書かず、--path か環境変数 DEVLOG_REPO_PATH で渡す。
+    今までの kesson-space の履歴は、この repo には無い（中身だけを複製した）。その履歴から作った
+    開発記録は、assets/devlog/sessions.json と content/devlog/ に出来上がりとして残っている。
 """
 
 import subprocess
@@ -54,8 +61,21 @@ def check_approval(repo_name, config, repo_def=None):
     print(f"  ✗ {repo_name} は approved_repos に含まれない。スキップ。", file=sys.stderr)
     return None
 
-def get_git_log(repo_path, since=None):
+def default_repo_path():
+    """この道具が置かれている repo の根。worktree でも動く。"""
+    result = subprocess.run(["git", "-C", str(SCRIPT_DIR), "rev-parse", "--show-toplevel"],
+                            capture_output=True, text=True)
+    if result.returncode == 0 and result.stdout.strip():
+        return result.stdout.strip()
+    return str(PROJECT_ROOT.parent)
+
+def resolve_repo_path(repo_def, cli_path=None):
+    """読む先：--path → 環境変数 DEVLOG_REPO_PATH → 設定の local_path → この repo。"""
+    return cli_path or os.getenv("DEVLOG_REPO_PATH") or repo_def.get("local_path") or default_repo_path()
+
+def get_git_log(repo_path, since=None, pathspec=None):
     repo_path = Path(repo_path).expanduser()
+    # worktree では .git はファイルなので、exists で見る（ディレクトリとは限らない）
     if not (repo_path / ".git").exists():
         print(f"  ✗ .git not found: {repo_path}", file=sys.stderr)
         return []
@@ -63,6 +83,8 @@ def get_git_log(repo_path, since=None):
     cmd = ["git", "-C", str(repo_path), "log", "--format=%H|%aI|%s|%an", "--reverse"]
     if since:
         cmd.append(f"--since={since}")
+    if pathspec:
+        cmd += ["--", pathspec]
 
     result = subprocess.run(cmd, capture_output=True, text=True)
     if result.returncode != 0:
@@ -79,6 +101,8 @@ def get_git_log(repo_path, since=None):
     cmd_stat = ["git", "-C", str(repo_path), "log", "--format=%H", "--numstat", "--reverse"]
     if since:
         cmd_stat.append(f"--since={since}")
+    if pathspec:
+        cmd_stat += ["--", pathspec]
 
     result_stat = subprocess.run(cmd_stat, capture_output=True, text=True)
     if result_stat.returncode == 0:
@@ -179,6 +203,8 @@ def main():
     parser.add_argument("--since", help="開始日 (YYYY-MM-DD)")
     parser.add_argument("--dry-run", action="store_true", help="標準出力のみ")
     parser.add_argument("--output", help="出力先パス")
+    parser.add_argument("--force", action="store_true",
+                        help="出力先に、この道具の形でない開発記録（手で整えた sessions.json）があっても上書きする")
     args = parser.parse_args()
 
     config = load_config()
@@ -215,8 +241,8 @@ def main():
         if "read_log" not in approved.get("permissions", []):
             print(f"  ✗ read_log 権限なし", file=sys.stderr)
             continue
-        repo_path = args.path if args.path else repo_def["local_path"]
-        commits = get_git_log(repo_path, since=args.since)
+        repo_path = resolve_repo_path(repo_def, args.path)
+        commits = get_git_log(repo_path, since=args.since, pathspec=repo_def.get("pathspec"))
         print(f"  コミット数: {len(commits)}", file=sys.stderr)
         if not commits: continue
         sessions = split_sessions(commits, gap_hours)
@@ -232,6 +258,18 @@ def main():
     else:
         output_path = args.output or str(PROJECT_ROOT / config.get("output_path", "assets/devlog/sessions.json"))
         output_path = Path(output_path)
+        # 今の assets/devlog/sessions.json は、今までの履歴から作って手で整えた出来上がり（題・要約・表紙つき）。
+        # この道具の出力（repo・messages を持つ行）とは形が違うので、黙って上書きしない。
+        if output_path.exists() and not args.force:
+            try:
+                existing = json.loads(output_path.read_text(encoding="utf-8"))
+            except (ValueError, OSError):
+                existing = None
+            if isinstance(existing, list) and existing and not all(
+                    isinstance(e, dict) and "repo" in e and "messages" in e for e in existing):
+                print(f"\n✗ {output_path} には、この道具の形でない開発記録があります。上書きしません。", file=sys.stderr)
+                print("  中身を見るなら --dry-run、別の場所へ書くなら --output、上書きするなら --force。", file=sys.stderr)
+                sys.exit(1)
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(output_json, encoding="utf-8")
         print(f"\n✓ {len(all_sessions)} sessions → {output_path}", file=sys.stderr)

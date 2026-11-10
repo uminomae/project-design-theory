@@ -1,5 +1,5 @@
 {
-  "note": "意識とはの文献レビュー（#95）で、原典から照合し直した領域の記録。as のトップに一覧で出し、押すと記録を開く。済んだ領域を一行ずつ足す。name と summary は画面に出す文で、領域の記号を入れない。点検は scripts/check-as-evidence.mjs。",
+  "note": "意識とはの文献レビュー（#95）で、原典から照合し直した領域の記録。as のトップに一覧で出し、押すと記録を開く。済んだ領域を一行ずつ足す。足したら、as/llms.txt の記録の一覧と、as/index.html の noscript の一覧にも一行足す。name と summary は画面に出す文で、領域の記号を入れない。点検は scripts/check-as-evidence.mjs。",
   "updated": "2026-11-10",
   "areas": [
     {

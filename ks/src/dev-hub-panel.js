@@ -7,32 +7,8 @@ const BACKDROP_ID = 'dev-hub-backdrop';
 let panelOpen = false;
 let initialized = false;
 
-const MODAL_LINKS = [
-    {
-        id: 'dev-hub-open-overview',
-        label: 'Meta Overview (Slides)',
-        description: 'Rich slide viewer for meta-overview',
-        action: 'slide-viewer',
-    },
-    {
-        id: 'dev-hub-open-general',
-        label: 'Guide: General',
-        description: 'Markdown modal for general guide',
-        action: 'guide-general',
-    },
-    {
-        id: 'dev-hub-open-designer',
-        label: 'Guide: Designer',
-        description: 'Markdown modal for designer guide',
-        action: 'guide-designer',
-    },
-    {
-        id: 'dev-hub-open-academic',
-        label: 'Guide: Academic',
-        description: 'Markdown modal for academic guide',
-        action: 'guide-academic',
-    },
-];
+// 読者別の旧ガイド三本と全体像のスライドを開く項目は、2026-11-10 に外した（Issue #111）。
+const MODAL_LINKS = [];
 
 const SECTION_LINKS = [
     {
@@ -174,29 +150,6 @@ async function handleAction(action) {
     closePanel();
 
     switch (action) {
-        case 'slide-viewer': {
-            const { openRichSlideViewer } = await import('./slide-viewer.js');
-            openRichSlideViewer({
-                htmlUrl: './content/guides/meta-overview.html',
-                title: '\u6B20\u640D\u99C6\u52D5\u601D\u8003 \u2014 \u5168\u4F53\u50CF',
-            });
-            break;
-        }
-        case 'guide-general': {
-            const { openGuideModal } = await import('./guides.js');
-            openGuideModal('general');
-            break;
-        }
-        case 'guide-designer': {
-            const { openGuideModal } = await import('./guides.js');
-            openGuideModal('designer');
-            break;
-        }
-        case 'guide-academic': {
-            const { openGuideModal } = await import('./guides.js');
-            openGuideModal('academic');
-            break;
-        }
         case 'open-params': {
             // Toggle existing dev panel
             const toggle = document.getElementById('dev-toggle');
