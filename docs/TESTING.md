@@ -34,9 +34,9 @@
 | ks：devlog の移動と深いリンク・日英 | 開発記録のページ送り・深いリンク・日英の対応 | kesson-space の `devlog.yml`・`package.json` |
 | 公開するファイルの文字化け | 公開するページ・データ・読み物の正本に U+FFFD が無い | project-design の `ci.yml` |
 | 道具の呼び出しの文字の紛れ込み | Claude がファイルを書く道具の閉じタグなどの文字（invoke・parameter・content の閉じタグ）が、git に入っている文字のファイルに残っていない（2026-11-10・#111。読み物の正本と精読ノートの終わりに残り、公開ページに出ていた） | 新しく書いた（`scripts/check.sh` の `tool_residue`） |
-| cs：照合の記録 | 分野ごとの照合の記録（`cs/evidence/evidence-Dxx-*.md`）の形：frontmatter・文責・一面の表・照合の状態と判定の語・確かめ先・台帳の行・絶対パス・文末。見るものは `docs/cs-review/README.md`「記録の品質の点検」 | 新しく書いた（`scripts/check-cs-evidence.mjs`、2026-11-08・#73。pjdhiro「レビュー時のルールもテストを作っていかないとね」） |
+| cs：照合の記録 | 分野ごとの照合の記録（`cs/evidence/evidence-Dxx-*.md`）の形：frontmatter・文責・一面の表・照合の状態と判定の語・確かめ先・台帳の行・絶対パス・文末・`未照合（…）` の括弧の頭が `docs/rules/sources.md` §3 の 7 の語か（2026-11-11）。見るものは `docs/cs-review/README.md`「記録の品質の点検」 | 新しく書いた（`scripts/check-cs-evidence.mjs`、2026-11-08・#73。pjdhiro「レビュー時のルールもテストを作っていかないとね」） |
 | cs：現在の定義のページと英語の写し | 創造の5段階の「現在の定義」のページ（`cs/reader/five-stages.html`・`five-stages-en.html`）が、正本 `cs/knowledge/schema/five-stages.md` から生成し直されているか。英語の写し（`five-stages.en.md`）の頭のハッシュが、正本の今の抜き出しと合うか（合わなければ、正本が変わったのに英語を訳し直していない） | 新しく書いた（`cs/scripts/build-five-stages.py --check`・2026-11-10・#73） |
-| as：照合の記録と台帳 | 領域ごとの照合の記録（`as/evidence/evidence-Axx-*.md`）の形：frontmatter・文責・探し方・一面の表・照合の状態と判定の語・確かめ先・絶対パス・文末・本文の記号とパス。原典の台帳（`as/knowledge/raw/manifest.md`）の行の形と、台帳の「使う記録」の行の書誌（第一著者・年・題の頭・DOI）が記録の本文にあるか。画面に出す一覧（`as/evidence/reviewed.json`）の形。見るものは `docs/as-review/README.md`「記録の品質の点検」 | 新しく書いた（`scripts/check-as-evidence.mjs`、2026-11-10・#95。形の元は cs の点検） |
+| as：照合の記録と台帳 | 領域ごとの照合の記録（`as/evidence/evidence-Axx-*.md`）の形：frontmatter・文責・探し方・一面の表・照合の状態と判定の語・確かめ先・絶対パス・文末・本文の記号とパス・`未照合（…）` の括弧の頭が `docs/rules/sources.md` §3 の 7 の語か（記録と台帳。2026-11-11）。原典の台帳（`as/knowledge/raw/manifest.md`）の行の形と、台帳の「使う記録」の行の書誌（第一著者・年・題の頭・DOI）が記録の本文にあるか。画面に出す一覧（`as/evidence/reviewed.json`）の形。見るものは `docs/as-review/README.md`「記録の品質の点検」 | 新しく書いた（`scripts/check-as-evidence.mjs`、2026-11-10・#95。形の元は cs の点検） |
 | cs・as：記録が書いた wiki の誤りの残り（知らせるだけ） | 調査の記録（cs・as の evidence）が「wiki の頁「…」のここが誤り」と書いた行を拾い、行が書かれた時刻（git blame）と、指された頁が最後に変わった時刻（git log）を比べる。頁がそのあと変わっていないものの数を出す。止めない。wiki の古いページの知らせは正本が変わったときにしか出ないので、記録にだけ書かれた誤りを別に拾う。頁が変わったものは、直ったかどうかを目で確かめる（機械では分からない）。一覧は `node scripts/check-evidence-wiki-notes.mjs`。2026-11-10 の数：52 件のうち、変わっていない 29・変わった 21・済みと書いてある 2 | 新しく書いた（`scripts/check-evidence-wiki-notes.mjs`・2026-11-10・#111） |
 | 公開のページと記録（作業の節は止める。ほかは知らせるだけ） | ② は 2026-11-10 に 0 になったので、当たりがあれば落とす（`--strict sections`）。① と ③ は今は当たりがあるので、落とさずに数を出す。① 読み物（`pd/reader/*.html`）と入口（pd・cs・as・ks の `index.html`）の、読者に見える文字に、今までの repo の名前（project-design・creation-space・awareness-space・kesson-space）が出ていないか。タグ・script・style・URL は外して見る。JavaScript が後から差し込む文字は見ない（`docs/rules/writing.md` §6-3）。② 公開の調査の記録（`cs/evidence/evidence-D*.md`・`as/evidence/evidence-A*.md`）の見出しに、作業の節（照合中・判断が要る・司令塔が直す）が残っていないか（`stance.md` 2-7）。③ 読み物の表のうち、幅に収める囲み（`.tablefit`）が無く、スマートフォンの幅で表の中を横に送る形のもの（`pd/src/styles/reader-flow.css` が `.tablewrap` の表に `min-width: 520px` を付けている。数えるのは HTML の形で、画面の実際のはみ出しではない）。2026-11-10 の数：① 34 か所（7 本）・② 43 節（30 本。同じ日に記録から作業の節を外して 0）・③ 4 表（1 本）。0 になったものは、`scripts/check.sh` の呼び出しに `--strict names`（`sections`・`tables`）を付けて「止める」に上げる | 新しく書いた（`scripts/check-public-notices.mjs`・2026-11-10・#111） |
 | cs：原典の台帳と記録の突き合わせ（知らせるだけ） | 記録が「本文照合済」とした原典の台帳の行（その分野で、書誌に第一著者の姓と年がある行）が、読めない状態（`blocked-access`・`citation-only`）のままになっていないか。台帳の行で、2 列目に状態の語が入り列がずれているもの。止めない。著者が欧文の姓と年で書かれていない原典（和書など）は拾えない。2026-11-10 の数：読めない状態のまま 3・列のずれ 28。直ったら `--strict` に上げる | 新しく書いた（`scripts/check-cs-ledger.mjs`・2026-11-10・#111） |
@@ -47,6 +47,8 @@
 ### 画面で確かめる：3001 と `pd/src/page-check.js`
 
 直したら、3001 をアプリのブラウザで開いて見る。日英は `?lang=en` を付けて、スマートフォンは幅を変えて、開き直す。コンソールのエラーも見る。
+
+wiki（Quartz）を手元で組むと、サンドボックスの中では画像の生成（フォントの取得）で止まる。wiki の確かめも 3001 で行う（launchd が `pd/wiki/` の変化で組み直す）（2026-11-10・#111 の wiki の直しのセッション）。
 
 欠損駆動思考（`/ks/`）と意識とは（`/as/`）のトップページは、開いたまま次を回すと、部品・言葉・リンク・横のはみ出しを機械で見られる。見た目の良し悪しは見ない。
 
@@ -73,6 +75,7 @@ const { run } = await import('../src/page-check.js'); await run();
 | `pd/scripts/wiki-cross-check.mjs --all --dry-run` | wiki の出典ページと cs の出典ノートを直したとき | 二つの食い違いの候補。書き出すときは `pd/.cache/` に出る |
 | cs の検査（`cs/scripts/qc-all.sh` ほか） | cs を直したとき | cs の全体のレビューで、今の形に合わせる（`docs/cs-review/README.md` の段 0）。それまではここで扱わない |
 | `NODE_USE_ENV_PROXY=1 node scripts/check-as-evidence.mjs --crossref` | as の領域を回して台帳に行を足したとき | 台帳の DOI を Crossref で引き、題の頭と年が台帳と合うかを見る。年は号とオンラインの公開で違うことがあるので、合わない行は台帳の書誌の注記と見比べる（2026-11-10 に A01 の 18 本で回し、すべて合った） |
+| `NODE_USE_ENV_PROXY=1 node scripts/check-cs-evidence.mjs --crossref` | cs の台帳に DOI のある行を足した・直したとき | 台帳（`cs/knowledge/raw/manifest.md`）の注記にある DOI を Crossref で引き、題の頭と年が台帳の書誌と合うかを見る。注記に DOI が二つあるときは最初のもの（「DOI」の語のあとを先に見る）。2026-11-11 に 191 本で回し、合う 167・合わない・引けない 24（入れ替わった DOI・訳や再刊の DOI・略した題・Crossref に無い DOI。一覧は Issue #111 のコメント）。意識とはの点検 10（台帳の行が記録に出てくるか）は、cs の台帳に記録が使う行を見分ける列が無い（`linked_evidence` は 864 行すべてでその分野の記録を指す）ので入れていない |
 | `bash scripts/find-source.sh check <PDF> --cite "<台帳の書誌の一行>"` | 原典の PDF を手元に足したとき・台帳の行を直したとき | 判定が「合わない」「注意がある」の行を目で見る。画像だけの PDF は「機械では確かめられない」と出るので、表紙を見る。手元の全部に流す形はスキル `find-source`（2026-11-09 に 223 本に流し、版の違い 7 と取り違え 2 が出た） |
 
 ### 自動で動くもの

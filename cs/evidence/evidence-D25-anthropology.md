@@ -39,7 +39,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D25-anthr
 - 2\. ターナー：社会劇の四局面（1957・1974・1980）：未照合（書籍）
 - 4\. ダグラス：汚穢と禁忌（1966）：未照合（書籍）
 - 5\. バルト：民族集団と境界（1969）：未照合（書籍。序章の個人が上げた写しで読んだ）
-- 7\. ルロワ＝グーラン／ルモニエ：操作連鎖（1964–65・1986・1992）：未照合（書籍と有料の論文）
+- 7\. ルロワ＝グーラン／ルモニエ：操作連鎖（1964–65・1986・1992）：未照合（書籍と有料）
 - 10\. ギデンズ／ブルデュー：構造化理論・実践感覚（1984・1980）：未照合（書籍。ブルデューは英訳の個人が上げた写しで読んだ。ギデンズは社会学の記録を参照）
 
 ## 論ごとの節
@@ -289,7 +289,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D25-anthr
 - Lemonnier, P. (1986). The study of material culture today: Toward an anthropology of technical systems. *Journal of Anthropological Archaeology* 5(2), 147–186. DOI 10.1016/0278-4165(86)90012-7（Crossref で書誌だけ確かめた。Elsevier で有料）。
 - Lemonnier, P. (1992). *Elements for an Anthropology of Technology*. Anthropological Papers No. 88, University of Michigan Museum of Anthropology。Fulcrum（https://www.fulcrum.org/concern/monographs/w6634543v ）は機関のログインが要る。ミシガン大学の Deep Blue の検索は応答が読めず、一般の検索でも OA の写しは見つからなかった。
 
-**照合の状態**：未照合（書籍と有料の論文）。1986 年の論文は書誌だけ確かめました。
+**照合の状態**：未照合（書籍と有料）。1986 年の論文は書誌だけ確かめました。
 
 **旧報告から変わったこと**：
 
@@ -312,7 +312,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D25-anthr
 - 英訳：Bourdieu, P. (1990). *The Logic of Practice*. R. Nice 訳. Polity / Stanford UP。archive.org に個人が上げた写し（https://archive.org/details/BOURDIEUPierreTheLogicOfPractice ）の文字の層（djvu.txt）で読んだ。権利は確かめていない。文字の層に柱の頁番号が残っていて、それで頁を控えた。読んだ頁：p.53・p.62・pp.212–213。
 - ブルデュー（1986）「資本の形」は社会学の記録の 6 を参照（有志の文書館の打ち直しで節を読んだので未照合。2026-11-09 の一巡で、社会学が本文照合済から改めた）。
 
-**照合の状態**：未照合（書籍）。ギデンズは未照合（社会学の記録を参照）。ブルデューは英訳の個人が上げた写しで、上の頁を読みました。
+**照合の状態**：未照合（書籍）。ギデンズは未照合（書籍）。社会学の記録を参照。ブルデューは英訳の個人が上げた写しで、上の頁を読みました。
 
 **原典に書いてあること**（英訳 1990 の頁）：
 
@@ -326,7 +326,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D25-anthr
 
 | 旧報告の記述 | 判定 | 重さ | 中身 |
 |---|---|---|---|
-| 日本語版 156 行 ギデンズの構造の二重性 | 未判定 | 中 | 未照合（社会学の記録の 10 と同じ） |
+| 日本語版 156 行 ギデンズの構造の二重性 | 未判定 | 中 | 未照合（書籍）。社会学の記録の 10 と同じ |
 | 日本語版 156 行「ハビトゥスは、社会的構造が身体化された傾向性の体系」 | 一致 | ― | 英訳 p.53 と合う。ただし、読んだのは個人が上げた写しで、照合の状態は未照合（書籍） |
 | 日本語版 156 行「場（field/champ）における実践が構造を再生産しつつ変容させうる」、英語版 159 行「improvisatory responses」 | 未判定 | 低 | 読んだ頁には、ずれから反乱やあきらめが生まれることは書かれている（p.62）。「即興の応答による変容」の箇所は確かめていない |
 | 日本語版 156〜160 行 儀礼は否まれた侵犯、という章に触れていない | 抜け | 中 | pp.212–213 |

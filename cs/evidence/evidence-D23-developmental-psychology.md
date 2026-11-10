@@ -92,7 +92,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D23-devel
 - 露語の原文（1934 年の『思考と言語』ほか）は探していません。
 - Wood, D., Bruner, J. S. & Ross, G. (1976). The role of tutoring in problem solving. *Journal of Child Psychology and Psychiatry* 17(2), 89–100. DOI 10.1111/j.1469-7610.1976.tb00381.x（Crossref で確かめた）。OpenAlex は Wiley の PDF を OA と挙げるが、自動取得に Cloudflare の確認画面（「Just a moment」）を返した。ブラウザでの保存が要る。
 
-**照合の状態**：Vygotsky 1978 第 6 章は本文照合済（訳。教育の公開読本に載った編集した抄録。頁は読本の頁）。Wood ら 1976 は未照合（書誌だけ確かめた）。
+**照合の状態**：Vygotsky 1978 第 6 章は本文照合済（訳。教育の公開読本に載った編集した抄録。頁は読本の頁）。Wood ら 1976 は未照合（書誌だけ）。
 
 **原典に書いてあること**（読本の頁）：
 
@@ -337,7 +337,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D23-devel
 - Luyckx ら (2006)（台帳に行がある）と Luyckx ら (2008)（台帳に行がある）は開けていません。2008 年の論文は、OpenAlex が Ghent 大学の書誌の頁を挙げたが、本文のファイルは置かれていなかった。Marcia (1966)（DOI 10.1037/h0023281）も開けていません。
 - 精読ノート：精読ノート「Nakama 2014」（書誌は 2015 年と書く）。
 
-**照合の状態**：中間ら 2015 は本文照合済。Luyckx ら 2006・2008 は未照合（中間らの論文の中の要約で読んだ。二次経由）。
+**照合の状態**：中間ら 2015 は本文照合済。Luyckx ら 2006・2008 は二次資料のみ（中間ら 2015 の中の要約）。
 
 **原典に書いてあること**（中間ら 2015 の頁）：
 

@@ -74,8 +74,8 @@ status: reviewed
 | 8. ポリヴェーガル理論（Porges 1995・2007・2009・2022） | 理論：迷走神経の二つの枝と、安全・危険・命の危険に応じる三つの系の階層。意識に上らない危険の評価（neuroception） | 理論（比較解剖と系統発生からの推論）。仮説 | 五つの前提が支えられないか、きわめて疑わしい（Grossman 2023）。呼吸性洞性不整脈を迷走神経の緊張と同じに読むことへの批判（Grossman & Taylor 2007） | neuroception は「distinct from perception」、体の反応には「generally aware」 | 二つ・取り違え・信号 | ― | ― | 本文照合済（2009 の著者稿・2022）・要旨照合済（1995・2007） |
 | 9. ポリヴェーガル理論への批判と、Porges の応答（Grossman & Taylor 2007、Grossman 2023・2024、Porges 2023・2025） | 批判：五つの前提を一つずつ文献で検討する。応答：誤解の指摘と、系統発生の議論を発生の順の議論に置き換える | 批判の総説 3 本と、応答の論考 2 本。見送り（争い中） | 批判は「strawman arguments and misrepresentation」に頼る、という応答（Porges 2025） | ― | 信号 | ― | ― | 本文照合済（Grossman 2023 の著者の写し・Porges 2023・2025）・要旨照合済（2 本） |
 | 11. 予期された不確かさと予期されない不確かさ（Yu & Dayan 2005） | 計算論：予測の手がかりの当てにならなさ（予期された不確かさ）と、文脈の急な切り替わり（予期されない不確かさ）を、二つの神経修飾物質に割り当てる | 理論と模擬。仮説（動物の生理と薬理の知見との整合で支える） | 模型は注意の課題の試行の尺度で、ほかの尺度に当てはめる根拠は書かれていない | 「from the perspective of the subject」 | 予測 | ― | ― | 本文照合済（著者のサイトの写し） |
-| 12. ネガティブ・ケイパビリティの語の原典（Keats 1817、Bion 1970） | 一人称の書簡：文学で何かを成す人の質として、不確かさ・神秘・疑いの中にいられることを名づける | 書簡（一人の詩人の記述）。経験則以前の着想 | Bion（1970）は、この語を分析者の規律へ移したとされる（書籍で読めていない） | ― | 耐える | ― | ― | 本文照合済（1891 年版の図書館の走査）・未照合（Bion 1970 の書籍） |
-| 13. ネガティブ・ケイパビリティを研究がどう扱ってきたか（Ujihara ら 2026、Sigler 2019） | 三人称の質問紙：あいまいさへの耐えられなさと、あいまいさへの態度の五つの面。精神分析での受容の章 | 横断の調査 N=380。経験則以前（著者が「hypotheses」と書く） | 語そのものを測る、広く確立した一つの尺度は無く、隣の構成概念で近づくことが多い（著者） | 自己報告の態度と「perceived understanding」 | 耐える | ― | ― | 本文照合済（Ujihara ら）・未照合（Sigler 2019 は有料） |
+| 12. ネガティブ・ケイパビリティの語の原典（Keats 1817、Bion 1970） | 一人称の書簡：文学で何かを成す人の質として、不確かさ・神秘・疑いの中にいられることを名づける | 書簡（一人の詩人の記述）。経験則以前の着想 | Bion（1970）は、この語を分析者の規律へ移したとされる（書籍で読めていない） | ― | 耐える | ― | ― | 本文照合済（1891 年版の図書館の走査）・未照合（書籍。Bion 1970） |
+| 13. ネガティブ・ケイパビリティを研究がどう扱ってきたか（Ujihara ら 2026、Sigler 2019） | 三人称の質問紙：あいまいさへの耐えられなさと、あいまいさへの態度の五つの面。精神分析での受容の章 | 横断の調査 N=380。経験則以前（著者が「hypotheses」と書く） | 語そのものを測る、広く確立した一つの尺度は無く、隣の構成概念で近づくことが多い（著者） | 自己報告の態度と「perceived understanding」 | 耐える | ― | ― | 本文照合済（Ujihara ら）・未照合（有料。Sigler 2019） |
 | 14. あいまいさへの耐性の研究（Furnham & Marks 2013、Hancock & Mattick 2020） | 総説：あいまいさへの耐性の定義と尺度の歴史。系統的レビュー：医学の学生と医師の耐性と心の健康 | 総説、系統的レビュー（671 件から 11 件）。経験則（関連はあるが、研究の質は低い） | 尺度と定義がそろわず、研究の質が低い（Hancock & Mattick 2020） | 「the conscious awareness of ignorance」（Hillen らの定義の紹介） | 耐える | ― | ― | 本文照合済（2 本） |
 
 本文を読めなかった論（2）は、表に並べず、論の数に入れていません。読めた範囲と読めなかった理由は、論ごとの節の最後の「本文を読めなかった論」に書いています。
@@ -377,7 +377,7 @@ status: reviewed
 - Bion, W. R. (1970). *Attention and Interpretation: A Scientific Approach to Insight in Psycho-Analysis and Groups*. London: Tavistock。書籍で、Internet Archive にあるのは 2001 年の刷の貸出だけです。開いていません。
 - 日本語の受容の例として、帚木蓬生（2017）『ネガティブ・ケイパビリティ　答えの出ない事態に耐える力』（朝日選書）を as の資料が挙げていますが、開いていません。
 
-**照合の状態**：本文照合済（キーツの書簡は 1891 年版の図書館の走査、パブリックドメイン）・未照合（Bion 1970 の書籍）。
+**照合の状態**：本文照合済（キーツの書簡は 1891 年版の図書館の走査、パブリックドメイン）・未照合（書籍。Bion 1970）。
 
 **研究の型と厚み**：一人の詩人の手紙の中の着想で、研究ではありません。実証の厚みは当てはまりません。
 
@@ -404,7 +404,7 @@ status: reviewed
 - Ujihara, M., Onashi, T., Suzuki, A., Watanabe, M., Ide, K., Kawase, T., et al. (2026). Negative capability-related dimensions among local government public health nurses in Japan and their associated factors. *Cureus* 18(1), e101208. DOI 10.7759/cureus.101208（Crossref と一致）。読んだ版：出版社の版（CC BY、https://www.cureus.com/articles/451402-negative-capability-related-dimensions-among-local-government-public-health-nurses-in-japan-and-their-associated-factors.pdf ）。手元の PDF。読んだ頁：pp.1–3・8–9。
 - Sigler, D. (2019). Negative capability in psychoanalysis. In *Keats's Negative Capability: New Origins and Afterlives* (pp.216–231). Liverpool University Press. DOI 10.2307/j.ctvhn0df8.22（Crossref と一致）。有料で、OpenAlex も公開の写しを示しませんでした。読んでいません。
 
-**照合の状態**：本文照合済（Ujihara ら 2026、出版社の版）・未照合（Sigler 2019 は有料で読めない）。
+**照合の状態**：本文照合済（Ujihara ら 2026、出版社の版）・未照合（有料。Sigler 2019）。
 
 **研究の型と厚み**：Ujihara ら（2026）は、一度だけの自己報告の横断の調査（380 人）です。関連の大きさは小さめから中ほど（調整済み R² は 0.076〜0.218）で、著者は、結果を確かめるべき仮説として読むよう書いています。厚みは経験則以前です。
 
