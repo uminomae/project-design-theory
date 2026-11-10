@@ -657,3 +657,8 @@ compile 実行の履歴。append-only。
 - sources: `ks/knowledge/schema/core-definitions.md`（欠損を五つの言い方を面として並べる形に・予測との誤差は補足に・脳の瞬間の話と気づける長さの話を分ける）・`ks/knowledge/schema/glossary.md`・`ks/knowledge/text/foundation/phase1-summary.md` と臨床心理の本文（2025 年の下書きだという断りが付いた）
 - pages: `concepts/欠損` を今の中核定義から書き直した（五つの言い方・違和感とゼロ・二つの話の表・前の定義。5類型と記述水準の区別を外した）。`concepts/欠損駆動思考` の頭を今の定義・三つの要素・前の定義に書き直し、2025 年のまとめのループと四象限は「前の定義」の段で触れるだけにした。`concepts/抱持` の定義の関係図の欠損の行、`concepts/情動の構成` の見直しの断り、`cross-refs/concept-entity-map` の 5類型の行に注を足した。`concepts/感情処理` は欠損の定義を引いていないので本文はそのまま
 - pages: 正本が公開面で使わないとした旧い定義の語（棄却される誤差）を、`concepts/デザイン思考（PD）`・`concepts/信頼`・`keywords/` の 4 ページ・`sources/` の 5 ページから外し、今の定義の言い方に替えた（正本が旧い定義のままの `sources/pd/` の 2 ページは「当時の定義の言い方」と添えた）。`sources/Friston_2010` の「欠損は FEP の予測誤差に直接対応」を、正本の置き方（欠損そのものでなく参照枠）に直した。語だけを直したページの compiled は進めていない
+
+## [2026-11-11] update | 欠損駆動思考の概観を、欠損の定義の言い直しに合わせる
+- scope: 横断ページ 1
+- sources: `ks/knowledge/schema/core-definitions.md`（欠損を五つの言い方を面として並べる形に）
+- pages: `cross-refs/kesson-space-overview` の中核定義の表の欠損の行と、サイトと knowledge の言い方の違いの表の欠損の行を今の正本に合わせた（このページの compiled は正本の直しより前で、道具は同じ日の直しを拾わない）
