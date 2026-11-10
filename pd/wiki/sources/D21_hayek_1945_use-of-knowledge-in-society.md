@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D21_hayek_1945_use-of-knowledge-in-society.pdf"
   manifest_id: "D21-S04"
-compiled: "2026-04-08"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---
@@ -45,7 +45,6 @@ review_state: 未レビュー
 - 年: 1945
 - 出典: American Economic Review, Vol. XXXV, No. 4, September 1945, pp. 519-530
 - access_status: raw-confirmed
-- **DOI**: [10.1257/aer.35.4.519](https://doi.org/10.1257/aer.35.4.519)
 
 ## ソース参照（GitHub・検証用）
 

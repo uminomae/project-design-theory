@@ -398,3 +398,9 @@ compile 実行の履歴。append-only。
 - scope: 出典ページ 3（確かめだけ。うち 1 は書誌に DOI を足した）
 - sources: `cs/knowledge/source-notes/D12/D12-S03_holling-1973.md`・`D12-S05_stern-1959.md`・`D12-S06_pedigo-1986.md`
 - pages: 出典ノートの直しは、Pedigo の引用の頁（p.345→p.343、p.347→p.344）と、Holling・Stern の DOI だけ。`sources/D12_pedigo_1986_et-al` は頁を書いておらず、`sources/D12_holling_1973_resilience-stability` は DOI を書いていたので、本文を変えずに compiled を今日にした。`sources/D12_stern_1959_integrated-control-concept` は書誌に DOI を足し、compiled を今日にした
+
+## [2026-11-10] fix | #111 の束 1：出典ページ 10 枚の事実・書誌・DOI の誤りを、一次情報で確かめて直す
+- scope: 出典ページ 10。正本 3（台帳の Ghosh ら 2008 の行・精読ノート 2 本）
+- sources: Crossref（DOI 4 件）、Internet Archive の 1893 年初版（デュルケーム）、手元の原典（Abrikosov 1957 pp.1177–1180、Wiener 第 2 版 p.11、『世阿彌十六部集』の奥付・目次・p.46）、Granovetter 1973 p.1363（スタンフォード大学の授業の頁の写し）、cs の記録（舞台芸術・伝統知・物理・工学）
+- pages: `D18_durkheim_1893`（「パリ大学教授として」→ 初版の扉はボルドー大学文学部の社会科学の講義の担当）。`D21_hayek_1945`（存在しない DOI を外した）。`Coan_2015`（DOI を 10.1016/j.copsyc.2014.12.021 に）。`D21_deco_2008`（著者は Ghosh・Rho・McIntosh・Kötter・Jirsa。Deco は著者でない。台帳と精読ノートも直した。ファイル名はそのまま）。`D28_zeami_classics`（「上下二冊」→ 一冊・1909 年。構成を目次の並びに。『花鏡』は「覺習條々」の題）。`D30_zeami_classics`（「一座」をその場の全員とする定義を外し、原文は定義していないと書いた）。`D18_granovetter_1973`（「数理で証明」→ 誇張の仮定とその帰結）。`D02_abrikosov_1957`（三角格子 → この論文は上部臨界磁場の近くで正方格子。hc/2e を外した。精読ノートの β の値も直した）。`D07_wiener_1948`（「ネゲントロピーである」の引用を外し、p.11 の書き方に）。`D07_heylighen_2025`（書誌の行の年を 2026 に）
+- 直していない: `D30_zeami_classics` の題と「場の共創」の読み（読みの採否）。`D28_zeami_classics` の「見所同心」「守・破・離」（原典の箇所を確かめられていない）。#111 に残した
