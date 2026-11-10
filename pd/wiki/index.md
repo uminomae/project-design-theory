@@ -156,7 +156,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D06_tumlinson_2017_tumlinson-peeples-werk-2017|周銀河媒質（Circumgalactic Medium）— 銀河進化の鍵を握る多相ガス領域]]
 - [[sources/D06_white_1978_white-rees-1978-core|重いハロにおけるコア凝縮 — 銀河形成と階層的クラスタリングの 2 段階理論]]
 
-#### D07 工学・情報科学 (11件)
+#### D07 工学・情報科学 (12件)
 - [[sources/D07_ashby_1956_ashby-1956-an-introduction|サイバネティクス入門 — Ashby]]
 - [[sources/D07_candes-romberg-tao_2006_robust-uncertainty|ロバスト不確実性原理――疎な信号のフーリエサンプルからの完全再構成]]
 - [[sources/D07_diffie-hellman_1976_new-directions-cryptography|暗号の新方向]]
@@ -167,6 +167,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D07_rumelhart-hinton-williams_1986_backpropagation|誤差逆伝播法による表現学習]]
 - [[sources/D07_schultz_1997_schultz-dayan-montague-1997|予測と報酬の神経基盤（D07 文脈）— ドーパミン予測誤差]]
 - [[sources/D07_shannon_1948_mathematical-theory-communication|通信の数学的理論]]
+- [[sources/D07_strogatz_2001_exploring-complex-networks|複雑ネットワークの探究（Strogatz 2001・工学と情報の角度）]]
 - [[sources/D07_wiener_1948_cybernetics|サイバネティクス——動物と機械における制御と通信]]
 
 #### D08 神経科学 (10件)
@@ -233,22 +234,26 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D12_stern_1959_integrated-control-concept|総合的防除の概念]]
 - [[sources/D12_walker_2004_2004|社会生態システムにおけるレジリエンス・適応性・変革可能性（Walker et al. 2004）]]
 
-#### D13 哲学 (6件)
+#### D13 哲学 (8件)
 - [[sources/D13_deleuze_1966_1966-2001|ジルベール・シモンドン論（Deleuze, Review of Simondon 1966）]]
 - [[sources/D13_dewey_1910_how-we-think|思考の方法（1910年版）]]
 - [[sources/D13_dewey_1929_quest-for-certainty|確実性の探求]]
 - [[sources/D13_dewey_1934_art-as-experience|経験としての芸術（探究・思考論の観点）]]
+- [[sources/D13_james_1890_principles-of-psychology-vol1|心理学原理 第 1 巻（James 1890）]]
+- [[sources/D13_peirce_1923_chance-love-and-logic|偶然・愛・論理（Peirce 1923・Cohen 編）]]
 - [[sources/D13_varela-maturana-uribe_1974_autopoiesis|オートポイエーシス — 生命システムの組織、その特徴づけとモデル（Varela, Maturana & Uribe 1974）]]
 - [[sources/D13_whitehead_1929_process-and-reality|過程と実在]]
 
-#### D14 心理学 (7件)
+#### D14 心理学 (9件)
 - [[sources/D14_bargh_1999_chartrand-t-l|存在の耐え難い自動性]]
 - [[sources/D14_clark_1998_chalmers-d|拡張された心 — Clark & Chalmers]]
+- [[sources/D14_dewey_1910_how-we-think-reflective-thought|思考の方法：反省的思考とは何か（Dewey 1910・心理学の角度）]]
 - [[sources/D14_dietrich_2004_cognitive-neuroscience-of-creativity|創造性の認知神経科学 — 4類型の神経回路モデル]]
 - [[sources/D14_ericsson_1993_tesch-romer-c|熟達の獲得における意図的練習の役割 — 10 年ルール]]
 - [[sources/D14_hesse_2014_self-organized-criticality-as|神経系の基本特性としての自己組織化臨界性]]
 - [[sources/D14_maslow_1943_1943|人間の動機の理論 — 欲求階層]]
 - [[sources/D14_varela_1991_embodied-mind|身体化された心（The Embodied Mind）]]
+- [[sources/D14_wallas_1926_art-of-thought|思考の技法（Wallas 1926）]]
 
 #### D15 美学 (9件)
 - [[sources/D15_botella_2018_what-are-the-stages|創造プロセスの段階とは何か — 視覚芸術学生の声から]]
@@ -356,14 +361,16 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D23_vandermaas_2017_network-models-cognitive-development|認知発達と知能のネットワークモデル]]
 - [[sources/D23_vangeert_1998_piaget-vygotsky-beyond-dst|基本的発達メカニズムの動的システムモデル — ピアジェ・ヴィゴツキーを超えて]]
 
-#### D24 宗教学 (7件)
+#### D24 宗教学 (9件)
 - [[sources/D24_berkovichohana_2014_the-consciousness-state-space|意識状態空間（CSS）— 意識と自己の統合モデル]]
+- [[sources/D24_bucke_1901_cosmic-consciousness|宇宙意識：人の心の進化の研究（Bucke 1901）]]
 - [[sources/D24_dimarzio_2020_people-trapped-inside-shincheonji|「新天地に囚われた人々」：脱プログラミングの暗い面の放映]]
 - [[sources/D24_james_1902_varieties-of-religious-experience|宗教的経験の諸相]]
 - [[sources/D24_otto_1917_idea-of-the-holy|聖なるもの — ヌミノーゼと mysterium tremendum]]
 - [[sources/D24_pew_2025_religious-switching-reports|世界の宗教スイッチング（Pew Research Center 2025）]]
 - [[sources/D24_suzuki_1935_manual-of-zen-buddhism|禅仏教提要]]
 - [[sources/D24_teresa_1921_interior-castle|内なる城]]
+- [[sources/D24_underhill_1911_mysticism|神秘主義：人の霊的な意識の性質と発達の研究（Underhill 1911）]]
 
 #### D25 人類学 (7件)
 - [[sources/D25_barth_1969_ethnic-groups-intro|民族集団と境界（序論）]]
