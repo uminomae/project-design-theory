@@ -20,6 +20,8 @@
     }
     var ih = parseFloat(q.get('ih'));
     if (ih >= 40 && ih <= 100) html.style.setProperty('--ldd-intro-h', ih);
+    // 開いた直後は最初の画面にいるとみなす（目次が一瞬出てから消えないように）。スクロールの位置を戻したときは ready() で直す
+    if (html.hasAttribute('data-intro') && !location.hash) html.classList.add('ldd-at-intro');
 
     function ready() {
         var intro = document.querySelector('.ldd-intro');

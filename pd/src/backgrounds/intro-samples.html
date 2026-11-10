@@ -24,15 +24,17 @@
         .note { font-size: 0.85rem; color: #9aa4bd; margin: 0 0 14px; min-height: 1.7em; }
         .note a { color: #c9b98f; margin-left: 0.6em; }
         .row { display: flex; gap: 16px; align-items: flex-start; }
+        .row > .col-wide { flex: 1 1 auto; min-width: 0; }
+        .row > .col-phone { flex: 0 0 320px; }
         .frame { position: relative; border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 10px; overflow: hidden; background: #000; }
         .frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-        .wide { flex: 1 1 auto; aspect-ratio: 16 / 10; }
-        .phone { flex: 0 0 300px; aspect-ratio: 375 / 760; border-radius: 22px; }
+        .wide { width: 100%; aspect-ratio: 16 / 10; }
+        .phone { width: 100%; aspect-ratio: 375 / 760; border-radius: 22px; }
         .cap { font-size: 0.75rem; color: #8e98b2; margin: 4px 2px 0; }
         @media (max-width: 760px) {
             .row { flex-direction: column; }
-            .wide { width: 100%; }
-            .phone { flex: none; width: min(300px, 100%); }
+            .row > .col-wide, .row > .col-phone { flex: none; width: 100%; }
+            .row > .col-phone { max-width: 320px; }
         }
     </style>
 </head>
@@ -49,11 +51,11 @@
     </div>
     <p class="note" id="note"></p>
     <div class="row">
-        <div>
-            <div class="frame wide" style="width: min(100%, 1040px)"><iframe id="f-wide" title="広い画面"></iframe></div>
-            <p class="cap">広い画面（枠の中は縮めて見せている。実際の大きさは「全画面で開く」から）</p>
+        <div class="col-wide">
+            <div class="frame wide"><iframe id="f-wide" title="広い画面"></iframe></div>
+            <p class="cap">広い画面（枠の幅で描いている。実際の大きさは「全画面で開く」から）</p>
         </div>
-        <div>
+        <div class="col-phone">
             <div class="frame phone"><iframe id="f-phone" title="スマートフォンの幅"></iframe></div>
             <p class="cap">スマートフォンの幅</p>
         </div>
