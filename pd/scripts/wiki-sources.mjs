@@ -162,7 +162,7 @@ export function lastChangeDates() {
   let out = "";
   try {
     out = git(["log", `--since=${SINCE}T00:00:00`, "--format=@%cs", "--name-only", "--no-renames", "--",
-      "pd", "cs/knowledge", "ks/knowledge", "as/knowledge"]);
+      "pd", "cs", "ks", "as"]);
   } catch { return dates; }
   let date = null;
   for (const line of out.split("\n")) {
