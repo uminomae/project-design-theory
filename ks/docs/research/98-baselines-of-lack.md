@@ -6,7 +6,7 @@ Issue #98（親 #97 の一つ目）の調べの記録。2026-11-10。
 
 - 問い：欠けは、何からのずれとして感じられるのか。基準は一つでなく、多種類ありうる。あわせて、好奇心そのものが何に駆動されているかも見る。
 - 候補七つ（予想・つながりの安定・体の恒常性・あるべき姿・美や善・欠けそのものを愛の側に置く系・好奇心の駆動）ごとに、文献を一次情報で当たり、「近い」と「違う」を両方書いた。どれが近いかは決めていない（決めるのは pjdhiro）。
-- 当たった文献は 28 件（二つの候補で使ったものは一つと数えた）。本文照合済 18（うち、兄弟の探究の照合を流用したもの 6）、要旨照合済 5、二次資料のみ 2、未照合 3。照合の状態は一件ずつ下に書いた。（2026-11-10 の書き足し：pjdhiro が保存した Barrett & Simmons 2015・Fredrickson 2001 を読み、数を直した。#101）
+- 当たった文献は 28 件（二つの候補で使ったものは一つと数えた）。本文照合済 18（うち、兄弟の探究の照合を流用したもの 6）、要旨照合済 5、二次資料のみ 2、未照合 3。照合の状態は一件ずつ下に書いた。（2026-11-10 の書き足し：pjdhiro が保存した Barrett & Simmons 2015・Fredrickson 2001 を読み、数を直した。#101）（2026-11-11 の書き足し：Cannon 1929 を #106 で読み、本文照合済が一つ増え、未照合が一つ減った。#106）
 - 調べる中で、候補の中に、もう一段細かい基準が見つかった：目指すもの（投企）に照らして初めて欠けになる（サルトル）、処理の流れやすさの見込み（Reber ら）、知識の参照点（Loewenstein）、動く設定点（Sterling のアロスタシス）。ほかに、考えどうしの一貫性（Festinger）を候補として足したが、原典は読めていない。
 - 自動で取れなかった原典は、#98 のコメントに保存先の表を置いた。
 
@@ -31,7 +31,7 @@ Issue #98（親 #97 の一つ目）の調べの記録。2026-11-10。
 |---|---|---|
 | 予想 | Seth 2013・Barrett & Simmons 2015・Friston 2010 | 本文照合済 3（うち流用 1） |
 | つながりの安定 | Sroufe & Waters 1977・Ainsworth & Bowlby 1991・Mikulincer & Shaver 2020・Coan & Sbarra 2015・Winnicott 1960 | 本文照合済 4（うち流用 3）・要旨照合済 1 |
-| 体の恒常性 | Cannon 1929・Sterling 2012・Stephan ら 2016・Damasio & Carvalho 2013 | 本文照合済 1・要旨照合済 2・未照合 1 |
+| 体の恒常性 | Cannon 1929・Sterling 2012・Stephan ら 2016・Damasio & Carvalho 2013 | 本文照合済 2・要旨照合済 2（2026-11-11 に Cannon 1929 を本文照合済にした・#106） |
 | あるべき姿 | Higgins 1987・Carver & Scheier 1990・Festinger 1957 | 本文照合済 1・未照合 2 |
 | 美や善 | Haidt 2001・Reber ら 2004・Van de Cruys & Wagemans 2011・スピノザ『エチカ』・プラトン『饗宴』のディオティマ | 本文照合済 5（うち流用 1） |
 | 欠けそのものを愛の側に置く系 | プラトン『饗宴』のソクラテス・初転法輪経の渇愛・サルトル『存在と無』・ラカン | 本文照合済 2（流用）・二次資料のみ 2 |
@@ -78,7 +78,7 @@ Issue #98（親 #97 の一つ目）の調べの記録。2026-11-10。
 
 | 文献 | 照合の状態・確かめ先 | 鍵の文（頁） |
 |---|---|---|
-| Cannon, W. B. (1929). Organization for physiological homeostasis. *Physiological Reviews* 9(3), 399–431. DOI 10.1152/physrev.1929.9.3.399 | 未照合（出版社の PDF は確認画面で止まった。#98 の保存の表へ） | — |
+| Cannon, W. B. (1929). Organization for physiological homeostasis. *Physiological Reviews* 9(3), 399–431. DOI 10.1152/physrev.1929.9.3.399 | 本文照合済（2026-11-11・#106 で読んだ。本体の `.cache/raw/issue98/` に保存されていた出版社の誌面の PDF。誌面の頁） | 調整は乱れを "within narrow limits" に保つ（p.400）。"Homeo" は "admits some variation"（p.401）。情動は、調整を乱すもの・闘いへの備えとしてだけ出る（pp.411・423）。詳しくは `106-homeostasis-biochemistry-and-vortices.md` の論 1 |
 | Sterling, P. (2012). Allostasis: a model of predictive regulation. *Physiology & Behavior* 106, 5–15. DOI 10.1016/j.physbeh.2011.06.004 | 要旨照合済（PubMed 21684297 の著者の要旨） | ホメオスタシスの前提は "flawed: the goal of regulation is not to preserve constancy of the internal milieu"。アロスタシスは "anticipating needs and preparing to satisfy them before they arise" |
 | Stephan, K. E., Manjaly, Z. M., Mathys, C. D., ら (2016). Allostatic self-efficacy: a metacognitive theory of dyshomeostasis-induced fatigue and depression. *Frontiers in Human Neuroscience* 10, 550. DOI 10.3389/fnhum.2016.00550 | 本文照合済（出版社の OA の PDF。CC BY） | 恒常性の乱れを "chronically enhanced surprise about bodily signals" と定義し、アロスタシスを "a change in prior beliefs or predictions which define setpoints for homeostatic reflex arcs" とする（p.1 要旨）。調整が予測誤差を減らせないと気づくことが "fatigue as a subjective feeling" として現れうる（本文） |
 | Damasio, A., & Carvalho, G. B. (2013). The nature of feelings: evolutionary and neurobiological origins. *Nature Reviews Neuroscience* 14, 143–152. DOI 10.1038/nrn3403 | 要旨照合済（PubMed 23329161） | "Feelings are mental experiences of body states." 生理的な必要（空腹）・傷（痛み）・脅威（恐れや怒り）、そして社会的なやりとり（思いやり・感謝・愛）を知らせる |
@@ -175,7 +175,7 @@ Issue #98（親 #97 の一つ目）の調べの記録。2026-11-10。
 
 #98 のコメントに、開く場所と保存名の表を置いた（2026-11-10）。そのあと pjdhiro の判断で、有料のもの（Carver & Scheier 1990・Mikulincer 1997・Elliot & Reis 2003・Damasio & Carvalho 2013・Sterling 2012・Winnicott 1960 の全集）は参考にしないことにし、保存を頼むのは、無料なのに自動では取れなかった 4 件（Cannon 1929・Barrett & Simmons 2015・Fredrickson 2001・Festinger 1957）だけにした。
 
-2026-11-10（#101 のセッション）：本体の `.cache/raw/issue98/` に保存された Barrett & Simmons 2015・Fredrickson 2001 を読み、上の 1 と 7 に「近い／違う」を書き足し、照合の状態を本文照合済にした。Cannon 1929・Festinger 1957 は、まだ保存されていない（保存されたら、3 と 4 に書き足す）。
+2026-11-10（#101 のセッション）：本体の `.cache/raw/issue98/` に保存された Barrett & Simmons 2015・Fredrickson 2001 を読み、上の 1 と 7 に「近い／違う」を書き足し、照合の状態を本文照合済にした。Cannon 1929・Festinger 1957 は、まだ保存されていない（保存されたら、3 と 4 に書き足す）。2026-11-11（#106 のセッション）：Cannon 1929 は `.cache/raw/issue98/` に保存されていたので読み、3 の照合の状態を本文照合済にした。Festinger 1957 は、まだ。
 
 ## pjdhiro の判断（2026-11-10・結果のページへのコメント・原文）
 
