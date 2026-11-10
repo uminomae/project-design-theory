@@ -2,7 +2,7 @@
 file_id: EV-A09
 area_id: A09
 title: 信号の分け方
-last_updated: 2026-11-10
+last_updated: 2026-11-11
 status: reviewed
 ---
 
@@ -109,7 +109,7 @@ status: reviewed
 - Cannon は、恐れと「flight」、怒りと「fighting」の結びつきを、McDougall の説として紹介しています：「the emotion of fear is associated with the instinct for flight, and the emotion of anger or rage with the instinct for fighting or attack」（p.187）。
 - 血糖の上昇は「the strenuous muscular efforts involved in flight or conflict or struggle to be free」に役立つ、と書きます（p.194）。
 - 恐れと怒りについて：「These two emotions are not unlike」（p.275）。二つの情動の内臓の変化に目立つ違いは無く、どちらも「flight or conflict」に向かうので「the bodily needs in either response are precisely the same」（p.277）。
-- 交感神経は、恐れ・怒り・痛みだけでなく、「joy and sorrow and disgust」のようなふだんは穏やかな情動でも、強くなれば働く、と書きます（p.277）。
+- 交感神経は、恐れ・怒り・痛みだけでなく、「joy and sorrow and disgust」のようなふだんは穏やかな情動でも、強くなれば働く、と書きます（pp.277–278。「when they become sufficiently intense」は p.278）。
 - 消化を支える働きと、闘いに備える働きは拮抗し、食べ物の喜びは「naught in the presence of anger or great anxiety」と書きます（p.270）。
 - Bracha は、段の並びを「freeze, flight, fight, fright, faint」と書き、逃げることが闘うことより先に来るので「"flight or fight" would have been a more accurate term than the original term coined by Cannon in 1929」と書きます（pp.679–680）。
 - Kozlowska ら：「flight or fight is an active defense response for dealing with threat; freezing is a flight-or-fight response put on hold; tonic immobility and collapsed immobility are responses of last resort to inescapable threat」（要旨）。それぞれの反応は「a distinctive neural pattern mediated by a common neural pathway」を持つ、と書きます（同）。
@@ -617,7 +617,7 @@ status: reviewed
 - Rozin ら（2009）：嫌悪は哺乳類の苦い味を拒む系から出た（p.1179）。
 - Tybur ら（2013）：病原体を避ける機能には広い合意がある（p.65）。
 - Gilbert（2009）：嫌悪を、脅威と守りの系の情動（怒り・不安と並べて）に置く。
-- Cannon（1915）：嫌悪でも、強ければ交感神経が働く（p.277）。
+- Cannon（1915）：嫌悪でも、強ければ交感神経が働く（pp.277–278）。
 
 人との間の判断に広がる・分かれると書く論（本文で確かめたもの）：
 
@@ -663,7 +663,7 @@ status: reviewed
 - Dickerson & Kemeny（2004）：体の脅威と同じく、社会的な評価の脅威もコルチゾールを上げる。
 - Berridge & Kringelbach（2015）：食べ物・性の快と、友・愛する人の快は、よく重なる脳の網を使う（共通の通貨）。
 - Lang & Bradley（2010）：欲求と防御の二つの系の反応の多くは、同じ神経の構造を使う。
-- Cannon（1915）：恐れ・怒り・痛みだけでなく、喜び・悲しみ・嫌悪でも強ければ交感神経が働く（p.277）。
+- Cannon（1915）：恐れ・怒り・痛みだけでなく、喜び・悲しみ・嫌悪でも強ければ交感神経が働く（pp.277–278）。
 
 片方がもう片方から育った・その一部だと書く論（本文で確かめたもの）：
 
