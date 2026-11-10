@@ -540,3 +540,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「期待は先に向き、信頼は積み重ねの上に立つ」「構想は、まだ分からない」の頭）
 - pages: どちらのページも、足した一文を引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] compile | Love駆動開発の畳み「手順と、構想や計画への構え」に、対処の語についての pjdhiro の見方を足したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（畳み「手順と、構想や計画への構え」）
+- pages: どちらのページも、この畳みを引いていない（`concepts/Love 駆動開発` の「対処している」は章「Love駆動開発は、やり方の名前なのか」の段から）ので本文はそのまま。`compiled` は今日のまま
