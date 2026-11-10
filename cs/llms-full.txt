@@ -1,4 +1,4 @@
-# creation-space (Full Reference)
+# 創造とは / What Is Creation (Full Reference)
 
 > 軽量版: [llms.txt](https://uminomae.github.io/project-design-theory/cs/llms.txt)（公開ページの一覧つき）
 > このファイルは正本 MD（raw）への索引。読み物として整形された公開ページは下の「Published Pages」から。
@@ -101,9 +101,9 @@ LLM のプロジェクト知識として使う場合:
 
 ## Related Projects
 
-- project-design（プロジェクトデザイン論）: https://uminomae.github.io/project-design-theory/
-- kesson-space（欠損駆動思考）: https://uminomae.github.io/project-design-theory/ks/
-- awareness-space（意識とは）: https://uminomae.github.io/project-design-theory/as/
+- プロジェクトデザイン論: https://uminomae.github.io/project-design-theory/
+- 欠損駆動思考（記号の上では 0 と出るところで、人は何を感じているのか。欠けている感じや違和感を駆動源にする、思考や精神の構えを見る探究）: https://uminomae.github.io/project-design-theory/ks/
+- 意識とは（人は、何で世界を切り取っているのか。生き延びられるか（生存）と、つながっていられるか（信頼）の二つの信号から見る探究）: https://uminomae.github.io/project-design-theory/as/
 
 ## License & Attribution
 

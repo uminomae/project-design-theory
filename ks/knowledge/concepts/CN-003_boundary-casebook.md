@@ -16,7 +16,7 @@ log_ref: null
 抱持段階の誤判定が起きやすい境界（3↔4 / 4↔5 / 5↔6）について、観測の手がかりと次の一手をケースとして保持するノート。
 
 ## 2. なぜこの概念が必要か
-- 注: 作成元REPORTは現在 `codex/archive/deepdive/REPORT-boundary-casebook.md` に配置。関連: `codex/archive/deepdive/REPORT-抱持-uncertain-resolution.md`, `codex/archive/deepdive/REPORT-container-mapping.md`
+- 注: 作成元REPORTは現在 `cs/evidence/archive/kdt-codex/deepdive/REPORT-boundary-casebook.md` に配置。関連: `cs/evidence/archive/kdt-codex/deepdive/REPORT-withhold-uncertain-resolution.md`, `cs/evidence/archive/kdt-codex/deepdive/REPORT-container-mapping.md`
 - 境界は兆候が似ており、誤判定（過剰な急かし／過剰な介入／撤去の誤り）が起きやすい。
 - “理論語”だけでは運用に落ちにくいため、場面・会話断片・観測（4観点）をセットで保持する必要がある。
 - 本ノートは、観測指標（観測可能化）と介入（Container）を接続する最小のケース集として位置づける。
@@ -160,7 +160,7 @@ log_ref: null
 
 **支援者の次の一手**:
 - 推奨: **外部化Container** — 「いまの説明の弱点」を1つ書き、次回そこだけを更新する枠を作る。 | `REPORT-container-mapping.md` A.4
-- 回避: “関係で支えれば変わる”と楽観し、介入を増やし続ける（4→5誤判定リスク）。 | `REPORT-抱持-observability.md` §B.4
+- 回避: “関係で支えれば変わる”と楽観し、介入を増やし続ける（4→5誤判定リスク）。 | `REPORT-withhold-observability.md` §B.4
 
 **Evidence**: EV-BZ-010
 **タグ**: `[UNCERTAIN][CONTEXT_DEPENDENT]`
@@ -274,7 +274,7 @@ log_ref: null
 **判定**: 5→6誤判定（撤去が早い）として教育的。根拠: §B.5誤判定（5→6誤判定: その場だけで内在化完了とみなす）、L3-4（支援弱化でも崩れにくい、が未確認）。
 
 **支援者の次の一手**:
-- 推奨: **制度的Container** — 「支援弱化は段階的」「一時的揺れは許容し回復を見る」を合意し、次回の観測を決める。 | `REPORT-抱持-uncertain-resolution.md`（U-3）
+- 推奨: **制度的Container** — 「支援弱化は段階的」「一時的揺れは許容し回復を見る」を合意し、次回の観測を決める。 | `REPORT-withhold-uncertain-resolution.md`（U-3）
 - 回避: “自立”のラベルで撤去を急ぐ。 | `REPORT-container-mapping.md` B.6
 
 **Evidence**: EV-DP-002, EV-NS-007
@@ -319,16 +319,16 @@ log_ref: null
 
 ## 付録: 本レポートが参照した主要ファイル
 
-- `codex/archive/deepdive/REPORT-抱持-observability.md`
-- `codex/archive/deepdive/REPORT-抱持-structuring.md`
-- `codex/output/REPORT-抱持-uncertain-resolution.md`
-- `codex/output/REPORT-container-mapping.md`
-- `base/schema/core-definitions.md`
-- `creation-space/evidence/evidence-neuroscience.md`
-- `creation-space/evidence/evidence-psychoanalysis.md`
-- `creation-space/evidence/evidence-developmental-psychology.md`
-- `creation-space/evidence/evidence-business-org.md`
-- `creation-space/evidence/evidence-creativity.md`
+- `cs/evidence/archive/kdt-codex/deepdive/REPORT-withhold-observability.md`
+- `cs/evidence/archive/kdt-codex/deepdive/REPORT-withhold-structuring.md`
+- `cs/evidence/archive/kdt-codex/deepdive/REPORT-withhold-uncertain-resolution.md`
+- `cs/evidence/archive/kdt-codex/deepdive/REPORT-container-mapping.md`
+- `ks/knowledge/schema/core-definitions.md`
+- 創造とはの今までの調べ `evidence-neuroscience.md`（この repo には無い）
+- 創造とはの今までの調べ `evidence-psychoanalysis.md`（この repo には無い）
+- 創造とはの今までの調べ `evidence-developmental-psychology.md`（この repo には無い）
+- `cs/evidence/archive/kdt-legacy/evidence-business-org.md`
+- `cs/evidence/archive/kdt-legacy/evidence-creativity.md`
 
 ## 4. 誤解されやすいポイント
 - ケースは架空であり、実例の記録ではない。

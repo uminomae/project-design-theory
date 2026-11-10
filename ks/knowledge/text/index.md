@@ -11,6 +11,8 @@
 
 ## clinical-psychology/
 
+どれも 2025 年の下書きで、欠損の古い定義（予測と現実のずれが意識に上ったもの）の上に書いている。今の定義は `ks/knowledge/schema/core-definitions.md`。各本の頭に断りを置いた（2026-11-11）。
+
 | ファイル | タイトル | Phase | 状態 |
 |---------|---------|:-----:|------|
 | [clinical-psychology/part0-methodological-note.md](clinical-psychology/part0-methodological-note.md) | Phase 4 方法論的補足：素朴体験論としての本理論 | 4 | 序論 |
@@ -41,3 +43,4 @@
 | 日付 | 内容 |
 |------|------|
 | 2026-04-07 | 初版作成（techo#101） |
+| 2026-11-11 | clinical-psychology と foundation の本文の頭に、欠損の古い定義で書いたものだという断りを置いた（#111） |

@@ -630,3 +630,18 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「心に関する言葉は、どこで誤解されるか」の葛藤の表、その下の pjdhiro の見方と畳み「葛藤、認知的不協和、ダブルバインドは、何が違うか」、出典の行）
 - pages: どちらのページも、葛藤の表を引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] check | Love駆動開発の「適用条件がわかる」の例に、原文のカードと、自己の対象化・他者の視点・段階の畳みを足したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「効き目と、効く範囲」の畳み「ほかに：適用条件がわかる」）
+- pages: どちらのページも、この例を引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] check | Love駆動開発の「うれしさ」を「利点」に替えたあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「この見方は、何の役に立つのか」の段と畳み「効く範囲と相性」）
+- pages: どちらのページも「うれしさ」の語を使っていないので本文はそのまま。compiled は今日のまま
+
+## [2026-11-11] check | Love駆動開発の「知らない方が儲かる」を本人の訂正で「知らない方が儲かることも多い」にしたあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（pjdhiro の見方のカード）
+- pages: どちらのページも、このカードを引いていないので本文はそのまま。compiled は今日のまま

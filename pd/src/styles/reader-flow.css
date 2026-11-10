@@ -240,7 +240,6 @@ body.reader-flow .reader-article .tablewrap table {
     border-collapse: collapse;
     width: 100%;
     font-size: 0.88rem;
-    min-width: 520px;
     margin: 0;
 }
 body.reader-flow .reader-article .tablewrap th,
@@ -257,6 +256,17 @@ body.reader-flow .reader-article .tablewrap thead th {
     white-space: nowrap;
 }
 body.reader-flow .reader-article .tablewrap tbody tr:last-child td { border-bottom: none; }
+/* スマートフォンの幅では、どの表も横に動かさずに折り返して収める（stance 2-7「表は横スクロールさせない」。
+   前は表に min-width: 520px があり、375px の幅で表が横に動いた。2026-11-11） */
+@media (max-width: 600px) {
+    body.reader-flow .reader-article .tablewrap th,
+    body.reader-flow .reader-article .tablewrap td {
+        padding: 8px 6px;
+        font-size: 0.8rem;
+        overflow-wrap: anywhere;
+    }
+    body.reader-flow .reader-article .tablewrap thead th { white-space: normal; }
+}
 
 /* 横スクロールなしで収める表（正本 MD で <div class="tablefit"> に囲む。DESIGN-RULES B1: 320px 幅で横スクロールなし） */
 body.reader-flow .reader-article .tablefit .tablewrap { overflow-x: visible; }
