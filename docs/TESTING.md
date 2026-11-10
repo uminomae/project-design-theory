@@ -36,9 +36,12 @@
 | 道具の呼び出しの文字の紛れ込み | Claude がファイルを書く道具の閉じタグなどの文字（invoke・parameter・content の閉じタグ）が、git に入っている文字のファイルに残っていない（2026-11-10・#111。読み物の正本と精読ノートの終わりに残り、公開ページに出ていた） | 新しく書いた（`scripts/check.sh` の `tool_residue`） |
 | cs：照合の記録 | 分野ごとの照合の記録（`cs/evidence/evidence-Dxx-*.md`）の形：frontmatter・文責・一面の表・照合の状態と判定の語・確かめ先・台帳の行・絶対パス・文末。見るものは `docs/cs-review/README.md`「記録の品質の点検」 | 新しく書いた（`scripts/check-cs-evidence.mjs`、2026-11-08・#73。pjdhiro「レビュー時のルールもテストを作っていかないとね」） |
 | as：照合の記録と台帳 | 領域ごとの照合の記録（`as/evidence/evidence-Axx-*.md`）の形：frontmatter・文責・探し方・一面の表・照合の状態と判定の語・確かめ先・絶対パス・文末・本文の記号とパス。原典の台帳（`as/knowledge/raw/manifest.md`）の行の形と、台帳の「使う記録」の行の書誌（第一著者・年・題の頭・DOI）が記録の本文にあるか。画面に出す一覧（`as/evidence/reviewed.json`）の形。見るものは `docs/as-review/README.md`「記録の品質の点検」 | 新しく書いた（`scripts/check-as-evidence.mjs`、2026-11-10・#95。形の元は cs の点検） |
+| cs・as：記録が書いた wiki の誤りの残り（知らせるだけ） | 調査の記録（cs・as の evidence）が「wiki の頁「…」のここが誤り」と書いた行を拾い、行が書かれた時刻（git blame）と、指された頁が最後に変わった時刻（git log）を比べる。頁がそのあと変わっていないものの数を出す。止めない。wiki の古いページの知らせは正本が変わったときにしか出ないので、記録にだけ書かれた誤りを別に拾う。頁が変わったものは、直ったかどうかを目で確かめる（機械では分からない）。一覧は `node scripts/check-evidence-wiki-notes.mjs`。2026-11-10 の数：52 件のうち、変わっていない 29・変わった 21・済みと書いてある 2 | 新しく書いた（`scripts/check-evidence-wiki-notes.mjs`・2026-11-10・#111） |
+| 公開のページと記録（知らせるだけ） | 今は当たりがあるので、落とさずに数を出す三つ。① 読み物（`pd/reader/*.html`）と入口（pd・cs・as・ks の `index.html`）の、読者に見える文字に、今までの repo の名前（project-design・creation-space・awareness-space・kesson-space）が出ていないか。タグ・script・style・URL は外して見る。JavaScript が後から差し込む文字は見ない（`docs/rules/writing.md` §6-3）。② 公開の調査の記録（`cs/evidence/evidence-D*.md`・`as/evidence/evidence-A*.md`）の見出しに、作業の節（照合中・判断が要る・司令塔が直す）が残っていないか（`stance.md` 2-7）。③ 読み物の表のうち、幅に収める囲み（`.tablefit`）が無く、スマートフォンの幅で表の中を横に送る形のもの（`pd/src/styles/reader-flow.css` が `.tablewrap` の表に `min-width: 520px` を付けている。数えるのは HTML の形で、画面の実際のはみ出しではない）。2026-11-10 の数：① 34 か所（7 本）・② 43 節（30 本）・③ 4 表（1 本）。0 になったものは、`scripts/check.sh` の呼び出しに `--strict names`（`sections`・`tables`）を付けて「止める」に上げる | 新しく書いた（`scripts/check-public-notices.mjs`・2026-11-10・#111） |
+| cs：原典の台帳と記録の突き合わせ（知らせるだけ） | 記録が「本文照合済」とした原典の台帳の行（その分野で、書誌に第一著者の姓と年がある行）が、読めない状態（`blocked-access`・`citation-only`）のままになっていないか。台帳の行で、2 列目に状態の語が入り列がずれているもの。止めない。著者が欧文の姓と年で書かれていない原典（和書など）は拾えない。2026-11-10 の数：読めない状態のまま 3・列のずれ 28。直ったら `--strict` に上げる | 新しく書いた（`scripts/check-cs-ledger.mjs`・2026-11-10・#111） |
 | 道具：原典を探す find-source | `scripts/find_source.py` の書誌の一行の読み取り・置き場の分類（誰が上げた版か・確認画面のホスト）・判定の段・PDF との突き合わせ（前付けだけ・再録の印・別の題・別の DOI・著者稿）。ネットワークと PDF には触らない。例は cs のレビューで実際に起きた取り違えから取った（2026-11-09） | この repo で新しく書いた（`scripts/test_find_source.py`） |
 
-公開してよいかの点検（`docs/PUBLISH-CHECK.md`）は、commit のときに `.githooks/` が回す。
+公開してよいかの点検（`docs/PUBLISH-CHECK.md`・`scripts/publish-check.sh`）は、commit のときに `.githooks/pre-commit` が、commit しようとしている分だけを回す。repo の全部（`--all`）は、`.github/workflows/check.yml` が develop と main で回す。手元だけの語の一覧は git に無いので、そこで回るのは形の点検だけ（手元のパス・鍵・メール・共有のリンク・書庫の中のファイルの名前）。語の点検を全部に回すのは、手元で `scripts/publish-check.sh --all`（8 秒ほど）。形のうち `~/` のパス・一時置き場のパスは、通す一覧（`.publish-check-allow`）で、確かめて通したもの（ok）と判断待ち（wait）を持つ。共有のリンクは、公開の repo に置いてよいかを pjdhiro が決めるまで、止めずに数とファイルを知らせる（2026-11-10・#111）。手元の `--all` は、書庫 1 本（中に非公開の repo の発言の置き場の名前）が判断待ちで、いまは落ちる。
 
 ### 画面で確かめる：3001 と `pd/src/page-check.js`
 
@@ -61,7 +64,7 @@ const { run } = await import('../src/page-check.js'); await run();
 | 点検 | いつ回すか | 見方 |
 |---|---|---|
 | `pd/scripts/reader-self-defense-lint.mjs` | 読み物を書いた・直したとき | Claude が Claude に説明している地の文（型 F）の候補。読者向けの文か、規約への言い訳かを一つずつ見る |
-| `pd/scripts/reader-attribution-audit.mjs <正本.md>` | 読み物に pjdhiro の言葉や出典を足したとき | 一文ごとの帰属の形。間接話法や帰属の無い地の文が、本人の言葉や原典とずれていないか（型 G・H） |
+| `pd/scripts/reader-attribution-audit.mjs <正本.md>` | 読み物に pjdhiro の言葉や出典を足したとき | 一文ごとの帰属の形。間接話法や帰属の無い地の文が、本人の言葉や原典とずれていないか（型 G・H）。表の行も読む：見出しと区切りの行を飛ばし、どの形にも当たらない 12 字以上のセルを CELL として出す（2026-11-10・#111。`--no-table` で表を飛ばす） |
 | `pd/scripts/wiki-cross-check.mjs --all --dry-run` | wiki の出典ページと cs の出典ノートを直したとき | 二つの食い違いの候補。書き出すときは `pd/.cache/` に出る |
 | cs の検査（`cs/scripts/qc-all.sh` ほか） | cs を直したとき | cs の全体のレビューで、今の形に合わせる（`docs/cs-review/README.md` の段 0）。それまではここで扱わない |
 | `NODE_USE_ENV_PROXY=1 node scripts/check-as-evidence.mjs --crossref` | as の領域を回して台帳に行を足したとき | 台帳の DOI を Crossref で引き、題の頭と年が台帳と合うかを見る。年は号とオンラインの公開で違うことがあるので、合わない行は台帳の書誌の注記と見比べる（2026-11-10 に A01 の 18 本で回し、すべて合った） |
@@ -75,7 +78,9 @@ const { run } = await import('../src/page-check.js'); await run();
 - GitHub Actions：`check.yml`（上の検査）と `pages.yml`（公開）。
 - 定期実行（launchd の定期・routine・scheduled task）は置いていない。
 
-- main へ送る前の確かめ（2026-11-09）：`.githooks/pre-push` が、main への push を、送る commit を `bash scripts/publish-main.sh <送る枝>` で見たあとでなければ止める。道具は、一緒に公開される commit・変わるファイル・その日の記録の「main には送っていない」を出す。develop には、公開の判断を待っている別のセッションの変更が入っていることがあるため（`docs/rules/corrections-k.md`「繰り返し」の表）。
+- main へ送る前の確かめ（2026-11-09・直し 2026-11-10 #111）：`.githooks/pre-push` が、main への push を、送る commit を `bash scripts/publish-main.sh <送る枝>` で見たあとでなければ止める。道具は、一緒に公開される commit・変わるファイル・記録の「main には送っていない」を出して、見た印を置く。印は worktree ごとで、送る commit の番号と置いた時刻が入り、push する commit と番号が合って 30 分以内のときだけ通る。記録は名前の日付でなく書かれた時刻で選ぶ（直近 3 日）。今の main の先頭より後に書かれた記録に「main には送っていない」があると、印を置かずに止まる（確かめたうえで `--seen`）。develop には、公開の判断を待っている別のセッションの変更が入っていることがあるため（`docs/rules/corrections-k.md`「繰り返し」の表）。`git push --no-verify` と GitHub の上での操作は、この仕組みでは止まらない（`docs/PUBLISH-CHECK.md`「ここは仕組みで止まらない」）。
+- `.githooks/` は、本体の checkout の版が動く（`core.hooksPath` が本体の `.githooks` を指している）。worktree で直したフックは、develop に取り込んでから効く。フックが呼ぶ `scripts/publish-check.sh` は、commit をする worktree の版。
+- セッションの記録の要点：`bash scripts/session-digest.sh`（中身は `scripts/session-digest.mjs`）。既定は、その日と前の日の記録（名前の日付か、更新した日）の題と `## 要点` の頭だけで、全体を 26,000 バイトに収める（記録が多い日は、一つにつき一行まで減らす。2026-11-10 は 89 本で 23,760 バイト）。話題の語で指すと、その記録の要点・ずれ・残したこと・commit の節を切らずに出す（2026-11-10・#111。前は二日分で 30 万バイトほど出て、行をバイトで切って日本語が壊れていた）。
 
 ## 作りたいもの（まだ定まらない）
 
@@ -83,8 +88,8 @@ const { run } = await import('../src/page-check.js'); await run();
 
 | 作りたいもの | 作りたい内容 | 作るきっかけ | もと |
 |---|---|---|---|
-| 読み物の読解テスト（ページごとの質問） | 文脈の無い読み手に公開ページの文字だけを読ませる手順そのものは、念入りなレビューの ⑤ として `docs/rules/review.md` にある（抽出は `pd/scripts/reader-llm-comprehension-test.mjs`。spec の無いページは共通の七問を使う。2026-11-09）。残っているのは、ページごとの質問（TEST の spec）を今の構成に合わせて書くこと。pjdhiro の趣旨とずれて読まれないかは、ページごとの質問でしか見られない | #62（読解テストを今の構成に合わせて書く） | project-design の `reader-comprehension`・`reader-litt-conformance` |
-| ほかのページの画面の確かめ | `page-check.js` を、プロジェクトデザイン論のトップ・読み物・創造とはのトップへ広げる。スマートフォン幅で、表が横にはみ出さないか、文字が小さすぎないかも見る | それらのページを作り直すとき | project-design の `static-checks.js`・`responsive-test.*` |
+| 読み物の読解テスト（ページごとの質問） | 文脈の無い読み手に公開ページの文字だけを読ませる手順そのものは、念入りなレビューの ⑤ として `docs/rules/review.md` にある（抽出は `pd/scripts/reader-llm-comprehension-test.mjs <ページの名前> [--out <出力先>]`。spec の無いページは共通の七問を使う。2026-11-09。`pd/reader/` にあるページなら、名前を道具に足さなくても回せる。出力先は既定で `pd/.cache/active/`、`--out` で repo の外へ向けられる。2026-11-10・#111）。残っているのは、ページごとの質問（TEST の spec）を今の構成に合わせて書くこと。pjdhiro の趣旨とずれて読まれないかは、ページごとの質問でしか見られない | #62（読解テストを今の構成に合わせて書く） | project-design の `reader-comprehension`・`reader-litt-conformance` |
+| ほかのページの画面の確かめ | `page-check.js` を、プロジェクトデザイン論のトップ・読み物・創造とはのトップへ広げる。スマートフォン幅で、表が横にはみ出さないか、文字が小さすぎないかも見る | 作るきっかけは来ている（2026-11-09〜10 に、表の横スクロールを手で直した跡が記録に 7 件）。HTML の形で数える知らせは入れた（上の「公開のページと記録」の ③）。画面で見る形の案：`page-check.js` の横のはみ出しの見方（`scrollWidth` と見える幅の差）を、ページ全体でなく表の枠（`.tablewrap`）ごとに当て、375px の幅で、枠の中身が枠より広い表を並べる。3001 を開いたブラウザで回す形なので、`scripts/check.sh` には入らない。表を幅に収める直し（CSS）は見た目の判断を伴うので、pjdhiro が決める | project-design の `static-checks.js`・`responsive-test.*`（`docs/harness-pending/` にあるのは名前だけで、中身は 0 バイト。今までの repo は読まないので、使えるかは確かめられない。新しく書く） |
 | キーボードで使えるか | Tab で順に移れるか、隠れた部品に移らないか、畳みや切り替えを Enter で開けるか、読み上げの名前があるか | ks・as のトップの部品を足すとき | kesson-space の E2E（TC-10・ISS-001） |
 | 読み込みの速さの目安 | 初めの表示までの時間・転送量・リクエスト数の目安を決め、超えたら知らせる | 3D や画像を足して重くなったとき | kesson-space の E2E（TC-08・TC-11） |
 | デザインの規約に沿うか | 色・文字の大きさ・余白が、決めたデザインの規約に沿うかを見る | デザインの規約（まとまり A の「あとで」・E）を決めたとき | project-design の `ui-lint.sh` |

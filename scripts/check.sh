@@ -32,6 +32,13 @@ run "pd：wiki が読めない原典を出典にしていない" bash -c 'cd pd 
 run "pd：wiki の古いページ（知らせるだけ）" node pd/scripts/wiki-stale-check.mjs --count
 # cs の台帳で読める原典なのに、wiki の出典ページが無いものの数。止めずに知らせるだけ（2026-11-10。今までの wiki-gen-check）。
 run "pd：wiki の出典ページが無い原典（知らせるだけ）" node pd/scripts/wiki-gen-check.mjs --count
+# 調査の記録（cs・as の evidence）が「wiki の頁のここが誤り」と書いたのに、その頁がそのあと変わっていないものの数。
+# 正本が変わらないと wiki の古いページには出ないので、別に数える。止めずに知らせるだけ（2026-11-10・#111）。
+run "cs・as：記録が書いた wiki の誤りの残り（知らせるだけ）" node scripts/check-evidence-wiki-notes.mjs --count
+# 公開のページと記録について、今は当たりがあるので、落とさずに数を知らせる三つ（2026-11-10・#111）：
+# 読み物と入口の本文の今までの repo の名前・公開の調査の記録の作業の節・読み物の表の横送り。
+# 当たりが 0 になったものは、--strict <名前> を付けて「止める」に上げる（名前は names・sections・tables）。
+run "公開のページと記録（知らせるだけ）" node scripts/check-public-notices.mjs
 run "as：テスト" bash -c 'cd as && node --test tests/*.test.mjs'
 run "ks：config の整合" bash -c 'cd ks && node tests/config-consistency.test.js'
 run "ks：config の export" bash -c 'cd ks && node --experimental-vm-modules tests/config-exports.test.js'
@@ -39,6 +46,9 @@ run "ks：devlog の移動と深いリンク" bash -c 'cd ks && node tests/devlo
 run "ks：devlog の日英" bash -c 'cd ks && node scripts/validate-devlog-i18n.mjs'
 # 創造とはの、分野ごとの照合の記録（cs/evidence/evidence-Dxx-*.md）。見るものは docs/cs-review/README.md「記録の品質の点検」。
 run "cs：照合の記録" node scripts/check-cs-evidence.mjs
+# 創造とはの原典の台帳と記録の突き合わせ：記録が本文照合済とした原典が、台帳で読めない状態のままになっていないか。
+# 台帳の行で列がずれているもの。今は当たりがあるので、止めずに数を知らせる（2026-11-10・#111。直ったら --strict に上げる）。
+run "cs：原典の台帳と記録の突き合わせ（知らせるだけ）" node scripts/check-cs-ledger.mjs --count
 # 意識とはの、領域ごとの照合の記録（as/evidence/evidence-Axx-*.md）と原典の台帳。見るものは docs/as-review/README.md「記録の品質の点検」。
 run "as：照合の記録と台帳" node scripts/check-as-evidence.mjs
 run "道具：原典を探す find-source（書誌の読み取り・分類・突き合わせ）" python3 -I scripts/test_find_source.py
