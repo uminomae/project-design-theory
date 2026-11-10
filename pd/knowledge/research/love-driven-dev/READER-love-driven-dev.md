@@ -241,7 +241,7 @@ Love と呼びたいものは、目では見えません。第二部では、見
 
 <a id="ldd-field"></a>ここから先、「場」という言葉は、創造の五段階の場も、物理の場も、同じ言葉で呼びます。渦が巻く、その下に広がっているもののことです。
 
-<figure class="glow-card reader-figure"><img src="../assets/img/creation-five-stages-spinor-v1-2.jpg" alt="創造の構造とプロセス：スピノル的5段階。場（まだ分かれていない、すべてが溶けている海のような状態）、波（場の中に差が生まれ、揺れとして立ち上がる）、縁（境界で起きる出来事。接し、影響し合い、関係や法則が生まれる場所）、渦（ひとつのまとまりとして立ち上がる）、束（渦どうしが影響し合い、構造として残る集まり）。下の表は、構造とプロセスを、場＝無と漂う、波＝ゆれ・対立と分離、縁＝境界・関係と繋がり、渦＝個・立ち上がりと包摂・融合、束＝方向と集合、と対応させている。" width="2048" height="1152" loading="lazy"><figcaption>創造の構造とプロセス — スピノル的5段階（Ver.1.2）</figcaption></figure>
+<figure class="glow-card reader-figure"><img src="../assets/img/creation-five-stages-v1-3.jpg" alt="創造の五段階：構造とプロセス（Five Stages of Creation）。場（Field：波が立つ前の、安定した海のような状態。理屈の上での出発点）、波（Wave：場の中に差が生まれ、揺れとして立ち上がる。状況が変わり、差が分かれて向かい合う）、縁（Edge：異質なものが出会い、ぶつかる境目。そこで新しい関係や法則が生まれる）、渦（Vortex：ひとつのまとまりとして立ち上がる。二つが見分けられるのに、一つであるかのよう）、束（Bundle：渦どうしが影響し合い、新しい形として残る集まり。それがまた次の場になる）。下の表は、構造とプロセスを、場＝無（認知しづらい）と漂う、波＝ゆれ・対立と分離、縁＝境界・関係と出会い・衝突、渦＝個・立ち上がりと包摂、束＝方向と集合、と対応させている。五つの段は、順に進むとは限らず、同時に走り、入り込み合う。" width="2048" height="1152" loading="lazy"><figcaption>創造の五段階 — 構造とプロセス（Ver.1.3）</figcaption></figure>
 
 <div class="reader-linkcards">
 <a class="reader-linkcard glow-link" href="https://uminomae.github.io/project-design-theory/cs/">
