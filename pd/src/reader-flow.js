@@ -163,7 +163,17 @@
 
   /* ---- スクロール位置に応じて現在地をハイライト ---- */
   var links = [].slice.call(ol.querySelectorAll('a[data-target]'));
-  var ticking = false;
+  var ticking = false, lastCur = null;
+  /* 目次の中を、現在地の行が見えるところまで送る（pjdhiro 2026-11-10・違和感帳「目次がスクロールしない」）。
+     行が目次の上下の端に近づいたら、真ん中あたりに来るように送る。smooth はシェーダーと干渉するので直接動かす */
+  function revealActive(force) {
+    var a = ol.querySelector('a.active');
+    if (!a) return;
+    var nr = nav.getBoundingClientRect(), ar = a.getBoundingClientRect(), pad = 56;
+    if (force || ar.top < nr.top + pad || ar.bottom > nr.bottom - pad) {
+      nav.scrollTop += (ar.top - nr.top) - (nav.clientHeight - ar.height) / 2;
+    }
+  }
   function spy() {
     ticking = false;
     var cur = secs[0].id, best = -1e9;
@@ -172,7 +182,11 @@
       if (t <= 140 && t > best) { best = t; cur = s.id; }
     });
     links.forEach(function (l) { l.classList.toggle('active', l.dataset.target === cur); });
+    if (cur !== lastCur) { lastCur = cur; revealActive(false); }
   }
+  btn.addEventListener('click', function () {
+    if (document.body.classList.contains('toc-open')) requestAnimationFrame(function () { revealActive(true); });
+  });
   window.addEventListener('scroll', function () {
     if (!ticking) { ticking = true; requestAnimationFrame(spy); }
   }, { passive: true });
