@@ -659,3 +659,4 @@ html[lang="en"] #taglines {
   color: var(--reading-sub);
   overflow-wrap: anywhere;
 }
+.reviewed-records { margin: 0 0 1rem; }
