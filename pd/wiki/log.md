@@ -530,3 +530,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（畳み「経営学の駆動源も、同じ歪みの中の渦」・畳み「意図・コントロール・意識は、どこまで確かか」の意識の項）
 - pages: どちらのページも、足した見方を引いていない（意識の項の要約は Weick と Wegner のままで合う）ので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] compile | Love駆動開発の畳み「意図しないまま育つものも、開発に入れる」に、成長と老化についての pjdhiro の見方を足したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（畳み「意図しないまま育つものも、開発に入れる」）
+- pages: どちらのページも、足した見方を引いていないので本文はそのまま。`compiled` は今日のまま
