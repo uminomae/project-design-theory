@@ -6,6 +6,7 @@
  *   どの形にするかは見本（src/backgrounds/intro-samples.html）を見て pjdhiro が選ぶ。
  * - 見本のために ?intro=title+cue&ih=80 で上書きできる（決まった値は テンプレートの html に書く）。
  * - 最初の画面にいるあいだは、目次（常設・右下のボタン）を出さない（背景を全画面で見せるため）。
+ * - 題と印は、スクロールを始めた直後（24px）に消す（ldd-at-top）。
  * - head で同期に読む（描く前に data-intro を決めて、読書欄の位置が跳ねないように）。
  */
 (function () {
@@ -21,7 +22,7 @@
     var ih = parseFloat(q.get('ih'));
     if (ih >= 40 && ih <= 100) html.style.setProperty('--ldd-intro-h', ih);
     // 開いた直後は最初の画面にいるとみなす（目次が一瞬出てから消えないように）。スクロールの位置を戻したときは ready() で直す
-    if (html.hasAttribute('data-intro') && !location.hash) html.classList.add('ldd-at-intro');
+    if (html.hasAttribute('data-intro') && !location.hash) html.classList.add('ldd-at-intro', 'ldd-at-top');
 
     function ready() {
         var intro = document.querySelector('.ldd-intro');
@@ -32,6 +33,8 @@
             // 読書欄の上端が画面の半分より上に来たら、最初の画面を抜けたとみなす
             var h = intro.offsetHeight;
             html.classList.toggle('ldd-at-intro', window.scrollY < h * 0.5);
+            // 題と印は、スクロールを始めた直後に消す（pjdhiro 2026-11-10「スクロール開始した直後くらいのところで消して良いです」）
+            html.classList.toggle('ldd-at-top', window.scrollY < 24);
         }
         window.addEventListener('scroll', function () {
             if (!ticking) { ticking = true; requestAnimationFrame(at); }
