@@ -7,6 +7,7 @@
 | ページ | 正本（編集はこちら） |
 |---|---|
 | `wave-vortex.html` | `evidence/themes/TH-001-wave-vortex-ontology/READER-wave-vortex.md` |
+| `five-stages.html`・`five-stages-en.html`（創造の5段階の現在の定義） | `knowledge/schema/five-stages.md`（英語は `knowledge/schema/five-stages.en.md`）。生成は `python3 scripts/build-five-stages.py`。正本から載せる部分と英語の写しの直し方は、スクリプトの頭の説明。`scripts/check.sh` が `--check` で、生成し直しと英語の写しの古さを見る |
 
 ## このページが何か
 
