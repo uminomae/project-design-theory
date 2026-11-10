@@ -198,6 +198,14 @@
     font-size: 0.75rem;
   }
 
+  /* 列の多い表（照合の記録の一面の表など）が、狭い幅で一字ずつ縦に潰れないようにする。
+     表は自分の中で横に送れる（display: block・overflow-x: auto）。2026-11-10・#95 */
+  .md-body th,
+  .md-body td {
+    min-width: 7em;
+    padding: 0.4em 0.6em;
+  }
+
   .md-body pre {
     padding: 0.8em;
   }

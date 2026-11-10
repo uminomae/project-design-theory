@@ -16,6 +16,7 @@ import {
 import { createReportsModalController } from './modal.js';
 import { createReportsRenderer, getDomainReportTitle, getReportsStrings } from './render.js';
 import { findWikiUrlByText } from '../wiki-links.js';
+import { loadReviewedAreas, renderReviewedRecords } from './reviewed-records.js';
 
 function resolveReportWikiUrl(report) {
     if (!report) return '';
@@ -256,4 +257,32 @@ export function bindStandaloneMarkdownLinks(selector = '[data-md-modal="1"]') {
 
         node.dataset.mdModalBound = '1';
     });
+}
+
+// 文献レビューで照合し直した記録の一覧（reviewed-records.js）。置き場は data-reviewed-records を持つ要素。
+const reviewedState = { areas: [], lang: 'ja' };
+
+function renderAllReviewedRecords() {
+    document.querySelectorAll('[data-reviewed-records]').forEach((container) => {
+        if (!(container instanceof HTMLElement)) return;
+        renderReviewedRecords(container, reviewedState.areas, {
+            lang: reviewedState.lang,
+            onOpen: ({ mdUrl, title }) => {
+                ensureReportsDomCached();
+                modalController.openMarkdownModal({ mdUrl, title });
+            },
+        });
+    });
+}
+
+export async function initReviewedRecords({ lang = document.documentElement.lang || 'ja' } = {}) {
+    reviewedState.lang = normalizeLang(lang);
+    if (!document.querySelector('[data-reviewed-records]')) return;
+    reviewedState.areas = await loadReviewedAreas();
+    renderAllReviewedRecords();
+}
+
+export function setReviewedRecordsLanguage(lang) {
+    reviewedState.lang = normalizeLang(lang);
+    if (reviewedState.areas.length) renderAllReviewedRecords();
 }
