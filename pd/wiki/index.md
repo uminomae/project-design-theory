@@ -325,8 +325,9 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D19_reagan_2016_2016|物語の感情曲線は6つの基本形に支配される]]
 - [[sources/D19_todorov_1971_1971|物語の2つの原理]]
 
-#### D20 法学・政治学 (7件)
+#### D20 法学・政治学 (8件)
 - [[sources/D20_folke-et-al_2005_adaptive-governance|社会生態システムの順応的ガバナンス]]
+- [[sources/D20_friston_2013_life-as-we-know-it|私たちが知っている生命（Friston 2013）]]
 - [[sources/D20_holling_1973_resilience-stability|生態系のレジリエンスと安定性]]
 - [[sources/D20_idea_2011_practical-guide-constitution-building|憲法制定の実践ガイド]]
 - [[sources/D20_ostrom_1990_governing-the-commons|コモンズのガバナンス]]
@@ -364,7 +365,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D22_tuckman_1977_jensen-m-a-c|小集団発達の諸段階・再訪（Tuckman & Jensen 1977）]]
 - [[sources/D22_wenger_2010_communities-of-practice-and|実践コミュニティと社会的学習システム]]
 
-#### D23 発達心理学 (12件)
+#### D23 発達心理学 (11件)
 - [[sources/D23_kartner_2024_early-social-cognitive-development|初期社会-認知発達は動的発達システム — Lifeworld アプローチ]]
 - [[sources/D23_kegan_1982_evolving-self|進化する自己]]
 - [[sources/D23_kim_2024_understanding-explore-exploit-dynamics|子ども発達における探索-活用ダイナミクス]]
@@ -372,7 +373,6 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D23_nakama_2014_dids-japanese-version|多次元アイデンティティ発達尺度（DIDS）日本語版]]
 - [[sources/D23_rochat_2003_2003|乳幼児期に展開する自己意識の 5 レベル]]
 - [[sources/D23_tononi_2014_integrated-information-theory-3|現象学からメカニズムへ — 統合情報理論 3.0]]
-- [[sources/D23_van_1998_piaget-vygotsky-and-beyond|基本的発達メカニズムの動的システムモデル：ピアジェ、ヴィゴツキー、その先へ（van Geert 1998）]]
 - [[sources/D23_van_2017_2017|認知発達と知能のネットワークモデル（van der Maas et al. 2017）]]
 - [[sources/D23_van_2019_dynamic-systems-process-and|動的システム、過程、そして発達（van Geert 2019）]]
 - [[sources/D23_vandermaas_2017_network-models-cognitive-development|認知発達と知能のネットワークモデル]]
@@ -428,10 +428,11 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D28_shibolet_2018_bodyminds-in-movement-contact|動きの中の Bodyminds — Contact Improvisation の身体化された認知]]
 - [[sources/D28_zeami_classics|世阿弥十六部集]]
 
-#### D29 複雑系科学 (8件)
+#### D29 複雑系科学 (9件)
 - [[sources/D29_bak-tang-wiesenfeld_1988_self-organized-criticality|自己組織化臨界]]
 - [[sources/D29_clauset_2007_power-law-distributions|実証データにおけるべき乗則分布]]
 - [[sources/D29_dickman-munoz-vespignani-zapperi_2000_paths-self-organized-criticality|自己組織化臨界への道筋]]
+- [[sources/D29_hordijk-hein-steel_2010_autocatalytic-sets-origin-of-life|自己触媒集合と生命の起源（Hordijk, Hein & Steel 2010）]]
 - [[sources/D29_langton_1990_edge-of-chaos|カオスの縁における計算]]
 - [[sources/D29_munoz_2018_criticality-and-dynamical-scaling|生物系における臨界性と動的スケーリング]]
 - [[sources/D29_newman_2003_structure-and-function-of|複雑ネットワークの構造と機能]]

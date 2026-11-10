@@ -198,7 +198,7 @@ details.archive summary { cursor: pointer; font-family: var(--font-display); fon
 <div class="wrap">
   <header>
     <h1>違和感帳</h1>
-    <p class="lead">pd/ を読んでいて引っかかったところを、一行ずつ置いておく帳面です。Claude が読んで返事を書き、進み具合をここで動かします。Claude からの判断の問いと作業の報告も、ここに届きます。済んだものは「しまったもの」へ移ります。</p>
+    <p class="lead">pd/ を読んでいて引っかかったところを、一行ずつ置いておく帳面です。Claude が読んで返事を書き、進み具合をここで動かします。ここには pjdhiro が送るものだけを置きます。セッションの判断の問いと作業の報告は、それぞれのセッションのページに置き、ここにはそのリンクだけが返ります。済んだものは「しまったもの」へ移ります。</p>
     <span class="conn" id="conn">つないでいます…</span>
     <div class="call" id="call" hidden>
       <button type="button" class="call-btn" id="call-btn">司令塔を呼ぶ</button>
@@ -566,7 +566,7 @@ details.archive summary { cursor: pointer; font-family: var(--font-display); fon
       .sort((a, b) => (a[1].kind === "判断" ? 0 : 1) - (b[1].kind === "判断" ? 0 : 1));
     if (fromClaude.length) {
       const sec = el("div", "group from-claude");
-      const gh = el("div", "group-head"); gh.append(el("h3", null, "Claude から（判断と報告）"), el("span", "n", `${fromClaude.length} 件`));
+      const gh = el("div", "group-head"); gh.append(el("h3", null, "Claude から（前に置かれた判断と報告）"), el("span", "n", `${fromClaude.length} 件`));
       const list = el("div", "list"); for (const [id, d] of fromClaude) list.append(renderItem(id, d));
       sec.append(gh, list); board.append(sec);
     }

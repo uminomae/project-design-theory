@@ -409,3 +409,19 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（信頼の章の抱持のリンク先・構想の章の問いと起点・心を守る章の起点と文脈）
 - 結果: 二ページとも、直した三章の起点・文脈・リンクを引いていない。直す所は無い。compiled は 2026-11-10 のまま
+
+## [2026-11-10] compile | セッションの始めの知らせの片付け：van Geert 1998 の重複と、出典ページの無い二つの原典
+- scope: 出典ページ 3（まとめ 1・新しく作った 2）。消したページ 1
+- sources: `cs/knowledge/source-notes/D23/D23-S14_van-geert-1998.md`・`D20/D20-S16_friston-2013.md`・`D29/D29-S10_hordijk-hein-steel-2010.md`
+- pages: `sources/D23_van_1998_piaget-vygotsky-and-beyond` と `sources/D23_vangeert_1998_piaget-vygotsky-beyond-dst` は同じ原典（D23-S14）の重複だったので、出典ノートを出典にしている後者にまとめ、前者を外した。移したのは、出典ノートで確かめられた記述（重みのロジスティック成長、近い内容への広がりと遠い内容への負の作用、一時的な退行）と、題・英題の aliases だけ。前者にあってノートに無い記述（「成長子（growers）」の語、van der Maas et al. 2017 の先駆という位置づけ）は移していない。後者にソース参照と出典メモを足した。index のリンクを外した。`sources/D20_friston_2013_life-as-we-know-it`（引用 8）と `sources/D29_hordijk-hein-steel_2010_autocatalytic-sets-origin-of-life`（引用 7）を出典ノートから新しく作り、index に足した
+- 確かめ: Hordijk らの引用 7 件を手元の PDF の本文と照らした。6 件は一致。'catalytic closure' の引用符は原文では二重の引用符で、ノートが入れ子の引用符として一重にしている。Friston は手元に PDF が無く、照らしていない
+
+## [2026-11-10] compile | 創造の5段階モデル
+- scope: 概念ページ 1
+- sources: cs/knowledge/schema/five-stages.md・glossary.md・five-stages-guide.md（語の直し：縁 Edge・出会い・衝突、渦 包摂、場 無（認知しづらい））
+- pages: 創造の5段階モデル（定義の表と縁の見出しの語を直し、「境界は帯域」が 4 領域で独立に確認された、の言い方を、建築では独立の収束と言えない、に直した）
+
+## [2026-11-10] check | concepts/欠損駆動思考
+- scope: 概念ページ 1（始めの知らせ）
+- sources: ks/knowledge/schema/glossary.md（97744b2：五段階の英語名と過程の語を図 Ver.1.3 にそろえた）
+- pages: ページは五段階の名前（場・波・縁・渦・束）を並べるだけで、直った英語名や過程の語を書いていないので、本文は変えず compiled を今日にした

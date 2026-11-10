@@ -1,14 +1,14 @@
 ---
 title: "基本的発達メカニズムの動的システムモデル — ピアジェ・ヴィゴツキーを超えて"
 description: "van Geert (1998) Psychological Review 論文。ピアジェの同化/調節とヴィゴツキーの最近接発達領域から抽出した『保守的な力×進歩的な力』の弁証法を、単一の一般動的システムモデルとして数理化した。段階・移行期の二峰性・戦略の波状的盛衰・微視発達の変動を、いずれも創発的特性として再現し、段階を実体ではなくアトラクタとして再記述する。"
-aliases: ["A Dynamic Systems Model of Basic Developmental Mechanisms: Piaget, Vygotsky, and Beyond", "dynamic systems model of development"]
+aliases: ["A Dynamic Systems Model of Basic Developmental Mechanisms: Piaget, Vygotsky, and Beyond", "dynamic systems model of development", "基本的発達メカニズムの動的システムモデル：ピアジェ、ヴィゴツキー、その先へ（van Geert 1998）", "A dynamic systems model of basic developmental mechanisms"]
 tags: [source, "D23", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/source-notes/D23/D23-S14_van-geert-1998.md"
   manifest_id: "D23-S14"
   oa_url: "https://research.rug.nl/en/publications/ab03691b-cf40-452c-a8cf-7a5d9d799bbf"
-compiled: "2026-07-03"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 ---
@@ -21,7 +21,7 @@ review_state: 未レビュー
 
 ## 概要
 
-本論文は、Piaget と Vygotsky の理論から抽出した**基本的発達メカニズム**を、非線形動的システム論の上に**単一の一般計算モデル**として再構成する。中心命題は「認知発達の多様な特徴的パターン（連続・不連続、段階、移行期の多峰性、個人内・個人間変動）は、それ自体が**保守的な力と進歩的な力の緊張**から成る動的システムの**内在的ダイナミクス**の表現である」というもの。Piaget からは**同化 vs 調節**、Vygotsky からは**現実的発達 vs 最近接発達領域（ZPD）**を取り出し、両者を「保守的・主体駆動」と「進歩的・環境駆動」の弁証法的対立として一般化する。発達を発達距離次元上に並んだ内容（スキル・知識・規則）の配列とし、各内容の重み（活性化確率）が「現実水準」のピークと、感受性が最大となる「潜在水準（ZPD＝アトラクタ）」の二点で最大成長する。シミュレーションは、連続的 S 字成長・突発的段階移行・移行期の二峰性・戦略の波状的盛衰・微視発達の変動帯を、いずれも創発的特性として再現する。段階数が典型 4（3〜5）になること、段階区間長がべき乗則（フラクタル的）で増えることもモデルから自然に導かれる。
+本論文は、Piaget と Vygotsky の理論から抽出した**基本的発達メカニズム**を、非線形動的システム論の上に**単一の一般計算モデル**として再構成する。中心命題は「認知発達の多様な特徴的パターン（連続・不連続、段階、移行期の多峰性、個人内・個人間変動）は、それ自体が**保守的な力と進歩的な力の緊張**から成る動的システムの**内在的ダイナミクス**の表現である」というもの。Piaget からは**同化 vs 調節**、Vygotsky からは**現実的発達 vs 最近接発達領域（ZPD）**を取り出し、両者を「保守的・主体駆動」と「進歩的・環境駆動」の弁証法的対立として一般化する。発達を発達距離次元上に並んだ内容（スキル・知識・規則）の配列とし、各内容の重み（活性化確率）が「現実水準」のピークと、感受性が最大となる「潜在水準（ZPD＝アトラクタ）」の二点で最大成長する。重みの更新はロジスティック成長の式で書かれる。発達の効果は発達距離の近い内容に広がり、遠い内容には負に（競合として）働く（pp.643-644）。シミュレーションは、連続的 S 字成長・突発的段階移行・移行期の二峰性・戦略の波状的盛衰・微視発達の変動帯と一時的な退行を、いずれも創発的特性として再現する。段階数が典型 4（3〜5）になること、段階区間長がべき乗則（フラクタル的）で増えることもモデルから自然に導かれる。
 
 ## 主要概念
 
@@ -57,3 +57,14 @@ Piaget の同化-調節、Vygotsky の現実的発達-最近接発達領域、�
 - access_status: raw-confirmed（RUG green OA, 全文精読）
 - **DOI**: [10.1037/0033-295X.105.4.634-677](https://doi.org/10.1037/0033-295X.105.4.634-677)
 - **オープンアクセス**: [University of Groningen（Pure）](https://research.rug.nl/en/publications/ab03691b-cf40-452c-a8cf-7a5d9d799bbf)
+
+## ソース参照（GitHub・検証用）
+
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D23-S14`）
+- **cs 精読ノート**: [knowledge/source-notes/D23/D23-S14_van-geert-1998.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D23/D23-S14_van-geert-1998.md)
+- **この wiki ページ（pd）**: [wiki/sources/D23_vangeert_1998_piaget-vygotsky-beyond-dst.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D23_vangeert_1998_piaget-vygotsky-beyond-dst.md)
+
+## 出典メモ
+
+- 材料は cs の出典ノート（ローカル PDF の全文精読。本文 pp.634-672・全図表・脚注・結論。pp.673-677 の参考文献の続きは読んでいない）。
+- 2026-11-10：同じ原典（D23-S14）を扱っていた別の出典ページ（D23_van_1998_piaget-vygotsky-and-beyond）をこのページにまとめた。移したのは、出典ノートで確かめられた記述（重みのロジスティック成長、近い内容への広がりと遠い内容への負の作用、一時的な退行）だけ。出典ノートに無い記述（「成長子（growers）」の語、van der Maas et al. 2017 の先駆とする位置づけ）は移していない。
