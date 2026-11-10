@@ -22,7 +22,7 @@
 
 ## K1 git とサンドボックス
 
-- worktree の始めに develop へ揃えるのは、仕組みに移した（`bash scripts/sync-develop.sh`）。
+- worktree の始めに develop へ揃えるのは、仕組みに移した（`bash scripts/sync-develop.sh`）。枝が develop より古く、枝に `scripts/sync-develop.sh` が無いときは、`git merge --ff-only develop` だけを一つの呼び出しで回す（`sandbox.excludedCommands` に入っているので外で動く）。`--ff-only` を外した `git merge` をサンドボックスの中で回さない（2026-11-10）。
 - 取り込み（merge・pull）をほかのコマンドと組む呼び出しは、仕組みに移した（2026-11-10）：`.claude/hooks/guard-git-merge.sh` が止める。`.claude/settings.json` の `sandbox.excludedCommands` は、`bash scripts/sync-develop.sh`・`git merge --ff-only *`・`git -C * merge --ff-only *` を、呼び出しの全体が合うときだけサンドボックスの外で動かす。
 - main へ送る前の確かめは、仕組みに移した（`.githooks/pre-push` と `bash scripts/publish-main.sh`）。
 - push は、それだけを一つの呼び出しで `git push origin develop` と書いたか（`cd … &&`・パイプ・リダイレクトと組むとサンドボックスの中に残り、`could not read Username` で止まる。worktree からも refs は共有なので、そのまま push できる。2026-11-09）。
@@ -72,3 +72,4 @@
 | K1 | 上の 2026-11-10 の始めの早送りの繰り返し（cs の J5 ほか・司令塔二つ・J10・型 K を分けるセッション。パイプ・リダイレクト・`;`・`&&` と組んで `.claude/` で止まった）への手当て | 仕組みに移した（2026-11-10）：`scripts/sync-develop.sh` が fetch・早送り（枝の commit がどれも同じ中身で develop に入っていれば付け直し）・枝と作業ツリーの食い違いと `.claude/` の差分の確かめをまとめて行う。サンドボックスの中で動くと、何も変えずに止まる。CLAUDE.md「セッションの記録」の始めの手順に一行。K1 の取り込みの行は、この名前だけにした。`.claude/settings.json` の `sandbox.excludedCommands` に足して外で動かすのは、auto mode の判定で書けず、pjdhiro の承認を待つ。worktree の枝を本体の develop へ取り込む形（wiki の作り直しの行）は、このスクリプトの外 |
 | K1 | 2026-11-10 にもう一度（違和感帳の司令塔のセッションで、帳面から呼ばれた番の途中に worktree へ develop を取り込むとき、`git merge --ff-only develop > /dev/null 2>&1; echo "ff=$?"; grep …` と組んで回し、`.claude/skills/wiki-compile` で止まって作業ツリーに削除が五つ残った。`git restore` は auto mode に止められ、`git merge --ff-only develop` だけを単独で回し直して揃った。`scripts/sync-develop.sh` ができる前で、セッションの始めでなく途中の取り込みだった） | 確認の文は足さない。途中の取り込みも `bash scripts/sync-develop.sh` で回す（このスクリプトは始めに限らず使える）。上の行の hook で止める案の答えを待つ |
 | K1 | 上の二つの案（取り込みを組んだ呼び出しを hook で止める・`sync-develop.sh` と取り込みの形を外で動かす）への答え（pjdhiro 2026-11-10「手動に切り替えたのでやってみて」） | 入れた（2026-11-10）：`.claude/hooks/guard-git-merge.sh`（PreToolUse・Bash）が、git の merge・pull をパイプ・リダイレクト・`&&`・`;`・改行と組んだ呼び出しを止める（単独の取り込み・heredoc と引用符の中の文は通す。今までに止まった五つの形を含む 15 通りで試した）。`sandbox.excludedCommands` に `bash scripts/sync-develop.sh`・`git merge --ff-only *`・`git -C * merge --ff-only *` を足した。設定はセッションの始めに読まれるので、効くのは次のセッションから |
+| K1 | 2026-11-10 にもう一度（創造の五段階の図のセッションの始めに、枝が develop より古く `scripts/sync-develop.sh` が無かったので、`git merge --no-edit develop` をサンドボックスの中で回し、`.claude/` で止まって作業ツリーが半端になった。`git reset --soft develop` と `git reset` で揃えたが、`.claude/` の三つが古いまま残った） | 確認の文を書き直した：前の文はスクリプトがある前提で、無いときの形が無かった。無いときは `git merge --ff-only develop` を単独で回す、を足した |
