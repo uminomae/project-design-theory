@@ -226,12 +226,12 @@ function checkRecord(file, domainId) {
 }
 
 // --crossref：台帳の DOI を Crossref で引く
-const norm = (s) => s.toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/[‐-―–—-]/g, '-').replace(/[’'`]/g, "'").replace(/\s+/g, ' ');
+const norm = (s) => s.toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/[‐-―–—-]/g, '-').replace(/[‘’'`]/g, "'").replace(/&amp;/g, '&').replace(/\s+/g, ' ');
 // 注記の URL から取った DOI の尻（/pdf・&type=printable・閉じていない括弧 など）を落とす
 function cleanDoi(raw) {
   let d = raw;
   try { d = decodeURIComponent(d); } catch { /* そのまま */ }
-  d = d.replace(/&type=.*$/, '').replace(/\/(?:pdf|full|abstract)$/i, '').replace(/\.pdf$/i, '').replace(/[.,;]$/, '');
+  d = d.replace(/&type=.*$/, '').replace(/\/(?:pdf|full|abstract)$/i, '').replace(/\.pdf$/i, '').replace(/[.,;/]$/, '');
   while ((d.match(/\)/g) || []).length > (d.match(/\(/g) || []).length) d = d.replace(/\)[^)]*$/, '');
   return d;
 }
@@ -239,7 +239,8 @@ async function crossref() {
   const rows = fs.readFileSync(MANIFEST, 'utf8').split('\n').filter((l) => /^\| D\d\d-S/.test(l)).map(splitCells);
   let bad = 0; let n = 0;
   for (const [id, , , cite = '', , , notes = ''] of rows) {
-    const doi = cleanDoi((notes.match(/DOI[:：]?\s*(10\.\d{4,}\/[^\s（）「」、。]+)/) || notes.match(/\b(10\.\d{4,}\/[^\s（）「」、。]+)/) || [])[1] || '');
+    // 書誌の欄に DOI があればそれを先に見る（注記の DOI は、再録・訳・取得先のこともある）
+    const doi = cleanDoi((cite.match(/DOI[:：]?\s*(10\.\d{4,}\/[^\s（）「」、。]+)/) || notes.match(/DOI[:：]?\s*(10\.\d{4,}\/[^\s（）「」、。]+)/) || notes.match(/\b(10\.\d{4,}\/[^\s（）「」、。]+)/) || [])[1] || '');
     if (!doi) continue;
     n++;
     const year = (cite.match(/\((\d{4})[a-z]?\)/) || [])[1] || '';
