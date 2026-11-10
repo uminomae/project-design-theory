@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D12_holling_1973_resilience-stability.pdf"
   manifest_id: "D12-S03"
-compiled: "2026-04-10"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---

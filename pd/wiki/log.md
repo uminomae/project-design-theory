@@ -387,3 +387,8 @@ compile 実行の履歴。append-only。
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`、`pd/src/content/site-data.mjs`（サイトの冒頭）、`cs/knowledge/five-stages-guide.md`（a63af55）
 - pages: `concepts/Love 駆動開発` の材料を 2026-02 の project-overview と ks の三つから、今の読み物に替えて作り直した（status 暫定・review_state 未レビューのまま）。`プロジェクトデザイン` の材料をサイトの冒頭と読み物に替え、定義・射程・領域・Doing と Being から作り直した。`about` を一つの repo・Quartz・3001 の形に直した（Obsidian は今使っていない。`.obsidian/` は残した）。`concepts/創造の5段階モデル`・`cross-refs/creation-space-domains` は、11-07 からの出典の直しが a63af55 だけで、11-10 の fix で写っていることを確かめ、compiled を今日にした
 - 仕組み: 正本を直すと hook が関わる wiki のページを知らせる（`pd/scripts/wiki-stale-check.mjs`）。WL-3 が出典の commit の日付と compiled 日を比べ、古いページを `health/freshness-report` に並べる。作り直しの手順は `.claude/skills/wiki-compile/SKILL.md`。残りの古いページは 45（#73 で出典ノートを直した cs の出典ページ）
+
+## [2026-11-10] check | 農学・生態学の出典ノート 3 本の直し（#73）
+- scope: 出典ページ 3（確かめだけ。うち 1 は書誌に DOI を足した）
+- sources: `cs/knowledge/source-notes/D12/D12-S03_holling-1973.md`・`D12-S05_stern-1959.md`・`D12-S06_pedigo-1986.md`
+- pages: 出典ノートの直しは、Pedigo の引用の頁（p.345→p.343、p.347→p.344）と、Holling・Stern の DOI だけ。`sources/D12_pedigo_1986_et-al` は頁を書いておらず、`sources/D12_holling_1973_resilience-stability` は DOI を書いていたので、本文を変えずに compiled を今日にした。`sources/D12_stern_1959_integrated-control-concept` は書誌に DOI を足し、compiled を今日にした
