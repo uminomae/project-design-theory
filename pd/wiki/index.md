@@ -449,10 +449,10 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D30_zeami_classics|風姿花伝（一座建立・場の共創）]]
 
 ## Cross References
-- [[cross-refs/awareness-space-overview|awareness-space 調査テーマ概要]]
+- [[cross-refs/awareness-space-overview|「意識とは」のサイトと knowledge の概観]]
 - [[cross-refs/concept-entity-map|Concept-Entity Map]]
 - [[cross-refs/creation-space-domains|creation-space 30ドメイン横断]]
-- [[cross-refs/kesson-space-overview|kesson-space 理論構造概要]]
+- [[cross-refs/kesson-space-overview|欠損駆動思考のサイトと knowledge の概観]]
 
 ## Health
 - [[health/cn-divergence-report|CN Divergence Report]]
@@ -472,10 +472,10 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[concepts/信頼\|信頼]] | 暫定 | 2026-04-17 | 未レビュー |
 | [[concepts/内受容感覚\|内受容感覚]] | 正準 | 2026-04-15 | pjdhiro確認済み(2026-04-15) |
 | [[concepts/創造の5段階モデル\|創造の5段階モデル]] | 暫定 | 2026-04-06 | 未レビュー |
-| [[concepts/情動の構成\|情動の構成]] | 要改訂 | 2026-04-06 | v2照合中 |
+| [[concepts/情動の構成\|情動の構成]] | 要改訂 | 2026-11-10 | v2照合中 |
 | [[concepts/情動伝染\|情動伝染]] | 正準 | 2026-04-15 | pjdhiro確認待ち(2026-04-15 split from 間主観性) |
 | [[concepts/感情処理\|感情処理]] | 暫定 | 2026-04-06 | 未レビュー |
-| [[concepts/抱持\|抱持]] | 暫定 | 2026-04-06 | 未レビュー |
+| [[concepts/抱持\|抱持]] | 暫定 | 2026-11-10 | 未レビュー |
 | [[concepts/欠損\|欠損]] | 暫定 | 2026-04-06 | 未レビュー |
 | [[concepts/欠損駆動思考\|欠損駆動思考]] | 暫定 | 2026-04-06 | 未レビュー |
 | [[concepts/測定設計原則\|測定設計原則]] | 正典 | 2026-04-06 | 未レビュー |
