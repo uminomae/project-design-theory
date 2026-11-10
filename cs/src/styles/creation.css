@@ -75,6 +75,39 @@ body.creation-page {
 
 /* ── Room narration bridges (cs#179 Phase A) ── */
 
+/* 冒頭の問いと今の見方（#111）。3D の背景の上で読めるよう、語りと同じ影を付ける */
+.cs-intro {
+  position: relative;
+  z-index: var(--cs-z-ui-mid-3);
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 0;
+  pointer-events: auto;
+}
+
+.cs-intro-question {
+  font-family: 'Noto Serif JP', Georgia, serif;
+  font-size: clamp(1.1rem, 3.2vmin, 1.5rem);
+  font-weight: 400;
+  color: rgba(225, 235, 252, 0.95);
+  line-height: 1.8;
+  margin: 0 0 1.2rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1.0), 0 0 20px rgba(0, 0, 0, 0.67);
+}
+
+.cs-intro-body {
+  font-size: clamp(0.92rem, 2.4vmin, 1.02rem);
+  color: rgba(210, 225, 250, 0.9);
+  line-height: 2;
+  margin: 0 0 1rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1.0), 0 0 20px rgba(0, 0, 0, 0.67);
+}
+
+.cs-intro-body a {
+  color: rgb(var(--ds-color-link, 130, 170, 255));
+  text-underline-offset: 3px;
+}
+
 .room-narration {
   position: relative;
   z-index: var(--cs-z-ui-mid-3);
@@ -233,6 +266,22 @@ body.creation-page {
   font-family: var(--ds-font-serif-ui);
   font-size: clamp(0.75rem, 1.8vmin, 0.85rem);
   opacity: 0.75;
+}
+
+.prologue-definition-link {
+  display: block;
+  width: fit-content;
+  margin: 0.5rem auto 0;
+  font-family: var(--ds-font-serif-ui);
+  font-size: clamp(0.8rem, 1.9vmin, 0.9rem);
+  color: rgb(var(--ds-color-link));
+  text-decoration: none;
+  border-bottom: 1px solid rgba(var(--ds-color-link), 0.4);
+}
+
+.prologue-definition-link:hover,
+.prologue-definition-link:focus-visible {
+  border-bottom-color: rgb(var(--ds-color-link));
 }
 
 .prologue-desc-title {

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--
+  このファイルはテンプレート。生成物 reader/five-stages.html・reader/five-stages-en.html を直接編集しない。
+  正本:   knowledge/schema/five-stages.md（英語は knowledge/schema/five-stages.en.md）
+  再生成: python3 scripts/build-five-stages.py
+  デザイン: cs の VI（src/styles/tokens.css の変数と cosmic ambient）。reader-th-template.html と同じ面と見出し。WebGL は使わない
+-->
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>創造の5段階 — 現在の定義 | 創造とは</title>
+<link rel="canonical" href="https://uminomae.github.io/project-design-theory/cs/reader/five-stages.html">
+<link rel="alternate" hreflang="ja" href="https://uminomae.github.io/project-design-theory/cs/reader/five-stages.html">
+<link rel="alternate" hreflang="en" href="https://uminomae.github.io/project-design-theory/cs/reader/five-stages-en.html">
+<meta name="description" content="創造の5段階（場・波・縁・渦・束）の今の定義。pjdhiro の体感から書いた暫定の定義と、ほかの論ではこう言うケースもある、という論じる候補の二つの層で書く。">
+
+<script>
+  if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X5WQCB3JYT');
+  }
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../src/styles/tokens.css">
+
+<style>
+  :root{
+    --bg:var(--ds-color-bg-body);
+    --panel:var(--cs-surface-2);
+    --ink:rgb(var(--ds-color-highlight));
+    --muted:rgb(var(--ds-color-sub-text));
+    --faint:rgba(var(--ds-color-sub-text),.55);
+    --line:rgba(var(--ds-color-accent),.14);
+    --accent:rgb(var(--ds-color-accent));
+    --link:rgb(var(--ds-color-link));
+    --radius:var(--ds-radius-lg);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;color:var(--ink);
+    font-family:var(--cs-font-sans-ui);
+    line-height:1.85;padding:26px 16px 70px;
+    background:
+      radial-gradient(1100px 760px at 18% -8%, rgba(var(--ds-color-accent),.10), transparent 60%),
+      radial-gradient(1000px 720px at 100% 4%, rgba(var(--ds-color-accent),.07), transparent 55%),
+      var(--bg);
+    background-attachment:fixed;}
+  .wrap{max-width:860px;margin:0 auto;
+    background:var(--cs-surface-2);
+    border:1px solid var(--line);border-radius:var(--radius);
+    padding:28px clamp(16px,4vw,36px) 40px;}
+
+  .reader-hero h1{font-family:var(--ds-font-serif-display);font-size:clamp(1.4rem,4vw,2rem);
+    margin:0 0 10px;font-weight:500;letter-spacing:var(--ds-letter-ui-tight);color:rgb(var(--ds-color-heading));}
+  .reader-meta{font-size:12.5px;color:var(--faint);margin:0 0 14px;}
+  .reader-meta a{color:var(--link);text-decoration:none;}
+  .reader-meta a:hover{text-decoration:underline;}
+  .reader-lead{color:var(--muted);font-size:15px;margin:0 0 .8em;}
+
+  .reader-article{margin-top:24px;font-size:15.5px;}
+  .reader-article p{margin:0 0 1.1em;}
+  .reader-heading{font-family:var(--ds-font-serif-display);font-weight:500;
+    color:rgb(var(--ds-color-heading));letter-spacing:var(--ds-letter-ui-tight);
+    border-bottom:1px solid var(--line);padding-bottom:.3em;scroll-margin-top:16px;}
+  h2.reader-heading{font-size:1.35rem;margin:2.2em 0 .8em;}
+  h3.reader-heading{font-size:1.1rem;margin:1.8em 0 .5em;border-bottom:none;}
+  .reader-article a{color:var(--link);}
+  .reader-article strong{color:var(--cs-md-strong);}
+  .reader-article ul{padding-left:1.3em;margin:0 0 1.2em;}
+  .reader-article li{margin:.35em 0;}
+
+  .stage-definition{font-family:var(--ds-font-serif-display);font-size:1.08em;
+    border-left:3px solid rgba(var(--ds-color-accent),.45);padding:.2em 0 .2em .9em;}
+  .layer-intro{color:var(--muted);font-size:.95em;}
+  .count-note{color:var(--faint);font-size:.88em;}
+
+  .reader-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);}
+  .reader-table{padding:6px 14px;margin:0 0 1.3em;overflow-x:auto;}
+  .reader-table table{border-collapse:collapse;width:100%;font-size:.9em;}
+  .reader-table th{color:var(--cs-md-table-head-text);background:var(--cs-md-table-head-bg);
+    text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap;}
+  .reader-table td{color:var(--cs-md-table-cell-text);padding:8px 10px;
+    border-bottom:1px solid var(--line);vertical-align:top;}
+  .table-wide th,.table-wide td:not(:nth-child(4)){word-break:keep-all;white-space:normal;}
+  .table-wide td:nth-child(4){min-width:12em;}
+  .reader-table td:first-child{white-space:nowrap;}
+  .reader-table tr:last-child td{border-bottom:none;}
+  /* 狭い幅では表を行ごとに積む（表の中を横に送らない） */
+  @media (max-width:760px){
+    .tablefit{padding:4px 12px;}
+    .tablefit thead{display:none;}
+    .tablefit table,.tablefit tbody,.tablefit tr,.tablefit td{display:block;width:100%;}
+    .tablefit tr{padding:8px 0;border-bottom:1px solid var(--line);}
+    .tablefit tr:last-child{border-bottom:none;}
+    .tablefit td,.table-wide td:nth-child(4){border-bottom:none;padding:2px 0;min-width:0;}
+    .tablefit td::before{content:attr(data-label);display:block;font-size:.8em;color:var(--faint);}
+  }
+
+  .reader-toc{padding:14px 20px;margin:1.4em 0;}
+  .reader-toc-title{font-weight:700;font-size:.92em;color:var(--muted);
+    letter-spacing:var(--ds-letter-ui-wide);margin:0 0 6px;}
+  .reader-toc ol{margin:0;padding-left:1.3em;font-size:.94em;}
+  .reader-toc li{margin:.25em 0;}
+  .reader-toc a{color:var(--link);text-decoration:none;}
+  .reader-toc a:hover{text-decoration:underline;}
+
+  footer{margin-top:44px;font-size:12px;color:var(--faint);
+    border-top:1px solid var(--line);padding-top:14px;}
+  footer a{color:var(--link);text-decoration:none;}
+  footer a:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="reader-hero">
+    <h1>創造の5段階 — 現在の定義</h1>
+    <p class="reader-meta">
+      最終更新: 2026-11-10 ／ <a href="./five-stages-en.html" hreflang="en" lang="en">English</a> ・ <a href="../index.html">創造とは</a> ・
+      <a href="https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/schema/five-stages.md">正本 (GitHub)</a>
+    </p>
+    <p class="reader-lead">創造の5段階（場・波・縁・渦・束）の、今の定義です。定義は暫定で、二つの層で書いています。</p><p class="reader-lead">第 1 層は、pjdhiro の体感から書いた定義です。第 2 層は、ほかの論ではこう言うケースもある、という特徴で、30 の分野の調べで報告されたものです。第 2 層の特徴を一つずつ論じ、第 1 層に組み込んで補強していきます。組み込んだときは、末尾の版の記録に書き足します。</p>
+  </header>
+
+  <nav class="reader-toc reader-card" aria-label="目次"><p class="reader-toc-title">目次</p><ol><li><a href="#五つの段の一覧">五つの段の一覧</a></li><li><a href="#第-1-層-pjdhiro-の体感-暫定の定義">第 1 層：pjdhiro の体感（暫定の定義）</a></li><li><a href="#第-2-層-ほかの論ではこう言うケースもある-論じる候補">第 2 層：ほかの論ではこう言うケースもある（論じる候補）</a></li><li><a href="#版の記録">版の記録</a></li></ol></nav>
+
+  <article class="reader-article">
+<h2 class="reader-heading" id="五つの段の一覧">五つの段の一覧</h2>
+<div class="reader-card reader-table tablefit table-wide"><table><thead><tr><th>段階</th><th>日本語</th><th>英語</th><th>一文の定義（第 1 層）</th><th>状況の言葉</th><th>海のたとえ</th><th>構造</th><th>プロセス</th></tr></thead><tbody><tr><td data-label="段階">1</td><td data-label="日本語">場</td><td data-label="英語">Field</td><td data-label="一文の定義（第 1 層）">波が立つ前の、安定した海のような状態。理屈の上での出発点。</td><td data-label="状況の言葉">安定</td><td data-label="海のたとえ">海</td><td data-label="構造">無（認知しづらい）</td><td data-label="プロセス">漂う</td></tr><tr><td data-label="段階">2</td><td data-label="日本語">波</td><td data-label="英語">Wave</td><td data-label="一文の定義（第 1 層）">場の中に差が生まれ、揺れとして立ち上がる。状況が変わり、差が分かれて向かい合う。</td><td data-label="状況の言葉">変化</td><td data-label="海のたとえ">波</td><td data-label="構造">ゆれ・対立</td><td data-label="プロセス">分離</td></tr><tr><td data-label="段階">3</td><td data-label="日本語">縁</td><td data-label="英語">Edge</td><td data-label="一文の定義（第 1 層）">異質なものが出会い、ぶつかる境目。そこで新しい関係や法則が生まれる。</td><td data-label="状況の言葉">衝突</td><td data-label="海のたとえ">波間</td><td data-label="構造">境界・関係</td><td data-label="プロセス">出会い・衝突</td></tr><tr><td data-label="段階">4</td><td data-label="日本語">渦</td><td data-label="英語">Vortex</td><td data-label="一文の定義（第 1 層）">ひとつのまとまりとして立ち上がる。二つが見分けられるのに、一つであるかのよう。</td><td data-label="状況の言葉">統合</td><td data-label="海のたとえ">渦</td><td data-label="構造">個・立ち上がり</td><td data-label="プロセス">包摂</td></tr><tr><td data-label="段階">5</td><td data-label="日本語">束</td><td data-label="英語">Bundle</td><td data-label="一文の定義（第 1 層）">渦どうしが影響し合い、新しい形として残る集まり。それがまた次の場になる。</td><td data-label="状況の言葉">新たな安定</td><td data-label="海のたとえ">海流</td><td data-label="構造">方向</td><td data-label="プロセス">集合</td></tr></tbody></table></div>
+<p>「状況の言葉」と「海のたとえ」は、pjdhiro が五段階を言い換えた二つの並び（安定－変化－衝突－統合－新たな安定／海－波－波間－渦－海流）。状況の言葉の「統合」は、混ざって区別が消えることではなく、二つが見分けられるまま切り離せなくなること（渦の補いを見る）。</p>
+<h2 class="reader-heading" id="第-1-層-pjdhiro-の体感-暫定の定義">第 1 層：pjdhiro の体感（暫定の定義）</h2>
+<p class="layer-intro">この層は、pjdhiro の体感から書いた暫定の定義です。段ごとに、太字の一文が定義で、その下が補いです。</p>
+<h3 class="reader-heading" id="場-field">場（Field）</h3>
+<p class="stage-definition"><strong>波が立つ前の、安定した海のような状態。理屈の上での出発点。</strong></p>
+<p>現実には、いつも何かが動いている。場は、その動きを静止画のように一瞬止めて見たときの、安定したありさまである。環境や状況や世界の安定したようすを、空間の言葉で言ったもので、時間は含まない。構造の欄の「無」は、何もないという意味ではない。海を波と切り分けて考えたときの理屈の上の姿で、何もないかのように認知しづらいことを指す。</p>
+<h3 class="reader-heading" id="波-wave">波（Wave）</h3>
+<p class="stage-definition"><strong>場の中に差が生まれ、揺れとして立ち上がる。状況が変わり、差が分かれて向かい合う。</strong></p>
+<p>波は状況の変化である。波がまったく無い海は無いので、場と波は切り離せない。向かい合った差がぶつかるところは、次の縁で書く。</p>
+<h3 class="reader-heading" id="縁-edge">縁（Edge）</h3>
+<p class="stage-definition"><strong>異質なものが出会い、ぶつかる境目。そこで新しい関係や法則が生まれる。</strong></p>
+<p>ぶつかる相手は、良いものだけではない。嫌なこと・悪いこと・望まないことも、外に置かずに含んで進む。対立や衝突を通らずに新しいものが生まれる形は、この五段階には似ていない。英語の Edge は、複雑系の「カオスの縁（edge of chaos）」とは別の語である。</p>
+<h3 class="reader-heading" id="渦-vortex">渦（Vortex）</h3>
+<p class="stage-definition"><strong>ひとつのまとまりとして立ち上がる。二つが見分けられるのに、一つであるかのよう。</strong></p>
+<p>混ざって区別が消えるのではない。海の渦は目では切り分けられても、海から切り離して取り出せない。それと同じように、二つは見分けられるまま、切り離せなくなる。状況の言葉の「統合」は、この意味で使う。縁と渦は、ほとんど同時に起きる。</p>
+<h3 class="reader-heading" id="束-bundle">束（Bundle）</h3>
+<p class="stage-definition"><strong>渦どうしが影響し合い、新しい形として残る集まり。それがまた次の場になる。</strong></p>
+<p>束には二つの面があり、両立する。一つは、輪郭を持った成果物として残る面。もう一つは、向きと集まりを持ち、次の場を支える面。束は新しい安定になり、次の場になるので、五つの段は輪になる。</p>
+<h3 class="reader-heading" id="五つ全体に添える文">五つ全体に添える文</h3>
+<ul><li>五つの段は、順に進むとは限らない。同時に走り、入り込み合う。</li><li>縁と渦は、ほとんど同時に起きる。そのために場が揺らぎ、そのあとに新しい安定になる。瞬時に起きたように見えても、始まりは場が揺らいだときにある。</li><li>統合に至らずに終わることもある。片方が勝って終わる形や、揺らいだまま場に戻り、次の対立を待つ形がある。</li></ul>
+<h2 class="reader-heading" id="第-2-層-ほかの論ではこう言うケースもある-論じる候補">第 2 層：ほかの論ではこう言うケースもある（論じる候補）</h2>
+<p>30 分野の調べで報告された、第 1 層と並べて論じる特徴。採るか捨てるかで閉じず、論じて定義に組み込み、補強していく。</p>
+<p class="layer-intro">ここに並べた候補は、各分野の論を原典で照らし直す前の報告を、分野を横断して集計したもの（2026 年 4 月）から拾いました。括弧の中の分野の数と信頼度は、その集計の数をそのまま写したもので、まだ確かめていません。原典で照らし直した分野の記録で数え直してから、一つずつ論じます。「仮説」は、その集計から立てた五つの仮説のことで、数字はその番号です。</p>
+<h3 class="reader-heading" id="場">場</h3>
+<ul><li>はじめの場と、束がつくった場（輪を回ってきた場）の二種がある <span class="count-note">（集計：10 分野。仮説 5「場の潜在性」の評価では、輪を回ってきた場は採れそう、はじめの場を別に立てるかは保持）</span></li><li>場には条件や層や質がある（集計：6 分野）。受け身の前提でなく、潜在性を持つ構造と見る <span class="count-note">（集計：8 分野。仮説 5 の信頼度は中）</span></li><li>「何も分かれていない」より「まだ焦点が合っていない」と読む <span class="count-note">（集計：4 分野）</span></li><li>全段階の基盤の条件である <span class="count-note">（集計：3 分野）</span></li></ul>
+<h3 class="reader-heading" id="波">波</h3>
+<ul><li>波は内から起きることも、外から来ることもある <span class="count-note">（集計：8 分野）</span></li><li>差の生まれるもとは、いろいろある <span class="count-note">（集計：5 分野）</span></li><li>波だけを独立に論じたものは少ない <span class="count-note">（集計：4 分野）</span></li></ul>
+<h3 class="reader-heading" id="縁">縁</h3>
+<ul><li>縁は一つの形でなく、いくつもの型を持つ一族（値を越える型・面で接する型・伝わっていく型 など） <span class="count-note">（集計：20 分野あまり。仮説 2「縁の概念族化」の信頼度は高、28 分野）</span></li><li>境目は細い線でなく、帯のような幅を持つ。その中に、ある値を越えると一気に移る点がある <span class="count-note">（仮説 3「帯域内閾値」の信頼度は中、11 分野で自然科学に偏る）</span></li><li>縁に、釣り合う型と、枝分かれする型の二つの系統がある <span class="count-note">（集計：6 分野）</span></li><li>関係の量や接し方の質が、その後を決める <span class="count-note">（集計：5 分野）</span></li><li>縁まで来ても、渦に至らない道がある <span class="count-note">（集計：4 分野）</span></li></ul>
+<h3 class="reader-heading" id="渦">渦</h3>
+<ul><li>新しいものを生む渦と、壊す渦の二つの向きがある <span class="count-note">（集計：8 分野）</span></li><li>渦が起きない系や道もある <span class="count-note">（集計：5 分野）</span></li><li>目的を持たずにまとまっていく（自己組織化）ことが芯である <span class="count-note">（集計：4 分野）</span></li></ul>
+<h3 class="reader-heading" id="束">束</h3>
+<ul><li>束は次の場の種になり、同じところへは戻らない（輪でなく、らせん） <span class="count-note">（集計：15 分野あまり。仮説 1「螺旋化」の信頼度は高、22 分野）</span></li><li>安定のしかたに、いくつもの型がある <span class="count-note">（集計：8 分野）</span></li><li>束は開いていて、条件によって上書きされうる <span class="count-note">（集計：5 分野）</span></li><li>固まりすぎる、まとまりきらない、という束の病のような形がある <span class="count-note">（集計：3 分野）</span></li></ul>
+<h3 class="reader-heading" id="五つ全体">五つ全体</h3>
+<ul><li>どの段にも、その段に固有の至らない形がある <span class="count-note">（仮説 4「失敗モード内在」の信頼度は高、13＋11 分野）</span></li></ul>
+<h2 class="reader-heading" id="版の記録">版の記録</h2>
+<div class="reader-card reader-table tablefit"><table><thead><tr><th>日付</th><th>組み込んだもの</th></tr></thead><tbody><tr><td data-label="日付">2026-11-10</td><td data-label="組み込んだもの">初版。第 1 層を、五つの一文と補い・状況の言葉・海のたとえ・構造とプロセス・全体に添える三つの文で書いた。縁の英語を Edge にした。第 2 層に、照合し直す前の集計から拾った論じる候補を置いた。</td></tr></tbody></table></div>
+  </article>
+
+  <footer>
+    定義は、30 の分野の調べで見つかる特徴を論じ、組み込んで補強していきます。<br><a href="../index.html">創造とは</a> ・ <a href="../sources.html">原典の台帳</a>
+  </footer>
+</div>
+</body>
+</html>

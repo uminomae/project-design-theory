@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルはテンプレート。生成物 reader/research-history.html を直接編集しないでください。
+  正本:   evidence/themes/TH-002-research-history/READER-research-history.md
+  再生成: python3 scripts/build-reader-th.py
+  手順:   reader/README.md
+
+  デザイン制約:
+  - cs の VI を継承する。背景はメインサイトと同じ Three.js シーン
+    （src/graphics-entry.js createEmbeddedGraphic、?graphic= で 忍/意 切替・既定 i）
+  - WebGL 不可・prefers-reduced-motion 時は radial-gradient の cosmic ambient にフォールバック
+  - カラーは src/styles/tokens.css の CSS 変数経由。生 rgba(数値) 直書き禁止
+  - ページ固有 semantic 色（--green/--amber）は dashboard.html の page-local palette を踏襲
+-->
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>調査の経緯：創造の五段階は、どこから来て、どう調べられてきたか（工事中） | creation-space</title>
+<link rel="canonical" href="https://uminomae.github.io/project-design-theory/cs/reader/research-history.html">
+<meta name="description" content="創造の五段階（場・波・縁・渦・束）は、pjdhiro の体感から来た仮説です。30 の分野に広げた調べ、原典の収集、一つずつの照合し直しまで、仮説がどう確かめられてきたかをたどります。">
+<meta name="robots" content="noindex">
+
+<!-- Analytics (dashboard.html と同一の localhost ガード付きスニペット) -->
+<script>
+  if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X5WQCB3JYT');
+  }
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../src/styles/tokens.css">
+
+<!-- Vendor modules (index.html と同一バージョン) -->
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.183.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.183.0/examples/jsm/"
+    }
+  }
+</script>
+
+<style>
+  /* creation-space design-system aligned palette (cosmic blue).
+     dashboard.html と同じく、page-local var を design-system token に
+     remap してメインサイトの雰囲気を継承する。 */
+  :root{
+    --bg:var(--ds-color-bg-body);                 /* #050508 深い暗背景 */
+    --panel:var(--cs-surface-2);                  /* card/panel 面 */
+    --panel2:var(--cs-surface-3);                 /* 一段手前の面 */
+    --ink:rgb(var(--ds-color-highlight));
+    --muted:rgb(var(--ds-color-sub-text));
+    --faint:rgba(var(--ds-color-sub-text),.55);
+    --line:rgba(var(--ds-color-accent),.14);
+    --accent:rgb(var(--ds-color-accent));
+    --link:rgb(var(--ds-color-link));
+    /* page-local semantic status (dashboard.html の cool-harmonized palette を踏襲) */
+    --green:#5cc2a3; --amber:#e0ad4e;
+    --radius:var(--ds-radius-lg);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;color:var(--ink);
+    font-family:var(--cs-font-sans-ui);
+    line-height:1.85;padding:26px 18px 70px;
+    /* cosmic ambient (DESIGN.md §1): radial-gradient は Three.js 背景の
+       フォールバック（WebGL 不可・reduced-motion・ロード失敗時）。
+       WebGL 成功時は #canvas-container が手前に重なる。 */
+    background:
+      radial-gradient(1100px 760px at 18% -8%, rgba(var(--ds-color-accent),.10), transparent 60%),
+      radial-gradient(1000px 720px at 100% 4%, rgba(var(--ds-color-accent),.07), transparent 55%),
+      var(--bg);
+    background-attachment:fixed;}
+
+  /* Three.js 背景（index.html #canvas-container と同役）。
+     可読性は読書カラムのガラス面が担う（シーンは減光しない）。 */
+  #canvas-container{position:fixed;inset:0;z-index:var(--cs-z-base);pointer-events:none;}
+  #canvas-container canvas{display:block;width:100%;height:100%;}
+
+  /* 読書カラム: シーンの上に敷くガラス面（可読性のためのスクリム） */
+  .wrap{max-width:860px;margin:0 auto;position:relative;z-index:var(--cs-z-content);
+    background:var(--cs-surface-2);
+    border:1px solid var(--line);border-radius:var(--radius);
+    padding:28px clamp(16px,4vw,36px) 40px;
+    backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);}
+
+  /* 草稿バナー */
+  .draft-banner{background:rgba(var(--ds-color-accent),.08);
+    border:1px solid var(--line);border-left:4px solid var(--amber);
+    border-radius:var(--radius);padding:12px 16px;margin:0 0 26px;
+    font-size:13.5px;color:var(--muted);}
+  .draft-banner b{color:var(--ink);}
+
+  /* hero */
+  .reader-hero h1{font-family:var(--ds-font-serif-display);font-size:clamp(1.4rem,4vw,2rem);
+    margin:0 0 8px;font-weight:500;letter-spacing:var(--ds-letter-ui-tight);color:rgb(var(--ds-color-heading));}
+  .reader-subtitle{color:var(--muted);font-size:15px;margin:0 0 10px;}
+  .reader-meta{font-size:12.5px;color:var(--faint);margin:0 0 8px;}
+  .reader-meta a{color:var(--link);text-decoration:none;}
+  .reader-meta a:hover{text-decoration:underline;}
+
+  /* 信頼度バッジ（実証済み [P] / 解釈 [M] / 推測 [S]） */
+  .badge-p,.badge-m,.badge-s{font-size:.82em;font-weight:700;
+    padding:1px 8px;border-radius:20px;white-space:nowrap;}
+  .badge-p{background:rgba(var(--ds-color-accent),.0);color:var(--green);border:1px solid var(--green);}
+  .badge-m{background:rgba(var(--ds-color-link),.18);color:var(--link);border:1px solid rgba(var(--ds-color-link),.35);}
+  .badge-s{background:rgba(var(--ds-color-accent),.0);color:var(--amber);border:1px solid var(--amber);}
+
+  /* article body */
+  .reader-article{margin-top:30px;font-size:15.5px;}
+  .reader-article p{margin:0 0 1.1em;}
+  .reader-heading{font-family:var(--ds-font-serif-display);font-weight:500;
+    color:rgb(var(--ds-color-heading));letter-spacing:var(--ds-letter-ui-tight);
+    border-bottom:1px solid var(--line);padding-bottom:.3em;}
+  h2.reader-heading{font-size:1.35rem;margin:2.2em 0 .8em;}
+  h3.reader-heading{font-size:1.1rem;margin:1.8em 0 .6em;border-bottom:none;}
+  .reader-article a{color:var(--link);}
+  .reader-article code{font-family:var(--cs-font-mono-system);font-size:.9em;
+    background:var(--cs-md-inline-code-bg);color:var(--cs-md-inline-code);
+    padding:.1em .35em;border-radius:var(--ds-radius-sm);}
+  .reader-article strong{color:var(--cs-md-strong);}
+  .reader-article em{color:var(--cs-md-em);}
+  .reader-article hr{border:none;border-top:1px solid var(--line);margin:2em 0;}
+
+  /* card panel（表・引用を面に載せる） */
+  .reader-card{background:var(--panel);border:1px solid var(--line);
+    border-radius:var(--radius);}
+  .reader-table{padding:6px 14px;margin:0 0 1.3em;overflow-x:auto;}
+  .reader-table table{border-collapse:collapse;width:100%;font-size:.94em;}
+  .reader-table th{color:var(--cs-md-table-head-text);background:var(--cs-md-table-head-bg);
+    text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);}
+  .reader-table td{color:var(--cs-md-table-cell-text);padding:8px 10px;
+    border-bottom:1px solid var(--line);}
+  .reader-table tr:last-child td{border-bottom:none;}
+  blockquote.reader-callout{margin:0 0 1.3em;padding:12px 18px;
+    border-left:4px solid rgba(var(--ds-color-accent),.45);
+    color:var(--cs-md-quote);font-size:.97em;}
+  blockquote.reader-callout p:last-child{margin-bottom:0;}
+
+  /* アコーディオン補足（「くわしく」畳み。本文=本筋 / 畳み=深掘り の3レベル分離） */
+  details.reader-fold{background:var(--cs-surface-1);border:1px solid var(--line);
+    border-radius:var(--radius);margin:0 0 1.3em;padding:0;}
+  details.reader-fold summary{cursor:pointer;padding:10px 16px;
+    font-size:.93em;font-weight:700;color:var(--link);
+    list-style-position:inside;}
+  details.reader-fold summary:hover{color:var(--ink);}
+  details.reader-fold[open] summary{border-bottom:1px solid var(--line);}
+  details.reader-fold .fold-body{padding:12px 18px 4px;font-size:.95em;color:var(--muted);}
+  details.reader-fold .fold-body p{margin:0 0 .9em;}
+  details.reader-fold .fold-body strong{color:var(--ink);}
+
+  /* 理解度チェック（埋め込みクイズ = speed regulator）。答えは畳んで隠す */
+  details.reader-quiz{background:var(--cs-surface-2);border:1px solid var(--cs-accent-line, var(--line));
+    border-left:3px solid var(--link);border-radius:var(--radius);margin:1.4em 0;padding:0;}
+  details.reader-quiz summary{cursor:pointer;padding:11px 16px;
+    font-size:.95em;font-weight:700;color:var(--ink);list-style-position:inside;}
+  details.reader-quiz summary::before{content:"たしかめ  ";font-size:.8em;font-weight:700;
+    color:var(--link);letter-spacing:var(--ds-letter-ui-wide);}
+  details.reader-quiz summary:hover{color:var(--link);}
+  details.reader-quiz[open] summary{border-bottom:1px solid var(--line);}
+  details.reader-quiz .quiz-body{padding:12px 18px 4px;font-size:.95em;color:var(--muted);}
+  details.reader-quiz .quiz-body p{margin:0 0 .9em;}
+  details.reader-quiz .quiz-body strong{color:var(--ink);}
+  details.reader-quiz .quiz-a{color:var(--link);font-weight:700;}
+
+  /* 目次 */
+  .reader-toc{padding:14px 20px;margin:1.6em 0;}
+  .reader-toc-title{font-weight:700;font-size:.92em;color:var(--muted);
+    letter-spacing:var(--ds-letter-ui-wide);margin:0 0 6px;}
+  .reader-toc ol{margin:0;padding-left:1.3em;font-size:.94em;}
+  .reader-toc li{margin:.25em 0;}
+  .reader-toc a{color:var(--link);text-decoration:none;}
+  .reader-toc a:hover{text-decoration:underline;}
+
+  /* 出典脚注: 本文の [n] 上付きリンクと末尾の出典リストを結ぶ */
+  sup.refnote{font-size:.72em;line-height:0;scroll-margin-top:24px;}
+  sup.refnote a{color:var(--link);text-decoration:none;padding:0 1px;font-weight:700;}
+  sup.refnote a:hover{text-decoration:underline;}
+  ol.refs{margin:0;padding:12px 16px 12px 2.6em;font-size:.9em;color:var(--muted);}
+  ol.refs li{margin:.55em 0;line-height:1.75;scroll-margin-top:24px;
+    padding:2px 6px;border-radius:var(--ds-radius-sm);}
+  ol.refs li:target{background:rgba(var(--ds-color-accent),.12);}
+  ol.refs em{color:var(--cs-md-em);}
+  ol.refs .backref{text-decoration:none;margin-left:.35em;}
+
+  footer{margin-top:44px;font-size:12px;color:var(--faint);
+    border-top:1px solid var(--line);padding-top:14px;}
+  footer a{color:var(--link);text-decoration:none;}
+  footer a:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+<div id="canvas-container" aria-hidden="true"></div>
+<script type="module">
+  // メインサイトの Three.js 背景を埋め込む（?graphic=sinobi|i で切替、既定 i=意）。
+  // 失敗時は何もしない（body の radial-gradient がそのまま背景になる）。
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    import('../src/graphics-entry.js')
+      .then(function (mod) {
+        var mode = new URLSearchParams(window.location.search).get('graphic') || 'i';
+        return mod.createEmbeddedGraphic({
+          container: '#canvas-container',
+          graphicMode: mode
+        });
+      })
+      .catch(function (err) {
+        console.warn('[reader] WebGL background disabled:', err);
+      });
+  }
+</script>
+<div class="wrap">
+  <div class="draft-banner">
+    🚧 <b>工事中</b>です。前半（仮説と調べの歩み）まで書きました。「補強されたこと」は、調べで論じるたびに書き足します。
+  </div>
+
+  <header class="reader-hero">
+    <h1>調査の経緯：創造の五段階は、どこから来て、どう調べられてきたか</h1>
+    <p class="reader-subtitle">仮説が生まれ、30 の分野で確かめ直されていく道のりを、順にたどる読み物</p>
+    <p class="reader-meta">
+      最終更新: 2026-11-10 ／
+      <a href="https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/themes/TH-002-research-history/READER-research-history.md">正本 (GitHub)</a> ・
+      <a href="https://github.com/uminomae/project-design-theory/issues/73">追跡 Issue #73</a> ・
+      <a href="../index.html">creation-space（創造とは）</a>
+    </p>
+  </header>
+
+  <article class="reader-article">
+<p>「<a href="../">創造とは</a>」は、創造を、場 → 波 → 縁 → 渦 → 束 の五つの段階で書いています。この五段階は、30 の分野を調べた結果から導いたものではありません。調べる前に、仮説としてありました。</p>
+<p>このページは、その仮説がどこから来たのか、そして、どう調べられ、確かめ直されてきたのかをたどります。</p>
+<ul>
+<li><strong>仮説</strong>：五段階は、pjdhiro の体感から来ています。発想のもとには量子の場があり、出発点には、正反合くらいの、対立と統合の形を置いています。</li>
+<li><strong>調べの歩み</strong>：まず AI が 30 の分野を広く調べました。けれど、原典を読まずに書いた報告でした。そこで原典を集め、2026 年 11 月から、一つずつ原典で照合し直しています。</li>
+<li><strong>これから</strong>：照合し直した 30 の分野を並べて論じ、ほかの論で報告された特徴を、五段階の定義に組み込んでいきます。</li>
+</ul>
+<nav class="reader-toc reader-card" aria-label="目次"><p class="reader-toc-title">目次</p><ol><li><a href="#一-仮説五段階はどこから来たのか">一　仮説：五段階は、どこから来たのか</a></li><li><a href="#二-調べの歩み仮説はどう確かめられてきたか">二　調べの歩み：仮説は、どう確かめられてきたか</a></li><li><a href="#三-補強されたこと">三　補強されたこと</a></li><li><a href="#四-まだ論じていないこと">四　まだ論じていないこと</a></li><li><a href="#このページの材料">このページの材料</a></li></ol></nav>
+<h2 class="reader-heading" id="一-仮説五段階はどこから来たのか">一　仮説：五段階は、どこから来たのか</h2>
+<p><a id="rh-hypothesis"></a>五段階には、三つのもとがあります。pjdhiro の体感、発想のもとになった量子の場、そして出発点に置いた正反合です。この章では、その三つを順に見て、最後に、今の五段階の形を置きます。</p>
+<h3 class="reader-heading" id="体感から来た暫定の定義">体感から来た、暫定の定義</h3>
+<p>五段階は、pjdhiro が自分の体感を言葉にしたものです。2026 年 11 月、Claude が五段階の定義を一つに決めて、各ページへ写そうとしたとき、pjdhiro はこう答えています。</p>
+<blockquote class="reader-card reader-callout">
+<p><strong>pjdhiro の見方：</strong>定義は暫定です。私の体感ではこう、他の論ではこう言うケースもあると言ってる。</p>
+</blockquote>
+<p>定義は、体感から来た仮説として置かれています。調べて分かったことは、ほかの論ではこう言うこともある、という形で並べていきます。</p>
+<blockquote class="reader-card reader-callout">
+<p>🚧 <strong>工事中</strong>：pjdhiro が、どんな場面で五段階を感じてきたか（体感の中身）を、ここに書きます。本人の言葉を集めているところです。</p>
+</blockquote>
+<h3 class="reader-heading" id="発想のもとは量子の場">発想のもとは、量子の場</h3>
+<p>五段階の最初の段は「場」です。この語は、経営学で知られる野中郁次郎の「場」から借りたものではありません。Claude がその由来を聞いたとき、pjdhiro はこう答えています。</p>
+<blockquote class="reader-card reader-callout">
+<p><strong>pjdhiro の答え：</strong>野中の場とは違います。発想は量子の場です。とはいえ、私の素朴感覚です。環境や状況や世界の安定したイメージのことを空間的な表現として選びました。時間は含まれてません。時間も入れるなら時代とするでしょう。</p>
+</blockquote>
+<p>場と海が結びついた跡は、2025 年 6 月の pjdhiro の投稿に残っています。この投稿で pjdhiro は、精神を陰陽の印（☯️）のような回転するものと仮定して、三次元で扱おうとしていました。やってみると 720 度で一回りする形になり、回転を表す数学の道具（スピノル）も 720 度で一回りすることに行き当たります。そこで、こう書いています。</p>
+<blockquote class="reader-card reader-callout">
+<p><strong>pjdhiro の投稿から：</strong>スピノルは命令文としてではなく、場として扱う方がいいのかも。「海」として。</p>
+</blockquote>
+<p>（参考：<a href="https://uminomae.github.io/pjdhiro/20250616baToMinwa/">スピノル場の理解のために民話をあててみる</a>・2025-06）</p>
+<p>2025 年 12 月には、場・波・縁・渦・束の五つの名を持つ創造のモデルとして、形になりました。当時は、量子場の理論を背骨に置いた創造論と書かれ、縁の英語は Relation、渦は Spinor でした（参考：<a href="https://uminomae.github.io/pjdhiro/20260131infographic-review/">インフォグラフィック生成を通じた思考プロセスの変遷</a>・2026-01）。今は、縁を Edge、渦を Vortex と呼んでいます。</p>
+<details class="reader-fold">
+<summary>詳しく：発想のもとと似ていることは、裏付けに数えにくい</summary>
+<div class="fold-body">
+
+<p>量子の場が発想のもとなので、物理の場の理論と五段階が似て見えるのは、当然とも言えます。似ていることを、五段階を外から支える独立の裏付けとしては数えにくい、ということです。2026 年 3 月の物理学の報告も、場の量子論を「発想源」と書き、その対応の重みを割り引いていました。</p>
+<p>ほかの分野で似た形が見つかることには、意味があります。けれど、それも五段階を知っている者が探して見つけたものです。この点は、二章の「<a href="#rh-falsify">反証と盲検を試みた</a>」で、もう一度出てきます。</p>
+</div>
+</details>
+
+<h3 class="reader-heading" id="出発点に置いた正反合くらいの対立と統合">出発点に置いた、正反合くらいの対立と統合</h3>
+<p>何をもって「似ている」と見るのか。2026 年 11 月、30 の分野の調べをやり直す計画を立てたとき、pjdhiro は、似ているかを測る出発点を、こう置きました。</p>
+<blockquote class="reader-card reader-callout">
+<p><strong>pjdhiro の見方：</strong>例えば出発点を正反合としましょう。それに似ているものを探すと、電子の誕生も似ているとなる。では、どんな対立、衝突、統合だったか、を並べていくと、5段階の構造とプロセスを、群盲象を評すようにわかってくると思うのです。どれも一面でどれも間違えてはいない。</p>
+</blockquote>
+<p>正反合は、二つのものが対立し、ぶつかり、その両方を含んだ新しいものになる、という考え方の型です（ヘーゲルの弁証法を説明するときに、よく使われる言い方です）。群盲象を評すは、目の見えない人たちが象の別々の所を触り、それぞれ違うものだと言った、というたとえです。どの論も象の一面に触れていて、並べると全体の姿が少しずつ見えてくる、という見方です。</p>
+<p>ここで大事なのは、対立や衝突が欠かせないことです。pjdhiro は続けて、こう言っています。</p>
+<blockquote class="reader-card reader-callout">
+<p><strong>pjdhiro の見方：</strong>ポイントは対立や衝突が必須であることです。嫌なことや悪いことなど、良いこと以外と衝突するように包摂して進むということです。</p>
+</blockquote>
+<p>良いものだけが調和して進む形は、五段階には似ていません。嫌なこと、悪いこと、望まないことを外に置かず、それとぶつかりながら含んでいく形が、似ている形です。</p>
+<h3 class="reader-heading" id="仮説としての五段階">仮説としての五段階</h3>
+<p>三つのもとから、今の五段階は次の形で置かれています。pjdhiro は、五段階を二通りに言い換えています。状況の言葉で言うと、安定 － 変化 － 衝突 － 統合 － 新たな安定。海のたとえで言うと、海 － 波 － 波間 － 渦 － 海流です。</p>
+<div class="reader-card reader-table"><table>
+<thead>
+<tr>
+<th>段階</th>
+<th>一文の定義（暫定）</th>
+<th>状況の言葉</th>
+<th>海のたとえ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>場</td>
+<td>波が立つ前の、安定した海のような状態。理屈の上での出発点。</td>
+<td>安定</td>
+<td>海</td>
+</tr>
+<tr>
+<td>波</td>
+<td>場の中に差が生まれ、揺れとして立ち上がる。状況が変わり、差が分かれて向かい合う。</td>
+<td>変化</td>
+<td>波</td>
+</tr>
+<tr>
+<td>縁</td>
+<td>異質なものが出会い、ぶつかる境目。そこで新しい関係や法則が生まれる。</td>
+<td>衝突</td>
+<td>波間</td>
+</tr>
+<tr>
+<td>渦</td>
+<td>ひとつのまとまりとして立ち上がる。二つが見分けられるのに、一つであるかのよう。</td>
+<td>統合</td>
+<td>渦</td>
+</tr>
+<tr>
+<td>束</td>
+<td>渦どうしが影響し合い、新しい形として残る集まり。それがまた次の場になる。</td>
+<td>新たな安定</td>
+<td>海流</td>
+</tr>
+</tbody>
+</table></div>
+<p>「統合」は、混ざって区別が消えることではありません。二つが見分けられるまま、切り離せなくなることです。五つの段は順に進むとは限らず、同時に走り、入り込み合います。統合に至らずに終わることもあります。（参考：<a href="five-stages.html">創造の5段階 — 現在の定義</a>）</p>
+<p>この定義は暫定です。調べの目的は、この仮説を言い張ることではありません。pjdhiro は、こう言っています。</p>
+<blockquote class="reader-card reader-callout">
+<p><strong>pjdhiro の見方：</strong>それを組み込んで補強していくのが探索の目的です。私が言い張るためではありません。</p>
+</blockquote>
+<details class="reader-fold">
+<summary>詳しく：定義の材料にした言葉</summary>
+<div class="fold-body">
+
+<p>一文の定義は、Love駆動開発の読み物の五段階の図（Ver.1.3）の説明文と、各段について pjdhiro が言った言葉から書きました。たとえば、場については「最初の海は静止画のような瞬間となろうかと思います。安定した海の状態」、波については「波とは状況変化を意味します」、渦については「統合は難しいですね。☯️ のように二つに分けられるものが二つに分けられなくなるような」という言葉です。</p>
+<p>段階の移り方について、pjdhiro は、プリゴジンの散逸構造が近いと見ています。縁と渦はほとんど同時に起き、そのために場が揺らぎ、そのあとに新しい安定になります。瞬時に起きたように見えても、始まりは場が揺らいだときにある、という見方です。</p>
+<p>（参考：<a href="https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html#ldd-vortex">Love駆動開発と呼びたいもの</a> の章「言葉は、波間に見えた渦の名前」）</p>
+</div>
+</details>
+
+<h2 class="reader-heading" id="二-調べの歩み仮説はどう確かめられてきたか">二　調べの歩み：仮説は、どう確かめられてきたか</h2>
+<p><a id="rh-steps"></a>一章の仮説は、2026 年 2 月から調べられてきました。調べ方は、途中で大きく変わっています。はじめは AI が広く走査して報告を書き、次に原典を集め、今は一つずつ原典で照合し直しています。この章では、その順にたどります。</p>
+<h3 class="reader-heading" id="30-の分野に広げた2026-年-23-月">30 の分野に広げた（2026 年 2〜3 月）</h3>
+<p><a id="rh-wide"></a>2026 年 2 月、五段階と似た形が、どれだけ多くの分野にあるかを調べ始めました。分野は、旧帝国大学 7 校の学部の名前を骨格に選び、あとから宗教学・人類学・音楽学・建築・舞台芸術・複雑系科学・伝統知の 7 つを足して、30 になりました。</p>
+<p>調べたのは AI です。一つの分野に 10 前後、あわせて約 300 の理論を選び、五段階との対応を書き、別の AI が読み直しました。3 月 18 日には、30 の分野の報告が、同じ日に AI によって書き上がり、公開されました（参考：<a href="https://uminomae.github.io/pjdhiro/20260318-autonomous-session-report/">10時間の自律作業で30領域の調査レポートを公開した記録</a>・2026-03）。</p>
+<p>3 月の後半には、報告を横に並べて、五つのテーマ（縁の類型・閾値・再循環・場の多層性・盲点）を取り出しました。テーマごとに、五段階を崩そうとする仮説を立てて当てる反証も試みています。その結果、たとえば縁の類型は、「発見」から「解釈的な再記述」へと格下げされ、西洋の学術の伝統に限った話だ、と書き直されました。</p>
+<p>ただ、この時期の報告には、共通の弱さがありました。どの段も、Web の二次情報をもとに書かれ、原典の本文を読んでいません。点数を付けたのも、書いたのと同じ AI でした。報告そのものにも、pjdhiro の精読による検証は済んでいない、と書かれていました。</p>
+<details class="reader-fold">
+<summary>詳しく：この時期の報告で、あとで分かったこと</summary>
+<div class="fold-body">
+
+<ul>
+<li>主張の強さが、ページによってばらばらでした。トップの文は「三十の領域が、同じ方向を指していた」と書き、調べの概要は対応を「解釈仮説」と書いていました。</li>
+<li>数が合わない所が多くありました。同じテーマの件数が、ページによって違っていました。</li>
+<li>30 の報告は同じ日に書かれ、互いを読んでいません。それでも「30 領域の中で最も」のように、ほかの分野と比べる言い方がありました。</li>
+<li>一章で見た正反合は、30 の報告のどこにも名前が出てきません。「弁証法」の語が出るのは 7 本でした。出発点の形が、調べの中では名指しされていなかったことになります。</li>
+</ul>
+</div>
+</details>
+
+<h3 class="reader-heading" id="原典を集めた2026-年-47-月">原典を集めた（2026 年 4〜7 月）</h3>
+<p><a id="rh-sources"></a>4 月には、原典を読まないまま主張が強く見えている恐れから、30 の分野の調べの本文を、いったん退避させました。この時期、AI が覚えている知識を合わせて説明を書いたとき、pjdhiro はこう言っています。</p>
+<blockquote class="reader-card reader-callout">
+<p><strong>pjdhiro の指摘：</strong>それらを文献からリサーチする必要があるのですよ</p>
+</blockquote>
+<p>ここから、原典を集める作業が始まりました。論文や本の書誌を一つずつ確かめ、原典の台帳を作り、読んだ原典ごとに精読ノートを書きました。7 月の時点で、台帳に登録した原典は 439 本、そのうち本文を読めたものが 320 本、精読ノートは 303 本です（参考：<a href="../sources.html">原典の台帳</a>）。</p>
+<p>けれど、公開していた 30 の分野の報告は、大半が 3 月のままでした。集めた原典で、報告を書き直すところまでは進みませんでした。</p>
+<h3 class="reader-heading" id="寄り道で方法を試した2026-年-7-月">寄り道で、方法を試した（2026 年 7 月）</h3>
+<p><a id="rh-detour"></a>7 月には、物理学の調べの途中で湧いた問いを、読み物「<a href="wave-vortex.html">波間の渦</a>」として深掘りしました。宇宙そのものが、海の渦のような現象でできているのか、という問いです。</p>
+<p>この寄り道で、のちの照合し直しに使う方法が、いくつか試されました。出典の脚注 29 件を、原典で一つずつ照らしたこと。見つかった対応を、新しい発見か、既にある論を裏書きしたものか、五段階を当てはめただけか、の三つに分けたこと。似ている三つの理論が本当に別々に生まれたのかを調べ、二つが同じ源流から来ていると分かったことです。</p>
+<h3 class="reader-heading" id="反証と盲検を試みた2026-年-3-月11-月">反証と盲検を試みた（2026 年 3 月・11 月）</h3>
+<p><a id="rh-falsify"></a>五段階が何にでも当てはまってしまう形なら、似た形が多く見つかっても意味がありません。それを確かめるために、二つの試みをしています。</p>
+<p>一つは、3 月の反証です。上で見たとおり、テーマごとに崩そうとする仮説を当て、強すぎる言い方を下げました。</p>
+<p>もう一つは、2026 年 11 月 3 日の盲検です。五段階の定義だけを渡した AI に、13 の概念を判定させました。その中には、創造と関係のない対照の概念が 4 つ混ぜてあります。3 種類の AI に 3 回ずつ、あわせて 9 回させると、対照の概念は、36 回の判定のうち 35 回で「対応なし」とされました。</p>
+<p>ただし、弾く力は、縁の定義から来ていたのではありませんでした。何かが新しく生じる、という創造の前提から来ていました。縁は、ものどうしの関わりを書いた論には、広く当てはまってしまいます。縁を「関わり」としてだけ読むと、何にでも似て見える恐れがある、ということです。一章で見た、対立や衝突が欠かせないという芯は、この恐れへの答えにもなっています。</p>
+<details class="reader-fold">
+<summary>詳しく：この試みで、言えることと言えないこと</summary>
+<div class="fold-body">
+
+<p>反証も盲検も、判定したのは AI です。AI が作った報告を、AI が確かめている形で、閉じた輪の中の評価です。2026 年 10 月に今の立ち位置を確かめたときも、世間の評価はまだ無く、人の読み手による確かめもまだありませんでした。</p>
+<p>そのため、反証や盲検の判定は、五段階が正しいかどうかの根拠には使っていません。一つずつの論が、原典に何と書いているかを確かめることを、調べの土台にしています。それが次の節です。</p>
+<p>（参考：盲検の結果の記録 <a href="https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/falsification/blind-test-5stage/RESULTS.md">RESULTS.md</a>）</p>
+</div>
+</details>
+
+<h3 class="reader-heading" id="一つずつ原典で照合し直す2026-年-11-月">一つずつ、原典で照合し直す（2026 年 11 月〜）</h3>
+<p><a id="rh-recheck"></a>2026 年 11 月のはじめ、pjdhiro は、それまでの報告をもとに、創造をこう見ていました。</p>
+<blockquote class="reader-card reader-callout">
+<p><strong>pjdhiro の見方：</strong>私は創造について構造とプロセスをある程度結論づけています。それは群盲の一人として。現象から３０の分野で全て同型で報告されているほど普遍的と。信頼はそこまでではありません。</p>
+</blockquote>
+<p>けれど、その報告は、原典を読まずに書かれたものでした。pjdhiro は、調べ方そのものは間違っていないが、作った当時の AI の力のために、誤りや中途半端な所があらゆる所に残っている、と判断しました。そこで、報告が引いている論を、一つずつ原典で確かめ直すことにしました。3 月の調べの延長ではなく、やり直しです。</p>
+<p>照合し直しでは、一章の正反合の見方に沿って、論ごとに一つの問いを立てます。何と何が対立し、どう衝突し、どう統合され、何が新たな安定になったか。統合に至らなかった例も外に置かず、どう終わったか（片方が勝って終わる、揺らいだまま場に戻る、分裂する、など）を同じ表に並べます。統合の良し悪しでは分けません。</p>
+<p>3 月の報告が付けた「強い対応」のような判定は、引き継いでいません。代わりに、原典の本文を読めたか、要旨までか、二次資料だけか、読めていないか、で確かめた度合いを書きます。本文を読めなかった論は、分野の論の数に入れず、表の外に分けて置きます。</p>
+<p>30 の分野は、2026 年 11 月 8 日から 9 日にかけて、一つずつ回し終えました。あわせて 246 の論を原典の本文で読み、分野ごとの記録に並べています（参考：トップの<a href="../#reports-section">30 領域調査報告</a>）。原典と合わない所が見つかった 3 月の報告は、公開をやめ、この記録に置き換えました。照合し直しの途中で、哲学の記録には、正反合の系譜としてヘーゲルを足しています。</p>
+<details class="reader-fold">
+<summary>詳しく：照合し直しで分かったことの例</summary>
+<div class="fold-body">
+
+<ul>
+<li>3 月の報告は、衝突や悪いことを「阻害」「失敗」として過程の外に置くものと、過程の中に含めて読むものが混ざっていました。照合し直しでは、どちらも原典の書き方に戻して並べています。</li>
+<li>報告が書いていた例が、原典に無かったこともあります。たとえば、内共生の論で、取り込まれた細胞が「消化される」分かれ道として挙げられていた例は、原典の本文に見当たりませんでした。</li>
+<li>報告が「対応が弱い」として外に置いた論ほど、原典が対立と、統合に至らない形をはっきり書いていることがありました。</li>
+</ul>
+</div>
+</details>
+
+<h3 class="reader-heading" id="定義を暫定に置き直した2026-年-11-月-10-日">定義を、暫定に置き直した（2026 年 11 月 10 日）</h3>
+<p><a id="rh-layers"></a>照合し直しが終わったあと、五段階の定義の書き方を決め直しました。定義は二つの層で書きます。一つは、pjdhiro の体感としての定義で、一章の表がそれです。もう一つは、ほかの論ではこう言うケースもある、という特徴です。たとえば、場には、はじめの場と、束が作った次の場の二種類がある、縁は線でなく帯のようなものかもしれない、といった報告です。</p>
+<p>二つ目の層の特徴は、まだ照合し直す前の集計から拾ったものです。照合し直した記録で数え直し、一つずつ論じて、定義に組み込んでいきます。それが次の章です。</p>
+<h2 class="reader-heading" id="三-補強されたこと">三　補強されたこと</h2>
+<p><a id="rh-reinforced"></a>🚧 <strong>工事中</strong>：照合し直した 30 の分野を並べて論じるたびに、ここに書き足します。ほかの論で報告された特徴のうち、どれが、どのように五段階の定義を補強したのかを、論じた順に置きます。</p>
+<h2 class="reader-heading" id="四-まだ論じていないこと">四　まだ論じていないこと</h2>
+<p><a id="rh-open"></a>🚧 <strong>工事中</strong>：三章で論じきれずに残った問いを、ここに置きます。</p>
+<h2 class="reader-heading" id="このページの材料">このページの材料</h2>
+<details class="reader-fold">
+<summary>材料と、確かめ方</summary>
+<div class="fold-body">
+
+<ul>
+<li>調べの歩みの日付と数は、創造とはの全体レビューの記録（<a href="https://github.com/uminomae/project-design-theory/blob/main/docs/cs-review/history.md">これまで</a>）から写しました。この記録は、2026 年 11 月 8 日に、それまでの公開ページを全部読んでまとめたものです。数はページの本文から写したもので、ページどうしで合わないものがあります。</li>
+<li>照合し直した論の数（246）は、30 の分野の記録の「本文を読めた論」を足したものです（2026-11-10 時点）。</li>
+<li>五段階の今の定義は、正本から写しました（<a href="five-stages.html">創造の5段階 — 現在の定義</a>）。</li>
+<li>pjdhiro の言葉は、対話の記録、調べの計画と規約に残した発言、pjdhiro の公開の投稿から引きました。作った言葉はありません。</li>
+<li>調べ方（規約・品質の点検・頼む文の雛形）は、別のページにまとめる予定です（🚧 工事中）。</li>
+</ul>
+</div>
+</details>
+
+  </article>
+
+  <footer>
+    この読み物は、30 の分野の調べを論じる進みに合わせて書き足します。<br>
+    <a href="../index.html">創造とは</a> ・
+    <a href="../sources.html">原典の台帳</a> ・
+    <a href="https://github.com/uminomae/project-design-theory/tree/main/cs">GitHub</a>
+  </footer>
+</div>
+</body>
+</html>

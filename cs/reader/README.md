@@ -7,6 +7,10 @@
 | ページ | 正本（編集はこちら） |
 |---|---|
 | `wave-vortex.html` | `evidence/themes/TH-001-wave-vortex-ontology/READER-wave-vortex.md` |
+| `research-history.html` | `evidence/themes/TH-002-research-history/READER-research-history.md`（調査の経緯。工事中・noindex） |
+| `five-stages.html`・`five-stages-en.html`（創造の5段階の現在の定義） | `knowledge/schema/five-stages.md`（英語は `knowledge/schema/five-stages.en.md`）。生成は `python3 scripts/build-five-stages.py`。正本から載せる部分と英語の写しの直し方は、スクリプトの頭の説明。`scripts/check.sh` が `--check` で、生成し直しと英語の写しの古さを見る |
+
+READER の正本から作るページ（五段階の定義のページの外）の表は `scripts/build-reader-th.py` の `PAGES`。題・説明・見出し・バナー・足元の文は、正本の front matter の `page:` に書く（テンプレート `scripts/reader-th-template.html` の `PAGE_` の差し込み口に入る）。足すときは、`PAGES` に一行足し、正本に `page:` を書く。
 
 ## このページが何か
 
@@ -18,7 +22,7 @@
 ## 更新手順
 
 1. 正本の READER (MD) を編集する
-2. 再生成: `python3 scripts/build-reader-th.py`
+2. 再生成: `python3 scripts/build-reader-th.py`（全ページ。一つだけは `--page research-history` など）
 3. ローカル確認: `bash server.sh 3002` → http://127.0.0.1:3002/reader/wave-vortex.html
 
 テスト用に別ファイルを指定できる:

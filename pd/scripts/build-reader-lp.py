@@ -33,12 +33,7 @@ PAGES = [
         ROOT / "reader/three-and-seven.html",
         "glow",
     ),
-    (
-        ROOT / "knowledge/research/energy-flow-psyche/READER-energy-flow-psyche.md",
-        ROOT / "scripts/reader-energy-flow-template.html",
-        ROOT / "reader/energy-flow.html",
-        "flow",
-    ),
+    # energy-flow（エネルギーの流れ）は 2026-11-10 に reader/archive/ へしまい、生成の対象から外した（Issue #111）。
     (
         ROOT / "knowledge/research/stages-screener/READER-stages-screener.md",
         ROOT / "scripts/reader-stages-screener-template.html",

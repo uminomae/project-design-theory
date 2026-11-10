@@ -47,6 +47,9 @@ run "ks：devlog の移動と深いリンク" bash -c 'cd ks && node tests/devlo
 run "ks：devlog の日英" bash -c 'cd ks && node scripts/validate-devlog-i18n.mjs'
 # 創造とはの、分野ごとの照合の記録（cs/evidence/evidence-Dxx-*.md）。見るものは docs/cs-review/README.md「記録の品質の点検」。
 run "cs：照合の記録" node scripts/check-cs-evidence.mjs
+# 創造の5段階の「現在の定義」のページ（日英）が、正本 cs/knowledge/schema/five-stages.md から生成し直されているか。
+# 英語の写し（five-stages.en.md）が、正本の今の抜き出しを訳したものか（頭のハッシュで見る・2026-11-10）。
+run "cs：現在の定義のページと英語の写し" python3 -I cs/scripts/build-five-stages.py --check
 # 創造とはの原典の台帳と記録の突き合わせ：記録が本文照合済とした原典が、台帳で読めない状態のままになっていないか。
 # 台帳の行で列がずれているもの。今は当たりがあるので、止めずに数を知らせる（2026-11-10・#111。直ったら --strict に上げる）。
 run "cs：原典の台帳と記録の突き合わせ（知らせるだけ）" node scripts/check-cs-ledger.mjs --count
