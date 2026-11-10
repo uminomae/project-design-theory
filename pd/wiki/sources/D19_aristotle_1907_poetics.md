@@ -8,7 +8,7 @@ source:
   path: "knowledge/source-notes/D19/D19-S12_aristotle-1907.md"
   manifest_id: "D19-S12"
   oa_url: "https://archive.org/download/aristotlestheory00butcuoft/aristotlestheory00butcuoft.pdf"
-compiled: "2026-04-18"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 ---
@@ -64,7 +64,7 @@ Aristotle は詩作術（ポイエーティケー）を体系的に論じ、と�
 ## 書誌情報
 
 - 著者: Aristotle (c.335 BCE); ed. & trans. S. H. Butcher
-- 年: c.335 BCE / 1907 (Butcher 4th ed.)
+- 年: c.335 BCE / 1907 (Butcher 4th ed.。手元の走査は第 4 版の後の刷で、扉の裏の刷の記録は 1923 年まで)
 - 出典: *Aristotle's Theory of Poetry and Fine Art: with a Critical Text and Translation of The Poetics*, Macmillan and Co., London
 - 原著: *Peri Poietikes* (c.335 BCE)
 - access_status: raw-confirmed（cs 側 PDF 確認済）

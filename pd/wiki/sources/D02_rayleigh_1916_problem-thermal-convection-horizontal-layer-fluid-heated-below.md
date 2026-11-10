@@ -7,12 +7,12 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D02_rayleigh_1916_problem-thermal-convection-horizontal-layer-fluid-heated-below.pdf"
   manifest_id: "D02-S08"
-compiled: "2026-04-08"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---
 
-# 下方加熱された水平流体層における熱対流の問題
+# 下から熱した水平な流体の層の対流（On convection currents in a horizontal layer of fluid）
 
 > **高校生向けのやさしい解説**
 >

@@ -1,6 +1,8 @@
 <!-- Ported from: creation-space (2026-03-24) -->
 # ルール x 守護者マトリクス
 
+> 2026-11-10：今までの kesson-space の運用の記録。今は使わない。ここで守る側に挙げた hook と agent は、今は入っていない（根の `docs/harness-pending/`）。今の規約は、repo の根の `CLAUDE.md` と根の `docs/`。中身は書き換えず、履歴として残す（Issue #111）。
+
 **バージョン**: 1.0
 **更新日**: 2026-03-24
 **採番規則**: KS-NNN（kesson-space 固有）

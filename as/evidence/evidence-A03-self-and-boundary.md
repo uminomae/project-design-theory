@@ -24,7 +24,7 @@ status: reviewed
 - 意識とメタ意識：意識（experienced）とメタ意識（re-represented）を分け、メタ意識を意識の中身を「intermittent explicit re-representation」することと書きます（Schooler 2002 の要旨）。瞑想の研究では、メタ気づきを途切れ途切れで命題の形のものに限らず、「sustained (not intermittent) and non-propositional」なものとして書く提案があります（Dunne・Thompson・Schooler 2019, p.308）。
 - メタ認知の測り方：メタ認知の感度は「the ability of the subject to introspect, not what or how much conscious experience is being introspected upon」を測る、と書き、内観の力と、内観される意識の経験を分けます（Fleming & Lau 2014, p.8）。
 - 瞑想の分類：メタ気づきは「being aware of the processes of consciousness」で、それが無いときも、注意の対象には気づいていると書きます（Dahl ら 2015, 著者稿 pp.2–3）。
-- 非二元の気づき：「it knows itself to be conscious without relying on subsequent moments of conceptual cognition」と、あとから概念で振り返ることなしに自分を知る性質として書きます（Josipovic 2014, p.10）。
+- 非二元の気づき：「it knows itself to be conscious without relying on subsequent moments of conceptual cognition」と、あとから概念で振り返ることなしに自分を知る性質として書きます（Josipovic 2014, 先行公開版 p.2）。
 - 最小限の現象的経験：「Can a conscious system be exclusively aware of awareness itself?」を問いとして立て、答えは仮説のままです（Metzinger 2020, p.2）。
 
 並べる相手は、意識とはの公開ページにある体験の言葉です。体験 1・2 は「切り取り方は、受け取る側で決まる」の節、体験 3 は「二つに分けて書くが、二つでない」の節、体験 4 は「一列の記号には、二つの値が乗りきらない」の節、「問い」は「まだ分からないこと」の節、「見立て」はページの問い（生存と信頼の二つの値）です。体験 1・2 は、メタ認知の先で到達した感覚の記述です。この記録では、体験の中身を研究の語で言い直さず、どこが似ていて、どこが食い違うかを、研究の側の記述として書きます。研究で体験を説明したことにはしません。

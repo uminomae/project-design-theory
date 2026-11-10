@@ -40,7 +40,7 @@ Misteli (2001) は、細胞構築 (cellular architecture) における**自己�
 
 ## 創造（creation-space）との関連
 
-「細胞構造は固定された建造物でなく、構成要素の絶え間ない交換と動的平衡によって自己組織化的に維持される」という Misteli の見方は、創造の場における秩序が、固定された設計でなく、要素の流動と相互作用から動的に立ち上がり維持されるという視座に対応する。Anzola らの自己組織化レビュー（[[D18_anzola_2016_self-organization-and-social|自己組織化と社会科学（Anzola, Barbrook-Johnson & Cano 2016）]]）の細胞生物学版であり、「流れの中で形が保たれる」という点は James の意識の流れ（[[D13_james_1890_principles-of-psychology-vol|心理学原理（The Principles of Psychology, James 1890, Vol.1）— 意識の流れ]]）とも遠く響き合う。
+「細胞構造は固定された建造物でなく、構成要素の絶え間ない交換と動的平衡によって自己組織化的に維持される」という Misteli の見方は、創造の場における秩序が、固定された設計でなく、要素の流動と相互作用から動的に立ち上がり維持されるという視座に対応する。Anzola らの自己組織化レビュー（[[D18_anzola_2016_self-organization-and-social|自己組織化と社会科学（Anzola, Barbrook-Johnson & Cano 2016）]]）の細胞生物学版であり、「流れの中で形が保たれる」という点は James の意識の流れ（心理学原理（The Principles of Psychology, James 1890, Vol.1）— 意識の流れ）とも遠く響き合う。
 
 ## 書誌情報
 

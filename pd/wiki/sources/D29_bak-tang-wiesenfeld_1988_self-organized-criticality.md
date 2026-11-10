@@ -8,7 +8,7 @@ source:
   path: "knowledge/raw/D29_bak-tang-wiesenfeld_1988_self-organized-criticality.pdf"
   manifest_id: "D29-S04"
   oa_url: "https://psychsafety.com/wp-content/uploads/2025/04/SOC.pdf"
-compiled: "2026-04-19"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---

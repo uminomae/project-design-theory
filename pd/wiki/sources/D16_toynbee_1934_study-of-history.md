@@ -1,13 +1,13 @@
 ---
 title: "歴史の研究 — 文明の挑戦と応答"
 description: "Toynbee は複数の独立した文明を比較分析し、文明の生成・成長・衰退の共通パターンを「挑戦と応答」の原理で説明した。歴史哲学の科学的基礎を構築しようとした野心的試み。"
-aliases: ["A Study of History", "Study of History"]
+aliases: ["A Study of History", "Study of History", "D16_unknown_0000_toynbee-a-j-a"]
 tags: [source, "D16", "原典解説"]
 source:
   repo: "creation-space"
   manifest_id: "D16-S03"
   path: "knowledge/raw/D16_toynbee_1934_study-of-history-vol1.pdf"
-compiled: "2026-04-11"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---
@@ -65,4 +65,4 @@ Toynbee の歴史理論の核心は「挑戦と応答」である。文明は外
 ## 関連
 
 - [[D16_braudel_1958_longue-duree|Braudel (1958)]] — 長期持続。Toynbee の文明サイクル論と Braudel の時間多層論は歴史の構造的把握で共鳴する
-- [[D16_ibn-khaldun_1377_muqaddimah-rosenthal|Ibn Khaldun (1377)]] — ムカッディマ。文明の興亡サイクルの先行理論。Toynbee も Ibn Khaldun のアサビーヤ概念を参照
+- Ibn Khaldun (1377) — ムカッディマ。文明の興亡サイクルの先行理論。Toynbee も Ibn Khaldun のアサビーヤ概念を参照
