@@ -490,3 +490,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「先が見えないとき、どの信号が湧くか」の畳み）
 - pages: どちらのページも、この畳み（帯ごとの表・原典の当たり方・キーツ）を引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] compile | Love駆動開発の章「心は、自分を守るしくみを持っている」から、防衛を欠けの手前の動きと読む文を外したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（防衛の章の本文・畳み二つ・言葉の表）
+- pages: どちらのページも、外した文（防衛は、湧いた信号と考えのずれを、欠けとして感じる手前で小さくしておく動き）を引いていないので本文はそのまま。`compiled` は今日のまま
