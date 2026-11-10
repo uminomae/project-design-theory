@@ -65,7 +65,7 @@
 
 - 本体の checkout の `.cache/session/` に、一つのセッションにつき一つ、`log-YYYYMMDD-<話題>.md` を書く。`.cache/` は git に入れない。worktree の `.cache/` は worktree と一緒に消えるので、worktree で作業したときも本体の側に書く（場所は `git rev-parse --git-common-dir` の一つ上）。
 - 書くこと：見出しに日付・話題・worktree の名前。見出しの直下に `## 要点` を置き、直したこと・残したこと・commit を 5 行ほどで書く。その次に `## ずれ`（上の手順 3）を置く。その下に本文：直したこと、pjdhiro の判断（趣旨と、何への答えか）、残したこと・次に回したこと、commit。
-- 作業を始める前に、`bash scripts/session-digest.sh` で、その日と前の日の記録の要点（`## 要点`・`## ずれ` と「残したこと」「commit」の節）を読み、今の状態を確かめる（型 K）。本文は、関わる記録だけを開く。全部を読まない（pjdhiro 2026-11-08・毎回読む分を小さく保つため）。
+- 作業を始める前に、`bash scripts/session-digest.sh` で、その日と前の日の記録の要点を読み、今の状態を確かめる（型 K）。既定で出るのは、題と `## 要点` の頭だけ。`## ずれ`・「残したこと」・「commit」の節は、話題の語を引数にしたときに出る（例：`bash scripts/session-digest.sh cs-review`）。関わる記録は、語で指してそこまで読む。本文は、関わる記録だけを開く。全部を読まない（pjdhiro 2026-11-08・毎回読む分を小さく保つため）。
 - worktree で始めるときは、規約と記録の要点を読んだあとに、`bash scripts/sync-develop.sh` だけを一つの呼び出しで回して develop に揃える（fetch・早送り・枝と作業ツリーの食い違いと `.claude/` の差分の確かめ）。パイプ・リダイレクト・`&&` と組まない（型 K・`corrections-k.md` の K1）。
 - 司令塔のセッションは、続けて違和感帳を見張り（帳面を出し直す）、`items` を読み、Claude がまだ読んでいないものを拾う。見張っていると、帳面の「司令塔を呼ぶ」がそのセッションに届く（`docs/tools/iwakan-cho.md`・pjdhiro 2026-11-09）。
 
@@ -75,7 +75,7 @@
 
 - **編集したら、`develop` に最速で統合する。** プルリクエストは使わない。worktree は、別のセッションが同時に動くときや、クラウドでスマートフォンから動かすときに便利なので使ってよい。その場合も、作業を worktree の枝に溜めずに、本体の checkout（`~/dev/pd/project-design-theory`）の `develop` へ早く取り込む。最速がどのタイミングかは状況による（ほかのセッションと同じファイルを触っているとき、pjdhiro の判断を待って手が止まっているとき など）。取り込みの段取りを説明して pjdhiro の手を止めない。
 - **確かめは、手元のサーバーをブラウザで見るのが基本。** 最速で目視できるから使っている。本体の checkout（develop）を launchd（`com.uminomae.project-design-theory`）が `scripts/serve.sh` で http://localhost:3001/ に常駐させている。直したらすぐ 3001 で見られる状態にしておく：直したら 3001 で開いて確かめ、止まっていたら `launchctl kickstart -k gui/$(id -u)/com.uminomae.project-design-theory` で起こす。
-- **公開は、`develop` を `main` へ送るだけ**（`git push origin develop:main`）。話の流れで確かめが済んでいれば、いちいち聞かずに送る。送る前に `bash scripts/publish-main.sh <送る枝>` を走らせ、一緒に出る commit を見る（`.githooks/pre-push` が、これを走らせていない main への push を止める）。
+- **公開は、確かめが済んだら `develop` をそのまま `main` へ送る**（`git push origin develop:main`）。別のセッションの途中の commit が develop に入っていても、分けずに全部送る（pjdhiro 2026-11-10・Issue #111 の問い 2「全部送る。以後も、確かめが済んだら develop をそのまま送る、を決まりにします」に「はい」）。話の流れで確かめが済んでいれば、いちいち聞かずに送る。`bash scripts/check.sh` が落ちている状態では送らない。送る前に `bash scripts/publish-main.sh develop` を走らせ、一緒に出る commit を見る（`.githooks/pre-push` が、これを走らせていない main への push を止める）。
 - 公開の判断を待つ別のセッションの変更が develop にあって、自分の commit だけを載せた枝で main に送ったとき（cs の記録など）は、main に develop に無い commit ができる。送ったあとに、本体の checkout で `git fetch origin`、続けて `git merge origin/main` を単独で回し、develop に戻し入れて push する（`.claude/` が入るならサンドボックスの外で。2026-11-10 までに develop で 4 回行われている）。戻さないと、次の `develop:main` が早送りにならない（2026-11-10）。
 - 公開は GitHub Actions（`.github/workflows/pages.yml`）。出すのはサイトのファイルだけ。
 - サイトのファイルを直したら、commit の前に `bash scripts/check.sh` を走らせる（旧 repo へのリンク・読み物の内部アンカー・wiki・as と ks のテスト・文字化け）。同じものを `.github/workflows/check.yml` が develop と main で走らせる。何を機械で見て、何を画面で見て、何がまだ無いかは `docs/TESTING.md`。
