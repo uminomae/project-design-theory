@@ -585,3 +585,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（「心の言葉は、どこで誤解されるか」の GRIT の項）
 - pages: どちらのページも、GRIT の項と侘びを引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] compile | Love駆動開発の章「心の言葉は、どこで誤解されるか」の終わりの畳み「経営学の表の、どの行にまたがるか」を外したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（「心の言葉は、どこで誤解されるか」の終わり）
+- pages: どちらのページも、外した畳み（経営学の表の行にまたがる・届かないところは同じ）を引いていないので本文はそのまま。`compiled` は今日のまま
