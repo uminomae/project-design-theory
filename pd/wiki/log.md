@@ -381,3 +381,9 @@ compile 実行の履歴。append-only。
 - scope: 概念ページ 1・出典ページ 5
 - sources: cs/knowledge/five-stages-guide.md（a63af55）、cs の出典ノート D04-S09・D29-S13・D25-S07・D07-S07・D06-S11（#73 の照合）
 - pages: `concepts/創造の5段階モデル` の「場」の対応概念から野中郁次郎の「場（Ba）」を外し、語が同じだけで系譜が別と添えた。`sources/D04_woese_2002…`・`sources/D29_munoz_2018…`・`sources/D25_mauss_1925…` の引用を原典で直した文に合わせた。`sources/D07_schultz_1997…` の頁を 1593–1599 に、`sources/D06_springel_2005…` に Nature の題を足した
+
+## [2026-11-10] compile | 正本を直したら追いつく仕組みに作り直し、Love 駆動開発とプロジェクトデザインを今の正本から作り直す
+- scope: 概念ページ 2・about・health の報告。確かめだけ 2（創造の5段階モデル・creation-space-domains）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`、`pd/src/content/site-data.mjs`（サイトの冒頭）、`cs/knowledge/five-stages-guide.md`（a63af55）
+- pages: `concepts/Love 駆動開発` の材料を 2026-02 の project-overview と ks の三つから、今の読み物に替えて作り直した（status 暫定・review_state 未レビューのまま）。`プロジェクトデザイン` の材料をサイトの冒頭と読み物に替え、定義・射程・領域・Doing と Being から作り直した。`about` を一つの repo・Quartz・3001 の形に直した（Obsidian は今使っていない。`.obsidian/` は残した）。`concepts/創造の5段階モデル`・`cross-refs/creation-space-domains` は、11-07 からの出典の直しが a63af55 だけで、11-10 の fix で写っていることを確かめ、compiled を今日にした
+- 仕組み: 正本を直すと hook が関わる wiki のページを知らせる（`pd/scripts/wiki-stale-check.mjs`）。WL-3 が出典の commit の日付と compiled 日を比べ、古いページを `health/freshness-report` に並べる。作り直しの手順は `.claude/skills/wiki-compile/SKILL.md`。残りの古いページは 45（#73 で出典ノートを直した cs の出典ページ）

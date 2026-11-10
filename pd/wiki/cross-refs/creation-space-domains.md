@@ -8,7 +8,7 @@ source:
     path: "knowledge/five-stages-guide.md"
   - repo: "creation-space"
     path: "knowledge/schema/academic-domains.md"
-compiled: "2026-04-06"
+compiled: "2026-11-10"
 tags: [cross-ref, creation-space, five-stages, cross-domain]
 status: 暫定
 review_state: 未レビュー

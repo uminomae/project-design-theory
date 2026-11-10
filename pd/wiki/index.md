@@ -6,7 +6,7 @@ compiled: "2026-08-17"
 
 pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
-> **[[about|About This Wiki]]** -- ソースの所在、compile の仕組み、Obsidian との分担を解説
+> **[[about|About This Wiki]]** -- 材料の置き場、作り直しの仕組み、点検を解説
 
 ## Concepts
 - [[concepts/Love 駆動開発|Love 駆動開発]]

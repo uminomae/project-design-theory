@@ -42,6 +42,7 @@
 | 公開文を書く・直す | `docs/rules/writing.md`：公開文の書き方。`docs/rules/corrections-examples.md`：当たりそうな型の行だけ |
 | 既存の理論・東洋思想・五段階の語を扱う | `docs/rules/stance-theories.md`：理論との距離 |
 | 調べる・引用する | `docs/rules/sources.md`：調べ方と原典の照合 |
+| wiki を作り直す・正本を直して wiki の知らせが出た | `.claude/skills/wiki-compile/SKILL.md`：知らされた wiki のページは、正本を直した同じ作業で作り直し、一緒に commit する |
 | 特定のページ・Issue を触る | `docs/rules/decisions.md`：そのページ・Issue の行だけ |
 | 司令塔のセッションの始め・「違和感帳」と言われた | `docs/tools/iwakan-cho.md`：pd/ の違和感を置く帳面（アーティファクト）の読み方・返事の書き方・しまい方 |
 
