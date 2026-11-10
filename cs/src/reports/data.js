@@ -579,23 +579,6 @@ function normalizeReport(report, index) {
     };
 }
 
-function isMarkdownAssetPath(path) {
-    return /\.md(?:$|[?#])/i.test(path);
-}
-
-function resolveReportAssetUrl(path, { assetBaseUrl, assetMdBaseUrl }) {
-    if (typeof path !== 'string' || !path.trim()) return '';
-    const trimmed = path.trim();
-
-    if (/^https?:\/\//i.test(trimmed) || trimmed.startsWith('/')) {
-        return safeUrl(trimmed, '');
-    }
-
-    const relativePath = trimmed.replace(/^\.\//, '');
-    const baseUrl = isMarkdownAssetPath(relativePath) ? assetMdBaseUrl : assetBaseUrl;
-    return safeUrl(`${baseUrl}${relativePath}`, '');
-}
-
 function sortReportsById(list) {
     return [...list].sort((a, b) => a.id.localeCompare(b.id, 'en', { numeric: true }));
 }
@@ -685,99 +668,19 @@ export function resolveLocalizedSources(linksByLang, lang = 'ja') {
     return dedupeSources(sources);
 }
 
-function buildCreationDomainSource(report, lang = 'ja') {
-    if (typeof report?.id !== 'string' || typeof report?.slug !== 'string') return null;
-    if (!report.id.trim() || !report.slug.trim()) return null;
-    const idOrig = report.id.trim();
-    const slug = report.slug.trim();
-    const normalizedLang = normalizeLang(lang);
-    const baseName = `domain-${idOrig}-${slug}`;
-    return {
-        mdUrl: `${PJDHIRO_CREATION_RAW}/domains/${normalizedLang}/md/${baseName}.md`,
-        pdfUrl: `${PJDHIRO_CREATION_PAGES}/domains/${normalizedLang}/pdf/${baseName}.pdf`,
-    };
-}
-
-function buildCreationDomainPresentationSource(report, lang = 'ja') {
-    if (typeof report?.id !== 'string' || typeof report?.slug !== 'string') return null;
-    if (!report.id.trim() || !report.slug.trim()) return null;
-    const idOrig = report.id.trim();
-    const slug = report.slug.trim();
-    const normalizedLang = normalizeLang(lang);
-    const baseName = `domain-${idOrig}-${slug}-presentation-${normalizedLang}`;
-    return {
-        mdUrl: `${PJDHIRO_CREATION_RAW}/domains/${normalizedLang}/presentations/md/${baseName}.md`,
-        pdfUrl: `${PJDHIRO_CREATION_PAGES}/domains/${normalizedLang}/presentations/pdf/${baseName}.pdf`,
-        htmlUrl: `${PJDHIRO_CREATION_PAGES}/domains/${normalizedLang}/presentations/html/${baseName}.html`,
-    };
-}
-
-export function resolveDomainPresentationSources(report, { lang = 'ja' } = {}) {
-    const normalizedLang = normalizeLang(lang);
-    const source = buildCreationDomainPresentationSource(report, normalizedLang);
-    if (!source) return [];
-    return [source];
-}
-
-function resolveV2LangPath(pathByLang, lang, urlBase) {
-    if (!pathByLang || typeof pathByLang !== 'object') return '';
-    const relPath = pathByLang[lang];
-    if (typeof relPath !== 'string' || !relPath.trim()) return '';
-    return `${urlBase}/${relPath.trim()}`;
-}
-
-export function resolveDomainReportSources(
-    report,
-    {
-        lang = 'ja',
-        assetBaseUrl = DEFAULT_REPORTS_ASSET_BASE,
-        assetMdBaseUrl = DEFAULT_REPORTS_MD_ASSET_BASE,
-    } = {},
-) {
-    const normalizedLang = normalizeLang(lang);
-    const sources = [];
-
-    const reportGenerated = hasText(report?.generated) ? report.generated.trim() : '';
-    const reportGeneratorModel = hasText(report?.generatorModel) ? report.generatorModel.trim() : '';
-
-    // 一次情報で確かめ直した分野は、その記録（cs/evidence/evidence-Dxx-*.md）を先に読む（#73）。
-    // 記録は日本語だけなので、英語の画面では今までの報告のまま。
-    if (report?.reviewRecord?.mdUrl && normalizedLang === 'ja') {
-        sources.push({
-            mdUrl: report.reviewRecord.mdUrl,
-            pdfUrl: '',
-            generated: report.reviewRecord.reviewed || '',
-            generatorModel: '',
-            kind: 'review',
-        });
-    }
-
-    if (report?.mdByLang) {
-        const mdUrl = resolveV2LangPath(report.mdByLang, normalizedLang, PJDHIRO_CREATION_RAW);
-        const pdfUrl = resolveV2LangPath(report.pdfByLang, normalizedLang, PJDHIRO_CREATION_PAGES);
-        if (mdUrl) {
-            sources.push({ mdUrl, pdfUrl: pdfUrl || '', generated: reportGenerated, generatorModel: reportGeneratorModel });
-        }
-    }
-
-    const creationSource = buildCreationDomainSource(report, normalizedLang);
-    if (creationSource) {
-        creationSource.generated = reportGenerated;
-        creationSource.generatorModel = reportGeneratorModel;
-        sources.push(...buildLocalizedSourceCandidates(creationSource, normalizedLang));
-    }
-
-    if (typeof report?.mdPath === 'string' && report.mdPath.trim()) {
-        const baseSource = {
-            mdUrl: resolveReportAssetUrl(report.mdPath, { assetBaseUrl, assetMdBaseUrl }),
-            pdfUrl: resolveReportAssetUrl(report?.pdfPath, { assetBaseUrl, assetMdBaseUrl }),
-            generated: reportGenerated,
-            generatorModel: reportGeneratorModel,
-        };
-        sources.push(...buildLocalizedSourceCandidates(baseSource, normalizedLang));
-    }
-
-    return dedupeSources(sources);
+// 分野の報告は、一次情報で確かめ直した記録（cs/evidence/evidence-Dxx-*.md）だけを読む（#73）。
+// 今までの報告（pjdhiro の repo の assets/creation/domains/ の日英の md・PDF・プレゼン版）は、
+// 2026-11-10 に日本語を記録への転送にし、英語版・PDF・プレゼン版を下げた（docs/rules/decisions.md）。
+// 記録は日本語だけなので、英語の画面では分野の報告を開かない（見せ方は決まっていない）。
+export function resolveDomainReportSources(report, { lang = 'ja' } = {}) {
+    if (!report?.reviewRecord?.mdUrl || normalizeLang(lang) !== 'ja') return [];
+    return [{
+        mdUrl: report.reviewRecord.mdUrl,
+        pdfUrl: '',
+        generated: report.reviewRecord.reviewed || '',
+        generatorModel: '',
+        kind: 'review',
+    }];
 }
 
 export function resolveDomainThumbnailUrl(report) {

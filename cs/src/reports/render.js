@@ -1,6 +1,5 @@
 import { normalizeLang } from '../i18n.js';
 import { dict } from '../i18n/dict.js';
-import { openRichSlideViewer } from '../slide-viewer.js';
 import {
     MODEL_GUIDE_LINKS,
     STATUS_REPORT_LINKS,
@@ -10,7 +9,6 @@ import {
     hasText,
     normalizeProgressLevelId,
     resolveLocalizedSources,
-    resolveDomainPresentationSources,
 } from './data.js';
 import { DOMAIN_HISTORY_MODE_PUSH } from './history.js';
 import { observeGridItems } from '../reveal-observer.js';
@@ -34,7 +32,6 @@ export function createReportsRenderer({
     openMarkdownModal,
     openDomainModalById,
     getReportSources,
-    wrapSlideOpen,
 }) {
     function getReportsScenarioLabel(scenario = state.data.activeScenario) {
         if (!scenario) return '';
@@ -352,50 +349,6 @@ export function createReportsRenderer({
         body.appendChild(nameNode);
         if (report.reviewRecord) {
             body.appendChild(createReviewedChip(report));
-        }
-
-        // Presentation buttons
-        const presSources = resolveDomainPresentationSources(report, { lang: state.config.lang });
-        if (presSources.length > 0) {
-            const btnGroup = document.createElement('div');
-            btnGroup.className = 'd-flex flex-wrap gap-1 mt-auto';
-
-            const slideBtn = document.createElement('button');
-            const slideLabel = getReportsStrings(state.config.lang).phase8Themes.slidesButton;
-            slideBtn.type = 'button';
-            slideBtn.className = 'reports-slide-btn';
-            slideBtn.textContent = slideLabel;
-            slideBtn.setAttribute('aria-label', `${domainLabel} ${slideLabel}`);
-            slideBtn.addEventListener('click', async (event) => {
-                event.stopPropagation();
-                const currentSources = resolveDomainPresentationSources(report, { lang: state.config.lang });
-                const source = currentSources[0];
-                if (!source) return;
-                const slideKey = report.id;
-                const slideOnClose = typeof wrapSlideOpen === 'function' ? wrapSlideOpen(slideKey) : null;
-
-                // Try rich HTML first
-                if (source.htmlUrl) {
-                    try {
-                        const htmlResp = await fetch(source.htmlUrl, { method: 'HEAD', cache: 'no-store' });
-                        if (htmlResp.ok) {
-                            openRichSlideViewer({
-                                htmlUrl: source.htmlUrl,
-                                title: domainLabel,
-                                onClose: slideOnClose,
-                            });
-                            return;
-                        }
-                    } catch {
-                        // Rich HTML not available, fall through to MD
-                    }
-                }
-
-                console.warn('[slide-viewer] rich HTML unavailable for', report.id);
-            });
-            btnGroup.appendChild(slideBtn);
-
-            body.appendChild(btnGroup);
         }
 
         tile.appendChild(body);

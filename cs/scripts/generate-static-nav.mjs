@@ -126,6 +126,27 @@ async function makeReportLink(publishRepo, relPath, warnings, fallbackTitle = ''
   return { url: pageUrlForMarkdown(relPath), title: title || relPath };
 }
 
+/** cs/evidence/reviewed.json の分野を、manifest の順に、記録のページ（?domain=Dxx）と記録の md へのリンクにする */
+async function collectReviewedDomainItems(domainsManifest, warnings) {
+  const reviewed = await readJson(join(ROOT, 'evidence', 'reviewed.json'));
+  const fileById = new Map((reviewed.domains || []).map((entry) => [entry.id, entry.file]));
+  const items = [];
+  for (const report of domainsManifest.reports || []) {
+    const file = fileById.get(report.id);
+    if (!file) {
+      warnings.push(`no reviewed record for ${report.id} (cs/evidence/reviewed.json)`);
+      continue;
+    }
+    const text = await readFile(join(ROOT, 'evidence', file), 'utf8');
+    const title = extractMarkdownTitle(text).split('：')[0].trim() || report.name_ja || report.id;
+    items.push({
+      ja: { url: `${SITE_URL}?domain=${report.id}`, mdUrl: `${SITE_URL}evidence/${file}`, title },
+      en: null,
+    });
+  }
+  return items;
+}
+
 async function collectReportGroups(publishRepo, warnings) {
   const manifestDir = join(publishRepo, 'assets', 'creation', 'manifests');
   const [domains, guides, synthesis, phase8, survey] = await Promise.all([
@@ -145,14 +166,10 @@ async function collectReportGroups(publishRepo, warnings) {
     });
   }
 
-  const domainItems = [];
-  for (const report of domains.reports || []) {
-    const ja = await link(report.md?.ja);
-    const en = await link(report.md?.en);
-    if (ja) ja.title = `${report.id} ${ja.title}`;
-    if (en) en.title = `${report.id} ${en.title}`;
-    domainItems.push({ ja, en });
-  }
+  // 30 分野は、一次情報で確かめ直した記録（cs/evidence/evidence-Dxx-*.md）へ向ける（#73）。今までの報告は
+  // 2026-11-10 に日本語を記録への転送にし、英語版を下げたので、pjdhiro の md は読まない。英語の記録は無い。
+  // 題は記録の題の「：」の前（分野の名前）。番号（D01 など）は出さない（#73 の J9）。
+  const domainItems = await collectReviewedDomainItems(domains, warnings);
 
   const synthesisItems = [];
   for (const report of synthesis.reports || []) {
@@ -256,7 +273,8 @@ function renderMarkdownNav(groups, localPages) {
     lines.push('');
     for (const item of group.items) {
       const parts = [];
-      if (item.ja) parts.push(`[${escapeMarkdownLabel(item.ja.title)}](${item.ja.url})`);
+      // llms.txt は読むのが LLM なので、記録は JS で開くページでなく md そのものへ向ける
+      if (item.ja) parts.push(`[${escapeMarkdownLabel(item.ja.title)}](${item.ja.mdUrl || item.ja.url})`);
       if (item.en) parts.push(`[${escapeMarkdownLabel(item.en.title)}](${item.en.url})`);
       lines.push(`- ${parts.join(' · ')}`);
     }
