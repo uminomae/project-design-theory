@@ -225,7 +225,9 @@ function start() {
     const pixelRatio = Math.max(0.5, Math.min(window.devicePixelRatio || 1, 1.4) * 0.9);
     renderer.setPixelRatio(pixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
-    renderer.setClearColor(0x02050d, 1);
+    // ?bgc=02050d：地の色の上書き
+    const bgc = /^[0-9a-fA-F]{6}$/.test(q.get('bgc') || '') ? parseInt(q.get('bgc'), 16) : 0x02050d;
+    renderer.setClearColor(bgc, 1);
     renderer.domElement.dataset.background = 'love-membrane';
     container.appendChild(renderer.domElement);
 
@@ -282,12 +284,23 @@ function start() {
     scroll = scrollTarget;
 
     // 出発点は cs の流れの分（458 秒 × 0.21）。前に整えた見え方から落ち始める
-    let fall = qn('fall') ?? -96.18;
+    const FALL0 = qn('fall') ?? -96.18;
     const T0 = qn('t') ?? 458; // cs のループの基準の時刻。最初から膜が育った様子で始める
+    let fall = FALL0;
     let t = T0;
     const BREATH_PERIOD = 8.0;
+    const OMEGA_B = (Math.PI * 2) / BREATH_PERIOD;
+    // 読み始め（スクロール 0）のまま e 秒たったときの落ちた量（呼吸の満ち引きも含めて積分したもの）
+    const fallAt = (e) => FALL0 + 0.25 * e - (0.0625 / OMEGA_B) * (Math.sin(OMEGA_B * (T0 + e)) - Math.sin(OMEGA_B * T0));
+    // 調整のページ（studio.html）が手で動かすもの。名前が入っている uniform は、自動で動かさない
+    // ?e=秒：読み始めのまま、その秒数たったときの時刻と位置から始める（調整のページの書き出し）
+    if (qn('e') !== null) { t = T0 + qn('e'); fall = fallAt(qn('e')); }
+    const manual = new Set();
+    let paused = false;
+    let speedOverride = qn('speed');
 
     const update = (dt) => {
+        if (paused) dt = 0;
         t += dt;
         const k = 1 - Math.exp(-dt * 2.0);
         scroll += (scrollTarget - scroll) * k;
@@ -296,15 +309,15 @@ function start() {
         const breath = 0.5 + 0.5 * Math.sin((t / BREATH_PERIOD) * Math.PI * 2 - Math.PI / 2);
         uniforms.uBreath.value = breath;
         // 落ちる速さ：読み進めるほど速く引き込まれ、呼吸に合わせて引く力が満ち引きする
-        const fallSpeed = (qn('speed') ?? lerp(0.25, 0.6, scroll)) * (0.75 + 0.5 * breath);
+        const fallSpeed = (speedOverride ?? lerp(0.25, 0.6, scroll)) * (0.75 + 0.5 * breath);
         fall += fallSpeed * dt;
         uniforms.uFall.value = fall;
-        // 前半は渦の芯を覗く向き（軸に沿う）、後半は少し横へ回り、渦がゆるむ。
-        // 斜めに回りすぎると、輪の線がざらついた縞に変わるので、回す幅は小さくする
         // 軸の上から、中央の円の中心を正面に見る。ゆらぎはごく小さく
-        uniforms.uYaw.value = qn('yaw') ?? (-Math.PI / 2 + Math.sin(t * 0.013) * 0.03 + px * 0.03);
-        uniforms.uPitch.value = qn('pitch') ?? (Math.sin(t * 0.011) * 0.02);
-        uniforms.uVortex.value = qn('vortex') ?? lerp(0.55, 0.3, scroll);
+        // （1〜2 分のあいだでも、左右 −89° 前後・上下 ±1° 未満しか動かない）
+        if (!manual.has('uYaw')) uniforms.uYaw.value = qn('yaw') ?? (-Math.PI / 2 + Math.sin(t * 0.013) * 0.03 + px * 0.03);
+        if (!manual.has('uPitch')) uniforms.uPitch.value = qn('pitch') ?? (Math.sin(t * 0.011) * 0.02);
+        if (!manual.has('uVortex')) uniforms.uVortex.value = qn('vortex') ?? lerp(0.55, 0.3, scroll);
+        if (manual.size) return;
         if (qn('split') !== null) uniforms.uSplit.value = qn('split');
         if (qn('shell') !== null) uniforms.uShell.value = qn('shell');
         if (qn('jitter') !== null) uniforms.uJitter.value = qn('jitter');
@@ -362,6 +375,27 @@ function start() {
     document.addEventListener('visibilitychange', () => {
         if (document.hidden) stop(); else run();
     });
+
+    // 調整のページ（?studio）から動かすための入口。ふだんのページでは作らない
+    if (q.has('studio')) {
+        window.loveMembrane = {
+            uniforms,
+            manual,
+            T0,
+            get elapsed() { return t - T0; },
+            get fall() { return fall; },
+            get paused() { return paused; },
+            set paused(v) { paused = Boolean(v); },
+            get speed() { return speedOverride; },
+            set speed(v) { speedOverride = v; },
+            // 経過秒を指定して、その時刻・その位置へ跳ぶ（読み始めのまま e 秒たったときと同じ見え方）
+            seek(e) { t = T0 + e; fall = fallAt(e); still(); },
+            setFall(v) { fall = v; still(); },
+            setClearColor(hex) { renderer.setClearColor(hex, 1); still(); },
+            redraw() { still(); },
+        };
+        window.dispatchEvent(new Event('love-membrane-ready'));
+    }
 
     if (reduce) still(); else run();
 }
