@@ -6,6 +6,11 @@
 //   node scripts/check-cs-evidence.mjs            点検。落ちたら 1 で終わる
 //   node scripts/check-cs-evidence.mjs --stats    文末の数え方の確認（点検はしない）
 //   node scripts/check-cs-evidence.mjs cs/evidence/evidence-D20-law-politics.md   一つの記録だけ（reviewed.json に入れる前に）
+//   node scripts/check-cs-evidence.mjs --crossref   原典の台帳（cs/knowledge/raw/manifest.md）の注記にある DOI を Crossref で引き、
+//                                                   題と年が台帳の書誌と合うかを見る。ネットワークが要るので check.sh には入れない。
+//                                                   手で回す。プロキシの内側では NODE_USE_ENV_PROXY=1 を付ける（as の点検の --crossref と同じ形。2026-11-11）
+//   意識とはの点検 10（台帳の行が記録に出てくるか）は、ここには入れていない。cs の台帳は linked_evidence が 864 行すべてで
+//   その分野の記録を指し、記録が使う行を見分ける列が無いため。台帳と記録の状態の食い違いは scripts/check-cs-ledger.mjs が見る。
 //
 // 見るもの（2026-11-08・#73 の 5 分野のあとに作った）：
 //  1. cs/evidence/reviewed.json の各行：id の形、file が実在、reviewed が日付。en（英語の記録）があれば en/<file> で実在。
@@ -30,6 +35,9 @@
 //     表に置かず、表の下の一覧と、論ごとの節の最後の「### 本文を読めなかった論」に分ける（pjdhiro 2026-11-10「読めなかったものは、
 //     明確にして。10本に入れたくないのです。できれば」。線の引き方は docs/cs-review/README.md「規約で決めたこと」）。
 //     関わる実験の論文や別の著者の要約だけを本文で読めた論は、機械では見分けられないので人が見る。
+// 12. 「未照合（…）」の括弧の頭が、docs/rules/sources.md §3 の 7 の語（記憶・書誌だけ・書籍・有料・確認画面・
+//     上げた人の分からない写しで読んだ・原典が特定できない）か。語の前には年だけを置いてよく、二つ以上は「と」でつなぎ、
+//     語のあとは句点で補いを足してよい（2026-11-11・Issue #111）。
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -47,8 +55,21 @@ const OLD_TERMS = /\b(verified|accepted|plausible|Accept|Reject)\b/;
 const POLITE_END = /(です|ます|ません|でした|ました|ましょう|ください)[。）)]*$/;
 const PLAIN_END = /(である|だ|ない|た|る|う|い)[。）)]*$/;
 
+const MANIFEST = path.join(ROOT, 'cs', 'knowledge', 'raw', 'manifest.md');
+const CROSSREF = process.argv.includes('--crossref');
 const errors = [];
 const err = (file, msg) => errors.push(`${path.relative(ROOT, file)}: ${msg}`);
+
+// 12. 「未照合（…）」の語（docs/rules/sources.md §3 の 7）
+const UNVERIFIED_WORDS = ['上げた人の分からない写しで読んだ', '原典が特定できない', '書誌だけ', '確認画面', '記憶', '書籍', '有料'];
+const UNVERIFIED_HEAD = new RegExp(`^(?:\\d{4}[a-z]? の)?(?:${UNVERIFIED_WORDS.join('|')})(?:と(?:\\d{4}[a-z]? の)?(?:${UNVERIFIED_WORDS.join('|')}))*(?:。.+)?$`);
+function checkUnverifiedTerms(file, text) {
+  text.split('\n').forEach((line, i) => {
+    for (const m of line.matchAll(/未照合（((?:[^（）]|（[^（）]*）)*)）/g)) {
+      if (!UNVERIFIED_HEAD.test(m[1])) err(file, `${i + 1} 行の「${m[0].slice(0, 40)}」：括弧の頭が sources.md §3 の 7 の語でない（12）`);
+    }
+  });
+}
 
 function parseFrontmatter(text) {
   const m = text.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
@@ -118,6 +139,7 @@ function checkRecord(file, domainId) {
   if (meta.source_archive && !fs.existsSync(path.join(ROOT, 'cs', meta.source_archive))) err(file, `source_archive が無い（cs/ からの相対で ${meta.source_archive}）`);
 
   if (!/文責は Claude/.test(body)) err(file, '冒頭に「文責は Claude」が無い');
+  checkUnverifiedTerms(file, text);
   if (!/^## 一面の表/m.test(body)) err(file, '「## 一面の表」が無い');
   if (/\/Users\//.test(body)) err(file, '手元の絶対パス（/Users/…）がある');
 
@@ -203,7 +225,47 @@ function checkRecord(file, domainId) {
   if (total >= 10 && plain / total > 0.2) err(file, `地の文の文末が「だ・である」寄り（${plain}/${total}。例：${plainSamples.join(' / ')}）`);
 }
 
+// --crossref：台帳の DOI を Crossref で引く
+const norm = (s) => s.toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/[‐-―–—-]/g, '-').replace(/[’'`]/g, "'").replace(/\s+/g, ' ');
+// 注記の URL から取った DOI の尻（/pdf・&type=printable・閉じていない括弧 など）を落とす
+function cleanDoi(raw) {
+  let d = raw;
+  try { d = decodeURIComponent(d); } catch { /* そのまま */ }
+  d = d.replace(/&type=.*$/, '').replace(/\/(?:pdf|full|abstract)$/i, '').replace(/\.pdf$/i, '').replace(/[.,;]$/, '');
+  while ((d.match(/\)/g) || []).length > (d.match(/\(/g) || []).length) d = d.replace(/\)[^)]*$/, '');
+  return d;
+}
+async function crossref() {
+  const rows = fs.readFileSync(MANIFEST, 'utf8').split('\n').filter((l) => /^\| D\d\d-S/.test(l)).map(splitCells);
+  let bad = 0; let n = 0;
+  for (const [id, , , cite = '', , , notes = ''] of rows) {
+    const doi = cleanDoi((notes.match(/DOI[:：]?\s*(10\.\d{4,}\/[^\s（）「」、。]+)/) || notes.match(/\b(10\.\d{4,}\/[^\s（）「」、。]+)/) || [])[1] || '');
+    if (!doi) continue;
+    n++;
+    const year = (cite.match(/\((\d{4})[a-z]?\)/) || [])[1] || '';
+    const title = ((cite.split(/\(\d{4}[a-z]?\)\.\s*/)[1] || '').replace(/[*]/g, '').split(/\.\s|\?\s|:/)[0] || '').trim();
+    try {
+      const res = await fetch(`https://api.crossref.org/works/${encodeURIComponent(doi)}`, { headers: { 'User-Agent': 'check-cs-evidence (manual run)' } });
+      if (!res.ok) { console.log(`  × ${id} ${doi}：Crossref が ${res.status}`); bad++; continue; }
+      const w = (await res.json()).message;
+      const cTitle = (w.title || [''])[0];
+      const years = ['published-print', 'published-online', 'issued', 'published']
+        .map((k) => w[k]?.['date-parts']?.[0]?.[0]).filter(Boolean).map(String);
+      const titleOk = !title || norm(cTitle).includes(norm(title)) || norm(title).includes(norm(cTitle.split(':')[0]));
+      const yearOk = !year || years.includes(year);
+      if (!(titleOk && yearOk)) bad++;
+      console.log(`${titleOk && yearOk ? '  ok' : '  ×'} ${id} ${doi}：台帳「${title}」${year} ／ Crossref「${cTitle}」${[...new Set(years)].join('・')}`);
+    } catch (e) {
+      console.log(`  × ${id} ${doi}：引けない（${e.message}）`);
+      bad++;
+    }
+  }
+  console.log(bad ? `DOI ${n} 本のうち、合わない・引けない ${bad} 件（年は、号とオンラインの公開で違うことがある。注記に DOI が二つあるときは最初のものを見ている）` : `DOI ${n} 本はすべて Crossref と合う`);
+  process.exit(bad ? 1 : 0);
+}
+
 function main() {
+  if (CROSSREF) return crossref();
   // 引数に記録のパスがあれば、その記録だけを見る（reviewed.json に入れる前の確かめ）。
   const files = process.argv.slice(2).filter((a) => a.endsWith('.md'));
   if (files.length) {

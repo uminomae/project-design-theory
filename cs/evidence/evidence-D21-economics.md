@@ -128,7 +128,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D21-econo
 - Keynes, J. M. (1936). *The General Theory of Employment, Interest and Money*. London: Macmillan. 台帳に行がある。手元の PDF は文字の層が無いので、同じ Internet Archive の資料（in.ernet.dli.2015.115101）の OCR の文字で読みました。読んだ頁：pp.152–153・pp.161–162（第 12 章）。
 - Keynes, J. M. (1937). The General Theory of Employment. *Quarterly Journal of Economics* 51(2), 209–223. DOI 10.2307/1882087（Crossref で一致）。台帳に行がある。https://www.hetwebsite.net/het/texts/keynes/keynes1937qje.pdf を取り、先頭が %PDF で、表紙の書誌が一致することを確かめました。これは JSTOR から落とした写しを第三者が置いたもので、権利は確かめていません。読んだ頁：pp.213–216。
 
-**照合の状態**：1936 年の本は本文照合済（Internet Archive の OCR の文字）。1937 年の論文は未照合（第三者が置いた写しで読んだ頁を書く。2026-11-09 の一巡で書き分けた）。
+**照合の状態**：1936 年の本は本文照合済（Internet Archive の OCR の文字）。1937 年の論文は未照合（上げた人の分からない写しで読んだ）。2026-11-09 の一巡で書き分けた。
 
 **原典に書いてあること**：
 

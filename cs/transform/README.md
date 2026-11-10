@@ -1,5 +1,7 @@
 # transform/ — creation-space の変換層
 
+> 2026-11-11：この文書と、この下（`cs/transform/`）の文書は、今までの creation-space の変換の手順の記録。ここに書いてある正本の置き場（`pjdhiro/assets/creation/`）と、pjdhiro の repo への配置・push の手順は、今の規約でも今の置き場でもない。このうち今も使うものは、根の `docs/cs-review/README.md`「規約で決めたこと」の、旧い規則の行が名指すものだけ。創造とはの記録を直す・作るときの手順は根の `docs/cs-review/`、今の規約は repo の根の `CLAUDE.md` と根の `docs/`。中身は書き換えず、履歴として残す（Issue #111）。
+
 ## 汎用ワークフロー正本
 
 汎用的なワークフロー・ルール・視覚仕様の正本は project-design に置く。

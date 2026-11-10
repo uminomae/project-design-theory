@@ -69,15 +69,15 @@ status: reviewed
 
 | 論 | 何を見たか | 型と厚み | 批判・反対の知見 | 区別の語 | 尺度 | 論点 | 似ている体験 | 食い違う体験 | 照合の状態 |
 |---|---|---|---|---|---|---|---|---|---|
-| 1. 安全の基地と見知らぬ場面（Ainsworth & Bell 1970、Ainsworth & Bowlby 1991） | 三人称：一歳児が母から離され、見知らぬ人と会い、再会する場面の行動。家庭の観察 | 観察と実験の手続き、その歴史の論考。経験則（型の分け方） | 型の分け方と普遍の主張への文化の側からの批判（論 2）。型が続く度合いは中くらい（論 3） | ― | 数分・年 | 呼び名・果て | ― | ― | 本文照合済（1991・創造とはの記録で）・未照合（1970） |
+| 1. 安全の基地と見知らぬ場面（Ainsworth & Bell 1970、Ainsworth & Bowlby 1991） | 三人称：一歳児が母から離され、見知らぬ人と会い、再会する場面の行動。家庭の観察 | 観察と実験の手続き、その歴史の論考。経験則（型の分け方） | 型の分け方と普遍の主張への文化の側からの批判（論 2）。型が続く度合いは中くらい（論 3） | ― | 数分・年 | 呼び名・果て | ― | ― | 本文照合済（1991・創造とはの記録で）・未照合（有料。1970） |
 | 2. 愛着の理論の普遍の主張への批判（Keller 2018） | 理論と文化の比較：カメルーンの Nso の農家の子と、ドイツの中流の家庭の子 | 論考（文化の比較研究のまとめ）。見送り（普遍の主張への反論） | 敏感な応答そのものは普遍だとする反論がある（Mesman ら。Keller が紹介） | ― | 年 | 呼び名 | ― | ― | 本文照合済 |
-| 3. 愛着の型の続き方（Fraley 2002、Waters ら 2000、Opie ら 2021） | 三人称：見知らぬ場面と、成人の愛着の面接の分類の一致 | 縦断研究 N=50、メタ分析 63 研究。経験則（中くらいに続く） | 出版の偏りがある（Opie ら 2021）。悪い出来事で型が変わる（Waters ら 2000） | ― | 年 | 呼び名 | ― | ― | 本文照合済（Opie ら、Waters ら）・未照合（Fraley） |
-| 4. 静止顔の手続き（Tronick ら 1978、Mesman ら 2009、Jones-Mason ら 2018） | 三人称：大人が表情を止めたときの乳児の行動と心拍変動 | 実験の手続きとメタ分析（33 研究の系統的レビュー、14 研究のメタ分析）。実証済み（効果は繰り返し見られる） | 決まった形の反応を見せるのは乳児の半分ほど（Mesman ら 2013。二次経由）。心拍変動の算出の仕方がそろっていない | ― | 数分 | 取り違え・呼び名 | ― | ― | 本文照合済（Jones-Mason ら）・二次資料のみ（Mesman ら 2009）・未照合（Tronick ら 1978） |
+| 3. 愛着の型の続き方（Fraley 2002、Waters ら 2000、Opie ら 2021） | 三人称：見知らぬ場面と、成人の愛着の面接の分類の一致 | 縦断研究 N=50、メタ分析 63 研究。経験則（中くらいに続く） | 出版の偏りがある（Opie ら 2021）。悪い出来事で型が変わる（Waters ら 2000） | ― | 年 | 呼び名 | ― | ― | 本文照合済（Opie ら、Waters ら）・未照合（有料。Fraley） |
+| 4. 静止顔の手続き（Tronick ら 1978、Mesman ら 2009、Jones-Mason ら 2018） | 三人称：大人が表情を止めたときの乳児の行動と心拍変動 | 実験の手続きとメタ分析（33 研究の系統的レビュー、14 研究のメタ分析）。実証済み（効果は繰り返し見られる） | 決まった形の反応を見せるのは乳児の半分ほど（Mesman ら 2013。二次経由）。心拍変動の算出の仕方がそろっていない | ― | 数分 | 取り違え・呼び名 | ― | ― | 本文照合済（Jones-Mason ら）・二次資料のみ（Mesman ら 2009）・未照合（有料。Tronick ら 1978） |
 | 5. ずれと修復（Tronick & Beeghly 2011） | 理論と観察のまとめ：親子のやり取りの合う状態とずれた状態の行き来 | 理論と総説。仮説（修復の歴史が信頼と愛着になる） | 同期を理想とする見方（Stern、Trevarthen）と対する。乳児の経験は確かめられない（著者） | biopsychosocial state of consciousness と implicit knowing | 秒・年 | 呼び名・果て | ― | ― | 本文照合済（創造とはと欠損駆動思考の記録で。今回 XML を開き直した） |
 | 6. 愛着とメタ化（Fonagy & Target 1997） | 理論と縦断の観察：親と子の心の状態を思い描く力と、愛着の安定 | 理論と研究のまとめ（観察 92 人ほか）。仮説（著者が「speculative model」と書く） | 著者自身が推測の模型と書く。メタ化を測る場面どうしの相関が低い（Dunn。著者が紹介） | reflective function（自動・気づきの外）と introspection | 年 | 呼び名・果て | ― | ― | 本文照合済 |
 | 7. 愛着の神経生物学（Feldman 2017、Feldman 2015、Feldman & Bakermans-Kranenburg 2017） | 総説：オキシトシンと生体行動の同期、動物の研究と人の脳画像 | 総説。仮説（動物の研究から人への橋渡しを含む） | 動物の研究の当てはめ。人の鼻からのオキシトシンの研究には追試の問題がある（学術版の紹介。この記録では未読） | representation-based attachments と mentalization | 秒・年 | 二つ・呼び名 | ― | ― | 本文照合済（2015・2017 の Feldman & Bakermans-Kranenburg。欠損駆動思考の調べで）・要旨照合済（2017 の総説） |
 | 8. 手を握る（Coan ら 2006、Coan ら 2017） | 三人称：電気の刺激の脅威の合図への脳の反応。一人称：不快さと覚醒の評定 | 実験 N=16 と追試 N=110。経験則（親しい相手の効果は二度見られた） | 見知らぬ人の手の効果は追試で見られなかった。関係の種類（結婚・同棲・交際・友人）による違いも見られなかった | 脳の応答と主観の評定 | 秒・数分 | 二つ・取り違え | ― | ― | 本文照合済（2 本） |
-| 9. 社会的な基準線の理論（Beckes & Coan 2011、Coan & Sbarra 2015） | 理論：脳は他者が近くにいることを既定に置き、社会的な資源を体のエネルギーの資源のように扱う | 理論と総説。仮説（著者が「Tentative Conclusions」と書く） | 理論への正面の批判には当たらなかった。追試は論 8 | 脳が「assumes」すること と、経験される自己 | 秒・年 | 二つ・取り違え・呼び名 | ― | 見立て | 本文照合済（2015）・未照合（2011） |
+| 9. 社会的な基準線の理論（Beckes & Coan 2011、Coan & Sbarra 2015） | 理論：脳は他者が近くにいることを既定に置き、社会的な資源を体のエネルギーの資源のように扱う | 理論と総説。仮説（著者が「Tentative Conclusions」と書く） | 理論への正面の批判には当たらなかった。追試は論 8 | 脳が「assumes」すること と、経験される自己 | 秒・年 | 二つ・取り違え・呼び名 | ― | 見立て | 本文照合済（2015）・未照合（確認画面。2011） |
 | 10. 所属の欲求（Baumeister & Leary 1995） | 総説：所属の欲求が基本的な動機かを、九つの基準で文献から見る | 文献のまとめ（量的でない総説）。経験則 | 派生していないという基準の支えが弱い（著者自身, p.521） | 相手が気にかけていると「believe」すること | 年 | 二つ・呼び名・取り違え | 体験 3 | ― | 本文照合済 |
 | 11. 関係・孤立と死亡（Holt-Lunstad ら 2010・2015） | 三人称：社会的な関係の測定と、その後の死亡 | メタ分析 148 研究 308,849 人、70 研究 3,407,134 人。実証済み（結びつき）。因果は確かめられない | 因果は確かめられない、病気が孤立を生む逆の向きがありうる（著者） | 客観の孤立と主観の孤独 | 年 | 二つ | ― | ― | 本文照合済（2 本） |
 | 12. 孤独と認知（Cacioppo & Hawkley 2009） | 総説：知覚された孤立と、認知・注意・社会的な認知の偏り | 総説（縦断・実験・横断・動物の研究のまとめ）。仮説（調整の輪の模型） | 認知の衰えが孤独を生む逆の向きがありうる（著者） | perceived social isolation と implicit hypervigilance | ミリ秒〜年 | 取り違え・二つ | ― | ― | 本文照合済 |
@@ -102,7 +102,7 @@ status: reviewed
 - Ainsworth, M. D. S., & Bell, S. M. (1970). Attachment, exploration, and separation: Illustrated by the behavior of one-year-olds in a strange situation. *Child Development*, 41(1), 49–67. DOI 10.2307/1127388（Crossref と一致）。出版社の版は有料で、PubMed にも要旨がありません。Stony Brook 大学の愛着研究のサイトの写しの一覧（Wayback の CDX）にもありませんでした。読んでいません。
 - Ainsworth, M. D. S., & Bowlby, J. (1991). An ethological approach to personality development. *American Psychologist*, 46(4), 333–341. DOI 10.1037/0003-066X.46.4.333（Crossref と一致）。創造とはの発達心理学の分野の記録が、Stony Brook 大学の愛着研究のサイトの組み直しの写し（https://psychology.psy.sunysb.edu/attachment/online/ainsworth_bowlby_1991.pdf 、12 頁。誌面の頁が無いので写しの頁）で本文照合済にしたものです。今回、同じ写しで pp.2・6–8 を確かめました。
 
-**照合の状態**：Ainsworth & Bowlby（1991）は本文照合済（創造とはの記録で。大学のサイトの組み直しの写し）。Ainsworth & Bell（1970）は未照合（有料で、要旨も読めていません）。
+**照合の状態**：Ainsworth & Bowlby（1991）は本文照合済（創造とはの記録で。大学のサイトの組み直しの写し）。Ainsworth & Bell（1970）は未照合（有料）。
 
 **研究の型と厚み**：Ainsworth & Bowlby（1991）は、二人の研究の歴史を振り返る論考です。見知らぬ場面の型の分け方は、その後の多くの研究で使われてきた経験則です。この記録では、1970 年の原典の人数を確かめていません。
 
@@ -341,7 +341,7 @@ status: reviewed
 - Beckes, L., & Coan, J. A. (2011). Social baseline theory: The role of social proximity in emotion and economy of action. *Social and Personality Psychology Compass*, 5(12), 976–988. DOI 10.1111/j.1751-9004.2011.00400.x（Crossref と一致）。出版社の無料公開の版（Wiley の PDF）は、自動では確認画面で止まりました。読んでいません。
 - Coan, J. A., & Sbarra, D. A. (2015). Social baseline theory: the social regulation of risk and effort. *Current Opinion in Psychology*, 1, 87–91. DOI 10.1016/j.copsyc.2014.12.021（Crossref と一致）。読んだ版：PMC4375548 の著者稿を NCBI の全文 XML で読みました。頁が無いので節で控えました。読んだ所：全文（要旨・序・Social Relationships Decrease the Predicted Cost of the Environment・Risk, Effort, and the Expanded Self・Relationship Loss Increases the Predicted Cost of the Environment・Tentative Conclusions）。
 
-**照合の状態**：Coan & Sbarra（2015）は本文照合済（PMC の著者稿）。Beckes & Coan（2011）は未照合（ブラウザでの保存が要る）。
+**照合の状態**：Coan & Sbarra（2015）は本文照合済（PMC の著者稿）。Beckes & Coan（2011）は未照合（確認画面）。
 
 **研究の型と厚み**：理論と、研究のまとめです。著者自身が、結論の節を「Tentative Conclusions」とし、「If ultimately true」と書きます。厚みは仮説です。
 

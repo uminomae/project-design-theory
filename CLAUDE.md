@@ -16,7 +16,7 @@
 
 公開は `.github/workflows/pages.yml`。`pd/` はサイトのファイルと wiki だけを根に、`as/`・`ks/`・`cs/` はディレクトリごと `/as/` などに出す。
 
-原典の PDF（`cs/knowledge/raw/`・`cs/evidence/**/*.pdf`）と、サイトで使わない素材（`cs/resources/`）は git に入れず、手元だけに置く。大きくなりそうなものは、入れる前に `.gitignore` を考える。
+原典の PDF（`cs/knowledge/raw/`・`as/knowledge/raw/`・`cs/evidence/**/*.pdf`。台帳の `manifest.md` だけは入れる）と、サイトで使わない素材（`cs/resources/`）は git に入れず、手元だけに置く。大きくなりそうなものは、入れる前に `.gitignore` を考える。
 
 ## 絶対原則
 
@@ -28,7 +28,7 @@
 
 ## 規約の持ち込み
 
-今までの repo の規約（調べ方・執筆・品質の検査）は、見直してから一つずつ入れる。入れるまでは、この CLAUDE.md と `docs/` にあるものだけが規約。見直しの記録は `docs/RULES-REVIEW.md`。
+今までの repo の規約（調べ方・執筆・品質の検査）は、見直してから一つずつ入れる。入れるまでは、この CLAUDE.md と**根の** `docs/` にあるものだけが規約。`pd/`・`cs/`・`as/`・`ks/` の下の `docs/`・`transform/` は今までの repo の運用の記録で、規約ではない。例外は、根の規約が名指しで指すもの（今は `pd/docs/DESIGN-RULES.md`・`DESIGN-RULES-LDD.md`）。見直しの記録は `docs/RULES-REVIEW.md`。
 
 ハーネス（`.claude/` の設定・hooks・skills・agents ほか）は 2026-11-07 に一つずつ読んで分けた。要るものは `.claude/` に入れ、迷うものは名前だけを `docs/harness-pending/` に置いた。要るときに中身を写すか、新しく書く（pjdhiro 2026-11-07）。
 

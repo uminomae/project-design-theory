@@ -60,7 +60,7 @@ status: reviewed
 | 3. 意識に上るのは最も確からしい仮説（Hohwy 2012・2013） | 三人称：精度と正確さの二つの次元で、意識と注意を並べる | 理論。仮説（著者が speculative と書く） | 更新も勝った仮説も、意識の十分条件でない（6。未照合の写しで読んだ） | 駆動：条件として支える。内容：予測の側 | ― | ― | 本文照合済（2012）・未照合（2013 の書籍） |
 | 4. 予測処理と意識の神経相関（Hohwy & Seth 2020） | 三人称：神経相関を探す土台としての予測処理 | 理論。仮説 | 6 の批判 | 内容：予測の側 | ― | ― | 本文照合済 |
 | 5. 意識の理論の総説（Seth & Bayne 2022） | 四つの理論群の比較 | 総説。仮説（理論ごと） | 総説の中で理論ごとの弱点を並べる | 駆動：両眼視野闘争の移りで支える。内容：予測の側 | ― | ― | 本文照合済（著者稿） |
-| 6. 予測処理は意識の理論か（Marvan & Havlík 2021、Dijkstra ら 2025） | 哲学の論証と、のちの fMRI の実験 | 論証。実験 N=36（fMRI は 27）。仮説 | 予測処理の側の応答（8） | 駆動：支えない。内容：勝った仮説も十分でない | ― | ― | 未照合（2021。上げた人を確かめていない写しで読んだ）・本文照合済（2025 の著者稿） |
+| 6. 予測処理は意識の理論か（Marvan & Havlík 2021、Dijkstra ら 2025） | 哲学の論証と、のちの fMRI の実験 | 論証。実験 N=36（fMRI は 27）。仮説 | 予測処理の側の応答（8） | 駆動：支えない。内容：勝った仮説も十分でない | ― | ― | 未照合（上げた人の分からない写しで読んだ。2021）・本文照合済（2025 の著者稿） |
 | 7. 大域ワークスペース（Dehaene & Changeux 2011、Mashour ら 2020、Cogitate Consortium 2025） | 三人称：点火・P3b・前頭頭頂の網 | 理論と実験の総説。対抗協働の実験 N=256。仮説 | 刺激が消えるときの点火が見られなかった（2025） | 駆動：局所の予測誤差は意識に上らずに立ち、系列全体の逸脱への応答は意識と共に出る | 問い | ― | 本文照合済（3 本。2 本は著者稿） |
 | 8. 予測する大域ワークスペース（Whyte & Smith 2021） | 三人称：能動推論の模型の模擬 | 計算模型。人の参加者なし。仮説 | 報告に頼る、視覚に限る（著者） | 内容：予測の側（事後の確からしさの閾） | ― | ― | 本文照合済（2020 の著者稿） |
 | 9. 顕著性のネットワーク（Seeley ら 2007、Menon & Uddin 2010） | 三人称：安静時の脳のつながり、前島と前帯状 | 観察（相関）N=14・21。仮説 | 状態か特性か分けられない（著者）、逆推論（10） | 触れない | 体験 4・問い | ― | 本文照合済（2007）・要旨照合済（2010） |
@@ -231,7 +231,7 @@ status: reviewed
 - Marvan, T., & Havlík, M. (2021). Is predictive processing a theory of perceptual consciousness? *New Ideas in Psychology* 61, 100837. DOI 10.1016/j.newideapsych.2020.100837（Crossref と一致）。読んだ版：PhilArchive に置かれた校正刷り（表紙に UNCORRECTED PROOF。Wayback の記録 https://web.archive.org/web/20240516073628/https://philpapers.org/archive/MARIPP-4.pdf 、2024-05-16 の写し）。上げた人は確かめていません。読んだ頁：校正刷りの pp.1–7。
 - Dijkstra, N., Warrington, O., Kok, P., & Fleming, S. M. (2025). Distinguishing neural correlates of prediction errors on perceptual content and detection of content. *Journal of Cognitive Neuroscience* 37(7), 1173–1188. DOI 10.1162/jocn_a_02290（Crossref と一致）。読んだ版：著者が PsyArXiv に上げた著者稿（https://osf.io/preprints/psyarxiv/6rs8d_v1/ ）。読んだ頁：著者稿の pp.2・4。頁は誌面と違います。
 
-**照合の状態**：Marvan & Havlík 2021 は未照合（本文は読みましたが、写しの上げた人を確かめていません。確かめれば本文照合済に上げられます）。Dijkstra ら 2025 は本文照合済（著者稿）。
+**照合の状態**：Marvan & Havlík 2021 は未照合（上げた人の分からない写しで読んだ）。写しの上げた人を確かめれば、本文照合済に上げられます。Dijkstra ら 2025 は本文照合済（著者稿）。
 
 **研究の型と厚み**：Marvan & Havlík は哲学の論証で、厚みは仮説です。Dijkstra らは実験で、人 36 人（行動の解析）、うち 27 人が fMRI の解析に入りました（著者稿 p.4）。追試には当たりませんでした。厚みは仮説です。
 
@@ -260,7 +260,7 @@ status: reviewed
 
 **確かめ先と読んだ頁**：
 
-- Dehaene, S., & Changeux, J.-P. (2011). Experimental and theoretical approaches to conscious processing. *Neuron* 70(2), 200–227. DOI 10.1016/j.neuron.2011.03.018（Crossref と一致）。読んだ版：HAL の著者稿（https://hal.science/hal-00717254v1/document ）。読んだ頁：著者稿の pp.16・28・41–42。頁は誌面と違います。創造とはの神経科学の記録では二次資料のみでした。
+- Dehaene, S., & Changeux, J.-P. (2011). Experimental and theoretical approaches to conscious processing. *Neuron* 70(2), 200–227. DOI 10.1016/j.neuron.2011.03.018（Crossref と一致）。読んだ版：HAL の著者稿（https://hal.science/hal-00717254v1/document ）。読んだ頁：著者稿の pp.16・28・41–42。頁は誌面と違います。創造とはの神経科学の記録では二次資料のみでしたが、2026-11-10 に同じ著者稿で読み直し、本文照合済に上がっています。
 - Mashour, G. A., Roelfsema, P., Changeux, J.-P., & Dehaene, S. (2020). Conscious processing and the global neuronal workspace hypothesis. *Neuron* 105(5), 776–798. DOI 10.1016/j.neuron.2020.01.026（Crossref と一致）。読んだ版：パスツール研究所の HAL の著者稿（https://pasteur.hal.science/pasteur-02546335 、CC BY-NC）。読んだ頁：著者稿の pp.10・12–13・45。
 - Cogitate Consortium, Ferrante, O., Gorska-Klimowska, U., ほか (2025). Adversarial testing of global neuronal workspace and integrated information theories of consciousness. *Nature* 642, 133–142. DOI 10.1038/s41586-025-08888-1（Crossref と一致。CC BY）。読んだ版：Europe PMC の全文（PMC12137136）。頁が無いので、節の名前で控えました。読んだ節：要旨、Discussion。
 

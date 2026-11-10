@@ -33,6 +33,9 @@
 //     なので、番号では突き合わせない（README「進め方」段 1）。
 // 11. 台帳そのもの：表の各行の source_id の形（Axx-Snn）、重なりが無い、照合の状態が四つの語のどれか、
 //     取得の状況が決まった語、「使う記録」の番号の記録が実在する。手元の絶対パスが無い。
+// 12. 「未照合（…）」の括弧の頭が、docs/rules/sources.md §3 の 7 の語（記憶・書誌だけ・書籍・有料・確認画面・
+//     上げた人の分からない写しで読んだ・原典が特定できない）か。語の前には年だけを置いてよく、二つ以上は「と」でつなぎ、
+//     語のあとは句点で補いを足してよい（2026-11-11・Issue #111）。（台帳も見る）
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -57,6 +60,17 @@ const RECORD_NAME = /^evidence-(A\d\d)-[a-z0-9-]+\.md$/;
 
 const errors = [];
 const err = (file, msg) => errors.push(`${path.relative(ROOT, file)}: ${msg}`);
+
+// 12. 「未照合（…）」の語（docs/rules/sources.md §3 の 7）
+const UNVERIFIED_WORDS = ['上げた人の分からない写しで読んだ', '原典が特定できない', '書誌だけ', '確認画面', '記憶', '書籍', '有料'];
+const UNVERIFIED_HEAD = new RegExp(`^(?:\\d{4}[a-z]? の)?(?:${UNVERIFIED_WORDS.join('|')})(?:と(?:\\d{4}[a-z]? の)?(?:${UNVERIFIED_WORDS.join('|')}))*(?:。.+)?$`);
+function checkUnverifiedTerms(file, text) {
+  text.split('\n').forEach((line, i) => {
+    for (const m of line.matchAll(/未照合（((?:[^（）]|（[^（）]*）)*)）/g)) {
+      if (!UNVERIFIED_HEAD.test(m[1])) err(file, `${i + 1} 行の「${m[0].slice(0, 40)}」：括弧の頭が sources.md §3 の 7 の語でない（12）`);
+    }
+  });
+}
 
 function parseFrontmatter(text) {
   const m = text.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
@@ -117,6 +131,7 @@ function readManifest() {
   if (!fs.existsSync(MANIFEST)) { err(MANIFEST, '台帳が無い'); return []; }
   const text = fs.readFileSync(MANIFEST, 'utf8');
   if (/\/Users\//.test(text)) err(MANIFEST, '手元の絶対パス（/Users/…）がある');
+  checkUnverifiedTerms(MANIFEST, text);
   const lines = text.split('\n');
   const table = findTables(lines).find((t) => t.header[0] === 'source_id');
   if (!table) { err(MANIFEST, 'source_id で始まる表が無い'); return []; }
@@ -177,6 +192,7 @@ function checkAgainstManifest(file, areaId, body, manifestRows) {
 function checkRecord(file, areaId, manifestRows) {
   const text = fs.readFileSync(file, 'utf8');
   const { meta, body, offset } = parseFrontmatter(text);
+  checkUnverifiedTerms(file, text);
   if (!meta) { err(file, 'frontmatter が無い'); return; }
   for (const key of ['file_id', 'area_id', 'title', 'last_updated', 'status']) {
     if (!meta[key]) err(file, `frontmatter に ${key} が無い`);

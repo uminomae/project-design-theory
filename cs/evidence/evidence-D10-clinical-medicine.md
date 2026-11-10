@@ -39,7 +39,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D10-clini
 本文を読めなかった論（2）は、表に並べず、論の数に入れていません。読めた範囲と読めなかった理由は、論ごとの節の最後の「本文を読めなかった論」に書いています。
 
 - 2\. がん免疫編集（Dunn・Old・Schreiber 2002・2004）：要旨照合済
-- 8\. 移植の拒絶と寛容（Medawar 1944、Billingham・Brent・Medawar 1953、Kawai ら 2008）：要旨照合済（Kawai）・未照合（Medawar 1944、1953）
+- 8\. 移植の拒絶と寛容（Medawar 1944、Billingham・Brent・Medawar 1953、Kawai ら 2008）：要旨照合済（Kawai）・未照合（書誌だけ。Medawar 1944・1953）
 
 ## 論ごとの節
 
@@ -282,7 +282,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D10-clini
 - Billingham, R. E., Brent, L., & Medawar, P. B. (1953). 'Actively acquired tolerance' of foreign cells. *Nature* 172, 603–606. doi:10.1038/172603a0。Crossref で書誌だけ。
 - Kawai, T. ほか (2008). HLA-mismatched renal transplantation without maintenance immunosuppression. *N. Engl. J. Med.* 358, 353–361. doi:10.1056/NEJMoa071074。PMC2819046（自動取得では本文を取れなかった）。要旨は Europe PMC。
 
-**照合の状態**：Kawai 2008 は要旨照合済。Medawar 1944 と 1953 は未照合（書誌のみ）。
+**照合の状態**：Kawai 2008 は要旨照合済。Medawar 1944 と 1953 は未照合（書誌だけ）。
 
 **原典に書いてあること（Kawai 要旨）**：骨髄と腎臓を一緒に移植した 5 人のうち、1 人に不可逆の液性拒絶が起きました。4 人は移植の 9〜14 か月後に免疫抑制薬をすべてやめ、2.0〜5.3 年、腎機能が安定しました。4 人の T 細胞はドナーに特異的に応答せず、生検では FOXP3 の mRNA が多くありました。
 

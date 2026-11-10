@@ -37,13 +37,13 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D19-liter
 
 本文を読めなかった論（8）は、表に並べず、論の数に入れていません。読めた範囲と読めなかった理由は、論ごとの節の最後の「本文を読めなかった論」に書いています。
 
-- 1\. Propp：昔話の形態学（1928／英訳 1968）：未照合（Monoskop の写しで読んだ。UT Press 1968 年 第 2 版）
-- 2\. Bakhtin：小説の言葉（1934–35／英訳 1981）：未照合（Internet Archive の利用者が上げた打ち直しの写しで読んだ）
-- 3\. Jauss／Iser：受容美学（1967／1972）：未照合（書籍と有料の論文）
-- 6\. Bourdieu：文学の場（1971・1992）：未照合（『The Rules of Art』は Monoskop の写し、1985 年の英訳は大学のサーバーの個人の頁の打ち直しで読んだ）
-- 7\. Barthes：S/Z（1970）：未照合（Monoskop の写しで読んだ。Blackwell 1990 年版の 2002 年の刷）
-- 8\. Frye：原型批評（1951・1957）：未照合（1951 年の論文を、1963 年の論集の、利用者が上げた写しの OCR の文字で読んだ。1957 年の本は書籍）
-- 9\. Genette：物語の言説（1972／英訳 1980）：未照合（Internet Archive の利用者が上げた写しで読んだ）
+- 1\. Propp：昔話の形態学（1928／英訳 1968）：未照合（上げた人の分からない写しで読んだ。Monoskop の写し、UT Press 1968 年 第 2 版）
+- 2\. Bakhtin：小説の言葉（1934–35／英訳 1981）：未照合（上げた人の分からない写しで読んだ。Internet Archive の利用者の打ち直し）
+- 3\. Jauss／Iser：受容美学（1967／1972）：未照合（書籍と有料）
+- 6\. Bourdieu：文学の場（1971・1992）：未照合（上げた人の分からない写しで読んだ。『The Rules of Art』は Monoskop の写し、1985 年の英訳は大学のサーバーの個人の頁の打ち直し）
+- 7\. Barthes：S/Z（1970）：未照合（上げた人の分からない写しで読んだ。Monoskop の写し、Blackwell 1990 年版の 2002 年の刷）
+- 8\. Frye：原型批評（1951・1957）：未照合（上げた人の分からない写しで読んだと書籍。1951 年の論文は 1963 年の論集の利用者が上げた写しの OCR の文字で、1957 年の本は書籍）
+- 9\. Genette：物語の言説（1972／英訳 1980）：未照合（上げた人の分からない写しで読んだ。Internet Archive の利用者の写し）
 - 10\. Bloom：影響の不安（1973）：未照合（書籍）
 
 ## 論ごとの節
@@ -178,7 +178,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D19-liter
 - Internet Archive の 1968 年の版（morphologyoffolk00prop）は貸し出しだけで、出版社の電子版（DOI 10.7560/783911）は有料です。
 - Lévi-Strauss（1960）の Propp への批判は、この記録では読んでいません。人類学・民族学の記録にも出てきません。
 
-**照合の状態**：未照合（Monoskop の写しで読んだ）。
+**照合の状態**：未照合（上げた人の分からない写しで読んだ。Monoskop の写し）。
 
 **原典に書いてあること**（1968 年版の頁）：
 
@@ -213,7 +213,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D19-liter
 - Internet Archive に利用者が上げた写し（https://archive.org/details/the-dialogic-imagination-four-essays-m.-m.-bakhtin-berserker-books-2 。「Berserker Books」の打ち直しで、本の頁が角括弧で入っている）の `_djvu.txt` で読みました。上げた人と権利は確かめていません。読んだ頁：pp.270–273・342・346。
 - 図書館の版（dialogicimaginat0000bakh ほか）は貸し出しだけです。
 
-**照合の状態**：未照合（上げた人の分からない打ち直しの写しで読んだ）。
+**照合の状態**：未照合（上げた人の分からない写しで読んだ。打ち直し）。
 
 **原典に書いてあること**（1981 年の本の頁。写しの角括弧の番号）：
 
@@ -243,7 +243,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D19-liter
 - Iser, W. (1972). The Reading Process: A Phenomenological Approach. *New Literary History* 3(2), 279–299. DOI 10.2307/468316（Crossref で確かめた）。OA の写しは見つかりませんでした。検索で出た写し（Scribd・個人の頁）は上げた人が分からず、開いていません。
 - Jauss (1982) *Toward an Aesthetic of Reception*と Iser (1974) *The Implied Reader*は、Internet Archive の貸し出しだけです。
 
-**照合の状態**：未照合（書籍と有料の論文）。
+**照合の状態**：未照合（書籍と有料）。
 
 **対立・衝突・統合の読み**：原典を読めていないので、書きません。頼む文の当たりにあった「期待の地平をただ満たすだけの作品」（Jauss）や、読者が空所を埋められない形（Iser）は、確かめていません。
 
@@ -266,7 +266,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D19-liter
 - Bourdieu, P. (1985). The Market of Symbolic Goods. R. Swyer 訳. *Poetics* 14(1–2), 13–44. DOI 10.1016/0304-422X(85)90003-8。台帳の「Bourdieu 1971」の行の備考の写し（https://web.mit.edu/allanmc/www/bourdieu2.pdf ）を取りました。中身は『The Field of Cultural Production』（Columbia UP。写しの頭は「©1984」と書くが、この論集は 1993 年刊の見込みで、確かめていない）第 1 章の打ち直しで、注に「originally published as ‘Le marché des biens symboliques’ in L'année sociologique, 22 (1971), pp 49-126. The abbreviated translation, by R. Swyer, first appeared in Poetics … 14/1-2 (April 1985), pp. 13-44」とあります。置き場は MIT のサーバーにある美術家 Allan McCollum の個人の頁で、Wayback の一覧には同じ頁に Foucault・Freud・Lévi-Strauss・Mauss などの読み物が並んでいます。授業の頁かどうかは確かめていません。頁は写しの頁（1〜34）。読んだ頁：写しの pp.1–4・13・17。台帳の 2026-04 の記録（Durand 1989 を掴んだ）とは別の、狙いの文書でした。
 - Bourdieu, P. (1983). The field of cultural production, or: The economic world reversed. *Poetics* 12(4–5), 311–356. DOI 10.1016/0304-422X(83)90012-8（Crossref で確かめた）。原典を探す道具と検索で OA の写しは見つからず、読んでいません。
 
-**照合の状態**：未照合（『The Rules of Art』は Monoskop の写し、1985 年の英訳は大学のサーバーの個人の頁の打ち直しで読んだ）。
+**照合の状態**：未照合（上げた人の分からない写しで読んだ。『The Rules of Art』は Monoskop の写し、1985 年の英訳は大学のサーバーの個人の頁の打ち直し）。
 
 **原典に書いてあること**：
 
@@ -299,7 +299,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D19-liter
 - Barthes, R. (1990). *S/Z*. R. Miller 訳. Blackwell（訳 © 1974 Farrar, Straus and Giroux。原著 1970）。台帳に行がある。手元の PDF（282 面）の扉と裏で、Blackwell の 1990 年版の 2002 年の刷と確かめました。Monoskop の写しで、上げた人と権利は確かめていません。PDF の面 n が本の n−11 頁に当たります（面 15 が p.4、面 30 が p.19）。読んだ頁：pp.4–5・18–19。
 - 報告 §7 の「作者の死」（1967。Aspen 5+6）は読んでいません。
 
-**照合の状態**：未照合（Monoskop の写しで読んだ）。
+**照合の状態**：未照合（上げた人の分からない写しで読んだ。Monoskop の写し）。
 
 **原典に書いてあること**（1990 年版の頁）：
 
@@ -328,7 +328,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D19-liter
 - 1963 年の論集『Fables of Identity: Studies in Poetic Mythology』（Harcourt, Brace & World）への再録を、Internet Archive に利用者が上げた写し（https://archive.org/details/fables-of-identity-studies-in-poetic-mythology-northrop-frye-1963 ）の `_djvu.txt`（OCR の文字）で読みました。謝辞に「"The Archetypes of Literature" from The Kenyon Review, XIII, 1951」。上げた人と権利は確かめていません。読んだ頁：pp.15–16（OCR の文字で読み、頁の画像では確かめていない）。図書館の版（fablesofidentity00frye ほか）は貸し出しだけです。
 - Frye, N. (1957). *Anatomy of Criticism*. Princeton University Press。Internet Archive の版はどれも貸し出しだけで、開けていません（台帳に足す案）。
 
-**照合の状態**：未照合（1951 年の論文を、上げた人の分からない写しの OCR の文字で読んだ。1957 年の本は書籍）。
+**照合の状態**：未照合（上げた人の分からない写しで読んだと書籍。1951 年の論文は OCR の文字で、1957 年の本は書籍）。
 
 **原典に書いてあること**（1963 年の論集の頁。OCR の文字で読んだ）：
 
