@@ -288,3 +288,20 @@
     padding: 0.16rem 0.42rem;
   }
 }
+
+/* 上の帯の項目は折り返さない。項目が増えた（Love駆動開発・#111）ので、
+   横に並べる幅の狭い側（1200〜1439px）では、字間と余白を詰め、題の横の一言を出さずに一行に収める。 */
+#kesson-topbar .topbar-link {
+  white-space: nowrap;
+}
+
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+  #kesson-topbar .topbar-link {
+    letter-spacing: 0.08em;
+    padding: 0.4rem 0.5rem;
+  }
+
+  #kesson-topbar .topbar-collab-note {
+    display: none;
+  }
+}
