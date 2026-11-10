@@ -9,7 +9,7 @@ This page is one of the explorations behind the reading "Love駆動開発と呼�
 - **Primary Language**: Japanese (日本語), with English summaries
 - **Site URL**: https://uminomae.github.io/project-design-theory/as/
 - **Topics**: Consciousness and awareness, signals of survival and trust, Intersubjectivity
-- **Aim**: to become able to say how consciousness (意識) and awareness (気づき) differ. The page places pjdhiro's first-person experience at its center; research in neurophenomenology and psychology is examined as material for thinking about it.
+- **Aim**: to become able to say what consciousness (意識) is. Whether it can be told apart from awareness (気づき) is used internally as a test of that aim: without that difference, the outline of the word consciousness stays vague. The page places pjdhiro's first-person experience at its center; research in neurophenomenology and psychology is examined as material for thinking about it.
 
 ## Core Concepts
 
