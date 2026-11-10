@@ -565,3 +565,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（畳み「手法の名前と、Love駆動開発の名前」）
 - pages: どちらのページも、この畳みの二段目（外したテストの語の対比）を引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] compile | 欠損駆動思考の概観（概念ノート CN-001 の引用を本人の訂正に揃えたあと・ks のトップの欠損と抱持の言い方の直しのあと）
+- scope: `cross-refs/kesson-space-overview`
+- sources: `ks/index.html`・`ks/knowledge/schema/core-definitions.md`・`ks/knowledge/concepts`
+- pages: CN-001 の引用の直しは本文に関わらない。前の作り直しのあとにトップが直っていたので、トップの章立ての表（欠損を五つの言い方で並べる・抱持の言い方・増えた章「この見方は、何の役に立つのか」・つながりの安定のページへのつなぎ）と、サイトと knowledge の言い方の違いの表を今のトップに合わせた。隠している開発の記録を畳みの中身から外した
