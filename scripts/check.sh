@@ -33,6 +33,10 @@ run "pd：wiki の古いページ（知らせるだけ）" node pd/scripts/wiki-
 # 調査の記録（cs・as の evidence）が「wiki の頁のここが誤り」と書いたのに、その頁がそのあと変わっていないものの数。
 # 正本が変わらないと wiki の古いページには出ないので、別に数える。止めずに知らせるだけ（2026-11-10・#111）。
 run "cs・as：記録が書いた wiki の誤りの残り（知らせるだけ）" node scripts/check-evidence-wiki-notes.mjs --count
+# 公開のページと記録について、今は当たりがあるので、落とさずに数を知らせる三つ（2026-11-10・#111）：
+# 読み物と入口の本文の今までの repo の名前・公開の調査の記録の作業の節・読み物の表の横送り。
+# 当たりが 0 になったものは、--strict <名前> を付けて「止める」に上げる（名前は names・sections・tables）。
+run "公開のページと記録（知らせるだけ）" node scripts/check-public-notices.mjs
 run "as：テスト" bash -c 'cd as && node --test tests/*.test.mjs'
 run "ks：config の整合" bash -c 'cd ks && node tests/config-consistency.test.js'
 run "ks：config の export" bash -c 'cd ks && node --experimental-vm-modules tests/config-exports.test.js'
