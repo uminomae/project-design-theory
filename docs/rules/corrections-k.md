@@ -22,11 +22,12 @@
 
 ## K1 git とサンドボックス
 
-- worktree で始めるとき、枝が develop と同じかを見たか。取り込む前に、取り込む変更にサンドボックスで書けない場所（`.claude/` など）が入っていないかを見たか（サンドボックスの中で回すと `.claude/` で止まり、作業ツリーだけが進んで枝と食い違う。2026-11-08）。
-- push・fetch・develop の取り込みは、それだけを一つの呼び出しで書いたか（`git push origin develop`・`git merge --ff-only develop`。`.claude/settings.json` の `sandbox.excludedCommands` は、呼び出し全体が `git push …`・`git merge --ff-only develop`・`git -C * merge --ff-only develop` などに合うときだけサンドボックスの外で動かす。`cd … &&`・パイプ・リダイレクト・`git commit … &&` と組むと中に残り、push はキーチェーンが読めず `could not read Username` で、取り込みは `.claude/` で止まる。worktree の枝の名前を取り込む形（`merge --ff-only <枝>`）も合わない。worktree からも refs は共有なので、そのまま push できる。2026-11-09・11-10）。
-- 検査や merge の結果を `| tail` に通すと、終了コードが tail のものになり、失敗が隠れて次の段（commit・main への push）が進む。終了コードを見るものは、パイプに通さずログに落として `$?` を見たか。ただし取り込みと push は、上の行のとおりリダイレクトも付けずに単独で回し、出力をそのまま見る（2026-11-09・check.sh の失敗と、取り込み前の main への push。2026-11-10・ログに落とす形は外で動く形に合わない）。
+- worktree の始めに develop へ揃えるのは、仕組みに移した（`bash scripts/sync-develop.sh`）。
+- main へ送る前の確かめは、仕組みに移した（`.githooks/pre-push` と `bash scripts/publish-main.sh`）。
+- push は、それだけを一つの呼び出しで `git push origin develop` と書いたか（`cd … &&`・パイプ・リダイレクトと組むとサンドボックスの中に残り、`could not read Username` で止まる。worktree からも refs は共有なので、そのまま push できる。2026-11-09）。
+- worktree の枝を本体の develop へ取り込むとき、取り込む変更に `.claude/` が入っていれば、サンドボックスの外で回したか（中で回すと `.claude/` で止まり、作業ツリーだけが進んで枝と食い違う。2026-11-08・11-10）。
+- 検査の結果を `| tail` に通すと、終了コードが tail のものになり、失敗が隠れて次の段（commit・main への push）が進む。終了コードを見るものは、ログに落として `$?` を見たか（2026-11-09・check.sh の失敗）。
 - 外へ書く操作（Issue の本文の上書きなど）の前に、送る中身が空でないかを確かめ、前の段が失敗したら止まる形（`&&`）でつないだか。
-- main へ送る前の確かめは、仕組みに移した（`.githooks/pre-push` と `bash scripts/publish-main.sh`。下の「繰り返し」の表）。
 - サンドボックスの中から localhost（3001 など）に届かないのを、サーバーが止まっていると読んでいないか（curl の exit 7 はサンドボックスの遮断でも出る。見立てる前に、サンドボックスの外か launchctl で確かめる。2026-11-09）。
 
 ## K2 生成・検査と数え直し
@@ -66,3 +67,4 @@
 | K1 | 2026-11-10 にもう一度（司令塔のセッションで、`git merge --ff-only develop > ログ 2>&1` とリダイレクトを付けて回し、`.claude/` で止まって作業ツリーに削除が残った。2026-11-09 の行の「結果はログに落として見た」は、外で動く形に合わない。同じ形を単独でもう一度回して進めた） | 確認の文は足さない。上の行の問い（仕組みの形を広げる）の答えを待つ。K1 の `\| tail` の行を、取り込みと push はリダイレクトも付けずに単独で回す、と書き直した（分けたとき・2026-11-10） |
 | K1 | 2026-11-10 にもう一度（今までの 30 分野の報告の片付け（J10）のセッションの始めに、規約を読む前に `git merge --ff-only develop >/dev/null && git log … && bash scripts/session-digest.sh` と組んで回し、`.claude/skills/wiki-compile` で止まって作業ツリーに削除が五つ残った。`git reset --hard`・`git checkout -- docs/` は許可されず、残った削除が develop の差分と同じだったので、早送りだけを sandbox の外で回して揃えた） | 確認の文は足さない。表の最後の決まりに当たるので、型 K を作業の種類で分ける作業を別のセッションの案に出した（2026-11-10 に分けた・この文書）。分けるまでの止め方：セッションの始めの早送りは、規約を読んだあとに、`git merge --ff-only develop` だけを一つの呼び出しで回す |
 | K1 | 2026-11-10 にもう一度（型 K を分けるセッションの始めに、規約を読む前に `git merge --ff-only develop 2>&1 \| tail -2 && cat …` とパイプと組んで回し、`.claude/skills/` で止まって作業ツリーだけ進んだ。`git reset --hard`・`git restore`・`git checkout -- .` は auto mode の判定で許可されず、`git reset -q develop` で枝だけを develop に進め、古い版のまま残ったファイルは commit に入れなかった。早送りを規約を読んでからにする、という上の行の決めごとは、規約を読む前の操作を止められない） | 確認の文は足さない。読む前の操作は、読んで止める確認では止まらないので、機械で止めるしかない。上の行の問い（仕組みの形を広げる）に加えて、取り込みをパイプ・リダイレクト・`&&` と組んだ呼び出しを hook で止める案を、pjdhiro に聞く問いにした（`.claude/hooks/` と設定なので、聞いてから入れる） |
+| K1 | 上の 2026-11-10 の始めの早送りの繰り返し（cs の J5 ほか・司令塔・J10・型 K を分けるセッション。パイプ・リダイレクト・`&&` と組んで `.claude/` で止まった）への手当て | 仕組みに移した（2026-11-10）：`scripts/sync-develop.sh` が fetch・早送り（枝の commit がどれも同じ中身で develop に入っていれば付け直し）・枝と作業ツリーの食い違いと `.claude/` の差分の確かめをまとめて行う。サンドボックスの中で動くと、何も変えずに止まる。CLAUDE.md「セッションの記録」の始めの手順に一行。K1 の取り込みの行は、この名前だけにした。`.claude/settings.json` の `sandbox.excludedCommands` に足して外で動かすのは、auto mode の判定で書けず、pjdhiro の承認を待つ。worktree の枝を本体の develop へ取り込む形（wiki の作り直しの行）は、このスクリプトの外 |

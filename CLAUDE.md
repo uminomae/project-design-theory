@@ -66,6 +66,7 @@
 - 本体の checkout の `.cache/session/` に、一つのセッションにつき一つ、`log-YYYYMMDD-<話題>.md` を書く。`.cache/` は git に入れない。worktree の `.cache/` は worktree と一緒に消えるので、worktree で作業したときも本体の側に書く（場所は `git rev-parse --git-common-dir` の一つ上）。
 - 書くこと：見出しに日付・話題・worktree の名前。見出しの直下に `## 要点` を置き、直したこと・残したこと・commit を 5 行ほどで書く。その次に `## ずれ`（上の手順 3）を置く。その下に本文：直したこと、pjdhiro の判断（趣旨と、何への答えか）、残したこと・次に回したこと、commit。
 - 作業を始める前に、`bash scripts/session-digest.sh` で、その日と前の日の記録の要点（`## 要点`・`## ずれ` と「残したこと」「commit」の節）を読み、今の状態を確かめる（型 K）。本文は、関わる記録だけを開く。全部を読まない（pjdhiro 2026-11-08・毎回読む分を小さく保つため）。
+- worktree で始めるときは、規約と記録の要点を読んだあとに、`bash scripts/sync-develop.sh` だけを一つの呼び出しで回して develop に揃える（fetch・早送り・枝と作業ツリーの食い違いと `.claude/` の差分の確かめ）。パイプ・リダイレクト・`&&` と組まない（型 K・`corrections-k.md` の K1）。
 - 司令塔のセッションは、続けて違和感帳を見張り（帳面を出し直す）、`items` を読み、Claude がまだ読んでいないものを拾う。見張っていると、帳面の「司令塔を呼ぶ」がそのセッションに届く（`docs/tools/iwakan-cho.md`・pjdhiro 2026-11-09）。
 
 ## Git
