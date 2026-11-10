@@ -464,6 +464,12 @@ compile 実行の履歴。append-only。
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（問い 3 の段：人は何もしないわけではなく、全てをコントロールできるわけではないところで対処している）
 - 結果: `concepts/Love 駆動開発` の「開発」の節に一文足した。`プロジェクトデザイン` はこの段を引いていない。compiled はどちらも 2026-11-10
 
+## [2026-11-10] compile | 出典ノートがあるのに出典ページが無かった原典 26（#111 で外した頁の作り直し）
+- scope: 出典ページ 15（原典 17）を新しく作った。原典 10 は作らずにおき、`pd/wiki-drafts/held-sources.md` に理由を書いた
+- sources: cs の精読ノート（`cs/knowledge/source-notes/`）。Underhill 1911 は宗教の照合の記録（`cs/evidence/evidence-D24-religion.md`）も材料にした。古い本と PMC の論文は、ノートの引用を Internet Archive・PMC の文字の層と照らし、一致した引用だけを載せた
+- pages: Burnet 1959・Dyke & Kleidon 2010・Nicolis & Nicolis 2016・Friston 2012（工学と制御の角度）・Strogatz 2001（工学と情報の角度）・Beisner ら 2003・Pierson 2000・Krugman 1991・Langton 1990・James 1890（二つのノートを一枚に）・Dewey 1910（心理学の角度）・Wallas 1926・Peirce 1923（Cohen の序論）・Underhill 1911・Bucke 1901
+- 作らずにおいたもの: 写しが載せてよい範囲でない 7（Haken 1983 は前付けだけ・Simondon 1958・Dewey 1938・Heidegger・Ibn Khaldun の 2015 年の版・Wallerstein 1974・van Gennep の 1960 年の英訳）、ノートの引用の多くが原文に見つからない 3（Schumpeter 1942・Bergson 1911・Polti）。`pd/scripts/wiki-gen-check.mjs` は、この一覧にある原典を知らせから外す
+
 ## [2026-11-10] compile | Love駆動開発の全体レビューの直しと、七つの問いの答えを入れたとき（#111）
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（Love の置き方を二つの面に・結論の「この欠け」と pjdhiro の言葉・「スクリーナー」を「ふるい」に・効き目を「軽く考えても二種類…など」に）
