@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/source-notes/D07/D07-S07_schultz-dayan-montague-1997.md"
   manifest_id: "D07-S07"
-  oa_url: "http://www.cs.utexas.edu/~dana/Reward.pdf"
+  oa_url: "http://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf"
 compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
@@ -44,7 +44,7 @@ D07（工学情報）文脈では、本論文は脳の計算論的視座の中�
 - 出典: *Science* 275(5306), 1593–1599
 - access_status: url-verified
 - **DOI**: [10.1126/science.275.5306.1593](https://doi.org/10.1126/science.275.5306.1593)
-- **オープンアクセス**: [著者公開 PDF](http://www.cs.utexas.edu/~dana/Reward.pdf)
+- **オープンアクセス**: 共著者 Dayan のサイトの写し [sdm97.pdf](http://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf)（utexas.edu の写しは 2026-11-09 に 502）
 
 ## ソース参照（GitHub・検証用）
 

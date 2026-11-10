@@ -5,7 +5,7 @@
 pd サイトの VI（ビジュアルアイデンティティ）とUI品質基準の正本。
 index.html を基準ページとし、**サイト配下の全公開 HTML ページ（サブページ・LP を含む）に適用される**。
 CSS/HTML を編集する際はこのルールに準拠すること。
-hook `ui-lint.sh` が機械的に検証可能な項目を自動チェックする。
+この規約を自動で点検する仕組みは、今は無い（2026-11-10）。今までの project-design にあった hook `ui-lint.sh`・`responsive-test.sh`・定期レビューのスキル・docs-navigator は、この repo には入れていない（名前だけ `docs/harness-pending/` にある。`docs/TESTING.md`「作りたいもの（まだ定まらない）」の「デザインの規約に沿うか」）。§7 の項目は、3001 の画面とコードを目で見て確かめる（`docs/TESTING.md`「画面で確かめる」）。hook が見てくれる、と読まない。
 
 ## 0a. 公開ページ新設時の必須制約（2026-07-03, pjdhiro 指示により明文化）
 
@@ -18,16 +18,16 @@ hook `ui-lint.sh` が機械的に検証可能な項目を自動チェックす�
 4. **カラーは既存 CSS 変数のみ**: `src/styles/tokens.css` の `--ink / --mid / --mute / --gold / --navy / --coral` 等。新色のハードコード禁止（§5）
 5. **タイポグラフィ階層の継承**: `--serif-en` / `--serif-jp` / `--sans`、ウェイト 300/400、§4 のサイズ階層
 6. **スタイルは `src/styles/` を再利用**: ページ内埋め込みの standalone CSS を新造しない。ページ固有スタイルが必要な場合も tokens と glow 体系の上に載せる
-7. **レスポンシブ §3・機械検証 §7 の対象に含める**（responsive-test の URL 対象に追加）
+7. **レスポンシブ §3・§7 の点検の対象に含める**（今は自動の点検が無いので、3001 でスマートフォンの幅にして目で見る）
 8. **コンテンツパターン**: 主要概念には誤解FAQ アコーディオン（§9）を検討する
-9. **着工前にこのファイルを必読**（docs-navigator「UI / CSS 変更」）。生成スクリプト経由でページを作る場合も、テンプレートがこの制約を満たすこと
+9. **着工前にこのファイルを必読**。生成スクリプト経由でページを作る場合も、テンプレートがこの制約を満たすこと
 
 ## 0. 運用原則 — 対話駆動のブラッシュアップ
 
 **このルールは完成品ではなく、pjdhiro との対話から継続的に更新される品質管理文書である。**
 
 - pjdhiro との UI に関する対話で決定・変更・却下されたデザイン判断は、同一セッション内でこのファイルに反映する
-- セッションログに UI 関連の議論が残っているのにこのファイルが未更新の場合、定期レビュー（`.claude/skills/periodic-review/SKILL.md`）が WARN を出す
+- セッションログに UI 関連の議論が残っているのにこのファイルが未更新の場合は、セッションの終わりに気づいた人が直す（今までは定期レビューのスキルが WARN を出していた。今は入っていない）
 - 「試して合わなかった手法」も記録する（§8 却下履歴）。同じ失敗を繰り返さないため
 - CLI（Claude）はルールの提案・追記を行えるが、ルールの削除・根本的変更は pjdhiro 承認が必要
 
@@ -170,9 +170,11 @@ CSS 変数のみ使用。ハードコードされた色は禁止。
 - prose 系本文ブロック（hero / overview / being / future）は `.prose-block` で共通化し、タイポグラフィ設定を個別に複製しない
 - UI の振る舞いは `src/app.js` に集約し、`index.html` に `onclick` やインライン `<script>` を残さない
 
-## 7. 機械検証項目
+## 7. 点検の項目（今は目で見る）
 
-### 7a. 静的チェック（ui-lint.sh — PostToolUse hook）
+2026-11-10：下の 7a・7b を自動で回す仕組み（`ui-lint.sh`・`responsive-test.sh`）は、今は入っていない。項目は、画面とコードを目で見るときの一覧として使う。仕組みを戻すかは `docs/TESTING.md`「作りたいもの（まだ定まらない）」。
+
+### 7a. 静的チェック（今までは ui-lint.sh — PostToolUse hook。今は無い）
 
 1. index.html 内の `h1`, `h2`, `span.section-label`, `span.hero-label` に `.glow-heading` が付いているか
 2. 本文ブロック（`.overview-text`, `.hero-notice`, `.being-desc`, `.future-text`）に `.glow-text` が付いているか
@@ -185,9 +187,9 @@ CSS 変数のみ使用。ハードコードされた色は禁止。
 9. `user-scalable=no` または `maximum-scale=1` を使っていないか（WCAG 1.4.4）
 10. CSS に `orientation` ロックがないか（WCAG 1.3.4）
 
-### 7b. ブラウザチェック（responsive-test.sh — 定期実行）
+### 7b. ブラウザチェック（今までは responsive-test.sh — 定期実行。今は無い）
 
-Puppeteer で `http://localhost:3004/` に対して実行。根拠は WCAG 2.2 AA。
+今までは Puppeteer で `http://localhost:3004/` に対して実行していた。今は、3001（手元のサーバー）をアプリのブラウザで開き、幅を変えて同じ項目を見る。根拠は WCAG 2.2 AA。
 
 | # | チェック | 根拠 | 閾値 |
 |---|---------|------|------|
@@ -197,7 +199,7 @@ Puppeteer で `http://localhost:3004/` に対して実行。根拠は WCAG 2.2 A
 | B4 | タッチターゲット実測 44x44px 以上 | WCAG 2.5.5 (AAA) | `boundingRect >= 44` |
 | B5 | フォント最小 12px | Lighthouse 基準 | 全テキスト要素 `fontSize >= 12` |
 
-実行: `npm test` または `bash .claude/scripts/responsive-test.sh`
+実行：今は自動で回せない（`pd/package.json` と `.claude/scripts/` は無い）。
 
 ## 8. wiki 参照信頼性の原則（pd#113, 2026-06-16）
 

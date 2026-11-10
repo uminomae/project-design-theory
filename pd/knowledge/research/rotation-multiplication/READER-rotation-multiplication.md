@@ -73,7 +73,7 @@ i の付いた数（i、2i、3i、…）は、0 の真上へ、もとの数直�
 
 i × i = −1、j × j = −1、k × k = −1
 
-立体では、i を一回掛けると 90 度回る、という平面のような単純な対応にはなりません。i・j・k は、掛け算の順序の決まりを、立体の回転と同じ形で持っている数です。
+立体では、i を一回掛けると 90 度回る、という平面のような単純な対応にはなりません。i・j・k は、掛ける順序で答えが変わる数です。
 
 1 と、この i・j・k の四つを組み合わせた数を、四元数と呼びます。回す軸の向きと回す角度から一つの四元数が決まり、その四元数で立体の向きを計算できます。ゲームの中でキャラクターや視点を回すときにも、四元数が使われています。
 
@@ -81,24 +81,24 @@ i × i = −1、j × j = −1、k × k = −1
 
 i × j = k、j × i = −k
 
-同じ i と j でも、どちらを先に掛けるかで、答えの向きが反対になります。立体の回転でも同じことが起きます。本を前に 90 度倒してから右に 90 度回すのと、右に 90 度回してから前に 90 度倒すのとでは、最後に表を向く面が違います。
+同じ i と j でも、どちらを先に掛けるかで、答えが変わります。立体の回転も、順序で行き先が変わります。本を前に 90 度倒してから右に 90 度回すのと、右に 90 度回してから前に 90 度倒すのとでは、最後に表を向く面が違います。
 
 <div class="microworld glow-card" data-microworld="quaternion-order" role="group" aria-label="対話：順序で行き先が変わる">
 <p class="mw-title">触ってみる — 同じ二つの回転でも、順序で向きが変わる</p>
 <p class="mw-fallback">（この対話図は JavaScript で動きます。動かない環境では: 左は「前へ 90 度、次に右へ 90 度」、右は「右へ 90 度、次に前へ 90 度」と立方体を回します。同じ二つの回転でも、順序を変えると、最後に手前へ来る面が違います。）</p>
 </div>
 
-平面の回転は順序を変えても同じで、立体の回転は順序で変わります。四元数の掛け算は、この立体の回転の性質をそのまま持っています。
+平面の回転は順序を変えても同じで、立体の回転は順序で変わります。四元数の掛け算も順序で答えが変わるので、立体の回転の計算に使えます。ただし、i × j と j × i の答え（k と −k）は、立体の回転としては同じ回転に当たります。四元数は、符号を変えても同じ回転を表すからです。順序で行き先が変わるのは、本の例のような回転です。
 
 ## このページの言葉が出てくる読み物
 
 <div class="reader-linkcards">
 <a class="reader-linkcard glow-link" href="love-driven-dev.html">
 <img class="reader-linkcard__thumb" src="../assets/thumbs/project-design.jpg" alt="" width="720" height="378" loading="lazy">
-<span class="reader-linkcard__body"><span class="reader-linkcard__title">Love駆動開発と呼びたいもの β</span><span class="reader-linkcard__sub">欠損の章で、欠損駆動思考の体感を「虚軸に値があって、しかも、認知上は 0」とたとえています。</span><span class="reader-linkcard__url">project-design/reader/love-driven-dev.html</span></span>
+<span class="reader-linkcard__body"><span class="reader-linkcard__title">Love駆動開発と呼びたいもの β</span><span class="reader-linkcard__sub">欠損の章で、欠損駆動思考の体感を「虚軸に値があって、しかも、認知上は 0」とたとえています。</span><span class="reader-linkcard__url">project-design-theory/reader/love-driven-dev.html</span></span>
 </a>
 <a class="reader-linkcard glow-link" href="three-and-seven.html">
 <img class="reader-linkcard__thumb" src="../assets/thumbs/project-design.jpg" alt="" width="720" height="378" loading="lazy">
-<span class="reader-linkcard__body"><span class="reader-linkcard__title">なぜ 3 と 7 だけが特別なのか</span><span class="reader-linkcard__sub">実数・複素数・四元数の回り方の違いを使って、人数の話を見ています。</span><span class="reader-linkcard__url">project-design/reader/three-and-seven.html</span></span>
+<span class="reader-linkcard__body"><span class="reader-linkcard__title">なぜ 3 と 7 だけが特別なのか</span><span class="reader-linkcard__sub">実数・複素数・四元数の回り方の違いを使って、人数の話を見ています。</span><span class="reader-linkcard__url">project-design-theory/reader/three-and-seven.html</span></span>
 </a>
 </div>

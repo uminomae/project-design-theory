@@ -182,7 +182,7 @@
               id="topbar-awareness-link"
               class="nav-link topbar-link"
               href="../as/"
-              aria-label="AWARENESS — 欠損駆動思考の気づき空間"
+              aria-label="AWARENESS — 意識とは"
               data-i18n="topbarAwareness"
               data-i18n-attr-aria-label="topbarAwarenessAria">
               AWARENESS
@@ -276,9 +276,7 @@
               創造の5段階モデル
             </a>
           </h2>
-          <div class="reports-tab-content">
-            <div id="reports-feature-cards" class="row row-cols-1 row-cols-md-3 g-2" aria-live="polite"></div>
-          </div>
+          <!-- 五段階の説明（prologue-timeline.js）がここに入る。読者別の旧ガイド三本のカードは 2026-11-10 にしまった（Issue #111） -->
         </div>
       </div>
     </section>
@@ -296,9 +294,6 @@
           </h2>
           <div id="reports-error" class="alert alert-danger py-2 px-3 d-none mb-3" role="alert"></div>
           <div class="reports-overview mb-3">
-            <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2" id="reports-primary-actions">
-              <button id="reports-open-status-btn" type="button" class="btn btn-outline-light btn-sm reports-status-cta"></button>
-            </div>
             <div id="reports-metrics" class="row g-2" aria-live="polite"></div>
           </div>
           <h3 id="reports-domains-heading" class="section-heading"></h3>
@@ -310,56 +305,13 @@
               <div id="reports-domain-grid" class="reports-domain-grid row row-cols-2 row-cols-md-5 g-2" aria-live="polite">
                 <div class="reports-domain-empty col-12 text-body-secondary"></div>
               </div>
+              <!-- 原典の台帳への道。前は進み具合の板（dashboard.html）からしか辿れなかった（#111・Q-cs-6） -->
+              <p class="reports-sources-link"><a href="./sources.html" data-i18n="sourcesLink">原典の台帳（書誌と取得の状況）を見る</a></p>
               <!-- Hover-expand grid button (techo#53): shown via ?grid=hover, opens modal -->
               <div id="reports-hover-grid-btn-wrap" style="display:none" class="mt-3 text-center">
                 <button id="reports-hover-grid-open-btn" type="button" class="btn btn-outline-light btn-lg" data-i18n="hoverGridButton">30領域調査報告</button>
               </div>
             </section>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="reports-cross-analysis-section" aria-labelledby="reports-cross-analysis-heading">
-      <div class="room-narration">
-        <p class="room-narration-text" data-i18n-html="narrations.reportsCrossAnalysisSection">三十の旅人が別々の道を歩きました。<br>全員が、同じ跡を残していたのです。</p>
-      </div>
-      <div class="section-content-wrap">
-        <div class="container">
-          <h2 class="section-heading">
-            <a id="reports-cross-analysis-heading" href="#reports-cross-analysis-section" class="section-heading-link" aria-label="CROSS ANALYSIS セクションへジャンプ" data-i18n="crossAnalysisHeading" data-i18n-attr-aria-label="crossAnalysisSectionHeadingAria">
-              CROSS ANALYSIS
-            </a>
-          </h2>
-          <div class="reports-tab-content reports-stack">
-            <div id="reports-synthesis-section" class="mt-2 mb-3">
-              <p id="reports-synthesis-description" class="reports-level-legend mb-2 d-none"></p>
-              <div id="reports-synthesis-grid" class="row row-cols-1 g-2" aria-live="polite">
-              </div>
-            </div>
-            <div class="mt-3">
-              <h4 id="reports-phase8-heading" class="reports-subheading h6 d-none"></h4>
-              <p id="reports-phase8-description" class="reports-level-legend mb-2"></p>
-              <div id="reports-phase8-grid" class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-2" aria-live="polite">
-                <div class="col-12 text-body-secondary"></div>
-              </div>
-            </div>
-            <div class="mt-4">
-              <button class="reports-slide-btn phase9-toggle"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#phase9-collapse"
-                      aria-expanded="false"
-                      aria-controls="phase9-collapse"
-                      data-i18n="phase9Toggle"></button>
-              <div id="phase9-collapse" class="collapse mt-3">
-                <h4 id="reports-theme-verification-heading" class="section-heading"></h4>
-                <p id="reports-theme-verification-description" class="reports-level-legend mb-2"></p>
-                <div id="reports-theme-verification-grid" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2" aria-live="polite">
-                  <div class="col-12 text-body-secondary"></div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -437,32 +389,27 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- SEO: 主要コンテンツの静的要約（クローラー向け） -->
   <div class="visually-hidden" aria-hidden="true" id="seo-content-summary">
-    <h2>創造とは — 30の学術領域から探るクリエイティブプロセス</h2>
-    <h3>創造の5段階モデル（Five-Stage Model of Creation）</h3>
-    <p>創造（Creation）とは、既存の要素が新たな関係性を結び、これまでになかった意味や形式が生まれるプロセスです。本プロジェクトでは、神経科学・認知心理学・芸術学・進化生物学・複雑系科学など30の学術領域を横断調査し、創造プロセスに共通する構造パターンを抽出しました。</p>
-    <p>その結果として導出された「創造の5段階モデル」は、場（Field）、波（Wave）、縁（Edge）、渦（Vortex）、束（Bundle）の5つの段階で構成されます。場は創造が生まれる環境と条件、波は探索と揺らぎの過程、縁は異質な要素が出会う境界、渦は要素が結合し変容する核心的段階、束は新たな形式として統合される完成です。</p>
-    <h3>30領域の学術探索</h3>
-    <p>調査対象の30領域には、神経科学（Neuroscience）、認知心理学（Cognitive Psychology）、発達心理学（Developmental Psychology）、進化生物学（Evolutionary Biology）、複雑系科学（Complexity Science）、芸術学（Art Studies）、音楽学（Musicology）、建築学（Architecture）、デザイン学（Design Studies）、数学（Mathematics）などが含まれます。各領域における創造プロセスの記述を比較分析し、領域を超えた構造的共通パターンを同定しています。</p>
-    <h3>関連プロジェクト</h3>
-    <p>本プロジェクトは、<a href="https://uminomae.github.io/project-design-theory/ks/">欠損駆動思考（Kesson-Driven Thinking）</a>、および<a href="https://uminomae.github.io/project-design-theory/as/">意識の4層モデル（Awareness Space）</a>と連携しています。欠損駆動思考における「欠損」の気づきが創造の起点となり、意識の層構造が創造プロセスの基盤を提供するという理論的接続があります。</p>
+    <h2>創造とは — 30 の学術分野の論から探る</h2>
+    <h3>創造の5段階（Five Stages of Creation）</h3>
+    <p>「創造とは何か」を、30 の学術分野の論から探っています。それぞれの分野の論を原典で読み、何と何が対立し、どうぶつかり、どう包まれ、何が残ったか（または、至らずにどう終わったか）を、論ごとに並べています。</p>
+    <p>「創造の5段階」は、場（Field）、波（Wave）、縁（Edge）、渦（Vortex）、束（Bundle）の五つの段で書きます。場は、波が立つ前の、安定した海のような状態です。波は、状況が変わり、差が分かれて向かい合うこと。縁は、異質なものが出会い、ぶつかる境目。渦は、二つが見分けられるのに一つであるかのようにまとまること。束は、新しい形として残る集まりで、それがまた次の場になります。この定義は暫定で、30 の分野の調べで見つかる特徴を論じ、組み込んで補強していきます。</p>
+    <h3>30 分野の記録</h3>
+    <p>調べた 30 の分野は、数学、物理学、化学、進化生物学、地球科学、天文学・宇宙物理学、工学・情報科学、神経科学、生命科学、臨床医学・免疫、薬学、農学・生態学、哲学、心理学、美学、歴史学、言語学、社会学、文学・文芸学、法学・政治学、経済学、経営学、発達心理学、宗教学・神秘主義、人類学・民族学、音楽学、建築・デザイン学、舞台芸術、複雑系科学、伝統知・技芸です。分野ごとの記録は、論を一次情報で確かめ直したもので、本文を読めた論と読めなかった論を分けて書いています。<a href="https://uminomae.github.io/project-design-theory/cs/sources.html">原典の台帳（書誌と取得の状況）</a>も公開しています。</p>
+    <h3>関連するページ</h3>
+    <p>読み物「<a href="https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html">Love駆動開発と呼びたいもの</a>」は、創造の五段階の図を使っています。「創造とは」は、その五段階を、ほかの分野の論と並べて調べている探究です。ほかの探究に、<a href="https://uminomae.github.io/project-design-theory/ks/">欠損駆動思考</a>（考えや心と、体で湧く信号とが離れるときに感じる欠けや違和感を駆動源にする構え）と、<a href="https://uminomae.github.io/project-design-theory/as/">意識とは</a>（人は、何で世界を切り取っているのか）があります。</p>
   </div>
 
   <noscript>
     <section>
-      <h2>創造とは — 30の学術領域から探るクリエイティブプロセス</h2>
-      <p>What is Creativity? This project explores the structural similarities of creative processes across 30 academic domains, including neuroscience, cognitive psychology, art studies, evolutionary biology, and more. The Five-Stage Model of Creation (Field, Wave, Edge, Vortex, Bundle) provides a framework for analyzing how creativity emerges across disciplines.</p>
-      <p>創造（Creation）とは、既存の要素が新たな関係性を結び、これまでになかった意味や形式が生まれるプロセスです。本プロジェクトでは、神経科学・認知心理学・芸術学・進化生物学・複雑系科学など30の学術領域を横断調査し、創造プロセスに共通する構造パターンを抽出しました。創造の5段階モデル（場・波・縁・渦・束）をフレームワークとして、各領域における創造の発現メカニズムを分析します。</p>
-      <p>Related: <a href="https://uminomae.github.io/project-design-theory/ks/">Kesson-Driven Thinking</a> | <a href="https://uminomae.github.io/project-design-theory/as/">Awareness Space</a></p>
+      <h2>創造とは — 30 の学術分野の論から探る</h2>
+      <p>What is Creation? This project explores how creation is described in theories from 30 academic fields, from mathematics and physics to the arts and religious studies. For each theory, read in its original source, the records line up what opposed what, how they collided, how they were held together, and what remained, or how it ended without reaching a new form. The Five Stages of Creation (Field, Wave, Edge, Vortex, Bundle) are a provisional description of that shape.</p>
+      <p>「創造とは何か」を、30 の学術分野の論から探っています。それぞれの分野の論を原典で読み、何と何が対立し、どうぶつかり、どう包まれ、何が残ったか（または、至らずにどう終わったか）を、論ごとに並べています。創造の5段階（場・波・縁・渦・束）は、その似た形を五つの段に分けて書いたもので、定義は暫定です。</p>
+      <p><a href="https://uminomae.github.io/project-design-theory/cs/sources.html">原典の台帳（書誌と取得の状況）</a></p>
+      <p>Related: <a href="https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html">Love駆動開発と呼びたいもの（What I Want to Call Love-Driven Development, in Japanese）</a> | <a href="https://uminomae.github.io/project-design-theory/ks/">Kesson-Driven Thinking（欠損駆動思考）</a> | <a href="https://uminomae.github.io/project-design-theory/as/">What Is Awareness（意識とは）</a></p>
     </section>
     <!-- static-nav:start — scripts/generate-static-nav.mjs が生成（#59）。手で編集しない -->
     <nav aria-label="調査報告の一覧">
       <h2>調査報告の一覧</h2>
-      <h3>創造の5段階モデルの解説</h3>
-      <ul>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/guides/ja/md/creation-general/">創造の5段階——構造の説明</a>（English: <a href="https://uminomae.github.io/pjdhiro/assets/creation/guides/en/md/creation-general/" hreflang="en" lang="en">The Structure of Creation — Five Stages</a>）</li>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/guides/ja/md/creation-designer/">創造の5段階——プロセスの診断</a>（English: <a href="https://uminomae.github.io/pjdhiro/assets/creation/guides/en/md/creation-designer/" hreflang="en" lang="en">The Unnamed Place Between Divergence and Convergence</a>）</li>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/guides/ja/md/creation-academic/">創造の5段階——先行研究との構造比較</a>（English: <a href="https://uminomae.github.io/pjdhiro/assets/creation/guides/en/md/creation-academic/" hreflang="en" lang="en">Structural Comparison of the Five-Stage Model and Prior Theories</a>）</li>
-      </ul>
       <h3>30領域調査報告</h3>
       <ul>
         <li><a href="https://uminomae.github.io/project-design-theory/cs/?domain=D01">数学</a></li>
@@ -495,39 +442,6 @@
         <li><a href="https://uminomae.github.io/project-design-theory/cs/?domain=D28">舞台芸術</a></li>
         <li><a href="https://uminomae.github.io/project-design-theory/cs/?domain=D29">複雑系科学</a></li>
         <li><a href="https://uminomae.github.io/project-design-theory/cs/?domain=D30">伝統知・技芸</a></li>
-      </ul>
-      <h3>30領域横断分析</h3>
-      <ul>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/synthesis/ja/md/cross-domain-synthesis-ja/">30領域横断分析 — 構造類似探索の統合的知見</a></li>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/synthesis/ja/md/cross-domain-synthesis-presentation-ja/">30領域横断分析 — 統合的知見</a></li>
-      </ul>
-      <h3>領域横断テーマ（5テーマ）</h3>
-      <ul>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/ja/md/theme-edge-typology/">Phase 8 Layer 2: T1 — 縁の類型学と統一分類</a></li>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/ja/presentations/md/theme-edge-typology-presentation-ja/">T1 縁の類型学と統一分類</a>（English: <a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/en/presentations/md/theme-edge-typology-presentation-en/" hreflang="en" lang="en">T1 Edge Typology and Unified Classification</a>）</li>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/ja/md/theme-recirculation/">Phase 8 Layer 2: T5 — 再循環メカニズム（束→場の還流）</a></li>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/ja/presentations/md/theme-recirculation-presentation-ja/">T5 再循環メカニズム（束→場の還流）</a>（English: <a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/en/presentations/md/theme-recirculation-presentation-en/" hreflang="en" lang="en">T5 Recirculation Mechanism (Bundle-to-Field Reflux)</a>）</li>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/ja/md/theme-field-layers/">Phase 8 Layer 2: T6 — 場の多層性（原初的/循環的/存在論的）</a></li>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/ja/presentations/md/theme-field-layers-presentation-ja/">T6 場の多層性（原初的/循環的/存在論的）</a>（English: <a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/en/presentations/md/theme-field-layers-presentation-en/" hreflang="en" lang="en">T6 Field Multi-Layering (Primordial / Circulatory / Ontological)</a>）</li>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/ja/md/theme-blind-spots/">Phase 8 Layer 2: T7+T9 — 盲点と反例（秩序解体・5段階が記述できないもの）</a></li>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/ja/presentations/md/theme-blind-spots-presentation-ja/">T7+T9 盲点と反例 — 秩序解体・5段階が記述できないもの</a>（English: <a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/en/presentations/md/theme-blind-spots-presentation-en/" hreflang="en" lang="en">T7+T9 Blind Spots and Counterexamples — Order Dissolution and What the Five Stages Cannot Describe</a>）</li>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/ja/md/theme-threshold/">Phase 8 Layer 2: T2 — 閾値構造と縁→渦遷移の条件</a></li>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/ja/presentations/md/theme-threshold-presentation-ja/">T2 閾値構造と縁→渦遷移の条件</a>（English: <a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/en/presentations/md/theme-threshold-presentation-en/" hreflang="en" lang="en">T2 Threshold Structure and Edge-to-Vortex Transition Conditions</a>）</li>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/ja/presentations/md/conclusion-presentation-ja/">Phase 8 横断分析 — 結論</a>（English: <a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/en/presentations/md/conclusion-presentation-en/" hreflang="en" lang="en">Phase 8 Cross-Domain Analysis — Conclusion</a>）</li>
-      </ul>
-      <h3>5テーマの検証</h3>
-      <ul>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/ja/verification/theme-T1-edge-typology-ja/">縁の類型学と統一分類 — 検証報告</a></li>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/ja/verification/theme-T2-threshold-ja/">閾値構造と縁→渦遷移の条件 — 検証報告</a></li>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/ja/verification/theme-T5-recirculation-ja/">再循環メカニズム — 束から場への還流構造 — 検証報告</a></li>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/ja/verification/theme-T6-field-layers-ja/">場の多層性 — 原初的場・循環的場・存在論的場 — 検証報告</a></li>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/ja/verification/theme-T7T9-blind-spots-ja/">盲点と反例 — 秩序解体・5段階が記述できないもの — 検証報告</a></li>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/phase8-themes/ja/verification/theme-integration-ja/">5テーマ統合 — Phase 9 検証の総括</a></li>
-      </ul>
-      <h3>調査の状況</h3>
-      <ul>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/survey/ja/md/survey-domain-index/">全分野構造類似探索: 領域索引</a></li>
-        <li><a href="https://uminomae.github.io/pjdhiro/assets/creation/survey/ja/md/survey-status/">全分野構造類似探索: 調査概要</a>（English: <a href="https://uminomae.github.io/pjdhiro/assets/creation/survey/en/md/survey-status/" hreflang="en" lang="en">Cross-Domain Structural Similarity Survey: Overview</a>）</li>
       </ul>
       <h3>テーマ解説（READER）</h3>
       <ul>

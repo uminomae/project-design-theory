@@ -1,4 +1,4 @@
-# llms.txt — 意識とは / What Is Awareness
+# llms.txt — 意識とは / What Is Consciousness
 
 > This file helps AI assistants and language models understand the structure and content of this site.
 
@@ -8,15 +8,16 @@ This page is one of the explorations behind the reading "Love駆動開発と呼�
 
 - **Primary Language**: Japanese (日本語), with English summaries
 - **Site URL**: https://uminomae.github.io/project-design-theory/as/
-- **Topics**: Consciousness, signals of survival and trust, Intersubjectivity, Neurophenomenology
+- **Topics**: Consciousness and awareness, signals of survival and trust, Intersubjectivity
+- **Aim**: to become able to say how consciousness (意識) and awareness (気づき) differ. The page places pjdhiro's first-person experience at its center; research in neurophenomenology and psychology is examined as material for thinking about it.
 
 ## Core Concepts
 
 The top page is one continuous reading, in Japanese and English. Each chapter has a short visible part; explanations and sources are folded under "詳しく" (More). All claims are held as tentative views (〜かもしれない), not conclusions.
 
-### Awareness as a named vortex (意識も、波間に見えた渦の一つ)
+### Consciousness as a named vortex (意識も、波間に見えた渦の一つ)
 
-Awareness may be one of the names people gave to a vortex they could cut out at a size easy to perceive. The cause of a vortex is not found by searching inside it; the vortex is continuous with the waves and the sea.
+Consciousness may be one of the names people gave to a vortex they could cut out at a size easy to perceive. The cause of a vortex is not found by searching inside it; the vortex is continuous with the waves and the sea.
 
 ### Signals of survival and trust (生存と信頼の信号)
 
@@ -30,7 +31,7 @@ Words and numbers line up in one row. When a person anticipates two values, a sy
 
 ### Intersubjectivity (間主観性)
 
-Experience and meaning being shared between people. One of the things the trust signal looks at. This page also asks how awareness arises within relationships between people.
+Experience and meaning being shared between people. One of the things the trust signal looks at. This page also asks how consciousness arises within relationships between people.
 
 ## Important Note
 
@@ -38,32 +39,26 @@ The site is written with AI assistance and may contain errors. pjdhiro's own wor
 
 ## Site Structure
 
-- `index.html` — Main entry point with visualization (report cards are rendered by JS)
-- Report pages (guides, topic, survey, slides) are published on pjdhiro: https://uminomae.github.io/pjdhiro/assets/awareness/
-- Source repository (research notes under `evidence/` and `knowledge/`): https://github.com/uminomae/project-design-theory/tree/main/as
+- `index.html` — Main entry point with visualization (the list of records is rendered by JS)
+- `evidence/evidence-*.md` — Records checked against the original sources (listed below)
+- `evidence/reviewed.json` — The list of those records shown on the top page
+- `knowledge/raw/manifest.md` — Ledger of the original sources (bibliography and how each was obtained; PDFs are not published)
+- Source repository: https://github.com/uminomae/project-design-theory/tree/main/as
 
-## Report Pages
+## Records checked against the original sources
 
-Published on pjdhiro (GitHub Pages). The top page renders these as JS cards; the links below are the plain entry points.
+Research that bears on consciousness and awareness is re-examined area by area by going back to the original papers. Each record sets out what each study established and what it did not, where it was read, and the verification status of each source. The records are in Japanese and are written by Claude (AI); they may contain errors. The top page lists them under "調べてきたこと" (What has been explored).
 
-### Guides（解説 3 本：一般・実践・学術）
+- [神経現象学の方法 / Methods of neurophenomenology](https://uminomae.github.io/project-design-theory/as/evidence/evidence-A01-neurophenomenology-method.md) — How descriptions of experience are gathered and set against neural measures, and how far those descriptions can be trusted
+- [予測と気づき / Prediction and awareness](https://uminomae.github.io/project-design-theory/as/evidence/evidence-A02-prediction-and-awareness.md) — How prediction and prediction error relate to what reaches consciousness, and whether predictive processing is a theory of consciousness
+- [自己と境界 / Self and its boundaries](https://uminomae.github.io/project-design-theory/as/evidence/evidence-A03-self-and-boundary.md) — How watching one's own mind and the thinning of the sense of self have been described and measured in metacognition and meditation research
+- [内受容と情動 / Interoception and emotion](https://uminomae.github.io/project-design-theory/as/evidence/evidence-A04-interoception-and-emotion.md) — How signals from inside the body come to be felt, and whether emotions are built-in circuits or constructed in the moment
+- [不確かさと安全 / Uncertainty and safety](https://uminomae.github.io/project-design-theory/as/evidence/evidence-A05-uncertainty-and-safety.md) — Uncertainty, anxiety and stress, and the perception of safety: the view that a stress response is the default and perceived safety inhibits it, and its critics
+- [関係と信頼 / Relationships and trust](https://uminomae.github.io/project-design-theory/as/evidence/evidence-A06-relationship-and-trust.md) — Attachment and the secure base, early infant interaction, social regulation, belonging and loneliness: how relationships change the appraisal of threat and bodily cost
+- [間主観性の哲学と臨床 / Intersubjectivity in philosophy and the clinic](https://uminomae.github.io/project-design-theory/as/evidence/evidence-A07-intersubjectivity.md) — Whether others' experience is given directly before inference: embodied interaction, infant intersubjectivity, the clinical holding environment, and their critics
+- [意識とメタ意識の区別 / Consciousness and meta-awareness](https://uminomae.github.io/project-design-theory/as/evidence/evidence-A08-consciousness-and-meta-awareness.md) — How conscious experience has been told apart from becoming aware of it (meta-awareness, introspection): higher-order theories, the phenomenal/access distinction, and their critics
 
-- [意識とは何か — 身体・予測・情動・社会性から間主観性へ](https://uminomae.github.io/pjdhiro/assets/awareness/guides/ja/md/awareness-general/) · [What Is Awareness? — From Body, Prediction, Emotion, and Sociality to Intersubjectivity](https://uminomae.github.io/pjdhiro/assets/awareness/guides/en/md/awareness-general/)
-- [意識の探索を観察の手がかりに — 教育・支援・チームの現場で](https://uminomae.github.io/pjdhiro/assets/awareness/guides/ja/md/awareness-designer/) · [Turning the Exploration of Awareness into Observational Tools — For Education, Support, and Team Contexts](https://uminomae.github.io/pjdhiro/assets/awareness/guides/en/md/awareness-designer/)
-- [意識と間主観性 — 神経現象学・心理学・哲学からの状況証拠](https://uminomae.github.io/pjdhiro/assets/awareness/guides/ja/md/awareness-academic/) · [Awareness and Intersubjectivity — Circumstantial Evidence from Neurophenomenology, Psychology, and Philosophy](https://uminomae.github.io/pjdhiro/assets/awareness/guides/en/md/awareness-academic/)
-
-### Topic（テーマ）
-
-- [生存-信頼軸](https://uminomae.github.io/pjdhiro/assets/awareness/topics/ja/md/survival-trust-axis/) · [Survival-Trust Axis](https://uminomae.github.io/pjdhiro/assets/awareness/topics/en/md/survival-trust-axis/)
-
-### Survey Status（調査の状況）
-
-- [意識モデル探索: 調査概要](https://uminomae.github.io/pjdhiro/assets/awareness/survey/ja/md/survey-status/) · [Awareness Model Exploration: Survey Overview](https://uminomae.github.io/pjdhiro/assets/awareness/survey/en/md/survey-status/)
-- [意識モデル探索: 調査索引](https://uminomae.github.io/pjdhiro/assets/awareness/survey/ja/md/survey-topic-index/) · [Awareness Model Exploration: Survey Index](https://uminomae.github.io/pjdhiro/assets/awareness/survey/en/md/survey-topic-index/)
-
-### Slides（スライド）
-
-- [A01 生存-信頼軸（スライド）](https://uminomae.github.io/pjdhiro/assets/awareness/domains/ja/presentations/html/domain-A01-survival-trust-axis-presentation-ja.html) · [A01 Survival-Trust Axis (slides)](https://uminomae.github.io/pjdhiro/assets/awareness/domains/en/presentations/html/domain-A01-survival-trust-axis-presentation-en.html)
+Earlier versions (three reader guides, a topic page and its slides, and a survey overview) were written before the claims were checked against the original sources. They were withdrawn from this site on 2026-11-10 and are no longer listed here.
 
 ## Related Projects
 

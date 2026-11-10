@@ -24,7 +24,7 @@ git履歴が残るため追跡可能。
 
 ### 設定ファイル: `scripts/devlog-config.json`
 
-- `approved_repos`: 許可済みリポジトリ一覧（name, owner, local_path, remote, permissions）
+- `approved_repos`: 許可済みリポジトリ一覧（name, owner, pathspec, permissions）。手元の置き場（local_path）は書かない。書かなければ、道具が置かれているこの repo の履歴を読み、`pathspec`（`ks`）の下の commit だけを拾う。別の clone を読ませるときは `--path` か環境変数 `DEVLOG_REPO_PATH` で渡す（2026-11-10・Issue #111。今までの kesson-space・kesson-driven-thinking の手元の置き場の記述を外した。その履歴はこの repo に無く、そこから作った開発記録は `assets/devlog/sessions.json` と `content/devlog/` に出来上がりとして残っている）
 - `auto_approve`: true でセッション中の確認をスキップ
 - `permissions`: `read_log`, `push_assets`, `push_branch` を個別に制御
 

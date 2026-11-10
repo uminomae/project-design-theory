@@ -12,7 +12,7 @@
 
 const PAGES = {
   ks: { title: { ja: '欠損駆動思考', en: 'Kesson-Driven Thinking' } },
-  as: { title: { ja: '意識とは', en: 'What Is Awareness' } },
+  as: { title: { ja: '意識とは', en: 'What Is Consciousness' } },
 };
 const JA_CHARS = /[぀-ヿ㐀-鿿]/;
 
@@ -68,7 +68,8 @@ export async function run({ checkLinks = true } = {}) {
   if (lang === 'en') {
     const areas = ['#kesson-topbar', '#overlay', '.room-narration', '.records-fold-summary', `[data-reading-lang="en"]`];
     const leaks = areas
-      .map((sel) => [sel, visibleText(document.querySelector(sel))])
+      // 言語の切り替えのボタンは、英語の画面で「日本語」と出るのが正しいので除く
+      .map((sel) => [sel, visibleText(document.querySelector(sel)).replace(/日本語/g, '')])
       .filter(([, text]) => JA_CHARS.test(text))
       .map(([sel, text]) => `${sel}: ${text.match(/.{0,12}[぀-ヿ㐀-鿿].{0,12}/)?.[0]}`);
     check('英語の表示に日本語が残っていない', leaks.length === 0, leaks.join(' / '));

@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D24_teresa_1921_interior-castle.pdf"
   manifest_id: "D24-S07"
-compiled: "2026-04-08"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---

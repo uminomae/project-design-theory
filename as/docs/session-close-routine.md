@@ -1,5 +1,7 @@
 # Session Close Routine
 
+> 2026-11-10：今までの awareness-space（2026-03） の運用の記録。今は使わない。セッションの閉じ方と記録の置き場は、根の `CLAUDE.md`「セッションの終わりに」「セッションの記録」。ここが指す `scripts/check-issue-close-state.sh` は無い。今の規約は、repo の根の `CLAUDE.md` と根の `docs/`。中身は書き換えず、履歴として残す（Issue #111）。
+
 セッションを跨いでも再開しやすいようにするための終了手順。
 
 ## 目的

@@ -1,0 +1,195 @@
+<title>創造とはの組み立て</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho+B1:wght@600;700&display=swap">
+<style>
+/* 一段の読み物。上から：今あるもの → 案の並び（ページの札） → 経緯の章立て → 決めて進めること → 判断のボタン */
+:root{
+  --bg:#f5f7f8; --surface:#ffffff; --fg:#1d2a30; --muted:#5b6b72; --line:#d7e0e3;
+  --accent:#1f6f78; --accent-soft:#e1eff0; --later:#8a6a2c; --later-soft:#f6efe0;
+  --font-head:"Shippori Mincho B1","Hiragino Mincho ProN",serif;
+  --font-body:"Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#11181b; --surface:#182226; --fg:#e3ecee; --muted:#9aaab0; --line:#2b383d;
+  --accent:#6cc1c9; --accent-soft:#1d3337; --later:#d9b76e; --later-soft:#2e2818; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11181b; --surface:#182226; --fg:#e3ecee; --muted:#9aaab0; --line:#2b383d;
+  --accent:#6cc1c9; --accent-soft:#1d3337; --later:#d9b76e; --later-soft:#2e2818; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:15px;line-height:1.85;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 64px}
+.wrap{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:44px}
+h1,h2,h3{font-family:var(--font-head);text-wrap:balance;line-height:1.4;margin:0}
+h1{font-size:30px}
+h2{font-size:21px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+h3{font-size:16px}
+p{margin:0}
+section{display:flex;flex-direction:column;gap:14px}
+.lede{color:var(--muted)}
+.meta{font-size:12.5px;color:var(--muted)}
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--line)}
+th{font-weight:500;color:var(--muted);font-size:12.5px;letter-spacing:.04em;white-space:nowrap}
+td:first-child{white-space:nowrap;font-weight:500}
+.pages{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.page{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.page h3{display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap}
+.tag{font-family:var(--font-body);font-size:11.5px;font-weight:500;letter-spacing:.05em;padding:1px 8px;border-radius:99px;white-space:nowrap}
+.tag.now{background:var(--accent-soft);color:var(--accent)}
+.tag.later{background:var(--later-soft);color:var(--later)}
+.page .where{font-size:12.5px;color:var(--muted);word-break:break-all}
+.page ul{margin:0;padding-left:1.2em;font-size:14px}
+.flow{font-size:14px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px}
+.flow ol{margin:0;padding-left:1.4em;display:flex;flex-direction:column;gap:6px}
+ul.plain{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px}
+.ask{background:var(--surface);border:2px solid var(--accent);border-radius:8px;padding:18px;display:flex;flex-direction:column;gap:12px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+button{font:inherit;font-size:14px;font-weight:500;padding:9px 16px;border-radius:6px;border:1px solid var(--accent);background:var(--surface);color:var(--accent);cursor:pointer}
+button.primary{background:var(--accent);color:var(--bg)}
+button[aria-pressed="true"]{outline:3px solid var(--accent-soft);outline-offset:2px}
+button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+button:disabled{opacity:.5;cursor:default}
+#status{font-size:13px;color:var(--muted)}
+code{font-size:12.5px;background:var(--accent-soft);padding:0 4px;border-radius:3px;word-break:break-all}
+</style>
+
+<div class="wrap">
+<header style="display:flex;flex-direction:column;gap:10px">
+  <h1>創造とはの組み立て</h1>
+  <p class="lede">五段階の定義を「pjdhiro の体感（暫定の定義）」と「ほかの論ではこう言うケースもある」の二つの層にしたので、創造とは（cs）のサイトに何をどう並べるかの案です。もとにしたのは、pjdhiro の「現在の定義　調査の経緯　と言う感じでコンテンツは色々あるでしょう」「まず仮説、調査によってこう言う補強がなされた。と言う経緯が読み物としてあるでしょうね」です。</p>
+  <p class="meta">2026-11-10 作成・#73 段 1。答え：「この並びで進める」（同じ日）。トップの五段階の文（日英）と llms.txt を第 1 層の一文に直し、「この定義は暫定で、補強していく」の一行を足した（develop）。現在の定義のページと調査の経緯の読み物は、別のセッションで作る。</p>
+</header>
+
+<section>
+  <h2>今あるもの</h2>
+  <div class="tablewrap"><table>
+    <tr><th>置き場</th><th>中身</th><th>今の状態</th></tr>
+    <tr><td>トップ</td><td>3D の背景と題 → 「創造の5段階モデル」の節（五段階の説明）→ REPORTS（30 分野のマス）→ ARTICLES（ブログの記事 3 本）</td><td>五段階の文は、二通りあるうちの古いほう（「場は創造が生まれる環境と条件」）。演出の文（「三十の領域が、同じ方向を指していた」）が残る</td></tr>
+    <tr><td>30 分野の記録</td><td><code>cs/evidence/evidence-D01〜D30-*.md</code>。トップのマスを押すと開く。論ごとに原典で照合した表</td><td>30 本とも照合中（段 2）。五段階のどの特徴を補強したかへのつながりは、まだ無い</td></tr>
+    <tr><td>読み物</td><td><code>cs/reader/wave-vortex.html</code>（波間の渦・草稿）だけ</td><td>トップの画面からは見えない（JavaScript が無いときの一覧にだけ出る）</td></tr>
+    <tr><td>定義の正本</td><td><code>cs/knowledge/schema/five-stages.md</code></td><td>きょう二つの層にした（develop に入れた）。用語集・ガイド・wiki はここから写す形にそろえた。サイトの画面には、まだ出ていない</td></tr>
+  </table></div>
+</section>
+
+<section>
+  <h2>案：並べるもの</h2>
+  <p>トップを入口にして、四つの置き場に分けます。札の「今つくれる」は今ある材料で書けるもの、「段 3 のあと」は 30 分野の照合を数え直して論じてから中身が入るものです。</p>
+  <div class="pages">
+    <div class="page">
+      <h3>トップ <span class="tag now">今つくれる</span></h3>
+      <div class="where">cs/index.html・src/i18n/dict.js（日英）</div>
+      <ul>
+        <li>五つの段の一文（第 1 層）を札に。「この定義は暫定で、調べで補強していく」を一行</li>
+        <li>その下に入口を三つ：現在の定義／調査の経緯／30 分野の記録</li>
+        <li>読み物の棚（波間の渦 ほか）</li>
+      </ul>
+    </div>
+    <div class="page">
+      <h3>現在の定義 <span class="tag now">今つくれる</span></h3>
+      <div class="where">新しいページ（例 cs/definition.html）</div>
+      <ul>
+        <li>第 1 層：一文と補い・状況の言葉・海のたとえ・構造とプロセス・全体に添える三つの文</li>
+        <li>第 2 層：論じる候補。今は「照合し直す前の集計から拾った」と明記して並べる</li>
+        <li>末尾に版の記録（いつ、どの候補を組み込んだか）</li>
+        <li>正本の md から作り、手で直さない</li>
+      </ul>
+    </div>
+    <div class="page">
+      <h3>調査の経緯 <span class="tag later">一部は段 3 のあと</span></h3>
+      <div class="where">新しい読み物（cs/reader/）</div>
+      <ul>
+        <li>まず仮説があり、調べでこう補強された、という読み物</li>
+        <li>前半（仮説・調べの歩み）は今書ける。後半（補強されたこと）は、段 3 で候補を論じるたびに書き足す</li>
+        <li>章立ては下に</li>
+      </ul>
+    </div>
+    <div class="page">
+      <h3>30 分野の記録 <span class="tag now">今ある</span></h3>
+      <div class="where">cs/evidence/evidence-Dxx-*.md（トップのマス）</div>
+      <ul>
+        <li>今の形のまま</li>
+        <li>段 3・段 6 で、記録から「どの候補の材料になったか」へ戻るリンクを足す</li>
+      </ul>
+    </div>
+    <div class="page">
+      <h3>調べ方 <span class="tag later">段 5</span></h3>
+      <div class="where">計画の段 5 で作る予定のページ</div>
+      <ul>
+        <li>規約・雛形・品質の点検・スキル。別の LLM が独自に調べ直せるように</li>
+        <li>経緯の読み物とは読む人が違うので分け、経緯の巻末から張る</li>
+      </ul>
+    </div>
+    <div class="page">
+      <h3>読み物の棚 <span class="tag now">今ある</span></h3>
+      <div class="where">cs/reader/・ARTICLES</div>
+      <ul>
+        <li>波間の渦（草稿）と、ブログの記事 3 本</li>
+        <li>トップの画面から見えるようにする</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>調査の経緯：章立ての案</h2>
+  <div class="flow"><ol>
+    <li><strong>仮説</strong>：五段階はどこから来たか。pjdhiro の体感、発想のもとの量子の場、出発点に置いた正反合くらいの対立と統合。本人の言葉は、本文・対話録・発言集から探して置く（作らない）。</li>
+    <li><strong>調べの歩み</strong>：30 分野の広い調べ（2026-02）→ 調査報告（2026-03、LLM が生成）→ 原典と精読ノートを集める（2026-04〜07）→ 一つずつ原典で照合し直す（2026-11〜）。反証と盲検の試みも、この流れに置く。</li>
+    <li><strong>補強されたこと</strong>：候補ごとに、どの分野の論がどう言い、定義にどう組み込んだか。組み込まなかったものも、なぜかを書く。<em>段 3 で論じるたびに書き足す。</em></li>
+    <li><strong>まだ論じていないこと</strong>：保持している問い（統合に至らない形の分け方 など）。</li>
+  </ol></div>
+</section>
+
+<section>
+  <h2>規約で決めて進めること</h2>
+  <p>異論があれば、このページにコメントで。</p>
+  <ul class="plain">
+    <li>「現在の定義」のページと「調査の経緯」の読み物は分ける。定義は短く今の到達点を、経緯は話の流れを書く（見える一文が骨格で、背景と経緯は定義と別枠にする・stance 2-4）。</li>
+    <li>経緯の読み物は、段 3 を待たずに前半から書き始め、補強が出るたびに書き足す（網羅しない・見つかれば書き足す・stance 2-6）。</li>
+    <li>第 2 層の候補の分野の数は、照合し直すまでページの主役にしない（計画の段 3「28/30 のような数は主役から外す」）。</li>
+    <li>トップの五段階の文（日英）を直すのは、この案の答えのあと。直し・新しいページ・読み物は、それぞれ別のセッションに出す。</li>
+  </ul>
+</section>
+
+<section>
+  <div class="ask" id="ask">
+    <h2 style="border:0;padding:0">この並びで進めますか</h2>
+    <p>トップ／現在の定義／調査の経緯／30 分野の記録／調べ方／読み物の棚、の六つです。直したいところは、押したあとにコメントで書いてください。</p>
+    <div class="btns">
+      <button id="btn-go" class="primary" type="button" data-choice="go" aria-pressed="false">この並びで進める</button>
+      <button id="btn-fix" type="button" data-choice="fix" aria-pressed="false">直したいところがある（コメントで）</button>
+    </div>
+    <p id="status">答えを読み込んでいます…</p>
+  </div>
+</section>
+</div>
+
+<script>
+(function(){
+  const statusEl=document.getElementById('status');
+  const btns=[...document.querySelectorAll('button[data-choice]')];
+  const labels={go:'この並びで進める',fix:'直したいところがある（コメントで）'};
+  let db=null, ref=null;
+  function show(d){
+    btns.forEach(b=>b.setAttribute('aria-pressed', d&&d.choice===b.dataset.choice?'true':'false'));
+    statusEl.textContent = d&&d.choice ? '答え：「'+labels[d.choice]+'」（'+new Date(d.at).toLocaleString('ja-JP')+'）。押し直せば変えられます。' : 'まだ答えはありません。';
+  }
+  const timer=setTimeout(()=>{ if(!db) statusEl.textContent='答えの置き場に届きません。コメントで答えてください。'; },10000);
+  (async()=>{
+    try{
+      db = window.claude ? await window.claude.use('db') : null;
+      clearTimeout(timer);
+      if(!db){ statusEl.textContent='この画面ではボタンの答えを残せません。コメントで答えてください。'; btns.forEach(b=>b.disabled=true); return; }
+      ref=db.doc('answers/content-plan');
+      ref.onSnapshot(s=>show(s.exists?s.data():null), ()=>{statusEl.textContent='答えを読めませんでした。';});
+    }catch(e){ clearTimeout(timer); statusEl.textContent='答えの置き場に届きません。コメントで答えてください。'; }
+  })();
+  btns.forEach(b=>b.addEventListener('click', async()=>{
+    if(!ref) return;
+    btns.forEach(x=>x.disabled=true);
+    try{ await ref.set({choice:b.dataset.choice, at:new Date().toISOString()}); }
+    catch(e){ statusEl.textContent='残せませんでした。コメントで答えてください。'; }
+    finally{ btns.forEach(x=>x.disabled=false); }
+  }));
+})();
+</script>

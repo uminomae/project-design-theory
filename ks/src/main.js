@@ -61,21 +61,14 @@ initGuides({ lang: detectLang() });
 initAbout();
 initDesignThinkingModal();
 
-// CHANGED(2026-03-25): #170 — Query parameter direct access to modals
+// 読者別の旧ガイド（?guide=general|designer|academic）と全体像のスライド（?slide=overview）は、今の入口と
+// 定義が食い違う古い版だったので、URL から開く配線を 2026-11-10 に外した（Issue #111）。
+// 論の下書きを公開ページと同じ見え方で確かめる配線（?guide=<名前>&draft-md=<repo 内の .md>・#216）だけを残す。
 (function handleQueryParams() {
     const params = new URLSearchParams(window.location.search);
     const guideKey = params.get('guide');
-    const slideKey = params.get('slide');
-    if (guideKey) {
+    if (guideKey && params.get('draft-md')) {
         import('./guides.js').then(({ openGuideModal }) => openGuideModal(guideKey));
-    }
-    if (slideKey === 'overview') {
-        import('./slide-viewer.js').then(({ openRichSlideViewer }) => {
-            openRichSlideViewer({
-                htmlUrl: './content/guides/meta-overview.html',
-                title: '欠損駆動思考 — 全体像',
-            });
-        });
     }
 })();
 

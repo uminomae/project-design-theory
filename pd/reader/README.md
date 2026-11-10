@@ -20,6 +20,8 @@
 | `management-drivers.html` | `knowledge/research/management-drivers/READER-management-drivers.md`（経営学の考え方は、どこまで効くか。七つの駆動源の考え方を、よく効く場面と、正解として広げたときの取り違えで見る。Love駆動開発の「経営学が見てきた七つの駆動源」の章の詳しくを切り出したもの） | flow（トップと同じ Menu。**工事中＝noindex**。pjdhiro の確認後に noindex を外し sitemap・llms.txt へ。Love駆動開発の七つの駆動源の章からリンク） |
 | `business-design-syllabus.html` | `knowledge/research/business-design-syllabus/READER-business-design-syllabus.md`（Love駆動開発は、事業構想の授業になるか — 総論と特論の試案。事業構想の授業を、総論〔学の輪郭を、見方の道具を持ってかんたんな順に一周する〕と特論〔Love駆動開発を読み物の順にたどる〕の二本に組むとしたらという pjdhiro の思案を、それぞれ 15 回とシラバス文の形で置く。現実の講義ではない） | flow（トップと同じ Menu。**工事中＝noindex**。pjdhiro の確認後に noindex を外し sitemap・llms.txt へ。HOME の「問い」からリンク） |
 
+`archive/` には、入口と機械向けの案内から外した古い版をしまってある（`archive/README.md`。2026-11-10・Issue #111 で `energy-flow-rhythm.html`＝「エネルギーの流れ」の比較用の実験版を移した）。
+
 ## このページが何で、どう育てるか
 
 `three-and-seven.html` は **可除代数‑意識/組織仮説の万人向け公開解説ページ**（North Star）。

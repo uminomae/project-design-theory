@@ -84,7 +84,6 @@ const checks = [
 const KEEP = new Map([
   ['scripts/pjdhiro-dir.sh', 'pjdhiro の場所を決める所。見つからないときに repo の隣を返す'],
   ['scripts/pjdhiro-dir.mjs', 'pjdhiro の場所を決める所。見つからないときに repo の隣を返す'],
-  ['ks/scripts/devlog-config.json', 'ks の devlog は今までの kesson-space の履歴から作るもの。履歴は非公開のアーカイブにあり、作り直すときに決める'],
 ]);
 
 let failed = false;

@@ -67,7 +67,7 @@ tags: [meta]
 正本と一緒に commit → develop → 3001 で見る → main → Pages
 ```
 
-知らせを見落としたページは、出典の最後の変更が `compiled` 日より後になるので、[[health/freshness-report]] の WL-3 に並ぶ。`scripts/check.sh` はその数を出す（止めない）。
+知らせを見落としたページは、出典の最後の変更が `compiled` 日より後になるので、`health/freshness-report.md` の WL-3 に並ぶ。`scripts/check.sh` はその数を出す（止めない）。
 
 ### front matter の読み方
 
@@ -150,11 +150,11 @@ related_concepts: [...]       # (任意) 関連する概念
 
 | チェック | 何を見るか | 報告 |
 |---|---|---|
-| **WL-1** 旧用語 | 使わなくなった用語（Withhold→抱持 など）が残っていないか | [[health/cn-divergence-report]] |
-| **WL-3** 古いページ | 出典の最後の変更（git の commit）が、ページの `compiled` 日より後か | [[health/freshness-report]] |
-| **WL-4** 孤立ページ | どこからもリンクされていないページ | [[health/orphan-report]] |
+| **WL-1** 旧用語 | 使わなくなった用語（Withhold→抱持 など）が残っていないか | `health/cn-divergence-report.md` |
+| **WL-3** 古いページ | 出典の最後の変更（git の commit）が、ページの `compiled` 日より後か | `health/freshness-report.md` |
+| **WL-4** 孤立ページ | どこからもリンクされていないページ | `health/orphan-report.md` |
 | **WL-5** 出典の実在 | front matter の出典のパスが、この repo にあるか | WL-3 と同じ報告 |
-| **WL-6** `/` 入りのリンク | 年号の `/` がパスとして読まれていないか | [[health/orphan-report]] |
+| **WL-6** `/` 入りのリンク | 年号の `/` がパスとして読まれていないか | `health/orphan-report.md` |
 
 文字化け（U+FFFD）は `scripts/check.sh` が見る。
 
