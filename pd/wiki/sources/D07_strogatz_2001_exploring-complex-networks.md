@@ -34,7 +34,7 @@ Steven H. Strogatz（コーネル大学）が 2001 年に *Nature* のレビュ�
 
 ### 同期は技術の目標でもある
 
-> "From a technological standpoint, self-synchronization would be the most desirable outcome, because a perfectly coherent array of N lasers would produce N² times as much power as a single one. But in practice, semiconductor laser arrays are notoriously prone to spatial and temporal instabilities." (pp.269–270)
+> "From a technological standpoint, self-synchronization would be the most desirable outcome, because a perfectly coherent array of N lasers would produce N² times as much power as a single one. But in practice, semiconductor laser arrays are notoriously prone to both spatial and temporal instabilities." (pp.269–270)
 
 ### スモールワールドと信号の伝わり
 

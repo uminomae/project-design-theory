@@ -26,7 +26,7 @@ Grégoire Nicolis（ブリュッセル自由大学）と Catherine Nicolis（ベ
 
 ### 自己組織化する系は、多くの状態から選ぶ
 
-> "One of the principal features of complex self-organizing systems is the multitude of a priori available states. This confers to their evolution an element of unexpectedness, reflected by the ability to choose among several outcomes and the concomitant difficulty of an observer to localize the actual state in state space." (p.1)
+> "One of the principal features of complex self-organizing systems is the multitude of a priori available states [1]. This confers to their evolution an element of unexpectedness, reflected by the ability to choose among several outcomes and the concomitant difficulty of an observer to localize the actual state in state space." (p.1)
 
 著者らは、この問題が、ノイズでぼやけた信号を多くの信号の中から見分けるという情報理論の中心の問題に似ていると書く。
 
