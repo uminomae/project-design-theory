@@ -77,7 +77,8 @@ related_concepts: [...]                        # 任意
 
 正本を直したセッションが知らせを取りこぼした分（手で直した・ほかの道具で直した など）と、まだ無い出典ページは、セッションを区切るときに拾い、別のセッションで作り直す（pjdhiro 2026-11-10「セッションを区切り、セッションログを作り、そこから司令塔として別セッションにwiki更新の指令を出すように」。今までの #77 の inbox と `wiki-gen-check` に当たる。始めにサブエージェントで作り直す案と、区切るセッションが自分で直す案は取りやめた）。
 
-- 拾うもの：古いページ（出典が `compiled` 日より後に変わった）と、cs の台帳 `cs/knowledge/raw/manifest.md` で読める原典（`raw-confirmed`・`url-verified`）のうち、出典ノートがあるのに wiki の出典ページがまだ無いもの。`node pd/scripts/wiki-stale-check.mjs --session-end` が並べる（台帳の側は `pd/scripts/wiki-gen-check.mjs`）。何も無ければ何も出ない。
+- 拾うもの：古いページ（出典が `compiled` 日より後に変わった）と、cs の台帳 `cs/knowledge/raw/manifest.md` で読める原典（`raw-confirmed`・`url-verified`）のうち、出典ノートがあるのに wiki の出典ページがまだ無いもの。`node pd/scripts/wiki-stale-check.mjs --session-end --log <記録の名前>` が並べる（台帳の側は `pd/scripts/wiki-gen-check.mjs`）。何も無ければ何も出ない。
+- 重ならないための印：`--session-end` は、並べた分を、このセッションが出すものとして本体の checkout の `.cache/wiki-order.json` に書く。24 時間のうちに区切るほかのセッションには、もう出ている分は並ばない。全部出ていれば「出さない」と出るので、何も出さない。二度回すと、自分の印で「もう出ている」と出る（2026-11-10 に、続けて区切るセッションが同じ一覧で三度出して重なった。#130・pjdhiro 2026-11-11「印を置く」）。作り直しのセッションが途中で止まったら、その分は 24 時間たつまで出ない。急ぐときは、その行を印から消す。
 - いつ：CLAUDE.md「セッションの終わりに」で、セッションの記録を書いたあと、pjdhiro に伝える前。
 - 誰が：区切るセッションは、自分では直さない。司令塔として別のセッションを始め（`start_session`・`context: "fresh"`・自分の worktree）、下の雛形に一覧を入れて渡す。数が多いときは、分野ごとに分けて出す。
 - 始めの知らせ：SessionStart の hook（`.claude/hooks/wiki-session-start.sh`・`.claude/settings.json` に登録）と `bash scripts/session-digest.sh` の終わりも同じ一覧を出し、「今は自分の作業を続け、区切るときに出す」と添える。hook は本体の checkout の版が動くので、hook を直したときは develop に入ってから効く。
@@ -87,9 +88,9 @@ related_concepts: [...]                        # 任意
 ```
 wiki の作り直し（区切ったセッション <セッションの記録の名前> から）。
 .claude/skills/wiki-compile/SKILL.md を読み、その手順で次のページを今の正本から作り直す（未作成は出典ノートから作る）。
-<node pd/scripts/wiki-stale-check.mjs --session-end の一覧をそのまま>
+<node pd/scripts/wiki-stale-check.mjs --session-end --log … の一覧をそのまま>
 - 正本に無いことは足さない。引用は正本の文のまま。直す必要が無いと確かめたページは compiled を今日にする。
-- 終わったら pd/wiki/log.md に一行足し、node pd/scripts/wiki-stale-check.mjs --session-end が空になること、bash scripts/check.sh が通ることを見る。
+- 終わったら pd/wiki/log.md に一行足し、node pd/scripts/wiki-stale-check.mjs --session-start で、渡した一覧が出なくなったこと（--session-end は印を付けるので、確かめには使わない）、bash scripts/check.sh が通ることを見る。
 - 本体の checkout の develop に取り込んで push する。main へは送らない（公開は pjdhiro が決める）。
 - 済んだら、直したページと残したことを短く報告する。
 ```
