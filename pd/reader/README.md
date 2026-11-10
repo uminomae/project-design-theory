@@ -18,6 +18,7 @@
 | `love-history.html` | `knowledge/research/love-history/READER-love-history.md`（Love とは、どう言われてきたか・#79。Love と呼ばれてきたものを、仏教の流れと西洋哲学の流れに沿って歴史の順に並べ、現代の恋愛の定義と心理学の分類・神経科学を足す。誰が何を Love と呼んだかを、原典の本文を読めた出典だけで並べる。ほかのページとの関係を書かない独立した読み物で、どこから参照されてもよい（pjdhiro 2026-11-09）） | flow（トップと同じ Menu。**工事中＝noindex**） |
 | `love-trajectory.html` | `knowledge/research/love-trajectory/READER-love-trajectory.md`（私というアプリを、読めるようにした一年・#109。Love駆動開発が生まれるまでの pjdhiro の一年を、章ごとの pjdhiro の言葉と、当時の公開の投稿や記録へのリンクでたどる。Love駆動開発の巻末の「一年の軌跡」から独立させた。骨格は `knowledge/research/love-driven-dev/PLAN-trajectory-page-20261110.md`） |
 | `management-drivers.html` | `knowledge/research/management-drivers/READER-management-drivers.md`（経営学の考え方は、どこまで効くか。七つの駆動源の考え方を、よく効く場面と、正解として広げたときの取り違えで見る。Love駆動開発の「経営学が見てきた七つの駆動源」の章の詳しくを切り出したもの） | flow（トップと同じ Menu。**工事中＝noindex**。pjdhiro の確認後に noindex を外し sitemap・llms.txt へ。Love駆動開発の七つの駆動源の章からリンク） |
+| `business-design-syllabus.html` | `knowledge/research/business-design-syllabus/READER-business-design-syllabus.md`（Love駆動開発は、事業構想の授業になるか — 総論と特論の試案。事業構想の授業を、総論〔学の輪郭を、見方の道具を持ってかんたんな順に一周する〕と特論〔Love駆動開発を読み物の順にたどる〕の二本に組むとしたらという pjdhiro の思案を、それぞれ 15 回とシラバス文の形で置く。現実の講義ではない） | flow（トップと同じ Menu。**工事中＝noindex**。pjdhiro の確認後に noindex を外し sitemap・llms.txt へ。HOME の「問い」からリンク） |
 
 ## このページが何で、どう育てるか
 

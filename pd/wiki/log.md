@@ -393,3 +393,19 @@ compile 実行の履歴。append-only。
 - sources: cs/knowledge/source-notes/ の 44 本（2026-11-08〜09 の #73 の照合）
 - pages: ノートで直った引用・頁・題・DOI は、多くが 11-09 と 11-10 の fix ですでに写っていた。今回、題を足した（D10 Serhan）、parity principle は 1998 年の本文に無い語だと合わせた（D14）、悲劇の状況 36（D19 Polti）、四語は 1965 年の要約に出る（D22 Tuckman 1965）、直接の検証は 1 篇だけ（D22 Tuckman & Jensen 1977）、SECI の 4 モードはこの論文で定められている（D22 Nonaka）、予測可能性の結論を慎重に（D05）、D07 は工学情報（D07 Schultz）、仏語原文の写しは無い（D25 van Gennep 1909）。ノートに無い引用は、ノートの文に替えるか、引用の形を外して「原文は出典ノートで確かめていない」と書いた（D08・D09 Attwell・D11・D12 Pedigo・D13・D14・D15・D19 Todorov・D30 世阿弥）。読んでいない頁や章を読んだように書いていたところに、ノートの読んだ範囲を書いた（D09 Schultz・D14・D15・D24 James・D30 世阿弥・D30 松木・沼田の参加者の言葉）。「cs 精読ノート: 未生成」などの古い記録を、今のノートへのリンクと読んだ範囲に替えた（D08・D09・D12・D13・D19・D22 ほか）。全部の compiled を今日に
 - 確かめ: ページにある英語の引用 77 件が、すべて今の出典ノートにあることを抜き取って確かめた。ノートに無いだけで食い違っていない説明の文は触っていない
+
+## [2026-11-10] check | 農学・生態学の出典ノート 3 本の直し（#73）
+- scope: 出典ページ 3（確かめだけ。うち 1 は書誌に DOI を足した）
+- sources: `cs/knowledge/source-notes/D12/D12-S03_holling-1973.md`・`D12-S05_stern-1959.md`・`D12-S06_pedigo-1986.md`
+- pages: 出典ノートの直しは、Pedigo の引用の頁（p.345→p.343、p.347→p.344）と、Holling・Stern の DOI だけ。`sources/D12_pedigo_1986_et-al` は頁を書いておらず、`sources/D12_holling_1973_resilience-stability` は DOI を書いていたので、本文を変えずに compiled を今日にした。`sources/D12_stern_1959_integrated-control-concept` は書誌に DOI を足し、compiled を今日にした
+
+## [2026-11-10] fix | #111 の束 1：出典ページ 10 枚の事実・書誌・DOI の誤りを、一次情報で確かめて直す
+- scope: 出典ページ 10。正本 3（台帳の Ghosh ら 2008 の行・精読ノート 2 本）
+- sources: Crossref（DOI 4 件）、Internet Archive の 1893 年初版（デュルケーム）、手元の原典（Abrikosov 1957 pp.1177–1180、Wiener 第 2 版 p.11、『世阿彌十六部集』の奥付・目次・p.46）、Granovetter 1973 p.1363（スタンフォード大学の授業の頁の写し）、cs の記録（舞台芸術・伝統知・物理・工学）
+- pages: `D18_durkheim_1893`（「パリ大学教授として」→ 初版の扉はボルドー大学文学部の社会科学の講義の担当）。`D21_hayek_1945`（存在しない DOI を外した）。`Coan_2015`（DOI を 10.1016/j.copsyc.2014.12.021 に）。`D21_deco_2008`（著者は Ghosh・Rho・McIntosh・Kötter・Jirsa。Deco は著者でない。台帳と精読ノートも直した。ファイル名はそのまま）。`D28_zeami_classics`（「上下二冊」→ 一冊・1909 年。構成を目次の並びに。『花鏡』は「覺習條々」の題）。`D30_zeami_classics`（「一座」をその場の全員とする定義を外し、原文は定義していないと書いた）。`D18_granovetter_1973`（「数理で証明」→ 誇張の仮定とその帰結）。`D02_abrikosov_1957`（三角格子 → この論文は上部臨界磁場の近くで正方格子。hc/2e を外した。精読ノートの β の値も直した）。`D07_wiener_1948`（「ネゲントロピーである」の引用を外し、p.11 の書き方に）。`D07_heylighen_2025`（書誌の行の年を 2026 に）
+- 直していない: `D30_zeami_classics` の題と「場の共創」の読み（読みの採否）。`D28_zeami_classics` の「見所同心」「守・破・離」（原典の箇所を確かめられていない）。#111 に残した
+
+## [2026-11-10] check | Love駆動開発の三章の推敲（#96）で正本が変わった二ページ
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（信頼の章の抱持のリンク先・構想の章の問いと起点・心を守る章の起点と文脈）
+- 結果: 二ページとも、直した三章の起点・文脈・リンクを引いていない。直す所は無い。compiled は 2026-11-10 のまま

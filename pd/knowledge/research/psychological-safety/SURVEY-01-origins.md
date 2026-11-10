@@ -229,9 +229,9 @@
 5. **pjdhiro の見立てとの関係**:
    - 「心理的に安全であって、生物的に安全ではない。いつの間にか低次欲求だけをケアしてる」: 「心理的な害から守られる」（Vella）・「身体的に害されない」（Bean）への読み替えは、まさに pjdhiro が言う「低次欲求だけをケアする」向きの読み替えが、学術の定義の中でも起きている実例。重ならないのは、Bean の定義が身体の安全と同時に「受け入れられ尊重される」を入れている点で、生存の側だけに縮んでいるわけではない。
 
-### 10d. O'Donovan & McAuliffe (2020) 二本（医療チーム）
+### 10d. O'Donovan, Van Dun & McAuliffe (2020)・O'Donovan & McAuliffe (2020)（医療チーム。二本）
 
-1. **書誌**: (a) O'Donovan, R., & McAuliffe, E. (2020). Measuring psychological safety in healthcare teams: developing an observational measure to complement survey methods. *BMC Medical Research Methodology*, 20. DOI 10.1186/s12874-020-01066-z（論文番号は `未照合`）。(b) O'Donovan, R., & McAuliffe, E. (2020). A systematic review exploring the content and outcomes of interventions to improve psychological safety, speaking up and voice behaviour. *BMC Health Services Research*, 20. DOI 10.1186/s12913-020-4931-2（論文番号は `未照合`）。EuropePMC の書誌で DOI・年・誌名を確認。
+1. **書誌**: (a) O'Donovan, R., Van Dun, D., & McAuliffe, E. (2020). Measuring psychological safety in healthcare teams: developing an observational measure to complement survey methods. *BMC Medical Research Methodology*, 20. DOI 10.1186/s12874-020-01066-z（論文番号は `未照合`）。(b) O'Donovan, R., & McAuliffe, E. (2020). A systematic review exploring the content and outcomes of interventions to improve psychological safety, speaking up and voice behaviour. *BMC Health Services Research*, 20. DOI 10.1186/s12913-020-4931-2（論文番号は `未照合`）。EuropePMC の書誌で DOI・年・誌名を確認。(a) の著者は三人（2026-11-10 に Crossref で確かめ、二人と書いていたのを直した。20(1), 論文番号 203）。
 2. **照合の状態**: `本文照合済`（EuropePMC の全文 XML。PMC7387873・PMC7011517）。保存＝`odonovan-PMC*.xml`／`.txt`。
 3. **鍵の文**:
    - (a) 調査票だけに頼ると "limited by self-report bias"。チームの水準の項目を個人の水準の評価に作り変えて使った（"Adapted Edmondson (1999)'s team level items to capture individual level assessment"）。
@@ -289,7 +289,7 @@
 
 - [教科書] 原典の系譜は、Schein & Bennis 1965（変化と学習の条件・個人）→ Schein 1992/1993・1995（学ぶ不安と生存の不安・自己の同一性と能力感を守る）→ Kahn 1990（関与の条件・自己像と地位とキャリア・個人）→ Edmondson 1999（チームで共有された信念）→ Edmondson 2002（信頼との三つの違い）→ Edmondson & Lei 2014（個人・集団・組織の三水準）。それより早い用例に Rogers 1954（創造性の条件・無条件の受容）がある。
 - [研究の一線] どの原典も、守られるものを自己（identity・self-worth・self-image・自分らしさ・仮面を外せること）の側に置いている。身体の安全を指すものは無い。
-- [研究の一線] 曖昧さは三つの形で記録されている。水準の混在（Newman ら 2017・Edmondson & Lei 2014・山口 2020・大塚と落合 2025）、測定の水準の入れ替わりと自己報告（O'Donovan & McAuliffe 2020）、害からの保護への読み替え（Taylor ら 2022 が示す Vella 2022・Bean 2020）。
+- [研究の一線] 曖昧さは三つの形で記録されている。水準の混在（Newman ら 2017・Edmondson & Lei 2014・山口 2020・大塚と落合 2025）、測定の水準の入れ替わりと自己報告（O'Donovan, Van Dun & McAuliffe 2020）、害からの保護への読み替え（Taylor ら 2022 が示す Vella 2022・Bean 2020）。
 - [Claude の読み替え] 罰の不在だけに縮む読みは、現場の誤解だけでなく、英語の研究の定義の動き（スポーツ）と、原典の著者自身の後年の定義の言い方（2018 の "punitive"）にも見える。縮みは、現場・訳語・研究・著者の言い方のどこか一か所で起きたというより、複数の場所で同じ向きに起きているかもしれない（吟味待ち）。
 
 ---
@@ -312,7 +312,7 @@
 | Newman, Donohue & Eva | 2017 | Psychological safety: A systematic review of the literature | 10.1016/j.hrmr.2017.01.001 | 要旨照合済 | なし |
 | Frazier et al. | 2017 | Psychological safety: A meta-analytic review and extension | 10.1111/peps.12183 | 二次資料のみ（SURVEY-02 は本文照合済（ブラウザ内で閲覧・ローカル本文なし・再照合不可）） | なし（`frazier-2017-CLOUDFLARE-BLOCK-not-the-paper.html` は本文でない） |
 | Taylor, Collins & Ashford | 2022 | Psychological safety in high-performance sport | 10.3389/fspor.2022.823488 | 本文照合済 | `sport-2022-fspor-823488.pdf`・`sport-2022*.txt` |
-| O'Donovan & McAuliffe | 2020 | Measuring psychological safety in healthcare teams | 10.1186/s12874-020-01066-z | 本文照合済 | `odonovan-PMC7387873.*` |
+| O'Donovan, Van Dun & McAuliffe | 2020 | Measuring psychological safety in healthcare teams | 10.1186/s12874-020-01066-z | 本文照合済 | `odonovan-PMC7387873.*` |
 | O'Donovan & McAuliffe | 2020 | A systematic review … interventions to improve psychological safety | 10.1186/s12913-020-4931-2 | 本文照合済 | `odonovan-PMC7011517.*` |
 | Edmondson | 2018 | The fearless organization | ISBN 9781119477242 | 二次資料のみ | なし |
 | Edmondson | 2008 | The competitive imperative of learning (HBR) | — | 二次資料のみ | なし |

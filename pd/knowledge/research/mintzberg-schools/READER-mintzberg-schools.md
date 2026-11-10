@@ -57,7 +57,7 @@
 
 ## 学派ごとに — 定義、よくある誤解、Love駆動開発の視点で見た解釈、効く条件
 
-一覧と同じ順です。学派の章が残っていないエンバイロメント、ラーニング、ポリティカル、コグニティブ、カルチャーには、Claude が近い論文を当てています。
+一覧と同じ順です。ミンツバーグの 1993 年の振り返りの時点で、学派の章がまだ書かれていなかった七つ（エンバイロメント、ラーニング、ポリティカル、アントレプレナー、コグニティブ、カルチャー、コンフィギュレーション）には、Claude が近い論文を当てています。
 
 ### エンバイロメント
 
@@ -111,7 +111,7 @@
 
 <div class="tablefit cols-2">
 
-| 定義 | 戦略づくりの型の一つ、起業家型。力のある一人が大胆に決める（ミンツバーグ、1973 年）。起業家にとって戦略は、頭の中にある事業の像。それを生み、変える鍵は、事業についての細かな知識（ミンツバーグとウォーターズ、1983 年） |
+| 定義 | （近い論文から）戦略づくりの型の一つ、起業家型。力のある一人が大胆に決める（ミンツバーグ、1973 年）。起業家にとって戦略は、頭の中にある事業の像。それを生み、変える鍵は、事業についての細かな知識（ミンツバーグとウォーターズ、1983 年） |
 |---|---|
 | よくある誤解 | <strong>誤解：</strong>起業家の戦略は、紙に書かれた詳しい計画だと思うこと。<strong>論文では：</strong>多くは頭の中にある事業の像で、だから変えやすい |
 | Love駆動開発の視点で見た解釈 | <strong>区間：</strong>縁 → 渦。<strong>駆動源：</strong>起業家の欲や本能やビジョン。<strong>pjdhiro の感想：</strong>「アントレプレナー学派やエフェクチュエーションは、起業家の心が駆動源でしょうね。欲や本能のような。その背後にあるものを追っているのがLove駆動開発です」 |
@@ -179,7 +179,7 @@ pjdhiro の「創造とは」の五段階で見ると、一人の心の中で、
 
 <div class="tablefit cols-2">
 
-| 定義 | 組織の設計の要素は、ばらばらに決まらず、筋の通ったまとまりに落ち着く。原子もアリも星もそうであるように、組織の特徴も自然なまとまりになる。状況が組織を選び、組織も状況を選ぶ（ミンツバーグ、1984 年） |
+| 定義 | （近い論文から）組織の設計の要素は、ばらばらに決まらず、筋の通ったまとまりに落ち着く。原子もアリも星もそうであるように、組織の特徴も自然なまとまりになる。状況が組織を選び、組織も状況を選ぶ（ミンツバーグ、1984 年） |
 |---|---|
 | よくある誤解 | <strong>誤解：</strong>設計の要素を、市場で野菜を選ぶように、一つずつ選べると思うこと。<strong>論文では：</strong>要素は互いに筋の通ったまとまりに落ち着く |
 | Love駆動開発の視点で見た解釈 | <strong>区間：</strong>束 → 渦 → 束。<strong>駆動源：</strong>わからない。<strong>pjdhiro の感想：</strong>「コンフィグレーション　はわからない。ミンツバーグもよくわかってないんじゃないかな。」 |
@@ -204,8 +204,6 @@ pjdhiro の「創造とは」の五段階で見ると、決め方と組織と事
 <!--REF:経営学-->
 
 出典：Mintzberg (1973) "Strategy-Making in Three Modes", *California Management Review*／Mintzberg & Waters (1983) "The Mind of the Strategist(s)", in S. Srivastva (ed.) *The Executive Mind*, Jossey-Bass／Mintzberg (1984) "A Typology of Organizational Structure", in D. Miller & P. Friesen *Organizations: A Quantum View*, Prentice-Hall／Mintzberg (1985) "The Organization as Political Arena", *Journal of Management Studies* 22(2)／Mintzberg & Waters (1985) "Of Strategies, Deliberate and Emergent", *Strategic Management Journal* 6(3):257／Mintzberg (1990) "The Design School: Reconsidering the Basic Premises of Strategic Management", *Strategic Management Journal* 11(3):171／Mintzberg (1990) "Strategy Formation: Schools of Thought", in J.W. Fredrickson (ed.) *Perspectives on Strategic Management*（存在のみに触れた）／Mintzberg (1991) "Strategic Thinking as 'Seeing'", in J. Näsi (ed.) *Arenas of Strategic Thinking*／Mintzberg (1993) "25 Years Later... The Illusive Strategy", in A.G. Bedeian (ed.) *Management Laureates* Vol. II／Mintzberg (1994) "Rethinking Strategic Planning, Part I・II", *Long Range Planning* 27(3)／Mintzberg, Ahlstrand & Lampel (1998) *Strategy Safari*（冒頭の群盲象のみ）／Saxe "The Blind Men and the Elephant"。創造の五段階は「創造とは」のトップページによる。
-</content>
-</invoke>
 
 ## このページについて
 

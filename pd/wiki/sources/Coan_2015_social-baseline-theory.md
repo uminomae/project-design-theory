@@ -6,7 +6,7 @@ tags: [source, "awareness-model", "原典解説"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/coan-sbarra-social-baseline-theory.md"
-compiled: "2026-04-08"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---
@@ -33,7 +33,7 @@ Coan & Sbarra (2015) は「社会的ベースライン理論」（SBT）を体�
 
 - Coan, Schaefer & Davidson (2006). "Lending a hand: Social regulation of the neural response to threat." *Psychological Science*, 17(12), 1032-1039.
 - Beckes, Coan & Hasselmo (2013). "Familiarity promotes the blurring of self and other." *Social Cognitive and Affective Neuroscience*, 8(6), 670-677.
-- **DOI**: [10.1177/0963721414558601](https://doi.org/10.1177/0963721414558601)
+- **DOI**: [10.1016/j.copsyc.2014.12.021](https://doi.org/10.1016/j.copsyc.2014.12.021)
 
 ## 方法論
 

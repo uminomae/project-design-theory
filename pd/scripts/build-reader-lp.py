@@ -111,6 +111,12 @@ PAGES = [
         ROOT / "reader/love-trajectory.html",
         "flow",
     ),
+    (
+        ROOT / "knowledge/research/business-design-syllabus/READER-business-design-syllabus.md",
+        ROOT / "scripts/reader-business-design-syllabus-template.html",
+        ROOT / "reader/business-design-syllabus.html",
+        "flow",
+    ),
 ]
 
 # スクリーナーのデータ（正本 JSON）。出力 HTML 名 → JSON。正本 MD の <!--SCREENER--> に

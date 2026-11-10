@@ -7,6 +7,9 @@
 //
 // 検査対象: reader/*.html の内部リンク href="#..." が、同ページ内の実在 id に
 // 解決するか。解決しない（宙に浮いた）リンクがあれば FAIL する。
+// ページをまたぐリンク href="<ほかの読み物>.html#..." も、行き先のページの実在 id に
+// 解決するかを見る（2026-11-10・#111。Love駆動開発の章題が変わって、ほかの読み物からの
+// リンク 5 本が切れたまま PASS していた）。行き先のファイルが reader/ に無いものも FAIL。
 // build-reader-lp.py は pandoc の gfm_auto_identifiers で見出し id を振るため、
 // 正本 MD 側で節見出しに合わせて手書きした <a href="#..."> がズレると壊れる。
 //
@@ -30,36 +33,54 @@ if (!files.length) {
   process.exit(0);
 }
 
-let broken = 0;
-let totalLinks = 0;
+const decode = (x) => { try { return decodeURIComponent(x); } catch { return x; } };
+// 属性のクオート（" / '）と大小文字（id/ID・href/HREF）を許容して捕捉する。
+// ダブルクオート小文字限定だと、将来 build や手書きが href='#..' や HREF を出した
+// 場合に壊れアンカーを見逃す（偽陰性）——今回直した「観点の穴」の縮小版を塞ぐ。
+const pages = new Map();
 for (const f of files) {
   const html = readFileSync(join(readerDir, f), 'utf8');
-  // 属性のクオート（" / '）と大小文字（id/ID・href/HREF）を許容して捕捉する。
-  // ダブルクオート小文字限定だと、将来 build や手書きが href='#..' や HREF を出した
-  // 場合に壊れアンカーを見逃す（偽陰性）——今回直した「観点の穴」の縮小版を塞ぐ。
   const ids = new Set(
     [...html.matchAll(/\bid\s*=\s*(["'])(.*?)\1/gi)].map((m) => m[2]),
   );
-  // 内部リンクのみ（href="#..." で "#" 単独は除外）。decodeURIComponent で
+  pages.set(f, { html, ids });
+}
+
+let broken = 0;
+let totalLinks = 0;
+let totalCross = 0;
+for (const f of files) {
+  const { html, ids } = pages.get(f);
+  // 内部リンク（href="#..." で "#" 単独は除外）。decodeURIComponent で
   // %エンコードされたマルチバイト id にも対応する。
   const hrefs = [...html.matchAll(/\bhref\s*=\s*(["'])#(.*?)\1/gi)]
-    .map((m) => { try { return decodeURIComponent(m[2]); } catch { return m[2]; } })
+    .map((m) => decode(m[2]))
     .filter((h) => h);
   totalLinks += hrefs.length;
-  const missing = hrefs.filter((h) => !ids.has(h));
+  const missing = hrefs.filter((h) => !ids.has(h)).map((h) => `#${h}`);
+  // ページをまたぐリンク（同じ reader/ の中の <名前>.html#id。./ は許す。../ や URL は見ない）。
+  const cross = [...html.matchAll(/\bhref\s*=\s*(["'])(?:\.\/)?([^"'\/:#?]+\.html)#(.*?)\1/gi)]
+    .map((m) => [decode(m[2]), decode(m[3])])
+    .filter(([, h]) => h);
+  totalCross += cross.length;
+  for (const [page, h] of cross) {
+    const target = pages.get(page);
+    if (!target) missing.push(`${page}#${h}（行き先のページが reader/ に無い）`);
+    else if (!target.ids.has(h)) missing.push(`${page}#${h}`);
+  }
   if (missing.length) {
     broken += missing.length;
     console.log(`  [FAIL] ${f}: ${missing.length} 件の破損アンカー`);
-    for (const h of [...new Set(missing)]) console.log(`         → #${h}`);
+    for (const h of [...new Set(missing)]) console.log(`         → ${h}`);
   } else {
-    console.log(`  [PASS] ${f}: 内部アンカー ${hrefs.length} 件すべて解決`);
+    console.log(`  [PASS] ${f}: 内部アンカー ${hrefs.length} 件・ページをまたぐアンカー ${cross.length} 件すべて解決`);
   }
 }
 
 console.log('');
 if (broken) {
-  console.log(`NG — 破損アンカー ${broken} 件（正本 MD の <a href="#..."> を見出し id に合わせて修正）`);
+  console.log(`NG — 破損アンカー ${broken} 件（正本 MD のリンクを、行き先の見出し id に合わせて修正）`);
   process.exit(1);
 }
-console.log(`OK — reader ${files.length} ページ・内部アンカー ${totalLinks} 件すべて解決`);
+console.log(`OK — reader ${files.length} ページ・内部アンカー ${totalLinks} 件・ページをまたぐアンカー ${totalCross} 件すべて解決`);
 process.exit(0);

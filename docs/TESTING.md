@@ -23,7 +23,7 @@
 |---|---|---|
 | 今までの repo を前提にした参照 | 今までの四つの repo の URL・名前の決め打ち・兄弟の並びを前提にしたスクリプト | 新しく書いた（`scripts/check-old-repo-refs.mjs`） |
 | pd：repo をまたぐ URL | 公開の URL の形 | project-design の `ci.yml` |
-| pd：読み物の内部アンカー | 読み物の中の「§2」などのページ内リンクの行き先 | project-design |
+| pd：読み物の内部アンカー | 読み物の中の「§2」などのページ内リンクの行き先。ほかの読み物の章へ飛ぶリンク（`<ほかの読み物>.html#id`）の行き先も見る（2026-11-10・#111。Love駆動開発の章題が変わって 5 本が切れていた） | project-design。ページをまたぐ分は新しく足した |
 | pd：引用カードの前の文脈 | 対話の形の読み物（いまは Love駆動開発の正本 md）で、pjdhiro の発言の引用カードの直前（空行を除く）が、見出し・畳みの題・組む道具の印（`<!--OPEN-->` など）になっていない。発言の前に、なぜその発言が出たのかが分かる文を置く（`docs/rules/writing.md` §5 の 10）。直前に文があっても唐突なことはあるので、通して読む確かめは残る | 新しく書いた（`scripts/check-quote-context.mjs`・型 R の繰り返し・2026-11-10・#96） |
 | pd：wiki の孤立ページ・不在の出典・旧用語 | 公開する wiki の孤立ページ・出典のパス・使わなくなった用語。`--check` で報告を書き換えずに見る | project-design の `wiki-lint` |
 | pd：wiki が読めない原典を出典にしていない | 取れない原典を、wiki の出典ページが読んだことにしていない | project-design の `wiki-access-lint`（pd#114・cs#252） |
@@ -32,6 +32,7 @@
 | ks：config の整合・export | 3D の設定と開発パネルと言語の構造 | kesson-space の `test.yml` |
 | ks：devlog の移動と深いリンク・日英 | 開発記録のページ送り・深いリンク・日英の対応 | kesson-space の `devlog.yml`・`package.json` |
 | 公開するファイルの文字化け | 公開するページ・データ・読み物の正本に U+FFFD が無い | project-design の `ci.yml` |
+| 道具の呼び出しの文字の紛れ込み | Claude がファイルを書く道具の閉じタグなどの文字（invoke・parameter・content の閉じタグ）が、git に入っている文字のファイルに残っていない（2026-11-10・#111。読み物の正本と精読ノートの終わりに残り、公開ページに出ていた） | 新しく書いた（`scripts/check.sh` の `tool_residue`） |
 | cs：照合の記録 | 分野ごとの照合の記録（`cs/evidence/evidence-Dxx-*.md`）の形：frontmatter・文責・一面の表・照合の状態と判定の語・確かめ先・台帳の行・絶対パス・文末。見るものは `docs/cs-review/README.md`「記録の品質の点検」 | 新しく書いた（`scripts/check-cs-evidence.mjs`、2026-11-08・#73。pjdhiro「レビュー時のルールもテストを作っていかないとね」） |
 | as：照合の記録と台帳 | 領域ごとの照合の記録（`as/evidence/evidence-Axx-*.md`）の形：frontmatter・文責・探し方・一面の表・照合の状態と判定の語・確かめ先・絶対パス・文末・本文の記号とパス。原典の台帳（`as/knowledge/raw/manifest.md`）の行の形と、台帳の「使う記録」の行の書誌（第一著者・年・題の頭・DOI）が記録の本文にあるか。画面に出す一覧（`as/evidence/reviewed.json`）の形。見るものは `docs/as-review/README.md`「記録の品質の点検」 | 新しく書いた（`scripts/check-as-evidence.mjs`、2026-11-10・#95。形の元は cs の点検） |
 | 道具：原典を探す find-source | `scripts/find_source.py` の書誌の一行の読み取り・置き場の分類（誰が上げた版か・確認画面のホスト）・判定の段・PDF との突き合わせ（前付けだけ・再録の印・別の題・別の DOI・著者稿）。ネットワークと PDF には触らない。例は cs のレビューで実際に起きた取り違えから取った（2026-11-09） | この repo で新しく書いた（`scripts/test_find_source.py`） |
