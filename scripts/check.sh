@@ -30,6 +30,8 @@ run "pd：wiki の孤立ページ・不在の出典・旧用語" bash -c 'cd pd 
 run "pd：wiki が読めない原典を出典にしていない" bash -c 'cd pd && node scripts/wiki-access-lint.mjs'
 # 出典が compiled 日より後に変わった wiki のページの数。止めずに知らせるだけ（2026-11-10。一覧は pd/wiki/health/freshness-report.md）。
 run "pd：wiki の古いページ（知らせるだけ）" node pd/scripts/wiki-stale-check.mjs --count
+# cs の台帳で読める原典なのに、wiki の出典ページが無いものの数。止めずに知らせるだけ（2026-11-10。今までの wiki-gen-check）。
+run "pd：wiki の出典ページが無い原典（知らせるだけ）" node pd/scripts/wiki-gen-check.mjs --count
 run "as：テスト" bash -c 'cd as && node --test tests/*.test.mjs'
 run "ks：config の整合" bash -c 'cd ks && node tests/config-consistency.test.js'
 run "ks：config の export" bash -c 'cd ks && node --experimental-vm-modules tests/config-exports.test.js'

@@ -15,6 +15,8 @@
  *        # 同じセッションで同じファイルは一度だけ知らせる（.cache/wiki-stale/<session>.txt）
  *   node pd/scripts/wiki-stale-check.mjs --list    # 古いページ（出典が compiled 日より後に変わった）を並べる
  *   node pd/scripts/wiki-stale-check.mjs --count   # 古いページの数だけ（scripts/check.sh が使う）
+ *   node pd/scripts/wiki-stale-check.mjs --session-start [--json]
+ *        # セッションの始めの知らせ（古いページと、出典ノートがあるのに出典ページが無い原典）。--json は SessionStart の hook の形
  *
  * いつも 0 で終わる（hook と検査を止めない）。
  */
@@ -57,7 +59,7 @@ function message(target, hits) {
   return lines.join("\n");
 }
 
-function main() {
+async function main() {
   const pages = readWikiPages();
 
   const hookPath = arg("--hook");
@@ -87,6 +89,32 @@ function main() {
     return;
   }
 
+  if (args.includes("--session-start")) {
+    // セッションの始めの知らせ（scripts/session-digest.sh と .claude/hooks/wiki-session-start.sh が呼ぶ）。
+    // 古いページと、出典ノートがあるのに出典ページが無い原典を並べる。作り直すのは司令塔が別のセッションに出す
+    // （.claude/skills/wiki-compile/SKILL.md「セッションの始めの知らせ」）。何も無ければ何も出さない。
+    if (isShallow()) return;
+    const stale = stalePages(pages, lastChangeDates());
+    let miss = [];
+    try { miss = (await import("./wiki-gen-check.mjs")).missingSourcePages().filter((m) => m.note); } catch { /* 台帳が無い */ }
+    if (!stale.length && !miss.length) return;
+    const lines = ["wiki の知らせ（セッションの始め）："];
+    if (stale.length) {
+      lines.push(`- 古いページ ${stale.length}（出典が compiled 日より後に変わった）：`);
+      for (const s of stale.slice(0, 10)) lines.push(`  - pd/wiki/${s.rel} ← ${s.newer.map((n) => n.path).join("、")}`);
+      if (stale.length > 10) lines.push(`  - ほか ${stale.length - 10}（node pd/scripts/wiki-stale-check.mjs --list）`);
+    }
+    if (miss.length) {
+      lines.push(`- 出典ノートがあるのに wiki の出典ページが無い原典 ${miss.length}：${miss.slice(0, 10).map((m) => m.id).join("・")}`);
+    }
+    lines.push("司令塔のセッションは、これを作り直す別のセッションを出す（wiki-compile のスキル。済んだら develop へ）。ほかのセッションは、自分の作業を続ける。");
+    const text = lines.join("\n");
+    if (args.includes("--json")) {
+      process.stdout.write(JSON.stringify({ hookSpecificOutput: { hookEventName: "SessionStart", additionalContext: text } }));
+    } else console.log(text);
+    return;
+  }
+
   if (args.includes("--list") || args.includes("--count")) {
     if (isShallow()) {
       console.log("wiki-stale-check: git の履歴が浅いので、日付を比べない");
@@ -107,5 +135,5 @@ function main() {
   console.error("Usage: wiki-stale-check.mjs --knowledge <path> | --hook <path> --session <id> | --list | --count");
 }
 
-try { main(); } catch (err) { console.error(`wiki-stale-check error: ${err.message}`); }
+try { await main(); } catch (err) { console.error(`wiki-stale-check error: ${err.message}`); }
 process.exit(0);

@@ -32,3 +32,7 @@ for d in "$@"; do
     echo
   done
 done
+
+# wiki の知らせ：古いページと、出典ノートがあるのに出典ページが無い原典（2026-11-10・pjdhiro「C 両方入れる」）。
+# 作り直すのは司令塔が別のセッションに出す（.claude/skills/wiki-compile/SKILL.md「セッションの始めの知らせ」）。
+node "$(git rev-parse --show-toplevel)/pd/scripts/wiki-stale-check.mjs" --session-start 2>/dev/null || true

@@ -72,10 +72,18 @@ related_concepts: [...]                        # 任意
 
 直す必要が無いと確かめただけのときは `## [YYYY-MM-DD] check | {対象}`、誤りの直しは `fix`。
 
-## 入れていないもの（pjdhiro に聞く問いとして残す）
+## セッションの始めの知らせ
 
-- 今までの #77 の、セッションの始めに自動で作り直す inbox（`.cache/inbox/wiki-restale-*.md`）。
-- 今までの `wiki-gen-check`（原典の台帳から、まだ無い出典ページを促す）。台帳を使い続けるかが #62 で決まっていない。
+正本を直したセッションが知らせを取りこぼした分（手で直した・ほかの道具で直した など）と、まだ無い出典ページを、セッションの始めに知らせる（2026-11-10・pjdhiro「C 両方入れる」。今までの #77 の inbox と `wiki-gen-check` に当たる）。
+
+- 知らせるもの：古いページ（出典が `compiled` 日より後に変わった）と、cs の台帳 `cs/knowledge/raw/manifest.md` で読める原典（`raw-confirmed`・`url-verified`）のうち、出典ノートがあるのに wiki の出典ページがまだ無いもの。中身は `node pd/scripts/wiki-stale-check.mjs --session-start`（台帳の側は `pd/scripts/wiki-gen-check.mjs`）。
+- 出る場所：`bash scripts/session-digest.sh` の終わり（CLAUDE.md で、どのセッションも始めに走らせる）。SessionStart の hook（`.claude/hooks/wiki-session-start.sh`）も同じものを出す。
+- **作り直すのは司令塔が別のセッションに出す。** どのセッションも始めに重い作業を抱えないよう、知らせを見たほかのセッションは自分の作業を続ける。司令塔は、知らせが出ていたら、作り直す別のセッションを出す（このスキルの手順で作り、develop に取り込む）。数が多いときは、分野ごとに分けて出す。
+- 出典ノートが無い原典（台帳で読めても、まだノートが無いもの）は、知らせない。出典ページの材料は出典ノートで、ノートは cs のレビュー（`docs/cs-review/`）が作る。数だけは `node pd/scripts/wiki-gen-check.mjs --count` と `scripts/check.sh` が出す。
+- 台帳は今の形（`source_id`・`domain_id`・`access_status`・`source_title` の表）で読む。#62 で台帳の扱いが変わったら、`wiki-gen-check.mjs` とこの節を合わせる。
+
+## 入れていないもの
+
 - 今までの `wiki-log-append`（commit のあとに log.md へ自動で書き足す）。今は手順 4 で手で書く。
 
 ## 点検（wiki-lint）
