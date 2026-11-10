@@ -1,0 +1,171 @@
+/*
+ * Love駆動開発（LDD）専用のダークの見た目。決まりは docs/DESIGN-RULES-LDD.md。
+ * html に class="ldd-dark" を付けたページだけに効く（今は reader/love-driven-dev.html だけ）。
+ *
+ * pd の読み物は、色をトークン（tokens.css の --ink・--glass-bg-* など）経由で塗っている。
+ * ここでは、そのトークンをダークの値に差し替えるだけで、部品ごとの直しは最小にする。
+ * 図を描くスクリプト（reader-gravity-love.js など）は html 要素からトークンを読むので、html に掛ける。
+ * 手本は cs の読み物（cs/reader/wave-vortex.html：暗い地・暗いすりガラスの読書欄・明るい文字）。
+ */
+html.ldd-dark {
+    color-scheme: dark;
+    background: #02050d;
+
+    /* 文字と線（明るい側へ） */
+    --ink: #e6ebf5;
+    --mid: #c3cbdc;
+    --mute: #8e98b2;
+    /* 差し色（暗い地で読める明るさへ。色相は tokens の gold・navy・coral のまま） */
+    --gold: #d2b47c;
+    --navy: #aebcff;
+    --coral: #e58a97;
+    /* --white は「明るい面・明るい文字」に使われている。ダークでは逆の役になる */
+    --white: #0b1020;
+
+    /* すりガラス（暗い面へ） */
+    --glass-bg-strong: rgba(14, 18, 34, 0.9);
+    --glass-bg-medium: rgba(8, 11, 24, 0.64);
+    --glass-bg-soft: rgba(22, 28, 50, 0.55);
+    --glass-bg-faint: rgba(22, 28, 50, 0.32);
+    --glass-border-soft: rgba(150, 170, 255, 0.14);
+    --glass-border-faint: rgba(150, 170, 255, 0.24);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    --glass-shadow-modal: 0 8px 40px rgba(0, 0, 0, 0.55);
+
+    /* 文字の後ろのにじみ（グロー）は、白でなく地の色にする */
+    --glow-r: 2;
+    --glow-g: 5;
+    --glow-b: 13;
+}
+
+html.ldd-dark body {
+    color: var(--ink);
+    background: transparent;
+}
+
+/* リンク（ブラウザの既定の青は暗い地で沈む） */
+html.ldd-dark a { color: #9db4ff; }
+html.ldd-dark a:visited { color: #c0b0ff; }
+html.ldd-dark a:hover { color: #c8d4ff; }
+
+/* 明るい紺（--navy）の面に乗る文字は、白でなく地の色にする */
+html.ldd-dark .mw-btn.is-on,
+html.ldd-dark .quiz-choice.is-correct,
+html.ldd-dark .screener-btn.is-primary {
+    color: #0b1020;
+}
+
+/* 白い面を直に書いている部品（Menu・メニュー・言語の切り替え）を、暗いすりガラスへ */
+html.ldd-dark .menu-toggle,
+html.ldd-dark .lang-toggle {
+    background: rgba(14, 18, 34, 0.85);
+    border-color: var(--glass-border-faint);
+    color: var(--mid);
+}
+html.ldd-dark .menu-toggle:hover { color: var(--ink); }
+html.ldd-dark .site-menu {
+    background: rgba(10, 13, 26, 0.96);
+    border-color: var(--glass-border-faint);
+}
+
+/* 白い地のための白いにじみ（text-shadow）は、ダークでは文字をぼかすので外す */
+html.ldd-dark .glow-card p,
+html.ldd-dark .glow-card li,
+html.ldd-dark .glow-card h3,
+html.ldd-dark .glow-card span {
+    text-shadow: none;
+}
+
+/* ===== 最初の画面：読書欄を下へずらし、まず背景（膜の渦）を全画面で見せる（docs/DESIGN-RULES-LDD.md §1） =====
+   形は html の data-intro（blank・title・cue・peek）と --ldd-intro-h（svh の数）。js は src/ldd-intro.js。
+   data-intro が無ければ、最初の画面は出さない（今までどおり読書欄が上から始まる）。 */
+html.ldd-dark { --ldd-intro-h: 100; }
+html.ldd-dark[data-intro~="peek"] { --ldd-intro-h: 80; }
+.ldd-intro { display: none; }
+html.ldd-dark[data-intro] .ldd-intro {
+    display: block;
+    position: relative;
+    height: calc(var(--ldd-intro-h) * 1vh);
+    height: calc(var(--ldd-intro-h) * 1svh);
+    pointer-events: none;
+}
+/* 最初の画面のあとでは、Menu の下に潜らないための草稿バナーの余白は要らない */
+html.ldd-dark[data-intro] body.reader-flow .top-bar ~ #content .reader-wrap > .draft-banner:first-child {
+    margin-top: 1.25rem;
+}
+
+/* 題（読書欄の h1 と同じ文字。読み上げは h1 に任せる） */
+.ldd-intro__title { display: none; }
+html.ldd-dark[data-intro~="title"] .ldd-intro__title {
+    display: block;
+    position: absolute;
+    left: 0; right: 0;
+    bottom: 22%;
+    margin: 0;
+    padding: 0 16px;
+    text-align: center;
+    font-family: var(--serif-jp);
+    font-weight: 300;
+    font-size: clamp(1.5rem, 4.4vw, 2.6rem);
+    letter-spacing: 0.08em;
+    line-height: 1.5;
+    color: rgba(230, 235, 245, 0.92);
+    text-shadow: 0 0 18px rgba(2, 5, 13, 0.9), 0 0 2px rgba(2, 5, 13, 0.9);
+}
+.ldd-intro__title span { display: inline-block; }
+.ldd-intro__title i { font-family: var(--serif-en, "EB Garamond", serif); font-weight: 400; }
+
+/* 下へ促す印。創造とはのトップ（cs/?graphic=i）の #scroll-hint に倣う：
+   「scroll」の小さな字と ▾、淡い青白、3 秒でゆっくり 4px 沈む（pjdhiro 2026-11-10「cs/?graphic=i を参考にして」）。
+   形と動きは cs/src/styles/shell-content.css・tokens.css から写した。濃さだけは上げた（cs の 0.3・0.25 では、
+   膜の渦の明るい縞の上で見えなかった）。字の後ろに地の色のにじみを敷く */
+.ldd-intro__cue { display: none; }
+html.ldd-dark[data-intro~="cue"] .ldd-intro__cue {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    pointer-events: auto;
+    animation: ldd-cue 3s ease-in-out infinite;
+}
+.ldd-intro__cue span {
+    display: block;
+    margin-bottom: 4px;
+    font-family: Georgia, "Noto Serif JP", serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    color: rgba(180, 200, 230, 0.62);
+    text-shadow: 0 0 10px rgba(2, 5, 13, 0.85), 0 0 2px rgba(2, 5, 13, 0.9);
+    transition: color 0.3s ease;
+}
+.ldd-intro__cue .ldd-intro__arrow {
+    margin-bottom: 0;
+    font-size: clamp(0.7rem, 3.5vmin, 1.2rem);
+    color: rgba(180, 200, 230, 0.55);
+}
+.ldd-intro__cue:hover span,
+.ldd-intro__cue:focus-visible span { color: rgba(180, 200, 230, 0.9); }
+.ldd-intro__cue:focus-visible { outline: 2px solid rgba(174, 188, 255, 0.5); outline-offset: 3px; border-radius: 6px; }
+@keyframes ldd-cue {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(4px); }
+}
+@media (prefers-reduced-motion: reduce) {
+    html.ldd-dark[data-intro~="cue"] .ldd-intro__cue { animation: none; }
+}
+
+/* 最初の画面にいるあいだは、目次を出さない（常設の目次・右下のボタン） */
+html.ldd-dark.ldd-at-intro #toc-btn,
+html.ldd-dark.ldd-at-intro body.toc-fits #toc {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+html.ldd-dark #toc-btn,
+html.ldd-dark body.toc-fits #toc {
+    transition: opacity 0.4s ease, visibility 0.4s;
+}

@@ -77,6 +77,17 @@ A01 を回して足した（2026-11-09）。頼む文の雛形（上の 1）に�
 - `find-source.sh --help` が落ちていた（`fetch` の help の文字列の `%PDF`）。2026-11-09 に直した。
 - 道具が著者本人の大学の頁（`~lutz`・`~eschwitz`・`hurlburt.faculty`）を「授業・個人の頁」と出す。写しの性格は、頁の中身で著者のものかを確かめてから書く。
 
+A02 を回して足した（2026-11-10）。
+
+- かかった量：Opus 一つで 45 分ほど、51 万トークン、ツール 175 回。論 15・文献 27 本（本文照合済 23・要旨照合済 2・未照合 1・未照合（書籍）1）。PDF 21 本。
+- 頼む文の「この領域の注意」に、Issue の問い（#36 の「駆動」と「内容」）を書き、論ごとの節に問いとの関わりを一行、最後に問いごとの節を置くよう頼むと、記録がそのまま Issue への答えの材料になった。問いを持つ領域では同じ形で頼む（README「規約で決めたこと」）。
+- 最初に既存の資料の主張をこの領域の分だけ取り出して一覧にしてから探す、と頼むと、判定が 23 行になり、「抜け」だけにならなかった。
+- 確認画面で止まるホストに、PMC・nature.com・academic.oup.com を足す。PhilSci-Archive は拒否の頁を返した。Europe PMC の全文の API は、公開の対象外の論文（Lutz ら 2008・Menon & Uddin 2010）に HTTP 500 を返す。
+- 研究室の昔のサイトを Wayback の一覧（CDX）で探す手は、この領域でも効いた（Nieuwenhuis・Poldrack・Petitmengin の三つで PDF が残っていた）。
+- 報告の「台帳に足す行の案」で、ほかの領域の行を「使う」と書いてきても、記録がその領域の記録へ送るだけなら「使う記録」に番号を足さない（点検が落ちる。README「規約で決めたこと」）。
+- 司令塔の確かめ：記録の DOI は `LC_ALL=C grep -oE '10\.[0-9]{4,9}/[A-Za-z0-9._:/()-]+'` で取る（文字の種類を絞らないと、DOI の後ろの日本語の括弧まで取って Crossref が 404 を返す）。鍵の文は pdftotext を頁ごとに Python で探す（この手元の grep は ugrep で、`.{0,120}` の形の正規表現が「complexity limits」で通らない）。印字の頁と PDF の頁がずれる著者稿は、頁の末尾の番号を見る。
+- 報告の要約は、本文の節と食い違うことがある（Seeley ら 2007 の不安を、本文は「状態か特性か分けられない」、判定の表と報告は「特性としての不安」と書いていた）。報告の要約は、本文の節と原典で確かめてから写す。
+
 ## 2. 領域ごとの注意
 
 ### A01 神経現象学の方法（2026-11-09）
@@ -105,3 +116,30 @@ A01 を回して足した（2026-11-09）。頼む文の雛形（上の 1）に�
 | ふだんと違う意識の状態 | Timmermann, C., Bauer, P. R., Gosseries, O., Vanhaudenhuyse, A., et al. (2023). A neurophenomenological approach to non-ordinary states of consciousness. *Trends in Cognitive Sciences*, 27, 139–159. | 10.1016/j.tics.2022.11.006 |
 
 Crossref で見つからなかったもの：Froese, Gould & Seth 2011（一人称と二人称の方法の確かめ。JCS の可能性）。探すなら題で。
+
+### A02 予測と気づき（2026-11-10）
+
+- 見るのは、(a) 予測処理（予測符号化・自由エネルギー原理）は意識の理論か、意識に上るのは予測か誤差か、(b) 注意を精度の重みとして書く見方、(c) 顕著性のネットワーク（違和感の三人称の側）、(d) 大域ワークスペースとの関係、(e) 前反省的な気づきの一人称の記述（Petitmengin ら 2007 の発作の前兆）。#36 の問い「誤差が意識化を駆動する」と「誤差が意識の内容になる」を分けて書く。前反省的に信号が立つ層と、自覚する層も分ける。
+- 批判の側を同じ重さで探す：予測処理を意識の理論とすることへの批判（Marvan & Havlík 2021 ほか）、自由エネルギー原理の反証可能性の議論、顕著性のネットワークの逆推論の問題。
+- A01 の記録（`as/evidence/evidence-A01-neurophenomenology-method.md`）で本文照合済の文献（Lutz & Thompson 2003・Thompson ら 2005 ほか）は、読み直さずに参照する。
+- 抱持は as で採用しない（`as/evidence/review/research-design-baseline.md` の NOTE）。「立った信号を持つ」側には入らない。
+- 材料：Issue #36 の本文（`gh issue view 36`）、R/ks/docs/issues/survey-216/lane2-neuro.md、R/as/evidence/review/layer1-prediction-error-reading.md・neurophenomenology-intake-map.md §3-2、学術版 §1.2（予測符号化）。
+
+候補（Crossref で照らした。2026-11-10）：
+
+| 論 | 書誌 | DOI |
+|---|---|---|
+| 自由エネルギー原理 | Friston, K. (2010). The free-energy principle: a unified brain theory? *Nature Reviews Neuroscience*, 11, 127–138. | 10.1038/nrn2787 |
+| 予測する脳 | Clark, A. (2013). Whatever next? Predictive brains, situated agents, and the future of cognitive science. *Behavioral and Brain Sciences*, 36, 181–204. | 10.1017/s0140525x12000477 |
+| 注意と意識的な知覚 | Hohwy, J. (2012). Attention and conscious perception in the hypothesis testing brain. *Frontiers in Psychology*, 3. | 10.3389/fpsyg.2012.00096 |
+| 注意・不確かさ・自由エネルギー | Feldman, H., & Friston, K. (2010). Attention, uncertainty, and free-energy. *Frontiers in Human Neuroscience*, 4. | 10.3389/fnhum.2010.00215 |
+| 予測処理と意識の神経相関 | Hohwy, J., & Seth, A. (2020). Predictive processing as a systematic basis for identifying the neural correlates of consciousness. *Philosophy and the Mind Sciences*, 1(II). | 10.33735/phimisci.2020.ii.64 |
+| 予測処理は意識の理論か（批判） | Marvan, T., & Havlík, M. (2021). Is predictive processing a theory of perceptual consciousness? *New Ideas in Psychology*, 61, 100837. | 10.1016/j.newideapsych.2020.100837 |
+| 予測する大域ワークスペース | Whyte, C. J., & Smith, R. (2021). The predictive global neuronal workspace. *Progress in Neurobiology*, 199, 101918.（bioRxiv 版 2020 は 10.1101/2020.02.11.944611） | 10.1016/j.pneurobio.2020.101918 |
+| 大域ワークスペース | Dehaene, S., & Changeux, J.-P. (2011). Experimental and theoretical approaches to conscious processing. *Neuron*, 70, 200–227. | 10.1016/j.neuron.2011.03.018 |
+| 同 | Mashour, G. A., Roelfsema, P., Changeux, J.-P., & Dehaene, S. (2020). Conscious processing and the global neuronal workspace hypothesis. *Neuron*, 105, 776–798. | 10.1016/j.neuron.2020.01.026 |
+| 顕著性のネットワーク | Seeley, W. W., Menon, V., Schatzberg, A. F., Keller, J., et al. (2007). Dissociable intrinsic connectivity networks for salience processing and executive control. *Journal of Neuroscience*, 27, 2349–2356. | 10.1523/jneurosci.5587-06.2007 |
+| 同 | Menon, V., & Uddin, L. Q. (2010). Saliency, switching, attention and control: a network model of insula function. *Brain Structure and Function*, 214, 655–667. | 10.1007/s00429-010-0262-0 |
+| 意識の理論の総説 | Seth, A. K., & Bayne, T. (2022). Theories of consciousness. *Nature Reviews Neuroscience*, 23, 439–452. | 10.1038/s41583-022-00587-4 |
+| 前反省的な気づきの一人称の記述 | Petitmengin, C., Navarro, V., & Le Van Quyen, M. (2007). Anticipating seizure: Pre-reflective experience at the center of neuro-phenomenology. *Consciousness and Cognition*, 16, 746–764. | 10.1016/j.concog.2007.05.006 |
+| 予測する心（書籍） | Hohwy, J. (2013). *The Predictive Mind*. Oxford UP. | 書籍（Crossref の検索が返らず、未照らし） |

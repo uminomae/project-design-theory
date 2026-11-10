@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+  膜の渦（love-membrane.js）を手で調える場所（noindex・確かめ用）。背景だけを全画面で映し、右上の板で動かす。
+  「書き出す」で、今の値を frame.html の URL と JSON にして写せる。Claude に渡すと、ページの既定に写す。
+  love-membrane.js は ?studio のときだけ window.loveMembrane を作る。
+-->
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>膜の渦の調整</title>
+    <style>
+        html, body { margin: 0; height: 100%; background: #02050d; overflow: hidden; font-family: "Noto Sans JP", system-ui, sans-serif; }
+        #webgl-container { position: fixed; inset: 0; cursor: ew-resize; touch-action: none; }
+        .lil-gui.root { --width: 320px; --name-width: 44%; }
+        #readout {
+            position: fixed; left: 12px; bottom: 12px; color: #cfd6e6; font: 12px/1.6 ui-monospace, monospace;
+            background: rgba(0, 0, 0, 0.45); padding: 6px 10px; border-radius: 6px; pointer-events: none;
+        }
+        #out {
+            position: fixed; left: 12px; top: 12px; width: min(560px, calc(100vw - 360px)); height: 160px; display: none;
+            background: rgba(0, 0, 0, 0.8); color: #e6ebf5; border: 1px solid #555; border-radius: 6px; font: 12px/1.5 ui-monospace, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="readout"></div>
+    <script type="module">
+        import { createPanel } from './membrane-panel.js';
+
+        // 背景を ?studio 付きで読む（今のページの URL のクエリもそのまま渡る）。?studio のときは dev ボタンを置かない
+        if (!new URLSearchParams(location.search).has('studio')) {
+            const u = new URL(location.href);
+            u.searchParams.set('studio', '1');
+            history.replaceState(null, '', u);
+        }
+        await import('./love-membrane.js');
+        const lm = window.loveMembrane;
+        const U = lm.uniforms;
+        const deg = (r) => (r * 180) / Math.PI;
+        const { gui, state } = await createPanel(lm);
+        const P2 = { ドラッグの幅: 60 };
+        gui.folders[0].add(P2, 'ドラッグの幅', 10, 300, 1).name('画面の幅＝何秒');
+
+        // 画面を左右にドラッグして時刻を送り戻す（右へ＝先へ、左へ＝前へ）。ドラッグのあいだは止める。
+        // Shift を押しながらだと 1/5 の細かさ
+        let drag = null;
+        const stage = document.getElementById('webgl-container');
+        stage.addEventListener('pointerdown', (ev) => {
+            drag = { x: ev.clientX, e: lm.elapsed, wasPaused: lm.paused };
+            lm.paused = true;
+            stage.setPointerCapture(ev.pointerId);
+        });
+        stage.addEventListener('pointermove', (ev) => {
+            if (!drag) return;
+            const fine = ev.shiftKey ? 0.2 : 1;
+            const e = Math.max(0, drag.e + ((ev.clientX - drag.x) / window.innerWidth) * P2.ドラッグの幅 * fine);
+            lm.seek(e);
+        });
+        const endDrag = () => {
+            if (!drag) return;
+            lm.paused = drag.wasPaused;
+            drag = null;
+        };
+        stage.addEventListener('pointerup', endDrag);
+        stage.addEventListener('pointercancel', endDrag);
+
+        const ro = document.getElementById('readout');
+        const tick = () => {
+            const e = lm.elapsed;
+            const m = Math.floor(e / 60), s = Math.floor(e % 60).toString().padStart(2, '0');
+            ro.textContent = `画面を左右にドラッグで時刻を送り戻し（Shift で細かく）  経過 ${m}:${s}（${e.toFixed(0)} 秒）  落ちた量 ${lm.fall.toFixed(2)}  左右 ${deg(U.uYaw.value).toFixed(1)}°  上下 ${deg(U.uPitch.value).toFixed(1)}°`;
+            requestAnimationFrame(tick);
+        };
+        tick();
+        void state;
+    </script>
+</body>
+</html>
