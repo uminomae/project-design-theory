@@ -18,7 +18,8 @@ const config: QuartzConfig = {
     },
     locale: "ja-JP",
     baseUrl: "uminomae.github.io/project-design-theory/wiki",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    // log.md・health/ は wiki の内部の帳簿（作り直しの履歴・点検の報告）。読者の頁には出さない（2026-11-10・Issue #111）
+    ignorePatterns: ["private", "templates", ".obsidian", "log.md", "health"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
@@ -56,6 +57,8 @@ const config: QuartzConfig = {
   },
   plugins: {
     transformers: [
+      // 読者の頁から作業の印（生成の記録・Issue の番号・開けない PDF のリンク）を落とす。FrontMatter より前に置く
+      Plugin.ReaderView(),
       Plugin.FrontMatter(),
       Plugin.CreatedModifiedDate({
         priority: ["frontmatter", "git", "filesystem"],

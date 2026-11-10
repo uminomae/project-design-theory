@@ -167,7 +167,7 @@ function generate() {
   push("");
   push("pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。");
   push("");
-  push("> **[[about|About This Wiki]]** -- ソースの所在、compile の仕組み、Obsidian との分担を解説");
+  push("> **[[about|About This Wiki]]** -- 材料の置き場、作り直しの仕組み、点検を解説");
   push("");
 
   // Concepts
@@ -239,23 +239,8 @@ function generate() {
   }
   push("");
 
-  // Health
-  push("## Health");
-  for (const h of health) {
-    push(wikilink("health", h.stem, h.title, ""));
-  }
-  push("");
-
-  // Concepts 一覧 (status 別)
-  push("## Concepts 一覧（status 別）");
-  push("");
-  push("| ページ | status | compiled | review_state |");
-  push("|--------|--------|----------|--------------|");
-  for (const c of concepts) {
-    const link = `[[concepts/${c.stem}\\|${c.title || c.stem}]]`;
-    push(`| ${link} | ${c.status || "-"} | ${c.compiled || "-"} | ${c.review_state || "-"} |`);
-  }
-  push("");
+  // Health（点検の報告）と、概念の status・review_state の表は、内部の帳簿なので入口に並べない
+  // （health/ は Quartz の ignorePatterns で読者の頁に出さない。2026-11-10・Issue #111）
 
   // 最近 compile されたページ
   push("## 最近 compile されたページ");

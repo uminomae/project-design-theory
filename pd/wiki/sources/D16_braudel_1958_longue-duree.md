@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   manifest_id: "D16-S02"
   path: "knowledge/raw/D16_braudel_1958_longue-duree.pdf"
-compiled: "2026-04-11"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---
@@ -72,7 +72,7 @@ Braudel は Levi-Strauss の構造主義人類学を高く評価しつつも、�
 
 ## 方法論
 
-本論文は理論的・方法論的エッセイであり、実証研究ではない。Braudel は自身の『地中海世界』（1949）での実践経験に基づき、時間の多層性という分析枠組みを理論的に精緻化した。アナール学派の創設者 Lucien Febvre と Marc Bloch の伝統を継承しつつ、Levi-Strauss、Labrousse、Gurvitch 等の同時代の社会科学者との対話を通じて議論を展開している。
+本論文は理論的・方法論的エッセイであり、実証研究ではない。アナール学派の創設者 Lucien Febvre と Marc Bloch の伝統を継承しつつ、Levi-Strauss、Labrousse、Gurvitch 等の同時代の社会科学者との対話を通じて議論を展開している。
 
 ## 論争・限界
 

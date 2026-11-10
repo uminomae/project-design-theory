@@ -225,7 +225,8 @@ function main() {
   }
 
   // Orphans: pages with 0 backrefs, excluding meta pages
-  const EXCLUDE = new Set(["index", "about", "about-project-design", "log", "wikilink"]);
+  // health/ の三つの報告は、入口に並べず Quartz にも出さない内部の帳簿なので、孤立に数えない（2026-11-10・Issue #111）
+  const EXCLUDE = new Set(["index", "about", "about-project-design", "log", "wikilink", "cn-divergence-report", "freshness-report", "orphan-report"]);
   const orphans = [];
   for (const [stem, refs] of backrefs) {
     if (EXCLUDE.has(stem)) continue;

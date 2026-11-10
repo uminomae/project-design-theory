@@ -1,5 +1,7 @@
 # Issue Management
 
+> 2026-11-10：今までの awareness-space（2026-03） の運用の記録。今は使わない。Issue の作業の分け方は、根の `CLAUDE.md` と `docs/rules/stance.md` 2-8。今の規約は、repo の根の `CLAUDE.md` と根の `docs/`。中身は書き換えず、履歴として残す（Issue #111）。
+
 ## 基本ルール
 
 自明でない作業は GitHub Issue を基本の追跡単位とする。

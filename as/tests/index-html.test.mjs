@@ -24,7 +24,7 @@ test('image cards section exists in model area', () => {
 test('topbar includes creation (cs) navigation link', () => {
     assert.match(indexHtml, /id="topbar-creation-link"/);
     assert.match(indexHtml, /href="\.\.\/cs\/"/);
-    assert.match(indexHtml, />creation<\/a>/);
+    assert.match(indexHtml, />創造とは<\/a>/);
 });
 
 test('hero overlay includes about trigger and modal shell', () => {

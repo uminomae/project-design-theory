@@ -13,12 +13,24 @@ description: 論文・本の原典を探す。DOI・題・書誌の一行から�
 
 - 探す前に、台帳（ledger）で、すでに試した経路を見る。同じ所を二度叩かない。
   - 創造とは（cs）の原典：本体の checkout の `cs/knowledge/raw/find-ledger.md`。それ以外：本体の `.cache/raw/find-ledger.md`。どちらも git の外。worktree で作業するときも本体の側に書く（場所は `git rev-parse --git-common-dir` の一つ上）。
-  - 確認画面などを返したホストの手元の一覧：ledger と同じ場所の `find-hosts.tsv`（`fetch` が足す）。`--hosts-file` で渡す。
+  - 確認画面などを返したホストの手元の一覧：本体の `.cache/raw/find-hosts.tsv` の一つだけ（`fetch` が足す）。`--hosts-file` で渡す。ホストの止まり方は分野によらないので、cs の原典のときもここを渡す（2026-11-10 に、`cs/knowledge/raw/find-hosts.tsv` の行をここへ足して一つにした）。
 - サンドボックスでは、Bash の allowed_domains に `api.crossref.org`・`api.unpaywall.org`・`api.openalex.org`・`api.semanticscholar.org`・`www.ebi.ac.uk`・`api.core.ac.uk`・`archive.org`・`web.archive.org` を並べる。`fetch` は、それに取りに行く先のホストを足す。
 - 環境変数は、環境に既に入っているときだけ使う。repo にも頼む文にも書かない。pjdhiro のメールアドレスを勝手に入れない。無ければその経路は「飛ばした」と表に出るので、報告にそう書く。
   - `FIND_SOURCE_EMAIL`（Unpaywall）・`CORE_API_KEY`（CORE）・`OPENALEX_API_KEY`・`S2_API_KEY`。
   - Unpaywall 用の連絡先のメールは、今は使わない（pjdhiro 2026-11-09・#73 で「Unpaywall 用の連絡先メールを、手元の環境変数に入れて使いますか？」に「今は使わない」）。入っていないことを毎回聞き直さず、飛ばしたと報告に書く。
   - キーの無い OpenAlex は、題や主題での検索が一日 100 回ほどまで（DOI で引くぶんは数えられない）。だから DOI を先に確かめ、検索は要るときだけ使う。キーの無い Semantic Scholar は 429 が多く、道具は一度待って駄目なら飛ばす。
+
+## 書いてよい場所（エージェントに頼むとき）
+
+創造とは・意識とはのレビューなどで、エージェントにこの道具を使わせるときの決まり。頼む文の雛形（`docs/cs-review/prompts.md`・`docs/as-review/prompts.md`）は、ここを正として同じことを書く。食い違ったら、ここに合わせる（2026-11-10。スキルは「台帳は本体に書け」、頼む文は「書いてよいのは記録一つだけ」と言っていた）。
+
+エージェントが書いてよいのは、次の三つだけ。
+
+1. 記録のファイル一つ。頼む側の作業場所（worktree）の中。
+2. この道具が自分で追記するもの：台帳（`--ledger`。「始める前に」の場所）と、止まるホストの一覧（`--hosts-file`。本体の `.cache/raw/find-hosts.tsv`）。本体の checkout の、git の外。手では書き換えない。
+3. 取った原典の PDF：`fetch --out` で、下の「取る」の保存先へ（本体の checkout の、git の外）。道具を通さずに取ったもの（PMC の XML など）は `$TMPDIR` の下。
+
+原典の台帳（`manifest.md`。公開）に行を足すのは、頼む側のセッション。worktree のセッションでは、Write・Edit のツールで本体の checkout に書くと、アプリの仕組みが止める。Bash からの書き込み（この道具の追記・`cp`）は止まらない。
 
 ## 一つの文献を探す
 
@@ -54,7 +66,7 @@ bash scripts/find-source.sh fetch <置き場の URL> --out <保存先>/<保存�
 
 - 一度だけ取りに行く。名乗りは道具の UA のまま。確認画面・ログイン・403 が返ったら、ホストを一覧に足して止まる。別の名乗りで取りに行かない。同じ所をもう一度叩かない（sources §5-2・§5-7）。
 - 取れたかは、返事の番号でなく中身で決まる：先頭が `%PDF`、末尾に `%%EOF`（途中で切れた転送は、待って一度だけ取り直す）、頭の頁の題・著者・頁数。書誌と合わなければ `<保存名>.mismatch` に置かれるので、目で確かめて、違えば捨てて ledger に書く。
-- 保存先：原典の PDF は git に入れない。cs は本体の `cs/knowledge/raw/`、それ以外は本体の `.cache/raw/`。保存名は台帳の付け方（`Dxx_姓_年_題の語.pdf`）。既にある名前には上書きしない。
+- 保存先：原典の PDF は git に入れない。創造とは（cs）は本体の `cs/knowledge/raw/`、意識とは（as）は本体の `as/knowledge/raw/`、それ以外は本体の `.cache/raw/`（`sources.md` §8-2）。保存名は台帳の付け方（`Dxx_姓_年_題の語.pdf`）。既にある名前には上書きしない。
 - 台帳（`manifest.md` など公開の一覧）に書く性格は、`fetch` の最後の行と下の表から決める。
 
 ## 書誌と突き合わせる
@@ -141,6 +153,8 @@ Issue #73 の保存待ち 77 行・台帳の読めない 42 行・手元の写�
 - プロキシ越しでは、返事が 200 のまま PDF の末尾が落ちることがあった。`fetch` は curl で取り、末尾の `%%EOF` を見る。自分で取るときも末尾を見る。
 
 ## 更新の記録
+
+- 2026-11-10（Issue #111 のレビュー）：「書いてよい場所」の節を足した。意識とはの PDF の置き場（`as/knowledge/raw/`）を保存先に足し、止まるホストの一覧を本体の `.cache/raw/find-hosts.tsv` の一つにした。
 
 足した行には日付を付ける。
 
