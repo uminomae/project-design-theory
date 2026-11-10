@@ -8,7 +8,7 @@ source:
   path: "knowledge/source-notes/D04/D04-S09_woese-2002.md"
   manifest_id: "D04-S09"
   oa_url: "https://europepmc.org/articles/pmc124369?pdf=render"
-compiled: "2026-04-18"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 ---

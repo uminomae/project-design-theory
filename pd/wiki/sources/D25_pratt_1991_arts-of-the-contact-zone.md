@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D25_pratt_1991_arts-of-the-contact-zone.pdf"
   manifest_id: "D25-S10"
-compiled: "2026-04-08"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---

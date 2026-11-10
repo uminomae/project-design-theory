@@ -1,6 +1,6 @@
 ---
 title: "脳灰白質の信号伝達のエネルギー収支"
-description: "Attwell & Laughlin (2001)。脳灰白質の興奮性信号伝達に要するエネルギーを解剖・生理データから定量化し、活動電位とシナプス後効果が大半を占めることを示した。エネルギー効率が神経符号と配線の制約となり、分散符号（同時活動<15%）を予測。"
+description: "Attwell & Laughlin (2001)。脳灰白質の興奮性信号伝達に要するエネルギーを解剖・生理データから定量化し、活動電位とシナプス後効果が大半を占めることを示した。エネルギー効率が神経符号と配線の制約となり、分散符号（同時活動≤15%）を予測。"
 aliases: ["An energy budget for signaling in the grey matter of the brain"]
 tags: [source, "D09", "原典解説"]
 source:
@@ -8,7 +8,7 @@ source:
   path: "knowledge/raw/manifest.md"
   manifest_id: "D09-S02"
   oa_url: "https://journals.sagepub.com/doi/pdf/10.1097/00004647-200110000-00001"
-compiled: "2026-06-14"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 ---
@@ -27,13 +27,15 @@ David Attwell と Simon Laughlin (2001) は、げっ歯類の脳灰白質にお�
 
 **信号伝達のエネルギー予算配分**
 
-> "Action potentials and postsynaptic effects of glutamate are predicted to consume much of the energy (47% and 34%, respectively), with the resting potential consuming a smaller amount (13%), and glutamate recycling using only 3%."
+> "Most demanding are action potentials and postsynaptic potentials (47% and 34% of total signaling-related usage for action potential firing at 4 Hz), second are neuronal and glial resting potentials (13%), presynaptic calcium entry and neurotransmitter recycling are third (each 3%), and least demanding are calcium transients in spines and vesicle recycling (<1%)." (p.1141)
 
 エネルギーの行き先を定量化し、活動電位とシナプス伝達が支配的であることを示す。
 
 **エネルギー制約が神経符号を選ぶ**
 
-> "this favors the use of energy efficient neural codes and wiring patterns ... predict the use of distributed codes, with ≤15% of neurons simultaneously active"
+信号伝達のエネルギーが脳の総エネルギーの大きな割合を占めることは、エネルギー効率のよい神経符号と配線を有利にする（原文は出典ノートで確かめていない）。
+
+> "Our estimates of energy usage predict the use of distributed codes, with ≤15% of neurons simultaneously active, to reduce energy consumption and allow greater computing power from a fixed number of neurons." (p.1133, Summary)
 
 限られたエネルギーが、脳の情報表現の様式（疎・分散符号）を制約・形成する。
 
@@ -61,14 +63,14 @@ David Attwell と Simon Laughlin (2001) は、げっ歯類の脳灰白質にお�
 ## ソース参照（GitHub・検証用）
 
 - **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D09-S02`）
-- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **cs 精読ノート**: [knowledge/source-notes/D09/D09-S02_attwell-laughlin-2001.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D09/D09-S02_attwell-laughlin-2001.md)
 - **この wiki ページ（pd）**: [wiki/sources/D09_attwell_2001_attwell-laughlin-2001-an.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D09_attwell_2001_attwell-laughlin-2001-an.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 
 ## 出典メモ
 
-- 一次入力: PubMed 公式 abstract（PMID 11598490, 2026-06-14 efetch）。出版社 PDF は SAGE で本文全文は本セッション未読。
-- cs source-note は未生成（manifest D09-S02 として url-verified 登録のみ）。生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。
+- 一次入力: PubMed 公式 abstract（PMID 11598490, 2026-06-14 efetch）。
+- cs 精読ノート（D09-S02）は、手元の PDF で全文（pp.1133-1145）を読んでいる（2026-06-26）。
 - 生成: 2026-06-14, Claude Opus 4.8（Main 逐次）
 
 > 追記（2026-11-09・#73）：access_status を台帳（raw-confirmed）に合わせた。

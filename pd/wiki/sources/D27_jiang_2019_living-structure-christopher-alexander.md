@@ -8,7 +8,7 @@ source:
   path: "knowledge/source-notes/D27/D27-S13_jiang-2019.md"
   manifest_id: "D27-S13"
   oa_url: "https://www.mdpi.com/2413-8851/3/3/96/pdf"
-compiled: "2026-04-18"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 ---
