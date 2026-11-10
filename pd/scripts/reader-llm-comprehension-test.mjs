@@ -13,11 +13,11 @@
  *  - <details> は展開して隠れを排除（summary は【畳み】マーカー付きで残す）
  *  - 見出し・リスト・段落の構造を保った平易テキストに落とす
  *
- * 出力（いずれも .cache/active/・gitignore・ローカル）:
+ * 出力（既定は pd/.cache/active/・gitignore・ローカル。--out <dir> で替えられる）:
  *  - reader-context-zero.txt : 読者 LLM が読むページ本文のみ
  *  - reader-llm-test-prompt.md: 上記 + 規定質問群 + 指示（読者へそのまま渡す）
  */
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -67,15 +67,31 @@ const DEFAULT_QUESTIONS = `
 6. ページの中で、良い・悪い、正しい・誤り の判断が入っていると読める箇所があれば挙げてください。
 7. 中学生に説明するつもりで、このページの全体を 200 字ほどで言い直してください。
 `.trim();
-const TARGET = process.argv[2] || 'three-and-seven';
-if (!TARGETS[TARGET]) {
-  console.error(`未知の対象: ${TARGET}. 選択肢: ${Object.keys(TARGETS).join(' / ')}`);
+// 引数：[対象の名前] [--out <出力先のディレクトリ>]
+//   対象の名前が上の表に無くても、reader/<名前>.html があれば、共通の七問（DEFAULT_QUESTIONS）で回す（2026-11-10・#111）。
+//   --out を付けると、出力先を repo の外（報告の置き場など）へ向けられる。既定は pd/.cache/active/。
+const argv = process.argv.slice(2);
+const outIdx = argv.indexOf('--out');
+const OUT_ARG = outIdx >= 0 ? argv[outIdx + 1] : null;
+if (outIdx >= 0 && !OUT_ARG) {
+  console.error('--out には出力先のディレクトリを渡す');
   process.exit(2);
+}
+const positional = argv.filter((a, i) => !a.startsWith('--') && i !== outIdx + 1);
+const TARGET = (positional[0] || 'three-and-seven').replace(/\.html$/, '');
+if (!TARGETS[TARGET]) {
+  if (/^[A-Za-z0-9_-]+$/.test(TARGET) && existsSync(resolve(ROOT, `reader/${TARGET}.html`))) {
+    TARGETS[TARGET] = { html: `reader/${TARGET}.html`, spec: null };
+  } else {
+    const pages = readdirSync(resolve(ROOT, 'reader')).filter((n) => n.endsWith('.html')).map((n) => n.replace(/\.html$/, ''));
+    console.error(`未知の対象: ${TARGET}. reader/ にあるページ: ${pages.join(' / ')}`);
+    process.exit(2);
+  }
 }
 
 const HTML = resolve(ROOT, TARGETS[TARGET].html);
 const SPEC = TARGETS[TARGET].spec ? resolve(ROOT, TARGETS[TARGET].spec) : null;
-const OUT_DIR = resolve(ROOT, '.cache/active');
+const OUT_DIR = OUT_ARG ? resolve(process.cwd(), OUT_ARG) : resolve(ROOT, '.cache/active');
 const OUT_TEXT = resolve(OUT_DIR, `reader-context-zero-${TARGET}.txt`);
 const OUT_PROMPT = resolve(OUT_DIR, `reader-llm-test-prompt-${TARGET}.md`);
 
@@ -174,6 +190,7 @@ function main() {
   console.log('  対象:', HTML.replace(ROOT + '/', ''));
   console.log('  本文出力:', OUT_TEXT.replace(ROOT + '/', ''));
   console.log('  プロンプト出力:', OUT_PROMPT.replace(ROOT + '/', ''));
+  console.log('  質問群:', SPEC ? SPEC.replace(ROOT + '/', '') : '共通の七問（spec なし）');
   console.log('  本文文字数:', chars);
   console.log('  展開した畳み数:', foldOpen);
   console.log('  UTF-8 置換文字(U+FFFD):', badChar, badChar === 0 ? 'OK' : '⚠️ 要調査');
