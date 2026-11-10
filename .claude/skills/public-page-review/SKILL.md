@@ -22,6 +22,16 @@ description: 公開ページ（読み物・四つの入口・wiki・cs/as/ks の
 
 全部の行を毎回見るのでなく、触ったページの種類に当たる節を見る。ただし §1 と §2 は、どの公開ページでも毎回通す。
 
+## 仕組みで止める（pre-commit）
+
+`.githooks/pre-commit` が、公開ページ（サイトに出るファイルと読み物の正本 `READER-*.md`。道具・テスト・wiki の `log.md` と `health/` は外す）を含む commit を、表を通した印が無ければ止める。
+
+1. `bash scripts/public-page-review.sh`：commit しようとしている公開ページと、見る節を出す。
+2. 出た節を、この表で通す。当たったものを直す。
+3. `bash scripts/public-page-review.sh --done`：今の index に印を置く。そのあと commit する。
+
+印は worktree ごとで、index の tree の番号と時刻が入る。印のあとに `git add` で中身を変えた・60 分を超えたときは止まるので、通し直す。merge の commit には走らないので、develop への取り込みは止めない。印は「走らせた」ことしか確かめられない。表を読まずに `--done` を走らせない。フックは本体の checkout の `.githooks/` の版が動き、道具は commit をする worktree の版が動く（道具の無い古い worktree では止まらない。`bash scripts/sync-develop.sh` で揃える）。`--no-verify` とクラウドのセッションの commit では走らない（`docs/PUBLISH-CHECK.md`「ここは仕組みで止まらない」）。
+
 ## 1. 機械で回す（毎回）
 
 | 回すもの | 見ること |
@@ -113,3 +123,4 @@ description: 公開ページ（読み物・四つの入口・wiki・cs/as/ks の
 ## 更新の記録
 
 - 2026-11-10：スキルを書いた（pjdhiro の依頼。上の冒頭の言葉）。
+- 2026-11-10：pre-commit で、表を通した印の無い公開ページの commit を止める形を足した（pjdhiro「hook も足して」）。

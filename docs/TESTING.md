@@ -57,7 +57,7 @@ const { run } = await import('../src/page-check.js'); await run();
 
 ### 作る・直すたびの点検の表：`.claude/skills/public-page-review/SKILL.md`
 
-公開ページを作る・直すたびに、commit の前と main に送る前に通す表。これまで公開ページで起きた誤り（fix の commit・#111 の束）から項目を取り、各行に起きた commit を添えてある。直しや指摘があったら同じ作業で行を足し、二度目の誤りは機械の検査へ移す。履歴をどこまで読んだかもスキルに書いてある（2026-11-10）。
+公開ページを作る・直すたびに、commit の前と main に送る前に通す表。これまで公開ページで起きた誤り（fix の commit・#111 の束）から項目を取り、各行に起きた commit を添えてある。直しや指摘があったら同じ作業で行を足し、二度目の誤りは機械の検査へ移す。履歴をどこまで読んだかもスキルに書いてある（2026-11-10）。公開ページを含む commit は、`.githooks/pre-commit` が、表を通した印（`bash scripts/public-page-review.sh --done`。今の index の tree の番号と時刻）が無ければ止める。
 
 ### 念入りなレビュー：`docs/rules/review.md`
 
