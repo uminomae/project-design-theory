@@ -5,7 +5,7 @@ as の文献レビュー（`README.md`）で、一つの領域をエージェン
 - R は `~/dev/pd/project-design-theory`（本体の checkout）。読むのはここ。手元の PDF はここにしか無い。
 - W は、頼む側のセッションの作業場所（worktree のパス）。書くのはここ。
 
-エージェントは Opus で、バックグラウンドで走らせる（Agent ツールの `model: "opus"`・`effort: "high"`・`run_in_background: true`。原典の照合なので、cs で比べた結果に合わせる。モデルや effort を替えるときの比べ方は `docs/cs-review/README.md`「エージェントの分け方」・2026-11-10）。頼む文に書く書誌（DOI・題・巻号）は、司令塔が Crossref で照らしてから書く（型 H。2026-11-09 に、記憶の Lutz ら 2002 の DOI が違っていた）。
+エージェントは、モデルを渡さず既定のモデル（設定に任せる）で、バックグラウンドで走らせる（Agent ツールの `effort: "high"`・`run_in_background: true`。`model` は書かない・pjdhiro 2026-11-11「トークンの量のため。モデルは既定に任せる」。決め打ちすると既定の設定が効かない）。原典の照合なので、effort は cs で比べた結果に合わせる。モデルや effort を替えるときの比べ方は `docs/cs-review/README.md`「エージェントの分け方」・2026-11-10）。頼む文に書く書誌（DOI・題・巻号）は、司令塔が Crossref で照らしてから書く（型 H。2026-11-09 に、記憶の Lutz ら 2002 の DOI が違っていた）。
 
 どの頼む文にも、次の五つを入れる。
 
