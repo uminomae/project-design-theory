@@ -510,3 +510,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（`#ldd-attach` の見方・`#ldd-love-history` の依頼）
 - pages: どちらのページも、この二つの引用を引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] compile | Love駆動開発の「確かめずにつながる安定は、測れるか」に、風神についての pjdhiro の言葉を足したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（畳み「確かめずにつながる安定は、測れるか」「名を当てない相手に近いところまで測った実験」）
+- pages: どちらのページも、この畳みを引いていないので本文はそのまま。`compiled` は今日のまま
