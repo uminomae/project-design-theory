@@ -13,7 +13,7 @@ description: 論文・本の原典を探す。DOI・題・書誌の一行から�
 
 - 探す前に、台帳（ledger）で、すでに試した経路を見る。同じ所を二度叩かない。
   - 創造とは（cs）の原典：本体の checkout の `cs/knowledge/raw/find-ledger.md`。それ以外：本体の `.cache/raw/find-ledger.md`。どちらも git の外。worktree で作業するときも本体の側に書く（場所は `git rev-parse --git-common-dir` の一つ上）。
-  - 確認画面などを返したホストの手元の一覧：ledger と同じ場所の `find-hosts.tsv`（`fetch` が足す）。`--hosts-file` で渡す。
+  - 確認画面などを返したホストの手元の一覧：本体の `.cache/raw/find-hosts.tsv` の一つだけ（`fetch` が足す）。`--hosts-file` で渡す。ホストの止まり方は分野によらないので、cs の原典のときもここを渡す（2026-11-10 に、`cs/knowledge/raw/find-hosts.tsv` の行をここへ足して一つにした）。
 - サンドボックスでは、Bash の allowed_domains に `api.crossref.org`・`api.unpaywall.org`・`api.openalex.org`・`api.semanticscholar.org`・`www.ebi.ac.uk`・`api.core.ac.uk`・`archive.org`・`web.archive.org` を並べる。`fetch` は、それに取りに行く先のホストを足す。
 - 環境変数は、環境に既に入っているときだけ使う。repo にも頼む文にも書かない。pjdhiro のメールアドレスを勝手に入れない。無ければその経路は「飛ばした」と表に出るので、報告にそう書く。
   - `FIND_SOURCE_EMAIL`（Unpaywall）・`CORE_API_KEY`（CORE）・`OPENALEX_API_KEY`・`S2_API_KEY`。
@@ -54,7 +54,7 @@ bash scripts/find-source.sh fetch <置き場の URL> --out <保存先>/<保存�
 
 - 一度だけ取りに行く。名乗りは道具の UA のまま。確認画面・ログイン・403 が返ったら、ホストを一覧に足して止まる。別の名乗りで取りに行かない。同じ所をもう一度叩かない（sources §5-2・§5-7）。
 - 取れたかは、返事の番号でなく中身で決まる：先頭が `%PDF`、末尾に `%%EOF`（途中で切れた転送は、待って一度だけ取り直す）、頭の頁の題・著者・頁数。書誌と合わなければ `<保存名>.mismatch` に置かれるので、目で確かめて、違えば捨てて ledger に書く。
-- 保存先：原典の PDF は git に入れない。cs は本体の `cs/knowledge/raw/`、それ以外は本体の `.cache/raw/`。保存名は台帳の付け方（`Dxx_姓_年_題の語.pdf`）。既にある名前には上書きしない。
+- 保存先：原典の PDF は git に入れない。創造とは（cs）は本体の `cs/knowledge/raw/`、意識とは（as）は本体の `as/knowledge/raw/`、それ以外は本体の `.cache/raw/`（`sources.md` §8-2）。保存名は台帳の付け方（`Dxx_姓_年_題の語.pdf`）。既にある名前には上書きしない。
 - 台帳（`manifest.md` など公開の一覧）に書く性格は、`fetch` の最後の行と下の表から決める。
 
 ## 書誌と突き合わせる
