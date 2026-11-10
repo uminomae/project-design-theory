@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/manifest.md"
   manifest_id: "D22-S09"
-compiled: "2026-06-14"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 ---
@@ -20,7 +20,7 @@ review_state: 未レビュー
 
 ## 概要
 
-Tuckman & Jensen (1977) は、Bruce Tuckman が 1965 年に提唱した小集団発達 (small-group development) の4段階モデルを、その後の研究のレビューによって再検討した論文である。元の4段階は——(1) **形成 (Forming)**: メンバーが集まり、互いと課題を探り合う、不確実で依存的な初期段階、(2) **混乱 (Storming)**: 役割・方針・対人関係をめぐって対立と葛藤が生じる段階、(3) **規範形成 (Norming)**: 規範・役割・凝集性が確立し、協力関係が築かれる段階、(4) **遂行 (Performing)**: 集団が課題に集中し、機能的な役割をもって生産的に働く段階——である。Tuckman & Jensen はこれらが概ね妥当であることを確認した上で、集団の終結を扱う第5段階——(5) **散会 (Adjourning)**: 課題を終えて集団が解散し、関係を手放す段階——を新たに加えた。これにより「**forming-storming-norming-performing-adjourning**」の5段階モデルが完成し、チーム形成論の最も広く知られた枠組みの一つとなった。各段階は、課題活動 (task activity) と対人関係 (group structure / interpersonal) の両側面で記述される。
+Tuckman & Jensen (1977) は、Bruce Tuckman が 1965 年に提唱した小集団発達 (small-group development) の4段階モデルを、その後の研究のレビューによって再検討した論文である。元の4段階は——(1) **形成 (Forming)**: メンバーが集まり、互いと課題を探り合う、不確実で依存的な初期段階、(2) **混乱 (Storming)**: 役割・方針・対人関係をめぐって対立と葛藤が生じる段階、(3) **規範形成 (Norming)**: 規範・役割・凝集性が確立し、協力関係が築かれる段階、(4) **遂行 (Performing)**: 集団が課題に集中し、機能的な役割をもって生産的に働く段階——である。Tuckman & Jensen は 1965 年の論文を引く研究をレビューしたが、このモデルを直接確かめようとした研究は Runkel ら (1971) の 1 篇だけで、それも観察者にモデルの記述を渡して観察を当てはめさせる、観察者のバイアスを含む方法だった。そのうえで、複数の研究が終結を最終段階として挙げていたことを受けて、集団の終結を扱う第5段階——(5) **散会 (Adjourning)**: 課題を終えて集団が解散し、関係を手放す段階——を新たに加えた。これにより「**forming-storming-norming-performing-adjourning**」の5段階モデルが完成し、チーム形成論の最も広く知られた枠組みの一つとなった。各段階は、課題活動 (task activity) と対人関係 (group structure / interpersonal) の両側面で記述される。
 
 ## 主要概念
 
@@ -54,11 +54,11 @@ Tuckman & Jensen (1977) は、Bruce Tuckman が 1965 年に提唱した小集団
 ## ソース参照（GitHub・検証用）
 
 - **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D22-S09`）
-- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **cs 精読ノート**: [knowledge/source-notes/D22/D22-S09_tuckman-jensen-1977.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D22/D22-S09_tuckman-jensen-1977.md)（OA の写しで全文を読んでいる。写しは打ち直しで誌面の頁番号が無く、ノートの頁は確かめられていない）
 - **この wiki ページ（pd）**: [wiki/sources/D22_tuckman_1977_jensen-m-a-c.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D22_tuckman_1977_jensen-m-a-c.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 
 ## 出典メモ
 
-- 本ページは、当該古典（Tuckman & Jensen 1977）の確立した学術的理解に基づいて記述した。manifest 記載の OA URL（WIU 大学ミラー）は認証エラー（401）で直接取得できなかったため、本モデル（forming-storming-norming-performing-adjourning）の広く確立した内容に基づき記述した。cs 側 manifest の OA URL を取得可能なものへ差し替えることが望ましい。
-- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。cs 側 source-note 生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。
+- 本ページの初版は、原典を読まずに、このモデルの広く知られた理解で書いた。いまは cs 側の出典ノート（D22-S09）が、OA の写し（faculty.wiu.edu）で本文を全文読んでいる（2026-06-22・2026-11-08 #73 で照合）。
+- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。概要の、モデルの検証の状況はノートに合わせて直した（2026-11-10）。

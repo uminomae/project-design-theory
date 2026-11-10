@@ -8,7 +8,7 @@ source:
   path: "knowledge/source-notes/D24/D24-S11_james-1902.md"
   manifest_id: "D24-S11"
   oa_url: "https://archive.org/download/varietiesofrelig00jameuoft/varietiesofrelig00jameuoft.pdf"
-compiled: "2026-04-18"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 ---
@@ -47,7 +47,7 @@ James はギフォード講義（全 20 回）を通じて、宗教的経験を�
 
 **神秘的状態の 4 つの標識**
 
-Lecture XVI で神秘的状態を定義し、4 つの標識を提示する（ineffability「言語化不可能性」、noetic quality「認識的性格」、transiency「一過性」、passivity「受動性」）。
+Lecture XVI で神秘的状態を定義し、4 つの標識を提示する（ineffability「言語化不可能性」、noetic quality「認識的性格」、transiency「一過性」、passivity「受動性」）。（出典ノートが読んだのは目次 p.x の "Mysticism defined, 379. Four marks of mystic states, 380." までで、Lecture XVI の本文は読んでいない。四つの標識の名前は、ノートでは確かめていない。）
 
 **「宗教の科学」の限界**
 

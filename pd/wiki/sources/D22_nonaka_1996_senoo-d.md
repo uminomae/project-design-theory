@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/manifest.md"
   manifest_id: "D22-S02"
-compiled: "2026-06-14"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 ---
@@ -20,7 +20,7 @@ review_state: 未レビュー
 
 ## 概要
 
-Nonaka, Umemoto & Senoo (1996) は、来たる「知識社会 (knowledge society)」の経営パラダイムとして「知識創造企業 (the knowledge-creating company)」を提示し、情報技術 (IT) がその概念の実装をどう支えうるかを検討する。組織を、外部情報を受動的に処理する存在ではなく、**知識を継続的に創造する存在**として捉え直す点に核心がある。彼らの組織的知識創造の理論——暗黙知 (tacit knowledge) と形式知 (explicit knowledge) の相互変換を軸とする——を、実際に使われている／近い将来使いうる IT の事例とともに提示する。あわせて、日本型と西洋型の組織的知識創造の差異と、それが IT との関係でもつ含意を論じる。後の SECI モデル（D22-S03）へと展開する野中の知識創造論の、初期の定式化の一つにあたる。
+Nonaka, Umemoto & Senoo (1996) は、来たる「知識社会 (knowledge society)」の経営パラダイムとして「知識創造企業 (the knowledge-creating company)」を提示し、情報技術 (IT) がその概念の実装をどう支えうるかを検討する。組織を、外部情報を受動的に処理する存在ではなく、**知識を継続的に創造する存在**として捉え直す点に核心がある。彼らの組織的知識創造の理論——暗黙知 (tacit knowledge) と形式知 (explicit knowledge) の相互変換を軸とする——を、実際に使われている／近い将来使いうる IT の事例とともに提示する。あわせて、日本型と西洋型の組織的知識創造の差異と、それが IT との関係でもつ含意を論じる。Nonaka & Takeuchi (1995) の組織的知識創造の理論を、IT が各局面をどう支えうるかという観点から示し直したもので、暗黙知と形式知の相互変換を 4 つのモード（Socialization・Externalization・Combination・Internalization、SECI）として定めている。
 
 ## 主要概念
 
@@ -40,7 +40,7 @@ IT は知識創造を支援しうるが、日本型（暗黙知重視・集団�
 
 ## 創造（creation-space）との関連
 
-「組織を、情報を処理する機械ではなく、知識を生み続ける存在として捉え直す」という転換は、創造を、所与の素材の加工ではなく、暗黙知と形式知のあいだ（縁）での新しい知の立ち上がりとして捉える見方に対応する。SECI モデル（[[D22_nonaka_2000_konno-n|SECI、Ba、リーダーシップ：動的知識創造の統合モデル]]）へ展開する系譜の起点であり、知識創造を場 (ba) における相互作用として描く視点に連なる。
+「組織を、情報を処理する機械ではなく、知識を生み続ける存在として捉え直す」という転換は、創造を、所与の素材の加工ではなく、暗黙知と形式知のあいだ（縁）での新しい知の立ち上がりとして捉える見方に対応する。SECI の 4 モードは本論文ですでに定められており、[[D22_nonaka_2000_konno-n|SECI、Ba、リーダーシップ：動的知識創造の統合モデル]] と同じ系譜にあって、知識創造を場 (ba) における相互作用として描く視点に連なる。
 
 ## 書誌情報
 
@@ -54,11 +54,11 @@ IT は知識創造を支援しうるが、日本型（暗黙知重視・集団�
 ## ソース参照（GitHub・検証用）
 
 - **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D22-S02`）
-- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **cs 精読ノート**: [knowledge/source-notes/D22/D22-S02_nonaka-1996.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D22/D22-S02_nonaka-1996.md)（理論部 pp.205-211 を精読し、IT の事例は通読。後半 pp.213-216 の 5 フェーズ・創造的カオスは扱っていない）
 - **この wiki ページ（pd）**: [wiki/sources/D22_nonaka_1996_senoo-d.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D22_nonaka_1996_senoo-d.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 
 ## 出典メモ
 
 - 本ページは OA PDF を curl で取得し pdftotext で抽出した本文（abstract・序論）を一次入力として生成した。
-- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。cs 側 source-note 生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。
+- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。cs 側の出典ノート（D22-S02）は 2026-06-22 に作られ、2026-11-08 に頁を原典で確かめ直している（#73）。

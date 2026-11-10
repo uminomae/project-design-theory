@@ -8,7 +8,7 @@ source:
   path: "knowledge/source-notes/D29/D29-S13_munoz-2018-criticality-living-systems.md"
   manifest_id: "D29-S13"
   oa_url: "https://arxiv.org/pdf/1712.04499"
-compiled: "2026-04-18"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 ---

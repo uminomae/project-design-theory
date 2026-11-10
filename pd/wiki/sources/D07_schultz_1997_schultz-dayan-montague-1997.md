@@ -1,6 +1,6 @@
 ---
 title: "予測と報酬の神経基盤（D07 文脈）— ドーパミン予測誤差"
-description: "Schultz, Dayan & Montague (1997) Science 論文。ドーパミンニューロンが TD 学習の予測誤差を符号化することを示した古典。D09-S07 と同論文だが、D07（神経科学）の文脈で cs に分類されている。"
+description: "Schultz, Dayan & Montague (1997) Science 論文。ドーパミンニューロンが TD 学習の予測誤差を符号化することを示した古典。D09-S07 と同論文だが、D07（工学情報）の文脈で cs に分類されている。"
 aliases: ["A Neural Substrate of Prediction and Reward", "TD learning"]
 tags: [source, "D07", "原典解説"]
 source:
@@ -8,7 +8,7 @@ source:
   path: "knowledge/source-notes/D07/D07-S07_schultz-dayan-montague-1997.md"
   manifest_id: "D07-S07"
   oa_url: "http://www.cs.utexas.edu/~dana/Reward.pdf"
-compiled: "2026-04-18"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 note: "D09-S07 と同論文の D07 文脈版"
@@ -18,7 +18,7 @@ note: "D09-S07 と同論文の D07 文脈版"
 
 > **高校生向けのやさしい解説**
 >
-> ドーパミンが反応するのは『ご褒美そのもの』ではなく『予想とのズレ』だった——という有名な発見の D07（神経科学）文脈での参照ページです。D09-S07 と同じ論文。詳細は D09-S07 ページを参照。
+> ドーパミンが反応するのは『ご褒美そのもの』ではなく『予想とのズレ』だった——という有名な発見の D07（工学情報）文脈での参照ページです。D09-S07 と同じ論文。詳細は D09-S07 ページを参照。
 
 ## 概要
 
@@ -35,7 +35,7 @@ D09 文脈版（[D09_schultz_1997](D09_schultz_1997_schultz-dayan-montague-1997)
 
 ## プロジェクトデザインとの関連
 
-D07（神経科学）文脈では、本論文は脳の計算論的視座の中核として位置付けられる。Friston の自由エネルギー原理（D02-S14）、Clark の予測処理（D08-S13）と並ぶ「予測する脳」群の参照点。
+D07（工学情報）文脈では、本論文は脳の計算論的視座の中核として位置付けられる。Friston の自由エネルギー原理（D02-S14）、Clark の予測処理（D08-S13）と並ぶ「予測する脳」群の参照点。
 
 ## 書誌情報
 
