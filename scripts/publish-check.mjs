@@ -12,6 +12,7 @@
 //   [書庫] zip などの書庫の中のファイルの名前に、上の語と形が無いか（中身は開かない）。
 // 通す一覧（.publish-check-allow。git に入れる）：形のうち home・tmp・link の三つだけ、ファイルごとに通せる。
 //   ok   は確かめて通したもの。wait は判断を待っているもの（通すが、数を毎回知らせる）。
+//   link は、いまは止めずに数とファイルを知らせる（下の patterns の notice）。ok の行は、その数から外す。
 //   語・鍵・メール・/Users/ の形は、この一覧では通せない。
 import { execFileSync } from 'node:child_process';
 import { existsSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
@@ -50,7 +51,10 @@ const patterns = [
   { kind: 'path', label: '手元のパス C:\\Users\\', re: /[A-Za-z]:\\Users\\/ },
   { kind: 'home', label: '手元のパス ~/', re: /(^|[^A-Za-z0-9._\/~-])~\/[A-Za-z._-]+/ },
   { kind: 'tmp', label: '手元のパス（区切りが - の形）', re: /-Users-[A-Za-z0-9]+-/ },
-  { kind: 'link', label: '非公開になりうる共有のリンク', re: /claude\.ai\/(code\/)?(artifact|share|chat|project)s?\// },
+  // link は、公開の repo に置いてよいかを pjdhiro が決めるまで、止めずに数を知らせる（notice）。
+  // 規約や調べの記録に、確かめ用のページへのリンクが毎日足されるので、止めるとほかのセッションの commit が止まる。
+  // 置かないと決まったら、notice を外すと止まるようになる（2026-11-10・#111）。
+  { kind: 'link', label: '非公開になりうる共有のリンク', re: /claude\.ai\/(code\/)?(artifact|share|chat|project)s?\//, notice: true },
   { kind: 'key', label: '鍵の形 gh*_', re: /gh[pousr]_[A-Za-z0-9]{20,}/ },
   { kind: 'key', label: '鍵の形 github_pat_', re: /github_pat_[A-Za-z0-9_]{20,}/ },
   { kind: 'key', label: '鍵の形 sk-ant-', re: /sk-ant-[A-Za-z0-9_-]{10,}/ },
@@ -113,6 +117,7 @@ const cut = (s) => (Array.from(s).length > 200 ? Array.from(s).slice(0, 200).joi
 
 let found = 0;
 const waits = new Map(); // 形 → 判断を待っているファイルの数
+const notices = new Map(); // 形 → 止めずに知らせるファイル
 const report = (head, hits) => {
   console.log(head);
   for (const h of hits) console.log('    ' + cut(h));
@@ -151,6 +156,10 @@ function scan(f, lines, tag) {
     if (a && a.state === 'ok') continue;
     if (a && a.state === 'wait') {
       waits.set(p.kind, (waits.get(p.kind) || 0) + 1);
+      continue;
+    }
+    if (p.notice) {
+      notices.set(p.kind, [...(notices.get(p.kind) || []), f]);
       continue;
     }
     report(`[形${tag}] ${f} — ${p.label}`, hits);
@@ -217,10 +226,14 @@ if (waits.size) {
   const parts = [...waits].map(([k, n]) => `${k} ${n} 本`).join('・');
   console.error(`publish-check: 知らせ — 判断を待っている形（.publish-check-allow の wait）：${parts}`);
 }
+for (const [k, fs] of notices) {
+  console.error(`publish-check: 知らせ — 止めていない形 ${k}：${fs.length} 本（公開の repo に置いてよいかは pjdhiro の判断待ち）`);
+  if (mode === 'all') for (const f of fs) console.error(`    ${f}`);
+}
 if (found) {
   console.log('');
   console.log('publish-check: 公開してよいかを確かめてください（docs/PUBLISH-CHECK.md）。');
-  console.log('  形のうち ~/ のパス・一時置き場のパス・共有のリンクは、中身を確かめたうえで .publish-check-allow に一行足すと通る。');
+  console.log('  形のうち ~/ のパス・一時置き場のパスは、中身を確かめたうえで .publish-check-allow に一行足すと通る。');
   process.exit(1);
 }
 console.log(`publish-check: OK (${files.length} files, mode=${mode})`);

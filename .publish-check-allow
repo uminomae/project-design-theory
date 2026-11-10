@@ -5,6 +5,7 @@
 # 形は home（~/ の手元のパス）・tmp（区切りが - の一時置き場のパス）・link（claude.ai の共有のリンク）の三つだけ。
 # 語・鍵・メール・/Users/ の形は、ここでは通せない。
 # ok は中身を確かめて通したもの。wait は pjdhiro の判断を待っているもの（通すが、点検のたびに数を知らせる）。
+# 新しく当たったら：中身を見て、手元の事情（非公開の置き場・利用者の名前）を明かさないなら ok、迷うなら wait で足し、Issue に書く。
 # パスの終わりが / なら、その下の全部。当たらなくなった行は、--all のときに知らせが出るので消す。
 
 # --- ok：手元の事情を明かさない（2026-11-10・#111 で一件ずつ開いて確かめた）
@@ -27,13 +28,6 @@ link ok pd/scripts/screener-artifact-template.html
 # --- wait：判断を待っている（Issue #111 束 8）
 # 非公開の repo の手元の置き場。開発記録を作る道具が読む設定なので、書き換えると道具が動かなくなる
 home wait ks/scripts/devlog-config.json
-# pjdhiro だけが開ける確かめ用のページへのリンク。公開の repo に置いてよいか（読者は開けない）
-link wait docs/rules/decisions.md
-link wait docs/tools/iwakan-cho.md
-link wait docs/cs-review/README.md
-link wait docs/as-review/README.md
-link wait ks/docs/research/103-what-is-sensed.md
-link wait ks/docs/research/104-curiosity-types-and-withdrawal.md
-link wait ks/docs/research/104-felt-before-judgment.md
-link wait pd/knowledge/notes/2026-06-26-imaginary-numbers-rotation.md
-link wait pd/knowledge/research/love-driven-dev/PLAN-dialogue-form-20261110.md
+
+# 共有のリンク（link）は、公開の repo に置いてよいかを pjdhiro が決めるまで、点検で止めずに数とファイルを知らせる。
+# だから wait の行は要らない。上の ok の行は、その数から外すためにある。

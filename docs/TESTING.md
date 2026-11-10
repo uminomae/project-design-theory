@@ -41,7 +41,7 @@
 | cs：原典の台帳と記録の突き合わせ（知らせるだけ） | 記録が「本文照合済」とした原典の台帳の行（その分野で、書誌に第一著者の姓と年がある行）が、読めない状態（`blocked-access`・`citation-only`）のままになっていないか。台帳の行で、2 列目に状態の語が入り列がずれているもの。止めない。著者が欧文の姓と年で書かれていない原典（和書など）は拾えない。2026-11-10 の数：読めない状態のまま 3・列のずれ 28。直ったら `--strict` に上げる | 新しく書いた（`scripts/check-cs-ledger.mjs`・2026-11-10・#111） |
 | 道具：原典を探す find-source | `scripts/find_source.py` の書誌の一行の読み取り・置き場の分類（誰が上げた版か・確認画面のホスト）・判定の段・PDF との突き合わせ（前付けだけ・再録の印・別の題・別の DOI・著者稿）。ネットワークと PDF には触らない。例は cs のレビューで実際に起きた取り違えから取った（2026-11-09） | この repo で新しく書いた（`scripts/test_find_source.py`） |
 
-公開してよいかの点検（`docs/PUBLISH-CHECK.md`・`scripts/publish-check.sh`）は、commit のときに `.githooks/pre-commit` が、commit しようとしている分だけを回す。repo の全部（`--all`）は、`.github/workflows/check.yml` が develop と main で回す。手元だけの語の一覧は git に無いので、そこで回るのは形の点検だけ（手元のパス・鍵・メール・共有のリンク・書庫の中のファイルの名前）。語の点検を全部に回すのは、手元で `scripts/publish-check.sh --all`（8 秒ほど）。形のうち `~/` のパス・一時置き場のパス・共有のリンクは、通す一覧（`.publish-check-allow`）で、確かめて通したもの（ok）と判断待ち（wait）を持つ（2026-11-10・#111）。手元の `--all` は、書庫 1 本（中に非公開の repo の発言の置き場の名前）が判断待ちで、いまは落ちる。
+公開してよいかの点検（`docs/PUBLISH-CHECK.md`・`scripts/publish-check.sh`）は、commit のときに `.githooks/pre-commit` が、commit しようとしている分だけを回す。repo の全部（`--all`）は、`.github/workflows/check.yml` が develop と main で回す。手元だけの語の一覧は git に無いので、そこで回るのは形の点検だけ（手元のパス・鍵・メール・共有のリンク・書庫の中のファイルの名前）。語の点検を全部に回すのは、手元で `scripts/publish-check.sh --all`（8 秒ほど）。形のうち `~/` のパス・一時置き場のパスは、通す一覧（`.publish-check-allow`）で、確かめて通したもの（ok）と判断待ち（wait）を持つ。共有のリンクは、公開の repo に置いてよいかを pjdhiro が決めるまで、止めずに数とファイルを知らせる（2026-11-10・#111）。手元の `--all` は、書庫 1 本（中に非公開の repo の発言の置き場の名前）が判断待ちで、いまは落ちる。
 
 ### 画面で確かめる：3001 と `pd/src/page-check.js`
 
