@@ -590,3 +590,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（「心の言葉は、どこで誤解されるか」の GRIT の項）
 - pages: どちらのページも、GRIT の項と侘びを引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] check | Love駆動開発のネガティブ・ケイパビリティの表を調べ直して推敲したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「心の言葉は、どこで誤解されるか」のネガティブ・ケイパビリティの表と出典の行、畳み「ものの見方の広さと、湧く信号の表（仮説）」のキーツの段）
+- pages: どちらのページも、この表とキーツの段を引いていないので本文はそのまま。`compiled` は今日のまま

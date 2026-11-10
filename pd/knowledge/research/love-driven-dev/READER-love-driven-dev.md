@@ -587,7 +587,7 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 
 O'Fallon の帯の一覧は 1.5〜6.5 で、いちばん下の行はその外にあります。一人称の報告と外からの測定が食い違うことがあるのは、「[信号は、体の内側から湧く](#ldd-body)」の章の畳みで見ました。
 
-5.0〜5.5 の行は、ネガティブ・ケイパビリティと呼ばれてきたものに近いところです。ただ、この言葉を最初に書いたキーツの手紙（1817 年）が言うのは、不確かさや神秘や疑いの中に、事実や理由へ苛立って手を伸ばさずにいられることで、耐えることや努力ではありません。耐えずに済んでいるなら、同じ言葉は 6.0 の行にも読めます。
+5.0〜5.5 の行は、ネガティブ・ケイパビリティと呼ばれてきたものに近いところです。ただ、この言葉を名づけたキーツの手紙（1817 年）が言うのは、不確かさや神秘や疑いの中に、事実や理由へ苛立って手を伸ばさずにいられることです。手紙のこの段に、耐えることや努力の語はありません。耐えずに済んでいるなら、同じ言葉は 6.0 の行にも読めます。
 
 成長の段階で人を分けて、先の見えない状況での体の反応を測った研究は、[「意識とは」](https://uminomae.github.io/project-design-theory/as/)の原典の照合では見つかっていません。瞑想の研究が人を分けているのは練習の時間で、上の畳みの Lutz ら（2013 年）も、一万時間以上を積んだ人と、瞑想の経験のない人とを比べています。練習の時間を成長の段階に読み替えられるかは、確かめられていません。
 
@@ -1500,11 +1500,11 @@ pjdhiro は、期待外れになるかどうかは、能力と、心理防衛機
 
 <div class="tablefit cols-2">
 
-| 定義 | 答えの出ない事態の中に留まる力（詩人キーツの手紙の言葉、1817 年） |
+| 定義 | 事実や理由へ苛立って手を伸ばさずに、不確かさや神秘や疑いの中にいられること。詩人のキーツが 1817 年 12 月に弟たちへ書いた手紙で、とりわけ文学で何かを成し遂げる人をつくる質、シェイクスピアが大いに持っていた質として名づけた（キーツ、1817 年）。のちの研究では、たとえば日本の自治体の保健師を調べた論文が、不確かさやあいまいさの中に、結論を急がずに留まる力と紹介している（Ujihara ほか、2026 年） |
 |---|---|
-| よくある誤解 | 我慢する力。決めない優柔不断。鍛える能力 |
-| Love駆動開発の視点で見た解釈 | 「信号と考えがずれると、欠けを感じる」の章の、違和感をすぐに解消せずに抱えておく態度（抱持）と、近いところを指しているように見える。能力と呼ぶと個人の資質の量の話に戻る。見えない先を抱えていられるかどうかは、そのとき湧いている信号によって変わる。脅威と感じているほど、早く埋めたくなる。GRIT の項の pjdhiro の見方（忍耐は諦念と受容）とも重なる |
-| 効く条件 | その状態に名前を与えて、置いておくことを許すとき |
+| よくある誤解 | 答えの出ないことに、歯を食いしばって耐える我慢の力だと受け取られる。決めずに先送りする優柔不断や、訓練で鍛えて増やす個人の能力として受け取られることもある |
+| Love駆動開発の視点で見た解釈 | キーツの手紙のこの段には、耐えることや努力の語は無い。反対の例に挙がる詩人のコールリッジは、半端な知のままでは満足していられない人として書かれている。このページは、「[先が見えないとき、どの信号が湧くか](#ldd-uncertain)」の章の畳みの表（Claude の仮説）で、分からないまま耐える 5.0〜5.5 の帯を、この語で呼ばれてきたものに近いところに置き、耐えずにいられるキーツの言い方は 6.0 の帯にも読める、としている。この表の見方では、不確かさの中にいられるかどうかは、そのときどの信号が湧いているかで変わる |
+| 効く条件 | キーツは、この話を突き詰めると、偉大な詩人では美の感覚がほかのあらゆる考えにまさる、というより考えをすべて消してしまう、ということになるだろう、と手紙のこの段を結んでいる（キーツ、1817 年） |
 
 </div>
 
@@ -1534,7 +1534,7 @@ pjdhiro は、期待外れになるかどうかは、能力と、心理防衛機
 
 <!--REF:心理学-->
 
-出典：[Edmondson (1999)](https://doi.org/10.2307/2666999) *Administrative Science Quarterly* 44(2):350（MIT の授業の読み物として大学のサーバーに置かれた誌面の走査で本文照合済。定義 p.354）／[Schein (1995)](https://hdl.handle.net/1721.1/2576) MIT Sloan Working Paper 3821（MIT の機関リポジトリにある PDF の Wayback の記録（2025 年 6 月 22 日）で本文照合済。pp.3–5）／[Duckworth, Peterson, Matthews & Kelly (2007)](https://doi.org/10.1037/0022-3514.92.6.1087) *Journal of Personality and Social Psychology* 92(6):1087（著者のペンシルベニア大学の頁にあった誌面の PDF の Wayback の記録（2014 年 7 月 26 日）で本文照合済。定義 pp.1087–1088）／[Luthar, Cicchetti & Becker (2000)](https://doi.org/10.1111/1467-8624.00164) *Child Development* 71(3):543（米国国立医学図書館の PMC にある著者稿 PMC1885202 で本文照合済。p.543）／[Ryan & Deci (2000)](https://doi.org/10.1037/0003-066X.55.1.68) *American Psychologist* 55(1):68（著者たちの Center for Self-Determination Theory のサイトにある誌面の PDF で本文照合済。pp.70–72）／[Keats, letter to George and Tom Keats (1817 年 12 月)](https://keatslettersproject.com/letters/negcapletter/)（Colvin 編 *Letters of John Keats to His Family and Friends* Letter XXIV を、Project Gutenberg の公開版で本文照合済）／[Kilmann & Thomas (1977)](https://doi.org/10.1177/001316447703700204) "Developing a forced-choice measure of conflict-handling behavior: The 'MODE' instrument", *Educational and Psychological Measurement* 37(2):309–325（共著者 Kilmann の会社のサイトにある誌面の PDF で本文照合済。五つの型 p.309 の要旨、Thomas と Kilmann の 1974 年の質問紙 p.313・p.325）。よくある誤解の例は、出典のない見聞です。
+出典：[Edmondson (1999)](https://doi.org/10.2307/2666999) *Administrative Science Quarterly* 44(2):350（MIT の授業の読み物として大学のサーバーに置かれた誌面の走査で本文照合済。定義 p.354）／[Schein (1995)](https://hdl.handle.net/1721.1/2576) MIT Sloan Working Paper 3821（MIT の機関リポジトリにある PDF の Wayback の記録（2025 年 6 月 22 日）で本文照合済。pp.3–5）／[Duckworth, Peterson, Matthews & Kelly (2007)](https://doi.org/10.1037/0022-3514.92.6.1087) *Journal of Personality and Social Psychology* 92(6):1087（著者のペンシルベニア大学の頁にあった誌面の PDF の Wayback の記録（2014 年 7 月 26 日）で本文照合済。定義 pp.1087–1088）／[Luthar, Cicchetti & Becker (2000)](https://doi.org/10.1111/1467-8624.00164) *Child Development* 71(3):543（米国国立医学図書館の PMC にある著者稿 PMC1885202 で本文照合済。p.543）／[Ryan & Deci (2000)](https://doi.org/10.1037/0003-066X.55.1.68) *American Psychologist* 55(1):68（著者たちの Center for Self-Determination Theory のサイトにある誌面の PDF で本文照合済。pp.70–72）／[Keats, letter to George and Thomas Keats (1817 年 12 月)](https://www.gutenberg.org/ebooks/35698)（Colvin 編 *Letters of John Keats to His Family and Friends*, Macmillan, 1891 年初版・1925 年の刷の Letter XXIV を、Project Gutenberg の公開版で本文照合済。定義の文とコールリッジ・美の感覚の文は p.48）／[Ujihara, Onashi, Suzuki ほか (2026)](https://doi.org/10.7759/cureus.101208) "Negative Capability-Related Dimensions Among Local Government Public Health Nurses in Japan and Their Associated Factors", *Cureus* 18(1):e101208（出版社の公開版〔CC BY〕で本文照合済。紹介の文 p.2）／[Kilmann & Thomas (1977)](https://doi.org/10.1177/001316447703700204) "Developing a forced-choice measure of conflict-handling behavior: The 'MODE' instrument", *Educational and Psychological Measurement* 37(2):309–325（共著者 Kilmann の会社のサイトにある誌面の PDF で本文照合済。五つの型 p.309 の要旨、Thomas と Kilmann の 1974 年の質問紙 p.313・p.325）。よくある誤解の例は、出典のない見聞です。
 
 </details>
 
