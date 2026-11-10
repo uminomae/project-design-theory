@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   manifest_id: "D06-S01"
   path: "knowledge/raw/D06_jeans_1902_stability-nebula.pdf"
-compiled: "2026-04-11"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---

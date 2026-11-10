@@ -8,7 +8,7 @@ source:
   path: "knowledge/raw/manifest.md"
   manifest_id: "D08-S05"
   oa_url: "http://www.cell.com/article/S0896627311002583/pdf"
-compiled: "2026-06-14"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 ---
@@ -37,7 +37,7 @@ review_state: 未レビュー
 
 **グローバル神経ワークスペース（GNW）モデル**
 
-> "conscious access occurs when incoming information is made globally available to multiple brain systems through a network of neurons with long-range axons."
+入ってくる情報が、長距離の軸索を持つニューロンのネットワークを通して複数の脳のシステムに広く使えるようになったとき、意識的アクセスが生じる（原文は出典ノートで確かめていない）。
 
 意識的アクセスを、情報が長距離軸索ネットワークを介して複数の脳システムにグローバルに利用可能になる現象として定式化する。
 
@@ -71,6 +71,5 @@ GNW の枠組みは、麻酔・昏睡・植物状態・統合失調症といっ�
 
 ## 出典メモ
 
-- Cell/Neuron OA への直接アクセスは 403 のため、PubMed の公式 abstract・要旨を一次入力に pd 形式で生成した。本文全文は未読のため主要概念は abstract ベース。
-- cs source-note 未生成の可能性あり。
-- 生成: 2026-06-14, source-reader
+- cs 精読ノート: [knowledge/source-notes/D08/D08-S05_dehaene-changeux-2011.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D08/D08-S05_dehaene-changeux-2011.md)。ノートは全文（20 頁）を読んでいる（2026-04-22、UNICOG にある著者の写し）
+- このページは、初め PubMed の abstract から書いた（2026-06-14, source-reader）

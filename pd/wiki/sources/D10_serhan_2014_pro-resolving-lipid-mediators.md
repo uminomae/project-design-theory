@@ -1,14 +1,14 @@
 ---
 title: "炎症収束を促進する脂質メディエーター — Resolution Physiology"
 description: "Serhan (2014) Nature レビュー。炎症の収束は受動的な希釈ではなく能動的にプログラムされた応答であり、ω3 脂肪酸由来の SPM（lipoxins, resolvins, protectins, maresins）が好中球停止と組織修復を駆動することを体系化した。"
-aliases: ["Pro-Resolving Lipid Mediators", "Resolution Physiology", "SPM"]
+aliases: ["Pro-resolving lipid mediators are leads for resolution physiology", "Novel Pro-Resolving Lipid Mediators in Inflammation Are Leads for Resolution Physiology", "Pro-Resolving Lipid Mediators", "Resolution Physiology", "SPM"]
 tags: [source, "D10", "原典解説"]
 source:
   repo: "creation-space"
   path: "knowledge/source-notes/D10/D10-S09_serhan-2014.md"
   manifest_id: "D10-S09"
   oa_url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4263681"
-compiled: "2026-04-18"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 ---
@@ -74,6 +74,7 @@ SPM、特に MaR1 は炎症性 M1 マクロファージから修復性 M2 マク
 
 - 著者: Charles N. Serhan
 - 年: 2014
+- 題: Pro-resolving lipid mediators are leads for resolution physiology（Nature の題。PMC の著者稿の題は Novel Pro-Resolving Lipid Mediators in Inflammation Are Leads for Resolution Physiology）
 - 出典: *Nature* 510(7503), 92–101
 - access_status: url-verified
 - **DOI**: [10.1038/nature13479](https://doi.org/10.1038/nature13479)

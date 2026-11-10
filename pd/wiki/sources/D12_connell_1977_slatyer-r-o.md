@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/manifest.md"
   manifest_id: "D12-S02"
-compiled: "2026-06-14"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 ---
@@ -50,11 +50,12 @@ Connell & Slatyer (1977) は、生態学的遷移 (ecological succession) を単
 ## ソース参照（GitHub・検証用）
 
 - **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D12-S02`）
-- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **cs 精読ノート**: [knowledge/source-notes/D12/D12-S02_connell-slatyer-1977.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D12/D12-S02_connell-slatyer-1977.md)
 - **この wiki ページ（pd）**: [wiki/sources/D12_connell_1977_slatyer-r-o.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D12_connell_1977_slatyer-r-o.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 
 ## 出典メモ
 
 - 本ページは OA ミラー PDF（Columbia 大学）を WebFetch で取得・保存し pdftotext で抽出した本文を一次入力として生成した。
-- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。cs 側 source-note 生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。
+- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。
+- cs 精読ノート（D12-S02）は、全文（pp.1119-1144）を抜き出したうえで、三つのモデルの定義・比較・群集論の批判を読んでいる（2026-06-22）。各モデルの証拠の節（pp.~1124-1135）は一部を拾い読み、群集の安定性の類型（pp.~1135-1140）は要点だけ。

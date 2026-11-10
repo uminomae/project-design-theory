@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D08_rao-ballard_1999_predictive-coding-visual-cortex.pdf"
   manifest_id: "D08-S01"
-compiled: "2026-04-10"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---

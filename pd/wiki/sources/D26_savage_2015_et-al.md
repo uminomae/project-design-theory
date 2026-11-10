@@ -8,7 +8,7 @@ source:
   path: "knowledge/source-notes/D26/D26-S08_savage-2015.md"
   manifest_id: "D26-S08"
   oa_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4517223/"
-compiled: "2026-07-03"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 ---

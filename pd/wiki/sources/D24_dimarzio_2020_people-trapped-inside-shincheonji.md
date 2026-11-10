@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D24_dimarzio_2020_people-trapped-inside-shincheonji.pdf"
   manifest_id: "D24-S17"
-compiled: "2026-04-10"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---

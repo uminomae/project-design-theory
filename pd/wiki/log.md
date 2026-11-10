@@ -387,3 +387,9 @@ compile 実行の履歴。append-only。
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`、`pd/src/content/site-data.mjs`（サイトの冒頭）、`cs/knowledge/five-stages-guide.md`（a63af55）
 - pages: `concepts/Love 駆動開発` の材料を 2026-02 の project-overview と ks の三つから、今の読み物に替えて作り直した（status 暫定・review_state 未レビューのまま）。`プロジェクトデザイン` の材料をサイトの冒頭と読み物に替え、定義・射程・領域・Doing と Being から作り直した。`about` を一つの repo・Quartz・3001 の形に直した（Obsidian は今使っていない。`.obsidian/` は残した）。`concepts/創造の5段階モデル`・`cross-refs/creation-space-domains` は、11-07 からの出典の直しが a63af55 だけで、11-10 の fix で写っていることを確かめ、compiled を今日にした
 - 仕組み: 正本を直すと hook が関わる wiki のページを知らせる（`pd/scripts/wiki-stale-check.mjs`）。WL-3 が出典の commit の日付と compiled 日を比べ、古いページを `health/freshness-report` に並べる。作り直しの手順は `.claude/skills/wiki-compile/SKILL.md`。残りの古いページは 45（#73 で出典ノートを直した cs の出典ページ）
+
+## [2026-11-10] compile | #73 で出典ノートを直した cs の出典ページ 45 枚を、今のノートに合わせる
+- scope: 出典ページ 45（44 の出典ノート。van Gennep の 2 枚は同じノート）
+- sources: cs/knowledge/source-notes/ の 44 本（2026-11-08〜09 の #73 の照合）
+- pages: ノートで直った引用・頁・題・DOI は、多くが 11-09 と 11-10 の fix ですでに写っていた。今回、題を足した（D10 Serhan）、parity principle は 1998 年の本文に無い語だと合わせた（D14）、悲劇の状況 36（D19 Polti）、四語は 1965 年の要約に出る（D22 Tuckman 1965）、直接の検証は 1 篇だけ（D22 Tuckman & Jensen 1977）、SECI の 4 モードはこの論文で定められている（D22 Nonaka）、予測可能性の結論を慎重に（D05）、D07 は工学情報（D07 Schultz）、仏語原文の写しは無い（D25 van Gennep 1909）。ノートに無い引用は、ノートの文に替えるか、引用の形を外して「原文は出典ノートで確かめていない」と書いた（D08・D09 Attwell・D11・D12 Pedigo・D13・D14・D15・D19 Todorov・D30 世阿弥）。読んでいない頁や章を読んだように書いていたところに、ノートの読んだ範囲を書いた（D09 Schultz・D14・D15・D24 James・D30 世阿弥・D30 松木・沼田の参加者の言葉）。「cs 精読ノート: 未生成」などの古い記録を、今のノートへのリンクと読んだ範囲に替えた（D08・D09・D12・D13・D19・D22 ほか）。全部の compiled を今日に
+- 確かめ: ページにある英語の引用 77 件が、すべて今の出典ノートにあることを抜き取って確かめた。ノートに無いだけで食い違っていない説明の文は触っていない

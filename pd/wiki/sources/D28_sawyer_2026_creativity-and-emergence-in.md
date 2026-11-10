@@ -8,7 +8,7 @@ source:
   path: "knowledge/source-notes/D28/D28-S11_sawyer-2026.md"
   manifest_id: "D28-S11"
   oa_url: "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/21DAA8166D961C9E50FBCD4958E53B16/S2326448925100391a.pdf"
-compiled: "2026-04-18"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 ---
@@ -62,6 +62,7 @@ review_state: 未レビュー
 - 著者: Keith Sawyer
 - 年: 2026
 - 出典: *Signs and Society* 14(1), 96–112（2026）。DOI 10.1017/sas.2025.10039
+- このページの引用の頁は PDF の頁（誌面の頁は PDF の頁＋95）
 - access_status: url-verified
 - **DOI**: [10.1017/sas.2025.10039](https://doi.org/10.1017/sas.2025.10039)
 - **オープンアクセス**: [Cambridge Core PDF](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/21DAA8166D961C9E50FBCD4958E53B16/S2326448925100391a.pdf)

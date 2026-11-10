@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D07_diffie-hellman_1976_new-directions-cryptography.pdf"
   manifest_id: "D07-S10"
-compiled: "2026-04-10"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---

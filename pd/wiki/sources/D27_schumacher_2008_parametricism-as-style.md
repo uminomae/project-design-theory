@@ -8,7 +8,7 @@ source:
   path: "knowledge/source-notes/D27/D27-S10_schumacher-2008.md"
   manifest_id: "D27-S10"
   oa_url: "https://patrikschumacher.com/parametricism-as-style-parametricist-manifesto/"
-compiled: "2026-04-19"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 ---
