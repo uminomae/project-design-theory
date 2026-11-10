@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/business-design-syllabus.html を直接編集しないでください。
+  正本:   knowledge/research/business-design-syllabus/READER-business-design-syllabus.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「Love駆動開発は、事業構想の授業になるか」のページです（工事中）。事業構想（Project Design）の総論の授業を、読み物「Love駆動開発と呼びたいもの」で組むとしたらどうなるか、という pjdhiro の思案を Claude が書き起こした試案。Love駆動開発は事業構想学の特論にあたり、総論と呼ぶなら経営学の各論を理解し実行するための土壌として、前半「構想とは？その駆動源は？」、後半「事業とは？」の 15 コマに組む。現実に開講されている講義ではない。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Love駆動開発は、事業構想の授業になるか | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/business-design-syllabus.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="事業構想（Project Design）の総論の授業を、読み物「Love駆動開発と呼びたいもの」で組むとしたらどうなるか、という pjdhiro の思案を Claude が書き起こした試案。Love駆動開発は事業構想学の特論にあたり、総論と呼ぶなら経営学の各論を理解し実行するための土壌として、前半「構想とは？その駆動源は？」、後半「事業とは？」の 15 コマに組む。現実に開講されている講義ではない。">
+    <meta property="og:title" content="Love駆動開発は、事業構想の授業になるか">
+    <meta property="og:description" content="事業構想（Project Design）の総論の授業を、読み物「Love駆動開発と呼びたいもの」で組むとしたらどうなるか、という pjdhiro の思案を Claude が書き起こした試案。Love駆動開発は事業構想学の特論にあたり、総論と呼ぶなら経営学の各論を理解し実行するための土壌として、前半「構想とは？その駆動源は？」、後半「事業とは？」の 15 コマに組む。現実に開講されている講義ではない。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/business-design-syllabus.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Love駆動開発は、事業構想の授業になるか">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-10">
+    <meta property="article:modified_time" content="2026-11-10">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "Love駆動開発は、事業構想の授業になるか",
+          "description": "事業構想（Project Design）の総論の授業を、読み物「Love駆動開発と呼びたいもの」で組むとしたらどうなるか、という pjdhiro の思案を Claude が書き起こした試案。Love駆動開発は事業構想学の特論にあたり、総論と呼ぶなら経営学の各論を理解し実行するための土壌として、前半「構想とは？その駆動源は？」、後半「事業とは？」の 15 コマに組む。現実に開講されている講義ではない。",
+          "keywords": "事業構想, 事業構想総論, プロジェクトデザイン, シラバス, カリキュラム, Love駆動開発, 駆動源, PMBOK, 経営学, 試案",
+          "url": "https://uminomae.github.io/project-design-theory/reader/business-design-syllabus.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/business-design-syllabus.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-10",
+          "dateModified": "2026-11-10",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "事業構想"}, {"@type": "Thing", "name": "プロジェクトデザイン"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「Love駆動開発は、事業構想の授業になるか」のページです（工事中）。事業構想（Project Design）の総論の授業を、読み物「Love駆動開発と呼びたいもの」で組むとしたらどうなるか、という pjdhiro の思案を Claude が書き起こした試案。Love駆動開発は事業構想学の特論にあたり、総論と呼ぶなら経営学の各論を理解し実行するための土壌として、前半「構想とは？その駆動源は？」、後半「事業とは？」の 15 コマに組む。現実に開講されている講義ではない。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b><br>
+                🚧 <b>工事中</b>です。これは pjdhiro の思案の試案で、現実に開講されている講義ではありません。
+            </div>
+            <header class="reader-hero">
+                <h1>Love駆動開発は、事業構想の授業になるか</h1>
+                <p class="reader-subtitle">事業構想総論 試案 — シラバス文と 15 コマ</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-10 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/business-design-syllabus/READER-business-design-syllabus.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<p>これは試案です。現実に開講されている講義のシラバスではありません。pjdhiro が、事業構想（Project Design）の総論の授業を、読み物「<a href="love-driven-dev.html">Love駆動開発と呼びたいもの</a>」で組むとしたらどうなるかを考えた、その思案を Claude が書き起こしたものです。大学・学部・既存の科目とは関係がありません。</p>
+<p>背景：事業構想の英訳をプロジェクトデザインとしている学部の授業に、Love駆動開発は資するか？問い：Love駆動開発は、事業構想総論の中身になるか。なるなら、どこを直し、どう回に割るか。今のところの答え：Love駆動開発は、構想の手前と、構想・計画・実行の下で動いているものを書いたもので、事業構想学の特論にあたります。総論と呼ぶなら、経営学の各論を理解し実行するための土壌として、範囲の広さをプロジェクトデザイン論のトップページで示し、中身を Love駆動開発の読み物で進める形になります。前半の問いは「構想とは？　その駆動源は？」、後半の問いは「事業とは？」。15 コマの案と、シラバスに書くとしたらという文章を、下に置きます。</p>
+<details class="sec" id="love駆動開発は事業構想と同じものか" open><summary>Love駆動開発は、事業構想と同じものか</summary><div class="secbody">
+
+
+<p>この章では、Love駆動開発を授業にしたいという考えがどこから出てきたかと、Love駆動開発が事業構想学のどこにあるかを見ます。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の考え：</strong>事業構想総論の授業の内容として、Love駆動開発を説明したいと考えています。ほぼ同義だと思うからです。</p>
+</blockquote>
+<p>同義と見ることも、見方の一つと見ることも、どちらも成り立ちます。中心がなければ軌道がないという意味では同じものです。Being の側から見る構えの名前という意味では一つの視点です。ただ、読み物が書いているのは、構想から先の道筋ではありません。事業構想学は、構想が在るところから始めて、構想し、計画し、実行する道筋を書いてきました。Love駆動開発は、その道筋が前提として問わずに済ませている駆動源と、そこから生まれて、構想・計画・実行の下を走り続ける過程を名指すものです。読み物の中で構想・計画・実行の道筋に触れているのは、経営学が何を駆動源と見てきたかの表だけで、道筋そのものは教えていません。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>Love駆動開発は事業構想学の特論のようにも思っていて。総論とするならば、もっと広く扱わなければならないと思っています。</p>
+</blockquote>
+<p>総論と呼ぶなら、広さが要ります。その広さは、<a href="../index.html">プロジェクトデザイン論のトップページ</a>にあります。定義（プロジェクトの構想・設計・実行と、その方法の構想・設計）、射程（営利・非営利の事業、そこから人生や研究へ）、領域（環境適応は PMBOK などを前提知とし、コミュニケーションを情報処理と感情処理に分ける）、Doing と Being。授業では、この広さをまず示し、実際の中身は Love駆動開発の読み物に沿って進める、という流れになります。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>これは土壌のようなものですよね。経営学の各論を理解したり実行したりするための。</p>
+</blockquote>
+<p>読み物自身も、同じことを使い道として書いています。理論や指示を当てる前に入力を整えること、既存の理論や常識の効く範囲を見分けること。各論を置き換えるのではなく、各論が育つ土の側です。この見方だと、総論か特論かの迷いも少し解けます。各論の手前に置く科目なら総論の位置で、中身が一つの見方から入るなら特論の書き方になります。シラバスの概要は総論の位置で書き、履修上の注意で一つの見方から入ることを断る、という形です。</p>
+</div></details><details class="sec" id="前半は構想後半は事業"><summary>前半は構想、後半は事業</summary><div class="secbody">
+<p>この章では、15 コマを二つに分ける問いと、それぞれで借りる分野を見ます。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>構想とは？　それを考えるために相対性理論と量子、神経現象学と心理学が必要。事業について考えるために、経営・経済学、社会学が必要という感じです。</p>
+</blockquote>
+<p>前半の問いは「構想とは？　その駆動源は？」です。読み物は、駆動源は直接は観えないので、それに動かされているものの動き方から書く、という形をとっています。そのため、知るには学際的にならざるを得ません。読み物の骨格に沿って、相対性理論、量子論、神経現象学、心理学の順に下り、Love と呼びたいものに戻ってきます。</p>
+<p>後半の問いは「事業とは？」です。こちらは経営学・経済学・社会学を借ります。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>営利事業だけではないので、非営利も含むから、経営学やプロジェクト管理だけではない。まちづくりや家族の生計なども包括的に。</p>
+</blockquote>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>ヒト・モノ・カネ・ジカン・ジョウホウの全てに触れたいので、金融はミクロ経済学としてではなく入れたい。</p>
+</blockquote>
+<p>事業は営利に限らず、会社も、まちづくりも、非営利の活動も、家族の生計も、人生も、一つのプロジェクトとして扱います。資源の視点の回を一つ置き、組織論、会計と金融、IT などを、それぞれ何を扱う分野かの紹介として並べます。金融はカネという資源の側から入れます。長い時間軸で事業を見ると何が変わるかも、この回に置きます。</p>
+</div></details><details class="sec" id="15-コマの試案"><summary>15 コマの試案</summary><div class="secbody">
+<p>この章では、15 回の表を置きます。1 で授業全体のガイド、2 で問い、3 から 10 が前半の学際的な下り、11 から 15 が後半の事業です。</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>回</th>
+<th>題</th>
+<th>読み物の対応</th>
+<th>中身</th>
+<th>演習</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>全体のガイド：この授業で何を見るか</td>
+<td>第一部 冒頭・巻末</td>
+<td>事業構想・プロジェクトデザイン・Love駆動開発の三つの言葉が答えている問い。プロジェクトデザイン論のトップページで広さを見る：定義、射程、領域、Doing と Being。前半「構想とは？その駆動源は？」と後半「事業とは？」の二本立て。読み物の五つの部の地図。見えないものをどう指し示すか（重力の前例・円の重なり・指月）。事実・見方・体験の報告の区別。この授業での「事業」は営利に限らない</td>
+<td>自分が引き寄せられて何かを始めた経験を一つ書く</td>
+</tr>
+<tr>
+<td>2</td>
+<td>問い：構想とは？　その駆動源は？</td>
+<td>第一部</td>
+<td>構想とは何か。事業はふつう構想から語られるが、構想の 5W1H はまだよく分かっていない（機会は発見されるのか、つくられるのか）。「私は何に駆られてプロジェクトを行うのか」。『戦略サファリ』が冒頭に置いた、象を評す人たちの詩。経営学が駆動源と見てきたものの表（外部環境から起業家の心まで）と、それぞれが効く状況。外から内へ下りた先で、心を動かしているものは何か</td>
+<td>1 回目の経験を表のどの駆動源で説明できるかを当てる。残るものを書く</td>
+</tr>
+<tr>
+<td>3</td>
+<td>相対性理論：重力の井戸と、場の歪みの中にいる</td>
+<td>第二部</td>
+<td>駆動源は直接は観えないので、知るには学際的にならざるを得ない。重力は重力以外のものの動き方で書かれた（りんごと月・銀河の回り方・光の輪）。重力ポテンシャルとすり鉢の絵。重力を重力場として見る。時空の曲がり。中にいるものには歪みそのものは見えない。中心は動かず、何もないかのように見える。同じ形の井戸の中心に愛を置く。見えない中心を見るには自分を分けていく（メタ認知・臍の緒の像）</td>
+<td>2 回目の「残るもの」を井戸の絵の上に置いてみる</td>
+</tr>
+<tr>
+<td>4</td>
+<td>量子論：粒子は場の揺れ方だった</td>
+<td>第二部</td>
+<td>縮尺を変える（ケルヴィンの二つの雲・熱は分子の動き）。不確定性。粒子は場の励起。何もない真空でも場は揺らぐ。創造の五段階（場→波→縁→渦→束）と、波間の渦の比喩。言葉は渦に当てた名前</td>
+<td>自分のプロジェクトを五段階に当てる。どの段から始まったように見えるか</td>
+</tr>
+<tr>
+<td>5</td>
+<td>神経現象学①：生存と信頼の信号</td>
+<td>第三部</td>
+<td>人は何で世界を切り取っているか。二つの方向の信号（生存／信頼）。信号は体の内側から湧く（内受容感覚・予測としての体の感覚）。信頼軸の問題を生存軸の達成で解こうとする誤適用</td>
+<td>「お金を追っていたつもりが」の形の経験を探す</td>
+</tr>
+<tr>
+<td>6</td>
+<td>神経現象学②：ずれは、欠けとして感じられる</td>
+<td>第三部</td>
+<td>先が見えないとき体はまず備える（不安の研究）。見込みと経験のずれ。欠損・抱持・虚軸（認知上は 0 の直観）。構想や計画はここから始まる。価値は受け取る人の意識で生まれる</td>
+<td>違和感をすぐ解かずに書き留める練習</td>
+</tr>
+<tr>
+<td>7</td>
+<td>心理学①：期待と信頼、心の守り</td>
+<td>第三部</td>
+<td>信頼は関係の積み重ねで育つ（愛着・安全基地・内面にいる誰か）。期待は先に向き、見積もりを精確にはしない。「期待は裏切られてからがキックオフ」。防衛機制（四つの水準）</td>
+<td>期待が裏切られてから始まったことを書く</td>
+</tr>
+<tr>
+<td>8</td>
+<td>心理学②：発達の段階</td>
+<td>第三部</td>
+<td>成人の発達の段階で、何が脅威に見え、どう守るかが変わる。防衛の無い段階は描かれていない。同じ先の見えない状況で湧く信号が、人によって、段階によって違って現れる</td>
+<td>自分と、身近な人のあいだで、同じ出来事が違う脅威に見えた例を書く</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Love という言葉は、何を指してきたか</td>
+<td>第四部</td>
+<td>仏教・西洋哲学・辞書・心理学。原典では別々の語（渇愛と慈、エロース・フィリア・アガペー、愛・仁・親）。良いものとしてだけ書かれてきたのでもない。一つの語が広い範囲に当てられてきた</td>
+<td>自分が Love と呼ばないもの・呼ぶものを分ける</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Love と呼びたいものとは（前半のまとめ）</td>
+<td>第四部</td>
+<td>何でないか・どういう面か・たとえ（重力・海と波と渦・粒でできた場・臍の緒）。一枚の絵の上に四つの探究と経営学の表を置く。それがプロジェクトの駆動源である。前半のテーマは駆動源だったと明示して閉じる</td>
+<td>中間課題の提示</td>
+</tr>
+<tr>
+<td>11</td>
+<td>事業とは？　開発とは、何を指すか</td>
+<td>第五部 頭</td>
+<td>後半の問いは「事業とは？」。事業は営利に限らない：会社も、まちづくりも、NPO も、家族の生計も、人生も一つのプロジェクト。開発は意図して進めるもの・意図せず育つもの。開発の 5W1H。意図した戦略と創発的戦略</td>
+<td>自分のプロジェクトの始まりと終わりはどこか</td>
+</tr>
+<tr>
+<td>12</td>
+<td>経営学・プロジェクト管理：構想・計画・実行の地図</td>
+<td>第五部</td>
+<td>PMBOK 7 の 12 の原理と 8 のパフォーマンス領域、価値実現システム。経営学の主要領域（MBA のガイドのような名称と対象）。どの地図も「構想が在る」ところから描かれていることと、道筋の下で動いているものを重ねる</td>
+<td>中間課題：身近なプロジェクトを PMBOK の領域で整理し、下で動いていたものを書く</td>
+</tr>
+<tr>
+<td>13</td>
+<td>資源の視点：ヒト・モノ・カネ・ジカン・ジョウホウ</td>
+<td>第五部</td>
+<td>事業が動かすものを資源の側から見る。組織論、会計と金融、IT などを、それぞれ何を扱う分野かの紹介として。製造業とサービス業の違いなど、事業の種類で資源の動き方がどう変わるか。長い時間軸で見ると何が変わるか</td>
+<td>身近なプロジェクトを一つ選び、五つの資源がどう動いたかを書く</td>
+</tr>
+<tr>
+<td>14</td>
+<td>心の言葉と価値創造は、どこで誤解されるか／デザインは場にも関わる</td>
+<td>第五部</td>
+<td>心理的安全性・GRIT・レジリエンス・内発的動機・起業家精神などの、定義・誤解・効く条件。価値は顧客の意識で生まれる。創造は単体の能力ではない。利益と長期の問い。プロジェクトデザインの定義</td>
+<td>心の言葉を一つ選び、職場や地域でどう使われているかを調べる</td>
+</tr>
+<tr>
+<td>15</td>
+<td>この見方は、何の役に立つのか</td>
+<td>第五部 末・巻末</td>
+<td>五つの効き目と効く範囲。スクリーナー。まだ分からないこと（存在そのものが源なのか）。残しておく問い</td>
+<td>最終課題の発表と講評</td>
+</tr>
+</tbody>
+</table></div>
+<details class="acc">
+<summary>回の切り方で迷うところ</summary>
+
+<ul>
+<li>Love駆動開発は特論に近い。総論と呼ぶなら、トップページにあって読み物にはないもの（感情処理・美駆動思考・瞑想、デザイン思考・信頼・価値の調査ノート、スクリーナー）のどれを回に入れるかが決まっていない。いまの案で触れているのは、15 回目のスクリーナーだけ。</li>
+<li>力学（ニュートンの井戸）は独立の回にせず、3 回目の相対性理論の入口に含めた。読み物の骨格は力学→相対性理論→量子論の順なので、分けるなら 3 を二回にして心理を一回に寄せる。</li>
+<li>3〜4 の物理の回は、構造の類似を見る回で、物理の正しさを追う回ではない。各回の頭に指月の注意を置く。「詳しく」の畳み（出典・式の話）は発展資料に回す。</li>
+<li>回の題に学問名を置いたのは、シラバスの読者（学生・教務）に向けた便宜。読み物の部や章の題には学問名を入れていないので、授業資料に写すときは題を読み物の章の言葉に戻す。</li>
+<li>13 回目（資源の視点）は、読み物にまだ対応する章がない。分野の紹介にとどめ、中身は第五部が埋まるときに決める。</li>
+<li>構想は「まだ分からない」と置く読み物の立場は、11 回目の 5W1H の中で扱い、独立した回にしていない。</li>
+<li>14 回しかない学期なら、7 と 8 の心理学を一回にする。</li>
+</ul>
+</details>
+
+</div></details><details class="sec" id="シラバスに書くとしたら"><summary>シラバスに書くとしたら</summary><div class="secbody">
+<p>この章では、シラバスの欄に入れるとしたらという文章を置きます。回の切り方・評価の形・学期の回数は、pjdhiro が決めます。</p>
+<h3 id="授業の概要">授業の概要</h3>
+<p>事業構想（Project Design）を、前半「構想とは何か、その駆動源は何か」、後半「事業とは何か」の二つの問いで学ぶ。ここでの事業は、営利の会社に限らない。まちづくり、非営利の活動、家族の生計も、一つのプロジェクトとして扱う。</p>
+<p>扱う範囲の広さは、プロジェクトデザイン論のトップページ（定義・射程・領域、Doing と Being、環境適応とコミュニケーション）で示す。実際の中身は、読み物「Love駆動開発と呼びたいもの」に沿って進める。Love駆動開発は、その広さの中の一つの見方（特論にあたる）で、本授業はそこから総論の範囲を見渡す。</p>
+<p>本授業は、経営学の各論（戦略・マーケティング・組織・会計・ファイナンスなど）を理解し、実行するための土壌にあたる。各論そのものは、それぞれの科目で学ぶ。ここで育てるのは、各論を当てる前に、何が動いていて、どの考え方がどこまで効くのかを見分ける目である。</p>
+<p>構想・計画・実行の道筋は、経営学とプロジェクトマネジメントがすでに細かく書いてきた。本授業では PMBOK 第 7 版の原理とパフォーマンス領域、経営学の主要な領域（戦略・マーケティング・組織・会計・ファイナンス・オペレーション・起業）を地図として紹介し、経済学・社会学・金融の見方と並べて、事業が動かすヒト・モノ・カネ・ジカン・ジョウホウの全部に触れる。事業を、世代をまたぐ長い時間軸で見る回を置く。</p>
+<p>もう一つの側は、その道筋が「構想する人の意図はすでに在る」ところから始めていることに気づき、意図の手前で何が人を動かしているのかを問う。本授業ではこれを「Love駆動開発」と呼ぶ。Love は恋愛に限らず、人や物事を引き寄せ、つながりや縁を生む力を指す。Love駆動開発は、事業構想が前提として問わずに済ませている駆動源と、そこから生まれる過程を名指すものである。</p>
+<p>見えない駆動源は、重力がそれに動かされているものの動き方で書かれてきたように、構造の似た形を重ねて指し示す。前半は相対性理論・量子論・神経現象学・心理学を、後半は経営学・経済学・社会学を、そのために借りる。授業で扱う言葉や仮説は、月を指す指であって、月そのものではない。</p>
+<h3 id="到達目標">到達目標</h3>
+<ol type="1">
+<li>構想・計画・実行の道筋を、PMBOK 7 と経営学の主要領域の名称で説明でき、営利に限らないプロジェクト（まちづくり・家族の生計など）にも当てて見られる。</li>
+<li>経営学の代表的な考え方を、何を駆動源と見ているかで分け、それぞれが効く状況を言える。</li>
+<li>自分がこれまで引き寄せられたプロジェクトの経験を書き、そこで何が動いていたかを、授業の言葉（場・波・縁・渦・束／生存と信頼の信号／欠損）で読み直せる。</li>
+<li>構想・心理的安全性・価値創造のようなビジネスの言葉が、どこで誤解されやすいかを見分けられる。</li>
+<li>事実（測られたこと）、研究の見方、個人の体験の報告を区別して読み、分からないことを分からないまま持っていられる。</li>
+</ol>
+<h3 id="授業の進め方">授業の進め方</h3>
+<p>各回、短い問いから始め、講義のあとに演習（書く・話す）を置く。読み物「Love駆動開発と呼びたいもの」の本文を講義の範囲とし、「詳しく」の畳みは予習・発展資料とする。</p>
+<h3 id="評価案">評価（案）</h3>
+<ul>
+<li>毎回の演習の記録（自分の経験の記述と、授業の言葉での読み直し）</li>
+<li>中間課題：身近なプロジェクト（部活・地域の活動・家族の生計でもよい）を一つ選び、PMBOK 7 の領域で整理したうえで、その下で動いていたものを書く</li>
+<li>最終課題：ある構想・施策・ビジネスの言葉を一つ選び、「渦を渦として扱っていないか」のスクリーナーを当てて、効く範囲と誤解の生じる場所を論じる</li>
+</ul>
+<h3 id="テキスト参考資料">テキスト・参考資料</h3>
+<ul>
+<li>広さの提示：<a href="https://uminomae.github.io/project-design-theory/">プロジェクトデザイン論 トップページ</a></li>
+<li>実際の中身：<a href="https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html">Love駆動開発と呼びたいもの</a>。その姉妹読み物（<a href="gravity-love.html">愛は、重力に似ていないか</a>／<a href="https://uminomae.github.io/project-design-theory/cs/">創造とは</a>／<a href="https://uminomae.github.io/project-design-theory/as/">意識とは</a>／<a href="https://uminomae.github.io/project-design-theory/ks/">欠損駆動思考</a>）</li>
+<li>PMI『PMBOK ガイド 第 7 版』</li>
+<li>Mintzberg, Ahlstrand &amp; Lampel『戦略サファリ』</li>
+<li>各回の出典は読み物の「参照の一覧」に揃えてある</li>
+</ul>
+<h3 id="履修上の注意">履修上の注意</h3>
+<p>本授業の後半（Love駆動開発）は、確立した理論の講義ではなく、一人の実践者の経験から出発した探究を、構造の似た形と一緒に読むものである。断定しない見立てとして聞き、自分の経験と照らして判定してほしい。</p>
+</div></details><details class="sec" id="この試案について"><summary>この試案について</summary><div class="secbody">
+<p>この文書は試案です。pjdhiro の思案を Claude（AI）が書き起こしたもので、現実の講義のシラバスではありません。文責は Claude にあります。pjdhiro の言葉は引用で区別しています。</p>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="influences-psychology.html">影響を受けた心理学</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
