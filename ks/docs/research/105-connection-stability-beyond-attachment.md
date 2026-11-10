@@ -10,7 +10,7 @@ Issue #105（親 #97 の四つ目）の調べの記録。2026-11-10。
 - #79 の「Love の範囲と種類」の向ける先と、Love駆動開発の Love の置き方・面と並べた表を作った（下の「Love の定義・向ける先と並べる」）。一致するとは決めていない。原典がそのつながりを love と呼ぶのは、19 のうち 3（Fredrickson・Balint・Buber）で、三つとも先の置き方が違う。
 - 2026-11-10 の書き足し（pjdhiro「対象で分け、具体から曖昧なものに。私の感覚に近いものを対比しながら考えて。みんな群盲象を評しているのかもしれない」）：論を、つながりの先で九つの段（触れている体 → 目の前の相手 → 心の中の像 → 包む環境としての母 → 集団 → 環境と実在 → 自然 → 外界の全体 → 名の無い先）に並べ直し、pjdhiro の感覚から取り出した六つの特徴と段ごとに対比した。どの段も特徴の一部だけを持ち、六つを全部持つ論は無かった（Claude の読み）。
 - 無料なのに自動で取れなかった原典 2 件（Feldman 2020・Carter & Porges 2013）は、#105 のコメントに保存の表を置いた（issuecomment-6766941702）。
-- 公開ページ（2026-11-10）：`ks/connection-stability.html`「つながりの安定は、何とつながっているのか」。九つの段・六つの特徴・段ごとの対比を、本文照合済の文献（#98・#85 の照合済を含む）だけで組んだ。載せられる論の無い段 4（包む環境としての母）は工事中で見出しだけ。
+- 公開ページ（2026-11-10）：`ks/connection-stability.html`「つながりの安定は、何とつながっているのか」。九つの段・六つの特徴・段ごとの対比を、本文照合済の文献（#98・#85 の照合済を含む）だけで組んだ。載せられる論の無い段 4（包む環境としての母）は工事中で見出しだけ。2026-11-11、#116 で段 4 を埋めた（Balint 1937 の写しの性格を確かめ直して本文照合済にし、足場の原典 Ferenczi 1913・Freud 1911・Freud 1926 を足した。記録は `116-holding-mother-stage4.md`）。
 - 結果のページ（非公開のアーティファクト）：https://claude.ai/artifact/4x7yxXMiJ8HNDuXbSYSMss 。候補ごとにしっくり来るかは聞いていない（`stance.md` 2-8）。pjdhiro のコメントは、下の「pjdhiro の判断」に原文で写す。
 
 ## pjdhiro の言葉（原文）
@@ -218,7 +218,7 @@ pjdhiro の決まり（`stance.md` 1-4・2026-11-10）に従い、論ごとに�
 
 | 文献 | 照合の状態（確かめ先・写しの性格） | 鍵の文（原文・頁） |
 |---|---|---|
-| Bálint, M. (1937). Frühe Entwicklungsstadien des Ichs. Primäre Objektliebe. *Imago* 23(3), 270–288（DOI なし） | 本文を読んだ。ただし写しは Internet Archive の `imago2319373`（国際精神分析大学ベルリンのコレクションに入るが、上げたのは個人の名。「米国著作権法 108 条 (h) により公開」と記載）。Balint は 1970 年没で、原文は著作権が切れていない。個人の写しとして扱い、本文照合済にしていない（権利未確認） | 原始的な愛の原則："was mir gut ist, ist dir recht"（p.279）。相手の願いを自分と同じと扱うが、"Seine Existenz wird aber nicht in Frage gestellt."（p.280）。この段を "primäre oder primitive Objektliebe" と名づけ、"unüberspringbar"（p.280）。母と子は "aufeinander angewiesen, aber zugleich auch aufeinander abgestimmt"（p.281）。満たされたときは "das Gefühl des stillen, ruhigen Wohlbehagens"（p.281）。従来の論は "was still vor sich ging, als unwichtig bewertet"（p.281） |
+| Bálint, M. (1937). Frühe Entwicklungsstadien des Ichs. Primäre Objektliebe. *Imago* 23(3), 270–288（DOI なし） | 本文を読んだ。ただし写しは Internet Archive の `imago2319373`（国際精神分析大学ベルリンのコレクションに入るが、上げたのは個人の名。「米国著作権法 108 条 (h) により公開」と記載）。Balint は 1970 年没で、原文は著作権が切れていない。個人の写しとして扱い、本文照合済にしていない（権利未確認）。2026-11-11 に #116 で、項目の記載（大学の集め・108 条 (h) の権利の記載）を見直し、本文照合済に改めた（`116-holding-mother-stage4.md`） | 原始的な愛の原則："was mir gut ist, ist dir recht"（p.279）。相手の願いを自分と同じと扱うが、"Seine Existenz wird aber nicht in Frage gestellt."（p.280）。この段を "primäre oder primitive Objektliebe" と名づけ、"unüberspringbar"（p.280）。母と子は "aufeinander angewiesen, aber zugleich auch aufeinander abgestimmt"（p.281）。満たされたときは "das Gefühl des stillen, ruhigen Wohlbehagens"（p.281）。従来の論は "was still vor sich ging, als unwichtig bewertet"（p.281） |
 | Balint, M. (1968). *The Basic Fault: Therapeutic Aspects of Regression*. Tavistock（本は有料） | 二次資料のみ（Soreanu, R. 2019. Michael Balint's word trail. *Psychoanalysis and History* 21(1), 53–72. DOI 10.3366/pah.2019.0281。Europe PMC 全文 XML・PMC6716362・CC BY。頁の印字なし。104 の照合を流用し、primary love の箇所を足して読んだ） | Soreanu の要約：出生の外傷の時に、対象が "from a previously harmonious mix-up of substances" から輪郭をもって現れる。Balint の引用："Libido is no longer in a homogenous flux from the id to the environment"（Balint 1968, p.67・Soreanu 経由） |
 | Portwich, P. O. W. (2014). Die Arzt-Patient-Beziehung im Fokus: Was Michael Balint uns heute noch zu sagen hat. *Swiss Archives of Neurology and Psychiatry* 165(1), 4–9（DOI は確かめていない） | 二次資料のみ（出版社の公開版。mdpi-res.com に置かれた SANP の PDF。Balint の説明は、さらに Falzeder 1985 に拠る＝二次の二次） | 胎児の状態を、Balint に従えば "eine vollständige harmonische Verschmelzung des Kindes mit seiner Umgebung"（p.5） |
 
@@ -493,6 +493,8 @@ pjdhiro の頼み（2026-11-10・結果のページを見て）：「これら�
 保存先は本体の `.cache/raw/issue105/`。保存されたら、論 2 と 4 に書き足す。
 
 ## 有料で参考にしなかったもの
+
+- 2026-11-11 の追記：段 4 の論は #116 で当たり直した（`116-holding-mother-stage4.md`）。Balint 1937 は本文照合済に改め、Winnicott 1958・1960 は本の全体のスキャン（権利未確認）で本文を読んだ。
 
 - Feldman 2017（*Trends in Cognitive Sciences* 21(2)）・Uvnäs-Moberg 1998（*Psychoneuroendocrinology* 23(8)）・Porges 1998「Love: An emergent property of the mammalian autonomic nervous system」（同誌。著者のサイトの昔の写しは今も Wayback も 404）。
 - Winnicott 1958・1960 の本文（PEP-Web の購読・全集）。要旨と冒頭だけで書いた。
