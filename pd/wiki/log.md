@@ -550,3 +550,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（畳み「一般に言う三つの関係と、このページの読み方」）
 - pages: どちらのページも、この段を引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] compile | Love駆動開発の表「開発の広さ」の下に、震災復興の事例を六つの問いで追う畳みを足したあと（#117）
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（畳み「震災からの復興は、誰が進めたのか（事例の読みは Claude の解釈）」）
+- pages: どちらのページも、この畳みを引いていない（`concepts/Love 駆動開発` が写している表そのものは変わっていない）ので本文はそのまま。`compiled` は今日のまま
