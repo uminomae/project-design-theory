@@ -33,7 +33,8 @@ if re.fullmatch(r'git' + C + SUB + r'[^|;&<>`$\n]*', unquoted):
 print(
     "止めました：git の取り込み（merge・pull）を、パイプ・リダイレクト・&&・;・改行などと組んで回そうとしています。"
     "sandbox.excludedCommands は呼び出しの全体が合うときだけサンドボックスの外で動かすので、組むと中に残り、"
-    ".claude/ で止まって作業ツリーだけが進みます。取り込みだけを一つの呼び出しにして、出力はそのまま見てください。"
+    ".claude/ で止まって作業ツリーだけが進みます。worktree を develop に揃えるなら `bash scripts/sync-develop.sh` だけを、"
+    "ほかの取り込みは取り込みだけを一つの呼び出しにして、出力はそのまま見てください。"
     "commit の文が要る merge は、-m を重ねて一行ずつ渡せます（docs/rules/corrections-k.md の K1）。",
     file=sys.stderr,
 )

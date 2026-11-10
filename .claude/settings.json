@@ -62,6 +62,7 @@
       "git -C * merge --ff-only develop",
       "git merge --ff-only *",
       "git -C * merge --ff-only *",
+      "bash scripts/sync-develop.sh",
       "gh",
       "gh *"
     ]

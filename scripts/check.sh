@@ -24,6 +24,8 @@ run() {
 run "今までの repo を前提にした参照" node scripts/check-old-repo-refs.mjs
 run "pd：repo をまたぐ URL" bash -c 'cd pd && bash scripts/check-cross-repo-urls.sh'
 run "pd：読み物の内部アンカー" bash -c 'cd pd && node scripts/reader-anchor-check.mjs'
+# 対話の形の読み物で、pjdhiro の発言の引用カードの直前が見出し・畳みの題・組む道具の印になっていないか（文脈なしの発言・型 R・2026-11-10）。
+run "pd：引用カードの前の文脈" node scripts/check-quote-context.mjs
 run "pd：wiki の孤立ページ・不在の出典・旧用語" bash -c 'cd pd && node scripts/wiki-lint.mjs --check --quiet'
 run "pd：wiki が読めない原典を出典にしていない" bash -c 'cd pd && node scripts/wiki-access-lint.mjs'
 # 出典が compiled 日より後に変わった wiki のページの数。止めずに知らせるだけ（2026-11-10。一覧は pd/wiki/health/freshness-report.md）。

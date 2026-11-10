@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/love-trajectory.html を直接編集しないでください。
+  正本:   knowledge/research/love-trajectory/READER-love-trajectory.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「私というアプリを、読めるようにした一年」のページです（工事中）。Love駆動開発と呼びたいものが生まれるまでの、pjdhiro の一年（2025〜2026-11）をたどる。動いているのに本人にしか読めなかった自分のプロジェクトのやり方に名前を付け、AI と一緒に広げ、創造とは・意識とは・欠損駆動思考・プロジェクトデザイン論の四つに分け、AI が膨らませたものを原典に当たって削り、普通の言葉に直し、自分の見方を確かめ直して、四つの探究が一本の線に並ぶまで。章ごとに pjdhiro の言葉と、当時の公開の投稿や記録へのリンクを置く。分析のつもりだった作業の中で、書いていた本人のほうが変わっていった。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>私というアプリを、読めるようにした一年 | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/love-trajectory.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="Love駆動開発と呼びたいものが生まれるまでの、pjdhiro の一年（2025〜2026-11）をたどる。動いているのに本人にしか読めなかった自分のプロジェクトのやり方に名前を付け、AI と一緒に広げ、創造とは・意識とは・欠損駆動思考・プロジェクトデザイン論の四つに分け、AI が膨らませたものを原典に当たって削り、普通の言葉に直し、自分の見方を確かめ直して、四つの探究が一本の線に並ぶまで。章ごとに pjdhiro の言葉と、当時の公開の投稿や記録へのリンクを置く。分析のつもりだった作業の中で、書いていた本人のほうが変わっていった。">
+    <meta property="og:title" content="私というアプリを、読めるようにした一年">
+    <meta property="og:description" content="Love駆動開発と呼びたいものが生まれるまでの、pjdhiro の一年（2025〜2026-11）をたどる。動いているのに本人にしか読めなかった自分のプロジェクトのやり方に名前を付け、AI と一緒に広げ、創造とは・意識とは・欠損駆動思考・プロジェクトデザイン論の四つに分け、AI が膨らませたものを原典に当たって削り、普通の言葉に直し、自分の見方を確かめ直して、四つの探究が一本の線に並ぶまで。章ごとに pjdhiro の言葉と、当時の公開の投稿や記録へのリンクを置く。分析のつもりだった作業の中で、書いていた本人のほうが変わっていった。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/love-trajectory.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="私というアプリを、読めるようにした一年">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-10">
+    <meta property="article:modified_time" content="2026-11-10">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "私というアプリを、読めるようにした一年",
+          "description": "Love駆動開発と呼びたいものが生まれるまでの、pjdhiro の一年（2025〜2026-11）をたどる。動いているのに本人にしか読めなかった自分のプロジェクトのやり方に名前を付け、AI と一緒に広げ、創造とは・意識とは・欠損駆動思考・プロジェクトデザイン論の四つに分け、AI が膨らませたものを原典に当たって削り、普通の言葉に直し、自分の見方を確かめ直して、四つの探究が一本の線に並ぶまで。章ごとに pjdhiro の言葉と、当時の公開の投稿や記録へのリンクを置く。分析のつもりだった作業の中で、書いていた本人のほうが変わっていった。",
+          "keywords": "Love駆動開発, AI 協働, リファクタリング, 可読性, 自己分析, 創造とは, 意識とは, 欠損駆動思考, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/love-trajectory.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/love-trajectory.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-10",
+          "dateModified": "2026-11-10",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "Love駆動開発"}, {"@type": "Thing", "name": "AI 協働"}, {"@type": "Thing", "name": "プロジェクトデザイン"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「私というアプリを、読めるようにした一年」のページです（工事中）。Love駆動開発と呼びたいものが生まれるまでの、pjdhiro の一年（2025〜2026-11）をたどる。動いているのに本人にしか読めなかった自分のプロジェクトのやり方に名前を付け、AI と一緒に広げ、創造とは・意識とは・欠損駆動思考・プロジェクトデザイン論の四つに分け、AI が膨らませたものを原典に当たって削り、普通の言葉に直し、自分の見方を確かめ直して、四つの探究が一本の線に並ぶまで。章ごとに pjdhiro の言葉と、当時の公開の投稿や記録へのリンクを置く。分析のつもりだった作業の中で、書いていた本人のほうが変わっていった。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b><br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>私というアプリを、読めるようにした一年</h1>
+                <p class="reader-subtitle">Love駆動開発が生まれるまでの一年を、そのときの言葉でたどる</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-10 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/love-trajectory/READER-love-trajectory.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<details class="sec" id="このページは何をたどるか" open><summary>このページは、何をたどるか</summary><div class="secbody">
+
+
+<p class="reader-epigraph">私にとっての AI 協働のこの一年は、まさに、私と限りのない AI という世界の頭脳との安心感でした。臍の緒でつながり、安心して論を預ける。<br>— pjdhiro（2026-11-03）</p>
+
+<p><a id="lt-intro"></a>このページは、「<a href="love-driven-dev.html">Love駆動開発と呼びたいもの</a>」が生まれるまでの、pjdhiro の一年をたどります。pjdhiro は、自分がしてきたプロジェクトのやり方を、ほかの人が読めるように書き直していきました。名前を付け、分け、削り、確かめていくうちに、分析のつもりだった作業の中で、書いていた本人のほうが変わっていきました。</p>
+<p>章ごとに、そのとき pjdhiro が言ったことや書いたことを置き、何が起きていたかを短く書きます。「詳しく」の畳みには、その時期の公開の投稿や記録へのリンクを置きました。リンクを順に開くと、当時の跡をなぞれます。</p>
+<ul>
+<li><strong>名前を付ける</strong>：動いているのに本人にしか読めなかったやり方に、名前を付けていく（2026 年 1 月まで）</li>
+<li><strong>広げて、分ける</strong>：AI が書き手になって作業が広がり、一つの作業場を四つの探究に分ける（2026 年 2〜3 月）</li>
+<li><strong>削る</strong>：AI が膨らませたものを原典に当たって削り、普通の言葉に直す（2026 年 4〜7 月）</li>
+<li><strong>外に出る</strong>：公開の記録の外で、畑と裏山に向かう（2026 年 8〜9 月）</li>
+<li><strong>確かめて、並べる</strong>：自分の見方を確かめ直し、四つの探究が一本の線に並ぶ（2026 年 10〜11 月）</li>
+</ul>
+</div></details><details class="sec" id="この一年は何をしていたのか" open><summary>この一年は、何をしていたのか</summary><div class="secbody">
+
+
+<p><a id="lt-why"></a>2026 年 11 月の対話で、pjdhiro はこの一年の作業を、自分というアプリのリファクタリング（動きを変えずにコードを整えること）にたとえました。Claude が、出発点は「何かがおかしい」と思って直す作業（デバッグ）だったのでは、と読んだとき、pjdhiro はこう答えています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の振り返り：</strong>デバッグしたかったわけではないのです。バグが見つかることはウェルカムでしたが。最初は、動いてるコードの可読性を高めたんだと思いますよ。シンプルで短いのだけど、本人にしかわからなかった。</p>
+</blockquote>
+<p>出発点は、直すことでなく、読めるようにすることでした。中身を表す名前を付け、関数を切り分け、モジュールにしていくと、ほかとつながりやすくなり、構造がはっきりしていきます。このページの章は、おおむねこの順に並んでいます。</p>
+<details class="acc"><summary>詳しく — この振り返りが出た対話</summary>
+
+<p>対話は、「事業構想学とは」という問いから、Love駆動開発が経営学のどこに位置するかを話した記録です。終わりのほうで、pjdhiro は、この一年の作業をリファクタリング、デバッグ、ブラックボックスのテストと、たとえを変えながら言い直しています（<a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/notes/dialogue/2026-11-03-love-driven-dev-position-in-business-design.md">対話録 2026-11-03</a> の §6）。</p>
+</details>
+
+</div></details><details class="sec" id="動いているのに本人にしか読めなかった" open><summary>動いているのに、本人にしか読めなかった</summary><div class="secbody">
+
+
+<p><a id="lt-before"></a>2025 年の初め、pjdhiro は自分のブログに「感情処理」というページを書いています。感情を処理するしくみを説明する中で、自分を計算機の部品にたとえています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro のたとえ：</strong>私自身を関数とし、環境や対象を引数として取り込むことで、内外の値を相互作用的に更新していくイメージです。</p>
+</blockquote>
+<p>あとで大事になる考えは、この頃すでに、短い言葉で出ていました。自分を関数と見ること、虚軸のような方向にヒントがあること、そして「LOVE駆動開発」という言葉です。ただ、それらがどうつながっているかは、本人にしか分かりませんでした。2025 年 12 月、pjdhiro は自分の手で、「創造とは」「中庸」「事業構想とは」「海の比喩」「群盲」「Being」のような短い題を、数日のうちに並べていきます。</p>
+<details class="acc"><summary>詳しく — 2025 年までの跡</summary>
+
+<ul>
+<li>2025-01-14：ページ「<a href="https://uminomae.github.io/pjdhiro/emotional-processing/">感情処理</a>」</li>
+<li>2025-04-29：投稿「<a href="https://uminomae.github.io/pjdhiro/20250429AlternativeInvestment/">日記：人生の60/40ポートフォリオ</a>」に「虚軸のような無相関の方向に正解のヒントがあると思う。」</li>
+<li>2025-05-14：投稿「<a href="https://uminomae.github.io/pjdhiro/20250517AsistobeEuler/">発散：創造の「構え」-As is/To beフレームワーク-</a>」のタグに「LOVE駆動開発」が現れる（2026-02-09 に「Love駆動開発」の表記に変わる）</li>
+<li>2025-06-12・06-17：投稿「<a href="https://uminomae.github.io/pjdhiro/20250612WoodWideWeb/">WoodWideWeb</a>」「<a href="https://uminomae.github.io/pjdhiro/20250616baToMinwa/">baToMinwa</a>」。虚軸・直交する軸・スピノル</li>
+<li>2025-12-18〜23：pjdhiro のブログの記録（<a href="https://github.com/uminomae/pjdhiro/commits/main/">GitHub の履歴</a>）に、「創造とは」「私の場合」「中庸」「儒教」「事業構想とは」「海の比喩２」「群盲 link」「be/do」「Being」「総論」などの短い題が並ぶ。どれも本人の手のもの</li>
+</ul>
+</details>
+
+</div></details><details class="sec" id="自分の考え方に名前を付けai-に話させてみた" open><summary>自分の考え方に名前を付け、AI に話させてみた</summary><div class="secbody">
+
+
+<p><a id="lt-name"></a>2026 年 1 月、pjdhiro は、アニメから得た着想を、思考を支えるフレームワークにまとめる投稿を書きました。そのフレームワークをどう試すかについて、こう書いています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の言葉：</strong>「このフレームワークは自分自身に効くのか？」を確かめるため、私自身を最初のテスターとしています。</p>
+</blockquote>
+<p>この月、自分の考え方に、欠損駆動思考、私のデザイン思考、のような名前が付いていきます。考え方をフレームワークとしてまとめ、自分を最初の試し手にして効くかを確かめる、という形がここで始まります。ChatGPT の GPTs（目的に合わせて指示を書いたチャットボット）の作り方も、この月に投稿しています。</p>
+<details class="acc"><summary>詳しく — 2026 年 1 月の跡</summary>
+
+<ul>
+<li>2026-01-26：記録に「欠損駆動思考」「私のデザイン思考」</li>
+<li>2026-01-28：投稿「<a href="https://uminomae.github.io/pjdhiro/20260187bi-driven/">美駆動思考支援の探索：OpenAI Prismを使用してみた</a>」</li>
+<li>2026-01-30：投稿「<a href="https://uminomae.github.io/pjdhiro/20260130prism/">自分でGPTs（カスタムGPT・チャットボット）を作る方法</a>」</li>
+</ul>
+</details>
+
+</div></details><details class="sec" id="ai-が書き手になり作業が一気に広がった" open><summary>AI が書き手になり、作業が一気に広がった</summary><div class="secbody">
+
+
+<p><a id="lt-spread"></a>2 月、Claude と GitHub で知識を管理し始めて 2 週間たった日の日記に、pjdhiro は小見出しでこう書いています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の気づき：</strong>コンテキストってアルゴリズムと同等じゃ、と湧いた</p>
+</blockquote>
+<p>この月から、文章を書く手は、pjdhiro から AI（Claude や Codex）に移っていきます。pjdhiro は、AI に読ませる文書（コンテキスト）を整えることが、プログラムを書くことと同じように働く、と気づきました。そこから、AI と一緒に回る作業の仕方そのものを組み立てていきます。</p>
+<details class="acc"><summary>詳しく — 2026 年 2 月の跡</summary>
+
+<ul>
+<li>2026-02-02：投稿「<a href="https://uminomae.github.io/pjdhiro/20260202sep-dec-log/">9月の悲痛／12月の楽観：自己参照が強まる社会</a>」</li>
+<li>2026-02-06：投稿「<a href="https://uminomae.github.io/pjdhiro/20260206-llm-workflow-evolution/">探索は再帰、収集は並列 — LLM運用を分けた6日間</a>」。Codex と Claude のデスクトップアプリを使い分ける</li>
+<li>2026-02-13：投稿「<a href="https://uminomae.github.io/pjdhiro/20260213-float-structure/">日記：Claude+GitHubを2週間：ナレッジ管理</a>」</li>
+<li>2026-02-19：投稿「<a href="https://uminomae.github.io/pjdhiro/20260219-session-report/">セッション進捗レポート: フリーズ復旧と変換層の再構築</a>」</li>
+</ul>
+</details>
+
+</div></details><details class="sec" id="一つの作業場を四つの探究に分けた" open><summary>一つの作業場を、四つの探究に分けた</summary><div class="secbody">
+
+
+<p><a id="lt-split"></a>広がった作業の中には、創造のこと、欠けのこと、意識のこと、プロジェクトデザインのことが混ざっていました。2026 年 11 月の対話で、pjdhiro はこの時期をこう振り返っています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の振り返り：</strong>私がしてきたプロジェクトのやり方をモジュールに切り分けるリファクタリングのような、可読性を高めたり、構造をシンプルにしたり、相互の接続を明確にしたり。それが創造や意識といった切り分けになっていった。欠損駆動思考は上手く書けなくてあっちこっちいったり描き直したり。全く同じ振る舞いを記述したかったのに全然違うものを作っちゃった。そんな紆余曲折ですね。</p>
+</blockquote>
+<p>一つの作業場が、「<a href="https://uminomae.github.io/project-design-theory/cs/">創造とは</a>」「<a href="https://uminomae.github.io/project-design-theory/as/">意識とは</a>」「<a href="https://uminomae.github.io/project-design-theory/ks/">欠損駆動思考</a>」「<a href="https://uminomae.github.io/project-design-theory/">プロジェクトデザイン論</a>」の四つに分かれました。分けると、それぞれの持ち場と、つながり方が見えてきます。3 月には、AI が 10 時間ほど自分で作業を続け、創造に似た形を 30 の学問領域で調べた報告が公開されました。</p>
+<details class="acc"><summary>詳しく — 2026 年 3 月の跡</summary>
+
+<ul>
+<li>2026-03-02：投稿「<a href="https://uminomae.github.io/pjdhiro/20260302-everything-is-context/">AI協働：「すべてはファイル」をコンテキストに持ち込んだ論文——棄却と保持の間</a>」</li>
+<li>2026-03-18：投稿「<a href="https://uminomae.github.io/pjdhiro/20260318-autonomous-session-report/">AI協働：10時間の自律作業で30領域の調査レポートを公開した記録</a>」</li>
+</ul>
+</details>
+
+</div></details><details class="sec" id="ai-が膨らませたものを原典に当たって削った" open><summary>AI が膨らませたものを、原典に当たって削った</summary><div class="secbody">
+
+
+<p><a id="lt-cut"></a>作業が広がるあいだに、AI は、原典に根拠の無い体系も書いていました。「5 つの柱」「4 層モデル」のような、もっともらしい名前の付いた枠組みです。4 月、Claude が覚えている知識を合わせて説明を書いたとき、pjdhiro はこう言いました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の指摘：</strong>それらを文献からリサーチする必要があるのですよ</p>
+</blockquote>
+<p>ここから、削る作業が始まります。原典にあるか、本人が理解できるか、で確かめ、根拠の無い枠組みは外しました。似た言葉を一緒にせず、言葉の定義を一つずつ守ります。原典が取れないとすぐに諦める AI には、別の道を探すよう求めました。</p>
+<details class="acc"><summary>詳しく — 2026 年 4〜6 月の跡</summary>
+
+<p>この時期の記録は、今は公開していない作業場にあります。そこで pjdhiro が言ったことは、このサイトの調べ方の決まりに、日付つきで残っています（<a href="https://github.com/uminomae/project-design-theory/blob/main/docs/rules/sources.md">調べ方と原典の照合</a> の §2）。</p>
+<ul>
+<li>2026-04：AI が作った体系（「5 つの柱」「4 層モデル」など）を、原典に根拠が無いとして削る</li>
+<li>2026-04-16：上の指摘。同じ日に、言葉一つ一つの定義を大切にすること</li>
+<li>2026-06-26：取得できないと言って早く諦めない</li>
+</ul>
+</details>
+
+</div></details><details class="sec" id="普通の言葉で書きしっくりこないものを落とした" open><summary>普通の言葉で書き、しっくりこないものを落とした</summary><div class="secbody">
+
+
+<p><a id="lt-plain"></a>7 月、理論はまた膨らみました。なぜ 3 と 7 という数が特別なのか、という読み物も書かれています。その中で Claude が「3 と 7 が最適」と言い切って書いたとき、pjdhiro はこう言いました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の指摘：</strong>無理に論を勝たせる姿は恥ずかしい</p>
+</blockquote>
+<p>主張は、「〜かもしれない」くらいの見立てにとどめることになりました。数理として正しい図にも、pjdhiro は「わかりづらい」と言い、その図は落ちました。採るか落とすかを最後に決めるのは、本人のしっくり感です。読み物は、教科書のような普通の文に直されていきます。作業が混乱したときは、Issue に計画を書き、骨格を見直してから並べ直す、という進め方もこの月に決まりました。</p>
+<details class="acc"><summary>詳しく — 2026 年 7 月の跡</summary>
+
+<ul>
+<li>2026-07-03：読み物「<a href="three-and-seven.html">なぜ 3 と 7 だけが特別なのか</a>」</li>
+<li>2026-07-04：上の指摘（Claude が「3 と 7 が最適」と書いたとき）</li>
+<li>2026-07-05：「作業手順が大混乱。Issue に記述し、計画的に骨格を見直し…」（場当たりで改稿したとき）</li>
+<li>2026-07-08：「わかりづらい」（数理の正しい対話図に）</li>
+</ul>
+<p>指摘の言葉は、このサイトの規約に、日付と場面つきで残っています（<a href="https://github.com/uminomae/project-design-theory/blob/main/docs/rules/corrections-examples.md">誤りの型の代表例</a>）。</p>
+</details>
+
+</div></details><details class="sec" id="公開の記録の外で畑と裏山に向かっていた" open><summary>公開の記録の外で、畑と裏山に向かっていた</summary><div class="secbody">
+
+
+<p><a id="lt-field"></a>8 月と 9 月は、公開の記録がほとんど動いていません。このページを作るとき、この二か月に何をしていたかを Claude が尋ねると、pjdhiro はこう答えました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の答え：</strong>畑の管理をLLMに管理するアプリを構築していたのと、裏山の地形を把握するためにチェーンソーで伐採作業をして敷地の構想を練ってました。</p>
+</blockquote>
+<p>公開の記録が止まっていても、手は別の場所で動いていました。</p>
+</div></details><details class="sec" id="自分の見方そのものを確かめにいった" open><summary>自分の見方そのものを、確かめにいった</summary><div class="secbody">
+
+
+<p><a id="lt-check"></a>10 月、pjdhiro は、2025 年に ChatGPT の GPTs で作っていた道具を、作り直しました。ものの見方の広さを、成人の発達の段階で見立てる道具（<a href="stages-screener.html">スクリーナー</a>）です。論文と照らしてみると、いちばん広い段階（6.5）の目印にしていた「発達の軌道」は、論文では 4.5 の段階の特徴でした。段階の移り変わりの途中にいる人をどう判定するかを決めるところで、pjdhiro はこう言っています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の判断：</strong>移行期の判定は削除。グラデーションとして本人に判断を委ねたほうがいい</p>
+</blockquote>
+<p>前に自分で作ったものを、外の資料に照らし、ずれていたところを直しています。移り変わりの途中は判定の線を引かず、どう読むかを使う人に委ねる形にしました。</p>
+<details class="acc"><summary>詳しく — 2026 年 10 月の跡</summary>
+
+<ul>
+<li>2026-10-24・25：スクリーナーを論文と照らして作り直す（<a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/stages-screener/README.md">作り直しの記録</a>。上の判断は 2026-10-24。「発達の軌道」のずれは、記録の「結果」の 1）</li>
+</ul>
+</details>
+
+</div></details><details class="sec" id="四つの探究が一本の線に並んだ" open><summary>四つの探究が、一本の線に並んだ</summary><div class="secbody">
+
+
+<p><a id="lt-line"></a>11 月 1 日、読み物「<a href="gravity-love.html">愛は、重力に似ていないか</a>」が書かれました。11 月 3 日の対話では、四つの探究の持ち場が、一つの過程の順として並びます（<a href="love-driven-dev.html#ldd-background">Love駆動開発の巻末</a>の「四つの持ち場が、一本の線に並んだ」）。同じ日、この一年の作業をリファクタリング、デバッグとたとえ直していった末に、pjdhiro はこう言い直しました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の言い直し：</strong>私というアプリがブラックボックスで、振る舞いと機能を品質テストとして新たな言語でコーディングした、とも言える作業でした。</p>
+</blockquote>
+<p>中身の見えないものを、振る舞いと機能から、言葉で書いていく、という言い方です。そうして書いたものが並んだとき、全体に付ける題として、2025 年からあった「Love駆動開発」という名前がふさわしく見えました。名前は、出来事のあとから付いています。</p>
+<details class="acc"><summary>詳しく — 2026 年 11 月の跡</summary>
+
+<ul>
+<li>2026-11-01：読み物「<a href="gravity-love.html">愛は、重力に似ていないか</a>」</li>
+<li>2026-11-03：対話録「<a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/notes/dialogue/2026-11-03-love-driven-dev-position-in-business-design.md">Love駆動開発は事業構想学のどこにあるか</a>」（リファクタリングのたとえと、上の言い直し）と、「<a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/notes/dialogue/2026-11-03-non-duality-love-gravity-signals.md">非二元性を、愛と重力の駆動源から指さす</a>」（冒頭の題辞）</li>
+</ul>
+</details>
+
+</div></details><details class="sec" id="分析のつもりが書いていた本人が変わっていた" open><summary>分析のつもりが、書いていた本人が変わっていた</summary><div class="secbody">
+
+
+<p><a id="lt-changed"></a>同じ対話で、pjdhiro は、分析のつもりだった作業の途中で起きたことを、こう話しています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の振り返り：</strong>私は私をメタ認知で分解し、関数を切り分けるようにモジュールとして切り分け、発達段階のようなリストにまとめたり、そのせいで処理速度が上がったり、認知限界を超えない範囲でメモリ上で扱える量が増え、結果的に扱える量が増えたことで広く扱えるようになった。そんな洗練というかバージョンアップもありました。分析だったはずなのに。これもよくあることですよね。</p>
+</blockquote>
+<p>読めるようにするための作業で、書いていた本人のほうが変わっていきました。意図して進めたことと、意図しないまま育ったことが、同じ一年の中に重なっています。Love駆動開発の読み物は、こうした意図しないまま変わっていくものも開発と呼んでいます（「<a href="love-driven-dev.html#ldd-development">開発とは、何を指すか</a>」）。この一年は、その一つの例です。</p>
+</div></details><details class="sec" id="このページの材料"><summary>このページの材料</summary><div class="secbody">
+<p><a id="lt-materials"></a>このページは、公開されているものだけで組んでいます。pjdhiro のブログの投稿とその記録（GitHub の履歴）、このサイトの対話録と規約です。章 7 の言葉は、このページを作るときに pjdhiro が答えたものです。月ごとの作業の量の数え直しは、研究ノート（<a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/love-driven-dev/TRAJECTORY-git-2025-11-to-2026-11.md">一年の git から辿る軌跡</a>）に置きました。</p>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

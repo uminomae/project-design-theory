@@ -16,6 +16,7 @@
 | `psychological-safety.html` | `knowledge/research/psychological-safety/READER-psychological-safety.md`（心理的安全性とは・#26。調べは同ディレクトリ SURVEY-00〜04） | flow（トップと同じ Menu。**工事中＝noindex**・本文は骨格承認後。冒頭バナーに工事中。Love駆動開発の心の言葉の章の心理的安全性の表からリンク） |
 | `developmental-stages.html` | `knowledge/research/developmental-stages/READER-developmental-stages.md`（精神の発達段階とは・#27。調べは同ディレクトリ README） | flow（トップと同じ Menu。**工事中＝noindex**・本文は骨格承認後。冒頭バナーに工事中。Love駆動開発の心の言葉の章の内発的動機の「詳しくは」の行からリンク） |
 | `love-history.html` | `knowledge/research/love-history/READER-love-history.md`（Love とは、どう言われてきたか・#79。Love と呼ばれてきたものを、仏教の流れと西洋哲学の流れに沿って歴史の順に並べ、現代の恋愛の定義と心理学の分類・神経科学を足す。誰が何を Love と呼んだかを、原典の本文を読めた出典だけで並べる。ほかのページとの関係を書かない独立した読み物で、どこから参照されてもよい（pjdhiro 2026-11-09）） | flow（トップと同じ Menu。**工事中＝noindex**） |
+| `love-trajectory.html` | `knowledge/research/love-trajectory/READER-love-trajectory.md`（私というアプリを、読めるようにした一年・#109。Love駆動開発が生まれるまでの pjdhiro の一年を、章ごとの pjdhiro の言葉と、当時の公開の投稿や記録へのリンクでたどる。Love駆動開発の巻末の「一年の軌跡」から独立させた。骨格は `knowledge/research/love-driven-dev/PLAN-trajectory-page-20261110.md`） |
 | `management-drivers.html` | `knowledge/research/management-drivers/READER-management-drivers.md`（経営学の考え方は、どこまで効くか。七つの駆動源の考え方を、よく効く場面と、正解として広げたときの取り違えで見る。Love駆動開発の「経営学が見てきた七つの駆動源」の章の詳しくを切り出したもの） | flow（トップと同じ Menu。**工事中＝noindex**。pjdhiro の確認後に noindex を外し sitemap・llms.txt へ。Love駆動開発の七つの駆動源の章からリンク） |
 
 ## このページが何で、どう育てるか

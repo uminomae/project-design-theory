@@ -105,6 +105,12 @@ PAGES = [
         ROOT / "reader/love-history.html",
         "flow",
     ),
+    (
+        ROOT / "knowledge/research/love-trajectory/READER-love-trajectory.md",
+        ROOT / "scripts/reader-love-trajectory-template.html",
+        ROOT / "reader/love-trajectory.html",
+        "flow",
+    ),
 ]
 
 # スクリーナーのデータ（正本 JSON）。出力 HTML 名 → JSON。正本 MD の <!--SCREENER--> に
