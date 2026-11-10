@@ -39,7 +39,7 @@
 | いつ | 読むもの |
 |---|---|
 | 毎回 | `docs/rules/stance.md`：pjdhiro の見方と判断の仕方。迷ったら、pjdhiro ならどう判断するかをここで確かめる。`docs/rules/corrections.md`：Claude が繰り返す誤りの型。自分の案がどの型に当たるかを見る |
-| 公開文を書く・直す | `docs/rules/writing.md`：公開文の書き方。`docs/rules/corrections-examples.md`：当たりそうな型の行だけ |
+| 公開文を書く・直す | `docs/rules/writing.md`：公開文の書き方。`docs/rules/corrections-examples.md`：当たりそうな型の行だけ。main に出す前に念入りに見るときは `docs/rules/review.md`：レビューの手順 |
 | 手を動かす作業（git の取り込み・push、生成・検査、画面、調べと記録）を始める | `docs/rules/corrections-k.md`：型 K の確認のうち、K0 と、その作業の節だけ。worktree で始めるときは、取り込みを回す前に K1 を読む |
 | 既存の理論・東洋思想・五段階の語を扱う | `docs/rules/stance-theories.md`：理論との距離 |
 | 調べる・引用する | `docs/rules/sources.md`：調べ方と原典の照合 |
@@ -75,7 +75,8 @@
 
 - **編集したら、`develop` に最速で統合する。** プルリクエストは使わない。worktree は、別のセッションが同時に動くときや、クラウドでスマートフォンから動かすときに便利なので使ってよい。その場合も、作業を worktree の枝に溜めずに、本体の checkout（`~/dev/pd/project-design-theory`）の `develop` へ早く取り込む。最速がどのタイミングかは状況による（ほかのセッションと同じファイルを触っているとき、pjdhiro の判断を待って手が止まっているとき など）。取り込みの段取りを説明して pjdhiro の手を止めない。
 - **確かめは、手元のサーバーをブラウザで見るのが基本。** 最速で目視できるから使っている。本体の checkout（develop）を launchd（`com.uminomae.project-design-theory`）が `scripts/serve.sh` で http://localhost:3001/ に常駐させている。直したらすぐ 3001 で見られる状態にしておく：直したら 3001 で開いて確かめ、止まっていたら `launchctl kickstart -k gui/$(id -u)/com.uminomae.project-design-theory` で起こす。
-- **公開は、`develop` を `main` へ送るだけ**（`git push origin develop:main`）。話の流れで確かめが済んでいれば、いちいち聞かずに送る。
+- **公開は、`develop` を `main` へ送るだけ**（`git push origin develop:main`）。話の流れで確かめが済んでいれば、いちいち聞かずに送る。送る前に `bash scripts/publish-main.sh <送る枝>` を走らせ、一緒に出る commit を見る（`.githooks/pre-push` が、これを走らせていない main への push を止める）。
+- 公開の判断を待つ別のセッションの変更が develop にあって、自分の commit だけを載せた枝で main に送ったとき（cs の記録など）は、main に develop に無い commit ができる。送ったあとに、本体の checkout で `git fetch origin`、続けて `git merge origin/main` を単独で回し、develop に戻し入れて push する（`.claude/` が入るならサンドボックスの外で。2026-11-10 までに develop で 4 回行われている）。戻さないと、次の `develop:main` が早送りにならない（2026-11-10）。
 - 公開は GitHub Actions（`.github/workflows/pages.yml`）。出すのはサイトのファイルだけ。
 - サイトのファイルを直したら、commit の前に `bash scripts/check.sh` を走らせる（旧 repo へのリンク・読み物の内部アンカー・wiki・as と ks のテスト・文字化け）。同じものを `.github/workflows/check.yml` が develop と main で走らせる。何を機械で見て、何を画面で見て、何がまだ無いかは `docs/TESTING.md`。
 - commit の末尾：`Co-Authored-By: Claude <noreply@anthropic.com>`
