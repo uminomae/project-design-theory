@@ -16,7 +16,7 @@ status: reviewed
 
 身体の次元の見方（Fuchs & De Jaegher 2009、De Jaegher & Di Paolo 2007、Fuchs 2016）は、二人のやり取りが、どちらか一人には帰せられない意味を生むと書きます。これを実験で示したとされるのが、二人が見えないまま仮想の線の上で互いを探す知覚の交差の実験です（Auvray ら 2009。この記録では、De Jaegher・Di Paolo・Gallagher 2010 の紹介で読みました）。この実験の読み方には、参加者の判断そのものはやり取りに依っていない、という批判があります（Overgaard & Michael 2015 著者稿 p.32）。批判の著者自身も、身体の次元の見方の全体が誤りだとは示していない、と書いています（同 p.35 の注）。
 
-乳児期の間主観性（Trevarthen ら）は、生まれつきの動機の仕組みと新生児の模倣を足場の一つにしています（Trevarthen & Aitken 2001 の要旨）。新生児の模倣は、106 人を 1・3・6・9 週で追った研究で確かめられなかったと報告されています（Oostenbroek ら 2016 の要旨。本文は読めていません）。精神分析の側では、Winnicott の抱えること（holding）と、Bion の包み込むこと（container-contained）は別の概念で、よく取り違えられる、と書く論があります（Ogden 2004 の要旨）。
+乳児期の間主観性（Trevarthen ら）は、生まれつきの動機の仕組みと新生児の模倣を足場の一つにしています（Trevarthen & Aitken 2001 の要旨）。新生児の模倣は、106 人を 1・3・6・9 週で追った研究で確かめられなかったと報告されています（Oostenbroek ら 2016 の要旨。本文は読めていません）。精神分析の側の論（抱えることと包み込むこと）は、本文を読めませんでした。
 
 本文を読めた論は 12 で、一面の表に並べています。本文を読めなかった論は 2（精神分析の間主観性の理論、包み込むこと）で、表の下に分け、論の数に入れていません。精神分析の原典（Winnicott・Bion・Stolorow）は、本文を無料で読める版が見つかりませんでした。一人でいられる力と抱える環境の論は、Winnicott を読み解いた Taipale（2023）の本文だけを読めた論で、表に残しています。
 
@@ -102,7 +102,7 @@ status: reviewed
 
 **確かめ先と読んだ頁**：
 
-- Zahavi, D. (2011). Empathy and direct social perception: A phenomenological proposal. *Review of Philosophy and Psychology* 2(3), 541–558. DOI 10.1007/s13164-011-0070-3（Crossref と一致）。読んだ版：著者が所属したコペンハーゲン大学の研究所のサイトに置いた刊行前の原稿（「Forthcoming in Review of Philosophy and Psychology」の印字）の Wayback の記録（2011-11-28、https://web.archive.org/web/20111128174544/http://cfs.ku.dk:80/staff/zahavi-publications/Empathy_and_direct_social_perception.pdf/ ）。手元の PDF（34 頁）。誌面の頁が無いので、原稿の印字の頁で控えました。読んだ頁：著者稿 pp.1–5・8–9・13–14・17。
+- Zahavi, D. (2011). Empathy and direct social perception: A phenomenological proposal. *Review of Philosophy and Psychology* 2(3), 541–558. DOI 10.1007/s13164-011-0070-3（Crossref と一致）。読んだ版：著者が所属したコペンハーゲン大学の研究所のサイトに置いた刊行前の原稿（「Forthcoming in Review of Philosophy and Psychology」の印字）の Wayback の記録（2011-11-28、https://web.archive.org/web/20111128174544/http://cfs.ku.dk:80/staff/zahavi-publications/Empathy_and_direct_social_perception.pdf/ ）。手元の PDF（34 頁）。誌面の頁が無いので、原稿の印字の頁で控えました。読んだ頁：著者稿 pp.1–5・8–9・13–14・17・23。
 - Zahavi, D. (2001). Beyond empathy: Phenomenological approaches to intersubjectivity. *Journal of Consciousness Studies* 8(5–7), 151–167. DOI はありません（Crossref に無い。書誌は Zahavi 2011 の文献表と OpenAlex で確かめました）。著者の研究所のサイトの PDF の Wayback の記録（2024-02-29）は「見つからない」の頁でした。読めていません。
 
 **照合の状態**：Zahavi 2011 は本文照合済（著者の研究所のサイトの著者稿）。Zahavi 2001 は未照合。
@@ -422,7 +422,7 @@ status: reviewed
 
 - Winnicott, D. W. (1958). The capacity to be alone. *International Journal of Psycho-Analysis* 39, 416–420。DOI はありません（Crossref は全集の章 10.1093/med:psych/9780190271374.003.0060 を返します。有料）。PubMed 13610513 には要旨が無く、欠損駆動思考の調べ「つながりの安定を、愛着の研究に限らず広く追う」が PEP の要旨と、Wayback に残る昔の PEP の頁の冒頭を読んでいます。この記録では読み直していません。
 - Winnicott, D. W. (1960). The theory of the parent-infant relationship. *International Journal of Psycho-Analysis* 41, 585–595。DOI はありません。同じ調べが PEP の要旨を読んでいます。
-- Taipale, J. (2023). Winnicott and the (un)integrated self. *The International Journal of Psychoanalysis* 104(3), 467–489. DOI 10.1080/00207578.2023.2194364（Crossref と一致）。読んだ版：ユヴァスキュラ大学の機関リポジトリにある出版社の版（CC BY 4.0、https://jyx.jyu.fi/bitstreams/8a8cf294-5b24-41cd-b9d2-d048a76283dd/download ）。手元の PDF（25 頁）。頁は版の印字（1〜23）で控えました。読んだ頁：pp.1・6–7・9・13–14・17–20。
+- Taipale, J. (2023). Winnicott and the (un)integrated self. *The International Journal of Psychoanalysis* 104(3), 467–489. DOI 10.1080/00207578.2023.2194364（Crossref と一致）。読んだ版：ユヴァスキュラ大学の機関リポジトリにある出版社の版（CC BY 4.0、https://jyx.jyu.fi/bitstreams/8a8cf294-5b24-41cd-b9d2-d048a76283dd/download ）。手元の PDF（25 頁）。頁は版の印字（1〜23）で控えました。読んだ頁：pp.1–2・6–7・9・13–14・17–20。
 
 **照合の状態**：Taipale 2023 は本文照合済（機関リポジトリの出版社の版）。Winnicott 1958・1960 は要旨照合済（欠損駆動思考の調べで）。Winnicott の文は、Taipale の引用で読んだ所があります（二次経由）。この論は、提唱者の本文を読めず、読み解いた論の本文だけを読めた論です。
 

@@ -367,7 +367,7 @@ status: reviewed
 
 **要旨**：Baumeister と Leary は、人には、少なくとも最低限の数の、続く、良い、意味のある対人の関係を作り保つ、広く行き渡った駆動があるという仮説を、文献で評価します。この欲求を満たすには、少数の相手との頻繁で嫌でないやり取りと、互いの幸せへの気遣いの続く枠組みの、二つがそろうことが要る、と書きます。基本的な動機であるための九つの基準を立て、文献を見て、所属の仮説を確かめるに足る、と結論します。そのうえで、ほかの動機から派生していないという基準は、いちばん支えの弱いところだと書きます。
 
-**確かめ先と読んだ頁**：Baumeister, R. F., & Leary, M. R. (1995). The need to belong: Desire for interpersonal attachments as a fundamental human motivation. *Psychological Bulletin*, 117(3), 497–529. DOI 10.1037/0033-2909.117.3.497（Crossref と一致）。読んだ版：著者 Baumeister と Tice のフロリダ州立大学の頁に置かれた、出版社の誌面のスキャンの Wayback の記録（2006-09-10、https://web.archive.org/web/20060910033252/http://www.psy.fsu.edu/~baumeistertice/baumeisterleary1995.pdf ）。文字の層が無いので、頁は画像で確かめ、文字の検索は欠損駆動思考の調べが読んだ同じ誌面のスキャン（文字の層あり）で行い、要の頁（pp.497・521）を画像と突き合わせました。手元の PDF。読んだ頁：pp.497–500・512・520–521。
+**確かめ先と読んだ頁**：Baumeister, R. F., & Leary, M. R. (1995). The need to belong: Desire for interpersonal attachments as a fundamental human motivation. *Psychological Bulletin*, 117(3), 497–529. DOI 10.1037/0033-2909.117.3.497（Crossref と一致）。読んだ版：著者 Baumeister と Tice のフロリダ州立大学の頁に置かれた、出版社の誌面のスキャンの Wayback の記録（2006-09-10、https://web.archive.org/web/20060910033252/http://www.psy.fsu.edu/~baumeistertice/baumeisterleary1995.pdf ）。文字の層が無いので、頁は画像で確かめ、文字の検索は欠損駆動思考の調べが読んだ同じ誌面のスキャン（文字の層あり）で行い、要の頁（pp.497・521）を画像と突き合わせました。手元の PDF。読んだ頁：pp.497–500・512・515・520–521。
 
 **照合の状態**：本文照合済（著者の大学の頁の写しの Wayback の記録・元は出版社の誌面）。欠損駆動思考の調べでは、研究会の資料の写しだったので本文照合済にしていませんでした。
 
