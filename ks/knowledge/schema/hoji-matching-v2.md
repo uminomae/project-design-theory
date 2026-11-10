@@ -2,7 +2,7 @@
 
 ## 概要
 抱持 7段階の関係を、A（Container役）→B（Contained役）として表現した有向7×7の再校正版（観測指標付き）。
-本ファイルは `codex/archive/deepdive/REPORT-matching-recalibration.md` から抽出・再構成した。
+本ファイルは `cs/evidence/archive/kdt-codex/deepdive/REPORT-matching-recalibration.md` から抽出・再構成した。
 
 ## マッチング表 v2
 ### §D: マッチング表v2（再校正済み統合表）
@@ -36,7 +36,7 @@
 #### C.2 非対称性のパターン
 
 - Aが上位段階のとき、A→Bは「外的抱持の提供」として記述しやすい（L3-7, EV-PA-002）。
-- 逆向き（Bが下位→Aが上位）は、“Containment”ではなく、Layer 0（現場性/身体的入力）やβ要素へのアクセス提供として現れる可能性がある（`REPORT-抱持-structuring.md` §B.5）。`[WEAK_MAPPING][SCALE_JUMP]`
+- 逆向き（Bが下位→Aが上位）は、“Containment”ではなく、Layer 0（現場性/身体的入力）やβ要素へのアクセス提供として現れる可能性がある（`REPORT-withhold-structuring.md` §B.5）。`[WEAK_MAPPING][SCALE_JUMP]`
 
 #### C.3 「共倒れ」パターン
 
@@ -63,17 +63,17 @@
 
 #### 付録: 本レポートが参照した主要ファイル
 
-- `codex/archive/deepdive/REPORT-抱持-structuring.md`
-- `codex/archive/deepdive/REPORT-抱持-observability.md`
-- `codex/archive/deepdive/REPORT-抱持-uncertain-resolution.md`
-- `base/schema/core-definitions.md`
-- `creation-space/evidence/evidence-psychoanalysis.md`
-- `creation-space/evidence/evidence-developmental-psychology.md`
-- `creation-space/evidence/evidence-neuroscience.md`
-- `creation-space/evidence/evidence-business-org.md`
-- `creation-space/evidence/evidence-creativity.md`
-- `creation-space/evidence/evidence-life-sciences.md`
-- `creation-space/evidence/evidence-philosophy.md`
+- `cs/evidence/archive/kdt-codex/deepdive/REPORT-withhold-structuring.md`
+- `cs/evidence/archive/kdt-codex/deepdive/REPORT-withhold-observability.md`
+- `cs/evidence/archive/kdt-codex/deepdive/REPORT-withhold-uncertain-resolution.md`
+- `ks/knowledge/schema/core-definitions.md`
+- 創造とはの今までの調べ `evidence-psychoanalysis.md`（この repo には無い）
+- 創造とはの今までの調べ `evidence-developmental-psychology.md`（この repo には無い）
+- 創造とはの今までの調べ `evidence-neuroscience.md`（この repo には無い）
+- `cs/evidence/archive/kdt-legacy/evidence-business-org.md`
+- `cs/evidence/archive/kdt-legacy/evidence-creativity.md`
+- 創造とはの今までの調べ `evidence-life-sciences.md`（この repo には無い）
+- 創造とはの今までの調べ `evidence-philosophy.md`（この repo には無い）
 
 ## 出典
-- 抽出元: `codex/archive/deepdive/REPORT-matching-recalibration.md`（TASK #10f, 2026-02-07）
+- 抽出元: `cs/evidence/archive/kdt-codex/deepdive/REPORT-matching-recalibration.md`（TASK #10f, 2026-02-07）
