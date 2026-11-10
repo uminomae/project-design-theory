@@ -48,7 +48,7 @@ Phase 2:
 ## 正本参照
 
 - D1-D4 正本:
-  `~/dev/kesson-driven-thinking/base/schema/core-definitions.md`
+  `kesson-driven-thinking/base/schema/core-definitions.md`
 - `kesson-driven-thinking` 側の親 Issue:
   `#280`
 

@@ -75,10 +75,10 @@
 
 現時点で `awareness-space` が正本参照するもの:
 
-- `~/dev/kesson-driven-thinking/base/schema/core-definitions.md`
-- `~/dev/kesson-driven-thinking/base/schema/five-stages.md`
-- `~/dev/kesson-driven-thinking/base/schema/four-layers.md`
-- `~/dev/kesson-driven-thinking/base/schema/four-modules.md`
+- `kesson-driven-thinking/base/schema/core-definitions.md`
+- `kesson-driven-thinking/base/schema/five-stages.md`
+- `kesson-driven-thinking/base/schema/four-layers.md`
+- `kesson-driven-thinking/base/schema/four-modules.md`
 
 ### 2.3 素材インベントリ
 

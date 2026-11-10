@@ -60,9 +60,9 @@
 
 対象:
 
-- `~/dev/kesson-driven-thinking/base/text/domains/four-layers/`
-- `~/dev/kesson-driven-thinking/base/schema/four-layers.md`
-- `~/dev/kesson-driven-thinking/base/schema/four-modules.md`
+- `kesson-driven-thinking/base/text/domains/four-layers/`
+- `kesson-driven-thinking/base/schema/four-layers.md`
+- `kesson-driven-thinking/base/schema/four-modules.md`
 
 性質:
 

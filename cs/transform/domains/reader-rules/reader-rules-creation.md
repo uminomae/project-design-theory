@@ -405,7 +405,7 @@ Jekyll/HTML/PDF各出力への変換処理（front matter付与、data属性マ�
 | ファイル | 役割 |
 |--------|------|
 | `knowledge/`・`evidence/` | ソース。固定リストではない |
-| `knowledge/voice/pjdhiro-statements-db.md`（未作成） | pjdhiro発言集。理論的判断の最上位参照先 |
+| `knowledge/voice/` の pjdhiro 発言集（未作成） | pjdhiro発言集。理論的判断の最上位参照先 |
 | `transform/README.md` | 変換層の全体地図・ルール索引 |
 | `transform/DISPATCH.md` | 出力物→ルール対応表 |
 | 各audience版 reader-rules | 本ルールを継承し、固有の設計を上書きする |

@@ -1,7 +1,7 @@
 # PLAN — TASK #5「信頼の構造モデル探索」（ISS-41拡張）
 
 作成日: 2026-02-07  
-参照した正本: `docs/README.md`, `docs/CURRENT.md`, `docs/quality-management.md`, `base/schema/core-definitions.md`, `base/schema/auxiliary/bspl-model.md`, `base/voice/pjdhiro-statements-db.md`（S25-S30周辺＋信頼系断片）, `base/evidence/evidence-business-org.md`, `base/evidence/evidence-life-sciences.md`, `base/evidence/evidence-psychoanalysis.md`, `skills/codex-agent/SKILL.md`, `skills/codex-agent/references/track-record.md`
+参照した正本: `docs/README.md`, `docs/CURRENT.md`, `docs/quality-management.md`, `base/schema/core-definitions.md`, `base/schema/auxiliary/bspl-model.md`, pjdhiro の発言集（非公開）（S25-S30周辺＋信頼系断片）, `base/evidence/evidence-business-org.md`, `base/evidence/evidence-life-sciences.md`, `base/evidence/evidence-psychoanalysis.md`, `skills/codex-agent/SKILL.md`, `skills/codex-agent/references/track-record.md`
 
 ---
 
@@ -80,7 +80,7 @@ graph TD
 
 - D4（生存-信頼評価）: `base/schema/core-definitions.md`
 - 信頼レンズ（ISS-41の発火点）: `base/schema/auxiliary/bspl-model.md` §4.4
-- 片側性・最小構成の動機: `base/voice/pjdhiro-statements-db.md` S23
+- 片側性・最小構成の動機: pjdhiro の発言集（非公開） S23
 - 「短期利益 vs 長期信頼」: S22（BSPLの売上＝存在理由）
 - Container/安全基地: `base/evidence/evidence-psychoanalysis.md`（EV-PA-002等）
 - 組織スケールのContainer/心理的安全: `base/evidence/evidence-business-org.md`（HRO、組織抱持条件）
@@ -95,7 +95,7 @@ graph TD
 ### 3.1 Type A（機械的検証・抽出）— Codex適性: 高
 
 - **A1: 信頼・間主観性・BSPL関連の「全出現箇所」抽出**
-  - 対象: `base/schema/auxiliary/bspl-model.md`, `base/schema/core-definitions.md`, `base/voice/pjdhiro-statements-db.md`, `base/evidence/*`（特にPA/LS/BZ-ORG）, `docs/quality-management.md`
+  - 対象: `base/schema/auxiliary/bspl-model.md`, `base/schema/core-definitions.md`, pjdhiro の発言集（非公開）, `base/evidence/*`（特にPA/LS/BZ-ORG）, `docs/quality-management.md`
   - 出力: “信頼/安心/安全/愛着/Container/安全基地/内的作業モデル/贈与/のれん/純資産/PL-O/BS純資産” の **索引表**（ファイル＋見出し名＋短い要約＋[P/M/S]）
   - 目的: T1-T3/T4-T5等の未所在の検出（現状、この計画作成時点ではレポ内に明示定義が見つかっていない）
 

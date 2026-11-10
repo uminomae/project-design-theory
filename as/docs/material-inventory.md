@@ -15,18 +15,18 @@
 
 | 種別 | パス | 扱い |
 |---|---|---|
-| D1-D4 | `~/dev/kesson-driven-thinking/base/schema/core-definitions.md` | **正本参照**。`awareness-space` に正本コピーは持たない |
+| D1-D4 | `kesson-driven-thinking/base/schema/core-definitions.md` | **正本参照**。`awareness-space` に正本コピーは持たない |
 
 ### 1-2. 主要スキーマ
 
 | ファイル | パス | 初期扱い |
 |---|---|---|
-| 5段階モデル | `~/dev/kesson-driven-thinking/base/schema/five-stages.md` | 素材候補。参照優先 |
-| 4層モデル | `~/dev/kesson-driven-thinking/base/schema/four-layers.md` | 素材候補 |
-| 4モジュール | `~/dev/kesson-driven-thinking/base/schema/four-modules.md` | 素材候補 |
-| 用語集 | `~/dev/kesson-driven-thinking/base/schema/glossary.md` | 素材候補 |
-| evidence metadata | `~/dev/kesson-driven-thinking/base/schema/evidence-metadata.md` | evidence 取り込み時の参照素材 |
-| container mapping | `~/dev/kesson-driven-thinking/base/schema/container-mapping.md` | 周辺素材 |
+| 5段階モデル | `kesson-driven-thinking/base/schema/five-stages.md` | 素材候補。参照優先 |
+| 4層モデル | `kesson-driven-thinking/base/schema/four-layers.md` | 素材候補 |
+| 4モジュール | `kesson-driven-thinking/base/schema/four-modules.md` | 素材候補 |
+| 用語集 | `kesson-driven-thinking/base/schema/glossary.md` | 素材候補 |
+| evidence metadata | `kesson-driven-thinking/base/schema/evidence-metadata.md` | evidence 取り込み時の参照素材 |
+| container mapping | `kesson-driven-thinking/base/schema/container-mapping.md` | 周辺素材 |
 
 ## 2. 初期探索の主要素材
 
@@ -34,30 +34,30 @@
 
 | ファイル | パス |
 |---|---|
-| part-1 introduction | `~/dev/kesson-driven-thinking/base/text/domains/four-layers/part-1-introduction.md` |
-| part-2 interoception | `~/dev/kesson-driven-thinking/base/text/domains/four-layers/part-2-interoception.md` |
-| part-3 prediction error | `~/dev/kesson-driven-thinking/base/text/domains/four-layers/part-3-prediction-error.md` |
-| part-4 fo evaluation | `~/dev/kesson-driven-thinking/base/text/domains/four-layers/part-4-survival-trust-evaluation.md` |
+| part-1 introduction | `kesson-driven-thinking/base/text/domains/four-layers/part-1-introduction.md` |
+| part-2 interoception | `kesson-driven-thinking/base/text/domains/four-layers/part-2-interoception.md` |
+| part-3 prediction error | `kesson-driven-thinking/base/text/domains/four-layers/part-3-prediction-error.md` |
+| part-4 fo evaluation | `kesson-driven-thinking/base/text/domains/four-layers/part-4-survival-trust-evaluation.md` |
 
 ### 2-2. concept notes
 
 | ファイル | パス |
 |---|---|
-| CN-001 internalized relationship | `~/dev/kesson-driven-thinking/base/concepts/CN-001_internalized-relationship.md` |
-| CN-002 f-axis exposure | `~/dev/kesson-driven-thinking/base/concepts/CN-002_f-axis-exposure.md` |
-| CN-005 trust hypothesis inventory | `~/dev/kesson-driven-thinking/base/concepts/CN-005_trust-hypothesis-inventory.md` |
-| CN-006 trust analysis axes | `~/dev/kesson-driven-thinking/base/concepts/CN-006_trust-analysis-axes.md` |
-| CN-007 iss42 measurement design principles | `~/dev/kesson-driven-thinking/base/concepts/CN-007_iss42-measurement-design-principles.md` |
-| concept index | `~/dev/kesson-driven-thinking/base/concepts/index.md` |
+| CN-001 internalized relationship | `kesson-driven-thinking/base/concepts/CN-001_internalized-relationship.md` |
+| CN-002 f-axis exposure | `kesson-driven-thinking/base/concepts/CN-002_f-axis-exposure.md` |
+| CN-005 trust hypothesis inventory | `kesson-driven-thinking/base/concepts/CN-005_trust-hypothesis-inventory.md` |
+| CN-006 trust analysis axes | `kesson-driven-thinking/base/concepts/CN-006_trust-analysis-axes.md` |
+| CN-007 iss42 measurement design principles | `kesson-driven-thinking/base/concepts/CN-007_iss42-measurement-design-principles.md` |
+| concept index | `kesson-driven-thinking/base/concepts/index.md` |
 
 ### 2-3. creation-space-refs
 
 | ファイル | パス | 備考 |
 |---|---|---|
-| README | `~/dev/kesson-driven-thinking/base/evidence/creation-space-refs/README.md` | 現状説明 |
-| concept-index | `~/dev/kesson-driven-thinking/base/evidence/creation-space-refs/concept-index.md` | 参照索引 |
-| memo-level2-similarities | `~/dev/kesson-driven-thinking/base/evidence/creation-space-refs/memo-level2-similarities.md` | 抽出メモ |
-| plan-level2-similarities | `~/dev/kesson-driven-thinking/base/evidence/creation-space-refs/plan-level2-similarities.md` | 構造案 |
+| README | `kesson-driven-thinking/base/evidence/creation-space-refs/README.md` | 現状説明 |
+| concept-index | `kesson-driven-thinking/base/evidence/creation-space-refs/concept-index.md` | 参照索引 |
+| memo-level2-similarities | `kesson-driven-thinking/base/evidence/creation-space-refs/memo-level2-similarities.md` | 抽出メモ |
+| plan-level2-similarities | `kesson-driven-thinking/base/evidence/creation-space-refs/plan-level2-similarities.md` | 構造案 |
 
 補足:
 - この束は `kesson-driven-thinking#278` で再構築予定
@@ -67,9 +67,9 @@
 
 | ファイル | パス | 備考 |
 |---|---|---|
-| m2-exploration | `~/dev/kesson-driven-thinking/skills/m2-exploration/SKILL.md` | 探索手順素材 |
-| m2-evidence | `~/dev/kesson-driven-thinking/skills/m2-evidence/SKILL.md` | evidence 作業素材 |
-| m2-evidence design | `~/dev/kesson-driven-thinking/skills/m2-evidence/DESIGN.md` | 補助設計文書 |
+| m2-exploration | `kesson-driven-thinking/skills/m2-exploration/SKILL.md` | 探索手順素材 |
+| m2-evidence | `kesson-driven-thinking/skills/m2-evidence/SKILL.md` | evidence 作業素材 |
+| m2-evidence design | `kesson-driven-thinking/skills/m2-evidence/DESIGN.md` | 補助設計文書 |
 ## 3. 次の作業候補
 
 1. `awareness-space#2` で 生存-信頼軸の起点メモを作る

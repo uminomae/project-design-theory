@@ -111,7 +111,7 @@
 3. `../kesson-driven-thinking/base/schema/core-definitions.md`
 4. `../kesson-driven-thinking/base/expression/core/E04.md`
 5. `../kesson-driven-thinking/base/concepts/CN-007_iss42-measurement-design-principles.md`
-6. `../kesson-driven-thinking/base/voice/pjdhiro-statements-db.md` の S10
+6. pjdhiro の発言集（非公開の repo kesson-driven-thinking）の S10
 7. `knowledge/topics/four-layers/ja/report.md`
 8. `knowledge/topics/survival-trust-axis/ja/report.md`
 
