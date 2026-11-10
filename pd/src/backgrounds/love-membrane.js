@@ -356,7 +356,8 @@ function start() {
         readScroll();
         if (reduce) { scroll = scrollTarget; still(); }
     }, { passive: true });
-    if (window.matchMedia && window.matchMedia('(pointer: fine)').matches) {
+    // 調整のページでは、マウスでカメラを動かさない（ドラッグは時刻の送り戻しに使う）
+    if (!q.has('studio') && window.matchMedia && window.matchMedia('(pointer: fine)').matches) {
         window.addEventListener('pointermove', (e) => {
             pxTarget = (e.clientX / window.innerWidth) * 2 - 1;
         }, { passive: true });
