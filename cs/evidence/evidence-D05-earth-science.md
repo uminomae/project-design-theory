@@ -45,9 +45,9 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 本文を読めなかった論（3）は、表に並べず、論の数に入れていません。読めた範囲と読めなかった理由は、論ごとの節の最後の「本文を読めなかった論」に書いています。
 
-- 8. 風化と土壌形成（Goldich 1938・Jenny 1941）：未照合（Goldich 1938・Chadwick & Chorover 2001 は有料、Jenny 1941 は書籍）
-- 9. 地球磁場ダイナモと逆転（Glatzmaier & Roberts 1995）：未照合（Nature・Elsevier・APS とも有料）
-- 10. 惑星分化（Kleine ら 2002・Elkins-Tanton 2012）：要旨照合済（Elkins-Tanton 2012）。Kleine ら 2002 は未照合（有料）
+- 8\. 風化と土壌形成（Goldich 1938・Jenny 1941）：未照合（Goldich 1938・Chadwick & Chorover 2001 は有料、Jenny 1941 は書籍）
+- 9\. 地球磁場ダイナモと逆転（Glatzmaier & Roberts 1995）：未照合（Nature・Elsevier・APS とも有料）
+- 10\. 惑星分化（Kleine ら 2002・Elkins-Tanton 2012）：要旨照合済（Elkins-Tanton 2012）。Kleine ら 2002 は未照合（有料）
 
 10 の論のうち本文照合済は 7 です。どれも、原論文のほかに、同じ論の中の後の論文や総説（Nance 2022・Scholz 1998・Moran ら 2011・Catuneanu ら 2009・Erwin 2001・Hull 2015）で本文に当たっています。プレートテクトニクスの Wilson（1966）、大量絶滅の Raup & Sepkoski（1982）と Alvarez ら（1980）、火山の Cashman & Sparks（2013）は、原論文そのものは未照合か要旨照合済です。風化・磁場・惑星分化の三つは、本文に当たれる経路が見つかりませんでした。
 
