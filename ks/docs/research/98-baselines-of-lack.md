@@ -6,7 +6,7 @@ Issue #98（親 #97 の一つ目）の調べの記録。2026-11-10。
 
 - 問い：欠けは、何からのずれとして感じられるのか。基準は一つでなく、多種類ありうる。あわせて、好奇心そのものが何に駆動されているかも見る。
 - 候補七つ（予想・つながりの安定・体の恒常性・あるべき姿・美や善・欠けそのものを愛の側に置く系・好奇心の駆動）ごとに、文献を一次情報で当たり、「近い」と「違う」を両方書いた。どれが近いかは決めていない（決めるのは pjdhiro）。
-- 当たった文献は 28 件（二つの候補で使ったものは一つと数えた）。本文照合済 17（うち、兄弟の探究の照合を流用したもの 7）、要旨照合済 6、二次資料のみ 2、未照合 3。照合の状態は一件ずつ下に書いた。
+- 当たった文献は 28 件（二つの候補で使ったものは一つと数えた）。本文照合済 18（うち、兄弟の探究の照合を流用したもの 6）、要旨照合済 5、二次資料のみ 2、未照合 3。照合の状態は一件ずつ下に書いた。（2026-11-10 の書き足し：pjdhiro が保存した Barrett & Simmons 2015・Fredrickson 2001 を読み、数を直した。#101）
 - 調べる中で、候補の中に、もう一段細かい基準が見つかった：目指すもの（投企）に照らして初めて欠けになる（サルトル）、処理の流れやすさの見込み（Reber ら）、知識の参照点（Loewenstein）、動く設定点（Sterling のアロスタシス）。ほかに、考えどうしの一貫性（Festinger）を候補として足したが、原典は読めていない。
 - 自動で取れなかった原典は、#98 のコメントに保存先の表を置いた。
 
@@ -29,13 +29,13 @@ Issue #98（親 #97 の一つ目）の調べの記録。2026-11-10。
 
 | 基準の候補 | 当たった文献 | 照合の状態 |
 |---|---|---|
-| 予想 | Seth 2013・Barrett & Simmons 2015・Friston 2010 | 本文照合済 3（うち流用 2） |
+| 予想 | Seth 2013・Barrett & Simmons 2015・Friston 2010 | 本文照合済 3（うち流用 1） |
 | つながりの安定 | Sroufe & Waters 1977・Ainsworth & Bowlby 1991・Mikulincer & Shaver 2020・Coan & Sbarra 2015・Winnicott 1960 | 本文照合済 4（うち流用 3）・要旨照合済 1 |
 | 体の恒常性 | Cannon 1929・Sterling 2012・Stephan ら 2016・Damasio & Carvalho 2013 | 本文照合済 1・要旨照合済 2・未照合 1 |
 | あるべき姿 | Higgins 1987・Carver & Scheier 1990・Festinger 1957 | 本文照合済 1・未照合 2 |
 | 美や善 | Haidt 2001・Reber ら 2004・Van de Cruys & Wagemans 2011・スピノザ『エチカ』・プラトン『饗宴』のディオティマ | 本文照合済 5（うち流用 1） |
 | 欠けそのものを愛の側に置く系 | プラトン『饗宴』のソクラテス・初転法輪経の渇愛・サルトル『存在と無』・ラカン | 本文照合済 2（流用）・二次資料のみ 2 |
-| 好奇心の駆動 | Loewenstein 1994・Kidd & Hayden 2015・Sroufe & Waters 1977（再掲）・Mikulincer & Shaver 2020（再掲）・Mikulincer 1997・Elliot & Reis 2003・Fredrickson 2001 | 本文照合済 2（再掲を除く）・要旨照合済 3 |
+| 好奇心の駆動 | Loewenstein 1994・Kidd & Hayden 2015・Sroufe & Waters 1977（再掲）・Mikulincer & Shaver 2020（再掲）・Mikulincer 1997・Elliot & Reis 2003・Fredrickson 2001 | 本文照合済 3（再掲を除く）・要旨照合済 2 |
 
 数は文献の数で、基準の確かさの数ではない。
 
@@ -48,12 +48,13 @@ Issue #98（親 #97 の一つ目）の調べの記録。2026-11-10。
 | 文献 | 照合の状態・確かめ先 | 鍵の文（頁） |
 |---|---|---|
 | Seth, A. K. (2013). Interoceptive inference, emotion, and the embodied self. *Trends in Cognitive Sciences* 17(11), 565–573. DOI 10.1016/j.tics.2013.09.007 | 本文照合済（#90 の照合を流用。サセックス大学の機関リポジトリの出版社の版。鍵の文は手元の写しで確かめ直した） | "'interoceptive inference' conceives of subjective feeling states (emotions) as arising from actively-inferred generative (predictive) models of the causes of interoceptive afferents."（p.565 要旨） |
-| Barrett, L. F., & Simmons, W. K. (2015). Interoceptive predictions in the brain. *Nature Reviews Neuroscience* 16, 419–429. DOI 10.1038/nrn3950 | 本文照合済（#90 の照合を流用。このセッションでは読み直していない。PMC4731102 は自動では取れなかった） | — |
+| Barrett, L. F., & Simmons, W. K. (2015). Interoceptive predictions in the brain. *Nature Reviews Neuroscience* 16(7), 419–429. DOI 10.1038/nrn3950 | 本文照合済（PubMed Central の著者稿〔査読後・NIHMS748633〕：https://pmc.ncbi.nlm.nih.gov/articles/PMC4731102/ 。自動では取れず、pjdhiro が 2026-11-10 にブラウザで保存したものを読んだ。誌面の頁番号が無いので、節の名で控えた。巻号は Crossref で照らした） | 要旨："interoceptive experience may largely reflect limbic predictions about the expected state of the body that are constrained by ascending visceral sensations."。用語集の Homeostasis："A set of dynamic functions (not a single set point)"。本文："future-oriented visceromotor predictions to drive the body towards anticipated homeostasis" |
 | Friston, K. (2010). The free-energy principle: a unified brain theory? *Nature Reviews Neuroscience* 11(2), 127–138. DOI 10.1038/nrn2787 | 本文照合済（著者の所属先 UCL の著者の頁の PDF：https://www.fil.ion.ucl.ac.uk/~karl/NRN.pdf ） | 生き物は "resist a natural tendency to disorder"、"biological agents must avoid surprises to ensure that their states remain within physiological bounds"（p.127） |
 
 - **近い**：欠けを「何かとのずれ」として書く点で、問いの形にいちばん素直に重なる。ずれの多くが気づかれないまま吸収される、という見方（Love駆動開発の読み物の「信号は、体の内側から湧く」の章）とも合う。Friston は、驚き（予測誤差）を避けることを、体の状態を生きられる範囲に保つことと結んでいて、下の「体の恒常性」と一続きに書いている。
 - **違う**：基準になる「見込み」が何かは、これらの論では中身を問わない（形式）。何を見込んでいるか（つながりか、体の状態か、あるべき姿か）は、別の候補が埋める。また、予測誤差は外から測る量で、欠けは本人が内側から感じる経験で、書き方の水準が違う（Love駆動開発の読み物で既に書いたこと）。ks の前の調べでは、予測処理の主流は「意識に上るのは見込みの側で、誤差そのものを意識するとは言わない」と読んでいた（旧調査・#101 で照合し直す）。
 - **欠けの基準として読むと**：これらの論の見込みは、脳の微細な瞬間の働き（神経現象学で扱う時間）の話。期待・自己像・好奇心のような、認知できる大きな時間の見込みとは時間の尺度が違うので、同じ器として並べない（pjdhiro 2026-11-10）。
+- **書き足し（2026-11-10・Barrett & Simmons 2015 の本文を読んで。#101）**：近い：体の感じは、上がってくる信号よりも、体の状態の見込みの側を多く映している、と書く。基準を「体がこうあるはず」という見込みに置く読みに、文として当たる。恒常性を一つの設定点でなく、動く働きの組として置き（用語集）、見込みが体を「見込んだ恒常性」へ向けて動かす、と書く。下の「体の恒常性」の動く設定点（Sterling）と一続きになる。違う：論説（Opinion）で、モデルの提案として書いていて、確かめられた事実としては書いていない。見込みは体の状態についての、脳の微細な瞬間の働きの話で、認知できる大きな時間の見込みではない（stance 1-4）。
 
 ## 2. つながりの安定 — 安心してつながっている感じ
 
@@ -143,11 +144,12 @@ Issue #98（親 #97 の一つ目）の調べの記録。2026-11-10。
 | Mikulincer & Shaver 2020（2 の再掲） | 本文照合済 | 安心は、愛着でない営み（"exploration, play, learning"）に、心配や防衛に力を割かずに打ち込めるようにする（第 3 節） |
 | Mikulincer, M. (1997). Adult attachment style and information processing: individual differences in curiosity and cognitive closure. *Journal of Personality and Social Psychology* 72(5), 1217–1230. DOI 10.1037/0022-3514.72.5.1217 | 要旨照合済（PubMed 9150591） | 安定型と不安型の人は、回避型の人より、自分を好奇心が強いと言い、好奇心に好意的だった。安定型の人は、早く結論を閉じることを好まず、新しい情報に頼りやすかった |
 | Elliot, A. J., & Reis, H. T. (2003). Attachment and exploration in adulthood. *Journal of Personality and Social Psychology* 85, 317–331. DOI 10.1037/0022-3514.85.2.317 | 要旨照合済（PubMed 12916573） | 愛着の理論の探索の系を、White（1959）の effectance motivation と達成動機に結ぶ。大人の愛着と達成の動機・目標の結びつきを 4 研究で示す |
-| Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: the broaden-and-build theory of positive emotions. *American Psychologist* 56, 218–226. DOI 10.1037/0003-066X.56.3.218 | 要旨照合済（PubMed 11315248。PMC3122271 は自動では取れなかった） | 正の情動は、その場の考えと行動の幅を広げ、それが長く続く資源を築く |
+| Fredrickson, B. L. (2001). The role of positive emotions in positive psychology: the broaden-and-build theory of positive emotions. *American Psychologist* 56(3), 218–226. DOI 10.1037/0003-066X.56.3.218 | 本文照合済（PubMed Central の著者稿〔査読後・NIHMS305177〕：https://pmc.ncbi.nlm.nih.gov/articles/PMC3122271/ 。自動では取れず、pjdhiro が 2026-11-10 にブラウザで保存したものを読んだ。誌面の頁番号が無いので、節の名で控えた。巻号は Crossref で照らした） | 正の情動は "broaden people's momentary thought-action repertoires, which in turn serves to build their enduring personal resources"（要旨）。節 The Broaden-and-Build Theory of Positive Emotions："Interest … broadens by creating the urge to explore, take in new information and experiences, and expand the self in the process"／"Love, conceptualized as an amalgam of distinct positive emotions (e.g., joy, interest, contentment) experienced within contexts of safe, close relationships (Izard, 1977), broadens by creating recurring cycles of urges to play with, explore, and savor experiences with loved ones." |
 
 - **近い（欠けから）**：Loewenstein は、好奇心を、知識の参照点と今の知識との隙間から生まれる「欠けている感じ」と書く。好奇心の基準を「参照点」と呼んでいて、この問いの形（何からのずれか）にそのまま当たる。
 - **近い（安心から）**：Sroufe & Waters、Mikulincer & Shaver、Mikulincer 1997 は、安心が探索を可能にする、と書く。pjdhiro の「知的好奇心というものが、すでにLoveで駆動されたものかもしれない」は、この流れに重なる。Mikulincer & Shaver は、その安心を "feel loved, appreciated, and cared for" と結んでいて（第 3 節）、愛されている感じが探索の下地になる、という読みは文献の中にある。
-- **違う**：Loewenstein の好奇心は、隙間があると分かっていることが前提で、「ゼロのはずのところに湧く違和感」とは違う（ks の前の調べでも同じ指摘）。参照点が上がる理由（なぜ知りたくなるのか）は、この論では問わない。愛着の流れは、安心が探索を「許す」と書くが、探索そのものを駆動するのは別の系（探索の系・effectance）として置く（Elliot & Reis の要旨）。安心と好奇心を同じもの（Love）から出たものとして書く文献は、当たった範囲には無い。Kidd & Hayden は、好奇心の定義はまだ定まっていないと書いている。
+- **違う**：Loewenstein の好奇心は、隙間があると分かっていることが前提で、「ゼロのはずのところに湧く違和感」とは違う（ks の前の調べでも同じ指摘）。参照点が上がる理由（なぜ知りたくなるのか）は、この論では問わない。愛着の流れは、安心が探索を「許す」と書くが、探索そのものを駆動するのは別の系（探索の系・effectance）として置く（Elliot & Reis の要旨）。安心と好奇心を同じもの（Love）から出たものとして書く文献は、当たった範囲には無い（Fredrickson 2001 は、love が探索の衝動を生むと書くが、interest は love と並ぶ別の情動として置く。2026-11-10 の書き足し）。Kidd & Hayden は、好奇心の定義はまだ定まっていないと書いている。
+- **書き足し（2026-11-10・Fredrickson 2001 の本文を読んで。#101）**：近い：好奇心に当たる interest を、欠けの感じでなく正の情動として置き、探索したくなる衝動（"the urge to explore"）を生むものと書く。さらに love を、安全で近しい関係の中で経験される正の情動の合わさりと置き、それが探索の衝動を繰り返し生む、と書く。当たった文献の中で、愛と探索を同じ文で結んだのはこれだけで、pjdhiro の「知的好奇心というものが、すでにLoveで駆動されたものかもしれない」に、語の上でいちばん近い。違う：ここの love は、名指せる相手との関係の中の情動の合わさりで、pjdhiro の「Love と呼びたい場」より狭い。interest と love は並ぶ別の情動として書かれ、interest が love から出るとは書かない。探索は正の情動が考えと行動の幅を広げる働きの一例で、探索の駆動の起点を問う論ではない。
 - **好奇心の基準として読むと**：二つの流れは、基準を別の所に置く。欠けの流れは「知識の参照点」、安心の流れは「つながりの安定」。pjdhiro の見立ては、二つを分けずに、どちらも Love と呼びたいものから出ている、と見るものかもしれない（Claude の読み。決めない）。
 
 ---
@@ -172,6 +174,8 @@ Issue #98（親 #97 の一つ目）の調べの記録。2026-11-10。
 ## 取れなかった原典
 
 #98 のコメントに、開く場所と保存名の表を置いた（2026-11-10）。そのあと pjdhiro の判断で、有料のもの（Carver & Scheier 1990・Mikulincer 1997・Elliot & Reis 2003・Damasio & Carvalho 2013・Sterling 2012・Winnicott 1960 の全集）は参考にしないことにし、保存を頼むのは、無料なのに自動では取れなかった 4 件（Cannon 1929・Barrett & Simmons 2015・Fredrickson 2001・Festinger 1957）だけにした。
+
+2026-11-10（#101 のセッション）：本体の `.cache/raw/issue98/` に保存された Barrett & Simmons 2015・Fredrickson 2001 を読み、上の 1 と 7 に「近い／違う」を書き足し、照合の状態を本文照合済にした。Cannon 1929・Festinger 1957 は、まだ保存されていない（保存されたら、3 と 4 に書き足す）。
 
 ## pjdhiro の判断（2026-11-10・結果のページへのコメント・原文）
 
