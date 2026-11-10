@@ -19,7 +19,7 @@ if payload.get("hook_event_name") != "PostToolUse":
 
 tool_input = payload.get("tool_input") or {}
 file_path = tool_input.get("file_path", "") or tool_input.get("path", "")
-if not file_path or not file_path.endswith(".md"):
+if not file_path:
     raise SystemExit(0)
 
 try:
@@ -52,6 +52,11 @@ if len(parts) > 1 and parts[0] in ("pd", "cs", "ks", "as") and not (parts[0] == 
                 print(r.stdout.strip())
         except Exception as e:
             print(f"wiki-stale-check skipped: {e}", file=sys.stderr)
+
+# ここから下（compiled 版を作り直す）は Markdown だけ。上の知らせは、サイトのトップの HTML のような
+# .md でない正本にも出す（2026-11-10）。
+if not file_path.endswith(".md"):
+    raise SystemExit(0)
 
 targets = {
     ("pd", "content"): "pd",
