@@ -19,6 +19,8 @@ import {
     normalizeProgressTaxonomy,
     resolveLocalizedSources,
     resolveDomainReportSources,
+    isDomainReportPendingEnglish,
+    buildJapaneseDomainUrl,
 } from './data.js';
 import {
     createReportsHistoryController,
@@ -131,6 +133,7 @@ const renderer = createReportsRenderer({
         assetBaseUrl: state.config.assetBaseUrl,
         assetMdBaseUrl: state.config.assetMdBaseUrl,
     }),
+    isReportPendingEnglish: (report) => isDomainReportPendingEnglish(report, { lang: state.config.lang }),
 });
 
 const phase8Renderer = createPhase8Renderer({
@@ -421,7 +424,8 @@ openDomainModalByIdImpl = function openDomainModalById(
         assetBaseUrl: state.config.assetBaseUrl,
         assetMdBaseUrl: state.config.assetMdBaseUrl,
     });
-    if (!sources.length) return false;
+    const pendingEnglish = !sources.length && isDomainReportPendingEnglish(report, { lang: state.config.lang });
+    if (!sources.length && !pendingEnglish) return false;
 
     let resolvedHistoryMode = historyMode === DOMAIN_HISTORY_MODE_INITIAL
         ? DOMAIN_HISTORY_MODE_INITIAL
@@ -451,15 +455,22 @@ openDomainModalByIdImpl = function openDomainModalById(
     }
 
     historyController.clearPendingDomainSync();
-    modalController.openMarkdownModal({
-        title: getDomainReportTitle(report, state.config.lang),
-        sources,
-        modalContext: {
-            type: 'domain',
-            domainId: normalizedId,
-            historyMode: resolvedHistoryMode,
-        },
-    });
+    const modalContext = {
+        type: 'domain',
+        domainId: normalizedId,
+        historyMode: resolvedHistoryMode,
+    };
+    const title = getDomainReportTitle(report, state.config.lang);
+    if (pendingEnglish) {
+        // 英語の記録がまだ無い分野は、英語で工事中と書き、日本語版へのリンクを添える（#73）。
+        modalController.openNoticeModal({
+            title,
+            html: renderer.buildPendingEnglishHtml(buildJapaneseDomainUrl(normalizedId)),
+            modalContext,
+        });
+        return true;
+    }
+    modalController.openMarkdownModal({ title, sources, modalContext });
     return true;
 };
 
@@ -508,12 +519,18 @@ function openHoverGridModal({ historyMode = 'push', syncUrl = true } = {}) {
                     contentArea.innerHTML = '<div class="hover-grid-loading"><span class="spinner-border spinner-border-sm" aria-hidden="true"></span> Loading...</div>';
 
                     // Use openDomainModalById for click-through (tap on expanded cell)
-                    cellEl.addEventListener('click', () => {
-                        openDomainModalByIdImpl(domainId, {
-                            historyMode: 'push',
-                            syncUrl: 'push',
+                    // 言語の切り替えで中身を捨てて読み直すことがあるので、クリックは一度だけ結ぶ。
+                    if (!cellEl.dataset.clickBound) {
+                        cellEl.dataset.clickBound = '1';
+                        cellEl.addEventListener('click', (event) => {
+                            // 工事中の「日本語版を読む」は、窓を開かずにそのまま移る。
+                            if (event.target instanceof Element && event.target.closest('a')) return;
+                            openDomainModalByIdImpl(domainId, {
+                                historyMode: 'push',
+                                syncUrl: 'push',
+                            });
                         });
-                    }, { once: false });
+                    }
 
                     // Fetch markdown content inline (reuse modal fetch pattern)
                     try {
@@ -525,9 +542,12 @@ function openHoverGridModal({ historyMode = 'push', syncUrl = true } = {}) {
                             assetBaseUrl: state.config.assetBaseUrl,
                             assetMdBaseUrl: state.config.assetMdBaseUrl,
                         });
-                        // 英語の画面では、英語の記録が無いので開くものが無い（#73・J10）。警告を出さずに空にする。
+                        // 英語の記録がまだ無い分野は、英語で工事中と書く（#73）。開くものが無い分野は空にする。
                         if (!sources.length) {
-                            contentArea.innerHTML = '';
+                            contentArea.innerHTML = isDomainReportPendingEnglish(report, { lang: state.config.lang })
+                                ? renderer.buildPendingEnglishHtml(buildJapaneseDomainUrl(report.id))
+                                : '';
+                            contentArea.dataset.loaded = '1';
                             return;
                         }
 

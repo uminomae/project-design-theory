@@ -731,6 +731,31 @@
   display: none;
 }
 
+/* 英語の記録がまだ無い分野の工事中（#73）。窓と全画面の格子のマスで使う */
+.reports-pending-en p {
+  margin: 0 0 0.6rem;
+  line-height: 1.6;
+}
+
+.reports-pending-en .reports-pending-en-title {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.reports-pending-en .reports-pending-en-action {
+  margin-bottom: 0;
+}
+
+.reports-pending-en a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.hover-grid-cell-content .reports-pending-en {
+  font-size: 0.85rem;
+}
+
 /* ==========================================================================
    Hover-expand grid (techo#53)
    ========================================================================== */
