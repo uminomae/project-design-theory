@@ -49,6 +49,7 @@ uniform float uDist;
 uniform float uMembraneGain;
 uniform float uFall;
 uniform float uLens;
+uniform float uDim; // 1 がふつう。長く動かしたあと始めに戻すとき、いったん 0 へ
 uniform vec3 uCool;
 uniform vec3 uWarm;
 uniform vec3 uGate;
@@ -193,6 +194,7 @@ void main() {
     col *= vignette;
     alpha *= vignette;
 
+    alpha *= uDim;
     if (alpha < 0.012) discard;
     gl_FragColor = vec4(col, min(alpha, 0.96));
 }
@@ -261,6 +263,7 @@ function start() {
         uMembraneGain: { value: 0.55 },
         uFall: { value: 0 },
         uLens: { value: 0.1 },
+        uDim: { value: 1 },
         // cs の色（冷たい青 → 暖かい白、真ん中に金の門）を、tokens の navy・gold・coral の側へ少し寄せた
         uCool: { value: new THREE.Vector3(0.2, 0.24, 0.46) },
         uWarm: { value: new THREE.Vector3(1.0, 0.96, 0.95) },
@@ -316,9 +319,27 @@ function start() {
     const manual = new Set();
     let paused = false;
     let speedOverride = qn('speed');
+    // 長く動かしたら始めに戻す：時刻と落ちた量は増え続け、数時間で計算の桁が足りず形が粗くなりうる。
+    // 一時間ごとに、ゆっくり暗くして始めの値へ戻し、ゆっくり明るくする（pjdhiro 2026-11-10・違和感帳「手当てを入れる」）。
+    // ?reset=秒 で間隔を上書き（確かめ用）。
+    const RESET_AFTER = qn('reset') ?? 3600;
+    const FADE = 2.0;
+    let sinceReset = 0;
+    let dim = 1;
+    let resetting = 0; // 0 ふつう・1 暗くしている・2 明るくしている
 
     const update = (dt) => {
         if (paused) dt = 0;
+        sinceReset += dt;
+        if (resetting === 0 && sinceReset > RESET_AFTER && manual.size === 0) resetting = 1;
+        if (resetting === 1) {
+            dim = Math.max(0, dim - dt / FADE);
+            if (dim === 0) { t = T0 + START_E; fall = fallAt(START_E); sinceReset = 0; resetting = 2; }
+        } else if (resetting === 2) {
+            dim = Math.min(1, dim + dt / FADE);
+            if (dim === 1) resetting = 0;
+        }
+        uniforms.uDim.value = dim;
         t += dt;
         const k = 1 - Math.exp(-dt * 2.0);
         scroll += (scrollTarget - scroll) * k;
