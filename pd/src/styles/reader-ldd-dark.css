@@ -94,26 +94,33 @@ html.ldd-dark[data-intro] body.reader-flow .top-bar ~ #content .reader-wrap > .d
     margin-top: 1.25rem;
 }
 
-/* 題（読書欄の h1 と同じ文字。読み上げは h1 に任せる） */
+/* 題。左下に小さく、「scroll」の印と同じ雰囲気で置く（字・色・にじみを揃え、字は少しだけ大きく）。
+   背景を見せたいので目立たせない（pjdhiro 2026-11-10「左下に小さく Love駆動開発と呼びたいもの β を入れて。scroll と似た雰囲気で。
+   テキストサイズは少し大きい方がいいと思う。でも、目立たないように。背景 Three を見せたいので」）。読み上げは h1 に任せる */
 .ldd-intro__title { display: none; }
 html.ldd-dark[data-intro~="title"] .ldd-intro__title {
     display: block;
-    position: absolute;
-    left: 0; right: 0;
-    bottom: 22%;
+    position: fixed;
+    left: 20px;
+    bottom: 22px;
+    z-index: 2;
     margin: 0;
-    padding: 0 16px;
-    text-align: center;
-    font-family: var(--serif-jp);
-    font-weight: 300;
-    font-size: clamp(1.5rem, 4.4vw, 2.6rem);
-    letter-spacing: 0.08em;
-    line-height: 1.5;
-    color: rgba(230, 235, 245, 0.92);
-    text-shadow: 0 0 18px rgba(2, 5, 13, 0.9), 0 0 2px rgba(2, 5, 13, 0.9);
+    max-width: calc(50vw - 56px);
+    font-family: Georgia, "Noto Serif JP", serif;
+    font-weight: 400;
+    font-size: 1.05rem;
+    letter-spacing: 0.1em;
+    line-height: 1.6;
+    color: rgba(180, 200, 230, 0.5);
+    text-shadow: 0 0 10px rgba(2, 5, 13, 0.85), 0 0 2px rgba(2, 5, 13, 0.9);
 }
 .ldd-intro__title span { display: inline-block; }
-.ldd-intro__title i { font-family: var(--serif-en, "EB Garamond", serif); font-weight: 400; }
+.ldd-intro__title i { font-family: var(--serif-en, "EB Garamond", serif); }
+/* 狭い画面では二行にして、真ん中の印に掛からないようにする */
+@media (max-width: 640px) {
+    html.ldd-dark[data-intro~="title"] .ldd-intro__title { left: 16px; font-size: 0.95rem; }
+    .ldd-intro__title span { display: block; }
+}
 
 /* 下へ促す印。創造とはのトップ（cs/?graphic=i）の #scroll-hint に倣う：
    「scroll」の小さな字と ▾、淡い青白、3 秒でゆっくり 4px 沈む（pjdhiro 2026-11-10「cs/?graphic=i を参考にして」）。
@@ -122,9 +129,10 @@ html.ldd-dark[data-intro~="title"] .ldd-intro__title {
 .ldd-intro__cue { display: none; }
 html.ldd-dark[data-intro~="cue"] .ldd-intro__cue {
     display: block;
-    position: absolute;
+    position: fixed;
     left: 50%;
     bottom: 16px;
+    z-index: 2;
     transform: translateX(-50%);
     padding: 6px 12px;
     text-align: center;
@@ -156,6 +164,19 @@ html.ldd-dark[data-intro~="cue"] .ldd-intro__cue {
 }
 @media (prefers-reduced-motion: reduce) {
     html.ldd-dark[data-intro~="cue"] .ldd-intro__cue { animation: none; }
+}
+
+/* 題と印は画面に留め、目次が出るとき（最初の画面を抜けたとき）に消す（pjdhiro 2026-11-10「目次が登場するタイミングで、
+   スクロールと矢印を消す。ページタイトルも消す」）。目次と入れ替わる。消える速さは cs の印と同じ 0.6 秒 */
+html.ldd-dark[data-intro] .ldd-intro__title,
+html.ldd-dark[data-intro] .ldd-intro__cue {
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+html.ldd-dark[data-intro]:not(.ldd-at-intro) .ldd-intro__title,
+html.ldd-dark[data-intro]:not(.ldd-at-intro) .ldd-intro__cue {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 /* 最初の画面にいるあいだは、目次を出さない（常設の目次・右下のボタン） */
