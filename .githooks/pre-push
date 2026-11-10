@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # main へ送る前に、一緒に公開される変更を見たかを確かめる。見ていなければ push を止める。
-# 見る道具は scripts/publish-main.sh（見た commit の印を置く）。経緯は docs/rules/corrections.md「繰り返し」の表（型 K・2026-11-09）。
+# 見る道具は scripts/publish-main.sh（見た commit の印を置く）。経緯は docs/rules/corrections-k.md「繰り返し」の表（型 K・2026-11-09）。
 common="$(cd "$(git rev-parse --git-common-dir)" && pwd)"
 while read -r local_ref local_sha remote_ref remote_sha; do
   [ "$remote_ref" = "refs/heads/main" ] || continue
