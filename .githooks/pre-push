@@ -1,15 +1,38 @@
 #!/usr/bin/env bash
 # main へ送る前に、一緒に公開される変更を見たかを確かめる。見ていなければ push を止める。
 # 見る道具は scripts/publish-main.sh（見た commit の印を置く）。経緯は docs/rules/corrections-k.md「繰り返し」の表（型 K・2026-11-09）。
-common="$(cd "$(git rev-parse --git-common-dir)" && pwd)"
+#
+# 通すのは、次の三つが揃うときだけ（2026-11-10・#111）：
+#   - 印が、push をする worktree のもの（git rev-parse --git-dir の下。別のセッションの印では通らない）
+#   - 印の commit の番号が、push する commit と同じ
+#   - 印を置いてから 30 分以内
+# このフックで止まらないもの：git push --no-verify、GitHub の上での操作（docs/PUBLISH-CHECK.md）。
+gitdir="$(cd "$(git rev-parse --git-dir)" && pwd)"
+stamp="$gitdir/PUBLISH_MAIN_CHECKED"
+limit=1800
 while read -r local_ref local_sha remote_ref remote_sha; do
   [ "$remote_ref" = "refs/heads/main" ] || continue
-  seen="$(cat "$common/PUBLISH_MAIN_CHECKED" 2>/dev/null)"
-  if [ "$seen" != "$local_sha" ]; then
+  seen_sha=""
+  seen_at=0
+  if [ -f "$stamp" ]; then
+    read -r seen_sha seen_at < "$stamp"
+    case "$seen_at" in ''|*[!0-9]*) seen_at=0 ;; esac
+  fi
+  now="$(date +%s)"
+  why=""
+  if [ -z "$seen_sha" ]; then
+    why="この worktree では、まだ見ていない（印が無い）。"
+  elif [ "$seen_sha" != "$local_sha" ]; then
+    why="送ろうとしている commit ${local_sha:0:7} は、まだ見ていない（見た印：${seen_sha:0:7}）。"
+  elif [ $((now - seen_at)) -gt "$limit" ]; then
+    why="見た印が古い（置いてから $(( (now - seen_at) / 60 )) 分。30 分を超えたら見直す）。"
+  fi
+  if [ -n "$why" ]; then
     {
       echo "pre-push: main へ送る前に、一緒に公開される変更を見る → bash scripts/publish-main.sh <送る枝>"
-      echo "  送ろうとしている commit ${local_sha:0:7} は、まだ見ていない（見た印：${seen:0:7}）。"
+      echo "  $why"
       echo "  develop には、公開の判断を待っている別のセッションの変更が入っていることがある。"
+      echo "  （道具が古い版だと印の形が合わない。そのときは develop を取り込んでから走らせる）"
     } >&2
     exit 1
   fi

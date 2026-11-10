@@ -87,7 +87,7 @@
 - Koriat p.160・p.163: 感じの妥当性は手がかりの診断力で決まる（信号が立つことと、その中身が当たることの分離）。
 
 ## 5. 残課題
-- Dewey ch.6 の疑いの解消・示唆の棄却の逐語（Gutenberg #37423。保存済みファイル: /private/tmp/claude-501/-Users-uminomae-dev-kesson-space--claude-worktrees-continuation-129e0a/fa178439-1a05-4840-95e6-6cc1751f0071/scratchpad/k/dw2.txt）
+- Dewey ch.6 の疑いの解消・示唆の棄却の逐語（Gutenberg #37423。保存済みファイル: セッションの一時置き場の k/dw2.txt）
 - Polanyi *Personal Knowledge* の problem・heuristic passion の節（紙／貸出）
 - Peirce CP 5.171・5.189・6.469ff の巻頁（CP 本体）、MS L75 の年
 - Hart 1965 本文
