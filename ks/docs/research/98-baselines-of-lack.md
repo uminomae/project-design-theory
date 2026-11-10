@@ -171,7 +171,7 @@ Issue #98（親 #97 の一つ目）の調べの記録。2026-11-10。
 
 ## 取れなかった原典
 
-#98 のコメントに、開く場所と保存名の表を置いた（Cannon 1929・Carver & Scheier 1990・Winnicott 1960・Barrett & Simmons 2015・Fredrickson 2001・Festinger 1957・Mikulincer 1997・Elliot & Reis 2003・Damasio & Carvalho 2013・Sterling 2012）。
+#98 のコメントに、開く場所と保存名の表を置いた（2026-11-10）。そのあと pjdhiro の判断で、有料のもの（Carver & Scheier 1990・Mikulincer 1997・Elliot & Reis 2003・Damasio & Carvalho 2013・Sterling 2012・Winnicott 1960 の全集）は参考にしないことにし、保存を頼むのは、無料なのに自動では取れなかった 4 件（Cannon 1929・Barrett & Simmons 2015・Fredrickson 2001・Festinger 1957）だけにした。
 
 ## pjdhiro の判断（2026-11-10・結果のページへのコメント・原文）
 
