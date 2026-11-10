@@ -677,3 +677,8 @@ compile 実行の履歴。append-only。
 - scope: 概念ページ 3・横断ページ 1
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第四部「人の心は、自分が思っているようにはできていない」を立て、部の番号を一つずつ送った。「生存と信頼の信号」は便宜上の呼び名との段、適用条件がわかる例、利点の言い方、欠損の用語）・`cs/knowledge/schema/five-stages.md`（生成ページの注と版の記録だけ）・`as/knowledge/concepts/CN-001`（S18 の引用を本人の訂正に揃えた）
 - pages: `concepts/Love 駆動開発` に、信号の呼び名が便宜上のものだという段、適用条件がわかる例（メタ認知・他者の視点）、利点の言い方、第四部の工事中の問いを足した。`プロジェクトデザイン` は本文が今の正本と合うことを確かめ、関連ページの欠損の添え書きを今の言い方に替えた。`concepts/創造の5段階モデル` は定義の本文が変わっていないので、compiled を今日にした。`cross-refs/awareness-space-overview` は CN-001 の引用を載せておらず、直すところが無い（compiled はもう今日）
+
+## [2026-11-11] update | 意識とはの概観：調べてきたことの記録が十二本に
+- scope: 横断ページ 1
+- sources: `as/index.html`（「調べてきたこと」に A11 安定とつながりの感じ・手放す構え、A12 信頼の定義と長い時間の動機を足した）・`as/knowledge/concepts/CN-001`（S18 の引用を本人の訂正に揃えた。概観は引用を載せていないので直すところ無し）・`as/knowledge/raw/manifest.md`（行が増えた。概観は台帳の行数を書いていない）
+- pages: `cross-refs/awareness-space-overview` の「調べてきたこと」の本数を十本から十二本にし、二本の題を並びに足した
