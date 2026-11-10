@@ -295,3 +295,12 @@ Claude の答え（対話）：名前の種類が揃っていない（やり方�
 - Internet Archive: https://archive.org/details/perspectivesonst0000unse_e8k8 ／ CiNii: https://ci.nii.ac.jp/ncid/BA10766350
 - 1991「Strategic Thinking as "Seeing"」: https://mintzberg.org/sites/default/files/article/download/hm_strategic_thinking_as_seeing.pdf
 - 論文一覧: https://mintzberg.org/articles
+
+## 追記（2026-11-10・Issue #111 の出典の直し）
+
+- Mintzberg (1973) "Strategy-Making in Three Modes"：著者のサイトの写し（https://mintzberg.org/sites/default/files/article/download/hm_strategy_making_in_three_modes.pdf ・画像の PDF・10 頁）を取り、頁を画像にして読んだ。起業家型＝p.45（"power is centralized in the hands of the chief executive"・"dramatic leaps forward in the face of uncertainty"）、適応型＝p.46（"Clear goals do not exist"・"division of power among members of a complex coalition"・"reactive solution to existing problems"・Lindblom の "proceeds in small steps"）。アントレプレナーとラーニングの段の「定義＝抄」は、1973 については「原」に上がる。
+- Mintzberg (1984) "A Typology of Organizational Structure" も同じサイトにある（hm_a_typology_of_organizational_structure.pdf・画像の PDF）。「本文の画像を読んだ」の出どころはここ。
+- Mintzberg (1985) "The Organization as Political Arena" の結び（p.152）は、2026-11-10 のレビュー（N-7）で読まれた。ポリティカルの「効く条件＝未」は「原」。
+- Mintzberg & Waters (1985) *SMJ* と Mintzberg (1990) *SMJ* のデザイン学派の論文は、本文を読めていない。読み物からは、この二本に頼る文（ラーニングの定義の後半・カルチャーの定義の後半・デザインの定義と誤解）を外した。1990 は Wiley が無料で出しているが、自動の取得は確認画面で止まる（ブラウザでの保存待ち）。
+- 『戦略サファリ』の章の副題を使った文は、読み物から外した（pjdhiro「戦略サファリに関わるのは群盲象のことだけ」）。
+
