@@ -13,7 +13,10 @@
 //   ② 渦のねじれを、軸に近いほど強くした（回す角度に 1/(a + r²) を足す）。軸そのもの（源）は描かず、
 //      周りの膜の巻き方だけが、そこに何かがあることを示す。「見えない源」。
 //   ④ カメラを管の中へ少し寄せた（3.5 → 2.7）。輪の線が画面の端まで広がる。色の冷たい側を navy 寄りに落ち着かせた。
-//   ③ スクロールで、前半（駆動源）は渦の芯を覗く向き、後半（開発）は渦がほどけて横へ広がる向きへ、ゆっくり回る。
+//   ③ カメラは管の軸の上から、中央の円の中心を正面に見て、奥へ落ちていく（膜の場をカメラへ送る uFall）。
+//      落ちる速さは、読み進めるほど速く、呼吸に合わせて満ち引きする。渦のねじれも一緒に近づくので、螺旋を描いて落ちる。
+//   ⑤ 質量による歪み：光の道を一歩ごとに軸へ向けて曲げる（uLens）。重力レンズのように、奥の輪が中心の暗い穴へ
+//      引き込まれて詰まって見える。強くすると画面全体が輪で埋まって白く飽和するので、弱く（0.1）。
 //
 // WebGL（three.js）。動きを減らす設定では一枚を描いて止める。タブが隠れたら止める。`?motion=still` で確かめ用の一枚。
 
@@ -44,6 +47,8 @@ uniform float uShell;
 uniform float uJitter;
 uniform float uDist;
 uniform float uMembraneGain;
+uniform float uFall;
+uniform float uLens;
 uniform vec3 uCool;
 uniform vec3 uWarm;
 uniform vec3 uGate;
@@ -51,7 +56,6 @@ uniform vec3 uGold;
 uniform vec3 uSilver;
 
 const float FAR = 12.0;
-const float FLOW = 0.21;
 const float FREQ_LOW = 2.5;
 const float FREQ_HIGH = 1.0;
 const float THICK_LOW = 0.085;
@@ -83,15 +87,19 @@ float gyroid(vec3 p) {
 // 二枚の膜の濃さ（x：g = +c の膜、y：g = −c の膜）と、軸のまわりの柔らかい層（z）
 vec3 getDensity(vec3 p, float progress, float breath, float timeSec) {
     vec3 q = p;
+    // 落ちていく：膜の場そのものを、カメラへ向けて uFall だけ送る（カメラが軸に沿って奥へ進むのと同じ）。
+    // 色と周波数（progress）はカメラに対して決まったままなので、奥の金の光にはいつまでも届かない
+    // 回転のあとに足す（cs の流れと同じ位置。回転の前に足すと、大きな値が横へ混ざって形が崩れる）
+    float X = p.x + uFall;
     // 軸（x）の周りの渦。軸に近いほど強くねじれる（見えない源）
     float rad2 = dot(p.yz, p.yz);
-    q.yz *= rot2(p.x * 0.3 + timeSec * 0.1 + uVortex / (0.45 + rad2));
-    // cs と同じ、奥行きでのねじれと流れと軸のうねり
+    q.yz *= rot2(X * 0.3 + timeSec * 0.1 + uVortex / (0.45 + rad2));
+    // cs と同じ、奥行きでのねじれと軸のうねり（cs の流れ FLOW は、落ちる動き uFall に置き換えた）
     q.xy *= rot2(p.z * 0.24 + timeSec * 0.12);
-    q.x -= timeSec * FLOW;
+    q.x += uFall;
     vec2 axisCurve = vec2(
-        0.24 * sin(p.x * 0.66 + timeSec * 0.31),
-        0.18 * cos(p.x * 0.53 - timeSec * 0.28)
+        0.24 * sin(X * 0.66 + timeSec * 0.31),
+        0.18 * cos(X * 0.53 - timeSec * 0.28)
     );
     q.yz -= axisCurve;
 
@@ -130,10 +138,10 @@ void main() {
     float timeSec = uTime;
     float t = hash21(gl_FragCoord.xy + vec2(mod(timeSec * 17.0, 1000.0), mod(timeSec * 11.0, 1000.0))) * uJitter;
 
+    vec3 p = ro + rd * t;
     for (int i = 0; i < 64; i++) {
         if (float(i) >= uMaxSteps) break;
 
-        vec3 p = ro + rd * t;
         float progress = smoothstep(-2.5, 2.5, p.x);
         float radial = length(p.yz);
 
@@ -164,6 +172,13 @@ void main() {
         }
 
         float stepLen = mix(STEP_NEAR, STEP_FAR, 1.0 - envelope);
+        // 質量による歪み：光の道を、一歩ごとに軸へ向けて曲げる（軸に近いほど強く）。
+        // 重力レンズのように、奥の輪が中心へ引き込まれて詰まって見える
+        vec2 toAxis = p.yz;
+        float d2 = dot(toAxis, toAxis) + 0.2;
+        rd.yz -= toAxis / d2 * (uLens * stepLen);
+        rd = normalize(rd);
+        p += rd * stepLen;
         t += stepLen;
         if (t > FAR) break;
     }
@@ -231,6 +246,8 @@ function start() {
         uJitter: { value: 0.0 },
         uDist: { value: 2.7 },
         uMembraneGain: { value: 0.55 },
+        uFall: { value: 0 },
+        uLens: { value: 0.1 },
         // cs の色（冷たい青 → 暖かい白、真ん中に金の門）を、tokens の navy・gold・coral の側へ少し寄せた
         uCool: { value: new THREE.Vector3(0.2, 0.24, 0.46) },
         uWarm: { value: new THREE.Vector3(1.0, 0.96, 0.95) },
@@ -264,6 +281,8 @@ function start() {
     readScroll();
     scroll = scrollTarget;
 
+    // 出発点は cs の流れの分（458 秒 × 0.21）。前に整えた見え方から落ち始める
+    let fall = qn('fall') ?? -96.18;
     const T0 = qn('t') ?? 458; // cs のループの基準の時刻。最初から膜が育った様子で始める
     let t = T0;
     const BREATH_PERIOD = 8.0;
@@ -274,17 +293,24 @@ function start() {
         scroll += (scrollTarget - scroll) * k;
         px += (pxTarget - px) * k;
         uniforms.uTime.value = t;
-        uniforms.uBreath.value = 0.5 + 0.5 * Math.sin((t / BREATH_PERIOD) * Math.PI * 2 - Math.PI / 2);
+        const breath = 0.5 + 0.5 * Math.sin((t / BREATH_PERIOD) * Math.PI * 2 - Math.PI / 2);
+        uniforms.uBreath.value = breath;
+        // 落ちる速さ：読み進めるほど速く引き込まれ、呼吸に合わせて引く力が満ち引きする
+        const fallSpeed = (qn('speed') ?? lerp(0.25, 0.6, scroll)) * (0.75 + 0.5 * breath);
+        fall += fallSpeed * dt;
+        uniforms.uFall.value = fall;
         // 前半は渦の芯を覗く向き（軸に沿う）、後半は少し横へ回り、渦がゆるむ。
         // 斜めに回りすぎると、輪の線がざらついた縞に変わるので、回す幅は小さくする
-        uniforms.uYaw.value = qn('yaw') ?? (lerp(-1.57, -1.35, scroll) + Math.sin(t * 0.013) * 0.05 + px * 0.04);
-        uniforms.uPitch.value = qn('pitch') ?? (lerp(0.05, 0.12, scroll) + Math.sin(t * 0.011) * 0.03);
+        // 軸の上から、中央の円の中心を正面に見る。ゆらぎはごく小さく
+        uniforms.uYaw.value = qn('yaw') ?? (-Math.PI / 2 + Math.sin(t * 0.013) * 0.03 + px * 0.03);
+        uniforms.uPitch.value = qn('pitch') ?? (Math.sin(t * 0.011) * 0.02);
         uniforms.uVortex.value = qn('vortex') ?? lerp(0.55, 0.3, scroll);
         if (qn('split') !== null) uniforms.uSplit.value = qn('split');
         if (qn('shell') !== null) uniforms.uShell.value = qn('shell');
         if (qn('jitter') !== null) uniforms.uJitter.value = qn('jitter');
         if (qn('dist') !== null) uniforms.uDist.value = qn('dist');
         if (qn('mg') !== null) uniforms.uMembraneGain.value = qn('mg');
+        if (qn('lens') !== null) uniforms.uLens.value = qn('lens');
     };
     const render = () => renderer.render(scene, camera);
 

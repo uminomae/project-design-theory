@@ -26,36 +26,37 @@
 <body>
 <main>
     <h1>膜の渦の調え（今の版から一つずつ変えたもの・背景だけ）</h1>
+    <p style="margin:-8px 0 16px">カメラは中央の円の中心へ向かって落ちていきます。見本の中ではスクロールが無いので、落ちる速さは前半の値です。本物の比較は <a href="../../cs/?graphic=i" style="color:#c9b98f">創造とは</a>。</p>
     <div class="grid">
         <section>
             <h2>0　今の版 <a href="frame.html?bg=membrane">全画面</a></h2>
             <div class="frame"><iframe src="frame.html?bg=membrane" title="今の版" loading="lazy"></iframe></div>
-            <p>膜二枚・渦 0.55・カメラ 2.7・navy 寄りの色</p>
+            <p>膜二枚・渦 0.55→0.3・歪み 0.1・落ちる速さ 0.25→0.6（読み進めるほど速く）</p>
         </section>
         <section>
-            <h2>1　cs の値にそろえたもの <a href="frame.html?bg=membrane&split=0&vortex=0&dist=3.5&mg=0.82&cool=0.12,0.2,0.68&gate=1.3,0.9,0.2&gold=1,1,1&silver=1,1,1">全画面</a></h2>
-            <div class="frame"><iframe src="frame.html?bg=membrane&split=0&vortex=0&dist=3.5&mg=0.82&cool=0.12,0.2,0.68&gate=1.3,0.9,0.2&gold=1,1,1&silver=1,1,1" title="cs の値にそろえたもの" loading="lazy"></iframe></div>
-            <p>比べるための基準。移した版を cs の値にそろえた（膜一枚・渦なし・カメラ 3.5・cs の色）。本物は <a href="../../cs/?graphic=i" style="color:#c9b98f">創造とは</a></p>
+            <h2>1　歪みなし <a href="frame.html?bg=membrane&lens=0">全画面</a></h2>
+            <div class="frame"><iframe src="frame.html?bg=membrane&lens=0" title="歪みなし" loading="lazy"></iframe></div>
+            <p>光を曲げない。輪の並びは cs に近く、中心が金色に光る</p>
         </section>
         <section>
-            <h2>2　寄る <a href="frame.html?bg=membrane&dist=2.2">全画面</a></h2>
-            <div class="frame"><iframe src="frame.html?bg=membrane&dist=2.2" title="寄る" loading="lazy"></iframe></div>
-            <p>カメラを管の奥へ。線が画面いっぱいに広がり、手前がやわらかくぼける</p>
+            <h2>2　歪み強く <a href="frame.html?bg=membrane&lens=0.2">全画面</a></h2>
+            <div class="frame"><iframe src="frame.html?bg=membrane&lens=0.2" title="歪み強く" loading="lazy"></iframe></div>
+            <p>奥の輪が強く中心へ引き込まれ、画面の端まで輪で埋まる</p>
         </section>
         <section>
-            <h2>3　引く <a href="frame.html?bg=membrane&dist=3.5">全画面</a></h2>
-            <div class="frame"><iframe src="frame.html?bg=membrane&dist=3.5" title="引く" loading="lazy"></iframe></div>
-            <p>カメラを cs と同じ位置へ。輪がくっきりし、外側は暗い</p>
+            <h2>3　ゆっくり落ちる <a href="frame.html?bg=membrane&speed=0.12">全画面</a></h2>
+            <div class="frame"><iframe src="frame.html?bg=membrane&speed=0.12" title="ゆっくり落ちる" loading="lazy"></iframe></div>
+            <p>引き込まれる速さを半分に</p>
         </section>
         <section>
-            <h2>4　渦を強く <a href="frame.html?bg=membrane&vortex=1.2">全画面</a></h2>
+            <h2>4　速く落ちる <a href="frame.html?bg=membrane&speed=1.0">全画面</a></h2>
+            <div class="frame"><iframe src="frame.html?bg=membrane&speed=1.0" title="速く落ちる" loading="lazy"></iframe></div>
+            <p>引き込まれる速さを、今の後半の倍近くに</p>
+        </section>
+        <section>
+            <h2>5　渦を強く <a href="frame.html?bg=membrane&vortex=1.2">全画面</a></h2>
             <div class="frame"><iframe src="frame.html?bg=membrane&vortex=1.2" title="渦を強く" loading="lazy"></iframe></div>
-            <p>軸の近くほど強くねじれる。中心へ吸い込まれる感じが増す</p>
-        </section>
-        <section>
-            <h2>5　渦なし <a href="frame.html?bg=membrane&vortex=0">全画面</a></h2>
-            <div class="frame"><iframe src="frame.html?bg=membrane&vortex=0" title="渦なし" loading="lazy"></iframe></div>
-            <p>ねじれを cs と同じに。同心の輪がまっすぐ並ぶ</p>
+            <p>軸の近くほど強くねじれ、螺旋を描いて落ちる感じが増す</p>
         </section>
         <section>
             <h2>6　膜一枚 <a href="frame.html?bg=membrane&split=0&mg=0.82">全画面</a></h2>
@@ -73,9 +74,9 @@
             <p>中心の金と、片方の膜の金を強める</p>
         </section>
         <section>
-            <h2>9　青を強く <a href="frame.html?bg=membrane&cool=0.12,0.2,0.68">全画面</a></h2>
-            <div class="frame"><iframe src="frame.html?bg=membrane&cool=0.12,0.2,0.68" title="青を強く" loading="lazy"></iframe></div>
-            <p>外側の冷たい色を cs と同じ青に</p>
+            <h2>9　寄る <a href="frame.html?bg=membrane&dist=2.2">全画面</a></h2>
+            <div class="frame"><iframe src="frame.html?bg=membrane&dist=2.2" title="寄る" loading="lazy"></iframe></div>
+            <p>カメラを管の奥へ。線が画面いっぱいに広がり、手前がやわらかくぼける</p>
         </section>
     </div>
 </main>
