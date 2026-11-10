@@ -119,6 +119,7 @@ pjdhiro の repo は、その repo の規約（`develop` で直す・commit の�
 
 - [ ] 5段階の定義の置き場を一覧にし、食い違いを並べる（試しの一巡で始めた）。
 - [ ] pjdhiro に、正とする定義を決めてもらう。見本を画面で並べて見せる（stance 2-7）。
+- [x] 定義を二つの層にした（2026-11-10・pjdhiro「定義は暫定です」）。正本は `cs/knowledge/schema/five-stages.md`：第 1 層は pjdhiro の体感（暫定の定義。見本 `docs/cs-review/five-stages-sample.html` の一文と補い）、第 2 層は「ほかの論ではこう言うケースもある」（照合し直す前の集計から拾った論じる候補。段 3 で数え直して論じる）。用語集・ガイド・wiki の「創造の5段階モデル」は、ここから写す形にそろえた。残り：トップ（`index.html`・`src/i18n/dict.js` の日英）・`llms.txt`・Love駆動開発の引用へ写すのは、cs のコンテンツの組み立ての案（`docs/cs-review/cs-content-plan.html`・https://claude.ai/artifact/WTkAL7sBPqEjXFEeUmsLtt 。作業が終わったらリンクを消す）の答えのあと。
 - [ ] 決めた定義を一つの表にする（置き場の候補：`cs/knowledge/schema/five-stages.md`）。サイトの文言（`src/i18n/dict.js`・`index.html`）・`llms.txt`・ガイド・wiki は、この表から写す。今は「正本」を名乗るものが四つある：`cs/knowledge/schema/five-stages.md`（2026-07 の追記はここにだけある）、`pjdhiro/assets/creation/kb/`（`cs/knowledge/README.md` は正本がここに移ったと書く）、報告の規則 `cs/transform/domains/reader-rules/reader-rules-creation-report.md` §5 の自前の表（D01 §3 の定義のずれの出どころの見込み）、five-stages-guide。
 - [ ] #50（どんな対立が創造を生むのか）は、対立を波（Stage 2「ゆれ・対立／分離」）に置いている。pjdhiro の言い換え（波＝状況変化、縁＝衝突）とそろえてから、#50 の問いを段 3 で使う。報告の多くも、縁の定義に「対立」を入れながら、当てはめでは対立を波に、縁を接続や選択として読んでいる（D11〜D20 を読んだ所見）。
 - [ ] 報告の冒頭の文責を、`writing.md` §1-1・§1-8 に合わせる。今の日本語版 30 本は、冒頭が「立ち位置明示」で、文責の書き方が無い。§2 に「著者（pjdhiro）自身の精読による検証が完了していない箇所」とあり、著者を pjdhiro としている。英語版で AI に触れるのは 3 本（D17・D22・D23）だけ。一つの高い指摘として、テンプレートで直す。

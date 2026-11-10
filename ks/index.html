@@ -731,19 +731,6 @@
 
   <button id="surface-btn" aria-label="ページ上部に戻る">↑ surface</button>
 
-  <!-- Slide viewer launcher — CHANGED(2026-03-25): #161 — use event delegation (card is dynamically created by guides.js) -->
-  <script type="module">
-    document.addEventListener('click', async (e) => {
-      const card = e.target.closest('#slide-test-btn');
-      if (!card) return;
-      const { openRichSlideViewer } = await import('./src/slide-viewer.js');
-      openRichSlideViewer({
-        htmlUrl: './content/guides/meta-overview.html',
-        title: '欠損駆動思考 — 全体像'
-      });
-    });
-  </script>
-
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <noscript>
