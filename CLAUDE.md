@@ -39,12 +39,12 @@
 | いつ | 読むもの |
 |---|---|
 | 毎回 | `docs/rules/stance.md`：pjdhiro の見方と判断の仕方。迷ったら、pjdhiro ならどう判断するかをここで確かめる。`docs/rules/corrections.md`：Claude が繰り返す誤りの型。自分の案がどの型に当たるかを見る |
-| 公開文を書く・直す | `docs/rules/writing.md`：公開文の書き方。`docs/rules/corrections-examples.md`：当たりそうな型の行だけ |
+| 公開文を書く・直す | `docs/rules/writing.md`：公開文の書き方。`docs/rules/corrections-examples.md`：当たりそうな型の行だけ。`docs/rules/corrections-rg.md`：型 R・G の確認のうち、当たる節だけ（pjdhiro に手作業を頼むときは R5）。main に出す前に念入りに見るときは `docs/rules/review.md`：レビューの手順 |
 | 手を動かす作業（git の取り込み・push、生成・検査、画面、調べと記録）を始める | `docs/rules/corrections-k.md`：型 K の確認のうち、K0 と、その作業の節だけ。worktree で始めるときは、取り込みを回す前に K1 を読む |
 | 既存の理論・東洋思想・五段階の語を扱う | `docs/rules/stance-theories.md`：理論との距離 |
 | 調べる・引用する | `docs/rules/sources.md`：調べ方と原典の照合 |
 | wiki を作り直す・正本を直して wiki の知らせが出た | `.claude/skills/wiki-compile/SKILL.md`：知らされた wiki のページは、正本を直した同じ作業で作り直し、一緒に commit する |
-| 特定のページ・Issue を触る | `docs/rules/decisions.md`：そのページ・Issue の行だけ |
+| 特定のページ・Issue を触る | `docs/rules/decisions.md`：そのページ・Issue の行だけ（Love駆動開発の読み物は、終わりの「読み物の組み立て」の節も） |
 | 司令塔のセッションの始め・「違和感帳」と言われた | `docs/tools/iwakan-cho.md`：pd/ の違和感を置く帳面（アーティファクト）の読み方・返事の書き方・しまい方 |
 
 新しい指摘を受けたら、同じセッションで stance.md か corrections.md に足す。足すときは、まず既にある行に溶かせるかを見る。ページや Issue ごとの判定は decisions.md に、見方として一般化できる一行だけを stance.md に書く。代表例（corrections-examples.md）は型ごとに一、二件に保ち、足すなら入れ替える。
@@ -56,7 +56,7 @@
 毎回、セッションを閉じる前に次を行う（pjdhiro 2026-11-07）。
 
 1. このセッションで pjdhiro が示した判断や見方を、`docs/rules/stance.md` に足すか直す。何への答えだったかを添える。
-2. このセッションで Claude が指摘された誤りを、`docs/rules/corrections.md` の型に当てはめる。当てはまる型が無ければ型を足す。同じ誤りを繰り返さないよう、その型の「書く前の確認」を直す。前に同じ型の誤りをしていたら、corrections.md の「繰り返し」の表に日付を足す（型 K は `corrections-k.md` の「繰り返し」に足す）。その表の決まりに従い、2 回目からは確認の文を足すのでなく、機械で止める仕組みに移すか、確認の文を書き直す。
+2. このセッションで Claude が指摘された誤りを、`docs/rules/corrections.md` の型に当てはめる。当てはまる型が無ければ型を足す。同じ誤りを繰り返さないよう、その型の「書く前の確認」を直す。前に同じ型の誤りをしていたら、`docs/rules/corrections-repeats.md` の表に日付を足す（型 K は `corrections-k.md` の「繰り返し」に足す）。corrections.md の「繰り返し」の決まりに従い、2 回目からは確認の文を足すのでなく、機械で止める仕組みに移すか、確認の文を書き直す。
 3. Claude の推奨と pjdhiro の判断がずれたところを、セッションの記録の `## ずれ` に書く。一件ごとに、場面・Claude の推奨とその理由・pjdhiro の判断と発言・Claude が見ていなかったもの・写した先（stance・corrections・decisions のどれか）を書く。誤りと言えない、見方の違いから来たずれも書く。pjdhiro に判断を仰いだ問いは、聞く前の Claude の予想と実際の答えを一行ずつ並べる。予想は聞く前に書いておく（あとから書くと、当たったことにしやすい）。予想が当たり続けるなら聞きすぎ（型 P）で、外れるなら stance.md の読みが足りない。ずれが無ければ「無し」と書く（pjdhiro 2026-11-09「claudeの推奨と私がズレたポイントは大切です」・セッションの終わりに振り返って学んでいるかを問われて）。
 4. セッションの記録を書く（下の「セッションの記録」）。
 5. 足したもの・直したものを pjdhiro に短く伝える。何も無ければ、無いと伝える。
@@ -75,7 +75,8 @@
 
 - **編集したら、`develop` に最速で統合する。** プルリクエストは使わない。worktree は、別のセッションが同時に動くときや、クラウドでスマートフォンから動かすときに便利なので使ってよい。その場合も、作業を worktree の枝に溜めずに、本体の checkout（`~/dev/pd/project-design-theory`）の `develop` へ早く取り込む。最速がどのタイミングかは状況による（ほかのセッションと同じファイルを触っているとき、pjdhiro の判断を待って手が止まっているとき など）。取り込みの段取りを説明して pjdhiro の手を止めない。
 - **確かめは、手元のサーバーをブラウザで見るのが基本。** 最速で目視できるから使っている。本体の checkout（develop）を launchd（`com.uminomae.project-design-theory`）が `scripts/serve.sh` で http://localhost:3001/ に常駐させている。直したらすぐ 3001 で見られる状態にしておく：直したら 3001 で開いて確かめ、止まっていたら `launchctl kickstart -k gui/$(id -u)/com.uminomae.project-design-theory` で起こす。
-- **公開は、`develop` を `main` へ送るだけ**（`git push origin develop:main`）。話の流れで確かめが済んでいれば、いちいち聞かずに送る。
+- **公開は、`develop` を `main` へ送るだけ**（`git push origin develop:main`）。話の流れで確かめが済んでいれば、いちいち聞かずに送る。送る前に `bash scripts/publish-main.sh <送る枝>` を走らせ、一緒に出る commit を見る（`.githooks/pre-push` が、これを走らせていない main への push を止める）。
+- 公開の判断を待つ別のセッションの変更が develop にあって、自分の commit だけを載せた枝で main に送ったとき（cs の記録など）は、main に develop に無い commit ができる。送ったあとに、本体の checkout で `git fetch origin`、続けて `git merge origin/main` を単独で回し、develop に戻し入れて push する（`.claude/` が入るならサンドボックスの外で。2026-11-10 までに develop で 4 回行われている）。戻さないと、次の `develop:main` が早送りにならない（2026-11-10）。
 - 公開は GitHub Actions（`.github/workflows/pages.yml`）。出すのはサイトのファイルだけ。
 - サイトのファイルを直したら、commit の前に `bash scripts/check.sh` を走らせる（旧 repo へのリンク・読み物の内部アンカー・wiki・as と ks のテスト・文字化け）。同じものを `.github/workflows/check.yml` が develop と main で走らせる。何を機械で見て、何を画面で見て、何がまだ無いかは `docs/TESTING.md`。
 - commit の末尾：`Co-Authored-By: Claude <noreply@anthropic.com>`

@@ -26,3 +26,9 @@ jobs:
 
       - name: サイトの検査
         run: bash scripts/check.sh
+
+      # 公開してよいかの点検（docs/PUBLISH-CHECK.md）。手元だけの語の一覧は git に無いので、
+      # ここで回るのは形の点検だけ（手元のパス・鍵・メール・共有のリンク・書庫の中の名前）。
+      # クラウドのセッションの commit や --no-verify で、pre-commit を通らずに入ったものを拾う。
+      - name: 公開前の点検（形だけ）
+        run: bash scripts/publish-check.sh --all

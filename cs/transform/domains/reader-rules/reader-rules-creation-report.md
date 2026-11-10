@@ -54,7 +54,7 @@
 | `knowledge/schema/` | 5段階モデルの定義の原型 |
 | `knowledge/schema/` | スキーマ定義（5段階の構造） |
 | `skills/iss62-fieldwork/SKILL.md` | 調査方法・評価基準・判定基準の原典 |
-| `knowledge/voice/pjdhiro-statements-db.md`（未作成） | 理論的判断で迷ったときの最上位参照先 |
+| `knowledge/voice/` の pjdhiro 発言集（未作成） | 理論的判断で迷ったときの最上位参照先 |
 | `transform/domains/quality-test/quality-test-domain-report.md` | 品質テスト基準（生成前に必読） |
 
 ソースは上記に限定しない。knowledge/ 配下や evidence/ 配下で必要なものがあれば参照する。

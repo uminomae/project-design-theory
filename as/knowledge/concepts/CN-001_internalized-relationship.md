@@ -155,5 +155,5 @@ pjdhiro発言（S18）により、E10の「関係」が外的・物理的関係�
 - `base/expression/core/E10.md` — 表現
 - `creation-space/evidence/evidence-psychoanalysis.md` — EV-PA-006（Bowlby）
 - `creation-space/evidence/evidence-developmental-psychology.md` — EV-DP-002（Vygotsky）
-- `base/voice/pjdhiro-statements-db.md` — S18
+- pjdhiro の発言集（非公開）— S18
 - `docs/decision-log/2026-02/LOG-20260206-001_iss36-internalized-relationship.md` — 検討ログ

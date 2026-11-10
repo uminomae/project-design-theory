@@ -399,7 +399,7 @@ Phase 5-7 完了領域のドメインレポート §2「調査の方法」に以
 4. **front matter 除去確認**: `pjdhiro/assets/` 配下の `.md` ファイルに YAML front matter (`---`) が付いていないこと（NL-012）
 5. **整合チェック実行**:
    ```bash
-   bash ~/dev/kesson-driven-thinking/scripts/validate-manifest-sync.sh
+   bash kesson-driven-thinking/scripts/validate-manifest-sync.sh
    ```
    全 Check が PASS であることを確認。特に Check 6（ソース vs 公開の本文 diff）に注意。
 

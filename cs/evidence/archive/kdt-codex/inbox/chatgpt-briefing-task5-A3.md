@@ -70,7 +70,7 @@ EV-PA（精神分析）、EV-LS（生命科学）、EV-BZ-ORG（組織・経営�
 **補助参照**:
 - `base/schema/core-definitions.md` D3-a
 - `base/schema/auxiliary/bspl-model.md` §4.1
-- `base/voice/pjdhiro-statements-db.md` S22, S23
+- pjdhiro の発言集（非公開） S22, S23
 - `base/concepts/CN-001_internalized-relationship.md`
 
 ---
