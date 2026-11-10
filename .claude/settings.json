@@ -14,7 +14,13 @@
       "Read(~/dev-private/**)",
       "Edit(~/dev-private/**)",
       "Write(~/dev-private/**)",
-      "Bash(*dev-private*)"
+      "Bash(*dev-private*)",
+      "Bash(git push --no-verify*)",
+      "Bash(git push * --no-verify*)",
+      "Bash(git commit --no-verify*)",
+      "Bash(git commit * --no-verify*)",
+      "Bash(git commit -n *)",
+      "Bash(gh pr merge*)"
     ]
   },
   "hooks": {
@@ -75,6 +81,8 @@
       "git merge --ff-only *",
       "git -C * merge --ff-only *",
       "bash scripts/sync-develop.sh",
+      "bash scripts/publish-main.sh",
+      "bash scripts/publish-main.sh *",
       "gh",
       "gh *"
     ]
