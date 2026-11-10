@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/manifest.md"
   manifest_id: "D07-S15"
-compiled: "2026-06-14"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 ---
@@ -45,7 +45,7 @@ Francis Heylighen (2026) は、しばしば神秘的・難解とされる**創�
 ## 書誌情報
 
 - 著者: Francis Heylighen（Vrije Universiteit Brussel）
-- 年: 2025
+- 年: 2026
 - 出典: *Complexities* 2(1), 6（MDPI）
 - access_status: url-verified
 - **DOI**: [10.3390/complexities2010006](https://doi.org/10.3390/complexities2010006)
