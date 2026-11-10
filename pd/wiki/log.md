@@ -585,3 +585,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「開発とは、何を指すか」の名前の段）
 - pages: どちらのページも、この段を引いていないので本文はそのまま。compiled は今日のまま
+
+## [2026-11-11] compile | Love駆動開発の GRIT の項に、侘びの像と辞書・事典の畳みを足したあと（#118）
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（「心の言葉は、どこで誤解されるか」の GRIT の項）
+- pages: どちらのページも、GRIT の項と侘びを引いていないので本文はそのまま。`compiled` は今日のまま
