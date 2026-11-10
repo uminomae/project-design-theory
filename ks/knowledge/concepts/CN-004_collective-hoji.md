@@ -16,7 +16,7 @@ log_ref: null
 個人の抱持を、対話・制度・外部化へスケールさせたときに観測すべき最小チェックリスト（[SCALE_JUMP]前提）を保持する概念ノート。
 
 ## 2. なぜこの概念が必要か
-- 注: 作成元REPORTは現在 `codex/archive/deepdive/REPORT-collective-抱持-rubric.md` に配置。関連: `codex/archive/deepdive/REPORT-container-mapping.md`
+- 注: 作成元REPORTは現在 `cs/evidence/archive/kdt-codex/deepdive/REPORT-collective-withhold-rubric.md` に配置。関連: `cs/evidence/archive/kdt-codex/deepdive/REPORT-container-mapping.md`
 - 個人の努力だけでは保持コストが回らない局面があるため、場（集団・制度）で保持を分散する設計が必要になる。
 - ただしスケールジャンプは誤写のリスクが高いので、観測可能な最小ルーブリックに落とす必要がある。
 - 本ノートは「組織的抱持（ISS-34）」の最小回答として位置づける。
@@ -120,15 +120,15 @@ log_ref: null
 
 ## 付録: 本レポートが参照した主要ファイル
 
-- `codex/archive/deepdive/REPORT-抱持-observability.md`
-- `codex/archive/deepdive/REPORT-抱持-structuring.md`
-- `codex/output/REPORT-container-mapping.md`
-- `base/schema/core-definitions.md`
-- `creation-space/evidence/evidence-business-org.md`
-- `creation-space/evidence/evidence-creativity.md`
-- `creation-space/evidence/evidence-developmental-psychology.md`
-- `creation-space/evidence/evidence-neuroscience.md`
-- `creation-space/evidence/evidence-philosophy.md`
+- `cs/evidence/archive/kdt-codex/deepdive/REPORT-withhold-observability.md`
+- `cs/evidence/archive/kdt-codex/deepdive/REPORT-withhold-structuring.md`
+- `cs/evidence/archive/kdt-codex/deepdive/REPORT-container-mapping.md`
+- `ks/knowledge/schema/core-definitions.md`
+- `cs/evidence/archive/kdt-legacy/evidence-business-org.md`
+- `cs/evidence/archive/kdt-legacy/evidence-creativity.md`
+- 創造とはの今までの調べ `evidence-developmental-psychology.md`（この repo には無い）
+- 創造とはの今までの調べ `evidence-neuroscience.md`（この repo には無い）
+- 創造とはの今までの調べ `evidence-philosophy.md`（この repo には無い）
 
 ## 4. 誤解されやすいポイント
 - 本ルーブリックは診断や評価の確定ではなく、観測の足場である。

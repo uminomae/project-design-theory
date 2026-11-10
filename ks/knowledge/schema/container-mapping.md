@@ -2,7 +2,7 @@
 
 ## 概要
 抱持 7段階に対して、Container 6類型の効果・失敗モードを対応づける（兆候→次の支援の対応表）。
-本ファイルは `codex/archive/deepdive/REPORT-container-mapping.md` から抽出・再構成した。Safety Valveタグは保持する。
+本ファイルは `cs/evidence/archive/kdt-codex/deepdive/REPORT-container-mapping.md` から抽出・再構成した。Safety Valveタグは保持する。
 
 ## Container 6類型
 | 類型 | 内容 | 代表Evidence |
@@ -15,8 +15,8 @@
 | 文化的Container | 公案、茶道の作法、学問のディシプリン | EV-PH-007, EV-PH-005 |
 
 補足:
-- `codex/archive/deepdive/REPORT-evidence-cross-analysis.md` は本リポジトリ内で確認できなかったため、上記6類型はブリーフィング記載＋抱持の成立条件（`base/schema/core-definitions.md`）＋各evidenceから再構成した。`[UNCERTAIN]`
-- TASK #10cの出力（`codex/archive/deepdive/REPORT-抱持-uncertain-resolution.md`）を参照し、特に「内在化判定（撤去）」の扱いを§Cに反映した。
+- `REPORT-evidence-cross-analysis.md` は本リポジトリ内で確認できなかった（今の置き場 `cs/evidence/archive/kdt-codex/deepdive/` にも無い）ため、上記6類型はブリーフィング記載＋抱持の成立条件（`ks/knowledge/schema/core-definitions.md`）＋各evidenceから再構成した。`[UNCERTAIN]`
+- TASK #10cの出力（`cs/evidence/archive/kdt-codex/deepdive/REPORT-withhold-uncertain-resolution.md`）を参照し、特に「内在化判定（撤去）」の扱いを§Cに反映した。
 
 ## 段階×Container効果表
 ### §A: 段階×Container効果表
@@ -165,7 +165,7 @@
 
 2) **“支援撤去”は急落の有無だけで判定しない**（内在化の観測）  
    - 支援弱化→一時的揺れ→回復、という形で「回復が見えるか」を見る（単発の成功/失敗で決めない）。  
-   - Evidence: EV-DP-002（足場かけ: 調整しつつ撤去）, `codex/archive/deepdive/REPORT-抱持-uncertain-resolution.md`（U-3）
+   - Evidence: EV-DP-002（足場かけ: 調整しつつ撤去）, `cs/evidence/archive/kdt-codex/deepdive/REPORT-withhold-uncertain-resolution.md`（U-3）
 
 3) **段階4の固着には、まず“差分が残る外部化”を差し込む**  
    - 反復と更新の差分を外部観測可能にしてから、制度/対話を増やす（制度を先に増やすと形骸化しやすい）。  
@@ -209,18 +209,18 @@
 
 #### 付録B: 本レポートが参照した主要ファイル
 
-- `codex/archive/deepdive/REPORT-抱持-observability.md`
-- `codex/archive/deepdive/REPORT-抱持-structuring.md`
-- `codex/archive/deepdive/REPORT-抱持-uncertain-resolution.md`
-- `base/schema/core-definitions.md`
-- `base/text/m1-consciousness-os/part-5-抱持.md`
-- `creation-space/evidence/evidence-psychoanalysis.md`
-- `creation-space/evidence/evidence-neuroscience.md`
-- `creation-space/evidence/evidence-life-sciences.md`
-- `creation-space/evidence/evidence-developmental-psychology.md`
-- `creation-space/evidence/evidence-business-org.md`
-- `creation-space/evidence/evidence-creativity.md`
-- `creation-space/evidence/evidence-philosophy.md`
+- `cs/evidence/archive/kdt-codex/deepdive/REPORT-withhold-observability.md`
+- `cs/evidence/archive/kdt-codex/deepdive/REPORT-withhold-structuring.md`
+- `cs/evidence/archive/kdt-codex/deepdive/REPORT-withhold-uncertain-resolution.md`
+- `ks/knowledge/schema/core-definitions.md`
+- 理論の本文の、抱持の部（非公開の repo にある。この repo には無い）
+- 創造とはの今までの調べ `evidence-psychoanalysis.md`（この repo には無い）
+- 創造とはの今までの調べ `evidence-neuroscience.md`（この repo には無い）
+- 創造とはの今までの調べ `evidence-life-sciences.md`（この repo には無い）
+- 創造とはの今までの調べ `evidence-developmental-psychology.md`（この repo には無い）
+- `cs/evidence/archive/kdt-legacy/evidence-business-org.md`
+- `cs/evidence/archive/kdt-legacy/evidence-creativity.md`
+- 創造とはの今までの調べ `evidence-philosophy.md`（この repo には無い）
 
 ## 出典
-- 抽出元: `codex/archive/deepdive/REPORT-container-mapping.md`（TASK #10d, 2026-02-07）
+- 抽出元: `cs/evidence/archive/kdt-codex/deepdive/REPORT-container-mapping.md`（TASK #10d, 2026-02-07）
