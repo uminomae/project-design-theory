@@ -207,9 +207,9 @@ export const TRANSLATIONS = {
     "repo.multiplication": "足し算ではなく、掛け算の経営 — 答えは「3 と 7」",
     "repo.multiplicationDesc":
       "複利の話ではない。向きと位相が振幅を決める「回転の掛け算」——チームの 3 と 7 を数学で確かめる読み物",
-    "repo.syllabus": "Love駆動開発は、事業構想の授業になるか — 事業構想総論 試案",
+    "repo.syllabus": "Love駆動開発は、事業構想の授業になるか — 総論と特論の試案",
     "repo.syllabusDesc":
-      "事業構想（Project Design）の総論の授業を、Love駆動開発の読み物で組むとしたら。特論と総論、各論を理解し実行するための土壌、前半「構想とは？」と後半「事業とは？」の 15 コマ。pjdhiro の思案を書き起こした試案で、現実の講義ではない",
+      "事業構想（Project Design）の授業を組むとしたら。総論は、学の輪郭と届く範囲を、見方の道具を持ってかんたんな順に一周する。特論は、Love駆動開発の読み物を順にたどる。pjdhiro の思案を書き起こした試案で、現実の講義ではない",
     "section.tools.label": "Tools",
     "section.tools.title": "ツール",
     "section.tools.body":
@@ -393,9 +393,9 @@ export const TRANSLATIONS = {
     "repo.multiplication": "Management by Multiplication, Not Addition — the Answer Is 3 and 7",
     "repo.multiplicationDesc":
       "Not compounding: a multiplication of rotations, where direction and phase drive amplitude. A reader that checks the 3 and 7 of teams with mathematics",
-    "repo.syllabus": "Could Love-Driven Development Be a Course on Project Design? — A Draft Syllabus",
+    "repo.syllabus": "Could Love-Driven Development Be a Course on Project Design? — Draft Survey and Special-Topics Syllabi",
     "repo.syllabusDesc":
-      "What a survey course on business design (Project Design) would look like if built on the Love-Driven Development reader: survey vs. special topics, soil for the specialized subjects of management, and 15 sessions split between 'what is a vision?' and 'what is a business?'. A draft written up from pjdhiro's thinking, not an actual course",
+      "What a course on business design (Project Design) could look like, split in two. The survey course tours the outline and reach of the field in 15 sessions, from easier to harder, with tools for checking one's own viewpoint. The special-topics course follows the Love-Driven Development reader in its own order. A draft written up from pjdhiro's thinking, not an actual course",
     "section.tools.label": "Tools",
     "section.tools.title": "Tools",
     "section.tools.body":
