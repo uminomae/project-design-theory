@@ -38,8 +38,8 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 本文を読めなかった論（2）は、表に並べず、論の数に入れていません。読めた範囲と読めなかった理由は、論ごとの節の最後の「本文を読めなかった論」に書いています。
 
-- 2. がん免疫編集（Dunn・Old・Schreiber 2002・2004）：要旨照合済
-- 8. 移植の拒絶と寛容（Medawar 1944、Billingham・Brent・Medawar 1953、Kawai ら 2008）：要旨照合済（Kawai）・未照合（Medawar 1944、1953）
+- 2\. がん免疫編集（Dunn・Old・Schreiber 2002・2004）：要旨照合済
+- 8\. 移植の拒絶と寛容（Medawar 1944、Billingham・Brent・Medawar 1953、Kawai ら 2008）：要旨照合済（Kawai）・未照合（Medawar 1944、1953）
 
 ## 論ごとの節
 

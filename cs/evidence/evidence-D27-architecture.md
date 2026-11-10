@@ -41,13 +41,13 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 
 本文を読めなかった論（7）は、表に並べず、論の数に入れていません。読めた範囲と読めなかった理由は、論ごとの節の最後の「本文を読めなかった論」に書いています。
 
-- 2. 形態発見（Otto）：未照合（書籍）。Liddell 2015 は確認画面
-- 3. 中間領域（van Eyck）：二次資料のみ（Withagen & Caljouw 2017、Team 10 の会議録 2006）。van Eyck の著作そのものは未照合（書籍）
-- 4. 閾空間（Hertzberger）：未照合（書籍。Internet Archive の貸し出し）
-- 5. 都市の多様性の条件（Jacobs）：未照合（書籍。Internet Archive の貸し出し）。Jacobs 1958 は 403
-- 9. 身体感覚の建築（Pallasmaa）：未照合（書籍。Internet Archive の貸し出し）
-- 11. 壁の厚み（poché）：未照合（原典が特定できない。Venturi 1966 の公開版は見つからなかった）
-- 12. 都市の認知的境界（Lynch）：未照合（書籍）。Lynch 1984 の見直しは有料
+- 2\. 形態発見（Otto）：未照合（書籍）。Liddell 2015 は確認画面
+- 3\. 中間領域（van Eyck）：二次資料のみ（Withagen & Caljouw 2017、Team 10 の会議録 2006）。van Eyck の著作そのものは未照合（書籍）
+- 4\. 閾空間（Hertzberger）：未照合（書籍。Internet Archive の貸し出し）
+- 5\. 都市の多様性の条件（Jacobs）：未照合（書籍。Internet Archive の貸し出し）。Jacobs 1958 は 403
+- 9\. 身体感覚の建築（Pallasmaa）：未照合（書籍。Internet Archive の貸し出し）
+- 11\. 壁の厚み（poché）：未照合（原典が特定できない。Venturi 1966 の公開版は見つからなかった）
+- 12\. 都市の認知的境界（Lynch）：未照合（書籍）。Lynch 1984 の見直しは有料
 
 12 の論のうち本文照合済は 5 です（Alexander・間・Menges・Aravena・Schumacher）。van Eyck は二次資料のみ、ほかの 6 つは未照合です。本文照合済の 5 つのうち、論文の形をしているのは Menges と O'Brien & Carrasco だけで、あとは講演の記録・論説・宣言・随筆です。O'Brien & Carrasco は Aravena の論そのものでなく、その実作の 15 年後の評価です。
 
