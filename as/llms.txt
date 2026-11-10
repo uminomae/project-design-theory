@@ -53,6 +53,7 @@ Research that bears on consciousness and awareness is re-examined area by area b
 - [予測と気づき / Prediction and awareness](https://uminomae.github.io/project-design-theory/as/evidence/evidence-A02-prediction-and-awareness.md) — How prediction and prediction error relate to what reaches awareness, and whether predictive processing is a theory of consciousness
 - [自己と境界 / Self and its boundaries](https://uminomae.github.io/project-design-theory/as/evidence/evidence-A03-self-and-boundary.md) — How watching one's own mind and the thinning of the sense of self have been described and measured in metacognition and meditation research
 - [内受容と情動 / Interoception and emotion](https://uminomae.github.io/project-design-theory/as/evidence/evidence-A04-interoception-and-emotion.md) — How signals from inside the body come to be felt, and whether emotions are built-in circuits or constructed in the moment
+- [不確かさと安全 / Uncertainty and safety](https://uminomae.github.io/project-design-theory/as/evidence/evidence-A05-uncertainty-and-safety.md) — Uncertainty, anxiety and stress, and the perception of safety: the view that a stress response is the default and perceived safety inhibits it, and its critics
 
 Earlier versions (three reader guides, a topic page and its slides, and a survey overview) were written before the claims were checked against the original sources. They were withdrawn from this site on 2026-11-10 and are no longer listed here.
 
