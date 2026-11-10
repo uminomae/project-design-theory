@@ -111,6 +111,9 @@ export function initHoverGrid(container, { onExpand } = {}) {
         const dy = Math.abs(touch.clientY - touchStartY);
         if (dx > TOUCH_MOVE_THRESHOLD || dy > TOUCH_MOVE_THRESHOLD) return; // drag, not tap
 
+        // マスの中のリンク（英語の工事中の「Read the Japanese version」・#73）は、閉じずにそのまま移る。
+        if (e.target.closest('a')) return;
+
         const cell = e.target.closest('.hover-grid-cell');
         if (!cell) return;
 

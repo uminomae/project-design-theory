@@ -97,11 +97,20 @@ export function createReportsModalController({
         setModalPdfButton(pdfUrl, { hide: hidePdf });
     }
 
-    async function openMarkdownModal({ mdUrl, title = '', pdfUrl = '', sources = [], modalContext = null }) {
-        const modalSources = normalizeModalSources({ mdUrl, pdfUrl, sources });
-        if (!modalSources.length) return;
-        const firstSource = modalSources[0];
+    // 読み込む md が無いときに、決まった文（英語の記録が無い分野の工事中など）を窓に出す（#73）。
+    function openNoticeModal({ title = '', html = '', modalContext = null }) {
+        applyModalContext(modalContext);
+        const modal = ensureMdModalInstance();
+        if (!modal) return;
+        ++state.modal.mdRequestId;
+        if (state.dom.mdModalTitle) state.dom.mdModalTitle.textContent = title || getStrings(state.config.lang).modalTitleDefault;
+        if (state.dom.mdModalMeta) state.dom.mdModalMeta.textContent = '';
+        if (state.dom.mdModalContent) state.dom.mdModalContent.innerHTML = html;
+        setModalPdfButton('', { hide: true });
+        modal.show();
+    }
 
+    function applyModalContext(modalContext) {
         if (modalContext?.type === 'domain') {
             setActiveDomainModalState(modalContext.domainId, modalContext.historyMode);
         } else if (modalContext?.type === 'guide') {
@@ -115,6 +124,14 @@ export function createReportsModalController({
             }
             setActiveGenericModalState(modalContext.modalKey, modalContext.historyMode);
         }
+    }
+
+    async function openMarkdownModal({ mdUrl, title = '', pdfUrl = '', sources = [], modalContext = null }) {
+        const modalSources = normalizeModalSources({ mdUrl, pdfUrl, sources });
+        if (!modalSources.length) return;
+        const firstSource = modalSources[0];
+
+        applyModalContext(modalContext);
 
         const modal = ensureMdModalInstance();
         if (!modal) {
@@ -257,5 +274,6 @@ export function createReportsModalController({
         ensureMdModalInstance,
         isMdModalVisible,
         openMarkdownModal,
+        openNoticeModal,
     };
 }

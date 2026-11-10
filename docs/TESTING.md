@@ -28,6 +28,7 @@
 | pd：wiki の孤立ページ・不在の出典・旧用語 | 公開する wiki の孤立ページ・出典のパス・使わなくなった用語。`--check` で報告を書き換えずに見る | project-design の `wiki-lint` |
 | pd：wiki が読めない原典を出典にしていない | 取れない原典を、wiki の出典ページが読んだことにしていない | project-design の `wiki-access-lint`（pd#114・cs#252） |
 | pd：wiki の古いページ（知らせるだけ） | 出典が `compiled` 日より後に変わった wiki のページの数。止めない。一覧は `pd/wiki/health/freshness-report.md` | project-design の `wiki-lint` の WL-3 を、git の日付で比べるように作り直した（2026-11-10） |
+| pd：wiki の出典ページが無い原典（知らせるだけ） | cs の台帳で読める原典（raw-confirmed・url-verified）なのに wiki の出典ページが無いものの数と、そのうち出典ノートがあるもの。止めない | project-design の `wiki-gen-check.sh` を、知らせるだけの形で作り直した（`pd/scripts/wiki-gen-check.mjs`・2026-11-10） |
 | as：テスト | 言語・画像カード・調査の一覧・スライドの組み立て | awareness-space の `test.yml` |
 | ks：config の整合・export | 3D の設定と開発パネルと言語の構造 | kesson-space の `test.yml` |
 | ks：devlog の移動と深いリンク・日英 | 開発記録のページ送り・深いリンク・日英の対応 | kesson-space の `devlog.yml`・`package.json` |
@@ -72,6 +73,7 @@ const { run } = await import('../src/page-check.js'); await run();
 ### 自動で動くもの
 
 - `.claude/hooks/content-compile.sh`：公開ページが読む Markdown を書き換えたら、wiki のリンク入りの版を作り直す。pd・cs・ks・as の正本を直したら、それを出典にする wiki のページを Claude に知らせる（`pd/scripts/wiki-stale-check.mjs`・2026-11-10）。知らされたページは、同じ作業で `.claude/skills/wiki-compile/SKILL.md` に沿って作り直す。hook は本体の checkout（`~/dev/pd/project-design-theory`）の版が動く。worktree で hook を直したときは、develop に取り込んでから効く（2026-11-10 に確かめた）。
+- セッションの始めの wiki の知らせ：`scripts/session-digest.sh` の終わりと `.claude/hooks/wiki-session-start.sh`（SessionStart）が、古いページと、出典ノートがあるのに出典ページが無い原典を出す（`pd/scripts/wiki-stale-check.mjs --session-start`）。作り直すのは司令塔が別のセッションに出す（`.claude/skills/wiki-compile/SKILL.md`・2026-11-10）。
 - launchd（`com.uminomae.project-design-theory`）：本体の checkout を `scripts/serve.sh` で 3001 に常駐させる。fswatch があれば、`pd/wiki/` が変わると wiki を組み直す（今までの `wiki-build.sh` の役目）。
 - GitHub Actions：`check.yml`（上の検査）と `pages.yml`（公開）。
 - 定期実行（launchd の定期・routine・scheduled task）は置いていない。
@@ -92,7 +94,6 @@ const { run } = await import('../src/page-check.js'); await run();
 | 読み込みの速さの目安 | 初めの表示までの時間・転送量・リクエスト数の目安を決め、超えたら知らせる | 3D や画像を足して重くなったとき | kesson-space の E2E（TC-08・TC-11） |
 | デザインの規約に沿うか | 色・文字の大きさ・余白が、決めたデザインの規約に沿うかを見る | デザインの規約（まとまり A の「あとで」・E）を決めたとき | project-design の `ui-lint.sh` |
 | ks の 3D の確かめ | シェーダーや 3D の設定を直したとき、設定の値と開発パネルと描画が揃っているかを見る。設定の整合は check.sh に入っている | ks のシェーダーを直すとき | kesson-space の `code-reviewer`・`config-validator` |
-| wiki の作り方の残り | `wiki/log.md` への自動の書き足し（今は手で書く）・セッションの始めに古いページを自動で作り直すこと・原典の台帳から、まだ無い出典ページを促すこと。知らせと作り直しの決まりは 2026-11-10 に入れた（上の「自動で動くもの」） | pjdhiro が要ると言ったとき | project-design の `wiki-log-append`・#77 の inbox・`wiki-gen-check` |
 | 英語の記事をそろえる定期の作業 | ks の記事の日本語版と英語版のずれを定期に見る。手では `cd ks && npm run articles:en:check` で見られる。通知先は決めていない | 英語の記事を育てるとき | kesson-space の `articles-en-routine.sh` |
 | 定期のレビュー | この repo の中のことだけを、決まった間隔で見直す（`~/dev/CLAUDE.md`） | pjdhiro が頼んだとき | project-design の `periodic-review` |
 
@@ -103,6 +104,7 @@ const { run } = await import('../src/page-check.js'); await run();
 | ファイル | 外した理由と、考え方の行き先 |
 |---|---|
 | `ks/tests/e2e-runner.js`・`ks/tests/e2e-test-design.md`・`ks/src/pages/e2e-auto-run.js` | 今のページに無い部品（`h1#title-h1`・`.subtitle`・GUIDES のカード ほか）を見ていた。考え方は `pd/src/page-check.js` と、上の「キーボードで使えるか」「読み込みの速さの目安」に継いだ |
+| project-design の `wiki-log-append`（commit のあとに `wiki/log.md` へ自動で書き足す） | 入れない（pjdhiro 2026-11-10・違和感帳「log.md に自動で書き足す仕組みを入れるか」への答え「A 入れない」）。log.md は、wiki を直したセッションが `.claude/skills/wiki-compile/SKILL.md` の手順 4 で手で書く。古いページと未作成の出典ページの知らせは、上の「自動で動くもの」に入れた |
 | `ks/scripts/agent-post-check.sh`・`cs/scripts/agent-post-check.sh`・`as/scripts/check-issue-close-state.sh` | サブエージェントが `.cache/outbox/DONE-*.md` を書く、今までの進め方を確かめていた。今はその置き場を使わない。頼んだ仕事が終わったかは、セッションの報告を、commit・差分・画面で確かめてから伝える（型 K） |
 | `cs/scripts/budget-check.sh` | サブスクの枠からサブエージェントを起こしてよいかを決めていた。今は、大きな作業の前に、コンテキストを使いすぎないかを考える（stance.md 2-8） |
 

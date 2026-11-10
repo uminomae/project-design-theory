@@ -11,4 +11,8 @@
 # 中身は scripts/session-digest.mjs（文字で切るために node で書いた）。
 set -euo pipefail
 here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-exec node "$here/session-digest.mjs" "$@"
+node "$here/session-digest.mjs" "$@"
+
+# wiki の知らせ：古いページと、出典ノートがあるのに出典ページが無い原典（2026-11-10・pjdhiro「C 両方入れる」）。
+# 作り直すのは司令塔が別のセッションに出す（.claude/skills/wiki-compile/SKILL.md「セッションの始めの知らせ」）。
+node "$here/../pd/scripts/wiki-stale-check.mjs" --session-start 2>/dev/null || true

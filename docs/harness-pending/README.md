@@ -21,6 +21,7 @@
 | `.claude/launch.json` | project-design の `launch.json` | 手元の確かめ用に、pd・as・ks・cs の四つのサーバーを並べた。2026-11-08 に `scripts/serve.sh` の `site` 一つにまとめた（cfd67e8） |
 | `.claude/skills/wiki-compile/SKILL.md` | project-design の `skills/wiki-compile`（SKILL・schemas・writing-rules・sources-pipeline）・`skills/wiki-lint` | 2026-11-10 に、今までの四つを手本にこの repo の言葉で一つに書き直した。正本を直したセッションが、知らされた wiki のページを同じ作業で作り直し、一緒に commit する決まりを置いた。材料に読み物とサイトの冒頭を入れた。PDF から出典ページを作る手順（sources-pipeline）と、CLI の依頼書のチェックリストは入れていない。wiki-lint は別のスキルを置かず、`pd/scripts/wiki-lint.mjs` と SKILL.md の「点検」の節にした |
 | `.claude/hooks/content-compile.sh` の wiki の知らせ・`pd/scripts/wiki-stale-check.mjs`・`pd/scripts/wiki-sources.mjs` | project-design の `content-compile.sh` の knowledge の引き金（#72・#77）と `scripts/wiki-stale-check.mjs` | 2026-11-10 に戻した。pd・cs・ks・as のファイルを直すと、それを出典にする wiki のページを Claude に知らせる（additionalContext）。repo の名前を一つの repo の形にし、#77 の inbox は外した。WL-3 は git の日付で古いページを並べるようにした（`pd/wiki/health/freshness-report.md`） |
+| `.claude/hooks/wiki-session-start.sh`・`pd/scripts/wiki-gen-check.mjs`・`scripts/session-digest.sh` の wiki の知らせ | project-design の `hooks/wiki-gen-check.sh` と #77 の inbox（`wiki-stale-check.mjs --write-inbox`） | 2026-11-10 に入れた（pjdhiro「C 両方入れる」・違和感帳）。セッションの始めに、古いページと、出典ノートがあるのに出典ページが無い原典を知らせる。inbox に依頼を書いて始めに自動で作り直す形はやめ、司令塔が作り直す別のセッションを出す形にした。台帳は今の形で読み、#62 で扱いが変わったら合わせる |
 
 **抜けていたもの（2026-11-10 に気づいた）**：2026-11-07 に `content-compile.sh` を入れたとき、今までの project-design の版にあった「knowledge を直したら `wiki-stale-check.mjs` を呼ぶ」引き金（#72・#77）を入れず、下の名前の置き場にも書いていなかった。スクリプトは `pd/scripts/` に来たが、呼ぶものが無かった。そのため 11-07 から 11-10 まで、正本を直しても wiki に知らせが出ず、wiki は 2026-04 の compile のままだった。上の二行で戻した。
 
@@ -54,8 +55,7 @@
 | project-design | `rules/session-management.md` | 記録の置き場は CLAUDE.md の「セッションの記録」に新しく書いた（上の「新しく書いたもの」）。state.md・ハンドオフ・inbox の部分は今の進め方に無い |
 | project-design | `rules/seo-llm.md` | まとまり E（サイトの発見性）で決める。**当たり（弱い）**：ks の `llms.txt` を組み直しで書き換え、pd の読み物に OGP を足した |
 | project-design | `hooks/ui-lint.sh` | `docs/DESIGN-RULES.md` に沿う検査。デザインの規約（まとまり A の「あとで」・E）を決めてから。**当たり**：#63 で as の見た目を多く直した |
-| project-design | `hooks/wiki-build.sh`・`wiki-log-append.sh` | wiki を手元で組む・`wiki/log.md` に書き足す。公開は `pages.yml` が組む。手元で組むのは `scripts/serve.sh`（fswatch）がしている。log.md への書き足しは、今は wiki-compile のスキルの手順で手で書く（2026-11-10）。自動にするかは pjdhiro に聞く |
-| project-design | `hooks/wiki-gen-check.sh` | cs の manifest から wiki の生成を促す。manifest を使い続けるか（#62）で決まる。2026-11-10 の作り直しでも入れなかった |
+| project-design | `hooks/wiki-build.sh`・`wiki-log-append.sh` | wiki を手元で組む・`wiki/log.md` に書き足す。公開は `pages.yml` が組む。手元で組むのは `scripts/serve.sh`（fswatch）がしている。`wiki-log-append` は入れない（pjdhiro 2026-11-10・違和感帳「log.md に自動で書き足す仕組みを入れるか」への答え「A 入れない」）。log.md は、wiki を直したセッションが wiki-compile のスキルの手順 4 で手で書く |
 | project-design | `scripts/static-checks.js`・`responsive-test.js`・`responsive-test.sh`・`scheduled-responsive-test.sh` | サイトの構造とスマートフォン表示の検査。まとまり C で決める。**当たり**：#63-2・#63-3 で、as のスマートフォンの表示を手で見て直した |
 | project-design | `skills/adversarial-review`・`agent-team-workflow`・`model-dispatch` | 複数のエージェントやモデルで確かめる手順。まとまり C で、道具立てを最小にして決める。**当たり**：11-07・11-08 に念入りなレビューを続けて頼まれた（stance.md「不具合が多そうなときのレビューは…」「レビューでは、使えるスキルや点検のスクリプトがあれば使う」） |
 | project-design | `skills/periodic-review`・`commands/periodic-review.md` | `~/dev/CLAUDE.md` に定期レビューの記録の置き方がある。この repo で定期レビューを置くかは決めていない |

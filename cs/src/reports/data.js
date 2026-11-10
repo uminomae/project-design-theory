@@ -671,16 +671,33 @@ export function resolveLocalizedSources(linksByLang, lang = 'ja') {
 // 分野の報告は、一次情報で確かめ直した記録（cs/evidence/evidence-Dxx-*.md）だけを読む（#73）。
 // 今までの報告（pjdhiro の repo の assets/creation/domains/ の日英の md・PDF・プレゼン版）は、
 // 2026-11-10 に日本語を記録への転送にし、英語版・PDF・プレゼン版を下げた（docs/rules/decisions.md）。
-// 記録は日本語だけなので、英語の画面では分野の報告を開かない（見せ方は決まっていない）。
+// 英語の画面では、英語の記録（cs/evidence/en/evidence-Dxx-*.md。reviewed.json の行の en に書く）を読む。
+// 英語の記録がまだ無い分野は、開くものが無いので空を返し、画面は工事中を出す（isDomainReportPendingEnglish）。
 export function resolveDomainReportSources(report, { lang = 'ja' } = {}) {
-    if (!report?.reviewRecord?.mdUrl || normalizeLang(lang) !== 'ja') return [];
+    const record = report?.reviewRecord;
+    const mdUrl = normalizeLang(lang) === 'en' ? record?.mdUrlEn : record?.mdUrl;
+    if (!mdUrl) return [];
     return [{
-        mdUrl: report.reviewRecord.mdUrl,
+        mdUrl,
         pdfUrl: '',
-        generated: report.reviewRecord.reviewed || '',
+        generated: record.reviewed || '',
         generatorModel: '',
         kind: 'review',
     }];
+}
+
+// 英語の画面で、日本語の記録はあるが英語の記録がまだ無い分野（#73・pjdhiro 2026-11-10「英語で工事中と書くのがいいよ」）。
+export function isDomainReportPendingEnglish(report, { lang = 'ja' } = {}) {
+    return normalizeLang(lang) === 'en' && Boolean(report?.reviewRecord?.mdUrl) && !report.reviewRecord.mdUrlEn;
+}
+
+// 日本語の記録を開く URL（今のページの ?domain=Dxx。lang を外して日本語の画面にする）。
+export function buildJapaneseDomainUrl(domainId, baseHref = window.location.href) {
+    const url = new URL(baseHref);
+    url.search = '';
+    url.hash = '';
+    url.searchParams.set('domain', normalizeDomainId(domainId));
+    return url.href;
 }
 
 export function resolveDomainThumbnailUrl(report) {
@@ -712,8 +729,12 @@ export async function loadReviewedRecords(url = REVIEWED_RECORDS_URL, baseHref =
             if (!id || !file || !/\.md$/i.test(file)) return;
             const mdUrl = safeUrl(`${REVIEWED_RECORDS_BASE}${file}`, '', baseHref);
             if (!mdUrl) return;
+            // 英語の記録は en/ に、日本語と同じファイル名で置く（docs/cs-review/README.md「記録の形」）。
+            const fileEn = hasText(entry?.en) ? entry.en.trim() : '';
+            const mdUrlEn = fileEn === `en/${file}` ? safeUrl(`${REVIEWED_RECORDS_BASE}${fileEn}`, '', baseHref) : '';
             map.set(id, {
                 mdUrl,
+                mdUrlEn,
                 reviewed: hasText(entry?.reviewed) ? entry.reviewed.trim() : '',
             });
         });

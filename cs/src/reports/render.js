@@ -32,6 +32,7 @@ export function createReportsRenderer({
     openMarkdownModal,
     openDomainModalById,
     getReportSources,
+    isReportPendingEnglish = () => false,
 }) {
     function getReportsScenarioLabel(scenario = state.data.activeScenario) {
         if (!scenario) return '';
@@ -297,7 +298,7 @@ export function createReportsRenderer({
         const level = normalizeProgressLevelId(report.progressLevel) || 'not_surveyed';
         const paletteClass = getProgressPaletteClass(level, paletteMap);
         const sources = getReportSources(report);
-        const clickable = sources.length > 0 && !muted;
+        const clickable = (sources.length > 0 || isReportPendingEnglish(report)) && !muted;
         const col = document.createElement('div');
         col.className = 'col';
         const tile = document.createElement('article');
@@ -347,7 +348,7 @@ export function createReportsRenderer({
         nameNode.textContent = domainLabel;
 
         body.appendChild(nameNode);
-        if (report.reviewRecord) {
+        if (sources.length > 0) {
             body.appendChild(createReviewedChip(report));
         }
 
@@ -357,7 +358,7 @@ export function createReportsRenderer({
         return col;
     }
 
-    // 一次情報で確かめ直した分野の印（#73）。日本語の画面では記録が先に開く。
+    // 一次情報で確かめ直した分野の印（#73）。今の言語の記録があるときだけ出す（英語の記録がまだ無い分野には出さない）。
     function createReviewedChip(report) {
         const strings = getReportsStrings(state.config.lang);
         const chip = document.createElement('span');
@@ -480,7 +481,7 @@ export function createReportsRenderer({
             contentArea.className = 'hover-grid-cell-content';
 
             cell.appendChild(name);
-            if (report.reviewRecord) {
+            if (getReportSources(report).length > 0) {
                 cell.appendChild(createReviewedChip(report));
             }
             cell.appendChild(contentArea);
@@ -490,16 +491,58 @@ export function createReportsRenderer({
         hoverContainer.appendChild(fragment);
     }
 
+    // 全画面の格子を一度作ったあとに言語が変わったら、名前と印を今の言語にし、読み込んだ中身を捨てる。
+    // マスの並びとイベントはそのまま使う（initHoverGrid はマスごとに結んでいるので、作り直さない）。
+    function refreshHoverGridLanguage() {
+        const hoverContainer = document.getElementById('hover-grid-container');
+        if (!hoverContainer) return;
+        const useJapanese = normalizeLang(state.config.lang) === 'ja';
+        hoverContainer.querySelectorAll('.hover-grid-cell').forEach((cell) => {
+            const report = state.data.reports.find((r) => r.id === cell.dataset.domainId);
+            if (!report) return;
+            const name = cell.querySelector('.hover-grid-cell-name');
+            if (name) name.textContent = useJapanese ? (report.nameJa || report.nameEn) : (report.nameEn || report.nameJa);
+            cell.querySelector('.reports-reviewed-chip')?.remove();
+            const contentArea = cell.querySelector('.hover-grid-cell-content');
+            if (getReportSources(report).length > 0) {
+                cell.insertBefore(createReviewedChip(report), contentArea);
+            }
+            if (contentArea) {
+                contentArea.innerHTML = '';
+                delete contentArea.dataset.loaded;
+            }
+        });
+    }
+
+    // 英語の記録がまだ無い分野の工事中（#73・stance 2-7）。読者向けに短く、日本語版へのリンクを添える。
+    function buildPendingEnglishHtml(japaneseUrl) {
+        const strings = getReportsStrings('en');
+        const link = document.createElement('a');
+        link.href = japaneseUrl;
+        link.textContent = strings.pendingEnLink;
+        link.className = 'reports-pending-en-link';
+        link.setAttribute('lang', 'en');
+        return `
+            <div class="reports-pending-en" lang="en">
+                <p class="reports-pending-en-title">${strings.pendingEnTitle}</p>
+                <p class="reports-pending-en-body">${strings.pendingEnBody}</p>
+                <p class="reports-pending-en-action">${link.outerHTML}</p>
+            </div>
+        `;
+    }
+
     function renderReports() {
         applyStaticText();
         renderFeatureCards();
         // renderMetrics(); // 調査内容以外のメトリクスカードは不要。安定したら削除する
         renderDomainGrid();
+        refreshHoverGridLanguage();
         setReportsError(state.data.loadError ? getReportsStrings(state.config.lang).error : '');
     }
 
     return {
         bindUiEvents,
+        buildPendingEnglishHtml,
         cacheDom,
         getStrings: getReportsStrings,
         renderHoverGrid,

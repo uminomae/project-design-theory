@@ -95,6 +95,10 @@ export const dict = {
             modalReviewed: '照合日',
             modalReviewNote: '論ごとに一次情報で確かめ直した記録（文責 Claude）',
             reviewedChip: '一次情報で照合済',
+            // 英語の画面で、英語の記録がまだ無い分野を開いたときの表示（#73・decisions「創造とはの英語の画面」）。日本語の画面では使わない。
+            pendingEnTitle: '工事中',
+            pendingEnBody: 'この分野の報告は、今は日本語だけです。英語版を準備しています。',
+            pendingEnLink: '日本語版を読む',
             features: {
                 general: {
                     title: '一般向け',
@@ -270,6 +274,9 @@ export const dict = {
             modalReviewed: 'Checked on',
             modalReviewNote: 'Re-checked theory by theory against primary sources (written by Claude)',
             reviewedChip: 'Checked against sources',
+            pendingEnTitle: 'Under construction',
+            pendingEnBody: 'This report is in Japanese only for now. We are preparing an English version.',
+            pendingEnLink: 'Read the Japanese version',
             features: {
                 general: {
                     title: 'General',
