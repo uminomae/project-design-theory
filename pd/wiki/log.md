@@ -620,3 +620,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「デザインは、場にも関わる」の畳み）
 - pages: どちらのページも、この畳みを引いていないので本文はそのまま。compiled は今日のまま
+
+## [2026-11-11] check | Love駆動開発の「適用条件がわかる」の例に、原文のカードと、自己の対象化・他者の視点・段階の畳みを足したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「効き目と、効く範囲」の畳み「ほかに：適用条件がわかる」）
+- pages: どちらのページも、この例を引いていないので本文はそのまま。`compiled` は今日のまま
