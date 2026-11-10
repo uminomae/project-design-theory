@@ -15,6 +15,8 @@
  *        # 同じセッションで同じファイルは一度だけ知らせる（.cache/wiki-stale/<session>.txt）
  *   node pd/scripts/wiki-stale-check.mjs --list    # 古いページ（出典が compiled 日より後に変わった）を並べる
  *   node pd/scripts/wiki-stale-check.mjs --count   # 古いページの数だけ（scripts/check.sh が使う）
+ *   node pd/scripts/wiki-stale-check.mjs --session-end
+ *        # 区切るときの知らせ（CLAUDE.md「セッションの終わりに」）。何かあれば、司令塔として作り直す別のセッションを出す
  *   node pd/scripts/wiki-stale-check.mjs --session-start [--json]
  *        # セッションの始めの知らせ（古いページと、出典ノートがあるのに出典ページが無い原典）。--json は SessionStart の hook の形
  *
@@ -89,16 +91,16 @@ async function main() {
     return;
   }
 
-  if (args.includes("--session-start")) {
+  if (args.includes("--session-start") || args.includes("--session-end")) {
     // セッションの始めの知らせ（scripts/session-digest.sh と .claude/hooks/wiki-session-start.sh が呼ぶ）。
-    // 古いページと、出典ノートがあるのに出典ページが無い原典を並べる。作り直すのは司令塔が別のセッションに出す
-    // （.claude/skills/wiki-compile/SKILL.md「セッションの始めの知らせ」）。何も無ければ何も出さない。
+    // 古いページと、出典ノートがあるのに出典ページが無い原典を並べる。作り直すのは、区切るセッションが記録を書いたあと
+    // 司令塔として出す別のセッション（pjdhiro 2026-11-10。.claude/skills/wiki-compile/SKILL.md）。何も無ければ何も出さない。
     if (isShallow()) return;
     const stale = stalePages(pages, lastChangeDates());
     let miss = [];
     try { miss = (await import("./wiki-gen-check.mjs")).missingSourcePages().filter((m) => m.note); } catch { /* 台帳が無い */ }
     if (!stale.length && !miss.length) return;
-    const lines = ["wiki の知らせ（セッションの始め）："];
+    const lines = [args.includes("--session-end") ? "wiki の知らせ（区切るとき）：" : "wiki の知らせ（セッションの始め）："];
     if (stale.length) {
       lines.push(`- 古いページ ${stale.length}（出典が compiled 日より後に変わった）：`);
       for (const s of stale.slice(0, 10)) lines.push(`  - pd/wiki/${s.rel} ← ${s.newer.map((n) => n.path).join("、")}`);
@@ -107,7 +109,9 @@ async function main() {
     if (miss.length) {
       lines.push(`- 出典ノートがあるのに wiki の出典ページが無い原典 ${miss.length}：${miss.slice(0, 10).map((m) => m.id).join("・")}`);
     }
-    lines.push("司令塔のセッションは、これを作り直す別のセッションを出す（wiki-compile のスキル。済んだら develop へ）。ほかのセッションは、自分の作業を続ける。");
+    lines.push(args.includes("--session-end")
+      ? "区切るセッションは、記録を書いたあと、司令塔としてこれを作り直す別のセッションを始める（.claude/skills/wiki-compile/SKILL.md「区切るときの作り直しの指令」の雛形に、この一覧を入れて渡す。main へは送らない）。自分では直さない。"
+      : "今は自分の作業を続ける。作り直しは、区切るときに司令塔として別のセッションに出す（CLAUDE.md「セッションの終わりに」・.claude/skills/wiki-compile/SKILL.md）。");
     const text = lines.join("\n");
     if (args.includes("--json")) {
       process.stdout.write(JSON.stringify({ hookSpecificOutput: { hookEventName: "SessionStart", additionalContext: text } }));
