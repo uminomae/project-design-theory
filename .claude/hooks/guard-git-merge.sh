@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # PreToolUse hook（Bash）：git の取り込み（merge・pull）を、ほかのコマンドと組んだ呼び出しで回すのを止める。
+# git rebase は、サンドボックスの中で回るもの（外で動かす印の無いもの・組んだもの）を止める（2026-11-11）。
 # .claude/settings.json の sandbox.excludedCommands は、呼び出しの全体が `git merge --ff-only …` などに合うときだけ
 # サンドボックスの外で動かす。パイプ・リダイレクト・&&・;・改行と組むと中に残り、.claude/ で止まって作業ツリーだけが進む。
 # 確認の文では止まらなかった（規約を読む前の操作は、読んで止める確認では止まらない）ので、機械で止める。
@@ -21,6 +22,34 @@ if not cmd:
 # heredoc の本文（commit の文など）は見ない。
 head = cmd.split("<<", 1)[0]
 C = r'(?:\s+-C\s+(?:"[^"]*"|\'[^\']*\'|\S+))?'
+Q = r'"(?:[^"\\]|\\.)*"|\'[^\']*\''
+
+# rebase：作業ツリーを書き換えるので、サンドボックスの中で回すと .claude/ で止まり、作業ツリーが develop の版に半分だけ
+# 書き換わる。sandbox.excludedCommands には入れず、外で動かす印（dangerouslyDisableSandbox）の無い rebase と、
+# ほかのコマンドと組んだ rebase を止める。作業ツリーに触らない --quit・--show-current-patch は通す。
+# 経緯：2026-11-11 に三つのセッション（Love駆動開発のネガティブ・ケイパビリティの表・湧く信号の表・#107 の調べ）が
+# `git rebase develop` をサンドボックスの中で回して止まった（docs/rules/corrections-k.md の「繰り返し」）。
+head_unquoted = re.sub(Q, '""', head)
+if re.search(r'(?:^|[\s;&|(])git' + C + r'\s+rebase(?=\s|$)', head_unquoted):
+    ti = p.get("tool_input") or {}
+    unquoted_all = re.sub(Q, '""', cmd)
+    alone = re.fullmatch(r'git' + C + r'\s+rebase' + r'[^|;&<>`$\n]*', unquoted_all)
+    if alone and re.search(r'\s--(?:quit|show-current-patch)(?=\s|$)', unquoted_all):
+        sys.exit(0)
+    if alone and ti.get("dangerouslyDisableSandbox") is True:
+        sys.exit(0)
+    print(
+        "止めました：git rebase は作業ツリーを書き換えるので、サンドボックスの中で回すと .claude/ で止まり、"
+        "作業ツリーが develop の版に半分だけ書き換わります（2026-11-11 に三回）。"
+        "worktree の枝の commit を develop に載せるなら、rebase でなく、本体の develop へ cherry-pick してください"
+        "（`git -C <本体> cherry-pick <commit>` を単独で、.claude/ が入るならサンドボックスの外で）。"
+        "worktree を develop に揃えるなら `bash scripts/sync-develop.sh` だけを回し、止まったらその案内に従ってください。"
+        "どうしても rebase が要るなら、rebase だけを一つの呼び出しにして、サンドボックスの外で回してください"
+        "（docs/rules/corrections-k.md の K1）。",
+        file=sys.stderr,
+    )
+    sys.exit(2)
+
 SUB = r'\s+(?:merge|pull)(?=\s|$)'
 if not re.search(r'(?:^|[\s;&|(])git' + C + SUB, head):
     sys.exit(0)
