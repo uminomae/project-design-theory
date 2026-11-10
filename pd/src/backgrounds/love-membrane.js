@@ -222,7 +222,6 @@ function start() {
     };
     const reduce = stillQuery || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
 
-    const renderer = new THREE.WebGLRenderer({ antialias: false, alpha: false });
     // 描く細かさは、画面の大きさで変える（描く画素の数に上限を置き、小さく描いて画面いっぱいに引き伸ばす）。
     // 重さは描く画素の数にほぼ比例する（1440×900・M4 の測り：cs と同じ細かさ＝1814×1134 で一枚 27〜29ms＝約 35fps、
     // 1361×851 で 18ms、907×567 で 10ms・2026-11-10）。上限は 907×567 ほど（52 万画素）。pjdhiro 2026-11-10「0.5 でも問題ないね。
