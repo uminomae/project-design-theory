@@ -58,8 +58,10 @@ export function createReportsModalController({
         return Boolean(state.dom.mdModal?.classList.contains('show'));
     }
 
-    function setModalPdfButton(pdfUrl) {
+    function setModalPdfButton(pdfUrl, { hide = false } = {}) {
         if (!state.dom.mdOpenPdf) return;
+        // 照合の記録（#73）は PDF を作らない。「PDF準備中」と出すと来ない PDF を約束するので、ボタンごと隠す。
+        state.dom.mdOpenPdf.classList.toggle('d-none', hide);
         const strings = getStrings(state.config.lang);
         const browserPdfUrl = normalizePdfBrowserUrl(pdfUrl);
         if (browserPdfUrl) {
@@ -75,7 +77,7 @@ export function createReportsModalController({
         }
     }
 
-    function setMarkdownModalLoading({ title, pdfUrl = '' }) {
+    function setMarkdownModalLoading({ title, pdfUrl = '', hidePdf = false }) {
         const strings = getStrings(state.config.lang);
 
         if (state.dom.mdModalTitle) {
@@ -92,7 +94,7 @@ export function createReportsModalController({
                 </div>
             `;
         }
-        setModalPdfButton(pdfUrl);
+        setModalPdfButton(pdfUrl, { hide: hidePdf });
     }
 
     async function openMarkdownModal({ mdUrl, title = '', pdfUrl = '', sources = [], modalContext = null }) {
@@ -122,7 +124,7 @@ export function createReportsModalController({
 
         const requestId = ++state.modal.mdRequestId;
         const availablePdfUrlPromise = resolveFirstAvailablePdfUrl(modalSources);
-        setMarkdownModalLoading({ title, pdfUrl: '' });
+        setMarkdownModalLoading({ title, pdfUrl: '', hidePdf: firstSource.kind === 'review' });
         modal.show();
 
         try {
@@ -172,7 +174,7 @@ export function createReportsModalController({
 
             if (requestId !== state.modal.mdRequestId) return;
 
-            setModalPdfButton(availablePdfUrl);
+            setModalPdfButton(availablePdfUrl, { hide: isReviewRecord });
             if (state.dom.mdModalContent) {
                 state.dom.mdModalContent.innerHTML = `
                     <div class="md-article">
