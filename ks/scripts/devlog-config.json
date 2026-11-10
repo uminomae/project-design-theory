@@ -1,24 +1,9 @@
 {
   "approved_repos": [
     {
-      "name": "kesson-space",
+      "name": "project-design-theory",
       "owner": "uminomae",
-      "local_path": "~/Documents/GitHub/kesson-space",
-      "remote": "git@github.com:uminomae/kesson-space.git",
-      "permissions": ["read_log", "push_assets", "push_branch"]
-    },
-    {
-      "name": "pjdhiro",
-      "owner": "uminomae",
-      "local_path": "~/Documents/GitHub/pjdhiro",
-      "remote": "git@github.com:uminomae/pjdhiro.git",
-      "permissions": ["read_log"]
-    },
-    {
-      "name": "kesson-driven-thinking",
-      "owner": "uminomae",
-      "local_path": "~/Documents/GitHub/kesson-driven-thinking",
-      "remote": "git@github.com:uminomae/kesson-driven-thinking.git",
+      "pathspec": "ks",
       "permissions": ["read_log"]
     }
   ],
