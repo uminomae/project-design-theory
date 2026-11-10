@@ -535,3 +535,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（畳み「意図しないまま育つものも、開発に入れる」）
 - pages: どちらのページも、足した見方を引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] compile | Love駆動開発の期待の章と構想の章に、実務の期待外れの見方へ戻るリンクを足したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「期待は先に向き、信頼は積み重ねの上に立つ」「構想は、まだ分からない」の頭）
+- pages: どちらのページも、足した一文を引いていないので本文はそのまま。`compiled` は今日のまま
