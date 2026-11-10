@@ -16,7 +16,13 @@ This is the research site of pjdhiro exploring **what creation is** — structur
 
 Field (場) → Wave (波) → Edge (縁) → Vortex (渦) → Bundle (束)
 
-A structural pattern observed across 30 academic domains describing how creative processes emerge. Each domain independently exhibits analogous phase transitions that map onto this five-stage sequence.
+- Field (場): A stable state, like the sea before waves rise. A starting point in theory.
+- Wave (波): Differences arise in the field and rise as a sway. The situation changes; the differences part and face each other.
+- Edge (縁): The border where different things meet and collide. New relations and rules arise there. (Not the "edge of chaos" of complexity science.)
+- Vortex (渦): Rises as one whole. The two remain distinguishable, yet it is as if they were one.
+- Bundle (束): Vortices affect one another and remain together as a new form. It becomes the next field.
+
+The five stages do not always proceed in order; they run at the same time and interpenetrate. The definitions are provisional, written in two layers: pjdhiro's own felt sense (the working definition above), and features other theories report ("other accounts describe cases like this"). Features found in the survey of 30 academic domains are discussed and built in to strengthen the definition. The canonical source is `knowledge/schema/five-stages.md`.
 
 ### Cross-Domain Structural Similarity
 
