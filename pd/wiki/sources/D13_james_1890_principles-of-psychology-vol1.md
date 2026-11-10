@@ -40,6 +40,10 @@ William James が 1890 年に出した二巻の本の第 1 巻（約 700 頁）�
 
 関係やこれから向かう先は、外から付ける説明ではなく、流れの中で内側から感じられている対象だ、と James は書く。
 
+> "We ought to say a feeling of and, a feeling of if, a feeling of but, and a feeling of by, quite as readily as we say a feeling of blue or a feeling of cold." (第 IX 章)
+
+「青い」「冷たい」の感じと同じように、「そして」「もし」「しかし」「によって」の感じがある、と James は言う。
+
 ### 像を取り巻く暈と縁
 
 > "Every definite image in the mind is steeped and dyed in the free water that flows round it. ... The significance, the value, of the image is all in this halo or penumbra that surrounds and escorts it, — or rather that is fused into one with it and has become bone of its bone and flesh of its flesh" (p.255)
@@ -104,4 +108,4 @@ James は、人格のまとまりを説明する三つの説（変わらない�
 ## 出典メモ
 
 - 材料は創造とはの精読ノート二つだけ。ノートの引用は、2026-11-10 に Internet Archive の同じ走査の文字の層と照らし、ここに載せたものはすべて一致した（OCR の乱れは文字だけで比べた）。目次の見出しの句は、原文に一度ずつ（目次に）あることを確かめた。
-- 哲学の角度のノートのうち、原文と一致しなかった一つの引用（接続詞の感じを述べる文）は載せていない。
+- 接続詞の感じを述べる引用は、原文では文の途中に脚注が入っているので、照らしの道具では一致が低く出た。原文を開いて、同じ文であることを確かめた。
