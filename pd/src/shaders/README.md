@@ -17,6 +17,7 @@
 
 ## ページ固有の背景
 
+- `src/backgrounds/love-membrane.js`：Love駆動開発の背景（`?bg=membrane`）。創造とはの `cs/src/scene-intent.js` の作り方（ジャイロイドの膜の体積のレイマーチ）を移し、膜を二枚（二重ジャイロイド）・軸に近いほど強い渦にしたもの。確かめ用に `?yaw=&pitch=&vortex=&split=&dist=&t=&jitter=&shell=&mg=` で値を上書きできる
 - `src/backgrounds/love-gemini.js`：Love駆動開発の背景（Gemini 作・2026-11-10）。`?bg=gemini`。頼む文は `pd/docs/gemini-prompt-love-background.md`。Gemini の出力から直したのは、動かすための二か所だけ（ファイルの頭に書いた）
 - `src/backgrounds/love-gemini2.js`：同じく Gemini 作の二つ目（蔵本モデルの同期とトーラスの網目）。`?bg=gemini2`。直したのは vertexColors の一か所だけ
 - `src/backgrounds/love-gemini3.js`：同じく Gemini 作の三つ目（複素ポテンシャルの渦の粒と、中央の液体のような面）。`?bg=gemini3`。直したのは ParametricGeometry（`parametric-geometry.js` を使う）と vertexColors の二か所
