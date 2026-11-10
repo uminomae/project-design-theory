@@ -66,7 +66,7 @@ const { run } = await import('../src/page-check.js'); await run();
 
 ### 自動で動くもの
 
-- `.claude/hooks/content-compile.sh`：公開ページが読む Markdown を書き換えたら、wiki のリンク入りの版を作り直す。pd・cs・ks・as の正本を直したら、それを出典にする wiki のページを Claude に知らせる（`pd/scripts/wiki-stale-check.mjs`・2026-11-10）。知らされたページは、同じ作業で `.claude/skills/wiki-compile/SKILL.md` に沿って作り直す。
+- `.claude/hooks/content-compile.sh`：公開ページが読む Markdown を書き換えたら、wiki のリンク入りの版を作り直す。pd・cs・ks・as の正本を直したら、それを出典にする wiki のページを Claude に知らせる（`pd/scripts/wiki-stale-check.mjs`・2026-11-10）。知らされたページは、同じ作業で `.claude/skills/wiki-compile/SKILL.md` に沿って作り直す。hook は本体の checkout（`~/dev/pd/project-design-theory`）の版が動く。worktree で hook を直したときは、develop に取り込んでから効く（2026-11-10 に確かめた）。
 - launchd（`com.uminomae.project-design-theory`）：本体の checkout を `scripts/serve.sh` で 3001 に常駐させる。fswatch があれば、`pd/wiki/` が変わると wiki を組み直す（今までの `wiki-build.sh` の役目）。
 - GitHub Actions：`check.yml`（上の検査）と `pages.yml`（公開）。
 - 定期実行（launchd の定期・routine・scheduled task）は置いていない。
