@@ -463,3 +463,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（問い 3 の段：人は何もしないわけではなく、全てをコントロールできるわけではないところで対処している）
 - 結果: `concepts/Love 駆動開発` の「開発」の節に一文足した。`プロジェクトデザイン` はこの段を引いていない。compiled はどちらも 2026-11-10
+
+## [2026-11-10] compile | Love駆動開発の全体レビューの直しと、七つの問いの答えを入れたとき（#111）
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（Love の置き方を二つの面に・結論の「この欠け」と pjdhiro の言葉・「スクリーナー」を「ふるい」に・効き目を「軽く考えても二種類…など」に）
+- 結果: `concepts/Love 駆動開発` の四つの段を今の正本に合わせた。`プロジェクトデザイン` はこれらの段を引いていない。compiled はどちらも 2026-11-10
