@@ -345,6 +345,29 @@ function start() {
     };
     const render = () => renderer.render(scene, camera);
 
+    // 長く開いたままでも形が粗くならないように、時刻と落ちた量を始めの値に戻す（pjdhiro 2026-11-10・違和感帳「three」で「手当てを入れる」）。
+    // 二つは動いているあいだ増え続け、画面の計算の小数の桁が足りなくなると膜の線がごわつく。
+    // 一時間（?reset=秒 で上書き・0 で戻さない）ごとに、ゆっくり暗くして戻し、ゆっくり明るくする。調整のページでは戻さない
+    const RESET_AFTER = qn('reset') ?? 3600;
+    const FADE_MS = 1600;
+    let cycleStart = t, resetting = false;
+    const maybeReset = () => {
+        if (resetting || q.has('studio') || !(RESET_AFTER > 0) || t - cycleStart < RESET_AFTER) return;
+        resetting = true;
+        const el = renderer.domElement;
+        el.style.transition = `opacity ${FADE_MS}ms ease`;
+        el.style.opacity = '0';
+        setTimeout(() => {
+            t = T0 + START_E;
+            fall = fallAt(START_E);
+            cycleStart = t;
+            update(0);
+            render();
+            el.style.opacity = '';
+            setTimeout(() => { resetting = false; }, FADE_MS);
+        }, FADE_MS + 100);
+    };
+
     // ?fps：左上に、一秒ごとの描いた枚数と一枚あたりの間隔を出す（確かめ用）
     let fpsEl = null, fpsN = 0, fpsT0 = 0, fpsWorst = 0;
     if (q.has('fps')) {
@@ -373,6 +396,7 @@ function start() {
         last = now;
         update(dt);
         render();
+        maybeReset();
     };
     const run = () => {
         if (raf || reduce) return;
