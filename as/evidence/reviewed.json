@@ -17,7 +17,7 @@
       "reviewed": "2026-11-10",
       "name_ja": "予測と気づき",
       "name_en": "Prediction and awareness",
-      "summary_ja": "予測と誤差は、意識に上ることとどう関わるか。予測処理は意識の理論か",
+      "summary_ja": "脳のモデルの予測と予測誤差は、意識に上ることとどう関わるか。予測処理は意識の理論か",
       "summary_en": "How prediction and prediction error relate to what reaches awareness, and whether predictive processing is a theory of consciousness"
     },
     {
@@ -28,6 +28,15 @@
       "name_en": "Self and its boundaries",
       "summary_ja": "メタ認知や瞑想で、自分を観ること、自己の境界が薄れることは、どう記述され、何が測られてきたか",
       "summary_en": "How watching one's own mind and the thinning of the sense of self have been described and measured in metacognition and meditation research"
+    },
+    {
+      "id": "A04",
+      "file": "evidence-A04-interoception-and-emotion.md",
+      "reviewed": "2026-11-10",
+      "name_ja": "内受容と情動",
+      "name_en": "Interoception and emotion",
+      "summary_ja": "体の内側の信号は、どう感じとして意識に上るか。情動は生まれつきの回路か、その場で組み立てられるか",
+      "summary_en": "How signals from inside the body come to be felt, and whether emotions are built-in circuits or constructed in the moment"
     }
   ]
 }

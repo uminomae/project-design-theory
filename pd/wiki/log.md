@@ -415,3 +415,19 @@ compile 実行の履歴。append-only。
 - sources: `cs/knowledge/source-notes/D23/D23-S14_van-geert-1998.md`・`D20/D20-S16_friston-2013.md`・`D29/D29-S10_hordijk-hein-steel-2010.md`
 - pages: `sources/D23_van_1998_piaget-vygotsky-and-beyond` と `sources/D23_vangeert_1998_piaget-vygotsky-beyond-dst` は同じ原典（D23-S14）の重複だったので、出典ノートを出典にしている後者にまとめ、前者を外した。移したのは、出典ノートで確かめられた記述（重みのロジスティック成長、近い内容への広がりと遠い内容への負の作用、一時的な退行）と、題・英題の aliases だけ。前者にあってノートに無い記述（「成長子（growers）」の語、van der Maas et al. 2017 の先駆という位置づけ）は移していない。後者にソース参照と出典メモを足した。index のリンクを外した。`sources/D20_friston_2013_life-as-we-know-it`（引用 8）と `sources/D29_hordijk-hein-steel_2010_autocatalytic-sets-origin-of-life`（引用 7）を出典ノートから新しく作り、index に足した
 - 確かめ: Hordijk らの引用 7 件を手元の PDF の本文と照らした。6 件は一致。'catalytic closure' の引用符は原文では二重の引用符で、ノートが入れ子の引用符として一重にしている。Friston は手元に PDF が無く、照らしていない
+
+## [2026-11-10] compile | 創造の5段階モデル
+- scope: 概念ページ 1
+- sources: cs/knowledge/schema/five-stages.md・glossary.md・five-stages-guide.md（語の直し：縁 Edge・出会い・衝突、渦 包摂、場 無（認知しづらい））
+- pages: 創造の5段階モデル（定義の表と縁の見出しの語を直し、「境界は帯域」が 4 領域で独立に確認された、の言い方を、建築では独立の収束と言えない、に直した）
+
+## [2026-11-10] check | concepts/欠損駆動思考
+- scope: 概念ページ 1（始めの知らせ）
+- sources: ks/knowledge/schema/glossary.md（97744b2：五段階の英語名と過程の語を図 Ver.1.3 にそろえた）
+- pages: ページは五段階の名前（場・波・縁・渦・束）を並べるだけで、直った英語名や過程の語を書いていないので、本文は変えず compiled を今日にした
+
+## [2026-11-10] compile | 出典が分からず古さを見張れなかった 5 ページを、今の正本から作り直す（pjdhiro「作り直して」）
+- scope: 概念ページ 2（抱持・情動の構成）・横断ページ 3（kesson-space-overview・awareness-space-overview・concept-entity-map）
+- sources: ks の core-definitions.md・トップ（ks/index.html）・knowledge の索引、as の knowledge/README.md・起点メモ・トップ（as/index.html）、pd の awareness-model v3・CN-005/006/008・kesson-bridge.md・調査レポート・site-data.mjs ほか（各ページの source）
+- pages: front matter の `note:` を、正本の path に替えた。本文は今の正本から作り直し、正本で確かめられない記述と、正本（v3 §5）で LLM 構成物とされた枠の上に書かれていた記述（Container の 6 類型・層の番号・脳部位の対応・Klein の分裂と統合の節・精神疾患の表ほか）を外した。概観の 2 枚は今のサイトのトップと knowledge の置き場に合わせ、concept-entity-map は今の concepts・keywords の並びに合わせて、正本に書いてある対応とリンクだけの対応を分けた
+- 仕組み: サイトのトップの HTML を正本にしたので、WL-3 の日付の比べを pd・cs・ks・as の全体に広げ、hook の知らせを .md でないファイルにも出すようにした

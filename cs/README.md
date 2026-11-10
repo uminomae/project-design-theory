@@ -35,8 +35,8 @@ This project collects and analyzes structural similarity patterns of creative pr
 |:---:|--------|---------|---------|---------|
 | 1 | 場 | Field | 無 — まだ分かれていない海のような状態 | 漂う — Drifting in undifferentiated potential |
 | 2 | 波 | Wave | ゆれ・対立 — 場の中に差が生まれる | 分離 — Separating into opposites |
-| 3 | 縁 | Edge / Relation | 境界・関係 — 接し、影響し合う場所 | 繋がり — Connecting at boundaries |
-| 4 | 渦 | Vortex | 個・立ち上がり — ひとつのまとまりが立ち上がる | 包摂・融合 — Integrating into a whole |
+| 3 | 縁 | Edge | 境界・関係 — 異質なものが出会い、ぶつかる境目 | 出会い・衝突 — Meeting and colliding at the border |
+| 4 | 渦 | Vortex | 個・立ち上がり — ひとつのまとまりが立ち上がる | 包摂 — Distinguishable, yet as if one |
 | 5 | 束 | Bundle | 方向 — 渦どうしが構造として残る集まり | 集合 — Converging into lasting structure |
 
 ## 30の調査領域 / 30 Domains
