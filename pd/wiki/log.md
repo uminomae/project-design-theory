@@ -682,3 +682,8 @@ compile 実行の履歴。append-only。
 - scope: 横断ページ 1
 - sources: `as/index.html`（「調べてきたこと」に A11 安定とつながりの感じ・手放す構え、A12 信頼の定義と長い時間の動機を足した）・`as/knowledge/concepts/CN-001`（S18 の引用を本人の訂正に揃えた。概観は引用を載せていないので直すところ無し）・`as/knowledge/raw/manifest.md`（行が増えた。概観は台帳の行数を書いていない）
 - pages: `cross-refs/awareness-space-overview` の「調べてきたこと」の本数を十本から十二本にし、二本の題を並びに足した
+
+## [2026-11-11] check | Love駆動開発の第六部の章題をそろえたのに合わせて確かめた
+- scope: 概念ページ 1・トップ 1
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（「デザインは、場にも関わる」を「デザインは、どこに関わるか」、「効き目と、効く範囲」を「入力を整えると、何が変わるか」にし、「この見方は、何の役に立つのか」の終わりに後ろの三章の並びを書いた）
+- pages: `concepts/Love 駆動開発` と `プロジェクトデザイン` は、この二つの章題を引いていない。中身は直さず、compiled は今日のまま
