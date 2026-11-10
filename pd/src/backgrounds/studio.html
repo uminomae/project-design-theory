@@ -12,7 +12,7 @@
     <title>膜の渦の調整</title>
     <style>
         html, body { margin: 0; height: 100%; background: #02050d; overflow: hidden; font-family: "Noto Sans JP", system-ui, sans-serif; }
-        #webgl-container { position: fixed; inset: 0; }
+        #webgl-container { position: fixed; inset: 0; cursor: ew-resize; touch-action: none; }
         .lil-gui.root { --width: 320px; --name-width: 44%; }
         #readout {
             position: fixed; left: 12px; bottom: 12px; color: #cfd6e6; font: 12px/1.6 ui-monospace, monospace;
@@ -57,6 +57,7 @@
         const P = {
             一時停止: false,
             経過秒: 0,
+            ドラッグの幅: 60,
             '1:30 へ': () => lm.seek(90),
             '4:30 へ': () => lm.seek(270),
             落ちる速さ: 0.25,
@@ -83,7 +84,9 @@
 
         const g0 = gui.addFolder('時刻と位置');
         g0.add(P, '一時停止').onChange((v) => { lm.paused = v; });
-        g0.add(P, '経過秒', 0, 600, 1).name('経過秒へ跳ぶ').onFinishChange((v) => lm.seek(v));
+        // 動かしながら映像が変わる（つまみを左右に滑らせて時刻を送り戻す）
+        const timeCtl = g0.add(P, '経過秒', 0, 600, 0.1).name('時刻（秒）').onChange((v) => lm.seek(v));
+        g0.add(P, 'ドラッグの幅', 10, 300, 1).name('画面の幅＝何秒');
         g0.add(P, '1:30 へ');
         g0.add(P, '4:30 へ');
         g0.add(P, '速さを手で').onChange((v) => { lm.speed = v ? P.落ちる速さ : null; });
@@ -142,11 +145,38 @@
             navigator.clipboard?.writeText(out.value).catch(() => {});
         } }, '書き出す').name('今の値を書き出す（コピー）');
 
+        // 画面を左右にドラッグして時刻を送り戻す（右へ＝先へ、左へ＝前へ）。ドラッグのあいだは止める。
+        // Shift を押しながらだと 1/5 の細かさ
+        let drag = null;
+        const stage = document.getElementById('webgl-container');
+        stage.addEventListener('pointerdown', (ev) => {
+            drag = { x: ev.clientX, e: lm.elapsed, wasPaused: lm.paused };
+            lm.paused = true;
+            stage.setPointerCapture(ev.pointerId);
+        });
+        stage.addEventListener('pointermove', (ev) => {
+            if (!drag) return;
+            const fine = ev.shiftKey ? 0.2 : 1;
+            const e = Math.max(0, drag.e + ((ev.clientX - drag.x) / window.innerWidth) * P.ドラッグの幅 * fine);
+            lm.seek(e);
+        });
+        const endDrag = () => {
+            if (!drag) return;
+            lm.paused = drag.wasPaused || P.一時停止;
+            drag = null;
+        };
+        stage.addEventListener('pointerup', endDrag);
+        stage.addEventListener('pointercancel', endDrag);
+        let sliding = false;
+        gui.domElement.addEventListener('pointerdown', () => { sliding = true; });
+        window.addEventListener('pointerup', () => { sliding = false; });
+
         const ro = document.getElementById('readout');
         const tick = () => {
             const e = lm.elapsed;
             const m = Math.floor(e / 60), s = Math.floor(e % 60).toString().padStart(2, '0');
-            ro.textContent = `経過 ${m}:${s}（${e.toFixed(0)} 秒）  落ちた量 ${lm.fall.toFixed(2)}  左右 ${deg(U.uYaw.value).toFixed(1)}°  上下 ${deg(U.uPitch.value).toFixed(1)}°`;
+            if (!sliding && Math.abs(P.経過秒 - e) > 0.05) { P.経過秒 = Math.min(600, +e.toFixed(1)); timeCtl.updateDisplay(); }
+            ro.textContent = `画面を左右にドラッグで時刻を送り戻し（Shift で細かく）  経過 ${m}:${s}（${e.toFixed(0)} 秒）  落ちた量 ${lm.fall.toFixed(2)}  左右 ${deg(U.uYaw.value).toFixed(1)}°  上下 ${deg(U.uPitch.value).toFixed(1)}°`;
             requestAnimationFrame(tick);
         };
         tick();
