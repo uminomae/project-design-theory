@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D01_carlsson_2009_topology-and-data.pdf"
   manifest_id: "D01-S02"
-compiled: "2026-04-10"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---

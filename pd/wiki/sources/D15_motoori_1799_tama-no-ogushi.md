@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D15_motoori_1799_tama-no-ogushi.pdf"
   manifest_id: "D15-S04"
-compiled: "2026-04-10"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---
@@ -45,7 +45,7 @@ review_state: 未レビュー
 - 年: 1799年（寛政11年）
 - 出典: 本居宣長全集（筑摩書房）に所収
 - access_status: raw-confirmed
-- **全文**: [Wikimedia Commons](https://commons.wikimedia.org/)
+- **全文**: Wikimedia Commons に置かれた PDF（台帳にファイルの URL の記録が無いので、リンクは張っていない）
 
 ## ソース参照（GitHub・検証用）
 

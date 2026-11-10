@@ -12,7 +12,7 @@
 
 - **著者**: William P. Thurston
 - **タイトル**: On Proof and Progress in Mathematics
-- **出典**: *Bulletin of the American Mathematical Society*, Volume 30, Number 2, April 1994, Pages 161-177
+- **出典**: *Bulletin of the American Mathematical Society*, Volume 30, Number 2, April 1994, Pages 161-178（Crossref。arXiv 版の頭書きは 161-177）
 - **DOI / URL**: https://arxiv.org/abs/math/9404236
 - **注記**: Received by the editors October 26, 1993. 1991 Mathematics Subject Classification: Primary 01A80. Jaffe-Quinn の "Theoretical Mathematics" への応答として執筆された。
 

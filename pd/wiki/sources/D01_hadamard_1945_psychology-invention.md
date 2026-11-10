@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D01_hadamard_1945_psychology-invention.pdf"
   manifest_id: "D01-S07"
-compiled: "2026-04-13"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---

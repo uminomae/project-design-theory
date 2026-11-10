@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D15_kant_1790_kritik-der-urteilskraft.pdf"
   manifest_id: "D15-S07"
-compiled: "2026-04-10"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---
@@ -49,9 +49,9 @@ Immanuel Kant による1790年刊行の哲学書。純粋理性批判（1781年�
 - 著者: Immanuel Kant
 - 年: 1790
 - 出典: Kritik der Urteilskraft, Berlin: Lagarde und Friedrich
-- 邦訳参照: 牧野英二訳『判断力批判』岩波文庫（上下巻）
+- 読んだ本: 『Kant's gesammelte Schriften』Bd. V（Berlin: Reimer, 1908）の『判断力批判』の部分（アカデミー版 pp.165–485・独語原文）。邦訳（牧野英二訳『判断力批判』岩波文庫）は手元の写しではない
 - access_status: raw-confirmed
-- **全文**: [Wikimedia Commons](https://commons.wikimedia.org/)
+- **全文**: Wikimedia Commons に置かれた PDF（台帳にファイルの URL の記録が無いので、リンクは張っていない）
 
 ## ソース参照（GitHub・検証用）
 

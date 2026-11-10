@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/source-notes/D09/D09-S07_schultz-1997.md"
   manifest_id: "D09-S07"
-  oa_url: "http://www.cs.utexas.edu/~dana/Reward.pdf"
+  oa_url: "http://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf"
 compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー

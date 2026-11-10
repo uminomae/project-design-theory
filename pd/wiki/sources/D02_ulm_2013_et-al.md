@@ -1,7 +1,7 @@
 ---
 title: "Kibble–Zurek スケーリング則 — イオン結晶での欠陥形成の観測"
 description: "Ulm ら (2013) Nature Communications 論文。16 個のレーザー冷却イオン結晶の線形–ジグザグ構造相転移を用い、対称性の破れに伴う欠陥形成が臨界点の横断速度のべき乗則に従うことを実験的に検証した。測定指数 β=2.68±0.06 は有限非均一系の理論予測 8/3≈2.67 と一致し、メソスコピック領域でも Kibble–Zurek 機構が成立することを示した。"
-aliases: ["Observation of the Kibble-Zurek scaling law for defect formation in ion crystals", "Kibble-Zurek mechanism"]
+aliases: ["Observation of the Kibble-Zurek scaling law for defect formation in ion crystals", "Kibble-Zurek mechanism", "D02_unknown_0000_observation-of-the-kibble"]
 tags: [source, "D02", "原典解説"]
 source:
   repo: "creation-space"
