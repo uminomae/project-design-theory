@@ -25,9 +25,8 @@ link ok pd/knowledge/research/stages-screener/  # 上のページの正本と、
 link ok pd/scripts/build-screener-artifact.py
 link ok pd/scripts/screener-artifact-template.html
 
-# --- wait：判断を待っている（Issue #111 束 8）
-# 非公開の repo の手元の置き場。開発記録を作る道具が読む設定なので、書き換えると道具が動かなくなる
-home wait ks/scripts/devlog-config.json
+# --- wait：判断を待っている
+# （今は無い。開発記録を作る道具の設定 ks/scripts/devlog-config.json は、2026-11-10 に手元の置き場の記述を外した。Issue #111 の問い 14）
 
 # 共有のリンク（link）は、公開の repo に置いてよいかを pjdhiro が決めるまで、点検で止めずに数とファイルを知らせる。
 # だから wait の行は要らない。上の ok の行は、その数から外すためにある。
