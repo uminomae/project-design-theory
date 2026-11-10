@@ -40,7 +40,7 @@
 |---|---|
 | 毎回 | `docs/rules/stance.md`：pjdhiro の見方と判断の仕方。迷ったら、pjdhiro ならどう判断するかをここで確かめる。`docs/rules/corrections.md`：Claude が繰り返す誤りの型。自分の案がどの型に当たるかを見る |
 | 公開文を書く・直す | `docs/rules/writing.md`：公開文の書き方。`docs/rules/corrections-examples.md`：当たりそうな型の行だけ。`docs/rules/corrections-rg.md`：型 R・G の確認のうち、当たる節だけ（pjdhiro に手作業を頼むときは R5）。main に出す前に念入りに見るときは `docs/rules/review.md`：レビューの手順 |
-| 公開ページを作る・直す（commit の前と main に送る前。必ず） | `.claude/skills/public-page-review/SKILL.md`：これまで公開ページで起きた誤りから溜めた点検の表。§1・§2 は毎回、残りは触ったものの節。直しや指摘があったら、同じ作業で表に足す（pjdhiro 2026-11-10） |
+| 公開ページを作る・直す（commit の前と main に送る前。必ず） | `.claude/skills/public-page-review/SKILL.md`：これまで公開ページで起きた誤りから溜めた点検の表。§1・§2 は毎回、残りは触ったものの節。直しや指摘があったら、同じ作業で表に足す。通したら `bash scripts/public-page-review.sh --done`（無いと pre-commit が止める）（pjdhiro 2026-11-10） |
 | 手を動かす作業（git の取り込み・push、生成・検査、画面、調べと記録）を始める | `docs/rules/corrections-k.md`：型 K の確認のうち、K0 と、その作業の節だけ。worktree で始めるときは、取り込みを回す前に K1 を読む |
 | 既存の理論・東洋思想・五段階の語を扱う | `docs/rules/stance-theories.md`：理論との距離 |
 | 調べる・引用する | `docs/rules/sources.md`：調べ方と原典の照合 |
