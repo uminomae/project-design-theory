@@ -672,3 +672,8 @@ compile 実行の履歴。append-only。
 - scope: 概念ページ 1・トップ 1
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第六部の 9 章を 7 章に組み直した。構想・心の言葉・価値創造の三章を「事業の言葉は、どこで誤解されるか」の一章の三つの段にまとめ、繰り返していた結論を一度にし、「開発の中で、何が起きているのか」の題を「後半の答え」に替えた）
 - pages: `concepts/Love 駆動開発` と `プロジェクトデザイン` は、第六部の章題を引いておらず、開発・使い方・効き目・まだ分からないことの言い方も今の正本と合う。中身は直さず、compiled は今日のまま
+
+## [2026-11-11] compile | 区切るときの知らせの四ページ（Love 駆動開発・プロジェクトデザイン・創造の5段階モデル・意識とはの概観）
+- scope: 概念ページ 3・横断ページ 1
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第四部「人の心は、自分が思っているようにはできていない」を立て、部の番号を一つずつ送った。「生存と信頼の信号」は便宜上の呼び名との段、適用条件がわかる例、利点の言い方、欠損の用語）・`cs/knowledge/schema/five-stages.md`（生成ページの注と版の記録だけ）・`as/knowledge/concepts/CN-001`（S18 の引用を本人の訂正に揃えた）
+- pages: `concepts/Love 駆動開発` に、信号の呼び名が便宜上のものだという段、適用条件がわかる例（メタ認知・他者の視点）、利点の言い方、第四部の工事中の問いを足した。`プロジェクトデザイン` は本文が今の正本と合うことを確かめ、関連ページの欠損の添え書きを今の言い方に替えた。`concepts/創造の5段階モデル` は定義の本文が変わっていないので、compiled を今日にした。`cross-refs/awareness-space-overview` は CN-001 の引用を載せておらず、直すところが無い（compiled はもう今日）
