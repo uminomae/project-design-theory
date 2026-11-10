@@ -580,3 +580,53 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（`#ldd-development-relation` の段のカード）
 - pages: `concepts/Love 駆動開発` は、三つを一つの出来事に別々の側から触れた名前として読み関係を一つに定めない、と書いていて、意訳と合う。カードの言葉は引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] check | Love駆動開発の「〇〇駆動開発」の名前の段に、先に置くことについての pjdhiro の見方を足したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「開発とは、何を指すか」の名前の段）
+- pages: どちらのページも、この段を引いていないので本文はそのまま。compiled は今日のまま
+
+## [2026-11-11] compile | Love駆動開発の GRIT の項に、侘びの像と辞書・事典の畳みを足したあと（#118）
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（「心の言葉は、どこで誤解されるか」の GRIT の項）
+- pages: どちらのページも、GRIT の項と侘びを引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] check | Love駆動開発のネガティブ・ケイパビリティの表を調べ直して推敲したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「心の言葉は、どこで誤解されるか」のネガティブ・ケイパビリティの表と出典の行、畳み「ものの見方の広さと、湧く信号の表（仮説）」のキーツの段）
+- pages: どちらのページも、この表とキーツの段を引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] check | Love駆動開発の章「価値創造は、どこで誤解されるか」の頭の並びを直したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章の頭の段とカード）
+- pages: どちらのページも、この段の並びを引いていないので本文はそのまま。compiled は今日のまま
+
+## [2026-11-11] compile | Love駆動開発の章「心の言葉は、どこで誤解されるか」の終わりの畳み「経営学の表の、どの行にまたがるか」を外したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（「心の言葉は、どこで誤解されるか」の終わり）
+- pages: どちらのページも、外した畳み（経営学の表の行にまたがる・届かないところは同じ）を引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] check | Love駆動開発の畳み「渦しか見られない人は、場の揺らぎを軽く見る」（旧「受け取る側の場に、体で入る」）を直したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「デザインは、場にも関わる」の畳み）
+- pages: どちらのページも、この畳みを引いていないので本文はそのまま。compiled は今日のまま
+
+## [2026-11-11] check | Love駆動開発の畳み「作る側でも、成果を上げている渦だけを見ない」（旧「作る側の場」）を直したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「デザインは、場にも関わる」の畳み）
+- pages: どちらのページも、この畳みを引いていないので本文はそのまま。compiled は今日のまま
+
+## [2026-11-11] check | Love駆動開発の畳み「場に関わっても、思うようには生まれない」を外したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「デザインは、場にも関わる」の畳み）
+- pages: どちらのページも、この畳みを引いていないので本文はそのまま。compiled は今日のまま
+
+## [2026-11-11] update | Love駆動開発に不確実性への対処を足したあと（#120）
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「開発とは、何を指すか」・畳み「手順と、構想や計画への構え」・コラム「プロジェクトデザイン論のトップページが置く「デザイン」」・後半の答え）
+- pages: `concepts/Love 駆動開発` は、開発の過程と対処の段に、起きるであろうこと・起きるかもしれないことへの対処を足した。`プロジェクトデザイン` は、正本のトップページの言葉（Doing と Being）を引いていて、直したコラムを引いていないので本文はそのまま。compiled はどちらも今日のまま
+
+## [2026-11-11] check | Love駆動開発の葛藤の表を調べ直して推敲したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「心に関する言葉は、どこで誤解されるか」の葛藤の表、その下の pjdhiro の見方と畳み「葛藤、認知的不協和、ダブルバインドは、何が違うか」、出典の行）
+- pages: どちらのページも、葛藤の表を引いていないので本文はそのまま。`compiled` は今日のまま
