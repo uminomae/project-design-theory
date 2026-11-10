@@ -261,11 +261,12 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D15_vessel_2012_2012|アートに脳が動くとき — 強い美的経験はデフォルトモードネットワークを活性化する]]
 - [[sources/D15_zeami_classics|風姿花伝（花の美学）]]
 
-#### D16 歴史学 (8件)
+#### D16 歴史学 (9件)
 - [[sources/D16_braudel_1958_longue-duree|長期持続 — 歴史と社会科学の時間的多層性]]
 - [[sources/D16_mahoney_2000_2000|歴史社会学における経路依存]]
 - [[sources/D16_mascareo_2022_critical-transitions-in-ecosystems|生態系と社会における臨界転移 — 社会システム理論との対話]]
 - [[sources/D16_olsson_2004_social-ecological-transformation-for|生態系管理に向けた社会生態的変革（Olsson, Folke & Hahn 2004）]]
+- [[sources/D16_pierson_2000_increasing-returns-path-dependence|収穫逓増・経路依存・政治の研究（Pierson 2000）]]
 - [[sources/D16_scheffer_2012_2012|臨界転移を予兆する — 早期警告指標の統合]]
 - [[sources/D16_toynbee_1934_study-of-history|歴史の研究 — 文明の挑戦と応答]]
 - [[sources/D16_turchin_2013_war-space-evolution-old-world-complex-societies|戦争・空間・旧世界複雑社会の進化]]
@@ -314,7 +315,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D20_singapore-convention_2018_mediation|シンガポール調停条約 (2018)]]
 - [[sources/D20_uncitral_2021_mediation-rules|UNCITRAL 調停規則 (2021)]]
 
-#### D21 経済学 (11件)
+#### D21 経済学 (12件)
 - [[sources/D21_deco_2008_2008|安静時のノイズが脳の動的レパートリー探索を可能にする]]
 - [[sources/D21_dickman_2000_2000|自己組織化臨界へのいくつかの道（Dickman et al. 2000）]]
 - [[sources/D21_hayek_1945_use-of-knowledge-in-society|社会における知識の利用]]
@@ -323,6 +324,7 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D21_keynes_1936_general-theory|雇用・利子および貨幣の一般理論]]
 - [[sources/D21_keynes_1937_1937|雇用の一般理論（Keynes 1937, QJE）]]
 - [[sources/D21_knight_1921_risk-uncertainty-profit|リスク・不確実性・利潤]]
+- [[sources/D21_krugman_1991_increasing-returns-economic-geography|収穫逓増と経済地理（Krugman 1991）]]
 - [[sources/D21_schumpeter_1912_theorie-der-wirtschaftlichen-entwicklung|経済発展の理論（初版）]]
 - [[sources/D21_schumpeter_1939_business-cycles|景気循環論]]
 - [[sources/D21_walker_2009_2009|ゴルバーン・ブロークン流域におけるレジリエンス・適応性・変革可能性]]
@@ -400,11 +402,12 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 - [[sources/D28_shibolet_2018_bodyminds-in-movement-contact-improvisation|動きの中の心身：コンタクト・インプロヴィゼーションと身体化された認知（Shibolet 2018）]]
 - [[sources/D28_zeami_classics|世阿弥十六部集]]
 
-#### D29 複雑系科学 (8件)
+#### D29 複雑系科学 (9件)
 - [[sources/D29_bak-tang-wiesenfeld_1988_self-organized-criticality|自己組織化臨界]]
 - [[sources/D29_clauset_2007_power-law-distributions|実証データにおけるべき乗則分布]]
 - [[sources/D29_dickman-munoz-vespignani-zapperi_2000_paths-self-organized-criticality|自己組織化臨界への道筋]]
 - [[sources/D29_hordijk-hein-steel_2010_autocatalytic-sets-origin-of-life|自己触媒集合と生命の起源（Hordijk, Hein & Steel 2010）]]
+- [[sources/D29_langton_1990_edge-of-chaos|カオスの縁での計算：相転移と創発する計算（Langton 1990）]]
 - [[sources/D29_munoz_2018_criticality-and-dynamical-scaling|生物系における臨界性と動的スケーリング]]
 - [[sources/D29_newman_2003_structure-and-function-of|複雑ネットワークの構造と機能]]
 - [[sources/D29_prigogine_1977_time-structure-fluctuations|時間、構造、そしてゆらぎ — ノーベル講演]]
