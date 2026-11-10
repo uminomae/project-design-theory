@@ -8,7 +8,7 @@
 //   node scripts/check-cs-evidence.mjs cs/evidence/evidence-D20-law-politics.md   一つの記録だけ（reviewed.json に入れる前に）
 //
 // 見るもの（2026-11-08・#73 の 5 分野のあとに作った）：
-//  1. cs/evidence/reviewed.json の各行：id の形、file が実在、reviewed が日付。
+//  1. cs/evidence/reviewed.json の各行：id の形、file が実在、reviewed が日付。en（英語の記録）があれば en/<file> で実在。
 //  2. frontmatter：file_id（EV-Dxx）・domain_id（id と同じ）・title・last_updated・status・source_archive（実在）。
 //  3. 冒頭に文責が Claude であること。「## 一面の表」があること。
 //  4. 一面の表：見出しに 論・対立・衝突・統合・照合の状態 があり、各行の照合の状態が
@@ -229,6 +229,12 @@ function main() {
     const file = path.join(EVIDENCE_DIR, d.file);
     if (!fs.existsSync(file)) { err(REVIEWED, `${d.id} の file が無い（${d.file}）`); continue; }
     if (!d.file.startsWith(`evidence-${d.id}-`)) err(REVIEWED, `${d.id} の file 名が id と合わない（${d.file}）`);
+    // 英語の記録（任意）：en/ に日本語と同じファイル名で置く（docs/cs-review/README.md「記録の形」）。
+    // 英語の画面はこの行の en があるときだけ記録を開き、無ければ工事中を出す。中身の点検（です・ます など）は日本語だけ。
+    if (d.en !== undefined) {
+      if (d.en !== `en/${d.file}`) err(REVIEWED, `${d.id} の en が en/${d.file} でない（${d.en}）`);
+      else if (!fs.existsSync(path.join(EVIDENCE_DIR, d.en))) err(REVIEWED, `${d.id} の en が無い（${d.en}）`);
+    }
     checkRecord(file, d.id);
   }
   if (STATS) return;
