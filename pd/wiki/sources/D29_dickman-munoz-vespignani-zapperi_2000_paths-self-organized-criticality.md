@@ -8,7 +8,7 @@ source:
   manifest_id: "D29-S11"
   oa_url: "https://arxiv.org/pdf/cond-mat/9910454"
   note: "SciELO PDF タイムアウト → arXiv preprint cond-mat/9910454 v2（公刊版と同内容）で取得"
-compiled: "2026-06-16"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 ---
@@ -25,7 +25,7 @@ Dickman, Muñoz, Vespignani, Zapperi (2000) は、Bak–Tang–Wiesenfeld (1987/
 
 具体的な機構：保存量 ζ（粒子密度）が吸収状態相転移を示すモデルに、(1) 系が吸収配置に落ちたときのみ infinitesimal rate h→0+ で粒子を追加、(2) 活動中のみ境界で粒子を失う dissipation rate ε→0+、という2修正を加えると、系は必ず ζ = ζ_c（臨界点）に「ピン留め」される。活動があれば密度が下がり、活動がなければ密度が上がる——このフィードバックが自動的に臨界点を維持する。
 
-5種の SOC 到達経路（Activated Random Walkers / 砂山 / 駆動界面 / Bak-Sneppen 進化モデル / 自己組織化有向浸透）を統一的に "slow driving で conventional な相転移を SOC 化する" という視点で再解析する。
+5種の SOC 到達経路（Activated Random Walkers / 砂山 / 駆動界面 / Bak-Sneppen 進化モデル / 自己組織化有向浸透）を、ゆっくりした駆動（slow driving）によって通常の相転移が自己組織化臨界になる、という視点で統一的に再解析する。
 
 ## 主要概念
 

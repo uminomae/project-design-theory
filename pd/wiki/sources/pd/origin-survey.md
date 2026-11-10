@@ -154,7 +154,7 @@ v3 では費用対効果を考え 1 モデル + 人間レビューに切り替�
 
 - 実行: 2026-03-30 / 31 (v3)
 - 実行者: Claude (Opus 4.6) / Codex (GPT-5)
-- 調査プロンプト: `techo/prompts/30-domains-origin-survey-v3.md`
+- 調査プロンプト: 非公開の手帳のリポジトリ（techo）に置いた調査用のプロンプト
 - 関連 Issue: [project-design#46](https://github.com/uminomae/techo/issues/46) (techo リポジトリ)
 - 親 Issue: techo#44（調査設計）
 - 入力成果物:

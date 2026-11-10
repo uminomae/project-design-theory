@@ -441,3 +441,15 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第三部の畳み「測られたものと、感じたものは、食い違うことがある」に Khalsa ら 2008 の段と出典を戻した）
 - 結果: 二ページとも、この畳みの研究も出典の行も引いていない。直す所は無い。compiled は 2026-11-10 のまま
+
+## [2026-11-10] fix | Issue #111 束 1・3・6 の残り（wiki）
+- scope: 出典ページ 4（作り直し）・出典ページ 12 と人物・キーワードの頁 7（誤りと足しの直し）・外した頁 38・入口・about・道具
+- sources: cs の精読ノート D08-S04・D22-S09・D28-S15・D05-S10。Crossref（Thurston 1994 の頁 161–178）。cs の記録 `cs/evidence/evidence-D*.md` の「wiki の頁」の行
+- pages:
+  - 作り直し（精読ノートから。前の頁は本文を読まずに書かれていた）：`D08_miller-cohen_2001_integrative-theory-prefrontal-cortex`（二枚を一枚に）・`D22_tuckman-jensen_1977_stages-small-group-development-revisited`・`D28_shibolet_2018_bodyminds-in-movement-contact-improvisation`・`D05_bjerknes_1969_atmospheric-teleconnections-equatorial-pacific`
+  - 外した（`pd/wiki-drafts/sources/` へ。消していない）：本文を読まずに書いた頁 33（断りのある頁 31・Haken 1983・Winter & Chambon 1986）と、同じ原典の二重の頁の古いほう 5（Ulm 2013・Turing 1952・van der Maas 2017・Toynbee・van Gennep 1909）。指していたリンクは、残した頁へ張り替えるか、文字だけにした
+  - 直し：Thurston 1994 の頁（161–178）・Rayleigh 1916 の見出しの題・Dickman ら 2000 の日本語まじりの引用符・Kant 1790 の「邦訳参照」と、Kant・本居・能勢・Whitehead の Wikimedia Commons のトップを指すリンク・Schultz 1997（D07・D09）の開けない URL・Braudel 1958 の『地中海』の一文・Aristotle 1907 の刷・世阿弥（D28）の「見所同心」「守・破・離」の段（精読ノートに無く、原典の箇所を確かめられない）
+  - 人物の頁 6 と愛着理論：正本に無い生没年と肩書きを外した
+  - 確かめただけ（compiled を今日に）：Bott 1988・Hadamard 1945・Carlsson 2009・Ameta 2021・Li 2014・Teresa 1921・Bak ら 1988・Toynbee 1934
+  - 入口（index.md）から、点検の報告と概念の status の表を外した。about.md の health へのリンクを文字にした。`sources/pd/origin-survey` の、非公開の repo の中のパスを外した
+  - 道具：Quartz で log.md と health/ を出さない。読者の頁から生成の記録・Issue の番号・開けない PDF のリンクを落とす変換（`pd/quartz/quartz/plugins/transformers/readerview.ts`）
