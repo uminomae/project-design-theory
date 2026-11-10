@@ -221,8 +221,11 @@ function start() {
     const reduce = stillQuery || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
 
     const renderer = new THREE.WebGLRenderer({ antialias: false, alpha: false });
-    // cs と同じ：画素比は 1.4 まで、さらに 0.9 倍
-    const pixelRatio = Math.max(0.5, Math.min(window.devicePixelRatio || 1, 1.4) * 0.9);
+    // cs と同じ：画素比は 1.4 まで、さらに 0.9 倍。
+    // ?rs=0.5 のように、描く細かさをさらに掛けられる（軽くする見本。1440×900・M4 で、1 のとき一枚 27〜29ms＝約 35fps、
+    // 0.75 で 18ms、0.5 で 10ms。重さは描く画素の数にほぼ比例する・2026-11-10 の測り）
+    const renderScale = Math.min(Math.max(qn('rs') ?? 1, 0.25), 1);
+    const pixelRatio = Math.max(0.25, Math.min(window.devicePixelRatio || 1, 1.4) * 0.9 * renderScale);
     renderer.setPixelRatio(pixelRatio);
     renderer.setSize(window.innerWidth, window.innerHeight);
     // ?bgc=02050d：地の色の上書き
@@ -334,10 +337,31 @@ function start() {
     };
     const render = () => renderer.render(scene, camera);
 
+    // ?fps：左上に、一秒ごとの描いた枚数と一枚あたりの間隔を出す（確かめ用）
+    let fpsEl = null, fpsN = 0, fpsT0 = 0, fpsWorst = 0;
+    if (q.has('fps')) {
+        fpsEl = document.createElement('div');
+        fpsEl.style.cssText = 'position:fixed;left:8px;top:8px;z-index:2000;font:12px/1.4 ui-monospace,monospace;color:#e6ebf5;background:rgba(0,0,0,0.6);padding:4px 8px;border-radius:4px;pointer-events:none;white-space:pre';
+        fpsEl.textContent = '…';
+        document.body.appendChild(fpsEl);
+    }
+    const countFps = (now, gap) => {
+        if (!fpsEl) return;
+        if (!fpsT0) fpsT0 = now;
+        fpsN++;
+        fpsWorst = Math.max(fpsWorst, gap);
+        if (now - fpsT0 >= 1000) {
+            const c = renderer.domElement;
+            fpsEl.textContent = `${Math.round((fpsN * 1000) / (now - fpsT0))} fps  最長 ${Math.round(fpsWorst)}ms\n描く画素 ${c.width}×${c.height}（rs ${renderScale}）`;
+            fpsN = 0; fpsT0 = now; fpsWorst = 0;
+        }
+    };
+
     let raf = 0, last = 0;
     const loop = (now) => {
         raf = requestAnimationFrame(loop);
         const dt = last ? Math.min((now - last) / 1000, 0.1) : 1 / 60;
+        if (last) countFps(now, now - last);
         last = now;
         update(dt);
         render();
