@@ -436,3 +436,8 @@ compile 実行の履歴。append-only。
 - scope: 概念ページ 1（創造の5段階モデル）
 - sources: cs の knowledge/schema/five-stages.md・knowledge/five-stages-guide.md・knowledge/glossary.md
 - pages: 定義を、pjdhiro の体感としての暫定の定義（第 1 層：一文・状況の言葉・海のたとえ・構造とプロセス）と、ほかの論ではこう言うケースもある（第 2 層：照合し直す前の集計から拾った論じる候補）に分けた。やさしい解説の場を「波の立つ前の静かな海」に、束を二つの面に直した。source の repo を cs にした
+
+## [2026-11-10] check | Love駆動開発の出典を戻した（#110）ときの二ページ
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第三部の畳み「測られたものと、感じたものは、食い違うことがある」に Khalsa ら 2008 の段と出典を戻した）
+- 結果: 二ページとも、この畳みの研究も出典の行も引いていない。直す所は無い。compiled は 2026-11-10 のまま
