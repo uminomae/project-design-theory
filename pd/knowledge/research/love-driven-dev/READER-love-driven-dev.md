@@ -1512,17 +1512,34 @@ pjdhiro は、期待外れになるかどうかは、能力と、心理防衛機
 
 </div>
 
+<a id="ldd-conflict"></a>
 ##### 葛藤
 
 <div class="tablefit cols-2">
 
-| 定義 | 葛藤の処理には、競う、譲る、避ける、妥協する、協力する、といった型の整理がある（キルマンとトーマス、1977 年） |
+| 定義 | 二つ以上の動機や目標が競り合い、どちらを取るかで迷う状態を、心理学は葛藤と呼ぶ。人と人の間で、願いや意見や規範が食い違って対立することも、対人葛藤と呼ばれる（『最新 心理学事典』）。処理の仕方については、競う、協力する、妥協する、避ける、譲る、の五つの型を、協力と主張の二つの軸で分ける整理がある（キルマンとトーマス、1977 年） |
 |---|---|
-| よくある誤解 | 処理の型を正しく選べば解ける |
-| Love駆動開発の視点で見た解釈 | 一列に並んだ記号（指示や目標）に、信頼の信号が載らないところから生まれていると読める。葛藤のいくつかは、生存と信頼の二つの信号が別の向きを指すときに起きている、と読める。[利益と長期の問い](#ldd-profit)も、その一つ |
-| 効く条件 | 二つの信号を別々に名指しできるとき |
+| よくある誤解 | 葛藤を、良いか悪いかのどちらか一つで受け取る。悪いものとして避けるか早く収めるか、逆に、ぶつかるほど良いものとして求めるか、のどちらかになる。研究者と実務家の側でも、葛藤は成果や創造を高めるので促すべきだとする楽観的な見方と、たいていは働きを損なうとする悲観的な見方とが、並んで論じられてきた（Greer ほか、2012 年） |
+| Love駆動開発の視点で見た解釈 | pjdhiro は、葛藤には善悪がなく、悪い場合もあれば、創造の直前の衝突としての面もある、と見ている。二つのことが対立するのを、心理的な印象で善悪に分けてしまうところに誤解が多い、とも見ている（表の下） |
+| 効く条件 | 葛藤が働きを損ないにくいのは、仕事の中身をめぐる対立を、人柄や関係をめぐる対立と分けて扱えるときと、メンバーが同じ目標の中にいると感じているときだ、と総説はまとめている。抑え込まれた葛藤は、時とともに大きくなり、解きにくくなる（Greer ほか、2012 年） |
 
 </div>
+
+葛藤の表を読んで、pjdhiro は、葛藤の善悪について次のように言っています。
+
+<strong>pjdhiro の見方：</strong>葛藤は善悪がない。悪い場合の事例を出しつつも、まさに創造の直前の衝突としてのポジティブな面もある。ピンチはチャンス！のような。ダブルバインドや認知的不協和とか、二つのことが対立することを心理的な印象で善悪判断してしまうので誤解が多いと感じる。
+
+チームの葛藤の研究も、葛藤を良いか悪いかの一つには決めていません。総説によると、人柄や関係をめぐる葛藤は、成果を下げる向きで一貫していて、仕事の手順や役割をめぐる葛藤は、それよりもさらに成果や満足を下げる向きにあります。たとえば、手術の最中に麻酔科医が外科医の人柄や力量を悪く言えば、生まれた緊張は仕事の妨げになるだけです（総説のたとえ話）。一方、仕事の中身をめぐる葛藤は、116 本の研究を合わせたメタ分析で、全体としては成果との関係が見られず、関係の対立と分けて扱えているチームでは、成果を高める向きに働いていました（Greer ほか 2012 年）。「[創造とは](https://uminomae.github.io/project-design-theory/cs/)」は、創造の五段階の縁を「異質なものが出会い、ぶつかる境目」と書いています。
+
+<details><summary>詳しく — 葛藤、認知的不協和、ダブルバインドは、何が違うか</summary>
+
+三つとも、二つのことが対立しているように見えます。違うのは、どこで、何と何がぶつかるかです。
+
+- **葛藤**：一人の中で、二つ以上の動機や目標が競り合うことを指します。レビンは、これを、どちらも欲しい（接近と接近）、どちらも避けたい（回避と回避）、一つの目標に引かれもし避けたくもある（接近と回避）、の三つの型に分けました。人と人の間で、願いや意見や規範が食い違うことも、対人葛藤と呼ばれます（『最新 心理学事典』）。
+- **認知的不協和**：一人の中で、知っていることや信じていることどうしが合わない状態を指します。合わなさは、それを減らそうとする圧力を生み、人は自分の考えや態度のほうを変えて減らすことがあります（『デジタル大辞泉』、フェスティンガーとカールスミス 1959 年）。フェスティンガーとカールスミスの実験では、退屈な作業を面白かったと人に言わされ、報酬が 1 ドルだった人は、あとで自分でもその作業を面白かったと評価しました。報酬が 20 ドルだった人は、評価が変わりませんでした。言ったことに合わせて、自分を説得したと書かれています。
+- **ダブルバインド**：🚧 工事中です（ベイトソンら 1956 年の原典を読んで書きます。探索：[#121](https://github.com/uminomae/project-design-theory/issues/121)）。
+
+</details>
 
 ##### 起業家精神
 
@@ -1538,7 +1555,7 @@ pjdhiro は、期待外れになるかどうかは、能力と、心理防衛機
 
 <!--REF:心理学-->
 
-出典：[Edmondson (1999)](https://doi.org/10.2307/2666999) *Administrative Science Quarterly* 44(2):350（MIT の授業の読み物として大学のサーバーに置かれた誌面の走査で本文照合済。定義 p.354）／[Schein (1995)](https://hdl.handle.net/1721.1/2576) MIT Sloan Working Paper 3821（MIT の機関リポジトリにある PDF の Wayback の記録（2025 年 6 月 22 日）で本文照合済。pp.3–5）／[Duckworth, Peterson, Matthews & Kelly (2007)](https://doi.org/10.1037/0022-3514.92.6.1087) *Journal of Personality and Social Psychology* 92(6):1087（著者のペンシルベニア大学の頁にあった誌面の PDF の Wayback の記録（2014 年 7 月 26 日）で本文照合済。定義 pp.1087–1088）／[Luthar, Cicchetti & Becker (2000)](https://doi.org/10.1111/1467-8624.00164) *Child Development* 71(3):543（米国国立医学図書館の PMC にある著者稿 PMC1885202 で本文照合済。p.543）／[Ryan & Deci (2000)](https://doi.org/10.1037/0003-066X.55.1.68) *American Psychologist* 55(1):68（著者たちの Center for Self-Determination Theory のサイトにある誌面の PDF で本文照合済。pp.70–72）／[Keats, letter to George and Thomas Keats (1817 年 12 月)](https://www.gutenberg.org/ebooks/35698)（Colvin 編 *Letters of John Keats to His Family and Friends*, Macmillan, 1891 年初版・1925 年の刷の Letter XXIV を、Project Gutenberg の公開版で本文照合済。定義の文とコールリッジ・美の感覚の文は p.48）／[Ujihara, Onashi, Suzuki ほか (2026)](https://doi.org/10.7759/cureus.101208) "Negative Capability-Related Dimensions Among Local Government Public Health Nurses in Japan and Their Associated Factors", *Cureus* 18(1):e101208（出版社の公開版〔CC BY〕で本文照合済。紹介の文 p.2）／[Kilmann & Thomas (1977)](https://doi.org/10.1177/001316447703700204) "Developing a forced-choice measure of conflict-handling behavior: The 'MODE' instrument", *Educational and Psychological Measurement* 37(2):309–325（共著者 Kilmann の会社のサイトにある誌面の PDF で本文照合済。五つの型 p.309 の要旨、Thomas と Kilmann の 1974 年の質問紙 p.313・p.325）。よくある誤解の例は、出典のない見聞です。
+出典：[Edmondson (1999)](https://doi.org/10.2307/2666999) *Administrative Science Quarterly* 44(2):350（MIT の授業の読み物として大学のサーバーに置かれた誌面の走査で本文照合済。定義 p.354）／[Schein (1995)](https://hdl.handle.net/1721.1/2576) MIT Sloan Working Paper 3821（MIT の機関リポジトリにある PDF の Wayback の記録（2025 年 6 月 22 日）で本文照合済。pp.3–5）／[Duckworth, Peterson, Matthews & Kelly (2007)](https://doi.org/10.1037/0022-3514.92.6.1087) *Journal of Personality and Social Psychology* 92(6):1087（著者のペンシルベニア大学の頁にあった誌面の PDF の Wayback の記録（2014 年 7 月 26 日）で本文照合済。定義 pp.1087–1088）／[Luthar, Cicchetti & Becker (2000)](https://doi.org/10.1111/1467-8624.00164) *Child Development* 71(3):543（米国国立医学図書館の PMC にある著者稿 PMC1885202 で本文照合済。p.543）／[Ryan & Deci (2000)](https://doi.org/10.1037/0003-066X.55.1.68) *American Psychologist* 55(1):68（著者たちの Center for Self-Determination Theory のサイトにある誌面の PDF で本文照合済。pp.70–72）／[Keats, letter to George and Thomas Keats (1817 年 12 月)](https://www.gutenberg.org/ebooks/35698)（Colvin 編 *Letters of John Keats to His Family and Friends*, Macmillan, 1891 年初版・1925 年の刷の Letter XXIV を、Project Gutenberg の公開版で本文照合済。定義の文とコールリッジ・美の感覚の文は p.48）／[Ujihara, Onashi, Suzuki ほか (2026)](https://doi.org/10.7759/cureus.101208) "Negative Capability-Related Dimensions Among Local Government Public Health Nurses in Japan and Their Associated Factors", *Cureus* 18(1):e101208（出版社の公開版〔CC BY〕で本文照合済。紹介の文 p.2）／[Kilmann & Thomas (1977)](https://doi.org/10.1177/001316447703700204) "Developing a forced-choice measure of conflict-handling behavior: The 'MODE' instrument", *Educational and Psychological Measurement* 37(2):309–325（共著者 Kilmann の会社のサイトにある誌面の PDF で本文照合済。五つの型 p.309 の要旨、Thomas と Kilmann の 1974 年の質問紙 p.313・p.325、二つの軸 p.310）／[Greer, Saygi, Aaldering & de Dreu (2012)](https://doi.org/10.1111/j.1365-2923.2012.04321.x) "Conflict in medical teams: opportunity or danger?", *Medical Education* 46(10):935–942（出版社の無料公開版で本文照合済。節 Introduction・Conflict types・Effective conflict management）／[Festinger & Carlsmith (1959)](https://doi.org/10.1037/h0041593) "Cognitive consequences of forced compliance", *Journal of Abnormal and Social Psychology* 58:203–210（York University の Classics in the History of Psychology の打ち直しで本文照合済。pp.203–204・207–208。照合は「創造とは」の心理学の記録）／『最新 心理学事典』「葛藤」（佐藤健二・大渕憲一 執筆。コトバンクの公開版で本文照合済）／『デジタル大辞泉』「認知的不協和」（小学館。コトバンクの公開版で本文照合済）。葛藤の表を除き、よくある誤解の例は、出典のない見聞です。
 
 </details>
 

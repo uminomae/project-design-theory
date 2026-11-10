@@ -625,3 +625,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「開発とは、何を指すか」・畳み「手順と、構想や計画への構え」・コラム「プロジェクトデザイン論のトップページが置く「デザイン」」・後半の答え）
 - pages: `concepts/Love 駆動開発` は、開発の過程と対処の段に、起きるであろうこと・起きるかもしれないことへの対処を足した。`プロジェクトデザイン` は、正本のトップページの言葉（Doing と Being）を引いていて、直したコラムを引いていないので本文はそのまま。compiled はどちらも今日のまま
+
+## [2026-11-11] check | Love駆動開発の葛藤の表を調べ直して推敲したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「心に関する言葉は、どこで誤解されるか」の葛藤の表、その下の pjdhiro の見方と畳み「葛藤、認知的不協和、ダブルバインドは、何が違うか」、出典の行）
+- pages: どちらのページも、葛藤の表を引いていないので本文はそのまま。`compiled` は今日のまま
