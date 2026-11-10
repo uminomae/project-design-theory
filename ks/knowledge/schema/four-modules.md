@@ -47,7 +47,7 @@
 **核心モデル**: 5段階
 1. 場（Field）
 2. 波（Wave）
-3. 縁（Relation）
+3. 縁（Edge）
 4. 渦（Spinor）
 5. 束（Bundle）
 
