@@ -75,3 +75,96 @@ html.ldd-dark .glow-card h3,
 html.ldd-dark .glow-card span {
     text-shadow: none;
 }
+
+/* ===== 最初の画面：読書欄を下へずらし、まず背景（膜の渦）を全画面で見せる（docs/DESIGN-RULES-LDD.md §1） =====
+   形は html の data-intro（blank・title・cue・peek）と --ldd-intro-h（svh の数）。js は src/ldd-intro.js。
+   data-intro が無ければ、最初の画面は出さない（今までどおり読書欄が上から始まる）。 */
+html.ldd-dark { --ldd-intro-h: 100; }
+html.ldd-dark[data-intro~="peek"] { --ldd-intro-h: 80; }
+.ldd-intro { display: none; }
+html.ldd-dark[data-intro] .ldd-intro {
+    display: block;
+    position: relative;
+    height: calc(var(--ldd-intro-h) * 1vh);
+    height: calc(var(--ldd-intro-h) * 1svh);
+    pointer-events: none;
+}
+/* 最初の画面のあとでは、Menu の下に潜らないための草稿バナーの余白は要らない */
+html.ldd-dark[data-intro] body.reader-flow .top-bar ~ #content .reader-wrap > .draft-banner:first-child {
+    margin-top: 1.25rem;
+}
+
+/* 題（読書欄の h1 と同じ文字。読み上げは h1 に任せる） */
+.ldd-intro__title { display: none; }
+html.ldd-dark[data-intro~="title"] .ldd-intro__title {
+    display: block;
+    position: absolute;
+    left: 0; right: 0;
+    bottom: 22%;
+    margin: 0;
+    padding: 0 16px;
+    text-align: center;
+    font-family: var(--serif-jp);
+    font-weight: 300;
+    font-size: clamp(1.5rem, 4.4vw, 2.6rem);
+    letter-spacing: 0.08em;
+    line-height: 1.5;
+    color: rgba(230, 235, 245, 0.92);
+    text-shadow: 0 0 18px rgba(2, 5, 13, 0.9), 0 0 2px rgba(2, 5, 13, 0.9);
+}
+.ldd-intro__title i { font-family: var(--serif-en, "EB Garamond", serif); font-weight: 400; }
+
+/* 下へ促す印（細い縦の線の上を、光が下へ流れる） */
+.ldd-intro__cue { display: none; }
+html.ldd-dark[data-intro~="cue"] .ldd-intro__cue {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 3.5vh;
+    bottom: 3.5svh;
+    transform: translateX(-50%);
+    width: 44px;
+    height: 64px;
+    pointer-events: auto;
+    color: transparent;
+    font-size: 0;
+}
+.ldd-intro__cue::before,
+.ldd-intro__cue::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    transform: translateX(-50%);
+}
+.ldd-intro__cue::before {
+    top: 8px; bottom: 8px;
+    background: rgba(200, 212, 240, 0.28);
+}
+.ldd-intro__cue::after {
+    top: 8px;
+    height: 16px;
+    background: linear-gradient(rgba(220, 230, 255, 0), rgba(220, 230, 255, 0.95));
+    animation: ldd-cue 2.6s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+@keyframes ldd-cue {
+    0% { transform: translate(-50%, 0); opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { transform: translate(-50%, 32px); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .ldd-intro__cue::after { animation: none; transform: translate(-50%, 16px); }
+}
+
+/* 最初の画面にいるあいだは、目次を出さない（常設の目次・右下のボタン） */
+html.ldd-dark.ldd-at-intro #toc-btn,
+html.ldd-dark.ldd-at-intro body.toc-fits #toc {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+html.ldd-dark #toc-btn,
+html.ldd-dark body.toc-fits #toc {
+    transition: opacity 0.4s ease, visibility 0.4s;
+}

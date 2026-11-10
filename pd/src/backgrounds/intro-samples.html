@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+  Love駆動開発のページの「最初の画面」の見本を並べる（noindex・どこからもリンクしない確かめ用のページ）。
+  pjdhiro 2026-11-10「次はページ開始位置を少しずらして、背景を全画面で見れるようにしたい」。
+  実際のページを ?intro=…&ih=… で開き、広い画面とスマートフォンの幅で並べる。
+  WebGL を一度に多く動かさないよう、選んだ一つだけを二つの枠に映す。
+  選んだ形は reader-love-driven-dev-template.html の html に data-intro="…" として書く（docs/DESIGN-RULES-LDD.md §1）。
+-->
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>最初の画面の見本</title>
+    <style>
+        :root { color-scheme: dark; }
+        * { box-sizing: border-box; }
+        body { margin: 0; background: #05070d; color: #dfe3ee; font-family: "Noto Sans JP", system-ui, sans-serif; line-height: 1.7; }
+        main { max-width: 1400px; margin: 0 auto; padding: 20px 16px 48px; }
+        h1 { font-weight: 400; font-size: 1.1rem; margin: 0 0 12px; }
+        .pick { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 8px; }
+        .pick button { font: inherit; font-size: 0.9rem; color: #dfe3ee; background: #111827; border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 8px; padding: 6px 12px; cursor: pointer; }
+        .pick button[aria-pressed="true"] { background: #aebcff; color: #0b1020; border-color: #aebcff; }
+        .note { font-size: 0.85rem; color: #9aa4bd; margin: 0 0 14px; min-height: 1.7em; }
+        .note a { color: #c9b98f; margin-left: 0.6em; }
+        .row { display: flex; gap: 16px; align-items: flex-start; }
+        .frame { position: relative; border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 10px; overflow: hidden; background: #000; }
+        .frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+        .wide { flex: 1 1 auto; aspect-ratio: 16 / 10; }
+        .phone { flex: 0 0 300px; aspect-ratio: 375 / 760; border-radius: 22px; }
+        .cap { font-size: 0.75rem; color: #8e98b2; margin: 4px 2px 0; }
+        @media (max-width: 760px) {
+            .row { flex-direction: column; }
+            .wide { width: 100%; }
+            .phone { flex: none; width: min(300px, 100%); }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Love駆動開発のページの最初の画面（見本）</h1>
+    <div class="pick" role="group" aria-label="見本">
+        <button type="button" data-q="intro=blank">A 何も置かない</button>
+        <button type="button" data-q="intro=title">B 題だけ</button>
+        <button type="button" data-q="intro=cue">C 下へ促す印だけ</button>
+        <button type="button" data-q="intro=title+cue">D 題と印</button>
+        <button type="button" data-q="intro=peek">E 少しだけずらす（読書欄の頭が覗く）</button>
+        <button type="button" data-q="intro=off">今のまま</button>
+    </div>
+    <p class="note" id="note"></p>
+    <div class="row">
+        <div>
+            <div class="frame wide" style="width: min(100%, 1040px)"><iframe id="f-wide" title="広い画面"></iframe></div>
+            <p class="cap">広い画面（枠の中は縮めて見せている。実際の大きさは「全画面で開く」から）</p>
+        </div>
+        <div>
+            <div class="frame phone"><iframe id="f-phone" title="スマートフォンの幅"></iframe></div>
+            <p class="cap">スマートフォンの幅</p>
+        </div>
+    </div>
+</main>
+<script>
+(function () {
+    var notes = {
+        'intro=blank': '最初の画面は背景だけ。下へ送ると読書欄が来る。',
+        'intro=title': '背景の上に題だけを、ガラスを敷かずに置く。',
+        'intro=cue': '背景だけで、下の端に細い線の印（光が下へ流れる）。押すと読書欄へ。',
+        'intro=title+cue': '題と、下へ促す印。',
+        'intro=peek': '画面の 8 割を背景に。読書欄の頭が下の端に覗く。',
+        'intro=off': '今のページ（読書欄が上から始まる）。'
+    };
+    var base = '../../reader/love-driven-dev.html?';
+    var wide = document.getElementById('f-wide');
+    var phone = document.getElementById('f-phone');
+    var note = document.getElementById('note');
+    var btns = [].slice.call(document.querySelectorAll('.pick button'));
+    function show(q) {
+        btns.forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.q === q ? 'true' : 'false'); });
+        wide.src = base + q;
+        phone.src = base + q;
+        note.innerHTML = '';
+        note.appendChild(document.createTextNode(notes[q] || ''));
+        var a = document.createElement('a');
+        a.href = base + q;
+        a.target = '_blank';
+        a.textContent = '全画面で開く';
+        note.appendChild(a);
+        try { history.replaceState(null, '', '#' + q); } catch (e) {}
+    }
+    btns.forEach(function (b) { b.addEventListener('click', function () { show(b.dataset.q); }); });
+    var h = decodeURIComponent(location.hash.slice(1));
+    show(notes[h] ? h : 'intro=blank');
+})();
+</script>
+</body>
+</html>

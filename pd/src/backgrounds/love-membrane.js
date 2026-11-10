@@ -276,9 +276,13 @@ function start() {
 
     // スクロールと指
     let scrollTarget = 0, scroll = 0, pxTarget = 0, px = 0;
+    // 最初の画面（.ldd-intro・背景を全画面で見せるぶん）は、読み進めた量に数えない。
+    // 読書欄の上端に着いたところを 0 にする（docs/DESIGN-RULES-LDD.md §1）
+    const intro = document.querySelector('.ldd-intro');
     const readScroll = () => {
-        const max = document.documentElement.scrollHeight - window.innerHeight;
-        scrollTarget = max > 0 ? Math.min(Math.max(window.scrollY / max, 0), 1) : 0;
+        const off = intro ? intro.offsetHeight : 0;
+        const max = document.documentElement.scrollHeight - window.innerHeight - off;
+        scrollTarget = max > 0 ? Math.min(Math.max((window.scrollY - off) / max, 0), 1) : 0;
     };
     readScroll();
     scroll = scrollTarget;
