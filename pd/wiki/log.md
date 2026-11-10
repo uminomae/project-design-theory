@@ -458,3 +458,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「開発とは、何を指すか」：題の駆動源と開発の関係、構想・計画・実行の並びを「地図」と呼ばない言い方、開発・プロジェクト・創造の関係、名前は手法か現象か）
 - 結果: `concepts/Love 駆動開発` の「開発」の節を今の本文に合わせた（「地図」の語を外し、三つの関係と名前の段を二文で足した）。`プロジェクトデザイン` はこの章を引いていない。直す所は無い。compiled はどちらも 2026-11-10
+
+## [2026-11-10] compile | Love駆動開発の章「開発とは、何を指すか」の問い 3 の段に「対処」を入れたとき
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（問い 3 の段：人は何もしないわけではなく、全てをコントロールできるわけではないところで対処している）
+- 結果: `concepts/Love 駆動開発` の「開発」の節に一文足した。`プロジェクトデザイン` はこの段を引いていない。compiled はどちらも 2026-11-10
