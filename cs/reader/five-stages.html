@@ -88,16 +88,18 @@
     text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap;}
   .reader-table td{color:var(--cs-md-table-cell-text);padding:8px 10px;
     border-bottom:1px solid var(--line);vertical-align:top;}
-  .reader-table td:nth-child(4){min-width:16em;}
+  .table-wide th,.table-wide td:not(:nth-child(4)){word-break:keep-all;white-space:normal;}
+  .table-wide td:nth-child(4){min-width:12em;}
+  .reader-table td:first-child{white-space:nowrap;}
   .reader-table tr:last-child td{border-bottom:none;}
   /* 狭い幅では表を行ごとに積む（表の中を横に送らない） */
-  @media (max-width:640px){
+  @media (max-width:760px){
     .tablefit{padding:4px 12px;}
     .tablefit thead{display:none;}
     .tablefit table,.tablefit tbody,.tablefit tr,.tablefit td{display:block;width:100%;}
     .tablefit tr{padding:8px 0;border-bottom:1px solid var(--line);}
     .tablefit tr:last-child{border-bottom:none;}
-    .tablefit td{border-bottom:none;padding:2px 0;min-width:0 !important;}
+    .tablefit td,.table-wide td:nth-child(4){border-bottom:none;padding:2px 0;min-width:0;}
     .tablefit td::before{content:attr(data-label);display:block;font-size:.8em;color:var(--faint);}
   }
 
@@ -130,7 +132,7 @@
 
   <article class="reader-article">
 <h2 class="reader-heading" id="五つの段の一覧">五つの段の一覧</h2>
-<div class="reader-card reader-table tablefit"><table><thead><tr><th>段階</th><th>日本語</th><th>英語</th><th>一文の定義（第 1 層）</th><th>状況の言葉</th><th>海のたとえ</th><th>構造</th><th>プロセス</th></tr></thead><tbody><tr><td data-label="段階">1</td><td data-label="日本語">場</td><td data-label="英語">Field</td><td data-label="一文の定義（第 1 層）">波が立つ前の、安定した海のような状態。理屈の上での出発点。</td><td data-label="状況の言葉">安定</td><td data-label="海のたとえ">海</td><td data-label="構造">無（認知しづらい）</td><td data-label="プロセス">漂う</td></tr><tr><td data-label="段階">2</td><td data-label="日本語">波</td><td data-label="英語">Wave</td><td data-label="一文の定義（第 1 層）">場の中に差が生まれ、揺れとして立ち上がる。状況が変わり、差が分かれて向かい合う。</td><td data-label="状況の言葉">変化</td><td data-label="海のたとえ">波</td><td data-label="構造">ゆれ・対立</td><td data-label="プロセス">分離</td></tr><tr><td data-label="段階">3</td><td data-label="日本語">縁</td><td data-label="英語">Edge</td><td data-label="一文の定義（第 1 層）">異質なものが出会い、ぶつかる境目。そこで新しい関係や法則が生まれる。</td><td data-label="状況の言葉">衝突</td><td data-label="海のたとえ">波間</td><td data-label="構造">境界・関係</td><td data-label="プロセス">出会い・衝突</td></tr><tr><td data-label="段階">4</td><td data-label="日本語">渦</td><td data-label="英語">Vortex</td><td data-label="一文の定義（第 1 層）">ひとつのまとまりとして立ち上がる。二つが見分けられるのに、一つであるかのよう。</td><td data-label="状況の言葉">統合</td><td data-label="海のたとえ">渦</td><td data-label="構造">個・立ち上がり</td><td data-label="プロセス">包摂</td></tr><tr><td data-label="段階">5</td><td data-label="日本語">束</td><td data-label="英語">Bundle</td><td data-label="一文の定義（第 1 層）">渦どうしが影響し合い、新しい形として残る集まり。それがまた次の場になる。</td><td data-label="状況の言葉">新たな安定</td><td data-label="海のたとえ">海流</td><td data-label="構造">方向</td><td data-label="プロセス">集合</td></tr></tbody></table></div>
+<div class="reader-card reader-table tablefit table-wide"><table><thead><tr><th>段階</th><th>日本語</th><th>英語</th><th>一文の定義（第 1 層）</th><th>状況の言葉</th><th>海のたとえ</th><th>構造</th><th>プロセス</th></tr></thead><tbody><tr><td data-label="段階">1</td><td data-label="日本語">場</td><td data-label="英語">Field</td><td data-label="一文の定義（第 1 層）">波が立つ前の、安定した海のような状態。理屈の上での出発点。</td><td data-label="状況の言葉">安定</td><td data-label="海のたとえ">海</td><td data-label="構造">無（認知しづらい）</td><td data-label="プロセス">漂う</td></tr><tr><td data-label="段階">2</td><td data-label="日本語">波</td><td data-label="英語">Wave</td><td data-label="一文の定義（第 1 層）">場の中に差が生まれ、揺れとして立ち上がる。状況が変わり、差が分かれて向かい合う。</td><td data-label="状況の言葉">変化</td><td data-label="海のたとえ">波</td><td data-label="構造">ゆれ・対立</td><td data-label="プロセス">分離</td></tr><tr><td data-label="段階">3</td><td data-label="日本語">縁</td><td data-label="英語">Edge</td><td data-label="一文の定義（第 1 層）">異質なものが出会い、ぶつかる境目。そこで新しい関係や法則が生まれる。</td><td data-label="状況の言葉">衝突</td><td data-label="海のたとえ">波間</td><td data-label="構造">境界・関係</td><td data-label="プロセス">出会い・衝突</td></tr><tr><td data-label="段階">4</td><td data-label="日本語">渦</td><td data-label="英語">Vortex</td><td data-label="一文の定義（第 1 層）">ひとつのまとまりとして立ち上がる。二つが見分けられるのに、一つであるかのよう。</td><td data-label="状況の言葉">統合</td><td data-label="海のたとえ">渦</td><td data-label="構造">個・立ち上がり</td><td data-label="プロセス">包摂</td></tr><tr><td data-label="段階">5</td><td data-label="日本語">束</td><td data-label="英語">Bundle</td><td data-label="一文の定義（第 1 層）">渦どうしが影響し合い、新しい形として残る集まり。それがまた次の場になる。</td><td data-label="状況の言葉">新たな安定</td><td data-label="海のたとえ">海流</td><td data-label="構造">方向</td><td data-label="プロセス">集合</td></tr></tbody></table></div>
 <p>「状況の言葉」と「海のたとえ」は、pjdhiro が五段階を言い換えた二つの並び（安定－変化－衝突－統合－新たな安定／海－波－波間－渦－海流）。状況の言葉の「統合」は、混ざって区別が消えることではなく、二つが見分けられるまま切り離せなくなること（渦の補いを見る）。</p>
 <h2 class="reader-heading" id="第-1-層-pjdhiro-の体感-暫定の定義">第 1 層：pjdhiro の体感（暫定の定義）</h2>
 <p class="layer-intro">この層は、pjdhiro の体感から書いた暫定の定義です。段ごとに、太字の一文が定義で、その下が補いです。</p>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- 英語の URL（?lang=en）では、本体を待たずに <html lang> を en にし、英語の本文を見せる（ks/index.html と同じ形） -->
+  <script>
+    (function () {
+      if (new URLSearchParams(location.search).get('lang') !== 'en') return;
+      document.documentElement.lang = 'en';
+      document.title = 'What is the stability of connection connected to? — Kesson-Driven Thinking — pjdhiro';
+    })();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>つながりの安定は、何とつながっているのか — 欠損駆動思考 — pjdhiro</title>
+  <meta name="description" content="確かめなくても、何かとつながっていて落ち着いている。そのつながりの先は何かを、愛着の研究の外まで論を集め、つながりの先で九つの段に並べて見ます。どの段の論も一部を触っていて、全部を持つ論は、ここに並べた範囲にはありませんでした。">
+  <link rel="canonical" href="https://uminomae.github.io/project-design-theory/ks/connection-stability.html">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/styles/spaces-reading.css">
+  <style>
+    :root {
+      --reading-z: 1;
+      --reading-text: rgba(225, 233, 250, 0.94);
+      --reading-sub: rgba(175, 190, 222, 0.85);
+      --reading-quote-rule: rgba(120, 170, 255, .45);
+      --reading-details-rule: rgba(120, 170, 255, .18);
+      --reading-summary: rgba(175, 200, 245, 0.95);
+      --reading-link: rgba(170, 200, 255, 1);
+      --reading-focus-outline: 1px solid rgba(170, 200, 255, 0.7);
+      --reading-fold-text: rgba(210, 225, 250, 0.9);
+    }
+    html { background: #0b1220; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(90vw 70vh at 18% 10%, rgba(94, 160, 255, 0.10), transparent 62%),
+        radial-gradient(65vw 80vh at 50% 105%, rgba(34, 96, 180, 0.16), transparent 64%),
+        #0b1220;
+      font-family: 'Noto Sans JP', 'Hiragino Sans', system-ui, sans-serif;
+    }
+    .cs-top {
+      max-width: 46rem;
+      margin: 0 auto;
+      padding: 1rem clamp(1rem, 4vw, 2.25rem) 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: .85rem;
+    }
+    .cs-top a { color: var(--reading-link); text-decoration: none; }
+    .cs-top a:hover { text-decoration: underline; }
+    .reading-article {
+      background: rgba(14, 22, 40, 0.72);
+      border: 1px solid rgba(120, 170, 255, .12);
+      border-radius: 6px;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+    }
+    .reading-toc { margin: 0; padding-left: 1.2rem; font-size: .92rem; }
+    .reading-toc li { margin: .15rem 0; }
+    .reading-details h4 {
+      font-family: 'Noto Serif JP', Georgia, serif;
+      font-weight: 400;
+      font-size: 1rem;
+      margin: 1rem 0 .3rem;
+      color: var(--reading-summary);
+    }
+    .reading-details > ol, .reading-details > table { margin: 0 0 .7rem; font-size: .95rem; }
+    .reading-chapter ul, .reading-chapter ol { margin: 0; }
+    .scale-tag {
+      display: inline-block;
+      font-size: .78rem;
+      padding: 0 .45em;
+      margin-right: .4em;
+      border: 1px solid rgba(120, 170, 255, .35);
+      border-radius: 3px;
+      color: var(--reading-sub);
+    }
+    .wip {
+      border: 1px dashed rgba(120, 170, 255, .4);
+      padding: .6rem .9rem;
+      color: var(--reading-sub);
+    }
+    .refs { padding-left: 1.2rem; font-size: .88rem; line-height: 1.8; }
+    .refs li { margin: .25rem 0; }
+    /* 表：PC の幅は表のまま。狭い幅では行ごとの枠に積み、各セルの上に列の見出しを出す（stance 2-7） */
+    .cs-table { width: 100%; border-collapse: collapse; font-size: .9rem; line-height: 1.7; }
+    .cs-table th, .cs-table td {
+      border-bottom: 1px solid rgba(120, 170, 255, .16);
+      padding: .45rem .5rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    .cs-table th { font-weight: 400; color: var(--reading-summary); white-space: nowrap; }
+    @media (max-width: 640px) {
+      .cs-table, .cs-table tbody, .cs-table tr, .cs-table td { display: block; width: 100%; box-sizing: border-box; }
+      .cs-table thead { display: none; }
+      .cs-table tr {
+        border: 1px solid rgba(120, 170, 255, .2);
+        border-radius: 4px;
+        margin-bottom: .7rem;
+        padding: .3rem .6rem;
+      }
+      .cs-table td { border-bottom: none; padding: .25rem 0; }
+      .cs-table td::before {
+        content: attr(data-label);
+        display: block;
+        font-size: .78rem;
+        color: var(--reading-sub);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="cs-top" aria-label="ページの移動">
+    <a href="./" data-reading-lang="ja">← 欠損駆動思考</a>
+    <a href="./?lang=en" data-reading-lang="en">← Kesson-Driven Thinking</a>
+    <span>
+      <a href="?lang=en" data-reading-lang="ja" lang="en">English</a>
+      <a href="?" data-reading-lang="en" lang="ja">日本語</a>
+    </span>
+  </nav>
+
+  <main id="reading-section">
+    <article class="reading-article">
+      <div class="reading-body" data-reading-lang="ja" lang="ja">
+        <header class="reading-header">
+          <h1 class="reading-title">つながりの安定は、何とつながっているのか</h1>
+          <p class="reading-lead">確かめなくても、何かとつながっていて、落ち着いている。そう感じられるとき、そのつながりの先は何なのでしょうか。</p>
+          <p class="reading-lead">このページは、欠損駆動思考の探究の一つです。つながりの安定を扱う論を、愛着の研究の外まで集め、つながりの先（何とのつながりか）で九つの段に並べました。触れている体のような具体の先から、名を当てにくい先までです。そのうえで、pjdhiro がメタ認知の先で感じたという「確かめずにつながっている安定」の特徴と、段ごとに照らしました。どの段の論も、その特徴の一部を持っていました。全部を持つ論は、ここに並べた範囲にはありませんでした。</p>
+          <ol class="reading-toc">
+            <li><a href="#cs-origin">この問いが出てきたところ</a></li>
+            <li><a href="#cs-scales">二つの時間の尺度を、分けて読む</a></li>
+            <li><a href="#cs-tiers">つながりの先で、九つの段に並べる</a></li>
+            <li><a href="#cs-each">段ごとに、何とつながり、何が書かれているか</a></li>
+            <li><a href="#cs-features">確かめずにつながっている安定の、六つの特徴と照らす</a></li>
+            <li><a href="#cs-seen">照らして見えたこと</a></li>
+            <li><a href="#cs-love">Love と呼ばれてきたものも、同じ幅に並ぶ</a></li>
+            <li><a href="#cs-open">まだ分からないこと</a></li>
+            <li><a href="#cs-method">この整理の作り方と出典</a></li>
+          </ol>
+        </header>
+
+        <section class="reading-chapter" id="cs-origin">
+          <h2 class="reading-chapter-title">この問いが出てきたところ<span class="reading-chapter-sub"> — 欠けは、何からのずれとして感じられるのか</span></h2>
+          <p>欠損駆動思考は、人が「何かが欠けている」と感じるところを見ています。欠けを感じるなら、何かと比べてずれている、ということになります。では、何と比べているのでしょうか。</p>
+          <p>この問いに、pjdhiro は自分の内側を観ていった経験から、一つの見立てを置いています。その経験は、メタ認知の先で感じたものです。メタ認知は、自分の感情や考えを、対象として観ることです。pjdhiro は、これを、自分を分けていく作業だと見ています。感情を観て、考えを観て、そうして分けていくと、最後に観ている私が残ります。その私も観ようとすると、観る私と観られる私が、分けられなくなります。そこで感じたものを、pjdhiro は次のように書いています。</p>
+          <p class="reading-quote"><strong>pjdhiro の像：</strong>……観察し、される者だけになった後、その二つが融合する安定感よりは、見るしかできない私の頭頂の先にへその緒で接続された母の存在が安定をもたらすような落ち着きの感覚が近い。……限りのなさは、その先が見えないという感覚。表現として臍の緒と母のたとえにしたが、そもそも母がいることを胎児は認識していないでしょう。そのように、場や大海は何かわからない。母が摂取する栄養や酸素などの循環を含めれば、その先は宇宙すべてと接続している。</p>
+          <p>先は見えないのに、安定しています。確かめて得る安心とは別に、確かめずにつながっている安定がある、ということです。Love駆動開発の読み物は、これを「確かめずにつながっている安定」と呼んでいます。pjdhiro は、この安定とのずれが、違和感の物差しになっているのかもしれない、と見ています。</p>
+          <p class="reading-quote"><strong>pjdhiro の見立て：</strong>安心の経験との類似度で評価してる面もあるかも。胎児の頃の。メタ認知するとそのような安定感を感じる。観るものだけになった時に、どこかに他者との接続のようなものを感じる。ワームホールのよう。その感覚とのズレを違和感や善悪の物差しにしてるのかもしれない。美や善など。</p>
+          <p>欠損駆動思考の前の調べでは、欠けの基準になりうるものの一つとして、愛着の研究の「安心の感じ」に当たりました。愛着の研究は、養育する人とのつながりを、近くにいることでなく、安心の感じとして置き直した研究です。その結果を見て、pjdhiro はこう言いました。</p>
+          <p class="reading-quote"><strong>pjdhiro の見方：</strong>Loveの定義やLoveの対象と完全に一致する可能性がある。</p>
+          <p>そこで、愛着の研究に限らず、つながりの安定を扱う論を広く集めました。このページは、その整理です。</p>
+          <details class="reading-details">
+            <summary>詳しく — この像が出てきた流れ</summary>
+            <p>自分を分けていく作業と、その先で感じたものの流れは、Love駆動開発の読み物に、pjdhiro の言葉で書かれています。ワームホールは、物理で、離れた二つの場所をつなぐ橋として考えられているもので、ここではたとえです。</p>
+            <ul class="reading-links">
+              <li><a href="../reader/love-driven-dev.html#ldd-center">Love駆動開発と呼びたいもの — 見えない中心を、自分を分けて見る</a></li>
+              <li><a href="../reader/love-driven-dev.html#ldd-love-umbilical">Love駆動開発と呼びたいもの — 確かめずにつながっている安定</a></li>
+            </ul>
+          </details>
+        </section>
+
+        <section class="reading-chapter" id="cs-scales">
+          <h2 class="reading-chapter-title">二つの時間の尺度を、分けて読む<span class="reading-chapter-sub"> — 脳と体の微細な瞬間と、認知できる大きな時間</span></h2>
+          <p>つながりの安定を扱う論は、二つの時間の尺度に分かれます。一つは、脳と体の微細な瞬間です。1 秒に満たない心拍の合いや、意識に上らない速さの反応を測ります。もう一つは、認知できる大きな時間です。発達や関係や人生のあいだに育ち、本人が感じとして語れるものを書きます。</p>
+          <p>二つは、同じ「つながり」の語で書かれても、見ているものが違います。このページは、二つを一つの器に混ぜず、段ごとに分けて書きます。一つの論が両方を書いているときも、分けて書きます。</p>
+          <details class="reading-details">
+            <summary>詳しく — 二つの尺度で、測られていることと語られていること</summary>
+            <p>微細な瞬間の側の論は、つながりを、同期・体の調整・安全の判断として測っています。けれども、安定している「感じ」そのものは測っていません。大きな時間の側の論は、その感じを語っていますが、測ってはいません。自然とのつながりを測る尺度のように、質問紙で測るものもありますが、測れるのは本人が答えられる、気づいている側のつながりです。</p>
+          </details>
+        </section>
+
+        <section class="reading-chapter" id="cs-tiers">
+          <h2 class="reading-chapter-title">つながりの先で、九つの段に並べる<span class="reading-chapter-sub"> — 触れている体から、名の無い先まで</span></h2>
+          <p>集めた論を横に並べて見たあと、pjdhiro はこう言いました。</p>
+          <p class="reading-quote"><strong>pjdhiro の見方：</strong>みんな群盲象を評しているのかもしれない。</p>
+          <p>群盲象は、目の見えない人たちが象のそれぞれ違うところを触り、象とは何かを言い合うたとえです。どの論も、つながりの安定の一面を触っているのかもしれません。そこで、論を、つながりの先（何とつながっているか）で分け、具体の先から、名を当てにくい先へと並べました。上ほど、触れて測れる具体の先です。下ほど、名を当てにくい先です。段の分け方と並びは、このページがしたもので、原典の著者たちの分け方ではありません。</p>
+          <table class="cs-table">
+            <thead><tr><th>段</th><th>つながりの先</th><th>ここに並べた論</th></tr></thead>
+            <tbody>
+              <tr><td data-label="段">1</td><td data-label="つながりの先">触れている体（肌・ぬくもり・心拍）</td><td data-label="ここに並べた論">安らぎとつながり（Uvnäs-Moberg ら）・生体行動の同期（Feldman）・手を握る実験（Coan ら）</td></tr>
+              <tr><td data-label="段">2</td><td data-label="つながりの先">目の前にいる特定の相手</td><td data-label="ここに並べた論">ずれと修復（Tronick と Beeghly）・ポジティビティの共鳴（Fredrickson）・安心の感じと安全基地（Sroufe と Waters・Ainsworth と Bowlby）・社会的基線（Coan と Sbarra）</td></tr>
+              <tr><td data-label="段">3</td><td data-label="つながりの先">いないが名指せる相手（心の中の像）</td><td data-label="ここに並べた論">意識の手前で呼ばれる愛着の相手の像（Mikulincer ら）・思い浮かべたペット（Zilcha-Mano ら）</td></tr>
+              <tr><td data-label="段">4</td><td data-label="つながりの先">包む環境としての母</td><td data-label="ここに並べた論">工事中</td></tr>
+              <tr><td data-label="段">5</td><td data-label="つながりの先">集団・社会</td><td data-label="ここに並べた論">コミュニティの感覚（McMillan と Chavis）・集合的沸騰（Durkheim）</td></tr>
+              <tr><td data-label="段">6</td><td data-label="つながりの先">まわりの環境（安全と感じられること）</td><td data-label="ここに並べた論">安全の神経の知覚（Porges）・安全でないことを既定とする見方（Brosschot ら）</td></tr>
+              <tr><td data-label="段">7</td><td data-label="つながりの先">自然・生きもの</td><td data-label="ここに並べた論">雄大な自然の中の見えない存在（Takano と Nomura）・自然とのつながりの尺度（Pasca ら）</td></tr>
+              <tr><td data-label="段">8</td><td data-label="つながりの先">外界の全体</td><td data-label="ここに並べた論">大洋的な感情（Freud が伝える友人の言葉）・瞑想で境がうすれる状態（Dor-Ziderman ら）</td></tr>
+              <tr><td data-label="段">9</td><td data-label="つながりの先">名の無い先（あとから名が付く先）</td><td data-label="ここに並べた論">絶対依存の感情（Schleiermacher）・象徴的な人物（Mikulincer と Shaver）・気づかない聖なる語（Inzlicht と Tullett）</td></tr>
+            </tbody>
+          </table>
+          <details class="reading-details">
+            <summary>詳しく — 並べた論の範囲</summary>
+            <p>この表に並べたのは、原典の本文を読んで確かめられた論だけです。集めた論はほかにもあり、段 4 に置ける論もありました。段 4 は、載せられる論がそろうまで、見出しだけを置いています。ほかの論が見つかれば、どの段にも書き足します。</p>
+          </details>
+        </section>
+
+        <section class="reading-chapter" id="cs-each">
+          <h2 class="reading-chapter-title">段ごとに、何とつながり、何が書かれているか<span class="reading-chapter-sub"> — 微細な瞬間と大きな時間を分けて</span></h2>
+          <p>段ごとに、論がつながりの先を何として置き、どの時間の尺度で何を書いているかを見ます。畳みの中は、<span class="scale-tag">微細な瞬間</span>と<span class="scale-tag">大きな時間</span>を分けて書きます。</p>
+
+          <details class="reading-details" id="cs-tier-1">
+            <summary>段 1　触れている体 — 肌・ぬくもり・心拍</summary>
+            <p><span class="scale-tag">微細な瞬間</span>母と乳児が向き合ってやり取りするとき、二人の心拍のリズムは、1 秒に満たない遅れで合います。行動が合っていない瞬間には、心拍の合いは見られませんでした（Feldman 2015, pp.377–378。Feldman ら 2011 のまとめ）。肌に触れる、撫でる、温かさのような穏やかな刺激でオキシトシンが出ると、その場でストレスの反応が下がり、人と関わる振る舞いが高まります。Uvnäs-Moberg らは、これを「安らぎとつながり（calm and connection）」の系と呼び、ストレスの系と逆向きの系として置いています（Uvnäs-Moberg ら 2015, p.8）。いつ来るか分からない電気ショックを待つあいだ、夫の手を握っていると、脅威にかかわる脳の反応が弱まりました（Coan ら 2006）。</p>
+            <p><span class="scale-tag">大きな時間</span>Feldman は、生まれてから 9〜10 か月ほどの時期に、この同期を経ることで、相手に選ばれた、長く続く絆ができる、と書いています（Feldman 2015, p.376）。Uvnäs-Moberg らは、生まれてすぐの肌の触れ合いが一年後の関わり方に残ることを挙げ、安らぎとつながりの系は早い時期に身に付くものかもしれない、と書いています（Uvnäs-Moberg ら 2015, p.8）。</p>
+            <p>この段では、先は触れている相手の体です。名指せて、感覚に入っています。Feldman は、哺乳類の進化で、胎盤の発達とともに母と胎児の視床下部の働きを合わせる必要が生まれたことが、母子の生理の同期のもとになった、とほかの研究をまとめています（Feldman 2015, pp.376–377）。</p>
+          </details>
+
+          <details class="reading-details" id="cs-tier-2">
+            <summary>段 2　目の前にいる特定の相手</summary>
+            <p><span class="scale-tag">微細な瞬間</span>乳児と養育者のやり取りは、合う状態と、ずれた状態を行き来します。ずれは、次のやり取りの一歩で 7 割ほどが直り、修復はおよそ 3〜5 秒ごとに起きます（Tronick と Beeghly 2011、Gianino と Tronick 1988 のまとめ）。Fredrickson は、愛（love）という感情を、二人以上のあいだに一瞬だけ生まれる「ポジティビティの共鳴」と定義しています。共有された肯定的な感情、互いへの気遣い、生体行動の同期の三つが、時を合わせて現れる瞬間です（Fredrickson 2016, 写し p.16）。気遣いは、意識に上らない、軽い、その場かぎりのものとして書かれています（同 p.13）。</p>
+            <p><span class="scale-tag">大きな時間</span>Tronick と Beeghly は、修復がうまくいく歴史が、乳児の「ずれは直せる」という暗黙の知と、相手への信頼、そして安心な愛着につながる、と置いています（節 "Functions of Reparation"）。Fredrickson は、共鳴の瞬間の積み重ねが信頼や安心な愛着を育てるとしつつ、愛を、続く関係とは分けて定義しています（同 pp.16・19–20）。愛着の研究は、愛着の目標を、近くにいることでなく「安心の感じ（felt security）」として置き直しました（Sroufe と Waters 1977, p.1186）。Ainsworth と Bowlby は、養育する人を、世界を探るための安全基地であり、安全な避難所でもあるもの、として書いています（1991）。Coan と Sbarra は、人の脳は、頼れる他者が近くにいることを前提（基線）にしている、と置いています（Coan と Sbarra 2015, p.87）。</p>
+            <p>この段では、先は見えている、名指せる相手です。安心は、応えてもらう経験や、ずれを直す経験を重ねて育つ、と書かれています。</p>
+          </details>
+
+          <details class="reading-details" id="cs-tier-3">
+            <summary>段 3　いないが名指せる相手 — 心の中の像</summary>
+            <p><span class="scale-tag">微細な瞬間</span>意識に上らない速さで、脅威を表す語を見せると、愛着の相手の心の中の像が呼び起こされやすくなりました。この効果は愛着の相手に限って起き、課題を変えても再現しました（Mikulincer ら 2002）。</p>
+            <p><span class="scale-tag">大きな時間</span>犬か猫の飼い主に難しい課題をさせると、ペットが部屋にいなくても、思い浮かべるだけで、課題のあいだの血圧の上がりは、いるときと同じくらい抑えられました（Zilcha-Mano ら 2012）。支えてくれる愛着の相手を思い浮かべさせると、気分や思いやりがよくなり、不安定な愛着の人にも起きる、とまとめた総説もあります（Shaver と Mikulincer 2008）。</p>
+            <p>この段では、相手は見えていません。けれども名指せる相手で、多くは日々の応答で確かめてきた相手です。</p>
+          </details>
+
+          <details class="reading-details" id="cs-tier-4">
+            <summary>段 4　包む環境としての母 — 工事中</summary>
+            <p class="wip">工事中です。この段には、つながりの先が、乳児を包む環境としての母である論を置きます。</p>
+          </details>
+
+          <details class="reading-details" id="cs-tier-5">
+            <summary>段 5　集団・社会</summary>
+            <p><span class="scale-tag">大きな時間</span>McMillan と Chavis は、コミュニティの感覚を、属しているという感じ、成員が互いと集団にとって大事だという感じ、共に居ることで必要が満たされるという共有された信（shared faith）、として定義しています（1986, p.9）。その要素の一つに「霊的な絆」を挙げ、とても書きにくい要素だと書いています（p.14）。Durkheim は、社会は成員の中に、絶えず依存の感じを養う、と書きました（1912, p.295）。集まって高ぶるとき（集合的沸騰）、人は自分でなくなり、外の力に動かされると感じ、そこから宗教の考えが生まれたように見える、とも書いています（pp.312–313）。そして人は、この依存と力の印象が集団から来ていることを見ていない、と書いています（p.315）。</p>
+            <p><span class="scale-tag">微細な瞬間</span>この段に並べた論には、脳と体の微細な瞬間の測りはありません。</p>
+            <p>この段では、先は境のある、名指せる集団です。Durkheim の芯は高ぶりで、落ち着きとは逆の向きです。McMillan と Chavis は、この感覚が、関わりの頻度や質のような経験で強まる、と書いています（pp.13–14）。</p>
+          </details>
+
+          <details class="reading-details" id="cs-tier-6">
+            <summary>段 6　まわりの環境 — 安全と感じられること</summary>
+            <p><span class="scale-tag">微細な瞬間</span>Porges は、神経系が、意識に上らずに環境の安全と危険を見分ける働きを、知覚と分けて neuroception と呼びました。環境が安全と判断されると、身を守る回路が抑えられ、人と関わる振る舞いと、穏やかな内臓の状態が現れる、と書いています（Porges 2009, 節 "Environmental components of neuroception"）。Brosschot らは、ストレスの反応は、何かが起きてから生まれるのでなく、はじめから働いていて、安全が感じられているあいだだけ抑えられている、と置いています（Brosschot ら 2018）。</p>
+            <p><span class="scale-tag">大きな時間</span>Porges 2009 が書く大きな時間は、三つの回路が進化した順で、発達の時間ではありません。Brosschot らは、安全の感じの源の一つに、強いつながりの網を数えています。</p>
+            <p>この段の論は、つながっていることより、脅かされていないことを書いています。安全の手がかりは、よく知った人、抑揚のある声、温かい表情のような、目の前の人から来ます。なお、Porges の理論の土台には、生理学から、五つの前提のどれも成り立たないか、ありそうにない、という強い反論があります（Grossman 2023）。</p>
+          </details>
+
+          <details class="reading-details" id="cs-tier-7">
+            <summary>段 7　自然・生きもの</summary>
+            <p><span class="scale-tag">微細な瞬間</span>Takano と Nomura は、大学生 77 人に雄大な自然の映像を 2 分見せ、見ているあいだに「見えない存在」を感じた強さを刻々と記録させ、皮膚の電気反応と瞳孔も測りました。この感覚は始まって 10 秒ほどで上がり、終わりまで保たれました。見たあとには、その存在は、神や仏のような働き手より、自然を包む空気のようなもの、として感じられていました（Takano と Nomura 2023, pp.3–5）。安定そのものは測っていない、と著者は書いています（p.7）。見えない存在が何かは、実験者が前もって言葉で説明しています。</p>
+            <p><span class="scale-tag">大きな時間</span>自然とのつながりを、人ごとの特性として、質問紙で測る尺度があります。その流れの研究は、自然が自分の一部であることと、自分を自然の一部と感じることの両方を、このつながりに数えています（Pasca ら 2018, p.1）。</p>
+            <p>この段では、先は人でなく、自然という広がりです。名指しきれませんが、「自然」とは名指されています。測れるのは、本人が感じていると答えられる、気づいている側のつながりです。</p>
+          </details>
+
+          <details class="reading-details" id="cs-tier-8">
+            <summary>段 8　外界の全体</summary>
+            <p><span class="scale-tag">大きな時間</span>Freud は <i>Das Unbehagen in der Kultur</i>（1930）の第 1 章で、敬愛する友人から寄せられた手紙を取り上げています。その友人は、限りの無い、いわば「大洋的な」感じを、宗教の本当の源と見ていました。それは信条でなく、まったく主観の事実で、自分を離れたことが無い感じだ、と書いていました（p.6）。Freud はこれを、外界の全体と解けずに結びついている感じ、と言い換えます（p.7）。そして、乳児がまだ自分と外界を分けていない頃の自我の感じが、大人の中に残ったものとして読みます（pp.9–11）。Freud 自身は、この感じを自分の中に見つけられない、と書いています（p.6）。</p>
+            <p><span class="scale-tag">微細な瞬間</span>瞑想の熟練者に、自分と世界の境がうすれる状態を起こさせ、脳の活動と一人称の報告を突き合わせた研究があります（Dor-Ziderman ら 2013）。報告には、「経験はあったが、宛先が無く、中心や主体に結びついていなかった」「経験と存在の中で休んでいる。楽で心地よい」がありました（p.6）。</p>
+            <p>この段では、先は外界の全体で、宛先を持ちません。どちらの論も、境が消えて一つになる方向で書いています。</p>
+          </details>
+
+          <details class="reading-details" id="cs-tier-9">
+            <summary>段 9　名の無い先 — あとから名が付く先</summary>
+            <p><span class="scale-tag">大きな時間</span>Schleiermacher は『キリスト教信仰』（第 2 版、1830）の §4 で、どの敬虔にも共通するのは、自分をまるごと依存しているものとして意識することだ、と書きました（p.16）。人どうしや自然とのあいだの依存は、いつも部分的で、まるごとの依存は、世界の中には無いとします（p.20）。自分が受けることも働くことも「どこからか（Woher）」来ている、という意識で、その「どこから」を神と呼びます（p.22）。神について先に知っていることが、この感情の条件ではない、とも書いています（p.22）。また、自由の感じが無ければ、この感情は成り立たない、と書いています（p.22）。Mikulincer と Shaver は、神・仏陀・聖母のような象徴的な人物も、安全な避難所と安全基地になりうる、と書いています。ただし、不安定な人にとって、その人物は本人の関係の型の映しにすぎない、とも書いています（2020, 第 11 節）。</p>
+            <p><span class="scale-tag">微細な瞬間</span>文を並べ替える課題の中に、気づかれない形で spirit・divine・sacred などの語を入れると、神を信じる人では、そのあとで誤りをしたときの脳波の反応が小さくなりました。信じない人では、逆に大きくなりました（Inzlicht と Tullett 2010）。</p>
+            <p>この段では、先は名指されないまま感じられ、名はあとから付きます。Schleiermacher は、この感情を「意識している」と書いています。Inzlicht と Tullett の効果は、本人がすでに持つ信仰の中でだけ起きています。</p>
+          </details>
+        </section>
+
+        <section class="reading-chapter" id="cs-features">
+          <h2 class="reading-chapter-title">確かめずにつながっている安定の、六つの特徴と照らす<span class="reading-chapter-sub"> — 段ごとに、重なるところと重ならないところ</span></h2>
+          <p>九つの段を、確かめずにつながっている安定と照らすために、このページは、pjdhiro の像と見立ての言葉から、六つの特徴を取り出しました。取り出し方は、このページがしたものです。</p>
+          <ul>
+            <li><strong>名の無さ</strong>：先が見えず、名を当てない（「その先が見えない」「場や大海は何かわからない」）</li>
+            <li><strong>気づかなさ</strong>：確かめないまま、気づかないまま、つながっている（「母がいることを胎児は認識していない」）</li>
+            <li><strong>落ち着き</strong>：落ち着いていて、続いている（「安定をもたらすような落ち着きの感覚」）</li>
+            <li><strong>区別の残り</strong>：分けた私が残ったまま、先とつながる（「その二つが融合する安定感よりは」）</li>
+            <li><strong>胎児の像</strong>：胎児と母のたとえ</li>
+            <li><strong>大人の感じ</strong>：大人がメタ認知の先で感じるもの</li>
+          </ul>
+          <p>段ごとに、六つのうちどれが重なり、どれが重ならないかを並べると、次のようになります。これは、このページの読みです。どの段が近いかを決めるためのものではありません。</p>
+          <table class="cs-table">
+            <thead><tr><th>段</th><th>重なる特徴</th><th>重ならない特徴</th></tr></thead>
+            <tbody>
+              <tr><td data-label="段">1 触れている体</td><td data-label="重なる特徴">落ち着き（安らぎとつながりが一つの系）・気づかなさ（本人が確かめる行いでなく、体の側で起きる）・胎児の像（母と胎児の働きの合いを、同期の起こりに挙げる）</td><td data-label="重ならない特徴">名の無さ（先は触れている体）・大人の感じ（乳児と動物の研究が中心）</td></tr>
+              <tr><td data-label="段">2 目の前の特定の相手</td><td data-label="重なる特徴">気づかなさの一部（気遣いは意識に上らない。「直せる」は暗黙の知）</td><td data-label="重ならない特徴">名の無さ（見えている相手）・気づかなさ（ずれを直す経験で育つ）・落ち着き（愛は一瞬のもの）</td></tr>
+              <tr><td data-label="段">3 心の中の像</td><td data-label="重なる特徴">名の無さの半分（見えない）・気づかなさの一部（意識の手前で像が呼ばれる）</td><td data-label="重ならない特徴">名の無さの半分（名指せる）・気づかなさ（日々の応答で確かめてきた相手）</td></tr>
+              <tr><td data-label="段">4 包む環境としての母</td><td data-label="重なる特徴">工事中</td><td data-label="重ならない特徴">工事中</td></tr>
+              <tr><td data-label="段">5 集団・社会</td><td data-label="重なる特徴">気づかなさ（依存の印象が集団から来ていると見ていない）</td><td data-label="重ならない特徴">名の無さ（名指せる集団）・落ち着き（沸騰は高ぶり）・区別の残り（自分でなくなる）</td></tr>
+              <tr><td data-label="段">6 まわりの環境</td><td data-label="重なる特徴">気づかなさ（意識に上らない安全の判断）</td><td data-label="重ならない特徴">つながりより、脅かされていないことの論。手がかりは目の前の人</td></tr>
+              <tr><td data-label="段">7 自然・生きもの</td><td data-label="重なる特徴">名の無さの一部（広がり・空気のようなもの）・落ち着きの一部（映像のあいだ続く。特性としてふだんからある）</td><td data-label="重ならない特徴">気づかなさ（本人が答えられる、気づいている側）</td></tr>
+              <tr><td data-label="段">8 外界の全体</td><td data-label="重なる特徴">名の無さ（宛先が無い）・大人の感じ（Freud の友人は、大人の自分を離れない感じとして書く）・落ち着きの一部（「楽で心地よい」）</td><td data-label="重ならない特徴">区別の残り（境が消えて一つになる方向）・大人の感じ（Freud は乳児の頃の名残として読む）</td></tr>
+              <tr><td data-label="段">9 名の無い先</td><td data-label="重なる特徴">名の無さ（名はあとから付く）・区別の残り（自由の感じが無ければ成り立たない）・大人の感じ（大人の自己意識）・気づかなさの一部（気づかない語で反応が変わる）</td><td data-label="重ならない特徴">気づかなさ（Schleiermacher は意識していると書く）・落ち着き（落ち着き・安定の語が無い）</td></tr>
+            </tbody>
+          </table>
+          <details class="reading-details">
+            <summary>詳しく — 六つの特徴の取り出し方</summary>
+            <p>名の無さ・気づかなさ・落ち着き・胎児の像は、上の pjdhiro の像の言葉にそのまま出てきます。区別の残りは、像が「その二つが融合する安定感よりは」と、融け合う安定と分けて書いているところから取りました。境が消えて一つになる、とは書かれていません。大人の感じは、この像が、乳児の頃の名残としてでなく、メタ認知で自分を分けていった先で感じられたものとして書かれているところから取りました。</p>
+          </details>
+        </section>
+
+        <section class="reading-chapter" id="cs-seen">
+          <h2 class="reading-chapter-title">照らして見えたこと<span class="reading-chapter-sub"> — どの段も、一部を持っている</span></h2>
+          <p>どの段の論も、六つの特徴の一部だけを持っていました。具体の側の段（体・目の前の相手・まわりの環境）は、気づかなさや落ち着きを書いていますが、先を名指しています。名を当てにくい側の段（外界の全体・名の無い先）は、名の無さや大人の感じを書いていますが、境が消える方向か、気づいている側で書いています。群盲象のたとえで言えば、具体の側の論は気づかなさと落ち着きを、名を当てにくい側の論は名の無さと区別の残り方を、それぞれ触っているように見えます。</p>
+          <p>六つを全部持つ論は、ここに並べた範囲にはありませんでした。確かめずにつながっている安定は、一つの段の論で示せるものでなく、いくつもの段が重なるところとしてしか示せないものなのかもしれません。これは、このページの読みです。</p>
+          <details class="reading-details">
+            <summary>詳しく — 段をまたいで書く原典と、そこへ行く道の違い</summary>
+            <p>いくつかの原典は、それ自体が段をまたいでいます。Mikulincer と Shaver は、目の前の相手から、心の中の像、神のような象徴的な人物へと、安心の源を延ばして書いています（2020）。Freud は逆向きで、はじめはすべてを含んでいた乳児の自我から、あとで外界が分かれていく、と書いています（1930, p.11）。どちらでも、具体の段は発達の初めに来ます。</p>
+            <p>確かめずにつながっている安定は、大人が、メタ認知で自分を分けていった先で、名の無い先とのつながりとして感じたものです。名を当てにくい段へ向かう向きは原典と同じでも、そこへ行く道（分けていくこと）は、原典の書き方（育つこと、延ばすこと）と違って見えます。これも、このページの読みです。</p>
+          </details>
+        </section>
+
+        <section class="reading-chapter" id="cs-love">
+          <h2 class="reading-chapter-title">Love と呼ばれてきたものも、同じ幅に並ぶ<span class="reading-chapter-sub"> — 向ける先で見ると</span></h2>
+          <p>pjdhiro は、つながりの安定が Love の定義や対象と一致する可能性を見ていました。そこで、Love と呼ばれてきたものが何に向けられてきたかを、同じ九つの段に置いてみました。Love の語は、性欲のような体の先から、特定の相手、集団、すべての生きもの、世界の全体、神や対象を立てない慈悲まで、どの段にも当てられてきました。</p>
+          <p>一致するかどうかは決めていません。一致を見るとしても、どれか一つの段との一致としてでなく、段の並び全体との重なりとして見ることもできます。これも、このページの読みです。</p>
+          <details class="reading-details">
+            <summary>詳しく — 段ごとの、Love の向ける先</summary>
+            <table class="cs-table">
+              <thead><tr><th>段</th><th>Love と呼ばれてきたものの向ける先</th></tr></thead>
+              <tbody>
+                <tr><td data-label="段">1 触れている体</td><td data-label="向ける先">フィッシャーの性欲（性的な満足）</td></tr>
+                <tr><td data-label="段">2 目の前の特定の相手</td><td data-label="向ける先">ボウルビィの結びつき（一人の母親像）・情熱的な愛（他者）・アセベドら（長く連れ添った相手）・ショーペンハウアー（特定の個人）</td></tr>
+                <tr><td data-label="段">3 心の中の像</td><td data-label="向ける先">友愛（もう一人の自分）・法句経の愛しいもの・辞書の語義</td></tr>
+                <tr><td data-label="段">4 包む環境としての母</td><td data-label="向ける先">慈経のたとえ（母と一人の子）</td></tr>
+                <tr><td data-label="段">5 集団・社会</td><td data-label="向ける先">墨子の兼愛（他人の国・家）・論語の仁（民）</td></tr>
+                <tr><td data-label="段">6 まわりの環境</td><td data-label="向ける先">ストア派の自分への親和・アリストテレスの自己愛</td></tr>
+                <tr><td data-label="段">7 自然・生きもの</td><td data-label="向ける先">慈（すべての生きもの）・孟子の「物には愛」・エンペドクレスの四つの根</td></tr>
+                <tr><td data-label="段">8 外界の全体</td><td data-label="向ける先">慈（全世界）・ダンテの星々を動かす愛・パースの宇宙の進化</td></tr>
+                <tr><td data-label="段">9 名の無い先</td><td data-label="向ける先">アガペー（神）・スピノザの神への知的愛・アリストテレスの「愛されるもの」・対象を立てない慈悲</td></tr>
+              </tbody>
+            </table>
+            <p>ここに並べた論のうち、つながりそのものを love と呼ぶのは、Fredrickson のポジティビティの共鳴です。ただし、それは二人以上のあいだの一瞬の感情で、続く安定ではありません。Freud は、大洋的な感情そのものを愛とは呼ばず、恋のきわみで自分と相手の境が溶けかける、と並べて書いています（1930, p.8）。</p>
+            <ul class="reading-links">
+              <li><a href="../reader/love-history.html#lh-scope">Love とは、どう言われてきたか — Love の範囲と種類</a></li>
+            </ul>
+          </details>
+        </section>
+
+        <section class="reading-chapter" id="cs-open">
+          <h2 class="reading-chapter-title">まだ分からないこと<span class="reading-chapter-sub"> — 名指せない先との、続く安定</span></h2>
+          <p>名指せず、宗教の語でもない先とのつながりを、一時の経験でなく、続く安定として置く論は、ここに並べた範囲にはありませんでした。区別が残ったまま、見えない先とつながる、という形を測った研究も、ここには並んでいません。瞑想で測られたのは、境が消える方向でした。</p>
+          <p>段 4（包む環境としての母）は工事中です。ほかの論が見つかれば、どの段にも書き足します。</p>
+        </section>
+
+        <section class="reading-chapter" id="cs-method">
+          <h2 class="reading-chapter-title">この整理の作り方と出典</h2>
+          <p>つながりの安定を扱う論を、愛着の研究の外まで、体と二人の同期、発達と臨床、関係と社会、名指せない先の四つの向きで探しました。このページに載せたのは、原典の本文を読み、鍵の文を頁か節で確かめられたものだけです。段の分け方と並び、六つの特徴の取り出し方、重なりの読みは、このページがしたものです。</p>
+          <details class="reading-details">
+            <summary>出典</summary>
+            <ul class="refs">
+              <li>Ainsworth, M. D. S., &amp; Bowlby, J. (1991). An ethological approach to personality development. <i>American Psychologist</i> 46(4), 333–341.</li>
+              <li>Brosschot, J. F., Verkuil, B., &amp; Thayer, J. F. (2018). Generalized Unsafety Theory of Stress. <i>International Journal of Environmental Research and Public Health</i> 15(3), 464.</li>
+              <li>Coan, J. A., &amp; Sbarra, D. A. (2015). Social Baseline Theory: the social regulation of risk and effort. <i>Current Opinion in Psychology</i> 1, 87–91.</li>
+              <li>Coan, J. A., Schaefer, H. S., &amp; Davidson, R. J. (2006). Lending a hand: Social regulation of the neural response to threat. <i>Psychological Science</i> 17(12), 1032–1039.</li>
+              <li>Dor-Ziderman, Y., Berkovich-Ohana, A., Glicksohn, J., &amp; Goldstein, A. (2013). Mindfulness-induced selflessness: A MEG neurophenomenological study. <i>Frontiers in Human Neuroscience</i> 7, 582.</li>
+              <li>Durkheim, É. (1912). <i>Les formes élémentaires de la vie religieuse</i>. Paris: Félix Alcan. 第 2 巻第 7 章（頁は PUF「Quadrige」1990 の版）。</li>
+              <li>Feldman, R. (2015). Sensitive periods in human social development: New insights from research on oxytocin, synchrony, and high-risk parenting. <i>Development and Psychopathology</i> 27(2), 369–395.</li>
+              <li>Fredrickson, B. L. (2016). Love: Positivity resonance as a fresh, evidence-based perspective on an age-old topic. In L. F. Barrett, M. Lewis, &amp; J. M. Haviland-Jones (Eds.), <i>Handbook of Emotions</i> (4th ed.). Guilford Press.（頁は著者の研究室のサイトにある著者稿の頁）</li>
+              <li>Freud, S. (1930). <i>Das Unbehagen in der Kultur</i>. Wien: Internationaler Psychoanalytischer Verlag. 第 1 章。</li>
+              <li>Grossman, P. (2023). Fundamental challenges and likely refutations of the five basic premises of the polyvagal theory. <i>Biological Psychology</i> 180, 108589.</li>
+              <li>Inzlicht, M., &amp; Tullett, A. M. (2010). Reflecting on God: Religious primes can reduce neurophysiological response to errors. <i>Psychological Science</i> 21(8), 1184–1190.</li>
+              <li>McMillan, D. W., &amp; Chavis, D. M. (1986). Sense of community: A definition and theory. <i>Journal of Community Psychology</i> 14(1), 6–23.</li>
+              <li>Mikulincer, M., Gillath, O., &amp; Shaver, P. R. (2002). Activation of the attachment system in adulthood: Threat-related primes increase the accessibility of mental representations of attachment figures. <i>Journal of Personality and Social Psychology</i> 83(4), 881–895.</li>
+              <li>Mikulincer, M., &amp; Shaver, P. R. (2020). Enhancing the "broaden and build" cycle of attachment security in adulthood. <i>International Journal of Environmental Research and Public Health</i> 17(6), 2054.</li>
+              <li>Pasca, L., Coello, M. T., Aragonés, J. I., &amp; Frantz, C. M. (2018). The equivalence of measures on the Connectedness to Nature Scale. <i>PLoS ONE</i> 13(11), e0207739.</li>
+              <li>Porges, S. W. (2009). The polyvagal theory: New insights into adaptive reactions of the autonomic nervous system. <i>Cleveland Clinic Journal of Medicine</i> 76(Suppl 2), S86–S90.</li>
+              <li>Schleiermacher, F. (1830). <i>Der christliche Glaube</i>. Zweite Ausgabe, Erster Band. Berlin: G. Reimer. §4.</li>
+              <li>Shaver, P. R., &amp; Mikulincer, M. (2008). Augmenting the sense of security in romantic, leader–follower, therapeutic, and group relationships: A relational model of psychological change. In J. P. Forgas &amp; J. Fitness (Eds.), <i>Social Relationships</i>. Psychology Press.</li>
+              <li>Sroufe, L. A., &amp; Waters, E. (1977). Attachment as an organizational construct. <i>Child Development</i> 48, 1184–1199.</li>
+              <li>Takano, R., &amp; Nomura, M. (2023). A closer look at the time course of bodily responses to awe experiences. <i>Scientific Reports</i> 13, 22506.</li>
+              <li>Tronick, E., &amp; Beeghly, M. (2011). Infants' meaning-making and the development of mental health problems. <i>American Psychologist</i> 66(2), 107–119.</li>
+              <li>Uvnäs-Moberg, K., Handlin, L., &amp; Petersson, M. (2015). Self-soothing behaviors with particular reference to oxytocin release induced by non-noxious sensory stimulation. <i>Frontiers in Psychology</i> 5, 1529.</li>
+              <li>Zilcha-Mano, S., Mikulincer, M., &amp; Shaver, P. R. (2012). Pets as safe havens and secure bases: The moderating role of pet attachment orientations. <i>Journal of Research in Personality</i> 46(5), 571–580.</li>
+            </ul>
+          </details>
+          <ul class="reading-links">
+            <li><a href="./">欠損駆動思考</a></li>
+            <li><a href="../reader/love-driven-dev.html">Love駆動開発と呼びたいもの</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="reading-body" data-reading-lang="en" lang="en">
+        <header class="reading-header">
+          <h1 class="reading-title">What is the stability of connection connected to?</h1>
+          <p class="reading-lead">Without checking, one feels connected to something and is at ease. When that is felt, what lies at the other end of the connection? This page gathers theories of the stability of connection beyond attachment research, and arranges them in nine tiers by what they are connected to, from the body being touched to an unnamed beyond.</p>
+          <p class="wip">The English version of this page is under construction. The Japanese version can be read now.</p>
+        </header>
+        <ul class="reading-links">
+          <li><a href="?">日本語で読む</a></li>
+          <li><a href="./?lang=en">Kesson-Driven Thinking</a></li>
+        </ul>
+      </div>
+    </article>
+  </main>
+</body>
+</html>

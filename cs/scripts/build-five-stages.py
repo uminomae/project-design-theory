@@ -217,7 +217,9 @@ def render(md: str, chrome: dict) -> tuple[str, list]:
                 "<tr>" + "".join(f'<td data-label="{html.escape(h)}">{inline(c.strip())}</td>' for h, c in zip(heads, r)) + "</tr>"
                 for r in rows[1:]
             )
-            out.append(f'<div class="reader-card reader-table tablefit"><table><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>')
+            # 列の多い表（一覧）は、一文の定義の列のほかを折らない
+            cls = " table-wide" if len(heads) > 4 else ""
+            out.append(f'<div class="reader-card reader-table tablefit{cls}"><table><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>')
         elif b.startswith("- "):
             items = [l[2:].strip() for l in b.split("\n") if l.startswith("- ")]
             layer2 = section is not None and section.startswith(("第-2-層", "layer-2"))
