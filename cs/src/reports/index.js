@@ -525,7 +525,11 @@ function openHoverGridModal({ historyMode = 'push', syncUrl = true } = {}) {
                             assetBaseUrl: state.config.assetBaseUrl,
                             assetMdBaseUrl: state.config.assetMdBaseUrl,
                         });
-                        if (!sources.length) throw new Error('No sources');
+                        // 英語の画面では、英語の記録が無いので開くものが無い（#73・J10）。警告を出さずに空にする。
+                        if (!sources.length) {
+                            contentArea.innerHTML = '';
+                            return;
+                        }
 
                         const { buildMarkdownFetchCandidates, looksLikeHtmlDocument, parseFrontmatter } = await import('./data.js');
                         let raw = '';
