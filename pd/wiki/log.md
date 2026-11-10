@@ -453,3 +453,13 @@ compile 実行の履歴。append-only。
   - 確かめただけ（compiled を今日に）：Bott 1988・Hadamard 1945・Carlsson 2009・Ameta 2021・Li 2014・Teresa 1921・Bak ら 1988・Toynbee 1934
   - 入口（index.md）から、点検の報告と概念の status の表を外した。about.md の health へのリンクを文字にした。`sources/pd/origin-survey` の、非公開の repo の中のパスを外した
   - 道具：Quartz で log.md と health/ を出さない。読者の頁から生成の記録・Issue の番号・開けない PDF のリンクを落とす変換（`pd/quartz/quartz/plugins/transformers/readerview.ts`）
+
+## [2026-11-10] compile | Love駆動開発の章「開発とは、何を指すか」に #108 の三つの答えを置いたときの二ページ
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「開発とは、何を指すか」：題の駆動源と開発の関係、構想・計画・実行の並びを「地図」と呼ばない言い方、開発・プロジェクト・創造の関係、名前は手法か現象か）
+- 結果: `concepts/Love 駆動開発` の「開発」の節を今の本文に合わせた（「地図」の語を外し、三つの関係と名前の段を二文で足した）。`プロジェクトデザイン` はこの章を引いていない。直す所は無い。compiled はどちらも 2026-11-10
+
+## [2026-11-10] compile | Love駆動開発の章「開発とは、何を指すか」の問い 3 の段に「対処」を入れたとき
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（問い 3 の段：人は何もしないわけではなく、全てをコントロールできるわけではないところで対処している）
+- 結果: `concepts/Love 駆動開発` の「開発」の節に一文足した。`プロジェクトデザイン` はこの段を引いていない。compiled はどちらも 2026-11-10

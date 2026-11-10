@@ -164,6 +164,8 @@ export const dict = {
         prologue: {
             timelineAria: '創造の5段階',
             note: 'この定義は暫定です。30 の分野の調べで見つかる特徴を論じ、組み込んで補強していきます。',
+            definitionLink: '現在の定義を読む',
+            definitionHref: './reader/five-stages.html',
             stageTitleFormat: '{label}（{sub}）',
         },
         about: {
@@ -344,6 +346,8 @@ export const dict = {
         prologue: {
             timelineAria: 'Five Stages of Creation',
             note: 'These definitions are provisional. Features found in the survey of 30 fields are discussed and built in to strengthen them.',
+            definitionLink: 'Read the current definition',
+            definitionHref: './reader/five-stages-en.html',
             stageTitleFormat: '{label} ({sub})',
         },
         about: {

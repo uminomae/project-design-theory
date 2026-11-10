@@ -1,3 +1,39 @@
 #!/usr/bin/env bash
 # 公開してよいかの点検（docs/PUBLISH-CHECK.md）
-exec "$(git rev-parse --show-toplevel)/scripts/publish-check.sh"
+top="$(git rev-parse --show-toplevel)"
+"$top/scripts/publish-check.sh" || exit 1
+
+# 公開ページの点検の表を通したか（.claude/skills/public-page-review/SKILL.md・2026-11-10）
+# 公開ページを含む commit は、今の index と同じ印（scripts/public-page-review.sh --done）が無ければ止める。
+# merge の commit には pre-commit が走らないので、develop への取り込みは止めない。
+review="$top/scripts/public-page-review.sh"
+[ -f "$review" ] || exit 0   # まだ develop を取り込んでいない worktree
+files="$(bash "$review" --staged-public)"
+[ -n "$files" ] || exit 0
+stamp="$(cd "$(git rev-parse --git-dir)" && pwd)/PUBLIC_PAGE_REVIEWED"
+tree="$(git write-tree)"
+seen_tree=""
+seen_at=0
+if [ -f "$stamp" ]; then
+  read -r seen_tree seen_at < "$stamp"
+  case "$seen_at" in ''|*[!0-9]*) seen_at=0 ;; esac
+fi
+now="$(date +%s)"
+why=""
+if [ -z "$seen_tree" ]; then
+  why="この worktree では、まだ表を通した印が無い。"
+elif [ "$seen_tree" != "$tree" ]; then
+  why="印のあとに、commit する中身が変わった（印：${seen_tree:0:7}・今：${tree:0:7}）。"
+elif [ $((now - seen_at)) -gt 3600 ]; then
+  why="印が古い（置いてから $(( (now - seen_at) / 60 )) 分。60 分を超えたら通し直す）。"
+fi
+if [ -n "$why" ]; then
+  {
+    echo "pre-commit: 公開ページを含む commit は、点検の表を通してから → .claude/skills/public-page-review/SKILL.md"
+    echo "  $why"
+    echo "  見るページと節：bash scripts/public-page-review.sh"
+    echo "  通したら：bash scripts/public-page-review.sh --done"
+  } >&2
+  exit 1
+fi
+exit 0

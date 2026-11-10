@@ -6,6 +6,7 @@
 
 - 今までの repo から材料（主張・発言・判断・図・コード）を取り込むとき。
 - commit のたび。機械の点検は pre-commit で自動に走る。
+- 公開ページを含む commit は、同じ pre-commit が、点検の表（`.claude/skills/public-page-review/SKILL.md`）を通した印（`bash scripts/public-page-review.sh --done`）も見る。印が今の index と合わなければ止まる（2026-11-10）。
 
 ## 機械の点検
 
