@@ -36,7 +36,7 @@
 | Benveniste, É. (1950). Actif et moyen dans le verbe. *Journal de Psychologie* 43, 121–129. 再録：*Problèmes de linguistique générale* I, Gallimard 1966, pp.168–175 | 中動態の定義の文（PLG I pp.169・172・173・174） | 二次経由（Bader 1997 が頁つきで逐語に引いた文を読んだ。原典の本文は読めていない） | 原典：Internet Archive に二冊あるが貸出だけ（`problmesdeling00benv`・`problemesdelingu0000eben`）。初出の誌は、Internet Archive にあるのは 1904–1930 だけで 1950 は無い。Gallica は自動の取得が確認画面で止まった（誌の電子化は 1940 までと読める一覧がある）。英訳（Meek 訳 1971）の無料の正規の版は無い。HAU Books の増補版（2026・Meek 訳を入れた版）の頁に「Download PDF」の字があるが、まだリンクが無い（予約中。https://haubooks.org/benveniste-problems-in-general-linguistics/ ）。Internet Archive に個人が上げた西語訳があるが、権利が分からず、仏語の原文も照らせないので読んでいない |
 | Benveniste, É. (1958). Catégories de pensée et catégories de langue. *Les Études philosophiques* 13(4), 419–429. 再録：PLG I | 國分が言葉と思考の関係を論じるときに中心に置く論文（文 2018, 121 頁の本文と注 13）。この記録の問いには直には関わらない | 未照合（書誌だけ） | OpenAlex は closed。無料の版は見つからない |
 | ディオニュシオス・トラクス『文法の技術』§15（動詞）。Davidson, T. 訳 (1874). *The Grammar of Dionysios Thrax*. St. Louis: Studley, pp.11–12 | 古い文法の、中動の定義の文 | 本文照合済（訳） | Internet Archive の走査（`grammarofdionysi00dionuoft`・トロント大学の蔵書・著作権の切れたもの）。希語の Uhlig 版 1883（`dionysiithracisa00dionuoft`）は走査の文字が崩れていて、希語の文は照らしていない |
-| スピノザ『エチカ』（1677）第 1 部 定義 7・定理 18、第 3 部 定義 1・2 | 能動と受動の言い分け・内在的な原因 | 本文照合済（羅語と英訳） | 羅語：The Latin Library（https://www.thelatinlibrary.com/spinoza.ethica1.html ・ethica3.html）。英訳：Elwes 訳 1883（Project Gutenberg #3800）。どちらも著作権の切れた本文 |
+| スピノザ『エチカ』（1677）第 1 部 定義 7・定理 18、第 3 部 定義 1・2 | 能動と受動の言い分け・内在的な原因 | 本文照合済（羅語と英訳） | 羅語：The Latin Library（https://www.thelatinlibrary.com/spinoza.ethica1.html ・ethica3.html）。英訳：Elwes 訳（Project Gutenberg #3800。訳の刊行年は確かめていない）。どちらも著作権の切れた本文 |
 | Bader, F. (1997). Actif et moyen dans le verbe. *Linx* 9, 41–59. doi:10.4000/linx.966 | Benveniste の定義の引用（Bader pp.42・43・46・48） | 本文照合済（Bader の論文として） | OpenEdition の出版社の版（https://journals.openedition.org/linx/966 ・PDF） |
 | 國分功一郎 (2017).『中動態の世界──意志と責任の考古学』医学書院 | 本の主張（意志の批判・責任の肯定・バンヴェニストの読み） | 本文は読めていない。著者本人の紹介文と、連載の要旨と、書評が引いた本書の頁まで | 下の三つ |
 | 國分功一郎「UTokyo BiblioPlaza『中動態の世界』」（著者による紹介文・2020） | 目次・本の主張の要約 | 著者の紹介文として読んだ（本の本文ではない） | https://www.u-tokyo.ac.jp/biblioplaza/ja/F_00120.html |
@@ -204,6 +204,28 @@ Bader 1997 が逐語に引いた Benveniste の文（頁は PLG I の頁。Bader
 - Benveniste 1950 の定義（主語は過程の座で、過程の内にある）は、コラムとして部品に持つ。この記録が、その部品の置き場。
 - 読み物の本文には、原典の本文（PLG I pp.168–175）が読めるまで置かない（`docs/rules/sources.md` §3-3）。今は Bader 1997 経由でしか読めていない。
 - 判定の正本は `docs/rules/decisions.md` の #94 の行。
+
+### コラムの部品（下書き・2026-11-10）
+
+違和感帳の判断「#108-3 中動態の本を、お持ちですか」に、§4「足場の原典を探したあと」の A・B・C を書いて返したところ、pjdhiro はこう答えた：「原典にあたれるものだけを採用。スピノザで良い。が、中動態という概念もあると少し紹介して」。上の「置き場」の答え（コラムとして部品に持つ）と合わせて、本文が読めた原典だけで組んだ下書きを置く。
+
+- 主はスピノザ。中動態は、本文が読めた文法書と研究（トラクス・Smyth・Luraghi ら）で短く紹介する。Benveniste 1950 と國分の本は、本文が読めていないので入れない。Benveniste が読めたら、中動態の段に定義の一文を足す。
+- 読み物の本文にはまだ入れない（「部品として持っておいて」）。掛ける場所の候補は、章「開発とは、何を指すか」の、#108 問い 3 の本人の言葉の一続きのあと。入れるかと場所は pjdhiro が決める。読み物の本文を直しているのは別のセッション（ldd-108-dev-def）なので、入れるときはそのセッションか、その作業を引き継ぐセッションが入れる。
+- スピノザは、本人の⑤のような場合（自分だけからは結果が分からないとき）を「受ける」と呼ぶ。下書きでは、本人の言葉をスピノザのどちらかの側に寄せない（`stance.md` 1-3 の 2026-11-10 の行：受け身の「開発されていく」を能動に直さない・「主体は私ですが」を片方に直さない）。並べるのは、意図の有無で分けない、という一点だけにした。
+
+```html
+<details class="pd-column"><summary>働くことと、受けること（スピノザ）</summary>
+
+<p>文法には、能動と受動のほかに、中動という態があります。古代ギリシアの文法書『文法の技術』（ディオニュシオス・トラクス）は、態を能動・受動・中動の三つとし、中動は一部は能動を、一部は受動を表す、と書きます。二十世紀はじめのギリシア語の文法書（Smyth）は、中動は、行為が主語に特別に関わって行われることを示す、と書きます。印欧語の歴史の研究では、中動のもとの意味の少なくとも一部が、制御されない出来事につながる、という点で意見が一致している、とされます（Luraghi ら）。</p>
+<p>行うことと受けることを、意志とは別のもので言い分けた哲学者もいます。スピノザは『エチカ』で、私たちの内か外で何かが起き、私たちがその十全な原因であるとき、私たちは働く、と言います。私たちがその部分的な原因でしかないときは、受ける、と言います。十全な原因とは、その原因だけで、結果をはっきり分かることのできる原因です。分け目は、意図したかどうかでなく、起きたことが自分だけから分かるかどうかにあります。</p>
+<p>スピノザはまた、神はすべてのものの内在的な原因であって、外へ移っていく原因ではない、と書きます。すべてのものは神の内にあり、神を通して考えられる、という見方です。</p>
+<p>類推として並べると、意図の有無で開発を分けない点は、このページが開発に入れるもの（意図して進めるものも、意図しないまま育つもの・変わっていくものも）と向きが近いところです。</p>
+
+<p>出典：ディオニュシオス・トラクス『文法の技術』§15（Davidson 訳 1874, <em>The Grammar of Dionysios Thrax</em>, pp.11–12。Internet Archive にあるトロント大学蔵の走査（パブリックドメイン）で本文照合済（訳））／Smyth (1920) <em>A Greek Grammar for Colleges</em> §1713（Internet Archive の走査（パブリックドメイン）で本文照合済）／Luraghi, Inglese &amp; Kölligan (2021) "The passive voice in ancient Indo-European languages", <em>Folia Linguistica Historica</em> 42(2):339–391, p.342（KU Leuven の大学リポジトリの版（CC BY）で本文照合済）／スピノザ『エチカ』（1677）第 1 部 定理 18・第 3 部 定義 1・2（羅語の本文は The Latin Library、英訳は Elwes 訳（Project Gutenberg #3800）。どちらもパブリックドメインで本文照合済）。</p>
+</details>
+```
+
+下書きの確かめ：Smyth §1713 と Luraghi ら p.342 の文は、このセッションでも原典を開いて照らした（Smyth は Internet Archive の走査の文字、Luraghi らは大学リポジトリの PDF の 4 枚目＝誌面 p.342）。「印欧語の歴史の研究では…意見が一致している、とされます」は、Luraghi らの « there is general agreement on some at least partial connection with uncontrolled events » を写したもの。
 
 ## 5. 次に探すなら
 
