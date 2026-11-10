@@ -236,12 +236,20 @@ function start() {
         if (rsOverride !== null) return Math.max(0.25, base * Math.min(Math.max(rsOverride, 0.25), 1));
         return Math.max(0.25, Math.min(base, Math.sqrt(PIXEL_BUDGET / (w * h))));
     };
-    renderer.setPixelRatio(pixelRatioFor(window.innerWidth, window.innerHeight));
-    renderer.setSize(window.innerWidth, window.innerHeight);
     // ?bgc=02050d：地の色の上書き
     let bgc = /^[0-9a-fA-F]{6}$/.test(q.get('bgc') || '') ? parseInt(q.get('bgc'), 16) : 0x02050d;
-    renderer.setClearColor(bgc, 1);
-    renderer.domElement.dataset.background = 'love-membrane';
+    // 描く道具（WebGL）が落ちたとき：長く描き続けると、GPU の都合で WebGL が落ち、地の色のまま真っ暗になることがある
+    // （pjdhiro 2026-11-10「真っ暗のまま」・一時間ほど開いたあと）。ブラウザが戻すのを少し待ち、戻らなければ描く道具を作り直す。
+    let onContextLost = () => {};
+    const setupRenderer = (r) => {
+        r.setPixelRatio(pixelRatioFor(window.innerWidth, window.innerHeight));
+        r.setSize(window.innerWidth, window.innerHeight);
+        r.setClearColor(bgc, 1);
+        r.domElement.dataset.background = 'love-membrane';
+        r.domElement.addEventListener('webglcontextlost', () => onContextLost(r), false);
+        return r;
+    };
+    let renderer = setupRenderer(new THREE.WebGLRenderer({ antialias: false, alpha: false }));
     container.appendChild(renderer.domElement);
 
     const scene = new THREE.Scene();
@@ -365,6 +373,27 @@ function start() {
         if (qn('lens') !== null) uniforms.uLens.value = qn('lens');
     };
     const render = () => renderer.render(scene, camera);
+    // ?lose で、10 秒後に WebGL をわざと落とし、戻さない（作り直しの確かめ用）
+    onContextLost = (lost) => {
+        console.warn('[love-membrane] WebGL context lost');
+        setTimeout(() => {
+            if (lost !== renderer || !lost.getContext().isContextLost()) return; // ブラウザが戻した
+            console.warn('[love-membrane] context not restored; recreating renderer');
+            try {
+                const next = setupRenderer(new THREE.WebGLRenderer({ antialias: false, alpha: false }));
+                lost.domElement.replaceWith(next.domElement);
+                try { lost.dispose(); } catch (_) { /* 落ちた道具の片付けは失敗してよい */ }
+                renderer = next;
+                material.needsUpdate = true;
+                if (reduce) still();
+            } catch (err) {
+                console.warn('[love-membrane] recreate failed', err);
+            }
+        }, 3000);
+    };
+    if (q.has('lose')) {
+        setTimeout(() => renderer.getContext().getExtension('WEBGL_lose_context')?.loseContext(), 10000);
+    }
 
     // ?fps：左上に、一秒ごとの描いた枚数と一枚あたりの間隔を出す（確かめ用）
     let fpsEl = null, fpsN = 0, fpsT0 = 0, fpsWorst = 0;
