@@ -95,6 +95,7 @@ wiki の作り直し（区切ったセッション <セッションの記録の�
 
 ### 拾わないもの・台帳
 
+- 出典ページを作らずにおくと決めた原典は、知らせない。作り直す前に、精読ノートが本文を読んだか（前付け・要旨だけでないか）、読んだ写しが `docs/rules/sources.md` §5 の決まり 8 の範囲か、ノートの引用が原文にあるか（WebFetch で読んだノートは、要約を引用の形で書いていることがある。Internet Archive の `_djvu.txt` などの文字の層と照らす）を見る。通らないものは作らず、`pd/wiki-drafts/held-sources.md` に理由を書く。条件が満ちて作ったら、その行を消す（2026-11-10・#111 で外した 26 本の作り直しで、10 本がここに入った）。
 - 出典ノートが無い原典（台帳で読めても、まだノートが無いもの）は、知らせない。出典ページの材料は出典ノートで、ノートは cs のレビュー（`docs/cs-review/`）が作る。数だけは `node pd/scripts/wiki-gen-check.mjs --count` と `scripts/check.sh` が出す。
 - 台帳は今の形（`source_id`・`domain_id`・`access_status`・`source_title` の表）で読む。#62 で台帳の扱いが変わったら、`wiki-gen-check.mjs` とこの節を合わせる。
 

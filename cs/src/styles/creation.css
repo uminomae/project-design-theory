@@ -235,6 +235,22 @@ body.creation-page {
   opacity: 0.75;
 }
 
+.prologue-definition-link {
+  display: block;
+  width: fit-content;
+  margin: 0.5rem auto 0;
+  font-family: var(--ds-font-serif-ui);
+  font-size: clamp(0.8rem, 1.9vmin, 0.9rem);
+  color: rgb(var(--ds-color-link));
+  text-decoration: none;
+  border-bottom: 1px solid rgba(var(--ds-color-link), 0.4);
+}
+
+.prologue-definition-link:hover,
+.prologue-definition-link:focus-visible {
+  border-bottom-color: rgb(var(--ds-color-link));
+}
+
 .prologue-desc-title {
   font-family: var(--ds-font-serif-ui);
   font-size: clamp(1rem, 2.5vmin, 1.15rem);

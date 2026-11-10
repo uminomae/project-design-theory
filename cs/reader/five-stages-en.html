@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!--
+  このファイルはテンプレート。生成物 reader/five-stages.html・reader/five-stages-en.html を直接編集しない。
+  正本:   knowledge/schema/five-stages.md（英語は knowledge/schema/five-stages.en.md）
+  再生成: python3 scripts/build-five-stages.py
+  デザイン: cs の VI（src/styles/tokens.css の変数と cosmic ambient）。reader-th-template.html と同じ面と見出し。WebGL は使わない
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Five Stages of Creation — Current Definition | What Is Creation</title>
+<link rel="canonical" href="https://uminomae.github.io/project-design-theory/cs/reader/five-stages-en.html">
+<link rel="alternate" hreflang="ja" href="https://uminomae.github.io/project-design-theory/cs/reader/five-stages.html">
+<link rel="alternate" hreflang="en" href="https://uminomae.github.io/project-design-theory/cs/reader/five-stages-en.html">
+<meta name="description" content="The current definition of the Five Stages of Creation (Field, Wave, Edge, Vortex, Bundle), written in two layers: a provisional definition from pjdhiro&#x27;s own felt sense, and candidates to discuss, from cases where other theories describe it differently.">
+
+<script>
+  if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X5WQCB3JYT');
+  }
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../src/styles/tokens.css">
+
+<style>
+  :root{
+    --bg:var(--ds-color-bg-body);
+    --panel:var(--cs-surface-2);
+    --ink:rgb(var(--ds-color-highlight));
+    --muted:rgb(var(--ds-color-sub-text));
+    --faint:rgba(var(--ds-color-sub-text),.55);
+    --line:rgba(var(--ds-color-accent),.14);
+    --accent:rgb(var(--ds-color-accent));
+    --link:rgb(var(--ds-color-link));
+    --radius:var(--ds-radius-lg);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;color:var(--ink);
+    font-family:var(--cs-font-sans-ui);
+    line-height:1.85;padding:26px 16px 70px;
+    background:
+      radial-gradient(1100px 760px at 18% -8%, rgba(var(--ds-color-accent),.10), transparent 60%),
+      radial-gradient(1000px 720px at 100% 4%, rgba(var(--ds-color-accent),.07), transparent 55%),
+      var(--bg);
+    background-attachment:fixed;}
+  .wrap{max-width:860px;margin:0 auto;
+    background:var(--cs-surface-2);
+    border:1px solid var(--line);border-radius:var(--radius);
+    padding:28px clamp(16px,4vw,36px) 40px;}
+
+  .reader-hero h1{font-family:var(--ds-font-serif-display);font-size:clamp(1.4rem,4vw,2rem);
+    margin:0 0 10px;font-weight:500;letter-spacing:var(--ds-letter-ui-tight);color:rgb(var(--ds-color-heading));}
+  .reader-meta{font-size:12.5px;color:var(--faint);margin:0 0 14px;}
+  .reader-meta a{color:var(--link);text-decoration:none;}
+  .reader-meta a:hover{text-decoration:underline;}
+  .reader-lead{color:var(--muted);font-size:15px;margin:0 0 .8em;}
+
+  .reader-article{margin-top:24px;font-size:15.5px;}
+  .reader-article p{margin:0 0 1.1em;}
+  .reader-heading{font-family:var(--ds-font-serif-display);font-weight:500;
+    color:rgb(var(--ds-color-heading));letter-spacing:var(--ds-letter-ui-tight);
+    border-bottom:1px solid var(--line);padding-bottom:.3em;scroll-margin-top:16px;}
+  h2.reader-heading{font-size:1.35rem;margin:2.2em 0 .8em;}
+  h3.reader-heading{font-size:1.1rem;margin:1.8em 0 .5em;border-bottom:none;}
+  .reader-article a{color:var(--link);}
+  .reader-article strong{color:var(--cs-md-strong);}
+  .reader-article ul{padding-left:1.3em;margin:0 0 1.2em;}
+  .reader-article li{margin:.35em 0;}
+
+  .stage-definition{font-family:var(--ds-font-serif-display);font-size:1.08em;
+    border-left:3px solid rgba(var(--ds-color-accent),.45);padding:.2em 0 .2em .9em;}
+  .layer-intro{color:var(--muted);font-size:.95em;}
+  .count-note{color:var(--faint);font-size:.88em;}
+
+  .reader-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);}
+  .reader-table{padding:6px 14px;margin:0 0 1.3em;overflow-x:auto;}
+  .reader-table table{border-collapse:collapse;width:100%;font-size:.9em;}
+  .reader-table th{color:var(--cs-md-table-head-text);background:var(--cs-md-table-head-bg);
+    text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap;}
+  .reader-table td{color:var(--cs-md-table-cell-text);padding:8px 10px;
+    border-bottom:1px solid var(--line);vertical-align:top;}
+  .table-wide th,.table-wide td:not(:nth-child(4)){word-break:keep-all;white-space:normal;}
+  .table-wide td:nth-child(4){min-width:12em;}
+  .reader-table td:first-child{white-space:nowrap;}
+  .reader-table tr:last-child td{border-bottom:none;}
+  /* 狭い幅では表を行ごとに積む（表の中を横に送らない） */
+  @media (max-width:760px){
+    .tablefit{padding:4px 12px;}
+    .tablefit thead{display:none;}
+    .tablefit table,.tablefit tbody,.tablefit tr,.tablefit td{display:block;width:100%;}
+    .tablefit tr{padding:8px 0;border-bottom:1px solid var(--line);}
+    .tablefit tr:last-child{border-bottom:none;}
+    .tablefit td,.table-wide td:nth-child(4){border-bottom:none;padding:2px 0;min-width:0;}
+    .tablefit td::before{content:attr(data-label);display:block;font-size:.8em;color:var(--faint);}
+  }
+
+  .reader-toc{padding:14px 20px;margin:1.4em 0;}
+  .reader-toc-title{font-weight:700;font-size:.92em;color:var(--muted);
+    letter-spacing:var(--ds-letter-ui-wide);margin:0 0 6px;}
+  .reader-toc ol{margin:0;padding-left:1.3em;font-size:.94em;}
+  .reader-toc li{margin:.25em 0;}
+  .reader-toc a{color:var(--link);text-decoration:none;}
+  .reader-toc a:hover{text-decoration:underline;}
+
+  footer{margin-top:44px;font-size:12px;color:var(--faint);
+    border-top:1px solid var(--line);padding-top:14px;}
+  footer a{color:var(--link);text-decoration:none;}
+  footer a:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="reader-hero">
+    <h1>Five Stages of Creation — Current Definition</h1>
+    <p class="reader-meta">
+      Last updated: 2026-11-10 ／ <a href="./five-stages.html" hreflang="ja" lang="ja">日本語</a> ・ <a href="../index.html?lang=en">What Is Creation</a> ・
+      <a href="https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/schema/five-stages.md">Source (GitHub, Japanese)</a>
+    </p>
+    <p class="reader-lead">This is the current definition of the Five Stages of Creation (Field, Wave, Edge, Vortex, Bundle). The definition is provisional and is written in two layers.</p><p class="reader-lead">Layer 1 is the definition written from pjdhiro's own felt sense. Layer 2 lists features that other theories sometimes describe, as reported in the survey of 30 fields. Each feature in Layer 2 will be discussed in turn and built into Layer 1 to strengthen it. Each time something is built in, it is added to the version record at the end.</p>
+  </header>
+
+  <nav class="reader-toc reader-card" aria-label="Contents"><p class="reader-toc-title">Contents</p><ol><li><a href="#the-five-stages-at-a-glance">The five stages at a glance</a></li><li><a href="#layer-1-pjdhiro-s-felt-sense-provisional-definition">Layer 1: pjdhiro's felt sense (provisional definition)</a></li><li><a href="#layer-2-cases-where-other-theories-describe-it-differently-candidates-to-discuss">Layer 2: Cases where other theories describe it differently (candidates to discuss)</a></li><li><a href="#version-record">Version record</a></li></ol></nav>
+
+  <article class="reader-article">
+<h2 class="reader-heading" id="the-five-stages-at-a-glance">The five stages at a glance</h2>
+<div class="reader-card reader-table tablefit table-wide"><table><thead><tr><th>Stage</th><th>Japanese</th><th>English</th><th>One-sentence definition (Layer 1)</th><th>Situation</th><th>Sea image</th><th>Structure</th><th>Process</th></tr></thead><tbody><tr><td data-label="Stage">1</td><td data-label="Japanese">場</td><td data-label="English">Field</td><td data-label="One-sentence definition (Layer 1)">A stable state, like the sea before waves rise. A starting point in theory.</td><td data-label="Situation">Stability</td><td data-label="Sea image">Sea</td><td data-label="Structure">Nothing (hard to perceive)</td><td data-label="Process">Drifting</td></tr><tr><td data-label="Stage">2</td><td data-label="Japanese">波</td><td data-label="English">Wave</td><td data-label="One-sentence definition (Layer 1)">Differences arise in the field and rise as a sway. The situation changes; the differences part and face each other.</td><td data-label="Situation">Change</td><td data-label="Sea image">Wave</td><td data-label="Structure">Sway, opposition</td><td data-label="Process">Separation</td></tr><tr><td data-label="Stage">3</td><td data-label="Japanese">縁</td><td data-label="English">Edge</td><td data-label="One-sentence definition (Layer 1)">The border where different things meet and collide. New relations and rules arise there.</td><td data-label="Situation">Collision</td><td data-label="Sea image">Between the waves</td><td data-label="Structure">Border, relation</td><td data-label="Process">Meeting, collision</td></tr><tr><td data-label="Stage">4</td><td data-label="Japanese">渦</td><td data-label="English">Vortex</td><td data-label="One-sentence definition (Layer 1)">Rises as one whole. The two remain distinguishable, yet it is as if they were one.</td><td data-label="Situation">Integration</td><td data-label="Sea image">Vortex</td><td data-label="Structure">Individual, rising</td><td data-label="Process">Embracing</td></tr><tr><td data-label="Stage">5</td><td data-label="Japanese">束</td><td data-label="English">Bundle</td><td data-label="One-sentence definition (Layer 1)">Vortices affect one another and remain together as a new form. It becomes the next field.</td><td data-label="Situation">New stability</td><td data-label="Sea image">Ocean current</td><td data-label="Structure">Direction</td><td data-label="Process">Gathering</td></tr></tbody></table></div>
+<p>"Situation" and "Sea image" are two sequences in which pjdhiro restated the five stages (stability, change, collision, integration, new stability; sea, wave, between the waves, vortex, ocean current). "Integration" here does not mean mixing until the difference disappears. It means that the two stay distinguishable and yet can no longer be separated (see the notes on Vortex).</p>
+<h2 class="reader-heading" id="layer-1-pjdhiro-s-felt-sense-provisional-definition">Layer 1: pjdhiro's felt sense (provisional definition)</h2>
+<p class="layer-intro">This layer is the provisional definition written from pjdhiro's felt sense. For each stage, the sentence in bold is the definition, and the text below it adds to it.</p>
+<h3 class="reader-heading" id="field-場">Field (場)</h3>
+<p class="stage-definition"><strong>A stable state, like the sea before waves rise. A starting point in theory.</strong></p>
+<p>In reality, something is always moving. The field is the stable look of things when that movement is stopped for a moment, like a still image. It describes a stable environment, situation, or world in the language of space, and does not include time. "Nothing" in the Structure column does not mean that nothing is there. It is the theoretical picture of the sea when it is thought of apart from its waves, and it refers to being hard to perceive, as if nothing were there.</p>
+<h3 class="reader-heading" id="wave-波">Wave (波)</h3>
+<p class="stage-definition"><strong>Differences arise in the field and rise as a sway. The situation changes; the differences part and face each other.</strong></p>
+<p>A wave is a change in the situation. There is no sea without any waves at all, so field and wave cannot be separated. Where the differences that face each other collide is described in the next stage, Edge.</p>
+<h3 class="reader-heading" id="edge-縁">Edge (縁)</h3>
+<p class="stage-definition"><strong>The border where different things meet and collide. New relations and rules arise there.</strong></p>
+<p>What collides is not only what is good. Unpleasant things, bad things, and unwanted things are also included and carried along, not set outside. Forms in which something new arises without passing through opposition or collision do not resemble these five stages. The English word Edge is a different term from the "edge of chaos" of complex systems.</p>
+<h3 class="reader-heading" id="vortex-渦">Vortex (渦)</h3>
+<p class="stage-definition"><strong>Rises as one whole. The two remain distinguishable, yet it is as if they were one.</strong></p>
+<p>It is not that things mix and the difference disappears. A vortex in the sea can be told apart by the eye, yet it cannot be separated and taken out of the sea. In the same way, the two stay distinguishable and become inseparable. "Integration" in the Situation column is used in this sense. Edge and Vortex happen almost at the same time.</p>
+<h3 class="reader-heading" id="bundle-束">Bundle (束)</h3>
+<p class="stage-definition"><strong>Vortices affect one another and remain together as a new form. It becomes the next field.</strong></p>
+<p>A bundle has two sides, and both hold. One is the side that remains as a product with an outline. The other is the side that has a direction and a gathering, and supports the next field. A bundle becomes a new stability and then the next field, so the five stages form a loop.</p>
+<h3 class="reader-heading" id="sentences-for-all-five-stages">Sentences for all five stages</h3>
+<ul><li>The five stages do not always proceed in order. They run at the same time and enter into one another.</li><li>Edge and Vortex happen almost at the same time. Because of this the field sways, and afterwards it becomes a new stability. Even when it seems to happen in an instant, it began when the field started to sway.</li><li>It can also end without reaching integration. One side may win and it ends there, or it may return to the field while still swaying and wait for the next opposition.</li></ul>
+<h2 class="reader-heading" id="layer-2-cases-where-other-theories-describe-it-differently-candidates-to-discuss">Layer 2: Cases where other theories describe it differently (candidates to discuss)</h2>
+<p>Features reported in the survey of 30 fields, to be discussed alongside Layer 1. They are not closed by adopting or discarding them; they are discussed and built into the definition to strengthen it.</p>
+<p class="layer-intro">The candidates listed here were taken from an aggregate (April 2026) of reports across fields, made before the theories in each field were re-checked against their original sources. The numbers of fields and the confidence levels in parentheses are copied from that aggregate as they are, and have not yet been checked. They will be recounted from the re-checked records of each field, and then discussed one by one. "Hypothesis" refers to the five hypotheses drawn from that aggregate; the number is its index.</p>
+<h3 class="reader-heading" id="field">Field</h3>
+<ul><li>There are two kinds of field: the first field, and the field made by a bundle (the field that has come round the loop) <span class="count-note">(aggregate: 10 fields. In the evaluation of hypothesis 5, "potential of the field", the field that has come round the loop looks adoptable; whether to set up the first field separately is on hold)</span></li><li>A field has conditions, layers, and qualities (aggregate: 6 fields). It is seen not as a passive premise but as a structure with potential <span class="count-note">(aggregate: 8 fields. Confidence of hypothesis 5: medium)</span></li><li>Read it as "not yet in focus" rather than "nothing yet divided" <span class="count-note">(aggregate: 4 fields)</span></li><li>It is the base condition of all the stages <span class="count-note">(aggregate: 3 fields)</span></li></ul>
+<h3 class="reader-heading" id="wave">Wave</h3>
+<ul><li>A wave may arise from within or come from outside <span class="count-note">(aggregate: 8 fields)</span></li><li>Differences arise from many kinds of sources <span class="count-note">(aggregate: 5 fields)</span></li><li>Few works discuss the wave on its own <span class="count-note">(aggregate: 4 fields)</span></li></ul>
+<h3 class="reader-heading" id="edge">Edge</h3>
+<ul><li>An edge is not one form but a family with many types (a type that crosses a value, a type that touches across a surface, a type that spreads, and so on) <span class="count-note">(aggregate: 20-odd fields. Confidence of hypothesis 2, "the edge as a family of concepts": high, 28 fields)</span></li><li>The border is not a thin line but has a width like a band. Within it there is a point where, once a value is crossed, things shift all at once <span class="count-note">(confidence of hypothesis 3, "threshold within a band": medium, 11 fields, leaning toward the natural sciences)</span></li><li>Edges come in two lines: a type that balances and a type that branches <span class="count-note">(aggregate: 6 fields)</span></li><li>The amount of relation and the quality of contact decide what follows <span class="count-note">(aggregate: 5 fields)</span></li><li>There are paths that reach the edge but do not reach a vortex <span class="count-note">(aggregate: 4 fields)</span></li></ul>
+<h3 class="reader-heading" id="vortex">Vortex</h3>
+<ul><li>Vortices go in two directions: those that create something new and those that destroy <span class="count-note">(aggregate: 8 fields)</span></li><li>There are also systems and paths in which no vortex arises <span class="count-note">(aggregate: 5 fields)</span></li><li>The core is coming together without a purpose (self-organization) <span class="count-note">(aggregate: 4 fields)</span></li></ul>
+<h3 class="reader-heading" id="bundle">Bundle</h3>
+<ul><li>A bundle becomes the seed of the next field and does not return to the same place (not a loop but a spiral) <span class="count-note">(aggregate: 15-odd fields. Confidence of hypothesis 1, "spiraling": high, 22 fields)</span></li><li>There are many types of stability <span class="count-note">(aggregate: 8 fields)</span></li><li>A bundle is open and can be overwritten depending on conditions <span class="count-note">(aggregate: 5 fields)</span></li><li>There are forms like illnesses of the bundle: hardening too much, or failing to come together <span class="count-note">(aggregate: 3 fields)</span></li></ul>
+<h3 class="reader-heading" id="all-five-stages">All five stages</h3>
+<ul><li>Each stage has its own forms of not reaching the next <span class="count-note">(confidence of hypothesis 4, "failure modes built in": high, 13 + 11 fields)</span></li></ul>
+<h2 class="reader-heading" id="version-record">Version record</h2>
+<div class="reader-card reader-table tablefit"><table><thead><tr><th>Date</th><th>What was built in</th></tr></thead><tbody><tr><td data-label="Date">2026-11-10</td><td data-label="What was built in">First version. Layer 1 written as five one-sentence definitions with notes, the situation words, the sea image, structure and process, and three sentences for all five stages. The English word for 縁 set to Edge. Layer 2 given candidates to discuss, taken from the aggregate made before re-checking against original sources.</td></tr></tbody></table></div>
+  </article>
+
+  <footer>
+    The definition is strengthened by discussing and building in the features found in the survey of 30 fields.<br><a href="../index.html?lang=en">What Is Creation</a> · <a href="../sources.html">Source ledger</a>
+  </footer>
+</div>
+</body>
+</html>

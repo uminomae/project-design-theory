@@ -20,7 +20,7 @@
 ## 名前と訳語
 
 - 日本語の画面では、読者に見える題（プロジェクトデザイン論・創造とは・意識とは・欠損駆動思考）で呼ぶ。今までの repo の名前（creation-space・awareness-space・kesson-space）や、英語の内部名（kesson-driven・creation・AWARENESS）で呼ばない（`docs/rules/writing.md` 6-3）。
-- 英語では、意識を consciousness、気づきを awareness と訳す。「意識とは」を What Is Awareness と訳さない。「意識とは」の目標は、意識と気づきの違いを言えるようにすることで、二つを一つの語に重ねると、目標と逆になる（`docs/rules/decisions.md`「意識とは の目標と立ち位置」）。「意識とは」の記録の名前（Prediction and awareness・Consciousness and meta-awareness）も、この訳し分けで書かれている。
+- 英語では、意識を consciousness、気づきを awareness と訳す。「意識とは」を What Is Awareness と訳さない。「意識とは」は、意識と気づきの違いを言えるかどうかを、内部の目標にしている。二つを一つの語に重ねると、その違いが書けなくなる（`docs/rules/decisions.md`「意識とは の目標と立ち位置」）。「意識とは」の記録の名前（Prediction and awareness・Consciousness and meta-awareness）も、この訳し分けで書かれている。
 - 「意識とは」を、モデルの名前（4点仮説・4層モデル・間主観性の意識モデル）や、調べた分野の名前（神経現象学）で紹介しない（`docs/rules/stance.md` 2-4）。
 - 五段階の英語は Field・Wave・Edge・Vortex・Bundle（正本は `cs/knowledge/schema/five-stages.md`）。
 
