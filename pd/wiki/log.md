@@ -631,6 +631,21 @@ compile 実行の履歴。append-only。
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「心に関する言葉は、どこで誤解されるか」の葛藤の表、その下の pjdhiro の見方と畳み「葛藤、認知的不協和、ダブルバインドは、何が違うか」、出典の行）
 - pages: どちらのページも、葛藤の表を引いていないので本文はそのまま。`compiled` は今日のまま
 
+## [2026-11-11] check | Love駆動開発の「適用条件がわかる」の例に、原文のカードと、自己の対象化・他者の視点・段階の畳みを足したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「効き目と、効く範囲」の畳み「ほかに：適用条件がわかる」）
+- pages: どちらのページも、この例を引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] check | Love駆動開発の「うれしさ」を「利点」に替えたあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「この見方は、何の役に立つのか」の段と畳み「効く範囲と相性」）
+- pages: どちらのページも「うれしさ」の語を使っていないので本文はそのまま。compiled は今日のまま
+
+## [2026-11-11] check | Love駆動開発の「知らない方が儲かる」を本人の訂正で「知らない方が儲かることも多い」にしたあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（pjdhiro の見方のカード）
+- pages: どちらのページも、このカードを引いていないので本文はそのまま。compiled は今日のまま
+
 ## [2026-11-11] fix | 出典ページ三つを原典で照らし直す（#111 の重い指摘：Abrikosov 1957・Wiener 1948・Ghosh ら 2008）
 - scope: 出典ページ 3・横断ページ 1・概念ページ 2
 - sources: 創造とはの精読ノート D02-S03・D07-S01・D21-S15。手元の原典（Abrikosov の英訳の文字・Wiener 第 2 版の走査の画像 8 頁）と、Ghosh ら 2008 の出版社の公開 PDF

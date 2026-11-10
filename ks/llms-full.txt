@@ -45,7 +45,7 @@ Three.js immersive visualization that embodies the kesson-driven aesthetic:
 Consciousness-themed experience page with raymarching SDF entities, exploring the relationship between consciousness structure and kesson-driven thinking.
 
 ### Devlog (devlog.html)
-Development log documenting the creation process of kesson-space itself — a meta-documentation of how kesson-driven thinking applies to its own site development.
+Development log documenting the creation process of this site (Kesson-Driven Thinking) itself — a meta-documentation of how kesson-driven thinking applies to its own site development.
 
 ## Technology Stack
 
@@ -60,9 +60,9 @@ Development log documenting the creation process of kesson-space itself — a me
 | Project | URL | Focus |
 |---------|-----|-------|
 | pjdhiro | https://uminomae.github.io/pjdhiro/ | Project Design Hub (parent site) |
-| プロジェクトデザイン論 / Project Design | https://uminomae.github.io/project-design-theory/ | The reading on Love-Driven Development and its parts |
-| 創造とは / What Is Creation | https://uminomae.github.io/project-design-theory/cs/ | Creativity research across 30 academic domains |
-| 意識とは / What Is Awareness | https://uminomae.github.io/project-design-theory/as/ | What people cut the world with: signals of survival and trust |
+| プロジェクトデザイン論 / Project Design Theory | https://uminomae.github.io/project-design-theory/ | The reading on Love-Driven Development and its parts |
+| 創造とは / What Is Creation | https://uminomae.github.io/project-design-theory/cs/ | What structure and process does something follow when it comes into being? An exploration that sets theories from 30 fields side by side and writes them in five stages (Field → Wave → Edge → Vortex → Bundle) |
+| 意識とは / What Is Consciousness | https://uminomae.github.io/project-design-theory/as/ | What do people cut the world with? An exploration through two signals: whether we can survive, and whether we can stay connected (trust) |
 
 ## Author
 

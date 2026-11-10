@@ -82,9 +82,9 @@ Public explainer pages, written to be uniquely readable by LLMs without external
 | Project | URL | Focus |
 |---------|-----|-------|
 | pjdhiro | https://uminomae.github.io/pjdhiro/ | Parent site — all projects hub |
-| creation-space | https://uminomae.github.io/project-design-theory/cs/ | Creativity research across 30 academic domains |
-| awareness-space | https://uminomae.github.io/project-design-theory/as/ | Consciousness structure through intersubjectivity |
-| kesson-space | https://uminomae.github.io/project-design-theory/ks/ | Kesson-Driven Thinking framework |
+| 創造とは / What Is Creation | https://uminomae.github.io/project-design-theory/cs/ | What structure and process does something follow when it comes into being? An exploration that sets theories from 30 fields side by side and writes them in five stages (Field → Wave → Edge → Vortex → Bundle) |
+| 意識とは / What Is Consciousness | https://uminomae.github.io/project-design-theory/as/ | What do people cut the world with? An exploration through two signals: whether we can survive, and whether we can stay connected (trust) |
+| 欠損駆動思考 / Kesson-Driven Thinking | https://uminomae.github.io/project-design-theory/ks/ | What do people sense where symbols read zero? An exploration of a stance of mind driven by a sense of lack or unease |
 
 ## Author
 
