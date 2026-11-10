@@ -431,3 +431,8 @@ compile 実行の履歴。append-only。
 - sources: ks の core-definitions.md・トップ（ks/index.html）・knowledge の索引、as の knowledge/README.md・起点メモ・トップ（as/index.html）、pd の awareness-model v3・CN-005/006/008・kesson-bridge.md・調査レポート・site-data.mjs ほか（各ページの source）
 - pages: front matter の `note:` を、正本の path に替えた。本文は今の正本から作り直し、正本で確かめられない記述と、正本（v3 §5）で LLM 構成物とされた枠の上に書かれていた記述（Container の 6 類型・層の番号・脳部位の対応・Klein の分裂と統合の節・精神疾患の表ほか）を外した。概観の 2 枚は今のサイトのトップと knowledge の置き場に合わせ、concept-entity-map は今の concepts・keywords の並びに合わせて、正本に書いてある対応とリンクだけの対応を分けた
 - 仕組み: サイトのトップの HTML を正本にしたので、WL-3 の日付の比べを pd・cs・ks・as の全体に広げ、hook の知らせを .md でないファイルにも出すようにした
+
+## [2026-11-10] compile | 創造の5段階モデル（正本の定義を二つの層にした・#73 段 1）
+- scope: 概念ページ 1（創造の5段階モデル）
+- sources: cs の knowledge/schema/five-stages.md・knowledge/five-stages-guide.md・knowledge/glossary.md
+- pages: 定義を、pjdhiro の体感としての暫定の定義（第 1 層：一文・状況の言葉・海のたとえ・構造とプロセス）と、ほかの論ではこう言うケースもある（第 2 層：照合し直す前の集計から拾った論じる候補）に分けた。やさしい解説の場を「波の立つ前の静かな海」に、束を二つの面に直した。source の repo を cs にした

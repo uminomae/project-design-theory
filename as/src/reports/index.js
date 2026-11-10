@@ -26,6 +26,8 @@ function resolveReportWikiUrl(report) {
     return findWikiUrlByText(haystack) || '';
 }
 
+const OLD_REPORTS_ARCHIVED = true;
+
 const state = {
     lang: 'ja',
     generatedAt: '',
@@ -183,6 +185,11 @@ export async function initReports({
     state.reportsReady = false;
 
     renderer.renderReports();
+
+    // 旧トピック（pjdhiro の repo の目録）は読み込まない。照合し直す前の版だったので、2026-11-10 に
+    // 読者別の解説・旧「調査の現在地」と一緒に画面から外した（Issue #111）。照合し直した記録は
+    // reviewed-records.js が as/evidence/reviewed.json から描く。
+    if (OLD_REPORTS_ARCHIVED) return;
 
     try {
         const loaded = await loadReportsData({

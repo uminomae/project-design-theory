@@ -234,12 +234,18 @@ function bindUnifiedHistorySyncEvents() {
 
 // --- Modal opener registry builders ---
 
+// 古い版（旧ガイド三本・旧「調査内容」・横断分析・領域横断テーマ・テーマの検証）は、照合し直す前の主張のまま
+// だったので、2026-11-10 にしまった（Issue #111・pjdhiro「古いものはアーカイブしてどこかにしまうのは良いと思う。」）。
+// 中身は pjdhiro の repo にあり、ここでは読み込みと、URL から開く配線だけを止めている。
+// 照合し直した版を作ったら、その版を開く配線を足す。この印を false に戻して古い版を出し直さない。
+const OLD_REPORTS_ARCHIVED = true;
+
 function buildModalOpenerRegistry() {
     const openers = state._modalOpeners;
     openers.clear();
 
     // Guide openers
-    MODEL_GUIDE_LINKS.forEach((guide) => {
+    (OLD_REPORTS_ARCHIVED ? [] : MODEL_GUIDE_LINKS).forEach((guide) => {
         openers.set('guide-' + guide.key, (historyMode) => {
             const strings = getReportsStrings(state.config.lang);
             const featureText = strings.features[guide.key];
@@ -259,86 +265,88 @@ function buildModalOpenerRegistry() {
         });
     }
 
-    // Status opener
-    openers.set('status', (historyMode) => {
-        const strings = getReportsStrings(state.config.lang);
-        modalController.openMarkdownModal({
-            title: strings.statusReportTitle,
-            sources: resolveLocalizedSources(STATUS_REPORT_LINKS, state.config.lang),
-            modalContext: { type: 'generic', modalKey: 'status', historyMode },
-        });
-    });
-
-    // Synthesis opener
-    openers.set('synthesis', (historyMode) => {
-        const lang = state.config.lang;
-        const strings = getReportsStrings(lang);
-        const synthStrings = strings.synthesis || {};
-        modalController.openMarkdownModal({
-            title: synthStrings.reportTitle,
-            sources: resolveLocalizedSources(SYNTHESIS_REPORT_LINKS, lang),
-            modalContext: { type: 'generic', modalKey: 'synthesis', historyMode },
-        });
-    });
-
-    // Phase 8 theme openers (built after themes are loaded)
-    state.data.phase8Themes.forEach((theme) => {
-        if (!theme.slug) return;
-        openers.set('phase8-' + theme.slug, (historyMode) => {
-            const lang = state.config.lang;
-            const useJa = normalizeLang(lang) === 'ja';
-            const name = useJa ? (theme.nameJa || theme.nameEn || theme.slug) : (theme.nameEn || theme.nameJa || theme.slug);
-            const mdUrl = theme.mdByLang
-                ? (() => {
-                    const PJDHIRO_RAW_BASE = 'https://raw.githubusercontent.com/uminomae/pjdhiro/main';
-                    const relPath = theme.mdByLang[normalizeLang(lang)] || theme.mdByLang['ja'];
-                    return relPath ? `${PJDHIRO_RAW_BASE}/assets/creation/${relPath}` : '';
-                })()
-                : '';
-            if (!mdUrl) return;
-            const pdfUrl = theme.pdfByLang
-                ? (() => {
-                    const PJDHIRO_RAW_BASE = 'https://raw.githubusercontent.com/uminomae/pjdhiro/main';
-                    const relPath = theme.pdfByLang[normalizeLang(lang)] || theme.pdfByLang['ja'];
-                    return relPath ? `${PJDHIRO_RAW_BASE}/assets/creation/${relPath}` : '';
-                })()
-                : '';
+    if (!OLD_REPORTS_ARCHIVED) {
+        // Status opener
+        openers.set('status', (historyMode) => {
+            const strings = getReportsStrings(state.config.lang);
             modalController.openMarkdownModal({
-                title: name,
-                sources: [{ mdUrl, pdfUrl, generatorModel: theme.generatorModel, generated: theme.generated }],
-                modalContext: { type: 'generic', modalKey: 'phase8-' + theme.slug, historyMode },
+                title: strings.statusReportTitle,
+                sources: resolveLocalizedSources(STATUS_REPORT_LINKS, state.config.lang),
+                modalContext: { type: 'generic', modalKey: 'status', historyMode },
             });
         });
-    });
 
-    // Theme verification openers
-    THEME_DATA.forEach((theme) => {
-        const normalizedId = theme.id.replace(/\+/g, '');
-        openers.set('verify-' + normalizedId, (historyMode) => {
+        // Synthesis opener
+        openers.set('synthesis', (historyMode) => {
+            const lang = state.config.lang;
+            const strings = getReportsStrings(lang);
+            const synthStrings = strings.synthesis || {};
+            modalController.openMarkdownModal({
+                title: synthStrings.reportTitle,
+                sources: resolveLocalizedSources(SYNTHESIS_REPORT_LINKS, lang),
+                modalContext: { type: 'generic', modalKey: 'synthesis', historyMode },
+            });
+        });
+
+        // Phase 8 theme openers (built after themes are loaded)
+        state.data.phase8Themes.forEach((theme) => {
+            if (!theme.slug) return;
+            openers.set('phase8-' + theme.slug, (historyMode) => {
+                const lang = state.config.lang;
+                const useJa = normalizeLang(lang) === 'ja';
+                const name = useJa ? (theme.nameJa || theme.nameEn || theme.slug) : (theme.nameEn || theme.nameJa || theme.slug);
+                const mdUrl = theme.mdByLang
+                    ? (() => {
+                        const PJDHIRO_RAW_BASE = 'https://raw.githubusercontent.com/uminomae/pjdhiro/main';
+                        const relPath = theme.mdByLang[normalizeLang(lang)] || theme.mdByLang['ja'];
+                        return relPath ? `${PJDHIRO_RAW_BASE}/assets/creation/${relPath}` : '';
+                    })()
+                    : '';
+                if (!mdUrl) return;
+                const pdfUrl = theme.pdfByLang
+                    ? (() => {
+                        const PJDHIRO_RAW_BASE = 'https://raw.githubusercontent.com/uminomae/pjdhiro/main';
+                        const relPath = theme.pdfByLang[normalizeLang(lang)] || theme.pdfByLang['ja'];
+                        return relPath ? `${PJDHIRO_RAW_BASE}/assets/creation/${relPath}` : '';
+                    })()
+                    : '';
+                modalController.openMarkdownModal({
+                    title: name,
+                    sources: [{ mdUrl, pdfUrl, generatorModel: theme.generatorModel, generated: theme.generated }],
+                    modalContext: { type: 'generic', modalKey: 'phase8-' + theme.slug, historyMode },
+                });
+            });
+        });
+
+        // Theme verification openers
+        THEME_DATA.forEach((theme) => {
+            const normalizedId = theme.id.replace(/\+/g, '');
+            openers.set('verify-' + normalizedId, (historyMode) => {
+                const lang = state.config.lang;
+                const useJa = normalizeLang(lang) === 'ja';
+                const name = useJa ? theme.nameJa : (theme.nameEn || theme.nameJa);
+                const mdUrl = THEME_VERIFICATION_BASE + '/' + theme.mdFile;
+                modalController.openMarkdownModal({
+                    title: name,
+                    sources: [{ mdUrl }],
+                    modalContext: { type: 'generic', modalKey: 'verify-' + normalizedId, historyMode },
+                });
+            });
+        });
+
+        // Integration report opener
+        openers.set('verify-integration', (historyMode) => {
             const lang = state.config.lang;
             const useJa = normalizeLang(lang) === 'ja';
-            const name = useJa ? theme.nameJa : (theme.nameEn || theme.nameJa);
-            const mdUrl = THEME_VERIFICATION_BASE + '/' + theme.mdFile;
+            const name = useJa ? INTEGRATION_REPORT.nameJa : (INTEGRATION_REPORT.nameEn || INTEGRATION_REPORT.nameJa);
+            const mdUrl = THEME_VERIFICATION_BASE + '/' + INTEGRATION_REPORT.mdFile;
             modalController.openMarkdownModal({
                 title: name,
                 sources: [{ mdUrl }],
-                modalContext: { type: 'generic', modalKey: 'verify-' + normalizedId, historyMode },
+                modalContext: { type: 'generic', modalKey: 'verify-integration', historyMode },
             });
         });
-    });
-
-    // Integration report opener
-    openers.set('verify-integration', (historyMode) => {
-        const lang = state.config.lang;
-        const useJa = normalizeLang(lang) === 'ja';
-        const name = useJa ? INTEGRATION_REPORT.nameJa : (INTEGRATION_REPORT.nameEn || INTEGRATION_REPORT.nameJa);
-        const mdUrl = THEME_VERIFICATION_BASE + '/' + INTEGRATION_REPORT.mdFile;
-        modalController.openMarkdownModal({
-            title: name,
-            sources: [{ mdUrl }],
-            modalContext: { type: 'generic', modalKey: 'verify-integration', historyMode },
-        });
-    });
+    }
 }
 
 function buildSlideOpenerRegistry() {
@@ -346,6 +354,8 @@ function buildSlideOpenerRegistry() {
     openers.clear();
 
     // 分野のスライド（今までのプレゼン版）は 2026-11-10 に下げたので、開く部品を置かない（#73）。
+
+    if (OLD_REPORTS_ARCHIVED) return;
 
     // Synthesis slide opener
     openers.set('synthesis', async () => {
@@ -684,7 +694,7 @@ export async function initReports({
 
     renderer.renderReports();
 
-    const guidesDatePromise = loadGuidesGeneratedAt(GUIDES_MANIFEST_URL);
+    const guidesDatePromise = OLD_REPORTS_ARCHIVED ? Promise.resolve('') : loadGuidesGeneratedAt(GUIDES_MANIFEST_URL);
 
     try {
         const loaded = await loadReportsData({
@@ -736,7 +746,7 @@ export async function initReports({
 
     // Load Phase 8 cross-domain themes
     try {
-        const phase8Data = await loadPhase8Themes();
+        const phase8Data = OLD_REPORTS_ARCHIVED ? { themes: [], generatedAt: '' } : await loadPhase8Themes();
         state.data.phase8Themes = phase8Data.themes;
         state.data.phase8GeneratedAt = phase8Data.generatedAt;
     } catch (error) {
