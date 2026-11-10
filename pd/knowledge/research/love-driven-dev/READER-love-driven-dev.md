@@ -680,7 +680,7 @@ pjdhiro は、期待外れになるかどうかは能力と心理防衛の強さ
 
 <!--REF:心理学-->
 
-出典：pjdhiro「用語: その他」の「性格」の項（uminomae.github.io/pjdhiro/word-other/）。
+出典：章の頭の、性格についての pjdhiro の見方＝pjdhiro「用語: その他」の「性格」の項（uminomae.github.io/pjdhiro/word-other/）。
 
 </details>
 
