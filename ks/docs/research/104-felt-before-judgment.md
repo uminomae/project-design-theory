@@ -228,7 +228,7 @@ pjdhiro の決まり（`docs/rules/stance.md` 1-4）に従い、候補ごとに�
 - Fredrickson, B. L. (1998). What good are positive emotions? *Review of General Psychology* 2(3), 300–319. DOI 10.1037/1089-2680.2.3.300。興味を、正の情動として、考えと行動の幅を広げるものと置く。PMC3156001 は確認画面で止まった。未照合（保存の表へ）。
 - Alcaro, A., Huber, R., & Panksepp, J. (2007). Behavioral functions of the mesolimbic dopaminergic system: an affective neuroethological perspective. *Brain Research Reviews* 56(2), 283–321. DOI 10.1016/j.brainresrev.2007.07.014。探し求める系（SEEKING）の総説。PMC2238694 は確認画面で止まった。未照合（保存の表へ）。
 - Gruber, M. J., Gelman, B. D., & Ranganath, C. (2014). States of curiosity modulate hippocampus-dependent learning via the dopaminergic circuit. *Neuron* 84(2), 486–496. DOI 10.1016/j.neuron.2014.08.060。好奇心の状態と、ドーパミンの回路と、覚えること。PMC4252494 は確認画面で止まった。未照合（保存の表へ）。
-- Litman, J. A. (2005). Curiosity and the pleasures of learning: Wanting and liking new information. *Cognition and Emotion* 19(6), 793–814. DOI 10.1080/02699930541000101。有料。中身は Litman 2019 の章で確かめた。
+- Litman, J. A. (2005). Curiosity and the pleasures of learning: Wanting and liking new information. *Cognition and Emotion* 19(6), 793–814. DOI 10.1080/02699930541000101。この調べでは有料として読まなかったが、二回目の調べ（2026-11-10）で、著者のサイト drjlitman.net の写しが Wayback（2017-08-08）に残っているのを見つけ、本文照合済になった。中身は `104-curiosity-types-and-withdrawal.md` の「一」の行 10。
 - Silvia, P. J. (2008). Interest—The curious emotion. *Current Directions in Psychological Science* 17(1), 57–60. DOI 10.1111/j.1467-8721.2008.00548.x。有料。同じ見方は Silvia & Kashdan 2009 で確かめた。
 - Watt, D. F., & Panksepp, J. (2009). Depression: An evolutionarily conserved mechanism to terminate separation distress? *Neuropsychoanalysis* 11(1), 7–51. DOI 10.1080/15294145.2009.10773593。離れた苦しみと、引きこもり（抑うつ）と、探し求める系。有料。未照合。
 
@@ -290,3 +290,7 @@ pjdhiro の「それは精神的な防衛的な引きこもりからの脱却時
 - 「期待は、精神的な防衛的な引きこもりからの脱却時の感情」は、新田信也の書籍から来た言い方で、元は精神分析論の中にある、と pjdhiro は見ている。他の人の論として、その人に帰属する（`sources.md` §3-6）。次の調べで、精神分析論の領域で同じ主張をしている論を探す（この記録の B7 の「精神分析の論は当たっていない」を埋める）。新田信也の書籍の書誌は、まだ確かめていない。
 - 好奇心の分け方は、Claude が並べた四つで閉じず、文献の中の分け方（類型）を探して並べ、類型として立てる。分け方の出典ごとに、何を軸にしたかを書く。
 - 問い 4 は、Claude が立てた読みを、抽象の語の組み（「近づく向き」「身を守る向き」「もう一つの見積もり」）だけで聞いたので、通じなかった（`corrections.md` 型 R の繰り返し）。具体の場面で言い直すと、たとえば「初めて行く公園で、幼い子が、親がそばにいると遊具に寄っていき、親が見えなくなると立ち止まって泣く。同じ『知らない場所』に、寄っていく反応と身構える反応の両方がありえて、どちらが出るかを、そばに安心できる人がいるかどうかが左右する。この形が、性格の論にも、興味の論にも、子どもの発達の論にも出てくる」という読み。読みとして記録に残し、採否は聞かない。
+
+### 二回目の調べ（2026-11-10）
+
+好奇心の類型と、精神分析論の中の「防衛的な引きこもりからの脱却」に近い主張は、`104-curiosity-types-and-withdrawal.md` に書いた。新田信也の論は、著者のサイトの本人の文で確かめた。
