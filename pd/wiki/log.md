@@ -662,3 +662,8 @@ compile 実行の履歴。append-only。
 - scope: 横断ページ 1
 - sources: `ks/knowledge/schema/core-definitions.md`（欠損を五つの言い方を面として並べる形に）
 - pages: `cross-refs/kesson-space-overview` の中核定義の表の欠損の行と、サイトと knowledge の言い方の違いの表の欠損の行を今の正本に合わせた（このページの compiled は正本の直しより前で、道具は同じ日の直しを拾わない）
+
+## [2026-11-11] check | Friston 2010 の出典ページ：正本の注に合わせて確かめた
+- scope: 出典ページ 1
+- sources: `pd/knowledge/evidence/awareness-model/friston-2010-free-energy-principle.md`（「FEP の予測誤差は欠損と直接対応」の行に、取り違えの注を足した）
+- pages: `sources/Friston_2010_free-energy-principle` は、もう「予測と誤差を欠損そのものとせず、参照枠として置いている」と書いていて、注と合う。中身は直さず、compiled を今日にした
