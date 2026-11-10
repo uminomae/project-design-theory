@@ -38,7 +38,8 @@ run "cs・as：記録が書いた wiki の誤りの残り（知らせるだけ�
 # 公開のページと記録について、今は当たりがあるので、落とさずに数を知らせる三つ（2026-11-10・#111）：
 # 読み物と入口の本文の今までの repo の名前・公開の調査の記録の作業の節・読み物の表の横送り。
 # 当たりが 0 になったものは、--strict <名前> を付けて「止める」に上げる（名前は names・sections・tables）。
-run "公開のページと記録（知らせるだけ）" node scripts/check-public-notices.mjs
+# 記録の作業の節は 2026-11-10 に 0 になったので、止める（--strict sections）。ほかの二つは知らせるだけ。
+run "公開のページと記録（作業の節は止める。ほかは知らせるだけ）" node scripts/check-public-notices.mjs --strict sections
 run "as：テスト" bash -c 'cd as && node --test tests/*.test.mjs'
 run "ks：config の整合" bash -c 'cd ks && node tests/config-consistency.test.js'
 run "ks：config の export" bash -c 'cd ks && node --experimental-vm-modules tests/config-exports.test.js'

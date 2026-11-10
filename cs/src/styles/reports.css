@@ -189,6 +189,17 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
+.reports-sources-link {
+  margin: .9rem 0 0;
+  font-size: var(--ds-card-text, 0.92rem);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.reports-sources-link a {
+  color: rgb(var(--ds-color-link, 130, 170, 255));
+  text-underline-offset: 2px;
+}
+
 .reports-level-legend {
   margin: 0 0 .65rem;
   color: rgba(var(--color-sub-text), .7);
