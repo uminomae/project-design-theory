@@ -182,7 +182,7 @@ Karpathy の [LLM Knowledge Base の形](https://gist.github.com/karpathy/442a6b
 
 ## Obsidian について
 
-2026-04 には、人が wiki を Obsidian で閲覧・探索する分担を考えていた。今は Obsidian を使っていない。wiki を書く・点検する・組む・公開するのは、Claude Code・wiki-lint・Quartz。`pd/wiki/.obsidian/` は今までの repo から運ばれてきた設定で、そのまま残している。
+2026-04 には、人が wiki を Obsidian で閲覧・探索する分担を考えていた。今は Obsidian を使っていない。wiki を書く・点検する・組む・公開するのは、Claude Code・wiki-lint・Quartz。今までの repo から運ばれてきた設定 `pd/wiki/.obsidian/` は、使っていないので外した（2026-11-10）。
 
 ---
 
