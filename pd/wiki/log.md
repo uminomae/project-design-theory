@@ -570,3 +570,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「心の言葉は、どこで誤解されるか」の内発的動機の表と、畳み「理想状態の一面と、心理状態」）
 - pages: どちらのページも、この行と外した一文（取り入れに防衛機制が出ている）を引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] compile | Love駆動開発の三つの言葉のカードを、本人の頼みで意訳したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（`#ldd-development-relation` の段のカード）
+- pages: `concepts/Love 駆動開発` は、三つを一つの出来事に別々の側から触れた名前として読み関係を一つに定めない、と書いていて、意訳と合う。カードの言葉は引いていないので本文はそのまま。`compiled` は今日のまま
