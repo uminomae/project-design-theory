@@ -35,7 +35,7 @@ The lack eventually becomes a problem to solve. pjdhiro sees vision, design, and
 ## Site Structure
 
 - `index.html` — Main entry point with Three.js immersive visualization
-- `connection-stability.html` — A reading (Japanese): what the stability of connection is connected to. Theories of the stability of connection, beyond attachment research, arranged in nine tiers by what they connect to (from the body being touched to an unnamed beyond), and set beside the stability pjdhiro reports feeling beyond metacognition. Only sources whose full text was read are cited. The tiers, the six features, and the reading of overlaps are this page's own arrangement, not the authors'. Tier 4 is under construction.
+- `connection-stability.html` — A reading (Japanese): what the stability of connection is connected to. Theories of the stability of connection, beyond attachment research, arranged in nine tiers by what they connect to (from the body being touched to an unnamed beyond), and set beside the stability pjdhiro reports feeling beyond metacognition. Only sources whose full text was read are cited. The tiers, the six features, and the reading of overlaps are this page's own arrangement, not the authors'. Tier 4 (the mother as an enveloping environment) cites Ferenczi 1913, Freud 1911 and 1926, and Balint 1937.
 - `consciousness.html` — Consciousness-themed experience page
 - `src/` — Application source (Three.js, shaders, scene management)
 - `src/shaders/` — GLSL shader sources
