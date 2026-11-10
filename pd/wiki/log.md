@@ -420,3 +420,8 @@ compile 実行の履歴。append-only。
 - scope: 概念ページ 1
 - sources: cs/knowledge/schema/five-stages.md・glossary.md・five-stages-guide.md（語の直し：縁 Edge・出会い・衝突、渦 包摂、場 無（認知しづらい））
 - pages: 創造の5段階モデル（定義の表と縁の見出しの語を直し、「境界は帯域」が 4 領域で独立に確認された、の言い方を、建築では独立の収束と言えない、に直した）
+
+## [2026-11-10] check | concepts/欠損駆動思考
+- scope: 概念ページ 1（始めの知らせ）
+- sources: ks/knowledge/schema/glossary.md（97744b2：五段階の英語名と過程の語を図 Ver.1.3 にそろえた）
+- pages: ページは五段階の名前（場・波・縁・渦・束）を並べるだけで、直った英語名や過程の語を書いていないので、本文は変えず compiled を今日にした
