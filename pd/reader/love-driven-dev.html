@@ -5,7 +5,7 @@
   計画:   knowledge/research/love-driven-dev/README.md（#20）
   再生成: python3 scripts/build-reader-lp.py
   手順:   reader/README.md
-  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  デザイン制約: docs/DESIGN-RULES-LDD.md（このページだけの決まり。ダークの見た目・膜の渦の背景）＋ docs/DESIGN-RULES.md §13（flow レイアウト）＋ §14（トップと同じ Menu）
   - シェーダー背景（reader-app.js）と tokens.css の変数は pd VI を継承する。ただしこのページの背景は、body の data-background で
     膜の渦（src/backgrounds/love-membrane.js）にしている（pjdhiro 2026-11-10）
   - ページ固有スタイルは src/styles/reader-flow.css（tokens の上に載せる。独自パレット新造禁止）
@@ -29,7 +29,7 @@
   文責は Claude（Fable 5.1）。pjdhiro 本人の言葉は「pjdhiro の言葉／見方／問い／感想：」で引用。
   ============================================================================
 -->
-<html lang="ja">
+<html lang="ja" class="ldd-dark">
 <head>
     <script>
     if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
@@ -70,6 +70,8 @@
     <link rel="stylesheet" href="../src/style.css">
     <link rel="stylesheet" href="../src/styles/reader.css?v=20261107">
     <link rel="stylesheet" href="../src/styles/reader-flow.css?v=20261109">
+    <!-- Love駆動開発だけのダークの見た目（docs/DESIGN-RULES-LDD.md） -->
+    <link rel="stylesheet" href="../src/styles/reader-ldd-dark.css?v=20261110">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
