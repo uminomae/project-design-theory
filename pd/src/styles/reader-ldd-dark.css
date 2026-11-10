@@ -166,14 +166,15 @@ html.ldd-dark[data-intro~="cue"] .ldd-intro__cue {
     html.ldd-dark[data-intro~="cue"] .ldd-intro__cue { animation: none; }
 }
 
-/* 題と印は画面に留め、目次が出るとき（最初の画面を抜けたとき）に消す（pjdhiro 2026-11-10「目次が登場するタイミングで、
-   スクロールと矢印を消す。ページタイトルも消す」）。目次と入れ替わる。消える速さは cs の印と同じ 0.6 秒 */
+/* 題と印は画面に留め、スクロールを始めた直後（24px・ldd-at-top が外れたとき）に消す。
+   pjdhiro 2026-11-10「目次が登場するタイミングで、スクロールと矢印を消す。ページタイトルも消す」のあと、
+   「コンテンツが画面に出るタイミングがいいので、スクロール開始した直後くらいのところで消して良いです」。消える速さは cs の印と同じ 0.6 秒 */
 html.ldd-dark[data-intro] .ldd-intro__title,
 html.ldd-dark[data-intro] .ldd-intro__cue {
     transition: opacity 0.6s ease, visibility 0.6s ease;
 }
-html.ldd-dark[data-intro]:not(.ldd-at-intro) .ldd-intro__title,
-html.ldd-dark[data-intro]:not(.ldd-at-intro) .ldd-intro__cue {
+html.ldd-dark[data-intro]:not(.ldd-at-top) .ldd-intro__title,
+html.ldd-dark[data-intro]:not(.ldd-at-top) .ldd-intro__cue {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
