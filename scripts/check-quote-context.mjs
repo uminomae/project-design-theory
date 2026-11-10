@@ -15,6 +15,7 @@ import { readFileSync } from 'node:fs';
 
 const FILES = [
   'pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md',
+  'pd/knowledge/research/love-trajectory/READER-love-trajectory.md',
 ];
 
 const CARD = /^(?:<a id="[^"]*"><\/a>)?<strong>pjdhiro の[^<]*：<\/strong>/;

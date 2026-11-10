@@ -51,6 +51,10 @@ const TARGETS = {
     html: 'reader/love-history.html',
     spec: null,
   },
+  'love-trajectory': {
+    html: 'reader/love-trajectory.html',
+    spec: null,
+  },
 };
 
 // spec の無いページに使う規定質問群（docs/rules/review.md「五つの点検」⑤・writing.md §6）
