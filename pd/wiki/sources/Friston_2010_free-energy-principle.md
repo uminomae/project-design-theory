@@ -6,7 +6,7 @@ tags: [source, "awareness-model", "原典解説"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/friston-2010-free-energy-principle.md"
-compiled: "2026-04-08"
+compiled: "2026-11-11"
 status: 正典
 review_state: 未レビュー
 ---
