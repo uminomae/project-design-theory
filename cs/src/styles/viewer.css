@@ -220,6 +220,14 @@
   margin: 0 0 1.2em;
 }
 
+/* 記録の窓の中のリンク（#111）。長い URL が幅からはみ出さないように折り返す。 */
+.md-body a {
+    color: rgb(var(--ds-color-link, 130, 170, 255));
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    overflow-wrap: anywhere;
+}
+
 .md-body h1 {
   font-size: 1.2rem;
   color: var(--cs-md-h1);

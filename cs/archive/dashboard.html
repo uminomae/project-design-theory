@@ -6,22 +6,8 @@
 <title>creation-space — 調査のいま</title>
 <meta name="robots" content="noindex">
 
-<!-- Analytics -->
-<script>
-  if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
-    var s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
-    document.head.appendChild(s);
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-X5WQCB3JYT');
-  }
-</script>
-
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./src/styles/tokens.css">
+<link rel="stylesheet" href="../src/styles/tokens.css">
 
 <style>
   /* creation-space design-system aligned palette (cosmic blue).
@@ -129,12 +115,13 @@
 <div class="wrap">
   <h2 class="sr-only">creation-space 調査の全体地図と現況。</h2>
   <header>
+    <p style="margin:0 0 1rem;padding:.6rem .8rem;border:1px solid currentColor;border-radius:6px;font-size:.9rem">このページは、2026-11-10 にしまった古い版です。数字は古く、今の状態と合いません。今の記録は <a href="../">創造とは</a> の 30 分野の記録、材料は <a href="../sources.html">原典の台帳</a> にあります。</p>
     <h1>creation-space — 調査のいま</h1>
     <p class="sub">「創造・変化はどう起きるか」を、本物の論文を読んで30分野から確かめている研究の進捗ボード</p>
     <div class="bar-meta">
       <span id="fetched">読み込み中…</span>
       <button class="rf" onclick="load()">最新に更新</button>
-      <a href="sources.html">原典リスト ↗</a>
+      <a href="../sources.html">原典リスト ↗</a>
       <a href="https://github.com/uminomae/project-design-theory/commits/main/cs" target="_blank" rel="noopener">変更履歴 ↗</a>
       <a href="https://github.com/uminomae/project-design-theory/issues/54" target="_blank" rel="noopener">計画 ↗</a>
     </div>
@@ -153,7 +140,7 @@
           <span class="badge b-back">🔧 裏方・材料</span>
           <div class="mt">原典リソース</div>
           <div class="mnum"><span id="m-readable">319</span><small> /<span id="m-total">439</span> 本 本文確認済</small></div>
-          <div class="mdesc">📄 手元に保管した PDF <b id="m-raw">134</b> ＋ 🔗 リンク閲覧 <b id="m-url">185</b> ＝ 読めた <span id="m-readable2">319</span>。未取得 <span id="m-unread">120</span>（取得ブロック<span id="m-blocked">87</span>・目録のみ<span id="m-cite">33</span>＝本文未読）。<br><a href="sources.html">原典リスト（リンク付き）↗</a></div>
+          <div class="mdesc">📄 手元に保管した PDF <b id="m-raw">134</b> ＋ 🔗 リンク閲覧 <b id="m-url">185</b> ＝ 読めた <span id="m-readable2">319</span>。未取得 <span id="m-unread">120</span>（取得ブロック<span id="m-blocked">87</span>・目録のみ<span id="m-cite">33</span>＝本文未読）。<br><a href="../sources.html">原典リスト（リンク付き）↗</a></div>
         </div>
       </div>
       <div class="arrow">→</div>
@@ -290,7 +277,7 @@ async function loadStats(){
   // assets/dashboard-stats.json は scripts/generate-dashboard-stats.mjs が creation-space の台帳から生成。
   // 取得できれば地図の件数をライブ反映。失敗時は HTML 埋め込みの静的値にフォールバック。
   try{
-    const res=await fetch("assets/dashboard-stats.json",{cache:"no-store"});
+    const res=await fetch("../assets/dashboard-stats.json",{cache:"no-store"});
     if(!res.ok) throw new Error("HTTP "+res.status);
     const s=await res.json(),m=s.manifest||{};
     const set=function(id,v){const el=document.getElementById(id);if(el&&v!=null)el.textContent=v;};

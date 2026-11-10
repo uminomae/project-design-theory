@@ -126,6 +126,38 @@ export function createReportsModalController({
         }
     }
 
+    // 記録の中のリンクを、窓の中で働く形に直す。
+    //   ほかの分野の記録（evidence-Dxx-*.md）→ この画面の ?domain=Dxx（その分野の記録を窓で開く）
+    //   外の URL → 新しいタブで開く
+    //   そのほかの相対リンク → 記録の置き場を基準に解く
+    function rewriteRecordLinks(html, mdBaseUrl) {
+        const box = document.createElement('div');
+        box.innerHTML = html;
+        box.querySelectorAll('a[href]').forEach((a) => {
+            const href = a.getAttribute('href') || '';
+            const record = href.match(/(?:^|\/)evidence-(D\d{2})-[^/]*\.md(?:#.*)?$/);
+            if (record) {
+                const url = new URL(window.location.href);
+                url.hash = '';
+                url.searchParams.set('domain', record[1]);
+                a.setAttribute('href', url.pathname + url.search);
+                return;
+            }
+            if (/^https?:\/\//i.test(href)) {
+                a.setAttribute('target', '_blank');
+                a.setAttribute('rel', 'noopener noreferrer');
+                return;
+            }
+            if (href.startsWith('#') || !mdBaseUrl) return;
+            try {
+                a.setAttribute('href', new URL(href, mdBaseUrl).href);
+            } catch (error) {
+                a.removeAttribute('href');
+            }
+        });
+        return box.innerHTML;
+    }
+
     async function openMarkdownModal({ mdUrl, title = '', pdfUrl = '', sources = [], modalContext = null }) {
         const modalSources = normalizeModalSources({ mdUrl, pdfUrl, sources });
         if (!modalSources.length) return;
@@ -184,8 +216,11 @@ export function createReportsModalController({
                     return `<img ${pre}src="${absUrl}"`;
                 });
             }
-            const html = DOMPurify.sanitize(parsedHtml, { FORBID_TAGS: ['a'] });
             const isReviewRecord = resolvedSource.kind === 'review';
+            // 照合の記録（#73）は、読者が出典の確かめ先とほかの分野の記録へ辿れるように、リンクを残す（#111・Q-cs-4）。
+            // それ以外（今までの資料）は、これまでどおりリンクを外す。
+            let html = DOMPurify.sanitize(parsedHtml, isReviewRecord ? {} : { FORBID_TAGS: ['a'] });
+            if (isReviewRecord) html = rewriteRecordLinks(html, mdBaseUrl);
             // 照合の記録（#73）には PDF が無い。今までの報告の PDF を出すと中身と食い違うので出さない。
             const availablePdfUrl = isReviewRecord ? '' : await availablePdfUrlPromise;
 
