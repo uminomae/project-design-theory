@@ -2,7 +2,7 @@
 file_id: EV-A05
 area_id: A05
 title: "不確かさと安全：論ごとの照合の記録"
-last_updated: 2026-11-10
+last_updated: 2026-11-11
 status: reviewed
 ---
 
@@ -411,6 +411,7 @@ status: reviewed
 **鍵の文**：
 
 - Ujihara ら（p.2）：ネガティブ・ケイパビリティは広い構成概念で、量の研究では「approached through adjacent, more readily measurable constructs rather than a single, universally established instrument」。
+- 同（p.3、測定の節）：「a universally established instrument that directly measures the full construct of negative capability is not available」。
 - 同（p.1、要旨の結論）：測ったのは「NC-adjacent dimensions rather than NC itself」で、横断の研究なので因果の解釈は避けるべきだ、と書きます。
 - 同（p.9）：結果は「hypotheses that warrant replication and evaluation」として見るべきだ、と書きます。
 - 同（p.9）：ネガティブ・ケイパビリティの理解の自己評定は「perceived understanding rather than objective knowledge」を映す、と書きます。
@@ -550,7 +551,7 @@ GUTS の「安全」と、見立ての「信頼」で、重なるところと重
 
 研究がこの構えをどう測ってきたか（本文で確かめたもの）：
 
-- 語そのものを測る、広く確立した一つの尺度は無く、量の研究は、あいまいさへの耐性と態度のような隣の構成概念で近づくことが多い（Ujihara ら 2026, p.2「rather than a single, universally established instrument」。380 人の横断の調査）。
+- 語の全体をじかに測る確立した尺度は無く（Ujihara ら 2026, p.3）、量の研究は、あいまいさへの耐性と態度のような隣の構成概念で近づくことが多い（同 p.2。380 人の横断の調査）。
 - あいまいさへの耐性は、性格の変数として定義されてきた（Frenkel-Brunswik、Budner の定義。Furnham & Marks 2013, pp.717–718）。耐性の低さと心の健康の悪さの関連は、医学の学生と医師の 11 の研究でそろっていたが、研究の質は低い（Hancock & Mattick 2020）。
 
 不確かさを減らす側から書く論（本文で確かめたもの）：
