@@ -404,7 +404,7 @@ Layer 0〜3で分解する（仮説）：
 
 ## D.2 `part-5-抱持.md` への追記提案（具体位置）
 
-対象: `~/Documents/GitHub/kesson-driven-thinking/base/text/m1-consciousness-os/part-5-抱持.md`
+対象: `kesson-driven-thinking/base/text/m1-consciousness-os/part-5-抱持.md`
 
 追記提案（本文は簡潔に、詳細は本レポート参照にする）：
 
@@ -441,9 +441,9 @@ Layer 0〜3で分解する（仮説）：
 
 ## 付録: 本レポートが参照した主要ファイル
 
-- S26: `~/Documents/GitHub/kesson-driven-thinking/base/voice/S26-抱持-developmental-matching.md`
-- D1-D4定義: `~/Documents/GitHub/kesson-driven-thinking/base/schema/core-definitions.md`
-- 現行抱持章: `~/Documents/GitHub/kesson-driven-thinking/base/text/m1-consciousness-os/part-5-抱持.md`
-- 発言DB: `~/Documents/GitHub/kesson-driven-thinking/base/voice/pjdhiro-statements-db.md`
-- Evidence: `~/Documents/GitHub/kesson-driven-thinking/base/evidence/evidence-*.md`
+- S26: `kesson-driven-thinking/base/voice/S26-抱持-developmental-matching.md`
+- D1-D4定義: `kesson-driven-thinking/base/schema/core-definitions.md`
+- 現行抱持章: `kesson-driven-thinking/base/text/m1-consciousness-os/part-5-抱持.md`
+- 発言DB: pjdhiro の発言集（非公開の repo kesson-driven-thinking）
+- Evidence: `kesson-driven-thinking/base/evidence/evidence-*.md`
 - 既存成果: `codex/archive/deepdive/REPORT-evidence-cross-analysis.md`

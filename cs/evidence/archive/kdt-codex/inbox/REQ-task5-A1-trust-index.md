@@ -43,7 +43,7 @@
 
 | 優先度 | 対象 | 目的 |
 |--------|------|------|
-| ★★★ | `base/voice/pjdhiro-statements-db.md` | T1-T5候補の最有力。S22-S30周辺 |
+| ★★★ | pjdhiro の発言集（非公開） | T1-T5候補の最有力。S22-S30周辺 |
 | ★★★ | `base/schema/core-definitions.md` | D1-D4定義内での言及 |
 | ★★★ | `base/schema/auxiliary/bspl-model.md` | 信頼レンズ（§4.4）、ISS-41発火点 |
 | ★★ | `base/evidence/evidence-psychoanalysis.md` | Container/安全基地（EV-PA-002等） |
@@ -64,7 +64,7 @@
 ```markdown
 | ファイル | セクション/行 | キーワード | 要約（1行） | タグ | 備考 |
 |---------|-------------|-----------|-----------|------|------|
-| base/voice/pjdhiro-statements-db.md | S23 | 信頼, 片側性 | 片側から始まる信頼（母子/ブランド） | - | T候補？ |
+| pjdhiro の発言集（非公開） | S23 | 信頼, 片側性 | 片側から始まる信頼（母子/ブランド） | - | T候補？ |
 | base/schema/core-definitions.md | D4 | 信頼, 信頼軸 | 情動構成での信頼軸評価 | [M] | - |
 | ... | ... | ... | ... | ... | ... |
 ```

@@ -44,8 +44,8 @@
 | source | 役割 | 現在の扱い |
 |---|---|---|
 | `knowledge/survival-trust-axis-starting-memo.md` | 起点仮説の入口 | awareness-space 側の起点文書 |
-| `~/dev/kesson-driven-thinking/base/schema/core-definitions.md` | D1-D4 の定義 | 正本参照 |
-| `~/dev/kesson-driven-thinking/base/schema/four-layers.md` | 意識の層構造 | 正本参照寄りの主要 schema |
+| `kesson-driven-thinking/base/schema/core-definitions.md` | D1-D4 の定義 | 正本参照 |
+| `kesson-driven-thinking/base/schema/four-layers.md` | 意識の層構造 | 正本参照寄りの主要 schema |
 | 神経現象学系の今後の intake | 一人称経験と記述単位の中核 | これから intake 対象を固定 |
 | 発達心理学を含む心理学系の今後の intake | 間主観性・愛着・社会的発達の中核 | これから intake 対象を固定 |
 

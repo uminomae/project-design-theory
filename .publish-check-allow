@@ -1,0 +1,39 @@
+# 公開前の点検（scripts/publish-check.sh）で、形に当たっても通すファイル。docs/PUBLISH-CHECK.md。
+#
+#   <形> <ok|wait> <パス>  # 理由
+#
+# 形は home（~/ の手元のパス）・tmp（区切りが - の一時置き場のパス）・link（claude.ai の共有のリンク）の三つだけ。
+# 語・鍵・メール・/Users/ の形は、ここでは通せない。
+# ok は中身を確かめて通したもの。wait は pjdhiro の判断を待っているもの（通すが、点検のたびに数を知らせる）。
+# パスの終わりが / なら、その下の全部。当たらなくなった行は、--all のときに知らせが出るので消す。
+
+# --- ok：手元の事情を明かさない（2026-11-10・#111 で一件ずつ開いて確かめた）
+home ok .claude/settings.json  # 読ませない置き場の名前を deny に書く行。設定として要る
+home ok scripts/check-old-repo-refs.mjs  # 今までの repo の手元の置き場を探す検査の、探す形そのもの
+home ok docs/cs-review/README.md  # 今までの公開 repo の手元の置き場（名前は公開）
+home ok cs/transform/guides/reader-rules/archive/_reader-rules-creation-v0-pipeline.md  # 同上
+home ok pd/design-system/README.md  # 同上
+home ok ks/docs/ENVIRONMENT.md  # 同上と、道具の設定の置き場
+home ok ks/docs/issues/ISS-rules-review-2026-11.md  # 道具の置き場（Library の下）と、今までの公開 repo の置き場
+home ok ks/assets/blender/x-logopy  # Blender の書き出し先の例（Desktop）
+home ok pd/wiki/.obsidian/plugins/dataview/main.js  # 同梱した他者のソフトウェアの中の文字
+
+# --- ok：公開ページが読者に向けて張っているアーティファクト（段階のスクリーナー）
+link ok pd/reader/stages-screener.html
+link ok pd/knowledge/research/stages-screener/  # 上のページの正本と、アーティファクトの元
+link ok pd/scripts/build-screener-artifact.py
+link ok pd/scripts/screener-artifact-template.html
+
+# --- wait：判断を待っている（Issue #111 束 8）
+# 非公開の repo の手元の置き場。開発記録を作る道具が読む設定なので、書き換えると道具が動かなくなる
+home wait ks/scripts/devlog-config.json
+# pjdhiro だけが開ける確かめ用のページへのリンク。公開の repo に置いてよいか（読者は開けない）
+link wait docs/rules/decisions.md
+link wait docs/tools/iwakan-cho.md
+link wait docs/cs-review/README.md
+link wait docs/as-review/README.md
+link wait ks/docs/research/103-what-is-sensed.md
+link wait ks/docs/research/104-curiosity-types-and-withdrawal.md
+link wait ks/docs/research/104-felt-before-judgment.md
+link wait pd/knowledge/notes/2026-06-26-imaginary-numbers-rotation.md
+link wait pd/knowledge/research/love-driven-dev/PLAN-dialogue-form-20261110.md

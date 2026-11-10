@@ -31,7 +31,7 @@ status: Complete
 | ファイル | 優先度 | 該当キーワード数 | 主要キーワード |
 |---------|-------|----------------|---------------|
 | base/schema/auxiliary/bspl-model.md | ★★★ | 7種 | 信頼+++, 安全基地++, 内的作業モデル++, 贈与+, のれん+, 純資産++, PL-O+++ |
-| base/voice/pjdhiro-statements-db.md | ★★★ | 3種 | 信頼+, 純資産+, PL-O+ |
+| pjdhiro の発言集（非公開） | ★★★ | 3種 | 信頼+, 純資産+, PL-O+ |
 | base/schema/core-definitions.md | ★★★ | 3種 | 安全+, 愛着+, Container+ |
 | base/evidence/evidence-business-org.md | ★★ | 4種 | 信頼++, 安全+++, Container+++, 安全基地+ |
 | base/evidence/evidence-psychoanalysis.md | ★★ | 6種 | Container++, 愛着++, 安全+, 間主観性+, 安全基地+, 内的作業モデル+ |
@@ -112,7 +112,7 @@ status: Complete
 - §4.1: BS→PL制約 "安全基地"
 - §3.3: PL-O収益 "安全基地の形成"
 
-#### base/voice/pjdhiro-statements-db.md (63KB)
+#### pjdhiro の発言集（非公開） (63KB)
 
 **信頼** (+):
 - S48: "信頼が純資産に思える"
