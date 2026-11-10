@@ -177,7 +177,7 @@ export const TRANSLATIONS = {
     "section.being.label": "Being",
     "section.being.title": "起きていること",
     "section.being.body":
-      "場（Field）は、波が立つ前の安定した海のような状態。そこに差が生まれて波（Wave）が立ち、異質なものが縁（Edge）で出会ってぶつかり、渦（Vortex）としてひとつのまとまりが立ち上がり、束（Bundle）として新しい形が残る。五つの段は、順に進むとは限らず、同時に走り、入り込み合う。プロジェクトの現在地を知ること。",
+      "場は、波が立つ前の安定した海のような状態。そこに差が生まれて波が立ち、異質なものが縁で出会ってぶつかり、渦としてひとつのまとまりが立ち上がり、束として新しい形が残る。五つの段は、順に進むとは限らず、同時に走り、入り込み合う。プロジェクトの現在地を知ること。",
     "being.faq.summary": "よくある誤解",
     "being.faq.body":
       "<ul><li><strong>「回転は渦だけのもの」</strong> → 回転は全段階に遍在します。波も回転です。「位相」も回転の一種で、あえて一般的・曖昧な語を当てています。</li><li><strong>「衝突は渦で統合される」</strong> → 衝突は縁（境界）で生まれます。渦は、ぶつかった二つが、見分けられるまま、一つであるかのように立ち上がる段階です。</li><li><strong>「束→場は同じ場に戻る閉じた循環」</strong> → 次サイクルの場へ前進する循環で、螺旋的に展開し元へは戻りません。</li></ul>",
@@ -203,15 +203,12 @@ export const TRANSLATIONS = {
     "section.questions.title": "問い",
     "section.questions.body":
       "プロジェクトデザイン論の途中で生まれた問いを、読み物にして、調べながら更新しています。",
-    "repo.energyFlow": "感情も、関係も、時代も「エネルギーの流れ」なのか",
-    "repo.energyFlowDesc":
-      "物質＝閉じ込められたエネルギーという物理の構造類似から、感情・人間関係・社会の渦までを、実証と比喩に仕分けて確かめる読み物",
     "repo.gravityLove": "愛は、重力に似ていないか — 動かず、何もなく、自分からは見えないのに、すべてを回す中心",
     "repo.gravityLoveDesc":
       "重力の井戸（重力場を、質量のまわりのすり鉢のようなくぼみとして描いた絵）の中心は、動かず、何もなく、自分からは見えないのに、周りのすべてを回している。愛はそれに似ていないか。周りを動かす駆動源としての力を、二つの現象の構造の類似から探す読み物。後半で、その類似を踏まえて「経営者の役割とは？」に仮説的に答える。",
     "repo.waveVortex": "波間の渦 — 宇宙は「モノ」でできているか、「流れ」でできているか",
     "repo.waveVortexDesc":
-      "「エネルギーの流れ」の姉妹読み物。「宇宙は海の渦のような現象でできている」という直観を、物理学と思想史のどこまでが支えるか三層に分けて接地する（創造とは）",
+      "「宇宙は海の渦のような現象でできている」という直観を、物理学と思想史のどこまでが支えるか三層に分けて接地する（創造とは）",
     "repo.multiplication": "足し算ではなく、掛け算の経営 — 答えは「3 と 7」",
     "repo.multiplicationDesc":
       "掛け算を、向きと位相が振幅を決める「回転の掛け算」として読み、チームの 3 と 7 を数学で確かめる読み物",
@@ -397,15 +394,12 @@ export const TRANSLATIONS = {
     "section.questions.title": "Open Questions",
     "section.questions.body":
       "Questions that emerged along the way are published as readers and updated as the inquiry proceeds.",
-    "repo.energyFlow": "Are Emotions, Relationships, and Eras All 'Flows of Energy'?",
-    "repo.energyFlowDesc":
-      "From the physics analogy of matter as confined energy to emotions, relationships, and the vortices of society — a reader that sorts evidence from metaphor",
     "repo.gravityLove": "Is Love Like Gravity? — On a Leader's Role",
     "repo.gravityLoveDesc":
       "The center of a gravity well (a picture of a gravitational field as a bowl-like dip around a mass) does not move, holds nothing and cannot see itself, yet everything turns around it. Is love like that? A reader that looks for the driving force that moves things around, through the structural likeness of the two. In the second half, building on that likeness, it gives a hypothetical answer to “what is a leader's role?”",
     "repo.waveVortex": "Vortices Between Waves — Is the Universe Made of 'Things' or 'Flows'?",
     "repo.waveVortexDesc":
-      "A sister reader to 'Flows of Energy.' Grounds the intuition that 'the universe is made of ocean-like vortices' by sorting how far physics and intellectual history support it, in three layers (What Is Creation)",
+      "Grounds the intuition that 'the universe is made of ocean-like vortices' by sorting how far physics and intellectual history support it, in three layers (What Is Creation)",
     "repo.multiplication": "Management by Multiplication, Not Addition — the Answer Is 3 and 7",
     "repo.multiplicationDesc":
       "Reads multiplication as a multiplication of rotations, where direction and phase drive amplitude, and checks the 3 and 7 of teams with mathematics",
