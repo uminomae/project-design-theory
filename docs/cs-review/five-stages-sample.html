@@ -80,6 +80,10 @@ ul.plain { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
 .sample .label { font-size: 0.78rem; letter-spacing: 0.05em; color: var(--muted); }
 .sample ol { margin: 0; padding-left: 1.4em; display: grid; gap: 4px; }
 
+.others { display: grid; gap: 4px; font-size: 0.92rem; }
+.others .h { font-size: 0.78rem; letter-spacing: 0.05em; color: var(--muted); }
+.others ul { margin: 0; padding-left: 1.2em; display: grid; gap: 2px; }
+.banner { background: var(--accent-soft); border-radius: 6px; padding: 12px 16px; display: grid; gap: 6px; }
 .decide { border-left: 3px solid var(--mark); padding: 4px 0 4px 14px; display: grid; gap: 8px; }
 .decide strong { color: var(--mark); }
 
@@ -102,6 +106,10 @@ ul.plain { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
     <h1>五段階の定義の見本</h1>
     <p>創造とはの五段階（場・波・縁・渦・束）の定義は、いま置き場ごとに二通りの文で書かれています。たとえば束は、サイトのトップでは「新たな形式として統合される完成」、用語集では「渦どうしが影響し合い、構造として残る集まり」です。このページは、二つを一つの表にまとめる文の見本です。</p>
     <p>文の土台は、Love駆動開発の五段階の図（Ver.1.3）で決めた説明文と、場・波・縁・渦・束について pjdhiro が言った言葉です。決まったら、この表を正本にして、創造とはのトップ・英語の画面・用語集・ガイド・llms.txt・Love駆動開発の引用へ写します。</p>
+    <div class="banner">
+      <p><strong>この定義は暫定です。</strong>一文と補いは、pjdhiro の体感としての定義（仮説）です。30 分野の調べで、ほかの論ではこう言うケースもある、という特徴が見つかっていきます。それを論じ、定義に組み込んで補強していくのが調べの目的です。各段の「ほかの論ではこう言うケースもある」は、その候補です。</p>
+      <p>創造とはのコンテンツとしては、この「現在の定義」のほかに、「調査の経緯」（まず仮説があり、調べでこう補強された、という読み物）などが並ぶ見込みです。</p>
+    </div>
     <p class="meta">答えは違和感帳の一件「五段階の定義の文を、この見本で一つの表にしてよいか」で。文ごとの直しは、このページにコメントで書いてください。2026-11-10 作成。</p>
   </header>
 
@@ -121,6 +129,7 @@ ul.plain { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
             <div><dt>構造</dt><dd>無（認知しづらい）</dd></div>
             <div><dt>プロセス</dt><dd>漂う</dd></div>
           </dl>
+          <div class="others"><span class="h">ほかの論ではこう言うケースもある（論じる候補）</span><ul><li>はじめの場と、束がつくった場（輪を回ってきた場）の二種がある</li><li>場には条件や層や質がある</li><li>「何も分かれていない」より「まだ焦点が合っていない」と読む</li></ul></div>
           <details><summary>材料にした pjdhiro の言葉</summary>
             <div class="src">
               <p>「最初の海は静止画のような瞬間となろうかと思います。安定した海の状態」「波がまったく無い海はあり得ない。波と切り分けようとするとそうなる。理屈上」（2026-11-08）</p>
@@ -142,6 +151,7 @@ ul.plain { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
             <div><dt>構造</dt><dd>ゆれ・対立</dd></div>
             <div><dt>プロセス</dt><dd>分離</dd></div>
           </dl>
+          <div class="others"><span class="h">ほかの論ではこう言うケースもある（論じる候補）</span><ul><li>波は内から起きることも、外から来ることもある</li><li>差の生まれるもとは、いろいろある</li></ul></div>
           <details><summary>材料にした pjdhiro の言葉</summary>
             <div class="src">
               <p>「そこに揺らぎ、波が立つ。これは特定状況です。現実には常に特定状況なので、理屈上の出発点のようなものです」「波とは状況変化を意味します」（2026-11-08）</p>
@@ -161,6 +171,7 @@ ul.plain { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
             <div><dt>構造</dt><dd>境界・関係</dd></div>
             <div><dt>プロセス</dt><dd>出会い・衝突</dd></div>
           </dl>
+          <div class="others"><span class="h">ほかの論ではこう言うケースもある（論じる候補）</span><ul><li>境目は細い線でなく、帯のような幅を持つ。その中に、ある値を越えると一気に移る点がある</li><li>縁は一つの形でなく、いくつもの型を持つ一族（値を越える型・面で接する型・伝わっていく型 など）</li><li>縁まで来ても、渦に至らない道がある</li></ul></div>
           <details><summary>材料にした pjdhiro の言葉</summary>
             <div class="src">
               <p>「ポイントは対立や衝突が必須であることです」「嫌なことや悪いことなど、良いこと以外と衝突するように包摂して進むということです」（2026-11-08）</p>
@@ -181,6 +192,7 @@ ul.plain { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
             <div><dt>構造</dt><dd>個・立ち上がり</dd></div>
             <div><dt>プロセス</dt><dd>包摂</dd></div>
           </dl>
+          <div class="others"><span class="h">ほかの論ではこう言うケースもある（論じる候補）</span><ul><li>新しいものを生む渦と、壊す渦の二つの向きがある</li><li>渦が起きない系や道もある</li></ul></div>
           <details><summary>材料にした pjdhiro の言葉</summary>
             <div class="src">
               <p>「統合は難しいですね。☯️ のように二つに分けられるものが二つに分けられなくなるような」（2026-11-08）</p>
@@ -202,6 +214,7 @@ ul.plain { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
             <div><dt>構造</dt><dd>方向</dd></div>
             <div><dt>プロセス</dt><dd>集合</dd></div>
           </dl>
+          <div class="others"><span class="h">ほかの論ではこう言うケースもある（論じる候補）</span><ul><li>束は次の場の種になり、同じところへは戻らない（輪でなく、らせん）</li><li>安定のしかたに、いくつもの型がある</li><li>固まりすぎる、まとまりきらない、という束の病のような形がある</li></ul></div>
           <details><summary>材料にした pjdhiro の言葉</summary>
             <div class="src">
               <p>「新たな形式として統合される完成・成果物」と「方向・集合・次の場を支える」は、どちらも束の面。「両立です」（2026-11-08）。</p>
@@ -220,6 +233,8 @@ ul.plain { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
       <li>縁と渦は、ほとんど同時に起きます。そのために場が揺らぎ、そのあとに新しい安定になります。瞬時に起きたように見えても、始まりは場が揺らいだときにあります。</li>
       <li>統合に至らずに終わることもあります。片方が勝って終わる形や、揺らいだまま場に戻り、次の対立を待つ形があります。</li>
     </ul>
+    <div class="others"><span class="h">ほかの論ではこう言うケースもある（論じる候補）</span><ul><li>どの段にも、その段に固有の至らない形がある</li></ul></div>
+    <p class="note">候補は、今までの 30 分野の報告を横断した集計（2026-04）から拾ったものです。この集計は、照合し直す前の報告をもとにしています。分野の数や確からしさは、照合し直した記録で数え直してから論じます（計画の段 3）。</p>
     <details><summary>材料にした pjdhiro の言葉</summary>
       <div class="src">
         <p>段階の移り方は、プリゴジンの散逸構造が近い。縁と渦は同時に起きる。そのために場が揺らぎ、そのあとに安定する。瞬時に起きたかのように見えるが、場が揺らいだ時から始まっている（2026-11-09）。</p>
@@ -271,7 +286,7 @@ ul.plain { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
       <li>縁の英訳は Edge にそろえ、正本・用語集・ガイドの Relation を直す（2026-11-10 の答え）。</li>
       <li>渦のプロセスから「融合」を外して「包摂」に、縁のプロセスを「繋がり」から「出会い・衝突」に、場の構造を「無（認知しづらい）」にする（図 Ver.1.3 で決めた言葉にそろえる）。</li>
       <li>定義の文には、プリゴジンの名前を出さない。名前を出すなら、原典で照らしてから補いの説明に類推として書く（既存の理論は論証に使わず、類推と分かるように書く）。</li>
-      <li>総合報告の「段階定義の改訂」の案（場を「未焦点化」と読み替える など）は採らない。場は、本人の言葉で「安定した状態」で、向きが違う。</li>
+      <li>総合報告の「段階定義の改訂」の案（場を「未焦点化」と読み替える など）は、採るか捨てるかで閉じず、上の「ほかの論ではこう言うケースもある」の候補に入れる。照合し直した記録で数え直してから論じる。</li>
       <li>正本の表の「対応概念の例」（QFT の真空・仏教の空 など）は、この見本では触れない。各分野の記録の照合が済んでから見直す。</li>
       <li>置き場は <code>cs/knowledge/schema/five-stages.md</code> を正本の一つにし、ほかはここから写す。今「正本」を名乗る四つの文書は、写しだと書き直す。</li>
     </ul>
@@ -279,6 +294,6 @@ ul.plain { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
 
   <section class="decide">
     <p><strong>聞きたいこと</strong></p>
-    <p>この見本の文（五つの一文と補い、全体に添える三つの文）で一つの表にし、各置き場へ写してよいでしょうか。あわせて、状況の言葉と海のたとえを、創造とはのトップの五つの札にも一行で添えるか、正本の表だけに置くかを選んでください。違和感帳の一件の釦で答えられます。文ごとの直しは、このページにコメントで。</p>
+    <p>この見本の文（五つの一文と補い、全体に添える三つの文）を、暫定の定義の「pjdhiro の体感」の層として一つの表にし、各置き場へ写してよいでしょうか。あわせて、状況の言葉と海のたとえを、創造とはのトップの五つの札にも一行で添えるか、正本の表だけに置くかを選んでください。違和感帳の一件の釦で答えられます。文ごとの直しは、このページにコメントで。</p>
   </section>
 </main>
