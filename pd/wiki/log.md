@@ -474,3 +474,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（Love の置き方を二つの面に・結論の「この欠け」と pjdhiro の言葉・「スクリーナー」を「ふるい」に・効き目を「軽く考えても二種類…など」に）
 - 結果: `concepts/Love 駆動開発` の四つの段を今の正本に合わせた。`プロジェクトデザイン` はこれらの段を引いていない。compiled はどちらも 2026-11-10
+
+## [2026-11-10] fix | 精読ノートの引用が原文と違っていた 3 ページ
+- scope: 出典ページ 3（引用の語だけを原文に直した）
+- sources: Strogatz 2001 の誌面の PDF（p.270）・Friston 2012 の PubMed Central の全文（PMC3510653 §3）・Nicolis & Nicolis 2016 の PDF（p.1）
+- pages: `D07_strogatz_2001_exploring-complex-networks`（"prone to spatial" → "prone to both spatial"）・`D07_friston_2012_free-energy-principle`（"minimized by active systems" → "minimized by active states"）・`D06_nicolis_2016_stochastic-resonance-self-organization`（文献番号 "[1]" を戻した）。別のセッションが同じ原典を原文と照らしたときに見つけた

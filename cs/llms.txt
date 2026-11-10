@@ -114,6 +114,7 @@ Each domain's record opens in a window at `/?domain=D{nn}` (Japanese only for no
 
 - [Five Stages of Creation — Current Definition | What Is Creation](https://uminomae.github.io/project-design-theory/cs/reader/five-stages-en.html)
 - [創造の5段階 — 現在の定義 | 創造とは](https://uminomae.github.io/project-design-theory/cs/reader/five-stages.html)
+- [調査の経緯：創造の五段階は、どこから来て、どう調べられてきたか](https://uminomae.github.io/project-design-theory/cs/reader/research-history.html)
 - [波間の渦 — 宇宙は「モノ」でできているか、「流れ」でできているか（調査中の草稿）](https://uminomae.github.io/project-design-theory/cs/reader/wave-vortex.html)
 
 <!-- static-nav:end -->

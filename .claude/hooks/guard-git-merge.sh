@@ -28,7 +28,23 @@ if not re.search(r'(?:^|[\s;&|(])git' + C + SUB, head):
 # 取り込みだけの呼び出し（組んでいない）は通す。引用符の中（commit の文など）の記号は見ない。
 unquoted = re.sub(r'"(?:[^"\\]|\\.)*"|\'[^\']*\'', '""', cmd)
 if re.fullmatch(r'git' + C + SUB + r'[^|;&<>`$\n]*', unquoted):
-    sys.exit(0)
+    # 単独でも、--ff-only の無い取り込みは excludedCommands に合わず、サンドボックスの中で走る。
+    # 外で動かす印（dangerouslyDisableSandbox）が無ければ止める。--abort・--continue・--quit は通す
+    # （2026-11-10・膜の背景の直しのセッションで、単独の `git merge --no-edit develop` が中で走り、.claude/ で止まった。pjdhiro 2026-11-11「入れる」）。
+    ti = p.get("tool_input") or {}
+    if (ti.get("dangerouslyDisableSandbox") is True
+            or re.search(r'\s--(?:ff-only|abort|continue|quit)(?=\s|$)', unquoted)):
+        sys.exit(0)
+    print(
+        "止めました：--ff-only の無い git の取り込み（merge・pull）は、sandbox.excludedCommands に合わず、"
+        "サンドボックスの中で走って .claude/ で止まり、作業ツリーだけが半端に進みます。"
+        "worktree を develop に揃えるなら `bash scripts/sync-develop.sh` だけを回し、止まったらその案内に従ってください"
+        "（枝に develop に無い commit があれば、先に本体の develop へ枝を取り込む）。"
+        "早送りで済むなら `--ff-only` を付け、merge の commit が要るなら、この呼び出しをサンドボックスの外で回してください"
+        "（docs/rules/corrections-k.md の K1）。",
+        file=sys.stderr,
+    )
+    sys.exit(2)
 
 print(
     "止めました：git の取り込み（merge・pull）を、パイプ・リダイレクト・&&・;・改行などと組んで回そうとしています。"

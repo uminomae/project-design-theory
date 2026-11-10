@@ -23,7 +23,7 @@
 
 ## K1 git とサンドボックス
 
-- worktree の始めに develop へ揃えるのは、仕組みに移した（`bash scripts/sync-develop.sh`）。枝が develop より古く、枝に `scripts/sync-develop.sh` が無いときは、`git merge --ff-only develop` だけを一つの呼び出しで回す（`sandbox.excludedCommands` に入っているので外で動く）。`--ff-only` を外した `git merge` をサンドボックスの中で回さない（2026-11-10）。
+- worktree の始めに develop へ揃えるのは、仕組みに移した（`bash scripts/sync-develop.sh`）。枝が develop より古く、枝に `scripts/sync-develop.sh` が無いときは、`git merge --ff-only develop` だけを一つの呼び出しで回す（`sandbox.excludedCommands` に入っているので外で動く）。`--ff-only` を外した `git merge`・`git pull` をサンドボックスの中で回すのは、仕組みで止める（`.claude/hooks/guard-git-merge.sh`。2026-11-10・11-11）。`sync-develop.sh` が止まったら、その案内に従う。
 - 取り込み（merge・pull）をほかのコマンドと組む呼び出しは、仕組みに移した（2026-11-10）：`.claude/hooks/guard-git-merge.sh` が止める。`.claude/settings.json` の `sandbox.excludedCommands` は、`bash scripts/sync-develop.sh`・`git merge --ff-only *`・`git -C * merge --ff-only *` を、呼び出しの全体が合うときだけサンドボックスの外で動かす。
 - main へ送る前の確かめは、仕組みに移した（`.githooks/pre-push` と `bash scripts/publish-main.sh`）。自分の commit だけを main へ送る枝は、`bash scripts/pick-to-main.sh <枝> <commit>…` で作る（作業ツリーに触らない。worktree で `git switch` しない。2026-11-10）。
 - push は、それだけを一つの呼び出しで `git push origin develop` と書いたか（`cd … &&`・パイプ・リダイレクトと組むとサンドボックスの中に残り、`could not read Username` で止まる。worktree からも refs は共有なので、そのまま push できる。2026-11-09）。
@@ -43,6 +43,7 @@
 
 - 画面の部品（目次・ボタンなど固定で置くもの）を足したら、一つの幅で見て済ませず、幅を変えて本文との重なりを見たか（HOME の目次・2026-11-08）。
 - 画面の部品（下へ促す印など）を新しく考える前に、手本（cs・ks）に同じ役の部品があるかを開いて見たか（2026-11-10・Love駆動開発の最初の画面で、細い線の印を新しく作り「cs/?graphic=i を参考にして」）。
+- 背景や部品の JS を直したら、commit の前に、直した worktree のサーバー（3010 ほか）でページを読み込み、その部品が動いているか（コンソールの警告・`window.loveMembrane` などの入口があるか）を見たか。構文の検査（`node --check`）は、同じ名前の二重の宣言のような読み込みのときの誤りを通す（2026-11-10・Love駆動開発の膜で、WebGL を作り直す直しに元の `const renderer` を残したまま commit し、膜が読み込めず別の背景に落ちていた。develop に入れる前の確かめで見つけた）。
 - 3001 に届かないときは、K1 の localhost の行を見る。
 
 ## K4 調べと記録
@@ -79,3 +80,4 @@
 | K1 | 2026-11-10 にもう一度（as の論点と回答の司令塔のセッションで、worktree の枝に develop を取り込むとき `git merge -q --no-edit develop; echo rc=$?; git log …` と組んで回した）。hook（`guard-git-merge.sh`）が止め、`.claude/` まで進まなかった | 仕組みが効いた。確認の文は足さない。取り込みだけを一つの呼び出しで回し直した |
 | K0 | 2026-11-10（同じセッションで、エージェントへの頼む文に「レビューの全文は次のファイルにある」と書いて送ってから、そのファイルを書いた。エージェントは先に読みに行って無いと報告し、決めだけを当てた二周目を返し、一周を余分に回した） | 初めて。K0 に確認の文を足した |
 | K0 | 2026-11-10（#108 の司令塔のセッションで、別のセッションが作った答えの案のページ〔版 12〕を開いて読んだうえで pjdhiro に「確かめた」と伝えたが、見ていたのは出所が付いているかと形だけで、答えが発言の当てはめになっていること〔pjdhiro「私の発言を場当たり的に当てるのはやめて」〕を見ていなかった） | 機械では止めにくい。確認の文を足さず、K0 の「報告は証明ではない」の行を書き直した：前の文は「実物を自分で開いて確かめたか」で、開いて形を見ることで満たしたと読めてしまった。「開き、頼んだ問いに中身が答えているかを読んだか。出所や形を見ただけで確かめたと言っていないか」に置き換えた。成果物の中身を見る確認は、作業の種類を問わないので K0 に置いたまま（K3 画面・K4 調べと記録には移さない） |
+| K1 | 2026-11-10 にもう一度（Love駆動開発の膜が真っ暗になる直しのセッションで、`sync-develop.sh` が「develop に無い commit がある。先にこの枝を本体の develop へ取り込む」と止まったのに、案内に従わず worktree へ develop を取り込もうとした。組んだ形は hook が止め、単独の `git merge --no-edit develop` をサンドボックスの中で回して `.claude/skills/` で止まり、develop のファイル 27 が未追跡で残った。develop と同じ中身かを一つずつ確かめて消し、サンドボックスの外で取り込み直した。K1 の「`--ff-only` を外した `git merge` をサンドボックスの中で回さない」の文はあったが、手を動かす前に K1 を読んでいなかった） | 確認の文は足さない。読まないと止まらない文なので、仕組みに移した（pjdhiro 2026-11-11「入れる」）：`guard-git-merge.sh` が、単独でも `--ff-only` の無い `git merge`・`git pull` を、`dangerouslyDisableSandbox` の付いていない呼び出しのときに止める（`--abort`・`--continue`・`--quit` は通す。11 通りで試した）。効くのは次のセッションから |

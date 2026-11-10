@@ -32,7 +32,7 @@ Karl Friston が 2012 年に *Entropy* に発表した理論論文（22 頁）�
 
 ### 自由エネルギーの最小化は驚きの最小化
 
-> "minimizing free energy with respect to the internal states renders it the surprise that is minimized by active systems." (§3)
+> "minimizing free energy with respect to the internal states renders it the surprise that is minimized by active states." (§3)
 
 自由エネルギーは驚きの上界で、内部の状態について自由エネルギーを最小にすると、驚きが抑えられる。
 
