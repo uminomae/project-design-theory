@@ -632,9 +632,9 @@ function mountKuramotoSync(host) {
     function setStatus(r) {
         const label = r < 0.3 ? '<b>バラバラ</b>' : (r < 0.7 ? '<b>揃ってきた</b>' : '<b>揃った</b>');
         st.innerHTML = '秩序 r = <b>' + r.toFixed(2) + '</b>（0〜1）／ ' + label
-            + '。K を上げると、ある強さを超えたところで一斉に位相が揃います（相転移）。';
+            + '。K を上げると、ある強さを超えたところから、位相の揃う振り子が増えていきます。';
     }
-    view.canvas.setAttribute('aria-label', '円周上の結合振動子。結合 K を上げると位相が一斉に揃い、中心の秩序変数ベクトル r が伸びる。');
+    view.canvas.setAttribute('aria-label', '円周上の結合振動子。結合 K を上げると位相の揃う振動子が増え、中心の秩序変数ベクトル r が伸びる。');
     view.onResize = draw;
     (function loop() { if (host.offsetParent) { step(); setStatus(draw()); } raf = requestAnimationFrame(loop); })();
 }
