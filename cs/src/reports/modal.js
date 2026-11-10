@@ -22,6 +22,21 @@ export function createReportsModalController({
 }) {
     let markedParser = null;
 
+    // 狭い幅で表を行ごとに縦に積むため、各セルに列の見出しを写す（viewer.css の .md-table-stack）。
+    // 三列以上の表だけに付ける。表は横スクロールさせない（stance 2-7・2026-11-10）。
+    function prepareStackedTables(root) {
+        root.querySelectorAll('.md-body table').forEach((table) => {
+            const headers = Array.from(table.querySelectorAll('thead th')).map((th) => th.textContent.trim());
+            if (headers.length < 3) return;
+            table.classList.add('md-table-stack');
+            table.querySelectorAll('tbody tr').forEach((tr) => {
+                Array.from(tr.children).forEach((cell, index) => {
+                    if (headers[index]) cell.setAttribute('data-label', headers[index]);
+                });
+            });
+        });
+    }
+
     async function getMarked() {
         if (!markedParser) {
             const { marked } = await import('marked');
@@ -164,6 +179,7 @@ export function createReportsModalController({
                         <div class="md-body">${html}</div>
                     </div>
                 `;
+                prepareStackedTables(state.dom.mdModalContent);
 
                 // モーダル内リンク・画像クリック処理（重複登録防止）
                 if (!state.dom.mdModalContent._contentClickBound) {
