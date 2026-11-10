@@ -11,8 +11,8 @@
 
 ## Published Pages（公開ページ）
 
-- 全報告ページ（5段階モデルの解説3本・30領域レポート・横断分析・5テーマと検証・調査の状況、ja/en）の一覧: [llms.txt の Report Pages](https://uminomae.github.io/project-design-theory/cs/llms.txt)
-- 報告ページの配信元: https://uminomae.github.io/pjdhiro/assets/creation/
+- 30 分野の記録（一次情報で確かめ直したもの。日本語）の一覧: [llms.txt の Report Pages](https://uminomae.github.io/project-design-theory/cs/llms.txt)
+- 読者別の解説・横断分析・領域横断テーマとその検証・調査概要は、照合し直す前の版だったので、2026-11-10 に公開の一覧から外しました。
 - テーマ解説（READER）: [波間の渦 — 宇宙は「モノ」でできているか、「流れ」でできているか（調査中の草稿）](https://uminomae.github.io/project-design-theory/cs/reader/wave-vortex.html)
 
 ## Five-Stage Model (5段階モデル)
@@ -73,20 +73,6 @@
 | D29 | 複雑系科学 | [evidence-D29-complexity-science.md](https://raw.githubusercontent.com/uminomae/project-design-theory/main/cs/evidence/evidence-D29-complexity-science.md) |
 | D30 | 伝統知 | [evidence-D30-traditional-knowledge.md](https://raw.githubusercontent.com/uminomae/project-design-theory/main/cs/evidence/evidence-D30-traditional-knowledge.md) |
 
-## Phase 8: Cross-Domain Exploration (横断分析)
-
-30領域を横断して抽出された5つのテーマ。各テーマは複数領域にまたがるパターンを分析している。
-
-| ID | テーマ | 対象領域数 | レポート |
-|---|---|---|---|
-| T1 | 縁の類型学と統一分類 | 26 | [theme-edge-typology.md](https://raw.githubusercontent.com/uminomae/project-design-theory/main/cs/evidence/investigation/phase8/themes/theme-edge-typology.md) |
-| T5 | 再循環メカニズム（束→場の還流） | 19 | [theme-recirculation.md](https://raw.githubusercontent.com/uminomae/project-design-theory/main/cs/evidence/investigation/phase8/themes/theme-recirculation.md) |
-| T6 | 場の多層性（原初的/循環的/存在論的） | 18 | [theme-field-layers.md](https://raw.githubusercontent.com/uminomae/project-design-theory/main/cs/evidence/investigation/phase8/themes/theme-field-layers.md) |
-| T7+T9 | 盲点と反例 — 5段階が記述できないもの | 13+11 | [theme-blind-spots.md](https://raw.githubusercontent.com/uminomae/project-design-theory/main/cs/evidence/investigation/phase8/themes/theme-blind-spots.md) |
-| T2 | 閾値構造と縁→渦遷移の条件 | 11 | [theme-threshold.md](https://raw.githubusercontent.com/uminomae/project-design-theory/main/cs/evidence/investigation/phase8/themes/theme-threshold.md) |
-
-テーマレジストリ: [theme-registry.md](https://raw.githubusercontent.com/uminomae/project-design-theory/main/cs/evidence/investigation/phase8/theme-registry.md)
-
 ## Deep Research Sources
 
 GPT Deep Research による30領域の一次ソース集:
@@ -100,24 +86,18 @@ GPT Deep Research による30領域の一次ソース集:
 2. 自分の専門に近い領域のレポート（上記30領域）を読み、構造類似の探し方を確認する
 3. 自分の領域で「場→波→縁→渦→束」に対応するプロセスを探す
 
-### 2. 横断テーマから着想を得る
-
-Phase 8 の5つのテーマは、単一領域では見えにくいパターンを浮かび上がらせる。例えば:
-- 「縁の類型学」(T1) は、異なる領域で「境界」がどう機能しているかを26領域分比較している
-- 「盲点と反例」(T7+T9) は、モデルが記述できないケースを正直に収集している
-
-### 3. ナレッジベースとして LLM に読ませる
+### 2. ナレッジベースとして LLM に読ませる
 
 LLM のプロジェクト知識として使う場合:
 1. まず `llms.txt` を読ませて全体像と公開ページの一覧を把握させる
 2. `knowledge/glossary.md` と `knowledge/five-stages-guide.md` を読ませて用語とモデルを把握させる
 3. 必要な領域のレポートを選択的に読ませる
 
-### 4. 調査方法論を参考にする
+### 3. 調査方法論を参考にする
 
 30領域を横断調査するプロセス自体が公開されている:
 - [PROJECT.md §3](https://raw.githubusercontent.com/uminomae/project-design-theory/main/cs/evidence/PROJECT.md) に調査方法の変遷と改善の記録がある
-- Phase 5-9 の統一調査プロトコルは [PROTOCOL.md](https://raw.githubusercontent.com/uminomae/project-design-theory/main/cs/evidence/investigation/PROTOCOL.md) に定義されている
+- 今の調べ方（分野ごとに、論の原典の本文を読んで照合する）は [全体レビューの計画](https://github.com/uminomae/project-design-theory/blob/main/docs/cs-review/README.md) に書いてある
 
 ## Related Projects
 
