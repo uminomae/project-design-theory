@@ -346,7 +346,8 @@ def build(SRC: Path, TPL: Path, OUT: Path, STYLE: str) -> None:
         html = html.replace("<blockquote>", '<blockquote class="reader-callout">')
         # pjdhiro 本人の言葉（「pjdhiro の問い：」等で始まる段落）は gravity-love と同じ引用カードに載せる（#20）
         html = re.sub(
-            r"(?<!<blockquote class=\"reader-callout\">\n)<p>(<strong>pjdhiro の[^<：]{1,8}：</strong>.*?)</p>",
+            # 段落の頭にページ内リンクの印（<a id="…"></a>）があっても、引用カードに載せる（#96・2026-11-10）
+            r"(?<!<blockquote class=\"reader-callout\">\n)<p>((?:<a id=\"[^\"]*\"></a>)?<strong>pjdhiro の[^<：]{1,8}：</strong>.*?)</p>",
             r'<blockquote class="reader-callout reader-request">\n<p>\1</p>\n</blockquote>',
             html, flags=re.S,
         )

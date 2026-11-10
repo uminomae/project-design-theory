@@ -9,7 +9,13 @@ import { syncControlGuideVisibility } from '../ui/control-guide.js';
 import { initImageCards, setImageCardsLanguage } from '../image-cards.js';
 import { LANG_CHANGE_EVENT } from '../i18n.js';
 import { applyPageLanguage } from '../page-language.js';
-import { bindStandaloneMarkdownLinks, initReports, setReportsLanguage } from '../reports/index.js';
+import {
+    bindStandaloneMarkdownLinks,
+    initReports,
+    initReviewedRecords,
+    setReportsLanguage,
+    setReviewedRecordsLanguage,
+} from '../reports/index.js';
 import { breathValue } from '../animation-utils.js';
 import { breathConfig } from './config.js';
 import { requestScroll } from '../ui/scroll-coordinator.js';
@@ -149,6 +155,7 @@ export async function runMainOrchestrator({
         applyPageLanguage(lang);
         setAboutModalLanguage(lang);
         setReportsLanguage(lang);
+        setReviewedRecordsLanguage(lang);
         setImageCardsLanguage(lang);
     });
 
@@ -174,4 +181,7 @@ export async function runMainOrchestrator({
         throw error;
     });
     bindStandaloneMarkdownLinks();
+    initReviewedRecords({ lang: initialLang }).catch((error) => {
+        console.warn('[awareness-space] reviewed records load failed:', error);
+    });
 }

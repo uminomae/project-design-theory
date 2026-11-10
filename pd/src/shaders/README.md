@@ -17,6 +17,10 @@
 
 ## ページ固有の背景
 
+- `src/backgrounds/love-membrane.js`：Love駆動開発の背景（`?bg=membrane`）。創造とはの `cs/src/scene-intent.js` の作り方（ジャイロイドの膜の体積のレイマーチ）を移し、膜を二枚（二重ジャイロイド）・軸に近いほど強い渦にしたもの。確かめ用に `?yaw=&pitch=&vortex=&split=&dist=&t=&jitter=&shell=&mg=` で値を上書きできる（色は `?cool=r,g,b` など）。調えの見本は `src/backgrounds/membrane-tune.html`。手で動かす調整のページは `src/backgrounds/studio.html`（時刻と位置・カメラ・形・色・書き出し。`?e=秒` と `?bgc=` も書き出しから使う）
+- `src/backgrounds/love-gemini.js`：Love駆動開発の背景（Gemini 作・2026-11-10）。`?bg=gemini`。頼む文は `pd/docs/gemini-prompt-love-background.md`。Gemini の出力から直したのは、動かすための二か所だけ（ファイルの頭に書いた）
+- `src/backgrounds/love-gemini2.js`：同じく Gemini 作の二つ目（蔵本モデルの同期とトーラスの網目）。`?bg=gemini2`。直したのは vertexColors の一か所だけ
+- `src/backgrounds/love-gemini3.js`：同じく Gemini 作の三つ目（複素ポテンシャルの渦の粒と、中央の液体のような面）。`?bg=gemini3`。直したのは ParametricGeometry（`parametric-geometry.js` を使う）と vertexColors の二か所
 - `src/backgrounds/love-field.js`：Love駆動開発の背景の見本（three.js の WebGL・三つ）。`reader-app.js` が body の `data-background="love-…"` か `?bg=orbit|lens|binary` のときに読み、失敗したら上のプールに戻す。見比べは `src/backgrounds/samples.html`（noindex）。`?motion=still` で止めた一枚を出す
 
 ## 方針

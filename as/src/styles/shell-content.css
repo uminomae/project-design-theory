@@ -630,3 +630,33 @@ html[lang="en"] #taglines {
   border-radius: .5rem;
 }
 .reading-source { font-size: .85rem !important; color: rgba(31, 51, 87, 0.75); }
+
+/* ── 原典から照合し直した記録の一覧（2026-11-10・#95。中身は src/reports/reviewed-records.js が描く）
+   一行に、記録の名前（押すと記録を窓で開く）と、何を調べたかの一行・照合した日を並べる ── */
+.reviewed-records-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: .5rem;
+}
+.reviewed-records-item {
+  display: grid;
+  gap: .1rem;
+  padding: .55rem .8rem;
+  border: 1px solid var(--reading-details-rule);
+  border-radius: .4rem;
+  min-width: 0;
+}
+.reviewed-records-link {
+  color: var(--reading-link);
+  text-underline-offset: .2em;
+  overflow-wrap: anywhere;
+}
+.reviewed-records-link:focus-visible { outline: var(--reading-focus-outline); outline-offset: 2px; }
+.reviewed-records-meta {
+  font-size: .85rem;
+  color: var(--reading-sub);
+  overflow-wrap: anywhere;
+}
+.reviewed-records { margin: 0 0 1rem; }

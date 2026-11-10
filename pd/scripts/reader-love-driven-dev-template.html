@@ -5,8 +5,9 @@
   計画:   knowledge/research/love-driven-dev/README.md（#20）
   再生成: python3 scripts/build-reader-lp.py
   手順:   reader/README.md
-  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
-  - シェーダー背景（reader-app.js）と tokens.css の変数は pd VI を継承する
+  デザイン制約: docs/DESIGN-RULES-LDD.md（このページだけの決まり。ダークの見た目・膜の渦の背景）＋ docs/DESIGN-RULES.md §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - シェーダー背景（reader-app.js）と tokens.css の変数は pd VI を継承する。ただしこのページの背景は、body の data-background で
+    膜の渦（src/backgrounds/love-membrane.js）にしている（pjdhiro 2026-11-10）
   - ページ固有スタイルは src/styles/reader-flow.css（tokens の上に載せる。独自パレット新造禁止）
   - noindex は外した（pjdhiro 2026-11-08・#71）。sitemap.xml・llms.txt に入れてある
 -->
@@ -28,7 +29,7 @@
   文責は Claude（Fable 5.1）。pjdhiro 本人の言葉は「pjdhiro の言葉／見方／問い／感想：」で引用。
   ============================================================================
 -->
-<html lang="ja">
+<html lang="ja" class="ldd-dark" data-intro="title cue">
 <head>
     <script>
     if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
@@ -69,6 +70,10 @@
     <link rel="stylesheet" href="../src/style.css">
     <link rel="stylesheet" href="../src/styles/reader.css?v=20261107">
     <link rel="stylesheet" href="../src/styles/reader-flow.css?v=20261109">
+    <!-- Love駆動開発だけのダークの見た目（docs/DESIGN-RULES-LDD.md） -->
+    <link rel="stylesheet" href="../src/styles/reader-ldd-dark.css?v=20261110f">
+    <!-- 最初の画面（背景を全画面で見せる）の形を、描く前に決める（docs/DESIGN-RULES-LDD.md §1） -->
+    <script src="../src/ldd-intro.js?v=20261110c"></script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -96,7 +101,7 @@
     }
     </script>
 </head>
-<body class="reader-flow">
+<body class="reader-flow" data-background="love-membrane">
     <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
     <div class="top-bar" role="group" aria-label="サイト操作">
         <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
@@ -108,10 +113,17 @@
     </div>
     <div id="webgl-container" aria-hidden="true"></div>
     <div id="content">
-        <div class="reader-wrap">
+        <!-- 最初の画面：まず背景（膜の渦）を全画面で見せる。形は html の data-intro（docs/DESIGN-RULES-LDD.md §1） -->
+        <div class="ldd-intro">
+            <p class="ldd-intro__title" aria-hidden="true"><span>Love駆動開発と</span><span>呼びたいもの <i>β</i></span></p>
+            <a class="ldd-intro__cue" href="#ldd-read" aria-label="読み始める"><span>scroll</span><span class="ldd-intro__arrow" aria-hidden="true">▾</span></a>
+        </div>
+        <div class="reader-wrap" id="ldd-read">
             <div class="draft-banner">
-                <b>この記事は AI（Claude）が執筆しています。</b>現象を経験して名前を付けたのと、しっくり来るかを判定するのは pjdhiro です。<br>
-                🚧 <b>2027 年末の完成を目標に、探索中</b>です（<a href="https://github.com/uminomae/project-design-theory/issues/64">#64</a>）。第七稿（長文の作法に沿って組み直した骨格）で、説明を詰めていきます。
+                <b>この記事は AI（Claude）が執筆しています。</b>しっくり来るかを判定するのは pjdhiro です。<br>
+                🚧 <b>2027 年末の完成を目標に、探索中</b>です（<a href="https://github.com/uminomae/project-design-theory/issues/64">#64</a>）。第七稿（長文の作法に沿って組み直した骨格）で、説明を詰めていきます。<br>
+                <span class="reader-meta">最終更新: <!--UPDATED--> ／ 状態: 第七稿（2027 年末の完成を目標に探索中） ／
+                <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md">正本 (GitHub)</a></span>
             </div>
             <header class="reader-hero">
                 <h1>Love駆動開発と呼びたいもの β</h1>
@@ -130,10 +142,6 @@
                     </ul>
                 </div>
                 <p class="reader-lead"><span class="reader-lead__label">今の答え</span>私たちは、Love と呼びたい場のようなものの中にいて、その一部なのかもしれません。体は、つながっている安心と、そこからのずれを感じ取っています。そのずれを欠けとして感じて、人は動き出します。プロジェクトの駆動源は、これなのかもしれません。この見方の使い道は、理論や指示を当てる前に、受け取ったものを確かめることです。</p>
-                <p class="reader-meta">
-                    最終更新: <!--UPDATED--> ／ 状態: 第七稿（2027 年末の完成を目標に探索中） ／
-                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md">正本 (GitHub)</a>
-                </p>
             </header>
             <article class="reader-article prose-block">
 <!--BODY-->
