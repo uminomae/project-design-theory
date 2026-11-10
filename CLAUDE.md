@@ -60,12 +60,12 @@
 2. このセッションで Claude が指摘された誤りを、`docs/rules/corrections.md` の型に当てはめる。当てはまる型が無ければ型を足す。同じ誤りを繰り返さないよう、その型の「書く前の確認」を直す。前に同じ型の誤りをしていたら、`docs/rules/corrections-repeats.md` の表に日付を足す（型 K は `corrections-k.md` の「繰り返し」に足す）。corrections.md の「繰り返し」の決まりに従い、2 回目からは確認の文を足すのでなく、機械で止める仕組みに移すか、確認の文を書き直す。
 3. Claude の推奨と pjdhiro の判断がずれたところを、セッションの記録の `## ずれ` に書く。一件ごとに、場面・Claude の推奨とその理由・pjdhiro の判断と発言・Claude が見ていなかったもの・写した先（stance・corrections・decisions のどれか）を書く。誤りと言えない、見方の違いから来たずれも書く。pjdhiro に判断を仰いだ問いは、聞く前の Claude の予想と実際の答えを一行ずつ並べる。予想は聞く前に書いておく（あとから書くと、当たったことにしやすい）。予想が当たり続けるなら聞きすぎ（型 P）で、外れるなら stance.md の読みが足りない。ずれが無ければ「無し」と書く（pjdhiro 2026-11-09「claudeの推奨と私がズレたポイントは大切です」・セッションの終わりに振り返って学んでいるかを問われて）。
 4. セッションの記録を書く（下の「セッションの記録」）。
-5. `node pd/scripts/wiki-stale-check.mjs --session-end` を走らせる。古い wiki のページか、出典ノートがあるのに出典ページが無い原典が出たら、自分では直さず、司令塔として別のセッションを始め（fresh・自分の worktree）、`.claude/skills/wiki-compile/SKILL.md`「区切るときの作り直しの指令」の雛形に一覧を入れて渡す（作り直し・check.sh・develop に取り込み push。main へは送らない）。何も出なければ何もしない（pjdhiro 2026-11-10「セッションを区切り、セッションログを作り、そこから司令塔として別セッションにwiki更新の指令を出すように」）。
+5. `node pd/scripts/wiki-stale-check.mjs --session-end --log <記録の名前>` を走らせる。並べた分には、このセッションが出す印が付く（本体の `.cache/wiki-order.json`・24 時間）。ほかのセッションがもう出した分は並ばず、全部出ていれば「出さない」と出る。並べ直すために二度回さない（二度目は自分の印で「もう出ている」と出る。#130・pjdhiro 2026-11-11）。古い wiki のページか、出典ノートがあるのに出典ページが無い原典が出たら、自分では直さず、司令塔として別のセッションを始め（fresh・自分の worktree）、`.claude/skills/wiki-compile/SKILL.md`「区切るときの作り直しの指令」の雛形に一覧を入れて渡す（作り直し・check.sh・develop に取り込み push。main へは送らない）。何も出なければ何もしない（pjdhiro 2026-11-10「セッションを区切り、セッションログを作り、そこから司令塔として別セッションにwiki更新の指令を出すように」）。
 6. 足したもの・直したもの（と、出した wiki の指令）を pjdhiro に短く伝える。何も無ければ、無いと伝える。
 
 ## セッションの記録
 
-- 本体の checkout の `.cache/session/` に、一つのセッションにつき一つ、`log-YYYYMMDD-<話題>.md` を書く。`.cache/` は git に入れない。worktree の `.cache/` は worktree と一緒に消えるので、worktree で作業したときも本体の側に書く（場所は `git rev-parse --git-common-dir` の一つ上）。
+- 本体の checkout の `.cache/session/` に、一つのセッションにつき一つ、`log-YYYYMMDD-<話題>.md` を書く。`.cache/` は git に入れない。worktree の `.cache/` は worktree と一緒に消えるので、worktree で作業したときも本体の側に書く（場所は `git rev-parse --git-common-dir` の一つ上）。worktree のセッションの Write は本体の側に書けないので、worktree の `.cache/session/` に書いてから `bash scripts/session-log.sh <記録の名前>` で写す。書き足したら `--force` を付けて写し直す（#130・2026-11-11）。
 - 書くこと：見出しに日付・話題・worktree の名前。見出しの直下に `## 要点` を置き、直したこと・残したこと・commit を 5 行ほどで書く。その次に `## ずれ`（上の手順 3）を置く。その下に本文：直したこと、pjdhiro の判断（趣旨と、何への答えか）、残したこと・次に回したこと、commit。
 - 作業を始める前に、`bash scripts/session-digest.sh` で、その日と前の日の記録の要点を読み、今の状態を確かめる（型 K）。既定で出るのは、題と `## 要点` の頭だけ。`## ずれ`・「残したこと」・「commit」の節は、話題の語を引数にしたときに出る（例：`bash scripts/session-digest.sh cs-review`）。関わる記録は、語で指してそこまで読む。本文は、関わる記録だけを開く。全部を読まない（pjdhiro 2026-11-08・毎回読む分を小さく保つため）。
 - worktree で始めるときは、規約と記録の要点を読んだあとに、`bash scripts/sync-develop.sh` だけを一つの呼び出しで回して develop に揃える（fetch・早送り・枝と作業ツリーの食い違いと `.claude/` の差分の確かめ）。パイプ・リダイレクト・`&&` と組まない（型 K・`corrections-k.md` の K1）。
