@@ -25,7 +25,8 @@ export function getDomainReportTitle(report, lang = 'ja') {
     const domainLabel = useJapanese
         ? (report.nameJa || report.nameEn)
         : (report.nameEn || report.nameJa);
-    return `${report.id} ${domainLabel}`.trim();
+    // 画面には分野の名前だけを出す。分野の番号（D01 など）は内部の id で、公開ページに出さない（writing §6-5・#73 の J9）。
+    return (domainLabel || report.id || '').trim();
 }
 
 export function createReportsRenderer({
@@ -303,7 +304,7 @@ export function createReportsRenderer({
         const col = document.createElement('div');
         col.className = 'col';
         const tile = document.createElement('article');
-        const reportTitle = getDomainReportTitle(report, state.config.lang) || `${report.id} ${domainLabel}`;
+        const reportTitle = getDomainReportTitle(report, state.config.lang) || domainLabel;
 
         if (clickable) {
             tile.setAttribute('role', 'button');
@@ -343,20 +344,11 @@ export function createReportsRenderer({
         const body = document.createElement('div');
         body.className = 'card-body p-2 d-flex flex-column gap-1 h-100 reports-domain-item-body';
 
-        const head = document.createElement('div');
-        head.className = 'd-flex flex-wrap align-items-start justify-content-between gap-2 reports-domain-item-head';
-
-        const idNode = document.createElement('span');
-        idNode.className = 'reports-domain-item-id';
-        idNode.textContent = report.id;
-
         const nameNode = document.createElement('div');
         nameNode.className = 'reports-domain-item-name';
         nameNode.title = domainLabel;
         nameNode.textContent = domainLabel;
 
-        head.appendChild(idNode);
-        body.appendChild(head);
         body.appendChild(nameNode);
         if (report.reviewRecord) {
             body.appendChild(createReviewedChip(report));
@@ -389,7 +381,7 @@ export function createReportsRenderer({
                         if (htmlResp.ok) {
                             openRichSlideViewer({
                                 htmlUrl: source.htmlUrl,
-                                title: `${report.id} ${domainLabel}`,
+                                title: domainLabel,
                                 onClose: slideOnClose,
                             });
                             return;
@@ -527,10 +519,6 @@ export function createReportsRenderer({
             cell.dataset.index = idx;
             cell.dataset.domainId = report.id;
 
-            const idBadge = document.createElement('div');
-            idBadge.className = 'hover-grid-cell-id';
-            idBadge.textContent = report.id;
-
             const name = document.createElement('div');
             name.className = 'hover-grid-cell-name';
             name.textContent = domainLabel;
@@ -538,7 +526,6 @@ export function createReportsRenderer({
             const contentArea = document.createElement('div');
             contentArea.className = 'hover-grid-cell-content';
 
-            cell.appendChild(idBadge);
             cell.appendChild(name);
             if (report.reviewRecord) {
                 cell.appendChild(createReviewedChip(report));
