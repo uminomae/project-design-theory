@@ -16,26 +16,29 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D28-perfo
 
 今の公開報告（「30 領域調査報告」の舞台芸術の日本語版、2026-03-18 に LLM が生成、以下「報告」）は、10 の理論を取り上げ、4 つを「強い対応」、2 つ（Laban・Schechner）を「対応なし」としています。報告は、即興の「ブロック」を「失敗モード」と呼び、Schechner の「移送」を「途中で止まるプロセス」として §7 に置いていますが、本文を読めた原典は、至らない形を論の中に書いていました。Schechner を「メタ理論で対応なし」とするのは、1981 年の論文の稽古の三つの段と失敗の記述を落としています。「初心忘るべからず」を「束が再び場に接続する螺旋構造」と読むのは、原典（吉田本の「覺習條々」）が「初心へかへるは、能のさかる所なるへし」と書くのと向きが違います。「方向不問性」「縁の多層性」「渦の一回性」は、原典でなく、調べた跡（phase6・phase7）の仮説から来ていました。英語版は 10 のうち 8 を「Strong」とし、スタニスラフスキーの「if」を「predictive discrepancy」の意図的な生成と書いていて、退避版の「予測誤差」の語が英語版にだけ残っています。
 
-この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。10 の論のうち、提唱者の本文に当たれたのは 4 つ（世阿弥・Fischer-Lichte・スタニスラフスキー・Schechner）です。即興演劇は、提唱者の本（Johnstone・Spolin・Nachmanovitch）を開けず、同じ論の研究者 Sawyer の論文二本を本文で読みました。Grotowski と Boal は、上げた人の分からない写しで本文を読んだので、照合の状態は未照合のまま、読んだ頁を書いています。Meyerhold・Laban・Viewpoints は、本の本文に当たれていません。
+この記録は、報告の主張を一次情報で確かめ直し、論ごとに、何と何が対立し、どうぶつかり、どう包まれ、何が残ったかを並べたものです。5段階の定義はまだ決まっていないので（調べ方の計画と規約の「判断が要ること」1）、どの段に当たるかの判定は保留にしています。10 の論のうち、提唱者の本文に当たれたのは 4 つ（世阿弥・Fischer-Lichte・スタニスラフスキー・Schechner）です。即興演劇は、提唱者の本（Johnstone・Spolin・Nachmanovitch）を開けず、同じ論の研究者 Sawyer の論文二本を本文で読みました。同じ論の著者の本文に当たれたので、即興演劇も一面の表に並べ、本文を読めた論は 5 です。本文を読めなかった論は 5（Grotowski・Meyerhold・Laban・Viewpoints・Boal）で、表の下に分け、論の数に入れていません。Grotowski と Boal は、上げた人の分からない写しで本文を読んだので、照合の状態は未照合のまま、読んだ頁を書いています。Meyerhold・Laban・Viewpoints は、本の本文に当たれていません。
 
 History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/evidence/evidence-D28-performing-arts.md) にあります。退避版の判定（Accept・CA など）は、今の照合の状態の根拠にしていません。
 
 ## 一面の表
 
-照合の状態は調べ方の規約 §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページは各節に控えました。「未照合」の行の対立・衝突・統合は、報告の言い分でなく、原典で確かめられたことだけを書くので、空けています。ただし、上げた人の分からない写しで読めた所は、そう添えて書きました。各行の「対立」「衝突」は原典の構造で、それを対立・衝突・統合と呼ぶのは Claude の読み替えです。原典の性格（伝書・稽古の手順・上演の記録・観察・実験）も添えました。
+照合の状態は調べ方の規約 §3 の四つで書きます。論の微細さは、その論が見ている単位の大きさです。ページ（ページの無い原典は節）は、論ごとの節に控えました。この表には、提唱者か同じ論の著者の本文を読めた論だけを置き、本文を読めなかった論は表の下に分けています。番号は論ごとの節の番号です。上げた人の分からない写しで読めた所は、そう添えて書きました。各行の「対立」「衝突」は原典の構造で、それを対立・衝突・統合と呼ぶのは Claude の読み替えです。原典の性格（伝書・稽古の手順・上演の記録・観察・実験）も添えました。
 
 | 論 | 対立 | 衝突 | 統合／新たな安定、または統合に至らずにどう終わったか | 論の微細さ | 照合の状態 |
 |---|---|---|---|---|---|
 | 1. 世阿弥：風姿花伝・覺習條々（花鏡に当たる） | 若さと珍しさによる「時分の花」と、年を経ても失せない「まことの花」。年齢による声と身体の変化と、稽古 | 十七八で声が変わり、身体が変わり、人に笑われる。二十四五で立合に一度勝って名人と思われ、本人も上手と思い込む | 三十四五で極めれば天下に許される。四十四五まで失せない花がまことの花で、五十余では「せぬならでは手だてあるまじ」が、花は残る。至らない形として、捨てれば能は止まる、時分の花に迷って花の失せるのを知らない、極めなければ四十から能は下がる、身の花もよそ目の花も失せる、初心を忘れて初心へ帰るのは能の下がる所、が書かれている | 一生（七歳から五十余）と、一回の上演（見る人が花と知らないこと） | 本文照合済（パブリックドメインの翻刻。伝書。頁の画像で読んだ） |
 | 2. 即興演劇（Johnstone／Spolin／Nachmanovitch。Sawyer の研究で読んだ） | 一人ひとりの新しい申し出と、それまでの申し出から立ち上がった場面の枠（frame）。構造と行為者 | ある申し出は他の演者に拒まれ、場面に衝突が生まれる（劇団は「make the skit longer」のために衝突を入れるよう教わっている）。申し出が枠に入るかは、他の演者の応じ方が決める | 衝突は別の演者の介入で解かれ、その衝突が次の稽古で人物の性格として残る。枠は演者を縛り、縛られた演者がまた新しさを足す。至らない形として、枠に入らない申し出は消える（Sawyer 2026） | 一つのやり取りから、十二回の稽古まで | 本文照合済（同じ論の研究者 Sawyer の論文。観察と理論）・未照合（提唱者の書籍） |
 | 3. Fischer-Lichte：パフォーマティヴの美学（2004） | 芸術の規範と日常の規範。美の要請と倫理の要請。見る人と演じる人 | Abramović が自分を傷つけ続け、観客はどちらの規範も使えない「Krise」に置かれる | 観客が演者を氷の十字架から運び出し、上演を終わらせる。観客は「Akteure」に変わる。上演は演者の計画どおりには終わらない | 一回の上演（二時間） | 本文照合済（大学の授業用の写し。第 1 章の上演の記録と論考） |
-| 4. Grotowski：貧しい演劇（1968） | 俳優の有機体の抵抗と、心的な過程。自発と規律 | 「spontaneity and discipline」を「conjunction of opposites」と呼ぶ。技術を足すのでなく、妨げを取り除く | 「total act」。至らない形として、技をためた「courtesan actor」の紋切り型が書かれている。後期の活動については、Schechner（1981）が再統合の段が無く参加者が「disabled」になったと書く | 俳優一人の訓練の年月 | 未照合（書籍。上げた人の分からない写しで読んだ）。Schechner の記述は本文照合済 |
 | 5. スタニスラフスキー：システム | 役を最初に作ったときの内的な真実と、繰り返しで固まった外側の型。創造の気分と緊張 | 1906 年、繰り返すほど役が化石のように固まり、型を機械的に繰り返していると気づく。稽古を実験の場にして俳優たちが怒る | 身体の自由と注意の向け方を稽古し、創造の気分が「second nature」になっていく。至らない形として、「spiritual petrification」「the autocracy of evil habit」、職人芸の「штамп」（型）が書かれている | 俳優一人の役と、劇団の数年 | 本文照合済（1924 年の英訳。パブリックドメイン。OCR の文字で読んだ）・露語原文は利用者の翻刻で読んだ |
-| 6. Meyerhold：バイオメカニクス | 未照合 | 未照合 | 未照合 | 俳優一人の身体の動き（報告による） | 未照合（書籍と有料の論文） |
-| 7. Laban：身体動作分析（LMA） | Effort の四つの因子が、それぞれ二つの極の連続体（Strong と Light、Direct と Indirect、Sudden と Sustained、Bound と Free）として書かれる | 原典から衝突を読むのは難しい。後の研究は、評定者の一致が弱いから許容の範囲で、Effort と Shape で低いと報告する | 原典から統合を読むのは難しい。動きを記述する道具立て | 一つの動き | 二次資料のみ（後の研究 Bernardet ら 2019・Tsachor & Shafir 2019。二本は本文照合済） |
-| 8. Viewpoints（Overlie／Bogart & Landau） | 未照合 | 未照合 | 未照合。Overlie の著者のサイトは、Overlie が Six Viewpoints を Bogart に伝え、Bogart が自分の劇団の訓練に作り変えた、と書く | 演者の集まりの稽古（報告による） | 未照合（書籍）。帰属は著者のサイトで本文照合済 |
-| 9. Boal：被抑圧者の演劇 | 抑圧する側と抑圧される側。見る人と演じる人 | フォーラム演劇で、観客が役を替わり、爆弾・ストライキ・組合の案を舞台の上で試す。他の役は反対し、雇い主は代わりの労働者を探す | 爆弾とストライキは舞台の上で実行できないと分かり、その回は組合の案が選ばれる。上演は答えを示さず、「uneasy sense of incompleteness」を残して現実の行動に向かわせる。像の演劇では、搾取する側が自分から変わる「magical solutions」を信じる参加者がいる | 一回の上演から、地域の運動まで | 未照合（書籍。上げた人の分からない写しで読んだ） |
 | 10. Schechner：復元された行動（1981） | 演者が身に付けた行動と、新しく身に付ける行動の断片。演者の「no」と「yes」。社会劇と美的な劇 | 稽古の最初の段は、演者の抵抗を壊し、無防備にする。演者は「gives over or resists」 | 断片を積み上げ、人前に出し、繰り返して「second nature」にする。行動の断片はいつも作り直される。至らない形として、目当てが見えないと稽古は「falters, then fails」、再統合の段の無い Grotowski の後期の活動は参加者を「disabled」にした、が書かれている | 一つの行動の断片から、稽古の数週間、儀礼まで | 本文照合済（大学の機関リポジトリ。頁の画像を文字にして読んだ） |
+
+本文を読めなかった論（5）は、表に並べず、論の数に入れていません。読めた範囲と読めなかった理由は、論ごとの節の最後の「本文を読めなかった論」に書いています。
+
+- 4. Grotowski：貧しい演劇（1968）：未照合（書籍。上げた人の分からない写しで読んだ）。Schechner の記述は本文照合済
+- 6. Meyerhold：バイオメカニクス：未照合（書籍と有料の論文）
+- 7. Laban：身体動作分析（LMA）：二次資料のみ（後の研究 Bernardet ら 2019・Tsachor & Shafir 2019。二本は本文照合済）
+- 8. Viewpoints（Overlie／Bogart & Landau）：未照合（書籍）。帰属は著者のサイトで本文照合済
+- 9. Boal：被抑圧者の演劇：未照合（書籍。上げた人の分からない写しで読んだ）
 
 ## 論ごとの節
 
@@ -142,39 +145,6 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 122 行「束については…射程外に近い」「これは理論の限界ではなく」 | 未判定 | 低 | 第 7 章「Die Wiederverzauberung der Welt」は未照合 |
 | ja 77 行「場・波・縁・渦に強い対応」「強い対応」 | 言い過ぎ | 中 | 段の数の対応は原典から出たものでない |
 
-### 4. Grotowski：貧しい演劇と via negativa
-
-**要旨**：演劇から装飾を取り除き、俳優と観客の関係に絞る。俳優の訓練は、技を集めることでなく、妨げを取り除くこと（via negativa）。原典の性格は、宣言・講演・訓練の記録です。
-
-**一次情報**：
-
-- Grotowski, J. (1968). *Towards a Poor Theatre*. E. Barba 編. 台帳に行がある。手元に取った写しは Monoskop（https://monoskop.org/images/e/e2/Grotowski_Jerzy_Towards_a_Poor_Theatre_2002.pdf ）で、Routledge の 2002 年の刷の走査。上げた人と権利は未確認。読んだ頁：p.13・pp.15–17・p.23・pp.34–35・p.57・p.125・p.133。本の注記（p.13）は、表題の文章が *Tulane Drama Review*（T35, 1967）に載ったと書く。
-- Grotowski, J. (1967). Towards the poor theatre. *The Tulane Drama Review* 11(3), 60–65. DOI 10.2307/1125118（Crossref で書誌だけ確かめた。JSTOR の壁。OpenAlex は oa_status=closed）。
-- Richards, T. (1995). *At Work with Grotowski on Physical Actions*. DOI 10.4324/9780203360231（台帳の「Richards 1995」の行。Routledge の壁）。
-- Schechner (1981) の Grotowski の後期の活動の記述は、10 の節で読んだ（p.38）。
-
-**照合の状態**：未照合（書籍。上げた人の分からない写しで上の頁を読んだ）。Schechner の記述（p.38）は本文照合済です。
-
-**原典に書いてあること**（Monoskop の写しの頁。未照合）：
-
-- 俳優の教育は何かを教えることでなく、「we attempt to eliminate his organism's resistance to this psychic process」（p.16）。「Ours then is a via negativa - not a collection of skills but an eradication of blocks」（p.17）。
-- 技をため込んだ「arsenal」は紋切り型の集まりになりうるもので、「courtesan actor」の考えと切り離せない。「holy actor」の技は取り除く技で、「courtesan actor」の技は技を積む技（pp.34–35）。
-- 神話との同一化はもうできず、神話と「confrontation」することが残る（p.23）。俳優は自分と「an extreme confrontation」をする（p.57）。
-- Artaud の言葉に「the whole problem of spontaneity and discipline, this conjunction of opposites which gives birth to the total act」があると書く（p.125）。
-- 1959〜62 年の訓練の記録の注で、俳優は創造を妨げる抵抗と障害を見つけ、何をしないかを知らねばならない。「This is what I mean by via negativa: a process of elimination」（p.133）。
-- Schechner（1981）は、Grotowski の後期の活動（paratheater）の参加者は「It changed my life」と言うが、自分の劇場を始めたり仕事に生かしたりすることにほとんど成功せず、「They are disabled rather than invigorated」と書く。Grotowski の活動には再統合の段が無い、と書く（p.38）。
-
-**対立・衝突・統合の読み**：写しで読んだ頁では、俳優の抵抗と心的な過程、自発と規律が対で書かれ、自発と規律の結びつきが「total act」を生む、とされています。至らない形として、技をためた紋切り型の俳優が書かれています。後期の活動については、Schechner が、再統合の段を欠いて参加者が力を失った、と観察しています。これを至らない形として並べるのは Claude の読み替えです。
-
-**今の報告から直すこと**：
-
-| 今の報告の行 | 判定 | 重さ | 中身 |
-|---|---|---|---|
-| ja 128 行 via negativa・ブロック（抵抗）の除去・total act（衝動と行為が時間差なく同時） | 未判定 | 中 | 写しの pp.16–17・p.133 と合うが、上げた人の分からない写しで読んだので未照合のまま |
-| ja 128 行「後期のArt as Vehicleでは、観客なしの実践においても深い変容を追求」 | 未判定 | 低 | 未照合。Schechner（1981、p.38）は、その前の paratheater の参加者が「disabled」になったと書いていて、報告は落としている |
-| ja 204 行「Grotowskiのスコアと衝動の弁証法」 | 未判定 | 低 | 写しで確かめたのは「spontaneity and discipline…conjunction of opposites」（p.125） |
-| ja 44 行・200 行「スタニスラフスキー・Meyerhold・Grotowskiの3者は師弟系譜」「同一の師弟系譜」 | 言い過ぎ | 低 | Grotowski はスタニスラフスキーと Meyerhold の直接の弟子でない（研究の一線。本文では確かめていない）。出どころは phase5 171 行・phase7 13 行 |
-
 ### 5. スタニスラフスキー：システム
 
 **要旨**：俳優が役を外から真似るのでなく、役を生きる（переживание）ための稽古の体系。原典の性格は、自伝（*My Life in Art*）と、学生の日記の形の教科書（*Работа актёра над собой*）です。
@@ -208,113 +178,6 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | en 113 行 the "if" as "the reverse operation of D2, the deliberate production of predictive discrepancy"、D2 の「absence or gap」 | 付け足し | 高 | 英語版にだけある。退避版 240 行の「予測誤差の『精度』概念と接続可能」と、欠損（absence or gap）をつなぐ語。原典の «если бы» は、насилие を排して内と外の行動を自然に起こすものとして書かれる |
 | ja 79 行「部分的な対応」と en 63 行「Strong」 | 未判定（版の食い違い） | 中 | 日本語版と英語版で判定が違う |
 | ja 142 行「ロシア語から英語、日本語…多重翻訳」 | 一致 | ― | 翻訳を経ることの注意としては妥当。Hapgood 訳と原文の違いの議論は確かめていない |
-
-### 6. Meyerhold：バイオメカニクス
-
-**要旨**（報告による。確かめていない）：身体の外の運動から内面を生む俳優の訓練法。前演技（pred-igra）・ラクルシ・反射弧。
-
-**一次情報**：
-
-- Braun, E. 編訳 (1969). *Meyerhold on Theatre*（書籍）。読んでいない。
-- Gordon, M. (1974). Meyerhold's biomechanics. *The Drama Review* 18(3), 73–88. DOI 10.2307/1144927（Crossref で書誌だけ確かめた。JSTOR の壁。OpenAlex は oa_status=closed）。
-- Internet Archive の書誌の検索で、Meyerhold の著作の公開の写しは見つからなかった。ロシア語版ウィキソースには「Статьи, письма, речи, беседы」の項があるが、開いていない。
-
-**照合の状態**：未照合（書籍と有料の論文）。
-
-**対立・衝突・統合の読み**：原典で確かめられたことはありません。
-
-**今の報告から直すこと**：
-
-| 今の報告の行 | 判定 | 重さ | 中身 |
-|---|---|---|---|
-| ja 148 行 前演技・ラクルシ・反射弧 | 未判定 | 中 | 未照合 |
-| ja 152 行「Meyerholdの処刑後にアーカイヴが散逸した文献的制約」 | 未判定 | 低 | 未照合。出典が書かれていない |
-| ja 80 行「部分的な対応」と en 64 行「Strong」 | 未判定（版の食い違い） | 中 | 版で判定が違う |
-
-### 7. Laban：身体動作分析（LMA）
-
-**要旨**：身体の動きを Body・Effort・Shape・Space の四つで記述する体系。原典の性格は、記述と記譜の道具立てです。
-
-**一次情報**：
-
-- Laban の『The Mastery of Movement』（1950）・『Effort』（1947）・『Choreutics』は、Internet Archive の貸し出しだけで、読んでいない。
-- Bernardet, U., Fdili Alaoui, S., Studd, K., Bradley, K., Pasquier, P., & Schiphorst, T. (2019). Assessing the reliability of the Laban Movement Analysis system. *PLOS ONE* 14(6), e0218179. DOI 10.1371/journal.pone.0218179（CC BY。出版社の版）。読んだ頁：p.1・pp.4–5・p.18。
-- Tsachor, R. P., & Shafir, T. (2019). How shall I count the ways? *Frontiers in Psychology* 10, 572. DOI 10.3389/fpsyg.2019.00572（CC BY。出版社の版）。読んだ節：Introduction。
-
-**照合の状態**：二次資料のみ（後の研究 Bernardet ら 2019・Tsachor & Shafir 2019 の LMA の説明。二本の論文そのものは本文照合済）。Laban の本は未照合（書籍）です。
-
-**原典に書いてあること**（後の研究の頁）：
-
-- LMA は動きを「Body, Effort, Space and Shape (referred to collectively as BESS)」で観察し、Phrasing を上位の区分とする。Effort の四つの因子は、それぞれ二つの端（Direct/Indirect・Sudden/Sustained・Light/Strong・Bound/Free）を持つ連続体（Bernardet ら 2019、pp.4–5）。Tsachor & Shafir も、四つの因子が「two opposite polarities」にまたがると書く（Introduction）。
-- 資格のある分析者どうしの一致は、二回の評定のまとめ方によって「weak」から「acceptable」の範囲で、Effort と Shape は Phrasing と Space より低い。Effort と Shape は質的で、評定者の好みや動きの癖に左右されるため、と書く（Bernardet ら 2019、p.1・p.18）。
-
-**対立・衝突・統合の読み**：後の研究の説明では、LMA は動きを二つの極の連続体で記述する道具立てで、その二つの極がぶつかって何かが生まれる、とは書かれていません。原典から対立・衝突・統合を読むのは難しい論です（README「規約で決めたこと」の境界の理論の行と同じ扱いで、外さずに並べます）。評定の一致が弱いという研究の一線は、報告に書かれていません。
-
-**今の報告から直すこと**：
-
-| 今の報告の行 | 判定 | 重さ | 中身 |
-|---|---|---|---|
-| ja 158 行 Body・Effort・Shape・Space の四つ、Effort の四要素、連続的なスペクトラム | 一致 | ― | 後の研究の説明（Bernardet ら 2019、pp.4–5）と合う。Laban の本は未照合 |
-| ja 81 行・ja 162 行「対応なし」「全体構造としての構造的対応は確認されませんでした」 | 未判定 | 低 | 原典から対立・衝突・統合を読むのは難しい、と書き直す案。「対応なし」で外に置かず、道具立ての論として並べる |
-| ja 158〜162 行 評定の信頼性の研究に触れない | 抜け | 低 | Bernardet ら（2019）は、評定の一致が弱いから許容の範囲で、Effort と Shape で低いと報告する |
-| ja 81 行「対応なし」と en 65 行「Conditional」 | 未判定（版の食い違い） | 低 | 版で判定が違う |
-
-### 8. Viewpoints（Overlie／Bogart & Landau）
-
-**要旨**（報告による。確かめていない）：時間と空間の要素で即興的に探り、コンポジションで作品にする稽古の枠組み。
-
-**一次情報**：
-
-- Bogart, A., & Landau, T. (2005). *The Viewpoints Book*（書籍。Internet Archive の viewpointsbookpr0000boga は利用制限つきで、読んでいない）。
-- Mary Overlie の著者のサイト（sixviewpoints.com）。Wayback の記録の Biography の頁（https://web.archive.org/web/20220817033945/https://www.sixviewpoints.com/biography ）と、2004 年の Biography（https://web.archive.org/web/20041212001749/http://www.sixviewpoints.com:80/Biography.html ）、2016 年の「Manifesto for Improvisational Performance」（https://web.archive.org/web/20170402030646/http://sixviewpoints.com/blog/2016/9/29/manifesto ）を読んだ。
-
-**照合の状態**：未照合（書籍）。Six Viewpoints と Bogart の関係は、著者のサイトで本文照合済です。
-
-**原典に書いてあること**（著者のサイト）：
-
-- 2022 年の Biography の頁は、Overlie が Anne Bogart との共同の上演（1984・1986）を通じて「she introduced Bogart to the Six Viewpoints, which Bogart later adapted to design the training and directorial work of the SITI Company」と書く。2004 年の頁も Bogart との共同を挙げる。
-- 2016 年のマニフェストは、即興の上演は観客が過程と成果を同時に受け取ると書き、「The "conservative" way of demanding that things be a certain way gives way to appreciation of what is actually going on around you」と書く。
-
-**対立・衝突・統合の読み**：Bogart と Landau の本は未照合で、対立・衝突・統合は書けません。帰属については、Overlie の Six Viewpoints が元で、Bogart がそれを作り変えた、と著者のサイトは書いています。
-
-**今の報告から直すこと**：
-
-| 今の報告の行 | 判定 | 重さ | 中身 |
-|---|---|---|---|
-| ja 82 行・ja 166 行「Bogart / Landau」「Anne BogartとTina Landauは…Viewpointsを体系化しました」 | 帰属違い | 中 | 著者のサイトは、Overlie が Six Viewpoints を Bogart に伝え、Bogart が作り変えたと書く。日本語版は Overlie に触れない。英語版 66 行は「original conception: Mary Overlie (1970s)」、プレゼン版 45 行は「Bogart / Overlie」と書き、版で帰属が違う |
-| ja 168 行 要素の並び（Tempo・Duration・Kinesthetic Response・Repetition・Spatial Relationship・Architecture・Shape・Gesture）、ソフト・フォーカス | 未判定 | 低 | 未照合 |
-| ja 172 行「全5段階にわたって確認」「自然な対応」 | 言い過ぎ | 中 | 原典で確かめられていない |
-
-### 9. Boal：被抑圧者の演劇
-
-**要旨**：観客が演者の役を取り替え、舞台の上で抑圧への答えを試す演劇。原典の性格は、宣言と、ワークショップの手順の記録です。
-
-**一次情報**：
-
-- Boal, A. (1979/2000/2008). *Theatre of the Oppressed*. C. A. & M.-O. L. McBride ほか訳. London: Pluto Press（奥付「First published 1979 and 2000 by Pluto Press」「Copyright © Augusto Boal 1979, 2000, 2008」）。Internet Archive に個人が上げた写し（https://archive.org/details/TheTheatreOfTheOppressed-GetPolitical ）の OCR の文字で読んだ。上げた人と権利は未確認。読んだ頁：p.xxi・pp.114–120。
-- Boal, A., & Epstein, S. (1990). The cop in the head: Three hypotheses. *TDR* 34(3), 35. DOI 10.2307/1146067（Crossref で書誌だけ確かめた。JSTOR の壁）。
-
-**照合の状態**：未照合（書籍。上げた人の分からない写しで上の頁を読んだ）。
-
-**原典に書いてあること**（Pluto 版の頁。未照合）：
-
-- 観客は人物になり、場所を奪い、導く。「the Spectator becoming Spect-Actor is democratically opposed to the other members of the audience」。虚構を変えることで、自分自身に変わる（2000 年版の序文、p.xxi）。
-- 像の演劇で、搾取する側が自分から変わる「magical solutions」や「change of conscience」を信じる参加者は、搾取する側の像から変えた（pp.114–115）。
-- フォーラム演劇の手順：解きにくい政治や社会の問題を話し、十〜十五分の寸劇にし、解決に賛成かを聞く。もう一度同じに演じ、観客の誰でも役者を替わって筋を変えてよい（p.117）。
-- 魚粉工場の例で、一人が爆弾を投げる案を舞台で試し、他の役者は工場が無くなれば仕事も無くなると反対し、本人は作り方も投げ方も知らないと分かる。次の人はストライキを試し、雇い主は失業者から代わりを探し、実行できないと分かる。三つ目の組合の案が、その回では最もよいとされた。「It is not the place of the theatre to show the correct path」（pp.118–119）。
-- フォーラム演劇はカタルシスを避け、「a sort of uneasy sense of incompleteness that seeks fulfilment through real action」を生む（p.120）。
-
-**対立・衝突・統合の読み**：写しで読んだ頁では、抑圧する側と抑圧される側の対立が、舞台の上で、観客の案と他の役との衝突として試されています。試された案のいくつかは実行できないと分かり、別の案が選ばれ、上演は終わりでなく、満たされない感じを残して現実の行動に向かう、と書かれています。像の演劇では、搾取する側が自分から変わると信じる「magical solutions」も参加者の像として書かれています。これを、案と現実のぶつかりと、至らない案が落ちていく形として読むのは Claude の読み替えです。
-
-**今の報告から直すこと**：
-
-| 今の報告の行 | 判定 | 重さ | 中身 |
-|---|---|---|---|
-| ja 178 行「スペクト-アクター」 | 未判定 | 低 | 写しの p.xxi にあるが、上げた人の分からない写しで読んだので未照合のまま |
-| ja 178 行・ja 182 行「レジスラティブ・シアター」「束のスケール範囲が…社会的制度化にまで及ぶ」 | 未判定 | 中 | *Theatre of the Oppressed* でなく別の本（*Legislative Theatre*、1998）の話。未照合 |
-| ja 182 行「『抑圧者-被抑圧者』の二項対立は5段階モデルの非二元的前提と構造的に緊張」 | 付け足し | 中 | 「非二元的前提」は退避版 446 行・559 行の非二元性の点検欄（CHK-A）と phase5 127 行・phase6 151 行の語。原典の対立を、5段階の側の前提で割り引いている |
-| ja 178〜182 行 試された案が実行できないと分かる形と、「magical solutions」を書かない | 抜け | 中 | 写しの pp.114–115・pp.118–120（未照合）。中心の問いに要るので、本の本文を確かめたい |
-| ja 83 行「部分的な対応」と en 67 行「Strong」 | 未判定（版の食い違い） | 中 | 版で判定が違う |
 
 ### 10. Schechner：復元された行動とパフォーマンス研究
 
@@ -350,6 +213,150 @@ History：2026-04-07 までの本文は [退避版](archive/pre-rerun-20260407/e
 | ja 188 行・ja 192 行・ja 230 行「移送（transportation）」と「変容（transformation）」、「波レベルで『移送』にとどまる」 | 未判定 | 中 | 1981 年の論文には出てこない。1985 年の本は未照合。「渦に至らないプロセス」として読むのは phase6 215 行の仮説 3（[UNCERTAIN]）から |
 | ja 186 行「広帯域」（broad spectrum）アプローチ | 未判定 | 低 | 1988 年の TDR は書誌だけ確かめた。本文は未照合 |
 | ja 84 行「対応なし」と en 69 行「Conditional」 | 未判定（版の食い違い） | 中 | 版で判定が違う |
+
+### 本文を読めなかった論
+
+提唱者か同じ論の著者の本文に当たれなかった論です。一面の表には並べず、分野の論の数にも入れていません。書いてあるのは、読めた範囲（要旨・二次資料・権利の分からない写しの頁など）と、読めなかった理由です。本文を読めたら、表に戻します。
+
+#### 4. Grotowski：貧しい演劇と via negativa
+
+**要旨**：演劇から装飾を取り除き、俳優と観客の関係に絞る。俳優の訓練は、技を集めることでなく、妨げを取り除くこと（via negativa）。原典の性格は、宣言・講演・訓練の記録です。
+
+**一次情報**：
+
+- Grotowski, J. (1968). *Towards a Poor Theatre*. E. Barba 編. 台帳に行がある。手元に取った写しは Monoskop（https://monoskop.org/images/e/e2/Grotowski_Jerzy_Towards_a_Poor_Theatre_2002.pdf ）で、Routledge の 2002 年の刷の走査。上げた人と権利は未確認。読んだ頁：p.13・pp.15–17・p.23・pp.34–35・p.57・p.125・p.133。本の注記（p.13）は、表題の文章が *Tulane Drama Review*（T35, 1967）に載ったと書く。
+- Grotowski, J. (1967). Towards the poor theatre. *The Tulane Drama Review* 11(3), 60–65. DOI 10.2307/1125118（Crossref で書誌だけ確かめた。JSTOR の壁。OpenAlex は oa_status=closed）。
+- Richards, T. (1995). *At Work with Grotowski on Physical Actions*. DOI 10.4324/9780203360231（台帳の「Richards 1995」の行。Routledge の壁）。
+- Schechner (1981) の Grotowski の後期の活動の記述は、10 の節で読んだ（p.38）。
+
+**照合の状態**：未照合（書籍。上げた人の分からない写しで上の頁を読んだ）。Schechner の記述（p.38）は本文照合済です。
+
+**原典に書いてあること**（Monoskop の写しの頁。未照合）：
+
+- 俳優の教育は何かを教えることでなく、「we attempt to eliminate his organism's resistance to this psychic process」（p.16）。「Ours then is a via negativa - not a collection of skills but an eradication of blocks」（p.17）。
+- 技をため込んだ「arsenal」は紋切り型の集まりになりうるもので、「courtesan actor」の考えと切り離せない。「holy actor」の技は取り除く技で、「courtesan actor」の技は技を積む技（pp.34–35）。
+- 神話との同一化はもうできず、神話と「confrontation」することが残る（p.23）。俳優は自分と「an extreme confrontation」をする（p.57）。
+- Artaud の言葉に「the whole problem of spontaneity and discipline, this conjunction of opposites which gives birth to the total act」があると書く（p.125）。
+- 1959〜62 年の訓練の記録の注で、俳優は創造を妨げる抵抗と障害を見つけ、何をしないかを知らねばならない。「This is what I mean by via negativa: a process of elimination」（p.133）。
+- Schechner（1981）は、Grotowski の後期の活動（paratheater）の参加者は「It changed my life」と言うが、自分の劇場を始めたり仕事に生かしたりすることにほとんど成功せず、「They are disabled rather than invigorated」と書く。Grotowski の活動には再統合の段が無い、と書く（p.38）。
+
+**対立・衝突・統合の読み**：写しで読んだ頁では、俳優の抵抗と心的な過程、自発と規律が対で書かれ、自発と規律の結びつきが「total act」を生む、とされています。至らない形として、技をためた紋切り型の俳優が書かれています。後期の活動については、Schechner が、再統合の段を欠いて参加者が力を失った、と観察しています。これを至らない形として並べるのは Claude の読み替えです。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 128 行 via negativa・ブロック（抵抗）の除去・total act（衝動と行為が時間差なく同時） | 未判定 | 中 | 写しの pp.16–17・p.133 と合うが、上げた人の分からない写しで読んだので未照合のまま |
+| ja 128 行「後期のArt as Vehicleでは、観客なしの実践においても深い変容を追求」 | 未判定 | 低 | 未照合。Schechner（1981、p.38）は、その前の paratheater の参加者が「disabled」になったと書いていて、報告は落としている |
+| ja 204 行「Grotowskiのスコアと衝動の弁証法」 | 未判定 | 低 | 写しで確かめたのは「spontaneity and discipline…conjunction of opposites」（p.125） |
+| ja 44 行・200 行「スタニスラフスキー・Meyerhold・Grotowskiの3者は師弟系譜」「同一の師弟系譜」 | 言い過ぎ | 低 | Grotowski はスタニスラフスキーと Meyerhold の直接の弟子でない（研究の一線。本文では確かめていない）。出どころは phase5 171 行・phase7 13 行 |
+
+#### 6. Meyerhold：バイオメカニクス
+
+**要旨**（報告による。確かめていない）：身体の外の運動から内面を生む俳優の訓練法。前演技（pred-igra）・ラクルシ・反射弧。
+
+**一次情報**：
+
+- Braun, E. 編訳 (1969). *Meyerhold on Theatre*（書籍）。読んでいない。
+- Gordon, M. (1974). Meyerhold's biomechanics. *The Drama Review* 18(3), 73–88. DOI 10.2307/1144927（Crossref で書誌だけ確かめた。JSTOR の壁。OpenAlex は oa_status=closed）。
+- Internet Archive の書誌の検索で、Meyerhold の著作の公開の写しは見つからなかった。ロシア語版ウィキソースには「Статьи, письма, речи, беседы」の項があるが、開いていない。
+
+**照合の状態**：未照合（書籍と有料の論文）。
+
+**対立・衝突・統合の読み**：原典で確かめられたことはありません。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 148 行 前演技・ラクルシ・反射弧 | 未判定 | 中 | 未照合 |
+| ja 152 行「Meyerholdの処刑後にアーカイヴが散逸した文献的制約」 | 未判定 | 低 | 未照合。出典が書かれていない |
+| ja 80 行「部分的な対応」と en 64 行「Strong」 | 未判定（版の食い違い） | 中 | 版で判定が違う |
+
+#### 7. Laban：身体動作分析（LMA）
+
+**要旨**：身体の動きを Body・Effort・Shape・Space の四つで記述する体系。原典の性格は、記述と記譜の道具立てです。
+
+**一次情報**：
+
+- Laban の『The Mastery of Movement』（1950）・『Effort』（1947）・『Choreutics』は、Internet Archive の貸し出しだけで、読んでいない。
+- Bernardet, U., Fdili Alaoui, S., Studd, K., Bradley, K., Pasquier, P., & Schiphorst, T. (2019). Assessing the reliability of the Laban Movement Analysis system. *PLOS ONE* 14(6), e0218179. DOI 10.1371/journal.pone.0218179（CC BY。出版社の版）。読んだ頁：p.1・pp.4–5・p.18。
+- Tsachor, R. P., & Shafir, T. (2019). How shall I count the ways? *Frontiers in Psychology* 10, 572. DOI 10.3389/fpsyg.2019.00572（CC BY。出版社の版）。読んだ節：Introduction。
+
+**照合の状態**：二次資料のみ（後の研究 Bernardet ら 2019・Tsachor & Shafir 2019 の LMA の説明。二本の論文そのものは本文照合済）。Laban の本は未照合（書籍）です。
+
+**原典に書いてあること**（後の研究の頁）：
+
+- LMA は動きを「Body, Effort, Space and Shape (referred to collectively as BESS)」で観察し、Phrasing を上位の区分とする。Effort の四つの因子は、それぞれ二つの端（Direct/Indirect・Sudden/Sustained・Light/Strong・Bound/Free）を持つ連続体（Bernardet ら 2019、pp.4–5）。Tsachor & Shafir も、四つの因子が「two opposite polarities」にまたがると書く（Introduction）。
+- 資格のある分析者どうしの一致は、二回の評定のまとめ方によって「weak」から「acceptable」の範囲で、Effort と Shape は Phrasing と Space より低い。Effort と Shape は質的で、評定者の好みや動きの癖に左右されるため、と書く（Bernardet ら 2019、p.1・p.18）。
+
+**対立・衝突・統合の読み**：後の研究の説明では、LMA は動きを二つの極の連続体で記述する道具立てで、その二つの極がぶつかって何かが生まれる、とは書かれていません。原典から対立・衝突・統合を読むのは難しい論です（README「規約で決めたこと」の境界の理論の行と同じ扱いで、外さずに並べます）。評定の一致が弱いという研究の一線は、報告に書かれていません。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 158 行 Body・Effort・Shape・Space の四つ、Effort の四要素、連続的なスペクトラム | 一致 | ― | 後の研究の説明（Bernardet ら 2019、pp.4–5）と合う。Laban の本は未照合 |
+| ja 81 行・ja 162 行「対応なし」「全体構造としての構造的対応は確認されませんでした」 | 未判定 | 低 | 原典から対立・衝突・統合を読むのは難しい、と書き直す案。「対応なし」で外に置かず、道具立ての論として並べる |
+| ja 158〜162 行 評定の信頼性の研究に触れない | 抜け | 低 | Bernardet ら（2019）は、評定の一致が弱いから許容の範囲で、Effort と Shape で低いと報告する |
+| ja 81 行「対応なし」と en 65 行「Conditional」 | 未判定（版の食い違い） | 低 | 版で判定が違う |
+
+#### 8. Viewpoints（Overlie／Bogart & Landau）
+
+**要旨**（報告による。確かめていない）：時間と空間の要素で即興的に探り、コンポジションで作品にする稽古の枠組み。
+
+**一次情報**：
+
+- Bogart, A., & Landau, T. (2005). *The Viewpoints Book*（書籍。Internet Archive の viewpointsbookpr0000boga は利用制限つきで、読んでいない）。
+- Mary Overlie の著者のサイト（sixviewpoints.com）。Wayback の記録の Biography の頁（https://web.archive.org/web/20220817033945/https://www.sixviewpoints.com/biography ）と、2004 年の Biography（https://web.archive.org/web/20041212001749/http://www.sixviewpoints.com:80/Biography.html ）、2016 年の「Manifesto for Improvisational Performance」（https://web.archive.org/web/20170402030646/http://sixviewpoints.com/blog/2016/9/29/manifesto ）を読んだ。
+
+**照合の状態**：未照合（書籍）。Six Viewpoints と Bogart の関係は、著者のサイトで本文照合済です。
+
+**原典に書いてあること**（著者のサイト）：
+
+- 2022 年の Biography の頁は、Overlie が Anne Bogart との共同の上演（1984・1986）を通じて「she introduced Bogart to the Six Viewpoints, which Bogart later adapted to design the training and directorial work of the SITI Company」と書く。2004 年の頁も Bogart との共同を挙げる。
+- 2016 年のマニフェストは、即興の上演は観客が過程と成果を同時に受け取ると書き、「The "conservative" way of demanding that things be a certain way gives way to appreciation of what is actually going on around you」と書く。
+
+**対立・衝突・統合の読み**：Bogart と Landau の本は未照合で、対立・衝突・統合は書けません。帰属については、Overlie の Six Viewpoints が元で、Bogart がそれを作り変えた、と著者のサイトは書いています。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 82 行・ja 166 行「Bogart / Landau」「Anne BogartとTina Landauは…Viewpointsを体系化しました」 | 帰属違い | 中 | 著者のサイトは、Overlie が Six Viewpoints を Bogart に伝え、Bogart が作り変えたと書く。日本語版は Overlie に触れない。英語版 66 行は「original conception: Mary Overlie (1970s)」、プレゼン版 45 行は「Bogart / Overlie」と書き、版で帰属が違う |
+| ja 168 行 要素の並び（Tempo・Duration・Kinesthetic Response・Repetition・Spatial Relationship・Architecture・Shape・Gesture）、ソフト・フォーカス | 未判定 | 低 | 未照合 |
+| ja 172 行「全5段階にわたって確認」「自然な対応」 | 言い過ぎ | 中 | 原典で確かめられていない |
+
+#### 9. Boal：被抑圧者の演劇
+
+**要旨**：観客が演者の役を取り替え、舞台の上で抑圧への答えを試す演劇。原典の性格は、宣言と、ワークショップの手順の記録です。
+
+**一次情報**：
+
+- Boal, A. (1979/2000/2008). *Theatre of the Oppressed*. C. A. & M.-O. L. McBride ほか訳. London: Pluto Press（奥付「First published 1979 and 2000 by Pluto Press」「Copyright © Augusto Boal 1979, 2000, 2008」）。Internet Archive に個人が上げた写し（https://archive.org/details/TheTheatreOfTheOppressed-GetPolitical ）の OCR の文字で読んだ。上げた人と権利は未確認。読んだ頁：p.xxi・pp.114–120。
+- Boal, A., & Epstein, S. (1990). The cop in the head: Three hypotheses. *TDR* 34(3), 35. DOI 10.2307/1146067（Crossref で書誌だけ確かめた。JSTOR の壁）。
+
+**照合の状態**：未照合（書籍。上げた人の分からない写しで上の頁を読んだ）。
+
+**原典に書いてあること**（Pluto 版の頁。未照合）：
+
+- 観客は人物になり、場所を奪い、導く。「the Spectator becoming Spect-Actor is democratically opposed to the other members of the audience」。虚構を変えることで、自分自身に変わる（2000 年版の序文、p.xxi）。
+- 像の演劇で、搾取する側が自分から変わる「magical solutions」や「change of conscience」を信じる参加者は、搾取する側の像から変えた（pp.114–115）。
+- フォーラム演劇の手順：解きにくい政治や社会の問題を話し、十〜十五分の寸劇にし、解決に賛成かを聞く。もう一度同じに演じ、観客の誰でも役者を替わって筋を変えてよい（p.117）。
+- 魚粉工場の例で、一人が爆弾を投げる案を舞台で試し、他の役者は工場が無くなれば仕事も無くなると反対し、本人は作り方も投げ方も知らないと分かる。次の人はストライキを試し、雇い主は失業者から代わりを探し、実行できないと分かる。三つ目の組合の案が、その回では最もよいとされた。「It is not the place of the theatre to show the correct path」（pp.118–119）。
+- フォーラム演劇はカタルシスを避け、「a sort of uneasy sense of incompleteness that seeks fulfilment through real action」を生む（p.120）。
+
+**対立・衝突・統合の読み**：写しで読んだ頁では、抑圧する側と抑圧される側の対立が、舞台の上で、観客の案と他の役との衝突として試されています。試された案のいくつかは実行できないと分かり、別の案が選ばれ、上演は終わりでなく、満たされない感じを残して現実の行動に向かう、と書かれています。像の演劇では、搾取する側が自分から変わると信じる「magical solutions」も参加者の像として書かれています。これを、案と現実のぶつかりと、至らない案が落ちていく形として読むのは Claude の読み替えです。
+
+**今の報告から直すこと**：
+
+| 今の報告の行 | 判定 | 重さ | 中身 |
+|---|---|---|---|
+| ja 178 行「スペクト-アクター」 | 未判定 | 低 | 写しの p.xxi にあるが、上げた人の分からない写しで読んだので未照合のまま |
+| ja 178 行・ja 182 行「レジスラティブ・シアター」「束のスケール範囲が…社会的制度化にまで及ぶ」 | 未判定 | 中 | *Theatre of the Oppressed* でなく別の本（*Legislative Theatre*、1998）の話。未照合 |
+| ja 182 行「『抑圧者-被抑圧者』の二項対立は5段階モデルの非二元的前提と構造的に緊張」 | 付け足し | 中 | 「非二元的前提」は退避版 446 行・559 行の非二元性の点検欄（CHK-A）と phase5 127 行・phase6 151 行の語。原典の対立を、5段階の側の前提で割り引いている |
+| ja 178〜182 行 試された案が実行できないと分かる形と、「magical solutions」を書かない | 抜け | 中 | 写しの pp.114–115・pp.118–120（未照合）。中心の問いに要るので、本の本文を確かめたい |
+| ja 83 行「部分的な対応」と en 67 行「Strong」 | 未判定（版の食い違い） | 中 | 版で判定が違う |
 
 ## 公開報告の点検のまとめ
 

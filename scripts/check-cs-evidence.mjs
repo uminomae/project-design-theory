@@ -26,6 +26,10 @@
 //     repo のパス・ファイル名（pjdhiro/assets/…・cs/knowledge/…・docs/…・*.md など）が無い。公開文に記号を出さない
 //     決まり（docs/rules/writing.md §6-3・§6-5）を、機械で止める（corrections の型 R の繰り返し。2026-11-09）。
 //     本文では、分野の名前と、著者・年・題で書く。台帳との対応は「台帳の「著者 年」の行」のように書く。
+// 11. 一面の表の各行の照合の状態に「本文照合済」がある。本文を読めなかった論（未照合・要旨照合済・二次資料のみだけの論）は、
+//     表に置かず、表の下の一覧と、論ごとの節の最後の「### 本文を読めなかった論」に分ける（pjdhiro 2026-11-10「読めなかったものは、
+//     明確にして。10本に入れたくないのです。できれば」。線の引き方は docs/cs-review/README.md「規約で決めたこと」）。
+//     関わる実験の論文や別の著者の要約だけを本文で読めた論は、機械では見分けられないので人が見る。
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -136,6 +140,7 @@ function checkRecord(file, domainId) {
         if (!STATUS_TERMS.some((t) => cell.includes(t))) err(file, `一面の表 ${row.lineNo} 行の照合の状態が四つの語のどれでもない（${cell}）`);
         if (cell.includes('精読ノートのみ')) err(file, `一面の表 ${row.lineNo} 行：「精読ノートのみ」は「二次資料のみ（精読ノート）」と書く`);
         if (OLD_TERMS.test(cell)) err(file, `一面の表 ${row.lineNo} 行の照合の状態に旧い語（${cell}）`);
+        if (!cell.includes('本文照合済')) err(file, `一面の表 ${row.lineNo} 行に「本文照合済」が無い。本文を読めなかった論は表に置かず、表の下と論ごとの節の最後の「本文を読めなかった論」に分ける（11）`);
       }
     }
   } else if (faceIdx >= 0) {
