@@ -555,3 +555,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（畳み「震災からの復興は、誰が進めたのか（事例の読みは Claude の解釈）」）
 - pages: どちらのページも、この畳みを引いていない（`concepts/Love 駆動開発` が写している表そのものは変わっていない）ので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] compile | Love駆動開発の章「〇〇駆動開発」の名前の段の答えを、本人の訂正で「現象の解説と対処の両方」にしたあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（`#ldd-development-name` の段）
+- pages: `concepts/Love 駆動開発` のこの段の要約（手順の形をとらない・対処している）は今の本文と合い、外したカードの言葉（現象の解説）は引いていないので本文はそのまま。`プロジェクトデザイン` はこの段を引いていない。`compiled` は今日のまま
