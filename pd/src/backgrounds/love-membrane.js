@@ -17,6 +17,9 @@
 //      落ちる速さは、読み進めるほど速く、呼吸に合わせて満ち引きする。渦のねじれも一緒に近づくので、螺旋を描いて落ちる。
 //   ⑤ 質量による歪み：光の道を一歩ごとに軸へ向けて曲げる（uLens）。重力レンズのように、奥の輪が中心の暗い穴へ
 //      引き込まれて詰まって見える。強くすると画面全体が輪で埋まって白く飽和するので、弱く（0.1）。
+//   ⑥ 近づいてくる層（uGap・uLayer）：⑤までだと、中心の穴・奥の金・輪の帯がカメラと一緒に動くので、
+//      進んでも同じ位置にいるように見えた（pjdhiro 2026-11-10）。場に固定した明るい層を置き、中心から生まれて
+//      近づき、抜けていくのを見せる。進んでいる手がかりになり、遠くの層は中心へ詰まり続けるので届かない。
 //
 // WebGL（three.js）。動きを減らす設定では一枚を描いて止める。タブが隠れたら止める。`?motion=still` で確かめ用の一枚。
 
@@ -49,6 +52,9 @@ uniform float uDist;
 uniform float uMembraneGain;
 uniform float uFall;
 uniform float uLens;
+uniform float uGap;
+uniform float uLayer;
+uniform float uPhase;
 uniform vec3 uCool;
 uniform vec3 uWarm;
 uniform vec3 uGate;
@@ -112,6 +118,14 @@ vec3 getDensity(vec3 p, float progress, float breath, float timeSec) {
     float c = uSplit;
     float a = 1.0 - smoothstep(0.0, thickness, abs(field - c));
     float b = 1.0 - smoothstep(0.0, thickness, abs(field + c));
+    // 近づいてくる層：場に固定した間隔 uGap ごとに、膜を明るくする。カメラが落ちていくと、
+    // 層は中心の奥から小さく生まれ、近づくほど広がって画面の外へ抜け、次の層がまた中心から来る。
+    // 遠くの層は歪みで中心へ詰まり続けるので、中心には届かない
+    float layer = 0.5 + 0.5 * cos(6.2831853 * X / uGap);
+    layer = layer * layer * layer * layer;
+    float lift = mix(1.0, 0.3 + 1.7 * layer, uLayer);
+    a *= lift;
+    b *= lift;
     // cs の shell：軸のまわりの柔らかい層。歩幅の縞で、細い同心の輪の束になる
     float radial = length(q.yz);
     float shell = exp(-3.6 * radial * radial) * (0.22 + 0.46 * progress) * uShell;
@@ -136,7 +150,10 @@ void main() {
     vec3 col = vec3(0.0);
     float transmittance = 1.0;
     float timeSec = uTime;
-    float t = hash21(gl_FragCoord.xy + vec2(mod(timeSec * 17.0, 1000.0), mod(timeSec * 11.0, 1000.0))) * uJitter;
+    // 輪の線は、カメラから一定の距離ごとに膜を切った断面。起点を落ちた距離に合わせてずらすと（uPhase）、
+    // 輪が場に固定されたように振る舞い、中心の奥から生まれて広がり、手前へ抜けていく。
+    // ずらさないと、輪はカメラから見て同じ距離に出続け、進んでも同じ位置にいるように見える
+    float t = (STEP_NEAR - uPhase) + hash21(gl_FragCoord.xy + vec2(mod(timeSec * 17.0, 1000.0), mod(timeSec * 11.0, 1000.0))) * uJitter;
 
     vec3 p = ro + rd * t;
     for (int i = 0; i < 64; i++) {
@@ -248,6 +265,9 @@ function start() {
         uMembraneGain: { value: 0.55 },
         uFall: { value: 0 },
         uLens: { value: 0.1 },
+        uGap: { value: 1.6 },
+        uLayer: { value: 0.85 },
+        uPhase: { value: 0 },
         // cs の色（冷たい青 → 暖かい白、真ん中に金の門）を、tokens の navy・gold・coral の側へ少し寄せた
         uCool: { value: new THREE.Vector3(0.2, 0.24, 0.46) },
         uWarm: { value: new THREE.Vector3(1.0, 0.96, 0.95) },
@@ -299,6 +319,8 @@ function start() {
         const fallSpeed = (qn('speed') ?? lerp(0.25, 0.6, scroll)) * (0.75 + 0.5 * breath);
         fall += fallSpeed * dt;
         uniforms.uFall.value = fall;
+        // 0.084 は STEP_NEAR（シェーダーの歩幅）と同じ値
+        uniforms.uPhase.value = ((fall % 0.084) + 0.084) % 0.084;
         // 前半は渦の芯を覗く向き（軸に沿う）、後半は少し横へ回り、渦がゆるむ。
         // 斜めに回りすぎると、輪の線がざらついた縞に変わるので、回す幅は小さくする
         // 軸の上から、中央の円の中心を正面に見る。ゆらぎはごく小さく
@@ -311,6 +333,8 @@ function start() {
         if (qn('dist') !== null) uniforms.uDist.value = qn('dist');
         if (qn('mg') !== null) uniforms.uMembraneGain.value = qn('mg');
         if (qn('lens') !== null) uniforms.uLens.value = qn('lens');
+        if (qn('gap') !== null) uniforms.uGap.value = qn('gap');
+        if (qn('layer') !== null) uniforms.uLayer.value = qn('layer');
     };
     const render = () => renderer.render(scene, camera);
 
