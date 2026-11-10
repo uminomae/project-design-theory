@@ -495,3 +495,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（防衛の章の本文・畳み二つ・言葉の表）
 - pages: どちらのページも、外した文（防衛は、湧いた信号と考えのずれを、欠けとして感じる手前で小さくしておく動き）を引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] compile | Love駆動開発の湧く信号の表の畳みを、もう一度平易にしたあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「先が見えないとき、どの信号が湧くか」の畳みの前段と表）
+- pages: どちらのページも、この畳みを引いていないので本文はそのまま。`compiled` は今日のまま
