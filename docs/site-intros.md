@@ -31,4 +31,5 @@
 | `pd/index.html`・`pd/src/content/site-data.mjs` | 「今後の方向性」の四枚のカードの説明、「AI に読ませる」窓の表、メニューとカードの英語の名前 |
 | `as/index.html`・`as/assets/about/`・`as/llms.txt` | 冒頭の Love駆動開発の紹介、英語の題と本文の訳語 |
 | `ks/index.html` | 冒頭の Love駆動開発の紹介、畳みの「関連概念」のカード（創造とは・意識とは）、トップバーの名前 |
-| `cs/index.html`・`cs/src/i18n/dict.js` | まだ。創造とはの持ち場で直す（Issue #111 のコメント） |
+| `cs/index.html`・`cs/src/i18n/dict.js` | トップバーの名前、機械向けの要約の紹介の一文（創造とはの持ち場で直した。2026-11-10） |
+| `pd/llms*.txt`・`as/llms.txt`・`ks/llms*.txt`・`cs/llms*.txt` | 「Related Projects」の名前と一文（英語の紹介の一文。2026-11-11） |
