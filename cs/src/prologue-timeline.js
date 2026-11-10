@@ -17,6 +17,7 @@ let _timeline = null;
 let _nodesRow = null;
 let _descArea = null;
 let _stages = [];
+let _noteEl = null;
 let _activeStageIndex = 0;
 
 function getStages(lang) {
@@ -42,8 +43,12 @@ export function initPrologueTimeline() {
         _descArea.className = 'prologue-desc';
         _descArea.setAttribute('aria-live', 'polite');
 
+        _noteEl = document.createElement('p');
+        _noteEl.className = 'prologue-note';
+
         _timeline.appendChild(_nodesRow);
         _timeline.appendChild(_descArea);
+        _timeline.appendChild(_noteEl);
     }
 
     // feature cards の前に挿入
@@ -67,6 +72,7 @@ function renderTimeline(lang) {
     _stages = getStages(normalized);
     const prologueStrings = dict[normalized]?.prologue || dict.ja.prologue;
     _timeline.setAttribute('aria-label', prologueStrings.timelineAria);
+    if (_noteEl) _noteEl.textContent = prologueStrings.note || dict.ja.prologue.note || '';
     _nodesRow.innerHTML = '';
 
     _stages.forEach((stage, index) => {
