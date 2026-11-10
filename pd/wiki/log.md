@@ -560,3 +560,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（`#ldd-development-name` の段）
 - pages: `concepts/Love 駆動開発` のこの段の要約（手順の形をとらない・対処している）は今の本文と合い、外したカードの言葉（現象の解説）は引いていないので本文はそのまま。`プロジェクトデザイン` はこの段を引いていない。`compiled` は今日のまま
+
+## [2026-11-11] compile | Love駆動開発の畳み「手法の名前と、Love駆動開発の名前」の二段目を、本人の訂正で「駆動」は人が先に置くものを言う、に替えたあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（畳み「手法の名前と、Love駆動開発の名前」）
+- pages: どちらのページも、この畳みの二段目（外したテストの語の対比）を引いていないので本文はそのまま。`compiled` は今日のまま
