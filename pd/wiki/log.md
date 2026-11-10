@@ -479,3 +479,8 @@ compile 実行の履歴。append-only。
 - scope: 出典ページ 3（引用の語だけを原文に直した）
 - sources: Strogatz 2001 の誌面の PDF（p.270）・Friston 2012 の PubMed Central の全文（PMC3510653 §3）・Nicolis & Nicolis 2016 の PDF（p.1）
 - pages: `D07_strogatz_2001_exploring-complex-networks`（"prone to spatial" → "prone to both spatial"）・`D07_friston_2012_free-energy-principle`（"minimized by active systems" → "minimized by active states"）・`D06_nicolis_2016_stochastic-resonance-self-organization`（文献番号 "[1]" を戻した）。別のセッションが同じ原典を原文と照らしたときに見つけた
+
+## [2026-11-11] compile | 区切るときの知らせの三ページ（Love駆動開発の方法の節と防衛の章・HOME・意識とはのトップの直しのあと）
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`・`cross-refs/awareness-space-overview`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（方法の節・防衛の章の頭・「このページの言葉」）、`pd/src/content/site-data.mjs`（冒頭の一文・Love のよくある誤解・起きていること）、`as/index.html`（章「この見方は、何の役に立つのか」・「まだ分からないこと」・「調べてきたこと」・記録の一覧・畳み）
+- pages: `concepts/Love 駆動開発` は、読み物の変わった所（方法の節・防衛の章の頭）を引いていないので本文はそのまま。やさしい解説の Love の一文だけ、力の面だけの言い方を、本文と同じ二つの面に合わせた。`プロジェクトデザイン` は、「起きていること」と誤解の四つ目を今の HOME の文に合わせ（五段階の英語の名と「止揚・統合」を外した）、Love駆動開発の節を、今の HOME の冒頭の三文目と「よくある誤解」、読み物の「このページの言葉」の定義に合わせた（今の HOME に無い「つながりを生む引力一般」「生存と同等に重要」の文を外した）。`awareness-space-overview` は、章の表に「この見方は、何の役に立つのか」を足し、「まだ分からないこと」「調べてきたこと」の行を今の文に合わせ、記録の一覧を、照合し直した領域ごとの記録十本（信号の分け方・間主観性の信号まで）に書き直した。畳みは発散のノートだけになった
