@@ -667,3 +667,8 @@ compile 実行の履歴。append-only。
 - scope: 出典ページ 1
 - sources: `pd/knowledge/evidence/awareness-model/friston-2010-free-energy-principle.md`（「FEP の予測誤差は欠損と直接対応」の行に、取り違えの注を足した）
 - pages: `sources/Friston_2010_free-energy-principle` は、もう「予測と誤差を欠損そのものとせず、参照枠として置いている」と書いていて、注と合う。中身は直さず、compiled を今日にした
+
+## [2026-11-11] check | Love駆動開発の第六部の組み直しに合わせて確かめた
+- scope: 概念ページ 1・トップ 1
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第六部の 9 章を 7 章に組み直した。構想・心の言葉・価値創造の三章を「事業の言葉は、どこで誤解されるか」の一章の三つの段にまとめ、繰り返していた結論を一度にし、「開発の中で、何が起きているのか」の題を「後半の答え」に替えた）
+- pages: `concepts/Love 駆動開発` と `プロジェクトデザイン` は、第六部の章題を引いておらず、開発・使い方・効き目・まだ分からないことの言い方も今の正本と合う。中身は直さず、compiled は今日のまま
