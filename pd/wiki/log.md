@@ -505,3 +505,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「先が見えないとき、どの信号が湧くか」の畳み）
 - pages: どちらのページも、この畳みを引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] compile | Love駆動開発の引用二つを、pjdhiro の訂正に合わせたあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（`#ldd-attach` の見方・`#ldd-love-history` の依頼）
+- pages: どちらのページも、この二つの引用を引いていないので本文はそのまま。`compiled` は今日のまま
