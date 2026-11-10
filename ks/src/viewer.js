@@ -3,6 +3,7 @@
 // PDF はダウンロードリンクとして残す
 
 import DOMPurify from 'dompurify';
+import { prepareStackedTables } from './stacked-tables.js';
 
 // Jekyll (github.io) では .md を fetch すると HTML が返る。
 // draftUrl は raw.githubusercontent.com で渡すこと（i18n.js の DRAFT_BASE_JA/EN 参照）。
@@ -170,6 +171,7 @@ export function openViewer(content) {
     const contentEl = _viewer.querySelector('.viewer-content');
     contentEl.className = 'viewer-content';
     contentEl.innerHTML = DOMPurify.sanitize(content);
+    prepareStackedTables(contentEl);
 
     requestAnimationFrame(() => {
         _viewer.classList.add('visible');

@@ -1,5 +1,6 @@
 import DOMPurify from 'dompurify';
 import { detectLang } from './i18n.js';
+import { prepareStackedTables } from './stacked-tables.js';
 
 function normalizeLang(lang) {
     return lang === 'en' ? 'en' : 'ja';
@@ -356,6 +357,7 @@ async function openMarkdownModal({ mdUrl, title = '', pdfUrl = '', cacheKey = ''
                     <div class="md-body">${html}</div>
                 </div>
             `;
+            prepareStackedTables(state.dom.mdModalContent);
         }
 
         const strings = getStrings(state.lang);
