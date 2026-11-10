@@ -1,13 +1,13 @@
 ---
 title: "サイバネティクス——動物と機械における制御と通信"
-description: "Wiener による制御と通信の統一理論。フィードバック・情報・目的指向システムの概念を定式化した。"
-aliases: ["Cybernetics: Or Control and Communication in the Animal and the Machine"]
+description: "Wiener (1948, 第 2 版 1961)。制御の問題と通信の問題は切り離せず、どちらも「メッセージ」を中心にしている、と論じた本。フィードバックを、機械の制御と人の随意運動に共通するものとして扱った。"
+aliases: ["Cybernetics: Or Control and Communication in the Animal and the Machine", "Wiener 1948"]
 tags: [source, "D07", "原典解説"]
 source:
-  repo: "creation-space"
-  path: "knowledge/raw/D07_wiener_1948_cybernetics.pdf"
-  manifest_id: "D07-S01"
-compiled: "2026-11-10"
+  - repo: "cs"
+    path: "knowledge/raw/manifest.md"
+    manifest_id: "D07-S01"
+compiled: "2026-11-11"
 status: 正典
 review_state: 未レビュー
 ---
@@ -16,44 +16,71 @@ review_state: 未レビュー
 
 > **高校生向けのやさしい解説**
 >
-> 「動物も機械も、目標とのズレを感知して自分を修正する」という共通原理を明らかにした1948年の本です。自転車に乗るとき無意識にハンドルを微調整するような「フィードバック」のしくみが、生き物にも機械にも同じように働いていることをウィーナーは数学で示しました。この考え方は人工知能・ロボット工学・社会システム論の出発点になっています。
+> 機械も人の体も、目標とのずれを感じ取り、それを打ち消すように動きを直しています。この仕組みをフィードバックと呼びます。Wiener は 1948 年のこの本で、機械の制御と人の動きの制御を、同じ言葉と数学で扱おうとしました。情報の量を、物理のエントロピーと結びつけて考えたのもこの本です。
 
 ## 概要
 
-Norbert Wiener（1894〜1964）が1948年に著したサイバネティクスの基礎テキスト。動物（生命体）と機械の両方を貫く制御と通信の統一理論を提唱した。本書はフィードバックループ、情報量の定式化、目的指向的行動のメカニズムを論じ、生物学・工学・心理学・社会科学をまたぐ横断的な理論的枠組みを提供した。第二次世界大戦中の対空砲制御システムの研究から発展した本理論は、情報理論・人工知能・システム理論の源流となり、20世紀後半の科学思想に広範な影響を与えた。
+Norbert Wiener が 1948 年に出した本で、1961 年の第 2 版で補足の章が足された。題は、動物と機械における制御と通信。Wiener は、戦時中に Julian Bigelow と火器管制（射撃の照準を合わせる装置）の予測の理論に取り組んだ経緯から書き起こす（Introduction）。制御の問題と通信の問題は切り離せず、どちらも電気工学の技法でなく「メッセージ」という概念を中心にしている、と論じ、この分野を「サイバネティクス」と名づけた（pp.8–11）。精読ノートは、序文・Introduction・第 III・IV・V・IX・X 章を読んでいる。
 
 ## 主要概念
 
-**フィードバック（Feedback）**
-サイバネティクスの中心概念。システムの出力を入力側に返すことで、目標との誤差を修正し続けるメカニズム。Wienerはネガティブフィードバック（目標値からのずれを修正する）が生命体の目的指向的行動の基本原理であることを示した。単なる刺激-反応モデルを超えて、システムが環境との継続的な交渉を通じて状態を調整するダイナミクスを描く。
+### 科学の境界の領域
 
-**情報（Information）**
-Wienerは情報をエントロピーの概念と関連づけて定式化した。系の情報の量は組織化の度合いの尺度、エントロピーは無秩序の度合いの尺度で、一方は他方の負にすぎない、と書いている（第 2 版 p.11）。この定式化はClaude Shannonの情報理論と並行して発展し、情報を物理的基盤から独立した量として扱う枠組みを与えた。
+> "It is these boundary regions of science which offer the richest opportunities to the qualified investigator. They are at the same time the most refractory to the accepted techniques of mass attack and the division of labor." (p.2)
 
-**目的指向システム（Purposive System）**
-フィードバックメカニズムを持つシステムは、内部に「目的」を持っているかのように振る舞う。Wienerはこれが機械にも生命体にも共通して成立することを示し、「目的」を形而上学的概念ではなくシステムの構造的性質として説明した。この視点はのちの人工知能研究の基礎的な方法論的前提となった。
+数学・生理学・工学のあいだの境界の領域を、Wiener は最も実りのある所と見る。同時に、分業の手法が最も効きにくい所でもある、と書く。
 
-**ホメオスタシス（Homeostasis）と制御**
-生命体が内部環境を一定範囲に維持するメカニズム（ホメオスタシス）をフィードバック制御の具体例として分析した。これにより生物学的適応を工学的・数学的に記述する道が開かれ、生命と機械を同一の理論的語彙で論じることが可能になった。
+### 制御と通信は切り離せない
 
-**社会へのサイバネティクスの拡張**
-本書の後半では人間社会への概念の拡張を試みる。通信・制御の観点から組織・社会システムを分析できるという視点は、社会サイバネティクス、マネジメントサイバネティクスへの展開を導いた。ただしWiener自身は、人間社会の複雑性と倫理的問題に対して慎重な立場を取っていた。
+> "on the communication engineering plane, it had already become clear to Mr. Bigelow and myself that the problems of control engineering and of communication engineering were inseparable, and that they centered not around the technique of electrical engineering but around the much more fundamental notion of the message" (p.8)
+
+### フィードバック
+
+> "Mr. Bigelow and I came to the conclusion that an extremely important factor in voluntary activity is what the control engineers term feedback." (p.6)
+
+> "The information fed back to the control center tends to oppose the departure of the controlled from the controlling quantity" (p.97)
+
+第 IV 章は、フィードバックを、サーモスタットや蒸気機関の調速機（ガバナー）の例と、人がたばこを拾うような随意運動の例で並べて説明する（p.97）。章の冒頭には、筋肉は丈夫なのに動きをまとめられない運動失調（ataxia）の患者が出てくる。Wiener はこれを、フィードバックがうまく働かないときの振る舞いとして論じる（p.95）。
+
+### 情報とエントロピー
+
+> "The notion of the amount of information attaches itself very naturally to a classical notion in statistical mechanics: that of entropy. Just as the amount of information in a system is a measure of its degree of organization, so the entropy of a system is a measure of its degree of disorganization; and the one is simply the negative of the other." (p.11)
+
+情報の量は組織化の度合いの尺度で、エントロピーは無秩序の度合いの尺度である。一方は他方の負にすぎない、と Wiener は書く。
+
+### 周波数の引き込みと自己組織化
+
+> "Consider the possibility that the brain contains a number of oscillators of frequencies of nearly 10 per second, and that within limitations these frequencies can be attracted to one another. Under such circumstances, the frequencies are likely to be pulled together into one or more little clumps" (p.199)
+
+> "We thus see that a non-linear interaction causing the attraction of frequency can generate a self-organizing system" (p.202)
+
+第 2 版で足された第 X 章は、脳波の約 10 ヘルツのリズムを、互いに周波数を引き寄せ合う振動子の集まりとして説明する。
+
+## 方法
+
+時系列の統計の理論・フーリエ解析・確率論で、通信と制御の問題を定式化する。情報の量は確率密度の対数で定義し（第 III 章）、フィードバックの安定性は複素関数論で調べる（第 IV 章）。機械の制御（サーボ機構・火器管制の予測器）と生き物の制御（神経系・筋肉の随意運動）を並べて、共通する数学の形を取り出す。Rosenblueth との猫の筋肉の実験や、脳波の自己相関の解析（第 X 章）も扱う。
+
+## 限界
+
+- 本は 1948 年の初版と 1961 年の補足の章からなり、戦時の研究と初期の計算機の開発という時代に根ざしている。
+- 精読ノートは、第 III・IV 章の数式を細かくは確かめていない。第 I・II・VI・VII・VIII 章は読んでいない（社会と言語を扱う第 VIII 章を含む）。
 
 ## 関連する探索キーワード
 
-目標との差異（誤差）を感知して修正し続けるネガティブフィードバック構造は、[[欠損駆動思考]]（ks）において欠損が探究を駆動するという論理と構造的に対応する。差異を感知し続けることがループの条件であるという視点は、[[アウェアネスモデル]]（as）が問う「今ここで何が起きているか」への気づきの能力とも接続する。
+精読ノートは、フィードバックを [[創造の5段階モデル]] の「縁」（境界で起きる出来事）に当て、周波数の引き込みによる自己組織化を「渦」に弱く当てている（著者の主張ではない）。
 
 ## 書誌情報
 
 - 著者: Norbert Wiener
-- 年: 1948（第2版: 1961）
-- 出典: MIT Press
-- access_status: raw-confirmed
-- **ISBN**: 978-0-262-73009-9
+- 年: 1948（読んだのは第 2 版。The M.I.T. Press, 1961）
+- 出典: *Cybernetics: Or Control and Communication in the Animal and the Machine*, 2nd ed.
+- **ISBN**: 0-262-23007-0（布装）、0-262-73009-X（紙装）
 
 ## ソース参照（GitHub・検証用）
 
-- **cs 原典ファイル**: [knowledge/raw/D07_wiener_1948_cybernetics.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D07_wiener_1948_cybernetics.pdf)（manifest_id: `D07-S01`）
+- **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D07-S01`）
 - **cs 精読ノート**: [knowledge/source-notes/D07/D07-S01_wiener-1948.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D07/D07-S01_wiener-1948.md)
-- **この wiki ページ（pd）**: [wiki/sources/D07_wiener_1948_cybernetics.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D07_wiener_1948_cybernetics.md)
-- **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
+
+## 出典メモ
+
+- 材料は創造とはの精読ノート（読んだ章は「概要」に書いた）。引用は、手元の写し（第 2 版の走査）の pp.2・6・8・11・95・97・199・202 の画像で原文と照らした。

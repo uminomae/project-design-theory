@@ -439,7 +439,12 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 
 | ページ | category | compiled |
 |--------|----------|----------|
-| [[concepts/Love 駆動開発\|Love 駆動開発]] | concepts | 2026-11-10 |
+| [[concepts/Love 駆動開発\|Love 駆動開発]] | concepts | 2026-11-11 |
+| [[sources/D02_abrikosov_1957_magnetic-properties-superconductors-second-group\|第二種超伝導体の磁気的性質]] | sources | 2026-11-11 |
+| [[sources/D07_wiener_1948_cybernetics\|サイバネティクス——動物と機械における制御と通信]] | sources | 2026-11-11 |
+| [[sources/D21_deco_2008_2008\|安静時のノイズが脳の動的レパートリー探索を可能にする]] | sources | 2026-11-11 |
+| [[cross-refs/awareness-space-overview\|「意識とは」のサイトと knowledge の概観]] | cross-refs | 2026-11-11 |
+| [[cross-refs/kesson-space-overview\|欠損駆動思考のサイトと knowledge の概観]] | cross-refs | 2026-11-11 |
 | [[concepts/創造の5段階モデル\|創造の5段階モデル]] | concepts | 2026-11-10 |
 | [[concepts/情動の構成\|情動の構成]] | concepts | 2026-11-10 |
 | [[concepts/抱持\|抱持]] | concepts | 2026-11-10 |
@@ -454,10 +459,5 @@ pd/knowledge/ および関連リポの知識を compile した閲覧用 wiki。
 | [[sources/Coan_2015_social-baseline-theory\|社会的ベースライン理論 — リスクと努力の社会的調整]] | sources | 2026-11-10 |
 | [[sources/D01_bott_1988_morse-theory-indomitable\|モース理論 不屈の研究]] | sources | 2026-11-10 |
 | [[sources/D01_carlsson_2009_topology-and-data\|トポロジーとデータ]] | sources | 2026-11-10 |
-| [[sources/D01_hadamard_1945_psychology-invention\|数学における発明の心理学]] | sources | 2026-11-10 |
-| [[sources/D01_thurston_1994_proof-and-progress\|数学における証明と進歩について]] | sources | 2026-11-10 |
-| [[sources/D02_abrikosov_1957_magnetic-properties-superconductors-second-group\|第二種超伝導体の磁気的性質]] | sources | 2026-11-10 |
-| [[sources/D02_rayleigh_1916_problem-thermal-convection-horizontal-layer-fluid-heated-below\|下から熱した水平な流体の層の対流（On convection currents in a horizontal layer of fluid）]] | sources | 2026-11-10 |
-| [[sources/D03_ameta_2021_2021\|自己触媒化学反応系における自己複製とダーウィン進化]] | sources | 2026-11-10 |
 
 > このページは `scripts/generate-wiki-index.mjs` により自動生成されます。wiki/ 内のページ変更時に PostToolUse hook で自動実行されます。

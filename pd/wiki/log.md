@@ -630,3 +630,9 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「心に関する言葉は、どこで誤解されるか」の葛藤の表、その下の pjdhiro の見方と畳み「葛藤、認知的不協和、ダブルバインドは、何が違うか」、出典の行）
 - pages: どちらのページも、葛藤の表を引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] fix | 出典ページ三つを原典で照らし直す（#111 の重い指摘：Abrikosov 1957・Wiener 1948・Ghosh ら 2008）
+- scope: 出典ページ 3・横断ページ 1・概念ページ 2
+- sources: 創造とはの精読ノート D02-S03・D07-S01・D21-S15。手元の原典（Abrikosov の英訳の文字・Wiener 第 2 版の走査の画像 8 頁）と、Ghosh ら 2008 の出版社の公開 PDF
+- pages: `sources/D02_abrikosov_1957_…` は「後に実験で確かめられた」「2003 年のノーベル物理学賞」（論文にもノートにも無い）を外し、実験との比較の段を原文に合わせた（15% は合い方でなく、曲線を読む精度）。訳者を E. J. Saletan に。`sources/D07_wiener_1948_cybernetics` は、ノートに無い段（ホメオスタシス・社会への拡張・後の影響）を外し、原文と照らした引用で組み直した。`sources/D21_deco_2008_2008` は、要旨の引用の語を原文に（network）、PFCORB が支配するのは時間の遅れを入れない結合のとき（p.6）と直した。三つとも、原典の PDF への GitHub のリンクと生成の記録の行を外し、front matter を今の形（repo cs・台帳の行）にした
+- pages: `cross-refs/creation-space-domains` の原典の表に、#111 で作り直した出典ページ 15 枚を足した。`concepts/欠損駆動思考` の関連原典で、文字だけだった Dewey 1910（D14）・Underhill 1911 を作り直した頁につなぎ、Wiener の説明を新しい頁に合わせた。`concepts/アウェアネスモデル` の Wiener の説明も同じ
