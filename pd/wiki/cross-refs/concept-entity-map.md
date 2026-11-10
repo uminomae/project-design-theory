@@ -23,7 +23,7 @@ source:
     path: "knowledge/schema/core-definitions.md"
   - repo: "ks"
     path: "knowledge/text/foundation/phase1-summary.md"
-compiled: "2026-11-10"
+compiled: "2026-11-11"
 tags: [cross-ref, map]
 status: 暫定
 review_state: 未レビュー
@@ -70,7 +70,7 @@ wiki の `concepts/`（と根の [[プロジェクトデザイン]]）のペー�
 | アブダクション | PDブリッジ保持論点 | pd `concepts/CN-008_pd-bridge-holding-issues.md` | H-2 で、欠損駆動思考から抱持を経て frame creation に至る筋を公式化できるかを、保持論点として置く |
 | アブダクション | 欠損駆動思考 | pd `research/kesson-bridge.md`・ks `schema/core-definitions.md` | ブリッジは、欠損駆動思考を abduction の前の態度と位置づけ、design 固有の abduction（abduction-2）との接続を「部分的」とする。コア定義は、欠損駆動思考はアブダクションに似るが、アブダクションの定義が曖昧なので、最後は「違い」か「再定義」になるかもしれないと書く |
 | ウィキッド・プロブレム | デザイン思考（PD） | pd `research/design-thinking/design-thinking-integrated.md` | Rittel & Webber (1973) が wicked problems を示し、Buchanan (1992) がデザイン思考に結びつけたと書く |
-| ウィキッド・プロブレム | PDブリッジ保持論点・欠損 | pd `concepts/CN-008_pd-bridge-holding-issues.md` | H-4 で、wicked problems を欠損の5類型が束になった「複合欠損」として書けるかを問う。原典の10特性との対応は未検証とする |
+| ウィキッド・プロブレム | PDブリッジ保持論点・欠損 | pd `concepts/CN-008_pd-bridge-holding-issues.md` | H-4 で、wicked problems を欠損の5類型が束になった「複合欠損」として書けるかを問う（5類型は前の定義の類型で、今の中核定義は使わない）。原典の10特性との対応は未検証とする |
 | ウィキッド・プロブレム | 欠損駆動思考 | pd `research/kesson-bridge.md` | デザイン思考から欠損駆動思考への節で、同じ問いを浮上した問いとして挙げ、推測の仮説として保持論点に回す |
 | シュワルツの基本的価値理論 | 価値 | pd `research/value/value-integrated.md` | 価値の五つの問題系の「規範」に Schwartz の Basic Human Values を置き、10 の基本価値の円環構造として挙げる |
 | デザイン思考 | デザイン思考（PD） | pd `research/design-thinking/design-thinking-integrated.md` | 概念ページの材料そのもの。デザイン思考を、設計学的思考・Stanford-IDEO 型の教育実践・経営コンサルのパッケージの三層が混ざったものとして書く |
