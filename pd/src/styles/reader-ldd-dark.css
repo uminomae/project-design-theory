@@ -117,7 +117,8 @@ html.ldd-dark[data-intro~="title"] .ldd-intro__title {
 
 /* 下へ促す印。創造とはのトップ（cs/?graphic=i）の #scroll-hint に倣う：
    「scroll」の小さな字と ▾、淡い青白、3 秒でゆっくり 4px 沈む（pjdhiro 2026-11-10「cs/?graphic=i を参考にして」）。
-   値は cs/src/styles/shell-content.css・tokens.css から写した */
+   形と動きは cs/src/styles/shell-content.css・tokens.css から写した。濃さだけは上げた（cs の 0.3・0.25 では、
+   膜の渦の明るい縞の上で見えなかった）。字の後ろに地の色のにじみを敷く */
 .ldd-intro__cue { display: none; }
 html.ldd-dark[data-intro~="cue"] .ldd-intro__cue {
     display: block;
@@ -137,16 +138,17 @@ html.ldd-dark[data-intro~="cue"] .ldd-intro__cue {
     font-family: Georgia, "Noto Serif JP", serif;
     font-size: 0.85rem;
     letter-spacing: 0.1em;
-    color: rgba(180, 200, 230, 0.3);
+    color: rgba(180, 200, 230, 0.62);
+    text-shadow: 0 0 10px rgba(2, 5, 13, 0.85), 0 0 2px rgba(2, 5, 13, 0.9);
     transition: color 0.3s ease;
 }
 .ldd-intro__cue .ldd-intro__arrow {
     margin-bottom: 0;
     font-size: clamp(0.7rem, 3.5vmin, 1.2rem);
-    color: rgba(180, 200, 230, 0.25);
+    color: rgba(180, 200, 230, 0.55);
 }
 .ldd-intro__cue:hover span,
-.ldd-intro__cue:focus-visible span { color: rgba(180, 200, 230, 0.7); }
+.ldd-intro__cue:focus-visible span { color: rgba(180, 200, 230, 0.9); }
 .ldd-intro__cue:focus-visible { outline: 2px solid rgba(174, 188, 255, 0.5); outline-offset: 3px; border-radius: 6px; }
 @keyframes ldd-cue {
     0%, 100% { transform: translateX(-50%) translateY(0); }
