@@ -68,8 +68,9 @@ if [ -n "$old" ]; then
   echo
 fi
 
-echo "公開の判断を待っている別のセッションの変更が入っていれば、そのまま送らない。origin/main から枝を切り、"
-echo "自分の commit だけを載せて、その枝でもう一度これを走らせる（docs/rules/decisions.md・2026-11-09）。迷えば pjdhiro に聞く。"
+echo "公開の判断を待っている別のセッションの変更が入っていれば、そのまま送らない。自分の commit だけを origin/main に載せた枝を"
+echo "bash scripts/pick-to-main.sh <枝> <commit>... で作り（worktree で枝を切り替えない）、その枝でもう一度これを走らせる"
+echo "（docs/rules/decisions.md・2026-11-09）。迷えば pjdhiro に聞く。"
 if [ -n "$fresh" ] && [ "$seen" -ne 1 ]; then
   rm -f "$stamp"
   echo
