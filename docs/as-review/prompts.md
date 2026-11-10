@@ -182,3 +182,21 @@ Crossref で見つからなかったもの：Froese, Gould & Seth 2011（一人�
 | 幻覚剤・瞑想と自己意識 | Millière, R., Carhart-Harris, R. L., Roseman, L., Trautwein, F.-M., et al. (2018). Psychedelics, meditation, and self-consciousness. *Frontiers in Psychology*, 9. | 10.3389/fpsyg.2018.01475 |
 | 自己を越える体験 | Yaden, D. B., Haidt, J., Hood, R. W., Vago, D. R., et al. (2017). The varieties of self-transcendent experience. *Review of General Psychology*, 21, 143–160. | 10.1037/gpr0000102 |
 | 瞑想の困難な体験 | Lindahl, J. R., Fisher, N. E., Cooper, D. J., Rosen, R. K., et al. (2017). The varieties of contemplative experience. *PLOS ONE*, 12, e0176239. | 10.1371/journal.pone.0176239 |
+
+A05 を回して足した（2026-11-10・論点と回答の三周目のセッション）。
+
+- かかった量：Opus 一つ（effort high）で 43 分ほど、51 万トークン、ツール 130 回。論 14（本文を読めた論 12・読めなかった論 2）・文献 36 本（本文照合済 19・要旨照合済 15・未照合（書籍）1・未照合（有料）1）。PDF 9 本。
+- 頼む文は、A04 の形（この領域の注意に、論点ごとの節・as の目標の材料・時間の尺度・用語の決まり・体験に触れる語の禁止・既存の主張を先に一覧にすることを入れる）に、走っている途中で入った決まり（本文を読めなかった論は表の外）をメッセージで足した。A06・A07・A08 の頼む文は、A05 の頼む文を読ませ、置き換えと「この領域の注意」「材料」「候補」だけを書く形にした（頼む文が短くなる）。
+- 司令塔の確かめ：記録の DOI 36 本を Crossref で引いて全部合った。鍵の文は 9 か所を本文で確かめた（Brosschot ら 2017 印刷前の版 p.5 の二つ、Brosschot ら 2018 の全文 XML の三つ、Yu & Dayan 2005 p.681、Porges 2025 p.3、Porges 2022 p.2・p.7、Carleton 2016 p.31）。Carleton 2016 の「initial support」は誌面の p.37 で、記録の p.38 を直した。体験と並べた段 13 は、どれも体験の文のままだった。
+- Wayback に残る出版社の PDF（Porges 1995）を取りに行く操作が、自動の権限の判定で止まった。別の名乗りで取りに行かず、ブラウザでの保存の表に回す。
+- Porges 2009 の本文は、PMC の頁が確認画面で止まっても、NCBI の全文 XML（`efetch.fcgi?db=pmc&id=…`）で読めた。Europe PMC の全文 XML が HTTP 500 を返す論文の、もう一つの経路。
+
+### A05 不確かさと安全（2026-11-10）
+
+- 見るのは、(a) 不確かさ・不安・ストレスの心理学と神経生物学、(b) 一般化された安全でなさの理論（ストレス反応が既定で、安全の知覚がそれを抑える）、(c) 神経内臓統合と心拍変動、(d) ポリヴェーガル理論とその批判、(e) 不確かさとストレスを脳のエネルギーと予測の側から書く論、(f) ネガティブ・ケイパビリティ（キーツの書簡はパブリックドメインの版で読む。Bion は書籍）。
+- GUTS の「安全」と見立ての「信頼」を同じものとして書かない。原典の語のまま並べ、何が重なり何が重ならないかを書く。Peters ら 2017 や GUTS の「予測」がどの時間の尺度の話かを書き添える。
+- 候補（Crossref で照らした）：Brosschot ら 2016（10.1016/j.janxdis.2016.04.012）・2017（10.1016/j.neubiorev.2016.07.019）・2018（10.3390/ijerph15030464）、Grupe & Nitschke 2013（10.1038/nrn3524）、Hirsh ら 2012（10.1037/a0026767）、Peters ら 2017（10.1016/j.pneurobio.2017.05.004）、Carleton 2016（10.1016/j.janxdis.2016.02.007）、Thayer & Lane 2000（10.1016/s0165-0327(00)00338-4）・2009（10.1016/j.neubiorev.2008.08.004）、Porges 1995（10.1111/j.1469-8986.1995.tb01213.x）・2007（10.1016/j.biopsycho.2006.06.009）、Grossman & Taylor 2007（10.1016/j.biopsycho.2005.11.014）、Grossman 2023（10.1016/j.biopsycho.2023.108589）、Sigler 2019 の章（10.2307/j.ctvhn0df8.22）。
+
+### A06・A07・A08（2026-11-10）
+
+候補の書誌は Crossref で照らし、頼む文は A05 の頼む文を読ませる形で書いた。A08（意識とメタ意識の区別）は、論点と回答の「意識と気づきは何が違うか」の工事中を埋めるために足した領域（README の「領域」）。候補：Schooler 2002（10.1016/s1364-6613(02)01949-6）・Schooler ら 2011（10.1016/j.tics.2011.05.006）、Smallwood & Schooler 2015（10.1146/annurev-psych-010814-015331）、Lau & Rosenthal 2011（10.1016/j.tics.2011.05.009）、Rosenthal 2012（10.1098/rstb.2011.0353）、Brown ら 2019（10.1016/j.tics.2019.06.009）、Block 1995（10.1017/s0140525x00038188）・2007（10.1017/s0140525x07002786）・2011（10.1093/analys/anr037）、Cohen & Dennett 2011（10.1016/j.tics.2011.06.008）、Kouider ら 2010（10.1016/j.tics.2010.04.006）、Overgaard & Sandberg 2012（10.1098/rstb.2011.0425）。A06 と A07 の候補は、それぞれの記録の探し方の節にある。

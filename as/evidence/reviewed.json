@@ -37,6 +37,24 @@
       "name_en": "Interoception and emotion",
       "summary_ja": "体の内側の信号は、どう感じとして意識に上るか。情動は生まれつきの回路か、その場で組み立てられるか",
       "summary_en": "How signals from inside the body come to be felt, and whether emotions are built-in circuits or constructed in the moment"
+    },
+    {
+      "id": "A05",
+      "file": "evidence-A05-uncertainty-and-safety.md",
+      "reviewed": "2026-11-10",
+      "name_ja": "不確かさと安全",
+      "name_en": "Uncertainty and safety",
+      "summary_ja": "不確かさ・不安・ストレスと、安全の知覚。生き延びる危うさへの反応が既定で、安全の知覚がそれを抑えるという見方と、その批判",
+      "summary_en": "Uncertainty, anxiety and stress, and the perception of safety: the view that a stress response is the default and perceived safety inhibits it, and its critics"
+    },
+    {
+      "id": "A08",
+      "file": "evidence-A08-consciousness-and-meta-awareness.md",
+      "reviewed": "2026-11-10",
+      "name_ja": "意識とメタ意識の区別",
+      "name_en": "Consciousness and meta-awareness",
+      "summary_ja": "意識される経験と、それに気づくこと（メタ意識・内観）は、どう分けられてきたか。意識の高次の理論、現象の意識と接近の意識の区別と、その批判",
+      "summary_en": "How conscious experience has been told apart from becoming aware of it (meta-awareness, introspection): higher-order theories, the phenomenal/access distinction, and their critics"
     }
   ]
 }
