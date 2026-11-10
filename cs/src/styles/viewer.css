@@ -444,8 +444,81 @@
     font-size: 0.95rem;
   }
 
+  /* 表は横スクロールさせない（stance 2-7「スマートフォンを考える」・2026-11-10）。
+     二列までの表は幅に収めて折り返す。三列以上の表（照合の記録の一面の表など）は、
+     行ごとに枠に積み、各セルの上に列の見出しを出す（modal.js の prepareStackedTables が data-label を付ける）。 */
+  /* 出典の一覧の長い URL も、枠を横に広げないよう折り返す */
+  .md-body p,
+  .md-body li,
+  .md-body blockquote {
+    overflow-wrap: anywhere;
+  }
+
   .md-body table {
-    font-size: 0.75rem;
+    display: table;
+    overflow-x: visible;
+    font-size: 0.8rem;
+  }
+
+  .md-body th,
+  .md-body td {
+    padding: 0.45em 0.6em;
+    overflow-wrap: anywhere;
+  }
+
+  .md-body table.md-table-stack {
+    display: block;
+    border: 0;
+  }
+
+  /* 列の見出しは各セルの上に出すので、見出しの行は畳む */
+  .md-body table.md-table-stack thead {
+    display: none;
+  }
+
+  .md-body table.md-table-stack tbody,
+  .md-body table.md-table-stack tr,
+  .md-body table.md-table-stack td {
+    display: block;
+    width: auto;
+  }
+
+  .md-body table.md-table-stack tr {
+    margin: 0 0 0.9em;
+    border: 1px solid rgba(var(--color-accent), 0.12);
+    border-radius: 2px;
+  }
+
+  .md-body table.md-table-stack td {
+    border: 0;
+    border-top: 1px solid rgba(var(--color-accent), 0.06);
+    padding: 0.5em 0.75em;
+  }
+
+  .md-body table.md-table-stack td:first-child {
+    border-top: 0;
+    background: var(--cs-md-table-head-bg);
+    color: var(--cs-md-table-head-text);
+    font-weight: 500;
+  }
+
+  .md-body table.md-table-stack td:empty {
+    display: none;
+  }
+
+  .md-body table.md-table-stack td[data-label]::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 0.2em;
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: var(--cs-md-table-head-text);
+    opacity: 0.75;
+  }
+
+  .md-body table.md-table-stack td:first-child[data-label]::before {
+    display: none;
   }
 
   .md-body pre {

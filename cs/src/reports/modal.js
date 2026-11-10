@@ -22,6 +22,21 @@ export function createReportsModalController({
 }) {
     let markedParser = null;
 
+    // 狭い幅で表を行ごとに縦に積むため、各セルに列の見出しを写す（viewer.css の .md-table-stack）。
+    // 三列以上の表だけに付ける。表は横スクロールさせない（stance 2-7・2026-11-10）。
+    function prepareStackedTables(root) {
+        root.querySelectorAll('.md-body table').forEach((table) => {
+            const headers = Array.from(table.querySelectorAll('thead th')).map((th) => th.textContent.trim());
+            if (headers.length < 3) return;
+            table.classList.add('md-table-stack');
+            table.querySelectorAll('tbody tr').forEach((tr) => {
+                Array.from(tr.children).forEach((cell, index) => {
+                    if (headers[index]) cell.setAttribute('data-label', headers[index]);
+                });
+            });
+        });
+    }
+
     async function getMarked() {
         if (!markedParser) {
             const { marked } = await import('marked');
@@ -43,8 +58,10 @@ export function createReportsModalController({
         return Boolean(state.dom.mdModal?.classList.contains('show'));
     }
 
-    function setModalPdfButton(pdfUrl) {
+    function setModalPdfButton(pdfUrl, { hide = false } = {}) {
         if (!state.dom.mdOpenPdf) return;
+        // 照合の記録（#73）は PDF を作らない。「PDF準備中」と出すと来ない PDF を約束するので、ボタンごと隠す。
+        state.dom.mdOpenPdf.classList.toggle('d-none', hide);
         const strings = getStrings(state.config.lang);
         const browserPdfUrl = normalizePdfBrowserUrl(pdfUrl);
         if (browserPdfUrl) {
@@ -60,7 +77,7 @@ export function createReportsModalController({
         }
     }
 
-    function setMarkdownModalLoading({ title, pdfUrl = '' }) {
+    function setMarkdownModalLoading({ title, pdfUrl = '', hidePdf = false }) {
         const strings = getStrings(state.config.lang);
 
         if (state.dom.mdModalTitle) {
@@ -77,7 +94,7 @@ export function createReportsModalController({
                 </div>
             `;
         }
-        setModalPdfButton(pdfUrl);
+        setModalPdfButton(pdfUrl, { hide: hidePdf });
     }
 
     async function openMarkdownModal({ mdUrl, title = '', pdfUrl = '', sources = [], modalContext = null }) {
@@ -107,7 +124,7 @@ export function createReportsModalController({
 
         const requestId = ++state.modal.mdRequestId;
         const availablePdfUrlPromise = resolveFirstAvailablePdfUrl(modalSources);
-        setMarkdownModalLoading({ title, pdfUrl: '' });
+        setMarkdownModalLoading({ title, pdfUrl: '', hidePdf: firstSource.kind === 'review' });
         modal.show();
 
         try {
@@ -157,13 +174,14 @@ export function createReportsModalController({
 
             if (requestId !== state.modal.mdRequestId) return;
 
-            setModalPdfButton(availablePdfUrl);
+            setModalPdfButton(availablePdfUrl, { hide: isReviewRecord });
             if (state.dom.mdModalContent) {
                 state.dom.mdModalContent.innerHTML = `
                     <div class="md-article">
                         <div class="md-body">${html}</div>
                     </div>
                 `;
+                prepareStackedTables(state.dom.mdModalContent);
 
                 // モーダル内リンク・画像クリック処理（重複登録防止）
                 if (!state.dom.mdModalContent._contentClickBound) {
