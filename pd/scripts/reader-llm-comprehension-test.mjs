@@ -31,7 +31,7 @@ const TARGETS = {
     spec: 'knowledge/research/two-axis-closure/TEST-reader-llm-comprehension.md',
   },
   'energy-flow': {
-    html: 'reader/energy-flow.html',
+    html: 'reader/archive/energy-flow.html',
     spec: 'knowledge/research/energy-flow-psyche/TEST-reader-energy-flow.md',
   },
   'love-driven-dev': {

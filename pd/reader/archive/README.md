@@ -4,4 +4,5 @@
 
 | ファイル | もとの場所 | しまった日 | 理由 |
 |---|---|---|---|
+| `energy-flow.html`（感情も、関係も、時代も「エネルギーの流れ」なのか） | `pd/reader/` | 2026-11-10 | 2026-07 の「調査の途中の草稿」。進み具合の表示と、同じページを LLM に作らせる古い手順が本文に入っていて、本文の研究のうち原典の本文で確かめたものは一部（Issue #111 のコメントに一覧）。pjdhiro が「古い版としてしまう」を選んだ（2026-11-10・Issue #111 の問いのページ）。HOME・`llms.txt`・`llms-full.txt`・`sitemap.xml` から外し、`scripts/build-reader-lp.py` の生成の対象からも外した。正本（`knowledge/research/energy-flow-psyche/READER-energy-flow-psyche.md`）とテンプレート（`scripts/reader-energy-flow-template.html`）は残してあるが、直してもこのファイルには反映されない |
 | `energy-flow-rhythm.html`（「エネルギーの流れ」の比較用・認知リズム版） | `pd/reader/` | 2026-11-10 | 2026-07 に、同じ調べの結論を別の語り口で書いてみた実験版。手書きで、正本の Markdown から生成していない。読者が辿れるリンクが無く、今の読み物（`../energy-flow.html`）の直し（Issue #111：陽子と「流れが保つ形」の区別、生き物を散逸構造として見るのは見方であること、蔵本モデルの揃い方、本人の言葉でない言い方の帰属）は入っていない。今の読み物の機械向けの要約からの案内も外した |
