@@ -82,7 +82,7 @@ function createMockDocument() {
 test('english page dictionary contains issue-77 strings', () => {
     const page = dict.en.page;
     const about = dict.en.about;
-    assert.equal(page.documentTitle, 'What Is Awareness — pjdhiro');
+    assert.equal(page.documentTitle, 'What Is Consciousness — pjdhiro');
     assert.equal(page.topbarCollab, 'Working with AI collaboration');
     assert.equal(page.graphicSwitcherLabel, 'Background');
     assert.equal(page.graphicSwitcherAria, 'Switch background graphics');
@@ -95,10 +95,10 @@ test('applyPageLanguageToDocument updates page chrome in english', () => {
     const doc = createMockDocument();
     applyPageLanguageToDocument(doc, 'en');
 
-    assert.equal(doc.title, 'What Is Awareness — pjdhiro');
+    assert.equal(doc.title, 'What Is Consciousness — pjdhiro');
     assert.equal(doc.documentElement.lang, 'en');
-    assert.equal(doc.nodes['title-h1'].textContent, 'What Is Awareness');
-    assert.equal(doc.nodes['topbar-main-title'].textContent, 'What Is Awareness');
+    assert.equal(doc.nodes['title-h1'].textContent, 'What Is Consciousness');
+    assert.equal(doc.nodes['topbar-main-title'].textContent, 'What Is Consciousness');
     assert.equal(doc.nodes['credit-collab'].textContent, 'Working with AI collaboration');
     assert.equal(doc.nodes.graphicLabel.textContent, 'Background');
     assert.equal(doc.nodes.graphicRaijin.textContent, 'Fujin-Raijin');
