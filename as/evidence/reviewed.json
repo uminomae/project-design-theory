@@ -1,6 +1,6 @@
 {
   "note": "意識とはの文献レビュー（#95）で、原典から照合し直した領域の記録。as のトップに一覧で出し、押すと記録を開く。済んだ領域を一行ずつ足す。足したら、as/llms.txt の記録の一覧と、as/index.html の noscript の一覧にも一行足す。name と summary は画面に出す文で、領域の記号を入れない。点検は scripts/check-as-evidence.mjs。",
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "areas": [
     {
       "id": "A01",
@@ -82,6 +82,15 @@
       "name_en": "Kinds of signals",
       "summary_ja": "身を守る反応と、快・不快や信頼・嫌悪は、研究でどう分けられてきたか。体への脅威と、人との間での自分への脅威は別の系か。数は二つか",
       "summary_en": "How research has divided defensive reactions from pleasure and displeasure, trust and disgust; whether threats to the body and threats to one's social standing run on separate systems; and whether two kinds are enough"
+    },
+    {
+      "id": "A10",
+      "file": "evidence-A10-intersubjective-signals.md",
+      "reviewed": "2026-11-11",
+      "name_ja": "間主観性の信号",
+      "name_en": "Signals between people",
+      "summary_ja": "人と人のあいだで、何が信号として測られてきたか。二人の脳や体の同期は、やり取りの経験をなすのか、同じ入力の副産物か。近年の論と、その批判",
+      "summary_en": "What has been measured as a signal between people; whether synchrony between two brains and bodies makes up the experience of interacting or is a by-product of shared input; recent accounts and their critics"
     }
   ]
 }
