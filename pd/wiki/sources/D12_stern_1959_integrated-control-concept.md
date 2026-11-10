@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D12_stern_1959_integrated-control-concept.pdf"
   manifest_id: "D12-S05"
-compiled: "2026-04-10"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---
@@ -49,6 +49,7 @@ review_state: 未レビュー
 - 著者: Vernon M. Stern, Ray F. Smith, Robert van den Bosch, Kenneth S. Hagen
 - 年: 1959
 - 出典: *Hilgardia: A Journal of Agricultural Science*, 29(2), 81–101. California Agricultural Experiment Station.
+- DOI: [10.3733/hilg.v29n02p081](https://doi.org/10.3733/hilg.v29n02p081)
 - access_status: raw-confirmed
 
 ## ソース参照（GitHub・検証用）

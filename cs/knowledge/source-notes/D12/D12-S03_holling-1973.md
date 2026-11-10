@@ -13,7 +13,7 @@
 - **著者**: C. S. Holling
 - **タイトル**: Resilience and Stability of Ecological Systems
 - **出典**: Annual Review of Ecology and Systematics, Vol. 4, pp. 1-23 (1973). IIASA Research Report RP-73-3.
-- **DOI / URL**: 不明（PDF は IIASA reprint 版）
+- **DOI / URL**: 10.1146/annurev.es.04.110173.000245（Crossref で題・著者・巻・頁を確かめた。2026-11-10。PDF は IIASA reprint 版）
 
 ## 2. 要旨（読んだ内容に基づく）
 
