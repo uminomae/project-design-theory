@@ -88,16 +88,17 @@
     text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap;}
   .reader-table td{color:var(--cs-md-table-cell-text);padding:8px 10px;
     border-bottom:1px solid var(--line);vertical-align:top;}
-  .reader-table td:nth-child(4){min-width:16em;}
+  .table-wide td:not(:nth-child(4)){white-space:nowrap;}
+  .reader-table td:first-child{white-space:nowrap;}
   .reader-table tr:last-child td{border-bottom:none;}
   /* 狭い幅では表を行ごとに積む（表の中を横に送らない） */
-  @media (max-width:640px){
+  @media (max-width:760px){
     .tablefit{padding:4px 12px;}
     .tablefit thead{display:none;}
     .tablefit table,.tablefit tbody,.tablefit tr,.tablefit td{display:block;width:100%;}
     .tablefit tr{padding:8px 0;border-bottom:1px solid var(--line);}
     .tablefit tr:last-child{border-bottom:none;}
-    .tablefit td{border-bottom:none;padding:2px 0;min-width:0 !important;}
+    .tablefit td,.table-wide td:not(:nth-child(4)){border-bottom:none;padding:2px 0;white-space:normal;}
     .tablefit td::before{content:attr(data-label);display:block;font-size:.8em;color:var(--faint);}
   }
 
