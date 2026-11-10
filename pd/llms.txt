@@ -67,11 +67,6 @@ Public explainer pages, written to be uniquely readable by LLMs without external
 - Paper (PDF, ja, non-peer-reviewed, CC BY 4.0): https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/PAPER-division-algebra-ja.pdf — academic-format version of the same findings, with references (reading-depth annotated) and 20 re-runnable verification scripts.
 - Paper (PDF, en translation): https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/en/pdf/PAPER-division-algebra-en.pdf
 
-### 感情も、関係も、時代も「エネルギーの流れ」なのか — エネルギーの流れ仮説
-- URL: https://uminomae.github.io/project-design-theory/reader/energy-flow.html
-- One-line: If most of matter's mass is "confined energy," could emotions, relationships, and eras be flows too? The page sorts each claim into measured evidence (emotional contagion, OU dynamics of affect, critical slowing down, Kuramoto synchronization) vs. structural resemblance vs. unexplored, with two scales: one for meaning (literal / structural / metaphor) and one for certainty.
-- Status: independent inquiry inspired by dissipative structures; scoreboard of current standing included on the page.
-
 ### Love駆動開発と呼びたいもの β
 - URL: https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html
 - One-line: Love-Driven Development is what pjdhiro wants to call, as a whole, the driving sources, structures and processes overlooked behind the phenomenon called a project. It is at work before a vision is put into words. Management studies have written about the acts of development (envisioning, planning, moving — Doing). The page writes about the unseen part before them, the way gravity has been described by how things move around it: through gravity, vortices, survival and trust signals, kesson (felt lack) and value creation, calling on four related inquiries.

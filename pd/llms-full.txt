@@ -107,11 +107,6 @@ Paper PDF (Japanese, canonical): https://uminomae.github.io/pjdhiro/assets/proje
 Paper PDF (English translation): https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/en/pdf/PAPER-division-algebra-en.pdf
 Paper source (canonical MD): https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/two-axis-closure/PAPER-division-algebra-ja.md
 
-#### 感情も、関係も、時代も「エネルギーの流れ」なのか — エネルギーの流れ仮説
-URL: https://uminomae.github.io/project-design-theory/reader/energy-flow.html
-
-An independent inquiry inspired by dissipative structures ("form persists only while flow continues"). It examines whether emotions, relationships, and historical eras can be understood as energy flows, sorting claims along two named scales: a meaning scale (literal / structural similarity / metaphor) and a certainty scale (measured / hypothesis / leap). Measured anchors include emotional contagion (Kramer et al. 2014, N≈689k), OU-process dynamics of affect, critical slowing down as depression early-warning (van de Leemput et al. 2014), and Kuramoto synchronization. A scoreboard section states what is established, open, and rejected.
-
 #### 愛は、重力に似ていないか — 動かず、何もなく、自分からは見えないのに、すべてを回す中心
 URL: https://uminomae.github.io/project-design-theory/reader/gravity-love.html
 

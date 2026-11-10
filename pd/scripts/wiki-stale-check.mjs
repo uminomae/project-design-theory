@@ -98,7 +98,7 @@ async function main() {
     if (isShallow()) return;
     const stale = stalePages(pages, lastChangeDates());
     let miss = [];
-    try { miss = (await import("./wiki-gen-check.mjs")).missingSourcePages().filter((m) => m.note); } catch { /* 台帳が無い */ }
+    try { miss = (await import("./wiki-gen-check.mjs")).missingSourcePages().filter((m) => m.note && !m.held); } catch { /* 台帳が無い */ }
     if (!stale.length && !miss.length) return;
     const lines = [args.includes("--session-end") ? "wiki の知らせ（区切るとき）：" : "wiki の知らせ（セッションの始め）："];
     if (stale.length) {

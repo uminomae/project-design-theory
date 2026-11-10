@@ -16,7 +16,7 @@ The top page is one continuous reading, in Japanese and English. Each chapter ha
 
 ### Kesson (欠損)
 
-The subjective experience in which awareness grasps the error between expectation and reality as something "missing". When thought and mind drift apart from the signals arising in the body, people may feel that something is missing. pjdhiro sees this as felt passively, without meaning to, because what pjdhiro wants to call Love is driving things.
+pjdhiro has described kesson (lack) in several ways (Claude's translations of pjdhiro's Japanese): "If I liken the bodily sense I call Kesson-Driven Thinking to something, it is an intuition that has a value on the imaginary axis, and yet is zero to cognition." / "Among the things recognized on the real axis, something was defined as zero because it read zero, and was treated as meaningless and worthless; and yet it turned out to have meaning on the imaginary axis. I think that kind of thing is a kesson." / "Feeling unease, or feeling that something is missing. Error is one of those." / "I think that wondering 'if those signals well up at the place of zero, what is that?' is the noticing of a kesson." / "A lack may be something that points in a direction: being drawn in, drifting, falling." Each is one face of kesson. A kesson is also something noticed through an error against prediction. When thought and mind drift apart from the signals arising in the body, people may feel that something is missing. pjdhiro sees this as felt passively, without meaning to, because what pjdhiro wants to call Love is driving things.
 
 ### Kesson-Driven Thinking (欠損駆動思考)
 
@@ -35,6 +35,7 @@ The lack eventually becomes a problem to solve. pjdhiro sees vision, design, and
 ## Site Structure
 
 - `index.html` — Main entry point with Three.js immersive visualization
+- `connection-stability.html` — A reading (Japanese): what the stability of connection is connected to. Theories of the stability of connection, beyond attachment research, arranged in nine tiers by what they connect to (from the body being touched to an unnamed beyond), and set beside the stability pjdhiro reports feeling beyond metacognition. Only sources whose full text was read are cited. The tiers, the six features, and the reading of overlaps are this page's own arrangement, not the authors'. Tier 4 is under construction.
 - `consciousness.html` — Consciousness-themed experience page
 - `src/` — Application source (Three.js, shaders, scene management)
 - `src/shaders/` — GLSL shader sources

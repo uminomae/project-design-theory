@@ -9,7 +9,7 @@ This page is one of the explorations behind the reading "Love駆動開発と呼�
 - **Primary Language**: Japanese (日本語), with English summaries
 - **Site URL**: https://uminomae.github.io/project-design-theory/as/
 - **Topics**: Consciousness and awareness, signals of survival and trust, Intersubjectivity
-- **Aim**: to become able to say how consciousness (意識) and awareness (気づき) differ. The page places pjdhiro's first-person experience at its center; research in neurophenomenology and psychology is examined as material for thinking about it.
+- **Aim**: to become able to say what consciousness (意識) is. Whether it can be told apart from awareness (気づき) is used internally as a test of that aim: without that difference, the outline of the word consciousness stays vague. The page places pjdhiro's first-person experience at its center; research in neurophenomenology and psychology is examined as material for thinking about it.
 
 ## Core Concepts
 
@@ -57,6 +57,7 @@ Research that bears on consciousness and awareness is re-examined area by area b
 - [関係と信頼 / Relationships and trust](https://uminomae.github.io/project-design-theory/as/evidence/evidence-A06-relationship-and-trust.md) — Attachment and the secure base, early infant interaction, social regulation, belonging and loneliness: how relationships change the appraisal of threat and bodily cost
 - [間主観性の哲学と臨床 / Intersubjectivity in philosophy and the clinic](https://uminomae.github.io/project-design-theory/as/evidence/evidence-A07-intersubjectivity.md) — Whether others' experience is given directly before inference: embodied interaction, infant intersubjectivity, the clinical holding environment, and their critics
 - [意識とメタ意識の区別 / Consciousness and meta-awareness](https://uminomae.github.io/project-design-theory/as/evidence/evidence-A08-consciousness-and-meta-awareness.md) — How conscious experience has been told apart from becoming aware of it (meta-awareness, introspection): higher-order theories, the phenomenal/access distinction, and their critics
+- [信号の分け方 / Kinds of signals](https://uminomae.github.io/project-design-theory/as/evidence/evidence-A09-signal-kinds.md) — How research has divided defensive reactions from pleasure and displeasure, trust and disgust; whether threats to the body and threats to one's social standing run on separate systems; and whether two kinds are enough
 
 Earlier versions (three reader guides, a topic page and its slides, and a survey overview) were written before the claims were checked against the original sources. They were withdrawn from this site on 2026-11-10 and are no longer listed here.
 
