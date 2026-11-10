@@ -605,3 +605,8 @@ compile 実行の履歴。append-only。
 - scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（「心の言葉は、どこで誤解されるか」の終わり）
 - pages: どちらのページも、外した畳み（経営学の表の行にまたがる・届かないところは同じ）を引いていないので本文はそのまま。`compiled` は今日のまま
+
+## [2026-11-11] check | Love駆動開発の畳み「渦しか見られない人は、場の揺らぎを軽く見る」（旧「受け取る側の場に、体で入る」）を直したあと
+- scope: `concepts/Love 駆動開発`・`プロジェクトデザイン`
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「デザインは、場にも関わる」の畳み）
+- pages: どちらのページも、この畳みを引いていないので本文はそのまま。compiled は今日のまま
