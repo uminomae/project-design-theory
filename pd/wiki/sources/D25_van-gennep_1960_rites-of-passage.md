@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/D25_van-gennep_1960_rites-of-passage.pdf"
   manifest_id: "D25-S01"
-compiled: "2026-04-10"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---

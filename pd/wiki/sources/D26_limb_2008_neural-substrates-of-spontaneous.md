@@ -8,7 +8,7 @@ source:
   path: "knowledge/source-notes/D26/D26-S12_limb-2008.md"
   manifest_id: "D26-S12"
   oa_url: "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0001679&type=printable"
-compiled: "2026-04-17"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 ---

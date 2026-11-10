@@ -24,6 +24,7 @@
 | 今までの repo を前提にした参照 | 今までの四つの repo の URL・名前の決め打ち・兄弟の並びを前提にしたスクリプト | 新しく書いた（`scripts/check-old-repo-refs.mjs`） |
 | pd：repo をまたぐ URL | 公開の URL の形 | project-design の `ci.yml` |
 | pd：読み物の内部アンカー | 読み物の中の「§2」などのページ内リンクの行き先 | project-design |
+| pd：引用カードの前の文脈 | 対話の形の読み物（いまは Love駆動開発の正本 md）で、pjdhiro の発言の引用カードの直前（空行を除く）が、見出し・畳みの題・組む道具の印（`<!--OPEN-->` など）になっていない。発言の前に、なぜその発言が出たのかが分かる文を置く（`docs/rules/writing.md` §5 の 10）。直前に文があっても唐突なことはあるので、通して読む確かめは残る | 新しく書いた（`scripts/check-quote-context.mjs`・型 R の繰り返し・2026-11-10・#96） |
 | pd：wiki の孤立ページ・不在の出典・旧用語 | 公開する wiki の孤立ページ・出典のパス・使わなくなった用語。`--check` で報告を書き換えずに見る | project-design の `wiki-lint` |
 | pd：wiki が読めない原典を出典にしていない | 取れない原典を、wiki の出典ページが読んだことにしていない | project-design の `wiki-access-lint`（pd#114・cs#252） |
 | pd：wiki の古いページ（知らせるだけ） | 出典が `compiled` 日より後に変わった wiki のページの数。止めない。一覧は `pd/wiki/health/freshness-report.md` | project-design の `wiki-lint` の WL-3 を、git の日付で比べるように作り直した（2026-11-10） |
@@ -71,7 +72,7 @@ const { run } = await import('../src/page-check.js'); await run();
 - GitHub Actions：`check.yml`（上の検査）と `pages.yml`（公開）。
 - 定期実行（launchd の定期・routine・scheduled task）は置いていない。
 
-- main へ送る前の確かめ（2026-11-09）：`.githooks/pre-push` が、main への push を、送る commit を `bash scripts/publish-main.sh <送る枝>` で見たあとでなければ止める。道具は、一緒に公開される commit・変わるファイル・その日の記録の「main には送っていない」を出す。develop には、公開の判断を待っている別のセッションの変更が入っていることがあるため（`docs/rules/corrections.md`「繰り返し」の表）。
+- main へ送る前の確かめ（2026-11-09）：`.githooks/pre-push` が、main への push を、送る commit を `bash scripts/publish-main.sh <送る枝>` で見たあとでなければ止める。道具は、一緒に公開される commit・変わるファイル・その日の記録の「main には送っていない」を出す。develop には、公開の判断を待っている別のセッションの変更が入っていることがあるため（`docs/rules/corrections-k.md`「繰り返し」の表）。
 
 ## 作りたいもの（まだ定まらない）
 

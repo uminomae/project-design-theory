@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   manifest_id: "D14-S02"
   oa_url: "https://www.alice.id.tue.nl/references/clark-chalmers-1998.pdf"
-compiled: "2026-04-19"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 note: "cs 既要約なし、本ページは pd 側で WebFetch (TUE PDF) から直接読解"
@@ -21,13 +21,13 @@ note: "cs 既要約なし、本ページは pd 側で WebFetch (TUE PDF) から�
 
 ## 概要
 
-Clark & Chalmers は、認知が脳内のみに限定されないという「能動的外在主義（active externalism）」を提起した。中核となる「parity principle（同等性原理）」は次のように述べる: 外部のプロセスが内部のプロセスと機能的に同等の役割を果たし、その結合が十分に緊密で信頼できるなら、両者は同じく認知的と見なすべきである。Otto と Inga の思考実験により、外部資源（メモ帳など）が信頼性ある実践に組み込まれている限り、信念や記憶が文字通りそこに宿りうることを論証した。
+Clark & Chalmers は、認知が脳内のみに限定されないという「能動的外在主義（active externalism）」を提起した。中核となる基準（後に「parity principle（同等性原理）」と呼ばれる。1998 年の本文にこの語は無い）は次のように述べる: 外部のプロセスが内部のプロセスと機能的に同等の役割を果たし、その結合が十分に緊密で信頼できるなら、両者は同じく認知的と見なすべきである。Otto と Inga の思考実験により、外部資源（メモ帳など）が信頼性ある実践に組み込まれている限り、信念や記憶が文字通りそこに宿りうることを論証した。
 
 ## 主要概念
 
-**Parity Principle（同等性原理）**
+**カップルド・システムの基準（後に Parity Principle と呼ばれる）**
 
-> "if, as we confront some task, a part of the world functions as a process which, were it to occur within the head, we would have no hesitation in calling cognitive, then that part of the world is (for that time) literally part of the cognitive system" (p.8)
+> "If, as we confront some task, a part of the world functions as a process which, *were it done in the head*, we would have no hesitation in recognizing as part of the cognitive process, then that part of the world *is* (so we claim) part of the cognitive process." (p.8)
 
 外部プロセスが内部プロセスと機能的に同等であれば、認知システムの一部とみなす。
 
@@ -40,15 +40,15 @@ Clark & Chalmers は、認知が脳内のみに限定されないという「能
 
 **能動的外在主義**
 
-> "The human organism is fundamentally dependent on external resources" (p.12)
+人の生体は、根本のところで外部の資源に頼っている（原文は出典ノートで確かめていない）。
 
 認知は単に外部要因に「影響される」のではなく、外部要因によって「構成される」。
 
 **生物的基盤に特権性はない**
 
-> "There is nothing magical about flesh and blood" (p.16)
+血と肉に特別な力があるわけではない（原文は出典ノートで確かめていない）。
 
-生物的基質が認知の境界を決定する特権的地位を持つわけではない。
+生物的基質が認知の境界を決定する特権的地位を持つわけではない。（出典ノートが読んだのは pp.7-15 で、末尾の pp.16-19 は読んでいない。この段のもとの引用は p.16 としていた）
 
 **Active externalism vs Embedded cognition**
 
@@ -63,7 +63,7 @@ Clark & Chalmers は、認知が脳内のみに限定されないという「能
 
 ## 方法
 
-哲学的論考。思考実験と概念分析。具体例（Otto/Inga、Tetris のブロック回転）から一般原理（parity principle）への帰納と、原理から具体例への適用の往復。
+哲学的論考。思考実験と概念分析。具体例（Otto/Inga、Tetris のブロック回転）から一般原理（後に parity principle と呼ばれる基準）への帰納と、原理から具体例への適用の往復。
 
 ## プロジェクトデザインとの関連
 

@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   path: "knowledge/raw/manifest.md"
   manifest_id: "D12-S06"
-compiled: "2026-06-14"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 ---
@@ -34,7 +34,7 @@ EIL に達する前に防除行動を起こすべき密度（行動水準）。�
 
 **決定ルールとしての閾値**
 
-> "a common decision rule or threshold should answer such questions and that such decision rules are the backbone of progressive pest control"
+共通の決定ルール（閾値）がこうした問いに答えるべきであり、そうした決定ルールが進歩的な害虫防除の背骨である（原文は出典ノートで確かめていない）。
 
 進歩的な害虫防除は、感情や慣習ではなく、共通の定量的決定ルール（閾値）に基づくべきである。
 
@@ -54,11 +54,12 @@ EIL に達する前に防除行動を起こすべき密度（行動水準）。�
 ## ソース参照（GitHub・検証用）
 
 - **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D12-S06`）
-- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
+- **cs 精読ノート**: [knowledge/source-notes/D12/D12-S06_pedigo-1986.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/source-notes/D12/D12-S06_pedigo-1986.md)
 - **この wiki ページ（pd）**: [wiki/sources/D12_pedigo_1986_et-al.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D12_pedigo_1986_et-al.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 
 ## 出典メモ
 
 - 本ページは OA ミラー PDF（ULisboa）を curl で取得し pdftotext で抽出した本文（PERSPECTIVES AND OVERVIEW）を一次入力として生成した。
-- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。cs 側 source-note 生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。
+- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。
+- cs 精読ノート（D12-S06）は、全文（pp.341-368）を通読している（2026-06-21）。引用を採ったのは概念の発展・定義（EIL・ET・被害境界）・意思決定の主成分で、虫害と作物被害の関係の類型・数理モデルの節は通読だけ。

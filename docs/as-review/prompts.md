@@ -5,7 +5,7 @@ as の文献レビュー（`README.md`）で、一つの領域をエージェン
 - R は `~/dev/pd/project-design-theory`（本体の checkout）。読むのはここ。手元の PDF はここにしか無い。
 - W は、頼む側のセッションの作業場所（worktree のパス）。書くのはここ。
 
-エージェントは Opus で、バックグラウンドで走らせる（Agent ツールの `model: "opus"`・`run_in_background: true`）。頼む文に書く書誌（DOI・題・巻号）は、司令塔が Crossref で照らしてから書く（型 H。2026-11-09 に、記憶の Lutz ら 2002 の DOI が違っていた）。
+エージェントは Opus で、バックグラウンドで走らせる（Agent ツールの `model: "opus"`・`effort: "medium"`・`run_in_background: true`。モデルや effort を替えるときの比べ方は `docs/cs-review/README.md`「エージェントの分け方」・2026-11-10）。頼む文に書く書誌（DOI・題・巻号）は、司令塔が Crossref で照らしてから書く（型 H。2026-11-09 に、記憶の Lutz ら 2002 の DOI が違っていた）。
 
 どの頼む文にも、次の五つを入れる。
 
@@ -143,3 +143,32 @@ Crossref で見つからなかったもの：Froese, Gould & Seth 2011（一人�
 | 意識の理論の総説 | Seth, A. K., & Bayne, T. (2022). Theories of consciousness. *Nature Reviews Neuroscience*, 23, 439–452. | 10.1038/s41583-022-00587-4 |
 | 前反省的な気づきの一人称の記述 | Petitmengin, C., Navarro, V., & Le Van Quyen, M. (2007). Anticipating seizure: Pre-reflective experience at the center of neuro-phenomenology. *Consciousness and Cognition*, 16, 746–764. | 10.1016/j.concog.2007.05.006 |
 | 予測する心（書籍） | Hohwy, J. (2013). *The Predictive Mind*. Oxford UP. | 書籍（Crossref の検索が返らず、未照らし） |
+
+### A03 自己と境界（2026-11-10）
+
+- 体験 1・2 に最も近い領域。見るのは、(a) 自己の最小の形（最小限の自己・所有の感と行為の感・最小限の現象的自己）の哲学と実験、(b) メタ認知と脱中心化（自分の心の動きを、少し離れた所から観る構え）、(c) 瞑想で自己の境界が薄れる・消える体験の一人称の記述と測定（神経現象学の研究の流れ）、(d) 非二元の気づき・最小限の現象的経験、(e) 自己を越える体験の分類と、瞑想の困難な体験（良いことだけでない側）。
+- 批判の側を同じ重さで探す：瞑想の研究の方法の問題（小さな人数・熟練者の選び方・報告の偏り）、困難な体験や害の報告、幻覚剤と瞑想を同じ枠で読むことへの異論、非二元の気づきの記述を測定で確かめられるかの議論。
+- A01 の記録（神経現象学の方法）で本文照合済の Berkovich-Ohana ら 2020・Timmermann ら 2023・Lutz & Thompson 2003 は読み直さずに参照する。A02 の記録の Laukkonen & Slagter 2021 も同じ。
+- 体験 1・2 はメタ認知の先で到達した感覚の記述で、文脈なしに公開文へ出さない（stance 2-4）。並べるときは公開ページの文の語で、番号と Claude の読みとして書く。研究の語で体験を言い換えない（型 A）。as は神経現象学の研究を材料として調べるが、as そのものが神経現象学として成り立つわけではない（計画の「中心の問い」）。
+- as の目標は意識と気づきの違いを定義できるようにすること（計画の「中心の問い」）。この領域で、自己に気づくこと・気づきに気づくこと（メタ認知・メタ気づき）と、意識そのものの区別がどう書かれているかを、原典の語のまま拾う。定義は立てない。
+- 材料：R/as/evidence/review/band-signal-source-reading.md（瞑想の神経現象学の節）、R/as/evidence/evidence-A01-neurophenomenology-method.md の論 14・15、学術版 §3.1（非二元性の段）。
+
+候補（Crossref で照らした。2026-11-10）：
+
+| 論 | 書誌 | DOI |
+|---|---|---|
+| 最小限の自己 | Gallagher, S. (2000). Philosophical conceptions of the self: implications for cognitive science. *Trends in Cognitive Sciences*, 4, 14–21. | 10.1016/s1364-6613(99)01417-5 |
+| 同 | Zahavi, D. (2017). Thin, thinner, thinnest: Defining the minimal self. In *Embodiment, Enaction, and Culture*. MIT Press. | 10.7551/mitpress/9780262035552.003.0010 |
+| 最小限の現象的自己 | Blanke, O., & Metzinger, T. (2009). Full-body illusions and minimal phenomenal selfhood. *Trends in Cognitive Sciences*, 13, 7–13. | 10.1016/j.tics.2008.10.003 |
+| 最小限の現象的経験 | Metzinger, T. (2020). Minimal phenomenal experience. *Philosophy and the Mind Sciences*, 1, 1–44. | 10.33735/phimisci.2020.i.46 |
+| 瞑想の注意の調整と観察 | Lutz, A., Slagter, H. A., Dunne, J. D., & Davidson, R. J. (2008). Attention regulation and monitoring in meditation. *Trends in Cognitive Sciences*, 12, 163–169. | 10.1016/j.tics.2008.01.005 |
+| 自己を組み直す・ほどく | Dahl, C. J., Lutz, A., & Davidson, R. J. (2015). Reconstructing and deconstructing the self. *Trends in Cognitive Sciences*, 19, 515–523. | 10.1016/j.tics.2015.07.001 |
+| 脱中心化 | Bernstein, A., Hadash, Y., Lichtash, Y., Tanay, G., et al. (2015). Decentering and related constructs. *Perspectives on Psychological Science*, 10, 599–617. | 10.1177/1745691615594577 |
+| メタ認知の神経の基盤 | Fleming, S. M., & Dolan, R. J. (2012). The neural basis of metacognitive ability. *Philosophical Transactions of the Royal Society B*, 367, 1338–1349. | 10.1098/rstb.2011.0417 |
+| 自己の無い体験（脳磁図） | Dor-Ziderman, Y., Berkovich-Ohana, A., Glicksohn, J., & Goldstein, A. (2013). Mindfulness-induced selflessness. *Frontiers in Human Neuroscience*, 7. | 10.3389/fnhum.2013.00582 |
+| 境界の無い感じ（事例） | Ataria, Y., Dor-Ziderman, Y., & Berkovich-Ohana, A. (2015). How does it feel to lack a sense of boundaries? *Consciousness and Cognition*, 37, 133–147. | 10.1016/j.concog.2015.09.002 |
+| 境界が溶ける（現象学の調べ） | Nave, O., Trautwein, F.-M., Ataria, Y., Dor-Ziderman, Y., et al. (2021). Self-boundary dissolution in meditation. *Brain Sciences*, 11, 819. | 10.3390/brainsci11060819 |
+| 非二元の気づき | Josipovic, Z. (2014). Neural correlates of nondual awareness in meditation. *Annals of the New York Academy of Sciences*, 1307, 9–18.（Crossref の発行年は 2013） | 10.1111/nyas.12261 |
+| 幻覚剤・瞑想と自己意識 | Millière, R., Carhart-Harris, R. L., Roseman, L., Trautwein, F.-M., et al. (2018). Psychedelics, meditation, and self-consciousness. *Frontiers in Psychology*, 9. | 10.3389/fpsyg.2018.01475 |
+| 自己を越える体験 | Yaden, D. B., Haidt, J., Hood, R. W., Vago, D. R., et al. (2017). The varieties of self-transcendent experience. *Review of General Psychology*, 21, 143–160. | 10.1037/gpr0000102 |
+| 瞑想の困難な体験 | Lindahl, J. R., Fisher, N. E., Cooper, D. J., Rosen, R. K., et al. (2017). The varieties of contemplative experience. *PLOS ONE*, 12, e0176239. | 10.1371/journal.pone.0176239 |

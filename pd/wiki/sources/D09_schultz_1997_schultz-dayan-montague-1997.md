@@ -8,7 +8,7 @@ source:
   path: "knowledge/source-notes/D09/D09-S07_schultz-1997.md"
   manifest_id: "D09-S07"
   oa_url: "http://www.cs.utexas.edu/~dana/Reward.pdf"
-compiled: "2026-04-17"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 ---
@@ -29,13 +29,13 @@ Schultz, Dayan, Montague (1997) は、霊長類のドーパミンニューロン
 
 > "the phasic activation of dopaminergic neurons in the ventral tegmental area (VTA) and substantia nigra … these neurons code a prediction error signal that … measures the degree to which the current sensory state differs from the last sensory state" (p.1595)
 
-ドーパミンの位相的応答は報酬の量や種類そのものではなく、「予測と実際の差分」を表現する。これは強化学習理論における誤差項の生物学的実装に相当する。
+ドーパミンの位相的応答は報酬の量や種類そのものではなく、「予測と実際の差分」を表現する。これは強化学習理論における誤差項の生物学的実装に相当する。（出典ノートの追記では、この引用と頁は原典で確かめていない）
 
 **TD 学習モデルとの定量的一致**
 
 > "the TD model also accounts for changes in dopaminergic activity if the time of the reward is changed" (p.1595)
 
-TD 学習の誤差項 δ(t) = r(t) + γV(t+1) − V(t) が、活性化・無反応・抑制という三様式を再現する。報酬の時間を操作した実験条件でも、モデルが応答パターンの変化を予測する。
+TD 学習の誤差項 δ(t) = r(t) + γV(t+1) − V(t) が、活性化・無反応・抑制という三様式を再現する。報酬の時間を操作した実験条件でも、モデルが応答パターンの変化を予測する。（出典ノートの追記では、この引用と頁は原典で確かめていない）
 
 **条件刺激への応答転移と blocking**
 
@@ -66,7 +66,7 @@ TD で学習された価値関数は、環境中の各点に「期待報酬の�
 - 出典: *Science* 275(5306), 1593–1599
 - access_status: url-verified
 - **DOI**: [10.1126/science.275.5306.1593](https://doi.org/10.1126/science.275.5306.1593)
-- **オープンアクセス**: [著者公開 PDF](http://www.cs.utexas.edu/~dana/Reward.pdf)
+- **オープンアクセス**: [著者公開 PDF](http://www.cs.utexas.edu/~dana/Reward.pdf)（2026-11-09 に 502）。共著者 Dayan のサイトの写し [sdm97.pdf](http://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf)
 
 ## ソース参照（GitHub・検証用）
 

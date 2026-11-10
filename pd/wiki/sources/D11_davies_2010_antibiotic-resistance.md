@@ -7,7 +7,7 @@ source:
   repo: "creation-space"
   manifest_id: "D11-S03"
   path: "knowledge/raw/D11_davies_2010_antibiotic-resistance.pdf"
-compiled: "2026-04-11"
+compiled: "2026-11-10"
 status: 正典
 review_state: 未レビュー
 ---
@@ -88,7 +88,7 @@ MRSA（*S. aureus*）: 鼻腔に30%の人口が常在菌として保有。市中
 
 - 抗生物質の農業・畜産・水産業での大量使用が環境リザーバーを拡大
 - 製薬企業の撤退（新規抗生物質開発の投資回収が困難）
-- 「耐性は生化学的に可能である限り不可避」（"if resistance is biochemically possible, it will occur"）
+- 耐性は、生化学的に可能である限り、いずれ現れる（原文は出典ノートで確かめていない）
 
 ## 論争・限界
 

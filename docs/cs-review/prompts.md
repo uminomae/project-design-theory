@@ -5,7 +5,7 @@ cs の全体レビュー（`README.md`）で、エージェントに頼む文。
 - R は `~/dev/pd/project-design-theory`（本体の checkout）。読むのはここ。原典の PDF はここの手元にしか無い。
 - W は、頼む側のセッションの作業場所（worktree なら worktree のパス）。書くのはここ。エージェントが本体の checkout に書こうとすると、フックで止まる（D22 で起きた）。親のセッションが確かめてから develop に入れる。
 
-エージェントは Opus で、バックグラウンドで走らせる（Agent ツールの `model: "opus"`・`run_in_background: true`）。司令塔の親のセッションは Fable 5.1（README「エージェントの分け方」）。
+エージェントは Opus で、バックグラウンドで走らせる（Agent ツールの `model: "opus"`・`effort: "medium"`・`run_in_background: true`）。司令塔の親のセッションは Fable（その時の最新）。モデルと effort を替えるときの比べ方も、README「エージェントの分け方」（2026-11-10）。
 
 どの頼む文にも、次の四つを入れる。
 

@@ -8,7 +8,7 @@ source:
   path: "knowledge/source-notes/D25/D25-S07_mauss-1925.md"
   manifest_id: "D25-S07"
   oa_url: "https://haubooks.org/wp-content/uploads/2020/11/Marcel-Mauss-The-Gift-Expanded-Edition-Selected-Annotated-and-Translated-by-Jane-Guyer.pdf"
-compiled: "2026-04-18"
+compiled: "2026-11-10"
 status: 暫定
 review_state: 未レビュー
 ---
