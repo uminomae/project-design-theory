@@ -358,7 +358,7 @@ function buildSlideOpenerRegistry() {
             if (!source) return;
             const useJa = normalizeLang(state.config.lang) === 'ja';
             const label = useJa ? (report.nameJa || report.nameEn) : (report.nameEn || report.nameJa);
-            const title = `${report.id} ${label}`;
+            const title = label || report.id;
 
             if (source.htmlUrl) {
                 try {
