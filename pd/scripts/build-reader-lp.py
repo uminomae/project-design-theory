@@ -65,6 +65,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/subtraction-kinds/READER-subtraction-kinds.md",
+        ROOT / "scripts/reader-subtraction-kinds-template.html",
+        ROOT / "reader/subtraction-kinds.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/intrinsic-motivation/READER-intrinsic-motivation.md",
         ROOT / "scripts/reader-intrinsic-motivation-template.html",
         ROOT / "reader/intrinsic-motivation.html",

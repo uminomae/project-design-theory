@@ -867,3 +867,8 @@ compile 実行の履歴。append-only。
 - scope: 出典ページ 1（`sources/Durkheim_1897_suicide-social-integration`）
 - sources: 原典の全文（1897 年の仏語の初版。Internet Archive の lesuicidetudede00durkgoog、Google の走査の OCR の文字・cs の台帳 D18-S15）
 - pages: 自殺の定義・Book I の非社会的要因・4類型・婚姻と子の保護・1866 年の戦争での 14% の減少・宿命的自殺が注にあること・「社会的事実を物として」は合った。原典と違った所を直した：プロテスタントとカトリックの差は一律の約3倍でなく地域で 20〜30% から 300%（3分の1はプロイセンの比）、確かめられない「18/10万 vs 6/10万」を比に、Wagner と Morselli からの引用の量、「反証的推論を導入」を外した。全文へのリンクが存在しない識別子だったので、読んだ写しに張り直した。頭に「このページの出所」を置いた
+
+## [2026-11-12] compile | 欠損駆動思考の概観・抱持（トップに引き算の章が入った）
+- scope: 2 ページ（`cross-refs/kesson-space-overview`・`concepts/抱持`）
+- sources: `ks/index.html`（章「「私は引き算をしていた。数直線の外で。」」を足した版）
+- pages: 概観の章立ての表に新しい章の一行と、来歴に一文を足した。抱持は、新しい章が抱持の言い方に触れないので本文を変えず、checked を書いた
