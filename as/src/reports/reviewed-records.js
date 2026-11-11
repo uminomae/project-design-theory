@@ -4,6 +4,9 @@
 // as の今までの調査の一覧は番号の振り方が違う（今までの A01 は生存-信頼軸）ので、カードには付けず、別の一覧にする。
 // 画面には領域の記号（A01 など）を出さない（公開文に記号を出さない決まり）。
 //
+// 一覧の先頭には、論点と回答の文書（as/evidence/answers.md）を一行置く。reviewed.json の lead に書く。
+// 回答は書きかけで、工事中の所もそのまま見せる（pjdhiro 2026-11-12・docs/as-review/loop2.md の判断 3）。
+//
 // 置き場は HTML の側で決める：data-reviewed-records を持つ要素の中に一覧を描く。data-lang があれば
 // その言語で、無ければページの言語で描く。いくつ置いてもよい。
 
@@ -12,10 +15,11 @@ import { normalizeLang } from '../i18n.js';
 export const REVIEWED_RECORDS_URL = 'evidence/reviewed.json';
 
 const RECORD_FILE = /^evidence-A\d\d-[a-z0-9-]+\.md$/;
+const LEAD_FILE = /^answers\.md$/;
 
 const STRINGS = {
-    ja: { reviewed: '照合', inJapanese: '' },
-    en: { reviewed: 'reviewed', inJapanese: ' (in Japanese)' },
+    ja: { reviewed: '照合', updated: '更新', inJapanese: '' },
+    en: { reviewed: 'reviewed', updated: 'updated', inJapanese: ' (in Japanese)' },
 };
 
 const hasText = (value) => typeof value === 'string' && value.trim().length > 0;
@@ -38,6 +42,7 @@ export function normalizeReviewedAreas(payload, jsonUrl = 'http://localhost/as/e
         }
         out.push({
             id,
+            kind: 'area',
             mdUrl,
             reviewed: hasText(entry?.reviewed) ? entry.reviewed.trim() : '',
             name: { ja: entry.name_ja.trim(), en: hasText(entry?.name_en) ? entry.name_en.trim() : entry.name_ja.trim() },
@@ -47,7 +52,32 @@ export function normalizeReviewedAreas(payload, jsonUrl = 'http://localhost/as/e
             },
         });
     }
-    return out.sort((a, b) => a.id.localeCompare(b.id));
+    out.sort((a, b) => a.id.localeCompare(b.id));
+    const lead = normalizeLead(payload?.lead, jsonUrl);
+    return lead ? [lead, ...out] : out;
+}
+
+// 一覧の先頭の一行（論点と回答）。形が合わなければ置かない。
+function normalizeLead(entry, jsonUrl) {
+    const file = hasText(entry?.file) ? entry.file.trim() : '';
+    if (!LEAD_FILE.test(file) || !hasText(entry?.name_ja)) return null;
+    let mdUrl = '';
+    try {
+        mdUrl = new URL(file, jsonUrl).toString();
+    } catch {
+        return null;
+    }
+    return {
+        id: '',
+        kind: 'lead',
+        mdUrl,
+        reviewed: hasText(entry?.updated) ? entry.updated.trim() : '',
+        name: { ja: entry.name_ja.trim(), en: hasText(entry?.name_en) ? entry.name_en.trim() : entry.name_ja.trim() },
+        summary: {
+            ja: hasText(entry?.summary_ja) ? entry.summary_ja.trim() : '',
+            en: hasText(entry?.summary_en) ? entry.summary_en.trim() : '',
+        },
+    };
 }
 
 // 一覧の一行ずつの文。言語で題と説明を選ぶ。英語の表示では、記録が日本語であることを添える。
@@ -55,12 +85,13 @@ export function reviewedRecordItems(areas = [], lang = 'ja') {
     const l = normalizeLang(lang);
     const s = STRINGS[l] || STRINGS.ja;
     return areas.map((area) => ({
+        kind: area.kind || 'area',
         mdUrl: area.mdUrl,
         title: `${area.name[l] || area.name.ja}${s.inJapanese}`,
         modalTitle: area.name[l] || area.name.ja,
         summary: area.summary[l] || '',
         date: area.reviewed,
-        dateLabel: area.reviewed ? `${s.reviewed} ${area.reviewed}` : '',
+        dateLabel: area.reviewed ? `${area.kind === 'lead' ? s.updated : s.reviewed} ${area.reviewed}` : '',
     }));
 }
 
@@ -87,7 +118,7 @@ export function renderReviewedRecords(container, areas, { lang = 'ja', onOpen } 
     list.className = 'reviewed-records-list';
     for (const item of items) {
         const li = doc.createElement('li');
-        li.className = 'reviewed-records-item';
+        li.className = item.kind === 'lead' ? 'reviewed-records-item reviewed-records-item--lead' : 'reviewed-records-item';
         const link = doc.createElement('a');
         link.className = 'reviewed-records-link';
         link.href = item.mdUrl;

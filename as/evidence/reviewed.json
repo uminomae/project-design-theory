@@ -1,6 +1,14 @@
 {
-  "note": "意識とはの文献レビュー（#95）で、原典から照合し直した領域の記録。as のトップに一覧で出し、押すと記録を開く。済んだ領域を一行ずつ足す。足したら、as/llms.txt の記録の一覧と、as/index.html の noscript の一覧にも一行足す。name と summary は画面に出す文で、領域の記号を入れない。点検は scripts/check-as-evidence.mjs。",
-  "updated": "2026-11-11",
+  "note": "意識とはの文献レビュー（#95）で、原典から照合し直した領域の記録。as のトップに一覧で出し、押すと記録を開く。済んだ領域を一行ずつ足す。一覧の先頭には、lead に書いた論点と回答の文書（answers.md）を置く（書きかけで、工事中の所もそのまま見せる。2026-11-12・docs/as-review/loop2.md の判断 3）。足したら、as/llms.txt の記録の一覧と、as/index.html の noscript の一覧にも一行足す。name と summary は画面に出す文で、領域の記号を入れない。点検は scripts/check-as-evidence.mjs。",
+  "updated": "2026-11-12",
+  "lead": {
+    "file": "answers.md",
+    "updated": "2026-11-11",
+    "name_ja": "論点と回答：既存の知見はどう言っているか",
+    "name_en": "Questions and answers: what existing research says",
+    "summary_ja": "このページの問いごとに、下の記録の研究がどう言っているかを並べた文書。答えの書けていない所は、工事中のまま置いています",
+    "summary_en": "For each question on this page, how the research in the records below speaks to it. Parts not yet answered are left marked as under construction"
+  },
   "areas": [
     {
       "id": "A01",

@@ -60,10 +60,33 @@ test('item text never shows the area code', () => {
 test('the published reviewed.json lists records that exist', () => {
     const payload = JSON.parse(fs.readFileSync(new URL('../evidence/reviewed.json', import.meta.url), 'utf8'));
     const areas = normalizeReviewedAreas(payload, JSON_URL);
-    assert.equal(areas.length, payload.areas.length);
+    assert.equal(areas.filter((a) => a.kind === 'area').length, payload.areas.length);
     for (const a of payload.areas) {
         assert.ok(fs.existsSync(new URL(`../evidence/${a.file}`, import.meta.url)), a.file);
     }
+});
+
+test('the published reviewed.json puts the questions-and-answers document first', () => {
+    const payload = JSON.parse(fs.readFileSync(new URL('../evidence/reviewed.json', import.meta.url), 'utf8'));
+    const [first] = normalizeReviewedAreas(payload, JSON_URL);
+    assert.equal(first.kind, 'lead');
+    assert.equal(first.mdUrl, `${BASE}evidence/answers.md`);
+    assert.ok(fs.existsSync(new URL('../evidence/answers.md', import.meta.url)));
+});
+
+test('the lead row comes first, is labelled as updated, and only accepts answers.md', () => {
+    const areas = normalizeReviewedAreas({
+        lead: { file: 'answers.md', updated: '2026-11-11', name_ja: '論点と回答', name_en: 'Questions and answers', summary_ja: '説明', summary_en: 'summary' },
+        areas: [{ id: 'A01', file: 'evidence-A01-x.md', reviewed: '2026-11-09', name_ja: '神経現象学の方法' }],
+    }, JSON_URL);
+    assert.deepEqual(areas.map((a) => a.kind), ['lead', 'area']);
+    const [ja] = reviewedRecordItems(areas, 'ja');
+    assert.equal(ja.dateLabel, '更新 2026-11-11');
+    const [en] = reviewedRecordItems(areas, 'en');
+    assert.equal(en.title, 'Questions and answers (in Japanese)');
+    assert.equal(en.dateLabel, 'updated 2026-11-11');
+    const bad = normalizeReviewedAreas({ lead: { file: '../secret.md', name_ja: 'a' }, areas: [] }, JSON_URL);
+    assert.equal(bad.length, 0);
 });
 
 test('loadReviewedAreas resolves records next to reviewed.json', async () => {

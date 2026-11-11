@@ -660,3 +660,5 @@ html[lang="en"] #taglines {
   overflow-wrap: anywhere;
 }
 .reviewed-records { margin: 0 0 1rem; }
+/* 先頭の論点と回答（2026-11-12・#95）。記録の束の入口なので、枠を少し太くする */
+.reviewed-records-item--lead { border-width: 2px; }

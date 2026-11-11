@@ -14,6 +14,7 @@
 // 見るもの（2026-11-10・#95 の A01 のあとに作った）：
 //  1. as/evidence/reviewed.json（画面に出す記録の一覧）の各行：id の形、file が実在して id と合う、reviewed が日付、
 //     画面に出す名前（name_ja・name_en）と一行の説明（summary_ja・summary_en）がある。
+//     先頭の lead（論点と回答の文書）があれば、file が answers.md で実在し、updated が日付で、名前と説明がある（2026-11-12）。
 //  2. frontmatter：file_id（EV-Axx）・area_id（ファイル名と同じ）・title・last_updated（日付）・status。
 //  3. 冒頭に文責が Claude であること。「## 探し方」「## 一面の表」「## 論ごとの節」があること。
 //  4. 一面の表：見出しに 論・何を見たか・型と厚み・批判・似ている体験・食い違う体験・照合の状態 があり、
@@ -296,6 +297,16 @@ function checkReviewed(recordFiles) {
   try { payload = JSON.parse(fs.readFileSync(REVIEWED, 'utf8')); } catch (e) { err(REVIEWED, `JSON が読めない（${e.message}）`); return; }
   const areas = Array.isArray(payload.areas) ? payload.areas : null;
   if (!areas) { err(REVIEWED, 'areas の配列が無い'); return; }
+  if (payload.lead !== undefined) {
+    const l = payload.lead || {};
+    if (l.file !== 'answers.md') err(REVIEWED, `lead の file が answers.md でない（${l.file}）`);
+    else if (!fs.existsSync(path.join(EVIDENCE_DIR, l.file))) err(REVIEWED, 'lead の file が無い（answers.md）');
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(l.updated || '')) err(REVIEWED, `lead の updated が日付でない（${l.updated}）`);
+    for (const k of ['name_ja', 'name_en', 'summary_ja', 'summary_en']) {
+      if (typeof l[k] !== 'string' || !l[k].trim()) err(REVIEWED, `lead に ${k} が無い`);
+      else if (/(?<![A-Za-z0-9])A\d\d(?![0-9])/.test(l[k])) err(REVIEWED, `lead の ${k} に領域の記号がある`);
+    }
+  }
   const seen = new Set();
   for (const a of areas) {
     if (!/^A\d\d$/.test(a.id || '')) { err(REVIEWED, `id の形が違う（${a.id}）`); continue; }

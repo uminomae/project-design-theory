@@ -40,6 +40,7 @@ The site is written with AI assistance and may contain errors. pjdhiro's own wor
 ## Site Structure
 
 - `index.html` — Main entry point with visualization (the list of records is rendered by JS)
+- `evidence/answers.md` — Questions and answers: for each question on the top page, how the research in the records speaks to it (in Japanese; a draft, with unanswered parts marked as under construction)
 - `evidence/evidence-*.md` — Records checked against the original sources (listed below)
 - `evidence/reviewed.json` — The list of those records shown on the top page
 - `knowledge/raw/manifest.md` — Ledger of the original sources (bibliography and how each was obtained; PDFs are not published)
@@ -49,6 +50,7 @@ The site is written with AI assistance and may contain errors. pjdhiro's own wor
 
 Research that bears on consciousness and awareness is re-examined area by area by going back to the original papers. Each record sets out what each study established and what it did not, where it was read, and the verification status of each source. The records are in Japanese and are written by Claude (AI); they may contain errors. The top page lists them under "調べてきたこと" (What has been explored).
 
+- [論点と回答：既存の知見はどう言っているか / Questions and answers: what existing research says](https://uminomae.github.io/project-design-theory/as/evidence/answers.md) — For each question on the top page, how the research in the records below speaks to it. A draft; parts not yet answered are left marked as under construction
 - [神経現象学の方法 / Methods of neurophenomenology](https://uminomae.github.io/project-design-theory/as/evidence/evidence-A01-neurophenomenology-method.md) — How descriptions of experience are gathered and set against neural measures, and how far those descriptions can be trusted
 - [予測と気づき / Prediction and awareness](https://uminomae.github.io/project-design-theory/as/evidence/evidence-A02-prediction-and-awareness.md) — How prediction and prediction error relate to what reaches consciousness, and whether predictive processing is a theory of consciousness
 - [自己と境界 / Self and its boundaries](https://uminomae.github.io/project-design-theory/as/evidence/evidence-A03-self-and-boundary.md) — How watching one's own mind and the thinning of the sense of self have been described and measured in metacognition and meditation research
