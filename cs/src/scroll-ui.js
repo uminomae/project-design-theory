@@ -21,7 +21,6 @@ let _controlGuide;
 let _scrollHintBottom;
 let _scrollHintTop;
 let _surfaceBtn;
-let _articlesSection;
 let _graphicSwitcher;
 
 // --- T-014: クリーンアップ ---
@@ -38,7 +37,6 @@ export function initScrollUI() {
     _scrollHintBottom = document.getElementById('scroll-hint');
     _scrollHintTop = document.getElementById('scroll-hint-top');
     _surfaceBtn = document.getElementById('surface-btn');
-    _articlesSection = document.getElementById('articles-section');
     _graphicSwitcher = document.getElementById('graphic-switcher');
 
     // 浮上ボタン: クリックでページ最上部へ
@@ -131,42 +129,6 @@ export function updateScrollUI(scrollProg, breathVal) {
         _surfaceBtn.style.opacity = showSurface ? '1' : '0';
         _surfaceBtn.style.pointerEvents = showSurface ? 'auto' : 'none';
     }
-
-    updateArticlesFocusability(scrollProg);
-}
-
-function updateArticlesFocusability(scrollProg) {
-    if (!_articlesSection) return;
-
-    const rect = _articlesSection.getBoundingClientRect();
-    const windowH = window.innerHeight || document.documentElement.clientHeight;
-    const isNearViewport = rect.top <= windowH * 0.9;
-    const shouldEnable = scrollProg > 0.22 || isNearViewport;
-
-    const focusables = _articlesSection.querySelectorAll('a[href], button:not([disabled]), [tabindex]');
-
-    focusables.forEach((el) => {
-        if (!(el instanceof HTMLElement)) return;
-
-        if (shouldEnable) {
-            const prev = el.dataset.kessonPrevTabindex;
-            if (prev === undefined) return;
-            if (prev === '__none__') {
-                el.removeAttribute('tabindex');
-            } else {
-                el.setAttribute('tabindex', prev);
-            }
-            delete el.dataset.kessonPrevTabindex;
-            return;
-        }
-
-        if (el.dataset.kessonPrevTabindex === undefined) {
-            el.dataset.kessonPrevTabindex = el.hasAttribute('tabindex')
-                ? (el.getAttribute('tabindex') || '__none__')
-                : '__none__';
-        }
-        el.setAttribute('tabindex', '-1');
-    });
 }
 
 /**

@@ -1,5 +1,8 @@
 # SVG 生成ルール — 図解スタイルガイド (cs#136)
 
+> 2026-11-12（#134）：下の URL の `{今までの公開の置き場}` は、pjdhiro のサイト（`uminomae.github.io/pjdhiro`）だった。pjdhiro の repo とサイトは使わないことになったので、リンクを外した。この手順の昔の版の記録として残す。
+
+
 公開用 MD の内容を図解する SVG を生成する際のルール。
 SVG は公開用 `.md` と同じ言語単位（`ja` / `en`）で生成し、同じ `.md` から modal / PDF / EN版で共用する。
 
@@ -120,21 +123,21 @@ MD ファイルから SVG を参照する際の標準記法:
 ### ドメイン report (`assets/creation/domains/{lang}/md/*.md`) に埋め込む場合
 
 ```markdown
-\![{タイトル}の構造図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/{lang}/domain-D{NN}-{name}.svg)
+\![{タイトル}の構造図]({今までの公開の置き場}/assets/creation/img/svg/domains/{lang}/domain-D{NN}-{name}.svg)
 ```
 
 ### ドメイン presentation (`assets/creation/domains/{lang}/presentations/md/*.md`) に埋め込む場合
 
 ```html
 <div align="center">
-  <img src="https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/{lang}/domain-D{NN}-{name}.svg" alt="{タイトル}の構造図" width="700">
+  <img src="{今までの公開の置き場}/assets/creation/img/svg/domains/{lang}/domain-D{NN}-{name}.svg" alt="{タイトル}の構造図" width="700">
 </div>
 ```
 
 ### テーマ図の参照
 
 ```markdown
-\![{テーマ名}の分析図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/themes/{lang}/theme-{slug}.svg)
+\![{テーマ名}の分析図]({今までの公開の置き場}/assets/creation/img/svg/themes/{lang}/theme-{slug}.svg)
 ```
 
 ## 7. 品質チェック項目

@@ -20,7 +20,7 @@ description: 創造とは（cs）の全体レビューで、一つの分野（D0
 
 ## 一つの分野の順番
 
-1. **頼む**：`docs/cs-review/prompts.md` の「1. 内容の照合」を、分野の番号・slug・作業場所（W）・領域ごとの注意で埋め、エージェントに頼む（モデルは既定に任せる。pjdhiro 2026-11-11）。報告が引く理論ごとに、台帳にある原典か、無ければ OA の当たり（著者の論文版・PMC・archive.org）を頼む文に書くと、探す時間が減る。slug は `ls ~/dev/pd/pjdhiro/assets/creation/domains/ja/md/` で確かめる。論は、すでに集めた原典（台帳・手元の PDF・精読ノート）をベースにする。読める原典が 10 に届かない分野（README「調査の手順」の表）は、さらに探すよう頼む文に書く。
+1. **頼む**：`docs/cs-review/prompts.md` の「1. 内容の照合」を、分野の番号・slug・作業場所（W）・領域ごとの注意で埋め、エージェントに頼む（モデルは既定に任せる。pjdhiro 2026-11-11）。報告が引く理論ごとに、台帳にある原典か、無ければ OA の当たり（著者の論文版・PMC・archive.org）を頼む文に書くと、探す時間が減る。slug は `cs/evidence/reviewed.json` のその分野の行の `slug` で確かめる（pjdhiro の repo は使わない。2026-11-12・#134）。論は、すでに集めた原典（台帳・手元の PDF・精読ノート）をベースにする。読める原典が 10 に届かない分野（README「調査の手順」の表）は、さらに探すよう頼む文に書く。
    - 原典を探す手順は、スキル `find-source`（`.claude/skills/find-source/SKILL.md`）と `docs/rules/sources.md` §5 で固定する。エージェントへの指示（道具の呼び方・台帳と止まるホストの一覧の場所・取った PDF の置き場）は、雛形の本文に入れてある。ここに同じ文を置かない（2026-11-10。スキルと雛形で、書いてよい場所が食い違っていた）。書いてよい場所の決まりの正は、スキル `find-source`「書いてよい場所」。Bash の allowed_domains はそのスキルの「始める前に」の並び。見つけたものを分野の論として足すかは README「調査の手順」1 の目安のまま。
    - 頼む文に書く書誌（DOI・題・巻号）は、Crossref で照らしてから雛形の「候補」の節に書く（型 H）。
    - 分野を始める前に、司令塔が `bash scripts/find-source.sh batch --manifest cs/knowledge/raw/manifest.md --status blocked-access,citation-only --domain-id Dxx --note-urls --out <本体の .cache/raw/ の下> --ledger …` を裏で流しておくと、頼む文に書く「OA の当たり」が先にそろう（2026-11-09）。

@@ -1,5 +1,8 @@
 # 変換ルール: 「創造とは」（M2コンテンツ）
 
+> 2026-11-12（#134）：下の URL の `{今までの公開の置き場}` は、pjdhiro のサイト（`uminomae.github.io/pjdhiro`）だった。pjdhiro の repo とサイトは使わないことになったので、リンクを外した。この手順の昔の版の記録として残す。
+
+
 **対象コンテンツ**: M2スピノル5段階（場→波→縁→渦→束）  
 **ソース正本**: `knowledge/schema/ (旧: knowledge/schema/)`（未移植）  
 **関連issue**: 旧 private repo #5（TASK#30）/ techo #2  
@@ -114,8 +117,8 @@ tags:
   - 欠損駆動思考
   - スピノル
 header:
-  og_image: "https://uminomae.github.io/pjdhiro/assets/images/blog/YYYY-M/MMDD/teaser.png"
-  teaser: "https://uminomae.github.io/pjdhiro/assets/images/blog/YYYY-M/MMDD/teaser.png"
+  og_image: "{今までの公開の置き場}/assets/images/blog/YYYY-M/MMDD/teaser.png"
+  teaser: "{今までの公開の置き場}/assets/images/blog/YYYY-M/MMDD/teaser.png"
 excerpt: "場・波・縁・渦・束——生成プロセスの5段階。創造を観測・診断可能にする地図。"
 toc: true
 toc_sticky: true

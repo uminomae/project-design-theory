@@ -1,0 +1,46 @@
+{
+  "version": "2.0",
+  "generated_at": "2026-03-20",
+  "namespace": "creation",
+  "guides": [
+    {
+      "id": "general",
+      "title_ja": "一般向け",
+      "title_en": "General",
+      "md": {
+        "ja": "guides/ja/md/creation-general.md",
+        "en": "guides/en/md/creation-general.md"
+      },
+      "pdf": {
+        "ja": "guides/ja/pdf/creation-general.pdf",
+        "en": "guides/en/pdf/creation-general.pdf"
+      }
+    },
+    {
+      "id": "designer",
+      "title_ja": "設計者向け",
+      "title_en": "Designer",
+      "md": {
+        "ja": "guides/ja/md/creation-designer.md",
+        "en": "guides/en/md/creation-designer.md"
+      },
+      "pdf": {
+        "ja": "guides/ja/pdf/creation-designer.pdf",
+        "en": "guides/en/pdf/creation-designer.pdf"
+      }
+    },
+    {
+      "id": "academic",
+      "title_ja": "専門家向け",
+      "title_en": "Academic",
+      "md": {
+        "ja": "guides/ja/md/creation-academic.md",
+        "en": "guides/en/md/creation-academic.md"
+      },
+      "pdf": {
+        "ja": "guides/ja/pdf/creation-academic.pdf",
+        "en": "guides/en/pdf/creation-academic.pdf"
+      }
+    }
+  ]
+}

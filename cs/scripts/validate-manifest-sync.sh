@@ -13,13 +13,10 @@ done
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 CS_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
-. "${CS_DIR}/../scripts/pjdhiro-dir.sh"
-PJDHIRO_DIR="$(find_pjdhiro_dir "$CS_DIR" assets/creation)"
 PD_DIR="${CS_DIR}/../pd"
 
 INDEX_JSON="${CS_DIR}/transform/domains/publish/domains/index.json"
 DATA_JS="${CS_DIR}/src/reports/data.js"
-DOMAINS_JSON="${PJDHIRO_DIR}/assets/creation/manifests/domains.json"
 CS_SOURCE_NOTE_ROOT="${CS_DIR}/knowledge/source-notes"
 MANIFEST="${CS_DIR}/knowledge/raw/manifest.md"
 
@@ -80,38 +77,7 @@ else
     warnings=$((warnings + 1))
 fi
 
-# --- Check 1: domains.json vs index.json — progress_level と generated の一致 ---
-echo ""
-echo "[1] domains.json vs index.json: progress_level / generated 一致チェック"
-if [[ -f "$DOMAINS_JSON" && -f "$INDEX_JSON" ]]; then
-    python3 -c "
-import json, sys
-with open('${DOMAINS_JSON}') as f: dj = json.load(f)
-with open('${INDEX_JSON}') as f: ij = json.load(f)
-dj_map = {r['id']: r for r in dj.get('reports', [])}
-ij_map = {r['id']: r for r in ij.get('reports', [])}
-mismatches = 0
-for did in sorted(dj_map):
-    d = dj_map[did]
-    i = ij_map.get(did, {})
-    dp = d.get('progress_level', '')
-    ip = i.get('progress_level', '')
-    if dp != ip:
-        print(f'  MISMATCH {did}: domains.json={dp}, index.json={ip}')
-        mismatches += 1
-    dg = d.get('generated', '')
-    ig = i.get('generated', '')
-    if dg and ig and dg != ig:
-        print(f'  MISMATCH {did} generated: domains.json={dg}, index.json={ig}')
-        mismatches += 1
-if mismatches == 0:
-    print('  OK — 全ドメイン一致')
-sys.exit(1 if mismatches > 0 else 0)
-" || errors=$((errors + 1))
-else
-    echo "  SKIP — ファイルが見つからない (pjdhiro が必要)"
-    warnings=$((warnings + 1))
-fi
+# Check 1（pjdhiro の repo の domains.json と index.json の一致）は、pjdhiro の repo を使わないので外した（#134・2026-11-12）。
 
 # --- Check 6: cs source-note >=5 本 / domain (cs#227, cs#228 で命名変更) ---
 echo ""

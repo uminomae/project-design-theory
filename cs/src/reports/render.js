@@ -1,14 +1,10 @@
 import { normalizeLang } from '../i18n.js';
 import { dict } from '../i18n/dict.js';
 import {
-    MODEL_GUIDE_LINKS,
-    STATUS_REPORT_LINKS,
-    SURVEY_MANIFEST_URL,
     formatReportsScenarioFallbackLabel,
     getDefaultProgressTaxonomyEntry,
     hasText,
     normalizeProgressLevelId,
-    resolveLocalizedSources,
 } from './data.js';
 import { DOMAIN_HISTORY_MODE_PUSH } from './history.js';
 import { observeGridItems } from '../reveal-observer.js';
@@ -100,11 +96,9 @@ export function createReportsRenderer({
 
     function cacheDom() {
         state.dom.error = document.getElementById('reports-error');
-        state.dom.openStatusBtn = document.getElementById('reports-open-status-btn');
         state.dom.domainsHeading = document.getElementById('reports-domains-heading');
         state.dom.scenarioNote = document.getElementById('reports-scenario-note');
         state.dom.levelLegend = document.getElementById('reports-level-legend');
-        state.dom.featureCards = document.getElementById('reports-feature-cards');
         state.dom.metrics = document.getElementById('reports-metrics');
         state.dom.domainGrid = document.getElementById('reports-domain-grid');
         state.dom.filterGroup = document.getElementById('reports-table-filters');
@@ -180,66 +174,8 @@ export function createReportsRenderer({
         renderLevelLegend();
 
         if (state.dom.filterGroup) state.dom.filterGroup.setAttribute('aria-label', strings.filterGroupAria);
-        if (state.dom.openStatusBtn) state.dom.openStatusBtn.textContent = strings.openStatus;
 
         updateFilterButtons();
-    }
-
-    function renderFeatureCards() {
-        if (!state.dom.featureCards) return;
-
-        const strings = getReportsStrings(state.config.lang);
-        state.dom.featureCards.innerHTML = '';
-
-        const fragment = document.createDocumentFragment();
-        MODEL_GUIDE_LINKS.forEach((guide) => {
-            const featureText = strings.features[guide.key];
-            if (!featureText) return;
-
-            const col = document.createElement('div');
-            col.className = 'col';
-
-            const card = document.createElement('article');
-            card.className = 'card kesson-card h-100 reports-feature-card';
-            card.setAttribute('role', 'button');
-            card.setAttribute('tabindex', '0');
-            card.setAttribute('aria-label', `${featureText.title} ${strings.featureRead}`);
-
-            const body = document.createElement('div');
-            body.className = 'card-body p-2 p-md-3 d-flex flex-column gap-1';
-
-            const title = document.createElement('h3');
-            title.className = 'h6 mb-1 text-light';
-            title.textContent = featureText.title;
-
-            const desc = document.createElement('p');
-            desc.className = 'small mb-0 reports-feature-description';
-            desc.textContent = featureText.description;
-
-            const openCardModal = () => {
-                openMarkdownModal({
-                    title: featureText.modalTitle || featureText.title,
-                    sources: resolveLocalizedSources(guide.links, state.config.lang),
-                    modalContext: { type: 'guide', guideKey: guide.key, historyMode: 'push' },
-                });
-            };
-
-            body.appendChild(title);
-            body.appendChild(desc);
-            card.appendChild(body);
-            card.addEventListener('click', openCardModal);
-            card.addEventListener('keydown', (event) => {
-                if (event.key === 'Enter' || event.key === ' ') {
-                    event.preventDefault();
-                    openCardModal();
-                }
-            });
-
-            col.appendChild(card);
-            fragment.appendChild(col);
-        });
-
-        state.dom.featureCards.appendChild(fragment);
     }
 
     function createMetricCard(label, value, { paletteClass = '' } = {}) {
@@ -399,30 +335,6 @@ export function createReportsRenderer({
     function bindUiEvents() {
         if (state.ui.quickLinksBound) return;
 
-        if (state.dom.openStatusBtn && !state.dom.openStatusBtn.dataset.boundClick) {
-            state.dom.openStatusBtn.addEventListener('click', async () => {
-                const strings = getReportsStrings(state.config.lang);
-                let surveyGenerated = '';
-                try {
-                    const resp = await fetch(SURVEY_MANIFEST_URL, { cache: 'no-store' });
-                    if (resp.ok) {
-                        const manifest = await resp.json();
-                        surveyGenerated = manifest.generated_at || '';
-                    }
-                } catch { /* use empty fallback */ }
-                const enrichedLinks = {
-                    ja: { ...STATUS_REPORT_LINKS.ja, generated: surveyGenerated },
-                    en: { ...STATUS_REPORT_LINKS.en, generated: surveyGenerated },
-                };
-                openMarkdownModal({
-                    title: strings.statusReportTitle,
-                    sources: resolveLocalizedSources(enrichedLinks, state.config.lang),
-                    modalContext: { type: 'generic', modalKey: 'status', historyMode: 'push' },
-                });
-            });
-            state.dom.openStatusBtn.dataset.boundClick = '1';
-        }
-
         if (state.dom.mdOpenPdf && !state.dom.mdOpenPdf.dataset.boundClick) {
             state.dom.mdOpenPdf.addEventListener('click', (event) => {
                 if (state.dom.mdOpenPdf?.classList.contains('disabled')) {
@@ -533,7 +445,6 @@ export function createReportsRenderer({
 
     function renderReports() {
         applyStaticText();
-        renderFeatureCards();
         // renderMetrics(); // 調査内容以外のメトリクスカードは不要。安定したら削除する
         renderDomainGrid();
         refreshHoverGridLanguage();
