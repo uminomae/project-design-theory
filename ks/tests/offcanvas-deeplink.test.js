@@ -72,8 +72,8 @@ withLocation({ search: '?open=devlog' }, () => {
 withLocation({ search: '?open=articles' }, () => {
   resetIntentCache();
   const intent = getDeepLinkIntent();
-  assert(intent.openPanel === 'articles', 'open=articles -> articles panel');
-  assert(intent.scrollTarget === 'articles-readmore', 'open=articles -> default articles-readmore');
+  assert(intent.openPanel === null, 'open=articles -> no panel (articles section removed, #134)');
+  assert(intent.scrollTarget === null, 'open=articles -> no scroll target');
 });
 
 section('2. explicit scroll parameter parsing');
@@ -85,11 +85,11 @@ withLocation({ search: '?open=devlog&scroll=devlog-heading' }, () => {
   assert(intent.scrollTarget === 'devlog-heading', 'explicit scroll overrides default readmore target');
 });
 
-withLocation({ search: '?scroll=articles-heading' }, () => {
+withLocation({ search: '?scroll=devlog-heading' }, () => {
   resetIntentCache();
   const intent = getDeepLinkIntent();
   assert(intent.openPanel === null, 'scroll only does not force open panel');
-  assert(getRequestedScrollTarget() === 'articles-heading', 'getRequestedScrollTarget returns parsed scroll target');
+  assert(getRequestedScrollTarget() === 'devlog-heading', 'getRequestedScrollTarget returns parsed scroll target');
   assert(hasDeepLinkIntent() === true, 'scroll-only link still counts as deep-link intent');
 });
 
@@ -118,13 +118,13 @@ withLocation({ search: '?open= DEVLOGS , ignored-token ' }, () => {
   assert(first.openPanel === 'devlog', 'comma-separated and case-insensitive open tokens are normalized');
 
   // キャッシュされた値が返ることを確認
-  window.location.search = '?open=articles';
+  window.location.search = '';
   const cached = getDeepLinkIntent();
   assert(cached.openPanel === 'devlog', 'intent is cached per page lifecycle until cache reset');
 
   resetIntentCache();
   const refreshed = getDeepLinkIntent();
-  assert(refreshed.openPanel === 'articles', 'cache reset re-parses latest location');
+  assert(refreshed.openPanel === null, 'cache reset re-parses latest location');
 });
 
 console.log('\n══════════════════════════════');

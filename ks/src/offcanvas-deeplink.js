@@ -2,22 +2,12 @@ const OPEN_QUERY_KEY = 'open';
 const SCROLL_QUERY_KEY = 'scroll';
 
 const PANEL_BY_TOKEN = {
-    articles: 'articles',
-    article: 'articles',
-    readmore: 'articles',
-    articlesoffcanvas: 'articles',
     devlog: 'devlog',
     devlogs: 'devlog',
     devlogoffcanvas: 'devlog',
 };
 
 const SCROLL_TARGET_BY_TOKEN = {
-    articles: 'articles-heading',
-    'articles-section': 'articles-heading',
-    'articles-heading': 'articles-heading',
-    article: 'articles-heading',
-    readmore: 'articles-readmore',
-    'articles-readmore': 'articles-readmore',
     devlog: 'devlog-heading',
     'devlog-gallery-section': 'devlog-heading',
     'devlog-heading': 'devlog-heading',
@@ -65,7 +55,6 @@ function resolveScrollTarget(tokens) {
 }
 
 function deriveDefaultScrollTargetFromPanel(panel) {
-    if (panel === 'articles') return 'articles-readmore';
     if (panel === 'devlog') return 'devlog-readmore';
     return null;
 }

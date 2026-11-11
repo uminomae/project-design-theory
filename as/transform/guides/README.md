@@ -1,5 +1,7 @@
 # transform/guides/ — audience別 guide 生成ワークフロー
 
+> 2026-11-12：pjdhiro の repo へ出す道具（`transform/scripts/` の PDF・トピック・画像カードの道具）と、そこから読む画面の配線は外した（Issue #134）。昔の版は `as/archive/` にしまってある。ここから下は当時の運用の記録で、今の手順ではない。
+
 ## 5W1H
 
 - **What**: 意識モデルの guide 類を audience 別に生成する workflow。

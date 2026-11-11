@@ -5,7 +5,6 @@ import { DEVLOG_RETURN_TTL_MS } from './devlog-model.js';
 
 const DEVLOG_RETURN_STATE_KEY = 'kesson.devlog.return-state.v1';
 const DEVLOG_RETURN_INTENT_KEY = 'kesson.devlog.return-intent.v1';
-const ARTICLES_READY_EVENT = 'kesson:articles-ready';
 
 function readSessionJson(key) {
     if (typeof window === 'undefined') return null;
@@ -138,23 +137,4 @@ export function loadPendingReturnState() {
 export function consumeReturnState() {
     removeSessionKey(DEVLOG_RETURN_INTENT_KEY);
     removeSessionKey(DEVLOG_RETURN_STATE_KEY);
-}
-
-export function waitForArticlesReady(timeoutMs = 3000) {
-    if (typeof window === 'undefined') return Promise.resolve();
-    if (window.__kessonArticlesReady === true) return Promise.resolve();
-
-    return new Promise((resolve) => {
-        let settled = false;
-        const finish = () => {
-            if (settled) return;
-            settled = true;
-            window.removeEventListener(ARTICLES_READY_EVENT, onReady);
-            clearTimeout(timer);
-            resolve();
-        };
-        const onReady = () => finish();
-        const timer = setTimeout(finish, timeoutMs);
-        window.addEventListener(ARTICLES_READY_EVENT, onReady, { once: true });
-    });
 }

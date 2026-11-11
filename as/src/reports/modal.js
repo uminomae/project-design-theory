@@ -9,7 +9,6 @@ import {
     resolveFirstAvailablePdfUrl,
 } from './data.js';
 import { injectWikiLinks, WIKI_INDEX_URL } from '../wiki-links.js';
-import { linkRelatedDocuments } from './related-links.js';
 
 function rewriteRelativeUrls(html, baseUrl) {
     if (!baseUrl) return html;
@@ -25,7 +24,6 @@ function rewriteRelativeUrls(html, baseUrl) {
 export function createReportsModalController({
     state,
     getStrings,
-    setActiveDomainModalState,
 }) {
     let markedParser = null;
 
@@ -131,58 +129,11 @@ export function createReportsModalController({
         setModalWikiButton(wikiUrl);
     }
 
-    function renderModalHtml({ title = '', html = '', metaParts = [], pdfUrl = '', wikiUrl = '', hidePdfButton = true } = {}) {
-        const modal = ensureMdModalInstance();
-        if (!modal) return false;
-
-        setActiveDomainModalState('', '');
-        const requestId = ++state.mdRequestId;
-        setMarkdownModalLoading({ title, pdfUrl, wikiUrl, hidePdfButton });
-        rememberModalOpener();
-        modal.show();
-
-        const safeHtml = DOMPurify.sanitize(injectWikiLinks(html));
-        if (requestId !== state.mdRequestId) return true;
-
-        if (state.dom.mdModalContent) {
-            state.dom.mdModalContent.innerHTML = `
-                <div class="md-article">
-                    <div class="md-body">${safeHtml}</div>
-                </div>
-            `;
-            prepareStackedTables(state.dom.mdModalContent);
-
-            if (!state.dom.mdModalContent.dataset.boundClicks) {
-                state.dom.mdModalContent.addEventListener('click', (event) => {
-                    const link = event.target.closest('.md-body a');
-                    if (!(link instanceof HTMLAnchorElement)) return;
-                    event.preventDefault();
-                    window.open(link.href, '_blank', 'noopener');
-                });
-                state.dom.mdModalContent.dataset.boundClicks = '1';
-            }
-        }
-
-        if (state.dom.mdModalMeta) {
-            state.dom.mdModalMeta.textContent = metaParts.filter(Boolean).join(' / ');
-        }
-
-        setModalPdfButton(pdfUrl, { hideWhenUnavailable: hidePdfButton });
-        setModalWikiButton(wikiUrl);
-        return true;
-    }
-
-    async function openMarkdownModal({ mdUrl, pdfUrl = '', wikiUrl = '', title = '', sources = [], modalContext = null }) {
+    async function openMarkdownModal({ mdUrl, pdfUrl = '', wikiUrl = '', title = '', sources = [] }) {
         const modalSources = normalizeModalSources({ mdUrl, pdfUrl, sources });
         if (!modalSources.length) return;
         const firstSource = modalSources[0];
         const hasAnyPdfSource = modalSources.some((source) => hasText(source?.pdfUrl));
-
-        if (modalContext?.type === 'domain') {
-            setActiveDomainModalState(modalContext.domainId, modalContext.historyMode);
-        } else {
-            setActiveDomainModalState('', '');
-        }
 
         const modal = ensureMdModalInstance();
         if (!modal) {
@@ -224,7 +175,6 @@ export function createReportsModalController({
             const mdBaseUrl = resolvedSource.mdUrl ? resolvedSource.mdUrl.replace(/\/[^/]*$/, '/') : '';
             let parsedHtml = marked.parse(body || raw);
             parsedHtml = rewriteRelativeUrls(parsedHtml, mdBaseUrl);
-            parsedHtml = linkRelatedDocuments(parsedHtml);
             parsedHtml = injectWikiLinks(parsedHtml);
             const html = DOMPurify.sanitize(parsedHtml);
             const availablePdfUrl = await resolveFirstAvailablePdfUrl(modalSources);
@@ -275,7 +225,6 @@ export function createReportsModalController({
     return {
         ensureMdModalInstance,
         isMdModalVisible,
-        renderModalHtml,
         openMarkdownModal,
     };
 }

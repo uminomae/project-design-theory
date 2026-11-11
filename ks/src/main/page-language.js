@@ -63,7 +63,6 @@ export function initLanguageListeners({
     refreshGuideLang = () => {},
     refreshNavLanguage = () => {},
     refreshDevlogLanguage = () => {},
-    refreshArticlesLanguage = () => {},
     refreshGuidesLanguage = () => {},
 } = {}) {
     window.addEventListener(LANG_CHANGE_EVENT, (event) => {
@@ -72,7 +71,6 @@ export function initLanguageListeners({
         refreshGuideLang();
         refreshNavLanguage();
         refreshDevlogLanguage();
-        refreshArticlesLanguage();
         refreshGuidesLanguage();
     });
 }

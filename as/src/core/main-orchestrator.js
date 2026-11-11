@@ -6,12 +6,9 @@ import { createMainDevStatsTicker } from '../dev/main-dev-runtime.js';
 import { prepareMainBootstrap } from './main-bootstrap.js';
 import { initBackgroundModeSwitcher } from '../background-mode.js';
 import { syncControlGuideVisibility } from '../ui/control-guide.js';
-import { initImageCards, setImageCardsLanguage } from '../image-cards.js';
 import { LANG_CHANGE_EVENT } from '../i18n.js';
 import { applyPageLanguage } from '../page-language.js';
 import {
-    bindStandaloneMarkdownLinks,
-    initReports,
     initReviewedRecords,
     setReportsLanguage,
     setReviewedRecordsLanguage,
@@ -146,9 +143,6 @@ export async function runMainOrchestrator({
 
     initAboutModal(initialLang);
     setReportsLanguage(initialLang);
-    initImageCards({ lang: initialLang }).catch((error) => {
-        console.error('[awareness-space] image cards bootstrap failed:', error);
-    });
 
     window.addEventListener(LANG_CHANGE_EVENT, (event) => {
         const lang = event.detail?.lang || initialLang;
@@ -156,7 +150,6 @@ export async function runMainOrchestrator({
         setAboutModalLanguage(lang);
         setReportsLanguage(lang);
         setReviewedRecordsLanguage(lang);
-        setImageCardsLanguage(lang);
     });
 
     bindAppEvents();
@@ -176,11 +169,6 @@ export async function runMainOrchestrator({
         }
     }
 
-    initReports().catch((error) => {
-        console.error('[awareness-space] reports bootstrap failed:', error);
-        throw error;
-    });
-    bindStandaloneMarkdownLinks();
     initReviewedRecords({ lang: initialLang }).catch((error) => {
         console.warn('[awareness-space] reviewed records load failed:', error);
     });

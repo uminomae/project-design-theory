@@ -65,7 +65,6 @@ Three.js による欠損駆動思考の視覚的・体験的表現。概念を�
 
 | 場所 / Where | 概要 / Description |
 |---|---|
-| [pjdhiro](https://github.com/uminomae/pjdhiro) | GitHub Pages ホスティング、ブログ（[欠損駆動思考の記事](https://uminomae.github.io/pjdhiro/thinking-kesson/)） |
 | [creation-space](https://uminomae.github.io/project-design-theory/cs/)（この repo の `cs/`） | 「創造とは」の探索 — 30領域の学術横断調査 |
 | [awareness-space](https://uminomae.github.io/project-design-theory/as/)（この repo の `as/`） | 「意識とは」の探索 — 内受容感覚・予測-誤差ループ・生存-信頼評価・抱持の4層モデル |
 | [project-design](https://uminomae.github.io/project-design-theory/)（この repo の `pd/`） | プロジェクトデザイン論 — Doing と Being を包含する構想・設計・実行 |

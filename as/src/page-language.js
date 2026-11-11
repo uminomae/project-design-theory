@@ -67,7 +67,6 @@ export function applyPageLanguageToDocument(doc, lang) {
     const graphicRaijinButton = doc.querySelector('[data-graphic-mode="raijin"]');
     const reportsAiNotice = doc.getElementById('reports-ai-notice');
     const modelSectionHeading = doc.getElementById('model-section-heading');
-    const notesSectionHeading = doc.getElementById('notes-section-heading');
     const reportsSectionHeading = doc.getElementById('reports-section-heading');
     const aboutTrigger = doc.getElementById('about-trigger');
     const aboutModalTitle = doc.getElementById('about-overlay-title');
@@ -85,7 +84,6 @@ export function applyPageLanguageToDocument(doc, lang) {
     setText(graphicRaijinButton, strings.graphicModeRaijin);
     setText(reportsAiNotice, strings.reportsAiNotice);
     setText(modelSectionHeading, strings.modelSectionHeading);
-    setText(notesSectionHeading, strings.notesSectionHeading);
     setText(aboutModalTitle, aboutStrings.modalTitle);
 
     setAttr(topbar, 'aria-label', strings.topbarNavAria);
@@ -97,7 +95,6 @@ export function applyPageLanguageToDocument(doc, lang) {
     setAttr(topbarCreationLink, 'aria-label', strings.topbarCreationAria);
     setAttr(topbarWikiLink, 'aria-label', strings.topbarWikiAria);
     setAttr(modelSectionHeading, 'aria-label', strings.modelSectionHeadingAria);
-    setAttr(notesSectionHeading, 'aria-label', strings.notesSectionHeadingAria);
     setAttr(reportsSectionHeading, 'aria-label', strings.reportsSectionHeadingAria);
     setAttr(aboutTrigger, 'aria-label', aboutStrings.triggerAria);
     setAttr(aboutClose, 'aria-label', aboutStrings.closeAria);

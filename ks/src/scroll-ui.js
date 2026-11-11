@@ -16,7 +16,6 @@ let _scrollHintTop;
 let _surfaceBtn;
 let _devlogHeader;
 let _devlogSection;
-let _articlesSection;
 
 // --- T-014: クリーンアップ ---
 let _cleanup = null;
@@ -36,7 +35,6 @@ export function initScrollUI() {
     _surfaceBtn = document.getElementById('surface-btn');
     _devlogHeader = document.getElementById('devlog-gallery-header');
     _devlogSection = document.getElementById('devlog-gallery-section');
-    _articlesSection = document.getElementById('articles-section');
 
     if (_devlogHeader) {
         _devlogHeader.classList.remove('is-visible');
@@ -213,7 +211,6 @@ function updateCardFocusabilityByScroll() {
     const isTopOnlyMode = window.scrollY < atTopThresholdPx;
     const enableCardFocus = !isTopOnlyMode;
 
-    syncSectionFocusability(_articlesSection, enableCardFocus);
     syncSectionFocusability(_devlogSection, enableCardFocus);
 }
 

@@ -1,5 +1,7 @@
 # 調査トピックレポート End-to-End ワークフロー v0.4
 
+> 2026-11-12：pjdhiro の repo へ出す道具（`transform/scripts/` の PDF・トピック・画像カードの道具）と、そこから読む画面の配線は外した（Issue #134）。昔の版は `as/archive/` にしまってある。ここから下は当時の運用の記録で、今の手順ではない。
+
 **用途**: 調査トピック report を `evidence` → `transform` → `knowledge` で再生成する。
 **前提**: 対象トピックの evidence が `evidence/` に存在すること。
 **参照**: `transform/PRINCIPLES.md`, `transform/topics/README.md`, `docs/evidence-metadata-awareness.md`

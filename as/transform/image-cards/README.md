@@ -1,5 +1,7 @@
 # transform/image-cards/ — 画像解釈カード workflow
 
+> 2026-11-12：pjdhiro の repo へ出す道具（`transform/scripts/` の PDF・トピック・画像カードの道具）と、そこから読む画面の配線は外した（Issue #134）。昔の版は `as/archive/` にしまってある。ここから下は当時の運用の記録で、今の手順ではない。
+
 ## 5W1H
 
 - **What**: `pjdhiro/assets/awareness/image-cards/items/` に置いた画像を、解釈コメント付きカードとして公開する workflow。

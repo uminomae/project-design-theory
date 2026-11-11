@@ -33,7 +33,6 @@ function createMockDocument() {
         ['graphic-switcher', new MockElement()],
         ['reports-ai-notice', new MockElement()],
         ['model-section-heading', new MockElement()],
-        ['notes-section-heading', new MockElement()],
         ['about-trigger', new MockElement()],
         ['about-overlay-title', new MockElement()],
         ['about-close', new MockElement()],
@@ -107,8 +106,6 @@ test('applyPageLanguageToDocument updates page chrome in english', () => {
     assert.equal(doc.nodes['lang-toggle'].attributes['aria-label'], 'Switch language to Japanese');
     assert.equal(doc.nodes.translatedNode.textContent, 'What do we cut the world with?');
     assert.equal(doc.nodes.attrNode.attributes['aria-label'], 'Switch background graphics');
-    assert.equal(doc.nodes['notes-section-heading'].textContent, 'Notes from divergent thinking');
-    assert.equal(doc.nodes['notes-section-heading'].attributes['aria-label'], 'Jump to the Notes from divergent thinking section');
     assert.equal(doc.nodes['about-trigger'].attributes['aria-label'], 'About this page');
     assert.equal(doc.nodes['about-overlay-title'].textContent, 'About this page');
     assert.equal(doc.nodes['about-close'].attributes['aria-label'], 'Close');

@@ -1,0 +1,12 @@
+{
+  "title_ja": "意",
+  "title_en": "Intent",
+  "comment_ja": "身体の揺らぎからゲート、意、意味生成、価値整形、決定、思へ至る流れを一枚で図解した画像です。",
+  "comment_en": "A diagram that maps the flow from bodily fluctuation through gate, intent, meaning generation, value shaping, decision, and thought in a single image.",
+  "alt_ja": "身体から思までの処理連鎖を段階的に示した模式図",
+  "alt_en": "A schematic diagram showing the processing chain from body to thought in staged steps",
+  "source_url": "",
+  "generated": "2026-03-21",
+  "generator_model": "codex:auto-ingest",
+  "sort_order": 9007199254740991
+}

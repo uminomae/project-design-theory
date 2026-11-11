@@ -1,5 +1,7 @@
 # pjdhiro JSON API 技術検証レポート
 
+> 2026-11-12：ここに書いた道具（`scripts/build-guide-pdf.sh`・`scripts/articles-en-*`）と、入口の記事の段（ARTICLES）は外した。pjdhiro の repo とサイトを使わないことにしたため（Issue #134）。旧ガイドは `ks/archive/guides/` にある。ここから下は当時の運用の記録で、今の手順ではない。
+
 **調査日**: 2026-02-16  
 **調査方法**: ChatGPT (GPT) に技術質問 → DT + Claude (書類管理) で吟味  
 **ステータス**: ✅ 技術的に可能。実装方式確定。
@@ -45,7 +47,7 @@ pjdhiro (Jekyll + Minimal Mistakes + GitHub Pages) から、特定タグ/カテ�
 ### 2-3. 公開 URL
 
 ```
-https://uminomae.github.io/pjdhiro/api/kesson-articles.json
+pjdhiro のサイトの `api/kesson-articles.json`（リンクは外した・#134）
 ```
 
 ---
@@ -190,7 +192,7 @@ pjdhiro に配置する前に確認すべき項目（ChatGPT 回答 + Claude 吟
 
 ### デプロイ後
 
-- [ ] `https://uminomae.github.io/pjdhiro/api/kesson-articles.json` にアクセスして JSON が返るか
+- [ ] pjdhiro のサイトの `api/kesson-articles.json`（リンクは外した・#134） にアクセスして JSON が返るか
 - [ ] JSON が valid か（ブラウザコンソールで `JSON.parse()` してエラーが出ないか）
 - [ ] `teaser` が正しい絶対 URL になっているか
 - [ ] pages の `date` が null でソート順がおかしくないか

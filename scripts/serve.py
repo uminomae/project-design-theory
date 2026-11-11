@@ -4,7 +4,6 @@
   /            → pd/（サイトのファイル）
   /wiki/       → pd/wiki-out/（Quartz の出力。scripts/serve.sh が作る）
   /as/ /ks/ /cs/ → as/・ks/・cs/
-  /__pjdhiro/assets/awareness/ → pjdhiro repo の assets/awareness（as/ の画像カードが使う）
 
 公開の URL の頭（/project-design-theory/）が付いていても同じものを返す。
 キャッシュはさせない。拡張子の無い URL は .html を補う（GitHub Pages と同じ）。
@@ -17,25 +16,8 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 SITE_PREFIX = "/project-design-theory"
-PJDHIRO_PREFIX = "/__pjdhiro/assets/awareness"
-AWARENESS_SUBPATH = Path("assets") / "awareness"
-
-
-def find_pjdhiro_awareness():
-    """PJDHIRO_DIR があればそれを、無ければ repo から上へ順に pjdhiro/ を探す（worktree の中からでも見つかるように）。"""
-    env = os.environ.get("PJDHIRO_DIR")
-    candidates = [Path(env).expanduser()] if env else [p / "pjdhiro" for p in REPO.parents]
-    for candidate in candidates:
-        if (candidate / AWARENESS_SUBPATH).is_dir():
-            return (candidate / AWARENESS_SUBPATH).resolve()
-    return None
-
-
-PJDHIRO_AWARENESS = find_pjdhiro_awareness()
-
 # 長い頭から順に照らす。
 MOUNTS = [
-    (PJDHIRO_PREFIX, PJDHIRO_AWARENESS),
     ("/wiki", REPO / "pd" / "wiki-out"),
     ("/as", REPO / "as"),
     ("/ks", REPO / "ks"),
@@ -51,8 +33,6 @@ def resolve(request_path):
     for prefix, root in MOUNTS:
         if prefix and not (request_path == prefix or request_path.startswith(prefix + "/")):
             continue
-        if root is None:
-            return None
         root = root.resolve()
         relative = request_path[len(prefix):].lstrip("/")
         candidate = (root / relative).resolve()
@@ -85,10 +65,6 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 def main():
     port = int(sys.argv[1]) if len(sys.argv) > 1 else int(os.environ.get("PORT", "3001"))
     print(f"repo: {REPO}", flush=True)
-    if PJDHIRO_AWARENESS:
-        print(f"pjdhiro: {PJDHIRO_AWARENESS}", flush=True)
-    else:
-        print("pjdhiro: assets/awareness が見つからない（PJDHIRO_DIR で指定できる）。/__pjdhiro/ は 404 になる", flush=True)
     server = http.server.ThreadingHTTPServer(("", port), Handler)
     print(f"http://localhost:{port}/  （/as/ /ks/ /cs/ /wiki/）", flush=True)
     try:

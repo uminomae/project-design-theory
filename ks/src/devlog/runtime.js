@@ -23,7 +23,6 @@ import {
     isReturnStateEligible,
     loadPendingReturnState,
     persistReturnState,
-    waitForArticlesReady,
 } from './devlog-return-state.js';
 import {
     buildGallery,
@@ -411,7 +410,7 @@ function runPendingReturnFlow(pendingState) {
 
         // IMPORTANT: window scroll must have one owner (scroll-coordinator).
         requestScroll(pendingState.pageScrollY, 'devlog-return:page', {
-            waitFor: Promise.all([devlogReadyPromise, waitForArticlesReady()]),
+            waitFor: devlogReadyPromise,
             behavior: 'auto',
             priority: SCROLL_PRIORITY.RETURN_RESTORE,
         });

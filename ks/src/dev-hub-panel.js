@@ -17,11 +17,6 @@ const SECTION_LINKS = [
         href: '#guides-section',
     },
     {
-        id: 'dev-hub-jump-articles',
-        label: 'ARTICLES section',
-        href: '#articles-section',
-    },
-    {
         id: 'dev-hub-jump-devlog',
         label: 'DEVLOG section',
         href: '#devlog-gallery-section',

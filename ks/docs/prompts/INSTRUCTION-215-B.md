@@ -130,7 +130,7 @@ The definition "an attitude of picking up discarded errors as questions" is unch
 `llms-full.txt`: `## Core Concepts (Detailed)` 内、`### Kesson-Driven Thinking (欠損駆動思考)` の節（Key characteristics の箇条書きまで）の**直後**に、同じ節を入れる。末尾に次の 1 行を足す:
 
 ```markdown
-Sources (pjdhiro, 2025-06): https://uminomae.github.io/pjdhiro/20250612WoodWideWeb/ , https://uminomae.github.io/pjdhiro/20250612sqrtEmpathy/ , https://uminomae.github.io/pjdhiro/20250616baToMinwa/
+Sources (pjdhiro, 2025-06): three posts on pjdhiro's blog — WoodWideWeb (2025-06-12), sqrtEmpathy (2025-06-15), baToMinwa (2025-06-16) (links removed, #134)
 ```
 
 （`llms*.txt` は AI 向けファイルで、既に URL を含む。ここだけ URL 可。）

@@ -49,7 +49,6 @@ Exploring "What is consciousness?" through the Survival-Trust Axis hypothesis. I
 
 | 場所 / Where | 概要 / Description |
 |---|---|
-| [pjdhiro](https://github.com/uminomae/pjdhiro) | GitHub Pages ホスティング、ブログ |
 | [creation-space](https://uminomae.github.io/project-design-theory/cs/)（この repo の `cs/`） | 「創造とは」の探索 — 30領域の学術横断調査 |
 | [kesson-space](https://uminomae.github.io/project-design-theory/ks/)（この repo の `ks/`） | 欠損駆動思考の3D体験空間 |
 | [project-design](https://uminomae.github.io/project-design-theory/)（この repo の `pd/`） | プロジェクトデザイン論 — Doing と Being を包含する構想・設計・実行 |

@@ -16,9 +16,9 @@ test('control-guide markup keeps an explanatory comment for hidden state', () =>
     assert.match(indexHtml, /control-guide は camera 操作がある背景用の説明枠/);
 });
 
-test('image cards section exists in model area', () => {
-    assert.match(indexHtml, /id="image-card-grid"/);
-    assert.match(indexHtml, /id="image-card-grid" class="row row-cols-1 row-cols-md-3 g-3 card-container"/);
+test('index does not read the old image cards or the other repo', () => {
+    assert.doesNotMatch(indexHtml, /id="image-card-grid"/);
+    assert.doesNotMatch(indexHtml, /uminomae\.github\.io\/pjdhiro/);
 });
 
 test('topbar includes creation (cs) navigation link', () => {

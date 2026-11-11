@@ -50,9 +50,9 @@ ls pjdhiro/_posts/2025/2025-06/ | grep -E '06-1[256]'   # 原典 3 本が読め�
 
 | 日付 | ファイル | 公開 URL |
 |---|---|---|
-| 2025-06-12 | `pjdhiro/_posts/2025/2025-06/2025-06-12-WoodWideWeb.md` | https://uminomae.github.io/pjdhiro/20250612WoodWideWeb/ |
-| 2025-06-15 | `pjdhiro/_posts/2025/2025-06/2025-06-15-sqrtEmpathy.md` | https://uminomae.github.io/pjdhiro/20250612sqrtEmpathy/ （permalink はこの綴り。日付は 06-15） |
-| 2025-06-16 | `pjdhiro/_posts/2025/2025-06/2025-06-16-baToMinwa.md` | https://uminomae.github.io/pjdhiro/20250616baToMinwa/ |
+| 2025-06-12 | `pjdhiro/_posts/2025/2025-06/2025-06-12-WoodWideWeb.md` | pjdhiro のブログの記事（リンクは外した・#134） |
+| 2025-06-15 | `pjdhiro/_posts/2025/2025-06/2025-06-15-sqrtEmpathy.md` | pjdhiro のブログの記事（リンクは外した・#134） |
+| 2025-06-16 | `pjdhiro/_posts/2025/2025-06/2025-06-16-baToMinwa.md` | pjdhiro のブログの記事（リンクは外した・#134） |
 | 2026-11-01 | `pd/reader/gravity-love.html` の 5章（L247〜300 付近。「pjdhiro の定義：欠損駆動思考とは、違う言い方をすれば、虚軸に値があって、しかも、認知上は 0 の直観です。」は L264） | — |
 
 既存の書式見本: `knowledge/expressions/core/E04.md`（表現）、`knowledge/concepts/CN-002_f-axis-exposure.md`（概念ノート）、`knowledge/text/foundation/phase1-summary.md`（本文）。各 index のテンプレート節も従う。

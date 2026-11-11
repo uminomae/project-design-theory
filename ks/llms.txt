@@ -53,7 +53,6 @@ The lack eventually becomes a problem to solve. pjdhiro sees vision, design, and
 
 | Project | URL | Focus |
 |---------|-----|-------|
-| pjdhiro | https://uminomae.github.io/pjdhiro/ | Project Design Hub (parent site) |
 | プロジェクトデザイン論 / Project Design Theory | https://uminomae.github.io/project-design-theory/ | The reading on Love-Driven Development and its parts |
 | 創造とは / What Is Creation | https://uminomae.github.io/project-design-theory/cs/ | What structure and process does something follow when it comes into being? An exploration that sets theories from 30 fields side by side and writes them in five stages (Field → Wave → Edge → Vortex → Bundle) |
 | 意識とは / What Is Consciousness | https://uminomae.github.io/project-design-theory/as/ | What do people cut the world with? An exploration through two signals: whether we can survive, and whether we can stay connected (trust) |
@@ -61,5 +60,4 @@ The lack eventually becomes a problem to solve. pjdhiro sees vision, design, and
 ## Author
 
 - Name: pjdhiro
-- Site: https://uminomae.github.io/pjdhiro/
 - Focus: Project Design, Kesson-Driven Thinking, Human-AI Collaboration

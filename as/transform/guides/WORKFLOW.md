@@ -1,5 +1,7 @@
 # Guides End-to-End ワークフロー
 
+> 2026-11-12：pjdhiro の repo へ出す道具（`transform/scripts/` の PDF・トピック・画像カードの道具）と、そこから読む画面の配線は外した（Issue #134）。昔の版は `as/archive/` にしまってある。ここから下は当時の運用の記録で、今の手順ではない。
+
 **用途**: 3 audience の awareness guide を生成し、PDF と manifest を更新して公開配置へ揃える  
 **入力**: guide reader-rules、関連 report / survey / design memo  
 **出力**: 3 audience x 2 languages の public Markdown / PDF と `guides.json`

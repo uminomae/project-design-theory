@@ -1,5 +1,7 @@
 # SVG 生成ルール — awareness topics
 
+> 2026-11-12：pjdhiro の repo へ出す道具（`transform/scripts/` の PDF・トピック・画像カードの道具）と、そこから読む画面の配線は外した（Issue #134）。昔の版は `as/archive/` にしまってある。ここから下は当時の運用の記録で、今の手順ではない。
+
 `awareness-space` の topics report に添える overview SVG を生成する際の最小ルール。
 初期導入では `1 topic = 1 SVG` を原則とし、まず `survival-trust-axis` と `four-layers` を対象にする。
 
@@ -42,7 +44,7 @@ Markdown 例:
 ```markdown
 ## 1. この文書の目的と問い
 
-![生存-信頼軸の概要図](https://uminomae.github.io/pjdhiro/assets/awareness/img/svg/topics/ja/survival-trust-axis-01-overview-svg.svg)
+![生存-信頼軸の概要図](../../archive/img/svg/topics/ja/survival-trust-axis-01-overview-svg.svg)
 ```
 
 ## 5. 品質ゲート

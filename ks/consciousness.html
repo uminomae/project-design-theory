@@ -66,9 +66,7 @@
       <div class="topbar-brand-wrap">
         <a id="topbar-main-title"
            class="navbar-brand topbar-main-title"
-           href="https://uminomae.github.io/pjdhiro/thinking-kesson/"
-           target="_blank"
-           rel="noopener">
+           href="./">
           意識の構造
         </a>
         <span id="topbar-subtitle" class="topbar-subtitle">Consciousness Prototype</span>
@@ -87,15 +85,6 @@
         <ul class="navbar-nav align-items-md-center gap-md-1">
           <li class="nav-item">
             <a class="nav-link topbar-link" href="#">HOME</a>
-          </li>
-          <li class="nav-item">
-            <button type="button"
-                    class="nav-link topbar-link topbar-link-btn"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#articlesOffcanvas"
-                    aria-controls="articlesOffcanvas">
-              ARTICLES
-            </button>
           </li>
           <li class="nav-item">
             <button type="button"
@@ -168,24 +157,6 @@
   <!-- Articles出現タイミング調整スペーサー -->
   <div id="articles-spacer"></div>
 
-  <!-- Articles Section -->
-  <section id="articles-section">
-    <div class="section-content-wrap">
-      <div class="container">
-        <h2 class="section-heading">
-          <a
-            href="#articles-section"
-            class="section-heading-link"
-            aria-label="ARTICLES セクションへジャンプ">
-            ARTICLES
-          </a>
-        </h2>
-        <div id="articles-error" class="d-none"></div>
-        <div id="articles-grid" class="row g-3"></div>
-      </div>
-    </div>
-  </section>
-
   <!-- Devlog Gallery Section（テキストログ削除、すぐギャラリー） -->
   <section id="devlog-gallery-section">
     <div class="section-content-wrap">
@@ -240,29 +211,6 @@
           <div id="detail-content" class="session-content"></div>
         </div>
       </div>
-    </div>
-  </div>
-
-  <!-- Articles Offcanvas -->
-  <div class="offcanvas offcanvas-end offcanvas-kesson"
-       tabindex="-1"
-       id="articlesOffcanvas"
-       data-bs-backdrop="true">
-    <div class="offcanvas-header border-bottom border-secondary">
-      <div>
-        <h5 class="text-light mb-0 offcanvas-title-spaced">ARTICLES</h5>
-        <small class="text-muted" id="offcanvas-articles-count"></small>
-      </div>
-      <button type="button" class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body p-3">
-      <div id="articles-filter-group" class="articles-filter-group mb-3" role="group" aria-label="Filter articles by type">
-        <button type="button" class="articles-filter-btn is-active" data-type="all" aria-pressed="true">All</button>
-        <button type="button" class="articles-filter-btn" data-type="page" aria-pressed="false">Page</button>
-        <button type="button" class="articles-filter-btn" data-type="post" aria-pressed="false">Post</button>
-      </div>
-      <div id="offcanvas-articles-grid" class="row g-3"></div>
     </div>
   </div>
 

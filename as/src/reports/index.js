@@ -1,269 +1,61 @@
-import {
-    DEFAULT_PROGRESS_TAXONOMY,
-    DEFAULT_REPORTS_ASSET_BASE,
-    DEFAULT_REPORTS_DATA_URL,
-    loadReportsData,
-    normalizeAssetBaseUrl,
-    normalizeDomainId,
-    normalizeLang,
-    resolveDomainReportSources,
-} from './data.js';
-import {
-    createReportsHistoryController,
-    DOMAIN_HISTORY_MODE_INITIAL,
-    DOMAIN_HISTORY_MODE_PUSH,
-} from './history.js';
+import { normalizeLang } from './data.js';
 import { createReportsModalController } from './modal.js';
-import { createReportsRenderer, getDomainReportTitle, getReportsStrings } from './render.js';
-import { findWikiUrlByText } from '../wiki-links.js';
+import { getReportsStrings } from './strings.js';
 import { loadReviewedAreas, renderReviewedRecords } from './reviewed-records.js';
 
-function resolveReportWikiUrl(report) {
-    if (!report) return '';
-    const haystack = [report.nameJa, report.nameEn, report.summaryJa, report.summaryEn]
-        .filter(Boolean)
-        .join(' ');
-    return findWikiUrlByText(haystack) || '';
-}
-
-const OLD_REPORTS_ARCHIVED = true;
+// 照合し直した記録（as/evidence/reviewed.json）の一覧と、記録を開くモーダル。
+// 旧「調査の現在地」・読者別の解説・分野の報告とスライド・画像カードは、別の公開 repo から読み込んでいたので、
+// 2026-11-12 に配線ごと外した（Issue #134）。昔の版は as/archive/ にしまってある。
 
 const state = {
     lang: 'ja',
-    generatedAt: '',
-    reports: [],
-    progressTaxonomy: DEFAULT_PROGRESS_TAXONOMY.map((entry) => ({ ...entry })),
-    progressLevelCounts: {},
-    tableFilter: 'all',
-    loadError: false,
-    dataUrl: DEFAULT_REPORTS_DATA_URL,
-    assetBaseUrl: DEFAULT_REPORTS_ASSET_BASE,
     mdModalInstance: null,
     mdRequestId: 0,
-    quickLinksBound: false,
-    reportsReady: false,
-    activeDomainId: '',
-    activeDomainHistoryMode: '',
-    pendingDomainId: '',
-    pendingDomainHistoryMode: '',
-    _isHistorySyncing: false,
-    historyEventsBound: false,
     dom: {
-        featureCards: null,
-        error: null,
-        openStatusBtn: null,
-        topicsHeading: null,
-        scopeNote: null,
-        levelLegend: null,
-        metrics: null,
-        domainGrid: null,
-        filterGroup: null,
         mdModal: null,
         mdModalTitle: null,
         mdModalMeta: null,
         mdModalContent: null,
         mdOpenPdf: null,
-        openWikiBtn: null,
         mdOpenWiki: null,
     },
 };
 
-let historyController;
-let openDomainModalByIdImpl = () => false;
-
 const modalController = createReportsModalController({
     state,
     getStrings: getReportsStrings,
-    setActiveDomainModalState: (...args) => historyController?.setActiveDomainModalState(...args),
 });
 
-const renderer = createReportsRenderer({
-    state,
-    openMarkdownModal: (...args) => modalController.openMarkdownModal(...args),
-    openDomainModalById: (...args) => openDomainModalByIdImpl(...args),
-    getReportSources: (report) => resolveDomainReportSources(report, {
-        lang: state.lang,
-        assetBaseUrl: state.assetBaseUrl,
-    }),
-    wrapSlideOpen: () => null,
-});
+function ensureModalDomCached() {
+    if (state.dom.mdModal) return;
+    state.dom.mdModal = document.getElementById('reports-md-modal');
+    state.dom.mdModalTitle = document.getElementById('reports-md-modal-title');
+    state.dom.mdModalMeta = document.getElementById('reports-md-meta');
+    state.dom.mdModalContent = document.getElementById('reports-md-content');
+    state.dom.mdOpenPdf = document.getElementById('reports-md-open-pdf');
+    state.dom.mdOpenWiki = document.getElementById('reports-md-open-wiki');
 
-historyController = createReportsHistoryController({
-    state,
-    ensureMdModalInstance: () => modalController.ensureMdModalInstance(),
-    isMdModalVisible: () => modalController.isMdModalVisible(),
-    openDomainModalById: (...args) => openDomainModalByIdImpl(...args),
-});
-
-function ensureReportsDomCached() {
-    if (!state.dom.mdModal) {
-        renderer.cacheDom();
-    }
-}
-
-function findReportById(domainId) {
-    const normalizedId = normalizeDomainId(domainId);
-    if (!normalizedId) return null;
-    return state.reports.find((report) => normalizeDomainId(report?.id) === normalizedId) || null;
-}
-
-openDomainModalByIdImpl = function openDomainModalById(
-    domainId,
-    {
-        historyMode = DOMAIN_HISTORY_MODE_PUSH,
-        syncUrl = 'push',
-    } = {},
-) {
-    const normalizedId = normalizeDomainId(domainId);
-    const report = findReportById(normalizedId);
-    if (!report) return false;
-
-    const sources = resolveDomainReportSources(report, {
-        lang: state.lang,
-        assetBaseUrl: state.assetBaseUrl,
-    });
-    if (!sources.length) return false;
-
-    let resolvedHistoryMode = historyMode === DOMAIN_HISTORY_MODE_INITIAL
-        ? DOMAIN_HISTORY_MODE_INITIAL
-        : DOMAIN_HISTORY_MODE_PUSH;
-
-    if (syncUrl === 'push') {
-        const currentDomainId = historyController.getDomainIdFromUrl();
-        const currentHistoryMode = historyController.getDomainHistoryMarker(window.history?.state, currentDomainId)?.mode;
-        if (currentDomainId !== normalizedId || currentHistoryMode !== DOMAIN_HISTORY_MODE_PUSH) {
-            const didPush = historyController.updateDomainHistoryEntry(normalizedId, {
-                method: 'push',
-                mode: DOMAIN_HISTORY_MODE_PUSH,
-            });
-            if (!didPush) {
-                historyController.updateDomainHistoryEntry(normalizedId, {
-                    method: 'replace',
-                    mode: DOMAIN_HISTORY_MODE_INITIAL,
-                });
-                resolvedHistoryMode = DOMAIN_HISTORY_MODE_INITIAL;
+    if (state.dom.mdOpenPdf && !state.dom.mdOpenPdf.dataset.boundClick) {
+        state.dom.mdOpenPdf.addEventListener('click', (event) => {
+            if (state.dom.mdOpenPdf.classList.contains('disabled')) {
+                event.preventDefault();
             }
-        }
-    } else if (syncUrl === 'replace') {
-        historyController.updateDomainHistoryEntry(normalizedId, {
-            method: 'replace',
-            mode: resolvedHistoryMode,
         });
+        state.dom.mdOpenPdf.dataset.boundClick = '1';
     }
+}
 
-    modalController.openMarkdownModal({
-        title: getDomainReportTitle(report, state.lang),
-        sources,
-        wikiUrl: resolveReportWikiUrl(report),
-        modalContext: {
-            type: 'domain',
-            domainId: normalizedId,
-            historyMode: resolvedHistoryMode,
-        },
-    });
-    return true;
-};
-
-export async function initReports({
-    lang = document.documentElement.lang || 'ja',
-    dataUrl = DEFAULT_REPORTS_DATA_URL,
-    assetBaseUrl = DEFAULT_REPORTS_ASSET_BASE,
-} = {}) {
-    ensureReportsDomCached();
-    renderer.bindUiEvents();
-    historyController.bindHistorySyncEvents();
-
-    state.lang = normalizeLang(lang);
-    state.dataUrl = dataUrl;
-    state.assetBaseUrl = normalizeAssetBaseUrl(assetBaseUrl);
-    state.generatedAt = '';
-    state.reports = [];
-    state.progressTaxonomy = DEFAULT_PROGRESS_TAXONOMY.map((entry) => ({ ...entry }));
-    state.progressLevelCounts = {};
-    state.tableFilter = 'all';
-    state.loadError = false;
-    state.reportsReady = false;
-
-    renderer.renderReports();
-
-    // 旧トピック（pjdhiro の repo の目録）は読み込まない。照合し直す前の版だったので、2026-11-10 に
-    // 読者別の解説・旧「調査の現在地」と一緒に画面から外した（Issue #111）。照合し直した記録は
-    // reviewed-records.js が as/evidence/reviewed.json から描く。
-    if (OLD_REPORTS_ARCHIVED) return;
-
-    try {
-        const loaded = await loadReportsData({
-            dataUrl: state.dataUrl,
-            assetBaseUrl: state.assetBaseUrl,
-        });
-        state.generatedAt = loaded.generatedAt;
-        state.reports = loaded.reports;
-        state.progressTaxonomy = loaded.progressTaxonomy;
-        state.progressLevelCounts = loaded.progressLevelCounts;
-        state.loadError = false;
-        state.reportsReady = true;
-    } catch (error) {
-        state.reports = [];
-        state.progressTaxonomy = DEFAULT_PROGRESS_TAXONOMY.map((entry) => ({ ...entry }));
-        state.progressLevelCounts = {};
-        state.loadError = true;
-        state.reportsReady = false;
-        console.warn('[awareness-space][reports] load failed:', error);
-    }
-
-    renderer.renderReports();
-
-    if (!state.loadError) {
-        historyController.syncDomainModalWithUrl({
-            historyState: window.history?.state,
-            fallbackHistoryMode: state.pendingDomainHistoryMode,
-            treatAsInitial: !state.pendingDomainHistoryMode && Boolean(historyController.getDomainIdFromUrl()),
-        });
-    }
+function applyModalStaticText() {
+    if (!state.dom.mdOpenWiki) return;
+    const strings = getReportsStrings(state.lang);
+    state.dom.mdOpenWiki.textContent = strings.modalOpenWiki;
+    state.dom.mdOpenWiki.setAttribute('aria-label', strings.modalOpenWikiAria);
 }
 
 export function setReportsLanguage(lang) {
     state.lang = normalizeLang(lang);
-    renderer.renderReports();
-}
-
-export function openReportsHtmlModal({ title = '', html = '', metaParts = [], pdfUrl = '', hidePdfButton = true } = {}) {
-    ensureReportsDomCached();
-    return modalController.renderModalHtml({
-        title,
-        html,
-        metaParts,
-        pdfUrl,
-        hidePdfButton,
-    });
-}
-
-function getDatasetTitle(node, lang = 'ja') {
-    if (!(node instanceof HTMLElement)) return '';
-    const normalizedLang = normalizeLang(lang);
-    if (normalizedLang === 'en') {
-        return node.dataset.mdTitleEn || node.dataset.mdTitle || '';
-    }
-    return node.dataset.mdTitleJa || node.dataset.mdTitle || '';
-}
-
-export function bindStandaloneMarkdownLinks(selector = '[data-md-modal="1"]') {
-    document.querySelectorAll(selector).forEach((node) => {
-        if (!(node instanceof HTMLAnchorElement) || node.dataset.mdModalBound === '1') return;
-
-        node.addEventListener('click', (event) => {
-            const mdUrl = node.dataset.mdUrl || node.getAttribute('href') || '';
-            if (!mdUrl) return;
-            event.preventDefault();
-            modalController.openMarkdownModal({
-                title: getDatasetTitle(node, state.lang),
-                mdUrl,
-                pdfUrl: node.dataset.pdfUrl || '',
-            });
-        });
-
-        node.dataset.mdModalBound = '1';
-    });
+    ensureModalDomCached();
+    applyModalStaticText();
 }
 
 // 文献レビューで照合し直した記録の一覧（reviewed-records.js）。置き場は data-reviewed-records を持つ要素。
@@ -275,7 +67,7 @@ function renderAllReviewedRecords() {
         renderReviewedRecords(container, reviewedState.areas, {
             lang: reviewedState.lang,
             onOpen: ({ mdUrl, title }) => {
-                ensureReportsDomCached();
+                ensureModalDomCached();
                 modalController.openMarkdownModal({ mdUrl, title });
             },
         });

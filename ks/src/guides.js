@@ -6,66 +6,9 @@ function normalizeLang(lang) {
     return lang === 'en' ? 'en' : 'ja';
 }
 
-const PJDHIRO_PAGES_BASE = 'https://uminomae.github.io/pjdhiro';
-const PJDHIRO_RAW_BASE = 'https://raw.githubusercontent.com/uminomae/pjdhiro/main';
-const KESSON_PATH = '/assets/kesson';
-const PJDHIRO_KESSON_PAGES = `${PJDHIRO_PAGES_BASE}${KESSON_PATH}`;
-const PJDHIRO_KESSON_RAW = `${PJDHIRO_RAW_BASE}${KESSON_PATH}`;
-
-const GUIDE_LINKS = [
-    {
-        key: 'general',
-        links: {
-            ja: {
-                mdUrl: `${PJDHIRO_KESSON_RAW}/guides/ja/md/kesson-general.md`,
-                pdfUrl: `${PJDHIRO_KESSON_PAGES}/guides/ja/pdf/kesson-general.pdf`,
-            },
-            en: {
-                mdUrl: `${PJDHIRO_KESSON_RAW}/guides/en/md/kesson-general.md`,
-                pdfUrl: `${PJDHIRO_KESSON_PAGES}/guides/en/pdf/kesson-general.pdf`,
-            },
-        },
-    },
-    {
-        key: 'designer',
-        links: {
-            ja: {
-                mdUrl: `${PJDHIRO_KESSON_RAW}/guides/ja/md/kesson-designer.md`,
-                pdfUrl: `${PJDHIRO_KESSON_PAGES}/guides/ja/pdf/kesson-designer.pdf`,
-            },
-            en: {
-                mdUrl: `${PJDHIRO_KESSON_RAW}/guides/en/md/kesson-designer.md`,
-                pdfUrl: `${PJDHIRO_KESSON_PAGES}/guides/en/pdf/kesson-designer.pdf`,
-            },
-        },
-    },
-    {
-        key: 'academic',
-        links: {
-            ja: {
-                mdUrl: `${PJDHIRO_KESSON_RAW}/guides/ja/md/kesson-academic.md`,
-                // CHANGED(2026-11-07): #220 — 草案 v0.4 で PDF を再生成したので準備中を解除（手順 docs/guides-pdf.md）
-                pdfUrl: `${PJDHIRO_KESSON_PAGES}/guides/ja/pdf/kesson-academic.pdf`,
-            },
-            en: {
-                mdUrl: `${PJDHIRO_KESSON_RAW}/guides/en/md/kesson-academic.md`,
-                pdfUrl: `${PJDHIRO_KESSON_PAGES}/guides/en/pdf/kesson-academic.pdf`,
-            },
-        },
-    },
-];
-
-// CHANGED(2026-03-25): #146 — External project links
-const EXTERNAL_LINKS = [
-    {
-        key: 'creation',
-        url: 'https://uminomae.github.io/project-design-theory/cs/',
-    },
-    {
-        key: 'awareness',
-        url: 'https://uminomae.github.io/project-design-theory/as/',
-    },
-];
+// 読者別の旧ガイド三本（一般向け・設計者向け・学術版）の md と PDF は、pjdhiro の repo から読んでいた。
+// 2026-11-10 に読み込みをやめ（Issue #111）、2026-11-12 に行き先ごと外した（Issue #134）。昔の版は ks/archive/guides/ にある。
+// 残すのは、論の下書きを公開ページと同じ見え方で確かめる配線（?guide=<名前>&draft-md=<repo 内の .md>・#216）だけ。
 
 const STRINGS = {
     ja: {
@@ -93,20 +36,6 @@ const STRINGS = {
                 description: '論の本文（草案）。見えないものをゼロとする認知と抱持、意識、実存主義と思考方法の三つの視点で書く。', // CHANGED(2026-11-05): #216
             },
         },
-        featureRead: '解説を表示',
-        featurePdf: 'PDF',
-        // CHANGED(2026-03-25): #168 — External link card strings
-        externalLinks: {
-            creation: {
-                title: '創造とは', // CHANGED(2026-03-25)
-                description: '創造のモデルに対する調査の記録です。', // CHANGED(2026-03-25)
-            },
-            awareness: {
-                title: '意識の構造分析',
-                description: '意識と無意識の関係を構造的に分析した記録です。',
-            },
-        },
-        externalOpen: '開く',
     },
     en: {
         modalLoading: 'Loading markdown...',
@@ -133,20 +62,6 @@ const STRINGS = {
                 description: 'Theory comparison and verification-oriented guide.',
             },
         },
-        featureRead: 'Open Guide',
-        featurePdf: 'PDF',
-        // CHANGED(2026-03-25): #168 — External link card strings
-        externalLinks: {
-            creation: {
-                title: 'What Is Creation', // CHANGED(2026-03-25)
-                description: 'Records of research into models of creation.', // CHANGED(2026-03-25)
-            },
-            awareness: {
-                title: 'Structural Analysis of Consciousness',
-                description: 'Records of structural analysis on the relationship between consciousness and the unconscious.',
-            },
-        },
-        externalOpen: 'Open',
     },
 };
 
@@ -158,14 +73,12 @@ const state = {
     mdRequestId: 0,
     markdownCache: new Map(),
     dom: {
-        featureCards: null,
         mdModal: null,
         mdModalTitle: null,
         mdModalMeta: null,
         mdModalContent: null,
         mdOpenPdf: null,
         mdCloseBtn: null,
-        externalLinks: null, // CHANGED(2026-03-25): #146
     },
 };
 
@@ -223,27 +136,7 @@ function normalizePdfBrowserUrl(rawUrl) {
 
 function buildMarkdownFetchCandidates(rawUrl) {
     if (typeof rawUrl !== 'string' || !rawUrl.trim()) return [];
-
-    const trimmed = rawUrl.trim();
-    const candidates = [trimmed];
-
-    if (!/\.md(?:$|[?#])/i.test(trimmed)) {
-        return candidates;
-    }
-
-    try {
-        const parsed = new URL(trimmed);
-        const pathParts = parsed.pathname.split('/').filter(Boolean);
-        const assetsIndex = pathParts.findIndex((part) => part === 'assets');
-        if (parsed.hostname !== 'raw.githubusercontent.com' && assetsIndex >= 0) {
-            const filePath = pathParts.slice(assetsIndex).join('/');
-            candidates.push(`${PJDHIRO_RAW_BASE}/${filePath}`);
-        }
-    } catch {
-        // Keep primary URL only when parsing fails.
-    }
-
-    return [...new Set(candidates)];
+    return [rawUrl.trim()];
 }
 
 async function fetchMarkdownText(mdUrl) {
@@ -263,14 +156,12 @@ async function fetchMarkdownText(mdUrl) {
 }
 
 function cacheDom() {
-    state.dom.featureCards = document.getElementById('guides-feature-cards');
     state.dom.mdModal = document.getElementById('guides-md-modal');
     state.dom.mdModalTitle = document.getElementById('guides-md-modal-title');
     state.dom.mdModalMeta = document.getElementById('guides-md-meta');
     state.dom.mdModalContent = document.getElementById('guides-md-content');
     state.dom.mdOpenPdf = document.getElementById('guides-md-open-pdf');
     state.dom.mdCloseBtn = document.getElementById('guides-md-close-btn');
-    state.dom.externalLinks = document.getElementById('guides-external-links'); // CHANGED(2026-03-25): #146
 }
 
 function ensureMdModalInstance() {
@@ -381,152 +272,7 @@ async function openMarkdownModal({ mdUrl, title = '', pdfUrl = '', cacheKey = ''
     }
 }
 
-function renderFeatureCards() {
-    if (!state.dom.featureCards) return;
-
-    const strings = getStrings(state.lang);
-    state.dom.featureCards.innerHTML = '';
-
-    // CHANGED(2026-03-25): #161 — Overview slide card (separate row above guide cards)
-    const overviewRow = document.getElementById('guides-overview-row');
-    if (overviewRow) {
-        overviewRow.innerHTML = '';
-        const overviewCard = document.createElement('article');
-        overviewCard.className = 'card kesson-card overview-slide-card';
-        overviewCard.id = 'slide-test-btn';
-        overviewCard.setAttribute('role', 'button');
-        overviewCard.setAttribute('tabindex', '0');
-        overviewCard.setAttribute('aria-label', 'Overview スライドを表示');
-
-        const overviewThumb = document.createElement('div');
-        overviewThumb.className = 'overview-card-thumb';
-        const overviewThumbText = document.createElement('span');
-        overviewThumbText.className = 'overview-card-thumb-text';
-        overviewThumbText.textContent = 'Overview';
-        overviewThumb.appendChild(overviewThumbText);
-
-        const overviewBody = document.createElement('div');
-        overviewBody.className = 'card-body p-2 p-md-3 d-flex flex-column gap-1';
-        const overviewTitle = document.createElement('h3');
-        overviewTitle.className = 'card-title mb-1';
-        overviewTitle.innerHTML = '全体像 <span class="overview-card-badge">test</span>';
-        const overviewDesc = document.createElement('p');
-        overviewDesc.className = 'card-text';
-        overviewDesc.textContent = '欠損駆動思考の全体像をスライドで概観する。';
-        overviewBody.appendChild(overviewTitle);
-        overviewBody.appendChild(overviewDesc);
-
-        overviewCard.appendChild(overviewThumb);
-        overviewCard.appendChild(overviewBody);
-        overviewRow.appendChild(overviewCard);
-    }
-
-    const fragment = document.createDocumentFragment();
-    GUIDE_LINKS.forEach((guide) => {
-        const featureText = strings.features[guide.key];
-        if (!featureText) return;
-
-        const lang = normalizeLang(state.lang);
-        const langLinks = guide.links[lang] || guide.links.ja;
-
-        const col = document.createElement('div');
-        col.className = 'col';
-
-        const card = document.createElement('article');
-        card.className = 'card kesson-card h-100 reports-feature-card';
-        card.setAttribute('role', 'button');
-        card.setAttribute('tabindex', '0');
-        card.setAttribute('aria-label', `${featureText.title} ${strings.featureRead}`);
-
-        const body = document.createElement('div');
-        body.className = 'card-body p-2 p-md-3 d-flex flex-column gap-1';
-
-        const title = document.createElement('h3');
-        // CHANGED(2026-03-07): #116 Bug #6 — ARTICLES カードと同じ card-title スタイルに統一
-        title.className = 'card-title mb-1';
-        title.textContent = featureText.title;
-
-        const desc = document.createElement('p');
-        desc.className = 'card-text';
-        desc.textContent = featureText.description;
-        body.appendChild(title);
-        body.appendChild(desc);
-        card.appendChild(body);
-
-        const openCardModal = () => {
-            openMarkdownModal({
-                mdUrl: langLinks.mdUrl,
-                title: featureText.modalTitle || featureText.title,
-                pdfUrl: langLinks.pdfUrl,
-                cacheKey: `${guide.key}:${lang}`,
-            });
-        };
-        card.addEventListener('click', openCardModal);
-        card.addEventListener('keydown', (event) => {
-            if (event.key === 'Enter' || event.key === ' ') {
-                event.preventDefault();
-                openCardModal();
-            }
-        });
-
-        col.appendChild(card);
-        fragment.appendChild(col);
-    });
-
-    state.dom.featureCards.appendChild(fragment);
-}
-
-// CHANGED(2026-03-25): #146 — Render external project link cards
-function renderExternalLinks() {
-    if (!state.dom.externalLinks) return;
-
-    const strings = getStrings(state.lang);
-    state.dom.externalLinks.innerHTML = '';
-    const fragment = document.createDocumentFragment();
-
-    EXTERNAL_LINKS.forEach((link) => {
-        const text = strings.externalLinks[link.key];
-        if (!text) return;
-
-        const col = document.createElement('div');
-        col.className = 'col';
-
-        const card = document.createElement('a');
-        card.className = 'card kesson-card h-100 guides-external-card';
-        card.href = link.url;
-        card.target = '_blank';
-        card.rel = 'noopener';
-        card.setAttribute('aria-label', `${text.title} — ${strings.externalOpen}`);
-
-        const body = document.createElement('div');
-        body.className = 'card-body p-2 p-md-3 d-flex flex-column gap-1';
-
-        const title = document.createElement('h3');
-        title.className = 'card-title mb-1';
-        title.textContent = text.title;
-
-        const desc = document.createElement('p');
-        desc.className = 'card-text';
-        desc.textContent = text.description;
-
-        const openLabel = document.createElement('span');
-        openLabel.className = 'guides-external-open-label';
-        openLabel.textContent = strings.externalOpen + ' \u2197';
-
-        body.appendChild(title);
-        body.appendChild(desc);
-        body.appendChild(openLabel);
-        card.appendChild(body);
-        col.appendChild(card);
-        fragment.appendChild(col);
-    });
-
-    state.dom.externalLinks.appendChild(fragment);
-}
-
 function render() {
-    renderFeatureCards();
-    renderExternalLinks(); // CHANGED(2026-03-25): #146
     if (state.dom.mdCloseBtn) {
         state.dom.mdCloseBtn.textContent = getStrings(state.lang).modalClose;
     }
@@ -554,7 +300,7 @@ export function setGuidesLanguage(lang) {
 
 // CHANGED(2026-03-25): #169 — Public API to open a guide modal by key (general/designer/academic)
 // CHANGED(2026-11-02): #216 — `?draft-md=<repo 内の .md>` で、ガイドの modal に下書きを読み込む。
-// 公開ページと同じ見え方で論の下書きを確認するための配線。パラメータが無ければ従来どおり pjdhiro repo の md を読む。
+// 公開ページと同じ見え方で論の下書きを確認するための配線。パラメータが無ければ何も開かない。
 // repo 内の相対パスだけ許可する（外部 URL・絶対パス・上位ディレクトリは無視）。
 function getDraftMarkdownOverride() {
     const value = new URLSearchParams(window.location.search).get('draft-md');
@@ -568,26 +314,22 @@ function getDraftMarkdownOverride() {
 }
 
 export function openGuideModal(key) {
-    const guide = GUIDE_LINKS.find((g) => g.key === key);
-    if (!guide) {
+    const strings = getStrings(state.lang);
+    const featureText = strings.features[key];
+    if (!featureText) {
         console.warn('[guides] Unknown guide key:', key);
         return;
     }
-    const lang = normalizeLang(state.lang);
-    const langLinks = guide.links[lang] || guide.links.ja;
-    const strings = getStrings(state.lang);
-    const featureText = strings.features[key];
     const draftMd = getDraftMarkdownOverride(); // CHANGED(2026-11-02): #216
-    // 読者別の旧ガイド（pjdhiro の repo の md と PDF）は、2026-11-10 に読み込みをやめた（Issue #111）。
-    // 下書きの指定（draft-md）があるときだけ開く。
+    // 読者別の旧ガイドはしまってある（ks/archive/guides/）。下書きの指定（draft-md）があるときだけ開く。
     if (!draftMd) {
         console.warn('[guides] 読者別の旧ガイドはしまってあります。下書きを見るときは draft-md を付けます:', key);
         return;
     }
     openMarkdownModal({
-        mdUrl: draftMd || langLinks.mdUrl,
-        title: featureText?.modalTitle || featureText?.title || key,
-        pdfUrl: draftMd ? '' : langLinks.pdfUrl,
-        cacheKey: draftMd ? `draft:${draftMd}` : `${key}:${lang}`,
+        mdUrl: draftMd,
+        title: featureText.modalTitle || featureText.title || key,
+        pdfUrl: '',
+        cacheKey: `draft:${draftMd}`,
     });
 }

@@ -193,6 +193,4 @@
 
 ## 参照
 
-- [欠損駆動思考](https://uminomae.github.io/pjdhiro/thinking-kesson/)
-- [創造5段階（海）](https://uminomae.github.io/pjdhiro/dialogueCreation/)
 - [kesson-driven-thinking](https://github.com/uminomae/kesson-driven-thinking)（理論側）

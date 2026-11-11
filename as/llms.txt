@@ -64,13 +64,12 @@ Research that bears on consciousness and awareness is re-examined area by area b
 - [安定とつながりの感じ・手放す構え / Stability, connectedness and letting go](https://uminomae.github.io/project-design-theory/as/evidence/evidence-A11-stability-and-letting-go.md) — How a settled sense of stability, equanimity, connectedness and awe in adults has been described and measured; scales for letting go and for the need to reach closure; cases where loosening the boundaries of the self is reported as distress; and critiques of the scales
 - [信頼の定義と長い時間の動機 / Defining trust and long-term motives](https://uminomae.github.io/project-design-theory/as/evidence/evidence-A12-trust-definition-and-long-motives.md) — How trust has been defined and measured across fields; research on long-term goals in which a lack of connection is filled by goals of status and money, and which way the link runs; and studies that compare the conflict between connection and self-protection motives
 
-Earlier versions (three reader guides, a topic page and its slides, and a survey overview) were written before the claims were checked against the original sources. They were withdrawn from this site on 2026-11-10 and are no longer listed here.
+Earlier versions (three reader guides, a topic page and its slides, and a survey overview) were written before the claims were checked against the original sources. They were withdrawn from this site on 2026-11-10 and are no longer listed here. The image cards of notes from divergent thinking were withdrawn on 2026-11-12.
 
 ## Related Projects
 
 | Project | URL | Focus |
 |---------|-----|-------|
-| pjdhiro | https://uminomae.github.io/pjdhiro/ | Project Design Hub (parent site) |
 | プロジェクトデザイン論 / Project Design Theory | https://uminomae.github.io/project-design-theory/ | The reading on Love-Driven Development and its parts |
 | 創造とは / What Is Creation | https://uminomae.github.io/project-design-theory/cs/ | What structure and process does something follow when it comes into being? An exploration that sets theories from 30 fields side by side and writes them in five stages (Field → Wave → Edge → Vortex → Bundle) |
 | 欠損駆動思考 / Kesson-Driven Thinking | https://uminomae.github.io/project-design-theory/ks/ | What do people sense where symbols read zero? An exploration of a stance of mind driven by a sense of lack or unease |
@@ -78,5 +77,4 @@ Earlier versions (three reader guides, a topic page and its slides, and a survey
 ## Author
 
 - Name: pjdhiro
-- Site: https://uminomae.github.io/pjdhiro/
 - Focus: Project Design, Consciousness Research, Human-AI Collaboration

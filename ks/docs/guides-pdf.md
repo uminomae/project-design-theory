@@ -1,5 +1,7 @@
 # ガイド PDF の生成ルール（md → PDF・日英）
 
+> 2026-11-12：ここに書いた道具（`scripts/build-guide-pdf.sh`・`scripts/articles-en-*`）と、入口の記事の段（ARTICLES）は外した。pjdhiro の repo とサイトを使わないことにしたため（Issue #134）。旧ガイドは `ks/archive/guides/` にある。ここから下は当時の運用の記録で、今の手順ではない。
+
 公開ページの三本のガイド（一般向け・設計者向け・専門家向け）の PDF をつくる手順です。Issue #220。
 
 ## 置き場所

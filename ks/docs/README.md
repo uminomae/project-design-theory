@@ -106,7 +106,6 @@ kesson-spaceは欠損駆動思考プロジェクトの**3D体験空間**。
 ## 外部リンク
 
 - [ライブサイト](https://uminomae.github.io/project-design-theory/ks/)
-- [ブログ記事](https://uminomae.github.io/pjdhiro/thinking-kesson/)
 - [GitHub Actions](https://github.com/uminomae/project-design-theory/actions)
 
 ---

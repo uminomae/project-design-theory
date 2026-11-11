@@ -22,7 +22,6 @@ import { detectLang } from './i18n.js';
 import { breathConfig, liquidParams, toggles } from './config.js';
 import { initScrollUI, refreshGuideLang, updateScrollUI } from './scroll-ui.js';
 import { initMouseTracking, updateMouseSmoothing } from './mouse-state.js';
-import { refreshArticlesLanguage } from './pages/articles-section.js';
 import { initGuides, setGuidesLanguage } from './guides.js';
 import { createSdfEntity } from './sdf-entity.js';
 // CHANGED(2026-03-27): #172 — About modal
@@ -91,7 +90,6 @@ initLanguageListeners({
     // CHANGED(2026-03-24): #151 — Devlog hidden; skip language refresh
     // refreshDevlogLanguage,
     refreshDevlogLanguage: () => {},
-    refreshArticlesLanguage,
     refreshGuidesLanguage: () => setGuidesLanguage(detectLang()),
 });
 

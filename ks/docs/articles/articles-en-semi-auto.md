@@ -1,5 +1,7 @@
 # ARTICLES 英語化 半自動運用
 
+> 2026-11-12：ここに書いた道具（`scripts/build-guide-pdf.sh`・`scripts/articles-en-*`）と、入口の記事の段（ARTICLES）は外した。pjdhiro の repo とサイトを使わないことにしたため（Issue #134）。旧ガイドは `ks/archive/guides/` にある。ここから下は当時の運用の記録で、今の手順ではない。
+
 ## 目的
 
 - `pjdhiro` 側の最新記事を `kesson-space` へ取り込みつつ、英語未整備項目を見逃さない。
@@ -10,7 +12,7 @@
 
 ## 対象データ
 
-- Remote source: `https://uminomae.github.io/pjdhiro/api/kesson-articles.json`
+- Remote source: pjdhiro のサイトの `api/kesson-articles.json`（リンクは外した・#134）
 - Local cache: `assets/articles/articles.json`
 - EN required fields: `title_en`, `excerpt_en`
 

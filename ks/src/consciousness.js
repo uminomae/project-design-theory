@@ -18,7 +18,6 @@ import { detectLang, LANG_CHANGE_EVENT } from './i18n.js';
 import { breathConfig, liquidParams, sceneParams, toggles } from './config.js';
 import { initScrollUI, refreshGuideLang, updateScrollUI } from './scroll-ui.js';
 import { getRawMouse, initMouseTracking, updateMouseSmoothing } from './mouse-state.js';
-import { refreshArticlesLanguage } from './pages/articles-section.js';
 import { createSdfConsciousnessEntity, updateSdfConsciousnessEntity } from './consciousness/sdf-entity.js';
 
 const DEV_MODE = new URLSearchParams(window.location.search).has('dev');
@@ -145,7 +144,6 @@ initLanguageListeners({
     refreshGuideLang,
     refreshNavLanguage,
     refreshDevlogLanguage,
-    refreshArticlesLanguage,
 });
 
 window.addEventListener(LANG_CHANGE_EVENT, (event) => {

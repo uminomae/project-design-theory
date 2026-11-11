@@ -1,5 +1,7 @@
 # transform/ — awareness-space の変換層
 
+> 2026-11-12：pjdhiro の repo へ出す道具（`transform/scripts/` の PDF・トピック・画像カードの道具）と、そこから読む画面の配線は外した（Issue #134）。昔の版は `as/archive/` にしまってある。ここから下は当時の運用の記録で、今の手順ではない。
+
 > 2026-11-11：この文書と、この下（`as/transform/`）の文書は、今までの awareness-space の変換の手順の記録。今は使わない。ここに書いてある公開の正本の置き場（`pjdhiro/assets/awareness/`）と、`pjdhiro/main` への push の手順は、今の規約でも今の置き場でもない。意識とはの記録を直す・作るときの手順は根の `docs/as-review/`、今の規約は repo の根の `CLAUDE.md` と根の `docs/`。中身は書き換えず、履歴として残す（Issue #111）。
 
 ## 汎用ワークフロー正本

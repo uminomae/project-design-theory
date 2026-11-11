@@ -5,34 +5,12 @@
 import DOMPurify from 'dompurify';
 import { prepareStackedTables } from './stacked-tables.js';
 
-// Jekyll (github.io) では .md を fetch すると HTML が返る。
-// draftUrl は raw.githubusercontent.com で渡すこと（i18n.js の DRAFT_BASE_JA/EN 参照）。
-// 万一 github.io URL が渡された場合のフォールバックも実装済み（creation-space 準拠）。
-const PJDHIRO_RAW_BASE = 'https://raw.githubusercontent.com/uminomae/pjdhiro/main';
-
-/**
- * MD fetch の候補 URL 一覧を返す。
- * primary が github.io の場合、raw.githubusercontent.com をフォールバック候補に追加。
- * (creation-space reports.js の buildMarkdownFetchCandidates に準拠)
- */
+// 今までは、github.io の .md が HTML で返るときに pjdhiro の repo の raw を予備に引いていた。
+// その repo は使わないので、渡された URL だけを引く（Issue #134・2026-11-12）。
 function buildMarkdownFetchCandidates(rawUrl) {
     if (!rawUrl || typeof rawUrl !== 'string') return [];
     const trimmed = rawUrl.trim();
-    if (!trimmed) return [];
-    const candidates = [trimmed];
-    if (!/\.md(?:$|[?#])/i.test(trimmed)) return candidates;
-    try {
-        const parsed = new URL(trimmed);
-        const pathParts = parsed.pathname.split('/').filter(Boolean);
-        const assetsIndex = pathParts.findIndex((p) => p === 'assets');
-        if (assetsIndex >= 0) {
-            const filePath = pathParts.slice(assetsIndex).join('/');
-            candidates.push(`${PJDHIRO_RAW_BASE}/${filePath}`);
-        }
-    } catch {
-        // primary のみ
-    }
-    return [...new Set(candidates)];
+    return trimmed ? [trimmed] : [];
 }
 
 function looksLikeHtml(text) {

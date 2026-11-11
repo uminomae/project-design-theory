@@ -3,7 +3,7 @@ header: "Dev Log: Claude's reconstruction of my first two days, inferred from co
 date: 2026.02.10 20:58 → 02.12 10:51 (~38 hours · 123 commits)
 ---
 
-This site draws a 3D space with Three.js and animates water surfaces and light with GLSL shaders. Behind it lies a personal knowledge system called "Kesson-Driven Thinking" (<a href="https://uminomae.github.io/pjdhiro/thinking-kesson/">details here</a>), whose management, transformation, and output are built collaboratively with AI in a separate repository. This site is one GUI layer of that system — a prototype entry page where you can experience the concept.
+This site draws a 3D space with Three.js and animates water surfaces and light with GLSL shaders. Behind it lies a personal knowledge system called "Kesson-Driven Thinking", whose management, transformation, and output are built collaboratively with AI in a separate repository. This site is one GUI layer of that system — a prototype entry page where you can experience the concept.
 
 Development environment: Claude (project management, code implementation, pushing via GitHub MCP) + Gemini (dedicated Three.js shader generation via MCP Server). Two AIs linked through MCP — Claude as manager, Gemini as shader artisan. The human watches in the browser, judges, and gives instructions. It's also an experiment in solo development that uses AI as infrastructure, much like a framework or application server.
 

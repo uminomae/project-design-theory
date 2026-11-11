@@ -120,7 +120,7 @@ GUIDES
 |---|---|
 | creation-space | `https://uminomae.github.io/project-design-theory/cs/` |
 | awareness-space | `https://uminomae.github.io/project-design-theory/as/` |
-| pjdhiro（ガイド） | `https://uminomae.github.io/pjdhiro/assets/kesson/` |
+| pjdhiro（ガイド） | 使わない。旧版は `ks/archive/guides/`（2026-11-12・#134） |
 
 ---
 
