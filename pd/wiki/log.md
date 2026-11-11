@@ -802,3 +802,8 @@ compile 実行の履歴。append-only。
 - scope: 出典ページ 1（`sources/clinical-psych-buddhism_intersubjectivity`）
 - sources: 鳩摩羅什訳『中論』（大正蔵 T1564、CBETA の電子テキストの全文）と、*Prasannapadā* の梵文の偈（GRETIL の全文）。Winnicott・Stolorow・Varela らの著作は貸し出しの写しか書誌しか開けず、照らしていない
 - pages: 24:18 は偈の言葉に寄せて書き直した。「全25章」は誤りで 27 章に直した。第 18 章の一文は 18:1 の偈が言う所までに縮めた。頭に「このページの出所」の節を置き、照らした所と、LLM の学習時の知識から書かれた所を分けた（`docs/rules/sources.md` §10-6）
+
+## [2026-11-12] check | Friston 2010 を原典と照らす
+- scope: 出典ページ 1（`sources/Friston_2010_free-energy-principle`）
+- sources: 原典の全文（著者のサイトにある Nature Reviews Neuroscience の早期公開の版・意識とはの台帳 A02-S01）
+- pages: 自由エネルギーがサプライズの上界であること、予測符号化の前向きと後ろ向きの結合、精度（逆分散）は合った。原典と違った所を直した：この論文は「脳が行うすべて」の原理と言い切ったのでなく、脳の主要な理論を自由エネルギーの枠組みに並べたレビューで、統一する力はまだ確立されていないと書く。「マルコフ毛布」はこの論文に出ないと書いた。被引用数を外し、全文の写しへのリンクを足した。頭に「このページの出所」を置いた
