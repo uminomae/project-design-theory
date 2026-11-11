@@ -792,3 +792,8 @@ compile 実行の履歴。append-only。
 - scope: 出典ページ 1（`sources/Craig_2002_interoception`）
 - sources: 原典と Craig 2009 の要旨（PubMed 12154366・19096369、Europe PMC。本文は有料で、OA の写しは find-source で見つからなかった。意識とはの台帳 A04-S01・S02）。批判の文献は、意識とはの記録 A04 の論 2・7（Philippi ら 2012・Zamariola ら 2018 の本文）
 - pages: 要旨は、その系が感じ・情動・自己の気づきの土台を「might provide」と書くので、「構成し…基盤を提供するとした」を要旨の言い方に直した。Craig 2009 の「意識的気づきの座」「cinemascopic model」は要旨に無く、要旨の言い方（意識の神経相関の候補）に直した。Philippi ら 2012 の「十分でも必要でもない」を原典の「必要ではない」に、Zamariola ら 2018 の「心拍検出課題」を「心拍を数える課題」に直した。頭に「このページの出所」を置き、経路と勾配の段ほかを照らしていない所とした（`docs/rules/sources.md` §10-6）
+
+## [2026-11-12] check | 現象学・実存主義における間主観性を原典と照らす（20 ページのうち組 C の一つ目）
+- scope: 出典ページ 1（`sources/phenomenology-existentialism_intersubjectivity`）
+- sources: Buber *Ich und Du*（1923 年 Insel 版、Internet Archive の公開の写しの全文）。Husserl・Heidegger・Merleau-Ponty の主要著作は貸し出しの写しか書誌しか開けず、照らしていない
+- pages: Buber の節の根本語・全き存在・「Alles wirkliche Leben ist Begegnung」は合った。本に無い言い方（「純粋な出会い」「分類する」）を本の言葉に直し、本に無い引用符の言い回し（「抽象的概念ではなく存在論的実在」）の引用符を外した。「あいだ」「確認」は *Ich und Du* に無いと書いた。頭に「このページの出所」の節を置き、照らした所と、LLM の学習時の知識から書かれた所を分けた（`docs/rules/sources.md` §10-6）
