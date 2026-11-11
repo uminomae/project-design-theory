@@ -817,3 +817,8 @@ compile 実行の履歴。append-only。
 - scope: 出典ページ 1（`sources/education-nursing_intersubjectivity`）
 - sources: Wood, Bruner & Ross (1976) の全文（Wiley の無料公開の版）。Vygotsky・Noddings・Watson らの本と Swanson の章は貸し出しの写しか書誌しか開けず、照らしていない
 - pages: scaffolding の段の「支援を撤去する」は論文に無く、論文の定義と六つの働きに直した。頭に「このページの出所」の節を置き、照らした所と、LLM の学習時の知識から書かれた所を分けた（`docs/rules/sources.md` §10-6）
+
+## [2026-11-12] check | 文化人類学・言語学における間主観性を原典と照らす（組 C の四つ目）
+- scope: 出典ページ 1（`sources/anthropology-linguistics_intersubjectivity`）
+- sources: Mauss *Essai sur le don* の初出（*L'Année sociologique* t. I、Wikimedia Commons の写しの全文）、Tomasello ら 2005 と Herrmann ら 2007 の要旨（Cambridge の頁・PubMed）。Mbiti ほかの本は貸し出しの写しか書誌しか開けず、照らしていない
+- pages: Mauss の段の地域・拒むことと戦の文・全体的社会事実の次元を論文の言い方に直した。Herrmann ら 2007 の一文は要旨に無い言い方（道具使用・因果推論・空間認知）を要旨の言い方に直し、DOI を張った。主要著作の Mauss に初出の写しのリンクを足した。頭に「このページの出所」の節を置き、照らした所と、LLM の学習時の知識から書かれた所を分けた（`docs/rules/sources.md` §10-6）
