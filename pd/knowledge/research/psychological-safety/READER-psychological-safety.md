@@ -34,8 +34,6 @@
 
 段階について、より詳しくは[精神の発達段階とは](developmental-stages.html)で書いていきます。
 
-pjdhiro が影響を受けた論として、クック＝グロイターを紹介しているページは、[影響を受けた心理学](influences-psychology.html#発達心理)です。
-
 出典：[Cook-Greuter (2013)](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)（本文で確認。pp.2, 4, 5, 7, 9–10。頁は論文の刷りの頁）
 
 </details>
