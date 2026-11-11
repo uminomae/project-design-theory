@@ -687,3 +687,8 @@ compile 実行の履歴。append-only。
 - scope: 概念ページ 1・トップ 1
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（「デザインは、場にも関わる」を「デザインは、どこに関わるか」、「効き目と、効く範囲」を「入力を整えると、何が変わるか」にし、「この見方は、何の役に立つのか」の終わりに後ろの三章の並びを書いた）
 - pages: `concepts/Love 駆動開発` と `プロジェクトデザイン` は、この二つの章題を引いていない。中身は直さず、compiled は今日のまま
+
+## [2026-11-11] update | Love駆動開発の第四部の章「無意識とは、何か」に本文を入れたのに合わせて直した（#122）
+- scope: 概念ページ 1・トップ 1
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「無意識とは、何か」の工事中を外し、フロイト 1915・ユング 1917 の本文と畳み三つを入れた）
+- pages: `concepts/Love 駆動開発` の工事中の章の並びから「無意識とは何か」を外した。`プロジェクトデザイン` はこの章を引いていない。中身は直さず、compiled は今日のまま
