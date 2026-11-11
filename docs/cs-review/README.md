@@ -78,11 +78,11 @@ pjdhiro 2026-11-08：「一次情報を読みながら既存の論をチェッ�
 | 場所 | 中身 | 公開 |
 |---|---|---|
 | `cs/`（この repo） | 3D の入口（`index.html`・`src/`）、調査の記録（`evidence/`・`knowledge/`）、報告を作る規則とテンプレート（`transform/`）、点検のスクリプト（`scripts/`） | `/project-design-theory/cs/` |
-| `~/dev/pd/pjdhiro/assets/creation/`（別の公開 repo） | 報告の本文。30 領域（日英・プレゼン版・PDF）、5 テーマ、横断分析、ガイド 3 本、図 | `uminomae.github.io/pjdhiro/assets/creation/…`。cs のトップからリンク |
+| `cs/archive/creation/`（この repo） | 今までの報告の昔の版。ガイド 3 本・5 テーマ・テーマの検証・横断分析・調査の現在地・phase9 の計画・目録（md と json だけ。PDF・図・HTML は写していない）。2026-11-12 に pjdhiro の repo から写した（#134）。30 領域の報告は、照合し直した記録（`cs/evidence/`）があり、写していない | サイトの置き場には入るが、画面からは辿らない |
 | `pd/wiki/sources/`（この repo） | 原典の精読ノート（D01〜D30 の 300 本ほど）。全部が「未レビュー」 | `/project-design-theory/wiki/` |
 | 原典の PDF | `cs/knowledge/raw/`（git の外・本体の checkout の手元だけ。134 本） | 公開しない |
 
-pjdhiro の repo は、その repo の規約（`develop` で直す・commit の末尾）に従う。
+pjdhiro の repo（`uminomae/pjdhiro`・手元の `~/dev/pd/pjdhiro`・`uminomae.github.io/pjdhiro`）は使わない。読まず、書かず、リンクもしない（pjdhiro 2026-11-11「もうpjdhiro repoは使わないで欲しい」・2026-11-12 #134「④も含めて全部外す」）。昔の版を見るときは `cs/archive/creation/` を読む。
 
 ## 何を正とするか
 
@@ -108,7 +108,7 @@ pjdhiro の repo は、その repo の規約（`develop` で直す・commit の�
 
 ### 0. 準備（Claude だけでできる）
 
-- [x] `cs/scripts/` を、今の置き場に合わせる。pjdhiro の repo を `cs/../pjdhiro` で探していた所は、別のセッションが `scripts/pjdhiro-dir.sh`・`pjdhiro-dir.mjs` で直した（aed76ee・d35e433、2026-11-08）。
+- [x] `cs/scripts/` を、今の置き場に合わせる。pjdhiro の repo を `cs/../pjdhiro` で探していた所は、別のセッションが `scripts/pjdhiro-dir.sh`・`pjdhiro-dir.mjs` で直した（aed76ee・d35e433、2026-11-08）。2026-11-12 に、pjdhiro の repo を使わないので、cs の道具から pjdhiro の repo を見る所を外し、pjdhiro の repo の報告・ガイド・図・PDF だけを作る・確かめる道具は消した（#134）。`qc-all.sh` は、残った検査だけを回す。
 - [ ] `qc-all.sh` を回し直す。直したあと worktree で回すと PASS 5・FAIL 2（dashboard-stats の鮮度、報告ページへの静的リンクの鮮度）・SKIP 1 だった。FAIL の二つを見る。
 - [ ] 中の検査がスキップしても PASS と数える所を直す。試しの日は「manifest 整合」が、worktree に `knowledge/raw/manifest.md` が無くて中でスキップし、PASS と出た。manifest.md は同じ日に公開され git に入った（aba9785・pjdhiro 2026-11-08）ので、回し直して確かめる。PDF を使う検査は本体の checkout で回す（旧 `cs/docs/quality-management.md` 100 行も同じ）。
 - [ ] 報告の本文の写しを片付ける方針を決める。`cs/knowledge/domains/D*/ja/report.md` に 30 本の写しがあり（旧 cs#121 で「ソース」と決めたもの）、公開版との違いはほぼ SVG の行だけ。ただし D13・D15・D17 の直しは公開版にしか入っておらず、写しは古い。照合の対象は公開版（日本語）にする。
@@ -181,7 +181,7 @@ pjdhiro の repo は、その repo の規約（`develop` で直す・commit の�
 ### 6. 直す・公開する
 
 - [ ] 1〜5 の判断がそろったものから直す。大きく組み直すものは、Issue に計画を書いてから（stance 2-5）。
-- [ ] 直したら、develop へすぐに入れ、3001 で見る。pjdhiro の repo の直しは、その repo の develop へ。
+- [ ] 直したら、develop へすぐに入れ、3001 で見る。
 - [ ] 一つの直しを、出どころから生成物まで通す。日本語の md を直したら、英語版・プレゼン版・PDF・図・`domains.json`・cs の写し・evidence の記録まで同じ直しを当てる（`sources.md` §7-2「誤りの出どころの記録も直す」）。`cs/transform/domains/WORKFLOW.md` から取るのは、生成の順番（日本語版が確定してから英語版、PDF は生成物で手で直さない）だけ。そこに書いてある git の手順（今は無い creation-space の develop を main へ merge・pjdhiro の repo の main への push）と、pjdhiro の repo への配置は、今までの repo のもので、使わない（2026-11-10 に WORKFLOW の頭にも断りを置いた）。今までの報告は 2026-11-10 に下げたので、英語版・プレゼン版・PDF を新しい記録から作り直すかは、まだ決まっていない。前例：2026-07 の D13 の直しは、日本語の md・日本語の PDF・`domains.json` だけで、英語版・プレゼン版・写しは直っていない。
 - [ ] `progress_level`・`quality_level`・トップの「多段階検証済」の表示は、pjdhiro が決める（旧 `WORKFLOW.md` 179 行）。旧い規則の「逆行は原則禁止」は、誤りを見つけても下げられないので、今の規約と合わない（「判断が要ること」）。
 
@@ -204,7 +204,7 @@ pjdhiro の repo は、その repo の規約（`develop` で直す・commit の�
 
 試しの一巡で見たのは、D01 数学の日本語版の報告と wiki、5段階と隣の概念の定義、トップの画面（PC とスマートフォン幅）、`qc-all.sh` だけ。次のものは見ておらず、手順が合うかも確かめていない。本番で初めて触るときは、まず一つで試してから広げる。
 
-- 段 3 の材料：5 テーマ（`pjdhiro/assets/creation/phase8-themes/`）、横断分析（`synthesis/`）、反証（`cs/evidence/falsification/`）、盲検の結果（`blind-test-5stage/RESULTS.md`）。
+- 段 3 の材料：5 テーマ（`cs/archive/creation/phase8-themes/`）、横断分析（`cs/archive/creation/synthesis/`）、反証（`cs/evidence/falsification/`）、盲検の結果（`blind-test-5stage/RESULTS.md`）。
 - cs のほかのページ：`reader/wave-vortex.html`（10 万字ほどの読み物）、`sources.html`、`dashboard.html`。
 - 報告の英語版・プレゼン版・PDF・図（SVG）。D01 では件数の食い違いを見つけたが、英語版の文体や図の中身は見ていない。
 - 人文系の領域（哲学・宗教学・伝統知など）。数学と違って原典が書籍で、取得できないもの（blocked-access）が多い見込み。社会科学の D22 でも、11 理論のうち原典の本文に当たれたのは 3 つだった。照合の周の進め方を変える要るかもしれない。
@@ -280,9 +280,9 @@ pjdhiro の repo は、その repo の規約（`develop` で直す・commit の�
 - 計画と規約：この文書。
 - 分野ごとの記録（公開する md）：`cs/evidence/evidence-Dxx-*.md`。2026-11-08〜09 に、再監査待ちの stub（本文は 2026-04-07 に archive へ退避）を置き換えて、30 本がそろった。回し直すときは、済んだ記録を読んだうえで直す。pjdhiro が決めた evidence の作り直し（#48）がこの作業に当たる。退避版への history のリンクは残す。cs の中に置くので、そのまま公開され、cs の UI から読める（`docs/` はサイトに出ない）。
   - 中身：冒頭の要約（この分野で見えた対立・衝突・統合）、論ごとの節（10 ほど。要旨・一次情報の確かめ先と読んだ頁・照合の状態・対立／衝突／統合／新たな安定または至らない形・論の微細さ・今の報告から直したこと）、一面の表（論ごとに一行）。文は `writing.md` に従う。文責は Claude と冒頭に書く（writing §1-1・§1-8）。
-  - 今の報告（pjdhiro の repo の `assets/creation/domains/`）の誤りの点検は、各論の節の「直したこと」に書く。点検だけをまとめた表は要らない。
+  - 今までの報告（2026-11-10 に下げた 30 領域の報告）の誤りの点検は、各論の節の「直したこと」に書く。点検だけをまとめた表は要らない。
   - 旧い形式（`cs/transform/domains/reader-rules/reader-rules-evidence-rebuild.md`、2026-05 の cs#223 の決め）は、使えるものだけ使う（「規約で決めたこと」の旧い規則の行）。
-- UI：cs のトップの「30 領域調査報告」の画面（今は `cs/src/reports/data.js` が pjdhiro の repo の `assets/creation/` を読む）から、分野が一つ済むごとに、新しい md を今の見た目で読めるようにする。済んでいない分野は、今の報告のまま出す。
+- UI：cs のトップの「30 領域調査報告」の画面は、`cs/evidence/reviewed.json`（分野の行に、格子に出す短い名前 `name_ja` と英語の名前のもと `slug` も持つ）と記録の md だけから描く（2026-11-12・#134。前は `cs/src/reports/data.js` が pjdhiro の repo の目録 `domains.json` を読んでいた）。
 - 英語の記録：`cs/evidence/en/` に、日本語の記録と同じファイル名で置き（`cs/evidence/en/evidence-Dxx-*.md`）、`cs/evidence/reviewed.json` のその分野の行に `"en": "en/evidence-Dxx-*.md"` を足す。英語の画面は、この行があれば英語の記録を開き、無ければ英語で工事中と書いて日本語版へのリンクを添える（`cs/src/reports/data.js`・pjdhiro 2026-11-10「英語で工事中と書くのがいいよ」）。`scripts/check-cs-evidence.mjs` は、en の名前と実在だけを見る（中身の点検は日本語の記録だけ）。
 - 試しの記録：`docs/cs-review/D01.md`・`D22.md` は、点検の見本として残す（形は上の分野ごとの記録に移る）。
 - pjdhiro の判断：この文書の「判断が要ること」に、答えと日付を書き足す。見方に関わるものは `stance.md` にも足す。
@@ -435,7 +435,7 @@ pjdhiro に聞く。Claude の予想を添える。答えが出たら、ここ�
    - 済んだ（2026-11-10）：pjdhiro の repo の `assets/creation/domains/ja/md/` の 30 本を、cs の記録のページ（`/cs/?domain=Dxx`）へ送る転送のページにした（`_layouts/moved.html`・noindex・sitemap に載せない）。英語版（`domains/en/`）・PDF（`domains/ja/pdf/`）・プレゼン版（`domains/ja/presentations/`）の 270 本を消した（pjdhiro の repo の 6889982）。外から張られた PDF・英語版・プレゼン版の URL は 404 にした。GitHub Pages では PDF の URL に転送のページを置けず、決め（公開ページは読者がほしいものだけ）からも、中身の無い URL を残す理由が無いため。cs の側は、分野の枠・全画面の格子・`?domain=` が記録だけを読み、分野のスライドのボタンと `?slide=Dxx` を外し、記録を開いたときは「PDF準備中」を出さない。トップの noscript の一覧は `?domain=Dxx`、llms.txt は記録の md へ向けた（`generate-static-nav.mjs`）。
    - 英語の画面と英語の記録（pjdhiro 2026-11-10「英語で工事中と書くのがいいよ」「同時に英語で書いていくのがいいよね。コンテンツを。」）：英語の記録が無い分野も、英語の画面に枠と格子を出し、開くと英語で工事中と書く（隠さない。stance 2-7）。記録は、これから日本語と同時に英語でも書いていく。今ある 30 本の英語の記録は、段 6 の作業として一本ずつ書き、書けた分から工事中を外す。
    - 済んだ（2026-11-10）：英語の画面でも、30 分野の枠と全画面の格子を日本語の画面と同じように出す。英語の記録がまだ無い分野を開くと「Under construction / This report is in Japanese only for now. We are preparing an English version. / Read the Japanese version」と出し、日本語の記録（`?domain=Dxx`）へ送る。英語の記録の置き場は上の「記録の形」。英語の記録がまだ無い分野には「照合済」の印を出さない。
-   - 残したこと：pjdhiro の repo の `manifests/domains.json` は、消したファイルの md・pdf のパスを持ったまま（生成物で、cs はもう読まない）。分野の報告の図（`img/svg/domains/`）・`survey-domain-index` の分野の報告へのリンク（前から相対パスがずれて切れている）は、分野の報告の外なので触っていない。
+   - 残したこと：pjdhiro の repo の `manifests/domains.json` は、消したファイルの md・pdf のパスを持ったまま（生成物で、cs はもう読まない。2026-11-12 からは pjdhiro の repo を使わないので、直さない・#134）。分野の報告の図（`img/svg/domains/`）・`survey-domain-index` の分野の報告へのリンク（前から相対パスがずれて切れている）は、分野の報告の外なので触っていない。
 3. 美駆動思考を cs に残すか。今は cs のトップと README にしか出てこず、正本（ks・as・Love駆動開発）に定義が無い。プロジェクトデザイン論のトップ（`pd/index.html`）は pjdhiro の `/thinking-bi/` にリンクしているが、そのページは「作成中」（2026-01-28）。定義を決めた記録は見つからない。予想：置き場所が決まるまで部品として持っておく（stance 2-2）。cs のトップには定義を書かず、名前とリンクだけにする。 → **答えが出た**（pjdhiro 2026-11-09「pdに移して」）。2026-11-09 に、cs のトップ（構造化データの用語・クローラー向けの要約・noscript の段）と cs の README から外し、プロジェクトデザイン論のトップの構造化データの用語集（プロジェクトデザイン・Love駆動開発と同じ並び）に移した。トップの「美駆動思考」の札（/pjdhiro/thinking-bi/ へのリンク）は、もとから pd にある。定義の文は、決まるまで足していない。
 4. `progress_level`・`quality_level` と、トップの「多段階検証済」の表示を、照合し直した結果に合わせて下げてよいか。旧い規則は「逆行は原則禁止」で、誤りを見つけても下げられない。予想：下げる、または表示そのものを外す（stance 2-6 誠実さ、#57「評価は LLM の閉じた輪の中」）。 → **答えが出た**（pjdhiro 2026-11-09。内部連絡のようなものは公開ページに出さない、stance 2-7）。2026-11-09 に、cs のトップの「30 領域調査報告」から、進み具合の段階の凡例・段階での絞り込みの釦・分野の枠の段階の札と説明・全画面の格子の見出しの「多段階検証済」を外した（`cs/src/reports/render.js`・`cs/index.html`）。データ（pjdhiro の repo の index.json の progress_level）は残っていて、画面に出さないだけ。cs の README の「多段階検証」の言い方も直した。quality_level は今の画面では使われていなかった。
 5. 分野の記録から上がってきた、領域をまたぐもの（2026-11-08・D22・D08・D10）。

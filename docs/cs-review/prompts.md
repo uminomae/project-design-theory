@@ -39,7 +39,7 @@ R の cs/ は「創造とは」というサイトで、30 の学術領域に「�
 {領域ごとの注意（下の「領域ごとの注意」から写す）}
 
 ## 材料の在りか
-- 今までの公開報告（日本語）：2026-11-10 に下げ、今のファイルは新しい記録への転送のページ。本文は、pjdhiro の repo の git の、下げる前の版で読む：git -C ~/dev/pd/pjdhiro show 6889982^:assets/creation/domains/ja/md/domain-{Dxx}-{slug}.md。英語版（en/md/）とプレゼン版（ja/presentations/md/）も同じ commit の前。
+- 今までの公開報告（日本語）：2026-11-10 に下げた。pjdhiro の repo は使わない（2026-11-12・#134）ので、その本文は読まない。照合し直した記録（下の evidence）を出発点にする。
 - evidence：R/cs/evidence/evidence-{Dxx}-*.md は、2026-11-08〜09 の照合で書いた、済んだ記録。2026-04-07 までの本文は R/cs/evidence/archive/pre-rerun-20260407/evidence/ にある（今の判定の正当化には使わない、と決めてある）。ほかに R/cs/evidence/archive/ の pre-revise 版があれば見る。
 - 調べた跡：R/cs/evidence/investigation/{Dxx}-*/、R/cs/evidence/202602-deep-research-30domains-gpt/DR-{Dxx}-*.md（GPT の Deep Research。原文が保存されておらず、出典は手がかりにしかならない）
 - 精読ノート：R/pd/wiki/sources/{Dxx}_*.md、R/cs/knowledge/source-notes/{Dxx}/
@@ -105,7 +105,7 @@ R/CLAUDE.md、R/docs/cs-review/README.md、R/docs/rules/stance.md（§1、§4 �
 
 ## 材料
 - cs の定義：R/cs/README.md、R/cs/knowledge/glossary.md・five-stages-guide.md・schema/、R/cs/index.html と R/cs/src/i18n/dict.js、R/cs/llms.txt・llms-full.txt
-- 公開報告のガイド：~/dev/pd/pjdhiro/assets/creation/guides/ja/md/、synthesis/ja/md/、phase8-themes/ja/md/
+- 今までの報告のガイド・横断分析・テーマ（昔の版）：R/cs/archive/creation/guides/ja/md/、synthesis/ja/md/、phase8-themes/ja/md/
 - wiki：R/pd/wiki/concepts/・sources/・about.md
 - 正本：Love駆動開発（R/pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md）、R/ks/ と R/as/ の公開ページ
 

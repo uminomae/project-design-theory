@@ -1,154 +1,214 @@
 {
-  "note": "cs の全体レビュー（#73）で、論ごとに一次情報で確かめ直した分野。cs のトップの「30領域調査報告」は、ここにある分野だけ evidence-Dxx-*.md を先に読む。済んだ分野を一行ずつ足す。",
+  "note": "cs の全体レビュー（#73）で、論ごとに一次情報で確かめ直した分野。cs のトップの 30 分野の格子は、この一覧だけから描く（name_ja は格子に出す短い名前、slug は英語の名前のもと）。済んだ分野を一行ずつ足す。",
   "updated": "2026-11-10",
   "domains": [
     {
       "id": "D22",
+      "name_ja": "経営学",
+      "slug": "business-management",
       "file": "evidence-D22-business-management.md",
       "reviewed": "2026-11-08"
     },
     {
       "id": "D08",
+      "name_ja": "神経科学",
+      "slug": "neuroscience",
       "file": "evidence-D08-neuroscience.md",
       "reviewed": "2026-11-08"
     },
     {
       "id": "D10",
+      "name_ja": "臨床免疫",
+      "slug": "clinical-medicine",
       "file": "evidence-D10-clinical-medicine.md",
       "reviewed": "2026-11-08"
     },
     {
       "id": "D14",
+      "name_ja": "心理学",
+      "slug": "psychology",
       "file": "evidence-D14-psychology.md",
       "reviewed": "2026-11-08"
     },
     {
       "id": "D18",
+      "name_ja": "社会学",
+      "slug": "sociology",
       "file": "evidence-D18-sociology.md",
       "reviewed": "2026-11-08"
     },
     {
       "id": "D20",
+      "name_ja": "法学・政治学",
+      "slug": "law-politics",
       "file": "evidence-D20-law-politics.md",
       "reviewed": "2026-11-08"
     },
     {
       "id": "D21",
+      "name_ja": "経済学",
+      "slug": "economics",
       "file": "evidence-D21-economics.md",
       "reviewed": "2026-11-08"
     },
     {
       "id": "D25",
+      "name_ja": "人類学",
+      "slug": "anthropology",
       "file": "evidence-D25-anthropology.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D01",
+      "name_ja": "数学",
+      "slug": "mathematics",
       "file": "evidence-D01-mathematics.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D02",
+      "name_ja": "物理学",
+      "slug": "physics",
       "file": "evidence-D02-physics.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D29",
+      "name_ja": "複雑系",
+      "slug": "complexity-science",
       "file": "evidence-D29-complexity-science.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D03",
+      "name_ja": "化学",
+      "slug": "chemistry",
       "file": "evidence-D03-chemistry.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D04",
+      "name_ja": "進化生物学",
+      "slug": "evolutionary-biology",
       "file": "evidence-D04-evolutionary-biology.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D05",
+      "name_ja": "地球科学",
+      "slug": "earth-science",
       "file": "evidence-D05-earth-science.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D06",
+      "name_ja": "天文学",
+      "slug": "astronomy",
       "file": "evidence-D06-astronomy.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D07",
+      "name_ja": "工学情報",
+      "slug": "engineering",
       "file": "evidence-D07-engineering.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D09",
+      "name_ja": "生命科学",
+      "slug": "life-sciences",
       "file": "evidence-D09-life-sciences.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D11",
+      "name_ja": "薬学",
+      "slug": "pharmacy",
       "file": "evidence-D11-pharmacy.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D12",
+      "name_ja": "農学生態",
+      "slug": "agriculture",
       "file": "evidence-D12-agriculture.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D16",
+      "name_ja": "歴史学",
+      "slug": "history",
       "file": "evidence-D16-history.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D17",
+      "name_ja": "言語学",
+      "slug": "linguistics",
       "file": "evidence-D17-linguistics.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D23",
+      "name_ja": "発達心理",
+      "slug": "developmental-psychology",
       "file": "evidence-D23-developmental-psychology.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D26",
+      "name_ja": "音楽学",
+      "slug": "musicology",
       "file": "evidence-D26-musicology.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D27",
+      "name_ja": "建築",
+      "slug": "architecture",
       "file": "evidence-D27-architecture.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D28",
+      "name_ja": "舞台芸術",
+      "slug": "performing-arts",
       "file": "evidence-D28-performing-arts.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D13",
+      "name_ja": "哲学",
+      "slug": "philosophy",
       "file": "evidence-D13-philosophy.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D15",
+      "name_ja": "美学",
+      "slug": "aesthetics",
       "file": "evidence-D15-aesthetics.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D19",
+      "name_ja": "文芸学",
+      "slug": "literary-studies",
       "file": "evidence-D19-literary-studies.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D24",
+      "name_ja": "宗教学",
+      "slug": "religion",
       "file": "evidence-D24-religion.md",
       "reviewed": "2026-11-09"
     },
     {
       "id": "D30",
+      "name_ja": "伝統知",
+      "slug": "traditional-knowledge",
       "file": "evidence-D30-traditional-knowledge.md",
       "reviewed": "2026-11-09"
     }

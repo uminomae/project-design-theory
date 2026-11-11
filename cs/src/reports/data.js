@@ -1,110 +1,14 @@
 import { normalizeLang } from '../i18n.js';
 
-const PJDHIRO_PAGES_BASE = 'https://uminomae.github.io/pjdhiro';
-const PJDHIRO_RAW_BASE = 'https://raw.githubusercontent.com/uminomae/pjdhiro/main';
-const CREATION_PATH = '/assets/creation';
-const PJDHIRO_CREATION_PAGES = `${PJDHIRO_PAGES_BASE}${CREATION_PATH}`;
-const PJDHIRO_CREATION_RAW = `${PJDHIRO_RAW_BASE}${CREATION_PATH}`;
 const REPORTS_SCENARIO_BASE = 'assets/reports/scenarios';
 const DOMAIN_ID_PATTERN = /^D\d+$/i;
-const CREATION_GUIDE_GENERATOR_MODEL = 'claude-opus-4-6';
 
-export const DEFAULT_REPORTS_DATA_URL = `${PJDHIRO_CREATION_RAW}/manifests/domains.json`;
-// 一次情報で確かめ直した分野の一覧（#73）。cs のサイトの中にあり、ページからの相対で読む。
+// 30 分野の格子と記録は、この repo の中だけから読む（#134・pjdhiro 2026-11-12「画面から外す。昔の版は archive に写して残すが、画面からは読まない」）。
+// 一次情報で確かめ直した分野の一覧（#73）。分野の名前もここに持つ。cs のサイトの中にあり、ページからの相対で読む。
+// 今までの目録（pjdhiro の repo の manifests/domains.json）と、旧ガイド・総合報告・テーマ・調査の現在地は cs/archive/creation/ にしまった。
 export const REVIEWED_RECORDS_URL = 'evidence/reviewed.json';
 export const REVIEWED_RECORDS_BASE = 'evidence/';
-export const DEFAULT_REPORTS_ASSET_BASE = `${PJDHIRO_CREATION_PAGES}/`;
-export const DEFAULT_REPORTS_MD_ASSET_BASE = `${PJDHIRO_RAW_BASE}${CREATION_PATH}/`;
-
-export const GUIDES_MANIFEST_URL = `${PJDHIRO_CREATION_RAW}/manifests/guides.json`;
-
-export const SURVEY_MANIFEST_URL = `${PJDHIRO_CREATION_RAW}/manifests/survey.json`;
-
-export const PHASE8_THEMES_MANIFEST_URL = `${PJDHIRO_CREATION_RAW}/manifests/phase8-themes.json`;
-
-export const SYNTHESIS_REPORT_LINKS = {
-    ja: {
-        mdUrl: `${PJDHIRO_CREATION_RAW}/synthesis/ja/md/cross-domain-synthesis-ja.md`,
-        pdfUrl: `${PJDHIRO_CREATION_PAGES}/synthesis/ja/pdf/cross-domain-synthesis-ja.pdf`,
-        generatorModel: CREATION_GUIDE_GENERATOR_MODEL,
-        generated: '2026-03-20',
-    },
-};
-
-export const SYNTHESIS_PRESENTATION_LINKS = {
-    ja: {
-        mdUrl: `${PJDHIRO_CREATION_RAW}/synthesis/ja/md/cross-domain-synthesis-presentation-ja.md`,
-        pdfUrl: `${PJDHIRO_CREATION_PAGES}/synthesis/ja/pdf/cross-domain-synthesis-presentation-ja.pdf`,
-        htmlUrl: `${PJDHIRO_CREATION_PAGES}/synthesis/ja/html/cross-domain-synthesis-presentation-ja.html`,
-        generatorModel: CREATION_GUIDE_GENERATOR_MODEL,
-        generated: '2026-03-20',
-    },
-    en: {
-        mdUrl: `${PJDHIRO_CREATION_RAW}/synthesis/en/md/cross-domain-synthesis-presentation-en.md`,
-        pdfUrl: `${PJDHIRO_CREATION_PAGES}/synthesis/en/pdf/cross-domain-synthesis-presentation-en.pdf`,
-        htmlUrl: `${PJDHIRO_CREATION_PAGES}/synthesis/en/html/cross-domain-synthesis-presentation-en.html`,
-        generatorModel: CREATION_GUIDE_GENERATOR_MODEL,
-        generated: '2026-03-20',
-    },
-};
-export const STATUS_REPORT_LINKS = {
-    ja: {
-        mdUrl: `${PJDHIRO_CREATION_RAW}/survey/ja/md/survey-status.md`,
-        pdfUrl: `${PJDHIRO_CREATION_PAGES}/survey/ja/pdf/survey-status.pdf`,
-    },
-    en: {
-        mdUrl: `${PJDHIRO_CREATION_RAW}/survey/en/md/survey-status.md`,
-        pdfUrl: `${PJDHIRO_CREATION_PAGES}/survey/en/pdf/survey-status.pdf`,
-    },
-};
-
-export const MODEL_GUIDE_LINKS = [
-    {
-        key: 'general',
-        links: {
-            ja: {
-                mdUrl: `${PJDHIRO_CREATION_RAW}/guides/ja/md/creation-general.md`,
-                pdfUrl: `${PJDHIRO_CREATION_PAGES}/guides/ja/pdf/creation-general.pdf`,
-                generatorModel: CREATION_GUIDE_GENERATOR_MODEL,
-            },
-            en: {
-                mdUrl: `${PJDHIRO_CREATION_RAW}/guides/en/md/creation-general.md`,
-                pdfUrl: `${PJDHIRO_CREATION_PAGES}/guides/en/pdf/creation-general.pdf`,
-                generatorModel: CREATION_GUIDE_GENERATOR_MODEL,
-            },
-        },
-    },
-    {
-        key: 'designer',
-        links: {
-            ja: {
-                mdUrl: `${PJDHIRO_CREATION_RAW}/guides/ja/md/creation-designer.md`,
-                pdfUrl: `${PJDHIRO_CREATION_PAGES}/guides/ja/pdf/creation-designer.pdf`,
-                generatorModel: CREATION_GUIDE_GENERATOR_MODEL,
-            },
-            en: {
-                mdUrl: `${PJDHIRO_CREATION_RAW}/guides/en/md/creation-designer.md`,
-                pdfUrl: `${PJDHIRO_CREATION_PAGES}/guides/en/pdf/creation-designer.pdf`,
-                generatorModel: CREATION_GUIDE_GENERATOR_MODEL,
-            },
-        },
-    },
-    {
-        key: 'expert',
-        links: {
-            ja: {
-                mdUrl: `${PJDHIRO_CREATION_RAW}/guides/ja/md/creation-academic.md`,
-                pdfUrl: `${PJDHIRO_CREATION_PAGES}/guides/ja/pdf/creation-academic.pdf`,
-                generatorModel: CREATION_GUIDE_GENERATOR_MODEL,
-            },
-            en: {
-                mdUrl: `${PJDHIRO_CREATION_RAW}/guides/en/md/creation-academic.md`,
-                pdfUrl: `${PJDHIRO_CREATION_PAGES}/guides/en/pdf/creation-academic.pdf`,
-                generatorModel: CREATION_GUIDE_GENERATOR_MODEL,
-            },
-        },
-    },
-];
+export const DEFAULT_REPORTS_DATA_URL = REVIEWED_RECORDS_URL;
 
 // 正本: docs/evidence-metadata-creation.md §2 (v2.0 — Phase ベース, cs#123)
 export const DEFAULT_PROGRESS_TAXONOMY = [
@@ -397,13 +301,6 @@ export function parseFrontmatter(text) {
     return { meta, body: match[2].trim() };
 }
 
-export function normalizeAssetBaseUrl(url, fallback = DEFAULT_REPORTS_ASSET_BASE) {
-    if (typeof url !== 'string' || !url.trim()) {
-        return fallback;
-    }
-    return url.endsWith('/') ? url : `${url}/`;
-}
-
 export function safeUrl(rawUrl, fallback = '#', baseHref = window.location.href) {
     if (typeof rawUrl !== 'string') return fallback;
     const trimmed = rawUrl.trim();
@@ -488,28 +385,10 @@ export async function resolveFirstAvailablePdfUrl(sources = []) {
     return '';
 }
 
+// 記録はこの repo の md だけを読む。今までの pjdhiro の repo の写しへの読み替えは外した（#134）。
 export function buildMarkdownFetchCandidates(rawUrl) {
     const primary = safeUrl(rawUrl, '');
-    if (!primary) return [];
-
-    const candidates = [primary];
-    if (!/\.md(?:$|[?#])/i.test(primary)) {
-        return candidates;
-    }
-
-    try {
-        const parsed = new URL(primary);
-        const pathParts = parsed.pathname.split('/').filter(Boolean);
-        const assetsIndex = pathParts.findIndex((part) => part === 'assets');
-        if (assetsIndex >= 0) {
-            const filePath = pathParts.slice(assetsIndex).join('/');
-            candidates.push(`${PJDHIRO_RAW_BASE}/${filePath}`);
-        }
-    } catch {
-        // keep primary candidate only
-    }
-
-    return [...new Set(candidates)];
+    return primary ? [primary] : [];
 }
 
 export function looksLikeHtmlDocument(text) {
@@ -518,64 +397,21 @@ export function looksLikeHtmlDocument(text) {
     return sample.startsWith('<!doctype html') || sample.startsWith('<html');
 }
 
-function normalizeProgressLevel(rawLevel, rawStatus) {
-    const level = normalizeProgressLevelId(rawLevel);
-    // v3.0 以前の旧 level → Phase ベース新 level
-    if (level === 'quick_scan') return 'initial_scan';
-    if (level === 'structure_exploration') return 'initial_scan';
-    if (level === 'analysis_complete') return 'cross_reviewed';
-    // v4.2 以前の旧 level → Phase ベース新 level (cs#123)
-    if (level === 'claude_screened') return 'initial_scan';
-    if (level === 'claude_gpt_reviewed') return 'cross_reviewed';
-    if (level === 'api_deepdive') return 'deep_investigated';
-    if (level === 'codex_parallel_deepdive') return 'deep_investigated';
-    if (level) return level;
-
-    // progress_level が空でも published ステータスを根拠に暗黙変換しない。
-    // 値が空の場合は 'not_surveyed' にフォールバックし、console で警告する。
-    if (rawStatus === 'published') {
-        console.warn(`[reports] domain has status=published but empty progress_level — defaulting to not_surveyed. Fix index.json.`);
-    }
-    return 'not_surveyed';
-}
-
 function normalizeReport(report, index) {
     const id = typeof report?.id === 'string' && report.id.trim()
         ? report.id.trim()
         : `D${String(index + 1).padStart(2, '0')}`;
-
-    // v1.0 format uses "name" (slug) instead of "name_ja"; derive display name from slug
-    const rawSlug = typeof report?.slug === 'string' && report.slug.trim()
-        ? report.slug.trim()
-        : (typeof report?.name === 'string' ? report.name.trim() : '');
-
-    const nameJa = typeof report?.name_ja === 'string' && report.name_ja.trim()
-        ? report.name_ja.trim()
-        : (slugToTitle(rawSlug) || id);
-
-    const fallbackEn = slugToTitle(rawSlug) || nameJa;
-    const nameEn = typeof report?.name_en === 'string' && report.name_en.trim()
-        ? report.name_en.trim()
-        : fallbackEn;
-
-    const mdRaw = report?.md;
-    const pdfRaw = report?.pdf;
+    const rawSlug = typeof report?.slug === 'string' ? report.slug.trim() : '';
+    const nameJa = hasText(report?.name_ja) ? report.name_ja.trim() : (slugToTitle(rawSlug) || id);
+    const nameEn = hasText(report?.name_en) ? report.name_en.trim() : (slugToTitle(rawSlug) || nameJa);
 
     return {
         id,
         slug: rawSlug,
         nameJa,
         nameEn,
-        status: report?.status === 'published' ? 'published' : 'planned',
-        progressLevel: normalizeProgressLevel(report?.progress_level, report?.status),
-        generatorModel: typeof report?.generator_model === 'string' ? report.generator_model.trim() : '',
-        progressNote: typeof report?.progress_note === 'string' ? report.progress_note.trim() : '',
-        generated: typeof report?.generated === 'string' ? report.generated.trim() : '',
-        mdPath: typeof mdRaw === 'string' ? mdRaw.trim() : '',
-        pdfPath: typeof pdfRaw === 'string' ? pdfRaw.trim() : '',
-        mdByLang: typeof mdRaw === 'object' && mdRaw !== null ? mdRaw : null,
-        pdfByLang: typeof pdfRaw === 'object' && pdfRaw !== null ? pdfRaw : null,
-        thumbnail: typeof report?.thumbnail === 'string' ? report.thumbnail.trim() : '',
+        progressLevel: normalizeProgressLevelId(report?.progress_level) || 'not_surveyed',
+        generated: hasText(report?.reviewed) ? report.reviewed.trim() : '',
     };
 }
 
@@ -607,65 +443,6 @@ export function normalizeModalSources({ mdUrl = '', pdfUrl = '', sources = [] } 
     const merged = Array.isArray(sources) ? [...sources] : [];
     if (mdUrl) merged.push({ mdUrl, pdfUrl });
     return dedupeSources(merged);
-}
-
-function withEnglishAssetSuffix(path) {
-    if (typeof path !== 'string' || !path.trim()) return '';
-    const trimmed = path.trim();
-    if (/-en(?=\.[a-z0-9]+(?:[?#].*)?$)/i.test(trimmed)) {
-        return trimmed;
-    }
-    if (/-ja(?=\.[a-z0-9]+(?:[?#].*)?$)/i.test(trimmed)) {
-        return trimmed.replace(/-ja(?=\.[a-z0-9]+(?:[?#].*)?$)/i, '-en');
-    }
-    if (/\.[a-z0-9]+(?:[?#].*)?$/i.test(trimmed)) {
-        return trimmed.replace(/(\.[a-z0-9]+(?:[?#].*)?)$/i, '-en$1');
-    }
-    return `${trimmed}-en`;
-}
-
-function hasExplicitEnglishDirectory(path) {
-    if (typeof path !== 'string') return false;
-    return /\/en\/(?:md|pdf)\//i.test(path);
-}
-
-function buildLocalizedSourceCandidates(source, lang = 'ja') {
-    const normalizedLang = normalizeLang(lang);
-    const baseSource = {
-        mdUrl: safeUrl(source?.mdUrl, ''),
-        pdfUrl: safeUrl(source?.pdfUrl, ''),
-        generatorModel: hasText(source?.generatorModel) ? source.generatorModel.trim() : '',
-        generated: hasText(source?.generated) ? source.generated.trim() : '',
-    };
-
-    if (normalizedLang !== 'en') {
-        return dedupeSources([baseSource]);
-    }
-
-    const enSource = {
-        mdUrl: safeUrl(
-            hasExplicitEnglishDirectory(baseSource.mdUrl) ? baseSource.mdUrl : withEnglishAssetSuffix(baseSource.mdUrl),
-            '',
-        ),
-        pdfUrl: safeUrl(
-            hasExplicitEnglishDirectory(baseSource.pdfUrl) ? baseSource.pdfUrl : withEnglishAssetSuffix(baseSource.pdfUrl),
-            '',
-        ),
-        generatorModel: baseSource.generatorModel,
-        generated: baseSource.generated,
-    };
-    return dedupeSources([enSource]);
-}
-
-export function resolveLocalizedSources(linksByLang, lang = 'ja') {
-    const normalizedLang = normalizeLang(lang);
-    const primary = linksByLang?.[normalizedLang];
-    const sources = [];
-
-    if (primary) {
-        sources.push(...buildLocalizedSourceCandidates(primary, normalizedLang));
-    }
-    return dedupeSources(sources);
 }
 
 // 分野の報告は、一次情報で確かめ直した記録（cs/evidence/evidence-Dxx-*.md）だけを読む（#73）。
@@ -700,13 +477,6 @@ export function buildJapaneseDomainUrl(domainId, baseHref = window.location.href
     return url.href;
 }
 
-export function resolveDomainThumbnailUrl(report) {
-    if (typeof report?.thumbnail === 'string' && report.thumbnail.trim()) {
-        return `${PJDHIRO_CREATION_PAGES}/${report.thumbnail.trim()}`;
-    }
-    return '';
-}
-
 export function countReportsByProgressLevel(reports = []) {
     return reports.reduce((counts, report) => {
         const level = normalizeProgressLevelId(report?.progressLevel);
@@ -716,32 +486,25 @@ export function countReportsByProgressLevel(reports = []) {
     }, {});
 }
 
-export async function loadReviewedRecords(url = REVIEWED_RECORDS_URL, baseHref = window.location.href) {
-    try {
-        const response = await fetch(url, { cache: 'no-store' });
-        if (!response.ok) return new Map();
-        const payload = await response.json();
-        const entries = Array.isArray(payload?.domains) ? payload.domains : [];
-        const map = new Map();
-        entries.forEach((entry) => {
-            const id = normalizeDomainId(entry?.id);
-            const file = hasText(entry?.file) ? entry.file.trim() : '';
-            if (!id || !file || !/\.md$/i.test(file)) return;
-            const mdUrl = safeUrl(`${REVIEWED_RECORDS_BASE}${file}`, '', baseHref);
-            if (!mdUrl) return;
-            // 英語の記録は en/ に、日本語と同じファイル名で置く（docs/cs-review/README.md「記録の形」）。
-            const fileEn = hasText(entry?.en) ? entry.en.trim() : '';
-            const mdUrlEn = fileEn === `en/${file}` ? safeUrl(`${REVIEWED_RECORDS_BASE}${fileEn}`, '', baseHref) : '';
-            map.set(id, {
-                mdUrl,
-                mdUrlEn,
-                reviewed: hasText(entry?.reviewed) ? entry.reviewed.trim() : '',
-            });
+export function buildReviewedRecords(payload, baseHref = window.location.href) {
+    const entries = Array.isArray(payload?.domains) ? payload.domains : [];
+    const map = new Map();
+    entries.forEach((entry) => {
+        const id = normalizeDomainId(entry?.id);
+        const file = hasText(entry?.file) ? entry.file.trim() : '';
+        if (!id || !file || !/\.md$/i.test(file)) return;
+        const mdUrl = safeUrl(`${REVIEWED_RECORDS_BASE}${file}`, '', baseHref);
+        if (!mdUrl) return;
+        // 英語の記録は en/ に、日本語と同じファイル名で置く（docs/cs-review/README.md「記録の形」）。
+        const fileEn = hasText(entry?.en) ? entry.en.trim() : '';
+        const mdUrlEn = fileEn === `en/${file}` ? safeUrl(`${REVIEWED_RECORDS_BASE}${fileEn}`, '', baseHref) : '';
+        map.set(id, {
+            mdUrl,
+            mdUrlEn,
+            reviewed: hasText(entry?.reviewed) ? entry.reviewed.trim() : '',
         });
-        return map;
-    } catch {
-        return new Map();
-    }
+    });
+    return map;
 }
 
 export function attachReviewRecords(reports = [], reviewedMap = new Map()) {
@@ -752,22 +515,9 @@ export function attachReviewRecords(reports = [], reviewedMap = new Map()) {
     });
 }
 
-export async function loadGuidesGeneratedAt(url = GUIDES_MANIFEST_URL) {
-    try {
-        const response = await fetch(url, { cache: 'no-store' });
-        if (!response.ok) return '';
-        const payload = await response.json();
-        return typeof payload?.generated_at === 'string' ? payload.generated_at : '';
-    } catch {
-        return '';
-    }
-}
-
 export async function loadReportsData({
     dataUrl = DEFAULT_REPORTS_DATA_URL,
     lang = 'ja',
-    assetBaseUrl = DEFAULT_REPORTS_ASSET_BASE,
-    assetMdBaseUrl = DEFAULT_REPORTS_MD_ASSET_BASE,
     search = window.location.search,
 } = {}) {
     const response = await fetch(dataUrl, { cache: 'no-store' });
@@ -775,7 +525,9 @@ export async function loadReportsData({
         throw new Error(`HTTP ${response.status}`);
     }
 
-    let payload = await response.json();
+    const reviewedPayload = await response.json();
+    // 格子に並べる分野は reviewed.json の行。シナリオ（?reportsScenario=）は reports の形で上書きする。
+    let payload = { reports: Array.isArray(reviewedPayload?.domains) ? reviewedPayload.domains : [] };
     let activeScenario = null;
     const scenarioName = getReportsScenarioName(search);
     const scenarioUrl = resolveReportsScenarioUrl(scenarioName);
@@ -794,21 +546,16 @@ export async function loadReportsData({
         }
     }
 
-    const normalizedAssetBaseUrl = normalizeAssetBaseUrl(assetBaseUrl);
-    const normalizedAssetMdBaseUrl = normalizeAssetBaseUrl(assetMdBaseUrl, DEFAULT_REPORTS_MD_ASSET_BASE);
-    const rawReports = Array.isArray(payload?.reports) ? payload.reports : (Array.isArray(payload?.domains) ? payload.domains : []);
-    const reviewedMap = await loadReviewedRecords();
-    const reports = attachReviewRecords(sortReportsById(rawReports.map(normalizeReport)), reviewedMap);
+    const reviewedMap = buildReviewedRecords(reviewedPayload);
+    const reports = attachReviewRecords(sortReportsById(payload.reports.map(normalizeReport)), reviewedMap);
     const progressTaxonomy = normalizeProgressTaxonomy(getManifestProgressTaxonomy(payload), reports);
 
     return {
         lang: normalizeLang(lang),
-        generatedAt: typeof payload?.generated_at === 'string' ? payload.generated_at : '',
+        generatedAt: hasText(reviewedPayload?.updated) ? reviewedPayload.updated.trim() : '',
         reports,
         progressTaxonomy,
         progressLevelCounts: countReportsByProgressLevel(reports),
         activeScenario,
-        assetBaseUrl: normalizedAssetBaseUrl,
-        assetMdBaseUrl: normalizedAssetMdBaseUrl,
     };
 }

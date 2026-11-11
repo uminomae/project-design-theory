@@ -4,14 +4,15 @@
  * Generate crawler-visible static links to every report page (#59).
  *
  * トップの報告カードは JS 描画のため、JS を実行しないクローラー（GPTBot・ClaudeBot 等）からは
- * 本文ページへ辿れない。pjdhiro の manifest から全報告ページの素の <a href> を生成し、
+ * 本文ページへ辿れない。cs/evidence/reviewed.json から、30 分野の記録の素の <a href> を生成し、
  * 次の3か所を書き換える:
  *
  *   1. index.html  — <noscript> 内の static-nav マーカー間（JS 有効時の見た目は変わらない）
  *   2. llms.txt    — static-nav マーカー間（Markdown のリンク一覧）
  *   3. sitemap.xml — 全体を再生成（noindex のページは載せない）
  *
- * 本文ページは pjdhiro の Jekyll が `assets/creation/{path}.md` → `{path}/` で配信している。
+ * 前は pjdhiro の repo の目録（manifests/domains.json）を読んでいた。pjdhiro の repo は使わないので、
+ * 分野の並びと名前は reviewed.json だけから取る（#134・2026-11-12）。
  */
 
 import { execFileSync } from 'node:child_process';
@@ -19,14 +20,11 @@ import { existsSync } from 'node:fs';
 import { readFile, readdir, writeFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { findPjdhiroDir } from '../../scripts/pjdhiro-dir.mjs';
 
 const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(SCRIPT_DIR, '..');
-const DEFAULT_PUBLISH_REPO = findPjdhiroDir(ROOT, 'assets/creation');
 
 const SITE_URL = 'https://uminomae.github.io/project-design-theory/cs/';
-const CREATION_PAGES_URL = 'https://uminomae.github.io/pjdhiro/assets/creation/';
 
 // cs 側の静的ページを置くディレクトリ。新しい静的ページ（例: #263 対応表）を足したらここへ追加する
 const LOCAL_PAGE_DIRS = ['reader'];
@@ -43,21 +41,15 @@ function printHelp() {
   console.log('  node scripts/generate-static-nav.mjs [options]');
   console.log('');
   console.log('Options:');
-  console.log('  --publish-repo <path>  Publish repo root (default: pjdhiro beside this repo)');
   console.log('  --check                Report whether outputs are up to date (exit 1 if not)');
   console.log('  --help, -h             Show this help');
 }
 
 function parseArgs(argv) {
-  const options = { publishRepo: DEFAULT_PUBLISH_REPO, check: false };
+  const options = { check: false };
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
     if (arg === '--help' || arg === '-h') return { help: true, options };
-    if (arg === '--publish-repo') {
-      options.publishRepo = resolve(String(argv[i + 1] || '').trim());
-      i += 1;
-      continue;
-    }
     if (arg === '--check') {
       options.check = true;
       continue;
@@ -99,65 +91,31 @@ function extractMarkdownTitle(text) {
   return heading ? stripInlineMarkdown(heading[1]) : '';
 }
 
-function pageUrlForMarkdown(relPath) {
-  return `${CREATION_PAGES_URL}${relPath.replace(/\.md$/, '/')}`;
-}
-
 async function readJson(path) {
   return JSON.parse(await readFile(path, 'utf8'));
 }
 
-/**
- * pjdhiro に実在する Markdown だけをリンクにする（manifest にあっても未配置ならリンク切れになるため）。
- * 最初の見出しが「1. …」のような節見出しなら文書の題名ではないので fallbackTitle を使う
- */
-async function makeReportLink(publishRepo, relPath, warnings, fallbackTitle = '') {
-  if (!relPath) return null;
-  const absPath = join(publishRepo, 'assets', 'creation', relPath);
-  if (!existsSync(absPath)) {
-    warnings.push(`missing in publish repo: assets/creation/${relPath}`);
-    return null;
-  }
-  let title = extractMarkdownTitle(await readFile(absPath, 'utf8'));
-  if (!title || /^\d+(\.\d+)*\.?\s/.test(title)) {
-    warnings.push(`no document title (first heading: "${title}"): assets/creation/${relPath}`);
-    title = fallbackTitle || title;
-  }
-  return { url: pageUrlForMarkdown(relPath), title: title || relPath };
-}
-
-/** cs/evidence/reviewed.json の分野を、manifest の順に、記録のページ（?domain=Dxx）と記録の md へのリンクにする */
-async function collectReviewedDomainItems(domainsManifest, warnings) {
+/** cs/evidence/reviewed.json の分野を、id の順に、記録のページ（?domain=Dxx）と記録の md へのリンクにする */
+async function collectReviewedDomainItems() {
   const reviewed = await readJson(join(ROOT, 'evidence', 'reviewed.json'));
-  const fileById = new Map((reviewed.domains || []).map((entry) => [entry.id, entry.file]));
+  const rows = [...(reviewed.domains || [])].sort((a, b) => String(a.id).localeCompare(String(b.id), 'en', { numeric: true }));
   const items = [];
-  for (const report of domainsManifest.reports || []) {
-    const file = fileById.get(report.id);
-    if (!file) {
-      warnings.push(`no reviewed record for ${report.id} (cs/evidence/reviewed.json)`);
-      continue;
-    }
-    const text = await readFile(join(ROOT, 'evidence', file), 'utf8');
-    const title = extractMarkdownTitle(text).split('：')[0].trim() || report.name_ja || report.id;
+  for (const row of rows) {
+    const text = await readFile(join(ROOT, 'evidence', row.file), 'utf8');
+    // 題は記録の題の「：」の前（分野の名前）。番号（D01 など）は出さない（#73 の J9）。
+    const title = extractMarkdownTitle(text).split('：')[0].trim() || row.name_ja || row.id;
     items.push({
-      ja: { url: `${SITE_URL}?domain=${report.id}`, mdUrl: `${SITE_URL}evidence/${file}`, title },
+      ja: { url: `${SITE_URL}?domain=${row.id}`, mdUrl: `${SITE_URL}evidence/${row.file}`, title },
       en: null,
     });
   }
   return items;
 }
 
-async function collectReportGroups(publishRepo, warnings) {
-  const manifestDir = join(publishRepo, 'assets', 'creation', 'manifests');
-  const domains = await readJson(join(manifestDir, 'domains.json'));
-
-  // 30 分野は、一次情報で確かめ直した記録（cs/evidence/evidence-Dxx-*.md）へ向ける（#73）。今までの報告は
-  // 2026-11-10 に日本語を記録への転送にし、英語版を下げたので、pjdhiro の md は読まない。英語の記録は無い。
-  // 題は記録の題の「：」の前（分野の名前）。番号（D01 など）は出さない（#73 の J9）。
-  const domainItems = await collectReviewedDomainItems(domains, warnings);
-
+async function collectReportGroups() {
   // 旧ガイド三本・横断分析・領域横断テーマ・テーマの検証・旧「調査内容」は、照合し直す前の主張のままだったので、
-  // 2026-11-10 に一覧から外した（Issue #111）。照合し直した版を作ったら、その版の組をここに足す。
+  // 2026-11-10 に一覧から外した（Issue #111）。昔の版は cs/archive/creation/ にある。照合し直した版を作ったら、その版の組をここに足す。
+  const domainItems = await collectReviewedDomainItems();
   return [
     { headingJa: '30領域調査報告', headingEn: '30 Domain Reports', items: domainItems },
   ].map((group) => ({ ...group, items: group.items.filter((item) => item.ja || item.en) }));
@@ -320,12 +278,8 @@ async function main() {
     printHelp();
     return;
   }
-  if (!existsSync(join(options.publishRepo, 'assets', 'creation', 'manifests'))) {
-    throw new Error(`publish repo not found: ${options.publishRepo} (use --publish-repo)`);
-  }
-
   const warnings = [];
-  const groups = await collectReportGroups(options.publishRepo, warnings);
+  const groups = await collectReportGroups();
   const localPages = await collectLocalPages();
 
   const indexPath = join(ROOT, 'index.html');

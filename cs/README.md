@@ -100,7 +100,6 @@ Three.js による創造プロセスの視覚表現と、全30領域の調査レ
 
 | 場所 / Where | 概要 / Description |
 |---|---|
-| [pjdhiro](https://github.com/uminomae/pjdhiro) | GitHub Pages ホスティング。レポート PDF/MD の配信、ブログ |
 | [awareness-space](https://uminomae.github.io/project-design-theory/as/)（この repo の `as/`） | 「意識とは何か」の探索 — 内受容感覚・予測-誤差ループ・生存-信頼評価・抱持の4層モデル |
 | [kesson-space](https://uminomae.github.io/project-design-theory/ks/)（この repo の `ks/`） | 欠損駆動思考の3D体験空間 |
 | [project-design](https://uminomae.github.io/project-design-theory/)（この repo の `pd/`） | プロジェクトデザイン論 — Doing と Being を包含する構想・設計・実行 |

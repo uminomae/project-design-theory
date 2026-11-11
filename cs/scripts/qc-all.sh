@@ -14,8 +14,6 @@ set -uo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 CS_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
-. "${CS_DIR}/../scripts/pjdhiro-dir.sh"
-PJDHIRO_DIR="$(find_pjdhiro_dir "$CS_DIR" assets/creation)"
 cd "$CS_DIR"
 
 DEEP=0
@@ -66,33 +64,16 @@ run "manifest 整合 + 原典重複 (validate-manifest-sync)" \
 run "dashboard-stats 鮮度 (generate-dashboard-stats --check)" \
     node scripts/generate-dashboard-stats.mjs --check
 
-if [[ -d "$PJDHIRO_DIR" ]]; then
-    run "domains.json 整合 (generate-domains-json --check)" \
-        node scripts/generate-domains-json.mjs --check
-    run "報告ページへの静的リンク鮮度 (generate-static-nav --check)" \
-        node scripts/generate-static-nav.mjs --check
-else
-    skip_msg "domains.json 整合 — 配信先 pjdhiro repo が無い(worktree等)"
-    skip_msg "報告ページへの静的リンク鮮度 — 配信先 pjdhiro repo が無い(worktree等)"
-fi
+run "報告ページへの静的リンク鮮度 (generate-static-nav --check)" \
+    node scripts/generate-static-nav.mjs --check
 
 # --- 3. hooks 健全性 ---
 # 今までの creation-space の .claude/hooks.json を見る verify-hooks.sh は、この repo に hooks が無いので外した
 # （docs/harness-pending/README.md・2026-11-08）。
 
-# --- 4. ドメインレポート日付一致 ---
-run "ドメインレポート日付 (verify-domain-dates --all)" \
-    bash scripts/verify-domain-dates.sh --all
-
-# --- 5. ガイド evidence 制約 (pjdhiro 依存) ---
-if [[ -d "$PJDHIRO_DIR" ]]; then
-    run "ガイド evidence 制約 (validate-guide-evidence)" \
-        bash scripts/validate-guide-evidence.sh
-    run "スライド URL 整合 (verify-slide-urls)" \
-        bash scripts/verify-slide-urls.sh
-else
-    skip_msg "ガイド/スライド検査 — 隣接 pjdhiro repo が無い"
-fi
+# --- 4・5. ドメインレポートの日付・ガイドの evidence 制約・スライドの URL ---
+# どれも pjdhiro の repo の報告・ガイド・スライドを見る検査だった。pjdhiro の repo を使わないので、
+# 検査ごと外した（#134・2026-11-12。昔の版は cs/archive/creation/）。
 
 # --- 6. nl-debug 静的検査 (manifest 計数 / 死参照 / 書誌照合) ---
 if [[ -d ".claude/skills/nl-debug/scripts" ]]; then

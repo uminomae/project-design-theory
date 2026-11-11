@@ -7,14 +7,15 @@ const FLOW_X_MIN = -150.0;
 const FLOW_X_MAX = 150.0;
 const FLOW_FULL_HALF_Y = 15.0;
 const FLOW_FULL_HALF_Z = 9.0;
-const CREATION_GUIDE_MD_BASE_URL = 'https://raw.githubusercontent.com/uminomae/pjdhiro/main/assets/publications/creation/md/guides';
-const CREATION_GUIDE_PDF_BASE_URL = 'https://uminomae.github.io/pjdhiro/assets/publications/creation/pdf/guides';
+// 前は、この形を押すと旧ガイド（一般向け）の下書きと PDF を pjdhiro のサイトから開いていた。旧ガイドは照合し直す前の版で、
+// pjdhiro の repo も使わないので、開く先を外した（#134・2026-11-12。昔の版は cs/archive/creation/guides/）。URL が空なら押しても開かない。
 const CREATION_LINK_DEFS = [
     {
         id: 1,
         label: 'Creation Field',
-        draftUrl: `${CREATION_GUIDE_MD_BASE_URL}/creation-general-draft.md`,
-        sourceUrl: `${CREATION_GUIDE_PDF_BASE_URL}/creation-general.pdf`,
+        draftUrl: '',
+        sourceUrl: '',
+        interactive: false,
         shape: 'crystal',
         pointCount: 3200,
     },

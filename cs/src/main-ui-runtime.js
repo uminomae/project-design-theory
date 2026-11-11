@@ -11,13 +11,11 @@ export function initMainPageUiRuntime({
     initialLang,
     initialGraphicMode,
     applyGraphicMode,
-    setArticlesLanguage,
     setReportsLanguage,
 }) {
     initScrollUI();
     initLanguageToggle(initialLang, (currentLang) => {
         applyPageLanguage(currentLang);
-        setArticlesLanguage(currentLang);
         if (typeof setReportsLanguage === 'function') {
             setReportsLanguage(currentLang);
         }

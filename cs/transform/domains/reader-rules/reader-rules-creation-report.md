@@ -1,5 +1,8 @@
 # 変換ルール: 調査報告レポート v2.2
 
+> 2026-11-12（#134）：下の URL の `{今までの公開の置き場}` は、pjdhiro のサイト（`uminomae.github.io/pjdhiro`）だった。pjdhiro の repo とサイトは使わないことになったので、リンクを外した。この手順の昔の版の記録として残す。
+
+
 **対象コンテンツ**: M2スピノル5段階モデル（場→波→縁→渦→束）の構造類似性調査結果
 **対象読者**: 創造のモデルの理論的妥当性に関心がある人
 **目的**: 30領域の横断的調査で何がわかったかを報告する
@@ -291,7 +294,7 @@ H1 見出しの直後に配置する:
 ```markdown
 # 数学
 
-![数学 — 5段階モデルとの構造対応図](https://uminomae.github.io/pjdhiro/assets/creation/img/svg/domains/ja/domain-D01-mathematics.svg)
+![数学 — 5段階モデルとの構造対応図]({今までの公開の置き場}/assets/creation/img/svg/domains/ja/domain-D01-mathematics.svg)
 
 > **立ち位置明示**
 > ...

@@ -1,5 +1,4 @@
-> **正本移転**: このディレクトリの正本は `pjdhiro/assets/creation/kb/` に移行しました。
-> このコピーは参照互換のために残しています。
+> **正本**：このディレクトリが正本です。2026-03 に一度 pjdhiro の repo（`assets/creation/kb/`）へ移しましたが、pjdhiro の repo は使わないことになり（2026-11-12・#134）、そちらの写しの昔の版は `../archive/creation/kb/` にしまいました。創造の5段階の今の定義の正本は `schema/five-stages.md` です。
 
 # knowledge/ — ナレッジベース
 
@@ -52,5 +51,4 @@
 
 ## 移行状態
 
-正本は `pjdhiro/assets/creation/kb/` に移行済み（#218）。
-このディレクトリは参照互換のために残存。
+2026-03 に正本を pjdhiro の repo の `assets/creation/kb/` へ移した（#218）が、2026-11-12 に pjdhiro の repo を使わないことにしたので（#134）、正本はこのディレクトリに戻した。pjdhiro の repo の側の昔の版は `../archive/creation/kb/`。
