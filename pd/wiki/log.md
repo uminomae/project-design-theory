@@ -857,3 +857,8 @@ compile 実行の履歴。append-only。
 - scope: 出典ページ 1（`sources/Panksepp-Barrett_1998_panic-grief-constructed-emotion`。Barrett の側は組 A が直した）
 - sources: Panksepp 1998 の本は開けなかった（本で、無料で読める写しは無い）。Panksepp 2011（PLoS ONE、意識とはの台帳 A04-S27 の手元の写し）は全文を見たが、PANIC/GRIEF の回路の部位とオピオイドの細部は書かれていない。Eisenberger ら 2003 の要旨（PubMed 14551436）
 - pages: 七つの系の名前は合った。「Eisenberger 2003 が20年後に実証した」は、要旨の言い方（仮説を試し、前帯状皮質が仲間外れのときに強く働いた）に直した。「このページの出所」に Panksepp の側の照らした所と照らしていない所を足した（`docs/rules/sources.md` §10-6）
+
+## [2026-11-12] check | Husserl の第五省察のページ（原典と照らせず。20 ページの組 B）
+- scope: 出典ページ 1（`sources/Husserl_1931_cartesian-meditations-v`）
+- sources: 無し。独語の Husserliana I・Cairns の英訳・和訳はどれも本で、Internet Archive の写しは限定の貸し出しだけ。Open Commons of Phenomenology の頁は 403、独語の版元の目次の見本はつながらなかった
+- pages: 頭に「このページの出所」を置き、ページの全部が LLM の学習時の知識から書かれ、原典と照らしていないと書いた（`docs/rules/sources.md` §10-6）。書誌の access_status の行（作業の印）を外した。中身は直していない（第五省察の節の範囲 §42–64 も確かめていない）
