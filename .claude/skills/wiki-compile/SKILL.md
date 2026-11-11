@@ -13,7 +13,7 @@ description: pd/wiki/ のページを、今の正本（pd・cs・ks・as の kno
 2. **古いページを片付けるとき。** `node pd/scripts/wiki-stale-check.mjs --list`（または `pd/wiki/health/freshness-report.md` の WL-3）が、出典が `compiled` 日より後に変わったページを並べる。`compiled` と同じ日に出典が変わったときは、ページの最後の commit の時刻と出典の commit の時刻で比べ、ページを作り直したあとに出典が直ったものも並べる（「（ページを作り直したあと）」と出る。2026-11-11・#111 の wiki の直しのセッションの指摘）。
 3. **新しいページを作るとき。** 概念・人物・出典・横断のページ。
 
-作り直すまでもないと確かめたページ（出典の直しが誤字や書式だけ、など）は、本文を変えずに `compiled` を今日にする。`compiled` は「このページを出典と照らした最後の日」で、WL-3 はこの日と出典の commit の日付を比べる。
+作り直すまでもないと確かめたページ（出典の直しが誤字や書式だけ、など）は、本文を変えずに `compiled` を今日にする。`compiled` は「このページを出典と照らした最後の日」で、WL-3 はこの日と出典の commit の日付を比べる。`compiled` がもう今日のときは、日付を変えられないので、front matter の `checked` に今の時刻を書く（例 `checked: "2026-11-11T23:40+09:00"`。`date -Iminutes` の形）。WL-3 は、ページの最後の commit の時刻と `checked` の遅い方より後に出典が直ったものだけを並べる。前は、同じ日に中身を変えずに確かめたページが、ページを触らない限り一覧に残り続け、区切るたびに同じページの指令が出た（2026-11-11・#133 のあとの wiki の作り直しで、抱持・プロジェクトデザイン）。
 
 ## 何を材料にするか
 
@@ -31,6 +31,7 @@ source:
   - repo: "pd"                                 # pd・cs・ks・as（今までの repo の名前も読めるが、新しく書くときは今の名前）
     path: "knowledge/research/love-driven-dev/READER-love-driven-dev.md"   # そのディレクトリからのパス
 compiled: "2026-11-10"                         # 出典と照らした日
+checked: "2026-11-11T23:40+09:00"              # 任意。compiled が今日のまま、中身を変えずに照らし直した時刻
 tags: [concept, ...]                           # 構造のタグ（concept・keyword・person・cross-ref・source）を一つ
 status: 暫定                                   # 探索的・暫定・正典・LLM構成物・要改訂
 review_state: 未レビュー                        # レビュー済み にするのは pjdhiro だけ
@@ -89,7 +90,7 @@ related_concepts: [...]                        # 任意
 wiki の作り直し（区切ったセッション <セッションの記録の名前> から）。
 .claude/skills/wiki-compile/SKILL.md を読み、その手順で次のページを今の正本から作り直す（未作成は出典ノートから作る）。
 <node pd/scripts/wiki-stale-check.mjs --session-end --log … の一覧をそのまま>
-- 正本に無いことは足さない。引用は正本の文のまま。直す必要が無いと確かめたページは compiled を今日にする。
+- 正本に無いことは足さない。引用は正本の文のまま。直す必要が無いと確かめたページは compiled を今日にする（compiled がもう今日なら checked に今の時刻を書く）。
 - 終わったら pd/wiki/log.md に一行足し、node pd/scripts/wiki-stale-check.mjs --session-start で、渡した一覧が出なくなったこと（--session-end は印を付けるので、確かめには使わない）、bash scripts/check.sh が通ることを見る。
 - 本体の checkout の develop に取り込んで push する。main へは送らない（公開は pjdhiro が決める）。
 - 済んだら、直したページと残したことを短く報告する。

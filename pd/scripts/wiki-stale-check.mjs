@@ -59,7 +59,7 @@ function message(target, hits) {
     `これを出典にする wiki のページ（${hits.length}）：`,
     ...hits.map((h) => `  - pd/wiki/${h.rel}（compiled ${h.compiled || "不明"}）`),
     "同じ作業で、.claude/skills/wiki-compile/SKILL.md に沿ってこれらのページを今の正本から作り直し、正本と一緒に commit する。",
-    "直す必要が無いと確かめたページは、compiled を今日にする。どちらも pd/wiki/log.md に一行足す。",
+    "直す必要が無いと確かめたページは、compiled を今日にする（compiled がもう今日なら、checked に今の時刻を書く）。どちらも pd/wiki/log.md に一行足す。",
   ];
   return lines.join("\n");
 }
