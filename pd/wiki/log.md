@@ -827,3 +827,8 @@ compile 実行の履歴。append-only。
 - scope: 出典ページ 1（`sources/Hatfield_1993_emotional-contagion`）
 - sources: 上げた人と権利の分からない写し（binknyc.com の PDF。Word で作った原稿の形・13 頁で、誌面の版ではない）の全文。出版社と著者のサイトの版は find-source で見つからなかった（著者のサイトの昔の記録にあったのは情動伝染の尺度だった）
 - pages: 原典に無かった言い方を直した。三つの段は原典では「三つの命題」で、二つ目は求心性のフィードバックだけでなく、中枢の指令・求心性のフィードバック・自己知覚の三つの道を挙げ、どれが担うかは調べる必要があると書く。「数百ミリ秒」「閾下提示」「前反省的」「認知的共感の下位層」は原典に無く、原典の言葉（21 ミリ秒の同期、Dimberg 1982、発達の理論家による区別）に直した。定義は 1992 年の章からの引用で、概念をこの論文が導入したのではないので、そう書いた。頭に「このページの出所」を置き、写しの性格と照らしていない所を書いた（`docs/rules/sources.md` §10-6）。書誌の access_status の行を、読んだ写しの行に替えた。概念のページ `concepts/情動伝染` にも「三段階」「求心性伝達」の言い方が残っている（このページの外なので直していない）
+
+## [2026-11-12] compile | 区切るときの知らせの六ページ（pjdhiro の repo を使う所を外した #134 ほかのあと）
+- scope: 概念ページ 3（抱持・Love 駆動開発・プロジェクトデザイン）・横断ページ 3（awareness-space-overview・kesson-space-overview・concept-entity-map）
+- sources: `as/index.html`・`ks/index.html`・`pd/src/content/site-data.mjs`（と `pd/index.html` のピル）・`pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`
+- pages: 意識とはの概観は、外された畳み「これまでの記録 — 発散のノート」の記述を外し、「調べてきたこと」の一覧の先頭の「論点と回答」を足した。欠損駆動思考の概観は、外された記事の一覧を畳みの中身から外した。プロジェクトデザインは、コミュニケーションの側のピルが欠損駆動思考だけになったのに合わせた。抱持・Concept-Entity Map・Love 駆動開発は、出典の直し（メタ情報・リンク・出典の差し替え・BLOG と記事の段の削除）がページの中身に当たらないことを確かめ、compiled を今日にした（Love 駆動開発は checked）
