@@ -104,8 +104,8 @@ for (const rel of htmlFiles) {
 }
 
 // wiki の出典ページ（pd/wiki/sources/）：一ページが一つの原典なので、URL が一つも無いページを数える。
-// 2026-11-12 に 13 ページ。同じ日に 9 ページに張り、残りは間主観性のまとめの 4 ページ（中の著作 50 ほどにどれもリンクが無い。扱いは pjdhiro が決める）。
-// 0 にしたら、--strict wiki を付けて止める側に上げる。
+// 2026-11-12 に 13 ページあり、同じ日に 0 にした（間主観性のまとめの 4 ページは、主要著作 49 に一つずつ張った。pjdhiro「著作ごとに張る」）。
+// scripts/check.sh は --strict all,wiki で止める。
 const wdir = path.join(root, 'pd/wiki/sources');
 if (fs.existsSync(wdir)) {
   const noUrl = fs.readdirSync(wdir).filter((f) => f.endsWith('.md') && !/https?:\/\//.test(fs.readFileSync(path.join(wdir, f), 'utf8')));

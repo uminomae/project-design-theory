@@ -136,3 +136,23 @@ Tomasello の理論が対象命題に対して持つ含意は決定的である:
 3系列はいずれも、間主観性が生存と「並行する」補助的機能ではなく、**生存を可能にする基盤条件**であることを異なるレベルで示す。Mbiti は存在論的に、Mauss は社会構造的に、Tomasello は認知進化的に、同一の命題に収束する。
 
 既存の神経科学・疫学エビデンス（Eisenberger, Coan, Holt-Lunstad, Cole 等）が「間主観性の断絶は生存を脅かす」ことを示すのに対し、本ノートの3系列は「間主観性はそもそも生存の前提条件である」ことを示す。この区別は重要である。前者は「なくなると困る」、後者は「なければ始まらない」を意味する。
+
+## 確かめ先（2026-11-12 に足した）
+
+主要著作ごとの書誌の記録。DOI は Crossref で、Internet Archive は書誌の記録（題・著者・年・版元）で、Open Library・SAT・GRETIL は開いて題を確かめた。このノートは原典の本文と照らしていない。「限定の貸し出し」は、印刷物を読むのが難しい人向けの貸し出しだけのもの。
+
+- Mbiti, J.S., *African Religions and Philosophy* (1969) — [Internet Archive（貸し出し）](https://archive.org/details/africanreligions0000mbit)（1969 年 Praeger 版）
+- Tutu, D., *No Future Without Forgiveness* (1999) — [Internet Archive（限定の貸し出し）](https://archive.org/details/nofuturewithoutf00tutu_0)
+- Menkiti, I.A., "Person and Community in African Traditional Thought" (1984) — [所収の Wright (ed.) *African Philosophy: An Introduction* 第 3 版（1984）の Open Library の書誌](https://openlibrary.org/books/OL3183199M)
+- Gyekye, K., *Tradition and Modernity* (1997)、批判的対話として — [DOI 10.1093/acprof:oso/9780195112252.001.0001](https://doi.org/10.1093/acprof:oso/9780195112252.001.0001)
+- Wiredu, K., *Cultural Universals and Particulars* (1996) — [Internet Archive（限定の貸し出し）](https://archive.org/details/culturaluniversa00wire)
+- Mauss, M., *Essai sur le don* (1925) — [PUF の版の DOI](https://doi.org/10.3917/puf.mauss.2023.01)
+- Sahlins, M., *Stone Age Economics* (1972) — [Internet Archive（限定の貸し出し）](https://archive.org/details/stoneageeconomic0000sahl)
+- Graeber, D., *Debt: The First 5,000 Years* (2011) — [Internet Archive（限定の貸し出し）](https://archive.org/details/debtfirst5000yea00grae)
+- Godelier, M., *The Enigma of the Gift* (1999) — [Internet Archive（限定の貸し出し）](https://archive.org/details/enigmaofgift0000gode)
+- *The Cultural Origins of Human Cognition* (1999) — [Internet Archive（限定の貸し出し）](https://archive.org/details/culturaloriginso0000toma)
+- Tomasello et al., "Understanding and sharing intentions" (2005) — [DOI 10.1017/s0140525x05000129](https://doi.org/10.1017/s0140525x05000129)
+- *Why We Cooperate* (2009) — [Internet Archive（限定の貸し出し）](https://archive.org/details/whywecooperate0000toma)
+- *A Natural History of Human Thinking* (2014) — [DOI 10.4159/9780674726369](https://doi.org/10.4159/9780674726369)
+- *Becoming Human: A Theory of Ontogeny* (2019) — [DOI 10.4159/9780674988651](https://doi.org/10.4159/9780674988651)
+- Heyes, C., *Cognitive Gadgets* (2018)、批判的対話として — [DOI 10.4159/9780674985155](https://doi.org/10.4159/9780674985155)

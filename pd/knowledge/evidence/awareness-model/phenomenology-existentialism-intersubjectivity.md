@@ -356,3 +356,19 @@ Schilbach et al. (2013) は、従来の社会神経科学が「社会的観察�
 - [Intercorporeality as a theory of social cognition (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC5390942/)
 - [Gallagher 2008 (PhilPapers)](https://philpapers.org/rec/SGADPI)
 - [Dermot Moran: Being-with (Mitsein)](https://dermotmoran.com/wp-content/uploads/2024/03/2021-Being-with-Mitsein.pdf)
+
+## 確かめ先（2026-11-12 に足した）
+
+主要著作ごとの書誌の記録。DOI は Crossref で、Internet Archive は書誌の記録（題・著者・年・版元）で、Open Library・SAT・GRETIL は開いて題を確かめた。このノートは原典の本文と照らしていない。「限定の貸し出し」は、印刷物を読むのが難しい人向けの貸し出しだけのもの。
+
+- *Cartesianische Meditationen und Pariser Vorträge* (1931)、特に第五省察 — [Internet Archive（貸し出し）](https://archive.org/details/cartesianischeme0001edmu)（Husserliana I, 1950）
+- *Zur Phänomenologie der Intersubjektivität*, Husserliana XIII-XV (1973) — DOI：[XIII](https://doi.org/10.1007/978-94-010-2472-3), [XIV](https://doi.org/10.1007/978-94-010-2474-7), [XV](https://doi.org/10.1007/978-94-010-2476-1)
+- *Ideen II* (Husserliana IV) — [Open Library の書誌](https://openlibrary.org/works/OL14874830W)
+- *Sein und Zeit* (1927)、特に §26・§27 — [Internet Archive（貸し出し）](https://archive.org/details/seinundzeit0000heid)（1972 年 Niemeyer 版）
+- *Die Grundprobleme der Phänomenologie* (GA 24) — [Open Library の書誌](https://openlibrary.org/works/OL77582W)
+- *Phénoménologie de la perception* (1945) — [Open Library の書誌](https://openlibrary.org/works/OL2142403W)
+- *Le visible et l'invisible* (1964、未完遺稿） — [Internet Archive（貸し出し）](https://archive.org/details/levisibleetlinvi0000merl)
+- *Signes* (1960)、*Les relations avec autrui chez l'enfant* (1964) — [Internet Archive（貸し出し）](https://archive.org/details/signes0000merl)・[*Les relations avec autrui* の Open Library の書誌](https://openlibrary.org/works/OL2142347W)
+- *Ich und Du* (1923) — [Internet Archive（1923 年 Insel 版）](https://archive.org/details/ich-und-du)
+- *Dialogisches Prinzip* (1947) — [Internet Archive（貸し出し）](https://archive.org/details/dasdialogischepr0000bube)（*Das dialogische Prinzip*, 1965 年 Lambert Schneider 版）
+- *The Knowledge of Man: A Philosophy of the Interhuman* (1965) — [Internet Archive（貸し出し）](https://archive.org/details/knowledgeofmanph0000mart)

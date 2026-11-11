@@ -752,3 +752,8 @@ compile 実行の履歴。append-only。
 - scope: 出典ページ 9（Cole 2007・Craig 2002・Davies 2010・Braudel 1958・Damasio 1994・Eisenberger 2003・Hatfield 1993・Holt-Lunstad 2010・Husserl 1931）
 - sources: 書誌の DOI（Crossref で著者・年・題・巻・頁を確かめた）と、照合の記録（意識とはの台帳 A04・A06・A13、cs の D11・D16 の記録）にある写しの URL（PMC は idconv で DOI と合うこと、Wayback は CDX で記録を確かめた）。Damasio 1994 と Husserl は本で、Internet Archive の書誌の記録に張り、pd の調べのノートにも同じ URL を足した
 - pages: 書誌の行にリンクを張っただけで、中身は直さない。Damasio・Husserl はノートを直したので compiled を今日にした。Hatfield 1993 の頁は、ページは 96-99、Crossref は 96-100 で、ページには両方を書いた。間主観性のまとめの 4 ページ（現象学・臨床心理学と仏教・教育学と看護学・文化人類学と言語学）は、中の著作 50 ほどにどれもリンクが無く、張っていない（扱いは pjdhiro に確かめる）
+
+## [2026-11-12] check | 間主観性のまとめの出典ページ 4 に、主要著作ごとの原典へのリンク
+- scope: 出典ページ 4（現象学・実存主義／臨床心理学・仏教哲学／教育学・看護学／文化人類学・言語学）
+- sources: pd の調べのノート 4 本（同じ確かめ先の節を足した）。主要著作 49 に一つずつ：論文と、DOI のある本は Crossref で照らした DOI、ほかの本は Internet Archive の書誌の記録（題・著者・年・版元を確かめた。権利の怪しい個人の upload は使わない）か Open Library の書誌、中論は SAT、Prasannapadā は GRETIL
+- pages: 主要著作の行にリンクを足し、「注意」の終わりに「限定の貸し出し」の意味を一文で書いた。ページの整理が原典の本文と照らしていないことは、点検の表 §2 に当たるので断りを書かず、残した課題として報告した。compiled を今日にした。これで URL の無い出典ページは 0 になり、check.sh は `--strict all,wiki` で止める

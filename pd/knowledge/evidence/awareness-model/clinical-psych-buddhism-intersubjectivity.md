@@ -151,3 +151,18 @@ Stolorow (2007) はハイデガーの Mitsein を臨床的に読み替え、「�
 | Stolorow: 情動的調律 | Panksepp: PANIC/GRIEF | 分離苦痛の一次的情動としての位置づけ |
 | Stolorow: 外傷の間主観的理論 | Cole: CTRA | 間主観的文脈の崩壊が分子レベルで免疫変化を引き起こす |
 | 龍樹: 縁起 | Varela et al. (1991) | エナクティヴィズムを経由した認知科学との架橋 |
+
+## 確かめ先（2026-11-12 に足した）
+
+主要著作ごとの書誌の記録。DOI は Crossref で、Internet Archive は書誌の記録（題・著者・年・版元）で、Open Library・SAT・GRETIL は開いて題を確かめた。このノートは原典の本文と照らしていない。「限定の貸し出し」は、印刷物を読むのが難しい人向けの貸し出しだけのもの。
+
+- *The Maturational Processes and the Facilitating Environment* (1965) — [2018 年の再刊の DOI](https://doi.org/10.4324/9780429482410)
+- *Playing and Reality* (1971) — [Internet Archive（限定の貸し出し）](https://archive.org/details/playingreality00winn)（1980 年の刷り）
+- "The Capacity to Be Alone" (1958) — [全集の版の DOI](https://doi.org/10.1093/med:psych/9780190271374.003.0060)
+- "Mirror-role of Mother and Family in Child Development" (1967) — [全集の版の DOI](https://doi.org/10.1093/med:psych/9780190271404.003.0038)
+- *Psychoanalytic Treatment: An Intersubjective Approach* (Stolorow, Brandchaft & Atwood, 1987) — [Internet Archive（限定の貸し出し）](https://archive.org/details/psychoanalytictr00stolrich)
+- *Contexts of Being: The Intersubjective Foundations of Psychological Life* (Stolorow & Atwood, 1992) — [Internet Archive（限定の貸し出し）](https://archive.org/details/contextsofbeingi0000stol_e4c2)
+- *Trauma and Human Existence* (Stolorow, 2007) — [Open Library の書誌](https://openlibrary.org/works/OL4294606W)
+- *Mūlamadhyamakakārikā*（中論、c. 150-250 CE） — [鳩摩羅什訳『中論』（SAT 大正蔵 T1564）](https://21dzk.l.u-tokyo.ac.jp/SAT/T1564.html)。梵文の偈は下の Prasannapadā の校訂本に入っている
+- Candrakīrti, *Prasannapadā*（明句論、c. 600-650 CE、最重要注釈書） — [GRETIL の梵文](https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_candrakIrti-prasannapada.htm)
+- Varela, Thompson & Rosch, *The Embodied Mind* (1991)、現代的接続として — [Internet Archive（貸し出し）](https://archive.org/details/embodiedmindcogn0000vare)

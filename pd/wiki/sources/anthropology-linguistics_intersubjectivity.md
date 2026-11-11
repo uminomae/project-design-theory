@@ -6,7 +6,7 @@ tags: [source, "awareness-model", "原典解説", "文化人類学", "言語学"
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/anthropology-linguistics-intersubjectivity.md"
-compiled: "2026-04-08"
+compiled: "2026-11-12"
 status: 正典
 review_state: 未レビュー
 ---
@@ -35,11 +35,11 @@ Mbiti (1969) は東アフリカの諸民族の宗教・哲学体系を体系的�
 
 #### 主要著作
 
-- Mbiti, J.S., *African Religions and Philosophy* (1969)
-- Tutu, D., *No Future Without Forgiveness* (1999)
-- Menkiti, I.A., "Person and Community in African Traditional Thought" (1984)
-- Gyekye, K., *Tradition and Modernity* (1997)、批判的対話として
-- Wiredu, K., *Cultural Universals and Particulars* (1996)
+- Mbiti, J.S., *African Religions and Philosophy* (1969) — [Internet Archive（貸し出し）](https://archive.org/details/africanreligions0000mbit)（1969 年 Praeger 版）
+- Tutu, D., *No Future Without Forgiveness* (1999) — [Internet Archive（限定の貸し出し）](https://archive.org/details/nofuturewithoutf00tutu_0)
+- Menkiti, I.A., "Person and Community in African Traditional Thought" (1984) — [所収の Wright (ed.) *African Philosophy: An Introduction* 第 3 版（1984）の Open Library の書誌](https://openlibrary.org/books/OL3183199M)
+- Gyekye, K., *Tradition and Modernity* (1997)、批判的対話として — [DOI 10.1093/acprof:oso/9780195112252.001.0001](https://doi.org/10.1093/acprof:oso/9780195112252.001.0001)
+- Wiredu, K., *Cultural Universals and Particulars* (1996) — [Internet Archive（限定の貸し出し）](https://archive.org/details/culturaluniversa00wire)
 
 ---
 
@@ -55,10 +55,10 @@ Mauss (1925) はメラネシア・北西海岸先住民・マオリ等の民族�
 
 #### 主要著作
 
-- Mauss, M., *Essai sur le don* (1925)
-- Sahlins, M., *Stone Age Economics* (1972)
-- Graeber, D., *Debt: The First 5,000 Years* (2011)
-- Godelier, M., *The Enigma of the Gift* (1999)
+- Mauss, M., *Essai sur le don* (1925) — [PUF の版の DOI](https://doi.org/10.3917/puf.mauss.2023.01)
+- Sahlins, M., *Stone Age Economics* (1972) — [Internet Archive（限定の貸し出し）](https://archive.org/details/stoneageeconomic0000sahl)
+- Graeber, D., *Debt: The First 5,000 Years* (2011) — [Internet Archive（限定の貸し出し）](https://archive.org/details/debtfirst5000yea00grae)
+- Godelier, M., *The Enigma of the Gift* (1999) — [Internet Archive（限定の貸し出し）](https://archive.org/details/enigmaofgift0000gode)
 
 ---
 
@@ -74,12 +74,12 @@ Tomasello の研究プログラムは「何がヒトの認知を他の霊長類�
 
 #### 主要著作
 
-- *The Cultural Origins of Human Cognition* (1999)
-- Tomasello et al., "Understanding and sharing intentions" (2005)
-- *Why We Cooperate* (2009)
-- *A Natural History of Human Thinking* (2014)
-- *Becoming Human: A Theory of Ontogeny* (2019)
-- Heyes, C., *Cognitive Gadgets* (2018)、批判的対話として
+- *The Cultural Origins of Human Cognition* (1999) — [Internet Archive（限定の貸し出し）](https://archive.org/details/culturaloriginso0000toma)
+- Tomasello et al., "Understanding and sharing intentions" (2005) — [DOI 10.1017/s0140525x05000129](https://doi.org/10.1017/s0140525x05000129)
+- *Why We Cooperate* (2009) — [Internet Archive（限定の貸し出し）](https://archive.org/details/whywecooperate0000toma)
+- *A Natural History of Human Thinking* (2014) — [DOI 10.4159/9780674726369](https://doi.org/10.4159/9780674726369)
+- *Becoming Human: A Theory of Ontogeny* (2019) — [DOI 10.4159/9780674988651](https://doi.org/10.4159/9780674988651)
+- Heyes, C., *Cognitive Gadgets* (2018)、批判的対話として — [DOI 10.4159/9780674985155](https://doi.org/10.4159/9780674985155)
 
 ---
 
@@ -100,3 +100,5 @@ Tomasello の研究プログラムは「何がヒトの認知を他の霊長類�
 ## 注意
 
 本ノートの3系列はいずれも実証的証拠というより概念的・存在論的基盤に位置する。Mbiti/Ubuntu については: アフリカ大陸の思想的多様性を単一の「アフリカ哲学」に還元する危険（Wiredu の批判）、Ubuntu が移行期正義で政治的に動員された文脈での戦略的本質主義の疑い、共同体的存在論が実際に生存と結びつくかの実証データが限定的である点に注意が必要。贈与論については: hau 解釈の問題（Sahlins 自身による後の修正、Godelier の指摘）、Derrida の「真の贈与の不可能性」テーゼ、構造機能主義的限界（権力の非対称性の覆い隠し）がある。Tomasello については: Heyes (2018) による共有志向性の文化的進化論的批判（生得的適応ではなく文化的発明の可能性）、比較認知の方法論的問題（de Waal による類人猿の能力の過小評価批判）がある。
+
+主要著作のリンクのうち「限定の貸し出し」は、印刷物を読むのが難しい人向けの貸し出しだけのもの。

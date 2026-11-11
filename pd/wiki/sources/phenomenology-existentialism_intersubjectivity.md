@@ -6,7 +6,7 @@ tags: [source, "awareness-model", "原典解説", "哲学", "現象学", "実存
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/phenomenology-existentialism-intersubjectivity.md"
-compiled: "2026-11-11"
+compiled: "2026-11-12"
 status: 正典
 review_state: 未レビュー
 ---
@@ -35,9 +35,9 @@ review_state: 未レビュー
 
 #### 主要著作
 
-- *Cartesianische Meditationen und Pariser Vorträge* (1931)、特に第五省察
-- *Zur Phänomenologie der Intersubjektivität*, Husserliana XIII-XV (1973)
-- *Ideen II* (Husserliana IV)
+- *Cartesianische Meditationen und Pariser Vorträge* (1931)、特に第五省察 — [Internet Archive（貸し出し）](https://archive.org/details/cartesianischeme0001edmu)（Husserliana I, 1950）
+- *Zur Phänomenologie der Intersubjektivität*, Husserliana XIII-XV (1973) — DOI：[XIII](https://doi.org/10.1007/978-94-010-2472-3), [XIV](https://doi.org/10.1007/978-94-010-2474-7), [XV](https://doi.org/10.1007/978-94-010-2476-1)
+- *Ideen II* (Husserliana IV) — [Open Library の書誌](https://openlibrary.org/works/OL14874830W)
 
 ---
 
@@ -53,8 +53,8 @@ review_state: 未レビュー
 
 #### 主要著作
 
-- *Sein und Zeit* (1927)、特に §26・§27
-- *Die Grundprobleme der Phänomenologie* (GA 24)
+- *Sein und Zeit* (1927)、特に §26・§27 — [Internet Archive（貸し出し）](https://archive.org/details/seinundzeit0000heid)（1972 年 Niemeyer 版）
+- *Die Grundprobleme der Phänomenologie* (GA 24) — [Open Library の書誌](https://openlibrary.org/works/OL77582W)
 
 ---
 
@@ -70,9 +70,9 @@ Husserl が間主観性を意識間の関係として設定したのに対し、
 
 #### 主要著作
 
-- *Phénoménologie de la perception* (1945)
-- *Le visible et l'invisible* (1964、未完遺稿）
-- *Signes* (1960)、*Les relations avec autrui chez l'enfant* (1964)
+- *Phénoménologie de la perception* (1945) — [Open Library の書誌](https://openlibrary.org/works/OL2142403W)
+- *Le visible et l'invisible* (1964、未完遺稿） — [Internet Archive（貸し出し）](https://archive.org/details/levisibleetlinvi0000merl)
+- *Signes* (1960)、*Les relations avec autrui chez l'enfant* (1964) — [Internet Archive（貸し出し）](https://archive.org/details/signes0000merl)・[*Les relations avec autrui* の Open Library の書誌](https://openlibrary.org/works/OL2142347W)
 
 ---
 
@@ -88,9 +88,9 @@ Husserl が間主観性を意識間の関係として設定したのに対し、
 
 #### 主要著作
 
-- *Ich und Du* (1923)
-- *Dialogisches Prinzip* (1947)
-- *The Knowledge of Man: A Philosophy of the Interhuman* (1965)
+- *Ich und Du* (1923) — [Internet Archive（1923 年 Insel 版）](https://archive.org/details/ich-und-du)
+- *Dialogisches Prinzip* (1947) — [Internet Archive（貸し出し）](https://archive.org/details/dasdialogischepr0000bube)（*Das dialogische Prinzip*, 1965 年 Lambert Schneider 版）
+- *The Knowledge of Man: A Philosophy of the Interhuman* (1965) — [Internet Archive（貸し出し）](https://archive.org/details/knowledgeofmanph0000mart)
 
 ---
 
@@ -120,3 +120,5 @@ Husserl が間主観性を意識間の関係として設定したのに対し、
 ## 注意
 
 本ノートは哲学的・存在論的な概念的論証を扱う。現象学的議論は**存在論的・記述的**であり、因果的メカニズムの特定や定量的予測を直接には提供しない。「構成的」の意味が哲学と経験科学で異なる点（現象学的「構成」は志向的な意味付与であり、神経科学的「構成」は因果的プロセスである）に留意が必要。また、現象学から神経科学への「翻訳」は Varela の神経現象学が方法論的に試みているが、なお発展途上にある。各思想家の解釈については、Zahavi (2001) らの現代的再検討が進んでおり、ここでの整理に解釈的拡張が含まれる点も注記する。
+
+主要著作のリンクのうち「限定の貸し出し」は、印刷物を読むのが難しい人向けの貸し出しだけのもの。

@@ -148,3 +148,21 @@ Watsonの理論は間主観性の信号に **治癒的機能** を付与する�
 
 - **強み**: 神経科学（生物学的基盤）とは独立に、教育・倫理・臨床の3領域から同一の結論に収束する点で、仮説の収束的妥当性を高める
 - **限界**: 3理論とも規範的・記述的理論であり、介入研究による因果的検証は限定的。特にWatson理論は操作化の困難から実証的基盤が弱い
+
+## 確かめ先（2026-11-12 に足した）
+
+主要著作ごとの書誌の記録。DOI は Crossref で、Internet Archive は書誌の記録（題・著者・年・版元）で、Open Library・SAT・GRETIL は開いて題を確かめた。このノートは原典の本文と照らしていない。「限定の貸し出し」は、印刷物を読むのが難しい人向けの貸し出しだけのもの。
+
+- Vygotsky, L.S., *Mind in Society* (1978) — [Harvard University Press の版の DOI](https://doi.org/10.2307/j.ctvjf9vz4)
+- Vygotsky, L.S., *Thought and Language* (1934/1986, Kozulin 訳) — [Kozulin 訳（MIT Press, 1986）の Open Library の書誌](https://openlibrary.org/works/OL9221800W)
+- Wood, D., Bruner, J.S., & Ross, G., "The role of tutoring in problem solving" (1976) — [DOI 10.1111/j.1469-7610.1976.tb00381.x](https://doi.org/10.1111/j.1469-7610.1976.tb00381.x)
+- Wertsch, J.V., *Vygotsky and the Social Formation of Mind* (1985) — [Internet Archive（限定の貸し出し）](https://archive.org/details/vygotskysocialf00wert)
+- Rogoff, B., *Apprenticeship in Thinking* (1990) — [DOI 10.1093/oso/9780195059731.001.0001](https://doi.org/10.1093/oso/9780195059731.001.0001)
+- Noddings, N., *Caring: A Feminine Approach to Ethics and Moral Education* (1984) — [Internet Archive（貸し出し）](https://archive.org/details/caringfeminineap00nodd)（1986 年の普及版）
+- Noddings, N., *Starting at Home: Caring and Social Policy* (2002) — [Internet Archive（限定の貸し出し）](https://archive.org/details/startingathomeca0000nodd)
+- Noddings, N., *The Maternal Factor: Two Paths to Morality* (2010) — [Internet Archive（限定の貸し出し）](https://archive.org/details/maternalfactortw0000nodd)
+- Held, V., *The Ethics of Care: Personal, Political, and Global* (2006) — [DOI 10.1093/0195180992.001.0001](https://doi.org/10.1093/0195180992.001.0001)
+- Watson, J., *Nursing: The Philosophy and Science of Caring* (1979、初版; 2008、改訂版) — [Open Library の書誌](https://openlibrary.org/works/OL120573W)
+- Watson, J., *Postmodern Nursing and Beyond* (1999) — [Internet Archive（貸し出し）](https://archive.org/details/postmodernnursin0000wats)
+- Watson, J., *Human Caring Science: A Theory of Nursing* (2012) — [Internet Archive（限定の貸し出し）](https://archive.org/details/humancaringscien0000wats)
+- Swanson, K.M., "What is known about caring in nursing science" (1999) — [DOI 10.4135/9781412991452.n3](https://doi.org/10.4135/9781412991452.n3)

@@ -6,7 +6,7 @@ tags: [source, "awareness-model", "原典解説", "教育学", "看護学", "ケ
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/education-nursing-intersubjectivity.md"
-compiled: "2026-04-08"
+compiled: "2026-11-12"
 status: 正典
 review_state: 未レビュー
 ---
@@ -35,11 +35,11 @@ Vygotsky の発達理論の中核は「一般発生法則」にある: 「あら
 
 #### 主要著作
 
-- Vygotsky, L.S., *Mind in Society* (1978)
-- Vygotsky, L.S., *Thought and Language* (1934/1986, Kozulin 訳)
-- Wood, D., Bruner, J.S., & Ross, G., "The role of tutoring in problem solving" (1976)
-- Wertsch, J.V., *Vygotsky and the Social Formation of Mind* (1985)
-- Rogoff, B., *Apprenticeship in Thinking* (1990)
+- Vygotsky, L.S., *Mind in Society* (1978) — [Harvard University Press の版の DOI](https://doi.org/10.2307/j.ctvjf9vz4)
+- Vygotsky, L.S., *Thought and Language* (1934/1986, Kozulin 訳) — [Kozulin 訳（MIT Press, 1986）の Open Library の書誌](https://openlibrary.org/works/OL9221800W)
+- Wood, D., Bruner, J.S., & Ross, G., "The role of tutoring in problem solving" (1976) — [DOI 10.1111/j.1469-7610.1976.tb00381.x](https://doi.org/10.1111/j.1469-7610.1976.tb00381.x)
+- Wertsch, J.V., *Vygotsky and the Social Formation of Mind* (1985) — [Internet Archive（限定の貸し出し）](https://archive.org/details/vygotskysocialf00wert)
+- Rogoff, B., *Apprenticeship in Thinking* (1990) — [DOI 10.1093/oso/9780195059731.001.0001](https://doi.org/10.1093/oso/9780195059731.001.0001)
 
 ---
 
@@ -55,10 +55,10 @@ Noddings のケアリング倫理は、道徳の基盤を抽象的原理では�
 
 #### 主要著作
 
-- Noddings, N., *Caring: A Feminine Approach to Ethics and Moral Education* (1984)
-- Noddings, N., *Starting at Home: Caring and Social Policy* (2002)
-- Noddings, N., *The Maternal Factor: Two Paths to Morality* (2010)
-- Held, V., *The Ethics of Care: Personal, Political, and Global* (2006)
+- Noddings, N., *Caring: A Feminine Approach to Ethics and Moral Education* (1984) — [Internet Archive（貸し出し）](https://archive.org/details/caringfeminineap00nodd)（1986 年の普及版）
+- Noddings, N., *Starting at Home: Caring and Social Policy* (2002) — [Internet Archive（限定の貸し出し）](https://archive.org/details/startingathomeca0000nodd)
+- Noddings, N., *The Maternal Factor: Two Paths to Morality* (2010) — [Internet Archive（限定の貸し出し）](https://archive.org/details/maternalfactortw0000nodd)
+- Held, V., *The Ethics of Care: Personal, Political, and Global* (2006) — [DOI 10.1093/0195180992.001.0001](https://doi.org/10.1093/0195180992.001.0001)
 
 ---
 
@@ -74,10 +74,10 @@ Watson のケアリング理論は、看護の本質をケアリング（caring�
 
 #### 主要著作
 
-- Watson, J., *Nursing: The Philosophy and Science of Caring* (1979、初版; 2008、改訂版)
-- Watson, J., *Postmodern Nursing and Beyond* (1999)
-- Watson, J., *Human Caring Science: A Theory of Nursing* (2012)
-- Swanson, K.M., "What is known about caring in nursing science" (1999)
+- Watson, J., *Nursing: The Philosophy and Science of Caring* (1979、初版; 2008、改訂版) — [Open Library の書誌](https://openlibrary.org/works/OL120573W)
+- Watson, J., *Postmodern Nursing and Beyond* (1999) — [Internet Archive（貸し出し）](https://archive.org/details/postmodernnursin0000wats)
+- Watson, J., *Human Caring Science: A Theory of Nursing* (2012) — [Internet Archive（限定の貸し出し）](https://archive.org/details/humancaringscien0000wats)
+- Swanson, K.M., "What is known about caring in nursing science" (1999) — [DOI 10.4135/9781412991452.n3](https://doi.org/10.4135/9781412991452.n3)
 
 ---
 
@@ -98,3 +98,5 @@ Watson のケアリング理論は、看護の本質をケアリング（caring�
 ## 注意
 
 本ノートは規範的・記述的理論を扱い、実証的証拠としてではなく概念的基盤として参照する。各理論の限界として、ZPD については操作的定義の曖昧さ、文化的普遍性の問題（主にソビエト・西洋文脈で発展）、scaffolding と ZPD の混同（scaffolding は Wood et al. の概念であり Vygotsky 自身の用語ではない）がある。Noddings については、「母性的」ケアと生物学的性別の結びつけへのジェンダー本質主義批判、二者関係への基盤付けによるスケーラビリティの限界、one-caring / cared-for 関係に内在する権力差の分析不足がある。Watson については「トランスパーソナル」「ケアリング意識」「カリタス」等の概念が抽象的で操作化が困難であり、スピリチュアリティへの傾斜が科学的検証可能性をさらに低下させている。介入研究の多くは小規模・非ランダム化であり、エビデンスレベルが低い点に留意が必要である。
+
+主要著作のリンクのうち「限定の貸し出し」は、印刷物を読むのが難しい人向けの貸し出しだけのもの。

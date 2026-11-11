@@ -6,7 +6,7 @@ tags: [source, "awareness-model", "原典解説", "臨床心理学", "仏教哲�
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/clinical-psych-buddhism-intersubjectivity.md"
-compiled: "2026-04-08"
+compiled: "2026-11-12"
 status: 正典
 review_state: 未レビュー
 ---
@@ -35,10 +35,10 @@ review_state: 未レビュー
 
 #### 主要著作
 
-- *The Maturational Processes and the Facilitating Environment* (1965)
-- *Playing and Reality* (1971)
-- "The Capacity to Be Alone" (1958)
-- "Mirror-role of Mother and Family in Child Development" (1967)
+- *The Maturational Processes and the Facilitating Environment* (1965) — [2018 年の再刊の DOI](https://doi.org/10.4324/9780429482410)
+- *Playing and Reality* (1971) — [Internet Archive（限定の貸し出し）](https://archive.org/details/playingreality00winn)（1980 年の刷り）
+- "The Capacity to Be Alone" (1958) — [全集の版の DOI](https://doi.org/10.1093/med:psych/9780190271374.003.0060)
+- "Mirror-role of Mother and Family in Child Development" (1967) — [全集の版の DOI](https://doi.org/10.1093/med:psych/9780190271404.003.0038)
 
 ---
 
@@ -54,9 +54,9 @@ review_state: 未レビュー
 
 #### 主要著作
 
-- *Psychoanalytic Treatment: An Intersubjective Approach* (Stolorow, Brandchaft & Atwood, 1987)
-- *Contexts of Being: The Intersubjective Foundations of Psychological Life* (Stolorow & Atwood, 1992)
-- *Trauma and Human Existence* (Stolorow, 2007)
+- *Psychoanalytic Treatment: An Intersubjective Approach* (Stolorow, Brandchaft & Atwood, 1987) — [Internet Archive（限定の貸し出し）](https://archive.org/details/psychoanalytictr00stolrich)
+- *Contexts of Being: The Intersubjective Foundations of Psychological Life* (Stolorow & Atwood, 1992) — [Internet Archive（限定の貸し出し）](https://archive.org/details/contextsofbeingi0000stol_e4c2)
+- *Trauma and Human Existence* (Stolorow, 2007) — [Open Library の書誌](https://openlibrary.org/works/OL4294606W)
 
 ---
 
@@ -72,9 +72,9 @@ review_state: 未レビュー
 
 #### 主要著作
 
-- *Mūlamadhyamakakārikā*（中論、c. 150-250 CE）
-- Candrakīrti, *Prasannapadā*（明句論、c. 600-650 CE、最重要注釈書）
-- Varela, Thompson & Rosch, *The Embodied Mind* (1991)、現代的接続として
+- *Mūlamadhyamakakārikā*（中論、c. 150-250 CE） — [鳩摩羅什訳『中論』（SAT 大正蔵 T1564）](https://21dzk.l.u-tokyo.ac.jp/SAT/T1564.html)。梵文の偈は下の Prasannapadā の校訂本に入っている
+- Candrakīrti, *Prasannapadā*（明句論、c. 600-650 CE、最重要注釈書） — [GRETIL の梵文](https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/html/sa_candrakIrti-prasannapada.htm)
+- Varela, Thompson & Rosch, *The Embodied Mind* (1991)、現代的接続として — [Internet Archive（貸し出し）](https://archive.org/details/embodiedmindcogn0000vare)
 
 ---
 
@@ -103,3 +103,5 @@ Winnicott と Stolorow は「間主観性の失敗がもたらす病理」を臨
 ## 注意
 
 本ノートは実証的証拠ではなく概念的・臨床的基盤を扱う。Winnicott の概念は臨床的直観に基づき操作的定義が困難（ただし愛着理論が部分的に実証的裏付けを提供している）。Stolorow の「すべての心理的現象は間主観的である」というテーゼは反証条件を設定しにくい。龍樹の空思想は経験科学の主張ではなく、「一切が縁起である」と「間主観性が生存に必要である」は異なる水準の議論であり、短絡的な等置は避けるべきである。西洋哲学との安易な同一視（例: 龍樹の空 = Heidegger の Mitsein）にも慎重であるべき。
+
+主要著作のリンクのうち「限定の貸し出し」は、印刷物を読むのが難しい人向けの貸し出しだけのもの。
