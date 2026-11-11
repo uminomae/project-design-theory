@@ -155,7 +155,7 @@ A. この読み物は「正解の人数」を出しません。ちょうど3・�
 - **ジンメル（社会学・1908）**: 2人と3人は質が違う。3人目が入ると、「仲裁者」「漁夫の利」「分断統治」という新しい役割が生まれる——三者関係の古典です
 - **ミラー（心理学・1956）**: 短期記憶に保てる項目の数は、7 のまわりにある（「7±2」）。チームの人数の話としてよく引かれますが、もとは記憶の話です。ミラー自身、論文の結びで、7 があちこちに出てくるのは、たちの悪い偶然かもしれないと書いています
 
-出典：Simmel (1908) *Soziologie. Untersuchungen über die Formen der Vergesellschaftung*, 第 2 章「集団の量的な規定」の、三人目についての三つの節（仲裁者・tertius gaudens・divide et impera。Internet Archive の 1908 年版の全文で確認）／[Miller (1956)](https://doi.org/10.1037/h0043158) *Psychological Review* 63(2):81–97（York 大学の Classics in the History of Psychology に置かれた全文で確認。結びの段）
+出典：Simmel (1908) *Soziologie. Untersuchungen über die Formen der Vergesellschaftung*, 第 2 章「集団の量的な規定」の、三人目についての三つの節（仲裁者・tertius gaudens・divide et impera。[Internet Archive の 1908 年版の全文](https://archive.org/details/soziologieunters00simmuoft)で確認）／[Miller (1956)](https://doi.org/10.1037/h0043158) *Psychological Review* 63(2):81–97（York 大学の Classics in the History of Psychology に置かれた全文で確認。結びの段）
 
 **pjdhiro のスタンス**: これらは、あくまで「**そう言われてきた**」ということであって、正しいかどうかは、本当はわからない。ある部分は当たっているだろうが、あくまで**一面的かもしれない**。そんな中で、**回転の視点で探究している**。
 

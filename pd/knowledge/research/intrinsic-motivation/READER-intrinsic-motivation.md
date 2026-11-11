@@ -62,7 +62,7 @@ pjdhiro が問題と見ているのは、成長に向かう良い動きだけを
 
 この表は、不安と防衛の表です。内発的動機を段階ごとに書いたものではありません。pjdhiro の見方につなげると、理論の描く内発的動機は、どこかの段階の、ある状態の一面として置くことになります。どの段階のどの状態に当たるかは、分からないまま残ります。
 
-出典：Cook-Greuter, S. R. (2013). *Nine Levels of Increasing Embrace in Ego Development*（prepublication version・本文で確認）pp.9–10, 27, 34, 39–40, 49–50, 53, 58, 71–72, 84–85／[Ryan & Deci (2000)](https://doi.org/10.1037/0003-066X.55.1.68) p.73
+出典：Cook-Greuter, S. R. (2013). [*Nine Levels of Increasing Embrace in Ego Development*](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)（prepublication version・本文で確認）pp.9–10, 27, 34, 39–40, 49–50, 53, 58, 71–72, 84–85／[Ryan & Deci (2000)](https://doi.org/10.1037/0003-066X.55.1.68) p.73
 
 ## 面白さと守りが、重なるところ
 
@@ -81,7 +81,7 @@ pjdhiro が問題と見ているのは、成長に向かう良い動きだけを
 
 <strong>pjdhiro の見方：</strong>人は心理防衛機制に沿って感じてしまい、行動化することまである。それは強い意欲で止められない。精神疾患やパーソナリティ障害のように。なので、内発的動機を　都合良い方向に使う　ために、行う施策は、おそらくですが、精神医学や治療に近い
 
-出典：[Ryan & Deci (2000)](https://doi.org/10.1037/0003-066X.55.1.68) p.73／Cook-Greuter (2013) pp.25–27
+出典：[Ryan & Deci (2000)](https://doi.org/10.1037/0003-066X.55.1.68) p.73／[Cook-Greuter (2013)](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf) pp.25–27
 
 ## 善悪の判断と、誤解の源泉
 
@@ -97,7 +97,7 @@ pjdhiro が問題と見ているのは、成長に向かう良い動きだけを
 
 クック＝グロイターが並べた二つの読み方は、同じ人の同じ動きについてのものです。責める読みには、善悪の判断が入っています。段階の読みは、その動きを、理解がどこまで育っているかの現れとして見ます。
 
-出典：Cook-Greuter (2013) pp.25–27
+出典：[Cook-Greuter (2013)](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf) pp.25–27
 
 ## 負の心理学と、正の心理学
 

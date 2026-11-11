@@ -70,4 +70,4 @@ pjdhiro が影響を受けてきた心理学の論を、一人ずつ紹介しま
 
 <strong>pjdhiro の見方：</strong>私はグロイターの成人発達で包括的に扱ってしまえると思ってる。
 
-出典：[Maslow (1943)](https://doi.org/10.1037/h0054346) *Psychological Review* 50(4):370–396（本文で確認。pp.386, 388–389）／[Seligman & Csikszentmihalyi (2000)](https://doi.org/10.1037/0003-066X.55.1.5) *American Psychologist* 55(1):5–14（著者セリグマンの大学のセンターに置かれた写しの本文で確認。p.5）／Cook-Greuter, S. R. (2013). *Nine Levels of Increasing Embrace in Ego Development*（prepublication version・本文で確認。pp.3–4, 6）
+出典：[Maslow (1943)](https://doi.org/10.1037/h0054346) *Psychological Review* 50(4):370–396（本文で確認。pp.386, 388–389）／[Seligman & Csikszentmihalyi (2000)](https://doi.org/10.1037/0003-066X.55.1.5) *American Psychologist* 55(1):5–14（著者セリグマンの大学のセンターに置かれた写しの本文で確認。p.5）／Cook-Greuter, S. R. (2013). [*Nine Levels of Increasing Embrace in Ego Development*](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)（prepublication version・本文で確認。pp.3–4, 6）

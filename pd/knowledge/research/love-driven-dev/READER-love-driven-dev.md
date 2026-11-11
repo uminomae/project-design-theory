@@ -39,7 +39,7 @@ date: 2026-11-09
 
 <!--REF:経営学・起業研究-->
 
-出典：Shane & Venkataraman (2000) "The promise of entrepreneurship as a field of research", *Academy of Management Review* 25(1):217（リヴァプール大学のサーバーに置かれた誌面の写しで本文照合済。分野の定義 p.218）／Alvarez & Barney (2007) "Discovery and creation: alternative theories of entrepreneurial action", *Strategic Entrepreneurship Journal* 1(1–2):11（研究団体 effectuation.org のサイトに置かれた誌面の写しで本文照合済。発見の理論と創造の理論 p.11）。
+出典：[Shane & Venkataraman (2000)](https://doi.org/10.5465/amr.2000.2791611) "The promise of entrepreneurship as a field of research", *Academy of Management Review* 25(1):217（[リヴァプール大学のサーバーに置かれた誌面の写し](https://indico.ph.liv.ac.uk/event/1424/sessions/1150/attachments/3345/4673/Shane%20and%20Venkataraman-PromiseEntrepreneurshipField-2000.pdf)で本文照合済。分野の定義 p.218）／[Alvarez & Barney (2007)](https://doi.org/10.1002/sej.4) "Discovery and creation: alternative theories of entrepreneurial action", *Strategic Entrepreneurship Journal* 1(1–2):11（[研究団体 effectuation.org のサイトに置かれた誌面の写し](https://effectuation.org/hubfs/Journal%20Articles/2017/05/Alvarez_et_al-2007-Strategic_Entrepreneurship_Journal.pdf)で本文照合済。発見の理論と創造の理論 p.11）。
 
 </details>
 
@@ -85,7 +85,7 @@ Love駆動開発を説明するとき、pjdhiro は、次の問いに答える�
 
 <!--REF:経営学・起業研究-->
 
-出典：Mintzberg, Ahlstrand & Lampel (1998) *Strategy Safari*（独訳 *Strategy Safari. Der Wegweiser durch den Dschungel des strategischen Managements*, 訳 J. T. A. Wegberg, FinanzBuch Verlag, 2012 の、出版社の試し読みの Wayback の記録（2019 年 10 月 20 日）で本文照合済（訳）。冒頭のサックスの詩 pp.15–17）／Saxe "The Blind Men and the Elephant"（Wikisource にあるパブリックドメインの *The Poems of John Godfrey Saxe*（1872 年）の版で本文照合済。スキャンの 279–281 枚目）／Kotler, Kartajaya & Setiawan (2010) *Marketing 3.0*（出版社 Wiley の試し読みで本文照合済。第 1 章 p.4）・(2021) *Marketing 5.0*（出版社 Wiley の試し読みで本文照合済。第 1 章 pp.3・5）／野中・勝見 (2020)『共感経営』（版元の親会社の日経BP が日経BOOKプラスで 2023 年 1 月 20 日に公開した「はじめに」で本文照合済）。表の分け方と「効果的な状況」の列は、Claude による整理です。
+出典：Mintzberg, Ahlstrand & Lampel (1998) *Strategy Safari*（独訳 *Strategy Safari. Der Wegweiser durch den Dschungel des strategischen Managements*, 訳 J. T. A. Wegberg, FinanzBuch Verlag, 2012 の、[出版社の試し読みの Wayback の記録](https://web.archive.org/web/20191020102857/https://www.m-vg.de/mediafiles/Leseprobe/9783898796750.pdf)（2019 年 10 月 20 日）で本文照合済（訳）。冒頭のサックスの詩 pp.15–17）／Saxe "The Blind Men and the Elephant"（[Wikisource にあるパブリックドメインの](https://en.wikisource.org/wiki/The_Poems_of_John_Godfrey_Saxe/The_Blind_Men_and_the_Elephant) *The Poems of John Godfrey Saxe*（1872 年）の版で本文照合済。スキャンの 279–281 枚目）／Kotler, Kartajaya & Setiawan (2010) *Marketing 3.0*（[出版社 Wiley の試し読みで本文照合済。第 1 章 p.4](https://media.wiley.com/product_data/excerpt/24/04705988/0470598824.pdf)）・(2021) *Marketing 5.0*（[出版社 Wiley の試し読みで本文照合済。第 1 章 pp.3・5](https://catalogimages.wiley.com/images/db/pdf/9781119668510.excerpt.pdf)）／野中・勝見 (2020)『共感経営』（版元の親会社の日経BP が[日経BOOKプラスで 2023 年 1 月 20 日に公開した「はじめに」](https://bookplus.nikkei.com/atcl/column/032900009/011300261/)で本文照合済）。表の分け方と「効果的な状況」の列は、Claude による整理です。
 
 </details>
 
@@ -135,7 +135,7 @@ Love駆動開発を説明するとき、pjdhiro は、次の問いに答える�
 
 <!--REF:物理と科学史-->
 
-出典：[Rubin & Ford (1970)](https://doi.org/10.1086/150317) *ApJ* 159:379（NASA ADS が公開している誌面の走査で本文照合済。要旨 p.379、外側で平らな回転曲線 p.392）／[Rubin, Ford & Thonnard (1980)](https://doi.org/10.1086/158003) *ApJ* 238:471（銀河の回転曲線。NASA ADS が公開している誌面の走査で本文照合済。光学像の外の質量 p.471 の要旨）／[Event Horizon Telescope Collaboration (2019)](https://doi.org/10.3847/2041-8213/ab0ec7) *ApJL* 875:L1（M87 の画像。arXiv 1906.11238 にある誌面の版（CC BY）で本文照合済。光の輪と中心の暗さ p.1 の要旨）／『楞厳経』巻二（大正蔵 T19 No.945、111 頁上段）・『大智度論』巻九（大正蔵 T25 No.1509、125 頁中段）（どちらも SAT 大蔵経テキストデータベースで本文照合済）。
+出典：[Rubin & Ford (1970)](https://doi.org/10.1086/150317) *ApJ* 159:379（NASA ADS が公開している誌面の走査で本文照合済。要旨 p.379、外側で平らな回転曲線 p.392）／[Rubin, Ford & Thonnard (1980)](https://doi.org/10.1086/158003) *ApJ* 238:471（銀河の回転曲線。NASA ADS が公開している誌面の走査で本文照合済。光学像の外の質量 p.471 の要旨）／[Event Horizon Telescope Collaboration (2019)](https://doi.org/10.3847/2041-8213/ab0ec7) *ApJL* 875:L1（M87 の画像。arXiv 1906.11238 にある誌面の版（CC BY）で本文照合済。光の輪と中心の暗さ p.1 の要旨）／[『楞厳経』巻二](https://21dzk.l.u-tokyo.ac.jp/SAT2018/satdb2018pre.php?mode=detail&ob=1&mode2=2&useid=0945_,19,0111a)（大正蔵 T19 No.945、111 頁上段）・[『大智度論』巻九](https://21dzk.l.u-tokyo.ac.jp/SAT2018/satdb2018pre.php?mode=detail&ob=1&mode2=2&useid=1509_,25,0125b)（大正蔵 T25 No.1509、125 頁中段）（どちらも SAT 大蔵経テキストデータベースで本文照合済）。
 
 </details>
 
@@ -288,7 +288,7 @@ pjdhiro は、渦を、場の揺らぎそのものが形になったもので、
 
 <!--REF:東洋の思想-->
 
-出典：『大乗起信論』真諦訳（大正蔵 32 巻 No.1666、576 頁下段「如大海水因風波動，水相風相不相捨離」）・実叉難陀訳（大正蔵 32 巻 No.1667、585 頁中段「如海水與波非一非異」）（どちらも SAT 大蔵経テキストデータベースで本文照合済）。
+出典：[『大乗起信論』真諦訳](https://21dzk.l.u-tokyo.ac.jp/SAT2018/satdb2018pre.php?mode=detail&ob=1&mode2=2&useid=1666_,32,0576c)（大正蔵 32 巻 No.1666、576 頁下段「如大海水因風波動，水相風相不相捨離」）・[実叉難陀訳](https://21dzk.l.u-tokyo.ac.jp/SAT2018/satdb2018pre.php?mode=detail&ob=1&mode2=2&useid=1667_,32,0585b)（大正蔵 32 巻 No.1667、585 頁中段「如海水與波非一非異」）（どちらも SAT 大蔵経テキストデータベースで本文照合済）。
 
 </details>
 
@@ -304,7 +304,7 @@ pjdhiro は、渦を、場の揺らぎそのものが形になったもので、
 
 <!--REF:物理と科学史-->
 
-出典：Kelvin (1901) "Nineteenth Century Clouds over the Dynamical Theory of Heat and Light", *Phil. Mag.* 6th ser. 2:1–40（1900 年 4 月 27 日の王立研究所での講演。Internet Archive にある Smithsonian Libraries 蔵の誌面の走査（パブリックドメイン）で本文照合済。二つの雲 pp.1–2、エーテルの実験 p.7、比熱 p.18）／Passon (2021) "Kelvin's clouds", *Am. J. Phys.* 89(11):1037–1041（二つの雲がのちに特殊相対論と量子力学で解かれたこと。arXiv 2106.16033 の版（CC BY）で本文照合済。p.1 の要旨）／Planck (1900) *Verh. Dtsch. Phys. Ges.* 2:237（Internet Archive にあるハーバード大学図書館蔵の走査（パブリックドメイン）で本文照合済。エネルギーを有限の等しい塊から成るとする箇所 pp.239–240）／Heisenberg (1927) *Z. Phys.* 43:172（NASA の英訳 TM-77379（1983 年、NASA の公開 PDF）で本文照合済（訳）。訳 p.2・p.7）／Lieb (1990) "The stability of matter: from atoms to stars", *Bull. Amer. Math. Soc.* 22(1):1–49（物質の安定性とパウリの排他原理。Dyson と Lenard 1967 の証明を引く。出版社 AMS の PDF の Wayback の記録（2022 年 8 月 11 日）で本文照合済。pp.1・7・15）／Pauling (1954) ノーベル講演 "Modern structural chemistry"（ハイトラーとロンドン 1927 の水素分子の扱い。nobelprize.org の PDF で本文照合済。p.2）／Bethe (1967) ノーベル講演 "Energy production in stars"（障壁を通り抜ける理論と、その恒星への適用の歴史。nobelprize.org の PDF で本文照合済。pp.2・6）／Bethe (1939) *Phys. Rev.* 55:434（出版社 APS の PDF の Wayback の記録（2026 年 9 月 8 日）で本文照合済。p.434 の要旨）。
+出典：[Kelvin (1901)](https://doi.org/10.1080/14786440109462664) "Nineteenth Century Clouds over the Dynamical Theory of Heat and Light", *Phil. Mag.* 6th ser. 2:1–40（1900 年 4 月 27 日の王立研究所での講演。[Internet Archive にある Smithsonian Libraries 蔵の誌面の走査](https://archive.org/details/londonedinburgh621901lond)（パブリックドメイン）で本文照合済。二つの雲 pp.1–2、エーテルの実験 p.7、比熱 p.18）／[Passon (2021)](https://doi.org/10.1119/10.0005620) "Kelvin's clouds", *Am. J. Phys.* 89(11):1037–1041（二つの雲がのちに特殊相対論と量子力学で解かれたこと。[arXiv 2106.16033 の版](https://arxiv.org/abs/2106.16033)（CC BY）で本文照合済。p.1 の要旨）／Planck (1900) *Verh. Dtsch. Phys. Ges.* 2:237（[Internet Archive にあるハーバード大学図書館蔵の走査](https://archive.org/details/verhandlungende01goog)（パブリックドメイン）で本文照合済。エネルギーを有限の等しい塊から成るとする箇所 pp.239–240）／[Heisenberg (1927)](https://doi.org/10.1007/BF01397280) *Z. Phys.* 43:172（[NASA の英訳 TM-77379](https://ntrs.nasa.gov/citations/19840008978)（1983 年、NASA の公開 PDF）で本文照合済（訳）。訳 p.2・p.7）／[Lieb (1990)](https://doi.org/10.1090/S0273-0979-1990-15831-8) "The stability of matter: from atoms to stars", *Bull. Amer. Math. Soc.* 22(1):1–49（物質の安定性とパウリの排他原理。Dyson と Lenard 1967 の証明を引く。[出版社 AMS の PDF の Wayback の記録](https://web.archive.org/web/20220811/https://www.ams.org/journals/bull/1990-22-01/S0273-0979-1990-15831-8/S0273-0979-1990-15831-8.pdf)（2022 年 8 月 11 日）で本文照合済。pp.1・7・15）／Pauling (1954) ノーベル講演 "Modern structural chemistry"（[ハイトラーとロンドン 1927 の水素分子の扱い。nobelprize.org の PDF](https://www.nobelprize.org/uploads/2018/06/pauling-lecture.pdf) で本文照合済。p.2）／Bethe (1967) ノーベル講演 "Energy production in stars"（障壁を通り抜ける理論と、[その恒星への適用の歴史。nobelprize.org の PDF](https://www.nobelprize.org/uploads/2018/06/bethe-lecture.pdf) で本文照合済。pp.2・6）／[Bethe (1939)](https://doi.org/10.1103/PhysRev.55.434) *Phys. Rev.* 55:434（[出版社 APS の PDF の Wayback の記録](https://web.archive.org/web/20260908235523/https://journals.aps.org/pr/pdf/10.1103/PhysRev.55.434)（2026 年 9 月 8 日）で本文照合済。p.434 の要旨）。
 
 </details>
 
@@ -316,7 +316,7 @@ pjdhiro は、渦を、場の揺らぎそのものが形になったもので、
 
 <!--REF:物理と科学史-->
 
-出典：Clausius (1857) *Ann. Phys.* 176:353（同時代の英訳 "On the Nature of the Motion which we call Heat", *Phil. Mag.* 4th ser. 14:108–127（1857 年。訳者名は誌面に無い）を、Internet Archive にあるロンドン自然史博物館図書館蔵の走査（パブリックドメイン）で本文照合済（訳）。訳 p.111）／Maxwell (1860) *Phil. Mag.* 4th ser. 19:19, 20:21（Internet Archive にあるロンドン自然史博物館図書館蔵の走査（パブリックドメイン）で本文照合済。第 1 部 pp.19・30）。
+出典：[Clausius (1857)](https://doi.org/10.1002/andp.18571760302) *Ann. Phys.* 176:353（同時代の英訳 ["On the Nature of the Motion which we call Heat"](https://doi.org/10.1080/14786445708642360), *Phil. Mag.* 4th ser. 14:108–127（1857 年。訳者名は誌面に無い）を、[Internet Archive にあるロンドン自然史博物館図書館蔵の走査](https://archive.org/details/londonedinburghp14maga)（パブリックドメイン）で本文照合済（訳）。訳 p.111）／[Maxwell (1860)](https://doi.org/10.1080/14786446008642818) *Phil. Mag.* 4th ser. 19:19, 20:21（[Internet Archive にあるロンドン自然史博物館図書館蔵の走査](https://archive.org/details/londonedinburghp19maga)（パブリックドメイン）で本文照合済。第 1 部 pp.19・30）。
 
 </details>
 
@@ -330,7 +330,7 @@ pjdhiro は、渦を、場の揺らぎそのものが形になったもので、
 
 <!--REF:物理と科学史-->
 
-出典：Dirac (1927) "The Quantum Theory of the Emission and Absorption of Radiation", *Proc. R. Soc. A* 114:243（出版社 Royal Society の PDF の Wayback の記録（2021 年 9 月 21 日）で本文照合済。pp.243–245）。
+出典：[Dirac (1927)](https://doi.org/10.1098/rspa.1927.0039) "The Quantum Theory of the Emission and Absorption of Radiation", *Proc. R. Soc. A* 114:243（[出版社 Royal Society の PDF の Wayback の記録](https://web.archive.org/web/20210921014432/https://royalsocietypublishing.org/doi/pdf/10.1098/rspa.1927.0039)（2021 年 9 月 21 日）で本文照合済。pp.243–245）。
 
 </details>
 
@@ -433,7 +433,7 @@ pjdhiro は、渦を、場の揺らぎそのものが形になったもので、
 
 <!--REF:神経と情動-->
 
-出典：Seth (2013) "Interoceptive inference, emotion, and the embodied self", *Trends in Cognitive Sciences* 17:565（サセックス大学の機関リポジトリにある誌面の PDF で本文照合済。内受容感覚の定義（Craig 2002 を引く）と内受容の推論 p.565、予測とのずれで直す箇所 p.566 の Box 1、図 2 p.568）／Barrett & Simmons (2015) "Interoceptive predictions in the brain", *Nature Reviews Neuroscience* 16:419（米国国立医学図書館の PMC にある著者稿 PMC4731102 で本文照合済。誌面の頁番号が無い稿）／Barrett (2017) "The theory of constructed emotion", *Social Cognitive and Affective Neuroscience* 12:1（PMC5390700 の全文で本文照合済）／Khalsa ら (2008) "Interoceptive awareness in experienced meditators", *Psychophysiology* 45(4):671（米国国立医学図書館の PMC にある著者稿 PMC2637372 で本文照合済。心拍の検出に群の差が無かったことは要旨と結果の節、成績と難しさの自己評価は結果の節）／Garfinkel ら (2015) "Knowing your own heart", *Biological Psychology* 104:65（サセックス大学の機関リポジトリにある誌面の PDF（CC BY-NC-ND 3.0 の公開）で本文照合済。三つの次元の区別 p.65 の要旨）。
+出典：[Seth (2013)](https://doi.org/10.1016/j.tics.2013.09.007) "Interoceptive inference, emotion, and the embodied self", *Trends in Cognitive Sciences* 17:565（[サセックス大学の機関リポジトリにある誌面の PDF](http://sro.sussex.ac.uk/id/eprint/49586/1/SethInteroceptive.pdf) で本文照合済。内受容感覚の定義（Craig 2002 を引く）と内受容の推論 p.565、予測とのずれで直す箇所 p.566 の Box 1、図 2 p.568）／[Barrett & Simmons (2015)](https://doi.org/10.1038/nrn3950) "Interoceptive predictions in the brain", *Nature Reviews Neuroscience* 16:419（米国国立医学図書館の PMC にある著者稿 [PMC4731102](https://pmc.ncbi.nlm.nih.gov/articles/PMC4731102/) で本文照合済。誌面の頁番号が無い稿）／[Barrett (2017)](https://doi.org/10.1093/scan/nsw154) "The theory of constructed emotion", *Social Cognitive and Affective Neuroscience* 12:1（[PMC5390700](https://pmc.ncbi.nlm.nih.gov/articles/PMC5390700/) の全文で本文照合済）／[Khalsa ら (2008)](https://doi.org/10.1111/j.1469-8986.2008.00666.x) "Interoceptive awareness in experienced meditators", *Psychophysiology* 45(4):671（米国国立医学図書館の PMC にある著者稿 [PMC2637372](https://pmc.ncbi.nlm.nih.gov/articles/PMC2637372/) で本文照合済。心拍の検出に群の差が無かったことは要旨と結果の節、成績と難しさの自己評価は結果の節）／[Garfinkel ら (2015)](https://doi.org/10.1016/j.biopsycho.2014.11.004) "Knowing your own heart", *Biological Psychology* 104:65（[サセックス大学の機関リポジトリにある誌面の PDF](http://sro.sussex.ac.uk/id/eprint/52974/1/Garfinkel_-_KnowingYourOwnHeart.pdf)（CC BY-NC-ND 3.0 の公開）で本文照合済。三つの次元の区別 p.65 の要旨）。
 
 </details>
 
@@ -556,7 +556,7 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 
 <!--REF:神経と情動-->
 
-出典：Grupe & Nitschke (2013) "Uncertainty and anticipation in anxiety", *Nature Reviews Neuroscience* 14(7):488（PMC の著者稿で本文照合済。要旨と導入の不確かさと備えの段）／Brosschot, Verkuil & Thayer (2018) "Generalized Unsafety Theory of Stress", *International Journal of Environmental Research and Public Health* 15(3):464（PMC の公開版で本文照合済。要旨・1.2 節・3 節）／Yu & Dayan (2005) "Uncertainty, neuromodulation, and attention", *Neuron* 46(4):681（著者のサイトの PDF で本文照合済。p.681 の要旨と導入）／Lutz, McFarlin, Perlman, Salomons & Davidson (2013) "Altered anterior insula activation during anticipation and experience of painful stimuli in expert meditators", *NeuroImage* 64:538（PMC の著者稿で本文照合済。要旨と方法）。
+出典：[Grupe & Nitschke (2013)](https://doi.org/10.1038/nrn3524) "Uncertainty and anticipation in anxiety", *Nature Reviews Neuroscience* 14(7):488（[PMC の著者稿で本文照合済。要旨と導入](https://pmc.ncbi.nlm.nih.gov/articles/PMC4276319/)の不確かさと備えの段）／[Brosschot, Verkuil & Thayer (2018)](https://doi.org/10.3390/ijerph15030464) "Generalized Unsafety Theory of Stress", *International Journal of Environmental Research and Public Health* 15(3):464（[PMC の公開版](https://pmc.ncbi.nlm.nih.gov/articles/PMC5877009/)で本文照合済。要旨・1.2 節・3 節）／[Yu & Dayan (2005)](https://doi.org/10.1016/j.neuron.2005.04.026) "Uncertainty, neuromodulation, and attention", *Neuron* 46(4):681（[著者のサイトの PDF](https://web.archive.org/web/20051024185924/http://www.gatsby.ucl.ac.uk:80/~dayan/papers/yud2005.pdf) で本文照合済。p.681 の要旨と導入）／[Lutz, McFarlin, Perlman, Salomons & Davidson (2013)](https://doi.org/10.1016/j.neuroimage.2012.09.030) "Altered anterior insula activation during anticipation and experience of painful stimuli in expert meditators", *NeuroImage* 64:538（[PMC の著者稿で本文照合済。要旨と方法](https://pmc.ncbi.nlm.nih.gov/articles/PMC3787201/)）。
 
 </details>
 
@@ -608,7 +608,7 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 
 <!--REF:心理学-->
 
-出典：Freud (1915) "Das Unbewußte", *Internationale Zeitschrift für ärztliche Psychoanalyse* 3(4):189–203・3(5):257–269（本文照合済。独語の原文を読んだ。抑圧と無意識の範囲は p.189、無意識を置く理由と思い上がりの語は pp.189–190、推し量りを自分に向けることは p.192、カントの戒めと「見えているとおりにできているとは限らない」は p.193、潜在と抑圧・前意識・検閲は pp.193–194。写しは、Internet Archive にある国際精神分析大学ベルリンのコレクションの誌面。パブリックドメイン）／Jung (1917) *Die Psychologie der unbewußten Prozesse*、英訳 Hecht "The Psychology of the Unconscious Processes"、Long (ed.) *Collected Papers on Analytical Psychology*, 2nd ed. (1920) 第 14 章（本文照合済（訳）。Hecht の英訳で読んだ。第 5 節「The Personal and the Impersonal Unconscious」pp.408–416。写しは Project Gutenberg #48225。パブリックドメイン）。
+出典：Freud (1915) "Das Unbewußte", *Internationale Zeitschrift für ärztliche Psychoanalyse* [3(4):189–203](https://archive.org/details/z319154)・[3(5):257–269](https://archive.org/details/z319155)（本文照合済。独語の原文を読んだ。抑圧と無意識の範囲は p.189、無意識を置く理由と思い上がりの語は pp.189–190、推し量りを自分に向けることは p.192、カントの戒めと「見えているとおりにできているとは限らない」は p.193、潜在と抑圧・前意識・検閲は pp.193–194。写しは、Internet Archive にある国際精神分析大学ベルリンのコレクションの誌面。パブリックドメイン）／Jung (1917) *Die Psychologie der unbewußten Prozesse*、英訳 Hecht "The Psychology of the Unconscious Processes"、Long (ed.) *Collected Papers on Analytical Psychology*, 2nd ed. (1920) 第 14 章（本文照合済（訳）。Hecht の英訳で読んだ。第 5 節「The Personal and the Impersonal Unconscious」pp.408–416。写しは [Project Gutenberg #48225](https://www.gutenberg.org/ebooks/48225)。パブリックドメイン）。
 
 </details>
 
@@ -638,7 +638,7 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 
 <!--REF:心理学-->
 
-出典：Freud (1912) "Zur Dynamik der Übertragung", *Zentralblatt für Psychoanalyse* 2(4):167–173（本文照合済。型と刷り直し p.167、期待を帯びた思い描きと父の像 p.168、共感・友情・信頼の結びつき p.171、陽性と陰性・両価性 pp.171–172）／Freud (1915) "Bemerkungen über die Übertragungsliebe", *Internationale Zeitschrift für ärztliche Psychoanalyse* 3(1):1–11（本文照合済。子どもの頃の手本をくり返さない恋は無い p.8、本物の恋ではないとは言えない p.9）。どちらも、Internet Archive にある国際精神分析大学ベルリンのコレクションの写し（パブリックドメインの表示）の文字で読んだ。
+出典：Freud (1912) "Zur Dynamik der Übertragung", *Zentralblatt für Psychoanalyse* [2(4):167–173](https://archive.org/details/zb219124)（本文照合済。型と刷り直し p.167、期待を帯びた思い描きと父の像 p.168、共感・友情・信頼の結びつき p.171、陽性と陰性・両価性 pp.171–172）／Freud (1915) "Bemerkungen über die Übertragungsliebe", *Internationale Zeitschrift für ärztliche Psychoanalyse* [3(1):1–11](https://archive.org/details/z319151)（本文照合済。子どもの頃の手本をくり返さない恋は無い p.8、本物の恋ではないとは言えない p.9）。どちらも、Internet Archive にある国際精神分析大学ベルリンのコレクションの写し（パブリックドメインの表示）の文字で読んだ。
 
 </details>
 
@@ -650,7 +650,7 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 
 <!--REF:心理学-->
 
-出典：Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* 27:99–110（本文照合済。良い乳房と悪い乳房、愛と憎しみの分かれ目 p.99、分析から推し量った仮説だという断り p.99、満たされているときと満たされないとき・空想の中で分ける・良い面を大きくして迫害の恐れから守る p.101、理想化された対象へ逃げ込む p.103。写しは、Internet Archive にある国際精神分析大学ベルリンのコレクション）。
+出典：Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99–110](https://archive.org/details/ijp-27-1946-1-2)（本文照合済。良い乳房と悪い乳房、愛と憎しみの分かれ目 p.99、分析から推し量った仮説だという断り p.99、満たされているときと満たされないとき・空想の中で分ける・良い面を大きくして迫害の恐れから守る p.101、理想化された対象へ逃げ込む p.103。写しは、Internet Archive にある国際精神分析大学ベルリンのコレクション）。
 
 </details>
 
@@ -666,7 +666,7 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 
 <!--REF:心理学-->
 
-出典：Jung (1917) "The Psychology of the Unconscious Processes"（Dora Hecht 訳）, *Collected Papers on Analytical Psychology*, 2nd ed., London: Baillière, Tindall and Cox, 1920, pp.354–444（本文照合済（訳）。親の権威の代わり p.408、父の像 p.409、原初の像 p.410、周りの人への持ち上げと見下し pp.432–433。写しは Internet Archive の Universal Library の版。訳者名は 1922 年刷の写しでも確かめた）／Jung (1919) "Instinct and the Unconscious", *British Journal of Psychology* 10(1):15–23, [doi:10.1111/j.2044-8295.1919.tb00003.x](https://doi.org/10.1111/j.2044-8295.1919.tb00003.x)（本文照合済。元型と集合的無意識 p.19、アウグスティヌスから取った語 p.21。写しは Zenodo のパブリックドメインの表示の版）。
+出典：Jung (1917) "The Psychology of the Unconscious Processes"（Dora Hecht 訳）, *Collected Papers on Analytical Psychology*, 2nd ed., London: Baillière, Tindall and Cox, 1920, pp.354–444（本文照合済（訳）。親の権威の代わり p.408、父の像 p.409、原初の像 p.410、周りの人への持ち上げと見下し pp.432–433。写しは [Internet Archive の Universal Library の版](https://archive.org/details/CollectedPapersOnAnalyticalPsychology)。訳者名は 1922 年刷の写しでも確かめた）／Jung (1919) "Instinct and the Unconscious", *British Journal of Psychology* 10(1):15–23, [doi:10.1111/j.2044-8295.1919.tb00003.x](https://doi.org/10.1111/j.2044-8295.1919.tb00003.x)（本文照合済。元型と集合的無意識 p.19、アウグスティヌスから取った語 p.21。写しは Zenodo のパブリックドメインの表示の版）。
 
 </details>
 
@@ -700,7 +700,7 @@ pjdhiro は、期待外れになるかどうかは能力と心理防衛の強さ
 
 <!--REF:心理学-->
 
-出典：章の頭の、性格についての pjdhiro の見方＝pjdhiro「用語: その他」の「性格」の項（uminomae.github.io/pjdhiro/word-other/）。
+出典：章の頭の、性格についての pjdhiro の見方＝pjdhiro「用語: その他」の「性格」の項（[uminomae.github.io/pjdhiro/word-other/](https://uminomae.github.io/pjdhiro/word-other/)）。
 
 </details>
 
@@ -728,7 +728,7 @@ pjdhiro は、期待外れになるかどうかは能力と心理防衛の強さ
 
 <!--REF:心理学-->
 
-出典：Vaillant (2011) "Involuntary coping mechanisms: a psychodynamic perspective", *Dialogues in Clinical Neuroscience* 13(3):366（本文照合済。PMC3182012 の全文。不随意の対処・熱のたとえ・孫の例・フロイト 1894 年は冒頭の節「What are involuntary coping mechanisms?」、六つの性質・四つの水準・三つの道・成人発達研究は「Classification of defenses」の節。pp.366–370）／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* 27:99（本文照合済。早い時期の防衛に理想化と否認を数える箇所は p.99、分裂・理想化・否認のつながりは pp.101–102、内なる理想化された対象への逃げ込みは p.103、不安が弱まると理想化が減る箇所は p.105。写しは、Internet Archive にある国際精神分析大学ベルリンのコレクション）／A. Freud (1936) *Das Ich und die Abwehrmechanismen*、英訳 Baines (1937) *The Ego and the Mechanisms of Defence*（本文照合済（訳）。Baines の英訳で読んだ。三つの不安と自我を守る目的は pp.73–74、第 6 章「空想の中の否認」pp.73–88、第 7 章「言葉と行いによる否認」pp.89–99。写しは、クライン 1946 年と同じ、Internet Archive にある国際精神分析大学ベルリンのコレクション）。
+出典：[Vaillant (2011)](https://doi.org/10.31887/DCNS.2011.13.2/gvaillant) "Involuntary coping mechanisms: a psychodynamic perspective", *Dialogues in Clinical Neuroscience* 13(3):366（本文照合済。[PMC3182012](https://pmc.ncbi.nlm.nih.gov/articles/PMC3182012/) の全文。不随意の対処・熱のたとえ・孫の例・フロイト 1894 年は冒頭の節「What are involuntary coping mechanisms?」、六つの性質・四つの水準・三つの道・成人発達研究は「Classification of defenses」の節。pp.366–370）／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99（](https://archive.org/details/ijp-27-1946-1-2)本文照合済。早い時期の防衛に理想化と否認を数える箇所は p.99、分裂・理想化・否認のつながりは pp.101–102、内なる理想化された対象への逃げ込みは p.103、不安が弱まると理想化が減る箇所は p.105。写しは、Internet Archive にある国際精神分析大学ベルリンのコレクション）／A. Freud (1936) *Das Ich und die Abwehrmechanismen*、英訳 Baines (1937) [*The Ego and the Mechanisms of Defence*](https://archive.org/details/a-freud-1937-ego)（本文照合済（訳）。Baines の英訳で読んだ。三つの不安と自我を守る目的は pp.73–74、第 6 章「空想の中の否認」pp.73–88、第 7 章「言葉と行いによる否認」pp.89–99。写しは、クライン 1946 年と同じ、Internet Archive にある国際精神分析大学ベルリンのコレクション）。
 
 </details>
 
@@ -795,7 +795,7 @@ O'Fallon の帯の一覧は 1.5〜6.5 で、いちばん下の行はその外に
 
 <!--REF:心理学-->
 
-出典：O'Fallon (2020) "States and STAGES: Waking up Developmentally", *Integral Review* 16(1)（本文照合済。1.5〜6.5 の帯の一覧 p.20、6.0・6.5 の定義 p.29）／Keats (1817) George と Tom 宛の書簡、1817 年 12 月 22 日付、Colvin 編 *Letters of John Keats to His Family and Friends* Letter XXIV（Project Gutenberg の公開版で本文照合済。原本は伝わらず写しで残り、日付は版で揺れる）。
+出典：O'Fallon (2020) "States and STAGES: Waking up Developmentally", [*Integral Review* 16(1)](https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf)（本文照合済。1.5〜6.5 の帯の一覧 p.20、6.0・6.5 の定義 p.29）／Keats (1817) George と Tom 宛の書簡、1817 年 12 月 22 日付、Colvin 編 *Letters of John Keats to His Family and Friends* Letter XXIV（[Project Gutenberg の公開版](https://www.gutenberg.org/ebooks/35698)で本文照合済。原本は伝わらず写しで残り、日付は版で揺れる）。
 
 </details>
 
@@ -891,7 +891,7 @@ O'Fallon の帯の一覧は 1.5〜6.5 で、いちばん下の行はその外に
 
 <!--REF:心理学-->
 
-出典：Barrett, Gross, Christensen & Benvenuto (2001) "Knowing what you're feeling and knowing what to do about it: Mapping the relation between emotion differentiation and emotion regulation", *Cognition and Emotion* 15(6):713–724（本文照合済。取り替えのきく語として使う人がいること p.713、同じ人の中でも場面で違うこと・快か不快かの全体を言い表すこと p.714、参加者と日記 pp.716–717、九つの語と分け方の計り方 p.717、否定と肯定の結果 pp.719–720、相関で逆の向きもありうること pp.721–722。読んだ写しは、著者の研究室のサイト affective-science.org が公開していた誌面の PDF の、Wayback Machine による 2011 年 9 月 3 日の保存）。
+出典：[Barrett, Gross, Christensen & Benvenuto (2001)](https://doi.org/10.1080/02699930143000239) "Knowing what you're feeling and knowing what to do about it: Mapping the relation between emotion differentiation and emotion regulation", *Cognition and Emotion* 15(6):713–724（本文照合済。取り替えのきく語として使う人がいること p.713、同じ人の中でも場面で違うこと・快か不快かの全体を言い表すこと p.714、参加者と日記 pp.716–717、九つの語と分け方の計り方 p.717、否定と肯定の結果 pp.719–720、相関で逆の向きもありうること pp.721–722。読んだ写しは、著者の研究室のサイト affective-science.org が公開していた誌面の PDF の、[Wayback Machine による 2011 年 9 月 3 日の保存](https://web.archive.org/web/20110903095938/http://www.affective-science.org/pubs/2001/01MaprelationDiffReg.pdf)）。
 
 </details>
 
@@ -925,7 +925,7 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 
 <!--REF:心理学-->
 
-出典：pjdhiro「対話: 受容について」（uminomae.github.io/pjdhiro/dialogue-acceptance/）。
+出典：pjdhiro「対話: 受容について」（[uminomae.github.io/pjdhiro/dialogue-acceptance/](https://uminomae.github.io/pjdhiro/dialogue-acceptance/)）。
 
 </details>
 
@@ -937,7 +937,7 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 
 <!--REF:心理学-->
 
-出典：期待と信頼の軸＝「意識とは」の作業ノート「[信頼とは何か — 軸による多元的記述](https://github.com/uminomae/project-design-theory/blob/main/as/knowledge/concepts/CN-006_trust-analysis-axes.md)」／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* 27:99（本文照合済。早い時期の防衛に理想化を数える箇所は p.99、良い面を大きくして迫害の恐れから守る箇所は p.101。写しは、Internet Archive にある国際精神分析大学ベルリンのコレクション）／Vaillant (2011) "Involuntary coping mechanisms: a psychodynamic perspective", *Dialogues in Clinical Neuroscience* 13(3):366（本文照合済。PMC3182012 の全文。空想を未熟な防衛に数える箇所は、冒頭の節「What are involuntary coping mechanisms?」と「Classification of defenses」の節）。
+出典：期待と信頼の軸＝「意識とは」の作業ノート「[信頼とは何か — 軸による多元的記述](https://github.com/uminomae/project-design-theory/blob/main/as/knowledge/concepts/CN-006_trust-analysis-axes.md)」／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99（](https://archive.org/details/ijp-27-1946-1-2)本文照合済。早い時期の防衛に理想化を数える箇所は p.99、良い面を大きくして迫害の恐れから守る箇所は p.101。写しは、Internet Archive にある国際精神分析大学ベルリンのコレクション）／[Vaillant (2011)](https://doi.org/10.31887/DCNS.2011.13.2/gvaillant) "Involuntary coping mechanisms: a psychodynamic perspective", *Dialogues in Clinical Neuroscience* 13(3):366（本文照合済。PMC3182012 の全文。空想を未熟な防衛に数える箇所は、冒頭の節「What are involuntary coping mechanisms?」と「Classification of defenses」の節）。
 
 </details>
 
@@ -975,7 +975,7 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 
 <!--REF:心理学-->
 
-出典：Freud (1927) *Die Zukunft einer Illusion*, Internationaler Psychoanalytischer Verlag（本文照合済。初版の写真版で、Internet Archive にある国際精神分析大学ベルリンのコレクション。作品はパブリックドメイン。宗教の考えを経験の沈殿でも考えの結果でもないとする箇所と、寄る辺なさと父の箇所は p.47、錯覚と誤りの例は p.48、錯覚の定め方は pp.49–50、証明も反証もできない箇所は p.50）。
+出典：Freud (1927) *Die Zukunft einer Illusion*, Internationaler Psychoanalytischer Verlag（本文照合済。[初版の写真版](https://archive.org/details/Freud_1927_Die_Zukunft_einer_Illusion_k)で、Internet Archive にある国際精神分析大学ベルリンのコレクション。作品はパブリックドメイン。宗教の考えを経験の沈殿でも考えの結果でもないとする箇所と、寄る辺なさと父の箇所は p.47、錯覚と誤りの例は p.48、錯覚の定め方は pp.49–50、証明も反証もできない箇所は p.50）。
 
 </details>
 
@@ -1011,7 +1011,7 @@ pjdhiro のページは、創造の段階に、ゆれと対立を置き、衝突
 
 <!--REF:心理学-->
 
-出典：pjdhiro「[対話：創造とは](https://uminomae.github.io/pjdhiro/dialogueCreation/)」（「特に注意したい現象」の「波」の項）／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* 27:99–110（本文照合済。良い対象を理想化する傾向と、内なる理想化された対象への逃げ込みは p.103、愛する面と憎む面が離れていないと感じられること・失う恐れ・罪の感じ・喪に近い状態・償いの動き・分ける動きが形を変えて残り、不安の場面がくり返し経験されること・不安が弱まると理想化も恐ろしさも少なくなることは p.105、分ける機制と防衛が正常な発達の一部で、のちの病の土台にもなることは p.109。写しは、Internet Archive にある国際精神分析大学ベルリンのコレクション）／良い結果だけ・良いも悪いもの軸＝「意識とは」の作業ノート「[信頼とは何か — 軸による多元的記述](https://github.com/uminomae/project-design-theory/blob/main/as/knowledge/concepts/CN-006_trust-analysis-axes.md)」。
+出典：pjdhiro「[対話：創造とは](https://uminomae.github.io/pjdhiro/dialogueCreation/)」（「特に注意したい現象」の「波」の項）／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99–110](https://archive.org/details/ijp-27-1946-1-2)（本文照合済。良い対象を理想化する傾向と、内なる理想化された対象への逃げ込みは p.103、愛する面と憎む面が離れていないと感じられること・失う恐れ・罪の感じ・喪に近い状態・償いの動き・分ける動きが形を変えて残り、不安の場面がくり返し経験されること・不安が弱まると理想化も恐ろしさも少なくなることは p.105、分ける機制と防衛が正常な発達の一部で、のちの病の土台にもなることは p.109。写しは、Internet Archive にある国際精神分析大学ベルリンのコレクション）／良い結果だけ・良いも悪いもの軸＝「意識とは」の作業ノート「[信頼とは何か — 軸による多元的記述](https://github.com/uminomae/project-design-theory/blob/main/as/knowledge/concepts/CN-006_trust-analysis-axes.md)」。
 
 </details>
 
@@ -1043,7 +1043,7 @@ pjdhiro のページは、創造の段階に、ゆれと対立を置き、衝突
 
 <!--REF:心理学-->
 
-出典：Winnicott (1960) "The theory of the parent-infant relationship", *International Journal of Psycho-Analysis* 41:585–595（本文照合済。分析者のあてにできる感じは p.585、「赤ん坊というものはいない」・乳児と世話のまとまり・依存の語の意味は p.586、絶対的な依存から相対的な依存を経て独立へ、は p.588、抱えることの定義は p.589、依存の三つは pp.589–590、抱える環境の働きは p.590、あてにできるが機械のようにではない・愛を示す形・指導だけではほどよい世話にならない、は p.591、乳児の自我の強さは p.594 の要約。写しは、西ベンガル州政府の教育研究訓練評議会が走査した同じ巻を、公開資料の団体 Servants of Knowledge が Internet Archive に上げたもの。権利は確かめていない）。
+出典：Winnicott (1960) "The theory of the parent-infant relationship", *International Journal of Psycho-Analysis* 41:585–595（本文照合済。分析者のあてにできる感じは p.585、「赤ん坊というものはいない」・乳児と世話のまとまり・依存の語の意味は p.586、絶対的な依存から相対的な依存を経て独立へ、は p.588、抱えることの定義は p.589、依存の三つは pp.589–590、抱える環境の働きは p.590、あてにできるが機械のようにではない・愛を示す形・指導だけではほどよい世話にならない、は p.591、乳児の自我の強さは p.594 の要約。写しは、西ベンガル州政府の教育研究訓練評議会が走査した[同じ巻](https://archive.org/details/dli.scoerat.1853theinternationaljournalofpsychoanalysisvolxll1960)を、公開資料の団体 Servants of Knowledge が Internet Archive に上げたもの。権利は確かめていない）。
 
 </details>
 
@@ -1059,7 +1059,7 @@ pjdhiro のページは、創造の段階に、ゆれと対立を置き、衝突
 
 <!--REF:心理学-->
 
-出典：Maslow (1943) "A theory of human motivation", *Psychological Review* 50(4):370–396（本文照合済。York University の Classics in the History of Psychology の HTML（原典の頁番号つき）。安全の欲求は pp.376–380、決まった流れと予測できる世界は p.377、拒まれた子が憎む親にしがみつくことは p.378、健康な大人では満たされていることは pp.378–379、慣れたものの好み・保障と保険は p.379、守ってくれる人・頼れる強い人を探すことは pp.379–380、所属と愛の欲求と、与えることと受け取ることは pp.380–381、同時に部分的に満たされることは pp.388–389）。
+出典：[Maslow (1943)](https://doi.org/10.1037/h0054346) "A theory of human motivation", *Psychological Review* 50(4):370–396（本文照合済。[York University の Classics in the History of Psychology の HTML](http://psychclassics.yorku.ca/Maslow/motivation.htm)（原典の頁番号つき）。安全の欲求は pp.376–380、決まった流れと予測できる世界は p.377、拒まれた子が憎む親にしがみつくことは p.378、健康な大人では満たされていることは pp.378–379、慣れたものの好み・保障と保険は p.379、守ってくれる人・頼れる強い人を探すことは pp.379–380、所属と愛の欲求と、与えることと受け取ることは pp.380–381、同時に部分的に満たされることは pp.388–389）。
 
 </details>
 
@@ -1087,7 +1087,7 @@ pjdhiro のページは、創造の段階に、ゆれと対立を置き、衝突
 
 <!--REF:心理学-->
 
-出典：Ainsworth & Bowlby (1991) "An ethological approach to personality development", *American Psychologist* 46(4):333–341（ストーニーブルック大学の愛着研究のサイトにあった打ち直しの写しの Wayback の記録（2005 年 5 月 14 日）で本文照合済。頁は写しの頁。安全基地 pp.2・6、愛着の行動の働き p.5、再会の振る舞い p.7、内的作業モデル pp.7–8、不安定な型の二つ p.8、関係への見込み p.9）／Coan & Sbarra (2015) "Social Baseline Theory: the social regulation of risk and effort", *Current Opinion in Psychology* 1:87–91（PMC の著者稿で本文照合済。導入と結び）。
+出典：[Ainsworth & Bowlby (1991)](https://doi.org/10.1037/0003-066X.46.4.333) "An ethological approach to personality development", *American Psychologist* 46(4):333–341（ストーニーブルック大学の愛着研究のサイトにあった[打ち直しの写しの Wayback の記録](https://web.archive.org/web/20050514233234/http://www.psychology.sunysb.edu:80/attachment/online/ainsworth_bowlby_1991.pdf)（2005 年 5 月 14 日）で本文照合済。頁は写しの頁。安全基地 pp.2・6、愛着の行動の働き p.5、再会の振る舞い p.7、内的作業モデル pp.7–8、不安定な型の二つ p.8、関係への見込み p.9）／[Coan & Sbarra (2015)](https://doi.org/10.1016/j.copsyc.2014.12.021) "Social Baseline Theory: the social regulation of risk and effort", *Current Opinion in Psychology* 1:87–91（[PMC の著者稿](https://pmc.ncbi.nlm.nih.gov/articles/PMC4375548/)で本文照合済。導入と結び）。
 
 </details>
 
@@ -1129,7 +1129,7 @@ pjdhiro のページは、創造の段階に、ゆれと対立を置き、衝突
 
 <!--REF:心理学-->
 
-出典：Plutchik (2001) "Integration, differentiation, and derivatives of emotion", *Evolution and Cognition* 7(2):114–125（コンラート・ローレンツ研究所が公開している号の PDF で本文照合済。円錐の模型と反対の感情 pp.117–118、喜びと受容の混ざりは愛 p.118、混ざりの表 p.118、感情と性格の語 p.119、適応の元の形の表 p.117、感情の一続きの表 p.121、派生の表 p.123、言い表しにくさ p.114、混ざりと葛藤 p.123）。
+出典：Plutchik (2001) "Integration, differentiation, and derivatives of emotion", *Evolution and Cognition* 7(2):114–125（[コンラート・ローレンツ研究所が公開している号の PDF](https://kli.ac.at/webroot/files/file/Evolution%20%26%20Cognition/2001%207-2.pdf) で本文照合済。円錐の模型と反対の感情 pp.117–118、喜びと受容の混ざりは愛 p.118、混ざりの表 p.118、感情と性格の語 p.119、適応の元の形の表 p.117、感情の一続きの表 p.121、派生の表 p.123、言い表しにくさ p.114、混ざりと葛藤 p.123）。
 
 </details>
 
@@ -1143,7 +1143,7 @@ pjdhiro のページは、創造の段階に、ゆれと対立を置き、衝突
 
 <!--REF:心理学-->
 
-出典：Panksepp (2001) "The neuro-evolutionary cusp between emotions and cognitions: Implications for understanding consciousness and the emergence of a unified mind science", *Evolution and Cognition* 7(2):141–163（2000 年に *Consciousness & Emotion* 1:15–54 に載った論文の再録。コンラート・ローレンツ研究所が公開している号の PDF で本文照合済。系と感情の表と大文字の意味 p.156）／Ortony & Turner (1990) "What's basic about basic emotions?", *Psychological Review* 97(3):315–331（第一著者の大学のサイトの写しで本文照合済。基本の感情の一覧の表 p.316、受容はプルチックだけ p.315、シェイヴァーらの五つ p.319、混ざりへの疑問 p.326）。
+出典：Panksepp (2001) "The neuro-evolutionary cusp between emotions and cognitions: Implications for understanding consciousness and the emergence of a unified mind science", *Evolution and Cognition* 7(2):141–163（2000 年に *Consciousness & Emotion* 1:15–54 に載った論文の再録。[コンラート・ローレンツ研究所が公開している号の PDF](https://kli.ac.at/webroot/files/file/Evolution%20%26%20Cognition/2001%207-2.pdf) で本文照合済。系と感情の表と大文字の意味 p.156）／[Ortony & Turner (1990)](https://doi.org/10.1037/0033-295X.97.3.315) "What's basic about basic emotions?", *Psychological Review* 97(3):315–331（[第一著者の大学のサイトの写し](https://users.cs.northwestern.edu/~ortony/Andrew_Ortony_files/1990%20-%20Basic%20emotions.pdf)で本文照合済。基本の感情の一覧の表 p.316、受容はプルチックだけ p.315、シェイヴァーらの五つ p.319、混ざりへの疑問 p.326）。
 
 </details>
 
@@ -1159,7 +1159,7 @@ pjdhiro のページは、創造の段階に、ゆれと対立を置き、衝突
 
 <!--REF:心理学-->
 
-出典：Fredrickson (2016) "Love: Positivity resonance as a fresh, evidence-based perspective on an age-old topic", in Barrett, Lewis & Haviland-Jones (eds.) *Handbook of Emotions* (4th ed.), Guilford Press（著者の研究室のサイトにある、刊行前の原稿で本文照合済。頁は原稿の頁。「愛している」が指すもの p.3、思い・絆・親しさ・約束は積み重ねでできる p.3、愛の定義 p.16、くり返しが信頼と誠実さを築く p.19）。
+出典：Fredrickson (2016) "Love: Positivity resonance as a fresh, evidence-based perspective on an age-old topic", in Barrett, Lewis & Haviland-Jones (eds.) *Handbook of Emotions* (4th ed.), Guilford Press（[著者の研究室のサイトにある、刊行前の原稿](https://peplab.web.unc.edu/wp-content/uploads/sites/18901/2019/06/Fredrickson2016ChapteronLoveforHandbookofEmotions.pdf)で本文照合済。頁は原稿の頁。「愛している」が指すもの p.3、思い・絆・親しさ・約束は積み重ねでできる p.3、愛の定義 p.16、くり返しが信頼と誠実さを築く p.19）。
 
 </details>
 
@@ -1271,7 +1271,7 @@ Love と呼びたいものは、恋愛や好意の感情に限らず、感情は
 
 <strong>pjdhiro の仮説：</strong>刀は自らを割かず　は、おそらくですが、私も重力場そのもので一部だということなんでしょうね。愛は重力場そのものなのかもしれないという仮説です。
 
-出典：『大慧普覚禅師語録』巻一（大正蔵 47 巻 No.1998A、812 頁下段。CBETA の電子テキストで本文照合済）。引用は Claude が確かめたもので、pjdhiro は原典を読んでいません。
+出典：『大慧普覚禅師語録』巻一（大正蔵 47 巻 No.1998A、812 頁下段。[CBETA の電子テキスト](https://cbetaonline.dila.edu.tw/zh/T1998A_001)で本文照合済）。引用は Claude が確かめたもので、pjdhiro は原典を読んでいません。
 
 </details>
 
@@ -1313,7 +1313,7 @@ pjdhiro は、そこで感じるものを、頭頂の先にへその緒でつな
 
 <!--REF:神経と情動-->
 
-出典：Brosschot, Verkuil & Thayer (2018) "Generalized Unsafety Theory of Stress", *International Journal of Environmental Research and Public Health* 15(3):464（PMC の公開版で本文照合済。要旨・1.2 節・3 節）／Coan, Schaefer & Davidson (2006) "Lending a hand", *Psychological Science* 17(12):1032（共著者 Davidson のウィスコンシン大学 Center for Healthy Minds のサイトにある誌面の PDF で本文照合済。要旨 p.1032、脅威の手がかり p.1033）。
+出典：[Brosschot, Verkuil & Thayer (2018)](https://doi.org/10.3390/ijerph15030464) "Generalized Unsafety Theory of Stress", *International Journal of Environmental Research and Public Health* 15(3):464（[PMC の公開版](https://pmc.ncbi.nlm.nih.gov/articles/PMC5877009/)で本文照合済。要旨・1.2 節・3 節）／[Coan, Schaefer & Davidson (2006)](https://doi.org/10.1111/j.1467-9280.2006.01832.x) "Lending a hand", *Psychological Science* 17(12):1032（共著者 Davidson のウィスコンシン大学 [Center for Healthy Minds のサイトにある誌面の PDF](https://centerhealthyminds.org/assets/files-publications/CoanLendingPsychSci.pdf) で本文照合済。要旨 p.1032、脅威の手がかり p.1033）。
 
 </details>
 
@@ -1335,7 +1335,7 @@ Mikulincer、Gillath、Shaver（2002 年）は、意識に上らない速さで�
 
 <!--REF:心理学-->
 
-出典：Mikulincer, Gillath & Shaver (2002) "Activation of the attachment system in adulthood: Threat-related primes increase the accessibility of mental representations of attachment figures", *Journal of Personality and Social Psychology* 83(4):881／Shaver & Mikulincer (2008) "Augmenting the sense of security in romantic, leader–follower, therapeutic, and group relationships: A relational model of psychological change", in J. P. Forgas & J. Fitness (Eds.), *Social Relationships: Cognitive, Affective, and Motivational Processes*, Psychology Press, 第 4 章 pp.55–（DOI 10.4324/9780203888124-10。頁は著者の PDF の刷りの頁）（どちらも著者のサイトの PDF で本文を照合した）。
+出典：[Mikulincer, Gillath & Shaver (2002)](https://doi.org/10.1037/0022-3514.83.4.881) "Activation of the attachment system in adulthood: Threat-related primes increase the accessibility of mental representations of attachment figures", *Journal of Personality and Social Psychology* 83(4):881／Shaver & Mikulincer (2008) "Augmenting the sense of security in romantic, leader–follower, therapeutic, and group relationships: A relational model of psychological change", in J. P. Forgas & J. Fitness (Eds.), *Social Relationships: Cognitive, Affective, and Motivational Processes*, Psychology Press, 第 4 章 pp.55–（[DOI 10.4324/9780203888124-10](https://doi.org/10.4324/9780203888124-10)。頁は著者の PDF の刷りの頁）（どちらも著者のサイトの PDF で本文を照合した）。
 
 </details>
 
@@ -1353,7 +1353,7 @@ Zilcha-Mano、Mikulincer、Shaver（2012 年）は、犬か猫の飼い主に難
 
 <!--REF:心理学-->
 
-出典：Takano & Nomura (2023) "A closer look at the time course of bodily responses to awe experiences", *Scientific Reports* 13:22506（オープンアクセスの本文を照合。方法と評定の項目 p.3、結果 pp.4–5、考察 p.7）／Inzlicht & Tullett (2010) "Reflecting on God: Religious primes can reduce neurophysiological response to errors", *Psychological Science* 21(8):1184（著者のサイトの PDF で本文を照合。要旨 p.1184、実験 2 pp.1186–1187）／Zilcha-Mano, Mikulincer & Shaver (2012) "Pets as safe havens and secure bases: The moderating role of pet attachment orientations", *Journal of Research in Personality* 46(5):571（著者の大学の研究室のサイトの PDF で本文を照合。条件 p.573、結果 p.577）／Mikulincer & Shaver (2020) "Enhancing the 'Broaden and Build' cycle of attachment security in adulthood: From the laboratory to relational contexts and societal systems", *International Journal of Environmental Research and Public Health* 17(6):2054（PMC の本文を照合。第 11 節）／Dor-Ziderman, Berkovich-Ohana, Glicksohn & Goldstein (2013) "Mindfulness-induced selflessness: A MEG neurophenomenological study", *Frontiers in Human Neuroscience* 7:582（オープンアクセスの本文を照合。教示 p.4、参加者の記述 p.6）。
+出典：[Takano & Nomura (2023)](https://doi.org/10.1038/s41598-023-49681-2) "A closer look at the time course of bodily responses to awe experiences", *Scientific Reports* 13:22506（オープンアクセスの本文を照合。方法と評定の項目 p.3、結果 pp.4–5、考察 p.7）／[Inzlicht & Tullett (2010)](https://doi.org/10.1177/0956797610375451) "Reflecting on God: Religious primes can reduce neurophysiological response to errors", *Psychological Science* 21(8):1184（著者のサイトの PDF で本文を照合。要旨 p.1184、実験 2 pp.1186–1187）／[Zilcha-Mano, Mikulincer & Shaver (2012)](https://doi.org/10.1016/j.jrp.2012.06.005) "Pets as safe havens and secure bases: The moderating role of pet attachment orientations", *Journal of Research in Personality* 46(5):571（著者の大学の研究室のサイトの PDF で本文を照合。条件 p.573、結果 p.577）／[Mikulincer & Shaver (2020)](https://doi.org/10.3390/ijerph17062054) "Enhancing the 'Broaden and Build' cycle of attachment security in adulthood: From the laboratory to relational contexts and societal systems", *International Journal of Environmental Research and Public Health* 17(6):2054（[PMC の本文](https://pmc.ncbi.nlm.nih.gov/articles/PMC7143531/)を照合。第 11 節）／[Dor-Ziderman, Berkovich-Ohana, Glicksohn & Goldstein (2013)](https://doi.org/10.3389/fnhum.2013.00582) "Mindfulness-induced selflessness: A MEG neurophenomenological study", *Frontiers in Human Neuroscience* 7:582（オープンアクセスの本文を照合。教示 p.4、参加者の記述 p.6）。
 
 出典（風神についての pjdhiro の言葉）：救いと赦し＝pjdhiro「[対話：「森の木」 Wood Wide Webと陰陽なフラクタルの青山常運歩](https://uminomae.github.io/pjdhiro/20250612WoodWideWeb/)」／知能と叡智＝pjdhiro の投稿の控え「[正規分布の丸さと回転](https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/notes/2026-06-26-gaussian-rotation-fujin-raijin.md)」の原文／体の微細な信号＝pjdhiro の投稿の控え「[止揚 — 分離と包摂的統合](https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/notes/2026-06-26-aufheben-body-signal.md)」の原文。
 
@@ -1478,7 +1478,7 @@ pjdhiro は、重力、海と波と渦、粒でできた場、臍の緒、ワー
 
 <!--REF:経営学・起業研究-->
 
-出典：Mintzberg & Waters (1983) "The Mind of the Strategist(s)", in S. Srivastva and Associates, *The Executive Mind*, Jossey-Bass, pp.58–83（著者のサイトにある本のスキャンで本文照合済。三つの戦略の定義 p.60）／Mintzberg (1994) "Rethinking Strategic Planning Part I", *Long Range Planning* 27(3):12–21（著者のサイトにある誌面の PDF で本文照合済。戦略が創発の性質を帯びる箇所 p.19）／Knight (1921) *Risk, Uncertainty and Profit*（Liberty Fund の Library of Economics and Liberty にあるパブリックドメインの全文で本文照合済。リスクと不確実性の区別は第 III 部第 8 章の段落 III.VIII.1、利潤と不確実性は第 III 部第 10 章の段落 III.X.33）／Colville, Waterman & Weick (1999) "Organizing and the Search for Excellence: Making Sense of the Times in Theory and Practice", *Organization* 6(1):129–148（ミシガン大学の機関リポジトリにあった誌面の PDF の Wayback の記録（2017 年 8 月 20 日）で本文照合済。Weick 1995 の p.55 を引く箇所 p.141）／Wegner & Wheatley (1999) "Apparent mental causation", *American Psychologist* 54(7):480（著者のハーバード大学の頁にあった誌面の PDF の Wayback の記録（2005 年 12 月 15 日）で本文照合済。要旨 p.480）／Wegner (2003) "The mind's best trick", *Trends in Cognitive Sciences* 7(2):65（同じ頁にあった誌面の PDF の Wayback の記録（2005 年 11 月 9 日）で本文照合済。p.65）。
+出典：Mintzberg & Waters (1983) "The Mind of the Strategist(s)", in S. Srivastva and Associates, *The Executive Mind*, Jossey-Bass, pp.58–83（[著者のサイトにある本のスキャン](https://mintzberg.org/sites/default/files/article/download/hm_the_mind_of_the_strategist.pdf)で本文照合済。三つの戦略の定義 p.60）／[Mintzberg (1994)](https://doi.org/10.1016/0024-6301(94)90185-6) "Rethinking Strategic Planning Part I", *Long Range Planning* 27(3):12–21（[著者のサイトにある誌面の PDF](https://mintzberg.org/sites/default/files/article/download/rethinking_strategic_planning_1.pdf) で本文照合済。戦略が創発の性質を帯びる箇所 p.19）／Knight (1921) *Risk, Uncertainty and Profit*（Liberty Fund の [Library of Economics and Liberty にあるパブリックドメインの全文](https://www.econlib.org/library/Knight/knRUP.html)で本文照合済。リスクと不確実性の区別は第 III 部第 8 章の段落 III.VIII.1、利潤と不確実性は第 III 部第 10 章の段落 III.X.33）／[Colville, Waterman & Weick (1999)](https://doi.org/10.1177/135050849961006) "Organizing and the Search for Excellence: Making Sense of the Times in Theory and Practice", *Organization* 6(1):129–148（[ミシガン大学の機関リポジトリにあった誌面の PDF の Wayback の記録](https://web.archive.org/web/20170820222352/https://deepblue.lib.umich.edu/bitstream/handle/2027.42/68948/10.1177_135050849961006.pdf?sequence=2)（2017 年 8 月 20 日）で本文照合済。Weick 1995 の p.55 を引く箇所 p.141）／[Wegner & Wheatley (1999)](https://doi.org/10.1037/0003-066X.54.7.480) "Apparent mental causation", *American Psychologist* 54(7):480（[著者のハーバード大学の頁にあった誌面の PDF の Wayback の記録](https://web.archive.org/web/20051215153037/http://www.wjh.harvard.edu:80/%7Ewegner/pdfs/Wegner&Wheatley1999.pdf)（2005 年 12 月 15 日）で本文照合済。要旨 p.480）／[Wegner (2003)](https://doi.org/10.1016/S1364-6613(03)00002-0) "The mind's best trick", *Trends in Cognitive Sciences* 7(2):65（[同じ頁にあった誌面の PDF の Wayback の記録](https://web.archive.org/web/20051109055505/http://www.wjh.harvard.edu:80/~wegner/pdfs/Mind%27s_Best_Trick.pdf)（2005 年 11 月 9 日）で本文照合済。p.65）。
 
 </details>
 
@@ -1492,7 +1492,7 @@ pjdhiro は、重力、海と波と渦、粒でできた場、臍の緒、ワー
 
 <!--REF:言葉と辞書-->
 
-出典：精選版 日本国語大辞典「開発（かいはつ）」①〜⑥と補注・「開発（かいほつ）」の用例（正法眼蔵）／デジタル大辞泉「開発」①〜③と補説／日本大百科全書（ニッポニカ）「開発」の develop の段（どれもコトバンクの本文で照合済・2026-11-10）。
+出典：[精選版 日本国語大辞典「開発（かいはつ）」](https://kotobank.jp/word/%E9%96%8B%E7%99%BA)①〜⑥と補注・「開発（かいほつ）」の用例（正法眼蔵）／[デジタル大辞泉「開発」](https://kotobank.jp/word/%E9%96%8B%E7%99%BA)①〜③と補説／[日本大百科全書（ニッポニカ）「開発」](https://kotobank.jp/word/%E9%96%8B%E7%99%BA)の develop の段（どれもコトバンクの本文で照合済・2026-11-10）。
 
 </details>
 
@@ -1611,7 +1611,7 @@ Claude の読み：この研究は、上の問いの「復興をしたいと思�
 
 <!--REF:震災復興-->
 
-出典：復興庁 東日本大震災の教訓継承サイトの事例 44-1「『いちご団地』の産地復興」pp.171–172（本文照合済）／農林水産省「『仙台いちご』の復活【宮城県亘理町・山元町】」（本文照合済）／株式会社GRA・岩佐大輝「ミガキイチゴ」規制改革推進会議 農林ワーキング・グループ資料 1（2019 年 4 月 1 日。本文照合済。人口と被害 p.4、会社概要 p.5、沿革 pp.6–7）／渥美公秀（2010）「災害復興過程の被災地間伝承：小千谷市塩谷集落から刈羽村への手紙」大阪大学大学院人間科学研究科紀要 36:1–18（大阪大学の機関リポジトリの出版社版で本文照合済。集落の概要と経過 pp.4–8、手紙 p.10、制度の時間と問い p.12）／女川町長 須田善明「新たな視点でのまちづくり（女川町）」復興庁のフォーラムの資料（本文照合済）／神戸市・真野地区まちづくり推進会「真野地区まちづくり協定書」（2017 年 12 月 28 日の版。本文照合済。前文・第 3〜5 条）／広原盛明ほか 科研費 07455243「神戸市真野地区における『まちづくり会社』の成立可能性に関する事例研究」1995 年度・1996 年度の実績報告（KAKEN の頁で本文照合済）／宮本匠「『復興曲線』を用いた被災者の復興感についての研究」復興庁 東日本大震災発災 10 年事業「若手研究者からの報告」（2021 年 1 月 14 日。本文照合済）／宮本匠 科研費 25750150 研究成果報告書（2017 年 8 月 9 日。本文照合済。「研究成果の概要」と「4. 研究成果」）。
+出典：復興庁 東日本大震災の教訓継承サイトの[事例 44-1「『いちご団地』の産地復興」](https://www.reconstruction.go.jp/311kyoukun/pdf/zireishu/saisei_8.pdf)pp.171–172（本文照合済）／[農林水産省「『仙台いちご』の復活【宮城県亘理町・山元町】」](https://www.maff.go.jp/j/kanbo/joho/saigai/attach/pdf/torikumi-119.pdf)（本文照合済）／株式会社GRA・岩佐大輝「ミガキイチゴ」[規制改革推進会議 農林ワーキング・グループ資料 1](https://www8.cao.go.jp/kisei-kaikaku/suishin/meeting/wg/nourin/20190401/190401nourin01-1.pdf)（2019 年 4 月 1 日。本文照合済。人口と被害 p.4、会社概要 p.5、沿革 pp.6–7）／渥美公秀（2010）「災害復興過程の被災地間伝承：小千谷市塩谷集落から刈羽村への手紙」大阪大学大学院人間科学研究科紀要 36:1–18（[大阪大学の機関リポジトリの出版社版](https://doi.org/10.18910/12725)で本文照合済。集落の概要と経過 pp.4–8、手紙 p.10、制度の時間と問い p.12）／女川町長 須田善明[「新たな視点でのまちづくり（女川町）」](https://www.reconstruction.go.jp/files/user/topics/main-cat16/forum/material/0504_2-14_onagawa.pdf)復興庁のフォーラムの資料（本文照合済）／神戸市・真野地区まちづくり推進会[「真野地区まちづくり協定書」](https://www.city.kobe.lg.jp/documents/1904/20171228_manokyotei_1.pdf)（2017 年 12 月 28 日の版。本文照合済。前文・第 3〜5 条）／広原盛明ほか [科研費 07455243](https://kaken.nii.ac.jp/grant/KAKENHI-PROJECT-07455243/)「神戸市真野地区における『まちづくり会社』の成立可能性に関する事例研究」1995 年度・1996 年度の実績報告（KAKEN の頁で本文照合済）／宮本匠「『復興曲線』を用いた被災者の復興感についての研究」復興庁 東日本大震災発災 10 年事業[「若手研究者からの報告」](https://www.reconstruction.go.jp/10year/documents/researcher/11_miyamototakumi.pdf)（2021 年 1 月 14 日。本文照合済）／宮本匠 [科研費 25750150 研究成果報告書](https://kaken.nii.ac.jp/file/KAKENHI-PROJECT-25750150/25750150seika.pdf)（2017 年 8 月 9 日。本文照合済。「研究成果の概要」と「4. 研究成果」）。
 
 </details>
 
@@ -1661,7 +1661,7 @@ Claude の読み：この研究は、上の問いの「復興をしたいと思�
 
 <!--REF:経営学・起業研究-->
 
-出典：Mintzberg & Waters (1983) "The Mind of the Strategist(s)", in S. Srivastva and Associates, *The Executive Mind*, Jossey-Bass, pp.58–83（著者のサイトにある本のスキャンで本文を照合。四つの定義 p.59、三つの戦略の図と定義 p.60、調べた組織 p.61）。
+出典：Mintzberg & Waters (1983) "The Mind of the Strategist(s)", in S. Srivastva and Associates, *The Executive Mind*, Jossey-Bass, pp.58–83（[著者のサイトにある本のスキャン](https://mintzberg.org/sites/default/files/article/download/hm_the_mind_of_the_strategist.pdf)で本文を照合。四つの定義 p.59、三つの戦略の図と定義 p.60、調べた組織 p.61）。
 
 </details>
 
@@ -1685,7 +1685,7 @@ Claude の読み：この研究は、上の問いの「復興をしたいと思�
 
 <!--REF:言葉と辞書-->
 
-出典：精選版 日本国語大辞典・デジタル大辞泉「プロジェクト」「創造」（コトバンクの本文で照合済・2026-11-10）／挾間啓之「PM 資料ガイド　プロジェクトマネジメント」（日本プロジェクトマネジメント協会、Rev.0 2001 年 3 月 11 日。協会のサイトの公開 PDF で本文照合済。エンジニアリング振興協会『エンジニアリング プロジェクト・マネジメント用語辞典』1985 年の定義を引いた段）。
+出典：精選版 日本国語大辞典・デジタル大辞泉「プロジェクト」[「創造」](https://kotobank.jp/word/%E5%89%B5%E9%80%A0)（コトバンクの本文で照合済・2026-11-10）／挾間啓之「PM 資料ガイド　プロジェクトマネジメント」（日本プロジェクトマネジメント協会、Rev.0 2001 年 3 月 11 日。[協会のサイトの公開 PDF](https://pmaj.or.jp/archives/JPMF/library/open/education/PMGuide-01pm-1.pdf) で本文照合済。エンジニアリング振興協会『エンジニアリング プロジェクト・マネジメント用語辞典』1985 年の定義を引いた段）。
 
 </details>
 
@@ -1709,7 +1709,7 @@ Love駆動開発の名前は、何度も遭遇した出来事に、あとから�
 
 <!--REF:言葉と辞書-->
 
-出典：IT用語辞典 e-Words「テスト駆動開発」（本文で照合済・2026-11-10）。
+出典：[IT用語辞典 e-Words「テスト駆動開発」](https://e-words.jp/w/%E3%83%86%E3%82%B9%E3%83%88%E9%A7%86%E5%8B%95%E9%96%8B%E7%99%BA.html)（本文で照合済・2026-11-10）。
 
 </details>
 
@@ -1762,7 +1762,7 @@ pjdhiro は、期待外れになるかどうかは、能力と、心理防衛機
 
 <!--REF:心理学-->
 
-出典：Kahneman & Tversky (1977) *Intuitive Prediction: Biases and Corrective Procedures*, Decision Research Technical Report PTR-1042-77-6（米国防高等研究計画局の委託の技術報告書。DTIC ADA047747 の PDF の Wayback の記録（2015 年 2 月 4 日）で本文照合済。p.2-2）／Taylor & Brown (1988) *Psychological Bulletin* 103(2):193（著者 Taylor の UCLA の研究室のサイトにある誌面の PDF で本文照合済。p.193 の要旨）。
+出典：Kahneman & Tversky (1977) *Intuitive Prediction: Biases and Corrective Procedures*, Decision Research Technical Report PTR-1042-77-6（米国防高等研究計画局の委託の技術報告書。[DTIC ADA047747 の PDF の Wayback の記録](https://web.archive.org/web/20150204120725/http://www.dtic.mil/dtic/tr/fulltext/u2/a047747.pdf)（2015 年 2 月 4 日）で本文照合済。p.2-2）／[Taylor & Brown (1988)](https://doi.org/10.1037/0033-2909.103.2.193) *Psychological Bulletin* 103(2):193（[著者 Taylor の UCLA の研究室のサイトにある誌面の PDF](https://taylorlab.psych.ucla.edu/wp-content/uploads/sites/5/2014/10/1988_Illusion-and-well-being_A-social-psychological-perspective-on-mental-health.pdf) で本文照合済。p.193 の要旨）。
 
 </details>
 
@@ -1828,7 +1828,7 @@ pjdhiro は、期待外れになるかどうかは、能力と、心理防衛機
 
 <!--REF:東洋の思想-->
 
-出典：『精選版 日本国語大辞典』「わび【侘・詫】」（小学館。コトバンクの公開版で本文照合済）／『改訂新版 世界大百科事典』「侘」（平凡社。堀信夫 執筆の段。コトバンクの公開版で本文照合済。『禅茶録』の一節は、この項の引用による）。
+出典：『精選版 日本国語大辞典』[「わび【侘・詫】」](https://kotobank.jp/word/%E4%BE%98%E3%81%B3)（小学館。コトバンクの公開版で本文照合済）／『改訂新版 世界大百科事典』[「侘」](https://kotobank.jp/word/%E4%BE%98-152618)（平凡社。堀信夫 執筆の段。コトバンクの公開版で本文照合済。『禅茶録』の一節は、この項の引用による）。
 
 </details>
 
@@ -1937,7 +1937,7 @@ pjdhiro は、期待外れになるかどうかは、能力と、心理防衛機
 
 <!--REF:心理学-->
 
-出典：[Edmondson (1999)](https://doi.org/10.2307/2666999) *Administrative Science Quarterly* 44(2):350（MIT の授業の読み物として大学のサーバーに置かれた誌面の走査で本文照合済。定義 p.354）／[Schein (1995)](https://hdl.handle.net/1721.1/2576) "Kurt Lewin's Change Theory in the Field and in the Classroom: Notes Toward a Model of Managed Learning", MIT Sloan Working Paper 3821（MIT の機関リポジトリにある PDF の Wayback の記録（2025 年 6 月 22 日）で本文照合済。pp.3–5）／[Duckworth, Peterson, Matthews & Kelly (2007)](https://doi.org/10.1037/0022-3514.92.6.1087) *Journal of Personality and Social Psychology* 92(6):1087（著者のペンシルベニア大学の頁にあった誌面の PDF の Wayback の記録（2014 年 7 月 26 日）で本文照合済。定義 pp.1087–1088）／[Luthar, Cicchetti & Becker (2000)](https://doi.org/10.1111/1467-8624.00164) *Child Development* 71(3):543（米国国立医学図書館の PMC にある著者稿 PMC1885202 で本文照合済。p.543）／[Ryan & Deci (2000)](https://doi.org/10.1037/0003-066X.55.1.68) *American Psychologist* 55(1):68（著者たちの Center for Self-Determination Theory のサイトにある誌面の PDF で本文照合済。pp.70–72）／[Keats, letter to George and Thomas Keats (1817 年 12 月)](https://www.gutenberg.org/ebooks/35698)（Colvin 編 *Letters of John Keats to His Family and Friends*, Macmillan, 1891 年初版・1925 年の刷の Letter XXIV を、Project Gutenberg の公開版で本文照合済。定義の文とコールリッジ・美の感覚の文は p.48）／[Ujihara, Onashi, Suzuki ほか (2026)](https://doi.org/10.7759/cureus.101208) "Negative Capability-Related Dimensions Among Local Government Public Health Nurses in Japan and Their Associated Factors", *Cureus* 18(1):e101208（出版社の公開版〔CC BY〕で本文照合済。紹介の文 p.2）／[Kilmann & Thomas (1977)](https://doi.org/10.1177/001316447703700204) "Developing a forced-choice measure of conflict-handling behavior: The 'MODE' instrument", *Educational and Psychological Measurement* 37(2):309–325（共著者 Kilmann の会社のサイトにある誌面の PDF で本文照合済。五つの型 p.309 の要旨、Thomas と Kilmann の 1974 年の質問紙 p.313・p.325、二つの軸 p.310）／[Greer, Saygi, Aaldering & de Dreu (2012)](https://doi.org/10.1111/j.1365-2923.2012.04321.x) "Conflict in medical teams: opportunity or danger?", *Medical Education* 46(10):935–942（出版社の無料公開版で本文照合済。節 Introduction・Conflict types・Effective conflict management）／[Festinger & Carlsmith (1959)](https://doi.org/10.1037/h0041593) "Cognitive consequences of forced compliance", *Journal of Abnormal and Social Psychology* 58:203–210（York University の Classics in the History of Psychology の打ち直しで本文照合済。pp.203–204・207–208。照合は「創造とは」の心理学の記録）／『最新 心理学事典』「葛藤」（佐藤健二・大渕憲一 執筆。コトバンクの公開版で本文照合済）／『デジタル大辞泉』「認知的不協和」（小学館。コトバンクの公開版で本文照合済）。葛藤の表を除き、よくある誤解の例は、出典のない見聞です。
+出典：[Edmondson (1999)](https://doi.org/10.2307/2666999) *Administrative Science Quarterly* 44(2):350（MIT の授業の読み物として大学のサーバーに置かれた誌面の走査で本文照合済。定義 p.354）／[Schein (1995)](https://hdl.handle.net/1721.1/2576) "Kurt Lewin's Change Theory in the Field and in the Classroom: Notes Toward a Model of Managed Learning", MIT Sloan Working Paper 3821（MIT の機関リポジトリにある PDF の Wayback の記録（2025 年 6 月 22 日）で本文照合済。pp.3–5）／[Duckworth, Peterson, Matthews & Kelly (2007)](https://doi.org/10.1037/0022-3514.92.6.1087) *Journal of Personality and Social Psychology* 92(6):1087（著者のペンシルベニア大学の頁にあった誌面の PDF の Wayback の記録（2014 年 7 月 26 日）で本文照合済。定義 pp.1087–1088）／[Luthar, Cicchetti & Becker (2000)](https://doi.org/10.1111/1467-8624.00164) *Child Development* 71(3):543（米国国立医学図書館の PMC にある著者稿 PMC1885202 で本文照合済。p.543）／[Ryan & Deci (2000)](https://doi.org/10.1037/0003-066X.55.1.68) *American Psychologist* 55(1):68（著者たちの Center for Self-Determination Theory のサイトにある誌面の PDF で本文照合済。pp.70–72）／[Keats, letter to George and Thomas Keats (1817 年 12 月)](https://www.gutenberg.org/ebooks/35698)（Colvin 編 *Letters of John Keats to His Family and Friends*, Macmillan, 1891 年初版・1925 年の刷の Letter XXIV を、Project Gutenberg の公開版で本文照合済。定義の文とコールリッジ・美の感覚の文は p.48）／[Ujihara, Onashi, Suzuki ほか (2026)](https://doi.org/10.7759/cureus.101208) "Negative Capability-Related Dimensions Among Local Government Public Health Nurses in Japan and Their Associated Factors", *Cureus* 18(1):e101208（出版社の公開版〔CC BY〕で本文照合済。紹介の文 p.2）／[Kilmann & Thomas (1977)](https://doi.org/10.1177/001316447703700204) "Developing a forced-choice measure of conflict-handling behavior: The 'MODE' instrument", *Educational and Psychological Measurement* 37(2):309–325（共著者 Kilmann の会社のサイトにある誌面の PDF で本文照合済。五つの型 p.309 の要旨、Thomas と Kilmann の 1974 年の質問紙 p.313・p.325、二つの軸 p.310）／[Greer, Saygi, Aaldering & de Dreu (2012)](https://doi.org/10.1111/j.1365-2923.2012.04321.x) "Conflict in medical teams: opportunity or danger?", *Medical Education* 46(10):935–942（出版社の無料公開版で本文照合済。節 Introduction・Conflict types・Effective conflict management）／[Festinger & Carlsmith (1959)](https://doi.org/10.1037/h0041593) "Cognitive consequences of forced compliance", *Journal of Abnormal and Social Psychology* 58:203–210（York University の Classics in the History of Psychology の打ち直しで本文照合済。pp.203–204・207–208。照合は「創造とは」の心理学の記録）／[『最新 心理学事典』「葛藤」](https://kotobank.jp/word/%E8%91%9B%E8%97%A4)（佐藤健二・大渕憲一 執筆。コトバンクの公開版で本文照合済）／[『デジタル大辞泉』「認知的不協和」](https://kotobank.jp/word/%E8%AA%8D%E7%9F%A5%E7%9A%84%E4%B8%8D%E5%8D%94%E5%92%8C)（小学館。コトバンクの公開版で本文照合済）。葛藤の表を除き、よくある誤解の例は、出典のない見聞です。
 
 </details>
 
@@ -2265,7 +2265,7 @@ Claude は、二つの体験を次のように読んでいます。どちらも�
 
 その取り組みの中で、二つでないもの（非二元）に出会い、善い・悪いという物差しが、だんだん外れていきました。手がかりになったのが般若心経です。般若心経は、「不生不滅 不垢不浄 不増不減」と、生まれると滅する、汚れると浄らか、増えると減る、という対を一つずつ打ち消していきます。分けた二つのどちらかに立つのをやめる、という形と読めます。
 
-出典：『般若波羅蜜多心経』玄奘訳（大正蔵 8 巻 No.251、848 頁下段「不生不滅，不垢不淨，不增不減」。CBETA の電子テキストで本文照合済）。
+出典：『般若波羅蜜多心経』玄奘訳（大正蔵 8 巻 No.251、848 頁下段「不生不滅，不垢不淨，不增不減」。[CBETA の電子テキスト](https://cbetaonline.dila.edu.tw/zh/T0251_001)で本文照合済）。
 
 「[まだ分からないこと](#ldd-open)」の章の仮説「善悪や合理性は、無いのではないか」は、この経緯から出てきました。
 
@@ -2321,7 +2321,7 @@ pjdhiro が考えているのは、脳の神経に伝わる神経伝達物質と
 
 <!--REF:物理と科学史-->
 
-出典：Born (1954) ノーベル講演 "The statistical interpretation of quantum mechanics"（確率は絶対値の二乗。nobelprize.org の PDF で本文照合済。PDF の p.7）／Ozawa (2003) *Phys. Rev. A* 67:042105（測るあいだ、対象と装置の中のプローブを合わせて一つの系として書く。著者の arXiv の投稿稿 quant-ph/0207121v1 で本文照合済。測定の模型と、そのあとプローブの側だけを測ること p.2、位置を測る誤差と運動量の擾乱が両方ゼロにはならない箇所 p.3）・Rozema et al. (2012) *Phys. Rev. Lett.* 109:100404（著者の arXiv の投稿稿 1208.0034v2 で本文照合済。p.1 の要旨）（位置を測る誤差と運動量の擾乱を両方ゼロにはできないが、その積は素朴な限界より小さくできる）／[Vinen (1961)](https://doi.org/10.1098/rspa.1961.0029) *Proc. R. Soc. A* 260:218（超流動の渦の量子化。出版社 Royal Society の PDF の Wayback の記録（2019 年 10 月 26 日）で本文照合済。p.218 の要旨）。
+出典：Born (1954) ノーベル講演 "The statistical interpretation of quantum mechanics"（[確率は絶対値の二乗。nobelprize.org の PDF](https://www.nobelprize.org/uploads/2018/06/born-lecture.pdf) で本文照合済。PDF の p.7）／[Ozawa (2003)](https://doi.org/10.1103/PhysRevA.67.042105) *Phys. Rev. A* 67:042105（測るあいだ、対象と装置の中のプローブを合わせて一つの系として書く。著者の arXiv の投稿稿 [quant-ph/0207121v1](https://arxiv.org/abs/quant-ph/0207121v1) で本文照合済。測定の模型と、そのあとプローブの側だけを測ること p.2、位置を測る誤差と運動量の擾乱が両方ゼロにはならない箇所 p.3）・Rozema et al. (2012) *Phys. Rev. Lett.* 109:100404（著者の arXiv の投稿稿 1208.0034v2 で本文照合済。p.1 の要旨）（位置を測る誤差と運動量の擾乱を両方ゼロにはできないが、その積は素朴な限界より小さくできる）／[Vinen (1961)](https://doi.org/10.1098/rspa.1961.0029) *Proc. R. Soc. A* 260:218（超流動の渦の量子化。出版社 Royal Society の PDF の Wayback の記録（2019 年 10 月 26 日）で本文照合済。p.218 の要旨）。
 
 </details>
 
@@ -2333,7 +2333,7 @@ pjdhiro が考えているのは、脳の神経に伝わる神経伝達物質と
 
 <!--REF:神経と情動-->
 
-出典：Barrett (2017) "The theory of constructed emotion", *Social Cognitive and Affective Neuroscience* 12(1):1（PMC5390700 の全文で本文照合済。概念で感覚を分類して情動をつくる箇所は「The computational architecture of the brain is a conceptual system plus pattern generators」の節、同じ感覚にいくつもの原因がありうる箇所は用語集）。
+出典：[Barrett (2017)](https://doi.org/10.1093/scan/nsw154) "The theory of constructed emotion", *Social Cognitive and Affective Neuroscience* 12(1):1（[PMC5390700](https://pmc.ncbi.nlm.nih.gov/articles/PMC5390700/) の全文で本文照合済。概念で感覚を分類して情動をつくる箇所は「The computational architecture of the brain is a conceptual system plus pattern generators」の節、同じ感覚にいくつもの原因がありうる箇所は用語集）。
 
 </details>
 
@@ -2349,7 +2349,7 @@ pjdhiro が考えているのは、脳の神経に伝わる神経伝達物質と
 
 <!--REF:神経と情動-->
 
-出典：Klinman & Kohen (2013) *Annu. Rev. Biochem.* 82:471（酵素のトンネル効果。NIH の PMC にある著者稿の頁の Wayback の記録（2025 年 2 月 15 日）で本文照合済。要旨と「Tunneling」の節）／Hameroff & Penrose (2014) *Phys. Life Rev.* 11:39（著者 Hameroff のサイトにあった誌面の PDF の Wayback の記録（2015 年 5 月 22 日）で本文照合済。p.39 の要旨）／Fisher (2015) *Ann. Phys.* 362:593（著者の arXiv の投稿稿 1508.05929v2 で本文照合済。p.1 の要旨）／Vaziri & Plenio (2010) *New J. Phys.* 12:085001（出版社 IOP の公開版（CC BY）で本文照合済。p.1 の要旨）／Tegmark (2000) *Phys. Rev. E* 61:4194（著者の arXiv の投稿稿 quant-ph/9907009v2 で本文照合済。p.1 の要旨）。
+出典：[Klinman & Kohen (2013)](https://doi.org/10.1146/annurev-biochem-051710-133623) *Annu. Rev. Biochem.* 82:471（酵素のトンネル効果。[NIH の PMC にある著者稿の頁](https://pmc.ncbi.nlm.nih.gov/articles/PMC4066974/)の Wayback の記録（2025 年 2 月 15 日）で本文照合済。要旨と「Tunneling」の節）／[Hameroff & Penrose (2014)](https://doi.org/10.1016/j.plrev.2013.08.002) *Phys. Life Rev.* 11:39（[著者 Hameroff のサイトにあった誌面の PDF の Wayback の記録](https://web.archive.org/web/20150522052651/http://www.quantumconsciousness.org/sites/default/files/Hameroff%20Penrose%20-%20Consciousness%20in%20the%20Universe-A%20Review%20of%20the%20Orch%20OR%20Theory%20-%202013%20-%20Physics%20of%20Life%20Reviews.pdf)（2015 年 5 月 22 日）で本文照合済。p.39 の要旨）／[Fisher (2015)](https://doi.org/10.1016/j.aop.2015.08.020) *Ann. Phys.* 362:593（著者の arXiv の投稿稿 [1508.05929v2](https://arxiv.org/abs/1508.05929v2) で本文照合済。p.1 の要旨）／[Vaziri & Plenio (2010)](https://doi.org/10.1088/1367-2630/12/8/085001) *New J. Phys.* 12:085001（出版社 IOP の公開版（CC BY）で本文照合済。p.1 の要旨）／[Tegmark (2000)](https://doi.org/10.1103/PhysRevE.61.4194) *Phys. Rev. E* 61:4194（著者の arXiv の投稿稿 [quant-ph/9907009v2](https://arxiv.org/abs/quant-ph/9907009v2) で本文照合済。p.1 の要旨）。
 
 </details>
 
