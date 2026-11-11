@@ -832,3 +832,8 @@ compile 実行の履歴。append-only。
 - scope: 概念ページ 3（抱持・Love 駆動開発・プロジェクトデザイン）・横断ページ 3（awareness-space-overview・kesson-space-overview・concept-entity-map）
 - sources: `as/index.html`・`ks/index.html`・`pd/src/content/site-data.mjs`（と `pd/index.html` のピル）・`pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`
 - pages: 意識とはの概観は、外された畳み「これまでの記録 — 発散のノート」の記述を外し、「調べてきたこと」の一覧の先頭の「論点と回答」を足した。欠損駆動思考の概観は、外された記事の一覧を畳みの中身から外した。プロジェクトデザインは、コミュニケーションの側のピルが欠損駆動思考だけになったのに合わせた。抱持・Concept-Entity Map・Love 駆動開発は、出典の直し（メタ情報・リンク・出典の差し替え・BLOG と記事の段の削除）がページの中身に当たらないことを確かめ、compiled を今日にした（Love 駆動開発は checked）
+
+## [2026-11-12] check | Barrett 2017 を原典と照らす
+- scope: 出典ページ 1（`sources/Barrett_2017_constructed-emotion`）
+- sources: 原典の全文（PMC5390700。Europe PMC の全文 XML・出版社の版・CC BY・意識とはの台帳 A04-S25）
+- pages: アロスタシス・内部モデル・内受容と感情・予測としての概念・カテゴリ化による情動の構成は原典にあった。原典に無かった「コアアフェクト」「身体予算」の語と、構成の3要素と神経基盤の表を外し、論文の道筋で書き直した。「2006 年の4批判」をこの論文の表 1 の証拠に、「ホメオスタシスではなくアロスタシス」「情動はアロスタシスの副産物」を原典の文に直した。被引用数を外し、全文へのリンクを足した。頭に「このページの出所」を置いた
