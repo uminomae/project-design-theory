@@ -812,3 +812,8 @@ compile 実行の履歴。append-only。
 - scope: 出典ページ 1（`sources/Coan_2015_social-baseline-theory`）
 - sources: 原典の全文（PMC4375548 の著者稿・NCBI の全文 XML・意識とはの台帳 A06-S18）と、手つなぎ実験の論文 Coan, Schaefer & Davidson (2006) の全文（意識とはの台帳の手元の PDF）
 - pages: 社会的ベースライン・生体エネルギーの資源・リスク分配と負荷共有・自他の重なり、実験の参加者数と条件は合った。原典と違った所を直した：婚姻の質の効果は交互作用で三領域とも有意で、「左上前頭回のみ」は夫の手の条件の中の相関の話、参加者は満足度の高い夫婦の妻、Beckes & Coan 2011 を「初出」とは書いていない。PMC と 2006 年の論文の DOI（Crossref で確かめた）にリンクを足した。頭に「このページの出所」を置いた
+
+## [2026-11-12] check | 教育学・看護学における間主観性を原典と照らす（組 C の三つ目）
+- scope: 出典ページ 1（`sources/education-nursing_intersubjectivity`）
+- sources: Wood, Bruner & Ross (1976) の全文（Wiley の無料公開の版）。Vygotsky・Noddings・Watson らの本と Swanson の章は貸し出しの写しか書誌しか開けず、照らしていない
+- pages: scaffolding の段の「支援を撤去する」は論文に無く、論文の定義と六つの働きに直した。頭に「このページの出所」の節を置き、照らした所と、LLM の学習時の知識から書かれた所を分けた（`docs/rules/sources.md` §10-6）
