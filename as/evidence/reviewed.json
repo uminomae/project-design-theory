@@ -109,6 +109,33 @@
       "name_en": "Defining trust and long-term motives",
       "summary_ja": "信頼は、分野ごとにどう定義され、何で測られてきたか。長い時間の目標で、つながりの欠けが地位やお金の目標で埋められると書く研究と、その向き。つながりと身を守る動機の衝突を比べた研究",
       "summary_en": "How trust has been defined and measured across fields; research on long-term goals in which a lack of connection is filled by goals of status and money, and which way the link runs; and studies that compare the conflict between connection and self-protection motives"
+    },
+    {
+      "id": "A13",
+      "file": "evidence-A13-symbols-and-unspoken-values.md",
+      "reviewed": "2026-11-11",
+      "name_ja": "一列の記号と、そこに乗らない値",
+      "name_en": "Symbols and the values they do not carry",
+      "summary_ja": "言葉や数値の報告は、体の反応や行動とどこまでそろうか。声の調子や顔を合わせることが、信頼や協力にどう効くか。関係の値をお金に乗せることへの反発。言葉にならない感じの出どころの仮説と、その批判",
+      "summary_en": "How far verbal and numerical reports line up with bodily responses and behaviour; how tone of voice and face-to-face contact bear on trust and cooperation; resistance to putting relationship values into money; and hypotheses about where unspoken feelings come from, with their critiques"
+    },
+    {
+      "id": "A14",
+      "file": "evidence-A14-selection-by-the-receiver.md",
+      "reviewed": "2026-11-11",
+      "name_ja": "受け取る側の選び方",
+      "name_en": "How the receiver selects",
+      "summary_ja": "注意は、脅威の手がかりと人の手がかりを、どう選んで拾うか。価値や関心が注意を引く研究と、測り方の信頼性への批判。顕著性のネットワークは何を拾うと書かれてきたか",
+      "summary_en": "How attention picks out threat cues and social cues; studies in which value and concern capture attention, and critiques of how reliably these are measured; and what the salience network has been said to pick up"
+    },
+    {
+      "id": "A15",
+      "file": "evidence-A15-noticing-misattribution.md",
+      "reviewed": "2026-11-11",
+      "name_ja": "取り違えへの気づき",
+      "name_en": "Noticing misattribution",
+      "summary_ja": "本人が答える動機と、物語で測る動機は、どこまでそろうか。自分を知ることの限界と、人生の語りの中での気づき。感じの原因の取り違えの実験と、その追試",
+      "summary_en": "How far self-reported motives match motives measured through stories; the limits of self-knowledge and noticing within life narratives; and experiments on misattributing the cause of a feeling, with their replications"
     }
   ]
 }
