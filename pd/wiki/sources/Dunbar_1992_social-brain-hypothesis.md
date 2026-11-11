@@ -17,6 +17,10 @@ review_state: 未レビュー
 >
 > サルの脳が大きいのは、ものを考えるためではなく、複雑な人間関係を管理するためかもしれません。ダンバーは38種の霊長類を比較して「新皮質（考える部分）が大きい種ほど群れも大きい」ことを示し、人間の「自然な仲間の数」が約150人だと推定しました。さらに、私たちが言語を持つのも体を毛づくろいするかわりに「声で絆を結ぶ」ためだという仮説を提唱しています。
 
+## このページの出所
+
+Dunbar の原典（1992 年の論文と、1993・1996・1998・2007・2024 年の論文と本）は、どれも原典の本文と照らしていない。1992 年の論文は出版社の版が有料で、出版社の頁は自動の取得に確認の画面を返し、無料で読める写しは見つからなかった。照らしたのは、限界と論争の段の Lindenfors ら（2021）の一項と、概要の段の Lindenfors ら（2021）の一文だけで、その原典の全文（[PMC8103230](https://pmc.ncbi.nlm.nih.gov/articles/PMC8103230/)、出版社の版・CC BY）と合っていた（2026-11-12）。Lindenfors らも、150 という数は、霊長類の集団の大きさと相対的な新皮質の大きさの回帰の線を人に延ばして得られた、と書く。それ以外（やさしい解説、概要の段の残り、研究の背景と目的、方法、主要な発見の数、限界と論争の段のほかの項、現在のコンセンサス、awareness-model との接続）は、このページを書いた LLM の学習時の知識から書かれたもので、原典とは照らしていない。学習時に何を読んだかは、版も頁も確かめられない。
+
 ## 概要
 
 Robin Dunbar（1992-）の社会脳仮説（Social Brain Hypothesis）は、霊長類の新皮質（脳の残部に対する比率）の進化的拡大が、社会的複雑性への適応として駆動されたと主張する。38霊長類属を対象とした回帰分析で新皮質比が集団サイズの分散の76%を説明することを示し（1992年）、ヒトの新皮質比から「自然な」集団サイズを約150人（ダンバー数）と推定した（1993年）。さらに、150人の集団をグルーミングのみで維持するには覚醒時間の43%を要し不可能であることから、言語が「声のグルーミング」として進化したという仮説を展開した（1996年）。ただし、DeCasien et al. (2017) は食餌がより良い予測因子であると報告し、Lindenfors et al. (2021) はベイズ法・GLS系統発生法による再分析で150という数値に経験的根拠が乏しいと結論した。2025年時点でも因果の相対的重要性に関する論争は継続中である。
@@ -35,7 +39,7 @@ Robin Dunbar（1992-）の社会脳仮説（Social Brain Hypothesis）は、霊�
 ### 批判的文献
 
 - DeCasien, A.R., Williams, S.A. & Higham, J.P. (2017). Primate brain size is predicted by diet but not sociality. *Nature Ecology & Evolution*, 1, 0112.
-- Lindenfors, P., Wartel, A. & Lind, J. (2021). 'Dunbar's number' deconstructed. *Biology Letters*, 17(5), 20210158.
+- Lindenfors, P., Wartel, A. & Lind, J. (2021). 'Dunbar's number' deconstructed. *Biology Letters*, 17(5), 20210158. [PMC8103230](https://pmc.ncbi.nlm.nih.gov/articles/PMC8103230/)
 - Gonzalez-Forero, M. & Gardner, A. (2018). Inference of ecological and social drivers of human brain-size evolution. *Nature*, 557, 554-557.
 - Street, S.E., Navarrete, A.F., Reader, S.M. & Laland, K.N. (2017). Coevolution of cultural intelligence, extended life history, sociality, and brain size in primates. *PNAS*, 114(30), 7908-7914.
 
