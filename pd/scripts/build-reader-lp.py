@@ -95,6 +95,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/anxiety/READER-anxiety.md",
+        ROOT / "scripts/reader-anxiety-template.html",
+        ROOT / "reader/anxiety.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/love-history/READER-love-history.md",
         ROOT / "scripts/reader-love-history-template.html",
         ROOT / "reader/love-history.html",

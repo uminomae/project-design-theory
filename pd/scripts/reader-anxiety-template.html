@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/anxiety.html を直接編集しないでください。
+  正本:   knowledge/research/anxiety/READER-anxiety.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「不安とは」のページです。不安とは何かを、精神科医の新田信也の定義「不安こそ解離である」から見る。新田の言う解離は、心を守る働き（防衛）と正反対の動きで、守りがはがれて、守られていた不快な自分（怒っている自分・寂しい自分）が出てくることを指す。pjdhiro はこれを、心理防衛の状態から現実直視に戻るときに起こる解離のようなもの、と読んでいる。この定義を起点に、不安と恐怖の違い、フロイトの流れ（不安が守りを呼ぶ）との関係、守りに戻るか向き合い続けるか（新田の制御・シャインの学ぶ不安と心理的安全・エドモンドソンの恥の危険）、発達の段階ごとの主な不安（クック＝グロイター）を足す。
+  研究の説明は Claude が原典から書いた要約。載せた出典（新田信也の著者のサイト・Grupe & Nitschke 2013・A. Freud 1936/1937・Vaillant 2011・Schein 1995 WP 3831・Edmondson 1999・Cook-Greuter 2013）は、どれも本文で照合し、各章の「出典：」行に頁や節を添えている。「と読めます」「Claude の読み」の文は Claude の読み。
+  pjdhiro 本人の言葉は「pjdhiro の見方：」で引用。このページの「解離」は新田の語で、ヴァイラントの守りの一覧の解離とは別のもの。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>不安とは | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/anxiety.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="不安とは何かを、精神科医の新田信也の定義「不安こそ解離である」から見る。新田の言う解離は、心を守る働き（防衛）と正反対の動きで、守りがはがれて、守られていた不快な自分（怒っている自分・寂しい自分）が出てくることを指す。pjdhiro はこれを、心理防衛の状態から現実直視に戻るときに起こる解離のようなもの、と読んでいる。この定義を起点に、不安と恐怖の違い、フロイトの流れ（不安が守りを呼ぶ）との関係、守りに戻るか向き合い続けるか（新田の制御・シャインの学ぶ不安と心理的安全・エドモンドソンの恥の危険）、発達の段階ごとの主な不安（クック＝グロイター）を足す。">
+    <meta property="og:title" content="不安とは">
+    <meta property="og:description" content="不安とは何かを、精神科医の新田信也の定義「不安こそ解離である」から見る。新田の言う解離は、心を守る働き（防衛）と正反対の動きで、守りがはがれて、守られていた不快な自分（怒っている自分・寂しい自分）が出てくることを指す。pjdhiro はこれを、心理防衛の状態から現実直視に戻るときに起こる解離のようなもの、と読んでいる。この定義を起点に、不安と恐怖の違い、フロイトの流れ（不安が守りを呼ぶ）との関係、守りに戻るか向き合い続けるか（新田の制御・シャインの学ぶ不安と心理的安全・エドモンドソンの恥の危険）、発達の段階ごとの主な不安（クック＝グロイター）を足す。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/anxiety.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="不安とは">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-12">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "不安とは",
+          "description": "不安とは何かを、精神科医の新田信也の定義「不安こそ解離である」から見る。新田の言う解離は、心を守る働き（防衛）と正反対の動きで、守りがはがれて、守られていた不快な自分（怒っている自分・寂しい自分）が出てくることを指す。pjdhiro はこれを、心理防衛の状態から現実直視に戻るときに起こる解離のようなもの、と読んでいる。この定義を起点に、不安と恐怖の違い、フロイトの流れ（不安が守りを呼ぶ）との関係、守りに戻るか向き合い続けるか（新田の制御・シャインの学ぶ不安と心理的安全・エドモンドソンの恥の危険）、発達の段階ごとの主な不安（クック＝グロイター）を足す。",
+          "keywords": "不安, 解離, 防衛, 新田信也, 精神分析統合理論, 不安と恐怖, アンナ・フロイト, ヴァイラント, シャイン, 学ぶ不安, 恥不安, 心理的安全性, 自我発達, クック＝グロイター, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/anxiety.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/anxiety.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-12",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "不安"}, {"@type": "Thing", "name": "解離"}, {"@type": "Thing", "name": "心理防衛機制"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「不安とは」のページです（工事中）。不安とは何かを、精神科医の新田信也の定義「不安こそ解離である」から見る。新田の言う解離は、心を守る働き（防衛）と正反対の動きで、守りがはがれて、守られていた不快な自分（怒っている自分・寂しい自分）が出てくることを指す。pjdhiro はこれを、心理防衛の状態から現実直視に戻るときに起こる解離のようなもの、と読んでいる。この定義を起点に、不安と恐怖の違い、フロイトの流れ（不安が守りを呼ぶ）との関係、守りに戻るか向き合い続けるか（新田の制御・シャインの学ぶ不安と心理的安全・エドモンドソンの恥の危険）、発達の段階ごとの主な不安（クック＝グロイター）を足す。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>不安とは</h1>
+                <p class="reader-subtitle">守りがはがれるところに湧くもの</p>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/anxiety/READER-anxiety.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="psychological-safety.html">心理的安全性とは</a> ・
+                <a href="influences-psychology.html">影響を受けた心理学</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

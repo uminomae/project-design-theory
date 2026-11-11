@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/anxiety.html を直接編集しないでください。
+  正本:   knowledge/research/anxiety/READER-anxiety.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「不安とは」のページです。不安とは何かを、精神科医の新田信也の定義「不安こそ解離である」から見る。新田の言う解離は、心を守る働き（防衛）と正反対の動きで、守りがはがれて、守られていた不快な自分（怒っている自分・寂しい自分）が出てくることを指す。pjdhiro はこれを、心理防衛の状態から現実直視に戻るときに起こる解離のようなもの、と読んでいる。この定義を起点に、不安と恐怖の違い、フロイトの流れ（不安が守りを呼ぶ）との関係、守りに戻るか向き合い続けるか（新田の制御・シャインの学ぶ不安と心理的安全・エドモンドソンの恥の危険）、発達の段階ごとの主な不安（クック＝グロイター）を足す。
+  研究の説明は Claude が原典から書いた要約。載せた出典（新田信也の著者のサイト・Grupe & Nitschke 2013・A. Freud 1936/1937・Vaillant 2011・Schein 1995 WP 3831・Edmondson 1999・Cook-Greuter 2013）は、どれも本文で照合し、各章の「出典：」行に頁や節を添えている。「と読めます」「Claude の読み」の文は Claude の読み。
+  pjdhiro 本人の言葉は「pjdhiro の見方：」で引用。このページの「解離」は新田の語で、ヴァイラントの守りの一覧の解離とは別のもの。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>不安とは | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/anxiety.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="不安とは何かを、精神科医の新田信也の定義「不安こそ解離である」から見る。新田の言う解離は、心を守る働き（防衛）と正反対の動きで、守りがはがれて、守られていた不快な自分（怒っている自分・寂しい自分）が出てくることを指す。pjdhiro はこれを、心理防衛の状態から現実直視に戻るときに起こる解離のようなもの、と読んでいる。この定義を起点に、不安と恐怖の違い、フロイトの流れ（不安が守りを呼ぶ）との関係、守りに戻るか向き合い続けるか（新田の制御・シャインの学ぶ不安と心理的安全・エドモンドソンの恥の危険）、発達の段階ごとの主な不安（クック＝グロイター）を足す。">
+    <meta property="og:title" content="不安とは">
+    <meta property="og:description" content="不安とは何かを、精神科医の新田信也の定義「不安こそ解離である」から見る。新田の言う解離は、心を守る働き（防衛）と正反対の動きで、守りがはがれて、守られていた不快な自分（怒っている自分・寂しい自分）が出てくることを指す。pjdhiro はこれを、心理防衛の状態から現実直視に戻るときに起こる解離のようなもの、と読んでいる。この定義を起点に、不安と恐怖の違い、フロイトの流れ（不安が守りを呼ぶ）との関係、守りに戻るか向き合い続けるか（新田の制御・シャインの学ぶ不安と心理的安全・エドモンドソンの恥の危険）、発達の段階ごとの主な不安（クック＝グロイター）を足す。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/anxiety.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="不安とは">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-12">
+    <meta property="article:modified_time" content="2026-11-12">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "不安とは",
+          "description": "不安とは何かを、精神科医の新田信也の定義「不安こそ解離である」から見る。新田の言う解離は、心を守る働き（防衛）と正反対の動きで、守りがはがれて、守られていた不快な自分（怒っている自分・寂しい自分）が出てくることを指す。pjdhiro はこれを、心理防衛の状態から現実直視に戻るときに起こる解離のようなもの、と読んでいる。この定義を起点に、不安と恐怖の違い、フロイトの流れ（不安が守りを呼ぶ）との関係、守りに戻るか向き合い続けるか（新田の制御・シャインの学ぶ不安と心理的安全・エドモンドソンの恥の危険）、発達の段階ごとの主な不安（クック＝グロイター）を足す。",
+          "keywords": "不安, 解離, 防衛, 新田信也, 精神分析統合理論, 不安と恐怖, アンナ・フロイト, ヴァイラント, シャイン, 学ぶ不安, 恥不安, 心理的安全性, 自我発達, クック＝グロイター, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/anxiety.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/anxiety.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-12",
+          "dateModified": "2026-11-12",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "不安"}, {"@type": "Thing", "name": "解離"}, {"@type": "Thing", "name": "心理防衛機制"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「不安とは」のページです（工事中）。不安とは何かを、精神科医の新田信也の定義「不安こそ解離である」から見る。新田の言う解離は、心を守る働き（防衛）と正反対の動きで、守りがはがれて、守られていた不快な自分（怒っている自分・寂しい自分）が出てくることを指す。pjdhiro はこれを、心理防衛の状態から現実直視に戻るときに起こる解離のようなもの、と読んでいる。この定義を起点に、不安と恐怖の違い、フロイトの流れ（不安が守りを呼ぶ）との関係、守りに戻るか向き合い続けるか（新田の制御・シャインの学ぶ不安と心理的安全・エドモンドソンの恥の危険）、発達の段階ごとの主な不安（クック＝グロイター）を足す。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>不安とは</h1>
+                <p class="reader-subtitle">守りがはがれるところに湧くもの</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-12 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/anxiety/READER-anxiety.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<p class="reader-summary__title">概要</p>
+
+<p class="reader-lead"><span class="reader-lead__label">問い</span>先が見えないとき、恥をかきそうなとき、人は不安を感じます。その不安は、心の中で何が起きているときに湧くのでしょうか。</p>
+
+<p>「心理的安全性とは」を、恥不安と発達段階という二つの視点で見直しているときに、その手前にある「不安とは何か」が問いになりました。pjdhiro は、精神科医の新田信也の論から、一つの定義を挙げています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>私は新田信也の心理防衛状態から現実直視に戻る時に起こる解離のようなもの、という定義は気に入ってます</p>
+</blockquote>
+<div class="reader-lead"><span class="reader-lead__label">今の答え</span>
+新田は「不安こそ解離である」と書いています。新田の言う解離は、心を守る働き（防衛）と正反対の動きです。守りがはがれて、守られていた不快な自分が出てくることを指します。不安は、守りがほどけて、見ないでいたものに向き合い始めるところに湧く、と読めます。このページは、この定義を起点にして、理解に要る視点だけを足します。
+<ul class="reader-lead__list">
+<li><b><a href="#不安は守りがはがれるところに湧く">守りがはがれるところに湧く</a></b>：新田の定義です。解離と防衛は行き来する、と置かれています。</li>
+<li><b><a href="#守りがはがれると何が出てくるのか">何が出てくるのか</a></b>：怒っている自分と、寂しい自分です。不安は、恐怖と違って、向ける先が定まりません。</li>
+<li><b><a href="#不安が先か守りが先か">不安が先か、守りが先か</a></b>：フロイトの流れでは、不安が守りを呼びます。新田は、守りがはがれたところに不安を見ます。どちらも、不安を守りの境目に置いています。</li>
+<li><b><a href="#守りに戻るか向き合い続けるか">守りに戻るか、向き合い続けるか</a></b>：湧いた不安のあと、守りに戻らずに済むには支えが要ります。新田は制御と呼び、シャインは心理的安全と呼びました。恥不安も、ここで見ます。</li>
+<li><b><a href="#何に向き合うのが不安かは人によって違う">何に向き合うのが不安かは、人によって違う</a></b>：何が脅威に見えるかは、発達の段階で変わります。</li>
+</ul>
+</div>
+
+<div class="reader-lead"><span class="reader-lead__label">構成</span>
+<ul class="reader-lead__list">
+<li><b>定義から始める</b>：新田の定義を、新田自身の言葉で読みます。</li>
+<li><b>ほかの知見を当てる</b>：守りの研究、学ぶ不安、発達の段階を一つずつ当てて、定義の輪郭を見ます。</li>
+<li><b>保持論点</b>：まだ答えが出ていない問いを並べます。</li>
+</ul>
+</div>
+
+<p class="reader-lead"><span class="reader-lead__label">要点</span></p>
+
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>定義</th>
+<th>新田信也：「不安こそ解離である」。解離は防衛と正反対の動きで、二つは行き来する（「防衛⇔解離」）。不安は、怒っている自分か、悲しい・寂しい自分が、守る働きから離れると生ずる。向ける先の定まらない、漠然とした不快の体験</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>よくある誤解</td>
+<td>不安は、弱さや病気の印である。不安は、無いほうが良い。新田は、守りがはがれる動きを誰にでもあるものとして書いている。守りの研究も、守りを病気の印でなく、対処の反応として書いてきた</td>
+</tr>
+<tr>
+<td>Love駆動開発の視点で見た解釈</td>
+<td>pjdhiro は、この定義を、心理防衛の状態から現実直視に戻るときに起こるもの、と読んでいる。不安は、守りがほどけて向き合い始めた、戻り道の途中に湧くものとして読める</td>
+</tr>
+<tr>
+<td>効く条件</td>
+<td>新田は、解離のあとに制御が生じれば症状は起こらず、制御が無ければ守りに戻るだけだ、と書く。シャインは、心理的な安全があれば学ぶ不安が下がり、防衛的にならずに済む、と書く</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<details class="sec" id="不安は守りがはがれるところに湧く" open><summary>不安は、守りがはがれるところに湧く</summary><div class="secbody">
+
+
+<p>この章では、新田の定義を、新田自身の言葉で読みます。</p>
+<p>新田信也は精神科医で、自分の論を「精神分析統合理論」と呼び、著書と著者のサイトで書いてきました。新田は、パニックの起こり方を説明する段で、「不安こそ解離である」と書いています。</p>
+<p>新田の言う解離は、ふつうの教科書の解離と違います。新田は、解離と防衛を正反対の心の動きと置き、「防衛⇔解離」と書きました。矢印が両向きなのは、二つが行き来するからです。</p>
+<p>身近な例として、新田は情動失禁を挙げています。静かな心でいた人が、外からの刺激で怒ったり泣いたりすることです。新田は、守りがはがされただけで、人の様子はこのように変わる、と書きます。そして、自分の考えは「情動失禁＝解離」から出発している、と書いています。幼いころに情動失禁を経験しなかった人はいないので、これは誰にでもある心の動きだ、とも書いています。</p>
+<p>新田の頁には、「現実直視」という語は出てきません。新田は、不快を認めて扱える心の働き（不快−制御系）を、現実を確かめる力（現実検討能力）の源として書いています。pjdhiro の言う「現実直視に戻る」は、守りから解離へ、解離から制御へ、という新田の流れの向きを指している、と読めます（Claude の読み）。</p>
+<details class="acc"><summary>詳しく — 新田の解離と、教科書の解離</summary>
+
+<p>新田は、精神医学の教科書（カプランとサドック）の解離の定義を引いています。情動的な苦悩を避けるために、自分の人格や独自性を、一時的だが徹底的に一部変えること、という定義です。新田は、これは解離の定義というより、解離性障害の定義にふさわしい、と書きました。</p>
+<p>新田は、辞書の化学の項の解離に「可逆的」とあることに目を留めています。守りから解離へ、解離から守りへと行き来できるなら、「防衛⇔解離」と書くのがわかりやすい、という筋です。</p>
+<p>この置き方から、新田は、解離から生まれるものを五つほどに分けています。解離が起きても、すぐに守られるか制御されれば、何の症状も起こりません（無症状）。部分的に守られたり制御されたりすれば、不安を中心とした症状群になります。ここで新田は、もう一度「不安こそ解離である」と書いています。守られ尽くせば、ひきこもりに戻ります。新田は、嫌なことがあっても自分の住処に戻ってひきこもり、翌日には何事もなかったように過ごす人が多い、と書き、このひきこもり（防衛）を原点に置いています。残りの二つは、解離性障害と、情動失禁です。</p>
+</details>
+
+<p>出典：新田信也のウェブサイト「精神分析統合理論」の頁「<a href="https://www.seishin-bunseki.jp/category/2010409.html">解離理論</a>」（節「解離に関する従来の考え」「解離に関する私の考え」「解離性障害の位置づけ」。本文照合済。著者本人のサイト）／同「<a href="https://www.seishin-bunseki.jp/category/1301335.html">新しい心の分析教室：様々な精神医学（精神分析）用語</a>」（節「ストレスとパニック」。本文照合済）／同「<a href="https://www.seishin-bunseki.jp/category/2015422.html">新しい心の分析教室：様々な精神医学（精神分析）用語（Ⅱ）</a>」（節「解離と防衛」。本文照合済）／同「<a href="https://www.seishin-bunseki.jp/category/2111191.html">文脈研究</a>」（節「文脈の意義」。本文照合済）</p>
+</div></details><details class="sec" id="守りがはがれると何が出てくるのか" open><summary>守りがはがれると、何が出てくるのか</summary><div class="secbody">
+
+
+<p>この章では、守りがはがれたときに出てくるものを見ます。</p>
+<p>新田は、不安は二種類だと書いています。一つは、怒っている自分や憎んでいる自分です。新田はこれを「悪い自己」と呼びます。もう一つは、悲しい自分や寂しい自分です。新田はこれを「弱い自己」と呼びます。どちらかが守る働きから離れたり、制御する働きにつなぎとめられなかったりすると、不安が生ずる、と新田は書いています。</p>
+<p>この二つの分け方は、新田の論の土台です。新田は、どんな心の苦しみも、怒りや憎しみ（悪い情動）の処理と、寂しさや惨めさ（弱い情動）の処理に集約される、と書いています。不安や焦燥もそうだ、とあります。悪さと弱さで分ける視点は、pjdhiro が新田から影響を受けたところでもあります（<a href="influences-psychology.html">影響を受けた心理学</a>）。</p>
+<p>新田は、不安と恐怖を分けています。不安は解離の、恐怖は防衛の、ひとつの典型だ、と書いています。不安は向ける先が定まらず、漠然とした不快の体験です。恐怖は、自分に恐怖を与える相手が定まっています。</p>
+<details class="acc"><summary>詳しく — 先の定まらなさから不安を見る研究</summary>
+
+<p>脳と体の研究には、不安を、先の脅威の不確かさと、それに備える働きの側から捉えるものがあります。Grupe と Nitschke（2013 年）は、不確かさがあると先に備えることが難しくなり、それが不安につながる、と置きました。先の脅威に備える動きは、脅威の起きやすさと重さに見合っているあいだは適応的なもの、とも書いています。</p>
+<p>新田の言う、向ける先の定まらなさと、この研究の言う、先の脅威の不確かさは、同じところに触れているように見えます。どちらも、不安を、何が来るかが定まらない体験として書いています。</p>
+<p>出典：<a href="https://doi.org/10.1038/nrn3524">Grupe &amp; Nitschke (2013)</a> "Uncertainty and anticipation in anxiety", <em>Nature Reviews Neuroscience</em> 14(7):488（<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4276319/">PMC の著者稿で本文照合済。要旨と導入</a>の不確かさと備えの段）</p>
+</details>
+
+<p>出典：新田信也のウェブサイト「精神分析統合理論」の頁「<a href="https://www.seishin-bunseki.jp/category/2015422.html">新しい心の分析教室：様々な精神医学（精神分析）用語（Ⅱ）</a>」（節「不安と恐怖」「不安と恐怖の違い」。本文照合済）／同「<a href="https://www.seishin-bunseki.jp/category/1299253.html">精神分析統合理論の大綱</a>」（節「二種の情動」。本文照合済）</p>
+</div></details><details class="sec" id="不安が先か守りが先か" open><summary>不安が先か、守りが先か</summary><div class="secbody">
+
+
+<p>この章では、新田の定義を、守りの研究の流れと並べます。</p>
+<p>精神分析の流れでは、不安は守りを呼ぶものとして書かれてきました。アンナ・フロイトは、守りの動きを、本能の不安・外界の不安・良心の不安の三つの不安に動かされるものとして書きました。どの動きも自我を守り、自我が痛みを経験しないようにするためのものだ、と置いています。ここでは、不安が先にあり、守りがあとに来ます。</p>
+<p>新田は、この流れを知ったうえで書いています。フロイトは「不安−防衛論」のモデルを示した、と新田は書きます。そして、「不安−防衛」論モデルも、心の傷から守りを考えるモデルも包むような、新しい精神分析学が要る、と書いています。新田の定義では、守りがはがれたところに不安が湧きます。</p>
+<p>向きは逆に見えますが、二つは同じ境目を見ています。どちらも、不安を、守りの境目に置いています。フロイトの流れは、境目の手前で守りを呼ぶ不安を見ています。新田は、境目の向こうで守りがはがれたときの不安を見ています。新田の「防衛⇔解離」は行き来するので、解離のあとに守りへ戻る向きも、新田の論の中に入っています。</p>
+<p>守りそのものも、悪いものとしてだけ書かれてきたわけではありません。ヴァイラントは、守りの動きを、熱と同じで、病気の印ではなく対処の反応だ、と書いています。どの動きが出るかは選べず、使っている本人には見えません。共感で不安と孤独が和らぐと、「未熟な」水準の守りはほどけうる、とも書いています。守りの水準の全体は、<a href="love-driven-dev.html#ldd-defense">Love駆動開発と呼びたいもの</a>の章にあります。</p>
+<details class="acc"><summary>詳しく — 同じ「解離」の語で、違うものを指している</summary>
+
+<p>ヴァイラントは、守りを四つの水準に並べ、解離を「未熟な」水準の守りの一つに数えています。新田は、解離を守りの正反対に置きました。二人は、同じ「解離」の語で、違うものを指しています。このページの「解離」は、新田の語です。</p>
+</details>
+
+<p>出典：A. Freud (1936) <em>Das Ich und die Abwehrmechanismen</em>、英訳 Baines (1937) <a href="https://archive.org/details/a-freud-1937-ego"><em>The Ego and the Mechanisms of Defence</em></a>（本文照合済（訳）。三つの不安と自我を守る目的は pp.73–74。写しは、Internet Archive にある国際精神分析大学ベルリンのコレクション）／新田信也のウェブサイト「精神分析統合理論」の頁「<a href="https://www.seishin-bunseki.jp/category/2010409.html">解離理論</a>」（節「解離に関する従来の考え」「解離と解離性障害に関する私の理論構成」。本文照合済）／<a href="https://doi.org/10.31887/DCNS.2011.13.2/gvaillant">Vaillant (2011)</a> "Involuntary coping mechanisms: a psychodynamic perspective", <em>Dialogues in Clinical Neuroscience</em> 13(3):366（本文照合済。<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3182012/">PMC3182012</a> の全文。熱のたとえと選べないことは冒頭の節、四つの水準と共感でほどけることは「Classification of defenses」の節。pp.366–370）</p>
+</div></details><details class="sec" id="守りに戻るか向き合い続けるか" open><summary>守りに戻るか、向き合い続けるか</summary><div class="secbody">
+
+
+<p>この章では、不安が湧いたあと、人がどこへ向かうかを見ます。</p>
+<p>新田は、解離のあとに制御が生ずる流れを、治っていくときの筋として書いています。「防衛⇔解離→制御」です。新田は、制御の働きが無ければ、解離は守りに戻るだけだ、と書きます。湧いた不安が、そのまま向き合い続けることにつながるとは限りません。</p>
+<p>シャインは、組織の変化を論じたワーキングペーパーで、同じ形を、学ぶことへの不安として書いています。新しいことを学ぶことへの不安（学ぶ不安）が高いまま残ると、人は防衛的になり、現実を否認し、合理化し、人のせいにする、とシャインは書きました。学ぶ不安を下げる第一の条件に置かれたのが、心理的な安全です。新しいことを学んでも、自分が誰であるかや、できるという感覚を失わずにいられる、と感じられることです。</p>
+<p>二つは、同じところに触れています。不安が湧いたあと、守りに戻らずに済むには、何かの支えが要ります。新田はそれを制御と呼び、シャインは心理的な安全と呼びました。</p>
+<p>恥不安は、ここで見えてきます。エドモンドソンは、誤りを認めたり助けを求めたりすると、力が無いように見られ、体面を失う危険があるので、人はそうした行動を控えやすい、と書いています。恥をかく危険は、向き合う手前で人を守りに戻す不安の一つとして読めます（Claude の読み）。恥不安から心理的安全性を見る見方は、<a href="psychological-safety.html">心理的安全性とは</a>にあります。</p>
+<p>出典：新田信也のウェブサイト「精神分析統合理論」の頁「<a href="https://www.seishin-bunseki.jp/category/2015422.html">新しい心の分析教室：様々な精神医学（精神分析）用語（Ⅱ）</a>」（節「解離と防衛」。本文照合済）／同「<a href="https://www.seishin-bunseki.jp/category/2010409.html">解離理論</a>」（節「解離と解離性障害に関する私の理論構成」の②「防衛と解離の対等性」。本文照合済）／<a href="https://hdl.handle.net/1721.1/2581">Schein (1995)</a> <em>Organizational and managerial culture as a facilitator or inhibitor of organizational transformation</em>. MIT Sloan Working Paper 3831（本文照合済。防衛 p.6・心理的安全 pp.6–7）／<a href="https://doi.org/10.2307/2666999">Edmondson (1999)</a> <em>Administrative Science Quarterly</em> 44(2):350–383（本文照合済。体面を失う危険 p.351）</p>
+</div></details><details class="sec" id="何に向き合うのが不安かは人によって違う" open><summary>何に向き合うのが不安かは、人によって違う</summary><div class="secbody">
+
+
+<p>この章では、何がはがれるのが不安かが、人によって違うことを見ます。</p>
+<p>成人の発達の研究は、人が自分と世界に意味をつける仕組みが、生涯のあいだに何度か組み替わると書き、その一つ一つを段階と呼んできました（参考：<a href="developmental-stages.html">精神の発達段階とは</a>）。クック＝グロイターは 2013 年の論文で、段階ごとに、何がいちばん脅威に見えるか（主な不安）を書き分けています。</p>
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>段階</th>
+<th>主な不安</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>自己保護（p.27）</td>
+<td>消されること、隷属させられること</td>
+</tr>
+<tr>
+<td>順応（p.34）</td>
+<td>属せないこと、追い出されること。大切な人や集団に認められなくなること</td>
+</tr>
+<tr>
+<td>専門家（pp.39–40）</td>
+<td>やっと手に入れた特別さを失うこと。他人の見方に開くと確かさを失うこと</td>
+</tr>
+<tr>
+<td>達成者（pp.49–50）</td>
+<td>依存と服従へ引き戻されること。前進と統制を失うこと</td>
+</tr>
+<tr>
+<td>多元（pp.53・58–59）</td>
+<td>慣習の枠へ引き戻されること</td>
+</tr>
+<tr>
+<td>戦略家（pp.71–72）</td>
+<td>自分の可能性を果たせないこと。何より大切にしている普遍的な原理に沿って生きられないこと</td>
+</tr>
+<tr>
+<td>構成への気づき（pp.84–85）</td>
+<td>ほとんど誰にも理解されないこと</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>クック＝グロイターは、意味づけの仕組みが乱されると、人は知っていることの中に安全にとどまるために、否認したり注意を向けなかったりし、脅威が大きいほど今の見方を固める、とも書いています。段階が後になるほど、守りの動きの必要は減る、とも書いています。</p>
+<p>新田の定義に当てると、同じ「守りがはがれる」でも、はがれたときに迫ってくるものが、段階によって違うことになります（Claude の読み）。属せないことが迫る人もいれば、特別さを失うことが迫る人もいます。段階ごとの守りの動きまで並べた表は、<a href="love-driven-dev.html#ldd-stages">Love駆動開発と呼びたいもの</a>の章にあります。</p>
+<p>出典：Cook-Greuter, S. R. (2013). <a href="https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1&#39;14%2097p%5B1%5D.pdf"><em>Nine Levels of Increasing Embrace in Ego Development</em></a>（prepublication version・本文照合済）pp.9, 27, 34, 39–40, 49–50, 53, 58–59, 71–72, 84–85</p>
+</div></details><details class="sec" id="保持論点"><summary>保持論点</summary><div class="secbody">
+<p>この章では、調べた範囲では答えが出ていない問いを並べます。</p>
+<ul>
+<li>先が見えないのに、不安でなく安定が湧くことがあります。pjdhiro は、その感覚を「<a href="love-driven-dev.html#ldd-uncertain">Love駆動開発と呼びたいもの</a>」の章で書いています。この安定は、新田の定義ではどこに置けるのか。</li>
+<li>恥と罪悪感は、新田の「悪い自己」「弱い自己」と、どう重なるのか。</li>
+<li>不安を和らげることと、不安を持ったまま向き合い続けることは、どう違うのか。</li>
+<li>新田の「現実検討能力」と、シャインの言う、現実を否認しないことは、同じものを指しているのか。</li>
+</ul>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="psychological-safety.html">心理的安全性とは</a> ・
+                <a href="influences-psychology.html">影響を受けた心理学</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
