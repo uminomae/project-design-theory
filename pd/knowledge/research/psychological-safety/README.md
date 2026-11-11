@@ -14,6 +14,7 @@ https://github.com/uminomae/project-design-theory/issues/26 （発達段階の�
 | 調べの記録（2 効く条件と段階） | `SURVEY-02-conditions-stages.md`（2026-11-06・本文 6 件・要旨 13 件） |
 | 調べの記録（3 心理防衛機制と発達段階） | `SURVEY-03-defense-stages.md`（2026-11-06・防衛機制の先行分。発達段階との対応は pd#152 待ち） |
 | 調べの記録（4 二軸＝生存の側と信頼の側） | `SURVEY-04-two-axes.md`（2026-11-06・山岸 1999 本文は未照合） |
+| 調べの記録（5 心理学のどの領域から来たか） | `SURVEY-05-psychology-lineage.md`（2026-11-12・参照を逆に辿る。カーン 1990 本文とシャインとベニス 1965 本文は未照合） |
 | 書誌と照合の台帳 | `BIB-check.md`（状態ごとの統合表・SURVEY 間の食い違い・pjdhiro に頼む取得） |
 | 本文の正本（MD） | `READER-psychological-safety.md`（2026-11-06 初稿・9 章・工事中 noindex。develop 2b19a4e・3004 で読める） |
 | 読解テストの記録 | `TEST-comprehension-log.md`（規定質問 15 問・R1 済） |
