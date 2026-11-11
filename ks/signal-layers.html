@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- 英語の URL（?lang=en）では、本体を待たずに <html lang> を en にし、英語の本文を見せる（ks/index.html と同じ形） -->
+  <script>
+    (function () {
+      if (new URLSearchParams(location.search).get('lang') !== 'en') return;
+      document.documentElement.lang = 'en';
+      document.title = 'Where is a sense of wrongness raised, and where is it noticed? — Kesson-Driven Thinking — pjdhiro';
+    })();
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>違和感は、どこで立ち、どこで気づかれるのか — 欠損駆動思考 — pjdhiro</title>
+  <meta name="description" content="何も無いはずのところに「何か変だ」と感じるとき、信号はどこで立ち、どこで気づかれるのか。違和感のような感じを扱う研究を、信号が立つ層と自覚する層に分けて五つの系に並べ、pjdhiro の八つの見方を当てて、当たるところ・当たらないところ・外にこぼれるものを並べます。当てたのはこのページを書いた Claude で、どこが近いかは pjdhiro が決めます。">
+  <link rel="canonical" href="https://uminomae.github.io/project-design-theory/ks/signal-layers.html">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../src/styles/spaces-reading.css">
+  <style>
+    :root {
+      --reading-z: 1;
+      --reading-text: rgba(225, 233, 250, 0.94);
+      --reading-sub: rgba(175, 190, 222, 0.85);
+      --reading-quote-rule: rgba(120, 170, 255, .45);
+      --reading-details-rule: rgba(120, 170, 255, .18);
+      --reading-summary: rgba(175, 200, 245, 0.95);
+      --reading-link: rgba(170, 200, 255, 1);
+      --reading-focus-outline: 1px solid rgba(170, 200, 255, 0.7);
+      --reading-fold-text: rgba(210, 225, 250, 0.9);
+    }
+    html { background: #0b1220; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(90vw 70vh at 18% 10%, rgba(94, 160, 255, 0.10), transparent 62%),
+        radial-gradient(65vw 80vh at 50% 105%, rgba(34, 96, 180, 0.16), transparent 64%),
+        #0b1220;
+      font-family: 'Noto Sans JP', 'Hiragino Sans', system-ui, sans-serif;
+    }
+    .cs-top {
+      max-width: 46rem;
+      margin: 0 auto;
+      padding: 1rem clamp(1rem, 4vw, 2.25rem) 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: .85rem;
+    }
+    .cs-top a { color: var(--reading-link); text-decoration: none; }
+    .cs-top a:hover { text-decoration: underline; }
+    .reading-article {
+      background: rgba(14, 22, 40, 0.72);
+      border: 1px solid rgba(120, 170, 255, .12);
+      border-radius: 6px;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+    }
+    .reading-toc { margin: 0; padding-left: 1.2rem; font-size: .92rem; }
+    .reading-toc li { margin: .15rem 0; }
+    .reading-details h4 {
+      font-family: 'Noto Serif JP', Georgia, serif;
+      font-weight: 400;
+      font-size: 1rem;
+      margin: 1rem 0 .3rem;
+      color: var(--reading-summary);
+    }
+    .reading-details > ol, .reading-details > table { margin: 0 0 .7rem; font-size: .95rem; }
+    .reading-chapter ul, .reading-chapter ol { margin: 0; }
+    .scale-tag {
+      display: inline-block;
+      font-size: .78rem;
+      padding: 0 .45em;
+      margin-right: .4em;
+      border: 1px solid rgba(120, 170, 255, .35);
+      border-radius: 3px;
+      color: var(--reading-sub);
+    }
+    .wip {
+      border: 1px dashed rgba(120, 170, 255, .4);
+      padding: .6rem .9rem;
+      color: var(--reading-sub);
+    }
+    .refs { padding-left: 1.2rem; font-size: .88rem; line-height: 1.8; }
+    .refs li { margin: .25rem 0; }
+    /* 表：PC の幅は表のまま。狭い幅では行ごとの枠に積み、各セルの上に列の見出しを出す（stance 2-7） */
+    .cs-table { width: 100%; border-collapse: collapse; font-size: .9rem; line-height: 1.7; }
+    .cs-table th, .cs-table td {
+      border-bottom: 1px solid rgba(120, 170, 255, .16);
+      padding: .45rem .5rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    .cs-table th { font-weight: 400; color: var(--reading-summary); white-space: nowrap; }
+    @media (max-width: 640px) {
+      .cs-table, .cs-table tbody, .cs-table tr, .cs-table td { display: block; width: 100%; box-sizing: border-box; }
+      .cs-table thead { display: none; }
+      .cs-table tr {
+        border: 1px solid rgba(120, 170, 255, .2);
+        border-radius: 4px;
+        margin-bottom: .7rem;
+        padding: .3rem .6rem;
+      }
+      .cs-table td { border-bottom: none; padding: .25rem 0; }
+      .cs-table td::before {
+        content: attr(data-label);
+        display: block;
+        font-size: .78rem;
+        color: var(--reading-sub);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="cs-top" aria-label="ページの移動">
+    <a href="./" data-reading-lang="ja">← 欠損駆動思考</a>
+    <a href="./?lang=en" data-reading-lang="en">← Kesson-Driven Thinking</a>
+    <span>
+      <a href="?lang=en" data-reading-lang="ja" lang="en">English</a>
+      <a href="?" data-reading-lang="en" lang="ja">日本語</a>
+    </span>
+  </nav>
+
+  <main id="reading-section">
+    <article class="reading-article">
+      <div class="reading-body" data-reading-lang="ja" lang="ja">
+        <header class="reading-header">
+          <h1 class="reading-title">違和感は、どこで立ち、どこで気づかれるのか</h1>
+          <p class="reading-lead">何も無いはずのところに、なぜか「何か変だ」と感じることがあります。そのとき、何が起き、どこで気づかれているのでしょうか。</p>
+          <p class="reading-lead">このページは、欠損駆動思考の探究の一つです。違和感のような感じを扱う研究を、信号が立つところと、それが自覚されるところに分けて五つの系に並べ、そこに pjdhiro の八つの見方を当てました。当たるところ、当たらないところ、研究の並べの外にこぼれるものを、見方ごとに書いています。当てたのは、このページを書いた Claude です。pjdhiro は研究の原典を読んでいません。どこが近いかは、pjdhiro がこのページを読んで決めます。</p>
+          <ol class="reading-toc">
+            <li><a href="#sl-origin">この問いが出てきたところ</a></li>
+            <li><a href="#sl-frame">二つの層と、二つの時間の尺度</a></li>
+            <li><a href="#sl-types">研究を、五つの系に並べる</a></li>
+            <li><a href="#sl-each">八つの見方を、五つの系に当てる</a></li>
+            <li><a href="#sl-seen">当てて見えたこと</a></li>
+            <li><a href="#sl-open">まだ分からないこと</a></li>
+            <li><a href="#sl-method">この整理の作り方と出典</a></li>
+          </ol>
+        </header>
+
+        <section class="reading-chapter" id="sl-origin">
+          <h2 class="reading-chapter-title">この問いが出てきたところ<span class="reading-chapter-sub"> — 何をセンシングしているのか</span></h2>
+          <p>欠損駆動思考は、記号の上では 0 とされたところに残る違和感を見ています。0 のはずのところに違和感が湧くなら、何かを感じ取っていることになります。何を感じ取っているのかを聞いたとき、pjdhiro はこう答えました。</p>
+          <p class="reading-quote"><strong>pjdhiro の見方：</strong>何をセンシングしているのかは未解明ではないでしょうか。最新の知見を調査して更新されていくと思います。</p>
+          <p>そこで、内受容（体の内側の信号を感じること）や、知っている感じ・誤りの感じのような、自分の心の働きについての感じの研究を、2020 年代の総説を中心に集めました。どの総説も、何を感じ取っているのかを、まだ分かっていないこととして書いていました。集めた研究から、答えの候補を三つ挙げ、どれがしっくり来るかを聞くと、pjdhiro は一つを選びませんでした。</p>
+          <p class="reading-quote"><strong>pjdhiro の見方：</strong>どれも知識として知っておきたいものですね。直接どれかを選んで演繹的に進めようとは思っていません。群盲象を評すように、何でないかを切り取る際の視点として全て有効だと思います</p>
+          <p>群盲象は、目の見えない人たちが象のそれぞれ違うところを触り、象とは何かを言い合うたとえです。研究を、信号が立つところと自覚されるところに分けて並べた表を見て、pjdhiro はこう言いました。</p>
+          <p class="reading-quote"><strong>pjdhiro の見方：</strong>この類型に対して私の仮説を当てていくと何か見えるのでは？それが一つのコンテンツとなるよね</p>
+          <p>このページは、その当てたものです。並べた研究を、どれかを選ぶためでなく、何でないかを切り取る視点として使います。</p>
+        </section>
+
+        <section class="reading-chapter" id="sl-frame">
+          <h2 class="reading-chapter-title">二つの層と、二つの時間の尺度<span class="reading-chapter-sub"> — 信号が立つところ、自覚されるところ</span></h2>
+          <p>このページは、二つの切り口を別々に使います。どちらも見るための切り口で、心の中に二つの部屋があるという意味ではありません。</p>
+          <p>一つ目は層です。<b>信号が立つ層</b>は、体や心の処理の中で、何かのずれが信号として立つところです。本人はふつう気づきません。<b>自覚する層</b>は、立った信号が、感じとして、あるいは「何か変だ」と言えるものとして現れるところです。</p>
+          <p>二つ目は時間の尺度です。<span class="scale-tag">微細な瞬間</span>は、ミリ秒から数秒の、脳と体の働きです。<span class="scale-tag">大きな時間</span>は、場面・日・年のあいだのことで、本人が感じとして語れるものです。同じ語で書かれていても、二つの尺度では見ているものが違うので、このページは混ぜずに書きます。</p>
+          <details class="reading-details">
+            <summary>詳しく — 「予測誤差」と「予想と現実のずれ」</summary>
+            <p>脳のはたらきを、先に見込みを立て、入ってきたものとのずれで見込みを直していく仕組みとして書く研究があります。その研究の「予測誤差」は、意識に上らない、微細な瞬間の計算の語です。欠損駆動思考が欠けを補って言う「予想と現実の誤差」は、人が欠けとして気づける、大きな時間のずれです。このページでは、脳の仕組みの話を「予測誤差」と書き、二つを一つのものとして扱いません。</p>
+          </details>
+        </section>
+
+        <section class="reading-chapter" id="sl-types">
+          <h2 class="reading-chapter-title">研究を、五つの系に並べる<span class="reading-chapter-sub"> — 立つ層と自覚する層の書き方</span></h2>
+          <p>集めた研究は、五つの系に分かれました。どの系も、信号が立つことと、それが自覚されることを分けて書いています。ただし、分け方は系ごとに違い、同じ層を指しているかは確かめられていません。</p>
+          <table class="cs-table">
+            <thead><tr><th>系</th><th>立つ層</th><th>自覚する層</th><th>時間の尺度</th></tr></thead>
+            <tbody>
+              <tr><td data-label="系">1 内受容</td><td data-label="立つ層">意識されずに進む体の内側の見張り・意識の前の影響</td><td data-label="自覚する層">ときに上がる体の感じ・本人の言う体の感じ</td><td data-label="時間の尺度">主に微細な瞬間（心拍・呼吸の一周期）</td></tr>
+              <tr><td data-label="系">2 予測処理から見た感じ</td><td data-label="立つ層">内臓の変化を手がかりにした、外れの減る速さの見込み</td><td data-label="自覚する層">意識の縁に現れる、快・不快を持つ感じ</td><td data-label="時間の尺度">生まれは微細な瞬間、感じは場面の中</td></tr>
+              <tr><td data-label="系">3 認識の感じ</td><td data-label="立つ層">中身に触れず、処理の流れやすさなどだけに反応する見張り</td><td data-label="自覚する層">根拠の見当たらないまま上る感じ（誤りの感じ・忘れた感じ）</td><td data-label="時間の尺度">場面の中（数秒から数十分）</td></tr>
+              <tr><td data-label="系">4 自覚を推論として書く</td><td data-label="立つ層">脳の中の、不確かさの表現</td><td data-label="自覚する層">本人の確信・「気づいている」という報告</td><td data-label="時間の尺度">判断の一回ごと（数秒）</td></tr>
+              <tr><td data-label="系">5 誤りへの気づき</td><td data-label="立つ層">気づかれない誤りにも立つ脳の反応</td><td data-label="自覚する層">気づかれた誤りで大きくなる脳の活動</td><td data-label="時間の尺度">微細な瞬間（誤りのあと 1 秒に満たない）</td></tr>
+            </tbody>
+          </table>
+          <details class="reading-details">
+            <summary>詳しく — 系ごとの研究</summary>
+            <p><b>1 内受容。</b>体の内側の見張りは、ほとんどが意識されずに進み、ときに感じとして意識に上ります（Engelen ら 2023）。内受容を八つの次元に分けた整理は、「意識の前の影響」と「自分の当てる力についての見積もり」を別の次元に置いています（Suksasilp と Garfinkel 2022）。体の内側の感じは、時間と場所を定めにくく、意識の背景に退きやすい、という見立てもあります（Feldman ら 2024）。</p>
+            <p><b>2 予測処理から見た感じ。</b>知っている感じや、喉まで出かかっている感じのような感じは、内臓の変化を手がかりに、心の処理の外れがどれくらいの速さで減っていくかを見込むところから生まれる、という理論があります。快・不快は、その見込みの速さに当たる、と置きます。こうした感じは、直接は取り出せないが経験を形づくり、意識の縁に現れる、と書きます（Fernández Velasco と Loev 2025）。</p>
+            <p><b>3 認識の感じ。</b>誤りの感じは、手がかりと関わりなく、根拠が見当たらないまま意識に上り、自分の心の処理のどこかの誤りを指す感じ、と定義されています。忘れた感じの例として、駅を出て車に乗ったとき、変で落ち着かず少し悲しい感じがし、だんだん「何か忘れた」と分かってきたが、何を忘れたかは着くまで分からなかった、という話が挙げられています（Arango-Muñoz と Michaelian 2014）。</p>
+            <p><b>4 自覚を推論として書く。</b>「気づいている」という報告を、脳が自分の知覚について手がかりから推す見積もりとして書く論です。報告を支える内側の状態は、無いから在るへの一本の連続の上で変わる、と置きます（Fleming 2020）。自分の処理についての思い込みは、学んで身につくもの・文化から受け継ぐもの・生まれつきのもの（体の内側の状態と確信の結びつきなど）がありうる、と書きます（Fleming 2024）。</p>
+            <p><b>5 誤りへの気づき。</b>誤りのすぐあとの脳の電位は、本人が誤りに気づいたかどうかに関わらず立ちます（Nieuwenhuis ら 2001）。402 人を調べた研究では、気づかれた誤りで、島などの活動が大きくなりました（Dali ら 2022）。</p>
+          </details>
+        </section>
+
+        <section class="reading-chapter" id="sl-each">
+          <h2 class="reading-chapter-title">八つの見方を、五つの系に当てる<span class="reading-chapter-sub"> — 当たるところ、当たらないところ、こぼれるもの</span></h2>
+          <p>当てたのは、pjdhiro がこれまでに言ってきた見方のうち、pjdhiro が選んだ八つです。言葉は言ったとおりに引きました。下の表は、見方ごとに、どの系に当たり、何が五つの系の外にこぼれたかをまとめたものです。畳みの中に、<span class="scale-tag">当たる</span><span class="scale-tag">当たらない</span><span class="scale-tag">こぼれる</span>の三つを書きました。</p>
+          <table class="cs-table">
+            <thead><tr><th>見方</th><th>当たる系</th><th>こぼれるもの</th></tr></thead>
+            <tbody>
+              <tr><td data-label="見方"><a href="#sl-h1">1 信号は、予測と誤差があるときに立つ</a></td><td data-label="当たる系">2・5（微細な瞬間の読み）、3（大きな時間の読み）</td><td data-label="こぼれるもの">気づきの「部品」という見方</td></tr>
+              <tr><td data-label="見方"><a href="#sl-h2">2 気づきと抱持は別</a></td><td data-label="当たる系">五つとも気づきの側を扱う、という点で</td><td data-label="こぼれるもの">持ち続けること（抱持）そのもの</td></tr>
+              <tr><td data-label="見方"><a href="#sl-h3">3 「無い」の報告に、持てなかった場合が混ざる</a></td><td data-label="当たる系">5（報告の測り方の議論）・1</td><td data-label="こぼれるもの">持てなかった場合・認知したくなかった場合</td></tr>
+              <tr><td data-label="見方"><a href="#sl-h4">4 ゼロにする理由は、体の側と心の側</a></td><td data-label="当たる系">1・5（体の側）、4（思い込み）</td><td data-label="こぼれるもの">否認・常識で決まるゼロ・生存と信頼の信号</td></tr>
+              <tr><td data-label="見方"><a href="#sl-h5">5 ゼロの場所で湧く信号を「何？」と思う</a></td><td data-label="当たる系">3・2</td><td data-label="こぼれるもの">「何？」と問うこと</td></tr>
+              <tr><td data-label="見方"><a href="#sl-h6">6 判断の手前で、感じてしまう</a></td><td data-label="当たる系">3・2・1</td><td data-label="こぼれるもの">美や善の感じ</td></tr>
+              <tr><td data-label="見方"><a href="#sl-h7">7 欠けは、落ちていく方向</a></td><td data-label="当たる系">2</td><td data-label="こぼれるもの">大きな時間の向き</td></tr>
+              <tr><td data-label="見方"><a href="#sl-h8">8 ずれの基準は、多種類ある</a></td><td data-label="当たる系">1〜5 に、それぞれ違う基準</td><td data-label="こぼれるもの">大きな時間の基準・向かう先にある基準</td></tr>
+            </tbody>
+          </table>
+
+          <details class="reading-details" id="sl-h1">
+            <summary>1　信号は、予測と誤差があるときに立つ。それが気づきの部品</summary>
+            <p>「気づき」という語の定義が曖昧だ、という話の中で、pjdhiro は、意識に上る信号の立ち方をこう見ていました。</p>
+            <p class="reading-quote"><strong>pjdhiro の見方：</strong>意識にのぼる信号は、予測と誤差がある場合に立つ。認知される。という意味です。それは　気づきの部品だろう、という推測です。</p>
+            <p>この「予測と誤差」は、脳の仕組みの予測誤差（微細な瞬間）とも、本人が気づける予想と現実のずれ（大きな時間）とも読めるので、二つに分けて当てました。</p>
+            <p><span class="scale-tag">当たる</span>微細な瞬間の読みでは、系 2 と系 5 に当たります。系 2 は、外れの減る速さの見込みから感じが生まれると書き、系 5 では、誤りのすぐあとに脳の反応が立ちます。予測処理の論には「説明して消すべき予測誤差が無ければ、気づくものも無い」と書くものがあります（Hohwy 2012）。大きな時間の読みでは、系 3 の忘れた感じの例が当たります。予定どおりのはずの場面で、落ち着かない感じが立っています。</p>
+            <p><span class="scale-tag">当たらない</span>この見方は、立つことと認知されることを一続きに言います。五つの系は、どれも二つを分けます。系 5 では、気づかれない誤りにも同じ反応が立ち、系 1 では、体の信号の多くは意識されません。立っても、認知されないことがあります。また、意識に上る中身は、誤差でなく見込みの側だと書く論が多くあります（Hohwy 2012・Seth と Bayne 2022）。系 3 の知っている感じの論は、予測誤差の語を使わず、手がかりの取り出しやすさで感じの立ち方を書きます（Koriat 2000）。</p>
+            <p><span class="scale-tag">こぼれる</span>気づきを部品から組み上がるものと見る見方は、五つの系にありません。系 4 は、気づいているという報告を、無いから在るへの一本の連続の上の見積もりとして書きます。</p>
+          </details>
+
+          <details class="reading-details" id="sl-h2">
+            <summary>2　気づきと抱持は別。持つには心理エネルギーや記憶が要る</summary>
+            <p>同じ話の続きで、pjdhiro は、立った信号のその後を、気づきとは別のこととして置きました。抱持は、違和感を、反射的に処理せず、問いとして抱え保つことです。</p>
+            <p class="reading-quote"><strong>pjdhiro の見方：</strong>その後に、その信号を抱持するのは忍耐力や興味といった心理エネルギーや頭脳の記憶が必要だろう。</p>
+            <p class="reading-quote"><strong>pjdhiro の見方：</strong>気づきと保持は別概念。</p>
+            <p><span class="scale-tag">当たる</span>五つの系の二つの層は、どちらも気づきの側にあり、持ち続けることは測っていません。この見方の「別」と、研究が扱う範囲の線は、そろっています。誤りへの気づきの総説は、誤りのすぐあとの反応を、気づきの仕組みへ前へ送られる入力と見ます（Wessel 2012）。気づきの手前は細かく分けますが、その後は書きません。</p>
+            <p><span class="scale-tag">当たらない</span>自覚する層は、一回の報告や確信のことで、時間は数秒までです。抱持は、場面から日や年にかけてのことです。二つの層のどちらにも、持ち続ける時間が入りません。系 3 の忘れた感じの例だけは、感じが数分から数十分かけて形になりますが、論文はそれを、持つことでなく、感じが形になる過程として書きます。</p>
+            <p><span class="scale-tag">こぼれる</span>抱持そのものが、五つの系の外にあります。当てるには、三つ目の層（持ち続ける）が要ります。記憶については、中断した課題をよく覚えている、という利点はメタ分析で見つからず、中断した課題に戻ろうとする傾きは見られた、という報告があります（Ghibellini と Meier 2025）。持つことを、覚えていることより、戻ろうとする傾きとして書く研究です。対象は言葉にできる課題で、違和感のような感じを持ち続けるかは測られていません。「心理エネルギー」の語は、五つの系のどれにもありません。</p>
+          </details>
+
+          <details class="reading-details" id="sl-h3">
+            <summary>3　「無い」の報告に、持てなかった場合が混ざっている</summary>
+            <p>系 4 の論では、0 のはずのところは「無い」の側に入ります。その読みを見て、pjdhiro はこう言いました。</p>
+            <p class="reading-quote"><strong>pjdhiro の見方：</strong>抱持できない場合のケースも混入している調査ではないかな？</p>
+            <p><span class="scale-tag">当たる</span>系 5 の測り方に、混ざりものの議論があります。気づいた誤りをボタンで知らせる測り方は、「報告されなかった誤り」に、まだ気づきの残っている誤りを混ぜうるし、知らせない側に偏る、と総説が書いています（Wessel 2012）。ボタンを押すのは押さないより手間がかかり、迷った場面は「正しかったと思った」に数えられる、という理由です。系 1 でも、体の信号を当てる力と、本人の言う体の感じとは、別に動くことが分かってきています。「無い」と言うかは、信号があったかどうかだけでは決まりません。</p>
+            <p><span class="scale-tag">当たらない</span>立ったが持てなかった場合を、分けて測った研究には当たっていません。系 5 の報告は、誤りのあと 1 秒から数秒のうちに取ります。そこで混ざっているのは、報告の決め方と偏りで、抱持が続かなかったことではありません。微細な瞬間に気づきが薄れることと、大きな時間に分からないまま持っていられないことは、別の尺度の話です。</p>
+            <p><span class="scale-tag">こぼれる</span>「無い」と報告された場合に混ざりうるものを並べると、少なくとも五つになります。①信号が立たなかった。②立ったが、自覚する層まで上がらなかった。③上がったが、報告しなかった。④上がったが、持てなかった。⑤上がりかけたが、認知したくなかった。研究が自分で混ざりものとして認めているのは③までで、④と⑤は五つの系の外にあります。</p>
+          </details>
+
+          <details class="reading-details" id="sl-h4">
+            <summary>4　ゼロにする理由は、体の側と心の側</summary>
+            <p>何が 0 にされるのかを聞いたとき、pjdhiro は、0 にする理由を二つの側から挙げました。</p>
+            <p class="reading-quote"><strong>pjdhiro の見方：</strong>可能性としては、認知できない、常識的に無意味と判断されてしまうこと、思い込みや心理状態でゼロとしたいことなどがありそうです。心理防衛機制だと否認のようなこと。ゼロとしてしまう理由が身体的な理由で認知できないことのほかに、精神的な理由で認知したくないかのような振る舞いもあるのです。生存と信頼の信号が関係してるかもしれません</p>
+            <p><span class="scale-tag">当たる</span>体の側は、系 1 と系 5 に当たります。脳の中の体の表現がそのまま意識に対応することは、ありそうにも期待されもしない、と書かれています（Suksasilp と Garfinkel 2022）。内臓の信号は見込まれて、意識に上らないよう抑えられる、という見方もあります（Engelen ら 2023）。心の側に近いのは系 4 で、自分の処理についての思い込みは、学んで身につき、文化から受け継がれる、と書かれます（Fleming 2024）。思い込みが、自分の見積もりを「無い」に寄せることは、この枠で書けます。</p>
+            <p><span class="scale-tag">当たらない</span>否認のような、認知したくないから上げない働きは、五つの系のどれにもありません。系 4 の思い込みは、知らずに持っている前提で、見たくないものを避ける動きとは違います。</p>
+            <p><span class="scale-tag">こぼれる</span>「常識的に無意味と判断されてしまうこと」がこぼれます。0 は、一人の脳の中だけでなく、定義や常識として、人の外でも決まります。五つの系は一人の中の信号を扱うので、この 0 は外にあります。「生存と信頼の信号」で分ける軸も、五つの系にはありません。</p>
+          </details>
+
+          <details class="reading-details" id="sl-h5">
+            <summary>5　ゼロの場所で湧く信号を「何？」と思うことが、欠損への気づき</summary>
+            <p>なぜ 0 のところに何かを感じるのかを考えていたとき、pjdhiro は、欠損への気づきをこう言いました。</p>
+            <p class="reading-quote"><strong>pjdhiro の見方：</strong>その信号がゼロの場所で湧いてしまうとしたら何？と思うことが、欠損への気づきだと思う。</p>
+            <p><span class="scale-tag">当たる</span>「湧いてしまう」側は、系 3 に当たります。根拠の見当たらないまま意識に上る誤りの感じや、何を忘れたか分からないまま「何か忘れた」と感じる忘れた感じです。中身が無いのに、感じだけが先に立ちます。系 2 の、意識の縁に現れる感じも近くにあります。</p>
+            <p><span class="scale-tag">当たらない</span>「ゼロの場所」が当たりません。系 4 と系 5 の課題には正解があり、信号は正解からのずれとして立ちます。本人が無意味と見なした場所に湧く信号を扱った研究には、当たっていません。系 4 の論では、0 は「無い」の側に入り、「無い」から何かが湧く形は書かれていません。</p>
+            <p><span class="scale-tag">こぼれる</span>「何？と思うこと」がこぼれます。この見方は、気づきを、信号が立つことでも、感じとして上がることでもなく、湧いた信号を「何？」と問うところに置きます。自覚する層は、感じ・確信・報告で、問いを立てることは入りません。忘れた感じの例で、本人が原因を探し続けたところだけが、問うことに近いところです。</p>
+          </details>
+
+          <details class="reading-details" id="sl-h6">
+            <summary>6　判断の手前で、感じてしまう</summary>
+            <p>欠けの基準の候補に「美や善」を挙げたとき、pjdhiro は、それが起きている水準をこう言いました。</p>
+            <p class="reading-quote"><strong>pjdhiro の見方：</strong>頭で考えるようなことではなく、その手前のレベルで起きてる。判断するようなものでなく、感じてしまうもの。それはなんなのか？という問いでもありますね。掘るのはそこ。</p>
+            <p><span class="scale-tag">当たる</span>系 3 の知っている感じの論は、手がかりから無意識に感じが生まれ、感じが固まってから、意識した制御が始まる、と書きます（Koriat 2000）。感じが判断の手前にある、という順は、この見方と同じ向きです。系 2 の感じも、直接は取り出せないが経験を形づくります。系 1 の「意識の前の影響」も、判断の手前に置かれます。二つの層の上に判断を足すと、立つ・感じる・判断する、の三つが見え、この見方の「手前」は、感じるところに当たります。</p>
+            <p><span class="scale-tag">当たらない</span>系 4 は、気づいていること自体を、手がかりからの推論として書きます。ここでは、感じることと推すことが一つの過程の中にあります。ただし、系 4 の「推論」は、本人の知らない脳の中の計算で、この見方の「頭で考える」判断とは、語が似ていても水準が違います。</p>
+            <p><span class="scale-tag">こぼれる</span>美や善の感じがこぼれます。この見方は、美や善を判断の手前で感じてしまうことから出てきました。五つの系は、体・知っている感じ・誤り・確信を扱い、美や善の感じは入っていません。</p>
+          </details>
+
+          <details class="reading-details" id="sl-h7">
+            <summary>7　欠けは、引き寄せられ落ちていく方向</summary>
+            <p>Love駆動開発の読み物の冒頭を読み、欠けの言い方に違和感を持ったとき、pjdhiro はこう言いました。</p>
+            <p class="reading-quote"><strong>pjdhiro の見方：</strong>欠けとは　引き寄せられる　ドリフトしていく　落ちていく　そのような方向を指すものかもしれません</p>
+            <p><span class="scale-tag">当たる</span>系 2 だけが、向きと速さの語を持ちます。快・不快を、外れの減る速さの見込みと置きます（Fernández Velasco と Loev 2025）。</p>
+            <p><span class="scale-tag">当たらない</span>ほかの系は、信号を、在るか無いか、強いか弱いかの状態として書きます。系 4 の「無いから在るへの一本の連続」も、線の上の点で、向きではありません。系 2 の速さは、微細な瞬間の計算です。人が長い時間をかけて何かの方へ引き寄せられていく「ドリフト」とは、尺度が違います。</p>
+            <p><span class="scale-tag">こぼれる</span>大きな時間の向きがこぼれます。五つの系には、長い時間の向きを書く層がありません。</p>
+          </details>
+
+          <details class="reading-details" id="sl-h8">
+            <summary>8　ずれの基準は、一つでなく多種類ある</summary>
+            <p>欠けは何からのずれなのかを考えたとき、Claude は、確かめずにつながっている安定からのずれを、基準として一つだけ置きました。pjdhiro はこう答えました。</p>
+            <p class="reading-quote"><strong>pjdhiro の見方：</strong>それは一つです。他の可能性もあるし、多種類あると思って探してます。</p>
+            <p><span class="scale-tag">当たる</span>五つの系は、何を感じ取っているかを並べたもので、基準を並べたものではありません。それでも、系ごとに、ずれを測る基準が違う形で入っています。体の状態の見込み（系 1）、外れの減る速さの見込み（系 2）、処理の流れやすさの見込み（系 3）、自分の処理についての思い込み（系 4）、課題の正解（系 5）です。思い込みの出どころも、学ぶ・文化から受け継ぐ・生まれつき、といくつも挙げられています（Fleming 2024）。</p>
+            <p><span class="scale-tag">当たらない</span>系 5 の基準の正解は、実験する人が外から決めたもので、本人の中にある基準ではありません。</p>
+            <p><span class="scale-tag">こぼれる</span>大きな時間の基準がこぼれます。つながりの安定（胎児の頃の安心との近さ）・あるべき姿・美や善は、五つの系に入りません。また、五つの系の基準は、どれも先にある物差しの側で、向かう先にある基準は入っていません。</p>
+          </details>
+        </section>
+
+        <section class="reading-chapter" id="sl-seen">
+          <h2 class="reading-chapter-title">当てて見えたこと<span class="reading-chapter-sub"> — 外にこぼれた三つと、切れ目の場所</span></h2>
+          <p>八つを当てると、五つの系の外に、三つがこぼれました。0 にする働き（定義・常識・否認）、湧いた信号を「何？」と問うこと、持ち続けること（抱持）です。五つの系は、そのあいだの、立つことと自覚することを扱っています。こぼれた三つには、大きな時間の話が多くありました。</p>
+          <p>切れ目を置く場所も違いました。研究は、立つことと自覚することのあいだで切ります。pjdhiro の見方は、立つことと認知されることを一続きに言い、切れ目を気づきと抱持のあいだに置きます。研究が細かく分けたところを見方はまとめ、研究が扱わないところで見方は分けています。どちらの切り方も、一面を触っています。</p>
+          <p>いちばん近い手触りは、系 3 の忘れた感じでした。中身が無いまま感じが立ち、判断の手前にあり、数分から数十分かけて持たれ、本人が原因を探し続けます。ただし、これは論文の中の一つの例で、測った研究ではありません。</p>
+          <details class="reading-details">
+            <summary>詳しく — 「無い」の報告と、尺度のずれ</summary>
+            <p>見方 3 を当てると、「無い」と報告された場合に、少なくとも五つが混ざりうることが見えました（見方 3 の畳み）。研究が自分で混ざりものと認めているのは、報告の決め方と偏りまでです。持てなかった場合と、認知したくなかった場合は、研究の外にあります。</p>
+            <p>五つの系は、微細な瞬間から場面の中までの話が中心でした。微細な瞬間の読みで当たったのは、見方 1 と 6 の一部と、報告の偏り（見方 3）くらいです。見方 2・4 の心の側・7 のドリフト・8 の大きな基準は、大きな時間の話で、五つの系にほとんど入りませんでした。同じ「予測」「判断」「向き」の語が、二つの尺度で違うものを指していました。</p>
+          </details>
+        </section>
+
+        <section class="reading-chapter" id="sl-open">
+          <h2 class="reading-chapter-title">まだ分からないこと<span class="reading-chapter-sub"> — 立ったが持てなかった場合</span></h2>
+          <p>「無い」と報告された場合を、立たなかったのか、立ったが持てなかったのかで分けて測った研究には、ここまでの範囲では当たっていません。本人が無意味と見なした場所に湧く信号を扱った研究にも、当たっていません。</p>
+          <p>ほかの研究が見つかれば、系にも見方にも書き足します。</p>
+        </section>
+
+        <section class="reading-chapter" id="sl-method">
+          <h2 class="reading-chapter-title">この整理の作り方と出典</h2>
+          <p>研究は、内受容・予測処理から見た感じ・認識の感じ・自覚を推論として書く論・誤りへの気づきの五つの向きで探しました。このページに載せたのは、原典の本文を読み、鍵の文を頁か節で確かめられたものだけです。五つの系の分け方、当てる見方の選び方、当たる・当たらない・こぼれるの読みは、このページがしたもので、原典の著者の分け方ではありません。</p>
+          <details class="reading-details">
+            <summary>出典</summary>
+            <ul class="refs">
+              <li>Arango-Muñoz, S., &amp; Michaelian, K. (2014). Epistemic feelings, epistemic emotions: Review and introduction to the focus section. <i>Philosophical Inquiries</i> 2(1), 97–122.</li>
+              <li>Dali, G., Brosnan, M., Tiego, J., ら (2022). Examining the neural correlates of error awareness in a large fMRI study. <i>Cerebral Cortex</i> 33(2), 458–468.</li>
+              <li>Engelen, T., Solcà, M., &amp; Tallon-Baudry, C. (2023). Interoceptive rhythms in the brain. <i>Nature Neuroscience</i> 26, 1670–1684.（頁は HAL の著者稿の頁）</li>
+              <li>Feldman, M. J., Bliss-Moreau, E., &amp; Lindquist, K. A. (2024). The neurobiology of interoception and affect. <i>Trends in Cognitive Sciences</i> 28(7), 643–661.</li>
+              <li>Fernández Velasco, P., &amp; Loev, S. (2025). Metacognitive feelings: A predictive-processing perspective. <i>Perspectives on Psychological Science</i> 20(4), 691–713.</li>
+              <li>Fleming, S. M. (2020). Awareness as inference in a higher-order state space. <i>Neuroscience of Consciousness</i> 2020(1), niz020.</li>
+              <li>Fleming, S. M. (2024). Metacognition and confidence: A review and synthesis. <i>Annual Review of Psychology</i> 75, 241–268.</li>
+              <li>Ghibellini, R., &amp; Meier, B. (2025). Interruption, recall and resumption: A meta-analysis of the Zeigarnik and Ovsiankina effects. <i>Humanities and Social Sciences Communications</i> 12, 962.</li>
+              <li>Hohwy, J. (2012). Attention and conscious perception in the hypothesis testing brain. <i>Frontiers in Psychology</i> 3, 96.</li>
+              <li>Koriat, A. (2000). The feeling of knowing: Some metatheoretical implications for consciousness and control. <i>Consciousness and Cognition</i> 9(2), 149–171.</li>
+              <li>Nieuwenhuis, S., Ridderinkhof, K. R., Blom, J., Band, G. P. H., &amp; Kok, A. (2001). Error-related brain potentials are differentially related to awareness of response errors: Evidence from an antisaccade task. <i>Psychophysiology</i> 38(5), 752–760.</li>
+              <li>Seth, A. K., &amp; Bayne, T. (2022). Theories of consciousness. <i>Nature Reviews Neuroscience</i> 23, 439–452.（頁はサセックス大学の著者稿の頁）</li>
+              <li>Suksasilp, C., &amp; Garfinkel, S. N. (2022). Towards a comprehensive assessment of interoception in a multi-dimensional framework. <i>Biological Psychology</i> 168, 108262.</li>
+              <li>Wessel, J. R. (2012). Error awareness and the error-related negativity: Evaluating the first decade of evidence. <i>Frontiers in Human Neuroscience</i> 6, 88.</li>
+            </ul>
+          </details>
+          <ul class="reading-links">
+            <li><a href="./">欠損駆動思考</a></li>
+            <li><a href="./connection-stability.html">つながりの安定は、何とつながっているのか</a></li>
+            <li><a href="../as/">意識とは</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="reading-body" data-reading-lang="en" lang="en">
+        <header class="reading-header">
+          <h1 class="reading-title">Where is a sense of wrongness raised, and where is it noticed?</h1>
+          <p class="reading-lead">Sometimes one feels that "something is off" where there should be nothing. This page arranges research on such feelings in five families, separating where a signal is raised from where it is noticed, and sets eight of pjdhiro's views against them: where each view fits, where it does not, and what falls outside the families.</p>
+          <p class="wip">The English version of this page is under construction. The Japanese version can be read now.</p>
+        </header>
+        <ul class="reading-links">
+          <li><a href="?">日本語で読む</a></li>
+          <li><a href="./?lang=en">Kesson-Driven Thinking</a></li>
+        </ul>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
