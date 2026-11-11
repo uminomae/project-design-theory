@@ -1070,8 +1070,8 @@ function mountMagnitudeVsDifference(host) {
     const row = controls(host);
     const st = status(host);
     const N = 3;
-    let deg = 90;
-    const play = autoPlay(host, row, { period: 9000, onFrame: p => { deg = Math.round(keyframes(p, [[0, 0], [0.2, 90], [0.3, 90], [0.5, 180], [0.6, 180], [0.9, 360], [1, 360]])) % 360; input.value = deg; draw(); } });
+    let deg = 180;   // 本文の例：右へ 3 と左へ 3 から始める
+    const play = autoPlay(host, row, { period: 10000, onFrame: p => { deg = Math.round(keyframes(p, [[0, 180], [0.14, 180], [0.34, 90], [0.46, 90], [0.66, 0], [0.76, 0], [0.96, 180], [1, 180]])); input.value = deg; draw(); } });
     const input = slider(row, { label: 'もう一本の向き（度）', min: 0, max: 360, value: deg, onInput: v => { play.stop(); deg = v; draw(); } });
     function draw() {
         const { ctx, W, H } = view;
@@ -1086,11 +1086,12 @@ function mountMagnitudeVsDifference(host) {
         drawArrow(ctx, cx, cy, cx + bx * unit, cy - by * unit, P.coral, 3);
         ctx.fillStyle = P.ink; ctx.beginPath(); ctx.arc(cx, cy, 3, 0, Math.PI * 2); ctx.fill();
         const d = Math.hypot(3 - bx, by);
-        st.innerHTML = '二本の矢印の大きさは、どちらも 3 です。大きさの差は <b>0</b> のままです。'
-            + '差の大きさ（二本の先どうしの距離・点線）は <b>' + d.toFixed(2) + '</b> です。'
-            + (deg === 90 ? 'もう一本は虚軸の上の 3i を指しています。' : deg === 180 ? 'もう一本は −3 を指し、差の大きさは 6 です。' : '');
+        const dTxt = Math.abs(d - Math.round(d)) < 0.005 ? String(Math.round(d)) : d.toFixed(2);
+        const where = deg === 180 ? 'もう一本は左へ 3（−3）を指しています。' : deg === 90 ? 'もう一本は真上へ 3（虚軸の上の 3i）を指しています。' : deg === 0 || deg === 360 ? '二本は同じ向きです。' : '';
+        st.innerHTML = where + '二本の大きさは、どちらも 3 です。大きさの差は <b>0</b> です。'
+            + '差の大きさ（二本の先どうしの距離・点線）は <b>' + dTxt + '</b> です。';
     }
-    view.canvas.setAttribute('aria-label', '実軸の上の 3 を指す矢印と、0 のまわりを回る長さ 3 の矢印。大きさの差はいつも 0 で、二本の先どうしの距離は向きによって 0 から 6 まで変わる。');
+    view.canvas.setAttribute('aria-label', '右へ 3 の矢印と、左へ 3 から始めて 0 のまわりを回る長さ 3 の矢印。大きさの差はいつも 0 で、差の大きさ（二本の先どうしの距離）は、左へ 3 で 6、真上へ 3 で約 4.24、同じ向きで 0。');
     view.onResize = draw;
     draw();
 }
@@ -1112,21 +1113,28 @@ function mountRootsMerge(host) {
         ctx.clearRect(0, 0, W, H);
         const unit = Math.min(W, H) / (2 * N + 1.6), cx = W / 2, cy = H / 2;
         drawPlaneAxes(ctx, P, cx, cy, unit, N, [-4, -2, 2, 4]);
-        // x（金の四角）
-        ctx.fillStyle = P.gold;
-        ctx.fillRect(cx + x * unit - 6, cy - 6, 12, 12);
-        ctx.font = '13px sans-serif'; ctx.textAlign = 'center';
+        // x（金の四角の枠。根の点に重なっても見えるよう、枠で大きめに描く）
+        ctx.strokeStyle = P.gold; ctx.lineWidth = 2.5;
+        ctx.strokeRect(cx + x * unit - 11, cy - 11, 22, 22);
+        ctx.fillStyle = P.gold; ctx.font = '13px sans-serif'; ctx.textAlign = 'center';
         ctx.fillText('x', cx + x * unit, cy + 30);
         // 二つの根
         const s = Math.sqrt(Math.abs(x));
         const roots = x >= 0 ? [[s, 0], [-s, 0]] : [[0, s], [0, -s]];
         ctx.fillStyle = P.coral;
         roots.forEach(([a, b]) => { ctx.beginPath(); ctx.arc(cx + a * unit, cy - b * unit, 7, 0, Math.PI * 2); ctx.fill(); });
+        if (Math.abs(x) < 0.05) {   // 二つの根が重なっている印：二重の輪と「×2」
+            ctx.strokeStyle = P.coral; ctx.lineWidth = 1.5;
+            ctx.beginPath(); ctx.arc(cx, cy, 15, 0, Math.PI * 2); ctx.stroke();
+            ctx.fillStyle = P.coral; ctx.font = 'bold 13px sans-serif'; ctx.textAlign = 'left';
+            ctx.fillText('根 ×2', cx + 18, cy - 16);
+        }
+        const im = v => (Math.abs(Math.abs(v) - 1) < 0.05 ? (v < 0 ? '−' : '') + 'i' : fmt1(v) + 'i');
         const xs = fmt1(x);
         let msg;
         if (Math.abs(x) < 0.05) msg = 'x は 0 です。二つの根は 0 で一つに重なっています（二重根）。二つの根が重なるのは、ここだけです。';
         else if (x > 0) msg = 'x は ' + xs + ' です。2 乗して x になる二つの根は、' + fmt1(s) + ' と ' + fmt1(-s) + ' で、実軸の上にあります。';
-        else msg = 'x は ' + xs + ' です。二つの根は ' + fmt1(s) + 'i と ' + fmt1(-s) + 'i で、虚軸の上にあります。実軸の向きの値は 0 です。';
+        else msg = 'x は ' + xs + ' です。二つの根は ' + im(s) + ' と ' + im(-s) + ' で、虚軸の上にあります。実軸の向きの値は 0 です。';
         st.innerHTML = msg.replace(/(二重根|実軸の上|虚軸の上)/, '<b>$1</b>');
     }
     view.canvas.setAttribute('aria-label', 'x（金の四角）が実軸の上を 4 から −4 へ動く。2 乗して x になる二つの根（赤の点）は、x が正なら実軸の上、0 で一つに重なり、負なら虚軸の上に分かれる。');
@@ -1143,10 +1151,12 @@ function mountRoot720(host) {
     const N = 4;
     let deg = 0, around = true;   // around＝0 を囲む輪
     const play = autoPlay(host, row, { period: 12000, onFrame: p => { deg = Math.round(keyframes(p, [[0, 0], [0.04, 0], [0.4, 360], [0.5, 360], [0.86, 720], [1, 720]])); input.value = deg; draw(); } });
-    const input = slider(row, { label: 'x を回した角度（度）', min: 0, max: 720, value: deg, onInput: v => { play.stop(); deg = v; draw(); } });
+    const input = slider(row, { label: 'x を 0 のまわりに回した角度（度）', min: 0, max: 720, value: deg, onInput: v => { play.stop(); deg = v; draw(); } });
+    const sliderLabel = input.previousSibling;
     const mode = button(row, '0 を囲まない輪にする', () => {
         around = !around;
         mode.textContent = around ? '0 を囲まない輪にする' : '0 を囲む輪にする';
+        sliderLabel.textContent = around ? 'x を 0 のまわりに回した角度（度）' : 'x が輪の上を進んだ角度（度）';
         draw();
     });
     // x と、2 から出発して追いかけた根
@@ -1180,19 +1190,18 @@ function mountRoot720(host) {
         ctx.fillStyle = P.gold; ctx.fillRect(X(x) - 6, Y(x) - 6, 12, 12);
         ctx.font = '13px sans-serif'; ctx.textAlign = 'left'; ctx.fillText('x', X(x) + 9, Y(x) - 8);
         ctx.fillStyle = P.ink; ctx.beginPath(); ctx.arc(cx, cy, 3, 0, Math.PI * 2); ctx.fill();
-        const start = around ? '2' : fmt1(Math.sqrt(1.5));
-        let msg = 'x（金の四角）を ' + deg + ' 度回しました。';
+        let msg = around ? 'x（金の四角）を、4 から出発して 0 のまわりに ' + deg + ' 度回しました。' : 'x（金の四角）は 1.5 から出発し、0 を囲まない輪（中心 3・半径 1.5）の上を ' + deg + ' 度進みました。';
         if (around) {
             msg += '追いかけた根（赤の点）は、その半分の ' + (deg / 2) + ' 度だけ回っています。';
             if (deg === 360) msg += '一周したところで、根は 2 でなく <b>−2</b>、もう一方の根になっています。';
             else if (deg === 720) msg += '二周（<b>720 度</b>）で、ようやく 2 に戻りました。';
             else if (deg > 0 && deg < 720) msg += deg < 360 ? '一周すると、どこに着くでしょう。' : 'もう一周すると、2 に戻ります。';
         } else {
-            msg += '輪が 0 を囲んでいないので、根は ' + start + ' のまわりを小さく行き来し、' + (deg >= 360 ? '<b>一周で元の根に戻ります</b>。' : '一周すると元の根に戻ります。');
+            msg += '追いかけた根（赤の点）は約 1.2 から出て、小さな輪を描きます。' + (deg >= 360 ? '輪の内側に 0 が無いので、<b>一周で元の根に戻ります</b>。' : '輪の内側に 0 が無いので、一周すると元の根に戻ります。');
         }
         st.innerHTML = msg;
     }
-    view.canvas.setAttribute('aria-label', 'x（金の四角）を 0 のまわりに回すと、2 乗して x になる根（赤の点）は半分の角度だけ回る。一周で根はもう一方の根になり、二周（720 度）で戻る。0 を囲まない輪では一周で戻る。');
+    view.canvas.setAttribute('aria-label', 'x（金の四角）を 4 から出発させて 0 のまわりに回すと、2 乗して x になる根（赤の点）は 2 から出発して半分の角度だけ回る。一周で根はもう一方の根 −2 になり、二周（720 度）で 2 に戻る。0 を囲まない輪（中心 3・半径 1.5）では、根は約 1.2 から出て小さな輪を描き、一周で戻る。');
     view.onResize = draw;
     draw();
 }
