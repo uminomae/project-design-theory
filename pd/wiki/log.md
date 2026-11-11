@@ -722,3 +722,13 @@ compile 実行の履歴。append-only。
 - scope: 横断ページ 1
 - sources: pd `knowledge/evidence/awareness-model/hatfield-1993-emotional-contagion.md`（#133 で足された「照合し直し（2026-11-11）」の節）
 - pages: cross-refs/concept-entity-map.md — このノートを引くのは「愛着理論 ↔ 情動伝染」の行だけ。行の記述は今の正本のままで正しい。行の元の §6 に照合し直しの印が付き、優先度の主張に付け足しが要ると出ていることを添えた
+
+## [2026-11-11] compile | Love 駆動開発・欠損駆動思考と意識とはの概観（読み物の信頼の章、ks・as のトップ、as の照合し直しの注）
+- scope: 概念ページ 1・横断ページ 2
+- sources: pd `knowledge/research/love-driven-dev/READER-love-driven-dev.md`（理想化・安心と依存・感情の中の信頼の章を書き、期待の章を信頼の一面として書き直した）、ks `index.html`（読み物「違和感は、どこで立ち、どこで気づかれるのか」を足した）、as `index.html`（記録 3 本と神経現象学の断りを足した）・`knowledge/survival-trust-axis-starting-memo.md`・`knowledge/concepts`（照合し直しの注）
+- pages: `concepts/Love 駆動開発` — 「まだ分からないこと」の、信頼の章が工事中という段を、今の章の中身（信頼を一面ずつ並べる・pjdhiro の二つの見方・クライン・ウィニコット・マズロー・プルチックほか）に直した。`cross-refs/kesson-space-overview` — 「まだ分からないこと」「調べてきたこと」の行に、違和感の読み物を足した。`cross-refs/awareness-space-overview` — 記録を十五本にし、神経現象学の断り、起点メモの作業仮説と CN-006 の軸に付いた注を足した
+
+## [2026-11-11] check | 抱持・プロジェクトデザイン
+- scope: 概念ページ 2
+- sources: ks `index.html`（読み物へのリンクの段だけ）、pd `READER-love-driven-dev.md`（信頼の章と戦略家の行）
+- pages: `concepts/抱持` と `プロジェクトデザイン` は、どちらも直った段を引いていない。中身は直さない。compiled は今日のままなので、出典の commit がページより後の同じ日のあいだは、stale-check に出続ける
