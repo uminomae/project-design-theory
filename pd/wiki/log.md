@@ -697,3 +697,8 @@ compile 実行の履歴。append-only。
 - scope: 概念ページ 1・トップ 1
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章 6 に新田の期待〔当て〕と信頼の一段と畳み一つ、章 10 に畳み一つ）
 - pages: `concepts/Love 駆動開発`・`プロジェクトデザイン` は、どちらもこの二章の中身を引いていない。中身は直さず、compiled は今日のまま
+
+## [2026-11-11] update | Love駆動開発の第四部の章「信頼と、似た感じを、人は分けられるのか」に本文が入ったのに合わせて直した
+- scope: 概念ページ 1・トップ 1
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章 5 に本文を入れた。クック＝グロイター 2013・バレットら 2001・pjdhiro の感情メタ認知の図）
+- pages: `concepts/Love 駆動開発` の工事中の問いの並びから、この章を外し、章の中身を二文で足した。`プロジェクトデザイン` は第四部の章を引いていないので直さず、compiled は今日のまま
