@@ -30,7 +30,7 @@ as の公開ページは、神経現象学を「調べ始めたところ」と�
 2. 論文の名前と書誌が出てくるのは `band-signal-source-reading.md`（2026-11-03・#16）だけで、照合は Crossref の書誌と要旨まで（要旨照合済）。記憶から挙げた候補であること、頁を取れていないこと、食い違う知見を正直に書いている。この形は使える。
 3. 神経現象学の芯の一人称の方法（体験の記述と神経の測定を互いの制約に使う、体験を聞き出す面接、内観の信頼性の議論）の文献が、as に一つも無い。ks のレーン 2 の報告（`ks/docs/issues/survey-216/lane2-neuro.md`・2026-11-02）が候補を挙げ、#36 に渡してある。
 4. 心理学の読み（`attachment-safe-base-reading.md`・`trust-and-intersubjectivity-reading.md`）も、対象は as の概念ノートと旧資料。Bowlby などは名前だけ。
-5. as から開ける学術版の報告（pjdhiro の repo `assets/awareness/guides/ja/md/awareness-academic.md`・2026-04-09・「意識と間主観性」）は、核心仮説を支える研究を集める向きで組まれている。書誌の誤り（Cole 2007：209 遺伝子・N=14 の論文は Genome Biology 2007 の 10.1186/gb-2007-8-9-r189 で、報告の題と誌は別の論文が混ざっている。Crossref で確かめた）、書誌の取れない文献（van Heijst ら 2025）、確かめようのない反証の条件、別の問いを調べた cs の 30 分野を「反証なし」の根拠にする所がある。
+5. as から開ける学術版の報告（当時は pjdhiro の repo の `assets/awareness/guides/ja/md/awareness-academic.md`。2026-11-11 に `as/archive/guides/` にしまった・2026-04-09・「意識と間主観性」）は、核心仮説を支える研究を集める向きで組まれている。書誌の誤り（Cole 2007：209 遺伝子・N=14 の論文は Genome Biology 2007 の 10.1186/gb-2007-8-9-r189 で、報告の題と誌は別の論文が混ざっている。Crossref で確かめた）、書誌の取れない文献（van Heijst ら 2025）、確かめようのない反証の条件、別の問いを調べた cs の 30 分野を「反証なし」の根拠にする所がある。
 
 ### 中心の問い
 
@@ -81,7 +81,7 @@ as の公開ページ（`as/index.html`）にある pjdhiro の言葉。言い�
 
 順は A01 から。A01 は、ほかの領域を体験と並べるときの方法になる。次に #36 の残りの A02、体験 1・2 に近い A03、そのあと A04〜A07。順は、前の領域で分かったことに合わせて変えてよい。
 
-学術版の報告（pjdhiro の repo の三本：`awareness-academic.md`・`awareness-general.md`・`awareness-designer.md`）の主張は、領域ごとに割り振って照合する（§1 は A04、§2 は A06、§3 は A07 など）。報告をどうするか（直すか、「これまでの記録」に残すか）は、照合が済んでから決める（「判断が要ること」2）。
+学術版の報告（当時は pjdhiro の repo の三本：`awareness-academic.md`・`awareness-general.md`・`awareness-designer.md`）の主張は、A01〜A10 で領域ごとに割り振って照合した（§1 は A04、§2 は A06、§3 は A07 など）。pjdhiro の repo はもう使わないので、学術版は直さず、三本は `as/archive/guides/` にしまった（pjdhiro 2026-11-11・「判断が要ること」2）。これからの領域は学術版と照合しない。
 
 ## 調べ方（一つの領域）
 

@@ -70,6 +70,8 @@ GitHubからGitHub Pagesを通じて、2つのサイトが自動でデプロイ�
 
 ### ブログ + PDF — pjdhiro
 
+（2026-11-12 の注：この repo は pjdhiro の repo を使わなくなった〔#134〕。下は、そのときの構成の記録として残す。）
+
 理論を言語で伝えるサイト。
 
 - URL: https://uminomae.github.io/pjdhiro/

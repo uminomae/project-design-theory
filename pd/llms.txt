@@ -8,7 +8,6 @@ This is the hub site of pjdhiro presenting **Project Design Theory (プロジェ
 
 - **Primary Language**: Japanese (日本語), with English summaries
 - **Site URL**: https://uminomae.github.io/project-design-theory/
-- **Overview page (総論)**: https://uminomae.github.io/pjdhiro/project-design/
 - **Topics**: Designing project-management methods, Project Design Theory, Love-Driven Development, 事業構想 (Business Planning), PMBOK Extension, Emotional Processing, Creativity Structure, Intersubjectivity, Negative Capability
 
 ## Who This Is For
@@ -23,7 +22,7 @@ project managers, business owners, team leads, and researchers of project-manage
 - **How does it relate to PMBOK?** — It extends rather than replaces it. Environmental adaptation (material conditions), covered in detail by PMBOK 7th edition, is taken as a premise. On top of that, Being (what is happening) is added to Doing (what we do); emotions become a design concern rather than one element of stakeholder management; communication is designed as intersubjective experience, not only information transfer; creativity is structured with the Five-Stage Model.
 - **What gets added to the design scope?** — Project work is split into environmental adaptation (material) and communication (non-material); communication is split into information processing and emotional processing. Emotional processing — emotional contagion, emotional metacognition, personal boundaries, acceptance, value — is the main focus. Kesson-Driven Thinking (starting from noticing what is missing) is used as a thinking method.
 - **Where does it apply?** — Mainly for-profit and non-profit business, but the framework applies to any purposeful activity that repeats envisioning, decision-making, execution, and adjustment (research, life, etc.).
-- **Where to start?** — The overview page (scope, domains, terms): https://uminomae.github.io/pjdhiro/project-design/ . Concrete explorations: team size (3 and 7) and emotions and relationships as flows (readers below).
+- **Where to start?** — Concrete explorations: team size (3 and 7) and emotions and relationships as flows (readers below).
 - **Status** — Exploratory and unfinished; the inquiry is published in progress, including retracted readings.
 
 ## Core Concepts
@@ -64,8 +63,8 @@ Public explainer pages, written to be uniquely readable by LLMs without external
 - URL: https://uminomae.github.io/project-design-theory/reader/three-and-seven.html
 - One-line: From the felt experience "teams work best at 3, cap at 7" and a two-axis view of consciousness, the page asks whether "multiplicative management" could literally be rotation multiplication — and walks the ladder of division algebras (ℝ→ℂ→ℍ→𝕆, Hurwitz's theorem) against team-size research, keeping theorem / strong reading / weak reading strictly separated.
 - Status: exploratory hypothesis with explicit falsification conditions; failed strong readings are published, not hidden.
-- Paper (PDF, ja, non-peer-reviewed, CC BY 4.0): https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/PAPER-division-algebra-ja.pdf — academic-format version of the same findings, with references (reading-depth annotated) and 20 re-runnable verification scripts.
-- Paper (PDF, en translation): https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/en/pdf/PAPER-division-algebra-en.pdf
+- Paper (Markdown source, ja, non-peer-reviewed, CC BY 4.0): https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/two-axis-closure/PAPER-division-algebra-ja.md — academic-format version of the same findings, with references (reading-depth annotated) and 20 re-runnable verification scripts.
+- Paper (Markdown source, en translation): https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/two-axis-closure/PAPER-division-algebra-en.md
 
 ### Love駆動開発と呼びたいもの β
 - URL: https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html
@@ -82,7 +81,6 @@ Public explainer pages, written to be uniquely readable by LLMs without external
 
 | Project | URL | Focus |
 |---------|-----|-------|
-| pjdhiro | https://uminomae.github.io/pjdhiro/ | Parent site — all projects hub |
 | 創造とは / What Is Creation | https://uminomae.github.io/project-design-theory/cs/ | What structure and process does something follow when it comes into being? An exploration that sets theories from 30 fields side by side and writes them in five stages (Field → Wave → Edge → Vortex → Bundle) |
 | 意識とは / What Is Consciousness | https://uminomae.github.io/project-design-theory/as/ | What do people cut the world with? An exploration through two signals: whether we can survive, and whether we can stay connected (trust) |
 | 欠損駆動思考 / Kesson-Driven Thinking | https://uminomae.github.io/project-design-theory/ks/ | What do people sense where symbols read zero? An exploration of a stance of mind driven by a sense of lack or unease |
@@ -90,5 +88,4 @@ Public explainer pages, written to be uniquely readable by LLMs without external
 ## Author
 
 - Name: pjdhiro
-- Site: https://uminomae.github.io/pjdhiro/
 - Focus: Project Design, Love-Driven Development, Human-AI Collaboration

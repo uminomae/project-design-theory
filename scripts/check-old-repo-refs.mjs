@@ -11,7 +11,7 @@
 //      （原典の PDF の cs/knowledge/raw/ などは git に入れず手元だけに置くので、リンクすると切れる）
 //   3. 公開ファイルのコードが、今までの repo の名前を repo として決め打ちしていないか（REPO="creation-space" など）
 //   4. スクリプトが、今までの兄弟の並び（../pjdhiro・~/dev/creation-space など）を前提にしていないか
-//      pjdhiro の場所は scripts/pjdhiro-dir.sh・scripts/pjdhiro-dir.mjs で上へ探す
+//      pjdhiro の repo は、2026-11-12 から使わない（#134）。場所を探していた scripts/pjdhiro-dir.* も消した
 //
 // 記録（knowledge・docs・wiki・evidence ほか）は経緯として残すので見ない。ただし、読み物の正本
 // （READER-*.md）と、各ディレクトリの README.md は、読者が辿る入口なので見る。
@@ -81,10 +81,7 @@ const checks = [
 ];
 
 // 残すと決めたもの（理由つき）。行の末尾に「old-repo-refs: ok」と書いた行も見ない。
-const KEEP = new Map([
-  ['scripts/pjdhiro-dir.sh', 'pjdhiro の場所を決める所。見つからないときに repo の隣を返す'],
-  ['scripts/pjdhiro-dir.mjs', 'pjdhiro の場所を決める所。見つからないときに repo の隣を返す'],
-]);
+const KEEP = new Map([]);
 
 let failed = false;
 for (const check of checks) {

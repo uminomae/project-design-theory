@@ -8,7 +8,6 @@ language: en
 created: 2026-07-16
 published: 2026-07-16
 translation-of: PAPER-division-algebra-ja.md
-pdf: https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/en/pdf/PAPER-division-algebra-en.pdf
 ---
 
 <!--
@@ -26,7 +25,7 @@ pdf: https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/en/pdf/P
 **License**: CC BY 4.0 \
 **Canonical source & verification code**: https://github.com/uminomae/project-design-theory (`pd/knowledge/research/two-axis-closure/`) \
 **General-audience version (Japanese)**: https://uminomae.github.io/project-design-theory/reader/three-and-seven.html \
-**Japanese version of this paper (canonical, PDF)**: https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/ja/pdf/PAPER-division-algebra-ja.pdf
+**Japanese version of this paper (canonical)**: https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/two-axis-closure/PAPER-division-algebra-ja.md
 
 > **Opening declaration (the character of this paper)**
 > This paper has not undergone peer review. The body text was written by an AI (Claude, Fable 5), while the posing of the questions and the adjudication of each "reading" were carried out by a human (pjdhiro).

@@ -42,6 +42,8 @@ export function createContentLoader({
     }
 
     function updateKnowledgePdfLink(entry, lang) {
+        // PDF が無いときは、来ない PDF を約束する「PDF準備中」を出さずに隠す（2026-11-12・#134）
+        knowledgePdfLink.hidden = !entry.pdfUrl;
         if (entry.pdfUrl) {
             knowledgePdfLink.href = entry.pdfUrl.replace('{lang}', lang);
             knowledgePdfLink.setAttribute('aria-disabled', 'false');

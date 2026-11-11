@@ -11,20 +11,17 @@ export const SHADER_PATHS = [
 export const KNOWLEDGE_ENTRIES = {
   "design-thinking": {
     mdPath: "content/knowledge/design-thinking-{lang}.md",
-    pdfUrl:
-      "https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/{lang}/pdf/design-thinking.pdf",
+    pdfUrl: null,
     titleKey: "knowledge.designThinking.title",
   },
   trust: {
     mdPath: "content/knowledge/trust-{lang}.md",
-    pdfUrl:
-      "https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/{lang}/pdf/trust.pdf",
+    pdfUrl: null,
     titleKey: "knowledge.trust.title",
   },
   value: {
     mdPath: "content/knowledge/value-{lang}.md",
-    pdfUrl:
-      "https://uminomae.github.io/pjdhiro/assets/project-design/knowledge/{lang}/pdf/value.pdf",
+    pdfUrl: null,
     titleKey: "knowledge.value.title",
   },
 };
@@ -39,7 +36,6 @@ const SITE_MENU_LINKS = [
     href: "/project-design-theory/as/",
     labelKey: "menu.awareness",
   },
-  { siteId: "blog", href: "/pjdhiro/", labelKey: "menu.blog" },
 ];
 
 const KNOWLEDGE_MENU_KEYS = ["design-thinking", "trust", "value"];
@@ -122,7 +118,6 @@ export const TRANSLATIONS = {
     "menu.kesson": "欠損駆動思考",
     "menu.creation": "創造とは",
     "menu.awareness": "意識とは",
-    "menu.blog": "BLOG",
     "menu.researchNotes": "調査ノート",
     "menu.tools": "ツール",
     "menu.toolScreener": "ものの見方の広さスクリーナー",
@@ -171,9 +166,6 @@ export const TRANSLATIONS = {
     "doing.communication.body":
       "情報処理と感情処理。心の反応を通じて感じ取る感情の側面を中心に扱います。",
     "pill.kesson": "欠損駆動思考",
-    "pill.beauty": "美駆動思考",
-    "pill.emotionalProcessing": "感情処理（総論）",
-    "pill.meditation": "瞑想",
     "section.being.label": "Being",
     "section.being.title": "起きていること",
     "section.being.body":
@@ -311,7 +303,6 @@ export const TRANSLATIONS = {
     "menu.kesson": "KESSON-DRIVEN",
     "menu.creation": "CREATION",
     "menu.awareness": "CONSCIOUSNESS",
-    "menu.blog": "BLOG",
     "menu.researchNotes": "Research Notes",
     "menu.tools": "Tools",
     "menu.toolScreener": "Breadth-of-View Screener",
@@ -362,9 +353,6 @@ export const TRANSLATIONS = {
     "doing.communication.body":
       "Information processing and emotional processing. We focus on the emotional aspects perceived through our inner responses.",
     "pill.kesson": "Kesson-Driven Thinking",
-    "pill.beauty": "Beauty-Driven Thinking",
-    "pill.emotionalProcessing": "Emotional Processing",
-    "pill.meditation": "Meditation",
     "section.being.label": "Being",
     "section.being.title": "Being",
     "section.being.body":

@@ -2383,8 +2383,8 @@ pjdhiro が考えているのは、脳の神経に伝わる神経伝達物質と
 
 このページが引いている知見の多くは、四つの探究が調べてきたものです。物理学との構造の類似は補足資料に、pjdhiro が影響を受けた心理学は別のページにまとめています。
 
-- [創造の5段階——先行研究との構造比較](https://uminomae.github.io/pjdhiro/assets/creation/guides/ja/md/creation-academic/)：「創造とは」が、[30 の学術領域](https://uminomae.github.io/project-design-theory/cs/?modal=domains)の調査から、創造の5段階を先行研究と比べたもの。
-- [意識と間主観性 — 神経現象学・心理学・哲学からの状況証拠](https://uminomae.github.io/pjdhiro/assets/awareness/guides/ja/md/awareness-academic/)：「意識とは」が、生存と信頼の信号の足場にしている知見。
+- [創造とは](https://uminomae.github.io/project-design-theory/cs/)：[30 の学術領域](https://uminomae.github.io/project-design-theory/cs/?modal=domains)の調査から、創造の5段階を先行研究と比べている探究。
+- [意識とは](https://uminomae.github.io/project-design-theory/as/)：生存と信頼の信号の足場にしている知見を、神経現象学と心理学の原典で確かめている探究。
 - [欠損駆動思考](https://uminomae.github.io/project-design-theory/ks/)：欠損と抱持の調査。
 - [影響を受けた心理学](influences-psychology.html)：精神分析と発達心理から、pjdhiro が影響を受けた論。
 - [補足資料 — 物理との、構造の類似](#ldd-physics)：このページが章ごとに借りた物理の形。

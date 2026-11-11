@@ -11,8 +11,9 @@
 // ?lang=en を付けて開き直す・幅を変えて開き直すことで見る。コンソールのエラーは別に見る。
 
 const PAGES = {
-  ks: { title: { ja: '欠損駆動思考', en: 'Kesson-Driven Thinking' } },
-  as: { title: { ja: '意識とは', en: 'What Is Consciousness' } },
+  ks: { title: { ja: '欠損駆動思考', en: 'Kesson-Driven Thinking' }, fold: true },
+  // as の記録の畳みは、画像カードを外したので無い（2026-11-12・#134）
+  as: { title: { ja: '意識とは', en: 'What Is Consciousness' }, fold: false },
 };
 const JA_CHARS = /[぀-ヿ㐀-鿿]/;
 
@@ -62,8 +63,10 @@ export async function run({ checkLinks = true } = {}) {
   const ids = [...document.querySelectorAll('[id]')].map((el) => el.id);
   const dupes = ids.filter((id, i) => ids.indexOf(id) !== i);
   check('id が重ならない', dupes.length === 0, [...new Set(dupes)].join(' '));
-  const fold = document.getElementById('records-fold');
-  check('記録の畳みがある', fold?.tagName === 'DETAILS');
+  if (PAGES[key].fold) {
+    const fold = document.getElementById('records-fold');
+    check('記録の畳みがある', fold?.tagName === 'DETAILS');
+  }
 
   if (lang === 'en') {
     const areas = ['#kesson-topbar', '#overlay', '.room-narration', '.records-fold-summary', `[data-reading-lang="en"]`];
