@@ -4,7 +4,7 @@
 //   node scripts/check-source-links.mjs            # 読み物ごとの数を出す（知らせるだけ）
 //   node scripts/check-source-links.mjs --list     # リンクの無い出典を一件ずつ出す
 //   node scripts/check-source-links.mjs --strict love-driven-dev,...   # 名指しした読み物に一件でもあれば 1 で終わる
-//   node scripts/check-source-links.mjs --strict all --except psychological-safety   # 名指しした読み物は知らせるだけ
+//   node scripts/check-source-links.mjs --strict all --except <読み物>   # 名指しした読み物は知らせるだけ
 //
 // 公開ページの出典は、一件ごとに原典へのリンクを張る（docs/rules/sources.md §10・pjdhiro 2026-11-11
 // 「LLM のハルシネーションなどをレビューするために原典チェックは必須」「原典への参照リンクはマナーとして義務に」）。

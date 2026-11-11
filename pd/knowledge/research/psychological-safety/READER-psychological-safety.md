@@ -130,11 +130,11 @@ pjdhiro の見方に、研究の側から答えます。段階ごとに人が引
 
 技術報告書は、四段階の土台として、マズローの所属の欲求をはじめ、いくつもの先行の考えを挙げています。段階が順に進むという主張の根拠として挙げられているのは、提唱者自身の 2020 年の本です。報告書自身は、社会的な単位が四つの段階を順に進む型が一貫して見られる、と書いています（p.12）。
 
-出典：LeaderFactor (2021). *The 4 Stages of Psychological Safety Team Survey Technical Report*（本文で確認。pp.4–5, 7–8, 12, 17）
+出典：[LeaderFactor (2021)](https://www.reginfo.gov/public/do/DownloadDocument?objectID=125627101). *The 4 Stages of Psychological Safety Team Survey Technical Report*（米国政府の規制の情報サイト reginfo.gov に置かれた写しの本文で確認。pp.4–5, 7–8, 12, 17）
 
 </details>
 
-出典：LeaderFactor (2021) 技術報告書（本文で確認。p.4・p.17）／[Gerlach & Gockel (2022)](https://doi.org/10.3389/fpsyg.2022.765793) *Frontiers in Psychology* 13:765793（本文で確認。要旨と、方法・結果の節）／Cook-Greuter, S. R. (2013). [*Nine Levels of Increasing Embrace in Ego Development*](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)（prepublication version・本文で確認）pp.9–10, 27, 34, 39–40, 49–50, 53, 58, 71–72, 84–85
+出典：[LeaderFactor (2021) 技術報告書](https://www.reginfo.gov/public/do/DownloadDocument?objectID=125627101)（本文で確認。p.4・p.17）／[Gerlach & Gockel (2022)](https://doi.org/10.3389/fpsyg.2022.765793) *Frontiers in Psychology* 13:765793（本文で確認。要旨と、方法・結果の節）／Cook-Greuter, S. R. (2013). [*Nine Levels of Increasing Embrace in Ego Development*](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)（prepublication version・本文で確認）pp.9–10, 27, 34, 39–40, 49–50, 53, 58, 71–72, 84–85
 
 ## 心理防衛機制で読む
 
