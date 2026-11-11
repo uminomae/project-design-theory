@@ -61,7 +61,7 @@ tags: [meta]
 正本を直す（knowledge・読み物・出典ノート）
   │  hook：これを出典にする wiki のページを知らせる
   ▼
-同じ作業で、知らされたページを作り直す（compiled を今日に）
+同じ作業で、知らされたページを作り直す（compiled を今日に。今日のままなら checked に時刻）
   │  log.md に一行
   ▼
 正本と一緒に commit → develop → 3001 で見る → main → Pages

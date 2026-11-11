@@ -732,3 +732,8 @@ compile 実行の履歴。append-only。
 - scope: 概念ページ 2
 - sources: ks `index.html`（読み物へのリンクの段だけ）、pd `READER-love-driven-dev.md`（信頼の章と戦略家の行）
 - pages: `concepts/抱持` と `プロジェクトデザイン` は、どちらも直った段を引いていない。中身は直さない。compiled は今日のままなので、出典の commit がページより後の同じ日のあいだは、stale-check に出続ける
+
+## [2026-11-11] check | 抱持・プロジェクトデザイン（checked を入れる）
+- scope: 概念ページ 2
+- sources: 上の check と同じ
+- pages: `concepts/抱持` と `プロジェクトデザイン` に `checked` の時刻を入れた。stale-check（`pd/scripts/wiki-sources.mjs`）は、compiled と同じ日に出典が直ったとき、ページの最後の commit と `checked` の遅い方と比べるようにした。中身を変えずに確かめたページが一覧に残り続けないため

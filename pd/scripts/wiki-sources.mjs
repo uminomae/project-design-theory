@@ -121,7 +121,8 @@ export function datedPaths(src) {
   return out;
 }
 
-/** wiki のページを読み、{ file, rel, title, compiled, sources } の配列にする（health/ は除く）。 */
+/** wiki のページを読み、{ file, rel, title, compiled, checked, sources } の配列にする（health/ は除く）。
+ * checked は、中身を変えずに出典と照らした時刻（ISO 8601。例 "2026-11-11T23:40+09:00"。任意）。 */
 export function readWikiPages() {
   return walk(WIKI)
     .filter((f) => !f.includes("/health/"))
@@ -132,6 +133,7 @@ export function readWikiPages() {
         rel: relative(WIKI, f),
         title: field(raw, "title") || basename(f, ".md"),
         compiled: field(raw, "compiled"),
+        checked: field(raw, "checked"),
         sources: parseSources(raw),
       };
     });
@@ -204,6 +206,24 @@ function timeOf(path, dates) {
   return best;
 }
 
+// ページを出典と照らした日と時刻（秒）。compiled（日付）と checked（中身を変えずに照らした時刻）の遅い方。
+// compiled は日付だけなので、同じ日に出典が直って中身の直しが要らないと確かめたときは、checked に時刻を書く（2026-11-11）
+function baseOf(p) {
+  let day = p.compiled || "";
+  let time = 0;
+  const c = p.checked ? Date.parse(p.checked) : NaN;
+  if (!Number.isNaN(c)) {
+    time = Math.floor(c / 1000);
+    const cd = localDay(c);
+    if (cd > day) day = cd;
+  }
+  return { day, time };
+}
+// 時刻（ミリ秒）を、出典の日付と同じ JST の YYYY-MM-DD にする
+function localDay(ms) {
+  return new Date(ms + 9 * 3600 * 1000).toISOString().slice(0, 10);
+}
+
 /**
  * 古いページ：出典のどれかが、ページの compiled 日より後に変わったもの。
  * 返す値：[{ rel, title, compiled, newer: [{ path, date }] }]（compiled の古い順）
@@ -214,15 +234,16 @@ export function stalePages(pages = readWikiPages(), dates = lastChangeDates()) {
     if (!p.sources.length) continue;
     const newer = [];
     const seen = new Set();
+    const base = baseOf(p);
     for (const s of p.sources) {
       for (const path of datedPaths(s)) {
         if (seen.has(path)) continue;
         seen.add(path);
         const d = dateOf(path, dates);
-        if (d && (!p.compiled || d > p.compiled)) newer.push({ path, date: d });
-        else if (d && d === p.compiled) {
-          // 同じ日：ページの最後の commit より後に出典が変わっていれば古い
-          const pageTime = timeOf(`pd/wiki/${p.rel}`, dates);
+        if (d && (!base.day || d > base.day)) newer.push({ path, date: d });
+        else if (d && d === base.day) {
+          // 同じ日：ページの最後の commit（と checked の時刻）より後に出典が変わっていれば古い
+          const pageTime = Math.max(timeOf(`pd/wiki/${p.rel}`, dates), base.time);
           if (pageTime && timeOf(path, dates) > pageTime) newer.push({ path, date: `${d}（ページを作り直したあと）` });
         }
       }
