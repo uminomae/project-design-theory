@@ -842,3 +842,8 @@ compile 実行の履歴。append-only。
 - scope: 出典ページ 1（`sources/Dunbar_1992_social-brain-hypothesis`）
 - sources: Dunbar 1992 は出版社の版が有料で、find-source で OA の写しは見つからず、出版社の頁は確認の画面を返した。照らせたのは Lindenfors ら 2021 の全文（PMC8103230）だけ
 - pages: Lindenfors ら 2021 の数（ベイズ法 69.2〜108.6、GLS 法 16.4〜42.0、95% の幅 3.8〜520.0 と 2.1〜336.3、一つの数を決めるのは無意味）は合った。書誌に PMC のリンクを足した。頭に「このページの出所」を置き、Dunbar の原典の側は全部、照らしていない所とした（`docs/rules/sources.md` §10-6）。本文の数（38 属・76%・43% など）は確かめられないまま残る
+
+## [2026-11-12] check | Panksepp-Barrett の論争のページの Barrett の側を原典と照らす
+- scope: 出典ページ 1（`sources/Panksepp-Barrett_1998_panic-grief-constructed-emotion`。Barrett の側だけ）
+- sources: Barrett 2006 の全文（著者の研究室のサイトにある出版社の版・意識とはの台帳 A04-S23）、Barrett 2017 の全文（PMC5390700・A04-S25）
+- pages: 自然種の見方への批判とコアアフェクト（2006）、概念によるカテゴリ化での情動の構成（2017）は合った。原典に無かった「身体予算」「情動はアロスタシスの副産物」を原典の文に、「Panksepp の7システムは研究者が投影した概念カテゴリ」を、2006 年の論文が Panksepp の見方を自然種の見方の例に引いた、に直した（2017 年の論文は Panksepp に触れない）。二つの論文の書誌に DOI と全文へのリンクを足した。頭に「このページの出所」を置き、Panksepp の側は照らしていない所とした

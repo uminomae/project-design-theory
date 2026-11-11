@@ -17,6 +17,10 @@ review_state: 未レビュー
 >
 > 「悲しみ」や「恐怖」は脳に最初から組み込まれている回路なのか、それとも経験から作られるものなのか——これは感情の研究者たちが長年争っているテーマです。パンクセップは動物実験で「仲間と離れたときに反応する脳回路」を特定し、バレットは「感情は脳が予測から作り上げるものだ」と反論しました。どちらが正しいかはまだ決着していませんが、両方の立場とも「人とのつながりが生存にとって重要」という点では一致しています。
 
+## このページの出所
+
+Barrett の側のうち、研究の背景の Barrett の文、Barrett の手法の二つ、Barrett の構成的情動理論の最初の三つ、時系列の表の 2006 年と 2017 年の Barrett の行は、原典の全文（2006 年の論文は意識とはの台帳 A04-S23 の手元の PDF、2017 年の論文は PMC5390700 の全文 XML・A04-S25）と照らした（2026-11-12）。原典と違っていた所は直した：2017 年の論文に「身体予算」の語と「情動はアロスタシスの副産物」は無く、論文の文に直した。「Panksepp の7システムは研究者が投影した概念カテゴリだとする」は、2006 年と 2017 年の論文には無く（2017 年の論文は Panksepp に触れない）、2006 年の論文が Panksepp の見方を自然種の見方の例に引いた、と直した。それ以外（やさしい解説、概要、Panksepp の側の全部、Barrett の方法論的批判の行、Barrett ら 2007・2008 と Panksepp 2007・2008・2017 の行、LeDoux 2012、van Heijst ら 2025、Eisenberger ら 2003、限界と論争の段、awareness-model との接続の読み）は、このページを書いた LLM の学習時の知識から書かれたもので、原典とは照らしていない。学習時に何を読んだかは、版も頁も確かめられない。
+
 ## 概要
 
 Jaak Panksepp（1943-2017）は哺乳類の脳に進化的に保存された7つの一次プロセス情動システムを同定し（Panksepp, 1998）、そのうちPANIC/GRIEFシステム（分離苦痛システム）は社会的絆の断裂によって活性化される神経回路であるとした。前帯状皮質→BNST→背内側視床→PAGの経路が分離苦痛発声を生成し、内因性オピオイドによって調節されることを、電気刺激・薬理学的操作・病変研究によって因果的に実証した。一方Lisa Feldman Barrettの「構成的情動理論」（TCE、2006, 2017）はこれを根本的に否定し、情動カテゴリは脳内に固定回路として存在せず、内受容感覚と予測に基づいて動的に構成されるものだと主張した。2006年から2017年にかけて*Perspectives on Psychological Science*誌上で公刊された論争は、2025年時点でも決着しておらず、van Heijst et al. (2025) は両理論が「和解不可能だが補完的（irreconcilable but supplementary）」であると整理している。社会的絆の生存的重要性そのものについては、両理論ともに成立可能であり争点ではないと読める。
@@ -34,9 +38,9 @@ Jaak Panksepp（1943-2017）は哺乳類の脳に進化的に保存された7つ
 
 ### Barrett 主要文献
 
-- Barrett, L.F. (2006). Are Emotions Natural Kinds? *Perspectives on Psychological Science*, 1(1), 28-58.
+- Barrett, L.F. (2006). Are Emotions Natural Kinds? *Perspectives on Psychological Science*, 1(1), 28-58. [doi:10.1111/j.1745-6916.2006.00003.x](https://doi.org/10.1111/j.1745-6916.2006.00003.x)。全文は[著者の研究室のサイトにある出版社の版](https://www.affective-science.org/wp-content/uploads/2024/04/Barrett2006kinds.pdf)
 - Barrett, L.F. et al. (2007). Of Mice and Men: Natural Kinds of Emotions in the Mammalian Brain? *Perspectives on Psychological Science*, 2(3), 297-312.
-- Barrett, L.F. (2017). The theory of constructed emotion. *Social Cognitive and Affective Neuroscience*, 12(1), 1-23.
+- Barrett, L.F. (2017). The theory of constructed emotion: an active inference account of interoception and categorization. *Social Cognitive and Affective Neuroscience*, 12(1), 1-23. [doi:10.1093/scan/nsw154](https://doi.org/10.1093/scan/nsw154)。全文は [PMC5390700](https://pmc.ncbi.nlm.nih.gov/articles/PMC5390700/)
 - Barrett, L.F. et al. (2025). The Theory of Constructed Emotion: More Than a Feeling. *Perspectives on Psychological Science*.
 
 ### 論争整理・関連文献
@@ -75,9 +79,9 @@ Pankseppは、哺乳類の感情の生物学的基盤を皮質下の神経回路
 
 ### Barrettの構成的情動理論（TCE）
 
-- 情動カテゴリは「自然種（natural kind）」ではなく、コアアフェクト（快-不快×覚醒-沈静）に情動概念を適用する「概念的行為」によって構成される
-- 脳の中心的機能は身体予算（エネルギー配分）の予測的調節（アロスタシス）であり、情動はその副産物
-- Pankseppの7システムは研究者が投影した概念カテゴリだとする
+- 情動のカテゴリは、境界が自然に刻まれた「自然種（natural kind）」ではない。2006 年の論文は、そうした見方と合わない証拠を見直し、情動のもとになる感情の基盤の候補としてコアアフェクト（生体の神経生理の状態の、絶え間ない移ろい）を挙げた
+- 2017 年の論文では、脳の中心の仕事はアロスタシス（体の資源の必要を先取りして満たすこと）で、そのための内部モデルが情動の概念で感覚をカテゴリ化したとき、情動の一例が構成される。脳は情動の概念で感覚をカテゴリ化して情動を構成する、というのが概念的行為の理論のもとの形だと書く
+- 2006 年の論文は、Panksepp の基本情動の見方（基本情動は、比較的複雑な行動の可能性を生物に与える神経の実体）を、自然種の見方の例として引いた
 - Barrettの方法論的批判: 動物データからヒトの意識的情動体験への過剰な外挿、逆推論（reverse inference）の問題
 
 ### 公刊された論争の時系列
@@ -110,7 +114,7 @@ LeDoux（「生存回路」再概念化）は、情動研究の焦点を「動�
 
 **Pankseppが正しい場合**: PANIC/GRIEFがハードワイヤードされた社会的生存回路であるなら、社会的分離の苦痛は身体的損傷の痛みと同じ神経回路（PAG, dACC）を使用し、オピオイド系が両方を調節するという神経化学的等価性がある。間主観性の信号は生存シグナルの「一種」として同一システムに統合されている。
 
-**Barrettが正しい場合**: 身体予算調節（アロスタシス）が脳の中心的機能であり、社会的シグナルが身体予算に影響する主要な入力として機能する。カテゴリとしての「PANIC/GRIEF」は構成物かもしれないが、社会的シグナルが身体予算調節に不可欠であるという機能的事実は変わらない。
+**Barrettが正しい場合**: アロスタシス（体の資源の必要を先取りして満たすこと）が脳の中心的機能であり、社会的シグナルがアロスタシスに影響する主要な入力として機能する。カテゴリとしての「PANIC/GRIEF」は構成物かもしれないが、社会的シグナルがアロスタシスに不可欠であるという機能的事実は変わらない。
 
 **LeDoux的折衷案**: 意識的な「悲嘆」体験の有無とは独立に、社会的分離は生存回路を活性化する。間主観性の信号の生存的価値は、意識的体験のレベルではなく、生存回路の機能レベルで基礎づけられる。
 
