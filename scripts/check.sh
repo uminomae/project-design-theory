@@ -56,6 +56,9 @@ run "cs：原典の台帳と記録の突き合わせ（知らせるだけ）" no
 # 意識とはの、領域ごとの照合の記録（as/evidence/evidence-Axx-*.md）と原典の台帳。見るものは docs/as-review/README.md「記録の品質の点検」。
 run "as：照合の記録と台帳" node scripts/check-as-evidence.mjs
 run "道具：原典を探す find-source（書誌の読み取り・分類・突き合わせ）" python3 -I scripts/test_find_source.py
+# 読み物の正本の「出典：」の行で、原典へのリンク（DOI か読んだ写し）が無い出典。一件でもあれば止める（pjdhiro 2026-11-11
+# 「原典への参照リンクはマナーとして義務に」・docs/rules/sources.md §10）。--except の読み物は、公開されていない資料が残っていて知らせるだけ。
+run "pd：読み物の出典に原典へのリンク" node scripts/check-source-links.mjs --strict all --except psychological-safety
 
 # 公開するページ・データ・読み物の正本に、文字化け（U+FFFD）が無いか。scripts/ の中の検査の文字は除く。
 # 今までの project-design の ci.yml の文字化けの検査の考え方を継いだ（docs/TESTING.md）。

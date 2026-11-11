@@ -62,7 +62,7 @@
 
 縮む向きには、害から守られることの側へ寄るものと、集団の信念から個人の水準へ移るものとがあり、一つの向きではないのかもしれません。後のほうは、心の言葉が、理論では集団や関係のこととして書かれていても、現場では人の内側の資質や状態として受け取られがちだ、という[Love駆動開発と呼びたいもの](love-driven-dev.html#ldd-words)の見方の、一つの例と読めます。
 
-出典：[Taylor, Collins & Ashford (2022)](https://doi.org/10.3389/fspor.2022.823488) *Frontiers in Sports and Active Living* 4:823488（本文で確認）／大塚泰正・落合由子 (2025)「心理的安全性と産業保健における意義」『産業医学レビュー』38(1):53–77、山口裕幸 (2020)「組織の『心理的安全性』構築への道筋」『医療の質・安全学会誌』15(4):366–371、山内桂子 (2021)「現場のチームワークを高める心理的安全性」『安全工学』60(1):9–14（いずれも本文で確認）／[Edmondson & Bransby (2023)](https://doi.org/10.1146/annurev-orgpsych-120920-055217) *Annual Review of Organizational Psychology and Organizational Behavior* 10:55–78（本文で確認。水準の内訳 p.59・ばらつき p.69）／[O'Donovan, Van Dun & McAuliffe (2020)](https://doi.org/10.1186/s12874-020-01066-z) *BMC Medical Research Methodology* 20（本文で確認）
+出典：[Taylor, Collins & Ashford (2022)](https://doi.org/10.3389/fspor.2022.823488) *Frontiers in Sports and Active Living* 4:823488（本文で確認）／[大塚泰正・落合由子 (2025)](https://doi.org/10.34354/ohpfrev.38.1_53)「心理的安全性と産業保健における意義」『産業医学レビュー』38(1):53–77、[山口裕幸 (2020)](https://doi.org/10.11397/jsqsh.15.366)「組織の『心理的安全性』構築への道筋」『医療の質・安全学会誌』15(4):366–371、[山内桂子 (2021)](https://doi.org/10.18943/safety.60.1_9)「現場のチームワークを高める心理的安全性」『安全工学』60(1):9–14（いずれも本文で確認）／[Edmondson & Bransby (2023)](https://doi.org/10.1146/annurev-orgpsych-120920-055217) *Annual Review of Organizational Psychology and Organizational Behavior* 10:55–78（本文で確認。水準の内訳 p.59・ばらつき p.69）／[O'Donovan, Van Dun & McAuliffe (2020)](https://doi.org/10.1186/s12874-020-01066-z) *BMC Medical Research Methodology* 20（本文で確認）
 
 ## 効く条件
 
@@ -134,7 +134,7 @@ pjdhiro の見方に、研究の側から答えます。段階ごとに人が引
 
 </details>
 
-出典：LeaderFactor (2021) 技術報告書（本文で確認。p.4・p.17）／[Gerlach & Gockel (2022)](https://doi.org/10.3389/fpsyg.2022.765793) *Frontiers in Psychology* 13:765793（本文で確認。要旨と、方法・結果の節）／Cook-Greuter, S. R. (2013). *Nine Levels of Increasing Embrace in Ego Development*（prepublication version・本文で確認）pp.9–10, 27, 34, 39–40, 49–50, 53, 58, 71–72, 84–85
+出典：LeaderFactor (2021) 技術報告書（本文で確認。p.4・p.17）／[Gerlach & Gockel (2022)](https://doi.org/10.3389/fpsyg.2022.765793) *Frontiers in Psychology* 13:765793（本文で確認。要旨と、方法・結果の節）／Cook-Greuter, S. R. (2013). [*Nine Levels of Increasing Embrace in Ego Development*](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)（prepublication version・本文で確認）pp.9–10, 27, 34, 39–40, 49–50, 53, 58, 71–72, 84–85
 
 ## 心理防衛機制で読む
 
@@ -152,7 +152,7 @@ pjdhiro の見方に、研究の側から答えます。段階ごとに人が引
 
 pjdhiro の見方に、ここまでの出典から答えます。同じ「安心」が、防衛をほどく側にも、防衛を固める側にも現れる、と読めます。見分ける手がかりの一つは、その安心が、課題や現実や異論や恥に向き合うことと一緒にあるか、向き合わずに済む代わりに得られているか、かもしれません。
 
-出典：[Edmondson (1999)](https://doi.org/10.2307/2666999) p.354／[Vaillant (2011)](https://doi.org/10.31887/DCNS.2011.13.2/gvaillant) *Dialogues in Clinical Neuroscience* 13(3):366–370（本文で確認。p.366・p.368）／Freud, A. (1937). *The Ego and the Mechanisms of Defence*（英訳の本文で確認。p.123）
+出典：[Edmondson (1999)](https://doi.org/10.2307/2666999) p.354／[Vaillant (2011)](https://doi.org/10.31887/DCNS.2011.13.2/gvaillant) *Dialogues in Clinical Neuroscience* 13(3):366–370（本文で確認。p.366・p.368）／Freud, A. (1937). [*The Ego and the Mechanisms of Defence*](https://archive.org/details/a-freud-1937-ego)（英訳の本文で確認。p.123）
 
 ## 二軸で読む — 脅威が無いことと、安全の合図があること
 
@@ -196,7 +196,7 @@ pjdhiro の見方に、ここまでの出典から答えます。同じ「安心
 
 </details>
 
-出典：[Porges (2022)](https://doi.org/10.3389/fnint.2022.871227) *Frontiers in Integrative Neuroscience* 16:871227（本文で確認。p.2・pp.8–9）／[Porges (2021)](https://doi.org/10.1016/j.cpnec.2021.100069) *Comprehensive Psychoneuroendocrinology* 7:100069（本文で確認。§5）／[寺井・森田・山岸 (2003)](https://doi.org/10.14966/jssp.KJ00004224827)「信頼と継続的関係における安心」『社会心理学研究』18(3):172–179（本文で確認。定義 p.173・区別 p.177）／[Maslow (1943)](https://doi.org/10.1037/h0054346) *Psychological Review* 50(4):370–396（本文で確認。pp.377, 379, 386, 388–389）／[Edmondson (1999)](https://doi.org/10.2307/2666999) p.354／[Schein (1995)](https://hdl.handle.net/1721.1/2581) pp.5–7／Cook-Greuter (2013) p.9
+出典：[Porges (2022)](https://doi.org/10.3389/fnint.2022.871227) *Frontiers in Integrative Neuroscience* 16:871227（本文で確認。p.2・pp.8–9）／[Porges (2021)](https://doi.org/10.1016/j.cpnec.2021.100069) *Comprehensive Psychoneuroendocrinology* 7:100069（本文で確認。§5）／[寺井・森田・山岸 (2003)](https://doi.org/10.14966/jssp.KJ00004224827)「信頼と継続的関係における安心」『社会心理学研究』18(3):172–179（本文で確認。定義 p.173・区別 p.177）／[Maslow (1943)](https://doi.org/10.1037/h0054346) *Psychological Review* 50(4):370–396（本文で確認。pp.377, 379, 386, 388–389）／[Edmondson (1999)](https://doi.org/10.2307/2666999) p.354／[Schein (1995)](https://hdl.handle.net/1721.1/2581) pp.5–7／[Cook-Greuter (2013)](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf) p.9
 
 ## よくある誤解
 

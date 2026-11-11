@@ -58,7 +58,7 @@ date: 2026-11-10
 
 中心は、それに動かされているものの動き方から書かれてきました。（参考：[寄り道：ほかの中心も似ていないか — ブラックホールと素粒子](gravity-love.html#gl-detour)）
 
-出典：[Rubin & Ford (1970)](https://doi.org/10.1086/150317) *ApJ* 159:379／[Rubin, Ford & Thonnard (1980)](https://doi.org/10.1086/158003) *ApJ* 238:471（銀河の回転曲線）／[Event Horizon Telescope Collaboration (2019)](https://doi.org/10.3847/2041-8213/ab0ec7) *ApJL* 875:L1（M87 の画像）／Wittgenstein (1921) *Tractatus Logico-Philosophicus* 5.633。
+出典：[Rubin & Ford (1970)](https://doi.org/10.1086/150317) *ApJ* 159:379／[Rubin, Ford & Thonnard (1980)](https://doi.org/10.1086/158003) *ApJ* 238:471（銀河の回転曲線）／[Event Horizon Telescope Collaboration (2019)](https://doi.org/10.3847/2041-8213/ab0ec7) *ApJL* 875:L1（M87 の画像）／Wittgenstein (1921) [*Tractatus Logico-Philosophicus*](https://www.gutenberg.org/ebooks/5740) 5.633。
 
 </details>
 
