@@ -55,7 +55,7 @@ status: reviewed
 
 足さなかったもの・外したもの：
 
-- Brown ら（2020）の、主観の経験と体の反応のそろい方の個人差の研究（DOI 10.1037/emo0000579）。PMC に著者稿がありますが、Europe PMC の全文 XML は HTTP 500 を返し、PMC の頁は確認画面を返すホストです。そろい方の研究は、Mauss ら（2005）と Siegel ら（2018）で読みました。
+- Brown ら（2020）の、主観の経験と体の反応のそろい方の個人差の研究「Coherence between subjective experience and physiology in emotion: Individual differences and implications for well-being」（*Emotion*, 20(5), 818–829。DOI 10.1037/emo0000579、Crossref と一致）。カリフォルニア大学の機関リポジトリ（eScholarship）に置かれた著者稿の Wayback の記録（2023-06-29）https://web.archive.org/web/20230629200711/https://escholarship.org/content/qt00c8063k/qt00c8063k.pdf で本文を読みました（要旨は著者稿 p.2。誌面と頁が違います）。論には足さず、そろい方の論は Mauss ら（2005）と Siegel ら（2018）で組んでいます。
 - Trevisan ら（2019）の、内受容と失感情症のメタ分析（DOI 10.1037/abn0000454）。有料です。Van Bael ら（2024）の紹介で読んだところまでを書きます。
 - Larsen & McGraw（2011）の、混じった感じの追加の証拠（DOI 10.1037/a0021846）。SSRN に投稿時の版がありますが、確認画面を返すホストです。Russell & Carroll（1999）の両極の論（DOI 10.1037/0033-2909.125.1.3）は有料です。どちらも Berrios ら（2015）の紹介で読みました。
 - Foo ら（2022）の顔の信頼できそうかの印象の正確さのメタ分析。Crossref で書誌を確かめられませんでした。
@@ -75,11 +75,11 @@ status: reviewed
 | 6. 文字だけのやり取りと協力（Balliet 2010、Sproull & Kiesler 1986、Walther 1992、Bos ら 2002） | 三人称の行動：社会的ジレンマのゲームでの協力。話し合いの形（顔を合わせる・書いた文）の比べ | メタ分析（45 の効果量）。経験則（話し合いが協力を増やすこと） | 手がかりが落ちる論への、時間で埋まるという反論（Walther 1992）は本文を読めていない | b | ― | ― | 本文照合済（Balliet）・未照合（有料。3 本） |
 | 7. 禁じられた交換と神聖な価値（Tetlock ら 2000、Tetlock 2003、Berns ら 2012、Baron & Spranca 1997） | 一人称の評定：神聖な価値をお金と交換する話への怒りと身を清める反応。三人称：価値の文を売るかの競りと、脳の画像 | 実験（127 人ほか五つ）、総説、画像の研究（43 人、うち 32 人を撮像）。仮説 | 同じ交換も、言い方を変えると受け入れられる（Tetlock 2003）。神聖さを、お金で売るかで代わりに測っている（Berns ら） | c | ― | ― | 本文照合済（3 本）・未照合（有料。Baron & Spranca） |
 | 8. 関係の四つの型（Fiske 1992、Zakharin & Bates 2023、McGraw & Tetlock 2005） | 理論：関係の四つの型。一人称の質問紙：人が自分の関係をどの型で答えるか | 理論、質問紙の研究（347 人・617 人・615 人）。仮説 | 項目の一部が型に乗らなかった。自己報告だけで、英国の標本（Zakharin & Bates） | c | ― | ― | 本文照合済（2 本）・未照合（有料。McGraw & Tetlock） |
-| 9. 動機の締め出し（Bowles & Polanía-Reyes 2012、Gneezy & Rustichini 2000、Heyman & Ariely 2004、Frey & Jegen 2001） | 三人称の行動：お金の誘因や罰金のもとでの、協力・寄付・働きの量 | 総説（50 の実験）。経験則（誘因が社会的な選好を変えうること） | 誘因が社会的な選好を補う場合もある（著者自身） | c | ― | ― | 本文照合済（Bowles & Polanía-Reyes の作業論文の版）・未照合（確認画面と有料。3 本） |
+| 9. 動機の締め出し（Bowles & Polanía-Reyes 2012、Gneezy & Rustichini 2000、Heyman & Ariely 2004、Frey & Jegen 2001） | 三人称の行動：お金の誘因や罰金のもとでの、協力・寄付・働きの量 | 総説（50 の実験）。経験則（誘因が社会的な選好を変えうること） | 誘因が社会的な選好を補う場合もある（著者自身） | c | ― | ― | 本文照合済（Bowles & Polanía-Reyes の作業論文の版と、Heyman & Ariely）・未照合（確認画面と有料。2 本） |
 | 10. 体の目印の仮説と、その批判（Damasio 1996、Bechara ら 1997、Maia & McClelland 2004、Dunn ら 2006） | 理論：体の状態の信号が判断を偏らせる。三人称：賭けの課題の選び方と皮膚の電気の反応。一人称：課題についての言える知識 | 理論、実験（一つの条件 20 人）。見送り | 参加者は意識して言える知識を持っていた（Maia & McClelland）。総説の批判（Dunn ら）は本文を読めていない | d | ― | ― | 本文照合済（2 本）・未照合（有料。2 本） |
-| 11. 処理の流れやすさと快の感じ（Winkielman & Cacioppo 2001、Alter & Oppenheimer 2009、Thompson ら 2011、Meyer ら 2015） | 三人称：頬と眉の筋の電気の小さな動き。一人称：好ましさの評定 | 実験（二つ）。仮説 | 流れにくい字が考えを深めるという効果は、多くの追試で出なかった（Meyer ら。本文を読めていない） | d | ― | ― | 本文照合済（Winkielman & Cacioppo。頁の画像で読んだ）・未照合（有料と確認画面。3 本） |
+| 11. 処理の流れやすさと快の感じ（Winkielman & Cacioppo 2001、Alter & Oppenheimer 2009、Thompson ら 2011、Meyer ら 2015） | 三人称：頬と眉の筋の電気の小さな動き。一人称：好ましさの評定 | 実験（二つ）。仮説 | 流れにくい字が考えを深めるという効果は、元の実験と 16 の追試を合わせると出なかった（Meyer ら） | d | ― | ― | 本文照合済（Winkielman & Cacioppo は頁の画像で読んだ。Meyer ら は著者稿）・未照合（有料。2 本） |
 
-文献の本数では、本文で確かめたのは 21 本、二次資料のみが 3 本、未照合が 14 本（有料 11・確認画面 3）です（論ごとの節の「照合の状態」）。上げた人を確かめていない写しで読んだものはありません。兄弟の記録で照合した文献（Cacioppo & Berntson 1994・Cacioppo ら 1999・Glaeser ら 2000・Russell 2003・Koriat 2000 ほか）は、名前で引くだけで、この数に入れていません。
+文献の本数では、本文で確かめたのは 23 本、二次資料のみが 3 本、未照合が 12 本（有料 11・確認画面 1）です（論ごとの節の「照合の状態」）。上げた人を確かめていない写しで読んだものはありません。兄弟の記録で照合した文献（Cacioppo & Berntson 1994・Cacioppo ら 1999・Glaeser ら 2000・Russell 2003・Koriat 2000 ほか）は、名前で引くだけで、この数に入れていません。
 
 ここまでで見えたことを、見立てとして書きます。感じの報告と、体や行動の測りは、別々に動くことがありました。二つの評価の働きは同時に起きうる一方で、どの測りで捉えるかで見え方が変わりました。言葉に乗らない声の手がかりからは、一致した信頼の印象が立ちますが、当たっているかは別の問いでした。お金と関係の値を同じ物差しに乗せることへの怒りは測られていましたが、言い方で和らぐこともありました。どの研究も、一列の記号の上で、生存の側と信頼の側の値が分かれて読める読めないを調べたものではありません。
 
@@ -140,7 +140,7 @@ status: reviewed
 - Mauss ら：若い女性に絞ったのは、ばらつきを減らすためで、性・年齢・民族がそろい方を変えうる、と書きます（p.187）。
 - Siegel ら：「the pattern of effect sizes did not clearly distinguish 1 emotion category from another」（p.343）。情動の種類の中のばらつきは、映画か想像かのような引き出し方の違いでは大きくは説明されなかった、と書きます（同）。
 
-**批判と追試**：この二本は、そろい方を情動の定義に置く理論への反対の知見です。Mauss ら は、楽しさの強さが増すと、表情と体の反応のそろいが強まったが、悲しさではそうでなかった、と書きます（p.175）。そろい方の個人差を調べた後の研究（Brown ら 2020）は、本文を読めていません。
+**批判と追試**：この二本は、そろい方を情動の定義に置く理論への反対の知見です。Mauss ら は、楽しさの強さが増すと、表情と体の反応のそろいが強まったが、悲しさではそうでなかった、と書きます（p.175）。そろい方の個人差を調べた後の研究（Brown ら 2020）は、63 人が感情を引き出す映画を見ながらダイヤルで感じの強さを評定し、その間の体の反応を測りました。主観の経験と体の反応のそろいが大きい人ほど、幸福感の報告が高く、感情の表出を抑えると答えた人ほど、そろいが小さかった、と書きます（著者稿 p.2）。
 
 **一人称と三人称**：ダイヤルの評定は一人称、表情の符号化と体の反応は三人称です。二本とも、二つが合わない場合を測っています。
 
@@ -353,17 +353,17 @@ status: reviewed
 
 ### 9. 動機の締め出し（Bowles & Polanía-Reyes 2012、Gneezy & Rustichini 2000、Heyman & Ariely 2004、Frey & Jegen 2001）
 
-**要旨**：お金の誘因や罰金を入れると、人の協力や寄付が、自分の得だけを考える人の予測より減ることがあります。Bowles & Polanía-Reyes（2012）は、その現象を扱った 50 の実験を見渡し、誘因が社会的な選好（思いやり・規範・公の役に立とうとする動機）を締め出すことも、補うこともある、と書きました。託児所の迎えの遅れに罰金を入れると遅れが増えた研究（Gneezy & Rustichini 2000）、お金を払う場面と社会的な頼みの場面で働く量が違った研究（Heyman & Ariely 2004）、締め出しの論の総説（Frey & Jegen 2001）は、本文を読めませんでした。
+**要旨**：お金の誘因や罰金を入れると、人の協力や寄付が、自分の得だけを考える人の予測より減ることがあります。Bowles & Polanía-Reyes（2012）は、その現象を扱った 50 の実験を見渡し、誘因が社会的な選好（思いやり・規範・公の役に立とうとする動機）を締め出すことも、補うこともある、と書きました。Heyman & Ariely（2004）は、学生 159 人に、画面の玉を 3 分間できるだけ多く動かしてもらいました。現金で払うときは、額を上げると働く量が増えましたが、同じ額のお菓子で払うときは、額を上げても働く量は変わりませんでした（p.790）。著者は、人の働きと支払いの関係を決める場を、お金の場と社会の場の二つに分け、お金の場は支払いの額に敏感で、社会の場はそうでない、と置きます（p.787）。託児所の迎えの遅れに罰金を入れると遅れが増えた研究（Gneezy & Rustichini 2000）と、締め出しの論の総説（Frey & Jegen 2001）は、本文を読めませんでした。
 
 **確かめ先と読んだ頁**：
 
 - Bowles, S., & Polanía-Reyes, S. (2012). Economic incentives and social preferences: Substitutes or complements? *Journal of Economic Literature*, 50(2), 368–425. DOI 10.1257/jel.50.2.368（Crossref と一致）。読んだ版：同じ題の作業論文（シエナ大学の経済学部の作業論文 617 号、2011 年 10 月）の、大学のサーバーの写し http://repec.deps.unisi.it/quaderni/617.pdf 。雑誌の版と頁が違います。読んだ頁：作業論文の PDF の頁で pp.2・4–6・8。
 - Gneezy, U., & Rustichini, A. (2000). A fine is a price. *Journal of Legal Studies*, 29(1), 1–17. DOI 10.1086/468061（Crossref と一致）。シカゴ大学の法学の雑誌のリポジトリは確認画面を返しました。
-- Heyman, J., & Ariely, D. (2004). Effort for payment: A tale of two markets. *Psychological Science*, 15(11), 787–793. DOI 10.1111/j.0956-7976.2004.00757.x（Crossref と一致）。セント・トーマス大学のリポジトリの置き場は、研究の頁の案内に移っていて、PDF を取れませんでした。
+- Heyman, J., & Ariely, D. (2004). Effort for payment: A tale of two markets. *Psychological Science*, 15(11), 787–793. DOI 10.1111/j.0956-7976.2004.00757.x（Crossref と一致）。読んだ版：セント・トーマス大学の機関リポジトリに置かれた誌面の PDF の、Wayback の記録（2019-08-18）https://web.archive.org/web/20190818085438/https://ir.stthomas.edu/cgi/viewcontent.cgi?article=1010&context=ocbmktgpub 。今の置き場は研究の頁の案内に移っています。読んだ頁：pp.787・790。
 - Frey, B. S., & Jegen, R. (2001). Motivation crowding theory. *Journal of Economic Surveys*, 15(5), 589–611. DOI 10.1111/1467-6419.00150（Crossref と一致）。有料です。
 - Deci, E. L., Koestner, R., & Ryan, R. M. (1999). A meta-analytic review of experiments examining the effects of extrinsic rewards on intrinsic motivation. *Psychological Bulletin*, 125(6), 627–668. DOI 10.1037/0033-2909.125.6.627（Crossref と一致）。授業の頁にあると出た写しは、取りに行くと無くなっていました（HTTP 404）。
 
-**照合の状態**：本文照合済（Bowles & Polanía-Reyes。作業論文の版）。Gneezy & Rustichini は未照合（確認画面）。Heyman & Ariely は未照合（確認画面。リポジトリの案内の頁だけ）。Frey & Jegen と Deci ら は未照合（有料）。
+**照合の状態**：本文照合済（Bowles & Polanía-Reyes。作業論文の版）。Gneezy & Rustichini は未照合（確認画面）。Heyman & Ariely は本文照合済（誌面の PDF の Wayback の記録）。Frey & Jegen と Deci ら は未照合（有料）。
 
 **研究の型と厚み**：50 の実験の研究を見渡した総説です（作業論文の PDF の p.2）。厚みは経験則です。誘因が社会的な選好を変えうることは、多くの実験で出ています。ただし、締め出しと補い合いの両方が出ていて、向きは場面で変わります。
 
@@ -422,16 +422,16 @@ status: reviewed
 
 ### 11. 処理の流れやすさと快の感じ（Winkielman & Cacioppo 2001、Alter & Oppenheimer 2009、Thompson ら 2011、Meyer ら 2015）
 
-**要旨**：Winkielman & Cacioppo（2001）は、中立の絵を見せるときに、処理のしやすさを気づかれないように変え、頬の筋（笑うときに働く大頬骨筋）と眉の筋の電気の小さな動きを測りました。処理しやすい絵では、頬の筋の動きが大きく、快の印が出て、好ましさの評定も上がりました。処理の流れやすさの研究をまとめた総説（Alter & Oppenheimer 2009）、答えが流れるように浮かぶと「正しい」という感じが強くなるという研究（Thompson ら 2011）、流れにくい字が考えを深めるという効果の大きな追試（Meyer ら 2015）は、本文を読めませんでした。
+**要旨**：Winkielman & Cacioppo（2001）は、中立の絵を見せるときに、処理のしやすさを気づかれないように変え、頬の筋（笑うときに働く大頬骨筋）と眉の筋の電気の小さな動きを測りました。処理しやすい絵では、頬の筋の動きが大きく、快の印が出て、好ましさの評定も上がりました。処理の流れやすさの研究をまとめた総説（Alter & Oppenheimer 2009）、答えが流れるように浮かぶと「正しい」という感じが強くなるという研究（Thompson ら 2011）は、本文を読めませんでした。
 
 **確かめ先と読んだ頁**：
 
 - Winkielman, P., & Cacioppo, J. T. (2001). Mind at ease puts a smile on the face: Psychophysiological evidence that processing facilitation elicits positive affect. *Journal of Personality and Social Psychology*, 81(6), 989–1000. DOI 10.1037/0022-3514.81.6.989（Crossref と一致）。読んだ版：Winkielman の大学の頁に置かれた誌面の写しの、Wayback の記録（2004-09-18）https://web.archive.org/web/20040918210431/http://psy.ucsd.edu:80/~pwinkiel/winkielman-cacioppo-Mind%20at%20ease-JPSP-2001.pdf 。文字の層の無い頁の画像の PDF です。読んだ頁：pp.989・991（頁の画像で読んだ）。
 - Alter, A. L., & Oppenheimer, D. M. (2009). Uniting the tribes of fluency to form a metacognitive nation. *Personality and Social Psychology Review*, 13(3), 219–235. DOI 10.1177/1088868309341564（Crossref と一致）。有料です。
 - Thompson, V. A., Prowse Turner, J. A., & Pennycook, G. (2011). Intuition, reason, and metacognition. *Cognitive Psychology*, 63(3), 107–140. DOI 10.1016/j.cogpsych.2011.06.001（Crossref と一致）。有料です。
-- Meyer, A., Frederick, S., Burnham, T. C., ら (2015). Disfluent fonts don't help people solve math problems. *Journal of Experimental Psychology: General*, 144(2), e16–e30. DOI 10.1037/xge0000049（Crossref と一致）。チャップマン大学のリポジトリは確認画面を返しました。
+- Meyer, A., Frederick, S., Burnham, T. C., ら (2015). Disfluent fonts don't help people solve math problems. *Journal of Experimental Psychology: General*, 144(2), e16–e30. DOI 10.1037/xge0000049（Crossref と一致）。読んだ版：チャップマン大学の機関リポジトリに置かれた、採録後で校正前の著者稿の Wayback の記録（2018-04-13）https://web.archive.org/web/20180413235900/https://digitalcommons.chapman.edu/cgi/viewcontent.cgi?article=1095&context=esi_pubs 。今の置き場は確認画面を返します。誌面と頁が違います。読んだ頁：著者稿の pp.1・4。
 
-**照合の状態**：本文照合済（Winkielman & Cacioppo。頁の画像で読んだ。pp.989・991）。Alter & Oppenheimer と Thompson ら は未照合（有料）。Meyer ら は未照合（確認画面）。
+**照合の状態**：本文照合済（Winkielman & Cacioppo。頁の画像で読んだ。pp.989・991）。Meyer ら は本文照合済（著者稿）。Alter & Oppenheimer と Thompson ら は未照合（有料）。
 
 **研究の型と厚み**：二つの実験です（p.989）。人数は読んだ頁にありませんでした。厚みは仮説です。
 
@@ -441,7 +441,7 @@ status: reviewed
 - 処理の流れやすさの快の模型は「affective feedback is one of the ways organisms internally monitor changes in their cognitive processing」という前提に立つ、と書きます（p.991）。
 - 肯定と否定の評価を別々の働きとして置く模型（Cacioppo & Berntson 1994）に沿って、肯定の側と否定の側を別々の評定と筋の測りで測った、と書きます（p.991）。
 
-**批判と追試**：処理の流れにくさが考えを深めるという別の効果は、大きな追試で出なかった、と題が言う研究（Meyer ら 2015）がありますが、本文を読めていません。流れやすさが快を生むことそのものの追試は、この領域では探しきれていません。
+**批判と追試**：処理の流れにくさが考えを深めるという別の効果は、大きな追試で出ませんでした。Meyer ら（2015）は、読みにくい字で印刷すると直感に反する算数の問題が解けやすくなったという元の実験に、16 の追試を合わせ、正しく解けた数は読みにくい字でも変わらなかった、と書きます（平均 1.43 と 1.42。著者稿 pp.1・4）。流れやすさが快を生むことそのものの追試は、この領域では探しきれていません。
 
 **一人称と三人称**：頬と眉の筋の動きは三人称、好ましさの評定は一人称です。この研究では、二つが同じ向きに動きました。
 
@@ -531,6 +531,3 @@ status: reviewed
 - Russell & Carroll（1999）・Trevisan ら（2019）・Sproull & Kiesler（1986）・Walther（1992）・Bos ら（2002）・Baron & Spranca（1997）・McGraw & Tetlock（2005）・Frey & Jegen（2001）・Deci ら（1999）・Bechara ら（1997）・Dunn ら（2006）・Alter & Oppenheimer（2009）・Thompson ら（2011）：有料で、無料の写しは見つかりませんでした。ほかの論文の紹介で読んだところまでを書いています。
 - Larsen & McGraw（2011）：SSRN に投稿時の版がありますが、確認画面を返すホストです。
 - Gneezy & Rustichini（2000）：雑誌のリポジトリが確認画面を返しました。
-- Heyman & Ariely（2004）：大学のリポジトリの置き場が研究の頁の案内に移っていて、PDF を取れませんでした。
-- Meyer ら（2015）：大学のリポジトリが確認画面を返しました。
-- Brown ら（2020）：PMC の著者稿の全文 XML が HTTP 500 を返しました。論に足していません。
