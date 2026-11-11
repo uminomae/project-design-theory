@@ -144,6 +144,15 @@
       "name_en": "Noticing misattribution",
       "summary_ja": "本人が答える動機と、物語で測る動機は、どこまでそろうか。自分を知ることの限界と、人生の語りの中での気づき。感じの原因の取り違えの実験と、その追試",
       "summary_en": "How far self-reported motives match motives measured through stories; the limits of self-knowledge and noticing within life narratives; and experiments on misattributing the cause of a feeling, with their replications"
+    },
+    {
+      "id": "A16",
+      "file": "evidence-A16-neural-divisions.md",
+      "reviewed": "2026-11-12",
+      "name_ja": "神経系の分かれ方と二つの信号",
+      "name_en": "Divisions of the nervous system and the two signals",
+      "summary_ja": "身を守る信号とつながりの信号を、神経系のどこかで分けた研究はあるか。脳を古い層と新しい層に分ける見方とその批判、小脳と情動、脊髄と心臓の神経系、つながりとストレスの物質の系",
+      "summary_en": "Whether any research divides self-protective signals from signals of connection somewhere in the nervous system: the view of the brain as old and new layers and its critics, the cerebellum and emotion, the spinal cord and the heart's nervous system, and the chemical systems of bonding and stress"
     }
   ]
 }
