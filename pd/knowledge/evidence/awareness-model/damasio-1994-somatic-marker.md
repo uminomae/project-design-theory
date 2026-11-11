@@ -13,6 +13,7 @@
 - **出版社**: G.P. Putnam's Sons (New York)
 - **出版年**: 1994年
 - **ISBN**: 978-0-399-13894-2
+- **確かめ先**（2026-11-12 に足した）：Internet Archive の 1994 年 Putnam 版の記録 https://archive.org/details/descarteserrorem00dama （ISBN 0399138943 が合う。貸し出しは、印刷物を読むのが難しい人向けだけ）。1996 年の論文は DOI 10.1098/rstb.1996.0125（Crossref と一致）、誌面の写しは https://web.archive.org/web/20191026202246/https://royalsocietypublishing.org/doi/pdf/10.1098/rstb.1996.0125 （意識とはの台帳 A13-S31 で本文照合済）
 - **被引用数**: 20,000件超（神経科学・心理学・哲学にまたがる）
 
 ### 理論論文 (1996)

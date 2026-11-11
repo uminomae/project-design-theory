@@ -6,7 +6,7 @@ tags: [source, "awareness-model", "原典解説"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/damasio-1994-somatic-marker.md"
-compiled: "2026-04-08"
+compiled: "2026-11-12"
 status: 正典
 review_state: 未レビュー
 ---
@@ -30,9 +30,9 @@ Damasio (1999) は意識の階層理論を展開: 原自己（身体マップ、
 - **出版社**: G.P. Putnam's Sons
 - **出版年**: 1994年
 - **被引用数**: 20,000件超
-- **ISBN**: 978-0-399-13894-2
+- **ISBN**: 978-0-399-13894-2（[Internet Archive の 1994 年 Putnam 版の記録](https://archive.org/details/descarteserrorem00dama)。読めるのは、印刷物を読むのが難しい人向けの貸し出しだけ）
 
-理論論文: Damasio (1996) *Philosophical Transactions of the Royal Society B*, 351(1346), 1413-1420. DOI: 10.1098/rstb.1996.0125
+理論論文: Damasio (1996) *Philosophical Transactions of the Royal Society B*, 351(1346), 1413-1420. DOI: [10.1098/rstb.1996.0125](https://doi.org/10.1098/rstb.1996.0125)。誌面の写しは [出版社の PDF（Wayback）](https://web.archive.org/web/20191026202246/https://royalsocietypublishing.org/doi/pdf/10.1098/rstb.1996.0125)
 
 ## 主要主張
 

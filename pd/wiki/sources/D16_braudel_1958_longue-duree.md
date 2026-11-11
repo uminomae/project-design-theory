@@ -28,7 +28,7 @@ Fernand Braudel (1958) は、歴史学と社会科学の間に横たわる方法
 - **タイトル**: Histoire et Sciences sociales: La longue duree
 - **雑誌**: *Annales. Economies, societes, civilisations*, 13(4), 725-753
 - **出版年**: 1958年
-- **DOI**: 10.3406/ahess.1958.2781
+- **DOI**: [10.3406/ahess.1958.2781](https://doi.org/10.3406/ahess.1958.2781)。誌面は [Persée](https://www.persee.fr/doc/ahess_0395-2649_1958_num_13_4_2781) で読める
 - **所属**: Ecole Pratique des Hautes Etudes, Paris
 - **言語**: フランス語
 

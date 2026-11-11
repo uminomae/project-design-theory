@@ -27,7 +27,7 @@ Eisenberger, Lieberman & Williams (2003) は、仮想ボール投げゲーム（
 - **タイトル**: Does Rejection Hurt? An fMRI Study of Social Exclusion
 - **雑誌**: *Science*, 302(5643), 290-292
 - **出版年**: 2003年
-- **DOI**: 10.1126/science.1089134
+- **DOI**: [10.1126/science.1089134](https://doi.org/10.1126/science.1089134)（出版社の版は有料）
 - **PMID**: 14551436
 
 ## 方法論

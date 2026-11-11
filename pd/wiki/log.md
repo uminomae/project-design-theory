@@ -747,3 +747,8 @@ compile 実行の履歴。append-only。
 - scope: 概念ページ 2
 - sources: pd `knowledge/research/love-driven-dev/READER-love-driven-dev.md`（後半の答えに、確かめて直す行程の節と畳みを足した）
 - pages: `concepts/Love 駆動開発` の「開発」に、後半の答えの見方を一段足した。`プロジェクトデザイン` は中身を直さない。compiled が今日なので checked を書いた
+
+## [2026-11-12] check | 出典ページ 9 に原典へのリンク
+- scope: 出典ページ 9（Cole 2007・Craig 2002・Davies 2010・Braudel 1958・Damasio 1994・Eisenberger 2003・Hatfield 1993・Holt-Lunstad 2010・Husserl 1931）
+- sources: 書誌の DOI（Crossref で著者・年・題・巻・頁を確かめた）と、照合の記録（意識とはの台帳 A04・A06・A13、cs の D11・D16 の記録）にある写しの URL（PMC は idconv で DOI と合うこと、Wayback は CDX で記録を確かめた）。Damasio 1994 と Husserl は本で、Internet Archive の書誌の記録に張り、pd の調べのノートにも同じ URL を足した
+- pages: 書誌の行にリンクを張っただけで、中身は直さない。Damasio・Husserl はノートを直したので compiled を今日にした。Hatfield 1993 の頁は、ページは 96-99、Crossref は 96-100 で、ページには両方を書いた。間主観性のまとめの 4 ページ（現象学・臨床心理学と仏教・教育学と看護学・文化人類学と言語学）は、中の著作 50 ほどにどれもリンクが無く、張っていない（扱いは pjdhiro に確かめる）

@@ -27,14 +27,14 @@ Holt-Lunstadらは社会的関係と死亡率の関係を定量化した二つ�
 - **著者**: Holt-Lunstad, J., Smith, T.B., & Layton, J.B.
 - **タイトル**: Social relationships and mortality risk: A meta-analytic review
 - **雑誌**: *PLoS Medicine*, 7(7), e1000316
-- **DOI**: 10.1371/journal.pmed.1000316
-- **PMC**: 2910600
+- **DOI**: [10.1371/journal.pmed.1000316](https://doi.org/10.1371/journal.pmed.1000316)
+- **PMC**: [2910600](https://pmc.ncbi.nlm.nih.gov/articles/PMC2910600/)
 
 ### 2015年メタ分析
 - **著者**: Holt-Lunstad, J., Smith, T.B., Baker, M., Harris, T., & Stephenson, D.
 - **タイトル**: Loneliness and social isolation as risk factors for mortality: A meta-analytic review
 - **雑誌**: *Perspectives on Psychological Science*, 10(2), 227-237
-- **DOI**: 10.1177/1745691614568352
+- **DOI**: [10.1177/1745691614568352](https://doi.org/10.1177/1745691614568352)。著者稿は [ブリガム・ヤング大学の機関リポジトリ（Wayback）](https://web.archive.org/web/20261030233448/https://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=3024&context=facpub)
 
 ## 方法論
 

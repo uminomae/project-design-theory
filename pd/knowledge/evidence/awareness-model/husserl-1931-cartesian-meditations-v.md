@@ -137,6 +137,7 @@ Husserl 自身も、後期の発生的現象学 (*Husserliana* XV) において�
   - `knowledge/evidence/awareness-model/phenomenology-existentialism-intersubjectivity.md` §2 Husserl 節
   - Husserl 第五省察の標準的な二次文献解釈 (Zahavi 2001, *Husserl's Phenomenology*, Stanford UP ほか)
 - 原典の直接引用は英訳 Cartesian Meditations (Cairns 訳, 1960) または独語原典 (*Husserliana* I) を今後参照して補強する
+- 確かめ先（2026-11-12 に足した。Internet Archive の書誌の記録で、著者・題・年を確かめた。本文はまだ読んでいない）：*Husserliana* I（1950）https://archive.org/details/cartesianischeme0001edmu ・Cairns 訳（Martinus Nijhoff, 1960）https://archive.org/details/cartesianmeditat0000edmu 。どちらも貸し出しで読める
 
 ---
 

@@ -27,8 +27,8 @@ Cole et al. (2007) は、孤独感（UCLA Loneliness Scale上位15%）と低孤�
 - **タイトル**: Social regulation of gene expression in human leukocytes
 - **雑誌**: *Genome Biology*, 8(9), R189
 - **出版年**: 2007年
-- **DOI**: 10.1186/gb-2007-8-9-r189
-- **アクセス**: オープンアクセス（BioMed Central）
+- **DOI**: [10.1186/gb-2007-8-9-r189](https://doi.org/10.1186/gb-2007-8-9-r189)
+- **アクセス**: オープンアクセス（BioMed Central）。全文は [PMC2375027](https://pmc.ncbi.nlm.nih.gov/articles/PMC2375027/)
 
 ## 方法論
 

@@ -6,7 +6,7 @@ tags: [source, "awareness-model", "原典解説", "哲学", "現象学", "間主
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/husserl-1931-cartesian-meditations-v.md"
-compiled: "2026-04-15"
+compiled: "2026-11-12"
 status: 正典
 review_state: 未レビュー
 ---
@@ -59,9 +59,9 @@ review_state: 未レビュー
 
 - 著者: Edmund Husserl
 - 刊行年: 仏訳 1931（独語原典は *Husserliana* I, 1950）
-- 出典: *Cartesianische Meditationen und Pariser Vorträge*
+- 出典: *Cartesianische Meditationen und Pariser Vorträge*（Husserliana I, 1950 は [Internet Archive の貸し出しの写し](https://archive.org/details/cartesianischeme0001edmu)）
 - 対象箇所: 第五省察（§42-§64）
-- 英訳: *Cartesian Meditations: An Introduction to Phenomenology*, trans. Dorion Cairns, Martinus Nijhoff, 1960
+- 英訳: *Cartesian Meditations: An Introduction to Phenomenology*, trans. Dorion Cairns, Martinus Nijhoff, 1960（[Internet Archive の貸し出しの写し](https://archive.org/details/cartesianmeditat0000edmu)）
 - 和訳: 『デカルト的省察』浜渦辰二訳、岩波文庫、2001 など
 - access_status: `knowledge/evidence/awareness-model/husserl-1931-cartesian-meditations-v.md` に独立 summary ノートあり。原典 PDF は未登録（要補強）
 

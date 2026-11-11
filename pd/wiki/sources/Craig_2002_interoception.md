@@ -29,10 +29,10 @@ Craig (2009) は AIC を「人間の意識的気づきの座」と位置づけ�
 - **タイトル**: How do you feel? Interoception: the sense of the physiological condition of the body
 - **雑誌**: *Nature Reviews Neuroscience*, 3(8), 655-666
 - **出版年**: 2002年
-- **DOI**: 10.1038/nrn894
+- **DOI**: [10.1038/nrn894](https://doi.org/10.1038/nrn894)（出版社の版は有料）
 - **PMID**: 12154366
 
-拡張論文: Craig (2009) "How do you feel — now?" *Nature Reviews Neuroscience*, 10(1), 59-70. DOI: 10.1038/nrn2555
+拡張論文: Craig (2009) "How do you feel — now?" *Nature Reviews Neuroscience*, 10(1), 59-70. DOI: [10.1038/nrn2555](https://doi.org/10.1038/nrn2555)
 
 ## 主要知見
 

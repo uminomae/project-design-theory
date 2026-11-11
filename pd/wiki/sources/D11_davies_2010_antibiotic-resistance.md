@@ -28,7 +28,7 @@ Julian Davies & Dorothy Davies (2010) は、抗生物質耐性の起源・進化
 - **タイトル**: Origins and Evolution of Antibiotic Resistance
 - **雑誌**: *Microbiology and Molecular Biology Reviews*, 74(3), 417-433
 - **出版年**: 2010年
-- **DOI**: 10.1128/MMBR.00016-10
+- **DOI**: [10.1128/MMBR.00016-10](https://doi.org/10.1128/MMBR.00016-10)。誌面の写しは [PMC2937522](https://pmc.ncbi.nlm.nih.gov/articles/PMC2937522/)
 - **所属**: Department of Microbiology and Immunology, University of British Columbia, Vancouver
 
 ## 主要主張

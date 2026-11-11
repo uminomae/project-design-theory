@@ -61,7 +61,7 @@ Hatfield、Cacioppo、Rapson による 1993 年の短いレビュー論文 "Emot
 - **タイトル**: Emotional Contagion
 - **雑誌**: *Current Directions in Psychological Science*, 2(3), 96-99
 - **出版年**: 1993
-- **DOI**: 10.1111/1467-8721.ep10770953
+- **DOI**: [10.1111/1467-8721.ep10770953](https://doi.org/10.1111/1467-8721.ep10770953)（出版社の版は有料。Crossref の頁は 96-100）
 
 ### モノグラフ
 - **著者**: Hatfield, E., Cacioppo, J. T., & Rapson, R. L.
