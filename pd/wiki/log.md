@@ -692,3 +692,8 @@ compile 実行の履歴。append-only。
 - scope: 概念ページ 1・トップ 1
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「無意識とは、何か」の工事中を外し、フロイト 1915・ユング 1917 の本文と畳み三つを入れた）
 - pages: `concepts/Love 駆動開発` の工事中の章の並びから「無意識とは何か」を外した。`プロジェクトデザイン` はこの章を引いていない。中身は直さず、compiled は今日のまま
+
+## [2026-11-11] update | Love駆動開発の第四部の章「期待と信頼は、どう違うのか」「愛着と信頼は、どう違うのか」に新田信也の論を足したのに合わせて照らした（#125）
+- scope: 概念ページ 1・トップ 1
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章 6 に新田の期待〔当て〕と信頼の一段と畳み一つ、章 10 に畳み一つ）
+- pages: `concepts/Love 駆動開発`・`プロジェクトデザイン` は、どちらもこの二章の中身を引いていない。中身は直さず、compiled は今日のまま
