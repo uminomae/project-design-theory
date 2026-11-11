@@ -69,4 +69,13 @@
 
 ## 周の記録
 
-（まだ無い）
+### 周 1（2026-11-11・worktree as-research-review-close-1947aa）
+
+- 書き直し（エージェント。モデルは既定・effort high。33 万トークン・ツール 66 回）：回答を、二巡目の論点で一から書いた（3ef9a4a）。新しい文献は探さず、十二の記録と一巡目の回答だけを材料にした。一巡目にレビュー済みの研究ごとの記述は、言い換えずに移した。本文を新しく組み、選び方の節の注意と顕著性の段、一列の記号の節を新しく書いた。埋めずに耐えると予測誤差の節は外し、予測誤差の材料は選び方の節に移した。一人称と三人称の要点は巻末の作り方に移した。
+- レビュー（別のエージェント。23 万トークン・ツール 75 回。原典 16 本を頁まで）：**二つの信号の厳密な言い方・体験の安定感と信頼・取り違えと入り込み・意識と気づきの四つが条件 1〜7 を満たした**。身体と意識を結ぶ信号は軽い直し一つで満たす。重い直しは無し、中 5・軽い 10。
+- 司令塔が中 5・軽い 10 を当てた（4c2f752）：注意の段の出典の付け方（Feldman & Friston 2010 は意識の内容を論じていない）・「当たらなかった」の探した語が選ぶ働きに向いていなかった所を分けた・Seeley ら 2007 と Cacioppo ら 1999 の並べる相手をページの文に合わせた・Russell 2003 の「あとから」は原典に無いので直した（内受容と情動の記録の二か所も）。本文は 34,997 バイト。直したあとの版はレビューにかけていない。
+- 満たさない三つ（新しい領域が要る）：
+  - 選び方の二つの向き：注意・顕著性・価値の見積もりを、生存とつながりの手がかりで分けた研究。語：threat-related attentional bias と social cue、attentional capture by social stimuli、value-driven attentional capture、subjective value、salience network と critique か replication。
+  - 一列の記号：両価の測り方（evaluative space model・ambivalence と measurement）、報告と体のずれ（alexithymia と interoception・emotional granularity・emotion coherence）、言葉に乗らない関係の手がかり（nonverbal cues と trust・prosody と trustworthiness）、関係の値を数やお金に乗せることへの反発（taboo trade-off・sacred values・relational models・crowding out）。
+  - 取り違えに気づけるか：年の尺度の気づき（implicit and explicit motives と congruence・insight と psychotherapy・autobiographical reasoning）。Russell 2003 の misattribution（p.158）は、今ある記録から並べられる候補。
+- 欠損駆動思考に、新しい公開ページ「違和感は、どこで立ち、どこで気づかれるのか」が入った（ffadf2f・#113）。一列の記号の節の違和感の出どころの問いにかかわるので、次の周で読む。
