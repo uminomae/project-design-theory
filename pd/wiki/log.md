@@ -737,3 +737,8 @@ compile 実行の履歴。append-only。
 - scope: 概念ページ 2
 - sources: 上の check と同じ
 - pages: `concepts/抱持` と `プロジェクトデザイン` に `checked` の時刻を入れた。stale-check（`pd/scripts/wiki-sources.mjs`）は、compiled と同じ日に出典が直ったとき、ページの最後の commit と `checked` の遅い方と比べるようにした。中身を変えずに確かめたページが一覧に残り続けないため
+
+## [2026-11-12] check | Love 駆動開発・プロジェクトデザイン
+- scope: 概念ページ 2
+- sources: pd `knowledge/research/love-driven-dev/READER-love-driven-dev.md`（出典の行に原典へのリンクを張っただけ。リンクの記法を外すと前と一字も違わない）
+- pages: `concepts/Love 駆動開発` と `プロジェクトデザイン` は、中身を直さない。compiled を今日にした（プロジェクトデザインの前日の `checked` は外した）
