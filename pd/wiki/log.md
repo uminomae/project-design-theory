@@ -852,3 +852,8 @@ compile 実行の履歴。append-only。
 - scope: 出典ページ 1（`sources/Damasio_1994_somatic-marker`）
 - sources: Damasio 1996 の全文（Wayback が記録した出版社の PDF・意識とはの台帳 A13-S31。文字の層が崩れていたので文字に起こし直した）。1994 年の本は、無料の写しが無く照らしていない
 - pages: 患者の像とギャンブル課題、ソマティック・マーカーの仕組みを照らした。予期の皮膚電気反応を測ったのは Bechara ら 1994 でなく 1996 で、「意識的認識に先立つ」は Damasio が示唆として挙げた研究による、と直した。ソマティック・マーカーの四つを論文の組み立て（結びつき・再活性化・二つのループ・推論の絞り込み）で書き直し、被引用数を外した。頭に「このページの出所」を置き、本・Gage と Elliot・1999 年の意識の階層・論争の段を照らしていない所とした
+
+## [2026-11-12] check | Panksepp と Barrett の論争のページの Panksepp の側（20 ページの組 B）
+- scope: 出典ページ 1（`sources/Panksepp-Barrett_1998_panic-grief-constructed-emotion`。Barrett の側は組 A が直した）
+- sources: Panksepp 1998 の本は開けなかった（本で、無料で読める写しは無い）。Panksepp 2011（PLoS ONE、意識とはの台帳 A04-S27 の手元の写し）は全文を見たが、PANIC/GRIEF の回路の部位とオピオイドの細部は書かれていない。Eisenberger ら 2003 の要旨（PubMed 14551436）
+- pages: 七つの系の名前は合った。「Eisenberger 2003 が20年後に実証した」は、要旨の言い方（仮説を試し、前帯状皮質が仲間外れのときに強く働いた）に直した。「このページの出所」に Panksepp の側の照らした所と照らしていない所を足した（`docs/rules/sources.md` §10-6）
