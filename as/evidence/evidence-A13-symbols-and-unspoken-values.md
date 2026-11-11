@@ -504,7 +504,7 @@ status: reviewed
 | 論 | 土台の側の語（意識されない過程・体の反応） | メタの側の語（意識される・気づく・報告する） | 分け方・関係 | 所 |
 |---|---|---|---|---|
 | 体の目印の仮説（Damasio 1996） | 「covertly (non-consciously, in a non-minded manner)」に働く信号、「a biasing signal」 | 「overtly (consciously, 'in mind')」に働く信号 | 同じ目印の信号が、意識されるときもされないときも判断に効く | pp.1413・1415 |
-| 賭けの課題の再検討（Maia & McClelland 2004） | 「nonconscious biases」、皮膚の電気の反応 | 「conscious knowledge」「verbal reports」「knowledge that is consciously accessible」 | 報告の取り方を細かくすると、意識して言える知識が、行動と少なくとも同じくらい早く、より確かに示された | p.16075 |
+| 賭けの課題の再検討（Maia & McClelland 2004） | 「nonconscious biases」、皮膚の電気の反応 | 「conscious knowledge」「verbal reports」「knowledge that is consciously accessible」 | 報告の取り方を細かくすると、意識して言える知識が、行動と少なくとも同じくらい早く、より確かに示された | pp.16075・16079 |
 | 体の内側の信号の模型（Van Bael ら 2024 による紹介） | 課題で測る正確さ（interoceptive accuracy） | 本人の答える感じやすさ（interoceptive sensibility）、二つの一致としての「metacognitive awareness of accurate detection」 | 正確さ・感じやすさ・その一致を三つの別の次元に置く。模型は直すべきだという証拠もある | 「Introduction」の節 |
 | 混じった感じ（Berrios ら 2015） | 肯定と否定の評価の働きの同時の働き | 「distinctive states of consciousness which are experienced as personal feelings」、混じった感じを経験していることに「more aware」であること、報告しやすさ | 経験していること・それに気づいていること・報告することを、性差の読みで三つに分けて挙げる（どれかは決めない） | 「The integral experience of mixed emotions」「Discussion」の節 |
 | 反応の系のそろい方（Mauss ら 2005） | 体の反応（peripheral physiological responses） | 感じの経験（emotion experience）をダイヤルで報告すること | 経験と表情はよくそろうが、体の反応とのそろいは弱い | p.175 |

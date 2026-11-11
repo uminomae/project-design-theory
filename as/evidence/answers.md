@@ -26,7 +26,7 @@ status: draft
 
 **問いの意味**：公開ページの「切り取り方は、受け取る側で決まる」の節は、「人は、目や耳で受け取ったものの中から、何を大事なものとして拾うかを選んでいます。その選び方には、生き延びられるかどうか（生存）と、つながっていられるかどうか（信頼）の、二つの向きがある、と pjdhiro は見ています。」と書きます。この文書は、研究が受け取る側の選び方（注意・顕著さ・安全や価値の見積もり）をどう書いてきたかを、尺度ごとに分けて並べます。
 
-**今のところの答え**：選び方を、生存と信頼の二つの向きで書いた研究には当たっていません。注意の研究は、選び方を脅威や価値の一つの物差しで書いていました（Bar-Haim ら 2007、Anderson ら 2011）。脅威の研究は人から来る脅威を脅威の一種にまとめ（Bar-Haim ら 2007, p.7）、人の顔や視線への注意は別に調べられていました。何時間・何日の尺度では、ストレス反応を既定に置く見方（Brosschot ら 2018）と、関係の近さを既定に置く見方（Coan & Sbarra 2015）が並びます。二つの値で書く形には、不確かさが脅しにも報いにもなると書く理論の提案（DeYoung 2013）と、関係の安心が探索を許すと書く愛着の研究があります。
+**今のところの答え**：選び方を、生存と信頼の二つの向きで書いた研究には当たっていません。注意の研究は、選び方を脅威や価値の一つの物差しで書いていました（Bar-Haim ら 2007、Anderson ら 2011）。脅威のメタ分析は人から来る脅威を脅威の一種にまとめ（Bar-Haim ら 2007, p.7）、人の頭や顔への注意は別に調べられていました。何時間・何日の尺度では、ストレス反応を既定に置く見方（Brosschot ら 2018）と、関係の近さを既定に置く見方（Coan & Sbarra 2015）が並びます。二つの値で書く形には、不確かさが脅しにも報いにもなると書く理論の提案（DeYoung 2013）と、関係の安心が探索を許すと書く愛着の研究があります。
 
 <details><summary>何が意識に上るかの書き方：注意・顕著さ（研究ごとの記述と頁）</summary>
 
@@ -285,7 +285,7 @@ Seth（2013）と Barrett & Simmons（2015）は、体の内側の感じを、�
 
 <details><summary>要る原典と、探す種類</summary>
 
-- 選び方そのもの（注意と価値の見積もり）の研究：受け取る側の選び方の記録で回しました。Europe PMC で、題に attentional bias と threat と meta-analysis か review、dot-probe と reliability ほか、value-driven attentional capture、attentional bias for positive emotional stimuli、rejection sensitivity と attention、relevance detection、selection history、social attention と real ほか、social features と salien*、salience network と homeostatic、題に salience network と要旨に test-retest・reproducib*・replicat* のどれか（19 件。網そのものの批判は無し）を引きました。残るのは、二つの向きの重みを同じ人・同じ課題で比べた研究（当たらなかった）と、つながりの手がかりを報酬として学ばせた注意の研究（語は social reward と attentional capture か attention。題に当たるもの 9 件を、まだ読んでいない）。
+- 選び方そのもの（注意と価値の見積もり）の研究：受け取る側の選び方の記録で回しました。Europe PMC で、題に attentional bias と threat と meta-analysis か review、dot-probe と reliability ほか、value-driven attentional capture、attentional bias for positive emotional stimuli、rejection sensitivity と attention、relevance detection、selection history、social attention と real ほか、social features と salien*、salience network と homeostatic、題に salience network と要旨に test-retest・reproducib*・replicat* のどれか（19 件。網そのものの批判は無し）を引きました。残るのは、二つの向きの重みを同じ人・同じ課題で比べた研究（当たらなかった）と、つながりの手がかりを報酬として学ばせた注意の研究（語は、題に social reward と attention か attentional。題に当たるもの 9 件を、まだ読んでいない）。
 - 孤独の感じと、社会の脅威の語・社会でない否定の語への脳の応答を比べた研究：Cacioppo ら（2016）の本文（有料）。
 - 動物の恐れと社会の恐れを別の系とする論：Öhman（1986。確認画面）と Öhman & Mineka（2001。有料）。個人の価値と知覚の古典：Postman ら（1948。確認画面）と Klein ら（1951。有料）。
 - 顕著性のネットワークの模型：Menon & Uddin（2010）の本文（確認画面）。
@@ -1298,7 +1298,7 @@ Seth（2013）と Barrett & Simmons（2015）は、体の内側の感じを、�
 
 - Seth & Friston（2016）：内受容の推論を直接示す証拠は「still to be uncovered」と書きます（序）。欠損駆動思考の調べの記録。
 - Camara ら（2025）：心拍に伴う脳の電位の研究は、測り方がそろわず、はっきりした結論を「limits」と書きます（本文）。同じ記録。
-- Maia & McClelland（2004）：体の印の仮説の実験を、気づきを細かく測り直して見ると、本人は思ったより早く言葉で分かっていた、と報告します（p.16079）。欠損駆動思考の調べの記録「判断の手前で、感じてしまうものは何か」。
+- Maia & McClelland（2004）：体の印の仮説の実験を、気づきを細かく測り直して見ると、本人は、行動と少なくとも同じくらい早く、言葉で分かっていた、と報告します（p.16079）。欠損駆動思考の調べの記録「判断の手前で、感じてしまうものは何か」。
 - Poldrack（2006）：脳の部位の活動から心の過程を推す逆推論は、部位の選択性が弱いときは慎重に使うべきだ、と書きます（p.59）。予測と気づきの記録。
 - Seeley ら（2007、14 人・21 人）：顕著性のネットワークが内受容と自律神経の領域に重なる、と書く一方で、測った不安が状態か特性かを分けられない、と書きます（p.2354）。予測と気づきの記録。
 
