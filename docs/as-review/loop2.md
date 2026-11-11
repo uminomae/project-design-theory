@@ -79,3 +79,4 @@
   - 一列の記号：両価の測り方（evaluative space model・ambivalence と measurement）、報告と体のずれ（alexithymia と interoception・emotional granularity・emotion coherence）、言葉に乗らない関係の手がかり（nonverbal cues と trust・prosody と trustworthiness）、関係の値を数やお金に乗せることへの反発（taboo trade-off・sacred values・relational models・crowding out）。
   - 取り違えに気づけるか：年の尺度の気づき（implicit and explicit motives と congruence・insight と psychotherapy・autobiographical reasoning）。Russell 2003 の misattribution（p.158）は、今ある記録から並べられる候補。
 - 欠損駆動思考に、新しい公開ページ「違和感は、どこで立ち、どこで気づかれるのか」が入った（ffadf2f・#113）。一列の記号の節の違和感の出どころの問いにかかわるので、次の周で読む。
+- 判断 9（新しい領域を R5・R1・R6 の三つ回すか）：聞く前の予想は「R5 だけ先に回す」。答え（2026-11-11）は「三つとも回す」で、予想は外れた。領域は A13（一列の記号と、そこに乗らない値）・A14（受け取る側の選び方）・A15（取り違えへの気づき）。三つを並べて回す（モデルは既定・effort high）。
