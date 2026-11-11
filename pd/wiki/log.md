@@ -707,3 +707,8 @@ compile 実行の履歴。append-only。
 - scope: 概念ページ 1・トップ 1
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（畳み「人間・空間・時間の「間」という問い」に pjdhiro の体験二つと情動伝染〔de Vignemont & Singer 2006〕・特殊相対性理論の段、問いの一行を直した）
 - pages: `concepts/Love 駆動開発` の「まだ分からないこと」の一行を直し、「間」の読みを一文で足した。`プロジェクトデザイン` はこの畳みを引いていない。中身は直さず、compiled は今日のまま
+
+## [2026-11-11] check | Love駆動開発の戦略家の不安をクック＝グロイター 2013 の原文の言い方に直し、シャイン 1995 の出典に題を添えたのに合わせて照らした
+- scope: 概念ページ 1・トップ 1
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（「発達の段階で、何が脅威に見えるかが変わる」の段と畳みの表の戦略家の行、心理学の出典の Schein (1995) WP 3821）
+- pages: `concepts/Love 駆動開発` と `プロジェクトデザイン` は、どちらもこの段・表・出典を引いていない。中身は直さず、compiled は今日のまま
