@@ -6,7 +6,7 @@ tags: [source, "awareness-model", "原典解説", "哲学", "現象学", "実存
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/phenomenology-existentialism-intersubjectivity.md"
-compiled: "2026-04-08"
+compiled: "2026-11-11"
 status: 正典
 review_state: 未レビュー
 ---
@@ -114,6 +114,8 @@ Husserl が間主観性を意識間の関係として設定したのに対し、
 4. **対話論的基盤**: 人格の全体性は関係においてのみ実現される（Buber の確認）
 
 神経科学的エビデンス（Eisenberger 2003の社会的痛みと身体的痛みの回路共有、Coan & Sbarra 2015の Social Baseline Theory、Schilbach 2013の第二人称的神経科学）は、これらの哲学的洞察の経験科学的対応物として位置づけられる。
+
+後の照合では、このノートのいくつかの書き方が言い過ぎと出ている。Schilbach ら（2013）は提案で、六年後の総説も「Findings to date suggest」と書き、理論と方法の工夫がまだ要ると書く（Redcay & Schilbach 2019）。その総説は、やり取りと観察の違いを書くが、生存の信号との重みの比べは書いていない。Merleau-Ponty が重視した新生児の模倣は、メタ分析でも、研究グループで結果が分かれ、決まっていない（Davis ら 2021）。間身体性とミラーニューロン系の対応には出典が書かれておらず、ミラーニューロンの役割は総説で動作の低い段に限られている（Heyes & Catmur 2022）。詳しくは意識とはの間主観性の信号の記録（as `evidence/evidence-A10-intersubjective-signals.md`）。
 
 ## 注意
 

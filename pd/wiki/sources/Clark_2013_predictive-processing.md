@@ -6,7 +6,7 @@ tags: [source, "awareness-model", "原典解説"]
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/clark-2013-predictive-processing.md"
-compiled: "2026-04-08"
+compiled: "2026-11-11"
 status: 正典
 review_state: 未レビュー
 ---
@@ -63,4 +63,4 @@ Hohwy（保守派）: 脳はマルコフ毛布の内側に閉じ込められて�
 
 ## awareness-model との関連
 
-v2 §1.2「脳は予測と誤差のシステムである」の認知科学的正当化。精度重み付けは核心仮説を「間主観的予測誤差に生存的予測誤差と同等の精度が配分されている」と翻訳する。[[欠損駆動思考]]は「通常精度を下げるべき誤差信号にあえて高い精度を維持する」操作に対応し、[[ネガティブケイパビリティ]]は予測誤差解消への衝動に抗う態度。Clark の身体化認知と [[Craig_2002_interoception|Craig]]/[[Damasio_1994_somatic-marker|Damasio]] の身体基盤論は収束。
+v2 §1.2「脳は予測と誤差のシステムである」の認知科学的正当化。ノートは、核心仮説を精度の語で「間主観的予測誤差に生存的予測誤差と同等の精度が配分されている」と翻訳できると置いていた。後の照合では、やり取りを予測と精度の語で書く論はある（Friston & Frith 2015、Vasil ら 2020、Bolis ら 2017）が、他者にかかわる予測誤差と生存にかかわる予測誤差の精度を比べた論には当たらなかった。この翻訳はノートが足したもので、研究の記述ではない（意識とはの間主観性の信号の記録（as `evidence/evidence-A10-intersubjective-signals.md`））。脳のモデルの予測誤差は、意識し得ないレベルの過程の語で、[[欠損駆動思考]]の正本は、人が気づける長さの見込みとずれと分けて置いている。ノートは、欠損駆動思考を「通常精度を下げるべき誤差信号にあえて高い精度を維持する」操作に対応し、[[ネガティブケイパビリティ]]は予測誤差解消への衝動に抗う態度。Clark の身体化認知と [[Craig_2002_interoception|Craig]]/[[Damasio_1994_somatic-marker|Damasio]] の身体基盤論は収束。

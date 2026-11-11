@@ -6,7 +6,7 @@ tags: [source, "awareness-model", "原典解説", "社会心理学", "情動伝�
 source:
   repo: "project-design"
   path: "knowledge/evidence/awareness-model/hatfield-1993-emotional-contagion.md"
-compiled: "2026-04-15"
+compiled: "2026-11-11"
 status: 正典
 review_state: 未レビュー
 ---
@@ -51,6 +51,8 @@ Hatfield、Cacioppo、Rapson による 1993 年の短いレビュー論文 "Emot
 - **調律崩壊と健康影響**: 情動調律の不成立 (Stolorow) や愛着不全が長期的健康に影響するという臨床知見は、情動伝染が「社会的付加機能」ではなく生存と連動していることを示唆する
 
 ただし 1993 論文・1994 モノグラフ自体は核心仮説を直接検証したものではなく、「情動伝染という現象が存在する」ことの確立にとどまる。生存連動の直接証拠は Eisenberger (2003) や Holt-Lunstad (2010) など別の系統に依拠する。本ページは**情動伝染概念の定義と機序** の供給源として位置づけられる。
+
+上の「優先処理」「処理優先度の高さ」は、ノートの見立てとして読む。後の照合では、同期の研究は自動性や速さを測っても、生存の信号と比べた優先度は測っていなかった。行動の同期の効果は、実験者が条件を知っていると大きく、偏りを補うと小さい（Rennung & Göritz 2016）。どれだけ同期するかは、相手の信号の感情の意味で変わる、という総説がある（Hoehl ら 2021）。ミラーニューロンの十年の総説は、その領域が担うのは動作の低い段の処理と動きの形の写しで、意図の理解ではないと書く（Heyes & Catmur 2022）。詳しくは意識とはの間主観性の信号の記録（as `evidence/evidence-A10-intersubjective-signals.md`）。
 
 ## 書誌情報
 

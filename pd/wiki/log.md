@@ -712,3 +712,8 @@ compile 実行の履歴。append-only。
 - scope: 概念ページ 1・トップ 1
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（「発達の段階で、何が脅威に見えるかが変わる」の段と畳みの表の戦略家の行、心理学の出典の Schein (1995) WP 3821）
 - pages: `concepts/Love 駆動開発` と `プロジェクトデザイン` は、どちらもこの段・表・出典を引いていない。中身は直さず、compiled は今日のまま
+
+## [2026-11-11] fix | 意識とはの文献レビューの照合し直し（間主観性の信号の記録の判定 4〜16、生存-信頼軸の起点メモ、信頼と別の絶望の概念ノート）を正本に注として足したのに合わせて照らした
+- scope: 概念ページ 1・出典ページ 4・横断ページ 2
+- sources: `pd/knowledge/evidence/awareness-model/` の hatfield-1993・phenomenology-existentialism・clark-2013・friston-2010（照合し直しの節を足した）、as `knowledge/survival-trust-axis-starting-memo.md`・`knowledge/concepts/CN-002`・`CN-006`（注を足し、CN-006 §5 の愛着理論に Ainsworth を足した）
+- pages: `sources/Hatfield_1993_emotional-contagion`・`concepts/情動伝染`・`sources/phenomenology-existentialism_intersubjectivity` に、優先度・ミラーニューロン・新生児の模倣・第二人称の神経科学の言い過ぎを照合し直しの段として足した。`sources/Clark_2013_predictive-processing`・`sources/Friston_2010_free-energy-principle` の、核心仮説を精度の語に翻訳できるという文を、ノートが足した翻訳と分かる文に直した。`cross-refs/concept-entity-map`・`cross-refs/awareness-space-overview` は直した主張を引いていない。中身は直さず、compiled は今日のまま
