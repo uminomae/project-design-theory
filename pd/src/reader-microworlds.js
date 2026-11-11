@@ -995,8 +995,213 @@ function mountProjectToReal(host) {
     draw();
 }
 
+// ============================================================
+// いろんな引き算（前提知識・欠損駆動思考の引き算の章）
+// 虚軸が関わる三つ。どれもひとりでに動き（アニメ）、つまみで自分でも動かせる。
+// つまみに触ると止まり、「動かす」でまた動く。動きを減らす設定の環境では、最初から止めておく。
+// 画面の外にあるあいだは動かさない（IntersectionObserver）。
+// ============================================================
+function autoPlay(host, row, { period, onFrame }) {
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let playing = !reduce, visible = true, t0 = null, phase = 0, raf = 0;
+    const btn = button(row, playing ? '止める' : '動かす', () => { playing ? stop() : play(); });
+    function frame(now) {
+        raf = 0;
+        if (!playing || !visible) return;
+        if (t0 == null) t0 = now - phase * period;
+        phase = ((now - t0) / period) % 1;
+        onFrame(phase);
+        raf = requestAnimationFrame(frame);
+    }
+    function play() { playing = true; t0 = null; btn.textContent = '止める'; if (!raf) raf = requestAnimationFrame(frame); }
+    function stop() { playing = false; btn.textContent = '動かす'; }
+    if (typeof IntersectionObserver !== 'undefined') {
+        new IntersectionObserver(es => {
+            visible = es.some(e => e.isIntersecting);
+            if (visible && playing && !raf) { t0 = null; raf = requestAnimationFrame(frame); }
+        }).observe(host);
+    }
+    if (playing) raf = requestAnimationFrame(frame);
+    return { stop, setPhase(p) { phase = p; } };
+}
+function drawPlaneAxes(ctx, P, cx, cy, unit, N, labels) {
+    ctx.strokeStyle = P.faint; ctx.lineWidth = 1;
+    for (let n = -N; n <= N; n++) {
+        ctx.beginPath(); ctx.moveTo(cx + n * unit, cy - N * unit); ctx.lineTo(cx + n * unit, cy + N * unit); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(cx - N * unit, cy + n * unit); ctx.lineTo(cx + N * unit, cy + n * unit); ctx.stroke();
+    }
+    ctx.strokeStyle = P.mid; ctx.lineWidth = 1.2;
+    ctx.beginPath(); ctx.moveTo(cx - unit * (N + 0.4), cy); ctx.lineTo(cx + unit * (N + 0.4), cy);
+    ctx.moveTo(cx, cy - unit * (N + 0.4)); ctx.lineTo(cx, cy + unit * (N + 0.4)); ctx.stroke();
+    ctx.fillStyle = P.mid; ctx.font = '11px sans-serif';
+    labels.forEach(n => {
+        ctx.textAlign = 'center'; ctx.fillText(signed(n), cx + n * unit, cy + 15);
+        ctx.textAlign = 'right'; ctx.fillText((n < 0 ? '−' : '') + (Math.abs(n) === 1 ? '' : Math.abs(n)) + 'i', cx - 6, cy - n * unit + 4);
+    });
+    ctx.font = '12px sans-serif'; ctx.fillStyle = P.navy;
+    ctx.textAlign = 'right'; ctx.fillText('実軸', cx + unit * (N + 0.4), cy - 8);
+    ctx.textAlign = 'left'; ctx.fillText('虚軸', cx + 8, cy - unit * (N + 0.2));
+}
+function drawArrow(ctx, x0, y0, x1, y1, color, w = 2.5) {
+    ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = w;
+    ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x1, y1); ctx.stroke();
+    const len = Math.hypot(x1 - x0, y1 - y0);
+    if (len < 4) return;
+    const hl = 10, ang = Math.atan2(y1 - y0, x1 - x0);
+    ctx.beginPath(); ctx.moveTo(x1, y1);
+    ctx.lineTo(x1 - hl * Math.cos(ang - 0.4), y1 - hl * Math.sin(ang - 0.4));
+    ctx.lineTo(x1 - hl * Math.cos(ang + 0.4), y1 - hl * Math.sin(ang + 0.4));
+    ctx.closePath(); ctx.fill();
+}
+// 拍（0〜1）を、止まる所のある値の動きに直す。pts は [拍, 値] の並び。間はなめらかにつなぐ
+function keyframes(p, pts) {
+    for (let k = 1; k < pts.length; k++) {
+        const [p0, v0] = pts[k - 1], [p1, v1] = pts[k];
+        if (p <= p1) { const u = p1 > p0 ? (p - p0) / (p1 - p0) : 1; const e = u * u * (3 - 2 * u); return v0 + (v1 - v0) * e; }
+    }
+    return pts[pts.length - 1][1];
+}
+const fmt1 = v => (Math.abs(v) < 0.05 ? '0' : (v < 0 ? '−' : '') + Math.abs(v).toFixed(1).replace(/\.0$/, ''));
+
+// 大きさの差と、差の大きさ：右へ 3 の矢印と、0 のまわりを回る長さ 3 の矢印
+function mountMagnitudeVsDifference(host) {
+    const P = PAL();
+    const view = makeCanvas(host, 0.75);
+    const row = controls(host);
+    const st = status(host);
+    const N = 3;
+    let deg = 90;
+    const play = autoPlay(host, row, { period: 9000, onFrame: p => { deg = Math.round(keyframes(p, [[0, 0], [0.2, 90], [0.3, 90], [0.5, 180], [0.6, 180], [0.9, 360], [1, 360]])) % 360; input.value = deg; draw(); } });
+    const input = slider(row, { label: 'もう一本の向き（度）', min: 0, max: 360, value: deg, onInput: v => { play.stop(); deg = v; draw(); } });
+    function draw() {
+        const { ctx, W, H } = view;
+        ctx.clearRect(0, 0, W, H);
+        const unit = Math.min(W, H) / (2 * N + 1.6), cx = W / 2, cy = H / 2;
+        drawPlaneAxes(ctx, P, cx, cy, unit, N, [-3, -2, -1, 1, 2, 3]);
+        const r = deg * Math.PI / 180, bx = 3 * Math.cos(r), by = 3 * Math.sin(r);
+        // 二本の先を結ぶ線（差の大きさ）
+        ctx.strokeStyle = P.gold; ctx.lineWidth = 2; ctx.setLineDash([5, 4]);
+        ctx.beginPath(); ctx.moveTo(cx + 3 * unit, cy); ctx.lineTo(cx + bx * unit, cy - by * unit); ctx.stroke(); ctx.setLineDash([]);
+        drawArrow(ctx, cx, cy, cx + 3 * unit, cy, P.navy, 3);
+        drawArrow(ctx, cx, cy, cx + bx * unit, cy - by * unit, P.coral, 3);
+        ctx.fillStyle = P.ink; ctx.beginPath(); ctx.arc(cx, cy, 3, 0, Math.PI * 2); ctx.fill();
+        const d = Math.hypot(3 - bx, by);
+        st.innerHTML = '二本の矢印の大きさは、どちらも 3 です。大きさの差は <b>0</b> のままです。'
+            + '差の大きさ（二本の先どうしの距離・点線）は <b>' + d.toFixed(2) + '</b> です。'
+            + (deg === 90 ? 'もう一本は虚軸の上の 3i を指しています。' : deg === 180 ? 'もう一本は −3 を指し、差の大きさは 6 です。' : '');
+    }
+    view.canvas.setAttribute('aria-label', '実軸の上の 3 を指す矢印と、0 のまわりを回る長さ 3 の矢印。大きさの差はいつも 0 で、二本の先どうしの距離は向きによって 0 から 6 まで変わる。');
+    view.onResize = draw;
+    draw();
+}
+
+// 二乗した姿と根：x が 4 から 0 を通って −4 へ動くとき、2 乗して x になる二つの根の動き
+function mountRootsMerge(host) {
+    const P = PAL();
+    const view = makeCanvas(host, 0.75);
+    const row = controls(host);
+    const st = status(host);
+    const N = 4;
+    let x = 4;
+    const play = autoPlay(host, row, { period: 8000, onFrame: p => {
+        x = Math.round(keyframes(p, [[0, 4], [0.05, 4], [0.22, 0], [0.32, 0], [0.48, -4], [0.55, -4], [0.72, 0], [0.82, 0], [1, 4]]) * 100) / 100; input.value = x; draw();
+    } });
+    const input = slider(row, { label: 'x', min: -4, max: 4, step: 0.01, value: x, onInput: v => { play.stop(); x = v; draw(); } });
+    function draw() {
+        const { ctx, W, H } = view;
+        ctx.clearRect(0, 0, W, H);
+        const unit = Math.min(W, H) / (2 * N + 1.6), cx = W / 2, cy = H / 2;
+        drawPlaneAxes(ctx, P, cx, cy, unit, N, [-4, -2, 2, 4]);
+        // x（金の四角）
+        ctx.fillStyle = P.gold;
+        ctx.fillRect(cx + x * unit - 6, cy - 6, 12, 12);
+        ctx.font = '13px sans-serif'; ctx.textAlign = 'center';
+        ctx.fillText('x', cx + x * unit, cy + 30);
+        // 二つの根
+        const s = Math.sqrt(Math.abs(x));
+        const roots = x >= 0 ? [[s, 0], [-s, 0]] : [[0, s], [0, -s]];
+        ctx.fillStyle = P.coral;
+        roots.forEach(([a, b]) => { ctx.beginPath(); ctx.arc(cx + a * unit, cy - b * unit, 7, 0, Math.PI * 2); ctx.fill(); });
+        const xs = fmt1(x);
+        let msg;
+        if (Math.abs(x) < 0.05) msg = 'x は 0 です。二つの根は 0 で一つに重なっています（二重根）。二つの根が重なるのは、ここだけです。';
+        else if (x > 0) msg = 'x は ' + xs + ' です。2 乗して x になる二つの根は、' + fmt1(s) + ' と ' + fmt1(-s) + ' で、実軸の上にあります。';
+        else msg = 'x は ' + xs + ' です。二つの根は ' + fmt1(s) + 'i と ' + fmt1(-s) + 'i で、虚軸の上にあります。実軸の向きの値は 0 です。';
+        st.innerHTML = msg.replace(/(二重根|実軸の上|虚軸の上)/, '<b>$1</b>');
+    }
+    view.canvas.setAttribute('aria-label', 'x（金の四角）が実軸の上を 4 から −4 へ動く。2 乗して x になる二つの根（赤の点）は、x が正なら実軸の上、0 で一つに重なり、負なら虚軸の上に分かれる。');
+    view.onResize = draw;
+    draw();
+}
+
+// 一周しても戻らない：x を 0 のまわりに二周させると、根は一周する（720 度で戻る）
+function mountRoot720(host) {
+    const P = PAL();
+    const view = makeCanvas(host, 0.75);
+    const row = controls(host);
+    const st = status(host);
+    const N = 4;
+    let deg = 0, around = true;   // around＝0 を囲む輪
+    const play = autoPlay(host, row, { period: 12000, onFrame: p => { deg = Math.round(keyframes(p, [[0, 0], [0.04, 0], [0.4, 360], [0.5, 360], [0.86, 720], [1, 720]])); input.value = deg; draw(); } });
+    const input = slider(row, { label: 'x を回した角度（度）', min: 0, max: 720, value: deg, onInput: v => { play.stop(); deg = v; draw(); } });
+    const mode = button(row, '0 を囲まない輪にする', () => {
+        around = !around;
+        mode.textContent = around ? '0 を囲まない輪にする' : '0 を囲む輪にする';
+        draw();
+    });
+    // x と、2 から出発して追いかけた根
+    function at(dg) {
+        const t = dg * Math.PI / 180;
+        if (around) return { x: [4 * Math.cos(t), 4 * Math.sin(t)], r: [2 * Math.cos(t / 2), 2 * Math.sin(t / 2)] };
+        const xr = 3 + 1.5 * Math.cos(t - Math.PI), xi = 1.5 * Math.sin(t - Math.PI);   // 中心 3・半径 1.5（0 を囲まない）。1.5 から出発
+        const m = Math.hypot(xr, xi), a = Math.atan2(xi, xr) / 2;                      // 実部が正なので、いつもの √ で途切れない
+        return { x: [xr, xi], r: [Math.sqrt(m) * Math.cos(a), Math.sqrt(m) * Math.sin(a)] };
+    }
+    function draw() {
+        const { ctx, W, H } = view;
+        ctx.clearRect(0, 0, W, H);
+        const unit = Math.min(W, H) / (2 * N + 1.6), cx = W / 2, cy = H / 2;
+        drawPlaneAxes(ctx, P, cx, cy, unit, N, [-4, -2, 2, 4]);
+        const X = (v) => cx + v[0] * unit, Y = (v) => cy - v[1] * unit;
+        // x の輪と、根の跡
+        ctx.strokeStyle = P.gold; ctx.globalAlpha = 0.35; ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        for (let d = 0; d <= 360; d += 4) { const p = at(d).x; d === 0 ? ctx.moveTo(X(p), Y(p)) : ctx.lineTo(X(p), Y(p)); }
+        ctx.stroke(); ctx.globalAlpha = 1;
+        ctx.strokeStyle = P.coral; ctx.lineWidth = 2.5; ctx.globalAlpha = 0.55;
+        ctx.beginPath();
+        for (let d = 0; d <= deg; d += 3) { const p = at(d).r; d === 0 ? ctx.moveTo(X(p), Y(p)) : ctx.lineTo(X(p), Y(p)); }
+        ctx.stroke(); ctx.globalAlpha = 1;
+        const { x, r } = at(deg);
+        // もう一方の根（白抜き）と、追いかけた根（塗り）
+        ctx.strokeStyle = P.coral; ctx.lineWidth = 2;
+        ctx.beginPath(); ctx.arc(X([-r[0], -r[1]]), Y([-r[0], -r[1]]), 7, 0, Math.PI * 2); ctx.stroke();
+        ctx.fillStyle = P.coral; ctx.beginPath(); ctx.arc(X(r), Y(r), 7, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = P.gold; ctx.fillRect(X(x) - 6, Y(x) - 6, 12, 12);
+        ctx.font = '13px sans-serif'; ctx.textAlign = 'left'; ctx.fillText('x', X(x) + 9, Y(x) - 8);
+        ctx.fillStyle = P.ink; ctx.beginPath(); ctx.arc(cx, cy, 3, 0, Math.PI * 2); ctx.fill();
+        const start = around ? '2' : fmt1(Math.sqrt(1.5));
+        let msg = 'x（金の四角）を ' + deg + ' 度回しました。';
+        if (around) {
+            msg += '追いかけた根（赤の点）は、その半分の ' + (deg / 2) + ' 度だけ回っています。';
+            if (deg === 360) msg += '一周したところで、根は 2 でなく <b>−2</b>、もう一方の根になっています。';
+            else if (deg === 720) msg += '二周（<b>720 度</b>）で、ようやく 2 に戻りました。';
+            else if (deg > 0 && deg < 720) msg += deg < 360 ? '一周すると、どこに着くでしょう。' : 'もう一周すると、2 に戻ります。';
+        } else {
+            msg += '輪が 0 を囲んでいないので、根は ' + start + ' のまわりを小さく行き来し、' + (deg >= 360 ? '<b>一周で元の根に戻ります</b>。' : '一周すると元の根に戻ります。');
+        }
+        st.innerHTML = msg;
+    }
+    view.canvas.setAttribute('aria-label', 'x（金の四角）を 0 のまわりに回すと、2 乗して x になる根（赤の点）は半分の角度だけ回る。一周で根はもう一方の根になり、二周（720 度）で戻る。0 を囲まない輪では一周で戻る。');
+    view.onResize = draw;
+    draw();
+}
+
 // ---- ディスパッチ ----
 const MOUNTS = {
+    'magnitude-vs-difference': mountMagnitudeVsDifference,
+    'roots-merge': mountRootsMerge,
+    'root-720': mountRoot720,
     'neg-rotation': mountNegRotation,
     'i-rotation': mountIRotation,
     'complex-plane': mountComplexPlane,
