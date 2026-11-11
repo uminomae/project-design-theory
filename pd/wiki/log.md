@@ -702,3 +702,8 @@ compile 実行の履歴。append-only。
 - scope: 概念ページ 1・トップ 1
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章 5 に本文を入れた。クック＝グロイター 2013・バレットら 2001・pjdhiro の感情メタ認知の図）
 - pages: `concepts/Love 駆動開発` の工事中の問いの並びから、この章を外し、章の中身を二文で足した。`プロジェクトデザイン` は第四部の章を引いていないので直さず、compiled は今日のまま
+
+## [2026-11-11] update | Love駆動開発の「まだ分からないこと」の畳みに、人間・空間・時間の「間」の段を足したのに合わせて照らした
+- scope: 概念ページ 1・トップ 1
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（畳み「人間・空間・時間の「間」という問い」に pjdhiro の体験二つと情動伝染〔de Vignemont & Singer 2006〕・特殊相対性理論の段、問いの一行を直した）
+- pages: `concepts/Love 駆動開発` の「まだ分からないこと」の一行を直し、「間」の読みを一文で足した。`プロジェクトデザイン` はこの畳みを引いていない。中身は直さず、compiled は今日のまま
