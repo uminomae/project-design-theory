@@ -822,3 +822,8 @@ compile 実行の履歴。append-only。
 - scope: 出典ページ 1（`sources/anthropology-linguistics_intersubjectivity`）
 - sources: Mauss *Essai sur le don* の初出（*L'Année sociologique* t. I、Wikimedia Commons の写しの全文）、Tomasello ら 2005 と Herrmann ら 2007 の要旨（Cambridge の頁・PubMed）。Mbiti ほかの本は貸し出しの写しか書誌しか開けず、照らしていない
 - pages: Mauss の段の地域・拒むことと戦の文・全体的社会事実の次元を論文の言い方に直した。Herrmann ら 2007 の一文は要旨に無い言い方（道具使用・因果推論・空間認知）を要旨の言い方に直し、DOI を張った。主要著作の Mauss に初出の写しのリンクを足した。頭に「このページの出所」の節を置き、照らした所と、LLM の学習時の知識から書かれた所を分けた（`docs/rules/sources.md` §10-6）
+
+## [2026-11-12] check | Hatfield 1993 を原典と照らす（20 ページの組 B）
+- scope: 出典ページ 1（`sources/Hatfield_1993_emotional-contagion`）
+- sources: 上げた人と権利の分からない写し（binknyc.com の PDF。Word で作った原稿の形・13 頁で、誌面の版ではない）の全文。出版社と著者のサイトの版は find-source で見つからなかった（著者のサイトの昔の記録にあったのは情動伝染の尺度だった）
+- pages: 原典に無かった言い方を直した。三つの段は原典では「三つの命題」で、二つ目は求心性のフィードバックだけでなく、中枢の指令・求心性のフィードバック・自己知覚の三つの道を挙げ、どれが担うかは調べる必要があると書く。「数百ミリ秒」「閾下提示」「前反省的」「認知的共感の下位層」は原典に無く、原典の言葉（21 ミリ秒の同期、Dimberg 1982、発達の理論家による区別）に直した。定義は 1992 年の章からの引用で、概念をこの論文が導入したのではないので、そう書いた。頭に「このページの出所」を置き、写しの性格と照らしていない所を書いた（`docs/rules/sources.md` §10-6）。書誌の access_status の行を、読んだ写しの行に替えた。概念のページ `concepts/情動伝染` にも「三段階」「求心性伝達」の言い方が残っている（このページの外なので直していない）
