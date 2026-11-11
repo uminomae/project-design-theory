@@ -797,3 +797,8 @@ compile 実行の履歴。append-only。
 - scope: 出典ページ 1（`sources/phenomenology-existentialism_intersubjectivity`）
 - sources: Buber *Ich und Du*（1923 年 Insel 版、Internet Archive の公開の写しの全文）。Husserl・Heidegger・Merleau-Ponty の主要著作は貸し出しの写しか書誌しか開けず、照らしていない
 - pages: Buber の節の根本語・全き存在・「Alles wirkliche Leben ist Begegnung」は合った。本に無い言い方（「純粋な出会い」「分類する」）を本の言葉に直し、本に無い引用符の言い回し（「抽象的概念ではなく存在論的実在」）の引用符を外した。「あいだ」「確認」は *Ich und Du* に無いと書いた。頭に「このページの出所」の節を置き、照らした所と、LLM の学習時の知識から書かれた所を分けた（`docs/rules/sources.md` §10-6）
+
+## [2026-11-12] check | 臨床心理学・仏教哲学における間主観性を原典と照らす（組 C の二つ目）
+- scope: 出典ページ 1（`sources/clinical-psych-buddhism_intersubjectivity`）
+- sources: 鳩摩羅什訳『中論』（大正蔵 T1564、CBETA の電子テキストの全文）と、*Prasannapadā* の梵文の偈（GRETIL の全文）。Winnicott・Stolorow・Varela らの著作は貸し出しの写しか書誌しか開けず、照らしていない
+- pages: 24:18 は偈の言葉に寄せて書き直した。「全25章」は誤りで 27 章に直した。第 18 章の一文は 18:1 の偈が言う所までに縮めた。頭に「このページの出所」の節を置き、照らした所と、LLM の学習時の知識から書かれた所を分けた（`docs/rules/sources.md` §10-6）
