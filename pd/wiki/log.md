@@ -757,3 +757,8 @@ compile 実行の履歴。append-only。
 - scope: 出典ページ 4（現象学・実存主義／臨床心理学・仏教哲学／教育学・看護学／文化人類学・言語学）
 - sources: pd の調べのノート 4 本（同じ確かめ先の節を足した）。主要著作 49 に一つずつ：論文と、DOI のある本は Crossref で照らした DOI、ほかの本は Internet Archive の書誌の記録（題・著者・年・版元を確かめた。権利の怪しい個人の upload は使わない）か Open Library の書誌、中論は SAT、Prasannapadā は GRETIL
 - pages: 主要著作の行にリンクを足し、「注意」の終わりに「限定の貸し出し」の意味を一文で書いた。ページの整理が原典の本文と照らしていないことは、点検の表 §2 に当たるので断りを書かず、残した課題として報告した。compiled を今日にした。これで URL の無い出典ページは 0 になり、check.sh は `--strict all,wiki` で止める
+
+## [2026-11-12] check | Cole 2007 を原典と照らす（20 ページの一つ目）
+- scope: 出典ページ 1（`sources/Cole_2007_social-regulation-gene-expression`）
+- sources: 原典の全文（PMC2375027、Europe PMC の全文 XML・意識とはの台帳 A06-S23）
+- pages: 数値と方法は全部合った。原典に無かった二つ（「Cole 自身も proof-of-concept と位置づけた」→論文の「比較的小さな標本」、交感神経→β アドレナリン受容体の経路→原典が挙げるのは GR の信号と書き、経路は学習時の知識からの補いと書いた）を直した。頭に「このページの出所」の節を置き、照らした所と、LLM の学習時の知識から書かれた所を分けた（`docs/rules/sources.md` §10-6）。残りの 19 ページも同じ形で照らす
