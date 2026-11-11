@@ -717,3 +717,8 @@ compile 実行の履歴。append-only。
 - scope: 概念ページ 1・出典ページ 4・横断ページ 2
 - sources: `pd/knowledge/evidence/awareness-model/` の hatfield-1993・phenomenology-existentialism・clark-2013・friston-2010（照合し直しの節を足した）、as `knowledge/survival-trust-axis-starting-memo.md`・`knowledge/concepts/CN-002`・`CN-006`（注を足し、CN-006 §5 の愛着理論に Ainsworth を足した）
 - pages: `sources/Hatfield_1993_emotional-contagion`・`concepts/情動伝染`・`sources/phenomenology-existentialism_intersubjectivity` に、優先度・ミラーニューロン・新生児の模倣・第二人称の神経科学の言い過ぎを照合し直しの段として足した。`sources/Clark_2013_predictive-processing`・`sources/Friston_2010_free-energy-principle` の、核心仮説を精度の語に翻訳できるという文を、ノートが足した翻訳と分かる文に直した。`cross-refs/concept-entity-map`・`cross-refs/awareness-space-overview` は直した主張を引いていない。中身は直さず、compiled は今日のまま
+
+## [2026-11-11] compile | Concept-Entity Map（情動伝染の原典ノートの照合し直し）
+- scope: 横断ページ 1
+- sources: pd `knowledge/evidence/awareness-model/hatfield-1993-emotional-contagion.md`（#133 で足された「照合し直し（2026-11-11）」の節）
+- pages: cross-refs/concept-entity-map.md — このノートを引くのは「愛着理論 ↔ 情動伝染」の行だけ。行の記述は今の正本のままで正しい。行の元の §6 に照合し直しの印が付き、優先度の主張に付け足しが要ると出ていることを添えた

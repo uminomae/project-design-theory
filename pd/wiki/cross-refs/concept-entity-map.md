@@ -88,7 +88,7 @@ wiki の `concepts/`（と根の [[プロジェクトデザイン]]）のペー�
 | 山岸俊男 | 抱持 | pd `research/kesson-bridge.md` | 山岸の安心と信頼の区別と、抱持の成立条件の四つの層を「共鳴」とする。分析の軸が違うので、直接の対応ではないと添える |
 | 愛着理論 | 信頼 | pd `research/trust/trust-integrated.md`・pd `concepts/CN-005_trust-hypothesis-inventory.md`・pd `concepts/CN-006_trust-analysis-axes.md` | 信頼の研究の分野に愛着理論（Bowlby の内的作業モデル）を挙げる。仮説の目録は、安全基地が内的作業モデルとして成り立った状態を仮説の一つに置く |
 | 愛着理論 | 抱持 | ks `schema/core-definitions.md` | 抱持の成立条件の L0-L1（自律神経の調整）の根拠に Bowlby を挙げる |
-| 愛着理論 | 情動伝染 | pd `evidence/awareness-model/hatfield-1993-emotional-contagion.md` | 情動調律の崩壊や愛着の不全が、長い目で見た健康に影響することを挙げる |
+| 愛着理論 | 情動伝染 | pd `evidence/awareness-model/hatfield-1993-emotional-contagion.md` | 情動調律の崩壊や愛着の不全が、長い目で見た健康に影響することを挙げる。この行がある §6 には、2026-11-11 の照合し直しの印が付き、生存の信号と同じ優先度を示すという主張には付け足しが要ると出ている |
 
 正本のパスは、pd・ks の `knowledge/` からのパス（`src/content/site-data.mjs` だけは pd の根から）。
 
