@@ -862,3 +862,8 @@ compile 実行の履歴。append-only。
 - scope: 出典ページ 1（`sources/Husserl_1931_cartesian-meditations-v`）
 - sources: 無し。独語の Husserliana I・Cairns の英訳・和訳はどれも本で、Internet Archive の写しは限定の貸し出しだけ。Open Commons of Phenomenology の頁は 403、独語の版元の目次の見本はつながらなかった
 - pages: 頭に「このページの出所」を置き、ページの全部が LLM の学習時の知識から書かれ、原典と照らしていないと書いた（`docs/rules/sources.md` §10-6）。書誌の access_status の行（作業の印）を外した。中身は直していない（第五省察の節の範囲 §42–64 も確かめていない）
+
+## [2026-11-12] check | Durkheim 1897 を原典と照らす
+- scope: 出典ページ 1（`sources/Durkheim_1897_suicide-social-integration`）
+- sources: 原典の全文（1897 年の仏語の初版。Internet Archive の lesuicidetudede00durkgoog、Google の走査の OCR の文字・cs の台帳 D18-S15）
+- pages: 自殺の定義・Book I の非社会的要因・4類型・婚姻と子の保護・1866 年の戦争での 14% の減少・宿命的自殺が注にあること・「社会的事実を物として」は合った。原典と違った所を直した：プロテスタントとカトリックの差は一律の約3倍でなく地域で 20〜30% から 300%（3分の1はプロイセンの比）、確かめられない「18/10万 vs 6/10万」を比に、Wagner と Morselli からの引用の量、「反証的推論を導入」を外した。全文へのリンクが存在しない識別子だったので、読んだ写しに張り直した。頭に「このページの出所」を置いた
