@@ -258,17 +258,21 @@ Love と呼びたいものは、目では見えません。第二部では、見
 
 pjdhiro は、この創造の形を、大海と波の像にいちばん近いと見ています。また、渦を、場の揺らぎそのものが形になったもので、場から切り離して取り出せないものと見ています。
 
-似た形が報告されている例を、五つ挙げます。どれも、「創造とは」の分野ごとの記録で、原典の本文に当たって確かめられているものです。
+pjdhiro は、五段階を海のたとえでも言い換えています。海 → 波 → 波間 → 渦 → 海流 の並びで、場は海、波は波、縁は波間、渦は渦、束は海流にあたります。「創造とは」の[五段階の表](https://uminomae.github.io/project-design-theory/cs/reader/five-stages.html)の「海のたとえ」の列にある言葉です。縁の波間は異質なものが出会う境目に、束の海流は新しい形として残って次の場になる集まりに、それぞれ当たります。
 
-- 量子論（物理学）：量子の重ね合わせは環境と作用し合い、環境の見張りに耐える少数の状態だけが残る、と書かれています。
-- 化学：二つの物質が中間体を取り合い、一方が臨界の濃度を下回ると別の過程に切り替わる行き来が、安定した周期の振動として残る、と書かれています。
-- 心理学：過去の経験から来た見方では解けない行き詰まりが続いたあと、見方が変わると解が見える、と書かれています。
-- 美学（芸術）：崇高では、構想力が理性の理念に及ばず、生の力がいったん妨げられたあと、より強く流れ出る、と書かれています。
-- 経営学：チームは決まった段階を順に通るのでなく、期限の中間点で古い型を捨てて転換する、と書かれています。
+似た形が報告されている例を、五つ挙げます。どれも、[「創造とは」の分野ごとの記録](https://uminomae.github.io/project-design-theory/cs/?modal=domains)で、原典の本文に当たって確かめられているものです。記録には、各論の対立・衝突・統合または新たな安定・単位が列に分けて書かれています。その列を五段階の順に並べたのは Claude の読みで、原典が五段階で書いているわけではありません。
+
+- 量子論（物理学）：場は、一つの量子系とその環境。波は、量子の重ね合わせと、系を見張り続ける環境。縁は、環境との相互作用が、選ばれた状態どうしの干渉を壊すところ。渦は、環境の見張りに耐える少数の状態だけが残ること。束は、残った状態の記録が環境の中に何重にも写されること。
+- 化学：場は、一つの容器の中の三つの中間体。波は、二つの物質が中間体を取り合うこと。縁は、一方が臨界の濃度を下回ると別の過程に切り替わり、その過程が間接に元へ戻すこと。渦は、どちらの過程も勝ちきらず、行き来が安定した形として残ること。束は、初めの状態によらず同じ一つの周期の軌道に行き着くこと。
+- 心理学：場は、一人の頭の中（数秒から数分）。波は、過去の経験から来た見方と、それでは解けない新しい問題。縁は、解けないことが続く行き詰まり。渦は、制約がゆるみ、まとまりがほどけて見方が変わること。束は、解が速く迷わず実行されること。
+- 美学（芸術）：場は、一回の判断。波は、構想力と、理性の理念。縁は、崇高で、構想力が理性の理念に及ばず、生の力がいったん妨げられること。渦と束は分けず、すぐにより強く流れ出ること。
+- 経営学：場は、プロジェクトチーム（数日から数か月）。波は、初回の会合で決まった枠組みと、期限・外部の要求。縁は、期限の中間点で古い型を捨てて外と関わり直すこと。渦と束は分けず、合意した計画で第二の局面に入ること。
+
+この五つは、30 の領域のうちの五つです。ほかの領域の記録にも、同じ列で整理した論が並んでいます。ただ、どの論も当てはまるとは限らず、統合に至らなかった形や、当てはまらなかった論も記録に残っています。五つ以外の領域から事例を挙げるのは 🚧 工事中です。
 
 <details><summary>詳しく — 五つの事例の原典と、記録</summary>
 
-分野ごとの記録は、[創造とは](https://uminomae.github.io/project-design-theory/cs/)の分野の記録（cs/evidence）にあります。書かれていることを、五段階に似た形として並べたものです。似ているかどうかの読みは記録の側にあり、ここでは、原典に何と書かれているかの範囲で述べます。
+分野ごとの記録は、[創造とは](https://uminomae.github.io/project-design-theory/cs/?modal=domains)の分野の記録にあります。30 の領域の一覧の窓が開きます。書かれていることを、五段階に似た形として並べたものです。似ているかどうかの読みは記録の側にあり、ここでは、原典に何と書かれているかの範囲で述べます。
 
 **量子論。** Zurek（2003）は、デコヒーレンスと einselection を、同じ過程の二つの見方として書いています。量子系は環境と相互作用し、環境に何重にも写せる少数の状態だけが残ります。物理学の記録の論 9 です。
 
@@ -283,6 +287,30 @@ pjdhiro は、この創造の形を、大海と波の像にいちばん近いと
 <!--REF:創造-->
 
 出典：Zurek (2003) [“Decoherence, einselection, and the quantum origins of the classical”](https://doi.org/10.1103/RevModPhys.75.715), *Reviews of Modern Physics* 75:715–775（本文照合済。著者稿 arXiv quant-ph/0105127 で読んだ。二つの見方は I.B 節）／Field & Noyes (1974) [“Oscillations in chemical systems. IV”](https://doi.org/10.1063/1.1681288), *Journal of Chemical Physics* 60(5):1877–1884（本文照合済。pp.1877–1879・1882–1884。読んだ写しは授業用の写しで、権利は確かめていない）／Knoblich, Ohlsson, Haider & Rhenius (1999) [“Constraint relaxation and chunk decomposition in insight problem solving”](https://doi.org/10.1037/0278-7393.25.6.1534), *Journal of Experimental Psychology: Learning, Memory, and Cognition* 25(6):1534–1555（本文照合済。pp.1534–1536・1551・1553）／Kant (1790) [*Kritik der Urteilskraft*](https://korpora.org/Kant/aa05/258.html)、アカデミー版 第 5 巻 1908（本文照合済。独語原文。美しいものは p.217、崇高は pp.245・257–258。読んだ写しは、アカデミー版の頁ごとの公開（korpora.org）の p.258。手元では頁の画像でも読んだ）／Gersick (1988) [“Time and transition in work teams”](https://doi.org/10.2307/256496), *Academy of Management Journal* 31(1):9–41（本文照合済。pp.9・10・16・18・27–28・30）。分野ごとの記録：[物理学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D02-physics.md)・[化学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D03-chemistry.md)・[心理学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D14-psychology.md)・[美学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D15-aesthetics.md)・[経営学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D22-business-management.md)。
+
+</details>
+
+<details><summary>詳しく — 領域ごとの、身近な現象と、研究の分析</summary>
+
+五つの領域について、中学生にもわかる身近な現象と、記録で原典の本文を読んで確かめた分析を二つずつ挙げます。記録で読めていないものは外してあります。ここで「分析」と呼ぶのは、記録に書かれている原典の内容で、どれが最先端かの順位は付けていません。
+
+**物理学。** 現象：①下から温めた薄い液体の層が、細胞に分かれて六角形の網になる（ベナール対流）。②湿った空気が冷えて水滴になる（過飽和の蒸気から滴ができること）。分析：①Zurek（2003）は、量子の重ね合わせが環境と作用し合い、環境に何重にも写せる少数の状態だけが残ると書いています。②Zurek（1996）らの論と、16 個のイオンの結晶を使った実験（Ulm ら 2013・Pyka ら 2013）は、相転移で領域ごとに独立に選ばれた向きの食い違いが、欠陥として残ることを書いています。欠陥の数は、相転移を横切る速さで決まります。
+
+**化学。** 現象：①溶液の色が周期的に変わる（BZ 反応）。②二つの物質が広がり合う中で、均一だった状態に模様ができる（反応拡散）。分析：①Novák と Tyson（2008）は、持続する振動に、負のフィードバック・遅れ・非線形性・時間の尺度の釣り合いの四つの条件がそろうことを挙げています。②Field と Noyes（1974）は、BZ 反応を三つの中間体の模型で書き、初めの状態によらず同じ周期の軌道に行き着くと書いています。
+
+**心理学。** 現象：①どうしても解けなかった問題が、ある見方に気づいたとたんに解ける（洞察）。②やりたくない課題を頼まれて少ない報酬で引き受けると、自分に「面白かった」と言い聞かせる（認知的不協和）。分析：①Knoblich ら（1999）は、洞察の問題で制約がゆるむことと、見慣れたまとまりがほどけることが、表象を変えると書いています。②Diamond（2013）は、見方を切り替えるときは前の構えを抑えて別の見方を作業記憶に載せ、コストは準備で減るが消えないと書いています。
+
+**美学（芸術）。** 現象：①すさまじい嵐や高い山を前に、怖さと引き込まれる気持ちが同時に起きる（崇高）。②能で、見る人が知らないから花になる（世阿弥「秘すれば花」）。分析：①Kant（1790）は、崇高で構想力が理性の理念に及ばず、生の力がいったん妨げられてから、すぐにより強く流れ出ると書いています。②岡倉覚三（1906）は、完成より完成を求める過程に重きを置き、不完全を心の中で完成させる者だけが美を見いだす、と書いています。
+
+**経営学。** 現象：①学期の中ほどで、グループの進め方を急に変える。②グループ作りで、ぶつかったあとに決まりができて動き出す。分析：①Gersick（1988）は、八つのチームが期限の中間点で古いやり方を捨てて転換すると書いています。②March（1991）は、探索と活用のどちらかに偏ると、未熟な案が散るか、最適でない安定に閉じ込められると書いています。
+
+芸術には、神話も入れます。『古事記』上巻は、イザナギとイザナミが天の御柱を廻る話を書いています。二柱は淤能碁呂島に降りて天之御柱と八尋殿を見立て、イザナミが身の「成り合はぬ処」を、イザナギが「成り余れる処」を述べます。イザナギが「吾与汝行廻逢是天之御柱，而為美斗能麻具波比」と言い、イザナミが右から、イザナギが左から廻り逢います。このときイザナミが先に「阿那迩夜志愛袁登古袁」と言い、生まれた子は水蛭子で、葦の船に入れて流されます。二柱は天神に相談し、占いで「女が先に言ったのが良くない」と告げられ、廻り直します。今度はイザナギが先に言い、淡道の島から国生みが続き、大八島国が生まれます。
+
+五段階にあてはめると、場は淤能碁呂島とその柱、波は「成り合はぬ処」と「成り余れる処」の差、縁は柱を右と左から廻り逢うところ、渦は言葉を交わして子が生まれること（水蛭子は流され、至らない形）、束は廻り直したあとに続く国生みです。この対応づけは Claude の読みで、古事記がそう書いているわけではありません。本文は翻刻（Wikisource）で読みました。底本の頁との突き合わせはしていないので、神話の部分の照合は 🚧 工事中です。
+
+<!--REF:創造-->
+
+出典：Zurek (1996) [“Cosmological experiments in condensed matter systems”](https://doi.org/10.1016/S0370-1573(96)00009-9), *Physics Reports* 276:177–221／Ulm ら (2013) [“Observation of the Kibble–Zurek scaling law for defect formation in ion crystals”](https://doi.org/10.1038/ncomms3290), *Nature Communications* 4:2290／Pyka ら (2013) [“Topological defect formation and spontaneous symmetry breaking in ion Coulomb crystals”](https://doi.org/10.1038/ncomms3291), *Nature Communications* 4:2291（三つとも本文照合済。著者稿 arXiv で読んだ）／Novák & Tyson (2008) [“Design principles of biochemical oscillators”](https://doi.org/10.1038/nrm2530), *Nature Reviews Molecular Cell Biology* 9(12):981–991（本文照合済。PMC の著者稿）／Diamond (2013) [“Executive functions”](https://doi.org/10.1146/annurev-psych-113011-143750), *Annual Review of Psychology* 64:135–168（本文照合済。PMC の著者稿を節の名前で控えた）／岡倉覚三 (1906) [*The Book of Tea*](https://archive.org/details/cu31924021575695), Fox, Duffield（本文照合済。コーネル大学図書館の本の走査。pp.3・95）／March (1991) [“Exploration and exploitation in organizational learning”](https://doi.org/10.1287/orsc.2.1.71), *Organization Science* 2(1):71–87（本文照合済。読んだ写しは授業用の写しで、権利は確かめていない）。Zurek (2003)・Field & Noyes (1974)・Knoblich ら (1999)・Kant (1790)・Gersick (1988) は上の出典。世阿弥「秘すれば花」は舞台芸術の記録の照合（別紙口傳 p.60）による。『古事記』上巻：[Wikisource の翻刻](https://zh.wikisource.org/wiki/古事記/上卷)（CC BY-SA 4.0。伊耶那岐・伊耶那美の部分を読んだ。底本は明示されていない）。分野ごとの記録：[物理学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D02-physics.md)・[化学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D03-chemistry.md)・[心理学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D14-psychology.md)・[美学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D15-aesthetics.md)・[経営学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D22-business-management.md)。
 
 </details>
 
