@@ -74,6 +74,27 @@
 - **心理的安全とのつながり**：§0-1 のとおり、心理的安全は、シャインとベニス 1965 が解凍に足した。五段階で言えば、レヴィンが「（必要なら）」と置いた衝突の段の扱いを、揺さぶり（罪悪感と不安）と安全の釣り合いとして書き直したのが、シャインの側（Claude の読み。シャインとベニス 1965 は二次資料のみ）。
 - **cs に入れるか**：cs の 30 分野の記録（`cs/evidence/evidence-Dxx-*.md`）には、まだレヴィン 1947 の行は無い。分野で言えば D14 心理学・D18 社会学・D22 経営学のどれにも掛かる。入れるかと置き場は pjdhiro に聞く（入れるなら `docs/cs-review/README.md` の照合の周の形で、原典の写しを載せてよいものに替えてから）。
 
+### 0-3. ロジャーズ 1954 の「創造」は何か（pjdhiro 2026-11-12）
+
+問い（pjdhiro 2026-11-12・違和感帳 i20261112010421x2s）：心理的安全性とはの「1954 年　ロジャーズの創造の条件」の段について、「ここでいう創造とは、自己刷新のことかもしれない。それ以外も含むのか調べ」。
+
+- 読んだもの：「Toward a Theory of Creativity」の全文の再録。Vernon, P. E. (Ed.) (1970). *Creativity: Selected Readings*. Penguin. pp.137–151。章の頭に、初出が *ETC: A Review of General Semantics* 11, 1954, pp.249–260 で、Anderson 編『Creativity and its Cultivation』1959 に再録されたとある。写しは gwern.net に置かれた本の PDF（第三者が置いた写し）。照合の状態は「未照合（第三者が置いた写しで読んだ）」。頁は再録の頁。この写しには pp.144–145（内なる条件の B・C と、創造の行為に伴うものの前半）が無く、読めていない。
+- §0 の表のロジャーズの列（「頁は未確定」「二次資料のみ」）と §3 の「1961 の再録の断片だけ」は、この節で更新する。「X. Psychological safety」の節は、再録の p.147。三つの過程（無条件の価値として受け入れる・外からの評価が無い風土・共感的な理解）は pp.147–148。
+
+**答え：自己の刷新に限らない。外の産物を含み、自己の刷新はその一つ。**
+
+- 定義の文（p.139）：創造の過程とは「行為の中に、新しい関係の産物が立ち現れること。一方は個人の独自さから、もう一方はその人の生の材料・出来事・人・状況から育つ」（"the emergence in action of a novel relational product, growing out of the uniqueness of the individual on the one hand, and the materials, events, people, or circumstances of his life on the other"）。
+- 産物が要る（p.138）：科学者として、観察できる何か、創造の産物が無ければならない。空想がどれほど新しくても、言葉にされ、詩に書かれ、芸術作品や発明になるまでは、創造とは定義できない。
+- 中身を選ばない（p.139）：絵を描く、交響曲を作る、新しい殺しの道具を考え出す、科学の理論を作る、人の関係の新しい手立てを見つける、心理療法のように自分の人格の新しい形をつくる。この間に創造の過程の根本の違いは無い、と置く。括弧で、創造に特に関心を持ったのは芸術でなく心理療法の経験からで、個人が治療関係の中で自分を作り直すのを間近に知ったから、と書く。
+- 産物は個人そのものではない（p.139）：創造はいつも産物に個人の印を押すが、産物は個人でも材料でもなく、二つの関係に与る。
+- 善し悪しと程度を入れない（pp.139–140）：痛みを和らげる方法も、新しい拷問の方法も、どちらも創造。社会の評価は揺れ動くので定義に入れない（ガリレオとコペルニクス）。集団に受け入れられることも定義から外す。子どもが新しい遊びを考える、アインシュタインの相対性理論、主婦の新しいソース、若い作家の最初の小説、どれも創造で、多い少ないの順を付けない。
+- 自己との関係は、動機の側に置く（p.140）：創造の源は、心理療法で治す力として見つかるのと同じ、人が自分を実現し、自分の可能性になろうとする傾き。生き物がいちばん十全に自分であろうとして、環境と新しい関係を結ぶときの、最初の動機。人が創造するのは、それが満足で、自己を実現していると感じられるから（p.141）。
+- 心理的安全は、この創造のうち「建設的な創造」を育てる外の条件として置かれる（p.146）。経験に開かれているほど、創造は建設的になりやすい（pp.141–142）。安全と自由の条件の下で、集団はより多くの新しい産物をつくる、という仮説も立てる（p.150）。
+
+**まとめ（Claude の読み）**：ロジャーズの創造は、外の産物（作品・理論・発明・道具）を含み、自己の人格を新しくつくることもその一つとして同じ過程に入る。自己の刷新は、定義の範囲でなく、ロジャーズがこの論を書いた出どころ（心理療法の経験）と、動機（自己実現の傾き）の側にある。pjdhiro の「自己刷新のことかもしれない」は、出どころと動機の読みとしては当たっていて、範囲としては狭い。
+
+- 五段階との関係（Claude の読み。問われてはいない）：産物を「個人と、生の材料・出来事・人・状況との関係」から生まれるものと置くのは、縁（異質なものが出会う境目で新しい関係が生まれる）に近い。善し悪しを定義に入れないのは、五段階の「悪い統合も統合」（stance 1-2）と同じ構え。対立や衝突が欠かせないとは書いていない。読めた範囲で、安全は衝突を和らげる側に置かれる。
+
 ## 1. 段ごとの表
 
 照合の状態の語は `docs/rules/sources.md` §3 にそろえた。
@@ -106,7 +127,7 @@
 
 - カーン 1990 の本文：有料。無料の写しは上げた人の分からない写しだけ。参考文献の一覧は書誌データで見たが、どの文献を心理的安全のところで引いたかは読めていない。サンドラー 1960・ロジャーズ 1958・マズローが心理的安全の定義に効いているかは、本文を読むまで書けない。
 - シャインとベニス 1965 の本文：貸出本で、全文検索の断片だけ。心理的安全の節の脚注（見出しに `*` がある）が何を指しているかは読めていない。ロジャーズとの関係を確かめるには、ここが要る。
-- ロジャーズ 1954 の初出誌（*ETC* 11(4)）：見つからない。1961 の再録の断片だけ。
+- ロジャーズ 1954 の初出誌（*ETC* 11(4)）：見つからない。1961 の再録の断片だけ。→ 2026-11-12 に Vernon 編 1970 の再録で全文を読んだ（§0-3。第三者が置いた写し。pp.144–145 は写しに無い）。
 - シャイン 1956・1961（捕虜の洗脳の研究）：今回は開いていない。シャインの「臨床」の側が、どの臨床の流れ（精神分析か、精神医学か）だったかは、ここで確かめられる。
 - マズロー 1942「心理的な安心・不安」：系譜の中で引く箇所が無かったので、開いていない。
 
@@ -125,6 +146,7 @@
 - Edmondson, A. (1999). Psychological safety and learning behavior in work teams. *Administrative Science Quarterly*, 44(2), 350–383. https://doi.org/10.2307/2666999 （読んだ写し：MIT の授業資料 https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Group_Performance/Edmondson%20Psychological%20safety.pdf 。pp.351–354・参考文献）
 - Schein, E. H. (1995). *Kurt Lewin's change theory in the field and in the classroom: Notes toward a model of managed learning*. MIT Sloan Working Paper 3821. https://hdl.handle.net/1721.1/2576 （pp.1–5・参考文献 pp.32–33）
 - Schein, E. H., & Bennis, W. G. (1965). *Personal and organizational change through group methods: The laboratory approach*. Wiley. https://archive.org/details/personalorganiza0000sche （全文検索の断片）
+- Rogers, C. R. (1954). Toward a theory of creativity. *ETC: A Review of General Semantics*, 11, 249–260. 再録：Vernon, P. E. (Ed.) (1970). *Creativity: Selected readings* (pp.137–151). Penguin. （読んだ写し：https://gwern.net/doc/psychology/writing/1970-vernon-creativity.pdf 。第三者が置いた写し。§0-3。手元の写しは本体の `.cache/raw/rogers1954/`）
 - Rogers, C. R. (1961). *On becoming a person*. Houghton Mifflin. https://archive.org/details/onbecomingperson0000carl （全文検索の断片）
 - Kahn, W. A. (1990). Psychological conditions of personal engagement and disengagement at work. *Academy of Management Journal*, 33(4), 692–724. https://doi.org/10.2307/256287 （参考文献の一覧：https://api.openalex.org/works/W2132199097 ）
 - Lewin, K. (1947). Frontiers in group dynamics: Concept, method and reality in social science; social equilibria and social change. *Human Relations*, 1(1), 5–41. https://doi.org/10.1177/001872674700100103 （読んだ写し：Internet Archive に個人が上げた写し https://archive.org/details/lewin-1947-frontiers-in-group-dynamics 。§0-1・§0-2。手元の写しは本体の `.cache/raw/lewin1947/`）
