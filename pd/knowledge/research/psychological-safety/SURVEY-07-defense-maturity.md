@@ -197,6 +197,69 @@ DSM-5 について：Di Giuseppe & Perry は、DSM-5 で防衛の軸が外され
 - 来歴の章の 1995 年の段：「その一つに心理的安全を置きました。」のあとに、三つの過程の名と、p.5 の「十分な心理的安全が無いと、知らせは否認されるか、ほかの形で防衛される」を一、二文足す。否認・分裂・投影は第二部の防衛の表に並ぶ防衛機制だ、と書き、防衛の章へページ内リンクを張る。
 - 防衛の章の「防衛の必要度」の段：シャインの「脅威の量と心理的安全を釣り合わせる」（p.5）を、原典から言えることの一つとして足し、来歴の 1995 年の節へ戻るリンクを張る。§4-3 の「心理的安全性と防衛の水準を並べて測った研究には当たっていない」は残る（シャインは理論の論文で、測っていない）。
 
+## 7. 防衛したい心の弱点の体系：恥と罪悪感、エドモンドソンの重心（違和感帳 i2026111201185424g）
+
+起点：第三部の二軸の章の表の行「エドモンドソン：恥・拒絶・罰からの守り／尊重と信頼」について、pjdhiro「エドモンソンは弱さや惨めさへの心理防衛について重きを置いていて、誤解を生むのは、安全という言葉から、悪さや罪や感謝や謝罪の問題のように入り口で思ってしまう人がいることじゃないかな。防衛したい心の弱点のようなものは体系があると思うな。それは非二元的で相互に密接に関連するけど、分けることはできる」（司令塔経由。本人の見方として引く候補）
+
+### 7-1. エドモンドソン 1999 は、恥・拒絶・罰のどれに重きを置いているか
+
+原典：Edmondson (1999)（本文照合済。本体の `.cache/raw/issue90/Edmondson_1999_psychological_safety.pdf` を pdftotext で読み直した。頁は雑誌の頁）
+
+- 定義の段（p.354）："a sense of confidence that the team will not embarrass, reject, or punish someone for speaking up."
+- 学習行動を控える理由として書かれているのは、像と面子：誤りを認めたり助けを求めたりすると "an individual may appear incompetent and thus suffer a blow to his or her image"（p.351）。面子を保つ研究（Goffman 1955）を引き、助けを求める・誤りを認める・フィードバックを求めることは "a threat to face" になる（pp.351–352）。
+- 仮説の段：誤りを持ち出さないのは "concerned about being seen as incompetent"（p.355）。
+- 罰について：考察で、学習行動を可能にするのは "confidence that they will not be punished for a well-intentioned interpersonal risk"（p.376）。結論でも "well-intentioned interpersonal risks will not be punished"（p.377）。罰が向けられる対象は、善意の対人のリスクとして書かれている。
+- 語の数：論文の本文に shame は 0 回、guilt・apology・wrongdoing・moral も 0 回。embarrass は 3 回（定義の三つの動詞の一つと、「threat or embarrassment」の 2 回）。
+- 尺度の項目（p.382 の付録）には「誤りをすると、たいてい責められる（held against you）」「違う人を拒むことがある」が並ぶ。
+
+言えること：
+
+- エドモンドソンが、学習行動を控える理由として本文で厚く書いているのは、無能に見えること・像への打撃・面子を失うことで、悪いことをした責めや罪ではない。罰も、善意で取った対人のリスクへの罰として書かれている。本人の見立て「弱さや惨めさへの心理防衛について重きを置いていて」は、「無能に見えること（弱さ）への防衛に重きを置いている」の形でなら、原文から言える。
+- 「悪さや罪や謝罪の問題」の語彙（guilt・apology・wrongdoing）は、論文に出てこない。
+
+言えないこと：
+
+- エドモンドソンは shame の語を使っていない。使っているのは embarrass（きまり悪さ）。下の Tangney らは、恥ときまり悪さを別の感情として扱っている。読み物の「恥をかかされない」は embarrass の訳で、日本語の「恥をかく」はきまり悪さも含むので訳としては通るが、「エドモンドソンは恥（shame）に重きを置いた」とは言えない。
+- 「惨めさ」に当たる語は論文に無い。
+
+### 7-2. 恥と罪悪感の区別
+
+原典：Tangney, J. P., Stuewig, J., & Mashek, D. J. (2007). Moral emotions and moral behavior. *Annual Review of Psychology* 58:345–372（本文照合済。PMC3083636 の著者稿を、ブラウザで開いて全文を読んだ。NIH の公開。自動取得は確認画面で止まった）。節の名で控える。
+
+- 恥・罪悪感・きまり悪さ・誇りは、自分を振り返り評価することで起きる「自己意識的な感情」の家族で、感情の向かう先は自分（節「SELF-CONSCIOUS EMOTIONS」）。
+- いまいちばん有力な分け方は、ヘレン・ブロック・ルイス（1971）の、自分そのものか行為か：恥は自分の全体への否定的な評価、罪悪感は特定の行為への否定的な評価（節「What's the difference between shame and guilt?」）。
+  - 鍵の文："shame involves a negative evaluation of the global self; guilt involves a negative evaluation of a specific behavior."
+  - 引き起こす出来事の種類では、ほとんど分けられない。人前か一人かでも分けられない（同じ節）。
+- 恥は、小さくなる感じ・価値の無さ・無力さ・さらされている感じを伴う。罪悪感では、さらされた自分の核を守る必要はなく、行為とその結果に目が向く："Rather than needing to defend the exposed core of one's identity, people in the throes of guilt are drawn to consider their behavior and its consequences."（同じ節）
+- 動機の向き（節「Hiding versus amending」）：恥は否認し、隠れ、逃げる試みと結びつく。罪悪感は告白・謝罪・結果を打ち消すことと結びつく。"guilt promotes constructive, proactive pursuits, whereas shame promotes defensiveness, interpersonal separation, and distance."
+- 恥と怒り（節「Constructive versus destructive reactions to anger」）：恥を感じやすい人は、責めを外に向け、怒りを壊す形で出しやすい。デートの関係で、恥を感じやすいことが心理的虐待の加害と相関し、怒りが間をつないだ研究（Harper ら 2005）を引く。"Desperate to escape painful feelings of shame, shamed individuals are apt to turn the tables defensively, externalizing blame and anger outward onto a convenient scapegoat."
+- 二つは重なる（節「Psychological symptoms」）：罪悪感が自分全体へ広げられると恥と溶け合い（shame-fused guilt）、問題になるのは恥の成分の側。
+- 恥への対処の型（節「Styles of coping」）：ネイサンソンの恥のコンパス（自分を攻める・引きこもる・避ける・他人を攻める）と、認めて謝り償う適応の型。
+
+### 7-3. 精神分析の防衛は、何から心を守るのか
+
+- DMRS の七水準（§1-3。Di Giuseppe & Perry 2021 の Table 1）は、水準ごとに守る相手が違う形で書かれている。水準 4 は失敗・批判・失望が生む弱さ・無力・恥から自尊心を守る。水準 2 は罰され・傷つけられ・見捨てられる差し迫った脅威の不安から守る。水準 3 は受け入れがたい現実と自分の役割を認めないことで守る。水準 1 は耐えられない苦痛を外へ働きかけて逃がす。神経症的・強迫的な水準は、受け入れがたい願いや考え・感情を意識の外に置く。著者は「不安、または内や外から来る脅威の感じ、または葛藤」から守る、と全体をまとめる（p.2）。
+- アンナ・フロイト（1936、英訳 1937）は、防衛を動かす不安を、本能の不安・外界の不安・良心（超自我）の不安の三つに分けた（Love駆動開発の防衛の章で本文照合済。英訳の本文で確かめている。sources §4-5 により読み直さず参照する）。良心の不安は、罪悪感の側に近い。
+- シャイン 1995（§6）の学ぶ不安は、効力・自尊心・同一性を失う感じと面子の喪失で、恥の側に入る。
+
+### 7-4. 言えること・言えないこと
+
+- 言える：
+  - 心が守ろうとするものを分けた体系は、いくつかの原典にある。感情の側では、自分全体が否定される恥と、行為が否定される罪悪感を分けた研究がある（ルイス 1971・Tangney ら 2007）。防衛の側では、DMRS が水準ごとに、自尊心と恥・罰と見捨てられ・受け入れがたい現実・耐えられない苦痛と、守る相手を書き分けている。アンナ・フロイトは不安を三つに分けた。
+  - 恥と罪悪感は分けられるが、溶け合いもする（Tangney ら）。本人の「非二元的で相互に密接に関連するけど、分けることはできる」は、この研究の書き方と同じ向き。
+  - エドモンドソン 1999 の理由づけの重心は、無能に見えること・像・面子の側（恥やきまり悪さの側）にあり、罪や謝罪の語彙は無い（7-1）。
+  - 恥の側の防衛は、隠れる・否認する・責めを外へ向ける・攻撃に向かいやすい。罪悪感は、謝り償う向きに働く（Tangney ら）。§3 の職場のいじめの段（傷つきやすい自己愛が恥を通して虐待的な監督と結びつく）と同じ向き。
+- 言えない：
+  - 「安全」の語から、悪さや罪や謝罪の問題として受け取る人がいる、ということを示した資料には当たっていない。これは本人の見方として引き、誤解の章では「〜という受け取り方」の一つとして置く形になる。
+  - 「感謝」がどの側に入るかは、読めた原典では扱われていない（Tangney らは感謝を正の道徳感情として別に扱う）。
+  - 恥と罪悪感の区別と DMRS の水準は、別の研究の分け方で、二つを一つの体系にまとめた原典は読んでいない。並べるのはこのページ。
+
+### 7-5. 本文への入れ方（案）
+
+- 誤解の章の「罰されなければ安全だ、という受け取り方」の節：本人の見方のカード（上の言葉。終わりの体系の一文まで含めるかは本人に聞く）→ 原典から言えること：エドモンドソンの理由づけは無能に見えること・像・面子で、罰は善意のリスクへの罰として書かれている（7-1）→ 恥と罪悪感の区別（7-2）を一段。
+- 二軸の章の表の行はそのまま。行の終わりの欄に「理由づけの重心は、無能に見えることと面子」を足すかは、表の幅を見て決める。
+- 体系（7-3）は、防衛の章の水準の表と同じ並びの話なので、防衛の章の表のあとに「何から守るか」の列として既に入る。誤解の節からその表へリンクする。
+
 ## 書誌の表
 
 | 著者 | 年 | 題 | DOI・確かめ先 | 照合の状態 | 手元 |
@@ -208,6 +271,8 @@ DSM-5 について：Di Giuseppe & Perry は、DSM-5 で防衛の軸が外され
 | Cilliers, F. | 2012 | A systems psychodynamic description of organisational bullying experiences. *SA Journal of Industrial Psychology* 38(2), Art. #994 | [10.4102/sajip.v38i2.994](https://doi.org/10.4102/sajip.v38i2.994)（Crossref 一致。Crossref の発行日は 2012-01-10、論文の表記は 2012-03-20 受理後の刊行） | 本文照合済（出版社の公開版の全文 XML・CC BY） | `.cache/raw/ps-defense/cilliers.html` |
 | Sui, S. X., Malik, S., Tiliopoulos, N., & Yu, L. | 2026 | Dark Triad traits and workplace bullying: a systematic review and meta-analysis of personality, power, and psychosocial safety. *Frontiers in Psychology* 17:1738277 | [10.3389/fpsyg.2026.1738277](https://doi.org/10.3389/fpsyg.2026.1738277)（Crossref 一致）・PMC12995606 | 本文照合済（出版社の公開版・CC BY） | `.cache/raw/ps-defense/Sui_2026_darktriad_bullying.pdf` |
 | Schein, E. H. | 1995 | Kurt Lewin's change theory in the field and in the classroom: Notes toward a model of managed learning. MIT Sloan Working Paper 3821 | [hdl.handle.net/1721.1/2576](https://hdl.handle.net/1721.1/2576) | 本文照合済（MIT DSpace・大学の機関リポジトリ） | `.cache/raw/issue90/Schein_1995_WP3821_kurt_lewin.pdf` |
+| Tangney, J. P., Stuewig, J., & Mashek, D. J. | 2007 | Moral Emotions and Moral Behavior. *Annual Review of Psychology* 58:345–372 | [10.1146/annurev.psych.56.091103.070145](https://doi.org/10.1146/annurev.psych.56.091103.070145)（Crossref 一致）・[PMC3083636](https://pmc.ncbi.nlm.nih.gov/articles/PMC3083636/) | 本文照合済（PMC の著者稿・NIH の公開。ブラウザで全文を開いて読んだ） | — |
+| Edmondson, A. C. | 1999 | Psychological safety and learning behavior in work teams. *Administrative Science Quarterly* 44(2):350–383 | [10.2307/2666999](https://doi.org/10.2307/2666999) | 本文照合済（読み物ですでに使用。今回 pp.351–355・376–377 を読み直した） | `.cache/raw/issue90/Edmondson_1999_psychological_safety.pdf` |
 | Cook-Greuter, S. R. | 2013 | Nine Levels of Increasing Embrace in Ego Development | 本文の出典と同じ | 本文照合済（読み物の第一部で使用済み） | — |
 
 ## 本文を読めなかったもの（読み物には載せない）
