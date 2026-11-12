@@ -872,3 +872,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ（`cross-refs/kesson-space-overview`・`concepts/抱持`）
 - sources: `ks/index.html`（章「「私は引き算をしていた。数直線の外で。」」を足した版）
 - pages: 概観の章立ての表に新しい章の一行と、来歴に一文を足した。抱持は、新しい章が抱持の言い方に触れないので本文を変えず、checked を書いた
+
+## [2026-11-12] compile | 意識とはの概観（記録 A16）・抱持（引き算の章の直し）
+- scope: 2 ページ（`cross-refs/awareness-space-overview`・`concepts/抱持`）
+- sources: `as/index.html`（調べてきたことの一覧に「神経系の分かれ方と二つの信号」を足した版）・`ks/index.html`（いろんな引き算の章と畳みを並べ直した版）
+- pages: 概観は、記録の数を十六本にし、最後の記録が何を問い何を見るかを一文で足した。抱持は、ks の直しが引き算の例の並べ替えと足しだけで抱持の言い方に触れないので本文を変えず、checked を書いた
