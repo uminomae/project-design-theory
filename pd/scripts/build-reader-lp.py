@@ -107,6 +107,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/anshin/READER-anshin.md",
+        ROOT / "scripts/reader-anshin-template.html",
+        ROOT / "reader/anshin.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/love-history/READER-love-history.md",
         ROOT / "scripts/reader-love-history-template.html",
         ROOT / "reader/love-history.html",

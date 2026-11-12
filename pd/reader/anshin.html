@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/anshin.html を直接編集しないでください。
+  正本:   knowledge/research/anshin/READER-anshin.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「安心とは」のページです。安心とは何かを、語の来歴の順にたどる。禅の達磨安心（心を探しても得られないと知る）、浄土のあんじん（救いを信じて定まる心）、日常語の安心（気がかりが無く落ち着く・安堵との違い）、文部科学省 2004 の報告書の安全と安心の区別（客観と主観・信頼が導く安心）、山岸俊男の安心と信頼（裏切る誘因の有無で分けた二つの期待）、心理学の安心（マズローの安全の欲求・愛着の felt security と安全基地・ウィニコットの抱えること・ポージェスの安全の合図）。そのうえで、安心が守りをほどく足場にも守りを固める働きにもなること、pjdhiro が臍の緒のたとえで書く、確かめずにつながっている安定を当てる。
+  研究と辞書の説明は Claude が原典から書いた要約。載せた出典（コトバンクの国語辞典と事典・CBETA の『続高僧伝』と『無門関』・文部科学省 2004 の報告書・寺井ら 2003・Maslow 1943・Sroufe & Waters 1977・Ainsworth & Bowlby 1991・Winnicott 1960・Porges 2022）は、本文で確認し、各章の「出典：」行に頁や節を添えている。Winnicott 1960 は権利を確かめていない写しで読んだ。漢文の日本語の筋は Claude の訳。「と読めます」「Claude の読み」の文は Claude の読み。
+  pjdhiro 本人の言葉は「pjdhiro の問い：」「pjdhiro の見方：」「pjdhiro の像：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>安心とは | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/anshin.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="安心とは何かを、語の来歴の順にたどる。禅の達磨安心（心を探しても得られないと知る）、浄土のあんじん（救いを信じて定まる心）、日常語の安心（気がかりが無く落ち着く・安堵との違い）、文部科学省 2004 の報告書の安全と安心の区別（客観と主観・信頼が導く安心）、山岸俊男の安心と信頼（裏切る誘因の有無で分けた二つの期待）、心理学の安心（マズローの安全の欲求・愛着の felt security と安全基地・ウィニコットの抱えること・ポージェスの安全の合図）。そのうえで、安心が守りをほどく足場にも守りを固める働きにもなること、pjdhiro が臍の緒のたとえで書く、確かめずにつながっている安定を当てる。">
+    <meta property="og:title" content="安心とは">
+    <meta property="og:description" content="安心とは何かを、語の来歴の順にたどる。禅の達磨安心（心を探しても得られないと知る）、浄土のあんじん（救いを信じて定まる心）、日常語の安心（気がかりが無く落ち着く・安堵との違い）、文部科学省 2004 の報告書の安全と安心の区別（客観と主観・信頼が導く安心）、山岸俊男の安心と信頼（裏切る誘因の有無で分けた二つの期待）、心理学の安心（マズローの安全の欲求・愛着の felt security と安全基地・ウィニコットの抱えること・ポージェスの安全の合図）。そのうえで、安心が守りをほどく足場にも守りを固める働きにもなること、pjdhiro が臍の緒のたとえで書く、確かめずにつながっている安定を当てる。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/anshin.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="安心とは">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-12">
+    <meta property="article:modified_time" content="2026-11-12">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "安心とは",
+          "description": "安心とは何かを、語の来歴の順にたどる。禅の達磨安心（心を探しても得られないと知る）、浄土のあんじん（救いを信じて定まる心）、日常語の安心（気がかりが無く落ち着く・安堵との違い）、文部科学省 2004 の報告書の安全と安心の区別（客観と主観・信頼が導く安心）、山岸俊男の安心と信頼（裏切る誘因の有無で分けた二つの期待）、心理学の安心（マズローの安全の欲求・愛着の felt security と安全基地・ウィニコットの抱えること・ポージェスの安全の合図）。そのうえで、安心が守りをほどく足場にも守りを固める働きにもなること、pjdhiro が臍の緒のたとえで書く、確かめずにつながっている安定を当てる。",
+          "keywords": "安心, 安心（あんじん）, 達磨安心, 無門関, 続高僧伝, 安堵, 安全と安心, 山岸俊男, 信頼, assurance, 安全の欲求, マズロー, felt security, 安全基地, ウィニコット, ポージェス, 心理防衛機制, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/anshin.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/anshin.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-12",
+          "dateModified": "2026-11-12",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "安心"}, {"@type": "Thing", "name": "信頼"}, {"@type": "Thing", "name": "心理防衛機制"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「安心とは」のページです（工事中）。安心とは何かを、語の来歴の順にたどる。禅の達磨安心（心を探しても得られないと知る）、浄土のあんじん（救いを信じて定まる心）、日常語の安心（気がかりが無く落ち着く・安堵との違い）、文部科学省 2004 の報告書の安全と安心の区別（客観と主観・信頼が導く安心）、山岸俊男の安心と信頼（裏切る誘因の有無で分けた二つの期待）、心理学の安心（マズローの安全の欲求・愛着の felt security と安全基地・ウィニコットの抱えること・ポージェスの安全の合図）。そのうえで、安心が守りをほどく足場にも守りを固める働きにもなること、pjdhiro が臍の緒のたとえで書く、確かめずにつながっている安定を当てる。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>安心とは</h1>
+                <p class="reader-subtitle">語の来歴から、何が安心を支えているかを見る</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-12 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/anshin/READER-anshin.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<p class="reader-summary__title">概要</p>
+
+<p class="reader-lead"><span class="reader-lead__label">問い</span>「安心して話せる場」「安全・安心な社会」のように、安心はよく使われる言葉です。その安心は、いつも同じものを指しているのでしょうか。</p>
+
+<p>「心理的安全性とは」を書いているときに、出典ごとに「安心」が別のものを指していることが見えてきました。山岸俊男の「安心」は社会の仕組みの側の語で、日常語の「安心」は気持ちの落ち着きを指します。それを見て、pjdhiro は次のように問いました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の問い：</strong>安心とは？</p>
+</blockquote>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>安心という言葉の定義が曖昧なのだと思います。誤解の多い言葉なので、深掘りしたほうがいいのかもしれない。</p>
+</blockquote>
+<div class="reader-lead"><span class="reader-lead__label">今の答え</span>
+安心という語は、禅の言葉として使われ始め、浄土の教えで信じて定まる心を指し、やがて日常の「気がかりが無く落ち着く」になりました。いまは、社会の仕組みの語にも、心理学の語にもなっています。語の来歴の順にたどると、何が安心を支えているかが、出典ごとに違って見えます。
+<ul class="reader-lead__list">
+<li><b><a href="#達磨は何を安心させたのか">達磨は、何を安心させたのか</a></b>：禅の安心は、不安な心を取り除くことでなく、その心を探しても得られないと知るところで起きています。</li>
+<li><b><a href="#安心はやがて信じて定まる心になった">信じて定まる心</a></b>：浄土の教えでは、阿弥陀仏の救いを信じて疑わない心を安心と呼びました。宗派ごとに中身が違います。</li>
+<li><b><a href="#日常語の安心は何を指すか">日常語の安心</a></b>：気がかりが無く、心が落ち着いていることです。安堵より長く続く状態を指します。</li>
+<li><b><a href="#安全と安心はどう分けられてきたか">安全と安心</a></b>：安全は客観の判断、安心は主観の判断として分けた報告があります。</li>
+<li><b><a href="#安心と信頼はどちらが先か">安心と信頼</a></b>：信頼が安心を導くと書く出典と、安心と信頼を根拠の違う二つの期待として並べる出典があります。</li>
+<li><b><a href="#心理学は安心をどう書いてきたか">心理学の安心</a></b>：脅威が無いことと、安心だと感じることは、同じではないと書かれてきました。</li>
+<li><b><a href="#安心は守りをほどくのか固めるのか">守りをほどくか、固めるか</a></b>：同じ安心が、向き合うための足場にも、向き合わずに済む守りにもなります。</li>
+<li><b><a href="#確かめずにつながっている安心とは">確かめずにつながっている安心</a></b>：pjdhiro は、先が見えないのに安定する感覚を、臍の緒のたとえで書いています。</li>
+</ul>
+</div>
+
+<div class="reader-lead"><span class="reader-lead__label">構成</span>
+<ul class="reader-lead__list">
+<li><b>語の来歴をたどる</b>：仏教の語から、日常語、社会の語、心理学の語へと、使われてきた順に読みます。</li>
+<li><b>このページの視点から見る</b>：守りの働きと、確かめずにつながる安定という二つの見方を当てます。</li>
+<li><b>保持論点</b>：まだ答えが出ていない問いを並べます。</li>
+</ul>
+</div>
+
+<p class="reader-lead"><span class="reader-lead__label">要点</span></p>
+
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>語の来歴</th>
+<th>儒教の「安心立命」から出た語で、仏教では達磨が初めて使ったとされる。中世から近世は「あんじん」と読むことが多かった</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>指してきたもの</td>
+<td>心を探しても得られないと知ること（禅）、救いを信じて疑わない心（浄土）、気がかりが無く落ち着いていること（日常語）、予測と大きく違う状況にならないと信じていること（社会の報告）、裏切る誘因が仕組みで消えている中での期待（山岸）、頼れる相手を拠点にできる感じ（愛着の研究）</td>
+</tr>
+<tr>
+<td>よくある誤解</td>
+<td>安全と安心は同じものだ。安心は、不安や脅威を取り除けば得られる。安心は、いつも良いものだ。安心と信頼の関係は、どの出典でも同じ向きだ</td>
+</tr>
+<tr>
+<td>このページの視点</td>
+<td>pjdhiro の見方では、保身や日和見の精神で求められる安心・安全は、心理防衛機制による依存のような状態もある。一方で pjdhiro は、先が見えないのに安定する感覚を、臍の緒でつながっているたとえで書いている</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<details class="sec" id="達磨は何を安心させたのか" open><summary>達磨は、何を安心させたのか</summary><div class="secbody">
+
+
+<p>この章では、安心という語が、仏教でどう使われ始めたかを見ます。</p>
+<p>国語辞典は、安心の語は儒教の「安心立命」から出て、禅僧の菩提達磨が仏教徒として初めて用いた、と書いています。事典は、最も早く安心の語を用いたのは禅宗で、その例として、道宣が書いた『続高僧伝』の菩提達磨の伝を挙げています。</p>
+<p>その伝で、達磨は、弟子の道育と慧可に教えを授けます。伝は、その教えを「このように心を安んじることを壁観という」と書いています。続けて伝は、道に入る四つの行いを挙げます。その三つめの「求めるところの無い行い」の段に、心を安んじて何もはからず、身は移り変わりに任せる、という句があります。この世はすべて苦しく、誰が安らかでいられるか、と続き、経を引いて、求めることがあればすべて苦しく、求めることが無ければ楽しい、と結んでいます。</p>
+<p>禅の問答集『無門関』には、「達磨安心」という一則があります。</p>
+<details open><summary>『無門関』第四十一則「達磨安心」の筋</summary>
+
+<p>達磨が壁に向かって座っていると、のちに二祖となる慧可が、雪の中に立ち、自分の腕を断って言います。「弟子の心は、まだ安らかではありません。どうか師よ、心を安んじてください」。</p>
+<p>達磨は言います。「心を持って来なさい。おまえのために安んじてやろう」。</p>
+<p>慧可は言います。「心を探しましたが、ついに得られません」。</p>
+<p>達磨は言います。「おまえのために、心を安んじ終えた」。</p>
+</details>
+
+<p>慧可は、安らかでない心を安んじてほしいと頼みました。達磨は、その心を差し出すように言いました。慧可は、差し出そうとして探したが、心はつかめるものとして見つからなかった、と答えます。達磨は、そこで安心はもう済んだ、と言っています。この問答では、安心は、不安な心を取り除いたり、落ち着いた心を足したりすることとしては書かれていません。安んじる対象の心を探しても得られないと知るところで、安心が起きている、と読めます。</p>
+<p>『続高僧伝』の「求めることが無ければ楽しい」と並べると、禅の安心は、何かを手に入れて得る安らかさとは向きが違う、と読めます（Claude の読み）。</p>
+<p>出典：道宣『続高僧伝』巻十六「菩提達摩」大正蔵 T50 No.2060（<a href="https://cbetaonline.dila.edu.tw/zh/T2060_016">CBETA の頁</a>で原文を確認。壁観の句 p.551c、無所求行 p.551c）／無門慧開『無門関』第四十一則「達磨安心」大正蔵 T48 No.2005（<a href="https://cbetaonline.dila.edu.tw/zh/T2005_001">CBETA の頁</a>で原文を確認。p.298a）／『精選版 日本国語大辞典』「安心」の語誌と、『改訂新版 世界大百科事典』「安心（あんじん）」（薗田香融）（<a href="https://kotobank.jp/word/%E5%AE%89%E5%BF%83-28137">コトバンクの「安心」の頁</a>で確認）</p>
+<details class="acc"><summary>詳しく — 原文</summary>
+
+<p>『続高僧伝』の該当の句は次のとおりです。</p>
+<ul>
+<li>「如是安心謂壁觀也」（p.551c）</li>
+<li>「安心無為形隨運轉。三界皆苦誰而得安。經曰。有求皆苦。無求乃樂也」（p.551c）</li>
+</ul>
+<p>『無門関』第四十一則の本則は次のとおりです。</p>
+<ul>
+<li>「達磨面壁。二祖立雪斷臂云。弟子心未安。乞師安心。磨云。將心來。與汝安。祖云。覓心了不可得。磨云。為汝安心竟」（p.298a）</li>
+</ul>
+<p>日本語の筋は、原文から Claude が訳したものです。</p>
+</details>
+
+</div></details><details class="sec" id="安心はやがて信じて定まる心になった" open><summary>安心は、やがて信じて定まる心になった</summary><div class="secbody">
+
+
+<p>禅のあと、安心の語は、仏教の多くの宗派で使われるようになりました。事典は、安心を、仏法によって心の安定を得ること、と書き、宗派の定める教えや行いによって信仰を確立すること、あるいはその道筋を指す、と書いています。そのため、宗派によって中身が違う、とも書いています。</p>
+<p>事典によると、天台宗では、智顗が止観を成し遂げて、ものごとの本性の理に安住することを指しました。浄土の教えでは、善導以後、阿弥陀仏の救いを信じて往生を願う心を指すようになりました。真宗では、阿弥陀仏をたのむ信の一念が起こるところを「安心決定」と呼びます。国語辞典も、仏語の安心（あんじん）を、信仰によって心が動かない境地に達すること、浄土教では特に阿弥陀仏を信じて疑わないこと、と書いています。</p>
+<p>禅の安心が、心を探しても得られないと知るところにあったのに対して、浄土の安心は、救いを信じることで心が定まるところにあります。どちらも、外の状況が整って得る安心としては書かれていない、と読めます。</p>
+<p>出典：『改訂新版 世界大百科事典』「安心（あんじん）」（薗田香融）、『精選版 日本国語大辞典』「安心」、『デジタル大辞泉』「安心」（いずれも<a href="https://kotobank.jp/word/%E5%AE%89%E5%BF%83-28137">コトバンクの「安心」の頁</a>で確認）</p>
+</div></details><details class="sec" id="日常語の安心は何を指すか" open><summary>日常語の安心は、何を指すか</summary><div class="secbody">
+
+
+<p>いま日常で使う「あんしん」は、国語辞典では、気にかかることがなく、心が落ち着いていること、と書かれています。用例は「列車で行くほうが安心だ」「安心して任せられる」です。</p>
+<p>国語辞典は、中世から近世には「あんじん」の読みが広く使われていた、と書いています。</p>
+<p>国語辞典は、安心と安堵の違いも書いています。安心は、より長く続く状態を表し、安堵は、かなり瞬間的な状態を表す、という違いです。一つの心配ごとが片づいてほっとするのが安堵で、気がかりの無い落ち着きが続いているのが安心、と言い分けられます。</p>
+<p>辞書の類語には、「安全」「大丈夫」「無事」と並んで、「気休め」も入っています。日常語の安心は、外の状況が実際に安全であることと、そう感じて落ち着いていることの両方に、またがって使われています。</p>
+<p>出典：『デジタル大辞泉』「安心」、『精選版 日本国語大辞典』「安心」（いずれも<a href="https://kotobank.jp/word/%E5%AE%89%E5%BF%83-28137">コトバンクの「安心」の頁</a>で確認）</p>
+</div></details><details class="sec" id="安全と安心はどう分けられてきたか" open><summary>安全と安心は、どう分けられてきたか</summary><div class="secbody">
+
+
+<p>日本語では、「安全・安心」と、二つの語を一組にして言うことがよくあります。</p>
+<p>文部科学省の懇談会は、2004 年の報告書で、安全・安心な社会を考えるために、安全とは何か、安心とは何かを分けて検討しました。報告書は、安全を、人や共同体が損なわれず、所有物に損害がないと「客観的に判断されること」と書いています。安心については、個人の主観的な判断に大きく依存するもの、と書いています。</p>
+<p>報告書は、安心の見方として、懇談会で出た二つを挙げています。人が知識や経験から予測している状況と大きく異なる状況にならないと信じていること。自分が予想していないことは起きないと信じ、何かあっても受け入れられると信じていること、です。</p>
+<p>報告書は、さらに、安心を得るための前提として、安全を確保する組織と人々のあいだに信頼を育てることが必要だ、と書いています。互いの信頼がなければ、安全を確保して、それをいくら伝えても、相手が安心することは難しいからだ、という理由です。</p>
+<p>この報告書では、安全は外の状態、安心は人の側の判断で、二つは別のものです。そして、安全から安心へは、信頼を通って届く、と置かれています。</p>
+<p>出典：文部科学省「安全・安心な社会の構築に資する科学技術政策に関する懇談会」報告書（2004 年 4 月）<a href="https://www.mext.go.jp/a_menu/kagaku/anzen/houkoku/04042302/1242079.htm">第 2 章 安全・安心な社会の概念</a>（本文で確認。2‐1・2‐2）</p>
+</div></details><details class="sec" id="安心と信頼はどちらが先か" open><summary>安心と信頼は、どちらが先か</summary><div class="secbody">
+
+
+<p>前の章の報告書は、信頼が安心を導く、と書いていました。同じ二つの語を、別の向きで置いた研究があります。</p>
+<p>社会心理学者の山岸俊男とその共同研究者は、安心と信頼を、どちらも「相手は自分を裏切らない」という期待としたうえで、期待の根拠で分けました。相手に裏切りの誘因が無い場合の、相手の協力への期待を「安心」と呼び、相手に裏切りの誘因がある場合の、相手の協力への期待を「信頼」と呼びます。</p>
+<p>たとえば、関係が長く固定されていて、裏切れば損をする仕組みの中にいるなら、相手の人柄を見込まなくても、裏切られないと期待できます。これが山岸の安心です。そうした仕組みが無いところで、相手の人柄を見込んで期待するのが、山岸の信頼です。山岸の安心は、気持ちの落ち着きの語ではなく、相手の意図を読まずに済む社会の仕組みの側の語です。英語の論文では、安心に assurance の語を当てています。</p>
+<p>この区別で行った実験では、仕組みの中で協力し合った相手を、仕組みが外れたあとの取引でも多くの人が信頼し、半数ほどが裏切られました。論文は、参加者の多くが、続く関係が与えていた安心と、相手の人柄の判断に基づく信頼を、区別していなかった可能性が強い、と書いています。</p>
+<p>報告書では、信頼が先にあって安心を導きます。山岸の区別では、安心と信頼は、根拠の違う二つの期待として並び、人はその二つを取り違えやすい、とされます。どちらの出典も、安心と信頼を分けて書いている点は同じです。違うのは、二つのつながり方です。</p>
+<p>出典：<a href="https://doi.org/10.14966/jssp.KJ00004224827">寺井・森田・山岸 (2003)</a>「信頼と継続的関係における安心」『社会心理学研究』18(3):172–179（本文で確認。定義 p.173・区別 p.177）</p>
+</div></details><details class="sec" id="心理学は安心をどう書いてきたか" open><summary>心理学は、安心をどう書いてきたか</summary><div class="secbody">
+
+
+<p>心理学では、安心は、身の安全とは別の、人の側の感じとして書かれてきました。</p>
+<p>マズローは 1943 年に、安全の欲求を、子どもの観察から書き始めています。子どもは、決まった流れやリズムを好み、予測できて秩序のある世界を求めているように見える、と書きました。健康な大人では、この欲求は、慣れたもの、知られたものを好むことや、保障のある仕事や貯金や保険を望むことに現れる、とも書いています。報告書の「予測と大きく違う状況にならないと信じる」安心と、重なるところがあります。</p>
+<p>愛着の研究では、子どもが養育する人のそばにいることそのものより、安心の感じ（felt security）が目標だ、と置き直されました。スルーフとウォーターズは 1977 年に、子どもが近づくかどうかは、安心か不安かという主観の評価で決まる、と書きました。安心は、子どもが養育する人を拠点にして、周りを探りに出られることから読み取れる、とも書いています。この拠点を、愛着の研究は安全基地と呼んできました。安心があることで、離れて探ることができる、という見方です。</p>
+<p>ウィニコットは 1960 年に、乳児を取り巻く世話の全体を「抱えること」と呼び、あてにできるが、機械のようにではなく、相手への共感を含んであてにできるもの、と書きました。その世話の記憶が積み重なって、環境をあてにできる感じが育つ、とも書いています。</p>
+<p>ポリヴェーガル理論のポージェスは、2022 年の論文で、安全だと感じることは、脅威を取り除くことと同じではない、と書きました。これまでの考え方は、脅威を取り除けば安全だと感じられると想定し、取り除けば足りると暗に置いてきた、とも書いています。声や表情のような安全の合図があるとき、人は安全だと感じる、とされます。</p>
+<p>どの論も、安心を、外の脅威が無いことと同じものとしては書いていません。頼れる相手、あてにできる世話、安全の合図のように、関係の中で受け取るものとして書いている、と読めます。</p>
+<p>出典：<a href="https://doi.org/10.1037/h0054346">Maslow (1943)</a> <em>Psychological Review</em> 50(4):370–396（<a href="http://psychclassics.yorku.ca/Maslow/motivation.htm">York University の Classics in the History of Psychology の HTML</a> で本文を確認。pp.377, 379）／<a href="https://doi.org/10.2307/1128475">Sroufe &amp; Waters (1977)</a> <em>Child Development</em> 48:1184–1199（共著者ウォーターズのストーニーブルック大学の愛着研究のサイトにあった写しの <a href="https://web.archive.org/web/20250325050040/http://www.psychology.sunysb.edu/attachment/online/Sroufe%20articles/Sroufe%20Waters%201977%20CD%20Attach%20as%20organizational%20construct%20%281%29.pdf">Wayback の記録</a>で本文を確認。p.1186）／<a href="https://doi.org/10.1037/0003-066X.46.4.333">Ainsworth &amp; Bowlby (1991)</a> <em>American Psychologist</em> 46(4):333–341（同じサイトにあった<a href="https://web.archive.org/web/20050514233234/http://www.psychology.sunysb.edu:80/attachment/online/ainsworth_bowlby_1991.pdf">打ち直しの写しの Wayback の記録</a>で本文を確認。安全基地は写しの pp.2・6）／Winnicott (1960) "The theory of the parent-infant relationship", <em>International Journal of Psycho-Analysis</em> 41:585–595（西ベンガル州政府の教育研究訓練評議会が走査した<a href="https://archive.org/details/dli.scoerat.1853theinternationaljournalofpsychoanalysisvolxll1960">同じ巻</a>の写しで本文を確認。抱えることは p.589、あてにできるが機械のようにではない、は p.591。権利は確かめていない）／<a href="https://doi.org/10.3389/fnint.2022.871227">Porges (2022)</a> <em>Frontiers in Integrative Neuroscience</em> 16:871227（本文で確認。p.2・pp.8–9）</p>
+</div></details><details class="sec" id="安心は守りをほどくのか固めるのか" open><summary>安心は、守りをほどくのか、固めるのか</summary><div class="secbody">
+
+
+<p>ここからは、このページの視点から、来歴で見た安心を見直します。一つめは、心を守る働き（防衛）との関わりです。</p>
+<p>「心理的安全性とは」では、心理的安全性を、恥や不安から心を守る働きとの関わりで見ました。そこで、心理的に安全で安心ならば良いことが起きるのか、という問いが出ました。pjdhiro は、こう答えています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>いいえ。保身や日和見の精神で求められる安心・安全は、心理防衛機制による依存のような状態もあります。</p>
+</blockquote>
+<p>一方で、前の章のウィニコットは、頼って抱えられることを、あてにできる感じが育つ足場として書いていました。安全基地の見方でも、安心は、離れて探りに出るための拠点でした。</p>
+<p>同じ安心が、向き合うための足場にもなり、向き合わずに済むための守りにもなる、と読めます。見分ける手がかりの一つは、その安心が、課題や現実や異論に向き合うことと一緒にあるか、向き合わずに済む代わりに得られているか、かもしれません。マズローが安全の欲求の現れとして挙げた、慣れたものを好むことや、頼れる強い人を探すことは、どちらの向きにもなりえます。</p>
+<p>山岸の安心も、この見方から読むことができます。仕組みが裏切りを防いでいるあいだは、相手の人柄を見込まなくても済みます。実験で、人が安心と信頼を区別していなかった可能性が見えたのは、その仕組みの中で過ごしたあと、仕組みが外れた取引でした。</p>
+<p>守りの働きそのものは、「<a href="anxiety.html">不安とは</a>」と、「心理的安全性とは」の章「<a href="psychological-safety.html#心は自分を守るしくみを持っている">心は、自分を守るしくみを持っている</a>」で見ています。</p>
+<p>出典：Winnicott (1960) <em>International Journal of Psycho-Analysis</em> 41:585–595（<a href="https://archive.org/details/dli.scoerat.1853theinternationaljournalofpsychoanalysisvolxll1960">同じ巻の写し</a>で本文を確認。p.591）／<a href="https://doi.org/10.1037/h0054346">Maslow (1943)</a> pp.379–380／<a href="https://doi.org/10.14966/jssp.KJ00004224827">寺井・森田・山岸 (2003)</a> p.177</p>
+</div></details><details class="sec" id="確かめずにつながっている安心とは" open><summary>確かめずにつながっている安心とは</summary><div class="secbody">
+
+
+<p>二つめは、pjdhiro が自分を観察する中で行き着いた、安定の感覚です。</p>
+<p>pjdhiro は、自分の感情や考えを対象として観ていくこと（メタ認知）を、自分を分けていく作業だと見ています。感情を観て、考えを観て、分けていくと、最後に観ている私だけが残ります。その私も観ようとすると、観る私と観られる私が分けられなくなります。その先で感じるものを、pjdhiro は次のように書いています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の像：</strong>……観察し、される者だけになった後、その二つが融合する安定感よりは、見るしかできない私の頭頂の先にへその緒で接続された母の存在が安定をもたらすような落ち着きの感覚が近い。……限りのなさは、その先が見えないという感覚。表現として臍の緒と母のたとえにしたが、そもそも母がいることを胎児は認識していないでしょう。そのように、場や大海は何かわからない。母が摂取する栄養や酸素などの循環を含めれば、その先は宇宙すべてと接続している。</p>
+</blockquote>
+<p>先が見えないのに、安定しています。国語辞典の安心は、気がかりが無いことでした。報告書の安心は、予測と大きく違う状況にならないと信じることでした。山岸の安心は、裏切る誘因が仕組みで消えていることでした。どれも、先がある程度見えていること、確かめられることに支えられている、と読めます。pjdhiro の像の安定は、先が見えないまま、確かめずにつながっているところにあるものとして書かれています。</p>
+<p>この感覚は、AI と協働してきた一年を振り返る言葉にも出てきます。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>私にとっての AI 協働のこの一年は、まさに、私と限りのない AI という世界の頭脳との安心感でした。臍の緒でつながり、安心して論を預ける。</p>
+</blockquote>
+<p>愛着の研究の安心も、確かめた結果としてでなく、関係の感じとして書かれていました。ただ、愛着の研究の安心は、応えてくれた経験で育つ見込みとして書かれ、名指せる相手がいる、と読めます。pjdhiro の像では、胎児は母がいることを認識していません。確かめる経験の前にあるつながり、と読めます。</p>
+<p>この安定の感覚が、どういう面を持つかは、「<a href="love-driven-dev.html#ldd-center">Love駆動開発と呼びたいもの</a>」の「Love は、重力に似ていないか」の章と、その畳みに書いています。</p>
+</div></details><details class="sec" id="保持論点"><summary>保持論点</summary><div class="secbody">
+<ul>
+<li>禅の安心（心を探しても得られないと知る）と、確かめずにつながっている安定は、同じものの別の面なのか。</li>
+<li>保身や日和見の精神で求められる安心と、確かめずにつながっている安心は、どこで分かれるのか。</li>
+<li>何に安心するかは、精神の発達の段階で変わるのか。</li>
+<li>日常で言う「安心した」と、臍の緒でつながっている安定は、同じ語で呼べるものなのか。</li>
+</ul>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="psychological-safety.html">心理的安全性とは</a> ・
+                <a href="anxiety.html">不安とは</a> ・
+                <a href="influences-psychology.html">影響を受けた心理学</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
