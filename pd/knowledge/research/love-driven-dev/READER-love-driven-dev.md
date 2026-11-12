@@ -679,7 +679,7 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 
 <!--OPEN-->
 
-第三部では、意識に上る信号の側から、人が世界をどう解釈しているかを見ました。第四部では、信頼とは何か、安心とは何か、の二つに答えていきます。まず、心の前提を五つ置きます（無意識、信頼や愛の感じの発生源、防衛、防衛がゆるむ状況、発達の段階）。次に、信頼と安心を、似たものとの違いから見ます。最後に、見えた輪郭を並べ、段階や性格の見方で見直します。前提の五つの章は、概説とリンクだけです。心理学の論を知っている人は、「[信頼と、信仰や期待を、人は自分の中で分けられるのか](#ldd-discern)」の章へ進んでください。
+第三部では、意識に上る信号の側から、人が世界をどう解釈しているかを見ました。第四部では、信頼とは何か、安心とは何か、の二つに答えていきます。まず、心の前提を五つ置きます（無意識、信頼や愛の感じの発生源、防衛、防衛がゆるむ状況、発達の段階）。次に、信頼と安心を、似たものとの違いから見ます。最後に、見えた輪郭を並べ、段階や性格の見方で見直します。前提の五つの章は、概説とリンクだけです。心理学の論を知っている人は、「[信頼と、信仰や期待を、人は自分の中で分けられるのか](#ldd-discern)」の章へ進んでください。論を知らない人は、章の終わりの「出典」から、原典と、日本語訳のあるものはその訳へ辿れます。
 
 <a id="ldd-unconscious"></a><strong>pjdhiro の見方：</strong>人の心理は自分が思っているようにはできていない。フロイトの転移、クラインの対象関係のような信頼や愛の定義に関するような発生源、ユングの元型、心理防衛機制に発達段階と状態による非合理的な行動や感情発生など、みんな思っているほど立派にはできてない。
 
@@ -696,6 +696,8 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 <!--REF:心理学-->
 
 出典：Freud (1915) "Das Unbewußte", *Internationale Zeitschrift für ärztliche Psychoanalyse* [3(4):189–203](https://archive.org/details/z319154)・[3(5):257–269](https://archive.org/details/z319155)（本文照合済。独語の原文を読んだ。抑圧と無意識の範囲は p.189、無意識を置く理由と思い上がりの語は pp.189–190、推し量りを自分に向けることは p.192、カントの戒めと「見えているとおりにできているとは限らない」は p.193、潜在と抑圧・前意識・検閲は pp.193–194。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/z319154)の誌面。パブリックドメイン）／Jung (1917) *Die Psychologie der unbewußten Prozesse*、英訳 Hecht "The Psychology of the Unconscious Processes"、Long (ed.) *Collected Papers on Analytical Psychology*, 2nd ed. (1920) 第 14 章（本文照合済（訳）。Hecht の英訳で読んだ。第 5 節「The Personal and the Impersonal Unconscious」pp.408–416。空想が伝説の主題と同じ形で現れることと原初の像は p.410、神々と悪魔は p.411。写しは [Project Gutenberg #48225](https://www.gutenberg.org/ebooks/48225)。パブリックドメイン）。
+
+原典を読むなら：フロイトの論文は、日本語訳が『フロイト全集 14』（岩波書店、2010）に「無意識」の題で入っています（[CiNii Books](https://ci.nii.ac.jp/ncid/BB03371699)）。ユングの論文は、Project Gutenberg の英訳の第 5 節から読めます。のちに書き改められた版（*Über die Psychologie des Unbewussten*）の日本語訳は、『無意識の心理』（高橋義孝訳、人文書院）です（[CiNii Books](https://ci.nii.ac.jp/ncid/BB24397125)）。
 
 </details>
 
@@ -723,6 +725,8 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 
 出典：Jung (1917) "The Psychology of the Unconscious Processes"（Dora Hecht 訳）, *Collected Papers on Analytical Psychology*, 2nd ed., London: Baillière, Tindall and Cox, 1920, pp.354–444（本文照合済（訳）。親の権威の代わり p.408、父の像 p.409、原初の像 p.410、周りの人への持ち上げと見下し pp.432–433。写しは [Internet Archive の Universal Library の版](https://archive.org/details/CollectedPapersOnAnalyticalPsychology)。訳者名は 1922 年刷の写しでも確かめた）／Jung (1919) "Instinct and the Unconscious", *British Journal of Psychology* 10(1):15–23, [doi:10.1111/j.2044-8295.1919.tb00003.x](https://doi.org/10.1111/j.2044-8295.1919.tb00003.x)（本文照合済。元型と集合的無意識 p.19、アウグスティヌスから取った語 p.21。写しは Zenodo にあるパブリックドメインの版。リンク先は確かめ直している途中で、いまは出版社の DOI のリンクだけを張っています）。
 
+原典を読むなら：フロイトの二つの論文は、日本語訳が『フロイト技法論集』（岩崎学術出版社、2014）に「転移の力動」「転移性恋愛についての観察」の題で入っています（[CiNii Books](https://ci.nii.ac.jp/ncid/BB17491280)）。クラインの論文は、『メラニー・クライン著作集 4　妄想的・分裂的世界』（誠信書房、1985）に「分裂的機制についての覚書」の題で入っています（[CiNii Books](https://ci.nii.ac.jp/ncid/BN00630900)）。
+
 </details>
 
 ## 心は、自分を守るしくみを持っている
@@ -742,6 +746,8 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 出典：章の頭の、性格についての pjdhiro の見方＝pjdhiro「用語: その他」の「性格」の項（[uminomae.github.io/pjdhiro/word-other/](https://uminomae.github.io/pjdhiro/word-other/)）。
 
 出典：[Vaillant (2011)](https://doi.org/10.31887/DCNS.2011.13.2/gvaillant) "Involuntary coping mechanisms: a psychodynamic perspective", *Dialogues in Clinical Neuroscience* 13(3):366（本文照合済。[PMC3182012](https://pmc.ncbi.nlm.nih.gov/articles/PMC3182012/) の全文。不随意の対処・熱のたとえ・孫の例・フロイト 1894 年は冒頭の節「What are involuntary coping mechanisms?」、六つの性質・四つの水準・三つの道・成人発達研究は「Classification of defenses」の節。pp.366–370）／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99–110](https://archive.org/details/ijp-27-1946-1-2)（本文照合済。早い時期の防衛に理想化と否認を数える箇所は p.99、分裂・理想化・否認のつながりは pp.101–102、内なる理想化された対象への逃げ込みは p.103、不安が弱まると理想化が減る箇所は p.105。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/ijp-27-1946-1-2)）／A. Freud (1936) *Das Ich und die Abwehrmechanismen*、英訳 Baines (1937) [*The Ego and the Mechanisms of Defence*](https://archive.org/details/a-freud-1937-ego)（本文照合済（訳）。Baines の英訳で読んだ。三つの不安と自我を守る目的は pp.73–74、第 6 章「空想の中の否認」pp.73–88、第 7 章「言葉と行いによる否認」pp.89–99。写しは、クライン 1946 年と同じ、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/a-freud-1937-ego)）。
+
+原典を読むなら：ヴァイラントの論文は、PMC で全文を読めます。防衛の分け方は「Classification of defenses」の節です。
 
 </details>
 
@@ -770,6 +776,8 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 <!--REF:心理学-->
 
 出典：Winnicott (1960) "The theory of the parent-infant relationship", *International Journal of Psycho-Analysis* 41:585–595（本文照合済。分析者のあてにできる感じは p.585、「赤ん坊というものはいない」・乳児と世話のまとまり・依存の語の意味は p.586、絶対的な依存から相対的な依存を経て独立へ、は p.588、抱えることの定義は p.589、依存の三つは pp.589–590、抱える環境の働きは p.590、あてにできるが機械のようにではない・愛を示す形・指導だけではほどよい世話にならない、は p.591、乳児の自我の強さは p.594 の要約。写しは、西ベンガル州政府の教育研究訓練評議会が走査した[同じ巻](https://archive.org/details/dli.scoerat.1853theinternationaljournalofpsychoanalysisvolxll1960)を、公開資料の団体 Servants of Knowledge が Internet Archive に上げたもの。権利は確かめていない）。
+
+原典を読むなら：ウィニコットの論文は、日本語訳が『情緒発達の精神分析理論』（牛島定信訳、岩崎学術出版社、1977）に「親と幼児の関係に関する理論」の題で入っています（[CiNii Books](https://ci.nii.ac.jp/ncid/BN01366138)）。
 
 </details>
 
@@ -810,6 +818,8 @@ Love駆動開発を、入力と出力を持つ仕組みの図として描けな�
 <!--REF:心理学-->
 
 出典：Cook-Greuter (2013) "[Nine Levels of Increasing Embrace in Ego Development: A Full-Spectrum Theory of Vertical Growth and Meaning Making](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)", prepublication version, revised Dec. 2013（本文照合済。頁は刷りの頁。防衛の総論（逃げる・闘う・固まる反射と心の防衛、意味づけが乱されたときの否認、脅威が大きいほど今の見方を固めること、段階が後になるほど防衛的な動きの必要が減ることは p.9。不適応や病理がどの時期にも起きうることは p.10）、自己保護 p.27、順応 p.34、専門家 pp.39–40、達成者 pp.49–50、多元 pp.53・58–59、戦略家 pp.71–72、構成への気づき pp.84–85、概念との関係が段階で違う p.10、文章完成法 p.10。読んだ写しは、著者のサイト cook-greuter.com が公開していた PDF の、[Wayback Machine による 2021 年 10 月 28 日の保存](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)）／O'Fallon (2020) "[States and STAGES: Waking up Developmentally](https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf)", *Integral Review* 16(1)（本文照合済。段階を視点として定義する三つの問い p.18、一時的な状態と段階の区別 p.22、各段階の定義 pp.28–29）。
+
+原典を読むなら：クック＝グロイターの論文は、Wayback Machine の保存で全文を読めます。段階と防衛の総論は、刷りの p.9 から p.10 です。
 
 </details>
 
@@ -854,6 +864,8 @@ Love駆動開発を、入力と出力を持つ仕組みの図として描けな�
 <!--REF:心理学-->
 
 出典：[Barrett, Gross, Christensen & Benvenuto (2001)](https://doi.org/10.1080/02699930143000239) "Knowing what you're feeling and knowing what to do about it: Mapping the relation between emotion differentiation and emotion regulation", *Cognition and Emotion* 15(6):713–724（本文照合済。取り替えのきく語として使う人がいること p.713、同じ人の中でも場面で違うこと・快か不快かの全体を言い表すこと p.714、参加者と日記 pp.716–717、九つの語と分け方の計り方 p.717、否定と肯定の結果 pp.719–720、相関で逆の向きもありうること pp.721–722。読んだ写しは、著者の研究室のサイト affective-science.org が公開していた誌面の PDF の、[Wayback Machine による 2011 年 9 月 3 日の保存](https://web.archive.org/web/20110903095938/http://www.affective-science.org/pubs/2001/01MaprelationDiffReg.pdf)）。
+
+原典を読むなら：バレットたちの論文は、Wayback Machine の保存で誌面の全文を読めます。
 
 </details>
 
@@ -923,6 +935,8 @@ pjdhiro が引く新田の流れの「裏切られ」から「諦念」への移
 
 出典：Freud (1927) *Die Zukunft einer Illusion*, Internationaler Psychoanalytischer Verlag（本文照合済。[初版の写真版](https://archive.org/details/Freud_1927_Die_Zukunft_einer_Illusion_k)で、Internet Archive にある国際精神分析大学ベルリンのコレクション。作品はパブリックドメイン。宗教の考えを経験の沈殿でも考えの結果でもないとする箇所と、寄る辺なさと父の箇所は p.47、錯覚と誤りの例は p.48、錯覚の定め方は pp.49–50、証明も反証もできない箇所は p.50）。
 
+原典を読むなら：日本語訳は、『幻想の未来／文化への不満』（中山元訳、光文社古典新訳文庫、2007）と、『フロイト全集 20』（岩波書店、2011）の「ある錯覚の未来」があります（[CiNii Books](https://ci.nii.ac.jp/ncid/BA83042205)・[CiNii Books](https://ci.nii.ac.jp/ncid/BB04650687)）。
+
 </details>
 
 ## 理想化と信頼は、どう違うのか
@@ -944,6 +958,8 @@ pjdhiro が引く新田の流れの「裏切られ」から「諦念」への移
 <!--REF:心理学-->
 
 出典：pjdhiro「[対話：創造とは](https://uminomae.github.io/pjdhiro/dialogueCreation/)」（「特に注意したい現象」の「波」の項）／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99–110](https://archive.org/details/ijp-27-1946-1-2)（本文照合済。良い対象を理想化する傾向と、内なる理想化された対象への逃げ込みは p.103、愛する面と憎む面が離れていないと感じられること・失う恐れ・罪の感じ・喪に近い状態・償いの動き・分ける動きが形を変えて残り、不安の場面がくり返し経験されること・不安が弱まると理想化も恐ろしさも少なくなることは p.105、分ける機制と防衛が正常な発達の一部で、のちの病の土台にもなることは p.109。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/ijp-27-1946-1-2)）／良い結果だけ・良いも悪いもの軸＝「意識とは」の作業ノート「[信頼とは何か — 軸による多元的記述](https://github.com/uminomae/project-design-theory/blob/main/as/knowledge/concepts/CN-006_trust-analysis-axes.md)」。
+
+原典を読むなら：クラインの論文は、『メラニー・クライン著作集 4　妄想的・分裂的世界』（誠信書房、1985）に「分裂的機制についての覚書」の題で入っています（[CiNii Books](https://ci.nii.ac.jp/ncid/BN00630900)）。
 
 </details>
 
@@ -968,6 +984,8 @@ pjdhiro が引く新田の流れの「裏切られ」から「諦念」への移
 出典：Winnicott (1960) "The theory of the parent-infant relationship", *International Journal of Psycho-Analysis* 41:585–595（本文照合済。分析者のあてにできる感じは p.585、「赤ん坊というものはいない」・乳児と世話のまとまり・依存の語の意味は p.586、絶対的な依存から相対的な依存を経て独立へ、は p.588、抱えることの定義は p.589、依存の三つは pp.589–590、抱える環境の働きは p.590、あてにできるが機械のようにではない・愛を示す形・指導だけではほどよい世話にならない、は p.591、乳児の自我の強さは p.594 の要約。写しは、西ベンガル州政府の教育研究訓練評議会が走査した[同じ巻](https://archive.org/details/dli.scoerat.1853theinternationaljournalofpsychoanalysisvolxll1960)を、公開資料の団体 Servants of Knowledge が Internet Archive に上げたもの。権利は確かめていない）。
 
 出典：[Maslow (1943)](https://doi.org/10.1037/h0054346) "A theory of human motivation", *Psychological Review* 50(4):370–396（本文照合済。[York University の Classics in the History of Psychology の HTML](http://psychclassics.yorku.ca/Maslow/motivation.htm)（原典の頁番号つき）。安全の欲求は pp.376–380、決まった流れと予測できる世界は p.377、拒まれた子が憎む親にしがみつくことは p.378、健康な大人では満たされていることは pp.378–379、慣れたものの好み・保障と保険は p.379、守ってくれる人・頼れる強い人を探すことは pp.379–380、所属と愛の欲求と、与えることと受け取ることは pp.380–381、同時に部分的に満たされることは pp.388–389）。
+
+原典を読むなら：ウィニコットの論文は、日本語訳が『情緒発達の精神分析理論』（牛島定信訳、岩崎学術出版社、1977）に入っています（[CiNii Books](https://ci.nii.ac.jp/ncid/BN01366138)）。マズローの論文は、York University の Classics in the History of Psychology で全文を読めます。安全の欲求は pp.376–380 です。
 
 </details>
 
@@ -1024,6 +1042,8 @@ pjdhiro が引く新田の流れの「裏切られ」から「諦念」への移
 出典：Panksepp (2001) "The neuro-evolutionary cusp between emotions and cognitions: Implications for understanding consciousness and the emergence of a unified mind science", *Evolution and Cognition* 7(2):141–163（2000 年に *Consciousness & Emotion* 1:15–54 に載った論文の再録。[コンラート・ローレンツ研究所が公開している号の PDF](https://kli.ac.at/webroot/files/file/Evolution%20%26%20Cognition/2001%207-2.pdf) で本文照合済。系と感情の表と大文字の意味 p.156）／[Ortony & Turner (1990)](https://doi.org/10.1037/0033-295X.97.3.315) "What's basic about basic emotions?", *Psychological Review* 97(3):315–331（[第一著者の大学のサイトの写し](https://users.cs.northwestern.edu/~ortony/Andrew_Ortony_files/1990%20-%20Basic%20emotions.pdf)で本文照合済。基本の感情の一覧の表 p.316、受容はプルチックだけ p.315、シェイヴァーらの五つ p.319、混ざりへの疑問 p.326）。
 
 出典：Fredrickson (2016) "Love: Positivity resonance as a fresh, evidence-based perspective on an age-old topic", in Barrett, Lewis & Haviland-Jones (eds.) *Handbook of Emotions* (4th ed.), Guilford Press（[著者の研究室のサイトにある、刊行前の原稿](https://peplab.web.unc.edu/wp-content/uploads/sites/18901/2019/06/Fredrickson2016ChapteronLoveforHandbookofEmotions.pdf)で本文照合済。頁は原稿の頁。「愛している」が指すもの p.3、思い・絆・親しさ・約束は積み重ねでできる p.3、愛の定義 p.16、くり返しが信頼と誠実さを築く p.19）。
+
+原典を読むなら：プルチックとパンクセップの論文は、どちらも、コンラート・ローレンツ研究所が公開している同じ号の PDF で全文を読めます。
 
 </details>
 
@@ -1693,7 +1713,7 @@ pjdhiro は、期待外れになるかどうかは、能力と、心理防衛機
 
 シャインの書いた安心は、期待を裏切る知らせを受け取れるようにするための条件でした。同じ名前の安心が、その知らせから守られ続けるための条件として求められると、防衛を下ろす側でなく、保つ側に働きます（参考：[心は、自分を守るしくみを持っている](#ldd-defense)）。
 
-詳しくは、[心理的安全性とは](psychological-safety.html)に書いています。
+心理的安全性の論を読むなら、[心理的安全性とは](psychological-safety.html)から、エドモンドソンとシャインの論文へ辿れます。
 
 ##### GRIT
 
@@ -1777,7 +1797,7 @@ pjdhiro は、期待外れになるかどうかは、能力と、心理防衛機
 
 </details>
 
-詳しくは、[内発的動機とは](intrinsic-motivation.html)に書いています。段階については、[精神の発達段階とは](developmental-stages.html)に書いています。
+内発的動機の論を読むなら、[内発的動機とは](intrinsic-motivation.html)から、ライアンとデシの論文へ辿れます。段階の論は、[精神の発達段階とは](developmental-stages.html)から辿れます。
 
 <a id="ldd-negative-capability"></a>
 
