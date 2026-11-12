@@ -191,3 +191,17 @@ html.ldd-dark #toc-btn,
 html.ldd-dark body.toc-fits #toc {
     transition: opacity 0.4s ease, visibility 0.4s;
 }
+
+/* 題の下の問い（pjdhiro 2026-11-13・違和感帳「概要のサブタイトル的に　私は何に駆られてプロジェクトを行うのか？という問いを大きく前面に出したい。この読み物を読み切るエネルギーを注入したい」）。
+   ほかの読み物の副題（.reader-subtitle・本文の大きさ）より大きく、題に次ぐ大きさで、概要の前に置く */
+html.ldd-dark body.reader-flow .reader-subtitle.ldd-subtitle {
+    font-family: var(--serif-jp);
+    font-size: clamp(1.45rem, 4.4vw, 2.1rem);
+    font-weight: 500;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: var(--ink);
+    margin: -0.5rem 0 2rem;
+    padding-left: 0.8em;
+    border-left: 3px solid var(--gold);
+}

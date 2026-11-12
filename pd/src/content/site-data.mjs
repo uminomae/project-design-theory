@@ -40,6 +40,23 @@ const SITE_MENU_LINKS = [
 
 const KNOWLEDGE_MENU_KEYS = ["design-thinking", "trust", "value"];
 
+// 読み物（pjdhiro 2026-11-13・違和感帳「menu にLove駆動開発と呼びたいものベータへのリンクを追加して」）。
+// トップ・読み物・wiki のどのメニューにも出す
+const READING_MENU_LINKS = [
+  {
+    href: "/project-design-theory/reader/love-driven-dev.html",
+    labelKey: "menu.loveDrivenDev",
+  },
+];
+
+function readingMenuItems() {
+  return [
+    { type: "separator" },
+    { type: "label", labelKey: "menu.readings" },
+    ...READING_MENU_LINKS.map((item) => ({ type: "link", ...item })),
+  ];
+}
+
 // ツール（対話して使うページ）。トップの「ツール」節と同じものをメニューにも出す
 const TOOL_MENU_LINKS = [
   {
@@ -76,6 +93,7 @@ export function getMenuItems({ currentSite = "home", context = "main" } = {}) {
       labelKey: item.labelKey,
       className: item.siteId === currentSite ? "menu-current" : undefined,
     })),
+    ...readingMenuItems(),
   ];
 
   if (context === "main") {
@@ -94,7 +112,7 @@ export function getMenuItems({ currentSite = "home", context = "main" } = {}) {
     return items;
   }
 
-  // 読み物・ツールのページ（src/reader-menu.js）。サイトとツールだけを出す
+  // 読み物・ツールのページ（src/reader-menu.js）。サイト・読み物・ツールだけを出す
   if (context === "reader") {
     items.push(...toolMenuItems());
     return items;
@@ -119,6 +137,8 @@ export const TRANSLATIONS = {
     "menu.creation": "創造とは",
     "menu.awareness": "意識とは",
     "menu.researchNotes": "調査ノート",
+    "menu.readings": "読み物",
+    "menu.loveDrivenDev": "Love駆動開発と呼びたいもの β",
     "menu.tools": "ツール",
     "menu.toolScreener": "ものの見方の広さスクリーナー",
     "controls.topBarAria": "サイト操作",
@@ -304,6 +324,8 @@ export const TRANSLATIONS = {
     "menu.creation": "CREATION",
     "menu.awareness": "CONSCIOUSNESS",
     "menu.researchNotes": "Research Notes",
+    "menu.readings": "Readings",
+    "menu.loveDrivenDev": "What I Want to Call Love-Driven Development (beta)",
     "menu.tools": "Tools",
     "menu.toolScreener": "Breadth-of-View Screener",
     "controls.topBarAria": "Site controls",
