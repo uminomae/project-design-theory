@@ -636,7 +636,7 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 
 <!--REF:心理学-->
 
-出典：Freud (1915) "Das Unbewußte", *Internationale Zeitschrift für ärztliche Psychoanalyse* [3(4):189–203](https://archive.org/details/z319154)・[3(5):257–269](https://archive.org/details/z319155)（本文照合済。独語の原文を読んだ。抑圧と無意識の範囲は p.189、無意識を置く理由と思い上がりの語は pp.189–190、推し量りを自分に向けることは p.192、カントの戒めと「見えているとおりにできているとは限らない」は p.193、潜在と抑圧・前意識・検閲は pp.193–194。写しは、Internet Archive にある国際精神分析大学ベルリンのコレクションの誌面。パブリックドメイン）／Jung (1917) *Die Psychologie der unbewußten Prozesse*、英訳 Hecht "The Psychology of the Unconscious Processes"、Long (ed.) *Collected Papers on Analytical Psychology*, 2nd ed. (1920) 第 14 章（本文照合済（訳）。Hecht の英訳で読んだ。第 5 節「The Personal and the Impersonal Unconscious」pp.408–416。写しは [Project Gutenberg #48225](https://www.gutenberg.org/ebooks/48225)。パブリックドメイン）。
+出典：Freud (1915) "Das Unbewußte", *Internationale Zeitschrift für ärztliche Psychoanalyse* [3(4):189–203](https://archive.org/details/z319154)・[3(5):257–269](https://archive.org/details/z319155)（本文照合済。独語の原文を読んだ。抑圧と無意識の範囲は p.189、無意識を置く理由と思い上がりの語は pp.189–190、推し量りを自分に向けることは p.192、カントの戒めと「見えているとおりにできているとは限らない」は p.193、潜在と抑圧・前意識・検閲は pp.193–194。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/z319154)の誌面。パブリックドメイン）／Jung (1917) *Die Psychologie der unbewußten Prozesse*、英訳 Hecht "The Psychology of the Unconscious Processes"、Long (ed.) *Collected Papers on Analytical Psychology*, 2nd ed. (1920) 第 14 章（本文照合済（訳）。Hecht の英訳で読んだ。第 5 節「The Personal and the Impersonal Unconscious」pp.408–416。写しは [Project Gutenberg #48225](https://www.gutenberg.org/ebooks/48225)。パブリックドメイン）。
 
 </details>
 
@@ -678,7 +678,7 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 
 <!--REF:心理学-->
 
-出典：Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99–110](https://archive.org/details/ijp-27-1946-1-2)（本文照合済。良い乳房と悪い乳房、愛と憎しみの分かれ目 p.99、分析から推し量った仮説だという断り p.99、満たされているときと満たされないとき・空想の中で分ける・良い面を大きくして迫害の恐れから守る p.101、理想化された対象へ逃げ込む p.103。写しは、Internet Archive にある国際精神分析大学ベルリンのコレクション）。
+出典：Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99–110](https://archive.org/details/ijp-27-1946-1-2)（本文照合済。良い乳房と悪い乳房、愛と憎しみの分かれ目 p.99、分析から推し量った仮説だという断り p.99、満たされているときと満たされないとき・空想の中で分ける・良い面を大きくして迫害の恐れから守る p.101、理想化された対象へ逃げ込む p.103。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/ijp-27-1946-1-2)）。
 
 </details>
 
@@ -694,7 +694,7 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 
 <!--REF:心理学-->
 
-出典：Jung (1917) "The Psychology of the Unconscious Processes"（Dora Hecht 訳）, *Collected Papers on Analytical Psychology*, 2nd ed., London: Baillière, Tindall and Cox, 1920, pp.354–444（本文照合済（訳）。親の権威の代わり p.408、父の像 p.409、原初の像 p.410、周りの人への持ち上げと見下し pp.432–433。写しは [Internet Archive の Universal Library の版](https://archive.org/details/CollectedPapersOnAnalyticalPsychology)。訳者名は 1922 年刷の写しでも確かめた）／Jung (1919) "Instinct and the Unconscious", *British Journal of Psychology* 10(1):15–23, [doi:10.1111/j.2044-8295.1919.tb00003.x](https://doi.org/10.1111/j.2044-8295.1919.tb00003.x)（本文照合済。元型と集合的無意識 p.19、アウグスティヌスから取った語 p.21。写しは Zenodo のパブリックドメインの表示の版）。
+出典：Jung (1917) "The Psychology of the Unconscious Processes"（Dora Hecht 訳）, *Collected Papers on Analytical Psychology*, 2nd ed., London: Baillière, Tindall and Cox, 1920, pp.354–444（本文照合済（訳）。親の権威の代わり p.408、父の像 p.409、原初の像 p.410、周りの人への持ち上げと見下し pp.432–433。写しは [Internet Archive の Universal Library の版](https://archive.org/details/CollectedPapersOnAnalyticalPsychology)。訳者名は 1922 年刷の写しでも確かめた）／Jung (1919) "Instinct and the Unconscious", *British Journal of Psychology* 10(1):15–23, [doi:10.1111/j.2044-8295.1919.tb00003.x](https://doi.org/10.1111/j.2044-8295.1919.tb00003.x)（本文照合済。元型と集合的無意識 p.19、アウグスティヌスから取った語 p.21。写しは Zenodo にあるパブリックドメインの版。リンク先は確かめ直している途中で、いまは出版社の DOI のリンクだけを張っています）。
 
 </details>
 
@@ -756,7 +756,7 @@ pjdhiro は、期待外れになるかどうかは能力と心理防衛の強さ
 
 <!--REF:心理学-->
 
-出典：[Vaillant (2011)](https://doi.org/10.31887/DCNS.2011.13.2/gvaillant) "Involuntary coping mechanisms: a psychodynamic perspective", *Dialogues in Clinical Neuroscience* 13(3):366（本文照合済。[PMC3182012](https://pmc.ncbi.nlm.nih.gov/articles/PMC3182012/) の全文。不随意の対処・熱のたとえ・孫の例・フロイト 1894 年は冒頭の節「What are involuntary coping mechanisms?」、六つの性質・四つの水準・三つの道・成人発達研究は「Classification of defenses」の節。pp.366–370）／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99（](https://archive.org/details/ijp-27-1946-1-2)本文照合済。早い時期の防衛に理想化と否認を数える箇所は p.99、分裂・理想化・否認のつながりは pp.101–102、内なる理想化された対象への逃げ込みは p.103、不安が弱まると理想化が減る箇所は p.105。写しは、Internet Archive にある国際精神分析大学ベルリンのコレクション）／A. Freud (1936) *Das Ich und die Abwehrmechanismen*、英訳 Baines (1937) [*The Ego and the Mechanisms of Defence*](https://archive.org/details/a-freud-1937-ego)（本文照合済（訳）。Baines の英訳で読んだ。三つの不安と自我を守る目的は pp.73–74、第 6 章「空想の中の否認」pp.73–88、第 7 章「言葉と行いによる否認」pp.89–99。写しは、クライン 1946 年と同じ、Internet Archive にある国際精神分析大学ベルリンのコレクション）。
+出典：[Vaillant (2011)](https://doi.org/10.31887/DCNS.2011.13.2/gvaillant) "Involuntary coping mechanisms: a psychodynamic perspective", *Dialogues in Clinical Neuroscience* 13(3):366（本文照合済。[PMC3182012](https://pmc.ncbi.nlm.nih.gov/articles/PMC3182012/) の全文。不随意の対処・熱のたとえ・孫の例・フロイト 1894 年は冒頭の節「What are involuntary coping mechanisms?」、六つの性質・四つの水準・三つの道・成人発達研究は「Classification of defenses」の節。pp.366–370）／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99（](https://archive.org/details/ijp-27-1946-1-2)本文照合済。早い時期の防衛に理想化と否認を数える箇所は p.99、分裂・理想化・否認のつながりは pp.101–102、内なる理想化された対象への逃げ込みは p.103、不安が弱まると理想化が減る箇所は p.105。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/ijp-27-1946-1-2)）／A. Freud (1936) *Das Ich und die Abwehrmechanismen*、英訳 Baines (1937) [*The Ego and the Mechanisms of Defence*](https://archive.org/details/a-freud-1937-ego)（本文照合済（訳）。Baines の英訳で読んだ。三つの不安と自我を守る目的は pp.73–74、第 6 章「空想の中の否認」pp.73–88、第 7 章「言葉と行いによる否認」pp.89–99。写しは、クライン 1946 年と同じ、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/a-freud-1937-ego)）。
 
 </details>
 
@@ -802,7 +802,7 @@ Love駆動開発を、入力と出力を持つ仕組みの図として描けな�
 
 <!--REF:心理学-->
 
-出典：Cook-Greuter (2013) "[Nine Levels of Increasing Embrace in Ego Development: A Full-Spectrum Theory of Vertical Growth and Meaning Making](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)", prepublication version, revised Dec. 2013（本文照合済。頁は刷りの頁。防衛の総論 pp.9–10、自己保護 p.27、順応 p.34、専門家 pp.39–40、達成者 pp.49–50、多元 pp.53・58–59、戦略家 pp.71–72、構成への気づき pp.84–85、概念との関係が段階で違う p.10、文章完成法 p.10。読んだ写しは、著者のサイト cook-greuter.com が公開していた PDF の、Wayback Machine による 2021 年 10 月 28 日の保存）／O'Fallon (2020) "[States and STAGES: Waking up Developmentally](https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf)", *Integral Review* 16(1)（本文照合済。段階を視点として定義する三つの問い p.18、一時的な状態と段階の区別 p.22、各段階の定義 pp.28–29）。
+出典：Cook-Greuter (2013) "[Nine Levels of Increasing Embrace in Ego Development: A Full-Spectrum Theory of Vertical Growth and Meaning Making](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)", prepublication version, revised Dec. 2013（本文照合済。頁は刷りの頁。防衛の総論 pp.9–10、自己保護 p.27、順応 p.34、専門家 pp.39–40、達成者 pp.49–50、多元 pp.53・58–59、戦略家 pp.71–72、構成への気づき pp.84–85、概念との関係が段階で違う p.10、文章完成法 p.10。読んだ写しは、著者のサイト cook-greuter.com が公開していた PDF の、[Wayback Machine による 2021 年 10 月 28 日の保存](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)）／O'Fallon (2020) "[States and STAGES: Waking up Developmentally](https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf)", *Integral Review* 16(1)（本文照合済。段階を視点として定義する三つの問い p.18、一時的な状態と段階の区別 p.22、各段階の定義 pp.28–29）。
 
 ## 信頼と、信仰や期待を、人は自分の中で分けられるのか
 
@@ -836,7 +836,7 @@ Love駆動開発を、入力と出力を持つ仕組みの図として描けな�
 
 <!--REF:心理学-->
 
-出典：Cook-Greuter (2013) "[Nine Levels of Increasing Embrace in Ego Development: A Full-Spectrum Theory of Vertical Growth and Meaning Making](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)", prepublication version, revised Dec. 2013（本文照合済。頁は刷りの頁。自己保護の信頼の低さ p.25、単純な感情 p.27、規則志向の信頼 p.28、順応の感情 pp.33–35、専門家 p.44、達成者 p.49、多元 pp.56–57、戦略家 pp.67・69、構成への気づき pp.80・83。読んだ写しは、著者のサイト cook-greuter.com が公開していた PDF の、Wayback Machine による 2021 年 10 月 28 日の保存）。
+出典：Cook-Greuter (2013) "[Nine Levels of Increasing Embrace in Ego Development: A Full-Spectrum Theory of Vertical Growth and Meaning Making](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)", prepublication version, revised Dec. 2013（本文照合済。頁は刷りの頁。自己保護の信頼の低さ p.25、単純な感情 p.27、規則志向の信頼 p.28、順応の感情 pp.33–35、専門家 p.44、達成者 p.49、多元 pp.56–57、戦略家 pp.67・69、構成への気づき pp.80・83。読んだ写しは、著者のサイト cook-greuter.com が公開していた PDF の、[Wayback Machine による 2021 年 10 月 28 日の保存](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)）。
 
 第四部の流れを考えたとき、pjdhiro は、この部で難しいところをこう言っています。
 
@@ -900,7 +900,7 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 
 <!--REF:心理学-->
 
-出典：期待と信頼の軸＝「意識とは」の作業ノート「[信頼とは何か — 軸による多元的記述](https://github.com/uminomae/project-design-theory/blob/main/as/knowledge/concepts/CN-006_trust-analysis-axes.md)」／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99（](https://archive.org/details/ijp-27-1946-1-2)本文照合済。早い時期の防衛に理想化を数える箇所は p.99、良い面を大きくして迫害の恐れから守る箇所は p.101。写しは、Internet Archive にある国際精神分析大学ベルリンのコレクション）／[Vaillant (2011)](https://doi.org/10.31887/DCNS.2011.13.2/gvaillant) "Involuntary coping mechanisms: a psychodynamic perspective", *Dialogues in Clinical Neuroscience* 13(3):366（本文照合済。PMC3182012 の全文。空想を未熟な防衛に数える箇所は、冒頭の節「What are involuntary coping mechanisms?」と「Classification of defenses」の節）。
+出典：期待と信頼の軸＝「意識とは」の作業ノート「[信頼とは何か — 軸による多元的記述](https://github.com/uminomae/project-design-theory/blob/main/as/knowledge/concepts/CN-006_trust-analysis-axes.md)」／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99（](https://archive.org/details/ijp-27-1946-1-2)本文照合済。早い時期の防衛に理想化を数える箇所は p.99、良い面を大きくして迫害の恐れから守る箇所は p.101。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/ijp-27-1946-1-2)）／[Vaillant (2011)](https://doi.org/10.31887/DCNS.2011.13.2/gvaillant) "Involuntary coping mechanisms: a psychodynamic perspective", *Dialogues in Clinical Neuroscience* 13(3):366（本文照合済。PMC3182012 の全文。空想を未熟な防衛に数える箇所は、冒頭の節「What are involuntary coping mechanisms?」と「Classification of defenses」の節）。
 
 </details>
 
@@ -974,7 +974,7 @@ pjdhiro のページは、創造の段階に、ゆれと対立を置き、衝突
 
 <!--REF:心理学-->
 
-出典：pjdhiro「[対話：創造とは](https://uminomae.github.io/pjdhiro/dialogueCreation/)」（「特に注意したい現象」の「波」の項）／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99–110](https://archive.org/details/ijp-27-1946-1-2)（本文照合済。良い対象を理想化する傾向と、内なる理想化された対象への逃げ込みは p.103、愛する面と憎む面が離れていないと感じられること・失う恐れ・罪の感じ・喪に近い状態・償いの動き・分ける動きが形を変えて残り、不安の場面がくり返し経験されること・不安が弱まると理想化も恐ろしさも少なくなることは p.105、分ける機制と防衛が正常な発達の一部で、のちの病の土台にもなることは p.109。写しは、Internet Archive にある国際精神分析大学ベルリンのコレクション）／良い結果だけ・良いも悪いもの軸＝「意識とは」の作業ノート「[信頼とは何か — 軸による多元的記述](https://github.com/uminomae/project-design-theory/blob/main/as/knowledge/concepts/CN-006_trust-analysis-axes.md)」。
+出典：pjdhiro「[対話：創造とは](https://uminomae.github.io/pjdhiro/dialogueCreation/)」（「特に注意したい現象」の「波」の項）／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99–110](https://archive.org/details/ijp-27-1946-1-2)（本文照合済。良い対象を理想化する傾向と、内なる理想化された対象への逃げ込みは p.103、愛する面と憎む面が離れていないと感じられること・失う恐れ・罪の感じ・喪に近い状態・償いの動き・分ける動きが形を変えて残り、不安の場面がくり返し経験されること・不安が弱まると理想化も恐ろしさも少なくなることは p.105、分ける機制と防衛が正常な発達の一部で、のちの病の土台にもなることは p.109。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/ijp-27-1946-1-2)）／良い結果だけ・良いも悪いもの軸＝「意識とは」の作業ノート「[信頼とは何か — 軸による多元的記述](https://github.com/uminomae/project-design-theory/blob/main/as/knowledge/concepts/CN-006_trust-analysis-axes.md)」。
 
 </details>
 
