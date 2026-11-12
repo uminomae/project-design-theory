@@ -683,7 +683,7 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 
 <a id="ldd-unconscious"></a><strong>pjdhiro の見方：</strong>人の心理は自分が思っているようにはできていない。フロイトの転移、クラインの対象関係のような信頼や愛の定義に関するような発生源、ユングの元型、心理防衛機制に発達段階と状態による非合理的な行動や感情発生など、みんな思っているほど立派にはできてない。
 
-フロイトは 1915 年の論文で、物と同じように、心も、私たちに見えているとおりにできているとは限らない、と書きました。心の働きのうち、意識に上らずに動いている側を、精神分析は無意識と呼んできました。そこには、今たまたま意識に上っていないだけのものと、意識に上がることを退けられたもの（抑圧されたもの）の両方が入ります。ユングは 1917 年の論文で、無意識を、個人の記憶から来る個人的無意識と、どの人にも共通する集合的無意識に分けました。
+フロイトは 1915 年の論文で、物と同じように、心も、私たちに見えているとおりにできているとは限らない、と書きました。心の働きのうち、意識に上らずに動いている側を、精神分析は無意識と呼んできました。そこには、今たまたま意識に上っていないだけのものと、意識に上がることを退けられたもの（抑圧されたもの）の両方が入ります。ユングは 1917 年の論文で、無意識を、個人の記憶から来る個人的無意識と、どの人にも共通する集合的無意識に分けました。手がかりにしたのは、個人の記憶に根をもたない空想が、世界中の神話や伝説の主題と同じ形で現れることで、ユングは、無意識の深い層に現れる像と神話の主題を、同じ形の像と見ています。人類はそうした原初の像から神々や悪魔を引き出してきた、とも書いています。河合隼雄の神話・民話の読みは、独立ページ「[影響を受けた心理学](influences-psychology.html#河合隼雄--神話民話と元型)」に置きます（工事中）。
 
 [欠損駆動思考](https://uminomae.github.io/project-design-theory/ks/)で、気づかれないままゼロにされてしまうものは何かを考えたとき、pjdhiro は次のように答えています。
 
@@ -695,11 +695,7 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 
 <!--REF:心理学-->
 
-出典：Freud (1915) "Das Unbewußte", *Internationale Zeitschrift für ärztliche Psychoanalyse* [3(4):189–203](https://archive.org/details/z319154)・[3(5):257–269](https://archive.org/details/z319155)（本文照合済。独語の原文を読んだ。抑圧と無意識の範囲は p.189、無意識を置く理由と思い上がりの語は pp.189–190、推し量りを自分に向けることは p.192、カントの戒めと「見えているとおりにできているとは限らない」は p.193、潜在と抑圧・前意識・検閲は pp.193–194。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/z319154)の誌面。パブリックドメイン）／Jung (1917) *Die Psychologie der unbewußten Prozesse*、英訳 Hecht "The Psychology of the Unconscious Processes"、Long (ed.) *Collected Papers on Analytical Psychology*, 2nd ed. (1920) 第 14 章（本文照合済（訳）。Hecht の英訳で読んだ。第 5 節「The Personal and the Impersonal Unconscious」pp.408–416。写しは [Project Gutenberg #48225](https://www.gutenberg.org/ebooks/48225)。パブリックドメイン）。
-
-<!--REF:心理学-->
-
-出典：Jung (1917) *Die Psychologie der unbewußten Prozesse*、英訳 Hecht "The Psychology of the Unconscious Processes"、Long (ed.) *Collected Papers on Analytical Psychology*, 2nd ed. (1920) 第 14 章（本文照合済（訳）。Hecht の英訳で読んだ。二人の母と原初の像 p.410、神々と悪魔 p.411。写しは [Project Gutenberg #48225](https://www.gutenberg.org/ebooks/48225)。パブリックドメイン）。
+出典：Freud (1915) "Das Unbewußte", *Internationale Zeitschrift für ärztliche Psychoanalyse* [3(4):189–203](https://archive.org/details/z319154)・[3(5):257–269](https://archive.org/details/z319155)（本文照合済。独語の原文を読んだ。抑圧と無意識の範囲は p.189、無意識を置く理由と思い上がりの語は pp.189–190、推し量りを自分に向けることは p.192、カントの戒めと「見えているとおりにできているとは限らない」は p.193、潜在と抑圧・前意識・検閲は pp.193–194。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/z319154)の誌面。パブリックドメイン）／Jung (1917) *Die Psychologie der unbewußten Prozesse*、英訳 Hecht "The Psychology of the Unconscious Processes"、Long (ed.) *Collected Papers on Analytical Psychology*, 2nd ed. (1920) 第 14 章（本文照合済（訳）。Hecht の英訳で読んだ。第 5 節「The Personal and the Impersonal Unconscious」pp.408–416。空想が伝説の主題と同じ形で現れることと原初の像は p.410、神々と悪魔は p.411。写しは [Project Gutenberg #48225](https://www.gutenberg.org/ebooks/48225)。パブリックドメイン）。
 
 </details>
 
