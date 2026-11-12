@@ -107,4 +107,6 @@
 | Bion, W. R. | 1948 | Experiences in groups: I（*Human Relations* 1(3):314–320） | 10.1177/001872674800100303 | 未照合（有料） | — |
 | Petriglieri, G., & Petriglieri, J. L. | 2020 | The return of the oppressed: A systems psychodynamic approach to organization studies（*Academy of Management Annals* 14(1):411–449） | 10.5465/annals.2017.0007 | 未照合（有料） | — |
 | Petriglieri, G., & Petriglieri, L. | 2022 | The work is alive!（*Human Relations* 75(8):1431–1460） | 10.1177/00187267221089208 | 未照合（有料） | — |
+| Argyris, C. | 1987 | Seeking truth and actionable knowledge: How the scientific method inhibits both（*Philosophica* 40。Crossref で巻を確認） | 10.21825/philosophica.82481・http://www.philosophica.ugent.be/article/82481/galley/202295/download/ | 本文照合済（ゲント大学の誌の公開版。防衛的ルーティンの定義と社会的な美徳 p.6・Model I p.8 と図 1 p.9・思いやりと支えの前提 p.10）。1990 年の本の写し（SURVEY-03）は上げた人が分からず載せられないので、本文にはこちらを使った | `Argyris_1987_philosophica.pdf` |
+| Argyris, C. | 1998 | Organizational behavior: Production of knowledge for action in the world of practice（コーネル大学の機関リポジトリ hdl 1813/75911） | https://hdl.handle.net/1813/75911 | 未照合（確認画面） | — |
 | Schein, E. H. | — | 組織の文化のワーキングペーパー（MIT の機関リポジトリ。handle 1721.1/48689。題と年は開けていないので確かめていない） | https://dspace.mit.edu/bitstream/handle/1721.1/48689/organizationalcu00sche.pdf | 未照合（確認画面） | — |
