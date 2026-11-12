@@ -195,7 +195,7 @@ pjdhiro は、この下がり方を、親密な関係で見てきたことと重
 
 第二部は、心理的安全性という言葉がどこから来たかを、年の順に見るところから始めます。この来歴の中で、シャインは、変化を止める力を心の防衛として書いています（1995 年の段）。
 
-この章で辿る文献のうち、シャインの 1995 年の論文とエドモンドソンの 1999 年の論文は、本文で確かめました。レヴィンの 1947 年の論文は Internet Archive に置かれた写しで、ロジャーズの論とシャインとベニスの本は、本の全文検索で当たった断片で確かめた範囲です。
+この章で辿る文献のうち、シャインの 1995 年の論文とエドモンドソンの 1999 年の論文は、本文で確かめました。レヴィンの 1947 年の論文は Internet Archive に置かれた写しで、ロジャーズの 1954 年の論は 1970 年の論集に再録された全文を第三者が置いた写しで確かめました。シャインとベニスの本は、本の全文検索で当たった断片で確かめた範囲です。
 
 ### 1947 年　レヴィンの変化の三つの段
 
@@ -203,7 +203,7 @@ pjdhiro は、この下がり方を、親密な関係で見てきたことと重
 
 ### 1954 年　ロジャーズの創造の条件
 
-「心理的安全」の語は、来談者中心療法のロジャーズが、1954 年の創造性についての論で、創造が育つ条件として使っています。人を無条件の価値あるものとして受け入れること、外からの評価が無いこと、共感して理解することで作られる、とされます。
+「心理的安全」の語は、来談者中心療法のロジャーズが、1954 年の創造性についての論で、創造が育つ条件として使っています。人を無条件の価値あるものとして受け入れること、外からの評価が無いこと、共感して理解することで作られる、とされます。ここでの創造は、作品や理論や発明のような外の産物を含み、心理療法の中で自分の人格を新しくつくることも、同じ過程の一つとされています。ロジャーズが創造に関心を持ったのは、その心理療法の経験からでした。
 
 ### 1965 年　シャインとベニスの解凍
 
@@ -231,7 +231,7 @@ pjdhiro は、この二つの作り方を、心の防衛の側から読んでい
 
 このページの二つの視点と並べると、次のように読めます（Claude の読み）。不安の防衛の視点は、シャインが精神分析から取り入れた防衛の語と重なります。発達段階の視点は、来歴の中に直接の出所が見えず、来歴の外から来た見方です。
 
-出典：[Lewin (1947)](https://doi.org/10.1177/001872674700100103) *Human Relations* 1(1):5–41（Internet Archive に置かれた写しで確認。pp.32, 34–35）／Rogers, C. R. (1961). [*On becoming a person*](https://archive.org/details/onbecomingperson0000carl). Houghton Mifflin（1954 年の創造性の論の再録。Internet Archive の全文検索）／Schein, E. H., & Bennis, W. G. (1965). [*Personal and organizational change through group methods: The laboratory approach*](https://archive.org/details/personalorganiza0000sche). Wiley（Internet Archive の全文検索）／[Schein (1995)](https://hdl.handle.net/1721.1/2576) *Kurt Lewin's change theory in the field and in the classroom: Notes toward a model of managed learning*. MIT Sloan Working Paper 3821（本文で確認。レヴィンの型と捕虜の研究 p.2・防衛と精神分析とタヴィストック p.3・解凍の三つの過程と心理的安全 pp.3–4・安全が足りないと知らせが防衛される p.5）／[Edmondson (1999)](https://doi.org/10.2307/2666999)（本文で確認。ゴフマンの面子 pp.351–352・根 p.354）
+出典：[Lewin (1947)](https://doi.org/10.1177/001872674700100103) *Human Relations* 1(1):5–41（Internet Archive に置かれた写しで確認。pp.32, 34–35）／Rogers, C. R. (1961). [*On becoming a person*](https://archive.org/details/onbecomingperson0000carl). Houghton Mifflin（1954 年の創造性の論の再録。Internet Archive の全文検索）／Rogers, C. R. (1954). Toward a theory of creativity. *ETC: A Review of General Semantics* 11:249–260（Vernon, P. E. 編『Creativity』Penguin, 1970, pp.137–151 の再録を、[第三者が置いた写し](https://gwern.net/doc/psychology/writing/1970-vernon-creativity.pdf)で確認。産物 p.138・定義と心理療法 p.139・心理的安全の三つの過程 pp.147–148）／Schein, E. H., & Bennis, W. G. (1965). [*Personal and organizational change through group methods: The laboratory approach*](https://archive.org/details/personalorganiza0000sche). Wiley（Internet Archive の全文検索）／[Schein (1995)](https://hdl.handle.net/1721.1/2576) *Kurt Lewin's change theory in the field and in the classroom: Notes toward a model of managed learning*. MIT Sloan Working Paper 3821（本文で確認。レヴィンの型と捕虜の研究 p.2・防衛と精神分析とタヴィストック p.3・解凍の三つの過程と心理的安全 pp.3–4・安全が足りないと知らせが防衛される p.5）／[Edmondson (1999)](https://doi.org/10.2307/2666999)（本文で確認。ゴフマンの面子 pp.351–352・根 p.354）
 
 ## 心は、自分を守るしくみを持っている
 
