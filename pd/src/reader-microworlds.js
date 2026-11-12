@@ -997,7 +997,8 @@ function mountProjectToReal(host) {
 
 // ============================================================
 // いろんな引き算（前提知識・欠損駆動思考の引き算の章）
-// 虚軸が関わる三つ。どれもひとりでに動き（アニメ）、つまみで自分でも動かせる。
+// 虚軸が関わる二つ（根が重なる 0・720 度）は、ひとりでに動き（アニメ）、つまみで自分でも動かせる。
+// 大きさの差と差の大きさは、回さない数直線の図（素朴な引き算・pjdhiro 2026-11-12）。
 // つまみに触ると止まり、「動かす」でまた動く。動きを減らす設定の環境では、最初から止めておく。
 // 画面の外にあるあいだは動かさない（IntersectionObserver）。
 // ============================================================
@@ -1065,33 +1066,56 @@ const fmt1 = v => (Math.abs(v) < 0.05 ? '0' : (v < 0 ? '−' : '') + Math.abs(v)
 
 // 大きさの差と、差の大きさ：右へ 3 の矢印と、0 のまわりを回る長さ 3 の矢印
 function mountMagnitudeVsDifference(host) {
+    // 数直線の上の素朴な引き算。回さない。右へ 3 の矢印と、もう一本（はじめは左へ 3）を並べ、
+    // 「先に大きさにしてから引く」と「先に引いてから大きさにする」を上下に並べて見せる。
     const P = PAL();
-    const view = makeCanvas(host, 0.75);
+    const view = makeCanvas(host, 0.62);
     const row = controls(host);
     const st = status(host);
-    const N = 3;
-    let deg = 180;   // 本文の例：右へ 3 と左へ 3 から始める
-    const play = autoPlay(host, row, { period: 10000, onFrame: p => { deg = Math.round(keyframes(p, [[0, 180], [0.14, 180], [0.34, 90], [0.46, 90], [0.66, 0], [0.76, 0], [0.96, 180], [1, 180]])); input.value = deg; draw(); } });
-    const input = slider(row, { label: 'もう一本の向き（度）', min: 0, max: 360, value: deg, onInput: v => { play.stop(); deg = v; draw(); } });
+    let b = -3;
+    slider(row, { label: 'もう一本の矢印の先', min: -4, max: 4, value: b, onInput: v => { b = v; draw(); } });
+    function line(ctx, x0, x1, y, unit, cx) {
+        ctx.strokeStyle = P.mid; ctx.lineWidth = 1.2;
+        ctx.beginPath(); ctx.moveTo(x0, y); ctx.lineTo(x1, y); ctx.stroke();
+        ctx.fillStyle = P.mid; ctx.font = '11px sans-serif'; ctx.textAlign = 'center';
+        for (let n = -4; n <= 4; n++) {
+            const x = cx + n * unit;
+            if (x < x0 - 1 || x > x1 + 1) continue;
+            ctx.beginPath(); ctx.moveTo(x, y - 4); ctx.lineTo(x, y + 4); ctx.stroke();
+            ctx.fillText(signed(n), x, y + 16);
+        }
+    }
     function draw() {
         const { ctx, W, H } = view;
         ctx.clearRect(0, 0, W, H);
-        const unit = Math.min(W, H) / (2 * N + 1.6), cx = W / 2, cy = H / 2;
-        drawPlaneAxes(ctx, P, cx, cy, unit, N, [-3, -2, -1, 1, 2, 3]);
-        const r = deg * Math.PI / 180, bx = 3 * Math.cos(r), by = 3 * Math.sin(r);
-        // 二本の先を結ぶ線（差の大きさ）
-        ctx.strokeStyle = P.gold; ctx.lineWidth = 2; ctx.setLineDash([5, 4]);
-        ctx.beginPath(); ctx.moveTo(cx + 3 * unit, cy); ctx.lineTo(cx + bx * unit, cy - by * unit); ctx.stroke(); ctx.setLineDash([]);
-        drawArrow(ctx, cx, cy, cx + 3 * unit, cy, P.navy, 3);
-        drawArrow(ctx, cx, cy, cx + bx * unit, cy - by * unit, P.coral, 3);
-        ctx.fillStyle = P.ink; ctx.beginPath(); ctx.arc(cx, cy, 3, 0, Math.PI * 2); ctx.fill();
-        const d = Math.hypot(3 - bx, by);
-        const dTxt = Math.abs(d - Math.round(d)) < 0.005 ? String(Math.round(d)) : d.toFixed(2);
-        const where = deg === 180 ? 'もう一本は左へ 3（−3）を指しています。' : deg === 90 ? 'もう一本は真上へ 3（虚軸の上の 3i）を指しています。' : deg === 0 || deg === 360 ? '二本は同じ向きです。' : '';
-        st.innerHTML = where + '二本の大きさは、どちらも 3 です。大きさの差は <b>0</b> です。'
-            + '差の大きさ（二本の先どうしの距離・点線）は <b>' + dTxt + '</b> です。';
+        const unit = W / 10.5, cx = W / 2;
+        const y1 = H * 0.24;
+        const big = (t, x, y, c) => { ctx.fillStyle = c; ctx.font = '13px sans-serif'; ctx.textAlign = 'left'; ctx.fillText(t, x, y); };
+        // 上：二本の矢印
+        line(ctx, cx - 4.4 * unit, cx + 4.4 * unit, y1, unit, cx);
+        drawArrow(ctx, cx, y1 - 12, cx + 3 * unit, y1 - 12, P.navy, 3);
+        drawArrow(ctx, cx, y1 - 26, cx + b * unit, y1 - 26, P.coral, 3);
+        big('二本の矢印：3 と ' + signed(b), cx - 4.4 * unit, H * 0.07, P.ink);
+        // 中：先に大きさにしてから引く＝0 から測った長さどうしの差（向きは消える）
+        const x0 = cx - 4.4 * unit, ym = H * 0.52;
+        big('① 先に大きさにしてから引く：3 − ' + Math.abs(b) + ' = ' + (3 - Math.abs(b)), x0, ym - 26, P.ink);
+        ctx.strokeStyle = P.navy; ctx.lineWidth = 5;
+        ctx.beginPath(); ctx.moveTo(x0, ym - 10); ctx.lineTo(x0 + 3 * unit, ym - 10); ctx.stroke();
+        ctx.strokeStyle = P.coral;
+        ctx.beginPath(); ctx.moveTo(x0, ym); ctx.lineTo(x0 + Math.abs(b) * unit, ym); ctx.stroke();
+        // 下：先に引いてから大きさにする＝数直線の上の、二本の先どうしの距離
+        const yb = H * 0.84;
+        big('② 先に引いてから大きさにする：|3 − (' + signed(b) + ')| = ' + Math.abs(3 - b), x0, yb - 30, P.gold);
+        line(ctx, cx - 4.4 * unit, cx + 4.4 * unit, yb, unit, cx);
+        const lo = Math.min(3, b), hi = Math.max(3, b);
+        ctx.strokeStyle = P.gold; ctx.lineWidth = 6; ctx.globalAlpha = 0.8;
+        ctx.beginPath(); ctx.moveTo(cx + lo * unit, yb - 10); ctx.lineTo(cx + hi * unit, yb - 10); ctx.stroke(); ctx.globalAlpha = 1;
+        let msg = '① 先に大きさにしてから引くと <b>' + (3 - Math.abs(b)) + '</b>、② 先に引いてから大きさにすると <b>' + Math.abs(3 - b) + '</b> です。';
+        if (b === -3) msg += '右へ 3 と左へ 3 は、長さが同じなので大きさの差は 0 ですが、向きが反対なので、先どうしは 6 離れています。';
+        else if (b === 3) msg += '二本が同じ向き・同じ長さなら、どちらの順でも 0 です。';
+        st.innerHTML = msg;
     }
-    view.canvas.setAttribute('aria-label', '右へ 3 の矢印と、左へ 3 から始めて 0 のまわりを回る長さ 3 の矢印。大きさの差はいつも 0 で、差の大きさ（二本の先どうしの距離）は、左へ 3 で 6、真上へ 3 で約 4.24、同じ向きで 0。');
+    view.canvas.setAttribute('aria-label', '数直線の上に、右へ 3 の矢印ともう一本の矢印を並べる。上の段は二本の矢印、中の段は先に大きさにしてから引いた差（長さどうしの差）、下の段は先に引いてから大きさにした差（二本の先どうしの距離）。右へ 3 と左へ 3 では、中の段が 0、下の段が 6。');
     view.onResize = draw;
     draw();
 }
