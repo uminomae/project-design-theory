@@ -260,33 +260,39 @@ pjdhiro は、この創造の形を、大海と波の像にいちばん近いと
 
 pjdhiro は、五段階を海のたとえでも言い換えています。海 → 波 → 波間 → 渦 → 海流 の並びで、場は海、波は波、縁は波間、渦は渦、束は海流にあたります。「創造とは」の[五段階の表](https://uminomae.github.io/project-design-theory/cs/reader/five-stages.html)の「海のたとえ」の列にある言葉です。縁の波間は異質なものが出会う境目に、束の海流は新しい形として残って次の場になる集まりに、それぞれ当たります。
 
-似た形が報告されている例を、五つ挙げます。どれも、[「創造とは」の分野ごとの記録](https://uminomae.github.io/project-design-theory/cs/?modal=domains)で、原典の本文に当たって確かめられているものです。記録には、各論の対立・衝突・統合または新たな安定・単位が列に分けて書かれています。その列を五段階の順に並べたのは Claude の読みで、原典が五段階で書いているわけではありません。
+似た形が報告されている例を、五つの領域から挙げます。どの領域のどのテーマを挙げるかは、pjdhiro が選びました。そのテーマの中でどの論を取り上げるかと、論の記述を五段階の順に並べることは、Claude の読みです。原典が五段階で書いているわけではありません。取り上げた論は、[「創造とは」の分野ごとの記録](https://uminomae.github.io/project-design-theory/cs/?modal=domains)や、この読み物の心理学の調べで、原典の本文に当たって確かめられているものです。分野ごとの記録には、各論の対立・衝突・統合または新たな安定・単位が列に分けて書かれていて、その列を五段階の順に並べています。
 
-- 量子論（物理学）：場は、一つの量子系とその環境。波は、量子の重ね合わせと、系を見張り続ける環境。縁は、環境との相互作用が、選ばれた状態どうしの干渉を壊すところ。渦は、環境の見張りに耐える少数の状態だけが残ること。束は、残った状態の記録が環境の中に何重にも写されること。
-- 化学：場は、一つの容器の中の三つの中間体。波は、二つの物質が中間体を取り合うこと。縁は、一方が臨界の濃度を下回ると別の過程に切り替わり、その過程が間接に元へ戻すこと。渦は、どちらの過程も勝ちきらず、行き来が安定した形として残ること。束は、初めの状態によらず同じ一つの周期の軌道に行き着くこと。
-- 心理学：場は、一人の頭の中（数秒から数分）。波は、過去の経験から来た見方と、それでは解けない新しい問題。縁は、解けないことが続く行き詰まり。渦は、制約がゆるみ、まとまりがほどけて見方が変わること。束は、解が速く迷わず実行されること。
-- 美学（芸術）：場は、一回の判断。波は、構想力と、理性の理念。縁は、崇高で、構想力が理性の理念に及ばず、生の力がいったん妨げられること。渦と束は分けず、すぐにより強く流れ出ること。
-- 経営学：場は、プロジェクトチーム（数日から数か月）。波は、初回の会合で決まった枠組みと、期限・外部の要求。縁は、期限の中間点で古い型を捨てて外と関わり直すこと。渦と束は分けず、合意した計画で第二の局面に入ること。
+- 物理学（散逸構造。ベナール対流を例に）：場は、下から温められた液体の層。平均の状態から外れる小さなゆらぎが、いつも起きては打ち消されている。波は、温度の勾配がある値を越えると、一部のゆらぎが育つこと。縁は、浮力と、それを抑える粘性・熱伝導との競り合い。越えたあとは、いくつもの乱れの型のうち、いちばん速く育つ型が優勢になる。渦は、育ったゆらぎが、外とのエネルギーのやりとりで支えられた秩序になり、層が細胞に分かれること。束は、ばらばらの多角形が、ゆっくり正六角形の網にそろうこと。
+- 生化学（生命科学と化学の二つ）：
+  - 有性生殖（生命科学）：場は、集団と系統。波は、有性生殖の費用（遺伝子を半分しか子に伝えない・過去の選択が作った良い組み合わせを壊す）と、組み換えの利得。縁は、環境が変わる・場所で選択が違う・集団が有限、のどれかで、壊すことが新しい組み合わせを作る利得になりうること。渦は、条件によって性が残ること。束は、真核生物の大多数が少なくとも時に有性生殖をし、長く無性のままの系統はまれなこと。
+  - 化学（BZ 反応）：場は、一つの容器の中の三つの中間体。波は、二つの物質が中間体を取り合うこと。縁は、一方が臨界の濃度を下回ると別の過程に切り替わり、その過程が間接に元へ戻すこと。渦は、どちらの過程も勝ちきらず、行き来が安定した形として残ること。束は、初めの状態によらず同じ一つの周期の軌道に行き着くこと。
+- 心理学（良い面と悪い面の行き来。クライン）：場は、乳児の心の中。波は、満たされるときと満たされないときで、愛と憎しみが分かれ、良い面を大きくして恐ろしい面から身を守ること（理想化）。縁は、愛する面と憎む面が離れていないと感じられるようになるときに、失う恐れ、罪の感じ、喪に近い気持ちが湧くこと。渦は、傷つけたと感じた相手を直そうとする動き（償い）と、少しずつ信を取り戻し、相手が完全ではなかったと分かることに耐えながら、信と愛を失わずにいられること。束は、分ける動きが形を変えて残り、不安の場面がくり返し経験されること。
+- 素朴な事例（恋愛。結婚の始めの夫婦の研究から）：場は、求愛の時期の二人で、互いに印象を整え、互いを理想化していること。波は、相手を理想の像に重ねて見ることと、時間と相互依存が明かす相手の実際の姿。縁は、幻滅。愛や愛情の減りと、相手への両価の感じの増えとして現れ、新婚の夫婦を 3 年追った研究でも、満足は全体としてはっきり下がった。渦は、理想を今見える相手に合わせて柔らかく直すこと（研究者の推し量り）。束は、🚧 工事中。
+- 経営学（イノベーションと、組織の進化の二つ）：
+  - イノベーション（野中らの組織的知識創造）：場は、組織とプロジェクト（数か月から数年）。波は、暗黙知と形式知、秩序とカオスなど、相反して見える組。縁は、外からの変化や上からの難題（揺らぎ）で、ルーチン・習慣・認知の枠組みが崩れ、危機感が生まれること。渦は、対話で概念が生まれ、正当化を経て原型になること。束は、原型が別の部署や階層へ移り、次のサイクルを始めること。
+  - 組織の進化（March の探索と活用）：場は、組織の知（コード）と、そこに属する個人。波は、新しい可能性の探索と、既知の確かさの活用。縁は、短期と長期、個人の知と組織の知の利得のぶつかり。コードは、コードから外れた個人からしか学べない。渦は、学びの遅い個人や人の入れ替わりが多様さを保ち、コードの知が上がること。束は、探索と活用の釣り合いが保たれて、組織が生き延びて栄えること。
 
-この五つは、30 の領域のうちの五つです。ほかの領域の記録にも、同じ列で整理した論が並んでいます。ただ、どの論も当てはまるとは限らず、統合に至らなかった形や、当てはまらなかった論も記録に残っています。五つ以外の領域から事例を挙げるのは 🚧 工事中です。
+それぞれの形から外れた場合も、記録には残っています。ベナール対流は、温度の勾配が分かれ目の値より小さいと、ゆらぎが消えて元に戻ります。BZ 反応は、条件が外れると、振動が起きずに定常に落ち着きます。探索だけに偏った組織は未熟な案が散り、活用だけに偏った組織は最適でない安定に閉じ込められます。
+
+この五つは、30 の領域のうちの五つです。ほかの領域の記録にも、同じ列で整理した論が並んでいます。ただ、どの論も当てはまるとは限らず、統合に至らなかった形や、当てはまらなかった論も記録に残っています。次の三つは 🚧 工事中です。物理学の「場の励起」と素朴な力学は、記録では経路の和の論文（Feynman 1948）しか本文に当たれておらず、粒子を場の励起として書く見方の原典は未照合です。雌雄の出会いから受精までの過程そのものを書いた原典は、生命科学の記録にまだありません。破壊的イノベーション（Christensen）と、組織の発達段階を書いた論は、経営学の記録で未照合です。量子論、洞察の心理学、美学（古事記を含む）、チームの転換は、畳みの「ほかの領域の事例」に置きました。
 
 <details><summary>詳しく — 五つの事例の原典と、記録</summary>
 
 分野ごとの記録は、[創造とは](https://uminomae.github.io/project-design-theory/cs/?modal=domains)の分野の記録にあります。30 の領域の一覧の窓が開きます。書かれていることを、五段階に似た形として並べたものです。似ているかどうかの読みは記録の側にあり、ここでは、原典に何と書かれているかの範囲で述べます。
 
-**量子論。** Zurek（2003）は、デコヒーレンスと einselection を、同じ過程の二つの見方として書いています。量子系は環境と相互作用し、環境に何重にも写せる少数の状態だけが残ります。物理学の記録の論 9 です。
+**物理学（散逸構造）。** Prigogine（1977、ノーベル講演）は、平衡から遠い、外とやりとりをする系を書いています。平均の状態から外れるゆらぎはいつもあり、温度の勾配などがある値より小さいと減衰して消え、越えると一部のゆらぎが増幅されて巨視的な秩序になります。新しい秩序は、外とのエネルギーのやりとりで安定したものです（p.267）。分かれ目の近くでは、ゆらぎが系の進む枝を決め（p.273）、有限の系では、ゆらぎがやがて秩序の向きを乱します（p.277）。ベナール対流そのものについては、Rayleigh（1916）が、温度の勾配がある値を越えるまでは平衡が安定で、越えるといくつもの型の乱れのうち育つ速さがいちばん大きい型が優勢になると書き（pp.530・539）、Bénard（1901）が、初めは 4〜7 辺の多角形の網だったものが、ゆっくり正六角形にそろうと書いています（p.6）。粘りの極めて小さい液体では、渦の流れは落ち着かないままだ、とも書かれています（p.4）。物理学の記録の論 8、複雑系科学の記録の論 1 です。
 
-**化学。** Belousov–Zhabotinsky 反応は、溶液の色が周期的に変わる化学振動です。Field と Noyes（1974）の模型では、臭化物イオンと臭素酸イオンが亜臭素酸を取り合い、臭化物イオンが臨界の濃度を下回ると自己触媒の過程に切り替わり、その過程が間接に臭化物を作って元に戻ります。この行き来は、初めの状態によらず同じ周期の軌道に行き着きます。係数が外れると振動は起きず、定常に落ち着く、とも書かれています。化学の記録の論 3 です。
+**生命科学（有性生殖）。** Otto（2009）は、有性生殖には、相手を探す費用、遺伝子を半分しか子に伝えない費用、過去の選択が作った良い組み合わせを壊す費用があるのに、真核生物の大多数は少なくとも時に有性生殖をする、という謎を書いています（p.S1）。性は、ほとんどいつも無性より子の平均の適応度を下げます（p.S3）。それでも、環境が変わる・場所で選択が違う・集団が有限、のどれかで、壊すことが利得になりえます（pp.S6–S10）。無性の分類群は、ほぼすべて系統樹の枝先にあります（p.S1）。Speijer ら（2015）は、長く無性のままの真核生物はまれだと書いています。性の進化を何が説明するかは研究の一線で、Otto は、赤の女王の説明には限界があると書きます。生命科学の記録の論 8 です。
 
-**心理学。** Knoblich ら（1999）は、洞察を要する問題で、過去の経験から来た初期の表象が解を覆い隠して行き詰まりが起きると書いています。表象を変える過程として、制約をゆるめることと、見慣れたまとまりをほどくことを挙げ、マッチ棒の算数の問題で確かめています。心理学の記録の論 1 です。
+**化学（BZ 反応）。** Belousov–Zhabotinsky 反応は、溶液の色が周期的に変わる化学振動です。Field と Noyes（1974）の模型では、臭化物イオンと臭素酸イオンが亜臭素酸を取り合い、臭化物イオンが臨界の濃度を下回ると自己触媒の過程に切り替わり、その過程が間接に臭化物を作って元に戻ります。この行き来は、初めの状態によらず同じ周期の軌道に行き着きます。係数が外れると振動は起きず、定常に落ち着く、とも書かれています。化学の記録の論 3 です。
 
-**美学。** カント『判断力批判』（1790）は、美しいものでは構想力と悟性が一致して自由に戯れ、崇高では構想力が理性の理念に及ばず、生の力がいったん妨げられてから、すぐにより強く流れ出ると書いています。美学の論は、現象を実証した理論ではなく、美的判断の分析です。美学の記録の論 3 です。
+**心理学（クライン）。** Klein（1946）は、乳児が、満たしてくれる対象と満たしてくれない対象を分けて持ち、良い面を大きくして恐ろしい面から身を守ると書いています（pp.99・101）。育つにつれて、愛する面と憎む面が離れていないと感じられるようになり、失う恐れ、罪の感じ、喪に近い状態が湧いて、傷つけたと感じた相手を直そうとする動き（償い）が前に出ます。分ける動きは形を変えて残り、不安の場面はくり返し経験されます（p.105）。分ける機制と防衛は、正常な発達の一部で、のちの病の土台にもなります（p.109）。Klein（1940）は、喪の中で憎しみが勝つと、良い対象への信が揺らぎ、理想化が乱される（pp.137–138）、少しずつ信を取り戻すと、対象が完全ではなかったと分かることに耐え、しかも信と愛を失わずにいられる（p.138）、まとめる一歩ごとにまた分けることが起きる（p.132）、と書いています。どちらも、乳幼児の心や喪の臨床から推し量ったもので、1946 年の論文には、分析から推し量った仮説だという断りがあります（p.99）。理想化と、信頼との違いは、章「[理想化と信頼は、どう違うのか](#ldd-idealize)」で見ました。
 
-**経営学。** Gersick（1988）は、八つのチームを全期間にわたって観察し、チームは初回の会合で決まった枠組みのまま進み、期限までの暦の中間点で古いやり方を捨てて外と関わり直し、新しい計画で第二の局面に入ったと書いています。中間点でも意見が割れたままの一チームでは、リーダーが集団を解散し、案を一人で決めた、とも書かれています。経営学の記録の論 4 です。
+**素朴な事例（恋愛）。** Niehuis、Reifman、Lee（2013）の作業論文は、社会学者ウォラー（1938）が、求愛の時期に相手どうしが印象を整えて互いを理想化し、結婚すると、理想化された像が現実の像に道を譲ると論じたこと、Huston ら（2001）が、結婚の始めの 2 年の幻滅（愛の減り・愛情の減り・相手を応えてくれる人と見る度合いの減り・両価の増え）が、離婚に向かう夫婦とそうでない夫婦を分けたと報告したことを、要約しています（pp.3–6。二つとも要約で読んだ二次資料で、原典は未照合）。Murray ら（2011）は、結婚して 2〜6 か月の、子のいない初婚の夫婦 222 組を、3 年のあいだ半年ごとに 7 回測りました。満足は全体としてはっきり下がりましたが、結婚の時点で相手を理想に重ねて強く見ていた人は、満足が下がりませんでした。著者は、相手が期待に届かないと時と相互依存が明かしたとき、理想を今見える相手に合わせて柔らかく直す人が、満足を保つのかもしれないと推し量り、データは相関で、因果の証ではない、とも書いています。研究が追ったのは結婚の始めの夫婦で、恋愛の全体ではありません。幻滅のあとに関係が深まる道筋を追った研究は、読めた範囲にありません（🚧 工事中）。
 
-<!--REF:創造-->
+**経営学（イノベーション）。** Nonaka ら（1996）は、知識創造を五つのフェーズで書いています。暗黙知の共有から始まり、概念の創出、正当化、原型づくりへ進み、原型になった概念が階層や部署の境を越えて移り、新しい知識創造のサイクルを始めます（pp.213–215）。揺らぎが入ると、組織の人はルーチン・習慣・認知の枠組みの崩れと混乱に向き合い、危機感が生まれます（p.211）。日本型の知識創造は、集団思考と過去の成功への過剰適応に陥りうるとも書かれています（pp.215–216）。Nonaka ら（2000）は、知識は、秩序とカオス、暗黙と形式、自己と他者のような、相反して見える組を通る渦の中でつくられ、その鍵は、矛盾を超えて総合する弁証法的な思考だと書きます（p.7）。創造的カオスは、リーダーが難しい目標を出して危機感を呼ぶ意図的なカオスで、リーダーは組織が完全な無秩序に落ちないように導きます（pp.26–27）。経営学の記録の論 1 です。
 
-出典：Zurek (2003) [“Decoherence, einselection, and the quantum origins of the classical”](https://doi.org/10.1103/RevModPhys.75.715), *Reviews of Modern Physics* 75:715–775（本文照合済。著者稿 arXiv quant-ph/0105127 で読んだ。二つの見方は I.B 節）／Field & Noyes (1974) [“Oscillations in chemical systems. IV”](https://doi.org/10.1063/1.1681288), *Journal of Chemical Physics* 60(5):1877–1884（本文照合済。pp.1877–1879・1882–1884。読んだ写しは授業用の写しで、権利は確かめていない）／Knoblich, Ohlsson, Haider & Rhenius (1999) [“Constraint relaxation and chunk decomposition in insight problem solving”](https://doi.org/10.1037/0278-7393.25.6.1534), *Journal of Experimental Psychology: Learning, Memory, and Cognition* 25(6):1534–1555（本文照合済。pp.1534–1536・1551・1553）／Kant (1790) [*Kritik der Urteilskraft*](https://korpora.org/Kant/aa05/258.html)、アカデミー版 第 5 巻 1908（本文照合済。独語原文。美しいものは p.217、崇高は pp.245・257–258。読んだ写しは、アカデミー版の頁ごとの公開（korpora.org）の p.258。手元では頁の画像でも読んだ）／Gersick (1988) [“Time and transition in work teams”](https://doi.org/10.2307/256496), *Academy of Management Journal* 31(1):9–41（本文照合済。pp.9・10・16・18・27–28・30）。分野ごとの記録：[物理学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D02-physics.md)・[化学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D03-chemistry.md)・[心理学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D14-psychology.md)・[美学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D15-aesthetics.md)・[経営学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D22-business-management.md)。
+**経営学（組織の進化）。** March（1991）は、組織学習で、新しい可能性の探索と、既知の確かさの活用の資源配分がぶつかると書いています。探索だけに偏る系は、未熟な新しい案が多すぎて、はっきりした能力が育たず、活用だけに偏る系は、最適でない安定した均衡に閉じ込められやすい。だから二つの釣り合いを保つことが、生き延びて栄えるための主な要因だとします（p.71）。探索と活用の兼ね合いには、短期と長期の関心のぶつかり、個人の知の利得と集団の知の利得のぶつかりが含まれます（p.74）。組織のコードは、コードから外れた個人からしか学べず、学びの遅い個人は多様さを長く保って、コードの知を上げます（p.76）。この論は、組織のコードと個人のモデルによるシミュレーションで、進化の記録そのものではありません。経営学の記録の論 5 です。
 
 </details>
 
@@ -294,27 +300,60 @@ pjdhiro は、五段階を海のたとえでも言い換えています。海 �
 
 五つの領域について、中学生にもわかる身近な現象と、記録で原典の本文を読んで確かめた分析を二つずつ挙げます。記録で読めていないものは外してあります。ここで「分析」と呼ぶのは、記録に書かれている原典の内容で、どれが最先端かの順位は付けていません。
 
-**物理学。** 現象：①下から温めた薄い液体の層が、細胞に分かれて六角形の網になる（ベナール対流）。②湿った空気が冷えて水滴になる（過飽和の蒸気から滴ができること）。分析：①Zurek（2003）は、量子の重ね合わせが環境と作用し合い、環境に何重にも写せる少数の状態だけが残ると書いています。②Zurek（1996）らの論と、16 個のイオンの結晶を使った実験（Ulm ら 2013・Pyka ら 2013）は、相転移で領域ごとに独立に選ばれた向きの食い違いが、欠陥として残ることを書いています。欠陥の数は、相転移を横切る速さで決まります。
+**物理学。** 現象：①下から温めた薄い液体の層が、細胞に分かれて六角形の網になる（ベナール対流）。②湿った空気が冷えて水滴になる（過飽和の蒸気から滴ができること）。分析：①Prigogine（1977）は、温度の勾配が分かれ目の値を越えるまでは、ゆらぎは減衰して消え、越えると一部のゆらぎが育って、外とのエネルギーのやりとりで支えられた秩序になると書いています。②Becker と Döring（1935）は、過飽和の蒸気の中で、臨界の大きさより小さい滴は蒸発して戻り、揺らぎで臨界の大きさの核が生まれたときだけ、滴が育つと書いています。
 
-**化学。** 現象：①溶液の色が周期的に変わる（BZ 反応）。②二つの物質が広がり合う中で、均一だった状態に模様ができる（反応拡散）。分析：①Novák と Tyson（2008）は、持続する振動に、負のフィードバック・遅れ・非線形性・時間の尺度の釣り合いの四つの条件がそろうことを挙げています。②Field と Noyes（1974）は、BZ 反応を三つの中間体の模型で書き、初めの状態によらず同じ周期の軌道に行き着くと書いています。
+**生化学。** 現象：①溶液の色が周期的に変わる（BZ 反応）。②雄と雌が出会って、両方から受け継いだ子が生まれる（有性生殖）。分析：①Novák と Tyson（2008）は、持続する振動に、負のフィードバック・遅れ・非線形性・時間の尺度の釣り合いの四つの条件がそろうことを挙げています。②Otto（2009）は、性の費用と利得を、環境が変わる・場所で選択が違う・集団が有限、という条件で比べ、壊すことが利得になりうる条件を挙げています。
 
-**心理学。** 現象：①どうしても解けなかった問題が、ある見方に気づいたとたんに解ける（洞察）。②やりたくない課題を頼まれて少ない報酬で引き受けると、自分に「面白かった」と言い聞かせる（認知的不協和）。分析：①Knoblich ら（1999）は、洞察の問題で制約がゆるむことと、見慣れたまとまりがほどけることが、表象を変えると書いています。②Diamond（2013）は、見方を切り替えるときは前の構えを抑えて別の見方を作業記憶に載せ、コストは準備で減るが消えないと書いています。
+**心理学。** 現象：①仲のよい相手を、ある日はすばらしい人と思い、けんかをした日はひどい人に感じる。②大切な人を失ったあとに、悲しみと、責める気持ちと、慕う気持ちが同時に湧く。分析：①Klein（1946）は、乳児が満たしてくれる対象と満たしてくれない対象を分けて持ち、良い面を大きくして恐ろしい面から身を守ると書いています。②Klein（1940）は、喪の中で憎しみが勝つと良い対象への信が揺らぎ、少しずつ信を取り戻すと、対象が完全ではなかったと分かることに耐えられると書いています。
 
-**美学（芸術）。** 現象：①すさまじい嵐や高い山を前に、怖さと引き込まれる気持ちが同時に起きる（崇高）。②能で、見る人が知らないから花になる（世阿弥「秘すれば花」）。分析：①Kant（1790）は、崇高で構想力が理性の理念に及ばず、生の力がいったん妨げられてから、すぐにより強く流れ出ると書いています。②岡倉覚三（1906）は、完成より完成を求める過程に重きを置き、不完全を心の中で完成させる者だけが美を見いだす、と書いています。
+**素朴な事例（恋愛）。** 現象：①付き合い始めは相手がすばらしく見え、時間がたつと欠点が目につく。②結婚して数年のうちに、夫婦の満足が下がる。分析：①Niehuis ら（2013）の作業論文は、結婚の始めの幻滅の線の研究を、愛や愛情の減りと両価の増えとして要約しています。②Lavner と Bradbury（2010）は、新婚の 464 人を 4 年追い、満足は平均では高く始まって下がるが、高く始まって下がらない群、低く始まって大きく下がる群など、五つの軌跡の群があると書いています。
 
-**経営学。** 現象：①学期の中ほどで、グループの進め方を急に変える。②グループ作りで、ぶつかったあとに決まりができて動き出す。分析：①Gersick（1988）は、八つのチームが期限の中間点で古いやり方を捨てて転換すると書いています。②March（1991）は、探索と活用のどちらかに偏ると、未熟な案が散るか、最適でない安定に閉じ込められると書いています。
+**経営学。** 現象：①新しい製品が、現場の混乱の末に生まれる。②会社が、新しい試みを減らして、いつもの得意なやり方ばかり磨く。分析：①Nonaka ら（2000）は、プリウスの開発で、経営陣が燃費 50% の改善案を退けて 100% を求め、チームが混乱した末にハイブリッド車を開発したと書いています（p.27）。②March（1991）は、活用だけに偏ると、最適でない安定した均衡に閉じ込められると書いています。
+
+</details>
+
+<details><summary>詳しく — ほかの領域の事例（量子論・洞察・美学・チームの転換）</summary>
+
+五段階に似た形は、ほかの領域の記録にもあります。ここには、次の四つを置きます。五段階への並べ方は、上と同じく Claude の読みです。
+
+- 量子論（物理学）：場は、一つの量子系とその環境。波は、量子の重ね合わせと、系を見張り続ける環境。縁は、環境との相互作用が、選ばれた状態どうしの干渉を壊すところ。渦は、環境の見張りに耐える少数の状態だけが残ること。束は、残った状態の記録が環境の中に何重にも写されること。
+- 心理学（洞察）：場は、一人の頭の中（数秒から数分）。波は、過去の経験から来た見方と、それでは解けない新しい問題。縁は、解けないことが続く行き詰まり。渦は、制約がゆるみ、まとまりがほどけて見方が変わること。束は、解が速く迷わず実行されること。
+- 美学（芸術）：場は、一回の判断。波は、構想力と、理性の理念。縁は、崇高で、構想力が理性の理念に及ばず、生の力がいったん妨げられること。渦と束は分けず、すぐにより強く流れ出ること。
+- 経営学（チームの転換）：場は、プロジェクトチーム（数日から数か月）。波は、初回の会合で決まった枠組みと、期限・外部の要求。縁は、期限の中間点で古い型を捨てて外と関わり直すこと。渦と束は分けず、合意した計画で第二の局面に入ること。
+
+**量子論。** Zurek（2003）は、デコヒーレンスと einselection を、同じ過程の二つの見方として書いています。量子系は環境と相互作用し、環境に何重にも写せる少数の状態だけが残ります。物理学の記録の論 9 です。
+
+**心理学（洞察）。** Knoblich ら（1999）は、洞察を要する問題で、過去の経験から来た初期の表象が解を覆い隠して行き詰まりが起きると書いています。表象を変える過程として、制約をゆるめることと、見慣れたまとまりをほどくことを挙げ、マッチ棒の算数の問題で確かめています。心理学の記録の論 1 です。
+
+**美学。** カント『判断力批判』（1790）は、美しいものでは構想力と悟性が一致して自由に戯れ、崇高では構想力が理性の理念に及ばず、生の力がいったん妨げられてから、すぐにより強く流れ出ると書いています。美学の論は、現象を実証した理論ではなく、美的判断の分析です。美学の記録の論 3 です。
+
+**経営学（チームの転換）。** Gersick（1988）は、八つのチームを全期間にわたって観察し、チームは初回の会合で決まった枠組みのまま進み、期限までの暦の中間点で古いやり方を捨てて外と関わり直し、新しい計画で第二の局面に入ったと書いています。中間点でも意見が割れたままの一チームでは、リーダーが集団を解散し、案を一人で決めた、とも書かれています。経営学の記録の論 4 です。
+
+**身近な現象と、研究の分析。** 量子論と相転移：現象は、水が冷えて氷になるとき、あちこちで別々に結晶ができ、境に食い違いが残ること。Zurek（1996）らの論と、16 個のイオンの結晶を使った実験（Ulm ら 2013・Pyka ら 2013）は、相転移で領域ごとに独立に選ばれた向きの食い違いが、欠陥として残り、欠陥の数は、相転移を横切る速さで決まると書いています。心理学：現象は、やりたくない課題を頼まれて少ない報酬で引き受けると、自分に「面白かった」と言い聞かせること（認知的不協和）。Diamond（2013）は、見方を切り替えるときは前の構えを抑えて別の見方を作業記憶に載せ、コストは準備で減るが消えないと書いています。美学：現象は、すさまじい嵐や高い山を前に、怖さと引き込まれる気持ちが同時に起きること（崇高）と、能で、見る人が知らないから花になること（世阿弥「秘すれば花」）。岡倉覚三（1906）は、完成より完成を求める過程に重きを置き、不完全を心の中で完成させる者だけが美を見いだす、と書いています。経営学：現象は、学期の中ほどで、グループの進め方を急に変えること。Gersick（1988）は、八つのチームが期限の中間点で古いやり方を捨てて転換すると書いています。
 
 芸術には、神話も入れます。『古事記』上巻は、イザナギとイザナミが天の御柱を廻る話を書いています。二柱は淤能碁呂島に降りて天之御柱と八尋殿を見立て、イザナミが身の「成り合はぬ処」を、イザナギが「成り余れる処」を述べます。イザナギが「吾与汝行廻逢是天之御柱，而為美斗能麻具波比」と言い、イザナミが右から、イザナギが左から廻り逢います。このときイザナミが先に「阿那迩夜志愛袁登古袁」と言い、生まれた子は水蛭子で、葦の船に入れて流されます。二柱は天神に相談し、占いで「女が先に言ったのが良くない」と告げられ、廻り直します。今度はイザナギが先に言い、淡道の島から国生みが続き、大八島国が生まれます。
 
 五段階にあてはめると、場は淤能碁呂島とその柱、波は「成り合はぬ処」と「成り余れる処」の差、縁は柱を右と左から廻り逢うところ、渦は言葉を交わして子が生まれること（水蛭子は流され、至らない形）、束は廻り直したあとに続く国生みです。この対応づけは Claude の読みで、古事記がそう書いているわけではありません。本文は翻刻（Wikisource）で読みました。底本の頁との突き合わせはしていないので、神話の部分の照合は 🚧 工事中です。
 
-<!--REF:創造-->
-
-出典：Zurek (1996) [“Cosmological experiments in condensed matter systems”](https://doi.org/10.1016/S0370-1573(96)00009-9), *Physics Reports* 276:177–221／Ulm ら (2013) [“Observation of the Kibble–Zurek scaling law for defect formation in ion crystals”](https://doi.org/10.1038/ncomms3290), *Nature Communications* 4:2290／Pyka ら (2013) [“Topological defect formation and spontaneous symmetry breaking in ion Coulomb crystals”](https://doi.org/10.1038/ncomms3291), *Nature Communications* 4:2291（三つとも本文照合済。著者稿 arXiv で読んだ）／Novák & Tyson (2008) [“Design principles of biochemical oscillators”](https://doi.org/10.1038/nrm2530), *Nature Reviews Molecular Cell Biology* 9(12):981–991（本文照合済。PMC の著者稿）／Diamond (2013) [“Executive functions”](https://doi.org/10.1146/annurev-psych-113011-143750), *Annual Review of Psychology* 64:135–168（本文照合済。PMC の著者稿を節の名前で控えた）／岡倉覚三 (1906) [*The Book of Tea*](https://archive.org/details/cu31924021575695), Fox, Duffield（本文照合済。コーネル大学図書館の本の走査。pp.3・95）／March (1991) [“Exploration and exploitation in organizational learning”](https://doi.org/10.1287/orsc.2.1.71), *Organization Science* 2(1):71–87（本文照合済。読んだ写しは授業用の写しで、権利は確かめていない）。Zurek (2003)・Field & Noyes (1974)・Knoblich ら (1999)・Kant (1790)・Gersick (1988) は上の出典。世阿弥「秘すれば花」は舞台芸術の記録の照合（別紙口傳 p.60）による。『古事記』上巻：[Wikisource の翻刻](https://zh.wikisource.org/wiki/古事記/上卷)（CC BY-SA 4.0。伊耶那岐・伊耶那美の部分を読んだ。底本は明示されていない）。分野ごとの記録：[物理学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D02-physics.md)・[化学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D03-chemistry.md)・[心理学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D14-psychology.md)・[美学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D15-aesthetics.md)・[経営学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D22-business-management.md)。
-
 </details>
 
 ただ、「創造とは」のトップページには、何が渦を巻くまでの波を生み出しているのか、つまり駆動源の問いは、置かれていません。Love駆動開発が見ようとしているのは、そこです。
+
+<details><summary>出典</summary>
+
+<!--REF:創造-->
+
+出典：Prigogine (1977) [“Time, Structure and Fluctuations”](https://www.nobelprize.org/uploads/2018/06/prigogine-lecture.pdf), ノーベル化学賞講演（本文照合済。Nobel 財団の PDF。pp.267・272–273・277。頁は講演集の頁）／Rayleigh (1916) [“On convection currents in a horizontal layer of fluid, when the higher temperature is on the under side”](https://doi.org/10.1080/14786441608635602), *Philosophical Magazine* (6) 32(192):529–546（本文照合済。pp.529–540）／Bénard (1901) [*Les tourbillons cellulaires dans une nappe liquide propageant de la chaleur par convection, en régime permanent*](https://archive.org/details/lestourbillonsce00bena), Paris: Gauthier-Villars（本文照合済。仏語原文。Internet Archive の走査の OCR の文字で読んだ。pp.1–6）／Otto (2009) [“The Evolutionary Enigma of Sex”](https://doi.org/10.1086/599084), *The American Naturalist* 174(S1):S1–S14（本文照合済。著者のサイトの写しで読んだ。pp.S1・S3・S6–S10。権利は確かめていない）／Speijer, Lukeš & Eliáš (2015) [“Sex is a ubiquitous, ancient, and inherent attribute of eukaryotic life”](https://doi.org/10.1073/pnas.1501725112), *PNAS* 112(29):8827–8834（本文照合済。PMC の記事）／Field & Noyes (1974) [“Oscillations in chemical systems. IV”](https://doi.org/10.1063/1.1681288), *Journal of Chemical Physics* 60(5):1877–1884（本文照合済。pp.1877–1879・1882–1884。読んだ写しは授業用の写しで、権利は確かめていない）／Klein (1946) “Notes on some schizoid mechanisms”, *International Journal of Psycho-Analysis* [27:99–110](https://archive.org/details/ijp-27-1946-1-2)（本文照合済。pp.99・101・105・109。写しは、Internet Archive にある国際精神分析大学ベルリンのコレクション）／Klein (1940) “Mourning and its relation to manic-depressive states”, *International Journal of Psycho-Analysis* [21:125–153](https://archive.org/details/ijp-xxi-1940-2)（本文照合済。Internet Archive の走査の OCR の文字で読んだ。pp.132・137–138）／Niehuis, Reifman & Lee (2013) [*Disillusionment in cohabiting and married couples: A national study*](https://www.bgsu.edu/content/dam/BGSU/college-of-arts-and-sciences/NCFMR/documents/WP/WP-13-05.pdf), National Center for Family & Marriage Research Working Paper WP-13-05（本文照合済。pp.3–8。ウォラー 1938 と Huston ら 2001 は、この作業論文の要約で読んだ。二次資料）／Murray, Griffin, Derrick, Harris, Aloni & Leder (2011) [“Tempting fate or inviting happiness? Unrealistic idealization prevents the decline of marital satisfaction”](https://doi.org/10.1177/0956797611403155), *Psychological Science* 22(5):619–626（本文照合済。[PMC の著者稿](https://pmc.ncbi.nlm.nih.gov/articles/PMC4094166/)）／Nonaka, Umemoto & Senoo (1996) [“From information processing to knowledge creation: A paradigm shift in business management”](https://doi.org/10.1016/0160-791X(96)00001-2), *Technology in Society* 18(2):203–218（本文照合済。pp.205–216。出版社の誌面の写しで、教科書の付属サイトに置かれたもの。権利は確かめていない）／Nonaka, Toyama & Konno (2000) [“SECI, Ba and leadership: a unified model of dynamic knowledge creation”](https://doi.org/10.1016/S0024-6301(99)00115-6), *Long Range Planning* 33(1):5–34（本文照合済。ノルウェー技術博物館の研究計画のサイトに置かれた誌面の写し。p.7・pp.26–28。権利は確かめていない）／March (1991) [“Exploration and exploitation in organizational learning”](https://doi.org/10.1287/orsc.2.1.71), *Organization Science* 2(1):71–87（本文照合済。読んだ写しは授業用の写しで、権利は確かめていない）。分野ごとの記録：[物理学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D02-physics.md)・[化学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D03-chemistry.md)・[生命科学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D09-life-sciences.md)・[経営学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D22-business-management.md)・[複雑系科学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D29-complexity-science.md)。
+
+<!--REF:創造-->
+
+出典：Becker & Döring (1935) [“Kinetische Behandlung der Keimbildung in übersättigten Dämpfen”](https://doi.org/10.1002/andp.19354160806), *Annalen der Physik* 24:719–752（本文照合済。NACA の英訳 [TM 1374](https://ntrs.nasa.gov/citations/19930093856) で読んだ）／Novák & Tyson (2008) [“Design principles of biochemical oscillators”](https://doi.org/10.1038/nrm2530), *Nature Reviews Molecular Cell Biology* 9(12):981–991（本文照合済。PMC の著者稿）／Lavner & Bradbury (2010) [“Patterns of change in marital satisfaction over the newlywed years”](https://doi.org/10.1111/j.1741-3737.2010.00757.x), *Journal of Marriage and Family* 72(5):1171–1187（本文照合済。[PMC の著者稿](https://pmc.ncbi.nlm.nih.gov/articles/PMC2992446/)）。分野ごとの記録：[物理学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D02-physics.md)・[化学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D03-chemistry.md)・[生命科学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D09-life-sciences.md)・[経営学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D22-business-management.md)・[複雑系科学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D29-complexity-science.md)。
+
+<!--REF:創造-->
+
+出典：Zurek (2003) [“Decoherence, einselection, and the quantum origins of the classical”](https://doi.org/10.1103/RevModPhys.75.715), *Reviews of Modern Physics* 75:715–775（本文照合済。著者稿 arXiv quant-ph/0105127 で読んだ。二つの見方は I.B 節）／Knoblich, Ohlsson, Haider & Rhenius (1999) [“Constraint relaxation and chunk decomposition in insight problem solving”](https://doi.org/10.1037/0278-7393.25.6.1534), *Journal of Experimental Psychology: Learning, Memory, and Cognition* 25(6):1534–1555（本文照合済。pp.1534–1536・1551・1553）／Kant (1790) [*Kritik der Urteilskraft*](https://korpora.org/Kant/aa05/258.html)、アカデミー版 第 5 巻 1908（本文照合済。独語原文。美しいものは p.217、崇高は pp.245・257–258。読んだ写しは、アカデミー版の頁ごとの公開（korpora.org）の p.258。手元では頁の画像でも読んだ）／Gersick (1988) [“Time and transition in work teams”](https://doi.org/10.2307/256496), *Academy of Management Journal* 31(1):9–41（本文照合済。pp.9・10・16・18・27–28・30）／Zurek (1996) [“Cosmological experiments in condensed matter systems”](https://doi.org/10.1016/S0370-1573(96)00009-9), *Physics Reports* 276:177–221／Ulm ら (2013) [“Observation of the Kibble–Zurek scaling law for defect formation in ion crystals”](https://doi.org/10.1038/ncomms3290), *Nature Communications* 4:2290／Pyka ら (2013) [“Topological defect formation and spontaneous symmetry breaking in ion Coulomb crystals”](https://doi.org/10.1038/ncomms3291), *Nature Communications* 4:2291（三つとも本文照合済。著者稿 arXiv で読んだ）／Diamond (2013) [“Executive functions”](https://doi.org/10.1146/annurev-psych-113011-143750), *Annual Review of Psychology* 64:135–168（本文照合済。PMC の著者稿を節の名前で控えた）／岡倉覚三 (1906) [*The Book of Tea*](https://archive.org/details/cu31924021575695), Fox, Duffield（本文照合済。コーネル大学図書館の本の走査。pp.3・95）。世阿弥「秘すれば花」は舞台芸術の記録の照合（別紙口傳 p.60）による。『。『古事記』上巻：[Wikisource の翻刻](https://zh.wikisource.org/wiki/古事記/上卷)（CC BY-SA 4.0。伊耶那岐・伊耶那美の部分を読んだ。底本は明示されていない）。分野ごとの記録：[心理学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D14-psychology.md)・[美学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D15-aesthetics.md)・[物理学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D02-physics.md)・[化学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D03-chemistry.md)・[生命科学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D09-life-sciences.md)・[経営学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D22-business-management.md)・[複雑系科学](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D29-complexity-science.md)。
+
+</details>
 
 ## 言葉は、波間に見えた渦の名前
 
