@@ -162,6 +162,41 @@ DSM-5 について：Di Giuseppe & Perry は、DSM-5 で防衛の軸が外され
 
 段の下書きは、判断のページに載せる。
 
+## 6. シャイン 1995（WP 3821）の「防衛」は、防衛機制か（違和感帳 i20261112011109dpu）
+
+起点：言葉の来歴の章「1995 年　シャインが振り返ったレヴィン」の段について、pjdhiro「心理的防衛機制のことだよね。調べて。」「ここにはっきり書いてるし。調べて。ページ内の流れとリンクするから。」（司令塔経由）
+
+原典：Schein, E. H. (1995). *Kurt Lewin's change theory in the field and in the classroom: Notes toward a model of managed learning*. MIT Sloan Working Paper 3821（本文照合済。MIT DSpace handle 1721.1/2576 と同じ PDF。本体の `.cache/raw/issue90/Schein_1995_WP3821_kurt_lewin.pdf` を pdftotext で読み直した。頁は柱の「Schein -n-」）
+
+### 6-1. 原文
+
+- p.3：変化を止める力は "often personal psychological defenses or group norms embedded in the organizational or community culture."
+- p.3：その全体が分かったのは "only then did we begin to pay attention to the work of cognitive psychologists on perceptual defenses, to what psychoanalysts and the Tavistock group were trying to show us with their work on denial, splitting and projection, and to Argyris's seminal work on defensive routines (e.g. Argyris, 1990; Hirschhorn, 1988)."
+- p.3：解凍は三つの過程（"Unfreezing is basically three processes"）：1 反証（disconfirmation）、2 罪悪感か生存の不安を起こすこと、3 心理的安全を作ること（学ぶ不安を越えること）。
+- p.3：反証の知らせは、無視・無関係として退ける・人や運命のせいにする・いちばん多くは妥当性を否認する（"simply deny its validity"）ことで受け取られないことがある。
+- p.4：学ぶ不安は、人を防衛的に反応させる（"what causes us to react defensively"）。中身は、学ぶ過程に入り、何かが間違っていると自分や人に認めたら、効力・自尊心・同一性まで失うという感じ。誤りを受け入れることは面子を失うこと（"a real loss of face"）。
+- p.4：学ぶ不安は根本の抑止力で、反証の量に比例して上がり、"defensive avoidance of the disconfirming information" で釣り合いを保たせる。
+- p.5："unless sufficient psychological safety is created, the disconfirming information will be denied or in other ways defended against, no survival anxiety will be felt, and, consequently, no change will take place."
+- p.5：変化を進める鍵は "to balance the amount of threat produced by disconfirming data with enough psychological safety to allow the change target to accept the information"。心理的安全を作る手立ての例：集団で働く・日々の圧力から離れる並行の仕組み・誤りが恐れられず受け入れられる練習の場・前向きな像・学びを扱える段に分ける・その場の指導と助け（p.5）。
+
+### 6-2. 言えること
+
+- シャインの「個人の心の防衛」は、精神分析の防衛機制を指している、と言える。シャイン自身が、その中身を分かるのに、精神分析とタヴィストックの否認・分裂・投影の仕事に目を向けた、と書いている（p.3）。否認・分裂・投影は、DMRS の階層では未熟の区分（否認・投影は水準 3、分裂は水準 2）にある（§1-3）。
+- 心理的安全は、この防衛を越える条件として置かれている。十分な心理的安全が無いと、反証は否認されるか、ほかの形で防衛される（p.5）。シャインの心理的安全は、脅威の量と釣り合わせて、知らせを防衛せずに受け取れるようにするもの（p.5）。これは §4「防衛の必要度」に、原典の側から直接つながる：脅威に対して安全が足りないと防衛が要り、足りると知らせを受け取れる。
+- 学ぶ不安の中身（効力・自尊心・同一性を失う感じ・面子を失う）は、DMRS の水準 4（失敗・批判が生む弱さや恥から自尊心を守る）と同じものを守っている、と読める（Claude の読み。シャインは DMRS を引いていない）。読み物の恥不安の視点ともここでつながる。
+- 同じ年の組織の文化の論文（WP 3831）に「学ぶ不安が高いまま残ると、否認・合理化・人のせいにする」があり、読み物の「シャイン（1995 年）の二つの不安」の節で引いている。合理化も DMRS の水準 3。
+
+### 6-3. 言えないこと・押さえた範囲
+
+- タヴィストックの仕事が何を指すかを、シャインは名指ししていない（参考文献にタヴィストックの文献は無く、Hirschhorn 1988 だけ）。SURVEY-03 では、タヴィストックの流れの Menzies 1960（社会のしくみが不安への防衛として働く）を二次資料でしか読めていない。読み物には「タヴィストックの仕事」とシャインの言葉のまま置き、中身は書かない。
+- アージリスの防衛的ルーティン：SURVEY-03 §3 で Argyris 1990 を読んだ（恥や脅威を経験しないようにする行動や方針で、同時にその原因を見つけて取り除くことを妨げる、p.25）。ただ、読んだのは Internet Archive の個人のアップロードの OCR で、版元の版との頁の一致も確かめていない（sources §5-8 で載せない写し）。読み物にはシャインが挙げた名前として置くだけにし、定義は書かない。
+- 知覚の防衛（認知心理学）は今回調べていない。
+
+### 6-4. 本文への入れ方（案）
+
+- 来歴の章の 1995 年の段：「その一つに心理的安全を置きました。」のあとに、三つの過程の名と、p.5 の「十分な心理的安全が無いと、知らせは否認されるか、ほかの形で防衛される」を一、二文足す。否認・分裂・投影は第二部の防衛の表に並ぶ防衛機制だ、と書き、防衛の章へページ内リンクを張る。
+- 防衛の章の「防衛の必要度」の段：シャインの「脅威の量と心理的安全を釣り合わせる」（p.5）を、原典から言えることの一つとして足し、来歴の 1995 年の節へ戻るリンクを張る。§4-3 の「心理的安全性と防衛の水準を並べて測った研究には当たっていない」は残る（シャインは理論の論文で、測っていない）。
+
 ## 書誌の表
 
 | 著者 | 年 | 題 | DOI・確かめ先 | 照合の状態 | 手元 |
@@ -172,6 +207,7 @@ DSM-5 について：Di Giuseppe & Perry は、DSM-5 で防衛の軸が外され
 | Granieri, A., La Marca, L., Mannino, G., Giunta, S., Guglielmucci, F., & Schimmenti, A. | 2017 | The Relationship between Defense Patterns and DSM-5 Maladaptive Personality Domains. *Frontiers in Psychology* 8:1926 | [10.3389/fpsyg.2017.01926](https://doi.org/10.3389/fpsyg.2017.01926)（Crossref 一致） | 本文照合済（出版社の公開版・CC BY） | `.cache/raw/ps-defense/Granieri_2017_defense_DSM5.pdf` |
 | Cilliers, F. | 2012 | A systems psychodynamic description of organisational bullying experiences. *SA Journal of Industrial Psychology* 38(2), Art. #994 | [10.4102/sajip.v38i2.994](https://doi.org/10.4102/sajip.v38i2.994)（Crossref 一致。Crossref の発行日は 2012-01-10、論文の表記は 2012-03-20 受理後の刊行） | 本文照合済（出版社の公開版の全文 XML・CC BY） | `.cache/raw/ps-defense/cilliers.html` |
 | Sui, S. X., Malik, S., Tiliopoulos, N., & Yu, L. | 2026 | Dark Triad traits and workplace bullying: a systematic review and meta-analysis of personality, power, and psychosocial safety. *Frontiers in Psychology* 17:1738277 | [10.3389/fpsyg.2026.1738277](https://doi.org/10.3389/fpsyg.2026.1738277)（Crossref 一致）・PMC12995606 | 本文照合済（出版社の公開版・CC BY） | `.cache/raw/ps-defense/Sui_2026_darktriad_bullying.pdf` |
+| Schein, E. H. | 1995 | Kurt Lewin's change theory in the field and in the classroom: Notes toward a model of managed learning. MIT Sloan Working Paper 3821 | [hdl.handle.net/1721.1/2576](https://hdl.handle.net/1721.1/2576) | 本文照合済（MIT DSpace・大学の機関リポジトリ） | `.cache/raw/issue90/Schein_1995_WP3821_kurt_lewin.pdf` |
 | Cook-Greuter, S. R. | 2013 | Nine Levels of Increasing Embrace in Ego Development | 本文の出典と同じ | 本文照合済（読み物の第一部で使用済み） | — |
 
 ## 本文を読めなかったもの（読み物には載せない）
