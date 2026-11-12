@@ -52,7 +52,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 
 ### 1. 野中ら：組織的知識創造（5 フェーズ・SECI・ba・創造的カオス）
 
-**要旨**：組織は知識を処理するだけでなく、つくり出す。暗黙知と形式知の変換（共同化・表出化・連結化・内面化、SECI）が渦を巻くように進み、それを実務に近い五つのフェーズとして書いたものがある。知識が生まれる条件として、意図・自律・揺らぎと創造的カオス・冗長性・最小有効多様性を挙げる。2000 年の論文は、知識が共有され生まれる文脈を「ba」と呼ぶ。
+**要旨**：組織は知識を処理するだけでなく、つくり出す。暗黙知と形式知の変換（共同化・表出化・連結化・内面化、SECI）が螺旋（spiral）を描くように進み、それを実務に近い五つのフェーズとして書いたものがある。知識が生まれる条件として、意図・自律・揺らぎと創造的カオス・冗長性・最小有効多様性を挙げる。2000 年の論文は、知識が共有され生まれる文脈を「ba」と呼ぶ。
 
 **一次情報**：
 
@@ -68,7 +68,7 @@ source_archive: "evidence/archive/pre-rerun-20260407/evidence/evidence-D22-busin
 - 5 フェーズは 1996 年の論文の p.213〜215 にある。「暗黙知の共有」から始まり（p.213）、概念の創出（p.213）、正当化（p.214）、原型（archetype）づくり（p.214）、知識の cross-leveling（p.215）へ進む。p.214 の図 4 の出典は「Nonaka & Takeuchi (1995), p.84」。
 - cross-leveling は、原型になった概念が、階層の上下や部署の境を越えて移り、「thereby starting new cycles of knowledge creation」（p.215）。
 - 揺らぎは「a change that is hard to predict」で、それが入ると、組織の人は「a "breakdown" of routines, habits, or cognitive frameworks」と、続く混乱に向き合い、危機感が生まれる（1996 p.211）。この秩序がカオスから生まれる現象を創造的カオスと呼ぶ（p.212）。
-- 2000 年の論文は、知識は「two seemingly antithetical concepts」（秩序とカオス、暗黙と形式、自己と他者など）を通る渦の中でつくられ、それを導く鍵は「dialectical thinking, which transcends and synthesises such contradictions」と書く（p.7）。
+- 2000 年の論文は、知識は「two seemingly antithetical concepts」（秩序とカオス、暗黙と形式、自己と他者など）を通る螺旋（spiral）の中でつくられ、それを導く鍵は「dialectical thinking, which transcends and synthesises such contradictions」と書く（p.7）。
 - 創造的カオスは、リーダーが難しい目標を出して危機感を呼ぶ意図的なカオスで、人はルーチンの崩れを経験する。リーダーは、組織が「complete disorder」に落ちないように導く（2000 pp.26–27）。プリウスの開発では、燃費 50% 改善の案を経営陣が退けて 100% を求め、チームが混乱した末にハイブリッド車を開発した（p.27）。
 - 日本型の知識創造は「group think」と「overadaptation to the past success」に陥りうる（1996 pp.215–216）。
 - ba は「originally proposed by the Japanese philosopher Kitaro Nishida and was further developed by Shimizu」とされ、「a shared context in which knowledge is shared, created and utilised」と定義される（2000 p.14）。1996 年の論文は、共同化の起点を相互作用の「field」と書く（p.205）。
