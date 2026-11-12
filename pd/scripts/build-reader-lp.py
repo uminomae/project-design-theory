@@ -412,6 +412,13 @@ def build(SRC: Path, TPL: Path, OUT: Path, STYLE: str) -> None:
             sys.exit(f"ERROR: <!--VERSION--> needs a data source ({OUT.name})")
         version = json.loads(SCREENER_DATA[OUT.name].read_text(encoding="utf-8"))["version"]
         page = page.replace("<!--VERSION-->", version)
+    # 読み物の版番号（1.xxx）。正本かテンプレートに触れた commit の数から出す（scripts/reader_version.py・pjdhiro 2026-11-13）
+    if "<!--READER-VERSION-->" in page:
+        import reader_version
+        page = page.replace("<!--READER-VERSION-->", reader_version.version(OUT.name))
+        msg = reader_version.notice(OUT.name)
+        if msg:
+            print(msg)
 
     # 中身が今の HTML と同じなら、今の HTML の日付を保ち、書き換えない。
     # git の最終コミット日は、移動やリンクの一括置換でも進むので、それだけでは日付を変えない

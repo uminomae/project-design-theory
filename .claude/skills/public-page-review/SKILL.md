@@ -37,6 +37,7 @@ description: 公開ページ（読み物・四つの入口・wiki・cs/as/ks の
 | 回すもの | 見ること |
 |---|---|
 | `bash scripts/check.sh` | 終了コードをパイプに通さずに見る。落ちていたら commit も main への送りもしない |
+| check.sh の「pd：読み物の版番号」 | Love駆動開発の版（題の隣の ver. 1.xxx）が、正本とテンプレートに触れた commit の数と合うか。合わなければ生成し直す（取り込みで二つのセッションの版が重なったときも）。「1.500 に届いた」の知らせが出たら、2.x にするかを pjdhiro に諮る（`docs/rules/decisions.md` の版番号の行・2026-11-13） |
 | `node pd/scripts/reader-anchor-check.mjs` | 読み物の中の「§2」などと、ほかの読み物の章へ飛ぶリンクの行き先（章題を変えると切れる。b03be3d で Love駆動開発の章へのリンク 5 本が切れていた） |
 | `node pd/scripts/reader-self-defense-lint.mjs pd/reader/<ページ>.html` | Claude が Claude に説明している地の文（型 F。ba223be「この見方も、同時に持っておきます」） |
 | `node pd/scripts/reader-attribution-audit.mjs <正本.md>` | pjdhiro の言葉・出典を足したとき。一文ごとの帰属と、表のセル |

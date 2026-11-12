@@ -24,6 +24,9 @@ run() {
 run "今までの repo を前提にした参照" node scripts/check-old-repo-refs.mjs
 run "pd：repo をまたぐ URL" bash -c 'cd pd && bash scripts/check-cross-repo-urls.sh'
 run "pd：読み物の内部アンカー" bash -c 'cd pd && node scripts/reader-anchor-check.mjs'
+# Love駆動開発の版番号（1.xxx）が、正本とテンプレートに触れた commit の数と合うか。1.500 に届いたら、2.x にするかを
+# pjdhiro に諮る知らせも出す（pd/scripts/reader_version.py・docs/rules/decisions.md・pjdhiro 2026-11-13）。
+run "pd：読み物の版番号" python3 -I pd/scripts/reader_version.py --check
 # 対話の形の読み物で、pjdhiro の発言の引用カードの直前が見出し・畳みの題・組む道具の印になっていないか（文脈なしの発言・型 R・2026-11-10）。
 run "pd：引用カードの前の文脈" node scripts/check-quote-context.mjs
 run "pd：wiki の孤立ページ・不在の出典・旧用語" bash -c 'cd pd && node scripts/wiki-lint.mjs --check --quiet'
