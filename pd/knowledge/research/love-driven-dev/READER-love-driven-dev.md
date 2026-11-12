@@ -578,13 +578,13 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 
 <!--/TURN-->
 
-<!--PART:第四部|信頼とは、安心とは。人の心から見る-->
+<!--PART:第四部|Love の前提：心理学から見る、信頼と安心-->
 
 ## 無意識とは、何か
 
 <!--OPEN-->
 
-第三部では、意識に上る信号の側から、人が世界をどう解釈しているかを見ました。第四部では、信頼とは何か、安心とは何か、の二つに答えていきます。まず、心の前提を四つ置きます（無意識、信頼や愛の感じの発生源、防衛、発達の段階）。次に、信頼と安心を、似たものとの違いから見ます。最後に、見えた輪郭を並べ、段階や性格の見方で見直します。前提の四つの章は、概説とリンクだけです。心理学の論を知っている人は、「[信頼と、信仰や期待を、人は自分の中で分けられるのか](#ldd-discern)」の章へ進んでください。
+第三部では、意識に上る信号の側から、人が世界をどう解釈しているかを見ました。第四部では、信頼とは何か、安心とは何か、の二つに答えていきます。まず、心の前提を五つ置きます（無意識、信頼や愛の感じの発生源、防衛、防衛がゆるむ状況、発達の段階）。次に、信頼と安心を、似たものとの違いから見ます。最後に、見えた輪郭を並べ、段階や性格の見方で見直します。前提の五つの章は、概説とリンクだけです。心理学の論を知っている人は、「[信頼と、信仰や期待を、人は自分の中で分けられるのか](#ldd-discern)」の章へ進んでください。
 
 <a id="ldd-unconscious"></a><strong>pjdhiro の見方：</strong>人の心理は自分が思っているようにはできていない。フロイトの転移、クラインの対象関係のような信頼や愛の定義に関するような発生源、ユングの元型、心理防衛機制に発達段階と状態による非合理的な行動や感情発生など、みんな思っているほど立派にはできてない。
 
@@ -596,6 +596,8 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 
 フロイトの言う抑圧されたものは、意識に上がることを退けられたもので、認知したくないものの側に重なって読めます。体の理由で認知できないものは、フロイトがこの論文で扱った心の働きとは別の側にあります。この重ね方は、このページの読みです。
 
+<details><summary>出典</summary>
+
 <!--REF:心理学-->
 
 出典：Freud (1915) "Das Unbewußte", *Internationale Zeitschrift für ärztliche Psychoanalyse* [3(4):189–203](https://archive.org/details/z319154)・[3(5):257–269](https://archive.org/details/z319155)（本文照合済。独語の原文を読んだ。抑圧と無意識の範囲は p.189、無意識を置く理由と思い上がりの語は pp.189–190、推し量りを自分に向けることは p.192、カントの戒めと「見えているとおりにできているとは限らない」は p.193、潜在と抑圧・前意識・検閲は pp.193–194。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/z319154)の誌面。パブリックドメイン）／Jung (1917) *Die Psychologie der unbewußten Prozesse*、英訳 Hecht "The Psychology of the Unconscious Processes"、Long (ed.) *Collected Papers on Analytical Psychology*, 2nd ed. (1920) 第 14 章（本文照合済（訳）。Hecht の英訳で読んだ。第 5 節「The Personal and the Impersonal Unconscious」pp.408–416。写しは [Project Gutenberg #48225](https://www.gutenberg.org/ebooks/48225)。パブリックドメイン）。
@@ -603,6 +605,8 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 <!--REF:心理学-->
 
 出典：Jung (1917) *Die Psychologie der unbewußten Prozesse*、英訳 Hecht "The Psychology of the Unconscious Processes"、Long (ed.) *Collected Papers on Analytical Psychology*, 2nd ed. (1920) 第 14 章（本文照合済（訳）。Hecht の英訳で読んだ。二人の母と原初の像 p.410、神々と悪魔 p.411。写しは [Project Gutenberg #48225](https://www.gutenberg.org/ebooks/48225)。パブリックドメイン）。
+
+</details>
 
 ## 信頼や愛の感じは、どこから来るのか
 
@@ -618,6 +622,8 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 
 三人に共通するのは、信頼や愛の感じのいくらかが、目の前の相手からだけでなく、本人が意識していない型から来る、と見ているところです。三人が描く型は、子どもの頃の関係の版（フロイト）、良いものと悪いものに分けられた像（クライン）、人に共通する像（ユング）と、それぞれ違います。どれが正しいかを決めるより、群盲象を評すように、同じものの違う面に触れていると見ることもできます。三人を並べて共通のところを見るのは、このページの読みです。
 
+<details><summary>出典</summary>
+
 <!--REF:心理学-->
 
 出典：Freud (1912) "Zur Dynamik der Übertragung", *Zentralblatt für Psychoanalyse* [2(4):167–173](https://archive.org/details/zb219124)（本文照合済。型と刷り直し p.167、期待を帯びた思い描きと父の像 p.168、共感・友情・信頼の結びつき p.171、陽性と陰性・両価性 pp.171–172）／Freud (1915) "Bemerkungen über die Übertragungsliebe", *Internationale Zeitschrift für ärztliche Psychoanalyse* [3(1):1–11](https://archive.org/details/z319151)（本文照合済。子どもの頃の手本をくり返さない恋は無い p.8、本物の恋ではないとは言えない p.9）。どちらも、Internet Archive にある国際精神分析大学ベルリンのコレクションの写し（パブリックドメインの表示）の文字で読んだ。
@@ -625,6 +631,8 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 出典：Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99–110](https://archive.org/details/ijp-27-1946-1-2)（本文照合済。良い乳房と悪い乳房、愛と憎しみの分かれ目 p.99、分析から推し量った仮説だという断り p.99、満たされているときと満たされないとき・空想の中で分ける・良い面を大きくして迫害の恐れから守る p.101、理想化された対象へ逃げ込む p.103。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/ijp-27-1946-1-2)）。
 
 出典：Jung (1917) "The Psychology of the Unconscious Processes"（Dora Hecht 訳）, *Collected Papers on Analytical Psychology*, 2nd ed., London: Baillière, Tindall and Cox, 1920, pp.354–444（本文照合済（訳）。親の権威の代わり p.408、父の像 p.409、原初の像 p.410、周りの人への持ち上げと見下し pp.432–433。写しは [Internet Archive の Universal Library の版](https://archive.org/details/CollectedPapersOnAnalyticalPsychology)。訳者名は 1922 年刷の写しでも確かめた）／Jung (1919) "Instinct and the Unconscious", *British Journal of Psychology* 10(1):15–23, [doi:10.1111/j.2044-8295.1919.tb00003.x](https://doi.org/10.1111/j.2044-8295.1919.tb00003.x)（本文照合済。元型と集合的無意識 p.19、アウグスティヌスから取った語 p.21。写しは Zenodo にあるパブリックドメインの版。リンク先は確かめ直している途中で、いまは出版社の DOI のリンクだけを張っています）。
+
+</details>
 
 ## 心は、自分を守るしくみを持っている
 
@@ -636,11 +644,38 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 
 心が不安や苦痛から自分を守る動きを、精神分析は防衛機制と呼んできました。ヴァイラントは、この動きを不随意の対処の仕組みと呼び直し、熱と同じで、病気の印ではなく、対処の反応だと書いています。どの動きが出るかは選べず、使っている本人には見えません。ヴァイラントは防衛を水準に分けて並べ、その並びを、性格の成熟の連続の上にも置いています。期待が裏切られたあとに、絶望するか、他責するか、受容するかの違いも、防衛の出方の違いとして読めます。
 
+<details><summary>出典</summary>
+
 <!--REF:心理学-->
 
 出典：章の頭の、性格についての pjdhiro の見方＝pjdhiro「用語: その他」の「性格」の項（[uminomae.github.io/pjdhiro/word-other/](https://uminomae.github.io/pjdhiro/word-other/)）。
 
 出典：[Vaillant (2011)](https://doi.org/10.31887/DCNS.2011.13.2/gvaillant) "Involuntary coping mechanisms: a psychodynamic perspective", *Dialogues in Clinical Neuroscience* 13(3):366（本文照合済。[PMC3182012](https://pmc.ncbi.nlm.nih.gov/articles/PMC3182012/) の全文。不随意の対処・熱のたとえ・孫の例・フロイト 1894 年は冒頭の節「What are involuntary coping mechanisms?」、六つの性質・四つの水準・三つの道・成人発達研究は「Classification of defenses」の節。pp.366–370）／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99（](https://archive.org/details/ijp-27-1946-1-2)本文照合済。早い時期の防衛に理想化と否認を数える箇所は p.99、分裂・理想化・否認のつながりは pp.101–102、内なる理想化された対象への逃げ込みは p.103、不安が弱まると理想化が減る箇所は p.105。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/ijp-27-1946-1-2)）／A. Freud (1936) *Das Ich und die Abwehrmechanismen*、英訳 Baines (1937) [*The Ego and the Mechanisms of Defence*](https://archive.org/details/a-freud-1937-ego)（本文照合済（訳）。Baines の英訳で読んだ。三つの不安と自我を守る目的は pp.73–74、第 6 章「空想の中の否認」pp.73–88、第 7 章「言葉と行いによる否認」pp.89–99。写しは、クライン 1946 年と同じ、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/a-freud-1937-ego)）。
+
+</details>
+
+## 心の防衛は、どんな状況でゆるむのか
+
+<!--OPEN-->
+
+前の章で、心は不安や苦痛から自分を守る動きを持ち、その動きは使っている本人には見えないことを見ました。では、その守りは、どんなときにゆるむのでしょうか。精神分析の流れでは、治療につながる、包み込むようなことが大事にされてきました。pjdhiro は、包み込む側の例として、共感、ホールディング、もの思い、わからなさを挙げています。そのうえで、精神の成長に大切なことを、こう見ています。
+
+<a id="ldd-holding"></a><strong>pjdhiro の見方：</strong>認知行動療法や止観やメタ認知のような心に指差しするような能動的なことと、共感や信頼関係のような防衛を解くような状況にあることの 2 点が精神成長に大切だと思っています。その二つだけで良いと思うほどに。分離と包摂。
+
+一つめは、自分で自分の心を対象として観る側です。感情を対象として観ることは、「[信頼と、信仰や期待を、人は自分の中で分けられるのか](#ldd-discern)」の章で、感情メタ認知として出てきます。二つめは、守りをほどく状況の側です。ウィニコットは、体を抱くことだけでなく、乳児を取り巻く備えの全体を「抱えること（ホールディング）」と呼び、それを、あてにできるが、機械のようにではなく、相手への共感を含んであてにできるもの、と書いています（「[安心・依存と信頼は、どう違うのか](#ldd-safety)」の章）。ウィニコットの論の紹介は、独立ページ「[影響を受けた心理学](influences-psychology.html#ドナルドウィニコット--ホールディング)」にあります。
+
+- 共感：🚧 工事中です。原典の本文を読んで確かめられていないので、書いていません。
+- もの思い（ビオンのコンテイニング）：🚧 工事中です。原典の本文を読んで確かめられていないので、書いていません。
+- わからなさ：🚧 工事中です。この語が何を指すかは、pjdhiro の言葉で確かめてから書きます。
+- 認知行動療法・止観：🚧 工事中です。原典の本文を読んで確かめられていないので、書いていません。
+
+<details><summary>出典</summary>
+
+<!--REF:心理学-->
+
+出典：Winnicott (1960) "The theory of the parent-infant relationship", *International Journal of Psycho-Analysis* 41:585–595（本文照合済。分析者のあてにできる感じは p.585、「赤ん坊というものはいない」・乳児と世話のまとまり・依存の語の意味は p.586、絶対的な依存から相対的な依存を経て独立へ、は p.588、抱えることの定義は p.589、依存の三つは pp.589–590、抱える環境の働きは p.590、あてにできるが機械のようにではない・愛を示す形・指導だけではほどよい世話にならない、は p.591、乳児の自我の強さは p.594 の要約。写しは、西ベンガル州政府の教育研究訓練評議会が走査した[同じ巻](https://archive.org/details/dli.scoerat.1853theinternationaljournalofpsychoanalysisvolxll1960)を、公開資料の団体 Servants of Knowledge が Internet Archive に上げたもの。権利は確かめていない）。
+
+</details>
 
 ## 発達の段階で、何が脅威に見えるかが変わる
 
@@ -656,9 +691,13 @@ Love駆動開発を、入力と出力を持つ仕組みの図として描けな�
 
 段階ごとの主な不安と防衛の表は、独立ページ「[精神の発達段階とは](developmental-stages.html#何が脅威に見えどう守るかが段階で変わる)」の第二部にあります。
 
+<details><summary>出典</summary>
+
 <!--REF:心理学-->
 
 出典：Cook-Greuter (2013) "[Nine Levels of Increasing Embrace in Ego Development: A Full-Spectrum Theory of Vertical Growth and Meaning Making](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)", prepublication version, revised Dec. 2013（本文照合済。頁は刷りの頁。防衛の総論 pp.9–10、自己保護 p.27、順応 p.34、専門家 pp.39–40、達成者 pp.49–50、多元 pp.53・58–59、戦略家 pp.71–72、構成への気づき pp.84–85、概念との関係が段階で違う p.10、文章完成法 p.10。読んだ写しは、著者のサイト cook-greuter.com が公開していた PDF の、[Wayback Machine による 2021 年 10 月 28 日の保存](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)）／O'Fallon (2020) "[States and STAGES: Waking up Developmentally](https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf)", *Integral Review* 16(1)（本文照合済。段階を視点として定義する三つの問い p.18、一時的な状態と段階の区別 p.22、各段階の定義 pp.28–29）。
+
+</details>
 
 ## 信頼と、信仰や期待を、人は自分の中で分けられるのか
 
@@ -670,20 +709,23 @@ Love駆動開発を、入力と出力を持つ仕組みの図として描けな�
 
 似た感じをどこまで分けられるかは、人によって違い、同じ人でも成長とともに変わる、と研究は書いてきました。クック＝グロイターは、自我の発達の段階ごとに、感情を言い表す言葉の細かさが変わると書いています。自己保護の段階は、気分が悪い、動揺している、のようなごく単純な感情だけを分け、後の段階は、悲しみ、嘆き、後悔、失望のような似た感情の細かな違いまで見分ける、という並びです（段階ごとの記述の表は、独立ページ「[精神の発達段階とは](developmental-stages.html)」にまだ載せていません。🚧 工事中）。につけてもらった研究でも、同じ向きの感情をはっきり分けて感じる人と、快か不快かの一本の軸でまとめて感じる人とがいました（バレットら、2001 年）。ただし、信頼そのものを似た感じから分けられるかを測った研究には、まだ当たっていません。
 
-
-<!--REF:心理学-->
-
-出典：Cook-Greuter (2013) "[Nine Levels of Increasing Embrace in Ego Development: A Full-Spectrum Theory of Vertical Growth and Meaning Making](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)", prepublication version, revised Dec. 2013（本文照合済。頁は刷りの頁。自己保護の信頼の低さ p.25、単純な感情 p.27、規則志向の信頼 p.28、順応の感情 pp.33–35、専門家 p.44、達成者 p.49、多元 pp.56–57、戦略家 pp.67・69、構成への気づき pp.80・83。読んだ写しは、著者のサイト cook-greuter.com が公開していた PDF の、[Wayback Machine による 2021 年 10 月 28 日の保存](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)）。
-
 第四部の流れを考えたとき、pjdhiro は、この部で難しいところをこう言っています。
 
 <strong>pjdhiro の見方：</strong>問題なのは、信頼と信仰と期待を分けられるか？　のような感情メタ認知の程度の話。
 
 感情メタ認知は、自分の感情を対象として観ることです。このあとの章は、似た感じを一つずつ取り上げ、信頼と外から分けられるところを並べていきます。
 
+<details><summary>出典</summary>
+
+<!--REF:心理学-->
+
+出典：Cook-Greuter (2013) "[Nine Levels of Increasing Embrace in Ego Development: A Full-Spectrum Theory of Vertical Growth and Meaning Making](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)", prepublication version, revised Dec. 2013（本文照合済。頁は刷りの頁。自己保護の信頼の低さ p.25、単純な感情 p.27、規則志向の信頼 p.28、順応の感情 pp.33–35、専門家 p.44、達成者 p.49、多元 pp.56–57、戦略家 pp.67・69、構成への気づき pp.80・83。読んだ写しは、著者のサイト cook-greuter.com が公開していた PDF の、[Wayback Machine による 2021 年 10 月 28 日の保存](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)）。
+
 <!--REF:心理学-->
 
 出典：[Barrett, Gross, Christensen & Benvenuto (2001)](https://doi.org/10.1080/02699930143000239) "Knowing what you're feeling and knowing what to do about it: Mapping the relation between emotion differentiation and emotion regulation", *Cognition and Emotion* 15(6):713–724（本文照合済。取り替えのきく語として使う人がいること p.713、同じ人の中でも場面で違うこと・快か不快かの全体を言い表すこと p.714、参加者と日記 pp.716–717、九つの語と分け方の計り方 p.717、否定と肯定の結果 pp.719–720、相関で逆の向きもありうること pp.721–722。読んだ写しは、著者の研究室のサイト affective-science.org が公開していた誌面の PDF の、[Wayback Machine による 2011 年 9 月 3 日の保存](https://web.archive.org/web/20110903095938/http://www.affective-science.org/pubs/2001/01MaprelationDiffReg.pdf)）。
+
+</details>
 
 ## 期待と信頼は、どう違うのか
 
@@ -713,6 +755,8 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 
 期待の像が立ったとき、人は動き出します。その像が裏切られたところから、始まるものがあります。pjdhiro の言う流れの「裏切られ」から「諦念」への移りは、三つのうちの受容にあたります。
 
+<details><summary>出典</summary>
+
 <!--REF:心理学-->
 
 出典：pjdhiro「対話: 受容について」（[uminomae.github.io/pjdhiro/dialogue-acceptance/](https://uminomae.github.io/pjdhiro/dialogue-acceptance/)）。
@@ -722,6 +766,8 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 出典：期待と信頼の軸＝「意識とは」の作業ノート「[信頼とは何か — 軸による多元的記述](https://github.com/uminomae/project-design-theory/blob/main/as/knowledge/concepts/CN-006_trust-analysis-axes.md)」／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99（](https://archive.org/details/ijp-27-1946-1-2)本文照合済。早い時期の防衛に理想化を数える箇所は p.99、良い面を大きくして迫害の恐れから守る箇所は p.101。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/ijp-27-1946-1-2)）／[Vaillant (2011)](https://doi.org/10.31887/DCNS.2011.13.2/gvaillant) "Involuntary coping mechanisms: a psychodynamic perspective", *Dialogues in Clinical Neuroscience* 13(3):366（本文照合済。PMC3182012 の全文。空想を未熟な防衛に数える箇所は、冒頭の節「What are involuntary coping mechanisms?」と「Classification of defenses」の節）。
 
 出典：新田信也のウェブサイト「精神分析統合理論」の頁「[価値観を生み出す精神力動](https://www.seishin-bunseki.jp/category/2122026.html)」（期待〔当て〕と依存型病的同一化。節「信仰の価値観」）・「[様々な人格傾向の精神力動](https://www.seishin-bunseki.jp/category/2103476.html)」（強迫の源は期待。節「様々な強迫」）・「[尊敬の精神分析学](https://www.seishin-bunseki.jp/category/2114846.html)」（信頼は助け合う関係から生まれる。節「失われつつある尊敬」）・「[情動と精神分析](https://www.seishin-bunseki.jp/category/2102846.html)」（救いの環・情動認知と情動認識・脆さを支持されて湧く信頼）（本文照合済。著者本人のサイト）。「期待は悪である」と本に書かれていることは、同じサイトの「[心の理解度チェック（Ⅰ）](https://www.seishin-bunseki.jp/category/1201054.html)」の問 35 で確かめた。
+
+</details>
 
 ## 信仰と信頼は、どう違うのか
 
@@ -735,9 +781,13 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 
 信頼が何かは、この章では一つに決めません。信頼と似た感じを、本人が分けられるかは、「[信頼と、信仰や期待を、人は自分の中で分けられるのか](#ldd-discern)」の章で見ます。
 
+<details><summary>出典</summary>
+
 <!--REF:心理学-->
 
 出典：Freud (1927) *Die Zukunft einer Illusion*, Internationaler Psychoanalytischer Verlag（本文照合済。[初版の写真版](https://archive.org/details/Freud_1927_Die_Zukunft_einer_Illusion_k)で、Internet Archive にある国際精神分析大学ベルリンのコレクション。作品はパブリックドメイン。宗教の考えを経験の沈殿でも考えの結果でもないとする箇所と、寄る辺なさと父の箇所は p.47、錯覚と誤りの例は p.48、錯覚の定め方は pp.49–50、証明も反証もできない箇所は p.50）。
+
+</details>
 
 ## 理想化と信頼は、どう違うのか
 
@@ -753,9 +803,13 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 
 理想化と信頼の違いを、このページは一つには決めません。理想化と並べると、信頼の一つの面が見えます。「意識とは」の作業ノートは、良い結果だけを見る側と、良いも悪いも含めて持つ側を、信頼を見る軸の一つにしています。この軸で見ると、理想化は前の側にあり、信頼は後ろの側に近いところにあります。
 
+<details><summary>出典</summary>
+
 <!--REF:心理学-->
 
 出典：pjdhiro「[対話：創造とは](https://uminomae.github.io/pjdhiro/dialogueCreation/)」（「特に注意したい現象」の「波」の項）／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99–110](https://archive.org/details/ijp-27-1946-1-2)（本文照合済。良い対象を理想化する傾向と、内なる理想化された対象への逃げ込みは p.103、愛する面と憎む面が離れていないと感じられること・失う恐れ・罪の感じ・喪に近い状態・償いの動き・分ける動きが形を変えて残り、不安の場面がくり返し経験されること・不安が弱まると理想化も恐ろしさも少なくなることは p.105、分ける機制と防衛が正常な発達の一部で、のちの病の土台にもなることは p.109。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/ijp-27-1946-1-2)）／良い結果だけ・良いも悪いもの軸＝「意識とは」の作業ノート「[信頼とは何か — 軸による多元的記述](https://github.com/uminomae/project-design-theory/blob/main/as/knowledge/concepts/CN-006_trust-analysis-axes.md)」。
+
+</details>
 
 ## 安心・依存と信頼は、どう違うのか
 
@@ -771,11 +825,15 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 
 一方で、同じ「安心」の言葉は、別の欲求からも求められます。マズローは、安全の欲求を、予測できて、秩序があり、あてにできる世界を求める欲求として書きました（1943 年）。そこには、慣れたもの・知られたものを好むことも、守ってくれる人や頼れる強い人を探すことも入ります。開発の部の心理的安全性の段で、pjdhiro が、保身や日和見の精神で求められる安心・安全を、心理防衛機制による依存のような状態と見ていたのは（「[事業の言葉は、どこで誤解されるか](#ldd-words)」の章の畳み）、この側の安心です。どちらの安心も、人がいつも、どこかで頼っていることの現れで、どちらが良い・悪いと分けられるものではありません。二つの安心を並べると、何から守られようとしているかが違って見えます。
 
+<details><summary>出典</summary>
+
 <!--REF:心理学-->
 
 出典：Winnicott (1960) "The theory of the parent-infant relationship", *International Journal of Psycho-Analysis* 41:585–595（本文照合済。分析者のあてにできる感じは p.585、「赤ん坊というものはいない」・乳児と世話のまとまり・依存の語の意味は p.586、絶対的な依存から相対的な依存を経て独立へ、は p.588、抱えることの定義は p.589、依存の三つは pp.589–590、抱える環境の働きは p.590、あてにできるが機械のようにではない・愛を示す形・指導だけではほどよい世話にならない、は p.591、乳児の自我の強さは p.594 の要約。写しは、西ベンガル州政府の教育研究訓練評議会が走査した[同じ巻](https://archive.org/details/dli.scoerat.1853theinternationaljournalofpsychoanalysisvolxll1960)を、公開資料の団体 Servants of Knowledge が Internet Archive に上げたもの。権利は確かめていない）。
 
 出典：[Maslow (1943)](https://doi.org/10.1037/h0054346) "A theory of human motivation", *Psychological Review* 50(4):370–396（本文照合済。[York University の Classics in the History of Psychology の HTML](http://psychclassics.yorku.ca/Maslow/motivation.htm)（原典の頁番号つき）。安全の欲求は pp.376–380、決まった流れと予測できる世界は p.377、拒まれた子が憎む親にしがみつくことは p.378、健康な大人では満たされていることは pp.378–379、慣れたものの好み・保障と保険は p.379、守ってくれる人・頼れる強い人を探すことは pp.379–380、所属と愛の欲求と、与えることと受け取ることは pp.380–381、同時に部分的に満たされることは pp.388–389）。
+
+</details>
 
 ## 愛着と信頼は、どう違うのか
 
@@ -787,11 +845,15 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 
 愛着の研究は、子どもが養育する人との関係をくり返し経験するうちに、その関係を、自分と相手についての見込みとして持つようになる、と書いてきました。ボウルビィは、この見込みを内的作業モデルと呼びました。内的作業モデルは、関係が心の中に残ることを言う言葉で、相手が目の前にいないときにも働きます。積み重ねには、安心できた経験だけでなく、応えてもらえなかった経験も入ります。信頼を、こうしてくり返しの中で積み重なった見込みとして見るのは、愛着の研究の側から見た一面です。
 
+<details><summary>出典</summary>
+
 <!--REF:心理学-->
 
 出典：[Ainsworth & Bowlby (1991)](https://doi.org/10.1037/0003-066X.46.4.333) "An ethological approach to personality development", *American Psychologist* 46(4):333–341（ストーニーブルック大学の愛着研究のサイトにあった[打ち直しの写しの Wayback の記録](https://web.archive.org/web/20050514233234/http://www.psychology.sunysb.edu:80/attachment/online/ainsworth_bowlby_1991.pdf)（2005 年 5 月 14 日）で本文照合済。頁は写しの頁。安全基地 pp.2・6、愛着の行動の働き p.5、再会の振る舞い p.7、内的作業モデル pp.7–8、不安定な型の二つ p.8、関係への見込み p.9）／[Coan & Sbarra (2015)](https://doi.org/10.1016/j.copsyc.2014.12.021) "Social Baseline Theory: the social regulation of risk and effort", *Current Opinion in Psychology* 1:87–91（[PMC の著者稿](https://pmc.ncbi.nlm.nih.gov/articles/PMC4375548/)で本文照合済。導入と結び）。
 
 出典：新田信也のウェブサイト「精神分析統合理論」の頁「[尊敬の精神分析学](https://www.seishin-bunseki.jp/category/2114846.html)」（節「尊敬の発生メカニズム」。本文照合済。著者本人のサイト）。
+
+</details>
 
 ## 信頼は、感情の中で、どこにあるのか
 
@@ -817,6 +879,8 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 
 </details>
 
+<details><summary>出典</summary>
+
 <!--REF:心理学-->
 
 出典：Plutchik (2001) "Integration, differentiation, and derivatives of emotion", *Evolution and Cognition* 7(2):114–125（[コンラート・ローレンツ研究所が公開している号の PDF](https://kli.ac.at/webroot/files/file/Evolution%20%26%20Cognition/2001%207-2.pdf) で本文照合済。円錐の模型と反対の感情 pp.117–118、喜びと受容の混ざりは愛 p.118、混ざりの表 p.118、感情と性格の語 p.119、適応の元の形の表 p.117、感情の一続きの表 p.121、派生の表 p.123、言い表しにくさ p.114、混ざりと葛藤 p.123）。
@@ -824,6 +888,8 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 出典：Panksepp (2001) "The neuro-evolutionary cusp between emotions and cognitions: Implications for understanding consciousness and the emergence of a unified mind science", *Evolution and Cognition* 7(2):141–163（2000 年に *Consciousness & Emotion* 1:15–54 に載った論文の再録。[コンラート・ローレンツ研究所が公開している号の PDF](https://kli.ac.at/webroot/files/file/Evolution%20%26%20Cognition/2001%207-2.pdf) で本文照合済。系と感情の表と大文字の意味 p.156）／[Ortony & Turner (1990)](https://doi.org/10.1037/0033-295X.97.3.315) "What's basic about basic emotions?", *Psychological Review* 97(3):315–331（[第一著者の大学のサイトの写し](https://users.cs.northwestern.edu/~ortony/Andrew_Ortony_files/1990%20-%20Basic%20emotions.pdf)で本文照合済。基本の感情の一覧の表 p.316、受容はプルチックだけ p.315、シェイヴァーらの五つ p.319、混ざりへの疑問 p.326）。
 
 出典：Fredrickson (2016) "Love: Positivity resonance as a fresh, evidence-based perspective on an age-old topic", in Barrett, Lewis & Haviland-Jones (eds.) *Handbook of Emotions* (4th ed.), Guilford Press（[著者の研究室のサイトにある、刊行前の原稿](https://peplab.web.unc.edu/wp-content/uploads/sites/18901/2019/06/Fredrickson2016ChapteronLoveforHandbookofEmotions.pdf)で本文照合済。頁は原稿の頁。「愛している」が指すもの p.3、思い・絆・親しさ・約束は積み重ねでできる p.3、愛の定義 p.16、くり返しが信頼と誠実さを築く p.19）。
+
+</details>
 
 ## 信頼と安心は、どんな輪郭に見えるか
 
@@ -866,9 +932,13 @@ pjdhiro は、受容についての対話で、二つの流れを並べていま
 
 段階も性格も、象の別の面に触れる視点です。同じ「信頼」「安心」という語が、段階ごとに違う向き先を持ち、性格ごとに違う対象に向かうなら、一つの定義に収まらないことも、群盲が象を評すように読めます。多くの視点を持つと、同じものが違って見える、ということです。
 
+<details><summary>出典</summary>
+
 <!--REF:心理学-->
 
 出典：Cook-Greuter (2013) "[Nine Levels of Increasing Embrace in Ego Development: A Full-Spectrum Theory of Vertical Growth and Meaning Making](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)", prepublication version, revised Dec. 2013（本文照合済。頁は刷りの頁。自己保護の信頼の低さ p.25、規則志向の信頼 p.28、多元の信頼 p.56）。
+
+</details>
 
 <!--TURN-->
 
