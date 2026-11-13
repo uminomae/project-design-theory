@@ -674,6 +674,20 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 
 <!--OPEN-->
 
+第一部の終わりの章「[Love という言葉は、何を指してきたか](#ldd-love-history)」で、Love と呼ばれてきたものを並べました。並べたものを見て、pjdhiro は、こう見立てています。
+
+<a id="ldd-part4-premise"></a><strong>pjdhiro の見方：</strong>Love と呼ばれる感情は信頼や安心のような感情に似ていると思う。
+
+研究の側でも、Love は、信頼や安心と呼ばれるものと重ねて、ときに一つの語の中に混ぜて書かれてきました。感情の分類では、愛のすぐ隣に信頼に近いものが置かれ、愛着の研究では、愛と呼ばれてきた結びつきが愛着の語で書かれ、その愛着は、人では落ち着きと安心を伴うとされています。重なって見えるのが、似ているからなのか、混ざって受け取られているからなのかは、まだ分かりません。この部では、信頼と安心の側を、心理学の視点で細かく分けて見ていきます。
+
+<details><summary>詳しく — Love を、信頼や安心と重ねて書いてきた研究</summary>
+
+感情の分類では、プルチックが、愛を喜びと受容の混ざりに置き、「信頼する（trusting）」を、受容から派生した性格の語として並べています（2001 年）。愛着の研究では、ボウルビィが、子の母への結びつきを、自分の説では結びつき（tie）と愛着行動（attachment behaviour）の語で書き、愛（love）の語は、フロイトなどの説を紹介するところで使っています（1958 年）。フィッシャーは、配偶と生殖にかかわる情動の系の一つに愛着を数え、人では落ち着きと安心を伴う、と書いています（1998 年）。結婚して長い年月がたっても強く恋していると答えた人の脳では、新しい恋と同じ報酬の領域とともに、母の愛着の研究で出た領域も活動していました（アセベドら、2012 年）。フレドリクソンは、人が「愛している」と言うときに指しているものには、時間をかけて積み重なった思いや絆、親しさ、約束が多く含まれる、と書いています（2016 年）。
+
+どれも、Love と呼ばれるものの中に、信頼や安心と呼ばれるものが入り込んでいる例として読めます。
+
+</details>
+
 第三部では、意識に上る信号の側から、人が世界をどう解釈しているかを見ました。第四部では、信頼とは何か、安心とは何か、の二つに答えていきます。まず、心の前提を五つ置きます（無意識、信頼や愛の感じの発生源、防衛、防衛がゆるむ状況、発達の段階）。次に、信頼と安心を、似たものとの違いから見ます。似たものは、心理学の論の四つの視点（自己実現・心理防衛機制・母子関係の理論・感情の分類）に束ねて並べるので、心理学の理論の案内としても読めます。最後に、見えた輪郭を並べ、段階や性格の見方で見直します。前提の五つの章は、概説とリンクだけです。心理学の論を知っている人は、「[信頼と、信仰や期待を、人は自分の中で分けられるのか](#ldd-discern)」の章へ進んでください。論を知らない人は、章の終わりの「出典」から、原典と、日本語訳のあるものはその訳へ辿れます。
 
 <a id="ldd-unconscious"></a><strong>pjdhiro の見方：</strong>人の心理は自分が思っているようにはできていない。フロイトの転移、クラインの対象関係のような信頼や愛の定義に関するような発生源、ユングの元型、心理防衛機制に発達段階と状態による非合理的な行動や感情発生など、みんな思っているほど立派にはできてない。
@@ -693,6 +707,9 @@ Brosschot、Verkuil、Thayer（2018 年）は、ストレスの反応を、い�
 出典：Freud (1915) "Das Unbewußte", *Internationale Zeitschrift für ärztliche Psychoanalyse* [3(4):189–203](https://archive.org/details/z319154)・[3(5):257–269](https://archive.org/details/z319155)（本文照合済。独語の原文を読んだ。抑圧と無意識の範囲は p.189、無意識を置く理由と思い上がりの語は pp.189–190、推し量りを自分に向けることは p.192、カントの戒めと「見えているとおりにできているとは限らない」は p.193、潜在と抑圧・前意識・検閲は pp.193–194。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/z319154)の誌面。パブリックドメイン）／Jung (1917) *Die Psychologie der unbewußten Prozesse*、英訳 Hecht "The Psychology of the Unconscious Processes"、Long (ed.) *Collected Papers on Analytical Psychology*, 2nd ed. (1920) 第 14 章（本文照合済（訳）。Hecht の英訳で読んだ。第 5 節「The Personal and the Impersonal Unconscious」pp.408–416。空想が伝説の主題と同じ形で現れることと原初の像は p.410、神々と悪魔は p.411。写しは [Project Gutenberg #48225](https://www.gutenberg.org/ebooks/48225)。パブリックドメイン）。
 
 原典を読むなら：フロイトの論文は、日本語訳が『フロイト全集 14』（岩波書店、2010）に「無意識」の題で入っています（[CiNii Books](https://ci.nii.ac.jp/ncid/BB03371699)）。ユングの論文は、Project Gutenberg の英訳の第 5 節から読めます。のちに書き改められた版（*Über die Psychologie des Unbewussten*）の日本語訳は、『無意識の心理』（高橋義孝訳、人文書院）です（[CiNii Books](https://ci.nii.ac.jp/ncid/BB24397125)）。
+
+
+出典：第四部の頭の、Love と信頼・安心を重ねて書いてきた研究の段＝[Plutchik (2001)](https://kli.ac.at/webroot/files/file/Evolution%20%26%20Cognition/2001%207-2.pdf) "Integration, differentiation, and derivatives of emotion", *Evolution and Cognition* 7(2):114–125（本文照合済。喜びと受容の混ざりは愛 p.118、感情と性格の語 p.119。くわしくは「[信頼は、感情の中で、どこにあるのか](#ldd-emotion)」の章）／Bowlby (1958) "The nature of the child's tie to his mother", *International Journal of Psycho-Analysis* 39:350–373（本文照合済。[Stony Brook 大学の愛着研究のサイトにある組み直しの写し](https://psychology.psy.sunysb.edu/attachment/online/Bowlby_1958_childs%20tie.pdf)）／[Fisher (1998)](https://doi.org/10.1007/s12110-998-1010-5) "Lust, attraction, and attachment in mammalian reproduction", *Human Nature* 9(1):23–52（本文照合済。pp.23–24。[著者のサイトの PDF](https://helenfisher.com/downloads/articles/10lustattraction.pdf)。三つの系は本文で仮説として出されている）／[Acevedo, Aron, Fisher & Brown (2012)](https://doi.org/10.1093/scan/nsq092) "Neural correlates of long-term intense romantic love", *Social Cognitive and Affective Neuroscience* 7(2):145–159（本文照合済。[PMC の本文](https://pmc.ncbi.nlm.nih.gov/articles/PMC3277362/)。強い恋を自己申告した人だけを選んだ研究）／Fredrickson (2016) "Love: Positivity resonance as a fresh, evidence-based perspective on an age-old topic"（本文照合済。[著者の研究室のサイトにある、刊行前の原稿](https://peplab.web.unc.edu/wp-content/uploads/sites/18901/2019/06/Fredrickson2016ChapteronLoveforHandbookofEmotions.pdf)。「愛している」が指すものと、積み重ねでできる思い・絆・親しさ・約束は p.3）。ボウルビィ・フィッシャー・アセベドらの三つは、独立ページ「[Love とは、どう言われてきたか](love-history.html#愛着--ボウルビィ1958-年)」の表にも並べています。
 
 </details>
 
