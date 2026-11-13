@@ -882,3 +882,8 @@ compile 実行の履歴。append-only。
 - scope: 3 ページ（`concepts/Love 駆動開発`・`プロジェクトデザイン`・`cross-refs/concept-entity-map`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第四部を「Love の手前で、心は信頼と安心をどう感じているか」に組み直し、創造の章に海のたとえと五つの事例、止観の bzero() のたとえを足した版）・`pd/src/content/site-data.mjs`（メニューに「読み物」の欄を足した版）
 - pages: Love 駆動開発は、第四部の流れ（心の前提の五つ・似たものとの違い・信頼と安心の輪郭・段階と性格の見直し）を「Love の手前で：信頼と安心」の節にまとめ、まだ分からないことの段を短くした。止観の道筋と bzero() のたとえ、五段階の海のたとえと五つの事例を足した。プロジェクトデザインと Concept-Entity Map は、メニューの直しが本文の材料（冒頭のページ・調査ノート）に触れないので本文を変えず、compiled を今日にした
+
+## [2026-11-14] check | Love 駆動開発・プロジェクトデザイン（読み物の「この読み物の外へ」に独立ページを足した）
+- scope: 2 ページ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（巻末の「この読み物の外へ」に、本文からリンクしている独立ページ 12 本と「創造とは」の五段階の表を足した版）
+- pages: 直しは巻末のリンクの一覧だけで、wiki の本文の材料に触れないので本文を変えず、checked に今の時刻を書いた

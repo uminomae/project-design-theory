@@ -2342,6 +2342,18 @@ pjdhiro が考えているのは、脳の神経に伝わる神経伝達物質と
 - [重力の井戸とは](gravity-well.html)：このページがたとえに使う絵の説明。
 - [愛は、重力に似ていないか](gravity-love.html)：駆動源の仮説の一次情報。経営者の役割とは、に仮説的に答える。
 - [ものの見方の広さスクリーナー](stages-screener.html)：自分を分けていく作業を、自分で試す道具。
+- [経営学の考え方は、どこまで効くか](management-drivers.html)：第一部の表の考え方を一つずつ、よく効く場面と、正解として広げたときに起きやすい取り違えで見る。
+- [ミンツバーグの学派を、駆動源と創造の流れで見る](mintzberg-schools.html)：戦略形成の十の学派を、何を駆動源と見ているかと、創造の五段階の流れで見る。
+- [心理的安全性とは](psychological-safety.html)：心理的安全性という言葉が何を指しているかを、不安の防衛と発達の段階の二つの視点で見る。
+- [影響を受けた心理学](influences-psychology.html)：pjdhiro が影響を受けてきた心理学の論（精神分析と発達心理）を、学者の名前と pjdhiro の印象で並べる。
+- [回転の掛け算](rotation-multiplication.html)：虚軸と回転の掛け算の前提知識。
+- [心理的防衛機制とは](defense-mechanisms.html)：心が自分を守る動きを、何から守るのかと、どう守るのかで見る。
+- [性格とは](personality.html)：性格を心理学がどう言ってきたか（型で分ける見方と特性で測る見方、パーソナリティ障害の分け方）。
+- [精神の発達段階とは](developmental-stages.html)：成人の発達の段階と、段階ごとに何が脅威に見え、どう守るか。
+- [安心とは](anshin.html)：安心という言葉を、語の来歴の順にたどる。
+- [Love とは、どう言われてきたか](love-history.html)：誰が、いつ、何を Love と呼んだかを、原典の本文に当たって並べる。
+- [内発的動機とは](intrinsic-motivation.html)：内発的動機（自己決定理論）を、理論が描く人の像から見直す。
+- [私というアプリを、読めるようにした一年](love-trajectory.html)：Love駆動開発と呼びたいものが生まれるまでの、pjdhiro の一年をたどる。
 - [欠損駆動思考](https://uminomae.github.io/project-design-theory/ks/)：合わないところに欠損を感じ、問いとして拾う。
 - [意識とは](https://uminomae.github.io/project-design-theory/as/)：生存と信頼の信号で、世界を切り取る。
-- [創造とは](https://uminomae.github.io/project-design-theory/cs/)：渦がどれだけありふれているかを、[30 の学問領域](https://uminomae.github.io/project-design-theory/cs/?modal=domains)で示す。姉妹読み物「[波間の渦](https://uminomae.github.io/project-design-theory/cs/reader/wave-vortex.html)」。
+- [創造とは](https://uminomae.github.io/project-design-theory/cs/)：渦がどれだけありふれているかを、[30 の学問領域](https://uminomae.github.io/project-design-theory/cs/?modal=domains)で示す。[五段階の表](https://uminomae.github.io/project-design-theory/cs/reader/five-stages.html)。姉妹読み物「[波間の渦](https://uminomae.github.io/project-design-theory/cs/reader/wave-vortex.html)」。
