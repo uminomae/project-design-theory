@@ -60,15 +60,20 @@
   }
 
   /* ---- 目次を章から自動生成 ---- */
+  /* 英語版の読み物（<html lang="en">）では目次の言葉も英語にする（2026-11-14・心理的安全性とはの英語版） */
+  var EN = (document.documentElement.lang || '').slice(0, 2) === 'en';
+  var T = EN
+    ? { toc: 'Contents', close: 'Close', open: 'Open contents', chapter: 'Chapter ' }
+    : { toc: '目次', close: '閉じる', open: '目次を開く', chapter: '章' };
   var nav = document.createElement('nav');
   nav.id = 'toc';
-  nav.setAttribute('aria-label', '目次');
+  nav.setAttribute('aria-label', T.toc);
   var head = document.createElement('div');
   head.className = 'toc-h';
-  head.innerHTML = '<span>目次</span>';
+  head.innerHTML = '<span>' + T.toc + '</span>';
   var xbtn = document.createElement('button');
   xbtn.className = 'toc-x';
-  xbtn.setAttribute('aria-label', '閉じる');
+  xbtn.setAttribute('aria-label', T.close);
   xbtn.innerHTML = '×';
   head.appendChild(xbtn);
   nav.appendChild(head);
@@ -116,7 +121,7 @@
     var id = sec.id || ('sec-' + (i + 1));
     sec.id = id;
     var sum = sec.querySelector(':scope>summary');
-    var full = sum ? sum.textContent.replace(/\s+/g, ' ').trim() : ('章' + (i + 1));
+    var full = sum ? sum.textContent.replace(/\s+/g, ' ').trim() : (T.chapter + (i + 1));
     var p = tocParts(full);
     if (sum && sum.dataset.sub) { p.sub = sum.dataset.sub; }
     var li = document.createElement('li');
@@ -149,8 +154,8 @@
   /* ---- モバイル: 開閉ボタン＋背景 ---- */
   var btn = document.createElement('button');
   btn.id = 'toc-btn';
-  btn.setAttribute('aria-label', '目次を開く');
-  btn.textContent = '☰ 目次';
+  btn.setAttribute('aria-label', T.open);
+  btn.textContent = '☰ ' + T.toc;
   var bd = document.createElement('div');
   bd.id = 'toc-bd';
   document.body.appendChild(btn);

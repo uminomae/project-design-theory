@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです（英語版）。生成物 reader/psychological-safety-en.html を直接編集しないでください。
+  正本:   knowledge/research/psychological-safety/READER-psychological-safety-en.md（日本語の正本 READER-psychological-safety.md の英訳。日本語を直したら、同じ作業でこちらも直す）
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  - 工事中のあいだは noindex（日本語版と同じ）
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION (for an LLM with no context; hidden from human readers)
+  ============================================================================
+  This is the English version of the page "What Is Psychological Safety" (Japanese original: psychological-safety.html). This page looks at what the term psychological safety points to, from two viewpoints. It sets pjdhiro's view, which sees a state without psychological safety as defense against anxiety (psychological defense mechanisms) and a state of mature defense as what we call high psychological safety, against the maturity levels of defense (Vaillant, Perry) and the defenses of each stage (Cook-Greuter). It opens with a table of how "Let's raise psychological safety" tends to sound at each stage of development (the right-hand column is Claude's arrangement), looks at how main fears and defenses differ by stage (Part 1), traces the history of the term (Lewin 1947 to Edmondson 1999) and places shame anxiety as one anxiety within the literature on psychological safety (Part 2), sets out the two axes of absence of threat and cues of safety and the difference from trust (Part 3), and looks at why workplace measures miss the mark, one common misunderstanding at a time (Part 4).
+  The research descriptions are Claude's summaries of the sources; quotations are in the sources' original English. Sentences with "can be read as" are Claude's reading. The column on how the call tends to sound is Claude's arrangement, not research.
+  pjdhiro's own words are quoted as "pjdhiro's view / pjdhiro's question" and were translated from Japanese by Claude. Stages and maturity are not ranked as better or worse.
+  Written by Claude.
+  ============================================================================
+-->
+<html lang="en">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>What Is Psychological Safety | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/psychological-safety-en.html">
+    <link rel="alternate" hreflang="ja" href="https://uminomae.github.io/project-design-theory/reader/psychological-safety.html">
+    <link rel="alternate" hreflang="en" href="https://uminomae.github.io/project-design-theory/reader/psychological-safety-en.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="This page looks at what the term psychological safety points to, from two viewpoints. It sets pjdhiro's view, which sees a state without psychological safety as defense against anxiety (psychological defense mechanisms) and a state of mature defense as what we call high psychological safety, against the maturity levels of defense (Vaillant, Perry) and the defenses of each stage (Cook-Greuter). It opens with a table of how &quot;Let's raise psychological safety&quot; tends to sound at each stage of development (the right-hand column is Claude's arrangement), looks at how main fears and defenses differ by stage (Part 1), traces the history of the term (Lewin 1947 to Edmondson 1999) and places shame anxiety as one anxiety within the literature on psychological safety (Part 2), sets out the two axes of absence of threat and cues of safety and the difference from trust (Part 3), and looks at why workplace measures miss the mark, one common misunderstanding at a time (Part 4).">
+    <meta property="og:title" content="What Is Psychological Safety">
+    <meta property="og:description" content="This page looks at what the term psychological safety points to, from two viewpoints. It sets pjdhiro's view, which sees a state without psychological safety as defense against anxiety (psychological defense mechanisms) and a state of mature defense as what we call high psychological safety, against the maturity levels of defense (Vaillant, Perry) and the defenses of each stage (Cook-Greuter). It opens with a table of how &quot;Let's raise psychological safety&quot; tends to sound at each stage of development (the right-hand column is Claude's arrangement), looks at how main fears and defenses differ by stage (Part 1), traces the history of the term (Lewin 1947 to Edmondson 1999) and places shame anxiety as one anxiety within the literature on psychological safety (Part 2), sets out the two axes of absence of threat and cues of safety and the difference from trust (Part 3), and looks at why workplace measures miss the mark, one common misunderstanding at a time (Part 4).">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/psychological-safety-en.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="What Is Psychological Safety">
+    <meta property="og:locale" content="en_US">
+    <meta property="article:published_time" content="2026-11-14">
+    <meta property="article:modified_time" content="2026-11-14">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "What Is Psychological Safety",
+          "description": "This page looks at what the term psychological safety points to, from two viewpoints. It sets pjdhiro's view, which sees a state without psychological safety as defense against anxiety (psychological defense mechanisms) and a state of mature defense as what we call high psychological safety, against the maturity levels of defense (Vaillant, Perry) and the defenses of each stage (Cook-Greuter). It opens with a table of how \"Let's raise psychological safety\" tends to sound at each stage of development (the right-hand column is Claude's arrangement), looks at how main fears and defenses differ by stage (Part 1), traces the history of the term (Lewin 1947 to Edmondson 1999) and places shame anxiety as one anxiety within the literature on psychological safety (Part 2), sets out the two axes of absence of threat and cues of safety and the difference from trust (Part 3), and looks at why workplace measures miss the mark, one common misunderstanding at a time (Part 4).",
+          "keywords": "psychological safety, Edmondson, Schein, learning anxiety, common misunderstandings, defense mechanisms, levels of defense, shame and guilt, ego development, stages of development, polyvagal theory, assurance and trust, Yamagishi, Love-Driven Development",
+          "url": "https://uminomae.github.io/project-design-theory/reader/psychological-safety-en.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/psychological-safety-en.html",
+          "inLanguage": "en",
+          "translationOfWork": {"@type": "Article", "url": "https://uminomae.github.io/project-design-theory/reader/psychological-safety.html", "inLanguage": "ja"},
+          "datePublished": "2026-11-14",
+          "dateModified": "2026-11-14",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "psychological safety"}, {"@type": "Thing", "name": "defense mechanisms"}, {"@type": "Thing", "name": "ego development"}, {"@type": "Thing", "name": "polyvagal theory"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic's AI. Responsible for the text and the translation"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "Dialogue partner. The quoted views and questions (translated by Claude)"},
+          "isPartOf": {"@type": "WebSite", "name": "Project Design Theory", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- Same Menu as the top page (items: src/content/site-data.mjs getMenuItems; drawn by src/reader-menu.js, which follows <html lang>) -->
+    <div class="top-bar" role="group" aria-label="Site controls">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>Machine-readable summary of this page (for an LLM with no context; hidden from human readers)</h2>
+        <p>This is the English version of the page "What Is Psychological Safety" (under construction). This page looks at what the term psychological safety points to, from two viewpoints. It sets pjdhiro's view, which sees a state without psychological safety as defense against anxiety (psychological defense mechanisms) and a state of mature defense as what we call high psychological safety, against the maturity levels of defense (Vaillant, Perry) and the defenses of each stage (Cook-Greuter). It opens with a table of how "Let's raise psychological safety" tends to sound at each stage of development (the right-hand column is Claude's arrangement), looks at how main fears and defenses differ by stage (Part 1), traces the history of the term (Lewin 1947 to Edmondson 1999) and places shame anxiety as one anxiety within the literature on psychological safety (Part 2), sets out the two axes of absence of threat and cues of safety and the difference from trust (Part 3), and looks at why workplace measures miss the mark, one common misunderstanding at a time (Part 4).</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>This article is written by an AI (Claude), and translated from the Japanese original by Claude.</b> The passages marked "pjdhiro's view" and "pjdhiro's question" are pjdhiro's own words, translated by Claude.<br>
+                🚧 <b>Under construction.</b> Some linked pages are still only in Japanese.
+            </div>
+            <header class="reader-hero">
+                <h1>What Is Psychological Safety</h1>
+                <p class="reader-subtitle">Seen through defense against anxiety and stages of development</p>
+                <p class="reader-meta">
+                    Last updated: 2026-11-14 ／ Status: under construction ／ <a href="psychological-safety.html" hreflang="ja" lang="ja">日本語</a><br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/psychological-safety/READER-psychological-safety-en.md">Source (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<p class="reader-summary__title">Overview</p>
+
+<p class="reader-lead"><span class="reader-lead__label">Question</span>When people first come across the words "psychological safety," they take them to be about different things. Are these words connected with shame and anxiety?</p>
+
+<p><a id="ps-stage-table"></a>The stages in the table below (Self-protective, Conformist, Expert…) are <a href="developmental-stages.html">stages of adult ego development</a> (in Japanese). The same call to "raise psychological safety" may reach people as a request for different kinds of protection, depending on the stage of development of the person who hears it.</p>
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>What looks most threatening (main fear)</th>
+<th>How "Let's raise psychological safety" tends to sound (Claude's arrangement)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Self-protective</td>
+<td>Being annihilated, being enslaved</td>
+<td>Not being blamed or punished myself. Not being put at a disadvantage for what I say</td>
+</tr>
+<tr>
+<td>Conformist</td>
+<td>Not belonging to the group; being abandoned by important people or the group</td>
+<td>Everyone getting along and nobody being left out. Not rocking the boat, not saying anything abrasive</td>
+</tr>
+<tr>
+<td>Expert</td>
+<td>Losing the special status one has just acquired</td>
+<td>Not having my expertise or judgment denied. Not having people who don't understand interfere</td>
+</tr>
+<tr>
+<td>Achiever</td>
+<td>Being pulled back into dependence or subordination. Losing progress and control</td>
+<td>Nobody interfering with my results. A means to raise in order to get results</td>
+</tr>
+<tr>
+<td>Pluralist</td>
+<td>Being pulled back into conventional frames</td>
+<td>Not having a single right answer imposed. The top-down order to "raise it" may itself sound like an imposition</td>
+</tr>
+<tr>
+<td>Strategist</td>
+<td>Failing to fulfil one's potential. Going against universal principles</td>
+<td>Being able to bring out dissent and failure as material for learning and change</td>
+</tr>
+<tr>
+<td>Construct-aware and later</td>
+<td>Being understood by hardly anyone</td>
+<td>Being able to receive one another, without labelling, even what cannot be fully put into words</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>The main-fear column is what Cook-Greuter wrote for each stage. The right-hand column is not written in the research. Claude arranged it from her descriptions of each stage's defenses and of the organizations people are drawn to, and from the chapter <a href="#common-misunderstandings">Common misunderstandings</a> in Part 4. The table with each stage's defenses and the organizations people are drawn to added is in the Part 1 chapter <a href="#what-looks-threatening-changes-with-the-stage-of-development">What looks threatening changes with the stage of development</a>. Sources: <a href="https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1&#39;14%2097p%5B1%5D.pdf">Cook-Greuter (2013)</a> (checked in the text. pp.9–10, 27, 34, 39–40, 49–50, 53, 58, 71–72, 84–85)</p>
+<details class="acc"><summary>More — what a stage is</summary>
+
+<p>Some theories hold that ego development continues after we become adults. Cook-Greuter writes that on the path of adulthood, too, people may expand their awareness, stay where they are, or contract (p.2). She also writes that what changes from stage to stage is not the challenges people meet, but how they relate to them (p.7). What looks most threatening also differs by stage (pp.9–10).</p>
+<p>The stage names in the table are Cook-Greuter's. People are said to move through the stages in order, from the top of the table downward, and the later stages can only be reached by passing through the earlier ones (p.2).</p>
+<p>Cook-Greuter writes that, so that the stage names are not read as a ranking in which "higher is better," she speaks of "earlier" and "later" rather than "lower" and "higher" (p.7). She also writes that the stage descriptions are idealized, and are not to be seen as a simple staircase (p.4).</p>
+<p>People are not fixed at one stage either. Nobody is 100% at one stage, and a person's responses are said to span at least three stages (p.5). People may also fall back to earlier stages under stress, or because of life circumstances and environment (pp.5, 7).</p>
+<p>Stages are written about in more detail in <a href="developmental-stages.html">What Are Stages of Mental Development</a> (in Japanese).</p>
+<p>Sources: <a href="https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1&#39;14%2097p%5B1%5D.pdf">Cook-Greuter (2013)</a> (checked in the text. pp.2, 4, 5, 7, 9–10. Page numbers are those printed in the paper)</p>
+</details>
+
+<p>When pjdhiro first heard the words, they connected them with a fear different from every row of the table.</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro's impression (translated by Claude):</strong>When I first heard the words, I thought they were connected with the word "shame anxiety."</p>
+</blockquote>
+<p>If we trace the history of the words, "psychological safety" has been used in different places with different contents: in therapy, in training where people learn in groups, in organizational change, and in research on teams. It is a term that spread without inheriting a single definition (the chapter <a href="#history-of-the-term">History of the term</a>).</p>
+<p>pjdhiro places this shame anxiety inside a wider view.</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro's view (translated by Claude):</strong>The aspect of defense against anxiety is important. I put forward one viewpoint within it, the anxiety called shame anxiety, but to put it comprehensively, it's defense against anxiety. That's what a state without psychological safety is.</p>
+</blockquote>
+<p>On that basis, pjdhiro sees a state of high psychological safety as follows.</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro's view (translated by Claude):</strong>I think a mature state of defense is what we call high psychological safety.</p>
+</blockquote>
+<div class="reader-lead"><span class="reader-lead__label">Current answer</span>
+They are connected with shame and anxiety. Cook-Greuter writes that what becomes the main fear, and how people protect themselves, differ by <a href="#what-looks-threatening-changes-with-the-stage-of-development">stage of development</a>. pjdhiro sees a state without psychological safety as a state of <a href="#the-mind-has-ways-of-protecting-itself">defense against anxiety</a>, and places shame anxiety as one of the anxieties within it. On that basis, pjdhiro sees a state of <a href="#defenses-differ-in-maturity">mature defense</a> as what we call high psychological safety. Not being embarrassed for speaking up is part of the content of Edmondson's (1999) definition (<a href="#how-has-the-literature-on-psychological-safety-written-about-shame-anxiety">How has the literature on psychological safety written about shame anxiety?</a>). pjdhiro also sees that the reassurance and safety sought in a spirit of self-protection or opportunism can include a state like dependence produced by psychological defense mechanisms. Perhaps workplace measures so often miss the mark because of these differences in how the term is received: for example, taking it to mean that you are safe as long as you are not punished, that it can be created by declaring "Please say anything," or that it is about one's own reassurance and safety. We look at these one by one in the chapter <a href="#common-misunderstandings">Common misunderstandings</a>. The shape of measures and rules also tends to change with the stage of the people who push them; at the Conformist and Expert stages they can be read as tending to take the shape of a single "right answer" (<a href="#the-stage-of-those-who-push-the-measures">The stage of those who push the measures</a>).
+</div>
+
+<div class="reader-lead"><span class="reader-lead__label">Structure</span>
+<ul class="reader-lead__list">
+<li><b>Part 1 Seeing it through stages of development</b>: We widen the opening table and look at how the main fears and defenses differ by stage.</li>
+<li><b>Part 2 Seeing it as defense against anxiety</b>: We trace the history of the term in order of years, and look at a state without psychological safety as the movement of protecting the mind from anxiety. Shame anxiety is one of the anxieties within it. We also see that defenses differ in maturity.</li>
+<li><b>Part 3 To understand the two viewpoints</b>: We look at the difference between the absence of threat and the presence of cues of safety, and at the difference from trust.</li>
+<li><b>Part 4 Why measures miss the mark</b>: We look at why workplace measures tend to miss the mark, one misunderstanding of the term at a time.</li>
+<li><b>So what should we do?</b>: At the end of Part 4, we place a view of where to head.</li>
+<li><b>Open questions</b>: We list the questions that have not yet been answered.</li>
+</ul>
+</div>
+
+<p class="reader-lead"><span class="reader-lead__label">Key points</span></p>
+
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Definition</th>
+<th>The term "psychological safety" has been used in therapy (Rogers, 1954), in training where people learn in groups (Schein and Bennis, 1965), and in organizational change (Schein, 1995). Schein wrote of it as the sense that one can learn something new without losing one's identity or sense of competence, and put it as the first condition for lowering the anxiety of learning. In 1999 Edmondson defined it as "a shared belief that the team is safe for interpersonal risk taking." The history is in the Part 2 chapter on the history of the term; the content of the definition (not being embarrassed, rejected or punished) is in the chapter on shame anxiety</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>This page's viewpoint</td>
+<td>In pjdhiro's view, a state without psychological safety is a state of defense against anxiety, and shame anxiety is one of the anxieties within it. What is called high psychological safety is a state of mature defense. What becomes the main fear, and how people protect themselves, differ by stage of development (Cook-Greuter, 2013)</td>
+</tr>
+<tr>
+<td>Common misunderstandings</td>
+<td>That it is about physical safety. That it is a system of not being punished. That it means getting along, or having no rigor. That it is about one's own reassurance and safety. That it can be created by declaring "Please say anything." That higher is better in every organization</td>
+</tr>
+<tr>
+<td>Conditions where it matters</td>
+<td>It carries more weight in work that involves uncertainty and calls for creativity or collaboration (Edmondson and Lei, 2014). Speaking up to stop and report errors and dangers seems, judging from the example of aviation, to have been treated as needed regardless of the nature of the work. pjdhiro thinks it may work in work that deals with intangible things, such as services and design</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+
+
+<div class="reader-part" id="part-1"><p class="reader-part__no">Part 1</p><p class="reader-part__title">Seeing it through stages of development</p></div><details class="sec" id="what-looks-threatening-changes-with-the-stage-of-development" open><summary>What looks threatening changes with the stage of development</summary><div class="secbody">
+
+
+<p>How people protect themselves at each stage (defense; we look at it in Part 2) and what kinds of organization they are drawn to also differ. We add these two to the opening table.</p>
+<p>This chapter also looks at stages of psychological safety: the four stages set out by Timothy R. Clark, and research that followed teams over time. Clark is the founder of LeaderFactor, a leadership assessment and training company, and is a different person from Edmondson, who spread the term psychological safety. These are stages of psychological safety itself, and are separate from the stage of mental development of the person who receives the term. In a conversation about what kinds of organization psychological safety works in, pjdhiro also raised the following view about such stages.</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro's view (translated by Claude):</strong>Or else psychological safety has stages. For each stage there are organizations that fit it.</p>
+</blockquote>
+<h3 id="the-stage-of-mental-development-of-the-person-who-receives-it">The stage of mental development of the person who receives it</h3>
+<p>For the side of the person who receives the term, there are descriptions of stages of ego development. Cook-Greuter described, stage by stage, what looks most threatening (the main fear) and how people protect themselves against it (defense). For some stages she also wrote about the kinds of organization people are drawn to.</p>
+<p>As in the opening table, the right-hand column was arranged by Claude from the columns on defenses and organizations and from the chapter on common misunderstandings. Only one point, that at the Conformist stage people seek to be accepted and protected by something larger, is something Cook-Greuter wrote.</p>
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Main fear</th>
+<th>Defenses</th>
+<th>Organizations people are drawn to</th>
+<th>How "Let's raise psychological safety" tends to sound (Claude's arrangement)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Self-protective</td>
+<td>Being annihilated, being enslaved</td>
+<td>Blaming others. Fantasy, acting out, projection</td>
+<td>—</td>
+<td>Not being blamed or punished myself. Not being put at a disadvantage for what I say</td>
+</tr>
+<tr>
+<td>Conformist</td>
+<td>Not belonging to the group; being abandoned by important people or the group</td>
+<td>Denying problems, rephrasing them, seeing only the good side. Asking those above when in trouble. Avoiding conflict</td>
+<td>Organizations with clear identity and hierarchy. A preference for direction and guidance. The command-and-control military</td>
+<td>Everyone getting along and nobody being left out. Not rocking the boat, not saying anything abrasive</td>
+</tr>
+<tr>
+<td>Expert</td>
+<td>Losing the special status one has just acquired</td>
+<td>Intellectualization, rationalization, evasion. Blaming structures, tools or other people's incompetence</td>
+<td>Engineers, bureaucrats, the various professions</td>
+<td>Not having my expertise or judgment denied. Not having people who don't understand interfere</td>
+</tr>
+<tr>
+<td>Achiever</td>
+<td>Being pulled back into dependence or subordination. Losing progress and control</td>
+<td>Intellectualization, rationalization, suppression of the shadow</td>
+<td>—</td>
+<td>Nobody interfering with my results. A means to raise in order to get results</td>
+</tr>
+<tr>
+<td>Pluralist</td>
+<td>Being pulled back into conventional frames</td>
+<td>Cynicism and nihilism</td>
+<td>—</td>
+<td>Not having a single right answer imposed. The top-down order to "raise it" may itself sound like an imposition</td>
+</tr>
+<tr>
+<td>Strategist</td>
+<td>Failing to fulfil one's potential. Going against universal principles</td>
+<td>Mainly suppression, positive reframing, altruism, non-hostile humor</td>
+<td>—</td>
+<td>Being able to bring out dissent and failure as material for learning and change</td>
+</tr>
+<tr>
+<td>Construct-aware and later</td>
+<td>Being understood by hardly anyone</td>
+<td>Sublimation, non-hostile humor, bracketing</td>
+<td>—</td>
+<td>Being able to receive one another, without labelling, even what cannot be fully put into words</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>Cook-Greuter also writes that how people relate to concepts such as power, time and love looks different at each stage. The right-hand column applies this to psychological safety. The same call to "raise psychological safety" may reach people as a request for different kinds of protection, depending on who hears it.</p>
+<p>There are descriptions of the organizations people at each stage are drawn to, but within the range we searched we found no research confirming that organizations function well with those combinations.</p>
+<p>Stages and defenses do not line up on a single line. Cook-Greuter writes that the later the stage, the less need there is for defensive moves. She also writes that narcissistic tendencies appear at every stage. The rows of the table are arranged as differences in what looks threatening. The same table read from the side of Love-Driven Development is in the chapter of the same name in <a href="love-driven-dev.html#ldd-stages">What I Want to Call Love-Driven Development</a> (in Japanese).</p>
+<p>Sources: Cook-Greuter, S. R. (2013). <a href="https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1&#39;14%2097p%5B1%5D.pdf"><em>Nine Levels of Increasing Embrace in Ego Development</em></a> (prepublication version; checked in the text) pp.9–10, 27, 34, 39–40, 49–50, 53, 58, 71–72, 84–85</p>
+<h3 id="stages-of-psychological-safety">Stages of psychological safety</h3>
+<p>The best-known stages of psychological safety are the four stages put out by Clark and his company, LeaderFactor: inclusion safety, learner safety, contributor safety and challenger safety. People and groups are said to move through them in this order. The same company's technical report states that the answers to the 12 survey items came together as a single factor. In the answers, the four stages appeared as shades of a single dimension. The report has no data that followed the stages progressing in order over time. Nor did we find any peer-reviewed paper that tested these four stages.</p>
+<p>Some research that followed teams over time does not fit the shape of climbing a staircase. In a study that measured 61 self-managed student teams (236 people) working on a five-month research project three times, at the beginning, middle and end, psychological safety fell from the beginning to the end.</p>
+<p>pjdhiro overlaps this decline with what they have seen in close relationships.</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro's view (translated by Claude):</strong>From my experience too, in close relationships, such as between spouses or friends, I often see mental growth like positive transference and negative transference. It isn't that expectations and ideals head in a straight line toward reassurance, wrapped in happiness. Defenses like idealization peel away, anxiety arises, and from there, by accepting reality, I think there is a psychological safety like resignation.</p>
+</blockquote>
+<p>The authors of this study explain the decline by the stages of the work. At the beginning, many questions are allowed in order to grasp the task together. As the task comes into view, questions and comments are more easily taken as things that slow the work down. As the deadline nears, the team closes, and it becomes harder to reopen discussion. That is their explanation. They do not explain it as a process in which idealization peels away. Because the study measured three times over five months, whether safety comes back after falling was not followed.</p>
+<details class="acc"><summary>More — how what comes after idealization peels away has been written about</summary>
+
+<p>In research that followed spouses from the time they were newly married, satisfaction also starts high and falls, on average. A study that followed 464 newlyweds for four years called this decline one of the most robust findings in research on marriage, and also showed that there are groups whose satisfaction does not fall (Lavner and Bradbury, 2010). In a study that followed 222 couples, married about half a year, for three years, satisfaction clearly fell overall, but those who strongly saw their partner as matching their own ideals did not show a fall in satisfaction (Murray et al., 2011). Idealization in that study is the degree to which people see their partner as matching an ideal image; it was not measured as a defense. In research on couples, the fading of idealization and the fall in satisfaction (disillusionment) have been studied as a forerunner of breaking up (Niehuis et al., 2013).</p>
+<p>The psychoanalyst Klein wrote about the process of mourning in a form close to pjdhiro's view (1940). Idealization is a defense bound up with denial, and at the same time an intermediate step essential to the development of the mind. When hatred of the lost person arises, trust in the good object is shaken and idealization is painfully disturbed. Klein writes that as people gradually regain trust in external objects, they can bear to realize that the person was not perfect, and yet not lose trust and love. She also writes that painful experiences of every kind have something in common with mourning, and that meeting and overcoming adversity involves mental work similar to mourning. Klein's account is inferred from the clinical work with infants and with mourning; it does not measure couples or teams. Idealization itself is looked at in the Love-Driven Development chapter "<a href="love-driven-dev.html#ldd-idealize">How do idealization and trust differ?</a>" (in Japanese).</p>
+<p>pjdhiro's view places the disillusionment that research on couples has studied as a forerunner of breaking up on a path toward a psychological safety like resignation. We leave the two side by side, without fitting one to the other.</p>
+<p>Sources: <a href="https://doi.org/10.3389/fpsyg.2022.765793">Gerlach &amp; Gockel (2022)</a> (checked in the <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9556884/">full text on PMC</a>. Discussion section) / <a href="https://doi.org/10.1111/j.1741-3737.2010.00757.x">Lavner &amp; Bradbury (2010)</a> <em>Journal of Marriage and Family</em> 72(5):1171–1187 (checked in the <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2992446/">author manuscript on PMC</a>. Abstract and introduction) / <a href="https://doi.org/10.1177/0956797611403155">Murray, Griffin, Derrick, Harris, Aloni &amp; Leder (2011)</a> <em>Psychological Science</em> 22(5):619–626 (checked in the <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4094166/">author manuscript on PMC</a>. Abstract, method, discussion) / Niehuis, Reifman &amp; Lee (2013). <a href="https://www.bgsu.edu/content/dam/BGSU/college-of-arts-and-sciences/NCFMR/documents/WP/WP-13-05.pdf"><em>Disillusionment in cohabiting and married couples: A national study</em></a>. National Center for Family &amp; Marriage Research Working Paper WP-13-05 (checked in the text placed at the research center of Bowling Green State University. pp.3–6) / Klein (1940) "Mourning and its relation to manic-depressive states", <em>International Journal of Psycho-Analysis</em> <a href="https://archive.org/details/ijp-xxi-1940-2">21:125–153</a> (checked in the text of the copy in the International Psychoanalytic University Berlin collection on the Internet Archive. Idealization and denial p.131; the intermediate step and the disturbance of idealization pp.137–138; bearing the realization that the person was not perfect p.138; painful experiences and mourning pp.143–144)</p>
+</details>
+
+<details class="acc"><summary>More — the basis of the four stages</summary>
+
+<p>As the basis of the four stages, the technical report lists several earlier ideas, beginning with Maslow's need for belonging. What it cites as the ground for the claim that the stages progress in order is Clark's own 2020 book (<em>The 4 Stages of Psychological Safety</em>, Berrett-Koehler). The report itself writes that a pattern in which social units progress through the four stages in order is consistently seen (p.12).</p>
+<p>Sources: <a href="https://www.reginfo.gov/public/do/DownloadDocument?objectID=125627101">LeaderFactor (2021)</a>. <em>The 4 Stages of Psychological Safety Team Survey Technical Report</em> (checked in the text of the copy placed on reginfo.gov, the U.S. government's regulatory information site. pp.4–5, 7–8, 12, 17. That Clark is the developer, and his book, p.9)</p>
+</details>
+
+<p>Sources: <a href="https://www.reginfo.gov/public/do/DownloadDocument?objectID=125627101">LeaderFactor (2021) technical report</a> (checked in the text. p.4, p.17) / <a href="https://doi.org/10.3389/fpsyg.2022.765793">Gerlach &amp; Gockel (2022)</a> <em>Frontiers in Psychology</em> 13:765793 (checked in the text. Abstract, method and results sections)</p>
+<h3 id="the-stage-of-those-who-push-the-measures">The stage of those who push the measures</h3>
+<p>The people who make and push measures and rules are also at some stage. The table below lists, stage by stage, what looks threatening, how people protect themselves, and how they relate to rules and rightness, and from these arranges what shapes measures and rules tend to take.</p>
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>What looks threatening (Cook-Greuter)</th>
+<th>How people protect themselves (Cook-Greuter)</th>
+<th>Relation to rules and rightness (Cook-Greuter)</th>
+<th>Shapes that measures and rules tend to take (Claude's arrangement)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Self-protective</td>
+<td>Being annihilated, being enslaved</td>
+<td>Blaming others. Fantasy, acting out, projection</td>
+<td>Knows the rules, but keeps them for immediate gain or to avoid punishment</td>
+<td>Rules enforced by punishment and surveillance. Systems for finding who broke them</td>
+</tr>
+<tr>
+<td>Conformist</td>
+<td>Not belonging to the group; being abandoned by important people or the group</td>
+<td>Denying problems, seeing only the good side. Asking those above when in trouble. Avoiding conflict</td>
+<td>Takes in the rules and follows them without question. Divides things into right and wrong, and sees one's own group's way as right</td>
+<td>Rules that make "everyone getting along" and "not rocking the boat" the right answer. Dissent treated as disturbing the harmony</td>
+</tr>
+<tr>
+<td>Expert</td>
+<td>Losing the special status one has just acquired</td>
+<td>Intellectualization, rationalization, evasion. Blaming structures, tools or other people's incompetence</td>
+<td>Sees one's own way as the only right way and tries to perfect procedures</td>
+<td>Measures as one right procedure or checklist. Evaluation by whether the procedure was followed</td>
+</tr>
+<tr>
+<td>Achiever</td>
+<td>Being pulled back into dependence or subordination. Losing progress and control</td>
+<td>Intellectualization, rationalization, suppression of the shadow</td>
+<td>Will bend and break rules, giving reasons, for the sake of goals or ideals</td>
+<td>Measures as indicators for getting results. Raising it by setting numerical targets</td>
+</tr>
+<tr>
+<td>Pluralist</td>
+<td>Being pulled back into conventional frames</td>
+<td>Cynicism and nihilism</td>
+<td>Sees all views as equal, with no place from which one can evaluate with certainty. Tends to see hierarchy as oppression; deciding tends to stall</td>
+<td>Spaces that hear everyone's voice equally. Deciding and evaluating tend to stall</td>
+</tr>
+<tr>
+<td>Strategist</td>
+<td>Failing to fulfil one's potential. Going against universal principles</td>
+<td>Mainly suppression, positive reframing, altruism, non-hostile humor</td>
+<td>Distinguishes biased judgment from wise discernment, and sees evaluating and choosing as indispensable. Compares and integrates many views</td>
+<td>Measures that change shape to fit the situation. Systems that make dissent material for deciding</td>
+</tr>
+<tr>
+<td>Construct-aware and later</td>
+<td>Being understood by hardly anyone</td>
+<td>Sublimation, non-hostile humor, bracketing</td>
+<td>Becomes aware of the very habit of automatically judging good and bad</td>
+<td>Measures that set no right answer. Room left for what is hard to put into words</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>The four left-hand columns are what Cook-Greuter wrote for each stage. The right-hand column is not written in the research. Claude arranged it from the left-hand columns.</p>
+<p>At the Conformist stage, rules are something to follow without question, and things are divided into right and wrong. At the Expert stage, one's own way looks like the only right way. Whichever of these stages the people pushing a measure are at, the measure can be read as tending to take the shape of a single "right answer." At the Pluralist stage the direction reverses: because every view is treated as equal, deciding tends to stall, Cook-Greuter writes.</p>
+<p>On this page we have not come across research that directly examined the relation between the stage of those who push measures and the shape of the measures and rules. A close piece of research is the study by Rooke and Torbert. The two took part in the development efforts of ten organizations, about four years per organization, measured the CEOs' stage of development with a test, and set this beside where the organizations went. Torbert's stage names correspond one-to-one with the stages in the table above (Opportunist is Self-protective, Diplomat is Conformist, and Expert, Achiever and Strategist have the same names).</p>
+<p>All five organizations with a CEO at the Strategist stage changed for the better. Of the five organizations with a CEO at an earlier stage, three fell into crisis. The other two changed for the better, and in both the CEO had a consultant or executive at the Strategist stage as a close adviser.</p>
+<p>The authors also describe, stage by stage, how people face negative feedback. The Opportunist rejects feedback, and the Diplomat avoids conflict to protect their own and the other's face. The Expert accepts feedback only from masters in the same field, and the Achiever welcomes feedback that bears on goals. They also write that a Diplomat CEO would feel the threat of losing face in speaking of their own weaknesses in public.</p>
+<p>What this study looked at was not the shape of measures and rules, but whether the organizations changed. It is also a retrospective look at ten organizations in which the authors themselves took part as consultants.</p>
+<p>Sources: <a href="https://thesystemsthinker.com/?p=1808">Rooke &amp; Torbert, "The CEO's Role in Organizational Transformation"</a> (checked in the text of the article in <em>The Systems Thinker</em>. Ten organizations: section "Studying Organizational Development Efforts"; feedback by stage: table "Managerial Action-Logics"; the Diplomat CEO: section "Individual and Organizational 'Action-Logics'"; the CEO's stage and where the organizations went: sections "Obstacles to Change" and "Barriers to Organizational Change") / correspondence of stage names: <a href="https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1&#39;14%2097p%5B1%5D.pdf">Cook-Greuter (2013)</a> (checked in the text. Table 1, p.6)</p>
+<p>Sources: <a href="https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1&#39;14%2097p%5B1%5D.pdf">Cook-Greuter (2013)</a> (checked in the text. Main fears and defenses pp.9–10, 27, 34, 39–40, 49–50, 53, 58, 71–72, 84–85; relation to rules and rightness: Self-protective p.25, Conformist pp.32, 34, Expert pp.37–38, Achiever pp.48–49, Pluralist pp.53, 59–60, Strategist p.66, Construct-aware pp.80–81)</p>
+
+
+
+
+</div></details><div class="reader-turn"><p>In Part 1 we saw that what looks threatening, and how people protect themselves, look different depending on the stage of development.</p>
+<p>In Part 2 we trace the history of the term, and then look at a state without psychological safety as the movement of protecting the mind from anxiety (defense).</p></div><div class="reader-part" id="part-2"><p class="reader-part__no">Part 2</p><p class="reader-part__title">Seeing it as defense against anxiety</p></div><details class="sec" id="history-of-the-term" open><summary>History of the term</summary><div class="secbody">
+
+
+<p>Part 2 begins by looking, in order of years, at where the term psychological safety came from. In this history, Schein writes of the forces that stop change as psychological defenses (the 1995 section).</p>
+<p>Of the literature traced in this chapter, Schein's 1995 paper and Edmondson's 1999 paper were checked in the text. Lewin's 1947 paper was checked in a copy placed on the Internet Archive, and Rogers's 1954 essay in a copy, placed by a third party, of the full text reprinted in a 1970 collection. Schein and Bennis's book was checked only as far as the fragments found by a full-text search of the book.</p>
+<h3 id="1947-lewins-three-steps-of-change">1947: Lewin's three steps of change</h3>
+<p>The social psychologist Lewin described group change in three steps: unfreezing (if necessary) the present level, moving to a new level, and freezing at that level. Unfreezing is written about as a matter of the forces that loosen custom, overcoming the inner resistance of habit. The paper has no words that discuss safety of the mind or anxiety.</p>
+<h3 id="1954-rogerss-conditions-for-creativity">1954: Rogers's conditions for creativity</h3>
+<p>The term "psychological safety" was used by Rogers, of client-centered therapy, in his 1954 essay on creativity, as a condition under which creativity grows. It is said to be established by accepting the individual as of unconditional worth, by an absence of external evaluation, and by understanding empathically. Creativity here includes external products such as works, theories and inventions, and creating one's own personality anew in psychotherapy is counted as part of the same process. Rogers's interest in creativity came from that experience of psychotherapy.</p>
+<h3 id="1965-unfreezing-in-schein-and-bennis">1965: Unfreezing in Schein and Bennis</h3>
+<p>Schein and Bennis's book deals with training in which people learn in groups (laboratory training). Psychological safety is placed as one part of Lewin's unfreezing step, and is said to be created by reducing threat or by removing barriers to change. The book lays out several theories that explain learning in training. One is the interpersonal theory of Sullivan and Rogers; another is psychoanalysis, which deals with unconscious motives. But nothing in the fragments we could read shows that the term "psychological safety" was borrowed from Rogers. The chapter in the book by Bugental and Tannenbaum cites Maslow's distinction between deficiency motivation and growth motivation, and places sensitivity training on the side of growth.</p>
+<p>pjdhiro reads these two ways of creating it from the side of psychological defense.</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro's view (translated by Claude):</strong>Reducing threat is a state where psychological defense mechanisms aren't triggered; barriers to change means giving up psychological defense mechanisms and accepting reality. I think this has been reported a lot in counseling practice, by Shinya Nitta, Rogers and others. The methods and the difficulties.</p>
+</blockquote>
+<p>The methods and difficulties, on the counseling side, of the process in which defenses loosen and reality is accepted are looked at in the chapter "Going back to defense, or keeping on facing it" of <a href="anxiety.html#守りに戻るか向き合い続けるか">What Is Anxiety</a> (in Japanese).</p>
+<h3 id="1995-schein-looks-back-on-lewin">1995: Schein looks back on Lewin</h3>
+<p>In 1995, in a paper looking back on Lewin's theory, Schein writes that he built his own theory of change on the foundation of Lewin's "unfreezing, changing, refreezing" model. These three words are Schein's phrasing; in Lewin's original they were unfreezing, moving and freezing. When Schein studied the attitude change of prisoners of war in the Korean War, he says, this model became the foundation for explaining the deep changes that had occurred in the prisoners. According to Schein, many of the forces that stop change are individual psychological defenses or group norms. He writes that he came to understand the whole of this only after turning to cognitive psychology's studies of perceptual defense, to psychoanalysis and the Tavistock work dealing with denial, splitting and projection, and to Argyris's research on defensive routines. Schein unpacked the unfreezing step into three processes and placed psychological safety as one of them. The three processes are receiving disconfirming information, the arousal of survival anxiety or guilt, and the creation of psychological safety. Without enough psychological safety, Schein writes, the information is denied or defended against in other ways, and no change occurs. The denial, splitting and projection that Schein lists are what psychoanalysis has called defense mechanisms, and they also appear in the table on the page <a href="defense-mechanisms.html#防衛の種類と水準">What Are Psychological Defense Mechanisms</a> (in Japanese). The pair of learning anxiety and psychological safety is looked at later, in the chapter <a href="#how-has-the-literature-on-psychological-safety-written-about-shame-anxiety">How has the literature on psychological safety written about shame anxiety?</a>, through a paper on organizational culture from the same year.</p>
+<p>pjdhiro sees this line of thought as also answering a question Shinya Nitta raised: "Are expectations bad?" Schein had written that information that disconfirms expectations becomes an entrance to change when there is enough psychological safety, and turns toward denial and defense when there is not. Nitta's question, and how people act after their expectations are disappointed, are looked at in the chapter "How do expectation and trust differ?" of <a href="love-driven-dev.html#ldd-expect">What I Want to Call Love-Driven Development</a> (in Japanese).</p>
+<h3 id="1999-edmondsons-definition-for-teams">1999: Edmondson's definition for teams</h3>
+<p>Edmondson defined team psychological safety and named Schein and Bennis's book as its root. Where she writes that admitting errors or asking for help carries the risk of losing face, she cites the sociologist Goffman's research on face. She does not cite Rogers.</p>
+<h3 id="what-the-history-tells-us">What the history tells us</h3>
+<p>Names from developmental psychology such as Erikson or Piaget do not appear in the literature traced here. Maslow's safety needs are not cited either.</p>
+<p>To sum up what the history tells us: the term "psychological safety" has been used in different places with different contents, in therapy, in training where people learn in groups, in organizational change, and in research on teams. Between Rogers and Schein and Bennis, nothing has been found that shows the term was inherited. After 1999 too, the wording of the definition and the level at which it is measured keep moving (the section <a href="#that-you-are-safe-as-long-as-you-are-not-punished">That you are safe as long as you are not punished</a>). It is a term that spread without inheriting a single definition. Every author was writing on top of the experience of therapy, or of Lewin's theory and the research on prisoners.</p>
+<p>Set beside this page's two viewpoints, it can be read as follows (Claude's reading). The viewpoint of defense against anxiety overlaps with the language of defense that Schein took in from psychoanalysis. For the viewpoint of stages of development, no direct source can be seen in the history; it is a view that came from outside the history.</p>
+<p>Sources: <a href="https://doi.org/10.1177/001872674700100103">Lewin (1947)</a> <em>Human Relations</em> 1(1):5–41 (checked in a copy placed on the Internet Archive. pp.32, 34–35) / Rogers, C. R. (1961). <a href="https://archive.org/details/onbecomingperson0000carl"><em>On becoming a person</em></a>. Houghton Mifflin (reprint of the 1954 essay on creativity. Full-text search on the Internet Archive) / Rogers, C. R. (1954). Toward a theory of creativity. <em>ETC: A Review of General Semantics</em> 11:249–260 (checked in a <a href="https://gwern.net/doc/psychology/writing/1970-vernon-creativity.pdf">copy placed by a third party</a> of the reprint in Vernon, P. E. (Ed.), <em>Creativity</em>, Penguin, 1970, pp.137–151. Products p.138; definition and psychotherapy p.139; the three processes of psychological safety pp.147–148) / Schein, E. H., &amp; Bennis, W. G. (1965). <a href="https://archive.org/details/personalorganiza0000sche"><em>Personal and organizational change through group methods: The laboratory approach</em></a>. Wiley (full-text search on the Internet Archive) / <a href="https://hdl.handle.net/1721.1/2576">Schein (1995)</a> <em>Kurt Lewin's change theory in the field and in the classroom: Notes toward a model of managed learning</em>. MIT Sloan Working Paper 3821 (checked in the text. Lewin's model and the prisoner research p.2; defenses, psychoanalysis and Tavistock p.3; the three processes of unfreezing and psychological safety pp.3–4; without enough safety the information is defended against p.5) / <a href="https://doi.org/10.2307/2666999">Edmondson (1999)</a> (checked in the text. Goffman's face pp.351–352; root p.354)</p>
+</div></details><details class="sec" id="the-mind-has-ways-of-protecting-itself" open><summary>The mind has ways of protecting itself</summary><div class="secbody">
+
+
+<p>In Part 2, following the view of pjdhiro quoted in the overview, we look at a state without psychological safety as a state of the movement of protecting the mind from anxiety (defense). Anxiety itself is looked at on the page <a href="anxiety.html">What Is Anxiety</a> (in Japanese), starting from Shinya Nitta's definition, as a back-and-forth between anxiety and defense.</p>
+<p>🚧 This chapter is under construction.</p>
+<p>As we will see in the next chapter, Schein also writes that when the anxiety of learning stays high, people become defensive.</p>
+<p>Then, if people are psychologically safe and reassured, do good things happen?</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro's view (translated by Claude):</strong>No. The reassurance and safety sought in a spirit of self-protection or opportunism can also be a state like dependence produced by psychological defense mechanisms.</p>
+</blockquote>
+<p>Defenses have not been written about only as something bad. Vaillant writes that the choice of defenses is not something we can make intentionally. On that basis, he held that whether one uses "mature" defenses such as sublimation and humor or "immature" defenses such as projection makes a great difference to mental health. He also writes that when anxiety and loneliness are eased by empathy, "immature" defenses can come undone. The whole range of defense levels is written about in the chapter of the same name in <a href="love-driven-dev.html#ldd-defense">What I Want to Call Love-Driven Development</a> (in Japanese). Anna Freud described identification with the aggressor as one of the stages in the normal development of the superego.</p>
+<p>On the other hand, Edmondson's 1999 paper, noting that group cohesiveness can reduce willingness to disagree, cited Janis's groupthink, and wrote that psychological safety is different from cohesiveness.</p>
+<p>Putting the sources so far side by side, the same "reassurance" can be read as appearing both on the side that loosens defenses and on the side that hardens them. One clue for telling them apart may be whether the reassurance comes together with facing the task, reality, dissent and shame, or is gained in exchange for not having to face them.</p>
+<p>Sources: <a href="https://doi.org/10.2307/2666999">Edmondson (1999)</a> p.354 / <a href="https://doi.org/10.31887/DCNS.2011.13.2/gvaillant">Vaillant (2011)</a> <em>Dialogues in Clinical Neuroscience</em> 13(3):366–370 (checked in the text. p.366, p.368) / Freud, A. (1937). <a href="https://archive.org/details/a-freud-1937-ego"><em>The Ego and the Mechanisms of Defence</em></a> (checked in the text of the English translation. p.123)</p>
+</div></details><details class="sec" id="how-has-the-literature-on-psychological-safety-written-about-shame-anxiety" open><summary>How has the literature on psychological safety written about shame anxiety?</summary><div class="secbody">
+
+
+<p>In pjdhiro's view, one of the anxieties that defenses try to protect against is shame anxiety. This chapter looks at how the literature on psychological safety has written about the anxiety of being shamed, in the order of Schein's two anxieties and Edmondson's definition for teams. At the end, we look at Brown, who spoke about shame and vulnerability from outside the literature on psychological safety.</p>
+<h3 id="scheins-1995-two-anxieties">Schein's (1995) two anxieties</h3>
+<p>In a 1995 working paper on organizational culture, Schein paired two anxieties: the anxiety about learning something new (learning anxiety) and the anxiety that one will not survive without changing (survival anxiety). Psychological safety is placed as the first condition for lowering learning anxiety: feeling that one can learn something new without losing one's sense of who one is or one's sense of competence. He also writes that when learning anxiety stays high, people become defensive, deny reality, rationalize, and blame others. Schein's view is that survival anxiety is usually already high enough, because people are told daily that their old habits no longer fit present reality, and that it is learning anxiety that should be lowered.</p>
+<h3 id="edmondsons-1999-definition-for-teams">Edmondson's (1999) definition for teams</h3>
+<p>It was Edmondson's 1999 paper that set psychological safety as a research term. It is defined as "a shared belief that the team is safe for interpersonal risk taking."</p>
+<p>The paper places the root of the idea in Schein and Bennis's 1965 book. Edmondson summarizes it as a book that argued for the need to create psychological safety so that people feel secure and capable of changing. Where the term came from was looked at in the chapter <a href="#history-of-the-term">History of the term</a> at the start of Part 2.</p>
+<p>The confidence that the team will not embarrass someone for speaking up is part of the content of the 1999 definition. The paper writes that admitting errors or asking for help carries the risk of being seen as incompetent and losing face, so people tend to hold back from such behavior.</p>
+<p>Alongside this, the same confidence includes not being rejected and not being punished. The paper has no word referring to physical safety. What it writes of as protected is protection from embarrassment, rejection and punishment, and being oneself, a sense of competence, and self-esteem.</p>
+<p>The confidence that one will not be embarrassed, rejected or punished is said to stem from mutual respect and trust. Psychological safety is also described as something that "involves but goes beyond interpersonal trust" and as a climate in which "people are comfortable being themselves." In the paper's discussion it is restated as a climate mixing trust, respect for each other's competence, and caring about each other as people. Edmondson's definition wraps not being punished, and being able to be oneself in respect and trust, within a single paragraph.</p>
+<p>The definition is not an individual's feeling but a belief shared by the team. The paper also writes that this belief is usually tacit, "taken for granted."</p>
+<p>The paper sets up and tests the hypothesis that team psychological safety promotes learning behavior. The examples of learning behavior it gives are seeking feedback, sharing information, asking for help, talking about errors, and experimenting.</p>
+<p>How this confidence tends to be received in a shrunken form in the workplace is looked at in <a href="#common-misunderstandings">Common misunderstandings</a> in Part 4.</p>
+<p>Sources: <a href="https://doi.org/10.2307/2666999">Edmondson (1999)</a> <em>Administrative Science Quarterly</em> 44(2):350–383 (checked in the text. Examples of learning behavior and the risks p.351; definition, confidence, trust and root p.354; hypothesis p.355; discussion p.375) / <a href="https://hdl.handle.net/1721.1/2581">Schein (1995)</a> <em>Organizational and managerial culture as a facilitator or inhibitor of organizational transformation</em>. MIT Sloan Working Paper 3831 (checked in the text. The two anxieties pp.4–5; defenses and daily information p.6; psychological safety pp.6–7)</p>
+<h3 id="browns-2010-shame-and-vulnerability">Brown's (2010) shame and vulnerability</h3>
+<p>One person who has spoken about shame from outside the literature on psychological safety is Brown, a qualitative researcher with a degree in social work. What we cite here is a 2010 talk in which she spoke about her own research, not a research paper.</p>
+<p>In the talk, Brown says shame is easily understood as the fear of disconnection: the fear that if people know or see some part of us, we will not be worthy of connection. In Edmondson's paper, the risk of embarrassment was written of as the risk of being seen as incompetent and losing face. Brown's way of putting it places the weight on falling out of relationships.</p>
+<p>Brown says that vulnerability lies at the core of shame and fear and of the struggle over whether we are worthy. At the same time, she says, it also seems to be where joy, creativity, belonging and love are born. What the people with a strong sense of worthiness had in common was that they embraced vulnerability, and she says that we usually numb vulnerability. This move of not feeling vulnerability can also be read as one of the <a href="#the-mind-has-ways-of-protecting-itself">defenses</a> (Claude's reading).</p>
+<p>Sources: <a href="https://www.ted.com/talks/brene_brown_the_power_of_vulnerability">Brown (2010)</a> The power of vulnerability. TEDxHouston, June 2010 (checked in TED's official transcript)</p>
+</div></details><details class="sec" id="defenses-differ-in-maturity" open><summary>Defenses differ in maturity</summary><div class="secbody">
+
+
+<p>The view of pjdhiro quoted in the overview sees a state of mature defense as what we call high psychological safety. This chapter looks at what can be said about the maturity of defenses from this page's sources: the arrangement of the kinds and levels of defense; how immature defenses relate to personality disorders and workplace bullying; and how much defense is needed, in that order.</p>
+<p>As we saw in the chapter <a href="#the-mind-has-ways-of-protecting-itself">The mind has ways of protecting itself</a>, Vaillant distinguished "mature" defenses such as sublimation and humor from "immature" defenses such as projection, and held that which one uses makes a great difference to mental health. He also writes that when anxiety and loneliness are eased by empathy, "immature" defenses can come undone.</p>
+<p>In the table of stages of development in Part 1, the later the stage, the more mature the defenses listed. In the Self-protective row are fantasy, acting out and projection; in the Strategist row, suppression, positive reframing, altruism and non-hostile humor; in the Construct-aware and later row, sublimation, non-hostile humor and bracketing. Cook-Greuter also writes that the later the stage, the less need there is for defensive moves.</p>
+<h3 id="kinds-and-levels-of-defense">Kinds and levels of defense</h3>
+<p>The table arranging the kinds and levels of defense is on the page <a href="defense-mechanisms.html#防衛の種類と水準">What Are Psychological Defense Mechanisms</a> (in Japanese). Perry's Defense Mechanism Rating Scales arrange 30 defenses into seven levels and group them into three categories: immature, neurotic and mature. Each level is described by what it protects the mind from. The level that protects against the imminent threat of being punished or abandoned, and the level that protects self-esteem from the feelings of shame or helplessness produced by failure or criticism, are in the immature category. The most mature level is described as taking in stress without distortion, acknowledging one's own limits, and relying on help when it is available.</p>
+<h3 id="immature-defenses-personality-disorders-and-workplace-bullying">Immature defenses, personality disorders and workplace bullying</h3>
+<p>Vaillant writes that immature defenses are common in personality disorders, and produce behavior that looks irritating to those around. There is also research that depicts workplace bullying as defenses such as splitting and projection operating among the people who bully, the people who are bullied, and the organization. The figures and limits of that research, and a view that sets the severity and type of personality side by side, are looked at on the page <a href="defense-mechanisms.html#未熟な防衛は周りの人にどう現れるか">What Are Psychological Defense Mechanisms</a> (in Japanese).</p>
+<p>A paper reviewing research on the perpetration of bullying writes, citing earlier studies, that when a workplace's psychosocial safety climate (a shared perception that management prioritizes workers' psychological health) is strong, opportunities for aggression are held down. Psychosocial safety climate is defined as a concept separate from Edmondson's psychological safety (the belief that it is safe to take interpersonal risks). On the relation between the two, pjdhiro sees it as follows.</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro's view (translated by Claude):</strong>I think they're pointing at much the same thing. Because the individual and the organization interact.</p>
+</blockquote>
+<p>The relation between a person's defenses and the strength of the threat in the setting is looked at later, in the section <a href="#how-much-defense-is-needed">How much defense is needed</a>.</p>
+<p>Sources: <a href="https://doi.org/10.3389/fpsyg.2021.718440">Di Giuseppe &amp; Perry (2021)</a> <em>Frontiers in Psychology</em> 12:718440 (checked in the text. p.4) / <a href="https://doi.org/10.31887/DCNS.2011.13.2/gvaillant">Vaillant (2011)</a> (checked in the text. Section "Classification of defenses") / <a href="https://doi.org/10.4102/sajip.v38i2.994">Cilliers (2012)</a> <em>SA Journal of Industrial Psychology</em> 38(2), Art. 994 (checked in the text) / <a href="https://doi.org/10.3389/fpsyg.2026.1738277">Sui et al. (2026)</a> <em>Frontiers in Psychology</em> 17:1738277 (checked in the text. p.8)</p>
+<h3 id="how-much-defense-is-needed">How much defense is needed</h3>
+<p>If defenses differ in maturity, how much defense is needed should differ too. From the name of the term itself, pjdhiro raises the question as follows.</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro's question (translated by Claude):</strong>Going by the term psychological safety itself, you can infer both defending for the sake of safety, and being in a state that is safe even without defending, can't you?</p>
+</blockquote>
+<p>In Perry's rating scales, the most mature level is described as taking in internal and external stress without distortion, acknowledging one's own limits, and relying on help when it is available. The more immature the level, the more stress is attributed to the outside as unbearable, parts of reality are not acknowledged, and images of oneself and others are distorted. The degrees of maturity are arranged as degrees of how far a threat can be taken in without distortion.</p>
+<p>Even so, the mature level is also counted as a defense. Vaillant writes that even the most pathological defenses calm the mind, and sees defenses as coping responses, like fever. The sources we could read do not depict a state without defense. Brought close to the sources' language, "a state that is safe even without defending" can be read as close to the mature level at which a threat can be taken in without distortion.</p>
+<p>Which level of defense appears also depends on the strength of the threat. Vaillant writes that when empathy eases anxiety and loneliness, immature defenses fall apart. Perry's table also counts confiding in and relying on others as a mature defense. In research on workplace bullying, supervisors were more likely to abuse subordinates when their own identity was threatened, and job insecurity also intensified aggression. Schein writes that balancing the amount of threat produced by disconfirming information with enough psychological safety to take it in is the key to moving change forward (<a href="#1995-schein-looks-back-on-lewin">the 1995 section of the history of the term</a>). In this argument, psychological safety is placed as what lets the information be taken in without defending against it.</p>
+<p>This page reads the degree to which defense is needed as changing with both the strength of the threat in the setting and a person's ability to take in the threat without distortion. The view that a state of mature defense is what we call high psychological safety can be read as pointing to the mature end of this arrangement. We have not yet come across research that measured psychological safety and level of defense side by side in the same people or teams.</p>
+<p>Sources: <a href="https://doi.org/10.3389/fpsyg.2021.718440">Di Giuseppe &amp; Perry (2021)</a> (checked in the text. p.4, p.5) / <a href="https://doi.org/10.31887/DCNS.2011.13.2/gvaillant">Vaillant (2011)</a> (checked in the text. p.366, p.368) / <a href="https://doi.org/10.3389/fpsyg.2026.1738277">Sui et al. (2026)</a> (checked in the text. p.7) / <a href="https://hdl.handle.net/1721.1/2576">Schein (1995)</a> MIT Sloan Working Paper 3821 (checked in the text. p.5) / Cook-Greuter, S. R. (2013). <a href="https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1&#39;14%2097p%5B1%5D.pdf"><em>Nine Levels of Increasing Embrace in Ego Development</em></a> (pp.9–10, 27, 71–72, 84–85)</p>
+
+
+
+
+</div></details><div class="reader-turn"><p>In Part 2 we looked at a state without psychological safety as defense against anxiety. Shame anxiety was one of the anxieties within it. Defenses differed in maturity.</p>
+<p>In Part 3 we place the views needed to understand these two viewpoints.</p></div><div class="reader-part" id="part-3"><p class="reader-part__no">Part 3</p><p class="reader-part__title">To understand the two viewpoints</p></div><details class="sec" id="are-the-absence-of-threat-and-the-presence-of-cues-of-safety-the-same" open><summary>Are the absence of threat and the presence of cues of safety the same?</summary><div class="secbody">
+
+
+<p>Part 3 holds views that do not fit within the two viewpoints of defense against anxiety and stages of development, but are needed to understand them.</p>
+<p>We set side by side sources that have written of the absence of threat and the presence of cues of safety or trust as separate things. Edmondson's definition wrapped protection from embarrassment, rejection and punishment together with respect and trust in a single confidence. There is a view that sees these two as separate axes.</p>
+<blockquote class="reader-callout reader-request">
+<p><a id="ps-two-axes"></a><strong>pjdhiro's question (translated by Claude):</strong>I think there are two axes, something like polyvagal theory. Isn't Yamagishi saying something about reptiles?</p>
+</blockquote>
+<p>Porges, of polyvagal theory, wrote in a 2022 paper that feeling safe is not the same as the removal of threat. He also writes that the usual way of thinking has assumed that removing threat makes us feel safe, and implicitly treated removing it as enough. When cues of safety are present, the social engagement system is said to be able to dampen responses to threat.</p>
+<p>Other sources have two similar sides. We arrange five pairs into the side concerned with threat and the side of cues of safety or trust. This division is one made on this page.</p>
+<div class="tablefit cols-4">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>The pair in the source</th>
+<th>The side concerned with threat</th>
+<th>The side of cues of safety or trust</th>
+<th>How the two relate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Porges: threat removed / feeling safe</td>
+<td>Removing threat</td>
+<td>The presence of cues of safety, such as voice and facial expression</td>
+<td>There are states where the two mix, such as play and intimacy</td>
+</tr>
+<tr>
+<td>Yamagishi: assurance (anshin) / trust (shinrai)</td>
+<td>Assurance. Expectation in a situation where the incentive to betray has been removed by the system</td>
+<td>Trust. Expectation that relies on the other's character in a situation where the incentive to betray remains</td>
+<td>Both are expectations that "the other will not betray me," with different grounds. Experiments reported that people were likely not distinguishing the two</td>
+</tr>
+<tr>
+<td>Edmondson: protection from embarrassment, rejection and punishment / respect and trust</td>
+<td>Not being embarrassed, rejected or punished for speaking up</td>
+<td>Being able to be oneself in respect and trust</td>
+<td>Written as a single confidence, with its root placed in respect and trust. Separating the three verbs from the side of respect is this page's doing</td>
+</tr>
+<tr>
+<td>Maslow: safety needs / belongingness and love needs</td>
+<td>No physical danger; predictable order; the familiar; a guaranteed job</td>
+<td>A place in the group; affectionate relationships</td>
+<td>The order of the layers is not fixed, and they are partially satisfied at the same time</td>
+</tr>
+<tr>
+<td>Schein: survival anxiety / learning anxiety</td>
+<td>The anxiety that one will not survive without changing (the side where threat is present)</td>
+<td>Psychological safety that lowers learning anxiety. Being able to keep one's identity and sense of competence</td>
+<td>Survival anxiety is placed as something needed to set learning in motion</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>The "biological" in the question quoted in the section on physical safety in the chapter on common misunderstandings can be read, following the word "lower-order needs" that comes after it, as placed on the side of Maslow's safety needs; it can also be read, as in Porges's framework, as a state of the body's autonomic nervous system. The two are different ways of cutting. In Porges's framework, feeling safe is itself written of as a state of the body.</p>
+<p>In the texts of Yamagishi that we could check, words such as reptile, brain or biology do not appear. Yamagishi's "assurance" (anshin) is a word on the side of social systems: fixing relationships, monitoring, taking collateral, and so on.</p>
+<p>The word reptile appears in the debate around polyvagal theory (see the next "More"). Cook-Greuter, too, writes of defenses by dividing them into flight, fight and freeze coming from the reptilian brain, and psychological ones such as denial, projection and rationalization.</p>
+<p>Words that come out as the same kanji when translated into Japanese point to different sides in different sources. Porges's "safety" has its weight on the side of cues; Maslow's "safety" on the side of the absence of threat. Yamagishi's "anshin" (assurance) points to the side of systems, while the everyday Japanese word "anshin" points to a settled feeling. This may be one of the reasons what psychological safety points to keeps wavering. The view of survival signals and trust signals is written about in the chapter of <a href="love-driven-dev.html#ldd-signals">What I Want to Call Love-Driven Development</a> (in Japanese).</p>
+<p>Sources: <a href="https://doi.org/10.3389/fnint.2022.871227">Porges (2022)</a> <em>Frontiers in Integrative Neuroscience</em> 16:871227 (checked in the text. p.2, pp.8–9) / <a href="https://doi.org/10.1016/j.cpnec.2021.100069">Porges (2021)</a> <em>Comprehensive Psychoneuroendocrinology</em> 7:100069 (checked in the text. §5) / <a href="https://doi.org/10.14966/jssp.KJ00004224827">Terai, Morita &amp; Yamagishi (2003)</a> 「信頼と継続的関係における安心」 [Assurance in trust and continuing relationships; title translated by Claude] <em>Japanese Journal of Social Psychology</em> 18(3):172–179, in Japanese (checked in the text. Definitions p.173; distinction p.177) / <a href="https://doi.org/10.1037/h0054346">Maslow (1943)</a> <em>Psychological Review</em> 50(4):370–396 (checked in the text. pp.377, 379, 386, 388–389) / <a href="https://doi.org/10.2307/2666999">Edmondson (1999)</a> p.354 / <a href="https://hdl.handle.net/1721.1/2581">Schein (1995)</a> pp.5–7 / <a href="https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1&#39;14%2097p%5B1%5D.pdf">Cook-Greuter (2013)</a> p.9</p>
+<details class="acc"><summary>More — criticism of polyvagal theory</summary>
+
+<p>Polyvagal theory's account of the evolution of the nervous system is strongly disputed. A 2023 paper concluded that each of the theory's five premises is either untenable or unlikely. It also writes that reptiles, fish and birds have complex social behavior too, and that the claim that this is unique to mammals does not fit the evidence. Another paper says that the view of the brain as an onion, with new layers stacked on older ones, has long been rejected in neurobiology.</p>
+<p>Porges replied in 2026. He accepted that birds, reptiles and fish also have social behavior, and responded that whether it rests on the same autonomic basis as in mammals is a separate matter. The dispute continues.</p>
+<p>The criticisms we checked are aimed at the physiological and evolutionary account. They are not directly aimed at the distinction itself, that the removal of threat and feeling safe are different.</p>
+<p>Sources: <a href="https://doi.org/10.1016/j.biopsycho.2023.108589">Grossman (2023)</a> <em>Biological Psychology</em> 180:108589 (checked in the text of the author manuscript placed on Zenodo) / <a href="https://doi.org/10.1177/0963721420917687">Cesario, Johnson &amp; Eisthen (2020)</a> <em>Current Directions in Psychological Science</em> 29(3):255–260 (checked in the text of the version the authors placed on PsyArXiv. p.1) / <a href="https://doi.org/10.36131/cnfioritieditore20260111">Porges (2026)</a> <em>Clinical Neuropsychiatry</em> 23(1):113–128 (checked in the text)</p>
+</details>
+
+</div></details><details class="sec" id="how-do-trust-and-psychological-safety-differ" open><summary>How do trust and psychological safety differ?</summary><div class="secbody">
+
+
+<p>In 1999 Edmondson wrote that psychological safety "involves but goes beyond interpersonal trust." Then where do the two differ?</p>
+<p><a id="ps-trust-levels"></a>In a 2002 working paper, Edmondson writes of the difference from trust on three points: time frame, focus, and level of analysis. Psychological safety looks at the interpersonal consequences in the very near term. Trust is a matter of whether one gives others the benefit of the doubt. Psychological safety is a matter of whether others will give oneself the benefit of the doubt, and its focus is on oneself. A team member's words are quoted: "I don't have to wear a mask in this team…it's easy to be myself." Trust is said to concern mainly the relationship between two people, and psychological safety the group.</p>
+<p>Edmondson and Lei's 2014 review describes psychological safety as "people's perceptions of the consequences of taking interpersonal risks in a particular context such as a workplace." It also arranges the research into three levels: measured as an individual's experience, measured as a group's climate, and measured as an organization's average.</p>
+<p>The 1999 definition held that the confidence that one will not be embarrassed, rejected or punished stems from mutual respect and trust (<a href="#how-has-the-literature-on-psychological-safety-written-about-shame-anxiety">How has the literature on psychological safety written about shame anxiety?</a>). About the word trust that lies at that foundation, pjdhiro sees it as follows.</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro's view (translated by Claude):</strong>If it's rapport or trust, those are difficult concepts, difficult enough that Love-Driven Development is searching for them, so I think plain, simple words like reassurance and safety lead to a lot of misunderstanding.</p>
+</blockquote>
+<p>Trust itself is looked at in Part 4 of <a href="love-driven-dev.html#信頼と信仰や期待を人は自分の中で分けられるのか">What I Want to Call Love-Driven Development</a> (in Japanese), side by side with expectation, faith, idealization, assurance and dependence, and attachment.</p>
+<p>Sources: <a href="https://www.hbs.edu/ris/Publication%20Files/02-062_0b5726a8-443d-4629-9e75-736679b870fc.pdf">Edmondson (2002)</a> <em>Managing the risk of learning: Psychological safety in work teams</em>. HBS Working Paper 02-062 (checked in the text. pp.8–10) / <a href="https://doi.org/10.1146/annurev-orgpsych-031413-091305">Edmondson &amp; Lei (2014)</a> <em>Annual Review of Organizational Psychology and Organizational Behavior</em> 1:23–43 (checked in the text. pp.24–25)</p>
+
+
+
+
+</div></details><div class="reader-turn"><p>In Part 3 we looked at the views needed to understand the two viewpoints.</p>
+<p>In Part 4 we look at why workplace measures tend to miss the mark, one misunderstanding of the term at a time.</p></div><div class="reader-part" id="part-4"><p class="reader-part__no">Part 4</p><p class="reader-part__title">Why measures miss the mark</p></div><details class="sec" id="common-misunderstandings" open><summary>Common misunderstandings</summary><div class="secbody">
+
+
+<p>This chapter looks at how psychological safety tends to be received in the workplace, and at the phenomena from which those readings arise.</p>
+<p>The first four are shifts that occur on the side of being protected from shame and anxiety. The last two do not fit either viewpoint; they are shifts about how it is created and the conditions under which it works. The shift visible from the side of stages is what we saw at the end of Part 1: depending on the stage of those who push them, measures tend to take the shape of a single "right answer." That a difficult concept such as trust is received through plain words like reassurance and safety may also be one of the foundations of these shifts (pjdhiro's view quoted in the chapter <a href="#how-do-trust-and-psychological-safety-differ">How do trust and psychological safety differ?</a>).</p>
+<h3 id="that-safety-means-physical-safety">That safety means physical safety</h3>
+<p>The word "safety" is used, in everyday life and in the fields of accidents and health, to refer to physical safety. Some research in sport includes not being physically harmed in the definition.</p>
+<p>Read toward physical safety, psychological safety sounds like something close to the basic needs for staying alive.</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro's question (translated by Claude):</strong>It's psychologically safe, not biologically safe, right? Hasn't the nuance shifted, before we noticed, to taking care only of lower-order needs?</p>
+</blockquote>
+<p>In Japanese, there are examples of academic commentaries that render "safe" in the original as "anshin shite" (feeling reassured). The three Japanese academic commentaries we checked appeared in journals of safety engineering, of quality and safety in health care, and of occupational health. All three journals belong to fields concerned with preventing accidents and harm to health. However, we did not find material that directly supports the view that the Japanese word "anzen" (safety) pulls the reading toward physical safety. Where the commentaries appeared remains only a situational clue.</p>
+<p>In the papers on psychological safety we checked, no word refers to physical safety. What the 1999 definition writes of as protected was looked at in the chapter <a href="#how-has-the-literature-on-psychological-safety-written-about-shame-anxiety">How has the literature on psychological safety written about shame anxiety?</a></p>
+<p>Sources: <a href="https://doi.org/10.3389/fspor.2022.823488">Taylor, Collins &amp; Ashford (2022)</a> <em>Frontiers in Sports and Active Living</em> 4:823488 (checked in the text) / <a href="https://doi.org/10.34354/ohpfrev.38.1_53">Otsuka, Y. &amp; Ochiai, Y. (2025)</a> 「心理的安全性と産業保健における意義」 <em>Occupational Health Review</em> 38(1):53–77, <a href="https://doi.org/10.11397/jsqsh.15.366">Yamaguchi, H. (2020)</a> 「組織の『心理的安全性』構築への道筋」 <em>Journal of the Japanese Society for Quality and Safety in Healthcare</em> 15(4):366–371, <a href="https://doi.org/10.18943/safety.60.1_9">Yamauchi, K. (2021)</a> 「現場のチームワークを高める心理的安全性」 <em>Journal of Japan Society for Safety Engineering</em> 60(1):9–14 (all in Japanese; all checked in the text)</p>
+<h3 id="that-you-are-safe-as-long-as-you-are-not-punished">That you are safe as long as you are not punished</h3>
+<p>A system of punishment is visible, and it is easy to check whether one has put it in place.</p>
+<p>Within research, too, the wording of the definition keeps moving. A 2022 paper reviewing research in sport pointed out that the definitions used in sport have been rewritten into the perception of being protected from psychological harm, or of not being physically harmed and being accepted and respected. It also writes that what was set as a group belief has turned into an individual-level concept.</p>
+<p>On the side of measurement, too, what is pointed to is not aligned. Of the 153 quantitative studies counted by a 2023 review, 40 measured at the individual level, 79 at the group level, 28 at the organizational level, and 6 did not state the level. The review's authors themselves write that there are small differences in conceptualization and measurement. In a study of health-care teams, there is an example of questions about the team being reworded into a form that asks for individual evaluation.</p>
+<p>The 1999 definition writes, alongside not being punished, of not being embarrassed, not being rejected, and being able to be oneself in respect and trust.</p>
+<p>On where the misreading occurs when it is read toward punishment, pjdhiro sees it as follows.</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro's view (translated by Claude):</strong>Edmondson puts weight on psychological defense against weakness and wretchedness. I think what causes the misunderstanding is that some people, from the word safety, take it at the entrance to be a matter of wrongdoing, sin, gratitude or apology.</p>
+</blockquote>
+<p>The view that separates wrongdoing from weakness is one pjdhiro took from Shinya Nitta's way of dividing them (<a href="anxiety.html">What Is Anxiety</a>, in Japanese).</p>
+<p>Edmondson's 1999 paper places the reasons why people do not admit errors or ask for help in appearing incompetent, damaging their image, and losing face. Punishment, too, she writes of in the form of well-intentioned interpersonal risks not being punished. The paper has no words for sin, apology or wrongdoing. However, the word the paper uses is not shame but embarrass.</p>
+<p>Research on emotion has distinguished shame, in which one's whole self is negated, from guilt, in which a specific act is negated. Shame is said to be bound up with hiding, denying and turning blame outward; guilt with apologizing and making amends. The two can be distinguished, but it is also written that when guilt spreads to the whole self, it can fuse with shame. Defenses that protect self-esteem from shame are, in the table on the page <a href="defense-mechanisms.html#防衛の種類と水準">What Are Psychological Defense Mechanisms</a> (in Japanese), in the immature category, at the level of minor image-distorting defenses.</p>
+<p>On the closeness of shame and guilt, pjdhiro sees it as follows.</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro's view (translated by Claude):</strong>Shame and guilt are as closely linked as two sides of a coin. I think that is something that could even be a hint at the very essence of the mind, but here, an emotion that exists as something non-dual is one aspect, and it is strictly something at the level of consciousness. For example, I think a person who is angry is angry without knowing, even themselves, whether it is a lid on sadness, a defense against wretchedness, or a way of coping with the anxiety that the defense is about to peel away.</p>
+</blockquote>
+<p>The directions of shrinking may include one that leans toward being protected from harm and one that moves from a group belief to the individual level; perhaps there is not just one direction.</p>
+<p>Sources: <a href="https://doi.org/10.2307/2666999">Edmondson (1999)</a> (checked in the text. Definition p.354; image and face pp.351–352, 355; punishment of well-intentioned risks pp.376–377) / <a href="https://doi.org/10.1146/annurev.psych.56.091103.070145">Tangney, Stuewig &amp; Mashek (2007)</a> <em>Annual Review of Psychology</em> 58:345–372 (checked in the text of the author manuscript <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3083636/">PMC3083636</a>. Sections "What's the difference between shame and guilt?", "Hiding versus amending", "Psychological symptoms") / <a href="https://doi.org/10.3389/fspor.2022.823488">Taylor, Collins &amp; Ashford (2022)</a> / <a href="https://doi.org/10.1146/annurev-orgpsych-120920-055217">Edmondson &amp; Bransby (2023)</a> <em>Annual Review of Organizational Psychology and Organizational Behavior</em> 10:55–78 (checked in the text. Breakdown by level p.59; variation p.69) / <a href="https://doi.org/10.1186/s12874-020-01066-z">O'Donovan, Van Dun &amp; McAuliffe (2020)</a> <em>BMC Medical Research Methodology</em> 20 (checked in the text)</p>
+<h3 id="that-it-means-being-kind-with-no-rigor">That it means being kind, with no rigor</h3>
+<p>Friendliness and ease of speaking up are qualities easy to see from the outside. In 1999 Edmondson wrote that psychological safety is neither a careless permissiveness nor a constantly positive feeling. In 2002 she wrote that it is not a cozy setting in which members are necessarily close friends, nor the absence of pressure or problems.</p>
+<p>Sources: <a href="https://doi.org/10.2307/2666999">Edmondson (1999)</a> p.354 / <a href="https://www.hbs.edu/ris/Publication%20Files/02-062_0b5726a8-443d-4629-9e75-736679b870fc.pdf">Edmondson (2002)</a> p.7</p>
+<p>Argyris wrote of the way kindness stops learning as an organizational defense. In a 1987 paper he defined organizational defensive routines as policies or actions that keep individuals or organizations from experiencing threat or embarrassment, and at the same time prevent them from finding and reducing its causes. He also writes that their source lies in social virtues taught early in life.</p>
+<p>The example he gives is the premise that people should be caring and supportive. Under this premise, Argyris writes, caring and support are taken to mean saying what the other can hear and wants to hear. As a result, he says, roundabout handling, and messages in which what is said and what is shown do not match, increase.</p>
+<p>Sources: <a href="https://doi.org/10.21825/philosophica.82481">Argyris (1987)</a> Seeking truth and actionable knowledge: How the scientific method inhibits both. <em>Philosophica</em> 40 (checked in the text of the <a href="http://www.philosophica.ugent.be/article/82481/galley/202295/download/">open version of the Ghent University journal</a>. Definition of defensive routines and social virtues p.6; the premise of caring and support p.10)</p>
+<h3 id="that-it-is-about-ones-own-reassurance-and-safety">That it is about one's own reassurance and safety</h3>
+<p>In the section on physical safety, we saw examples of Japanese commentaries that render "safe" as "feeling reassured." Attention also turns to whose reassurance it is taken to be.</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro's view (translated by Claude):</strong>Isn't everyone conveniently interpreting it as "my own reassurance and safety"? In order to act selfishly.</p>
+</blockquote>
+<p>The 1999 definition is not an individual's feeling but a belief shared by the team. It was studied as something that promotes behavior through which a team learns (asking for help, talking about errors, and so on). Reading it only as being protected oneself can be read as dropping both of these.</p>
+<p>The shrinking from a group belief to the individual level, seen in the section <a href="#that-you-are-safe-as-long-as-you-are-not-punished">That you are safe as long as you are not punished</a>, may lie just before this reading. The reassurance and safety sought in a spirit of self-protection or opportunism (the chapter <a href="#the-mind-has-ways-of-protecting-itself">The mind has ways of protecting itself</a>) can also be read as a matter running in the same direction.</p>
+<p>Sources: <a href="https://doi.org/10.2307/2666999">Edmondson (1999)</a> p.351, p.354, p.355</p>
+<h3 id="that-it-can-be-created-by-declaring-please-say-anything">That it can be created by declaring "Please say anything"</h3>
+<p>A declaration is a visible move that can be made at once. One Japanese commentary writes that fostering a team's psychological safety is not only a matter of setting up a peaceful environment where people can speak with reassurance.</p>
+<p>The 1999 paper has a sentence saying that even when a team's tacit beliefs are sometimes discussed explicitly, the content of psychological safety does not change. That is as far as the original goes; it does not touch on whether it can be created by declaration. In the definition, this belief is usually tacit, and is a confidence that stems from respect and trust.</p>
+<p>Sources: <a href="https://doi.org/10.2307/2666999">Edmondson (1999)</a> p.354 / <a href="https://doi.org/10.11397/jsqsh.15.366">Yamaguchi, H. (2020)</a> (in Japanese)</p>
+<h3 id="that-higher-is-better-and-it-is-needed-everywhere">That higher is better and it is needed everywhere</h3>
+<p>Much research shows links with learning and performance, and it has been widely introduced. On the other hand, the 2014 review raises the possibility that, over time, people become too comfortable with each other and the emphasis drifts away from work and learning. It also writes that excessive psychological safety may lead people to spend time on things that do not matter, or to lose the motivation to learn.</p>
+<p>Then is psychological safety needed in the same way in every kind of work and organization?</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro's view (translated by Claude):</strong>In military-type organizations that treat individuals like parts, I think psychological safety is low, but that may work better. I think it's effective when dealing with intangible things like services and design (just a hunch).</p>
+</blockquote>
+<p>The research side also has clues about the conditions under which it works. Edmondson's 1999 paper writes that, in very routine, repetitive work, learning behavior can lower efficiency and harm performance. At the same time, it goes on to say that even teams doing routine production need learning behavior for self-management and occasional process improvement. The 2014 review wrote that psychological safety carries more weight when there is uncertainty and creativity or collaboration is needed. The reason given is that without elements of uncertainty or collaboration, the need to face interpersonal risk is not prominent in the first place.</p>
+<p>The review's angle is whether there is uncertainty and whether creativity or collaboration is needed; it does not cut by tangible versus intangible. Much work in services and design can be read as meeting this condition. Some work, such as research and development or surgery, deals with tangible things and still meets the condition, and some work, such as counter procedures, is intangible and routine. The two angles overlap a great deal, but are not the same.</p>
+<p>Within the range we could check, we found no research that measured psychological safety and directly showed that performance was better when it was lower.</p>
+<p>Then can the same be said of situations where errors or misconduct must be stopped?</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro's view (translated by Claude):</strong>If you're talking in the context of compliance, misconduct or governance, that would be different, though.</p>
+</blockquote>
+<p>The research so far has looked at speaking up directed toward learning and creativity. Speaking up in the direction of stopping and reporting errors and dangers seems, judging from the example of aviation, to have been treated as needed regardless of the nature of the work. Crew resource management training in aviation began by correcting the lack of assertiveness of junior crew members and the authoritarian behavior of captains, and later moved toward treating error as normal and managing it. Training in the leadership role that comes with command was also created for new captains.</p>
+<details class="acc"><summary>More — psychological safety in the military</summary>
+
+<p>A 2024 paper by researchers at the U.S. Military Academy wrote that psychological safety that is too high in the military might create the false impression that decisions are open to debate, and might undermine discipline. It is a conceptual paper without new data. Its conclusion was to raise psychological safety while balancing it with discipline and accountability. It also writes that leading within a hierarchy is not the same as leading in an authoritarian way.</p>
+<p>A 2026 study of 292 people working in a military hospital in Ghana found that psychological safety was linked, through trust in commanders, to thriving at work. What it measured as an outcome was thriving, not job performance. The view that a rank structure can suppress open dialogue is written as background in the introduction, and is not a result of the study.</p>
+<p>Sources: <a href="https://doi.org/10.58315/jcld.v11.288">Swain et al. (2024)</a> <em>Journal of Character &amp; Leadership Development</em> 11(2):55–67 (checked in the text. pp.55, 59, 62) / <a href="https://doi.org/10.3389/fpsyt.2026.1912314">Nubuor et al. (2026)</a> <em>Frontiers in Psychiatry</em> 17:1912314 (checked in the text)</p>
+</details>
+
+<p>Sources: <a href="https://doi.org/10.2307/2666999">Edmondson (1999)</a> p.354 / <a href="https://doi.org/10.1146/annurev-orgpsych-031413-091305">Edmondson &amp; Lei (2014)</a> p.36, pp.39–41 / <a href="https://doi.org/10.1207/s15327108ijap0901_2">Helmreich, Merritt &amp; Wilhelm (1999)</a> <em>International Journal of Aviation Psychology</em> 9(1):19–32 (checked in the text of the authors' version)</p>
+</div></details><details class="sec" id="so-what-should-we-do" open><summary>So what should we do?</summary><div class="secbody">
+
+
+<p>So far we have looked at why measures tend to miss the mark, one misunderstanding at a time. At the end of Part 1, we saw that depending on the stage of those who push them, measures tend to take the shape of a single "right answer." Then what should we do?</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro's view (translated by Claude):</strong>One solution is to have the higher-order perspective of the stages of development through metacognition, and I thought that's why mindfulness and meditation have become popular. My aim is less relaxation or concentration than something like growth or purification at a more basic level.</p>
+</blockquote>
+<p>pjdhiro's view of metacognition and stages of development also appears in the section of <a href="love-driven-dev.html#ldd-use-3">What I Want to Call Love-Driven Development</a> (in Japanese) on how far theories and common sense work. The stability felt beyond metacognition is also written about <a href="love-driven-dev.html#ldd-love-umbilical">on the same page</a> (in Japanese). How metacognition and meditation relate to stages of development has not yet been checked against sources on this page.</p>
+<p>There is also an argument that tried to bring attention to one's own reactions into a group's conversation. In 1991 Bohm and colleagues wrote a proposal for dialogue. What is placed at the core of dialogue is the suspension of thoughts, impulses and judgments. Suspension is said to be neither repressing reactions nor postponing them. It is bringing reactions, feelings and opinions out where they can be seen, within oneself and by others, and continuing to attend to them. They write that the movement of thought then slows down, and the structure of what we do automatically comes into view.</p>
+<p>Bohm and colleagues also touch on the difficulty of holding dialogue in existing organizations. In an organization, they write, there may be a fear of voicing thoughts that could be seen as criticism of those above or of the culture's norms. So dialogue in an organization would begin by exploring the suspicion and fear that taking part arouses. They do not use the term psychological safety. Suspension runs in the opposite direction from a defense that keeps one from feeling anxiety, and in asking us to notice our reactions it can be read as close to the view of metacognition above (Claude's reading).</p>
+<p>Sources: Bohm, Factor &amp; Garrett (1991). <em>Dialogue — A Proposal</em> (checked in the text of a <a href="https://www.capacitie.org/content/dialogue/DialogueProposal.pdf">copy</a> whose non-commercial distribution the authors permitted. Suspension: section "How to start a Dialogue"; fear in organizations: section "Dialogue in Existing Organizations")</p>
+<p>There is also an argument that tried to make development part of the daily systems of the organization. In a 2016 book, the developmental psychologists Kegan, Lahey and colleagues wrote that in ordinary organizations many people are doing a "second job" that nobody pays them for: covering weaknesses, managing how they appear to others, hiding inadequacies, uncertainties and limitations. They also write that people are built to protect themselves, but equally built to grow psychologically.</p>
+<p>The authors saw the three organizations taken up in the book as having created cultures that are safe enough and demanding enough, where everyone has stopped hiding, and called them Deliberately Developmental Organizations (DDOs). Theories of adult development are said to show the mechanisms by which, under such organizational practices, people bring to light, face, and move beyond the assumptions that bind them and their defensive routines. In placing safety and demand as a pair, this can be read as running in a different direction from the reading in Part 4, being kind, with no rigor (Claude's reading).</p>
+<p>Sources: Kegan, Lahey, Fleming, Miller &amp; Helsing (2016). <em>An Everyone Culture: Becoming a Deliberately Developmental Organization</em>. Harvard Business Review Press (checked in the text of the <a href="https://developmentaledge.com/wp-content/uploads/2026/06/An-Everyone-Culture-Introduction-Chapter.pdf">introduction</a> placed on the site of The Developmental Edge, of which co-author Fleming is a co-founder. The second job p.1; protecting and growing p.2; DDO pp.3–4)</p>
+<p>The military paper seen in Part 4's section "That higher is better and it is needed everywhere" concluded that psychological safety should be raised while being balanced with discipline and accountability. Taking up this balance, pjdhiro sees it as follows.</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro's view (translated by Claude):</strong>Balance matters. I think psychological safety too is probably a one-sided cut, like the blind men and the elephant. In other words, I'm looking for its driving source. That's why I'm digging into "What is trust?"</p>
+</blockquote>
+<p>The work of digging deep into trust is going on in Part 4 of <a href="love-driven-dev.html#信頼と信仰や期待を人は自分の中で分けられるのか">What I Want to Call Love-Driven Development</a> (in Japanese), in the form of comparing trust one by one with expectation, faith, idealization, assurance and dependence, and attachment.</p>
+
+
+</div></details><div class="reader-part" id="part-5"><p class="reader-part__no">Appendix</p></div><details class="sec" id="open-questions"><summary>Open questions</summary><div class="secbody">
+<p>This chapter lists the questions that, within the range we searched, have not been answered.</p>
+<ul>
+<li>In military-type organizations that treat individuals like parts, does lower psychological safety work better?</li>
+<li>How far do the view that it works in work dealing with intangible things and the review's angle, that it carries more weight in work with uncertainty that calls for creativity or collaboration, overlap?</li>
+<li>Are there organizations that fit each stage?</li>
+<li>Can speaking up in the direction of stopping errors and misconduct be handled with the same words as speaking up directed toward learning and creativity?</li>
+<li>Did Schein and Bennis borrow the term "psychological safety" from Rogers?</li>
+<li>What other findings complement the two viewpoints? For example, the psychology of shame and guilt, attachment, group dynamics.</li>
+<li>How does the stage of development of those who push measures show in the shape of the measures and rules?</li>
+<li>Do metacognition and meditation lead to having the higher-order perspective of the stages of development?</li>
+<li>Does the state called high psychological safety overlap with a state of defense at the mature level?</li>
+<li>After idealization peels away and satisfaction or psychological safety falls, what decides whether it heads toward breaking up or toward a safety like resignation?</li>
+</ul>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html?lang=en">Project Design Theory</a> ・
+                <a href="love-driven-dev.html">What I Want to Call Love-Driven Development β</a> (in Japanese) ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

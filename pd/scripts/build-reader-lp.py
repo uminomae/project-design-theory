@@ -83,6 +83,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 英語版（違和感帳 i20261113113814dxq・2026-11-14）。日本語の正本を直したら、同じ作業でこちらも直す
+        ROOT / "knowledge/research/psychological-safety/READER-psychological-safety-en.md",
+        ROOT / "scripts/reader-psychological-safety-en-template.html",
+        ROOT / "reader/psychological-safety-en.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/management-drivers/READER-management-drivers.md",
         ROOT / "scripts/reader-management-drivers-template.html",
         ROOT / "reader/management-drivers.html",
@@ -378,7 +385,8 @@ def build(SRC: Path, TPL: Path, OUT: Path, STYLE: str) -> None:
         # pjdhiro 本人の言葉（「pjdhiro の問い：」等で始まる段落）は gravity-love と同じ引用カードに載せる（#20）
         html = re.sub(
             # 段落の頭にページ内リンクの印（<a id="…"></a>）があっても、引用カードに載せる（#96・2026-11-10）
-            r"(?<!<blockquote class=\"reader-callout\">\n)<p>((?:<a id=\"[^\"]*\"></a>)?<strong>pjdhiro の[^<：]{1,8}：</strong>.*?)</p>",
+            # 英語版は「pjdhiro's view (translated by Claude):」の形（2026-11-14）
+            r"(?<!<blockquote class=\"reader-callout\">\n)<p>((?:<a id=\"[^\"]*\"></a>)?<strong>(?:pjdhiro の[^<：]{1,8}：|pjdhiro's [^<:]{1,40}:)</strong>.*?)</p>",
             r'<blockquote class="reader-callout reader-request">\n<p>\1</p>\n</blockquote>',
             html, flags=re.S,
         )
