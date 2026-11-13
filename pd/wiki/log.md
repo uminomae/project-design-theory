@@ -877,3 +877,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ（`cross-refs/awareness-space-overview`・`concepts/抱持`）
 - sources: `as/index.html`（調べてきたことの一覧に「神経系の分かれ方と二つの信号」を足した版）・`ks/index.html`（いろんな引き算の章と畳みを並べ直した版）
 - pages: 概観は、記録の数を十六本にし、最後の記録が何を問い何を見るかを一文で足した。抱持は、ks の直しが引き算の例の並べ替えと足しだけで抱持の言い方に触れないので本文を変えず、checked を書いた
+
+## [2026-11-14] compile | Love 駆動開発・プロジェクトデザイン・Concept-Entity Map（読み物の第四部の組み直しとメニューの「読み物」欄）
+- scope: 3 ページ（`concepts/Love 駆動開発`・`プロジェクトデザイン`・`cross-refs/concept-entity-map`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第四部を「Love の手前で、心は信頼と安心をどう感じているか」に組み直し、創造の章に海のたとえと五つの事例、止観の bzero() のたとえを足した版）・`pd/src/content/site-data.mjs`（メニューに「読み物」の欄を足した版）
+- pages: Love 駆動開発は、第四部の流れ（心の前提の五つ・似たものとの違い・信頼と安心の輪郭・段階と性格の見直し）を「Love の手前で：信頼と安心」の節にまとめ、まだ分からないことの段を短くした。止観の道筋と bzero() のたとえ、五段階の海のたとえと五つの事例を足した。プロジェクトデザインと Concept-Entity Map は、メニューの直しが本文の材料（冒頭のページ・調査ノート）に触れないので本文を変えず、compiled を今日にした

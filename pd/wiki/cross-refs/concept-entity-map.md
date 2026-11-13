@@ -23,7 +23,7 @@ source:
     path: "knowledge/schema/core-definitions.md"
   - repo: "ks"
     path: "knowledge/text/foundation/phase1-summary.md"
-compiled: "2026-11-12"
+compiled: "2026-11-14"
 tags: [cross-ref, map]
 status: 暫定
 review_state: 未レビュー
