@@ -43,9 +43,15 @@ date: 2026-11-09
 
 </details>
 
-<details class="pd-column" id="ldd-dots"><summary>点と点は、振り返ってつながる</summary>
+<details class="pd-column" id="ldd-dots"><summary>点と点は、振り返ってつながる<span class="pd-column__sub">スティーブ・ジョブズのスピーチ</span></summary>
 
 pjdhiro は、一人の中で点がつながっていくことを、スティーブ・ジョブズが[スタンフォード大学の卒業式のスピーチ](https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says)（2005 年）で話した、点と点は先を見てつなぐことはできず、振り返ってつなぐしかない、という話に近いと見ています。
+
+振り返ってつながる点と点に、pjdhiro は次のたとえを添えています。
+
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro のたとえ：</strong>北極星に向かって、取り巻くように、それは Love と呼びたいものの一つの喩えです。</p>
+</blockquote>
 
 </details>
 

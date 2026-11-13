@@ -253,6 +253,14 @@
     font-size: 0.9rem;
 }
 
+/* 寄り道の題の副題（pjdhiro 2026-11-13・違和感帳「点と点は、振り返ってつながる　のサブタイトルで　スティーブ・ジョブスのスピーチ　といれて」） */
+.reader-article details.pd-column > summary .pd-column__sub {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--mute);
+    margin-top: 0.15rem;
+}
+
 .reader-article details.pd-column > summary::before {
     color: var(--mute);
 }
