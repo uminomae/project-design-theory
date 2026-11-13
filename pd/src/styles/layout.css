@@ -125,7 +125,10 @@
     letter-spacing: 0.05em;
 }
 
-.lang-toggle button {
+/* 読み物の日英は別のファイルなので、切り替えは a 要素（リンク）で置く。見た目は button と同じ（2026-11-14） */
+.lang-toggle button,
+.lang-toggle a {
+    text-decoration: none;
     border: none;
     background: transparent;
     padding: 0.35rem 0.95rem;
@@ -138,11 +141,13 @@
     transition: all 0.3s ease;
 }
 
-.lang-toggle button.active {
+.lang-toggle button.active,
+.lang-toggle a.active {
     background: var(--ink);
     color: var(--white);
 }
 
-.lang-toggle button:hover:not(.active) {
+.lang-toggle button:hover:not(.active),
+.lang-toggle a:hover:not(.active) {
     color: var(--ink);
 }

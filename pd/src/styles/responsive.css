@@ -37,6 +37,7 @@
 .glow-link,
 .menu-toggle,
 .lang-toggle button,
+.lang-toggle a,
 .about-trigger,
 .modal__close {
     min-height: 44px;
