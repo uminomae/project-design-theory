@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/personality.html を直接編集しないでください。
+  正本:   knowledge/research/personality/READER-personality.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「性格とは」のページです。性格（パーソナリティ）を、心理学がどう言ってきたかで見る。持続する特徴と振る舞いのまとまりとしての定義、型で分ける見方と特性（ビッグファイブ）で測る見方、パーソナリティ障害の分け方（DSM-5 の十の型、ICD-11 の重さと特性の領域）。そのうえで、パーソナリティ障害の分類とエニアグラム（リソたち）の型が似ているという pjdhiro の見方を、似ていると見る研究（ナランホの理論・型の尺度と障害の相関）と、検討する研究（対応は一対一でない・九つの因子が出ない）から見る。pjdhiro の見方（性格は心理防衛の強弱・傾向とも言える。リソのエニアグラムは心理の概念共有に実践で最も有効だった）を引く。第三部「pjdhiro が注目する使い方」は工事中。
+  研究の説明は Claude が原典から書いた要約。載せた出典（APA Dictionary of Psychology・Hook ら 2021・Alexander & Schnipke 2020・Yilmaz ら 2016・Bach ら 2022・Samuel & Widiger 2008）は本文で照合し、各章の「出典」の畳みに頁や節を添えている。Hook ら 2021 は上げた人の分からない出版社の版の PDF の写しで読んだ。表の訳は Claude の訳。「と読めます」「このページの読み」の文は Claude の読み。
+  pjdhiro 本人の言葉は「pjdhiro の見方：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>性格とは | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/personality.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="性格（パーソナリティ）を、心理学がどう言ってきたかで見る。持続する特徴と振る舞いのまとまりとしての定義、型で分ける見方と特性（ビッグファイブ）で測る見方、パーソナリティ障害の分け方（DSM-5 の十の型、ICD-11 の重さと特性の領域）。そのうえで、パーソナリティ障害の分類とエニアグラム（リソたち）の型が似ているという pjdhiro の見方を、似ていると見る研究（ナランホの理論・型の尺度と障害の相関）と、検討する研究（対応は一対一でない・九つの因子が出ない）から見る。">
+    <meta property="og:title" content="性格とは">
+    <meta property="og:description" content="性格（パーソナリティ）を、心理学がどう言ってきたかで見る。持続する特徴と振る舞いのまとまりとしての定義、型で分ける見方と特性（ビッグファイブ）で測る見方、パーソナリティ障害の分け方（DSM-5 の十の型、ICD-11 の重さと特性の領域）。そのうえで、パーソナリティ障害の分類とエニアグラム（リソたち）の型が似ているという pjdhiro の見方を、似ていると見る研究（ナランホの理論・型の尺度と障害の相関）と、検討する研究（対応は一対一でない・九つの因子が出ない）から見る。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/personality.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="性格とは">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-14">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "性格とは",
+          "description": "性格（パーソナリティ）を、心理学がどう言ってきたかで見る。持続する特徴と振る舞いのまとまりとしての定義、型で分ける見方と特性（ビッグファイブ）で測る見方、パーソナリティ障害の分け方（DSM-5 の十の型、ICD-11 の重さと特性の領域）。そのうえで、パーソナリティ障害の分類とエニアグラム（リソたち）の型が似ているという pjdhiro の見方を、似ていると見る研究（ナランホの理論・型の尺度と障害の相関）と、検討する研究（対応は一対一でない・九つの因子が出ない）から見る。",
+          "keywords": "性格, パーソナリティ, 類型論, 特性論, ビッグファイブ, 五因子モデル, パーソナリティ障害, DSM-5, ICD-11, エニアグラム, リソ, ナランホ, 防衛機制, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/personality.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/personality.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-14",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "パーソナリティ"}, {"@type": "Thing", "name": "パーソナリティ障害"}, {"@type": "Thing", "name": "エニアグラム"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「性格とは」のページです（工事中）。性格（パーソナリティ）を、心理学がどう言ってきたかで見る。持続する特徴と振る舞いのまとまりとしての定義、型で分ける見方と特性（ビッグファイブ）で測る見方、パーソナリティ障害の分け方（DSM-5 の十の型、ICD-11 の重さと特性の領域）。そのうえで、パーソナリティ障害の分類とエニアグラム（リソたち）の型が似ているという pjdhiro の見方を、似ていると見る研究（ナランホの理論・型の尺度と障害の相関）と、検討する研究（対応は一対一でない・九つの因子が出ない）から見る。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>性格とは</h1>
+                <p class="reader-subtitle">型と特性、パーソナリティ障害とエニアグラム</p>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/personality/READER-personality.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="psychological-safety.html">心理的安全性とは</a> ・
+                <a href="anxiety.html">不安とは</a> ・
+                <a href="developmental-stages.html">精神の発達段階とは</a> ・
+                <a href="defense-mechanisms.html">心理的防衛機制とは</a> ・
+                <a href="influences-psychology.html">影響を受けた心理学</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
