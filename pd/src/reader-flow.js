@@ -93,21 +93,23 @@
   }
 
   /* 部の区切り（.reader-part・build-reader-lp.py が <!--PART:--> から作る）は、目次で章の上の行にする */
+  /* 部の中の章の束（.reader-lens・<!--LENS:-->）も、目次で章の上の一段下げた行にする */
   var partOf = new Map();
-  [].slice.call(document.querySelectorAll('.reader-part')).forEach(function (pt) {
+  [].slice.call(document.querySelectorAll('.reader-part, .reader-lens')).forEach(function (pt) {
     var nx = pt.nextElementSibling;
     while (nx && !(nx.matches && nx.matches('details.sec'))) nx = nx.nextElementSibling;
-    if (nx) partOf.set(nx, pt);
+    if (nx) { if (!partOf.has(nx)) partOf.set(nx, []); partOf.get(nx).push(pt); }
   });
 
   secs.forEach(function (sec, i) {
-    var pt = partOf.get(sec);
-    if (pt) {
+    (partOf.get(sec) || []).forEach(function (pt) {
+      var isLens = pt.classList.contains('reader-lens');
       var pli = document.createElement('li');
-      pli.className = 'toc-part';
+      pli.className = isLens ? 'toc-part toc-lens' : 'toc-part';
       var pa = document.createElement('a');
       pa.href = '#' + pt.id;
-      var no = pt.querySelector('.reader-part__no'), ti = pt.querySelector('.reader-part__title');
+      var cls = isLens ? 'reader-lens' : 'reader-part';
+      var no = pt.querySelector('.' + cls + '__no'), ti = pt.querySelector('.' + cls + '__title');
       pa.textContent = (no ? no.textContent : '') + (ti ? (EN ? ': ' : '　') + ti.textContent : '');
       pa.addEventListener('click', function (e) {
         e.preventDefault();
@@ -117,7 +119,7 @@
       });
       pli.appendChild(pa);
       ol.appendChild(pli);
-    }
+    });
     var id = sec.id || ('sec-' + (i + 1));
     sec.id = id;
     var sum = sec.querySelector(':scope>summary');

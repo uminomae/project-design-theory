@@ -85,6 +85,9 @@
     letter-spacing: 0.04em;
 }
 :is(body.reader-flow, body.home-toc) #toc li.toc-part a::before { content: none; }
+/* 部の中の章の束の行（.reader-lens）は、部の行より一段下げて細く */
+:is(body.reader-flow, body.home-toc) #toc li.toc-lens { margin-top: 4px; }
+:is(body.reader-flow, body.home-toc) #toc li.toc-lens a { font-weight: 400; padding-left: 18px; }
 :is(body.reader-flow, body.home-toc) #toc li.toc-part a:hover { background: none; color: var(--navy); }
 :is(body.reader-flow, body.home-toc) #toc a {
     display: block;

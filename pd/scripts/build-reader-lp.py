@@ -175,6 +175,7 @@ def fold_sections(html: str) -> str:
     # 正本 MD で章の前に <!--PART:第一部|部の題--> を置くと、章をまとめる部の区切りを
     # 章の外に出す（目次では src/reader-flow.js が部の行にする・#20「章を4つくらいの分類に」）
     part_no = [0]
+    lens_no = [0]
 
     def part_html(mark: str) -> str:
         part_no[0] += 1
@@ -208,9 +209,22 @@ def fold_sections(html: str) -> str:
         if m:
             turn = f'<div class="reader-turn">{m.group(1).strip()}</div>'
             body = body[:m.start()] + body[m.end():]
+        # 正本 MD で章末に <!--LENS:視点 1|束の題-->案内<!--/LENS--> を置くと、次の章から始まる
+        # 章の束（部の中のサブテーマ）の見出しを章の外に出す。目次では src/reader-flow.js が
+        # 束の行にする（違和感帳 i20261113230557790「サブテーマに沿って進めたい」）
+        lens = ""
+        m = re.search(r"(?:<p>)?<!--LENS:(.*?)-->(?:</p>)?(.*?)(?:<p>)?<!--/LENS-->(?:</p>)?", body, flags=re.S)
+        if m:
+            lens_no[0] += 1
+            no, _, title = m.group(1).partition("|")
+            t = f'<p class="reader-lens__title">{title.strip()}</p>' if title.strip() else ""
+            lens = (f'<div class="reader-lens" id="lens-{lens_no[0]}">'
+                    f'<p class="reader-lens__no">{no.strip()}</p>{t}'
+                    f'<div class="reader-lens__guide">{m.group(2).strip()}</div></div>')
+            body = body[:m.start()] + body[m.end():]
         out.append(
             f'<details class="sec" id="{hid}"{" open" if opened else ""}><summary>{label}</summary>'
-            f'<div class="secbody">{body}</div></details>{turn}{next_part}'
+            f'<div class="secbody">{body}</div></details>{turn}{next_part}{lens}'
         )
     return "".join(out)
 
