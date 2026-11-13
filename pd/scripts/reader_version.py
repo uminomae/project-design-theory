@@ -3,13 +3,15 @@
 Love駆動開発と呼びたいもの β は、正本かテンプレートに触れた commit のたびに 0.001 上げる
 （pjdhiro 2026-11-13「バージョン1.xを4桁で入れたい。コミットのたびに０.００１を上げる。
 1.5を過ぎた（５００コミットで）2.𝕏を検討するようルールを設定したい」）。
+心理的安全性とはも同じ決まりで数える（pjdhiro 2026-11-14「心理的安全性とはのページにもバージョン表記して。
+Love駆動開発と同じルールで」）。
 
 - 数えるのは、正本とテンプレートに触れた commit（`git rev-list --count HEAD -- <正本> <テンプレート>`）。
   生成物（reader/*.html）は数えない。生成物を数えると、生成し直すたびに数が動き、落ち着かない。
 - 正本かテンプレートに commit 前の変更（index でも作業ツリーでも）があれば、次の commit の分として 1 を足す。
   生成 → check → commit の順で回すと、commit したあとの数と同じ版が出る（最終更新日と同じ考え方）。
 - BASE は、版を入れた commit を数えたときの数。その commit が 1.000。
-- 500 を超えたら（1.500 を過ぎたら）、2.x にするかを pjdhiro に諮る（docs/rules/decisions.md）。
+- 500 を超えたら（1.500 を過ぎたら）、2.x にするかを pjdhiro に諮る（docs/rules/decisions.md）。ページごとに数える。
   生成と check.sh が知らせる。
 
 使い方：
@@ -30,6 +32,13 @@ VERSIONED = {
         ROOT / "knowledge/research/love-driven-dev/READER-love-driven-dev.md",
         ROOT / "scripts/reader-love-driven-dev-template.html",
         220,
+    ),
+    # 版を入れた commit が 57 本目（それまでの 56 commit を数えれば 1.057 だった）。
+    # 英語版（psychological-safety-en.html）は、英訳した日本語版の版を手で書く（数えない）
+    "psychological-safety.html": (
+        ROOT / "knowledge/research/psychological-safety/READER-psychological-safety.md",
+        ROOT / "scripts/reader-psychological-safety-template.html",
+        57,
     ),
 }
 
@@ -63,7 +72,7 @@ def notice(name: str) -> str | None:
     if n >= ASK_AT:
         return (
             f"知らせ：{name} の版が {version(name)} になった（1.500 に届いた）。"
-            "2.x にするかを pjdhiro に諮る（docs/rules/decisions.md の Love駆動開発の版番号の行）"
+            "2.x にするかを pjdhiro に諮る（docs/rules/decisions.md の読み物の版番号の行）"
         )
     return None
 
