@@ -108,7 +108,7 @@
       var pa = document.createElement('a');
       pa.href = '#' + pt.id;
       var no = pt.querySelector('.reader-part__no'), ti = pt.querySelector('.reader-part__title');
-      pa.textContent = (no ? no.textContent : '') + (ti ? '　' + ti.textContent : '');
+      pa.textContent = (no ? no.textContent : '') + (ti ? (EN ? ': ' : '　') + ti.textContent : '');
       pa.addEventListener('click', function (e) {
         e.preventDefault();
         document.body.classList.remove('toc-open');

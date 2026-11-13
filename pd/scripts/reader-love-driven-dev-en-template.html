@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです（英語版）。生成物 reader/love-driven-dev-en.html を直接編集しないでください。
+  正本:   knowledge/research/love-driven-dev/READER-love-driven-dev-en.md（日本語の正本 READER-love-driven-dev.md の英訳）
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  - 英語版は日本語版に毎回は追いつかない。英訳した日本語版の版と日付を、上の帯と題の横に書く（pjdhiro 2026-11-13「常に最新版でなくて良いので、英訳時のバージョンだけ記載しておいて。古くなったら時折修正したい」・違和感帳 i20261113220707n4w）。
+    英訳し直したら、このテンプレートの「1.012」と「2026-11-14」（全部）と、正本の note・../llms.txt の版を直す。版は scripts/reader_version.py が日本語版に出す番号（英訳を入れた commit のあとの番号）。
+  - 見た目と背景は日本語版と同じ（docs/DESIGN-RULES-LDD.md）。日英の切り替えは HOME と同じ JA・EN のボタン（.lang-toggle）。
+  - 検索エンジン向けに index する（日本語版と同じ）。sitemap.xml・llms.txt に入れてある。
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION (for an LLM with no context; hidden from human readers)
+  ============================================================================
+  This is the English version of "What I Want to Call Love-Driven Development β" (Japanese original: love-driven-dev.html).
+  It was translated by Claude from Japanese version 1.012 on 2026-11-14. The Japanese version may be newer.
+  Love-Driven Development is the name pjdhiro wants to give to what is overlooked on the back side of the phenomenon called a project:
+  its driving source, and the structures and processes the driving source gives rise to. The page asks "What drives me to do projects?
+  What drives me to live?" and answers, for now, that the driving source may be "what I want to call Love", and the lack felt as a gap
+  between that and oneself. Projects include business, life and family.
+  Structure: Part 1 The question, and the views so far (what drives a project; what management studies has seen as the driving source,
+  in seven groups; what Love-Driven Development sees as the driving source; what the word Love has pointed to). Part 2 Seeing the invisible driving source through similar
+  shapes (gravity and the gravity well; the five stages of creation, field → wave → edge → vortex → bundle, with examples from physics,
+  biochemistry, psychology, romantic love and management studies; words as names for vortices seen between the waves). Part 3 How do
+  people interpret the world? (signals of survival and trust; interoception and prediction; kesson, a lack felt as a value on the
+  imaginary axis that is 0 in cognition; value born in the consciousness of the receiver; stability when one cannot see ahead).
+  Part 4 Before Love: how does the mind feel trust and reassurance? (the unconscious; transference, object relations and archetypes;
+  defense mechanisms; holding; stages of development; trust compared with expectation, faith, idealization, dependence, attachment and
+  the classification of emotions). Part 5 What is Love? (what pjdhiro wants to call Love; what it is not; its aspects; analogies; the answer
+  to the first question). Part 6 What is happening inside what is called development? (what development points to, in 5W1H; disaster
+  recovery cases; what the view is good for; where the words of business — vision, psychological safety, GRIT, resilience, intrinsic
+  motivation, negative capability, conflict, entrepreneurship, value creation — are misunderstood; design; arranging the input).
+  Back matter: open questions, terms, background, supplementary material on structural similarities with physics, references.
+  Most of the explanation is inside closed details elements; text extraction may drop it. The body below is complete.
+  Research descriptions are Claude's summaries of sources checked in full; quotations from English sources are in the original English.
+  pjdhiro's words are quoted as "pjdhiro's view / question / experience (translated by Claude)" and were translated from Japanese by Claude.
+  Written by Claude. pjdhiro judges whether it fits.
+  ============================================================================
+-->
+<html lang="en" class="ldd-dark" data-intro="title cue">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What I Want to Call Love-Driven Development β | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/love-driven-dev-en.html">
+    <link rel="alternate" hreflang="ja" href="https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html">
+    <link rel="alternate" hreflang="en" href="https://uminomae.github.io/project-design-theory/reader/love-driven-dev-en.html">
+    <link rel="alternate" hreflang="x-default" href="https://uminomae.github.io/project-design-theory/reader/love-driven-dev-en.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="Love-Driven Development is the name pjdhiro gives to what drives projects before a vision is put into words: a driving source pjdhiro wants to call Love, and the structures and processes it gives rise to. Starting from the question “What drives me to do projects?”, the reader looks at what management studies has seen as the driving source, likens the invisible source to gravity and to the five stages of creation, looks at the signals of survival and trust, trust and reassurance, and asks what development is. Written by Claude; English translation of the Japanese version 1.012.">
+    <meta property="og:title" content="What I Want to Call Love-Driven Development β">
+    <meta property="og:description" content="What drives projects before a vision is put into words? A reader on Love-Driven Development: the driving source pjdhiro wants to call Love, seen through gravity, the five stages of creation, signals of survival and trust, and what development is.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/love-driven-dev-en.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta property="og:image" content="https://uminomae.github.io/project-design-theory/assets/ogp/love-driven-dev-dark.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="What I Want to Call Love-Driven Development β — on a deep navy ground, a wisteria-colored gravity well and vortex, with pink grains of light (title in Japanese)">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="What I Want to Call Love-Driven Development β">
+    <meta name="twitter:image" content="https://uminomae.github.io/project-design-theory/assets/ogp/love-driven-dev-dark.jpg">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-14">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css?v=20261113">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css?v=20261109">
+    <!-- The dark look only for Love-Driven Development (docs/DESIGN-RULES-LDD.md) -->
+    <link rel="stylesheet" href="../src/styles/reader-ldd-dark.css?v=20261113b">
+    <style>.ldd-version{font-size:.42em;font-weight:400;letter-spacing:.04em;opacity:.7;white-space:nowrap;vertical-align:.35em;margin-left:.3em}</style>
+    <!-- Decide the shape of the first screen (the background shown full screen) before drawing (docs/DESIGN-RULES-LDD.md §1) -->
+    <script src="../src/ldd-intro.js?v=20261110c"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "What I Want to Call Love-Driven Development β",
+          "description": "Love-Driven Development is the name pjdhiro gives to what drives projects before a vision is put into words: a driving source pjdhiro wants to call Love, and the structures and processes it gives rise to. The reader asks “What drives me to do projects? What drives me to live?” and answers, for now, that the driving source may be the gap between what pjdhiro wants to call Love and oneself.",
+          "keywords": "Love-Driven Development, Love駆動開発, project design, Project Design Theory, driving source of projects, what drives projects, vision, five stages of creation, field wave edge vortex bundle, gravity well, signals of survival and trust, kesson-driven thinking, trust and reassurance, Doing and Being",
+          "url": "https://uminomae.github.io/project-design-theory/reader/love-driven-dev-en.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/love-driven-dev-en.html",
+          "image": "https://uminomae.github.io/project-design-theory/assets/ogp/love-driven-dev-dark.jpg",
+          "inLanguage": "en",
+          "datePublished": "2026-11-14",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "version": "1.012 (Japanese version translated)",
+          "translationOfWork": {"@type": "Article", "headline": "Love駆動開発と呼びたいもの β", "inLanguage": "ja", "url": "https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html"},
+          "translator": {"@type": "Person", "name": "Claude", "description": "Anthropic's AI. Translated the Japanese version 1.012 on 2026-11-14"},
+          "about": [
+            {"@type": "DefinedTerm", "name": "Love-Driven Development", "alternateName": "Love駆動開発", "description": "The name pjdhiro wants to give, all together, to what is overlooked on the back side of the phenomenon called a project: its driving source, which pjdhiro wants to call Love, and the structures and processes it gives rise to. It moves before a vision is put into words."}
+          ],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic's AI. Responsible for the text"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "The person who experienced the phenomenon and named it. Poses the questions and judges whether readings fit"},
+          "isPartOf": {"@type": "WebSite", "name": "Project Design Theory", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow" data-background="love-membrane">
+    <!-- Same Menu as the top page (items: src/content/site-data.mjs getMenuItems; drawn by src/reader-menu.js, which follows <html lang>) -->
+    <div class="top-bar" role="group" aria-label="Site controls">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+        <div class="lang-toggle" aria-label="Language switcher">
+            <a href="love-driven-dev.html" hreflang="ja" lang="ja">JA</a>
+            <a class="active" href="love-driven-dev-en.html" hreflang="en" lang="en" aria-current="page">EN</a>
+        </div>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>Machine-readable summary of this reader (for an LLM with no context; hidden from human readers)</h2>
+        <p>This is the English version of "What I Want to Call Love-Driven Development β", translated by Claude from Japanese version 1.012 on 2026-11-14 (the Japanese version, love-driven-dev.html, may be newer). Love-Driven Development is the name pjdhiro wants to give to what drives projects — business, life and family — before a vision is put into words: a driving source pjdhiro wants to call Love, and the structures and processes it gives rise to. Part 1 asks what drives a project and sorts the driving sources seen by management studies into seven groups, from the external environment to the entrepreneur's mind. Part 2 likens the invisible driving source to gravity (the gravity well) and to the five stages of creation (field → wave → edge → vortex → bundle), and reads words as names for vortices seen between the waves. Part 3 looks at how people cut out the world with signals of survival and trust, how signals well up from inside the body, how a lack (kesson) is felt when signals and thoughts part, and how value is born in the consciousness of the receiver. Part 4 sets out premises of the mind (the unconscious, the sources of trust and love, defense, holding, stages of development) and lines up outlines of trust and reassurance by comparing them with expectation, faith, idealization, dependence, attachment and the classification of emotions. Part 1 also looks at what the word Love has pointed to. Part 5 looks at what pjdhiro wants to call Love, and answers that the driving source of projects may be the lack felt as the gap between Love and oneself. Part 6 asks what development points to, using 5W1H and disaster recovery cases, and uses the view as a sieve for the words of business (vision, psychological safety, GRIT, resilience, intrinsic motivation, negative capability, conflict, entrepreneurship, value creation) and for design. The research descriptions are Claude's summaries of sources checked in full. pjdhiro's words are marked "translated by Claude".</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <!-- First screen: show the background (the vortex of membranes) full screen first. Its shape is set by data-intro on html (docs/DESIGN-RULES-LDD.md §1) -->
+        <div class="ldd-intro">
+            <p class="ldd-intro__title" aria-hidden="true"><span>What I Want to Call</span><span>Love-Driven Development <i>β</i></span></p>
+            <a class="ldd-intro__cue" href="#ldd-read" aria-label="Start reading"><span>scroll</span><span class="ldd-intro__arrow" aria-hidden="true">▾</span></a>
+        </div>
+        <div class="reader-wrap" id="ldd-read">
+            <div class="draft-banner">
+                <b>This article is written by an AI (Claude).</b> Whether it fits is judged by pjdhiro (the author of this site).<br>
+                <b>English translation of the Japanese version 1.012, translated by Claude on 2026-11-14.</b> The <a href="love-driven-dev.html" hreflang="ja" lang="ja">Japanese version</a> may be newer; this translation is updated from time to time.<br>
+                🚧 <b>Being explored, aiming for completion at the end of 2027</b> (<a href="https://github.com/uminomae/project-design-theory/issues/64">#64</a>).<br>
+                <span class="reader-meta">Last updated: <!--UPDATED--> ／
+                <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/love-driven-dev/READER-love-driven-dev-en.md">Source (GitHub)</a></span>
+            </div>
+            <header class="reader-hero">
+                <h1>What I Want to Call Love-Driven Development β <span class="ldd-version" title="The version of the Japanese page this translation was made from">ver. 1.012 (ja)</span></h1>
+                <p class="reader-subtitle ldd-subtitle">What drives me to do projects?</p>
+                <p class="reader-subtitle ldd-subtitle-note">This reader is pjdhiro's own answer to this existential question.</p>
+                <p class="reader-summary__title">Overview</p>
+                <p class="reader-lead"><span class="reader-lead__label">Background</span>Over this year, pjdhiro has explored the shapes things take as they come into being, and human consciousness. Along the way, a question remained: what moves them? pjdhiro has also seen people's minds acting on one another unconsciously, and movements of emotion that do not proceed by logic. (For more, see "<a href="#ldd-background">How I came to this question</a>" at the end.)</p>
+                <p class="reader-lead"><span class="reader-lead__label">Question</span><span class="reader-lead__question">What drives me to do projects?</span>On this page, whatever moves people and projects is called the driving source. Projects are not limited to business; they include life and family. It can feel as though something had begun to move before the vision was put into words.</p>
+                <p class="reader-lead"><span class="reader-lead__label">Estimate</span>That driving source may be "what I want to call Love". It is not yet understood well enough to call it Love outright. Then what is it?</p>
+                <p class="reader-lead"><span class="reader-lead__label">Grounds</span>Love-Driven Development is pjdhiro's theory from plain experience. The grounds behind its claims are one person's plain experience, not statistics from studying and counting many people. The research cited is lined up not to prove the experience but as material for conveying it. Where experience and research disagree, neither is made to fit the other; the disagreement is left as a question.</p>
+                <div class="reader-lead"><span class="reader-lead__label">Structure</span>Because it is hard to put into words, the knowledge and views needed to convey it are laid out in order.
+                    <ul class="reader-lead__list">
+                        <li><b>The views so far</b>: checks the views management studies has held on the driving source of projects. Each is a right aspect, but they alone feel as if something is missing. It also looks at what the word Love has pointed to so far.</li>
+                        <li><b>Seeing through similar shapes</b>: what I want to call Love cannot be seen with the eyes. The invisible driving source is looked at through things of similar shape: gravity, and the structure of how things come into being.</li>
+                        <li><b>How do people interpret the world?</b>: looks at the inside of the person. People interpret the world while sensing with the body whether they can stay alive (survival) and whether they can stay connected to others (trust).</li>
+                        <li><b>Before Love: how does the mind feel trust and reassurance?</b>: answers two questions, what is trust and what is reassurance. It sets down premises of the mind, looks through differences from similar things such as expectation and faith, and lines up their outlines. It also looks again through the lenses of stages and personality. 🚧</li>
+                        <li><b>What is Love?</b>: with all this as preparation, looks at what this reader wants to call Love, and answers the first question. This is the first half of the reader, whose theme is the driving source. 🚧</li>
+                        <li><b>What is happening inside what is called development?</b>: the second half, whose theme is development. It looks at what the word development points to, and at words used within it (vision, the words of the mind, value creation, design) with the views so far. 🚧</li>
+                        <li><b>Back matter</b>: words on this page, background and history, supplementary material, references.</li>
+                    </ul>
+                </div>
+                <p class="reader-lead"><span class="reader-lead__label">Answer for now</span>We may be inside something like a field we want to call Love, and part of it. The body senses the reassurance of being connected, and gaps from it. Feeling those gaps as a lack, people start to move. The driving source of projects may be this lack, the gap between what I want to call Love and oneself. The use of this view is to check what one has received before applying theories or instructions.</p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                This reader will be revised as it is judged. This English page was translated from the Japanese version 1.012 on 2026-11-14.<br>
+                <a href="../index.html">Project Design Theory</a> ・
+                <a href="love-driven-dev.html" hreflang="ja" lang="ja">日本語版</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+    <script type="module" src="../src/reader-gravity-love.js"></script>
+</body>
+</html>

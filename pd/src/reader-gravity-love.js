@@ -26,6 +26,16 @@ const PAL = () => ({
 });
 
 // ---- 形と運動 ----
+// 英語版の読み物（<html lang="en">）では図の言葉も英語にする（2026-11-14・Love駆動開発の英語版）
+const EN = (document.documentElement.lang || "").slice(0, 2) === "en";
+const T = EN
+    ? { still: "Does not move · slope is zero", seeing: " = where you are looking from (not shown)", outside: " (out of view)", top: "View from above", center: "View from the center", stop: "Stop", run: "Play",
+        sayTop: "From above: from outside, both figures show the center at the bottom of the hollow. The camera slowly swings from the side to directly above; from directly above, the height disappears and the figure becomes flat. Dragging either figure turns both by the same angle (you can also tilt them up and down).",
+        sayCenter: "From the center: you are standing at the bottom of the well, looking around. Everything around appears to revolve around this place. The only thing that shows up in no direction you face is this very place you are looking from. Drag to turn left, right, up or down." }
+    : { still: "動かない・坂はゼロ", seeing: "＝見ている場所（映らない）", outside: "（視野の外）", top: "俯瞰で見る", center: "中心から見る", stop: "止める", run: "動かす",
+        sayTop: "俯瞰：外からは、二枚とも中心がくぼみの底に見えます。カメラは真横から真上までゆっくり首を振り、真上では高さが消えて平面の図になります。どちらかの図をドラッグすると、二枚が同じ角度で回ります（上下にも倒せます）。",
+        sayCenter: "中心から：井戸の底に立って見渡しています。周りのすべてがここを中心に回って見えます。どちらを向いても映らないのは、いま見ているこの場所だけです。ドラッグで左右にも上下にも向きを変えられます。" };
+
 const HALF = 6;          // 格子の半幅
 const DEPTH = 4.6;         // 井戸の深さ
 const SOFT = 0.75;       // 中心の平らさ
@@ -215,7 +225,7 @@ function makePanel(host, spec) {
             ctx.fillText(spec.center, c0[0], c0[1] + rr + 16);
             ctx.font = '12px ' + sansFont;
             ctx.fillStyle = pal.mid;
-            ctx.fillText('動かない・坂はゼロ', c0[0], c0[1] + rr + 31);
+            ctx.fillText(T.still, c0[0], c0[1] + rr + 31);
             ctx.textAlign = 'start';
         } else {
             // 視野の外：画面の縁に、中心のある向きだけを矢印で示す
@@ -235,7 +245,7 @@ function makePanel(host, spec) {
             ctx.font = '500 12px ' + sansFont;
             ctx.textAlign = ux > 0.3 ? 'right' : ux < -0.3 ? 'left' : 'center';
             const tx = x - ux * 18, ty = y - uy * 18 + 4;
-            ctx.fillText(state.mode === 'center' ? spec.center + '＝見ている場所（映らない）' : spec.center + '（視野の外）', tx, ty);
+            ctx.fillText(state.mode === 'center' ? spec.center + T.seeing : spec.center + T.outside, tx, ty);
             ctx.textAlign = 'start';
         }
 
@@ -272,19 +282,19 @@ function mount(root) {
         row.appendChild(b);
         return b;
     };
-    const bTop = btn('俯瞰で見る', () => setMode('top'));
-    const bCenter = btn('中心から見る', () => setMode('center'));
-    const bRun = btn('止める', () => {
+    const bTop = btn(T.top, () => setMode('top'));
+    const bCenter = btn(T.center, () => setMode('center'));
+    const bRun = btn(T.stop, () => {
         state.running = !state.running;
-        bRun.textContent = state.running ? '止める' : '動かす';
+        bRun.textContent = state.running ? T.stop : T.run;
     });
 
     function say() {
         if (!status) return;
         if (state.mode === 'top') {
-            status.textContent = '俯瞰：外からは、二枚とも中心がくぼみの底に見えます。カメラは真横から真上までゆっくり首を振り、真上では高さが消えて平面の図になります。どちらかの図をドラッグすると、二枚が同じ角度で回ります（上下にも倒せます）。';
+            status.textContent = T.sayTop;
         } else {
-            status.textContent = '中心から：井戸の底に立って見渡しています。周りのすべてがここを中心に回って見えます。どちらを向いても映らないのは、いま見ているこの場所だけです。ドラッグで左右にも上下にも向きを変えられます。';
+            status.textContent = T.sayCenter;
         }
     }
 
@@ -335,7 +345,7 @@ function mount(root) {
 
     if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         state.running = false;
-        bRun.textContent = '動かす';
+        bRun.textContent = T.run;
     }
 
     let prev = null;

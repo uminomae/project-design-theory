@@ -90,6 +90,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 英語版（違和感帳 i20261113220707n4w・2026-11-14）。日本語版に毎回は追いつかない。英訳した日本語版の版はテンプレートに書く
+        ROOT / "knowledge/research/love-driven-dev/READER-love-driven-dev-en.md",
+        ROOT / "scripts/reader-love-driven-dev-en-template.html",
+        ROOT / "reader/love-driven-dev-en.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/management-drivers/READER-management-drivers.md",
         ROOT / "scripts/reader-management-drivers-template.html",
         ROOT / "reader/management-drivers.html",
@@ -220,7 +227,8 @@ def collect_refs(html: str) -> str:
     heads = [(m.start(), m.group(1), re.sub(r"<[^>]+>", "", m.group(2)).strip())
              for m in re.finditer(r'<h2 id="([^"]+)">(.*?)</h2>', html, flags=re.S)]
     groups: dict[str, list[str]] = {}
-    for m in re.finditer(r"<!--REF:(.*?)-->\s*<p>出典：(.*?)</p>", html, flags=re.S):
+    # 英語版は「Sources: 」で始まる段落（2026-11-14・Love駆動開発の英語版）
+    for m in re.finditer(r"<!--REF:(.*?)-->\s*<p>(?:出典：|Sources: )(.*?)</p>", html, flags=re.S):
         before = [h for h in heads if h[0] < m.start()]
         where = ""
         if before:
