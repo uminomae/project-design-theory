@@ -887,3 +887,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（巻末の「この読み物の外へ」に、本文からリンクしている独立ページ 12 本と「創造とは」の五段階の表を足した版）
 - pages: 直しは巻末のリンクの一覧だけで、wiki の本文の材料に触れないので本文を変えず、checked に今の時刻を書いた
+
+## [2026-11-14] check | Love 駆動開発・プロジェクトデザイン（読み物の創造の章の三つの「詳しく」を一つにした）
+- scope: 2 ページ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「創造は、どんな形をしているのか」の五つの事例のあとの畳み三つを、原典と分野ごとの記録へのリンクの一つにした版）
+- pages: 直しは畳みの中の詳しい解説を外しただけで、wiki の本文の材料に触れないので本文を変えず、checked に今の時刻を書いた
