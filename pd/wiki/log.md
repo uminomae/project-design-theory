@@ -932,3 +932,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ（`concepts/Love 駆動開発` に一段足し、`プロジェクトデザイン` は確かめだけ）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第七部の四つめの場面に pjdhiro の見方「私の個性として、営利と非営利の両方を睨んでる…」を足し、巻末の背景の三つの畳みを一つにした版）
 - pages: Love 駆動開発の「使い方」に、決めるときの価値についての pjdhiro の見方を一文で足した。背景の畳みは wiki に引いていないので変えない。プロジェクトデザインは引いている段が変わっていないので本文を変えず checked を今の時刻にした
+
+## [2026-11-15] compile | Love 駆動開発・プロジェクトデザイン（修行の章に感情処理の流れと実践のカードを置いた版）
+- scope: 2 ページ（`concepts/Love 駆動開発` に一段足し、`プロジェクトデザイン` は確かめだけ）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第七部の章「どう鍛えるのか、どう修行するのか」に、pjdhiro のサイトの「感情処理」のページから、感情処理の流れと私の実践のカードを置き、工事中を止観のやり方だけにした版）
+- pages: Love 駆動開発の「使い方」に、修行の二つの側と、感情処理の流れ・実践を引いたことを一段で足した。プロジェクトデザインは引いている段が変わっていないので本文を変えず checked を今の時刻にした
