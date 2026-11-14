@@ -897,3 +897,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「デザインは、どこに関わるか」の終わりに、コラム「思考の類型と、デザインルール」を足した版）
 - pages: 足したのは寄り道のコラムで、wiki の本文の材料に触れないので本文を変えず、checked に今の時刻を書いた
+
+## [2026-11-14] check | Love 駆動開発・プロジェクトデザイン（読み物の第六部に、工事中の章「計算機科学の視点で見ると、何が似ているか」を足した）
+- scope: 2 ページ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（「後半の答え」の前に、中身が工事中の印だけの章を置いた版）
+- pages: 足したのは予告の見出しだけで、wiki の本文の材料に触れないので本文を変えず、checked に今の時刻を書いた
