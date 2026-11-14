@@ -907,3 +907,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`
 - pages: 予告の文だけで、wiki の本文の材料に触れないので本文を変えず、checked に今の時刻を書いた
+
+## [2026-11-14] check | Love 駆動開発・プロジェクトデザイン（読み物に、工事中の章「どう鍛えるのか、どう修行するのか」と「禅の視点で見ると、何が近いか」を足した）
+- scope: 2 ページ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第六部の終わりに修行の章、巻末に禅の章を、どちらも工事中で置いた版）
+- pages: 足したのは工事中の章と、すでに本文にある言葉の場所の一覧で、wiki の本文の材料に触れないので本文を変えず、checked に今の時刻を書いた
