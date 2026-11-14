@@ -415,7 +415,7 @@ date: 2026-11-09
 
 ## パース — 創造的な愛による進化（agapasm）
 
-<a id="lh-peirce"></a>この章は、パース「進化的な愛（Evolutionary Love）」（1893 年）を見ます。
+<a id="lh-peirce"></a>この章は、パース「進化的な愛（Evolutionary Love）」（1893 年）を見ます。パースについては、より詳しく掘り下げたページ「[パースの創造的な愛と、アブダクション](peirce-love-abduction.html)」があります（工事中）。この論文と、パースが新しい考えの生まれる推論として立てたアブダクションを、原文の鍵の文と一緒に読めます。
 
 ### 「進化的な愛」（The Monist 3(2), 1893 年, pp.176–200）
 
@@ -429,8 +429,6 @@ date: 2026-11-09
 | 出典と照合の状態 | 本文照合済。[The Monist 第 3 巻第 2 号の原誌（Internet Archive）](https://archive.org/details/sim_monist_1893-01_3_2)と、[Cohen 編『Chance, Love, and Logic』（1923・パブリックドメイン）](https://archive.org/details/chanceloveandlog00peiruoft)。パースは語を三段に呼び分けています。様式は tychasm / anancasm / agapasm、それを主とする学説は tychasticism / anancasticism / agapasticism、その様式が宇宙で働いているとだけ言う命題は tychism / anancism / agapism（1923 年版 pp.283–284） |
 
 </div>
-
-この論文と、パースが新しい考えの生まれる推論として立てたアブダクションは、独立ページ「[パースの創造的な愛と、アブダクション](peirce-love-abduction.html)」で、原文の鍵の文と一緒に読めます。
 
 <!--PART:第三部|現代の恋愛と、心理学の分類-->
 
