@@ -892,3 +892,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「創造は、どんな形をしているのか」の五つの事例のあとの畳み三つを、原典と分野ごとの記録へのリンクの一つにした版）
 - pages: 直しは畳みの中の詳しい解説を外しただけで、wiki の本文の材料に触れないので本文を変えず、checked に今の時刻を書いた
+
+## [2026-11-14] check | Love 駆動開発・プロジェクトデザイン（読み物のデザインの章に、思考の類型とデザインルールのコラムを足した）
+- scope: 2 ページ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「デザインは、どこに関わるか」の終わりに、コラム「思考の類型と、デザインルール」を足した版）
+- pages: 足したのは寄り道のコラムで、wiki の本文の材料に触れないので本文を変えず、checked に今の時刻を書いた

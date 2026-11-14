@@ -136,7 +136,7 @@
                 <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md">正本 (GitHub)</a></span>
             </div>
             <header class="reader-hero">
-                <h1>Love駆動開発と呼びたいもの β <span class="ldd-version" data-reader-version="1.021" title="版。直すたびに 0.001 上がります">ver. 1.021</span></h1>
+                <h1>Love駆動開発と呼びたいもの β <span class="ldd-version" data-reader-version="1.022" title="版。直すたびに 0.001 上がります">ver. 1.022</span></h1>
                 <p class="reader-subtitle ldd-subtitle">私は何に駆られてプロジェクトを行うのか？</p>
                 <p class="reader-subtitle ldd-subtitle-note">この読み物は、この実存的な問いへの、pjdhiro なりの回答です。</p>
                 <p class="reader-summary__title">概要</p>
@@ -2174,6 +2174,25 @@
 <p>このページを置いている<a href="../index.html">プロジェクトデザイン論のトップページ</a>は、プロジェクトデザインを、「プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営み」と置いています。同じページは、ここでいうプロジェクトは「やること（Doing）」だけでなく「起きていること（Being）」まで含む出来事です、とも書いています。pjdhiro は、起きていることだけでなく、起きるであろうことや、起きるかもしれないことまで構想し、設計する、と見ていて、それを不確実性への対処と言い表しています。そうすると、関わる先は、やることの中身や、できあがる物に限られません。</p>
 </details>
 
+<details class="pd-column" id="ldd-thinking"><summary><span>思考の類型と、デザインルール<span class="pd-column__sub">論理・プロセス・システム・デザインの思考と、ボールドウィンとクラークのモジュール化</span></span></summary>
+
+<p>デザインの話には、デザイン思考のように「思考」の名が付いた考え方がよく出てきます。ほかにも、論理的な思考、プロセス思考、システム思考などの名前があります。どれも、考えるという一つの営みのうち、どこに目を向けるかに名前を当てたもの、と見ることができます。ここでは、それぞれが何を見る考え方として書かれてきたかを、代表的な出どころから短く並べます。どの出どころを当てたかは、このページの整理です。</p>
+<ul>
+<li><strong>論理的な思考</strong>：根拠から結論へのつながりをたどる考え方として語られます。哲学者のデューイは 1910 年の『How We Think』の第 1 章で、ある信念を、それを支える根拠と、そこから導かれる結論に照らして、能動的に、粘り強く、注意深く吟味することを「反省的思考」と呼びました。</li>
+<li><strong>プロセス思考</strong>：物事を、止まった個の集まりでなく、成りゆく過程として見る考え方です。スタンフォード哲学百科事典の「プロセス哲学」の項は、存在は動的で、その動的なところを実在の説明の中心に置くべきだ、という前提に立つ哲学だと書いています。同じ項は、西洋の形而上学が長く、実在を静的な個の集まりとして書いてきた、とも書いています。</li>
+<li><strong>システム思考</strong>：部分よりも、部分どうしの関係と全体を見る考え方です。システム工学の知識体系（SEBoK）の「システム思考とは」の項は、センゲの言い方を引いて、全体を見るための規律、物でなく相互の関係を見るための枠組み、と書いています。同じ項は、範囲や時間の境界を狭く取りすぎると、いまの問題を解いた代わりに、ほかの場所や先の時間に同じか、より大きな問題を生む例が多い、とも書いています。</li>
+<li><strong>デザイン思考</strong>：IDEO のページは、デザイン思考を、複雑な問題を解くための人間中心のやり方と書いています。人にとって望ましいこと、組織にとって成り立つこと、技術でできることの三つを合わせる、という形です。独立ページ「<a href="management-drivers.html#デザイン思考">経営学の考え方は、どこまで効くか</a>」の表にも、デザイン思考を置いています。</li>
+</ul>
+<p>デザインの側で「ルール」を考えた仕事に、ボールドウィンとクラークの『Design Rules, Vol. 1: The Power of Modularity』（2000）があります。クラークは当時、ハーバード・ビジネス・スクールの学長でした。二人は同じ年の対談で、IBM が 1960 年代のはじめに出した System/360 を、最初のモジュール式のコンピューターの系列として挙げています。コンピューターの部分を、別々の専門の組が互いに独立して設計でき、前もって決めた一組のデザインルールに従っている限り、つなげると一つに働く、という形です。</p>
+<p>ルールに従っていれば、ほかの部分の設計者に見えなくてよいところは、自由に変えられます。二人は、そこを「隠れた設計パラメーター」と呼んでいます。ボールドウィンは、こうしたモジュール性は偶然には生まれず、設計して作り込むものだ、とも言っています。ルールを知っていれば、誰でもそのシステムで働く部品を作れます。二人は、System/360 のあと、ディスク装置の設計者が次々と IBM を離れて自分の会社を作り、互換の装置で競ったことを、シリコンバレーの成長の大きな出来事に挙げています。</p>
+<p>このページの言葉で読むなら、デザインルールは、一つ一つの部品という渦よりも、渦が生まれる場の側の決めごとに近く見えます。これは Claude の読みです。この読み物の背景でも、pjdhiro は自分の一年の作業を、<a href="#ldd-my-app">モジュールに切り分けるリファクタリング</a>に喩えています。</p>
+<p>では、考えることそのものは、何に動かされているのでしょうか。デューイは同じ第 1 章で、考えることの起こりを、何かの戸惑い・混乱・疑いに置きました。考えることは自然に燃え出すものでなく、それを呼び起こす何かがある、とも書いています。pjdhiro は、こう見ています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>思考も駆動源は謎なんですよね。Loveかもしれない。知への欲望や欠乏、安心感のための。</p>
+</blockquote>
+<p>出典：Dewey (1910) <em><a href="https://www.gutenberg.org/ebooks/37423">How We Think</a></em>, Chapter I（Project Gutenberg にあるパブリックドメインの D. C. Heath 1910 年の版で本文照合済。第 1 章の第 1 節と第 4 節）／Seibt (2022) "<a href="https://plato.stanford.edu/entries/process-philosophy/">Process Philosophy</a>", <em>Stanford Encyclopedia of Philosophy</em>（公開の項で本文照合済。冒頭の節）／Adcock, Wells &amp; Lawson (2026) "<a href="https://sebokwiki.org/wiki/What_is_Systems_Thinking%3F">What is Systems Thinking?</a>", <em>SEBoK</em>（公開の項の 2026-11-13 の版で本文照合済。節 Thoughts on Systems Thinking。センゲの言い方は Senge 2006, pp.68–69 からの、この項の引用）／IDEO "<a href="https://designthinking.ideo.com/">Design thinking</a>"（IDEO が公開している頁で本文照合済）／Baldwin &amp; Clark (2000) "<a href="https://www.library.hbs.edu/working-knowledge/more-than-the-sum-of-its-parts-the-impact-of-modularity-on-the-computer-industry">More Than the Sum of Its Parts: The Impact of Modularity on the Computer Industry</a>", <em>HBS Working Knowledge</em>, 2000-09-25（二人の本『Design Rules, Vol. 1』を紹介した対談。HBS が公開している頁で本文照合済。本そのものは読めていない）</p>
+</details>
+
 </div></details><details class="sec" id="入力を整えると何が変わるか" open><summary>入力を整えると、何が変わるか</summary><div class="secbody">
 
 
@@ -2407,7 +2426,7 @@
 
 <details class="acc"><summary>私というアプリ</summary>
 
-<p>pjdhiro は、この一年の作業を、自分というアプリのリファクタリングに喩えています。始まりは、動いてはいるけれど本人にしか読めないコードの可読性を上げることでした。中身を表す名前を付け、関数を切り分け、モジュールにしていくと、他とつながりやすくなり、構造がはっきりしていきました。</p>
+<p><a id="ldd-my-app"></a>pjdhiro は、この一年の作業を、自分というアプリのリファクタリングに喩えています。始まりは、動いてはいるけれど本人にしか読めないコードの可読性を上げることでした。中身を表す名前を付け、関数を切り分け、モジュールにしていくと、他とつながりやすくなり、構造がはっきりしていきました。</p>
 <blockquote class="reader-callout reader-request">
 <p><strong>pjdhiro の言葉：</strong>私というアプリがブラックボックスで、振る舞いと機能を品質テストとして新たな言語でコーディングした、とも言える作業でした。</p>
 </blockquote>
