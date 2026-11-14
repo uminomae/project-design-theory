@@ -422,7 +422,7 @@ The 1999 definition held that the confidence that one will not be embarrassed, r
 
 <strong>pjdhiro's view (translated by Claude):</strong>If it's rapport or trust, those are difficult concepts, difficult enough that Love-Driven Development is searching for them, so I think plain, simple words like reassurance and safety lead to a lot of misunderstanding.
 
-Trust itself is looked at in Part 4 of [What I Want to Call Love-Driven Development](love-driven-dev.html#信頼と信仰や期待を人は自分の中で分けられるのか) (in Japanese), side by side with expectation, faith, idealization, assurance and dependence, and attachment.
+Trust itself is looked at in Part 4 of [What I Want to Call Love-Driven Development](love-driven-dev.html#ldd-discern) (in Japanese), side by side with expectation, faith, idealization, assurance and dependence, and attachment.
 
 Sources: [Edmondson (2002)](https://www.hbs.edu/ris/Publication%20Files/02-062_0b5726a8-443d-4629-9e75-736679b870fc.pdf) *Managing the risk of learning: Psychological safety in work teams*. HBS Working Paper 02-062 (checked in the text. pp.8–10) / [Edmondson & Lei (2014)](https://doi.org/10.1146/annurev-orgpsych-031413-091305) *Annual Review of Organizational Psychology and Organizational Behavior* 1:23–43 (checked in the text. pp.24–25)
 
@@ -576,7 +576,7 @@ The military paper seen in Part 4's section "That higher is better and it is nee
 
 <strong>pjdhiro's view (translated by Claude):</strong>Balance matters. I think psychological safety too is probably a one-sided cut, like the blind men and the elephant. In other words, I'm looking for its driving source. That's why I'm digging into "What is trust?"
 
-The work of digging deep into trust is going on in Part 4 of [What I Want to Call Love-Driven Development](love-driven-dev.html#信頼と信仰や期待を人は自分の中で分けられるのか) (in Japanese), in the form of comparing trust one by one with expectation, faith, idealization, assurance and dependence, and attachment.
+The work of digging deep into trust is going on in Part 4 of [What I Want to Call Love-Driven Development](love-driven-dev.html#ldd-discern) (in Japanese), in the form of comparing trust one by one with expectation, faith, idealization, assurance and dependence, and attachment.
 
 <!--PART:Appendix-->
 

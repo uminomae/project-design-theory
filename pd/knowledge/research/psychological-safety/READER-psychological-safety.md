@@ -419,7 +419,7 @@ pjdhiro の見方では、防衛が守ろうとする不安の一つが、恥不
 
 <strong>pjdhiro の見方：</strong>ラポールとか信頼とかなら、Love駆動開発が探してるくらいの難しい概念だから、気楽に安心・安全といった素朴な言葉では誤解が多いと思うよ
 
-信頼そのものは、[Love駆動開発と呼びたいもの](love-driven-dev.html#信頼と信仰や期待を人は自分の中で分けられるのか)の第四部で、期待・信仰・理想化・安心や依存・愛着と並べて見ています。
+信頼そのものは、[Love駆動開発と呼びたいもの](love-driven-dev.html#ldd-discern)の第四部で、期待・信仰・理想化・安心や依存・愛着と並べて見ています。
 
 出典：[Edmondson (2002)](https://www.hbs.edu/ris/Publication%20Files/02-062_0b5726a8-443d-4629-9e75-736679b870fc.pdf) *Managing the risk of learning: Psychological safety in work teams*. HBS Working Paper 02-062（本文で確認。pp.8–10）／[Edmondson & Lei (2014)](https://doi.org/10.1146/annurev-orgpsych-031413-091305) *Annual Review of Organizational Psychology and Organizational Behavior* 1:23–43（本文で確認。pp.24–25）
 
@@ -573,7 +573,7 @@ pjdhiro の見方では、防衛が守ろうとする不安の一つが、恥不
 
 <strong>pjdhiro の見方：</strong>バランスが大事。心理的安全性も群盲象を評すような一面の切り取りなのだろうと思っています。つまり、その駆動源を探している。信頼とは？を深掘りしているのはそのため
 
-信頼を深く掘る作業は、[Love駆動開発と呼びたいもの](love-driven-dev.html#信頼と信仰や期待を人は自分の中で分けられるのか)の第四部で、期待・信仰・理想化・安心や依存・愛着と信頼を一つずつ比べる形で進めています。
+信頼を深く掘る作業は、[Love駆動開発と呼びたいもの](love-driven-dev.html#ldd-discern)の第四部で、期待・信仰・理想化・安心や依存・愛着と信頼を一つずつ比べる形で進めています。
 
 <!--PART:巻末-->
 
