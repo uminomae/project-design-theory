@@ -127,7 +127,7 @@ date: 2026-11-10
 - [見えない中心を、自分を分けて見る](love-driven-dev.html#ldd-center)：中心が自分から見えないことと、メタ認知。
 - [ここまでのまとめ — 重力の井戸の絵の上に](love-driven-dev.html#ldd-summary)：四つの探究を、この絵の上に並べた表。
 - [まだ分からないこと](love-driven-dev.html#ldd-open)：くぼみの中に立つ自分は、人と人との間にいるのか。
-- [補足資料 — 物理との、構造の類似](love-driven-dev.html#ldd-physics)：四つの探究と、物理の形。
+- [物理と、構造はどこまで似ているか](love-driven-dev.html#ldd-physics)：四つの探究と、物理の形（Love駆動開発の第二部の章）。
 
 この絵から始まった読み物もあります。
 

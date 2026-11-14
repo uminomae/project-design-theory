@@ -146,7 +146,7 @@ Love駆動開発は、事業構想学の特論にあたる。総論と呼ぶな�
 ### テキスト・参考資料
 
 - [Love駆動開発と呼びたいもの](https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html)と、その姉妹の読み物（[愛は、重力に似ていないか](gravity-love.html)／[創造とは](https://uminomae.github.io/project-design-theory/cs/)／[意識とは](https://uminomae.github.io/project-design-theory/as/)／[欠損駆動思考](https://uminomae.github.io/project-design-theory/ks/)）
-- 各回の出典は読み物の「参照の一覧」にある
+- 各回の出典は読み物の「出典と参照」にある
 
 ### 受ける前に知っておくこと
 

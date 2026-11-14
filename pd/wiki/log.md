@@ -917,3 +917,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第七部「では、自分をどう開発するか」を巻末の手前に置いた版）
 - pages: 足したのは工事中の部と章で、wiki の本文の材料に触れないので本文を変えず、checked に今の時刻を書いた
+
+## [2026-11-14] check | Love 駆動開発・プロジェクトデザイン（読み物の組み直し：第七部の題・禅の章と物理の章の置き場・巻末の出典とリンク集）
+- scope: 2 ページ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第七部を「実践 — この見方を、いつ使い、どう鍛えるか」に、禅の章を第七部へ、物理の補足資料を第二部の章へ移し、巻末を出典と参照・リンク集に分け直した版）
+- pages: 章の置き場と題の組み直しで、wiki の本文の材料（駆動源・Love の面・問い）に触れないので本文を変えず、checked に今の時刻を書いた
