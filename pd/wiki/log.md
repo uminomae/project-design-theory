@@ -927,3 +927,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ（`concepts/Love 駆動開発` を作り直し、`プロジェクトデザイン` は確かめだけ）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第五部「パースのアガパズムと、似ていないか」、第七部の四つめの場面（意思決定）、巻末の「哲学の視点で見ると、何が近いか」、背景と経緯の頭のカードを足した版）、`pd/src/content/site-data.mjs`（変化なし）
 - pages: Love 駆動開発に、分野を探しに行った理由のカード、パースのアガパズムとの近さと違い（Claude の読み・工事中）、役立つ四つの場面と意思決定の見方、哲学の章の予告を足した。プロジェクトデザインは、引いている段が変わっていないので本文を変えず compiled を今日にした
+
+## [2026-11-15] compile | Love 駆動開発・プロジェクトデザイン（読み物の第七部の意思決定の場面に個性のカード、背景の「私というアプリ — 一年の軌跡」の統合）
+- scope: 2 ページ（`concepts/Love 駆動開発` に一段足し、`プロジェクトデザイン` は確かめだけ）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第七部の四つめの場面に pjdhiro の見方「私の個性として、営利と非営利の両方を睨んでる…」を足し、巻末の背景の三つの畳みを一つにした版）
+- pages: Love 駆動開発の「使い方」に、決めるときの価値についての pjdhiro の見方を一文で足した。背景の畳みは wiki に引いていないので変えない。プロジェクトデザインは引いている段が変わっていないので本文を変えず checked を今の時刻にした
