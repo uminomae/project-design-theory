@@ -10,7 +10,7 @@
 
 | サイト | 名前（日本語） | 名前（英語） | 紹介の一文（日本語） | 紹介の一文（英語） | 元にした入口の文 |
 |---|---|---|---|---|---|
-| Love駆動開発の読み物（`pd/reader/love-driven-dev.html`） | Love駆動開発と呼びたいもの β | What I Want to Call Love-Driven Development (beta) | 私は何に駆られてプロジェクトを行うのか。人やプロジェクトを動かしているもの（駆動源）が何かを探す読み物 | What am I driven by when I carry out a project? A reader that looks for what moves people and projects (the driving source) | 冒頭の概要の「問い」 |
+| Love駆動開発の読み物（`pd/reader/love-driven-dev.html`） | Love駆動開発と呼びたいもの β | What I Want to Call Love-Driven Development (beta) | 何に駆られてプロジェクトを行うのか。人やプロジェクトを動かしているもの（駆動源）が何かを探す読み物 | What am I driven by when I carry out a project? A reader that looks for what moves people and projects (the driving source) | 冒頭の概要の「問い」 |
 | 意識とは（`as/`） | 意識とは | What Is Consciousness | 人は、何で世界を切り取っているのか。生き延びられるか（生存）と、つながっていられるか（信頼）の二つの信号から見る探究 | What do people cut the world with? An exploration through two signals: whether we can survive, and whether we can stay connected (trust) | 最初の画面の二行と、冒頭の二段落め |
 | 欠損駆動思考（`ks/`） | 欠損駆動思考 | Kesson-Driven Thinking | 記号の上では 0 と出るところで、人は何を感じているのか。欠けている感じや違和感を駆動源にする、思考や精神の構えを見る探究 | What do people sense where symbols read zero? An exploration of a stance of mind driven by a sense of lack or unease | 冒頭の二段落め |
 | 創造とは（`cs/`） | 創造とは | What Is Creation | 物事が生まれるとき、どんな構造と過程をたどるのか。30 の分野の論を並べ、五つの段（場 → 波 → 縁 → 渦 → 束）で書く探究 | What structure and process does something follow when it comes into being? An exploration that sets theories from 30 fields side by side and writes them in five stages (Field → Wave → Edge → Vortex → Bundle) | 入口の組み直し（#73）が済んだら、その冒頭の問いに合わせて直す |

@@ -204,7 +204,7 @@ export const TRANSLATIONS = {
     "repo.loveDrivenDev": "Love駆動開発と呼びたいもの β",
     "repo.awareness": "意識とは",
     "repo.loveDrivenDevDesc":
-      "私は何に駆られてプロジェクトを行うのか。人やプロジェクトを動かしているもの（駆動源）が何かを探す読み物",
+      "何に駆られてプロジェクトを行うのか。人やプロジェクトを動かしているもの（駆動源）が何かを探す読み物",
     "repo.kessonDesc":
       "記号の上では 0 と出るところで、人は何を感じているのか。欠けている感じや違和感を駆動源にする、思考や精神の構えを見る探究",
     "repo.creationDesc":
