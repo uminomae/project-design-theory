@@ -1,5 +1,5 @@
 ---
-note: "English version of READER-love-driven-dev.md (translated by Claude, 2026-11-14, from the Japanese version 1.012). This English page is not kept in step with every change to the Japanese page: the Japanese page may be newer, and the English page is updated from time to time (pjdhiro 2026-11-13). When it is updated, change the version and date in scripts/reader-love-driven-dev-en-template.html. Quotations from sources are given in the original English where the source is in English; pjdhiro's words are translated by Claude and marked as such. Links to pages that do not yet have an English version point to the Japanese page and say '(in Japanese)'."
+note: "English version of READER-love-driven-dev.md (translated by Claude, 2026-11-14, from the Japanese version 1.036). This English page is not kept in step with every change to the Japanese page: the Japanese page may be newer, and the English page is updated from time to time (pjdhiro 2026-11-13). When it is updated, change the version and date in scripts/reader-love-driven-dev-en-template.html. Quotations from sources are given in the original English where the source is in English; pjdhiro's words are translated by Claude and marked as such. Links to pages that do not yet have an English version point to the Japanese page and say '(in Japanese)'."
 ---
 
 # What I Want to Call Love-Driven Development β
@@ -12,9 +12,15 @@ note: "English version of READER-love-driven-dev.md (translated by Claude, 2026-
 
 After a year of exploring the shapes things take as they come into being, and human consciousness, one question remained.
 
-<a id="ldd-question"></a><strong>pjdhiro's question (translated by Claude):</strong>What drives me to do projects? What drives me to live?
+<a id="ldd-question"></a><strong>pjdhiro's question (translated by Claude):</strong>What drives us to do projects? What drives us to live?
 
 Businesses and projects are usually told starting from a vision. Yet looking back, it can feel as though something had begun to move before the vision was put into words. Even the people making something sometimes cannot tell whether they are making it or it is arising from what surrounds them. <a id="ldd-drive"></a>On this page, whatever moves people and projects is called the **driving source**, and the page looks for what it is.
+
+This question asks what the driving source is. Rereading this reader, pjdhiro said that what belongs at the opening may be two questions about the driving source, its "what" and its "why", and added the question on the side of why.
+
+<a id="ldd-question-why"></a><strong>pjdhiro's question (translated by Claude):</strong>Why do we try to become something different from what we were?
+
+With this "try to become", pjdhiro wants to say, without separating them, both the passive sense of becoming without meaning to and the active sense of seeming to try to become. The first half of this reader (Parts 1 to 5) looks at the first question, and the second half (Parts 6 and 7) at the second.
 
 <details><summary>More — what starts moving before a vision is put into words</summary>
 
@@ -160,7 +166,7 @@ They can be read as the same single thing seen from different sides: exploration
 
 Put another way: when a project moves, people are thinking and feeling something. This page looks at that in light of how nerves work. Nerves, too, are made of the same matter as everything else in the universe and follow the same laws of physics. So when the way thinking and feeling move is set beside the behavior of gravity and quanta, there are places where the shapes look similar. This page uses those similar shapes as clues to infer the invisible driving source.
 
-Most of the findings cited are ones that the four explorations have each researched. Where they come from is gathered in "References" at the end.
+Much of the knowledge cited here is what the four explorations have each researched. The papers and books cited are gathered in "[Sources and references](#ldd-refs)" at the end, and the pages of the four explorations in "[Links](#ldd-links)".
 
 This page also has the aspect of confirming, from the viewpoint of Western science, what has long been taught in Eastern thought, because that is how pjdhiro has thought.
 
@@ -211,87 +217,17 @@ What is lined up here is Love as defined by people other than pjdhiro. What pjdh
 
 Part 1 posed the question and checked the views so far on the driving source of projects and on the word Love. This reader sees that driving source as what I want to call Love.
 
-What I want to call Love cannot be seen with the eyes. Part 2 looks at the invisible driving source through things of similar shape: gravity, and the structure of how things come into being.
+What I want to call Love cannot be seen with the eyes. Part 2 looks at the invisible driving source through things similar in shape: the structure of how things come into being, and gravity.
 
 <!--/TURN-->
 
 <!--PART:Part 2|Seeing the invisible driving source through similar shapes-->
 
-## Isn't Love like gravity?
-
-<!--OPEN-->
-
-Looking for something shaped like the invisible driving source, gravity comes to mind first. Seeing Love as likely to be related to something like a gravitational field, pjdhiro put forward the following hypothesis.
-
-<a id="ldd-well"></a><strong>pjdhiro's hypothesis (translated by Claude):</strong>In a field where waves appear as if made of grains of love, a Love field, the universe and we drift as if drawn by the distortions of the field of Love.
-
-First, set what I want to call Love beside gravity. A gravitational field is distorted around a mass, and stars and light alike travel within it along the distortion. To those inside, the distortion itself cannot be seen. The mortar-shaped picture that makes this hollow three-dimensional is called a **gravity well** on this site. Dots connecting within one person, being moved by fluctuations of the field, and people gathering and something beginning to be born may all happen within that distortion.
-
-<div class="microworld glow-card" data-gravity-love role="group" aria-label="An interactive figure placing a gravity well and a well of love side by side">
-<p class="mw-title">Two wells of the same shape</p>
-<div class="gl-pair">
-<div data-gl-panel data-label="A　Gravity" data-center="Sun" data-accent="navy" data-bodies="Mercury,Venus,Earth,Mars,Jupiter" data-aria="Figure A: a grid sinks deeper toward the center, and five planets orbit around it. The Sun at the center does not move."><div class="gl-stage"></div><p class="gl-caption">Center = the Sun. Depth of the hollow = gravitational potential</p></div>
-<div data-gl-panel data-label="B　Love" data-center="Love" data-accent="coral" data-bodies="People,Intentions,Actions,Feelings,Relations" data-aria="Figure B: love is at the center of a hollow of the same shape, and people, intentions, actions, feelings and relations orbit around it. The center does not move."><div class="gl-stage"></div><p class="gl-caption">Center = love. Depth of the hollow = strength of attraction (a metaphor)</p></div>
-</div>
-<div class="mw-controls"></div>
-<p class="mw-status" aria-live="polite"></p>
-<p class="mw-fallback">(Where JavaScript runs, two 3D wells appear here side by side. In both, a grid sinks toward the center and five points orbit around it. The center on the left is the Sun; the center on the right is love. Press "View from the center" to look around from the bottom of the hollow.)</p>
-</div>
-
-On the left is a gravity well; on the right, a well of the same shape with love placed at its center. The figures can be rotated by dragging. The figure on the right is an analogy.
-
-<div class="reader-linkcards">
-<a class="reader-linkcard glow-link" href="gravity-love.html">
-<img class="reader-linkcard__thumb" src="../assets/thumbs/project-design.jpg" alt="" width="720" height="378" loading="lazy">
-<span class="reader-linkcard__body"><span class="reader-linkcard__title">Isn't Love like gravity? (in Japanese)</span><span class="reader-linkcard__sub">The center of a gravity well does not move, looks as if nothing is there, and cannot be seen from oneself. Isn't that center like love? The primary source for the hypothesis about the driving source.</span><span class="reader-linkcard__url">uminomae.github.io/project-design-theory/reader/gravity-love.html</span></span>
-</a>
-</div>
-
-<details><summary>More — the gravitational field and the gravity well</summary>
-
-Here, gravity is seen as a gravitational field. A gravitational field is distorted around a mass. General relativity writes this distortion as the curvature of spacetime. In Newtonian mechanics, the gravitational field around a mass can be drawn as the depth of a hollow (the gravitational potential).
-
-The picture that makes this hollow three-dimensional is the gravity well. What the picture depicts, and how far it is fact of physics and where it becomes an analogy, are gathered in [What is a gravity well?](gravity-well.html) (in Japanese). In general relativity, stars and light alike are within that gravitational field and travel along the distortion.
-
-</details>
-
-<details><summary>More — seeing the invisible center by dividing oneself</summary>
-
-<a id="ldd-center"></a>
-
-This part proceeds in three steps: the center that cannot be seen from oneself, dividing oneself in trying to see it, and what is felt at the end of that dividing.
-
-First, what pjdhiro was looking for.
-
-<strong>pjdhiro's background (translated by Claude):</strong>As the energy that goes field → wave → edge → vortex until it swirls into a vortex, I am looking for a driving engine like a void, a center that is zero and does nothing, like gravity or love.
-
-In the figure of the gravity well, the center never moves once ([three properties of the center](gravity-well.html#gw-center), in Japanese). Even so, every orbit in the figure follows the hollow this unmoving place has made. And when you stand at the bottom of the well, everything around appears to revolve around you, yet there is one place that shows up in no direction you face: this very center you are looking from.
-
-If the center cannot be seen from oneself, seeing it means dividing the self that is looking.
-
-<strong>pjdhiro's view (translated by Claude):</strong>Metacognition must also be the work of dividing oneself. When you practice shikan (calm abiding and insight) and observe what is inside you as if pointing at objects, in the end the observing I remains. From trying to observe even that, the observing I and the observed I become the same. They can no longer be divided. The process from there becomes a different sensation, as if changing from classical to quantum theory. If I were to explain metacognition, I think the closest metaphor is that it resembles the work of looking at an electron in ever finer detail.
-
-pjdhiro also likens what kind of work shikan is in the language of programming.
-
-<strong>pjdhiro's image (translated by Claude):</strong>Meditation is like the C function bzero(), or memset(0). It makes it easier to discern whether there is a change or not. Like polling for the 1 that something like stray thoughts sets. Shikan feels like that.
-
-bzero() and memset(0) are functions that fill a region of memory entirely with 0. Polling is a way of going to look, repeatedly, at whether a state has changed. About what one goes to look at, pjdhiro continued as follows.
-
-<strong>pjdhiro's view (translated by Claude):</strong>It is the work of catching thoughts, feelings and thinking that arise, and sounds and images I perceive, and making them objects one after another. Sensory stimuli such as perceived sounds and images are less made into objects than a matter of looking at the I that caught them. Feel it as it is, and confirm that there is an I that is feeling. It isn't something difficult like objectifying; you point at it with your heart.
-
-At the end of dividing, the layer changes. The I that envisions, plans and decides can be written in classical terms. When that I is divided, the observing I and the observed I can no longer be divided, and from there on it becomes a different sensation. What is felt beyond that, pjdhiro writes as follows.
-
-<strong>pjdhiro's image (translated by Claude):</strong>……After only the one who observes and the one observed remain, rather than a sense of stability from the two fusing, what is close is a feeling of calm, as if the presence of a mother, connected by an umbilical cord to the top of the head of the I that can only look, brings stability. ……Boundlessness is the sense that what lies beyond cannot be seen. As an expression I used the analogy of the umbilical cord and the mother, but a fetus probably does not recognize that there is a mother in the first place. In the same way, the field or the great ocean is something one does not know. If you include the circulation of the nutrients and oxygen the mother takes in, what lies beyond is connected with the whole universe.
-
-One cannot see ahead, and yet one is stable. Apart from the reassurance gained by confirming, there is also a reassurance of being connected without confirming. The primary source for this flow is [chapter 2](gravity-love.html#gl-center) to [chapter 4](gravity-love.html#gl-manager) of the sister reader "Isn't Love like gravity?" (in Japanese).
-
-</details>
-
 ## What shape does creation take?
 
 <!--OPEN-->
 
-Part 2 looks at the invisible driving source through the structure of how things come into being. The exploration that describes that structure is "What Is Creation". The shape of creation continues as a basic viewpoint into the second half of this reader, so an overview is given first.
+Part 2 first looks at the structure of how things come into being. One of the explorations, "What Is Creation", writes about that structure. The shape of creation continues as a basic viewpoint into the second half of this reader, so an overview is placed first.
 
 "What Is Creation" holds that creation proceeds field → wave → edge → vortex → bundle. Its top page sets out the five stages like this: "The field is the environment and conditions in which creation arises; the wave is the process of exploration and fluctuation; the edge is the boundary where heterogeneous elements meet; the vortex is the core stage in which elements combine and transform; the bundle is the completion in which they are integrated as a new form" (translated by Claude).
 
@@ -329,68 +265,19 @@ Cases that departed from each shape are also on record. In Bénard convection, i
 
 These five are five of the 30 domains. The records of other domains also list theories arranged in the same columns. Not every theory fits, however; shapes that did not reach integration and theories that did not fit are also on record.
 
-<details><summary>More — the sources of the five examples, and the records</summary>
+<details><summary>More — the original sources, and the records for each field</summary>
 
-The records for each domain are in the domain records of [What Is Creation](https://uminomae.github.io/project-design-theory/cs/?modal=domains) (in Japanese); a window listing the 30 domains opens. They arrange what is written as shapes similar to the five stages. The reading of whether they are similar belongs to the records; here, the description stays within what the sources say.
+These are the original sources of the five cases, and the records for each field that read them. The content of the theories, and the reading of whether they resemble the five stages, are in the records. The list of records for the 30 fields opens in the window of [What Is Creation](https://uminomae.github.io/project-design-theory/cs/?modal=domains) (in Japanese). pjdhiro chose the five fields and themes, and Claude chose which theories to take up. All the original sources were checked against their full text.
 
-pjdhiro chose the five domains and the theme for each; Claude chose which theories to take up within each theme. In the records for each domain, the opposition, collision, integration or new stability, and unit of each theory are written in separate columns, and the five-stage sequences in the main text lay those columns out in order. Every theory taken up was checked against the full text of the source, and most have been checked in the domain records or in the research for the sister reader "[What Is Psychological Safety](psychological-safety-en.html)".
+- Physics (dissipative structures): [Prigogine (1977)](https://www.nobelprize.org/uploads/2018/06/prigogine-lecture.pdf), [Rayleigh (1916)](https://doi.org/10.1080/14786441608635602), [Bénard (1901)](https://archive.org/details/lestourbillonsce00bena). Theory 8 in [the physics record](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D02-physics.md), theory 1 in [the complexity science record](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D29-complexity-science.md) (in Japanese).
+- Life science (fertilization): [Reichmann et al. (2018)](https://doi.org/10.1126/science.aar7462).
+- Chemistry (the BZ reaction): [Field & Noyes (1974)](https://doi.org/10.1063/1.1681288). Theory 3 in [the chemistry record](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D03-chemistry.md) (in Japanese).
+- Psychology (Klein): Klein ([1946](https://archive.org/details/ijp-27-1946-1-2), [1940](https://archive.org/details/ijp-xxi-1940-2)). The difference between idealization and trust is looked at in the chapter "[How do idealization and trust differ?](#ldd-idealize)".
+- A plain case (romantic love): the research follows mainly couples at the start of marriage. [Niehuis et al. (2013)](https://www.bgsu.edu/content/dam/BGSU/college-of-arts-and-sciences/NCFMR/documents/WP/WP-13-05.pdf), [Murray et al. (2011)](https://doi.org/10.1177/0956797611403155).
+- Management studies (innovation): Schumpeter ([1912](https://doi.org/10.3790/978-3-428-51746-6), [1939](https://archive.org/details/in.ernet.dli.2015.150123), [1942](https://archive.org/details/in.ernet.dli.2015.190072)) is theory 1 in [the economics record](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D21-economics.md), and Nonaka et al. ([1996](https://doi.org/10.1016/0160-791X(96)00001-2), [2000](https://doi.org/10.1016/S0024-6301(99)00115-6)) theory 1 in [the business management record](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D22-business-management.md) (in Japanese).
+- Management studies (organizational evolution): [March (1991)](https://doi.org/10.1287/orsc.2.1.71). Theory 5 in the business management record.
 
-**Physics (dissipative structures).** Prigogine (1977, Nobel lecture) describes systems far from equilibrium that exchange with their outside. Fluctuations away from the average state are always present; when the temperature gradient or the like is smaller than a certain value they are damped and vanish, and when it exceeds that value some fluctuations are amplified into macroscopic order. The new order is stabilized by exchange of energy with the outside (p.267). Near the branching point, fluctuations decide which branch the system goes down (p.273), and in a finite system fluctuations eventually disturb the direction of the order (p.277). On Bénard convection itself, Rayleigh (1916) writes that until the temperature gradient exceeds a certain value the equilibrium is stable, and once it does, of the several patterns of disturbance the one with the greatest growth rate predominates (pp.530, 539), and Bénard (1901) writes that what was at first a network of polygons with four to seven sides slowly settles into regular hexagons (p.6). However, Rayleigh writes that the theory's boundary conditions at top and bottom differ from Bénard's experiment, and that it does not deal with the transition to hexagons (pp.532–533). It is also written that in a liquid of extremely low viscosity, the vortical flow does not settle (p.4). These are theory 8 in the physics record and theory 1 in the complexity science record.
-
-**Life science (fertilization).** Reichmann et al. (2018) begin by writing that after fertilization the half genomes of egg and sperm come together to become the genome of a new individual, and that in mammals the paternal and maternal chromosomes first meet when the nuclear membrane breaks down and the first division begins (p.3). Live imaging of mouse zygotes showed the two genomes staying apart throughout the first division (p.3). A spindle forms around each of the two pronuclei, each gathering one of the genomes. The two spindles line up and align their poles before division, but the two genomes are separated without mixing (pp.3–5, 7). When the two spindles fail to line up, the result is an embryo of cells with two nuclei, the same form as an error often seen in in-vitro fertilization clinics (pp.5–6). The two genomes stay apart only during the first division; in the following divisions they mix under one spindle (p.6).
-
-**Chemistry (the BZ reaction).** The Belousov–Zhabotinsky reaction is a chemical oscillation in which the color of the solution changes periodically. In the model of Field and Noyes (1974), bromide ions and bromate ions compete for bromous acid; when bromide ions fall below a critical concentration, the system switches to an autocatalytic process, which indirectly produces bromide and brings things back. This back-and-forth arrives at the orbit of the same period regardless of the initial state. It is also written that when the coefficients are off, no oscillation occurs and the system settles into a steady state. This is theory 3 in the chemistry record.
-
-**Psychology (Klein).** Klein (1946) writes that the infant holds the satisfying object and the frustrating object apart, and protects itself from the terrifying aspect by enlarging the good aspect (pp.99, 101). As it grows, the loved and hated aspects come to be felt as not apart; fear of loss, a sense of guilt and a state close to mourning arise, and the urge to repair the one it feels it has harmed (reparation) comes to the fore. The splitting movement remains in changed form, and anxious situations are experienced again and again (p.105). Splitting mechanisms and defenses are part of normal development, and also the ground of later illness (p.109). Klein (1940) writes that when hatred prevails in mourning, trust in the good object is shaken and idealization is disturbed (pp.137–138); that as trust is regained little by little, one can bear the knowledge that the object was not perfect and still not lose trust and love (p.138); and that with each step of integration, splitting occurs again (p.132). Both are inferences from the infant mind and from the clinic of mourning, and the 1946 paper notes that these are hypotheses inferred from analysis (p.99). Idealization, and how it differs from trust, are looked at in the chapter "[How do idealization and trust differ?](#ldd-idealize)".
-
-**A plain example (romantic love).** The flow of romantic love in the main text was not built from research. What research follows is mainly couples at the start of marriage. The working paper of Niehuis, Reifman and Lee (2013) summarizes research on the line of disillusionment: the view that during courtship partners manage impressions and idealize each other, and on marriage the idealized image gives way to a realistic one; and the report that disillusionment in the first two years of marriage (a decline in love, a decline in affection, a decline in seeing the partner as responsive, an increase in ambivalence) distinguished couples heading for divorce from those who were not (pp.3–6). Murray et al. (2011) measured 222 first-married, childless couples, married two to six months, seven times every half year over three years. Satisfaction clearly declined overall, but those who at the time of marriage strongly saw their partner as matching their ideals did not decline in satisfaction. The authors infer that when time and interdependence reveal that the partner falls short of expectations, people who softly revise their ideals to fit the partner as now seen may keep their satisfaction, and also write that the data are correlational, not proof of causation. What the research followed is couples at the start of marriage, not romantic love as a whole.
-
-**Management studies (innovation, Schumpeter).** Schumpeter (1912) defines economic development not as a stimulus from outside but as a change in the circular flow that the economy produces "aus sich selbst heraus" (p.103), and writes of development as the carrying out of new combinations. Trying to leave the familiar route runs into the pressure of surrounding society and resistance within oneself ("in seiner eigenen Brust") (pp.117–120), and the person who carries out new combinations fights that resistance (p.132). New combinations are carried out by pulling part of the existing goods away from their previous uses and using them differently (p.158), for example when fighting competitors head on (p.174). In the phase of crisis, businesses that cannot make the needed adaptation may perish (pp.452–453). The 1939 book writes that innovations occur in swarms, disrupt the existing system and force a distinct process of adaptation (pp.100–101), and the 1942 book writes that industrial mutation incessantly revolutionizes the economic structure from within, destroying the old one and creating a new one (p.83). The revolutions are not continuous but occur in discrete rushes separated by spans of comparative quiet, and revolution and the absorption of its results make up the business cycle (note on p.83). This is theory 1 in the economics record.
-
-**Management studies (innovation, Nonaka et al.).** Nonaka et al. (1996) describe knowledge creation in five phases. Starting from sharing tacit knowledge, it proceeds to creating concepts, justification and building an archetype, and the concept that has become an archetype moves across the boundaries of levels and departments and starts a new cycle of knowledge creation (pp.213–215). When fluctuation enters, the people in the organization face a breakdown of routines, habits and cognitive frameworks, and confusion, and a sense of crisis arises (p.211). It is also written that Japanese-style knowledge creation can fall into groupthink and over-adaptation to past success (pp.215–216). Nonaka et al. (2000) write that knowledge is created in a spiral passing through seemingly opposed pairs such as order and chaos, tacit and explicit, self and other, and that the key is dialectical thinking that synthesizes beyond contradiction (p.7). Creative chaos is intentional chaos, in which leaders set challenging goals to evoke a sense of crisis, and leaders guide the organization so it does not fall into complete disorder (pp.26–27). This is theory 1 in the management studies record.
-
-**Management studies (the evolution of organizations).** March (1991) writes that in organizational learning the allocation of resources between exploring new possibilities and exploiting known certainties conflicts. Systems leaning only toward exploration have too many undeveloped new ideas and too little distinctive competence, and systems leaning only toward exploitation are likely to be trapped in suboptimal stable equilibria. So maintaining a balance between the two is a primary factor in survival and prosperity (p.71). The trade-off between exploration and exploitation includes conflicts between short-term and long-term concerns, and between gains to individual knowledge and gains to collective knowledge (p.74). The organizational code can learn only from individuals who deviate from it, and slow-learning individuals maintain diversity longer and raise the knowledge of the code (p.76). This theory is a simulation using an organizational code and models of individuals, not a record of evolution itself. This is theory 5 in the management studies record.
-
-</details>
-
-<details><summary>More — everyday phenomena and research analyses by domain</summary>
-
-For each of the five domains, here are two everyday phenomena a middle-school student can understand, and two analyses whose sources were read in full and checked in the records. Ones not read in the records are left out. "Analysis" here means the content of a source written in the records; no ranking of which is most advanced is given.
-
-**Physics.** Phenomena: (1) a thin layer of liquid heated from below divides into cells and forms a network of hexagons (Bénard convection). (2) Moist air cools and becomes water droplets (droplets forming from supersaturated vapor). Analyses: (1) Prigogine (1977) writes that until the temperature gradient exceeds the dividing value, fluctuations are damped and vanish, and once it is exceeded, some fluctuations grow into an order sustained by exchange of energy with the outside. (2) Becker and Döring (1935) write that in supersaturated vapor, droplets smaller than a critical size evaporate back, and droplets grow only when a nucleus of critical size is born by fluctuation.
-
-**Biochemistry.** Phenomena: (1) the color of a solution changes periodically (the BZ reaction). (2) A male and a female meet and offspring are born that inherit from both (fertilization). Analyses: (1) Novák and Tyson (2008) list four conditions for sustained oscillation: negative feedback, time delay, nonlinearity, and a balance of timescales. (2) Reichmann et al. (2018) show, by imaging live embryos, that in mouse zygotes a spindle forms around each of the maternal and paternal genomes, and the two genomes stay apart without mixing throughout the first division.
-
-**Psychology.** Phenomena: (1) one day you think a close friend is a wonderful person, and on the day you quarrel they feel like a terrible person. (2) After losing someone important, grief, blame and longing arise at the same time. Analyses: (1) Klein (1946) writes that the infant holds the satisfying object and the frustrating object apart, and protects itself from the terrifying aspect by enlarging the good aspect. (2) Klein (1940) writes that when hatred prevails in mourning, trust in the good object is shaken, and as trust is regained little by little, one can bear the knowledge that the object was not perfect.
-
-**A plain example (romantic love).** Phenomena: (1) at the start of dating the partner looks wonderful, and as time passes their faults stand out. (2) Within a few years of marriage, a couple's satisfaction declines. Analyses: (1) The working paper of Niehuis et al. (2013) summarizes research on the line of disillusionment at the start of marriage as a decline in love and affection and an increase in ambivalence. (2) Lavner and Bradbury (2010) followed 464 newlyweds for four years and write that satisfaction on average starts high and declines, but that there are five groups of trajectories, such as a group that starts high and does not decline, and a group that starts low and declines sharply.
-
-**Management studies.** Phenomena: (1) a new product is born at the end of confusion on the ground. (2) A company cuts back on new attempts and only polishes its usual strengths. Analyses: (1) Nonaka et al. (2000) write that in developing the Prius, top management rejected a proposal to improve fuel efficiency by 50% and demanded 100%, and after the team went through confusion it developed a hybrid car (p.27). (2) March (1991) writes that leaning only toward exploitation traps one in a suboptimal stable equilibrium.
-
-</details>
-
-<details><summary>More — examples from other domains (quantum theory, insight, aesthetics, team transitions)</summary>
-
-Shapes similar to the five stages are also in the records of other domains. Here are four. As above, arranging them into the five stages is Claude's reading.
-
-- Quantum theory (physics): The field is one quantum system and its environment. The wave is quantum superposition and an environment that keeps monitoring the system. The edge is where interaction with the environment destroys interference between selected states. The vortex is only the few states that withstand the environment's monitoring remaining. The bundle is records of the remaining states being copied many times over in the environment.
-- Psychology (insight): The field is inside one person's head (seconds to minutes). The wave is a way of seeing that comes from past experience, and a new problem it cannot solve. The edge is the impasse of continuing not to solve it. The vortex is constraints loosening and chunks coming apart, changing the way of seeing. The bundle is the solution being carried out quickly and without hesitation.
-- Aesthetics (art): The field is one judgment. The wave is the imagination and the ideas of reason. The edge is the sublime, where the imagination falls short of the ideas of reason and the vital forces are momentarily checked. Vortex and bundle are not separated: they at once flow out all the more strongly.
-- Management studies (team transitions): The field is a project team (days to months). The wave is the framework set at the first meeting, and deadlines and outside demands. The edge is dropping old patterns and re-engaging with the outside at the midpoint toward the deadline. Vortex and bundle are not separated: the team enters a second phase with an agreed plan.
-
-**Quantum theory.** Zurek (2003) writes of decoherence and einselection as two views of the same process. A quantum system interacts with its environment, and only the few states that can be copied many times over into the environment remain. This is theory 9 in the physics record.
-
-**Psychology (insight).** Knoblich et al. (1999) write that in problems that need insight, an initial representation from past experience hides the solution and an impasse arises. As processes that change the representation they name constraint relaxation and the decomposition of familiar chunks, and test them with matchstick arithmetic problems. This is theory 1 in the psychology record.
-
-**Aesthetics.** Kant's *Critique of Judgment* (1790) writes that in the beautiful, the imagination and the understanding agree in free play, and in the sublime, the imagination falls short of the ideas of reason and the vital forces are momentarily checked, then at once flow out all the more strongly. Theories in aesthetics are not theories that have verified phenomena, but analyses of aesthetic judgment. This is theory 3 in the aesthetics record.
-
-**Management studies (team transitions).** Gersick (1988) observed eight teams over their whole life and writes that teams proceeded within the framework set at the first meeting, dropped their old ways and re-engaged with the outside at the calendar midpoint toward the deadline, and entered a second phase with a new plan. It is also written that in one team whose opinions remained split even at the midpoint, the leader dissolved the group and decided the proposal alone. This is theory 4 in the management studies record.
-
-**Everyday phenomena and research analyses.** Quantum theory and phase transitions: the phenomenon is that when water cools into ice, crystals form separately here and there, and mismatches remain at the borders. The theory of Zurek (1996) and others, and experiments using crystals of 16 ions (Ulm et al. 2013, Pyka et al. 2013), write that in a phase transition the mismatches between orientations chosen independently in each region remain as defects, and the number of defects is set by the speed at which the transition is crossed. Psychology: the phenomenon is that when asked to do a task you do not want to do and taking it on for a small reward, you tell yourself "it was interesting" (cognitive dissonance). Diamond (2013) writes that when switching ways of seeing, one suppresses the previous set and loads another way of seeing into working memory, and the cost decreases with preparation but does not vanish. Aesthetics: the phenomena are fear and being drawn in arising at the same time before a fierce storm or a high mountain (the sublime), and, in Noh, becoming the flower because the viewer does not know (Zeami's "what is hidden is the flower"). Okakura Kakuzō (1906) writes of putting weight on the process of seeking perfection rather than on perfection, and that only those who complete the imperfect in their minds find beauty. Management studies: the phenomenon is a group suddenly changing how it works in the middle of a school term. Gersick (1988) writes that eight teams dropped their old ways and made a transition at the midpoint toward the deadline.
-
-Myth is also included in art. The first volume of the *Kojiki* tells the story of Izanagi and Izanami circling the heavenly pillar. The two deities descend to the island of Onogoro and set up the heavenly pillar and a great hall; Izanami speaks of a place on Izanami's body "that has not grown together", and Izanagi of a place "that has grown in excess". Izanagi says "吾與汝行廻逢是天之御柱而、爲美斗能麻具波比" (you and I shall go around this heavenly pillar, meet, and unite), and Izanami goes around from the right and Izanagi from the left, and they meet. Here Izanami speaks first, "阿那邇夜志愛袁登古袁" (oh, what a fine young man), and then Izanagi says "阿那邇夜志愛袁登賣袁" (oh, what a fine young woman). After they have spoken, Izanagi says "女人先言不良" (it is not good that the woman spoke first), but the two unite, and the child born is Hiruko, who is put in a boat of reeds and set adrift. The two go up to the heavenly deities, who divine and say "因女先言而不良" (it was not good because the woman spoke first). The two go down and circle the pillar again, and this time Izanagi speaks first; the birth of the land continues from the island Awaji-no-ho-no-sawake, and the Land of the Eight Great Islands is born. (The English glosses in parentheses are Claude's.)
-
-Fitted to the five stages, the field is the island of Onogoro and its pillar; the wave is the difference between the place "that has not grown together" and the place "that has grown in excess"; the edge is where they circle the pillar from right and left and meet; the vortex is exchanging words and a child being born (Hiruko is set adrift, a form that falls short); and the bundle is the birth of the land that follows after circling again. This matching is Claude's reading; the *Kojiki* does not say so. In [Applying folk tales to understand spinor fields](https://uminomae.github.io/pjdhiro/20250616baToMinwa/) (2025, in Japanese), pjdhiro touches on this story, writing that it was "the first thing that came to mind with the order specified in qVq⁻¹" of spinors.
+Under art, myth is also included: the story in the first volume of the *Kojiki* in which Izanagi and Izanami walk around the heavenly pillar and give birth to the land (the original is in *Kokushi taikei* vol. 7, 1898, pp.10–11, [National Diet Library Digital Collections](https://dl.ndl.go.jp/pid/991097)). Lining it up on the five stages is Claude's reading. pjdhiro touches on this story in [Applying a folk tale to understand the spinor field](https://uminomae.github.io/pjdhiro/20250616baToMinwa/) (2025, in Japanese).
 
 </details>
 
@@ -402,25 +289,15 @@ Yet the top page of "What Is Creation" does not take up what produces the waves 
 
 Sources: Prigogine (1977) [“Time, Structure and Fluctuations”](https://www.nobelprize.org/uploads/2018/06/prigogine-lecture.pdf), Nobel lecture in chemistry (full text checked; Nobel Foundation PDF; pp.267, 272–273, 277; pages are those of the lecture collection) / Rayleigh (1916) [“On convection currents in a horizontal layer of fluid, when the higher temperature is on the under side”](https://doi.org/10.1080/14786441608635602), *Philosophical Magazine* (6) 32(192):529–546 (full text checked; pp.529–540) / Bénard (1901) [*Les tourbillons cellulaires dans une nappe liquide propageant de la chaleur par convection, en régime permanent*](https://archive.org/details/lestourbillonsce00bena), Paris: Gauthier-Villars (full text checked; French original; read from the OCR text of the Internet Archive scan; pp.1–6) / Reichmann, Nijmeijer, Hossain, Eguren, Schneider, Politi, Roberti, Hufnagel, Hiiragi & Ellenberg (2018) [“Dual-spindle formation in zygotes keeps parental genomes apart in early mammalian embryos”](https://doi.org/10.1126/science.aar7462), *Science* 361(6398):189–193 (full text checked; read in the authors' preprint released before peer review, the [bioRxiv version](https://doi.org/10.1101/198275) (2018-04-16, CC BY-NC-ND 4.0); pp.3–7; pages are those of the bioRxiv version, which differ from the journal) / Field & Noyes (1974) [“Oscillations in chemical systems. IV”](https://doi.org/10.1063/1.1681288), *Journal of Chemical Physics* 60(5):1877–1884 (full text checked; pp.1877–1879, 1882–1884; the copy read was a copy for teaching, rights not confirmed) / Klein (1946) “Notes on some schizoid mechanisms”, *International Journal of Psycho-Analysis* [27:99–110](https://archive.org/details/ijp-27-1946-1-2) (full text checked; pp.99, 101, 105, 109; the copy is from the International Psychoanalytic University Berlin collection on the Internet Archive) / Klein (1940) “Mourning and its relation to manic-depressive states”, *International Journal of Psycho-Analysis* [21:125–153](https://archive.org/details/ijp-xxi-1940-2) (full text checked; read from the OCR text of the Internet Archive scan; pp.132, 137–138) / Niehuis, Reifman & Lee (2013) [*Disillusionment in cohabiting and married couples: A national study*](https://www.bgsu.edu/content/dam/BGSU/college-of-arts-and-sciences/NCFMR/documents/WP/WP-13-05.pdf), National Center for Family & Marriage Research Working Paper WP-13-05 (full text checked; pp.3–8) / Murray, Griffin, Derrick, Harris, Aloni & Leder (2011) [“Tempting fate or inviting happiness? Unrealistic idealization prevents the decline of marital satisfaction”](https://doi.org/10.1177/0956797611403155), *Psychological Science* 22(5):619–626 (full text checked; [authors' manuscript on PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC4094166/)) / Nonaka, Umemoto & Senoo (1996) [“From information processing to knowledge creation: A paradigm shift in business management”](https://doi.org/10.1016/0160-791X(96)00001-2), *Technology in Society* 18(2):203–218 (full text checked; pp.205–216; a copy of the publisher's journal pages placed on a textbook's companion site, rights not confirmed) / Nonaka, Toyama & Konno (2000) [“SECI, Ba and leadership: a unified model of dynamic knowledge creation”](https://doi.org/10.1016/S0024-6301(99)00115-6), *Long Range Planning* 33(1):5–34 (full text checked; a copy of the journal pages placed on the site of a research program of the Norwegian Museum of Science and Technology; p.7, pp.26–28; rights not confirmed) / Schumpeter (1912) *Theorie der wirtschaftlichen Entwicklung*, Leipzig: Duncker & Humblot (full text checked; read in the [2006 Duncker & Humblot reprint](https://doi.org/10.3790/978-3-428-51746-6); pages are those of 1912; pp.103, 117–120, 132, 158, 174, 452–453) / Schumpeter (1939) [*Business Cycles*, Vol. I](https://archive.org/details/in.ernet.dli.2015.150123), McGraw-Hill (full text checked; read from the OCR text of the Internet Archive scan; pp.100–101) / Schumpeter (1942) [*Capitalism, Socialism and Democracy*](https://archive.org/details/in.ernet.dli.2015.190072), Harper & Brothers (full text checked; read from the OCR text of the Internet Archive scan; apparently the second edition; p.83) / March (1991) [“Exploration and exploitation in organizational learning”](https://doi.org/10.1287/orsc.2.1.71), *Organization Science* 2(1):71–87 (full text checked; the copy read was a copy for teaching, rights not confirmed). Domain records (in Japanese): [physics](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D02-physics.md), [chemistry](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D03-chemistry.md), [management studies](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D22-business-management.md), [economics](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D21-economics.md), [complexity science](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D29-complexity-science.md).
 
-<!--REF:Creation-->
-
-Sources: Becker & Döring (1935) [“Kinetische Behandlung der Keimbildung in übersättigten Dämpfen”](https://doi.org/10.1002/andp.19354160806), *Annalen der Physik* 24:719–752 (full text checked; read in the NACA English translation [TM 1374](https://ntrs.nasa.gov/citations/19930093856)) / Novák & Tyson (2008) [“Design principles of biochemical oscillators”](https://doi.org/10.1038/nrm2530), *Nature Reviews Molecular Cell Biology* 9(12):981–991 (full text checked; authors' manuscript on PMC) / Lavner & Bradbury (2010) [“Patterns of change in marital satisfaction over the newlywed years”](https://doi.org/10.1111/j.1741-3737.2010.00757.x), *Journal of Marriage and Family* 72(5):1171–1187 (full text checked; [authors' manuscript on PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC2992446/)). Domain records (in Japanese): [physics](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D02-physics.md), [chemistry](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D03-chemistry.md), [life sciences](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D09-life-sciences.md), [management studies](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D22-business-management.md), [complexity science](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D29-complexity-science.md).
-
-<!--REF:Creation-->
-
-Sources: Zurek (2003) [“Decoherence, einselection, and the quantum origins of the classical”](https://doi.org/10.1103/RevModPhys.75.715), *Reviews of Modern Physics* 75:715–775 (full text checked; read in the authors' manuscript arXiv quant-ph/0105127; the two views are in section I.B) / Knoblich, Ohlsson, Haider & Rhenius (1999) [“Constraint relaxation and chunk decomposition in insight problem solving”](https://doi.org/10.1037/0278-7393.25.6.1534), *Journal of Experimental Psychology: Learning, Memory, and Cognition* 25(6):1534–1555 (full text checked; pp.1534–1536, 1551, 1553) / Kant (1790) [*Kritik der Urteilskraft*](https://korpora.org/Kant/aa05/258.html), Academy edition vol. 5, 1908 (full text checked; German original; the beautiful p.217, the sublime pp.245, 257–258; the copy read is p.258 of the page-by-page publication of the Academy edition (korpora.org); also read locally from page images) / Gersick (1988) [“Time and transition in work teams”](https://doi.org/10.2307/256496), *Academy of Management Journal* 31(1):9–41 (full text checked; pp.9, 10, 16, 18, 27–28, 30) / Zurek (1996) [“Cosmological experiments in condensed matter systems”](https://doi.org/10.1016/S0370-1573(96)00009-9), *Physics Reports* 276:177–221 / Ulm et al. (2013) [“Observation of the Kibble–Zurek scaling law for defect formation in ion crystals”](https://doi.org/10.1038/ncomms3290), *Nature Communications* 4:2290 / Pyka et al. (2013) [“Topological defect formation and spontaneous symmetry breaking in ion Coulomb crystals”](https://doi.org/10.1038/ncomms3291), *Nature Communications* 4:2291 (all three full text checked; read in the authors' manuscripts on arXiv) / Diamond (2013) [“Executive functions”](https://doi.org/10.1146/annurev-psych-113011-143750), *Annual Review of Psychology* 64:135–168 (full text checked; noted by section name from the authors' manuscript on PMC) / Okakura Kakuzō (1906) [*The Book of Tea*](https://archive.org/details/cu31924021575695), Fox, Duffield (full text checked; scan of a Cornell University Library copy; pp.3, 95). Zeami's "what is hidden is the flower" is from the checking in the performing arts record (*Besshi kuden* p.60). *Kojiki* vol. 1: *Kokushi taikei* vol. 7, Keizai Zasshisha, 1898, pp.10–11 (full text checked; the quotations were compared character by character against the page image at frame 19 in the [National Diet Library Digital Collections](https://dl.ndl.go.jp/pid/991097); the small character 上 under 愛 is a note on pronunciation and was left out of the quotation). Domain records (in Japanese): [psychology](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D14-psychology.md), [aesthetics](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D15-aesthetics.md), [physics](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D02-physics.md), [chemistry](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D03-chemistry.md), [life sciences](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D09-life-sciences.md), [management studies](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D22-business-management.md), [complexity science](https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/evidence-D29-complexity-science.md).
-
 </details>
 
-## Words are names for the vortices seen between the waves
+<details class="pd-column"><summary>Words are names for the vortices seen between the waves</summary>
 
-<!--OPEN-->
-
-Within the shape of creation, where do words fall? How do people grasp what is moved around the center of the gravity well? When Claude asked whether words and symbols are the forms that rise into consciousness, pjdhiro answered as follows.
+Where do words fall within the shape of creation? When Claude asked whether words and symbols are the shapes that rise into consciousness, pjdhiro answered as follows.
 
 <a id="ldd-vortex"></a><strong>pjdhiro's view (translated by Claude):</strong>Normally, language, symbols and numbers are cut-outs of one aspect. They point at the vortices of the field. But vortices are continuous with waves, and waves with the field. In terms of the sea, the vortices of the sea can be separated visually, but it is not that a vortex has a cause of its own for wanting to become a vortex; it is because the sea produces waves.
 
-pjdhiro condenses the five stages of creation seen in the previous chapter into "field and fluctuation give rise to vortices". What can be cut out with words, symbols and numbers is the world of the size people have been able to perceive: the vortices seen between the waves. Try reading consciousness, trust, value and vision, which appear later, as names given to vortices between the waves. What Love-Driven Development tries to see is what produces those waves.
+pjdhiro condenses the five stages of creation seen in this chapter as "the field and its fluctuation give rise to vortices". What words, symbols and numbers can cut out is the world at the size people can perceive: the vortices seen between the waves. Try reading the consciousness, trust, value and vision that appear later as names given to vortices between the waves. What Love-Driven Development tries to see is what gives rise to those waves.
 
 <details><summary>More — vortices are continuous with waves, and waves with the sea</summary>
 
@@ -434,7 +311,7 @@ What people gave names to were forms easy to perceive. Then what decides how eas
 
 <details class="pd-column"><summary>Water and waves are not apart (an old Eastern analogy)</summary>
 
-Eastern thought has an analogy of the same shape. *The Awakening of Faith in the Mahāyāna* (Paramārtha's translation) cites the water of the great ocean being stirred into waves by the wind and writes that the aspect of water and the aspect of wind do not separate. Another translation (Śikṣānanda's) writes that the water of the sea and its waves are neither one nor different. It is the view that even if you divide them in two and give them names, they are not apart.
+<a id="ldd-water"></a>Eastern thought has an analogy of the same shape. *The Awakening of Faith in the Mahāyāna* (Paramārtha's translation) cites the water of the great sea rising into waves in the wind, and writes that the aspect of water and the aspect of wind are not apart. Another translation (Śikṣānanda's) writes that the water of the sea and its waves are neither one nor different things. It is a view that even when we divide something into two and name them, they are not apart.
 
 In this treatise, the wind is an analogy for delusion (ignorance), which points in a different direction from this page's driving source. Claude checked the quotation in the Taishō canon; pjdhiro has not read the source.
 
@@ -483,6 +360,136 @@ Picture a single electron as a small, independent ball on its own, and you stumb
 <!--REF:Physics and the history of science-->
 
 Sources: [Dirac (1927)](https://doi.org/10.1098/rspa.1927.0039) "The Quantum Theory of the Emission and Absorption of Radiation", *Proc. R. Soc. A* 114:243 (full text checked against [the Wayback Machine record of the publisher Royal Society's PDF](https://web.archive.org/web/20210921014432/https://royalsocietypublishing.org/doi/pdf/10.1098/rspa.1927.0039) (21 September 2021); pp.243–245).
+
+</details>
+
+</details>
+
+## Isn't Love like gravity?
+
+<!--OPEN-->
+
+In the shape of creation, the field fluctuates, waves rise, and vortices swirl between the waves. Then what do that field, and the driving source that makes the vortices swirl, resemble? To pjdhiro, gravity felt close. Seeing that Love also seems related to something like a gravitational field, pjdhiro placed the following hypothesis.
+
+<a id="ldd-well"></a><strong>pjdhiro's hypothesis (translated by Claude):</strong>In a field where waves appear as if made of grains of love, a Love field, the universe and we drift as if drawn by the distortions of the field of Love.
+
+First, set what I want to call Love beside gravity. A gravitational field is distorted around a mass, and stars and light alike travel within it along the distortion. To those inside, the distortion itself cannot be seen. The mortar-shaped picture that makes this hollow three-dimensional is called a **gravity well** on this site. Dots connecting within one person, being moved by fluctuations of the field, and people gathering and something beginning to be born may all happen within that distortion.
+
+<div class="microworld glow-card" data-gravity-love role="group" aria-label="An interactive figure placing a gravity well and a well of love side by side">
+<p class="mw-title">Two wells of the same shape</p>
+<div class="gl-pair">
+<div data-gl-panel data-label="A　Gravity" data-center="Sun" data-accent="navy" data-bodies="Mercury,Venus,Earth,Mars,Jupiter" data-aria="Figure A: a grid sinks deeper toward the center, and five planets orbit around it. The Sun at the center does not move."><div class="gl-stage"></div><p class="gl-caption">Center = the Sun. Depth of the hollow = gravitational potential</p></div>
+<div data-gl-panel data-label="B　Love" data-center="Love" data-accent="coral" data-bodies="People,Intentions,Actions,Feelings,Relations" data-aria="Figure B: love is at the center of a hollow of the same shape, and people, intentions, actions, feelings and relations orbit around it. The center does not move."><div class="gl-stage"></div><p class="gl-caption">Center = love. Depth of the hollow = strength of attraction (a metaphor)</p></div>
+</div>
+<div class="mw-controls"></div>
+<p class="mw-status" aria-live="polite"></p>
+<p class="mw-fallback">(Where JavaScript runs, two 3D wells appear here side by side. In both, a grid sinks toward the center and five points orbit around it. The center on the left is the Sun; the center on the right is love. Press "View from the center" to look around from the bottom of the hollow.)</p>
+</div>
+
+On the left is a gravity well; on the right, a well of the same shape with love placed at its center. The figures can be rotated by dragging. The figure on the right is an analogy.
+
+<div class="reader-linkcards">
+<a class="reader-linkcard glow-link" href="gravity-love.html">
+<img class="reader-linkcard__thumb" src="../assets/thumbs/project-design.jpg" alt="" width="720" height="378" loading="lazy">
+<span class="reader-linkcard__body"><span class="reader-linkcard__title">Isn't Love like gravity? (in Japanese)</span><span class="reader-linkcard__sub">The center of a gravity well does not move, looks as if nothing is there, and cannot be seen from oneself. Isn't that center like love? The primary source for the hypothesis about the driving source.</span><span class="reader-linkcard__url">uminomae.github.io/project-design-theory/reader/gravity-love.html</span></span>
+</a>
+</div>
+
+<details><summary>More — the gravitational field and the gravity well</summary>
+
+Here, gravity is seen as a gravitational field. A gravitational field is distorted around a mass. General relativity writes this distortion as the curvature of spacetime. In Newtonian mechanics, the gravitational field around a mass can be drawn as the depth of a hollow (the gravitational potential).
+
+The picture that makes this hollow three-dimensional is the gravity well. What the picture depicts, and how far it is fact of physics and where it becomes an analogy, are gathered in [What is a gravity well?](gravity-well.html) (in Japanese). In general relativity, stars and light alike are within that gravitational field and travel along the distortion.
+
+</details>
+
+<details><summary>More — seeing the invisible center by dividing oneself</summary>
+
+<a id="ldd-center"></a>
+
+This part proceeds in three steps: the center that cannot be seen from oneself, dividing oneself in trying to see it, and what is felt at the end of that dividing.
+
+First, what pjdhiro was looking for.
+
+<strong>pjdhiro's background (translated by Claude):</strong>As the energy that goes field → wave → edge → vortex until it swirls into a vortex, I am looking for a driving engine like a void, a center that is zero and does nothing, like gravity or love.
+
+In the figure of the gravity well, the center never moves once ([three properties of the center](gravity-well.html#gw-center), in Japanese). Even so, every orbit in the figure follows the hollow this unmoving place has made. And when you stand at the bottom of the well, everything around appears to revolve around you, yet there is one place that shows up in no direction you face: this very center you are looking from.
+
+If the center cannot be seen from oneself, seeing it means dividing the self that is looking.
+
+<a id="ldd-shikan"></a><strong>pjdhiro's view (translated by Claude):</strong>Metacognition should also be the work of dividing oneself. When you practice *shikan* (stopping and seeing), watching the inside of yourself as if pointing at it as an object, in the end the observing I remains. From trying to watch even that, the watching I and the watched I become the same. They can no longer be divided. The process from there becomes a different sense, as if changing from classical to quantum. If I were to explain metacognition, the closest analogy, I think, is the work of looking at an electron in ever finer detail.
+
+pjdhiro also likens what kind of work shikan is in the language of programming.
+
+<strong>pjdhiro's image (translated by Claude):</strong>Meditation is like the C function bzero(), or memset(0). It makes it easier to discern whether there is a change or not. Like polling for the 1 that something like stray thoughts sets. Shikan feels like that.
+
+bzero() and memset(0) are functions that fill a region of memory entirely with 0. Polling is a way of going to look, repeatedly, at whether a state has changed. About what one goes to look at, pjdhiro continued as follows.
+
+<strong>pjdhiro's view (translated by Claude):</strong>It is the work of catching thoughts, feelings and thinking that arise, and sounds and images I perceive, and making them objects one after another. Sensory stimuli such as perceived sounds and images are less made into objects than a matter of looking at the I that caught them. Feel it as it is, and confirm that there is an I that is feeling. It isn't something difficult like objectifying; you point at it with your heart.
+
+At the end of dividing, the layer changes. The I that envisions, plans and decides can be written in classical terms. When that I is divided, the observing I and the observed I can no longer be divided, and from there on it becomes a different sensation. What is felt beyond that, pjdhiro writes as follows.
+
+<strong>pjdhiro's image (translated by Claude):</strong>……After only the one who observes and the one observed remain, rather than a sense of stability from the two fusing, what is close is a feeling of calm, as if the presence of a mother, connected by an umbilical cord to the top of the head of the I that can only look, brings stability. ……Boundlessness is the sense that what lies beyond cannot be seen. As an expression I used the analogy of the umbilical cord and the mother, but a fetus probably does not recognize that there is a mother in the first place. In the same way, the field or the great ocean is something one does not know. If you include the circulation of the nutrients and oxygen the mother takes in, what lies beyond is connected with the whole universe.
+
+One cannot see ahead, and yet one is stable. Apart from the reassurance gained by confirming, there is also a reassurance of being connected without confirming. The primary source for this flow is [chapter 2](gravity-love.html#gl-center) to [chapter 4](gravity-love.html#gl-manager) of the sister reader "Isn't Love like gravity?" (in Japanese).
+
+</details>
+
+## How far does it resemble physics in structure?
+
+<a id="ldd-physics"></a>The two chapters of Part 2 borrowed shapes from physics: the [gravity well](gravity-well.html), changing scale from classical to quantum, and the vortices between the waves and the fluctuation of the field. This chapter gathers the borrowed shapes in one place, and sets out which shape of physics each of the four explorations seems to overlap with. The details of formulas and original sources are placed inside folds.
+
+They can be borrowed because there is one estimate beneath them.
+
+<strong>pjdhiro's estimate (translated by Claude):</strong>Abstractly, and essentially, my estimate is: don't the wave motion that makes up matter and love in the broad sense follow the same laws of physics? To give an analogy, the wave motion of gravity and elementary particles may be happening in the human body too, and so on. It's a fantasy, though.
+
+What pjdhiro is thinking is that something quantum-theoretical may be happening in the neurotransmitters transmitted to the brain's nerves and in the processing of signals that follows. The mind, as an apparatus of interpretation, perceives that as love and emotion. The estimate is that human cognition and interpretation may be made that way.
+
+Some things are so similar that one wonders whether they are the same law. If it were the same law, it would, if anything, be easier to believe. That is how pjdhiro feels. Whether it is the same law is left before the point of checking. What pjdhiro keeps asking is how far the structures are similar.
+
+<details><summary>More — the four explorations and the shapes of physics</summary>
+
+**The driving source and gravity.** In the figure of the gravity well, the things around revolve along the hollow made by the mass at the center.
+
+**Kesson and the phase of waves.** In quantum mechanics, the state of a particle is written as a complex-valued wave (the wave function). The probability of finding the particle at a place is set by the square of the absolute value of that wave, and the direction of the wave (its phase) does not enter. Shifting the phase of the whole wave uniformly changes nothing in the observed results. But when two waves overlap, the difference in phase shows up clearly as interference fringes. The phase itself does not show up in numbers on its own, yet where waves overlap it produces a definite difference.
+
+This is where it overlaps with the shape of kesson-driven thinking: a value that is 0 in cognition and yet works. What overlaps is the behavior. A value on the imaginary axis is a magnitude whose projection onto the axis of action is 0. Phase is a direction that disappears when the absolute value is taken. The reasons they do not show up in numbers differ, but they share not showing up in numbers on their own and yet working.
+
+**Awareness and observation.** In the quantum world, measuring can change the state of what is measured. For example, measuring position disturbs momentum (the error in measuring position and the disturbance given to momentum cannot both be made zero, but it is known that their product can be made smaller than the limit once thought). In models of measurement, during measurement the object being measured and a small part of the apparatus (the probe) are taken together as one system, and its change over time is written. After the measurement, only the probe side is measured and read off on the scale. The model writes only this far; it does not write that the observing side and the observed side become inseparable. This page sees this form, writing the two together during measurement, as an analogy overlapping with where metacognition, dividing oneself, ends up.
+
+**Creation and the fluctuations of the field.** In quantum field theory, particles appear as one of the ways a field vibrates (an excitation). Separately, as a matter of fluids, in superfluid helium the flow around a vortex (circulation) appears only in fixed units. In fluids, there are examples where the vortex itself appears as a form that cannot be cut off from the fluid.
+
+<!--REF:Physics and the history of science-->
+
+Sources: Born (1954) Nobel lecture "The statistical interpretation of quantum mechanics" ([probability is the square of the absolute value; full text checked against the nobelprize.org PDF](https://www.nobelprize.org/uploads/2018/06/born-lecture.pdf); p.7 of the PDF) / [Ozawa (2003)](https://doi.org/10.1103/PhysRevA.67.042105) *Phys. Rev. A* 67:042105 (writing the object and the probe in the apparatus together as one system during measurement; full text checked against the author's arXiv submission [quant-ph/0207121v1](https://arxiv.org/abs/quant-ph/0207121v1); the measurement model and then measuring only the probe side p.2, the passage that the error in measuring position and the disturbance of momentum cannot both be zero p.3) and Rozema et al. (2012) *Phys. Rev. Lett.* 109:100404 (full text checked against the authors' arXiv submission 1208.0034v2; abstract on p.1) (the error in measuring position and the disturbance of momentum cannot both be made zero, but their product can be made smaller than the naive limit) / [Vinen (1961)](https://doi.org/10.1098/rspa.1961.0029) *Proc. R. Soc. A* 260:218 (quantization of superfluid vortices; full text checked against the Wayback Machine record (26 October 2019) of the publisher Royal Society's PDF; abstract on p.218).
+
+</details>
+
+<details><summary>More — the mind as an apparatus of interpretation</summary>
+
+The view that the mind interprets signals arising in the body and senses them as emotions also exists in research on emotion. Barrett's theory of constructed emotion holds that the brain interprets signals from inside the body with concepts it has learned so far, and constructs emotions on the spot. Its explanation is that the same sensation can have many causes.
+
+In this reader's words: the body receives the magnitude of the value itself, and the mind, as an apparatus of interpretation, projects it and reads it as love or anxiety. How the same unseen beyond is read changes with the signals that are welling up.
+
+<!--REF:Nerves and emotion-->
+
+Sources: [Barrett (2017)](https://doi.org/10.1093/scan/nsw154) "The theory of constructed emotion", *Social Cognitive and Affective Neuroscience* 12(1):1 (full text checked against the full text at [PMC5390700](https://pmc.ncbi.nlm.nih.gov/articles/PMC5390700/); the passage on constructing emotions by categorizing sensations with concepts in the section "The computational architecture of the brain is a conceptual system plus pattern generators", the passage that the same sensation can have many causes in the glossary).
+
+</details>
+
+<details><summary>Taking the estimate literally — do quanta work in the nerves?</summary>
+
+The human body, too, is made of matter, and it is hard to think of it as outside the laws of physics. However, how far quantum effects work in the processing of neural signals has not yet been answered even among researchers.
+
+Quantum effects working inside living things are studied as quantum biology. For example, it is known that the tunnel effect, in which particles slip through barriers, is involved in enzyme reactions.
+
+For the brain, there are several proposals. Penrose and Hameroff proposed that quantum processes proceed in the microtubules inside neurons, and that each time they spontaneously collapse under certain conditions, a moment of consciousness arises. Fisher proposed that the nuclear spins of phosphorus atoms may be able to hold quantum information for a long time in the brain. There are also proposals and calculations that quantum coherence inside ion channels may be involved in how ions pass through.
+
+There are also calculations against. Tegmark estimated that in the brain at body temperature, quantum superpositions break down in an extremely short time, falling far short of the speed of neural signals. Current neuroscience writes the release and reception of neurotransmitters, and the electrical signals that follow, almost entirely in classical physics. Where things stand now is that whether quantum effects work in the processing of neural signals has been neither confirmed nor fully ruled out.
+
+<!--REF:Nerves and emotion-->
+
+Sources: [Klinman & Kohen (2013)](https://doi.org/10.1146/annurev-biochem-051710-133623) *Annu. Rev. Biochem.* 82:471 (tunneling in enzymes; full text checked against the Wayback Machine record (15 February 2025) of [the page of the authors' manuscript on NIH's PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC4066974/); abstract and the section "Tunneling") / [Hameroff & Penrose (2014)](https://doi.org/10.1016/j.plrev.2013.08.002) *Phys. Life Rev.* 11:39 (full text checked against [the Wayback Machine record of the PDF of the journal pages that was on author Hameroff's site](https://web.archive.org/web/20150522052651/http://www.quantumconsciousness.org/sites/default/files/Hameroff%20Penrose%20-%20Consciousness%20in%20the%20Universe-A%20Review%20of%20the%20Orch%20OR%20Theory%20-%202013%20-%20Physics%20of%20Life%20Reviews.pdf) (22 May 2015); abstract on p.39) / [Fisher (2015)](https://doi.org/10.1016/j.aop.2015.08.020) *Ann. Phys.* 362:593 (full text checked against the author's arXiv submission [1508.05929v2](https://arxiv.org/abs/1508.05929v2); abstract on p.1) / [Vaziri & Plenio (2010)](https://doi.org/10.1088/1367-2630/12/8/085001) *New J. Phys.* 12:085001 (full text checked against the publisher IOP's public version (CC BY); abstract on p.1) / [Tegmark (2000)](https://doi.org/10.1103/PhysRevE.61.4194) *Phys. Rev. E* 61:4194 (full text checked against the author's arXiv submission [quant-ph/9907009v2](https://arxiv.org/abs/quant-ph/9907009v2); abstract on p.1).
 
 </details>
 
@@ -658,7 +665,7 @@ Value is a vague word in which things of different natures are mixed in one term
 
 <details><summary>More — five stages on the receiving side</summary>
 
-Makers putting value into products also really happens. To see how putting value in and the customer feeling it in their consciousness connect, the word "value" is divided here. Applying the process of creation set out in ["What Is Creation"](https://uminomae.github.io/project-design-theory/cs/), field → wave → edge → vortex → bundle, seen in the chapter [Words are names for the vortices seen between the waves](#ldd-vortex), to the receiving side, it can be divided, for example, as follows.
+Makers putting value into a product also really happens. To see how putting it in connects with what is felt in the customer's consciousness, let us divide the word "value". Applying to the receiving side the process of creation set out by ["What Is Creation"](https://uminomae.github.io/project-design-theory/cs/), field → wave → edge → vortex → bundle, seen in the fold "[Words are names for the vortices seen between the waves](#ldd-vortex)" in the chapter "What shape does creation take?", it can be divided, for example, as follows.
 
 - Field: the situation the customer lives in, their relationships, what they know, their values. It also includes broad things such as the world, the era and culture.
 - Wave: differences arise within the field and split into customer and product. Like demand and supply, the side that seeks and the side that offers face each other.
@@ -686,57 +693,35 @@ The five stages do not necessarily proceed in order in one pass. They run at the
 
 </details>
 
-## When one cannot see ahead, which signals well up?
-
-<!--OPEN-->
-
-When people cannot see ahead, they usually feel anxiety. Yet about the sense, felt at the end of dividing oneself through metacognition, of the top of one's head being connected to something by something like an umbilical cord, pjdhiro writes as follows (the flow leading there is in "[Seeing the invisible center by dividing oneself](#ldd-center)").
-
-<a id="ldd-uncertain"></a><strong>pjdhiro's experience (translated by Claude):</strong>In boundlessness, what lies beyond cannot be seen. And yet it is not instability but a sense of stability.
-
-Some research holds that under uncertainty the stress response is working from the start, and is held down only while one feels safe. One of the sources of that safety counted is a strong network of connections. In this reading, the signal of survival is something that comes back to anyone once safety can no longer be felt, and the signal of trust can be written as the feeling of safety that holds it down. That stability rather than anxiety wells up even when one cannot see ahead may be because stability comes not from knowing but from being connected. The dividing line can be read as moving not with how much cannot be seen ahead, but with whether safety is felt and whether connection is felt.
-
-<details><summary>More — when stability wells up though one cannot see ahead</summary>
-
-Yet stability rather than anxiety sometimes wells up even when one cannot see ahead. It is the image of the umbilical cord beyond the top of the head seen in the chapter "Isn't Love like gravity?" ([pjdhiro's image](#ldd-center)). The sister reader "Isn't Love like gravity?" lines up three threads for why it is stability rather than anxiety ([chapter 4](gravity-love.html#gl-manager), in Japanese). It cannot be seen not because it is lacking but because one is riding on it. Stability comes not from knowing but from being connected. Not seeing ahead becomes anxiety when one sees what is ahead as other; if one is not cut off, the unseen beyond becomes the side one belongs to. These three are an arrangement using first-person reports as material, not proof. In this image, the one connected to cannot be seen and has not been confirmed. The reassurance gained by confirming and the stability of being connected without confirming look alike from outside, and differ inside.
-
-The dividing line changes from person to person, and with time even in the same person, and both may be welling up in one person. At the stage of bearing it without filling it in, it can be read that the signal of survival is still sounding and the signal of trust is holding it down. pjdhiro sees wondering what it is, if a signal wells up at a place that is zero, as the noticing of kesson (the [fold](#ldd-kesson) in the chapter "When signals and thoughts part, one feels a lack"). There is not yet an indicator that measures from outside which one is welling up and tells them apart.
-
-</details>
-
-<details><summary>More — how preparing and the feeling of safety have been measured</summary>
-
-When one cannot see ahead, the body first prepares, research has written. Some research grasps anxiety from the side of the uncertainty of future threat and of the workings that prepare for it (Grupe and Nitschke 2013). Some research also holds that under uncertainty the stress response is not born after something happens, but is working from the start, and is held down only while one feels safe (Brosschot, Verkuil and Thayer 2018). In this reading, the signal of survival is not peculiar to some person or some stage of growth, but comes back to anyone once safety can no longer be felt.
-
-Where does the feeling of safety come from? The same research counts, as one source of the feeling of safety, a strong network of connections for people and for animals that live in groups (Brosschot, Verkuil and Thayer 2018). From here, the relation of the two signals can be re-read in one form: writing the signal of survival as what comes back when safety cannot be felt, and the signal of trust as the feeling of safety that holds it down. ["What Is Awareness"](https://uminomae.github.io/project-design-theory/as/) writes the two signals as two directions. Whether they are two separate signals, or one preparedness and what holds it down, touches the root of how "What Is Awareness" writes, so it has not been decided yet. Either way, the two are in the body at the same time and are not cut off from each other.
-
-Grupe and Nitschke (2013) hold that uncertainty makes it difficult to prepare ahead and that this leads to anxiety, and describe moves to prepare for the uncertainty of future threat as adaptive while they are proportionate to the likelihood and severity of the threat.
-
-Brosschot, Verkuil and Thayer (2018) placed the stress response as a default that is always on and is held down by the prefrontal cortex only when safety is felt. When safety can no longer be felt, that holding down comes off at once. They also write that the holding down coming off does not cause the stress response but allows it. As things that damage the feeling of safety, they name loneliness, low social status, urban environments and adversity in early childhood, and count a strong network of connections as one source of safety.
-
-There is also a foothold for the reading that if not seeing ahead is held as a state known to be unseen, alarms are less likely to sound. Yu and Dayan (2005) separate the uncertainty of knowing that cues are unreliable within a familiar situation (expected uncertainty) from the uncertainty caused by an unannounced switch of situation (unexpected uncertainty), and propose assigning them to separate systems of neural modulation. In people with more than ten thousand hours of meditation, activity in the insula and amygdala was lower before pain (in the anticipation phase), while during pain activity in the insula and cingulate was, if anything, stronger; pain intensity was reported the same as by novices, and unpleasantness as less (Lutz et al. 2013). It is not that the signal stops sounding; it does not sound in the anticipation phase, and sounds when the event comes.
-
-<!--REF:Nerves and emotion-->
-
-Sources: [Grupe & Nitschke (2013)](https://doi.org/10.1038/nrn3524) "Uncertainty and anticipation in anxiety", *Nature Reviews Neuroscience* 14(7):488 (full text checked against [the authors' manuscript on PMC; the passages on uncertainty and preparing in the abstract and introduction](https://pmc.ncbi.nlm.nih.gov/articles/PMC4276319/)) / [Brosschot, Verkuil & Thayer (2018)](https://doi.org/10.3390/ijerph15030464) "Generalized Unsafety Theory of Stress", *International Journal of Environmental Research and Public Health* 15(3):464 (full text checked against [the public version on PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC5877009/); abstract, section 1.2, section 3) / [Yu & Dayan (2005)](https://doi.org/10.1016/j.neuron.2005.04.026) "Uncertainty, neuromodulation, and attention", *Neuron* 46(4):681 (full text checked against [the PDF on the author's site](https://web.archive.org/web/20051024185924/http://www.gatsby.ucl.ac.uk:80/~dayan/papers/yud2005.pdf); abstract and introduction on p.681) / [Lutz, McFarlin, Perlman, Salomons & Davidson (2013)](https://doi.org/10.1016/j.neuroimage.2012.09.030) "Altered anterior insula activation during anticipation and experience of painful stimuli in expert meditators", *NeuroImage* 64:538 (full text checked against [the authors' manuscript on PMC; abstract and methods](https://pmc.ncbi.nlm.nih.gov/articles/PMC3787201/)).
-
-</details>
-
 <!--TURN-->
 
 Part 3 looked at how people interpret the world. So far, we have posed the question, seen the driving source as what I want to call Love, and looked for clues to it in similar shapes and in how people receive the world.
 
-Before moving on to what I want to call Love, Part 4 answers two questions: what is trust, and what is reassurance. pjdhiro sees trust and reassurance as bearing on the definition of Love too. It sets down the premises of the mind, looks through differences from similar things, lines up their outlines, and looks again through the lenses of stages and personality.
+In Part 4, before going on to what I want to call Love, two questions are answered: what is trust, and what is reassurance. pjdhiro sees trust and reassurance as also involved in the definition of Love. The part sets out premises of the mind, looks at the differences from similar things from several viewpoints of psychological theory, lines up outlines, and looks at them again through stages and personality.
 
 <!--/TURN-->
 
-<!--PART:Part 4|Before Love: how does the mind feel trust and reassurance?-->
+<!--PART:Part 4|How does the mind feel trust and reassurance?-->
 
 ## What is the unconscious?
 
 <!--OPEN-->
 
-Part 3 looked at how people interpret the world from the side of the signals that rise into consciousness. Part 4 answers two questions: what is trust, and what is reassurance. First, it sets down five premises of the mind (the unconscious, the sources of the feelings of trust and love, defense, the situations in which defense loosens, and stages of development). Next, it looks at trust and reassurance through their differences from similar things. Finally, it lines up the outlines that came into view and looks again through the lenses of stages and personality. The five chapters of premises are only overviews and links. Readers who know the psychological theories can go on to the chapter "[Can people tell trust apart from faith and expectation within themselves?](#ldd-discern)". Readers who do not know them can follow the "Sources" at the end of each chapter to the originals, and to translations where they exist.
+In the chapter at the end of Part 1, "[What has the word Love pointed to?](#ldd-love-history)", what has been called Love was lined up. Looking at it, pjdhiro sees it this way.
+
+<a id="ldd-part4-premise"></a><strong>pjdhiro's view (translated by Claude):</strong>I think the feeling called Love resembles feelings like trust and reassurance.
+
+On the side of research, too, Love has been written about overlapping with what are called trust and reassurance, sometimes mixed into a single word. In the classification of emotions, something close to trust is placed right next to love; in attachment research, the bond that has been called love is written in the word attachment, and that attachment is said to come, in humans, with calm and security. Whether they look overlapping because they are similar, or because they are received mixed together, is not yet known. In this part, the side of trust and reassurance is divided finely and looked at from the viewpoints of psychology.
+
+<details><summary>More — research that has written about Love overlapping with trust and reassurance</summary>
+
+In the classification of emotions, Plutchik places love as a mixture of joy and acceptance, and lists "trusting" as a personality word derived from acceptance (2001). In attachment research, Bowlby writes the child's bond to the mother, in his own theory, in the words tie and attachment behaviour, and uses the word love where he introduces the theories of Freud and others (1958). Fisher counts attachment as one of the emotion systems involved in mating and reproduction, and writes that in humans it comes with feelings of calm and security (1998). In the brains of people who said they were still intensely in love after long years of marriage, regions found in research on maternal attachment were active along with the same reward regions as in new love (Acevedo et al., 2012). Fredrickson writes that what people point to when they say "I love you" largely includes feelings, bonds, closeness and commitment accumulated over time (2016).
+
+Each can be read as an example of what is called trust or reassurance entering into what is called Love.
+
+</details>
+
+Part 3 looked at how people interpret the world from the side of the signals that rise into consciousness. Part 4 answers two questions: what is trust, and what is reassurance. First, five premises of the mind are set out (the unconscious, the sources of the feelings of trust and love, defense, the situations in which defense loosens, and the stages of development). Next, trust and reassurance are looked at through their differences from similar things. The similar things are grouped under four viewpoints of psychological theory (self-actualization, psychological defense mechanisms, theories of the mother–child relationship, and the classification of emotions), so this part can also be read as a guide to theories of psychology. Last, the outlines that appear are lined up and looked at again through stages and personality. The five chapters of premises give only an overview and links. Readers who know the theories of psychology can go on to the chapter "[Why are feelings similar to trust hard to tell apart?](#ldd-discern)". Readers who do not can follow the "Sources" at the end of each chapter to the original sources.
 
 <a id="ldd-unconscious"></a><strong>pjdhiro's view (translated by Claude):</strong>The human psyche is not built the way we think it is. Freud's transference; sources bearing on the definitions of trust and love, like Klein's object relations; Jung's archetypes; irrational behavior and the arising of feelings through psychological defense mechanisms, stages of development and states — none of us is built as admirably as we think.
 
@@ -755,6 +740,8 @@ What Freud calls the repressed is what has been kept from rising into consciousn
 Sources: Freud (1915) "Das Unbewußte", *Internationale Zeitschrift für ärztliche Psychoanalyse* [3(4):189–203](https://archive.org/details/z319154), [3(5):257–269](https://archive.org/details/z319155) (full text checked; read in the German original; repression and the scope of the unconscious p.189, the reasons for positing the unconscious and the word presumption pp.189–190, turning inference on oneself p.192, Kant's warning and "not necessarily built the way it appears" p.193, latent and repressed, the preconscious and censorship pp.193–194; the copy is the journal pages in [the International Psychoanalytic University Berlin collection on the Internet Archive](https://archive.org/details/z319154); public domain) / Jung (1917) *Die Psychologie der unbewußten Prozesse*, English translation by Hecht, "The Psychology of the Unconscious Processes", in Long (ed.) *Collected Papers on Analytical Psychology*, 2nd ed. (1920), chapter 14 (full text checked, in translation; read in Hecht's English translation; section 5 "The Personal and the Impersonal Unconscious" pp.408–416; fantasies appearing in the same form as the themes of legends and primordial images p.410, gods and devils p.411; the copy is [Project Gutenberg #48225](https://www.gutenberg.org/ebooks/48225); public domain).
 
 To read the originals: a Japanese translation of Freud's paper is in *Furoito zenshū 14* (Iwanami Shoten, 2010) under the title "Muishiki" ([CiNii Books](https://ci.nii.ac.jp/ncid/BB03371699)). Jung's paper can be read from section 5 of the English translation on Project Gutenberg. The Japanese translation of the later revised version (*Über die Psychologie des Unbewussten*) is *Muishiki no shinri* (tr. Yoshitaka Takahashi, Jinbun Shoin) ([CiNii Books](https://ci.nii.ac.jp/ncid/BB24397125)).
+
+Sources: for the paragraph at the head of Part 4 on research that has written about Love overlapping with trust and reassurance: [Plutchik (2001)](https://kli.ac.at/webroot/files/file/Evolution%20%26%20Cognition/2001%207-2.pdf) "Integration, differentiation, and derivatives of emotion", *Evolution and Cognition* 7(2):114–125 (full text checked; love as the mixture of joy and acceptance p.118, words for emotions and personality p.119; more in the chapter "[Where is trust among the emotions?](#ldd-emotion)") / Bowlby (1958) "The nature of the child's tie to his mother", *International Journal of Psycho-Analysis* 39:350–373 (full text checked against [a reset copy on the attachment research site of Stony Brook University](https://psychology.psy.sunysb.edu/attachment/online/Bowlby_1958_childs%20tie.pdf)) / [Fisher (1998)](https://doi.org/10.1007/s12110-998-1010-5) "Lust, attraction, and attachment in mammalian reproduction", *Human Nature* 9(1):23–52 (full text checked; pp.23–24; [PDF on the author's site](https://helenfisher.com/downloads/articles/10lustattraction.pdf); the three systems are put forward in the text as a hypothesis) / [Acevedo, Aron, Fisher & Brown (2012)](https://doi.org/10.1093/scan/nsq092) "Neural correlates of long-term intense romantic love", *Social Cognitive and Affective Neuroscience* 7(2):145–159 (full text checked against [the text on PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC3277362/); a study that selected only people who self-reported intense love) / Fredrickson (2016) "Love: Positivity resonance as a fresh, evidence-based perspective on an age-old topic" (full text checked against [the pre-publication manuscript on the author's lab site](https://peplab.web.unc.edu/wp-content/uploads/sites/18901/2019/06/Fredrickson2016ChapteronLoveforHandbookofEmotions.pdf); what "I love you" points to, and the feelings, bonds, closeness and commitment built up over time, p.3). The three of Bowlby, Fisher and Acevedo et al. are also lined up in the table of the separate page "[How has Love been spoken of?](love-history.html#愛着--ボウルビィ1958-年)" (in Japanese).
 
 </details>
 
@@ -818,7 +805,7 @@ The previous chapter saw that the mind has moves to protect itself from anxiety 
 
 <a id="ldd-holding"></a><strong>pjdhiro's view (translated by Claude):</strong>I think two things are important for mental growth: active things that point at the mind, like cognitive behavioral therapy, shikan or metacognition; and being in situations that undo defense, like empathy and relationships of trust. So much so that I think those two alone are enough. Separation and inclusion. That is, poking at defense and pulling one back to reality, and making a safe situation where defense is not needed.
 
-The first is the side of observing, pointing at, one's own mind as an object oneself. Observing feelings as objects appears as emotional metacognition in the chapter "[Can people tell trust apart from faith and expectation within themselves?](#ldd-discern)". Cognitive behavioral therapy and shikan are examples of this side.
+The first is the side of watching one's own mind as an object, the side that points. Watching emotions as objects appears as emotional metacognition in the chapter "[Why are feelings similar to trust hard to tell apart?](#ldd-discern)". Cognitive behavioral therapy and *shikan* are examples of this side.
 
 The second is the enfolding side, of situations that undo protection. Winnicott called not only physically holding the infant but the whole of the provision surrounding the infant "holding", and wrote that it is reliable, not mechanically, but in a way that includes empathy for the other (the chapter "[How do reassurance and dependence differ from trust?](#ldd-safety)"). An introduction to Winnicott's theory is on the separate page "[Psychology that influenced pjdhiro](influences-psychology.html#ドナルドウィニコット--ホールディング)" (in Japanese). Empathy and reverie (Bion's containing) are also examples of this side.
 
@@ -882,11 +869,11 @@ To read the originals: Cook-Greuter's paper can be read in full in the Wayback M
 
 </details>
 
-## Can people tell trust apart from faith and expectation within themselves?
+## Why are feelings similar to trust hard to tell apart?
 
 <!--OPEN-->
 
-The chapters so far saw that the mind has sources invisible to the person, and that what looks threatening changes with the stage of development. The chapters that follow take up expectation, faith, idealization, reassurance and dependence, and attachment one by one, and look at how each differs from trust. Before that, there is a question. Can people, within themselves, tell trust apart from other feelings such as faith and expectation? pjdhiro sees the reason the word trust is confusing like this.
+The chapters so far saw that the mind has sources the person cannot see, and that what looks threatening changes with the stage of development. From here, expectation, acceptance, anxiety, faith, idealization, reassurance and dependence, and attachment are grouped by viewpoint of theory and compared with trust. Why compare them? Can people, within themselves, tell trust apart from other feelings such as faith and expectation? pjdhiro sees the reason the word trust gets confused this way.
 
 <a id="ldd-discern"></a><strong>pjdhiro's view (translated by Claude):</strong>The word trust is confusing because, depending on the subject's state and environment, it occurs in every kind of case. Even something others could not call trust, even something irrational, the subject ends up feeling as trust. Like faith.
 
@@ -912,7 +899,7 @@ When thinking about the flow of Part 4, pjdhiro said this about what is difficul
 
 <strong>pjdhiro's view (translated by Claude):</strong>The problem is a matter of the degree of emotional metacognition, like: can one tell trust, faith and expectation apart?
 
-Emotional metacognition is observing one's own feelings as objects. The chapters that follow take up similar feelings one by one and line up where they can be told apart from trust from outside.
+Emotional metacognition is watching one's own emotions as objects. Even if they are hard to separate inside the person, what can be told apart from outside can be lined up. The chapters that follow take up the similar feelings grouped by viewpoint of psychological theory, and line up where they can be told apart from trust from outside. Each theory, like one of [the blind men feeling the elephant](#ldd-blind-elephant), touches one aspect of the elephant. Each time the viewpoint changes, another aspect of trust and reassurance comes into view.
 
 <details><summary>Sources</summary>
 
@@ -927,6 +914,12 @@ Sources: [Barrett, Gross, Christensen & Benvenuto (2001)](https://doi.org/10.108
 To read the originals: Barrett and colleagues' paper can be read in full, as journal pages, in the Wayback Machine capture.
 
 </details>
+
+<!--LENS:Viewpoint 1|Expectation and acceptance, seen from the viewpoint of self-actualization-->
+
+In a 1943 paper Maslow wrote that even after the needs for physiology, safety, love and esteem are satisfied, people try to become what they can be, and called this the need for self-actualization. In this group, expectation and acceptance are seen from the side of the movement by which people head toward what they can be. Expectation appears as energy to get moving, and acceptance as something that turns toward reality after an expectation fails, and as something that turns toward oneself.
+
+<!--/LENS-->
 
 ## How do expectation and trust differ?
 
@@ -950,9 +943,23 @@ pjdhiro says this about what the word trust is applied to.
 
 <strong>pjdhiro's view (translated by Claude):</strong>In what I call trust, I feel something like a vector heading toward stability and integration, and I apply the word to that.
 
-That there are things the person feels as trust that others cannot call so was seen in the chapter "[Can people tell trust apart from faith and expectation within themselves?](#ldd-discern)". What trust is is still being searched for, so this page does not settle on one thing, but lines up several aspects.
+That some things feel like trust to the person but cannot be called trust by others was seen in the chapter "[Why are feelings similar to trust hard to tell apart?](#ldd-discern)". Since what trust is is still being searched for, this page does not settle on one, and lines up several aspects.
 
-In a dialogue about acceptance, pjdhiro set two sequences side by side.
+<details><summary>Sources</summary>
+
+<!--REF:Psychology-->
+
+Sources: the axes of expectation and trust = the working note of "What Is Awareness", "[What is trust — a multidimensional description by axes](https://github.com/uminomae/project-design-theory/blob/main/as/knowledge/concepts/CN-006_trust-analysis-axes.md)" (in Japanese).
+
+Sources: pages on Shinya Nitta's website "Seishin bunseki tōgō riron" (in Japanese): "[The psychodynamics that produce values](https://www.seishin-bunseki.jp/category/2122026.html)" (expectation [*ate*] and dependent pathological identification; section "Values of faith"), "[The psychodynamics of various personality tendencies](https://www.seishin-bunseki.jp/category/2103476.html)" (the source of compulsion is expectation; section "Various compulsions"), "[The psychoanalysis of respect](https://www.seishin-bunseki.jp/category/2114846.html)" (trust is born from relationships of mutual help; section "Respect being lost"), "[Emotion and psychoanalysis](https://www.seishin-bunseki.jp/category/2102846.html)" (the ring of rescue, emotional cognition and emotional recognition, trust that wells up when one's fragility is supported) (full text checked; the author's own site). That "expectation is bad" is written in a book was checked in question 35 of "[Check of understanding of the mind (I)](https://www.seishin-bunseki.jp/category/1201054.html)" on the same site.
+
+</details>
+
+## How do acceptance and trust differ?
+
+<!--OPEN-->
+
+The previous chapter saw that after an expectation is betrayed, people despair, blame others, or accept. How is that acceptance connected with trust? In a dialogue about acceptance, pjdhiro lines up two flows.
 
 <strong>pjdhiro's view (translated by Claude):</strong>Kübler-Ross's "acceptance of death" sets the psychological changes of the dying as five stages: "denial", "anger", "bargaining", "depression", "acceptance". I think this fits quite well for "acceptance" other than of death too. And a person named Shinya Nitta holds that recovery from social withdrawal proceeds "expectation", "conceit", "meddling", "being betrayed", "resignation". Anger produces withdrawal. In bargaining, predictions of the future such as anticipation and wariness come in. When betrayed, one becomes depressed. Acceptance is achieved by giving up, by letting go. I think the two are similar.
 
@@ -964,17 +971,77 @@ pjdhiro sees that attitude of acceptance as a healthy way of holding expectation
 
 <strong>pjdhiro's view (translated by Claude):</strong>An attitude that can accept even ending in disappointment (accepting reality) is probably the healthy way to hold expectations. That attitude gives others reassurance, and I think it is close to the word self-confidence. It does not become something that worries others and drags them in. However, using it cleverly can lead to attracting people, drawing them in, and using it in marketing to make money, so judging good and bad is difficult.
 
+Acceptance is not only something that turns toward the other person or reality after an expectation fails. While rereading this reader, pjdhiro placed acceptance turned toward oneself at the start of self-actualization.
+
+<strong>pjdhiro's view (translated by Claude):</strong>I think self-acceptance is at the first position of self-actualization. You could also call it self-approval. You could also call it trust in oneself. Being convinced of oneself including what one cannot do and one's bad parts. That attitude has confidence. There is no pretense. A state that has accepted weakness. Because there is no defense of weakness, there is also little anxiety. To be precise, anxiety does arise, but one can be with the anxiety. I think this is one definition of courage. I think it is one definition of reassurance.
+
+Maslow wrote that the need for self-actualization clearly emerges after the needs for physiology, safety, love and esteem are first satisfied, and also wrote that, about self-actualization, little is yet known either experimentally or clinically (1943). pjdhiro's view places at its start accepting oneself including what one cannot do and one's bad parts, and sees it both as trust in oneself and as one definition of reassurance. The healthy way of holding expectations in the previous chapter and this self-acceptance are both spoken of in words of confidence and reassurance.
+
+pjdhiro also sees as acceptance the place in Klein's case seen in Part 2 where the loving side and the hating side come to be felt as belonging to one person who is not split apart (the chapter "[What shape does creation take?](#what-shape-does-creation-take)").
+
 <details><summary>Sources</summary>
 
 <!--REF:Psychology-->
 
 Sources: pjdhiro, "Dialogue: on acceptance" ([uminomae.github.io/pjdhiro/dialogue-acceptance/](https://uminomae.github.io/pjdhiro/dialogue-acceptance/), in Japanese).
 
+Sources: pjdhiro's view on self-acceptance = the "self-acceptance" entry of 2026-11-13 in the collection of remarks on Love-Driven Development ([pd/knowledge/research/love-driven-dev/README.md](https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/love-driven-dev/README.md), in Japanese).
+
 <!--REF:Psychology-->
 
-Sources: the axes of expectation and trust = the working note of "What Is Awareness", "[What is trust — a multidimensional description by axes](https://github.com/uminomae/project-design-theory/blob/main/as/knowledge/concepts/CN-006_trust-analysis-axes.md)" (in Japanese).
+Sources: [Maslow (1943)](https://doi.org/10.1037/h0054346) "A theory of human motivation", *Psychological Review* 50(4):370–396 (full text checked against [the HTML in York University's Classics in the History of Psychology](http://psychclassics.yorku.ca/Maslow/motivation.htm), with the original page numbers; the need for esteem and self-confidence pp.381–382; the need for self-actualization, the sentence that what a man can be, he must be, and Goldstein's term p.382; the prior satisfaction of the other needs and how little is yet known about self-actualization p.383).
 
-Sources: pages on Shinya Nitta's website "Seishin bunseki tōgō riron" (in Japanese): "[The psychodynamics that produce values](https://www.seishin-bunseki.jp/category/2122026.html)" (expectation [*ate*] and dependent pathological identification; section "Values of faith"), "[The psychodynamics of various personality tendencies](https://www.seishin-bunseki.jp/category/2103476.html)" (the source of compulsion is expectation; section "Various compulsions"), "[The psychoanalysis of respect](https://www.seishin-bunseki.jp/category/2114846.html)" (trust is born from relationships of mutual help; section "Respect being lost"), "[Emotion and psychoanalysis](https://www.seishin-bunseki.jp/category/2102846.html)" (the ring of rescue, emotional cognition and emotional recognition, trust that wells up when one's fragility is supported) (full text checked; the author's own site). That "expectation is bad" is written in a book was checked in question 35 of "[Check of understanding of the mind (I)](https://www.seishin-bunseki.jp/category/1201054.html)" on the same site.
+To read the originals: Maslow's paper can be read in full in York University's Classics in the History of Psychology. The need for self-actualization is on p.382.
+
+</details>
+
+<!--LENS:Viewpoint 2|Anxiety, and faith and idealization, seen from the viewpoint of psychological defense mechanisms-->
+
+As seen in the chapter "[The mind has mechanisms to protect itself](#ldd-defense)", the mind has moves that protect it from anxiety and pain, and psychoanalysis has called them defense mechanisms. Freud wrote of religious ideas from the side of wishes arising from human helplessness (1927), and Klein counts idealization among the early moves that protect against anxiety (1946). In this group, we first look at what anxiety is, then at faith and idealization from the side of the moves that protect one's own weakness and the anxiety that wells up there.
+
+<!--/LENS-->
+
+## What is anxiety?
+
+<!--OPEN-->
+
+<a id="ldd-uncertain"></a>The words on self-acceptance in the previous chapter included "to be precise, anxiety does arise, but one can be with the anxiety". Is anxiety something that should simply be erased? While thinking about where in this reader to treat the anxiety of not being able to see ahead, pjdhiro said this.
+
+<strong>pjdhiro's view (translated by Claude):</strong>The feeling of anxiety is very important. It is not the opposite of reassurance either.
+
+On what anxiety is, pjdhiro cites one definition from the theory of the psychiatrist Shinya Nitta.
+
+<strong>pjdhiro's view (translated by Claude):</strong>I like Shinya Nitta's definition: something like the dissociation that happens when returning from a state of psychological defense to facing reality.
+
+Nitta writes that "anxiety is precisely dissociation". Dissociation in Nitta's sense is a movement exactly opposite to the work that protects the mind (defense): the protection peels away, and the unpleasant self that had been protected comes out. Nitta writes that the two go back and forth, as "defense ⇔ dissociation", and writes of the movement of the protection peeling away as something everyone has. Read with this definition, anxiety wells up where the protection comes undone and one begins to face what one had not been looking at. The faith and idealization seen in this group are moves on the side of that protection.
+
+🚧 How other theories besides Nitta's have defined anxiety is under construction (exploration: [#143](https://github.com/uminomae/project-design-theory/issues/143)).
+
+A page that starts from the definition of anxiety and lines up its difference from fear, whether anxiety or protection comes first, whether one returns to protection or keeps facing, and how what anxiety faces differs by stage, is placed as the separate page "[What is anxiety?](anxiety.html)" (in Japanese).
+
+<details><summary>More — how does anxiety well up when one cannot see ahead? (research on preparation and the feeling of safety)</summary>
+
+When one cannot see ahead, the body first prepares, research has written. Some research grasps anxiety from the side of the uncertainty of future threat and of the workings that prepare for it (Grupe and Nitschke 2013). Some research also holds that under uncertainty the stress response is not born after something happens, but is working from the start, and is held down only while one feels safe (Brosschot, Verkuil and Thayer 2018). In this reading, the signal of survival is not peculiar to some person or some stage of growth, but comes back to anyone once safety can no longer be felt.
+
+Where does the feeling of safety come from? The same research counts, as one source of the feeling of safety, a strong network of connections for people and for animals that live in groups (Brosschot, Verkuil and Thayer 2018). From here, the relation of the two signals can be re-read in one form: writing the signal of survival as what comes back when safety cannot be felt, and the signal of trust as the feeling of safety that holds it down. ["What Is Awareness"](https://uminomae.github.io/project-design-theory/as/) writes the two signals as two directions. Whether they are two separate signals, or one preparedness and what holds it down, touches the root of how "What Is Awareness" writes, so it has not been decided yet. Either way, the two are in the body at the same time and are not cut off from each other.
+
+Grupe and Nitschke (2013) hold that uncertainty makes it difficult to prepare ahead and that this leads to anxiety, and describe moves to prepare for the uncertainty of future threat as adaptive while they are proportionate to the likelihood and severity of the threat.
+
+Brosschot, Verkuil and Thayer (2018) placed the stress response as a default that is always on and is held down by the prefrontal cortex only when safety is felt. When safety can no longer be felt, that holding down comes off at once. They also write that the holding down coming off does not cause the stress response but allows it. As things that damage the feeling of safety, they name loneliness, low social status, urban environments and adversity in early childhood, and count a strong network of connections as one source of safety.
+
+There is also a foothold for the reading that if not seeing ahead is held as a state known to be unseen, alarms are less likely to sound. Yu and Dayan (2005) separate the uncertainty of knowing that cues are unreliable within a familiar situation (expected uncertainty) from the uncertainty caused by an unannounced switch of situation (unexpected uncertainty), and propose assigning them to separate systems of neural modulation. In people with more than ten thousand hours of meditation, activity in the insula and amygdala was lower before pain (in the anticipation phase), while during pain activity in the insula and cingulate was, if anything, stronger; pain intensity was reported the same as by novices, and unpleasantness as less (Lutz et al. 2013). It is not that the signal stops sounding; it does not sound in the anticipation phase, and sounds when the event comes.
+
+<!--REF:Nerves and emotion-->
+
+Sources: [Grupe & Nitschke (2013)](https://doi.org/10.1038/nrn3524) "Uncertainty and anticipation in anxiety", *Nature Reviews Neuroscience* 14(7):488 (full text checked against [the authors' manuscript on PMC; the passages on uncertainty and preparing in the abstract and introduction](https://pmc.ncbi.nlm.nih.gov/articles/PMC4276319/)) / [Brosschot, Verkuil & Thayer (2018)](https://doi.org/10.3390/ijerph15030464) "Generalized Unsafety Theory of Stress", *International Journal of Environmental Research and Public Health* 15(3):464 (full text checked against [the public version on PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC5877009/); abstract, section 1.2, section 3) / [Yu & Dayan (2005)](https://doi.org/10.1016/j.neuron.2005.04.026) "Uncertainty, neuromodulation, and attention", *Neuron* 46(4):681 (full text checked against [the PDF on the author's site](https://web.archive.org/web/20051024185924/http://www.gatsby.ucl.ac.uk:80/~dayan/papers/yud2005.pdf); abstract and introduction on p.681) / [Lutz, McFarlin, Perlman, Salomons & Davidson (2013)](https://doi.org/10.1016/j.neuroimage.2012.09.030) "Altered anterior insula activation during anticipation and experience of painful stimuli in expert meditators", *NeuroImage* 64:538 (full text checked against [the authors' manuscript on PMC; abstract and methods](https://pmc.ncbi.nlm.nih.gov/articles/PMC3787201/)).
+
+</details>
+
+<details><summary>Sources</summary>
+
+<!--REF:Psychology-->
+
+Sources: the page "[Dissociation theory](https://www.seishin-bunseki.jp/category/2010409.html)" on Shinya Nitta's website "Integrated theory of psychoanalysis" (in Japanese; sections "Conventional ideas about dissociation", "My ideas about dissociation" and "The position of dissociative disorders"; full text checked; the author's own site). Where Nitta's definition and pjdhiro's words come from is in the chapter "Anxiety wells up where protection peels away" of the separate page "[What is anxiety?](anxiety.html#不安は守りがはがれるところに湧く)" (in Japanese).
 
 </details>
 
@@ -986,7 +1053,7 @@ The chapter "[How do expectation and trust differ?](#ldd-expect)" saw expectatio
 
 <a id="ldd-faith"></a>Freud called a belief an illusion when, among its motives, the fulfilment of a wish comes to the fore (1927). Freud also wrote that an illusion is not the same as an error, and may later turn out right. What Freud separated was not whether what is believed is correct, but where the way of believing comes from. On that basis Freud wrote that an illusion dispenses with verifying itself.
 
-This chapter does not settle on what trust is. Whether the person can tell trust apart from another feeling such as faith was seen in the chapter "[Can people tell trust apart from faith and expectation within themselves?](#ldd-discern)".
+This chapter does not settle on one meaning of trust. Whether people can tell trust apart from other feelings such as faith was seen in the chapter "[Why are feelings similar to trust hard to tell apart?](#ldd-discern)".
 
 <details><summary>Sources</summary>
 
@@ -1002,9 +1069,13 @@ To read the originals: Japanese translations are *Gensō no mirai / Bunka e no f
 
 <!--OPEN-->
 
-The chapter "[How do expectation and trust differ?](#ldd-expect)" saw that expectation is also a movement of counting on the other as omnipotent. The chapter "[How do faith and trust differ?](#ldd-faith)" saw that faith includes a way of believing in which the wish comes to the fore. Both contain a movement of selectively seeing only the good aspects. On a page that put the five stages of creation into a diagram, pjdhiro names this movement as a phenomenon to be especially careful about.
+Expectation is also a move of counting on the other as almighty, as seen in the chapter "[How do expectation and trust differ?](#ldd-expect)". Faith includes a way of believing in which the wish comes to the front, as seen in the chapter "[How do faith and trust differ?](#ldd-faith)". Both contain the move of choosing to see only the good side. On a page that made the five stages of creation into a diagram, pjdhiro named this move as a phenomenon to be especially careful of, and later restated it like this.
 
-<a id="ldd-idealize"></a><strong>pjdhiro's view (translated by Claude):</strong>The self-destruction of "good": one easily judges the fluctuation on the opposite side as "bad", selects only "good", and it becomes excessive and gets fixed. Examples: justice, perfection, affection, value, creativity, knowledge, diversity, joy, power, peace.
+<a id="ldd-idealize"></a><strong>pjdhiro's view (translated by Claude):</strong>Like Nonaka's three excesses, anything in excess is as bad as falling short. Self-destruction through excessive "good" is a phenomenon I feel around the various things that pass for "correct answers": one easily judges the fluctuation on the opposite side as "bad", chooses only the "good", and goes to excess and becomes fixed. Examples: justice, perfection, affection, value, being creative, knowledge, diversity, joy, power, peace.
+
+On the same day, pjdhiro went on like this.
+
+<strong>pjdhiro's view (translated by Claude):</strong>I feel that even confident, idealistic policies have self-destruction through excessive "good".
 
 Psychoanalysis has called the movement of selecting only the good aspects and seeing the opposite aspects split off idealization. Klein counted idealization among the early moves that protect against anxiety, and at the same time wrote that it is part of normal development (1946). The infant holds the satisfying object and the frustrating object apart, and protects itself from the terrifying aspect by enlarging the good aspect. What pjdhiro's fixing of "good", Klein's idealization and Nitta's *ate* have in common is a movement of selecting and enlarging the good aspect and keeping the opposite side split off.
 
@@ -1016,11 +1087,17 @@ This page does not settle on one difference between idealization and trust. Set 
 
 <!--REF:Psychology-->
 
-Sources: pjdhiro, "[Dialogue: what is creation](https://uminomae.github.io/pjdhiro/dialogueCreation/)" (in Japanese; the "wave" entry under "phenomena to be especially careful about") / Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99–110](https://archive.org/details/ijp-27-1946-1-2) (full text checked; the tendency to idealize the good object, and flight to the internal idealized object p.103; the loved and hated aspects felt as not apart, fear of loss, the sense of guilt, a state close to mourning, the urge of reparation, the splitting movement remaining in changed form and anxious situations being experienced again and again, and both idealization and terror lessening as anxiety weakens p.105; splitting mechanisms and defenses being part of normal development and also the ground of later illness p.109; the copy is from [the International Psychoanalytic University Berlin collection on the Internet Archive](https://archive.org/details/ijp-27-1946-1-2)) / the axis of only good outcomes versus good and bad together = the working note of "What Is Awareness", "[What is trust — a multidimensional description by axes](https://github.com/uminomae/project-design-theory/blob/main/as/knowledge/concepts/CN-006_trust-analysis-axes.md)" (in Japanese).
+Sources: the two views of pjdhiro at the head of the chapter are words of 2026-11-14. The first, "Nonaka's three excesses", refers to Ikujiro Nonaka (2019) "Kyōkan no keiei ni yotte shūgō inobēshon o okose" [Create collective innovation through empathy management] (foreword), *Kenkyū gijutsu keikaku* [Journal of Science Policy and Research Management] [34(1):2–3](https://doi.org/10.20801/jsrpim.34.1_2) (in Japanese; full text checked; p.2 says that Japan has for some time suffered from "three excesses: over-planning, over-analysis and over-governance", and that as a result of turning to science-biased management, the innovative capacity of Japanese companies is deteriorating), and to Nonaka's text "[The pivot of management shifts to humanness](https://www.k-academy.jp/president_dialogue/)" in a dialogue between Ikujiro Nonaka and Tsuyoshi Numagami (2021-11-05; *Seisansei shinbun*, 2021-12-05 issue; in Japanese; full text checked; a page of Keiei Academy; it writes that behind the decline of Japan's international competitiveness were three excesses, "over-planning", "over-compliance" and "over-analysis", which may have been brought about by lacking the viewpoint that humans are creative agents who explore meaning and value toward the future). The third word is governance (over-governance) in 2019 and compliance (over-compliance) in 2021. The original entry "self-destruction of the 'good'" is in pjdhiro's "[Dialogue: what is creation](https://uminomae.github.io/pjdhiro/dialogueCreation/)" (in Japanese; the "wave" entry under "phenomena to be especially careful of") / Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99–110](https://archive.org/details/ijp-27-1946-1-2) (full text checked; the tendency to idealize the good object, and flight to the internal idealized object p.103; the loving and hating sides felt as not apart, the fear of loss, feelings of guilt, a state akin to mourning, the drive to make reparation, the splitting moves persisting in changed form, and anxiety situations being experienced again and again, and idealization and the frightening diminishing as anxiety lessens, p.105; that splitting mechanisms and defenses are part of normal development and also the basis of later illness p.109; the copy is [the collection of the International Psychoanalytic University Berlin on the Internet Archive](https://archive.org/details/ijp-27-1946-1-2)) / only good results, the axis of both good and bad = the working note of "What Is Awareness", "[What is trust? — a multidimensional description by axes](https://github.com/uminomae/project-design-theory/blob/main/as/knowledge/concepts/CN-006_trust-analysis-axes.md)" (in Japanese).
 
 To read the originals: Klein's paper is in *Merani Kurain chosakushū 4: Mōsōteki/bunretsuteki sekai* (Seishin Shobō, 1985) under the title "Bunretsuteki kisei ni tsuite no oboegaki" ([CiNii Books](https://ci.nii.ac.jp/ncid/BN00630900)).
 
 </details>
+
+<!--LENS:Viewpoint 3|Reassurance, dependence and attachment, seen from the viewpoint of theories of the mother–child relationship-->
+
+Winnicott and Bowlby wrote, from the relationship between an infant and the person who cares for it, about what people count on and by what they feel protected. These are theories on the side that loosens protection, like empathy and holding (the chapter "[In what situations does the mind's defense loosen?](#ldd-holding)"). In this group, reassurance and dependence, and attachment, are seen from the side of this relationship.
+
+<!--/LENS-->
 
 ## How do reassurance and dependence differ from trust?
 
@@ -1068,11 +1145,17 @@ Sources: the page "[The psychoanalysis of respect](https://www.seishin-bunseki.j
 
 </details>
 
+<!--LENS:Viewpoint 4|Where trust is, seen from the viewpoint of the classification of emotions-->
+
+There are theories that describe emotions by a small number of basic emotions and their mixtures, and theories that line them up by the emotion systems of the brain. In this group, we look at where trust and Love have been placed in such classifications.
+
+<!--/LENS-->
+
 ## Where is trust among the emotions?
 
 <!--OPEN-->
 
-The chapters so far have looked at trust and reassurance through their differences from similar things such as expectation and attachment. The next chapter lines up their outlines. Before that, let us look at where trust and Love have been placed in research that has divided and arranged emotions. pjdhiro talks about this view like this.
+In the three viewpoints so far, trust and reassurance were seen through their differences from similar things such as expectation and attachment. In the fourth viewpoint, we look at where trust and Love have been placed in research that has divided and lined up emotions. pjdhiro speaks of this way of seeing like this.
 
 <a id="ldd-emotion"></a><strong>pjdhiro's view (translated by Claude):</strong>As a classification of emotions, what is closest to a definition of Love in the narrow, positive sense is the emotion of trust.
 
@@ -1106,16 +1189,23 @@ To read the originals: the papers of Plutchik and Panksepp can both be read in f
 
 </details>
 
+<!--LENS:Overlaying the viewpoints|The outlines of trust and reassurance-->
+
+The aspects seen from the four viewpoints are overlaid to line up the outlines of trust and reassurance, and looked at again through stages and personality.
+
+<!--/LENS-->
+
 ## What outlines do trust and reassurance show?
 
 <!--OPEN-->
 
-The chapters so far have set trust and reassurance beside expectation, faith, idealization, dependence, attachment and the classification of emotions in turn. Here we answer what trust is and what reassurance is. The answer is not a single definition but, like [the blind men describing the elephant](#ldd-blind-elephant), an outline lining up the aspects touched so far.
+The chapters so far looked at trust and reassurance from the four viewpoints of self-actualization, psychological defense mechanisms, theories of the mother–child relationship and the classification of emotions, lining them up with expectation, acceptance, faith, idealization, dependence and attachment. Here, we answer what trust is and what reassurance is. The answer is not a single definition but an outline lining up the aspects touched so far, like [the blind men describing the elephant](#ldd-blind-elephant).
 
 Aspects of trust touched:
 
 - The side of its sources: some of the feeling of trust comes not only from the person in front of one, but from patterns one is not conscious of (Freud, Klein, Jung; the chapter "[Where do the feelings of trust and love come from?](#ldd-source)").
 - Difference from expectation: expectation is the movement in which a self trying to be perfect counts on the other as omnipotent; trust, Shinya Nitta writes, wells up when the other supports one's fragility, and is born from relationships of mutual help.
+- The side of acceptance: pjdhiro also calls self-acceptance trust in oneself, and sees it as the attitude of being convinced of oneself including what one cannot do and one's bad parts (the chapter "[How do acceptance and trust differ?](#how-do-acceptance-and-trust-differ)").
 - Difference from faith: a way of believing in which the fulfilment of a wish comes to the fore (illusion) dispenses with verifying itself, Freud writes.
 - Difference from idealization: idealization is the movement of selecting and enlarging only the good aspects and keeping the opposite side split off. On the axis in the working notes of "What Is Awareness" (the side that sees only good outcomes and the side that holds good and bad together), which side trust is on is not yet decided.
 - The side of attachment: expectations about the other and oneself accumulated through repetition. Experiences of not being responded to are included too.
@@ -1124,6 +1214,7 @@ Aspects of trust touched:
 
 Aspects of reassurance touched:
 
+- Being able to be with anxiety: when one has accepted one's weakness, anxiety arises but one can be with it. pjdhiro sees this as one definition of reassurance (self-acceptance). pjdhiro also says, "It also resembles courage."
 - Dependence and being held: relying and being held is the foothold for the feeling of being able to rely, Winnicott writes. Dependence is not written as something discarded before reaching trust.
 - The need for safety: reassurance as a need for a predictable, orderly, reliable world (Maslow).
 - Reassurance as protection: pjdhiro sees reassurance and safety sought in a spirit of self-protection or opportunism as a state like dependence through psychological defense mechanisms.
@@ -1154,7 +1245,7 @@ In Cook-Greuter's framework of leadership maturity, the rule-oriented stage is i
 
 The side of reassurance connects to the table in the chapter "[What looks threatening changes with the stage of development](#ldd-stages)". If what it is threatening to lose differs, what brings reassurance should also look different. Reading from the table, at the Conformist stage being let into the group, at the Expert stage having one's expertise recognized, and at the Achiever stage being able to move forward may look close to reassurance.
 
-Whether similar feelings can be told apart also connects to stages. In the table in the chapter "[Can people tell trust apart from faith and expectation within themselves?](#ldd-discern)", discerning fine differences between similar feelings came at later stages. Whether one can feel trust apart from expectation or faith may also differ by stage.
+Whether similar feelings can be told apart also connects to the stages. In the table of the chapter "[Why are feelings similar to trust hard to tell apart?](#ldd-discern)", telling apart fine differences between similar emotions came at later stages. Whether one can feel trust apart from expectation or faith may also differ by stage.
 
 From the side of personality. pjdhiro sees personality as something that can also be called the strength and tendencies of psychological defense (the chapter "[The mind has mechanisms to protect itself](#ldd-defense)"). pjdhiro also gave justice, perfection, affection, value, creativity, knowledge, diversity, joy, power and peace as examples of objects for which one selects "good" and fixes it (the chapter "[How do idealization and trust differ?](#ldd-idealize)"). pjdhiro also offers the view of what each personality tends to take as its object (power, justice, peace and so on). The objects in which one readily places trust or reassurance may differ by personality.
 
@@ -1174,7 +1265,7 @@ Sources: Cook-Greuter (2013) "[Nine Levels of Increasing Embrace in Ego Developm
 
 Part 4 looked at what trust is and what reassurance is through the premises of the mind and differences from similar things, and lined them up as outlines rather than a single definition. It also looked again through the lenses of stages and personality. The four parts so far were preparation for answering the first question.
 
-Part 5 looks at what this reader wants to call Love, and answers the first question, "What drives me to do projects?"
+Part 5 looks at what this reader wants to call Love, and answers the first question, "What drives us to do projects?"
 
 <!--/TURN-->
 
@@ -1188,7 +1279,7 @@ As seen in the chapter at the end of Part 1, "[What has the word Love pointed to
 
 <a id="ldd-love"></a><strong>pjdhiro's view (translated by Claude):</strong>If you list what is called Love under "What is Love?", it becomes broad. It would be good to make that the starting point. Its driving source. Is it the field or the vortex? The hint is the emotions of acceptance and trust. Or the possibility that the same word is applied to the various aspects we applied it to under "What is value?". In a field called Love, fluctuations of Love and collision, Love is born there, and becomes a bundle of Love. Something like that.
 
-The same single word may be applied to various aspects. People give names to vortices of a size easy to perceive (the chapter "[Words are names for the vortices seen between the waves](#ldd-vortex)"). The narrowest way of cutting out Love is as an emotion such as romance or liking. What pjdhiro wants to call Love is what moves these, including that emotion. pjdhiro is not confident enough to state flatly that this is Love, and that is why this reader writes "what I want to call Love".
+Perhaps the same single word is applied to various aspects. People give names to vortices of a size easy to perceive (the fold "[Words are names for the vortices seen between the waves](#ldd-vortex)"). The narrowest way of cutting out Love is as a feeling, such as falling in love or fondness. What pjdhiro wants to call Love includes those feelings, and is what moves them. pjdhiro is not confident enough to state flatly that this is Love, and that is why this reader writes "what I want to call Love".
 
 🚧 Asking about the driving source of each of the things lined up in the chapter at the end of Part 1 is under construction. (Exploration: [#89](https://github.com/uminomae/project-design-theory/issues/89))
 
@@ -1204,7 +1295,7 @@ What I want to call Love is not limited to the emotions of romance or liking; em
 
 <details class="pd-column"><summary>A sword does not cut itself</summary>
 
-"A sword does not cut itself" is a phrase in the recorded sayings of Dahui Zonggao, a Chan monk of the Song dynasty. The original continues "眼不自見，刀不自割，喫飯濟飢，飲水定渴" (the eye does not see itself, the sword does not cut itself; eating rice eases hunger, drinking water stops thirst). pjdhiro reads this phrase as follows.
+<a id="ldd-katana"></a>"The sword does not cut itself" is a phrase in the recorded sayings of Dahui Zonggao, a Zen monk of the Song dynasty. The original continues: "The eye does not see itself, the sword does not cut itself; eating rice relieves hunger, drinking water quenches thirst." pjdhiro reads this phrase as follows.
 
 <strong>pjdhiro's hypothesis (translated by Claude):</strong>"A sword does not cut itself" probably means that I too am the gravitational field itself, a part of it. It's the hypothesis that love may be the gravitational field itself.
 
@@ -1216,7 +1307,7 @@ Sources: *Dahui Pujue chanshi yulu* fascicle 1 (Taishō vol. 47 No.1998A, p.812c
 
 <!--OPEN-->
 
-A vortex is one state of a wave, and a wave of the field, and people have given names to the shapes of vortices (the chapter "[Words are names for the vortices seen between the waves](#ldd-vortex)"). Then where among field, wave and vortex is what I want to call Love?
+A vortex is one state of a wave, and a wave one state of the field, and people have given names to the shapes of vortices (the fold "[Words are names for the vortices seen between the waves](#ldd-vortex)"). Then where among field, wave and vortex is what I want to call Love?
 
 <a id="ldd-love-faces"></a><strong>pjdhiro's view (translated by Claude):</strong>The field may be Love, or the fluctuations and waves of the field may be Love. The figure of producing vortices as if in opposition from exactly opposite directions may be close to Love. I think it is precisely because the phenomenon there is easy to perceive that people lumped it together as romance and love.
 
@@ -1228,6 +1319,12 @@ Metacognition is observing one's own feelings and thoughts as objects. pjdhiro s
 
 pjdhiro likens what is felt there to a feeling of calm, as if the presence of a mother, connected by an umbilical cord beyond the top of the head, brings stability ([pjdhiro's image](#ldd-center) in the chapter "Isn't Love like gravity?"). What lies beyond cannot be seen. pjdhiro also adds that what lies beyond the analogy is not known (the chapter "[What is what I want to call Love like?](#ldd-love-like)").
 
+pjdhiro writes of not being able to see beyond it as stability, not anxiety.
+
+<a id="ldd-love-unseen"></a><strong>pjdhiro's experience (translated by Claude):</strong>Boundlessness cannot be seen beyond. And yet it is not instability but a sense of stability.
+
+When one cannot see ahead, people usually feel anxiety. What anxiety is was seen in the chapter "[What is anxiety?](#ldd-uncertain)" in Part 4.
+
 That is, apart from the reassurance gained by confirming, there is a reassurance of being connected without confirming. This page calls it "the stability of being connected without confirming". It is one person's report of introspection, and is placed not as evidence but as one aspect of what I want to call Love.
 
 <a id="ldd-love-scale"></a>The body receives this stability, and gaps from it, as signals. The gaps are felt as a sense of something being off, or as a lack (the chapter "[When signals and thoughts part, one feels a lack](#ldd-kesson)"). pjdhiro sees it as possible that this sense of stability is being used as the measure by which things are evaluated.
@@ -1238,7 +1335,15 @@ That is, apart from the reassurance gained by confirming, there is a reassurance
 
 **The field people are in, and its distortion.** pjdhiro puts forward the hypothesis that sees the universe and us as drifting as if drawn by the distortions of the field of Love ([pjdhiro's hypothesis](#ldd-well) in the same chapter).
 
-**The figure of fluctuations and waves of the field, and opposing things meeting and producing vortices.** It is the process of creation: the field fluctuates and waves rise, different things meet at the edge and bind as a vortex (the chapter "[Words are names for the vortices seen between the waves](#ldd-vortex)"). pjdhiro sees that because this figure is the easiest to perceive, people probably lumped it together as romance and love (pjdhiro's view at the head of this chapter).
+**The figure of the fluctuation of the field and waves, of opposing things meeting and giving rise to a vortex.** It is the process of creation in which the field fluctuates, waves rise, different things meet at an edge and bind as a vortex (the fold "[Words are names for the vortices seen between the waves](#ldd-vortex)"). pjdhiro sees that because this figure is the easiest to perceive, people probably bundled it as romantic love or love (pjdhiro's view at the head of this chapter).
+
+</details>
+
+<details><summary>More — when stability wells up though one cannot see ahead</summary>
+
+Though one cannot see ahead, why does stability well up rather than anxiety? The sister reader "Isn't Love like gravity?" lines up three threads on why it is stability rather than anxiety ([chapter 4](gravity-love.html#gl-manager)). What cannot be seen is not because something is missing but because one is riding on it. Stability comes not from knowing but from being connected. Not seeing ahead becomes anxiety when one sees what lies ahead as other; if one is not cut off, the unseen ahead becomes the side one belongs to. These three are an arrangement that used first-person reports as material, not a proof. In this picture, the one connected to is not seen and has not been confirmed. The reassurance gained by confirming and the stability of being connected without confirming look alike from outside and differ inside.
+
+The dividing line changes from person to person, and even within the same person from time to time, and both may be welling up within one person. At the stage of bearing the anxiety of not seeing ahead without filling it, it can be read that the signal of survival is still sounding and the signal of trust is holding it down. pjdhiro sees wondering what it would be if something welled up in a place where the signal is zero as the noticing of kesson (the [fold](#ldd-kesson) in the chapter "When signals and thoughts part, one feels a lack"). There is not yet an index for measuring from outside which is welling up and telling them apart.
 
 </details>
 
@@ -1357,9 +1462,9 @@ pjdhiro has used many analogies: gravity; the sea, waves and vortices; a field m
 
 Here we return to the question posed at the very start of Part 1.
 
-<a id="ldd-conclusion"></a><strong>pjdhiro's question (translated by Claude):</strong>What drives me to do projects? What drives me to live?
+<a id="ldd-conclusion"></a><strong>pjdhiro's question (translated by Claude):</strong>What drives us to do projects? What drives us to live?
 
-People may be part of a field I want to call Love, and inside its distortion. The body receives the stability of connection, and gaps from it, as signals. The gaps are felt as a lack, and people are moved by that lack. The driving source of projects may be this lack. pjdhiro says of this lack: "It means the gap between Love and me" (translated by Claude). Not only business: life and family are each a project too.
+People may be part of the field I want to call Love, and inside its distortion. The body receives, as signals, the stability of connection and the gap from it. The gap is felt as a lack, and people are moved by that lack. pjdhiro sees it this way: "I think the words deficiency and needs are also this." The driving source of projects may be this lack. pjdhiro says this lack "means the gap between Love and me". Not only business but life and family, too, are each a project.
 
 (See also: [When signals and thoughts part, one feels a lack](#ldd-kesson), [Is being itself the source?](#ldd-conclusion-being))
 
@@ -1381,9 +1486,9 @@ pjdhiro's view of personality as the strength and tendencies of psychological de
 
 <!--TURN-->
 
-Part 5 looked at the word Love and answered the first question. That is the first half of the reader, whose theme was the driving source.
+Part 5 looked at the word Love and answered the first question. This is the end of the first half of the reader, whose theme was the driving source.
 
-From here is the second half, whose theme is development. Of the title "Love-Driven Development", the first half looked at Love and driving. The second half looks at what the word development points to.
+From here is the second half, whose theme is development. Of the title Love-Driven Development, the first half looked at Love and driven. The second half looks at what the word development points to, and heads toward the second question of the opening.
 
 <!--/TURN-->
 
@@ -1392,6 +1497,10 @@ From here is the second half, whose theme is development. Of the title "Love-Dri
 ## What does development point to?
 
 <!--OPEN-->
+
+Here we return to the second question set out at the opening.
+
+<a id="ldd-development-why"></a><strong>pjdhiro's question (translated by Claude):</strong>Why do we try to become something different from what we were?
 
 The word development suggests intending, planning and moving things along as one wishes. pjdhiro questions this commonplace through familiar work.
 
@@ -1628,7 +1737,7 @@ Sources: (in Japanese) *Seisenban Nihon kokugo daijiten* and *Dejitaru Daijisen*
 
 <a id="ldd-development-name"></a>A name of the form "X-driven development" is usually the name of a development method, such as test-driven development. Then is Love-Driven Development also the name of a way of doing things?
 
-The name Love-Driven Development was given afterward to events encountered many times ([where the name came from](#ldd-background)). The driving source is what I want to call Love, and people are inside it. On whether people place it first, pjdhiro says this.
+The name Love-Driven Development was given afterward to events encountered again and again ([background and history](#ldd-name)). The driving source is what I want to call Love, and people are inside it. On whether people place it first, pjdhiro says this.
 
 <strong>pjdhiro's view (translated by Claude):</strong>You can't consciously, actively place it first, but sometimes it has already been placed first unconsciously, and from others' point of view, that is the person's own doing.
 
@@ -1688,7 +1797,7 @@ When the atom was found, the explanation that matter is made of atoms was establ
 
 pjdhiro sees whether something ends in disappointment as depending on ability and on the strength of psychological defense mechanisms. Following this view, if ability catches up with the image, the image becomes reality. If defense is strong, it can be read that one either keeps the image without admitting the betrayal (idealization), or stops moving just before being betrayed.
 
-That uncertainty of future threat makes preparing difficult and leads to anxiety (Grupe and Nitschke 2013) was seen in the chapter "[When one cannot see ahead, which signals well up?](#ldd-uncertain)". When the unseen future is felt as a threat and signals of survival are welling up, vision may tend to be sought as an image to fill in the future. It looks like the same shape as the misapplication of trying to solve a problem of trust with achievement in survival.
+That uncertainty about future threat makes preparation hard, and that this leads to anxiety (Grupe & Nitschke, 2013), was seen in the fold of the chapter "[What is anxiety?](#ldd-uncertain)". When one feels the unseen ahead as a threat and the signal of survival is welling up, a vision may be easily sought as a picture that fills what lies ahead. It looks like the same shape as the misapplication of trying to solve a problem of trust by achieving survival.
 
 Clues for telling apart come from the difference between expectation and trust.
 
@@ -1751,7 +1860,7 @@ To read the theory of psychological safety, you can go from [What Is Psychologic
 
 <strong>pjdhiro's view (translated by Claude):</strong>For me, wabi has the image of endurance beyond resignation.
 
-According to dictionaries and encyclopedias, the word wabi originally pointed to being dispirited or worrying. In the life of the thatched hermitage and the tea ceremony of the medieval period, it also came to be valued positively as a word for the quiet, lonely charm within simplicity. Bearing not knowing without hurrying to fill it in is also dealt with in the table in the fold of the chapter "[When one cannot see ahead, which signals well up?](#ldd-uncertain)" (the rows 5.0–5.5) and in the entry on [negative capability](#ldd-negative-capability) below.
+According to dictionaries and encyclopedias, the word *wabi* originally pointed to being dispirited and to worrying. In the life of medieval grass hermitages and the tea ceremony, it also came to be valued positively as a word for the quiet, lonely taste found in simplicity. Bearing not knowing without hurrying to fill it is also treated in the chapter "[What is anxiety?](#ldd-uncertain)" and in the entry on [negative capability](#ldd-negative-capability) below.
 
 <details><summary>More — how wabi is written in dictionaries and encyclopedias</summary>
 
@@ -1826,7 +1935,7 @@ To read the theory of intrinsic motivation, you can go from [What is intrinsic m
 | Definition | Being capable of being in uncertainties, mysteries and doubts without any irritable reaching after fact and reason. The poet Keats named it, in a letter to the poet's brothers in December 1817, as the quality that goes to form a man of achievement, especially in literature, and which Shakespeare possessed so enormously (Keats, 1817). In later research, for example, a paper studying public health nurses in Japanese local governments introduces it as the ability to stay in uncertainty and ambiguity without rushing to conclusions (Ujihara et al., 2026). 🚧 How the word has been used in psychoanalysis and clinical practice is under construction (exploration: [#119](https://github.com/uminomae/project-design-theory/issues/119)) |
 |---|---|
 | Common misunderstandings | It is taken as the endurance of gritting one's teeth and bearing what has no answer. It is also sometimes taken as indecision that puts off deciding, or as an individual ability to be trained and increased |
-| Interpretation from the viewpoint of Love-Driven Development | This passage of Keats's letter contains no words of enduring or effort. The poet Coleridge, given as the counterexample, is written of as someone who cannot remain content with half knowledge. In the table in the fold of the chapter "[When one cannot see ahead, which signals well up?](#ldd-uncertain)" (Claude's hypothesis), this page places the band 5.0–5.5, of enduring without knowing, close to what has been called by this word, and holds that Keats's way of putting it — being able to stay without enduring — can also be read as the 6.0 band. In this table's view, whether one can stay in uncertainty changes with which signals are welling up at the time. 🚧 How this word relates to [holding](#ldd-hold) in kesson-driven thinking and to pjdhiro's view in the GRIT entry (endurance is resignation and acceptance) is under construction (exploration: [#119](https://github.com/uminomae/project-design-theory/issues/119)) |
+| Interpretation seen from Love-Driven Development | This passage of Keats's letter has no words of enduring or effort. The poet Coleridge, given as the opposite example, is written of as one who cannot remain content with half-knowledge. What anxiety is is looked at in the chapter "[What is anxiety?](#ldd-uncertain)" and on the separate page "[What is anxiety?](anxiety.html)" (in Japanese). 🚧 How this word relates to the [holding](#ldd-hold) of Kesson-Driven Thinking and to pjdhiro's view in the GRIT entry (endurance as resignation and acceptance) is under construction (exploration: [#119](https://github.com/uminomae/project-design-theory/issues/119)) |
 | Conditions under which it works | Keats closes this passage of the letter by saying that, pursued through, it would perhaps take one no further than this: that with a great poet the sense of Beauty overcomes every other consideration, or rather obliterates all consideration (Keats, 1817) |
 
 </div>
@@ -1948,6 +2057,29 @@ Next, the field on the making side. The previous chapter read the person who mak
 
 </details>
 
+<details class="pd-column" id="ldd-thinking"><summary><span>Types of thinking, and design rules<span class="pd-column__sub">Logical, process, systems and design thinking, and Baldwin and Clark's modularity</span></span></summary>
+
+Talk of design often brings up ways of thinking that carry the name "thinking", such as design thinking. There are also names like logical thinking, process thinking and systems thinking. Each can be seen as a name given to where one turns one's eyes within the single activity of thinking. Here, what each has been written about as a way of seeing is lined up briefly from representative sources. Which sources were chosen is this page's arrangement.
+
+- **Logical thinking**: spoken of as a way of thinking that traces the connection from grounds to conclusions. In chapter 1 of *How We Think* (1910), the philosopher Dewey called "reflective thought" the active, persistent and careful consideration of a belief in the light of the grounds that support it and the further conclusions to which it tends.
+- **Process thinking**: a way of thinking that sees things not as a collection of static individuals but as processes of becoming. The "Process Philosophy" entry of the *Stanford Encyclopedia of Philosophy* writes that it is a philosophy based on the premise that being is dynamic and that the dynamic nature of being should be the primary focus of any account of reality. The same entry also writes that Western metaphysics has long described reality as a collection of static individuals.
+- **Systems thinking**: a way of thinking that looks at the relations between parts, and at the whole, rather than at the parts. The "What is Systems Thinking?" entry of the Systems Engineering Body of Knowledge (SEBoK), citing Senge, writes of it as a discipline for seeing wholes, a framework for seeing interrelationships rather than things. The same entry also writes that there are many examples where drawing the boundaries of scope or time too narrowly solves the present problem but creates the same or a larger problem elsewhere or later.
+- **Design thinking**: IDEO's page describes design thinking as a human-centered approach to solving complex problems, in the form of bringing together what is desirable for people, what is viable for the organization, and what is technically feasible. Design thinking is also placed in the table of the separate page "[How far do the ideas of management studies work?](management-drivers.html#デザイン思考)" (in Japanese).
+
+A piece of work that thought about "rules" on the side of design is Baldwin and Clark's *Design Rules, Vol. 1: The Power of Modularity* (2000). Clark was then dean of Harvard Business School. In a conversation the same year, the two named IBM's System/360, launched in the early 1960s, as the first modular family of computers: the parts of the computer could be designed independently by separate specialist teams, and as long as they followed a set of design rules decided in advance, they worked as one when connected.
+
+As long as the rules are followed, what the designers of other parts need not see can be changed freely. The two call this "hidden design parameters". Baldwin also says that such modularity does not arise by chance but has to be designed in. Knowing the rules, anyone can make parts that work in the system. The two name as a major event in the growth of Silicon Valley that after System/360, designers of disk drives left IBM one after another to start their own companies and compete with compatible devices.
+
+Read in this page's words, design rules look closer to arrangements on the side of the field where vortices arise than to the vortices that are each part. This is Claude's reading. In the background of this reader, too, pjdhiro likens a year of work to [refactoring into modules](#ldd-my-app).
+
+Then what moves thinking itself? In the same chapter 1, Dewey placed the origin of thinking in some perplexity, confusion or doubt. He also wrote that thinking is not a case of spontaneous combustion, that there is something that occasions it. pjdhiro sees it this way.
+
+<strong>pjdhiro's view (translated by Claude):</strong>The driving source of thinking is a mystery too. It might be Love. Desire for knowledge, or deficiency, for the sake of a sense of reassurance.
+
+Sources: Dewey (1910) *[How We Think](https://www.gutenberg.org/ebooks/37423)*, Chapter I (full text checked against the public-domain D. C. Heath 1910 edition on Project Gutenberg; sections 1 and 4 of chapter 1) / Seibt (2022) "[Process Philosophy](https://plato.stanford.edu/entries/process-philosophy/)", *Stanford Encyclopedia of Philosophy* (full text of the public entry checked; the opening section) / Adcock, Wells & Lawson (2026) "[What is Systems Thinking?](https://sebokwiki.org/wiki/What_is_Systems_Thinking%3F)", *SEBoK* (full text checked against the version of the public entry as of 2026-11-13; section Thoughts on Systems Thinking; Senge's wording is this entry's quotation from Senge 2006, pp.68–69) / IDEO "[Design thinking](https://designthinking.ideo.com/)" (full text of the page IDEO publishes checked) / Baldwin & Clark (2000) "[More Than the Sum of Its Parts: The Impact of Modularity on the Computer Industry](https://www.library.hbs.edu/working-knowledge/more-than-the-sum-of-its-parts-the-impact-of-modularity-on-the-computer-industry)", *HBS Working Knowledge*, 2000-09-25 (a conversation introducing their book *Design Rules, Vol. 1*; full text checked against the page HBS publishes; the book itself has not been read)
+
+</details>
+
 ## What changes when the input is arranged?
 
 <!--OPEN-->
@@ -1980,7 +2112,7 @@ Sources: Henderson (1970) "[The Product Portfolio](https://www.bcg.com/publicati
 
 <details><summary>More — (2) biases decrease (the error of mistaking the abstract for the concrete, and ways to reduce it)</summary>
 
-<a id="ldd-use-2"></a>One is less often misled by things easy to perceive, like vortices. pjdhiro sees this as a way of dealing with the distortions and limits of cognition. This page saw, in the chapter [Words are names for the vortices seen between the waves](#ldd-vortex), that what people gave names to were forms easy to perceive. Errors become likely where named vortices are treated as things cut off from the field.
+<a id="ldd-use-2"></a>One is less often misled by things easy to perceive, like vortices. pjdhiro sees it as a way of dealing with cognitive distortions and limits. On this page, the fold "[Words are names for the vortices seen between the waves](#ldd-vortex)" in the chapter "What shape does creation take?" saw that what people gave names to were shapes easy to perceive. Errors arise easily where a named vortex is treated as a thing cut off from the field.
 
 In chapter 3 of *Science and the Modern World* (1925), the philosopher Whitehead named the error of mistaking the abstract for the concrete "the fallacy of misplaced concreteness". In the same passage Whitehead also wrote that the intellect need not fall into this trap. The direction is not to discard abstractions but to use them knowing they are abstractions. The difference between giving a vortex a name and treating a named vortex as a thing has the same shape as this distinction.
 
@@ -2080,6 +2212,14 @@ pjdhiro sees value as born in the customer's consciousness and changing with the
 Without judging by good and bad, one can look, as a structure, at what is recognized as value.
 
 </details>
+
+## Seen from computer science, what looks alike?
+
+<!--OPEN-->
+
+<a id="ldd-computing"></a>pjdhiro sees the field of computer science as something that could also be called an imitation of humans and organizations. In this chapter, taking easy-to-grasp examples such as AI as clues, we look from the viewpoint of computer science for shapes similar to this page's way of seeing.
+
+🚧 Under construction.
 
 ## The answer of the second half
 
@@ -2182,7 +2322,77 @@ Claude reads the two experiences as follows. Both happen where the division betw
 
 </details>
 
+<!--TURN-->
+
+Part 6 looked at what is happening inside what is called development. Suppose the reasoning is understood: now, what to do?
+
+Part 7 looks at it as practice. After looking at the situations in which to use this view, it goes on to how to train the skill and how to practice, and also looks through the viewpoint of Zen, which has developed its own spirit. It is the part that heads, from the side of developing oneself, toward the second question of the opening, "Why do we try to become something different from what we were?"
+
+<!--/TURN-->
+
+<!--PART:Part 7|Practice — when to use this view, and how to train it-->
+
+## In what situations, and under what conditions, is this view useful?
+
+<!--OPEN-->
+
+<a id="ldd-scenes"></a>The ideas of management studies and project management each have situations where they work well. The table in the Part 1 chapter "[What has management studies seen as the driving source?](#ldd-management)" lined up representative ideas together with the situations where they are effective. Lining up in what situations and under what conditions this view is useful makes the difference from them easier to see. pjdhiro sees the situations where it is useful as follows.
+
+<strong>pjdhiro's view (translated by Claude):</strong>I think it is a viewpoint useful to those who commission projects. Also, for example, when one wants to process the emotion of anxiety in a mature form that is not defense (impatience or evading responsibility).
+
+pjdhiro also sees situations where it is useful for readers outside Japan.
+
+<strong>pjdhiro's view (translated by Claude):</strong>For people in cultures other than Japan who are interested in Zen, I think it would be useful as a different viewpoint. People interested in meditation or mindfulness, for example.
+
+The Part 6 chapter "[What is this view good for?](#ldd-use)" and the three chapters that follow it looked at ways of using it in the order of checking words one has received, giving shape to something, and arranging the input. This chapter looks at the same thing from the side of in what situations and under what conditions it is useful.
+
+The first is the situation of the side that commissions a project. The second is the situation in which, when anxiety wells up, one wants to process the emotion without relying on the protections of impatience or evading responsibility. The view that anxiety is not something to erase was seen in the chapter "[What is anxiety?](#ldd-uncertain)", and the mechanisms of protection in the chapter "[The mind has mechanisms to protect itself](#ldd-defense)". The third that pjdhiro named is the situation in which people in cultures other than Japan who are interested in Zen, meditation or mindfulness come across this view as a different viewpoint. The places where this reader cited words of Zen and Buddhism are lined up in this part's chapter "[Seen from Zen, what is close?](#ldd-zen)".
+
+🚧 Under construction: what this view brings in each situation, and how it differs from the effective situations lined up in the Part 1 table, will be written.
+
+## How does one train it, how does one practice?
+
+<!--OPEN-->
+
+<a id="ldd-practice"></a>Suppose the situations where it is useful are known: then how does one acquire it? This chapter looks at how to train the skill and how to practice.
+
+pjdhiro sees practice as removing bugs from the system of the mind.
+
+<strong>pjdhiro's view (translated by Claude):</strong>Removing bugs from the system of the mind. There are two. The first is knowing how the system works. Concretely, dividing objects finely through *shikan*, and gaining psychological knowledge. Through that, knowing what is happening. The second is loosening defense, accepting weakness and badness, and processing emotions.
+
+The first is the side of knowing the mechanisms of one's own mind and what happens within it. With *shikan*, one watches the inside of oneself finely, as if pointing at it with the mind. What kind of work *shikan* is was seen, with pjdhiro's analogy, in the chapter "[Isn't Love like gravity?](#ldd-shikan)". Psychological knowledge is what was seen in Part 4, "[How does the mind feel trust and reassurance?](#ldd-part4-premise)", as the unconscious and the mechanisms of defense. The second is the side of loosening the mind's protection, accepting one's weakness and badness, and processing emotions. The situations in which protection loosens were seen in the chapter "[In what situations does the mind's defense loosen?](#ldd-holding)", and acceptance in the chapter "[How do acceptance and trust differ?](#how-do-acceptance-and-trust-differ)". These two can be read as close in arrangement to the two things that pjdhiro named, in the chapter "In what situations does the mind's defense loosen?", as important for the growth of the spirit (doing something active like pointing at the mind, and being in a situation that undoes defense) (Claude's reading).
+
+The two directions are close to the two points that pjdhiro sees as important for the growth of the spirit, seen in the Part 4 chapter "[In what situations does the mind's defense loosen?](#ldd-holding)" (doing something active like pointing at the mind, and being in a situation that undoes defense).
+
+The chapter "[The answer of the second half](#ldd-debug)" looked at pjdhiro's view of continuing to debug oneself. This chapter is the place to look at how to do that debugging.
+
+🚧 Under construction: how to do *shikan*, and how to loosen protection, accept weakness and badness, and process emotions, will be written.
+
+## Seen from Zen, what is close?
+
+<a id="ldd-zen"></a>Here and there, this reader has cited words of Zen and Buddhism. pjdhiro sees the teachings of Zen as a reference for this reader, and sees Zen as a way, with a history, of developing one's own spirit. So, after the chapter on practice, a chapter that looks through the viewpoint of Zen is placed. First, the places of the words cited so far are lined up.
+
+- "The sword does not cut itself": a phrase in the recorded sayings of Dahui Zonggao, a Zen monk of the Song dynasty ([The sword does not cut itself](#ldd-katana)).
+- The finger pointing at the moon: the Buddhist parable that the finger pointing at the moon is not the moon itself ([the finger pointing at the moon](#ldd-finger)).
+- Water and waves are not apart: an analogy from *The Awakening of Faith in the Mahāyāna*, which is not a book of the Zen school ([water and waves are not apart](#ldd-water)).
+- *Shikan*: the work of watching the inside of oneself as if pointing at it with the mind ([the paragraph on metacognition](#ldd-shikan), and the previous chapter "[How does one train it, how does one practice?](#ldd-practice)").
+- The Heart Sutra: a sutra that negates the pairs one by one, "不生不滅 不垢不浄 不増不減" (neither arising nor ceasing, neither defiled nor pure, neither increasing nor decreasing) ([From emotion processing to what is not two](#ldd-shingyo) in the background and history).
+
+Of these, pjdhiro sees the Heart Sutra as follows.
+
+<strong>pjdhiro's view (translated by Claude):</strong>I also think the Heart Sutra is the closest to this theory. If someone asked, "Is this a commentary on the Heart Sutra?", I couldn't deny its influence.
+
+🚧 Under construction: organizing the teachings of Zen as knowledge and lining them up with this reader's way of seeing will be written after checking the original sources.
+
 <!--PART:Back matter-->
+
+## Seen from existentialism, where does it stand?
+
+<a id="ldd-existentialism"></a>This chapter looks at this reader from the viewpoint of philosophy. pjdhiro sees an existentialist viewpoint in this theory.
+
+<strong>pjdhiro's view (translated by Claude):</strong>This theory does have an existentialist viewpoint. Placing it from that viewpoint might be easy to understand for people who like philosophy.
+
+🚧 Under construction: what existentialism has asked will be researched in the original sources, and where this reader's way of seeing stands from that viewpoint will be written.
 
 ## Words on this page
 
@@ -2204,13 +2414,11 @@ Claude reads the two experiences as follows. Both happen where the division betw
 
 ## How I came to this question — background and history
 
-<a id="ldd-background"></a>From here on is the scaffolding of the main text: how this view came about, the shapes borrowed from physics, and where things were cited from.
+<a id="ldd-background"></a>From here on is the scaffolding of the main text: how this view came about, and where things were cited from.
 
-<details><summary>Where the name came from</summary>
+<a id="ldd-name"></a>The name Love-Driven Development was given afterward to events encountered again and again. As pjdhiro remembers it, pjdhiro was calling it "Love駆動開発" (Love-Driven Development) to friends around 2022–2023. Writing it in blogs and posts came after that: it appeared as "LOVE駆動開発" (LOVE-driven development) in the tags of a post in May 2025, and became "Love駆動開発" in February 2026.
 
-The name appeared as "LOVE駆動開発" (LOVE-driven development) in the tags of a post in May 2025, and became "Love駆動開発" (Love-Driven Development) in February 2026. It is a name given afterward to events encountered many times.
-
-</details>
+The name came first, and this year has been a search for what it is that I want to call by that name. The course of it is placed in the folds below.
 
 <details><summary>Looking for the driving source</summary>
 
@@ -2226,7 +2434,7 @@ From this request were born the picture of the [gravity well](gravity-well.html)
 
 While looking for the driving source, pjdhiro was seeing phenomena in which people's minds seem to act on one another unconsciously, and movements of emotion that proceed neither logically nor rationally. To deal with these, pjdhiro worked on something like a mechanism for processing emotions: the emotion processing of Project Design Theory.
 
-In that work, pjdhiro met what is not two (non-duality), and the yardsticks of good and bad gradually came off. The clue was the Heart Sutra. With "不生不滅 不垢不浄 不増不減" (neither arising nor ceasing, neither defiled nor pure, neither increasing nor decreasing), the Heart Sutra negates one by one the pairs of arising and ceasing, defiled and pure, increasing and decreasing. It can be read as the form of ceasing to stand on either of the two that were divided.
+In that work, pjdhiro met what is not two (non-duality), and the yardsticks of good and bad gradually came off. <a id="ldd-shingyo"></a>The clue was the Heart Sutra. With "不生不滅 不垢不浄 不増不減" (neither arising nor ceasing, neither defiled nor pure, neither increasing nor decreasing), the Heart Sutra negates one by one the pairs of arising and ceasing, defiled and pure, increasing and decreasing. It can be read as the form of ceasing to stand on either of the two that were divided.
 
 Sources: *Prajñāpāramitā Heart Sutra*, Xuanzang's translation (Taishō vol. 8 No.251, p.848c, "不生不滅，不垢不淨，不增不減"; full text checked against [the CBETA electronic text](https://cbetaonline.dila.edu.tw/zh/T0251_001)).
 
@@ -2236,7 +2444,7 @@ The hypothesis "Might there be no good and bad, no rationality?" in the chapter 
 
 <details><summary>The app called me</summary>
 
-pjdhiro likens this year's work to refactoring the app called oneself. It began with improving the readability of code that ran but that only its author could read. Giving names that express the content, splitting out functions and making modules made it easier to connect with other things, and the structure became clearer.
+<a id="ldd-my-app"></a>pjdhiro likens this year's work to refactoring the app called oneself. It began with improving the readability of code that ran but that only its author could read. Giving names that express the content, splitting out functions and making modules made it easier to connect with other things, and the structure became clearer.
 
 <strong>pjdhiro's words (translated by Claude):</strong>It was work that could also be described as: the app called me was a black box, and I coded its behavior and functions in a new language as quality tests.
 
@@ -2258,93 +2466,31 @@ How this year was traveled is laid out in another reader, "[A year of making the
 
 </details>
 
-## Supplementary material — structural similarities with physics
+## Sources and references
 
-<a id="ldd-physics"></a>Chapter by chapter, this page has borrowed shapes from physics: the [gravity well](gravity-well.html), the change of scale from classical to quantum, the vortices between the waves and the fluctuations of the field. Here the borrowed shapes are gathered in one place, together with which shapes of physics each of the four explorations appears to overlap with.
-
-They can be borrowed because there is one estimate beneath them.
-
-<strong>pjdhiro's estimate (translated by Claude):</strong>Abstractly, and essentially, my estimate is: don't the wave motion that makes up matter and love in the broad sense follow the same laws of physics? To give an analogy, the wave motion of gravity and elementary particles may be happening in the human body too, and so on. It's a fantasy, though.
-
-What pjdhiro is thinking is that something quantum-theoretical may be happening in the neurotransmitters transmitted to the brain's nerves and in the processing of signals that follows. The mind, as an apparatus of interpretation, perceives that as love and emotion. The estimate is that human cognition and interpretation may be made that way.
-
-Some things are so similar that one wonders whether they are the same law. If it were the same law, it would, if anything, be easier to believe. That is how pjdhiro feels. Whether it is the same law is left before the point of checking. What pjdhiro keeps asking is how far the structures are similar.
-
-<details><summary>More — the four explorations and the shapes of physics</summary>
-
-**The driving source and gravity.** In the figure of the gravity well, the things around revolve along the hollow made by the mass at the center.
-
-**Kesson and the phase of waves.** In quantum mechanics, the state of a particle is written as a complex-valued wave (the wave function). The probability of finding the particle at a place is set by the square of the absolute value of that wave, and the direction of the wave (its phase) does not enter. Shifting the phase of the whole wave uniformly changes nothing in the observed results. But when two waves overlap, the difference in phase shows up clearly as interference fringes. The phase itself does not show up in numbers on its own, yet where waves overlap it produces a definite difference.
-
-This is where it overlaps with the shape of kesson-driven thinking: a value that is 0 in cognition and yet works. What overlaps is the behavior. A value on the imaginary axis is a magnitude whose projection onto the axis of action is 0. Phase is a direction that disappears when the absolute value is taken. The reasons they do not show up in numbers differ, but they share not showing up in numbers on their own and yet working.
-
-**Awareness and observation.** In the quantum world, measuring can change the state of what is measured. For example, measuring position disturbs momentum (the error in measuring position and the disturbance given to momentum cannot both be made zero, but it is known that their product can be made smaller than the limit once thought). In models of measurement, during measurement the object being measured and a small part of the apparatus (the probe) are taken together as one system, and its change over time is written. After the measurement, only the probe side is measured and read off on the scale. The model writes only this far; it does not write that the observing side and the observed side become inseparable. This page sees this form, writing the two together during measurement, as an analogy overlapping with where metacognition, dividing oneself, ends up.
-
-**Creation and the fluctuations of the field.** In quantum field theory, particles appear as one of the ways a field vibrates (an excitation). Separately, as a matter of fluids, in superfluid helium the flow around a vortex (circulation) appears only in fixed units. In fluids, there are examples where the vortex itself appears as a form that cannot be cut off from the fluid.
-
-<!--REF:Physics and the history of science-->
-
-Sources: Born (1954) Nobel lecture "The statistical interpretation of quantum mechanics" ([probability is the square of the absolute value; full text checked against the nobelprize.org PDF](https://www.nobelprize.org/uploads/2018/06/born-lecture.pdf); p.7 of the PDF) / [Ozawa (2003)](https://doi.org/10.1103/PhysRevA.67.042105) *Phys. Rev. A* 67:042105 (writing the object and the probe in the apparatus together as one system during measurement; full text checked against the author's arXiv submission [quant-ph/0207121v1](https://arxiv.org/abs/quant-ph/0207121v1); the measurement model and then measuring only the probe side p.2, the passage that the error in measuring position and the disturbance of momentum cannot both be zero p.3) and Rozema et al. (2012) *Phys. Rev. Lett.* 109:100404 (full text checked against the authors' arXiv submission 1208.0034v2; abstract on p.1) (the error in measuring position and the disturbance of momentum cannot both be made zero, but their product can be made smaller than the naive limit) / [Vinen (1961)](https://doi.org/10.1098/rspa.1961.0029) *Proc. R. Soc. A* 260:218 (quantization of superfluid vortices; full text checked against the Wayback Machine record (26 October 2019) of the publisher Royal Society's PDF; abstract on p.218).
-
-</details>
-
-<details><summary>More — the mind as an apparatus of interpretation</summary>
-
-The view that the mind interprets signals arising in the body and senses them as emotions also exists in research on emotion. Barrett's theory of constructed emotion holds that the brain interprets signals from inside the body with concepts it has learned so far, and constructs emotions on the spot. Its explanation is that the same sensation can have many causes.
-
-In this reader's words: the body receives the magnitude of the value itself, and the mind, as an apparatus of interpretation, projects it and reads it as love or anxiety. How the same unseen beyond is read changes with the signals that are welling up.
-
-<!--REF:Nerves and emotion-->
-
-Sources: [Barrett (2017)](https://doi.org/10.1093/scan/nsw154) "The theory of constructed emotion", *Social Cognitive and Affective Neuroscience* 12(1):1 (full text checked against the full text at [PMC5390700](https://pmc.ncbi.nlm.nih.gov/articles/PMC5390700/); the passage on constructing emotions by categorizing sensations with concepts in the section "The computational architecture of the brain is a conceptual system plus pattern generators", the passage that the same sensation can have many causes in the glossary).
-
-</details>
-
-<details><summary>Taking the estimate literally — do quanta work in the nerves?</summary>
-
-The human body, too, is made of matter, and it is hard to think of it as outside the laws of physics. However, how far quantum effects work in the processing of neural signals has not yet been answered even among researchers.
-
-Quantum effects working inside living things are studied as quantum biology. For example, it is known that the tunnel effect, in which particles slip through barriers, is involved in enzyme reactions.
-
-For the brain, there are several proposals. Penrose and Hameroff proposed that quantum processes proceed in the microtubules inside neurons, and that each time they spontaneously collapse under certain conditions, a moment of consciousness arises. Fisher proposed that the nuclear spins of phosphorus atoms may be able to hold quantum information for a long time in the brain. There are also proposals and calculations that quantum coherence inside ion channels may be involved in how ions pass through.
-
-There are also calculations against. Tegmark estimated that in the brain at body temperature, quantum superpositions break down in an extremely short time, falling far short of the speed of neural signals. Current neuroscience writes the release and reception of neurotransmitters, and the electrical signals that follow, almost entirely in classical physics. Where things stand now is that whether quantum effects work in the processing of neural signals has been neither confirmed nor fully ruled out.
-
-<!--REF:Nerves and emotion-->
-
-Sources: [Klinman & Kohen (2013)](https://doi.org/10.1146/annurev-biochem-051710-133623) *Annu. Rev. Biochem.* 82:471 (tunneling in enzymes; full text checked against the Wayback Machine record (15 February 2025) of [the page of the authors' manuscript on NIH's PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC4066974/); abstract and the section "Tunneling") / [Hameroff & Penrose (2014)](https://doi.org/10.1016/j.plrev.2013.08.002) *Phys. Life Rev.* 11:39 (full text checked against [the Wayback Machine record of the PDF of the journal pages that was on author Hameroff's site](https://web.archive.org/web/20150522052651/http://www.quantumconsciousness.org/sites/default/files/Hameroff%20Penrose%20-%20Consciousness%20in%20the%20Universe-A%20Review%20of%20the%20Orch%20OR%20Theory%20-%202013%20-%20Physics%20of%20Life%20Reviews.pdf) (22 May 2015); abstract on p.39) / [Fisher (2015)](https://doi.org/10.1016/j.aop.2015.08.020) *Ann. Phys.* 362:593 (full text checked against the author's arXiv submission [1508.05929v2](https://arxiv.org/abs/1508.05929v2); abstract on p.1) / [Vaziri & Plenio (2010)](https://doi.org/10.1088/1367-2630/12/8/085001) *New J. Phys.* 12:085001 (full text checked against the publisher IOP's public version (CC BY); abstract on p.1) / [Tegmark (2000)](https://doi.org/10.1103/PhysRevE.61.4194) *Phys. Rev. E* 61:4194 (full text checked against the author's arXiv submission [quant-ph/9907009v2](https://arxiv.org/abs/quant-ph/9907009v2); abstract on p.1).
-
-</details>
-
-## References — the explorations used as parts, and the papers cited
-
-Most of the findings this page cites are ones the four explorations have researched. The structural similarities with physics are gathered in the supplementary material, and the psychology that influenced pjdhiro on a separate page.
-
-- [What Is Creation](https://uminomae.github.io/project-design-theory/cs/) (in Japanese): the exploration comparing the five stages of creation with prior research, from research across [30 academic domains](https://uminomae.github.io/project-design-theory/cs/?modal=domains).
-- [What Is Awareness](https://uminomae.github.io/project-design-theory/as/) (in Japanese): the exploration checking, against original sources in neurophenomenology and psychology, the findings that serve as the scaffolding for the signals of survival and trust.
-- [Kesson-Driven Thinking](https://uminomae.github.io/project-design-theory/ks/) (in Japanese): research on kesson and holding.
-- [Psychology that influenced pjdhiro](influences-psychology.html) (in Japanese): theories from psychoanalysis and developmental psychology that influenced pjdhiro.
-- [Supplementary material — structural similarities with physics](#ldd-physics): the shapes of physics this page borrowed chapter by chapter.
-- [What is a gravity well?](gravity-well.html) (in Japanese): an explanation of the picture this page uses as an analogy, and the border between fact and analogy.
-
-### Papers and books cited on this page
-
-The sources placed in each chapter are gathered here by field.
+<a id="ldd-refs"></a>The sources placed in each chapter are gathered here by field. Related pages are in the "[Links](#ldd-links)" that follow.
 
 <!--REFS-->
 
-## Beyond this reader
+## Links — pjdhiro's pages
 
-Pages without an English version are in Japanese.
+<a id="ldd-links"></a>Pages that pjdhiro writes and maintains. Those opened from this reader are gathered here. Pages without an English version are in Japanese.
 
-- [Project Design Theory (top)](../index.html): [Doing](../index.html#doing), [Being](../index.html#being), [Questions](../index.html#questions).
-- [What is a gravity well?](gravity-well.html): an explanation of the picture this page uses as an analogy.
+### The four explorations used as parts
+
+- [What Is Creation](https://uminomae.github.io/project-design-theory/cs/): an exploration comparing the five stages of creation with prior research, from a survey of [30 academic fields](https://uminomae.github.io/project-design-theory/cs/?modal=domains). [The table of the five stages](https://uminomae.github.io/project-design-theory/cs/reader/five-stages.html). The sister reader "[Vortices between the waves](https://uminomae.github.io/project-design-theory/cs/reader/wave-vortex.html)".
+- [What Is Awareness](https://uminomae.github.io/project-design-theory/as/) (in Japanese): the exploration checking, against original sources in neurophenomenology and psychology, the findings that serve as the scaffolding for the signals of survival and trust.
+- [Kesson-Driven Thinking](https://uminomae.github.io/project-design-theory/ks/) (in Japanese): research on kesson and holding.
 - [Isn't Love like gravity?](gravity-love.html): the primary source for the hypothesis about the driving source. It answers, hypothetically, what the role of a manager is.
+
+### Readers opened from this reader
+
+- [Psychology that influenced pjdhiro](influences-psychology.html): lines up the theories of psychology that have influenced pjdhiro (psychoanalysis and developmental psychology), with the scholars' names and pjdhiro's impressions.
+- [What is a gravity well?](gravity-well.html): an explanation of the picture this page uses as an analogy.
 - [Breadth-of-perspective screener](stages-screener.html): a tool for trying out the work of dividing oneself yourself.
 - [How far do the ideas of management studies work?](management-drivers.html): looks at each way of thinking in the Part 1 table, by the situations where it works well and the misreadings likely when it is spread as the right answer.
 - [Mintzberg's schools, seen through driving sources and the flow of creation](mintzberg-schools.html): looks at the ten schools of strategy formation by what they see as the driving source and through the flow of the five stages of creation.
 - [What Is Psychological Safety](psychological-safety-en.html) (in English): looks at what the words psychological safety point to from two viewpoints, defense against anxiety and stages of development.
-- [Psychology that influenced pjdhiro](influences-psychology.html): lines up the theories of psychology that have influenced pjdhiro (psychoanalysis and developmental psychology), with the scholars' names and pjdhiro's impressions.
 - [The multiplication of rotation](rotation-multiplication.html): prerequisite knowledge on the imaginary axis and the multiplication of rotation.
 - [What are psychological defense mechanisms?](defense-mechanisms.html): looks at the mind's moves to protect itself, by what it protects against and how.
 - [What is personality?](personality.html): what psychology has said about personality (the view that sorts into types and the view that measures traits, and how personality disorders are classified).
@@ -2353,6 +2499,7 @@ Pages without an English version are in Japanese.
 - [How has Love been spoken of?](love-history.html): lines up who called what Love, and when, from the full text of the original sources.
 - [What is intrinsic motivation?](intrinsic-motivation.html): looks again at intrinsic motivation (self-determination theory) from the image of the person the theory depicts.
 - [A year of making the app called me readable](love-trajectory.html): follows pjdhiro's year until what I want to call Love-Driven Development came into being.
-- [Kesson-Driven Thinking](https://uminomae.github.io/project-design-theory/ks/): feeling a kesson where things do not fit, and picking it up as a question.
-- [What Is Awareness](https://uminomae.github.io/project-design-theory/as/): cutting out the world with the signals of survival and trust.
-- [What Is Creation](https://uminomae.github.io/project-design-theory/cs/): shows, across [30 academic domains](https://uminomae.github.io/project-design-theory/cs/?modal=domains), how common vortices are. [The table of the five stages](https://uminomae.github.io/project-design-theory/cs/reader/five-stages.html). The sister reader "[Vortices between the waves](https://uminomae.github.io/project-design-theory/cs/reader/wave-vortex.html)".
+
+### Project Design Theory
+
+- [Project Design Theory (top)](../index.html): [Doing](../index.html#doing), [Being](../index.html#being), [Questions](../index.html#questions).
