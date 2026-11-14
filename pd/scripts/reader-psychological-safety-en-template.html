@@ -5,7 +5,7 @@
   英訳し直したら、このテンプレートの「1.000」と「2026-11-14」（全部）と、正本の note の版を直す。版は scripts/reader_version.py が日本語版に出す番号（英訳を入れた commit のあとの番号）。
   再生成: python3 scripts/build-reader-lp.py
   手順:   reader/README.md
-  - 工事中のあいだは noindex（日本語版と同じ）
+  - index する（日本語版と同じ。pjdhiro 2026-11-14 に noindex を外した）。sitemap.xml・llms.txt に入れてある
 -->
 <!--
   ============================================================================
@@ -35,7 +35,6 @@
     </script>
         <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
     <title>What Is Psychological Safety | Project Design</title>
     <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/psychological-safety-en.html">
     <link rel="alternate" hreflang="ja" href="https://uminomae.github.io/project-design-theory/reader/psychological-safety.html">
