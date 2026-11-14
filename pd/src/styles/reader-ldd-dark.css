@@ -206,6 +206,11 @@ html.ldd-dark body.reader-flow .reader-subtitle.ldd-subtitle {
     border-left: 3px solid var(--gold);
 }
 /* 副題の問いへの添え書き（pjdhiro 2026-11-13「実存的なことへの私なりの回答であることも冒頭に入れたい」）。問いの縦線にそろえて、本文に近い大きさで置く */
+/* 副題の問いを、語の切れ目でだけ折る（「か？」が一字で次の行に落ちないように） */
+html.ldd-dark body.reader-flow .reader-subtitle.ldd-subtitle .ldd-phrase {
+    display: inline-block;
+}
+
 html.ldd-dark body.reader-flow .reader-subtitle.ldd-subtitle-note {
     font-family: var(--serif-jp);
     font-size: 1.05rem;
