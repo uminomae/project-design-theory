@@ -902,3 +902,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（「後半の答え」の前に、中身が工事中の印だけの章を置いた版）
 - pages: 足したのは予告の見出しだけで、wiki の本文の材料に触れないので本文を変えず、checked に今の時刻を書いた
+
+## [2026-11-14] check | Love 駆動開発・プロジェクトデザイン（工事中の章「計算機科学の視点で見ると、何が似ているか」に予告の二文を足した）
+- scope: 2 ページ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`
+- pages: 予告の文だけで、wiki の本文の材料に触れないので本文を変えず、checked に今の時刻を書いた
