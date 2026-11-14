@@ -26,7 +26,7 @@ pjdhiro が pd/ を読んでいて引っかかったところを、五月雨に�
 - `status`：`new`（届いた）→ `look`（見ている）→ `decide`（判断を待つ）→ `work`（直している）→ `check`（確かめを待つ）→ `done`（済んだ）。`decide` と `check` は pjdhiro の番。
 - `thread`：`{from: "pjdhiro"|"claude", kind: "comment"|"instruction"|"status", text, at}` の並び。`at` は ISO の時刻。
 - `links`：`{label, url}` の並び。その一件のために作った詳細ページ（案のページなど）。
-- `place`：`love-driven-dev`・`love-history`・`management-drivers`・`mintzberg-schools`・`gravity-love`・`gravity-well`・`energy-flow`・`energy-flow-rhythm`・`three-and-seven`・`rotation-multiplication`・`developmental-stages`・`stages-screener`・`intrinsic-motivation`・`psychological-safety`・`anshin`・`defense-mechanisms`・`personality`・`influences-psychology`（以上 `pd/reader/<key>.html`）・`home`・`wiki`・`site`（pd/ 全体）・`other`。読み物が増えたら、ページの `PLACES` に足して出し直す。
+- `place`：`love-driven-dev`・`love-history`・`management-drivers`・`mintzberg-schools`・`gravity-love`・`gravity-well`・`energy-flow`・`energy-flow-rhythm`・`three-and-seven`・`rotation-multiplication`・`developmental-stages`・`stages-screener`・`intrinsic-motivation`・`psychological-safety`・`anshin`・`peirce-love-abduction`・`defense-mechanisms`・`personality`・`influences-psychology`（以上 `pd/reader/<key>.html`）・`home`・`wiki`・`site`（pd/ 全体）・`other`。読み物が増えたら、ページの `PLACES` に足して出し直す。
 
 ## Claude がすること
 

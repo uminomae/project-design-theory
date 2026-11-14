@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/peirce-love-abduction.html を直接編集しないでください。
+  正本:   knowledge/research/peirce-love-abduction/READER-peirce-love-abduction.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。デザイン思考の章を書き、pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「パースの創造的な愛と、アブダクション」のページです。パースの創造的な愛（agapasm）とアブダクションを、原文で読む。1893 年の論文「進化的な愛」（愛は憎しみを反対物に持たず、作ったものを独立へ押し出しながら調和へ引き寄せる・考えは心が持つ前から引き寄せる・直接の努力ではほとんど何もできない）、1878 年の論文「演繹、帰納、仮説」（豆の袋の三つの形）、1903 年の講義のアブダクションの三行の形（驚くような事実から仮説へ遡る・新しい考えを持ち込む唯一の論理の操作）、1908 年の論文の純粋な遊びとミュージングと探究の第一段階（リトロダクション）。そのうえで、パースの著作を読まないまま自分を観察して Love駆動開発に来た pjdhiro の、パースと似ているのではないかという見方と、Love駆動開発と近いところ・違うところの Claude の読みを並べる。デザイン思考をアブダクションの一つの理解の仕方として見る章は工事中。
+  研究の説明は Claude が原典から書いた要約。載せた出典（Peirce 1893・1878 は『Chance, Love, and Logic』1923 の再録〔パブリックドメイン〕、Peirce 1908 は The Hibbert Journal の原誌、1903 年の講義はスタンフォード哲学百科事典の Douven の項が原文で引く箇所）は、本文で確認し、各章の「出典」の畳みに頁を添えている。英文の訳は Claude。「Claude の読み」と書いた文は Claude の読み。
+  pjdhiro 本人の言葉は「pjdhiro の問い：」「pjdhiro の見方：」「pjdhiro の体験：」で引用。pjdhiro はパースの著作を読んでおらず、言葉は Claude がまとめた「進化的な愛」の要約を読んでのもの。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>パースの創造的な愛と、アブダクション | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/peirce-love-abduction.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="パースの創造的な愛（agapasm）とアブダクションを、原文で読む。1893 年の論文「進化的な愛」（愛は憎しみを反対物に持たず、作ったものを独立へ押し出しながら調和へ引き寄せる・考えは心が持つ前から引き寄せる・直接の努力ではほとんど何もできない）、1878 年の論文「演繹、帰納、仮説」（豆の袋の三つの形）、1903 年の講義のアブダクションの三行の形（驚くような事実から仮説へ遡る・新しい考えを持ち込む唯一の論理の操作）、1908 年の論文の純粋な遊びとミュージングと探究の第一段階（リトロダクション）。そのうえで、パースの著作を読まないまま自分を観察して Love駆動開発に来た pjdhiro の、パースと似ているのではないかという見方と、Love駆動開発と近いところ・違うところの Claude の読みを並べる。デザイン思考をアブダクションの一つの理解の仕方として見る章は工事中。">
+    <meta property="og:title" content="パースの創造的な愛と、アブダクション">
+    <meta property="og:description" content="パースの創造的な愛（agapasm）とアブダクションを、原文で読む。1893 年の論文「進化的な愛」（愛は憎しみを反対物に持たず、作ったものを独立へ押し出しながら調和へ引き寄せる・考えは心が持つ前から引き寄せる・直接の努力ではほとんど何もできない）、1878 年の論文「演繹、帰納、仮説」（豆の袋の三つの形）、1903 年の講義のアブダクションの三行の形（驚くような事実から仮説へ遡る・新しい考えを持ち込む唯一の論理の操作）、1908 年の論文の純粋な遊びとミュージングと探究の第一段階（リトロダクション）。そのうえで、パースの著作を読まないまま自分を観察して Love駆動開発に来た pjdhiro の、パースと似ているのではないかという見方と、Love駆動開発と近いところ・違うところの Claude の読みを並べる。デザイン思考をアブダクションの一つの理解の仕方として見る章は工事中。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/peirce-love-abduction.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="パースの創造的な愛と、アブダクション">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-14">
+    <meta property="article:modified_time" content="2026-11-14">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "パースの創造的な愛と、アブダクション",
+          "description": "パースの創造的な愛（agapasm）とアブダクションを、原文で読む。1893 年の論文「進化的な愛」（愛は憎しみを反対物に持たず、作ったものを独立へ押し出しながら調和へ引き寄せる・考えは心が持つ前から引き寄せる・直接の努力ではほとんど何もできない）、1878 年の論文「演繹、帰納、仮説」（豆の袋の三つの形）、1903 年の講義のアブダクションの三行の形（驚くような事実から仮説へ遡る・新しい考えを持ち込む唯一の論理の操作）、1908 年の論文の純粋な遊びとミュージングと探究の第一段階（リトロダクション）。そのうえで、パースの著作を読まないまま自分を観察して Love駆動開発に来た pjdhiro の、パースと似ているのではないかという見方と、Love駆動開発と近いところ・違うところの Claude の読みを並べる。デザイン思考をアブダクションの一つの理解の仕方として見る章は工事中。",
+          "keywords": "パース, Charles Sanders Peirce, 進化的な愛, Evolutionary Love, agapasm, 創造的な愛, アブダクション, abduction, 仮説, リトロダクション, retroduction, ミュージング, musement, デザイン思考, Love駆動開発, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/peirce-love-abduction.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/peirce-love-abduction.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-14",
+          "dateModified": "2026-11-14",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Person", "name": "Charles Sanders Peirce"}, {"@type": "Thing", "name": "アブダクション"}, {"@type": "Thing", "name": "愛"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「パースの創造的な愛と、アブダクション」のページです（工事中）。パースの創造的な愛（agapasm）とアブダクションを、原文で読む。1893 年の論文「進化的な愛」（愛は憎しみを反対物に持たず、作ったものを独立へ押し出しながら調和へ引き寄せる・考えは心が持つ前から引き寄せる・直接の努力ではほとんど何もできない）、1878 年の論文「演繹、帰納、仮説」（豆の袋の三つの形）、1903 年の講義のアブダクションの三行の形（驚くような事実から仮説へ遡る・新しい考えを持ち込む唯一の論理の操作）、1908 年の論文の純粋な遊びとミュージングと探究の第一段階（リトロダクション）。そのうえで、パースの著作を読まないまま自分を観察して Love駆動開発に来た pjdhiro の、パースと似ているのではないかという見方と、Love駆動開発と近いところ・違うところの Claude の読みを並べる。デザイン思考をアブダクションの一つの理解の仕方として見る章は工事中。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の問い」「pjdhiro の見方」「pjdhiro の体験」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>パースの創造的な愛と、アブダクション</h1>
+                <p class="reader-subtitle">進化的な愛と、新しい考えが生まれる推論を、原文で読む</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-14 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/peirce-love-abduction/READER-peirce-love-abduction.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<p class="reader-summary__title">概要</p>
+
+<p class="reader-lead"><span class="reader-lead__label">問い</span>アメリカの哲学者パース（1839–1914）は、進化を進めるはたらきを「創造的な愛」と呼び、新しい考えが生まれる推論を「アブダクション」と呼びました。この二つは、Love と呼びたいものと、どこまで近いのでしょうか。</p>
+
+<p>pjdhiro は、プロジェクトを動かしているものを Love と呼んで、「Love駆動開発と呼びたいもの」という読み物を書いてきました。その途中で、パースの名前に行き当たり、次のように問いました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の問い：</strong>Loveと呼びたいものは、パース — 創造的な愛による進化（agapasm）に近くないか？</p>
+</blockquote>
+<div class="reader-lead"><span class="reader-lead__label">今の答え</span>
+パースは 1893 年の論文で、成長は愛からしか来ないと書き、考えが心に持たれる前から、その考えに引き寄せられることがある、と書きました。1878 年からの論文と講義では、驚くような事実から、それを説明する仮説へ遡る推論を、演繹と帰納のどちらでもない第三の推論として立てました。pjdhiro は、パースの著作を読まないまま、自分を観察して Love駆動開発に来ており、自分はパースと似ているのではないか、と見ています。
+<ul class="reader-lead__list">
+<li><b><a href="#パースは愛を何と呼んだか">パースは、愛を何と呼んだか</a></b>：愛は憎しみを反対物に持たず、作ったものを独立へ押し出しながら、調和へ引き寄せる、と書いています。</li>
+<li><b><a href="#考えは持つ前から引き寄せる">考えは、持つ前から引き寄せる</a></b>：考えの発展の三つの様式のうち、愛による発展は、心がその考えを持つ前に、考えそのものに引き寄せられて起きる、とします。</li>
+<li><b><a href="#三つの推論">三つの推論</a></b>：豆の袋の例で、演繹・帰納・仮説の三つを、規則・事例・結果の並べ替えとして示しています。</li>
+<li><b><a href="#驚きから仮説へ遡る">驚きから、仮説へ遡る</a></b>：アブダクションは、新しい考えを持ち込む唯一の論理の操作だ、とされます。</li>
+<li><b><a href="#遊びの中で仮説が生まれる">遊びの中で、仮説が生まれる</a></b>：目的を持たない思いめぐらしの中から、探究の第一段階が始まる、と書いています。</li>
+<li><b><a href="#パースと似ているのではないか">パースと、似ているのではないか</a></b>：pjdhiro の見方と、近いところ・違うところの Claude の読みを並べます。</li>
+<li><b><a href="#デザイン思考をアブダクションの一つの理解の仕方として">デザイン思考を、アブダクションの一つの理解の仕方として</a></b>：🚧 工事中です。</li>
+</ul>
+</div>
+
+<div class="reader-lead"><span class="reader-lead__label">構成</span>
+<ul class="reader-lead__list">
+<li><b>第一部 進化的な愛</b>：1893 年の論文「進化的な愛（Evolutionary Love）」を読みます。</li>
+<li><b>第二部 アブダクション</b>：1878 年の論文、1903 年の講義、1908 年の論文を、書かれた順に読みます。</li>
+<li><b>第三部 pjdhiro の見方</b>：パースと似ているという見方と、デザイン思考をアブダクションから見る試み（工事中）を置きます。</li>
+</ul>
+</div>
+
+<p class="reader-lead"><span class="reader-lead__label">要点</span></p>
+
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>創造的な愛（agapasm）</th>
+<th>進化には三つの様式がある。偶然の変異による進化（tychasm）、機械的な必然による進化（anancasm）、創造的な愛による進化（agapasm）。前の二つは agapasm の退化した形（1893）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>アブダクション</td>
+<td>驚くような事実が見つかる。もし A が本当なら、その事実は当たり前になる。だから、A が本当だと疑う理由がある、という形の推論。新しい考えを持ち込むのは、この推論だけだとされる（1903）</td>
+</tr>
+<tr>
+<td>二つが重なって見えるところ</td>
+<td>驚きが考えを明るくすることと、考えに持つ前から引き寄せられること。パースは二つの論を、名指しで結んではいない（Claude の読み）</td>
+</tr>
+<tr>
+<td>よくある誤解</td>
+<td>アブダクションは「最も良い説明を選ぶ推論」のことだ。今の哲学ではその意味で使われることが多いが、パースが最初に置いたのは、仮説を生み出す場面の推論</td>
+</tr>
+<tr>
+<td>pjdhiro の見方</td>
+<td>パースの創造的な愛は、Love と呼びたいものに近い。著作も論文も読まないまま、自分を観察した結果が Love駆動開発につながっている。デザイン思考の誤解を、アブダクションの視点で切れないか</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+
+
+<div class="reader-part" id="part-1"><p class="reader-part__no">第一部</p><p class="reader-part__title">進化的な愛</p></div><details class="sec" id="パースは愛を何と呼んだか" open><summary>パースは、愛を何と呼んだか</summary><div class="secbody">
+
+
+<p><a id="pa-love"></a>この章では、パースの 1893 年の論文「進化的な愛（Evolutionary Love）」が、愛を何として書いたかを見ます。</p>
+<p>パースは、ヨハネの手紙の「神は愛である」を手がかりにします。闇が光の欠けにすぎないように、憎しみと悪は、愛の不完全な段階だ、と読みます。その愛は、憎しみを反対物として持たず、不完全な段階として抱きこみ、憎しみを対象として必要とさえする、と書きます。自分を愛することは愛ではないので、愛が愛するのは「愛の欠け」でなければならない、とも書いています。</p>
+<p>愛の動き方を、パースは円い運動と呼びます。同じ一つの衝動で、作ったものを独立へ押し出し、調和へ引き寄せる、という動きです。そこから、成長は愛からしか来ない、という進化の哲学を立てます。自分の考えは小さな人格のようなもので、冷たい正義でなく、庭の花のように慈しんで育てるものだ、とも書いています。</p>
+<details class="acc"><summary>詳しく — 原文の鍵の文</summary>
+
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>愛は欠けに向かう</th>
+<th>「For self-love is no love; so if God's self is love, that which he loves must be defect of love; just as a luminary can light up only that which otherwise would be dark.」（p.268）<br>訳：自分への愛は愛ではない。だから、神そのものが愛なら、神が愛するのは愛の欠けでなければならない。灯りが照らせるのは、そうでなければ暗いものだけであるように。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>円い運動</td>
+<td>「The movement of love is circular, at one and the same impulse projecting creations into independency and drawing them into harmony.」（p.269）<br>訳：愛の運動は円い。同じ一つの衝動で、作ったものを独立へ押し出し、調和へ引き寄せる。</td>
+</tr>
+<tr>
+<td>愛らしいものにする</td>
+<td>「Love, recognising germs of loveliness in the hateful, gradually warms it into life, and makes it lovely.」（p.270）<br>訳：愛は、憎むべきものの中に愛らしさの芽を認め、少しずつ温めて命を与え、愛らしいものにする。</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>パースは同じ論文で、十九世紀の経済学とダーウィンの自然選択が広めた、各人が自分のために努め、隣人を踏みつけることで進歩が起きる、という確信を「貪欲の福音（Gospel of Greed）」と呼んで退けています。そのうえで、自分がこの話に熱を持っていることを打ち明け、その熱が一面的な見方を生みうるので、読者も自分も用心すべきだ、と書いています。</p>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p>出典：Peirce (1893) "Evolutionary Love", <em>The Monist</em> 3(2):176–200（<a href="https://archive.org/details/sim_monist_1893-01_3_2">The Monist の原誌（Internet Archive）</a>）。頁は、再録の <a href="https://archive.org/details/chanceloveandlog00peiruoft">Cohen 編『Chance, Love, and Logic』（1923・パブリックドメイン。トロント大学の本の走査、Internet Archive）</a>の頁で、pp.267–300 を本文で照合済。訳は Claude。同じ論文を、<a href="love-history.html#lh-peirce">Love とは、どう言われてきたか</a>は The Monist の頁で引いています。</p>
+</details>
+
+</div></details><details class="sec" id="考えは持つ前から引き寄せる"><summary>考えは、持つ前から引き寄せる</summary><div class="secbody">
+<p><a id="pa-attraction"></a>この章では、パースが、考えがどう育つと書いたかを見ます。</p>
+<p>パースは、進化の様式を三つに分けます。偶然の変異による進化（tychasm）、機械的な必然による進化（anancasm）、創造的な愛による進化（agapasm）です。前の二つは agapasm の退化した形だ、と位置づけます。直線が横切った楕円が、幾何学で三次曲線の退化した形と呼ばれるのと同じだ、という喩えです。</p>
+<p>考えの発展にも、同じ三つがある、とパースは書きます。偶然による発展では、習慣になった考えから、目的もなくあちこちへ少しずつ外れていきます。必然による発展では、周りの事情の変化や、すでに受け入れた考えの論理の帰結によって、行き先を見通さないまま新しい考えを採ります。愛による発展では、考えそのものへの直接の引き寄せによって、心の傾きが採られます。その考えの性質は、心がそれを持つ前に、共感の力によって察せられている、と書きます。</p>
+<p>愛による発展には、三つの通り道がある、とパースは続けます。民族や共同体の全体に起きて、そこと強く共感でつながった人に伝わる場合。一人の人に起きるが、周りの人への共感と、心を打つ出来事を通してはじめてその考えをつかめる場合（パウロの回心を例に挙げます）。一人の人の心に、その人が理解する前から考えが引き寄せをはたらかせる場合です。三つめを、パースは「天才の予見」と呼ばれてきた現象だ、と書いています。</p>
+<p>同じ論文で、パースは、意識の中での進化を、努力の側からも書いています。直接の努力では、ほとんど何もできない。考えを無理に絞り出しても、来る準備ができる前には出てこない。心の深いはたらきは、自分の遅さで、私たちの関与なしに進む。その合図が鳴ったら、そこで努力すればよい、という書き方です。あわせて、習慣が長く続くと人は鈍くなり、驚きが続くと考えは驚くほど明るくなる、とも書いています。</p>
+<details class="acc"><summary>詳しく — 原文の鍵の文</summary>
+
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>考えの agapasm</th>
+<th>「by an immediate attraction for the idea itself, whose nature is divined before the mind possesses it, by the power of sympathy, that is, by virtue of the continuity of mind」（p.287）<br>訳：考えそのものへの直接の引き寄せによって。その考えの性質は、心がそれを持つ前に、共感の力によって、つまり心の連続性によって察せられる。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>天才の予見</td>
+<td>「by virtue of an attraction it exercises upon his mind, even before he has comprehended it. This is the phenomenon which has been well called the divination of genius」（p.288）<br>訳：その人が理解する前から、考えがその人の心にはたらかせる引き寄せによって。これは、天才の予見とうまく呼ばれてきた現象である。</td>
+</tr>
+<tr>
+<td>直接の努力</td>
+<td>「Direct endeavor can achieve almost nothing」「the deeper workings of the spirit take place in their own slow way, without our connivance」（p.282）<br>訳：直接の努力では、ほとんど何もできない。心の深いはたらきは、自分の遅さで、私たちの関与なしに進む。</td>
+</tr>
+<tr>
+<td>驚き</td>
+<td>「a succession of surprises wonderfully brightens the ideas」（p.282）<br>訳：驚きが続くと、考えは驚くほど明るくなる。</td>
+</tr>
+<tr>
+<td>退化した形</td>
+<td>「tychasm and anancasm are degenerate forms of agapasm」（p.284）<br>訳：tychasm と anancasm は、agapasm の退化した形である。</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>パースは語を三段に呼び分けています。様式は tychasm・anancasm・agapasm、それを主とする学説は tychasticism・anancasticism・agapasticism、その様式が宇宙で働いているとだけ言う命題は tychism・anancism・agapism です（pp.283–284）。</p>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p>出典：Peirce (1893) "Evolutionary Love"（<a href="https://archive.org/details/chanceloveandlog00peiruoft">Cohen 編『Chance, Love, and Logic』（1923）の再録</a>で本文照合済。pp.282–288）。訳は Claude。</p>
+</details>
+
+
+
+</div></details><div class="reader-part" id="part-2"><p class="reader-part__no">第二部</p><p class="reader-part__title">アブダクション</p></div><details class="sec" id="三つの推論"><summary>三つの推論</summary><div class="secbody">
+<p><a id="pa-three"></a>この章では、パースが 1878 年の論文「演繹、帰納、仮説（Deduction, Induction, and Hypothesis）」で、推論をどう三つに分けたかを見ます。この論文では、のちにアブダクションと呼ぶものを、まだ「仮説（hypothesis）」と呼んでいます。</p>
+<p>パースは、推論を、規則・事例・結果の三つの文の並べ方で示します。例は、豆の袋です。</p>
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>演繹</th>
+<th>規則：この袋の豆は、すべて白い。事例：これらの豆は、この袋から出した。結果：だから、これらの豆は白い。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>帰納</td>
+<td>事例：これらの豆は、この袋から出した。結果：これらの豆は白い。規則：だから、この袋の豆は、すべて白い。</td>
+</tr>
+<tr>
+<td>仮説</td>
+<td>規則：この袋の豆は、すべて白い。結果：これらの豆は白い。事例：だから、これらの豆は、この袋から出した。</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>パースは、仮説を、場面で説明しています。いくつもの豆の袋がある部屋に入ると、机の上に白い豆がひと握りある。探すと、白い豆だけが入った袋が一つ見つかる。そこで、このひと握りはあの袋から出したのだろう、とすぐに推し量る。この推論を、仮説を立てると呼ぶ、と書いています。</p>
+<p>ほかの例も挙げています。トルコのある港で、四人の騎手に天蓋を差しかけられた馬上の人に出会い、その州の総督だろうと推し量ったこと。内陸で魚に似た化石が見つかり、昔そこを海が覆っていたと考えること。会ったこともないナポレオンを、たくさんの文書と記念碑を説明するために、実在したと考えることです。</p>
+<p>パースは、仮説は一般に弱い論証だ、とも書いています。結論を信じるとまでは言えず、そうかもしれないと推し量るだけのことも多い、という見方です。それでも、昨日の出来事を覚えていると感じることから、それを覚えていると信じる推論と、程度の差しかない、と続けています。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：Peirce (1878) "Deduction, Induction, and Hypothesis", <em>Popular Science Monthly</em>, August 1878（<a href="https://archive.org/details/chanceloveandlog00peiruoft">Cohen 編『Chance, Love, and Logic』（1923）の再録</a>で本文照合済。pp.131–136）。</p>
+</details>
+
+</div></details><details class="sec" id="驚きから仮説へ遡る"><summary>驚きから、仮説へ遡る</summary><div class="secbody">
+<p><a id="pa-abduction"></a>この章では、パースが 1903 年のハーバードでの講義で、アブダクションをどう書いたかを見ます。</p>
+<p>講義でパースは、アブダクションを、説明のための仮説をつくる過程だ、と書いています。そして、新しい考えを持ち込む論理の操作は、これだけだ、とします。</p>
+<p>アブダクションの形を、パースは三行で書いています。</p>
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>一行目</th>
+<th>驚くような事実 C が見つかる。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>二行目</td>
+<td>もし A が本当なら、C は当たり前のことになる。</td>
+</tr>
+<tr>
+<td>三行目</td>
+<td>だから、A が本当だと疑う理由がある。</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>この形では、A はすでに二行目に出ています。スタンフォード哲学百科事典の「アブダクション」の項は、この点を挙げて、この形は新しい考えへ導く推論にはなっていない、という指摘を紹介しています。そのうえで、パースの別の箇所からは、アブダクションを、仮説を思いつく過程というより、仮説を採り上げる過程として読む見方がある、と書いています。</p>
+<details class="acc"><summary>詳しく — 「アブダクション」の語の二つの意味</summary>
+
+<p>同じ項は、哲学の文献で「アブダクション」の語が二つの意味で使われている、と書いています。どちらも説明にかかわる推論です。歴史の上で先に来たのは、仮説を生み出す場面での推論という意味で、パースの使い方です。今の文献で多いのは、仮説を正当化する場面で、最も良い説明を選ぶ推論（最良の説明への推論）という意味です。同じ項の補遺は、いくつもの仮説を比べて最も良いものを選ぶ考えは、パースの考えとの大きな違いだ、と書いています。</p>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p>出典：Douven (2011, 2025 年改訂) "<a href="https://plato.stanford.edu/entries/abduction/">Abduction</a>", <em>Stanford Encyclopedia of Philosophy</em>（公開の項で本文照合済。冒頭の段）と補遺 "<a href="https://plato.stanford.edu/entries/abduction/peirce.html">Peirce on Abduction</a>"（公開の頁で本文照合済。パースの 1903 年の講義を、Collected Papers の 5.189 と 5.172 として引いています）。三行の形の訳は Claude。</p>
+</details>
+
+</div></details><details class="sec" id="遊びの中で仮説が生まれる"><summary>遊びの中で、仮説が生まれる</summary><div class="secbody">
+<p><a id="pa-musement"></a>この章では、パースが 1908 年の論文「神の実在についての、見過ごされた論証（A Neglected Argument for the Reality of God）」で、仮説がどんな心のはたらきから生まれると書いたかを見ます。</p>
+<p>パースは、まだ決まった名前の無い、心の楽しいはたらきがある、と書いています。目的を持たず、まじめな目的を脇へ置くことだけが目的の、心の遊びです。ぼんやりした夢見心地とは正反対の、生き生きとした力の使い方で、パースはそれを「純粋な遊び（Pure Play）」と呼びます。規則は自由という一つの決まりだけです。そのうち、パースが経験の三つの世界と呼ぶもののどれかの不思議や、そのうち二つの結びつきに目を留め、その原因を思いめぐらす形を、パースは「ミュージング（Musement）」と名付けました。</p>
+<p>ミュージングの始め方も書いています。はじめは受け身に、世界のどこかの片隅の印象を飲み込みます。印象はやがて注意深い観察に、観察は思いめぐらしに、思いめぐらしは自分と自分との生き生きとしたやりとりに移っていきます。パースは、目を開き、周りと自分の内にあるものに目覚めて、自分と話しなさい、すべての瞑想はそういうものだから、と勧めています。</p>
+<p>同じ論文で、パースは、探究を三つの段階に分けます。第一段階は、不思議な現象に気づいてから、それを説明する仮説を受け入れるまでの、心のはたらきの全体です。関わりのある事情を探してつかむこと（ときには気づかないうちに）、それを調べること、暗いところでの骨折り、驚くような推測が飛び出すこと、その推測が鍵穴の鍵のように不思議に合うのを確かめること、そしてもっともらしさを見積もること、がそこに入ります。パースは、この段階の推論を「リトロダクション（Retroduction）」と呼び、結果から前件へ遡る推論だ、と書いています。第二段階が演繹、第三段階が帰納です。</p>
+<p>パースは、リトロダクションは確かさを与えないので、仮説は試されなければならない、とも書いています。それでも、科学の進む橋の板は、どれも、まずリトロダクションによって置かれる、と書きます。その板は、本能的な理性の、ひとりでに出てくる推測だ、という書き方です。</p>
+<details class="acc"><summary>詳しく — 原文の鍵の文</summary>
+
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>純粋な遊び</th>
+<th>「In fact, it is Pure Play. Now, Play, we all know, is a lively exercise of one's powers. Pure Play has no rules, except this very law of liberty.」（p.92）<br>訳：それは、純粋な遊びだ。遊びとは、誰もが知るとおり、自分の力の生き生きとした使い方だ。純粋な遊びには、自由というこの決まりのほかに、規則が無い。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>自分と話す</td>
+<td>「With your eyes open, awake to what is about or within you, and open conversation with yourself; for such is all meditation.」（p.95）<br>訳：目を開き、周りと自分の内にあるものに目覚めて、自分との会話を始めなさい。すべての瞑想は、そういうものだから。</td>
+</tr>
+<tr>
+<td>探究の第一段階</td>
+<td>「Its characteristic formula of reasoning I term Retroduction, i.e. reasoning from consequent to antecedent.」（p.100）<br>訳：この段階に特有の推論の形を、私はリトロダクション、すなわち帰結から前件へ遡る推論と呼ぶ。</td>
+</tr>
+<tr>
+<td>本能的な理性</td>
+<td>「Yet every plank of its advance is first laid by Retroduction alone, that is to say, by the spontaneous conjectures of instinctive reason」（p.104）<br>訳：けれども、その前進の板は、どれもまずリトロダクションだけによって、すなわち本能的な理性のひとりでに出てくる推測によって置かれる。</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p>出典：Peirce (1908) "A Neglected Argument for the Reality of God", <em>The Hibbert Journal</em> 7(1):90–112（<a href="https://archive.org/details/sim_the-hibbert-journal-a-quarterly-review-of-religion_1908-1909_7_1">The Hibbert Journal 第 7 巻第 1 号の原誌（Internet Archive）</a>で本文照合済。pp.92・95・100・101・104）。訳は Claude。</p>
+</details>
+
+
+
+</div></details><div class="reader-part" id="part-3"><p class="reader-part__no">第三部</p><p class="reader-part__title">pjdhiro の見方</p></div><details class="sec" id="パースと似ているのではないか"><summary>パースと、似ているのではないか</summary><div class="secbody">
+<p><a id="pa-similar"></a>この章では、ここまでの二つの論を読んだ pjdhiro の見方と、どこが近く、どこが違うかの Claude の読みを並べます。</p>
+<p>「進化的な愛」の要点と、Love駆動開発と近いところ・違うところを Claude がまとめたものを読んで、pjdhiro は次のように答えました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>パースの創造的愛は近い。Loveと呼びたいものに。</p>
+</blockquote>
+<p>続けて pjdhiro は、自分とパースとの関わりを、次のように見ています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の体験：</strong>重要なことは私はパースと似ているのではないだろうか？ということ。これまで著作も論文も読んだことはなかった。アブダクションには興味を持っていたが、表面上の定義しか持っていない。むしろ、より深く知るために自分を観察していった結果がLove駆動開発に繋がっている。</p>
+</blockquote>
+<p>パースの側では、愛の論とアブダクションの論は、別々の論文と講義に書かれています。読んだ範囲では、パースは二つを名指しで結んでいません。それでも、二つの論は、驚きと、持つ前の引き寄せの二点で重なって見えます。「進化的な愛」は、驚きが続くと考えが明るくなると書き、アブダクションの三行は、驚くような事実から始まります。「進化的な愛」は、考えの性質が心に持たれる前に察せられると書き、1908 年の論文は、仮説を本能的な理性のひとりでに出てくる推測と書きます。この重なりは Claude の読みです。</p>
+<p>Love駆動開発の本文と並べると、近いところと違うところは、次のように読めます。どの行も Claude の読みです。</p>
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>近い：意図や努力でなく育つ</th>
+<th>パースは、直接の努力ではほとんど何もできず、心の深いはたらきは私たちの関与なしに進む、と書きます。Love駆動開発の「<a href="love-driven-dev.html#ldd-development">開発とは、何を指すか</a>」で、pjdhiro は、開発を、気づいていない私と周りの環境によって開発されていく現象と見ています。パースも、合図が鳴ったら努力する、と努力の側を捨てていません。</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>近い：形になる前から引き寄せられる</td>
+<td>パースは、考えに、持つ前から引き寄せられると書きます。Love駆動開発の「<a href="love-driven-dev.html#ldd-well">Love は、重力に似ていないか</a>」で、pjdhiro は、Love の場の歪みに引き寄せられるように漂っているのが宇宙や私たちだ、という仮説を置いています。</td>
+</tr>
+<tr>
+<td>近い：対立するものも、愛の一面として抱く</td>
+<td>パースの愛は、憎しみを反対物に持たず、偶然と必然の進化も愛の進化の退化した形とします。Love駆動開発の「<a href="love-driven-dev.html#ldd-love-not">Love と呼びたいものは、何でないか</a>」で、pjdhiro は、権力欲や支配欲のようなものも Love の一面だと予想しています。</td>
+</tr>
+<tr>
+<td>近い：愛と欠けを、一つの動きに置く</td>
+<td>パースは、愛が愛するのは愛の欠けだと書きます。Love駆動開発の「<a href="love-driven-dev.html#ldd-conclusion">それが、プロジェクトの駆動源である</a>」で、pjdhiro は、人を動かす欠けを「Loveと私とのギャップ」と言っています。向きは逆に見えます。パースでは欠けは愛が向かう先で、Love駆動開発では欠けは人の側で感じられ、人を動かします。</td>
+</tr>
+<tr>
+<td>違う：善い行き先を持つか</td>
+<td>パースの愛は、憎むべきものを愛らしいものにする向きを持ち、貪欲の福音をはっきり退けます。Love駆動開発の「<a href="love-driven-dev.html#ldd-open">まだ分からないこと</a>」で、pjdhiro は「善悪、合理性は無いのではないか？」と問うています。</td>
+</tr>
+<tr>
+<td>違う：宇宙論として論じるか</td>
+<td>パースは、心は連続しているという自分の哲学から、愛を宇宙で働く進化の様式として論じます。Love駆動開発は、pjdhiro の素朴体験論で、物理や理論とは、構造が似ているかどうかを見ています。</td>
+</tr>
+<tr>
+<td>違う：三つに分けて見分けるか</td>
+<td>パースは進化の様式を三つに分け、徴候で見分けようとします。Love駆動開発は、どの見方も一面として重ね、群盲象を評すように並べます。</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+</div></details><details class="sec" id="デザイン思考をアブダクションの一つの理解の仕方として"><summary>デザイン思考を、アブダクションの一つの理解の仕方として</summary><div class="secbody">
+<p><a id="pa-design"></a>🚧 この章は工事中です。</p>
+<p>アブダクションは、Love駆動開発の思考のコラム「<a href="love-driven-dev.html#ldd-thinking">思考の類型と、デザインルール</a>」にも関わります。そのコラムでは、論理的な思考・プロセス思考・システム思考・デザイン思考を並べています。そのうちのデザイン思考について、pjdhiro は次のように見ています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>私は最終的にデザイン思考をアブダクションの一つの理解の仕方として扱いたいと思っていて、デザイン思考の誤解をアブダクションの視点で切れないかと思ってました。</p>
+</blockquote>
+<p>デザイン思考がどう語られてきたか、どんな誤解があるか、それがアブダクションの視点でどう見えるかを、これから書きます。</p>
+</div></details><details class="sec" id="保持論点"><summary>保持論点</summary><div class="secbody">
+<ul>
+<li>パースの愛の論とアブダクションの論は、パース自身の中でつながっていたのか。読んだ範囲には、名指しのつながりは無い。</li>
+<li>アブダクションの三行の形は、新しい考えを生む過程を書いたものか、生まれた考えを採り上げる過程を書いたものか。Love駆動開発の「構想が言葉になる前」の動きは、どちらの側に近いのか。</li>
+<li>パースが好んだミュージングと、pjdhiro が自分を観察してきたやり方は、どこまで似ているのか。</li>
+</ul>
+<details class="acc"><summary>出典の確かめ方</summary>
+
+<p>このページは Claude が原典を読んで書いた要約で、pjdhiro の言葉は、Claude がまとめた「進化的な愛」の要約を読んでの言葉です。パースの原文は、1893 年の論文と 1878 年の論文を、パブリックドメインの『Chance, Love, and Logic』（1923）の再録で、1908 年の論文を The Hibbert Journal の原誌で、本文と照らしました。頁は、それぞれ読んだ版の頁です。1903 年の講義の文は、スタンフォード哲学百科事典の項が原文で引いている箇所だけを載せました。英文の訳は、どれも Claude です。</p>
+</details>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="love-history.html">Love とは、どう言われてきたか</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

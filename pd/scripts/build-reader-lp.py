@@ -127,6 +127,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/peirce-love-abduction/READER-peirce-love-abduction.md",
+        ROOT / "scripts/reader-peirce-love-abduction-template.html",
+        ROOT / "reader/peirce-love-abduction.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/defense-mechanisms/READER-defense-mechanisms.md",
         ROOT / "scripts/reader-defense-mechanisms-template.html",
         ROOT / "reader/defense-mechanisms.html",

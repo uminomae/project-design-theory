@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/peirce-love-abduction.html を直接編集しないでください。
+  正本:   knowledge/research/peirce-love-abduction/READER-peirce-love-abduction.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。デザイン思考の章を書き、pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「パースの創造的な愛と、アブダクション」のページです。パースの創造的な愛（agapasm）とアブダクションを、原文で読む。1893 年の論文「進化的な愛」（愛は憎しみを反対物に持たず、作ったものを独立へ押し出しながら調和へ引き寄せる・考えは心が持つ前から引き寄せる・直接の努力ではほとんど何もできない）、1878 年の論文「演繹、帰納、仮説」（豆の袋の三つの形）、1903 年の講義のアブダクションの三行の形（驚くような事実から仮説へ遡る・新しい考えを持ち込む唯一の論理の操作）、1908 年の論文の純粋な遊びとミュージングと探究の第一段階（リトロダクション）。そのうえで、パースの著作を読まないまま自分を観察して Love駆動開発に来た pjdhiro の、パースと似ているのではないかという見方と、Love駆動開発と近いところ・違うところの Claude の読みを並べる。デザイン思考をアブダクションの一つの理解の仕方として見る章は工事中。
+  研究の説明は Claude が原典から書いた要約。載せた出典（Peirce 1893・1878 は『Chance, Love, and Logic』1923 の再録〔パブリックドメイン〕、Peirce 1908 は The Hibbert Journal の原誌、1903 年の講義はスタンフォード哲学百科事典の Douven の項が原文で引く箇所）は、本文で確認し、各章の「出典」の畳みに頁を添えている。英文の訳は Claude。「Claude の読み」と書いた文は Claude の読み。
+  pjdhiro 本人の言葉は「pjdhiro の問い：」「pjdhiro の見方：」「pjdhiro の体験：」で引用。pjdhiro はパースの著作を読んでおらず、言葉は Claude がまとめた「進化的な愛」の要約を読んでのもの。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>パースの創造的な愛と、アブダクション | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/peirce-love-abduction.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="パースの創造的な愛（agapasm）とアブダクションを、原文で読む。1893 年の論文「進化的な愛」（愛は憎しみを反対物に持たず、作ったものを独立へ押し出しながら調和へ引き寄せる・考えは心が持つ前から引き寄せる・直接の努力ではほとんど何もできない）、1878 年の論文「演繹、帰納、仮説」（豆の袋の三つの形）、1903 年の講義のアブダクションの三行の形（驚くような事実から仮説へ遡る・新しい考えを持ち込む唯一の論理の操作）、1908 年の論文の純粋な遊びとミュージングと探究の第一段階（リトロダクション）。そのうえで、パースの著作を読まないまま自分を観察して Love駆動開発に来た pjdhiro の、パースと似ているのではないかという見方と、Love駆動開発と近いところ・違うところの Claude の読みを並べる。デザイン思考をアブダクションの一つの理解の仕方として見る章は工事中。">
+    <meta property="og:title" content="パースの創造的な愛と、アブダクション">
+    <meta property="og:description" content="パースの創造的な愛（agapasm）とアブダクションを、原文で読む。1893 年の論文「進化的な愛」（愛は憎しみを反対物に持たず、作ったものを独立へ押し出しながら調和へ引き寄せる・考えは心が持つ前から引き寄せる・直接の努力ではほとんど何もできない）、1878 年の論文「演繹、帰納、仮説」（豆の袋の三つの形）、1903 年の講義のアブダクションの三行の形（驚くような事実から仮説へ遡る・新しい考えを持ち込む唯一の論理の操作）、1908 年の論文の純粋な遊びとミュージングと探究の第一段階（リトロダクション）。そのうえで、パースの著作を読まないまま自分を観察して Love駆動開発に来た pjdhiro の、パースと似ているのではないかという見方と、Love駆動開発と近いところ・違うところの Claude の読みを並べる。デザイン思考をアブダクションの一つの理解の仕方として見る章は工事中。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/peirce-love-abduction.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="パースの創造的な愛と、アブダクション">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-14">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "パースの創造的な愛と、アブダクション",
+          "description": "パースの創造的な愛（agapasm）とアブダクションを、原文で読む。1893 年の論文「進化的な愛」（愛は憎しみを反対物に持たず、作ったものを独立へ押し出しながら調和へ引き寄せる・考えは心が持つ前から引き寄せる・直接の努力ではほとんど何もできない）、1878 年の論文「演繹、帰納、仮説」（豆の袋の三つの形）、1903 年の講義のアブダクションの三行の形（驚くような事実から仮説へ遡る・新しい考えを持ち込む唯一の論理の操作）、1908 年の論文の純粋な遊びとミュージングと探究の第一段階（リトロダクション）。そのうえで、パースの著作を読まないまま自分を観察して Love駆動開発に来た pjdhiro の、パースと似ているのではないかという見方と、Love駆動開発と近いところ・違うところの Claude の読みを並べる。デザイン思考をアブダクションの一つの理解の仕方として見る章は工事中。",
+          "keywords": "パース, Charles Sanders Peirce, 進化的な愛, Evolutionary Love, agapasm, 創造的な愛, アブダクション, abduction, 仮説, リトロダクション, retroduction, ミュージング, musement, デザイン思考, Love駆動開発, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/peirce-love-abduction.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/peirce-love-abduction.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-14",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Person", "name": "Charles Sanders Peirce"}, {"@type": "Thing", "name": "アブダクション"}, {"@type": "Thing", "name": "愛"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「パースの創造的な愛と、アブダクション」のページです（工事中）。パースの創造的な愛（agapasm）とアブダクションを、原文で読む。1893 年の論文「進化的な愛」（愛は憎しみを反対物に持たず、作ったものを独立へ押し出しながら調和へ引き寄せる・考えは心が持つ前から引き寄せる・直接の努力ではほとんど何もできない）、1878 年の論文「演繹、帰納、仮説」（豆の袋の三つの形）、1903 年の講義のアブダクションの三行の形（驚くような事実から仮説へ遡る・新しい考えを持ち込む唯一の論理の操作）、1908 年の論文の純粋な遊びとミュージングと探究の第一段階（リトロダクション）。そのうえで、パースの著作を読まないまま自分を観察して Love駆動開発に来た pjdhiro の、パースと似ているのではないかという見方と、Love駆動開発と近いところ・違うところの Claude の読みを並べる。デザイン思考をアブダクションの一つの理解の仕方として見る章は工事中。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の問い」「pjdhiro の見方」「pjdhiro の体験」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>パースの創造的な愛と、アブダクション</h1>
+                <p class="reader-subtitle">進化的な愛と、新しい考えが生まれる推論を、原文で読む</p>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/peirce-love-abduction/READER-peirce-love-abduction.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="love-history.html">Love とは、どう言われてきたか</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
