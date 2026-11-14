@@ -912,3 +912,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第六部の終わりに修行の章、巻末に禅の章を、どちらも工事中で置いた版）
 - pages: 足したのは工事中の章と、すでに本文にある言葉の場所の一覧で、wiki の本文の材料に触れないので本文を変えず、checked に今の時刻を書いた
+
+## [2026-11-14] check | Love 駆動開発・プロジェクトデザイン（読み物に第七部を立て、工事中の章「この見方は、どんな場面で、どんな条件で役立つか」を足し、修行の章を移した）
+- scope: 2 ページ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第七部「では、自分をどう開発するか」を巻末の手前に置いた版）
+- pages: 足したのは工事中の部と章で、wiki の本文の材料に触れないので本文を変えず、checked に今の時刻を書いた
