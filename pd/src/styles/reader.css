@@ -626,7 +626,7 @@
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 1.6;
-    color: var(--mute);
+    color: var(--mid);
 }
 
 /* 文脈ゼロ LLM 向けの静的要約ブロック（#llm-summary）。
