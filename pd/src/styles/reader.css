@@ -100,7 +100,8 @@
     padding: 0;
 }
 
-.reader-article blockquote.reader-callout {
+.reader-article blockquote.reader-callout,
+.reader-hero blockquote.reader-callout {
     border-left: 3px solid var(--gold);
     padding: 1.1rem 1.4rem;
     margin: 1.75rem 0;
@@ -458,7 +459,8 @@
     color: var(--mute);
 }
 /* ページの出発点になる依頼・問いの引用は本文と同じ濃さで読ませる（通常の引用は --mute・#15） */
-.reader-article blockquote.reader-request p {
+.reader-article blockquote.reader-request p,
+.reader-hero blockquote.reader-request p {
     color: var(--mid);
 }
 .reader-article .reader-sources {
