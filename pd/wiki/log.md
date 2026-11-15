@@ -947,3 +947,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ（`concepts/Love 駆動開発` の二段を直し、`プロジェクトデザイン` は確かめだけ）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（巻末「AI協働の進め方」に pjdhiro の見方のカード二つ＝論文は論証のためでなく視点や理解の足場・6 割当たっていれば発散思考の足場、を置いた版。冒頭はテンプレートにある）
 - pages: Love 駆動開発の Love の広さの段に「定義を見直さずにきた理由の一つは、どれも当たっているから」を、AI協働の段に論文を引く趣旨を足した。compiled が今日なので checked を今の時刻にした。プロジェクトデザインは引いている段が変わっていないので本文を変えず checked を今の時刻にした
+
+## [2026-11-16] compile | Love 駆動開発（役立つことを二つのスキルにし、使い道と役立つ場面を第七部の一つの章にまとめた版）
+- scope: 1 ページ（`concepts/Love 駆動開発` の一段を直した）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第六部の頭の章を「開発の言葉を、この見方で、どう確かめるか」にし、問い「で、それってなんの役に立つの？」と使い道を第七部の章「この見方は、何の役に立ち、どんな場面で役立つか」へ移した）、`pd/scripts/reader-love-driven-dev-template.html`（冒頭の役立つこと・今の答え）
+- pages: Love 駆動開発の冒頭の段を、使い道と、問いを立てるスキル・判断するスキルの二つに直し、第六部と第七部の置き場を一文で添えた。compiled が今日なので checked を今の時刻にした。
