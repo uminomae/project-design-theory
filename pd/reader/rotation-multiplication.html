@@ -46,7 +46,7 @@
     <meta name="twitter:title" content="回転の掛け算">
     <meta property="og:locale" content="ja_JP">
     <meta property="article:published_time" content="2026-11-05">
-    <meta property="article:modified_time" content="2026-11-11">
+    <meta property="article:modified_time" content="2026-11-16">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
@@ -66,7 +66,7 @@
           "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/rotation-multiplication.html",
           "inLanguage": "ja",
           "datePublished": "2026-11-05",
-          "dateModified": "2026-11-11",
+          "dateModified": "2026-11-16",
           "creativeWorkStatus": "Draft",
           "about": [{"@type": "Thing", "name": "複素数"}, {"@type": "Thing", "name": "虚数単位"}],
           "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
@@ -97,13 +97,14 @@
                 <h1>回転の掛け算</h1>
                 <p class="reader-subtitle">虚軸を読むための前提知識</p>
                 <p class="reader-meta">
-                    最終更新: 2026-11-11 ／ 状態: 工事中<br>
+                    最終更新: 2026-11-16 ／ 状態: 工事中<br>
                     <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/rotation-multiplication/READER-rotation-multiplication.md">正本 (GitHub)</a>
                 </p>
             </header>
             <article class="reader-article prose-block">
 <p>ほかの読み物に、「虚軸」や「i を掛けると 90 度回る」という言葉が出てきます。このページでは、掛け算を回転として見る見方を、数直線から順に説明します。数学 III の知識は要りません。</p>
-<details class="sec" id="1-を掛けると向きが反対になる" open><summary>−1 を掛けると、向きが反対になる</summary><div class="secbody">
+<details class="sec" id="1-を掛けると向きが反対になる" open><summary data-sum="3 に −1 を掛けると −3 になることを、数直線の上で、0 を中心に 180 度回したことと見ます。">−1 を掛けると、向きが反対になる</summary><div class="secbody">
+
 
 
 <p>3 に −1 を掛けると −3 になります。数直線の上では、0 からの距離は 3 のままで、向きだけが反対になります。</p>
@@ -113,7 +114,8 @@
 <p class="mw-fallback">（この対話図は JavaScript で動きます。動かない環境では: 数直線の上で 0 から 3 を指す矢印に −1 を掛けると、矢印は 0 を中心に 180 度回って −3 を指します。長さは 3 のままです。もう一度掛けると、さらに 180 度回って 3 に戻ります。）</p>
 </div>
 
-</div></details><details class="sec" id="2-回掛けると-1-になる数i" open><summary>2 回掛けると −1 になる数、i</summary><div class="secbody">
+</div></details><details class="sec" id="2-回掛けると-1-になる数i" open><summary data-sum="2 回掛けると −1 になる数 i を、1 回掛けると 90 度回る数として考えます。i は数直線の外にあります。">2 回掛けると −1 になる数、i</summary><div class="secbody">
+
 
 
 <p>180 度を 2 回に分けると、1 回分は 90 度です。1 回掛けると 90 度回る数があれば、2 回掛けると 180 度回り、−1 を掛けたのと同じになります。この数を i と書きます。i × i = −1 です。</p>
@@ -123,7 +125,8 @@
 <p class="mw-fallback">（この対話図は JavaScript で動きます。動かない環境では: 数直線の上で 0 から 1 を指す矢印に i を掛けると、矢印は 0 を中心に 90 度回って、0 の真上を指します。これが i で、数直線の外です。もう一度 i を掛けると、さらに 90 度回って −1 を指します。）</p>
 </div>
 
-</div></details><details class="sec" id="虚軸--もとの数直線と直角に立つ軸" open><summary>虚軸 — もとの数直線と直角に立つ軸</summary><div class="secbody">
+</div></details><details class="sec" id="虚軸--もとの数直線と直角に立つ軸" open><summary data-sum="i の付いた数が並ぶ虚軸と、もとの実軸で平面ができることと、i を掛けるとどの点も 90 度回ることを見ます。">虚軸 — もとの数直線と直角に立つ軸</summary><div class="secbody">
+
 
 
 <p>i の付いた数（i、2i、3i、…）は、0 の真上へ、もとの数直線と直角に並びます。この軸を虚軸と呼び、もとの数直線を実軸と呼びます。二つの軸で平面ができ、平面の点の一つひとつが数になります。i を掛けると、どの点も 0 を中心に 90 度回ります。</p>
@@ -132,7 +135,8 @@
 <p class="mw-fallback">（この対話図は JavaScript で動きます。動かない環境では: 横の実軸で 2、縦の虚軸で 1 の点は、2 + i という数です。この点に i を掛けると、0 を中心に 90 度回って、横 −1、縦 2 の点、−1 + 2i に移ります。）</p>
 </div>
 
-</div></details><details class="sec" id="直角の軸の値はもとの軸の上では-0" open><summary>直角の軸の値は、もとの軸の上では 0</summary><div class="secbody">
+</div></details><details class="sec" id="直角の軸の値はもとの軸の上では-0" open><summary data-sum="真上に立つ矢印を実軸の上で測ると 0 になることを、cos と、地図の上の山の高さの例で見ます。">直角の軸の値は、もとの軸の上では 0</summary><div class="secbody">
+
 
 
 <p>3i は、0 から真上に 3 離れた点です。実軸の上で測ると、この点から実軸へまっすぐ下ろした先の 0 になります。</p>
@@ -149,7 +153,8 @@
 </div>
 
 <p>ほかの読み物で「虚軸に値があって、しかも 0」と書くときは、この形を指しています。</p>
-</div></details><details class="sec" id="立体を回す--四元数" open><summary>立体を回す — 四元数</summary><div class="secbody">
+</div></details><details class="sec" id="立体を回す--四元数" open><summary data-sum="立体の回転を計算する四元数を紹介し、掛ける順序で答えが変わることを、本を回す例と並べて見ます。">立体を回す — 四元数</summary><div class="secbody">
+
 
 
 <p>ここまでの回転は、平面の上の回転でした。平面では、回す中心が 0 の一点で、回る向きは右回りか左回りかだけです。30 度回してから 60 度回しても、60 度回してから 30 度回しても、行き先は同じ 90 度です。</p>
@@ -167,7 +172,8 @@
 </div>
 
 <p>平面の回転は順序を変えても同じで、立体の回転は順序で変わります。四元数は、立体の回転を計算する道具の一つで、その掛け算も順序で答えが変わります。ただし、i × j と j × i の答え（k と −k）は、立体の回転としては同じ回転に当たります。四元数は、符号を変えても同じ回転を表すからです。順序で行き先が変わるのは、本の例のような回転です。</p>
-</div></details><details class="sec" id="このページの言葉が出てくる読み物"><summary>このページの言葉が出てくる読み物</summary><div class="secbody">
+</div></details><details class="sec" id="このページの言葉が出てくる読み物"><summary data-sum="このページの言葉が出てくる二つの読み物を、短い説明つきで並べます。">このページの言葉が出てくる読み物</summary><div class="secbody">
+
 <div class="reader-linkcards">
 <a class="reader-linkcard glow-link" href="love-driven-dev.html">
 <img class="reader-linkcard__thumb" src="../assets/thumbs/project-design.jpg" alt="" width="720" height="378" loading="lazy">

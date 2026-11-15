@@ -171,6 +171,14 @@ SCREENER_DATA = {
 }
 
 
+def sum_attr(text: str) -> str:
+    """目次に出す章の概要（<!--SUM:-->）を summary の data-sum にする。無ければ空。"""
+    if not text:
+        return ""
+    plain = re.sub(r"<[^>]+>", "", text).strip()
+    return f' data-sum="{htmllib.escape(plain, quote=True)}"'
+
+
 def fold_sections(html: str) -> str:
     """h2 章を garage 型の <details class="sec"> に畳む（flow style 用）。
 
@@ -205,6 +213,19 @@ def fold_sections(html: str) -> str:
         hid = re.search(r'id="([^"]+)"', h2).group(1)
         label = re.sub(r"<[^>]+>", "", h2).strip()
         # 正本 MD で h2 直後に <!--OPEN--> を置いた章は、最初から開いておく
+        # 正本 MD で h2 直後に <!--SUM:一、二文--> を置くと、目次の章の行の下に概要として出す
+        # （src/reader-flow.js が summary の data-sum から作る。違和感帳 i20261115225936k9l
+        # 「目次には概要も入れて。全てのページで。」）。<!--OPEN--> の前後どちらに置いてもよい
+        tsum = ""
+        m = re.match(r"\s*(?:<p>)?<!--SUM:(.*?)-->(?:</p>)?", body, flags=re.S)
+        if not m:
+            m = re.match(r"(\s*<!--OPEN-->)\s*(?:<p>)?<!--SUM:(.*?)-->(?:</p>)?", body, flags=re.S)
+            if m:
+                tsum = m.group(2).strip()
+                body = m.group(1) + body[m.end():]
+        else:
+            tsum = m.group(1).strip()
+            body = body[m.end():]
         opened = body.lstrip().startswith("<!--OPEN-->")
         if opened:
             body = body.replace("<!--OPEN-->", "", 1)
@@ -229,7 +250,7 @@ def fold_sections(html: str) -> str:
                     f'<div class="reader-lens__guide">{m.group(2).strip()}</div></div>')
             body = body[:m.start()] + body[m.end():]
         out.append(
-            f'<details class="sec" id="{hid}"{" open" if opened else ""}><summary>{label}</summary>'
+            f'<details class="sec" id="{hid}"{" open" if opened else ""}><summary{sum_attr(tsum)}>{label}</summary>'
             f'<div class="secbody">{body}</div></details>{turn}{next_part}{lens}'
         )
     return "".join(out)
@@ -399,10 +420,15 @@ def build(SRC: Path, TPL: Path, OUT: Path, STYLE: str) -> None:
 
         # 目次: 本文の h1（部）/ h2（章）から生成し、正本 MD の <!--TOC--> 位置に挿す
         toc_items = []
-        for level, hid, text in re.findall(r'<h([12])[^>]*\bid="([^"]+)"[^>]*>(.*?)</h\1>', html, flags=re.S):
+        # 見出しの直後の <!--SUM:--> は、目次の行の下に概要として出す（本文からは外す）
+        for m in re.finditer(r'<h([12])[^>]*\bid="([^"]+)"[^>]*>(.*?)</h\1>\s*(?:<p>)?(?:<!--SUM:(.*?)-->)?', html, flags=re.S):
+            level, hid, text, tsum = m.groups()
             label = re.sub(r"<[^>]+>", "", text).strip()
             cls = ' class="reader-toc-part"' if level == "1" else ""
-            toc_items.append(f'<li{cls}><a href="#{hid}">{label}</a></li>')
+            sm = (f'<span class="reader-toc-sum">{htmllib.escape(re.sub(r"<[^>]+>", "", tsum).strip())}</span>'
+                  if tsum else "")
+            toc_items.append(f'<li{cls}><a href="#{hid}">{label}</a>{sm}</li>')
+        html = re.sub(r"(?:<p>)?<!--SUM:.*?-->(?:</p>)?", "", html, flags=re.S)
         toc_html = (
             '<nav class="reader-toc glow-card" aria-label="目次">'
             '<p class="reader-toc-title">目次</p>'

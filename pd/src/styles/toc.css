@@ -121,6 +121,15 @@
     line-height: 1.35;
 }
 :is(body.reader-flow, body.home-toc) #toc a.active .toc-sub2 { color: var(--navy); }
+/* 章の概要（data-sum・違和感帳 i20261115225936k9l「目次には概要も入れて」） */
+:is(body.reader-flow, body.home-toc) #toc .toc-sum {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 400;
+    color: var(--mute);
+    margin: 3px 0 0 1.4em;
+    line-height: 1.5;
+}
 /* PC: 左の余白に常設 TOC。本文の左端が目次の右端より右にあるとき（.toc-fits）だけにする。
    幅だけで決めると、本文の幅しだいで目次が本文に重なる（2026-11-08・pjdhiro）。
    .toc-fits は reader-flow.js / ui/home-toc.js が本文の位置を測って付け外しする */
