@@ -942,3 +942,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ（`concepts/Love 駆動開発` に三段足し、`プロジェクトデザイン` は確かめだけ）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（巻末に章「AI協働の進め方」を足し、冒頭の断り書き・仮説・役立つことを直した版。冒頭はテンプレートにある）
 - pages: Love 駆動開発に、Love と呼びたいものの広さ、AI協働の進め方、問いと判断のスキルに役立つことを一段ずつ足した。プロジェクトデザインは引いている段が変わっていないので本文を変えず checked を今の時刻にした
+
+## [2026-11-16] compile | Love 駆動開発・プロジェクトデザイン（冒頭の Love の広さのカードを推敲し、副題の注を「素朴な問い」にし、AI協働の進め方に論文を引く趣旨のカードを置いた版）
+- scope: 2 ページ（`concepts/Love 駆動開発` の二段を直し、`プロジェクトデザイン` は確かめだけ）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（巻末「AI協働の進め方」に pjdhiro の見方のカード二つ＝論文は論証のためでなく視点や理解の足場・6 割当たっていれば発散思考の足場、を置いた版。冒頭はテンプレートにある）
+- pages: Love 駆動開発の Love の広さの段に「定義を見直さずにきた理由の一つは、どれも当たっているから」を、AI協働の段に論文を引く趣旨を足した。compiled が今日なので checked を今の時刻にした。プロジェクトデザインは引いている段が変わっていないので本文を変えず checked を今の時刻にした
