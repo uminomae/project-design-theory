@@ -937,3 +937,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ（`concepts/Love 駆動開発` に一段足し、`プロジェクトデザイン` は確かめだけ）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第七部の章「どう鍛えるのか、どう修行するのか」に、pjdhiro のサイトの「感情処理」のページから、感情処理の流れと私の実践のカードを置き、工事中を止観のやり方だけにした版）
 - pages: Love 駆動開発の「使い方」に、修行の二つの側と、感情処理の流れ・実践を引いたことを一段で足した。プロジェクトデザインは引いている段が変わっていないので本文を変えず checked を今の時刻にした
+
+## [2026-11-16] compile | Love 駆動開発・プロジェクトデザイン（冒頭に AI協働の説明・役立つこと・Love の広さ、巻末に AI協働の進め方を置いた版）
+- scope: 2 ページ（`concepts/Love 駆動開発` に三段足し、`プロジェクトデザイン` は確かめだけ）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（巻末に章「AI協働の進め方」を足し、冒頭の断り書き・仮説・役立つことを直した版。冒頭はテンプレートにある）
+- pages: Love 駆動開発に、Love と呼びたいものの広さ、AI協働の進め方、問いと判断のスキルに役立つことを一段ずつ足した。プロジェクトデザインは引いている段が変わっていないので本文を変えず checked を今の時刻にした
