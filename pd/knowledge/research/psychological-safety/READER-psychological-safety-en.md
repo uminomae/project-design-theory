@@ -86,8 +86,6 @@ They are connected with shame and anxiety. Cook-Greuter writes that what becomes
 
 ## What looks threatening changes with the stage of development
 
-<!--SUM:Tables set out the main anxieties and defenses at each developmental stage, for those who receive measures and those who push them. We also look at Clark's four stages and team studies over time.-->
-
 <!--OPEN-->
 
 How people protect themselves at each stage (defense; we look at it in Part 2) and what kinds of organization they are drawn to also differ. We add these two to the opening table.
@@ -204,8 +202,6 @@ In Part 2 we trace the history of the term, and then look at a state without psy
 
 ## History of the term
 
-<!--SUM:We trace the term psychological safety in order of years, from Lewin and Rogers to Schein and Bennis and Edmondson, and see that it spread without passing down a single definition.-->
-
 <!--OPEN-->
 
 Part 2 begins by looking, in order of years, at where the term psychological safety came from. In this history, Schein writes of the forces that stop change as psychological defenses (the 1995 section).
@@ -252,8 +248,6 @@ Sources: [Lewin (1947)](https://doi.org/10.1177/001872674700100103) *Human Relat
 
 ## The mind has ways of protecting itself
 
-<!--SUM:Under construction. This chapter looks at a state without psychological safety as defense against anxiety, and notes that the same sense of safety can loosen or harden defenses.-->
-
 <!--OPEN-->
 
 In Part 2, following the view of pjdhiro quoted in the overview, we look at a state without psychological safety as a state of the movement of protecting the mind from anxiety (defense). Anxiety itself is looked at on the page [What Is Anxiety](anxiety.html) (in Japanese), starting from Shinya Nitta's definition, as a back-and-forth between anxiety and defense.
@@ -275,8 +269,6 @@ Putting the sources so far side by side, the same "reassurance" can be read as a
 Sources: [Edmondson (1999)](https://doi.org/10.2307/2666999) p.354 / [Vaillant (2011)](https://doi.org/10.31887/DCNS.2011.13.2/gvaillant) *Dialogues in Clinical Neuroscience* 13(3):366–370 (checked in the text. p.366, p.368) / Freud, A. (1937). [*The Ego and the Mechanisms of Defence*](https://archive.org/details/a-freud-1937-ego) (checked in the text of the English translation. p.123)
 
 ## How has the literature on psychological safety written about shame anxiety?
-
-<!--SUM:We look at how Schein's two anxieties and Edmondson's definition wrote about the anxiety of being shamed, then at Brown, who spoke of shame and vulnerability from outside that literature.-->
 
 <!--OPEN-->
 
@@ -317,8 +309,6 @@ Brown says that vulnerability lies at the core of shame and fear and of the stru
 Sources: [Brown (2010)](https://www.ted.com/talks/brene_brown_the_power_of_vulnerability) The power of vulnerability. TEDxHouston, June 2010 (checked in TED's official transcript)
 
 ## Defenses differ in maturity
-
-<!--SUM:We look at the kinds and levels of defense and how immature defenses relate to workplace bullying, and see that the need for defense changes with both the threat and the person's capacity.-->
 
 <!--OPEN-->
 
@@ -372,8 +362,6 @@ In Part 3 we place the views needed to understand these two viewpoints.
 
 ## Are the absence of threat and the presence of cues of safety the same?
 
-<!--SUM:We set side by side sources that treat the absence of threat and cues of safety or trust as separate, including Porges, Yamagishi, Maslow and Schein.-->
-
 <!--OPEN-->
 
 Part 3 holds views that do not fit within the two viewpoints of defense against anxiety and stages of development, but are needed to understand them.
@@ -422,8 +410,6 @@ Sources: [Grossman (2023)](https://doi.org/10.1016/j.biopsycho.2023.108589) *Bio
 
 ## How do trust and psychological safety differ?
 
-<!--SUM:We look at the difference between trust and psychological safety through Edmondson's three points of time frame, focus and level of analysis, and the three levels at which research measures it.-->
-
 <!--OPEN-->
 
 In 1999 Edmondson wrote that psychological safety "involves but goes beyond interpersonal trust." Then where do the two differ?
@@ -451,8 +437,6 @@ In Part 4 we look at why workplace measures tend to miss the mark, one misunders
 <!--PART:Part 4|Why measures miss the mark-->
 
 ## Common misunderstandings
-
-<!--SUM:We set six narrowed readings common in the workplace, such as physical safety, freedom from punishment and simply being kind, against the original definition.-->
 
 <!--OPEN-->
 
@@ -568,8 +552,6 @@ Sources: [Edmondson (1999)](https://doi.org/10.2307/2666999) p.354 / [Edmondson 
 
 ## So what should we do?
 
-<!--SUM:Starting from pjdhiro's view of gaining a higher-order perspective through metacognition, we look at Bohm and colleagues' proposal for dialogue and Kegan and colleagues' deliberately developmental organizations.-->
-
 <!--OPEN-->
 
 So far we have looked at why measures tend to miss the mark, one misunderstanding at a time. At the end of Part 1, we saw that depending on the stage of those who push them, measures tend to take the shape of a single "right answer." Then what should we do?
@@ -599,8 +581,6 @@ The work of digging deep into trust is going on in Part 4 of [What I Want to Cal
 <!--PART:Appendix-->
 
 ## Open questions
-
-<!--SUM:We list questions not answered within the range we searched, such as which organizations it suits, how it overlaps with mature defenses, and what follows when idealization falls away.-->
 
 This chapter lists the questions that, within the range we searched, have not been answered.
 

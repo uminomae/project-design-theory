@@ -14,8 +14,6 @@
 
 ## 一覧 — 十の学派を、三つの切り口で並べる
 
-<!--SUM:十の学派を、どこから何を見ているか・創造の区間・駆動源の三つの列で、一つの表に並べます。-->
-
 <!--OPEN-->
 
 十の学派を、三つの列で並べます。一つめの列は、このページが学派の中身を、どこから何を見ているかの形に言い直したものです。残りの二つの列が、上の二つのスライスです。並びは創造の五段階の順です。
@@ -58,8 +56,6 @@
 </details>
 
 ## 学派ごとに — 定義、よくある誤解、Love駆動開発の視点で見た解釈、効く条件
-
-<!--SUM:学派ごとに、定義・よくある誤解・Love駆動開発の視点で見た解釈・効く条件を表にします。章が書かれなかった学派には、Claude が近い論文を当てています。-->
 
 一覧と同じ順です。ミンツバーグの 1993 年の振り返りの時点で、学派の章がまだ書かれていなかった七つ（エンバイロメント、ラーニング、ポリティカル、アントレプレナー、コグニティブ、カルチャー、コンフィギュレーション）には、Claude が近い論文を当てています。
 
@@ -190,8 +186,6 @@ pjdhiro の「創造とは」の五段階で見ると、決め方と組織と事
 
 ## ミンツバーグ自身の切り口 — 三つの力と、七つの見る向き
 
-<!--SUM:ミンツバーグ自身の別のスライスとして、環境・リーダーシップ・組織の三つの力（1983 年）と、戦略的に考えることを七つの「見る」で描いた論文（1991 年）を見ます。-->
-
 ミンツバーグ自身も、学派とは別のスライスで戦略を見ていました。
 
 1983 年の論文は、戦略形成を、環境・リーダーシップ・組織の三つの力の絡み合いとして追っています。何が動かしているかで見る点で、駆動源のスライスに近いと言えます。
@@ -203,8 +197,6 @@ pjdhiro の「創造とは」の五段階で見ると、決め方と組織と事
 出典（どれも著者のサイト mintzberg.org に置かれた写しで、本文を読んで確かめた）：Mintzberg (1973) "Strategy-Making in Three Modes", *California Management Review* 16(2):44–53（起業家型 p.45・適応型 p.46）／Mintzberg & Waters (1983) "The Mind of the Strategist(s)", in S. Srivastva (ed.) *The Executive Mind*, Jossey-Bass／Mintzberg (1984) "A Typology of Organizational Structure", in D. Miller & P. Friesen *Organizations: A Quantum View*, Prentice-Hall／Mintzberg (1985) "The Organization as Political Arena", *Journal of Management Studies* 22(2):133–154／Mintzberg (1991) "Strategic Thinking as 'Seeing'", in J. Näsi (ed.) *Arenas of Strategic Thinking*／Mintzberg (1993) "25 Years Later... The Illusive Strategy", in A.G. Bedeian (ed.) *Management Laureates* Vol. II／Mintzberg (1994) "Rethinking Strategic Planning, Part I・II", *Long Range Planning* 27(3)。群盲象は、Mintzberg, Ahlstrand & Lampel (1998) *Strategy Safari* の冒頭（独訳の出版社の試し読みで確認）と、Saxe "The Blind Men and the Elephant"（Wikisource）。創造の五段階は「創造とは」のトップページによる。
 
 ## このページについて
-
-<!--SUM:文責は Claude で、pjdhiro の言葉は Claude の要約を聞いての感想であることと、確かめ方を書きます。-->
 
 <!--OPEN-->
 

@@ -101,6 +101,25 @@
     if (nx) { if (!partOf.has(nx)) partOf.set(nx, []); partOf.get(nx).push(pt); }
   });
 
+  /* 一番上（第一部の上）に、冒頭の概要へのリンク「概要」を置く。行き先の id="overview" は
+     build-reader-lp.py が付ける（pjdhiro 2026-11-16・違和感帳 i20261115225936k9l） */
+  var ov = document.getElementById('overview');
+  if (ov) {
+    var oli = document.createElement('li');
+    oli.className = 'toc-part toc-overview';
+    var oa = document.createElement('a');
+    oa.href = '#overview';
+    oa.textContent = EN ? 'Overview' : '概要';
+    oa.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.body.classList.remove('toc-open');
+      requestAnimationFrame(function () { smoothTo(ov, true); });
+      if (history.replaceState) history.replaceState(null, '', '#overview');
+    });
+    oli.appendChild(oa);
+    ol.appendChild(oli);
+  }
+
   secs.forEach(function (sec, i) {
     (partOf.get(sec) || []).forEach(function (pt) {
       var isLens = pt.classList.contains('reader-lens');
@@ -140,13 +159,6 @@
       sEl.className = 'toc-sub2';
       sEl.textContent = p.sub;
       a.appendChild(sEl);
-    }
-    /* 章の概要（正本 MD の <!--SUM:--> → summary の data-sum）を、題の下に小さく出す（違和感帳 i20261115225936k9l） */
-    if (sum && sum.dataset.sum) {
-      var smEl = document.createElement('span');
-      smEl.className = 'toc-sum';
-      smEl.textContent = sum.dataset.sum;
-      a.appendChild(smEl);
     }
     li.appendChild(a);
     ol.appendChild(li);

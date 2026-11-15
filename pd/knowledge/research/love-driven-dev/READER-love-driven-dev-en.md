@@ -8,8 +8,6 @@ note: "English version of READER-love-driven-dev.md (translated by Claude, 2026-
 
 ## What drives a project?
 
-<!--SUM:Starting from pjdhiro's questions of what drives us to do projects and to live, and why we try to become different, names the driving source and sets the two questions of the reader.-->
-
 <!--OPEN-->
 
 After a year of exploring the shapes things take as they come into being, and human consciousness, one question remained.
@@ -62,8 +60,6 @@ To the dots that connect looking backward, pjdhiro adds the following image.
 
 ## What has management studies seen as the driving source?
 
-<!--SUM:Sorts representative ideas of management studies into seven groups by what they see as the driving source, from markets inward to the entrepreneur's mind, and sets them beside the blind men and the elephant.-->
-
 <!--OPEN-->
 
 When explaining Love-Driven Development, pjdhiro has put answering the following question at the core of the explanation.
@@ -109,8 +105,6 @@ There is more than one way to see strategy. Mintzberg, Ahlstrand and Lampel put 
 </details>
 
 ## What does Love-Driven Development see as the driving source?
-
-<!--SUM:Places the driving source as what I want to call Love, in two aspects, a force that draws and a property of the field, likened to gravity and spacetime, and shows it through overlapping circles of four explorations.-->
 
 <!--OPEN-->
 
@@ -180,8 +174,6 @@ This page also has the aspect of confirming, from the viewpoint of Western scien
 
 ## What has the word Love pointed to?
 
-<!--SUM:Lines up what has been called Love across Buddhism, Western philosophy, dictionaries, psychology and neuroscience: different words, ways of writing, objects, and not only something good.-->
-
 <!--OPEN-->
 
 Even saying "what I want to call Love", what the word Love points to differs by person and era. When looking at what Love is, pjdhiro first asked Claude this.
@@ -232,8 +224,6 @@ What I want to call Love cannot be seen with the eyes. Part 2 looks at the invis
 <!--PART:Part 2|Seeing the invisible driving source through similar shapes-->
 
 ## What shape does creation take?
-
-<!--SUM:Sets out the five stages of creation, field, wave, edge, vortex and bundle, with examples from physics, biochemistry, psychology, romance and management, and reads words as names for vortices between the waves.-->
 
 <!--OPEN-->
 
@@ -377,8 +367,6 @@ Sources: [Dirac (1927)](https://doi.org/10.1098/rspa.1927.0039) "The Quantum The
 
 ## Isn't Love like gravity?
 
-<!--SUM:Sets what I want to call Love beside a gravitational field and the gravity well, following pjdhiro's hypothesis, and looks at seeing the unmoving center by dividing oneself through metacognition.-->
-
 <!--OPEN-->
 
 In the shape of creation, the field fluctuates, waves rise, and vortices swirl between the waves. Then what do that field, and the driving source that makes the vortices swirl, resemble? To pjdhiro, gravity felt close. Seeing that Love also seems related to something like a gravitational field, pjdhiro placed the following hypothesis.
@@ -449,8 +437,6 @@ One cannot see ahead, and yet one is stable. Apart from the reassurance gained b
 
 ## How far does it resemble physics in structure?
 
-<!--SUM:Gathers the shapes borrowed from physics and which shape each of the four explorations seems to overlap with, leaving whether it is the same law before the point of checking.-->
-
 <a id="ldd-physics"></a>The two chapters of Part 2 borrowed shapes from physics: the [gravity well](gravity-well.html), changing scale from classical to quantum, and the vortices between the waves and the fluctuation of the field. This chapter gathers the borrowed shapes in one place, and sets out which shape of physics each of the four explorations seems to overlap with. The details of formulas and original sources are placed inside folds.
 
 They can be borrowed because there is one estimate beneath them.
@@ -519,8 +505,6 @@ Part 3 looks at the inside of the person: how people receive the world and how t
 
 ## People cut out the world with signals of survival and trust
 
-<!--SUM:Looks at how people pick up the world as important in two directions, survival and trust, and why the value of trust cannot be seen on a single row of symbols.-->
-
 <!--OPEN-->
 
 What do people receive from the world as important? Only the conditions for staying alive?
@@ -576,8 +560,6 @@ The range of visible light and the breadth of ways of seeing both have limits, a
 
 ## Signals well up from inside the body
 
-<!--SUM:Asks what signals tie the body and consciousness, and looks at interoception and the view that signals stand out as gaps from the brain's prediction of the body.-->
-
 <!--OPEN-->
 
 The previous chapter saw that a sense of something being off wells up whose source cannot be seen on the symbols. As something pjdhiro wants to check through neurophenomenology, pjdhiro poses the following question about how those signals are tied between the body and consciousness.
@@ -615,8 +597,6 @@ Sources: [Seth (2013)](https://doi.org/10.1016/j.tics.2013.09.007) "Interoceptiv
 </details>
 
 ## When signals and thoughts part, one feels a lack
-
-<!--SUM:Looks at kesson, the sense of lack felt when thoughts part from bodily signals, through pjdhiro's image of a value on the imaginary axis that is 0 in cognition, and at holding it as a question.-->
 
 <!--OPEN-->
 
@@ -675,8 +655,6 @@ The stability of "one cannot see ahead, and yet one is stable", touched on in [S
 
 ## Value is born in the consciousness of the one who receives
 
-<!--SUM:Applies the five stages of creation to the receiving side and reads value as a state felt in the receiver's consciousness, with what the maker put in acting as a trigger at the edge.-->
-
 <!--OPEN-->
 
 pjdhiro thought that this exploration could at least answer "what is value creation". Then where is value born?
@@ -727,8 +705,6 @@ In Part 4, before going on to what I want to call Love, two questions are answer
 
 ## What is the unconscious?
 
-<!--SUM:Opens Part 4 on trust and reassurance, which pjdhiro sees as resembling Love, and sets out the first premise: the unconscious in Freud and Jung, and what gets set to zero.-->
-
 <!--OPEN-->
 
 In the chapter at the end of Part 1, "[What has the word Love pointed to?](#ldd-love-history)", what has been called Love was lined up. Looking at it, pjdhiro sees it this way.
@@ -771,8 +747,6 @@ Sources: for the paragraph at the head of Part 4 on research that has written ab
 
 ## Where do the feelings of trust and love come from?
 
-<!--SUM:Looks at the view, in Freud's transference, Klein's object relations and Jung's archetypes, that some feelings of trust and love come from patterns one is not conscious of.-->
-
 <!--OPEN-->
 
 People come to trust someone, or to like someone. Is that feeling born each time from looking at the person in front of them? pjdhiro's words in the previous chapter named, as sources bearing on the definitions of trust and love, Freud's transference, Klein's object relations and Jung's archetypes. Of the psychology that influenced pjdhiro, pjdhiro names Freud's transference first.
@@ -801,8 +775,6 @@ To read the originals: Japanese translations of Freud's two papers are in *Furoi
 
 ## The mind has mechanisms to protect itself
 
-<!--SUM:Looks at defense mechanisms as involuntary moves that protect the mind, following Vaillant's levels, and pjdhiro's view of personality as the strength and tendencies of defense.-->
-
 <!--OPEN-->
 
 After an expectation is betrayed, people despair, blame others or accept (we will see this in pjdhiro's words in the later chapter "[How do expectation and trust differ?](#ldd-expect)"). What decides which movement comes out?
@@ -826,8 +798,6 @@ To read the originals: Vaillant's paper can be read in full on PMC. The classifi
 </details>
 
 ## In what situations does the mind's defense loosen?
-
-<!--SUM:Sets out pjdhiro's view that mental growth needs two sides, pointing at the mind and situations that loosen defense, such as holding and not-knowing. Partly under construction.-->
 
 <!--OPEN-->
 
@@ -858,8 +828,6 @@ To read the originals: a Japanese translation of Winnicott's paper is in *Jōcho
 </details>
 
 ## What looks threatening changes with the stage of development
-
-<!--SUM:Looks, through Cook-Greuter's stages of adult development, at how the main anxiety and the defenses used change by stage, summed up in a table.-->
 
 <!--OPEN-->
 
@@ -902,8 +870,6 @@ To read the originals: Cook-Greuter's paper can be read in full in the Wayback M
 </details>
 
 ## Why are feelings similar to trust hard to tell apart?
-
-<!--SUM:Asks why trust is hard to tell apart from faith or expectation, and looks at how the fineness of describing feelings changes by stage, as emotional metacognition.-->
 
 <!--OPEN-->
 
@@ -957,8 +923,6 @@ In a 1943 paper Maslow wrote that even after the needs for physiology, safety, l
 
 ## How do expectation and trust differ?
 
-<!--SUM:Sets expectation, which Nitta writes of as counting on the other as almighty, beside trust that wells up when the other supports one's fragility, with pjdhiro's view that the kickoff comes after expectation is betrayed.-->
-
 <!--OPEN-->
 
 A word often mixed up with trust in everyday life is expectation. Is expectation a good thing, as something that moves projects?
@@ -992,8 +956,6 @@ Sources: pages on Shinya Nitta's website "Seishin bunseki tōgō riron" (in Japa
 </details>
 
 ## How do acceptance and trust differ?
-
-<!--SUM:Sets Kübler-Ross's and Nitta's sequences side by side and looks at acceptance after a betrayed expectation, and self-acceptance, which pjdhiro places at the start of self-actualization.-->
 
 <!--OPEN-->
 
@@ -1041,8 +1003,6 @@ As seen in the chapter "[The mind has mechanisms to protect itself](#ldd-defense
 
 ## What is anxiety?
 
-<!--SUM:Starting from pjdhiro's view that anxiety is important and not the opposite of reassurance, looks at Nitta's definition of anxiety as dissociation when defense peels away. Other theories are under construction.-->
-
 <!--OPEN-->
 
 <a id="ldd-uncertain"></a>The words on self-acceptance in the previous chapter included "to be precise, anxiety does arise, but one can be with the anxiety". Is anxiety something that should simply be erased? While thinking about where in this reader to treat the anxiety of not being able to see ahead, pjdhiro said this.
@@ -1087,8 +1047,6 @@ Sources: the page "[Dissociation theory](https://www.seishin-bunseki.jp/category
 
 ## How do faith and trust differ?
 
-<!--SUM:Looks at Freud's view of a belief as illusion when wish fulfilment comes to the fore, which separates where the way of believing comes from, not whether it is correct.-->
-
 <!--OPEN-->
 
 The chapter "[How do expectation and trust differ?](#ldd-expect)" saw expectation as a feeling picturing what will happen in the direction one hopes. Hoping also enters into believing. How did psychoanalysis see a way of believing like faith?
@@ -1108,8 +1066,6 @@ To read the originals: Japanese translations are *Gensō no mirai / Bunka e no f
 </details>
 
 ## How do idealization and trust differ?
-
-<!--SUM:Looks at idealization, selecting only the good aspect and splitting off the other, through Klein and pjdhiro's 'self-destruction through excessive good', and leaves its difference from trust open.-->
 
 <!--OPEN-->
 
@@ -1145,8 +1101,6 @@ Winnicott and Bowlby wrote, from the relationship between an infant and the pers
 
 ## How do reassurance and dependence differ from trust?
 
-<!--SUM:Looks at Winnicott's dependence and holding as a foothold for being able to rely, and Maslow's need for safety, and sets the two kinds of reassurance side by side.-->
-
 <!--OPEN-->
 
 Idealization was a movement to protect oneself from anxiety. Then is the feeling of being protected, of relying on someone with reassurance, the same as trust? Around the time of writing the sister reader "Isn't Love like gravity?", pjdhiro looked back on a year of working with AI using the image of the umbilical cord (the chapter "[Isn't Love like gravity?](#ldd-center)") like this.
@@ -1173,8 +1127,6 @@ To read the originals: a Japanese translation of Winnicott's paper is in *Jōcho
 
 ## How do attachment and trust differ?
 
-<!--SUM:Starting from pjdhiro's view that one can hold a sense of something off because someone trusted is within, looks at Bowlby's internal working models.-->
-
 <!--OPEN-->
 
 It was also said that holding a sense of something being off without resolving it right away ([holding](#ldd-hold)) is hard to sustain alone, and is supported by stable relationships. Then why can one keep holding it even when there is no one nearby?
@@ -1200,8 +1152,6 @@ There are theories that describe emotions by a small number of basic emotions an
 <!--/LENS-->
 
 ## Where is trust among the emotions?
-
-<!--SUM:Looks at where trust and love are placed in classifications of emotions, Plutchik and Panksepp among others, and at love as momentary and trust as lasting.-->
 
 <!--OPEN-->
 
@@ -1247,8 +1197,6 @@ The aspects seen from the four viewpoints are overlaid to line up the outlines o
 
 ## What outlines do trust and reassurance show?
 
-<!--SUM:Lines up the aspects of trust and of reassurance touched so far as outlines rather than a single definition, and notes the two may not be separable.-->
-
 <!--OPEN-->
 
 The chapters so far looked at trust and reassurance from the four viewpoints of self-actualization, psychological defense mechanisms, theories of the mother–child relationship and the classification of emotions, lining them up with expectation, acceptance, faith, idealization, dependence and attachment. Here, we answer what trust is and what reassurance is. The answer is not a single definition but an outline lining up the aspects touched so far, like [the blind men describing the elephant](#ldd-blind-elephant).
@@ -1276,8 +1224,6 @@ Aspects of reassurance touched:
 Trust and reassurance can be written as two, but may not be separable. With either, taking only one aspect overlooks another.
 
 ## How do stages and personality change how trust and reassurance look?
-
-<!--SUM:Looks again at trust and reassurance through Cook-Greuter's stages and through personality, and reads that the same word may point to different things for different people.-->
 
 <!--OPEN-->
 
@@ -1327,8 +1273,6 @@ Part 5 looks at what this reader wants to call Love, and answers the first quest
 
 ## What I want to call Love
 
-<!--SUM:Starting from the breadth of what has been called Love, takes pjdhiro's view that the same word may be applied to various aspects, such as field or vortex. Asking each one's driving source is under construction.-->
-
 <!--OPEN-->
 
 As seen in the chapter at the end of Part 1, "[What has the word Love pointed to?](#ldd-love-history)", lining up what has been called Love makes it very broad. About how to handle this breadth, pjdhiro talks like this.
@@ -1340,8 +1284,6 @@ Perhaps the same single word is applied to various aspects. People give names to
 🚧 Asking about the driving source of each of the things lined up in the chapter at the end of Part 1 is under construction. (Exploration: [#89](https://github.com/uminomae/project-design-theory/issues/89))
 
 ## What is what I want to call Love not?
-
-<!--SUM:Starting from the power school, takes pjdhiro's guess that a desire for power may be one aspect of Love, and sees it as not only emotion, not only good, and not observable from outside.-->
 
 <!--OPEN-->
 
@@ -1362,8 +1304,6 @@ Sources: *Dahui Pujue chanshi yulu* fascicle 1 (Taishō vol. 47 No.1998A, p.812c
 </details>
 
 ## What aspects does what I want to call Love have?
-
-<!--SUM:Looks at the aspects of what I want to call Love: an unmoving center, the field and its distortion, opposing things producing vortices, and the stability of being connected without confirming.-->
 
 <!--OPEN-->
 
@@ -1473,8 +1413,6 @@ A wormhole is something considered in physics as a bridge connecting two distant
 
 ## What is what I want to call Love like?
 
-<!--SUM:Sets out pjdhiro's analogies, gravity, sea and vortices, the umbilical cord and others, each as one aspect, and wants to call the whole of the aspects Love.-->
-
 <!--OPEN-->
 
 pjdhiro has likened the stability felt beyond metacognition to the umbilical cord and the mother ([the stability of being connected without confirming](#ldd-love-umbilical)). About that analogy, pjdhiro adds this.
@@ -1520,8 +1458,6 @@ pjdhiro has used many analogies: gravity; the sea, waves and vortices; a field m
 
 ## That is the driving source of projects
 
-<!--SUM:Returns to the first question and answers that the driving source of projects may be the lack felt as the gap between what I want to call Love and oneself.-->
-
 <!--OPEN-->
 
 Here we return to the question posed at the very start of Part 1.
@@ -1559,8 +1495,6 @@ From here is the second half, whose theme is development. Of the title Love-Driv
 <!--PART:Part 6|What is happening inside what is called development?-->
 
 ## What does development point to?
-
-<!--SUM:Asks why we try to become different, and takes development to include both what is moved along intentionally and what grows without intention, laid out in six questions.-->
 
 <!--OPEN-->
 
@@ -1827,8 +1761,6 @@ Sources: [IT glossary e-Words, "Test-driven development"](https://e-words.jp/w/%
 
 ## What is this view good for?
 
-<!--SUM:Starting from pjdhiro's question of what it is good for, presents this view as a sieve that checks whether received words such as value and vision are treated as vortices cut off from the field.-->
-
 <!--OPEN-->
 
 pjdhiro says that readers who have heard this far will probably ask the following.
@@ -1840,8 +1772,6 @@ pjdhiro says that readers who have heard this far will probably ask the followin
 The three chapters that follow look at this use in turn: when checking the words one has received (Where are the words of business misunderstood?), when giving something form (Where does design come in?), and what changes when it is used and how far it works (What changes when the input is arranged?). The first chapter deals with words used in business and management settings, so it limits the discussion to business. The other two take examples from business, but the discussion is not limited to business.
 
 ## Where are the words of business misunderstood?
-
-<!--SUM:Checks three words of business, vision, words of the mind such as psychological safety, and value creation, for where they are treated as parts cut off from the field.-->
 
 <!--OPEN-->
 
@@ -2087,8 +2017,6 @@ Deciding by the yardstick of profit alone may destroy the very shape of the fiel
 
 ## Where does design come in?
 
-<!--SUM:Following pjdhiro's view that recognizing and creating value is design work, reads design as engaging with both the thing given form and the field it is born and received in.-->
-
 <!--OPEN-->
 
 Then how can this view be used on the side of giving something form? If the recognition and creation of value do not happen only in the maker's hands, what kind of work can the work of giving form be called?
@@ -2153,8 +2081,6 @@ Sources: Dewey (1910) *[How We Think](https://www.gutenberg.org/ebooks/37423)*, 
 </details>
 
 ## What changes when the input is arranged?
-
-<!--SUM:Looks at the effects pjdhiro names for arranging the input, sharper analysis and fewer biases among others, and notes that it does not promise success.-->
 
 <!--OPEN-->
 
@@ -2289,8 +2215,6 @@ Without judging by good and bad, one can look, as a structure, at what is recogn
 
 ## Seen from computer science, what looks alike?
 
-<!--SUM:Under construction. Will look for shapes in computer science, with examples such as AI, similar to this page's way of seeing.-->
-
 <!--OPEN-->
 
 <a id="ldd-computing"></a>pjdhiro sees the field of computer science as something that could also be called an imitation of humans and organizations. In this chapter, taking easy-to-grasp examples such as AI as clues, we look from the viewpoint of computer science for shapes similar to this page's way of seeing.
@@ -2298,8 +2222,6 @@ Without judging by good and bad, one can look, as a structure, at what is recogn
 🚧 Under construction.
 
 ## The answer of the second half
-
-<!--SUM:Suggests that the gap between Love and oneself may move development, and looks at debugging and refactoring as self-renewal through pjdhiro's views. Partly under construction.-->
 
 <!--OPEN-->
 
@@ -2336,8 +2258,6 @@ The protection in the second remark points in a different direction from protect
 🚧 The answer of the second half is under construction. That is the second half, whose theme was development.
 
 ## What is still not known
-
-<!--SUM:Leaves open questions: whether being itself is the source and where managers stand in the picture, the 'between', the signal of trust, and other explorations.-->
 
 <!--OPEN-->
 
@@ -2414,8 +2334,6 @@ Part 7 looks at it as practice. After looking at the situations in which to use 
 
 ## In what situations, and under what conditions, is this view useful?
 
-<!--SUM:Lines up situations pjdhiro sees this view as useful for: those commissioning projects, processing anxiety without defense, and readers abroad interested in Zen. Partly under construction.-->
-
 <!--OPEN-->
 
 <a id="ldd-scenes"></a>The ideas of management studies and project management each have situations where they work well. The table in the Part 1 chapter "[What has management studies seen as the driving source?](#ldd-management)" lined up representative ideas together with the situations where they are effective. Lining up in what situations and under what conditions this view is useful makes the difference from them easier to see. pjdhiro sees the situations where it is useful as follows.
@@ -2434,8 +2352,6 @@ The first is the situation of the side that commissions a project. The second is
 
 ## How does one train it, how does one practice?
 
-<!--SUM:Looks at practice as removing bugs from the mind in two ways: knowing how it works through shikan and psychology, and loosening defense. How to do it is under construction.-->
-
 <!--OPEN-->
 
 <a id="ldd-practice"></a>Suppose the situations where it is useful are known: then how does one acquire it? This chapter looks at how to train the skill and how to practice.
@@ -2451,8 +2367,6 @@ The chapter "[The answer of the second half](#ldd-debug)" looked at pjdhiro's vi
 🚧 Under construction: how to do *shikan*, and how to loosen protection, accept weakness and badness, and process emotions, will be written.
 
 ## Seen from Zen, what is close?
-
-<!--SUM:Lines up the words of Zen and Buddhism cited in this reader, with pjdhiro's view that the Heart Sutra is closest. Organizing Zen's teachings is under construction.-->
 
 <a id="ldd-zen"></a>Here and there, this reader has cited words of Zen and Buddhism. pjdhiro sees the teachings of Zen as a reference for this reader, and sees Zen as a way, with a history, of developing one's own spirit. So, after the chapter on practice, a chapter that looks through the viewpoint of Zen is placed. First, the places of the words cited so far are lined up.
 
@@ -2472,8 +2386,6 @@ Of these, pjdhiro sees the Heart Sutra as follows.
 
 ## Seen from existentialism, where does it stand?
 
-<!--SUM:Under construction. Starting from pjdhiro's view that this theory has an existentialist viewpoint, will place it from that viewpoint after researching the original sources.-->
-
 <a id="ldd-existentialism"></a>This chapter looks at this reader from the viewpoint of philosophy. pjdhiro sees an existentialist viewpoint in this theory.
 
 <strong>pjdhiro's view (translated by Claude):</strong>This theory does have an existentialist viewpoint. Placing it from that viewpoint might be easy to understand for people who like philosophy.
@@ -2481,8 +2393,6 @@ Of these, pjdhiro sees the Heart Sutra as follows.
 🚧 Under construction: what existentialism has asked will be researched in the original sources, and where this reader's way of seeing stands from that viewpoint will be written.
 
 ## Words on this page
-
-<!--SUM:A glossary of words used here in a slightly different sense, such as driving source, Love, gravity well, field, kesson and holding, with links to first appearances.-->
 
 <a id="ldd-terms"></a>These are words used on this page in a sense a little different from the usual. Each has a link to where it first appears.
 
@@ -2501,8 +2411,6 @@ Of these, pjdhiro sees the Heart Sutra as follows.
 - <span id="term-hold">**Holding (*hōji*)**</span>: a word of "Kesson-Driven Thinking": when noticing a kesson, holding on to it as a question without answering right away ([first appearance](#ldd-kesson)).
 
 ## How I came to this question — background and history
-
-<!--SUM:Follows how the name Love-Driven Development came about, given afterward to repeated events, and the course of the search for what it names.-->
 
 <a id="ldd-background"></a>From here on is the scaffolding of the main text: how this view came about, and where things were cited from.
 
@@ -2558,15 +2466,11 @@ How this year was traveled is laid out in another reader, "[A year of making the
 
 ## Sources and references
 
-<!--SUM:Gathers by field the sources cited in each chapter.-->
-
 <a id="ldd-refs"></a>The sources placed in each chapter are gathered here by field. Related pages are in the "[Links](#ldd-links)" that follow.
 
 <!--REFS-->
 
 ## Links — pjdhiro's pages
-
-<!--SUM:Lists pjdhiro's pages opened from this reader: the four explorations, related readers, and the top of Project Design Theory.-->
 
 <a id="ldd-links"></a>Pages that pjdhiro writes and maintains. Those opened from this reader are gathered here. Pages without an English version are in Japanese.
 

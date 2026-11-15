@@ -620,15 +620,6 @@
 
 .reader-toc li:not(.reader-toc-part) { padding-left: 1em; }
 
-/* 章の概要（正本 MD の <!--SUM:-->・違和感帳 i20261115225936k9l） */
-.reader-toc-sum {
-    display: block;
-    font-size: 0.8rem;
-    font-weight: 400;
-    line-height: 1.6;
-    color: var(--mid);
-}
-
 /* 文脈ゼロ LLM 向けの静的要約ブロック（#llm-summary）。
    人間には非表示だが本文抽出（innerText）には残す必要があるため、
    display:none / visibility:hidden は使わない（抽出でも消える）。 */
