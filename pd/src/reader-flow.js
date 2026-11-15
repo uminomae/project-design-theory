@@ -141,6 +141,13 @@
       sEl.textContent = p.sub;
       a.appendChild(sEl);
     }
+    /* 章の概要（正本 MD の <!--SUM:--> → summary の data-sum）を、題の下に小さく出す（違和感帳 i20261115225936k9l） */
+    if (sum && sum.dataset.sum) {
+      var smEl = document.createElement('span');
+      smEl.className = 'toc-sum';
+      smEl.textContent = sum.dataset.sum;
+      a.appendChild(smEl);
+    }
     li.appendChild(a);
     ol.appendChild(li);
     a.addEventListener('click', function (e) {
