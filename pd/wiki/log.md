@@ -1118,3 +1118,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「開発とは、何を指すか」の終わりに、畳み「詳しく — ウィルバーの統合理論と、開発のプロセス」を足した。pjdhiro の見方のカード、JCS 1997 と著者のサイトの抜粋で照らした開発の過程と Eros・Agape、近い・違って見えるところの Claude の読み）
 - pages: どちらも畳みの中身までは書いていないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] update | Love 駆動開発（防衛がゆるむ章のカードに子育てと教育の一文）
+- scope: 1 ページ直し（`concepts/Love 駆動開発`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（分離と包摂のカードに、pjdhiro の「子育てや教育に関するバランスは、このことを言っていると感じることが多い」を足した・#159）
+- pages: 同じカードを引く段に、同じ一文を足した。
