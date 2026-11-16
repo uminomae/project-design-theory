@@ -69,7 +69,9 @@ Love駆動開発を説明するとき、pjdhiro は、次の問いに答える�
 
 <a id="ldd-management"></a><strong>pjdhiro の問い：</strong>プロジェクトの駆動源は何？
 
-たとえば、強いスポーツチームが、なぜ強いのかを考えます。目標が高い、練習の計画がよい、監督が熱心、伝統がある、と説明はいくつも出てきます。どれも当たっていますが、どれか一つで説明しようとすると、何かが残ります。同じ監督と同じ練習でも、勝てない年があるからです。
+たとえば、強いスポーツチームが、なぜ強いのかを考えます。目標が高い、練習の計画がよい、監督が熱心、伝統がある、と説明はいくつも出てきます。どれも当たっていますが、どれか一つで説明しようとすると、何かが残ります。同じ監督でも、勝てない年があるからです。
+
+実際にあった例があります。イングランドのプレミアリーグで、レスター・シティは 2016 年、クラウディオ・ラニエリ監督のもとでリーグを制しました。その九か月後、チームは残り 13 試合で降格圏まで勝ち点 1 の位置にいて、クラブはラニエリを解任しました。クラブは声明で、ラニエリがクラブの歴史で最も成功した監督であることは疑いない、と書いています。同じ監督で、同じクラブの伝統の中にいても、優勝の年と次の年の違いは、目標や計画や監督の熱意のどれか一つでは説明しきれません。
 
 経営学も、市場と競争、会社の資源、目標と計画、行動からの学び、組織の文化、人の意欲など、いろいろなところを駆動源と見てきました。チームの目標と練習の計画、伝統、監督の熱意は、この中の目標と計画、組織の文化、人の意欲に当たります。どの考え方も、合う場面ではよく効きます。けれど重ねてみると、群盲象のたとえのように、どれも象の一部に確かに触れているのに、まだ何かが欠けているように感じます。外から内へ下りていくと、最後は起業家の心に行き着きます。Love駆動開発が追っているのは、その心のさらに背後で、心を動かしているものです。
 
@@ -99,7 +101,7 @@ Love駆動開発を説明するとき、pjdhiro は、次の問いに答える�
 
 <!--REF:経営学・起業研究-->
 
-出典：Mintzberg, Ahlstrand & Lampel (1998) *Strategy Safari*（独訳 *Strategy Safari. Der Wegweiser durch den Dschungel des strategischen Managements*, 訳 J. T. A. Wegberg, FinanzBuch Verlag, 2012 の、[出版社の試し読みの Wayback の記録](https://web.archive.org/web/20191020102857/https://www.m-vg.de/mediafiles/Leseprobe/9783898796750.pdf)（2019 年 10 月 20 日）で本文照合済（訳）。冒頭のサックスの詩 pp.15–17）／Saxe "The Blind Men and the Elephant"（[Wikisource にあるパブリックドメインの](https://en.wikisource.org/wiki/The_Poems_of_John_Godfrey_Saxe/The_Blind_Men_and_the_Elephant) *The Poems of John Godfrey Saxe*（1872 年）の版で本文照合済。スキャンの 279–281 枚目）／Kotler, Kartajaya & Setiawan (2010) *Marketing 3.0*（[出版社 Wiley の試し読みで本文照合済。第 1 章 p.4](https://media.wiley.com/product_data/excerpt/24/04705988/0470598824.pdf)）・(2021) *Marketing 5.0*（[出版社 Wiley の試し読みで本文照合済。第 1 章 pp.3・5](https://catalogimages.wiley.com/images/db/pdf/9781119668510.excerpt.pdf)）／野中・勝見 (2020)『共感経営』（版元の親会社の日経BP が[日経BOOKプラスで 2023 年 1 月 20 日に公開した「はじめに」](https://bookplus.nikkei.com/atcl/column/032900009/011300261/)で本文照合済）。表の分け方と「効果的な状況」の列は、Claude による整理です。
+出典：Mintzberg, Ahlstrand & Lampel (1998) *Strategy Safari*（独訳 *Strategy Safari. Der Wegweiser durch den Dschungel des strategischen Managements*, 訳 J. T. A. Wegberg, FinanzBuch Verlag, 2012 の、[出版社の試し読みの Wayback の記録](https://web.archive.org/web/20191020102857/https://www.m-vg.de/mediafiles/Leseprobe/9783898796750.pdf)（2019 年 10 月 20 日）で本文照合済（訳）。冒頭のサックスの詩 pp.15–17）／Saxe "The Blind Men and the Elephant"（[Wikisource にあるパブリックドメインの](https://en.wikisource.org/wiki/The_Poems_of_John_Godfrey_Saxe/The_Blind_Men_and_the_Elephant) *The Poems of John Godfrey Saxe*（1872 年）の版で本文照合済。スキャンの 279–281 枚目）／Kotler, Kartajaya & Setiawan (2010) *Marketing 3.0*（[出版社 Wiley の試し読みで本文照合済。第 1 章 p.4](https://media.wiley.com/product_data/excerpt/24/04705988/0470598824.pdf)）・(2021) *Marketing 5.0*（[出版社 Wiley の試し読みで本文照合済。第 1 章 pp.3・5](https://catalogimages.wiley.com/images/db/pdf/9781119668510.excerpt.pdf)）／野中・勝見 (2020)『共感経営』（版元の親会社の日経BP が[日経BOOKプラスで 2023 年 1 月 20 日に公開した「はじめに」](https://bookplus.nikkei.com/atcl/column/032900009/011300261/)で本文照合済）。表の分け方と「効果的な状況」の列は、Claude による整理です。／レスター・シティの例：UEFA「[Premier League champions Leicester sack Ranieri](https://www.uefa.com/uefachampionsleague/news/0236-0e96579ac381-9a18124c9a02-1000--premier-league-champions-leicester-sack-ranieri)」（2017 年 2 月 23 日。優勝から九か月後の解任・残り 13 試合で降格圏まで勝ち点 1・クラブの声明）で本文照合済。
 
 </details>
 
