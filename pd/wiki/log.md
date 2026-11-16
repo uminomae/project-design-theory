@@ -1098,3 +1098,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（夢の研究のコラムに、ユング 1917 の蟹の夢と英雄の神話の段を足した）
 - pages: どちらも、wiki が引く定義・見方は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発（第四部の防衛・防衛がゆるむ・段階の三章の頭の事例）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（三章の頭に、イソップの「狐と葡萄」、「北風と太陽」とミラーの面接の研究、クック＝グロイターの同じ指摘の受け取られ方を置いた・#159）
+- pages: どちらも章の頭の例までは書いていないので本文を変えず、checked を今の時刻にした。
