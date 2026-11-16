@@ -58,6 +58,7 @@ h1 { font-family: var(--font-display); font-weight: 600; font-size: 1.7rem; lett
 .lead { margin: 0; color: var(--muted); font-size: 0.9rem; }
 .conn { font-size: 0.78rem; color: var(--muted); }
 .conn.bad { color: var(--danger); }
+.moved { margin: 4px 0 0; padding: 10px 12px; border-radius: 10px; background: var(--wait-soft); color: var(--ink); font-size: 0.9rem; }
 
 /* 司令塔を呼ぶ */
 .call { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 8px; padding: 10px 12px; border-radius: 10px; background: var(--claude-soft); }
@@ -211,6 +212,7 @@ details.archive summary { cursor: pointer; font-family: var(--font-display); fon
   <header>
     <h1>違和感帳</h1>
     <p class="lead">pd/ を読んでいて引っかかったところを、一行ずつ置いておく帳面です。Claude が読んで返事を書き、進み具合をここで動かします。ここには pjdhiro が送るものだけを置きます。セッションの判断の問いと作業の報告は、それぞれのセッションのページに置き、ここにはそのリンクだけが返ります。済んだものは「しまったもの」へ移ります。</p>
+    <p class="moved">2026-11-17 から、新しく置くのは <a href="https://claude.ai/artifact/Lqg82t8v6D57TAqMfeRZAT" target="_blank" rel="noopener">付箋帳</a> です。この帳面は読むだけで残します。済んでいなかった一件は付箋帳へ写しました。</p>
     <span class="conn" id="conn">つないでいます…</span>
     <div class="call" id="call" hidden>
       <button type="button" class="call-btn" id="call-btn">司令塔を呼ぶ</button>
@@ -220,7 +222,7 @@ details.archive summary { cursor: pointer; font-family: var(--font-display); fon
 
   <div class="tally" id="tally" aria-label="進み具合で絞る"></div>
 
-  <form class="capture" id="capture" autocomplete="off">
+  <form class="capture" id="capture" autocomplete="off" hidden>
     <textarea id="cap-text" placeholder="気づいたこと（一行目が題になります）" aria-label="気づいたこと"></textarea>
     <div class="row">
       <select id="cap-place" aria-label="場所"></select>
