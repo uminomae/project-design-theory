@@ -990,5 +990,5 @@ compile 実行の履歴。append-only。
 
 ## [2026-11-16] check | Love 駆動開発・プロジェクトデザイン（第二部の重力の章の例の差し替え）
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
-- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（重力の章の頭の体験を、片思いの例から禁じられた恋の例に替えた・#155）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（重力の章の頭の体験を、片思いの例から拾った財布を届けてしまう例に替えた・#155）
 - pages: どちらも、替えたのは例だけで、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
