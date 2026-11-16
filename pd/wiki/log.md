@@ -1058,3 +1058,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第三部の体の章と欠けの章の例を替え、今の像の書き出しを直した・#155）
 - pages: どちらも、替えたのは例と書き出しで、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-16] check | Love 駆動開発・プロジェクトデザイン（第四部の推しやすさの直し）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第四部の章の頭に、今の像と例を足した・#155）
+- pages: どちらも、足したのは章の頭の今の像と例で、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
