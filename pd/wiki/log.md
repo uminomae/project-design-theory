@@ -977,3 +977,8 @@ compile 実行の履歴。append-only。
 - scope: 1 ページ（`concepts/Love 駆動開発` の使い方の節の一段）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（#ldd-skills2030 のカードの「ただし、…」を外し、地の文の解説にした・#150）
 - pages: 引用を一文目だけにし、解説の三文を正本どおりに添えた。
+
+## [2026-11-16] compile | Love 駆動開発（2030 年の中核スキルの段の「既存のやり方がなじまないとき」を具体にし、ティール組織で位置を示した版）
+- scope: 1 ページ（`concepts/Love 駆動開発` の使い方の節の一段）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（#ldd-skills2030・Laloux 2015 を本文照合で足した・#150）
+- pages: 前提のずれの言い方と、ティール組織による位置付けを正本どおりに足した。
