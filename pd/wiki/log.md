@@ -1093,3 +1093,8 @@ compile 実行の履歴。append-only。
 - scope: 1 ページ直し（`concepts/Love 駆動開発`）・1 ページ確かめ（`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（哲学の視点の章に、四つめの節「東洋の古典では」・和辻の段・実存主義の節の本文・章の終わりの読書ガイドの表を書いた・#147・#146）
 - pages: Love 駆動開発の哲学の章の段を、四つの節と読書ガイドに合わせて直し、工事中の一文を外した。プロジェクトデザインは、引く定義・見方が変わらないので本文を変えず、compiled を今日にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（夢の研究のコラムにユングの段）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（夢の研究のコラムに、ユング 1917 の蟹の夢と英雄の神話の段を足した）
+- pages: どちらも、wiki が引く定義・見方は変わらないので本文を変えず、checked を今の時刻にした。
