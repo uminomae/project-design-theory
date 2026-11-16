@@ -1073,3 +1073,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第五部の章の頭に、問い・今の像・例を足した。パースの章にダーウィンとウォレスの 1858 年の論文の出典・#155）
 - pages: どちらも、足したのは章の頭の今の像と例で、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-16] check | Love 駆動開発・プロジェクトデザイン（無意識の章に夢の研究のコラム）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（無意識の章の夢の段のあとに、コラム「夢は、どう研究されてきたか」〔シクラリら 2017・コンコリーら 2021〕を足した）
+- pages: どちらも、wiki が引く定義・見方は変わらないので本文を変えず、checked を今の時刻にした。

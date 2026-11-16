@@ -794,6 +794,16 @@ pjdhiro は、人の心について、こう見ています。
 
 フロイトは 1900 年の『夢解釈』で、自分自身の夢を主な材料にし、自己分析で読み解いています。本の中で最初に読み解いた夢について、フロイトは、読み解くうちに夢の意味が見えてきたと書き、夢の中身は願望の充足で、その動機は願望だった、とまとめました。ユングは、1914 年に準備した講演で、夢を、意識の流れの外から、たまたま起きたように見えるものとして書き出しています。そのうえで、ふだんの意識ではあまり認められない考えや傾向が、眠っているあいだにおのずから動き出すところに、無意識が意識を補う働きを見ました。夢を頭で理解しなくても、人はそれから影響を受けることがある、ともユングは書いています。
 
+<details class="pd-column" id="ldd-dream-research"><summary>夢は、どう研究されてきたか</summary>
+
+フロイトとユングのあと、夢は、眠っている人の脳を測って調べられるようにもなりました。近年の研究から、二つを並べます。
+
+夢を見ている脳。夢は、長くレム睡眠（眠りの中で、目がすばやく動く時期）と結びつけて考えられてきましたが、レム睡眠でない眠りでも見られます（シクラリら、2017 年）。シクラリらは、眠っている人を夜のあいだに何度も起こし、夢を見ていたか、何かを体験していたが中身を思い出せないか、何も体験していなかったかを聞きました。どちらの眠りでも、夢を見ていたと答えたときは、脳の後ろの側の領域で、ゆっくりした波の活動が減っていました。レム睡眠でない眠りのあいだ、この領域の活動を見ていると、起こす前に、その人が夢を見ていたと答えるかどうかを当てることができました。
+
+夢の中の人と話す。起きてから語る夢は、ゆがんだり忘れられたりしやすく、それが夢の研究の難しさでした（コンコリーら、2021 年）。コンコリーらの四つの研究室は、夢の中で夢だと気づいている人（明晰夢を見ている人）に、眠ったまま計算の問いを聞かせ、目の動きや顔の筋肉の動きで答えてもらいました。36 人のうち 6 人が、合わせて 29 回、正しく答えました。問いを試みた回のうち、正しい答えが返ったのは 18.4% でした。
+
+</details>
+
 <details><summary>出典</summary>
 
 <!--REF:心理学-->
@@ -803,6 +813,8 @@ pjdhiro は、人の心について、こう見ています。
 原典を読むなら：フロイトの論文は、日本語訳が『フロイト全集 14』（岩波書店、2010）に「無意識」の題で入っています（[CiNii Books](https://ci.nii.ac.jp/ncid/BB03371699)）。ユングの論文は、Project Gutenberg の英訳の第 5 節から読めます。のちに書き改められた版（*Über die Psychologie des Unbewussten*）の日本語訳は、『無意識の心理』（高橋義孝訳、人文書院）です（[CiNii Books](https://ci.nii.ac.jp/ncid/BB24397125)）。
 
 出典：章の終わりの夢の段＝Freud (1900) [*Die Traumdeutung*](https://archive.org/details/Freud_1900_Die_Traumdeutung_k), Leipzig und Wien: Franz Deuticke（本文照合済。独語の初版を読んだ。自分の夢を材料にすることと自己分析は第 2 章 p.71、最初の夢の意味が見えてきたことと、中身は願望の充足・動機は願望は p.82。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/Freud_1900_Die_Traumdeutung_k)）／Jung "The Psychology of Dreams"（Dora Hecht 訳。1914 年のベルンの医学会のために準備され、戦争で会が延びた講演）, *Collected Papers on Analytical Psychology*, 2nd ed., London: Baillière, Tindall and Cox, 1920, 第 12 章 pp.299–311（本文照合済（訳）。たまたま起きたように見えることは p.299、無意識の補う働きと、頭で理解しなくても影響を受けることは p.307。写しは [Internet Archive の Universal Library の版](https://archive.org/details/CollectedPapersOnAnalyticalPsychology)）。
+
+出典：コラム「夢は、どう研究されてきたか」＝[Siclari et al. (2017)](https://doi.org/10.1038/nn.4545) "The neural correlates of dreaming", *Nature Neuroscience* 20(6):872–878（本文照合済。[PMC5462120](https://pmc.ncbi.nlm.nih.gov/articles/PMC5462120/) の著者稿。レム睡眠と結びつけられてきたこととレム睡眠でない眠りの夢・後ろの側の領域・その場で当てたことは要旨、起こして聞いた三つの答えは結果の節の頭）／[Konkoly et al. (2021)](https://doi.org/10.1016/j.cub.2021.01.026) "Real-time dialogue between experimenters and dreamers during REM sleep", *Current Biology* 31(7):1417–1427（本文照合済。[PMC8162929](https://pmc.ncbi.nlm.nih.gov/articles/PMC8162929/) の著者稿。起きてからの報告のゆがみと忘れ・36 人・6 人で 29 回・四つの研究室は要旨、158 回のうち 18.4% は結果の節）。
 
 原典を読むなら：『夢解釈』の初版の日本語訳は、『夢解釈　初版』上・下（金関猛訳、中央公論新社、2012）です（[CiNii Books](https://ci.nii.ac.jp/ncid/BB09485996)）。
 
