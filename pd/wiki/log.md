@@ -957,3 +957,8 @@ compile 実行の履歴。append-only。
 - scope: 1 ページ（`concepts/Love 駆動開発` の使い方の節に一段）・1 ページ確かめ（`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「この見方は、何の役に立ち、どんな場面で役立つか」の終わりに、世界経済フォーラム『仕事の未来レポート2025』の 2030 年の中核スキル十と、話題が重なる章六つを Claude の読みとして足した・#150）
 - pages: Love 駆動開発の使い方の節に、十のスキルと pjdhiro の言葉と、重なる六つを一段で足し、checked を今の時刻にした。プロジェクトデザインは、足した段がサイトの説明に関わらないので本文を変えず compiled を今日にした。
+
+## [2026-11-16] check | Love 駆動開発・プロジェクトデザイン（第一部の推しやすさの直し）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第一部の四章に、身近な例と今の像の一文を足し、「場が渦を巻く」の体験とジョブズの点と点を本文に上げ、答えの段落の重力と時空のたとえの文を重力の章へ移した・#155）
+- pages: どちらも、足したのは例と並びで、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
