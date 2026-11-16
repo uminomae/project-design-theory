@@ -1047,3 +1047,9 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（創造の章の「クリエイターは、海の上で目に見えた渦」の段を外した・違和感帳 i202611161344375nm・#155）
 - pages: どちらも、外したのは本文の一段で、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-16] compile | Love 駆動開発（哲学の章を三つの節に組み直した）
+- scope: 概念ページ 1（`concepts/Love 駆動開発`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第七部の哲学の章を、プラグマティズム・純粋経験・実存主義の三つの節にし、答えを地の文で置いた・#154・#147）
+- pages: 哲学の章を工事中と書いていた段を、三つの節の今の中身（プラグマティズムと純粋経験の近い・違う、陽明学・実存主義・和辻は工事中）に書き直した。
+- プロジェクトデザイン：哲学の章を引いていないので本文を変えず、checked を今の時刻にした。
