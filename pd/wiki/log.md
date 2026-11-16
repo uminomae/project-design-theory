@@ -1037,3 +1037,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（創造の章の冒頭のクリエイターの像とマーシャルの例、五段階への当てはめ、ノーベル賞の講演の畳みを外した・#155）
 - pages: どちらも、外したのは例で、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-16] check | Love 駆動開発・プロジェクトデザイン（第三部の四章の頭に今の像と例を置く）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第三部の四章の頭に、今の像と身近な例を置き、お金を追っていた例を畳みから本文へ上げ、虚軸の説明を章の頭へ寄せた・#155）
+- pages: どちらも、足したのは例と並びで、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
