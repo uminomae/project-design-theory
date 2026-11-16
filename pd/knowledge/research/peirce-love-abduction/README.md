@@ -49,6 +49,8 @@
 
 ## 残したこと
 
+- pjdhiro がパースの原典を新しいものから読むための表（1908 から 1868 まで 18 行。無料の写しの URL と照合の状態つき）と、アガパズムと般若心経と Love駆動開発を並べる章の観点の案（問いの形で三つ）は `READING-ORDER-20261116.md`。読む順と案の採否は pjdhiro が決める（2026-11-16）。
+
 - デザイン思考の誤解を、アブダクションの視点で切る章は工事中。手元の調べ `pd/knowledge/research/design-thinking/`（2026-03 の LLM の調査。設計研究の Dorst・Roozenburg・Cross、経営の Martin、IDEO など）は、原典で照らしていない。書くときは原典を読み直す（`docs/rules/sources.md`）。
 - 1903 年の講義を、載せてよい写しで読む（ハーバードの Houghton 図書館の手稿の画像、Turrisi 編 1997 の版など）。読めたら、CP 5.181 の「The abductive suggestion comes to us like a flash」と CP 5.173 の Insight・Instinct を本文に足せる。
 - パースの章が二つの頁の版で引かれている：「Love とは、どう言われてきたか」は The Monist の頁、この読み物は 1923 年の再録の頁。
