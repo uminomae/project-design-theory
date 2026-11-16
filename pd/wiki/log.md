@@ -1022,3 +1022,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（創造の章のノーベル講演の例を五段階の説明のあとへ移し、例ごとに場・波・縁・渦・束を当てた。ディランをプランクに替えた・#155）
 - pages: どちらも、替えたのは例とその置き場で、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-16] check | Love 駆動開発・プロジェクトデザイン（創造の章の例を、人と人のぶつかりの四つに）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（創造の章のノーベル賞の例を、カーネマン・マーシャル・ボルン・ファインマンの四つにし、それぞれ五段階に当てた・#155）
+- pages: どちらも、替えたのは例で、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
