@@ -53,4 +53,5 @@
 
 - デザイン思考の誤解を、アブダクションの視点で切る章は工事中。手元の調べ `pd/knowledge/research/design-thinking/`（2026-03 の LLM の調査。設計研究の Dorst・Roozenburg・Cross、経営の Martin、IDEO など）は、原典で照らしていない。書くときは原典を読み直す（`docs/rules/sources.md`）。
 - 1903 年の講義を、載せてよい写しで読む（ハーバードの Houghton 図書館の手稿の画像、Turrisi 編 1997 の版など）。読めたら、CP 5.181 の「The abductive suggestion comes to us like a flash」と CP 5.173 の Insight・Instinct を本文に足せる。
+- 受け止められ方（研究の量と評価・般若心経の学術での扱い）と、「Evolutionary Love」と般若心経の原文のニュアンスの読み、観点 1 へのつなぎは `SURVEY-reception-nuance-20261117.md`（2026-11-17）。
 - パースの章が二つの頁の版で引かれている：「Love とは、どう言われてきたか」は The Monist の頁、この読み物は 1923 年の再録の頁。
