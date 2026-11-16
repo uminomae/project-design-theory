@@ -796,9 +796,11 @@ pjdhiro は、人の心について、こう見ています。
 
 <details class="pd-column" id="ldd-dream-research"><summary>夢は、どう研究されてきたか</summary>
 
-フロイトとユングのあと、夢は、眠っている人の脳を測って調べられるようにもなりました。近年の研究から、二つを並べます。
+夢は、精神分析の中でも、眠っている脳の研究でも調べられてきました。ここでは、三つを並べます。
 
-夢を見ている脳。夢は、長くレム睡眠（眠りの中で、目がすばやく動く時期）と結びつけて考えられてきましたが、レム睡眠でない眠りでも見られます（シクラリら、2017 年）。シクラリらは、眠っている人を夜のあいだに何度も起こし、夢を見ていたか、何かを体験していたが中身を思い出せないか、何も体験していなかったかを聞きました。どちらの眠りでも、夢を見ていたと答えたときは、脳の後ろの側の領域で、ゆっくりした波の活動が減っていました。レム睡眠でない眠りのあいだ、この領域の活動を見ていると、起こす前に、その人が夢を見ていたと答えるかどうかを当てることができました。
+夢と神話。ユングは 1917 年の論文で、無意識の深い層から来る像を、個人のことに引き戻して読むのは適さない、と書き、一人の患者の夢を例に挙げています。患者は、広く流れの速い川を、浅瀬を見つけて渡ろうとしたとき、水の中に隠れていた大きな蟹に足をつかまれる夢を見て、怖くなって目を覚ましました。ユングは、蟹を、分析しても汲み尽くせない無意識の生きた中身として読み、水辺で怪物と戦う英雄の神話とよく似ていると書きました。同じ箇所でユングは、神話を、民族の夢と呼んでいます。
+
+夢を見ている脳。そのあと、夢は、眠っている人の脳を測って調べられるようにもなりました。夢は、長くレム睡眠（眠りの中で、目がすばやく動く時期）と結びつけて考えられてきましたが、レム睡眠でない眠りでも見られます（シクラリら、2017 年）。シクラリらは、眠っている人を夜のあいだに何度も起こし、夢を見ていたか、何かを体験していたが中身を思い出せないか、何も体験していなかったかを聞きました。どちらの眠りでも、夢を見ていたと答えたときは、脳の後ろの側の領域で、ゆっくりした波の活動が減っていました。レム睡眠でない眠りのあいだ、この領域の活動を見ていると、起こす前に、その人が夢を見ていたと答えるかどうかを当てることができました。
 
 夢の中の人と話す。起きてから語る夢は、ゆがんだり忘れられたりしやすく、それが夢の研究の難しさでした（コンコリーら、2021 年）。コンコリーらの四つの研究室は、夢の中で夢だと気づいている人（明晰夢を見ている人）に、眠ったまま計算の問いを聞かせ、目の動きや顔の筋肉の動きで答えてもらいました。36 人のうち 6 人が、合わせて 29 回、正しく答えました。問いを試みた回のうち、正しい答えが返ったのは 18.4% でした。
 
@@ -814,7 +816,7 @@ pjdhiro は、人の心について、こう見ています。
 
 出典：章の終わりの夢の段＝Freud (1900) [*Die Traumdeutung*](https://archive.org/details/Freud_1900_Die_Traumdeutung_k), Leipzig und Wien: Franz Deuticke（本文照合済。独語の初版を読んだ。自分の夢を材料にすることと自己分析は第 2 章 p.71、最初の夢の意味が見えてきたことと、中身は願望の充足・動機は願望は p.82。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/Freud_1900_Die_Traumdeutung_k)）／Jung "The Psychology of Dreams"（Dora Hecht 訳。1914 年のベルンの医学会のために準備され、戦争で会が延びた講演）, *Collected Papers on Analytical Psychology*, 2nd ed., London: Baillière, Tindall and Cox, 1920, 第 12 章 pp.299–311（本文照合済（訳）。たまたま起きたように見えることは p.299、無意識の補う働きと、頭で理解しなくても影響を受けることは p.307。写しは [Internet Archive の Universal Library の版](https://archive.org/details/CollectedPapersOnAnalyticalPsychology)）。
 
-出典：コラム「夢は、どう研究されてきたか」＝[Siclari et al. (2017)](https://doi.org/10.1038/nn.4545) "The neural correlates of dreaming", *Nature Neuroscience* 20(6):872–878（本文照合済。[PMC5462120](https://pmc.ncbi.nlm.nih.gov/articles/PMC5462120/) の著者稿。レム睡眠と結びつけられてきたこととレム睡眠でない眠りの夢・後ろの側の領域・その場で当てたことは要旨、起こして聞いた三つの答えは結果の節の頭）／[Konkoly et al. (2021)](https://doi.org/10.1016/j.cub.2021.01.026) "Real-time dialogue between experimenters and dreamers during REM sleep", *Current Biology* 31(7):1417–1427（本文照合済。[PMC8162929](https://pmc.ncbi.nlm.nih.gov/articles/PMC8162929/) の著者稿。起きてからの報告のゆがみと忘れ・36 人・6 人で 29 回・四つの研究室は要旨、158 回のうち 18.4% は結果の節）。
+出典：コラム「夢は、どう研究されてきたか」＝Jung (1917) "The Psychology of the Unconscious Processes"（Dora Hecht 訳）, *Collected Papers on Analytical Psychology*, 2nd ed., 1920（本文照合済（訳）。集合的な像を個人のことに引き戻すのは適さないことと、蟹の夢は pp.417–418、蟹を汲み尽くせない無意識の中身と読むことは p.435、英雄の神話と「民族の夢」は pp.436–437。写しは章の頭と同じ [Internet Archive の Universal Library の版](https://archive.org/details/CollectedPapersOnAnalyticalPsychology)）／[Siclari et al. (2017)](https://doi.org/10.1038/nn.4545) "The neural correlates of dreaming", *Nature Neuroscience* 20(6):872–878（本文照合済。[PMC5462120](https://pmc.ncbi.nlm.nih.gov/articles/PMC5462120/) の著者稿。レム睡眠と結びつけられてきたこととレム睡眠でない眠りの夢・後ろの側の領域・その場で当てたことは要旨、起こして聞いた三つの答えは結果の節の頭）／[Konkoly et al. (2021)](https://doi.org/10.1016/j.cub.2021.01.026) "Real-time dialogue between experimenters and dreamers during REM sleep", *Current Biology* 31(7):1417–1427（本文照合済。[PMC8162929](https://pmc.ncbi.nlm.nih.gov/articles/PMC8162929/) の著者稿。起きてからの報告のゆがみと忘れ・36 人・6 人で 29 回・四つの研究室は要旨、158 回のうち 18.4% は結果の節）。
 
 原典を読むなら：『夢解釈』の初版の日本語訳は、『夢解釈　初版』上・下（金関猛訳、中央公論新社、2012）です（[CiNii Books](https://ci.nii.ac.jp/ncid/BB09485996)）。
 
