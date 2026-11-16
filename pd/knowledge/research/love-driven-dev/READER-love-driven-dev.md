@@ -896,6 +896,8 @@ pjdhiro は、こうした動きの出方と性格の関係を、自分の用語
 
 たとえば、頑なな人の守りは、その人の性格で、筋の通った理屈で突き崩すしかない、とよく言われます。イソップの「北風と太陽」では、旅人のマントを脱がせたのは、強く吹きつけた北風でなく、照らした太陽でした。これに近いことが、実際に確かめられています。心理学者のウィリアム・ミラーは、自分たちの 1993 年の研究を、こう書いています。飲酒に問題を抱える人に、飲み方を調べてその結果を本人に返す面接をし、返し方だけを、くじで二つに分けました。一つは、変わる必要を説いて、抵抗が出ればそれに立ち向かう型です。もう一つは、本人の見方を聞き返しながら理解し、本人自身の気がかりを引き出す型です。同じカウンセラーが両方を受け持ちました。聞く型の組では、変わりたいという言葉がおよそ二倍、抵抗がおよそ半分でした。会話の中で抵抗した人ほど、のちに多く飲んでいました。ミラーは、依存症の人の抵抗をその人の性格の印と見る通念に対して、抵抗がどれだけ出るかは、カウンセラーの型に大きく左右される、と書いています。
 
+聞く型の芯にあるのは、来談者中心療法のカール・ロジャーズが共感と呼んだ聞き方です。ミラーの手引きは、ロジャーズが共感の語に、相手の言うことを注意深く聞き、少し言い換えて返すという聞き方の意味を与えた、と書いています。積極的傾聴とも呼ばれる聞き方です。手引きは、この返し方は抵抗を呼びにくく、相手が話し、探り続けるのを助ける、とも書いています。ミラーとローズは、ロジャーズが人が変わるための関係の条件として書いた支えの雰囲気を、脅かさない場と見て、その中でなら本人が迷いを探り、自分の変わる理由を口にできると考えていました。ロジャーズが挙げた六つの条件は、独立ページ「[不安とは](anxiety.html#守りに戻るか向き合い続けるか)」にあります。
+
 pjdhiro は、守りをゆるめる、包み込むようなことの例として、共感、ホールディング、もの思い、わからなさを挙げています。そのうえで、精神の成長に大切なことを、こう見ています。
 
 <a id="ldd-holding"></a><strong>pjdhiro の見方：</strong>認知行動療法や止観やメタ認知のような心に指差しするような能動的なことと、共感や信頼関係のような防衛を解くような状況にあることの 2 点が精神成長に大切だと思っています。その二つだけで良いと思うほどに。分離と包摂。つまり、防衛を突いて現実に引き戻すこと、防衛が不要な安全な状況にすること。
@@ -920,7 +922,7 @@ pjdhiro は、守りをゆるめる、包み込むようなことの例として
 
 出典：章の頭の寓話＝イソップ「北風と太陽」、英訳 Townsend, *Three Hundred Æsop's Fables*, London: George Routledge and Sons, 1887, pp.154–155（本文照合済（訳）。北風が強く吹くほど旅人はマントを固く巻きつけ、太陽が照らすと自分から脱いだ。写しは [Wikisource の英語版](https://en.wikisource.org/wiki/Three_Hundred_Æsop%27s_Fables/The_North_Wind_and_the_Sun)）。
 
-出典：章の頭の研究＝ミラーらの 1993 年の研究を、著者のミラー自身が書いた次の二つの本文で読んだ。Miller & Rose (2009) "Toward a theory of motivational interviewing", *American Psychologist* 64(6):527–537, [doi:10.1037/a0016830](https://doi.org/10.1037/a0016830)（本文照合済。[PMC2759607](https://pmc.ncbi.nlm.nih.gov/articles/PMC2759607/) の著者原稿。変わる理由をカウンセラーでなく本人が口にする、は冒頭の節。調べた結果を返す面接の二つの型・同じカウンセラーが両方を受け持った・聞く型で変わりたい言葉がおよそ二倍で抵抗がおよそ半分、は節「MI Plus Assessment Feedback: The Drinker's Check-Up」のあとの節、会話の中で抵抗した人ほどのちに多く飲んだ、はその次の節）／Miller (1995) *Motivational Enhancement Therapy with Drug Abusers*, Albuquerque: CASAA, University of New Mexico（本文照合済。米国立薬物乱用研究所の助成で作られたパブリックドメインの手引き。1993 年の研究で、同じカウンセラーが二つの型を受け持ち、突きつける型の組で抵抗が多かったこと、抵抗を性格の印と見る通念との対比は p.16、自分の口から出た言葉の説得力は pp.7–8。写しは [CASAA の PDF](https://casaa.unm.edu/assets/docs/metmanual.pdf)）。
+出典：章の頭の研究＝ミラーらの 1993 年の研究を、著者のミラー自身が書いた次の二つの本文で読んだ。Miller & Rose (2009) "Toward a theory of motivational interviewing", *American Psychologist* 64(6):527–537, [doi:10.1037/a0016830](https://doi.org/10.1037/a0016830)（本文照合済。[PMC2759607](https://pmc.ncbi.nlm.nih.gov/articles/PMC2759607/) の著者原稿。変わる理由をカウンセラーでなく本人が口にする・ロジャーズの「必要にして十分な」条件の支えの雰囲気を、脅かさず本人の変わる理由を引き出す場と見たこと、は冒頭の節。調べた結果を返す面接の二つの型・同じカウンセラーが両方を受け持った・聞く型で変わりたい言葉がおよそ二倍で抵抗がおよそ半分、は節「MI Plus Assessment Feedback: The Drinker's Check-Up」のあとの節、会話の中で抵抗した人ほどのちに多く飲んだ、はその次の節）／Miller (1995) *Motivational Enhancement Therapy with Drug Abusers*, Albuquerque: CASAA, University of New Mexico（本文照合済。米国立薬物乱用研究所の助成で作られたパブリックドメインの手引き。1993 年の研究で、同じカウンセラーが二つの型を受け持ち、突きつける型の組で抵抗が多かったこと、抵抗を性格の印と見る通念との対比は p.16、自分の口から出た言葉の説得力は pp.7–8、ロジャーズが共感の語に聞き返しの聞き方の意味を与えたこと・積極的傾聴とも呼ばれること・抵抗を呼びにくく話し続けるのを助けることは p.10。写しは [CASAA の PDF](https://casaa.unm.edu/assets/docs/metmanual.pdf)）。
 
 出典：Winnicott (1960) "The theory of the parent-infant relationship", *International Journal of Psycho-Analysis* 41:585–595（本文照合済。分析者のあてにできる感じは p.585、「赤ん坊というものはいない」・乳児と世話のまとまり・依存の語の意味は p.586、絶対的な依存から相対的な依存を経て独立へ、は p.588、抱えることの定義は p.589、依存の三つは pp.589–590、抱える環境の働きは p.590、あてにできるが機械のようにではない・愛を示す形・指導だけではほどよい世話にならない、は p.591、乳児の自我の強さは p.594 の要約。写しは、西ベンガル州政府の教育研究訓練評議会が走査した[同じ巻](https://archive.org/details/dli.scoerat.1853theinternationaljournalofpsychoanalysisvolxll1960)を、公開資料の団体 Servants of Knowledge が Internet Archive に上げたもの。権利は確かめていない）。
 
@@ -933,8 +935,6 @@ pjdhiro は、守りをゆるめる、包み込むようなことの例として
 <!--OPEN-->
 
 前の章までで、心は自分を守る動きを持ち、その守りは状況によってゆるむことを見ました。では、同じ出来事が、ある人には脅威に見え、別の人にはそう見えないのは、なぜでしょうか。
-
-たとえば、指摘や批判は、言い方に気をつければ、誰にでも同じように届く、とよく言われます。けれど、成人の自我の発達を調べてきたクック＝グロイターは、同じ指摘が、発達の段階によってまるで別のものとして受け取られる、と書いています。集団に合わせることで自分を保っている段階（このあとの表の「順応」）の人には、指摘は、何か間違ったことをして人を不快にさせた、という咎めとして届きます。自分の専門の腕前で自分を保っている段階（「専門家」）の人には、批判は、自分という人間まるごとへの叱責として届き、傷つき、脅かされたと感じながら、すぐに人の欠点を責め返します。目標に向かって進むことで自分を保っている段階（「達成者」）の人は、指摘に同意しなくても、自分が丸ごと小さくされたとは感じずに聞けます。批判が正しくても的外れでも、その返事は、自分についても、批判した人についても役に立つ知らせになります。指摘の中身は同じです。違いは、その人がいま何によって自分を保っているかにあるように見えます。
 
 Love駆動開発を、入力と出力を持つ仕組みの図として描けないかと考えたとき、pjdhiro は、その仕組みが人によってどう違うかにも触れています。
 
@@ -968,7 +968,7 @@ Love駆動開発を、入力と出力を持つ仕組みの図として描けな�
 
 <!--REF:心理学-->
 
-出典：Cook-Greuter (2013) "[Nine Levels of Increasing Embrace in Ego Development: A Full-Spectrum Theory of Vertical Growth and Meaning Making](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)", prepublication version, revised Dec. 2013（本文照合済。頁は刷りの頁。防衛の総論（逃げる・闘う・固まる反射と心の防衛、意味づけが乱されたときの否認、脅威が大きいほど今の見方を固めること、段階が後になるほど防衛的な動きの必要が減ることは p.9。不適応や病理がどの時期にも起きうることは p.10）、自己保護 p.27、順応 p.34、専門家 pp.39–40、達成者 pp.49–50、多元 pp.53・58–59、戦略家 pp.71–72、構成への気づき pp.84–85、概念との関係が段階で違う p.10（力・フィードバック・時間・愛などの理解が段階で変わる）、文章完成法 p.10。章の頭の、同じ指摘の受け取られ方は、順応 p.31（指摘を、何か間違ったことをして人を不快にさせた咎めとして受け取る）、専門家 p.37（批判を人間まるごとへの叱責として受け取り、傷つき脅かされたと感じつつ、すぐ人を批判し返す）、達成者 p.43（同意しなくても、自分が丸ごと小さくされたと感じずに聞け、批判が正しくても誤っていても、その返事は自分と批判した人についての役に立つ知らせになる）。読んだ写しは、著者のサイト cook-greuter.com が公開していた PDF の、[Wayback Machine による 2021 年 10 月 28 日の保存](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)）／O'Fallon (2020) "[States and STAGES: Waking up Developmentally](https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf)", *Integral Review* 16(1)（本文照合済。段階を視点として定義する三つの問い p.18、一時的な状態と段階の区別 p.22、各段階の定義 pp.28–29）。
+出典：Cook-Greuter (2013) "[Nine Levels of Increasing Embrace in Ego Development: A Full-Spectrum Theory of Vertical Growth and Meaning Making](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)", prepublication version, revised Dec. 2013（本文照合済。頁は刷りの頁。防衛の総論（逃げる・闘う・固まる反射と心の防衛、意味づけが乱されたときの否認、脅威が大きいほど今の見方を固めること、段階が後になるほど防衛的な動きの必要が減ることは p.9。不適応や病理がどの時期にも起きうることは p.10）、自己保護 p.27、順応 p.34、専門家 pp.39–40、達成者 pp.49–50、多元 pp.53・58–59、戦略家 pp.71–72、構成への気づき pp.84–85、概念との関係が段階で違う p.10、文章完成法 p.10。読んだ写しは、著者のサイト cook-greuter.com が公開していた PDF の、[Wayback Machine による 2021 年 10 月 28 日の保存](https://web.archive.org/web/20211028144039/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf)）／O'Fallon (2020) "[States and STAGES: Waking up Developmentally](https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf)", *Integral Review* 16(1)（本文照合済。段階を視点として定義する三つの問い p.18、一時的な状態と段階の区別 p.22、各段階の定義 pp.28–29）。
 
 原典を読むなら：クック＝グロイターの論文は、Wayback Machine の保存で全文を読めます。段階と防衛の総論は、刷りの p.9 から p.10 です。
 

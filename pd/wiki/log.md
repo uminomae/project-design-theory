@@ -1103,3 +1103,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（三章の頭に、イソップの「狐と葡萄」、「北風と太陽」とミラーの面接の研究、クック＝グロイターの同じ指摘の受け取られ方を置いた・#159）
 - pages: どちらも章の頭の例までは書いていないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発（防衛がゆるむ章にロジャーズと傾聴・段階の章の頭の例を外す）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（防衛がゆるむ章に、聞く型の芯としてロジャーズの共感と積極的傾聴の段を足し、段階の章の頭の例を外した・#159）
+- pages: どちらも章の頭の例までは書いていないので本文を変えず、checked を今の時刻にした。
