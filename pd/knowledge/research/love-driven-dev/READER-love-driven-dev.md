@@ -766,7 +766,6 @@ pjdhiro は、この探究で、少なくとも「価値創造とは何か」に
 
 原典を読むなら：フロイトの論文は、日本語訳が『フロイト全集 14』（岩波書店、2010）に「無意識」の題で入っています（[CiNii Books](https://ci.nii.ac.jp/ncid/BB03371699)）。ユングの論文は、Project Gutenberg の英訳の第 5 節から読めます。のちに書き改められた版（*Über die Psychologie des Unbewussten*）の日本語訳は、『無意識の心理』（高橋義孝訳、人文書院）です（[CiNii Books](https://ci.nii.ac.jp/ncid/BB24397125)）。
 
-
 出典：第四部の頭の、Love と信頼・安心を重ねて書いてきた研究の段＝[Plutchik (2001)](https://kli.ac.at/webroot/files/file/Evolution%20%26%20Cognition/2001%207-2.pdf) "Integration, differentiation, and derivatives of emotion", *Evolution and Cognition* 7(2):114–125（本文照合済。喜びと受容の混ざりは愛 p.118、感情と性格の語 p.119。くわしくは「[信頼は、感情の中で、どこにあるのか](#ldd-emotion)」の章）／Bowlby (1958) "The nature of the child's tie to his mother", *International Journal of Psycho-Analysis* 39:350–373（本文照合済。[Stony Brook 大学の愛着研究のサイトにある組み直しの写し](https://psychology.psy.sunysb.edu/attachment/online/Bowlby_1958_childs%20tie.pdf)）／[Fisher (1998)](https://doi.org/10.1007/s12110-998-1010-5) "Lust, attraction, and attachment in mammalian reproduction", *Human Nature* 9(1):23–52（本文照合済。pp.23–24。[著者のサイトの PDF](https://helenfisher.com/downloads/articles/10lustattraction.pdf)。三つの系は本文で仮説として出されている）／[Acevedo, Aron, Fisher & Brown (2012)](https://doi.org/10.1093/scan/nsq092) "Neural correlates of long-term intense romantic love", *Social Cognitive and Affective Neuroscience* 7(2):145–159（本文照合済。[PMC の本文](https://pmc.ncbi.nlm.nih.gov/articles/PMC3277362/)。強い恋を自己申告した人だけを選んだ研究）／Fredrickson (2016) "Love: Positivity resonance as a fresh, evidence-based perspective on an age-old topic"（本文照合済。[著者の研究室のサイトにある、刊行前の原稿](https://peplab.web.unc.edu/wp-content/uploads/sites/18901/2019/06/Fredrickson2016ChapteronLoveforHandbookofEmotions.pdf)。「愛している」が指すものと、積み重ねでできる思い・絆・親しさ・約束は p.3）。ボウルビィ・フィッシャー・アセベドらの三つは、独立ページ「[Love とは、どう言われてきたか](love-history.html#愛着--ボウルビィ1958-年)」の表にも並べています。
 
 </details>
@@ -972,7 +971,6 @@ pjdhiro は、信頼という語を何に当てているかを、こう言って
 本人には信頼と感じられても、他者からはそう呼べないものがあることは、「[信頼と似た感じは、なぜ見分けにくいのか](#ldd-discern)」の章で見ました。信頼が何かは、まだ探している途中なので、このページでは一つに決めず、いくつかの面を並べていきます。
 
 <details><summary>出典</summary>
-
 
 <!--REF:心理学-->
 
@@ -2395,26 +2393,6 @@ Claude は、二つの体験を次のように読んでいます。どちらも�
 - 分析的思考とシステム思考：切り分けて明確にすることと、切り分けたものを包み込むように、いくつもの軸から見ること（この章の四つめの場面）。
 - 創造的思考：物事が生まれるときの形（「[創造は、どんな形をしているのか](#創造はどんな形をしているのか)」）。
 
-残りのうち、他者との協働の群のリーダーシップと社会的影響力と、マネジメントの群の人材管理についても、pjdhiro は、この見方が使えると見ています。
-
-<strong>pjdhiro の見方：</strong>他者との協働（Working with others）がリーダーシップと社会的影響力の一つ、マネジメントのスキル（Management skills）にも活用できると思う。
-
-ただし、どんな仕事にも要るわけではない、とも pjdhiro は見ています。何も考えずに、剥き出しの支配欲で動いても利益が出るビジネスはあり、この見方を知らなくてもうまくいく領域があります。この見方が活きるのは、手元のやり方が前提にしている状況と、目の前の状況がずれているときです。第一部の章「[経営学は、何を駆動源と見てきたか](#ldd-management)」の表のように、どの考え方にも効く状況があります。決まった顧客に決まったものを届ける仕事では、今のやり方がそのまま効きやすく、相手が広く、何を求めているかが読みにくい仕事では、ずれが起きやすい、と pjdhiro は見ています。
-
-この見方の位置を、よく知られた言葉で示すと、近くにあるのはティール組織の議論です（Claude の読み）。ティール組織を名付けたラルーは、組織の形を段階として並べ、その先にあるティールの指導者を、環境をコントロールしたいといった自分の欲を疑い、恐れを退けて決める人として描きました。同じ記事で、ラルーは、前の段階の組織の形も、今もすべて並んで存在する、と書いています。
-
-<details><summary>詳しく — ティール組織は、組織の形をどう並べたか</summary>
-
-ラルーは、2015 年の記事で、組織の形を五つの色で並べています。色は、哲学者ウィルバーの色の呼び方を借りたものです。赤は、命令する権威で動き、長は恐れを与え続けて下の者を従わせる組織です。琥珀は、決まった役割と階層、繰り返せる手順で動く組織です。オレンジは、目標を与え、自由と報酬で人を動かす組織で、たとえは機械です。緑は、協力と平等を重んじ、文化と価値に投資する組織で、たとえは家族です。ティールは、その先の段階で、自主経営（self-management）、全体性（wholeness）、進化する目的（evolutionary purpose）を、新しい突破として挙げています。
-
-ティール組織が近いと読んだのは、この読み物も、コントロールしきれないものの中で進む開発を見ていて、恐れからの守りをゆるめることを修行の側に置いているからです。違うところもあります。ラルーは組織の形を段階で並べますが、この読み物は、一人の心が生存と信頼の信号で世界を切り取るところから見ています。
-
-<!--REF:組織論-->
-
-出典：Laloux, F. (2015) "[The future of management is teal](https://www.strategy-business.com/article/00344)", *strategy+business*, 2015 年 7 月 6 日（同誌 2015 年秋号に載った記事の版。記事のページで本文照合済。五つの色と、色はウィルバーから借りたこと・ティールの指導者の描き方・すべての形が今も並んで存在すること・三つの突破）
-
-</details>
-
 <details><summary>詳しく — 報告は、スキルをどう分け、どう選んだか</summary>
 
 報告は、雇用主への調査（Future of Jobs Survey 2024）で、26 のスキルについて二つのことを聞いています。一つは、2025 年にそのスキルを中核と考えるか。もう一つは、2030 年までにそのスキルの使われ方が増えると見込むか。図 3.6「Core skills in 2030」は、横軸に前者の割合、縦軸に後者の割合をとり、両方が中央値より高い右上の区画を「2030 年の中核スキル」と呼んでいます。上の十は、その区画として本文が挙げたものです。日本語の名前は Claude の訳で、英語の名前は次のとおりです。AI and big data、analytical thinking、creative thinking、resilience, flexibility and agility、technological literacy、leadership and social influence、curiosity and lifelong learning、systems thinking、talent management、motivation and self-awareness。
@@ -2426,6 +2404,26 @@ Claude は、二つの体験を次のように読んでいます。どちらも�
 <!--REF:仕事とスキルの調査-->
 
 出典：World Economic Forum (2025) [*The Future of Jobs Report 2025*](https://www.weforum.org/publications/the-future-of-jobs-report-2025/)（[報告の PDF](https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf) で本文照合済。2025 年の中核スキルの割合 図 3.3・p.35、2030 年の中核スキルの本文 p.40、図 3.6 p.41、スキルの群 表 A2・p.101）
+
+</details>
+
+残りのうち、他者との協働の群のリーダーシップと社会的影響力と、マネジメントの群の人材管理についても、pjdhiro は、この見方が使えると見ています。
+
+<strong>pjdhiro の見方：</strong>他者との協働（Working with others）がリーダーシップと社会的影響力の一つ、マネジメントのスキル（Management skills）にも活用できると思う。
+
+ただし、どんな仕事にも要るわけではない、とも pjdhiro は見ています。何も考えずに、剥き出しの支配欲で動いても利益が出るビジネスはあり、この見方を知らなくてもうまくいく領域があります。この見方が活きるのは、手元のやり方が前提にしている状況と、目の前の状況がずれているときです。第一部の章「[経営学は、何を駆動源と見てきたか](#ldd-management)」の表のように、どの考え方にも効く状況があります。決まった顧客に決まったものを届ける仕事では、今のやり方がそのまま効きやすく、相手が広く、何を求めているかが読みにくい仕事では、ずれが起きやすい、と pjdhiro は見ています。
+
+この見方の位置を、よく知られた言葉で示すと、近くにあるのはティール組織の議論です（Claude の読み）。フレデリック・ラルーは、2015 年の記事で、組織の形を段階として並べ、その先にあるティールの指導者を、環境をコントロールしたいといった自分の欲を疑い、恐れを退けて決める人として描きました。同じ記事で、ラルーは、前の段階の組織の形も、今もすべて並んで存在する、と書いています。
+
+<details><summary>詳しく — ティール組織は、組織の形をどう並べたか</summary>
+
+ラルーは、2015 年の記事で、組織の形を五つの色で並べています。色は、哲学者ウィルバーの色の呼び方を借りたものです。赤は、命令する権威で動き、長は恐れを与え続けて下の者を従わせる組織です。琥珀は、決まった役割と階層、繰り返せる手順で動く組織です。オレンジは、目標を与え、自由と報酬で人を動かす組織で、たとえは機械です。緑は、協力と平等を重んじ、文化と価値に投資する組織で、たとえは家族です。ティールは、その先の段階で、自主経営（self-management）、全体性（wholeness）、進化する目的（evolutionary purpose）を、新しい突破として挙げています。
+
+ティール組織が近いと読んだのは、この読み物も、コントロールしきれないものの中で進む開発を見ていて、恐れからの守りをゆるめることを修行の側に置いているからです。違うところもあります。ラルーは組織の形を段階で並べますが、この読み物は、一人の心が生存と信頼の信号で世界を切り取るところから見ています。
+
+<!--REF:組織論-->
+
+出典：Laloux, F. (2015) "[The future of management is teal](https://www.strategy-business.com/article/00344)", *strategy+business*, 2015 年 7 月 6 日（同誌 2015 年秋号に載った記事の版。記事のページで本文照合済。五つの色と、色はウィルバーから借りたこと・ティールの指導者の描き方・すべての形が今も並んで存在すること・三つの突破）
 
 </details>
 
