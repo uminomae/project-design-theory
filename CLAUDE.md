@@ -16,7 +16,7 @@
 
 公開は `.github/workflows/pages.yml`。`pd/` はサイトのファイルと wiki だけを根に、`as/`・`ks/`・`cs/` はディレクトリごと `/as/` などに出す。
 
-原典の PDF（`cs/knowledge/raw/`・`as/knowledge/raw/`・`cs/evidence/**/*.pdf`。台帳の `manifest.md` だけは入れる）と、サイトで使わない素材（`cs/resources/`）は git に入れず、手元だけに置く。大きくなりそうなものは、入れる前に `.gitignore` を考える。
+原典の PDF（`cs/knowledge/raw/`・`as/knowledge/raw/`・`pd/knowledge/raw/`・`cs/evidence/**/*.pdf`。台帳の `manifest.md` だけは入れる）と、サイトで使わない素材（`cs/resources/`）は git に入れず、手元だけに置く。大きくなりそうなものは、入れる前に `.gitignore` を考える。
 
 ## 絶対原則
 

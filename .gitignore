@@ -29,6 +29,9 @@ cs/evidence/**/*.pdf
 as/knowledge/raw/*
 !as/knowledge/raw/manifest.md
 as/evidence/**/*.pdf
+# pd（プロジェクトデザイン論・Love駆動開発ほか）の原典も同じ。台帳だけを公開する（pjdhiro 2026-11-16）
+pd/knowledge/raw/*
+!pd/knowledge/raw/manifest.md
 cs/resources/
 
 # pjdhiro と Claude の対話の記録（手元の足場。公開しない。pjdhiro 2026-11-08）
