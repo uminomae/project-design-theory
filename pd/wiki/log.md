@@ -952,3 +952,8 @@ compile 実行の履歴。append-only。
 - scope: 1 ページ（`concepts/Love 駆動開発` の一段を直した）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第六部の頭の章を「開発の言葉を、この見方で、どう確かめるか」にし、問い「で、それってなんの役に立つの？」と使い道を第七部の章「この見方は、何の役に立ち、どんな場面で役立つか」へ移した）、`pd/scripts/reader-love-driven-dev-template.html`（冒頭の役立つこと・今の答え）
 - pages: Love 駆動開発の冒頭の段を、使い道と、問いを立てるスキル・判断するスキルの二つに直し、第六部と第七部の置き場を一文で添えた。compiled が今日なので checked を今の時刻にした。
+
+## [2026-11-16] compile | Love 駆動開発（第七部の役立つ章に、2030 年の中核スキルとの重なりを足した版）
+- scope: 1 ページ（`concepts/Love 駆動開発` の使い方の節に一段）・1 ページ確かめ（`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「この見方は、何の役に立ち、どんな場面で役立つか」の終わりに、世界経済フォーラム『仕事の未来レポート2025』の 2030 年の中核スキル十と、話題が重なる章六つを Claude の読みとして足した・#150）
+- pages: Love 駆動開発の使い方の節に、十のスキルと pjdhiro の言葉と、重なる六つを一段で足し、checked を今の時刻にした。プロジェクトデザインは、足した段がサイトの説明に関わらないので本文を変えず compiled を今日にした。
