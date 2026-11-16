@@ -1870,6 +1870,28 @@ Love駆動開発の名前は、何度も遭遇した出来事に、あとから�
 
 </details>
 
+<details><summary>詳しく — ウィルバーの統合理論と、開発のプロセス</summary>
+
+この読み物を読んで、pjdhiro は、哲学者ウィルバーの統合理論を挙げました。
+
+<a id="ldd-wilber"></a><strong>pjdhiro の見方：</strong>ウィルバーの統合理論も近いと思っています。開発のプロセスが。駆動源は覚えてません
+
+ウィルバーは、1997 年の論文で、意識とその発達を四つの面から見ました。一人の内側（意図）、一人の外側（行動）、集まりの内側（文化）、集まりの外側（社会）です。どの面も、十余りの段階で展開する、とウィルバーは書いています。そして、内側の意識は、前の段階を含んだうえで超える、という過程を続けていける、と書きました。
+
+のちに著者のサイトに出した、本の抜粋では、同じ見方を瞬間ごとに書いています。前の瞬間の全体は、今の瞬間に、与えられたものとして手渡されます。それは、今の瞬間が気づくより先にあります。けれど、与えられたままではいません。今の瞬間がそれを取り上げ、含んで超え、作り直します。
+
+近く見えるところは二つあります。一つは、この章の「無意識的に先に置かれてしまっていることがある」という pjdhiro の見方と、前の瞬間が気づく前に与えられている、というところです。もう一つは、一人と集まりの内と外が同時に展開する、というところで、この章の表の「誰が」（一人でも、人の集まりでも、社会でも）と重なります。
+
+ウィルバーは、駆動源に当たるものも書いています。抜粋では、その名を Eros と置き、深さ・複雑さ・意識・気づかいが増す方への「傾き」や「引き」と言い換えています。上へ届く Eros と並べて、前のものを包んで下へ届く Agape も書いています。傾きや引きという言い方は、この読み物の重力のたとえ（[Love は、重力に似ていないか](#ldd-well)）と、たとえの向きが近く見えます。Eros と Agape の並びは、[パースのアガパズム](#ldd-agapasm)の章とも隣り合います。
+
+違って見えるところもあります。ウィルバーは、Eros に、深さが増す方への向きを持たせ、すべての面と段階を一つの枠に並べます。この章の開発は、ハズレを前提に探し、戻ることも含み、向きを一つに置きません。近い・違って見える、の見立ては Claude の読みです。
+
+<!--REF:心理学-->
+
+出典：Wilber, K. (1997) "An Integral Theory of Consciousness", *Journal of Consciousness Studies* 4(1):71–92（雑誌の出版社 Imprint Academic のサイトにあった全文の [Wayback Machine の記録](https://web.archive.org/web/2004/http://www.imprint.co.uk/Wilber.htm)で本文照合済。四つの面と段階は要旨、含んで超える過程は節「The Further Reaches of Human Nature」）／Wilber, K. Kosmos 三部作 第二巻の抜粋 A "An Integral Age at the Leading Edge"・抜粋 B "The Many Ways We Touch"（出版社 Shambhala の著者のサイト「Ken Wilber Online」に著者が出した抜粋の Wayback Machine の記録で本文照合済。前の瞬間が与えられ作り直されるところは[抜粋 A 第四部](https://web.archive.org/web/2006/http://wilber.shambhala.com/html/books/kosmos/excerptA/part4-1.cfm)、Eros の傾きは[抜粋 A 第二部](https://web.archive.org/web/2006/http://wilber.shambhala.com/html/books/kosmos/excerptA/part2.cfm)、引きは[抜粋 A 第三部](https://web.archive.org/web/2006/http://wilber.shambhala.com/html/books/kosmos/excerptA/part3-2.cfm)、Eros と Agape は[抜粋 B 第二部](https://web.archive.org/web/2006/http://wilber.shambhala.com/html/books/kosmos/excerptB/part2.cfm)）。
+
+</details>
+
 ## 開発の言葉を、この見方で、どう確かめるか
 
 <!--OPEN-->

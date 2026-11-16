@@ -1113,3 +1113,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「信頼は、感情の中で、どこにあるのか」の畳み「闘争と逃避、信頼と嫌悪のスイッチ」に、プルチックの輪に二つのスイッチを重ねた pjdhiro の仮説の図と、図の悪と弱・ゆるしと救いについての pjdhiro の言葉を足した）
 - pages: どちらも畳みの図までは書いていないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発（開発とは、何を指すか の章に、ウィルバーの統合理論の畳み）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「開発とは、何を指すか」の終わりに、畳み「詳しく — ウィルバーの統合理論と、開発のプロセス」を足した。pjdhiro の見方のカード、JCS 1997 と著者のサイトの抜粋で照らした開発の過程と Eros・Agape、近い・違って見えるところの Claude の読み）
+- pages: どちらも畳みの中身までは書いていないので本文を変えず、checked を今の時刻にした。
