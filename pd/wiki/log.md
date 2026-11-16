@@ -1012,3 +1012,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（創造の章のファインマンの例に、視点の違いが仮説の幅を保つ・流行の外の見方の興奮の段を足した・#155）
 - pages: どちらも、足したのは例の中身で、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-16] check | Love 駆動開発・プロジェクトデザイン（ディランの例の足し）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（創造の章のディランの例に、その日の流れに乗せた段と、本人の原則と感受性の段を足した・#155）
+- pages: どちらも、足したのは例の中身で、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
