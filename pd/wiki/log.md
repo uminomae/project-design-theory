@@ -987,3 +987,8 @@ compile 実行の履歴。append-only。
 - scope: 1 ページ（`concepts/Love 駆動開発` の使い方の節の一段）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（#ldd-skills2030 の pjdhiro の見方のカードを外した・#150）
 - pages: 引用を外し、使えると見ていることと、どんな仕事にも要るわけではないことを地の文にした。
+
+## [2026-11-16] check | Love 駆動開発・プロジェクトデザイン（第二部の重力の章の例の差し替え）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（重力の章の頭の体験を、片思いの例から禁じられた恋の例に替えた・#155）
+- pages: どちらも、替えたのは例だけで、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
