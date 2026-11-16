@@ -788,6 +788,12 @@ pjdhiro は、人の心について、こう見ています。
 
 フロイトの言う抑圧されたものは、意識に上がることを退けられたもので、このページは、認知したくないものの側に重なると読みます。体の理由で認知できないものは、フロイトがこの論文で扱った心の働きとは別の側にあります。
 
+意識に上らずに動いている側に、人は暮らしの中で触れることがあるのでしょうか。pjdhiro は、夢について、こう話しています。
+
+<a id="ldd-dream"></a><strong>pjdhiro の体験：</strong>私は睡眠夢について思い返すことを習慣にしています。目覚めの時に。日記をつける意義のような効果があるように感じますが、一番は、自分がコントロールできないものが明らかにあることを受容しやすい。私が思う私は狭い。と。
+
+フロイトは 1900 年の『夢解釈』で、自分自身の夢を主な材料にし、自己分析で読み解いています。本の中で最初に読み解いた夢について、フロイトは、読み解くうちに夢の意味が見えてきたと書き、夢の中身は願望の充足で、その動機は願望だった、とまとめました。ユングは、1914 年に準備した講演で、夢を、意識の流れの外から、たまたま起きたように見えるものとして書き出しています。そのうえで、ふだんの意識ではあまり認められない考えや傾向が、眠っているあいだにおのずから動き出すところに、無意識が意識を補う働きを見ました。夢を頭で理解しなくても、人はそれから影響を受けることがある、ともユングは書いています。
+
 <details><summary>出典</summary>
 
 <!--REF:心理学-->
@@ -795,6 +801,10 @@ pjdhiro は、人の心について、こう見ています。
 出典：Freud (1915) "Das Unbewußte", *Internationale Zeitschrift für ärztliche Psychoanalyse* [3(4):189–203](https://archive.org/details/z319154)・[3(5):257–269](https://archive.org/details/z319155)（本文照合済。独語の原文を読んだ。抑圧と無意識の範囲は p.189、無意識を置く理由と思い上がりの語は pp.189–190、推し量りを自分に向けることは p.192、カントの戒めと「見えているとおりにできているとは限らない」は p.193、潜在と抑圧・前意識・検閲は pp.193–194。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/z319154)の誌面。パブリックドメイン）／Jung (1917) *Die Psychologie der unbewußten Prozesse*、英訳 Hecht "The Psychology of the Unconscious Processes"、Long (ed.) *Collected Papers on Analytical Psychology*, 2nd ed. (1920) 第 14 章（本文照合済（訳）。Hecht の英訳で読んだ。第 5 節「The Personal and the Impersonal Unconscious」pp.408–416。空想が伝説の主題と同じ形で現れることと原初の像は p.410、神々と悪魔は p.411。写しは [Project Gutenberg #48225](https://www.gutenberg.org/ebooks/48225)。パブリックドメイン）。
 
 原典を読むなら：フロイトの論文は、日本語訳が『フロイト全集 14』（岩波書店、2010）に「無意識」の題で入っています（[CiNii Books](https://ci.nii.ac.jp/ncid/BB03371699)）。ユングの論文は、Project Gutenberg の英訳の第 5 節から読めます。のちに書き改められた版（*Über die Psychologie des Unbewussten*）の日本語訳は、『無意識の心理』（高橋義孝訳、人文書院）です（[CiNii Books](https://ci.nii.ac.jp/ncid/BB24397125)）。
+
+出典：章の終わりの夢の段＝Freud (1900) [*Die Traumdeutung*](https://archive.org/details/Freud_1900_Die_Traumdeutung_k), Leipzig und Wien: Franz Deuticke（本文照合済。独語の初版を読んだ。自分の夢を材料にすることと自己分析は第 2 章 p.71、最初の夢の意味が見えてきたことと、中身は願望の充足・動機は願望は p.82。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/Freud_1900_Die_Traumdeutung_k)）／Jung "The Psychology of Dreams"（Dora Hecht 訳。1914 年のベルンの医学会のために準備され、戦争で会が延びた講演）, *Collected Papers on Analytical Psychology*, 2nd ed., London: Baillière, Tindall and Cox, 1920, 第 12 章 pp.299–311（本文照合済（訳）。たまたま起きたように見えることは p.299、無意識の補う働きと、頭で理解しなくても影響を受けることは p.307。写しは [Internet Archive の Universal Library の版](https://archive.org/details/CollectedPapersOnAnalyticalPsychology)）。
+
+原典を読むなら：『夢解釈』の初版の日本語訳は、『夢解釈　初版』上・下（金関猛訳、中央公論新社、2012）です（[CiNii Books](https://ci.nii.ac.jp/ncid/BB09485996)）。
 
 出典：章の頭のストッキングの調査＝[Nisbett & Wilson (1977)](https://doi.org/10.1037/0033-295X.84.3.231) "Telling more than we can know: Verbal reports on mental processes", *Psychological Review* 84(3):231–259（本文照合済。節「Erroneous Reports about Position Effects on Appraisal and Choice」pp.243–244。店先での消費者調査の名目・同じ四足のストッキングと 52 人・右の端がおよそ四倍・置き場所を挙げた人がいないこと・直接聞かれてほとんどが否んだこと。読んだ写しは、[プリンストン大学の研究者のサイトにある誌面の走査](https://web.math.princeton.edu/~sswang/literature_general_unsorted/Nisbett-Wilson-PsychologicalReview1977.pdf)）。
 
