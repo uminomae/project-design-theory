@@ -2579,11 +2579,11 @@ Bryan Van Norden, "Wang Yangming", *Stanford Encyclopedia of Philosophy*, 2014�
 
 <details><summary>読書ガイド：この章から先を、原典で読むなら</summary>
 
-この章で照らした原典のうち、無料で読める写しがあるものを並べました。どこから読むかは Claude の案です。
+この章で照らした原典のうち、無料で読める写しがあるものを並べました。どこから読むかは Claude の案です。日本語訳は、書誌を国立国会図書館サーチで確かめたものです。
 
 <div class="tablefit">
 
-| 流れ | 読むもの | どこから | 無料で読める写し | 日本語訳（書誌を国立国会図書館サーチで確かめたもの） |
+| 流れ | 読むもの | どこから | 無料で読める写し | 日本語訳 |
 |---|---|---|---|---|
 | プラグマティズム | パース「概念を明晰にする方法」（1878） | 全文 | [Cohen 編『Chance, Love, and Logic』（Internet Archive）](https://archive.org/details/chanceloveandlog00peiruoft)（英語） | — |
 | プラグマティズム | ジェームズ『プラグマティズム』（1907） | 第二講・第六講 | [Project Gutenberg](https://www.gutenberg.org/ebooks/5116)（英語） | — |
