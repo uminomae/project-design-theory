@@ -1108,3 +1108,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（防衛がゆるむ章に、聞く型の芯としてロジャーズの共感と積極的傾聴の段を足し、段階の章の頭の例を外した・#159）
 - pages: どちらも章の頭の例までは書いていないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発（信頼の感情の章の畳みに、二つのスイッチの仮説の図と、悪と弱・ゆるしと救いの pjdhiro の言葉）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「信頼は、感情の中で、どこにあるのか」の畳み「闘争と逃避、信頼と嫌悪のスイッチ」に、プルチックの輪に二つのスイッチを重ねた pjdhiro の仮説の図と、図の悪と弱・ゆるしと救いについての pjdhiro の言葉を足した）
+- pages: どちらも畳みの図までは書いていないので本文を変えず、checked を今の時刻にした。
