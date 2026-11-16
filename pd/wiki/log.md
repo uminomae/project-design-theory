@@ -967,3 +967,8 @@ compile 実行の履歴。append-only。
 - scope: 1 ページ（`concepts/Love 駆動開発` の使い方の節の一段）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（#ldd-skills2030 に pjdhiro の見方のカード・#150）
 - pages: 同じ段に、カードの言葉をそのまま一文で足し、checked を今の時刻にした。
+
+## [2026-11-16] check | Love 駆動開発・プロジェクトデザイン（第二部の推しやすさの直し）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第二部の三章の頭に、身近な例と今の像の一文を足し、創造の章の例の並びを恋愛から始め、渦は自分で回っていないの一段を本文に上げ、重力の章に片思いの体験と、井戸の底から中心が見えないことと、たとえが当てはまらないところを本文に置き、熱いという感じの畳みを物理の章の頭へ移した・#155）
+- pages: どちらも、足したのは例と並びで、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
