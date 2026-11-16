@@ -1058,3 +1058,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第三部の体の章と欠けの章の例を替え、今の像の書き出しを直した・#155）
 - pages: どちらも、替えたのは例と書き出しで、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] update | Love 駆動開発（ティール組織の段をラルーの本で照らし直した）
+- scope: 1 ページ（`concepts/Love 駆動開発`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第七部の終わりのティール組織の段を、Laloux 2014 の本の頁で書き直し、本自身の限界と Wyrzykowska 2019 を畳みに置いた・#158）
+- pages: 2030 年の中核スキルの段の終わりの、ティール組織の一文を、本の段（より複雑・合う状況・エゴから距離・恐れと欠乏／信頼と豊かさ）と限界に直した。compiled を 2026-11-17 に。
