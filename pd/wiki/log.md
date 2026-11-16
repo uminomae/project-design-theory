@@ -1027,3 +1027,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（創造の章のノーベル賞の例を、カーネマン・マーシャル・ボルン・ファインマンの四つにし、それぞれ五段階に当てた・#155）
 - pages: どちらも、替えたのは例で、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-16] check | Love 駆動開発・プロジェクトデザイン（創造の章の冒頭を一つの例に）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（創造の章の冒頭の例をマーシャル一つに絞り、ほかの三つを畳みへ移した・#155）
+- pages: どちらも、替えたのは例とその置き場で、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
