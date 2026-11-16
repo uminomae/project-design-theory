@@ -1625,9 +1625,9 @@ pjdhiro は、重力、海と波と渦、粒でできた場、臍の緒、ワー
 
 <!--OPEN-->
 
-自分で考えてきたことが、読んだことのない人の論とよく似ていることがあります。それは、何を意味するのでしょうか。
+読んだことのない人の論が、自分の考えてきたこととよく似ていたら、その似かたは、どこから来るのでしょうか。
 
-たとえば、新しい考えは、先人の本を読み、その上に積み上げて生まれる、とよく言われます。けれど、ダーウィンとウォレスは、互いの考えを知らないまま、同じ自然選択の説にたどり着いていました。ダーウィンは 1839 年に下書きした草稿を、まだ世に出していませんでした。ウォレスは 1858 年の 2 月に、東南アジアのテルナテ島で論文を書き、それをダーウィンに送りました。二人の論文は、その年の 7 月にロンドンのリンネ学会で一緒に読まれ、取り次いだライエルとフッカーは、二人が互いに知らないまま、独立に同じ説を考えついた、と書いています。同じ考えは、本から本へ受け渡されるだけでなく、別々の場所で、別々に湧いてくることがあります。
+たとえば、考えが似ているのは、どちらかがどちらかを読んで、影響を受けたからだ、とよく言われます。けれど、同じ師についたことも、互いの店を訪ねたこともない二人の料理人が、だしの取り方で同じ一手にたどり着いていることがあります。話してみると、二人とも、味見のたびに、料理の味だけでなく、その日の自分の舌の具合まで細かく確かめる癖を持っていました。似ていたのは、受け渡された知識ではなく、自分を観る観かたのほうでした。
 
 <a id="ldd-agapasm"></a>哲学者のパースは、1893 年の論文「進化的な愛（Evolutionary Love）」で、進化の様式を三つに分けました。偶然の変異による進化、機械的な必然による進化、そして、創造的な愛による進化（agapasm・アガパズム）です。パースは前の二つを、アガパズムの退化した形と位置づけ、愛の運動は円く、同じ一つの衝動で、作ったものを独立へ押し出し、調和へ引き寄せる、と書いています。
 
@@ -1654,8 +1654,6 @@ pjdhiro は、重力、海と波と渦、粒でできた場、臍の緒、ワー
 <details><summary>出典</summary>
 
 C. S. Peirce, "Evolutionary Love", *The Monist* 3(2), 1893, pp.176–200。進化の三つの様式（tychasm・anancasm・agapasm）と、前の二つを agapasm の退化した形とする文、愛の運動は円いという文を、[The Monist 第 3 巻第 2 号の原誌（Internet Archive）](https://archive.org/details/sim_monist_1893-01_3_2)と、再録の [Cohen 編『Chance, Love, and Logic』（1923・パブリックドメイン）](https://archive.org/details/chanceloveandlog00peiruoft)で本文と照らしました。直接の努力・持つ前の引き寄せ・憎しみを反対物に持たない愛の箇所と頁は、独立ページ「[パースの創造的な愛と、アブダクション](peirce-love-abduction.html#pa-love)」に置いています。
-
-[C. Darwin & A. R. Wallace (1858)](https://doi.org/10.1111/j.1096-3642.1858.tb02500.x) "On the Tendency of Species to form Varieties; and on the Perpetuation of Varieties and Species by Natural Means of Selection", *Journal of the Proceedings of the Linnean Society of London. Zoology* 3, 1858, pp.45–62。1858 年 7 月 1 日に読まれた。ライエルとフッカーの前書き（6 月 30 日付）の、二人が「independently and unknown to one another」同じ説を考えたという文（p.45）、ダーウィンの草稿が 1839 年に下書きされ 1844 年に写されたという文（p.45）、ウォレスの論文が 1858 年 2 月にテルナテで書かれダーウィンに送られたという文（p.46）を、[Darwin Online の本文](https://darwin-online.org.uk/content/frameset?itemID=F350&viewtype=text&pageseq=1)で照らしました。
 
 </details>
 
