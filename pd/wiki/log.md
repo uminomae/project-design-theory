@@ -1103,3 +1103,28 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（三章の頭に、イソップの「狐と葡萄」、「北風と太陽」とミラーの面接の研究、クック＝グロイターの同じ指摘の受け取られ方を置いた・#159）
 - pages: どちらも章の頭の例までは書いていないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発（防衛がゆるむ章にロジャーズと傾聴・段階の章の頭の例を外す）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（防衛がゆるむ章に、聞く型の芯としてロジャーズの共感と積極的傾聴の段を足し、段階の章の頭の例を外した・#159）
+- pages: どちらも章の頭の例までは書いていないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発（信頼の感情の章の畳みに、二つのスイッチの仮説の図と、悪と弱・ゆるしと救いの pjdhiro の言葉）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「信頼は、感情の中で、どこにあるのか」の畳み「闘争と逃避、信頼と嫌悪のスイッチ」に、プルチックの輪に二つのスイッチを重ねた pjdhiro の仮説の図と、図の悪と弱・ゆるしと救いについての pjdhiro の言葉を足した）
+- pages: どちらも畳みの図までは書いていないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発（開発とは、何を指すか の章に、ウィルバーの統合理論の畳み）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「開発とは、何を指すか」の終わりに、畳み「詳しく — ウィルバーの統合理論と、開発のプロセス」を足した。pjdhiro の見方のカード、JCS 1997 と著者のサイトの抜粋で照らした開発の過程と Eros・Agape、近い・違って見えるところの Claude の読み）
+- pages: どちらも畳みの中身までは書いていないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] update | Love 駆動開発（防衛がゆるむ章のカードに子育てと教育の一文）
+- scope: 1 ページ直し（`concepts/Love 駆動開発`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（分離と包摂のカードに、pjdhiro の「子育てや教育に関するバランスは、このことを言っていると感じることが多い」を足した・#159）
+- pages: 同じカードを引く段に、同じ一文を足した。
+
+## [2026-11-17] check | Love 駆動開発（ウィルバーの畳みに、Eros と Agape についての pjdhiro の見方のカード）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（畳み「詳しく — ウィルバーの統合理論と、開発のプロセス」に、求める感じと包む感じの両方を Love と呼びたいものとして扱う、という pjdhiro の見方のカードと、答えの段を足した）
+- pages: どちらも畳みの中身までは書いていないので本文を変えず、checked を今の時刻にした。
