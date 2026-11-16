@@ -24,7 +24,7 @@
 | 西田幾多郎 (1911).『善の研究』弘道館（底本は岩波文庫 1950・1979 改版。親本は岩波書店 1937 改版） | 序（版を新にするに当って）・第一編 第一章「純粋経験」・第二章「思惟」・第二編 第三章「実在の真景」・第五章「真実在の根本的方式」・第六章「唯一実在」・第四編 第五章「知と愛」 | 本文照合済 | 青空文庫（著作権の切れた本文）https://www.aozora.gr.jp/cards/000182/card946.html 。底本の頁は無い版なので、編と章で控えた |
 | James, W. (1907). *Pragmatism: A New Name for Some Old Ways of Thinking*. Longmans, Green | 第二講「What Pragmatism Means」（方法・パースの名指し・向きの構え）・第六講「Pragmatism's Conception of Truth」 | 本文照合済 | Project Gutenberg #5116（パブリックドメイン）https://www.gutenberg.org/ebooks/5116 |
 | Peirce, C. S. (1877). The Fixation of Belief. *Popular Science Monthly* 12。再録：Cohen 編『Chance, Love, and Logic』（1923）pp.7–31 | 疑いの苛立ちと探究・探究の目的は意見の定着 | 本文照合済（1923 年の再録） | Internet Archive の走査（`chanceloveandlog00peiruoft`・トロント大学の蔵書・パブリックドメイン）。pp.16。パースの記録（`pd/knowledge/research/peirce-love-abduction/`）と同じ本 |
-| Peirce, C. S. (1878). How to Make Our Ideas Clear. *Popular Science Monthly* 12。再録：同書 pp.32–60 | 信念は行為の規則・習慣／プラグマティズムの格率／真理と実在 | 本文照合済（同上） | 同上。pp.41・45・57 |
+| Peirce, C. S. (1878). How to Make Our Ideas Clear. *Popular Science Monthly* 12。再録：同書 pp.32–60 | 信念は行為の規則・習慣／プラグマティズムの格率／真理と実在 | 本文照合済（同上） | 同上。pp.41・45・57–59 |
 | Dewey, J. (1910). *How We Think*. D. C. Heath | 第 1 章（戸惑いが考えることを導く）・第 6 章（考えることの五つの段） | 本文照合済 | Project Gutenberg #37423（パブリックドメイン）https://www.gutenberg.org/ebooks/37423 。第 1 章は Love駆動開発の思考のコラムですでに引いている |
 | Maraldo, J. C. (2005, 2024 改訂). Nishida Kitarō. *Stanford Encyclopedia of Philosophy* | 西田の純粋経験はジェームズ・マッハの影響を示しつつ、個に分かれる前の性格と切れ目の無い発展で違う、という研究の見取り | 本文照合済（事典の項） | https://plato.stanford.edu/entries/nishida-kitaro/ （§2.1） |
 | 新井潤 (2024).「純粋経験の分岐点 — ジェイムズと西田の比較における経験の事実」『西田哲学会年報』21, 83–99 | 二人の違いについての従来の見方と、それへの批判 | 本文照合済 | J-STAGE（学会の公開版）https://www.jstage.jst.go.jp/article/jnpa/21/0/21_83/_article/-char/ja 。序論 pp.83–84・結論 pp.97–98 |
@@ -32,6 +32,7 @@
 | Krueger, J. W. (2006). The Varieties of Pure Experience: William James and Kitaro Nishida on Consciousness and Embodiment. *William James Studies* 1 | 二人の身体の自己の近さ・純粋経験が実践で到れるものか、限界の概念か・西田の愛と善・二元論と唯物論のあいだの道 | 本文照合済（誌のサイトの頁。段落の番号で控えた） | Wayback の記録（元は誌のサイト williamjamesstudies.org。写しの日 2022-08-14）https://web.archive.org/web/20220814115853/https://williamjamesstudies.org/the-varieties-of-pure-experience-william-james-and-kitaro-nishida-on-consciousness-and-embodiment/ 。同じ頁を 2015-11-11 に印刷した PDF が PhilPapers に置かれていて（Wayback の記録 2024-01-20）、それで全文を読み、誌のサイトの頁と鍵の文を突き合わせた。年 2006 は OpenAlex（W2288414371）で、頁には巻だけが出る |
 | Stone, R. & Altobrando, A. (2023). Pure experience revisited: A critical reassessment of Nishida Kitaro's radicalization of William James' empiricism. *The Philosophical Forum* 54(1-2), 43–60. doi:10.1111/phil.12333 | 従来の比較の二つの見方（表面の似かよいだけ／ジェームズを推し進めた）・西田の純粋経験の二つの描き方・究極の統一と善への批判 | 本文照合済（著者稿・投稿時の版。頁は著者稿の頁） | Wayback の記録（元はパドヴァ大学の機関リポジトリ。写しの日 2025-10-20）https://web.archive.org/web/20251020183453/https://www.research.unipd.it/bitstream/11577/3472000/3/Pure_Experience_in_Nishida_and_James_Revisited_preprint.pdf 。表紙に「引くときは最終版を」とある。書誌は Crossref |
 | Peirce, C. S. (1905). What Pragmatism Is. *The Monist* 15(2), 161–181 | プラグマティズムの定義の言い直し・「プラグマティシズム」への改名・信念は習慣で疑いは習慣の欠け・行うことを全てとしない | 本文照合済 | Internet Archive（JSTOR の Early Journal Content。1923 年より前の誌面で、JSTOR が誰でも読めるように出したもの）https://archive.org/details/jstor-27899577 。OCR の文字で読んだ |
+| Peirce, C. S. (1905). Issues of Pragmaticism. *The Monist* 15(4), 481–499 | 1878 のダイヤモンドの例の改め・実在の定義・スコラの実在論と実在の可能性・孤立した事実は無い | 本文照合済 | Internet Archive（JSTOR の Early Journal Content）https://archive.org/details/jstor-27899620 。OCR の文字で読んだ。pp.492–496 |
 
 読めなかったもの（公開文には載せない。`docs/rules/sources.md` §3-3）：
 
@@ -125,6 +126,18 @@
 - 行うことを全てにしない：プラグマティシズムが「Doing」を生の全てにするなら、それはその死だ、と自分で認める（p.175）。
 - 定められた意見：倫理の理に導かれた行いが、偶然によらないある習慣（喧嘩でなく穏やかな習慣）へ向かうように、理に適った実験の論理に導かれた考えは、定められた意見の定着へ向かう。何世代かの考えの歪みが最後の定着を遅らせても（p.177）。
 
+### パースの真理と実在のニュアンス（2026-11-16 に足した。pjdhiro「パースが言ってることはニュアンスまで調べないとまずいと思う」）
+
+1905 の「剃り落とす」の一文だけを読むと、認知できないものを退ける論に見える。前後と 1878・1905 の続編まで読むと、そうではない。
+
+- 剃り落とす相手：1905 の該当の段は、紙に「疑う」と書くだけの見せかけの疑い（「Mr. Make Believe」）への答え。そこで退けるのは、疑いと信念と経験の流れのどれとも関わらない形で定義した「形而上学の真理」。同じ文の中で、真理を「信念が限りなく確定へ向かうとしたら、向かう先の信念」と定義するのなら「well and good」と書く（1905・pp.167–168）。つまり、真理の定義の仕方の話で、まだ知られていないものがあるかの話ではない。
+- 知られていないものは、知られているものよりはるかに多い：1878 は、取り戻せない歴史の細部・失われた古代の書・「埋もれた秘密」・誰も見ない海の底の宝石や砂漠の花は、知りえないから存在しないのか、と自分に問う。答えは、どんな知の状態でも、知られていないものの量と知られているものの量の比を表せる数は無い。それでも、意味のはっきりした問いなら、探究を十分に進めれば答えが出ないと考えるのは「unphilosophical」で、どの問いも、終には解かれないとは言えない（1878・pp.58–59。再録の頁）。
+- 実在は、誰がどう思うかによらない：実在は、思考一般からではなく、あなたや私や有限の数の人がどう思うかから独立している。人の歪みが意見の定着を限りなく遅らせても、勝手な命題がずっと受け入れられ続けても、十分に進めた探究の結果としての信念の性質は変わらない（1878・p.57）。
+- 1878 を自分で改めた：同じ 1905 年の続編「Issues of Pragmaticism」（*The Monist* 15(4), pp.481–499）で、1878 の、綿の上で生まれ、何にも押されずに燃え尽きたダイヤモンドが硬かったかは「merely a question of nomenclature」という書き方を、「merely」の一語が忌まわしい誤り、と退ける。誰も確かめなかったそのダイヤモンドの硬さも実在の事実で、実在とは「that which is such as it is regardless of how it is, at any time, thought to be」。プラグマティシズムは、一般の実在（スコラの実在論）と、実在の可能性・実在の曖昧なもの（real vagues）を認めることになる、と書く（pp.492–496）。
+- 切り離された事実は無い：同じ段で、そのダイヤモンドのありようは孤立した事実ではない。「There is no such thing; and an isolated fact could hardly be real. It is an unsevered, though presciss part of the unitary fact of nature.」（p.495。OCR の「presciss」は「prescinded」の崩れと読む）。
+
+本文の確かめ先：1878 は *Chance, Love, and Logic*（1923）の再録（Internet Archive `chanceloveandlog00peiruoft`）。1905 の二本は JSTOR Early Journal Content（Internet Archive `jstor-27899577`・`jstor-27899620`）。どれも OCR の文字で読んだ。
+
 ### デューイ（1938『論理学』。権利の確かめられない写しで読んだ）
 
 - 探究の定義：不確定な状況を、制御された・向けられた仕方で、その成り立ちの区別と関係において確定した状況へ変え、元の状況の要素を一つのまとまった全体にすること（pp.104–105）。SEP の引く文と一致。
@@ -188,7 +201,7 @@
 違うところ・ずれて見えるところ：
 
 1. 探究の終わり：パースは探究の目的を意見の定着に置き、真理を皆が最後に同意する意見とする。pjdhiro は、不快や混乱を保持論点として残し（stance 2-2）、問いが閉じないようにする（stance 1-1）。パースも、信念は新しい出発点と書くので、全く逆ではない。（追記）パース 1905 は、考えは定められた意見の定着へ向かう、と同じ向きを保つ。デューイ 1938 も、探究の行き着く所を、閉じた・仕上がった状況と書く。どちらも、閉じることを探究の行き先に置いている。
-2. 確かめられる効果だけで考えを測るか：パースの「何かについての観念は、その感覚できる効果の観念」は、読み方によっては、認知できる効果の無いものを意味の外に置く。pjdhiro は、認知し得ないものを否定せず、あるだろうという前提で考える（stance 1-1）。「物質的で定量的」に縮めて読まれる心配（stance 1-2）とも掛かる。（追記）パース 1905 は、疑いと信念で定義できない「真理」は、存在を何も知りえないもので、オッカムの剃刀が剃り落とす、とはっきり書く。この点の違いは、1878 で読めたより大きい。一方で 1905 は、行うことを生の全てにはしない、と断り、意味を一つ一つの実験でなく、考えうる実験の現れの一般の形に置く。行いの結果で測る、と縮めて読むのも外れる。
+2. 真理の話と、仮説の抱持（2026-11-16 に直した）：前の版では、パースの「何かについての観念は、その感覚できる効果の観念」（1878）と、パース 1905 の「疑いと信念で定義できない『真理』は、オッカムの剃刀が剃り落とす」（p.168）を、pjdhiro の「認知し得ないものを否定せず、あるだろうという前提で考える」（stance 1-1）と違うところに置き、1905 で違いがはっきりした、と書いた。pjdhiro の指摘で直した：「両立するんじゃないかな。真理の話と、私の仮説の抱持は、別のことに思うよ。私も真理ですか？と聞かれたら、認知してないものまで言い切るのはむずいね。」上の「パースの真理と実在のニュアンス」のとおり、パースが剃り落とすのは、疑いと信念と経験のどれとも関わらない形で定義した真理で、知られていないものではない。パース自身、知られていないものは知られているものと比べられないほど多いと書き、誰も確かめなかったダイヤモンドの硬さも実在とし、どの問いも終には解かれないとは言えない、として問いを閉じない。pjdhiro の抱持は、まだ認知していないものがあるだろうという仮説で、真理かと聞かれれば言い切らない。だから、ここは違うところでなく両立する。むしろ「認知し得ないものを否定せず、問いが閉じないように」と、1878 の「埋もれた秘密」の段・1905 の続編の実在の可能性は、近いところに置ける（Claude の読み）。パース 1905 は、行うことを生の全てにはしない、と断り、意味を一つ一つの実験でなく、考えうる実験の現れの一般の形に置く（p.175・pp.162–163）。行いの結果で測る、と縮めて読むのも外れる。
 3. 役に立つこと：ジェームズの「真なるものは役に立つもの」は、pjdhiro の「うれしさは成功の保証でなく、成功の確率を下げないこと。コントロールの道具として書かない」（stance 2-7）と、言葉の上では並べ方を考える要がある。ジェームズ自身は、長い目で・全体として、と条件を付けている。
 
 ## 7. 残したこと
