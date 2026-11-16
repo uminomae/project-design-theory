@@ -1068,3 +1068,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第四部の章「無意識とは、何か」の終わりに、夢を思い返す習慣の pjdhiro の体験と、フロイト 1900・ユングの夢の論の段を足した）
 - pages: どちらも、足したのは章の中の一段で、wiki が引く定義・見方・前提の五つの並びは変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-16] check | Love 駆動開発・プロジェクトデザイン（無意識の章に夢の研究のコラム）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（無意識の章の夢の段のあとに、コラム「夢は、どう研究されてきたか」〔シクラリら 2017・コンコリーら 2021〕を足した）
+- pages: どちらも、wiki が引く定義・見方は変わらないので本文を変えず、checked を今の時刻にした。
