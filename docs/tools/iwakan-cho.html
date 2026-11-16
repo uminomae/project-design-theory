@@ -344,7 +344,19 @@ details.archive summary { cursor: pointer; font-family: var(--font-display); fon
     if (!PLACE[sel.value]) sel.value = "love-driven-dev";
   })();
 
-  function needsClaude(d) { return d.lastFrom === "pjdhiro" && (!d.claudeReadAt || (d.lastAt && d.lastAt > d.claudeReadAt)); }
+  // 未読：pjdhiro が最後に書いたものが、Claude の最後の書き込みより後ろにある。
+  // 時刻だけで見ると、Claude 側が先の時刻（JST を Z で書いたもの）を書いたときに見落とす（2026-11-16 に二度）。
+  // そこで、thread の並び順でも見る。先の時刻の claudeReadAt は、無いものとして扱う。
+  function needsClaude(d) {
+    if (d.lastFrom !== "pjdhiro") return false;
+    const th = d.thread || [];
+    let lp = -1, lc = -1;
+    th.forEach((x, i) => { if (x.from === "pjdhiro") lp = i; else if (x.from === "claude") lc = i; });
+    if (lp > lc) return true;
+    const r = d.claudeReadAt;
+    if (!r || r > new Date(Date.now() + 5 * 60000).toISOString()) return true;
+    return !!(d.lastAt && d.lastAt > r);
+  }
   function hasReply(id, d) { return d.lastFrom === "claude" && d.lastAt && (!seen[id] || d.lastAt > seen[id]); }
   function attention(id, d) { return WAITING.has(d.status) || hasReply(id, d); }
 
