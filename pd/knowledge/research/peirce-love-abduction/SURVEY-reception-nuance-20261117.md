@@ -304,3 +304,20 @@ pjdhiro の予測：アガパズムと般若心経と Love駆動開発は、ど�
 4. 「Reply to the Necessitarians」（1893）pp.548–551・555・559：批判に答えて、自分の進め方と、仮説の弁護のしかたを語る所。
 
 どれも §0 と `READING-ORDER-20261116.md` の表の写しで無料で読める。
+
+### 7-5. 「誰かの足場として差し出した」という見立てと照らす（2026-11-17 に足した）
+
+見立て（pjdhiro 2026-11-17、#154 のセッションでの言葉。そのセッションから渡された）：「パースがそう表現せざるを得なかった、宇宙、創造的な愛は誰かの足場として提供すべきと判断したのかもしれませんね。パースのそれを否定するまでは、持論は不安定だという先回りのエアリプみたいな貢献を。」
+
+上で読んだ原文のうち、向きが合う所（どれも本文照合済）：
+
+- **あとの人がたどり直すための道として出している**：宇宙論は「It predicts many more things which new observations can alone bring to the test.」。続けて「May some future student go over this ground again, and have the leisure to give his results to the world.」（1891「The Architecture of Theories」p.176）。自分で確かめきれないことを認め、確かめを後の人に預けている。
+- **打ち負かされるまでは、相手の側が不安定になる、という形で論を置いている**：必然の説の根拠を一つずつ退けたあと、「I earnestly beg that whoever may detect any flaw in my reasoning will point it out to me, either privately or publicly ; for if I am wrong, it much concerns me to be set right speedily. If my argument remains unrefuted, it will be time, I think, to doubt the absolute truth of the principle of universal law」（1892「The Doctrine of Necessity Examined」p.337）。翌年の再答の頭では、その論文の終わりで必然の説の側に礼を尽くして挑み、答えを乞うたが、公に答えたのは Carus だけだった、と書く（1893「Reply to the Necessitarians」p.526）。見立ての「否定するまでは、持論は不安定」の向きは、パースが必然の説に対して行ったことと重なる。ただし、パースが不安定にしようとしたのは自分の持論でなく、相手の説（すべては法則で決まる）。
+- **結論を、調べる人と時間に預ける**：「If thinkers will only be persuaded to lay aside their prejudices and apply themselves to studying the evidences of this doctrine, I shall be fully content to await the final decision.」（1893「Evolutionary Love」p.200）。
+- **仮説は説明する力で弁護するもの**（1893「Reply」p.551）と、経験と比べる作業が何年もかかる、という断り（1892 p.321）は、7-1 のとおり。
+
+合わない、または原文からは言えない所：
+
+- 「足場」「scaffold」の語や、他人の足場になるために出す、という動機を、パースが自分で書いた所には、読んだ範囲（上の四本）では当たっていない。書いているのは、確かめを後の人に預けること（p.176）と、誤りを指してほしいという頼み（1892 p.337）まで。
+- 「表現せざるを得なかった」事情（なぜその時期に、その形で出したか）は、伝記の資料が要る。この記録では読んでいない。
+- 採るかは pjdhiro が決める。この節は、見立てを勝たせるためのものではない。
