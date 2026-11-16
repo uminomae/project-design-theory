@@ -1083,3 +1083,8 @@ compile 実行の履歴。append-only。
 - scope: 1 ページ（`concepts/Love 駆動開発`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第七部の終わりのティール組織の段を、Laloux 2014 の本の頁で書き直し、本自身の限界と Wyrzykowska 2019 を畳みに置いた・#158）
 - pages: 2030 年の中核スキルの段の終わりの、ティール組織の一文を、本の段（より複雑・合う状況・エゴから距離・恐れと欠乏／信頼と豊かさ）と限界に直した。compiled を 2026-11-17 に。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（第四部の防衛の章の例を外した）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（「心は、自分を守るしくみを持っている」の章の頭の例を外した・#155）
+- pages: wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
