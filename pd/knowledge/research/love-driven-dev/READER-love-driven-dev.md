@@ -2383,6 +2383,10 @@ Claude は、二つの体験を次のように読んでいます。どちらも�
 - 分析的思考とシステム思考：切り分けて明確にすることと、切り分けたものを包み込むように、いくつもの軸から見ること（この章の四つめの場面）。
 - 創造的思考：物事が生まれるときの形（「[創造は、どんな形をしているのか](#創造はどんな形をしているのか)」）。
 
+残りのうち、他者との協働の群のリーダーシップと社会的影響力と、マネジメントの群の人材管理について、pjdhiro は、この見方が使える場面と、使えない場面を見ています。
+
+<strong>pjdhiro の見方：</strong>他者との協働（Working with others）がリーダーシップと社会的影響力の一つ、マネジメントのスキル（Management skills）にも活用できると思う。ただし、政策のような広い対象を扱うポジションだと思う。定型的で限られた顧客層の場合は、剥き出しの支配欲の方が成果を上げると思う。顧客の欲求に対する相性があると思う。
+
 <details><summary>詳しく — 報告は、スキルをどう分け、どう選んだか</summary>
 
 報告は、雇用主への調査（Future of Jobs Survey 2024）で、26 のスキルについて二つのことを聞いています。一つは、2025 年にそのスキルを中核と考えるか。もう一つは、2030 年までにそのスキルの使われ方が増えると見込むか。図 3.6「Core skills in 2030」は、横軸に前者の割合、縦軸に後者の割合をとり、両方が中央値より高い右上の区画を「2030 年の中核スキル」と呼んでいます。上の十は、その区画として本文が挙げたものです。日本語の名前は Claude の訳で、英語の名前は次のとおりです。AI and big data、analytical thinking、creative thinking、resilience, flexibility and agility、technological literacy、leadership and social influence、curiosity and lifelong learning、systems thinking、talent management、motivation and self-awareness。
