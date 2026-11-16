@@ -1053,3 +1053,8 @@ compile 実行の履歴。append-only。
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第七部の哲学の章を、プラグマティズム・純粋経験・実存主義の三つの節にし、答えを地の文で置いた・#154・#147）
 - pages: 哲学の章を工事中と書いていた段を、三つの節の今の中身（プラグマティズムと純粋経験の近い・違う、陽明学・実存主義・和辻は工事中）に書き直した。
 - プロジェクトデザイン：哲学の章を引いていないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-16] check | Love 駆動開発・プロジェクトデザイン（第三部の例の差し替え）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第三部の体の章と欠けの章の例を替え、今の像の書き出しを直した・#155）
+- pages: どちらも、替えたのは例と書き出しで、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
