@@ -1884,6 +1884,12 @@ Love駆動開発の名前は、何度も遭遇した出来事に、あとから�
 
 違って見えるところもあります。ウィルバーは、Eros に、深さが増す方への向きを持たせ、すべての面と段階を一つの枠に並べます。この章の開発は、ハズレを前提に探し、戻ることも含み、向きを一つに置きません。近い・違って見える、の見立ては Claude の読みです。
 
+この段を読んで、pjdhiro は、Eros と Agape を自分の言葉で言い直しました。
+
+<a id="ldd-wilber-eros-agape"></a><strong>pjdhiro の見方：</strong>求める感じと、包む感じですね。積極的な能動性と受容のような能動的な受動。私は、その両方の駆動源を、曖昧なままLoveと呼びたいものとして扱ってます。
+
+ウィルバーは、上へ届くものを Eros、前のものを包んで下へ届くものを Agape と、二つの名で分けて書きました。この読み物は、その二つを分けずに、一つの呼び名のまま置いています。上へ向く向きだけを駆動源に見ると、包む側の動きは駆動の外に置かれます。両方を Love と呼びたいものに入れると、求めて進むことも、受け容れることも、同じ駆動の中の動きとして読めます。この段落は Claude の読みです。
+
 <!--REF:心理学-->
 
 出典：Wilber, K. (1997) "An Integral Theory of Consciousness", *Journal of Consciousness Studies* 4(1):71–92（雑誌の出版社 Imprint Academic のサイトにあった全文の [Wayback Machine の記録](https://web.archive.org/web/2004/http://www.imprint.co.uk/Wilber.htm)で本文照合済。四つの面と段階は要旨、含んで超える過程は節「The Further Reaches of Human Nature」）／Wilber, K. Kosmos 三部作 第二巻の抜粋 A "An Integral Age at the Leading Edge"・抜粋 B "The Many Ways We Touch"（出版社 Shambhala の著者のサイト「Ken Wilber Online」に著者が出した抜粋の Wayback Machine の記録で本文照合済。前の瞬間が与えられ作り直されるところは[抜粋 A 第四部](https://web.archive.org/web/2006/http://wilber.shambhala.com/html/books/kosmos/excerptA/part4-1.cfm)、Eros の傾きは[抜粋 A 第二部](https://web.archive.org/web/2006/http://wilber.shambhala.com/html/books/kosmos/excerptA/part2.cfm)、引きは[抜粋 A 第三部](https://web.archive.org/web/2006/http://wilber.shambhala.com/html/books/kosmos/excerptA/part3-2.cfm)、Eros と Agape は[抜粋 B 第二部](https://web.archive.org/web/2006/http://wilber.shambhala.com/html/books/kosmos/excerptB/part2.cfm)）。

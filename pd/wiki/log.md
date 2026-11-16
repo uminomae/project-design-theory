@@ -1123,3 +1123,8 @@ compile 実行の履歴。append-only。
 - scope: 1 ページ直し（`concepts/Love 駆動開発`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（分離と包摂のカードに、pjdhiro の「子育てや教育に関するバランスは、このことを言っていると感じることが多い」を足した・#159）
 - pages: 同じカードを引く段に、同じ一文を足した。
+
+## [2026-11-17] check | Love 駆動開発（ウィルバーの畳みに、Eros と Agape についての pjdhiro の見方のカード）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（畳み「詳しく — ウィルバーの統合理論と、開発のプロセス」に、求める感じと包む感じの両方を Love と呼びたいものとして扱う、という pjdhiro の見方のカードと、答えの段を足した）
+- pages: どちらも畳みの中身までは書いていないので本文を変えず、checked を今の時刻にした。
