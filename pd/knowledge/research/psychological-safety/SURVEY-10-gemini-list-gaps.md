@@ -45,6 +45,7 @@
 
 1. **書誌**：Laloux, F. (2014). *Reinventing Organizations: A Guide to Creating Organizations Inspired by the Next Stage of Human Consciousness*. Brussels: Nelson Parker. 邦訳『ティール組織』（英治出版、2018）。
 2. **照合の状態**：二次資料のみ。著者のサイトに置かれていた要約のスライド（Wayback の記録 2015-02-13。元は reinventingorganizations.com。32 面。作り手は change factory GmbH で、各面に「© Frederic Laloux (content based on his book…)」）で読んだ。書籍は未照合（書籍。Internet Archive の貸し出し）。
+   - 2026-11-16 追記：書籍の本文は、著者の電子版（Wayback の記録）で読めた（`love-driven-dev/SURVEY-teal-laloux-20261116.md` §1）。スライドの面 17 の一般則は本文 p.41、面 26 の「恐れと分離／愛とつながり」は p.231 の一覧の一行。このページの本文には名を出さないままとする（pjdhiro 2026-11-16・#158）。
 3. **鍵の文**（要約のスライド。面の番号）：
    - 人の発達は段階で進み、線ごとに見られる。例に、欲求（マズロー）・自己のあり方（ローヴィンジャー）・リーダーシップ（クック＝グロイター、キーガン、トーバート）などを並べる（面 6）。
    - 組織の型を、赤（衝動）・琥珀（順応）・オレンジ（達成）・緑（多元）・ティール（進化）と並べる。赤の組織は「Fear is the glue of the organization.」（面 11–15）
