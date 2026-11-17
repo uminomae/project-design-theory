@@ -5,7 +5,7 @@ source:
   - repo: "pd"
     path: "knowledge/research/love-driven-dev/READER-love-driven-dev.md"
 compiled: "2026-11-17"
-checked: "2026-11-17T11:42+09:00"
+checked: "2026-11-17T11:47+09:00"
 tags: [concept, core, love-driven, practice]
 status: 暫定
 review_state: 未レビュー
