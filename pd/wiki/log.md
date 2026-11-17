@@ -1338,3 +1338,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（構想の段の Dew ら 2009 の調査のあとに、エフェクチュエーションの名前と、手段から始めて新しい目的を生む見方・料理人のたとえを本文に出した）
 - pages: どちらも構想の段の例を引いていないので、本文はそのまま。
+
+## [2026-11-18] check | Love 駆動開発（心の言葉の GRIT の項の推敲）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（GRIT の項を、忍耐強さの中身〔固いか柔らかいか・レジリエンスとの重なり・どんな心の働きか〕が分かれていないという読み解きの注意から組み直し、侘びをその柔らかい忍耐の像として置いた）
+- pages: どちらも GRIT と侘びを引いていないので、本文はそのまま。
