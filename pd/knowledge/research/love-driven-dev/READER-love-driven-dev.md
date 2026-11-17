@@ -2513,7 +2513,9 @@ Claude は、二つの体験を次のように読んでいます。どちらも�
 
 <!--OPEN-->
 
-<a id="ldd-definition"></a>この読み物は、題のうち、Love と駆動を前半で、開発を後半で見てきました。この章では、それを束ねて、Love駆動開発と呼びたいものとは何かを、まとめと整理によって置きます。前半の答えは「[それが、プロジェクトの駆動源である](#ldd-conclusion)」の章に、後半の答えは「[後半の答え](#ldd-development-answer)」の章に、ひとまず置きました。
+<a id="ldd-definition"></a>では、Love駆動開発と呼びたいものとは、何でしょうか。
+
+この読み物は、題のうち、Love と駆動を前半で、開発を後半で見てきました。この章では、それを束ねて、Love駆動開発と呼びたいものとは何かを、まとめと整理によって置きます。前半の答えは「[それが、プロジェクトの駆動源である](#ldd-conclusion)」の章に、後半の答えは「[後半の答え](#ldd-development-answer)」の章に、ひとまず置きました。
 
 この見方が何を探してきたのかについて、pjdhiro は次のように置いています。
 
@@ -2525,13 +2527,29 @@ Claude は、二つの体験を次のように読んでいます。どちらも�
 
 <!--OPEN-->
 
-<a id="ldd-computing"></a>pjdhiro は、計算機科学の分野を、人間や組織の模倣とも言える、と見ています。この章では、AI のようなわかりやすい例を手がかりに、計算機科学の視点から、このページの見方と似た形を探します。
+<a id="ldd-computing"></a>計算機科学の視点で見ると、この読み物の見方と、何が似ているのでしょうか。
+
+たとえば、コンピュータのしくみは、それを作る人や組織の事情とは関わりなく、機械の論理で決まる、とよく言われます。けれど、プログラマのコンウェイは、1968 年に雑誌『データメーション』に載せた論文で、こんな例を挙げています。ある研究の請負の組織で、八人が、COBOL と ALGOL という二つのプログラミング言語の翻訳のプログラム（コンパイラ）を作ることになりました。手間を見積もって、COBOL に五人、ALGOL に三人を割り当てました。できあがった COBOL のコンパイラは五つの段階で動き、ALGOL のコンパイラは三つの段階で動きました。コンウェイは、システムを設計する組織は、その組織の意思の通い方の形を写した設計を作るように縛られている、と書いています。この見方は、のちにコンウェイの法則と呼ばれるようになりました。
+
+pjdhiro は、計算機科学の分野を、人間や組織の模倣とも言える、と見ています。この章では、AI のようなわかりやすい例を手がかりに、計算機科学の視点から、このページの見方と似た形を探します。
 
 🚧 工事中です。
 
+<details><summary>出典</summary>
+
+<!--REF:計算機科学-->
+
+出典：M. E. Conway (1968) "How Do Committees Invent?", *Datamation* 14(4)。著者のサイトの[本文](https://www.melconway.com/Home/Committees_Paper.html)（出版社の許しを得た再録）で本文照合済。八人で COBOL と ALGOL のコンパイラを作り、五人と三人に分け、五つと三つの段階で動いた例は「Examples」の段、設計は組織の意思の通い方の形を写すように縛られる（"organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations"）は結びの段。コンウェイの法則という呼び名は、ブルックスが『人月の神話』で付けたと、著者のサイトの「[Conway's Law](https://www.melconway.com/Home/Conways_Law.html)」の頁にあります。
+
+</details>
+
 ## 哲学の視点で見ると、何が近いか
 
-<a id="ldd-philosophy"></a><a id="ldd-existentialism"></a>この章では、この読み物の見方を、哲学の四つの流れと並べます。プラグマティズム、純粋経験、実存主義、東洋の古典です。どこが近く、どこが違って見えるかを、原典の言葉で並べます。近い・違うの見立ては、このページを書いた Claude の読みです。章の終わりに、ここから先を原典で読むための案内を置きます。
+<a id="ldd-philosophy"></a><a id="ldd-existentialism"></a>この読み物の見方は、哲学では、どんな考え方に近いのでしょうか。
+
+たとえば、哲学は、暮らしや仕事から離れたところで、どちらが正しいかを言葉の上で突き詰める学問だ、とよく言われます。けれど、哲学者のジェームズは、1907 年の講義『プラグマティズム』の第二講を、山でキャンプをしていたときの言い合いから始めています。木の幹の片側にリスがしがみつき、反対側に人が立っています。人はリスを見ようと、木の周りを急いで回りますが、リスも同じ速さで反対へ回り、いつも木を挟んでいます。では、人はリスの周りを回っているのか。皆が二手に分かれて譲らず、数も同じで、戻ってきたジェームズに加勢を求めました。ジェームズは、どちらが正しいかは、「回る」を実際にどういう意味で言うかによる、と答えました。リスの北から東、南、西へと位置を移っていく意味なら、人は回っています。リスの前から右、後ろ、左へと回り込む意味なら、リスはいつも腹を人に向けているので、回っていません。そう分ければ、それ以上言い合うことはない、と。言い合いは、どちらかが勝って終わったのではなく、実際に何が違うのかを問うたところで消えました。
+
+この章では、この読み物の見方を、哲学の四つの流れと並べます。プラグマティズム、純粋経験、実存主義、東洋の古典です。どこが近く、どこが違って見えるかを、原典の言葉で並べます。近い・違うの見立ては、このページを書いた Claude の読みです。章の終わりに、ここから先を原典で読むための案内を置きます。
 
 ### 確かめは、実践の中で起こる
 
@@ -2551,7 +2569,7 @@ Claude は、二つの体験を次のように読んでいます。どちらも�
 
 C. S. Peirce, "The Fixation of Belief", *Popular Science Monthly* 12, 1877・"How to Make Our Ideas Clear", 同 12, 1878。どちらも、再録の [Cohen 編『Chance, Love, and Logic』（1923・パブリックドメイン。Internet Archive にあるトロント大学の蔵書の走査）](https://archive.org/details/chanceloveandlog00peiruoft)で本文と照らしました。疑いの苛立ちと探究の目的（"the sole object of inquiry is the settlement of opinion"）は p.16、信念は習慣を据えるもの（"The essence of belief is the establishment of a habit"）は p.41、考えの意味は考えられる効果の全体という規則は p.45 です。
 
-William James, *Pragmatism: A New Name for Some Old Ways of Thinking*, Longmans, Green, 1907。[Project Gutenberg のパブリックドメインの本文](https://www.gutenberg.org/ebooks/5116)で照らしました。パースの 1878 年の論文を挙げるところと、向きの構え（"THE ATTITUDE OF LOOKING AWAY FROM FIRST THINGS, PRINCIPLES, 'CATEGORIES,' SUPPOSED NECESSITIES; AND OF LOOKING TOWARDS LAST THINGS, FRUITS, CONSEQUENCES, FACTS."）は第二講「What Pragmatism Means」、真理は観念に起こる（"Truth HAPPENS to an idea."）は第六講「Pragmatism's Conception of Truth」です。
+William James, *Pragmatism: A New Name for Some Old Ways of Thinking*, Longmans, Green, 1907。[Project Gutenberg のパブリックドメインの本文](https://www.gutenberg.org/ebooks/5116)で照らしました。パースの 1878 年の論文を挙げるところと、向きの構え（"THE ATTITUDE OF LOOKING AWAY FROM FIRST THINGS, PRINCIPLES, 'CATEGORIES,' SUPPOSED NECESSITIES; AND OF LOOKING TOWARDS LAST THINGS, FRUITS, CONSEQUENCES, FACTS."）は第二講「What Pragmatism Means」、真理は観念に起こる（"Truth HAPPENS to an idea."）は第六講「Pragmatism's Conception of Truth」です。章の頭のリスの言い合いは第二講の冒頭で、1907 年の版の走査から起こした [Wikisource の本文（パブリックドメイン）](https://en.wikisource.org/wiki/Pragmatism:_A_New_Name_for_Some_Old_Ways_of_Thinking/Lecture_II)の pp.43–45 で照らしました（"Which party is right ... depends on what you practically mean by 'going round' the squirrel."）。
 
 </details>
 
@@ -2710,7 +2728,11 @@ Bryan Van Norden, "Wang Yangming", *Stanford Encyclopedia of Philosophy*, 2014�
 
 ## 禅の視点で見ると、何が近いか
 
-<a id="ldd-zen"></a>この読み物は、ところどころで、禅や仏教の言葉を引いてきました。pjdhiro は、禅の教えをこの読み物の参考になるものと見ています。そして、禅を、自分の精神を開発していく、歴史のあるやり方と見ています。そこで、禅の視点でも見ます。まず、ここまでに引いた言葉の場所を並べます。
+<a id="ldd-zen"></a>禅は、この読み物の見方と、どこが近いのでしょうか。
+
+たとえば、禅は、静かに座って心を空っぽにする修行だ、とよく言われます。けれど、宋の時代の禅僧、廓庵の『十牛図』は、修行を、牛を探して連れ帰る十の場面として描いています。牛を探しに出る、足跡を見つける、牛を見つける、捕まえる、飼い慣らす、牛に乗って家に帰る、と進み、牛を忘れ、やがて牛も自分も見えなくなる場面と、もとに還る場面を経て、十番目では、ひょうたんを提げて町へ入り、酒屋や魚屋のあいだで人々とともにいます。一番目の場面の序は、もともと失っていないのに、なぜ追い求めるのか、と始まります。
+
+この読み物は、ところどころで、禅や仏教の言葉を引いてきました。pjdhiro は、禅の教えをこの読み物の参考になるものと見ています。そして、禅を、自分の精神を開発していく、歴史のあるやり方と見ています。そこで、禅の視点でも見ます。まず、ここまでに引いた言葉の場所を並べます。
 
 - 「刀は自らを割かず」：刀は、自分自身を切ることができない。原文は「眼は自らを見ず」と並べて、見るものや切るものは自分をその対象にできない、と言います（[刀は自らを割かず](#ldd-katana)）。
 - 指月のたとえ：月を指し示す指は、月そのものではない、という仏教のたとえです（[指月のたとえ](#ldd-finger)）。
@@ -2726,6 +2748,14 @@ Bryan Van Norden, "Wang Yangming", *Stanford Encyclopedia of Philosophy*, 2014�
 
 🚧 工事中：禅の教えを知識として整理し、この読み物の見方と並べるところは、原典を確かめてから書きます。
 
+<details><summary>出典</summary>
+
+<!--REF:東洋の思想-->
+
+出典：廓庵『十牛図頌』（慈遠の序を付けたもの。卍新纂続蔵経 第 64 冊 No.1269「住鼎州梁山廓庵和尚十牛圖頌并序」）。CBETA の[電子版の本文](https://cbetaonline.dila.edu.tw/zh/X1269_001)で本文照合済。十の場面の名（尋牛・見跡・見牛・得牛・牧牛・騎牛歸家・忘牛存人・人牛俱忘・返本還源・入鄽垂手）は各段の題、一番目の序「從來不失，何用追尋？」は X64n1269_p0773c02、十番目の序「提瓢入市，䇿杖還家。酒肆魚行，化令成佛」は p0775a08。訳は Claude。
+
+</details>
+
 ## この見方は、何の役に立ち、どんな場面で役立つか
 
 <!--OPEN-->
@@ -2733,6 +2763,8 @@ Bryan Van Norden, "Wang Yangming", *Stanford Encyclopedia of Philosophy*, 2014�
 ここまでの話を聞いた読者は、次のように問うだろう、と pjdhiro は言います。
 
 <a id="ldd-use"></a><strong>pjdhiro の問い：</strong>で、それってなんの役に立つの？どう使うの？
+
+たとえば、役に立つ考え方とは、うまくいったやり方の形のことで、その形をまねれば、ほかでも同じように効く、とよく言われます。けれど、物理学者のファインマンは、1974 年にカリフォルニア工科大学の卒業式で話した講演で、南の海の島の、カーゴ・カルト（積み荷の信仰）と呼ばれる人々の話をしています。戦争のあいだ、島には飛行機が降り、たくさんの物資を運んできました。人々は、同じことがまた起きてほしいと、滑走路のようなものを作り、その両脇に火を焚き、木の小屋に人を座らせ、頭に木のヘッドホン、竹のアンテナを付けて、飛行機を待ちます。形は申し分なく、前と同じに見えます。けれど、飛行機は降りてきません。ファインマンは、これを、研究の決まりや形には従っているのに、何か肝心なものが欠けている科学のたとえにしました。
 
 この見方の使い道は、理論や指示を当てる前に、受け取ったものを確かめることです。第六部では、それを、受け取った言葉を確かめるとき（「[事業の言葉は、どこで誤解されるか](#ldd-vision)」）と、何かを形にするとき（「[デザインは、どこに関わるか](#ldd-design-field)」）に当て、確かめると何が変わるかを「[入力を整えると、何が変わるか](#ldd-effects)」で見ました。この章では、それを、どんな場面で、どんな条件で役立つかの側から見ます。
 
@@ -2814,11 +2846,21 @@ Bryan Van Norden, "Wang Yangming", *Stanford Encyclopedia of Philosophy*, 2014�
 
 </details>
 
+<details><summary>出典</summary>
+
+出典：R. P. Feynman (1974) "Cargo Cult Science", *Engineering and Science* 37(7)（カリフォルニア工科大学の 1974 年の卒業式の講演）。大学の雑誌の保管庫の[本文](https://calteches.library.caltech.edu/51/2/CargoCult.htm)で本文照合済。滑走路と火、木の小屋と木のヘッドホン、竹のアンテナ、形は申し分ない（"The form is perfect."）、飛行機は降りない、研究の決まりや形に従っているのに肝心なものが欠けている（"they follow all the apparent precepts and forms of scientific investigation, but they're missing something essential"）は講演の中ほどの段。
+
+</details>
+
 ## どう鍛えるのか、どう修行するのか
 
 <!--OPEN-->
 
-<a id="ldd-practice"></a>役立つ場面が分かったとして、では、どう身につけるのか。この章では、スキルの鍛え方、修行の仕方を見ます。
+<a id="ldd-practice"></a>役立つ場面が分かったとして、では、どう身につけるのか。
+
+たとえば、心を鍛えるとは、嫌な考えや弱さを押さえ込み、動じないでいられるようになることだ、とよく言われます。けれど、作家のドストエフスキーは、1863 年の旅の随筆『冬に記す夏の印象』に、白い熊のことを思い出さない、という課題を自分に出してみるといい、あいつはひっきりなしに思い出されるだろう、と書いています。心理学者のウェグナーらは、1987 年に、これを実験で確かめました。五分のあいだ、浮かんだことを声に出して話しながら、白い熊のことは考えないように、浮かんだらベルを鳴らすように、と頼まれた人たちは、一分に一度より多く白い熊を思い浮かべました。そのあとで、白い熊のことを考えてよい、と言われると、最初から考えてよいと言われた人たちより、多く思い浮かべました。ウェグナーらは、考えを押さえ込もうとすることが、かえってその考えへのとらわれを生むのかもしれない、と書いています。
+
+この章では、スキルの鍛え方、修行の仕方を見ます。
 
 pjdhiro は、修行を、心のシステムからバグを取ることとして見ています。
 
@@ -2846,6 +2888,16 @@ pjdhiro は、修行を、心のシステムからバグを取ることとして
 「[後半の答え](#ldd-debug)」の章では、自分をデバッグし続ける、という pjdhiro の見方を見ました。この章は、そのデバッグを、どう行うかを見る場所です。
 
 🚧 工事中：止観のやり方は、これから書きます。
+
+<details><summary>出典</summary>
+
+白い熊を思い出さない課題：Ф. М. Достоевский (1863)「Зимние заметки о летних впечатлениях」（邦題『冬に記す夏の印象』）第六章。初出は雑誌『Время』。パブリックドメイン。『全集』30 巻本の第 5 巻（1973）に拠る[ロシア語版 Wikisource の本文](https://ru.wikisource.org/wiki/%D0%97%D0%B8%D0%BC%D0%BD%D0%B8%D0%B5_%D0%B7%D0%B0%D0%BC%D0%B5%D1%82%D0%BA%D0%B8_%D0%BE_%D0%BB%D0%B5%D1%82%D0%BD%D0%B8%D1%85_%D0%B2%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%D1%85_%28%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%29)で本文照合済（"Попробуйте задать себе задачу: не вспоминать о белом медведе, и увидите, что он, проклятый, будет поминутно припоминаться."）。訳は Claude。
+
+<!--REF:心理学-->
+
+出典：D. M. Wegner, D. J. Schneider, S. R. Carter III, T. L. White (1987) "Paradoxical Effects of Thought Suppression", *Journal of Personality and Social Psychology* 53(1):5–13。ハーバード大学の研究室の頁に置かれた[走査の PDF](https://dtg.sites.fas.harvard.edu/DANWEGNER/pub/Wegner,Schneider,Carter,%26White%201987.pdf)で本文照合済。五分間声に出しながら考えないように頼み、浮かんだらベルを鳴らす手順、押さえ込みのあとに考えてよいと言われた人が、最初から考えてよいと言われた人より多く思い浮かべたこと、押さえ込みがとらわれそのものを生むのかもしれない（"perhaps even producing the very obsession or preoccupation that it is directed against"）は p.5 の要旨、指示されても一分に一度より多く思い浮かべたことは p.7 の結果の段。
+
+</details>
 
 <!--PART:巻末-->
 
