@@ -2707,6 +2707,30 @@ Love駆動開発の言葉に置き換えると、できあがるもの（渦）�
 
 </details>
 
+<a id="ldd-conway-ai"></a>では、このような情報システムは、作れるのでしょうか。思考実験の四つの形について、pjdhiro は次のように予想しています。
+
+<strong>pjdhiro の予想：</strong>私の予想では、AIが入ることで可能になる。じゃないかな？
+
+四つの形の多くは、これまで、手間が重くて作りにくいものでした。AI は、その手間のうち、読んで理解する手間と、書いて書き直す手間を下げつつあります。
+
+- 一つの共有の場：皆が同じものを見ても、部署ごとに言葉や前提が違えば、読み取れません。上の畳みの開かれた共同のプロジェクトでも、作りかけのものを理解して手を入れられたのは、コードを読める人に限られていました。顧客対応の窓口で AI の助けを入れた研究では、いちばん伸びたのは経験の浅い人たちでした。著者らは、腕のある人の言葉にしにくい知識を、AI が新しい人へ広げているのではないか、と読んでいます。AI が言い換え、まとめれば、作りかけのものを理解できる人の範囲が、専門の外まで広がるかもしれません。
+- 生まれてはほどける部品と、決め直せる継ぎ目：部品を作っては捨てることも、つなぎ方を変えて両側を書き直すことも、コードを書く手間がかかります。AI の補助を使ったプログラマが、同じ課題をずっと速く終えた実験があります。書き直す手間が下がれば、一度決めたら動かせない形にしておく理由も減ります。
+- 学ぶための記録と、皆に見える知らせ：何が起きたかを皆で学ぶには、たくさんの記録を読んでまとめる手間がかかります。ここでも、AI は読む手間を下げられそうです。
+
+ただ、AI は、場に何が湧いているかまでは変えません。安全が感じられない組織が AI を入れると、AI は、皆に見える場でなく、見張るための道具として働くかもしれません。コンウェイの見方に沿えば、AI を使ったシステムも、それを作る組織の意思の通い方を写します。AI が得意でない仕事もあります。AI の得意な範囲の外の課題では、AI を使った人のほうが、正しい答えを出す割合が下がった実験もあります。
+
+AI が組織の中で働くようになると、システムに写る意思の通い方には、人と AI のやりとりも入ります。この読み物も、pjdhiro の問いに Claude が調べて答えるやりとりで書いています（巻末の「[AI協働の進め方](#ldd-ai)」）。
+
+<details><summary>詳しく — AI の助けの効き目の数と、その限り</summary>
+
+ブリニョルフソンらは、顧客対応の窓口の 5,179 人に、生成 AI の助けを入れて比べました。一時間あたりに解決した件数は、平均で 14% 増えました。腕の点で下から五分の一の人たちは 35% 増え、いちばん腕のある人たちは増えませんでした。この数は 2023 年の版のもので、2024 年に改めた版では、人数と数が少し変わっています。
+
+ペンらは、95 人のプログラマに、JavaScript で HTTP サーバーを書く課題を出し、AI の補助（GitHub Copilot）を使う組と使わない組に分けました。使った組は、課題を 55.8% 速く終えました。プログラミングの経験の浅い人ほど、効き目が大きかったと書いています。
+
+デラクアらは、コンサルタント 758 人で試しました。AI の得意な範囲の課題では、AI を使った人は、平均で 12.2% 多くの課題を、25.1% 速く終え、質は 40% を超えて高くなりました。得意な範囲の外の課題では、AI を使った人のほうが、正しい答えを出す割合が 19 ポイント低くなりました。著者らは、AI の得意な範囲の境目をぎざぎざの境目と呼び、難しさが同じように見える課題でも、範囲の内と外に分かれる、と書いています。
+
+</details>
+
 <a id="ldd-pair-programming"></a>関わり合いのいちばん小さな形は、二人です。ソフトウェアの開発には、ペアプログラミング（ペアプロ）と呼ばれるやり方があります。二人で一台のコンピュータに向かい、一つのプログラムを書きます。一人がキーボードを持って書き、もう一人はその作業を横で見ながら、誤りを探し、別の案を考え、先の見通しを考えます。二人は、ときどき役を替えます。ウィリアムズらは、大学の授業でこのやり方を試し、2000 年に報告しました。二人組は、慣れたあとには、かかった人の時間が一人で書くより最小で 15% 多いだけになり、自動のテストに通る割合は、四つの課題のどれでも一人のときより高くなりました。ただ、二人組で試した学生は、全員が自分からペアを望んだ人たちでした。
 
 ペアプロの中では、教え合いも起きています。コバーンとウィリアムズは、二人は刻々と教える側と教わる側を入れ替わる、と書いています。プロンカらは 2015 年に、仕事でペアプロをする人たちの作業を、録画と録音で調べました。熟練した人は、さりげない手がかりから、はっきりした指示まで、六つの教え方を使い分けていました。熟練した人の側も、初心者の素朴な問いから、自分の前提を考え直していました。チーム全員で一台に向かうモブプログラミングを始めたズイールは、互いに常に親切・思いやり・敬意をもって接することを原則に置き、学ぶことをチームへの貢献の一つと考えている、と書いています。
@@ -2744,6 +2768,12 @@ DevOps：J. Allspaw, P. Hammond (2009) "10+ Deploys Per Day: Dev and Ops Coopera
 ミラーリングの検証：A. MacCormack, J. Rusnak, C. Baldwin (2012) "Exploring the duality between product and organizational architectures: A test of the 'mirroring' hypothesis", *Research Policy* 41(8)（出版社の版は有料。ハーバード・ビジネス・スクールの[作業論文 08-039](https://www.hbs.edu/ris/Publication%20Files/08-039_1861e507-1dc1-4602-85b8-90d71559d85b.pdf)で本文照合済。頁は作業論文のもの）。どの対でも緩く結びついた組織の製品がはっきりと部分ごとに分かれ、変更の広がりで最大八倍の差（"In all of the pairs we examine, the product developed by the loosely-coupled organization is significantly more modular"・"up to a factor of eight"）は p.2、五つの分野の対の一覧は p.16 の Table 2。
 
 ミラーリングの例外：L. J. Colfer, C. Y. Baldwin (2016) "The mirroring hypothesis: theory, evidence, and exceptions", *Industrial and Corporate Change* 25(5)（出版社の版は有料。[作業論文 16-124](https://www.hbs.edu/ris/Publication%20Files/16-124_7ae90679-0ce6-4d72-9e9d-828872c7af49.pdf)で本文照合済。頁は作業論文のもの）。142 の研究、企業と業界の記述的研究の 70%・22%・8% は p.3、開かれた共同のプロジェクトの記述的研究の 56% が支持しないことは p.4、作りかけのものが見えて手を入れられること（"actionable transparency"）は p.37、作りかけのもの自体を通した調整（"stigmergy"）は p.39。
+
+AI の助け（顧客対応）：E. Brynjolfsson, D. Li, L. Raymond (2023) "Generative AI at Work", NBER Working Paper 31161（[arXiv:2304.11771 の 2023 年 4 月の版](https://arxiv.org/pdf/2304.11771v1)で本文照合済。頁は PDF のもの）。5,179 人、平均 14%、経験の浅い人と腕の低い人に大きく、経験と腕のある人にはわずか、AI が腕のある人の暗黙知を広げているという示唆（"the AI model disseminates the potentially tacit knowledge of more able workers"）は p.1 の要旨、下から五分の一の 35%（"who see a 35 percent increase in resolutions per hour"）は p.15。2024 年 11 月の改めた版では 5,172 人・平均 15% で、要旨に暗黙知の文が無い。
+
+AI の補助（プログラミング）：S. Peng, E. Kalliamvakou, P. Cihon, M. Demirer (2023) "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot"（[arXiv:2302.06590](https://arxiv.org/pdf/2302.06590) で本文照合済）。HTTP サーバーの課題と 55.8% 速く（"completed the task 55.8% faster than the control group"）は p.1、95 人を二つの組に分けたことは p.5、経験の浅い人ほど効き目が大きい（"less experienced programmers benefit more from Copilot"）は p.8。
+
+AI の得意な範囲の内と外：F. Dell'Acqua ほか (2023) "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of AI on Knowledge Worker Productivity and Quality", Harvard Business School Working Paper 24-013（[MIT Sloan のサイトに置かれた SSRN の版](https://mitsloan.mit.edu/sites/default/files/2023-10/SSRN-id4573321.pdf)で本文照合済。頁は PDF のもの）。758 人、範囲の内の 12.2%・25.1%・40% を超える質（"they completed 12.2% more tasks on average, and completed tasks 25.1% more quickly"）、範囲の外の 19 ポイント（"consultants using AI were 19 percentage points less likely to produce correct solutions"）、ぎざぎざの境目（"jagged technological frontier"）は p.4 の要旨。
 
 <!--REF:計算機科学-->
 

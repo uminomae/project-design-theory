@@ -139,7 +139,7 @@
                 <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md">正本 (GitHub)</a></span>
             </div>
             <header class="reader-hero">
-                <h1>Love駆動開発と呼びたいもの β <span class="ldd-version" data-reader-version="1.208" title="版。直すたびに 0.001 上がります">ver. 1.208</span></h1>
+                <h1>Love駆動開発と呼びたいもの β <span class="ldd-version" data-reader-version="1.209" title="版。直すたびに 0.001 上がります">ver. 1.209</span></h1>
                 <p class="reader-subtitle ldd-subtitle"><span class="ldd-phrase">何に駆られて</span><span class="ldd-phrase">プロジェクトを行うのか？</span><br><span class="ldd-phrase">なぜ、</span><span class="ldd-phrase">過去とは違うものに</span><span class="ldd-phrase">なろうとするのか？</span></p>
                 <p class="reader-subtitle ldd-subtitle-note">この読み物は、この二つの素朴な問いへの、pjdhiro なりの回答です。</p>
                 <p class="reader-summary__title" id="overview">概要</p>
@@ -2611,6 +2611,25 @@
 <p>コルファーとボールドウィンは 2016 年に、142 の研究をまとめました。企業や業界を記述した研究では、70% が強く支持し、22% が一部を支持し、支持しないのは 8% でした。一方、オープンソースのような、開かれた共同のプロジェクトを記述した研究では、56% が支持しませんでした。そこでは、密に絡むコードを、組織の結びつきの薄い人たちが作っていました。代わりに働いていたのは、作りかけのものが誰にでも見え、誰でも手を入れられることでした。上の思考実験の、一つの共有の場のような形に近いところです。組織の形だけが、システムの形を決めるわけではない、ということでもあります。</p>
 </details>
 
+<p><a id="ldd-conway-ai"></a>では、このような情報システムは、作れるのでしょうか。思考実験の四つの形について、pjdhiro は次のように予想しています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の予想：</strong>私の予想では、AIが入ることで可能になる。じゃないかな？</p>
+</blockquote>
+<p>四つの形の多くは、これまで、手間が重くて作りにくいものでした。AI は、その手間のうち、読んで理解する手間と、書いて書き直す手間を下げつつあります。</p>
+<ul>
+<li>一つの共有の場：皆が同じものを見ても、部署ごとに言葉や前提が違えば、読み取れません。上の畳みの開かれた共同のプロジェクトでも、作りかけのものを理解して手を入れられたのは、コードを読める人に限られていました。顧客対応の窓口で AI の助けを入れた研究では、いちばん伸びたのは経験の浅い人たちでした。著者らは、腕のある人の言葉にしにくい知識を、AI が新しい人へ広げているのではないか、と読んでいます。AI が言い換え、まとめれば、作りかけのものを理解できる人の範囲が、専門の外まで広がるかもしれません。</li>
+<li>生まれてはほどける部品と、決め直せる継ぎ目：部品を作っては捨てることも、つなぎ方を変えて両側を書き直すことも、コードを書く手間がかかります。AI の補助を使ったプログラマが、同じ課題をずっと速く終えた実験があります。書き直す手間が下がれば、一度決めたら動かせない形にしておく理由も減ります。</li>
+<li>学ぶための記録と、皆に見える知らせ：何が起きたかを皆で学ぶには、たくさんの記録を読んでまとめる手間がかかります。ここでも、AI は読む手間を下げられそうです。</li>
+</ul>
+<p>ただ、AI は、場に何が湧いているかまでは変えません。安全が感じられない組織が AI を入れると、AI は、皆に見える場でなく、見張るための道具として働くかもしれません。コンウェイの見方に沿えば、AI を使ったシステムも、それを作る組織の意思の通い方を写します。AI が得意でない仕事もあります。AI の得意な範囲の外の課題では、AI を使った人のほうが、正しい答えを出す割合が下がった実験もあります。</p>
+<p>AI が組織の中で働くようになると、システムに写る意思の通い方には、人と AI のやりとりも入ります。この読み物も、pjdhiro の問いに Claude が調べて答えるやりとりで書いています（巻末の「<a href="#ldd-ai">AI協働の進め方</a>」）。</p>
+<details class="acc"><summary>詳しく — AI の助けの効き目の数と、その限り</summary>
+
+<p>ブリニョルフソンらは、顧客対応の窓口の 5,179 人に、生成 AI の助けを入れて比べました。一時間あたりに解決した件数は、平均で 14% 増えました。腕の点で下から五分の一の人たちは 35% 増え、いちばん腕のある人たちは増えませんでした。この数は 2023 年の版のもので、2024 年に改めた版では、人数と数が少し変わっています。</p>
+<p>ペンらは、95 人のプログラマに、JavaScript で HTTP サーバーを書く課題を出し、AI の補助（GitHub Copilot）を使う組と使わない組に分けました。使った組は、課題を 55.8% 速く終えました。プログラミングの経験の浅い人ほど、効き目が大きかったと書いています。</p>
+<p>デラクアらは、コンサルタント 758 人で試しました。AI の得意な範囲の課題では、AI を使った人は、平均で 12.2% 多くの課題を、25.1% 速く終え、質は 40% を超えて高くなりました。得意な範囲の外の課題では、AI を使った人のほうが、正しい答えを出す割合が 19 ポイント低くなりました。著者らは、AI の得意な範囲の境目をぎざぎざの境目と呼び、難しさが同じように見える課題でも、範囲の内と外に分かれる、と書いています。</p>
+</details>
+
 <p><a id="ldd-pair-programming"></a>関わり合いのいちばん小さな形は、二人です。ソフトウェアの開発には、ペアプログラミング（ペアプロ）と呼ばれるやり方があります。二人で一台のコンピュータに向かい、一つのプログラムを書きます。一人がキーボードを持って書き、もう一人はその作業を横で見ながら、誤りを探し、別の案を考え、先の見通しを考えます。二人は、ときどき役を替えます。ウィリアムズらは、大学の授業でこのやり方を試し、2000 年に報告しました。二人組は、慣れたあとには、かかった人の時間が一人で書くより最小で 15% 多いだけになり、自動のテストに通る割合は、四つの課題のどれでも一人のときより高くなりました。ただ、二人組で試した学生は、全員が自分からペアを望んだ人たちでした。</p>
 <p>ペアプロの中では、教え合いも起きています。コバーンとウィリアムズは、二人は刻々と教える側と教わる側を入れ替わる、と書いています。プロンカらは 2015 年に、仕事でペアプロをする人たちの作業を、録画と録音で調べました。熟練した人は、さりげない手がかりから、はっきりした指示まで、六つの教え方を使い分けていました。熟練した人の側も、初心者の素朴な問いから、自分の前提を考え直していました。チーム全員で一台に向かうモブプログラミングを始めたズイールは、互いに常に親切・思いやり・敬意をもって接することを原則に置き、学ぶことをチームへの貢献の一つと考えている、と書いています。</p>
 <p>教育の分野では、同じ向きの手法が、ピア・ラーニングとして調べられてきました（前の章「<a href="#ldd-education">教育の視点で見る</a>」）。この読み物の言葉で読むと、ペアプロもピア・ラーニングも、できあがるもの（プログラムや学び）より先に、人と人の関わり合いの形に手を入れるやり方です。</p>
@@ -2634,6 +2653,9 @@
 <p>責めない振り返り：J. Allspaw (2012) "Blameless PostMortems and a Just Culture"（Etsy の技術ブログ Code as Craft、2012 年 5 月 22 日。<a href="http://web.archive.org/web/20261025192059/https://www.etsy.com/codeascraft/blameless-postmortems">Wayback の記録</a>で本文照合済）。叱られると思う技術者は、しくみを知るのに要る細部を話さなくなる（"an engineer who thinks they're going to be reprimanded are disincentivized to give the details necessary to get an understanding of the mechanism"）は「A Blameless Post-Mortem」の段、誤りを学びの見方で見る（"view mistakes, errors, slips, lapses, etc. with a perspective of learning"）は冒頭の近く。</p>
 <p>ミラーリングの検証：A. MacCormack, J. Rusnak, C. Baldwin (2012) "Exploring the duality between product and organizational architectures: A test of the 'mirroring' hypothesis", <em>Research Policy</em> 41(8)（出版社の版は有料。ハーバード・ビジネス・スクールの<a href="https://www.hbs.edu/ris/Publication%20Files/08-039_1861e507-1dc1-4602-85b8-90d71559d85b.pdf">作業論文 08-039</a>で本文照合済。頁は作業論文のもの）。どの対でも緩く結びついた組織の製品がはっきりと部分ごとに分かれ、変更の広がりで最大八倍の差（"In all of the pairs we examine, the product developed by the loosely-coupled organization is significantly more modular"・"up to a factor of eight"）は p.2、五つの分野の対の一覧は p.16 の Table 2。</p>
 <p>ミラーリングの例外：L. J. Colfer, C. Y. Baldwin (2016) "The mirroring hypothesis: theory, evidence, and exceptions", <em>Industrial and Corporate Change</em> 25(5)（出版社の版は有料。<a href="https://www.hbs.edu/ris/Publication%20Files/16-124_7ae90679-0ce6-4d72-9e9d-828872c7af49.pdf">作業論文 16-124</a>で本文照合済。頁は作業論文のもの）。142 の研究、企業と業界の記述的研究の 70%・22%・8% は p.3、開かれた共同のプロジェクトの記述的研究の 56% が支持しないことは p.4、作りかけのものが見えて手を入れられること（"actionable transparency"）は p.37、作りかけのもの自体を通した調整（"stigmergy"）は p.39。</p>
+<p>AI の助け（顧客対応）：E. Brynjolfsson, D. Li, L. Raymond (2023) "Generative AI at Work", NBER Working Paper 31161（<a href="https://arxiv.org/pdf/2304.11771v1">arXiv:2304.11771 の 2023 年 4 月の版</a>で本文照合済。頁は PDF のもの）。5,179 人、平均 14%、経験の浅い人と腕の低い人に大きく、経験と腕のある人にはわずか、AI が腕のある人の暗黙知を広げているという示唆（"the AI model disseminates the potentially tacit knowledge of more able workers"）は p.1 の要旨、下から五分の一の 35%（"who see a 35 percent increase in resolutions per hour"）は p.15。2024 年 11 月の改めた版では 5,172 人・平均 15% で、要旨に暗黙知の文が無い。</p>
+<p>AI の補助（プログラミング）：S. Peng, E. Kalliamvakou, P. Cihon, M. Demirer (2023) "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot"（<a href="https://arxiv.org/pdf/2302.06590">arXiv:2302.06590</a> で本文照合済）。HTTP サーバーの課題と 55.8% 速く（"completed the task 55.8% faster than the control group"）は p.1、95 人を二つの組に分けたことは p.5、経験の浅い人ほど効き目が大きい（"less experienced programmers benefit more from Copilot"）は p.8。</p>
+<p>AI の得意な範囲の内と外：F. Dell'Acqua ほか (2023) "Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of AI on Knowledge Worker Productivity and Quality", Harvard Business School Working Paper 24-013（<a href="https://mitsloan.mit.edu/sites/default/files/2023-10/SSRN-id4573321.pdf">MIT Sloan のサイトに置かれた SSRN の版</a>で本文照合済。頁は PDF のもの）。758 人、範囲の内の 12.2%・25.1%・40% を超える質（"they completed 12.2% more tasks on average, and completed tasks 25.1% more quickly"）、範囲の外の 19 ポイント（"consultants using AI were 19 percentage points less likely to produce correct solutions"）、ぎざぎざの境目（"jagged technological frontier"）は p.4 の要旨。</p>
 
 
 <p>出典：<a href="https://doi.org/10.1109/52.854064">L. Williams, R. R. Kessler, W. Cunningham, R. Jeffries (2000)</a> "Strengthening the case for pair programming", <em>IEEE Software</em> 17(4), 19–25（出版社の版は有料。第一著者の研究室が置いた誌面の写しの <a href="https://web.archive.org/web/20010807011332/http://collaboration.csc.ncsu.edu:80/laurie/Papers/ieeeSoftware.PDF">Wayback の記録</a>で本文照合済）。一人が書き、もう一人が見て欠陥・別の案・戦略を考え、周期的に役を替えることは p.20、実験の組み立てと 60% から最小 15% へは p.22、テストに通った割合の表と「より懸命に、より賢く」は p.23、自分でペアを選んだ人が多いという断りは p.24。</p>
