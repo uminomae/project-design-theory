@@ -1228,3 +1228,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（「信頼は、感情の中で、どこにあるのか」の章の頭の、一目ぼれと信頼の積み重ねの例を外した）
 - pages: どちらも、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（第四部 無意識の章の頭の段を、眠っているあいだと起きてからに分けて書き直す）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（スティーヴンソンの段を、夢で見た場面・起きてから書いた残り・のちの随筆の問い、の順に書き直した・#161）
+- pages: どちらも、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
