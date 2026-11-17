@@ -96,6 +96,7 @@ pjdhiro の頼み：「この対話は記録しておいて。私の発言を。
 | Peirce (1878) "Deduction, Induction, and Hypothesis", *Popular Science Monthly*, August 1878（再録の脚注のとおり。巻と頁は確かめていない） | 同じ 1923 年の再録 pp.131–153 | 本文照合済 | pp.131–136（豆の袋の三つの形・トルコの総督・化石・ナポレオン・仮説は弱い論証） |
 | Peirce (1908) "A Neglected Argument for the Reality of God", *The Hibbert Journal* 7(1):90–112 | Internet Archive の原誌の走査（`sim_the-hibbert-journal-a-quarterly-review-of-religion_1908-1909_7_1`・The Monist と同じ連なり） | 本文照合済 | p.92（Pure Play・Musement）、p.95（「Enter your skiff of Musement」）、p.100（探究の第一段階・Retroduction）、p.101（Retroduction は確かさを与えない）、p.104（すべての板はまず Retroduction で置かれる） |
 | Peirce (1903) ハーバードの講義 第 6・第 7（CP 5.171–5.174・5.180–5.189） | CP 第 5・6 巻（1934–35）の、個人が上げた写し（Internet Archive。権利は未確認） | 未照合（上げた人の分からない写しで読んだ）。CP 5.171–5.174・5.180–5.192 | 公開ページには、この写しを確かめ先として出さない。定式（CP 5.189）と「新しい考えを持ち込む唯一の論理の操作」（CP 5.172）は、次の行の SEP が原文で引く形で載せた |
+| ↑ 2026-11-18 | | | SEP の補遺に「1903」「Harvard」「lecture」の語が無く、引用は二次経由で本文照合済と書けないため、1903 年の講義の章「驚きから、仮説へ遡る」・三行の形・「唯一の論理の操作」・読む順の行・保持論点の一行を本文から外した（pjdhiro「本文から外す」「それもやって」・Issue #172）。語の二つの意味の畳みは SEP の項自身の書き方なので、三つの推論の章へ移して残した |
 | Douven (2011, 2025 改訂) "Abduction", *Stanford Encyclopedia of Philosophy* と補遺 "Peirce on Abduction" | 公開の項 | 本文照合済 | 冒頭の段（語の二つの意味）、補遺（CP 5.189・5.172 の引用と、Frankfurt の指摘） |
 
 ## 読み物に書いた Claude の読み
