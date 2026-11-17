@@ -32,15 +32,15 @@
 
 ## 本文の「共感」の一覧（書き換えの候補）
 
-判断のページ：付箋帳の一件（i20261117080831a5m）の links にある（答えを待っている。書き換えは答えのあと）。原語は原典で確かめた。
+判断のページ：付箋帳の一件（i20261117080831a5m）の links にあった。pjdhiro の答え（2026-11-17）で、問い 1〜5 を書き換えた（2026-11-18）。原語は原典で確かめた。
 
 | 問い | 場所 | 原語 | 案 |
 |---|---|---|---|
-| 1 | Love駆動開発 転移の段（本文と出典の行） | Sympathie（Freud 1912 p.171「Sympathie, Freundschaft, Zutrauen」・zb219124 の走査で確かめた） | 「好感」に替える |
-| 2 | Love駆動開発 防衛がゆるむ章の地の文 2・工事中の一行・安心・依存の章の頭 1 | （Claude の地の文。ロジャーズの聞き方を指す） | 「共感的理解」に替える |
-| 3 | パースの創造的な愛と、アブダクション 4・創造的思考とは 2 | sympathy（Peirce 1893 p.287） | 初出に原語を添える |
-| 4 | Love駆動開発「まだ分からないこと」の間の体験の段 | empathy（de Vignemont & Singer） | 「共感とは」への一文とリンクを足す |
-| 5 | Love の歴史 辞書の語義の表 | Merriam-Webster の love の語義（原文未確認・自動取得で読めなかった） | 原文を確かめて訳を直す |
+| 1 | Love駆動開発 転移の段（本文と出典の行） | Sympathie（Freud 1912 p.171「Sympathie, Freundschaft, Zutrauen」・zb219124 の走査で確かめた） | 済（pjdhiro の答え 2026-11-17：「好感」に替えず、「共感（Sympathie）」と原語を添える。本文と出典の行） |
+| 2 | Love駆動開発 防衛がゆるむ章の地の文 2・工事中の一行・安心・依存の章の頭 1 | （Claude の地の文。ロジャーズの聞き方を指す） | 済（答え 2026-11-17：「共感的理解」に替えた。ロジャーズが共感と呼んだ、という語の話の段は今のまま） |
+| 3 | パースの創造的な愛と、アブダクション 4・創造的思考とは 2 | sympathy（Peirce 1893 p.287） | 済（答え 2026-11-17：各ページの初出に「共感（sympathy）」と原語を添えた） |
+| 4 | Love駆動開発「まだ分からないこと」の間の体験の段 | empathy（de Vignemont & Singer） | 済（答え 2026-11-17：段の終わりに、使い分けは「共感とは」の表〔`empathy.html#em-usage`〕にある、の一文とリンクを足した） |
+| 5 | Love の歴史 辞書の語義の表 | Merriam-Webster の love の語義 4a（2025-09-29 の Wayback の記録で確かめた：「unselfish loyal and benevolent concern for the good of another: such as (1) the fatherly concern of God for humankind (2) brotherly concern for others」） | 済（答え 2026-11-17：原文に合わせ、「他者への共感・気遣い・世話」を「他者への兄弟のような気遣い」に、「神の人への気遣い」を「神の人への父のような気遣い」に直した） |
 | — | ウィニコット（Love駆動開発 2・安心とは 1） | empathy（Winnicott 1960 p.591「reliable in a way that implies the mother's empathy」・同じ巻の走査で確かめた） | 今のまま |
 | — | ヴァイラント（心理的防衛機制とは 2・心理的安全性とは 3・不安とは 2） | empathy（Vaillant 2011・PMC3182012「less anxious and lonely through empathy」で確かめた） | 今のまま |
 | — | ロジャーズ（不安とは 3・心理的安全性とは 1・Love駆動開発のミラーの段） | empathy・empathic understanding | 今のまま |
@@ -51,7 +51,7 @@ wiki（`pd/wiki/`）は正本から作り直すので、一覧に入れていな
 
 ## 残したこと
 
-- 本文の書き換え（上の一覧の問い 1〜5）。判断のページの答えを待つ。
+- 本文の書き換え（上の一覧の問い 1〜5）は、pjdhiro の答え（2026-11-17）どおりに済ませた（2026-11-18）。英語版（`*-en.md`）と wiki は触っていない。
 - Heimann 1950 は、Internet Archive が走査した IJP 31 の巻で本文が読めた（SURVEY-04 §1-7）。読み物の本文に、読めたものとして書くのは第四部を書くとき。
 - 河合隼雄・ユング派の、治療者がクライアントと同じ体験をするようになる、という論の原典。
 - Batson 2009（共感と呼ばれる八つの現象）・Rogers 1959・de Waal 1996 の、載せてよい写し。
