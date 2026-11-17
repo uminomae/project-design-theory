@@ -1223,3 +1223,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（受容の章の頭の例を外して元の形に戻し、理想化の章の『オセロー』の段でハンカチの話がイアーゴーの作り話と読めるように、安心と依存の章のハーロウの段で二つの人形が乳と触れる安心を分ける実験と読めるようにした）
 - pages: どちらも、直したのは章の頭の例で、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（第四部 感情の章の頭の例を外す）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（「信頼は、感情の中で、どこにあるのか」の章の頭の、一目ぼれと信頼の積み重ねの例を外した）
+- pages: どちらも、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
