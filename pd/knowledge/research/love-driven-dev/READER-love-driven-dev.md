@@ -2600,6 +2600,14 @@ Claude は、二つの体験を次のように読んでいます。どちらも�
 
 <strong>pjdhiro の見方：</strong>意思決定や判断の"方法"と、真理のような発生源（または、その存在の駆動源）の二つを探していたのかもしれない。
 
+<a id="ldd-tree-rings"></a>では、この見方は、どこから全体を見ているのでしょうか。この見方と創造の五段階を、一つの視点として言おうとすると、どうなるかについて、pjdhiro は次のように見ています。
+
+<strong>pjdhiro の見方：</strong>Love駆動開発や創造の5段階を視点で表現すると、今ここを見ることで全体を見る、という逆説的なものになってしまいそうです。
+
+この逆説は、木の年輪にたとえると、一枚の絵で見えます。切り株の断面は、今の木を切った一枚の面です。その面に、芽を出した年から今年までの年が、輪になって全部並んでいます。あまり育たなかった年の細い輪も、よく育った年の太い輪も、同じ面の中にあります。空から森を見下ろすのも、全体を見る一つのやり方です。年輪は、それとは別に、今の断面を見ることで、過去から今までの全体を見るやり方です。
+
+この読み物の見方も、年輪に近い形をしています。今ここに見えている渦（一つの出来事や、一つの気持ち）には、その下の場の揺らぎと、それまでの関わり合いが写っています。ただ、年輪に写るのは一本の木の時間で、森の全体ではありません。次の章からの教育・計算機科学・哲学・禅の視点も、それぞれ一枚の断面として、この見方を見ていきます。
+
 🚧 工事中：二つの答えを束ねた定義は、これから書きます。
 
 ## 教育の視点で見る
@@ -2678,12 +2686,24 @@ Love駆動開発の言葉に置き換えると、できあがるもの（渦）�
 
 どちらも、形（チームの分け方・採算の単位）を変えながら、その下にある信頼や心に手を入れています。Love駆動開発は、その下の層、つまり場に何が湧いているかを見る側に立ちます。
 
-では、逆コンウェイの作戦のように、先に組織を Love駆動開発の形にしたら、どんなシステムができるでしょうか。思考実験として考えてみます。
+では、逆コンウェイの作戦のように、先に組織を Love駆動開発の形にしたら、どんなシステムができるでしょうか。思考実験として考えてみます（Claude の読み）。
 
-- 守りの向きが変わる：責めず、隠さない関わり合いでは、誰のせいかを残すための記録が、何が起きたかを皆で学ぶための記録に変わるかもしれません。守りの重みも、内側で互いを疑って固める壁から、外からの侵入や搾取を見分ける境目へ移るかもしれません。
+- 守りの向きが変わる：責めず、隠さない関わり合いでは、誰のせいかを残すための記録が、何が起きたかを皆で学ぶための記録に変わるかもしれません。守りの重みも、内側で互いを疑って固める壁から、外からの侵入や搾取を見分ける境目へ移るかもしれません。ネット通販の Etsy の技術者だったオールスポーは、2012 年に、叱られると思う技術者は、何が起きたかを知るのに要る細部を話さなくなる、と書いています。
 - 信号が早く表に出る：不安や違和感を口にしてよい場では、まずいことの兆しを隠さずに出す習慣が育ちます。システムも、異常を早く、皆に見える形で知らせるものになるかもしれません。
-- 形が固まりきらない：渦が場の揺らぎから巻いてはほどけるように、チームとシステムの部分も、要るときに生まれ、役目を終えたらほどけることを前提にした形になるかもしれません。
-- 一つの物差しに寄りきらない：いくつもの価値を同時に見る関わり合いからは、一つの数だけを最大にするのでなく、いくつもの見方で確かめられるシステムができるかもしれません。
+- 継ぎ目で話し合える：コンウェイは、システムの二つの部分がつながっているなら、それを作った二つのグループは、つなぎ方（インターフェース）を話し合って決めたはずだ、と書いています。この読み物の言葉では、継ぎ目は縁、つまり異質なものが出会い、ぶつかる境目です。立場の違いを口にできる場では、継ぎ目は、違いを話し合って何度でも決め直す所になるかもしれません。口にできない場では、一度決めたら動かせない壁になるかもしれません。
+- 形が固まりきらない：渦が場の揺らぎから巻いてはほどけるように、チームとシステムの部分も、要るときに生まれ、役目を終えたらほどけることを前提にした形になるかもしれません。コンウェイ自身も、最初の設計が最善であることはほとんどないので、組織が柔らかいことが大切だ、と結んでいます。
+
+四つのうち、守りと信号の二つは、DevOps や、責めない振り返りの議論でも言われてきたことです。この読み物の見方から加わるのは、組織図の線の下で場に何が湧いているかも、システムに写るのではないか、という読みです。同じ組織図でも、安全が感じられず生存の信号が強く湧く場では、意思の通い方が守りの形になり、システムもその形を写すかもしれません。逆向きも、同じ読みで見えます。コンウェイは、意思の通い方が柔らかくない組織は、作る設計のすべてに自分の姿を押し付ける、と書いています。
+
+<details><summary>詳しく — コンウェイの法則は確かめられたか、当てはまらない場合</summary>
+
+コンウェイの見方は、のちに、ミラーリング（鏡写し）の仮説として調べられました。マコーマックらは、同じ働きと規模のソフトウェアを、緩く結びついた組織（オープンソース）と、固く結びついた組織（企業や小さな専任のチーム）とで対にして比べました。五つの分野のどの対でも、緩く結びついた組織が作ったほうが、部分ごとに分かれていました。一つの部分の変更がほかへ広がる度合いで、最大で八倍の差がありました。ただ、比べた対は五つの分野だけです。
+
+コルファーとボールドウィンは 2016 年に、142 の研究をまとめました。企業や業界を記述した研究では、70% が強く支持し、22% が一部を支持し、支持しないのは 8% でした。一方、オープンソースのような、開かれた共同のプロジェクトを記述した研究では、56% が支持しませんでした。そこでは、密に絡むコードを、組織の結びつきの薄い人たちが作っていました。代わりに働いていたのは、作りかけのものが誰にでも見え、誰でも手を入れられることでした。著者らは、これを、作りかけのもの自体を通して調整するやり方として論じています。
+
+この読み物の言葉で読むと、組織の線を通らなくても、皆に見える渦そのものが、関わり合いの場になりうる、ということかもしれません（Claude の読み）。組織の形だけが、システムの形を決めるわけではない、ということでもあります。
+
+</details>
 
 <a id="ldd-pair-programming"></a>関わり合いのいちばん小さな形は、二人です。ソフトウェアの開発には、ペアプログラミング（ペアプロ）と呼ばれるやり方があります。二人で一台のコンピュータに向かい、一つのプログラムを書きます。一人がキーボードを持って書き、もう一人はその作業を横で見ながら、誤りを探し、別の案を考え、先の見通しを考えます。二人は、ときどき役を替えます。ウィリアムズらは、大学の授業でこのやり方を試し、2000 年に報告しました。二人組は、慣れたあとには、かかった人の時間が一人で書くより最小で 15% 多いだけになり、自動のテストに通る割合は、四つの課題のどれでも一人のときより高くなりました。ただ、二人組で試した学生は、全員が自分からペアを望んだ人たちでした。
 
@@ -2709,13 +2729,19 @@ pjdhiro は、計算機科学の分野を、人間や組織の模倣とも言え
 
 <!--REF:計算機科学-->
 
-出典：M. E. Conway (1968) "How Do Committees Invent?", *Datamation* 14(4)。著者のサイトの[本文](https://www.melconway.com/Home/Committees_Paper.html)（出版社の許しを得た再録）で本文照合済。八人で COBOL と ALGOL のコンパイラを作り、五人と三人に分け、五つと三つの段階で動いた例は「Examples」の段、設計は組織の意思の通い方の形を写すように縛られる（"organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations"）は結びの段。コンウェイの法則という呼び名は、ブルックスが『人月の神話』で付けたと、著者のサイトの「[Conway's Law](https://www.melconway.com/Home/Conways_Law.html)」の頁にあります。
+出典：M. E. Conway (1968) "How Do Committees Invent?", *Datamation* 14(4)。著者のサイトの[本文](https://www.melconway.com/Home/Committees_Paper.html)（出版社の許しを得た再録）で本文照合済。八人で COBOL と ALGOL のコンパイラを作り、五人と三人に分け、五つと三つの段階で動いた例は「Examples」の段、設計は組織の意思の通い方の形を写すように縛られる（"organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations"）は結びの段（Conclusion）。最初の設計が最善であることはほとんどなく、組織が柔らかいことが大切だ（"Because the design which occurs first is almost never the best possible, the prevailing system concept may need to change. Therefore, flexibility of organization is important to effective design."）も結びの段。二つの部分がつながっていれば、作った二つのグループはインターフェースを話し合って決めたはずだ（"must have negotiated and agreed upon an interface specification"）は「Relating the Two」の段。意思の通い方が柔らかくない組織は、作る設計のすべてに自分の姿を押し付ける（"will stamp out an image of itself in every design it produces"）は「Systems Image Their Design Groups」の段。コンウェイの法則という呼び名は、ブルックスが『人月の神話』で付けたと、著者のサイトの「[Conway's Law](https://www.melconway.com/Home/Conways_Law.html)」の頁にあります。
 
 逆コンウェイの作戦：M. Fowler (2022) "[Conway's Law](https://martinfowler.com/bliki/ConwaysLaw.html)"（著者のサイト。本文照合済）。ほしい設計を促すように開発チームの組織の形を変えること（"deliberately alter the development team's organization structure to encourage the desired software architecture"）、小さく長続きし、顧客に価値を届けるのに要る技能をそろえたチームで、独立して直せるサービスを促す使い方、名付けたのはリーロイとサイモンズで、Cutter IT Journal の 2010 年 12 月号の記事、はこの頁の注 4。
 
 DevOps：J. Allspaw, P. Hammond (2009) "10+ Deploys Per Day: Dev and Ops Cooperation at Flickr"（O'Reilly Velocity 2009 の講演）。ハモンドのサイトの[講演の資料](https://paulhammond.org/2009/06/velocity/10deploys.pdf)で本文照合済。開発と運用の協力、道具と文化（"Lowering risk of change through tools and culture"）、文化の四つ（"1. Respect"・"2. Trust"・"3. Healthy attitude about failure"・"4. Avoiding Blame"）は資料の中ほど。
 
 アメーバ経営：稲盛和夫オフィシャルサイトの「[アメーバ経営](https://www.kyocera.co.jp/inamori/about/manager/amoeba/)」と「[市場に直結した部門別採算制度の確立](https://www.kyocera.co.jp/inamori/about/manager/amoeba/amoeba01.html)」の頁で本文照合済。小集団に分けて独立採算で運営する、アメーバ間で売買を発生させる、全員参加経営、「アメーバ経営においても、人の心がベースとなっている」（稲盛『アメーバ経営』からの引用として頁に載るもの）。
+
+責めない振り返り：J. Allspaw (2012) "Blameless PostMortems and a Just Culture"（Etsy の技術ブログ Code as Craft、2012 年 5 月 22 日。[Wayback の記録](http://web.archive.org/web/20261025192059/https://www.etsy.com/codeascraft/blameless-postmortems)で本文照合済）。叱られると思う技術者は、しくみを知るのに要る細部を話さなくなる（"an engineer who thinks they're going to be reprimanded are disincentivized to give the details necessary to get an understanding of the mechanism"）は「A Blameless Post-Mortem」の段、誤りを学びの見方で見る（"view mistakes, errors, slips, lapses, etc. with a perspective of learning"）は冒頭の近く。
+
+ミラーリングの検証：A. MacCormack, J. Rusnak, C. Baldwin (2012) "Exploring the duality between product and organizational architectures: A test of the 'mirroring' hypothesis", *Research Policy* 41(8)（出版社の版は有料。ハーバード・ビジネス・スクールの[作業論文 08-039](https://www.hbs.edu/ris/Publication%20Files/08-039_1861e507-1dc1-4602-85b8-90d71559d85b.pdf)で本文照合済。頁は作業論文のもの）。どの対でも緩く結びついた組織の製品がはっきりと部分ごとに分かれ、変更の広がりで最大八倍の差（"In all of the pairs we examine, the product developed by the loosely-coupled organization is significantly more modular"・"up to a factor of eight"）は p.2、五つの分野の対の一覧は p.16 の Table 2。
+
+ミラーリングの例外：L. J. Colfer, C. Y. Baldwin (2016) "The mirroring hypothesis: theory, evidence, and exceptions", *Industrial and Corporate Change* 25(5)（出版社の版は有料。[作業論文 16-124](https://www.hbs.edu/ris/Publication%20Files/16-124_7ae90679-0ce6-4d72-9e9d-828872c7af49.pdf)で本文照合済。頁は作業論文のもの）。142 の研究、企業と業界の記述的研究の 70%・22%・8% は p.3、開かれた共同のプロジェクトの記述的研究の 56% が支持しないことは p.4、作りかけのものが見えて手を入れられること（"actionable transparency"）は p.37、作りかけのもの自体を通した調整（"stigmergy"）は p.39。
 
 <!--REF:計算機科学-->
 
