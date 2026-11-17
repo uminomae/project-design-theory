@@ -1173,3 +1173,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（理想化の章の例を『オセロー』第 3 幕第 3 場に替え、理想化と怒りの組の段を足した。安心・依存の章の例をハーロウ 1958 の布の母の子猿に替えた。段階と性格の章の例を、信頼の語の後ろにある支配と服従・依存・保身・受容・自信・不安と安心の並びに作り直した・#161）
 - pages: どちらも、変えたのは章の頭の例と理想化の章の一段で、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（第七部の計算機科学・哲学・禅の章の頭の直し）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（計算機科学の章に逆コンウェイの法則から見る段、哲学の章の頭の例をアインシュタインの列車と石に、禅の章の十牛図にあるがままの自己に還り現実で現す段を足した・#155）
+- pages: どちらも、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。

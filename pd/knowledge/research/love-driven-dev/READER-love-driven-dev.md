@@ -2539,6 +2539,10 @@ Claude は、二つの体験を次のように読んでいます。どちらも�
 
 pjdhiro は、計算機科学の分野を、人間や組織の模倣とも言える、と見ています。この章では、AI のようなわかりやすい例を手がかりに、計算機科学の視点から、このページの見方と似た形を探します。
 
+<a id="ldd-inverse-conway"></a>まず、コンウェイの法則を逆から使う考え方から見ます。ほしいシステムの形が先にあるなら、先にチームの分け方を変えて、その形が生まれるように促す、というもので、2010 年にリーロイとサイモンズが逆コンウェイの作戦（inverse Conway maneuver）と名付けました。価値を届けるのに要る技能をそろえた、小さく長続きするチームを置くと、互いに独立して直せるサービスが生まれやすい、という使い方がよく語られます。
+
+この読み物の見方から逆コンウェイの法則を見ると、次のように読めます（Claude の読み）。できあがるシステムは、場に巻いた渦の一つで、それを作る人たちの意思の通い方を写します。この読み物は、その意思の通い方の下に、もう一つの層を見てきました。誰が誰を信頼し、どこで安心して言えるか、という関係の場です。第六部の「[心の言葉](#ldd-words)」の段で見た Google のチームの調査でも、良いチームを分けたのは、誰がいるかより、メンバーがどう関わり合うかで、中でも心理的安全性でした。組織図を描き直すことは、意思の通い方を変える一つの手です。けれど、図の線は場の一つの切り取りで、線を引き直しても、場の信頼や安心が変わらなければ、意思は図のとおりには通わないかもしれません。逆コンウェイの法則が本当に動かそうとしているのは、組織図の手前にある、この場だと見ることができます。デザインが関わる先は、形にするものと、それが生まれる場の両方だ、と「[デザインは、どこに関わるか](#ldd-design-field)」の章で見たのと同じ向きです。Love駆動開発は、システムの形を決める手前で、その場に何が湧いているかを見る側に立ちます。
+
 🚧 工事中です。
 
 <details><summary>出典</summary>
@@ -2547,13 +2551,15 @@ pjdhiro は、計算機科学の分野を、人間や組織の模倣とも言え
 
 出典：M. E. Conway (1968) "How Do Committees Invent?", *Datamation* 14(4)。著者のサイトの[本文](https://www.melconway.com/Home/Committees_Paper.html)（出版社の許しを得た再録）で本文照合済。八人で COBOL と ALGOL のコンパイラを作り、五人と三人に分け、五つと三つの段階で動いた例は「Examples」の段、設計は組織の意思の通い方の形を写すように縛られる（"organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations"）は結びの段。コンウェイの法則という呼び名は、ブルックスが『人月の神話』で付けたと、著者のサイトの「[Conway's Law](https://www.melconway.com/Home/Conways_Law.html)」の頁にあります。
 
+逆コンウェイの作戦：M. Fowler (2022) "[Conway's Law](https://martinfowler.com/bliki/ConwaysLaw.html)"（著者のサイト。本文照合済）。ほしい設計を促すように開発チームの組織の形を変えること（"deliberately alter the development team's organization structure to encourage the desired software architecture"）、小さく長続きし、顧客に価値を届けるのに要る技能をそろえたチームで、独立して直せるサービスを促す使い方、名付けたのはリーロイとサイモンズで、Cutter IT Journal の 2010 年 12 月号の記事、はこの頁の注 4。
+
 </details>
 
 ## 哲学の視点で見ると、何が近いか
 
 <a id="ldd-philosophy"></a><a id="ldd-existentialism"></a>この読み物の見方は、哲学では、どんな考え方に近いのでしょうか。
 
-たとえば、哲学は、暮らしや仕事から離れたところで、どちらが正しいかを言葉の上で突き詰める学問だ、とよく言われます。けれど、哲学者のジェームズは、1907 年の講義『プラグマティズム』の第二講を、山でキャンプをしていたときの言い合いから始めています。木の幹の片側にリスがしがみつき、反対側に人が立っています。人はリスを見ようと、木の周りを急いで回りますが、リスも同じ速さで反対へ回り、いつも木を挟んでいます。では、人はリスの周りを回っているのか。皆が二手に分かれて譲らず、数も同じで、戻ってきたジェームズに加勢を求めました。ジェームズは、どちらが正しいかは、「回る」を実際にどういう意味で言うかによる、と答えました。リスの北から東、南、西へと位置を移っていく意味なら、人は回っています。リスの前から右、後ろ、左へと回り込む意味なら、リスはいつも腹を人に向けているので、回っていません。そう分ければ、それ以上言い合うことはない、と。言い合いは、どちらかが勝って終わったのではなく、実際に何が違うのかを問うたところで消えました。
+たとえば、正しい答えは、誰が見ても一つに決まっている、とよく言われます。けれど、アインシュタインは、1917 年の一般向けの本『特殊および一般相対性理論について』で、一定の速さで走る列車の窓から石を落とす例を挙げています。空気の抵抗を考えなければ、列車の中の人には、石はまっすぐ下へ落ちて見え、線路わきの道に立つ人には、放物線を描いて落ちて見えます。どちらが本当の道筋か、という問いに、アインシュタインは、ひとりでに決まった道筋はなく、何を基準に見るかによって決まる道筋があるだけだ、と答えました。
 
 この章では、この読み物の見方を、哲学の四つの流れと並べます。プラグマティズム、純粋経験、実存主義、東洋の古典です。どこが近く、どこが違って見えるかを、原典の言葉で並べます。近い・違うの見立ては、このページを書いた Claude の読みです。章の終わりに、ここから先を原典で読むための案内を置きます。
 
@@ -2575,7 +2581,9 @@ pjdhiro は、計算機科学の分野を、人間や組織の模倣とも言え
 
 C. S. Peirce, "The Fixation of Belief", *Popular Science Monthly* 12, 1877・"How to Make Our Ideas Clear", 同 12, 1878。どちらも、再録の [Cohen 編『Chance, Love, and Logic』（1923・パブリックドメイン。Internet Archive にあるトロント大学の蔵書の走査）](https://archive.org/details/chanceloveandlog00peiruoft)で本文と照らしました。疑いの苛立ちと探究の目的（"the sole object of inquiry is the settlement of opinion"）は p.16、信念は習慣を据えるもの（"The essence of belief is the establishment of a habit"）は p.41、考えの意味は考えられる効果の全体という規則は p.45 です。
 
-William James, *Pragmatism: A New Name for Some Old Ways of Thinking*, Longmans, Green, 1907。[Project Gutenberg のパブリックドメインの本文](https://www.gutenberg.org/ebooks/5116)で照らしました。パースの 1878 年の論文を挙げるところと、向きの構え（"THE ATTITUDE OF LOOKING AWAY FROM FIRST THINGS, PRINCIPLES, 'CATEGORIES,' SUPPOSED NECESSITIES; AND OF LOOKING TOWARDS LAST THINGS, FRUITS, CONSEQUENCES, FACTS."）は第二講「What Pragmatism Means」、真理は観念に起こる（"Truth HAPPENS to an idea."）は第六講「Pragmatism's Conception of Truth」です。章の頭のリスの言い合いは第二講の冒頭で、1907 年の版の走査から起こした [Wikisource の本文（パブリックドメイン）](https://en.wikisource.org/wiki/Pragmatism:_A_New_Name_for_Some_Old_Ways_of_Thinking/Lecture_II)の pp.43–45 で照らしました（"Which party is right ... depends on what you practically mean by 'going round' the squirrel."）。
+章の頭の列車と石：A. Einstein (1917) *Über die spezielle und die allgemeine Relativitätstheorie*。R. W. Lawson の英訳（1920 年。1931 年の刷り）の [Wikisource の本文（パブリックドメイン）](https://en.wikisource.org/wiki/Relativity_%281931%29/Section_3)で照らしました（訳）。第 3 節「Space and Time in Classical Mechanics」の、窓から落とした石がまっすぐにも放物線にも見える例と、"there is no such thing as an independently existing trajectory ..., but only a trajectory relative to a particular body of reference" です。
+
+William James, *Pragmatism: A New Name for Some Old Ways of Thinking*, Longmans, Green, 1907。[Project Gutenberg のパブリックドメインの本文](https://www.gutenberg.org/ebooks/5116)で照らしました。パースの 1878 年の論文を挙げるところと、向きの構え（"THE ATTITUDE OF LOOKING AWAY FROM FIRST THINGS, PRINCIPLES, 'CATEGORIES,' SUPPOSED NECESSITIES; AND OF LOOKING TOWARDS LAST THINGS, FRUITS, CONSEQUENCES, FACTS."）は第二講「What Pragmatism Means」、真理は観念に起こる（"Truth HAPPENS to an idea."）は第六講「Pragmatism's Conception of Truth」です。
 
 </details>
 
@@ -2736,7 +2744,7 @@ Bryan Van Norden, "Wang Yangming", *Stanford Encyclopedia of Philosophy*, 2014�
 
 <a id="ldd-zen"></a>禅は、この読み物の見方と、どこが近いのでしょうか。
 
-たとえば、禅は、静かに座って心を空っぽにする修行だ、とよく言われます。けれど、宋の時代の禅僧、廓庵の『十牛図』は、修行を、牛を探して連れ帰る十の場面として描いています。牛を探しに出る、足跡を見つける、牛を見つける、捕まえる、飼い慣らす、牛に乗って家に帰る、と進み、牛を忘れ、やがて牛も自分も見えなくなる場面と、もとに還る場面を経て、十番目では、ひょうたんを提げて町へ入り、酒屋や魚屋のあいだで人々とともにいます。一番目の場面の序は、もともと失っていないのに、なぜ追い求めるのか、と始まります。
+たとえば、禅は、静かに座って心を空っぽにする修行だ、とよく言われます。けれど、宋の時代の禅僧、廓庵の『十牛図』は、修行を、牛を探して連れ帰る十の場面として描いています。牛を探しに出て、見つけ、捕まえ、飼い慣らし、牛に乗って家に帰ります。やがて牛も自分も見えなくなったあと、九番目の場面では、もとに還り、水はおのずと果てしなく、花はおのずと紅い、と、物があるがままに見えています。十番目では、ひょうたんを提げて町へ入り、酒屋や魚屋のあいだで人々とともにいます。一番目の場面の序は、もともと失っていないのに、なぜ追い求めるのか、と始まります。探していたものは、はじめから自分の中にありました。十牛図の道筋は、心を空っぽにしたところで終わらず、あるがままの自分に還り、その自分を、町の暮らしという現実の中で現していくところまで続いています。
 
 この読み物は、ところどころで、禅や仏教の言葉を引いてきました。pjdhiro は、禅の教えをこの読み物の参考になるものと見ています。そして、禅を、自分の精神を開発していく、歴史のあるやり方と見ています。そこで、禅の視点でも見ます。まず、ここまでに引いた言葉の場所を並べます。
 
@@ -2758,7 +2766,7 @@ Bryan Van Norden, "Wang Yangming", *Stanford Encyclopedia of Philosophy*, 2014�
 
 <!--REF:東洋の思想-->
 
-出典：廓庵『十牛図頌』（慈遠の序を付けたもの。卍新纂続蔵経 第 64 冊 No.1269「住鼎州梁山廓庵和尚十牛圖頌并序」）。CBETA の[電子版の本文](https://cbetaonline.dila.edu.tw/zh/X1269_001)で本文照合済。十の場面の名（尋牛・見跡・見牛・得牛・牧牛・騎牛歸家・忘牛存人・人牛俱忘・返本還源・入鄽垂手）は各段の題、一番目の序「從來不失，何用追尋？」は X64n1269_p0773c02、十番目の序「提瓢入市，䇿杖還家。酒肆魚行，化令成佛」は p0775a08。訳は Claude。
+出典：廓庵『十牛図頌』（慈遠の序を付けたもの。卍新纂続蔵経 第 64 冊 No.1269「住鼎州梁山廓庵和尚十牛圖頌并序」）。CBETA の[電子版の本文](https://cbetaonline.dila.edu.tw/zh/X1269_001)で本文照合済。十の場面の名（尋牛・見跡・見牛・得牛・牧牛・騎牛歸家・忘牛存人・人牛俱忘・返本還源・入鄽垂手）は各段の題、一番目の序「從來不失，何用追尋？」は X64n1269_p0773c02、九番目の序「本來清淨，不受一塵」と頌の「水自茫茫花自紅」は p0774c20–c23、十番目の序「提瓢入市，䇿杖還家。酒肆魚行，化令成佛」は p0775a08。訳は Claude。
 
 </details>
 
