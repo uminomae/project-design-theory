@@ -1288,3 +1288,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第四部の章の頭の例と結びを直した。部の頭の案内の「概説とリンクだけ」を外した）
 - pages: `concepts/Love 駆動開発` は前提の五つの章の「概説とリンクの形で」を「論の概説の形で」に直した。どちらも checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（物理の章の頭にボームの群盲象）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（物理の章の頭に、ボームが『量子論』で光の粒子と波を群盲象を評すの話で説明した段を置き、経営学の章の畳みの同じ段は一文に縮めた）
+- pages: どちらも、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
