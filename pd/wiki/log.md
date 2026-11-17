@@ -1298,3 +1298,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（防衛がゆるむ章の頭に北風と太陽を一句で戻し、ミラーの研究の例を縮めた）
 - pages: どちらも、本文を変えず checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（信仰の章の頭の例を替えた）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（信仰の章の頭をミラーからキャンピングの 2011 年の予言に替え、依存の章のハーロウの括弧の一文を外した）
+- pages: どちらも、本文を変えず checked を今の時刻にした。
