@@ -1248,3 +1248,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第一部の四章の例と段を直し、パースが近い、の文に主語 pjdhiro を置いた）
 - pages: `concepts/Love 駆動開発` のパースの段の頭を、正本に合わせて pjdhiro の考えとして書いた。ほかは wiki が引く定義・見方・引用が変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（経営学の章の当てはめを小さな表に・#155）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（レスターの説明と経営学の駆動源の当てはめを、一文から小さな表にした）
+- pages: どちらも、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
