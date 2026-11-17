@@ -1343,3 +1343,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（GRIT の項を、忍耐強さの中身〔固いか柔らかいか・レジリエンスとの重なり・どんな心の働きか〕が分かれていないという読み解きの注意から組み直し、侘びをその柔らかい忍耐の像として置いた）
 - pages: どちらも GRIT と侘びを引いていないので、本文はそのまま。
+
+## [2026-11-18] check | Love 駆動開発（構想の段に pjdhiro の自己紹介の言葉）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（構想の段の料理人のたとえのあとに、「家政婦さんみたいなことが得意です」の自己紹介のカードを置いた）
+- pages: どちらも構想の段の例を引いていないので、本文はそのまま。
