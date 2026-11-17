@@ -1163,3 +1163,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第四部の章の頭の例を替えた・足した：信頼や愛の感じの章はベルリオーズの回想録、発達の段階の章はボウルビィ 1958 の乳児の人見知り、不安の章は問いの置き直し。信仰の章に、フロイト 1927 の否認・寄る辺なさと父・理想化との違いの段を足した・#161）
 - pages: どちらも、変えたのは章の頭の例と信仰の章の答えの段で、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（第六部の入力の章の例を日常の例に）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（入力を整える章の頭の例を、ホイートストンの立体鏡から、健康診断の精密検査・ナビ・3D の眼鏡の日常の例に替え、出典の畳みを外した・#155）
+- pages: どちらも、替えたのは章の頭の例で、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
