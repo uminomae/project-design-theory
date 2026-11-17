@@ -2,7 +2,7 @@
 
 読み物 `READER-empathy.md`（公開は `reader/empathy.html`）の、発言の記録・読んだ原典・照合の状態・残したことを置く。Issue #151。原典ごとの照合は `SURVEY-01-classics.md`（古典・哲学・精神分析）と `SURVEY-02-psychology.md`（心理学・神経科学）。
 
-#170 の調べ（共感と呼ばれてきた現象を、創造の五段階と、発達による自他の分かれ方で整理する）：整理は `SURVEY-03-five-stages-development.md`。原典ごとの照合は `SURVEY-03a-collective.md`（Le Bon・Durkheim・Barsade・Cikara ら）と `SURVEY-03b-development.md`（Scheler の一体感の型と発達の法則・Kegan・Cook-Greuter・Lamm ら・Bischof-Köhler・Rochat）。「共感とは」への置き方は判断のページで答え待ち（本文はまだ書かない）。
+#170 の調べ（共感と呼ばれてきた現象を、創造の五段階と、発達による自他の分かれ方で整理する）：整理は `SURVEY-03-five-stages-development.md`。原典ごとの照合は `SURVEY-03a-collective.md`（Le Bon・Durkheim・Barsade・Cikara ら）と `SURVEY-03b-development.md`（Scheler の一体感の型と発達の法則・Kegan・Cook-Greuter・Lamm ら・Bischof-Köhler・Rochat）。「共感とは」への置き方は判断のページ（URL は手元のセッションの記録）で答え待ち（本文はまだ書かない）。
 
 ## pjdhiro の発言（原文のまま）
 
