@@ -1153,3 +1153,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第七部の章の頭に、問い・今の像・例と出典の畳みを足した。コンウェイの論文・ジェームズのリスの言い合い・廓庵の十牛図・ファインマンのカーゴ・カルト・ドストエフスキーとウェグナーらの白い熊・#155）
 - pages: どちらも、足したのは章の頭の問い・今の像と例で、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（第四部 無意識の章の頭の例）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（無意識の章の頭の例を、ニスベットとウィルソンのストッキングの調査から、スティーヴンソン 1888「A Chapter on Dreams」の、夢で『ジキル博士とハイド氏』の場面を見て、夢を見ているのは誰かと問うた話に替えた・#161）
+- pages: どちらも、替えたのは章の頭の例で、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。

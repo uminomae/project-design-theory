@@ -776,7 +776,7 @@ pjdhiro は、この探究で、少なくとも「価値創造とは何か」に
 
 <!--OPEN-->
 
-人の心は、本人が思っているとおりにできているのでしょうか。たとえば、自分の気持ちや、なぜそれを選んだのかは、自分がいちばんよく知っている、とよく言われます。けれど、1970 年代に、ニスベットとウィルソンは、店先で消費者調査という名目で、通りがかりの人に、台に並べた四足のストッキングから、いちばん質のよいものを選んでもらいました。四足は、まったく同じ品でした。選ばれたのは右の端に置いたものが多く、左の端のおよそ四倍でした。選んだわけを聞くと、置き場所を挙げた人は一人もいませんでした。置き場所のせいではないかと直接聞くと、ほとんどの人が否みました。選んだ本人が、選んだわけを知らなかったのです。
+人の心は、本人が思っているとおりにできているのでしょうか。たとえば、自分が考えたことや自分の気持ちは、自分がいちばんよく知っている、とよく言われます。けれど、『ジキル博士とハイド氏』のかなめの場面は、作者のスティーヴンソンが眠っているあいだに来ました。1888 年の随筆「夢についての一章」によれば、スティーヴンソンは筋を探して二日のあいだ頭を絞り、二晩めの夢で、窓の場面と、何かの罪で追われたハイドが粉薬をのみ、追っ手の目の前で姿を変える場面を見ました。スティーヴンソンは、眠っているあいだに物語を連載のように少しずつ語って聞かせ、どこへ向かうのかを本人に知らせないものを「小さな人たち」と呼び、彼らは誰なのか、夢を見ているのは誰なのか、と問いました。夢を見ているのは自分だ、と答えたうえで、起きていて自分でやっていると思い込んでいるときにも、おそらく小さな人たちが仕事をしているのだろう、と書いています。
 
 pjdhiro は、人の心について、こう見ています。
 
@@ -822,7 +822,7 @@ pjdhiro は、人の心について、こう見ています。
 
 原典を読むなら：『夢解釈』の初版の日本語訳は、『夢解釈　初版』上・下（金関猛訳、中央公論新社、2012）です（[CiNii Books](https://ci.nii.ac.jp/ncid/BB09485996)）。
 
-出典：章の頭のストッキングの調査＝[Nisbett & Wilson (1977)](https://doi.org/10.1037/0033-295X.84.3.231) "Telling more than we can know: Verbal reports on mental processes", *Psychological Review* 84(3):231–259（本文照合済。節「Erroneous Reports about Position Effects on Appraisal and Choice」pp.243–244。店先での消費者調査の名目・同じ四足のストッキングと 52 人・右の端がおよそ四倍・置き場所を挙げた人がいないこと・直接聞かれてほとんどが否んだこと。読んだ写しは、[プリンストン大学の研究者のサイトにある誌面の走査](https://web.math.princeton.edu/~sswang/literature_general_unsorted/Nisbett-Wilson-PsychologicalReview1977.pdf)）。
+出典：章の頭のスティーヴンソンの随筆＝Stevenson (1888) "A Chapter on Dreams", *Scribner's Magazine* 3(1):122–128（本文照合済。初出の誌面を読んだ。写しは [Internet Archive にある 1888 年 1 月号](https://archive.org/details/sim_scribners-magazine_1888-01_3_1)。のちに *Across the Plains*（1892）に収められた。頁は、同じ文を照らした [Biographical Edition（Scribner、1905 年の版権）](https://archive.org/details/acrossplainswith00stevuoft) のもので、連載のように語り、行き先を知らせないことと、彼らは誰か・夢を見ているのは誰かの問いは pp.224–225、夢を見ているのは自分で、起きているときにも手を貸していることは p.225、二日頭を絞って二晩めに窓の場面と姿を変える場面を夢に見たことは pp.227–228。パブリックドメイン）。
 
 出典：第四部の頭の、Love と信頼・安心を重ねて書いてきた研究の段＝[Plutchik (2001)](https://kli.ac.at/webroot/files/file/Evolution%20%26%20Cognition/2001%207-2.pdf) "Integration, differentiation, and derivatives of emotion", *Evolution and Cognition* 7(2):114–125（本文照合済。喜びと受容の混ざりは愛 p.118、感情と性格の語 p.119。くわしくは「[信頼は、感情の中で、どこにあるのか](#ldd-emotion)」の章）／Bowlby (1958) "The nature of the child's tie to his mother", *International Journal of Psycho-Analysis* 39:350–373（本文照合済。[Stony Brook 大学の愛着研究のサイトにある組み直しの写し](https://psychology.psy.sunysb.edu/attachment/online/Bowlby_1958_childs%20tie.pdf)）／[Fisher (1998)](https://doi.org/10.1007/s12110-998-1010-5) "Lust, attraction, and attachment in mammalian reproduction", *Human Nature* 9(1):23–52（本文照合済。pp.23–24。[著者のサイトの PDF](https://helenfisher.com/downloads/articles/10lustattraction.pdf)。三つの系は本文で仮説として出されている）／[Acevedo, Aron, Fisher & Brown (2012)](https://doi.org/10.1093/scan/nsq092) "Neural correlates of long-term intense romantic love", *Social Cognitive and Affective Neuroscience* 7(2):145–159（本文照合済。[PMC の本文](https://pmc.ncbi.nlm.nih.gov/articles/PMC3277362/)。強い恋を自己申告した人だけを選んだ研究）／Fredrickson (2016) "Love: Positivity resonance as a fresh, evidence-based perspective on an age-old topic"（本文照合済。[著者の研究室のサイトにある、刊行前の原稿](https://peplab.web.unc.edu/wp-content/uploads/sites/18901/2019/06/Fredrickson2016ChapteronLoveforHandbookofEmotions.pdf)。「愛している」が指すものと、積み重ねでできる思い・絆・親しさ・約束は p.3）。ボウルビィ・フィッシャー・アセベドらの三つは、独立ページ「[Love とは、どう言われてきたか](love-history.html#愛着--ボウルビィ1958-年)」の表にも並べています。
 
