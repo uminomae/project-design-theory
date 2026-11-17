@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルはテンプレート。生成物 reader/creative-drivers.html を直接編集しないでください。
+  正本:   evidence/themes/TH-003-creative-drivers/READER-creative-drivers.md
+  再生成: python3 scripts/build-reader-th.py
+  手順:   reader/README.md
+
+  デザイン制約:
+  - cs の VI を継承する。背景はメインサイトと同じ Three.js シーン
+    （src/graphics-entry.js createEmbeddedGraphic、?graphic= で 忍/意 切替・既定 i）
+  - WebGL 不可・prefers-reduced-motion 時は radial-gradient の cosmic ambient にフォールバック
+  - カラーは src/styles/tokens.css の CSS 変数経由。生 rgba(数値) 直書き禁止
+  - ページ固有 semantic 色（--green/--amber）は dashboard.html の page-local palette を踏襲
+-->
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>創造の駆動源は何？（工事中） | creation-space</title>
+<link rel="canonical" href="https://uminomae.github.io/project-design-theory/cs/reader/creative-drivers.html">
+<meta name="description" content="創造は、何に動かされて起きるのか。「創造とは」の五段階が書く形の次に、創造の駆動源を、心理・思考・感覚という人の内面の面から見る読み物です。工事中です。">
+<meta name="robots" content="noindex">
+
+<!-- Analytics (dashboard.html と同一の localhost ガード付きスニペット) -->
+<script>
+  if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-X5WQCB3JYT');
+  }
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../src/styles/tokens.css">
+
+<!-- Vendor modules (index.html と同一バージョン) -->
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.183.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.183.0/examples/jsm/"
+    }
+  }
+</script>
+
+<style>
+  /* creation-space design-system aligned palette (cosmic blue).
+     dashboard.html と同じく、page-local var を design-system token に
+     remap してメインサイトの雰囲気を継承する。 */
+  :root{
+    --bg:var(--ds-color-bg-body);                 /* #050508 深い暗背景 */
+    --panel:var(--cs-surface-2);                  /* card/panel 面 */
+    --panel2:var(--cs-surface-3);                 /* 一段手前の面 */
+    --ink:rgb(var(--ds-color-highlight));
+    --muted:rgb(var(--ds-color-sub-text));
+    --faint:rgba(var(--ds-color-sub-text),.55);
+    --line:rgba(var(--ds-color-accent),.14);
+    --accent:rgb(var(--ds-color-accent));
+    --link:rgb(var(--ds-color-link));
+    /* page-local semantic status (dashboard.html の cool-harmonized palette を踏襲) */
+    --green:#5cc2a3; --amber:#e0ad4e;
+    --radius:var(--ds-radius-lg);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;color:var(--ink);
+    font-family:var(--cs-font-sans-ui);
+    line-height:1.85;padding:26px 18px 70px;
+    /* cosmic ambient (DESIGN.md §1): radial-gradient は Three.js 背景の
+       フォールバック（WebGL 不可・reduced-motion・ロード失敗時）。
+       WebGL 成功時は #canvas-container が手前に重なる。 */
+    background:
+      radial-gradient(1100px 760px at 18% -8%, rgba(var(--ds-color-accent),.10), transparent 60%),
+      radial-gradient(1000px 720px at 100% 4%, rgba(var(--ds-color-accent),.07), transparent 55%),
+      var(--bg);
+    background-attachment:fixed;}
+
+  /* Three.js 背景（index.html #canvas-container と同役）。
+     可読性は読書カラムのガラス面が担う（シーンは減光しない）。 */
+  #canvas-container{position:fixed;inset:0;z-index:var(--cs-z-base);pointer-events:none;}
+  #canvas-container canvas{display:block;width:100%;height:100%;}
+
+  /* 読書カラム: シーンの上に敷くガラス面（可読性のためのスクリム） */
+  .wrap{max-width:860px;margin:0 auto;position:relative;z-index:var(--cs-z-content);
+    background:var(--cs-surface-2);
+    border:1px solid var(--line);border-radius:var(--radius);
+    padding:28px clamp(16px,4vw,36px) 40px;
+    backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);}
+
+  /* 草稿バナー */
+  .draft-banner{background:rgba(var(--ds-color-accent),.08);
+    border:1px solid var(--line);border-left:4px solid var(--amber);
+    border-radius:var(--radius);padding:12px 16px;margin:0 0 26px;
+    font-size:13.5px;color:var(--muted);}
+  .draft-banner b{color:var(--ink);}
+
+  /* hero */
+  .reader-hero h1{font-family:var(--ds-font-serif-display);font-size:clamp(1.4rem,4vw,2rem);
+    margin:0 0 8px;font-weight:500;letter-spacing:var(--ds-letter-ui-tight);color:rgb(var(--ds-color-heading));}
+  .reader-subtitle{color:var(--muted);font-size:15px;margin:0 0 10px;}
+  .reader-meta{font-size:12.5px;color:var(--faint);margin:0 0 8px;}
+  .reader-meta a{color:var(--link);text-decoration:none;}
+  .reader-meta a:hover{text-decoration:underline;}
+
+  /* 信頼度バッジ（実証済み [P] / 解釈 [M] / 推測 [S]） */
+  .badge-p,.badge-m,.badge-s{font-size:.82em;font-weight:700;
+    padding:1px 8px;border-radius:20px;white-space:nowrap;}
+  .badge-p{background:rgba(var(--ds-color-accent),.0);color:var(--green);border:1px solid var(--green);}
+  .badge-m{background:rgba(var(--ds-color-link),.18);color:var(--link);border:1px solid rgba(var(--ds-color-link),.35);}
+  .badge-s{background:rgba(var(--ds-color-accent),.0);color:var(--amber);border:1px solid var(--amber);}
+
+  /* article body */
+  .reader-article{margin-top:30px;font-size:15.5px;}
+  .reader-article p{margin:0 0 1.1em;}
+  .reader-heading{font-family:var(--ds-font-serif-display);font-weight:500;
+    color:rgb(var(--ds-color-heading));letter-spacing:var(--ds-letter-ui-tight);
+    border-bottom:1px solid var(--line);padding-bottom:.3em;}
+  h2.reader-heading{font-size:1.35rem;margin:2.2em 0 .8em;}
+  h3.reader-heading{font-size:1.1rem;margin:1.8em 0 .6em;border-bottom:none;}
+  .reader-article a{color:var(--link);}
+  .reader-article code{font-family:var(--cs-font-mono-system);font-size:.9em;
+    background:var(--cs-md-inline-code-bg);color:var(--cs-md-inline-code);
+    padding:.1em .35em;border-radius:var(--ds-radius-sm);}
+  .reader-article strong{color:var(--cs-md-strong);}
+  .reader-article em{color:var(--cs-md-em);}
+  .reader-article hr{border:none;border-top:1px solid var(--line);margin:2em 0;}
+
+  /* card panel（表・引用を面に載せる） */
+  .reader-card{background:var(--panel);border:1px solid var(--line);
+    border-radius:var(--radius);}
+  .reader-table{padding:6px 14px;margin:0 0 1.3em;overflow-x:auto;}
+  .reader-table table{border-collapse:collapse;width:100%;font-size:.94em;}
+  .reader-table th{color:var(--cs-md-table-head-text);background:var(--cs-md-table-head-bg);
+    text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);}
+  .reader-table td{color:var(--cs-md-table-cell-text);padding:8px 10px;
+    border-bottom:1px solid var(--line);}
+  .reader-table tr:last-child td{border-bottom:none;}
+  blockquote.reader-callout{margin:0 0 1.3em;padding:12px 18px;
+    border-left:4px solid rgba(var(--ds-color-accent),.45);
+    color:var(--cs-md-quote);font-size:.97em;}
+  blockquote.reader-callout p:last-child{margin-bottom:0;}
+
+  /* アコーディオン補足（「くわしく」畳み。本文=本筋 / 畳み=深掘り の3レベル分離） */
+  details.reader-fold{background:var(--cs-surface-1);border:1px solid var(--line);
+    border-radius:var(--radius);margin:0 0 1.3em;padding:0;}
+  details.reader-fold summary{cursor:pointer;padding:10px 16px;
+    font-size:.93em;font-weight:700;color:var(--link);
+    list-style-position:inside;}
+  details.reader-fold summary:hover{color:var(--ink);}
+  details.reader-fold[open] summary{border-bottom:1px solid var(--line);}
+  details.reader-fold .fold-body{padding:12px 18px 4px;font-size:.95em;color:var(--muted);}
+  details.reader-fold .fold-body p{margin:0 0 .9em;}
+  details.reader-fold .fold-body strong{color:var(--ink);}
+
+  /* 理解度チェック（埋め込みクイズ = speed regulator）。答えは畳んで隠す */
+  details.reader-quiz{background:var(--cs-surface-2);border:1px solid var(--cs-accent-line, var(--line));
+    border-left:3px solid var(--link);border-radius:var(--radius);margin:1.4em 0;padding:0;}
+  details.reader-quiz summary{cursor:pointer;padding:11px 16px;
+    font-size:.95em;font-weight:700;color:var(--ink);list-style-position:inside;}
+  details.reader-quiz summary::before{content:"たしかめ  ";font-size:.8em;font-weight:700;
+    color:var(--link);letter-spacing:var(--ds-letter-ui-wide);}
+  details.reader-quiz summary:hover{color:var(--link);}
+  details.reader-quiz[open] summary{border-bottom:1px solid var(--line);}
+  details.reader-quiz .quiz-body{padding:12px 18px 4px;font-size:.95em;color:var(--muted);}
+  details.reader-quiz .quiz-body p{margin:0 0 .9em;}
+  details.reader-quiz .quiz-body strong{color:var(--ink);}
+  details.reader-quiz .quiz-a{color:var(--link);font-weight:700;}
+
+  /* 目次 */
+  .reader-toc{padding:14px 20px;margin:1.6em 0;}
+  .reader-toc-title{font-weight:700;font-size:.92em;color:var(--muted);
+    letter-spacing:var(--ds-letter-ui-wide);margin:0 0 6px;}
+  .reader-toc ol{margin:0;padding-left:1.3em;font-size:.94em;}
+  .reader-toc li{margin:.25em 0;}
+  .reader-toc a{color:var(--link);text-decoration:none;}
+  .reader-toc a:hover{text-decoration:underline;}
+
+  /* 出典脚注: 本文の [n] 上付きリンクと末尾の出典リストを結ぶ */
+  sup.refnote{font-size:.72em;line-height:0;scroll-margin-top:24px;}
+  sup.refnote a{color:var(--link);text-decoration:none;padding:0 1px;font-weight:700;}
+  sup.refnote a:hover{text-decoration:underline;}
+  ol.refs{margin:0;padding:12px 16px 12px 2.6em;font-size:.9em;color:var(--muted);}
+  ol.refs li{margin:.55em 0;line-height:1.75;scroll-margin-top:24px;
+    padding:2px 6px;border-radius:var(--ds-radius-sm);}
+  ol.refs li:target{background:rgba(var(--ds-color-accent),.12);}
+  ol.refs em{color:var(--cs-md-em);}
+  ol.refs .backref{text-decoration:none;margin-left:.35em;}
+
+  footer{margin-top:44px;font-size:12px;color:var(--faint);
+    border-top:1px solid var(--line);padding-top:14px;}
+  footer a{color:var(--link);text-decoration:none;}
+  footer a:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+<div id="canvas-container" aria-hidden="true"></div>
+<script type="module">
+  // メインサイトの Three.js 背景を埋め込む（?graphic=sinobi|i で切替、既定 i=意）。
+  // 失敗時は何もしない（body の radial-gradient がそのまま背景になる）。
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    import('../src/graphics-entry.js')
+      .then(function (mod) {
+        var mode = new URLSearchParams(window.location.search).get('graphic') || 'i';
+        return mod.createEmbeddedGraphic({
+          container: '#canvas-container',
+          graphicMode: mode
+        });
+      })
+      .catch(function (err) {
+        console.warn('[reader] WebGL background disabled:', err);
+      });
+  }
+</script>
+<div class="wrap">
+  <div class="draft-banner">
+    この読み物は工事中です。心理の面は、まだ書いていません。
+  </div>
+
+  <header class="reader-hero">
+    <h1>創造の駆動源は何？</h1>
+    <p class="reader-subtitle">創造を動かすものを、心理・思考・感覚の面から見る読み物（工事中）</p>
+    <p class="reader-meta">
+      最終更新: unknown ／
+      <a href="https://github.com/uminomae/project-design-theory/blob/main/cs/evidence/themes/TH-003-creative-drivers/READER-creative-drivers.md">正本 (GitHub)</a> ・
+      <a href="https://github.com/uminomae/project-design-theory/issues/168">追跡 Issue #168</a> ・
+      <a href="../index.html">creation-space（創造とは）</a>
+    </p>
+  </header>
+
+  <article class="reader-article">
+<p>「<a href="../">創造とは</a>」は、創造を、場 → 波 → 縁 → 渦 → 束 の五つの段階で書いています。五段階は、物事が生まれるときに、どんな形と過程をたどるかを書いたものです。</p>
+<p>このページは、その次の問いとして、何が創造を動かすのか（創造の駆動源）を見ます。</p>
+<ul>
+<li><strong>問い</strong>：創造は、何に動かされて起きるのか。</li>
+<li><strong>今の見方</strong>：今は、駆動源のうち、心理・思考・感覚という、人の内面の非物質的な面だけを見ています。三つは、陰陽のように分けづらい一組として見ています。</li>
+<li><strong>今のところ</strong>：思考の面では、新しい考えを何が動かすかが、論ごとに違う面で書かれてきました。疑い・困りごと・驚き・目的の無い遊び・美の感覚・考えへの引き寄せです。感覚の面は、欠損駆動思考が、違和感から見ています。心理の面は工事中です。</li>
+</ul>
+<nav class="reader-toc reader-card" aria-label="目次"><p class="reader-toc-title">目次</p><ol><li><a href="#一-問いと今の見方">一　問いと、今の見方</a></li><li><a href="#二-心理思考感覚の面">二　心理・思考・感覚の面</a></li><li><a href="#三-まだ論じていないこと">三　まだ論じていないこと</a></li></ol></nav>
+<h2 class="reader-heading" id="一-問いと今の見方">一　問いと、今の見方</h2>
+<p><a id="cd-question"></a>この章では、なぜ駆動源を問うのかと、今どこまでを見ているのかを置きます。</p>
+<h3 class="reader-heading" id="形の次に駆動源を問う">形の次に、駆動源を問う</h3>
+<p>五段階は、創造の形を書いています。けれど、形が分かっても、何がその形を動かしているのかは分かりません。創造とはの次に何を探るのかについて、pjdhiro はこう話しています。</p>
+<blockquote class="reader-card reader-callout">
+<p><strong>pjdhiro の見方：</strong>創造とはの次の探索は駆動源です。それはLoveかもしれません。なぜなら、Love駆動開発は人生や自己刷新など、創造のプロジェクト全般に適用できる汎用的なものを射程に入れているからです。</p>
+</blockquote>
+<p>「<a href="https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html">Love駆動開発と呼びたいもの</a>」の読み物は、人やプロジェクトを動かしているもの（駆動源）が何かを探しています。プロジェクトは、創造の過程の一つの形とも言えます。ただ、ふつうは別のものとして扱われています。そこで、このページは、創造の駆動源を創造とはの側で追い、Love駆動開発の読み物とは、あとでつなぎます。駆動源は Love と呼びたいものかもしれない、という見立ては、そのときまで見立てとして持っておきます。</p>
+<h3 class="reader-heading" id="今は人の内面の面だけを見る">今は、人の内面の面だけを見る</h3>
+<p>駆動源は、人の内面だけにあるとは限りません。物理・化学・生物で、何が新しいものを生む向きに働くか、という物質の側の問いもあります。このページは、今はそちらを見ていません。見ているのは、心理・思考・感覚という、人の内面の非物質的な面だけです。</p>
+<p>このページは、三つを面に分けて書きます。分けて書くことについて、pjdhiro はこう見ています。</p>
+<blockquote class="reader-card reader-callout">
+<p><strong>pjdhiro の見方：</strong>感覚と心理と思考はセットで☯️だと思うから、分けづらい。</p>
+</blockquote>
+<p>分けて書くのは、読みやすくするためです。三つの面は、一つの動きを違う側から見たものとして並べます。たとえば、困りごとは、そのどれにも入ります。パースは、疑いを、落ち着かない、満たされない状態だと書き、その苛立ちが探究を起こす、と書きました。デューイは、考えの一続きの最初の段を、感じられた困りごと（a felt difficulty）と書いています。そう読むと、一つの困りごとが、感じられ、心を落ち着かなくさせ、考えを起こします。この読みは Claude のもので、二人がそう書いているわけではありません。</p>
+<details><summary>出典</summary>
+
+<p>出典：Peirce (1877) "The Fixation of Belief", <em>Popular Science Monthly</em> 12:1–15（<a href="https://archive.org/details/chanceloveandlog00peiruoft">Cohen 編『Chance, Love, and Logic』（1923）の再録（Internet Archive）</a>で本文照合済。pp.15–16）。Dewey (1910) <em>How We Think</em>. D.C. Heath（<a href="https://archive.org/details/howwethink00deweiala">カリフォルニア大学図書館の本の走査（Internet Archive）</a>で本文照合済。p.72）。どちらも、読み物「<a href="https://uminomae.github.io/project-design-theory/reader/creative-thinking.html#ct-dewey">創造的思考とは</a>」で本文照合したものを引き継いで使っています。訳は Claude。</p>
+</details>
+
+<h2 class="reader-heading" id="二-心理思考感覚の面">二　心理・思考・感覚の面</h2>
+<p><a id="cd-aspects"></a>この章では、三つの面を順に見ます。三つは、上の章で見たように、分けづらい一組です。面ごとの節の違いは、同じ動きを、どの側から見ているかの違いです。</p>
+<h3 class="reader-heading" id="心理の面工事中">心理の面（工事中）</h3>
+<p><a id="cd-psychology"></a>創る人を、何が創ることへ向かわせるのか。動機・性格・無意識・遊びから創造を見る論を、ここに置きます。今は工事中です。</p>
+<h3 class="reader-heading" id="思考の面考えを何が動かすか">思考の面：考えを、何が動かすか</h3>
+<p><a id="cd-thinking"></a>新しい考えは、どこから来るのか。考えることを何が動かすかは、論ごとに違う面で書かれてきました。読み物「<a href="https://uminomae.github.io/project-design-theory/reader/creative-thinking.html#ct-drivers">創造的思考とは</a>」で読んだ論から、駆動源にあたる記述を並べます。</p>
+<div class="tablefit cols-2">
+
+<div class="reader-card reader-table"><table>
+<thead>
+<tr>
+<th>疑いの苛立ち</th>
+<th>パース 1877：疑いは落ち着かない状態で、その苛立ちが、信念へ至ろうとするもがき（探究）を起こす</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>困りごと</td>
+<td>デューイ 1910：考えることの起こりは、困ること・迷うこと・疑うこと。考えることは、ひとりでに燃え出すものではない</td>
+</tr>
+<tr>
+<td>驚き</td>
+<td>パース 1903：新しい考えを持ち込む推論（アブダクション）は、驚くような事実から始まる</td>
+</tr>
+<tr>
+<td>目的の無い遊び</td>
+<td>パース 1908：目的を持たない心の遊び（ミュージング）の中から、探究の第一段階が始まる</td>
+</tr>
+<tr>
+<td>美の感覚</td>
+<td>ポアンカレ 1908：無意識が作る組み合わせのうち、美の感覚に触れるものだけが意識に上がる</td>
+</tr>
+<tr>
+<td>考えへの引き寄せ</td>
+<td>パース 1893：心がその考えを持つ前から、考えそのものが心を引き寄せる。パースは、これを愛による発展と呼んだ</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>並べると違って見えますが、共通するところがあります。どの論も、新しい考えが、意志の力だけで出てくるものではないと書いています。疑いも、困りごとも、驚きも、気づいたときにはもう起きています。ポアンカレの無意識の仕事も、パースの引き寄せも、自分の関与の外で進みます。</p>
+<p>表には、思考の面と呼びにくいものも入っています。驚きや美の感覚は、感じるものです。疑いの苛立ちは、心の状態でもあります。考えを動かすものを並べると、感覚と心理が一緒に出てきます。</p>
+<p>疑いや困りごとは、何かが欠けているところから押す面に見えます。引き寄せや美の感覚は、まだ持っていない何かが引く面に見えます。同じ一つの動きを、押す側から書いたか、引く側から書いたか、の違いかもしれません。この読みは Claude の見立てで、論者たちがそう書いているわけではありません。</p>
+<details><summary>出典</summary>
+
+<p>どれも、読み物「<a href="https://uminomae.github.io/project-design-theory/reader/creative-thinking.html">創造的思考とは</a>」と「<a href="https://uminomae.github.io/project-design-theory/reader/peirce-love-abduction.html">パースの創造的な愛と、アブダクション</a>」で本文照合したものを引き継いで使っています。訳は Claude。</p>
+<ul>
+<li>Peirce (1877) "The Fixation of Belief"（<a href="https://archive.org/details/chanceloveandlog00peiruoft">『Chance, Love, and Logic』の再録（Internet Archive）</a>。pp.15–16）</li>
+<li>Dewey (1910) <em>How We Think</em>（<a href="https://archive.org/details/howwethink00deweiala">カリフォルニア大学図書館の本の走査（Internet Archive）</a>。p.12）</li>
+<li>Peirce (1903) ハーバードでのプラグマティズムの講義（<a href="https://plato.stanford.edu/entries/abduction/peirce.html">スタンフォード哲学百科事典の補遺「Peirce on Abduction」</a>が原文で引く箇所。Collected Papers 5.189）</li>
+<li>Peirce (1908) "A Neglected Argument for the Reality of God"（<a href="https://archive.org/details/sim_the-hibbert-journal-a-quarterly-review-of-religion_1908-1909_7_1">The Hibbert Journal 第 7 巻第 1 号の原誌（Internet Archive）</a>。pp.100–104）</li>
+<li>Poincaré (1908) <em>Science et méthode</em>。英訳 Poincaré (1914) <em>Science and Method</em>, F. Maitland 訳（<a href="https://archive.org/details/cu31924012248179">コーネル大学図書館の本の走査（Internet Archive）</a>。第一巻第三章「Mathematical Discovery」pp.46–63。美の感覚の鍵の文は p.60）</li>
+<li>Peirce (1893) "Evolutionary Love", <em>The Monist</em> 3(2):176–200（<a href="https://archive.org/details/sim_monist_1893-01_3_2">The Monist の原誌（Internet Archive）</a>。頁は再録の<a href="https://archive.org/details/chanceloveandlog00peiruoft">『Chance, Love, and Logic』</a>の pp.287–288）</li>
+</ul>
+</details>
+
+<h3 class="reader-heading" id="感覚の面違和感と美の感覚">感覚の面：違和感と、美の感覚</h3>
+<p><a id="cd-sensing"></a>判断の手前で、何かを感じる。その感じが、創ることを動かしているのかもしれません。この面は、このページで書くより先に、ほかのページが見ています。</p>
+<p>「<a href="https://uminomae.github.io/project-design-theory/ks/">欠損駆動思考</a>」は、記号の上では 0 と出るところで、人は何を感じているのかを問います。欠けている感じや違和感を駆動源にする、思考や精神の構えを見る探究です。違和感がどこで立ち、どこで気づかれるのかは、「<a href="https://uminomae.github.io/project-design-theory/ks/signal-layers.html">違和感は、どこで立ち、どこで気づかれるのか</a>」で見ています。</p>
+<p>上の表のポアンカレの美の感覚は、ほかにどう書かれてきたかを、読み物「<a href="https://uminomae.github.io/project-design-theory/reader/beauty.html#bt-sieve">美とは</a>」にまとめています。</p>
+<p>感覚の面を、駆動源の側から並べて書くのは、これからです。</p>
+<h2 class="reader-heading" id="三-まだ論じていないこと">三　まだ論じていないこと</h2>
+<p><a id="cd-open"></a>この章では、まだ論じていない問いを置きます。</p>
+<ul>
+<li>心理の面：創る人を創ることへ向かわせる論を、どう並べるか。</li>
+<li>物質の側：人の内面の外で、何が新しいものを生む向きに働くのか。</li>
+<li>押す面と引く面：欠けが押す面と、まだ無いものが引く面は、一つの動きの両側なのか。</li>
+<li>Love との関わり：創造の駆動源は、Love駆動開発が Love と呼びたいものと、どこまで重なるのか。二つは、あとでつなぎます。</li>
+</ul>
+<details><summary>出典の確かめ方</summary>
+
+<p>このページは、Claude が書いた要約です。載せた出典は、どれも原典の本文で照合したもので、ほかの読み物で照合したものを、読み直さずに引き継いでいます。どの読み物から引き継いだかは、章ごとの出典の畳みに書いています。英文の訳は、どれも Claude です。pjdhiro の言葉は、対話の中の発言から引きました。</p>
+</details>
+
+  </article>
+
+  <footer>
+    この読み物は、駆動源の調べを進めるたびに書き足します。<br>
+    <a href="../index.html">創造とは</a> ・
+    <a href="../sources.html">原典の台帳</a> ・
+    <a href="https://github.com/uminomae/project-design-theory/tree/main/cs">GitHub</a>
+  </footer>
+</div>
+</body>
+</html>

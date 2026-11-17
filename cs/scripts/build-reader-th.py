@@ -32,6 +32,7 @@ TPL = ROOT / "scripts/reader-th-template.html"
 PAGES = {
     "wave-vortex": "evidence/themes/TH-001-wave-vortex-ontology/READER-wave-vortex.md",
     "research-history": "evidence/themes/TH-002-research-history/READER-research-history.md",
+    "creative-drivers": "evidence/themes/TH-003-creative-drivers/READER-creative-drivers.md",
 }
 PAGE_KEYS = ["title", "description", "h1", "subtitle", "issue", "banner", "footer"]
 
