@@ -202,3 +202,152 @@
     font-size: 0.86rem;
   }
 }
+
+/* ── 現在の定義のモーダル（definition-modal.js）。about と同じガラスの地で、定義のページを枠の中に開く ── */
+#definition-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--cs-z-modal-info);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(5, 10, 20, 0);
+  transition: background 0.35s ease;
+  cursor: pointer;
+}
+
+#definition-overlay.visible {
+  display: flex;
+}
+
+#definition-overlay.open {
+  background: rgba(5, 10, 20, 0.6);
+}
+
+.definition-glass {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 92vw;
+  max-width: 920px;
+  height: 86vh;
+  height: 86dvh;
+  cursor: default;
+  background: var(--cs-viewer-glass-bg, rgba(12, 18, 30, 0.92));
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(100, 150, 255, 0.14);
+  border-radius: 8px;
+  box-shadow: var(--cs-viewer-glass-shadow,
+    0 0 60px rgba(0, 0, 0, 0.4),
+    0 0 120px rgba(30, 60, 120, 0.1));
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0.96) translateY(14px);
+  transition: opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#definition-overlay.open .definition-glass {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.definition-head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.6rem 0.6rem 1.2rem;
+  border-bottom: 1px solid rgba(100, 150, 255, 0.12);
+  flex: 0 0 auto;
+}
+
+.definition-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  font-family: var(--ds-font-serif-display, serif);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  line-height: 1.4;
+  color: rgba(var(--color-heading, 255, 255, 255), 0.92);
+}
+
+.definition-newtab {
+  flex: 0 0 auto;
+  font-family: var(--ds-font-serif-ui, serif);
+  font-size: 0.8rem;
+  color: rgb(var(--ds-color-link, 130, 170, 255));
+  text-decoration: none;
+  border-bottom: 1px solid rgba(var(--ds-color-link, 130, 170, 255), 0.4);
+  white-space: nowrap;
+}
+
+.definition-newtab:hover,
+.definition-newtab:focus-visible {
+  border-bottom-color: rgb(var(--ds-color-link, 130, 170, 255));
+}
+
+.definition-close {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  color: rgba(var(--color-heading, 255, 255, 255), 0.7);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.25s, border-color 0.25s;
+}
+
+.definition-close:hover {
+  color: rgba(var(--color-heading, 255, 255, 255), 0.95);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.definition-close:focus-visible,
+.definition-newtab:focus-visible {
+  outline: 2px solid var(--ds-focus-ring, rgba(100, 150, 255, 0.86));
+  outline-offset: 2px;
+}
+
+.definition-frame {
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 0;
+  border: 0;
+  background: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #definition-overlay,
+  .definition-glass {
+    transition: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .definition-glass {
+    width: 100vw;
+    max-width: none;
+    height: 100vh;
+    height: 100dvh;
+    border-radius: 0;
+    border: 0;
+  }
+
+  .definition-head {
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    gap: 0.5rem;
+  }
+
+  .definition-title {
+    font-size: 0.9rem;
+  }
+}

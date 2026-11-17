@@ -144,9 +144,14 @@ body.creation-page {
 
 /* ── Prologue timeline (cs#179 Phase B) ── */
 
+/* ほかのコンテナ（.reports-overview・.reports-tab-content）と同じ地と枠に入れる（付箋帳 i2026111711421795p） */
 .prologue-timeline {
   margin-bottom: 2rem;
-  padding: 1.5rem 0;
+  padding: 1.5rem var(--reports-panel-padding, .9rem);
+  border: 1px solid var(--reports-border-soft, rgba(100, 150, 255, .12));
+  border-radius: var(--reports-panel-radius, .5rem);
+  background: var(--cs-surface-2, rgba(20, 25, 40, .6));
+  box-shadow: var(--reports-panel-shadow);
 }
 
 .prologue-nodes {
@@ -264,24 +269,21 @@ body.creation-page {
   max-width: 520px;
   margin: 1rem auto 0;
   font-family: var(--ds-font-serif-ui);
-  font-size: clamp(0.75rem, 1.8vmin, 0.85rem);
-  opacity: 0.75;
+  font-size: clamp(0.78rem, 1.9vmin, 0.88rem);
+  line-height: 1.8;
+  color: rgba(210, 225, 250, 0.72);
 }
 
-.prologue-definition-link {
-  display: block;
+.prologue-definition-btn {
+  display: flex;
   width: fit-content;
-  margin: 0.5rem auto 0;
-  font-family: var(--ds-font-serif-ui);
-  font-size: clamp(0.8rem, 1.9vmin, 0.9rem);
-  color: rgb(var(--ds-color-link));
-  text-decoration: none;
-  border-bottom: 1px solid rgba(var(--ds-color-link), 0.4);
-}
-
-.prologue-definition-link:hover,
-.prologue-definition-link:focus-visible {
-  border-bottom-color: rgb(var(--ds-color-link));
+  margin: 1.1rem auto 0;
+  min-height: 2.75rem;
+  padding: .6rem 1.4rem;
+  font-size: clamp(.9rem, 2.2vmin, 1rem);
+  letter-spacing: .06em;
+  white-space: normal;
+  text-align: center;
 }
 
 .prologue-desc-title {
