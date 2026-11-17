@@ -130,6 +130,14 @@
     height: auto;
 }
 
+/* 同じ図の、広い幅の版と狭い幅の版。600px 以下では縦長の版に替える（Love駆動開発の as-is/to-be の図・2026-11-17） */
+.reader-figure .fig-narrow { display: none; }
+@media (max-width: 600px) {
+    .reader-figure .fig-wide { display: none; }
+    .reader-figure .fig-narrow { display: block; }
+    .reader-figure:has(.fig-narrow) { padding: 1rem 0.5rem; }
+}
+
 .reader-table {
     margin: 2rem 0;
     padding: 1rem 1.5rem;
