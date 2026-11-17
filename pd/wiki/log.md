@@ -1323,3 +1323,8 @@ compile 実行の履歴。append-only。
 - scope: 1 ページ直し（`concepts/Love 駆動開発`）、1 ページ確かめ（`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第六部：開発とはの章の頭の問いのカードを一つにし、ピレネーの地図の話を意図・コントロール・意識の畳みのワイクの行へ出どころの断りつきで移した。価値創造・入力を整える・後半の答え・構想・心の言葉・デザイン・まだ分からないことの段をつないだ）
 - pages: `concepts/Love 駆動開発` の後半の答えの段に、前半の答えと入力を整える二つの章を指す一文を足した。`プロジェクトデザイン` は変わらない。
+
+## [2026-11-17] check | Love 駆動開発（「現象の解説と対処の両方」を「現象の分析と対処の両方」に）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「〇〇駆動開発」の名前の段の答えの一語を、本人の言い直しで「分析」に）
+- pages: どちらもこの言い方を引いていないので、本文はそのまま。
