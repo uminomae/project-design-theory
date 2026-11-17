@@ -1143,3 +1143,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第六部の章の頭に、問い・今の像・例と出典の畳みを足した。ワイクらの地図の話・デューらの起業家の調査・Google のチームの調査・ノートンらの折り紙の実験・ベックの路線図・ゴルトンの牛の重さ当て・#155）
 - pages: どちらも、足したのは章の頭の今の像と例で、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（第六部の入力の章の例を差し替え）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（入力を整える章の頭の例を、ゴルトンの牛の重さ当てから、ホイートストン 1838 の二つの目の見え方と立体鏡に替えた・#155）
+- pages: どちらも、替えたのは章の頭の例で、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
