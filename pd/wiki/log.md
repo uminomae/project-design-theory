@@ -1208,3 +1208,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（十牛図の段の終わりに、ありのままの自分を実現する、の一文を足した・#155）
 - pages: どちらも、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（第四部 無意識の章の頭の段の書き直し）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（無意識の章の頭のスティーヴンソンの段を、分かりやすい文に書き直した・#161）
+- pages: どちらも、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
