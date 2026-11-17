@@ -1547,7 +1547,7 @@ Love と呼びたいものは、恋愛や好意の感情に限らず、感情は
 
 渦は波の、波は場の一つの状態で、人は渦の形に名前を当ててきました（「[言葉は、波間に見えた渦の名前](#ldd-vortex)」の畳み）。では、Love と呼びたいものは、場・波・渦のどこにあるのでしょうか。
 
-実家を出て一人で暮らし始めた人が、何週間も、わけの分からない落ち着かなさを抱えていることがあります。眠りが浅く、部屋にいても気持ちが休まりません。家にいたあいだ、その人は、家の空気を好きだと感じたことも、そこで自分が落ち着いているかを確かめたことも、一度もありませんでした。確かめたことのないものが、ずっと支えていたのです。それは、中にいたあいだは見えず、離れてはじめて、落ち着かなさという体の信号として現れました。
+シェイクスピアの『から騒ぎ』で、若い貴族のクローディオは、婚礼の場で花嫁のヒーローを不貞だと責めて立ち去ります。その場にいた修道士は、ヒーローは死んだと知らせるよう勧め、わけをこう話します。持っているものを、人は持っているあいだ、その値打ちどおりには大事にしない。欠けて失われてはじめて、持っていたあいだには見えなかった良さを見つける。
 
 <a id="ldd-love-faces"></a><strong>pjdhiro の見方：</strong>場がLoveかもしれないし、場のゆらぎや波がLoveかもしれません。真逆の方向から対立するように渦を生み出す姿がLoveに近いかもしれません。まさにそこの現象が認知しやすいから恋や愛と括ったのだと思います
 
@@ -1648,6 +1648,12 @@ Zilcha-Mano、Mikulincer、Shaver（2012 年）は、犬か猫の飼い主に難
 <strong>pjdhiro の見立て：</strong>安心の経験との類似度で評価してる面もあるかも。胎児の頃の。メタ認知するとそのような安定感を感じる。観るものだけになった時に、どこかに他者との接続のようなものを感じる。ワームホールのよう。その感覚とのズレを違和感や善悪の物差しにしてるのかもしれない。美や善など。
 
 ワームホールは、物理で、離れた二つの場所をつなぐ橋として考えられているものです（姉妹読み物「愛は、重力に似ていないか」の [4 章](gravity-love.html#gl-manager)）。
+
+</details>
+
+<details><summary>出典</summary>
+
+『から騒ぎ』：William Shakespeare, *Much Ado About Nothing*, 第 4 幕第 1 場の修道士フランシスの台詞（"for it so falls out / That what we have we prize not to the worth / Whiles we enjoy it, but being lack'd and lost, / Why, then we rack the value, then we find / The virtue that possession would not show us / Whiles it was ours."）。[MIT の The Complete Works of William Shakespeare の本文](http://shakespeare.mit.edu/much_ado/much_ado.4.1.html)で照らしました。日本語は Claude の訳です。
 
 </details>
 
