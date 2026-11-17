@@ -7,6 +7,8 @@ let titleEl = null;
 let bodyEl = null;
 let triggerBtnEl = null;
 let closeBtnEl = null;
+// 閉じる途中の片付け（transitionend と setTimeout）。開き直したら取り消す（definition-modal.js と同じ）
+let pendingFinish = null;
 
 export function initAboutModal() {
   createAboutButton();
@@ -94,8 +96,17 @@ function renderContent(lang) {
   }
 }
 
+function cancelPendingFinish() {
+  if (!pendingFinish) return;
+  pendingFinish.cancel();
+  pendingFinish = null;
+}
+
 function openAbout() {
   if (!overlayEl) return;
+  // 閉じる途中（0.6 秒以内）に開き直すと、閉じる片付けがあとから走り、開いたモーダルを消して
+  // 背景がむき出しになる（定義のモーダルで起きた不具合と同じ作り・2026-11-18）。先に取り消す
+  cancelPendingFinish();
   const lang = getCurrentLang();
   renderContent(lang);
 
@@ -114,20 +125,34 @@ function openAbout() {
 
 function closeAbout() {
   if (!overlayEl) return;
+  cancelPendingFinish();
   overlayEl.classList.remove('open');
 
-  const onEnd = () => {
+  const glassEl = overlayEl.querySelector('.about-glass');
+  let timer = 0;
+  const onEnd = (event) => {
+    // 幕の色や中のボタンの色の transitionend で早く消さない。枠の透明度が終わるのを待つ
+    if (event.target !== glassEl || event.propertyName !== 'opacity') return;
+    finish();
+  };
+  const cancel = () => {
+    clearTimeout(timer);
+    overlayEl.removeEventListener('transitionend', onEnd);
+  };
+  const finish = () => {
+    cancel();
+    pendingFinish = null;
     overlayEl.classList.remove('visible');
     document.body.style.overflow = '';
-    overlayEl.removeEventListener('transitionend', onEnd);
   };
 
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    onEnd();
-  } else {
-    overlayEl.addEventListener('transitionend', onEnd, { once: true });
-    setTimeout(onEnd, 600);
+    finish();
+    return;
   }
+  pendingFinish = { cancel };
+  overlayEl.addEventListener('transitionend', onEnd);
+  timer = setTimeout(finish, 600);
 }
 
 export function isAboutOpen() {
