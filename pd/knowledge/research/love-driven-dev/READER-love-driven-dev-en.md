@@ -1741,7 +1741,7 @@ The name Love-Driven Development was given afterward to events encountered again
 
 <strong>pjdhiro's view (translated by Claude):</strong>You can't consciously, actively place it first, but sometimes it has already been placed first unconsciously, and from others' point of view, that is the person's own doing.
 
-Procedures are written on the premise that the person moving things can manipulate the other, so Love-Driven Development does not take the form of a procedure. Even so, people do not do nothing. Where not everything can be controlled, people deal with what is happening and with what may happen. What this page writes is the structure and process of that phenomenon. To this question, pjdhiro answers that Love-Driven Development is "both an explanation of the phenomenon and a way of dealing with it" (on the word dealing, see the fold "[Procedures, and the stance toward vision and planning](#ldd-taisho)").
+Procedures are written on the premise that the person moving things can manipulate the other, so Love-Driven Development does not take the form of a procedure. Even so, people do not do nothing. Where not everything can be controlled, people deal with what is happening and with what may happen. What this page writes is the structure and process of that phenomenon. To this question, pjdhiro answers that Love-Driven Development is "both an analysis of the phenomenon and a way of dealing with it" (on the word dealing, see the fold "[Procedures, and the stance toward vision and planning](#ldd-taisho)").
 
 <details><summary>More — names of methods, and the name Love-Driven Development</summary>
 
