@@ -146,6 +146,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/via-vulnerability/READER-via-vulnerability.md",
+        ROOT / "scripts/reader-via-vulnerability-template.html",
+        ROOT / "reader/via-vulnerability.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/beauty/READER-beauty.md",
         ROOT / "scripts/reader-beauty-template.html",
         ROOT / "reader/beauty.html",

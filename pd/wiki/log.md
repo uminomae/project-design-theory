@@ -1334,6 +1334,21 @@ compile 実行の履歴。append-only。
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第七部：哲学の章の頭の例をアインシュタインの列車と石から徐愛と王陽明の問答に替え、計算機科学の思考実験の守りの項を守りの向きが変わる形に、禅の十牛図の段を一番目の序から入る形に絞り、役に立つかの章のカーゴ・カルトをファインマンの語りの形にして例から芯へ渡す一文を足し、六つの箇条を六つにし、鍛え方の章に例から芯へ渡す一文を足し、止観へのリンク名を一つにそろえ、郭象を西晋の人〔312 年没〕にした）
 - pages: どちらも本文を変えない。wiki の哲学の段は列車と石の例を引いておらず、ほかの直しも wiki の要約の言葉に触れない。checked を今の時刻にした
 
+## [2026-11-18] check | Love 駆動開発（構想の段にエフェクチュエーションの名前と中身を出した）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（構想の段の Dew ら 2009 の調査のあとに、エフェクチュエーションの名前と、手段から始めて新しい目的を生む見方・料理人のたとえを本文に出した）
+- pages: どちらも構想の段の例を引いていないので、本文はそのまま。
+
+## [2026-11-18] check | Love 駆動開発（心の言葉の GRIT の項の推敲）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（GRIT の項を、忍耐強さの中身〔固いか柔らかいか・レジリエンスとの重なり・どんな心の働きか〕が分かれていないという読み解きの注意から組み直し、侘びをその柔らかい忍耐の像として置いた）
+- pages: どちらも GRIT と侘びを引いていないので、本文はそのまま。
+
+## [2026-11-18] check | Love 駆動開発（構想の段に pjdhiro の自己紹介の言葉）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（構想の段の料理人のたとえのあとに、「家政婦さんみたいなことが得意です」の自己紹介のカードを置いた）
+- pages: どちらも構想の段の例を引いていないので、本文はそのまま。
+
 ## [2026-11-17] check | Love 駆動開発（第七部の視点の三章の題を「〇〇の視点で見る」に）
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（計算機科学・哲学・禅の章の題を「〜の視点で見る」にした）
