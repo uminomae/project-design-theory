@@ -1,6 +1,6 @@
 # 案：「共感とは」第四部「共感を、渦として見る」（#170）
 
-状態：案。pjdhiro に見せて答えを待つ。読み物の正本（`READER-empathy.md`）にはまだ入れていない。根拠の照合は `SURVEY-03-five-stages-development.md`（§6 の組み直し）・`SURVEY-03a-collective.md`・`SURVEY-03b-development.md`。
+状態：読み物の正本（`READER-empathy.md`）に入れた（2026-11-18。案のページの四問は全部推奨の答え）。入れるときに、シェーラーの頁を刷りの頁に直し（母と子 p.27・寄宿舎 p.23・ママごと p.24）、第三章の表はロジャーズの「かのように」を「境を持ったまま、一つでもある」の行に移した（第一章で渦に当てた読みと stance 1-1 に合わせる）。この案は記録として残す。根拠の照合は `SURVEY-03-five-stages-development.md`（§6 の組み直し）・`SURVEY-03a-collective.md`・`SURVEY-03b-development.md`。
 
 置き場：巻末の前（`<!--PART:巻末-->` の前）。第三部の終わりの章「どの言葉が、どこまで指すか」のあと。
 

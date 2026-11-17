@@ -34,16 +34,16 @@
 - **書誌**：SURVEY-01 §5 と同じ。Scheler, M. (1926). *Wesen und Formen der Sympathie*. 3. Aufl. Bonn: Friedrich Cohen。
 - **読んだ写し**：https://archive.org/details/wesen-und-formen-der-sympathie の OCR の文字（`_djvu.txt`・`_djvu.xml`）。頁は、走査の各葉の下に刷られた頁の数字で確かめ、p.16 は頁の画像（葉 30）で目で確かめた。
 - **照合の状態**：本文照合済（第 3 版。上げた人は個人、本は著作権が切れている。SURVEY-01 と同じ扱いで、載せる前に pjdhiro に確かめる点も同じ）。
-- **読んだ頁**：pp.16–27（第 A 部 II, 4 の型 a〜f・i）・pp.32–34（人と動物・子ども・未開の人の Einsfühlung の能力の喪失）・pp.112–114（VI a)「Einsfühlung fundiert Nachfühlung」）・第 2 版の序文 p.X（第 2 版で足したもの）。
+- **読んだ頁**：pp.16–28（第 A 部 II, 4 の型 a〜f・i）・pp.32–34（人と動物・子ども・未開の人の Einsfühlung の能力の喪失）・pp.112–114（VI a)「Einsfühlung fundiert Nachfühlung」）・第 2 版の序文 p.X（第 2 版で足したもの）。
 - **頁の食い違い（SURVEY-01 との）**：この走査は、頁の数字が頁の下にある（目次の「4. Die Einsfühlung … 16」「VI … 112」と、葉 30 の画像の下の「16」で確かめた）。SURVEY-01 は「Nur ein gesteigerter Fall …」を p.15、「Prozesse der Ansteckung … ohne zu wissen」を pp.13–14 としているが、刷りの頁ではそれぞれ p.16、pp.14–15 に当たる。SURVEY-01 の Scheler の頁は一つ小さく数えている見込みが高い（直すかは頼む側の作業。ここでは直していない）。
 - **鍵の文**：
   - 型 a（未開の人。p.16–17）："In den sehr eigenartigen, noch wenig tiefer erkannten Identifizierungen des „primitiven" Denkens, Schauens, Fühlens der Naturvölker unterster Stufe"。祖先の崇拝は「eine erste Befreiung von primitiver Einsfühlung von Enkel und Ahn」で、「das Bewußtsein individueller Verschiedenheit von beiden Ichen」を前提にする（p.17）。
   - 型 b（古代の秘儀。pp.17–18）：秘儀に入る者が神と「wahrhaft identisch weiß — er der Gott „wird"」。
   - 型 c（催眠。pp.18–20）：催眠は「einen künstlich hergestellten Primitivismus der Seelenhaltung」を作り、「Fast alle für das Kind und für die Primitiven charakteristischen Geisteseigentümlichkeiten werden durch die Hypnose künstlich annähernd wiedererzeugt」（p.18）。その一つに「die Disposition zu mangelnder Unterscheidung des Ich und Du」（p.19）。
-  - 型 d（Freud の集団心理の例。p.22）：寄宿舎の娘たちの発作の「感染」について、Freud は「Mitgefühl entsteht erst aus der Identifizierung」と書くが、Scheler は「Mitgefühl … setzt gerade die phänomenale Ichdistanz voraus, die hier durch Einsfühlung aufgehoben ist」と、ここでは Mitgefühl はそもそも生じない、と言う。
-  - 型 e（子ども。pp.22–23）："Was beim Erwachsenen Einfühlung ist, ist dort Einsfühlung; was eigentlich nur beim Erwachsenen „Spiel" ist, ist dort „Ernst""（p.23）。"Das (individuelle) Selbstbewußtsein ist im kindlichen Seelenleben noch zu labil und zu inkohärent"（p.23）。人形でママごとをする女の子の「als ob」は「wohl nur für den erwachsenen Zuschauer」にある（p.23）。
-  - 型 f（意識の分裂・憑依。p.23）：「mit der eigenen Ichgegebenheit alternierender Einsfühlung」。
-  - 型 i（母と子。pp.25–27）：母と子は生まれる前から「auch für die Mutter selbst zwei Wesen」（p.26）で、母の Einsgefühl は子を自分に取り込むことより「(ekstatischer) Hingegebenheit an das Kindesich」として言える（p.26）。
+  - 型 d（Freud の集団心理の例。p.23）：寄宿舎の娘たちの発作の「感染」について、Freud は「Mitgefühl entsteht erst aus der Identifizierung」と書くが、Scheler は「Mitgefühl … setzt gerade die phänomenale Ichdistanz voraus, die hier durch Einsfühlung aufgehoben ist」と、ここでは Mitgefühl はそもそも生じない、と言う。
+  - 型 e（子ども。pp.23–24）："Was beim Erwachsenen Einfühlung ist, ist dort Einsfühlung; was eigentlich nur beim Erwachsenen „Spiel" ist, ist dort „Ernst""（p.24）。"Das (individuelle) Selbstbewußtsein ist im kindlichen Seelenleben noch zu labil und zu inkohärent"（p.24）。人形でママごとをする女の子の「als ob」は「wohl nur für den erwachsenen Zuschauer」にある（p.24）。
+  - 型 f（意識の分裂・憑依。p.24）：「mit der eigenen Ichgegebenheit alternierender Einsfühlung」。
+  - 型 i（母と子。pp.26–28）：母と子は生まれる前から「auch für die Mutter selbst zwei Wesen」（p.27）で、母の Einsgefühl は子を自分に取り込むことより「(ekstatischer) Hingegebenheit an das Kindesich」として言える（p.27）。 型 d〜f と i の頁は、2026-11-18 に走査の頁の台帳と語の位置で引き直し、一つずつ足した（前は一つ小さかった）。
   - 発達での喪失（p.33）："so hat der Zivilisierte die Einsfühlungsfähigkeiten des Primitiven, der Erwachsene diejenige des Kindes fast ganz verloren"。続けて「Entwicklung ist nie bloß Fortschritt」（p.34）。
   - 発達の順の法則（p.113）："Es ist daher ein Grundgesetz aller Gefühlsentwicklung sowohl vom Kinde zum Erwachsenen, als vom Tier zum Menschen, als vom Primitiven zum Zivilisierten, daß wir im unentwickelteren Zustande noch Einsfühlung finden, wo wir in entwickelteren Zuständen Nachfühlung finden."
   - 同じ遊びの年齢での違い（p.114）："Spielt dasselbe Spiel das erwachsenere Kind, so haben wir dagegen nur mehr „Nachfühlung"."
