@@ -1133,3 +1133,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（冒頭の駆動源の定義の段と、二つめの問いの前置きの段を一つにし、重なる言い方と足した経緯の文を削った・違和感帳 i202611161634264lg）
 - pages: どちらも冒頭の段の言い方までは書いていないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Concept-Entity Map（site-data.mjs の Love駆動開発の紹介文）
+- scope: 1 ページ確かめ（`cross-refs/concept-entity-map`）
+- sources: `pd/src/content/site-data.mjs`（`repo.loveDrivenDevDesc` の頭の「私は」を外した・1672734f）
+- pages: ページが site-data.mjs から引くのは調査ノートの「デザイン思考とは」だけで、今もあるので本文を変えず、compiled を今日にした。
