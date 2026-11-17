@@ -1263,3 +1263,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（駆動源の章の頭で目的駆動と意欲駆動を分けて置き、例をゴッホの伝道師から画家への道に替え、ダーウィンは目的を人が決めるときの寄り道へ移した）
 - pages: どちらも、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（第二部の三章の直し・#155）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（創造の章の「創造とは」のトップの引用を今の文に合わせ、海が波を生み出すの一点を本文から案内し、恋愛の例の断りを外した。重力の章のカード直後の段を一つに寄せ、物理の章を開いた形にしてサウナの例の結びに一句足した）
+- pages: どちらも、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
