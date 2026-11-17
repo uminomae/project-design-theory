@@ -266,6 +266,14 @@ Peirce (1877) "The Fixation of Belief", *Popular Science Monthly* 12:1–15（[C
 
 疑いや困りごとは、何かが欠けているところから押す面に見えます。引き寄せや美の感覚は、まだ持っていない何かが引く面に見えます。同じ一つの動きを、押す側から書いたか、引く側から書いたか、の違いかもしれません。この読みは Claude の見立てで、論者たちがそう書いているわけではありません。
 
+表は、考えを動かすものを並べています。創る人を、心の側から何が創ることへ向かわせるかは、読み物「[創造の駆動源は何？](https://uminomae.github.io/project-design-theory/cs/reader/creative-drivers.html#cd-psychology)」の心理の面に置いています。たとえば、精神分析家のウィニコットは、どんな種類の芸術家にも、伝えたいという切迫した要求と、それよりさらに切迫した見つけられたくない要求とが同居している、と書きました。そのジレンマのために、芸術家の仕事は終わらない、とも書いています。
+
+<details><summary>出典</summary>
+
+出典：Winnicott (1965) "Communicating and Not Communicating Leading to a Study of Certain Opposites", in *The Maturational Processes and the Facilitating Environment*, pp.179–192（[International Universities Press 版の Internet Archive の走査](https://archive.org/details/maturationalproc0000dwwi)。貸出の形の本で、本の中の検索で段ごとに読みました。論文を頭から通しては読んでいません）。二つの傾きの文は p.185。訳は Claude。
+
+</details>
+
 <!--PART:第四部|Love駆動開発との関わり-->
 
 ## Love駆動開発が、関わりそうなこと
@@ -316,6 +324,6 @@ Love駆動開発を読むと創造的思考のスキルが身につくかは、�
 
 <details><summary>出典の確かめ方</summary>
 
-このページは Claude が原典を読んで書いた要約です。PISA 2022 の定義は、OECD の発表資料の PDF で読みました。ポアンカレ・ウォーラス・デューイは、パブリックドメインの本の走査の文字で読み、頁はそれぞれの版の頁です。世界経済フォーラムの報告は、公開の PDF で読みました。パースの文献と、洞察の研究の論文は、ほかの読み物と記録で本文照合したものを、読み直さずに使っています。英文の訳は、どれも Claude です。
+このページは Claude が原典を読んで書いた要約です。PISA 2022 の定義は、OECD の発表資料の PDF で読みました。ポアンカレ・ウォーラス・デューイは、パブリックドメインの本の走査の文字で読み、頁はそれぞれの版の頁です。世界経済フォーラムの報告は、公開の PDF で読みました。パースの文献と、洞察の研究の論文は、ほかの読み物と記録で本文照合したものを、読み直さずに使っています。ウィニコットの論文は、貸出の形の本を、本の中の検索で段ごとに読みました。英文の訳は、どれも Claude です。
 
 </details>
