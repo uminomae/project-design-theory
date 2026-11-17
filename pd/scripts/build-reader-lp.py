@@ -133,6 +133,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/creative-thinking/READER-creative-thinking.md",
+        ROOT / "scripts/reader-creative-thinking-template.html",
+        ROOT / "reader/creative-thinking.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/defense-mechanisms/READER-defense-mechanisms.md",
         ROOT / "scripts/reader-defense-mechanisms-template.html",
         ROOT / "reader/defense-mechanisms.html",

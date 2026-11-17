@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/creative-thinking.html を直接編集しないでください。
+  正本:   knowledge/research/creative-thinking/READER-creative-thinking.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「創造的思考とは」のページです。創造的思考とは何か。国際的な学力調査 PISA 2022 の定義（新しく役に立つ考えを生み、確かめ、よくする力・考えを広げる思考と絞る思考）と、世界経済フォーラムの 2030 年の中核スキルでの置き場（認知のスキル）。考えが生まれる過程の古典（ポアンカレ 1908 の無意識の仕事と美の感覚・ウォーラス 1926 の準備・孵化・ひらめき・検証）と洞察の研究。仮説を立てる思考の置き場（デューイ 1910 の五つの段と思いつき・パースのアブダクション）。仮説思考の駆動源として、パース 1893「進化的な愛」の考えへの引き寄せを先に置き、疑い・困りごと・驚き・遊び・失敗の続き・美の感覚と並べる。最後に、Love駆動開発が関わりそうなことを Claude の見立てとして五つ置く。
+  研究の説明は Claude が原典から書いた要約。載せた出典（PISA 2022 は OECD の発表資料の PDF、Poincaré 1914 の英訳・Wallas 1926・Dewey 1910 はパブリックドメインの本の走査、Peirce 1877・1878・1893 は『Chance, Love, and Logic』1923 の再録、Peirce 1903 はスタンフォード哲学百科事典が原文で引く箇所、Peirce 1908 は The Hibbert Journal の原誌、WEF 2025 と Knoblich ら 1999 は別の読み物と記録での照合）は、本文で確認し、各章の「出典」の畳みに頁を添えている。英文の訳は Claude。第四部と「Claude の読み」「Claude の見立て」と書いた文は Claude の読み。
+  pjdhiro 本人の言葉は「pjdhiro の問い：」「pjdhiro の見方：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>創造的思考とは | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/creative-thinking.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="創造的思考とは何か。国際的な学力調査 PISA 2022 の定義（新しく役に立つ考えを生み、確かめ、よくする力・考えを広げる思考と絞る思考）と、世界経済フォーラムの 2030 年の中核スキルでの置き場（認知のスキル）。考えが生まれる過程の古典（ポアンカレ 1908 の無意識の仕事と美の感覚・ウォーラス 1926 の準備・孵化・ひらめき・検証）と洞察の研究。仮説を立てる思考の置き場（デューイ 1910 の五つの段と思いつき・パースのアブダクション）。仮説思考の駆動源として、パース 1893「進化的な愛」の考えへの引き寄せを先に置き、疑い・困りごと・驚き・遊び・失敗の続き・美の感覚と並べる。最後に、Love駆動開発が関わりそうなことを Claude の見立てとして五つ置く。">
+    <meta property="og:title" content="創造的思考とは">
+    <meta property="og:description" content="創造的思考とは何か。国際的な学力調査 PISA 2022 の定義（新しく役に立つ考えを生み、確かめ、よくする力・考えを広げる思考と絞る思考）と、世界経済フォーラムの 2030 年の中核スキルでの置き場（認知のスキル）。考えが生まれる過程の古典（ポアンカレ 1908 の無意識の仕事と美の感覚・ウォーラス 1926 の準備・孵化・ひらめき・検証）と洞察の研究。仮説を立てる思考の置き場（デューイ 1910 の五つの段と思いつき・パースのアブダクション）。仮説思考の駆動源として、パース 1893「進化的な愛」の考えへの引き寄せを先に置き、疑い・困りごと・驚き・遊び・失敗の続き・美の感覚と並べる。最後に、Love駆動開発が関わりそうなことを Claude の見立てとして五つ置く。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/creative-thinking.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="創造的思考とは">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-17">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "創造的思考とは",
+          "description": "創造的思考とは何か。国際的な学力調査 PISA 2022 の定義（新しく役に立つ考えを生み、確かめ、よくする力・考えを広げる思考と絞る思考）と、世界経済フォーラムの 2030 年の中核スキルでの置き場（認知のスキル）。考えが生まれる過程の古典（ポアンカレ 1908 の無意識の仕事と美の感覚・ウォーラス 1926 の準備・孵化・ひらめき・検証）と洞察の研究。仮説を立てる思考の置き場（デューイ 1910 の五つの段と思いつき・パースのアブダクション）。仮説思考の駆動源として、パース 1893「進化的な愛」の考えへの引き寄せを先に置き、疑い・困りごと・驚き・遊び・失敗の続き・美の感覚と並べる。最後に、Love駆動開発が関わりそうなことを Claude の見立てとして五つ置く。",
+          "keywords": "創造的思考, creative thinking, 創造性, PISA 2022, 仕事の未来レポート2025, ポアンカレ, ウォーラス, 孵化, デューイ, 仮説思考, パース, アブダクション, 進化的な愛, agapasm, Love駆動開発, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/creative-thinking.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/creative-thinking.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-17",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "創造的思考"}, {"@type": "Thing", "name": "仮説"}, {"@type": "Person", "name": "Charles Sanders Peirce"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「創造的思考とは」のページです（工事中）。創造的思考とは何か。国際的な学力調査 PISA 2022 の定義（新しく役に立つ考えを生み、確かめ、よくする力・考えを広げる思考と絞る思考）と、世界経済フォーラムの 2030 年の中核スキルでの置き場（認知のスキル）。考えが生まれる過程の古典（ポアンカレ 1908 の無意識の仕事と美の感覚・ウォーラス 1926 の準備・孵化・ひらめき・検証）と洞察の研究。仮説を立てる思考の置き場（デューイ 1910 の五つの段と思いつき・パースのアブダクション）。仮説思考の駆動源として、パース 1893「進化的な愛」の考えへの引き寄せを先に置き、疑い・困りごと・驚き・遊び・失敗の続き・美の感覚と並べる。最後に、Love駆動開発が関わりそうなことを Claude の見立てとして五つ置く。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の問い」「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>創造的思考とは</h1>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/creative-thinking/READER-creative-thinking.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="peirce-love-abduction.html">パースの創造的な愛と、アブダクション</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
