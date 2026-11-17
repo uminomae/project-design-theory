@@ -1258,3 +1258,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（「Love駆動開発は、何を駆動源と見るのか」の章の頭の例を、好きなバンドからダーウィンの甲虫の採集に替え、章の終わりに出典を置いた）
 - pages: どちらも、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（駆動源の章の頭をゴッホに・#155）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（駆動源の章の頭で目的駆動と意欲駆動を分けて置き、例をゴッホの伝道師から画家への道に替え、ダーウィンは目的を人が決めるときの寄り道へ移した）
+- pages: どちらも、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
