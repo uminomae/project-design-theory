@@ -139,6 +139,8 @@ Wilson, R. (2018) "Euler's Pioneering Equation"（[Gresham College の講演の�
 
 二人とも、美の感覚を、どの考えに向かうかが決まるところで働くものとして書いています。
 
+<a id="bt-beauty-driven"></a>このサイトでは、この働きを芯に置いた考え方を、美駆動思考（Beauty-Driven Thinking）と呼んできました。創造の過程で、美しさの感覚が向かう先を決める役を果たす、という仮説に立つ考え方です。論理の正しさだけでなく、直感で感じる美しさが、作るときの判断を導く、と見ます。ポアンカレのふるいとパースの惹かれは、この仮説が指す働きを、古典の側から書いたものとして読めます（この読みは Claude のものです）。
+
 <details><summary>詳しく — 原文の鍵の文</summary>
 
 <div class="tablefit cols-2">
