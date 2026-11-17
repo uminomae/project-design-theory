@@ -1138,3 +1138,8 @@ compile 実行の履歴。append-only。
 - scope: 1 ページ確かめ（`cross-refs/concept-entity-map`）
 - sources: `pd/src/content/site-data.mjs`（`repo.loveDrivenDevDesc` の頭の「私は」を外した・1672734f）
 - pages: ページが site-data.mjs から引くのは調査ノートの「デザイン思考とは」だけで、今もあるので本文を変えず、compiled を今日にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（第六部の章の頭に今の像と例）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第六部の章の頭に、問い・今の像・例と出典の畳みを足した。ワイクらの地図の話・デューらの起業家の調査・Google のチームの調査・ノートンらの折り紙の実験・ベックの路線図・ゴルトンの牛の重さ当て・#155）
+- pages: どちらも、足したのは章の頭の今の像と例で、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
