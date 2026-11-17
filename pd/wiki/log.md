@@ -1263,3 +1263,58 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（駆動源の章の頭で目的駆動と意欲駆動を分けて置き、例をゴッホの伝道師から画家への道に替え、ダーウィンは目的を人が決めるときの寄り道へ移した）
 - pages: どちらも、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（第二部の三章の直し・#155）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（創造の章の「創造とは」のトップの引用を今の文に合わせ、海が波を生み出すの一点を本文から案内し、恋愛の例の断りを外した。重力の章のカード直後の段を一つに寄せ、物理の章を開いた形にしてサウナの例の結びに一句足した）
+- pages: どちらも、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（第三部の四章の直し・#155）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（欠けの章で、消防の隊長の例を地図と高さのたとえに結び、報告書の「形からのずれ」の読みを出典の畳みへ下げた。信号の章で問いのカードの「対象」と「包容」の出どころを渡し、時間の尺度の断りを畳みへ寄せた。価値の章で五つの段を章の頭の曲でたどった。生存と信頼の章で、見えない質量をたとえと分かる形にした）
+- pages: どちらも、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（群盲象を評すの畳み・付箋帳 i20261117111122egx）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（経営学の章の畳み「群盲象を評す」に、日本語版 Wikipedia の項へのリンクと、ラーマクリシュナ 1883・ボーム 1951・シャー 1970 とウィリアムスの映画がこの話を引いた例を、出典つきで足した）
+- pages: どちらも、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（群盲象を評すの畳みの出典の一句）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（ボームの出典の写しの説明を「同じ頁組み」から「1951 年版をそのまま再刊したもの」に直した）
+- pages: どちらも、本文を変えず checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（第四部の推しやすさの直し・#155）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第四部の章の頭の例と結びを直した。部の頭の案内の「概説とリンクだけ」を外した）
+- pages: `concepts/Love 駆動開発` は前提の五つの章の「概説とリンクの形で」を「論の概説の形で」に直した。どちらも checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（物理の章の頭にボームの群盲象）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（物理の章の頭に、ボームが『量子論』で光の粒子と波を群盲象を評すの話で説明した段を置き、経営学の章の畳みの同じ段は一文に縮めた）
+- pages: どちらも、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（防衛がゆるむ章の例を縮めた）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（防衛がゆるむ章の頭に北風と太陽を一句で戻し、ミラーの研究の例を縮めた）
+- pages: どちらも、本文を変えず checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（第五部の推しやすさの直し・#155）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第五部の章の頭の例を直した：何でないかをアインシュタインとフロイトの手紙に、どういう面の例の山を確かめていなかった所に、たとえの光を章の後ろへ一文に、パースの章のニーチェを三つの事実に、駆動源の段を欠乏・ニーズの側から）
+- pages: どちらも、第五部の要約・カード・結論の見立てに変わりは無く、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（信仰の章の頭の例を替えた）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（信仰の章の頭をミラーからキャンピングの 2011 年の予言に替え、依存の章のハーロウの括弧の一文を外した）
+- pages: どちらも、本文を変えず checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（信仰の章で否認を名前で出した）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（信仰の章のフロイトの段に否認の名と pjdhiro の見方を足した）
+- pages: どちらも、本文を変えず checked を今の時刻にした（前の三回の checked に先の時刻を書いていたのも、ここで今の時刻に直した）。
+
+## [2026-11-17] update | Love 駆動開発（パースの章に pjdhiro の問いを足した・#155）
+- scope: 1 ページ直し（`concepts/Love 駆動開発`）、1 ページ確かめ（`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（パースの章に「パースを鏡として使えないだろうか？」の問いのカードを足し、工事中の一行をその問いに向けた。どういう面の章の頭の例を『から騒ぎ』の修道士の台詞に替えた。何でないかの章の「正反対」の一文を外した）
+- pages: `concepts/Love 駆動開発` のパースの段に同じ問いと工事中の一文を足した。`プロジェクトデザイン` は変わらない。

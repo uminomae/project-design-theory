@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/beauty.html を直接編集しないでください。
+  正本:   knowledge/research/beauty/READER-beauty.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「美とは」のページです。美とは何か。美しさは物にあるのか見る人にあるのか（ヒューム 1757「趣味の基準について」）。数学者がいちばん美しいと呼んできたオイラーの等式（デブリン 2002・クリース 2007）と、数学の美を感じるときの脳（ゼキら 2014）。美の感覚が考えを選び、引き寄せる（ポアンカレ 1908・パース 1908）。愛を何でないかで語るシェイクスピアのソネット 116 番と注釈書・アキリーナ 2011。寂びと侘びの辞書と事典の説明。最後に、三つの美を一つの語で括れるかという pjdhiro の問いに、pjdhiro の見方と Claude の見立てを置く。探索して追記していくページ。
+  研究の説明は Claude が原典から書いた要約。載せた出典（Hume 1757 は Wikisource の初版の翻刻、Devlin 2002・Crease 2007 は出版元の公開頁、Zeki ら 2014 は Europe PMC の全文、Wilson 2018 は講演の原稿、Poincaré 1914 の英訳とソネットの注釈書六つは本の走査、Peirce 1908 は Wikisource と原誌、ソネット 116 番は Wikisource の 1609 年版の翻刻と Folger の本文、Aquilina 2011 は大学の機関リポジトリ、寂びと侘びはコトバンクの辞書と事典）は、本文で確認し、各章の「出典」の畳みに頁を添えている。『去来抄』の言葉は事典の引用で読んだ。英文の訳は Claude。第四部と「Claude の見立て」と書いた文は Claude の読み。
+  pjdhiro 本人の言葉は「pjdhiro の問い：」「pjdhiro の見方：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>美とは | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/beauty.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="美とは何か。美しさは物にあるのか見る人にあるのか（ヒューム 1757「趣味の基準について」）。数学者がいちばん美しいと呼んできたオイラーの等式（デブリン 2002・クリース 2007）と、数学の美を感じるときの脳（ゼキら 2014）。美の感覚が考えを選び、引き寄せる（ポアンカレ 1908・パース 1908）。愛を何でないかで語るシェイクスピアのソネット 116 番と注釈書・アキリーナ 2011。寂びと侘びの辞書と事典の説明。最後に、三つの美を一つの語で括れるかという pjdhiro の問いに、pjdhiro の見方と Claude の見立てを置く。探索して追記していくページ。">
+    <meta property="og:title" content="美とは">
+    <meta property="og:description" content="美とは何か。美しさは物にあるのか見る人にあるのか（ヒューム 1757「趣味の基準について」）。数学者がいちばん美しいと呼んできたオイラーの等式（デブリン 2002・クリース 2007）と、数学の美を感じるときの脳（ゼキら 2014）。美の感覚が考えを選び、引き寄せる（ポアンカレ 1908・パース 1908）。愛を何でないかで語るシェイクスピアのソネット 116 番と注釈書・アキリーナ 2011。寂びと侘びの辞書と事典の説明。最後に、三つの美を一つの語で括れるかという pjdhiro の問いに、pjdhiro の見方と Claude の見立てを置く。探索して追記していくページ。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/beauty.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="美とは">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-17">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "美とは",
+          "description": "美とは何か。美しさは物にあるのか見る人にあるのか（ヒューム 1757「趣味の基準について」）。数学者がいちばん美しいと呼んできたオイラーの等式（デブリン 2002・クリース 2007）と、数学の美を感じるときの脳（ゼキら 2014）。美の感覚が考えを選び、引き寄せる（ポアンカレ 1908・パース 1908）。愛を何でないかで語るシェイクスピアのソネット 116 番と注釈書・アキリーナ 2011。寂びと侘びの辞書と事典の説明。最後に、三つの美を一つの語で括れるかという pjdhiro の問いに、pjdhiro の見方と Claude の見立てを置く。探索して追記していくページ。",
+          "keywords": "美, beauty, 美学, ヒューム, 趣味の基準, オイラーの等式, 数学的な美, デブリン, ゼキ, 内側眼窩前頭皮質, ポアンカレ, 美の感覚, パース, ミュージング, シェイクスピア, ソネット 116, 寂び, 侘び, 妙, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/beauty.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/beauty.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-17",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "美"}, {"@type": "Thing", "name": "オイラーの等式"}, {"@type": "Thing", "name": "寂び"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「美とは」のページです（工事中）。美とは何か。美しさは物にあるのか見る人にあるのか（ヒューム 1757「趣味の基準について」）。数学者がいちばん美しいと呼んできたオイラーの等式（デブリン 2002・クリース 2007）と、数学の美を感じるときの脳（ゼキら 2014）。美の感覚が考えを選び、引き寄せる（ポアンカレ 1908・パース 1908）。愛を何でないかで語るシェイクスピアのソネット 116 番と注釈書・アキリーナ 2011。寂びと侘びの辞書と事典の説明。最後に、三つの美を一つの語で括れるかという pjdhiro の問いに、pjdhiro の見方と Claude の見立てを置く。探索して追記していくページ。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の問い」「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>美とは</h1>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/beauty/READER-beauty.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="creative-thinking.html">創造的思考とは</a> ・
+                <a href="peirce-love-abduction.html">パースの創造的な愛と、アブダクション</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

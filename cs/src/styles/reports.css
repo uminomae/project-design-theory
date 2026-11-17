@@ -1029,19 +1029,10 @@
 }
 
 /* Button in REPORTS section to open modal */
+/* 形・字・色は .btn-kesson-action（主のボタン）にそろえた（2026-11-17）。ここでは幅だけ */
 #reports-hover-grid-open-btn {
-  font-family: var(--ds-font-serif-display, 'Noto Serif JP', serif);
-  font-size: 1rem;
-  letter-spacing: 0.06em;
-  padding: 0.7rem 2rem;
-  border-color: rgba(255, 255, 255, 0.25);
-  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
-}
-
-#reports-hover-grid-open-btn:hover,
-#reports-hover-grid-open-btn:focus-visible {
-  border-color: rgba(255, 255, 255, 0.45);
-  background: rgba(255, 255, 255, 0.08);
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 @media (max-width: 760px) {

@@ -2,6 +2,7 @@
 
 import { getCurrentLang, normalizeLang } from './i18n.js';
 import { dict } from './i18n/dict.js';
+import { openDefinitionModal, setDefinitionModalLanguage } from './definition-modal.js';
 
 const STAGE_COLORS = [
     'rgba(100, 150, 255, 0.9)',   // 場 — blue
@@ -49,8 +50,12 @@ export function initPrologueTimeline() {
 
         _timeline.appendChild(_nodesRow);
         _timeline.appendChild(_descArea);
-        _linkEl = document.createElement('a');
-        _linkEl.className = 'prologue-definition-link';
+        // 「現在の定義を読む」は、押すとモーダルで定義のページを開くボタン（付箋帳 i2026111711421795p）
+        _linkEl = document.createElement('button');
+        _linkEl.type = 'button';
+        _linkEl.className = 'btn btn-lg btn-kesson-action btn-kesson-action--primary prologue-definition-btn';
+        _linkEl.setAttribute('aria-haspopup', 'dialog');
+        _linkEl.addEventListener('click', () => openDefinitionModal(_linkEl));
 
         _timeline.appendChild(_noteEl);
         _timeline.appendChild(_linkEl);
@@ -80,7 +85,6 @@ function renderTimeline(lang) {
     if (_noteEl) _noteEl.textContent = prologueStrings.note || dict.ja.prologue.note || '';
     if (_linkEl) {
         _linkEl.textContent = prologueStrings.definitionLink || dict.ja.prologue.definitionLink;
-        _linkEl.href = prologueStrings.definitionHref || dict.ja.prologue.definitionHref;
     }
     _nodesRow.innerHTML = '';
 
@@ -208,4 +212,5 @@ function initScrollObserver() {
 
 export function setPrologueTimelineLanguage(lang) {
     renderTimeline(lang);
+    setDefinitionModalLanguage(lang);
 }

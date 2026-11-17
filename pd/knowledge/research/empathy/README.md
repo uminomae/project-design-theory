@@ -2,6 +2,8 @@
 
 読み物 `READER-empathy.md`（公開は `reader/empathy.html`）の、発言の記録・読んだ原典・照合の状態・残したことを置く。Issue #151。原典ごとの照合は `SURVEY-01-classics.md`（古典・哲学・精神分析）と `SURVEY-02-psychology.md`（心理学・神経科学）。
 
+#170 の調べ（共感と呼ばれてきた現象を、創造の五段階と、発達による自他の分かれ方で整理する）：整理は `SURVEY-03-five-stages-development.md`。原典ごとの照合は `SURVEY-03a-collective.md`（Le Bon・Durkheim・Barsade・Cikara ら）と `SURVEY-03b-development.md`（Scheler の一体感の型と発達の法則・Kegan・Cook-Greuter・Lamm ら・Bischof-Köhler・Rochat）。「共感とは」への置き方は判断のページ（URL は手元のセッションの記録）で答え待ち（本文はまだ書かない）。
+
 ## pjdhiro の発言（原文のまま）
 
 何への答えか：違和感帳の一件（i20261115085621qgr・2026-11-15）。Love駆動開発の本文で「共感」の語が出てくる所を見ての言葉。
@@ -52,3 +54,5 @@ wiki（`pd/wiki/`）は正本から作り直すので、一覧に入れていな
 - Heimann 1950（逆転移）・Batson 2009（共感と呼ばれる八つの現象）・Rogers 1959・de Waal 1996 の、載せてよい写し。
 - Scheler 1913 の初版（Internet Archive に無く、HathiTrust は確認画面）。
 - `pd/wiki/sources/Hatfield_1993_emotional-contagion.md` の確かめ先を、上げた人の分からない写しから、著者のサイトの写しの Wayback の記録に差し替えられる（SURVEY-02 §1。全文が一字も違わないことを確かめた）。
+- #170：Hoffman の共感の発達の段の原典（有料・貸出だけで読めていない）、Kegan 1982 の権利の確かな写し、Collins 2004。
+- #170：SURVEY-01 §5 と読み物の Scheler の頁が、刷りの頁より一つ小さい見込み（SURVEY-03b §9）。走査の頁の画像で確かめてから直す。

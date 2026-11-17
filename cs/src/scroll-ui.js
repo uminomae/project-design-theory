@@ -3,7 +3,7 @@
 //
 // Scroll fade targets (must be checked when layout/classes are changed):
 // - IDs: #overlay, #control-guide
-// - Hint visibility by class toggle: #scroll-hint.visible, #scroll-hint-top.visible
+// - Hint visibility by class toggle: #scroll-hint.visible（上の #scroll-hint-top は 2026-11-17 に外した。↑ surface と役が重なり、五段階の欄のボタンに被っていた）
 //
 // Update-time manual test checklist:
 // 1) At page top, bottom hint is visible and fade targets are visible.
@@ -19,7 +19,6 @@ import { pxFromViewportHeight } from './nav/responsive.js';
 let _overlay;
 let _controlGuide;
 let _scrollHintBottom;
-let _scrollHintTop;
 let _surfaceBtn;
 let _graphicSwitcher;
 
@@ -35,7 +34,6 @@ export function initScrollUI() {
     _overlay = document.getElementById('overlay');
     _controlGuide = document.getElementById('control-guide');
     _scrollHintBottom = document.getElementById('scroll-hint');
-    _scrollHintTop = document.getElementById('scroll-hint-top');
     _surfaceBtn = document.getElementById('surface-btn');
     _graphicSwitcher = document.getElementById('graphic-switcher');
 
@@ -43,15 +41,10 @@ export function initScrollUI() {
     if (_surfaceBtn) {
         _surfaceBtn.addEventListener('click', scrollToTop);
     }
-    // 上部scroll hint: クリックでページ最上部へ
-    if (_scrollHintTop) {
-        _scrollHintTop.addEventListener('click', scrollToTop);
-    }
 
     // --- クリーンアップ関数を登録 ---
     _cleanup = () => {
         if (_surfaceBtn) _surfaceBtn.removeEventListener('click', scrollToTop);
-        if (_scrollHintTop) _scrollHintTop.removeEventListener('click', scrollToTop);
     };
 }
 
@@ -111,16 +104,6 @@ export function updateScrollUI(scrollProg, breathVal) {
     if (_scrollHintBottom) {
         const showBottomHint = atTop && !atBottom;
         _scrollHintBottom.classList.toggle('visible', showBottomHint);
-    }
-
-    // --- 上部 scroll hint: スクロール中のみ表示、最上部で消える ---
-    if (_scrollHintTop) {
-        const showTop = !atTop && scrollProg > 0.15;
-        if (showTop) {
-            _scrollHintTop.classList.add('visible');
-        } else {
-            _scrollHintTop.classList.remove('visible');
-        }
     }
 
     // --- 浮上ボタン: 80%以上で表示 ---

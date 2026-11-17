@@ -106,6 +106,9 @@ export const dict = {
             note: 'この定義は暫定です。30 の分野の調べで見つかる特徴を論じ、組み込んで補強していきます。',
             definitionLink: '現在の定義を読む',
             definitionHref: './reader/five-stages.html',
+            definitionModalTitle: '創造の5段階 — 現在の定義',
+            definitionOpenNewTab: '別のタブで開く',
+            definitionCloseAria: '閉じる',
             stageTitleFormat: '{label}（{sub}）',
         },
         about: {
@@ -228,6 +231,9 @@ export const dict = {
             note: 'These definitions are provisional. Features found in the survey of 30 fields are discussed and built in to strengthen them.',
             definitionLink: 'Read the current definition',
             definitionHref: './reader/five-stages-en.html',
+            definitionModalTitle: 'Five Stages of Creation — Current Definition',
+            definitionOpenNewTab: 'Open in a new tab',
+            definitionCloseAria: 'Close',
             stageTitleFormat: '{label} ({sub})',
         },
         about: {
