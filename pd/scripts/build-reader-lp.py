@@ -133,6 +133,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は ja/1893-evolutionary-love.md（原文と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/research/peirce-love-abduction/READER-peirce-evolutionary-love-ja.md",
+        ROOT / "scripts/reader-peirce-evolutionary-love-ja-template.html",
+        ROOT / "reader/peirce-evolutionary-love-ja.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/creative-thinking/READER-creative-thinking.md",
         ROOT / "scripts/reader-creative-thinking-template.html",
         ROOT / "reader/creative-thinking.html",
@@ -181,6 +188,70 @@ PAGES = [
 SCREENER_DATA = {
     "stages-screener.html": ROOT / "knowledge/research/stages-screener/screener-data.json",
 }
+
+
+def ja_text_markdown(path: Path) -> str:
+    """原典の対訳の md（`ja/*.md`）を、訳を主に・原文を段ごとの畳みにした本文の md に組み直す。
+
+    対訳の md の形（`ja/README.md`）：`### ¶N　p.X` の段ごとに、`>` の行が原文、
+    `訳注：` で始まる行が Claude の注、残りが訳。頭の版の説明（最初の `### ` より前）は使わない
+    （公開ページの冒頭に書き直して置く）。原文の節の見出し（全部が大文字の短い段）の前で章（h2）を切る。
+    作業の覚え書き（道具で取れず手で足した、の類）は、公開ページに出さない。
+    """
+    text = path.read_text(encoding="utf-8")
+    blocks = re.split(r"^### ", text, flags=re.M)[1:]
+    # 原文の節の見出しの段 → 章の題（訳）。訳の md の段の番号で指す
+    chapters = {
+        "¶1": "題と、最初の節「一見したところ、反対の福音」",
+        "¶18": "再考、和解の論",
+        "¶28": "第三の側面、見分け方",
+        "注61": "パースの脚注",
+    }
+    out = []
+    for b in blocks:
+        head, _, body = b.partition("\n")
+        no, _, page = head.strip().partition("　")
+        if no in chapters:
+            out.append(f"\n## {chapters[no]}\n")
+            if no == "¶1":
+                out.append("\n<!--OPEN-->\n")
+        orig, trans, notes = [], [], []
+        for line in body.split("\n"):
+            if line.startswith(">"):
+                s = line[1:].lstrip(" ") if line.strip() != ">" else ""
+                if s.startswith("（誌面の表"):
+                    continue
+                orig.append(s)
+            elif line.startswith("訳注："):
+                if "道具" in line or "Wikisource" in line:
+                    continue
+                notes.append(line)
+            else:
+                trans.append(line)
+        aid = ("n" + no[1:]) if no.startswith("注") else ("p" + no[1:])
+        label = no
+        link = lambda s: re.sub(r"\[注(\d+)\]", r'<a href="#n\1">[注\1]</a>', s)
+        # 表（¶32 の身長の表）は、狭い幅で横に送らないよう .tablefit で囲む（stance 2-7）
+        fit = lambda s: re.sub(r"((?:^\|.*\n?)+)", lambda m: '\n<div class="tablefit cols-2">\n\n' + m.group(1).rstrip("\n") + "\n\n</div>\n", s, flags=re.M)
+        out.append(f'\n<p id="{aid}"><small>{label}　{page}</small></p>\n')
+        out.append("\n" + fit(link("\n".join(trans).strip())) + "\n")
+        for n in notes:
+            out.append(f"\n<p><small>{n}</small></p>\n")
+        out.append(f'\n<details><summary>原文（{label}）</summary>\n\n<blockquote lang="en">\n\n'
+                   + fit(link("\n".join(orig).strip())) + "\n\n</blockquote>\n\n</details>\n")
+    return "".join(out)
+
+
+def expand_ja_text(md: str, src: Path) -> tuple[str, list[Path]]:
+    """正本 MD の <!--JA-TEXT:相対パス--> を、対訳の md から組んだ本文に置き換える。"""
+    used: list[Path] = []
+
+    def rep(m: re.Match) -> str:
+        p = (src.parent / m.group(1).strip()).resolve()
+        used.append(p)
+        return ja_text_markdown(p)
+
+    return re.sub(r"<!--JA-TEXT:(.*?)-->", rep, md), used
 
 
 def fold_sections(html: str) -> str:
@@ -361,19 +432,21 @@ def build(SRC: Path, TPL: Path, OUT: Path, STYLE: str) -> None:
     # front matter を剥がす
     m = re.match(r"^---\n.*?\n---\n", md, re.S)
     body_md = md[m.end():] if m else md
+    body_md, ja_paths = expand_ja_text(body_md, SRC)
+    date_paths = [str(SRC)] + [str(p) for p in ja_paths]
 
     # 最終更新日は正本の git 履歴から取る。ただし未コミットの編集があるときは今日の日付
     # （MD 編集と再ビルドを同一コミットに入れる通常運用では、コミット前のビルド時点で
     #  git log が 1 コミット前の日付を返し、表示が古いまま公開される）
     dirty = subprocess.run(
-        ["git", "status", "--porcelain", "--", str(SRC)],
+        ["git", "status", "--porcelain", "--", *date_paths],
         cwd=ROOT, capture_output=True, text=True, check=True,
     ).stdout.strip()
     if dirty:
         updated = date.today().isoformat()
     else:
         updated = subprocess.run(
-            ["git", "log", "-1", "--format=%ad", "--date=format:%Y-%m-%d", "--", str(SRC)],
+            ["git", "log", "-1", "--format=%ad", "--date=format:%Y-%m-%d", "--", *date_paths],
             cwd=ROOT, capture_output=True, text=True, check=True,
         ).stdout.strip() or "unknown"
 

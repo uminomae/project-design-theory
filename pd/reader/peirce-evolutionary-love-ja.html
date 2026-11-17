@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/peirce-evolutionary-love-ja.html を直接編集しないでください。
+  正本:   knowledge/research/peirce-love-abduction/READER-peirce-evolutionary-love-ja.md（訳の本文は ja/1893-evolutionary-love.md から差し込む）
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 訳の人の校閲が済むまで noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「パース「進化的な愛」を、日本語で読む」のページです。パース（Charles Sanders Peirce）の 1893 年の論文「Evolutionary Love（進化的な愛）」（The Monist 3(2), pp.176–200）の全文を、段ごとに日本語に訳したページ。訳を主に置き、英語の原文は段ごとの畳みに置く。原文はパブリックドメインで、初出の誌面の走査（JSTOR Early Journal Content）と照らした。訳は Claude（AI）によるもので、人の校閲はまだ。
+  訳注は Claude の注。原文の段の番号（¶）は Wikisource の段の分け方による通し番号、p. は誌面の頁。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>パース「進化的な愛」を、日本語で読む | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/peirce-evolutionary-love-ja.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="パース（Charles Sanders Peirce）の 1893 年の論文「Evolutionary Love（進化的な愛）」（The Monist 3(2), pp.176–200）の全文を、段ごとに日本語に訳したページ。訳を主に置き、英語の原文は段ごとの畳みに置く。原文はパブリックドメインで、初出の誌面の走査（JSTOR Early Journal Content）と照らした。訳は Claude（AI）によるもので、人の校閲はまだ。">
+    <meta property="og:title" content="パース「進化的な愛」を、日本語で読む">
+    <meta property="og:description" content="パース（Charles Sanders Peirce）の 1893 年の論文「Evolutionary Love（進化的な愛）」（The Monist 3(2), pp.176–200）の全文を、段ごとに日本語に訳したページ。訳を主に置き、英語の原文は段ごとの畳みに置く。原文はパブリックドメインで、初出の誌面の走査（JSTOR Early Journal Content）と照らした。訳は Claude（AI）によるもので、人の校閲はまだ。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/peirce-evolutionary-love-ja.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta property="og:image" content="https://uminomae.github.io/project-design-theory/assets/ogp/peirce-love-abduction.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="パース「進化的な愛」を、日本語で読む — 中心から三つの点を独立へ押し出し、円い運動で調和へ引き寄せる図">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="パース「進化的な愛」を、日本語で読む">
+    <meta name="twitter:image" content="https://uminomae.github.io/project-design-theory/assets/ogp/peirce-love-abduction.png">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-17">
+    <meta property="article:modified_time" content="2026-11-17">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "パース「進化的な愛」を、日本語で読む",
+          "description": "パース（Charles Sanders Peirce）の 1893 年の論文「Evolutionary Love（進化的な愛）」（The Monist 3(2), pp.176–200）の全文を、段ごとに日本語に訳したページ。訳を主に置き、英語の原文は段ごとの畳みに置く。原文はパブリックドメインで、初出の誌面の走査（JSTOR Early Journal Content）と照らした。訳は Claude（AI）によるもので、人の校閲はまだ。",
+          "keywords": "パース, Charles Sanders Peirce, 進化的な愛, Evolutionary Love, The Monist, agapasm, 創造的な愛, 日本語訳, 対訳",
+          "url": "https://uminomae.github.io/project-design-theory/reader/peirce-evolutionary-love-ja.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/peirce-evolutionary-love-ja.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-17",
+          "dateModified": "2026-11-17",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Person", "name": "Charles Sanders Peirce"}, {"@type": "Thing", "name": "愛"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。訳と解説の文責"},
+          "translationOfWork": {"@type": "ScholarlyArticle", "name": "Evolutionary Love", "author": {"@type": "Person", "name": "Charles Sanders Peirce"}, "datePublished": "1893", "isPartOf": "The Monist 3(2)", "pagination": "176-200", "sameAs": "https://www.jstor.org/stable/27897058"},
+          "translator": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。人の校閲はまだ"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「パース「進化的な愛」を、日本語で読む」のページです。パース（Charles Sanders Peirce）の 1893 年の論文「Evolutionary Love（進化的な愛）」（The Monist 3(2), pp.176–200）の全文を、段ごとに日本語に訳したページ。訳を主に置き、英語の原文は段ごとの畳みに置く。原文はパブリックドメインで、初出の誌面の走査（JSTOR Early Journal Content）と照らした。訳は Claude（AI）によるもので、人の校閲はまだ。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この訳は AI（Claude）によるものです。</b>人の校閲はまだです。引用や論拠には、各段の「原文」を使ってください。
+            </div>
+            <header class="reader-hero">
+                <h1><span style="display:inline-block">パース「進化的な愛」を、</span><span style="display:inline-block">日本語で読む</span></h1>
+                <p class="reader-meta">
+                    最終更新: 2026-11-17 ／ 状態: 訳は人の校閲前<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/peirce-love-abduction/ja/1893-evolutionary-love.md">対訳の正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p class="reader-lead"><span class="reader-lead__label">これは何か</span>アメリカの哲学者チャールズ・サンダース・パース（Charles Sanders Peirce・1839–1914）が 1893 年に書いた論文「Evolutionary Love（進化的な愛）」の全文を、段ごとに日本語に訳したページです。パースはこの論文で、進化には三つの様式があるとし、偶然による進化（tychasm）、必然による進化（anancasm）、愛による進化（agapasm）を分けました。そして、前の二つは愛による進化の退化した形だと書いています。</p>
+
+<div class="reader-lead"><span class="reader-lead__label">原典と訳</span>
+原典は Charles S. Peirce, "Evolutionary Love", <i>The Monist</i> 3(2), January 1893, pp.176–200 です。原文は、初出の誌面の走査（<a href="https://www.jstor.org/stable/27897058">JSTOR</a> の Early Journal Content。<a href="https://archive.org/details/jstor-27897058">Internet Archive</a> にも同じ走査があります）と一字ずつ照らしたものを載せています。<b>訳は Claude（AI）によるもので、人の校閲はまだです。</b>誤訳がありうるので、引用や論拠には原文を使ってください。
+</div>
+
+<div class="reader-lead"><span class="reader-lead__label">読み方</span>
+<ul class="reader-lead__list">
+<li>段ごとに訳を置き、その下の「原文」の畳みに英語の原文を置きました。</li>
+<li>段の頭の「¶3　p.176–177」は、段の通し番号と、誌面の頁です。訳と原文の中の [p.177] は、誌面の頁が変わる所です。</li>
+<li>「訳注：」で始まる小さな字の行は、Claude の注です。</li>
+<li>この論文が何を言っているかの解説は、読み物「<a href="peirce-love-abduction.html">パースの創造的な愛と、アブダクション</a>」の第一部にあります。</li>
+</ul>
+</div>
+
+<div class="reader-lead"><span class="reader-lead__label">構成</span>
+<ul class="reader-lead__list">
+<li><b>一見したところ、反対の福音</b>：愛を宇宙の進化の働きとした古い考えと、19 世紀の経済学の「貪欲の福音」を並べます。</li>
+<li><b>再考、和解の論</b>：ダーウィン・ラマルクほかの進化の理論を見て、偶然・必然・愛の三つの様式を定めます。</li>
+<li><b>第三の側面、見分け方</b>：三つの様式が、人の思考の歴史の中で、どう見分けられるかを見ます。</li>
+<li><b>パースの脚注</b>：誌面の脚注四つです。</li>
+</ul>
+</div>
+
+<details class="acc"><summary>載せた版と、権利について</summary>
+
+<ul>
+<li>原文は 1893 年に出版され、パースは 1914 年に亡くなっています。日本でも米国でも、著作権の保護期間は終わっています（パブリックドメイン）。</li>
+<li>照らした誌面の走査は、JSTOR の Early Journal Content です。JSTOR の利用条件は、Early Journal Content を、非営利の目的なら全部でも一部でも写して配ってよいとし、出どころとして JSTOR を示すよう求めています（<a href="https://about.jstor.org/terms/">JSTOR の利用条件</a>）。このページは非営利で、上の走査へのリンクで出どころを示しています。</li>
+<li>原文の文字は、<a href="https://en.wikisource.org/wiki/Evolutionary_Love">Wikisource の文字起こし</a>をもとにし、誌面の走査と照らして直しました。直したのは、ギリシア文字、記号の付いた字（coördinate・Krönig など）、行末で切れた語のつなぎ、斜体、頁、脚注の印です。迷う所は、再録（Cohen 編『Chance, Love, and Logic』1923、pp.267–300。<a href="https://archive.org/details/chanceloveandlog00peiruoft">Internet Archive</a>）で決めました。誌面の誤植と見える所も、誌面のまま置きました（¶35 の "the time the of Irish monasteries" など。訳注で触れています）。</li>
+<li>段の分け方は Wikisource のままです。¶32 の身長の表は、誌面から写しました。</li>
+<li>訳は、既に出ている日本語訳を見ずに、Claude が原文から付けました。</li>
+</ul>
+</details>
+
+<details class="acc"><summary>訳語のそろえ方</summary>
+
+<p>訳語は、読み物「パースの創造的な愛と、アブダクション」にそろえました。</p>
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>原語</th>
+<th>訳語</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>tychasm・anancasm・agapasm</td>
+<td>パースの造語なので、原語のまま書きました。偶然（tyche）・必然（ananke）・愛（agape）による進化の様式です。定義の段（¶24）でだけ、定義の語句を添えました</td>
+</tr>
+<tr>
+<td>tychastic・anancastic・agapastic</td>
+<td>「偶然による」「必然による」「愛による」と訳し、段の初めに原語を括弧で残しました</td>
+</tr>
+<tr>
+<td>tychism・anancism・agapism、synechism</td>
+<td>原語のまま書きました。synechism は、初めに「連続の論」を添えました</td>
+</tr>
+<tr>
+<td>Gospel of Greed</td>
+<td>貪欲の福音</td>
+</tr>
+<tr>
+<td>sympathy・habit・idea・mind</td>
+<td>共感・習慣・考え・心。idea は、心の中の観念の意味が強い段では「観念（idea）」としました</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+</details>
+
+<details class="sec" id="題と最初の節一見したところ反対の福音" open><summary>題と、最初の節「一見したところ、反対の福音」</summary><div class="secbody">
+
+
+<p id="p1"><small>¶1　p.176</small></p>
+
+<p>進化的な愛</p>
+<details class="acc"><summary>原文（¶1）</summary>
+
+<blockquote lang="en">
+
+<p>EVOLUTIONARY LOVE.</p>
+</blockquote>
+
+</details>
+
+<p id="p2"><small>¶2　p.176</small></p>
+
+<p>一見したところ。反対の福音</p>
+<details class="acc"><summary>原文（¶2）</summary>
+
+<blockquote lang="en">
+
+<p>AT FIRST BLUSH. COUNTER-GOSPELS.</p>
+</blockquote>
+
+</details>
+
+<p id="p3"><small>¶3　p.176–177</small></p>
+
+<p>哲学は、その金色の蛹の殻である神話から抜け出したばかりのころ、宇宙の大いなる進化の働き手（evolutionary agency）は愛（Love）であると説いた。あるいは、英語というこの海賊の隠語は、この類の語に乏しいので、エロース、すなわち溢れ出る愛（exuberance-love）と言っておこう。のちにエンペドクレスは、激しい愛と憎しみ（passionate-love and hate）を、宇宙の対等な二つの力として立てた。いくつかの箇所では、好意（kindness）という語になっている。だが確かに、愛に反対のものがあるような意味では、どの意味であれ、その反対のものと組む上位の相棒であることが、愛の到りうる最高の地位である。それにもかかわらず、存在論の福音記者（the ontological gospeller）は、こうした見方がなじみの話題であった時代の人であったが、万物を無から造った唯一の至高の存在を、いつくしむ愛（cherishing-love）とした。では、彼は憎しみに何と言えるのか。黙示録の書き手は、もしそれがヨハネであったなら、迫害についに刺されて、悪の示唆と天の幻とを見分けられない怒りに陥り、そうして人々に向かって神を中傷する者（the Slanderer of God）となった。その彼が何を夢に見たにせよ、それは今は問わないでおこう。問題はむしろ、正気のヨハネが、自分の考え（idea）を一貫して推し進めるために、何を考えたか、あるいは考えるべきであったかである。神は愛であるという彼の言明は、神が私たちに愛を抱いているのか憎しみを抱いているのか私たちには分からない、という伝道の書の言葉に向けられているように見える。「いや」とヨハネは言う。「分かるのだ、それもごく簡単に。私たちは、神が私たちのうちに持つ愛を知り、信じてきた。神は愛である。」これは、神がすべての人を愛するという意味でないかぎり、論理になっていない。その前の段で、彼は「神は光であって、神のうちには闇がまったくない」と言っていた。だから私たちは、闇が光の欠けにすぎないように、憎しみと悪もまた、[p.177] アガペー（ἀγάπη）とアガトン（ἀγαθόν）、すなわち愛と愛らしさ（loveliness）の、不完全な段階にすぎない、と理解すべきなのである。これは、ヨハネによる福音書に伝えられている次の言葉と一致する。「神が御子を世に遣わしたのは、世を裁くためではなく、御子によって世が救われるためである。御子を信じる者は裁かれない。信じない者はすでに裁かれている。……そしてその裁きとは、光が世に来たのに、人々が光よりも闇を愛したということである。」つまり、神は彼らにどんな罰も下さない。彼らは、欠けたものへの生まれつきの親和（natural affinity）によって、自分で自分を罰するのである。こうして、神がそれであるところの愛は、憎しみをその反対とする愛ではない。もしそうなら、サタンが対等な力になってしまうだろう。そうではなく、憎しみを自らの不完全な段階として包み込む愛、アンテロース（Anteros）であり、いや、憎しみと憎むべきもの（hatefulness）を、自らの対象として必要としさえする愛である。というのも、自己愛（self-love）は愛ではないからである。だから、もし神の自己が愛であるなら、神が愛するものは愛の欠けでなければならない。ちょうど、光を放つものは、そうでなければ暗いはずのものしか照らせないのと同じである。スウェーデンボリ派のヘンリー・ジェイムズはこう言う。「他者のうちに自分のものを愛すること、他者が自分に一致しているがゆえに他者を愛することは、有限な、あるいは被造物の愛としては、疑いなく十分に許容できるものである。しかし、創造的な愛（creative Love）ほど、これと甚だしく対照をなすものはありえない。創造的な愛のやさしさはすべて、その語の力そのものによって（ex vi termini）、本質的に自分に最も激しく敵対し否定的であるものにだけ、取っておかれねばならないのである。」これは『実体と影：創造の物理学についての試論』からである。彼が、たやすくできたはずなのに、そのページをこのような事柄で満たさず、読者や人々一般を叱りつけてばかりいて、ついには創造の物理学がほとんど忘れられてしまったのは残念である。ただし、いま書いたことは少し割り引かねばならない。悪の問題に対してその永遠の解決を明かすような一文ほど崇高に、自分のすべての文を書ける天才など、明らかにいないのである。</p>
+<p><small>訳注：「神を中傷する者」は、悪魔を指すギリシア語 diabolos の原義「中傷する者」を踏まえた言い方と読める。</small></p>
+
+<p><small>訳注：アンテロースは、ギリシア神話でエロースの弟とされ、返される愛（報いる愛）をつかさどる神。報われない愛に報いを与える神ともされる。パースがここでどちらの意味で使ったかは確かめていない。</small></p>
+
+<p><small>訳注：引用はそれぞれ、ヨハネの第一の手紙 4:16・1:5、ヨハネによる福音書 3:17–19 にあたり、伝道の書の言葉は 9:1 を指すと思われる（章節は確かめていない）。</small></p>
+
+<details class="acc"><summary>原文（¶3）</summary>
+
+<blockquote lang="en">
+
+<p>PHILOSOPHY, when just escaping from its golden pupa-skin, mythology, proclaimed the great evolutionary agency of the universe to be Love. Or, since this pirate-lingo, English, is poor in such-like words, let us say Eros, the exuberance-love. Afterwards, Empedocles set up passionate-love and hate as the two coördinate powers of the universe. In some passages, kindness is the word. But certainly, in any sense in which it has an opposite, to be senior partner of that opposite, is the highest position that love can attain. Nevertheless, the ontological gospeller, in whose days those views were familiar topics, made the One Supreme Being, by whom all things have been made out of nothing, to be cherishing-love. What, then, can he say to hate ? Never mind, at this time, what the scribe of the apocalypse, if he were John, stung at length by persecution into a rage unable to distinguish suggestions of evil from visions of heaven, and so become the Slanderer of God to men, may have dreamed. The question is rather what the sane John thought, or ought to have thought, in order to carry out his idea consistently. His statement that God is love seems aimed at that saying of Ecclesiastes that we cannot tell whether God bears us love or hatred. "Nay," says John, "we can tell, and very simply! We know and have trusted the love which God hath in us. God is love." There is no logic in this, unless it means that God loves all men. In the preceding paragraph, he had said, "God is light and in him is no darkness at all." We are to understand, then, that as darkness is merely the defect of light, so hatred and evil are mere imperfect stages of [p.177] ἀγάπη and ἀγαθόν, love and loveliness. This concords with that utterance reported in John's Gospel: "God sent not the Son into the world to judge the world; but that the world should through him be saved. He that believeth on him is not judged: he that believeth not hath been judged already. . .And this is the judgment, that the light is come into the world, and that men loved darkness rather than the light." That is to say, God visits no punishment on them; they punish themselves, by their natural affinity for the defective. Thus, the love that God is, is not a love of which hatred is the contrary; otherwise Satan would be a coördinate power; but it is a love which embraces hatred as an imperfect stage of it, an Anteros—yea, even needs hatred and hatefulness as its object. For self-love is no love; so if God's self is love, that which he loves must be defect of love; just as a luminary can light up only that which otherwise would be dark. Henry James, the Swedenborgian, says: "It is no doubt very tolerable finite or creaturely love to love one's own in another, to love another for his conformity to one's self: but nothing can be in more flagrant contrast with the creative Love, all whose tenderness <em>ex vi termini</em> must be reserved only for what intrinsically is most bitterly hostile and negative to itself." This is from "Substance and Shadow: an Essay on the Physics of Creation." It is a pity he had not filled his pages with things like this, as he was able easily to do, instead of scolding at his reader and at people generally, until the physics of creation was wellnigh forgot. I must deduct, however, from what I just wrote: obviously no genius could make his every sentence as sublime as one which discloses for the problem of evil its everlasting solution.</p>
+</blockquote>
+
+</details>
+
+<p id="p4"><small>¶4　p.177–178</small></p>
+
+<p>愛の運動は円環的であり、ただ一つの同じ衝動で、創造したもの（creations）を独立へと送り出すと同時に、それらを調和へと引き寄せる。こう述べると込み入って見える。だが、それは私たちが黄金律（Golden Rule）と呼ぶ単純な定式に、余すところなくまとめられている。黄金律はもちろん、他人の利己的な衝動を満たすためにできることは何でもせよ、とは言わない。そうではなく、自分の完全さ（perfection）を、隣人の完成（perfectionment）のために犠牲にせよ、と言うのである。また、ベンサム、あるいはエルヴェシウス、あるいはベッカリーアの標語、最大多数の最大の善のために行為せよ、とは一瞬たりとも混同してはならない。愛は抽象に向けられる [p.178] のではなく、人格（persons）に向けられる。それも、知らない人々や人々の数にではなく、私たち自身の愛しい者たち、家族と隣人に向けられる。思い出そう、「隣人」とは、私たちの近くに住む者である。場所の上では近くないかもしれないが、生活と感情の上で近くに。</p>
+<details class="acc"><summary>原文（¶4）</summary>
+
+<blockquote lang="en">
+
+<p>The movement of love is circular, at one and the same impulse projecting creations into independency and drawing them into harmony. This seems complicated when stated so ; but it is fully summed up in the simple formula we call the Golden Rule. This does not, of course, say, Do everything possible to gratify the egoistic impulses of others, but it says, Sacrifice your own perfection to the perfectionment of your neighbor. Nor must it for a moment be confounded with the Benthamite, or Helvetian, or Beccarian motto, Act for the greatest good of the greatest number. Love is not di [p.178] rected to abstractions but to persons; not to persons we do not know, nor to numbers of people, but to our own dear ones, our family and neighbors. "Our neighbor," we remember, is one whom we live near, not locally perhaps, but in life and feeling.</p>
+</blockquote>
+
+</details>
+
+<p id="p5"><small>¶5　p.178</small></p>
+
+<p>聖ヨハネの言明が進化の哲学の定式であることは、誰の目にも明らかである。その哲学は、成長（growth）は愛からのみ来る、と教える。自己犠牲から、とは言うまい。他者の最も高い衝動を満たそうとする熱い衝動から、である。たとえば、私の興味を引く考え（idea）を私が持っているとしよう。それは私の創造したものである。それは私の被造物（creature）である。というのも、昨年七月の『モニスト』で示したように、それは小さな人格（a little person）だからである。私はそれを愛する。そして私は、それを完成させることに我を忘れて打ち込もう。私が自分の考えの輪を育てられるのは、それらに冷たい正義を分け与えることによってではなく、庭の花にするように、それらをいつくしみ（cherishing）世話することによってである。ヨハネの福音書から私たちが引き出す哲学は、これこそが心（mind）の発達の仕方だ、というものである。そして宇宙（cosmos）について言えば、それがまだ心であるかぎりにおいてのみ、したがって生命をもつかぎりにおいてのみ、さらに進化することができる。愛は、憎むべきもののうちに愛らしさの芽を認め、それを少しずつ温めて生命へと至らせ、愛らしいものにする。私の論文「心の法則」を注意深く読んだ人なら誰でも、synechism（連続の論）が求めるのはこの種の進化だと分かるはずである。</p>
+<p><small>訳注：「昨年七月の『モニスト』」は、1892 年 7 月号に載ったパースの「心の法則（The Law of Mind）」を指すと思われる。</small></p>
+
+<details class="acc"><summary>原文（¶5）</summary>
+
+<blockquote lang="en">
+
+<p>Everybody can see that the statement of St. John is the formula of an evolutionary philosophy, which teaches that growth comes only from love, from—I will not say self-<em>sacrifice</em>, but from the ardent impulse to fulfil another's highest impulse. Suppose, for example, that I have an idea that interests me. It is my creation. It is my creature; for as shown in last July's <em>Monist</em>, it is a little person. I love it; and I will sink myself in perfecting it. It is not by dealing out cold justice to the circle of my ideas that I can make them grow, but by cherishing and tending them as I would the flowers in my garden. The philosophy we draw from John's gospel is that this is the way mind develops; and as for the cosmos, only so far as it yet is mind, and so has life, is it capable of further evolution. Love, recognising germs of loveliness in the hateful, gradually warms it into life, and makes it lovely. That is the sort of evolution which every careful student of my essay "The Law of Mind," must see that <em>synechism</em> calls for.</p>
+</blockquote>
+
+</details>
+
+<p id="p6"><small>¶6　p.178–179</small></p>
+
+<p>十九世紀はいま急速に墓へと沈みつつあり、私たちはみな、その所業を振り返り、未来の歴史家たちの心の中で、ほかの世紀と比べてどんな性格を帯びることになるのかを考え始めている。思うに、それは「経済の世紀（the Economical Century）」と呼ばれるだろう。というのも、政治経済学（political economy）は、ほかのどの学問よりも、この世紀の活動のあらゆる部門と直接の関わりをもっているからである。さて、政治経済学にも、その贖い（redemption）の定式がある。それはこうである。貪欲（greed）に仕える知性は、最も正しい価格、最も公正な契約、人と人との間のあらゆる取引の最も賢明な運び方を確保し、最高善（summum bonum）、すなわち豊富な食物と完全な安楽へと導く。誰のための食物か。言うまでもなく、知性を従える貪欲な主人のためである。私は、これが政治経済学の正当な結論の一つだと言うつもりはない。政治経済学が科学であることは、私も十分に認める。しかし、それ自体は真である学説の研究が、しばしば一時的に、きわめて誤った一般化を助長することがある。物理学の研究が必然論（necessitarianism）を助長してきたように。だから私が言うのはこうである。[p.179] 私たちの世紀に経済の問題へ払われた大きな注意は、貪欲のもたらす益と、情（sentiment）のもたらす不幸な結果とを誇張させ、ついには、知らず知らずのうちに次のことに行き着く哲学を生んだ。すなわち、貪欲こそが、人類の向上と宇宙の進化における大いなる働き手である、と。</p>
+<details class="acc"><summary>原文（¶6）</summary>
+
+<blockquote lang="en">
+
+<p>The nineteenth century is now fast sinking into the grave, and we all begin to review its doings and to think what character it is destined to bear as compared with other centuries in the minds of future historians. It will be called, I guess, the Economical Century; for political economy has more direct relations with all the branches of its activity than has any other science. Well, political economy has its formula of redemption, too. It is this: Intelligence in the service of greed ensures the justest prices, the fairest contracts, the most enlightened conduct of all the dealings between men, and leads to the <em>summum bonum</em>, food in plenty and perfect comfort. Food for whom? Why, for the greedy master of intelligence. I do not mean to say that this is one of the legitimate conclusions of political economy, the scientific character of which I fully acknowledge. But the study of doctrines, themselves true, will often temporarily encourage generalisations extremely false, as the study of physics has encouraged necessitarianism. What I say, then, is that [p.179] the great attention paid to economical questions during our century has induced an exaggeration of the beneficial effects of greed and of the unfortunate results of sentiment, until there has resulted a philosophy which comes unwittingly to this, that greed is the great agent in the elevation of the human race and in the evolution of the universe.</p>
+</blockquote>
+
+</details>
+
+<p id="p7"><small>¶7　p.179</small></p>
+
+<p>私は政治経済学の手引書を開く。手元にあるもののうちで最も典型的で、最も中くらいのものである。そしてそこに見つかるいくつかの所見を、ここで簡単に分析しよう。限定の文言、ケルベロスに投げてやる餌、キリスト教徒の偏見をなだめるための言い回し、つまり貪欲の神の醜い裸を著者からも読者からも同じように隠す飾りは、省く。だが、自分の立ち位置は見渡して確かめてある。著者は「人間の行為の三つの動機」を数え上げる。</p>
+<p><small>訳注：「ケルベロスに投げてやる餌（sops thrown to Cerberus）」は、相手をなだめて黙らせるための小さな譲歩を言う英語の慣用句。</small></p>
+
+<details class="acc"><summary>原文（¶7）</summary>
+
+<blockquote lang="en">
+
+<p>I open a handbook of political economy,—the most typical and middling one I have at hand,—and there find some remarks of which I will here make a brief analysis. I omit qualifications, sops thrown to Cerberus, phrases to placate Christian prejudice, trappings which serve to hide from author and reader alike the ugly nakedness of the greed-god. But I have surveyed my position. The author enumerates "three motives to human action:</p>
+</blockquote>
+
+</details>
+
+<p id="p8"><small>¶8　p.179</small></p>
+
+<p>自己への愛（the love of self）、</p>
+<details class="acc"><summary>原文（¶8）</summary>
+
+<blockquote lang="en">
+
+<p>The love of self;</p>
+</blockquote>
+
+</details>
+
+<p id="p9"><small>¶9　p.179</small></p>
+
+<p>自分と共通の利害と感情をもつ、限られた階級（class）への愛、</p>
+<details class="acc"><summary>原文（¶9）</summary>
+
+<blockquote lang="en">
+
+<p>The love of a limited class having common interests and feelings with one's self;</p>
+</blockquote>
+
+</details>
+
+<p id="p10"><small>¶10　p.179</small></p>
+
+<p>人類全体への愛。」</p>
+<details class="acc"><summary>原文（¶10）</summary>
+
+<blockquote lang="en">
+
+<p>The love of mankind at large."</p>
+</blockquote>
+
+</details>
+
+<p id="p11"><small>¶11　p.179–180</small></p>
+
+<p>まず最初に、貪欲にどんなへつらいの称号が与えられているかに注意されたい。「自己への愛」である。愛だと。二つ目の動機こそ、まさに愛である。「限られた階級」の代わりに「ある人々」と置けば、まっとうな記述になる。「階級」を古風な意味にとれば、弱い種類の愛が記述されていることになる。その続きでは、この動機の境界の引き方にいくらかあいまいさがあるように見える。人類全体への愛ということで、著者は、本来そう呼ばれるべき、あの深い、意識下の情熱（passion）を指しているのではない。単に公共心（public-spirit）、ことによると、考えを押し広めようとするそわそわした気持ちほどのものにすぎないものを指している。著者は続いて、これらの動機の値打ちを比べて見積もる。貪欲は、と彼は言う、もちろん別の語を使ってだが、「一般に思われているほど大きな悪ではない。……誰でも、他の誰かの利益を推し進めるよりも、また他の誰かが彼の利益を推し進めるよりも、自分自身の利益をはるかに効果的に推し進めることができる。」そのうえ、別のページで彼が述べているように、人がけちであればあるほど、その人は多くの善をなす。二つ目の動機は「社会がさらされている最も危険なもの」である。愛はたいへん結構なものだ。「人間の幸福の源として、これより高く、これより純粋なものは存在しない。」（えへん。）だが、それは「永続する [p.180] 害の源」であり、要するに、何かもっと賢いものによって退けられるべきである。このもっと賢い動機とは何か。いずれ分かる。</p>
+<details class="acc"><summary>原文（¶11）</summary>
+
+<blockquote lang="en">
+
+<p>Remark, at the outset, what obsequious title is bestowed on greed,—"the love of self." Love! The second motive <em>is</em> love. In place of "a limited class" put "certain persons," and you have a fair description. Taking "class" in the old-fashioned sense, a weak kind of love is described. In the sequel, there seems to be some haziness as to the delimitation of this motive. By the love of mankind at large, the author does not mean that deep, subconscious passion that is properly so called; but merely public-spirit, perhaps little more than a fidget about pushing ideas. The author proceeds to a comparative estimate of the worth of these motives. Greed, says he, but using, of course, another word, "is not so great an evil as is commonly supposed. . .Every man can promote his own interests a great deal more effectively than he can promote any one else's, or than any one else can promote his." Besides, as he remarks on another page, the more miserly a man is, the more good he does. The second motive "is the most dangerous one to which society is exposed." Love is all very pretty: "no higher or purer source of human happiness exists." (Ahem !) But it is a "source of enduring [p.180] injury," and, in short, should be overruled by something wiser. What is this wiser motive? We shall see.</p>
+</blockquote>
+
+</details>
+
+<p id="p12"><small>¶12　p.180</small></p>
+
+<p>公共心について言えば、それは「その効果的な働きを妨げる困難」によって無力にされる。たとえば、公共心は、貧しい者と悪徳の者の多産に歯止めをかけることを示唆するかもしれない。また犯罪者の場合には、「どんな抑圧の手段も厳しすぎることはない」。ほのめかしはあからさまである。だが不幸にも、有害な「人の人に対するやさしい情」のせいで、立法府にそうした手段をとらせることはできない。こうして、公共心、すなわちベンサム主義は、愛の有効な後見役（tutor）になれるほど強くはないことがわかる（私は別のページへ飛ばしている）。それゆえ愛は、「富の追求において人を突き動かす動機」に引き渡されねばならない。私たちが信頼できるのはその動機だけであり、それは「最高度に恵み深い」。<a href="#n61">[注61]</a> そう、「最高度に」、例外なく、それらは恵み深い。そのすべての恵みが注がれる存在、すなわち自己（the Self）に対して。著者によれば、富を蓄えることにおける自己の「唯一の目的」は、個人の「生計と享楽」なのである。明らかに著者は、何かほかの動機が、その人の自己にとってさえより高度に恵み深いかもしれないという考えを、良識を欠いた逆説だと考えている。彼は自分の学説を言いつくろい、和らげようとする。だが、目ざとい読者には、彼を突き動かしている原理が何であるかが見えてしまう。そして、私がここに引いた意見を抱きながら、同時に、社会は知的な貪欲だけを土台にしては存立しえないと認めるとき、彼はただ、調和しない意見を寄せ集める折衷家の一人として、自分を分類棚に収めているにすぎない。彼は自分のマモン（mammon）に、ほんのひとつまみの神（a soupçon of god）で風味をつけたいのである。</p>
+<p><small>訳注：マモンは、新約聖書で富を擬人化した語（「神と富とに兼ね仕えることはできない」の「富」）。</small></p>
+
+<details class="acc"><summary>原文（¶12）</summary>
+
+<blockquote lang="en">
+
+<p>As for public spirit, it is rendered nugatory by the "difficulties in the way of its effective operation." For example, it might suggest putting checks upon the fecundity of the poor and the vicious ; and "no measure of repression would be too severe," in the case of criminals. The hint is broad. But unfortunately, you cannot induce legislatures to take such measures, owing to the pestiferous "tender sentiments of man towards man." It thus appears, that public-spirit, or Benthamism, is not strong enough to be the effective tutor of love, (I am skipping to another page,) which must therefore be handed over to "the motives which animate men in the pursuit of wealth," in which alone we can confide, and which "are in the highest degree beneficent."<a href="#n61">[注61]</a> Yes, in the "highest degree" without exception are they beneficent to the being upon whom all their blessings are poured out, namely, the Self, whose "sole object," says the writer in accumulating wealth is his individual "sustenance and enjoyment." Plainly, the author holds the notion that some other motive might be in a higher degree beneficent even for the man's self to be a paradox wanting in good sense. He seeks to gloze and modify his doctrine; but he lets the perspicacious reader see what his animating principle is; and when, holding the opinions I have repeated, he at the same time acknowledges that society could not exist upon a basis of intelligent greed alone, he simply pigeon-holes himself as one of the eclectics of inharmonious opinions. He wants his mammon flavored with a <em>soupçon</em> of god.</p>
+</blockquote>
+
+</details>
+
+<p id="p13"><small>¶13　p.180–181</small></p>
+
+<p>経済学者たちは、自分たちの非道な悪行が言い表されるのを聞いて恐怖の戦慄を覚える人々を、感傷主義者（sentimentalists）だと非難する。そうかもしれない。私は、自分の中に感傷主義がいくらか染みていることを喜んで認める。ありがたいことに。フランス革命がこの思想の傾きを悪評にさらして以来（それも、まったく不当にではなかったと私も認めねばならない。あの大きな運動が [p.181] 真で、美しく、善いものであったとしても）、感傷主義者を、論理的に考えることができず、事実を正面から見ようとしない人々として描くのが伝統となってきた。この伝統は、イギリス人は二文ごとに godam と言うというフランスの伝統、アメリカ人は「ブリティッシャーズ」の話をするというイギリスの伝統、フランス人は礼儀作法の型を不便なほど極端にまで持ち込むというアメリカの伝統と、同じ類に入れてよい。要するに、目と耳を使う人がまれにしかいないというだけの理由で生き残っているあらゆる伝統と同じ類である。過ぎ去った時代には、そうした意見のどれにも、いくらかの言い分があったに違いない。そして感傷主義も、ろうそくに照らされた舞台の悲しい芝居を前に涙の洪水の中で夜を過ごすのが流行の娯楽だったころには、ときに少しばかり滑稽になった。だが、結局のところ感傷主義とは何か。それは一つのイズム、一つの学説である。すなわち、感じやすい心（the sensible heart）の自然な判断に大きな敬意を払うべきだ、という学説である。これこそが、感傷主義の正確な中身である。そして読者に切に願う。それを侮ることが、あらゆる冒涜のうちで最も品位を落とすものではないかどうかを考えてほしい。だが十九世紀は、それが恐怖政治（the Reign of Terror）をもたらしたという理由で、一貫してそれを侮ってきた。それがそうしたのは事実である。それでも、問題はすべて、どれだけか、ということにある。恐怖政治はひどく悪かった。だが今や、グラッドグラインドの旗が、この一世紀のあいだ天に向かって見せびらかされてきた。空そのものが顔をしかめ、ごろごろと鳴るのを誘うほどの傲慢さで。やがて閃光とすばやい雷鳴が、経済学者たちを自己満足から完全に揺り起こすだろう。手遅れになってから。二十世紀は、その後半に、きっと、社会秩序の上に大洪水の嵐が襲いかかるのを見るだろう。その嵐が晴れたあとに現れる世界は、あの貪欲の哲学が長いあいだそれを罪の中へ突き落としてきたのと同じほど深く、廃墟の中にあるだろう。そのときには、テルミドール後のようなばか騒ぎはない。</p>
+<p><small>訳注：sensible は、ここでは「分別のある」と「感じる力のある」の両方に読める。訳は後者をとった。</small></p>
+
+<p><small>訳注：グラッドグラインドは、ディケンズ『ハード・タイムズ』（1854）の、事実と計算だけを重んじる人物。</small></p>
+
+<p><small>訳注：「テルミドール後」は、1794 年のテルミドールの反動でロベスピエールが倒れ恐怖政治が終わったあとの、享楽的な風潮を指すと読める。</small></p>
+
+<details class="acc"><summary>原文（¶13）</summary>
+
+<blockquote lang="en">
+
+<p>The economists accuse those to whom the enunciation of their atrocious villainies communicates a thrill of horror of being <em>sentimentalists</em>. It may be so: I willingly confess to having some tincture of sentimentalism in me, God be thanked! Ever since the French Revolution brought this leaning of thought into ill-repute,—and not altogether undeservedly, I must admit, true, beautiful, and good as [p.181] that great movement was,—it has been the tradition to picture sentimentalists as persons incapable of logical thought and unwilling to look facts in the eyes. This tradition may be classed with the French tradition that an Englishman says <em>godam</em> at every second sentence, the English tradition that an American talks about "Britishers," and the American tradition that a Frenchman carries forms of etiquette to an inconvenient extreme, in short with all those traditions which survive simply because the men who use their eyes and ears are few and far between. Doubtless some excuse there was for all those opinions in days gone by; and sentimentalism, when it was the fashionable amusement to spend one's evenings in a flood of tears over a woeful performance on a candle-litten stage, sometimes made itself a little ridiculous. But what after all is sentimentalism? It is an <em>ism</em>, a doctrine, namely, the doctrine that great respect should be paid to the natural judgments of the sensible heart. This is what sentimentalism precisely is; and I entreat the reader to consider whether to contemn it is not of all blasphemies the most degrading. Yet the nineteenth century has steadily contemned it, because it brought about the Reign of Terror. That it did so is true. Still, the whole question is one of <em>how much</em>. The reign of terror was very bad; but now the Gradgrind banner has been this century long flaunting in the face of heaven, with an insolence to provoke the very skies to scowl and rumble. Soon a flash and quick peal will shake economists quite out of their complacency, too late. The twentieth century, in its latter half, shall surely see the deluge-tempest burst upon the social order,—to clear upon a world as deep in ruin as that greed-philosophy has long plunged it into guilt. No post-thermidorian high jinks then!</p>
+</blockquote>
+
+</details>
+
+<p id="p14"><small>¶14　p.181–182</small></p>
+
+<p>では、守銭奴は共同体にとって恵み深い力だというのか。まったく同じ理屈で、ただずっと高い度合いで、ウォール街のいかさま師（sharp）を善い天使だと言い切ることもできよう。彼は、金をきちんと守りそうもない不注意な人々から金を取り上げ、止めたほうがよい弱い事業を潰し、用心の足りない科学者たちに価値のない小切手をつかませて、健全な教訓を施す。（先日、あなたが私にしたように。わが百万長者、グロメリーの親方（Master in glomery）よ、あなたは、私の方法（process）を代金を払わずに [p.182] 使う道が見えたと思い、そうして子どもたちに、父親を自慢できる何かを遺せると思ったのだった。）そして彼は、千の策略によって、金を知的な貪欲の役に立てる。その知的な貪欲とは、彼自身のことである。バーナード・マンデヴィルは『蜂の寓話』で、あらゆる種類の私的な悪徳は公共の利益であると主張し、しかもそれを、経済学者が守銭奴についての自説を証明するのとまったく同じくらい説得的に証明している。彼は、悪徳がなければ文明は決して存在しなかっただろう、とまで、少なからぬ力をもって論じる。同じ精神で、私的なものであれ公的なものであれ、慈善と博愛の行為はすべて人類をひどく堕落させるものだ、と強く主張されてきたし、今日も広く信じられている。</p>
+<p><small>訳注：Master in glomery は、中世のケンブリッジなどで文法（ラテン語）の教師を監督した者の古い称号（glomery は grammar の古い形）。ここでは皮肉な呼びかけで、誰を指すか、何の方法かは確かめていない。</small></p>
+
+<details class="acc"><summary>原文（¶14）</summary>
+
+<blockquote lang="en">
+
+<p>So a miser is a beneficent power in a community, is he? With the same reason precisely, only in a much higher degree, you might pronounce the Wall Street sharp to be a good angel, who takes money from heedless persons not likely to guard it properly, who wrecks feeble enterprises better stopped, and who administers wholesome lessons to unwary scientific men, by passing worthless checks upon them,—as you did, the other day, to me, my millionaire Master in glomery, when you thought you saw your way to using [p.182] my process without paying for it, and of so bequeathing to your children something to boast of their father about,—and who by a thousand wiles puts money at the service of intelligent greed, in his own person. Bernard Mandeville, in his "Fable of the Bees," maintains that private vices of all descriptions are public benefits, and proves it, too, quite as cogently as the economist proves his point concerning the miser. He even argues, with no slight force, that but for vice civilisation would never have existed. In the same spirit, it has been strongly maintained and is to-day widely believed that all acts of charity and benevolence, private and public, go seriously to degrade the human race.</p>
+</blockquote>
+
+</details>
+
+<p id="p15"><small>¶15　p.182</small></p>
+
+<p>ダーウィンの『種の起源』は、政治経済学の進歩の見方を、動物と植物の生命の全領域に広げたにすぎない。私たちの同時代の博物学者の大多数は、次の意見をもっている。私が少年だったころ、人々が神の知恵をたたえるのを常としていた、自然のあの精妙で驚くべき適応の真の原因は、生き物がひどく密集しているために、たまたまほんのわずかな利点をもつものが、押しの弱いものを、増殖に不利な状況へ押しやり、あるいは生殖の年齢に達する前に殺してさえしまう、ということにある、と。動物のあいだでは、単なる機械的な個人主義が、善をなす力として、動物の容赦ない貪欲によって大いに補強される。ダーウィンが扉の頁に書いているとおり、それは生存のための闘争（struggle for existence）である。そして彼は、標語として、各個体はおのれのために、いちばん遅れた者は悪魔にくれてやれ、と書き添えるべきだった。イエスは、山上の説教で、これとは違う意見を述べた。</p>
+<p><small>訳注：標語は、英語の成句 every man for himself, and the devil take the hindmost（各自は自分のために、遅れた者は悪魔に取られろ）の man を individual（個体）に替えたもの。なお『種の起源』の扉の題（副題）にある語は the Struggle for Life で、struggle for existence は本文の第三章の題の語。</small></p>
+
+<details class="acc"><summary>原文（¶15）</summary>
+
+<blockquote lang="en">
+
+<p>The "Origin of Species " of Darwin merely extends politico-economical views of progress to the entire realm of animal and vegetable life. The vast majority of our contemporary naturalists hold the opinion that the true cause of those exquisite and marvellous adaptations of nature for which, when I was a boy, men used to extol the divine wisdom is that creatures are so crowded together that those of them that happen to have the slightest advantage force those less pushing into situations unfavorable to multiplication or even kill them before they reach the age of reproduction. Among animals, the mere mechanical individualism is vastly reënforced as a power making for good by the animal's ruthless greed. As Darwin puts it on his title-page, it is the struggle for existence; and he should have added for his motto : Every individual for himself, and the Devil take the hindmost ! Jesus, in his sermon on the Mount, expressed a different opinion.</p>
+</blockquote>
+
+</details>
+
+<p id="p16"><small>¶16　p.182</small></p>
+
+<p>では、争点はここにある。キリストの福音（the gospel of Christ）は、進歩は、各個人が自分の個体性（individuality）を、隣人への共感（sympathy）のうちに融け込ませることから来る、と言う。他方、十九世紀の確信は、進歩は、各個人が全力で自分のために努め、機会があればいつでも隣人を足で踏みつけることによって起こる、というものである。これは正確に、貪欲の福音（the Gospel of Greed）と呼んでよい。</p>
+<details class="acc"><summary>原文（¶16）</summary>
+
+<blockquote lang="en">
+
+<p>Here, then, is the issue. The gospel of Christ says that progress comes from every individual merging his individuality in sympathy with his neighbors. On the other side, the conviction of the nineteenth century is that progress takes place by virtue of every individual's striving for himself with all his might and trampling his neighbor under foot whenever he gets a chance to do so. This may accurately be called the Gospel of Greed.</p>
+</blockquote>
+
+</details>
+
+<p id="p17"><small>¶17　p.182–183</small></p>
+
+<p>どちらの側にも、言うべきことは多い。私は自分の熱い偏愛（passionate predilection）を隠さなかったし、隠すこともできなかった。このような告白は、たぶん私の科学の同胞たちを驚かせるだろう。だが、強い感情は [p.183] それ自体、思うに、愛による（agapastic）進化の理論を支持する、いくらかの重みのある論拠である。それが感じやすい心（the Sensible Heart）の正常な判断を表していると推定してよいかぎりにおいて、であるが。確かに、もし agapasm を熱く信じることなしに信じることができるとしたら、その事実は、この学説が真であることに反する論拠になるだろう。いずれにせよ、感情の温かさが存在する以上、それはどの点から見ても率直に告白されるべきである。とりわけ、それによって私が一面的になるおそれが生じるのだから。それに対しては、読者も私も、めいめいに用心していなければならない。</p>
+<details class="acc"><summary>原文（¶17）</summary>
+
+<blockquote lang="en">
+
+<p>Much is to be said on both sides. I have not concealed, I could not conceal, my own passionate predilection. Such a confession will probably shock my scientific brethren. Yet the strong feeling [p.183] is in itself, I think, an argument of some weight in favor of the agapastic theory of evolution,—so far as it may be presumed to bespeak the normal judgment of the Sensible Heart. Certainly, if it were possible to believe in agapasm without believing it warmly, that fact would be an argument against the truth of the doctrine. At any rate, since the warmth of feeling exists, it should on every account be candidly confessed; especially since it creates a liability to onesidedness on my part against which it behooves my readers and me to be severally on our guard.</p>
+</blockquote>
+
+</details>
+
+</div></details><details class="sec" id="再考和解の論"><summary>再考、和解の論</summary><div class="secbody">
+<p id="p18"><small>¶18　p.183</small></p>
+
+<p>再考。和解の論（Irenica）</p>
+<p><small>訳注：irenica は、対立する立場の和解を説く論のこと（ギリシア語 eirēnē「平和」から。神学で「和協論」の意に使われる語）。</small></p>
+
+<details class="acc"><summary>原文（¶18）</summary>
+
+<blockquote lang="en">
+
+<p>SECOND THOUGHTS. IRENICA.</p>
+</blockquote>
+
+</details>
+
+<p id="p19"><small>¶19　p.183</small></p>
+
+<p>進化のさまざまな理論の論理的な類縁を定めてみよう。ダーウィンが考えた自然選択（natural selection）は、モネラ（moner）から人間に至る全道のりの中で、変化を積極的にもたらす唯一の働き手が偶然の変異（fortuitous variation）であるような、進化（evolution）の様式である。定まった方向への前進を確かなものにするには、偶然（chance）は、ある変種の繁殖を妨げ、あるいはほかの変種の繁殖を促すような何らかの作用によって、後押しされなければならない。厳密な意味での自然選択では、それは弱いものが押しのけられることである。性選択では、それは主として美の引きつける力である。</p>
+<p><small>訳注：moner は、ヘッケルが最も単純な生物として立てた「モネラ」。</small></p>
+
+<details class="acc"><summary>原文（¶19）</summary>
+
+<blockquote lang="en">
+
+<p>Let us try to define the logical affinities of the different theories of evolution. Natural selection, as conceived by Darwin, is a mode of evolution in which the only positive agent of change in the whole passage from moner to man is fortuitous variation. To secure advance in a definite direction chance has to be seconded by some action that shall hinder the propagation of some varieties or stimulate that of others. In natural selection, strictly so called, it is the crowding out of the weak. In sexual selection, it is the attraction of beauty, mainly.</p>
+</blockquote>
+
+</details>
+
+<p id="p20"><small>¶20　p.183–185</small></p>
+
+<p>『種の起源』は 1859 年の終わり近くに出版された。1846 年からそれまでの年月は、科学の始まりから今日までの歴史全体の中で、最も実り多い季節の一つであった。あるいは、いま考えているこの大著までを含むように延ばせば、同じ長さの期間として最も実り多い時期であった。偶然が秩序を生む（chance begets order）という考えは、近代物理学の礎石の一つであるが（ケーラス博士はそれを「パース氏の体系の最も弱い点」とみなしているけれども）、その当時、最も明るい光のもとに置かれた。ケトレーが『道徳科学と政治科学への確率の応用についての書簡』によって議論の口火を切っていた。これは当時の最良の頭脳たちに深い印象を与えた著作であり、イギリスではジョン・ハーシェル卿がそれに広く注意を向けさせていた。1857 年には、バックルの『文明史』第一巻が、この同じ考えを用いたことによって、たいへんな評判を呼んでいた。その間に、「統計的方法」（statistical method）が、まさにその名のもとで、分子物理学に輝かしい成功をもって応用されていた。イギリスの化学者ジョン・ヘラパス博士 [p.184] は、1847 年にその『数理物理学』の中で気体の運動論の輪郭を描いていた。そしてこの理論が呼び起こした関心は、1856 年にクラウジウスとクレーニッヒの注目すべき論文によって新たにされていた。ダーウィンの出版の直前の夏には、マクスウェルが英国学術協会で、この主題についての彼の研究のうち最初の、そして最も重要なものを読み上げていた。その結果、偶然の出来事が物理法則をもたらしうるという考え、さらに、エネルギー保存の原理と衝突するように見える法則はこのようにして説明されるべきだという考えが、思想の先導者たちに遅れずについていたすべての人々の心を強くとらえていた。そうした心の持ち主たちによって『種の起源』が歓呼して迎えられるのは、避けられないことであった。その教えは、同じ原理を、もう一つの「非保存的」な作用、すなわち有機体の発達の説明に当てはめたものにすぎなかったからである。1847 年のヘルムホルツによるエネルギー保存の崇高な発見と、1850 年のクラウジウスとランキンによる、それぞれ独立した熱の力学的理論の発見とは、物理科学を冷笑しかねなかった人々をすっかり威圧していた。それ以後は、遅れてきた詩人が「事物の名を切り売りする科学」（science peddling with the names of things）をなおも言い立てても、効き目はなかったであろう。いまや機械論（mechanism）がすべてである、あるいはほとんどすべてであると知られていた。この間ずっと、功利主義（utilitarianism）、すなわち福音（the Gospel）の改良された代用品は、羽を広げて最も盛んであった。そしてそれは、個人主義的な理論の当然の味方であった。マンセル主席司祭（Dean Mansell）の無分別な弁護が、ウィリアム・ハミルトン卿に縛られた従僕たち（bondsmen）の間に反乱を引き起こし、ミルの唯名論（nominalism）はそれに応じて得をしていた。そして、ダーウィンが人々を導こうとしていた本物の科学は、いつか必ずミルのまがいものの科学に致命の一撃を与えるはずであったが、それでもダーウィンの理論には、ミルの追随者たちを魅了するに決まっている要素がいくつかあった。もう一つある。麻酔薬が使われるようになって 13 年がたっていた。すでに人々の苦痛との馴染みはずいぶん薄れていた。その結果、私たちの時代をすぐ前の時代とこれほど際立たせている、あの愛すべからざる冷酷さがすでに始まっていて、人々に容赦のない理論を好ませるようにしていた。もし読者が、これらの事柄のどれかが（マルサスはおそらく別として）[p.185] ダーウィン自身に影響を与えたとほのめかしたがっている、と私を受けとるなら、私の言うことの趣旨をすっかり取り違えることになる。私が言いたいのはこうである。彼の仮説は、これまでに考え出されたうちで最も巧妙で見事なものの一つであることに異論はなく、豊かな知識、論理の強さ、修辞の魅力、そして何よりも、ほとんど抗いがたい、ある種の磁力のような真正さをもって論じられていたけれども、はじめのうちは、証明に近いとはまったく見えなかった。そして醒めた心には、その見込みは二十年前よりもいまのほうが薄く見える。ところが、それが受けた並外れて好意的な歓迎は、明らかに、かなりの程度まで、その考えが時代の好んで傾いていた考えであったこと、とりわけそれが貪欲の哲学（greed-philosophy）に与えた励ましのためであった。</p>
+<p><small>訳注：「羽を広げて最も盛ん」は in its fullest feather（鳥の羽が生えそろって意気盛んな様子をいう慣用句）。「事物の名を切り売りする科学」の句の出典は確かめていない。マンセルはハミルトンの弟子で、その宗教論が論争を呼び、のちにミルがハミルトンの哲学を批判した、という経緯を指すと読めるが、細部は確かめていない。</small></p>
+
+<details class="acc"><summary>原文（¶20）</summary>
+
+<blockquote lang="en">
+
+<p>The "Origin of Species" was published toward the end of the year 1859. The preceding years since 1846 had been one of the most productive seasons,—or if extended so as to cover the great book we are considering, <em>the</em> most productive period of equal length in the entire history of science from its beginnings until now. The idea that chance begets order, which is one of the corner-stones of modern physics (although Dr. Carus considers it "the weakest point in Mr. Peirce's system,") was at that time put into its clearest light. Quetelet had opened the discussion by his "Letters on the Application of Probabilities to the Moral and Political Sciences," a work which deeply impressed the best minds of that day, and to which Sir John Herschel had drawn general attention in Great Britain. In 1857, the first volume of Buckle's "History of Civilisation" had created a tremendous sensation, owing to the use he made of this same idea. Meantime, the "statistical method" had, under that very name, been applied with brilliant success to molecular physics. Dr. [p.184] John Herapath, an English chemist, had in 1847 outlined the kinetical theory of gases in his "Mathematical Physics"; and the interest the theory excited had been refreshed in 1856 by notable memoirs by Clausius and Krönig. In the very summer preceding Darwin's publication, Maxwell had read before the British Association the first and most important of his researches on this subject. The consequence was that the idea that fortuitous events may result in a physical law, and further that this is the way in which those laws which appear to conflict with the principle of the conservation of energy are to be explained, had taken a strong hold upon the minds of all who were abreast of the leaders of thought. By such minds, it was inevitable that the "Origin of Species," whose teaching was simply the application of the same principle to the explanation of another "non-conservative" action, that of organic development, should be hailed and welcomed. The sublime discovery of the conservation of energy by Helmholtz in 1847, and that of the mechanical theory of heat by Clausius and by Rankine, independently, in 1850, had decidedly overawed all those who might have been inclined to sneer at physical science. Thereafter a belated poet still harping upon "science peddling with the names of things" would fail of his effect. Mechanism was now known to be all, or very nearly so. All this time, utilitarianism,—that improved substitute for the Gospel,—was in its fullest feather; and was a natural ally of an individualistic theory. Dean Mansell's injudicious advocacy had led to mutiny among the bondsmen of Sir William Hamilton, and the nominalism of Mill had profited accordingly; and although the real science that Darwin was leading men to was sure some day to give a death-blow to the sham-science of Mill, yet there were several elements of the Darwinian theory which were sure to charm the followers of Mill. Another thing: anæsthetics had been in use for thirteen years. Already, people's acquaintance with suffering had dropped off very much; and as a consequence, that unlovely hardness by which our times are so contrasted with those that immediately preceded them, had already set in, and inclined people to relish a ruthless theory. The reader would quite mistake the drift of what I am saying if he were to understand me as wishing to suggest that any of those things [p.185] (except perhaps Malthus) influenced Darwin himself. What I mean is that his hypothesis, while without dispute one of the most ingenious and pretty ever devised, and while argued with a wealth of knowledge, a strength of logic, a charm of rhetoric, and above all with a certain magnetic genuineness that was almost irresistible, did not appear, at first, at all near to being proved; and to a sober mind its case looks less hopeful now than it did twenty years ago; but the extraordinarily favorable reception it met with was plainly owing, in large measure, to its ideas being those toward which the age was favorably disposed, especially, because of the encouragement it gave to the greed-philosophy.</p>
+</blockquote>
+
+</details>
+
+<p id="p21"><small>¶21　p.185–186</small></p>
+
+<p>偶然による進化と正反対に対立するのが、あらゆる進歩を内的な必然の原理、あるいは他の形の必然に帰する理論である。多くの博物学者はこう考えてきた。もし卵が、ある一連の胚の変態を経るよう定められていて、そこからそれないことが完全に確かであるなら、そしてもし地質学的な時間の中で、ほとんどまったく同じ形態が次々に、同じ順序で一つが他に取って代わりながら現れるなら、後者の継起も前者と同じように前もって決まっていて確実に起こるものであった、と強く推定される、と。そこでたとえばネーゲリは、運動の第一法則と、原形質の特有の、しかし知られていない分子構成とから、形態がますます複雑にならなければならないということが、どうにかして帰結する、と考える。ケリカーは、ある成熟が成し遂げられたのちに、一つの形態が別の形態を生むとする。ヴァイスマンもまた、自らをダーウィン主義者と称しながら、何ものも偶然によるのではなく、すべての形態は二つの親からの遺伝の単純な機械的合成結果である、と考える。<a href="#n62">[注62]</a>これらのさまざまな宗派の人々がみな、自分たちの観察の下に入ってくる事実が指し示していない機械的な必然（mechanical necessity）を、自分たちの科学に持ち込もうとしているのは、たいへん目につくことである。種の変異は気候の、あるいは空気と水の化学組成の激変的な変化によると考える地質学者たちもまた、機械的な必然を進化の主要因にしている。</p>
+<p>[p.186] 突然の変わり種（sporting）による進化と、機械的な必然による進化とは、互いに争う概念である。その争いを無用にする第三の方法が、ラマルクの理論の中に包み込まれている。彼の見方によれば、最も高等な有機体の形態を最も原初的なものから区別するすべてのものは、個体の生涯の早い時期にそれに及んだ小さな肥大や萎縮によってもたらされ、それが子孫に伝えられたのである。獲得形質のこのような伝達は、習慣を身につけること（habit-taking）の一般的な性質をもつものであり、これは、生理学の領域の中での、心の法則（law of mind）の代表であり派生物である。その作用は物理的な力の作用とは本質的に異なる。そしてそれが、ヴァイスマンのような必然論者がその存在を認めるのを嫌う秘密である。ラマルク主義者たちはさらに、このように伝えられた形態の変化のいくつかは、もともと機械的な原因によるものであったとはいえ、その最初の産出の主要因は、努力の緊張と、使うこと（exercise）によって引き起こされる過剰な成長であり、それにその反対の作用が加わったものであった、と考える。ところで努力は、目的に向けられているのだから、ときに無意識であっても、本質的に心的（psychical）なものである。そして使うことによる成長は、前の論文で論じたように、力学の法則とはまったく反対の性格の法則に従う。</p>
+<p><small>訳注：sporting は、生物学で、親と目立って異なる変わり種（sport）が突然生じることをいう。</small></p>
+
+<details class="acc"><summary>原文（¶21）</summary>
+
+<blockquote lang="en">
+
+<p>Diametrically opposed to evolution by chance, are those theories which attribute all progress to an inward necessary principle, or other form of necessity. Many naturalists have thought that if an egg is destined to go through a certain series of embryological transformations, from which it is perfectly certain not to deviate, and if in geological time almost exactly the same forms appear successively, one replacing another in the same order, the strong presumption is that this latter succession was as predeterminate and certain to take place as the former. So, Nägeli, for instance, conceives that it somehow follows from the first law of motion and the peculiar, but unknown, molecular constitution of protoplasm, that forms must complicate themselves more and more. Kölliker makes one form generate another after a certain maturation has been accomplished. Weismann, too, though he calls himself a Darwinian, holds that nothing is due to chance, but that all forms are simple mechanical resultants of the heredity from two parents.<a href="#n62">[注62]</a> It is very noticeable that all these different sectaries seek to import into their science a mechanical necessity to which the facts that come under their observation do not point. Those geologists who think that the variation of species is due to cataclasmic alterations of climate or of the chemical constitution of the air and water are also making mechanical necessity chief factor of evolution.</p>
+<p>[p.186] Evolution by sporting and evolution by mechanical necessity are conceptions warring against one another. A third method, which supersedes their strife, lies enwrapped in the theory of Lamarck. According to his view, all that distinguishes the highest organic forms from the most rudimentary has been brought about by little hypertrophies or atrophies which have affected individuals early in their lives, and have been transmitted to their offspring. Such a transmission of acquired characters is of the general nature of habit-taking, and this is the representative and derivative within the physiological domain of the law of mind. Its action is essentially dissimilar to that of a physical force; and that is the secret of the repugnance of such necessitarians as Weismann to admitting its existence. The Lamarckians further suppose that although some of the modifications of form so transmitted were originally due to mechanical causes, yet the chief factors of their first production were the straining of endeavor and the overgrowth superinduced by exercise, together with the opposite actions. Now, endeavor, since it is directed toward an end, is essentially psychical, even though it be sometimes unconscious; and the growth due to exercise, as I argued in my last paper, follows a law of a character quite contrary to that of mechanics.</p>
+</blockquote>
+
+</details>
+
+<p id="p22"><small>¶22　p.186–187</small></p>
+
+<p>ラマルク的進化は、こうして、習慣（habit）の力による進化である。この文は、社会という宇宙の中での役目が「邪魔をする人（Interrupter）」であるらしい隣人の一人が私に質問をしている間に、ペンから滑り出てしまったものである。もちろん、それはばかげている。習慣は単なる慣性であり、櫂を止めて休むことであって、推進ではない。ラマルク的進化の典型的な例において、形態の新しい要素が最初に創り出されるのは、精力的な前への投げ出し（projaculation）によるのである（そういう語があるのは幸いである。さもなければ、この不慣れな手が一つ発明させられていたかもしれない）。しかし習慣は、それらに実際的な形、すなわちそれらが及ぶ構造と両立する形をとらせ、遺伝という形で、またその他の形で、それらを支える自発的なエネルギーに次第に取って代わる。こうして習慣は二重の役を演じる。新しい特徴を確立することに役立ち、また、それらを、それらが属する動物や植物の全体的な形態と機能とに調和させることにも役立つ。しかし、もし読者がいま一、二ページ戻る手間をかけてくださるなら、ラマルク的進化 [p.187] についてのこの説明が、愛（love）の働きについての一般的な記述と一致することがわかるだろう。思うに、読者はその記述に同意を与えたはずである。</p>
+<p><small>訳注：projaculation はまれな語で、ラテン語の pro（前へ）と jaculari（投げる）から成り、「前へ投げ出すこと」の意。「櫂を止めて休む」は resting on one's oars（努力をやめて休む意の慣用句）。</small></p>
+
+<details class="acc"><summary>原文（¶22）</summary>
+
+<blockquote lang="en">
+
+<p>Lamarckian evolution is thus evolution by the force of habit.— That sentence slipped off my pen while one of those neighbors whose function in the social cosmos seems to be that of an Interrupter, was asking me a question. Of course, it is nonsense. Habit is mere inertia, a resting on one's oars, not a propulsion. Now it is energetic projaculation (lucky there is such a word, or this untried hand might have been put to inventing one) by which in the typical instances of Lamarckian evolution the new elements of form are first created. Habit, however, forces them to take practical shapes, compatible with the structures they affect, and in the form of heredity and otherwise, gradually replaces the spontaneous energy that sustains them. Thus, habit plays a double part; it serves to establish the new features, and also to bring them into harmony with the general morphology and function of the animals and plants to which they belong. But if the reader will now kindly give himself the trouble of turning back a page or two, he will see that this account of Lamarckian evo [p.187] lution coincides with the general description of the action of love, to which, I suppose, he yielded his assent.</p>
+</blockquote>
+
+</details>
+
+<p id="p23"><small>¶23　p.187–188</small></p>
+
+<p>すべての物質は実は心（mind）であることを思い起こし、また心の連続（continuity）をも思い起こしつつ、ラマルク的進化が意識の領域の中でどのような相をとるかを問うてみよう。直接の努力は、ほとんど何も成し遂げられない。思い煩うことによって自分の背丈を一キュビト延ばすのは、まだ来る準備のできていないうちに、ただ力むことによって、どのムーサにも受け入れられる考え（idea）を生み出すのと同じくらいたやすい。私たちがムネーモシュネーの聖なる泉と玉座に足しげく通っても無駄である。精神のより深い働きは、私たちの手出しなしに、それ自身のゆっくりとした仕方で起こる。ただそれらのラッパが鳴りさえすれば、そのとき私たちは努力をしてよい。その香りがどの神を喜ばせるにせよ、その祭壇への捧げ物を確かに得られるのである。この内的な過程のほかに、環境の作用がある。それは、壊されるべく定められた習慣（habit）を壊し、そうして心を生き生きさせることに向かう。習慣の型どおりの繰り返しが長く続くと私たちは無気力になり、一方、驚きが次々に続くと考えは見事に明るくなることは、誰でも知っている。動きのあるところ、歴史が作られつつあるところに、心の活動の焦点がある。そして、芸術と学問はヤヌスの神殿の中に住み、それが開いているときには目覚め、閉じているときにはまどろむ、と言われてきた。これがどれほど根本的な事実であるかに気づいた心理学者はほとんどいない。ほかの部分と豊富に交連（commissure）でつながれた心の部分は、ほとんど機械的に働く。それは鉄道の分岐駅の状態に沈む。しかし、ほとんど孤立した心の部分、精神の半島、あるいは袋小路は、鉄道の終着駅のようである。ところで、心の交連とは習慣である。それが豊富なところでは、独創（originality）は必要とされず、見いだされもしない。しかしそれが欠けているところでは、自発性（spontaneity）が解き放たれる。こうして、心のラマルク的進化の第一歩は、さまざまな思考を、それらが自由に戯れられる状況の中に置くことである。使うことによる成長（growth by exercise）については、私はすでに昨年十月の『モニスト』で「人間のガラスのような本質」を論じたときに、少なくとも同じくらい明確な第二の仮説が出されるまでは、その作用の仕方（modus operandi）がどのように考えられなければならないかを示した。すなわち、それは分子が飛び離れることと、その部分が新しい物質によって修復されることとから成る。それはこうして一種の再生産である。この成長が、使っている最中にだけ起こるのは、原形質の活 [p.188] 動が、その必要条件である分子の撹乱にあるからである。使うことによる成長は心の中でも起こる。実に、それが学ぶということである。しかし最も完全な例示は、哲学的な考えが実行に移されることによって発展することである。初めは単一のものとして現れた概念が、特殊な場合に分かれる。そしてそれら一つ一つに、実行できる考えにするために、新しい思考が入らなければならない。しかしこの新しい思考は、親の概念の型にかなり忠実に従う。こうして均質な発展が起こる。これと分子の出来事の経過との並行関係は明らかである。忍耐強く注意を向ければ、学ぶと呼ばれる営みの中に、これらの要素のすべてをたどることができるだろう。</p>
+<p><small>訳注：「思い煩うことによって背丈を一キュビト延ばす」は、新約聖書マタイ 6:27（欽定訳 "which of you by taking thought can add one cubit unto his stature?"）を踏まえる。できないことの例として引かれ、文全体は「どちらも同じくらい不可能だ」という皮肉。ムネーモシュネーは記憶の女神で、ムーサたちの母。ローマのヤヌスの神殿は、戦時に門を開き、平時に閉じた。commissure は解剖学の語で、脳や脊髄の左右の部分をつなぐ神経線維の束。</small></p>
+
+<details class="acc"><summary>原文（¶23）</summary>
+
+<blockquote lang="en">
+
+<p>Remembering that all matter is really mind, remembering, too, the continuity of mind, let us ask what aspect Lamarckian evolution takes on within the domain of consciousness. Direct endeavor can achieve almost nothing. It is as easy by taking thought to add a cubit to one's stature, as it is to produce an idea acceptable to any of the Muses by merely straining for it, before it is ready to come. We haunt in vain the sacred well and throne of Mnemosyne; the deeper workings of the spirit take place in their own slow way, without our connivance. Let but their bugle sound, and we may then make our effort, sure of an oblation for the altar of whatsoever divinity its savor gratifies. Besides this inward process, there is the operation of the environment, which goes to break up habits destined to be broken up and so to render the mind lively. Everybody knows that the long continuance of a routine of habit makes us lethargic, while a succession of surprises wonderfully brightens the ideas. Where there is a motion, where history is a-making, there is the focus of mental activity, and it has been said that the arts and sciences reside within the temple of Janus, waking when that is open, but slumbering when it is closed. Few psychologists have perceived how fundamental a fact this is. A portion of mind abundantly commissured to other portions works almost mechanically. It sinks to the condition of a railway junction. But a portion of mind almost isolated, a spiritual peninsula, or <em>cul-de-sac</em>, is like a railway terminus. Now mental commissures are habits. Where they abound, originality is not needed and is not found; but where they are in defect, spontaneity is set free. Thus, the first step in the Lamarckian evolution of mind is the putting of sundry thoughts into situations in which they are free to play. As to growth by exercise, I have already shown, in discussing "Man's Glassy Essence," in last October's <em>Monist</em>, what its <em>modus operandi</em> must be conceived to be, at least, until a second equally definite hypothesis shall have been offered. Namely, it consists of the flying asunder of molecules, and the reparation of the parts by new matter. It is, thus, a sort of reproduction. It takes place only during exercise, because the activ [p.188] ity of protoplasm consists in the molecular disturbance which is its necessary condition. Growth by exercise takes place also in the mind. Indeed, that is what it is to <em>learn</em>. But the most perfect illustration is the development of a philosophical idea by being put into practice. The conception which appeared, at first, as unitary, splits up into special cases ; and into each of these new thought must enter to make a practicable idea. This new thought, however, follows pretty closely the model of the parent conception; and thus a homogeneous development takes place. The parallel between this and the course of molecular occurrences is apparent. Patient attention will be able to trace all these elements in the transaction called learning.</p>
+</blockquote>
+
+</details>
+
+<p id="p24"><small>¶24　p.188</small></p>
+
+<p>こうして三つの進化の様式が私たちの前に示された。偶然の変異（fortuitous variation）による進化、機械的な必然（mechanical necessity）による進化、そして創造的な愛（creative love）による進化である。これらを、偶然による（tychastic）進化すなわち tychasm（偶然の変異による進化）、必然による（anancastic）進化すなわち anancasm（機械的な必然による進化）、そして愛による（agapastic）進化すなわち agapasm（創造的な愛による進化）と呼んでよいだろう。これらがそれぞれ主たる重要性をもつとする学説を、tychasticism、anancasticism、agapasticism と呼んでよい。他方、絶対的な偶然、機械的な必然、愛の法則が、それぞれ宇宙（cosmos）の中で働いているという単なる命題は、tychism、anancism、agapism という名を受けてよい。</p>
+<p><small>訳注：パースはここで三組の語を分ける。進化の様式そのもの（tychasm など）、その様式を主とみる学説（tychasticism など）、その原理が宇宙で働いているというだけの命題（tychism など）。九つの語には訳語を当てず、原語の綴りのまま書く。</small></p>
+
+<details class="acc"><summary>原文（¶24）</summary>
+
+<blockquote lang="en">
+
+<p>Three modes of evolution have thus been brought before us; evolution by fortuitous variation, evolution by mechanical necessity, and evolution by creative love. We may term them <em>tychastic</em> evolution, or <em>tychasm</em>, <em>anancastic</em> evolution, or <em>anancasm</em>, and <em>agapastic</em> evolution, or <em>agapasm</em>. The doctrines which represent these as severally of principal importance, we may term <em>tychasticism</em>, <em>anancasticism</em>, and <em>agapasticism</em>. On the other hand the mere propositions that absolute chance, mechanical necessity, and the law of love, are severally operative in the cosmos, may receive the names of <em>tychism</em>, <em>anancism</em>, and <em>agapism</em>.</p>
+</blockquote>
+
+</details>
+
+<p id="p25"><small>¶25　p.188–189</small></p>
+
+<p>三つの進化の様式はみな、同じ一般的な要素から成り立っている。agapasm がそれらを最もはっきりと示す。ここでは良い結果は、第一に、親が子に自発的なエネルギーを授けることによって、第二に、子が、まわりのものたちの一般的な考え（general idea）をつかみ取り、そうして一般的な目的に仕えようとする性向によって、もたらされる。tychasm と anancasm が agapasm に対してもつ関係を言い表すために、幾何学から一つの語を借りさせてほしい。直線が横切る楕円は、一種の三次曲線である。というのも、三次曲線とは直線によって三度切られる曲線であり、ところで直線は、楕円を二度、それに付き添う直線を三度目に切りうるからである。それでも、直線が横切っている楕円は、三次曲線の特徴をもたないだろう。たとえば、それには変曲（contrary flexure）がない。本当の三次曲線はどれもそれを欠かない。そしてそれは二つの結節点（node）をもつだろうが、本当の三次曲線はどれもそれをもたない。幾何学者 [p.189] たちは、それを退化した三次曲線（degenerate cubic）と言う。ちょうどそのように、tychasm と anancasm は、agapasm の退化した形態である。</p>
+<p><small>訳注：degenerate は、幾何学では、曲線がより単純な図形の組（ここでは楕円と直線）に分かれてしまう場合をいう術語（「退化」）。英語の日常語としては「堕落した」の意もある。</small></p>
+
+<details class="acc"><summary>原文（¶25）</summary>
+
+<blockquote lang="en">
+
+<p>All three modes of evolution are composed of the same general elements. Agapasm exhibits them the most clearly. The good result is here brought to pass, first, by the bestowal of spontaneous energy by the parent upon the offspring, and, second, by the disposition of the latter to catch the general idea of those about it and thus to subserve the general purpose. In order to express the relation that tychasm and anancasm bear to agapasm, let me borrow a word from geometry. An ellipse crossed by a straight line is a sort of cubic curve; for a cubic is a curve which is cut thrice by a straight line; now a straight line might cut the ellipse twice and its associated straight line a third time. Still the ellipse with the straight line across it would not have the characteristics of a cubic. It would have, for instance, no contrary flexure, which no true cubic wants; and it would have two nodes, which no true cubic has. The geom [p.189] eters say that it is a <em>degenerate</em> cubic. Just so, tychasm and anancasm are degenerate forms of agapasm.</p>
+</blockquote>
+
+</details>
+
+<p id="p26"><small>¶26　p.189</small></p>
+
+<p>ダーウィンの考えをキリスト教と和解させようとする人々は、こう言うだろう。偶然による（tychastic）進化は、愛による（agapastic）進化と同じく、再生産による創造（reproductive creation）に依存しており、保存される形態は、自分に授けられた自発性を、自分の元のもの（original）と調和するように引き寄せられるような仕方で用いるものであって、まったくキリスト教の構図どおりである、と。たいへん結構。これが示すのはただ、愛は反対物をもつことができず、自分に最も対立するものを、自分の退化した場合として抱きしめなければならないのとちょうど同じように、tychasm は一種の agapasm である、ということにすぎない。ただし、偶然による進化においては、進歩はもっぱら、退けられた僕が手ぬぐいに包んで隠したタラントン（talent）を、退けられなかった者たちの間に分け与えることによるのであって、それはちょうど、破産した賭博者たちが卓の上に金を残し、まだ破産していない者たちをそれだけ豊かにするのと同じである。それは、子羊たちの至福を、山羊たちの断罪をそのまま方程式の反対側へ移しただけのものにしてしまう。他方、本物の agapasm においては、前進は、心の連続から湧き出る、創造されたものたちの間の積極的な共感（sympathy）のおかげで起こる。これこそ、tychasticism が扱い方を知らない考えである。</p>
+<p><small>訳注：「手ぬぐいに包んで隠したタラントン」は、新約聖書の主人から預かった金を増やさなかった僕のたとえを踏まえる。手ぬぐいに包むのはルカ 19:20（ムナ）、タラントンはマタイ 25:14–30 で、パースは両者を混ぜている。どちらでも、退けられた僕の分は、多く持つ者に与えられる。talent は英語で「才能」の意もあり、その含みもかかりうる。「子羊たちの至福」と「山羊たちの断罪」は、マタイ 25:31–46 の、羊を右に、山羊を左に分ける最後の審判を踏まえる。</small></p>
+
+<details class="acc"><summary>原文（¶26）</summary>
+
+<blockquote lang="en">
+
+<p>Men who seek to reconcile the Darwinian idea with Christianity will remark that tychastic evolution, like the agapastic, depends upon a reproductive creation, the forms preserved being those that use the spontaneity conferred upon them in such wise as to be drawn into harmony with their original, quite after the Christian scheme. Very good! This only shows that just as love cannot have a contrary, but must embrace what is most opposed to it, as a degenerate case of it, so tychasm is a kind of agapasm. Only, in the tychastic evolution progress is solely owing to the distribution of the napkin-hidden talent of the rejected servant among those not rejected, just as ruined gamesters leave their money on the table to make those not yet ruined so much the richer. It makes the felicity of the lambs just the damnation of the goats, transposed to the other side of the equation. In genuine agapasm, on the other hand, advance takes place by virtue of a positive sympathy among the created springing from continuity of mind. This is the idea which tychasticism knows not how to manage.</p>
+</blockquote>
+
+</details>
+
+<p id="p27"><small>¶27　p.189–190</small></p>
+
+<p>anancasm を説く者（anancasticist）は、ここで口を挟み、自分の主張する進化の様式は、tychasm が agapasm から離れるまさにその点で、agapasm と一致する、と言い立てるかもしれない。というのも、それは発達に一定の段階を通らせ、避けられない引き潮と満ち潮をもちながらも、全体としてはあらかじめ定められた完成へ向かわせるからである。単なる存在が、このようなその運命によって、善に対する内在的な親和性を露わにしている。この点で、anancasm は広い意味で agapasm の一種であることを示している、と認めなければならない。その形のいくつかは、本物の agapasm と容易に取り違えられうるだろう。ヘーゲル哲学が、そのような anancasticism である。その啓示的な宗教とともに、その synechism（どれほど不完全に述べられているにせよ）とともに、その「反省」（reflection）とともに、この理論の全体の考えは見事であり、ほとんど崇高である。しかし結局のところ、生きた自由（living freedom）は、その方法から事実上抜け落ちている。運動の全体は、背後からの力（vis a tergo）に押されて進み、高い目標に到達するという盲目で神秘的な運命をもつ、巨大な機関の運動である。つまり、もし本当に動くなら、そういう機関であるだろう、という意味である。しかし実際には、それはキーリー・モーターである。それが自ら公言するとおりに本当に作用すると認めるなら、[p.190] その哲学を受け入れるほかにすることはない。しかし、これほど長い推論の鎖で、どの環にも――傷がある、と言おうか、いや――どの環も夢の中で握りしめて形にした一握りの砂であるような例は、かつて見られたことがない。あるいは、それは現実には存在しない哲学の厚紙の模型である、と言おう。もし私たちが、それが含む一つの貴重なもの、すなわちその考え（idea）を用い、そのすべての歩みの恣意性が示唆するtychism を導き入れ、それを、愛の霊の息吹である生き生きとした自由（vital freedom）の支えにするなら、ヘーゲルが目指していたあの本物の agapasticism を生み出せるかもしれない。</p>
+<p><small>訳注：キーリー・モーターは、ジョン・キーリー（John Keely）が 1870 年代から未知の力で動くと称して出資を集めた発動機で、まやかしとみなされていた。vis a tergo はラテン語で「背後からの力」。</small></p>
+
+<details class="acc"><summary>原文（¶27）</summary>
+
+<blockquote lang="en">
+
+<p>The anancasticist might here interpose, claiming that the mode of evolution for which he contends agrees with agapasm at the point at which tychasm departs from it. For it makes development go through certain phases, having its inevitable ebbs and flows, yet tending on the whole to a foreordained perfection. Bare existence by this its destiny betrays an intrinsic affinity for the good. Herein, it must be admitted, anancasm shows itself to be in a broad acception a species of agapasm. Some forms of it might easily be mistaken for the genuine agapasm. The Hegelian philosophy is such an anancasticism. With its revelatory religion, with its synechism (however imperfectly set forth), with its " reflection," the whole idea of the theory is superb, almost sublime. Yet, after all, living freedom is practically omitted from its method. The whole movement is that of a vast engine, impelled by a <em>vis a tergo</em>, with a blind and mysterious fate of arriving at a lofty goal. I mean that such an engine it <em>would</em> be, if it really worked ; but in point of fact, it is a Keely motor. Grant that it really acts as it professes to act, and [p.190] there is nothing to do but accept the philosophy. But never was there seen such an example of a long chain of reasoning,—shall I say with a flaw in every link?—no, with every link a handful of sand, squeezed into shape in a dream. Or say, it is a pasteboard model of a philosophy that in reality does not exist. If we use the one precious thing it contains, the idea of it, introducing the tychism which the arbitrariness of its every step suggests, and make that the support of a vital freedom which is the breath of the spirit of love, we may be able to produce that genuine agapasticism, at which Hegel was aiming.</p>
+</blockquote>
+
+</details>
+
+</div></details><details class="sec" id="第三の側面見分け方"><summary>第三の側面、見分け方</summary><div class="secbody">
+<p id="p28"><small>¶28　p.190</small></p>
+
+<p>第三の側面。見分け方</p>
+<details class="acc"><summary>原文（¶28）</summary>
+
+<blockquote lang="en">
+
+<p>A THIRD ASPECT. DISCRIMINATION.</p>
+</blockquote>
+
+</details>
+
+<p id="p29"><small>¶29　p.190</small></p>
+
+<p>物事の本性からして、進化の三つの様式のあいだの境界線は、完全にくっきりしているわけではない。だからといって、その境界が十分に実在的であることが妨げられるわけではない。むしろ、それはその実在性のしるしであるかもしれない。物事の本性において、赤・緑・紫という三つの基本色のあいだにも、くっきりした境界線はない。それでも、三つは実際に異なっている。主な問いは、根本から異なる三つの進化の要素が働いてきたかどうかであり、第二の問いは、働いてきた要素が何であれ、その最も際立った特徴は何か、である。</p>
+<details class="acc"><summary>原文（¶29）</summary>
+
+<blockquote lang="en">
+
+<p>In the very nature of things, the line of demarcation between the three modes of evolution is not perfectly sharp. That does not prevent its being quite real; perhaps it is rather a mark of its reality. There is in the nature of things no sharp line of demarcation between the three fundamental colors, red, green, and violet. But for all that they are really different. The main question is whether three radically different evolutionary elements have been operative; and the second question is what are the most striking characteristics of whatever elements have been operative.</p>
+</blockquote>
+
+</details>
+
+<p id="p30"><small>¶30　p.190–191</small></p>
+
+<p>これらの問いを、人間の思考の歴史的な発展との関わりにおいて、ごくわずかに検討するために、数ページを割くことにしたい。まず読者の便宜のために、思考の発展について考えうる三つの様式の、できるかぎり短い定義を定式化しておく。そのさい、anancasm の二つの変種と、agapasm の三つの変種も区別しておく。そこで、思考の、偶然による（tychastic）発展とは、習慣となった考え（habitual ideas）から、さまざまな方向へ無差別に、わずかに逸れることから成る。その逸れは、まったく目的を持たず、外的な事情によっても論理の力によってもまったく拘束されていない。そしてこうした新たな逸れのあとには、予見されなかった結果が続き、その結果が、逸れのうちのあるものを他のものより習慣（habit）として固定しやすくする。思考の、必然による（anancastic）発展とは、それがどこへ向かうかを予見することなく採用された新たな考えから成る。ただし、その考えの性格は、心の外にある原因、たとえば生活の事情の変化か、心の内にある原因、たとえばすでに受け[p.191]入れられた考えの論理的な展開、つまり一般化によって決められている。思考の、愛による（agapastic）発展とは、ある心の傾向（mental tendencies）を採用することである。ただしそれは、tychasm におけるようにまったく無頓着にでもなく、anancasm におけるように事情の力や論理の力だけによってまったく盲目的にでもなく、考えそのものへの直接の引き寄せ（immediate attraction）によって採用される。その考えの本性は、心がそれを所有する前に、共感（sympathy）の力によって、つまり心の連続（continuity of mind）によって、察知される（divined）。そしてこの心の傾向には、次のような三つの変種がありうる。第一に、それは一つの民族や共同体の全体に、その集合的な人格（collective personality）において作用し、そこから、集合としての民族と強く共感的に結びついている個人へ伝えられることがある。その個人は、自分ひとりの理解力によってはその考えに到達する知的な力がなく、ことによるとそれを意識して把握することさえできないかもしれないのに、である。第二に、それはある私人に直接作用することがある。ただしその人は、際立った経験や思考の展開の影響のもとで、隣人たちへの共感によってはじめて、その考えを把握し、あるいはその魅力を感じ取ることができるようになる。聖パウロの回心を、ここで言おうとしていることの例としてよいだろう。第三に、それはある個人に、その人の人間的な情愛（human affections）とは独立に、その考えがその人の心に及ぼす引き寄せによって、その人がそれを理解する前にさえ作用することがある。これこそ、天才の察知（the divination of genius）とうまく名づけられてきた現象である。というのも、それはその人の心と至高者（the Most High）とのあいだの連続によるからである。</p>
+<p><small>訳注：divine は、神の霊感を受けたかのように見抜く・予感する、の意の動詞で、ここでは「察知する」と訳し、名詞 divination も「察知」とした。占い・予言の含みがあり、段の末尾の「至高者」（神を指す聖書の言い方）と響き合う。</small></p>
+
+<details class="acc"><summary>原文（¶30）</summary>
+
+<blockquote lang="en">
+
+<p>I propose to devote a few pages to a very slight examination of these questions in their relation to the historical development of human thought. I first formulate for the reader's convenience the briefest possible definitions of the three conceivable modes of development of thought, distinguishing also two varieties of anancasm and three of agapasm. The tychastic development of thought, then, will consist in slight departures from habitual ideas in different directions indifferently, quite purposeless and quite unconstrained whether by outward circumstances or by force of logic, these new departures being followed by unforeseen results which tend to fix some of them as habits more than others. The anancastic development of thought will consist of new ideas adopted without foreseeing whither they tend, but having a character determined by causes either external to the mind, such as changed circumstances of life, or internal to the mind as logical developments of ideas already ac [p.191] cepted, such as generalisations. The agapastic development of thought is the adoption of certain mental tendencies, not altogether heedlessly, as in tychasm, nor quite blindly by the mere force of circumstances or of logic, as in anancasm, but by an immediate attraction for the idea itself, whose nature is divined before the mind possesses it, by the power of sympathy, that is, by virtue of the continuity of mind; and this mental tendency may be of three varieties, as follows. First, it may affect a whole people or community in its collective personality, and be thence communicated to such individuals as are in powerfully sympathetic connection with the collective people, although they may be intellectually incapable of attaining the idea by their private understandings or even perhaps of consciously apprehending it. Second, it may affect a private person directly, yet so that he is only enabled to apprehend the idea, or to appreciate its attractiveness, by virtue of his sympathy with his neighbors, under the influence of a striking experience or development of thought. The conversion of St. Paul may be taken as an example of what is meant. Third, it may affect an individual, independently of his human affections, by virtue of an attraction it exercises upon his mind, even before he has comprehended it. This is the phenomenon which has been well called the <em>divination</em> of genius; for it is due to the continuity between the man's mind and the Most High.</p>
+</blockquote>
+
+</details>
+
+<p id="p31"><small>¶31　p.191</small></p>
+
+<p>次に、どのような試験（test）によってこれら進化の異なる範疇を見分けることができるかを考えよう。物事の本性において、異なる部類のあいだにくっきりした境界線はないのだから、物事の本性からして、絶対的な基準はありえない。それでも、量的な徴候（quantitative symptoms）は見いだせるかもしれない。それによって、人間の本性を見る賢明で共感ある（sympathetic）判定者なら、異なる種類の影響がどのくらいの割合で混じり合っているかを、おおよそ見積もることができるかもしれない。</p>
+<details class="acc"><summary>原文（¶31）</summary>
+
+<blockquote lang="en">
+
+<p>Let us next consider by means of what tests we can discriminate between these different categories of evolution. No absolute criterion is possible in the nature of things, since in the nature of things there is no sharp line of demarcation between the different classes. Nevertheless, quantitative symptoms may be found by which a sagacious and sympathetic judge of human nature may be able to estimate the approximate proportions in which the different kinds of influence are commingled.</p>
+</blockquote>
+
+</details>
+
+<p id="p32"><small>¶32　p.191–192</small></p>
+
+<p>人間の思考の歴史的な進化が偶然による（tychastic）ものであったかぎりにおいて、それは感知できないほどの、あるいはごく小さな歩みによって進んできたはずである。というのも、偶然は、規則性の現象を示すほどに多数積み重なると、そういう性質を持つからである。たとえば、1880年の合衆国の、生まれながらの白人成人男子のうち、四分の一[p.192]が身長5フィート4インチ未満、四分の一が5フィート8インチ超であったと仮定しよう。すると確率の原理によって、人口全体のうちに、次のような数が期待されるはずである。</p>
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<tbody>
+<tr>
+<td>4フィート6インチ（約137センチ）未満が216人</td>
+<td>6フィート6インチ（約198センチ）超が216人</td>
+</tr>
+<tr>
+<td>4フィート5インチ未満が48人</td>
+<td>6フィート7インチ超が48人</td>
+</tr>
+<tr>
+<td>4フィート4インチ未満が9人</td>
+<td>6フィート8インチ超が9人</td>
+</tr>
+<tr>
+<td>4フィート3インチ未満が2人に満たない</td>
+<td>6フィート9インチ超が2人に満たない</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p><small>訳注：5フィート4インチは約163センチ、5フィート8インチは約173センチ。</small></p>
+
+<details class="acc"><summary>原文（¶32）</summary>
+
+<blockquote lang="en">
+
+<p>So far as the historical evolution of human thought has been tychastic, it should have proceeded by insensible or minute steps; for such is the nature of chances when so multiplied as to show phenomena of regularity. For example, assume that of the native-born white adult males of the United States in 1880, one fourth part [p.192] were below 5 feet 4 inches in stature and one fourth part above 5 feet 8 inches. Then by the principles of probability, among the whole population, we should expect</p>
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<tbody>
+<tr>
+<td>216 under 4 feet 6 inches</td>
+<td>216 above 6 feet 6 inches</td>
+</tr>
+<tr>
+<td>48 under 4 feet 5 inches</td>
+<td>48 above 6 feet 7 inches</td>
+</tr>
+<tr>
+<td>9 under 4 feet 4 inches</td>
+<td>9 above 6 feet 8 inches</td>
+</tr>
+<tr>
+<td>less than 2 under 4 feet 3 inches</td>
+<td>less than 2 above 6 feet 9 inches</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+</blockquote>
+
+</details>
+
+<p id="p33"><small>¶33　p.192</small></p>
+
+<p>これらの数字を書き出したのは、ありふれたところから大きく外れたものが偶然に現れる場合が、いかに取るに足らないほど少ないかを示すためである。5フィート4インチと5フィート8インチのあいだの4インチの中には、二人に一人の身長しか含まれないのに、この区間を上下にそれぞれ4インチの三倍だけ広げると、（1880年の）生まれながらの白人成人男子800万余りのすべてが、背の高い9人と背の低い9人を除いて、そこに収まるのである。</p>
+<details class="acc"><summary>原文（¶33）</summary>
+
+<blockquote lang="en">
+
+<p>I set down these figures to show how insignificantly few are the cases in which anything very far out of the common run presents itself by chance. Though the stature of only every second man is included within the four inches between 5 feet 4 inches and 5 feet 8 inches, yet if this interval be extended by thrice four inches above and below, it will embrace all our 8 millions odd of native-born adult white males (of 1880), except only 9 taller and 9 shorter.</p>
+</blockquote>
+
+</details>
+
+<p id="p34"><small>¶34　p.192</small></p>
+
+<p>微小な変異という試験は、それが満たされ「なければ」、tychasm を絶対的に否定する。それが満たされ「れば」、それは anancasm を否定するが、agapasm は否定しないことがわかるだろう。私たちが欲しいのは、tychasm によってだけ満たされる、積極的な試験である。さて、人々の思考が、彼らを駆り立てている目的に反する方向へ、彼らの最も高い衝動にもかかわらず、感知できない程度ずつ向きを変えていくのが見いだされるところではどこでも、そこには偶然による（tychastic）作用があったと、安心して結論してよい。</p>
+<details class="acc"><summary>原文（¶34）</summary>
+
+<blockquote lang="en">
+
+<p>The test of minute variation, if <em>not</em> satisfied, absolutely negatives tychasm. If it <em>is</em> satisfied, we shall find that it negatives anancasm but not agapasm. We want a positive test, satisfied by tychasm, only. Now wherever we find men's thought taking by imperceptible degrees a turn contrary to the purposes which animate them, in spite of their highest impulses, there, we may safely conclude, there has been a tychastic action.</p>
+</blockquote>
+
+</details>
+
+<p id="p35"><small>¶35　p.192–194</small></p>
+
+<p>心の歴史の研究者のなかには、私のような不完全な学徒を、喜ばしい賛嘆で甘くされた羨望で満たすほどの博識を持ちながら、次のように主張する人々がいる。考えは、始まったばかりのときには気まぐれ（freaks）以上のものではほとんどなく、またありえない。まだ批判的に吟味されていないからである。さらに、いつどこでも進歩はきわめて徐々であったので、ある人がどんな独創的な一歩を踏み出したのかをはっきり見定めるのは難しい、と。そこからは、tychasm が知的な発展の唯一の方法であった、ということになるだろう。白状しなければならないが、私は歴史をそのようには読めない。私はこう考えずにはいられない。tychasm はときには働いてきたが、別のときには、異なる人々によって独立に踏み出された、ほぼ同じ範囲をおおう大きな歩みが、小さな歩みの連続と取り違えられてきた。さらに研究者たちは、ある時代や民族の、実在する実体的な（entitative）「精神（spirit）」を認めることを渋ってきた。そうすれば奔放で不自然な[p.193]仮説に扉を開くことになるという、誤った、吟味されていない印象のもとでである、と。私が見いだすのは、反対に、個々の心の教育についてはどうであれ、思考の歴史的な発展が偶然による（tychastic）ものであったことはまれであり、それも、もっぱら後退し野蛮化していく動きにおいてであった、ということである。私は、人間の思考のきわめて広い領野を見渡すよう求められ、偵察（reconnaisance）によってしかそれをおおえない論理学の学徒にふさわしい、極度の謙遜をもって語りたい。そのような偵察に少しでも価値を与えられるのは、最大の技量と最も巧みな方法だけである。しかし結局のところ、私は自分自身の意見を述べられるだけで、ほかの誰の意見も述べられない。そして私の慎ましい判断では、tychasm の最大の例は、キリスト教の歴史、すなわち、およそコンスタンティヌスによるその確立から、たとえばアイルランドの修道院の時代までの、約500年の時代（era or eon）によって与えられる。疑いなく、当初、キリスト教をその愛らしさと優しさにおいて受け入れるよう人々を何よりも傾けた外的な事情は、ローマ人が世界を誘い込んだ、和らげられることのない貪欲（greed）と冷酷さによって、社会がばらばらの単位に砕かれていた、その恐ろしいほどの程度であった。しかも、ほかのどの外的な事情にもまして、邪悪な世界へのあの苦々しさを育てたのも、まさにその同じ事実であった。その苦々しさの痕跡は、原初のマルコによる福音書には一つも含まれていない。少なくとも私は、聖霊を冒瀆することについての言葉のうちにそれを見いださない。そこでは報復について何も言われていない。また、イザヤ書の結びの数行が引かれ、「わたしに背いた人々の屍」を食らう蛆と火について語られる、あの言葉のうちにさえ、見いださない。ところが苦々しさは少しずつ増していき、ついに新約聖書の最後の書では、その哀れな取り乱した著者は、次のように描いてみせる。キリストが世界を救うために来たと語っていたあいだずっと、その秘められた意図は、わずか14万4千人を除く全人類を捕らえ、皆を硫黄の湖に漬け込み、その苦しみの煙が世々限りなく立ち昇るとき、振り返って「もはや呪いは何もない」と言うことであった、と。そのような言葉に伴うのは、無感覚な薄笑いだろうか、それとも悪魔のようなにやり笑いだろうか。聖ヨハネがそれを書いたのではないと信じられたらよいのだが。しかし「裁きに至る復活」、つまり人々がただ責め苦を与えるためだけに生き返らされることを語るのは、ほかならぬ彼の福音書である。そしていずれにせよ、ヨハネの黙示録は[p.194]非常に古い作である。初期のキリスト教徒は、滑らかで濡れた粘土の急な斜面を、全力でよじ登ろうとしている人々のようであった、と理解できる。心情と頭脳の両方を生かしていた、彼らの生の最も深く最も真実な要素は、普遍的な愛（universal love）であった。しかし彼らは絶えず、そして自分の意志に反して、党派心へと滑り落ちていった。そして、誰にとってもあまりにもなじみのあるやり方で、滑るたびにそれが前例となった。この党派の感情は感知されないうちに育っていき、ついに紀元330年ごろには、聖マルコにおいて光の白い霊を映していた原初の誠実さの輝きはひどく曇り、エウセビオス（当時のジャレッド・スパークス）が、その『歴史』の序文で、教会の栄光に資するものはすべて誇張し、教会の恥となりうるものはすべて伏せるつもりだと公言できるほどになった。彼と同時代のラテン語圏のラクタンティウスはさらにひどい。こうして暗がりは増していき、その世紀の終わる前には、アレクサンドリアの大図書館がテオフィロスによって破壊され<a href="#n63">[注63]</a>、二世紀のちには大グレゴリウスが「無知は信心の母である」と宣言してローマの大図書館を焼き（これは、抑圧と不正が霊性の母であるのと同じ意味で、真である）、ついには、教会の状態をありのままに記述すれば、あまり上品ぶらない私たちの新聞でさえ「掲載に適さない」として扱うようなものになった。この動き全体は、上に挙げた試験を当てはめることで、偶然によるものであったことが示される。これによく似た、ただ規模が小さく、百倍も速い動きで、その研究のための文書が図書館いっぱいにあるものが、フランス革命の歴史に見いだされる。</p>
+<p><small>訳注：「聖霊を冒瀆すること」はマルコによる福音書3章29節、「イザヤ書の結びの数行」はイザヤ書66章24節で、マルコによる福音書9章48節がこれを引く。「もはや呪いは何もない」はヨハネの黙示録22章3節、「裁きに至る復活」はヨハネによる福音書5章29節。ジャレッド・スパークスは19世紀アメリカの歴史家で、ワシントンの書簡などを編むさいに本文に手を加えたと批判された人。</small></p>
+
+<p><small>訳注：「アイルランドの修道院の時代」の所は、誌面では "the time the of Irish monasteries"（語の順の誤植と見える）。1923 年の再録は "the time of the Irish monasteries" に直しており、訳はそれで読んだ。</small></p>
+
+<details class="acc"><summary>原文（¶35）</summary>
+
+<blockquote lang="en">
+
+<p>Students of the history of mind there be of an erudition to fill an imperfect scholar like me with envy edulcorated by joyous admiration, who maintain that ideas when just started are and can be little more than freaks, since they cannot yet have been critically examined, and further that everywhere and at all times progress has been so gradual that it is difficult to make out distinctly what original step any given man has taken. It would follow that tychasm has been the sole method of intellectual development. I have to confess I cannot read history so ; I cannot help thinking that while tychasm has sometimes been operative, at others great steps covering nearly the same ground and made by different men independently, have been mistaken for a succession of small steps, and further that students have been reluctant to admit a real entitative "spirit" of an age or of a people, under the mistaken and unscrutinised impression that they should thus be opening the door to wild and unnatural [p.193] hypotheses. I find, on the contrary, that, however it may be with the education of individual minds, the historical development of thought has seldom been of a tychastic nature, and exclusively in backward and barbarising movements. I desire to speak with the extreme modesty which befits a student of logic who is required to survey so very wide a field of human thought that he can cover it only by a reconnaisance, to which only the greatest skill and most adroit methods can impart any value at all; but, after all, I can only express my own opinions and not those of anybody else; and in my humble judgment, the largest example of tychasm is afforded by the history of Christianity, from about its establishment by Constantine, to, say, the time the of Irish monasteries, an era or eon of about 500 years. Undoubtedly the external circumstance which more than all others at first inclined men to accept Christianity in its loveliness and tenderness, was the fearful extent to which society was broken up into units by the unmitigated greed and hard-heartedness into which the Romans had seduced the world. And yet it was that very same fact, more than any other external circumstance, that fostered that bitterness against the wicked world of which the primitive Gospel of Mark contains not a single trace. At least, I do not detect it in the remark about the blasphemy against the Holy Ghost, where nothing is said about vengeance, nor even in that speech where the closing lines of Isaiah are quoted, about the worm and the fire that feed upon the "carcasses of the men that have transgressed against me." But little by little the bitterness increases until in the last book of the New Testament, its poor distracted author represents that all the time Christ was talking about having come to save the world, the secret design was to catch the entire human race, with the exception of a paltry 144000, and souse them all in brimstone lake, and as the smoke of their torment went up for ever and ever, to turn and remark, "There is no curse any more." Would it be an insensible smirk or a fiendish grin that should accompany such an utterance? I wish I could believe St. John did not write it; but it is his gospel which tells about the "resurrection unto condemnation,"—that is of men's being resuscitated just for the sake of torturing them;—and, at any rate, the Revelation is a [p.194] very ancient composition. One can understand that the early Christians were like men trying with all their might to climb a steep declivity of smooth wet clay; the deepest and truest element of their life, animating both heart and head, was universal love; but they were continually, and against their wills, slipping into a party spirit, every slip serving as a precedent, in a fashion but too familiar to every man. This party feeling insensibly grew until by about a. d. 330 the lustre of the pristine integrity that in St. Mark reflects the white spirit of light was so far tarnished that Eusebius, (the Jared Sparks of that day,) in the preface to his History, could announce his intention of exaggerating everything that tended to the glory of the church and of suppressing whatever might disgrace it. His Latin contemporary Lactantius is worse, still; and so the darkling went on increasing until before the end of the century the great library of Alexandria was destroyed by Theophilus,<a href="#n63">[注63]</a> until Gregory the Great, two centuries later, burnt the great library of Rome, proclaiming that "Ignorance is the mother of devotion," (which is true, just as oppression and injustice is the mother of spirituality,) until a sober description of the state of the church would be a thing our not too nice newspapers would treat as "unfit for publication." All this movement is shown by the application of the test given above to have been tychastic. Another very much like it on a small scale, only a hundred times swifter, for the study of which there are documents by the library-full, is to be found in the history of the French Revolution.</p>
+</blockquote>
+
+</details>
+
+<p id="p36"><small>¶36　p.194–196</small></p>
+
+<p>必然による（anancastic）進化は、あいだに休止をはさみながら、次々と大股の歩みで進む。その理由は、この過程では、思考の習慣が覆されると、その次に強いものがそれに取って代わるからである。ところで、この次に強いものは、最初のものとは大きくかけ離れているのが確かで、しばしばそのまっすぐな反対である。これは、二番目の候補者を副大統領にするという、私たちの昔の決まりを思い出させる。それゆえ、この性格は、anancasm を tychasm からはっきりと区別する。anancasm を agapasm から区別する性格は、その目的のなさ（purposelessness）である。しかし、外的な anancasm と内的な anancasm は、別々に検討しなければならない。[p.195]外的な事情の圧力のもとでの発展、すなわち激変による（cataclasmine）進化は、たいていの場合、十分に見間違えようがない。それには無数の強度の段階がある。世界の思考の流れを一度ならず変えてきた生の暴力、あからさまな戦争から、下っては、証拠という、あるいは証拠と受け取られてきたものという厳然たる事実まで。後者は、人々を群れごと納得させてきたことが知られている。そのような歴史を前にして残りうるためらいは、量的なものだけである。心に作用する影響が外的なものだけであることは決してない。したがって、ある運動が主として外から支配されているとみなすべきかどうかは、判断の問題でなければならず、そのための規則を定めようと試みることはほとんど割に合わないだろう。中世の思考、つまりスコラ哲学とそれと同時代の芸術の発展の興隆においては、疑いなく十字軍とアリストテレスの著作の発見が強力な影響であった。ロスケリヌスからアルベルトゥス・マグヌスに至るスコラ哲学の発展は、アリストテレスについての知識の段階を順を追ってぴたりとなぞっている。プラントルは、それで話は全部だと考えている。そしてカール・プラントルほど多くの書物をめくってきた人はまれである。彼は、その大雑把な判断にもかかわらず、堅実な良い仕事をした。しかし、スコラ哲学の全体が、その目的のために規則正しく組織され規律のもとに置かれた研究者の一団によって、体系的に探査され消化されるまでは、私たちはスコラ哲学を理解することに、良い手始めさえ決してできないだろう。しかし、私たちが今とくに考察している時期、すなわちロマネスク建築と同時代の時期についていえば、その文献は容易に習得できる。それは、これらの著者が自分たちの権威に奴隷のように依存していたというプラントルの断言を、十分には正当化しない。そのうえ、彼らは研究の全体を通じて、一つの明確な目的を絶えず心の前に保っていた。それゆえ私は、スコラ哲学のこの時期を、純粋な外的 anancasm の例として差し出すことはできない。純粋な外的 anancasm は、知的な元素のなかのフッ素のようなものらしい。おそらく、近年の日本による西洋の考えの受容が、歴史上その最も純粋な例である。しかし、ほかの要素と結びついたかたちでは、これほどありふれたものはない。外的な事実の研究の影響のもとでの考えの発展を外的な anancasm とみなすなら（それは外的なかたちと内的なかたちの境界にある）、それはもちろん近代の学問における主要なものである。しかしヒューエルは、その科学史の見事な[p.196]理解を批評家たちが無知のあまり正当に評価できなかった人だが、そこにおいてさえ、それが圧倒的に優勢な影響からはほど遠いことを、はっきり示している。</p>
+<p><small>訳注：「二番目の候補者を副大統領にする」は、合衆国憲法修正第12条（1804年）より前の、大統領選挙で次点の者が副大統領になった仕組みを指すと読める。「フッ素」は、自然界では単体で見つからない元素であることにかけたたとえと読める（単離は1886年）。cataclasmine はパースの造語と見られる。</small></p>
+
+<details class="acc"><summary>原文（¶36）</summary>
+
+<blockquote lang="en">
+
+<p>Anancastic evolution advances by successive strides with pauses between. The reason is that in this process a habit of thought having been overthrown is supplanted by the next strongest. Now this next strongest is sure to be widely disparate from the first, and as often as not is its direct contrary. It reminds one of our old rule of making the second candidate vice-president. This character, therefore, clearly distinguishes anancasm from tychasm. The character which distinguishes it from agapasm is its purposelessness. But external and internal anancasm have to be examined separately. [p.195] Development under the pressure of external circumstances, or cataclasmine evolution, is in most cases unmistakable enough. It has numberless degrees of intensity, from the brute force, the plain war, which has more than once turned the current of the world's thought, down to the hard fact of evidence, or what has been taken for it, which has been known to convince men by hordes. The only hesitation that can subsist in the presence of such a history is a quantitative one. Never are external influences the only ones which affect the mind, and therefore it must be a matter of judgment for which it would scarcely be worth while to attempt to set rules, whether a given movement is to be regarded as principally governed from without or not. In the rise of medieval thought, I mean scholasticism and the synchronistic art developments, undoubtedly the crusades and the discovery of the writings of Aristotle were powerful influences. The development of scholasticism from Roscellin to Albertus Magnus closely follows the successive steps in the knowledge of Aristotle. Prantl thinks that that is the whole story, and few men have thumbed more books than Carl Prantl. He has done good solid work, notwithstanding his slap-dash judgments. But we shall never make so much as a good beginning of comprehending scholasticism until the whole has been systematically explored and digested by a company of students regularly organised and held under rule for that purpose. But as for the period we are now specially considering, that which synchronised the Romanesque architecture, the literature is easily mastered. It does not quite justify Prantl's dicta as to the slavish dependence of these authors upon their authorities. Moreover, they kept a definite purpose steadily before their minds, throughout all their studies. I am, therefore, unable to offer this period of scholasticism as an example of pure external anancasm, which seems to be the fluorine of the intellectual elements. Perhaps the recent Japanese reception of western ideas is the purest instance of it in history. Yet in combination with other elements, nothing is commoner. If the development of ideas under the influence of the study of external facts be considered as external anancasm,—it is on the border between the external and the internal forms,—it is, of course, the principal thing in modern learning. But Whewell, whose masterly [p.196] comprehension of the history of science critics have been too ignorant properly to appreciate, clearly shows that it is far from being the overwhelmingly preponderant influence, even there.</p>
+</blockquote>
+
+</details>
+
+<p id="p37"><small>¶37　p.196</small></p>
+
+<p>内的な anancasm、すなわち論理的な手探り（logical groping）は、あらかじめ定められた線の上を進むが、それがどこへ運ばれていくのかを予見することも、その進路の舵を取ることもできない。これが哲学の発展の決まりである。ヘーゲルがはじめてこのことを世界に理解させた。そして彼は論理学を、思考の主観的な案内役・監督役（それまで論理学が目指していたのは、そこまでであった）にとどめず、思考することのまさに主ぜんまい（mainspring）にしようとする。しかも個人の思考の主ぜんまいだけでなく、議論の、思考の発展の歴史の、あらゆる歴史の、あらゆる発展の主ぜんまいに。これは、積極的な、明らかに証明できる誤りを含んでいる。問題の論理学が、必然的推論の論理学であれ蓋然的推論の論理学であれ（その理論はどちらにも合うように形づくれるかもしれない）、どんな種類のものであろうと、いずれにせよそれは、与えられた前提からどんな結論が出てくるかを、論理学がそれだけで決めるのに十分だと想定している。というのも、論理学がそれだけのことをしないなら、ある個人の推論の筋道がまさにそれのたどる道筋をたどるのはなぜかを説明するのにさえ足りず、ほかの種類の発展については言うまでもないからである。こうしてそれは、与えられた前提からは論理的にただ一つの結論しか引き出せず、自由な選択の余地はまったくない、と想定している。与えられた前提からは論理的にただ一つの結論しか引き出せないというのは、論理学者たちが、思考のナンタケット島ともいうべき、非関係的な名辞の論理学に注意を限ってきたことから生じた誤った観念の一つである。関係の論理学（logic of relatives）では、それは成り立たない。</p>
+<p><small>訳注：ナンタケットはマサチューセッツ州沖の小さな島で、狭く孤立した場所のたとえと読める。</small></p>
+
+<details class="acc"><summary>原文（¶37）</summary>
+
+<blockquote lang="en">
+
+<p>Internal anancasm, or logical groping, which advances upon a predestined line without being able to foresee whither it is to be carried nor to steer its course, this is the rule of development of philosophy. Hegel first made the world understand this; and he seeks to make logic not merely the subjective guide and monitor of thought, which was all it had been ambitioning before, but to be the very mainspring of thinking, and not merely of individual thinking but of discussion, of the history of the development of thought, of all history, of all development. This involves a positive, clearly demonstrable error. Let the logic in question be of whatever kind it may, a logic of necessary inference or a logic of probable inference, (the theory might perhaps be shaped to fit either,) in any case it supposes that logic is sufficient of itself to determine what conclusion follows from given premises ; for unless it will do so much, it will not suffice to explain why an individual train of reasoning should take just the course it does take, to say nothing of other kinds of development. It thus supposes that from given premises, only one conclusion can logically be drawn, and that there is no scope at all for free choice. That from given premises only one conclusion can logically be drawn, is one of the false notions which have come from logicians' confining their attention to that Nantucket of thought, the logic of non-relative terms. In the logic of relatives, it does not hold good.</p>
+</blockquote>
+
+</details>
+
+<p id="p38"><small>¶38　p.196</small></p>
+
+<p>一つ気づいたことがある。歴史の進化がかなりの部分において内的な anancasm の性質を持つなら、それは個々の人間の発展に似ている。そして、人が子をもうける平均の年齢である33年が、個人にとって大まかだが自然な時間の単位であるのとちょうど同じように、一つの大きな歴史的な運動が別の運動に取って代わられそうになる、おおよその周期があるはずである。そうしたものを何か見て取れるかどうか、見てみよう。ローマの統治の発展を十分に長いものとして取り、主な年を書き出してみる。</p>
+<details class="acc"><summary>原文（¶38）</summary>
+
+<blockquote lang="en">
+
+<p>One remark occurs to me. If the evolution of history is in considerable part of the nature of internal anancasm, it resembles the development of individual men; and just as 33 years is a rough but natural unit of time for individuals, being the average age at which man has issue, so there should be an approximate period at the end of which one great historical movement ought to be likely to be supplanted by another. Let us see if we can make out anything of the kind. Take the governmental development of Rome as being sufficiently long and set down the principal dates.</p>
+</blockquote>
+
+</details>
+
+<p id="p39"><small>¶39　p.197</small></p>
+
+<p>紀元前753年、ローマの建国。</p>
+<details class="acc"><summary>原文（¶39）</summary>
+
+<blockquote lang="en">
+
+<p>b. c. 753, Foundation of Rome.</p>
+</blockquote>
+
+</details>
+
+<p id="p40"><small>¶40　p.197</small></p>
+
+<p>紀元前510年、タルクィニウス家の追放。</p>
+<details class="acc"><summary>原文（¶40）</summary>
+
+<blockquote lang="en">
+
+<p>b. c. 510, Expulsion of the Tarquins.</p>
+</blockquote>
+
+</details>
+
+<p id="p41"><small>¶41　p.197</small></p>
+
+<p>紀元前27年、オクタウィウスがアウグストゥスの称号を帯びる。</p>
+<details class="acc"><summary>原文（¶41）</summary>
+
+<blockquote lang="en">
+
+<p>b. c. 27, Octavius assumes title Augustus.</p>
+</blockquote>
+
+</details>
+
+<p id="p42"><small>¶42　p.197</small></p>
+
+<p>紀元476年、西ローマ帝国の終わり。</p>
+<details class="acc"><summary>原文（¶42）</summary>
+
+<blockquote lang="en">
+
+<p>a. d. 476, End of Western Empire.</p>
+</blockquote>
+
+</details>
+
+<p id="p43"><small>¶43　p.197</small></p>
+
+<p>紀元962年、神聖ローマ帝国。</p>
+<details class="acc"><summary>原文（¶43）</summary>
+
+<blockquote lang="en">
+
+<p>a. d. 962, Holy Roman Empire.</p>
+</blockquote>
+
+</details>
+
+<p id="p44"><small>¶44　p.197</small></p>
+
+<p>紀元1453年、コンスタンティノープルの陥落。</p>
+<details class="acc"><summary>原文（¶44）</summary>
+
+<blockquote lang="en">
+
+<p>a. d. 1453, Fall of Constantinople.</p>
+</blockquote>
+
+</details>
+
+<p id="p45"><small>¶45　p.197</small></p>
+
+<p>最後の出来事は、歴史上、とりわけイタリアにとって、最も意味の大きいものの一つであった。間隔は243年、483年、502年、486年、491年である。ほかの半分である最初のものを除いて、どれもかなり奇妙なほど等しいに近い。歴代の王の治世が、ふつうこれほど等しいに近いことはないだろう。思考の歴史のいくつかの年を書き出してみよう。</p>
+<details class="acc"><summary>原文（¶45）</summary>
+
+<blockquote lang="en">
+
+<p>The last event was one of the most significant in history, especially for Italy. The intervals are 243, 483, 502, 486, 491 years. All are rather curiously near equal, except the first which is half the others. Successive reigns of kings would not commonly be so near equal. Let us set down a few dates in the history of thought.</p>
+</blockquote>
+
+</details>
+
+<p id="p46"><small>¶46　p.197</small></p>
+
+<p>紀元前585年、タレスの日食。ギリシア哲学の始まり。</p>
+<details class="acc"><summary>原文（¶46）</summary>
+
+<blockquote lang="en">
+
+<p>b. c. 585, Eclipse of Thales. Beginning of Greek philosophy.</p>
+</blockquote>
+
+</details>
+
+<p id="p47"><small>¶47　p.197</small></p>
+
+<p>紀元30年、磔刑。</p>
+<details class="acc"><summary>原文（¶47）</summary>
+
+<blockquote lang="en">
+
+<p>a. d. 30, The crucifixion.</p>
+</blockquote>
+
+</details>
+
+<p id="p48"><small>¶48　p.197</small></p>
+
+<p>紀元529年、アテナイの学園の閉鎖。ギリシア哲学の終わり。</p>
+<details class="acc"><summary>原文（¶48）</summary>
+
+<blockquote lang="en">
+
+<p>a. d. 529, Closing of Athenian schools. End of Greek philosophy.</p>
+</blockquote>
+
+</details>
+
+<p id="p49"><small>¶49　p.197</small></p>
+
+<p>紀元1125年、（おおよそ）ボローニャ大学とパリ大学の興り。</p>
+<details class="acc"><summary>原文（¶49）</summary>
+
+<blockquote lang="en">
+
+<p>a. d. 1125, (Approximate) Rise of the Universities of Bologna and Paris.</p>
+</blockquote>
+
+</details>
+
+<p id="p50"><small>¶50　p.197</small></p>
+
+<p>紀元1543年、コペルニクスの『天球回転論』（De Revolutionibus）の刊行。近代科学の始まり。</p>
+<details class="acc"><summary>原文（¶50）</summary>
+
+<blockquote lang="en">
+
+<p>a. d. 1543, Publication of the "De Revolutionibus" of Copernicus. Beginning of Modern Science.</p>
+</blockquote>
+
+</details>
+
+<p id="p51"><small>¶51　p.197</small></p>
+
+<p>間隔は615年、499年、596年、418年である。形而上学の歴史では、次のものを取ってよい。</p>
+<details class="acc"><summary>原文（¶51）</summary>
+
+<blockquote lang="en">
+
+<p>The intervals are 615, 499, 596, 418, years. In the history of metaphysics, we may take the following :</p>
+</blockquote>
+
+</details>
+
+<p id="p52"><small>¶52　p.197</small></p>
+
+<p>紀元前322年、アリストテレスの死。</p>
+<details class="acc"><summary>原文（¶52）</summary>
+
+<blockquote lang="en">
+
+<p>b. c. 322, Death of Aristotle.</p>
+</blockquote>
+
+</details>
+
+<p id="p53"><small>¶53　p.197</small></p>
+
+<p>紀元1274年、アクィナスの死。</p>
+<details class="acc"><summary>原文（¶53）</summary>
+
+<blockquote lang="en">
+
+<p>a. d. 1274, Death of Aquinas.</p>
+</blockquote>
+
+</details>
+
+<p id="p54"><small>¶54　p.197</small></p>
+
+<p>紀元1804年、カントの死。</p>
+<details class="acc"><summary>原文（¶54）</summary>
+
+<blockquote lang="en">
+
+<p>a. d. 1804, Death of Kant.</p>
+</blockquote>
+
+</details>
+
+<p id="p55"><small>¶55　p.197</small></p>
+
+<p>間隔は1595年と530年である。前者は後者のおよそ三倍である。</p>
+<details class="acc"><summary>原文（¶55）</summary>
+
+<blockquote lang="en">
+
+<p>The intervals are 1595 and 530 years. The former is about thrice the latter.</p>
+</blockquote>
+
+</details>
+
+<p id="p56"><small>¶56　p.197</small></p>
+
+<p>これらの数字からは、どんな結論も公正には引き出せない。同時に、それらは、おそらく約500年の大まかな自然の時代区分（era）があるかもしれないことを示唆する。もしこれについて独立の証拠があるなら、ここで気づかれた間隔はいくらかの意味を得るかもしれない。</p>
+<details class="acc"><summary>原文（¶56）</summary>
+
+<blockquote lang="en">
+
+<p>From these figures, no conclusion can fairly be drawn. At the same time, they suggest that perhaps there may be a rough natural era of about 500 years. Should there be any independent evidence of this, the intervals noticed may gain some significance.</p>
+</blockquote>
+
+</details>
+
+<p id="p57"><small>¶57　p.197–198</small></p>
+
+<p>思考の愛による（agapastic）発展は、もしそれが存在するなら、その目的的な性格（purposive character）によって区別されるはずであり、その目的とは一つの考えの発展である。私たちは、思考の連続（continuity of thought）によって、その発展を直接に、愛によって、すなわち共感によって（agapic or sympathetic）理解し認めることになるはずである。ここで私は、そのような思考の連続が、昨年7月の『モニスト』誌に載せた私の論文「心の法則」（"Law of Mind"）で用いた議論によって十分に証明されたものとみなしている。たとえそれらの議論がそれ自体では十分に説得的とまではいえないとしても、それらが[p.198]思考の歴史における見てとれる agapasm（apparent agapasm）によって補強されるなら、二つの命題は互いに助け合うだろう。読者は論理学に十分通じていて、そのような相互の支えを推論の悪循環と取り違えることはないと、私は信じている。もしある時代の、あるいはある民族の「精神（spirit）」といった実体が存在し、個人の知性だけではすべての現象を説明できないことを直接に示せるなら、それはただちに、agapasticism と synechism の両方の十分な証明になるだろう。私はこれについて強い論証を示すことはできないと認めなければならない。しかし、ほかの事実から引き出されてきた議論を裏づけるのに役立つような議論を挙げることはできると思う。私は、心の最も偉大な達成はすべて、助けを受けない個人の力を超えていたと信じている。そして、この意見が連続の論の（synechistic）考察から受ける支えや、多くの偉大な運動の目的的な性格から受ける支えとは別に、そう考える直接の理由を、私は、それらの考えの崇高さのうちに、またそれらが、とりたてて非凡な全般的能力を持つわけではない何人もの個人に、同時に独立に生じていることのうちに見いだす。尖頭アーチのゴシック建築は、そのいくつかの展開において、そうした性格のものであるように私には見える。最大の学識と天才を持つ近代の建築家たちがそれを模倣しようとした試みはすべて、平板で生気のないものに見え、作者たち自身もそう感じている。それなのに、その様式が生きていた時代には、この種の巨大な崇高さと力を持つ作品を生み出せる人々がまったく豊富にいた。現存する文書が一度ならず示すところでは、大聖堂参事会は建築家を選ぶさいに、高い芸術的な天才を二次的な考慮事項として扱った。それを供給できる人に事欠かないかのように。そして結果は、彼らの信頼が正しかったことを示している。それでは、それらの時代の個人は一般に、そのような気高い本性と高い知性を持っていたのだろうか。そのような意見は、最初の吟味で崩れるだろう。</p>
+<p><small>訳注：「理解し認める」の目的語 it は、直前の「一つの考えの発展」とも「その目的」とも読める。ここでは発展と取った。</small></p>
+
+<details class="acc"><summary>原文（¶57）</summary>
+
+<blockquote lang="en">
+
+<p>The agapastic development of thought should, if it exists, be distinguished by its purposive character, this purpose being the development of an idea. We should have a direct agapic or sympathetic comprehension and recognition of it, by virtue of the continuity of thought. I here take it for granted that such continuity of thought has been sufficiently proved by the arguments used in my paper on the "Law of Mind" in <em>The Monist</em> of last July. Even if those arguments are not quite convincing in themselves, yet if they [p.198] are reënforced by an apparent agapasm in the history of thought, the two propositions will lend one another mutual aid. The reader will, I trust, be too well grounded in logic to mistake such mutual support for a vicious circle in reasoning. If it could be shown directly that there is such an entity as the "spirit of an age" or of a people, and that mere individual intelligence will not account for all the phenomena, this would be proof enough at once of agapasticism and of synechism. I must acknowledge that I am unable to produce a cogent demonstration of this; but I am, I believe, able to adduce such arguments as will serve to confirm those which have been drawn from other facts. I believe that all the greatest achievements of mind have been beyond the powers of unaided individuals; and I find, apart from the support this opinion receives from synechistic considerations, and from the purposive character of many great movements, direct reason for so thinking in the sublimity of the ideas and in their occurring simultaneously and independently to a number of individuals of no extraordinary general powers. The pointed Gothic architecture in several of its developments appears to me to be of such a character. All attempts to imitate it by modern architects of the greatest learning and genius appear flat and tame, and are felt by their authors to be so. Yet at the time the style was living, there was quite an abundance of men capable of producing works of this kind of gigantic sublimity and power. In more than one case, extant documents show that the cathedral chapters, in the selection of architects, treated high artistic genius as a secondary consideration, as if there were no lack of persons able to supply that; and the results justify their confidence. Were individuals in general, then, in those ages possessed of such lofty natures and high intellect? Such an opinion would break down under the first examination.</p>
+</blockquote>
+
+</details>
+
+<p id="p58"><small>¶58　p.198–200</small></p>
+
+<p>いま中年にある人々は、偉大な発見が独立に、ほとんど同時になされるのを、何度見てきたことか。私が覚えている最初の例は、ルヴェリエとアダムズによる、天王星の外側にある惑星の予言であった。エネルギー保存の原理は、科学がこれまでになした最大の発見と[p.199]みなしてもよいものであるのに、それが誰に帰されるべきかは、ほとんどわからない。熱の力学的理論は、1850年2月の同じ月に、ランキンとクラウジウスによって示された。そしてこの大きな一歩をトムソンに帰する著名な人々もいる。<a href="#n64">[注64]</a>気体の運動論は、ジョン（ヨハン）・ベルヌーイによって始められたあと長く忘却に埋もれていたが、少なくとも三人の近代の物理学者によって別々に再発明され、ボイル、シャルル、アボガドロの法則だけでなく、拡散と粘性の説明にも適用された。自然選択の学説が、英国学術協会の同じ会合でウォレスとダーウィンによって提示されたことはよく知られている。そしてダーウィンは、その本の後の版の頭に付した「歴史的概要」で、二人ともが無名の先駆者たちに先取りされていたことを示している。スペクトル分析の方法は、キルヒホフだけでなくスワンのものとしても主張され、さらに優れた主張権を持っていたかもしれないほかの人々もいた。化学元素の周期律の作者は、ロシア人、ドイツ人、イギリス人のあいだで争われている。もっとも、主な功績が第一の人に属することに疑いの余地はない。これらは、私たちの時代の最大の発見のほとんどすべてである。発明についても同じである。電信が何人もの発明者によって独立に作られたのは驚くことではないかもしれない。それは、前から十分に確かめられていた科学的な事実からの容易な系であったからである。しかし、電話やほかの発明についてはそうではなかった。最初の麻酔薬であるエーテルは、ニューイングランドの三人の異なる医師によって独立に導入された。ところで、エーテルは一世紀のあいだありふれた品物であった。三世紀前には、ある薬局方に載っていた。その麻酔の性質が知られていなかったとは、まったく信じがたい。それは知られていたのである。それはおそらく、バシリウス・ウァレンティヌスの時代から、秘密として口から耳へと伝えられていた。しかし長いあいだ、それはパンチネロ流の秘密であった。ニューイングランドでは、長年にわたって、少年たちが遊びにそれを使っていた。それなら、なぜそれは本気の用途に使われなかったのか。理由は、そうする動機が十分に強くなかったということのほかには挙げられない。そうする動機は、利得への欲望と博愛（philanthropy）でしかありえなかった。導入の年である1846年ごろ、[p.200]博愛は疑いなく、いつになく活発な状態にあった。前世紀にもたらされたあの感受性（sensibility）、すなわち感傷主義（sentimentalism）は、熟成の過程を経ており、その結果、以前より強さは減ったものの、深く考えない人々に、それまでのどの時よりも影響を与えやすくなっていた。エーテルの発見を主張した三人はみな、おそらく利得への欲望の影響を受けていた。しかしそれでも、彼らは愛による（agapic）影響に無感覚では決してなかった。</p>
+<p><small>訳注：気体運動論の先駆はふつうダニエル・ベルヌーイ（1738年）とされるが、原文は John とある。また、ウォレスとダーウィンの論文が読み上げられたのは、英国学術協会（British Association）ではなくロンドンのリンネ協会の会合（1858年7月1日）である。バシリウス・ウァレンティヌスは15世紀の錬金術師とされる伝説的な人物。「パンチネロ流の秘密」は、道化芝居のパンチネロが舞台で大声でささやく秘密、つまり公然の秘密の意と読める。出典は確かめていない。</small></p>
+
+<details class="acc"><summary>原文（¶58）</summary>
+
+<blockquote lang="en">
+
+<p>How many times have men now in middle life seen great discoveries made independently and almost simultaneously! The first instance I remember was the prediction of a planet exterior to Uranus by Leverrier and Adams. One hardly knows to whom the principle of the conservation of energy ought to be attributed, although it may reasonably be considered as the greatest discovery [p.199] science has ever made. The mechanical theory of heat was set forth by Rankine and by Clausius during the same month of February, 1850; and there are eminent men who attribute this great step to Thomson.<a href="#n64">[注64]</a> The kinetical theory of gases, after being started by John Bernoulli and long buried in oblivion, was reinvented and applied to the explanation not merely of the laws of Boyle, Charles, and Avogadro, but also of diffusion and viscosity, by at least three modern physicists separately. It is well known that the doctrine of natural selection was presented by Wallace and by Darwin at the same meeting of the British Association; and Darwin in his "Historical Sketch" prefixed to the later editions of his book shows that both were anticipated by obscure forerunners. The method of spectrum analysis was claimed for Swan as well as for Kirchhoff, and there were others who perhaps had still better claims. The authorship of the Periodical Law of the Chemical Elements is disputed between a Russian, a German, and an Englishman ; although there is no room for doubt that the principal merit belongs to the first. These are nearly all the greatest discoveries of our times. It is the same with the inventions. It may not be surprising that the telegraph should have been independently made by several inventors, because it was an easy corollary from scientific facts well made out before. But it was not so with the telephone and other inventions. Ether, the first anæsthetic, was introduced independently by three different New England physicians. Now ether had been a common article for a century. It had been in one of the pharmacopœias three centuries before. It is quite incredible that its anæsthetic property should not have been known; it was known. It had probably passed from mouth to ear as a secret from the days of Basil Valentine ; but for long it had been a secret of the Punchinello kind. In New England, for many years, boys had used it for amusement. Why then had it not been put to its serious use ? No reason can be given, except that the motive to do so was not strong enough. The motives to doing so could only have been desire for gain and philanthropy. About 1846, the [p.200] date of the introduction, philanthropy was undoubtedly in an unusually active condition. That sensibility, or sentimentalism, which had been introduced in the previous century, had undergone a ripening process, in consequence of which, though now less intense than it had previously been, it was more likely to influence unreflecting people than it had ever been. All three of the ether-claimants had probably been influenced by the desire for gain; but nevertheless they were certainly not insensible to the agapic influences.</p>
+</blockquote>
+
+</details>
+
+<p id="p59"><small>¶59　p.200</small></p>
+
+<p>偉大な発見のどれかを、本来、まったく個人の達成とみなすべきかどうか、私は疑わしく思う。そして多くの人がこの疑いを共にするだろうと思う。しかし、もし偉大な発見がまったく個人の達成ではないのだとすれば、ここに、心の連続と agapasticism を支持する、なんという議論があることか。私はあまり力みたくはない。思想家たちがただ説得されて、その偏見を脇へ置き、この学説の証拠の研究に取り組んでくれさえすれば、私は最終的な決着を待つことに十分満足するだろう。</p>
+<details class="acc"><summary>原文（¶59）</summary>
+
+<blockquote lang="en">
+
+<p>I doubt if any of the great discoveries ought, properly, to be considered as altogether individual achievements; and I think many will share this doubt. Yet, if not, what an argument for the continuity of mind, and for agapasticism is here! I do not wish to be very strenuous. If thinkers will only be persuaded to lay aside their prejudices and apply themselves to studying the evidences of this doctrine, I shall be fully content to await the final decision.</p>
+</blockquote>
+
+</details>
+
+<p id="p60"><small>¶60　p.200</small></p>
+
+<p>チャールズ・S・パース</p>
+<details class="acc"><summary>原文（¶60）</summary>
+
+<blockquote lang="en">
+
+<p>Charles S. Peirce.</p>
+</blockquote>
+
+</details>
+
+</div></details><details class="sec" id="パースの脚注"><summary>パースの脚注</summary><div class="secbody">
+<p id="n61"><small>注61　p.180</small></p>
+
+<p>「恵み深い（beneficent）」ものについて何も語ることのない経済学の科学的な命題と、このような安ぴかの一般化とを混同できる書き手が、どうして科学そのものに何らかの敬意を持ちえようか。</p>
+<p><small>訳注：brummagem はバーミンガム（Birmingham）の古い呼び方から来た語で、安物の、まがいものの、の意。</small></p>
+
+<details class="acc"><summary>原文（注61）</summary>
+
+<blockquote lang="en">
+
+<p>How can a writer have any respect for science, as such, who is capable of confounding with the scientific propositions of political economy, which have nothing to say concerning what is "beneficent," such brummagem generalisations as this?</p>
+</blockquote>
+
+</details>
+
+<p id="n62"><small>注62　p.185</small></p>
+
+<p>ケーラス博士もまた、ヴァイスマンがあの旗を掲げているにもかかわらず、彼をダーウィンの反対者のうちに数えているのを知って、私はうれしい。</p>
+<p><small>訳注：「あの旗」は、ヴァイスマンがダーウィン主義を名乗っていることを指すと読める。</small></p>
+
+<details class="acc"><summary>原文（注62）</summary>
+
+<blockquote lang="en">
+
+<p>I am happy to find that Dr. Carus, too, ranks Weismann among the opponents of Darwin, notwithstanding his flying that flag.</p>
+</blockquote>
+
+</details>
+
+<p id="n63"><small>注63　p.194</small></p>
+
+<p>ドレイパーの『知的発展の歴史』第10章を見よ。</p>
+<details class="acc"><summary>原文（注63）</summary>
+
+<blockquote lang="en">
+
+<p>See <em>Draper's History of Intellectual Development</em>, chap. x.</p>
+</blockquote>
+
+</details>
+
+<p id="n64"><small>注64　p.199</small></p>
+
+<p>トムソン自身、『ブリタニカ百科事典』の項目「熱」で、クラウジウスの名を一度も挙げていない。</p>
+<details class="acc"><summary>原文（注64）</summary>
+
+<blockquote lang="en">
+
+<p>Thomson, himself, in his article <em>Heat</em> in the <em>Encyclopedia Britannica</em>, never once mentions the name of Clausius.</p>
+</blockquote>
+
+</details>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="peirce-love-abduction.html">パースの創造的な愛と、アブダクション</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
