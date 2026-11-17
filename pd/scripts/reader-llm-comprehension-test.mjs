@@ -77,7 +77,7 @@ if (outIdx >= 0 && !OUT_ARG) {
   console.error('--out には出力先のディレクトリを渡す');
   process.exit(2);
 }
-const positional = argv.filter((a, i) => !a.startsWith('--') && i !== outIdx + 1);
+const positional = argv.filter((a, i) => !a.startsWith("--") && (outIdx < 0 || i !== outIdx + 1));
 const TARGET = (positional[0] || 'three-and-seven').replace(/\.html$/, '');
 if (!TARGETS[TARGET]) {
   if (/^[A-Za-z0-9_-]+$/.test(TARGET) && existsSync(resolve(ROOT, `reader/${TARGET}.html`))) {
