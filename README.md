@@ -38,6 +38,10 @@
 
 `bash scripts/serve.sh [port]`（既定 3001）。公開と同じ並びで配ります（`/` が pd、`/as/`・`/ks/`・`/cs/`、`/wiki/`）。`/wiki/` は `pd/quartz` で `npm ci` を済ませたときだけ作ります。
 
+## 作者の作業用
+
+https://pjdhiro-shelf.pages.dev/ （非公開・ログインが要る）
+
 ## AI に読ませるとき
 
 この repo は、人だけでなく AI が読むことも想定しています。
