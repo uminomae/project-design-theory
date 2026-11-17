@@ -219,3 +219,38 @@ html.ldd-dark body.reader-flow .reader-subtitle.ldd-subtitle-note {
     margin: 0 0 2rem;
     padding-left: calc(1rem + 3px);
 }
+
+/* ===== 読書欄のすりガラスを、画面の高さの一枚に移す（チカチカの直し・2026-11-18） =====
+   pjdhiro 2026-11-17（付箋帳）「チカチカとたまにmodalの上に背景が出てくる瞬間がある」。ごく稀で、再現できていない。
+   見立て：読書欄（.reader-wrap）は縦に 7 万 px ほど（幅 1024 の画面で測った）あり、その全体に
+   背景色と backdrop-filter が掛かっていた。毎フレーム描き直す膜の渦（WebGL）と GPU を取り合うなか、目次の跳びや
+   速いスクロールで、読書欄の新しく見えた所の描き込み（タイル）が間に合わないと、その一瞬だけ読書欄の地も字も無く、
+   後ろの背景がそのまま見える。
+   直し：地の色とぼかしを、読書欄の中で画面に貼り付く（sticky）画面の高さの一枚（::before）に移す。この一枚は小さく
+   動かないので、描き込みが遅れても地は残り、背景が素のまま出ない。見た目は前と同じ（縁・角・影は .reader-wrap のまま）。
+   - isolation で読書欄を重なりの単位にし、一枚を z-index: -1 で字の下に置く。
+   - overflow: clip と角の丸みで、一枚を読書欄の形に切る（始まりと終わりの角）。
+   - 一枚の上下の余白（-8px と 8px − 画面の高さ）は、読書欄の上の詰め（padding-top 8px）を打ち消して、字の位置を変えないため。 */
+html.ldd-dark body.reader-flow .reader-wrap {
+    --rw-pad: clamp(16px, 4vw, 36px);
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    isolation: isolate;
+    overflow: clip;
+}
+html.ldd-dark body.reader-flow .reader-wrap::before {
+    content: "";
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+    height: 100vh;
+    height: 100lvh;
+    margin: -8px calc(-1 * var(--rw-pad)) calc(8px - 100vh);
+    margin-bottom: calc(8px - 100lvh);
+    background: var(--glass-bg-medium);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    pointer-events: none;
+}
