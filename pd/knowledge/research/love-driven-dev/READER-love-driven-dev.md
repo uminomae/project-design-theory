@@ -132,7 +132,7 @@ Love駆動開発を説明するとき、pjdhiro は、次の問いに答える�
 
 <!--REF:経営学・起業研究-->
 
-出典：ラーマクリシュナの話：M（Mahendranath Gupta）の記録を Swami Nikhilananda が英訳した *The Gospel of Sri Ramakrishna*（英訳は 1942 年。マドラスの Sri Ramakrishna Math の版を、[Digital Library of India の写し](https://archive.org/details/in.ernet.dli.2015.462256)で本文照合済。1883 年 3 月 11 日の段 p.191）／Bohm (1951) *Quantum Theory*, Prentice-Hall（同じ頁組みの Dover の復刻を、[Google ブックスの出版社の試し読み](https://books.google.co.jp/books?id=GKVGDwAAQBAJ&pg=PA26)で本文照合済。p.26）／Shah (1970) *The Dermis Probe*（[イドリース・シャー財団が無料で公開している 2016 年の版](https://idriesshahfoundation.org/pdfviewer/the-dermis-probe/)で本文照合済。映画の注 p.xi、題の話 pp.1–3）。
+出典：ラーマクリシュナの話：M（Mahendranath Gupta）の記録を Swami Nikhilananda が英訳した *The Gospel of Sri Ramakrishna*（英訳は 1942 年。マドラスの Sri Ramakrishna Math の版を、[Digital Library of India の写し](https://archive.org/details/in.ernet.dli.2015.462256)で本文照合済。1883 年 3 月 11 日の段 p.191）／Bohm (1951) *Quantum Theory*, Prentice-Hall（Dover の復刻〔1951 年版をそのまま再刊したもの〕を、[Google ブックスの出版社の試し読み](https://books.google.co.jp/books?id=GKVGDwAAQBAJ&pg=PA26)で本文照合済。p.26）／Shah (1970) *The Dermis Probe*（[イドリース・シャー財団が無料で公開している 2016 年の版](https://idriesshahfoundation.org/pdfviewer/the-dermis-probe/)で本文照合済。映画の注 p.xi、題の話 pp.1–3）。
 
 </details>
 

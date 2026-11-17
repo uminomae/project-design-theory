@@ -1278,3 +1278,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（経営学の章の畳み「群盲象を評す」に、日本語版 Wikipedia の項へのリンクと、ラーマクリシュナ 1883・ボーム 1951・シャー 1970 とウィリアムスの映画がこの話を引いた例を、出典つきで足した）
 - pages: どちらも、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（群盲象を評すの畳みの出典の一句）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（ボームの出典の写しの説明を「同じ頁組み」から「1951 年版をそのまま再刊したもの」に直した）
+- pages: どちらも、本文を変えず checked を今の時刻にした。
