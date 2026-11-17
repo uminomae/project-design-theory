@@ -108,3 +108,4 @@
 ## 片付けたこと（repo の外）
 
 - 2026-11-08（#75）：`~/.claude/settings.json` の hooks 4 本（exfil-guard・credential-guard・backslash-bang-guard・instruction-lint。今までの project-design の場所を指していて、ツールを呼ぶたびに失敗していた）を外し、`~/.claude/skills/` の切れた symlink 5 本（agent-team-workflow・cli-instruction・codex-review・codex-worker-instruction・periodic-review）を消した。要るものは、この repo の `.claude/` に新しく書く。
+- 2026-11-18（#75 の 3）：アプリで使わないスキル（pptx・xlsx・docx・morning・import-memory・google-workspace・docs）とプラグイン（cowork-plugin-management）を切る案は、設定の場所が見つからない項目があり、pjdhiro「そのままで良い」で、切らずに閉じた。
