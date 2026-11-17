@@ -30,7 +30,8 @@
 | Knoblich, Ohlsson, Haider & Rhenius (1999) | ケルン大学の公開 PDF | 本文照合済（「創造とは」の心理学の記録 `cs/evidence/evidence-D14-psychology.md` の照合。読み直していない） | 第一部 |
 | Dewey (1910) *How We Think*. D.C. Heath | カリフォルニア大学図書館の本の走査（https://archive.org/details/howwethink00deweiala）の OCR の文字 | 本文照合済（pp.12・72・75） | 第二部 |
 | Peirce (1877) "The Fixation of Belief" | 『Chance, Love, and Logic』1923 の再録（https://archive.org/details/chanceloveandlog00peiruoft）の OCR の文字 | 本文照合済（再録 pp.15–16） | 第二部の詳しく |
-| Peirce (1878)・(1893)・(1903 の講義の SEP の引用)・(1908) | 「パースの創造的な愛と、アブダクション」の照合 | 本文照合済（そのページの照合。読み直していない） | 第二部・第三部 |
+| Peirce (1878)・(1893)・(1908) | 「パースの創造的な愛と、アブダクション」の照合 | 本文照合済（そのページの照合。読み直していない） | 第二部・第三部 |
+| Peirce 1903 の講義（SEP の補遺が Collected Papers 5.172・5.189 として引く箇所） | SEP の補遺 | 二次経由。補遺に「1903」「Harvard」「lecture」の語が無く、年と場を確かめられない。全集は Internet Archive では貸し出しか個人の写しだけ | 本文から外した（2026-11-18・Fable のレビュー・pjdhiro「本文から外す」）。三行の形と「新しい考えを持ち込むのはこれだけ」も一緒に外した |
 
 ## 探したが使わなかったもの
 
