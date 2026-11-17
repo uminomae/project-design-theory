@@ -113,20 +113,20 @@
 - **書誌**：Scheler, M. (1926). *Wesen und Formen der Sympathie. Der „Phänomenologie der Sympathiegefühle" dritte Auflage*. Bonn: Friedrich Cohen. 第 3 版の序文に「第 3 版は第 2 版の形のまま、変えずに出る」（"Die dritte Auflage dieses Buches erscheint unabgeändert, in der Form der zweiten Auflage."）。確かめ先：走査の扉と序文、Internet Archive の書誌（date 1926）。初版 1913 の書誌（Halle: Niemeyer）は確かめていない（下の「取れなかったもの」）。
 - **読んだ写し**：https://archive.org/details/wesen-und-formen-der-sympathie （個人が Internet Archive に上げた走査。collection は folkscanomy）。Scheler は 1928 年没で、著作権はドイツで 1999 年、米国では 1926 年の出版なので 2022 年に切れている。だから上げた人が個人でも、写しは権利の切れた本の走査として扱える、と Claude は読んだ（sources §5-8 の「パブリックドメイン」）。公開文に載せる前に、この読みでよいかを pjdhiro に確かめる。英訳（1954, Heath 訳 *The Nature of Sympathy*）は読んでいない。
 - **照合の状態**：本文照合済（第 3 版。OCR の文字で読んだ。上げた人は個人、本は著作権が切れている）。
-- **読んだ頁**：pp.8–17・p.24（第 A 部 II「Das Mitgefühl」の 1〜4 と、Einsfühlung の型 a〜h のうち g・h）。
+- **読んだ頁**：pp.9–18・p.25（第 A 部 II「Das Mitgefühl」の 1〜4 と、Einsfühlung の型 a〜h のうち g・h）。頁は、2026-11-18 に走査の頁の台帳と葉 29 の画像（下に「16」）で刷りの頁に直した。前は、どれも一つ小さく書いていた（SURVEY-03b §9 の指摘）。
 - **鍵の文**：
-  - "daß der Mitmachende die durch sein Mitmachen in ihm entstandenen Erlebnisse für seine ursprünglich eigenen Erlebnisse hält, d.h. sich der Kontagion, der er unterliegt, überhaupt nicht bewußt wird."（p.8）
+  - "daß der Mitmachende die durch sein Mitmachen in ihm entstandenen Erlebnisse für seine ursprünglich eigenen Erlebnisse hält, d.h. sich der Kontagion, der er unterliegt, überhaupt nicht bewußt wird."（p.9）
   - "1. Das unmittelbare Mitfühlen z. B. eines und desselben Leides „mit jemand". 2. Das „Mitgefühl an Etwas" … 3. Die bloße Gefühlsansteckung. 4. Die echte Einsfühlung."（p.9）
   - "Sie fühlen miteinander dasselbe Leid, „denselben" Schmerz; d. h. nicht A fühlt dies Leid und B fühlt es auch, und außerdem wissen sie noch, daß sie es fühlen. Nein es ist ein Mit-ein-ander-fühlen."（p.9。亡くなった子の前の両親）
-  - "Vielmehr ist es charakteristisch für die Ansteckung, daß sie lediglich zwischen Gefühlszuständen stattfindet; und daß sie ein Wissen um die fremde Freude überhaupt nicht voraussetzt."（p.11）
-  - "Der Prozeß der Ansteckung findet unwillkürlich statt. … daß er die Tendenz hat, auf seinen Ausgangspunkt wieder zurückzukehren, so daß die betreffenden Gefühle gleichsam lawinenartig wachsen."（p.12）
-  - "Prozesse der Ansteckung nicht nur „unwillkürlich", sondern auch in dem Sinne „unbewußt" (je ausgeprägter sie sind) verlaufen, daß wir durch sie in diese Zustände „geraten", ohne zu wissen, daß es hierdurch geschieht"（pp.13–14）
-  - "Nur ein gesteigerter Fall — sozusagen ein Grenzfall der Ansteckung — ist endlich die echte Einsfühlung (resp. Einssetzung) des eigenen mit einem fremden individuellen Ich."（p.15）
-  - "… sondern das fremde Ich geradezu (in allen seinen Grundhaltungen) mit dem eigenen Ich identifiziert wird. Auch hier ist die Identifikation ebenso unwillkürlich als unbewußt."（p.15）
-  - "Lipps hat diesen Fall zu unrecht schon in der ästhetischen Einfühlung sehen wollen."（p.15。続けて E. Stein の批判「私は芸人と „eins" でなく、„bei ihm" にいるだけ」を引く、p.16）
-  - "Ich lebe dann nicht in „mir", sondern ganz in „ihm" (dem Andern, wie durch ihn hindurch)."（p.16。heteropathisch な型）
-  - g) 互いに溶け合う型（"das „gegenseitige Verschmelzungsphänomen""）。愛に満ちた性の営みでは、二人とも個人の自我を別々には含まない一つの生の流れに沈む、と書く。h) 群衆でも、累積し反射し合う伝染で溶け合う（p.24）。
-- **要旨**：シェーラーは、似て見える四つを分ける。(1) 同じ悲しみを「一緒に」感じる Miteinanderfühlen（両親の例。相手の悲しみが対象にならない）、(2) 相手の喜び・悲しみに向かう Mitgefühl（相手の気持ちは相手のものとして与えられる）、(3) 感情の伝染 Gefühlsansteckung（気持ちの状態の間だけで起き、相手の気持ちを知ることを前提にしない。気づかないうちにその状態に「入って」しまい、あとで推論して初めて出どころが分かる。群衆で雪崩のように増える）、(4) 一体感 Einsfühlung（伝染の極限。気持ちの一部でなく、相手の自我そのものが自分の自我と、気づかずに、無意識に同一化される）。Einsfühlung には、相手を自分に吸い込む型（idiopathisch）と、自分がまるごと相手の中で生きる型（heteropathisch）、互いに溶け合う型がある。伝染と Mitgefühl は別もので、伝染は相手の悲しみを「自分の悲しみ」にしてしまうので、かえって相手への Mitleid を締め出す、と書く（p.15）。
+  - "Vielmehr ist es charakteristisch für die Ansteckung, daß sie lediglich zwischen Gefühlszuständen stattfindet; und daß sie ein Wissen um die fremde Freude überhaupt nicht voraussetzt."（p.12）
+  - "Der Prozeß der Ansteckung findet unwillkürlich statt. … daß er die Tendenz hat, auf seinen Ausgangspunkt wieder zurückzukehren, so daß die betreffenden Gefühle gleichsam lawinenartig wachsen."（p.13）
+  - "Prozesse der Ansteckung nicht nur „unwillkürlich", sondern auch in dem Sinne „unbewußt" (je ausgeprägter sie sind) verlaufen, daß wir durch sie in diese Zustände „geraten", ohne zu wissen, daß es hierdurch geschieht"（pp.14–15）
+  - "Nur ein gesteigerter Fall — sozusagen ein Grenzfall der Ansteckung — ist endlich die echte Einsfühlung (resp. Einssetzung) des eigenen mit einem fremden individuellen Ich."（p.16）
+  - "… sondern das fremde Ich geradezu (in allen seinen Grundhaltungen) mit dem eigenen Ich identifiziert wird. Auch hier ist die Identifikation ebenso unwillkürlich als unbewußt."（p.16）
+  - "Lipps hat diesen Fall zu unrecht schon in der ästhetischen Einfühlung sehen wollen."（p.16。続けて E. Stein の批判「私は芸人と „eins" でなく、„bei ihm" にいるだけ」を引く、p.17）
+  - "Ich lebe dann nicht in „mir", sondern ganz in „ihm" (dem Andern, wie durch ihn hindurch)."（p.17。heteropathisch な型）
+  - g) 互いに溶け合う型（"das „gegenseitige Verschmelzungsphänomen""）。愛に満ちた性の営みでは、二人とも個人の自我を別々には含まない一つの生の流れに沈む、と書く。h) 群衆でも、累積し反射し合う伝染で溶け合う（p.25）。
+- **要旨**：シェーラーは、似て見える四つを分ける。(1) 同じ悲しみを「一緒に」感じる Miteinanderfühlen（両親の例。相手の悲しみが対象にならない）、(2) 相手の喜び・悲しみに向かう Mitgefühl（相手の気持ちは相手のものとして与えられる）、(3) 感情の伝染 Gefühlsansteckung（気持ちの状態の間だけで起き、相手の気持ちを知ることを前提にしない。気づかないうちにその状態に「入って」しまい、あとで推論して初めて出どころが分かる。群衆で雪崩のように増える）、(4) 一体感 Einsfühlung（伝染の極限。気持ちの一部でなく、相手の自我そのものが自分の自我と、気づかずに、無意識に同一化される）。Einsfühlung には、相手を自分に吸い込む型（idiopathisch）と、自分がまるごと相手の中で生きる型（heteropathisch）、互いに溶け合う型がある。伝染と Mitgefühl は別もので、伝染は相手の悲しみを「自分の悲しみ」にしてしまうので、かえって相手への Mitleid を締め出す、と書く（p.16）。
 - **現象をどこまで指すか（Claude の読み）**：pjdhiro の現象（区別のないまま同じ状態になる・無意識がコピーされたよう）は、シェーラーの語では (3) Gefühlsansteckung と、その極限の (4) Einsfühlung にまっすぐ当たる。p.8 の「自分にもともとあった体験だと思い、伝染に気づかない」と、p.15 の「同一化は無意識」がいちばん近い言い方。同時にシェーラーは、これを「共感（Mitgefühl）」とは別ものとし、価値も別に置く。(1) の Miteinanderfühlen（同じ悲しみを一緒に感じる）は「同じ状態」だが、無意識のコピーとは違う、という区別も読み物に効く。
 
 ## 6. Freud (1912) "Ratschläge für den Arzt bei der psychoanalytischen Behandlung"・Freud (1915) "Das Unbewußte"
