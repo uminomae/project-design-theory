@@ -4,6 +4,8 @@
 
 #170 の調べ（共感と呼ばれてきた現象を、創造の五段階と、発達による自他の分かれ方で整理する）：整理は `SURVEY-03-five-stages-development.md`。原典ごとの照合は `SURVEY-03a-collective.md`（Le Bon・Durkheim・Barsade・Cikara ら）と `SURVEY-03b-development.md`（Scheler の一体感の型と発達の法則・Kegan・Cook-Greuter・Lamm ら・Bischof-Köhler・Rochat）。「共感とは」への置き方は判断のページ（URL は手元のセッションの記録）で答え待ち（本文はまだ書かない）。
 
+#170 の次の調べ（2026-11-18）：共感と、その近くの現象（投影・投影同一視・転移・逆転移・鏡転移）を、使う人の側で何が起きているかで見分け、自他の境の柔らかさを技能として書いた原典を照らした。`SURVEY-04-skill-distinction.md`。第四部のどこに置くかは判断のページで答え待ち。
+
 ## pjdhiro の発言（原文のまま）
 
 何への答えか：違和感帳の一件（i20261115085621qgr・2026-11-15）。Love駆動開発の本文で「共感」の語が出てくる所を見ての言葉。
@@ -50,8 +52,9 @@ wiki（`pd/wiki/`）は正本から作り直すので、一覧に入れていな
 ## 残したこと
 
 - 本文の書き換え（上の一覧の問い 1〜5）。判断のページの答えを待つ。
+- Heimann 1950 は、Internet Archive が走査した IJP 31 の巻で本文が読めた（SURVEY-04 §1-7）。読み物の本文に、読めたものとして書くのは第四部を書くとき。
 - 河合隼雄・ユング派の、治療者がクライアントと同じ体験をするようになる、という論の原典。
-- Heimann 1950（逆転移）・Batson 2009（共感と呼ばれる八つの現象）・Rogers 1959・de Waal 1996 の、載せてよい写し。
+- Batson 2009（共感と呼ばれる八つの現象）・Rogers 1959・de Waal 1996 の、載せてよい写し。
 - Scheler 1913 の初版（Internet Archive に無く、HathiTrust は確認画面）。
 - `pd/wiki/sources/Hatfield_1993_emotional-contagion.md` の確かめ先を、上げた人の分からない写しから、著者のサイトの写しの Wayback の記録に差し替えられる（SURVEY-02 §1。全文が一字も違わないことを確かめた）。
 - #170：Hoffman の共感の発達の段の原典（有料・貸出だけで読めていない）、Kegan 1982 の権利の確かな写し、Collins 2004。
