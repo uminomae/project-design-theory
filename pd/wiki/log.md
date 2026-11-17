@@ -1273,3 +1273,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（欠けの章で、消防の隊長の例を地図と高さのたとえに結び、報告書の「形からのずれ」の読みを出典の畳みへ下げた。信号の章で問いのカードの「対象」と「包容」の出どころを渡し、時間の尺度の断りを畳みへ寄せた。価値の章で五つの段を章の頭の曲でたどった。生存と信頼の章で、見えない質量をたとえと分かる形にした）
 - pages: どちらも、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（群盲象を評すの畳み・付箋帳 i20261117111122egx）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（経営学の章の畳み「群盲象を評す」に、日本語版 Wikipedia の項へのリンクと、ラーマクリシュナ 1883・ボーム 1951・シャー 1970 とウィリアムスの映画がこの話を引いた例を、出典つきで足した）
+- pages: どちらも、wiki が引く定義・見方・引用は変わらないので本文を変えず、checked を今の時刻にした。
