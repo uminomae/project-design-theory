@@ -30,6 +30,7 @@
 | Knoblich, Ohlsson, Haider & Rhenius (1999) | ケルン大学の公開 PDF | 本文照合済（「創造とは」の心理学の記録 `cs/evidence/evidence-D14-psychology.md` の照合。読み直していない） | 第一部 |
 | Dewey (1910) *How We Think*. D.C. Heath | カリフォルニア大学図書館の本の走査（https://archive.org/details/howwethink00deweiala）の OCR の文字 | 本文照合済（pp.12・72・75） | 第二部 |
 | Peirce (1877) "The Fixation of Belief" | 『Chance, Love, and Logic』1923 の再録（https://archive.org/details/chanceloveandlog00peiruoft）の OCR の文字 | 本文照合済（再録 pp.15–16） | 第二部の詳しく |
+| Riso with Hudson (1996) *Personality Types: Using the Enneagram for Self-Discovery*, revised edition. Houghton Mifflin | pjdhiro の手元の電子書籍（repo の外） | 本文照合済（第 6 章 Type Four pp.134–172。調べの記録 `cs/evidence/themes/TH-003-creative-drivers/SURVEY-riso-hudson-type-four-20261118.md`。読み物で使った頁 pp.135・144–145・149・156–157） | 第一部（取り組んでいないあいだが実らない形）・第三部の駆動源の章の、表の下の心の側の例（自分を見つけたい思い・p.135）。2026-11-18・pjdhiro「タイプ４の創造の仕方は　創造思考、Love駆動開発で記述していない漏れがあるのでは？追記できることがあると思うんだ。」に、Claude の四つの候補から A・B を選んで |
 | Peirce (1878)・(1893)・(1908) | 「パースの創造的な愛と、アブダクション」の照合 | 本文照合済（そのページの照合。読み直していない） | 第二部・第三部 |
 | Peirce 1903 の講義（SEP の補遺が Collected Papers 5.172・5.189 として引く箇所） | SEP の補遺 | 二次経由。補遺に「1903」「Harvard」「lecture」の語が無く、年と場を確かめられない。全集は Internet Archive では貸し出しか個人の写しだけ | 本文から外した（2026-11-18・Fable のレビュー・pjdhiro「本文から外す」）。三行の形と「新しい考えを持ち込むのはこれだけ」も一緒に外した |
 
