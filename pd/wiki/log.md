@@ -1283,3 +1283,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（ボームの出典の写しの説明を「同じ頁組み」から「1951 年版をそのまま再刊したもの」に直した）
 - pages: どちらも、本文を変えず checked を今の時刻にした。
+
+## [2026-11-17] check | Love 駆動開発・プロジェクトデザイン（第四部の推しやすさの直し・#155）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第四部の章の頭の例と結びを直した。部の頭の案内の「概説とリンクだけ」を外した）
+- pages: `concepts/Love 駆動開発` は前提の五つの章の「概説とリンクの形で」を「論の概説の形で」に直した。どちらも checked を今の時刻にした。
