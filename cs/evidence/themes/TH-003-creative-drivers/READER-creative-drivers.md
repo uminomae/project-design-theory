@@ -114,7 +114,7 @@ page:
 | 疑いの苛立ち | パース 1877：疑いは落ち着かない状態で、その苛立ちが、信念へ至ろうとするもがき（探究）を起こす |
 |---|---|
 | 困りごと | デューイ 1910：考えることの起こりは、困ること・迷うこと・疑うこと。考えることは、ひとりでに燃え出すものではない |
-| 驚き | パース 1903：新しい考えを持ち込む推論（アブダクション）は、驚くような事実から始まる |
+| 驚き | パース 1908：探究は、不思議な現象の観察から起こる |
 | 目的の無い遊び | パース 1908：目的を持たない心の遊び（ミュージング）の中から、探究の第一段階が始まる |
 | 美の感覚 | ポアンカレ 1908：無意識が作る組み合わせのうち、美の感覚に触れるものだけが意識に上がる |
 | 考えへの引き寄せ | パース 1893：心がその考えを持つ前から、考えそのものが心を引き寄せる。パースは、これを愛による発展と呼んだ |
@@ -133,7 +133,6 @@ page:
 
 - Peirce (1877) "The Fixation of Belief"（[『Chance, Love, and Logic』の再録（Internet Archive）](https://archive.org/details/chanceloveandlog00peiruoft)。pp.15–16）
 - Dewey (1910) *How We Think*（[カリフォルニア大学図書館の本の走査（Internet Archive）](https://archive.org/details/howwethink00deweiala)。p.12）
-- Peirce (1903) ハーバードでのプラグマティズムの講義（[スタンフォード哲学百科事典の補遺「Peirce on Abduction」](https://plato.stanford.edu/entries/abduction/peirce.html)が原文で引く箇所。Collected Papers 5.189）
 - Peirce (1908) "A Neglected Argument for the Reality of God"（[The Hibbert Journal 第 7 巻第 1 号の原誌（Internet Archive）](https://archive.org/details/sim_the-hibbert-journal-a-quarterly-review-of-religion_1908-1909_7_1)。pp.100–104）
 - Poincaré (1908) *Science et méthode*。英訳 Poincaré (1914) *Science and Method*, F. Maitland 訳（[コーネル大学図書館の本の走査（Internet Archive）](https://archive.org/details/cu31924012248179)。第一巻第三章「Mathematical Discovery」pp.46–63。美の感覚の鍵の文は p.60）
 - Peirce (1893) "Evolutionary Love", *The Monist* 3(2):176–200（[The Monist の原誌（Internet Archive）](https://archive.org/details/sim_monist_1893-01_3_2)。頁は再録の[『Chance, Love, and Logic』](https://archive.org/details/chanceloveandlog00peiruoft)の pp.287–288）
