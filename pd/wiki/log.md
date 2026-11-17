@@ -1313,3 +1313,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（信仰の章のフロイトの段に否認の名と pjdhiro の見方を足した）
 - pages: どちらも、本文を変えず checked を今の時刻にした（前の三回の checked に先の時刻を書いていたのも、ここで今の時刻に直した）。
+
+## [2026-11-17] update | Love 駆動開発（パースの章に pjdhiro の問いを足した・#155）
+- scope: 1 ページ直し（`concepts/Love 駆動開発`）、1 ページ確かめ（`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（パースの章に「パースを鏡として使えないだろうか？」の問いのカードを足し、工事中の一行をその問いに向けた。どういう面の章の頭の例を『から騒ぎ』の修道士の台詞に替えた。何でないかの章の「正反対」の一文を外した）
+- pages: `concepts/Love 駆動開発` のパースの段に同じ問いと工事中の一文を足した。`プロジェクトデザイン` は変わらない。
