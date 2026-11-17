@@ -1639,7 +1639,7 @@ pjdhiro は、重力、海と波と渦、粒でできた場、臍の緒、ワー
 
 読んだことのない人の論が、自分の考えてきたこととよく似ていたら、その似かたは、どこから来るのでしょうか。
 
-1881 年の夏、哲学者のニーチェは、スイスの山の村シルス・マリアから、友人のオーヴァーベックに葉書を書きました。すっかり驚き、すっかり喜んでいる、自分には先駆者がいた、と書き出しています。スピノザのことはほとんど知らなかったのに、いま無性に読みたくなったのは「本能の振る舞い」だった、と続けます。読んでみると、全体の傾きが自分と同じだった、とニーチェは書きます。認識を最も強い情動にする、という傾きです。スピノザが、意志の自由・目的・道徳的な世界の秩序・利己でないもの・悪を認めないという五つの要点にも、自分を見つけた、と書いています。違いはとても大きいけれど、それは時代と文化と学問の違いによる、とも書いています。葉書の終わりには、高い山にいるように息が苦しかった孤独が、少なくとも今は二人でいることになった、とあります。
+1887 年の冬、哲学者のニーチェは、南フランスのニースから、友人のオーヴァーベックに手紙を書きました。ドストエフスキーのことは、数週間前までその名前さえ知らなかった、と書いています。本屋でたまたま手に取ったのが、フランス語に訳されたばかりの『地下の精神（L'esprit souterrain）』でした。21 歳でショーペンハウアーに、35 歳でスタンダールに出会ったときも、同じようにたまたまだった、と書き添えています。読むとすぐに、親族であることの本能が語った、とニーチェは書きます。何と呼べばよいのか、と自分で括弧に入れています。喜びはとても大きかった、とも書いています。本に入っていた二つの短い小説のうち、二つめを、心理学の天才的な一撃で、「汝自身を知れ」を自分で嘲るようなもの、と評しています。
 
 <a id="ldd-agapasm"></a>哲学者のパースは、1893 年の論文「進化的な愛（Evolutionary Love）」で、進化の様式を三つに分けました。偶然の変異による進化、機械的な必然による進化、そして、創造的な愛による進化（agapasm・アガパズム）です。パースは前の二つを、アガパズムの退化した形と位置づけ、愛の運動は円く、同じ一つの衝動で、作ったものを独立へ押し出し、調和へ引き寄せる、と書いています。
 
@@ -1665,7 +1665,7 @@ pjdhiro は、重力、海と波と渦、粒でできた場、臍の緒、ワー
 
 <details><summary>出典</summary>
 
-ニーチェの葉書：Nietzsche an Franz Overbeck, Postkarte, Sils-Maria, 30. Juli 1881（Nietzsche Source の [Digitale Kritische Gesamtausgabe, BVN-1881,135](http://www.nietzschesource.org/#eKGWB/BVN-1881,135)。本文照合済）。先駆者がいた（Ich habe einen Vorgänger）・スピノザをほとんど知らなかった・本能の振る舞い（Instinkthandlung）・全体の傾き（Gesamttendenz）は認識を最も強い情動にすること・五つの要点・違いは時代と文化と学問による・孤独が二人であること（Zweisamkeit）になった、の箇所を照らしました。日本語は Claude の訳です。
+ニーチェの手紙：Nietzsche an Franz Overbeck, Nizza, 23. Februar 1887（Nietzsche Source の [Digitale Kritische Gesamtausgabe, BVN-1887,804](http://www.nietzschesource.org/#eKGWB/BVN-1887,804)。本文照合済）。数週間前まで名前も知らなかった・本屋での偶然の一手・21 歳のショーペンハウアーと 35 歳のスタンダール・親族であることの本能（Der Instinkt der Verwandtschaft (oder wie soll ich’s nennen?) sprach sofort）・二つの短い小説・心理学の天才的な一撃（ein Geniestreich der Psychologie）・「汝自身を知れ」の自嘲（Selbstverhöhnung des γνῶθι σαυτόν）、の箇所を照らしました。日本語は Claude の訳です。
 
 C. S. Peirce, "Evolutionary Love", *The Monist* 3(2), 1893, pp.176–200。進化の三つの様式（tychasm・anancasm・agapasm）と、前の二つを agapasm の退化した形とする文、愛の運動は円いという文を、[The Monist 第 3 巻第 2 号の原誌（Internet Archive）](https://archive.org/details/sim_monist_1893-01_3_2)と、再録の [Cohen 編『Chance, Love, and Logic』（1923・パブリックドメイン）](https://archive.org/details/chanceloveandlog00peiruoft)で本文と照らしました。直接の努力・持つ前の引き寄せ・憎しみを反対物に持たない愛の箇所と頁は、独立ページ「[パースの創造的な愛と、アブダクション](peirce-love-abduction.html#pa-love)」に置いています。
 
