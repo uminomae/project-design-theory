@@ -53,7 +53,7 @@ export function initPrologueTimeline() {
         // 「現在の定義を読む」は、押すとモーダルで定義のページを開くボタン（付箋帳 i2026111711421795p）
         _linkEl = document.createElement('button');
         _linkEl.type = 'button';
-        _linkEl.className = 'reports-slide-btn prologue-definition-btn';
+        _linkEl.className = 'btn btn-lg btn-kesson-action btn-kesson-action--primary prologue-definition-btn';
         _linkEl.setAttribute('aria-haspopup', 'dialog');
         _linkEl.addEventListener('click', () => openDefinitionModal(_linkEl));
 

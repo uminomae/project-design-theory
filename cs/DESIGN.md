@@ -61,6 +61,21 @@ Letter spacing scale:
 - bg: `rgba(accent, 0.1)` → hover で card-bg に
 - text: sub-text 50% alpha → hover で heading 70%
 
+### Button（ページの中のボタンは、この一つの形にそろえる。2026-11-17）
+見本は `dev-components.html` の「Action Surface」。ボタンの形・字体がページの中でばらばら（明朝・ゴシックの太字・Georgia・等幅、角 0〜999px）になっていたのを、ここに戻した。
+
+| 種類 | class | 使う所 |
+|---|---|---|
+| 主のボタン | `btn btn-lg btn-kesson-action btn-kesson-action--primary` | その欄で一番に押してほしいもの（五段階の欄の「現在の定義を読む」、REPORTS の「30領域調査報告」） |
+| 従のボタン | `btn btn-sm btn-kesson-action` | 補助の操作（↑ surface、記録のモーダルの PDF を開く） |
+
+- 字体：`--ds-font-serif-ui`（Georgia＋Noto Serif JP）・普通の太さ・字間 `--ds-letter-ui-wide`。ゴシック（`--cs-font-sans-ui`）や太字のボタンを新しく作らない
+- 角：`--ds-radius-lg`（4px）。大きさが違っても角は同じ。丸い楕円（999px）のボタンを本文の中に置かない
+- 色：`--cs-action-*`。主のボタンだけ、字を highlight 88%・枠を accent 30% に濃くする（`.btn-kesson-action--primary`）
+- 大きいボタンの字は 1rem（Bootstrap の btn-lg の 1.25rem は使わない）
+- `btn-outline-light`・`.reports-slide-btn` を新しいボタンに流用しない（`.reports-slide-btn` は今どこからも使っていない。CSS だけが reports.css に残る）
+- 決まりの外に置くもの：上の帯の部品（文字の大きさ・English・メニュー）、背景の切り替え（忍・意）、`i` の丸いボタン、モーダルの閉じる ✕（about と同じ、枠の無い ✕）
+
 ## 5. Layout Principles
 - Spacing baseline: 1rem / 1.5rem (`--ds-section-content-padding: 1rem 1.5rem 0`)
 - Section grid margin top: 1.5rem

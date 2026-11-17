@@ -11,9 +11,29 @@
   --bs-btn-active-bg: var(--cs-action-bg-hover);
   --bs-btn-active-border-color: rgba(var(--color-accent), 0.36);
   --bs-btn-focus-shadow-rgb: var(--color-accent);
+  --bs-btn-border-radius: var(--ds-radius-lg);
+  --bs-btn-font-family: var(--ds-font-serif-ui);
   font-family: var(--ds-font-serif-ui);
+  font-weight: 400;
   letter-spacing: var(--ds-letter-ui-wide);
   text-transform: uppercase;
+}
+
+/* 大きいボタンも字は 1rem に抑える（Bootstrap の btn-lg の 1.25rem は、欄の本文より大きくなりすぎる） */
+.btn-kesson-action.btn-lg {
+  --bs-btn-font-size: 1rem;
+  --bs-btn-padding-y: 0.6rem;
+  --bs-btn-padding-x: 1.6rem;
+}
+
+/* 主のボタン（その欄で一番に押してほしいもの）。形・字は同じで、字と枠を少し濃くする。
+   --cs-action-text（sub-text の 50%）のままでは、五段階の欄の「現在の定義を読む」が目立たなかった（2026-11-17） */
+.btn-kesson-action--primary {
+  --bs-btn-color: rgba(var(--color-highlight), 0.88);
+  --bs-btn-border-color: rgba(var(--color-accent), 0.3);
+  --bs-btn-hover-color: rgba(var(--color-heading), 0.95);
+  --bs-btn-hover-border-color: rgba(var(--color-accent), 0.5);
+  --bs-btn-active-color: rgba(var(--color-heading), 0.95);
 }
 
 #graphic-switcher {
@@ -215,7 +235,6 @@ html[lang="en"] #taglines {
 }
 
 #scroll-hint span,
-#scroll-hint-top span,
 #left-kesson-link span {
   display: block;
   font-size: var(--ds-font-size-ui-xs, 0.80rem);
@@ -230,7 +249,6 @@ html[lang="en"] #taglines {
 }
 
 #scroll-hint .arrow,
-#scroll-hint-top .arrow,
 #left-kesson-link .arrow {
   font-size: var(--ds-font-size-ui-arrow, clamp(0.7rem, 3.5vmin, 1.2rem));
   color: var(--ds-ui-arrow-color);
@@ -261,36 +279,6 @@ html[lang="en"] #taglines {
 #left-kesson-link:focus-visible {
   outline: 2px solid var(--ds-focus-ring-soft);
   outline-offset: 3px;
-}
-
-#scroll-hint-top {
-  position: fixed;
-  top: calc(var(--cs-topbar-actual-height, var(--cs-topbar-height)) + 6px);
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: var(--cs-z-ui-mid-2);
-  text-align: center;
-  cursor: pointer;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 0.6s ease, visibility 0.6s ease;
-}
-
-#scroll-hint-top.visible {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  animation: scrollHintTopPulse 3s ease-in-out infinite;
-}
-
-#scroll-hint-top span {
-  margin-top: 4px;
-}
-
-#scroll-hint-top:hover span,
-#scroll-hint-top:hover .arrow {
-  color: var(--ds-ui-label-hover-color);
 }
 
 #control-guide {
@@ -609,11 +597,6 @@ html[lang="en"] #taglines {
 @keyframes scrollHintPulse {
   0%, 100% { transform: translateX(-50%) translateY(0); }
   50% { transform: translateX(-50%) translateY(4px); }
-}
-
-@keyframes scrollHintTopPulse {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(-4px); }
 }
 
 @media (max-height: 500px) and (orientation: landscape) {
