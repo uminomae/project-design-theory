@@ -13,6 +13,8 @@ let newTabEl = null;
 let frameEl = null;
 let returnFocusEl = null;
 let loadedHref = '';
+// 閉じる途中の片付け（transitionend と setTimeout）。開き直したら取り消す
+let pendingFinish = null;
 
 function strings(lang = getCurrentLang()) {
     const l = normalizeLang(lang);
@@ -144,6 +146,9 @@ export function isDefinitionModalOpen() {
 
 export function openDefinitionModal(triggerEl = null) {
     ensureOverlay();
+    // 閉じる途中（0.45 秒以内）に開き直すと、閉じる片付けがあとから走り、開いたモーダルを消して
+    // 背景がむき出しになっていた（付箋帳 i20261117133611aiq「modalの上に背景が出てくる瞬間がある」）。先に取り消す
+    cancelPendingFinish();
     returnFocusEl = triggerEl || document.activeElement;
     applyStrings(getCurrentLang());
 
@@ -155,13 +160,29 @@ export function openDefinitionModal(triggerEl = null) {
     closeBtnEl.focus();
 }
 
+function cancelPendingFinish() {
+    if (!pendingFinish) return;
+    pendingFinish.cancel();
+    pendingFinish = null;
+}
+
 export function closeDefinitionModal() {
     if (!isDefinitionModalOpen()) return;
+    cancelPendingFinish();
     overlayEl.classList.remove('open');
-    let done = false;
+    let timer = 0;
+    const onEnd = (event) => {
+        // 幕の色（0.35 秒）や中のボタンの色の transitionend で早く消さない。枠の透明度が終わるのを待つ
+        if (event.target !== glassEl || event.propertyName !== 'opacity') return;
+        finish();
+    };
+    const cancel = () => {
+        clearTimeout(timer);
+        overlayEl.removeEventListener('transitionend', onEnd);
+    };
     const finish = () => {
-        if (done) return;
-        done = true;
+        cancel();
+        pendingFinish = null;
         overlayEl.classList.remove('visible');
         document.body.style.overflow = '';
         if (returnFocusEl && typeof returnFocusEl.focus === 'function') {
@@ -171,10 +192,11 @@ export function closeDefinitionModal() {
     };
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         finish();
-    } else {
-        overlayEl.addEventListener('transitionend', finish, { once: true });
-        setTimeout(finish, 450);
+        return;
     }
+    pendingFinish = { cancel };
+    overlayEl.addEventListener('transitionend', onEnd);
+    timer = setTimeout(finish, 450);
 }
 
 export function setDefinitionModalLanguage(lang) {
