@@ -28,7 +28,7 @@
 | Poincaré (1908) *Science et méthode*。英訳 (1914) *Science and Method*, F. Maitland 訳 | コーネル大学図書館の本の走査（https://archive.org/details/cu31924012248179）の OCR の文字 | 本文照合済（訳。第一巻第三章 pp.46–63。鍵の文 pp.51・53・55・56・60） | 第一部 |
 | Wallas (1926) *The Art of Thought*. Jonathan Cape | クレアモント神学校の図書館が上げた写し（https://archive.org/details/theartofthought）の OCR の文字 | 本文照合済（第四章 pp.80–81）。「創造とは」の心理学の記録では二次資料のみだった | 第一部 |
 | Knoblich, Ohlsson, Haider & Rhenius (1999) | ケルン大学の公開 PDF | 本文照合済（「創造とは」の心理学の記録 `cs/evidence/evidence-D14-psychology.md` の照合。読み直していない） | 第一部 |
-| Dewey (1910) *How We Think*. D.C. Heath | カリフォルニア大学図書館の本の走査（https://archive.org/details/howwethink00deweiala）の OCR の文字 | 本文照合済（pp.12・69–70・72・75） | 第二部 |
+| Dewey (1910) *How We Think*. D.C. Heath | カリフォルニア大学図書館の本の走査（https://archive.org/details/howwethink00deweiala）の OCR の文字 | 本文照合済（pp.12・72・75） | 第二部 |
 | Peirce (1877) "The Fixation of Belief" | 『Chance, Love, and Logic』1923 の再録（https://archive.org/details/chanceloveandlog00peiruoft）の OCR の文字 | 本文照合済（再録 pp.15–16） | 第二部の詳しく |
 | Peirce (1878)・(1893)・(1903 の講義の SEP の引用)・(1908) | 「パースの創造的な愛と、アブダクション」の照合 | 本文照合済（そのページの照合。読み直していない） | 第二部・第三部 |
 
