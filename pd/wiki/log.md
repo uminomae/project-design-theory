@@ -1353,3 +1353,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（計算機科学・哲学・禅の章の題を「〜の視点で見る」にした）
 - pages: どちらも章の題を引いていないので、本文はそのまま。
+
+## [2026-11-18] check | Love 駆動開発（自己紹介のカードを本人の書き直しで差し替えた）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（構想の段の自己紹介のカードを本人の書き直しに差し替え、答えに一文足した）
+- pages: どちらもこのカードを引いていないので、本文はそのまま。
