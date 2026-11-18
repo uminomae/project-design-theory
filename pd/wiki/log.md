@@ -1379,3 +1379,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（「経営学の考え方は、それぞれ何かを駆動源と見てきました」を、この読み物の視点で並べた、に。pjdhiro の見方のカードの「目的駆動開発・意欲駆動開発・構想駆動開発」を、目標管理・動機づけ・ビジョン経営の言い方に）
 - pages: どちらも直した文を引いていないので、本文はそのまま。checked を今の時刻にした。
+
+## [2026-11-18] check | Love駆動開発の「創造とは」の段の一文を外し、物理の章の頭のサウナの段を書き直した（付箋帳 i20261118054634lu8・i20261118055001tf4）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（「創造とは」のトップページの案内の一文を削除。物理の章の頭を、問い→熱さのたとえ→たとえで言いたい二つ、の順に）
+- pages: どちらも直した文を引いていないので、本文はそのまま。checked を今の時刻にした。
