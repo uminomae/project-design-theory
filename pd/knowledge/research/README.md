@@ -26,7 +26,7 @@
 | `peirce-love-abduction/` | 「パースの創造的な愛と、アブダクション」。正本 `READER-peirce-love-abduction.md`、pjdhiro の発言の記録・読んだ原典と照合の状態・残したことは `README.md` |
 | `creative-thinking/` | 「創造的思考とは」。正本 `READER-creative-thinking.md`、pjdhiro の発言の記録・読んだ原典と照合の状態・残したことは `README.md` |
 | `beauty/` | 「美とは」。探索して追記していくページ。正本 `READER-beauty.md`、pjdhiro の発言の記録・読んだ原典と照合の状態・追記の決まり・残したことは `README.md` |
-| `nondual/` | 「非二元とは」（最初の題は「見分けられるのに、切り離せないもの」）。非二元さを表したものを分野ごとに集め、随時追記していくページ。正本 `READER-nondual.md`、pjdhiro の発言の記録・読んだ原典と照合の状態・追記の決まり・載せなかった候補は `README.md` |
+| `nondual/` | 「不二（非二元）とは」（最初の題は「見分けられるのに、切り離せないもの」、次に「非二元とは」「不二・非二元とは」）。非二元さを表したものを分野ごとに集め、随時追記していくページ。正本 `READER-nondual.md`、pjdhiro の発言の記録・読んだ原典と照合の状態・追記の決まり・載せなかった候補は `README.md` |
 | `decision-making/` | 「意思決定とは」（#176）。正本 `READER-decision-making.md`、pjdhiro の発言の記録・読んだ原典と照合の状態・載せなかったもの・残したことは `README.md`、原典ごとの照合は `SURVEY-01`〜`06` |
 | `via-vulnerability/` | 「脆弱性から、全体を知る」。正本 `READER-via-vulnerability.md`、一般化の下書き `DRAFT-knowing-through-vulnerability-20261117.md`。照合の記録は `love-driven-dev/SURVEY-self-via-vulnerability-20261117.md` |
 | `empathy/` | 「共感とは」（#151）。正本 `READER-empathy.md`、pjdhiro の発言の記録・読んだ原典と照合の状態・本文の「共感」の使い分けの一覧は `README.md`、原典ごとの照合は `SURVEY-01-classics.md`・`SURVEY-02-psychology.md` |
