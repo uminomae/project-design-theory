@@ -165,6 +165,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/decision-making/READER-decision-making.md",
+        ROOT / "scripts/reader-decision-making-template.html",
+        ROOT / "reader/decision-making.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/empathy/READER-empathy.md",
         ROOT / "scripts/reader-empathy-template.html",
         ROOT / "reader/empathy.html",
