@@ -6,6 +6,14 @@
 
 非二元は、すべては一つで、区別は無い、という意味だとよく受け取られます。このページでは、非二元を、二つが見分けられるのに、切り離せないこと、と置きます。区別は消えません。区別が残ったまま、片方だけを取り出すことができない、という形です。
 
+「非二元」は、英語の non-dual（non-duality）にあたる語です。英語のサンスクリット辞書は、この訳語を、仏教の advaya と、インドの哲学の advaita の二つの語に当てています。どちらも「二つ」に打ち消しを付けた、「二つでない」という形の語です。advaya は、漢訳の仏典では「不二（ふに）」と訳されました。このページで見る『維摩経』の「入不二法門」は、サンスクリットの写本では「advaya の法門に入る」と書かれています。同じ辞書は、二つの語に「一つであること・同じであること」の意味も載せています。advaita の古い用例のウパニシャッドの一文も、見る者が、ただ一つで二つ目の無いものになる、と読める文です。非二元が「すべては一つ」と受け取られやすいのは、語がその意味も運んできたからだと読めます（この読みは Claude のものです）。このページが扱うのは、そのうちの、二つが見分けられるのに切り離せない、という形の方です。
+
+<details><summary>出典：語の由来</summary>
+
+出典：Monier-Williams (1899) *A Sanskrit-English Dictionary*. Oxford: Clarendon Press, p.19（[ケルン大学のサンスクリット辞書の電子版](https://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2020/web/webtc/indexcaller.php)。本文照合済）。a-dvaya は "not two, without a second, only, unique" と "non-duality, unity … identity … the ultimate truth"、a-dvaita は "destitute of duality, having no duplicate … sole, unique" と "non-duality … identity of Brahmā or of the Paramātman … with the Jīvātman … the ultimate truth"。『維摩経』のサンスクリットは、Study Group on Buddhist Sanskrit Literature (2006) *Vimalakīrtinirdeśa: A Sanskrit Edition Based upon the Manuscript Newly Found at the Potala Palace*. Tokyo: Taisho University（[GRETIL の電子テキスト](https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_vimalakIrtinirdeza.txt)。本文照合済）の 8.1 "katamo bodhisatvānām advayadharmamukhapraveśaḥ"。菩薩たちは "… iti dvayam etat"（これは二つ）と名指してから "ayam advayapraveśaḥ" と述べます（8.2 以下）。ウパニシャッドは『ブリハッド・アーラニヤカ・ウパニシャッド』4.3.32 "salila eko draṣṭādvaito bhavati"（[GRETIL の電子テキスト](https://gretil.sub.uni-goettingen.de/gretil/corpustei/transformations/plaintext/sa_bRhadAraNyakopaniSadkANva-recension-comm.txt)。シャンカラの注つきの本。本文照合済）。訳は Claude。英語の non-dual がいつ・誰の訳で広まったか、日本語の「非二元」がいつから使われたかは、確かめていません。
+
+</details>
+
 このページは、Claude（AI）が原典を読んで書いた要約で、文責は Claude にあります。pjdhiro はこのサイトの書き手で、カードで引く pjdhiro の言葉は、Claude の要約や、引いた原典の段を読んでの見方です。
 
 このページは、pjdhiro の一つの見方から始まりました。エニアグラム（人の性格を九つの型で見る考え方）の研究者リソとハドソンは、芸術や美に向かう型の人が霊感を受ける瞬間を、いちばん自分であり、いちばん自分から自由である、と書いています（[創造の駆動源は何？](https://uminomae.github.io/project-design-theory/cs/reader/creative-drivers.html#cd-self-search)）。この記述を読んで、pjdhiro は次のように見ています。
