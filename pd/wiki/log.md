@@ -1384,3 +1384,13 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（「創造とは」のトップページの案内の一文を削除。物理の章の頭を、問い→熱さのたとえ→たとえで言いたい二つ、の順に）
 - pages: どちらも直した文を引いていないので、本文はそのまま。checked を今の時刻にした。
+
+## [2026-11-18] check | Love駆動開発の第二部で、物理の説明を Love の理解に戻す直し（付箋帳 i202611180551290ze・Fable の読み役三人）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（量子論への持ち替えのコラムに駆動源への戻りを足し科学史を入れ子の畳みへ、物理の章の本文に四つの探究の重なりを出し、量子生物学の研究の並びを入れ子の畳みへ、ほか戻りの一文）
+- pages: どちらも直した文を引いていないので、本文はそのまま。checked を今の時刻にした。
+
+## [2026-11-18] check | Love駆動開発の第二部の頭に、部の案内（Love を世界を動かす力とした定義と、物質か否かによらず似た創造の形から、物質の側から Love を考える）を足した（付箋帳 i202611180551290ze）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第二部の頭の部の案内）
+- pages: どちらも部の案内の文を引いていないので、本文はそのまま。checked を今の時刻にした。

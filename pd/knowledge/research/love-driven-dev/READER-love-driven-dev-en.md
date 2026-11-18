@@ -112,7 +112,7 @@ So far, the ways of thinking in management studies have been lined up from this 
 
 <a id="ldd-what"></a><strong>pjdhiro's view (translated by Claude):</strong>Until now, the concepts of a project have been grouped in ways like moving people by goals (management by objectives), by their motivation (motivation theory), or by a vision (vision-led management). I think I went one step further and looked for why those arise.
 
-<a id="ldd-answer"></a>The driving source of Love-Driven Development is what I want to call Love. On this page, Love is not limited to romantic love, and for now it is placed in two aspects: the aspect of a force by which people and things feel drawn, and the aspect of a property of the field that people are in. pjdhiro sees both as right, and each as one aspect, like what each of the men who touched the elephant in the poem of the previous chapter said. The analogy is the relation between gravity and spacetime. Gravity is felt as a force that draws things, and in general relativity it is also written as a property of the field, the curvature of spacetime (the chapter "[Isn't Love like gravity?](#ldd-well)"). The driving sources in [the management studies table](#ldd-management) were things of a size people can see with their eyes and talk about in words, like markets, goals, motivation and the entrepreneur's mind. What I want to call Love is what moves those from behind them. Love-Driven Development is the name pjdhiro wants to give, all together, to what is overlooked on the back side of the phenomenon called a project: this driving source, and the structures and processes it gives rise to.
+<a id="ldd-answer"></a>The driving source of Love-Driven Development is what I want to call Love. On this page, Love is not limited to romantic love, and for now it is placed in two aspects: the aspect of a force by which people and things feel drawn, and the aspect of a property of the field that people are in. pjdhiro sees both as right, and each as one aspect, like what each of the men who touched the elephant in the poem of the previous chapter said. The analogy is the relation between gravity and spacetime. Gravity is felt as a force that draws things, and in general relativity it is also written as a property of the field, the curvature of spacetime (the chapter "[Isn't Love like gravity?](#isnt-love-like-gravity)"). The driving sources in [the management studies table](#ldd-management) were things of a size people can see with their eyes and talk about in words, like markets, goals, motivation and the entrepreneur's mind. What I want to call Love is what moves those from behind them. Love-Driven Development is the name pjdhiro wants to give, all together, to what is overlooked on the back side of the phenomenon called a project: this driving source, and the structures and processes it gives rise to.
 
 <details><summary>More — what moves behind, before a vision is put into words</summary>
 
@@ -217,11 +217,25 @@ What is lined up here is Love as defined by people other than pjdhiro. What pjdh
 
 Part 1 posed the question and checked the views so far on the driving source of projects and on the word Love. This reader sees that driving source as what I want to call Love.
 
-What I want to call Love cannot be seen with the eyes. Part 2 looks at the invisible driving source through things similar in shape: the structure of how things come into being, and gravity.
+What I want to call Love cannot be seen with the eyes. Part 2 looks at the invisible driving source through things similar in shape: the structure of how things come into being, and gravity. At the end, it looks at how far the borrowed shapes of physics resemble it.
 
 <!--/TURN-->
 
 <!--PART:Part 2|Seeing the invisible driving source through similar shapes-->
+
+<!--LENS:About this part|-->
+
+Among what was lined up in the chapter at the end of Part 1, "[What has the word Love pointed to?](#ldd-love-history)", there were writings that put Love not only as a human feeling but as a principle or force that moves the world: the working that gathers the four roots into one (Empedocles), and the love that moves the sun and the other stars (Dante). Love has also been written as if it worked even on the universe and on matter.
+
+On the other hand, if we group under creation the coming into being of things, and their becoming different from what they were, similar structures are reported both in the domains of matter and in the domains of mind and society. The shape of creation may be similar whether or not a thing is material. If so, might the structure and process by which what I want to call Love comes into being have the same shape too? This question lies beneath Part 2.
+
+From these two, Part 2 thinks about Love from the side of matter. Physics may feel like the thing farthest from Love. Even so, to see the invisible driving source, it first borrows things similar in shape. There are three chapters.
+
+- "[What shape does creation take?](#what-shape-does-creation-take)": the structure of how things come into being (field → wave → edge → vortex → bundle). It is the basic shape for seeing the shape in which Love comes into being.
+- "[Isn't Love like gravity?](#isnt-love-like-gravity)": that a force that draws things can also be written as a distortion of a field. It is for setting side by side Love's two faces: the force one feels drawn by, and the character of a field.
+- "[How far does it resemble physics in structure?](#how-far-does-it-resemble-physics-in-structure)": it gathers the borrowed shapes of physics, and looks at how far they resemble it and where they stop resembling it.
+
+<!--/LENS-->
 
 ## What shape does creation take?
 
@@ -323,13 +337,19 @@ Sources: [*The Awakening of Faith in the Mahāyāna*, Paramārtha's translation]
 
 <details class="pd-column"><summary>From classical physics to quantum theory</summary>
 
-Physics, too, had a similar change of grip. At the end of the nineteenth century, the theories of mechanics, heat, light and electromagnetism had achieved great success, and some thought few problems remained. Following the small discrepancies that remained and peering inside the atom, everyday words such as position and speed did not work as they were. Even so, understanding that minute world became the explanation of the large world: why things are hard, why the sun keeps shining.
+Physics, too, has an example of changing scale. At the end of the nineteenth century, the theories of mechanics, heat, light and electromagnetism had achieved great success, and some thought few problems remained. Following the small discrepancies that remained and peering inside the atom, everyday words such as position and speed did not work as they were. Even so, understanding that minute world became the explanation of the large world: why things are hard, why the sun keeps shining.
+
+Following the driving source is a change of scale in the same direction. From the size of named vortices such as markets, organizations and minds, it goes down to the waves and the field beneath them. What is similar is the shape: in a layer where the words of visible size hardly work, there may be something that moves the large world. pjdhiro, too, says that at the end of dividing oneself in shikan, it becomes "a different sense, as if changing from classical to quantum" (the fold "[Seeing the invisible center by dividing oneself](#ldd-center)").
+
+<details><summary>More — from the two clouds to quantum theory</summary>
 
 In 1900, Lord Kelvin, in a lecture, named "two clouds" hanging over the theories of heat and light. One was that no evidence could be found of the earth moving through the ether that was thought to carry light. The other was that the theory of equipartition of energy did not agree with the specific heats of gases and solids. In the same year, to explain the distribution of colors of light given off by hot bodies, Planck assumed that energy is exchanged in discrete lumps. The first cloud later became one of the problems that led to the theory of relativity, and the second, alongside Planck's work on thermal radiation, became one of the starting points of quantum theory.
 
 In the world of quantum theory, the position and momentum of a particle cannot both be fixed as precisely as one likes at the same time (the uncertainty principle). Electrons behave both like grains and like waves. Intuitions built from everyday words are betrayed here again and again.
 
 Even so, understanding this minute world explained the large world: atoms keeping their shape without collapsing (the uncertainty principle); things having volume and being hard even when many atoms gather (the Pauli exclusion principle); atoms binding into molecules (the chemical bond); hydrogen turning into helium at the center of the sun so that it keeps shining (the tunnel effect makes that reaction easier to occur). Semiconductors, and the computers we use now, are built on this understanding too.
+
+</details>
 
 <!--REF:Physics and the history of science-->
 
@@ -353,9 +373,9 @@ Sources: [Clausius (1857)](https://doi.org/10.1002/andp.18571760302) *Ann. Phys.
 
 In the minute world of physics, too, the way names are given has something in common with vortices between the waves. In quantum field theory, electrons and photons are treated as one of the ways a field vibrates (an excitation). The name electron is a word people gave to a certain way a field vibrates. What is similar is that a name has been given to a state that cannot be cut off from the field (it does not mean that an electron has the shape of a vortex).
 
-After quantum theory was formed, from the late 1920s, theories that write light and electrons from the side of the "field" were put together. In 1927 Dirac treated the electromagnetic field with quantum theory and wrote the photon as a lump of vibration of the electromagnetic field. In this view, when the field vibrates a particle appears, and when the vibration subsides the particle disappears. Even in a vacuum that seems to hold nothing, the field fluctuates.
+In this view, when the field vibrates a particle appears, and when the vibration subsides the particle disappears. Even in a vacuum that seems to hold nothing, the field fluctuates (one of the beginnings was Dirac in 1927, who wrote the photon as a lump of vibration of the electromagnetic field).
 
-Picture a single electron as a small, independent ball on its own, and you stumble in this world. An electron is both something counted as one grain and a name people gave to a certain way a field vibrates.
+Picture a single electron as a small, independent ball on its own, and you stumble in this world. An electron is both something counted as one grain and a name people gave to a certain way a field vibrates. The names awareness and trust, which come later, can be read the same way: as names given to ways of vibrating that cannot be cut off from the field.
 
 <!--REF:Physics and the history of science-->
 
@@ -399,7 +419,9 @@ On the left is a gravity well; on the right, a well of the same shape with love 
 
 Here, gravity is seen as a gravitational field. A gravitational field is distorted around a mass. General relativity writes this distortion as the curvature of spacetime. In Newtonian mechanics, the gravitational field around a mass can be drawn as the depth of a hollow (the gravitational potential).
 
-The picture that makes this hollow three-dimensional is the gravity well. What the picture depicts, and how far it is fact of physics and where it becomes an analogy, are gathered in [What is a gravity well?](gravity-well.html) (in Japanese). In general relativity, stars and light alike are within that gravitational field and travel along the distortion.
+The picture that makes this hollow three-dimensional is the gravity well. What the picture depicts, and how far it is fact of physics and where it becomes an analogy, are gathered in [What is a gravity well?](gravity-well.html) (in Japanese).
+
+What this reader borrows from gravity is the shape in which a force that draws things can also be written as a distortion of a field. It is borrowed to look side by side at Love's two faces: the force one feels drawn by, and the character of a field.
 
 </details>
 
@@ -437,7 +459,14 @@ One cannot see ahead, and yet one is stable. Apart from the reassurance gained b
 
 ## How far does it resemble physics in structure?
 
-<a id="ldd-physics"></a>The two chapters of Part 2 borrowed shapes from physics: the [gravity well](gravity-well.html), changing scale from classical to quantum, and the vortices between the waves and the fluctuation of the field. This chapter gathers the borrowed shapes in one place, and sets out which shape of physics each of the four explorations seems to overlap with. The details of formulas and original sources are placed inside folds.
+<a id="ldd-physics"></a>The two chapters of Part 2 borrowed shapes from physics: the [gravity well](gravity-well.html), changing scale from classical to quantum, and the vortices between the waves and the fluctuation of the field. This chapter gathers the borrowed shapes in one place, and sets out which shape of physics each of the four explorations this reader is built from seems to overlap with.
+
+- The driving source, with the center of the gravity well: the center that moves things is hard to see from what it moves.
+- Kesson, with the direction of a wave (its phase): it does not show up in numbers on its own, and yet it works.
+- Awareness, with measuring: while measuring, the measuring side and the measured side are written together as one.
+- Creation, with the fluctuation of the field: a named vortex cannot be cut off from the field.
+
+Each is a shape in which something unseen decides a movement that is seen. The physics side is placed in the fold "More — the four explorations and the shapes of physics".
 
 They can be borrowed because there is one estimate beneath them.
 
@@ -449,15 +478,15 @@ Some things are so similar that one wonders whether they are the same law. If it
 
 <details><summary>More — the four explorations and the shapes of physics</summary>
 
-**The driving source and gravity.** In the figure of the gravity well, the things around revolve along the hollow made by the mass at the center.
+**The driving source and gravity.** In the figure of the gravity well, the things around revolve along the hollow made by the mass at the center. Where it overlaps with the driving source of the previous chapter is that the center that moves things is hard to see from what it moves.
 
-**Kesson and the phase of waves.** In quantum mechanics, the state of a particle is written as a complex-valued wave (the wave function). The probability of finding the particle at a place is set by the square of the absolute value of that wave, and the direction of the wave (its phase) does not enter. Shifting the phase of the whole wave uniformly changes nothing in the observed results. But when two waves overlap, the difference in phase shows up clearly as interference fringes. The phase itself does not show up in numbers on its own, yet where waves overlap it produces a definite difference.
+**Kesson and the phase of waves.** A wave in quantum mechanics has a size and a direction (its phase). The probability of finding the particle at a place is set by the size of the wave (the square of its absolute value), and the direction does not enter. But when two waves overlap, the difference in direction shows up clearly as interference fringes. The phase itself does not show up in numbers on its own, yet where waves overlap it produces a definite difference.
 
-This is where it overlaps with the shape of kesson-driven thinking: a value that is 0 in cognition and yet works. What overlaps is the behavior. A value on the imaginary axis is a magnitude whose projection onto the axis of action is 0. Phase is a direction that disappears when the absolute value is taken. The reasons they do not show up in numbers differ, but they share not showing up in numbers on their own and yet working.
+This is where it overlaps with the shape of kesson-driven thinking: a value that is 0 in cognition and yet works (seen as the analogy of the imaginary axis in the Part 3 chapter "[When signals and thoughts part, one feels a lack](#ldd-kesson)"). What overlaps is the behavior. A value on the imaginary axis is a magnitude whose projection onto the axis of action is 0. Phase is a direction that disappears when the absolute value is taken. The reasons they do not show up in numbers differ, but they share not showing up in numbers on their own and yet working.
 
-**Awareness and observation.** In the quantum world, measuring can change the state of what is measured. For example, measuring position disturbs momentum (the error in measuring position and the disturbance given to momentum cannot both be made zero, but it is known that their product can be made smaller than the limit once thought). In models of measurement, during measurement the object being measured and a small part of the apparatus (the probe) are taken together as one system, and its change over time is written. After the measurement, only the probe side is measured and read off on the scale. The model writes only this far; it does not write that the observing side and the observed side become inseparable. This page sees this form, writing the two together during measurement, as an analogy overlapping with where metacognition, dividing oneself, ends up.
+**Awareness and observation.** In the quantum world, measuring can change the state of what is measured. For example, measuring position disturbs momentum. In models of measurement, during measurement the object being measured and a small part of the apparatus (the probe) are taken together as one system, and its change over time is written. After the measurement, only the probe side is measured and read off on the scale. The model writes only this far; it does not write that the observing side and the observed side become inseparable. This page sees this form, writing the two together during measurement, as an analogy overlapping with where metacognition, dividing oneself, ends up.
 
-**Creation and the fluctuations of the field.** In quantum field theory, particles appear as one of the ways a field vibrates (an excitation). Separately, as a matter of fluids, in superfluid helium the flow around a vortex (circulation) appears only in fixed units. In fluids, there are examples where the vortex itself appears as a form that cannot be cut off from the fluid.
+**Creation and the fluctuations of the field.** In quantum field theory, particles appear as one of the ways a field vibrates (an excitation). Separately, as a matter of fluids, in superfluid helium the flow around a vortex (circulation) appears only in fixed units. In fluids, there are examples where the vortex itself appears as a form that cannot be cut off from the fluid. Both overlap with the shape of creation in which a named vortex cannot be taken out of the field.
 
 <!--REF:Physics and the history of science-->
 
@@ -483,9 +512,15 @@ The human body, too, is made of matter, and it is hard to think of it as outside
 
 Quantum effects working inside living things are studied as quantum biology. For example, it is known that the tunnel effect, in which particles slip through barriers, is involved in enzyme reactions.
 
+For the brain, there are proposals and calculations against them. Current neuroscience writes the release and reception of neurotransmitters, and the electrical signals that follow, almost entirely in classical physics. Where things stand now is that whether quantum effects work in the processing of neural signals has been neither confirmed nor fully ruled out. pjdhiro's estimate is left before this checking.
+
+<details><summary>More — the proposals and calculations one by one</summary>
+
 For the brain, there are several proposals. Penrose and Hameroff proposed that quantum processes proceed in the microtubules inside neurons, and that each time they spontaneously collapse under certain conditions, a moment of consciousness arises. Fisher proposed that the nuclear spins of phosphorus atoms may be able to hold quantum information for a long time in the brain. There are also proposals and calculations that quantum coherence inside ion channels may be involved in how ions pass through.
 
-There are also calculations against. Tegmark estimated that in the brain at body temperature, quantum superpositions break down in an extremely short time, falling far short of the speed of neural signals. Current neuroscience writes the release and reception of neurotransmitters, and the electrical signals that follow, almost entirely in classical physics. Where things stand now is that whether quantum effects work in the processing of neural signals has been neither confirmed nor fully ruled out.
+There are also calculations against. Tegmark estimated that in the brain at body temperature, quantum superpositions break down in an extremely short time, falling far short of the speed of neural signals.
+
+</details>
 
 <!--REF:Nerves and emotion-->
 
@@ -1311,7 +1346,7 @@ A vortex is one state of a wave, and a wave one state of the field, and people h
 
 <a id="ldd-love-faces"></a><strong>pjdhiro's view (translated by Claude):</strong>The field may be Love, or the fluctuations and waves of the field may be Love. The figure of producing vortices as if in opposition from exactly opposite directions may be close to Love. I think it is precisely because the phenomenon there is easy to perceive that people lumped it together as romance and love.
 
-What I want to call Love has the aspect of a center that does not move and looks as if nothing is there, like the center of a gravity well (the chapter "[Isn't Love like gravity?](#ldd-well)"). It also has the aspect of the field people are in and its distortion, and the aspect of the figure of fluctuations of the field and opposing things meeting and producing vortices. Because one is inside, the field itself cannot be observed directly. What can be observed are the things moved by the distortion, and the signals that well up in the body. pjdhiro also estimates that the wave motion that makes up matter and love in the broad sense may follow the same laws, and sees the mind, as an apparatus of interpretation, as perceiving that as love and emotion (see also: [Supplementary material — structural similarities with physics](#ldd-physics)).
+What I want to call Love has the aspect of a center that does not move and looks as if nothing is there, like the center of a gravity well (the chapter "[Isn't Love like gravity?](#isnt-love-like-gravity)"). It also has the aspect of the field people are in and its distortion, and the aspect of the figure of fluctuations of the field and opposing things meeting and producing vortices. Because one is inside, the field itself cannot be observed directly. What can be observed are the things moved by the distortion, and the signals that well up in the body. pjdhiro also estimates that the wave motion that makes up matter and love in the broad sense may follow the same laws, and sees the mind, as an apparatus of interpretation, as perceiving that as love and emotion (see also: [Supplementary material — structural similarities with physics](#ldd-physics)).
 
 <a id="ldd-love-umbilical"></a>Another aspect is the stability of being connected without confirming, felt beyond metacognition. This aspect is about a sense pjdhiro felt at the end of observing their own inside.
 
@@ -1331,7 +1366,7 @@ That is, apart from the reassurance gained by confirming, there is a reassurance
 
 <details><summary>More — the aspects of center, field and vortex</summary>
 
-**A center that does not move and looks as if nothing is there.** In the figure of the gravity well, the center never moves once. Even so, everything around revolves along the hollow that center makes. From oneself standing inside, that center cannot be seen. What pjdhiro has been looking for is a driving source like this center (the chapter "[Isn't Love like gravity?](#ldd-well)").
+**A center that does not move and looks as if nothing is there.** In the figure of the gravity well, the center never moves once. Even so, everything around revolves along the hollow that center makes. From oneself standing inside, that center cannot be seen. What pjdhiro has been looking for is a driving source like this center (the chapter "[Isn't Love like gravity?](#isnt-love-like-gravity)").
 
 **The field people are in, and its distortion.** pjdhiro puts forward the hypothesis that sees the universe and us as drifting as if drawn by the distortions of the field of Love ([pjdhiro's hypothesis](#ldd-well) in the same chapter).
 
