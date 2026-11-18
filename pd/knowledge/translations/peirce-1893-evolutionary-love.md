@@ -53,7 +53,7 @@
 
 > I open a handbook of political economy,—the most typical and middling one I have at hand,—and there find some remarks of which I will here make a brief analysis. I omit qualifications, sops thrown to Cerberus, phrases to placate Christian prejudice, trappings which serve to hide from author and reader alike the ugly nakedness of the greed-god. But I have surveyed my position. The author enumerates "three motives to human action:
 
-私は政治経済学の手引書を開く。手元にあるもののうちで最も典型的で、最も中くらいのものである。そしてそこに見つかるいくつかの所見を、ここで簡単に分析しよう。限定の文言、ケルベロスに投げてやる餌、キリスト教徒の偏見をなだめるための言い回し、つまり貪欲の神の醜い裸を著者からも読者からも同じように隠す飾りは、省く。だが、自分の立ち位置は見渡して確かめてある。著者は「人間の行為の三つの動機」を数え上げる。
+私は[政治経済学の手引書](newcomb-political-economy-ja.html)を開く。手元にあるもののうちで最も典型的で、最も中くらいのものである。そしてそこに見つかるいくつかの所見を、ここで簡単に分析しよう。限定の文言、ケルベロスに投げてやる餌、キリスト教徒の偏見をなだめるための言い回し、つまり貪欲の神の醜い裸を著者からも読者からも同じように隠す飾りは、省く。だが、自分の立ち位置は見渡して確かめてある。著者は「人間の行為の三つの動機」を数え上げる。
 訳注：「ケルベロスに投げてやる餌（sops thrown to Cerberus）」は、相手をなだめて黙らせるための小さな譲歩を言う英語の慣用句。
 
 ### ¶8　p.179

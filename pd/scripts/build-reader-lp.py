@@ -168,6 +168,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は newcomb-1886-principles-of-political-economy.md（原文と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-newcomb-political-economy-ja.md",
+        ROOT / "scripts/reader-newcomb-political-economy-ja-template.html",
+        ROOT / "reader/newcomb-political-economy-ja.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/creative-thinking/READER-creative-thinking.md",
         ROOT / "scripts/reader-creative-thinking-template.html",
         ROOT / "reader/creative-thinking.html",
@@ -296,6 +303,12 @@ JA_CHAPTERS = {
     "james-1863-substance-and-shadow.md": {
         "¶1": "第 24 章の抜き　被造物は、創造者の逆の像でなければならない",
         "注1": "ジェイムズの脚注",
+    },
+    "newcomb-1886-principles-of-political-economy.md": {
+        "¶1": "第 56 節　貯えて投資する人と、慈善",
+        "¶2": "第 57 節　結びの考察、人を動かす三つの動機",
+        "¶16": "補遺　この本が示した経済学の主な原理の要約",
+        "注1": "ニューカムの脚注",
     },
 }
 

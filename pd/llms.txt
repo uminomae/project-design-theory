@@ -109,6 +109,11 @@ Public explainer pages, written to be uniquely readable by LLMs without external
 - One-line: A Japanese translation, paragraph by paragraph, of Henry James Sr.'s Substance and Shadow (1863), chapter XXIV, pp.439–443, the passage on "the creative Love" that Peirce quotes at the start of "Evolutionary Love" (1893), with the original under each paragraph. Only this excerpt of the book is translated.
 - Status: there is no Wikisource transcription; the original was built from the OCR and checked against the page images of the first-edition scan (Cornell University Library, Internet Archive). The translation is by Claude and has not been reviewed by a human. Quote and cite the original.
 
+### ニューカム『政治経済学原理』の利己心と慈善の所を、日本語で読む
+- URL: https://uminomae.github.io/project-design-theory/reader/newcomb-political-economy-ja.html
+- One-line: A Japanese translation, paragraph by paragraph, of Simon Newcomb's Principles of Political Economy (1886), Book V §§56–57 and the closing Summary of Leading Principles (pp.534–543), the handbook Peirce quotes as the "Gospel of Greed" in "Evolutionary Love" (1893), with the original under each paragraph and notes on where Peirce cut or paraphrased. Only this excerpt of the book is translated.
+- Status: there is no Wikisource transcription; the original was built from the OCR and checked against all page images of the first-edition scan (Library of Congress, Internet Archive). The translation is by Claude and has not been reviewed by a human. Quote and cite the original.
+
 ## Related Projects
 
 | Project | URL | Focus |
