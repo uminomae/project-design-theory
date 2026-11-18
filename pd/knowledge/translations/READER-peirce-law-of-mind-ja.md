@@ -57,4 +57,4 @@
 
 </details>
 
-<!--JA-TEXT:ja/1892-law-of-mind.md-->
+<!--JA-TEXT:peirce-1892-law-of-mind.md-->

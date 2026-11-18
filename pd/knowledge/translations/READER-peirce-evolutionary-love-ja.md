@@ -54,4 +54,4 @@
 
 </details>
 
-<!--JA-TEXT:ja/1893-evolutionary-love.md-->
+<!--JA-TEXT:peirce-1893-evolutionary-love.md-->

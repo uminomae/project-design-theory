@@ -133,15 +133,15 @@ PAGES = [
         "flow",
     ),
     (
-        # 訳の本文は ja/1893-evolutionary-love.md（原文と訳の対訳）から <!--JA-TEXT:…--> で差し込む
-        ROOT / "knowledge/research/peirce-love-abduction/READER-peirce-evolutionary-love-ja.md",
+        # 訳の本文は peirce-1893-evolutionary-love.md（原文と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-peirce-evolutionary-love-ja.md",
         ROOT / "scripts/reader-peirce-evolutionary-love-ja-template.html",
         ROOT / "reader/peirce-evolutionary-love-ja.html",
         "flow",
     ),
     (
-        # 訳の本文は ja/1892-law-of-mind.md（原文と訳の対訳）から <!--JA-TEXT:…--> で差し込む
-        ROOT / "knowledge/research/peirce-love-abduction/READER-peirce-law-of-mind-ja.md",
+        # 訳の本文は peirce-1892-law-of-mind.md（原文と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-peirce-law-of-mind-ja.md",
         ROOT / "scripts/reader-peirce-law-of-mind-ja-template.html",
         ROOT / "reader/peirce-law-of-mind-ja.html",
         "flow",
@@ -221,15 +221,15 @@ SCREENER_DATA = {
 }
 
 
-# 対訳の md（ja/*.md）ごとの、章を切る段 → 章の題（訳）
+# 対訳の md（knowledge/translations/*.md）ごとの、章を切る段 → 章の題（訳）
 JA_CHAPTERS = {
-    "1893-evolutionary-love.md": {
+    "peirce-1893-evolutionary-love.md": {
         "¶1": "題と、最初の節「一見したところ、反対の福音」",
         "¶18": "再考、和解の論",
         "¶28": "第三の側面、見分け方",
         "注61": "パースの脚注",
     },
-    "1892-law-of-mind.md": {
+    "peirce-1892-law-of-mind.md": {
         "¶1": "題と、はじめの二段",
         "¶4": "法則とは何か",
         "¶7": "観念の個別性",
@@ -252,9 +252,9 @@ JA_CHAPTERS = {
 
 
 def ja_text_markdown(path: Path) -> str:
-    """原典の対訳の md（`ja/*.md`）を、訳を主に・原文を段ごとの畳みにした本文の md に組み直す。
+    """原典の対訳の md（`knowledge/translations/*.md`）を、訳を主に・原文を段ごとの畳みにした本文の md に組み直す。
 
-    対訳の md の形（`ja/README.md`）：`### ¶N　p.X` の段ごとに、`>` の行が原文、
+    対訳の md の形（`knowledge/translations/README.md`）：`### ¶N　p.X` の段ごとに、`>` の行が原文、
     `訳注：` で始まる行が Claude の注、残りが訳。頭の版の説明（最初の `### ` より前）は使わない
     （公開ページの冒頭に書き直して置く）。原文の節の見出し（全部が大文字の短い段）の前で章（h2）を切る。
     作業の覚え書き（道具で取れず手で足した、の類）は、公開ページに出さない。
