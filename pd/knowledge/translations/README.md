@@ -40,6 +40,7 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | `darwin-1858-tendency-of-species.md` | Darwin & Wallace, "On the Tendency of Species to form Varieties; and on the Perpetuation of Varieties and Species by Natural Means of Selection", *Journal of the Proceedings of the Linnean Society: Zoology* 3 (1858), pp.45–62 | 全文の訳（2026-11-18・#175）。Wikisource の文字起こしから骨を作り、照らす役二つが誌面の全頁と照らした（落ちていた見出しと日付・斜体）。訳は読む役二つの案を照らす役が原文と照らし、Claude が直して入れた。人の校閲はまだ。1893 の ¶58 がこの発表を挙げる。ページ `pd/reader/darwin-wallace-1858-ja.html` |
 | `herschel-1850-quetelet-on-probabilities.md` | [John Herschel], "Quetelet on Probabilities", *The Edinburgh Review* 92 (No.185), July 1850, pp.1–57 | 全文の訳（2026-11-18・#175）。無署名の書評で、ハーシェルの論集（1857）への再録で筆者が分かる。文字起こしが無いので、OCR から段を取り、読む役六つが範囲を分けて全 57 頁を画像と照らし、原文を起こして訳の案を出した。照らす役三つが段ごとに照らし、Claude がつないで訳語をそろえた。人の校閲はまだ。1893 の ¶20 が、ハーシェルがケトレーに広く注意を向けさせたと書く。ページ `pd/reader/herschel-quetelet-probabilities-ja.html` |
 | `mandeville-1714-fable-of-the-bees.md` | Bernard Mandeville, *The Fable of the Bees: or, Private Vices, Publick Benefits*, London: J. Roberts, 1714, 冒頭の詩「The Grumbling Hive」pp.1–20 | 本の抜きの訳（2026-11-18・#175）。詩の全文 34 段。1705 年の小冊子の Wikisource の文字起こしを下敷きに、読む役が 1714 年の版の画像と一行ずつ照らして原文を起こし、訳の案を出した。照らす役が段ごとに照らし、Claude が直して入れた。1705 年との違いと巻頭の正誤表は訳注に書いた。人の校閲はまだ。1893 の ¶14 がこの本を挙げる。ページ `pd/reader/mandeville-grumbling-hive-ja.html` |
+| `kolliker-1864-darwinsche-schopfungstheorie.md` | A. Kölliker, "Ueber die Darwin'sche Schöpfungstheorie", *Zeitschrift für wissenschaftliche Zoologie* 14 (1864), pp.174–186（独語） | 全文の訳（2026-11-18・#175）。原文は独語で、独語の本文から訳した。文字起こしが無いので、誌面の OCR を下敷きに、読む役が全 13 頁を画像と照らして原文を起こし、訳の案を出した。同じ年の別刷り（Engelmann）とも照らし、字の違いは訳注に書いた。照らす役が段ごとに照らし、Claude が直して入れた。人の校閲はまだ。1893 の ¶21 が、ケリカーを内的な必然による進化の説の例に挙げる。ページ `pd/reader/kolliker-darwinsche-schopfungstheorie-ja.html` |
 
 次に訳す候補：パースは `../research/peirce-love-abduction/READING-ORDER-20261116.md` の表、1893「Evolutionary Love」が引く論文と本は Issue #175 の一覧。
 
@@ -141,6 +142,21 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | Honesty / Fraud / Knaves | 正直／不正／ならず者 | |
 | Hive / Grumbling | 巣／ぶつぶつ言う | 題は「ぶつぶつ言う蜂の巣、または正直になったならず者たち」 |
 | Jove / Merc'ry | ジュピター／メルクリウス | |
+
+### ケリカー：表
+
+| 原語 | 訳語 | 覚え書き |
+|---|---|---|
+| Schöpfungstheorie / Schöpfung | 創造説／創造 | 題は「ダーウィンの創造説について」 |
+| heterogene Zeugung | 異種発生 | 英語の heterogenesis に当たる |
+| Generationswechsel / Amme | 世代交代／乳母 | |
+| natürliche Züchtung / Züchtung | 自然選択／育種 | Züchtung は人の育種の意味のときに「育種」 |
+| Varietät / Variation | 変種／変異 | |
+| Species / Art | 種 | どちらも「種」 |
+| Entwicklungsplan / Entwicklungsgesetz | 発展の計画／発展の法則 | 卵や胚について言う Entwicklung は「発生」 |
+| Kampf um das Dasein | 生存闘争 | |
+| Zeugung / Fortpflanzung | 生殖／繁殖 | |
+| Generatio spontanea | 自然発生 | |
 
 ### パース：表
 

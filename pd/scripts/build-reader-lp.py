@@ -203,6 +203,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は kolliker-1864-darwinsche-schopfungstheorie.md（原文〔独語〕と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-kolliker-darwinsche-schopfungstheorie-ja.md",
+        ROOT / "scripts/reader-kolliker-darwinsche-schopfungstheorie-ja-template.html",
+        ROOT / "reader/kolliker-darwinsche-schopfungstheorie-ja.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/creative-thinking/READER-creative-thinking.md",
         ROOT / "scripts/reader-creative-thinking-template.html",
         ROOT / "reader/creative-thinking.html",
@@ -370,6 +377,22 @@ JA_CHAPTERS = {
         "¶28": "寂れていく巣",
         "¶34": "教訓",
     },
+    "kolliker-1864-darwinsche-schopfungstheorie.md": {
+        "¶1": "題と、ダーウィンの見方",
+        "¶5": "ダーウィンの説への八つの異論",
+        "¶26": "ダーウィンの功績と、残る創造の仮説",
+        "¶35": "自然発生の理論",
+        "¶40": "異種発生の理論",
+        "¶53": "ダーウィンの仮説との違い",
+        "¶62": "人間の位置",
+        "注1": "ケリカーの脚注",
+    },
+}
+
+
+# 原文が英語でない対訳の、原文の畳みの lang。無いものは en
+JA_LANG = {
+    "kolliker-1864-darwinsche-schopfungstheorie.md": "de",
 }
 
 
@@ -415,7 +438,7 @@ def ja_text_markdown(path: Path) -> str:
         out.append("\n" + fit(link("\n".join(trans).strip())) + "\n")
         for n in notes:
             out.append(f"\n<p><small>{n}</small></p>\n")
-        out.append(f'\n<details><summary>原文（{label}）</summary>\n\n<blockquote lang="en">\n\n'
+        out.append(f'\n<details><summary>原文（{label}）</summary>\n\n<blockquote lang="{JA_LANG.get(path.name, "en")}">\n\n'
                    + fit(link("\n".join(orig).strip())) + "\n\n</blockquote>\n\n</details>\n")
     return "".join(out)
 
