@@ -560,15 +560,36 @@ Part 3 looks at the inside of the person: how people receive the world and how t
 
 <!--PART:Part 3|How do people interpret the world?-->
 
+<!--LENS:About this part|-->
+
+Part 2 looked at the invisible driving source through similar shapes outside. Yet the driving source is also something felt inside the person. What is more, people sometimes mistake what they are driven by.
+
+So Part 3 looks at the inside of the person: what people receive from the world, where it wells up, and where it spills out of words and numbers. What it borrows are the words of research on the body, the brain and cognition. There are four chapters.
+
+- "[People cut out the world with signals of survival and trust](#people-cut-out-the-world-with-signals-of-survival-and-trust)": that the signals people pick up from the world as important have two directions, whether they can stay alive (survival) and whether they can stay connected (trust). It is the groundwork for how people receive trust, which Part 4 looks at alongside Love.
+- "[Signals well up from inside the body](#signals-well-up-from-inside-the-body)": that those signals arrive from inside the body before they become words. It is for seeing why the driving source is hard to find on words and numbers.
+- "[When signals and thoughts part, one feels a lack](#when-signals-and-thoughts-part-one-feels-a-lack)": the feeling of lack when thoughts and the body's signals part. It is about how people sense something that is 0 when measured and yet is at work.
+- "[Value is born in the consciousness of the one who receives](#value-is-born-in-the-consciousness-of-the-one-who-receives)": that value is born in the consciousness of the one who receives. It applies the shape of creation from Part 2 to the receiving side, and goes as far as the possibility that value and Love are similar in structure.
+
+<!--/LENS-->
+
 ## People cut out the world with signals of survival and trust
 
 <!--OPEN-->
 
 What do people receive from the world as important? Only the conditions for staying alive?
 
+Typical conditions for staying alive are money and safety. pjdhiro talks about an example of their own like this.
+
+<strong>pjdhiro's example (translated by Claude):</strong>I thought I was chasing money, but actually I was worried about my position among people, because losing would be miserable.
+
+Money looks like a condition for staying alive. Yet what pjdhiro thought they were chasing and what they actually cared about were different. The signals people receive do not seem to be just one kind.
+
 <a id="ldd-signals"></a><strong>pjdhiro's view (translated by Claude):</strong>Probably humans have a system that processes something like signals of trust, and it is given weight. Separate from material survival. Enough that people can even take their own lives.
 
-["What Is Awareness"](https://uminomae.github.io/project-design-theory/as/) (in Japanese) holds that there are two directions in what people pick up from the world as important: whether they can stay alive (survival), and whether they can stay connected (trust). In the direction of survival it looks at threat, safety, status and resources; in the direction of trust, at attachment, belonging, trust and intersubjectivity. The two work at the same time and enter into each other. Symbols such as words and numbers are lined up in a single row, so when things are received as symbols, the value for survival may be known while the value for trust remains unknown. The source of the sense of something being off that arises then cannot be found on the symbols.
+["What Is Awareness"](https://uminomae.github.io/project-design-theory/as/) (in Japanese) holds that there are two directions in what people pick up from the world as important: whether they can stay alive (survival), and whether they can stay connected (trust). The two work at the same time and enter into each other. The system separate from material survival in pjdhiro's view corresponds to this direction of trust. Part 4 looks at this direction of trust as [something similar to the feeling called Love](#ldd-part4-premise).
+
+Symbols such as words and numbers are lined up in a single row, so when things are received as symbols, the value for survival may be known while the value for trust remains unknown. The source of the sense of something being off that arises then cannot be found on the symbols.
 
 <div class="reader-linkcards">
 <a class="reader-linkcard glow-link" href="https://uminomae.github.io/project-design-theory/as/">
@@ -579,7 +600,7 @@ What do people receive from the world as important? Only the conditions for stay
 
 <details><summary>More — why trust is placed separately from survival</summary>
 
-Why is trust placed separately from survival? pjdhiro had knowledge in the head from books on psychoanalysis, developmental psychology, neurotransmitters and neuroeconomics ([Psychology that influenced pjdhiro](influences-psychology.html), in Japanese). Within that, pjdhiro had the following experience.
+"What Is Awareness" looks, in the direction of survival, at threat, safety, status and resources, and in the direction of trust, at attachment, belonging, trust and intersubjectivity (experience and meaning being shared between people). Why is trust placed separately from survival? pjdhiro had knowledge in the head from books on psychoanalysis, developmental psychology, neurotransmitters and neuroeconomics ([Psychology that influenced pjdhiro](influences-psychology.html), in Japanese). Within that, pjdhiro had the following experience.
 
 <strong>pjdhiro's experience (translated by Claude):</strong>At the last stage of metacognition, when, like an ouroboros, the seeing I and the seen I are born, there is no sense of fit there; rather, separate from the seeing I, there is a feeling as if there is something, a presence, at the end of a cable like an umbilical cord beyond the top of my head, that gives a stability like the universe.
 
@@ -601,17 +622,13 @@ The source of that sense cannot be found on the symbols. Even so, one can hold t
 
 <details><summary>More — the two are mistaken for each other and enter into each other</summary>
 
-Are the two, survival and trust, always told apart within a person? pjdhiro talks about an example of their own like this.
-
-<strong>pjdhiro's example (translated by Claude):</strong>I thought I was chasing money, but actually I was worried about my position among people, because losing would be miserable.
-
-"What Is Awareness" used to hold that much suffering arises from a misapplication: trying to solve a problem of the trust axis with achievement on the survival axis. Now it reads this as one of the situations in which the two are mistaken for each other. In business, [the question of profit and the long term](#ldd-profit) in the value creation section of the chapter "Where are the words of business misunderstood?" is an example.
+As in the example at the head of the chapter, of thinking one was chasing money while actually caring about one's position among people, the two, survival and trust, are not always told apart within a person. Struggling by trying to solve a problem on the side of trust with achievement on the side of survival is also one of the situations in which the two are mistaken for each other. In business, [the question of profit and the long term](#ldd-profit) in the value creation section of the chapter "Where are the words of business misunderstood?" is an example.
 
 </details>
 
 <details class="pd-column"><summary>There is always somewhere perception does not reach</summary>
 
-The range of visible light and the breadth of ways of seeing both have limits, and there is always somewhere perception does not reach. Mass not visible in light was inferred from how stars on the outskirts of galaxies rotate. In the same way, even where symbols show 0, the body may be receiving something.
+The range of visible light and the breadth of ways of seeing both have limits, and there is always somewhere perception does not reach. Mass not visible in light was inferred from how stars on the outskirts of galaxies rotate. Where symbols show 0 might be likened to this mass not visible in light. Even unseen, the body may be receiving something.
 
 </details>
 
@@ -619,11 +636,15 @@ The range of visible light and the breadth of ways of seeing both have limits, a
 
 <!--OPEN-->
 
-The previous chapter saw that a sense of something being off wells up whose source cannot be seen on the symbols. As something pjdhiro wants to check through neurophenomenology, pjdhiro poses the following question about how those signals are tied between the body and consciousness.
+The previous chapter saw that a sense of something being off wells up whose source cannot be seen on the symbols. Where does that sense come from?
+
+When irritation or anxiety wells up, people look for the person or event that caused it. In the evening, one may be badly irritated by a remark from a family member, snap back, and then, after eating something, find the irritation has quietly gone. The remark has not changed at all. The source of the irritation seems to have been hunger, a signal from inside the body. The body's signal wells up first, and whom it is about and what kind of feeling it is are read afterwards.
+
+As something pjdhiro wants to check through neurophenomenology, pjdhiro poses the following question about how those signals are tied between the body and consciousness. "Objects of metacognition" and "holding" in the question are words used as the axes that divide stages on the prerequisite page "[What are the stages of mental development](developmental-stages.html#どこまでを包容しているか)" (in Japanese): what one can see as an object, and how much one can hold without dividing it off.
 
 <a id="ldd-body"></a><strong>pjdhiro's question (translated by Claude):</strong>What are the signals that tie the body and consciousness, with respect to the objects of metacognition and to holding them? This is very important, tangled up with the mystery of where mind and body connect.
 
-["What Is Awareness"](https://uminomae.github.io/project-design-theory/as/) (in Japanese) places the source of the signals in the sense by which the body receives its own internal state. This sense, receiving heartbeat, breathing and the condition of the internal organs, is called interoception. Some research holds that the brain predicts the state of the body ahead of time, moment by moment, and corrects the prediction with the signals that arrive; in this view, what stands out as a signal is the gap from the prediction. This concerns the brain's workings over times too short for the person to notice. The sense of the inside of the body arrives, before becoming words, as a vague feeling, roughly whether it is pleasant or unpleasant, calm or aroused. The "anticipation" of the previous chapter, and expectation and lack in later chapters, concern times long enough for the person to notice; the timescale is different. This page keeps the two apart.
+["What Is Awareness"](https://uminomae.github.io/project-design-theory/as/) (in Japanese) places the source of the signals in the sense by which the body receives its own internal state. This sense, receiving heartbeat, breathing and the condition of the internal organs, is called interoception. Some research holds that the brain predicts the state of the body ahead of time, moment by moment, and corrects the prediction with the signals that arrive; in this view, what stands out as a signal is the gap from the prediction. The sense of the inside of the body arrives, before becoming words, as a vague feeling, roughly whether it is pleasant or unpleasant, calm or aroused. This may be why the source of the sense of something being off cannot be found on the symbols. It may also be for the same reason that what I want to call Love is hard to find when searched for on words and numbers.
 
 <details><summary>More — signals stand out as gaps from prediction</summary>
 
@@ -635,11 +656,9 @@ Some research holds that much of the sense of the inside of the body is made of 
 
 Not every gap rises into consciousness. The research writes that gaps from prediction may also be ignored (Barrett and Simmons 2015). "What Is Awareness" also holds that many gaps are absorbed without being noticed, and only some are sent further on.
 
-It is also written that the sense of the inside of the body is usually experienced as a rough feeling, roughly whether it is pleasant or unpleasant, calm or aroused (Barrett 2017). That is, it arrives as a vague feeling before becoming words. This may be why the source of the sense of something being off cannot be found on the symbols.
+It is also written that the sense of the inside of the body is usually experienced as a rough feeling, roughly whether it is pleasant or unpleasant, calm or aroused (Barrett 2017). That is, it arrives as a vague feeling before becoming words. The same research holds that the same inner bodily sensation can have many causes, and that the brain makes emotions by sorting out sensations case by case with the concepts it has learned (Barrett 2017). The example at the head of the chapter, in which the discomfort of hunger is felt as irritation at a family member, is close to this view.
 
 The gap from prediction and the lack people feel differ both in the level at which they are described and in timescale. The gap from prediction is something measured from outside, a matter of the brain's workings moment by moment. Lack is the experience of a person feeling from inside that something is missing, a matter of times long enough for the person to notice. pjdhiro's estimation in the previous chapter (that people anticipate two values, survival and trust) is also a matter of times long enough to notice. It has the same shape of "anticipating ahead", but how the two connect is not yet known.
-
-</details>
 
 <details><summary>More — what is measured and what is felt can disagree</summary>
 
@@ -647,9 +666,15 @@ Even meditators with long training in turning attention to the inside of the bod
 
 What is felt in the first person and what is measured from outside do not always overlap. A way of researching that sets the two against each other has just begun in ["What Is Awareness"](https://uminomae.github.io/project-design-theory/as/).
 
+</details>
+
+</details>
+
+<details><summary>Sources</summary>
+
 <!--REF:Nerves and emotion-->
 
-Sources: [Seth (2013)](https://doi.org/10.1016/j.tics.2013.09.007) "Interoceptive inference, emotion, and the embodied self", *Trends in Cognitive Sciences* 17:565 (full text checked against [the PDF of the journal pages in the University of Sussex institutional repository](http://sro.sussex.ac.uk/id/eprint/49586/1/SethInteroceptive.pdf); the definition of interoception (citing Craig 2002) and interoceptive inference p.565, correction by prediction error in Box 1 on p.566, figure 2 p.568) / [Barrett & Simmons (2015)](https://doi.org/10.1038/nrn3950) "Interoceptive predictions in the brain", *Nature Reviews Neuroscience* 16:419 (full text checked against the authors' manuscript [PMC4731102](https://pmc.ncbi.nlm.nih.gov/articles/PMC4731102/) in the US National Library of Medicine's PMC; a manuscript without journal page numbers) / [Barrett (2017)](https://doi.org/10.1093/scan/nsw154) "The theory of constructed emotion", *Social Cognitive and Affective Neuroscience* 12:1 (full text checked against the full text at [PMC5390700](https://pmc.ncbi.nlm.nih.gov/articles/PMC5390700/)) / [Khalsa et al. (2008)](https://doi.org/10.1111/j.1469-8986.2008.00666.x) "Interoceptive awareness in experienced meditators", *Psychophysiology* 45(4):671 (full text checked against the authors' manuscript [PMC2637372](https://pmc.ncbi.nlm.nih.gov/articles/PMC2637372/) in the US National Library of Medicine's PMC; no group difference in heartbeat detection in the abstract and results section, self-ratings of performance and difficulty in the results section) / [Garfinkel et al. (2015)](https://doi.org/10.1016/j.biopsycho.2014.11.004) "Knowing your own heart", *Biological Psychology* 104:65 (full text checked against [the PDF of the journal pages in the University of Sussex institutional repository](http://sro.sussex.ac.uk/id/eprint/52974/1/Garfinkel_-_KnowingYourOwnHeart.pdf) (published under CC BY-NC-ND 3.0); the distinction of three dimensions in the abstract on p.65).
+Sources: [Seth (2013)](https://doi.org/10.1016/j.tics.2013.09.007) "Interoceptive inference, emotion, and the embodied self", *Trends in Cognitive Sciences* 17:565 (full text checked against [the PDF of the journal pages in the University of Sussex institutional repository](http://sro.sussex.ac.uk/id/eprint/49586/1/SethInteroceptive.pdf); the definition of interoception (citing Craig 2002) and interoceptive inference p.565, correction by prediction error in Box 1 on p.566, figure 2 p.568) / [Barrett & Simmons (2015)](https://doi.org/10.1038/nrn3950) "Interoceptive predictions in the brain", *Nature Reviews Neuroscience* 16:419 (full text checked against the authors' manuscript [PMC4731102](https://pmc.ncbi.nlm.nih.gov/articles/PMC4731102/) in the US National Library of Medicine's PMC; a manuscript without journal page numbers) / [Barrett (2017)](https://doi.org/10.1093/scan/nsw154) "The theory of constructed emotion", *Social Cognitive and Affective Neuroscience* 12:1 (full text checked against the full text at [PMC5390700](https://pmc.ncbi.nlm.nih.gov/articles/PMC5390700/); making emotions by categorizing sensations with concepts in the section "The computational architecture of the brain is a conceptual system plus pattern generators", the same sensation having many possible causes in the glossary) / [Khalsa et al. (2008)](https://doi.org/10.1111/j.1469-8986.2008.00666.x) "Interoceptive awareness in experienced meditators", *Psychophysiology* 45(4):671 (full text checked against the authors' manuscript [PMC2637372](https://pmc.ncbi.nlm.nih.gov/articles/PMC2637372/) in the US National Library of Medicine's PMC; no group difference in heartbeat detection in the abstract and results section, self-ratings of performance and difficulty in the results section) / [Garfinkel et al. (2015)](https://doi.org/10.1016/j.biopsycho.2014.11.004) "Knowing your own heart", *Biological Psychology* 104:65 (full text checked against [the PDF of the journal pages in the University of Sussex institutional repository](http://sro.sussex.ac.uk/id/eprint/52974/1/Garfinkel_-_KnowingYourOwnHeart.pdf) (published under CC BY-NC-ND 3.0); the distinction of three dimensions in the abstract on p.65).
 
 </details>
 
@@ -657,9 +682,17 @@ Sources: [Seth (2013)](https://doi.org/10.1016/j.tics.2013.09.007) "Interoceptiv
 
 <!--OPEN-->
 
-From here on, the matter concerns times long enough for the person to notice. People sometimes feel from inside that something is missing or does not fit. How does pjdhiro feel that lack in the body?
+People sometimes feel from inside that something is missing or does not fit. There is an example in which the body received a lack first, while it could not yet be put into words.
+
+In the 1980s, Klein and colleagues interviewed fireground commanders about how they had made their decisions. One lieutenant, on the ground floor of a house, noticed that water on the visible flames did not work as expected, and that the room was unusually hot and unusually quiet. Without knowing what was happening, the lieutenant ordered the crew out of the house. Within a minute of their getting out, the floor collapsed. The seat of the fire was in the basement, where the lieutenant had not expected it. The lieutenant described the decision as coming from a "sixth sense". There was no fire in the basement in the lieutenant's thinking. Even so, the body was receiving that something did not fit.
+
+How does pjdhiro feel that lack in the body?
 
 <a id="ldd-kesson"></a><strong>pjdhiro's image (translated by Claude):</strong>If I were to liken the bodily sense I call kesson-driven thinking, it is an intuition that has a value on the imaginary axis and yet is 0 in cognition.
+
+The imaginary axis is an axis standing at right angles to the original number line, and its value, measured on the original axis, comes out as 0. It is like how, measuring height from above a map, even the highest mountain comes out as 0. Measured with words and numbers it is 0, and yet the body is receiving something: that is the shape of this image.
+
+The map of the house in the lieutenant's head had no basement floor. Comparing flames, water and heat on that map, the fire in the basement appears nowhere. On the map it is 0. Even so, the heat and the quiet were arriving from a direction not on the map. This is not to say that bodily feelings are always right. What is seen here is the shape in which what was received had no place on the map of thought.
 
 pjdhiro sees that when thoughts and the mind part from the signals welling up in the body, people tend to feel that something is lacking. ["Kesson-Driven Thinking"](https://uminomae.github.io/project-design-theory/ks/) (in Japanese) calls this lack *kesson* (a lack or deficit). It does not fix kesson in one sentence, but lines up pjdhiro's ways of putting it as aspects of kesson. The image above is one of them; others include "Among the things perceived on the real axis, something that was defined as zero because it was zero and treated as meaningless or valueless actually had meaning on the imaginary axis. I think something like that is kesson" and "Feeling a sense of something being off, or of lack. Error is one of those." (translated by Claude). Kesson is also something noticed through error against prediction.
 
@@ -667,9 +700,9 @@ An error is a subtraction: taking the difference between the expected value and 
 
 <a id="ldd-subtraction"></a><strong>pjdhiro's reflection (translated by Claude):</strong>I was doing subtraction. But it didn't feel right. It wasn't a one-dimensional number line, but Claude interpreted it that way and the conversation stopped going anywhere.
 
-Subtraction outside the number line is laid out in the chapter of Kesson-Driven Thinking "[“I was doing subtraction. Outside the number line.”](https://uminomae.github.io/project-design-theory/ks/#ks-subtraction)" (in Japanese).
+Subtracting on a one-dimensional number line, the value on an axis standing at right angles does not show up in the difference. Subtraction outside the number line is laid out in the chapter of Kesson-Driven Thinking "[“I was doing subtraction. Outside the number line.”](https://uminomae.github.io/project-design-theory/ks/#ks-subtraction)" (in Japanese).
 
-The imaginary axis is an axis standing at right angles to the original number line, and its value, measured on the original axis, comes out as 0. Measured with words and numbers it is 0, and yet the body is receiving something: that is the shape of this image. Kesson-driven thinking calls holding on to a lack as a question, without answering right away when one notices it, *hōji* (holding), and values it.
+A lack may be felt when the anticipation of the signals of survival and trust and the experience part. It may be that, because what I want to call Love is driving, people cannot help passively feeling this lack.
 
 <div class="reader-linkcards">
 <a class="reader-linkcard glow-link" href="https://uminomae.github.io/project-design-theory/ks/">
@@ -680,7 +713,7 @@ The imaginary axis is an axis standing at right angles to the original number li
 
 <details><summary>More — vision and planning start from a lack</summary>
 
-It may be felt when the anticipation of the signals of survival and trust and the experience part. It may be that, because what I want to call Love is driving, people cannot help passively feeling this lack. The lack eventually becomes a problem to be solved. pjdhiro sees vision, design and planning as starting from here, and the problem solving beyond it as the range management studies has dealt with so far.
+The lack eventually becomes a problem to be solved. pjdhiro sees vision, design and planning as starting from here, and the problem solving beyond it as the range management studies has dealt with so far.
 
 Kesson-driven thinking is a stance of thinking and mind that takes the feeling of lack, or a sense of something being off, as its driving source. Its range, structure and process are still being explored.
 
@@ -694,9 +727,9 @@ pjdhiro also sees that holding needs a supporting environment and relationships,
 
 <details><summary>More — the imaginary axis, and the axis of being</summary>
 
-The imaginary axis is easy to understand through the multiplication of rotation. Multiplying a number by −1 reverses its direction: a rotation of 180 degrees on the number line. The number that becomes −1 when multiplied by itself is written i, and multiplying by i once rotates by 90 degrees. The axis on which numbers carrying i are lined up stands at right angles to the original number line. This is the imaginary axis (for more, see the prerequisite page "[The multiplication of rotation](rotation-multiplication.html)", in Japanese). The value on an axis standing at right angles comes out as 0 when measured on the original axis. It is like how, measuring height from above a map, even the highest mountain comes out as 0.
+Why the imaginary axis stands at right angles to the original number line is on the prerequisite page "[The multiplication of rotation](rotation-multiplication.html)" (in Japanese). The value on an axis standing at right angles comes out as 0 when measured on the original axis.
 
-pjdhiro sees it as possible that an axis of being stands at right angles to the axis of the action of "thinking and deciding". Symbols such as words and numbers are things lined up on the axis of "thinking and deciding". When the earlier chapter "People cut out the world with signals of survival and trust" wrote that even where symbols show 0 the body is receiving something, this is the 0 it meant.
+pjdhiro sees it as possible that an axis of being stands at right angles to the axis of the action of "thinking and deciding". Symbols such as words and numbers are things lined up on the axis of "thinking and deciding". When the column in the first chapter of this part, "[People cut out the world with signals of survival and trust](#people-cut-out-the-world-with-signals-of-survival-and-trust)", wrote that even where symbols show 0 the body is receiving something, this is the 0 it meant.
 
 People sometimes feel this magnitude, which does not show up in numbers, as something important. pjdhiro sees the value on this imaginary axis as also being value for humankind. Here it connects with what management studies has called "value creation".
 
@@ -710,15 +743,29 @@ The stability of "one cannot see ahead, and yet one is stable", touched on in [S
 
 </details>
 
+<details><summary>Sources</summary>
+
+On the lieutenant's example at the head of the chapter, the report reads the cue as a departure from the pattern in which heat, sound and water usually go together.
+
+<!--REF:Decision-making and bias-->
+
+Sources: [Klein, Calderwood & Clinton-Cirocco (1988)](https://apps.dtic.mil/sti/pdfs/ADA199492.pdf) *Rapid Decision Making on the Fire Ground*, Technical Report 796, U.S. Army Research Institute (full text checked against [the record of the DTIC PDF in the Internet Archive's Wayback Machine](https://web.archive.org/web/20240216151226/https://apps.dtic.mil/sti/pdfs/ADA199492.pdf) (16 February 2024); the order to leave the house, the floor collapsing, the fire being in the basement, the "sixth sense", and the reading that a departure from the pattern of heat, sound and water was the cue on p.13; the interview summary in Appendix B, Incident Summary #4, p.B-8).
+
+</details>
+
 ## Value is born in the consciousness of the one who receives
 
 <!--OPEN-->
 
 pjdhiro thought that this exploration could at least answer "what is value creation". Then where is value born?
 
+The first answer that comes to mind is: inside the product. It is usual to think that makers put value into a product. Something hard to explain with that idea happens when listening to a song. A song one has heard many times may suddenly pierce the heart when heard after a heartbreak. Not one note of the song has changed. What changed is what wells up inside the listener.
+
 <a id="ldd-value"></a><strong>pjdhiro's view (translated by Claude):</strong>Value is born in the customer's consciousness. Through the signals at the stage before it.
 
-Value is a vague word in which things of different natures are mixed in one term. When the process of creation set out in ["What Is Creation"](https://uminomae.github.io/project-design-theory/cs/), field → wave → edge → vortex → bundle, is applied to the receiving side, what the maker put in becomes, at the stage of the edge where customer and product meet, a trigger for signals to well up. The stage of the vortex, where consciousness receives the many signals that welled up as one important whole, is the state of feeling value. Seen this way, the maker putting something in and the customer feeling it in their consciousness can be read as one continuous movement. When people usually say "value", the trigger at the edge, the state of the vortex, and the bundle that has become words, evaluations and prices overlap in one word, making it hard to see what is happening where.
+Value is a vague word in which things of different natures are mixed in one term. Let us apply the process of creation set out in ["What Is Creation"](https://uminomae.github.io/project-design-theory/cs/), field → wave → edge → vortex → bundle, to the receiving side, and follow it with the song at the head of the chapter. The song, at the stage of the edge where it meets the listener, becomes a trigger for signals to well up. What pierces the heart is the stage of the vortex, where consciousness receives the many signals that welled up as one important whole: the state of feeling value. The reputation "a great song" and the number sold are the bundle that has become words and numbers. The song did not change; the listener's field changed with the heartbreak. From meeting the same song, a different vortex from before has formed. Seen this way, the maker putting something in and the listener feeling it in their consciousness can be read as one continuous movement. When people usually say "value", the trigger at the edge, the state of the vortex, and the bundle that has become words, evaluations and prices overlap in one word, making it hard to see what is happening where.
+
+Value, too, may be similar in structure to what I want to call Love: a bundle of signals hard to put into words.
 
 <details><summary>More — five stages on the receiving side</summary>
 
@@ -742,7 +789,7 @@ The wave is splitting. With differences arising within the same field, customer 
 
 The signals that well up at the edge are the signals of the two directions set out by ["What Is Awareness"](https://uminomae.github.io/project-design-theory/as/), seen in the chapter [People cut out the world with signals of survival and trust](#ldd-signals). They well up in the layer of the body, and consciousness receives them.
 
-As for the vortex, value, too, may be similar in structure to Love, a bundle of signals hard to put into words. Including the value on the imaginary axis seen in the chapter "When signals and thoughts part, one feels a lack", there are many axes, and it may be a synthesis of as many axes as there are adjectives.
+As for the vortex, value, including the value on the imaginary axis seen in the fold of the chapter "When signals and thoughts part, one feels a lack", has many axes, and may be a synthesis of as many axes as there are adjectives.
 
 Words and prices that have become a bundle become part of the field again, and enter into the next meeting and into how makers put things in.
 
