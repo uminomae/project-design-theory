@@ -147,6 +147,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は peirce-1892-mans-glassy-essence.md（原文と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-peirce-glassy-essence-ja.md",
+        ROOT / "scripts/reader-peirce-glassy-essence-ja-template.html",
+        ROOT / "reader/peirce-glassy-essence-ja.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/creative-thinking/READER-creative-thinking.md",
         ROOT / "scripts/reader-creative-thinking-template.html",
         ROOT / "reader/creative-thinking.html",
@@ -247,6 +254,17 @@ JA_CHAPTERS = {
         "¶89": "伝え合い",
         "¶95": "結び",
         "注98": "パースの脚注",
+    },
+    "peirce-1892-mans-glassy-essence.md": {
+        "¶1": "題と、はじめの二段",
+        "¶4": "物質の成り立ち",
+        "¶7": "ビリアルの法則と、気体の式",
+        "¶18": "アマガの実験と、解離",
+        "¶26": "原形質の性質",
+        "¶36": "原形質の分子の仮説と、習慣",
+        "¶46": "感じと、偶然の自発性",
+        "¶50": "一般観念と、人格",
+        "注55": "パースの脚注",
     },
 }
 
