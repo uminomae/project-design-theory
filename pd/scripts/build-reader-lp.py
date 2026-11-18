@@ -161,6 +161,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は james-1863-substance-and-shadow.md（原文と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-james-substance-and-shadow-ja.md",
+        ROOT / "scripts/reader-james-substance-and-shadow-ja-template.html",
+        ROOT / "reader/james-substance-and-shadow-ja.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/creative-thinking/READER-creative-thinking.md",
         ROOT / "scripts/reader-creative-thinking-template.html",
         ROOT / "reader/creative-thinking.html",
@@ -285,6 +292,10 @@ JA_CHAPTERS = {
         "¶106": "VIII　法則は説明できないものではない",
         "¶116": "IX　結論",
         "注1": "ケーラスの脚注",
+    },
+    "james-1863-substance-and-shadow.md": {
+        "¶1": "第 24 章 pp.439–443：被造物は、創造者の逆の像でなければならない",
+        "注1": "ジェイムズの脚注",
     },
 }
 

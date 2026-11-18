@@ -104,6 +104,11 @@ Public explainer pages, written to be uniquely readable by LLMs without external
 - One-line: A full Japanese translation, paragraph by paragraph, of Paul Carus's "Mr. Charles S. Peirce's Onslaught on the Doctrine of Necessity" (The Monist 2(4), July 1892, pp.560–582), the editor's reply to Peirce's "The Doctrine of Necessity Examined", with the original under each paragraph. Carus likens Peirce to Hume, argues that causation is not mere sequence, that necessity in thought presupposes necessity in facts and that laws are not inexplicable, and calls Peirce's view that absolute chance begets order "the weakest point of Mr. Peirce's system" (p.576), a phrase Peirce quotes in "Evolutionary Love" (1893).
 - Status: there is no Wikisource transcription; the original was built from the OCR and checked against all 23 pages of the first-printing scan (JSTOR Early Journal Content). The translation is by Claude and has not been reviewed by a human. Quote and cite the original.
 
+### ジェイムズ（父）『実体と影』の「創造的な愛」の所を、日本語で読む
+- URL: https://uminomae.github.io/project-design-theory/reader/james-substance-and-shadow-ja.html
+- One-line: A Japanese translation, paragraph by paragraph, of Henry James Sr.'s Substance and Shadow (1863), chapter XXIV, pp.439–443, the passage on "the creative Love" that Peirce quotes at the start of "Evolutionary Love" (1893), with the original under each paragraph. Only this excerpt of the book is translated.
+- Status: there is no Wikisource transcription; the original was built from the OCR and checked against the page images of the first-edition scan (Cornell University Library, Internet Archive). The translation is by Claude and has not been reviewed by a human. Quote and cite the original.
+
 ## Related Projects
 
 | Project | URL | Focus |

@@ -34,6 +34,7 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | `peirce-1892-law-of-mind.md` | Peirce, "The Law of Mind", *The Monist* 2(4), July 1892, pp.533–559 | 全文の訳（2026-11-18・#173）。原文の欄を初出の誌面と照らした。訳は読む役四つに範囲を分けて案を出させ、Claude が原文と段ごとに照らして入れた。人の校閲はまだ。1893 の ¶5 がこの論文を挙げる。ページ `pd/reader/peirce-law-of-mind-ja.html` |
 | `peirce-1892-mans-glassy-essence.md` | Peirce, "Man's Glassy Essence", *The Monist* 3(1), October 1892, pp.1–22 | 全文の訳（2026-11-18・#175）。原文の欄を初出の誌面と照らし、式を誌面から写した。訳は読む役二つに範囲を分けて案を出させ、照らす役に原文と照らさせ、Claude が直して入れた。人の校閲はまだ。1893 の ¶21・¶23 がこの論文を挙げる。ページ `pd/reader/peirce-glassy-essence-ja.html` |
 | `carus-1892-onslaught-on-necessity.md` | Carus, "Mr. Charles S. Peirce's Onslaught on the Doctrine of Necessity", *The Monist* 2(4), July 1892, pp.560–582 | 全文の訳（2026-11-18・#175）。文字起こしが無いので、OCR から `scripts/ocr-to-md.py` で骨を作り、照らす役が全 23 頁を画像と照らして原文を作った。訳は読む役二つの案を照らす役が原文と照らし、Claude が直して入れた。人の校閲はまだ。1893 の ¶20 がこの論文の句を引く。ページ `pd/reader/carus-onslaught-on-necessity-ja.html` |
+| `james-1863-substance-and-shadow.md` | Henry James（Sr.）, *Substance and Shadow*, Boston: Ticknor and Fields, 1863, 第 24 章 pp.439–443 | 本の抜きの訳（2026-11-18・#175）。p.439「Let my reader bear with me」の段から p.443 の脚注まで。文字起こしが無いので、OCR から段を取り、照らす役が頁の画像と照らして原文を作った。訳は読む役の案を照らす役が原文と照らし、Claude が直して入れた。人の校閲はまだ。1893 の ¶3 が p.442 の「創造的な愛」の文を引く。ページ `pd/reader/james-substance-and-shadow-ja.html` |
 
 次に訳す候補：パースは `../research/peirce-love-abduction/READING-ORDER-20261116.md` の表、1893「Evolutionary Love」が引く論文と本は Issue #175 の一覧。
 
@@ -55,6 +56,21 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | settle（opinion） / maxim | 落ち着かせる／格率 | パースの "The Fixation of Belief" の語 |
 | *a priori* / *a posteriori* | 原語のまま。初出に（先天的）（後天的） | カントの transcendental（先験的）と取り違えないため |
 | world-conception | 世界観 | |
+
+### ジェイムズ（父）：表
+
+スウェーデンボリ派の神学の語。パースと共通の語（love・creative Love）はパースの表にそろえる。
+
+| 原語 | 訳語 | 覚え書き |
+|---|---|---|
+| creature / creator / creation | 被造物／創造者／創造 | |
+| creative Love / creative perfection | 創造的な愛／創造的な完全性 | creative は「創造的な」にそろえ、influx は「創造の流入」 |
+| selfhood / identity / individuality | 自己性／同一性／個体性 | |
+| Divine | 神の | |
+| influx / inhabitation | 流入／内住 | スウェーデンボリの語 |
+| natural / spiritual | 自然的な／霊的な | |
+| Pantheism / Atheism / Revelation | 汎神論／無神論／啓示 | |
+| culture / generation / regeneration | 陶冶／生まれ／再生 | regeneration は霊的に生まれ直すこと（新生） |
 
 ### パース：そろえ方
 
