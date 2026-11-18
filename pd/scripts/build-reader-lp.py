@@ -437,6 +437,10 @@ def ja_text_markdown(path: Path) -> str:
         out.append(f'\n<p id="{aid}"><small>{label}　{page}</small></p>\n')
         out.append("\n" + fit(link("\n".join(trans).strip())) + "\n")
         for n in notes:
+            # 訳注は HTML の塊で出すので、中の Markdown（リンク・斜体・コード）はここで HTML にする
+            n = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", r'<a href="\2">\1</a>', n)
+            n = re.sub(r"`([^`]+)`", r"<code>\1</code>", n)
+            n = re.sub(r"(?<![\w*])\*([^*\s][^*]*?)\*(?![\w*])", r"<em>\1</em>", n)
             out.append(f"\n<p><small>{n}</small></p>\n")
         out.append(f'\n<details><summary>原文（{label}）</summary>\n\n<blockquote lang="{JA_LANG.get(path.name, "en")}">\n\n'
                    + fit(link("\n".join(orig).strip())) + "\n\n</blockquote>\n\n</details>\n")
