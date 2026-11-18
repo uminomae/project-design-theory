@@ -112,7 +112,7 @@ So far, the ways of thinking in management studies have been lined up from this 
 
 <a id="ldd-what"></a><strong>pjdhiro's view (translated by Claude):</strong>Until now, the concepts of a project have been grouped in ways like moving people by goals (management by objectives), by their motivation (motivation theory), or by a vision (vision-led management). I think I went one step further and looked for why those arise.
 
-<a id="ldd-answer"></a>The driving source of Love-Driven Development is what I want to call Love. On this page, Love is not limited to romantic love, and for now it is placed in two aspects: the aspect of a force by which people and things feel drawn, and the aspect of a property of the field that people are in. pjdhiro sees both as right, and each as one aspect, like what each of the men who touched the elephant in the poem of the previous chapter said. The analogy is the relation between gravity and spacetime. Gravity is felt as a force that draws things, and in general relativity it is also written as a property of the field, the curvature of spacetime (the chapter "[Isn't Love like gravity?](#ldd-well)"). The driving sources in [the management studies table](#ldd-management) were things of a size people can see with their eyes and talk about in words, like markets, goals, motivation and the entrepreneur's mind. What I want to call Love is what moves those from behind them. Love-Driven Development is the name pjdhiro wants to give, all together, to what is overlooked on the back side of the phenomenon called a project: this driving source, and the structures and processes it gives rise to.
+<a id="ldd-answer"></a>The driving source of Love-Driven Development is what I want to call Love. On this page, Love is not limited to romantic love, and for now it is placed in two aspects: the aspect of a force by which people and things feel drawn, and the aspect of a property of the field that people are in. pjdhiro sees both as right, and each as one aspect, like what each of the men who touched the elephant in the poem of the previous chapter said. The analogy is the relation between gravity and spacetime. Gravity is felt as a force that draws things, and in general relativity it is also written as a property of the field, the curvature of spacetime (the chapter "[Isn't Love like gravity?](#isnt-love-like-gravity)"). The driving sources in [the management studies table](#ldd-management) were things of a size people can see with their eyes and talk about in words, like markets, goals, motivation and the entrepreneur's mind. What I want to call Love is what moves those from behind them. Love-Driven Development is the name pjdhiro wants to give, all together, to what is overlooked on the back side of the phenomenon called a project: this driving source, and the structures and processes it gives rise to.
 
 <details><summary>More — what moves behind, before a vision is put into words</summary>
 
@@ -222,6 +222,20 @@ What I want to call Love cannot be seen with the eyes. Part 2 looks at the invis
 <!--/TURN-->
 
 <!--PART:Part 2|Seeing the invisible driving source through similar shapes-->
+
+<!--LENS:About this part|-->
+
+Among what was lined up in the chapter at the end of Part 1, "[What has the word Love pointed to?](#ldd-love-history)", there were writings that put Love not only as a human feeling but as a principle or force that moves the world: the working that gathers the four roots into one (Empedocles), and the love that moves the sun and the other stars (Dante). Love has also been written as if it worked even on the universe and on matter.
+
+On the other hand, if we group under creation the coming into being of things, and their becoming different from what they were, similar structures are reported both in the domains of matter and in the domains of mind and society. The shape of creation may be similar whether or not a thing is material. If so, might the structure and process by which what I want to call Love comes into being have the same shape too? This question lies beneath Part 2.
+
+From these two, Part 2 thinks about Love from the side of matter. Physics may feel like the thing farthest from Love. Even so, to see the invisible driving source, it first borrows things similar in shape. There are three chapters.
+
+- "[What shape does creation take?](#what-shape-does-creation-take)": the structure of how things come into being (field → wave → edge → vortex → bundle). It is the basic shape for seeing the shape in which Love comes into being.
+- "[Isn't Love like gravity?](#isnt-love-like-gravity)": that a force that draws things can also be written as a distortion of a field. It is for setting side by side Love's two faces: the force one feels drawn by, and the character of a field.
+- "[How far does it resemble physics in structure?](#how-far-does-it-resemble-physics-in-structure)": it gathers the borrowed shapes of physics, and looks at how far they resemble it and where they stop resembling it.
+
+<!--/LENS-->
 
 ## What shape does creation take?
 
@@ -1332,7 +1346,7 @@ A vortex is one state of a wave, and a wave one state of the field, and people h
 
 <a id="ldd-love-faces"></a><strong>pjdhiro's view (translated by Claude):</strong>The field may be Love, or the fluctuations and waves of the field may be Love. The figure of producing vortices as if in opposition from exactly opposite directions may be close to Love. I think it is precisely because the phenomenon there is easy to perceive that people lumped it together as romance and love.
 
-What I want to call Love has the aspect of a center that does not move and looks as if nothing is there, like the center of a gravity well (the chapter "[Isn't Love like gravity?](#ldd-well)"). It also has the aspect of the field people are in and its distortion, and the aspect of the figure of fluctuations of the field and opposing things meeting and producing vortices. Because one is inside, the field itself cannot be observed directly. What can be observed are the things moved by the distortion, and the signals that well up in the body. pjdhiro also estimates that the wave motion that makes up matter and love in the broad sense may follow the same laws, and sees the mind, as an apparatus of interpretation, as perceiving that as love and emotion (see also: [Supplementary material — structural similarities with physics](#ldd-physics)).
+What I want to call Love has the aspect of a center that does not move and looks as if nothing is there, like the center of a gravity well (the chapter "[Isn't Love like gravity?](#isnt-love-like-gravity)"). It also has the aspect of the field people are in and its distortion, and the aspect of the figure of fluctuations of the field and opposing things meeting and producing vortices. Because one is inside, the field itself cannot be observed directly. What can be observed are the things moved by the distortion, and the signals that well up in the body. pjdhiro also estimates that the wave motion that makes up matter and love in the broad sense may follow the same laws, and sees the mind, as an apparatus of interpretation, as perceiving that as love and emotion (see also: [Supplementary material — structural similarities with physics](#ldd-physics)).
 
 <a id="ldd-love-umbilical"></a>Another aspect is the stability of being connected without confirming, felt beyond metacognition. This aspect is about a sense pjdhiro felt at the end of observing their own inside.
 
@@ -1352,7 +1366,7 @@ That is, apart from the reassurance gained by confirming, there is a reassurance
 
 <details><summary>More — the aspects of center, field and vortex</summary>
 
-**A center that does not move and looks as if nothing is there.** In the figure of the gravity well, the center never moves once. Even so, everything around revolves along the hollow that center makes. From oneself standing inside, that center cannot be seen. What pjdhiro has been looking for is a driving source like this center (the chapter "[Isn't Love like gravity?](#ldd-well)").
+**A center that does not move and looks as if nothing is there.** In the figure of the gravity well, the center never moves once. Even so, everything around revolves along the hollow that center makes. From oneself standing inside, that center cannot be seen. What pjdhiro has been looking for is a driving source like this center (the chapter "[Isn't Love like gravity?](#isnt-love-like-gravity)").
 
 **The field people are in, and its distortion.** pjdhiro puts forward the hypothesis that sees the universe and us as drifting as if drawn by the distortions of the field of Love ([pjdhiro's hypothesis](#ldd-well) in the same chapter).
 
