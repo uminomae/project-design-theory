@@ -321,6 +321,10 @@ body.reader-flow .reader-article .tablefit.cols-4 td:nth-child(3) { width: 26%; 
 /* 先頭が回の番号のような細い列の表（business-design-syllabus の 15 回の表・2026-11-10） */
 body.reader-flow .reader-article .tablefit.num-first th:first-child,
 body.reader-flow .reader-article .tablefit.num-first td:first-child { width: 2.4em; }
+/* 狭い幅で、表の見出しが語の中で折れないよう、句を一まとまりにする（正本で <span class="nw">…</span>。
+   折れるのは句と句のあいだだけ。句そのものより列が狭ければ、句の中でも折れる。Love駆動開発の #ldd-compare の
+   「近く見える／ところ」が「とこ／ろ」と折れた・2026-11-18 #177） */
+body.reader-flow .reader-article .tablewrap .nw { display: inline-block; }
 body.reader-flow .reader-article .tablefit .en {
     display: block;
     margin-top: 2px;
