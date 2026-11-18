@@ -33,12 +33,28 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | `peirce-1893-evolutionary-love.md` | Peirce, "Evolutionary Love", *The Monist* 3(2), January 1893, pp.176–200 | 全文の訳（2026-11-17）。原文の欄を初出の誌面と照らし、訳を Claude が原文と段ごとに照らして直した（2026-11-17・#164）。人の校閲はまだ。ページ `pd/reader/peirce-evolutionary-love-ja.html` |
 | `peirce-1892-law-of-mind.md` | Peirce, "The Law of Mind", *The Monist* 2(4), July 1892, pp.533–559 | 全文の訳（2026-11-18・#173）。原文の欄を初出の誌面と照らした。訳は読む役四つに範囲を分けて案を出させ、Claude が原文と段ごとに照らして入れた。人の校閲はまだ。1893 の ¶5 がこの論文を挙げる。ページ `pd/reader/peirce-law-of-mind-ja.html` |
 | `peirce-1892-mans-glassy-essence.md` | Peirce, "Man's Glassy Essence", *The Monist* 3(1), October 1892, pp.1–22 | 全文の訳（2026-11-18・#175）。原文の欄を初出の誌面と照らし、式を誌面から写した。訳は読む役二つに範囲を分けて案を出させ、照らす役に原文と照らさせ、Claude が直して入れた。人の校閲はまだ。1893 の ¶21・¶23 がこの論文を挙げる。ページ `pd/reader/peirce-glassy-essence-ja.html` |
+| `carus-1892-onslaught-on-necessity.md` | Carus, "Mr. Charles S. Peirce's Onslaught on the Doctrine of Necessity", *The Monist* 2(4), July 1892, pp.560–582 | 全文の訳（2026-11-18・#175）。文字起こしが無いので、OCR から `scripts/ocr-to-md.py` で骨を作り、照らす役が全 23 頁を画像と照らして原文を作った。訳は読む役二つの案を照らす役が原文と照らし、Claude が直して入れた。人の校閲はまだ。1893 の ¶20 がこの論文の句を引く。ページ `pd/reader/carus-onslaught-on-necessity-ja.html` |
 
 次に訳す候補：パースは `../research/peirce-love-abduction/READING-ORDER-20261116.md` の表、1893「Evolutionary Love」が引く論文と本は Issue #175 の一覧。
 
 ## 用語集
 
 著者ごとに節を分ける。著者をまたぐ語（love・sympathy など）は、先にある訳語にそろえる。本をまたいで訳語をそろえるための表。決めたのは Claude。pjdhiro が違う訳語を選んだら、ここを直し、訳したファイルも直す。
+
+### ケーラス：表
+
+ケーラスの文は、パースへの反論。パースと共通の語（chance・law・habit・mind・feeling）はパースの表にそろえる。
+
+| 原語 | 訳語 | 覚え書き |
+|---|---|---|
+| necessity / the doctrine of necessity / necessitarianism | 必然／必然論／必然論 | 1892 |
+| determinism / indeterminism | 決定論／非決定論 | |
+| causation / causality / sequence | 因果／因果性／継起 | |
+| transformation | 変換 | |
+| regularity / uniformity | 規則性／一様性 | |
+| settle（opinion） / maxim | 落ち着かせる／格率 | パースの "The Fixation of Belief" の語 |
+| *a priori* / *a posteriori* | 原語のまま。初出に（先天的）（後天的） | カントの transcendental（先験的）と取り違えないため |
+| world-conception | 世界観 | |
 
 ### パース：そろえ方
 
