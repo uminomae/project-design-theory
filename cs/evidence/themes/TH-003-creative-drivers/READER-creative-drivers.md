@@ -116,11 +116,64 @@ page:
 
 「創造とは」の五段階は、渦を、二つが見分けられるのに一つであるかのよう、と書き、縁と渦はほとんど同時に起きる、とも書いています（[五段階の定義](five-stages.html#渦-vortex)）。リソとハドソンの書き方では、自分であることと、自分から自由であることは、どちらも消されずに並んでいます。どちらか一方に寄せて、自分を忘れるとも、自分を貫くとも書いていません。同じ段は、創造の瞬間には、感情を使いこなしながら感情に呑まれない、とも書きます。そして、自分を探さないことを学んではじめて、自分を見つけ、新しくする、と結びます。ぶつかる二つと、そのまとまりが、順に来るのでなく、霊感の瞬間という一つの時に重ねて書かれている、と読めます。この読みは Claude の見立てです。
 
+<a id="cd-countertransference"></a>この段を読んで、pjdhiro は次のように見ています。
+
+> <strong>pjdhiro の見方：</strong>これは逆転移の活用と似てますね。かのような、とか、自他境界の必要性とか、治療に必要な共感とか、逆説的で非二元的なことが語られてるはず。
+
+心理療法の原典には、相手の感情を自分の中で感じることと、それに呑まれないことを、同時に求める書き方があります。
+
+精神分析家のハイマンは、1950 年の短い論文で、分析家が患者に向けて感じるもの全部を逆転移と呼び、それを患者の無意識を調べる道具だと書きました。分析家の目指すところは、何も感じない冷たい観察者になることでも、感じたことをそのまま患者に表すことでもない、と書きます。自分の中にかき立てられた感情を、外へ吐き出さずに保ち、分析の仕事に従わせる、という書き方です。そのために、自由に動く注意と並んで、自由にかき立てられる感情の感じやすさが要る、と書きます。ただし、強い感情は観察を曇らせ、行いへ押すので、感じやすさは強くではなく広く、見分けられ、動けるものであるべきだ、とも書いています。
+
+来談者中心療法のロジャーズは、1957 年の論文で、治療に要る条件の一つに、共感的理解を挙げました。来談者の私的な世界を、自分のもののように感じる。しかし「かのように」の質を決して失わない。来談者の怒りや恐れを自分のもののように感じても、自分の怒りや恐れがそこに巻き込まれない、と書きます。デセティとジャクソンは、2004 年の論文で、この条件を、自分と相手が溶け合っていることに気づいたままでいる、能動的で制御の効いた働きと読みました。
+
+三つとも、感じることと、自分と相手を見分けていることを、どちらか一方に寄せずに同時に求めています。リソとハドソンの、感情を使いこなしながら呑まれない霊感の瞬間と、形が似て見えます。違うところもあります。ハイマンとロジャーズが書くのは、目の前の相手の感情を受け取る治療の場面です。リソとハドソンが書くのは、自分の感情から作品を作る創造の場面です。この並べ方は Claude の見立てです。共感の論は、読み物「[共感とは](https://uminomae.github.io/project-design-theory/reader/empathy.html#em-as-if)」にまとめています。
+
+<details><summary>詳しく — 原文の鍵の文</summary>
+
+<div class="tablefit cols-2">
+
+| ハイマン 1950 | 「to sustain the feelings which are stirred in him, as opposed to discharging them (as does the patient)」（p.82）<br>訳：自分の中にかき立てられた感情を、（患者がするように）吐き出すのでなく、保つこと |
+|---|---|
+| 同 | 「the analyst's emotional sensitivity needs to be extensive rather than intensive, differentiating and mobile」（p.82）<br>訳：分析家の感情の感じやすさは、強くではなく広く、見分けられ、動けるものである必要がある |
+| ロジャーズ 1957 | 「To sense the client's anger, fear, or confusion as if it were your own, yet without your own anger, fear, or confusion getting bound up in it」（写しの p.4）<br>訳：来談者の怒りや恐れや混乱を、自分のもののように感じる。それでいて、自分の怒りや恐れや混乱がそこに巻き込まれない |
+| デセティとジャクソン 2004 | 「the person remains aware of the merging between the self and the other」（p.74）<br>訳：人は、自分と相手が溶け合っていることに気づいたままでいる |
+
+</div>
+
+</details>
+
+この併記を読んで、pjdhiro は続けて次のように見ています。
+
+> <strong>pjdhiro の見方：</strong>創造が自己刷新という意味なら、気づく前の私から気づいた私として創造しています。それはクライアントと同時に起きてしまう。なのでクライアントも成長という治癒の一部が起きる
+
+ハイマンの論文には、この見方の両側にあたる記述があります。一つは、分析家の側で、気づく前に感じていたものに、あとから気づく流れです。ハイマンは、自分の例で、患者の話を聞いたときに、理由の分からない不安を感じたと書きます。患者の夢を聞いたあとで、それが何だったのかを理解した、と続けます。無意識では状況の重さをすぐにつかんでいたが、意識での理解は遅れてついてきた、という書き方です。
+
+もう一つは、分析家の感じたものが、分析家だけのものではない、という記述です。ハイマンは、逆転移は分析の関係の一部であるだけでなく、患者が創ったものであり、患者の人格の一部だ、と書きます。分析家は、そこから自分の問題の分析を続ける刺激を何度でも受け取る、とも書きます。感じたものが患者の無意識の葛藤を知る手がかりとして使われ、解釈され、扱われていくと、患者の自我が変わり、分析家を神でも悪魔でもない一人の人として見るようになる、と書いています。
+
+違うところもあります。ハイマンは、分析家の自分の問題の分析は分析家の私事で、感じたことを患者に伝えるのは正しくない、と書いています。二人のあいだで同時に起きる一つの変化としてではなく、分析家の側と患者の側に分けて書いています。pjdhiro の見方は、その二つを、同時に起きてしまう一つの創造として見ています。この並べ方は Claude の見立てです。
+
+<details><summary>詳しく — 原文の鍵の文</summary>
+
+<div class="tablefit cols-2">
+
+| 意識の理解が遅れる | 「Unconsciously I had grasped immediately the seriousness of the situation, hence the sense of worry which I experienced. But my conscious understanding lagged behind」（p.83）<br>訳：無意識では、状況の重さをすぐにつかんでいた。だから不安を感じた。けれども、意識での理解は遅れてついてきた |
+|---|---|
+| 患者が創ったもの | 「the analyst's counter-transference is not only part and parcel of the analytic relationship, but it is the patient's creation, it is a part of the patient's personality」（p.83）<br>訳：分析家の逆転移は、分析の関係の一部であるだけでなく、患者が創ったものであり、患者の人格の一部である |
+| 分析家の側 | 「he will find ample stimulus for taking himself to task again and again and for continuing the analysis of his own problems」（p.83）<br>訳：分析家は、自分を何度でも問い直し、自分の問題の分析を続ける刺激を、十分に受け取るだろう |
+
+</div>
+
+</details>
+
 <details><summary>出典</summary>
 
 出典：Winnicott (1965) "Communicating and Not Communicating Leading to a Study of Certain Opposites", in *The Maturational Processes and the Facilitating Environment*, pp.179–192（[International Universities Press 版の Internet Archive の走査](https://archive.org/details/maturationalproc0000dwwi)。貸出の形の本で、本の中の検索で段ごとに読みました。引いた段は原文と頁で照らしています。論文を頭から通しては読んでいません）。講演の年は p.179 の注、交流しない権利は p.179、芸術家の二つの傾きは p.185、交流しない芯と「自己に対する罪」は p.187、中間の領域と両端の居場所は pp.184・188・192、沈黙から生まれる交流は pp.188・191、防衛としての隠すことは p.187。訳は Claude。
 
 出典：Riso with Hudson (1996) *Personality Types: Using the Enneagram for Self-Discovery*, revised edition. Houghton Mifflin（第 6 章 Type Four。電子書籍で本文照合済。無料では [Internet Archive の貸し出し](https://archive.org/details/personalitytypes0000riso)で読める。頁は、電子書籍に埋められた印刷版の頁の印で書いた）。二つの動機と自分を見つけたい思いは p.135、気づきと気づきを越えることの張り合い・霊感の瞬間・感情に呑まれないこと・探さないことで見つけることは pp.135–136、表すことと没入の張り合いは p.139、内にこもると想像の中だけになるは p.149。訳は Claude。
+
+出典：Heimann, P. (1950) "On counter-transference", *International Journal of Psycho-Analysis* 31:81–84（[Internet Archive の誌面の走査](https://archive.org/details/international-journal-of-psychoanalysis_1950_31_part-1-2)。図書館の誌面を走査した巻。OCR の文字で本文照合済。逆転移を道具とする文と、冷たい観察者と表すことのどちらでもないことは p.81、感情を保つこと・自由にかき立てられる感じやすさ・広く動ける感じやすさは p.82、意識の理解が遅れる例・患者が創ったもの・分析家が自分の分析を続けること・感じたことを患者に伝えないことは p.83、患者の自我の変わり方は pp.83–84）。訳は Claude。
+
+出典：[Rogers (1957)](https://doi.org/10.1037/h0045357) "The necessary and sufficient conditions of therapeutic personality change", *Journal of Consulting Psychology* 21(2):95–103（2007 年の再録を打ち直した写しの [Wayback の記録](https://web.archive.org/web/20160129172525/http://www.shoreline.edu/dchris/psych236/Documents/Rogers.pdf)で読んだ。頁は写しの頁。p.4）／[Decety & Jackson (2004)](https://doi.org/10.1177/1534582304267187) "The functional architecture of human empathy", *Behavioral and Cognitive Neuroscience Reviews* 3(2):71–100（[Wayback の記録](https://web.archive.org/web/20060517100302/http://home.uchicago.edu:80/~decety/publications/Decety_BCNR_2004.pdf)。p.74）。二つは、読み物「共感とは」で本文照合したものを、読み直さずに使った。
 
 </details>
 
