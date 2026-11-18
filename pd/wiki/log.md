@@ -1394,3 +1394,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第二部の頭の部の案内）
 - pages: どちらも部の案内の文を引いていないので、本文はそのまま。checked を今の時刻にした。
+
+## [2026-11-18] check | Love駆動開発の巻末に、工事中の章「ほかの人の論と、どこが違って見えるか」を足した（本文で並べた論を一つの表にまとめた章）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（巻末の新しい章）
+- pages: 足した章は本文の章を指すまとめで、どちらのページも引いていないので、本文はそのまま。checked を今の時刻にした。
