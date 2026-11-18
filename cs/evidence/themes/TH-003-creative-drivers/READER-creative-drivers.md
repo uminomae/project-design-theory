@@ -110,11 +110,17 @@ page:
 
 渦は、二つが見分けられるのに、一つであるかのようにまとまることです。いちばん自分であり、いちばん自分から自由である、という霊感の瞬間の書き方は、二つが見分けられたまま一つであるかのようにまとまる、渦の形に似て見えます。同じ本は、張り合いから退いて内にこもると、創造は想像の中だけで起こるようになる、とも書いています。対立を外さずに抱えたまま、作る行いへ出ることが、渦が巻く条件にあたるのかもしれません。この並べ方は Claude の見立てで、リソとハドソンが五段階について書いているわけではありません。
 
+この霊感の瞬間の書き方を読んで、pjdhiro は次のように見ています。
+
+> <strong>pjdhiro の見方：</strong>この非二元さは重要です。渦を縁と同時と呼びたい散逸構造のような、☯️のような
+
+「創造とは」の五段階は、渦を、二つが見分けられるのに一つであるかのよう、と書き、縁と渦はほとんど同時に起きる、とも書いています（[五段階の定義](five-stages.html#渦-vortex)）。リソとハドソンの書き方では、自分であることと、自分から自由であることは、どちらも消されずに並んでいます。どちらか一方に寄せて、自分を忘れるとも、自分を貫くとも書いていません。同じ段は、創造の瞬間には、感情を使いこなしながら感情に呑まれない、とも書きます。そして、自分を探さないことを学んではじめて、自分を見つけ、新しくする、と結びます。ぶつかる二つと、そのまとまりが、順に来るのでなく、霊感の瞬間という一つの時に重ねて書かれている、と読めます。この読みは Claude の見立てです。
+
 <details><summary>出典</summary>
 
 出典：Winnicott (1965) "Communicating and Not Communicating Leading to a Study of Certain Opposites", in *The Maturational Processes and the Facilitating Environment*, pp.179–192（[International Universities Press 版の Internet Archive の走査](https://archive.org/details/maturationalproc0000dwwi)。貸出の形の本で、本の中の検索で段ごとに読みました。引いた段は原文と頁で照らしています。論文を頭から通しては読んでいません）。講演の年は p.179 の注、交流しない権利は p.179、芸術家の二つの傾きは p.185、交流しない芯と「自己に対する罪」は p.187、中間の領域と両端の居場所は pp.184・188・192、沈黙から生まれる交流は pp.188・191、防衛としての隠すことは p.187。訳は Claude。
 
-出典：Riso with Hudson (1996) *Personality Types: Using the Enneagram for Self-Discovery*, revised edition. Houghton Mifflin（第 6 章 Type Four。電子書籍で本文照合済。無料では [Internet Archive の貸し出し](https://archive.org/details/personalitytypes0000riso)で読める。頁は、電子書籍に埋められた印刷版の頁の印で書いた）。二つの動機と自分を見つけたい思いは p.135、気づきと気づきを越えることの張り合いと霊感の瞬間は pp.135–136、表すことと没入の張り合いは p.139、内にこもると想像の中だけになるは p.149。訳は Claude。
+出典：Riso with Hudson (1996) *Personality Types: Using the Enneagram for Self-Discovery*, revised edition. Houghton Mifflin（第 6 章 Type Four。電子書籍で本文照合済。無料では [Internet Archive の貸し出し](https://archive.org/details/personalitytypes0000riso)で読める。頁は、電子書籍に埋められた印刷版の頁の印で書いた）。二つの動機と自分を見つけたい思いは p.135、気づきと気づきを越えることの張り合い・霊感の瞬間・感情に呑まれないこと・探さないことで見つけることは pp.135–136、表すことと没入の張り合いは p.139、内にこもると想像の中だけになるは p.149。訳は Claude。
 
 </details>
 
