@@ -48,6 +48,7 @@
 
 - 書誌：Tversky, A., & Kahneman, D. (1981). The Framing of Decisions and the Psychology of Choice. *Science*, 211(4481), 453–458. DOI 10.1126/science.7455683（Crossref と一致）
 - 読んだ写し：https://www.csc2.ncsu.edu/faculty/mpsingh/local/Social/f24/wrap/readings/Tversky+Kahneman-framing-1981.pdf （ノースカロライナ州立大学の授業の読み物の頁に置かれた写し。権利は未確認。中身は JSTOR の誌面。表紙に誌名・巻・号・頁）。OpenAlex が挙げた Georgetown の機関リポジトリの handle（10822/789595）は 404。出版社・著者の写しは見つからなかった。
+- 回答者（2026-11-18 の読み直しで足した）：スタンフォード大学とブリティッシュコロンビア大学の学生が教室で短い質問紙に答えた（p.453）。問題 1 は N = 152、問題 2 は「A second group of respondents」で N = 155（p.453）。
 - 照合の状態：本文照合済（授業用の写し。誌名・巻・頁の見える出版社の版。pp.453・458）
 - 鍵の文：
   - 「A decision problem is defined by the acts or options among which one must choose, the possible outcomes or consequences of these acts, and the contingencies or conditional probabilities that relate outcomes to acts.」（p.453）訳：意思決定の問題は、選ばなければならない行為（選択肢）、その行為のありうる結果、結果と行為を結ぶ条件（条件付きの確率）によって定義される。
