@@ -30,13 +30,13 @@
 <div class="reader-lead" id="cited-translations"><span class="reader-lead__label">引いている文献の訳</span>
 この論文が引いている文献のうち、日本語に訳したものです。引いている段の順に並べました。どれも、その段の本文か訳注からもリンクしています。訳は Claude（AI）によるもので、人の校閲はまだです。
 <ul class="reader-lead__list">
-<li><a href="#p3">¶3</a>：<a href="james-substance-and-shadow-ja.html">ジェイムズ（父）『実体と影』の「創造的な愛」の所</a></li>
-<li><a href="#p5">¶5</a>：<a href="peirce-law-of-mind-ja.html">パース「心の法則」</a></li>
-<li><a href="#p7">¶7</a>：<a href="newcomb-political-economy-ja.html">ニューカム『政治経済学原理』の利己心と慈善の所</a></li>
+<li><a href="#p3">¶3</a>：<a href="james-substance-and-shadow-ja.html">ジェイムズ（父）『実体と影』（1863）の「創造的な愛」の所</a></li>
+<li><a href="#p5">¶5</a>：<a href="peirce-law-of-mind-ja.html">パース「心の法則」（1892）</a></li>
+<li><a href="#p7">¶7</a>：<a href="newcomb-political-economy-ja.html">ニューカム『政治経済学原理』（1886）の利己心と慈善の所</a></li>
 <li><a href="#p14">¶14</a>：<a href="mandeville-grumbling-hive-ja.html">マンデヴィル『蜂の寓話』（1714）の詩「ぶつぶつ言う蜂の巣」</a></li>
-<li><a href="#p20">¶20</a>：<a href="carus-onslaught-on-necessity-ja.html">ケーラス「パース氏の必然論への猛攻」</a>、<a href="herschel-quetelet-probabilities-ja.html">ハーシェル「ケトレーの確率論」（1850）</a></li>
-<li><a href="#p21">¶21</a>：<a href="kolliker-darwinsche-schopfungstheorie-ja.html">ケリカー「ダーウィンの創造説について」（1864）</a>、<a href="peirce-glassy-essence-ja.html">パース「人間のガラスのような本質」</a>（¶23 でも引く）</li>
-<li><a href="#p58">¶58</a>：<a href="darwin-wallace-1858-ja.html">ダーウィンとウォレスのリンネ協会の論文（1858）</a>、<a href="darwin-historical-sketch-ja.html">ダーウィン「歴史的概略」（『種の起源』第 3 版の巻頭）</a></li>
+<li><a href="#p20">¶20</a>：<a href="carus-onslaught-on-necessity-ja.html">ケーラス「パース氏の必然論への猛攻」（1892）</a>、<a href="herschel-quetelet-probabilities-ja.html">ハーシェル「ケトレーの確率論」（1850）</a></li>
+<li><a href="#p21">¶21</a>：<a href="kolliker-darwinsche-schopfungstheorie-ja.html">ケリカー「ダーウィンの創造説について」（1864）</a>、<a href="peirce-glassy-essence-ja.html">パース「人間のガラスのような本質」（1892）</a>（¶23 でも引く）</li>
+<li><a href="#p58">¶58</a>：<a href="darwin-wallace-1858-ja.html">ダーウィンとウォレスのリンネ協会の論文（1858）</a>、<a href="darwin-historical-sketch-ja.html">ダーウィン「歴史的概略」（『種の起源』第 3 版の巻頭・1861）</a></li>
 </ul>
 </div>
 
