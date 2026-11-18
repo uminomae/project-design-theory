@@ -175,6 +175,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は darwin-1861-historical-sketch.md（原文と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-darwin-historical-sketch-ja.md",
+        ROOT / "scripts/reader-darwin-historical-sketch-ja-template.html",
+        ROOT / "reader/darwin-historical-sketch-ja.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/creative-thinking/READER-creative-thinking.md",
         ROOT / "scripts/reader-creative-thinking-template.html",
         ROOT / "reader/creative-thinking.html",
@@ -309,6 +316,10 @@ JA_CHAPTERS = {
         "¶2": "第 57 節　結びの考察、人を動かす三つの動機",
         "¶16": "補遺　この本が示した経済学の主な原理の要約",
         "注1": "ニューカムの脚注",
+    },
+    "darwin-1861-historical-sketch.md": {
+        "¶1": "題と、ラマルクからウォレスまで",
+        "注1": "ダーウィンの脚注",
     },
 }
 

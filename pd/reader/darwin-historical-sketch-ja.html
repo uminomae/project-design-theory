@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/darwin-historical-sketch-ja.html を直接編集しないでください。
+  正本:   knowledge/translations/READER-darwin-historical-sketch-ja.md（訳の本文は darwin-1861-historical-sketch.md から差し込む）
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 訳の人の校閲はまだだが、pjdhiro の判断で noindex を外し、sitemap.xml・llms.txt・llms-full.txt に入れた（2026-11-18）。校閲前の帯は残す
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「ダーウィン「歴史的概略」（『種の起源』第 3 版の巻頭）を、日本語で読む」のページです。チャールズ・ダーウィン（Charles Darwin）が『種の起源』の第 3 版（1861）から巻頭に置いた「An Historical Sketch of the Recent Progress of Opinion on the Origin of Species（種の起源についての見解の近年の進展の歴史的概略）」（pp.xiii–xix）の全文を、段ごとに日本語に訳したページ。パースは「進化的な愛」（1893）で、大きな発見が独立に同時に起こる例として、この概略を挙げる。訳を主に置き、英語の原文は段ごとの畳みに置く。原文はパブリックドメインで、第 3 版の走査（Internet Archive）から起こした。訳は Claude（AI）によるもので、人の校閲はまだ。
+  訳注は Claude の注。原文の段の番号（¶）は誌面の段の分け方による通し番号、p. は誌面の頁。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ダーウィン「歴史的概略」（『種の起源』第 3 版の巻頭）を、日本語で読む | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/darwin-historical-sketch-ja.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="チャールズ・ダーウィン（Charles Darwin）が『種の起源』の第 3 版（1861）から巻頭に置いた「An Historical Sketch of the Recent Progress of Opinion on the Origin of Species（種の起源についての見解の近年の進展の歴史的概略）」（pp.xiii–xix）の全文を、段ごとに日本語に訳したページ。パースは「進化的な愛」（1893）で、大きな発見が独立に同時に起こる例として、この概略を挙げる。訳を主に置き、英語の原文は段ごとの畳みに置く。原文はパブリックドメインで、第 3 版の走査（Internet Archive）から起こした。訳は Claude（AI）によるもので、人の校閲はまだ。">
+    <meta property="og:title" content="ダーウィン「歴史的概略」（『種の起源』第 3 版の巻頭）を、日本語で読む">
+    <meta property="og:description" content="チャールズ・ダーウィン（Charles Darwin）が『種の起源』の第 3 版（1861）から巻頭に置いた「An Historical Sketch of the Recent Progress of Opinion on the Origin of Species（種の起源についての見解の近年の進展の歴史的概略）」（pp.xiii–xix）の全文を、段ごとに日本語に訳したページ。パースは「進化的な愛」（1893）で、大きな発見が独立に同時に起こる例として、この概略を挙げる。訳を主に置き、英語の原文は段ごとの畳みに置く。原文はパブリックドメインで、第 3 版の走査（Internet Archive）から起こした。訳は Claude（AI）によるもので、人の校閲はまだ。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/darwin-historical-sketch-ja.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta property="og:image" content="https://uminomae.github.io/project-design-theory/assets/ogp/peirce-love-abduction.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ダーウィン「歴史的概略」（『種の起源』第 3 版の巻頭）を、日本語で読む — 中心から三つの点を独立へ押し出し、円い運動で調和へ引き寄せる図">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ダーウィン「歴史的概略」（『種の起源』第 3 版の巻頭）を、日本語で読む">
+    <meta name="twitter:image" content="https://uminomae.github.io/project-design-theory/assets/ogp/peirce-love-abduction.png">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-18">
+    <meta property="article:modified_time" content="2026-11-18">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "ダーウィン「歴史的概略」（『種の起源』第 3 版の巻頭）を、日本語で読む",
+          "description": "チャールズ・ダーウィン（Charles Darwin）が『種の起源』の第 3 版（1861）から巻頭に置いた「An Historical Sketch of the Recent Progress of Opinion on the Origin of Species（種の起源についての見解の近年の進展の歴史的概略）」（pp.xiii–xix）の全文を、段ごとに日本語に訳したページ。パースは「進化的な愛」（1893）で、大きな発見が独立に同時に起こる例として、この概略を挙げる。訳を主に置き、英語の原文は段ごとの畳みに置く。原文はパブリックドメインで、第 3 版の走査（Internet Archive）から起こした。訳は Claude（AI）によるもので、人の校閲はまだ。",
+          "keywords": "ダーウィン, Charles Darwin, 歴史的概略, Historical Sketch, 種の起源, 自然選択, ウォレス, ラマルク, 同時発見, パース, 進化的な愛, 日本語訳, 対訳",
+          "url": "https://uminomae.github.io/project-design-theory/reader/darwin-historical-sketch-ja.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/darwin-historical-sketch-ja.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-18",
+          "dateModified": "2026-11-18",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Person", "name": "Charles Darwin"}, {"@type": "Thing", "name": "自然選択"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。訳と解説の文責"},
+          "translationOfWork": {"@type": "Chapter", "name": "An Historical Sketch of the Recent Progress of Opinion on the Origin of Species", "author": {"@type": "Person", "name": "Charles Darwin"}, "datePublished": "1861", "isPartOf": "On the Origin of Species, 3rd ed., John Murray", "pagination": "xiii-xix", "sameAs": "https://archive.org/details/b28075134"},
+          "translator": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。人の校閲はまだ"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「ダーウィン「歴史的概略」（『種の起源』第 3 版の巻頭）を、日本語で読む」のページです。チャールズ・ダーウィン（Charles Darwin）が『種の起源』の第 3 版（1861）から巻頭に置いた「An Historical Sketch of the Recent Progress of Opinion on the Origin of Species（種の起源についての見解の近年の進展の歴史的概略）」（pp.xiii–xix）の全文を、段ごとに日本語に訳したページ。パースは「進化的な愛」（1893）で、大きな発見が独立に同時に起こる例として、この概略を挙げる。訳を主に置き、英語の原文は段ごとの畳みに置く。原文はパブリックドメインで、第 3 版の走査（Internet Archive）から起こした。訳は Claude（AI）によるもので、人の校閲はまだ。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この訳は AI（Claude）によるものです。</b>人の校閲はまだです。引用や論拠には、各段の「原文」を使ってください。
+            </div>
+            <header class="reader-hero">
+                <h1><span style="display:inline-block">ダーウィン「歴史的概略」（『種の起源』第 3 版の巻頭）を、</span><span style="display:inline-block">日本語で読む</span></h1>
+                <p class="reader-meta">
+                    最終更新: 2026-11-18 ／ 状態: 訳は人の校閲前<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/translations/darwin-1861-historical-sketch.md">対訳の正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p class="reader-lead"><span class="reader-lead__label">これは何か</span>チャールズ・ダーウィン（Charles Darwin・1809–1882）が、『種の起源』の第 3 版（1861）から巻頭に置いた「An Historical Sketch of the Recent Progress of Opinion on the Origin of Species（種の起源についての見解の近年の進展の歴史的概略）」の全文を、段ごとに日本語に訳したページです。ダーウィンは、種は変わるという考えを自分より前に述べた人々を、ラマルクから順に挙げます。マシューが 1831 年に自然選択と同じ見方を書きながら気づかれずにいたこと、ウォレスとの論文が 1858 年にリンネ協会で読まれたこと、似た見方がほぼ同じころに別々の人に生じた例（ゲーテ・エラズマス・ダーウィン・ジョフロワ）も書かれています。パースは「進化的な愛」（1893）の ¶58 で、大きな発見が独立に、ほぼ同時に起こる例として、この概略を挙げました。</p>
+
+<div class="reader-lead"><span class="reader-lead__label">原典と訳</span>
+原典は Charles Darwin, "An Historical Sketch of the Recent Progress of Opinion on the Origin of Species", <i>On the Origin of Species by Means of Natural Selection</i>, 3rd ed., London: John Murray, 1861, pp.xiii–xix です。原文は、第 3 版の走査（<a href="https://archive.org/details/b28075134">Internet Archive</a>）の OCR の文字から起こし、全 7 頁を画像と照らしたものを載せています。<b>訳は Claude（AI）によるもので、人の校閲はまだです。</b>誤訳がありうるので、引用や論拠には原文を使ってください。
+</div>
+
+<div class="reader-lead"><span class="reader-lead__label">読み方</span>
+<ul class="reader-lead__list">
+<li>この概略は、英国で出た版では第 3 版から巻頭に置かれ、のちの版で書き足されました。ここに訳したのは第 3 版の形です。のちの版で足された人と段は、ここにはありません。</li>
+<li>段ごとに訳を置き、その下の「原文」の畳みに原文を置きました。原文はほとんど英語で、フランス語の引用もあります。段の頭の「¶6　p.xiv–xv」は、段の通し番号と、本の頁（ローマ数字）です。訳と原文の中の [p.xv] は、頁が変わる所です。</li>
+<li>「訳注：」で始まる小さな字の行は、Claude の注です。</li>
+<li>パースの側の文は「<a href="peirce-evolutionary-love-ja.html">パース「進化的な愛」を、日本語で読む</a>」の ¶58 にあります。</li>
+</ul>
+</div>
+
+<details class="acc"><summary>載せた版と、権利について</summary>
+
+<ul>
+<li>原文は 1861 年に出版され、ダーウィンは 1882 年に亡くなっています。日本でも米国でも、著作権の保護期間は終わっています（パブリックドメイン）。</li>
+<li>原文は、走査の OCR の文字から段を起こし、全 7 頁を画像と照らして、文字（OCR の誤り・フランス語とドイツ語のアクセント）・斜体・行末で切れた語・脚注を直しました。</li>
+<li>訳は、既に出ている日本語訳を見ずに、Claude が原文から付けました。フランス語の引用は、フランス語から訳しました。</li>
+</ul>
+</details>
+
+<details class="sec" id="題とラマルクからウォレスまで" open><summary>題と、ラマルクからウォレスまで</summary><div class="secbody">
+
+
+<p id="p1"><small>¶1　p.xiii</small></p>
+
+<p>種の起源についての見解の近年の進展の歴史的概略</p>
+<details class="acc"><summary>原文（¶1）</summary>
+
+<blockquote lang="en">
+
+<p>An Historical Sketch of the recent Progress of Opinion on the Origin of Species.</p>
+</blockquote>
+
+</details>
+
+<p id="p2"><small>¶2　p.xiii</small></p>
+
+<p>ここでは、種の起源についての見解の進展を、短く、しかし不完全なかたちで概観してみたい。博物学者の大多数は、種（species）は不変の産物であり、別々に創造された（created）と信じている。この見方は、多くの著者によって巧みに主張されてきた。他方、少数の博物学者は、種は変化（modification）を受けるのであり、今ある生物の形は、先にあった形から真の生殖（generation）によって由来したのだと信じている。古典期からビュフォンの時代までの著者は、私がその著作に通じていないので、とばすことにすると、この主題についての結論で大きな注目を集めた最初の人はラマルクであった。この、名声にふさわしい博物学者は、1801年に初めて自分の見解を発表し、1809年に『動物哲学』（<em>Philosophie Zoologique</em>）で大きく広げ、さらにその後1815年に『無脊椎動物誌』（<em>Hist. Nat. des Animaux sans Vertèbres</em>）の序論で広げた。これらの著作で彼は、人間を含むすべての種がほかの種から由来したという学説を支持している。有機界でも無機界でも、あらゆる変化は奇跡的な介入ではなく法則の結果であろう、ということに初めて注意を向けさせたのは、彼の際立った功績である。ラマルクが種の漸進的な変化という結論に導かれたのは、主に、種と変種（variety）を区別することの難しさ、ある生物群で形がほとんど完全に段階的につながっていること、そして飼育栽培されている産物との類比によってであったようである。変化の手段については、彼は、生活の物理的条件の直接の作用にいくらかを、すでにある形どうしの交雑にいくらかを、そして使用と不使用、すなわち習性の効果に多くを帰した。この最後の作用に、彼は自然のあらゆる見事な適応を帰しているようである。たとえば、木の枝の葉を食べるためのキリンの長い首がそうである。しかし彼は同時に、前進的な発達の法則も信じていた。そして、こうしてすべての生物の形が前進する傾向にあったので、ごく単純な産物が今日も存在することを説明するために、彼は、そのような形は今も自然発生していると主張した。<a href="#n1">[注1]</a></p>
+<details class="acc"><summary>原文（¶2）</summary>
+
+<blockquote lang="en">
+
+<p>I will here attempt to give a brief, but imperfect sketch of the progress of opinion on the Origin of Species. The great majority of naturalists believe that species are immutable productions, and have been separately created. This view has been ably maintained by many authors. Some few naturalists, on the other hand, believe that species undergo modification, and that the existing forms of life have descended by true generation from pre-existing forms. Passing over authors from the classical period to that of Buffon, with whose writings I am not familiar, Lamarck was the first man whose conclusions on this subject excited much attention. This justly-celebrated naturalist first published his views in 1801, and he much enlarged them in 1809 in his ‘Philosophie Zoologique,’ and subsequently, in 1815, in his Introduction to his ‘Hist. Nat. des Animaux sans Vertèbres.’ In these works he upholds the doctrine that all species, including man, are descended from other species. He first did the eminent service of arousing attention to the probability of all change in the organic as well as in the inorganic world being the result of law, and not of miraculous interposition. Lamarck seems to have been chiefly led to his conclusion on the gradual change of species, by the difficulty of distinguishing species and varieties, by the almost perfect gradation of forms in certain organic groups, and by the analogy of domestic productions. With respect to the means of modification, he attributed something to the direct action of the physical conditions of life, something to the crossing of already existing forms, and much to use and disuse, that is, to the effects of habit. To this latter agency he seems to attribute all the beautiful adaptations in nature;—such as the long neck of the giraffe for browsing on the branches of trees. But he likewise believed in a law of progressive development; and as all the forms of life thus tended to progress, in order to account for the existence at the present day of very simple productions, he maintained that such forms were now spontaneously generated.*</p>
+</blockquote>
+
+</details>
+
+<p id="p3"><small>¶3　p.xiv</small></p>
+
+<p>ジョフロワ・サンティレールは、その息子が書いた『伝記』（‘Life’）に述べられているとおり、早くも1795年に、私たちが種（species）と呼んでいるものは同じ型のさまざまな退化形ではないかと考えた。同じ形が万物の起源以来ずっと続いてきたのではない、という確信を彼が発表したのは、1828年になってからであった。ジョフロワは、変化の原因として、主に生活の条件、すなわち「取り巻く世界」（<em>monde ambiant</em>）に頼っていたようである。彼は結論を引き出すのに慎重で、今ある種が現に変化（modification）を受けつつあるとは信じていなかった。そして息子が付け加えているように、「したがってこれは、仮に未来がこの問題を扱いうるとしても、まったく未来に残しておくべき問題である」。</p>
+<details class="acc"><summary>原文（¶3）</summary>
+
+<blockquote lang="en">
+
+<p>Geoffroy Saint Hilaire, as is stated in his ‘Life,’ written by his son, suspected, as early as 1795, that what we call species are various degenerations of the same type. It was not until 1828 that he published his conviction that the same forms have not been perpetuated since the origin of all things. Geoffroy seems to have relied chiefly on the conditions of life, or the “<em>monde ambiant</em>,” as the cause of change. He was cautious in drawing conclusions, and did not believe that existing species are now undergoing modification; and, as his son adds, “C’est donc un problème à réserver entièrement à l’avenir, supposé même que l’avenir doive avoir prise sur lui.”</p>
+</blockquote>
+
+</details>
+
+<p id="p4"><small>¶4　p.xiv</small></p>
+
+<p>イングランドでは、のちにマンチェスターの首席司祭となったW・ハーバート閣下・師が、1822年の『園芸協会紀要』（‘Horticultural Transactions’）第4巻と、『ヒガンバナ科』（‘Amaryllidaceæ’）についての著作（1837年、19頁、339頁）で、「園芸の実験によって、反駁の余地なく確立されたのは、植物の種（species）は変種（variety）のうちの、より高く、より永続的な部類にすぎない、ということである」と言明している。彼は同じ見方を動物にも広げる。首席司祭は、各属のただ一つの種が、もともと非常に可塑的な状態で創造され（created）、それらが、主に交雑によって、しかし変異によっても、今あるすべての種を生み出したと信じている。</p>
+<details class="acc"><summary>原文（¶4）</summary>
+
+<blockquote lang="en">
+
+<p>In England the Hon. and Rev. W. Herbert, afterwards Dean of Manchester, in the fourth volume of the ‘Horticultural Transactions,’ 1822, and in his work on the ‘Amaryllidaceæ’ (1837, p. 19, 339), declares that “horticultural experiments have established, beyond the possibility of refutation, that botanical species are only a higher and more permanent class of varieties.” He extends the same view to animals. The Dean believes that single species of each genus were created in an originally highly plastic condition, and that these have produced, chiefly by intercrossing, but likewise by variation, all our existing species.</p>
+</blockquote>
+
+</details>
+
+<p id="p5"><small>¶5　p.xiv</small></p>
+
+<p>1826年、グラント教授は、淡水海綿（Spongilla）についてのよく知られた論文（『エディンバラ哲学雑誌』（Edinburgh Philosophical Journal）第14巻、283頁）の結びの段落で、種（species）はほかの種から由来し、変化（modification）の過程で改良されていくという信念をはっきりと表明している。この同じ見方は、1834年に『ランセット』（‘Lancet’）に掲載された彼の第55講義でも示された。</p>
+<details class="acc"><summary>原文（¶5）</summary>
+
+<blockquote lang="en">
+
+<p>In 1826, Professor Grant, in the concluding paragraph in his well-known paper (Edinburgh Philosophical Journal, vol. xiv. p. 283) on the Spongilla, clearly declares his belief that species are descended from other species, and that they become improved in the course of modification. This same view was given in his 55th Lecture, published in the ‘Lancet’ in 1834.</p>
+</blockquote>
+
+</details>
+
+<p id="p6"><small>¶6　p.xiv–xv</small></p>
+
+<p>1831年、パトリック・マシュー氏は『造船用材と樹木栽培』（‘Naval Timber and Arboriculture’）についての著作を出した。その中で彼は、種（species）の起源について、ウォレス氏と私が『リンネ協会誌』（‘Linnean Journal’）で提唱した見方（これはのちに触れる）、そして本書で詳しく述べている見方と、まったく同じ見方を示している。不運なことに、マシュー氏はこの見方を、別の主題を扱った著作の付録の中で、散らばった箇所でごく短く示しただけであったので、1860年4月7日にマシュー氏自身が [p.xv] 『園芸家年代記』（‘Gardener’s Chronicle’）でそれに注意を向けるまで、気づかれずにいた。マシュー氏の見方と私の見方との違いは、あまり重要ではない。彼は、世界は相次ぐ時期にほとんど住む者がいなくなり、それから再び生物で満たされたと考えているようである。また彼は、別の可能性として、新しい形が「以前の集合体の鋳型や胚がまったく無くても」生じうるとしている。いくつかの箇所を私が理解できているかは確かでないが、彼は生活の条件の直接の作用に大きな影響を帰しているようである。しかし彼は、自然選択（natural selection）の原理の力のすべてを、はっきりと見ていた。マシュー氏が私に先んじていたことを全面的に認めた私の手紙（『園芸家年代記』4月13日号に掲載）に答えて、彼は寛大な率直さで、次の一節を含む手紙（『園芸家年代記』5月12日号）を書いた。「私には、この自然の法則の着想は、自明の事実として直観的に、集中した思考の努力をほとんどせずにやって来た。この点では、ダーウィン氏のほうが私よりも発見に多くの功績があるように見える。私にはそれは発見とは思えなかったのである。彼はそれを帰納的な推論によって練り上げ、ゆっくりと、しかるべき慎重さをもって、事実から事実へと総合的に道を進めたように見える。これに対して私の場合は、自然の仕組みを全体として一瞥することによって、種（species）のこの選択的な産出を、先験的に（<em>à priori</em>）認めうる事実と見積もったのである。それは、十分な理解力をもつ偏見のない心であれば、指し示されるだけで認めるような公理であった。」</p>
+<details class="acc"><summary>原文（¶6）</summary>
+
+<blockquote lang="en">
+
+<p>In 1831 Mr. Patrick Matthew published his work on ‘Naval Timber and Arboriculture,’ in which he gives precisely the same view on the origin of species as that (presently to be alluded to) propounded by Mr. Wallace and myself in the ‘Linnean Journal,’ and as that enlarged on in the present volume. Unfortunately the view was given by Mr. Matthew very briefly in scattered passages in an Appendix to a work on a different subject, so that it remained unnoticed until Mr. Matthew himself drew attention to it in the [p.xv] ‘Gardener’s Chronicle,’ on April 7th, 1860. The differences of Mr. Matthew’s view from mine are not of much importance: he seems to consider that the world was nearly depopulated at successive periods, and then re-stocked; and he gives, as an alternative, that new forms may be generated “without the presence of any mould or germ of former aggregates.” I am not sure that I understand some passages; but it seems that he attributes much influence to the direct action of the conditions of life. He clearly saw, however, the full force of the principle of natural selection. In answer to a letter of mine (published in Gard. Chron., April 13th), fully acknowledging that Mr. Matthew had anticipated me, he with generous candour wrote a letter (Gard. Chron. May 12th) containing the following passage:—“To me the conception of this law of Nature came intuitively as a self-evident fact, almost without an effort of concentrated thought. Mr. Darwin here seems to have more merit in the discovery than I have had; to me it did not appear a discovery. He seems to have worked it out by inductive reason, slowly and with due caution to have made his way synthetically from fact to fact onwards; while with me it was by a general glance at the scheme of Nature that I estimated this select production of species as an <em>à priori</em> recognisable fact—an axiom requiring only to be pointed out to be admitted by unprejudiced minds of sufficient grasp.”</p>
+</blockquote>
+
+</details>
+
+<p id="p7"><small>¶7　p.xv</small></p>
+
+<p>ラフィネスクは、1836年に出た『北アメリカ新植物誌』（‘New Flora of North America’）で（6頁）次のように書いた。「すべての種（species）は、かつては変種（variety）であったのかもしれず、多くの変種は、一定の固有の形質を帯びることによって、しだいに種になりつつある。」しかし、もっと先で（18頁）彼は「属のもとの型、すなわち祖先を除いて」と付け加えている。</p>
+<details class="acc"><summary>原文（¶7）</summary>
+
+<blockquote lang="en">
+
+<p>Rafinesque, in his ‘New Flora of North America,’ published in 1836, wrote (p. 6) as follows:—“All species might have been varieties once, and many varieties are gradually becoming species by assuming constant and peculiar characters:” but farther on (p. 18) he adds, “except the original types or ancestors of the genus.”</p>
+</blockquote>
+
+</details>
+
+<p id="p8"><small>¶8　p.xv</small></p>
+
+<p>1843年から44年に、ハルデマン教授（『ボストン博物学雑誌』（Boston Journal of Nat. Hist. U. States）第4巻、468頁）は、種（species）の発達と変化（modification）という仮説に賛成する論と反対する論を、巧みに示した。彼は変化の側に傾いているようである。</p>
+<details class="acc"><summary>原文（¶8）</summary>
+
+<blockquote lang="en">
+
+<p>In 1843–44 Professor Haldeman (Boston Journal of Nat. Hist. U. States, vol. iv. p. 468) has ably given the arguments for and against the hypothesis of the development and modification of species: he seems to lean towards the side of change.</p>
+</blockquote>
+
+</details>
+
+<p id="p9"><small>¶9　p.xv–xvi</small></p>
+
+<p>『創造の痕跡』（‘Vestiges of Creation’）は1844年に出た。大きく改良された第10版（1853年）で、匿名の著者は（155頁）こう述べている。「よく考えたうえで定めた命題は、次のとおりである。生命をもつ存在のいくつもの系列は、もっとも単純で古いものから、もっとも高く新しいものまで、神の摂理のもとで、<em>第一に</em>、生命の形に与えられた一つの推進力の結果である。この推進力は、生命の形を、定まった時期に、世代を通して、体制の段階を経て前進させ、その段階は最高の双子葉植物と脊椎動物で終わる。これらの段階は数が少なく、ふつう有機的な性格の隔たりによって区切られており、その隔たりは、類縁を確かめるうえで [p.xvi] 実際上の難しさになっていることがわかる。<em>第二に</em>、生命力に結びついたもう一つの推進力の結果である。この推進力は、世代を重ねるうちに、食物、すみかの性質、気象の作用といった外の事情に合わせて、生物の構造を変えようとする。これらが自然神学者のいう『適応』（adaptations）である。」著者は、体制は突然の跳躍によって前進するが、生活の条件が生む効果は漸進的だと信じているらしい。彼は一般的な根拠から、種（species）は不変の産物ではないと、大きな説得力をもって論じている。しかし私には、想定された二つの「推進力」が、自然全体に見られる数多くの見事な相互適応を、科学的な意味でどう説明するのかがわからない。たとえばキツツキがどのようにしてその独特の生活習性に適応するようになったかについて、これで何かの洞察が得られるとは思えない。この著作は、初期の版では正確な知識にとぼしく、科学的な慎重さを大きく欠いていたものの、その力強く華やかな文体によって、ただちに非常に広く読まれた。私の考えでは、それはこの国でこの主題に注意を呼び起こし、偏見を取り除き、そうして似た見方を受け入れる地ならしをしたという点で、すぐれた役を果たした。</p>
+<p><small>訳注：『創造の痕跡』（*Vestiges of the Natural History of Creation*）は匿名で出版された。著者はのちにロバート・チェンバーズと明かされた。</small></p>
+
+<details class="acc"><summary>原文（¶9）</summary>
+
+<blockquote lang="en">
+
+<p>The ‘Vestiges of Creation’ appeared in 1844. In the tenth and much improved edition (1853) the anonymous author says (p. 155):—“The proposition determined on after much consideration is, that the several series of animated beings, from the simplest and oldest up to the highest and most recent, are, under the providence of God, the results, <em>first</em>, of an impulse which has been imparted to the forms of life, advancing them, in definite times, by generation, through grades of organisation terminating in the highest dicotyledons and vertebrata, these grades being few in number, and generally marked by intervals of organic character, which we find to be [p.xvi] a practical difficulty in ascertaining affinities; <em>second</em>, of another impulse connected with the vital forces, tending, in the course of generations, to modify organic structures in accordance with external circumstances, as food, the nature of the habitat, and the meteoric agencies, these being the ‘adaptations’ of the natural theologian.’ The author apparently believes that organisation progresses by sudden leaps, but that the effects produced by the conditions of life are gradual. He argues with much force on general grounds that species are not immutable productions. But I cannot see how the two supposed “impulses” account in a scientific sense for the numerous and beautiful co-adaptations which we see throughout nature; I cannot see that we thus gain any insight how, for instance, a woodpecker has become adapted to its peculiar habits of life. The work, from its powerful and brilliant style, though displaying in the earlier editions little accurate knowledge and a great want of scientific caution, immediately had a very wide circulation. In my opinion it has done excellent service in calling in this country attention to the subject, in removing prejudice, and in thus preparing the ground for the reception of analogous views.</p>
+</blockquote>
+
+</details>
+
+<p id="p10"><small>¶10　p.xvi</small></p>
+
+<p>1846年、老練な地質学者J・ドマリウス・ダロワ氏は、短いがすぐれた論文（『ブリュッセル王立アカデミー紀要』（‘Bulletins de l’Acad. Roy. Bruxelles’）第13巻、581頁）で、新しい種（species）は別々に創造された（created）というより、変化を伴う由来（descent with modification）によって生み出されたというほうが確からしい、という意見を発表した。著者がこの意見を初めて公にしたのは1831年であった。</p>
+<details class="acc"><summary>原文（¶10）</summary>
+
+<blockquote lang="en">
+
+<p>In 1846 the veteran geologist M. J. d’Omalius d’Halloy published in an excellent, though short paper (‘Bulletins de l’Acad. Roy. Bruxelles,’ tom. xiii. p. 581), his opinion that it is more probable that new species have been produced by descent with modification, than that they have been separately created: the author first promulgated this opinion in 1831.</p>
+</blockquote>
+
+</details>
+
+<p id="p11"><small>¶11　p.xvi–xvii</small></p>
+
+<p>オーウェン教授は、1849年に（『肢の本性』（‘Nature of Limbs’）86頁）次のように書いた。「原型の観念は、それを実際に例示する動物の種（species）が存在するよりずっと前に、この惑星の上で、さまざまなそうした変形（modifications）のもとに肉体として現れていた。そのような有機的な現象の秩序ある継起と前進が、どのような自然法則、あるいは二次的原因にゆだねられたのかを、私たちはまだ知らない。」1858年の英国学術協会での会長講演で、彼は（li頁）「創造の力が絶えず働くという公理、すなわち生物が定められたとおりに生成するという公理」について語っている。もっと先で（xc頁）、地理的分布に触れたあと、彼はこう付け加える。「これらの現象は、ニュージーランドのキーウィ（Apteryx）とイングランドのアカライチョウが、それぞれの島の中で、その島のために、別々に創造されたもの（creations）だという結論への私たちの信頼を揺るがす。また、動物学者が『創造』（creation）という語で意味しているのは『それが何であるかを自分が知らない過程』だということを、つねに心に留めておくのがよいだろう。」彼はこの考えをさらに広げて、アカライチョウのような例が「そうした島の中で、その島のために、その鳥が別に創造されたことの証拠として動物学者によって挙げられるとき、動物学者が主に表しているのは、アカライチョウがどのようにしてそこに、しかもそこだけに [p.xvii] 居るようになったのかを自分は知らない、ということである。同時に、このように無知を表す言い方によって、その鳥も島々も、ともに大いなる第一の創造因にその起源を負っている、という信念をも示している」と付け加えている。</p>
+<details class="acc"><summary>原文（¶11）</summary>
+
+<blockquote lang="en">
+
+<p>Professor Owen, in 1849 (‘Nature of Limbs,’ p. 86), wrote as follows:—“The archetypal idea was manifested in the flesh under diverse such modifications, upon this planet, long prior to the existence of those animal species that actually exemplify it. To what natural laws or secondary causes the orderly succession and progression of such organic phenomena may have been committed, we, as yet, are ignorant.” In his Address to the British Association, in 1858, he speaks (p. li.) of “the axiom of the continuous operation of creative power, or of the ordained becoming of living things.” Farther on (p. xc.), after referring to geographical distribution, he adds, “These phenomena shake our confidence in the conclusion that the Apteryx of New Zealand and the Red Grouse of England were distinct creations in and for those islands respectively. Always, also, it may be well to bear in mind that by the word ‘creation’ the zoologist means ‘a process he knows not what.’” He amplifies this idea by adding, that when such cases as that of the Red Grouse are “enumerated by the zoologist as evidence of distinct creation of the bird in and for such islands, he chiefly expresses that he knows not how the Red [p.xvii] Grouse came to be there, and there exclusively; signifying also by this mode of expressing such ignorance his belief, that both the bird and the islands owed their origin to a great first Creative Cause.”</p>
+</blockquote>
+
+</details>
+
+<p id="p12"><small>¶12　p.xvii</small></p>
+
+<p>イジドール・ジョフロワ・サンティレール氏は、1850年に行った講義（その要約が1851年1月の『動物学評論・雑誌』（‘Revue et Mag. de Zoolog.’）に載った）で、種の形質（specific characters）について、次のように信じる理由を短く述べている。それは「各々の種（espèce）について、その種が同じ状況のなかで存続するかぎり固定している。取り巻く状況が変わるならば、形質は変化する」。「要するに、野生の動物の<em>観察</em>は、すでに種の<em>限られた</em>変異性を示している。野生から家畜になった動物と、家畜から野生に戻った動物についての<em>実験</em>は、それをいっそうはっきりと示す。さらに、これらの同じ実験は、生じた違いが<em>属を分けるほどの値打ち</em>をもちうることを証明している。」彼は『博物学総論』（‘Hist. Nat. Genérale’）（第2巻、430頁、1859年）で、同様の結論を詳しく述べている。</p>
+<details class="acc"><summary>原文（¶12）</summary>
+
+<blockquote lang="en">
+
+<p>M. Isidore Geoffroy Saint Hilaire, in his Lectures delivered in 1850 (of which a Résumé appeared in the ‘Revue et Mag. de Zoolog.,’ Jan. 1851), briefly gives his reason for believing that specific characters “sont fixes, pour chaque espèce, tant qu’elle se perpétue au milieu des mêmes circonstances: ils se modifient, si les circonstances ambiantes viennent à changer.” “En résumé, <em>l’observation</em> des animaux sauvages démontre déjà la variabilité <em>limitée</em> des espèces. Les <em>expériences</em> sur les animaux sauvages devenus domestiques, et sur les animaux domestiques redevenus sauvages, la démontrent plus clairement encore. Ces mêmes expériences prouvent, de plus, que les différences produites peuvent être de <em>valeur générique</em>.” In his ‘Hist. Nat. Genérale’ (tom. ii. p. 430, 1859) he amplifies analogous conclusions.</p>
+</blockquote>
+
+</details>
+
+<p id="p13"><small>¶13　p.xvii</small></p>
+
+<p>最近出された回状によると、フリーク博士は1851年に（『ダブリン医学新報』（‘Dublin Medical Press’）322頁）、すべての生物は一つの原初の形から由来したという学説を唱えたようである。彼の信念の根拠と主題の扱い方は、私のものとまったく違う。しかしフリーク博士は今（1861年）、『有機的親和による種の起源』（‘the Origin of Species by means of Organic Affinity’）についての論考を出版したので、彼の見方を少しでも伝えようとする難しい試みを私がするのは、余計なことであろう。</p>
+<details class="acc"><summary>原文（¶13）</summary>
+
+<blockquote lang="en">
+
+<p>From a circular lately issued it appears that Dr. Freke, in 1851 (‘Dublin Medical Press,’ p. 322), propounded the doctrine that all organic beings have descended from one primordial form. His grounds of belief and treatment of the subject are wholly different from mine; but as Dr. Freke has now (1861) published his Essay on ‘the Origin of Species by means of Organic Affinity,’ the difficult attempt to give any idea of his views would be superfluous on my part.</p>
+</blockquote>
+
+</details>
+
+<p id="p14"><small>¶14　p.xvii</small></p>
+
+<p>ハーバート・スペンサー氏は、ある論考（はじめ1852年3月に『リーダー』（‘Leader’）に発表され、1858年に彼の『論集』（‘Essays’）に再録された）で、生物の創造（Creation）の理論と発達（Development）の理論とを、著しい巧みさと力で対比した。彼は、飼育栽培されている産物との類比、多くの種（species）の胚が経る変化、種と変種（variety）を区別することの難しさ、そして全般的な段階的推移の原理から、種は変化してきたと論じる。そして彼は、その変化（modification）を状況の変化に帰している。この著者は（1855年）、心の力と能力のそれぞれが段階を追って必然的に獲得されるという原理に立って、心理学も論じている。</p>
+<details class="acc"><summary>原文（¶14）</summary>
+
+<blockquote lang="en">
+
+<p>Mr. Herbert Spencer, in an Essay (originally published in the ‘Leader,’ March 1852, and republished in his ‘Essays’ in 1858), has contrasted the theories of the Creation and the Development of organic beings with remarkable skill and force. He argues from the analogy of domestic productions, from the changes which the embryos of many species undergo, from the difficulty of distinguishing species and varieties, and from the principle of general gradation, that species have been modified; and he attributes the modification to the change of circumstances. The author (1855) has also treated Psychology on the principle of the necessary acquirement of each mental power and capacity by gradation.</p>
+</blockquote>
+
+</details>
+
+<p id="p15"><small>¶15　p.xvii–xviii</small></p>
+
+<p>1852年（『園芸評論』（‘Revue Horticole’）102頁）、すぐれた植物学者であるノーダン氏は、種（species）は栽培のもとで変種（variety）が形づくられるのと類似のしかたで形づくられる、という信念をはっきりと述べた。そして後者の過程（栽培のもとでの変種の形成）を、彼は人間の選択（selection）の力に帰している。しかし彼は、自然のもとで選択がどのように働くのかを示していない。彼は、首席司祭ハーバートと同じように、種は生まれたばかりのときには今よりも可塑的であったと信じている。彼は、自分が目的性の原理と呼ぶものに重きを置く。それは「神秘的で、定まらない力である。ある人々にとっては宿命であり、[p.xviii] ほかの人々にとっては摂理の意志である。その絶えざる作用が、世界が存在するあらゆる時代に、生きているもの一つ一つの形、大きさ、寿命を、それが一部をなす事物の秩序のなかでのその定めに応じて決める。各々の部分を、自然の全体の有機体のなかで果たすべき働きに合わせることによって全体と調和させるのは、この力である。その働きこそが、その部分にとっての存在理由なのである」。<a href="#n2">[注2]</a></p>
+<details class="acc"><summary>原文（¶15）</summary>
+
+<blockquote lang="en">
+
+<p>In 1852 (‘Revue Horticole,’ p. 102) M. Naudin, a distinguished botanist, has expressly stated his belief that species are formed in an analogous manner as varieties are under cultivation; and the latter process he attributes to man’s power of selection. But he does not show how selection acts under nature. He believes, like Dean Herbert, that species, when nascent, were more plastic than at present. He lays weight on what he calls the principle of finality, “puissance mystérieuse, indéterminée; fatalité pour les uns; pour [p.xviii] les autres, volonté providentielle, dont l’action incessante sur les êtres vivants détermine, à toutes les époques de l’existence du monde, la forme, le volume, et la durée de chacun d’eux, en raison de sa destinée dans l’ordre de choses dont il fait partie. C’est cette puissance qui harmonise chaque membre à l’ensemble en l’appropriant à la fonction qu’il doit remplir dans l’organisme général de la nature, fonction qui est pour lui sa raison d’être.”*</p>
+</blockquote>
+
+</details>
+
+<p id="p16"><small>¶16　p.xviii</small></p>
+
+<p>1853年、高名な地質学者カイザーリング伯（『地質学会報』（‘Bulletin de la Soc. Géolog.’）第2集、第10巻、357頁）は、何かの瘴気が原因と考えられる新しい病気が生じて世界に広がったのと同じように、ある時期に、今ある種（species）の胚が、特別な性質をもつ周囲の分子によって化学的な影響を受け、そうして新しい形を生じたのかもしれない、と示唆した。</p>
+<details class="acc"><summary>原文（¶16）</summary>
+
+<blockquote lang="en">
+
+<p>In 1853, a celebrated geologist, Count Keyserling (‘Bulletin de la Soc. Géolog.,’ 2nd Ser., tom. x. p. 357), suggested that as new diseases, supposed to have been caused by some miasma, have arisen and spread over the world, so at certain periods the germs of existing species may have been chemically affected by circumambient molecules of a particular nature, and thus have given rise to new forms.</p>
+</blockquote>
+
+</details>
+
+<p id="p17"><small>¶17　p.xviii</small></p>
+
+<p>同じ1853年に、シャーフハウゼン博士は、すぐれた小冊子（『プロイセン領ラインラント博物学協会紀要』（‘Verhand. des Naturhist. Vereins der Preuss. Rheinlands’）ほか）を出し、その中で地球上の生物の形の前進的な発達を主張している。彼は、多くの種（species）は長い期間変わらずにいたが、少数の種は変化した、と推論する。種どうしの区別を、彼は段階的な中間の形が滅びたことによって説明する。「こうして、いま生きている植物と動物は、絶滅したものから新しい創造（creations）によって隔てられているのではなく、絶え間ない生殖を通じたその子孫とみなされるべきである。」</p>
+<details class="acc"><summary>原文（¶17）</summary>
+
+<blockquote lang="en">
+
+<p>In this same year, 1853, Dr. Schaaffhausen published an excellent pamphlet (‘Verhand. des Naturhist. Vereins der Preuss. Rheinlands,’ &amp;c.), in which he maintains the progressive development of organic forms on the earth. He infers that many species have kept true for long periods, whereas a few have become modified. The distinction of species he explains by the destruction of intermediate graduated forms. “Thus living plants and animals are not separated from the extinct by new creations, but are to be regarded as their descendants through continued reproduction.”</p>
+</blockquote>
+
+</details>
+
+<p id="p18"><small>¶18　p.xviii</small></p>
+
+<p>「創造の哲学」（‘Philosophy of Creation’）は、ベーデン・パウエル師によって、その『諸世界の統一についての論集』（‘Essays on the Unity of Worlds’）（1855年）で見事に扱われている。新しい種（species）の出現が「偶然の現象ではなく、規則的な現象」であること、あるいはジョン・ハーシェル卿の言い方では「奇跡的な過程に対する、自然的な過程」であることを、彼が示すしかたほど印象的なものはない。</p>
+<details class="acc"><summary>原文（¶18）</summary>
+
+<blockquote lang="en">
+
+<p>The ‘Philosophy of Creation’ has been treated in a masterly manner by the Rev. Baden Powell, in his ‘Essays on the Unity of Worlds,’ 1855. Nothing can be more striking than the manner in which he shows that the introduction of new species is “a regular, not a casual phenomenon,” or, as Sir John Herschel expresses it, “a natural in contra-distinction to a miraculous process.”</p>
+</blockquote>
+
+</details>
+
+<p id="p19"><small>¶19　p.xviii–xix</small></p>
+
+<p>『リンネ協会誌』（‘Journal of the Linnean Society’）の第3巻には、1858年7月1日に読み上げられた、ウォレス氏と私の論文が収められている。本書の序論で述べたとおり、それらの論文で、[p.xix] 自然選択（Natural Selection）の理論が、ウォレス氏によって見事な力と明晰さで公にされている。</p>
+<details class="acc"><summary>原文（¶19）</summary>
+
+<blockquote lang="en">
+
+<p>The third volume of the ‘Journal of the Linnean Society’ contains papers, read July 1st, 1858, by Mr. Wallace and myself, in which, as stated in the introductory remarks to this volume, the [p.xix] theory of Natural Selection is promulgated by Mr. Wallace with admirable force and clearness.</p>
+</blockquote>
+
+</details>
+
+<p id="p20"><small>¶20　p.xix</small></p>
+
+<p>1859年6月、ハクスリー教授は王立研究所で「動物の生命の持続型」（‘Persistent Types of Animal Life’）について講演した。そうした例に触れて、彼はこう述べている。「動物と植物のそれぞれの種（species）、あるいは体制のそれぞれの大きな型が、長い間隔をおいて、創造の力の別々の行為によって形づくられ、地球の表面に置かれたと想定するなら、このような事実の意味を理解するのは難しい。そして、そうした想定は、自然の一般的な類比に反しているのと同じくらい、伝承や啓示にも支えられていないことを思い起こすのがよい。他方、もし『持続型』を、いつの時代に生きている種も、先にあった種が漸進的に変化（modification）した結果であるとする仮説との関係で見るならば、つまり、証明されてはおらず、支持者の一部によってひどく損なわれてはいるが、それでも生理学がいくらかでも支持を与える唯一の仮説との関係で見るならば、持続型の存在は、生物が地質学的な時間のあいだに受けた変化の量は、生物がこうむってきた変化の系列の全体に比べればごく小さい、ということを示しているように思われる。」</p>
+<details class="acc"><summary>原文（¶20）</summary>
+
+<blockquote lang="en">
+
+<p>In June, 1859, Professor Huxley gave a lecture before the Royal Institution on the ‘Persistent Types of Animal Life.’ Referring to such cases, he remarks, “It is difficult to comprehend the meaning of such facts as these, if we suppose that each species of animal and plant, or each great type of organisation, was formed and placed upon the surface of the globe at long intervals by a distinct act of creative power; and it is well to recollect that such an assumption is as unsupported by tradition or revelation as it is opposed to the general analogy of nature. If, on the other hand, we view ‘Persistent Types’ in relation to that hypothesis which supposes the species living at any time to be the result of the gradual modification of pre-existing species—a hypothesis which, though unproven, and sadly damaged by some of its supporters, is yet the only one to which physiology lends any countenance; their existence would seem to show that the amount of modification which living beings have undergone during geological time is but very small in relation to the whole series of changes which they have suffered.”</p>
+</blockquote>
+
+</details>
+
+<p id="p21"><small>¶21　p.xix</small></p>
+
+<p>1859年12月、フッカー博士は『オーストラリア植物誌序論』（‘Introduction to the Australian Flora’）を出版した。この大著の第一部で、彼は種（species）の由来と変化（modification）が真であることを認め、多くの独自の観察によってこの学説を支持している。</p>
+<details class="acc"><summary>原文（¶21）</summary>
+
+<blockquote lang="en">
+
+<p>In December, 1859, Dr. Hooker published his ‘Introduction to the Australian Flora.’ In the first part of this great work he admits the truth of the descent and modification of species, and supports this doctrine by many original observations.</p>
+</blockquote>
+
+</details>
+
+<p id="p22"><small>¶22　p.xix</small></p>
+
+<p>本書の初版は1859年11月24日に、第2版は1860年1月7日に出版された。</p>
+<details class="acc"><summary>原文（¶22）</summary>
+
+<blockquote lang="en">
+
+<p>The first edition of this work was published on November 24th, 1859, and the second edition on January 7th, 1860.</p>
+</blockquote>
+
+</details>
+
+</div></details><details class="sec" id="ダーウィンの脚注"><summary>ダーウィンの脚注</summary><div class="secbody">
+<p id="n1"><small>注1　p.xiii–xiv</small></p>
+
+<p>¶2 の末尾の * の注。</p>
+<p>ラマルクが初めて発表した年は、イジドール・ジョフロワ・サンティレールによる、この主題についての見解のすぐれた歴史（『博物学総論』（‘Hist. Nat. Genérale’）第2巻、405頁、1859年）から取った。この著作には、同じ主題についてのビュフォンの揺れ動いた結論も詳しく述べられている。私の祖父エラズマス・ダーウィン博士が、1794年に出た『ズーノミア』（‘Zoonomia’）（第1巻、500–510頁）で、ラマルクの見解と、その見解の誤った根拠とを、どれほど大きく先取りしていたかは興味深い。イジドール・ジョフロワによれば、1794年と1795年に書かれ、ずっとのちまで出版されなかった著作の序論に示されているとおり、ゲーテが似た見方の熱烈な支持者であったことは疑いない。ドイツのゲーテ、イングランドのダーウィン博士、そして（すぐに見るように）フランスのジョフロワ・サンティレールが、1794年から95年にかけて、種（species）の起源について同じ結論に達したことは、似た見方がほぼ同じ時期に生じるしかたの、かなり珍しい一例である。</p>
+<details class="acc"><summary>原文（注1）</summary>
+
+<blockquote lang="en">
+
+<p>I have taken the date of the first publication of Lamarck from Isid. Geoffroy Saint Hilaire’s (‘Hist. Nat. Genérale,’ tom. ii. p. 405, 1859) ex- [p.xiv] cellent history of opinion on this subject. In this work a full account is given of Buffon’s fluctuating conclusions on the same subject. It is curious how largely my grandfather, Dr. Erasmus Darwin, anticipated the erroneous grounds of opinion, and the views of Lamarck, in his ‘Zoonomia’ (vol. i. p. 500–510), published in 1794. According to Isid. Geoffroy there is no doubt that Goethe was an extreme partisan of similar views, as shown in the Introduction to a work written in 1794 and 1795, but not published till long afterwards. It is rather a singular instance of the manner in which similar views arise at about the same period, that Goethe in Germany, Dr. Darwin in England, and Geoffroy Saint Hilaire (as we shall immediately see) in France, came to the same conclusion on the origin of species, in the years 1794–5.</p>
+</blockquote>
+
+</details>
+
+<p id="n2"><small>注2　p.xviii</small></p>
+
+<p>¶15 の末尾の * の注。誌面では二つの段からなる。</p>
+<p>ブロンの『発達法則の研究』（‘Untersuchungen über die Entwickelungs-Gesetze’）の参照によると、高名な植物学者で古生物学者のウンガーは、1852年に、種（species）は発達と変化（modification）を受けるという信念を発表したようである。ダルトンも同じく、パンダーとダルトンによる化石のナマケモノについての著作で、1821年に同様の信念を表明した。よく知られているように、オーケンも、その神秘的な『自然哲学』（‘Natur-Philosophie’）で、似た見方を主張した。ゴドロンの著作『種について』（‘Sur l’Espèce’）にあるほかの参照によると、ボリー・ド・サン＝ヴァンサン、ブルダッハ、ポワレ、フリースはみな、新しい種が絶えず生み出されつつあることを認めていたようである。</p>
+<p>付け加えておくと、この歴史的概略で名を挙げた著者で、種の変化（modification）を信じるか、少なくとも別々の創造（creation）の行為を信じない30人のうち、25人は博物学の特定の分野について書いている。そのうち、ただの地質学者は3人だけで、9人は植物学者、13人は動物学者である。ただし、植物学者と動物学者のうち何人かは、古生物学や地質学についても書いている。</p>
+<details class="acc"><summary>原文（注2）</summary>
+
+<blockquote lang="en">
+
+<p>From references in Bronn’s ‘Untersuchungen über die Entwickelungs-Gesetze’ it appears that the celebrated botanist and palæontologist Unger published, in 1852, his belief that species undergo development and modification. D’Alton, likewise, in Pander and d’Alton’s work on Fossil Sloths, expressed, in 1821, a similar belief. Similar views have, as is well known, been maintained by Oken in his mystical ‘Natur-Philosophie.’ From other references in Godron’s work ‘Sur l’Espèce,’ it seems that Bory St. Vincent, Burdach, Poiret, and Fries, have all admitted that new species are continually being produced. I may add, that of the thirty authors named in this Historical Sketch, who believe in the modification of species, or at least disbelieve in separate acts of creation, twenty-five have written on special branches of natural history: of these only three are simple geologists, nine are botanists, and thirteen zoologists; but several of the botanists and zoologists have written on palæontology or on geology.</p>
+</blockquote>
+
+</details>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="peirce-love-abduction.html">パースの創造的な愛と、アブダクション</a> ・
+                <a href="peirce-evolutionary-love-ja.html">パース「進化的な愛」を、日本語で読む</a> ・
+                <a href="peirce-law-of-mind-ja.html">パース「心の法則」を、日本語で読む</a> ・
+                <a href="peirce-glassy-essence-ja.html">パース「人間のガラスのような本質」を、日本語で読む</a> ・
+                <a href="carus-onslaught-on-necessity-ja.html">ケーラス「パース氏の必然論への猛攻」を、日本語で読む</a> ・
+                <a href="james-substance-and-shadow-ja.html">ジェイムズ（父）『実体と影』の「創造的な愛」の所を、日本語で読む</a> ・
+                <a href="newcomb-political-economy-ja.html">ニューカム『政治経済学原理』の利己心と慈善の所を、日本語で読む</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
