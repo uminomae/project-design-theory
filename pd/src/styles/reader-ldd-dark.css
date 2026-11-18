@@ -194,6 +194,12 @@ html.ldd-dark[data-intro~="title"] .ldd-intro > .ldd-intro__title {
 .ldd-intro__about[hidden] { display: none; }
 .ldd-intro__about p { margin: 0 0 0.7em; }
 .ldd-intro__about-lead { color: rgba(230, 235, 245, 0.97); }
+.ldd-intro__about-label {
+    display: block;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    color: rgba(210, 180, 124, 0.9);
+}
 .ldd-intro__about-note {
     font-size: 0.8rem;
     color: rgba(195, 203, 220, 0.8);
