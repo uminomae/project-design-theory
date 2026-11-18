@@ -44,9 +44,10 @@
         btn.addEventListener('keydown', function (e) {
             if (e.key === 'Escape' && !box.hidden) set(false);
         });
-        // 「読み始める」で読書欄へ移ったら畳む
-        var go = box.querySelector('a[href="#ldd-read"]');
-        if (go) go.addEventListener('click', function () { set(false); });
+        // 中のリンク（「読み始める」・章へのリンク）で読書欄へ移ったら畳む
+        Array.prototype.forEach.call(box.querySelectorAll('a[href^="#"]'), function (a) {
+            a.addEventListener('click', function () { set(false); });
+        });
     }
 
     function ready() {

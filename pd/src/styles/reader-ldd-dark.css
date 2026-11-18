@@ -199,13 +199,6 @@ html.ldd-dark[data-intro~="title"] .ldd-intro > .ldd-intro__title {
     letter-spacing: 0.1em;
     color: rgba(210, 180, 124, 0.9);
 }
-.ldd-intro__about-card {
-    margin: 0 0 0.8em;
-    padding: 0.1em 0 0.1em 0.9em;
-    border-left: 2px solid rgba(210, 180, 124, 0.55);
-}
-.ldd-intro__about-card p { margin: 0; }
-.ldd-intro__about-card strong { font-weight: 600; color: rgba(230, 235, 245, 0.95); }
 .ldd-intro__about-note {
     font-size: 0.8rem;
     color: rgba(195, 203, 220, 0.8);
