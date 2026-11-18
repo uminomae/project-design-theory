@@ -32,6 +32,7 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 |---|---|---|
 | `peirce-1893-evolutionary-love.md` | Peirce, "Evolutionary Love", *The Monist* 3(2), January 1893, pp.176–200 | 全文の訳（2026-11-17）。原文の欄を初出の誌面と照らし、訳を Claude が原文と段ごとに照らして直した（2026-11-17・#164）。人の校閲はまだ。ページ `pd/reader/peirce-evolutionary-love-ja.html` |
 | `peirce-1892-law-of-mind.md` | Peirce, "The Law of Mind", *The Monist* 2(4), July 1892, pp.533–559 | 全文の訳（2026-11-18・#173）。原文の欄を初出の誌面と照らした。訳は読む役四つに範囲を分けて案を出させ、Claude が原文と段ごとに照らして入れた。人の校閲はまだ。1893 の ¶5 がこの論文を挙げる。ページ `pd/reader/peirce-law-of-mind-ja.html` |
+| `peirce-1892-mans-glassy-essence.md` | Peirce, "Man's Glassy Essence", *The Monist* 3(1), October 1892, pp.1–22 | 全文の訳（2026-11-18・#175）。原文の欄を初出の誌面と照らし、式を誌面から写した。訳は読む役二つに範囲を分けて案を出させ、照らす役に原文と照らさせ、Claude が直して入れた。人の校閲はまだ。1893 の ¶21・¶23 がこの論文を挙げる。ページ `pd/reader/peirce-glassy-essence-ja.html` |
 
 次に訳す候補：パースは `../research/peirce-love-abduction/READING-ORDER-20261116.md` の表、1893「Evolutionary Love」が引く論文と本は Issue #175 の一覧。
 
@@ -80,4 +81,10 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | cherish | いつくしむ | |
 | fortuitous variation | 偶然の変異 | |
 | mechanical necessity | 機械的な必然 | |
+| protoplasm / slime | 原形質／粘液 | 1892「Man's Glassy Essence」。life-slime は「生命の粘液」 |
+| sub-molecule / dissociation | 下位分子／解離 | 1892「Man's Glassy Essence」 |
+| habit-taking | 習慣をとること | |
+| chance-spontaneity | 偶然の自発性 | |
+| tychistic（idealism） | tychism に立つ（観念論） | 1892「Man's Glassy Essence」¶47。tychastic（偶然による）とは別の語 |
+| aspect | 相 | 「心的な相と物理的な相」 |
 | clear / distinct（1878） | 明晰な／判明な | デカルトの「明晰・判明」に合わせる |
