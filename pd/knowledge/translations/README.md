@@ -37,6 +37,7 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | `james-1863-substance-and-shadow.md` | Henry James（Sr.）, *Substance and Shadow*, Boston: Ticknor and Fields, 1863, 第 24 章 pp.439–443 | 本の抜きの訳（2026-11-18・#175）。p.439「Let my reader bear with me」の段から p.443 の脚注まで。文字起こしが無いので、OCR から段を取り、照らす役が頁の画像と照らして原文を作った。訳は読む役の案を照らす役が原文と照らし、Claude が直して入れた。人の校閲はまだ。1893 の ¶3 が p.442 の「創造的な愛」の文を引く。ページ `pd/reader/james-substance-and-shadow-ja.html` |
 | `newcomb-1886-principles-of-political-economy.md` | Simon Newcomb, *Principles of Political Economy*, New York: Harper & Brothers, 1886, 第 V 編 §56・§57 と巻末の要約 pp.534–543 | 本の抜きの訳（2026-11-18・#175）。パースが「進化的な愛」¶7〜¶12 で引く句がみな入る範囲。文字起こしが無いので、OCR から段を取り、照らす役が全頁を画像と照らして原文を作った。訳は読む役の案を照らす役が原文と照らし、Claude が直して入れた。人の校閲はまだ。パースが引いた句はパースの対訳と同じ訳語にし、パースが落とした語・言い換えを訳注に書いた。ページ `pd/reader/newcomb-political-economy-ja.html` |
 | `darwin-1861-historical-sketch.md` | Darwin, "An Historical Sketch of the Recent Progress of Opinion on the Origin of Species", *On the Origin of Species*, 3rd ed., 1861, pp.xiii–xix | 全文の訳（2026-11-18・#175）。第 3 版の形で、のちの版の書き足しは入っていない。OCR から段を取り、照らす役が全 7 頁を画像と照らして原文を作った。訳は読む役の案を照らす役が原文と照らし、Claude が直して入れた。人の校閲はまだ。1893 の ¶58 がこの概略を挙げる。ページ `pd/reader/darwin-historical-sketch-ja.html` |
+| `darwin-1858-tendency-of-species.md` | Darwin & Wallace, "On the Tendency of Species to form Varieties; and on the Perpetuation of Varieties and Species by Natural Means of Selection", *Journal of the Proceedings of the Linnean Society: Zoology* 3 (1858), pp.45–62 | 全文の訳（2026-11-18・#175）。Wikisource の文字起こしから骨を作り、照らす役二つが誌面の全頁と照らした（落ちていた見出しと日付・斜体）。訳は読む役二つの案を照らす役が原文と照らし、Claude が直して入れた。人の校閲はまだ。1893 の ¶58 がこの発表を挙げる。ページ `pd/reader/darwin-wallace-1858-ja.html` |
 
 次に訳す候補：パースは `../research/peirce-love-abduction/READING-ORDER-20261116.md` の表、1893「Evolutionary Love」が引く論文と本は Issue #175 の一覧。
 
@@ -87,6 +88,21 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | capital / interest / rent / wages | 資本／利子／地代／賃金 | |
 | abstinence | 節欲 | シーニアの語 |
 | class / trades-union | 階級／労働組合 | |
+
+### ダーウィン・ウォレス：表
+
+「歴史的概略」（1861）と 1858 の論文で、訳語をそろえる。
+
+| 原語 | 訳語 | 覚え書き |
+|---|---|---|
+| natural selection / selection | 自然選択／選択 | |
+| species / variety / variation / modification | 種／変種／変異／変化 | |
+| race | 品種（飼育栽培の race）・人種（race of man）・系統（そのほか） | 1858 の ¶4 の "Varieties, Races, and Species" は系統 |
+| organisation / organization | 体制 | |
+| struggle for life / struggle for existence | 生存のための闘争 | どちらの語かは括弧で添える |
+| descent | 由来 | |
+| economy（生き物の） | 生活の仕組み | economy of nature は自然の経済 |
+| fecundity / fertility | 繁殖力 | |
 
 ### パース：そろえ方
 

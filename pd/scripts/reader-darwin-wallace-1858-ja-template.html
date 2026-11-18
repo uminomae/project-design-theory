@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/darwin-wallace-1858-ja.html を直接編集しないでください。
+  正本:   knowledge/translations/READER-darwin-wallace-1858-ja.md（訳の本文は darwin-1858-tendency-of-species.md から差し込む）
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 訳の人の校閲はまだだが、pjdhiro の判断で noindex を外し、sitemap.xml・llms.txt・llms-full.txt に入れた（2026-11-18）。校閲前の帯は残す
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「ダーウィンとウォレスのリンネ協会の論文（1858）を、日本語で読む」のページです。チャールズ・ダーウィン（Charles Darwin）とアルフレッド・ラッセル・ウォレス（Alfred Russel Wallace）の、1858 年にリンネ協会で読まれた論文「On the Tendency of Species to form Varieties; and on the Perpetuation of Varieties and Species by Natural Means of Selection（種が変種をつくる傾向について、また自然の選択の手段による変種と種の存続について）」（Journal of the Proceedings of the Linnean Society: Zoology 3, pp.45–62）の全文を、段ごとに日本語に訳したページ。自然選択の考えが初めて公にされた論文。パースは「進化的な愛」（1893）で、大きな発見が独立に同時に起こる例として、この発表を挙げる。訳を主に置き、英語の原文は段ごとの畳みに置く。原文はパブリックドメインで、Wikisource の文字起こしを誌面の走査（Internet Archive）と照らした。訳は Claude（AI）によるもので、人の校閲はまだ。
+  訳注は Claude の注。原文の段の番号（¶）は誌面の段の分け方による通し番号、p. は誌面の頁。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ダーウィンとウォレスのリンネ協会の論文（1858）を、日本語で読む | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/darwin-wallace-1858-ja.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="チャールズ・ダーウィン（Charles Darwin）とアルフレッド・ラッセル・ウォレス（Alfred Russel Wallace）の、1858 年にリンネ協会で読まれた論文「On the Tendency of Species to form Varieties; and on the Perpetuation of Varieties and Species by Natural Means of Selection（種が変種をつくる傾向について、また自然の選択の手段による変種と種の存続について）」（Journal of the Proceedings of the Linnean Society: Zoology 3, pp.45–62）の全文を、段ごとに日本語に訳したページ。自然選択の考えが初めて公にされた論文。パースは「進化的な愛」（1893）で、大きな発見が独立に同時に起こる例として、この発表を挙げる。訳を主に置き、英語の原文は段ごとの畳みに置く。原文はパブリックドメインで、Wikisource の文字起こしを誌面の走査（Internet Archive）と照らした。訳は Claude（AI）によるもので、人の校閲はまだ。">
+    <meta property="og:title" content="ダーウィンとウォレスのリンネ協会の論文（1858）を、日本語で読む">
+    <meta property="og:description" content="チャールズ・ダーウィン（Charles Darwin）とアルフレッド・ラッセル・ウォレス（Alfred Russel Wallace）の、1858 年にリンネ協会で読まれた論文「On the Tendency of Species to form Varieties; and on the Perpetuation of Varieties and Species by Natural Means of Selection（種が変種をつくる傾向について、また自然の選択の手段による変種と種の存続について）」（Journal of the Proceedings of the Linnean Society: Zoology 3, pp.45–62）の全文を、段ごとに日本語に訳したページ。自然選択の考えが初めて公にされた論文。パースは「進化的な愛」（1893）で、大きな発見が独立に同時に起こる例として、この発表を挙げる。訳を主に置き、英語の原文は段ごとの畳みに置く。原文はパブリックドメインで、Wikisource の文字起こしを誌面の走査（Internet Archive）と照らした。訳は Claude（AI）によるもので、人の校閲はまだ。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/darwin-wallace-1858-ja.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta property="og:image" content="https://uminomae.github.io/project-design-theory/assets/ogp/peirce-love-abduction.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ダーウィンとウォレスのリンネ協会の論文（1858）を、日本語で読む — 中心から三つの点を独立へ押し出し、円い運動で調和へ引き寄せる図">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ダーウィンとウォレスのリンネ協会の論文（1858）を、日本語で読む">
+    <meta name="twitter:image" content="https://uminomae.github.io/project-design-theory/assets/ogp/peirce-love-abduction.png">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-18">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "ダーウィンとウォレスのリンネ協会の論文（1858）を、日本語で読む",
+          "description": "チャールズ・ダーウィン（Charles Darwin）とアルフレッド・ラッセル・ウォレス（Alfred Russel Wallace）の、1858 年にリンネ協会で読まれた論文「On the Tendency of Species to form Varieties; and on the Perpetuation of Varieties and Species by Natural Means of Selection（種が変種をつくる傾向について、また自然の選択の手段による変種と種の存続について）」（Journal of the Proceedings of the Linnean Society: Zoology 3, pp.45–62）の全文を、段ごとに日本語に訳したページ。自然選択の考えが初めて公にされた論文。パースは「進化的な愛」（1893）で、大きな発見が独立に同時に起こる例として、この発表を挙げる。訳を主に置き、英語の原文は段ごとの畳みに置く。原文はパブリックドメインで、Wikisource の文字起こしを誌面の走査（Internet Archive）と照らした。訳は Claude（AI）によるもので、人の校閲はまだ。",
+          "keywords": "ダーウィン, Charles Darwin, ウォレス, Alfred Russel Wallace, リンネ協会, 1858, 自然選択, 変種, 生存のための闘争, 同時発見, パース, 進化的な愛, 日本語訳, 対訳",
+          "url": "https://uminomae.github.io/project-design-theory/reader/darwin-wallace-1858-ja.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/darwin-wallace-1858-ja.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-18",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Person", "name": "Charles Darwin"}, {"@type": "Thing", "name": "自然選択"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。訳と解説の文責"},
+          "translationOfWork": {"@type": "ScholarlyArticle", "name": "On the Tendency of Species to form Varieties; and on the Perpetuation of Varieties and Species by Natural Means of Selection", "author": [{"@type": "Person", "name": "Charles Darwin"}, {"@type": "Person", "name": "Alfred Russel Wallace"}], "datePublished": "1858", "isPartOf": "Journal of the Proceedings of the Linnean Society: Zoology 3", "pagination": "45-62", "sameAs": "https://archive.org/details/journalofproceed00linn"},
+          "translator": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。人の校閲はまだ"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「ダーウィンとウォレスのリンネ協会の論文（1858）を、日本語で読む」のページです。チャールズ・ダーウィン（Charles Darwin）とアルフレッド・ラッセル・ウォレス（Alfred Russel Wallace）の、1858 年にリンネ協会で読まれた論文「On the Tendency of Species to form Varieties; and on the Perpetuation of Varieties and Species by Natural Means of Selection（種が変種をつくる傾向について、また自然の選択の手段による変種と種の存続について）」（Journal of the Proceedings of the Linnean Society: Zoology 3, pp.45–62）の全文を、段ごとに日本語に訳したページ。自然選択の考えが初めて公にされた論文。パースは「進化的な愛」（1893）で、大きな発見が独立に同時に起こる例として、この発表を挙げる。訳を主に置き、英語の原文は段ごとの畳みに置く。原文はパブリックドメインで、Wikisource の文字起こしを誌面の走査（Internet Archive）と照らした。訳は Claude（AI）によるもので、人の校閲はまだ。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この訳は AI（Claude）によるものです。</b>人の校閲はまだです。引用や論拠には、各段の「原文」を使ってください。
+            </div>
+            <header class="reader-hero">
+                <h1><span style="display:inline-block">ダーウィンとウォレスの</span><span style="display:inline-block">リンネ協会の論文（1858）を、日本語で読む</span></h1>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 訳は人の校閲前<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/translations/darwin-1858-tendency-of-species.md">対訳の正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="peirce-love-abduction.html">パースの創造的な愛と、アブダクション</a> ・
+                <a href="peirce-evolutionary-love-ja.html">パース「進化的な愛」を、日本語で読む</a> ・
+                <a href="peirce-law-of-mind-ja.html">パース「心の法則」を、日本語で読む</a> ・
+                <a href="peirce-glassy-essence-ja.html">パース「人間のガラスのような本質」を、日本語で読む</a> ・
+                <a href="carus-onslaught-on-necessity-ja.html">ケーラス「パース氏の必然論への猛攻」を、日本語で読む</a> ・
+                <a href="james-substance-and-shadow-ja.html">ジェイムズ（父）『実体と影』の「創造的な愛」の所を、日本語で読む</a> ・
+                <a href="darwin-historical-sketch-ja.html">ダーウィン「歴史的概略」（『種の起源』第 3 版の巻頭）を、日本語で読む</a> ・
+                <a href="newcomb-political-economy-ja.html">ニューカム『政治経済学原理』の利己心と慈善の所を、日本語で読む</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

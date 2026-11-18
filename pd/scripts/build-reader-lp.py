@@ -182,6 +182,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は darwin-1858-tendency-of-species.md（原文と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-darwin-wallace-1858-ja.md",
+        ROOT / "scripts/reader-darwin-wallace-1858-ja-template.html",
+        ROOT / "reader/darwin-wallace-1858-ja.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/creative-thinking/READER-creative-thinking.md",
         ROOT / "scripts/reader-creative-thinking-template.html",
         ROOT / "reader/creative-thinking.html",
@@ -319,6 +326,13 @@ JA_CHAPTERS = {
     },
     "darwin-1861-historical-sketch.md": {
         "¶1": "題と、ラマルクからウォレスまで",
+        "注1": "ダーウィンの脚注",
+    },
+    "darwin-1858-tendency-of-species.md": {
+        "¶1": "ライエルとフッカーの送り状",
+        "¶14": "I　ダーウィンの未刊の原稿からの抜き",
+        "¶20": "II　ダーウィンからエイサ・グレイへの手紙の要約",
+        "¶29": "III　ウォレス、変種が原型から限りなく離れていく傾向について",
         "注1": "ダーウィンの脚注",
     },
 }

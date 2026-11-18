@@ -119,6 +119,11 @@ Public explainer pages, written to be uniquely readable by LLMs without external
 - One-line: A full Japanese translation, paragraph by paragraph, of Darwin's "Historical Sketch" as prefixed to the third edition of the Origin of Species (1861, pp.xiii–xix), with the original under each paragraph. Peirce cites it in "Evolutionary Love" (1893) ¶58 for independent, simultaneous discoveries.
 - Status: the original was built from the OCR and checked against all page images of the third-edition scan (Internet Archive). The translation is by Claude and has not been reviewed by a human. Quote and cite the original.
 
+### ダーウィンとウォレスのリンネ協会の論文（1858）を、日本語で読む
+- URL: https://uminomae.github.io/project-design-theory/reader/darwin-wallace-1858-ja.html
+- One-line: A full Japanese translation, paragraph by paragraph, of the Darwin–Wallace papers read at the Linnean Society on 1 July 1858 (J. Proc. Linn. Soc. Zool. 3, pp.45–62), the first public statement of natural selection, with the original under each paragraph. Peirce cites it in "Evolutionary Love" (1893) ¶58.
+- Status: the original follows the Wikisource transcription, checked against all page images of the Internet Archive scan. The translation is by Claude and has not been reviewed by a human. Quote and cite the original.
+
 ## Related Projects
 
 | Project | URL | Focus |
