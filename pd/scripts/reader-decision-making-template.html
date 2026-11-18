@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/decision-making.html を直接編集しないでください。
+  正本:   knowledge/research/decision-making/READER-decision-making.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「意思決定とは」のページです。意思決定とは何か。辞書の定義と、意思決定がどう研究されてきたかを、原典で確かめた論から並べる。合理的な選び方の理論（ベルヌーイ 1738・ラムジー 1926・サヴェッジ 1961・ナイト 1921）とその反例（アレ 1953・エルズバーグ 1961）。サイモンの限定合理性と満足化、ギゲレンツァーの生態学的合理性。カーネマンとトヴェルスキーの近道の判断・プロスペクト理論・決定の枠と、二つの思考への批判。クラインの消防の指揮官の研究と自然主義的意思決定。ダマシオの体の印の仮説とその反論、感情と意思決定の研究。アリソンの三つの模型、ゴミ箱モデル、ミンツバーグらの決定の過程、適切さの論理、ワイクの意味づけ。
+  研究の説明は Claude が原典から書いた要約。載せた出典は、パブリックドメインの走査、出版元・大学・公的機関・著者の頁の版、大学の授業の頁に置かれた誌面の写しで本文を確かめ、各章の「出典」の畳みに頁と写しの性格を添えている。英文・仏文・ラテン文の訳は Claude。第四部の並べ方は Claude の整理。
+  pjdhiro 本人の言葉は、このページには引いていない。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>意思決定とは | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/decision-making.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="意思決定とは何か。辞書の定義と、意思決定がどう研究されてきたかを、原典で確かめた論から並べる。合理的な選び方の理論（ベルヌーイ 1738・ラムジー 1926・サヴェッジ 1961・ナイト 1921）とその反例（アレ 1953・エルズバーグ 1961）。サイモンの限定合理性と満足化、ギゲレンツァーの生態学的合理性。カーネマンとトヴェルスキーの近道の判断・プロスペクト理論・決定の枠と、二つの思考への批判。クラインの消防の指揮官の研究と自然主義的意思決定。ダマシオの体の印の仮説とその反論、感情と意思決定の研究。アリソンの三つの模型、ゴミ箱モデル、ミンツバーグらの決定の過程、適切さの論理、ワイクの意味づけ。">
+    <meta property="og:title" content="意思決定とは">
+    <meta property="og:description" content="意思決定とは何か。辞書の定義と、意思決定がどう研究されてきたかを、原典で確かめた論から並べる。合理的な選び方の理論（ベルヌーイ 1738・ラムジー 1926・サヴェッジ 1961・ナイト 1921）とその反例（アレ 1953・エルズバーグ 1961）。サイモンの限定合理性と満足化、ギゲレンツァーの生態学的合理性。カーネマンとトヴェルスキーの近道の判断・プロスペクト理論・決定の枠と、二つの思考への批判。クラインの消防の指揮官の研究と自然主義的意思決定。ダマシオの体の印の仮説とその反論、感情と意思決定の研究。アリソンの三つの模型、ゴミ箱モデル、ミンツバーグらの決定の過程、適切さの論理、ワイクの意味づけ。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/decision-making.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="意思決定とは">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-18">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "意思決定とは",
+          "description": "意思決定とは何か。辞書の定義と、意思決定がどう研究されてきたかを、原典で確かめた論から並べる。合理的な選び方の理論（ベルヌーイ 1738・ラムジー 1926・サヴェッジ 1961・ナイト 1921）とその反例（アレ 1953・エルズバーグ 1961）。サイモンの限定合理性と満足化、ギゲレンツァーの生態学的合理性。カーネマンとトヴェルスキーの近道の判断・プロスペクト理論・決定の枠と、二つの思考への批判。クラインの消防の指揮官の研究と自然主義的意思決定。ダマシオの体の印の仮説とその反論、感情と意思決定の研究。アリソンの三つの模型、ゴミ箱モデル、ミンツバーグらの決定の過程、適切さの論理、ワイクの意味づけ。",
+          "keywords": "意思決定, decision making, 決定理論, 期待効用, ベルヌーイ, ラムジー, サヴェッジ, ナイト, リスクと不確実性, アレの逆説, エルズバーグ, サイモン, 限定合理性, 満足化, ギゲレンツァー, 生態学的合理性, カーネマン, トヴェルスキー, ヒューリスティクス, プロスペクト理論, フレーミング, System 1, クライン, 自然主義的意思決定, ダマシオ, 体の印の仮説, アイオワ・ギャンブル課題, アリソン, ゴミ箱モデル, ミンツバーグ, 適切さの論理, ワイク, センスメイキング, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/decision-making.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/decision-making.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-18",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "意思決定"}, {"@type": "Thing", "name": "限定合理性"}, {"@type": "Thing", "name": "組織の意思決定"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+                    "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「意思決定とは」のページです（工事中）。意思決定とは何か。辞書の定義と、意思決定がどう研究されてきたかを、原典で確かめた論から並べる。合理的な選び方の理論（ベルヌーイ 1738・ラムジー 1926・サヴェッジ 1961・ナイト 1921）とその反例（アレ 1953・エルズバーグ 1961）。サイモンの限定合理性と満足化、ギゲレンツァーの生態学的合理性。カーネマンとトヴェルスキーの近道の判断・プロスペクト理論・決定の枠と、二つの思考への批判。クラインの消防の指揮官の研究と自然主義的意思決定。ダマシオの体の印の仮説とその反論、感情と意思決定の研究。アリソンの三つの模型、ゴミ箱モデル、ミンツバーグらの決定の過程、適切さの論理、ワイクの意味づけ。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>研究の説明は、Claude が原典を読んで書いた要約です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>意思決定とは</h1>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/decision-making/READER-decision-making.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="creative-thinking.html">創造的思考とは</a> ・
+                <a href="anxiety.html">不安とは</a> ・
+                <a href="empathy.html">共感とは</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
