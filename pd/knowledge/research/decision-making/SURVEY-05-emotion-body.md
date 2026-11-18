@@ -126,7 +126,7 @@
 |---|---|---|
 | Bechara, Damasio, Damasio & Anderson 1994 *Cognition* 50 | Crossref・OpenAlex（closed）・Semantic Scholar（PDF なし）・Europe PMC（なし）・アイオワ大学の機関リポジトリ（書誌だけ・ファイルなし）・CORE（CiteSeerX が集めた写しで、元は個人のサイト antoniocasella.eu。開いていない） | 未照合（有料）。手順は Damasio 1996 の記述で読める |
 | Bechara, Damasio, Tranel & Damasio 1997 *Science* 275 | ks #101 で OpenAlex・Semantic Scholar・science.org の Wayback・ウェブ検索を試した記録を流用（読み直していない） | 要旨照合済（ks #101 の流用）。1997 の実験の記述は、著者自身の Bechara ら 2005 の Box 1 で読める |
-| Slovic, Finucane, Peters & MacGregor 2007 *EJOR* 177 | Crossref・OpenAlex（closed）・Semantic Scholar（PDF なし）・ウェブ検索（カレル大学の授業の頁の写しだけ。上げた人が著者でないので使わない）・著者のサイト（decisionresearch.org・uoregon.edu を `--domain` で引いた。結果の表は出ずに終わった） | 未照合（有料）。同じ四人の 2005 の著者稿で代えた |
+| Slovic, Finucane, Peters & MacGregor 2007 *EJOR* 177 | Crossref・OpenAlex（closed）・Semantic Scholar（PDF なし）・ウェブ検索（カレル大学の授業の頁の写しだけ。上げた人が著者でないので使わない）・著者のサイトの Wayback（decisionresearch.org は PDF 254 件で、題の語が当たる 2 件は別の論文〔語の連想と感じ・像と感じと意思決定〕。uoregon.edu は当たり 0 件） | 未照合（有料）。同じ四人の 2005 の著者稿で代えた |
 | Lerner ら 2015 の eScholarship の写し | Wayback の写しは 2 頁の案内（本文なし） | 使わず、著者の頁の版で読んだ |
 | Damasio 1994 *Descartes' Error* | as A04 で「開いていない」。このセッションで `find --book --ia` と Internet Archive の検索を試したが、結果が返らなかった | 未照合（書籍） |
 | Dunn ら 2006 の誌の版 | OpenAlex（closed）。マサリク大学の授業の頁に誌の組版の写しがあるが、上げた人が著者でないので開いていない | 著者稿で本文照合済。誌の頁との対応は無い |
