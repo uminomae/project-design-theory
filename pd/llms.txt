@@ -87,7 +87,7 @@ Public explainer pages, written to be uniquely readable by LLMs without external
 ### パース「進化的な愛」を、日本語で読む
 - URL: https://uminomae.github.io/project-design-theory/reader/peirce-evolutionary-love-ja.html
 - One-line: A full Japanese translation, paragraph by paragraph, of Charles S. Peirce's "Evolutionary Love" (The Monist 3(2), January 1893, pp.176–200), with the English original under each paragraph. Peirce distinguishes three modes of evolution — by fortuitous variation (tychasm), by mechanical necessity (anancasm) and by creative love (agapasm) — and holds that the first two are degenerate forms of the third, setting the "Gospel of Christ" against the "Gospel of Greed".
-- Status: the original text was checked character by character against the first-printing scan (JSTOR Early Journal Content); the translation is by Claude and has not been reviewed by a human. Quote and cite the English original.
+- Status: the original text was checked character by character against the first-printing scan (JSTOR Early Journal Content); the translation is by Claude and has not been reviewed by a human. Quote and cite the English original. A final chapter, apart from the translation and under construction, collects pjdhiro's interpretations of and reactions to the paper.
 
 ### パース「心の法則」を、日本語で読む
 - URL: https://uminomae.github.io/project-design-theory/reader/peirce-law-of-mind-ja.html
