@@ -1,5 +1,5 @@
 # Wikisource の頁を、原文の段落ごとに「段の番号・誌面の頁・原文・訳の空欄」を並べた md の骨にする。
-# 訳はセッションの中で Claude が埋める（pd/knowledge/research/peirce-love-abduction/ja/README.md）。
+# 訳はセッションの中で Claude が埋める（pd/knowledge/translations/README.md）。
 #
 # 使い方：
 #   curl -sL "https://en.wikisource.org/w/api.php?action=parse&format=json&prop=text&page=<題>" -o page.json
