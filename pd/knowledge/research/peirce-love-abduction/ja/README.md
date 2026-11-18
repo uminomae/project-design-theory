@@ -20,6 +20,7 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | ファイル | 原典 | 状態 |
 |---|---|---|
 | `1893-evolutionary-love.md` | "Evolutionary Love", *The Monist* 3(2), January 1893, pp.176–200 | 全文の訳（2026-11-17）。原文の欄を初出の誌面と照らし、訳を Claude が原文と段ごとに照らして直した（2026-11-17・#164）。人の校閲はまだ |
+| `1892-law-of-mind.md` | "The Law of Mind", *The Monist* 2(4), July 1892, pp.533–559 | 全文の訳（2026-11-18・#173）。原文の欄を初出の誌面と照らした。訳は読む役四つに範囲を分けて案を出させ、Claude が原文と段ごとに照らして入れた。人の校閲はまだ。1893 の ¶5 がこの論文を挙げる |
 
 次に訳す候補と、無料で読める写しは `../READING-ORDER-20261116.md` の表。
 
@@ -53,7 +54,15 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | growth | 成長 | |
 | habit | 習慣 | |
 | mind | 心 | |
-| idea | 考え | 心の中の「観念」の意味が強い段は「観念（idea）」 |
+| idea | 考え | 心の中の「観念」の意味が強い段は「観念（idea）」。1892「The Law of Mind」は、心の中の出来事としての意味が全体を通して強いので、全体を「観念」にした |
+| general idea | 一般観念 | 1892 |
+| feeling | 感じ | 1892。「感情」にしない |
+| instant / moment | 時点／瞬間 | 1892 の ¶17 で、パースが instant を時間の点、moment を無限小の長さと定める |
+| affect / affectible | 働きかける／働きかけを受けうる | 1892 |
+| insistency | 迫る強さ | 1892 |
+| continuum / infinitesimal | 連続体／無限小 | 1892 |
+| personality / coördination | 人格／協調 | 1892。数学の coördinates は「座標」 |
+| syllogism of transposed quantity / Fermatian inference | 量の転置の三段論法／フェルマー的推論 | 1892 |
 | continuity | 連続 | |
 | greed / Gospel of Greed | 貪欲／貪欲の福音 | 読み物にそろえた |
 | the Gospel of Christ | キリストの福音 | |

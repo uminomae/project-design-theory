@@ -140,6 +140,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は ja/1892-law-of-mind.md（原文と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/research/peirce-love-abduction/READER-peirce-law-of-mind-ja.md",
+        ROOT / "scripts/reader-peirce-law-of-mind-ja-template.html",
+        ROOT / "reader/peirce-law-of-mind-ja.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/creative-thinking/READER-creative-thinking.md",
         ROOT / "scripts/reader-creative-thinking-template.html",
         ROOT / "reader/creative-thinking.html",
@@ -202,6 +209,36 @@ SCREENER_DATA = {
 }
 
 
+# 対訳の md（ja/*.md）ごとの、章を切る段 → 章の題（訳）
+JA_CHAPTERS = {
+    "1893-evolutionary-love.md": {
+        "¶1": "題と、最初の節「一見したところ、反対の福音」",
+        "¶18": "再考、和解の論",
+        "¶28": "第三の側面、見分け方",
+        "注61": "パースの脚注",
+    },
+    "1892-law-of-mind.md": {
+        "¶1": "題と、はじめの二段",
+        "¶4": "法則とは何か",
+        "¶7": "観念の個別性",
+        "¶11": "観念の連続",
+        "¶18": "無限と連続の一般論",
+        "¶46": "時間の分析",
+        "¶53": "感じには強さの連続がある",
+        "¶55": "感じには空間の広がりがある",
+        "¶58": "観念の働きかけ",
+        "¶67": "観念は連続によってしか結びつかない",
+        "¶69": "心の法則は論理の形式に従う",
+        "¶74": "心の働きの不確かさ",
+        "¶78": "法則の言い直し",
+        "¶85": "人格",
+        "¶89": "伝え合い",
+        "¶95": "結び",
+        "注98": "パースの脚注",
+    },
+}
+
+
 def ja_text_markdown(path: Path) -> str:
     """原典の対訳の md（`ja/*.md`）を、訳を主に・原文を段ごとの畳みにした本文の md に組み直す。
 
@@ -212,13 +249,8 @@ def ja_text_markdown(path: Path) -> str:
     """
     text = path.read_text(encoding="utf-8")
     blocks = re.split(r"^### ", text, flags=re.M)[1:]
-    # 原文の節の見出しの段 → 章の題（訳）。訳の md の段の番号で指す
-    chapters = {
-        "¶1": "題と、最初の節「一見したところ、反対の福音」",
-        "¶18": "再考、和解の論",
-        "¶28": "第三の側面、見分け方",
-        "注61": "パースの脚注",
-    }
+    # 原文の節の見出しの段 → 章の題（訳）。訳の md の段の番号で指す。ファイルごとに持つ
+    chapters = JA_CHAPTERS[path.name]
     out = []
     for b in blocks:
         head, _, body = b.partition("\n")
