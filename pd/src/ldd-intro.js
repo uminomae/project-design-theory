@@ -24,7 +24,33 @@
     // 開いた直後は最初の画面にいるとみなす（目次が一瞬出てから消えないように）。スクロールの位置を戻したときは ready() で直す
     if (html.hasAttribute('data-intro') && !location.hash) html.classList.add('ldd-at-intro', 'ldd-at-top');
 
+    // 題の i：押すと題の上に解説を開き、もう一度押すか「閉じる」か Esc で畳む（modal にしない。pjdhiro 2026-11-18）
+    function about() {
+        var btn = document.querySelector('.ldd-intro__info');
+        var box = document.getElementById('ldd-intro-about');
+        if (!btn || !box) return;
+        function set(open, focusBtn) {
+            box.hidden = !open;
+            btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+            btn.setAttribute('aria-label', open ? 'この読み物の解説を閉じる' : 'この読み物の解説を開く');
+            if (!open && focusBtn) btn.focus();
+        }
+        btn.addEventListener('click', function () { set(box.hidden); });
+        var close = box.querySelector('[data-ldd-about-close]');
+        if (close) close.addEventListener('click', function () { set(false, true); });
+        box.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') set(false, true);
+        });
+        btn.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && !box.hidden) set(false);
+        });
+        // 「読み始める」で読書欄へ移ったら畳む
+        var go = box.querySelector('a[href="#ldd-read"]');
+        if (go) go.addEventListener('click', function () { set(false); });
+    }
+
     function ready() {
+        about();
         var intro = document.querySelector('.ldd-intro');
         if (!intro || !html.hasAttribute('data-intro')) return;
         var ticking = false;

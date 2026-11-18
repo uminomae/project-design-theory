@@ -97,13 +97,19 @@ html.ldd-dark[data-intro] body.reader-flow .top-bar ~ #content .reader-wrap > .d
 /* 題。左下に小さく、「scroll」の印と同じ雰囲気で置く（字・色・にじみを揃え、字は少しだけ大きく）。
    背景を見せたいので目立たせない（pjdhiro 2026-11-10「左下に小さく Love駆動開発と呼びたいもの β を入れて。scroll と似た雰囲気で。
    テキストサイズは少し大きい方がいいと思う。でも、目立たないように。背景 Three を見せたいので」）。読み上げは h1 に任せる */
-.ldd-intro__title { display: none; }
-html.ldd-dark[data-intro~="title"] .ldd-intro__title {
-    display: block;
+.ldd-intro__head { display: none; }
+html.ldd-dark[data-intro~="title"] .ldd-intro__head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
     position: fixed;
     left: 20px;
     bottom: 22px;
     z-index: 2;
+}
+html.ldd-dark[data-intro~="title"] .ldd-intro__title {
+    display: block;
     margin: 0;
     max-width: calc(50vw - 56px);
     font-family: Georgia, "Noto Serif JP", serif;
@@ -114,12 +120,111 @@ html.ldd-dark[data-intro~="title"] .ldd-intro__title {
     color: rgba(180, 200, 230, 0.5);
     text-shadow: 0 0 10px rgba(2, 5, 13, 0.85), 0 0 2px rgba(2, 5, 13, 0.9);
 }
+/* 題だけを置くページ（英語版）は、題そのものを左下に留める */
+html.ldd-dark[data-intro~="title"] .ldd-intro > .ldd-intro__title {
+    position: fixed;
+    left: 20px;
+    bottom: 22px;
+    z-index: 2;
+}
 .ldd-intro__title span { display: inline-block; }
+.ldd-intro__title span span { display: inline; }
+/* i は題の最後の語の隣に留める（狭い幅で i だけが次の行に落ちないように） */
+.ldd-intro__head .ldd-intro__title { max-width: none; }
+.ldd-intro__head .ldd-intro__title > span { white-space: nowrap; }
 .ldd-intro__title i { font-family: var(--serif-en, "EB Garamond", serif); }
 /* 狭い画面では二行にして、真ん中の印に掛からないようにする */
 @media (max-width: 640px) {
-    html.ldd-dark[data-intro~="title"] .ldd-intro__title { left: 16px; font-size: 0.95rem; }
-    .ldd-intro__title span { display: block; }
+    html.ldd-dark[data-intro~="title"] .ldd-intro > .ldd-intro__title,
+    html.ldd-dark[data-intro~="title"] .ldd-intro__head { left: 16px; }
+    html.ldd-dark[data-intro~="title"] .ldd-intro__title { font-size: 0.95rem; }
+    .ldd-intro__title > span { display: block; }
+}
+
+/* 題の i と、押すと題の上の空いたところに開く解説（modal にしない・地の透ける入れ物）。
+   pjdhiro 2026-11-18「TOPのタイトルにiアイコンを置き、スペースに内容解説を 表示させる。
+   modalではなく、透明コンテナで」「試しに配置してみて」。Love駆動開発の日本語版だけに試しに置く。js は src/ldd-intro.js */
+.ldd-intro__head { pointer-events: auto; }
+.ldd-intro__info {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.35em;
+    height: 1.35em;
+    margin-left: 0.55em;
+    padding: 0;
+    vertical-align: 0.08em;
+    border: 1px solid rgba(180, 200, 230, 0.45);
+    border-radius: 50%;
+    background: rgba(11, 16, 32, 0.25);
+    color: rgba(180, 200, 230, 0.75);
+    font-family: Georgia, "EB Garamond", serif;
+    font-style: italic;
+    font-size: 0.8em;
+    line-height: 1;
+    letter-spacing: 0;
+    cursor: pointer;
+    transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+.ldd-intro__info:hover,
+.ldd-intro__info:focus-visible,
+.ldd-intro__info[aria-expanded="true"] {
+    color: rgba(214, 226, 245, 0.95);
+    border-color: rgba(180, 200, 230, 0.8);
+}
+.ldd-intro__info:focus-visible,
+.ldd-intro__about a:focus-visible,
+.ldd-intro__about-close:focus-visible { outline: 2px solid rgba(174, 188, 255, 0.55); outline-offset: 3px; }
+.ldd-intro__about {
+    box-sizing: border-box;
+    width: min(460px, calc(100vw - 40px));
+    /* 上は Menu の帯（約 80px）に掛からないところまで。下は題と余白（約 130px） */
+    max-height: calc(100vh - 220px);
+    max-height: calc(100svh - 220px);
+    overflow-y: auto;
+    padding: 16px 18px 12px;
+    border: 1px solid rgba(180, 200, 230, 0.22);
+    border-radius: 10px;
+    background: rgba(11, 16, 32, 0.32);
+    color: rgba(214, 224, 240, 0.92);
+    font-size: 0.9rem;
+    line-height: 1.75;
+    text-shadow: 0 0 10px rgba(2, 5, 13, 0.9), 0 0 2px rgba(2, 5, 13, 0.95);
+}
+.ldd-intro__about[hidden] { display: none; }
+.ldd-intro__about p { margin: 0 0 0.7em; }
+.ldd-intro__about-label {
+    display: block;
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    color: rgba(210, 180, 124, 0.9);
+}
+.ldd-intro__about-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.2em 0 0 !important;
+    font-size: 0.85rem;
+}
+.ldd-intro__about a { color: rgba(174, 188, 255, 0.95); }
+.ldd-intro__about-close {
+    padding: 4px 10px;
+    border: 1px solid rgba(180, 200, 230, 0.35);
+    border-radius: 6px;
+    background: transparent;
+    color: rgba(214, 224, 240, 0.85);
+    font: inherit;
+    cursor: pointer;
+}
+.ldd-intro__about-close:hover { border-color: rgba(180, 200, 230, 0.7); }
+@media (max-width: 640px) {
+    .ldd-intro__about { width: calc(100vw - 32px); font-size: 0.86rem; }
+    .ldd-intro__info { margin-left: 0.4em; }
+}
+/* 360px 以下では、題を少し詰めて、i が真ん中の「scroll」の印に掛からないようにする（320px で測った） */
+@media (max-width: 360px) {
+    html.ldd-dark[data-intro~="title"] .ldd-intro__head { left: 12px; }
+    html.ldd-dark[data-intro~="title"] .ldd-intro__head .ldd-intro__title { font-size: 0.85rem; letter-spacing: 0.06em; }
 }
 
 /* 下へ促す印。創造とはのトップ（cs/?graphic=i）の #scroll-hint に倣う：
@@ -170,10 +275,12 @@ html.ldd-dark[data-intro~="cue"] .ldd-intro__cue {
    pjdhiro 2026-11-10「目次が登場するタイミングで、スクロールと矢印を消す。ページタイトルも消す」のあと、
    「コンテンツが画面に出るタイミングがいいので、スクロール開始した直後くらいのところで消して良いです」。消える速さは cs の印と同じ 0.6 秒 */
 html.ldd-dark[data-intro] .ldd-intro__title,
+html.ldd-dark[data-intro] .ldd-intro__head,
 html.ldd-dark[data-intro] .ldd-intro__cue {
     transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 html.ldd-dark[data-intro]:not(.ldd-at-top) .ldd-intro__title,
+html.ldd-dark[data-intro]:not(.ldd-at-top) .ldd-intro__head,
 html.ldd-dark[data-intro]:not(.ldd-at-top) .ldd-intro__cue {
     opacity: 0;
     visibility: hidden;
