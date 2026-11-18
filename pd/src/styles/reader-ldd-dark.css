@@ -367,7 +367,8 @@ html.ldd-dark body.reader-flow .reader-wrap::before {
     pointer-events: none;
 }
 
-/* 概要と第一部のあいだにも、ほかの部と部のあいだと同じ余白を置き、第一部から本文が始まることを見せる
-   （共通の reader-flow.css は最初の部の上の余白を 0 にしている。pjdhiro 2026-11-18「この箇所にスペースを入れたい。
-   第一部が本文として開始することをはっきりと示したい。他の部の間のように」） */
-html.ldd-dark body.reader-flow .reader-article .reader-part:first-child { margin-top: 56px; }
+/* 概要と第一部のあいだを、ほかの部と部のあいだ（つなぎの段を挟んで 360〜450px）と同じくらい空け、
+   第一部から本文が始まることを見せる。文は置かない（共通の reader-flow.css は最初の部の上の余白を 0 にしている。
+   pjdhiro 2026-11-18「この箇所にスペースを入れたい。第一部が本文として開始することをはっきりと示したい。他の部の間のように」
+   「文章もあるから、結構空いてるよね。空けて欲しい。文字があってもなくてもいいので」） */
+html.ldd-dark body.reader-flow .reader-article .reader-part:first-child { margin-top: 380px; }
