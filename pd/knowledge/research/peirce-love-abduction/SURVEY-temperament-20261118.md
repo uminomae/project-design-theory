@@ -8,6 +8,19 @@
 
 訳はどれも Claude のもの。引用は一か所 40 語ほどまで。
 
+## 照合し直し（2026-11-18・worktree objective-ritchie-a86438）
+
+読み物に使う前に、§1〜§3 の引用・頁・年・出どころを、手元の写し（本体の `.cache/raw/peirce-temperament/`。この照合で `jstor-27897003.txt` と `popularsciencemo58newy.txt` を足した）の本文と一件ずつ突き合わせ直した。引用の文は、空白・改行・行末のハイフンをならして写しの本文と機械で突き合わせ、頁は誌面の柱（頁の頭か終わりの番号）を目で見た。合わなかった 5 件は、どれも頁の変わり目・行末のハイフン・OCR の誤り（Peiree など）で、本文を開いて一致を確かめた。誌面の書誌（頁の範囲・署名）は、Internet Archive の JSTOR Early Journal Content の書誌のファイル（`10.2307_<番号>.xml`）でも照らした。
+
+| 結果 | 件数 | 中身 |
+|---|---|---|
+| 通った | 引用 54 件・事実の行 16 行 | P1（2）・P3（1）・P4（2）・P5（7）・C1（6）・C2（1）・C3（8）・C4（5）・C5（6）・C6（4）・C7（3）の引用 45 件は、原文・頁とも記録のとおり。B1〜B3 の引用 9 件（B1 の 1・B2 の 3・B3 の 5）と §3 の事実の 16 行も、SEP と Houser の序の本文どおり。「本文照合済」とした 15 件のうち、読み直した 14 件（P2 を除く）は、どれも本文照合済のまま |
+| 直した | 9 か所 | ① C5 の署名と頁：末尾に「Josiah Royce, Fergus Kernan」の連名、頁は pp.701–709（JSTOR の書誌も同じ）。「fragmentary」は p.706。② P5 の日付なしの手紙の年：手紙が「In the spring of 1903 I was invited … to give a course of lectures」と書くので、1903 年春より後、1905 年 4 月より前。案の「1905 年ごろ」を「1903〜1905 年」に。③ P3：誌面の走査（*Popular Science Monthly* 58, No.3, January 1901, pp.296–306。MBLWHOI 図書館の走査）と照らし、Wikisource と同じ文が p.300 にあることを確かめた。④ §1-5 と案の 1900 年の手紙の経緯：Franklin の返事は「長すぎる」「載せるべきでない」でなく、協同の辞典の項は先駆の仕事に当てるものでなく、この見方を分かるように示すには辞典が割ける以上の紙幅が要る、というもの。原文に合わせた。⑤ P7 の表の見出しにあった手紙の日付（1908-12-23）を外した。SEP の引用には日付が無く、記録の別の行（「SEP の引用には無く、ここでは書かない」）と食い違っていた。Welby 宛というのも、出典の書名（*Semiotic and Significs*＝Welby との往復書簡）から言えることまで、と書いた。⑥ §3 の 1884 年の行：Burch の言い回しを原文に寄せた（二人目の妻と、結婚と離婚の前から同居していたことなどに結びついた理由）。⑦ 案の「1883 年の離婚と再婚のあと、…実家でも歓迎されなくなった」：Houser は「By 1887」と書くので「1887 年までに」に。⑧ 案のジェームズの紹介「大学で一つ下の学年」：手紙は「In last year's [class]」で、ハーバードの化学の課程の組のこと。「化学の課程で一年あとの組にいた」に。⑨ 案の「亡くなった二年後に」「二十年前に」：誌面は 1916 年 12 月、パースが教え始めたのは 1880〜81 年なので、「1916 年に」「1880 年代の初めに」と、年で書いた |
+| 外した | 0 件（新しく外したものは無し） | 載せないとしていた P6（CP 1.3–1.14。個人が上げた写し）と P7（SEP 経由）は、載せないまま。P6 の言い換え（§1-8）は写しの本文と合っていた |
+| 当たれない | 5 件 | Brent の伝記・Welby 宛とジェームズ宛のパースの手紙・自伝的な草稿・PEP の第 1 巻と第 8 巻と選集の序（§4。この照合では探し直していない）。P2（§1-2）は場所を指すだけで引用を置いていないので、ここでは読み直していない（中身の照合は `SURVEY-reception-nuance-20261117.md` §7-2） |
+
+§4 の宿題のうち三つ（Wikisource と誌面の走査・C5 の署名と頁・日付なしの手紙の年）は、上の ③・①・② で片づけた。
+
 ## 0. 読んだ写しと照合の状態
 
 照合の状態の語は `docs/rules/sources.md` §3。読んだのは OCR の文字で、頁は誌面の柱（頁の頭の番号）で確かめた。手元の写しは本体の `.cache/raw/peirce-temperament/`（git の外）。
@@ -16,23 +29,23 @@
 |---|---|---|---|
 | P1 | Peirce (1892) "The Law of Mind", *The Monist* 2(4), pp.533–559 | 対訳 `pd/knowledge/translations/peirce-1892-law-of-mind.md`（原文の欄は誌面の走査 [IA `jstor-27897003`](https://archive.org/details/jstor-27897003) と照らしてある） | 本文照合済（¶2・pp.533–534） |
 | P2 | Peirce (1893) "Evolutionary Love", *The Monist* 3(2), pp.176–200 | 対訳 `pd/knowledge/translations/peirce-1893-evolutionary-love.md` | 本文照合済。偏りの打ち明け（pp.182–183）・証明できないと認める（p.198）・決定を待つ（p.200）は `SURVEY-reception-nuance-20261117.md` §7-2 で済んでいるので、ここでは繰り返さない |
-| P3 | Peirce (1901) "Pearson's Grammar of Science", *Popular Science Monthly* 58（January 1901） | [Wikisource](https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_58/January_1901/Pearson%27s_Grammar_of_Science)（誌面の走査から起こした版。頁の印つき） | 本文照合済（p.300 の段だけ。誌面の走査とは照らしていない。論文の頁の範囲は確かめていない） |
+| P3 | Peirce (1901) "Pearson's Grammar of Science", *Popular Science Monthly* 58(3)（January 1901）, pp.296–306 | [Wikisource](https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_58/January_1901/Pearson%27s_Grammar_of_Science)（誌面の走査から起こした版。頁の印つき）と、誌面の走査 [IA `popularsciencemo58newy`](https://archive.org/details/popularsciencemo58newy)（MBLWHOI 図書館の本） | 本文照合済（p.300 の段。2026-11-18 の照合し直しで誌面の走査と照らし、同じ文と頁を確かめた。頁の範囲は号の目次と柱から） |
 | P4 | Peirce (1905) "What Pragmatism Is", *The Monist* 15(2), pp.161–181 | 誌面の走査 [IA `jstor-27899577`](https://archive.org/details/jstor-27899577)（JSTOR Early Journal Content） | 本文照合済（pp.161–163 の段） |
-| P5 | パースの手紙 4 通（1900 年 11 月の 2 通・1902 年の感謝祭・日付なし）。Ladd-Franklin (1916) "Charles S. Peirce at the Johns Hopkins", *The Journal of Philosophy, Psychology and Scientific Methods* 13(26), pp.715–722 に載ったもの | 誌面の走査 [IA `jstor-2012321`](https://archive.org/details/jstor-2012321)（JSTOR Early Journal Content） | 本文照合済（全文を読んだ）。手紙は Ladd-Franklin が載せた形で、一部は「quoted in part」と省かれている。手稿とは照らしていない |
+| P5 | パースの手紙 4 通（1900 年 11 月の 2 通・1902 年の感謝祭・日付なし〔1903 年春より後、1905 年 4 月より前〕）。Ladd-Franklin (1916) "Charles S. Peirce at the Johns Hopkins", *The Journal of Philosophy, Psychology and Scientific Methods* 13(26), pp.715–722 に載ったもの | 誌面の走査 [IA `jstor-2012321`](https://archive.org/details/jstor-2012321)（JSTOR Early Journal Content） | 本文照合済（全文を読んだ）。手紙は Ladd-Franklin が載せた形で、一部は「quoted in part」と省かれている。手稿とは照らしていない |
 | P6 | Peirce（1897 年ごろの断片二つ。『Collected Papers』第 1 巻〔1931〕の序の 1.3–1.14、pp.vii–xi） | Internet Archive の、個人が上げた写し（`collected-papers-of-charles-sanders-peirce-volume-1`。権利は未確認） | 未照合（上げた人の分からない写しで読んだ。CP 1.3–1.14）。年は編者の注「3-7 and 8-14 are two fragments, c. 1897」から |
-| P7 | パースの Lady Welby 宛の手紙（1908-12-23）の一文 | Atkin "Peirce's Theory of Signs", *Stanford Encyclopedia of Philosophy*（2006、2022 改訂）の冒頭の引用（出どころは *Semiotic and Significs* 1977, pp.85–86 と書かれている） | 二次資料のみ（SEP の項。手紙の日付は SEP の引用には無く、ここでは書かない） |
+| P7 | パースの一文（出どころの *Semiotic and Significs* は Lady Welby との往復書簡なので、Welby 宛の手紙と読める） | Atkin "Peirce's Theory of Signs", *Stanford Encyclopedia of Philosophy*（2006、2022 改訂）の冒頭の引用（出どころは「SS 1977, 85–6」と書かれている） | 二次資料のみ（SEP の項。手紙の日付は SEP の引用には無く、ここでは書かない） |
 | C1 | *The Letters of William James*, ed. Henry James（息子）, 2 vols., Boston: Atlantic Monthly Press, 1920 | 図書館の本の走査（IA [`lettersofwilliam01jame`](https://archive.org/details/lettersofwilliam01jame)・[`lettersofwilliam02jame`](https://archive.org/details/lettersofwilliam02jame)。1920 年刊でパブリックドメイン） | 本文照合済（第 1 巻 pp.32–33・35・80・149、第 2 巻 p.191） |
 | C2 | William James (1907) *Pragmatism*, New York: Longmans, Green | 図書館の本の走査（IA [`pragmatismnewnam00jame`](https://archive.org/details/pragmatismnewnam00jame)） | 本文照合済（第 1 講 p.5 の段。頁は OCR の柱から） |
 | C3 | Ladd-Franklin (1916)。P5 と同じ記事 | 同上 | 本文照合済（全文） |
 | C4 | Jastrow (1916) "Charles S. Peirce as a Teacher", 同じ号 pp.723–726 | [IA `jstor-2012322`](https://archive.org/details/jstor-2012322) | 本文照合済（全文） |
-| C5 | 記事 "Charles Sanders Peirce"、同じ号 p.701 から（頭の節は「Peirce as a Philosopher」、あとの節は「The Peirce Manuscripts」） | [IA `jstor-2012319`](https://archive.org/details/jstor-2012319)。IA の書誌の著者は Fergus Kernan。誌面の署名と終わりの頁は確かめていない | 本文照合済（pp.701–703 と、手稿の節の頭） |
+| C5 | Royce and Kernan (1916) "Charles Sanders Peirce"、同じ号 pp.701–709（頭の節は「Peirce as a Philosopher」、あとの節は「The Peirce Manuscripts」。署名は末尾に「Josiah Royce, Fergus Kernan. Cambridge, Mass.」の連名で、どちらの節を誰が書いたかは誌面に無い） | [IA `jstor-2012319`](https://archive.org/details/jstor-2012319)。頁の範囲は誌面の柱と JSTOR の書誌（`10.2307_2012319.xml`）で照らした | 本文照合済（pp.701–703・706 と、手稿の節の頭） |
 | C6 | Cohen (1916) "Charles S. Peirce and a Tentative Bibliography of His Published Writings", 同じ号 p.726 から | [IA `jstor-2012323`](https://archive.org/details/jstor-2012323) | 本文照合済（pp.726–728） |
 | C7 | Cohen (1923) "Introduction", Peirce『Chance, Love, and Logic』 | トロント大学の本の走査（IA [`chanceloveandlog00peiruoft`](https://archive.org/details/chanceloveandlog00peiruoft)） | 本文照合済（pp.vii–ix） |
 | B1 | Burch "Charles Sanders Peirce", *Stanford Encyclopedia of Philosophy*（2001、2021 改訂）§1 Brief Biography | [公開の項](https://plato.stanford.edu/entries/peirce/) | 本文照合済（§1。SEP は伝記の二次資料で、その記述を読んだ、という意味） |
 | B2 | Houser "Introduction to Volume 5"（1884–1886）、*Writings of Charles S. Peirce: A Chronological Edition* | Peirce Edition Project（インディアナ大学）のサイトの写し。[Wayback の記録（元は peirce.iupui.edu）2024-02-28](https://web.archive.org/web/20240228023556/https://peirce.iupui.edu/writings/v5/v5intro.htm) | 本文照合済（解雇・測量部の醜聞の段。編者による伝記の記述で、中に引かれたパースの手紙は二次経由） |
 | B3 | Houser "Introduction to Volume 6"（1887–1890）、同 | 同じサイトの写し。[Wayback の記録 2022-02-07](https://web.archive.org/web/20220207161701/https://peirce.iupui.edu/writings/v6/v6introx.htm) | 本文照合済（冒頭・ミルフォードへの移住・1889 年の段。同上） |
 
-写しの性格：P1〜P5・C1〜C7 は 1923 年までの刊行物で、パブリックドメイン。P6 の『Collected Papers』第 1 巻は 1931 年刊で、権利の状態は確かめていない。
+写しの性格：P1〜P5・C1〜C7 は 1923 年までの刊行物で、パブリックドメイン。C6（1916）の「restless pioneer souls」の一文は、C7（1923）の序 p.viii にもほぼ同じ形で出る（コーエンが 1916 年の文を 1923 年の序に使っている）。P6 の『Collected Papers』第 1 巻は 1931 年刊で、権利の状態は確かめていない。
 
 ## 1. パースが自分について書いたこと
 
@@ -60,7 +73,7 @@
 
 ### 1-3. 認められなかったことと、何のために書いたか（手紙・日付なし）
 
-Ladd-Franklin 宛の手紙（P5・pp.718–720）。手紙の中で、近く *The Monist* に自分のプラグマティズムを説明する論文が出る、と書いているので、1905 年 4 月の「What Pragmatism Is」の前に書かれたもの（Claude の読み。Ladd-Franklin は日付を載せていない）。
+Ladd-Franklin 宛の手紙（P5・pp.718–720）。Ladd-Franklin は日付を載せていない。手紙の中で、近く *The Monist* に自分のプラグマティズムを説明する論文が出る（もう送って受け入れられた）と書き、「In the spring of 1903 I was invited … to give a course of lectures in Harvard University on Pragmatism」とも書いているので、1903 年春より後、1905 年 4 月の「What Pragmatism Is」より前に書かれたもの（年の幅は Claude の読み）。
 
 > It is true that I have not received much credit either for pragmatism or any other part of my work. However, as it was not done for the sake of anything of that kind, I have no reason to complain. What I expected to gain when I did it, I have gained.（pp.718–719）
 
@@ -90,7 +103,7 @@ Ladd-Franklin がジョンズ・ホプキンズで論理学を教えることに
 
 ### 1-5. 言いにくい批判を頼み、礼を言う（手紙・1900）
 
-哲学の辞典に出す「Exact Logic」の項が長すぎないかを、Ladd-Franklin の夫 Fabian Franklin に見てもらい、載せるべきでないという返事を受けての手紙（P5・p.722。Milford, Pa.、1900 年 11 月）。
+哲学の辞典に出す「Exact Logic」の項を、Ladd-Franklin とその夫 Fabian Franklin に読んでもらい、この項が論理学のためになるか、縮めるならどう直すかを尋ねた（p.721）。Franklin は、協同の辞典の項は先駆の仕事に当てるものでなく、この見方を分かるように示すには、この原稿よりも、辞典が割けるよりも、ずっと多くの紙幅が要る、と返した（p.722）。それを受けての手紙（P5・p.722。Milford, Pa.、1900 年 11 月）。
 
 > I asked of you a disagreeable thing, and I thank you for having done it so faithfully. Would there were more courage between friends! You give me wholesome counsel, and I shall follow it, notwithstanding the suggestions of the Evil One.
 
@@ -183,7 +196,7 @@ B2・B3（Houser の序）が引くもの。手稿も刊本も読んでいない
 - 「Peirce was fond of saying that he grew up in a laboratory.」（p.701。§1-7 の自分の文と合う。）
 - 学識は「somewhat capricious, despite its frequent thoroughness」（p.702）。「Peirce had no interest in founding a school, belonged to none of the existing schools」（p.702）。
 - 法則がどうして今の形になったかを知りたがった。その思弁は「perhaps the most characteristic productions of his whole personal character and mental interest」（p.703）。
-- 「his entire life work may in a certain sense be called fragmentary」（手稿の節の前）。遺稿はハーバードの哲学科と図書館に置かれた、と書く。
+- 「his entire life work may in a certain sense be called fragmentary」（p.706。手稿の節の前）。遺稿はハーバードの哲学科と図書館に置かれた、と書く（p.706）。署名は末尾に Royce と Kernan の連名（p.709）。
 
 ### 2-5. コーエン（C6・C7）
 
@@ -203,9 +216,9 @@ B1（SEP・Burch）と B2・B3（Houser）が書いていること。どれも�
 | 19 歳ごろ | 三年カントを読み、生涯を論理の研究に捧げると決めた。当時それで暮らすことはできなかった | B1 |
 | 1879–1884 | ジョンズ・ホプキンズ大学で論理学を教える。唯一の大学の職 | B1 |
 | 1883 | 4 月、最初の妻 Melusina Fay と離婚し、Juliette と再婚 | B3 |
-| 1884 | 大学の契約が更新されないと決まる。Burch は、再婚の前後の事情に結びついた理由で突然終わった、と書く。Houser は「a sign that society could not tolerate his disregard for its conventions」と書く。「The shock and disappointment ... led to ill-health and despair」 | B1・B2 |
+| 1884 | 大学の契約が更新されないと決まる。Burch は、二人目の妻 Juliette と、結婚の前、最初の妻との離婚の前から、ほぼ公然と同居していたことなどに結びついたらしい理由で、突然終わった、と書く。Houser は「a sign that society could not tolerate his disregard for its conventions」と書く。「The shock and disappointment ... led to ill-health and despair」 | B1・B2 |
 | 1885 | 測量部が議会の調査を受け、パースの振り子の仕事は費用に比べて値打ちが乏しいと報告される。パースは新聞に抗議を書く | B2 |
-| 1887 | 「spurned by the society that had nurtured him—he was no longer welcome even in his family home」（Houser）。4 月、ペンシルベニア州ミルフォードへ移る。通信教育で論理を教える試みは、生徒が集まらず続かなかった | B3 |
+| 1887 | 「By 1887 Peirce had come to be spurned by the society that had nurtured him—he was no longer welcome even in his family home」（Houser）。4 月、ペンシルベニア州ミルフォードへ移る。通信教育で論理を教える試みは、生徒が十分に集まらず、やがて立ち消えた（Houser「would never achieve a critical mass and would gradually expire」） | B3 |
 | 1888 | 5 月、のちに Arisbe と名づける家を買う。改築に力を注ぎ、土地を買い足す。Houser は、慎ましく暮らせばのちの「terrible poverty」は避けられたかもしれない、と書く | B3 |
 | 1889 | 妻の病気が重くなる。7 月、家事の手伝いの女性を殴り、暴行で訴えられ、10 月に罪を認めて罰金 25 ドル | B3 |
 | 1891 | 年末、測量部の職が終わる。Burch は、純粋な研究への予算の反対と、おそらくパースの出費と報告の遅れのため、と書く。Houser は、長官が報告の印刷を断り、辞職を求めた、と書く | B1・B2 |
@@ -222,7 +235,7 @@ B1（SEP・Burch）と B2・B3（Houser）が書いていること。どれも�
 - **ジェームズ宛のパースの手紙**：Perry『The Thought and Character of William James』（1935）は貸し出しか、上げた人の分からない写し。開いていない。1920 年の書簡集（C1）に入っているのはジェームズの側の手紙だけ。
 - **自伝的な草稿**（左利きと言葉の不得手を書いたとされる晩年の手稿など）：手稿の画像も刊本も探せていない。Claude の記憶にある文は、確かめていないので書かない。
 - **Peirce Edition Project の第 1 巻の序（Fisch。幼少期）・選集の序（Houser。1893 年以後）・第 8 巻の序（1890–1892）**：Wayback に本文の頁の写しが無かった。今のサイト（peirce.indianapolis.iu.edu ほか）は、このセッションからつながらなかった。pjdhiro のブラウザなら開けるかもしれない。
-- **Wikisource の P3 と誌面の走査の突き合わせ**、**C5 の署名と頁の範囲**、**P5 の日付なしの手紙の年**：確かめていない。
+- **Wikisource の P3 と誌面の走査の突き合わせ**、**C5 の署名と頁の範囲**、**P5 の日付なしの手紙の年**：2026-11-18 の照合し直しで片づけた（頭の「照合し直し」の ③・①・②）。
 
 ## 5. 章「パースと、気質まで似ていないか」の書き足しの案
 
@@ -240,21 +253,21 @@ pjdhiro の判断（2026-11-18・判断のページのボタン）：範囲は�
 >
 > **1893 年・53 歳。**「進化的な愛」で、自分の熱い好みを打ち明け、読者に用心を頼みます（[パースは、愛を何と呼んだか](#pa-love)）。
 >
-> **1900 年・61 歳。**辞典に出す原稿が長すぎないかを、教え子の夫に見てもらい、載せるべきでないと言われて、こう返します。「私はあなたに嫌なことを頼みました。それをこれほど誠実にしてくださったことに感謝します。友人のあいだに、もっと勇気があればよいのに」。
+> **1900 年・61 歳。**辞典に出す原稿を、教え子とその夫に読んでもらい、夫から、この見方を分かるように示すには辞典が割けるよりずっと多くの紙幅が要る、と言われて、こう返します。「私はあなたに嫌なことを頼みました。それをこれほど誠実にしてくださったことに感謝します。友人のあいだに、もっと勇気があればよいのに」。
 >
 > **1901 年・61 歳。**書評の中で、こう書きます。「打ち明けなければならないが、私は、社会の利益に役立とうが役立つまいが、神の助けを借りて真理を正面から見ようとする、あのならず者の部類に属している」。
 >
-> **1902 年・63 歳。**二十年前に教えていた頃を振り返って、教え子に書きます。「あの頃の私は、論理についてほとんど何も知りませんでした。…私は毎日、論理について、自分にとって新しいことを見つけています」。
+> **1902 年・63 歳。**1880 年代の初めに教えていた頃を振り返って、教え子に書きます。「あの頃の私は、論理についてほとんど何も知りませんでした。…私は毎日、論理について、自分にとって新しいことを見つけています」。
 >
-> **1905 年ごろ。**同じ教え子への手紙です。「私の仕事のどの部分についても、私があまり認められてこなかったのは本当です。けれども、そういうもののためにした仕事ではないので、不平を言う理由はありません」。初めは論理の研究を毎月刷るつもりだったが、「誰も私の論文に目を留めないことが分かり、刷ることへの関心をすっかり失って、原稿は自分で使うためにしまい込むだけになりました」。同じ手紙で、自分が分かってもらえない理由をこう書きます。「一般的なものほど徹底して実在するものは無いと思え、真理と正義を文字どおり世界でもっとも強い力だと見ている私が」。
+> **1903〜1905 年。**同じ教え子への手紙です。「私の仕事のどの部分についても、私があまり認められてこなかったのは本当です。けれども、そういうもののためにした仕事ではないので、不平を言う理由はありません」。初めは論理の研究を毎月刷るつもりだったが、「誰も私の論文に目を留めないことが分かり、刷ることへの関心をすっかり失って、原稿は自分で使うためにしまい込むだけになりました」。同じ手紙で、自分が分かってもらえない理由をこう書きます。「一般的なものほど徹底して実在するものは無いと思え、真理と正義を文字どおり世界でもっとも強い力だと見ている私が」。
 >
 > **1905 年・65 歳。**「プラグマティズムとは何か」の頭で、自分を筆者と呼んで書きます。「六歳から成年をとうに過ぎるまで、実験室に住んでいたと言ってよいくらいである」。
 >
-> パースを知っていた人たちは、次のように書いています。大学で一つ下の学年にいたウィリアム・ジェームズは、1861 年に「たいへん気骨がある。ただ、かなり独立心が強くて激しい」、1869 年に「これほど独創的で、生涯の力を論理学と形而上学に捧げる気も力もある男が、職から干されるのは、じつに惜しい」と手紙に書きました。教え子のジャストロウは、亡くなった二年後に、非社交的で冷たいとさえ見られやすかったが「根は洗練された内気さだった」、「彼の型の能力は、制度化された空気の中では育ちにくい」と書いています。同じ号で教え子のラッド＝フランクリンは、パースを「じっと考え込む型」と書き、自分の書いたものの麦と籾殻を分ける自己批判を欠いていた、とも、批判を受け入れるところに「性格に染みついた優しさ」が出ている、とも書いています。
+> パースを知っていた人たちは、次のように書いています。ハーバードの化学の課程で一年あとの組にいたウィリアム・ジェームズは、1861 年に「たいへん気骨がある。ただ、かなり独立心が強くて激しい」、1869 年に「これほど独創的で、生涯の力を論理学と形而上学に捧げる気も力もある男が、職から干されるのは、じつに惜しい」と手紙に書きました。教え子のジャストロウは、1916 年に、非社交的で冷たいとさえ見られやすかったが「根は洗練された内気さだった」、「彼の型の能力は、制度化された空気の中では育ちにくい」と書いています。同じ号で教え子のラッド＝フランクリンは、パースを「じっと考え込む型」と書き、自分の書いたものの麦と籾殻を分ける自己批判を欠いていた、とも、批判を受け入れるところに「性格に染みついた優しさ」が出ている、とも書いています。
 >
 > 厳しい言葉も残っています。ジェームズの書簡集（1920 年）を編んだ息子のヘンリー・ジェームズは、地の文でパースを「輝かしいが気まぐれな（brilliant but erratic）」と書きました。パースの論文集（1923 年）を編んだコーエンは、序で、体系が未完に終わったのは仕事の難しさや、顧みられなかったことと貧しさのせいだけではない、として、「ある種の内なる不安定さ、あるいは自制の欠け」が、世間のしきたりから外れたふるまいに映り、数年を除いて大学の職から締め出されることになった、と書いています。
 >
-> パースが大学で教えたのは、ジョンズ・ホプキンズ大学での五年ほど（1879〜1884 年）だけです。三十二年勤めた沿岸測量部の職は 1891 年の末に終わり、そのあとは貧しさの縁で暮らすことが多かった、とスタンフォード哲学百科事典の項は書いています。著作集の編者ハウザーは、1883 年の離婚と再婚のあと、パースは育ててくれた社会から疎まれ、実家でも歓迎されなくなった、と書きます。1887 年にペンシルベニア州のミルフォードへ移りました。ハウザーによれば、妻の病気が重くなった 1889 年の夏、パースは怒りと苛立ちのあまり家事の手伝いの女性を殴り、暴行で訴えられて、秋に罪を認め、罰金を払っています。「進化的な愛」を含む連作が雑誌に出たのは、1891 年から 1893 年です。
+> パースが大学で教えたのは、ジョンズ・ホプキンズ大学での五年ほど（1879〜1884 年）だけです。三十二年勤めた沿岸測量部の職は 1891 年の末に終わり、そのあとは貧しさの縁で暮らすことが多かった、とスタンフォード哲学百科事典の項は書いています。著作集の編者ハウザーは、1883 年に離婚と再婚をしたあと、1887 年までに、パースは育ててくれた社会から疎まれ、実家でも歓迎されなくなった、と書きます。1887 年にペンシルベニア州のミルフォードへ移りました。ハウザーによれば、妻の病気が重くなった 1889 年の夏、パースは怒りと苛立ちのあまり家事の手伝いの女性を殴り、暴行で訴えられて、秋に罪を認め、罰金を払っています。「進化的な愛」を含む連作が雑誌に出たのは、1891 年から 1893 年です。
 
 ### 案に付ける出典（畳み）
 
