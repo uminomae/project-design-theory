@@ -366,3 +366,8 @@ html.ldd-dark body.reader-flow .reader-wrap::before {
     -webkit-backdrop-filter: blur(10px);
     pointer-events: none;
 }
+
+/* 概要と第一部のあいだにも、ほかの部と部のあいだと同じ余白を置き、第一部から本文が始まることを見せる
+   （共通の reader-flow.css は最初の部の上の余白を 0 にしている。pjdhiro 2026-11-18「この箇所にスペースを入れたい。
+   第一部が本文として開始することをはっきりと示したい。他の部の間のように」） */
+html.ldd-dark body.reader-flow .reader-article .reader-part:first-child { margin-top: 56px; }
