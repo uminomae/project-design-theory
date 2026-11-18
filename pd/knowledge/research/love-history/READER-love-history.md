@@ -415,7 +415,7 @@ date: 2026-11-09
 
 ## パース — 創造的な愛による進化（agapasm）
 
-<a id="lh-peirce"></a>この章は、パース「進化的な愛（Evolutionary Love）」（1893 年）を見ます。パースについては、より詳しく掘り下げたページ「[パースの創造的な愛と、アブダクション](peirce-love-abduction.html)」があります（工事中）。この論文と、パースが新しい考えの生まれる推論として立てたアブダクションを、原文の鍵の文と一緒に読めます。
+<a id="lh-peirce"></a>この章は、パース「進化的な愛（Evolutionary Love）」（1893 年）を見ます。パースについては、より詳しく掘り下げたページ「[パースの創造的な愛と、アブダクション](peirce-love-abduction.html)」があります（工事中）。この論文と、パースが新しい考えの生まれる推論として立てたアブダクションを、原文の鍵の文と一緒に読めます。論文の全文は「[パース「進化的な愛」を、日本語で読む](peirce-evolutionary-love-ja.html)」で、原文と日本語訳を並べて読めます（訳は Claude によるもので、人の校閲はまだです）。
 
 ### 「進化的な愛」（The Monist 3(2), 1893 年, pp.176–200）
 
@@ -688,7 +688,7 @@ date: 2026-11-09
 | 近代以降の哲学 | Dante, *Commedia*, Purgatorio 17.91–139・18.19–75, Paradiso 1.103–141・33.145（山川丙三郎訳） | 原文 | Digital Dante の[煉獄篇 17](https://digitaldante.columbia.edu/dante/divine-comedy/purgatorio/purgatorio-17/)・[18](https://digitaldante.columbia.edu/dante/divine-comedy/purgatorio/purgatorio-18/)・[天国篇 1](https://digitaldante.columbia.edu/dante/divine-comedy/paradiso/paradiso-1/)・[33](https://digitaldante.columbia.edu/dante/divine-comedy/paradiso/paradiso-33/)／青空文庫の[『浄火』](https://www.aozora.gr.jp/cards/000961/card42184.html)・[『天堂』](https://www.aozora.gr.jp/cards/000961/card4820.html) |
 | 近代以降の哲学 | Spinoza, *Ethica* III def. aff. 6・III P13 schol.・V P32 cor.–P36（Elwes 訳） | 原文 | la.wikisource の[第三部](https://la.wikisource.org/wiki/Ethica/Pars_tertia_-_De_origine_et_natura_affectuum)・[第五部](https://la.wikisource.org/wiki/Ethica/Pars_quinta_-_De_potentia_intellectus_seu_de_libertate_humana)／[Gutenberg #3800](https://www.gutenberg.org/ebooks/3800) |
 | 近代以降の哲学 | Schopenhauer, *Die Welt als Wille und Vorstellung* II, Kap. 44（Haldane & Kemp 訳） | 訳 | [Gutenberg #40868](https://www.gutenberg.org/ebooks/40868) |
-| 近代以降の哲学 | Peirce, C. S. (1893) "Evolutionary Love", *The Monist* 3(2):176–200／*Chance, Love, and Logic*, ed. M. R. Cohen (1923) pp.267–300 | 原文 | Internet Archive の[原誌](https://archive.org/details/sim_monist_1893-01_3_2)・[1923 年版](https://archive.org/details/chanceloveandlog00peiruoft) |
+| 近代以降の哲学 | Peirce, C. S. (1893) "Evolutionary Love", *The Monist* 3(2):176–200／*Chance, Love, and Logic*, ed. M. R. Cohen (1923) pp.267–300 | 原文 | Internet Archive の[原誌](https://archive.org/details/sim_monist_1893-01_3_2)・[1923 年版](https://archive.org/details/chanceloveandlog00peiruoft)。全文の訳は[パース「進化的な愛」を、日本語で読む](peirce-evolutionary-love-ja.html) |
 | 現代の恋愛 | Merriam-Webster・Cambridge Dictionary「love」／デジタル大辞泉・日本国語大辞典「愛」「恋愛」「恋」 | 原文 | [Merriam-Webster](https://www.merriam-webster.com/dictionary/love)・[Cambridge](https://dictionary.cambridge.org/dictionary/english/love)・コトバンクの[「愛」](https://kotobank.jp/word/%E6%84%9B-23564)・[「恋愛」](https://kotobank.jp/word/%E6%81%8B%E6%84%9B-662001)・[「恋」](https://kotobank.jp/word/%E6%81%8B-493530) |
 | 現代の恋愛 | 北村透谷「厭世詩家と女性」（1892） | 原文 | [青空文庫](https://www.aozora.gr.jp/cards/000157/card45237.html) |
 | 心理学 | Bowlby, J. (1958) The nature of the child's tie to his mother. *IJP* 39:350 | 大学サイトの写し | [Stony Brook 大学](https://psychology.psy.sunysb.edu/attachment/online/Bowlby_1958_childs%20tie.pdf) |

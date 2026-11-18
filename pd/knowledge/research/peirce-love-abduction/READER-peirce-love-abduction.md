@@ -73,7 +73,7 @@ pjdhiro は、プロジェクトを動かしているものを、Love と呼び�
 
 <details><summary>出典</summary>
 
-出典：Peirce (1893) "Evolutionary Love", *The Monist* 3(2):176–200（[The Monist の原誌（Internet Archive）](https://archive.org/details/sim_monist_1893-01_3_2)）。頁は、再録の [Cohen 編『Chance, Love, and Logic』（1923・パブリックドメイン。トロント大学の本の走査、Internet Archive）](https://archive.org/details/chanceloveandlog00peiruoft)の頁で、pp.267–300 を本文で照合済。訳は Claude。同じ論文を、[Love とは、どう言われてきたか](love-history.html#lh-peirce)は The Monist の頁で引いています。
+出典：Peirce (1893) "Evolutionary Love", *The Monist* 3(2):176–200（[The Monist の原誌（Internet Archive）](https://archive.org/details/sim_monist_1893-01_3_2)）。頁は、再録の [Cohen 編『Chance, Love, and Logic』（1923・パブリックドメイン。トロント大学の本の走査、Internet Archive）](https://archive.org/details/chanceloveandlog00peiruoft)の頁で、pp.267–300 を本文で照合済。訳は Claude。同じ論文を、[Love とは、どう言われてきたか](love-history.html#lh-peirce)は The Monist の頁で引いています。全文の日本語訳を原文と並べたページは「[パース「進化的な愛」を、日本語で読む](peirce-evolutionary-love-ja.html)」です（訳は Claude によるもので、人の校閲はまだです）。
 
 </details>
 
@@ -266,7 +266,7 @@ Love駆動開発は、pjdhiro が自分を観察してきたことから出て�
 
 | 1. 日本語の論文で、進化的な愛の全体を見る | 伊藤邦武「[チャールズ・パースの「アガペー主義」](https://doi.org/10.20679/sprj.23.0_16)」『宗教哲学研究』23（2006）pp.16–31。J-STAGE で無料で読めます。「進化的な愛」を含む『モニスト』の連続論文を扱った論文です。創造的な愛の側 |
 |---|---|
-| 2. 「進化的な愛」を読む | 原文は *The Monist* 第 3 巻第 2 号（1893）。[Wikisource](https://en.wikisource.org/wiki/Evolutionary_Love) で読めます。全文の訳を原文と並べたページ「[パース「進化的な愛」を、日本語で読む](peirce-evolutionary-love-ja.html)」も、このサイトに置きました（訳は Claude によるもので、人の校閲はまだです）。このページが頁を引いた Cohen 編『Chance, Love, and Logic』（1923）は、[Internet Archive](https://archive.org/details/chanceloveandlog00peiruoft) と [Project Gutenberg](https://www.gutenberg.org/ebooks/65274) にあります。日本語では、『世界の名著 48 パース ジェイムズ デューイ』（上山春平 責任編集、中央公論社、1968）のパースの論文集の第六章が「[進化の三様式](https://ndlsearch.ndl.go.jp/books/R100000002-I000000895929)」です。創造的な愛の側 |
+| 2. 「進化的な愛」を読む | 原文は *The Monist* 第 3 巻第 2 号（1893）。[Wikisource](https://en.wikisource.org/wiki/Evolutionary_Love) で読めます。全文の訳を原文と並べたページ「[パース「進化的な愛」を、日本語で読む](peirce-evolutionary-love-ja.html)」も、このサイトに置きました（訳は Claude によるもので、人の校閲はまだです）。この論文がみずから挙げる 1892 年の論文「心の法則（The Law of Mind）」も、「[パース「心の法則」を、日本語で読む](peirce-law-of-mind-ja.html)」に全文の訳を置きました。このページが頁を引いた Cohen 編『Chance, Love, and Logic』（1923）は、[Internet Archive](https://archive.org/details/chanceloveandlog00peiruoft) と [Project Gutenberg](https://www.gutenberg.org/ebooks/65274) にあります。日本語では、『世界の名著 48 パース ジェイムズ デューイ』（上山春平 責任編集、中央公論社、1968）のパースの論文集の第六章が「[進化の三様式](https://ndlsearch.ndl.go.jp/books/R100000002-I000000895929)」です。創造的な愛の側 |
 | 3. 三つの推論を読む | 1878 年の「演繹、帰納、仮説」。原文は *Popular Science Monthly* 第 13 巻（1878 年 8 月号）で、[Wikisource](https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_13/August_1878/Illustrations_of_the_Logic_of_Science_VI) と、上の『Chance, Love, and Logic』にあります。アブダクションの側 |
 | 4. 遊びの中の仮説を読む | 1908 年の「神の実在についての、見過ごされた論証」。原文は [Wikisource](https://en.wikisource.org/wiki/A_Neglected_Argument_for_the_Reality_of_God) と、このページが頁を引いた [The Hibbert Journal の原誌（Internet Archive）](https://archive.org/details/sim_the-hibbert-journal-a-quarterly-review-of-religion_1908-1909_7_1) にあります。ミュージングと、探究の三つの段を書いた論文です |
 | 5. 進化の宇宙論を、講義で読む | パース『[連続性の哲学](https://ci.nii.ac.jp/ncid/BA52683657)』伊藤邦武 編訳（岩波文庫、2001）。1898 年のケンブリッジでの講義を訳したもので、第四章から第六章の題は、因果作用と力・習慣・連続性の論理です。創造的な愛の側 |

@@ -1730,7 +1730,7 @@ pjdhiro が、論だけでなく、気質や性格までパースと似ている
 
 <details><summary>出典</summary>
 
-C. S. Peirce, "Evolutionary Love", *The Monist* 3(2), 1893, pp.176–200。進化の三つの様式（tychasm・anancasm・agapasm）と、前の二つを agapasm の退化した形とする文、愛の運動は円いという文を、[The Monist 第 3 巻第 2 号の原誌（Internet Archive）](https://archive.org/details/sim_monist_1893-01_3_2)と、再録の [Cohen 編『Chance, Love, and Logic』（1923・パブリックドメイン）](https://archive.org/details/chanceloveandlog00peiruoft)で本文と照らしました。直接の努力・持つ前の引き寄せ・憎しみを反対物に持たない愛の箇所と頁は、独立ページ「[パースの創造的な愛と、アブダクション](peirce-love-abduction.html#pa-love)」に置いています。
+C. S. Peirce, "Evolutionary Love", *The Monist* 3(2), 1893, pp.176–200。進化の三つの様式（tychasm・anancasm・agapasm）と、前の二つを agapasm の退化した形とする文、愛の運動は円いという文を、[The Monist 第 3 巻第 2 号の原誌（Internet Archive）](https://archive.org/details/sim_monist_1893-01_3_2)と、再録の [Cohen 編『Chance, Love, and Logic』（1923・パブリックドメイン）](https://archive.org/details/chanceloveandlog00peiruoft)で本文と照らしました。直接の努力・持つ前の引き寄せ・憎しみを反対物に持たない愛の箇所と頁は、独立ページ「[パースの創造的な愛と、アブダクション](peirce-love-abduction.html#pa-love)」に置いています。全文の日本語訳を原文と並べたページは「[パース「進化的な愛」を、日本語で読む](peirce-evolutionary-love-ja.html)」です（訳は Claude によるもので、人の校閲はまだです）。
 
 </details>
 

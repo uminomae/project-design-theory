@@ -269,7 +269,7 @@
 
 <details><summary>出典</summary>
 
-出典：Peirce (1893) "Evolutionary Love", *The Monist* 3(2), pp.176–200（[Internet Archive の初出の誌面の走査](https://archive.org/details/jstor-27897058)。JSTOR Early Journal Content・パブリックドメイン。本文照合済）。愛の運動は円を描く、は ¶4（pp.177–178。"The movement of love is circular, at one and the same impulse projecting creations into independency and drawing them into harmony."）、二つの福音は ¶16（p.182。"This may accurately be called the Gospel of Greed."）、どちらの側にも言うべきことは多い、は ¶17（p.182）、偶然の進化と必然の進化は愛による進化の退化した形、は ¶25（pp.188–189）、愛は反対を持てず最も対立するものを抱きしめる、は ¶26（p.189。"just as love cannot have a contrary, but must embrace what is most opposed to it, as a degenerate case of it, so tychasm is a kind of agapasm."）。訳は Claude。
+出典：Peirce (1893) "Evolutionary Love", *The Monist* 3(2), pp.176–200（[Internet Archive の初出の誌面の走査](https://archive.org/details/jstor-27897058)。JSTOR Early Journal Content・パブリックドメイン。本文照合済）。愛の運動は円を描く、は ¶4（pp.177–178。"The movement of love is circular, at one and the same impulse projecting creations into independency and drawing them into harmony."）、二つの福音は ¶16（p.182。"This may accurately be called the Gospel of Greed."）、どちらの側にも言うべきことは多い、は ¶17（p.182）、偶然の進化と必然の進化は愛による進化の退化した形、は ¶25（pp.188–189）、愛は反対を持てず最も対立するものを抱きしめる、は ¶26（p.189。"just as love cannot have a contrary, but must embrace what is most opposed to it, as a degenerate case of it, so tychasm is a kind of agapasm."）。訳は Claude。段の番号（¶）は「[パース「進化的な愛」を、日本語で読む](peirce-evolutionary-love-ja.html)」のもので、全文の訳を原文と並べて読めます（人の校閲はまだです）。
 
 </details>
 

@@ -207,7 +207,7 @@ page:
 - Dewey (1910) *How We Think*（[カリフォルニア大学図書館の本の走査（Internet Archive）](https://archive.org/details/howwethink00deweiala)。p.12）
 - Peirce (1908) "A Neglected Argument for the Reality of God"（[The Hibbert Journal 第 7 巻第 1 号の原誌（Internet Archive）](https://archive.org/details/sim_the-hibbert-journal-a-quarterly-review-of-religion_1908-1909_7_1)。pp.100–104）
 - Poincaré (1908) *Science et méthode*。英訳 Poincaré (1914) *Science and Method*, F. Maitland 訳（[コーネル大学図書館の本の走査（Internet Archive）](https://archive.org/details/cu31924012248179)。第一巻第三章「Mathematical Discovery」pp.46–63。美の感覚の鍵の文は p.60）
-- Peirce (1893) "Evolutionary Love", *The Monist* 3(2):176–200（[The Monist の原誌（Internet Archive）](https://archive.org/details/sim_monist_1893-01_3_2)。頁は再録の[『Chance, Love, and Logic』](https://archive.org/details/chanceloveandlog00peiruoft)の pp.287–288）
+- Peirce (1893) "Evolutionary Love", *The Monist* 3(2):176–200（[The Monist の原誌（Internet Archive）](https://archive.org/details/sim_monist_1893-01_3_2)。頁は再録の[『Chance, Love, and Logic』](https://archive.org/details/chanceloveandlog00peiruoft)の pp.287–288。全文の日本語訳は[パース「進化的な愛」を、日本語で読む](https://uminomae.github.io/project-design-theory/reader/peirce-evolutionary-love-ja.html)。訳は Claude で、人の校閲はまだ）
 
 </details>
 

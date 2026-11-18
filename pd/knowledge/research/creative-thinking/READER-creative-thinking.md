@@ -247,7 +247,7 @@ Peirce (1877) "The Fixation of Belief", *Popular Science Monthly* 12:1–15（[C
 
 <details><summary>出典</summary>
 
-出典：Peirce (1893) "Evolutionary Love", *The Monist* 3(2):176–200（[The Monist の原誌（Internet Archive）](https://archive.org/details/sim_monist_1893-01_3_2)）。頁は再録の [Cohen 編『Chance, Love, and Logic』（1923）](https://archive.org/details/chanceloveandlog00peiruoft)の頁で、pp.282–288 を本文照合済。照合と訳は「[パースの創造的な愛と、アブダクション](peirce-love-abduction.html#pa-attraction)」のときのもの。年は、それぞれの原誌と再録の書誌で確かめました。
+出典：Peirce (1893) "Evolutionary Love", *The Monist* 3(2):176–200（[The Monist の原誌（Internet Archive）](https://archive.org/details/sim_monist_1893-01_3_2)）。頁は再録の [Cohen 編『Chance, Love, and Logic』（1923）](https://archive.org/details/chanceloveandlog00peiruoft)の頁で、pp.282–288 を本文照合済。照合と訳は「[パースの創造的な愛と、アブダクション](peirce-love-abduction.html#pa-attraction)」のときのもの。年は、それぞれの原誌と再録の書誌で確かめました。全文の日本語訳を原文と並べたページは「[パース「進化的な愛」を、日本語で読む](peirce-evolutionary-love-ja.html)」です（訳は Claude によるもので、人の校閲はまだです）。
 
 </details>
 
