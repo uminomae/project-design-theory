@@ -30,7 +30,7 @@
 <li><b>第二部 人は、どう決めているか</b>：経済学・心理学・脳の研究が、実際の決め方をどう描いてきたかを見ます。</li>
 <li><b>第三部 組織の中で、決定はどう生まれるか</b>：組織と政府の決定の研究を見ます。</li>
 <li><b>第四部 意思決定の、いくつもの面</b>：ここまでの論を並べます。</li>
-<li><b>巻末</b>：原典を読む順と置き場、保持論点を置きます。</li>
+<li><b>巻末</b>：原典を読む順と置き場、工事中の仮の案（<a href="#dm-circle">円と二つの軸で見る、仮案１</a>）、保持論点を置きます。</li>
 </ul>
 </div>
 
@@ -506,6 +506,42 @@ System 1・System 2 の名の出どころは、文献によって書き方が違
 | 9. 選ぶことの前と外を読む | ミンツバーグらの論文（1976、[著者のサイトの誌面の写し](https://mintzberg.org/sites/default/files/article/download/hm_the_structure_of_unstructured_decision_processes.pdf)、pp.246–275 の 30 頁）。まず p.246 の定義と、p.252 の位相の段。続けて、ワイクの論文（1993、[ALNAP の再録版](https://alnap.org/documents/12477/The_Collapse_of_Sensemaking_in_Organizations_The_Mann_Gulch.pdf)、誌面で pp.628–652 の 25 頁）。まず再録版の pp.2–9 で、マン渓谷の出来事と、意思決定から意味づけへの段 |
 
 </div>
+
+## 円と二つの軸で見る、仮案１
+
+<a id="dm-circle"></a>🚧 この章は工事中です。ここまでの章は、研究が意思決定をどう見てきたかを並べました。この章には、pjdhiro と Claude の対話から出た見方を一つ、仮の案として置きます。高校の数学の、円と三角関数で読めます。
+
+対話の中で、Claude は、人に認識されているものと、認識されていないものの関係を、複素数平面（横に実数、縦に虚数 i を取る平面）の上を回る点にたとえました。pjdhiro は、こう答えています。
+
+<strong>pjdhiro の答え：</strong>虚軸のたとえはあってます。コサインだけが認識されていて回転しているものがあるのかどうかが知られていない。それを感じてしまった時に、違和感や欠けのように感じる
+
+下の図は、このたとえを平面に描いたものです。半径 1 の円の上を、点が回っています。見えているのは、横軸に落ちた影だけです。欠けて見える分は、縦の成分として在ります。
+
+<figure class="glow-card reader-figure"><svg viewBox="0 0 350 384" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:26rem;margin:0 auto" aria-label="横軸と縦軸の上に、半径 1 の円がある。円の右上に点があり、中心から点へ半径が引かれている。点から横軸へ垂線が下りている。中心から垂線の足までの横の長さが cos θ で、認識されている側。垂線の長さが sin θ で、隠れた成分。横軸の両端に 1 と −1、縦軸の上に i の目盛り。円の左上に、反時計回りの矢印。"><defs><marker id="dm-circle-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="var(--mid)" stroke-width="1.6"/></marker></defs><g fill="none" stroke="var(--mid)" stroke-width="1"><line x1="30" y1="188" x2="322" y2="188"/><line x1="175" y1="44" x2="175" y2="332"/></g><circle cx="175" cy="188" r="120" fill="none" stroke="var(--ink)" stroke-width="1.4"/><path d="M128.5,60.2 A136,136 0 0 0 57.2,120" fill="none" stroke="var(--mid)" stroke-width="1.4" marker-end="url(#dm-circle-arrow)"/><path d="M203,188 A28,28 0 0 0 197.4,171.2" fill="none" stroke="var(--ink)" stroke-width="1"/><line x1="175" y1="188" x2="271" y2="116" stroke="var(--ink)" stroke-width="1.6"/><line x1="175" y1="188" x2="271" y2="188" stroke="var(--navy)" stroke-width="4" stroke-linecap="round"/><line x1="271" y1="116" x2="271" y2="188" stroke="var(--coral)" stroke-width="3"/><circle cx="271" cy="188" r="4.5" fill="var(--navy)"/><circle cx="271" cy="116" r="5" fill="var(--ink)"/><g font-size="15"><text x="211" y="181" fill="var(--ink)">θ</text><text x="223" y="209" text-anchor="middle" fill="var(--navy)">cos θ</text><text x="264" y="160" text-anchor="end" fill="var(--coral)">sin θ</text></g><g font-size="14" fill="var(--mid)"><text x="301" y="207">1</text><text x="49" y="207" text-anchor="end">−1</text><text x="166" y="62" text-anchor="end">i</text></g><g font-size="14" fill="var(--ink)"><line x1="62" y1="352" x2="90" y2="352" stroke="var(--navy)" stroke-width="4" stroke-linecap="round"/><text x="100" y="357">cos θ　認識されている側</text><line x1="62" y1="374" x2="90" y2="374" stroke="var(--coral)" stroke-width="3"/><text x="100" y="379">sin θ　隠れた成分</text></g></svg><figcaption>半径 1 の円の上を回る点と、横軸に落ちた影</figcaption></figure>
+
+点の位置を、横軸から測った角 θ で表します。点の横の位置は cos θ、縦の位置は sin θ です。認識されている側を x と書くと、x = cos θ です。
+
+円の半径は 1 なので、cos<sup>2</sup> θ + sin<sup>2</sup> θ = 1 が成り立ちます。ここから、1 − x<sup>2</sup> = sin<sup>2</sup> θ です。見えている分が 1 に足りない量は、隠れた成分の二乗に等しくなります。図の点では x = 0.8 で、足りない量は 1 − 0.64 = 0.36、隠れた成分は 0.6 です。
+
+では、違和感は何を感じているのでしょうか。隠れた成分の大きさか、回る向きか、と Claude が聞くと、pjdhiro は「隠れた成分の大きさです」と答えました。
+
+大きさは、向きを持ちません。sin<sup>2</sup> θ = sin<sup>2</sup>(−θ) なので、点が円の上半分にあっても下半分にあっても、足りない量は同じ 0.36 です。x を一度見ただけでは、どちらなのかは分かりません。
+
+向きは、見える側の変わり方に現れます。点が図の矢印の向き（反時計回り）に回っているとすると、上半分では x は減っていき、下半分では増えていきます。式では dx/dθ = −sin θ です。変わり方は、x を二つの瞬間で比べて、はじめて分かります。問いを持ち続けることは、この二つめの瞬間を待つことに当たる、と Claude は読みました。
+
+ここから、仮案１を置きます。違和感が、隠れた成分の大きさを知らせます。問いを持ち続けるうちに、向きが出ます。その向きで一歩を出すことを、意思決定と置いてみます。
+
+この案を読み物に置くかを Claude が聞いたとき、pjdhiro はこう答えました。
+
+<strong>pjdhiro の見方：</strong>仮案１という感じですね。そうだとして考えてみると、という感じ。深掘りの足場になる。もしくは群盲象を評す
+
+群盲象を評すは、何人かの盲人が象の別々の所に触れ、それぞれ違うものだと語る、という古い話です。章「[意思決定の、いくつもの面](#dm-faces)」の表に並べた面と同じように、この案も、意思決定の一つの面に触れているだけかもしれません。
+
+そうだとして考えてみると、次の問いが残ります。
+
+- 足りない量を 1 − x<sup>2</sup> と書けるのは、半径が 1 だと先に知っているからです。その半径を、人はどこで知るのでしょうか。
+- 円の上の点は、回り続ければ元の位置に戻ります。決めたことの中には、戻せないものがあります。決めて戻れない損は、この図のどこにあるのでしょうか。
+- 一歩が外れたら、さかのぼって、どの前提が違っていたかを探すことになります。一度も疑う分岐に載らなかった前提は、探す先に入りません。それは何でしょうか。
 
 ## 保持論点
 
