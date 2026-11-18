@@ -64,6 +64,7 @@
   - §5（pp.177–178）：利得のわずかな増しは「summae bonorum reciproce proportionale」 訳：持ち物の総額に反比例する効用をもたらす（と仮定する）。著者はこれを、ふつう起こることとして置き、例外（身代金の要る囚人）を挙げている。
 - 要約：期待値（値×場合の数÷全場合）でくじを測る従来の規則は、人の状態を見ない。ベルヌーイは、規則の中の「価値」を「効用」に読み替え、効用の平均でくじを測ることを基本の規則とした。効用の増え方は持ち物の量に反比例すると仮定した。これは、各人が自分で自分のくじを見積もるための「助言」の規則だと、著者自身が書いている（判決との対比）。
 - 批判・のちの改め：論文の末尾の添え書き（pp.189–190）で、ニコラウス・ベルヌーイは、各人が自分のくじを見積もるならこの考えに異論はないが、第三者が裁判官として公平に割り当てる場合は別だ、と答えた。クラメルが先に似た考えを手紙で示していたことも、著者が添えている（本文照合済）。
+  - （2026-11-18・事例と Aha の直しで原文から引き直して足した）§3、p.176：とても貧しい人が、等しい見込みで何も無いか二万ドゥカートかのくじを手に入れたとき、それを一万ドゥカートと見積もるべきか、九千で売ったら愚かか。「Id mihi non videtur」（私にはそう思えない）。ただし、とても豊かな人がそのくじを同じ値で買うのを断るなら、損をしていると思う、と続ける。同じ節に「pauperis magis refert lucrum facere mille ducatorum quam divitis, etsi pretium utrique idem sit」訳：千ドゥカートの儲けは、値段は二人に同じでも、豊かな人より貧しい人にとって大事である。読んだのは BHL の走査（Internet Archive の commentariiacade05impe）の OCR の文字。§3 は p.176 に収まる。
 
 ### ラムジー「真理と確率」（Ramsey 1926、刊行 1931）
 
@@ -130,6 +131,7 @@
   - ノーベル講演 p.240：反例の一つが「Allais Paradox」として有名になったが、それは「the preference for security in the neighbourhood of certainty」訳：確実さの近くでの安全の好み、という深い心理の現実に対応しているだけだ、と書く。1952 年の調査（約 100 人）の本格的な分析は 1974〜1976 年になった、とも書く。
 - 要約：アレは、ベルヌーイ型の定式（期待効用）が、合理的な人の振る舞いの規範としても成り立たないと論じた。理由は、心理的な価値の散らばり（期待値のまわりの分布）を、定式が出発の公理から捨てているからだ（JSFS p.54）。合理性は公理への従いで定義してはならず、合理的と見なされる人の実際の選択で確かめるべきだとした。
 - 注意：「多くの人が A を B より、D を C より選ぶ」という結果の記述は、今回読んだ JSFS 1953 とノーベル講演の頁には無い。Econometrica 1953 が読めるまで、その形では書かない。
+  - （2026-11-18・事例と Aha の直しで原文から引き直して足した）ノーベル講演 p.240：1952 年の調査は、確率の理論をよく学んでいて合理的に振る舞うと見なせる、約百人に出した。1974〜1976 年の分析で「for every subject, there was no index, the maximization of whose mathematical expectation could explain the observed behaviour」訳：どの回答者についても、その数学的期待値を最大にすることで観察された振る舞いを説明できる指標は無かった。読んだのは nobelprize.org の PDF。
 
 ### エルズバーグ「リスク・曖昧さ・サヴェッジの公理」（Ellsberg 1961）
 
@@ -144,6 +146,7 @@
   - p.17：違いは、利得の望ましさと出来事の確からしさに加わる「a third dimension of the problem of choice」、すなわち情報の「ambiguity」で、それは「a quality depending on the amount, type, reliability and "unanimity" of information」訳：情報の量・種類・信頼性・「一致」の度合いに依る性質で、推定への「自信」の度合いを生む。
 - 要約：エルズバーグは、サヴェッジらの公理を、ナイトの「測れない不確かさ」を測れるものにする試みとして位置づけ、熟慮しても公理に従わない選択の型を示した。その選択は不注意でも無作為でもなく、「定まった規範の基準」が働いているように見える（p.16）。違いを生むのは、確率の分布についての情報の曖昧さだとした。著者は、これで公理が壊れるのでなく、当てはまらない場面を特定すれば、予測にも規範にも使い方がよくなる、と書く（p.5）。
 - 批判・のちの改め：—（今回は読んでいない）
+  - （2026-11-18・事例と Aha の直しで原文から引き直して足した）RAND 版 p.16：「the choices themselves do not appear to be careless or random. They are persistent, reportedly deliberate, and they seem to predominate empirically; many of the people who take them are eminently reasonable, and they insist that they want to behave this way, even though they may be generally respectful of the Savage axioms.」訳：選択そのものは、不注意にも無作為にも見えない。続けて選ばれ、熟慮したと言われ、経験上は多数を占めるように見える。そう選ぶ人の多くはきわめて思慮深く、サヴェッジの公理をおおむね尊重していても、この振る舞いをしたいのだと言い張る。頁の画像で読んだ。
 
 ### バーナード『経営者の役割』（Barnard 1938）
 

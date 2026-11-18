@@ -27,6 +27,7 @@
   - 結論：「Though the conceptual models are not exclusive, most analysts do proceed predominantly in terms of one model. Which model an analyst employs does make a difference.」（p.56）訳：概念模型は互いに排他的ではないが、ほとんどの分析者は主に一つの模型で進む。どの模型を使うかで違いが出る。
 - 要約：外交の出来事を説明するとき、分析者は暗黙の概念模型で考えている（命題 1、p.2）。その標準は、国家の行動を、目的に照らした合理的な選択として説明する模型（Model I）である（命題 2、p.2）。これに、組織過程の模型（Model II）と官僚政治の模型（Model III）を足すと、説明の力が増す（命題 3、p.3）。著者は、三つの模型でキューバ危機の同じ問い（米国の海上封鎖）を説明し直し、封鎖の決定は「part resultant and part result」で、誤認・誤った伝達・駆け引きなどが混ざっていたと書く（p.55）。ここでの「模型」は理論でなく概念の模型だと断る（p.2 の注）。著者は、この論文を予備的な段階と書く（p.56）。
 - 批判・のちの改め：読めていない（1999 年の改訂版、批判の論文とも未照合（記憶）。書かない）。
+  - （2026-11-18・事例と Aha の直しで原文から引き直して足した）三つの模型の名は、題の Rational Policy・Organization Process・Bureaucratic Politics（合理的政策・組織過程・官僚政治）。p.55：「the decision which Kennedy announced to the world on Tuesday evening, October 22, emerged -- part resultant and part result, a melange of misperception, miscommunication, misinformation, bargaining, pulling, hauling, and spurring」訳：10 月 22 日の火曜の夜にケネディが世界に発表した決定は、一部は合成の結果、一部は狙った結果として、誤認・誤った伝達・誤った情報・駆け引き・押し引きの混ざりあいから出てきた。頁の画像で読んだ。
 
 ### 組織化された無秩序と、ゴミ箱の模型（Cohen, March & Olsen 1972）
 
@@ -43,6 +44,7 @@
 - 批判・のちの改め：
   - Fioretti, G., & Lomi, A. (2008). An Agent-Based Representation of the Garbage Can Model of Organizational Choice. *Journal of Artificial Societies and Social Simulation* 11(1), 1. https://www.jasss.org/11/1/1.html （誌の公開版）。本文照合済（§1.4・§2.15・§6.5・§7.1）。1972 年の計算機のコードは言葉の理論を「only loosely」にしか映していない、という批判があると書き（§1.4）、エージェントで作り直した結果、八つの性質のうち 1〜5 は確かめられ、6〜8 は確かめられなかった（§6.5）。広い母数の範囲で、決定の多くは見過ごしで決まる（§7.1）。
   - Bendor, Moe & Shotts（2001, *APSR* 95(1), 169–190）の批判と、Olsen（2001）の応答は、未照合（有料）。
+  - （2026-11-18・事例と Aha の直しで原文から引き直して足した）p.2：名の由来。「one can view a choice opportunity as a garbage can into which various kinds of problems and solutions are dumped by participants as they are generated」訳：選択の機会を、参加者が、問題と解を生まれるそばから投げ込むゴミ箱と見ることができる。p.16 の結び：「It is clear that the garbage can process does not resolve problems well. But it does enable choices to be made and problems resolved, even when the organization is plagued with goal ambiguity and conflict」訳：ゴミ箱の過程が問題をうまく解かないことははっきりしている。けれど、組織が目標の曖昧さと対立に悩まされているときでも、選択がなされ、問題が解かれることを可能にする。
 
 ### 構造化されていない決定の過程（Mintzberg, Raisinghani & Théorêt 1976）
 
