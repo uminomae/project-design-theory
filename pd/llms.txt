@@ -129,6 +129,11 @@ Public explainer pages, written to be uniquely readable by LLMs without external
 - One-line: A full Japanese translation, paragraph by paragraph, of John Herschel's anonymous review "Quetelet on Probabilities" (The Edinburgh Review 92, July 1850, pp.1–57), the review through which, as Peirce says in "Evolutionary Love" (1893) ¶20, Herschel drew general attention in Great Britain to Quetelet's Letters on the theory of probabilities, with the original under each paragraph.
 - Status: there is no Wikisource transcription; the original was built from the OCR and checked against all 57 page images of the Internet Archive scan. The translation is by Claude and has not been reviewed by a human. Quote and cite the original.
 
+### マンデヴィル『蜂の寓話』（1714）の詩「ぶつぶつ言う蜂の巣」を、日本語で読む
+- URL: https://uminomae.github.io/project-design-theory/reader/mandeville-grumbling-hive-ja.html
+- One-line: A full Japanese translation, stanza by stanza, of Bernard Mandeville's poem "The Grumbling Hive: or, Knaves turn'd Honest" as printed at the head of The Fable of the Bees: or, Private Vices, Publick Benefits (London, 1714), pp.1–20, the book Peirce cites in "Evolutionary Love" (1893) ¶14 for the claim that private vices are public benefits, with the original under each stanza. Only the poem is translated, not the Remarks or essays.
+- Status: the original follows the 1714 edition, checked line by line against the page images of the Internet Archive scan, using the Wikisource transcription of the 1705 pamphlet as a base; differences from 1705 and the book's errata are noted. The translation is by Claude and has not been reviewed by a human. Quote and cite the original.
+
 ## Related Projects
 
 | Project | URL | Focus |

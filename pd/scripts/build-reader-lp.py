@@ -196,6 +196,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は mandeville-1714-fable-of-the-bees.md（原文と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-mandeville-grumbling-hive-ja.md",
+        ROOT / "scripts/reader-mandeville-grumbling-hive-ja-template.html",
+        ROOT / "reader/mandeville-grumbling-hive-ja.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/creative-thinking/READER-creative-thinking.md",
         ROOT / "scripts/reader-creative-thinking-template.html",
         ROOT / "reader/creative-thinking.html",
@@ -356,6 +363,12 @@ JA_CHAPTERS = {
         "¶120": "医学の統計",
         "¶126": "英訳の誤りと、統計の行政への効用",
         "注1": "ハーシェルの脚注",
+    },
+    "mandeville-1714-fable-of-the-bees.md": {
+        "¶1": "題と、悪徳に満ちて栄える巣",
+        "¶17": "ならず者たちの嘆きと、正直になった巣",
+        "¶28": "寂れていく巣",
+        "¶34": "教訓",
     },
 }
 
