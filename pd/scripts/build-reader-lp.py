@@ -154,6 +154,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は carus-1892-onslaught-on-necessity.md（原文と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-carus-onslaught-on-necessity-ja.md",
+        ROOT / "scripts/reader-carus-onslaught-on-necessity-ja-template.html",
+        ROOT / "reader/carus-onslaught-on-necessity-ja.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/creative-thinking/READER-creative-thinking.md",
         ROOT / "scripts/reader-creative-thinking-template.html",
         ROOT / "reader/creative-thinking.html",
@@ -265,6 +272,19 @@ JA_CHAPTERS = {
         "¶46": "感じと、偶然の自発性",
         "¶50": "一般観念と、人格",
         "注55": "パースの脚注",
+    },
+    "carus-1892-onslaught-on-necessity.md": {
+        "¶1": "題と、はじめの段",
+        "¶7": "I　よみがえったヒューム",
+        "¶21": "II　因果はただの継起ではない",
+        "¶49": "III　パース氏の科学の論理",
+        "¶70": "IV　思考の必然は、事実の必然を前提とする",
+        "¶73": "V　パース氏の進化論",
+        "¶89": "VI　世界の構成",
+        "¶99": "VII　事実と法則",
+        "¶106": "VIII　法則は説明できないものではない",
+        "¶116": "IX　結論",
+        "注1": "ケーラスの脚注",
     },
 }
 
