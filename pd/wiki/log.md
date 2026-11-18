@@ -1363,3 +1363,9 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第七部の頭の章に年輪の比喩の段を足し、計算機科学の章の逆コンウェイの思考実験を一次ソースで照らして直し、ミラーリングの検証と例外の畳みを足した・#163）
 - pages: どちらも第七部の定義の章と計算機科学の章を引いていないので、本文はそのまま。
+
+## [2026-11-18] check | Love駆動開発の「不安とは、何か」に、ほかの論の定義の概説とリンクを足した（#143）
+
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第四部の章「不安とは、何か」の工事中の一行を、ほかの論の定義の概説と独立ページ「不安とは」へのリンクに替えた・#143）
+- pages: どちらも「不安とは、何か」の章を引いていないので、本文はそのまま。checked を今の時刻にした。
