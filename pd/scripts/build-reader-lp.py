@@ -189,6 +189,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は herschel-1850-quetelet-on-probabilities.md（原文と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-herschel-quetelet-probabilities-ja.md",
+        ROOT / "scripts/reader-herschel-quetelet-probabilities-ja-template.html",
+        ROOT / "reader/herschel-quetelet-probabilities-ja.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/creative-thinking/READER-creative-thinking.md",
         ROOT / "scripts/reader-creative-thinking-template.html",
         ROOT / "reader/creative-thinking.html",
@@ -334,6 +341,21 @@ JA_CHAPTERS = {
         "¶20": "II　ダーウィンからエイサ・グレイへの手紙の要約",
         "¶29": "III　ウォレス、変種が原型から限りなく離れていく傾向について",
         "注1": "ダーウィンの脚注",
+    },
+    "herschel-1850-quetelet-on-probabilities.md": {
+        "¶1": "書誌と、確率とは何か",
+        "¶13": "確率論の歩み、ラプラスまでとそのあと",
+        "¶23": "ケトレーの書簡と、賭けと保険の確率",
+        "¶31": "誤差の法則を三つの要請から導く",
+        "¶38": "兵士の胸囲と身長、誤差の法則との一致",
+        "¶53": "平均の理論と、原因の探究",
+        "¶66": "天文学と植物の生長、偶然に変わる原因",
+        "¶73": "統計は技術か科学か、人口と資料の集め方",
+        "¶105": "統計の資料の吟味と、偏った選び方",
+        "¶116": "犯罪と裁判の統計",
+        "¶120": "医学の統計",
+        "¶126": "英訳の誤りと、統計の行政への効用",
+        "注1": "ハーシェルの脚注",
     },
 }
 

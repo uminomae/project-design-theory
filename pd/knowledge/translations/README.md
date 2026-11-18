@@ -38,6 +38,7 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | `newcomb-1886-principles-of-political-economy.md` | Simon Newcomb, *Principles of Political Economy*, New York: Harper & Brothers, 1886, 第 V 編 §56・§57 と巻末の要約 pp.534–543 | 本の抜きの訳（2026-11-18・#175）。パースが「進化的な愛」¶7〜¶12 で引く句がみな入る範囲。文字起こしが無いので、OCR から段を取り、照らす役が全頁を画像と照らして原文を作った。訳は読む役の案を照らす役が原文と照らし、Claude が直して入れた。人の校閲はまだ。パースが引いた句はパースの対訳と同じ訳語にし、パースが落とした語・言い換えを訳注に書いた。ページ `pd/reader/newcomb-political-economy-ja.html` |
 | `darwin-1861-historical-sketch.md` | Darwin, "An Historical Sketch of the Recent Progress of Opinion on the Origin of Species", *On the Origin of Species*, 3rd ed., 1861, pp.xiii–xix | 全文の訳（2026-11-18・#175）。第 3 版の形で、のちの版の書き足しは入っていない。OCR から段を取り、照らす役が全 7 頁を画像と照らして原文を作った。訳は読む役の案を照らす役が原文と照らし、Claude が直して入れた。人の校閲はまだ。1893 の ¶58 がこの概略を挙げる。ページ `pd/reader/darwin-historical-sketch-ja.html` |
 | `darwin-1858-tendency-of-species.md` | Darwin & Wallace, "On the Tendency of Species to form Varieties; and on the Perpetuation of Varieties and Species by Natural Means of Selection", *Journal of the Proceedings of the Linnean Society: Zoology* 3 (1858), pp.45–62 | 全文の訳（2026-11-18・#175）。Wikisource の文字起こしから骨を作り、照らす役二つが誌面の全頁と照らした（落ちていた見出しと日付・斜体）。訳は読む役二つの案を照らす役が原文と照らし、Claude が直して入れた。人の校閲はまだ。1893 の ¶58 がこの発表を挙げる。ページ `pd/reader/darwin-wallace-1858-ja.html` |
+| `herschel-1850-quetelet-on-probabilities.md` | [John Herschel], "Quetelet on Probabilities", *The Edinburgh Review* 92 (No.185), July 1850, pp.1–57 | 全文の訳（2026-11-18・#175）。無署名の書評で、ハーシェルの論集（1857）への再録で筆者が分かる。文字起こしが無いので、OCR から段を取り、読む役六つが範囲を分けて全 57 頁を画像と照らし、原文を起こして訳の案を出した。照らす役三つが段ごとに照らし、Claude がつないで訳語をそろえた。人の校閲はまだ。1893 の ¶20 が、ハーシェルがケトレーに広く注意を向けさせたと書く。ページ `pd/reader/herschel-quetelet-probabilities-ja.html` |
 
 次に訳す候補：パースは `../research/peirce-love-abduction/READING-ORDER-20261116.md` の表、1893「Evolutionary Love」が引く論文と本は Issue #175 の一覧。
 
@@ -111,6 +112,23 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 - パースの造語（tychasm・anancasm・agapasm、tychasticism・anancasticism・agapasticism、tychism・anancism・agapism、synechism）は、原語の綴りのまま書く。読み物も記録も、そう書いている。カタカナ（アガパズム など）にすると、日本語の研究の訳語（伊藤 2006 の「アガペー主義」など）とも違う語がもう一つ増える。三つの様式は、パースが定義した段（1893 の ¶24）でだけ、定義の語句を添える（偶然の変異による進化＝tychasm、機械的な必然による進化＝anancasm、創造的な愛による進化＝agapasm）。読み物の要点と同じ。
 - 形容詞（tychastic・anancastic・agapastic）は「偶然による」「必然による」「愛による」と訳し、段の初出に原語を括弧で残す。読み物の「偶然による発展」「必然による発展」「愛による発展」と同じ。
 - Gospel of Greed は、読み物にそろえて「貪欲の福音」。greed も「貪欲」。
+
+### ハーシェル：表
+
+確率と統計の語。パースと共通の語（chance・law）はパースの表にそろえる。
+
+| 原語 | 訳語 | 覚え書き |
+|---|---|---|
+| probability / chance | 確率／偶然 | chances が「見込み」の意のときは「見込み」 |
+| law / law of error / facility | 法則／誤差の法則／起きやすさ | 人の作る法は「法律」 |
+| mean / average | 平均 | 区別を論じる段だけ原語を添える |
+| error / probable error | 誤差／確率誤差 | 思い違いの意の error は「誤り」 |
+| deviation / bias | 偏り／偏向 | |
+| statistics / statist | 統計／統計家 | |
+| the average man（l'homme moyen） | 平均人 | |
+| moral and political sciences | 道徳科学と政治科学 | パースの対訳にそろえた |
+| efficient / formal / final cause | 作用因／形相因／目的因 | |
+| induction / uniformity | 帰納／一様性 | |
 
 ### パース：表
 

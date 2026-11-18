@@ -124,6 +124,11 @@ Public explainer pages, written to be uniquely readable by LLMs without external
 - One-line: A full Japanese translation, paragraph by paragraph, of the Darwin–Wallace papers read at the Linnean Society on 1 July 1858 (J. Proc. Linn. Soc. Zool. 3, pp.45–62), the first public statement of natural selection, with the original under each paragraph. Peirce cites it in "Evolutionary Love" (1893) ¶58.
 - Status: the original follows the Wikisource transcription, checked against all page images of the Internet Archive scan. The translation is by Claude and has not been reviewed by a human. Quote and cite the original.
 
+### ハーシェル「ケトレーの確率論」（1850）を、日本語で読む
+- URL: https://uminomae.github.io/project-design-theory/reader/herschel-quetelet-probabilities-ja.html
+- One-line: A full Japanese translation, paragraph by paragraph, of John Herschel's anonymous review "Quetelet on Probabilities" (The Edinburgh Review 92, July 1850, pp.1–57), the review through which, as Peirce says in "Evolutionary Love" (1893) ¶20, Herschel drew general attention in Great Britain to Quetelet's Letters on the theory of probabilities, with the original under each paragraph.
+- Status: there is no Wikisource transcription; the original was built from the OCR and checked against all 57 page images of the Internet Archive scan. The translation is by Claude and has not been reviewed by a human. Quote and cite the original.
+
 ## Related Projects
 
 | Project | URL | Focus |
