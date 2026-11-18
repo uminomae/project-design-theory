@@ -1788,6 +1788,23 @@ C. S. Peirce, "Evolutionary Love", *The Monist* 3(2), 1893, pp.176–200。進�
 
 </details>
 
+<details><summary>読書ガイド：パースの「進化的な愛」を、原典で読むなら</summary>
+
+この章で触れたパースの論文を、自分で読むときの置き場を並べました。どこから読むかは Claude の案です。
+
+<div class="tablefit">
+
+| 読むもの | どこから | 無料で読める写し | 日本語で読む |
+|---|---|---|---|
+| パース「進化的な愛」（1893） | 第 1 節（愛の運動は円い・憎むべきものを愛らしくする）と、三つの様式を定める段 | [The Monist 第 3 巻第 2 号の原誌（Internet Archive）](https://archive.org/details/sim_monist_1893-01_3_2)・[Wikisource](https://en.wikisource.org/wiki/Evolutionary_Love)・[Cohen 編『Chance, Love, and Logic』（Internet Archive）](https://archive.org/details/chanceloveandlog00peiruoft)（英語） | [パース「進化的な愛」を、日本語で読む](peirce-evolutionary-love-ja.html)（全文の対訳。訳は Claude で、人の校閲はまだ） |
+| パース「心の法則」（1892） | 「進化的な愛」が、考えを小さな人格と呼ぶ根拠として指す前の論文 | 対訳ページから原誌の走査へ | [パース「心の法則」を、日本語で読む](peirce-law-of-mind-ja.html)（全文の対訳。訳は Claude で、人の校閲はまだ） |
+
+</div>
+
+日本語の論文と訳書、ほかの論文を読む順は、独立ページ「[パースの創造的な愛と、アブダクション](peirce-love-abduction.html#pa-reading)」の巻末に並べています。
+
+</details>
+
 ## それが、プロジェクトの駆動源である
 
 <!--OPEN-->
@@ -1837,6 +1854,22 @@ C. S. Peirce, "Evolutionary Love", *The Monist* 3(2), 1893, pp.176–200。進�
 <!--REF:心理学-->
 
 出典：Riso with Hudson (1996) *Personality Types: Using the Enneagram for Self-Discovery*, revised edition. Houghton Mifflin（第 6 章 Type Four。電子書籍で本文照合済。無料では [Internet Archive の貸し出し](https://archive.org/details/personalitytypes0000riso)で読める。頁は、電子書籍に埋められた印刷版の頁の印で書いた。pp.139・144–145・149–150・163–167）。訳は Claude。
+
+</details>
+
+<details><summary>読書ガイド：リソとハドソンのタイプ 4 を、原典で読むなら</summary>
+
+この読み物で触れたリソとハドソンの本を、自分で読むときの置き場です。どこから読むかは Claude の案です。
+
+<div class="tablefit">
+
+| 読むもの | どこから | 無料で読める写し |
+|---|---|---|
+| リソとハドソン『Personality Types』改訂版（1996）第 6 章 Type Four | 章の頭（pp.134–139）・レベル 1 の節（pp.142–146）・統合の向き（pp.165–167） | [Internet Archive の貸し出し](https://archive.org/details/personalitytypes0000riso)（英語。貸し出し） |
+
+</div>
+
+同じ章を、創造を何が動かすかの面から読んだところは、創造とはの読み物「[創造の駆動源は何？](https://uminomae.github.io/project-design-theory/cs/reader/creative-drivers.html#cd-self-search)」にあります。エニアグラムがどんな分類かは「[性格とは](personality.html)」にまとめています。
 
 </details>
 
