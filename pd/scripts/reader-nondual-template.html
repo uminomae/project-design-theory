@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/nondual.html を直接編集しないでください。
+  正本:   knowledge/research/nondual/READER-nondual.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「見分けられるのに、切り離せないもの」のページです。二つが見分けられるのに、切り離せない（非二元さ）を表したものを、分野ごとに集めた読み物。物理（プリゴジン 1977 の対流の模様・マクスウェルの渦と光・ミンコフスキー 1908 の空間と時間・ファインマンとボーアの電子）、生き物（ド・バリ 1879 の地衣・ユクスキュル 1909 の環世界）、自分という過程（ミードの I と me・西田幾多郎の純粋経験・ジェームズの同じ部屋・リソとハドソンの霊感の瞬間・森田正馬の不安と安心）、ことばと芸術（ソシュールの紙の表と裏・イェイツの踊り手と踊り・ゲーテの色）、西洋の思想（ヘラクレイトスの弓と竪琴・パース 1893 の愛と貪欲の福音）、東洋と日本の古典（大乗起信論の水と波・般若心経・維摩経・六祖壇経の灯と光・老子・太極図説・荘子の胡蝶・方丈記）。最後に、創造の五段階の縁と渦で 25 の例を一つの表に並べ、なじまなかった例（ルビンの盃・クザーヌス）を置く。随時追記していくページ。
+  研究の説明は Claude が原典から書いた要約。載せた出典は、パブリックドメインの翻刻と本の走査（Wikisource・Internet Archive・Deutsches Textarchiv・国立国会図書館デジタルコレクション）、大学や公的機関の公開本文（ノーベル財団・Caltech・ブロック大学の Mead Project・トリーア大学の Cusanus-Portal）、大蔵経の電子テキスト（CBETA）、漢籍の公開本文（Chinese Text Project）、青空文庫で本文を確かめ、各例の「出典」の畳みに頁を添えている。リソとハドソンの本は電子書籍で読み、無料の貸し出しへリンクしている。英文・独文・仏文の訳は Claude。縁と渦の表と「この読みは Claude のもの」と書いた文は Claude の整理。
+  pjdhiro 本人の言葉は「pjdhiro の見方：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>見分けられるのに、切り離せないもの | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/nondual.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="二つが見分けられるのに、切り離せない（非二元さ）を表したものを、分野ごとに集めた読み物。物理（プリゴジン 1977 の対流の模様・マクスウェルの渦と光・ミンコフスキー 1908 の空間と時間・ファインマンとボーアの電子）、生き物（ド・バリ 1879 の地衣・ユクスキュル 1909 の環世界）、自分という過程（ミードの I と me・西田幾多郎の純粋経験・ジェームズの同じ部屋・リソとハドソンの霊感の瞬間・森田正馬の不安と安心）、ことばと芸術（ソシュールの紙の表と裏・イェイツの踊り手と踊り・ゲーテの色）、西洋の思想（ヘラクレイトスの弓と竪琴・パース 1893 の愛と貪欲の福音）、東洋と日本の古典（大乗起信論の水と波・般若心経・維摩経・六祖壇経の灯と光・老子・太極図説・荘子の胡蝶・方丈記）。最後に、創造の五段階の縁と渦で 25 の例を一つの表に並べ、なじまなかった例（ルビンの盃・クザーヌス）を置く。随時追記していくページ。">
+    <meta property="og:title" content="見分けられるのに、切り離せないもの">
+    <meta property="og:description" content="二つが見分けられるのに、切り離せない（非二元さ）を表したものを、分野ごとに集めた読み物。物理（プリゴジン 1977 の対流の模様・マクスウェルの渦と光・ミンコフスキー 1908 の空間と時間・ファインマンとボーアの電子）、生き物（ド・バリ 1879 の地衣・ユクスキュル 1909 の環世界）、自分という過程（ミードの I と me・西田幾多郎の純粋経験・ジェームズの同じ部屋・リソとハドソンの霊感の瞬間・森田正馬の不安と安心）、ことばと芸術（ソシュールの紙の表と裏・イェイツの踊り手と踊り・ゲーテの色）、西洋の思想（ヘラクレイトスの弓と竪琴・パース 1893 の愛と貪欲の福音）、東洋と日本の古典（大乗起信論の水と波・般若心経・維摩経・六祖壇経の灯と光・老子・太極図説・荘子の胡蝶・方丈記）。最後に、創造の五段階の縁と渦で 25 の例を一つの表に並べ、なじまなかった例（ルビンの盃・クザーヌス）を置く。随時追記していくページ。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/nondual.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="見分けられるのに、切り離せないもの">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-18">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "見分けられるのに、切り離せないもの",
+          "description": "二つが見分けられるのに、切り離せない（非二元さ）を表したものを、分野ごとに集めた読み物。物理（プリゴジン 1977 の対流の模様・マクスウェルの渦と光・ミンコフスキー 1908 の空間と時間・ファインマンとボーアの電子）、生き物（ド・バリ 1879 の地衣・ユクスキュル 1909 の環世界）、自分という過程（ミードの I と me・西田幾多郎の純粋経験・ジェームズの同じ部屋・リソとハドソンの霊感の瞬間・森田正馬の不安と安心）、ことばと芸術（ソシュールの紙の表と裏・イェイツの踊り手と踊り・ゲーテの色）、西洋の思想（ヘラクレイトスの弓と竪琴・パース 1893 の愛と貪欲の福音）、東洋と日本の古典（大乗起信論の水と波・般若心経・維摩経・六祖壇経の灯と光・老子・太極図説・荘子の胡蝶・方丈記）。最後に、創造の五段階の縁と渦で 25 の例を一つの表に並べ、なじまなかった例（ルビンの盃・クザーヌス）を置く。随時追記していくページ。",
+          "keywords": "非二元, 二つでない, 渦, 縁, 創造の五段階, 散逸構造, プリゴジン, ベナール対流, ミンコフスキー, 相補性, 地衣, 共生, 環世界, ミード, 純粋経験, 西田幾多郎, ジェームズ, 森田正馬, ソシュール, イェイツ, ゲーテ, ヘラクレイトス, パース, 大乗起信論, 般若心経, 維摩経, 六祖壇経, 老子, 太極図説, 荘子, 方丈記, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/nondual.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/nondual.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-18",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "非二元"}, {"@type": "Thing", "name": "創造の五段階の渦"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「見分けられるのに、切り離せないもの」のページです（工事中）。二つが見分けられるのに、切り離せない（非二元さ）を表したものを、分野ごとに集めた読み物。物理（プリゴジン 1977 の対流の模様・マクスウェルの渦と光・ミンコフスキー 1908 の空間と時間・ファインマンとボーアの電子）、生き物（ド・バリ 1879 の地衣・ユクスキュル 1909 の環世界）、自分という過程（ミードの I と me・西田幾多郎の純粋経験・ジェームズの同じ部屋・リソとハドソンの霊感の瞬間・森田正馬の不安と安心）、ことばと芸術（ソシュールの紙の表と裏・イェイツの踊り手と踊り・ゲーテの色）、西洋の思想（ヘラクレイトスの弓と竪琴・パース 1893 の愛と貪欲の福音）、東洋と日本の古典（大乗起信論の水と波・般若心経・維摩経・六祖壇経の灯と光・老子・太極図説・荘子の胡蝶・方丈記）。最後に、創造の五段階の縁と渦で 25 の例を一つの表に並べ、なじまなかった例（ルビンの盃・クザーヌス）を置く。随時追記していくページ。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>見分けられるのに、切り離せないもの</h1>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/nondual/READER-nondual.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="https://uminomae.github.io/project-design-theory/cs/reader/five-stages.html">創造の五段階</a> ・
+                <a href="peirce-love-abduction.html">パースの創造的な愛と、アブダクション</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

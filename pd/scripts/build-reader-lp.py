@@ -165,6 +165,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/nondual/READER-nondual.md",
+        ROOT / "scripts/reader-nondual-template.html",
+        ROOT / "reader/nondual.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/empathy/READER-empathy.md",
         ROOT / "scripts/reader-empathy-template.html",
         ROOT / "reader/empathy.html",
