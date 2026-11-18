@@ -1399,3 +1399,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（巻末の新しい章）
 - pages: 足した章は本文の章を指すまとめで、どちらのページも引いていないので、本文はそのまま。checked を今の時刻にした。
+
+## [2026-11-18] compile | Love駆動開発の内発的動機の答えをつなぐ（#180）
+- scope: 1 ページ作り直し（`concepts/Love 駆動開発`）・1 ページ確かめ（`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（心の言葉の内発的動機の段・結論の章の詳しく）
+- pages: `concepts/Love 駆動開発` の「プロジェクトの駆動源として」に、意欲と内発的動機の湧くもとを欠けに置く一文と、ドリフトと誤解の一文を足した。`プロジェクトデザイン` は内発的動機を引いていないので本文はそのまま、checked を今の時刻にした。
