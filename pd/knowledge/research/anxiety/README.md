@@ -36,6 +36,37 @@
 - Grupe & Nitschke (2013)・A. Freud (1936/1937)・Vaillant (2011)・Cook-Greuter (2013)：`pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md` の出典の行（本文照合済）。
 - Schein (1995) WP 3831・Edmondson (1999)：`pd/knowledge/research/psychological-safety/READER-psychological-safety.md` の出典の行（本文照合済）。
 
+## ほかの論の定義（#143・2026-11-18）
+
+章「ほかの論は、不安をどう定義してきたか」を足した。新田の章「守りがはがれると、何が出てくるのか」（不安と恐怖）のあとに置き、pjdhiro の見方「不安という感情はとても大事。安心の逆でもない。」（2026-11-14・Love駆動開発の章の置き場の相談で）をカードにして、二つの見方に近いか離れるかで並べた。表の列（何が脅かされているか・恐怖との分け方・不安をどう扱うか・安心との関わり）は Claude の整理。
+
+| 論 | 読んだ写し | 状態 | 主な頁 |
+|---|---|---|---|
+| Freud 1926『Hemmung, Symptom und Angst』 | archive.org のトルン大学図書館の走査（polishpublicdomain）・IPU ベルリンのコレクション。PD | 本文照合済（OCR の文字。崩れは二つの走査で突き合わせ） | pp.14, 39, 81–84, 121, 124–128, 133 |
+| Freud 1920『Jenseits des Lustprinzips』 | IPU ベルリンの初版の走査・Project Gutenberg #28220（第 2 版） | 本文照合済 | pp.10–11, 29 |
+| Freud 1917『Vorlesungen』第 25 講 | IPU ベルリンの初版の走査 | 本文照合済 | pp.457–479 |
+| May 1950 *The Meaning of Anxiety* | archive.org `meaningofanxiety00mayr`（フロリダ大学の図書館の蔵書）。CCE 1977・1978 と著作権局の記録に更新が無く、米国で PD と見た | 本文照合済 | pp.140, 190–197, 205 |
+| Kierkegaard 1844 | Love駆動開発の実存主義の節（SKS 第 4 巻）を参照（sources §4-5） | 本文照合済（済んだ記録） | — |
+| 森田正馬 1928・1935・1921 | NDL デジタル（インターネット公開・PDM）・青空文庫。頁の画像で読んだ | 本文照合済 | 1928 pp.15, 19, 66, 210, 216／1935 p.224／1921 p.352 |
+| Bowlby 1960 IJPA 41 | archive.org の同じ巻の走査（西ベンガル州政府 SCERT）。「安心とは」の Winnicott 1960 と同じ写しで、同じ書き方で載せた | 本文照合済（OCR の文字。頁は柱の並びで確かめた） | pp.93, 97, 109 |
+| NIMH RDoC（Potential Threat・Acute Threat） | nimh.nih.gov の公的な頁 | 本文照合済 | — |
+| APA Dictionary「anxiety」 | dictionary.apa.org（2018 更新） | 本文照合済 | — |
+| LeDoux & Pine 2016 | 著者の研究室のサイトの先行公開版の Wayback（2018-02-06） | 本文照合済 | 先行公開版 p.2 |
+| Bateson, Brilot & Nettle 2011 | 出版社の PDF の Wayback（2023-07-02） | 本文照合済 | pp.707–712 |
+| Neo, Tinker & McNaughton 2020 | PMC7174654（CC BY） | 本文照合済 | 序論（グレイとマクノートン 2000 の要約として帰属） |
+
+載せなかったもの（ページには書いていない）：
+
+- Heidegger 1927 *Sein und Zeit* §30・§40：初版（Jahrbuch 第 8 巻）の走査を archive.org で読んだ（§30 pp.140–142・§40 pp.184–191。「Das Wovor der Angst ist völlig unbestimmt」p.186・「unheimlich」「Nicht-zuhause-sein」p.188・恐れは頽落した不安 p.189）。写しは二つとも個人が上げたもので、PD は米国だけ（独・日では保護）。sources §5-8 で載せない。未照合（上げた人の分からない写しで読んだ。pp.140–142・184–191）。HathiTrust・ophen は 403。大学や公的機関の写しが見つかれば載せる。
+- Tillich 1952 *The Courage to Be*：1980 年に更新（RE0000068477）。Internet Archive は貸し出しだけ。未照合（書籍）。
+- Bowlby 1973 第 2 巻・1988 *A Secure Base*：未照合（書籍）。Bowlby 1960 JCPP 版：未照合（有料）。
+- DSM-5 の不安と恐怖の区別の文：本体は未照合（有料）。無料の公的資料（SAMHSA NBK519704）には区別の文が無い。
+- 森田 1926『根治法』：未照合（書籍。NDL は図書館送信だけ）。
+- Nesse 2001：p.75 だけ頁の画像で読んだ。本文には使っていない。
+- Freud 1926 p.70・p.78 の文は、頁の見出しが OCR に無く ±1 頁なので、本文には使っていない。
+
+原典の控えは本体の `.cache/raw/anxiety/`（git の外）。
+
 ## 足した視点と理由（stance.md 2-4：包摂の無い列挙にしない）
 
 | 足した視点 | 理由 |
