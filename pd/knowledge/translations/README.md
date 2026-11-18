@@ -42,6 +42,7 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | `herschel-1850-quetelet-on-probabilities.md` | [John Herschel], "Quetelet on Probabilities", *The Edinburgh Review* 92 (No.185), July 1850, pp.1–57 | 全文の訳（2026-11-18・#175）。無署名の書評で、ハーシェルの論集（1857）への再録で筆者が分かる。文字起こしが無いので、OCR から段を取り、読む役六つが範囲を分けて全 57 頁を画像と照らし、原文を起こして訳の案を出した。照らす役三つが段ごとに照らし、Claude がつないで訳語をそろえた。人の校閲はまだ。1893 の ¶20 が、ハーシェルがケトレーに広く注意を向けさせたと書く。ページ `pd/reader/herschel-quetelet-probabilities-ja.html` |
 | `mandeville-1714-fable-of-the-bees.md` | Bernard Mandeville, *The Fable of the Bees: or, Private Vices, Publick Benefits*, London: J. Roberts, 1714, 冒頭の詩「The Grumbling Hive」pp.1–20 | 本の抜きの訳（2026-11-18・#175）。詩の全文 34 段。1705 年の小冊子の Wikisource の文字起こしを下敷きに、読む役が 1714 年の版の画像と一行ずつ照らして原文を起こし、訳の案を出した。照らす役が段ごとに照らし、Claude が直して入れた。1705 年との違いと巻頭の正誤表は訳注に書いた。人の校閲はまだ。1893 の ¶14 がこの本を挙げる。ページ `pd/reader/mandeville-grumbling-hive-ja.html` |
 | `kolliker-1864-darwinsche-schopfungstheorie.md` | A. Kölliker, "Ueber die Darwin'sche Schöpfungstheorie", *Zeitschrift für wissenschaftliche Zoologie* 14 (1864), pp.174–186（独語） | 全文の訳（2026-11-18・#175）。原文は独語で、独語の本文から訳した。文字起こしが無いので、誌面の OCR を下敷きに、読む役が全 13 頁を画像と照らして原文を起こし、訳の案を出した。同じ年の別刷り（Engelmann）とも照らし、字の違いは訳注に書いた。照らす役が段ごとに照らし、Claude が直して入れた。人の校閲はまだ。1893 の ¶21 が、ケリカーを内的な必然による進化の説の例に挙げる。ページ `pd/reader/kolliker-darwinsche-schopfungstheorie-ja.html` |
+| `helmholtz-1847-erhaltung-der-kraft.md` | H. Helmholtz, *Über die Erhaltung der Kraft*, Berlin: G. Reimer, 1847（独語・72 頁） | 全文の訳（2026-11-18・#175）。一冊の本だが一つの論文なので全文。原文は独語で、独語の本文から訳した。1847 年の版の写真複製（Bruxelles 1966）の走査の OCR を下敷きに、読む役六つが全 72 頁を画像と照らして原文と式を起こし、訳の案を出した。照らす役三つが段ごとに照らし、Claude がつないで入れた。読みにくい記号は 1889 年の再版で裏づけた。人の校閲はまだ。1893 の ¶20 が「1847 年のヘルムホルツによるエネルギー保存の崇高な発見」と呼ぶ。ページ `pd/reader/helmholtz-erhaltung-der-kraft-ja.html` |
 
 次に訳す候補：パースは `../research/peirce-love-abduction/READING-ORDER-20261116.md` の表、1893「Evolutionary Love」が引く論文と本は Issue #175 の一覧。
 
@@ -158,6 +159,34 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | Kampf um das Dasein | 生存闘争 | |
 | Zeugung / Fortpflanzung | 生殖／繁殖 | |
 | Generatio spontanea | 自然発生 | |
+
+### ヘルムホルツ：表
+
+ヘルムホルツの Kraft は、今の「力」と「エネルギー」の両方にまたがる。訳し分けずに「力」とした（題も「力の保存について」）。
+
+| 原語 | 訳語 | 覚え書き |
+|---|---|---|
+| Erhaltung der Kraft / Princip | 力の保存／原理 | |
+| lebendige Kraft | 活力 | 今の運動エネルギーに当たる |
+| Spannkraft | 緊張力 | 今の位置エネルギーに当たる。引っぱる力の「張力」と分ける |
+| Intensität (der Kraft) / Kraftintensität | （力の）強さ | |
+| Arbeit / Arbeitskraft / Arbeitsgrösse | 仕事／仕事をする力／仕事の量 | |
+| Centralkraft / anziehend / abstossend | 中心力／引き合う／押し返す | |
+| materieller Punct / Massenpunct / Masse / Materie | 質点／質点／質量／物質 | |
+| Geschwindigkeit / Naturkörper / Naturerscheinung / Vorgang | 速度／自然物体／自然現象／過程 | |
+| Wärme / Wärmestoff / Wärmeeinheit / Kraftäquivalent | 熱／熱素／熱の単位／力の当量 | |
+| Aggregatzustand | 集合状態 | |
+| Spannung（電気の） | 張り | 今の電位差・電圧に当たる。Spannkraft の「緊張力」と分ける |
+| Vertheilung（静電・磁気の） | 分布 | 過程の意（今の静電誘導・磁気誘導）も「分布」。Induction は「誘導」 |
+| Potential | ポテンシャル | |
+| Ableitungsgrösse | 導きの大きさ | 今の静電容量に当たる |
+| Kette / galvanische Kette | 電池／ガルバーニの電池 | 閉じた回路の意味がはっきりしている所だけ「回路」 |
+| Element / Batterie | 素電池／バッテリー | Batterie はライデン瓶などの組 |
+| Schliessung / Schliessungsdrath | 閉じる導線 | |
+| electromotorische Kraft / Widerstand / Uebergangswiderstand | 起電力／抵抗／移行抵抗 | |
+| Polarisation / Zersetzung / Electrolyse | 分極／分解／電気分解 | |
+| Induction / Extracurrent | 誘導／余剰電流 | |
+| perpetuum mobile | 永久機関 | |
 
 ### パース：表
 

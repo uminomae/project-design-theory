@@ -210,6 +210,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は helmholtz-1847-erhaltung-der-kraft.md（原文〔独語〕と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-helmholtz-erhaltung-der-kraft-ja.md",
+        ROOT / "scripts/reader-helmholtz-erhaltung-der-kraft-ja-template.html",
+        ROOT / "reader/helmholtz-erhaltung-der-kraft-ja.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/creative-thinking/READER-creative-thinking.md",
         ROOT / "scripts/reader-creative-thinking-template.html",
         ROOT / "reader/creative-thinking.html",
@@ -387,12 +394,25 @@ JA_CHAPTERS = {
         "¶62": "人間の位置",
         "注1": "ケリカーの脚注",
     },
+    "helmholtz-1847-erhaltung-der-kraft.md": {
+        "¶1": "序",
+        "¶10": "I 活力の保存の原理",
+        "¶18": "II 力の保存の原理",
+        "¶33": "III 力学の定理への適用",
+        "¶41": "IV 熱の力の当量",
+        "¶55": "V 電気の過程の力の当量",
+        "¶67": "V のうち、ガルバーニ電気",
+        "¶83": "VI 磁気と電磁気の力の当量",
+        "¶105": "正誤",
+        "注1": "ヘルムホルツの脚注",
+    },
 }
 
 
 # 原文が英語でない対訳の、原文の畳みの lang。無いものは en
 JA_LANG = {
     "kolliker-1864-darwinsche-schopfungstheorie.md": "de",
+    "helmholtz-1847-erhaltung-der-kraft.md": "de",
 }
 
 

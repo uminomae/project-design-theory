@@ -139,6 +139,11 @@ Public explainer pages, written to be uniquely readable by LLMs without external
 - One-line: A full Japanese translation, paragraph by paragraph, of Albert Kölliker's lecture "Ueber die Darwin'sche Schöpfungstheorie" (Würzburg, 13 February 1864; Zeitschrift für wissenschaftliche Zoologie 14, pp.174–186), which Peirce cites in "Evolutionary Love" (1893) ¶21 as an example of evolution by inward necessity, with the German original under each paragraph.
 - Status: there is no transcription; the German original was built from the OCR and checked against all 13 page images of the Internet Archive scan and against the 1864 offprint. The translation is by Claude and has not been reviewed by a human. Quote and cite the original.
 
+### ヘルムホルツ『力の保存について』（1847）を、日本語で読む
+- URL: https://uminomae.github.io/project-design-theory/reader/helmholtz-erhaltung-der-kraft-ja.html
+- One-line: A full Japanese translation, paragraph by paragraph, of Hermann Helmholtz's "Über die Erhaltung der Kraft" (Berlin: G. Reimer, 1847; 72 pages, with the erratum), which Peirce calls "the sublime discovery of the conservation of energy by Helmholtz in 1847" in "Evolutionary Love" (1893) ¶20, with the German original under each paragraph.
+- Status: there is no transcription; the German original, including all formulas, was built from the OCR and checked against every page image of the Internet Archive scan of the 1966 photographic facsimile of the 1847 edition. The translation is by Claude and has not been reviewed by a human. Quote and cite the original.
+
 ## Related Projects
 
 | Project | URL | Focus |
