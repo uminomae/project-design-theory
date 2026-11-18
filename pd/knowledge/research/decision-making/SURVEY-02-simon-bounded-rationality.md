@@ -17,7 +17,7 @@
 ### 管理の中心としての決定（Simon 1947『経営行動』— 1978 年の講演での自著の引用）
 
 - 書誌：Simon, H. A. (1947). *Administrative Behavior: A Study of Decision-Making Processes in Administrative Organization*. New York: Macmillan.（書誌は Internet Archive の目録の題で確かめた。出版社・年は講演の参考文献の行と照らしていない）
-- 読んだ写し：本は読めていない。下の 1978 年のノーベル講演の中で、サイモン自身が『経営行動』の序の言葉を引いている所を読んだ。
+- 読んだ写し：本は読めていない。下の 1978 年のノーベル講演の中で、サイモン自身が『経営行動』の言葉を引いている所を読んだ（講演は「序」とは書いていない）。
 - 照合の状態：未照合（書籍。Internet Archive の 1957・1976・1997 の版は貸し出しだけ）。講演の中の自著の引用だけ本文照合済（講演 p.353）。
 - 鍵の文（講演の中の引用）：「that decision making is the heart of administration, and that the vocabulary of administrative theory must be derived from the logic and psychology of human choice」（講演 p.353）訳：決定が管理の中心であり、管理の理論の語彙は、人の選択の論理と心理学から引き出されなければならない。
 - 同じ講演で、サイモンは『経営行動』を「理論というより理論への序説」と呼び、「problem representation」（問題の表し方）の練習だったと振り返る（p.353）。きっかけは 1934–35 年のミルウォーキーの調査で、二つの部署の長が予算を限界で釣り合わせなかったのは、測れる生産関数が無く、知的に「できなかった」からだと書く（p.352）。

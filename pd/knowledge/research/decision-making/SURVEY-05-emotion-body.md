@@ -22,7 +22,7 @@
   - 「The hypothesis rejects attempts to limit human reasoning and decision making to mechanisms relying, in an exclusive and unrelated manner, on either conditioning alone or cognition alone.」（p.1413 要旨）訳：この仮説は、人の推論と意思決定を、条件づけだけ、あるいは認知だけに、ほかと切り離して頼る仕組みに限ろうとする試みを退ける。
   - 「somatic markers normally help constrain the decision-making space by making that space manageable for logic-based, cost-benefit analyses」（p.1415）訳：体の印は、ふつう、意思決定の空間を、論理に基づく損得の分析で扱える大きさにすることで、絞るのを助ける。
   - 「In the absence of a somatic marker, options and outcomes become virtually equalized」（p.1415）訳：体の印が無いと、選択肢と結果はほぼ等しくなる。続けて、その決め方は遅く、過去の経験を勘定に入れそこない、腹内側の患者に見る「遅く誤りやすい」決め方の型だ、と書く。
-  - 「a number of our daily decisions undoubtedly proceed without feelings」（p.1416）訳：日々の決定の多くは、間違いなく感じなしに進む。ただし、それは評価や体の状態が起きていないことを意味せず、注意が向けられていないだけだ、と続ける。
+  - 「a number of our daily decisions undoubtedly proceed without feelings」（p.1416）訳：日々の決定のうちいくつもは、間違いなく感じなしに進む。ただし、それは評価や体の状態が起きていないことを意味せず、注意が向けられていないだけだ、と続ける。
   - 印は「go, stop, and turn signals necessary for much decision making and planning」を方向づけうる（p.1416）訳：多くの意思決定と計画に要る、進め・止まれ・曲がれの信号。
 - 要約：腹内側前頭前野を損ねた患者は、知能・言語・作業記憶・社会の知識は保たれているのに、私生活と社会の場での決め方が損なわれ、同時に感情と感じも損なわれている（pp.1413–1414）。そこから、意思決定は、状況・選択肢・結果の知識に基づく推論に加え、過去にその結果と結びついた体の状態（実際の体の反応か、脳の中の「あたかも」の写し）の信号に助けられる、と仮説を立てる。信号は意識の上でも、意識されずにも働く。意思決定を、選択肢と結果の組の評価として扱い、印はその評価を速め、空間を絞るものと置く。条件：腹内側の患者についての仮説で、前頭前野全体の理論ではない、と著者自身が断る（p.1414）。実験の支えとして、感情を帯びた絵への皮膚の電気の反応と、カード賭けの課題（Bechara ら 1994）を挙げる（pp.1417–1418）。
 - 批判・のちの改め：下の Maia & McClelland（2004・2005）、Dunn ら（2006）。著者側の応え：Bechara ら（2005）。
