@@ -1369,3 +1369,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第四部の章「不安とは、何か」の工事中の一行を、ほかの論の定義の概説と独立ページ「不安とは」へのリンクに替えた・#143）
 - pages: どちらも「不安とは、何か」の章を引いていないので、本文はそのまま。checked を今の時刻にした。
+
+## [2026-11-18] check | Love駆動開発の「何を駆動源と見るかで、七つに分ける」の表を畳みの外に出した（付箋帳 i20261118053706r0w）
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（表と前置きの一文を畳みの外へ。読み方の段と出典は畳みに残した）
+- pages: どちらも中身は変わらないので、本文はそのまま。checked を今の時刻にした。
