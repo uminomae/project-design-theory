@@ -50,7 +50,7 @@
 | 特定のページ・Issue を触る | `docs/rules/decisions.md`：そのページ・Issue の行だけ（Love駆動開発の読み物は、終わりの「読み物の組み立て」の節も） |
 | 司令塔のセッションの始め・「付箋帳」「違和感帳」と言われた | `docs/tools/fusen-cho.md`：手元の指示を付箋のように置き、Issue を週で見る帳面（アーティファクト）の読み方・返事の書き方・しまい方。2026-11-17 に違和感帳（`docs/tools/iwakan-cho.md`・読むだけで残す）から移った |
 
-新しい指摘を受けたら、同じセッションで stance.md か corrections.md（正本）に足し、`python3 -I scripts/rules-core.py` で芯を作り直す（食い違いは check.sh が止める）。足すときは、まず既にある行に溶かせるかを見る。ページや Issue ごとの判定は decisions.md に、見方として一般化できる一行だけを stance.md に書く。代表例（corrections-examples.md）は型ごとに一、二件に保ち、足すなら入れ替える。
+新しい指摘を受けたら、同じセッションで stance.md か corrections.md（正本）に足し、芯は commit のときに pre-commit が作り直す（手で回すなら `python3 -I scripts/rules-core.py`。食い違いは check.sh が止める）。足すときは、まず既にある行に溶かせるかを見る。ページや Issue ごとの判定は decisions.md に、見方として一般化できる一行だけを stance.md に書く。代表例（corrections-examples.md）は型ごとに一、二件に保ち、足すなら入れ替える。
 
 ## セッションの終わりに
 

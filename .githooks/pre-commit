@@ -3,6 +3,12 @@
 top="$(git rev-parse --show-toplevel)"
 "$top/scripts/publish-check.sh" || exit 1
 
+# 毎回読む芯（docs/rules/stance-core.md・corrections-core.md）を、正本を入れる commit で作り直して一緒に入れる。
+# 正本だけを直して芯を作り直し忘れ、develop の check.sh が落ちたため（2026-11-19・0b1cc772 のあと）。
+if [ -f "$top/scripts/rules-core.py" ] && git diff --cached --name-only | grep -qE '^docs/rules/(stance|corrections)\.md$'; then
+  (cd "$top" && python3 -I scripts/rules-core.py >/dev/null && git add docs/rules/stance-core.md docs/rules/corrections-core.md) || exit 1
+fi
+
 # 公開ページの点検の表を通したか（.claude/skills/public-page-review/SKILL.md・2026-11-10）
 # 公開ページを含む commit は、今の index と同じ印（scripts/public-page-review.sh --done）が無ければ止める。
 # merge の commit には pre-commit が走らないので、develop への取り込みは止めない。
