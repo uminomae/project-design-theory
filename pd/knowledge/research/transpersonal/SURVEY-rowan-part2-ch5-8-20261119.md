@@ -4,7 +4,7 @@
 
 - Rowan, J. (2005) *The Transpersonal: Spirituality in Psychotherapy and Counselling*, 2nd ed., London and New York: Routledge（初版 1993）。
 - 読んだ範囲：第 II 部の始まりから第 9 章の前まで。第 5 章 Imagination and the imaginal world・第 6 章 Linking and alchemy・第 7 章 Personal mythology and spiritual emergencies・第 8 章 Other cultures。頁はおよそ pp.124–208。
-- 照合の状態：本文照合済（本文を頭から終わりまで読んだ）。頁は、本文につけた頁の印で数えた。印は一頁おきに抜けることがあり、崩れた所も六か所あるので、印だけで決めた頁は前後に一頁ずれうる。巻末の人名索引で確かめられた頁（バジェル p.162・マリーナ p.180・フクヤマ p.203・マグワイア p.206・M. ワトキンス p.143 ほか）は、索引に合わせた。推した頁には「頃」を付けた。
+- 照合の状態：本文照合済（本文を頭から終わりまで読んだ）。頁は前後に一頁ずれうる。巻末の人名索引で確かめられた頁（バジェル p.162・マリーナ p.180・フクヤマ p.203・マグワイア p.206・M. ワトキンス p.143 ほか）は、索引に合わせた。推した頁には「頃」を付けた。
 - ローワンが引く人の文（Hillman・Watkins・Samuels・Budgell・Field など）は、ローワンの本の中で読んだもの。原典では確かめていない。この記録では「二次経由（ローワン 2005 の頁）」として扱う（`docs/rules/sources.md` §3 の 2）。公開文に使うなら、その原典を読んでから使う。
 - 引用は原文のまま短く（一か所 40 語ほどまで）、頁を付けた。訳は Claude。
 - 2026-11-19。司令塔のセッション（worktree transpersonal-psychology-spirituality-ac052d）から受けた、五つに分けて読むうちの一つ。worktree elastic-lederberg-7e036e。
