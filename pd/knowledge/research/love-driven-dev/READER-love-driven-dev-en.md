@@ -1578,16 +1578,6 @@ In the summer of 1932, the physicist Einstein, in a project of the League of Nat
 
 What I want to call Love is not limited to the emotions of romance or liking; emotion is its most easily perceived aspect. Nor does it include only what feels good. It may not even be something to which the yardsticks of good and bad, or rational or not, apply (this hypothesis is left as a question in the chapter "[What is still not known](#ldd-open)"). People are inside it, and they themselves are part of it, so it does not seem to be something one can point to from outside, take out and look at.
 
-<details class="pd-column"><summary>A sword does not cut itself</summary>
-
-<a id="ldd-katana"></a>"The sword does not cut itself" (a sword cannot cut itself) is a phrase in the recorded sayings of Dahui Zonggao, a Zen monk of the Song dynasty. The original continues: "眼不自見，刀不自割，喫飯濟飢，飲水定渴" (the eye does not see itself, the sword does not cut itself; eating rice relieves hunger, drinking water quenches thirst). pjdhiro reads this phrase as follows.
-
-<strong>pjdhiro's hypothesis (translated by Claude):</strong>"A sword does not cut itself" probably means, I think, that I too am the gravitational field itself, a part of it. It's the hypothesis that love may be the gravitational field itself.
-
-Sources: *Dahui Pujue chanshi yulu* fascicle 1 (Taishō vol. 47 No.1998A, p.812c; full text checked against [the CBETA electronic text](https://cbetaonline.dila.edu.tw/zh/T1998A_001)). Claude checked the quotation; pjdhiro has not read the source.
-
-</details>
-
 <details><summary>Sources</summary>
 
 The letters of Einstein and Freud: Albert Einstein & Sigmund Freud, *Warum Krieg?*, Internationales Institut für geistige Zusammenarbeit, Völkerbund, 1933 (full text checked against [a copy of the printed edition on the Internet Archive](https://archive.org/details/freud_1933_warum)). Checked were the question in Einstein's letter (Caputh, 30. Juli 1932), "Gibt es einen Weg, die Menschen von dem Verhängnis des Krieges zu befreien?", and, in Freud's reply (Wien, im September 1932), the passage saying that the two drives hardly ever work alone and are mixed with each other (legiert), and the passage saying that the love drive directed at an object (Liebestrieb) must add the drive to master (Bemächtigungstrieb) to obtain the object. The English is Claude's translation.
@@ -2636,7 +2626,7 @@ The sister reader "Isn't Love like gravity?" sets two views side by side here ([
 
 <strong>pjdhiro's view (translated by Claude):</strong>Even managers may be drawn by a central driving source like love.
 
-The two can hold at the same time (the picture of the planet and its moons above). "People may be part of a field I want to call Love, and inside its distortion" in "[That is the driving source of projects](#ldd-conclusion)" stands on the second view. Reading the Zen phrase "a sword does not cut itself", pjdhiro sees the same thing from another side ([pjdhiro's hypothesis](#ldd-love-not) in the chapter "What is what I want to call Love not?"). The words of Zen are lined up in Part 7's chapter "[Seen from Zen](#ldd-zen)".
+The two can hold at the same time (the picture of the planet and its moons above). "People may be part of a field I want to call Love, and inside its distortion" in "[That is the driving source of projects](#ldd-conclusion)" stands on the second view.
 
 </details>
 
@@ -3093,7 +3083,6 @@ Zen gives the impression of a practice of sitting quietly and emptying the mind.
 
 Here and there, this reader has cited words of Zen and Buddhism. pjdhiro sees the teachings of Zen as a reference for this reader. And he sees Zen as a way, with a history, of developing one's own spirit. So it is looked at through the viewpoint of Zen too. First, the places of the words cited so far are lined up.
 
-- "The sword does not cut itself": the sword cannot cut itself. The original sets it beside "the eye does not see itself", and says that what sees or cuts cannot make itself its object ([The sword does not cut itself](#ldd-katana)).
 - The finger pointing at the moon: the Buddhist parable that the finger pointing at the moon is not the moon itself ([the finger pointing at the moon](#ldd-finger)).
 - Water and waves are not apart: even when water rises into waves in the wind, the waves are not something apart from the water. It is the analogy that even if we divide them in two and give them names, they are not apart. It is an analogy not from a book of the Zen school but from a treatise of Mahāyāna Buddhism ([water and waves are not apart](#ldd-water)).
 - *Shikan*: the work of watching the inside of oneself as if pointing at it with the mind. *Shikan* is a word for practice found widely in Buddhism, and was systematized in the Tiantai school. It does not belong to the Zen school alone ([Isn't Love like gravity?](#ldd-shikan), and the chapter of this part "[How does one train it, how does one practice?](#ldd-practice)").
