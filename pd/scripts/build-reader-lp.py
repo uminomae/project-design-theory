@@ -289,6 +289,34 @@ PAGES = [
         ROOT / "reader/business-design-syllabus.html",
         "flow",
     ),
+    (
+        # 独立ページを束ねる並び（付箋帳 i20261119004012n6t・2026-11-19）
+        ROOT / "knowledge/research/reader-shelves/READER-shelf-mind.md",
+        ROOT / "scripts/reader-shelf-mind-template.html",
+        ROOT / "reader/shelf-mind.html",
+        "flow",
+    ),
+    (
+        # 独立ページを束ねる並び（付箋帳 i20261119004012n6t・2026-11-19）
+        ROOT / "knowledge/research/reader-shelves/READER-shelf-love.md",
+        ROOT / "scripts/reader-shelf-love-template.html",
+        ROOT / "reader/shelf-love.html",
+        "flow",
+    ),
+    (
+        # 独立ページを束ねる並び（付箋帳 i20261119004012n6t・2026-11-19）
+        ROOT / "knowledge/research/reader-shelves/READER-shelf-number-org.md",
+        ROOT / "scripts/reader-shelf-number-org-template.html",
+        ROOT / "reader/shelf-number-org.html",
+        "flow",
+    ),
+    (
+        # 独立ページを束ねる並び（付箋帳 i20261119004012n6t・2026-11-19）
+        ROOT / "knowledge/research/reader-shelves/READER-shelf-translations.md",
+        ROOT / "scripts/reader-shelf-translations-template.html",
+        ROOT / "reader/shelf-translations.html",
+        "flow",
+    ),
 ]
 
 # スクリーナーのデータ（正本 JSON）。出力 HTML 名 → JSON。正本 MD の <!--SCREENER--> に

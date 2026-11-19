@@ -46,6 +46,10 @@
 | `management-drivers.html` | `knowledge/research/management-drivers/READER-management-drivers.md`（経営学の考え方は、どこまで効くか。七つの駆動源の考え方を、よく効く場面と、正解として広げたときの取り違えで見る。Love駆動開発の「経営学が見てきた七つの駆動源」の章の詳しくを切り出したもの） | flow（トップと同じ Menu。**工事中＝noindex**。pjdhiro の確認後に noindex を外し sitemap・llms.txt へ。Love駆動開発の七つの駆動源の章からリンク） |
 | `mintzberg-schools.html` | `knowledge/research/mintzberg-schools/READER-mintzberg-schools.md`（ミンツバーグの学派を、駆動源と創造の流れで見る。戦略形成の十の学派に、Love駆動開発の側から駆動源と創造の流れの二つのスライスを重ねる） | flow（トップと同じ Menu。**工事中＝noindex**。Love駆動開発と経営学の考え方は、どこまで効くかからリンク） |
 | `business-design-syllabus.html` | `knowledge/research/business-design-syllabus/READER-business-design-syllabus.md`（Love駆動開発は、事業構想の授業になるか — 総論と特論の試案。事業構想の授業を、総論〔学の輪郭を、見方の道具を持ってかんたんな順に一周する〕と特論〔Love駆動開発を読み物の順にたどる〕の二本に組むとしたらという pjdhiro の思案を、それぞれ 15 回とシラバス文の形で置く。現実の講義ではない） | flow（トップと同じ Menu。**工事中＝noindex**。pjdhiro の確認後に noindex を外し sitemap・llms.txt へ。HOME の「問い」からリンク） |
+| `shelf-mind.html` | `knowledge/research/reader-shelves/READER-shelf-mind.md`（心の動きを見るページ。独立ページの題と一行の説明を並べただけのページ。HOME の「独立ページ」の節の見出しから張る・付箋帳 i20261119004012n6t） | flow（トップと同じ Menu。章は最初から開く。並べたページの多くが工事中のあいだは noindex） |
+| `shelf-love.html` | `knowledge/research/reader-shelves/READER-shelf-love.md`（Love と愛、創造を見るページ。独立ページの題と一行の説明を並べただけのページ。HOME の「独立ページ」の節の見出しから張る・付箋帳 i20261119004012n6t） | flow（トップと同じ Menu。章は最初から開く。並べたページの多くが工事中のあいだは noindex） |
+| `shelf-number-org.html` | `knowledge/research/reader-shelves/READER-shelf-number-org.md`（数と組織を見るページ。独立ページの題と一行の説明を並べただけのページ。HOME の「独立ページ」の節の見出しから張る・付箋帳 i20261119004012n6t） | flow（トップと同じ Menu。章は最初から開く。並べたページの多くが工事中のあいだは noindex） |
+| `shelf-translations.html` | `knowledge/research/reader-shelves/READER-shelf-translations.md`（原典を日本語で読む。独立ページの題と一行の説明を並べただけのページ。HOME の「独立ページ」の節の見出しから張る・付箋帳 i20261119004012n6t） | flow（トップと同じ Menu。章は最初から開く。並べたページの多くが工事中のあいだは noindex） |
 
 `archive/` には、入口と機械向けの案内から外した古い版をしまってある（`archive/README.md`。2026-11-10・Issue #111 で `energy-flow.html`＝「エネルギーの流れ」と、その比較用の実験版 `energy-flow-rhythm.html` を移した。`energy-flow.html` は生成の対象から外してある）。
 
