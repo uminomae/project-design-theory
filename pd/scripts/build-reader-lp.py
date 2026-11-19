@@ -217,6 +217,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は clausius-1850-bewegende-kraft-der-warme.md（原文〔独語〕と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-clausius-bewegende-kraft-der-warme-ja.md",
+        ROOT / "scripts/reader-clausius-bewegende-kraft-der-warme-ja-template.html",
+        ROOT / "reader/clausius-bewegende-kraft-der-warme-ja.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/creative-thinking/READER-creative-thinking.md",
         ROOT / "scripts/reader-creative-thinking-template.html",
         ROOT / "reader/creative-thinking.html",
@@ -406,6 +413,18 @@ JA_CHAPTERS = {
         "¶105": "正誤",
         "注1": "ヘルムホルツの脚注",
     },
+    "clausius-1850-bewegende-kraft-der-warme.md": {
+        "¶1": "題と序",
+        "¶9": "I 熱と仕事の等価の原則から出てくる帰結",
+        "¶20": "I のうち、永久気体",
+        "¶35": "I のうち、密度が最大の蒸気",
+        "¶47": "I のうち、副次の仮定を置いた気体",
+        "¶57": "続きの題（第 4 号）",
+        "¶58": "II カルノーの原則から出てくる帰結",
+        "¶78": "II のうち、水蒸気の法則からの外れ",
+        "¶96": "熱の単位に対する仕事の当量",
+        "注1": "クラウジウスの脚注",
+    },
 }
 
 
@@ -413,6 +432,7 @@ JA_CHAPTERS = {
 JA_LANG = {
     "kolliker-1864-darwinsche-schopfungstheorie.md": "de",
     "helmholtz-1847-erhaltung-der-kraft.md": "de",
+    "clausius-1850-bewegende-kraft-der-warme.md": "de",
 }
 
 
