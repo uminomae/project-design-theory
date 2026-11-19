@@ -4,8 +4,7 @@ aliases: ["Love-Driven Development", "LDD", "Love駆動開発"]
 source:
   - repo: "pd"
     path: "knowledge/research/love-driven-dev/READER-love-driven-dev.md"
-compiled: "2026-11-19"
-checked: "2026-11-19T17:52+09:00"
+compiled: "2026-11-20"
 tags: [concept, core, love-driven, practice]
 status: 暫定
 review_state: 未レビュー

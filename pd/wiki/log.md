@@ -1424,3 +1424,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第六部の畳み「刀は自らを割かず」・第七部の禅の章の一覧の一行・第六部の一文）
 - pages: どちらのページも、外した畳み・一覧の行・大慧の語録・pjdhiro の仮説を引いていなかったので本文はそのまま。compiled がもう今日なので checked を今の時刻にした。
+
+## [2026-11-20] check | HOME に独立ページ「神・愛・美と、ジュリア集合」の札を足し、Love駆動開発の Klein 1946 のリンクを正しい号に直したのに合わせる
+- scope: 3 ページ確かめ（`cross-refs/concept-entity-map`・`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/src/content/site-data.mjs`（`repo.juliaPotential`・`repo.juliaPotentialDesc` の日英の文言）、`pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（Klein 1946 のリンク先を ijp-27-1946-1-2 から ijp-27-1946-3-4 に。参照の一覧と出典の段の四か所）
+- pages: どのページも、足した札の文言と Klein 1946 のリンクを引いていなかったので本文はそのまま。compiled を今日にした。
