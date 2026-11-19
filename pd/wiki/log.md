@@ -1419,3 +1419,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第四部の畳み「闘争と逃避、信頼と嫌悪のスイッチ」の図の下の段）
 - pages: どちらのページも、直した畳みの段を引いていないので本文はそのまま。compiled がもう今日なので checked を今の時刻にした。
+
+## [2026-11-19] check | Love駆動開発から「刀は自らを割かず」を外したのに合わせる
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第六部の畳み「刀は自らを割かず」・第七部の禅の章の一覧の一行・第六部の一文）
+- pages: どちらのページも、外した畳み・一覧の行・大慧の語録・pjdhiro の仮説を引いていなかったので本文はそのまま。compiled がもう今日なので checked を今の時刻にした。
