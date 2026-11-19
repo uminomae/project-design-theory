@@ -2,7 +2,7 @@
 
 <!-- scripts/rules-core.py が docs/rules/corrections.md から作る。ここは手で直さない。直すのは corrections.md。 -->
 
-毎回読む分。`corrections.md` の型の表から、型・やりがちなこと・pjdhiro の構えの三列だけを並べた。自分の案がどの型に当たるかを見る。
+目次（毎回読むのは `corrections.md` の全文。2026-11-19 に戻した）。`corrections.md` の型の表から、型・やりがちなこと・pjdhiro の構えの三列だけを並べた。自分の案がどの型に当たるかを見る。
 
 **当たりそうな型は、`corrections.md` のその行の「書く前の確認」を開いて読む。** 案を出す前・公開文を書く前・手を動かす作業の前は、当たりうる型の行を全部読む。迷ったら開く。トークンの節約を、確かめより先にしない（pjdhiro 2026-11-19）。繰り返しの決まりと表も `corrections.md` にある。
 

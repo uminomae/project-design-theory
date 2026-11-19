@@ -34,13 +34,13 @@
 
 ## 対話・執筆の前に読む
 
-毎回読むのは最初の行の二つの「芯」。残りは、その作業をするときに読む。毎回読む分を小さく保つため（pjdhiro 2026-11-08・2026-11-19）。
+毎回読むのは最初の行の二つの正本（`stance.md`・`corrections.md`）の全文。芯だけで始めない。残りは、その作業をするときに読む（pjdhiro 2026-11-19「全文に戻す」。芯だけで始めたセッションで、たとえの対話が「ここまでの議論をまるで参照していないように見えます」「話が伝わらない感じが困る。コンテキストで読み込む内容を変えたからだと思う」となったため）。
 
-**ただし、読みに行くのをためらわない。** 芯は入口で、判断の材料は正本（`stance.md`・`corrections.md`）にある。少しでも関わりそうな節・型は正本を開く。判断を仰ぐ前・案を出す前・公開文を書く前・pjdhiro の言葉の読みに迷ったときは、関わる節を必ず開く。トークンの節約を、判断の精度より先にしない（pjdhiro 2026-11-19「現在のclaudeの判断は私に近づいているので気に入っています。その精度が落ちないよう、読みにいく場合のハードルは下げて、トークン節約だけを優先することのないようにして」）。
+**読みに行くのをためらわない。** 分けて置いたもの（`stance-theories.md`・`corrections-examples.md`・`corrections-rg.md`・`corrections-k.md` ほか）も、少しでも関わりそうなら開く。判断を仰ぐ前・案を出す前・公開文を書く前・pjdhiro の言葉の読みに迷ったときは、関わる節を必ず開く。トークンの節約を、判断の精度より先にしない（pjdhiro 2026-11-19「現在のclaudeの判断は私に近づいているので気に入っています。その精度が落ちないよう、読みにいく場合のハードルは下げて、トークン節約だけを優先することのないようにして」）。
 
 | いつ | 読むもの |
 |---|---|
-| 毎回 | `docs/rules/stance-core.md`：pjdhiro の見方と判断の仕方の芯。正本は `docs/rules/stance.md`（項目の補い・pjdhiro の言葉・何への答えか）。迷ったら、pjdhiro ならどう判断するかを正本の節で確かめる。`docs/rules/corrections-core.md`：Claude が繰り返す誤りの型の芯。自分の案がどの型に当たるかを見て、当たりそうな型は正本 `docs/rules/corrections.md` の「書く前の確認」を読む。芯は `scripts/rules-core.py` が正本から作り、手で直さない |
+| 毎回 | `docs/rules/stance.md` の全文：pjdhiro の見方と判断の仕方（項目の補い・pjdhiro の言葉・何への答えか）。迷ったら、pjdhiro ならどう判断するかをここで確かめる。`docs/rules/corrections.md` の全文：Claude が繰り返す誤りの型。自分の案がどの型に当たるかを見て、「書く前の確認」を読む。芯（`stance-core.md`・`corrections-core.md`）は `scripts/rules-core.py` が正本から作る目次で、手で直さない。芯だけで済ませない |
 | 公開文を書く・直す | `docs/rules/writing.md`：公開文の書き方。`docs/rules/corrections-examples.md`：当たりそうな型の行だけ。`docs/rules/corrections-rg.md`：型 R・G の確認のうち、当たる節だけ（pjdhiro に手作業を頼むときは R5）。main に出す前に念入りに見るときは `docs/rules/review.md`：レビューの手順 |
 | 公開ページを作る・直す（commit の前と main に送る前。必ず） | `.claude/skills/public-page-review/SKILL.md`：これまで公開ページで起きた誤りから溜めた点検の表。§1・§2 は毎回、残りは触ったものの節。直しや指摘があったら、同じ作業で表に足す。通したら `bash scripts/public-page-review.sh --done`（無いと pre-commit が止める）（pjdhiro 2026-11-10） |
 | 手を動かす作業（git の取り込み・push、生成・検査、画面、調べと記録）を始める | `docs/rules/corrections-k.md`：型 K の確認のうち、K0 と、その作業の節だけ。worktree で始めるときは、取り込みを回す前に K1 を読む |
