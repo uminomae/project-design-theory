@@ -248,6 +248,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/julia-potential/READER-julia-potential.md",
+        ROOT / "scripts/reader-julia-potential-template.html",
+        ROOT / "reader/julia-potential.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/nondual/READER-nondual.md",
         ROOT / "scripts/reader-nondual-template.html",
         ROOT / "reader/nondual.html",

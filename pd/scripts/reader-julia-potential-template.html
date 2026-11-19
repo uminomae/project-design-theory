@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/julia-potential.html を直接編集しないでください。
+  正本:   knowledge/research/julia-potential/READER-julia-potential.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「神・愛・美と、ジュリア集合」のページです（工事中）。ジュリア集合のような何かが、神・愛・美のポテンシャルなのではないか、という pjdhiro の問いを置く工事中の読み物。漸化式 z → z² + c を Love駆動開発のたとえにした対話（c は Love と呼びたいもの、z は主体）から、値を前へ打つと渦になり √ で遡るとジュリア集合の形になること、美の定義から入った四段の仮説、畏怖とクラインの分裂に近い体感の足場をたどる。美・愛・神を一つの源として重ねる古典と、境目・自己相似の形を心や元型に結ぶ論を、原典で読み、問いのどの面に触れるかで並べる。問いの全体を述べた論は見つかっておらず、√ の意味と二対一の意味は空いたまま置く。
+  式への当てはめは pjdhiro と Claude が対話で共有した仮のもので、論証ではない。古典と研究の説明は Claude が原典から書いた要約で、英語・ドイツ語・漢文の訳は Claude。載せた出典は、どれも本文で照合し、各章の「出典：」行に頁や節を添えている。「Claude の読み」の文は Claude の読み。
+  pjdhiro 本人の言葉は「pjdhiro の問い：」「pjdhiro の見方：」「pjdhiro の仮説：」「pjdhiro の体験：」で引用。四段の仮説の番号と並べ方は Claude の整理。空いたままの所（√ の意味・z と −z の二対一・自然の形と美しさの飛躍・美と神と愛が同じものを指すか）は埋めていない。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>神・愛・美と、ジュリア集合 | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/julia-potential.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="ジュリア集合のような何かが、神・愛・美のポテンシャルなのではないか、という pjdhiro の問いを置く工事中の読み物。漸化式 z → z² + c を Love駆動開発のたとえにした対話（c は Love と呼びたいもの、z は主体）から、値を前へ打つと渦になり √ で遡るとジュリア集合の形になること、美の定義から入った四段の仮説、畏怖とクラインの分裂に近い体感の足場をたどる。美・愛・神を一つの源として重ねる古典と、境目・自己相似の形を心や元型に結ぶ論を、原典で読み、問いのどの面に触れるかで並べる。問いの全体を述べた論は見つかっておらず、√ の意味と二対一の意味は空いたまま置く。">
+    <meta property="og:title" content="神・愛・美と、ジュリア集合">
+    <meta property="og:description" content="ジュリア集合のような何かが、神・愛・美のポテンシャルなのではないか、という pjdhiro の問いを置く工事中の読み物。漸化式 z → z² + c を Love駆動開発のたとえにした対話（c は Love と呼びたいもの、z は主体）から、値を前へ打つと渦になり √ で遡るとジュリア集合の形になること、美の定義から入った四段の仮説、畏怖とクラインの分裂に近い体感の足場をたどる。美・愛・神を一つの源として重ねる古典と、境目・自己相似の形を心や元型に結ぶ論を、原典で読み、問いのどの面に触れるかで並べる。問いの全体を述べた論は見つかっておらず、√ の意味と二対一の意味は空いたまま置く。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/julia-potential.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="神・愛・美と、ジュリア集合">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-20">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "神・愛・美と、ジュリア集合",
+          "description": "ジュリア集合のような何かが、神・愛・美のポテンシャルなのではないか、という pjdhiro の問いを置く工事中の読み物。漸化式 z → z² + c を Love駆動開発のたとえにした対話（c は Love と呼びたいもの、z は主体）から、値を前へ打つと渦になり √ で遡るとジュリア集合の形になること、美の定義から入った四段の仮説、畏怖とクラインの分裂に近い体感の足場をたどる。美・愛・神を一つの源として重ねる古典と、境目・自己相似の形を心や元型に結ぶ論を、原典で読み、問いのどの面に触れるかで並べる。問いの全体を述べた論は見つかっておらず、√ の意味と二対一の意味は空いたまま置く。",
+          "keywords": "ジュリア集合, 漸化式, フラクタル, 境目, 自己相似, 美, 愛, 神, 畏怖, 崇高, 元型, クライン, エンペドクレス, 偽ディオニュシオス, ホワイトヘッド, Love駆動開発, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/julia-potential.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/julia-potential.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-20",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "ジュリア集合"}, {"@type": "Thing", "name": "美"}, {"@type": "Thing", "name": "愛"}, {"@type": "Thing", "name": "神"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「神・愛・美と、ジュリア集合」のページです（工事中）。ジュリア集合のような何かが、神・愛・美のポテンシャルなのではないか、という pjdhiro の問いを置く工事中の読み物。漸化式 z → z² + c を Love駆動開発のたとえにした対話（c は Love と呼びたいもの、z は主体）から、値を前へ打つと渦になり √ で遡るとジュリア集合の形になること、美の定義から入った四段の仮説、畏怖とクラインの分裂に近い体感の足場をたどる。美・愛・神を一つの源として重ねる古典と、境目・自己相似の形を心や元型に結ぶ論を、原典で読み、問いのどの面に触れるかで並べる。問いの全体を述べた論は見つかっておらず、√ の意味と二対一の意味は空いたまま置く。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の問い」「pjdhiro の見方」「pjdhiro の仮説」「pjdhiro の体験」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>神・愛・美と、ジュリア集合</h1>
+                <p class="reader-subtitle">ジュリア集合のような何かが、神・愛・美のポテンシャルなのではないか</p>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/julia-potential/READER-julia-potential.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="beauty.html">美とは</a> ・
+                <a href="peirce-love-abduction.html">パースの創造的な愛と、アブダクション</a> ・
+                <a href="shelf-love.html">Love と愛、創造を見るページ</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
