@@ -43,6 +43,7 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | `mandeville-1714-fable-of-the-bees.md` | Bernard Mandeville, *The Fable of the Bees: or, Private Vices, Publick Benefits*, London: J. Roberts, 1714, 冒頭の詩「The Grumbling Hive」pp.1–20 | 本の抜きの訳（2026-11-18・#175）。詩の全文 34 段。1705 年の小冊子の Wikisource の文字起こしを下敷きに、読む役が 1714 年の版の画像と一行ずつ照らして原文を起こし、訳の案を出した。照らす役が段ごとに照らし、Claude が直して入れた。1705 年との違いと巻頭の正誤表は訳注に書いた。人の校閲はまだ。1893 の ¶14 がこの本を挙げる。ページ `pd/reader/mandeville-grumbling-hive-ja.html` |
 | `kolliker-1864-darwinsche-schopfungstheorie.md` | A. Kölliker, "Ueber die Darwin'sche Schöpfungstheorie", *Zeitschrift für wissenschaftliche Zoologie* 14 (1864), pp.174–186（独語） | 全文の訳（2026-11-18・#175）。原文は独語で、独語の本文から訳した。文字起こしが無いので、誌面の OCR を下敷きに、読む役が全 13 頁を画像と照らして原文を起こし、訳の案を出した。同じ年の別刷り（Engelmann）とも照らし、字の違いは訳注に書いた。照らす役が段ごとに照らし、Claude が直して入れた。人の校閲はまだ。1893 の ¶21 が、ケリカーを内的な必然による進化の説の例に挙げる。ページ `pd/reader/kolliker-darwinsche-schopfungstheorie-ja.html` |
 | `helmholtz-1847-erhaltung-der-kraft.md` | H. Helmholtz, *Über die Erhaltung der Kraft*, Berlin: G. Reimer, 1847（独語・72 頁） | 全文の訳（2026-11-18・#175）。一冊の本だが一つの論文なので全文。原文は独語で、独語の本文から訳した。1847 年の版の写真複製（Bruxelles 1966）の走査の OCR を下敷きに、読む役六つが全 72 頁を画像と照らして原文と式を起こし、訳の案を出した。照らす役三つが段ごとに照らし、Claude がつないで入れた。読みにくい記号は 1889 年の再版で裏づけた。人の校閲はまだ。1893 の ¶20 が「1847 年のヘルムホルツによるエネルギー保存の崇高な発見」と呼ぶ。ページ `pd/reader/helmholtz-erhaltung-der-kraft-ja.html` |
+| `clausius-1850-bewegende-kraft-der-warme.md` | R. Clausius, "Ueber die bewegende Kraft der Wärme und die Gesetze, welche sich daraus für die Wärmelehre selbst ableiten lassen", *Annalen der Physik und Chemie* 79 (1850), pp.368–397, 500–524（独語・55 頁） | 全文の訳（2026-11-19・#175）。原文は独語で、独語の本文から訳した。誌面の走査の OCR を下敷きに、読む役六つが全 55 頁を画像と照らして原文と式を起こし、訳の案を出した。照らす役三つが段ごとに照らし、Claude がつないで入れた。文中の図 4 つは写さず訳注で形を書いた。人の校閲はまだ。1893 の ¶20・¶58 が「1850 年のクラウジウスとランキンの熱の力学的理論」と言う、クラウジウスの側の論文（パースは題を挙げず、Claude が当てた）。ページ `pd/reader/clausius-bewegende-kraft-der-warme-ja.html` |
 
 次に訳す候補：パースは `../research/peirce-love-abduction/READING-ORDER-20261116.md` の表、1893「Evolutionary Love」が引く論文と本は Issue #175 の一覧。
 
@@ -187,6 +188,31 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | Polarisation / Zersetzung / Electrolyse | 分極／分解／電気分解 | |
 | Induction / Extracurrent | 誘導／余剰電流 | |
 | perpetuum mobile | 永久機関 | |
+
+### クラウジウス：表
+
+ヘルムホルツの表と重なる語（Kraft＝力、lebendige Kraft＝活力、Wärmestoff＝熱素）はそろえた。ただし蒸気の Spannkraft は、ヘルムホルツの Spannkraft（緊張力・今の位置エネルギー）と意味が違い、今の圧力に当たるので「張力」とした。
+
+| 原語 | 訳語 | 覚え書き |
+|---|---|---|
+| bewegende Kraft der Wärme | 熱の動力 | カルノーの puissance motrice du feu に当たる |
+| Wärmelehre / Wärmetheorie | 熱学／熱の理論 | |
+| Grundsatz / Princip / Grundprincip | 原則／原理／根本原理 | 第一の原則＝熱と仕事の等価、第二の原則＝カルノーの原則を直したもの |
+| Aequivalenz von Wärme und Arbeit / Aequivalent | 熱と仕事の等価／当量 | |
+| Wärmeaequivalent / Aequivalent der Arbeit für die Wärmeeinheit | 熱の当量／熱の単位に対する仕事の当量 | 式の <i>A</i> と 1/<i>A</i> |
+| Arbeit / äussere Arbeit / innere Arbeit | 仕事／外部の仕事／内部の仕事 | |
+| Verbrauch / verbrauchen / erzeugen | 消費／消費する／生み出す | 「費やす」にしない |
+| Uebergang (der Wärme) / Uebertragung / Vertheilung | （熱の）移行／移すこと／配分 | |
+| Wärmemenge / Wärmeeinheit / Gesammtwärme | 熱量／熱の単位／全熱 | |
+| freie Wärme / latente Wärme / specifische Wärme | 自由な熱／潜熱／比熱 | |
+| Spannkraft / Spannung / Expansivkraft（蒸気・気体の） | 張力／張力／膨張力 | 今の圧力に当たる |
+| Dampf im Maximum der Dichte | 密度が最大の蒸気 | 今の飽和蒸気 |
+| permanentes Gas / Nebenannahme | 永久気体／副次の仮定 | |
+| das M. und G. Gesetz | マリオットとゲイ＝リュサックの法則 | 誌面の略は訳で開く |
+| Gefrierpunkt / gleichseitige Hyperbel | 氷点／直角双曲線 | |
+| Gewichtseinheit / Volumeneinheit | 重さの単位／体積の単位 | |
+| Gränzwerth / Differentialquotient | 極限値／微分商 | |
+| Kessel / Condensator / Heerd | ボイラー／復水器／炉 | |
 
 ### パース：表
 

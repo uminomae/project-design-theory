@@ -144,6 +144,11 @@ Public explainer pages, written to be uniquely readable by LLMs without external
 - One-line: A full Japanese translation, paragraph by paragraph, of Hermann Helmholtz's "Über die Erhaltung der Kraft" (Berlin: G. Reimer, 1847; 72 pages, with the erratum), which Peirce calls "the sublime discovery of the conservation of energy by Helmholtz in 1847" in "Evolutionary Love" (1893) ¶20, with the German original under each paragraph.
 - Status: there is no transcription; the German original, including all formulas, was built from the OCR and checked against every page image of the Internet Archive scan of the 1966 photographic facsimile of the 1847 edition. The translation is by Claude and has not been reviewed by a human. Quote and cite the original.
 
+### クラウジウス「熱の動力について」（1850）を、日本語で読む
+- URL: https://uminomae.github.io/project-design-theory/reader/clausius-bewegende-kraft-der-warme-ja.html
+- One-line: A full Japanese translation, paragraph by paragraph, of Rudolf Clausius's "Ueber die bewegende Kraft der Wärme und die Gesetze, welche sich daraus für die Wärmelehre selbst ableiten lassen" (Annalen der Physik und Chemie 79, 1850, pp.368–397 and 500–524), the 1850 mechanical theory of heat by Clausius that Peirce mentions in "Evolutionary Love" (1893) ¶20 and ¶58, with the German original under each paragraph.
+- Status: there is no transcription; the German original, including all formulas, was built from the OCR and checked against all 55 page images of the Internet Archive scans of the two issues. Peirce does not name the paper; Claude identified it. The translation is by Claude and has not been reviewed by a human. Quote and cite the original.
+
 ## Related Projects
 
 | Project | URL | Focus |
