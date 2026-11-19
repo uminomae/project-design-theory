@@ -519,3 +519,378 @@ DOI なし。ウェブサイト「精神分析統合理論」（運営・著者 
 6. クライン（未照合（書籍）・二次資料のみ）は、償いと感謝を分ける点で新田と響くが、本文を読めていないので読み物には載せない。
 
 未照合で残したもの：Enright & HDSG 1991・Enright & Fitzgibbons（書籍）、Freedman & Enright 1996（要旨照合済のみ）、Baskin & Enright 2004・Worthington & Scherer 2004・Fisher & Exline 2010・Toussaint & Friedman 2009（有料）、Tangney ら 2007（確認画面。PMC3083636 をブラウザで開けば読める）、Klein 1937・1957（書籍）。
+
+---
+
+# 深掘り：救いと赦しは、精神の病の根をどう健全な方向へ導いてきたか（2026-11-19・二回目）
+
+- きっかけ：pjdhiro「これは深掘りしたほうがいい。claudeは表面的な気がする。キリスト教の救いと赦しは精神の病の根幹を健全な方向に導くことを指してると思う。」（案のページで問い 1〜3 を A に選んだあと）。一回目は語の重なり（σῴζω・heilen）で止まっていた（corrections 型 I に足した）。
+- 調べ方：E（新約の医者の言葉・キェルケゴール）は ldd-forgive-save が自分で読んだ。D（アウグスティヌス・ルター・ナジアンゾスのグレゴリオス・クリュソストモス・Thayer）は調査役のエージェント。ルターの鍵の文（Ficker 1908 pp.107–108「egrotus simul et sanus」「Samaritanus noster Christus … incepit sanare」）は ldd-forgive-save が同じ走査（Internet Archive・University of California・NOT_IN_COPYRIGHT）の OCR で開き直して一致を確かめた。アウグスティヌスは augustinus.it が二度目の取得に 999 を返し、開き直せていない（調査役が読んだまま）。
+
+## 深掘りの要点
+
+1. **伝統は、罪を「医者の要る病」として扱ってきた。** イエス自身が、罪人と食卓を共にしたことを咎められて「丈夫な者に医者は要らない、要るのは病む者」と答え、ルカは「心の向きを変えること（μετάνοια）へ招く」と結ぶ（Mk 2:17・Lk 5:31–32）。アウグスティヌスはキリストを医者と呼び（『告白』X.28.39「medicus es, aeger sum」）、病の根を傲慢、薬を謙遜とする（『キリスト教の教え』I.14.13）。クリュソストモスは教会を「法廷でなく病院（ἰατρεῖον）」で、そこで罪の赦しを与える、と書く。
+2. **赦しと癒しは、二つの恵みとして分けて言われてきた。** アウグスティヌス『詩編注解』102.5 は、不義に寛大になること（赦し）と、赦されたあとに残る弱り（languor）を癒すことを分け、102.6 で「望まない者は癒さない」と書く。ルターのローマ書講義は、医者が病を「死に至るものとして負わせず（non imputans）」、治すと約束して「癒し始めた」病人を、「病んでいて同時に健やか（egrotus simul et sanus）」「罪人で同時に義人」と書く。罪（悪）は負わせずに放たれ、弱りは時間をかけて癒される。pjdhiro の「赦しは悪を癒す、救いは弱いところを補う」の対は、この二層とほぼ重なる。違いは動詞で、伝統では悪は「癒す」より「負わせない・放つ」、癒すのは弱りの側（このずれは独立ページで、伝統の言い方として書く）。
+3. **キェルケゴール『死に至る病』1849 は、救いと赦しを「精神の病の根」の論として書いた。** 副題は「キリスト教的・心理学的な論述」で、述べ方は「病床での医者の話」に似ていなければならない、とする。絶望は「精神の、自己の病」で、自分の力だけで除こうとするほど深まる。健やかさの定式は「自分に関わり、自分であろうとすることにおいて、自己は自分を置いた力の中に透明に根ざす」。絶望には二つの形があり、弱さ（自分であろうとしない）と反抗（自分の力で自分であろうとする）。弱かった自分を憎み「弱さの下に身を低くして自分を取り戻す」ことを拒む段は、弱さの防衛に近い。罪の反対は徳でなく信仰で、赦しへの絶望も、弱さ（あえて信じない）と反抗（信じようとしない）に分かれる。
+4. **読み物への芯（Claude の読み）**：病の根は、自分の力で自分を保とうとすること（傲慢・反抗）と、弱かった自分を認めないこと（弱さの絶望）。導く先は、罪を負わせずに放たれること（赦し）と、弱りを隠さずに差し出して癒されていくこと（救い）。どちらも本人の向きの変わり（μετάνοια・望み）を要し、一度では終わらない（simul）。新田の不快ー防衛系／不快ー制御系、pjdhiro の「罪と赦し、恥（弱さ）と救い」と、並べて読める。
+
+## 調べ E：病の根を癒す、としての救いと赦し（新約の医者の言葉・キェルケゴール『死に至る病』）（2026-11-19・ldd-forgive-save が自分で読んだ）
+
+きっかけ：pjdhiro「これは深掘りしたほうがいい。claudeは表面的な気がする。キリスト教の救いと赦しは精神の病の根幹を健全な方向に導くことを指してると思う。」（案のページで問い 1〜3 を A に選んだあと）。調べ A は語の重なりで止まっていた。
+
+### E1 新約：イエスが自分を医者に、罪人を病む人にたとえる
+
+- 確かめ先：SBLGNT（https://github.com/LogosBible/SBLGNT ・CC BY 4.0）。照合の状態：本文照合済。
+- 鍵の文：
+  - Mk 2:17「Οὐ χρείαν ἔχουσιν οἱ ἰσχύοντες ἰατροῦ ἀλλʼ οἱ κακῶς ἔχοντες· οὐκ ἦλθον καλέσαι δικαίους ἀλλʼ ἁμαρτωλούς.」（丈夫な者に医者は要らない、要るのは病む者。私が来たのは正しい人を招くためでなく、罪人を招くため）。罪人と食卓を共にしたことを咎められた答え（2:15–16）。
+  - Lk 5:31–32 は同じ言葉を「ὑγιαίνοντες」（健やかな者）で言い、「εἰς μετάνοιαν」（心の向きを変えることへ）招く、と結ぶ。Mt 9:12–13 は「Ἔλεος θέλω καὶ οὐ θυσίαν」（私が望むのは憐れみで、いけにえではない）を挟む。
+- 何を病と見て、どこへ導くか：罪（的外れの生）を、裁く的でなく医者の要る病として扱う。導く先は、心の向きを変えること（μετάνοια）。裁きのしるし（いけにえ）でなく憐れみで。
+- pjdhiro の見方との近さ：「悪を癒す」の芯の言葉。悪（罪）は、癒されるべき病の側に置かれる。
+
+### E2 キェルケゴール『死に至る病』1849（アンチ・クリマクス名義）
+
+- 書誌：Søren Kierkegaard, *Sygdommen til Døden. En christelig psychologisk Udvikling til Opbyggelse og Opvækkelse*, 1849。Søren Kierkegaards Skrifter（SKS）Bd. 11, Søren Kierkegaard Forskningscenteret 2006。
+- 確かめ先：デンマーク王立図書館のテキストポータル https://tekster.kb.dk/text/sks-sd-txt-root.pdf （公的機関。ポータルに public domain・CC0 と明記。2026-11-19 に取って pdftotext で読んだ。頁はポータルの PDF の「n af 52 sider」）。
+- 照合の状態：本文照合済（デンマーク語の原文）。日本語訳・英訳は権利が残るので使っていない。訳は Claude。
+- 鍵の文（原文・位置）と訳：
+  - 副題「En christelig psychologisk Udvikling til Opbyggelse og Opvækkelse」（教化と覚醒のための、キリスト教的・心理学的な論述）。
+  - 序：「Alt Christeligt maa i Fremstillingen have Lighed med en Læges Foredrag ved Sygesengen」（キリスト教的なものはすべて、述べ方において、病床での医者の話に似ていなければならない）。
+  - 第一編 A（5 of 52）：「Fortvivlelse er en Sygdom i Aanden, i Selvet」（絶望は精神の、自己の病である）。
+  - 同（6 of 52）：絶望した人が「af al Magt ved sig selv og ene ved sig selv vil hæve Fortvivlelsen: saa er han endnu i Fortvivlelsen, arbeider sig … kun desto dybere」（自分の力だけで絶望を取り除こうとすると、まだ絶望の中にいて、働くほど深みに入る）。
+  - 同（6 of 52）：健やかな状態の定式「Dette er nemlig Formelen, som beskriver Selvets Tilstand, naar Fortvivlelsen ganske er udryddet: i at forholde sig til sig selv, og i at ville være sig selv grunder Selvet gjennemsigtigt i den Magt, som satte det.」（絶望がすっかり根絶されたときの自己の状態の定式：自分に関わり、自分であろうとすることにおいて、自己は、自分を置いた力の中に透明に根ざす）。
+  - 第一編 C（12 of 52）：「kun da er Selvet sundt og frit fra Fortvivlelse, naar det, just ved at have fortvivlet, sig selv gjennemsigtigt grunder i Gud」（自己が健やかで絶望から自由なのは、まさに絶望したことを通して、自分を神の中に透明に根ざすときだけ）。
+  - 第一編 B（7 of 52）：医者がほとんど誰も全く健やかではないと言うように、誰もが少しは絶望していて、内に「en Uro, en Ufred, en Disharmoni, en Angest」（落ち着かなさ・不和・不調和・不安）を抱え、「en Aandens Sygdom」（精神の病）を負って歩く。医者は本人の「健やか」の申告を鵜呑みにしない（同じ頁）。
+  - 絶望の二つの形（目次と第一編 C の β）：「Fortvivlet ikke at ville være sig selv, Svaghedens Fortvivlelse」（絶望して自分であろうとしない＝弱さの絶望）と「Fortvivlet at ville være sig selv, Trods」（絶望して自分であろうとする＝反抗）。違いは相対的で、最高の反抗にも弱さがある（1201 行あたり）。
+  - 弱さの絶望の深まり（第一編 β の前）：弱かった自分を認めず「det hader paa en Maade sig selv, det vil ikke troende ydmyge sig under sin Svaghed for saaledes at gjenvinde sig selv」（ある意味で自分を憎み、信じて自分の弱さの下に身を低くし、そうして自分を取り戻そうとしない）。その手前に「istedetfor nu at svinge rigtigt af bort fra Fortvivlelsen hen til Troen, for Gud ydmygende sig under sin Svaghed」（絶望から信仰へ正しく向きを変え、神の前で弱さの下に身を低くする代わりに）。
+  - 第二編 A（32 of 52）：「Modsætningen til Synd ikke er Dyd, men Tro」（罪の反対は徳でなく信仰）。罪は絶望（「Fortvivlelse er Synden」）。
+  - 第二編 B「Den Synd at fortvivle om Syndernes Forladelse (Forargelse)」（罪の赦しに絶望する罪＝つまずき）（44 of 52）：赦しへの絶望も弱さか反抗のどちらかで、「Svaghedens, som forarget ikke tør troe, Trodsens, som forarget ikke vil troe」（弱さは、つまずいてあえて信じない。反抗は、つまずいて信じようとしない）。ここでは向きが逆になる：罪人である自分であろうとしないのが反抗（赦しを要らないとする）、罪人のまま赦しは無いとするのが弱さ。「Gud tilbyder Forligelsen i Syndernes Forladelse」（神は罪の赦しの中で和解を差し出す）。
+- 何を病と見て、どこへ導くか：病は、自己が自分自身との関わりを誤ること（絶望）で、自分の力で治そうとするほど深まる。導く先は、自己が自分を置いた力の中に透明に根ざすこと（信仰）。キェルケゴールは、書き方そのものを病床の医者の話に擬す。
+- pjdhiro の見方との近さ（Claude の読み）：
+  - 「精神の病の根幹を健全な方向へ」に、ほぼそのまま当たる。根幹＝自己の自分への関わりの誤り、健全＝絶望が根絶された自己。
+  - 絶望の二つの形（弱さ・反抗）は、読み物の「悪と弱は防衛したいもの」と並べられる。反抗は自分の力で自分を保とうとする側、弱さは弱かった自分を認めない側。どちらも「自分だけの力で絶望を除こうとして深まる」点で、防衛に似る。ただしキェルケゴールは「防衛」の語を使わない。重ねるのはこの調べの読み。
+  - 弱さの下に身を低くして自分を取り戻す（救い）と、赦しを要らないとする反抗・赦しは無いとする弱さ（赦しへのつまずき）が、赦しと救いの両方を、病の根の癒しとして書いている。
+  - 違う点：キェルケゴールの健やかさは、神の前の単独者の信仰に立つ。新田の環のような二人の間の関係（謝罪・感謝の往復）では書かれていない。
+  - 「絶望したことを通して」健やかになる、という向きは、不安を消すものとして書かない、という stance（不安は大事な感情）と響く。
+
+## part D：キリストを医者とする伝統（Christus medicus）——罪を魂の病、赦しと救いを癒しとして読む
+
+- 日付：2026-11-19
+- 担当：調査役（Claude）。Love駆動開発の読み物の「赦しと救い」の独立ページのための下調べ。
+- 前の調べ（`pd/knowledge/research/love-driven-dev/SURVEY-forgiveness-salvation-20261119.md`）は語の重なり（σῴζω・heilen）で止まり、LSJ・Thayer は Perseus の 403 で未照合（確認画面）だった。この記録では Thayer を別の経路（Internet Archive の大学図書館の走査）で読んだ。
+- 規約：`docs/rules/sources.md` §2〜§5・§10。原典の本文を開いて読んだものだけを「本文照合済」と書く。訳は Claude の試訳（短く）。訓練の記憶で埋めたところは「未照合（記憶）」と書く。
+- 読んだ写しは手元（`$TMPDIR/pdD/`）に取り、grep で鍵の文を引き、前後の段を頭から読んだ。
+
+---
+
+### 1. アウグスティヌス（354–430）
+
+#### 書誌
+
+| 作品 | 位置 |
+|---|---|
+| 『告白』（Confessiones）第 10 巻 | X.3.4・X.28.39・X.30.42・X.36.58・X.43.69 |
+| 『キリスト教の教え』（De doctrina christiana）第 1 巻 | I.14.13（あわせて I.11.11・I.16.15・I.23.23） |
+| 説教（Sermones） | 87・88・123・137・142・175・341/A・380 |
+| 『詩編注解』（Enarrationes in Psalmos）詩編 102 | 5・6・20 |
+
+#### 確かめ先
+
+- ラテン語の本文：Nuova Biblioteca Agostiniana の **augustinus.it**（`https://www.augustinus.it/latino/`）。
+  - 上げた人：サイトの「Copyright」の頁に、文と画像は **Città Nuova Editrice と Nuova Biblioteca Agostiniana** のものとある。出版社と編集の機関の公開版（§5 の決まり 8 の「出版社の公開版」）。『告白』は索引の頁に「PL 32」（ミーニュのラテン教父全集の巻）と出る。
+  - 注意（§10 にかかわる）：同じ頁に、リンクは **トップの頁（www.augustinus.it）へだけ**許す、とある。公開ページから巻や説教の頁へ深くリンクを張るのは、このサイトの決まりに合わない。張り方は pjdhiro に確かめる。本文そのものは古代のものでパブリックドメインだが、サイトの電子テキスト（校訂を含む）には権利が主張されている。
+  - 開いた頁：`latino/confessioni/conf_10_libro.htm`、`latino/dottrina_cristiana/dottrina_cristiana_1_libro.htm`、`latino/discorsi/discorso_114_testo.htm`（説教 87）・`_115_`（88）・`_158_`（123）・`_177_`（137）・`_184_`（142）・`_226_`（175）・`_496_`（341/A）・`_549_`（380）、`latino/esposizioni_salmi/esposizione_salmo_124_testo.htm`（詩編 102）。ファイルの番号と説教の番号は違う（`latino/discorsi/tavola_discorsi.htm` で対応を引いた）。
+- 英訳：CCEL の『告白』の頁は Outler 訳（1955）だった。権利を確かめていないので使わない。この記録の訳は Claude の試訳。
+
+#### 照合の状態
+
+- 『告白』X・『キリスト教の教え』I・説教 87・88・123・137・142・175・341/A・380・『詩編注解』102：**本文照合済**（augustinus.it のラテン語本文。巻・章・節は頁に刷られた番号で書く）。
+- 説教の節の番号は augustinus.it の頁の番号（例「11. 13.」）。ほかの版と番号がずれることがある。
+
+#### 鍵の文（原文・位置）と短い訳
+
+1. 『告白』X.28.39
+   > Ecce vulnera mea non abscondo: medicus es, aeger sum; misericors es, miser sum.
+
+   ご覧ください、私は傷を隠しません。あなたは医者、私は病人。あなたは憐れみ深く、私は憐れな者。
+   （直前は「あなたで満ちていないので、私は私にとって重荷だ」。喜びと悲しみが争い、どちらが勝つか分からない、という今の自分の告白の中に置かれる。）
+
+2. 『告白』X.3.4
+   > Verumtamen tu, medice meus intime, quo fructu ista faciam, eliqua mihi.
+
+   それでも、私のいちばん内なる医者よ、何の実りのためにこれをするのか、私に明かしてください。
+   同じ節：過去の悪の告白は、読まれると心を起こし、絶望の中で「できない（Non possum）」と言って眠らせず、「あなたの恵みの甘さ」に目覚めさせる。その恵みによって
+   > potens est omnis infirmus, qui sibi per ipsam fit conscius infirmitatis suae
+
+   弱い者は誰でも強くなる。その恵みによって自分の弱さに気づく者は。
+
+3. 『告白』X.36.58（詩編 102〔103〕:3–4 を自分に当てる）
+   > qui me primitus sanas a libidine vindicandi me, ut propitius fias etiam ceteris omnibus iniquitatibus meis et sanes omnes languores meos … qui compressisti a timore tuo superbiam meam
+
+   あなたはまず、自分の仕返しをしたい欲から私を癒し、ほかのすべての不義にも寛大になり、すべての弱り（languores）を癒し……あなたへの畏れによって私の傲慢を押さえた。
+
+4. 『告白』X.43.69
+   > Multi enim et magni sunt idem languores, multi sunt et magni; sed amplior est medicina tua.
+
+   その弱りは多く、大きい。多く、大きい。しかしあなたの薬はもっと大きい。
+
+5. 『キリスト教の教え』I.14.13（見出し「Dei Sapientia in sanando homine mirabilis」は版の付けたもの）
+   > sic Sapientia Dei hominem curans seipsam exhibuit ad sanandum, ipsa medicus, ipsa medicina. Quia ergo per superbiam homo lapsus est, humilitatem adhibuit ad sanandum.
+
+   神の知恵は人を手当てするとき、癒すために自らを差し出した。自らが医者、自らが薬。人は傲慢によって落ちたので、癒すために謙遜を当てた。
+   同じ節：医者が傷を縛るとき、反対のもの（冷に温）と似たもの（丸い傷に丸い布）を当てるように、キリストの薬も「反対のものによって」（傲慢に謙遜）と「似たものによって」（女によって欺かれた者を、女から生まれて解いた）治す。
+   I.23.23：魂の健やかさ（sanitas animi）は「より上のもの、つまり変わらない神に、いちばん固く寄りすがること」。人を支配したがるのは「まったく耐えがたい傲慢」。
+
+6. 説教 123.1（題「Humilitas Christi medicina superbiae nostrae」は版の付けたもの）
+   > quod medicina tumoris hominis, humilitas est Christi. Non enim perisset homo, nisi superbia tumuisset. Initium enim, sicut Scriptura dicit, omnis peccati, superbia.
+
+   人の腫れ（tumor）の薬はキリストの謙遜である。傲慢で腫れなかったら、人は滅びなかった。聖書の言うとおり、すべての罪の始まりは傲慢だから（シラ書 10:15）。
+
+7. 説教 142.5
+   > Unde autem detumescat? Accipiat humilitatis medicamentum. Bibat contra tumorem poculum amarum, sed salubre; bibat poculum humilitatis.
+
+   どうすれば腫れが引くのか。謙遜の薬を受けよ。腫れに抗して、苦いが体によい杯を飲め。謙遜の杯を。
+   同じ説教の 28：「私たちの薬のすべてはこれ：私から学べ、私は柔和で心のへりくだった者だから」（マタイ 11:29）。
+
+8. 説教 87.11.13
+   > Aegrotat humanum genus, non morbis corporis, sed peccatis. Iacet toto orbe terrarum ab oriente usque in occidentem grandis aegrotus. Ad sanandum grandem aegrotum descendit omnipotens medicus.
+
+   人類は病んでいる。体の病でなく、罪で。東から西まで、地の全体に大きな病人が横たわる。その大きな病人を癒すために、全能の医者が降りてきた。
+
+9. 説教 341/A（「humilis medicus」）
+   > Etenim venit ille medicus humilis, invenit iacentem aegrotum, communicavit cum illo infirmitatem suam
+
+   へりくだった医者が来て、横たわる病人を見つけ、自分の弱さを病人と分かち合った。
+
+10. 説教 175.1・2（傲慢が病を見えなくする）
+    > Isti autem superbiendo, quod est peius, et aegrotabant, et sanos se esse credebant.
+
+    この人たちは傲慢によって――これがもっと悪い――病んでいて、しかも自分を健やかだと信じていた。
+    同じ説教 5.5：「医者は病人のところに来る……しかし病人がいつまでも病人でいないために来る」。
+
+11. 『詩編注解』102.5（赦しと癒しを分ける）
+    > Post remissionem peccatorum corpus infirmum geris … Languor est; sanat et omnes languores tuos. … Magni sunt, inquies: sed maior est medicus.
+
+    罪が赦されたあとも、あなたは弱い体を負っている（肉の欲が誘う。それはあなたの弱りから来る）。……それは弱り（languor）だ。彼はあなたのすべての弱りも癒す。……大きい、とあなたは言うだろう。だが医者はもっと大きい。
+    同じ節：「やさしく温めるときだけでなく、切るときも耐えよ。治療の痛み（medicinalem dolorem）に耐えよ」。
+    102.6：「Sanat omnino ille quemlibet languidum, sed non sanat invitum.」（彼はどんな弱った者も癒す。しかし望まない者は癒さない）。
+    102.20：「Quod pateris … medicina est, non poena; castigatio est, non damnatio.」（あなたが苦しむものは、罰でなく薬、断罪でなくしつけ）。
+
+#### 何を病と見て、どこへ（どう）導くか
+
+- 病：罪（peccata）。人類全体が「大きな病人」。病の根（initium）は **傲慢（superbia）**。傲慢は「腫れ（tumor）」で、腫れているので狭い門を通れず、しかも自分を健やかだと信じさせ、医者を拒ませる（説教 123・142・175）。
+- 薬：キリストの **謙遜（humilitas）**。医者が病人の床まで降り（「死ぬ肉まで、病人の床まで」説教 87.11.13）、自分が薬になる（ipsa medicus, ipsa medicina）。治療は傲慢に謙遜という「反対のもの」で行う。
+- 行き先：魂の健やかさ＝変わらない神に寄りすがること（『キリスト教の教え』I.23.23）。完全な癒しは今の生ではまだ来ず、望みの中にある（『告白』X.30.42「完全な平和まで」、『詩編注解』102.5 の「朽ちるものが朽ちないものを着るとき」）。
+- 道の順：告白（傷を隠さない・自分の病に気づく）→ 医者に身を任せる（切られても手を払わない）→ 恵みによって弱い者が強くなる。望まない者は癒されない。
+
+#### pjdhiro の見方（赦しは悪を癒す・救いは弱いところを補う）との近さと違い
+
+- **近い**：アウグスティヌスは赦しと癒しを二つに分けている。『詩編注解』102.5 で、詩編の「すべての不義に寛大になり（propitius fit）」と「すべての弱りを癒す（sanat omnes languores）」を別の恵みとして読み、**赦し（remissio peccatorum）のあとにも弱り（languor）が残り、それが別に癒される**、と言う。罪の帳消しと、残った弱さの手当て、という二層は、pjdhiro の「赦し」と「救い」の二つにかなり近い。
+- **近い**：『告白』X.3.4「その恵みによって、弱い者は誰でも強くなる（potens est omnis infirmus）」は、「弱いところを補う」とほぼ同じ向き。
+- **違い**：アウグスティヌスでは、癒し（sanare）の語は主に「弱り（languor）」の側に使われ、赦しの側は「帳消し・寛大（remissio・propitius）」の語で言う。pjdhiro の「赦しは悪を **癒す**」と並べると、癒しの語が置かれる側が逆になる。アウグスティヌスでは、悪（罪）は赦され、弱さが癒される。
+- **違い**：病の根を「傲慢（自分を健やかと信じること）」に置き、薬を「謙遜」とする。pjdhiro の見方には、根を一つに名指す線は今のところ無い。ページの芯にするかは pjdhiro の判断。
+- **違い**：癒しは本人の望み（velle）を要る（102.6）。救いは外から一方的に補われるだけではない。
+
+---
+
+### 2. ルター（1483–1546）：ローマ書講義（1515–16）
+
+#### 書誌
+
+- Johannes Ficker（編）『Anfänge reformatorischer Bibelauslegung』第 1 巻『Luthers Vorlesung über den Römerbrief 1515/1516』第 2 部「Die Scholien」、Leipzig: Dieterich'sche Verlagsbuchhandlung（Theodor Weicher）、1908。ワイマール版（WA 56、1938、同じ Ficker の編）より前の、同じ講義の自筆稿の初めての刊本。
+
+#### 確かめ先
+
+- Internet Archive `luthersvorlesun01fickgoog`（`https://archive.org/details/luthersvorlesun01fickgoog`）。Google が **カリフォルニア大学の図書館**の本を走査したもの（IA の記録：contributor「University of California」、possible-copyright-status「NOT_IN_COPYRIGHT」）。1908 年刊でパブリックドメイン。
+- 同じ本の Columbia University Libraries のマイクロフィルム版（`luthersvorlesung00luth`）もある。
+- WA 56（1938）は IA に `bwb_S0-CQK-221_56` があるが、貸し出しだけ。WA の頁は開いていない。
+
+#### 照合の状態
+
+- Ficker 1908 のスコリア：**本文照合済**（OCR の文字で読んだ。pp.56・107–108。頁は OCR に出た柱の数字と、本文の上の「108 4,7」の柱）。
+- WA 56 の頁付け：**未照合（書籍。Internet Archive の貸し出しだけ）**。WA の頁は書かない。
+
+#### 鍵の文（原文・位置）と短い訳
+
+1. ローマ 4:7 のスコリア（Ficker 1908, pp.107–108）
+   > Est enim simile sicut cum egroto, qui promittenti medico certissimam sanitatem credit … Iste enim egrotus nunquid sanus est? Immo egrotus simul et sanus. Egrotus in rei veritate, sed sanus ex certa promissione medici
+
+   病人のようなものだ。いちばん確かな健康を約束する医者を信じる病人。……この病人は健やかか。いや、病んでいると同時に健やかだ。実際には病み、医者の確かな約束によって健やか。
+   続き（p.108）：
+   > Eodem modo Samaritanus noster Christus hominem semivivum egrotum suum curandum suscepit in stabulum et incepit sanare … Nunquid ergo perfecte iustus? Non, sed simul peccator et iustus
+
+   同じように、私たちのサマリア人キリストは、半死の病人を宿に引き取って手当てし、癒し始めた。……では完全に義か。いや、罪人であり同時に義人。
+   続き：「希望においては完全に健やか、実際には罪人。しかし義の始まりを持ち、常にもっと求める」。病人が病を愛して治されたくないなら死ぬ。病人が自分を病人と思わず医者を退けるなら、それは「自分の行いで義とされ、健やかであろうとすること」。
+   直前（p.107）：罪とは「善からそれ、悪へ傾くこと（declinatio a bono et inclinatio ad malum）」で、神はこれを「数えないこと（non-imputatio）」によって赦す。この悪は行いでは癒されない。
+
+2. ローマ 3:7 のスコリア（Ficker 1908, p.56）
+   > sicut medicus volens sanare egrotum inveniat hominem, qui neget se egrotum esse et stultum proclamet medicum … Ita isti impii et superbi, cum sint egroti coram Deo, sibi ipsis sanissimi videntur.
+
+   医者が病人を癒そうとすると、自分は病気でないと言い、医者を愚かと呼ぶ人がいる……。同じく不信の者と傲慢な者は、神の前では病人なのに、自分には最も健やかに見える。
+   病人が「本当に私は病人です。あなたがほめられるように」と認めれば、医者は自分の技を示せる。
+
+#### 何を病と見て、どこへ（どう）導くか
+
+- 病：罪＝善からそれて悪へ傾く傾き（concupiscentia）。行いでは取れない。洗礼のあとも残る。
+- 導き：医者（キリスト）の約束を信じること。神は残る病を「死に至るもの」として数えない（赦し＝non-imputatio）。同時に癒しを「始めた（incepit sanare）」。完全な健やかさは望みの中にあり、今は「病み、同時に健やか」。
+- 癒しを妨げるもの：自分を健やかだと思うこと（傲慢・自分の行いで義とされようとすること）。
+
+#### pjdhiro の見方との近さと違い
+
+- **近い**：赦し（数えないこと）と癒し（始まっていて、まだ終わらない）が、一人の中で同時に働く。悪を消す前に、悪を抱えたまま受け入れられる。
+- **違い**：ルターでは、赦しは悪を「癒す」のではなく「数えない」。癒しはその上で、時間をかけて進む。pjdhiro の「赦しは悪を癒す」とは、語の当て方がアウグスティヌスと同じく逆になる。
+- **違い**：ルターは「病のまま健やかと見なされる」ことを強く言う。弱さを補うより先に、弱さが **あるまま受け入れられる**。「補う」は「癒し始める」に近いが、補い終わることはこの生では無い。
+
+---
+
+### 3. 東方の伝統
+
+#### 3-1. ナジアンゾスのグレゴリオス（329/30–390）
+
+#### 書誌
+
+- 『書簡』101（クレドニオス宛・アポリナリオス派に対して）。
+- 『講話』2（弁明。司牧の職について）16・18・21・22。
+
+#### 確かめ先
+
+- ギリシア語：ミーニュ『ギリシア教父全集』（Patrologia Graeca）第 37 巻、1857。Internet Archive `patrologiaecursu37mignuoft`（`https://archive.org/details/patrologiaecursu37mignuoft`）。**トロント大学 Robarts 図書館**の本の走査（Andrew W. Mellon Foundation の助成）、パブリックドメイン。
+- 英訳：Philip Schaff 監修 Nicene and Post-Nicene Fathers, 2nd series, vol. 7（NPNF2-07）を、CCEL（Calvin College の Christian Classics Ethereal Library）で。19 世紀の刊でパブリックドメイン。『書簡』101：`https://ccel.org/ccel/schaff/npnf207.iv.ii.iii.html`、『講話』2：`https://ccel.org/ccel/schaff/npnf207.iii.iv.html`。訳者の名と刊年は CCEL の頁で確かめられず、書かない。
+
+#### 照合の状態
+
+- 『書簡』101：**本文照合済**（PG 37 の OCR の文字で読んだ。句は欄 181 から 184 にまたがる。OCR の欄の数字が 180・184・185 と出て、欄の境を正しく言えない）。英訳は本文照合済（訳）。
+- 『講話』2：**本文照合済（訳）**（NPNF2-07 の英訳で読んだ。ギリシア語の PG 35 は開いていない）。
+
+#### 鍵の文
+
+1. 『書簡』101（PG 37, 181–184）
+   > Τὸ γὰρ ἀπρόσληπτον, ἀθεράπευτον· ὃ δὲ ἥνωται τῷ Θεῷ, τοῦτο καὶ σῴζεται.
+
+   （OCR は「Tb vào ἀπρόσληπτον, ἀθεράπευτον: ὃ δὲ ἥνωται τῷ Θεῷ,」と「τοῦτο zat σῴζεται.」。崩れた字を直した。）
+   取り上げられなかったものは、癒されない。神と一つにされたものが、救われる。
+   NPNF 訳：「For that which He has not assumed He has not healed; but that which is united to His Godhead is also saved.」
+   前後：キリストに人の知性（νοῦς）が無いと信じる者は「救われるに値しない」。アダムが半分だけ堕ちたなら、取り上げて救うのも半分でよいが、全体が堕ちたなら、全体が一つにされて全体が救われねばならない。
+   ここでは「癒す（θεραπεύω の否定 ἀθεράπευτον）」と「救う（σῴζω）」が、同じことの言い換えとして並ぶ。
+
+2. 『講話』2.16（NPNF 訳）
+   > the guiding of man, the most variable and manifold of creatures, seems to me in very deed to be the art of arts and science of sciences. Any one may recognize this, by comparing the work of the physician of souls with the treatment of the body
+
+   人を導くことは、技の中の技、知の中の知。魂の医者の仕事を体の手当てと比べれば分かる。
+
+3. 『講話』2.21（NPNF 訳）
+   > the whole of our treatment and exertion is concerned with the hidden man of the heart
+
+   私たちの手当ての全部は「心の隠れた人」（1 ペトロ 3:4）にかかわる。体の医者は表を扱い、深く隠れた原因を少ししか探らない。
+
+4. 『講話』2.22（NPNF 訳）
+   > the scope of our art is to provide the soul with wings, to rescue it from the world and give it to God, and to watch over that which is in His image … and, in short, to deify
+
+   私たちの技の目当ては、魂に翼を与え、世から救い出して神に渡し、神の像にあるものを見守り……要するに神のようにすること（θέωσις）。
+
+#### 何を病と見て、どこへ導くか
+
+- 病：人の本性の全体（体だけでなく知性・心）の傷。神が取り上げた範囲だけが癒される。
+- 導き：司牧は「魂の医者」の仕事。習い・情念・生き方・意志を診て治し、人の中の荒いものを、穏やかで神に親しいものに置き換える（2.18）。行き先は神化（θέωσις）。
+
+#### pjdhiro の見方との近さと違い
+
+- **近い**：「癒されない／救われる」が一つの文で言い換えになっていて、救いを癒しとして言う線がいちばんはっきりしている。対象は精神（νοῦς）を含む人の全体で、「精神の病の根幹を健全な方向に導く」に近い。
+- **違い**：癒しの理由は「神が人の全体を取り上げた（受肉）」という教理。赦しの語はこの文に出ない。行き先は「健全」より先の神化。
+
+#### 3-2. ヨアンネス・クリュソストモス（349 頃–407）
+
+#### 書誌
+
+- 『悔い改めについて』（De paenitentia）の講話のうち、柱に「De eleemosyna. Homil. III」と出る講話。
+
+#### 確かめ先
+
+- ミーニュ『ギリシア教父全集』第 49 巻（刊年は IA の記録に無く、確かめていない）。Internet Archive `patrologicursus15migngoog`（`https://archive.org/details/patrologicursus15migngoog`）。Google の走査、図書館名は IA の記録で「unknown library」、possible-copyright-status「NOT_IN_COPYRIGHT」。パブリックドメインの本の走査。
+
+#### 照合の状態
+
+- **本文照合済**（OCR の文字で読んだ。PG 49 の欄 297 前後。OCR の欄の数字が「295」「296」「207（297 の誤読と見る）」と出る）。ギリシア語の OCR は息の記号と字形が崩れている。講話の中の節の番号は確かめられなかった。公開に使う前に、頁の画像で欄と字を確かめたい。
+
+#### 鍵の文
+
+> ἰατρεῖον γάρ ἐστιν ἐνταῦθα, οὐ δικαστήριον, οὐκ εὐθύνας ἁμαρτημάτων ἀπαιτοῦν, ἀλλὰ συγχώρησιν ἁμαρτημάτων παρέχον
+
+（OCR は「ίατρείον γάρ έστιν ενταύθα, ού * δικαστή ριον, ούκ εύθύνας αμαρτημάτων απαιτούν, άλλα συγχώρησιν αμαρτημάτων παρέχον」。息の記号を補った。）
+ここは癒しの場（ἰατρεῖον）であって法廷ではない。罪の決算を求めるのでなく、罪の赦し（συγχώρησις）を与える。
+直前：「罪を犯したか。教会に入り、罪をぬぐえ。……二度目に罪を犯したら、二度目に悔い改めよ。……年老いて罪を犯しても、入って悔い改めよ」。
+
+#### 何を病と見て、どこへ導くか
+
+- 病：罪。教会は病院（ἰατρεῖον）で、罪人は裁かれる被告でなく、手当てを受ける病人。
+- 導き：悔い改め（μετάνοια）を何度でも。悔い改めの道は一つでなく、いくつも与えられている（施し・涙・神にだけ言う告白）。
+
+#### pjdhiro の見方との近さと違い
+
+- **近い**：赦し（συγχώρησις）を「癒しの場」の働きとして言う。「赦しは悪を癒す」にいちばん近い言い方。裁き（法廷）の像と、癒し（病院）の像を対にしている。
+- **違い**：ここでの赦しは、罪の勘定を取り立てないこと。罪人の内の何が治るのかは、この段では言っていない。
+
+#### 3-3. 東方の「罪＝病・教会＝θεραπεία」の見方の全体について
+
+- 今回本文で読めたのは上の三か所だけ。東方の伝統の全体（修道の霊性・『フィロカリア』・近代の正教の神学者が言う「治療としての救い」）は読んでいない。**未照合（原典が特定できない）**。全体の見方として公開文に書くなら、読む原典を別に選ぶ。
+
+---
+
+### 4. 新約の語：ἁμαρτία・μετάνοια（Thayer 1889）
+
+#### 書誌
+
+- Joseph Henry Thayer（訳・増補）『A Greek-English Lexicon of the New Testament, being Grimm's Wilke's Clavis Novi Testamenti』New York: American Book Co., 1889。
+
+#### 確かめ先
+
+- Internet Archive `cu31924075613939`（`https://archive.org/details/cu31924075613939`）。**コーネル大学図書館**の本の走査。1889 年刊でパブリックドメイン。
+
+#### 照合の状態
+
+- **本文照合済**（OCR の文字で読んだ。ギリシア文字は OCR で崩れ、英語の部分で読んだ。ἁμαρτάνω は p.30、μετανοέω・μετάνοια は p.405）。
+- LSJ は今回も読んでいない。前の調べのとおり未照合（確認画面）。
+
+#### 鍵の文
+
+1. ἁμαρτάνω（p.30）
+   > (acc. to a conjecture of Bttm., Lexil. i. p. 137, fr. a priv. and μείρω … prop. to be without a share in, sc. the mark); prop. to miss the mark … then to err, be mistaken; lastly to miss or wander from the path of uprightness and honor, to do or go wrong.
+
+   もとは「的を外す」（ホメロス）。次に「誤る」。最後に「正しさと誉れの道から外れる、悪を行う」。
+   ただし同じ項に二つの断り：語源は Buttmann の **推測**（conjecture）。七十人訳は、字どおり的を外す意味ではほかの語（ἐξαμαρτάνω など）を使い、ἁμαρτάνω を **罪の意味にとっておこうとした**（Zezschwitz の引用）。
+
+2. μετανοέω（p.405）
+   > to change one's mind, i. e. to repent … to change one's mind for the better, heartily to amend with abhorrence of one's past sins … Since τὸ μετανοεῖν expresses mental direction, the termini from which and to which may be specified
+
+   心を変える、つまり悔い改める。……よい方へ心を変え、過去の罪を嫌って心から改める。……μετανοεῖν は **心の向き** を言うので、どこから・どこへ（ἀπό・ἐκ／ἐπὶ τὸν θεόν）を添えられる。
+
+3. μετάνοια（p.405）
+   > a change of mind … esp. the change of mind of those who have begun to abhor their errors and misdeeds, and have determined to enter upon a better course of life, so that it embraces both a recognition of sin and sorrow for it and hearty amendment
+
+   心の変わり。とくに、自分の誤りと悪い行いを嫌い始め、よりよい生き方に入ると決めた人の心の変わり。罪を認めること・それを悲しむこと・心から改めることを含む。
+
+#### pjdhiro の見方との近さと違い
+
+- 「罪＝的を外す」は語のもとの意味として辞書にあるが、**語源は推測で、新約の時代には罪の語として固まっていた**。公開文で「罪とは本来、的を外すこと」と言い切ると、辞書の断りを落とす。言うなら「ホメロスでは的を外す意味の語」まで。
+- 「μετάνοια＝心の向きを変える」は、Thayer の「mental direction・from which and to which」で支えられる。アウグスティヌスの「寄りすがる先を変える」、グレゴリオスの「世から神へ」と同じ形（どこからどこへ）。
+
+---
+
+### 所見：独立ページの芯にできそうな順（Claude の読み）
+
+以下は Claude の読み。採るかどうかは pjdhiro が決める。
+
+1. **赦しと癒しは、伝統の中でも二つに分けて言われてきた。** アウグスティヌス『詩編注解』102.5 は、詩編の「不義に寛大になる」と「弱りを癒す」を別の恵みとして読み、赦されたあとにも弱り（languor）が残り、それが別に、時間をかけて癒される、と言う。ルターのローマ 4:7 のスコリアも、「数えないこと（赦し）」と「癒し始めたこと（癒し）」を並べる。pjdhiro の「赦し」と「救い（弱いところを補う）」の二つは、この二層とかなり重なる。ページの芯にいちばん使える。
+   - ただし語の当て方の違いを書く必要がある。伝統では **罪（悪）は赦され、弱さが癒される**。pjdhiro の「赦しは悪を **癒す**」と並べると、「癒す」の置き場所がずれる。クリュソストモスの「ここは法廷でなく病院、赦しを与える」は、赦しそのものを癒しの場の働きとする言い方で、pjdhiro の言い方にいちばん近い。このずれをどう書くかは pjdhiro に確かめたい。
+2. **医者は病人の床まで降りてくる。治すのは「反対のもの」で。** 病の根を傲慢（自分を健やかと信じること）に置き、薬を謙遜とする（『キリスト教の教え』I.14.13、説教 123.1・142.5・175）。ルターも「自分を病人と思わず医者を退ける」ことを癒しの妨げとする（p.56・p.108）。「病の根幹を健全な方向に導く」の「根幹」を、伝統は「傲慢」と名指してきた。
+3. **癒しの始まりは、傷を隠さないこと。** 『告白』X.28.39「medicus es, aeger sum」、X.3.4「自分の弱さに気づく者は、恵みによって強くなる」。ルターの病人の「本当に私は病人です」。弱いところを補うには、まず弱いところを見せる、という順。Love駆動開発の読み物の流れ（違和感・欠けを認める）と結べるかもしれない。
+4. **癒しは今の生では終わらない（「病みながら健やか」）。** ルターの simul、アウグスティヌスの「完全な平和まで」。救いを「完了」でなく「始まって続くもの」として書ける。
+5. **救いは癒しの言い換え、対象は精神を含む人の全体。** グレゴリオス『書簡』101「取り上げられなかったものは癒されない」。『講話』2 の「魂の医者」「心の隠れた人」。pjdhiro の「精神的なこと」にいちばん直に当たる。ただし根拠は受肉の教理で、教理ごと帰属させて書く。
+6. 語義（Thayer）は補いに留める。μετάνοια の「心の向き（どこから・どこへ）」は使えるが、「罪＝的外れ」は語源が推測であることを添える。
+
+### 残したこと
+
+- WA 56 の頁付け（ローマ 4:7 のスコリアの WA の頁）：未照合（書籍。Internet Archive の貸し出しだけ）。Ficker 1908 の頁で書く。
+- クリュソストモスの講話の節の番号と欄：OCR が崩れていて、頁の画像での確かめが残る。
+- グレゴリオス『講話』2 のギリシア語（PG 35）：開いていない。
+- augustinus.it は深いリンクを禁じている。公開ページから張る先（トップの頁にするか、Internet Archive のミーニュ PL 32 などの走査にするか）は、pjdhiro に確かめる。
+- 東方の伝統の全体像：原典を選んでいない。
