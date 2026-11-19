@@ -22,6 +22,7 @@
 | `stages-screener/` | 自我発達ステージ簡易スクリーナー（STAGES の定義を借りた 16問×5択・pd#131）。README が正本 |
 | `psychological-safety/` | 「心理的安全性とは」（pd#151）。調べの一巡目＝`SURVEY-00-first-pass.md`（原典照合の状態と主張の段の印つき） |
 | `anxiety/` | 「不安とは」（#135）。正本 `READER-anxiety.md`、新田信也の不安の定義の照合の記録は `README.md` |
+| `forgiveness-salvation/` | 「赦しと救いとは」（付箋帳 i20261118234114cox）。正本 `READER-forgiveness-salvation.md`、照合の状態と張り先の決めは `README.md`。調べの記録は `love-driven-dev/SURVEY-forgiveness-salvation-20261119.md` |
 | `anshin/` | 「安心とは」。正本 `READER-anshin.md`、安心の語が指してきたものの照合の記録は `SURVEY-01-what-anshin-points-to.md` |
 | `peirce-love-abduction/` | 「パースの創造的な愛と、アブダクション」。正本 `READER-peirce-love-abduction.md`、pjdhiro の発言の記録・読んだ原典と照合の状態・残したことは `README.md` |
 | `creative-thinking/` | 「創造的思考とは」。正本 `READER-creative-thinking.md`、pjdhiro の発言の記録・読んだ原典と照合の状態・残したことは `README.md` |

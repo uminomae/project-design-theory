@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/forgiveness-salvation.html を直接編集しないでください。
+  正本:   knowledge/research/forgiveness-salvation/READER-forgiveness-salvation.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「赦しと救いとは」のページです。赦しと救いとは何かを、もともとそれを主題にしてきた伝統から見る。キリスト教の伝統は、罪を医者の要る病として扱い、赦し（罪を負わせずに放つこと）と癒し（赦されたあとに残る弱りを、時間をかけて癒すこと）を二つの層で書いてきた。新約の医者の言葉、アウグスティヌス（医者キリスト・傲慢と謙遜・『詩編注解』102 の赦しと弱りの癒し）、ルター（病んでいると同時に健やか）、キェルケゴール『死に至る病』（精神の病としての絶望・弱さと反抗・赦しへのつまずき）を原文で読み、パーリ経典とマイモニデスの謝罪と赦し、『歎異抄』の報恩謝徳、赦しの心理学（罪悪感と恥）、新田信也の許しの環と救いの環を並べる。pjdhiro の「罪と赦し、恥（弱さ）と救い」と見比べる。
+  伝統と研究の説明は Claude が原典から書いた要約で、ラテン語・ギリシア語・デンマーク語・パーリ語・ヘブライ語の訳は Claude。載せた出典（SBLGNT・Pfeifer の語源辞典・Thayer 1889・アウグスティヌスのミーニュ版 1841・Ficker 1908 のルター・キェルケゴールの SKS・SuttaCentral・Sefaria のマイモニデス・SAT の歎異抄・Enright 2025・Wade ら 2014・Fehr ら 2010・McCullough ら 1997・Hall & Fincham 2005・Worthington 2020・新田信也の著者のサイト）は、どれも本文で照合し、各章の「出典：」行に頁や節を添えている。「と読めます」「Claude の読み」の文は Claude の読み。
+  pjdhiro 本人の言葉は「pjdhiro の見方：」で引用。「赦しは悪を癒す」は pjdhiro の読みで、伝統の言い方では、悪（罪）は放たれ、癒されるのは弱りの側。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>赦しと救いとは | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/forgiveness-salvation.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="赦しと救いとは何かを、もともとそれを主題にしてきた伝統から見る。キリスト教の伝統は、罪を医者の要る病として扱い、赦し（罪を負わせずに放つこと）と癒し（赦されたあとに残る弱りを、時間をかけて癒すこと）を二つの層で書いてきた。新約の医者の言葉、アウグスティヌス（医者キリスト・傲慢と謙遜・『詩編注解』102 の赦しと弱りの癒し）、ルター（病んでいると同時に健やか）、キェルケゴール『死に至る病』（精神の病としての絶望・弱さと反抗・赦しへのつまずき）を原文で読み、パーリ経典とマイモニデスの謝罪と赦し、『歎異抄』の報恩謝徳、赦しの心理学（罪悪感と恥）、新田信也の許しの環と救いの環を並べる。pjdhiro の「罪と赦し、恥（弱さ）と救い」と見比べる。">
+    <meta property="og:title" content="赦しと救いとは">
+    <meta property="og:description" content="赦しと救いとは何かを、もともとそれを主題にしてきた伝統から見る。キリスト教の伝統は、罪を医者の要る病として扱い、赦し（罪を負わせずに放つこと）と癒し（赦されたあとに残る弱りを、時間をかけて癒すこと）を二つの層で書いてきた。新約の医者の言葉、アウグスティヌス（医者キリスト・傲慢と謙遜・『詩編注解』102 の赦しと弱りの癒し）、ルター（病んでいると同時に健やか）、キェルケゴール『死に至る病』（精神の病としての絶望・弱さと反抗・赦しへのつまずき）を原文で読み、パーリ経典とマイモニデスの謝罪と赦し、『歎異抄』の報恩謝徳、赦しの心理学（罪悪感と恥）、新田信也の許しの環と救いの環を並べる。pjdhiro の「罪と赦し、恥（弱さ）と救い」と見比べる。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/forgiveness-salvation.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="赦しと救いとは">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-19">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "赦しと救いとは",
+          "description": "赦しと救いとは何かを、もともとそれを主題にしてきた伝統から見る。キリスト教の伝統は、罪を医者の要る病として扱い、赦し（罪を負わせずに放つこと）と癒し（赦されたあとに残る弱りを、時間をかけて癒すこと）を二つの層で書いてきた。新約の医者の言葉、アウグスティヌス（医者キリスト・傲慢と謙遜・『詩編注解』102 の赦しと弱りの癒し）、ルター（病んでいると同時に健やか）、キェルケゴール『死に至る病』（精神の病としての絶望・弱さと反抗・赦しへのつまずき）を原文で読み、パーリ経典とマイモニデスの謝罪と赦し、『歎異抄』の報恩謝徳、赦しの心理学（罪悪感と恥）、新田信也の許しの環と救いの環を並べる。pjdhiro の「罪と赦し、恥（弱さ）と救い」と見比べる。",
+          "keywords": "赦し, 救い, 癒し, 罪, 恥, 弱さ, 医者キリスト, アウグスティヌス, ルター, キェルケゴール, 死に至る病, 絶望, 謝罪, 感謝, 歎異抄, マイモニデス, 新田信也, 許しの環, 救いの環, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/forgiveness-salvation.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/forgiveness-salvation.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-19",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "赦し"}, {"@type": "Thing", "name": "救い"}, {"@type": "Thing", "name": "癒し"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「赦しと救いとは」のページです（工事中）。赦しと救いとは何かを、もともとそれを主題にしてきた伝統から見る。キリスト教の伝統は、罪を医者の要る病として扱い、赦し（罪を負わせずに放つこと）と癒し（赦されたあとに残る弱りを、時間をかけて癒すこと）を二つの層で書いてきた。新約の医者の言葉、アウグスティヌス（医者キリスト・傲慢と謙遜・『詩編注解』102 の赦しと弱りの癒し）、ルター（病んでいると同時に健やか）、キェルケゴール『死に至る病』（精神の病としての絶望・弱さと反抗・赦しへのつまずき）を原文で読み、パーリ経典とマイモニデスの謝罪と赦し、『歎異抄』の報恩謝徳、赦しの心理学（罪悪感と恥）、新田信也の許しの環と救いの環を並べる。pjdhiro の「罪と赦し、恥（弱さ）と救い」と見比べる。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>赦しと救いとは</h1>
+                <p class="reader-subtitle">罪と赦し、恥（弱さ）と救い</p>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/forgiveness-salvation/READER-forgiveness-salvation.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="anxiety.html">不安とは</a> ・
+                <a href="defense-mechanisms.html">心理的防衛機制とは</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
