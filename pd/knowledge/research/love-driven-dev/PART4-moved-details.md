@@ -70,7 +70,7 @@ Love駆動開発の読み物の第四部の流れを組み直したとき（2026
 
 <!--REF:心理学-->
 
-出典：Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99–110](https://archive.org/details/ijp-27-1946-1-2)（本文照合済。良い乳房と悪い乳房、愛と憎しみの分かれ目 p.99、分析から推し量った仮説だという断り p.99、満たされているときと満たされないとき・空想の中で分ける・良い面を大きくして迫害の恐れから守る p.101、理想化された対象へ逃げ込む p.103。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/ijp-27-1946-1-2)）。
+出典：Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99–110](https://archive.org/details/ijp-27-1946-3-4)（本文照合済。良い乳房と悪い乳房、愛と憎しみの分かれ目 p.99、分析から推し量った仮説だという断り p.99、満たされているときと満たされないとき・空想の中で分ける・良い面を大きくして迫害の恐れから守る p.101、理想化された対象へ逃げ込む p.103。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/ijp-27-1946-3-4)）。
 
 </details>
 
@@ -141,7 +141,7 @@ pjdhiro は、期待外れになるかどうかは能力と心理防衛の強さ
 
 <!--REF:心理学-->
 
-出典：[Vaillant (2011)](https://doi.org/10.31887/DCNS.2011.13.2/gvaillant) "Involuntary coping mechanisms: a psychodynamic perspective", *Dialogues in Clinical Neuroscience* 13(3):366（本文照合済。[PMC3182012](https://pmc.ncbi.nlm.nih.gov/articles/PMC3182012/) の全文。不随意の対処・熱のたとえ・孫の例・フロイト 1894 年は冒頭の節「What are involuntary coping mechanisms?」、六つの性質・四つの水準・三つの道・成人発達研究は「Classification of defenses」の節。pp.366–370）／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99（](https://archive.org/details/ijp-27-1946-1-2)本文照合済。早い時期の防衛に理想化と否認を数える箇所は p.99、分裂・理想化・否認のつながりは pp.101–102、内なる理想化された対象への逃げ込みは p.103、不安が弱まると理想化が減る箇所は p.105。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/ijp-27-1946-1-2)）／A. Freud (1936) *Das Ich und die Abwehrmechanismen*、英訳 Baines (1937) [*The Ego and the Mechanisms of Defence*](https://archive.org/details/a-freud-1937-ego)（本文照合済（訳）。Baines の英訳で読んだ。三つの不安と自我を守る目的は pp.73–74、第 6 章「空想の中の否認」pp.73–88、第 7 章「言葉と行いによる否認」pp.89–99。写しは、クライン 1946 年と同じ、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/a-freud-1937-ego)）。
+出典：[Vaillant (2011)](https://doi.org/10.31887/DCNS.2011.13.2/gvaillant) "Involuntary coping mechanisms: a psychodynamic perspective", *Dialogues in Clinical Neuroscience* 13(3):366（本文照合済。[PMC3182012](https://pmc.ncbi.nlm.nih.gov/articles/PMC3182012/) の全文。不随意の対処・熱のたとえ・孫の例・フロイト 1894 年は冒頭の節「What are involuntary coping mechanisms?」、六つの性質・四つの水準・三つの道・成人発達研究は「Classification of defenses」の節。pp.366–370）／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99（](https://archive.org/details/ijp-27-1946-3-4)本文照合済。早い時期の防衛に理想化と否認を数える箇所は p.99、分裂・理想化・否認のつながりは pp.101–102、内なる理想化された対象への逃げ込みは p.103、不安が弱まると理想化が減る箇所は p.105。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/ijp-27-1946-3-4)）／A. Freud (1936) *Das Ich und die Abwehrmechanismen*、英訳 Baines (1937) [*The Ego and the Mechanisms of Defence*](https://archive.org/details/a-freud-1937-ego)（本文照合済（訳）。Baines の英訳で読んだ。三つの不安と自我を守る目的は pp.73–74、第 6 章「空想の中の否認」pp.73–88、第 7 章「言葉と行いによる否認」pp.89–99。写しは、クライン 1946 年と同じ、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/a-freud-1937-ego)）。
 
 </details>
 
@@ -184,7 +184,7 @@ pjdhiro は、期待外れになるかどうかは能力と心理防衛の強さ
 
 <!--REF:心理学-->
 
-出典：期待と信頼の軸＝「意識とは」の作業ノート「[信頼とは何か — 軸による多元的記述](https://github.com/uminomae/project-design-theory/blob/main/as/knowledge/concepts/CN-006_trust-analysis-axes.md)」／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99（](https://archive.org/details/ijp-27-1946-1-2)本文照合済。早い時期の防衛に理想化を数える箇所は p.99、良い面を大きくして迫害の恐れから守る箇所は p.101。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/ijp-27-1946-1-2)）／[Vaillant (2011)](https://doi.org/10.31887/DCNS.2011.13.2/gvaillant) "Involuntary coping mechanisms: a psychodynamic perspective", *Dialogues in Clinical Neuroscience* 13(3):366（本文照合済。PMC3182012 の全文。空想を未熟な防衛に数える箇所は、冒頭の節「What are involuntary coping mechanisms?」と「Classification of defenses」の節）。
+出典：期待と信頼の軸＝「意識とは」の作業ノート「[信頼とは何か — 軸による多元的記述](https://github.com/uminomae/project-design-theory/blob/main/as/knowledge/concepts/CN-006_trust-analysis-axes.md)」／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99（](https://archive.org/details/ijp-27-1946-3-4)本文照合済。早い時期の防衛に理想化を数える箇所は p.99、良い面を大きくして迫害の恐れから守る箇所は p.101。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/ijp-27-1946-3-4)）／[Vaillant (2011)](https://doi.org/10.31887/DCNS.2011.13.2/gvaillant) "Involuntary coping mechanisms: a psychodynamic perspective", *Dialogues in Clinical Neuroscience* 13(3):366（本文照合済。PMC3182012 の全文。空想を未熟な防衛に数える箇所は、冒頭の節「What are involuntary coping mechanisms?」と「Classification of defenses」の節）。
 
 </details>
 
@@ -238,7 +238,7 @@ pjdhiro のページは、創造の段階に、ゆれと対立を置き、衝突
 
 <!--REF:心理学-->
 
-出典：pjdhiro「[対話：創造とは](https://uminomae.github.io/pjdhiro/dialogueCreation/)」（「特に注意したい現象」の「波」の項）／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99–110](https://archive.org/details/ijp-27-1946-1-2)（本文照合済。良い対象を理想化する傾向と、内なる理想化された対象への逃げ込みは p.103、愛する面と憎む面が離れていないと感じられること・失う恐れ・罪の感じ・喪に近い状態・償いの動き・分ける動きが形を変えて残り、不安の場面がくり返し経験されること・不安が弱まると理想化も恐ろしさも少なくなることは p.105、分ける機制と防衛が正常な発達の一部で、のちの病の土台にもなることは p.109。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/ijp-27-1946-1-2)）／良い結果だけ・良いも悪いもの軸＝「意識とは」の作業ノート「[信頼とは何か — 軸による多元的記述](https://github.com/uminomae/project-design-theory/blob/main/as/knowledge/concepts/CN-006_trust-analysis-axes.md)」。
+出典：pjdhiro「[対話：創造とは](https://uminomae.github.io/pjdhiro/dialogueCreation/)」（「特に注意したい現象」の「波」の項）／Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99–110](https://archive.org/details/ijp-27-1946-3-4)（本文照合済。良い対象を理想化する傾向と、内なる理想化された対象への逃げ込みは p.103、愛する面と憎む面が離れていないと感じられること・失う恐れ・罪の感じ・喪に近い状態・償いの動き・分ける動きが形を変えて残り、不安の場面がくり返し経験されること・不安が弱まると理想化も恐ろしさも少なくなることは p.105、分ける機制と防衛が正常な発達の一部で、のちの病の土台にもなることは p.109。写しは、[Internet Archive にある国際精神分析大学ベルリンのコレクション](https://archive.org/details/ijp-27-1946-3-4)）／良い結果だけ・良いも悪いもの軸＝「意識とは」の作業ノート「[信頼とは何か — 軸による多元的記述](https://github.com/uminomae/project-design-theory/blob/main/as/knowledge/concepts/CN-006_trust-analysis-axes.md)」。
 
 </details>
 

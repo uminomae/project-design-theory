@@ -43,12 +43,12 @@
 | 611 | Jung (1917) Die Psychologie der unbewußten Prozesse、英訳 Hecht | 写し・頁：https://www.gutenberg.org/ebooks/48225 |
 | 641 | Freud (1912) "Zur Dynamik der Übertragung", Zentralblatt für | 写し・頁：https://archive.org/details/zb219124 |
 | 641 | Freud (1915) "Bemerkungen über die Übertragungsliebe", Inter | 写し・頁：https://archive.org/details/z319151 |
-| 653 | Klein (1946) "Notes on some schizoid mechanisms", Internatio | 写し・頁：https://archive.org/details/ijp-27-1946-1-2 |
+| 653 | Klein (1946) "Notes on some schizoid mechanisms", Internatio | 写し・頁：https://archive.org/details/ijp-27-1946-3-4 |
 | 669 | Jung (1917) "The Psychology of the Unconscious Processes"（Do | 写し・頁：https://archive.org/details/CollectedPapersOnAnalyticalPsychology |
 | 669 | Jung (1919) "Instinct and the Unconscious", British Journal  | DOI：https://doi.org/10.1111/j.2044-8295.1919.tb00003.x |
 | 703 | 章の頭の、性格についての pjdhiro の見方＝pjdhiro「用語: その他」の「性格」の項（uminomae.gi | 写し・頁：https://uminomae.github.io/pjdhiro/word-other/ |
 | 731 | Vaillant (2011) "Involuntary coping mechanisms: a psychodyna | DOI：https://doi.org/10.31887/DCNS.2011.13.2/gvaillant<br>写し・頁：https://pmc.ncbi.nlm.nih.gov/articles/PMC3182012/ |
-| 731 | Klein (1946) "Notes on some schizoid mechanisms", Internatio | 写し・頁：https://archive.org/details/ijp-27-1946-1-2 |
+| 731 | Klein (1946) "Notes on some schizoid mechanisms", Internatio | 写し・頁：https://archive.org/details/ijp-27-1946-3-4 |
 | 731 | A. Freud (1936) Das Ich und die Abwehrmechanismen、英訳 Baines  | 写し・頁：https://archive.org/details/a-freud-1937-ego |
 | 798 | O'Fallon (2020) "States and STAGES: Waking up Developmentall | 写し・頁：https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf |
 | 798 | Keats (1817) George と Tom 宛の書簡、1817 年 12 月 22 日付、Colvin 編 Le | 写し・頁：https://www.gutenberg.org/ebooks/35698 |
@@ -58,12 +58,12 @@
 | 894 | Barrett, Gross, Christensen & Benvenuto (2001) "Knowing what | DOI：https://doi.org/10.1080/02699930143000239<br>写し・頁：https://web.archive.org/web/20110903095938/http://www.affective-science.org/pubs/2001/01MaprelationDiffReg.pdf |
 | 928 | pjdhiro「対話: 受容について」（uminomae.github.io/pjdhiro/dialogue-acce | 写し・頁：https://uminomae.github.io/pjdhiro/dialogue-acceptance/ |
 | 940 | 期待と信頼の軸＝「意識とは」の作業ノート「信頼とは何か — 軸による多元的記述」 | 写し・頁：https://github.com/uminomae/project-design-theory/blob/main/as/knowledge/concepts/CN-006_trust-analysis-axes.md |
-| 940 | Klein (1946) "Notes on some schizoid mechanisms", Internatio | 写し・頁：https://archive.org/details/ijp-27-1946-1-2 |
+| 940 | Klein (1946) "Notes on some schizoid mechanisms", Internatio | 写し・頁：https://archive.org/details/ijp-27-1946-3-4 |
 | 940 | Vaillant (2011) "Involuntary coping mechanisms: a psychodyna | DOI：https://doi.org/10.31887/DCNS.2011.13.2/gvaillant |
 | 952 | 新田信也のウェブサイト「精神分析統合理論」の頁「価値観を生み出す精神力動」（期待〔当て〕と依存型病的同一化。節「信仰の価 | 写し・頁：https://www.seishin-bunseki.jp/category/2122026.html<br>写し・頁：https://www.seishin-bunseki.jp/category/2103476.html<br>写し・頁：https://www.seishin-bunseki.jp/category/2114846.html<br>写し・頁：https://www.seishin-bunseki.jp/category/2102846.html<br>写し・頁：https://www.seishin-bunseki.jp/category/1201054.html |
 | 978 | Freud (1927) Die Zukunft einer Illusion, Internationaler Psy | 写し・頁：https://archive.org/details/Freud_1927_Die_Zukunft_einer_Illusion_k |
 | 1014 | pjdhiro「対話：創造とは」（「特に注意したい現象」の「波」の項） | 写し・頁：https://uminomae.github.io/pjdhiro/dialogueCreation/ |
-| 1014 | Klein (1946) "Notes on some schizoid mechanisms", Internatio | 写し・頁：https://archive.org/details/ijp-27-1946-1-2 |
+| 1014 | Klein (1946) "Notes on some schizoid mechanisms", Internatio | 写し・頁：https://archive.org/details/ijp-27-1946-3-4 |
 | 1014 | 良い結果だけ・良いも悪いもの軸＝「意識とは」の作業ノート「信頼とは何か — 軸による多元的記述」。 | 写し・頁：https://github.com/uminomae/project-design-theory/blob/main/as/knowledge/concepts/CN-006_trust-analysis-axes.md |
 | 1046 | Winnicott (1960) "The theory of the parent-infant relationsh | 写し・頁：https://archive.org/details/dli.scoerat.1853theinternationaljournalofpsychoanalysisvolxll1960 |
 | 1062 | Maslow (1943) "A theory of human motivation", Psychological  | DOI：https://doi.org/10.1037/h0054346<br>写し・頁：http://psychclassics.yorku.ca/Maslow/motivation.htm |
