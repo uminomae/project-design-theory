@@ -24,6 +24,7 @@
 | 今までの repo を前提にした参照 | 今までの四つの repo の URL・名前の決め打ち・兄弟の並びを前提にしたスクリプト | 新しく書いた（`scripts/check-old-repo-refs.mjs`） |
 | pd：repo をまたぐ URL | 公開の URL の形 | project-design の `ci.yml` |
 | pd：読み物の内部アンカー | 読み物の中の「§2」などのページ内リンクの行き先。ほかの読み物の章へ飛ぶリンク（`<ほかの読み物>.html#id`）の行き先も見る（2026-11-10・#111。Love駆動開発の章題が変わって 5 本が切れていた） | project-design。ページをまたぐ分は新しく足した |
+| 規約：毎回読む芯が正本と一致 | `docs/rules/stance-core.md`・`corrections-core.md` が、正本の `stance.md`・`corrections.md` から作り直したものと同じか。正本だけを直して芯を作り直し忘れると落ちる | 新しく書いた（`scripts/rules-core.py --check`・2026-11-19・付箋帳 i20261118130216b6l） |
 | pd：読み物の版番号 | Love駆動開発と心理的安全性とはの題の隣の版（1.xxx）が、正本とテンプレートに触れた commit の数と合うか（`pd/scripts/reader_version.py`）。1.500 に届いたら、2.x にするかを pjdhiro に諮る知らせを出す（2026-11-13） | 新しく足した |
 | pd：引用カードの前の文脈 | 対話の形の読み物（いまは Love駆動開発の正本 md）で、pjdhiro の発言の引用カードの直前（空行を除く）が、見出し・畳みの題・組む道具の印（`<!--OPEN-->` など）になっていない。発言の前に、なぜその発言が出たのかが分かる文を置く（`docs/rules/writing.md` §5 の 10）。直前に文があっても唐突なことはあるので、通して読む確かめは残る | 新しく書いた（`scripts/check-quote-context.mjs`・型 R の繰り返し・2026-11-10・#96） |
 | pd：wiki の孤立ページ・不在の出典・旧用語 | 公開する wiki の孤立ページ・出典のパス・使わなくなった用語。`--check` で報告を書き換えずに見る | project-design の `wiki-lint` |
@@ -83,7 +84,7 @@ const { run } = await import('../src/page-check.js'); await run();
 ### 自動で動くもの
 
 - `.claude/hooks/content-compile.sh`：公開ページが読む Markdown を書き換えたら、wiki のリンク入りの版を作り直す。pd・cs・ks・as の正本を直したら、それを出典にする wiki のページを Claude に知らせる（`pd/scripts/wiki-stale-check.mjs`・2026-11-10）。知らされたページは、同じ作業で `.claude/skills/wiki-compile/SKILL.md` に沿って作り直す。hook は本体の checkout（`~/dev/pd/project-design-theory`）の版が動く。worktree で hook を直したときは、develop に取り込んでから効く（2026-11-10 に確かめた）。
-- wiki の作り直しの指令：区切るとき、CLAUDE.md「セッションの終わりに」の手順 5 で `node pd/scripts/wiki-stale-check.mjs --session-end --log <記録の名前>` を走らせ（並べた分に、本体の `.cache/wiki-order.json` で出した印を付け、24 時間のうちにほかのセッションが同じものを出さない。#130）、古いページと、出典ノートがあるのに出典ページが無い原典があれば、司令塔として別のセッションに作り直しを出す（`.claude/skills/wiki-compile/SKILL.md` の雛形）。古いページは、出典が `compiled` 日より後に変わったものと、同じ日にページの最後の commit より後に変わったもの（2026-11-11 から。`compiled` が日付だけで、作り直したあとの同じ日の直しを拾えなかった）。同じ一覧は `.claude/hooks/wiki-session-start.sh`（SessionStart）と `scripts/session-digest.sh` の終わりにも出て、「区切るときに出す」と添える（pjdhiro 2026-11-10）。
+- wiki の作り直しの指令：区切るとき、`docs/rules/session.md`「セッションの終わりに」の手順 5 で `node pd/scripts/wiki-stale-check.mjs --session-end --log <記録の名前>` を走らせ（並べた分に、本体の `.cache/wiki-order.json` で出した印を付け、24 時間のうちにほかのセッションが同じものを出さない。#130）、古いページと、出典ノートがあるのに出典ページが無い原典があれば、司令塔として別のセッションに作り直しを出す（`.claude/skills/wiki-compile/SKILL.md` の雛形）。古いページは、出典が `compiled` 日より後に変わったものと、同じ日にページの最後の commit より後に変わったもの（2026-11-11 から。`compiled` が日付だけで、作り直したあとの同じ日の直しを拾えなかった）。同じ一覧は `.claude/hooks/wiki-session-start.sh`（SessionStart）と `scripts/session-digest.sh` の終わりにも出て、「区切るときに出す」と添える（pjdhiro 2026-11-10）。
 - launchd（`com.uminomae.project-design-theory`）：本体の checkout を `scripts/serve.sh` で 3001 に常駐させる。fswatch があれば、`pd/wiki/` が変わると wiki を組み直す（今までの `wiki-build.sh` の役目）。
 - GitHub Actions：`check.yml`（上の検査）と `pages.yml`（公開）。
 - 定期実行（launchd の定期・routine・scheduled task）は置いていない。

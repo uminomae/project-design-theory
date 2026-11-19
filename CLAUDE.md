@@ -34,11 +34,13 @@
 
 ## 対話・執筆の前に読む
 
-毎回読むのは最初の行の二つ。残りは、その作業をするときに読む。毎回読む分を小さく保つため（pjdhiro 2026-11-08）。
+毎回読むのは最初の行の二つの「芯」。残りは、その作業をするときに読む。毎回読む分を小さく保つため（pjdhiro 2026-11-08・2026-11-19）。
+
+**ただし、読みに行くのをためらわない。** 芯は入口で、判断の材料は正本（`stance.md`・`corrections.md`）にある。少しでも関わりそうな節・型は正本を開く。判断を仰ぐ前・案を出す前・公開文を書く前・pjdhiro の言葉の読みに迷ったときは、関わる節を必ず開く。トークンの節約を、判断の精度より先にしない（pjdhiro 2026-11-19「現在のclaudeの判断は私に近づいているので気に入っています。その精度が落ちないよう、読みにいく場合のハードルは下げて、トークン節約だけを優先することのないようにして」）。
 
 | いつ | 読むもの |
 |---|---|
-| 毎回 | `docs/rules/stance.md`：pjdhiro の見方と判断の仕方。迷ったら、pjdhiro ならどう判断するかをここで確かめる。`docs/rules/corrections.md`：Claude が繰り返す誤りの型。自分の案がどの型に当たるかを見る |
+| 毎回 | `docs/rules/stance-core.md`：pjdhiro の見方と判断の仕方の芯。正本は `docs/rules/stance.md`（項目の補い・pjdhiro の言葉・何への答えか）。迷ったら、pjdhiro ならどう判断するかを正本の節で確かめる。`docs/rules/corrections-core.md`：Claude が繰り返す誤りの型の芯。自分の案がどの型に当たるかを見て、当たりそうな型は正本 `docs/rules/corrections.md` の「書く前の確認」を読む。芯は `scripts/rules-core.py` が正本から作り、手で直さない |
 | 公開文を書く・直す | `docs/rules/writing.md`：公開文の書き方。`docs/rules/corrections-examples.md`：当たりそうな型の行だけ。`docs/rules/corrections-rg.md`：型 R・G の確認のうち、当たる節だけ（pjdhiro に手作業を頼むときは R5）。main に出す前に念入りに見るときは `docs/rules/review.md`：レビューの手順 |
 | 公開ページを作る・直す（commit の前と main に送る前。必ず） | `.claude/skills/public-page-review/SKILL.md`：これまで公開ページで起きた誤りから溜めた点検の表。§1・§2 は毎回、残りは触ったものの節。直しや指摘があったら、同じ作業で表に足す。通したら `bash scripts/public-page-review.sh --done`（無いと pre-commit が止める）（pjdhiro 2026-11-10） |
 | 手を動かす作業（git の取り込み・push、生成・検査、画面、調べと記録）を始める | `docs/rules/corrections-k.md`：型 K の確認のうち、K0 と、その作業の節だけ。worktree で始めるときは、取り込みを回す前に K1 を読む |
@@ -48,39 +50,23 @@
 | 特定のページ・Issue を触る | `docs/rules/decisions.md`：そのページ・Issue の行だけ（Love駆動開発の読み物は、終わりの「読み物の組み立て」の節も） |
 | 司令塔のセッションの始め・「付箋帳」「違和感帳」と言われた | `docs/tools/fusen-cho.md`：手元の指示を付箋のように置き、Issue を週で見る帳面（アーティファクト）の読み方・返事の書き方・しまい方。2026-11-17 に違和感帳（`docs/tools/iwakan-cho.md`・読むだけで残す）から移った |
 
-新しい指摘を受けたら、同じセッションで stance.md か corrections.md に足す。足すときは、まず既にある行に溶かせるかを見る。ページや Issue ごとの判定は decisions.md に、見方として一般化できる一行だけを stance.md に書く。代表例（corrections-examples.md）は型ごとに一、二件に保ち、足すなら入れ替える。
+新しい指摘を受けたら、同じセッションで stance.md か corrections.md（正本）に足し、`python3 -I scripts/rules-core.py` で芯を作り直す（食い違いは check.sh が止める）。足すときは、まず既にある行に溶かせるかを見る。ページや Issue ごとの判定は decisions.md に、見方として一般化できる一行だけを stance.md に書く。代表例（corrections-examples.md）は型ごとに一、二件に保ち、足すなら入れ替える。
 
 ## セッションの終わりに
 
-コンテキストが 30% を超えたら、セッションを区切る。話があちこちへ行き、おかしくなるのを防ぐため（pjdhiro 2026-11-08「話があっちこっち行っておかしくなってる。区切ろう。やり直したい。コンテキストが３０％を超えたら区切るルールにしたい」）。区切るときは、下の手順で記録を閉じ、次のセッションが読む引き継ぎ（いまの到達点・残した議論点・置き場）をセッションの記録に書く。
-
-毎回、セッションを閉じる前に次を行う（pjdhiro 2026-11-07）。
-
-1. このセッションで pjdhiro が示した判断や見方を、`docs/rules/stance.md` に足すか直す。何への答えだったかを添える。
-2. このセッションで Claude が指摘された誤りを、`docs/rules/corrections.md` の型に当てはめる。当てはまる型が無ければ型を足す。同じ誤りを繰り返さないよう、その型の「書く前の確認」を直す。前に同じ型の誤りをしていたら、`docs/rules/corrections-repeats.md` の表に日付を足す（型 K は `corrections-k.md` の「繰り返し」に足す）。corrections.md の「繰り返し」の決まりに従い、2 回目からは確認の文を足すのでなく、機械で止める仕組みに移すか、確認の文を書き直す。
-3. Claude の推奨と pjdhiro の判断がずれたところを、セッションの記録の `## ずれ` に書く。一件ごとに、場面・Claude の推奨とその理由・pjdhiro の判断と発言・Claude が見ていなかったもの・写した先（stance・corrections・decisions のどれか）を書く。誤りと言えない、見方の違いから来たずれも書く。pjdhiro に判断を仰いだ問いは、聞く前の Claude の予想と実際の答えを一行ずつ並べる。予想は聞く前に書いておく（あとから書くと、当たったことにしやすい）。予想が当たり続けるなら聞きすぎ（型 P）で、外れるなら stance.md の読みが足りない。ずれが無ければ「無し」と書く（pjdhiro 2026-11-09「claudeの推奨と私がズレたポイントは大切です」・セッションの終わりに振り返って学んでいるかを問われて）。
-4. セッションの記録を書く（下の「セッションの記録」）。
-5. `node pd/scripts/wiki-stale-check.mjs --session-end --log <記録の名前>` を走らせる。並べた分には、このセッションが出す印が付く（本体の `.cache/wiki-order.json`・24 時間）。ほかのセッションがもう出した分は並ばず、全部出ていれば「出さない」と出る。並べ直すために二度回さない（二度目は自分の印で「もう出ている」と出る。#130・pjdhiro 2026-11-11）。古い wiki のページか、出典ノートがあるのに出典ページが無い原典が出たら、自分では直さず、司令塔として別のセッションを始め（fresh・自分の worktree）、`.claude/skills/wiki-compile/SKILL.md`「区切るときの作り直しの指令」の雛形に一覧を入れて渡す（作り直し・check.sh・develop に取り込み push。main へは送らない）。何も出なければ何もしない（pjdhiro 2026-11-10「セッションを区切り、セッションログを作り、そこから司令塔として別セッションにwiki更新の指令を出すように」）。
-6. 役目を終えたアーティファクトを消す。特に、このセッションが作ったもの（案のページ・判断を仰ぐページ・報告のページ）を消す。役目を終えたとは、答えを受け、その判断を `stance.md`・`decisions.md`・Issue のどれかに写し終えたもの。消す前に写っているかを見る。答えを待っているものは消さずに残し、記録の引き継ぎに URL を書く。付箋帳（`docs/tools/fusen-cho.md`）と違和感帳（`docs/tools/iwakan-cho.md`）の帳面そのものは消さない。帳面の `links` に載っていたものは、消したら `archive` の `linksCleared` を `true` にする。消すたびに承認の画面が出る（pjdhiro 2026-11-14「セッション終了時のルールに、終了したアーティファクトを削除するというのがほしいね。特にそのセッションで生成したものは。」）。
-7. 足したもの・直したもの・消したもの（と、出した wiki の指令）を pjdhiro に短く伝える。何も無ければ、無いと伝える。
+コンテキストが 30% を超えたら、セッションを区切る（pjdhiro 2026-11-08）。区切るとき・閉じる前は、`docs/rules/session.md` の「セッションの終わりに」の七つの手順を開いて、そのとおりに行う（stance・corrections に写す・`## ずれ`・記録・wiki の指令・アーティファクトを消す・伝える）。
 
 ## セッションの記録
 
-- 本体の checkout の `.cache/session/` に、一つのセッションにつき一つ、`log-YYYYMMDD-<話題>.md` を書く。`.cache/` は git に入れない。worktree の `.cache/` は worktree と一緒に消えるので、worktree で作業したときも本体の側に書く（場所は `git rev-parse --git-common-dir` の一つ上）。worktree のセッションの Write は本体の側に書けないので、worktree の `.cache/session/` に書いてから `bash scripts/session-log.sh <記録の名前>` で写す。書き足したら `--force` を付けて写し直す（#130・2026-11-11）。
-- 書くこと：見出しに日付・話題・worktree の名前。見出しの直下に `## 要点` を置き、直したこと・残したこと・commit を 5 行ほどで書く。その次に `## ずれ`（上の手順 3）を置く。その下に本文：直したこと、pjdhiro の判断（趣旨と、何への答えか）、残したこと・次に回したこと、commit。
-- 作業を始める前に、`bash scripts/session-digest.sh` で、その日と前の日の記録の要点を読み、今の状態を確かめる（型 K）。既定で出るのは、題と `## 要点` の頭だけ。`## ずれ`・「残したこと」・「commit」の節は、話題の語を引数にしたときに出る（例：`bash scripts/session-digest.sh cs-review`）。関わる記録は、語で指してそこまで読む。本文は、関わる記録だけを開く。全部を読まない（pjdhiro 2026-11-08・毎回読む分を小さく保つため）。
-- worktree で始めるときは、規約と記録の要点を読んだあとに、`bash scripts/sync-develop.sh` だけを一つの呼び出しで回して develop に揃える（fetch・早送り・枝と作業ツリーの食い違いと `.claude/` の差分の確かめ）。パイプ・リダイレクト・`&&` と組まない（型 K・`corrections-k.md` の K1）。
-- 司令塔のセッションは、続けて付箋帳を見張り（帳面を出し直す）、`items` を読み、Claude がまだ読んでいないものを拾う。見張っていると、帳面の「司令塔を呼ぶ」がそのセッションに届く（`docs/tools/fusen-cho.md`・pjdhiro 2026-11-09。2026-11-17 に違和感帳から付箋帳へ移った）。
+- 本体の checkout の `.cache/session/` に `log-YYYYMMDD-<話題>.md` を書く。書き方・置き方・写し方は `docs/rules/session.md` の「セッションの記録」。
+- 作業を始める前に `bash scripts/session-digest.sh` で、その日と前の日の記録の要点を読む。worktree で始めるときは、続けて `bash scripts/sync-develop.sh` を単独で回して develop に揃える（パイプ・`&&` と組まない。`corrections-k.md` の K1）。
+- 司令塔のセッションは付箋帳を見張る（`docs/tools/fusen-cho.md`）。
 
 ## Git
 
-この repo は、複数の人がプログラムを開発するための git の使い方をしない。自然言語の文章を、LLM のために管理している個人のプロジェクトで、git は履歴のため。編集者は pjdhiro 一人（pjdhiro 2026-11-07・2026-11-08「何度も言ってることなのでルールに入れて」「別セッションも動くからワークツリーは便利」「編集したらdevelopに最速で統合してほしい」）。
+個人の文章管理で、git は履歴のため。細部（3001 での確かめ・main への送り方・戻し入れ・check.sh）は `docs/rules/git.md`。git を触る前に開く。
 
-- **編集したら、`develop` に最速で統合する。** プルリクエストは使わない。worktree は、別のセッションが同時に動くときや、クラウドでスマートフォンから動かすときに便利なので使ってよい。その場合も、作業を worktree の枝に溜めずに、本体の checkout（`~/dev/pd/project-design-theory`）の `develop` へ早く取り込む。最速がどのタイミングかは状況による（ほかのセッションと同じファイルを触っているとき、pjdhiro の判断を待って手が止まっているとき など）。取り込みの段取りを説明して pjdhiro の手を止めない。
-- **確かめは、手元のサーバーをブラウザで見るのが基本。** 最速で目視できるから使っている。本体の checkout（develop）を launchd（`com.uminomae.project-design-theory`）が `scripts/serve.sh` で http://localhost:3001/ に常駐させている。直したらすぐ 3001 で見られる状態にしておく：直したら 3001 で開いて確かめ、止まっていたら `launchctl kickstart -k gui/$(id -u)/com.uminomae.project-design-theory` で起こす。
-- **公開は、確かめが済んだら `develop` をそのまま `main` へ送る**（`git push origin develop:main`）。別のセッションの途中の commit が develop に入っていても、分けずに全部送る（pjdhiro 2026-11-10・Issue #111 の問い 2「全部送る。以後も、確かめが済んだら develop をそのまま送る、を決まりにします」に「はい」）。話の流れで確かめが済んでいれば、いちいち聞かずに送る。`bash scripts/check.sh` が落ちている状態では送らない。送る前に `bash scripts/publish-main.sh develop` を走らせ、一緒に出る commit を見る（`.githooks/pre-push` が、これを走らせていない main への push を止める）。その commit が触った公開ページは、`.claude/skills/public-page-review/SKILL.md` の表を通してから送る。
-- 公開の判断を待つ別のセッションの変更が develop にあって、自分の commit だけを載せた枝で main に送ったとき（cs の記録など）は、main に develop に無い commit ができる。送ったあとに、本体の checkout で `git fetch origin`、続けて `git merge origin/main` を単独で回し、develop に戻し入れて push する（`.claude/` が入るならサンドボックスの外で。2026-11-10 までに develop で 4 回行われている）。戻さないと、次の `develop:main` が早送りにならない（2026-11-10）。
-- 公開は GitHub Actions（`.github/workflows/pages.yml`）。出すのはサイトのファイルだけ。
-- サイトのファイルを直したら、commit の前に `bash scripts/check.sh` を走らせる（旧 repo へのリンク・読み物の内部アンカー・wiki・as と ks のテスト・文字化け）。同じものを `.github/workflows/check.yml` が develop と main で走らせる。何を機械で見て、何を画面で見て、何がまだ無いかは `docs/TESTING.md`。
+- 編集したら `develop` に最速で統合する。プルリクエストは使わない。段取りを説明して pjdhiro の手を止めない。
+- 確かめは http://localhost:3001/ をブラウザで見るのが基本。
+- 公開は、確かめが済んだら `develop` をそのまま `main` へ送る。送る前に `bash scripts/check.sh` と `bash scripts/publish-main.sh develop`。
 - commit の末尾：`Co-Authored-By: Claude <noreply@anthropic.com>`
-- 初回だけ `git config core.hooksPath .githooks` を実行して、公開前の点検を有効にする。
