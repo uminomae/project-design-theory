@@ -1414,3 +1414,8 @@ compile 実行の履歴。append-only。
 - scope: 1 ページ作り直し（`concepts/Love 駆動開発`）・1 ページ確かめ（`プロジェクトデザイン`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（章「数学の視点で見る」と、第七部の前置きの視点の並び）
 - pages: `concepts/Love 駆動開発` の工事中の段の、哲学の章の要約のあとに、数学の視点の章の一段を足した。`プロジェクトデザイン` は引いている文が変わっていないので本文はそのまま、compiled がもう今日なので checked を今の時刻にした。
+
+## [2026-11-19] compile | Love駆動開発の畳み「闘争と逃避、信頼と嫌悪のスイッチ」に、新田の原文との対応と独立ページ「赦しと救いとは」への入口を足したのに合わせる
+- scope: 2 ページ確かめ（`concepts/Love 駆動開発`・`プロジェクトデザイン`）
+- sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（第四部の畳み「闘争と逃避、信頼と嫌悪のスイッチ」の図の下の段）
+- pages: どちらのページも、直した畳みの段を引いていないので本文はそのまま。compiled がもう今日なので checked を今の時刻にした。

@@ -1447,6 +1447,10 @@ pjdhiro は、創造の五段階を図にしたページで、この動きを、
 
 <strong>pjdhiro の見方：</strong>悪と弱は防衛したいもの。これは新田信也から。不健全な防衛ではなく、健全な感情処理として、ゆるしと救いも。ゆるしとは感謝と謝罪。これも新田信也。
 
+新田信也の原文では、謝罪は許しの環（怒りの処理）の芯にあり、感謝は、許しの環と救いの環（惨めさの処理）が同時に働くときの心性として書かれています（死にゆく人を扱う段）。
+
+赦しと救いは、もともと宗教が主題にしてきた語です。キリスト教の伝統は、罪を医者の要る病として扱い、罪を負わせずに放つこと（赦し）と、赦されたあとに残る弱りを時間をかけて癒すこと（救い）を、二つの層で書いてきました。キェルケゴールは、絶望を精神の病と呼び、自分であろうとしない弱さと、自分の力で自分であろうとする反抗の二つの形に分けています。謝罪と赦しを一組で書く伝統（パーリ経典・マイモニデス）と、救われた側の応えを感謝に置く伝統（『歎異抄』）もあります。くわしくは、独立した読み物「[赦しと救いとは](forgiveness-salvation.html)」で、新田の論と並べて読みます。
+
 心が不安や苦痛から自分を守る動き（防衛）は、「[心は、自分を守るしくみを持っている](#ldd-defense)」の章で見ました。守りをゆるめ、自分の弱さや悪さを受け容れて感情を処理する側は、「[どう鍛えるのか、どう修行するのか](#ldd-practice)」の章で見ます。
 
 </details>
@@ -1460,6 +1464,8 @@ pjdhiro は、創造の五段階を図にしたページで、この動きを、
 出典：Panksepp (2001) "The neuro-evolutionary cusp between emotions and cognitions: Implications for understanding consciousness and the emergence of a unified mind science", *Evolution and Cognition* 7(2):141–163（2000 年に *Consciousness & Emotion* 1:15–54 に載った論文の再録。[コンラート・ローレンツ研究所が公開している号の PDF](https://kli.ac.at/webroot/files/file/Evolution%20%26%20Cognition/2001%207-2.pdf) で本文照合済。系と感情の表と大文字の意味 p.156）／[Ortony & Turner (1990)](https://doi.org/10.1037/0033-295X.97.3.315) "What's basic about basic emotions?", *Psychological Review* 97(3):315–331（[第一著者の大学のサイトの写し](https://users.cs.northwestern.edu/~ortony/Andrew_Ortony_files/1990%20-%20Basic%20emotions.pdf)で本文照合済。基本の感情の一覧の表 p.316、受容はプルチックだけ p.315、シェイヴァーらの五つ p.319、混ざりへの疑問 p.326）。
 
 出典：Fredrickson (2016) "Love: Positivity resonance as a fresh, evidence-based perspective on an age-old topic", in Barrett, Lewis & Haviland-Jones (eds.) *Handbook of Emotions* (4th ed.), Guilford Press（[著者の研究室のサイトにある、刊行前の原稿](https://peplab.web.unc.edu/wp-content/uploads/sites/18901/2019/06/Fredrickson2016ChapteronLoveforHandbookofEmotions.pdf)で本文照合済。頁は原稿の頁。「愛している」が指すもの p.3、思い・絆・親しさ・約束は積み重ねでできる p.3、愛の定義 p.16、くり返しが信頼と誠実さを築く p.19）。
+
+出典：新田信也のウェブサイト「精神分析統合理論」の頁「[精神分析統合理論の大綱](https://www.seishin-bunseki.jp/category/1299253.html)」（節「三、許しの環と救いの環」。本文照合済。著者本人のサイト）／同「[新しい心の分析教室：ノート（Ⅵ）](https://www.seishin-bunseki.jp/category/1338732.html)」（節「『老』と『死』」。感謝の一文。本文照合済）
 
 原典を読むなら：プルチックとパンクセップの論文は、どちらも、コンラート・ローレンツ研究所が公開している同じ号の PDF で全文を読めます。
 

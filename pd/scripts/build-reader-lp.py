@@ -121,6 +121,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/forgiveness-salvation/READER-forgiveness-salvation.md",
+        ROOT / "scripts/reader-forgiveness-salvation-template.html",
+        ROOT / "reader/forgiveness-salvation.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/anshin/READER-anshin.md",
         ROOT / "scripts/reader-anshin-template.html",
         ROOT / "reader/anshin.html",
