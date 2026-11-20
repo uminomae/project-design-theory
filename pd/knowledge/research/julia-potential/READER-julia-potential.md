@@ -378,24 +378,45 @@ pjdhiro は、この論について、こう見ています。
 
 いくつもの自己が重なっている、という所は、`z` を重なった自己と見る置き方に近く見えます。ただし、論文は型を足し合わせるだけで、重なった型どうしの掛け合わせは扱いません。論文ごとの結果をまとめたもので、一人の中で時とともにどう移るかは見ていない、と著者たちも書いています。査読前のプレプリントです。
 
-このプレプリントが序論で拠り所にしている論の一つに、哲学者ギャラガーのパターン理論があります。ギャラガーは、自己を一つに決めず、体・経験・感情・行動・人とのあいだ・語りなどの側面が、ある型に組まれたものを「自己」と呼ぶ、と提案しました（2013）。自己は、側面どうしの動的な相互作用から現れる複雑な系として働き、一人の中でも型は時とともに変わりうる、と書きます。のちの論文では、この側面は足し算の一覧ではなく、一つの側面に手を入れると、相互作用を通じてほかの側面も変わる、と書き足しました（ギャラガーとデイリー、2018）。プレプリントのモデルは型を強さで足し合わせるだけでしたが、こちらは、側面どうしが互いに変え合う所を言います。自己と自己の掛け合わせの項（`2ab`）を読む見方には、こちらのほうが近く見えます。ただし、どう掛け合わさるかを式では書いていません。
+<p><b>プレプリントの参照から足した三本</b></p>
 
-心理学では、ハーマンスらの対話的自己論が、自己を、多くの「私」の位置（職業人としての私・父としての私など）が、互いにやりとりし協働する場として描きます（2017）。その張り合いの場からは、やりとりの前には無かった新しい位置や、位置どうしの連合が生まれうる、と書きます。対立する二つの位置を組み合わせる「第三の位置」は、二つのあいだの衝突を、実りのある連合に変えうる、ともします。どちらか一つの自己には無いものが、自己と自己のやりとりから生まれる、という所は、pjdhiro の「自己と自己が創造的に協働する」に近く見えます。こちらは脳の系の話ではなく、二乗のような形も持ちません。プレプリントの参照の一覧には入っていない論です。
+一本目は、[ギャラガーのパターン理論](https://www.frontiersin.org/articles/10.3389/fnhum.2013.00443/full)（2013）です。このプレプリントが序論で拠り所にしている論の一つです。哲学者ギャラガーは、自己を一つに決めず、体・経験・感情・人とのあいだ・心理と認知・語り・身の回りに広がるもの・置かれた状況などの側面が、ある型に組まれたものを「自己」と呼ぶ、と提案しました。自己は、側面どうしの動的な相互作用から現れる複雑な系として働き、一人の中でも型は時とともに変わりうる、と書きます。自己という考えは、一つに絞らず複数のままにしておく、とも書きます。
+
+- このページの論に関わる所：自己を一つに決めず、側面の組み合わせと見る所は、`z` を重なった自己と見る置き方に近く見えます。
+- 起業家の思考や心理に関わる所：起業家や事業の話はありません。心理と認知の側面の中に、熟慮と意思決定の過程が挙がり、身の回りに広がる側面の例に、働く場の制度が挙がる、までです。ギャラガーは、数学のパターン理論とは結びつけない、と断っていて、式も出てきません。
+
+二本目は、[ギャラガーとデイリーの論文](https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00664/full)（2018）です。パターン理論は側面の一覧にすぎない、という批判に答えた論文です。側面は足し算の一覧ではなく、互いに動的に関わり合う組で、一つの側面に手を入れると、相互作用を通じてほかの側面も変わる、と書きます。ある程度を超えた一つの側面の変化が、ほかの側面の変化を呼ぶ、とも書きます。関わり合いをたどる手がかりに、語り、心の病（統合失調症・うつ病など）、脳の予測の理論を挙げます。
+
+- このページの論に関わる所：側面どうしが互いに変え合う所は、自己と自己の掛け合わせの項（`2ab`）を読む見方に近く見えます。自己の型が語りの中に振り返って写る、という所は、pjdhiro の「振り返って自己分析して成長に気づく」に近く見えます。
+- 起業家の思考や心理に関わる所：起業家や事業の話はありません。意思決定にいちばん近いのは、自分が行為の主だという感じが、語りを通じて、先の行為の選び方に効く、と書く所です。非線形のフィードバックの系という言い方はありますが、式は書いていません。
+
+三本目は、[ハーマンスらの対話的自己論](https://link.springer.com/article/10.1007/s12124-016-9370-6)（2017）です。プレプリントの参照の一覧には無い論です。心理学者のハーマンスらは、自己を、多くの「私」の位置（職業人としての私・父としての私など）が、互いにやりとりし、張り合う場として描き、その場を民主的な社会になぞらえます。張り合いの場からは、やりとりの前には無かった新しい位置や、位置どうしの連合が生まれうる、と書きます。対立する二つの位置を組み合わせる「第三の位置」は、衝突を実りのある連合に変えうる、とします。多くの位置をまとめる位置として、全体を見渡すメタ位置と、先へ開かれ、新しい位置を生み出していく推進位置を挙げます。
+
+- このページの論に関わる所：どちらか一つの自己には無いものが、自己と自己のやりとりから生まれる、という所は、pjdhiro の「自己と自己が創造的に協働する」に近く見えます。メタ位置は、自己を振り返って見渡す位置で、二乗の章のシャドーの読み（振り返って差に気づく）に近く見えます。
+- 起業家の思考や心理に関わる所：起業家の話はありません。近いのは二つです。推進位置を、社会で人を奮い立たせる指導者になぞらえ、自己を新しくしていく「自己の革新者」と呼ぶ所と、張り合いの場は、ストレスを生むだけでなく、適応と創造の力も持つ、とする所です。ただし、例に挙がるのは、文化・人種・性のあいだで生きる人の自己で、事業を起こす人の自己ではありません。脳の系の話でも、二乗のような形でもありません。
 
 <p><b>原文</b></p>
 
 - スキッパーら 要旨："self-related processing has no core and emerges from shifting coalitions of distributed brain systems"
 - スキッパーら 序論："The word 'self' then names systems working together in a configuration"
 - スキッパーら 考察："continuity comes from recurring members and from the shared name 'self'"
-- ギャラガー 2013："On this view selves operate as complex systems that emerge from dynamic interactions of constituent aspects."
-- ギャラガーとデイリー 2018："this is not intended to be an additive list of factors, but a set of components dynamically interrelated in a pattern or gestalt arrangement"／"an intervention that affects one factor will involve modulations in the other factors."
+- ギャラガー 2013（節 A Pattern Theory of Self）："On this view selves operate as complex systems that emerge from dynamic interactions of constituent aspects."
+- ギャラガー 2013（節 Introduction）："In this paper I propose to stay plural about the concept of self."
+- ギャラガー 2013（節 Some Benefits of a Pattern Theory of Self）："psychological/cognitive processes of deliberation and decision-making"
+- ギャラガー 2013（節 Pattern Theories）："I do not mean to associate a pattern theory of self with 'Pattern Theory' in mathematics."
+- ギャラガーとデイリー 2018（節 A Pattern Theory of Self (PTS)）："this is not intended to be an additive list of factors, but a set of components dynamically interrelated in a pattern or gestalt arrangement"／"an intervention that affects one factor will involve modulations in the other factors."／"Adjustments in one aspect, above a certain threshold, will lead via dynamical interactions to changes in others"
+- ギャラガーとデイリー 2018（要旨）："a self-pattern is reflectively reiterated in its narrative component"
+- ギャラガーとデイリー 2018（節 What's the Use of Narrative?）："can have an effect on my future choice of action"
 - ハーマンスら p.511："A field of tension allows not only for movements between different I-positions but also for the emergence of new positions or coalitions of positions that were not there before the process of interchange started."
+- ハーマンスら（p.511 の引用と同じ段の前の文）："fields of tension not only lead to stress but can also have adaptive and creative potentials"
 - ハーマンスら p.514："the construction of third positions is particularly valuable as they have the potential of transforming conflicts between I-positions into productive coalitions"
+- ハーマンスら（節 Meta-Position）："A meta-position, like meta-cognition (Flavell 1979; Hussain 2015), provides an overview of more specific I-positions, including their patterns and inter-relationships."
+- ハーマンスら（節 Promoter Position）："Analogous to inspiring leaders in society, they imply a considerable openness towards the future and have the capacity of organizing and producing a diverse range of more specialized positions that are relevant to the further development of the self, in this way operating as innovators of the self."
 
 訳は Claude。
 
 
-出典：Skipper, Blackburne, Cooper, Jaglinska, Jedlovszky, Kuc, McAlpine & Timmermann (2026) "["The self" as shifting coalitions of brain systems in a continuous configuration space](https://doi.org/10.64898/2026.11.12.766263)", *bioRxiv*（査読前。本文照合済。[bioRxiv の全文](https://www.biorxiv.org/content/10.64898/2026.11.12.766263v1.full)で序論・結果・考察・方法の前半と参照の一覧を読んだ）／Gallagher (2013) "[A pattern theory of self](https://doi.org/10.3389/fnhum.2013.00443)", *Frontiers in Human Neuroscience* 7:443（本文照合済。[PMC の全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC3730118/)。節 A Pattern Theory of Self）／Gallagher & Daly (2018) "[Dynamical relations in the self-pattern](https://doi.org/10.3389/fpsyg.2018.00664)", *Frontiers in Psychology* 9:664（本文照合済。[PMC の全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC5958307/)。節 A Pattern Theory of Self (PTS)）／Hermans, Konopka, Oosterwegel & Zomer (2017) "[Fields of tension in a boundary-crossing world: Towards a democratic organization of the self](https://doi.org/10.1007/s12124-016-9370-6)", *Integrative Psychological and Behavioral Science* 51(4):505–535（本文照合済。[Springer が公開している全文の PDF](https://link.springer.com/content/pdf/10.1007/s12124-016-9370-6.pdf)。pp.511・514）
+出典：Skipper, Blackburne, Cooper, Jaglinska, Jedlovszky, Kuc, McAlpine & Timmermann (2026) "["The self" as shifting coalitions of brain systems in a continuous configuration space](https://doi.org/10.64898/2026.11.12.766263)", *bioRxiv*（査読前。本文照合済。[bioRxiv の全文](https://www.biorxiv.org/content/10.64898/2026.11.12.766263v1.full)で序論・結果・考察・方法の前半と参照の一覧を読んだ）／Gallagher (2013) "[A pattern theory of self](https://doi.org/10.3389/fnhum.2013.00443)", *Frontiers in Human Neuroscience* 7:443（本文照合済。[Frontiers の全文](https://www.frontiersin.org/articles/10.3389/fnhum.2013.00443/full)・[PMC の全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC3730118/)。節 Introduction・Pattern Theories・A Pattern Theory of Self・Some Benefits of a Pattern Theory of Self）／Gallagher & Daly (2018) "[Dynamical relations in the self-pattern](https://doi.org/10.3389/fpsyg.2018.00664)", *Frontiers in Psychology* 9:664（本文照合済。[Frontiers の全文](https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00664/full)・[PMC の全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC5958307/)。要旨・節 A Pattern Theory of Self (PTS)・What's the Use of Narrative?）／Hermans, Konopka, Oosterwegel & Zomer (2017) "[Fields of tension in a boundary-crossing world: Towards a democratic organization of the self](https://doi.org/10.1007/s12124-016-9370-6)", *Integrative Psychological and Behavioral Science* 51(4):505–535（本文照合済。オープンアクセス。[Springer の全文](https://link.springer.com/article/10.1007/s12124-016-9370-6)・[全文の PDF](https://link.springer.com/content/pdf/10.1007/s12124-016-9370-6.pdf)。pp.511・514、節 Meta-Position・Promoter Position）
 
 </details>
 
