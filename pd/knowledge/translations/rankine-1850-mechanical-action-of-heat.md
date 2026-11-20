@@ -2,7 +2,7 @@
 
 - 原典：W. J. Macquorn Rankine, "On the Mechanical Action of Heat, especially in Gases and Vapours", *Transactions of the Royal Society of Edinburgh* 20 (1853), pp.147–190（論文 VII。1850 年 2 月 4 日にエディンバラ王立協会で読む）。DOI は [10.1017/S008045680003307X](https://doi.org/10.1017/S008045680003307X)（Crossref で題・巻・頁・年を照らした）。著者はスコットランドの技術者・物理学者。
 - 訳した範囲：全文（題・序論〔分子渦の仮説の要約〕・第 I 節〜第 IV 節・第 IV 節への付録と表 I・表 II、脚注 1）。同じ巻の pp.191– に続く「Note as to the Dynamical Equivalent of Temperature in Liquid Water …」（1850 年 12 月 2 日に読む）など、のちの補遺は入れていない。パースが「進化的な愛」（1893）の ¶20 で「the mechanical theory of heat by Clausius and by Rankine, independently, in 1850」、¶58 で「The mechanical theory of heat was set forth by Rankine and by Clausius during the same month of February, 1850」と書く、ランキンの側の論文。パースは題を挙げていない。1850 年 2 月に読まれた熱の力学的理論の論文として、Claude がこれに当てた。
-- 原文：Internet Archive の誌面の走査 [`transactionsofro20royal`](https://archive.org/details/transactionsofro20royal)（頁と画像の対応は、葉の番号 n で p = n − 30。p.147＝n177〜p.190＝n220）に合わせた（2026-11-20・#175）。文字起こしが無いので、IA の OCR を下敷きに、読む役（Claude のサブエージェント）六つが全 44 頁の画像と一行ずつ照らして起こし、照らす役三つが段ごとに画像と照らした。表の数は、読む役と照らす役が計算でも照らした。
+- 原文：Internet Archive の誌面の走査 [`transactionsofro20royal`](https://archive.org/details/transactionsofro20royal)（頁と画像の対応は、葉の番号 n で p = n − 30。p.147＝n177〜p.190＝n220）に合わせた（2026-11-20・#175）。文字起こしが無いので、IA の OCR を下敷きに、読む役（Claude のサブエージェント）六つが全 44 頁の画像と一行ずつ照らして起こし、照らす役三つが段ごとに画像と照らした。表の数は、読む役と照らす役が計算でも照らした。誤りの疑いのある式の番号と記号の三か所は、のちにランキンの論集の再録（W. J. Millar 編 *Miscellaneous Scientific Papers*, 1881）の画像とも照らした（2026-11-20）。
 - 直したのは次のとおり。綴り・句読点は誌面のとおり。誌面の誤植と見たものは直さずに置き、訳注に書いた。誌面の斜体は `*…*` で示した。誌面で小型大文字の人名は、ふつうの大小文字で起こした。柱・頁番号・折記号は起こしていない。誌面の脚注は頁ごとの印（* など）なので、通しの番号（注1）にして終わりにまとめた。
 - 式の書き方：斜体のラテン文字は `<i>…</i>`、下付き・上付きは `<sub>`・`<sup>`。ギリシア文字と、誌面で立体の大文字（P・V・Q・K など）には印を付けていない。真の比熱の記号（誌面の黒体文字の k）は 𝔨 で書いた。誌面で縦に組まれた分数は / で一行に書き、分子や分母が二つ以上の項のときは誌面に無い丸括弧で包んだ。誌面の小数点は中黒（·）で、そのまま置いた。式の番号（(IX.)・(12.) など）は誌面のとおり。
 - 表：誌面の数の表は Markdown の表にした。原文の表は見出しも誌面のまま、訳の表は見出しの語だけを訳し、数は同じ。
@@ -863,7 +863,7 @@ Log P = α − β/τ　(XVI.)
 
 この節の式 (1.) には、次の置き換えをしなければならない。
 
-訳注：誌面は「Equation (1.)」。置き換える Q と二つの積分が現れるのは式 (2.) なので、(2.) の誤りかもしれない（推測。誌面のまま訳した）。
+訳注：誌面は「Equation (1.)」。この節の式 (1.) は <i>d</i>Q/<i>dτ</i> の式で、置き換える Q と二つの積分が現れるのは式 (2.) なので、(2.) の誤りかもしれない（推測。誌面のまま訳した）。ランキンの論集の再録（W. J. Millar 編 *Miscellaneous Scientific Papers*, London: Charles Griffin, 1881, p.248。Internet Archive [`miscellaneoussc01taitgoog`](https://archive.org/details/miscellaneoussc01taitgoog)）も「equation (1)」のままで、直されていない。再録では、すぐ後の段が「The value of the first integral in equation (2) of this Section」と (2.) を指す。
 
 ### ¶83　p.160
 
@@ -1716,6 +1716,8 @@ K<sub>s</sub> = 𝔨 + P <i>d</i> V/<i>d τ</i> = 𝔨 (1 + N . (τ/V) (<i>d</i>
 = (1/(C <i>n</i> M)) (1/N + 1 − β′/τ − 2 γ′/τ<sup>2</sup>) (30.)
 
 訳注：式 (30.) の三行は、誌面では一つの括弧でまとめて (30.) の番号が付く。
+
+訳注：誌面は「the general Equation (21.)」。式 (21.) は K<sub>P</sub>/K<sub>V</sub> = 1 + N で、<i>d</i>P/(P<i>dτ</i>) を代入する所が無い。代入の先は、見かけの比熱の一般の式 (15.) と、完全気体の式 (17.) と見られ、番号の取り違えかもしれない（推測。誌面のまま訳した）。1881 年の論集の再録（p.260）も「the general equation (21,)」のままで、直されていない。
 
 ### ¶143　p.171
 
@@ -2609,7 +2611,7 @@ P<sub>2</sub>=P<sub>3</sub>+<i>f</i>
 | <i>s</i> | (<i>l</i>+<i>c</i>)/(<i>l</i>′+<i>c</i>) |
 | <i>c</i> | <i>c</i>/(<i>l</i>′+<i>c</i>) |
 
-訳注：表の行の間の点線（. . . .）は省いた。最後の行の分母は誌面で <i>l</i>′+<i>c</i> だが、本文の <i>c</i> の定義（膨張の終わりの空間に対する割合）と ¶215 の数（行程の 1/20 のすき間で <i>c</i>=1/21）からは <i>l</i>+<i>c</i> になるはずで、誤植かもしれない。付録（p.188）でランキンは <i>l</i> を行程の全長、<i>l</i>′ を全圧で進む部分としており、その意味なら <i>s</i> の行とも合う（推測。ド・パンブール氏の原典の記法は照らしていない）。
+訳注：表の行の間の点線（. . . .）は省いた。最後の行の分母は誌面で <i>l</i>′+<i>c</i> だが、本文の <i>c</i> の定義（膨張の終わりの空間に対する割合）と ¶215 の数（行程の 1/20 のすき間で <i>c</i>=1/21）からは <i>l</i>+<i>c</i> になるはずで、誤植かもしれない。付録（p.188）でランキンは <i>l</i> を行程の全長、<i>l</i>′ を全圧で進む部分としており、その意味なら <i>s</i> の行とも合う。ド・パンブールの原典の英訳（*The Theory of the Steam Engine*, London: J. Weale, 1839, p.145。Internet Archive [`theoryofsteameng00guyorich`](https://archive.org/details/theoryofsteameng00guyorich)）では、<i>l</i> はピストンの行程、<i>c</i> はすき間をシリンダーの長さに直したもので、その記法でランキンの <i>c</i> を書けば <i>c</i>/(<i>l</i>+<i>c</i>) になる。1881 年の論集の再録（p.273）も <i>l</i>′+<i>c</i> のままで、直されていない（誤植かどうかは推測）。
 
 ### ¶215　p.182–183
 
