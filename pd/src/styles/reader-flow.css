@@ -439,3 +439,78 @@ body.reader-flow .reader-article a[href^="http"]:not([href^="https://uminomae.gi
     -webkit-mask-image: var(--link-mark-out);
     mask-image: var(--link-mark-out);
 }
+
+/* ===== 小窓と戻るボタン（src/reader-peek.js・2026-11-20・pjdhiro「ページ内は戻ってこれないリンクが多いので読み続けるのがしんどい」） =====
+   小窓：跳び先に data-peek が付いた説明を、跳ばずにその場で開く。<dialog> を .reader-article の中に置くので、本文の字・畳み・コードの形がそのまま効く。
+   戻るボタン：ほかのページ内リンクで跳んだら左下に出す（右下は目次のボタン）。 */
+body.reader-flow .reader-article a.peek-link { text-decoration-style: dotted; text-underline-offset: 3px; }
+html.peek-open { overflow: hidden; }
+body.reader-flow .reader-article dialog.peek {
+    width: min(720px, calc(100% - 32px));
+    max-height: min(85vh, 85dvh);
+    margin: auto;
+    padding: 0;
+    border: 1px solid var(--glass-border-soft);
+    border-radius: 12px;
+    background: var(--white);
+    color: var(--ink);
+    box-shadow: var(--glass-shadow-modal);
+    overflow: hidden;
+}
+body.reader-flow .reader-article dialog.peek[open] { display: flex; flex-direction: column; }
+body.reader-flow .reader-article dialog.peek::backdrop { background: rgba(255, 255, 255, 0.6); } /* 共有の小窓（modals.css の .modal__backdrop）と同じ */
+body.reader-flow .reader-article .peek__head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 8px 8px 20px;
+    border-bottom: 1px solid var(--glass-border-soft);
+}
+body.reader-flow .reader-article .peek__title {
+    flex: 1;
+    margin: 0;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--navy);
+}
+body.reader-flow .reader-article .peek__close,
+body.reader-flow .jump-back button {
+    min-width: 44px;
+    height: 44px;
+    border: 1px solid var(--glass-border-faint);
+    background: var(--glass-bg-faint);
+    color: var(--ink);
+    border-radius: 99px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+body.reader-flow .reader-article .peek__body {
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 4px 20px 16px;
+}
+body.reader-flow .reader-article .peek__body img { max-width: 100%; height: auto; }
+body.reader-flow .reader-article .peek__body pre { max-width: 100%; overflow-x: auto; }
+body.reader-flow .jump-back {
+    position: fixed;
+    left: 16px;
+    bottom: 16px;
+    z-index: 58;
+    display: flex;
+    gap: 6px;
+}
+body.reader-flow .jump-back[hidden] { display: none; }
+body.reader-flow .jump-back .jump-back__go {
+    padding: 0 16px;
+    background: var(--glass-bg-strong);
+    color: var(--navy);
+    font-family: var(--sans);
+    font-size: 0.875rem;
+    font-weight: 700;
+    box-shadow: var(--glass-shadow-modal);
+}
+body.reader-flow .jump-back .jump-back__x { box-shadow: var(--glass-shadow-modal); background: var(--glass-bg-strong); }
+@media (max-width: 600px) {
+    body.reader-flow .reader-article .peek__head { padding-left: 16px; }
+    body.reader-flow .reader-article .peek__body { padding: 4px 16px 14px; }
+}
