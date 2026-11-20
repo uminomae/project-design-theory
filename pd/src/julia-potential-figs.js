@@ -1,217 +1,102 @@
-// 読み物「神・愛・美と、ジュリア集合」の図。外部のライブラリは使わず、canvas と素の JS で描く。
-// 1) #jp-live：c を選ぶと、z → z² + c を 0 から前へ打った値（渦）と、±√(z − c) で遡った点（ジュリア集合）を同じ c で並べる。
-// 2) #jp-sun：黄金角で回る c の、前へ打った値（不動点のまわりを拡大）と、ひまわりの並べ方（フォーゲルの式）を並べる。
-(() => {
-  const PHI = (Math.sqrt(5) - 1) / 2;
-  const GOLDEN_DEG = 360 * (1 - PHI); // 137.507…°
+// 読み物「神・愛・美と、ジュリア集合」の図。対話の作業ページ（漸化式を遡るたとえ・版 21）の図の計算と描き方を、そのまま移した。
+// 外部のライブラリは使わず、canvas と素の JS で描く。色は図の枠（.jp-fig）に置いた CSS の変数から読む。
+// 1) 黄金角の図：① 平面の全体（前へ打った値＝赤、遡った点＝灰）、② ①の赤を不動点の周りで拡大、③ ひまわりの並べ方
+// 2) 力の地図（c の平面）と、その c で残る形（z の平面）。「遡った点を撒く」で ±√(z − c) の遡りを重ねる
+(function () {
+  const figs = document.querySelectorAll(".jp-fig");
+  if (!figs.length) return;
+  const css = (el, n) => getComputedStyle(el).getPropertyValue(n).trim();
+  function hex(c) { c = c.replace("#", ""); if (c.length === 3) c = c.split("").map((x) => x + x).join(""); return [parseInt(c.slice(0, 2), 16), parseInt(c.slice(2, 4), 16), parseInt(c.slice(4, 6), 16)]; }
+  function dot(ctx, px, py, rad) { ctx.beginPath(); ctx.arc(px, py, rad, 0, Math.PI * 2); ctx.fill(); }
 
-  // 複素数は [re, im] の配列で持つ
-  const sqrtC = (re, im) => {
-    const r = Math.hypot(re, im);
-    const a = Math.sqrt((r + re) / 2);
-    const b = Math.sign(im || 1) * Math.sqrt(Math.max(0, (r - re) / 2));
-    return [a, b];
-  };
-  // 不動点の掛け率 λ から c を作る（c = λ/2 − λ²/4。不動点は z* = λ/2）
-  const cFromLambda = (r, deg) => {
-    const t = (deg * Math.PI) / 180;
-    const lr = r * Math.cos(t), li = r * Math.sin(t);
-    return [lr / 2 - (lr * lr - li * li) / 4, li / 2 - (2 * lr * li) / 4];
-  };
-  // c の不動点のうち引き寄せうるほう z* = (1 − √(1 − 4c)) / 2 と、掛け率 λ = 2z*
-  const fixedPoint = (cr, ci) => {
-    const [sr, si] = sqrtC(1 - 4 * cr, -4 * ci);
-    const zr = (1 - sr) / 2, zi = -si / 2;
-    return { zr, zi, lr: 2 * zr, li: 2 * zi };
-  };
-  // 決まった種から同じ乱数を出す（描くたびに同じ遡りになるように）
-  const rng = (seed) => () => {
-    seed |= 0; seed = (seed + 0x6d2b79f5) | 0;
-    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
-    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-
-  const forward = (cr, ci, steps) => {
-    const pts = [[0, 0]];
-    let zr = 0, zi = 0;
-    for (let k = 1; k <= steps; k++) {
-      const nr = zr * zr - zi * zi + cr, ni = 2 * zr * zi + ci;
-      zr = nr; zi = ni;
-      pts.push([zr, zi]);
-      if (Math.hypot(zr, zi) > 2) return { pts, escapedAt: k };
-    }
-    return { pts, escapedAt: 0 };
-  };
-  const backward = (cr, ci, n, skip) => {
-    const rand = rng(1);
-    const pts = [];
-    let zr = 0, zi = 0;
-    for (let k = 0; k < n + skip; k++) {
-      let [a, b] = sqrtC(zr - cr, zi - ci);
-      if (rand() < 0.5) { a = -a; b = -b; }
-      zr = a; zi = b;
-      if (k >= skip) pts.push([zr, zi]);
-    }
-    return pts;
-  };
-
-  const setup = (cv) => {
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
-    const w = cv.width, h = cv.height;
-    if (!cv.dataset.base) { cv.dataset.base = `${w}x${h}`; }
-    const [bw, bh] = cv.dataset.base.split("x").map(Number);
-    cv.width = bw * dpr; cv.height = bh * dpr;
-    const g = cv.getContext("2d");
-    g.setTransform(dpr, 0, 0, dpr, 0, 0);
-    return { g, w: bw, h: bh };
-  };
-  const BG = "#fbfaf6", AXIS = "#c9c6bd", RED = "#c0392b", GRAY = "#6b6b6b", INK = "#2b2b2b", GOLD = "#a67c00";
-
-  const plane = (g, w, h, span) => {
-    const s = Math.min(w, h) / (2 * span);
-    const X = (x) => w / 2 + s * x, Y = (y) => h / 2 - s * y;
-    g.fillStyle = BG; g.fillRect(0, 0, w, h);
-    g.strokeStyle = AXIS; g.lineWidth = 0.6;
-    g.beginPath(); g.moveTo(0, Y(0)); g.lineTo(w, Y(0)); g.moveTo(X(0), 0); g.lineTo(X(0), h); g.stroke();
-    return { X, Y, s };
-  };
-  const dot = (g, x, y, r, col) => { g.fillStyle = col; g.beginPath(); g.arc(x, y, r, 0, 2 * Math.PI); g.fill(); };
-
-  // ---- 1) c を動かす図 ----
-  const live = document.getElementById("jp-live");
-  if (live) {
-    const cvC = live.querySelector("#jp-live-c");
-    const cvF = live.querySelector("#jp-live-fwd");
-    const cvB = live.querySelector("#jp-live-bwd");
-    const state = live.querySelector("#jp-live-state");
-    const presets = {
-      golden: cFromLambda(0.97, GOLDEN_DEG),
-      third: cFromLambda(0.96, 120),
-      out: [-0.75, 0.15],
-    };
-    let c = presets.golden.slice();
-
-    // c の平面：マンデルブロ集合（c を選ぶと、0 から前へ打った値が外に出ない c の集まり）を一度だけ描く
-    const CR0 = -2.1, CR1 = 0.7, CI0 = -1.25, CI1 = 1.25;
-    let mandel = null;
-    const drawMandel = () => {
-      const { g, w, h } = setup(cvC);
-      const img = g.createImageData(w, h);
-      for (let py = 0; py < h; py++) {
-        for (let px = 0; px < w; px++) {
-          const cr = CR0 + ((px + 0.5) / w) * (CR1 - CR0), ci = CI1 - ((py + 0.5) / h) * (CI1 - CI0);
-          let zr = 0, zi = 0, k = 0;
-          for (; k < 80 && zr * zr + zi * zi <= 4; k++) { const t = zr * zr - zi * zi + cr; zi = 2 * zr * zi + ci; zr = t; }
-          const i = 4 * (py * w + px);
-          const v = k === 80 ? 40 : 251 - Math.min(60, k * 4);
-          img.data[i] = v; img.data[i + 1] = v; img.data[i + 2] = k === 80 ? 48 : v - 4; img.data[i + 3] = 255;
-        }
-      }
-      mandel = { img, w, h };
-    };
-    const drawC = () => {
-      const { g, w, h } = setup(cvC);
-      if (mandel) {
-        const off = document.createElement("canvas"); off.width = mandel.w; off.height = mandel.h;
-        off.getContext("2d").putImageData(mandel.img, 0, 0);
-        g.drawImage(off, 0, 0, w, h);
-      }
-      const x = ((c[0] - CR0) / (CR1 - CR0)) * w, y = ((CI1 - c[1]) / (CI1 - CI0)) * h;
-      g.strokeStyle = RED; g.lineWidth = 2;
-      g.beginPath(); g.arc(x, y, 6, 0, 2 * Math.PI); g.stroke();
-      dot(g, x, y, 2, RED);
-    };
-    // 真ん中：寄っていく一点（不動点）があるときは、その点のまわりを拡大して渦を見せる。無いときは平面の全体
-    const drawF = () => {
-      const { g, w, h } = setup(cvF);
-      const { pts, escapedAt } = forward(c[0], c[1], 300);
-      const fp = fixedPoint(c[0], c[1]);
-      const attracting = !escapedAt && Math.hypot(fp.lr, fp.li) < 1;
-      let ox = 0, oy = 0, span = 1.6;
-      if (attracting) {
-        ox = fp.zr; oy = fp.zi;
-        span = 1.15 * Math.max(...pts.slice(1).map(([a, b]) => Math.hypot(a - ox, b - oy)));
-      }
-      g.fillStyle = BG; g.fillRect(0, 0, w, h);
-      const s = Math.min(w, h) / (2 * span);
-      const X = (x) => w / 2 + s * (x - ox), Y = (y) => h / 2 - s * (y - oy);
-      g.strokeStyle = "rgba(192,57,43,0.25)"; g.lineWidth = 0.8; g.beginPath();
-      pts.forEach(([a, b], i) => (i ? g.lineTo(X(a), Y(b)) : g.moveTo(X(a), Y(b)))); g.stroke();
-      pts.forEach(([a, b], i) => dot(g, X(a), Y(b), i < 60 ? 2.4 : 1.4, RED));
-      dot(g, X(0), Y(0), 3, INK);
-      if (attracting) { g.strokeStyle = INK; g.lineWidth = 1; g.beginPath(); g.arc(X(ox), Y(oy), 4, 0, 2 * Math.PI); g.stroke(); }
-      return { pts, escapedAt, attracting };
-    };
-    // 右：遡った点（灰）に、前へ打った値（赤）を同じ目盛りで重ねる
-    const drawB = (fwdPts) => {
-      const { g, w, h } = setup(cvB);
-      const { X, Y } = plane(g, w, h, 1.6);
-      g.fillStyle = GRAY;
-      for (const [a, b] of backward(c[0], c[1], 40000, 50)) g.fillRect(X(a), Y(b), 1, 1);
-      fwdPts.forEach(([a, b]) => { if (Math.abs(a) < 1.7 && Math.abs(b) < 1.7) dot(g, X(a), Y(b), 1.3, RED); });
-    };
-    const fmt = (v) => (v >= 0 ? "+" : "−") + Math.abs(v).toFixed(3);
-    const render = () => {
-      drawC();
-      const { pts, escapedAt } = drawF();
-      drawB(pts);
-      const cs = `c = ${c[0] < 0 ? "−" : ""}${Math.abs(c[0]).toFixed(3)} ${fmt(c[1])}i`;
-      if (escapedAt) {
-        state.textContent = `${cs}：前へ打った値は ${escapedAt} 歩目に大きさ 2 を超え、外へ出ました（発散）。遡った点は、つながらない塵のように散ります。`;
-      } else {
-        const fp = fixedPoint(c[0], c[1]);
-        const m = Math.hypot(fp.lr, fp.li);
-        let maxAbs = 0; for (const [a, b] of pts) maxAbs = Math.max(maxAbs, Math.hypot(a, b));
-        if (m < 1) {
-          const deg = ((Math.atan2(fp.li, fp.lr) * 180) / Math.PI + 360) % 360;
-          state.textContent = `${cs}：300 歩打っても外に出ません（大きさの最大 ${maxAbs.toFixed(3)}）。一歩ごとに ${deg.toFixed(1)}° 回り、${m.toFixed(3)} 倍に寄っていきます。`;
-        } else {
-          state.textContent = `${cs}：300 歩打っても外に出ません（大きさの最大 ${maxAbs.toFixed(3)}）。ただ、この c は大きなハート形の外か、その縁にあり、一点の周りを同じ角度で回りながら同じ割合で寄る形にはなりません。`;
-        }
-      }
-    };
-    let queued = false;
-    const setC = (nc) => { c = nc; if (!queued) { queued = true; setTimeout(() => { queued = false; render(); }, 16); } };
-    const pick = (ev) => {
-      const r = cvC.getBoundingClientRect();
-      const px = (ev.clientX - r.left) / r.width, py = (ev.clientY - r.top) / r.height;
-      setC([CR0 + px * (CR1 - CR0), CI1 - py * (CI1 - CI0)]);
-    };
-    let dragging = false;
-    cvC.addEventListener("pointerdown", (e) => { dragging = true; cvC.setPointerCapture(e.pointerId); pick(e); });
-    cvC.addEventListener("pointermove", (e) => { if (dragging) pick(e); });
-    cvC.addEventListener("pointerup", () => { dragging = false; });
-    live.querySelectorAll("button[data-c]").forEach((b) => b.addEventListener("click", () => setC(presets[b.dataset.c].slice())));
-    drawMandel();
-    render();
+  /* ---- 1) 黄金角の図：julia7-golden-three.py と同じ値で描く ---- */
+  const th = 1 - (Math.sqrt(5) - 1) / 2, r = 0.97, A = 2 * Math.PI * th;
+  const lr = r * Math.cos(A), li = r * Math.sin(A);
+  const l2r = lr * lr - li * li, l2i = 2 * lr * li;
+  const cr = lr / 2 - l2r / 4, ci = li / 2 - l2i / 4, zsr = lr / 2, zsi = li / 2;
+  const fwd = [[0, 0]]; let x = 0, y = 0;
+  for (let n = 0; n < 500; n++) { const xx = x * x - y * y + cr; y = 2 * x * y + ci; x = xx; fwd.push([x, y]); }
+  const bwd = []; let seed = 12345; const rnd = () => { seed = (seed * 16807) % 2147483647; return seed / 2147483647; };
+  x = 0; y = 0;
+  for (let k = 0; k < 45000; k++) {
+    const wr = x - cr, wi = y - ci, m = Math.sqrt(Math.hypot(wr, wi)), a = Math.atan2(wi, wr) / 2;
+    x = m * Math.cos(a); y = m * Math.sin(a); if (rnd() < 0.5) { x = -x; y = -y; } if (k > 20) bwd.push([x, y]);
+  }
+  function clear(cv, bg) { const t = cv.getContext("2d"); t.fillStyle = bg; t.fillRect(0, 0, cv.width, cv.height); return t; }
+  function drawG1(cv) { // ① 平面の全体
+    const f = cv.closest(".jp-fig"), t = clear(cv, css(f, "--panel")), W = cv.width, s = W / 3.0, ox = W / 2, oy = W / 2;
+    t.fillStyle = css(f, "--mid"); t.globalAlpha = 0.6; bwd.forEach((p) => t.fillRect(ox + s * p[0], oy - s * p[1], 1, 1)); t.globalAlpha = 1;
+    t.fillStyle = css(f, "--coral"); fwd.forEach((p, i) => dot(t, ox + s * p[0], oy - s * p[1], Math.max(0.8, 2.4 - i / 150)));
+  }
+  function drawG2(cv) { // ② 不動点の周りで拡大
+    const f = cv.closest(".jp-fig"), t = clear(cv, css(f, "--panel")), W = cv.width, s = W / 0.7, ox = W / 2, oy = W / 2;
+    t.fillStyle = css(f, "--coral"); fwd.slice(1).forEach((p, i) => dot(t, ox + s * (p[0] - zsr), oy - s * (p[1] - zsi), i < 60 ? 2.8 : 1.7));
+  }
+  function drawG3(cv) { // ③ ひまわりの並べ方（黄金角・距離 √n）
+    const f = cv.closest(".jp-fig"), t = clear(cv, css(f, "--panel")), W = cv.width, ox = W / 2, oy = W / 2;
+    t.fillStyle = css(f, "--gold"); const k = (W / 2 - 12) / Math.sqrt(500);
+    for (let n = 1; n < 500; n++) { const a = n * A, rad = k * Math.sqrt(n); dot(t, ox + rad * Math.cos(a), oy - rad * Math.sin(a), 2.3); }
+  }
+  function drawGolden() {
+    document.querySelectorAll("canvas[data-g]").forEach((cv) => ({ 1: drawG1, 2: drawG2, 3: drawG3 })[cv.dataset.g](cv));
   }
 
-  // ---- 2) 黄金角の渦と、ひまわり ----
-  const sun = document.getElementById("jp-sun");
-  if (sun) {
-    const [cr, ci] = cFromLambda(0.97, GOLDEN_DEG);
-    const fp = fixedPoint(cr, ci);
-    {
-      const { g, w, h } = setup(sun.querySelector("#jp-sun-orbit"));
-      g.fillStyle = BG; g.fillRect(0, 0, w, h);
-      const { pts } = forward(cr, ci, 300);
-      const far = Math.max(...pts.slice(1).map(([a, b]) => Math.hypot(a - fp.zr, b - fp.zi)));
-      const s = (Math.min(w, h) / 2 - 6) / far;
-      pts.forEach(([a, b], i) => {
-        if (i === 0) return;
-        dot(g, w / 2 + s * (a - fp.zr), h / 2 - s * (b - fp.zi), i < 60 ? 2.6 : 1.6, RED);
-      });
-      dot(g, w / 2, h / 2, 2, INK);
-    }
-    {
-      const { g, w, h } = setup(sun.querySelector("#jp-sun-vogel"));
-      g.fillStyle = BG; g.fillRect(0, 0, w, h);
-      const k = (Math.min(w, h) / 2 - 6) / Math.sqrt(400);
-      for (let n = 1; n <= 400; n++) {
-        const a = (n * GOLDEN_DEG * Math.PI) / 180, r = k * Math.sqrt(n);
-        dot(g, w / 2 + r * Math.cos(a), h / 2 - r * Math.sin(a), 2.2, GOLD);
+  /* ---- 2) 力の地図と、その c で残る形 ---- */
+  const mand = document.getElementById("jp-mand"), julia = document.getElementById("jp-julia");
+  let C = { re: -0.123, im: 0.745 }, showInv = false, mandImg = null;
+  const MV = { x0: -2.25, x1: 0.75, y0: -1.3, y1: 1.3 }, JV = { x0: -1.8, x1: 1.8, y0: -1.6, y1: 1.6 };
+  function paint(cv, view, fn, maxIt) {
+    const f = cv.closest(".jp-fig"), ctx = cv.getContext("2d"), W = cv.width, H = cv.height, img = ctx.createImageData(W, H);
+    const S = hex(css(f, "--set")), A0 = hex(css(f, "--esc0")), B0 = hex(css(f, "--esc1"));
+    for (let j = 0; j < H; j++) {
+      const yy = view.y1 - (view.y1 - view.y0) * j / H;
+      for (let i = 0; i < W; i++) {
+        const xx = view.x0 + (view.x1 - view.x0) * i / W;
+        const n = fn(xx, yy, maxIt), k = (j * W + i) * 4; let col;
+        if (n < 0) col = S; else { const t = Math.min(1, Math.sqrt(n / maxIt) * 1.6); col = [A0[0] + (B0[0] - A0[0]) * t, A0[1] + (B0[1] - A0[1]) * t, A0[2] + (B0[2] - A0[2]) * t]; }
+        img.data[k] = col[0]; img.data[k + 1] = col[1]; img.data[k + 2] = col[2]; img.data[k + 3] = 255;
       }
     }
+    ctx.putImageData(img, 0, 0); return ctx;
   }
+  function escM(cx, cy, m) { let a = 0, b = 0; for (let n = 0; n < m; n++) { const aa = a * a - b * b + cx; b = 2 * a * b + cy; a = aa; if (a * a + b * b > 4) return n; } return -1; }
+  function escJ(a, b, m) { for (let n = 0; n < m; n++) { const aa = a * a - b * b + C.re; b = 2 * a * b + C.im; a = aa; if (a * a + b * b > 4) return n; } return -1; }
+  function toPx(v, px, py, cv) { return [(px - v.x0) / (v.x1 - v.x0) * cv.width, (v.y1 - py) / (v.y1 - v.y0) * cv.height]; }
+  function drawMand() { const ctx = paint(mand, MV, escM, 90); mandImg = ctx.getImageData(0, 0, mand.width, mand.height); markC(); }
+  function markC() {
+    const f = mand.closest(".jp-fig"), ctx = mand.getContext("2d"); if (mandImg) ctx.putImageData(mandImg, 0, 0);
+    const [px, py] = toPx(MV, C.re, C.im, mand); ctx.strokeStyle = css(f, "--coral"); ctx.lineWidth = 3;
+    ctx.beginPath(); ctx.arc(px, py, 9, 0, Math.PI * 2); ctx.stroke();
+    ctx.strokeStyle = css(f, "--mid"); ctx.lineWidth = 1; ctx.globalAlpha = 0.5; const [ax, ay] = toPx(MV, 0, 0, mand);
+    ctx.beginPath(); ctx.moveTo(0, ay); ctx.lineTo(mand.width, ay); ctx.moveTo(ax, 0); ctx.lineTo(ax, mand.height); ctx.stroke(); ctx.globalAlpha = 1;
+  }
+  function drawJulia() {
+    const f = julia.closest(".jp-fig"), ctx = paint(julia, JV, escJ, 110);
+    if (showInv) {
+      ctx.fillStyle = css(f, "--coral"); let zr = 1.3, zi = 0.9; let sd = 7; const rd = () => { sd = (sd * 16807) % 2147483647; return sd / 2147483647; };
+      for (let k = 0; k < 9000; k++) {
+        const wr = zr - C.re, wi = zi - C.im; const rr = Math.sqrt(Math.hypot(wr, wi)), a = Math.atan2(wi, wr) / 2;
+        zr = rr * Math.cos(a); zi = rr * Math.sin(a); if (rd() < 0.5) { zr = -zr; zi = -zi; }
+        if (k > 30) { const [px, py] = toPx(JV, zr, zi, julia); ctx.fillRect(px - 1, py - 1, 2.2, 2.2); }
+      }
+    }
+    const n = escM(C.re, C.im, 2000), b = C.im;
+    document.getElementById("jp-readout").textContent = "c = " + C.re.toFixed(3) + (b < 0 ? " − " : " + ") + Math.abs(b).toFixed(3) + "i　0 から c だけを足し続けると：" + (n < 0 ? "残る（形はひとつながり）" : n + 1 + " 段で大きさ 2 を超える（形はかけらに散る）");
+  }
+  function drawMap() { if (mand && julia) { drawMand(); drawJulia(); } }
+  if (mand && julia) {
+    mand.addEventListener("click", (e) => {
+      const rc = mand.getBoundingClientRect();
+      C = { re: MV.x0 + (MV.x1 - MV.x0) * (e.clientX - rc.left) / rc.width, im: MV.y1 - (MV.y1 - MV.y0) * (e.clientY - rc.top) / rc.height };
+      markC(); drawJulia();
+    });
+    document.querySelectorAll("[data-jc]").forEach((b) => b.addEventListener("click", () => { const [a, i] = b.dataset.jc.split(",").map(Number); C = { re: a, im: i }; markC(); drawJulia(); }));
+    const inv = document.getElementById("jp-inv");
+    inv.addEventListener("click", () => { showInv = !showInv; inv.setAttribute("aria-pressed", String(showInv)); drawJulia(); });
+  }
+
+  function all() { drawGolden(); drawMap(); }
+  all();
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", all);
+  new MutationObserver(all).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
 })();
