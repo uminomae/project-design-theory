@@ -92,6 +92,7 @@
       .jp-fig__readout { font-size: .85rem; margin: .6rem 0 0; }
       .jp-fig__readout--pre { white-space: pre-line; font-variant-numeric: tabular-nums; }
       .jp-fig__grid--three { grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); }
+      .jp-fig__grid--one { grid-template-columns: 1fr; max-width: 30rem; margin-inline: auto; }
       .jp-fig__group { margin-top: .9rem; padding-top: .6rem; border-top: 1px solid var(--line); }
       .jp-fig__glabel { margin: 0 0 .2rem; font-size: .8rem; letter-spacing: .04em; color: var(--mid); }
       #jp-lab-c, #jp-lab-1, #jp-lab-2 { cursor: crosshair; }
@@ -314,6 +315,18 @@
 </blockquote>
 <p>（pjdhiro の公開文「<a href="https://uminomae.github.io/pjdhiro/20250531julia/">陰陽なJulia集合を逆にたどる</a>」から）</p>
 <p>平方根で角度は半分になり、マイナスの平方根は、もう一方を半回転させた写しになります。pjdhiro は、この二つの枝の並びを ☯ に見ました。境目に込み入った模様が出ることは、創造が生まれる所についての直感と重なっていました。</p>
+<p>記事が参考にしていたのは、Steven Wittens の「<a href="https://acko.net/blog/how-to-fold-a-julia-fractal/">How to Fold a Julia Fractal</a>」（2013）です。そこでは、点が収まる円を、遡る向きに一段ずつ畳んでいくと、ジュリア集合の形になる様子を、動く図で見せています。下の図は、その見せ方に倣って、このページで新しく描いたものです。大きさ 2 の円の上の点を、<code>±√(w − c)</code> で一段ずつ遡ります。</p>
+<figure class="glow-card reader-figure jp-fig" id="jp-fold">
+<div class="jp-fig__grid jp-fig__grid--one">
+<div class="jp-fig__panel"><p class="jp-fig__label">大きさ 2 の円を、一段ずつ遡って畳む</p><canvas id="jp-fold-cv" width="460" height="460" aria-label="大きさ 2 の円を一段ずつ遡ると、くびれと突き出しが増え、ジュリア集合の形に寄っていく"></canvas></div>
+</div>
+<p class="jp-fig__readout" id="jp-fold-out">図はページの中の JavaScript で描きます。</p>
+<div class="jp-fig__btns"><button type="button" id="jp-fold-reset">最初から</button><button type="button" id="jp-fold-step">一段遡る</button><button type="button" id="jp-fold-play" aria-pressed="false">再生</button></div>
+<div class="jp-fig__btns" role="group" aria-label="c の例"><button type="button" data-fc="golden">黄金角の c</button><button type="button" data-fc="-0.123,0.745">c = −0.12 + 0.75i</button><button type="button" data-fc="-1,0">c = −1</button><button type="button" data-fc="0,0">c = 0（円のまま）</button></div>
+<figcaption>一段遡るごとに、前の曲線を二周たどって平方根を取ります。曲線の内側は、その段の数だけ前へ打っても大きさ 2 を超えない点の集まりで、段を重ねるほど、くり返しても遠くへ行かない点の集まり（充填ジュリア集合）に寄ります。薄い線は一つ前の段です。見せ方は Wittens の記事に倣い、計算と描画はこのページのものです。</figcaption>
+</figure>
+
+<p>円の上の一点は、一段遡るごとに二つに分かれ、二つの点は、円を半周ずつ受け持つように並びます。円が自分に巻きついて畳まれ、くびれと突き出しが段ごとに細かくなっていきます。</p>
 </div></details><details class="sec" id="値を前へ打つと渦になり遡るとジュリア集合の形になる" open><summary>値を前へ打つと渦になり、遡るとジュリア集合の形になる</summary><div class="secbody">
 
 

@@ -272,7 +272,73 @@
     inv.addEventListener("click", () => { showInv = !showInv; inv.setAttribute("aria-pressed", String(showInv)); drawJulia(); });
   }
 
-  function all() { drawFixed(); drawLab(); drawBig(); }
+  /* ---- 4) 円を遡って畳む（#jp-fold、第三部の頭の章） ----
+     大きさ 2 の円の上の点を、±√(w − c) で一段ずつ遡る。一段ごとの曲線は、前の曲線を二周たどって平方根を取り、
+     隣の点に近いほうの枝を選んでつなぐ（曲線の一点 t の行き先が、前の曲線の 2t になる）。
+     曲線の内側は、その段の数だけ前へ打っても大きさ 2 を超えない点の集まりで、段を重ねると充填ジュリア集合に寄る。 */
+  const fold = document.getElementById("jp-fold");
+  let drawFold = () => {};
+  if (fold) {
+    const cv = document.getElementById("jp-fold-cv"), out = document.getElementById("jp-fold-out");
+    const N = 16384, MAXK = 14, FV = { x0: -2.2, x1: 2.2, y0: -2.2, y1: 2.2 };
+    let C = cFromAngle(GOLDEN_DEG, 0.97), levels = [], k = 0, tw = 1, timer = 0;
+    function build() {
+      const re0 = new Float64Array(N), im0 = new Float64Array(N);
+      for (let j = 0; j < N; j++) { const a = (2 * Math.PI * j) / N; re0[j] = 2 * Math.cos(a); im0[j] = 2 * Math.sin(a); }
+      levels = [[re0, im0]];
+      for (let l = 1; l <= MAXK; l++) {
+        const [pr, pi] = levels[l - 1], nr = new Float64Array(N), ni = new Float64Array(N);
+        for (let j = 0; j < N; j++) {
+          const q = (2 * j) % N, wr = pr[q] - C.re, wi = pi[q] - C.im, m = Math.hypot(wr, wi);
+          let sr = Math.sqrt((m + wr) / 2), si = Math.sign(wi || 1) * Math.sqrt(Math.max(0, (m - wr) / 2));
+          if (j > 0) { const dx = sr - nr[j - 1], dy = si - ni[j - 1], ex = -sr - nr[j - 1], ey = -si - ni[j - 1]; if (ex * ex + ey * ey < dx * dx + dy * dy) { sr = -sr; si = -si; } }
+          nr[j] = sr; ni[j] = si;
+        }
+        levels.push([nr, ni]);
+      }
+    }
+    function path(ctx, re, im, re2, im2, s) {
+      ctx.beginPath();
+      for (let j = 0; j < N; j++) {
+        const x = re2 ? re2[j] + (re[j] - re2[j]) * s : re[j], y = im2 ? im2[j] + (im[j] - im2[j]) * s : im[j];
+        const [px, py] = toPx(FV, x, y, cv); if (j === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
+      }
+      ctx.closePath();
+    }
+    drawFold = () => {
+      const f = fold, ctx = cv.getContext("2d");
+      ctx.fillStyle = css(f, "--panel"); ctx.fillRect(0, 0, cv.width, cv.height);
+      ctx.strokeStyle = css(f, "--mid"); ctx.globalAlpha = 0.35; ctx.lineWidth = 1;
+      const [ax, ay] = toPx(FV, 0, 0, cv); ctx.beginPath(); ctx.moveTo(0, ay); ctx.lineTo(cv.width, ay); ctx.moveTo(ax, 0); ctx.lineTo(ax, cv.height); ctx.stroke();
+      if (k > 0) { path(ctx, levels[k - 1][0], levels[k - 1][1]); ctx.stroke(); }
+      ctx.globalAlpha = 1;
+      const [r, i] = levels[k], prev = k > 0 && tw < 1 ? levels[k - 1] : null;
+      path(ctx, r, i, prev && prev[0], prev && prev[1], tw);
+      ctx.fillStyle = css(f, "--set"); ctx.fill("evenodd"); ctx.strokeStyle = css(f, "--coral"); ctx.lineWidth = 1.6; ctx.stroke();
+      out.textContent = "c = " + fmtC(C.re, C.im) + "　" + (k === 0 ? "大きさ 2 の円（まだ遡っていない）" : k + " 段遡った。内側は、" + k + " 歩前へ打っても大きさ 2 を超えない点");
+    };
+    const stop = () => { clearInterval(timer); timer = 0; document.getElementById("jp-fold-play").setAttribute("aria-pressed", "false"); };
+    const step = () => {
+      if (k >= MAXK) { stop(); return false; }
+      k++; tw = 0; const t0 = performance.now(), reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const anim = (now) => { tw = reduce ? 1 : Math.min(1, (now - t0) / 700); drawFold(); if (tw < 1) requestAnimationFrame(anim); };
+      requestAnimationFrame(anim); return true;
+    };
+    document.getElementById("jp-fold-step").addEventListener("click", () => { stop(); step(); });
+    document.getElementById("jp-fold-reset").addEventListener("click", () => { stop(); k = 0; tw = 1; drawFold(); });
+    document.getElementById("jp-fold-play").addEventListener("click", (e) => {
+      if (timer) { stop(); return; }
+      if (k >= MAXK) { k = 0; tw = 1; drawFold(); }
+      e.currentTarget.setAttribute("aria-pressed", "true"); step(); timer = setInterval(() => { if (!step()) stop(); }, 1100);
+    });
+    fold.querySelectorAll("[data-fc]").forEach((b) => b.addEventListener("click", () => {
+      stop(); const v = b.dataset.fc; C = v === "golden" ? cFromAngle(GOLDEN_DEG, 0.97) : (([a, i]) => ({ re: a, im: i }))(v.split(",").map(Number));
+      build(); k = 0; tw = 1; drawFold();
+    }));
+    build();
+  }
+
+  function all() { drawFixed(); drawLab(); drawBig(); drawFold(); }
   all();
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", all);
   new MutationObserver(all).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
