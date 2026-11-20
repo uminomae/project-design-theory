@@ -90,6 +90,11 @@
       .jp-fig__btns button:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
       .jp-fig__btns button[aria-pressed="true"] { background: var(--navy); color: var(--panel); border-color: var(--navy); }
       .jp-fig__readout { font-size: .85rem; margin: .6rem 0 0; }
+      .jp-fig__sliders { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; align-items: end; margin-top: .8rem; }
+      .jp-fig__slider { display: grid; gap: .2rem; flex: 1 1 12rem; min-width: 0; font-size: .85rem; }
+      .jp-fig__slider output { font-variant-numeric: tabular-nums; margin-left: .3rem; }
+      .jp-fig__slider input[type="range"] { width: 100%; accent-color: var(--coral); }
+      .jp-fig__sliders button { font: inherit; font-size: .86rem; border: 1px solid var(--line); background: var(--panel); color: #1d2433; border-radius: 999px; padding: .3rem .8rem; cursor: pointer; }
     </style>
 </head>
 <body class="reader-flow">

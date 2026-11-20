@@ -90,6 +90,11 @@
       .jp-fig__btns button:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
       .jp-fig__btns button[aria-pressed="true"] { background: var(--navy); color: var(--panel); border-color: var(--navy); }
       .jp-fig__readout { font-size: .85rem; margin: .6rem 0 0; }
+      .jp-fig__sliders { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; align-items: end; margin-top: .8rem; }
+      .jp-fig__slider { display: grid; gap: .2rem; flex: 1 1 12rem; min-width: 0; font-size: .85rem; }
+      .jp-fig__slider output { font-variant-numeric: tabular-nums; margin-left: .3rem; }
+      .jp-fig__slider input[type="range"] { width: 100%; accent-color: var(--coral); }
+      .jp-fig__sliders button { font: inherit; font-size: .86rem; border: 1px solid var(--line); background: var(--panel); color: #1d2433; border-radius: 999px; padding: .3rem .8rem; cursor: pointer; }
     </style>
 </head>
 <body class="reader-flow">
@@ -174,12 +179,18 @@ pjdhiro の今の答えは、四段の仮説です。一つ目、美は、美醜
 </div></details><details class="sec" id="値を前へ打つと渦になり遡るとジュリア集合の形になる"><summary>値を前へ打つと渦になり、遡るとジュリア集合の形になる</summary><div class="secbody">
 <p>この章では、式をくり返した値そのものが、平面の上でどんな形になるかを見ます。</p>
 <p>0 から始めて <code>z₀, z₁, z₂…</code> と値を前へ打っていくと、<code>c</code> によっては、点は外へ出ずに、一か所の周りを回りながら寄っていきます。同じ式を <code>±√(z − c)</code> で遡り、二つの枝を決めずに取り続けると、点は境目の上に散って、ジュリア集合の形を描きます。</p>
-<figure class="glow-card reader-figure jp-fig">
+<figure class="glow-card reader-figure jp-fig" data-gctrl>
 <div class="jp-fig__grid">
 <div class="jp-fig__panel"><p class="jp-fig__label">① 平面の全体：前へ打った値（赤）と、遡った点（灰）</p><canvas data-g="1" width="420" height="420" aria-label="前へ打った値は一か所に渦のように集まり、遡った点はジュリア集合の縁を描く"></canvas></div>
 <div class="jp-fig__panel"><p class="jp-fig__label">② ①の赤を、不動点の周りで拡大</p><canvas data-g="2" width="420" height="420" aria-label="一歩ごとに 137.5 度回り、0.97 倍に縮む点の並び"></canvas></div>
 </div>
-<figcaption>① 前へは一か所に寄り（渦）、遡ると境目の形になる。② 一歩ごとに 137.5° 回り、0.97 倍に縮む。外ほど古い点。前へは 0 から 500 歩、遡りは一段ごとに ±√(z − c) のどちらかをでたらめに選び、初めの 20 段を捨てて打った（計算は Claude）。</figcaption>
+<div class="jp-fig__sliders">
+<label class="jp-fig__slider"><span>一歩ごとに回る角度 <output data-gdeg-out>137.5°</output></span><input type="range" data-gdeg min="0" max="360" step="0.1" value="137.5"></label>
+<label class="jp-fig__slider"><span>一歩ごとに寄る倍率 <output data-gr-out>0.970</output></span><input type="range" data-gr min="0.5" max="0.995" step="0.005" value="0.97"></label>
+<button type="button" data-greset>黄金角に戻す</button>
+</div>
+<p class="jp-fig__readout" data-gout>図はページの中の JavaScript で描きます。</p>
+<figcaption>① 前へは一か所に寄り（渦）、遡ると境目の形になる。② 一歩ごとに 137.5° 回り、0.97 倍に縮む。外ほど古い点。スライダで、回る角度と寄る倍率を変えると、その二つになる <code>c</code>（<code>c = λ/2 − λ²/4</code>、λ は倍率と角度を持つ数）で描き直します。前へは 0 から 500 歩、遡りは一段ごとに ±√(z − c) のどちらかをでたらめに選び、初めの 20 段を捨てて打った（計算は Claude）。</figcaption>
 </figure>
 
 <p>図の <code>c</code> は、一歩ごとに回る角度が約 137.5°（黄金角）になるように選んだ値です。前へ打った値は 300 歩打っても外に出ず、一歩ごとに 137.5° 回って 0.97 倍に寄っていきます（Claude の計算）。遡った点が境目のどこにでも近づくことは、数学で確かめられています（ミルナーの定理 3.9）。</p>
@@ -191,13 +202,17 @@ pjdhiro の今の答えは、四段の仮説です。一つ目、美は、美醜
 <p><strong>pjdhiro の問い：</strong>次に、私が気になることは、この渦の軌跡と、ジュリア集合の関係が何を意味するのか、ということを直感で読み取りたいのです。</p>
 </blockquote>
 <p>前へ進むと一か所に寄る渦になり、さかのぼると込み入った境目の形になる。同じ一つの式の前と後ろです。この関係が何を意味するかが、次の章の入口になりました。</p>
-<p>この関係が、ほかの <code>c</code> でも同じかは、下の図で確かめられます。左の地図で <code>c</code> を押すと、右に、その <code>c</code> で残る形が出ます。「遡った点を撒く」を押すと、<code>±√(z − c)</code> で遡った点が重なり、どこから始めても境目に集まります。</p>
+<p>この関係が、ほかの <code>c</code> でも同じかは、下の図で確かめられます。左の地図で <code>c</code> を押すか、下のスライダで <code>c</code> の実部と虚部を動かすと、右に、その <code>c</code> で残る形が出ます。「遡った点を撒く」を押すと、<code>±√(z − c)</code> で遡った点が重なり、どこから始めても境目に集まります。</p>
 <figure class="glow-card reader-figure jp-fig">
 <div class="jp-fig__grid">
 <div class="jp-fig__panel"><p class="jp-fig__label">力の地図（c の平面）。押すと c が変わる</p><canvas id="jp-mand" width="520" height="460" aria-label="マンデルブロ集合。押した所が c になる"></canvas></div>
 <div class="jp-fig__panel"><p class="jp-fig__label">その c で残る形（z の平面）</p><canvas id="jp-julia" width="520" height="460" aria-label="選んだ c の充填ジュリア集合"></canvas></div>
 </div>
 <div class="jp-fig__btns" role="group" aria-label="c の例"><button type="button" data-jc="0,0">c = 0（円）</button><button type="button" data-jc="-1,0">c = −1</button><button type="button" data-jc="-0.378,0.562">黄金角の c</button><button type="button" data-jc="-0.123,0.745">c = −0.12 + 0.75i</button><button type="button" data-jc="-0.8,0.156">c = −0.8 + 0.16i</button><button type="button" data-jc="0.3,0">c = 0.3（地図の外）</button><button type="button" id="jp-inv" aria-pressed="false">遡った点を撒く</button></div>
+<div class="jp-fig__sliders">
+<label class="jp-fig__slider"><span>c の実部 <output id="jp-cre-out">−0.123</output></span><input type="range" id="jp-cre" min="-2.25" max="0.75" step="0.001" value="-0.123"></label>
+<label class="jp-fig__slider"><span>c の虚部 <output id="jp-cim-out">0.745</output></span><input type="range" id="jp-cim" min="-1.3" max="1.3" step="0.001" value="0.745"></label>
+</div>
 <p class="jp-fig__readout" id="jp-readout">図はページの中の JavaScript で描きます。</p>
 <figcaption>左は、0 から始めて <code>c</code> だけを足し続けても残る <code>c</code> の集まり（マンデルブロ集合）。右は、選んだ <code>c</code> で、くり返しても遠くへ行かない点（濃い色）と、行ってしまう点（薄い色ほど早く行く）。「遡った点を撒く」は、<code>±√(z − c)</code> を一段ごとにどちらかの枝を選んで何千回も遡った点です。<code>c</code> を地図の外に置くと、形はひとつながりでなく、かけらに分かれます。</figcaption>
 </figure>
