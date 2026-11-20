@@ -49,7 +49,7 @@ Love と呼びたいものを駆動源として、起業家が意思決定して
 
 <div class="reader-lead"><span class="reader-lead__label">構成</span>
 <ul class="reader-lead__list">
-<li><b><a href="#jp-recurrence">第一部 漸化式は、起業家のよう</a></b>：決定ツリーとの対比で見る起業家の進み方（入れ子の深さ優先探索）、漸化式とは何か、<code>z</code> は起業家の思考・心理・行動、<code>z²</code> は自分で自分を回す一歩</li>
+<li><b><a href="#jp-recurrence">第一部 漸化式は、起業家のよう</a></b>：意思決定の論を一本の木の上に並べ、探索をどうやるか（未来を予測できるものとして全探索するか、未来は作られるものとして入れ子の深さ優先探索で進むか）で見る、漸化式とは何か、<code>z</code> は起業家の思考・心理・行動、<code>z²</code> は自分で自分を回す一歩</li>
 <li><b><a href="#jp-drift">第二部 Love と呼びたいものは、重力のようにドリフトする</a></b>：<code>c</code> は Love と呼びたいものの重力</li>
 <li><b><a href="#jp-origin">第三部 それは、ジュリア集合の漸化式のようだ</a></b>：前へ打つと渦、遡るとジュリア集合</li>
 <li><b><a href="#jp-question">第四部 起業家を駆るものは、ジュリア集合のようなポテンシャルか</a></b>：このページの問いと、一旦の仮説</li>
@@ -61,15 +61,33 @@ Love と呼びたいものを駆動源として、起業家が意思決定して
 
 <!--PART:第一部|漸化式は、起業家のよう-->
 
-## 意思決定は、決定ツリーのように進む、と思われていないか
+## 意思決定の論は、同じ木をどこから見るかの違いか
 
 <!--OPEN-->
 
-<a id="jp-recurrence"></a>見立ての一つ目は、「漸化式は起業家のよう」です。この見立ては、意思決定がどう進むと思われがちか、との対比から出てきました。
+<a id="jp-recurrence"></a>見立ての一つ目は、「漸化式は起業家のよう」です。この見立ては、起業家がどう決めて進むのか、という話題から出てきました。
 
-意思決定は、決定ツリーのように進むものだ、と見られることがあります。それが正しい進め方だと受け取っている人も、少なくないのではないでしょうか。分かれ道ごとに選べる道を並べ、それぞれの先を見込んで、良さそうな一本を選ぶ。選んだ先でまた分かれ道があり、また選ぶ、という進み方です。
+意思決定の進み方には、いくつもの論があります。分かれ道ごとに先を見込んで選ぶ決定ツリー、先で選べる権利の値打ちを見積もるリアルオプション、迷路の中では数手先までしか見えないとしたサイモンの限定合理性、起業家を調べたサラスバシーのコーゼーションとエフェクチュエーションなどです。pjdhiro は、これらを一本の木の上に並べて見ています。
 
-経営学のリアルオプションの考え方も、この木の上で、先で続ける・やめる・広げる、を選べる権利の値打ちを見積もります。サイモンの限定合理性（1956）は、人は数手先までしか見えず、いちばん良い道でなく、十分に満たす道を選ぶ（満足化）としましたが、分かれ道の上で一つずつ選んでいく、という絵は同じです。
+<strong>pjdhiro の見方：</strong>起業家の探索的なエフェクチュエーションのようなことも、ツリー構造に見える。DFS（深さ優先探索）のように目的を変えながら、人に会って気づいたり約束したりする、という構造は変わらない。サラスバシーの言うことも、入れ子の DFS として、ツリーで表せそう。みんな、ツリーをどの位置からどう見ているかの違いで、群盲象を評すように見える。
+
+では、何が違って見えるのか。pjdhiro は、探索のやり方だと見ています。
+
+<strong>pjdhiro の見方：</strong>探索をどうやるのか。未来の側が予測できるものとして、全探索するのか。未来は作られるかのように、入れ子の DFS で進むのか。サイモンの迷路も含めて、各論はこれでまとめて書けると思う。
+
+下の図は、同じ形の木を、三つの位置から見たものです。
+
+<figure class="glow-card reader-figure" id="jp-trees"><div class="jp-trees"><svg viewBox="0 0 260 270" role="img" aria-label="一つ目の木。木の全部が描かれ、先の端の八つの点がどれも見込みで比べられ、根元から一本の道が太く選ばれている" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="260" height="270" rx="10" fill="#ffffff"/><text x="12" y="22" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#1d2433">① 木の全部を見比べる</text><text x="12" y="40" font-family="Noto Sans JP, sans-serif" font-size="10.5" fill="#5b6476">決定ツリー・リアルオプション・コーゼーション</text><g stroke="#9aa3b5" stroke-width="1.4"><line x1="130" y1="70" x2="70" y2="120"/><line x1="130" y1="70" x2="190" y2="120"/><line x1="70" y1="120" x2="40" y2="170"/><line x1="70" y1="120" x2="100" y2="170"/><line x1="190" y1="120" x2="160" y2="170"/><line x1="190" y1="120" x2="220" y2="170"/><line x1="40" y1="170" x2="25" y2="220"/><line x1="40" y1="170" x2="55" y2="220"/><line x1="100" y1="170" x2="85" y2="220"/><line x1="100" y1="170" x2="115" y2="220"/><line x1="160" y1="170" x2="145" y2="220"/><line x1="160" y1="170" x2="175" y2="220"/><line x1="220" y1="170" x2="205" y2="220"/><line x1="220" y1="170" x2="235" y2="220"/></g><g stroke="#24407a" stroke-width="3.2" stroke-linecap="round"><line x1="130" y1="70" x2="190" y2="120"/><line x1="190" y1="120" x2="160" y2="170"/><line x1="160" y1="170" x2="175" y2="220"/></g><g fill="#24407a"><circle cx="130" cy="70" r="5"/><circle cx="70" cy="120" r="4"/><circle cx="190" cy="120" r="4"/><circle cx="40" cy="170" r="4"/><circle cx="100" cy="170" r="4"/><circle cx="160" cy="170" r="4"/><circle cx="220" cy="170" r="4"/><circle cx="25" cy="220" r="4"/><circle cx="55" cy="220" r="4"/><circle cx="85" cy="220" r="4"/><circle cx="115" cy="220" r="4"/><circle cx="145" cy="220" r="4"/><circle cx="175" cy="220" r="5.5"/><circle cx="205" cy="220" r="4"/><circle cx="235" cy="220" r="4"/></g><text x="130" y="252" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#24407a">先の端を全部、見込みで比べて選ぶ</text></svg><svg viewBox="0 0 260 270" role="img" aria-label="二つ目の木。同じ形の木の中ほどに、歩いている人の点がある。点の周りの数手先だけが濃く見え、その先は薄い点線。数手先の一つの点で、十分として止まっている" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="260" height="270" rx="10" fill="#ffffff"/><text x="12" y="22" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#1d2433">② 迷路の中から数手先を見る</text><text x="12" y="40" font-family="Noto Sans JP, sans-serif" font-size="10.5" fill="#5b6476">サイモン（満足化）</text><g stroke="#d9dde5" stroke-width="1.2" stroke-dasharray="3 3"><line x1="130" y1="70" x2="190" y2="120"/><line x1="190" y1="120" x2="160" y2="170"/><line x1="190" y1="120" x2="220" y2="170"/><line x1="40" y1="170" x2="25" y2="220"/><line x1="40" y1="170" x2="55" y2="220"/><line x1="100" y1="170" x2="85" y2="220"/><line x1="100" y1="170" x2="115" y2="220"/><line x1="160" y1="170" x2="145" y2="220"/><line x1="160" y1="170" x2="175" y2="220"/><line x1="220" y1="170" x2="205" y2="220"/><line x1="220" y1="170" x2="235" y2="220"/></g><circle cx="70" cy="120" r="58" fill="#c4573f" fill-opacity="0.06" stroke="#c4573f" stroke-width="1" stroke-dasharray="4 3"/><g stroke="#9aa3b5" stroke-width="1.4"><line x1="70" y1="120" x2="40" y2="170"/><line x1="70" y1="120" x2="100" y2="170"/></g><g stroke="#c4573f" stroke-width="3.2" stroke-linecap="round"><line x1="130" y1="70" x2="70" y2="120"/><line x1="70" y1="120" x2="100" y2="170"/></g><g fill="#d9dde5"><circle cx="190" cy="120" r="4"/><circle cx="160" cy="170" r="4"/><circle cx="220" cy="170" r="4"/><circle cx="25" cy="220" r="4"/><circle cx="55" cy="220" r="4"/><circle cx="85" cy="220" r="4"/><circle cx="115" cy="220" r="4"/><circle cx="145" cy="220" r="4"/><circle cx="175" cy="220" r="4"/><circle cx="205" cy="220" r="4"/><circle cx="235" cy="220" r="4"/></g><circle cx="130" cy="70" r="4" fill="#9aa3b5"/><circle cx="40" cy="170" r="4" fill="#24407a"/><circle cx="70" cy="120" r="6.5" fill="#c4573f"/><path d="M100,160 l2.9,6 6.6,1 -4.8,4.6 1.1,6.6 -5.8,-3.1 -5.8,3.1 1.1,-6.6 -4.8,-4.6 6.6,-1 z" fill="#9a7d0a"/><text x="112" y="186" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#9a7d0a">十分</text><text x="130" y="252" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#c4573f">見える数手先で、十分な道を選んで止まる</text></svg><svg viewBox="0 0 260 270" role="img" aria-label="三つ目の絵。小さな木を深く進み、外れの枝には×が付く。見つけた所の星から、条件を変えた次の木が立ち、そこでも外れと星があり、さらに次の木が立っていく" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="260" height="270" rx="10" fill="#ffffff"/><text x="12" y="22" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#1d2433">③ 見つけた所から次の木へ</text><text x="12" y="40" font-family="Noto Sans JP, sans-serif" font-size="10.5" fill="#5b6476">エフェクチュエーション・入れ子の深さ優先探索</text><g stroke-width="2.4" stroke-linecap="round"><line x1="50" y1="62" x2="28" y2="104" stroke="#24407a"/><line x1="50" y1="62" x2="74" y2="104" stroke="#24407a"/><line x1="142" y1="126" x2="120" y2="168" stroke="#c4573f"/><line x1="142" y1="126" x2="166" y2="168" stroke="#c4573f"/><line x1="222" y1="190" x2="204" y2="228" stroke="#9a7d0a" stroke-dasharray="3 3"/><line x1="222" y1="190" x2="242" y2="228" stroke="#9a7d0a" stroke-dasharray="3 3"/></g><g fill="none" stroke="#5b6476" stroke-width="1.2" stroke-dasharray="4 3"><path d="M80,100 Q120,96 136,120"/><path d="M172,164 Q206,160 217,184"/></g><path d="M136,120 l-6,-2 3,-5 z" fill="#5b6476"/><path d="M217,184 l-6,-2 3,-5 z" fill="#5b6476"/><circle cx="50" cy="62" r="5" fill="#24407a"/><circle cx="142" cy="126" r="5" fill="#c4573f"/><circle cx="222" cy="190" r="5" fill="#9a7d0a"/><g stroke="#5b6476" stroke-width="2"><line x1="22" y1="98" x2="34" y2="110"/><line x1="34" y1="98" x2="22" y2="110"/><line x1="114" y1="162" x2="126" y2="174"/><line x1="126" y1="162" x2="114" y2="174"/></g><path d="M74,95 l2.9,6 6.6,1 -4.8,4.6 1.1,6.6 -5.8,-3.1 -5.8,3.1 1.1,-6.6 -4.8,-4.6 6.6,-1 z" fill="#9a7d0a"/><path d="M166,159 l2.9,6 6.6,1 -4.8,4.6 1.1,6.6 -5.8,-3.1 -5.8,3.1 1.1,-6.6 -4.8,-4.6 6.6,-1 z" fill="#9a7d0a"/><text x="14" y="128" font-family="Noto Sans JP, sans-serif" font-size="10.5" fill="#5b6476">外れ・戻る</text><text x="88" y="90" font-family="Noto Sans JP, sans-serif" font-size="10.5" fill="#5b6476">次の木</text><text x="180" y="156" font-family="Noto Sans JP, sans-serif" font-size="10.5" fill="#5b6476">次の木</text><text x="130" y="252" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#9a7d0a">見つけた所から、条件を変えた木が立つ</text></svg></div><figcaption>同じ形の木を、三つの位置から見た図です。①は、先に木の全部を描いて、先の端を全部見込みで比べ、一本を選びます（太線）。②は、木の中を歩く人（赤い点）から見ます。見えるのは数手先まで（丸の中）で、十分な道が見つかれば、そこで止まります。③は、深く進み、外れなら戻り（×）、何かを見つけたら（星）、そこから条件を変えた次の木で、また探します。木ははじめから一本あるのでなく、進むうちに立っていきます。論の中身から Claude が描いた図で、どの論の図の写しでもありません。</figcaption></figure>
+
+## 未来を予測できるなら、木の全部を探して選ぶ
+
+<!--OPEN-->
+
+<a id="jp-full"></a>図の①は、未来を見込めるものとして、先に木を描く見方です。
+
+決定ツリーは、決めることを木の形に描き、分かれ道ごとに選べる道を並べて、それぞれの先を見込みます。先の端まで全部を見込みで比べ、良さそうな一本を選ぶので、木の全部を探す進み方（全探索）です。意思決定はこう進むものだ、と見られることがあり、それが正しい進め方だと受け取っている人も、少なくないのではないでしょうか。
+
+経営学のリアルオプションも、同じ木の上で、先で続ける・やめる・広げる、を選べる権利の値打ちを見積もります。サラスバシーのいうコーゼーションは、作りたい結果を先に決め、そこへ至る手段を、見込みの利益で選び比べる進み方です。サラスバシーは、コーゼーションの土台の考え方を、未来を予測できる限り、未来をコントロールできる、とまとめています（2001）。どれも、未来の側を見込める木として先に描いておく所が、共通しています。
 
 <details id="jp-tree"><summary>詳しく — 決定ツリーと、リアルオプション（図）</summary>
 
@@ -83,48 +101,50 @@ Love と呼びたいものを駆動源として、起業家が意思決定して
 
 どちらも、先に木を描き、見込みで一本を選ぶ、という形は同じです。違うのは、先で選ぶ四角を、木の中に残しておくかどうかです。
 
-図の例と、この畳みの決定ツリーとリアルオプションの手順の説明は、このページを書いた LLM（Claude）の学習時の知識から書いたもので、原典とは照らしていません。リアルオプションを、市場に関わるオプションを買うことと見る論がサラスバシーとデューに引かれていることと、サラスバシーがリアルオプションの形式ばらない形に触れていることは、すぐ下の畳み「先行研究 — サイモンの迷路と、リアルオプション」で原典と照らしています。
+図の例と、この畳みの決定ツリーとリアルオプションの手順の説明は、このページを書いた LLM（Claude）の学習時の知識から書いたもので、原典とは照らしていません。リアルオプションとコーゼーションについてサラスバシーらが書いたことは、すぐ下の畳み「先行研究 — リアルオプションと、コーゼーション」で原典と照らしています。
 
 </details>
 
-<details><summary>先行研究 — サイモンの迷路と、リアルオプション</summary>
+<details><summary>先行研究 — リアルオプションと、コーゼーション</summary>
 
-サイモンは、1956 年の論文で、生き物の生きる場を、続いた面としてでなく、迷路のような分かれ道の系として描くと都合がよい、と書きました。分かれ目の一つ一つが選ぶ点で、枝を一つ選んで次の分かれ目まで進むことを「一手」と呼びます。生き物は数手先まで見え、その中に食べ物があれば、そこへ行く道を選べます。論文の結びでは、生き物は「最適」な道を見つける感覚も知恵も持たないので、すべての必要をある水準で満たす、満足化の道をたどるしくみを考えた、とまとめます。
+サラスバシーは、2001 年の論文の表で、コーゼーションとエフェクチュエーションを並べました。コーゼーションは、結果が先に与えられ、その結果を作る手段を、見込みの利益で選び比べます。土台の考え方は、未来を予測できる限り、未来をコントロールできる、です。表は、コーゼーションを、予測できる面に目を向けるもの、エフェクチュエーションを、予測できない未来の、自分たちで左右できる面に目を向けるもの、と書き分けています。
 
 リアルオプションについて、サラスバシーとデューは、新しい市場に入ることを、その市場に関わるオプションを買うことと見る論（ミラーとフォルタ、2002）を、ありうる市場の中を探して選ぶ見方の一つとして挙げています（2005）。サラスバシーは 2001 年の論文の推測の一つで、起業家（エフェクチュエーションで進む人）は、長期の計画や正味現在価値の分析を使うことが少なく、使うとしても、リアルオプションの形式ばらない形くらいだろう、と書きました。
 
 <p><b>原文</b></p>
 
-- サイモン（節 Perceptual Powers, Storage Capacity, and Survival）："It is convenient to describe the organism's life space not as a continuous surface, but as a branching system of paths, like a maze, each branch point representing a choice point."
-- サイモン（結び）："we are concerned only with finding a choice mechanism that will lead it to pursue a 'satisficing' path"
+- サラスバシー p.251（表 1・Underlying logic）：コーゼーション "To the extent we can predict future, we can control it"／エフェクチュエーション "To the extent we can control future, we do not need to predict it"
+- サラスバシー p.251（表 1・Nature of unknowns）：コーゼーション "Focus on the predictable aspects of an uncertain future"／エフェクチュエーション "Focus on the controllable aspects of an unpredictable future"
+- サラスバシー p.251（表 1・Decision-making selection criteria）："Help choose between means to achieve the given effect"／"Selection criteria based on expected return"
 - サラスバシーとデュー p.537："Miller and Folta (2002) take a similar view in 'Option value and entry timing' where they describe a firm's decision to enter a new product or geographic market in terms of purchasing an option on being involved in the market."
 - サラスバシー p.261："effectuators are less likely to use long-term planning or net present value (NPV) analyses; instead, they are likely to be focused on the short term and, at most, to use informal versions of real options."
 
 訳は Claude。
 
-
-出典：Simon (1956) "Rational choice and the structure of the environment", *Psychological Review* 63(2):129–138（本文照合済。[SAGE が公開している再録の PDF](https://uk.sagepub.com/sites/default/files/upm-binaries/25239_Chater~Vol_1~Ch_03.pdf)。頁は再録のもので、節の名で示した）／Sarasvathy & Dew (2005) "New market creation through transformation", *Journal of Evolutionary Economics* 15(5):533–565（本文照合済。[米海軍大学院の機関リポジトリの写し](https://hdl.handle.net/10945/41240)。p.537）／Sarasvathy (2001) "Causation and Effectuation", *Academy of Management Review* 26(2):243–263（本文照合済。[effectuation.org が置いた誌面の写し](https://effectuation.org/hubfs/Journal%20Articles/2016/06/amr01-inevitability-to-contingency-1.pdf)。p.261）
+出典：Sarasvathy (2001) "Causation and Effectuation", *Academy of Management Review* 26(2):243–263（本文照合済。[effectuation.org が置いた誌面の写し](https://effectuation.org/hubfs/Journal%20Articles/2016/06/amr01-inevitability-to-contingency-1.pdf)。pp.251・261）／Sarasvathy & Dew (2005) "New market creation through transformation", *Journal of Evolutionary Economics* 15(5):533–565（本文照合済。[米海軍大学院の機関リポジトリの写し](https://hdl.handle.net/10945/41240)。p.537）
 
 </details>
 
-pjdhiro が、漸化式と起業家を重ねたのは、このリアルオプションの話題の中でした。
-
-<strong>pjdhiro の体験：</strong>リアルオプションの視点が話題になったとき、再帰と反復の関数の違いについて、思いつきで「再帰を使いたい時って、構造を繰り返してる時なんです。起業家みたいに」と言ったことがある。その時、「商いとは飽きない」という言葉を思い出した。
-
-## サラスバシーは、そうでない進み方を見た
+## 未来が作られるなら、入れ子の深さ優先探索で進む
 
 <!--OPEN-->
 
-<a id="jp-effectuation"></a>起業家の意思決定を調べたサラスバシーは、2001 年の論文で、二つの進み方を分けました。作りたい結果を先に決めて、それを作る手段を選ぶコーゼーションと、手持ちの手段を先に置いて、その手段で作れる結果のほうを選ぶエフェクチュエーションです。エフェクチュエーションで進む人は、失ってもよい分を先に決めて、限られた手段でできるだけ多くを試し、うまくいかなければ、目的のほうを作り直します。
+<a id="jp-effectuation"></a>図の②と③は、木の中を歩く位置からの見方です。
 
-決定ツリーのように進む、と見られることのある意思決定とは違う進み方を、サラスバシーは起業家に見た。pjdhiro は、経営学ではこれが Aha だったのではないか、と見ています。
+サイモンは、1956 年の論文で、生き物の生きる場を、迷路のような分かれ道の系として描きました。生き物は数手先までしか見えず、いちばん良い道を探しきるのでなく、十分に満たす道を選ぶ（満足化）、としました。木の中にいると、木の全部は見えません。
 
-<details><summary>先行研究 — エフェクチュエーションの例と原文</summary>
+サラスバシーは、起業家の意思決定を調べ、コーゼーションと並べてエフェクチュエーションを書きました（2001）。手持ちの手段を先に置き、その手段で作れる結果のほうを選ぶ進み方です。失ってもよい分を先に決め、限られた手段でできるだけ多くを試し、うまくいかなければ、目的のほうを作り直します。土台の考え方は、未来をコントロールできる限り、未来を予測する必要はない、と書かれています。予測できない未来を、自分たちで形づくっていく見方です。
+
+<details><summary>先行研究 — サイモンの迷路と、エフェクチュエーションの例</summary>
+
+サイモンは、分かれ目の一つ一つを選ぶ点とし、枝を一つ選んで次の分かれ目まで進むことを「一手」と呼びます。生き物は数手先まで見え、その中に食べ物があれば、そこへ行く道を選べます。論文の結びでは、生き物は「最適」な道を見つける感覚も知恵も持たないので、すべての必要をある水準で満たす、満足化の道をたどるしくみを考えた、とまとめます。
 
 サラスバシーの例では、カレーの店を開こうとした人が、まず昼の配達を数週間やってみて、喜ばれているのが料理より本人の人柄や話だと分かれば、店でなく、本を書き、話をする方へ進むかもしれません。失敗を避けるより、失敗を扱っていく、という見方です。
 
 <p><b>原文</b></p>
 
+- サイモン（節 Perceptual Powers, Storage Capacity, and Survival）："It is convenient to describe the organism's life space not as a continuous surface, but as a branching system of paths, like a maze, each branch point representing a choice point."
+- サイモン（結び）："we are concerned only with finding a choice mechanism that will lead it to pursue a 'satisficing' path"
 - サラスバシー p.245（定義）："Causation processes take a particular effect as given and focus on selecting between means to create that effect. Effectuation processes take a set of means as given and focus on selecting between possible effects that can be created with that set of means."
 - サラスバシー p.252（許容できる損失）："Effectuation predetermines how much loss is affordable and focuses on experimenting with as many strategies as possible with the given limited means."
 - サラスバシー p.247（カレーの店の例）："after a few weeks of trying to build the lunch business, she might discover that the people who said they enjoyed her food did not really enjoy it"
@@ -133,25 +153,21 @@ pjdhiro が、漸化式と起業家を重ねたのは、このリアルオプシ
 
 訳は Claude。木や深さ優先探索のたとえは pjdhiro のもので、2001 年の論文の図は、手持ちの手段から、作れる結果の一つ一つへ、扇のように矢印が広がる形です（p.253）。
 
-出典：Sarasvathy (2001) "Causation and Effectuation", *Academy of Management Review* 26(2):243–263（本文照合済。[effectuation.org が置いた誌面の写し](https://effectuation.org/hubfs/Journal%20Articles/2016/06/amr01-inevitability-to-contingency-1.pdf)。pp.245・247・252・253・259）／Sarasvathy & Dew (2005) "New market creation through transformation", *Journal of Evolutionary Economics* 15(5):533–565（本文照合済。[米海軍大学院の機関リポジトリの写し](https://hdl.handle.net/10945/41240)。p.538。手段から人と関わり約束を重ねていく環の図は p.543）
+出典：Simon (1956) "Rational choice and the structure of the environment", *Psychological Review* 63(2):129–138（本文照合済。[SAGE が公開している再録の PDF](https://uk.sagepub.com/sites/default/files/upm-binaries/25239_Chater~Vol_1~Ch_03.pdf)。頁は再録のもので、節の名で示した）／Sarasvathy (2001) "Causation and Effectuation", *Academy of Management Review* 26(2):243–263（本文照合済。[effectuation.org が置いた誌面の写し](https://effectuation.org/hubfs/Journal%20Articles/2016/06/amr01-inevitability-to-contingency-1.pdf)。pp.245・247・252・253・259）／Sarasvathy & Dew (2005) "New market creation through transformation", *Journal of Evolutionary Economics* 15(5):533–565（本文照合済。[米海軍大学院の機関リポジトリの写し](https://hdl.handle.net/10945/41240)。p.538。手段から人と関わり約束を重ねていく環の図は p.543）
 
 </details>
 
-## 起業家の進み方は、深さ優先探索のように見える
+<a id="jp-dfs"></a>pjdhiro は、この進み方を、計算機の深さ優先探索のように見ています。サラスバシーの語ではなく、pjdhiro の見立てです。深さ優先探索は、木の形をした分かれ道をたどる手順です。一つの枝を選んだら、行けるところまで深く進み、行き止まりや外れなら、一つ前の分かれ目まで戻って、まだ試していない次の枝へ進みます。
 
-<!--OPEN-->
+この見立ての始まりは、リアルオプションが話題になったときの、一言でした。
 
-<a id="jp-dfs"></a>pjdhiro は、起業家のこの進み方を、計算機の深さ優先探索のように見ています。サラスバシーの語ではなく、pjdhiro の見立てです。
+<strong>pjdhiro の体験：</strong>リアルオプションの視点が話題になったとき、再帰と反復の関数の違いについて、思いつきで「再帰を使いたい時って、構造を繰り返してる時なんです。起業家みたいに」と言ったことがある。その時、「商いとは飽きない」という言葉を思い出した。
 
-深さ優先探索は、木の形をした分かれ道をたどる手順です。一つの枝を選んだら、行けるところまで深く進み、行き止まりや外れなら、一つ前の分かれ目まで戻って、まだ試していない次の枝へ進みます。
+<strong>pjdhiro の見方：</strong>再帰で書きたくなるのは、深さ優先探索のようなプロセスだからだと思う。ツリーを扱う際の反復、そこでの試行錯誤。起業家や研究者のような、愚直に飽きずにやる姿勢を言いたかったのだと思う。
 
-pjdhiro は、「再帰を使いたい時って、構造を繰り返してる時なんです」と言ったときのことを、こう振り返っています。
+探索は、一本の木を一度たどって終わり、ではありません。
 
-<strong>pjdhiro の見方：</strong>再帰で書きたくなるのは、深さ優先探索のようなプロセスだからだと思う。リアルオプションの話題で出たのは、ツリーを扱う際の反復、そこでの試行錯誤。起業家や研究者のような、愚直に飽きずにやる姿勢を言いたかったのだと思う。
-
-探索は、一本の木を一度たどって終わり、ではありません。pjdhiro は、こう見ています。
-
-<strong>pjdhiro の見方：</strong>DFS（深さ優先探索）の先で見つけたら、そこから、条件やパラメータを変えて、次の探索が違うツリーに対して始まるんじゃないかな。DFS に DFS が入れ子になっている、ということです。というか、常識的にそうでは？ DFS を一回やって人生終わり、ではないよね。
+<strong>pjdhiro の見方：</strong>DFS の先で見つけたら、そこから、条件やパラメータを変えて、次の探索が違うツリーに対して始まるんじゃないかな。DFS に DFS が入れ子になっている、ということです。というか、常識的にそうでは？ DFS を一回やって人生終わり、ではないよね。
 
 「商いとは飽きない」を、この入れ子の深さ優先探索の形で書いてみます。疑似コードは Claude が書いたものです。
 
@@ -171,17 +187,15 @@ function 試す(いまの所):
 
 打てる手は、手持ちの手段から出します。外れても、やってみたことは経験として残ります。当たりなら、出てきた結果に `試す` をもう一度当てて、その枝を深く進みます。何かを見つけたら、条件を変えた違う木で、次の `試す` が始まります。「試す」という一つの形（構造）を、くり返し当てていくので、自分を呼ぶ関数（再帰）で書きたくなります。外れたら戻って次の枝へ、見つけたら次の木へ、をやめずに続けるのが、「飽きない」です。
 
-決定ツリーとの違いは、木の扱い方にあります。決定ツリーでは、先に木を描き、見込みで一本を選びます。入れ子の深さ優先探索では、木ははじめから一本あるのでなく、見つけたものから次の木が立ちます。外れは無駄でなく、経験として残り、あとの判断に効きます。Love駆動開発でも、pjdhiro は、ほどける・離れる・戻ることを開発に入れ、そのイメージを深さ優先探索で言っています（「[Love駆動開発と呼びたいもの](love-driven-dev.html#ldd-development-scope)」の章「開発とは、何を指すか」）。
-
-サラスバシーとデューは、のちに、新しい市場は、ありうる市場の全体の中を探して選ぶこと（探索と選択）より、手元の現実を変えていくこと（変換）で生まれる、と見ました（2005）。人に会い、約束を重ねるうちに、手段も目的も増え、変わっていきます。見つけたものから、条件の違う次の木が立つ入れ子の探索は、この変換の見方と重なって見えます。
-
-<details class="pd-column" id="jp-dfs-common"><summary>深さ優先探索が、ふつうの人もいる</summary>
-
-深さ優先探索のように進むのは、起業家だけではないかもしれません。pjdhiro は、そう進むのがふつうの人もいる、と見ています。そのうえで、このページに出てきた三つの進み方は、同じものを指している、と見ています。
+この形で見ると、図の②と③は、同じものの別の見え方になります。
 
 <strong>pjdhiro の見方：</strong>サイモンの迷路を途中で止めるネズミも、エフェクチュエーションの分岐や決定がそこそこの段階で切り替わるのも、DFS の先で DFS が始まるのも、どれも同じものを指していると思う。
 
-サイモンの生き物は、いちばん良い道を探しきらず、十分に満たす道が見つかれば、そこで探すのをやめます。エフェクチュエーションで進む人は、失ってもよい分の中で試し、そこそこの所で目的のほうを作り直します。入れ子の深さ優先探索は、見つけた所で、条件を変えた次の木へ移ります。どれも、一本の木を最後まで探しきらずに、途中で次へ切り替える進み方です。決定ツリーで選ぶ進み方と並べたとき、深さ優先探索が起業家らしさとして目に付く、というだけで、どちらかが良いという話ではありません。
+サイモンの生き物は、十分に満たす道が見つかれば、そこで探すのをやめます。エフェクチュエーションで進む人は、失ってもよい分の中で試し、そこそこの所で目的のほうを作り直します。入れ子の深さ優先探索は、見つけた所で、条件を変えた次の木へ移ります。どれも、一本の木を最後まで探しきらずに、途中で次の木へ移る進み方です。サラスバシーとデューは、のちに、新しい市場は、ありうる市場の全体を探して選ぶこと（探索と選択）より、手元の現実を変えていくこと（変換）で生まれる、と見ました（2005）。見つけたものから次の木が立つ、という絵は、この変換の見方とも重なって見えます。Love駆動開発でも、pjdhiro は、ほどける・離れる・戻ることを開発に入れ、そのイメージを深さ優先探索で言っています（「[Love駆動開発と呼びたいもの](love-driven-dev.html#ldd-development-scope)」の章「開発とは、何を指すか」）。
+
+<details class="pd-column" id="jp-dfs-common"><summary>深さ優先探索が、ふつうの人もいる</summary>
+
+深さ優先探索のように進むのは、起業家だけではないかもしれません。pjdhiro は、そう進むのがふつうの人もいる、と見ています。図の①の進み方と並べたときに、③が起業家らしさとして目に付く、というのが pjdhiro の見方です。
 
 </details>
 
@@ -189,7 +203,7 @@ function 試す(いまの所):
 
 <!--OPEN-->
 
-<a id="jp-rec-def"></a>深さ優先探索で進む起業家を、外から一本の道として見ると、やってみた結果が、次の一歩の出発になっています。人に会い、気づきを得て、その気づきを持ってまた人に会う。この「前の結果から次を決める」形を、数学では漸化式と言います。ジュリア集合の式と起業家の話のつなぎ目は、この一歩をくり返す形です。
+<a id="jp-rec-def"></a>入れ子の深さ優先探索で進む起業家を、外から一本の道として見ると、やってみた結果が、次の一歩の出発になっています。木が変わっても、人に会い、気づき、約束する、という一歩の形は変わりません。人に会い、気づきを得て、その気づきを持ってまた人に会う。この「前の結果から次を決める」形を、数学では漸化式と言います。ジュリア集合の式と起業家の話のつなぎ目は、この一歩をくり返す形です。
 
 漸化式は、数の並びの次の値を、一つ前の値から決める決まりです。たとえば「2 倍する」と決めて 1 から始めると、1、2、4、8 と進みます。出てきた値に、また同じ決まりを当てます。下の図で、決まりとはじめの値を選んで、一歩ずつ進めてみてください。
 
@@ -446,7 +460,7 @@ pjdhiro は、この論について、こう見ています。
 
 <a id="jp-drift"></a>見立ての二つ目は、「Love と呼びたいものは重力のようにドリフトする」です。式では `c` に当たります。ドリフトは、流れに押されて、少しずつ漂うようにずれていくことです。
 
-「[Love駆動開発と呼びたいもの](love-driven-dev.html)」は、人やプロジェクトを動かしているもの（駆動源）を、Love と呼びたいものと置く読み物です。pjdhiro は、その Love と呼びたいものを、漸化式の `c` に置きました。`c` は人ごとに違い、一人の中では一定だ、と置いています。土台には、Love と重力の構造の似かたを問う見方があります（読み物「[愛は、重力に似ていないか](gravity-love.html)」）。
+「[Love駆動開発と呼びたいもの](love-driven-dev.html)」は、人やプロジェクトを動かしているもの（駆動源）を、Love と呼びたいものと置く読み物です。pjdhiro は、その Love と呼びたいものを、漸化式の `c` に置きました。`c` は人ごとに違い、一人の中では一定だ、と置いています。第一部の木で言えば、人に会い、気づき、約束する一歩ごとに、毎回同じだけ加わるものです。土台には、Love と重力の構造の似かたを問う見方があります（読み物「[愛は、重力に似ていないか](gravity-love.html)」）。
 
 <strong>pjdhiro の見方：</strong>愛は重力と似ていないか？ それは c と似ていないか？ という感じですね。一つは、基礎にある視点。なので、汎用的に色々使えそう。まずは創造、それ以外にも。
 
@@ -504,7 +518,7 @@ pjdhiro は 2025 年 5 月、ジュリア集合の形を、点がどこから来
 
 <a id="jp-vortex"></a>前へ進めて渦になるのは、`c` がマンデルブロ集合の本体（大きなハート形）の中にあるときです。
 
-よく見るジュリア集合の絵は、平面のすべての点を出発点にして式をくり返し、遠くへ行く点と行かない点を塗り分けて描きます（章の終わりの畳みの図）。この章でするのは、それとは別のことです。出発点を 0 の一つだけにして、出てきた値 `z₀, z₁, z₂…` そのものを順に平面に打ちます（赤）。そして、赤の一点から、同じ式を逆に `±√(z − c)` で一段ずつ遡ります。遡る一段では、`+√` と `−√` の両方をたどるので、一段ごとに点が二倍に分かれます。その枝を全部打ちます。
+よく見るジュリア集合の絵は、平面のすべての点を出発点にして式をくり返し、遠くへ行く点と行かない点を塗り分けて描きます（章の終わりの畳みの図）。この章でするのは、それとは別のことです。出発点を 0 の一つだけにして、出てきた値 `z₀, z₁, z₂…` そのものを順に平面に打ちます（赤）。第一部の木で言えば、塗り分けは平面の全部の点を試す全探索の絵で、前へ打つ赤は、一本の道を歩いた跡の絵です。同じ式を、どの位置から見るかの違いです。そして、赤の一点から、同じ式を逆に `±√(z − c)` で一段ずつ遡ります。遡る一段では、`+√` と `−√` の両方をたどるので、一段ごとに点が二倍に分かれます。その枝を全部打ちます。
 
 <details><summary>詳しく — よくある塗り分けと、この章の打ち方の違い（計算式とプロット）</summary>
 
