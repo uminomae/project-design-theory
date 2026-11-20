@@ -436,16 +436,28 @@
     square: { f: (a) => a * a, show: (p) => p + "²", name: "二乗する" },
     sqm1: { f: (a) => a * a - 1, show: (p) => p + "² − 1", name: "二乗して −1 を足す" },
   };
-  let R = { rule: "double", a0: 1, seq: [1], timer: null };
+  let R = { rule: "double", a0: 1, seq: [1], timer: null, LO: -10, HI: 10 };
   const nf = (v) => { const r = Math.round(v * 1000) / 1000; return (r < 0 ? "−" : "") + Math.abs(r); };
+  const REC_STEPS = 12;
+  // 数直線の長さ：始めるとき（決まりかはじめの値を変えたとき）に、先の値を REC_STEPS 歩まで計算し、
+  // 届く大きさに合う切りのよい長さ（0.5・1・2・5・10・20・50・100）を選ぶ。100 を超えて遠ざかる値は「図の外」と出す。
+  // 値がどれも 0 以上なら、0 から始まる数直線にして、小数の動きを広く見せる。
+  function scaleRec() {
+    const f = RULES[R.rule].f; let v = R.a0, m = Math.abs(v), lo = v;
+    for (let n = 0; n < REC_STEPS && Math.abs(v) <= 1e6; n++) { v = f(v); m = Math.max(m, Math.min(Math.abs(v), 100)); lo = Math.min(lo, v); }
+    const HI = [0.5, 1, 2, 5, 10, 20, 50, 100].find((h) => m <= h) || 100;
+    R.HI = HI; R.LO = lo >= 0 ? 0 : -HI;
+  }
   function drawRec() {
     if (!rec) return;
     const cv = document.getElementById("jp-rec-cv"), ctx = cv.getContext("2d"), W = cv.width, H = cv.height;
-    const LO = -10, HI = 10, X = (v) => 30 + (v - LO) / (HI - LO) * (W - 60), y0 = H * 0.66;
+    const LO = R.LO, HI = R.HI, X = (v) => 30 + (v - LO) / (HI - LO) * (W - 60), y0 = H * 0.66;
     ctx.fillStyle = css(rec, "--panel"); ctx.fillRect(0, 0, W, H);
     ctx.strokeStyle = css(rec, "--mid"); ctx.lineWidth = 1.5; ctx.beginPath(); ctx.moveTo(14, y0); ctx.lineTo(W - 14, y0); ctx.stroke();
     ctx.fillStyle = css(rec, "--mid"); ctx.font = "22px sans-serif"; ctx.textAlign = "center";
-    for (let k = LO; k <= HI; k++) { const big = k % 2 === 0; ctx.beginPath(); ctx.moveTo(X(k), y0 - (big ? 8 : 4)); ctx.lineTo(X(k), y0 + (big ? 8 : 4)); ctx.stroke(); if (big) ctx.fillText(k < 0 ? "−" + -k : String(k), X(k), y0 + 36); }
+    // 目盛り：小さい目盛りは長さの 1/20 ごと、数字は 1/10 ごと（片側だけの数直線は 1/5 ごと）
+    const span = HI - LO, minor = span / 20, every = LO === 0 ? 4 : 2;
+    for (let i = 0; i <= 20; i++) { const k = LO + i * minor, big = i % every === 0; ctx.beginPath(); ctx.moveTo(X(k), y0 - (big ? 8 : 4)); ctx.lineTo(X(k), y0 + (big ? 8 : 4)); ctx.stroke(); if (big) ctx.fillText(nf(k), X(k), y0 + 36); }
     const s = R.seq;
     for (let n = 1; n < s.length; n++) {
       const a = s[n - 1], b = s[n]; if (Math.abs(a) > HI) break;
@@ -468,9 +480,10 @@
   const SUB = "₀₁₂₃₄₅₆₇₈₉"; function sub(n) { return String(n).split("").map((d) => SUB[+d]).join(""); }
   const paren = (v) => (v < 0 ? "(" + nf(v) + ")" : nf(v));
   if (rec) {
+    scaleRec();
     const stopR = () => { if (R.timer) { clearInterval(R.timer); R.timer = null; } document.getElementById("jp-rec-play").setAttribute("aria-pressed", "false"); };
-    const reset = () => { stopR(); R.seq = [R.a0]; drawRec(); };
-    const stepR = () => { const s = R.seq, v = s[s.length - 1]; if (s.length > 12 || Math.abs(v) > 1e6) return false; s.push(RULES[R.rule].f(v)); drawRec(); return true; };
+    const reset = () => { stopR(); R.seq = [R.a0]; scaleRec(); drawRec(); };
+    const stepR = () => { const s = R.seq, v = s[s.length - 1]; if (s.length > REC_STEPS || Math.abs(v) > 1e6) return false; s.push(RULES[R.rule].f(v)); drawRec(); return true; };
     rec.querySelectorAll("[data-rule]").forEach((b) => b.addEventListener("click", () => {
       R.rule = b.dataset.rule; rec.querySelectorAll("[data-rule]").forEach((x) => x.setAttribute("aria-pressed", String(x === b))); reset();
     }));
@@ -480,7 +493,7 @@
     document.getElementById("jp-rec-reset").addEventListener("click", reset);
     document.getElementById("jp-rec-play").addEventListener("click", (e) => {
       if (R.timer) { stopR(); return; }
-      if (R.seq.length > 12) R.seq = [R.a0];
+      if (R.seq.length > REC_STEPS) R.seq = [R.a0];
       e.currentTarget.setAttribute("aria-pressed", "true"); stepR(); R.timer = setInterval(() => { if (!stepR()) stopR(); }, 900);
     });
   }
