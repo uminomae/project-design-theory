@@ -105,15 +105,20 @@
       ctx.strokeStyle = css(f, "--coral"); ctx.lineWidth = 3; ctx.beginPath(); ctx.arc(px, py, 8, 0, Math.PI * 2); ctx.stroke();
     }
     // 赤の一点 z_n から遡る：一段ごとに ±√(w − c) の二つに分かれる木。実際に通った z_{n−1}, z_{n−2}… は、そのうちの一通り
+    // 木を全部持つと k 段目は 2^k 個で、100 段なら 2^100 個になり描けない。そこで FULL 段までは木を全部持ち、
+    // それより深い段は、FULL 段目の 2^FULL 個の点から始まる道を一本ずつ、一段ごとに枝を一つだけ選んで遡る（逆の反復）。
+    const FULL = 11;
     function treeLevels() {
-      // 段 k の点は 2^k 個。Float64Array に x, y を交互に詰める（親は 2 で割った番号）
+      // Float64Array に x, y を交互に詰める（木の段では、親は 2 で割った番号。道の段では、親は同じ番号）
       const n = Math.min(st.n, fwd.pts.length - 1), z = fwd.pts[n], lv = [Float64Array.of(z[0], z[1])];
+      let seed = 12345; const rnd = () => { seed = (seed * 1103515245 + 12345) >>> 0; return seed >>> 16 & 1; };
       for (let k = 1; k <= st.d; k++) {
-        const prev = lv[k - 1], cnt = prev.length / 2, next = new Float64Array(cnt * 4);
+        const prev = lv[k - 1], cnt = prev.length / 2, tree = k <= FULL, next = new Float64Array(tree ? cnt * 4 : cnt * 2);
         for (let i = 0; i < cnt; i++) {
           const wr = prev[2 * i] - st.c.re, wi = prev[2 * i + 1] - st.c.im, m = Math.sqrt(Math.hypot(wr, wi)), a = Math.atan2(wi, wr) / 2;
           const x = m * Math.cos(a), y = m * Math.sin(a);
-          next[4 * i] = x; next[4 * i + 1] = y; next[4 * i + 2] = -x; next[4 * i + 3] = -y;
+          if (tree) { next[4 * i] = x; next[4 * i + 1] = y; next[4 * i + 2] = -x; next[4 * i + 3] = -y; }
+          else { const sg = rnd() ? 1 : -1; next[2 * i] = sg * x; next[2 * i + 1] = sg * y; }
         }
         lv.push(next);
       }
@@ -169,7 +174,8 @@
       else if (fp.mod < 1) s += "寄る一点 z* = " + fmtC(fp.zr, fp.zi) + "。その近くでは、一歩ごとに " + fp.deg.toFixed(1) + "° 回り、" + fp.mod.toFixed(3) + " 倍に寄ります。";
       else s += N_MAX + " 歩で外へ出ませんが、この c は大きなハート形の外か縁にあり、一点の周りを同じ角度で回りながら寄る形にはなりません。";
       const d = st.d, back = Math.min(d, n);
-      s += "\n遡る：" + n + " 歩目の値（紺の点）から " + d + " 段遡ると、" + (2 ** d).toLocaleString("ja-JP") + " 通りに分かれます。";
+      s += "\n遡る：" + n + " 歩目の値（紺の点）から " + d + " 段遡ると、" + (d <= 30 ? (2 ** d).toLocaleString("ja-JP") : "約 " + (2 ** d).toExponential(2).replace("e+", " × 10^")) + " 通りに分かれます。";
+      if (d > FULL) s += FULL + " 段目までは枝を全部打ち、それより深い段は、" + (2 ** FULL).toLocaleString("ja-JP") + " 本の道を、一段ごとに枝を一つ選んで遡って打っています。";
       if (d === 0) s += "（遡る段数を増やすと、分かれていきます）";
       else if (n === 0) s += "出発点より前は通っていないので、赤い太線はありません。";
       else s += "実際に通った " + (n - 1) + " 歩目" + (back > 1 ? "〜" + (n - back) + " 歩目" : "") + "は、そのうちの一通り（赤い太線）です。";

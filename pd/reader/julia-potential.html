@@ -335,13 +335,13 @@
 <td>やめる所</td>
 <td><code>zₙ</code> の原点からの距離が 2 を超えたら（遠くへ行く）。決めた回数（この章の図では 110 回）超えなければ、行かないとみなす</td>
 <td>決めた歩数まで（この章の図では、はじめ 100 歩。200 歩まで）</td>
-<td>決めた段数まで（この章の図では、はじめ 15 段。16 段まで）</td>
+<td>決めた段数まで（この章の図では、はじめ 100 段。100 段まで）</td>
 </tr>
 <tr>
 <td>平面に打つもの</td>
 <td>出発点の位置に、遠くへ行くまでの回数を色にして塗る。行かない点は濃い色</td>
 <td>出てきた値 <code>z₁, z₂, z₃…</code> のそれぞれの位置</td>
-<td>遡って出てきた点の全部（<code>k</code> 段目は <code>2ᵏ</code> 個）</td>
+<td>遡って出てきた点（<code>k</code> 段目は <code>2ᵏ</code> 通り。この章の図では、11 段目までは全部、それより深い段は 2,048 本の道を一段ごとに枝を一つ選んで遡ったもの）</td>
 </tr>
 <tr>
 <td>見えるもの</td>
@@ -369,7 +369,7 @@
 <div class="jp-fig__btns"><button type="button" id="jp-lab-reset">最初から</button><button type="button" id="jp-lab-step">一歩進める</button><button type="button" id="jp-lab-play" aria-pressed="false">再生</button><button type="button" id="jp-lab-bg" aria-pressed="false">よくある塗り分けを薄く重ねる</button><button type="button" id="jp-lab-deeper">一段深く遡る</button></div>
 <div class="jp-fig__sliders">
 <label class="jp-fig__slider"><span>前へ打つ歩数（遡り始める点） <output for="jp-lab-n">100</output></span><input type="range" id="jp-lab-n" min="0" max="200" step="1" value="100"></label>
-<label class="jp-fig__slider"><span>遡る段数 <output for="jp-lab-d">15</output></span><input type="range" id="jp-lab-d" min="0" max="16" step="1" value="15"></label>
+<label class="jp-fig__slider"><span>遡る段数 <output for="jp-lab-d">100</output></span><input type="range" id="jp-lab-d" min="0" max="100" step="1" value="100"></label>
 </div></div>
 <div class="jp-fig__group"><p class="jp-fig__glabel">自分で c を選ぶ（どちらで動かしても、もう一方が揃う）</p>
 <div class="jp-fig__sliders">
@@ -378,13 +378,14 @@
 <label class="jp-fig__slider"><span>c の実部 <output for="jp-lab-re">−0.378</output></span><input type="range" id="jp-lab-re" min="-2.25" max="0.75" step="0.001" value="-0.378"></label>
 <label class="jp-fig__slider"><span>c の虚部 <output for="jp-lab-im">0.562</output></span><input type="range" id="jp-lab-im" min="-1.3" max="1.3" step="0.001" value="0.562"></label>
 </div></div>
-<figcaption>前へは 0 から、はじめは 100 歩、最大 200 歩。原点からの距離が 2 を超えたら外へ出たとして止めます。遡りは、赤の一点（いま打った最後の歩の値。紺の点）から、一段ごとに +√ と −√ の両方をたどり、すべての枝を打ちます。色は、紺が浅い段、金が深い段です。15 段遡ると、点は 32,768 通りに分かれます。段の数は、スマートフォンでも引っかからずに描ける大きさにしています。赤い太線は、そのうち実際に前へ通ってきた値（一つ前の歩、その前の歩…）をたどる一通りです。回る角度と寄る倍率は、寄る一点 z* での傾き λ = 2z* の角度と大きさで、c = λ/2 − λ²/4 の関係にあります（倍率が 1 より小さいときだけ決まる）。計算は Claude。</figcaption>
+<figcaption>前へは 0 から、はじめは 100 歩、最大 200 歩。原点からの距離が 2 を超えたら外へ出たとして止めます。遡りは、赤の一点（いま打った最後の歩の値。紺の点）から、一段ごとに +√ と −√ の両方をたどります。はじめは 100 段遡ります。色は、紺が浅い段、金が深い段です。k 段遡ると 2 の k 乗通りに分かれ、100 段では約 1.27 × 10 の 30 乗通りになるので、全部は打てません。11 段目（2,048 通り）までは枝を全部打ち、それより深い段は、その 2,048 本の道を、一段ごとに +√ と −√ のどちらか一つを選んで遡って打ちます（一つを選んで遡るのは、ジュリア集合を描くよく知られた方法です）。赤い太線は、そのうち実際に前へ通ってきた値（一つ前の歩、その前の歩…）をたどる一通りです。回る角度と寄る倍率は、寄る一点 z* での傾き λ = 2z* の角度と大きさで、c = λ/2 − λ²/4 の関係にあります（倍率が 1 より小さいときだけ決まる）。計算は Claude。</figcaption>
 </figure>
 
 <details class="acc"><summary>手を動かして確かめる — こう動かすと、こう見える</summary>
 
 <ul>
 <li>遡る段数を 0 にして、「一段深く遡る」を何度かクリック：紺の点から、一段ごとに枝が二つに分かれます。赤い太線（実際に通ってきた道）は一通りだけで、ほかの枝は渦から離れて外へ広がり、8 段ほどで境目の形が見えてきます。</li>
+<li>遡る段数を 100 に戻す：12 段より深い段は、金の点が境目の上に細かく散ります。深く遡るほど、どこから遡っても同じ境目に寄ることが見えます。</li>
 <li>「前へ打つ歩数」を 12 ほどに下げる：100 歩目の値は寄る一点にほとんど重なっていて、実際に通ってきた道もその一点に重なって見えません。歩数を下げると、赤い太線が渦をさかのぼって 0 のほうへ戻る道として見えます。</li>
 <li>図の中の赤い渦の別の点をクリック、または「前へ打つ歩数」を動かす：どの歩の値から遡っても、実際の道の一通りのほかは、同じ境目に散ります。</li>
 <li>「最初から」をクリックして「再生」：赤い点が一歩ずつ打たれ、渦を巻いて一か所へ寄っていきます。遡りは、そのつど最後の歩の値から描き直されます。</li>
