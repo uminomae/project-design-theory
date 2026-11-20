@@ -44,6 +44,7 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | `kolliker-1864-darwinsche-schopfungstheorie.md` | A. Kölliker, "Ueber die Darwin'sche Schöpfungstheorie", *Zeitschrift für wissenschaftliche Zoologie* 14 (1864), pp.174–186（独語） | 全文の訳（2026-11-18・#175）。原文は独語で、独語の本文から訳した。文字起こしが無いので、誌面の OCR を下敷きに、読む役が全 13 頁を画像と照らして原文を起こし、訳の案を出した。同じ年の別刷り（Engelmann）とも照らし、字の違いは訳注に書いた。照らす役が段ごとに照らし、Claude が直して入れた。人の校閲はまだ。1893 の ¶21 が、ケリカーを内的な必然による進化の説の例に挙げる。ページ `pd/reader/kolliker-darwinsche-schopfungstheorie-ja.html` |
 | `helmholtz-1847-erhaltung-der-kraft.md` | H. Helmholtz, *Über die Erhaltung der Kraft*, Berlin: G. Reimer, 1847（独語・72 頁） | 全文の訳（2026-11-18・#175）。一冊の本だが一つの論文なので全文。原文は独語で、独語の本文から訳した。1847 年の版の写真複製（Bruxelles 1966）の走査の OCR を下敷きに、読む役六つが全 72 頁を画像と照らして原文と式を起こし、訳の案を出した。照らす役三つが段ごとに照らし、Claude がつないで入れた。読みにくい記号は 1889 年の再版で裏づけた。人の校閲はまだ。1893 の ¶20 が「1847 年のヘルムホルツによるエネルギー保存の崇高な発見」と呼ぶ。ページ `pd/reader/helmholtz-erhaltung-der-kraft-ja.html` |
 | `clausius-1850-bewegende-kraft-der-warme.md` | R. Clausius, "Ueber die bewegende Kraft der Wärme und die Gesetze, welche sich daraus für die Wärmelehre selbst ableiten lassen", *Annalen der Physik und Chemie* 79 (1850), pp.368–397, 500–524（独語・55 頁） | 全文の訳（2026-11-19・#175）。原文は独語で、独語の本文から訳した。誌面の走査の OCR を下敷きに、読む役六つが全 55 頁を画像と照らして原文と式を起こし、訳の案を出した。照らす役三つが段ごとに照らし、Claude がつないで入れた。文中の図 4 つは写さず訳注で形を書いた。人の校閲はまだ。1893 の ¶20・¶58 が「1850 年のクラウジウスとランキンの熱の力学的理論」と言う、クラウジウスの側の論文（パースは題を挙げず、Claude が当てた）。ページ `pd/reader/clausius-bewegende-kraft-der-warme-ja.html` |
+| `rankine-1850-mechanical-action-of-heat.md` | W. J. Macquorn Rankine, "On the Mechanical Action of Heat, especially in Gases and Vapours", *Transactions of the Royal Society of Edinburgh* 20 (1853), pp.147–190（1850 年 2 月 4 日に読む・英語） | 全文の訳（2026-11-20・#175）。序論・第 I〜IV 節・付録と表二つ、全文 260 段・脚注 1。文字起こしが無いので、誌面の走査の OCR を下敷きに、読む役六つが全 44 頁を画像と照らして原文と式と表を起こし、訳の案を出した。照らす役三つが段ごとに照らし、Claude がつないで入れた。人の校閲はまだ。1893 の ¶20・¶58 が、1850 年のクラウジウスとランキンの熱の力学的理論に触れる（題は挙げていない）。ページ `pd/reader/rankine-mechanical-action-of-heat-ja.html` |
 
 次に訳す候補：パースは `../research/peirce-love-abduction/READING-ORDER-20261116.md` の表、1893「Evolutionary Love」が引く論文と本は Issue #175 の一覧。
 
@@ -213,6 +214,27 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | Gewichtseinheit / Volumeneinheit | 重さの単位／体積の単位 | |
 | Gränzwerth / Differentialquotient | 極限値／微分商 | |
 | Kessel / Condensator / Heerd | ボイラー／復水器／炉 | |
+
+### ランキン：表
+
+クラウジウスの表と重なる語（潜熱・全熱・比熱・活力）はそろえた。
+
+| 原語 | 訳語 | 覚え書き |
+|---|---|---|
+| mechanical action of heat | 熱の力学的作用 | |
+| molecular vortices / atmosphere (of the atom) / nucleus | 分子渦／（原子の）大気／核 | |
+| vis viva | 活力 | 今の運動エネルギーに当たる |
+| real specific heat / apparent specific heat | 真の比熱／見かけの比熱 | 真の比熱の記号は黒体文字の k（𝔨） |
+| latent heat / total heat / constituent heat | 潜熱／全熱／構成熱 | |
+| expansive power / mechanical power | 膨張の動力／力学的な動力 | |
+| superficial-atomic elasticity | 原子表面の弾性 | |
+| absolute zero of heat / of temperature | 熱の絶対零度／温度の絶対零度 | |
+| perfect gas / imperfect gas / permanent gases | 完全気体／不完全気体／永久気体 | |
+| unity of weight / of volume / of pressure | 重さの単位／体積の単位／圧力の単位 | |
+| hyperbolic logarithm | 双曲線対数 | 今の自然対数 |
+| partial / total differential coefficient | 偏微分係数／全微分係数 | |
+| depth of fall | 落下の高さ | |
+| useful effect / gross effect / counter-pressure / clearance / ratio of expansion | 有用な効果／効果の総量／背圧／すき間／膨張比 | 蒸気機関の語 |
 
 ### パース：表
 

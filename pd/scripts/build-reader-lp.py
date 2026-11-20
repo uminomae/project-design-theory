@@ -230,6 +230,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は rankine-1850-mechanical-action-of-heat.md（原文〔英語〕と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-rankine-mechanical-action-of-heat-ja.md",
+        ROOT / "scripts/reader-rankine-mechanical-action-of-heat-ja-template.html",
+        ROOT / "reader/rankine-mechanical-action-of-heat-ja.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/creative-thinking/READER-creative-thinking.md",
         ROOT / "scripts/reader-creative-thinking-template.html",
         ROOT / "reader/creative-thinking.html",
@@ -464,6 +471,16 @@ JA_CHAPTERS = {
         "¶78": "II のうち、水蒸気の法則からの外れ",
         "¶96": "熱の単位に対する仕事の当量",
         "注1": "クラウジウスの脚注",
+    },
+    "rankine-1850-mechanical-action-of-heat.md": {
+        "¶1": "題と序論",
+        "¶4": "分子渦の仮説の原理の要約",
+        "¶63": "第 I 節 熱と膨張の動力との相互の変換",
+        "¶108": "第 II 節 真の比熱と見かけの比熱",
+        "¶146": "第 III 節 蒸発の潜熱と全熱",
+        "¶175": "第 IV 節 水蒸気の力学的作用と蒸気機関の動力",
+        "¶238": "第 IV 節への付録と表",
+        "注1": "ランキンの脚注",
     },
 }
 

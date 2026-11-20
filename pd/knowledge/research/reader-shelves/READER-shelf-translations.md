@@ -25,6 +25,7 @@
 - [マンデヴィル『蜂の寓話』（1714）の詩「ぶつぶつ言う蜂の巣」を、日本語で読む](mandeville-grumbling-hive-ja.html)
 - [ヘルムホルツ『力の保存について』（1847）を、日本語で読む](helmholtz-erhaltung-der-kraft-ja.html)
 - [クラウジウス「熱の動力について」（1850）を、日本語で読む](clausius-bewegende-kraft-der-warme-ja.html)
+- [ランキン「熱の力学的作用について」（1850）を、日本語で読む](rankine-mechanical-action-of-heat-ja.html)
 - [ハーシェル「ケトレーの確率論」（1850）を、日本語で読む](herschel-quetelet-probabilities-ja.html)
 - [ダーウィンとウォレスのリンネ協会の論文（1858）を、日本語で読む](darwin-wallace-1858-ja.html)：自然選択の考えが初めて公にされた論文。
 - [ダーウィン「歴史的概略」（『種の起源』第 3 版の巻頭・1861）を、日本語で読む](darwin-historical-sketch-ja.html)
