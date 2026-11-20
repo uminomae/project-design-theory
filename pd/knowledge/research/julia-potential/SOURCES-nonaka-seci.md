@@ -173,3 +173,20 @@
 ## 問い 2 への答え
 
 読めた原典の範囲では、野中は「SECI が起業家一人の内面でもフラクタルにくり返す」とは書いていない。いちばん近いのは次の四つ。(1) 個人の内側での暗黙知と形式知のやりとり：1994 p.22「経験と合理の相互作用で個人の知識が広がる」、2003 p.4（暗黙知＝実践的意識・形式知＝言説的意識が弁証法的にはたらく）、2009 p.638・p.643（「個人の知識変換（表出化と内面化）」を推測として挙げ、心理学の支えを示す。内面化は個人の心理の過程）、2021（両方の知は一人の頭と手にある）。(2) 水準ごとの入れ子：場（ba）は多くの存在論の水準にあり、個人がチームの場を、チームが組織の場をなす（2000 LRP p.19・ICC 2000 p.9）。(3) 2014 年に「dynamic fractal organization」を出したが、何がフラクタルかは本文が有料で読めていない（要旨は組織の形の話）。(4) 一方で野中は、知識は「一人で動く個人によってでなく」相互作用から生まれる（2000 LRP p.15）、知識変換は「個人だけでなく社会の過程」（2009 pp.643–644）と、個人だけに閉じる読みには歯止めをかけている。だから「起業家の内面でも SECI がフラクタルに回る」は、野中の材料（個人の水準の知識変換・入れ子の場）から組み立てた pjdhiro と Claude の読み替えとして書くのが正確。なお 1996 p.215 は、欧米では暗黙知と形式知のやりとりが主に個人（トップや製品の推進者）の水準で起きると書いており、起業家一人の話に当てる材料になりうる。
+
+---
+
+## 歯止めの文を、野中の知識の定めから読み直す（2026-11-20）
+
+pjdhiro の読み（上の問い 2 の答えの (4) を読んで）：「場の入れ子は近い可能性があるね。野中自身の歯止め：知識は「一人で動く個人」だけからは生まれない。というのは、知識とは何かによるんじゃないかな。個人が全く何も知識を持たずに生み出さずに場に貢献できるといいたいわけではないと思うけど。」
+
+LRP 2000 の前後で照らした結果（本文照合済。上の 3 と同じ写し）：
+
+| 頁 | 原文 | 要旨 |
+|---|---|---|
+| p.7 | "we consider knowledge to be ``a dynamic human process of justifying personal belief toward the `truth'''." | 野中らは、知識を、個人の信念を「真」へ向けて正当化していく動的な人間の過程と定める |
+| p.7 | "Information becomes knowledge when it is interpreted by individuals and given a context and anchored in the beliefs and commitments of individuals. Hence, knowledge is relational" | 情報は、個人が解釈し、文脈を与え、個人の信念と関与に錨を下ろしたときに知識になる。だから知識は関係的 |
+| p.14 | "quoting Simon's ``All learning takes place inside individual human heads'', Grant claims that knowledge creation is an individual activity … However, such an argument is based on a view of knowledge and human beings as static and inhuman." | 歯止めの文の相手は、知識を頭の中の静的なものと見るサイモンとグラントの見方 |
+| pp.14–15 | "Knowledge is created through the interactions amongst individuals or between individuals and their environments, rather than by an individual operating alone." | 相互作用の相手には「個人と環境のあいだ」も入る |
+
+読み：pjdhiro の読みのとおり、歯止めの文は、個人が知識を持たずに場に貢献できる、と言っているのではない。知識を、個人の信念と関与に根を持ちながら、文脈の中で正当化されていく動きと定めているので、頭の中に閉じた静的な持ち物としての知識の見方（サイモン・グラント）を退けている。相互作用の相手に環境も入るので、起業家が一人で人や市場とやりとりしながら進む形は、この文と食い違わない（この当てはめは Claude の読み）。
