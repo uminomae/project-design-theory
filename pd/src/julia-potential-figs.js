@@ -173,7 +173,7 @@
       let s = "c = " + fmtC(st.c.re, st.c.im) + "\n前へ：0 から " + n + " 歩目：z = " + fmtC(p[0], p[1]) + "（原点からの距離 " + Math.hypot(p[0], p[1]).toFixed(3) + "）\n";
       if (fwd.escapedAt) s += fwd.escapedAt + " 歩目に原点からの距離が 2 を超え、外へ出ます（発散）。";
       else if (fp.mod < 1) s += "寄る一点 z* = " + fmtC(fp.zr, fp.zi) + "。その近くでは、一歩ごとに " + fp.deg.toFixed(1) + "° 回り、" + fp.mod.toFixed(3) + " 倍に寄ります。";
-      else s += N_MAX + " 歩で外へ出ませんが、この c は大きなハート形の外か縁にあり、一点の周りを同じ角度で回りながら寄る形にはなりません。";
+      else s += N_MAX + " 歩までは外へ出ませんが、この c は大きなハート形の外か縁にあり、一点の周りを同じ角度で回りながら寄る形にはなりません。";
       const d = st.d, back = Math.min(d, n);
       s += "\n遡る：" + n + " 歩目の値（紺の点）から " + d + " 段遡ると、" + (d <= 30 ? (2 ** d).toLocaleString("ja-JP") : "約 " + (2 ** d).toExponential(2).replace("e+", " × 10^")) + " 通りに分かれます。";
       if (d > FULL) s += FULL + " 段目までは枝を全部打ち、それより深い段は、" + (2 ** FULL).toLocaleString("ja-JP") + " 本の道を、一段ごとに枝を一つ選んで遡って打っています。";
