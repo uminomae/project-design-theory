@@ -233,7 +233,7 @@
   const mand = document.getElementById("jp-mand"), julia = document.getElementById("jp-julia");
   let drawBig = () => {};
   if (mand && julia) {
-    let C = { re: -0.123, im: 0.745 }, showInv = false, mandImg = null;
+    let C = { re: -0.123, im: 0.745 }, mandImg = null;
     const JV = { x0: -1.8, x1: 1.8, y0: -1.6, y1: 1.6 };
     const markC = () => {
       const f = mand.closest(".jp-fig"), ctx = mand.getContext("2d"); if (mandImg) ctx.putImageData(mandImg, 0, 0);
@@ -245,14 +245,6 @@
     const drawJulia = () => {
       const f = julia.closest(".jp-fig"), ctx = julia.getContext("2d");
       ctx.putImageData(paint(julia, JV, escJfor(C), 110), 0, 0);
-      if (showInv) {
-        ctx.fillStyle = css(f, "--coral"); let zr = 1.3, zi = 0.9; let sd = 7; const rd = () => { sd = (sd * 16807) % 2147483647; return sd / 2147483647; };
-        for (let k = 0; k < 9000; k++) {
-          const wr = zr - C.re, wi = zi - C.im; const rr = Math.sqrt(Math.hypot(wr, wi)), a = Math.atan2(wi, wr) / 2;
-          zr = rr * Math.cos(a); zi = rr * Math.sin(a); if (rd() < 0.5) { zr = -zr; zi = -zi; }
-          if (k > 30) { const [px, py] = toPx(JV, zr, zi, julia); ctx.fillRect(px - 1, py - 1, 2.2, 2.2); }
-        }
-      }
       const n = escM(C.re, C.im, 2000);
       document.getElementById("jp-readout").textContent = "c = " + fmtC(C.re, C.im) + "　0 から二乗して c を足し続けると：" + (n < 0 ? "残る（形はひとつながり）" : n + 1 + " 歩で大きさ 2 を超える（形はかけらに散る）");
     };
@@ -268,8 +260,6 @@
       const onSlide = () => { C = { re: Number(sRe.value), im: Number(sIm.value) }; oRe.textContent = C.re.toFixed(3); oIm.textContent = C.im.toFixed(3); clearTimeout(t); t = setTimeout(() => { markC(); drawJulia(); }, 30); };
       sRe.addEventListener("input", onSlide); sIm.addEventListener("input", onSlide); sync();
     }
-    const inv = document.getElementById("jp-inv");
-    inv.addEventListener("click", () => { showInv = !showInv; inv.setAttribute("aria-pressed", String(showInv)); drawJulia(); });
   }
 
   /* ---- 4) 円を遡って畳む（#jp-fold、第三部の頭の章） ----

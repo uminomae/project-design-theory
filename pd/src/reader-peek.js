@@ -150,10 +150,35 @@
         b.appendChild(im);
       }
       b.appendChild(document.createTextNode(el.getAttribute('data-peek-dock')));
-      b.addEventListener('click', function () { openPeek(el, b); });
+      b.addEventListener('click', function () {
+        /* 目次の中に置いているときは、目次を閉じてから開く */
+        if (dock.classList.contains('peek-dock--in-toc')) {
+          var x = document.querySelector('#toc .toc-x');
+          if (x && x.offsetParent !== null) x.click();
+        }
+        openPeek(el, b);
+      });
       dock.appendChild(b);
     });
-    document.body.appendChild(dock);
+    /* 狭い幅（600px 以下）では、右下に固定すると図や本文に重なるので、目次の中の頭に置く
+       （2026-11-21・判断のページ q2「狭い幅では、二つの解説のボタンを目次の中へ移す」）。 */
+    var narrow = window.matchMedia ? window.matchMedia('(max-width: 600px)') : null;
+    var placeDock = function () {
+      var toc = document.getElementById('toc');
+      var head = toc && toc.querySelector('.toc-h');
+      if (narrow && narrow.matches && head) {
+        dock.classList.add('peek-dock--in-toc');
+        if (dock.parentNode !== toc || dock.previousElementSibling !== head) head.insertAdjacentElement('afterend', dock);
+      } else {
+        dock.classList.remove('peek-dock--in-toc');
+        if (dock.parentNode !== document.body) document.body.appendChild(dock);
+      }
+    };
+    placeDock();
+    if (narrow) {
+      if (narrow.addEventListener) narrow.addEventListener('change', placeDock);
+      else if (narrow.addListener) narrow.addListener(placeDock);
+    }
   }
 
   /* ---------- 2. 戻るボタン ---------- */

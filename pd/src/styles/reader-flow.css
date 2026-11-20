@@ -543,6 +543,18 @@ body.reader-flow .peek-dock__btn:not(:has(img)) { padding-left: 14px; }
 body.reader-flow .peek-dock__btn img { width: 24px; height: 24px; border-radius: 99px; object-fit: cover; }
 body.reader-flow .peek-dock__btn:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
 html.peek-open body.reader-flow .peek-dock { visibility: hidden; }
+/* 狭い幅では、棚を目次の中の頭に置く（reader-peek.js の placeDock・2026-11-21） */
+body.reader-flow .peek-dock.peek-dock--in-toc {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 6px 0 10px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid var(--glass-border-faint);
+    visibility: visible;
+}
+body.reader-flow .peek-dock--in-toc .peek-dock__btn { box-shadow: none; }
 @media (max-width: 600px) {
     body.reader-flow .reader-article .peek__head { padding-left: 16px; }
     body.reader-flow .reader-article .peek__body { padding: 4px 16px 14px; }
