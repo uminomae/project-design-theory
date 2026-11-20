@@ -1,8 +1,8 @@
-// 読み物「ジュリア集合のような何かが、神・愛・美のポテンシャルなのではないか」の図。計算と描き方は、対話の作業ページ（漸化式を遡るたとえ・版 21）の図のもの。
+// 読み物「起業家の漸化式と、ジュリア集合」の図。計算と描き方は、対話の作業ページ（漸化式を遡るたとえ・版 21）の図のもの。
 // 外部のライブラリは使わず、canvas と素の JS で描く。色は図の枠（.jp-fig）に置いた CSS の変数から読む。
-// 1) 固定の図（data-g）：② 黄金角の c の前へ打った値を不動点の周りで拡大、③ ひまわりの並べ方（第二部）
+// 1) 固定の図（data-g）：② 黄金角の c の前へ打った値を不動点の周りで拡大、③ ひまわりの並べ方（第五部）
 // 2) 手を動かす図（#jp-lab）：c の地図をクリックして c を選ぶ／①で、0 から前へ打った値（赤）と、赤の一点から ±√ の両方で遡る枝を見る（押すと遡りの出発の点が変わる）／ボタン・スライダ／一歩ずつ・再生／塗り分けを重ねる
-// 3) 力の地図と、その c で残る形（#jp-mand・#jp-julia、章の畳み）
+// 3) c を選ぶ地図と、その c で残る形（#jp-mand・#jp-julia、章の畳み）
 // 4) 円を遡って畳む（#jp-fold）：一段を「− c」「√」「−√」の三歩に分け、一歩ずつ・戻す・再生。色で出どころを追う。c は地図のクリックかボタン
 (function () {
   const figs = document.querySelectorAll(".jp-fig");
@@ -229,7 +229,7 @@
     syncSliders();
   }
 
-  /* ---- 3) 力の地図と、その c で残る形（畳みの図） ---- */
+  /* ---- 3) c を選ぶ地図と、その c で残る形（畳みの図） ---- */
   const mand = document.getElementById("jp-mand"), julia = document.getElementById("jp-julia");
   let drawBig = () => {};
   if (mand && julia) {
@@ -254,7 +254,7 @@
         }
       }
       const n = escM(C.re, C.im, 2000);
-      document.getElementById("jp-readout").textContent = "c = " + fmtC(C.re, C.im) + "　0 から c だけを足し続けると：" + (n < 0 ? "残る（形はひとつながり）" : n + 1 + " 段で大きさ 2 を超える（形はかけらに散る）");
+      document.getElementById("jp-readout").textContent = "c = " + fmtC(C.re, C.im) + "　0 から二乗して c を足し続けると：" + (n < 0 ? "残る（形はひとつながり）" : n + 1 + " 歩で大きさ 2 を超える（形はかけらに散る）");
     };
     drawBig = () => { mandImg = paint(mand, MV, escM, 90); markC(); drawJulia(); };
     const sRe = document.getElementById("jp-cre"), sIm = document.getElementById("jp-cim");
