@@ -11,6 +11,7 @@
  *    - 跳び先が図（<figure>）なら、写さずに図そのものを小窓へ移し、閉じたら元の場所へ戻す（canvas の絵と
  *      ボタンの働きを保つため）。題は図の .jp-fig__title か、data-peek-title（2026-11-20・付箋 i20261120122123gig）。
  *    閉じる（×・Esc・小窓の外を押す）と、開いたリンクにフォーカスを戻す。
+ *    data-peek-dock="<字>" も付いた説明は、右下の棚のボタンから、どこを読んでいても開ける（2026-11-20）。
  * 2. 戻るボタン：それ以外のページ内リンク（目次を除く）で跳んだら、左下に「元の所へ戻る」を出す。
  *    押すと、跳ぶ前のリンクの所へ戻る。跳ぶのは reader-flow.js の jumpTo（閉じた畳みを開いて着地する）。
  *    小窓の中のリンクで跳んだときは、小窓を開いたリンクの所へ戻る。
@@ -125,6 +126,35 @@
     var el = targetOf(a);
     if (el && el.hasAttribute('data-peek') && !a.closest('#toc')) a.classList.add('peek-link');
   });
+
+  /* 呼び出しの棚：data-peek-dock="<ボタンの字>" が付いた説明は、右下（目次のボタンの上）にボタンを置き、
+     どこを読んでいても、スクロールせずに小窓で開けるようにする（2026-11-20・付箋 i20261120135227pg5
+     「野中とジュリア集合はmodalにして、どこからでも呼び出せるのがいい。スクロール無しに読みたいものだから」）。
+     説明の本体は、本文に畳みとして見せず hidden の <details> に置いてよい。 */
+  var dockEls = document.querySelectorAll('[data-peek][data-peek-dock]');
+  if (dockEls.length) {
+    var dock = document.createElement('div');
+    dock.className = 'peek-dock';
+    dock.setAttribute('role', 'group');
+    dock.setAttribute('aria-label', EN ? 'Explanations' : '解説を開く');
+    Array.prototype.forEach.call(dockEls, function (el) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'peek-dock__btn';
+      var th = el.querySelector(':scope > summary img');
+      if (th) {
+        var im = document.createElement('img');
+        im.src = th.getAttribute('src');
+        im.alt = '';
+        im.width = 24; im.height = 24;
+        b.appendChild(im);
+      }
+      b.appendChild(document.createTextNode(el.getAttribute('data-peek-dock')));
+      b.addEventListener('click', function () { openPeek(el, b); });
+      dock.appendChild(b);
+    });
+    document.body.appendChild(dock);
+  }
 
   /* ---------- 2. 戻るボタン ---------- */
   var back = document.createElement('div');

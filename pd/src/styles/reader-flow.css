@@ -510,6 +510,39 @@ body.reader-flow .jump-back .jump-back__go {
     box-shadow: var(--glass-shadow-modal);
 }
 body.reader-flow .jump-back .jump-back__x { box-shadow: var(--glass-shadow-modal); background: var(--glass-bg-strong); }
+/* 呼び出しの棚（data-peek-dock）：右下、目次のボタンの上に縦に積む。目次がサイドバーの幅（.toc-fits）では右下の角へ。
+   pjdhiro 2026-11-20「どこからでも呼び出せるのがいい。スクロール無しに読みたいものだから」 */
+body.reader-flow .peek-dock {
+    position: fixed;
+    right: 16px;
+    bottom: 72px;
+    z-index: 58;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+}
+body.reader-flow.toc-fits .peek-dock { bottom: 16px; }
+body.reader-flow .peek-dock__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 36px;
+    padding: 4px 14px 4px 6px;
+    border: 1px solid var(--glass-border-faint);
+    border-radius: 99px;
+    background: var(--glass-bg-strong);
+    color: var(--navy);
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    font-weight: 700;
+    box-shadow: var(--glass-shadow-modal);
+    cursor: pointer;
+}
+body.reader-flow .peek-dock__btn:not(:has(img)) { padding-left: 14px; }
+body.reader-flow .peek-dock__btn img { width: 24px; height: 24px; border-radius: 99px; object-fit: cover; }
+body.reader-flow .peek-dock__btn:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+html.peek-open body.reader-flow .peek-dock { visibility: hidden; }
 @media (max-width: 600px) {
     body.reader-flow .reader-article .peek__head { padding-left: 16px; }
     body.reader-flow .reader-article .peek__body { padding: 4px 16px 14px; }
