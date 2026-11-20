@@ -1429,3 +1429,8 @@ compile 実行の履歴。append-only。
 - scope: 3 ページ確かめ（`cross-refs/concept-entity-map`・`concepts/Love 駆動開発`・`プロジェクトデザイン`）
 - sources: `pd/src/content/site-data.mjs`（`repo.juliaPotential`・`repo.juliaPotentialDesc` の日英の文言）、`pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（Klein 1946 のリンク先を ijp-27-1946-1-2 から ijp-27-1946-3-4 に。参照の一覧と出典の段の四か所）
 - pages: どのページも、足した札の文言と Klein 1946 のリンクを引いていなかったので本文はそのまま。compiled を今日にした。
+
+## [2026-11-20] check | 独立ページ「起業家の漸化式と、ジュリア集合」の題と説明を直したのに合わせる
+- scope: 2 ページ確かめ（`cross-refs/concept-entity-map`・`プロジェクトデザイン`）
+- sources: `pd/src/content/site-data.mjs`（`repo.juliaPotential`・`repo.juliaPotentialDesc` の日英の文言）
+- pages: どちらのページも、この読み物の題と説明を引いていなかったので本文はそのまま。compiled がもう今日なので checked を今の時刻にした。

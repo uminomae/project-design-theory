@@ -24,6 +24,7 @@ source:
   - repo: "ks"
     path: "knowledge/text/foundation/phase1-summary.md"
 compiled: "2026-11-20"
+checked: "2026-11-20T13:36+09:00"
 tags: [cross-ref, map]
 status: 暫定
 review_state: 未レビュー
