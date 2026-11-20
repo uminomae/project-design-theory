@@ -1,7 +1,7 @@
 // 読み物「神・愛・美と、ジュリア集合」の図。計算と描き方は、対話の作業ページ（漸化式を遡るたとえ・版 21）の図のもの。
 // 外部のライブラリは使わず、canvas と素の JS で描く。色は図の枠（.jp-fig）に置いた CSS の変数から読む。
 // 1) 固定の図（data-g）：② 黄金角の c の前へ打った値を不動点の周りで拡大、③ ひまわりの並べ方（第二部）
-// 2) 手を動かす図（#jp-lab）：c の地図を押して c を選ぶ／①を押して出発点を選ぶ／②で赤の一点から遡る枝を見る（押すと遡りの出発の点が変わる）／ボタン・スライダ／一歩ずつ・再生／塗り分けを重ねる
+// 2) 手を動かす図（#jp-lab）：c の地図をクリックして c を選ぶ／①で、0 から前へ打った値（赤）と、赤の一点から ±√ の両方で遡る枝を見る（押すと遡りの出発の点が変わる）／ボタン・スライダ／一歩ずつ・再生／塗り分けを重ねる
 // 3) 力の地図と、その c で残る形（#jp-mand・#jp-julia、章の畳み）
 (function () {
   const figs = document.querySelectorAll(".jp-fig");
@@ -33,16 +33,6 @@
       if (x * x + y * y > 4) { escapedAt = n; break; }
     }
     return { pts, escapedAt };
-  }
-  // 遡る：w → ±√(w − c)。枝は毎回でたらめに選び、初めの 20 段は捨てる（作業ページと同じ種と手順）
-  function backward(c, count) {
-    const out = []; let seed = 12345; const rnd = () => { seed = (seed * 16807) % 2147483647; return seed / 2147483647; };
-    let x = 0, y = 0;
-    for (let k = 0; k < count + 21; k++) {
-      const wr = x - c.re, wi = y - c.im, m = Math.sqrt(Math.hypot(wr, wi)), a = Math.atan2(wi, wr) / 2;
-      x = m * Math.cos(a); y = m * Math.sin(a); if (rnd() < 0.5) { x = -x; y = -y; } if (k > 20) out.push([x, y]);
-    }
-    return out;
   }
   function escM(cx, cy, m) { let a = 0, b = 0; for (let n = 0; n < m; n++) { const aa = a * a - b * b + cx; b = 2 * a * b + cy; a = aa; if (a * a + b * b > 4) return n; } return -1; }
   const escJfor = (c) => (a, b, m) => { for (let n = 0; n < m; n++) { const aa = a * a - b * b + c.re; b = 2 * a * b + c.im; a = aa; if (a * a + b * b > 4) return n; } return -1; };
@@ -86,11 +76,11 @@
   let drawLab = () => {};
   if (lab) {
     const $ = (id) => document.getElementById(id);
-    const cvC = $("jp-lab-c"), cv1 = $("jp-lab-1"), cv2 = $("jp-lab-2"), out = $("jp-lab-out");
-    const sDeg = $("jp-lab-deg"), sR = $("jp-lab-r"), sRe = $("jp-lab-re"), sIm = $("jp-lab-im"), sN = $("jp-lab-n"), sB = $("jp-lab-b"), sD = $("jp-lab-d");
+    const cvC = $("jp-lab-c"), cv1 = $("jp-lab-1"), out = $("jp-lab-out");
+    const sDeg = $("jp-lab-deg"), sR = $("jp-lab-r"), sRe = $("jp-lab-re"), sIm = $("jp-lab-im"), sN = $("jp-lab-n"), sD = $("jp-lab-d");
     const PV = { x0: -1.5, x1: 1.5, y0: -1.5, y1: 1.5 };
-    const st = { c: cFromAngle(GOLDEN_DEG, 0.97), z0: { re: 0, im: 0 }, n: 500, d: 10, nb: 45000, bg: false, playing: false };
-    let mapImg = null, bgImg = null, bwd = [], fwd = { pts: [], escapedAt: 0 }, playTimer = 0, slowTimer = 0;
+    const st = { c: cFromAngle(GOLDEN_DEG, 0.97), n: 500, d: 10, bg: false, playing: false };
+    let mapImg = null, bgImg = null, fwd = { pts: [], escapedAt: 0 }, playTimer = 0, slowTimer = 0;
 
     const setOut = (id, v) => { const o = lab.querySelector(`output[for="${id}"]`); if (o) o.textContent = v; };
     function syncSliders() {
@@ -99,12 +89,11 @@
       const fp = fixedPoint(st.c);
       if (fp.mod < 1) { sDeg.value = fp.deg.toFixed(1); sR.value = fp.mod.toFixed(3); setOut("jp-lab-deg", fp.deg.toFixed(1) + "°"); setOut("jp-lab-r", fp.mod.toFixed(3)); }
       else { setOut("jp-lab-deg", "—"); setOut("jp-lab-r", "—"); }
-      sN.value = st.n; setOut("jp-lab-n", String(st.n)); sB.value = st.nb; setOut("jp-lab-b", String(st.nb)); sD.value = st.d; setOut("jp-lab-d", String(st.d));
+      sN.value = st.n; setOut("jp-lab-n", String(st.n)); sD.value = st.d; setOut("jp-lab-d", String(st.d));
     }
-    // c が変わったときだけ、重い計算（遡り・塗り分け）をやり直す
+    // c が変わったときだけ、前へ打つ計算と塗り分けをやり直す（前へは 0 から）
     function recompute() {
-      bwd = backward(st.c, 45000);
-      fwd = forward(st.c, st.z0, 500);
+      fwd = forward(st.c, { re: 0, im: 0 }, 500);
       bgImg = st.bg ? paint(cv1, PV, escJfor(st.c), 80, 110) : null;
     }
     function drawMap() {
@@ -114,23 +103,7 @@
       const [px, py] = toPx(MV, st.c.re, st.c.im, cvC);
       ctx.strokeStyle = css(f, "--coral"); ctx.lineWidth = 3; ctx.beginPath(); ctx.arc(px, py, 8, 0, Math.PI * 2); ctx.stroke();
     }
-    function draw1() {
-      const f = lab, t = cv1.getContext("2d"), W = cv1.width, H = cv1.height;
-      t.fillStyle = css(f, "--panel"); t.fillRect(0, 0, W, H);
-      if (bgImg) { const off = document.createElement("canvas"); off.width = W; off.height = H; off.getContext("2d").putImageData(bgImg, 0, 0); t.drawImage(off, 0, 0); }
-      t.strokeStyle = css(f, "--line"); t.lineWidth = 1; const [ax, ay] = toPx(PV, 0, 0, cv1);
-      t.beginPath(); t.moveTo(0, ay); t.lineTo(W, ay); t.moveTo(ax, 0); t.lineTo(ax, H); t.stroke();
-      t.fillStyle = css(f, "--mid"); t.globalAlpha = 0.6;
-      for (let k = 0; k < Math.min(st.nb, bwd.length); k++) { const [x, y] = toPx(PV, bwd[k][0], bwd[k][1], cv1); t.fillRect(x, y, 1, 1); }
-      t.globalAlpha = 1;
-      const shown = fwd.pts.slice(0, st.n + 1);
-      t.strokeStyle = css(f, "--coral"); t.globalAlpha = 0.35; t.lineWidth = 1; t.beginPath();
-      shown.forEach((p, i) => { const [x, y] = toPx(PV, p[0], p[1], cv1); i ? t.lineTo(x, y) : t.moveTo(x, y); }); t.stroke(); t.globalAlpha = 1;
-      t.fillStyle = css(f, "--coral"); shown.forEach((p, i) => { const [x, y] = toPx(PV, p[0], p[1], cv1); dot(t, x, y, Math.max(0.8, 2.4 - i / 150)); });
-      const [zx, zy] = toPx(PV, st.z0.re, st.z0.im, cv1); t.strokeStyle = css(f, "--navy"); t.lineWidth = 2; t.beginPath(); t.arc(zx, zy, 6, 0, Math.PI * 2); t.stroke();
-      if (shown.length > 1) { const p = shown[shown.length - 1], [x, y] = toPx(PV, p[0], p[1], cv1); t.fillStyle = css(f, "--navy"); dot(t, x, y, 4); }
-    }
-    // ② 赤の一点 z_n から遡る：一段ごとに ±√(w − c) の二つに分かれる木。実際に通った z_{n−1}, z_{n−2}… は、そのうちの一通り
+    // 赤の一点 z_n から遡る：一段ごとに ±√(w − c) の二つに分かれる木。実際に通った z_{n−1}, z_{n−2}… は、そのうちの一通り
     function treeLevels() {
       const n = Math.min(st.n, fwd.pts.length - 1), z = fwd.pts[n], lv = [[[z[0], z[1], -1]]];
       for (let k = 1; k <= st.d; k++) {
@@ -150,57 +123,63 @@
       }
       return { n, lv, path };
     }
-    function draw2() {
-      const f = lab, t = cv2.getContext("2d"), W = cv2.width, H = cv2.height;
+    function draw1() {
+      const f = lab, t = cv1.getContext("2d"), W = cv1.width, H = cv1.height;
       t.fillStyle = css(f, "--panel"); t.fillRect(0, 0, W, H);
-      t.strokeStyle = css(f, "--line"); t.lineWidth = 1; const [ax, ay] = toPx(PV, 0, 0, cv2);
+      if (bgImg) { const off = document.createElement("canvas"); off.width = W; off.height = H; off.getContext("2d").putImageData(bgImg, 0, 0); t.drawImage(off, 0, 0); }
+      t.strokeStyle = css(f, "--line"); t.lineWidth = 1; const [ax, ay] = toPx(PV, 0, 0, cv1);
       t.beginPath(); t.moveTo(0, ay); t.lineTo(W, ay); t.moveTo(ax, 0); t.lineTo(ax, H); t.stroke();
-      // 下敷き：遡った点（灰・薄く）と、前へ打った値（赤・薄く）
-      t.fillStyle = css(f, "--mid"); t.globalAlpha = 0.3;
-      for (let k = 0; k < Math.min(20000, bwd.length); k++) { const [x, y] = toPx(PV, bwd[k][0], bwd[k][1], cv2); t.fillRect(x, y, 1, 1); }
-      t.fillStyle = css(f, "--coral"); t.globalAlpha = 0.25;
-      fwd.pts.slice(0, st.n + 1).forEach((p) => { const [x, y] = toPx(PV, p[0], p[1], cv2); t.fillRect(x - 1, y - 1, 2, 2); });
+      // 前へ打った値（赤）：0 から、表示する歩数まで
+      const shown = fwd.pts.slice(0, st.n + 1);
+      t.strokeStyle = css(f, "--coral"); t.globalAlpha = 0.3; t.lineWidth = 1; t.beginPath();
+      shown.forEach((p, i) => { const [x, y] = toPx(PV, p[0], p[1], cv1); i ? t.lineTo(x, y) : t.moveTo(x, y); }); t.stroke();
+      t.globalAlpha = 0.75; t.fillStyle = css(f, "--coral"); shown.forEach((p, i) => { const [x, y] = toPx(PV, p[0], p[1], cv1); dot(t, x, y, Math.max(0.8, 2.2 - i / 150)); });
       t.globalAlpha = 1;
+      // 赤の一点から遡った枝（紺 → 金）
       const { lv, path } = treeLevels(), N = hex(css(f, "--navy")), Gd = hex(css(f, "--gold")), D = Math.max(1, st.d);
       const col = (k) => { const u = k / D; return "rgb(" + [0, 1, 2].map((j) => Math.round(N[j] + (Gd[j] - N[j]) * u)).join(",") + ")"; };
       // 枝分かれの線（浅い三段だけ。深い段は点だけ）
       for (let k = 1; k <= Math.min(st.d, 3); k++) {
         t.strokeStyle = col(k); t.globalAlpha = 0.35; t.lineWidth = 1; t.beginPath();
-        lv[k].forEach((p) => { const q = lv[k - 1][p[2]], [x0, y0] = toPx(PV, q[0], q[1], cv2), [x1, y1] = toPx(PV, p[0], p[1], cv2); t.moveTo(x0, y0); t.lineTo(x1, y1); });
+        lv[k].forEach((p) => { const q = lv[k - 1][p[2]], [x0, y0] = toPx(PV, q[0], q[1], cv1), [x1, y1] = toPx(PV, p[0], p[1], cv1); t.moveTo(x0, y0); t.lineTo(x1, y1); });
         t.stroke();
       }
       t.globalAlpha = 1;
       for (let k = st.d; k >= 1; k--) {
         t.fillStyle = col(k); const r = k <= 3 ? 3 : k <= 7 ? 1.8 : 1;
-        lv[k].forEach((p) => { const [x, y] = toPx(PV, p[0], p[1], cv2); dot(t, x, y, r); });
+        lv[k].forEach((p) => { const [x, y] = toPx(PV, p[0], p[1], cv1); dot(t, x, y, r); });
       }
-      // 実際に通った道（赤い線）
-      t.strokeStyle = css(f, "--coral"); t.lineWidth = 2.2; t.beginPath();
-      path.forEach((p, i) => { const [x, y] = toPx(PV, p[0], p[1], cv2); i ? t.lineTo(x, y) : t.moveTo(x, y); }); t.stroke();
-      t.fillStyle = css(f, "--coral"); path.slice(1).forEach((p) => { const [x, y] = toPx(PV, p[0], p[1], cv2); dot(t, x, y, 3); });
-      const [sx, sy] = toPx(PV, lv[0][0][0], lv[0][0][1], cv2); t.fillStyle = css(f, "--navy"); dot(t, sx, sy, 5);
+      // 実際に通った道（赤い太線）
+      t.strokeStyle = css(f, "--coral"); t.lineWidth = 2.4; t.beginPath();
+      path.forEach((p, i) => { const [x, y] = toPx(PV, p[0], p[1], cv1); i ? t.lineTo(x, y) : t.moveTo(x, y); }); t.stroke();
+      t.fillStyle = css(f, "--coral"); path.slice(1).forEach((p) => { const [x, y] = toPx(PV, p[0], p[1], cv1); dot(t, x, y, 3); });
+      const [sx, sy] = toPx(PV, lv[0][0][0], lv[0][0][1], cv1); t.fillStyle = css(f, "--navy"); dot(t, sx, sy, 5);
     }
     function readout() {
       const fp = fixedPoint(st.c), n = Math.min(st.n, fwd.pts.length - 1), p = fwd.pts[n];
-      let s = "c = " + fmtC(st.c.re, st.c.im) + "　出発点 z₀ = " + fmtC(st.z0.re, st.z0.im) + "\n" + n + " 歩目：z = " + fmtC(p[0], p[1]) + "（原点からの距離 " + Math.hypot(p[0], p[1]).toFixed(3) + "）\n";
+      let s = "c = " + fmtC(st.c.re, st.c.im) + "\n前へ：0 から " + n + " 歩目：z = " + fmtC(p[0], p[1]) + "（原点からの距離 " + Math.hypot(p[0], p[1]).toFixed(3) + "）\n";
       if (fwd.escapedAt) s += fwd.escapedAt + " 歩目に原点からの距離が 2 を超え、外へ出ます（発散）。";
       else if (fp.mod < 1) s += "寄る一点 z* = " + fmtC(fp.zr, fp.zi) + "。その近くでは、一歩ごとに " + fp.deg.toFixed(1) + "° 回り、" + fp.mod.toFixed(3) + " 倍に寄ります。";
       else s += "500 歩で外へ出ませんが、この c は大きなハート形の外か縁にあり、一点の周りを同じ角度で回りながら寄る形にはなりません。";
       const d = st.d, back = Math.min(d, n);
-      s += "\n② " + n + " 歩目の値から " + d + " 段遡ると、" + (2 ** d) + " 通りに分かれます。";
+      s += "\n遡る：" + n + " 歩目の値（紺の点）から " + d + " 段遡ると、" + (2 ** d) + " 通りに分かれます。";
       if (d === 0) s += "（遡る段数を増やすと、分かれていきます）";
-      else if (n === 0) s += "出発点より前は通っていないので、赤い線はありません。";
-      else s += "実際に通った " + (n - 1) + " 歩目" + (back > 1 ? "〜" + (n - back) + " 歩目" : "") + "は、そのうちの一通り（赤い線）です。";
+      else if (n === 0) s += "出発点より前は通っていないので、赤い太線はありません。";
+      else s += "実際に通った " + (n - 1) + " 歩目" + (back > 1 ? "〜" + (n - back) + " 歩目" : "") + "は、そのうちの一通り（赤い太線）です。";
       out.textContent = s;
     }
-    drawLab = () => { mapImg = null; recompute(); drawMap(); draw1(); draw2(); readout(); };
-    const redrawLight = () => { draw1(); draw2(); readout(); };
-    const setC = (c, keepZ0) => { st.c = c; st.n = 500; if (!keepZ0) st.z0 = { re: 0, im: 0 }; syncSliders(); clearTimeout(slowTimer); slowTimer = setTimeout(() => { recompute(); drawMap(); redrawLight(); }, 30); };
+    drawLab = () => { mapImg = null; recompute(); drawMap(); draw1(); readout(); };
+    const redrawLight = () => { draw1(); readout(); };
+    const setC = (c) => { st.c = c; st.n = 500; syncSliders(); clearTimeout(slowTimer); slowTimer = setTimeout(() => { recompute(); drawMap(); redrawLight(); }, 30); };
     const stopPlay = () => { st.playing = false; clearTimeout(playTimer); const b = $("jp-lab-play"); b.setAttribute("aria-pressed", "false"); b.textContent = "再生"; };
 
-    // 図を押してパラメータを決める
+    // 図をクリックしてパラメータを決める：地図は c、①はいちばん近い赤の点を遡りの出発にする
     cvC.addEventListener("click", (e) => { stopPlay(); setC(fromPx(MV, e, cvC)); });
-    cv1.addEventListener("click", (e) => { stopPlay(); st.z0 = fromPx(PV, e, cv1); fwd = forward(st.c, st.z0, 500); redrawLight(); });
+    cv1.addEventListener("click", (e) => {
+      stopPlay(); const q = fromPx(PV, e, cv1); let best = 0, bd = Infinity;
+      fwd.pts.slice(0, 501).forEach((p, i) => { const dd = Math.hypot(p[0] - q.re, p[1] - q.im); if (dd < bd) { bd = dd; best = i; } });
+      st.n = best; syncSliders(); redrawLight();
+    });
     // 決まった c
     lab.querySelectorAll("[data-lc]").forEach((b) => b.addEventListener("click", () => {
       stopPlay(); const v = b.dataset.lc;
@@ -214,17 +193,9 @@
     sN.addEventListener("input", () => { stopPlay(); st.n = Number(sN.value); setOut("jp-lab-n", String(st.n)); redrawLight(); });
     sD.addEventListener("input", () => { st.d = Number(sD.value); setOut("jp-lab-d", String(st.d)); redrawLight(); });
     $("jp-lab-deeper").addEventListener("click", () => { st.d = st.d >= 14 ? 0 : st.d + 1; syncSliders(); redrawLight(); });
-    // ② を押すと、いちばん近い赤の点を、遡りの出発にする
-    cv2.addEventListener("click", (e) => {
-      stopPlay(); const q = fromPx(PV, e, cv2); let best = 0, bd = Infinity;
-      fwd.pts.slice(0, 501).forEach((p, i) => { const dd = Math.hypot(p[0] - q.re, p[1] - q.im); if (dd < bd) { bd = dd; best = i; } });
-      st.n = best; syncSliders(); redrawLight();
-    });
-    sB.addEventListener("input", () => { st.nb = Number(sB.value); setOut("jp-lab-b", String(st.nb)); redrawLight(); });
     // 一歩ずつ・再生
     $("jp-lab-step").addEventListener("click", () => { stopPlay(); st.n = Math.min(500, st.n + 1); syncSliders(); redrawLight(); });
     $("jp-lab-reset").addEventListener("click", () => { stopPlay(); st.n = 0; syncSliders(); redrawLight(); });
-    $("jp-lab-z0").addEventListener("click", () => { stopPlay(); st.z0 = { re: 0, im: 0 }; fwd = forward(st.c, st.z0, 500); redrawLight(); });
     $("jp-lab-play").addEventListener("click", (e) => {
       if (st.playing) { stopPlay(); return; }
       st.playing = true; e.currentTarget.setAttribute("aria-pressed", "true"); e.currentTarget.textContent = "止める";
