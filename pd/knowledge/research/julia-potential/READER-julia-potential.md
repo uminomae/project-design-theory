@@ -1,6 +1,6 @@
 # 起業家の漸化式と、ジュリア集合
 
-<figure class="jp-hero"><img src="../assets/img/julia-potential-hero.jpg" alt="暗い宇宙と星を背景に、c = −0.378 + 0.562i のジュリア集合の境目が青白く光る。集合の内側では、0 から前へ打った値の点が金色の渦を巻いて一点へ寄る。周りでは、z → z² + c をくり返す疑似コード「歩く」の文字が、重力に引かれるように渦へ巻き込まれ、左下に同じ疑似コードが読める大きさで置かれている" width="1600" height="800"></figure>
+<figure class="jp-hero"><img src="../assets/img/julia-entre.webp" alt="生成 AI（Google の Gemini）で作った絵。紺色の宇宙を背景に、金色に光るフラクタルの枝が渦を巻いて広がり、中心へ寄っていく点の並びと、重力で曲がったような格子が重なる。左上に、z → z² + c をくり返す疑似コード「function walk(z, c, n)」の三行が英語で書かれている。数式どおりに計算した図ではない" width="1024" height="572"><figcaption>pjdhiro が生成 AI（Google の Gemini）で作った絵です。数式どおりに計算した図ではありません。</figcaption></figure>
 
 <p class="reader-summary__title">概要</p>
 
