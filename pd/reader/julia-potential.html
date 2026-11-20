@@ -116,7 +116,8 @@
       .jp-fig__readout { font-size: .85rem; margin: .6rem 0 0; }
       .jp-fig__readout--pre { white-space: pre-line; font-variant-numeric: tabular-nums; }
       .jp-fig__grid--three { grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); }
-      .jp-fig__grid--one { grid-template-columns: 1fr; max-width: 30rem; margin-inline: auto; }
+      /* 一枚の図は小さめにし、操作のボタンをすぐ下に、状態の文はその後に置く。図と操作が一つの画面に収まり、スクロールせずに動かせる（pjdhiro 2026-11-20・付箋 i20261120135335jag） */
+      .jp-fig__grid--one { grid-template-columns: 1fr; max-width: 18rem; margin-inline: auto; }
       .jp-fig__grid--fold { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); align-items: start; }
       @media (max-width: 40rem) { .jp-fig__grid--fold { grid-template-columns: 1fr; } .jp-fig__grid--fold .jp-fig__panel:first-child canvas { max-width: 15rem; margin-inline: auto; } }
       .jp-fig__group { margin-top: .9rem; padding-top: .6rem; border-top: 1px solid var(--line); }
@@ -302,12 +303,12 @@ function 試す(いまの所):
 <p class="jp-fig__title">漸化式：一つ前の値に決まりを当てて、次の値を出す</p>
 <p class="jp-fig__label">「再生」か「一歩進める」をクリック。決まりとはじめの値は、ボタンの下で選べる</p>
 <canvas id="jp-rec-cv" width="900" height="240" aria-label="−10 から 10 までの数直線。はじめの値から、決まりを当てるたびに、次の値へ弧を描いて跳ぶ"></canvas>
-<p class="jp-fig__readout jp-fig__readout--pre" id="jp-rec-chain">a₀ = 1</p>
-<p class="jp-fig__readout" id="jp-rec-out">図はページの中の JavaScript で描きます。</p>
 <div class="jp-fig__btns"><button type="button" id="jp-rec-play" aria-pressed="false">再生</button><button type="button" id="jp-rec-step">一歩進める</button><button type="button" id="jp-rec-reset">最初から</button></div>
 <div class="jp-fig__group"><p class="jp-fig__glabel">決まりを選ぶ</p>
 <div class="jp-fig__btns" role="group" aria-label="決まり"><button type="button" data-rule="plus1" aria-pressed="false">1 を足す</button><button type="button" data-rule="double" aria-pressed="true">2 倍する</button><button type="button" data-rule="half" aria-pressed="false">半分にする</button><button type="button" data-rule="square" aria-pressed="false">二乗する</button><button type="button" data-rule="sqm1" aria-pressed="false">二乗して −1 を足す</button></div></div>
 <div class="jp-fig__sliders"><label class="jp-fig__slider">はじめの値 a₀<output id="jp-rec-a0-out">1</output><input type="range" id="jp-rec-a0" min="-3" max="3" step="0.5" value="1"></label></div>
+<p class="jp-fig__readout jp-fig__readout--pre" id="jp-rec-chain">a₀ = 1</p>
+<p class="jp-fig__readout" id="jp-rec-out">図はページの中の JavaScript で描きます。</p>
 <figcaption>a₀、a₁、a₂ … は、はじめの値、一歩目の値、二歩目の値 … です。「1 を足す」は、1 から始めると 1、2、3 と一つずつ進みます。「2 倍する」は、一歩ごとに跳ぶ幅が倍になり、すぐに図の外へ出ます。「二乗する」は、はじめの値が −1 と 1 のあいだなら 0 に寄り、その外なら限りなく大きくなります。「二乗して −1 を足す」を 0 から始めると、0 と −1 を行き来して、遠くへ行きません。このページの式 <code>z → z² + c</code> は、この「二乗して足す」を、平面の上の数でするものです。</figcaption>
 </figure>
 
@@ -357,7 +358,6 @@ while 決めた歩数まで:
 <figure class="glow-card reader-figure jp-fig" id="jp-sq" data-peek>
 <p class="jp-fig__title">二乗を手で動かす：角度は二倍、距離は二乗、z と −z は同じ所へ</p>
 <div class="jp-fig__grid jp-fig__grid--one"><div class="jp-fig__panel"><p class="jp-fig__label">点 z をつまんで動かすと、z²（赤）が動く</p><canvas id="jp-sq-cv" class="jp-fig__drag" width="480" height="480" aria-label="平面に、距離 1 の円が点線で描かれている。つまんで動かせる点 z と、その二乗 z²、原点の反対側の点 −z が、原点からの線と角度の弧で示される"></canvas></div></div>
-<p class="jp-fig__readout jp-fig__readout--pre" id="jp-sq-out">図はページの中の JavaScript で描きます。</p>
 <div class="jp-fig__btns"><button type="button" id="jp-sq-once">もう一度二乗する</button><button type="button" id="jp-sq-iter" aria-pressed="false">二乗をくり返す（再生）</button><button type="button" id="jp-sq-back">はじめの z に戻す</button></div>
 <div class="jp-fig__btns"><button type="button" id="jp-sq-play" aria-pressed="false">z を一周させる</button><button type="button" id="jp-sq-neg" aria-pressed="true">−z も見る（二対一）</button></div>
 <div class="jp-fig__sliders">
@@ -366,6 +366,7 @@ while 決めた歩数まで:
 </div>
 <div class="jp-fig__group"><p class="jp-fig__glabel">次の部の c も足してみる</p>
 <div class="jp-fig__btns" role="group" aria-label="c を足すか"><button type="button" data-sqc="0,0" aria-pressed="true">c を足さない</button><button type="button" data-sqc="-0.5,0.5" aria-pressed="false">c = −0.5 + 0.5i を足す</button></div></div>
+<p class="jp-fig__readout jp-fig__readout--pre" id="jp-sq-out">図はページの中の JavaScript で描きます。</p>
 <figcaption>弧は、横の軸から左回りに測った角度です（青が z、赤が z²）。赤の弧は、いつも青の弧の二倍です。角度のスライダを動かすと、z² は z の二倍の速さで回ります。距離のスライダを 1 より小さくすると z² は原点へ寄り、1 より大きくすると離れます。「z を一周させる」をクリックすると、z が一周するあいだに、z² は二周します（薄い線は通った跡）。白抜きの点 −z は、原点の反対側の点で、二乗すると z と同じ z² に行きます。z が半周して −z の位置に来たとき、z² はちょうど一周して同じ所に戻ります。「c を足す」をクリックすると、z² から、決まった向きに決まった長さだけずれた点（金色）が出ます。これが次の値 z² + c で、次の部で見ます。「もう一度二乗する」をクリックすると、いまの z² が次の z になり、その二乗が出ます（c を足しているときは z² + c が次の z）。灰の点と点線は、それまでの z です。距離 1 の円の内側から始めると原点へ寄り、外側から始めると遠ざかります。</figcaption>
 </figure>
 
@@ -530,9 +531,9 @@ while 決めた歩数まで:
 <div class="jp-fig__panel"><p class="jp-fig__label">c を選ぶ地図（黒い形の中をクリックすると c が変わる）</p><canvas id="jp-fold-c" width="300" height="260" aria-label="マンデルブロ集合。黒い形の中でクリックした所が c になる"></canvas></div>
 <div class="jp-fig__panel"><p class="jp-fig__label">大きさ 2 の円を、一歩ずつ遡る（「一歩進める」をクリック）</p><canvas id="jp-fold-cv" width="520" height="520" aria-label="大きさ 2 の円を、− c の平行移動と、角を半分にする √ と、半回転の写しの三歩で一段ずつ遡る。色は、その部分が前の曲線のどこから来たか"></canvas></div>
 </div>
-<p class="jp-fig__readout jp-fig__readout--pre" id="jp-fold-out">図はページの中の JavaScript で描きます。</p>
 <div class="jp-fig__btns"><button type="button" id="jp-fold-reset">最初から</button><button type="button" id="jp-fold-back">一歩戻す</button><button type="button" id="jp-fold-step">一歩進める</button><button type="button" id="jp-fold-play" aria-pressed="false">再生</button><button type="button" id="jp-fold-color" aria-pressed="false">色を最初の円の位置で塗る</button></div>
 <div class="jp-fig__btns" role="group" aria-label="c の例"><button type="button" data-fc="golden">黄金角の c</button><button type="button" data-fc="-0.123,0.745">c = −0.12 + 0.75i</button><button type="button" data-fc="-1,0">c = −1</button><button type="button" data-fc="0,0">c = 0（円のまま）</button></div>
+<p class="jp-fig__readout jp-fig__readout--pre" id="jp-fold-out">図はページの中の JavaScript で描きます。</p>
 <figcaption>一段の遡り <code>±√(w − c)</code> を三歩に分けて描きます。一歩目の「− c」で、曲線の全体を <code>−c</code> だけずらします（矢印）。二歩目の「√」で、0 の周りの角を半分に、0 からの距離を √ にします。曲線は、0 から左へのびる線（負の実軸）で切れ、一周が右半分の半周に縮みます。三歩目の「−√」で、その写しを 0 の周りに半回転させたもう一つの写し（濃い色）が、左半分を埋めます。色は点に付いたまま動くので、同じ色の所は、前の曲線の同じ所から来ています。前の曲線の一周が、+√ と −√ の二つの半分に一回ずつ写ります。薄い灰の線は、その一歩の前の形です。曲線の内側は、遡った段の数だけ前へ打っても大きさ 2 を超えない点の集まりで、段を重ねるほど、くり返しても遠くへ行かない点の集まり（充填ジュリア集合）に寄ります。「色を最初の円の位置で塗る」をクリックすると、色は、その点を前へ打って戻る最初の円の上の位置になります。見せ方は Wittens の記事に倣い、計算と描画はこのページのものです。</figcaption>
 </figure>
 
@@ -610,7 +611,6 @@ while 決めた歩数まで:
 <div class="jp-fig__panel"><p class="jp-fig__label">c を選ぶ地図（クリックすると c が変わる）</p><canvas id="jp-lab-c" width="300" height="260" aria-label="マンデルブロ集合。クリックした所が c になる"></canvas></div>
 <div class="jp-fig__panel"><p class="jp-fig__label">0 から前へ打った値（赤）と、赤の一点から遡った枝（紺から金）。図をクリックすると、遡り始める赤の点が変わる</p><canvas id="jp-lab-1" width="420" height="420" aria-label="前へ打った値の軌跡と、その一点から一段ごとに二つに分かれて遡った点。実際に通った道は赤い太線"></canvas></div>
 </div>
-<p class="jp-fig__readout jp-fig__readout--pre" id="jp-lab-out">図はページの中の JavaScript で描きます。</p>
 <div class="jp-fig__group"><p class="jp-fig__glabel">決まった c で見る</p>
 <div class="jp-fig__btns"><button type="button" data-lc="golden">黄金角（137.5°）で回る c</button><button type="button" data-lc="-0.1248,0.6152">120° で回る c</button><button type="button" data-lc="-1,0">c = −1</button><button type="button" data-lc="-0.123,0.745">c = −0.12 + 0.75i</button><button type="button" data-lc="-0.8,0.156">c = −0.8 + 0.16i</button><button type="button" data-lc="0.3,0">c = 0.3（外へ出る）</button></div></div>
 <div class="jp-fig__group"><p class="jp-fig__glabel">一歩ずつ動かす</p>
@@ -626,6 +626,7 @@ while 決めた歩数まで:
 <label class="jp-fig__slider"><span>c の実部 <output for="jp-lab-re">−0.378</output></span><input type="range" id="jp-lab-re" min="-2.25" max="0.75" step="0.001" value="-0.378"></label>
 <label class="jp-fig__slider"><span>c の虚部 <output for="jp-lab-im">0.562</output></span><input type="range" id="jp-lab-im" min="-1.3" max="1.3" step="0.001" value="0.562"></label>
 </div></div>
+<p class="jp-fig__readout jp-fig__readout--pre" id="jp-lab-out">図はページの中の JavaScript で描きます。</p>
 <figcaption>前へは 0 から、はじめは 100 歩、最大 200 歩。原点からの距離が 2 を超えたら外へ出たとして止めます。遡りは、赤の一点（いま打った最後の歩の値。紺の点）から、一段ごとに +√ と −√ の両方をたどります。はじめは 100 段遡ります。色は、紺が浅い段、金が深い段です。k 段遡ると 2 の k 乗通りに分かれ、100 段では約 1.27 × 10 の 30 乗通りになるので、全部は打てません。11 段目（2,048 通り）までは枝を全部打ち、それより深い段は、その 2,048 本の道を、一段ごとに +√ と −√ のどちらか一つを選んで遡って打ちます（一つを選んで遡るのは、ジュリア集合を描くよく知られた方法です）。赤い太線は、そのうち実際に前へ通ってきた値（一つ前の歩、その前の歩…）をたどる一通りです。回る角度と寄る倍率は、寄る一点 z* での傾き λ = 2z* の角度と大きさで、c = λ/2 − λ²/4 の関係にあります（倍率が 1 より小さいときだけ決まる）。計算は Claude。</figcaption>
 </figure>
 
