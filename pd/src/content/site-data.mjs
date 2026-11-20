@@ -218,9 +218,9 @@ export const TRANSLATIONS = {
     "repo.gravityLove": "愛は、重力に似ていないか — 動かず、何もなく、自分からは見えないのに、すべてを回す中心",
     "repo.gravityLoveDesc":
       "重力の井戸（重力場を、質量のまわりのすり鉢のようなくぼみとして描いた絵）の中心は、動かず、何もなく、自分からは見えないのに、周りのすべてを回している。愛はそれに似ていないか。周りを動かす駆動源としての力を、二つの現象の構造の類似から探す読み物。後半で、その類似を踏まえて「経営者の役割とは？」に仮説的に答える。",
-    "repo.juliaPotential": "神・愛・美と、ジュリア集合 — ジュリア集合のような何かが、神・愛・美のポテンシャルなのではないか",
+    "repo.juliaPotential": "ジュリア集合のような何かが、神・愛・美のポテンシャルなのではないか — 起業家の漸化式と、重力のようにドリフトする Love から",
     "repo.juliaPotentialDesc":
-      "漸化式 z → z² + c を Love駆動開発のたとえにすると、値を前へ打てば渦になり、遡ればジュリア集合の形になる。その形の美しさと恐ろしさから立った問いに、美・愛・神を一つの源として重ねる古典と、境目や自己相似の形を心に結ぶ論が、どこで触れているかを並べる工事中の読み物",
+      "漸化式は起業家のよう。Love と呼びたいものは重力のようにドリフトする。それはジュリア集合の漸化式 z → z² + c のようだ。起業家が実際に通った道は前へ打つと渦になり、遡ると、ありえた道がジュリア集合の境目に散る。では、起業家の行動の結果は、そもそもどんなポテンシャルだったのか。その問いが立った視点を解説する工事中の読み物",
     "repo.waveVortex": "波間の渦 — 宇宙は「モノ」でできているか、「流れ」でできているか",
     "repo.waveVortexDesc":
       "「宇宙は海の渦のような現象でできている」という直観を、物理学と思想史のどこまでが支えるか三層に分けて接地する（創造とは）",
@@ -418,9 +418,9 @@ export const TRANSLATIONS = {
     "repo.gravityLove": "Is Love Like Gravity? — On a Leader's Role",
     "repo.gravityLoveDesc":
       "The center of a gravity well (a picture of a gravitational field as a bowl-like dip around a mass) does not move, holds nothing and cannot see itself, yet everything turns around it. Is love like that? A reader that looks for the driving force that moves things around, through the structural likeness of the two. In the second half, building on that likeness, it gives a hypothetical answer to “what is a leader's role?”",
-    "repo.juliaPotential": "God, Love, Beauty and the Julia Set — Is Something Like a Julia Set the Potential of God, Love and Beauty?",
+    "repo.juliaPotential": "Is Something Like a Julia Set the Potential of God, Love and Beauty? — From the Entrepreneur's Recurrence and Love That Drifts Like Gravity",
     "repo.juliaPotentialDesc":
-      "With the recurrence z → z² + c as an analogy for Love-Driven Development, points iterated forward spiral into a vortex, and traced backward they draw a Julia set. A page under construction that lays out where classical texts on one source of beauty, love and God, and studies linking boundaries and self-similarity to the mind, touch the question (Japanese only)",
+      "The recurrence is like an entrepreneur; what we want to call Love drifts like gravity; together they are the Julia-set recurrence z → z² + c. Plotted forward, the path the entrepreneur actually took spirals into a vortex; traced backward, the paths that could have been scatter onto the boundary of a Julia set. So what potential did the entrepreneur's results come from? A page under construction that explains the viewpoint behind that question (Japanese only)",
     "repo.waveVortex": "Vortices Between Waves — Is the Universe Made of 'Things' or 'Flows'?",
     "repo.waveVortexDesc":
       "Grounds the intuition that 'the universe is made of ocean-like vortices' by sorting how far physics and intellectual history support it, in three layers (What Is Creation)",
