@@ -170,22 +170,21 @@
     }
     function readout() {
       const fp = fixedPoint(st.c), n = Math.min(st.n, fwd.pts.length - 1), p = fwd.pts[n];
-      let s = "c = " + fmtC(st.c.re, st.c.im) + "\n前へ：0 から " + n + " 歩目：z = " + fmtC(p[0], p[1]) + "（原点からの距離 " + Math.hypot(p[0], p[1]).toFixed(3) + "）\n";
-      if (fwd.escapedAt) s += fwd.escapedAt + " 歩目に原点からの距離が 2 を超え、外へ出ます（発散）。";
-      else if (fp.mod < 1) s += "寄る一点 z* = " + fmtC(fp.zr, fp.zi) + "。その近くでは、一歩ごとに " + fp.deg.toFixed(1) + "° 回り、" + fp.mod.toFixed(3) + " 倍に寄ります。";
-      else s += N_MAX + " 歩までは外へ出ませんが、この c は大きなハート形の外か縁にあり、一点の周りを同じ角度で回りながら寄る形にはなりません。";
+      let s = "c = " + fmtC(st.c.re, st.c.im) + "　前へ " + n + " 歩：z = " + fmtC(p[0], p[1]) + "\n";
+      if (fwd.escapedAt) s += fwd.escapedAt + " 歩目で外へ出る（発散）";
+      else if (fp.mod < 1) s += "寄る一点 z* = " + fmtC(fp.zr, fp.zi) + "　一歩ごとに " + fp.deg.toFixed(1) + "° 回り " + fp.mod.toFixed(3) + " 倍";
+      else s += N_MAX + " 歩まで外へ出ない（ハート形の外か縁で、渦にはならない）";
       const d = st.d, back = Math.min(d, n);
-      s += "\n遡る：" + n + " 歩目の値（紺の点）から " + d + " 段遡ると、" + (d <= 30 ? (2 ** d).toLocaleString("ja-JP") : "約 " + (2 ** d).toExponential(2).replace("e+", " × 10^")) + " 通りに分かれます。";
-      if (d > FULL) s += FULL + " 段目までは枝を全部打ち、それより深い段は、" + (2 ** FULL).toLocaleString("ja-JP") + " 本の道を、一段ごとに枝を一つ選んで遡って打っています。";
-      if (d === 0) s += "（遡る段数を増やすと、分かれていきます）";
-      else if (n === 0) s += "出発点より前は通っていないので、赤い太線はありません。";
-      else s += "実際に通った " + (n - 1) + " 歩目" + (back > 1 ? "〜" + (n - back) + " 歩目" : "") + "は、そのうちの一通り（赤い太線）です。";
+      s += "\n遡る " + d + " 段：" + (d <= 30 ? (2 ** d).toLocaleString("ja-JP") : "約 " + (2 ** d).toExponential(2).replace("e+", " × 10^")) + " 通り";
+            if (d === 0) s += "";
+      else if (n === 0) s += "（出発点なので、通った道は無い）";
+      else s += "（通った道は赤い太線の一通り）";
       out.textContent = s;
     }
     drawLab = () => { mapImg = null; recompute(); drawMap(); draw1(); readout(); };
     const redrawLight = () => { draw1(); readout(); };
     const setC = (c) => { st.c = c; st.n = N_DEF; syncSliders(); clearTimeout(slowTimer); slowTimer = setTimeout(() => { recompute(); drawMap(); redrawLight(); }, 30); };
-    const stopPlay = () => { st.playing = false; clearTimeout(playTimer); const b = $("jp-lab-play"); b.setAttribute("aria-pressed", "false"); b.textContent = "再生"; };
+    const stopPlay = () => { st.playing = false; clearTimeout(playTimer); const b = $("jp-lab-play"); b.setAttribute("aria-pressed", "false"); b.setAttribute("aria-label", "再生"); };
 
     // 図をクリックしてパラメータを決める：地図は c、①はいちばん近い赤の点を遡りの出発にする
     cvC.addEventListener("click", (e) => { stopPlay(); setC(fromPx(MV, e, cvC)); });
@@ -212,7 +211,7 @@
     $("jp-lab-reset").addEventListener("click", () => { stopPlay(); st.n = 0; syncSliders(); redrawLight(); });
     $("jp-lab-play").addEventListener("click", (e) => {
       if (st.playing) { stopPlay(); return; }
-      st.playing = true; e.currentTarget.setAttribute("aria-pressed", "true"); e.currentTarget.textContent = "止める";
+      st.playing = true; e.currentTarget.setAttribute("aria-pressed", "true"); e.currentTarget.setAttribute("aria-label", "止める");
       if (st.n >= Math.min(N_MAX, fwd.pts.length - 1)) st.n = 0;
       const tick = () => {
         if (!st.playing) return;
@@ -289,7 +288,7 @@
   if (fold) {
     const cv = document.getElementById("jp-fold-cv"), cvM = document.getElementById("jp-fold-c"), out = document.getElementById("jp-fold-out");
     const N = 16384, MAXK = 12, LAST = 3 * MAXK, FV = { x0: -2.75, x1: 2.75, y0: -2.75, y1: 2.75 }, NB = 48;
-    let C = cFromAngle(GOLDEN_DEG, 0.97), levels = [], half = [], sig = [], pos = 0, tw = 1, timer = 0, animId = 0, global = false, mapImg = null, note = "";
+    let C = cFromAngle(GOLDEN_DEG, 0.97), levels = [], half = [], sig = [], pos = 0, tw = 1, timer = 0, animId = 0, global = true, mapImg = null, note = "";
     // 主値の平方根（偏角を (−π, π] で半分にする）
     const sqrtP = (wr, wi) => { const m = Math.hypot(wr, wi); return [Math.sqrt((m + wr) / 2), Math.sign(wi || 1) * Math.sqrt(Math.max(0, (m - wr) / 2))]; };
     function build() {
@@ -403,7 +402,7 @@
       if (pos === 0) t += "大きさ 2 の円（まだ遡っていない）。色は、円の上の位置";
       else {
         t += lv + " 段目の " + (sub + 1) + " 歩目（全 " + LAST + " 歩の " + pos + " 歩目）　" + STEP_TXT[sub];
-        if (sub === 2) t += "。同じ色の所は、前の曲線の同じ所から来た。内側は、" + lv + " 歩前へ打っても大きさ 2 を超えない点";
+        if (sub === 2) t += "。同じ色の所は、最初の円の同じ所から来た。内側は、" + lv + " 歩前へ打っても大きさ 2 を超えない点";
       }
       if (note) t += "\n" + note;
       out.textContent = t;
@@ -426,8 +425,6 @@
       note = ""; if (pos >= LAST) jump(0);
       play.setAttribute("aria-pressed", "true"); step(); timer = setInterval(() => { if (!step()) stop(); }, 1300);
     });
-    const colorBtn = document.getElementById("jp-fold-color");
-    colorBtn.addEventListener("click", () => { global = !global; colorBtn.setAttribute("aria-pressed", String(global)); drawFold(); });
     const setC = (c) => { stop(); C = c; build(); note = ""; jump(0); };
     fold.querySelectorAll("[data-fc]").forEach((b) => b.addEventListener("click", () => {
       const v = b.dataset.fc; setC(v === "golden" ? cFromAngle(GOLDEN_DEG, 0.97) : (([a, i]) => ({ re: a, im: i }))(v.split(",").map(Number)));

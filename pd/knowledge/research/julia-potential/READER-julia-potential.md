@@ -10,7 +10,7 @@
 
 <p class="reader-lead"><span class="reader-lead__label">工事中</span>対話の途中で立った問いを置いた、工事中のページです。式への当てはめは、対話で pjdhiro と Claude が共有した仮のもので、論証ではありません。</p>
 
-ここで解説するのは、一つの問いと、その問いが立った視点です。視点は、pjdhiro の次の見立てです。
+ここで解説するのは、pjdhiro の一つの見立てと、そこから立った問い、その問いに近寄る仮説です。見立ては、次のものです。
 
 <strong>pjdhiro の見方：</strong>漸化式は起業家のよう。Loveと呼びたいものは重力のようにドリフトする。それはジュリア集合の漸化式のようだ。
 
@@ -44,7 +44,7 @@
 ここでのポテンシャルは、pjdhiro の言葉では「場と呼びたいような、可能性」です。
 
 <div class="reader-lead"><span class="reader-lead__label">今の答え</span>
-問いへの答えは、まだありません。このページの本文は、問いが立った視点の解説と、問いまでです。問いに近寄る仮説（pjdhiro の一旦の仮説と、美の定義から入った四段の仮説）は、論証が難しいので、第四部の寄り道「Love を駆動源と見たら、ジュリア集合のようなものかもしれない」に置きました。<a href="#jp-sq">二乗が向きの逆の二つを一つに送ること（二対一）</a>と、<code>√</code> を取ることが何に当たるかは、まだ空いています。
+問いへの答えは、仮説として置いています。一つは pjdhiro の一旦の仮説で、起業家が生み出した成果は、いつか誰かが達成する可能性を持った場がすでにあって、確率的に、起業家と呼ばれる人が達成したのではないか、というものです。もう一つは、美の定義から入った四段の仮説で、ジュリア集合のような形が神・愛・美のポテンシャルの場で、美は起業家のエネルギーに近い、と結びます。式の所ごとに、起業家の何に当てたかは、第六部に並べました。
 </div>
 
 <div class="reader-lead"><span class="reader-lead__label">構成</span>
@@ -52,21 +52,22 @@
 <li><b><a href="#jp-recurrence">第一部 漸化式は、起業家のよう</a></b>：決定ツリーとの対比で見る起業家の進み方（深さ優先探索）、漸化式とは何か、<code>z</code> は起業家の思考・心理・行動、<code>z²</code> は自分で自分を回す一歩</li>
 <li><b><a href="#jp-drift">第二部 Love と呼びたいものは、重力のようにドリフトする</a></b>：<code>c</code> は Love と呼びたいものの重力</li>
 <li><b><a href="#jp-origin">第三部 それは、ジュリア集合の漸化式のようだ</a></b>：前へ打つと渦、遡るとジュリア集合</li>
-<li><b><a href="#jp-question">第四部 その境目は、どんなポテンシャルだったのか</a></b>：このページの問い。寄り道に、問いに近寄る仮説と先行研究</li>
-<li><b><a href="#jp-gaps">第五部 まだ埋まらない所</a></b>：空いたままの所と、先行研究の一覧</li>
+<li><b><a href="#jp-question">第四部 起業家を駆るものは、ジュリア集合のようなポテンシャルか</a></b>：このページの問いと、一旦の仮説</li>
+<li><b><a href="#jp-four">第五部 美から近寄る、四段の仮説</a></b>：美・神・愛と、起業家のエネルギー</li>
+<li><b><a href="#jp-gaps">第六部 仮説として置いたもの</a></b>：式の所ごとに置いた仮説と、触れていた論</li>
 <li><b><a href="#jp-reading">巻末</a></b>：原典を読む順</li>
 </ul>
 </div>
 
 <!--PART:第一部|漸化式は、起業家のよう-->
 
-## 意思決定は、決定ツリーのように進むと思われている
+## 意思決定は、決定ツリーのように進む、と思われていないか
 
 <!--OPEN-->
 
-<a id="jp-recurrence"></a>見立ての一つ目は、「漸化式は起業家のよう」です。この見立ては、意思決定がふつうどう進むと思われているか、との対比から出てきました。
+<a id="jp-recurrence"></a>見立ての一つ目は、「漸化式は起業家のよう」です。この見立ては、意思決定がどう進むと思われがちか、との対比から出てきました。
 
-ふつう、意思決定は、決定ツリーのように進むと思われています。分かれ道ごとに、選べる道を並べ、それぞれの先で何が起きそうかを見込んで、良さそうな一本を選ぶ。選んだ先でまた分かれ道があり、また選ぶ。決定の連続で、そのたびに二つ（またはいくつか）から選び、選んだ結果をまとめて次へ進む、という進み方です。
+意思決定は、決定ツリーのように進むものだ、と見られることがあります。それが正しい進め方だと受け取っている人も、少なくないのではないでしょうか。決定ツリーでは、分かれ道ごとに、選べる道を並べ、それぞれの先で何が起きそうかを見込んで、良さそうな一本を選ぶ。選んだ先でまた分かれ道があり、また選ぶ。決定の連続で、そのたびに二つ（またはいくつか）から選び、選んだ結果をまとめて次へ進む、という進み方です。
 
 経営学のリアルオプションの考え方も、この形をしています。投資を、先で続ける・やめる・広げる、を選べる権利（オプション）と見て、分かれ道の木の上で、その値打ちを見積もります。
 
@@ -111,7 +112,7 @@ pjdhiro が、漸化式と起業家を重ねたのは、このリアルオプシ
 
 のちにサラスバシーとデューは、新しい市場は、あらかじめある「ありうる市場の全体」の中を探して選ぶこと（探索と選択）で生まれるのか、手元の現実を変えていくこと（変換）で生まれるのか、と問い、変換の側から見ました（2005）。人に会い、約束を重ねるうちに、手段も目的も増え、変わっていきます。
 
-決定ツリーのように進むと思われていた意思決定とは違う進み方が、起業家にはあった。pjdhiro は、経営学ではこれが Aha だったのではないか、と見ています。
+決定ツリーのように進むと見られがちな意思決定とは違う進み方が、起業家にはあった。pjdhiro は、経営学ではこれが Aha だったのではないか、と見ています。
 
 <details><summary>先行研究 — コーゼーションとエフェクチュエーションの原文</summary>
 
@@ -178,9 +179,9 @@ function 試す(いまの所):
 
 <figure class="glow-card reader-figure jp-fig" id="jp-rec">
 <p class="jp-fig__title">漸化式：一つ前の値に決まりを当てて、次の値を出す</p>
-<p class="jp-fig__label">「再生」か「一歩進める」をクリック。決まりとはじめの値は、ボタンの下で選べる</p>
+<p class="jp-fig__label">▶ で再生、「一歩進める」で一歩ずつ。決まりとはじめの値は、その下で選べる</p>
 <canvas id="jp-rec-cv" width="900" height="240" aria-label="−10 から 10 までの数直線。はじめの値から、決まりを当てるたびに、次の値へ弧を描いて跳ぶ"></canvas>
-<div class="jp-fig__btns"><button type="button" id="jp-rec-play" aria-pressed="false">再生</button><button type="button" id="jp-rec-step">一歩進める</button><button type="button" id="jp-rec-reset">最初から</button></div>
+<div class="jp-media" role="group" aria-label="再生の操作"><button type="button" id="jp-rec-reset" class="jp-media__icon" aria-label="最初から" title="最初から"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2.4v14H6zM19 5v14L9 12z"/></svg></button><button type="button" id="jp-rec-play" class="jp-media__play" aria-pressed="false" aria-label="再生" title="再生・止める"><svg class="jp-media__on" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="jp-media__off" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.6v14H7zM13.4 5H17v14h-3.6z"/></svg></button><button type="button" id="jp-rec-step" class="jp-media__word">一歩進める</button></div>
 <div class="jp-fig__group"><p class="jp-fig__glabel">決まりを選ぶ</p>
 <div class="jp-fig__btns" role="group" aria-label="決まり"><button type="button" data-rule="plus1" aria-pressed="false">1 を足す</button><button type="button" data-rule="double" aria-pressed="true">2 倍する</button><button type="button" data-rule="half" aria-pressed="false">半分にする</button><button type="button" data-rule="square" aria-pressed="false">二乗する</button><button type="button" data-rule="sqm1" aria-pressed="false">二乗して −1 を足す</button></div></div>
 <div class="jp-fig__sliders"><label class="jp-fig__slider">はじめの値 a₀<output id="jp-rec-a0-out">1</output><input type="range" id="jp-rec-a0" min="-3" max="3" step="0.5" value="1"></label></div>
@@ -246,7 +247,7 @@ pjdhiro は、この一歩のくり返しに `c` を加えると、ジュリア�
 <figure class="glow-card reader-figure jp-fig" id="jp-sq" data-peek>
 <p class="jp-fig__title">二乗を手で動かす：角度は二倍、距離は二乗、z と −z は同じ所へ</p>
 <div class="jp-fig__grid jp-fig__grid--one"><div class="jp-fig__panel"><p class="jp-fig__label">点 z をつまんで動かすと、z²（赤）が動く</p><canvas id="jp-sq-cv" class="jp-fig__drag" width="480" height="480" aria-label="平面に、距離 1 の円が点線で描かれている。つまんで動かせる点 z と、その二乗 z²、原点の反対側の点 −z が、原点からの線と角度の弧で示される"></canvas></div></div>
-<div class="jp-fig__btns"><button type="button" id="jp-sq-once">もう一度二乗する</button><button type="button" id="jp-sq-iter" aria-pressed="false">二乗をくり返す（再生）</button><button type="button" id="jp-sq-back">はじめの z に戻す</button></div>
+<div class="jp-media" role="group" aria-label="二乗をくり返す操作"><button type="button" id="jp-sq-back" class="jp-media__icon" aria-label="はじめの z に戻す" title="はじめの z に戻す"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2.4v14H6zM19 5v14L9 12z"/></svg></button><button type="button" id="jp-sq-iter" class="jp-media__play" aria-pressed="false" aria-label="二乗をくり返す" title="二乗をくり返す・止める"><svg class="jp-media__on" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="jp-media__off" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.6v14H7zM13.4 5H17v14h-3.6z"/></svg></button><button type="button" id="jp-sq-once" class="jp-media__word">もう一度二乗する</button></div>
 <div class="jp-fig__btns"><button type="button" id="jp-sq-play" aria-pressed="false">z を一周させる</button><button type="button" id="jp-sq-neg" aria-pressed="true">−z も見る（二対一）</button></div>
 <div class="jp-fig__sliders">
 <label class="jp-fig__slider"><span>z の角度 <output for="jp-sq-a">30°</output></span><input type="range" id="jp-sq-a" min="0" max="359" step="1" value="30"></label>
@@ -474,12 +475,12 @@ pjdhiro は 2025 年 5 月、ジュリア集合の形を、点がどこから来
 <p class="jp-fig__title">遡る一段：円を、c の分だけ戻して ±√ で二つに分け、畳む</p>
 <div class="jp-fig__grid jp-fig__grid--fold">
 <div class="jp-fig__panel"><p class="jp-fig__label">c を選ぶ地図（黒い形の中をクリックすると c が変わる）</p><canvas id="jp-fold-c" width="300" height="260" aria-label="マンデルブロ集合。黒い形の中でクリックした所が c になる"></canvas></div>
-<div class="jp-fig__panel"><p class="jp-fig__label">大きさ 2 の円を、一歩ずつ遡る（「一歩進める」をクリック）</p><canvas id="jp-fold-cv" width="520" height="520" aria-label="大きさ 2 の円を、− c の平行移動と、角を半分にする √ と、半回転の写しの三歩で一段ずつ遡る。色は、その部分が前の曲線のどこから来たか"></canvas></div>
+<div class="jp-fig__panel"><p class="jp-fig__label">大きさ 2 の円を、一歩ずつ遡る（▶ か「一歩進める」をクリック）</p><canvas id="jp-fold-cv" width="520" height="520" aria-label="大きさ 2 の円を、− c の平行移動と、角を半分にする √ と、半回転の写しの三歩で一段ずつ遡る。色は、その部分が前の曲線のどこから来たか"></canvas></div>
 </div>
-<div class="jp-fig__btns"><button type="button" id="jp-fold-reset">最初から</button><button type="button" id="jp-fold-back">一歩戻す</button><button type="button" id="jp-fold-step">一歩進める</button><button type="button" id="jp-fold-play" aria-pressed="false">再生</button><button type="button" id="jp-fold-color" aria-pressed="false">色を最初の円の位置で塗る</button></div>
+<div class="jp-media" role="group" aria-label="再生の操作"><button type="button" id="jp-fold-reset" class="jp-media__icon" aria-label="最初から" title="最初から"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2.4v14H6zM19 5v14L9 12z"/></svg></button><button type="button" id="jp-fold-play" class="jp-media__play" aria-pressed="false" aria-label="再生" title="再生・止める"><svg class="jp-media__on" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="jp-media__off" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.6v14H7zM13.4 5H17v14h-3.6z"/></svg></button><button type="button" id="jp-fold-back" class="jp-media__word">一歩戻す</button><button type="button" id="jp-fold-step" class="jp-media__word">一歩進める</button></div>
 <div class="jp-fig__btns" role="group" aria-label="c の例"><button type="button" data-fc="golden">黄金角の c</button><button type="button" data-fc="-0.123,0.745">c = −0.12 + 0.75i</button><button type="button" data-fc="-1,0">c = −1</button><button type="button" data-fc="0,0">c = 0（円のまま）</button></div>
 <p class="jp-fig__readout jp-fig__readout--pre" id="jp-fold-out">図はページの中の JavaScript で描きます。</p>
-<figcaption>一段の遡り <code>±√(w − c)</code> を三歩に分けて描きます。一歩目の「− c」で、曲線の全体を <code>−c</code> だけずらします（矢印）。二歩目の「√」で、0 の周りの角を半分に、0 からの距離を √ にします。曲線は、0 から左へのびる線（負の実軸）で切れ、一周が右半分の半周に縮みます。三歩目の「−√」で、その写しを 0 の周りに半回転させたもう一つの写し（濃い色）が、左半分を埋めます。色は点に付いたまま動くので、同じ色の所は、前の曲線の同じ所から来ています。前の曲線の一周が、+√ と −√ の二つの半分に一回ずつ写ります。薄い灰の線は、その一歩の前の形です。曲線の内側は、遡った段の数だけ前へ打っても大きさ 2 を超えない点の集まりで、段を重ねるほど、くり返しても遠くへ行かない点の集まり（充填ジュリア集合）に寄ります。「色を最初の円の位置で塗る」をクリックすると、色は、その点を前へ打って戻る最初の円の上の位置になります。見せ方は Wittens の記事に倣い、計算と描画はこのページのものです。</figcaption>
+<figcaption>一段の遡り <code>±√(w − c)</code> を三歩に分けて描きます。一歩目の「− c」で、曲線の全体を <code>−c</code> だけずらします（矢印）。二歩目の「√」で、0 の周りの角を半分に、0 からの距離を √ にします。曲線は、0 から左へのびる線（負の実軸）で切れ、一周が右半分の半周に縮みます。三歩目の「−√」で、その写しを 0 の周りに半回転させたもう一つの写し（濃い色）が、左半分を埋めます。色は、その点を前へ打って戻る最初の円の上の位置で塗ってあり、点に付いたまま動きます。同じ色の所は、最初の円の同じ所から来ています。前の曲線の一周が、+√ と −√ の二つの半分に一回ずつ写ります。薄い灰の線は、その一歩の前の形です。曲線の内側は、遡った段の数だけ前へ打っても大きさ 2 を超えない点の集まりで、段を重ねるほど、くり返しても遠くへ行かない点の集まり（充填ジュリア集合）に寄ります。見せ方は Wittens の記事に倣い、計算と描画はこのページのものです。</figcaption>
 </figure>
 
 この図は、Steven Wittens の「[How to Fold a Julia Fractal](https://acko.net/blog/how-to-fold-a-julia-fractal/)」（2013）の見せ方に倣って、このページで新しく描いたものです。Wittens は、点が収まる円を、遡る向きに一段ずつ畳んでいくと、ジュリア集合の形になる様子を、動く図で見せています。図では、大きさ 2 の円の上の点を、`±√(w − c)` で一段ずつ遡ります。一段を「− c」「√」「−√」の三歩に分けて、一歩ずつ進めたり戻したりできます。
@@ -530,10 +531,12 @@ pjdhiro は 2025 年 5 月、ジュリア集合の形を、点がどこから来
 <div class="jp-fig__panel"><p class="jp-fig__label">c を選ぶ地図（クリックすると c が変わる）</p><canvas id="jp-lab-c" width="300" height="260" aria-label="マンデルブロ集合。クリックした所が c になる"></canvas></div>
 <div class="jp-fig__panel"><p class="jp-fig__label">0 から前へ打った値（赤）と、赤の一点から遡った枝（紺から金）。図をクリックすると、遡り始める赤の点が変わる</p><canvas id="jp-lab-1" width="420" height="420" aria-label="前へ打った値の軌跡と、その一点から一段ごとに二つに分かれて遡った点。実際に通った道は赤い太線"></canvas></div>
 </div>
+<div class="jp-media" role="group" aria-label="再生の操作"><button type="button" id="jp-lab-reset" class="jp-media__icon" aria-label="最初から" title="最初から"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2.4v14H6zM19 5v14L9 12z"/></svg></button><button type="button" id="jp-lab-play" class="jp-media__play" aria-pressed="false" aria-label="再生" title="再生・止める"><svg class="jp-media__on" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="jp-media__off" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.6v14H7zM13.4 5H17v14h-3.6z"/></svg></button><button type="button" id="jp-lab-step" class="jp-media__word">一歩進める</button></div>
+<div class="jp-fig__btns"><button type="button" id="jp-lab-deeper">一段深く遡る</button><button type="button" id="jp-lab-bg" aria-pressed="false">よくある塗り分けを薄く重ねる</button></div>
+<p class="jp-fig__readout jp-fig__readout--pre" id="jp-lab-out">図はページの中の JavaScript で描きます。</p>
 <div class="jp-fig__group"><p class="jp-fig__glabel">決まった c で見る</p>
 <div class="jp-fig__btns"><button type="button" data-lc="golden">黄金角（137.5°）で回る c</button><button type="button" data-lc="-0.1248,0.6152">120° で回る c</button><button type="button" data-lc="-1,0">c = −1</button><button type="button" data-lc="-0.123,0.745">c = −0.12 + 0.75i</button><button type="button" data-lc="-0.8,0.156">c = −0.8 + 0.16i</button><button type="button" data-lc="0.3,0">c = 0.3（外へ出る）</button></div></div>
-<div class="jp-fig__group"><p class="jp-fig__glabel">一歩ずつ動かす</p>
-<div class="jp-fig__btns"><button type="button" id="jp-lab-reset">最初から</button><button type="button" id="jp-lab-step">一歩進める</button><button type="button" id="jp-lab-play" aria-pressed="false">再生</button><button type="button" id="jp-lab-bg" aria-pressed="false">よくある塗り分けを薄く重ねる</button><button type="button" id="jp-lab-deeper">一段深く遡る</button></div>
+<div class="jp-fig__group"><p class="jp-fig__glabel">歩数と段数を変える</p>
 <div class="jp-fig__sliders">
 <label class="jp-fig__slider"><span>前へ打つ歩数（遡り始める点） <output for="jp-lab-n">100</output></span><input type="range" id="jp-lab-n" min="0" max="200" step="1" value="100"></label>
 <label class="jp-fig__slider"><span>遡る段数 <output for="jp-lab-d">100</output></span><input type="range" id="jp-lab-d" min="0" max="100" step="1" value="100"></label>
@@ -545,7 +548,6 @@ pjdhiro は 2025 年 5 月、ジュリア集合の形を、点がどこから来
 <label class="jp-fig__slider"><span>c の実部 <output for="jp-lab-re">−0.378</output></span><input type="range" id="jp-lab-re" min="-2.25" max="0.75" step="0.001" value="-0.378"></label>
 <label class="jp-fig__slider"><span>c の虚部 <output for="jp-lab-im">0.562</output></span><input type="range" id="jp-lab-im" min="-1.3" max="1.3" step="0.001" value="0.562"></label>
 </div></div>
-<p class="jp-fig__readout jp-fig__readout--pre" id="jp-lab-out">図はページの中の JavaScript で描きます。</p>
 <figcaption>前へは 0 から、はじめは 100 歩、最大 200 歩。原点からの距離が 2 を超えたら外へ出たとして止めます。遡りは、赤の一点（いま打った最後の歩の値。紺の点）から、一段ごとに +√ と −√ の両方をたどります。はじめは 100 段遡ります。色は、紺が浅い段、金が深い段です。k 段遡ると 2 の k 乗通りに分かれ、100 段では約 1.27 × 10 の 30 乗通りになるので、全部は打てません。11 段目（2,048 通り）までは枝を全部打ち、それより深い段は、その 2,048 本の道を、一段ごとに +√ と −√ のどちらか一つを選んで遡って打ちます（一つを選んで遡るのは、ジュリア集合を描くよく知られた方法です）。赤い太線は、そのうち実際に前へ通ってきた値（一つ前の歩、その前の歩…）をたどる一通りです。回る角度と寄る倍率は、寄る一点 z* での傾き λ = 2z* の角度と大きさで、c = λ/2 − λ²/4 の関係にあります（倍率が 1 より小さいときだけ決まる）。計算は Claude。</figcaption>
 </figure>
 
@@ -614,9 +616,9 @@ pjdhiro は、この関係を、起業家のたとえに戻して、こう読み
 
 </details>
 
-<!--TURN-->渦を遡った先に、認知されなかった道とも読める枝の散る境目がありました。次は、その境目が何だったのかを問います。<!--/TURN-->
+<!--TURN-->渦を遡った先に、認知されなかった道とも読める枝の散る境目がありました。次は、その境目が、起業家を駆るものの出てくる場なのかを問います。<!--/TURN-->
 
-<!--PART:第四部|その境目は、どんなポテンシャルだったのか-->
+<!--PART:第四部|起業家を駆るものは、ジュリア集合のようなポテンシャルか-->
 
 ## 起業家の行動の結果は、そもそもどんなポテンシャルだったのか
 
@@ -626,13 +628,12 @@ pjdhiro は、この関係を、起業家のたとえに戻して、こう読み
 
 <strong>pjdhiro の問い：</strong>仮に、起業家（プロジェクト推進者）の行動の二乗という何かがあって、それがLoveの力で引き寄せられるなら、起業家の行動の結果は、そもそもどんなポテンシャルだったのか？
 
-この問いに、まだ答えはありません。式で確かめられるのは、境目の形が `c` ごとに決まる、というところまでです。ここから先は、論証の難しい脱線話なので、寄り道に置きます。
+式で確かめられるのは、境目の形が `c` ごとに決まる、というところまでです。ここからは、式の外へ出ます。Love と呼びたいものを駆動源として、起業家が意思決定していると見たら、その場はジュリア集合のようなものかもしれない。その仮説で、問いに近寄ります。
 
-<details class="pd-column" id="jp-detour"><summary><span>Love を駆動源と見たら、ジュリア集合のようなものかもしれない<span class="pd-column__sub">一旦の仮説と、美から近寄る四段の仮説</span></span></summary>
+## 起業家を駆るものは、ジュリア集合のようなポテンシャルから出るのか
 
-起業家の意思決定が、ジュリア集合から生まれる、と言いたいのではありません。Love と呼びたいものを駆動源として、起業家が意思決定していると見たら、その場はジュリア集合のようなものかもしれない。そういう脱線話です。
+<!--OPEN-->
 
-### 問いの筋と、一旦の仮説
 
 <a id="jp-idea"></a>pjdhiro は、そのポテンシャルを、ジュリア集合の形を見たときの印象から、神・愛・美と呼ばれてきたものに見ています。問いの筋は、次のように整理しています。
 
@@ -652,14 +653,20 @@ pjdhiro は、一旦の仮説を置いています。
 
 pjdhiro は、自己と自己の掛け合わせを、気づいていない自分（ユングのシャドー）からも仮に見ています（z の二乗の章の、シャドーの段）。
 
-### 美の定義から入った、四段の仮説
+<!--TURN-->一旦の仮説を置きました。次は、美の側から、もう一度この場に近寄ります。<!--/TURN-->
+
+<!--PART:第五部|美から近寄る、四段の仮説-->
+
+## 美の定義から入った、四段の仮説
+
+<!--OPEN-->
 
 <a id="jp-four"></a>渦と遡りの関係が何を意味するかについて、pjdhiro は美の定義から入り、四段の仮説を立てました。問いの筋のうち、神・美・愛のようなもので駆動し、それがジュリア集合のようなポテンシャルから出る、という所に、美の側から近寄る仮説です。
 
-- 一つ目：美は、美醜・恐怖の入り乱れたところから出る（下の「美は、どこから出るのか」）
-- 二つ目：ジュリア集合に似た形は、自然の中に、善悪の判断のない形として並ぶ。その形が神や愛のようなポテンシャルの場で、そこから元型のようなイメージや美が生まれる（下の「ジュリア集合に似た形を、自然の中に探す」「その形が、神や愛のようなポテンシャルの場になる」）
-- 三つ目：美・神・愛が同じなら、愛で駆動するプロジェクトの場の形も、そこから生まれる（下の「美・神・愛が同じなら、プロジェクトの場の形は」）
-- 四つ目：それがあらゆる大きさで自己相似なら、至る所にジュリア集合が現れる（下の「あらゆる大きさで、同じ形が現れる」）
+- 一つ目：美は、美醜・恐怖の入り乱れたところから出る（章「美は、どこから出るのか」）
+- 二つ目：ジュリア集合に似た形は、自然の中に、善悪の判断のない形として並ぶ。その形が神や愛のようなポテンシャルの場で、そこから元型のようなイメージや美が生まれる（章「ジュリア集合に似た形を、自然の中に探す」「その形が、神や愛のようなポテンシャルの場になる」）
+- 三つ目：美・神・愛が同じなら、愛で駆動するプロジェクトの場の形も、そこから生まれる（章「美・神・愛が同じなら、プロジェクトの場の形は」）
+- 四つ目：それがあらゆる大きさで自己相似なら、至る所にジュリア集合が現れる（章「あらゆる大きさで、同じ形が現れる」）
 
 四段のあいだには飛躍があり、どれもこれから確かめる仮説です。番号と並べ方は、Claude が対話を整理して付けました。四段を言い終えて、pjdhiro はこう添えました。
 
@@ -668,7 +675,7 @@ pjdhiro は、自己と自己の掛け合わせを、気づいていない自分
 「30 領域」は、「[創造とは](../cs/)」で、創造の五つの段（場・波・縁・渦・束）に似た形が 30 の分野で報告されていることを指します。
 
 
-### 美は、どこから出るのか
+## 美は、どこから出るのか
 
 <a id="jp-awe"></a>一つ目は、美がどこから出るか、という仮説です。入口は、ひまわりの渦でした。
 
@@ -735,7 +742,7 @@ pjdhiro は、自己と自己の掛け合わせを、気づいていない自分
 
 </details>
 
-### 神は、なぜ恐ろしくもあるのか
+## 神は、なぜ恐ろしくもあるのか
 
 <a id="jp-awe-ground"></a>一つ目の仮説で、美と恐ろしさが一緒に感じられる所には、pjdhiro の体感があります。四段のうち、神が出てくる所の足場です。
 
@@ -775,7 +782,7 @@ pjdhiro の言う分裂は、精神分析家クラインが書いた分裂のほ
 
 <strong>pjdhiro の見方：</strong>ここで、神と愛が近い　アガペーのようなものが隣接してきますよね。それはさておき
 
-### ジュリア集合に似た形を、自然の中に探す
+## ジュリア集合に似た形を、自然の中に探す
 
 <a id="jp-form"></a>二つ目は、形の側からの仮説です。ジュリア集合に似た形を、自然の中に探していきます。
 
@@ -795,7 +802,7 @@ pjdhiro の言う分裂は、精神分析家クラインが書いた分裂のほ
 
 </details>
 
-### その形が、神や愛のようなポテンシャルの場になる
+## その形が、神や愛のようなポテンシャルの場になる
 
 <a id="jp-potential"></a>二つ目の仮説は、形の話から、神と愛の話へ進みます。神と呼ばれる存在を感じてしまう心の作りを、pjdhiro は別の対話で、ユングの元型の概念から見ていました。その話を受けて、二つ目は次のようにまとまりました。
 
@@ -908,7 +915,7 @@ pjdhiro の言う分裂は、精神分析家クラインが書いた分裂のほ
 
 </details>
 
-### 美・神・愛が同じなら、プロジェクトの場の形は
+## 美・神・愛が同じなら、プロジェクトの場の形は
 
 <a id="jp-source"></a>三つ目は、二つ目を Love駆動開発につなぐ仮説です。
 
@@ -989,7 +996,9 @@ Love駆動開発は、プロジェクトを動かしているもの（駆動源�
 
 </details>
 
-### 美は、起業家のエネルギーに近いか
+## 美は、起業家のエネルギーに近いか
+
+<!--OPEN-->
 
 <a id="jp-entrepreneur"></a>三つ目の仮説には、行き先があります。
 
@@ -997,11 +1006,11 @@ Love駆動開発は、プロジェクトを動かしているもの（駆動源�
 
 <strong>pjdhiro の見方：</strong>美の定義では？から行けそうな。そして、美とは起業家のエネルギーと近い、と結ぶ。
 
-このページは、`c` を Love と呼びたいものの重力と仮に置き、起業家の思考・心理・行動を一歩ごとに引き寄せるもの（駆動源）と見てきました。エフェクチュエーションの論では、起業家を動かすものは謎のまま残っている、と pjdhiro は見ています。三つ目の仮説は、その謎の所に、美・神・愛と同じものを置いてみる見方です。起業家が何かに惹きつけられて動き出すとき、その惹きつけるものは、美しいものに心を惹かれるときと同じものかもしれない。結びは、そう読めます。寄り道の初めの問いの筋の「体感では神・美・愛のようなもので駆動する」は、この結びを、起業家の体感の側から言ったものとして読めます。
+このページは、`c` を Love と呼びたいものの重力と仮に置き、起業家の思考・心理・行動を一歩ごとに引き寄せるもの（駆動源）と見てきました。エフェクチュエーションの論では、起業家を動かすものは謎のまま残っている、と pjdhiro は見ています。三つ目の仮説は、その謎の所に、美・神・愛と同じものを置いてみる見方です。起業家が何かに惹きつけられて動き出すとき、その惹きつけるものは、美しいものに心を惹かれるときと同じものかもしれない。結びは、そう読めます。第四部の問いの筋の「体感では神・美・愛のようなもので駆動する」は、この結びを、起業家の体感の側から言ったものとして読めます。
 
 上の畳みに置いた古典は、それぞれ、この結びの一部に触れています。一方で、美や愛を、起業家を動かすものと結んだ論は、読めた範囲では見つかりませんでした。三つを同じものとする「もしも」を確かめた論もありません。
 
-### あらゆる大きさで、同じ形が現れる
+## あらゆる大きさで、同じ形が現れる
 
 <a id="jp-scale"></a>四つ目は、ここまでの仮説が、大きさを変えても同じ形で成り立つとしたら、という仮説です。
 
@@ -1062,39 +1071,35 @@ pjdhiro は、それを強い仮説として言い直しています。
 
 </details>
 
-</details>
+<!--TURN-->二つの仮説で、問いに近寄りました。最後に、式の所ごとに置いた仮説を並べます。<!--/TURN-->
 
-<!--TURN-->問いを置き、寄り道で近寄れる所まで近寄りました。最後に、まだ埋まらない所を置きます。<!--/TURN-->
+<!--PART:第六部|仮説として置いたもの-->
 
-<!--PART:第五部|まだ埋まらない所-->
-
-## 空いたままの所
+## 式の所ごとに置いた仮説
 
 <!--OPEN-->
 
-<a id="jp-gaps"></a>問いに近寄っても、埋まらない所が残りました。どの論も埋めていなかった所です。
+<a id="jp-gaps"></a>このページは、式の所ごとに、起業家の何に当たるかを仮説として置いてきました。どれも論証したものではなく、当てながら考えるための足場です。所ごとに並べます。
 
-<b>自分で自分を回す一歩に、周りから見える行動や心理で当たるものはあるか。</b>`z²` は、起業家の思考・心理・行動が自分で自分を回す一歩と仮に置きました（章「z の二乗は、自分で自分を回す一歩」）。周りに見える思いがけないことは、二乗の一面に似て見えるところまでしか言えませんでした。認知できる側に切り取られた行動や心理のうち、角度と大きさを変えるはたらきと、二対一のはたらきを、両方とも持つものは、まだ見つかっていません。
+<b>`z`：起業家の思考・心理・行動。</b>気づきや決定も含みます。横の軸（実軸）に認知できる面、縦の軸（虚軸）に認知し得ない面を当てました（章「z は、起業家の思考・心理・行動」）。
 
-<b>`√` を取ることは、何を意味するか。</b>式の側では、遡る一段は、大きさが一つに決まり、向きが二つに分かれます。それがたとえの側で何に当たるかは、当てはまる概念が見つかっていません。
+<b>`z²`：自分で自分を回す一歩。</b>自己が一つでないなら、自己と自己が掛け合わさり、どちらか一つには無いもの（`2ab`）を次の一歩に生む、と当てました。気づいていない自分（シャドー）の側から見ると、一歩は自己認識と違う向きへ進み、振り返ると新たな自分に気づく、とも読みました。周りに見える行動や心理では、思いがけないことが、二乗の一面に似て見えます（章「z の二乗は、自分で自分を回す一歩」）。
 
-<strong>pjdhiro の見方：</strong>このルートは違和感だけで、当てはまる概念がない。数式だけがある
+<b>`z` と `−z` を一つに送る二対一。</b>前へ進む一歩は、見分けられる二つを、同じ一つへ送ります（図：[二乗を手で動かす](#jp-sq)）。pjdhiro は、二つの絵が一緒にあって一つの記述になる相補性（ボーア）を候補に挙げ、2025 年の記事では、マイナスの平方根の反転の写しを ☯ に見ました。自己を系の連合と見るスキッパーらは、違う組み合わせが同じ「自己」の名で呼ばれる、と書きます。どれも、逆向きの二つを一つの値に送る式そのものを書いた論ではありません。
 
-<b>`z` と `−z` を一つに送る二対一を、どう読むか。</b>前へ進む一歩は、見分けられる二つを、同じ一つへ送ります（図：[二乗を手で動かす](#jp-sq)）。逆向きの二つが同じ一つに行く、という形で書いた論は、読めた中にはありませんでした。pjdhiro が挙げた相補性（ボーア）は、二つの絵が一緒にあって一つの記述になる、という言い方が近い候補ですが、観測と記述の話です。自己を系の連合と見るスキッパーらは、違う組み合わせが同じ「自己」の名で呼ばれる、と書きます。多くを一つの名に送る形は近く見えますが、逆向きの二つの対ではなく、名付けの話です。
+<b>`√`：一段遡ること。</b>遡る一段では、大きさが一つに決まり、向きが二つに分かれます。遡った枝を、認知されなかった道とも、父と母のルーツから宇宙の最初まで続く来歴とも読みました（章「値を前へ打つと渦になり、遡るとジュリア集合の形になる」）。
 
-<strong>pjdhiro の見方：</strong>ここをどう解釈するかです。これが最後のピースで、いつまで経っても埋まらない。
+<b>`c`：Love と呼びたいものの重力。</b>一歩ごとに、同じ向きへ同じだけ引き寄せます。重力のもとになる質量と同じく、符号が一つしかない、と当てました（章「c は、一歩ごとに同じだけ引き寄せる」）。
 
-<b>自然によく見られる形と、美しさの関係。</b>四段の一つ目と二つ目のあいだの飛躍です。作る側から触れたアレグザンダーも、なぜそうなるかは言っていません。
+<b>境目：起業家を駆るものが出てくる、ポテンシャルの場。</b>一旦の仮説では、いつか誰かが達成する可能性を持った場と読み、四段の仮説では、神・愛・美のポテンシャルの場と読みました（第四部・第五部）。四段のうち、自然によく見られる形と美しさのあいだ、美・神・愛が同じものを指すかの「もしも」は、飛躍を抱えたまま当てている所です。
 
-<b>美・神・愛は、同じものを指しているか。</b>三つ目の仮説の「もしも」の所です。古典には三つを神の名として重ねる論（偽ディオニュシオス）があり、測る研究には美と崇高を分ける結果があります。どちらも、この「もしも」を確かめたものではありません。
-
-前へ打った渦と、遡った境目の形との関係が何を意味するかも、まだ読めていません。境目の上の点から遡った点が境目のどこにでも近づくことは数学で確かめられていて、渦の上の点から遡った枝が境目に寄ることは Claude の計算で確かめました。その意味を読んだ論は見つかりませんでした。pjdhiro は、起業家・組織・社会はフラクタルで、どこかの大きさで `√` がなじむものが見つかれば、ほかの大きさにも当てて読める、という強い仮説を持っています。その最初のとっかかりは、まだ見つかっていません。
+前へ打った渦と、遡った境目の形との関係については、pjdhiro は、起業家・組織・社会はフラクタルで、どこかの大きさで当てはまるものが見つかれば、ほかの大きさにも当てて読める、という強い仮説を持っています。境目の上の点から遡った点が境目のどこにでも近づくことは数学で確かめられていて、渦の上の点から遡った枝が境目に寄ることは Claude の計算で確かめました。
 
 <details><summary>先行研究 — 問いと四段のどの面に、どの論が触れたか</summary>
 
 <div class="tablefit cols-3">
 
-| 問いの面 | 触れていた論（畳みの置き場。「〜つ目の節」は第四部の寄り道の中） | どう触れていたか |
+| 問いの面 | 触れていた論（畳みの置き場。「一つ目の節」〜「四つ目の節」は第五部の四段の仮説の章） | どう触れていたか |
 |---|---|---|
 | `z`：認知できる面（実軸）と、認知し得ない面（虚軸） | サッコら（二つ目の節） | マンデルブロ集合が実数と虚数をまたぐことを、ユングの意識と無意識の考えと補い合うもの、とする。たとえの水準 |
 | `z²`：自分で自分を回す一歩 | サラスバシー（第一部の二乗の章） | 周りに見える思いがけないことが、二乗の一面に似て見える。二乗の二つのはたらきを両方とも持つものは無い |
