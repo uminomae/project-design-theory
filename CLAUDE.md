@@ -36,7 +36,7 @@
 
 毎回読むのは最初の行の二つの正本（`stance.md`・`corrections.md`）の全文。芯だけで始めない。残りは、その作業をするときに読む（pjdhiro 2026-11-19「全文に戻す」。芯だけで始めたセッションで、たとえの対話が「ここまでの議論をまるで参照していないように見えます」「話が伝わらない感じが困る。コンテキストで読み込む内容を変えたからだと思う」となったため）。
 
-**読みに行くのをためらわない。** 分けて置いたもの（`stance-theories.md`・`corrections-examples.md`・`corrections-rg.md`・`corrections-k.md` ほか）も、少しでも関わりそうなら開く。判断を仰ぐ前・案を出す前・公開文を書く前・pjdhiro の言葉の読みに迷ったときは、関わる節を必ず開く。トークンの節約を、判断の精度より先にしない（pjdhiro 2026-11-19「現在のclaudeの判断は私に近づいているので気に入っています。その精度が落ちないよう、読みにいく場合のハードルは下げて、トークン節約だけを優先することのないようにして」）。
+**読みに行くのをためらわない。** 分けて置いたもの（`stance-history.md`・`stance-theories.md`・`corrections-examples.md`・`corrections-rg.md`・`corrections-k.md` ほか）も、少しでも関わりそうなら開く。判断を仰ぐ前・案を出す前・公開文を書く前・pjdhiro の言葉の読みに迷ったときは、関わる節を必ず開く。トークンの節約を、判断の精度より先にしない（pjdhiro 2026-11-19「現在のclaudeの判断は私に近づいているので気に入っています。その精度が落ちないよう、読みにいく場合のハードルは下げて、トークン節約だけを優先することのないようにして」）。
 
 | いつ | 読むもの |
 |---|---|
@@ -50,7 +50,7 @@
 | 特定のページ・Issue を触る | `docs/rules/decisions.md`：そのページ・Issue の行だけ（Love駆動開発の読み物は、終わりの「読み物の組み立て」の節も） |
 | 司令塔のセッションの始め・「付箋帳」「違和感帳」と言われた | `docs/tools/fusen-cho.md`：手元の指示を付箋のように置き、Issue を週で見る帳面（アーティファクト）の読み方・返事の書き方・しまい方。2026-11-17 に違和感帳（`docs/tools/iwakan-cho.md`・読むだけで残す）から移った |
 
-新しい指摘を受けたら、同じセッションで stance.md か corrections.md（正本）に足し、芯は commit のときに pre-commit が作り直す（手で回すなら `python3 -I scripts/rules-core.py`。食い違いは check.sh が止める）。足すときは、まず既にある行に溶かせるかを見る。ページや Issue ごとの判定は decisions.md に、見方として一般化できる一行だけを stance.md に書く。代表例（corrections-examples.md）は型ごとに一、二件に保ち、足すなら入れ替える。
+新しい指摘を受けたら、同じセッションで stance.md か corrections.md（正本）に足し、芯は commit のときに pre-commit が作り直す（手で回すなら `python3 -I scripts/rules-core.py`。食い違いは check.sh が止める）。足すときは、まず既にある行に溶かせるかを見る。正本の行には日付・番号と言葉の芯を書き、何への答えだったか（場面）と原文は `stance-history.md`・`corrections-history.md` の同じ節に足す（2026-11-20・毎回読む量を減らすため）。ページや Issue ごとの判定は decisions.md に、見方として一般化できる一行だけを stance.md に書く。代表例（corrections-examples.md）は型ごとに一、二件に保ち、足すなら入れ替える。
 
 ## セッションの終わりに
 
