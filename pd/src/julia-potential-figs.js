@@ -443,6 +443,7 @@
   /* ---- 5) 漸化式とは（#jp-rec）：決まりを一つ選び、前の値から次の値を一歩ずつ出す。数直線に跳ぶ点を打つ ---- */
   const rec = document.getElementById("jp-rec");
   const RULES = {
+    plus1: { f: (a) => a + 1, show: (p) => p + " + 1", name: "1 を足す" },
     double: { f: (a) => 2 * a, show: (p) => p + " × 2", name: "2 倍する" },
     half: { f: (a) => a / 2, show: (p) => p + " ÷ 2", name: "半分にする" },
     square: { f: (a) => a * a, show: (p) => p + "²", name: "二乗する" },
@@ -453,28 +454,28 @@
   function drawRec() {
     if (!rec) return;
     const cv = document.getElementById("jp-rec-cv"), ctx = cv.getContext("2d"), W = cv.width, H = cv.height;
-    const LO = -4, HI = 4, X = (v) => 30 + (v - LO) / (HI - LO) * (W - 60), y0 = H * 0.62;
+    const LO = -10, HI = 10, X = (v) => 30 + (v - LO) / (HI - LO) * (W - 60), y0 = H * 0.66;
     ctx.fillStyle = css(rec, "--panel"); ctx.fillRect(0, 0, W, H);
     ctx.strokeStyle = css(rec, "--mid"); ctx.lineWidth = 1.5; ctx.beginPath(); ctx.moveTo(14, y0); ctx.lineTo(W - 14, y0); ctx.stroke();
     ctx.fillStyle = css(rec, "--mid"); ctx.font = "22px sans-serif"; ctx.textAlign = "center";
-    for (let k = LO; k <= HI; k++) { ctx.beginPath(); ctx.moveTo(X(k), y0 - 5); ctx.lineTo(X(k), y0 + 5); ctx.stroke(); ctx.fillText(k < 0 ? "−" + -k : String(k), X(k), y0 + 32); }
+    for (let k = LO; k <= HI; k++) { const big = k % 2 === 0; ctx.beginPath(); ctx.moveTo(X(k), y0 - (big ? 8 : 4)); ctx.lineTo(X(k), y0 + (big ? 8 : 4)); ctx.stroke(); if (big) ctx.fillText(k < 0 ? "−" + -k : String(k), X(k), y0 + 36); }
     const s = R.seq;
     for (let n = 1; n < s.length; n++) {
       const a = s[n - 1], b = s[n]; if (Math.abs(a) > HI) break;
-      const xa = X(a), xb = X(Math.max(LO - 0.3, Math.min(HI + 0.3, b))), mid = (xa + xb) / 2, h = 18 + Math.min(70, Math.abs(xb - xa) * 0.35);
+      const xa = X(a), xb = X(Math.max(LO - 0.3, Math.min(HI + 0.3, b))), mid = (xa + xb) / 2, h = 18 + Math.min(90, Math.abs(xb - xa) * 0.3);
       ctx.strokeStyle = n === s.length - 1 ? css(rec, "--coral") : css(rec, "--line"); ctx.lineWidth = n === s.length - 1 ? 2 : 1.5;
       ctx.beginPath(); ctx.moveTo(xa, y0 - 6); ctx.quadraticCurveTo(mid, y0 - 6 - h, xb, y0 - 6); ctx.stroke();
     }
     s.forEach((v, n) => {
       if (Math.abs(v) > HI) return;
-      ctx.fillStyle = n === s.length - 1 ? css(rec, "--coral") : css(rec, "--navy"); dot(ctx, X(v), y0, n === s.length - 1 ? 6 : 4.5);
+      ctx.fillStyle = n === s.length - 1 ? css(rec, "--coral") : css(rec, "--navy"); dot(ctx, X(v), y0, n === s.length - 1 ? 9 : 6);
     });
     const last = s[s.length - 1];
-    if (Math.abs(last) > HI) { ctx.fillStyle = css(rec, "--coral"); ctx.textAlign = last > 0 ? "right" : "left"; ctx.fillText(last > 0 ? "この先は図の外 →" : "← この先は図の外", last > 0 ? W - 14 : 14, y0 - 40); }
+    if (Math.abs(last) > HI) { ctx.fillStyle = css(rec, "--coral"); ctx.textAlign = last > 0 ? "right" : "left"; ctx.fillText(last > 0 ? "この先は図の外 →" : "← この先は図の外", last > 0 ? W - 14 : 14, y0 - 60); }
     const chain = document.getElementById("jp-rec-chain");
     chain.textContent = s.map((v, n) => "a" + sub(n) + " = " + nf(v)).join("　→　");
     const out = document.getElementById("jp-rec-out"), rule = RULES[R.rule];
-    if (s.length === 1) out.textContent = "決まり「" + rule.name + "」、はじめの値 a₀ = " + nf(R.a0) + "。「一歩進める」をクリックすると、いまの値に決まりを当てて、次の値を出します。";
+    if (s.length === 1) out.textContent = "決まり「" + rule.name + "」、はじめの値 a₀ = " + nf(R.a0) + "。「一歩進める」か「再生」をクリックすると、いまの値に決まりを当てて、次の値を出します。";
     else { const n = s.length - 1; out.textContent = "a" + sub(n) + " = " + rule.show("a" + sub(n - 1)) + " = " + rule.show(paren(s[n - 1])) + " = " + nf(s[n]) + "。出てきた値に、また同じ決まりを当てます。"; }
   }
   const SUB = "₀₁₂₃₄₅₆₇₈₉"; function sub(n) { return String(n).split("").map((d) => SUB[+d]).join(""); }
@@ -534,7 +535,8 @@
      つまんで動かす（ドラッグ）・スライダ（角度・距離）・「z を一周させる」（z が一周する間に z² は二周し、z と −z が同じ所を通る）。
      「c も足す」は次の部の c の予告で、別の段の組にした ---- */
   const sq = document.getElementById("jp-sq");
-  let SQ = { z: { re: 0.8 * Math.cos(Math.PI / 6), im: 0.8 * Math.sin(Math.PI / 6) }, c: { re: 0, im: 0 }, neg: true, trail: [], timer: null };
+  const SQ0 = { re: 0.8 * Math.cos(Math.PI / 6), im: 0.8 * Math.sin(Math.PI / 6) };
+  let SQ = { z: { ...SQ0 }, c: { re: 0, im: 0 }, neg: true, trail: [], timer: null, orbit: [], itimer: null };
   const deg360 = (a) => ((((a * 180) / Math.PI) % 360) + 360) % 360;
   function drawSq() {
     if (!sq) return;
@@ -552,6 +554,12 @@
     ctx.lineWidth = 2;
     ctx.strokeStyle = css(sq, "--navy"); ctx.beginPath(); ctx.moveTo(ox, oy); ctx.lineTo(zx, zy); ctx.stroke();
     ctx.strokeStyle = css(sq, "--coral"); ctx.beginPath(); ctx.moveTo(ox, oy); ctx.lineTo(qx, qy); ctx.stroke();
+    // もう一度二乗した跡：これまでの z（灰の点と線）
+    if (SQ.orbit.length) {
+      ctx.strokeStyle = css(sq, "--mid"); ctx.fillStyle = css(sq, "--mid"); ctx.lineWidth = 1.5; ctx.setLineDash([3, 4]); ctx.beginPath();
+      SQ.orbit.concat([z]).forEach((p, i) => { const [x, y] = toPx(PV, p.re, p.im, cv); i ? ctx.lineTo(x, y) : ctx.moveTo(x, y); }); ctx.stroke(); ctx.setLineDash([]);
+      SQ.orbit.forEach((p) => { const [x, y] = toPx(PV, p.re, p.im, cv); dot(ctx, x, y, 4); });
+    }
     // 角度の弧：青が z、赤が z²（いつも青の二倍）
     const R0 = 26, ccw = (from, span) => { ctx.beginPath(); ctx.arc(ox, oy, from, 0, -span, true); ctx.stroke(); };
     ctx.strokeStyle = css(sq, "--navy"); ccw(R0, (a1d * Math.PI) / 180);
@@ -574,6 +582,8 @@
     let t = "z：角度 " + ad + "°・原点からの距離 " + rr.toFixed(2) + "\nz²：角度 " + (2 * ad) % 360 + "°（" + ad + "° の二倍" + (2 * ad >= 360 ? " の " + 2 * ad + "° から一周を引いた" : "") + "）・距離 " + (rr * rr).toFixed(2) + "（" + rr.toFixed(2) + " の二乗）";
     t += r1 < 0.98 ? "\n距離 1 の円（点線）の内側なので、二乗すると原点に近づく" : r1 > 1.02 ? "\n距離 1 の円（点線）の外側なので、二乗すると原点から遠ざかる" : "\nほぼ距離 1 の円の上なので、距離はほとんど変わらない";
     if (SQ.neg) { const b = (ad + 180) % 360; t += "\n−z：角度 " + b + "°。二乗すると " + 2 * b + "°" + (2 * b >= 360 ? "（一周を引くと " + (2 * b) % 360 + "°）" : "") + "で、z² と同じ所に行く（二対一）"; }
+    if (SQ.orbit.length) t = "二乗した回数：" + SQ.orbit.length + "（いまの z は、はじめの z を " + SQ.orbit.length + " 回" + (SQ.c.re || SQ.c.im ? "、二乗して c を足した" : "二乗した") + "値）\n" + t;
+    if (r1 > 2) t += "\nz が図の外（距離 2 の外）に出たので、ここで止めます";
     if (SQ.c.re || SQ.c.im) t += "\n+ c：z² を、同じ向きに同じだけずらす（c = " + nf2(SQ.c.re) + (SQ.c.im < 0 ? " − " : " + ") + nf2(Math.abs(SQ.c.im)) + "i）";
     document.getElementById("jp-sq-out").textContent = t;
     const sa = document.getElementById("jp-sq-a"), sr = document.getElementById("jp-sq-r");
@@ -582,23 +592,39 @@
   }
   if (sq) {
     const cv = document.getElementById("jp-sq-cv"), play = document.getElementById("jp-sq-play");
-    const stopSq = () => { if (SQ.timer) { clearInterval(SQ.timer); SQ.timer = null; } play.setAttribute("aria-pressed", "false"); };
+    const iplay = document.getElementById("jp-sq-iter");
+    const stopIt = () => { if (SQ.itimer) { clearInterval(SQ.itimer); SQ.itimer = null; } if (iplay) iplay.setAttribute("aria-pressed", "false"); };
+    const stopSq = () => { if (SQ.timer) { clearInterval(SQ.timer); SQ.timer = null; } play.setAttribute("aria-pressed", "false"); stopIt(); };
+    // もう一度二乗する：いまの z² を（c を足すときは z² + c を）次の z にする
+    const sqStep = () => {
+      const z = SQ.z; if (Math.hypot(z.re, z.im) > 2 || SQ.orbit.length >= 30) return false;
+      SQ.trail = []; SQ.orbit.push({ ...z }); SQ.z = { re: z.re * z.re - z.im * z.im + SQ.c.re, im: 2 * z.re * z.im + SQ.c.im }; drawSq();
+      return Math.hypot(SQ.z.re, SQ.z.im) <= 2 && SQ.orbit.length < 30;
+    };
     let dragging = false;
     const setFromEvent = (e) => { if (!cv.getBoundingClientRect().width) return; const p = fromPx(PV, e, cv); const r = Math.hypot(p.re, p.im); SQ.z = r > 1.6 ? { re: (p.re * 1.6) / r, im: (p.im * 1.6) / r } : p; drawSq(); };
-    cv.addEventListener("pointerdown", (e) => { stopSq(); SQ.trail = []; dragging = true; if (cv.setPointerCapture) cv.setPointerCapture(e.pointerId); setFromEvent(e); });
+    cv.addEventListener("pointerdown", (e) => { stopSq(); SQ.trail = []; SQ.orbit = []; dragging = true; if (cv.setPointerCapture) cv.setPointerCapture(e.pointerId); setFromEvent(e); });
     cv.addEventListener("pointermove", (e) => { if (dragging) setFromEvent(e); });
     const end = () => { dragging = false; }; cv.addEventListener("pointerup", end); cv.addEventListener("pointercancel", end);
     const fromPolar = (deg, r) => ({ re: r * Math.cos((deg * Math.PI) / 180), im: r * Math.sin((deg * Math.PI) / 180) });
     const sa = document.getElementById("jp-sq-a"), sr = document.getElementById("jp-sq-r");
-    sa.addEventListener("input", () => { stopSq(); SQ.trail = []; SQ.z = fromPolar(+sa.value, Math.hypot(SQ.z.re, SQ.z.im) || 0.9); drawSq(); });
-    sr.addEventListener("input", () => { stopSq(); SQ.trail = []; SQ.z = fromPolar(deg360(Math.atan2(SQ.z.im, SQ.z.re)), +sr.value); drawSq(); });
+    sa.addEventListener("input", () => { stopSq(); SQ.trail = []; SQ.orbit = []; SQ.z = fromPolar(+sa.value, Math.hypot(SQ.z.re, SQ.z.im) || 0.9); drawSq(); });
+    sr.addEventListener("input", () => { stopSq(); SQ.trail = []; SQ.orbit = []; SQ.z = fromPolar(deg360(Math.atan2(SQ.z.im, SQ.z.re)), +sr.value); drawSq(); });
     const nb = document.getElementById("jp-sq-neg"); nb.setAttribute("aria-pressed", String(SQ.neg));
     nb.addEventListener("click", () => { SQ.neg = !SQ.neg; nb.setAttribute("aria-pressed", String(SQ.neg)); drawSq(); });
     play.addEventListener("click", () => {
       if (SQ.timer) { stopSq(); return; }
-      const r = Math.hypot(SQ.z.re, SQ.z.im) || 0.9; let k = 0; SQ.trail = []; play.setAttribute("aria-pressed", "true");
+      stopIt(); SQ.orbit = []; const r = Math.min(1.6, Math.hypot(SQ.z.re, SQ.z.im)) || 0.9; let k = 0; SQ.trail = []; play.setAttribute("aria-pressed", "true");
       SQ.timer = setInterval(() => { SQ.z = fromPolar(k * 3, r); SQ.trail.push(SQ.z); drawSq(); k++; if (k > 120) stopSq(); }, 40);
     });
+    document.getElementById("jp-sq-once").addEventListener("click", () => { stopSq(); sqStep(); });
+    iplay.addEventListener("click", () => {
+      if (SQ.itimer) { stopIt(); return; }
+      if (SQ.timer) { clearInterval(SQ.timer); SQ.timer = null; play.setAttribute("aria-pressed", "false"); }
+      if (!sqStep()) return; iplay.setAttribute("aria-pressed", "true");
+      SQ.itimer = setInterval(() => { if (!sqStep()) stopIt(); }, 900);
+    });
+    document.getElementById("jp-sq-back").addEventListener("click", () => { stopSq(); SQ.trail = []; SQ.z = SQ.orbit.length ? SQ.orbit[0] : { ...SQ0 }; SQ.orbit = []; drawSq(); });
     sq.querySelectorAll("[data-sqc]").forEach((b) => b.addEventListener("click", () => {
       const [a, i] = b.dataset.sqc.split(",").map(Number); SQ.c = { re: a, im: i };
       sq.querySelectorAll("[data-sqc]").forEach((x) => x.setAttribute("aria-pressed", String(x === b))); drawSq();
