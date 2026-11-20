@@ -93,6 +93,8 @@
       .jp-fig__readout--pre { white-space: pre-line; font-variant-numeric: tabular-nums; }
       .jp-fig__grid--three { grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); }
       .jp-fig__grid--one { grid-template-columns: 1fr; max-width: 30rem; margin-inline: auto; }
+      .jp-fig__grid--fold { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); align-items: start; }
+      @media (max-width: 40rem) { .jp-fig__grid--fold { grid-template-columns: 1fr; } .jp-fig__grid--fold .jp-fig__panel:first-child canvas { max-width: 15rem; margin-inline: auto; } }
       .jp-fig__group { margin-top: .9rem; padding-top: .6rem; border-top: 1px solid var(--line); }
       .jp-fig__glabel { margin: 0 0 .2rem; font-size: .8rem; letter-spacing: .04em; color: var(--mid); }
       #jp-lab-c, #jp-lab-1, #jp-lab-2 { cursor: crosshair; }

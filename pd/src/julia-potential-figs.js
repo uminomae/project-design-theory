@@ -3,6 +3,7 @@
 // 1) 固定の図（data-g）：② 黄金角の c の前へ打った値を不動点の周りで拡大、③ ひまわりの並べ方（第二部）
 // 2) 手を動かす図（#jp-lab）：c の地図をクリックして c を選ぶ／①で、0 から前へ打った値（赤）と、赤の一点から ±√ の両方で遡る枝を見る（押すと遡りの出発の点が変わる）／ボタン・スライダ／一歩ずつ・再生／塗り分けを重ねる
 // 3) 力の地図と、その c で残る形（#jp-mand・#jp-julia、章の畳み）
+// 4) 円を遡って畳む（#jp-fold）：一段を「− c」「√」「−√」の三歩に分け、一歩ずつ・戻す・再生。色で出どころを追う。c は地図のクリックかボタン
 (function () {
   const figs = document.querySelectorAll(".jp-fig");
   if (!figs.length) return;
@@ -273,68 +274,169 @@
   }
 
   /* ---- 4) 円を遡って畳む（#jp-fold、第三部の頭の章） ----
-     大きさ 2 の円の上の点を、±√(w − c) で一段ずつ遡る。一段ごとの曲線は、前の曲線を二周たどって平方根を取り、
-     隣の点に近いほうの枝を選んでつなぐ（曲線の一点 t の行き先が、前の曲線の 2t になる）。
-     曲線の内側は、その段の数だけ前へ打っても大きさ 2 を超えない点の集まりで、段を重ねると充填ジュリア集合に寄る。 */
+     大きさ 2 の円の上の点を、±√(w − c) で一段ずつ遡る。一段を三つの歩に分けて描く。
+       一歩目「− c」：曲線の全体を −c だけ平行移動する（c にあった点が 0 に来る）。
+       二歩目「√」 ：0 の周りの角を半分、0 からの距離を √ にする（√ の主値。一周が右半分の半周に縮む）。
+       三歩目「−√」：主値の写しのうち −√ の枝に当たる点を、0 の周りに半回転させる（もう一方の半分を埋める）。
+     曲線は N 点で持ち、一段ごとの曲線の点 j は、前の曲線の点 2j mod N から来る（j と j + N/2 が同じ点から来る二つの枝）。
+     枝の符号は、隣の点に近いほうを選んでつなぐ（曲線の一点 t の行き先が、前の曲線の 2t になる）。
+     色は点に付いたまま動く。「一つ前の段の位置」では、その段の前の曲線の一周を虹の順に塗る。「最初の円の位置」では、
+     その点を前へ打ったときに戻る、最初の円の上の位置で塗る（段が深いほど細かくなる）。−√ の枝は濃い色にする。
+     曲線の内側は、その段の数だけ前へ打っても大きさ 2 を超えない点の集まりで、段を重ねると充填ジュリア集合に寄る。
+     M の外の c では曲線が二つに切れて、この描き方（一本の曲線でつなぐ）が成り立たないので、選べないようにする。 */
   const fold = document.getElementById("jp-fold");
   let drawFold = () => {};
   if (fold) {
-    const cv = document.getElementById("jp-fold-cv"), out = document.getElementById("jp-fold-out");
-    const N = 16384, MAXK = 14, FV = { x0: -2.2, x1: 2.2, y0: -2.2, y1: 2.2 };
-    let C = cFromAngle(GOLDEN_DEG, 0.97), levels = [], k = 0, tw = 1, timer = 0;
+    const cv = document.getElementById("jp-fold-cv"), cvM = document.getElementById("jp-fold-c"), out = document.getElementById("jp-fold-out");
+    const N = 16384, MAXK = 12, LAST = 3 * MAXK, FV = { x0: -2.75, x1: 2.75, y0: -2.75, y1: 2.75 }, NB = 48;
+    let C = cFromAngle(GOLDEN_DEG, 0.97), levels = [], half = [], sig = [], pos = 0, tw = 1, timer = 0, animId = 0, global = false, mapImg = null, note = "";
+    // 主値の平方根（偏角を (−π, π] で半分にする）
+    const sqrtP = (wr, wi) => { const m = Math.hypot(wr, wi); return [Math.sqrt((m + wr) / 2), Math.sign(wi || 1) * Math.sqrt(Math.max(0, (m - wr) / 2))]; };
     function build() {
       const re0 = new Float64Array(N), im0 = new Float64Array(N);
       for (let j = 0; j < N; j++) { const a = (2 * Math.PI * j) / N; re0[j] = 2 * Math.cos(a); im0[j] = 2 * Math.sin(a); }
-      levels = [[re0, im0]];
+      levels = [[re0, im0]]; half = [null]; sig = [null];
       for (let l = 1; l <= MAXK; l++) {
-        const [pr, pi] = levels[l - 1], nr = new Float64Array(N), ni = new Float64Array(N);
+        const [pr, pi] = levels[l - 1], nr = new Float64Array(N), ni = new Float64Array(N), hr = new Float64Array(N), hi = new Float64Array(N), sg = new Int8Array(N);
         for (let j = 0; j < N; j++) {
-          const q = (2 * j) % N, wr = pr[q] - C.re, wi = pi[q] - C.im, m = Math.hypot(wr, wi);
-          let sr = Math.sqrt((m + wr) / 2), si = Math.sign(wi || 1) * Math.sqrt(Math.max(0, (m - wr) / 2));
-          if (j > 0) { const dx = sr - nr[j - 1], dy = si - ni[j - 1], ex = -sr - nr[j - 1], ey = -si - ni[j - 1]; if (ex * ex + ey * ey < dx * dx + dy * dy) { sr = -sr; si = -si; } }
-          nr[j] = sr; ni[j] = si;
+          const q = (2 * j) % N, [sr, si] = sqrtP(pr[q] - C.re, pi[q] - C.im);
+          hr[j] = sr; hi[j] = si; let s = 1;
+          if (j > 0) { const dx = sr - nr[j - 1], dy = si - ni[j - 1], ex = -sr - nr[j - 1], ey = -si - ni[j - 1]; if (ex * ex + ey * ey < dx * dx + dy * dy) s = -1; }
+          nr[j] = s * sr; ni[j] = s * si; sg[j] = s;
         }
-        levels.push([nr, ni]);
+        levels.push([nr, ni]); half.push([hr, hi]); sig.push(sg);
       }
     }
-    function path(ctx, re, im, re2, im2, s) {
-      ctx.beginPath();
-      for (let j = 0; j < N; j++) {
-        const x = re2 ? re2[j] + (re[j] - re2[j]) * s : re[j], y = im2 ? im2[j] + (im[j] - im2[j]) * s : im[j];
-        const [px, py] = toPx(FV, x, y, cv); if (j === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
+    // 歩 p（0 は円、3(l−1)+1・+2・+3 は l 段目の三つの歩）へ向かう途中 s（0〜1）の、点の位置と色と枝
+    const X = new Float64Array(N), Y = new Float64Array(N), H = new Int16Array(N), D = new Int8Array(N);
+    let cnt = 0, sub = -1, lv = 0;
+    function frame(p, s) {
+      if (p === 0) {
+        lv = 0; sub = -1; const [r, i] = levels[0];
+        for (let j = 0; j < N; j++) { X[j] = r[j]; Y[j] = i[j]; H[j] = Math.floor((j * NB) / N); D[j] = 0; }
+        return;
       }
+      lv = Math.ceil(p / 3); sub = (p - 1) % 3;
+      const l = lv, [pr, pi] = levels[l - 1], [hr, hi] = half[l], sg = sig[l], sh = global ? l - 1 : 0;
+      // 色：点 j の前の段の出どころ q の位置。「最初の円の位置」なら、q を l − 1 歩前へ打って戻る円の上の位置
+      const hue = (q) => Math.floor((((q * 2 ** sh) % N) * NB) / N);
+      for (let j = 0; j < N; j++) {
+        if (sub === 0) { X[j] = pr[j] - s * C.re; Y[j] = pi[j] - s * C.im; H[j] = hue(j); D[j] = 0; continue; }
+        const q = (2 * j) % N; H[j] = hue(q); D[j] = sg[j];
+        if (sub === 1) {
+          const wr = pr[q] - C.re, wi = pi[q] - C.im;
+          if (s >= 1) { X[j] = hr[j]; Y[j] = hi[j]; continue; }
+          const r = Math.hypot(wr, wi) ** (1 - s / 2), a = Math.atan2(wi, wr) * (1 - s / 2);
+          X[j] = r * Math.cos(a); Y[j] = r * Math.sin(a);
+        } else {
+          if (sg[j] > 0 || s <= 0) { X[j] = hr[j]; Y[j] = hi[j]; continue; }
+          if (s >= 1) { X[j] = -hr[j]; Y[j] = -hi[j]; continue; }
+          const a = Math.PI * s, ca = Math.cos(a), sa = Math.sin(a);
+          X[j] = hr[j] * ca - hi[j] * sa; Y[j] = hr[j] * sa + hi[j] * ca;
+        }
+      }
+    }
+    function closedPath(ctx) {
+      ctx.beginPath();
+      for (let j = 0; j < N; j++) { const [px, py] = toPx(FV, X[j], Y[j], cv); if (j === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py); }
       ctx.closePath();
     }
+    function arrow(ctx, x0, y0, x1, y1) {
+      const [a, b] = toPx(FV, x0, y0, cv), [c, d] = toPx(FV, x1, y1, cv), ang = Math.atan2(d - b, c - a), L = Math.hypot(c - a, d - b);
+      ctx.beginPath(); ctx.moveTo(a, b); ctx.lineTo(c, d); ctx.stroke();
+      if (L > 12) { ctx.beginPath(); ctx.moveTo(c, d); ctx.lineTo(c - 11 * Math.cos(ang - 0.4), d - 11 * Math.sin(ang - 0.4)); ctx.lineTo(c - 11 * Math.cos(ang + 0.4), d - 11 * Math.sin(ang + 0.4)); ctx.closePath(); ctx.fill(); }
+    }
+    function drawMap() {
+      if (!cvM) return;
+      const ctx = cvM.getContext("2d");
+      if (!mapImg) mapImg = paint(cvM, MV, escM, 90);
+      ctx.putImageData(mapImg, 0, 0);
+      const [px, py] = toPx(MV, C.re, C.im, cvM);
+      ctx.strokeStyle = css(fold, "--coral"); ctx.lineWidth = 3; ctx.beginPath(); ctx.arc(px, py, 7, 0, Math.PI * 2); ctx.stroke();
+    }
+    const STEP_TXT = [
+      "− c：曲線の全体を、矢印のとおり −c だけずらす。c にあった点が 0 に来る",
+      "√：0 の周りの角を半分、0 からの距離を √ にする（√ の主値）。一周が、左で切れて右半分の半周に縮む",
+      "−√：右半分の写しを 0 の周りに半回転させた、もう一つの写し（濃い色）が、左半分を埋める",
+    ];
     drawFold = () => {
-      const f = fold, ctx = cv.getContext("2d");
-      ctx.fillStyle = css(f, "--panel"); ctx.fillRect(0, 0, cv.width, cv.height);
-      ctx.strokeStyle = css(f, "--mid"); ctx.globalAlpha = 0.35; ctx.lineWidth = 1;
-      const [ax, ay] = toPx(FV, 0, 0, cv); ctx.beginPath(); ctx.moveTo(0, ay); ctx.lineTo(cv.width, ay); ctx.moveTo(ax, 0); ctx.lineTo(ax, cv.height); ctx.stroke();
-      if (k > 0) { path(ctx, levels[k - 1][0], levels[k - 1][1]); ctx.stroke(); }
+      const f = fold, ctx = cv.getContext("2d"), W = cv.width, Hh = cv.height, panel = css(f, "--panel"), mid = css(f, "--mid"), coral = css(f, "--coral");
+      ctx.fillStyle = panel; ctx.fillRect(0, 0, W, Hh);
+      const [ax, ay] = toPx(FV, 0, 0, cv);
+      ctx.strokeStyle = mid; ctx.globalAlpha = 0.3; ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.moveTo(0, ay); ctx.lineTo(W, ay); ctx.moveTo(ax, 0); ctx.lineTo(ax, Hh); ctx.stroke();
+      // この一歩の前の形（薄い灰）
+      if (pos > 0) { frame(pos - 1, 1); ctx.globalAlpha = 0.45; ctx.strokeStyle = mid; ctx.lineWidth = 1; closedPath(ctx); ctx.stroke(); }
       ctx.globalAlpha = 1;
-      const [r, i] = levels[k], prev = k > 0 && tw < 1 ? levels[k - 1] : null;
-      path(ctx, r, i, prev && prev[0], prev && prev[1], tw);
-      ctx.fillStyle = css(f, "--set"); ctx.fill("evenodd"); ctx.strokeStyle = css(f, "--coral"); ctx.lineWidth = 1.6; ctx.stroke();
-      out.textContent = "c = " + fmtC(C.re, C.im) + "　" + (k === 0 ? "大きさ 2 の円（まだ遡っていない）" : k + " 段遡った。内側は、" + k + " 歩前へ打っても大きさ 2 を超えない点");
+      const s = tw * tw * (3 - 2 * tw);
+      frame(pos, s);
+      // 曲線の内側：形が閉じている歩（円・− c・段の終わり）だけ塗る
+      if (sub !== 1 && !(sub === 2 && s < 1)) { closedPath(ctx); ctx.fillStyle = css(f, "--esc0"); ctx.globalAlpha = 0.55; ctx.fill("evenodd"); ctx.globalAlpha = 1; }
+      // √ の歩では、半分の境（虚軸）を強める
+      if (sub >= 1) { ctx.strokeStyle = mid; ctx.globalAlpha = 0.7; ctx.setLineDash([5, 5]); ctx.beginPath(); ctx.moveTo(ax, 0); ctx.lineTo(ax, Hh); ctx.stroke(); ctx.setLineDash([]); ctx.globalAlpha = 1; }
+      // 点を色ごとに線でつなぐ（離れた隣はつながない）。−√ の枝を先に、+√ の枝をあとに描く
+      ctx.lineWidth = 2.6; ctx.lineCap = "round";
+      const gap = 0.25 * 0.25;
+      const paths = [[], []], used = [new Uint8Array(NB), new Uint8Array(NB)];
+      for (let b = 0; b < NB; b++) { paths[0].push(new Path2D()); paths[1].push(new Path2D()); }
+      const sx = W / (FV.x1 - FV.x0), sy = Hh / (FV.y1 - FV.y0);
+      for (let j = 0; j < N; j++) {
+        const k2 = (j + 1) % N, dx = X[k2] - X[j], dy = Y[k2] - Y[j];
+        if (dx * dx + dy * dy > gap) continue;
+        const g = D[j] < 0 ? 0 : 1, b = H[j], P = paths[g][b];
+        P.moveTo((X[j] - FV.x0) * sx, (FV.y1 - Y[j]) * sy); P.lineTo((X[k2] - FV.x0) * sx, (FV.y1 - Y[k2]) * sy); used[g][b] = 1;
+      }
+      for (let g = 0; g < 2; g++) for (let b = 0; b < NB; b++) {
+        if (!used[g][b]) continue;
+        ctx.strokeStyle = "hsl(" + Math.round((b * 360) / NB) + "," + (g === 0 ? "62%,30%)" : "75%,52%)"); ctx.stroke(paths[g][b]);
+      }
+      // 0 と c の印。− c の歩では c から 0 への矢印
+      ctx.fillStyle = css(f, "--set"); dot(ctx, ax, ay, 3.5);
+      ctx.font = "13px sans-serif"; ctx.fillText("0", ax + 6, ay - 6);
+      if (sub === 0 || pos === 0) {
+        const [cx, cy] = toPx(FV, C.re, C.im, cv);
+        ctx.strokeStyle = coral; ctx.fillStyle = coral; ctx.lineWidth = 2.5;
+        ctx.beginPath(); ctx.arc(cx, cy, 5, 0, Math.PI * 2); ctx.stroke(); ctx.fillText("c", cx + 8, cy - 8);
+        if (sub === 0) { arrow(ctx, C.re, C.im, 0, 0); const [mx, my] = toPx(FV, C.re / 2, C.im / 2, cv); ctx.fillText("− c", mx + 8, my + 16); }
+      }
+      let t = "c = " + fmtC(C.re, C.im) + "\n";
+      if (pos === 0) t += "大きさ 2 の円（まだ遡っていない）。色は、円の上の位置";
+      else {
+        t += lv + " 段目の " + (sub + 1) + " 歩目（全 " + LAST + " 歩の " + pos + " 歩目）　" + STEP_TXT[sub];
+        if (sub === 2) t += "。同じ色の所は、前の曲線の同じ所から来た。内側は、" + lv + " 歩前へ打っても大きさ 2 を超えない点";
+      }
+      if (note) t += "\n" + note;
+      out.textContent = t;
+      drawMap();
     };
-    const stop = () => { clearInterval(timer); timer = 0; document.getElementById("jp-fold-play").setAttribute("aria-pressed", "false"); };
+    const play = document.getElementById("jp-fold-play");
+    const stop = () => { clearInterval(timer); timer = 0; play.setAttribute("aria-pressed", "false"); };
+    const jump = (p) => { animId++; pos = Math.max(0, Math.min(LAST, p)); tw = 1; drawFold(); };
     const step = () => {
-      if (k >= MAXK) { stop(); return false; }
-      k++; tw = 0; const t0 = performance.now(), reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      const anim = (now) => { tw = reduce ? 1 : Math.min(1, (now - t0) / 700); drawFold(); if (tw < 1) requestAnimationFrame(anim); };
+      if (pos >= LAST) { stop(); return false; }
+      pos++; tw = 0; const id = ++animId, t0 = performance.now(), reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const anim = (now) => { if (id !== animId) return; tw = reduce ? 1 : Math.min(1, (now - t0) / 900); drawFold(); if (tw < 1) requestAnimationFrame(anim); };
       requestAnimationFrame(anim); return true;
     };
-    document.getElementById("jp-fold-step").addEventListener("click", () => { stop(); step(); });
-    document.getElementById("jp-fold-reset").addEventListener("click", () => { stop(); k = 0; tw = 1; drawFold(); });
-    document.getElementById("jp-fold-play").addEventListener("click", (e) => {
+    document.getElementById("jp-fold-step").addEventListener("click", () => { stop(); note = ""; step(); });
+    document.getElementById("jp-fold-back").addEventListener("click", () => { stop(); note = ""; jump(pos - 1); });
+    document.getElementById("jp-fold-reset").addEventListener("click", () => { stop(); note = ""; jump(0); });
+    play.addEventListener("click", () => {
       if (timer) { stop(); return; }
-      if (k >= MAXK) { k = 0; tw = 1; drawFold(); }
-      e.currentTarget.setAttribute("aria-pressed", "true"); step(); timer = setInterval(() => { if (!step()) stop(); }, 1100);
+      note = ""; if (pos >= LAST) jump(0);
+      play.setAttribute("aria-pressed", "true"); step(); timer = setInterval(() => { if (!step()) stop(); }, 1300);
     });
+    const colorBtn = document.getElementById("jp-fold-color");
+    colorBtn.addEventListener("click", () => { global = !global; colorBtn.setAttribute("aria-pressed", String(global)); drawFold(); });
+    const setC = (c) => { stop(); C = c; build(); note = ""; jump(0); };
     fold.querySelectorAll("[data-fc]").forEach((b) => b.addEventListener("click", () => {
-      stop(); const v = b.dataset.fc; C = v === "golden" ? cFromAngle(GOLDEN_DEG, 0.97) : (([a, i]) => ({ re: a, im: i }))(v.split(",").map(Number));
-      build(); k = 0; tw = 1; drawFold();
+      const v = b.dataset.fc; setC(v === "golden" ? cFromAngle(GOLDEN_DEG, 0.97) : (([a, i]) => ({ re: a, im: i }))(v.split(",").map(Number)));
     }));
+    if (cvM) cvM.addEventListener("click", (e) => {
+      const c = fromPx(MV, e, cvM);
+      if (escM(c.re, c.im, 300) >= 0) { stop(); note = "クリックした c（" + fmtC(c.re, c.im) + "）は黒い形の外です。曲線が二つに切れて一本でつなげないので、この図では黒い形の中の c だけを選べます。"; drawFold(); return; }
+      setC(c);
+    });
     build();
   }
 
