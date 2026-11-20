@@ -1,972 +1,294 @@
 <title>付箋帳</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
 <style>
-/* 一列の帳面。上に二つのタブ（付箋・今週）。付箋は書く欄と目次、今週は GitHub の Issue を週のマイルストーンで束ねる。 */
+/* 付箋帳：書く欄と、付箋ごとの進み具合だけ（2026-11-20 に軽くした。手順は docs/tools/fusen-cho.md） */
 :root {
-  --bg: #f3f5f9;
-  --surface: #ffffff;
-  --sunken: #e9edf4;
-  --ink: #18202e;
-  --muted: #5b6579;
-  --line: #d9dfe9;
-  --accent: #2c5bd0;
-  --accent-soft: #e3eafb;
-  --wait: #a35f00;
-  --wait-soft: #fbefd9;
-  --done: #2c7a4b;
-  --done-soft: #ddf1e4;
-  --claude: #6a4fc4;
-  --claude-soft: #ece7fb;
-  --danger: #b4372f;
-  --font-display: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
-  --font-body: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
-  --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
+  --bg: #f3f5f9; --surface: #ffffff; --sunken: #e9edf4; --ink: #18202e; --muted: #5b6579; --line: #d9dfe9;
+  --accent: #2c5bd0; --accent-soft: #e3eafb; --wait: #a35f00; --wait-soft: #fbefd9;
+  --done: #2c7a4b; --done-soft: #ddf1e4; --claude: #6a4fc4; --claude-soft: #ece7fb; --danger: #b4372f;
+  --font-body: "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #07090e; --surface: #10141c; --sunken: #171c27; --ink: #e2e8f3; --muted: #8f9ab0;
-    --line: #252c3a; --accent: #7ea2ff; --accent-soft: #18233f; --wait: #f0b45a; --wait-soft: #33260f;
+    --bg: #07090e; --surface: #10141c; --sunken: #171c27; --ink: #e2e8f3; --muted: #8f9ab0; --line: #252c3a;
+    --accent: #7ea2ff; --accent-soft: #18233f; --wait: #f0b45a; --wait-soft: #33260f;
     --done: #6fcf97; --done-soft: #12291c; --claude: #b29cff; --claude-soft: #231c3d; --danger: #f2877e;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #07090e; --surface: #10141c; --sunken: #171c27; --ink: #e2e8f3; --muted: #8f9ab0;
-  --line: #252c3a; --accent: #7ea2ff; --accent-soft: #18233f; --wait: #f0b45a; --wait-soft: #33260f;
+  --bg: #07090e; --surface: #10141c; --sunken: #171c27; --ink: #e2e8f3; --muted: #8f9ab0; --line: #252c3a;
+  --accent: #7ea2ff; --accent-soft: #18233f; --wait: #f0b45a; --wait-soft: #33260f;
   --done: #6fcf97; --done-soft: #12291c; --claude: #b29cff; --claude-soft: #231c3d; --danger: #f2877e;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
 body {
-  background: var(--bg); color: var(--ink); font-family: var(--font-body);
-  font-size: 15px; line-height: 1.7;
-  padding-left: max(16px, env(safe-area-inset-left, 0px));
-  padding-right: max(16px, env(safe-area-inset-right, 0px));
-  padding-block: 20px 64px;
+  background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 20px 64px; margin: 0;
 }
-.wrap { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
+.wrap { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
 a { color: var(--accent); }
-button, input, select, textarea { font: inherit; color: inherit; }
+button, textarea { font: inherit; color: inherit; }
 button { cursor: pointer; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-
-header { display: flex; flex-direction: column; gap: 4px; }
-h1 { font-family: var(--font-display); font-weight: 600; font-size: 1.7rem; letter-spacing: 0.06em; margin: 0; text-wrap: balance; }
-.lead { margin: 0; color: var(--muted); font-size: 0.9rem; }
-.conn { font-size: 0.78rem; color: var(--muted); }
+header { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+h1 { font-size: 1.4rem; margin: 0; letter-spacing: 0.06em; }
+.conn { font-size: 0.78rem; color: var(--muted); flex: 1 1 auto; }
 .conn.bad { color: var(--danger); }
-
-/* 司令塔を呼ぶ */
-.call { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 8px; padding: 10px 12px; border-radius: 10px; background: var(--claude-soft); }
-.call-btn { background: var(--claude); color: var(--surface); border: 0; border-radius: 8px; padding: 7px 16px; font-weight: 700; }
+.call-btn { background: var(--claude); color: #fff; border: 0; border-radius: 8px; padding: 7px 16px; font-weight: 700; }
 .call-btn:disabled { opacity: 0.45; cursor: default; }
-.call-note { font-size: 0.8rem; color: var(--muted); min-width: 0; flex: 1 1 200px; }
-.call-item { background: none; border: 1px solid var(--claude); color: var(--claude); border-radius: 8px; padding: 6px 12px; font-size: 0.85rem; font-weight: 700; }
-.call-item:disabled { opacity: 0.45; cursor: default; }
-
-/* 進み具合のまとめ */
-.tally { display: flex; flex-wrap: wrap; gap: 6px; }
-.tally button {
-  display: inline-flex; align-items: baseline; gap: 6px; border: 1px solid var(--line);
-  background: var(--surface); border-radius: 999px; padding: 3px 12px; font-size: 0.82rem;
-}
-.tally button b { font-variant-numeric: tabular-nums; font-weight: 700; }
-.tally button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
-.tally button.wait b { color: var(--wait); }
-.tally button.claude b { color: var(--claude); }
-
-/* 書く欄 */
-.capture { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: flex; flex-direction: column; gap: 10px; }
-.capture textarea { width: 100%; min-height: 84px; resize: vertical; border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; background: var(--bg); line-height: 1.6; }
-.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-.row > * { min-width: 0; }
-select, input[type="text"] { border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; background: var(--bg); max-width: 100%; }
-#cap-place { flex: 1 1 220px; }
-#cap-where { flex: 2 1 220px; }
-.kinds { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
-.kinds label { padding: 6px 12px; font-size: 0.85rem; cursor: pointer; border-right: 1px solid var(--line); }
-.kinds label:last-child { border-right: 0; }
-.kinds input { position: absolute; opacity: 0; pointer-events: none; }
-.kinds input:checked + span { color: var(--accent); font-weight: 700; }
-.kinds label:has(input:checked) { background: var(--accent-soft); }
-.kinds label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: -2px; }
-.primary { background: var(--accent); color: var(--surface); border: 0; border-radius: 8px; padding: 8px 18px; font-weight: 700; }
+.capture { display: flex; flex-direction: column; gap: 8px; }
+textarea { width: 100%; resize: vertical; border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; background: var(--surface); }
+.capture textarea { min-height: 84px; }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: flex-end; }
+.primary { background: var(--accent); color: #fff; border: 0; border-radius: 8px; padding: 7px 18px; font-weight: 700; }
 .primary:disabled { opacity: 0.45; cursor: default; }
 .quiet { background: none; border: 1px solid var(--line); border-radius: 8px; padding: 6px 12px; font-size: 0.85rem; }
-.spacer { flex: 1; }
-
-/* 目次の切り替え */
-.viewbar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
-.viewbar h2 { margin: 0; font-size: 1rem; font-family: var(--font-display); font-weight: 600; letter-spacing: 0.08em; }
-.seg { display: inline-flex; gap: 2px; background: var(--sunken); border-radius: 8px; padding: 2px; }
-.seg button { border: 0; background: none; border-radius: 6px; padding: 3px 10px; font-size: 0.82rem; color: var(--muted); }
-.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); font-weight: 700; }
-
-.group { display: flex; flex-direction: column; gap: 8px; }
-.group-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-top: 6px; }
-.group-head h3 { margin: 0; font-size: 0.98rem; font-weight: 700; }
-.group-head .n { font-size: 0.78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
-.group-head a { font-size: 0.78rem; }
 .list { display: flex; flex-direction: column; gap: 8px; }
-.empty { color: var(--muted); font-size: 0.9rem; padding: 18px; border: 1px dashed var(--line); border-radius: 10px; text-align: center; }
-
-/* 一件 */
-.item { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
-.item.attn { border-color: var(--wait); }
-.item-head { display: grid; grid-template-columns: auto 1fr; gap: 4px 10px; padding: 11px 14px; width: 100%; text-align: left; background: none; border: 0; border-radius: 10px; }
-.pill { grid-row: span 2; align-self: start; margin-top: 3px; font-size: 0.72rem; padding: 1px 8px; border-radius: 999px; white-space: nowrap; background: var(--sunken); color: var(--muted); font-weight: 700; }
-.pill.look, .pill.work { background: var(--accent-soft); color: var(--accent); }
-.pill.decide, .pill.check { background: var(--wait-soft); color: var(--wait); }
-.pill.done { background: var(--done-soft); color: var(--done); }
-.title { font-weight: 500; min-width: 0; overflow-wrap: anywhere; }
-.meta { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 0.76rem; color: var(--muted); min-width: 0; }
-.meta .tag-claude { color: var(--claude); font-weight: 700; }
-.meta .tag-reply { color: var(--wait); font-weight: 700; }
-.meta .kind-指示 { color: var(--accent); font-weight: 700; }
-.meta .kind-問い { color: var(--claude); font-weight: 700; }
-.num { font-variant-numeric: tabular-nums; font-family: var(--font-mono); font-size: 0.72rem; }
-
-.item-body { border-top: 1px solid var(--line); padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 14px; }
-.fulltext { white-space: pre-wrap; overflow-wrap: anywhere; margin: 0; }
-.where { margin: 0; font-size: 0.85rem; color: var(--muted); border-left: 3px solid var(--line); padding-left: 10px; overflow-wrap: anywhere; }
-.rich { display: flex; flex-direction: column; gap: 6px; font-size: 0.92rem; min-width: 0; }
-.rich h4 { margin: 6px 0 0; font-size: 0.9rem; font-weight: 700; }
-.rich p { margin: 0; overflow-wrap: anywhere; }
-.rich ul { margin: 0; padding-left: 1.3em; display: flex; flex-direction: column; gap: 2px; }
-.rich li { overflow-wrap: anywhere; }
-.pill.report { background: var(--claude-soft); color: var(--claude); }
-.options { display: flex; flex-direction: column; gap: 6px; }
-.opt { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; text-align: left; border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; background: var(--bg); }
-.opt b { font-weight: 700; }
-.opt span { font-size: 0.82rem; color: var(--muted); }
-.opt:hover { border-color: var(--accent); }
-.opt.chosen { border-color: var(--accent); background: var(--accent-soft); }
-.opt.chosen b::before { content: "選んだ　"; color: var(--accent); }
-.from-claude .group-head h3 { color: var(--claude); }
-
-/* 進み具合：六つの段の点 */
-.track { display: flex; gap: 0; align-items: center; overflow-x: auto; }
-.step { display: flex; flex-direction: column; align-items: center; gap: 3px; flex: 1 0 64px; font-size: 0.7rem; color: var(--muted); position: relative; }
-.step i { width: 10px; height: 10px; border-radius: 50%; background: var(--line); display: block; z-index: 1; }
-.step::before { content: ""; position: absolute; top: 4px; left: -50%; width: 100%; height: 2px; background: var(--line); }
-.step:first-child::before { display: none; }
-.step.past i, .step.past::before { background: var(--accent); }
-.step.now i { background: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
-.step.now.wait i { background: var(--wait); box-shadow: 0 0 0 4px var(--wait-soft); }
-.step.now.done i { background: var(--done); box-shadow: 0 0 0 4px var(--done-soft); }
-.step.now { color: var(--ink); font-weight: 700; }
-
-.facts { display: flex; flex-wrap: wrap; gap: 6px; }
-.chip { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px; font-size: 0.8rem; background: var(--bg); max-width: 100%; overflow-wrap: anywhere; text-decoration: none; }
-a.chip:hover { border-color: var(--accent); }
-.chip small { color: var(--muted); }
-
-.thread { display: flex; flex-direction: column; gap: 10px; }
-.note { border-radius: 8px; padding: 8px 12px; background: var(--sunken); }
-.note.claude { background: var(--claude-soft); }
-.note.status { background: none; padding: 0 12px; font-size: 0.8rem; color: var(--muted); }
-.note-head { display: flex; gap: 8px; font-size: 0.75rem; color: var(--muted); flex-wrap: wrap; }
-.note-head b { color: var(--ink); }
-.note.claude .note-head b { color: var(--claude); }
-.note-head .ins { color: var(--accent); font-weight: 700; }
-.note p { margin: 2px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; }
-
-.reply { display: flex; flex-direction: column; gap: 8px; }
-.reply textarea { width: 100%; min-height: 64px; resize: vertical; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; background: var(--bg); }
-.actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 0.85rem; }
-.actions label { color: var(--muted); }
-.confirm { display: flex; flex-direction: column; gap: 8px; background: var(--sunken); border-radius: 8px; padding: 10px 12px; }
-.confirm p { margin: 0; font-size: 0.85rem; }
-.confirm input { width: 100%; }
-
-/* 最近の Issue（いつも畳む） */
-details.issues { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 8px 14px; }
-details.issues summary { cursor: pointer; font-family: var(--font-display); font-weight: 600; letter-spacing: 0.08em; }
-details.issues summary small { font-family: var(--font-body); font-weight: 400; letter-spacing: 0; color: var(--muted); font-size: 0.76rem; margin-left: 8px; }
-.irow { display: grid; grid-template-columns: 4.2em 1fr auto; gap: 2px 10px; align-items: baseline; padding: 6px 0; border-bottom: 1px solid var(--line); font-size: 0.88rem; }
-.irow:last-child { border-bottom: 0; }
-.irow .t { min-width: 0; overflow-wrap: anywhere; }
-.irow .s { font-size: 0.72rem; padding: 0 8px; border-radius: 999px; font-weight: 700; white-space: nowrap; }
-.irow .s.open { background: var(--done-soft); color: var(--done); }
-.irow .s.closed { background: var(--sunken); color: var(--muted); }
-.irow .u { grid-column: 2 / 4; font-size: 0.74rem; color: var(--muted); }
-
-/* タブ */
-.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); }
-.tabs button { border: 0; background: none; padding: 8px 16px; font-family: var(--font-display); font-weight: 600; letter-spacing: 0.08em; color: var(--muted); border-bottom: 3px solid transparent; margin-bottom: -1px; }
-.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
-.tabs button b { font-family: var(--font-body); font-size: 0.75rem; margin-left: 6px; color: var(--wait); font-variant-numeric: tabular-nums; }
-.panel { display: flex; flex-direction: column; gap: 22px; }
-
-/* 今週 */
-.wk-head { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
-.wk-head h2 { margin: 0; font-size: 1.1rem; font-family: var(--font-display); font-weight: 600; letter-spacing: 0.06em; }
-.wk-head small { color: var(--muted); font-size: 0.78rem; }
-.wrow { display: grid; grid-template-columns: 4.2em 1fr auto; gap: 4px 10px; align-items: baseline; padding: 9px 0; border-bottom: 1px solid var(--line); font-size: 0.9rem; }
-.wrow:last-child { border-bottom: 0; }
-.wrow .t { min-width: 0; overflow-wrap: anywhere; }
-.wrow .s { font-size: 0.72rem; padding: 0 8px; border-radius: 999px; font-weight: 700; white-space: nowrap; }
-.wrow .s.open { background: var(--done-soft); color: var(--done); }
-.wrow .s.closed { background: var(--sunken); color: var(--muted); }
-.wrow .u { grid-column: 2 / 4; font-size: 0.74rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 12px; }
-.wrow .acts { grid-column: 2 / 4; display: flex; flex-wrap: wrap; gap: 6px; }
-.wrow .acts button { background: none; border: 1px solid var(--line); border-radius: 8px; padding: 2px 10px; font-size: 0.8rem; }
-.wrow .acts button:hover { border-color: var(--accent); }
-.wrow .acts .go { border-color: var(--accent); color: var(--accent); font-weight: 700; }
-.wbox { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 6px 14px; }
-details.wfold { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 8px 14px; }
-details.wfold summary { cursor: pointer; font-weight: 700; }
-
-/* しまったもの */
-details.archive { border-top: 1px solid var(--line); padding-top: 10px; }
-details.archive summary { cursor: pointer; font-family: var(--font-display); font-weight: 600; letter-spacing: 0.08em; }
-.arow { display: grid; grid-template-columns: 5.2em 1fr; gap: 2px 12px; padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 0.88rem; }
-.arow .d { color: var(--muted); grid-row: span 2; }
-.arow .t { min-width: 0; overflow-wrap: anywhere; }
-.arow .o { font-size: 0.78rem; color: var(--muted); min-width: 0; overflow-wrap: anywhere; }
-.arow .o .pend { color: var(--wait); font-weight: 700; }
-
+.empty { color: var(--muted); font-size: 0.9rem; padding: 16px; border: 1px dashed var(--line); border-radius: 10px; text-align: center; }
+.item { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; display: flex; flex-direction: column; gap: 6px; }
+.item.wait { border-color: var(--wait); }
+.top { display: flex; gap: 10px; align-items: flex-start; }
+.title { flex: 1 1 auto; min-width: 0; text-align: left; background: none; border: 0; padding: 0; font-weight: 500; overflow-wrap: anywhere; }
+.title small { color: var(--muted); font-weight: 400; font-size: 0.75rem; margin-left: 8px; }
+.title .unread { color: var(--claude); font-weight: 700; }
+.st { border: 1px solid transparent; border-radius: 999px; padding: 2px 10px; font-size: 0.8rem; font-weight: 700; background: var(--sunken); color: var(--muted); flex: none; white-space: nowrap; }
+.st.look, .st.work { background: var(--accent-soft); color: var(--accent); }
+.st.decide, .st.check { background: var(--wait-soft); color: var(--wait); }
+.st.done { background: var(--done-soft); color: var(--done); }
+.st.cur { border-color: currentColor; }
+.steps { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
+.last { margin: 0; font-size: 0.82rem; color: var(--muted); border-left: 3px solid var(--claude); padding-left: 8px; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow-wrap: anywhere; }
+.last b { color: var(--claude); font-weight: 700; margin-right: 6px; }
+.body { display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--line); padding-top: 8px; }
+.fulltext { white-space: pre-wrap; overflow-wrap: anywhere; margin: 0; font-size: 0.92rem; }
+.body textarea { min-height: 60px; }
 .toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); background: var(--ink); color: var(--bg); padding: 8px 16px; border-radius: 8px; font-size: 0.85rem; max-width: calc(100% - 32px); z-index: 20; }
-@media (prefers-reduced-motion: no-preference) { .item { transition: border-color 0.2s ease; } }
 </style>
 
 <div class="wrap">
   <header>
     <h1>付箋帳</h1>
-    <p class="lead">手元の指示を付箋のように置く帳面と、GitHub の Issue を週ごとに見る欄です。指示のほか、違和感・問い・メモ、何を書いてもかまいません。Claude が読んで返事を書き、進み具合をここで動かします。置いただけでは司令塔に届きません。届けたいときに「司令塔を呼ぶ」を押してください。ここには pjdhiro が送るものだけを置きます。セッションの判断と報告は、それぞれのセッションのページに置き、ここにはリンクだけが返ります。</p>
     <span class="conn" id="conn">つないでいます…</span>
-    <div class="call" id="call" hidden>
-      <button type="button" class="call-btn" id="call-btn">司令塔を呼ぶ</button>
-      <span class="call-note" id="call-note"></span>
-    </div>
+    <button type="button" class="call-btn" id="call-btn" hidden>司令塔を呼ぶ</button>
   </header>
 
-  <div class="tabs" role="tablist" aria-label="付箋と今週">
-    <button type="button" role="tab" id="tab-fusen" aria-controls="panel-fusen" aria-selected="true">付箋<b id="tab-fusen-n"></b></button>
-    <button type="button" role="tab" id="tab-week" aria-controls="panel-week" aria-selected="false">今週<b id="tab-week-n"></b></button>
-  </div>
-
-  <div class="panel" id="panel-fusen" role="tabpanel" aria-labelledby="tab-fusen">
-  <div class="tally" id="tally" aria-label="進み具合で絞る"></div>
-
   <form class="capture" id="capture" autocomplete="off">
-    <textarea id="cap-text" placeholder="指示・気づいたこと・問い・メモ（一行目が題になります）" aria-label="書くこと"></textarea>
-    <div class="row">
-      <select id="cap-place" aria-label="場所"></select>
-      <input type="text" id="cap-where" placeholder="箇所（章の題・引用など。空でもよい）" aria-label="箇所">
-    </div>
-    <div class="row">
-      <span class="lead">種類は選ばずに置けます。Claude が読んで分けます。</span>
-      <span class="spacer"></span>
-      <button type="submit" class="primary" id="cap-send">置く</button>
-    </div>
+    <textarea id="cap-text" placeholder="一行目が題になります" aria-label="付箋に書くこと"></textarea>
+    <div class="row"><button type="submit" class="primary" id="cap-send">置く</button></div>
   </form>
 
-  <section class="group" aria-labelledby="toc-h">
-    <div class="viewbar">
-      <h2 id="toc-h">目次</h2>
-      <span class="seg" id="viewseg">
-        <button type="button" data-view="place" aria-pressed="true">場所ごと</button>
-        <button type="button" data-view="recent" aria-pressed="false">新しい順</button>
-      </span>
-    </div>
-    <div id="board" class="group"><div class="empty">読み込んでいます…</div></div>
-  </section>
-
-  <details class="archive" id="archive">
-    <summary>しまったもの <span class="num" id="arch-n"></span></summary>
-    <p class="lead" id="arch-rule" hidden></p>
-    <div id="arch-list"><div class="empty">開くと読み込みます。</div></div>
-  </details>
-  </div>
-
-  <div class="panel" id="panel-week" role="tabpanel" aria-labelledby="tab-week" hidden>
-    <div class="wk-head"><h2 id="wk-title">今週</h2><small id="wk-at"></small></div>
-    <p class="lead">GitHub の Issue を、週のマイルストーン（例：2026-W47）で束ねて見せます。ボタンを押すと、その指示が付箋として置かれます。司令塔に届けるのは「司令塔を呼ぶ」です。一覧は司令塔が GitHub から読んで書き込みます。</p>
-    <div id="wk-body"><div class="empty">読み込んでいます…</div></div>
-  </div>
+  <div class="list" id="list"><div class="empty">読み込んでいます…</div></div>
 </div>
 <div class="toast" id="toast" hidden></div>
 
 <script>
 (() => {
-  const SITE = "https://uminomae.github.io/project-design-theory/";
-  const LOCAL = "http://localhost:3001/";
-  const REPO = "https://github.com/uminomae/project-design-theory/";
-  const PLACES = [
-    { key: "love-driven-dev", label: "Love駆動開発と呼びたいもの", path: "reader/love-driven-dev.html" },
-    { key: "love-history", label: "Love とは、どう言われてきたか", path: "reader/love-history.html" },
-    { key: "love-trajectory", label: "私というアプリを、読めるようにした一年", path: "reader/love-trajectory.html" },
-    { key: "management-drivers", label: "経営学の考え方は、どこまで効くか", path: "reader/management-drivers.html" },
-    { key: "mintzberg-schools", label: "ミンツバーグの学派を、駆動源と創造の流れで見る", path: "reader/mintzberg-schools.html" },
-    { key: "gravity-love", label: "愛は、重力に似ていないか", path: "reader/gravity-love.html" },
-    { key: "gravity-well", label: "重力の井戸とは", path: "reader/gravity-well.html" },
-    { key: "energy-flow", label: "感情も、関係も、時代も「エネルギーの流れ」なのか", path: "reader/energy-flow.html" },
-    { key: "energy-flow-rhythm", label: "感情も、関係も、時代も「流れ」なのだろうか（比較ドラフト）", path: "reader/energy-flow-rhythm.html" },
-    { key: "three-and-seven", label: "なぜ 3 と 7 だけが特別なのか", path: "reader/three-and-seven.html" },
-    { key: "rotation-multiplication", label: "回転の掛け算", path: "reader/rotation-multiplication.html" },
-    { key: "developmental-stages", label: "精神の発達段階とは", path: "reader/developmental-stages.html" },
-    { key: "stages-screener", label: "ものの見方の広さスクリーナー", path: "reader/stages-screener.html" },
-    { key: "intrinsic-motivation", label: "内発的動機とは", path: "reader/intrinsic-motivation.html" },
-    { key: "psychological-safety", label: "心理的安全性とは", path: "reader/psychological-safety.html" },
-    { key: "anshin", label: "安心とは", path: "reader/anshin.html" },
-    { key: "peirce-love-abduction", label: "パースの創造的な愛と、アブダクション", path: "reader/peirce-love-abduction.html" },
-    { key: "creative-thinking", label: "創造的思考とは", path: "reader/creative-thinking.html" },
-    { key: "beauty", label: "美とは", path: "reader/beauty.html" },
-    { key: "nondual", label: "不二（非二元）とは", path: "reader/nondual.html" },
-    { key: "via-vulnerability", label: "脆弱性から、全体を知る", path: "reader/via-vulnerability.html" },
-    { key: "empathy", label: "共感とは", path: "reader/empathy.html" },
-    { key: "defense-mechanisms", label: "心理的防衛機制とは", path: "reader/defense-mechanisms.html" },
-    { key: "personality", label: "性格とは", path: "reader/personality.html" },
-    { key: "influences-psychology", label: "影響を受けた心理学", path: "reader/influences-psychology.html" },
-    { key: "home", label: "HOME", path: "" },
-    { key: "wiki", label: "wiki", path: "wiki/" },
-    { key: "site", label: "pd/ 全体", path: null },
-    { key: "cs", label: "創造とは（cs/）", path: "cs/" },
-    { key: "as", label: "意識とは（as/）", path: "as/" },
-    { key: "ks", label: "欠損駆動思考（ks/）", path: "ks/" },
-    { key: "repo", label: "規約・道具（repo）", path: null },
-    { key: "other", label: "その他", path: null },
-  ];
-  const PLACE = Object.fromEntries(PLACES.map(p => [p.key, p]));
   const STATUS = [
-    { key: "new", label: "届いた" },
-    { key: "look", label: "見ている" },
-    { key: "decide", label: "判断を待つ" },
-    { key: "work", label: "直している" },
-    { key: "check", label: "確かめを待つ" },
-    { key: "done", label: "済んだ" },
+    { key: "new", label: "届いた" }, { key: "look", label: "見ている" }, { key: "decide", label: "判断を待つ" },
+    { key: "work", label: "直している" }, { key: "check", label: "確かめを待つ" }, { key: "done", label: "済んだ" },
   ];
   const SLABEL = Object.fromEntries(STATUS.map(s => [s.key, s.label]));
-  const SORDER = Object.fromEntries(STATUS.map((s, i) => [s.key, i]));
   const WAITING = new Set(["decide", "check"]);
 
   const $ = id => document.getElementById(id);
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
   const iso = () => new Date().toISOString();
   const fmt = s => { if (!s) return ""; const d = new Date(s); if (isNaN(d)) return ""; const p = n => String(n).padStart(2, "0"); return `${d.getMonth() + 1}/${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`; };
-  const fmtDay = s => { if (!s) return ""; const d = new Date(s); if (isNaN(d)) return ""; return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
-  const firstLine = t => { const l = (t.split(/\r?\n/).find(x => x.trim()) || "").trim(); return l.length > 80 ? l.slice(0, 80) + "…" : l; };
+  const firstLine = t => { const l = (String(t).split(/\r?\n/).find(x => x.trim()) || "").trim(); return l.length > 80 ? l.slice(0, 80) + "…" : l; };
   const safeUrl = u => { try { const x = new URL(u); return (x.protocol === "https:" || x.protocol === "http:") ? x.href : null; } catch { return null; } };
-
   const store = {
     get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch { return d; } },
     set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
   };
 
-  let db = null;
+  let db = null, comments = null, canSend = "off", loaded = false;
   let items = new Map();
-  let loaded = false;
-  let view = store.get("fusen.view", "place");
-  let filter = null;
   const open = new Set();
   const drafts = new Map();
-  const confirming = new Map(); // id -> "archive" | "withdraw"
-  let seen = store.get("fusen.seen", {});
-  let comments = null;
-  let canSend = "off";
+  let picking = null;
 
-  function toast(msg) {
-    const t = $("toast"); t.textContent = msg; t.hidden = false;
-    clearTimeout(toast.t); toast.t = setTimeout(() => { t.hidden = true; }, 2600);
-  }
+  function toast(msg) { const t = $("toast"); t.textContent = msg; t.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => { t.hidden = true; }, 2600); }
   function setConn(msg, bad) { const c = $("conn"); c.textContent = msg; c.classList.toggle("bad", !!bad); }
-
-  // 自動でリンクにする
   function linkify(parent, text) {
     const re = /(https?:\/\/[^\s<>"）」]+)/g; let last = 0, m;
     while ((m = re.exec(text))) {
       if (m.index > last) parent.append(text.slice(last, m.index));
       const u = safeUrl(m[1]);
-      if (u) { const a = el("a", null, m[1]); a.href = u; a.target = "_blank"; a.rel = "noopener"; parent.append(a); }
-      else parent.append(m[1]);
+      if (u) { const a = el("a", null, m[1]); a.href = u; a.target = "_blank"; a.rel = "noopener"; parent.append(a); } else parent.append(m[1]);
       last = m.index + m[1].length;
     }
     if (last < text.length) parent.append(text.slice(last));
   }
 
-  // 場所の選択肢
-  (function fillPlaces() {
-    const sel = $("cap-place");
-    for (const p of PLACES) { const o = el("option", null, p.label); o.value = p.key; sel.append(o); }
-    sel.value = store.get("fusen.place", "love-driven-dev");
-    if (!PLACE[sel.value]) sel.value = "love-driven-dev";
-  })();
-
-  // 未読：pjdhiro が最後に書いたものが、Claude の最後の書き込みより後ろにある。
-  // 時刻だけで見ると、Claude 側が先の時刻（JST を Z で書いたもの）を書いたときに見落とす（2026-11-16 に二度）。
-  // そこで、thread の並び順でも見る。先の時刻の claudeReadAt は、無いものとして扱う。
+  // Claude がまだ読んでいない：pjdhiro の最後の書き込みが Claude の最後の書き込みより後ろ（並び順と時刻の両方で見る）
   function needsClaude(d) {
     if (d.lastFrom !== "pjdhiro") return false;
-    const th = d.thread || [];
     let lp = -1, lc = -1;
-    th.forEach((x, i) => { if (x.from === "pjdhiro") lp = i; else if (x.from === "claude") lc = i; });
+    (d.thread || []).forEach((x, i) => { if (x.from === "pjdhiro") lp = i; else if (x.from === "claude") lc = i; });
     if (lp > lc) return true;
     const r = d.claudeReadAt;
     if (!r || r > new Date(Date.now() + 5 * 60000).toISOString()) return true;
     return !!(d.lastAt && d.lastAt > r);
   }
-  function hasReply(id, d) { return d.lastFrom === "claude" && d.lastAt && (!seen[id] || d.lastAt > seen[id]); }
-  function attention(id, d) { return WAITING.has(d.status) || hasReply(id, d); }
-
-  function renderTally() {
-    const t = $("tally"); t.textContent = "";
-    const all = [...items.entries()];
-    const counts = {}; for (const s of STATUS) counts[s.key] = 0;
-    let claude = 0, reply = 0;
-    for (const [id, d] of all) { counts[d.status] = (counts[d.status] || 0) + 1; if (needsClaude(d)) claude++; if (hasReply(id, d)) reply++; }
-    const mk = (key, label, n, cls) => {
-      const b = el("button", cls || null); b.type = "button";
-      b.append(el("span", null, label), el("b", null, String(n)));
-      b.setAttribute("aria-pressed", String(filter === key));
-      b.addEventListener("click", () => { filter = filter === key ? null : key; render(); });
-      t.append(b);
-    };
-    mk(null, "すべて", all.length);
-    for (const s of STATUS) if (counts[s.key]) mk(s.key, s.label, counts[s.key], WAITING.has(s.key) ? "wait" : "");
-    if (reply) mk("@reply", "返事あり", reply, "wait");
-    if (claude) mk("@claude", "Claude がまだ読んでいない", claude, "claude");
-    if (filter === null) t.firstChild.setAttribute("aria-pressed", "true");
-    const att = all.filter(([id, d]) => attention(id, d)).length;
-    $("tab-fusen-n").textContent = att ? String(att) : "";
-  }
-
-  function passes(id, d) {
-    if (!filter) return true;
-    if (filter === "@claude") return needsClaude(d);
-    if (filter === "@reply") return hasReply(id, d);
-    return d.status === filter;
-  }
-  function sortItems(arr) {
-    return arr.sort((a, b) => {
-      const aa = attention(a[0], a[1]) ? 0 : 1, bb = attention(b[0], b[1]) ? 0 : 1;
-      if (aa !== bb) return aa - bb;
-      return (b[1].updatedAt || "").localeCompare(a[1].updatedAt || "");
-    });
-  }
-
-  function placeLinks(container, key) {
-    const p = PLACE[key];
-    if (!p || p.path == null) return;
-    const a1 = el("a", null, "サイト"); a1.href = SITE + p.path; a1.target = "_blank"; a1.rel = "noopener";
-    const a2 = el("a", null, "3001"); a2.href = LOCAL + p.path; a2.target = "_blank"; a2.rel = "noopener";
-    container.append(a1, a2);
-  }
-
-  function renderItem(id, d) {
-    const card = el("article", "item" + (attention(id, d) ? " attn" : ""));
-    card.id = "item-" + id;
-    const head = el("button", "item-head"); head.type = "button";
-    head.setAttribute("aria-expanded", String(open.has(id)));
-    if (d.kind === "報告") head.append(el("span", "pill report", "報告"));
-    else head.append(el("span", "pill " + (d.status || "new"), SLABEL[d.status] || "届いた"));
-    head.append(el("span", "title", d.title || firstLine(d.text || "") || "（題なし）"));
-    const meta = el("span", "meta");
-    if (d.kind && d.kind !== "指示" && d.kind !== "報告") meta.append(el("span", "kind-" + d.kind, d.kind));
-    if (d.kind === "判断" && d.choice) meta.append(el("span", null, "選んだ：" + d.choice));
-    if (view !== "place") meta.append(el("span", null, (PLACE[d.place] || { label: d.place || "その他" }).label));
-    meta.append(el("span", "num", fmt(d.createdAt)));
-    const n = (d.thread || []).filter(x => x.kind !== "status").length;
-    if (n) meta.append(el("span", null, `やりとり ${n}`));
-    if ((d.links || []).length) meta.append(el("span", null, `詳細ページ ${(d.links || []).length}`));
-    if (d.issue) meta.append(el("span", "num", "#" + d.issue));
-    if (hasReply(id, d)) meta.append(el("span", "tag-reply", "返事あり"));
-    if (needsClaude(d)) meta.append(el("span", "tag-claude", "Claude まだ"));
-    head.append(meta);
-    head.addEventListener("click", () => {
-      if (open.has(id)) open.delete(id); else { open.add(id); markSeen(id, d); }
-      render();
-    });
-    card.append(head);
-    if (open.has(id)) card.append(renderBody(id, d));
-    return card;
-  }
-
-  function markSeen(id, d) {
-    if (d.lastAt && (!seen[id] || seen[id] < d.lastAt)) { seen[id] = d.lastAt; store.set("fusen.seen", seen); }
-  }
-
-  function renderBody(id, d) {
-    const body = el("div", "item-body");
-    body.append(el("p", "fulltext", d.text || ""));
-    if (d.where) body.append(el("p", "where", d.where));
-    if (d.detail) { const rich = el("div", "rich"); renderRich(rich, d.detail); body.append(rich); }
-
-    // 判断の選択肢
-    if (d.kind === "判断" && (d.options || []).length) {
-      const box = el("div", "options");
-      for (const o of d.options) {
-        if (!o || !o.label) continue;
-        const b = el("button", "opt" + (d.choice === o.label ? " chosen" : "")); b.type = "button";
-        b.append(el("b", null, o.label)); if (o.note) b.append(el("span", null, o.note));
-        b.addEventListener("click", () => choose(id, d, o.label, b));
-        box.append(b);
-      }
-      body.append(box);
-    }
-
-    // 進み具合（報告には出さない）
-    const track = el("div", "track"); track.setAttribute("aria-label", "進み具合"); if (d.kind === "報告") track.hidden = true;
-    const cur = SORDER[d.status] ?? 0;
-    STATUS.forEach((s, i) => {
-      let cls = "step";
-      if (i < cur) cls += " past";
-      if (i === cur) cls += " now" + (WAITING.has(s.key) ? " wait" : "") + (s.key === "done" ? " done" : "");
-      const st = el("span", cls); st.append(el("i"), el("span", null, s.label)); track.append(st);
-    });
-    body.append(track);
-
-    // 場所・詳細ページ・Issue・セッション・commit
-    const facts = el("div", "facts");
-    const p = PLACE[d.place] || { label: d.place || "その他", path: null };
-    if (p.path != null) {
-      const a = el("a", "chip"); a.href = SITE + p.path; a.target = "_blank"; a.rel = "noopener";
-      a.append(el("small", null, "場所"), document.createTextNode(p.label)); facts.append(a);
-    } else { const c = el("span", "chip"); c.append(el("small", null, "場所"), document.createTextNode(p.label)); facts.append(c); }
-    for (const l of d.links || []) {
-      const u = safeUrl(l.url); if (!u) continue;
-      const a = el("a", "chip"); a.href = u; a.target = "_blank"; a.rel = "noopener";
-      a.append(el("small", null, "詳細"), document.createTextNode(l.label || "ページ")); facts.append(a);
-    }
-    if (d.issue) { const a = el("a", "chip"); a.href = REPO + "issues/" + encodeURIComponent(d.issue); a.target = "_blank"; a.rel = "noopener"; a.append(el("small", null, "Issue"), document.createTextNode("#" + d.issue)); facts.append(a); }
-    if (d.session) { const c = el("span", "chip"); c.append(el("small", null, "セッション"), document.createTextNode(d.session)); facts.append(c); }
-    for (const sha of d.commits || []) {
-      if (!/^[0-9a-f]{6,40}$/i.test(sha)) continue;
-      const a = el("a", "chip num"); a.href = REPO + "commit/" + sha; a.target = "_blank"; a.rel = "noopener"; a.append(el("small", null, "commit"), document.createTextNode(sha.slice(0, 7))); facts.append(a);
-    }
-    body.append(facts);
-
-    // やりとり
-    const thread = el("div", "thread");
-    for (const note of d.thread || []) {
-      if (note.kind === "status") { thread.append(el("div", "note status", `${fmt(note.at)}　${note.from === "claude" ? "Claude" : "pjdhiro"}：${note.text}`)); continue; }
-      const nd = el("div", "note" + (note.from === "claude" ? " claude" : ""));
-      const nh = el("div", "note-head");
-      nh.append(el("b", null, note.from === "claude" ? "Claude" : "pjdhiro"));
-      if (note.kind === "instruction") nh.append(el("span", "ins", "指示"));
-      nh.append(el("span", "num", fmt(note.at)));
-      const tx = el("p"); linkify(tx, note.text || "");
-      nd.append(nh, tx); thread.append(nd);
-    }
-    if ((d.thread || []).length) body.append(thread);
-
-    // 返事を書く
-    const reply = el("div", "reply");
-    const ta = el("textarea"); ta.id = "reply-" + id; ta.placeholder = "コメントか指示を書く"; ta.setAttribute("aria-label", "コメントか指示");
-    ta.value = drafts.get(id) || "";
-    ta.addEventListener("input", () => drafts.set(id, ta.value));
-    reply.append(ta);
-    const acts = el("div", "actions");
-    const bC = el("button", "quiet", "コメントを送る"); bC.type = "button";
-    const bI = el("button", "primary", "指示として送る"); bI.type = "button";
-    bC.addEventListener("click", () => sendNote(id, "comment", ta.value));
-    bI.addEventListener("click", () => sendNote(id, "instruction", ta.value));
-    acts.append(bC, bI);
-    if (comments && canSend !== "off" && canSend !== "writers_only") {
-      const bS = el("button", "call-item", d.from === "claude" ? "答えて司令塔を呼ぶ" : "指示して司令塔を呼ぶ"); bS.type = "button";
-      bS.disabled = canSend !== "available";
-      if (bS.disabled) bS.title = "司令塔のセッションが開いていません";
-      bS.addEventListener("click", () => instructAndCall(id, d, bS, ta.value));
-      acts.append(bS);
-    }
-    if (comments && canSend !== "off" && canSend !== "writers_only" && d.kind !== "報告") {
-      const bM = el("button", "call-item", "直して develop へ取り込む"); bM.type = "button";
-      bM.disabled = canSend !== "available";
-      bM.title = bM.disabled ? "司令塔のセッションが開いていません" : "司令塔が直して develop に取り込み、報告を置きます。書く欄の言葉も添えて送ります";
-      bM.addEventListener("click", () => fixAndMerge(id, d, bM, ta.value));
-      acts.append(bM);
-    }
-    acts.append(el("span", "spacer"));
-    const lab = el("label", null, "状態"); lab.htmlFor = "status-" + id;
-    const sel = el("select"); sel.id = "status-" + id;
-    for (const s of STATUS) { const o = el("option", null, s.label); o.value = s.key; sel.append(o); }
-    sel.value = d.status || "new";
-    sel.addEventListener("change", () => setStatus(id, sel.value));
-    acts.append(lab, sel);
-    reply.append(acts);
-    body.append(reply);
-
-    // しまう・取り下げる
-    const mode = confirming.get(id);
-    if (mode) {
-      const cf = el("div", "confirm");
-      cf.append(el("p", null, mode === "withdraw"
-        ? "取り下げて「しまったもの」へ移します。理由があれば一行で。"
-        : "「しまったもの」へ移します。どう終わったかを一行で（空でもよい）。"
-          + ((d.links || []).length ? `詳細ページ ${(d.links || []).length} 件は、次に Claude が消します。` : "")));
-      const inp = el("input"); inp.type = "text"; inp.id = "outcome-" + id; inp.placeholder = mode === "withdraw" ? "取り下げの理由" : "どう終わったか";
-      const row = el("div", "actions");
-      const ok = el("button", "primary", mode === "withdraw" ? "取り下げる" : "しまう"); ok.type = "button";
-      const no = el("button", "quiet", "やめる"); no.type = "button";
-      ok.addEventListener("click", () => archiveItem(id, mode, inp.value.trim()));
-      no.addEventListener("click", () => { confirming.delete(id); render(); });
-      row.append(ok, no); cf.append(inp, row); body.append(cf);
-    } else {
-      const row = el("div", "actions");
-      if (d.kind === "報告") {
-        const r = el("button", "primary", "読んだ（しまう）"); r.type = "button";
-        r.addEventListener("click", () => archiveItem(id, "read", ""));
-        row.append(r);
-      } else if (d.status === "done") {
-        const b = el("button", "quiet", "しまう"); b.type = "button";
-        b.addEventListener("click", () => { confirming.set(id, "archive"); render(); }); row.append(b);
-      }
-      const w = el("button", "quiet", "取り下げる"); w.type = "button";
-      w.addEventListener("click", () => { confirming.set(id, "withdraw"); render(); }); row.append(w);
-      body.append(row);
-    }
-    return body;
-  }
-
-  function render() {
-    const active = document.activeElement;
-    const aid = active && active.id; const sel = active && "selectionStart" in active ? [active.selectionStart, active.selectionEnd] : null;
-    renderTally();
-    for (const b of $("viewseg").children) b.setAttribute("aria-pressed", String(b.dataset.view === view));
-    const board = $("board"); board.textContent = "";
-    if (!loaded) { board.append(el("div", "empty", db ? "読み込んでいます…" : "この表示では帳面を読めません。claude.ai で開いてください。")); return; }
-    const all = sortItems([...items.entries()].filter(([id, d]) => passes(id, d)));
-    if (!items.size) { board.append(el("div", "empty", "まだ何も置かれていません。上の欄に、気づいたことを一行で書いて「置く」を押してください。")); return; }
-    if (!all.length) { board.append(el("div", "empty", "この絞り込みに当たるものはありません。")); return; }
-    // Claude からの判断と報告は、目次の上にまとめる
-    const fromClaude = all.filter(([, d]) => d.from === "claude")
-      .sort((a, b) => (a[1].kind === "判断" ? 0 : 1) - (b[1].kind === "判断" ? 0 : 1));
-    if (fromClaude.length) {
-      const sec = el("div", "group from-claude");
-      const gh = el("div", "group-head"); gh.append(el("h3", null, "Claude から（前に置かれた判断と報告）"), el("span", "n", `${fromClaude.length} 件`));
-      const list = el("div", "list"); for (const [id, d] of fromClaude) list.append(renderItem(id, d));
-      sec.append(gh, list); board.append(sec);
-    }
-    const rest = all.filter(([, d]) => d.from !== "claude");
-    if (!rest.length) { renderFocus(aid, sel); return; }
-    if (view === "place") {
-      const groups = new Map();
-      for (const e of rest) { const k = PLACE[e[1].place] ? e[1].place : "other"; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(e); }
-      for (const p of PLACES) {
-        const g = groups.get(p.key); if (!g) continue;
-        const sec = el("div", "group");
-        const gh = el("div", "group-head"); gh.append(el("h3", null, p.label), el("span", "n", `${g.length} 件`)); placeLinks(gh, p.key);
-        const list = el("div", "list"); for (const [id, d] of g) list.append(renderItem(id, d));
-        sec.append(gh, list); board.append(sec);
-      }
-    } else {
-      const list = el("div", "list"); for (const [id, d] of rest) list.append(renderItem(id, d)); board.append(list);
-    }
-    renderFocus(aid, sel);
-  }
-  function renderFocus(aid, sel) {
-    if (!aid) return;
-    const again = document.getElementById(aid);
-    if (again) { again.focus(); if (sel && "setSelectionRange" in again) try { again.setSelectionRange(sel[0], sel[1]); } catch {} }
-  }
-
-  // 詳細の簡単な書式：「## 」は小見出し、「- 」は箇条、空行で段落を分ける。URL はリンクにする
-  function renderRich(parent, text) {
-    let para = null, list = null;
-    const flush = () => { para = null; list = null; };
-    for (const raw of String(text).split(/\r?\n/)) {
-      const line = raw.trimEnd();
-      if (!line.trim()) { flush(); continue; }
-      if (line.startsWith("## ")) { flush(); parent.append(el("h4", null, line.slice(3))); continue; }
-      if (/^\s*[-・] /.test(line)) {
-        if (!list) { list = el("ul"); parent.append(list); para = null; }
-        const li = el("li"); linkify(li, line.replace(/^\s*[-・] /, "")); list.append(li); continue;
-      }
-      list = null;
-      if (!para) { para = el("p"); parent.append(para); } else para.append(el("br"));
-      linkify(para, line);
-    }
-  }
-
-  async function choose(id, d, label, btn) {
-    if (d.choice === label) return;
-    const text = `選んだ：${label}`;
-    if (comments && canSend === "available") {
-      await sendToCommander(btn, `付箋帳の判断に答えました。\n問い：${d.title || firstLine(d.text || "")}（id: ${id}）\n${text}`);
-    }
-    await withDb(async () => {
-      const ref = db.doc("items/" + id); const snap = await ref.get(); if (!snap.exists) throw { code: "gone" };
-      const cur = snap.data(); const now = iso();
-      await ref.update({ choice: label, thread: [...(cur.thread || []), { from: "pjdhiro", kind: "comment", text, at: now }], lastFrom: "pjdhiro", lastAt: now, updatedAt: now });
-    }, "選びました");
-  }
+  const lastClaude = d => [...(d.thread || [])].reverse().find(x => x.from === "claude" && x.kind !== "status");
 
   async function withDb(fn, okMsg) {
     if (!db) { toast("この表示では書けません。claude.ai で開いてください。"); return false; }
     try { await fn(); if (okMsg) toast(okMsg); return true; }
-    catch (e) {
-      const c = e && e.code;
-      toast(c === "invalid_argument" ? "書けませんでした。この帳面に書く権限が無いようです。" : c === "quota_exceeded" ? "帳面がいっぱいです。しまったものを減らしてください。" : "書けませんでした。少し置いてもう一度押してください。");
-      return false;
+    catch (e) { toast(e && e.code === "quota_exceeded" ? "帳面がいっぱいです。" : "書けませんでした。少し置いてもう一度押してください。"); return false; }
+  }
+
+  function renderItem(id, d) {
+    const card = el("article", "item" + (WAITING.has(d.status) ? " wait" : ""));
+    const top = el("div", "top");
+    const t = el("button", "title"); t.type = "button"; t.setAttribute("aria-expanded", String(open.has(id)));
+    t.append(d.title || firstLine(d.text || "") || "（題なし）");
+    t.append(el("small", null, fmt(d.createdAt)));
+    if (needsClaude(d)) t.append(el("small", "unread", "Claude まだ"));
+    t.addEventListener("click", () => { if (open.has(id)) open.delete(id); else open.add(id); render(); });
+    // 進み具合：押すと六つの段が出て、押した段にする
+    const cur = SLABEL[d.status] ? d.status : "new";
+    const pill = el("button", "st " + cur, SLABEL[cur]); pill.type = "button";
+    pill.setAttribute("aria-label", "進み具合：" + SLABEL[cur]); pill.setAttribute("aria-expanded", String(picking === id));
+    pill.addEventListener("click", () => { picking = picking === id ? null : id; render(); });
+    top.append(t, pill); card.append(top);
+    if (picking === id) {
+      const steps = el("div", "steps");
+      for (const s of STATUS) {
+        const b = el("button", "st " + s.key + (s.key === cur ? " cur" : ""), s.label); b.type = "button";
+        b.addEventListener("click", () => { picking = null; render(); setStatus(id, s.key); });
+        steps.append(b);
+      }
+      card.append(steps);
     }
+
+    const lc = lastClaude(d);
+    if (lc) { const p = el("p", "last"); p.title = lc.text || ""; p.append(el("b", null, "Claude")); linkify(p, lc.text || ""); card.append(p); }
+
+    if (open.has(id)) {
+      const body = el("div", "body");
+      body.append(el("p", "fulltext", d.text || ""));
+      const ta = el("textarea"); ta.id = "reply-" + id; ta.placeholder = "書き足す"; ta.setAttribute("aria-label", "書き足す");
+      ta.value = drafts.get(id) || ""; ta.addEventListener("input", () => drafts.set(id, ta.value));
+      const row = el("div", "row");
+      const arch = el("button", "quiet", "しまう"); arch.type = "button"; arch.addEventListener("click", () => archiveItem(id));
+      const send = el("button", "primary", "書き足す"); send.type = "button"; send.addEventListener("click", () => addNote(id, ta.value));
+      row.append(arch, send); body.append(ta, row); card.append(body);
+    }
+    return card;
+  }
+
+  function render() {
+    const a = document.activeElement; const aid = a && a.id;
+    const list = $("list"); list.textContent = "";
+    if (!loaded) { list.append(el("div", "empty", db ? "読み込んでいます…" : "この表示では帳面を読めません。claude.ai で開いてください。")); return; }
+    if (!items.size) { list.append(el("div", "empty", "付箋はありません。")); return; }
+    const all = [...items.entries()].sort((x, y) => (y[1].createdAt || "").localeCompare(x[1].createdAt || ""));
+    for (const [id, d] of all) list.append(renderItem(id, d));
+    if (aid) { const again = document.getElementById(aid); if (again) again.focus(); }
   }
 
   $("capture").addEventListener("submit", async ev => {
     ev.preventDefault();
     const text = $("cap-text").value.trim(); if (!text) { $("cap-text").focus(); return; }
-    const place = $("cap-place").value; const where = $("cap-where").value.trim();
-    const kind = "指示";
     const now = iso();
     const id = "i" + now.replace(/\D/g, "").slice(0, 14) + Math.random().toString(36).slice(2, 5);
     $("cap-send").disabled = true;
     const ok = await withDb(() => db.collection("items").doc(id).set({
-      text, title: firstLine(text), place, where, kind, status: "new",
+      text, title: firstLine(text), place: "other", where: "", kind: "指示", status: "new",
       thread: [], links: [], commits: [], issue: null, session: "",
       createdAt: now, updatedAt: now, lastFrom: "pjdhiro", lastAt: now, claudeReadAt: null,
     }), "置きました");
     $("cap-send").disabled = false;
-    if (ok) { $("cap-text").value = ""; $("cap-where").value = ""; store.set("fusen.place", place); store.set("fusen.draft", ""); }
+    if (ok) { $("cap-text").value = ""; store.set("fusen.draft", ""); }
   });
   $("cap-text").value = store.get("fusen.draft", "");
   $("cap-text").addEventListener("input", () => store.set("fusen.draft", $("cap-text").value));
-  $("cap-place").addEventListener("change", () => store.set("fusen.place", $("cap-place").value));
 
-  for (const b of $("viewseg").children) b.addEventListener("click", () => { view = b.dataset.view; store.set("fusen.view", view); render(); });
-
-  async function sendNote(id, kind, text) {
+  async function addNote(id, text) {
     text = (text || "").trim(); if (!text) { toast("書く欄が空です"); return; }
-    const ref = db && db.doc("items/" + id);
     const ok = await withDb(async () => {
-      const snap = await ref.get(); if (!snap.exists) throw { code: "gone" };
+      const ref = db.doc("items/" + id); const snap = await ref.get(); if (!snap.exists) throw { code: "gone" };
       const d = snap.data(); const now = iso();
-      // 済んだ付箋に書き足したら、同じ付箋が開き直る（2026-11-17・これまで 16 回あった書き足しの形）
-      const th = [...(d.thread || []), { from: "pjdhiro", kind, text, at: now }];
+      const th = [...(d.thread || []), { from: "pjdhiro", kind: "instruction", text, at: now }];
       const up = { thread: th, lastFrom: "pjdhiro", lastAt: now, updatedAt: now };
+      // 済んだ付箋に書き足したら、同じ付箋が開き直る
       if (d.status === "done") { th.push({ from: "pjdhiro", kind: "status", text: "済んだ → 届いた（書き足し）", at: now }); up.status = "new"; }
       await ref.update(up);
-    }, kind === "instruction" ? "指示を送りました" : "コメントを送りました");
+    }, "書き足しました");
     if (ok) { drafts.delete(id); render(); }
   }
 
   async function setStatus(id, status) {
-    const ref = db && db.doc("items/" + id);
     await withDb(async () => {
-      const snap = await ref.get(); if (!snap.exists) throw { code: "gone" };
+      const ref = db.doc("items/" + id); const snap = await ref.get(); if (!snap.exists) throw { code: "gone" };
       const d = snap.data(); if (d.status === status) return; const now = iso();
       await ref.update({ status, thread: [...(d.thread || []), { from: "pjdhiro", kind: "status", text: `${SLABEL[d.status] || d.status} → ${SLABEL[status]}`, at: now }], lastFrom: "pjdhiro", lastAt: now, updatedAt: now });
     }, `「${SLABEL[status]}」にしました`);
   }
 
-  async function archiveItem(id, mode, outcome) {
+  async function archiveItem(id) {
     const d = items.get(id); if (!d) return;
-    const now = iso();
-    const links = d.links || [];
+    const now = iso(); const links = d.links || [];
     const ok = await withDb(async () => {
-      await db.doc("archive/" + id).set({
-        text: d.text || "", title: d.title || firstLine(d.text || ""), place: d.place || "other", where: d.where || "", kind: d.kind || "違和感",
-        thread: d.thread || [], links, commits: d.commits || [], issue: d.issue || null, session: d.session || "",
-        createdAt: d.createdAt || now, closedAt: now,
-        outcome: mode === "withdraw" ? ("取り下げ" + (outcome ? "：" + outcome : "")) : mode === "read" ? "読んだ" : outcome,
-        from: d.from || "pjdhiro", choice: d.choice || null,
-        linksCleared: links.length === 0,
-      });
+      await db.doc("archive/" + id).set({ ...d, closedAt: now, outcome: d.status === "done" ? "済んだ" : "しまった（" + (SLABEL[d.status] || d.status) + "）", linksCleared: links.length === 0 });
       await db.doc("items/" + id).delete();
-    }, mode === "withdraw" ? "取り下げました" : mode === "read" ? "読んだ報告をしまいました" : "しまいました");
-    if (ok) { confirming.delete(id); open.delete(id); }
+    }, "しまいました");
+    if (ok) open.delete(id);
   }
 
   // 司令塔を呼ぶ：コメントを「Claude に送る」で出し、帳面を見張っている司令塔のセッションを起こす
-  const CALL_NOTE = {
-    available: "押すと、帳面を見張っている司令塔のセッションに届きます。返事はこの帳面とコメントに出ます。",
-    no_session: "司令塔のセッションが開いていません。Claude Code で司令塔を始めると押せます。",
-  };
   function renderCall() {
-    const box = $("call");
-    if (!comments || canSend === "off" || canSend === "writers_only") { box.hidden = true; return; }
-    box.hidden = false;
-    $("call-btn").disabled = canSend !== "available";
-    $("call-note").textContent = CALL_NOTE[canSend] || CALL_NOTE.no_session;
+    const b = $("call-btn");
+    if (!comments || canSend === "off" || canSend === "writers_only") { b.hidden = true; return; }
+    b.hidden = false; b.disabled = canSend !== "available";
+    b.title = canSend === "available" ? "帳面を見張っている司令塔のセッションに届きます" : "司令塔のセッションが開いていません";
   }
   async function refreshCan() {
     if (!comments) return;
-    let c = "off";
-    try { c = await comments.canSendToClaude(); } catch { c = "off"; }
-    if (c !== canSend) { canSend = c; renderCall(); render(); }
-  }
-  async function sendToCommander(anchorEl, text) {
-    if (!comments) return false;
-    let anchor;
-    try { anchor = await comments.anchorFor(anchorEl); } catch { toast("呼べませんでした。もう一度押してください。"); return false; }
-    try {
-      await comments.sendToClaude({ anchor, text: text.slice(0, 3800) });
-      toast("司令塔に届けました");
-      return true;
-    } catch (e) {
-      const c = e && e.code;
-      if (c === "consent_required") toast("このページからコメントする許可が要ります。許可してから、もう一度押してください。");
-      else if (c === "forbidden") { toast("このページからはコメントできない設定になっています。"); canSend = "off"; renderCall(); render(); }
-      else if (c === "claude_unavailable") { toast("司令塔に届きませんでした。司令塔のセッションが開いているか確かめてください。"); refreshCan(); }
-      else if (c === "rate_limited") toast("続けて呼びすぎています。少し間を置いてください。");
-      else toast("呼べませんでした。少し置いてもう一度押してください。");
-      return false;
-    }
+    let c = "off"; try { c = await comments.canSendToClaude(); } catch { c = "off"; }
+    if (c !== canSend) { canSend = c; renderCall(); }
   }
   $("call-btn").addEventListener("click", async () => {
     const btn = $("call-btn"); btn.disabled = true;
     const waiting = [...items.values()].filter(needsClaude);
     const lines = ["付箋帳を読んでください（手順は docs/tools/fusen-cho.md）。"];
-    lines.push(waiting.length ? `Claude がまだ読んでいないもの ${waiting.length} 件：` : "Claude がまだ読んでいないものはありません。判断を待つもの・確かめを待つものの様子を見てください。");
+    lines.push(waiting.length ? `Claude がまだ読んでいないもの ${waiting.length} 件：` : "Claude がまだ読んでいないものはありません。");
     for (const d of waiting.slice(0, 20)) lines.push("・" + (d.title || firstLine(d.text || "")));
-    await sendToCommander(btn, lines.join("\n"));
+    try {
+      const anchor = await comments.anchorFor(btn);
+      await comments.sendToClaude({ anchor, text: lines.join("\n").slice(0, 3800) });
+      toast("司令塔に届けました");
+    } catch (e) {
+      const c = e && e.code;
+      if (c === "consent_required") toast("このページからコメントする許可が要ります。許可してから、もう一度押してください。");
+      else if (c === "claude_unavailable") { toast("司令塔に届きませんでした。司令塔のセッションが開いているか確かめてください。"); refreshCan(); }
+      else if (c === "rate_limited") toast("続けて呼びすぎています。少し間を置いてください。");
+      else toast("呼べませんでした。少し置いてもう一度押してください。");
+    }
     btn.disabled = canSend !== "available";
   });
-  async function instructAndCall(id, d, btn, text) {
-    text = (text || "").trim(); if (!text) { toast("書く欄が空です"); return; }
-    btn.disabled = true;
-    const answer = d.from === "claude";
-    const msg = `付箋帳の一件に${answer ? "答え" : "指示"}を置きました。\n一件：${d.title || firstLine(d.text || "")}（id: ${id}）\n${answer ? "答え" : "指示"}：${text}`;
-    const ok = await sendToCommander(btn, msg);
-    if (ok) await sendNote(id, answer ? "comment" : "instruction", text);
-    else btn.disabled = false;
-  }
-  async function fixAndMerge(id, d, btn, text) {
-    text = (text || "").trim();
-    btn.disabled = true;
-    const lines = [
-      "付箋帳の一件を直して、develop に取り込んでください。",
-      `一件：${d.title || firstLine(d.text || "")}（id: ${id}）`,
-    ];
-    if (d.choice) lines.push(`選んだ：${d.choice}`);
-    if (text) lines.push(`添えた言葉：${text}`);
-    const ok = await sendToCommander(btn, lines.join("\n"));
-    if (ok) await sendNote(id, "instruction", "直して develop へ取り込む" + (text ? "：" + text : ""));
-    else btn.disabled = false;
-  }
   document.addEventListener("visibilitychange", () => { if (!document.hidden) refreshCan(); });
   window.addEventListener("focus", () => refreshCan());
 
-  // しまったもの（開いたときだけ読む）
-  let archSub = null;
-  $("archive").addEventListener("toggle", () => {
-    if (!$("archive").open || archSub || !db) return;
-    archSub = db.collection("archive").orderBy("closedAt", "desc").limit(300).onSnapshot(snap => {
-      $("arch-n").textContent = String(snap.size);
-      const list = $("arch-list"); list.textContent = "";
-      if (snap.empty) { list.append(el("div", "empty", "まだ何もしまっていません。")); return; }
-      for (const doc of snap.docs) {
-        const d = doc.data();
-        const row = el("div", "arow");
-        row.append(el("span", "d num", fmtDay(d.closedAt)));
-        row.append(el("span", "t", d.title || firstLine(d.text || "")));
-        const o = el("span", "o");
-        o.append(document.createTextNode((PLACE[d.place] || { label: d.place || "その他" }).label));
-        if (d.outcome) o.append(document.createTextNode("　" + d.outcome));
-        if (!d.linksCleared && (d.links || []).length) o.append(document.createTextNode("　"), el("span", "pend", `詳細ページ ${(d.links || []).length} 件を消す待ち`));
-        row.append(o); list.append(row);
-      }
-    }, () => { $("arch-list").textContent = ""; $("arch-list").append(el("div", "empty", "しまったものを読めませんでした。")); });
-  });
-
-  // タブ（どちらを開いていたかだけを、この端末に覚える）
-  let tab = store.get("fusen.tab", "fusen");
-  function showTab(t) {
-    tab = t === "week" ? "week" : "fusen"; store.set("fusen.tab", tab);
-    $("tab-fusen").setAttribute("aria-selected", String(tab === "fusen"));
-    $("tab-week").setAttribute("aria-selected", String(tab === "week"));
-    $("panel-fusen").hidden = tab !== "fusen"; $("panel-week").hidden = tab !== "week";
-  }
-  $("tab-fusen").addEventListener("click", () => showTab("fusen"));
-  $("tab-week").addEventListener("click", () => showTab("week"));
-  showTab(tab);
-
-  // 週の名前（ISO 週。例：2026-W47）。マイルストーンの題と同じ形
-  function isoWeek(date, plus) {
-    const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate() + 7 * (plus || 0)));
-    const day = d.getUTCDay() || 7; d.setUTCDate(d.getUTCDate() + 4 - day);
-    const y = d.getUTCFullYear(); const w = Math.ceil(((d - Date.UTC(y, 0, 1)) / 86400000 + 1) / 7);
-    return `${y}-W${String(w).padStart(2, "0")}`;
-  }
-  let weekDoc = null;
-  async function placeNote(text, issue) {
-    const now = iso();
-    const id = "i" + now.replace(/\D/g, "").slice(0, 14) + Math.random().toString(36).slice(2, 5);
-    return withDb(() => db.collection("items").doc(id).set({
-      text, title: firstLine(text), place: "repo", where: "", kind: "指示", status: "new",
-      thread: [], links: [], commits: [], issue: issue || null, session: "",
-      createdAt: now, updatedAt: now, lastFrom: "pjdhiro", lastAt: now, claudeReadAt: null,
-    }), "付箋に置きました");
-  }
-  function weekRow(it, thisW, nextW) {
-    const n = Number(it.number); if (!Number.isInteger(n) || n <= 0) return null;
-    const row = el("div", "wrow");
-    const a = el("a", "num", "#" + n); a.href = REPO + "issues/" + n; a.target = "_blank"; a.rel = "noopener";
-    const isOpen = String(it.state || "").toUpperCase() === "OPEN";
-    row.append(a, el("span", "t", it.title || ""), el("span", "s " + (isOpen ? "open" : "closed"), isOpen ? "開" : "閉"));
-    const u = el("span", "u");
-    if (it.milestone) u.append(el("span", "num", it.milestone));
-    if ((it.labels || []).length) u.append(el("span", null, it.labels.join("・")));
-    u.append(el("span", null, "更新 " + fmtDay(it.updatedAt)));
-    const pending = [...items.values()].filter(d => Number(d.issue) === n && d.status !== "done").length;
-    if (pending) u.append(el("span", "tag-reply", `付箋 ${pending}`));
-    row.append(u);
-    if (isOpen) {
-      const acts = el("span", "acts");
-      const mk = (label, text, cls) => { const b = el("button", cls || null, label); b.type = "button"; b.addEventListener("click", () => placeNote(text, n)); acts.append(b); };
-      mk("これをやって", `#${n} をやって`, "go");
-      if (it.milestone !== thisW) mk("今週へ", `#${n} を今週（${thisW}）に入れて`);
-      if (it.milestone !== nextW) mk("来週へ", `#${n} を来週（${nextW}）に回して`);
-      if (it.milestone) mk("週から外す", `#${n} を週のマイルストーンから外して`);
-      row.append(acts);
-    }
-    return row;
-  }
-  function renderWeek() {
-    const body = $("wk-body"); body.textContent = "";
-    const thisW = isoWeek(new Date()), nextW = isoWeek(new Date(), 1);
-    $("wk-title").textContent = `今週（${thisW}）`;
-    $("wk-at").textContent = weekDoc && weekDoc.fetchedAt ? `${fmt(weekDoc.fetchedAt)} に GitHub から読んだもの` : "";
-    const list = weekDoc && Array.isArray(weekDoc.items) ? weekDoc.items : [];
-    if (!list.length) { body.append(el("div", "empty", "まだありません。司令塔が始めに GitHub から読んで書き込みます。")); $("tab-week-n").textContent = ""; return; }
-    const isOpen = it => String(it.state || "").toUpperCase() === "OPEN";
-    const byUpd = (a, b) => String(b.updatedAt || "").localeCompare(String(a.updatedAt || ""));
-    const now = list.filter(it => it.milestone === thisW && isOpen(it)).sort(byUpd);
-    const closedNow = list.filter(it => it.milestone === thisW && !isOpen(it)).sort(byUpd);
-    const later = list.filter(it => isOpen(it) && it.milestone && it.milestone !== thisW).sort((a, b) => String(a.milestone).localeCompare(String(b.milestone)) || byUpd(a, b));
-    const none = list.filter(it => isOpen(it) && !it.milestone).sort(byUpd);
-    $("tab-week-n").textContent = now.length ? String(now.length) : "";
-    const box = el("div", "wbox");
-    if (now.length) for (const it of now) { const r = weekRow(it, thisW, nextW); if (r) box.append(r); }
-    else box.append(el("div", "empty", "今週のマイルストーンが付いた Issue はまだありません。下の畳みから「今週へ」を押すと、付箋に置かれます。"));
-    body.append(box);
-    const fold = (label, arr, openIt) => {
-      if (!arr.length) return;
-      const d = el("details", "wfold"); if (openIt) d.open = true;
-      d.append(el("summary", null, `${label}（${arr.length}）`));
-      for (const it of arr) { const r = weekRow(it, thisW, nextW); if (r) d.append(r); }
-      body.append(d);
-    };
-    fold("来週以降", later);
-    fold("週の決まっていない Issue", none);
-    fold("今週閉じたもの", closedNow);
-  }
-
   render();
-
   (async () => {
     try { comments = await window.claude?.use?.("comments"); } catch { comments = null; }
     if (comments) refreshCan();
   })();
-
   (async () => {
-    const timer = setTimeout(() => setConn("帳面にまだつながりません。少し待つか、開き直してください。", true), 10000);
+    const timer = setTimeout(() => setConn("帳面にまだつながりません。開き直してください。", true), 10000);
     try { db = await window.claude?.use?.("db"); } catch { db = null; }
     if (!db) { clearTimeout(timer); setConn("この表示では帳面を読めません。claude.ai で開いてください。", true); loaded = true; render(); return; }
-    db.doc("meta/settings").onSnapshot(snap => {
-      const rule = snap.exists ? (snap.data().archiveRule || "") : "";
-      $("arch-rule").textContent = rule; $("arch-rule").hidden = !rule;
-    }, () => {});
-    // 今週：司令塔が gh issue list で meta/week に書く（docs/tools/fusen-cho.md）
-    db.doc("meta/week").onSnapshot(snap => { weekDoc = snap.exists ? snap.data() : null; renderWeek(); },
-      () => { const b = $("wk-body"); b.textContent = ""; b.append(el("div", "empty", "Issue の一覧を読めませんでした。")); });
     db.collection("items").onSnapshot(snap => {
       const m = new Map(); for (const doc of snap.docs) m.set(doc.id, doc.data());
       items = m; loaded = true;
       for (const id of [...open]) if (!items.has(id)) open.delete(id);
-      if (!snap.metadata.fromCache) { clearTimeout(timer); setConn(`つながっています　開いているもの ${m.size} 件`); }
-      render(); renderWeek();
+      if (!snap.metadata.fromCache) { clearTimeout(timer); setConn(`付箋 ${m.size} 件`); }
+      render();
     }, () => { clearTimeout(timer); setConn("帳面を読めなくなりました。開き直してください。", true); });
   })();
 })();

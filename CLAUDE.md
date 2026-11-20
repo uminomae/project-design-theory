@@ -48,7 +48,7 @@
 | 調べる・引用する | `docs/rules/sources.md`：調べ方と原典の照合 |
 | wiki を作り直す・正本を直して wiki の知らせが出た | `.claude/skills/wiki-compile/SKILL.md`：知らされた wiki のページは、正本を直した同じ作業で作り直し、一緒に commit する |
 | 特定のページ・Issue を触る | `docs/rules/decisions.md`：そのページ・Issue の行だけ（Love駆動開発の読み物は、終わりの「読み物の組み立て」の節も） |
-| 司令塔のセッションの始め・「付箋帳」「違和感帳」と言われた | `docs/tools/fusen-cho.md`：手元の指示を付箋のように置き、Issue を週で見る帳面（アーティファクト）の読み方・返事の書き方・しまい方。2026-11-17 に違和感帳（`docs/tools/iwakan-cho.md`・読むだけで残す）から移った |
+| 司令塔のセッションの始め・「付箋帳」「違和感帳」と言われた | `docs/tools/fusen-cho.md`：手元の指示を付箋のように置く帳面（アーティファクト）の読み方・返事の書き方・しまい方。2026-11-17 に違和感帳（`docs/tools/iwakan-cho.md`・読むだけで残す）から移った |
 
 新しい指摘を受けたら、同じセッションで stance.md か corrections.md（正本）に足し、芯は commit のときに pre-commit が作り直す（手で回すなら `python3 -I scripts/rules-core.py`。食い違いは check.sh が止める）。足すときは、まず既にある行に溶かせるかを見る。正本の行には日付・番号と言葉の芯を書き、何への答えだったか（場面）と原文は `stance-history.md`・`corrections-history.md` の同じ節に足す（2026-11-20・毎回読む量を減らすため）。ページや Issue ごとの判定は decisions.md に、見方として一般化できる一行だけを stance.md に書く。代表例（corrections-examples.md）は型ごとに一、二件に保ち、足すなら入れ替える。
 
