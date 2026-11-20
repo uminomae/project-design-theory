@@ -45,6 +45,7 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | `helmholtz-1847-erhaltung-der-kraft.md` | H. Helmholtz, *Über die Erhaltung der Kraft*, Berlin: G. Reimer, 1847（独語・72 頁） | 全文の訳（2026-11-18・#175）。一冊の本だが一つの論文なので全文。原文は独語で、独語の本文から訳した。1847 年の版の写真複製（Bruxelles 1966）の走査の OCR を下敷きに、読む役六つが全 72 頁を画像と照らして原文と式を起こし、訳の案を出した。照らす役三つが段ごとに照らし、Claude がつないで入れた。読みにくい記号は 1889 年の再版で裏づけた。人の校閲はまだ。1893 の ¶20 が「1847 年のヘルムホルツによるエネルギー保存の崇高な発見」と呼ぶ。ページ `pd/reader/helmholtz-erhaltung-der-kraft-ja.html` |
 | `clausius-1850-bewegende-kraft-der-warme.md` | R. Clausius, "Ueber die bewegende Kraft der Wärme und die Gesetze, welche sich daraus für die Wärmelehre selbst ableiten lassen", *Annalen der Physik und Chemie* 79 (1850), pp.368–397, 500–524（独語・55 頁） | 全文の訳（2026-11-19・#175）。原文は独語で、独語の本文から訳した。誌面の走査の OCR を下敷きに、読む役六つが全 55 頁を画像と照らして原文と式を起こし、訳の案を出した。照らす役三つが段ごとに照らし、Claude がつないで入れた。文中の図 4 つは写さず訳注で形を書いた。人の校閲はまだ。1893 の ¶20・¶58 が「1850 年のクラウジウスとランキンの熱の力学的理論」と言う、クラウジウスの側の論文（パースは題を挙げず、Claude が当てた）。ページ `pd/reader/clausius-bewegende-kraft-der-warme-ja.html` |
 | `rankine-1850-mechanical-action-of-heat.md` | W. J. Macquorn Rankine, "On the Mechanical Action of Heat, especially in Gases and Vapours", *Transactions of the Royal Society of Edinburgh* 20 (1853), pp.147–190（1850 年 2 月 4 日に読む・英語） | 全文の訳（2026-11-20・#175）。序論・第 I〜IV 節・付録と表二つ、全文 260 段・脚注 1。文字起こしが無いので、誌面の走査の OCR を下敷きに、読む役六つが全 44 頁を画像と照らして原文と式と表を起こし、訳の案を出した。照らす役三つが段ごとに照らし、Claude がつないで入れた。人の校閲はまだ。1893 の ¶20・¶58 が、1850 年のクラウジウスとランキンの熱の力学的理論に触れる（題は挙げていない）。ページ `pd/reader/rankine-mechanical-action-of-heat-ja.html` |
+| `mansel-1858-limits-of-religious-thought.md` | Henry Longueville Mansel, *The Limits of Religious Thought Examined in Eight Lectures*, Oxford: J. Wright for John Murray, 1858, 序文 pp.v–x | 本の抜きの訳（2026-11-20・#175）。初めの序文の全文六段と脚注二つ。パースは題も頁も挙げず、マンセルがハミルトンの哲学を講義の土台にすると自ら述べる所として、Claude が当てた。文字起こしが無いので、OCR を下敷きに Claude が六頁の画像と照らして原文を起こし、訳を付けた。序文が引くハミルトンの二文は、ハミルトンの論集（1852）pp.12・15 で照らした。人の校閲はまだ。1893 の ¶20 が、マンセルのハミルトンの哲学の「無分別な弁護」に触れる。ページ `pd/reader/mansel-limits-of-religious-thought-ja.html` |
 
 次に訳す候補：パースは `../research/peirce-love-abduction/READING-ORDER-20261116.md` の表、1893「Evolutionary Love」が引く論文と本は Issue #175 の一覧。
 
@@ -235,6 +236,19 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | partial / total differential coefficient | 偏微分係数／全微分係数 | |
 | depth of fall | 落下の高さ | |
 | useful effect / gross effect / counter-pressure / clearance / ratio of expansion | 有用な効果／効果の総量／背圧／すき間／膨張比 | 蒸気機関の語 |
+
+### マンセル：表
+
+| 原語 | 訳語 | 覚え書き |
+|---|---|---|
+| religious thought | 宗教的思考 | 題の語。マンセルは、意識のうちにはっきり捉えられ、言葉で伝えられるもの全部を指す、と断る |
+| the Unconditioned / the Conditioned | 無条件者／条件づけられたもの | ハミルトンの語 |
+| incognisable / inconceivable | 認識できない／考えることもできない | |
+| philosophical Theology | 哲学的な神学 | |
+| Revelation | 啓示 | |
+| faculty | 能力 | |
+| Rationalism | 合理主義 | |
+| Christian Evidences | キリスト教の証拠 | 神学の一分野の呼び名 |
 
 ### パース：表
 

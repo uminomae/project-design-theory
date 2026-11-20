@@ -237,6 +237,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は mansel-1858-limits-of-religious-thought.md（原文〔英語〕と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-mansel-limits-of-religious-thought-ja.md",
+        ROOT / "scripts/reader-mansel-limits-of-religious-thought-ja-template.html",
+        ROOT / "reader/mansel-limits-of-religious-thought-ja.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/creative-thinking/READER-creative-thinking.md",
         ROOT / "scripts/reader-creative-thinking-template.html",
         ROOT / "reader/creative-thinking.html",
@@ -481,6 +488,10 @@ JA_CHAPTERS = {
         "¶175": "第 IV 節 水蒸気の力学的作用と蒸気機関の動力",
         "¶238": "第 IV 節への付録と表",
         "注1": "ランキンの脚注",
+    },
+    "mansel-1858-limits-of-religious-thought.md": {
+        "¶1": "序文　人間の思考の限界と、ハミルトンの無条件者の哲学",
+        "注1": "マンセルの脚注",
     },
 }
 

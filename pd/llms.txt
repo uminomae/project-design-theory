@@ -154,6 +154,11 @@ Public explainer pages, written to be uniquely readable by LLMs without external
 - One-line: A full Japanese translation, paragraph by paragraph, of W. J. Macquorn Rankine's "On the Mechanical Action of Heat, especially in Gases and Vapours" (read 4 February 1850; Transactions of the Royal Society of Edinburgh 20, 1853, pp.147–190), the 1850 mechanical theory of heat by Rankine that Peirce mentions in "Evolutionary Love" (1893) ¶20 and ¶58, with the English original under each paragraph.
 - Status: there is no transcription; the English original, including all formulas and tables, was built from the OCR and checked against all 44 page images of the Internet Archive scan. Peirce does not name the paper; Claude identified it. The translation is by Claude and has not been reviewed by a human. Quote and cite the original.
 
+### マンセル『宗教的思考の限界』（1858）の序文を、日本語で読む
+- URL: https://uminomae.github.io/project-design-theory/reader/mansel-limits-of-religious-thought-ja.html
+- One-line: A Japanese translation, paragraph by paragraph, of the first Preface (pp.v–x) of Henry Longueville Mansel's The Limits of Religious Thought Examined in Eight Lectures (the Bampton Lectures of 1858; Oxford: J. Wright for John Murray, 1858), in which Mansel says that Sir William Hamilton's principle that "the Unconditioned is incognisable and inconceivable" suggested the principal part of his inquiries, with the English original under each paragraph. Peirce mentions "Dean Mansell's injudicious advocacy" of Hamilton in "Evolutionary Love" (1893) ¶20.
+- Status: only the Preface is translated, not the eight lectures or the notes; Peirce names neither the book nor a page, and Claude chose the Preface. There is no transcription; the text was built from the OCR and checked against the page images of the Internet Archive scan. The two Hamilton quotations were checked against Hamilton's Discussions (1852), pp.12 and 15. The translation is by Claude and has not been reviewed by a human. Quote and cite the original.
+
 ## Related Projects
 
 | Project | URL | Focus |
