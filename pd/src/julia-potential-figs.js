@@ -440,7 +440,139 @@
     build();
   }
 
-  function all() { drawFixed(); drawLab(); drawBig(); drawFold(); }
+  /* ---- 5) 漸化式とは（#jp-rec）：決まりを一つ選び、前の値から次の値を一歩ずつ出す。数直線に跳ぶ点を打つ ---- */
+  const rec = document.getElementById("jp-rec");
+  const RULES = {
+    double: { f: (a) => 2 * a, show: (p) => p + " × 2", name: "2 倍する" },
+    half: { f: (a) => a / 2, show: (p) => p + " ÷ 2", name: "半分にする" },
+    square: { f: (a) => a * a, show: (p) => p + "²", name: "二乗する" },
+    sqm1: { f: (a) => a * a - 1, show: (p) => p + "² − 1", name: "二乗して −1 を足す" },
+  };
+  let R = { rule: "double", a0: 1, seq: [1], timer: null };
+  const nf = (v) => { const r = Math.round(v * 1000) / 1000; return (r < 0 ? "−" : "") + Math.abs(r); };
+  function drawRec() {
+    if (!rec) return;
+    const cv = document.getElementById("jp-rec-cv"), ctx = cv.getContext("2d"), W = cv.width, H = cv.height;
+    const LO = -4, HI = 4, X = (v) => 30 + (v - LO) / (HI - LO) * (W - 60), y0 = H * 0.62;
+    ctx.fillStyle = css(rec, "--panel"); ctx.fillRect(0, 0, W, H);
+    ctx.strokeStyle = css(rec, "--mid"); ctx.lineWidth = 1.5; ctx.beginPath(); ctx.moveTo(14, y0); ctx.lineTo(W - 14, y0); ctx.stroke();
+    ctx.fillStyle = css(rec, "--mid"); ctx.font = "22px sans-serif"; ctx.textAlign = "center";
+    for (let k = LO; k <= HI; k++) { ctx.beginPath(); ctx.moveTo(X(k), y0 - 5); ctx.lineTo(X(k), y0 + 5); ctx.stroke(); ctx.fillText(k < 0 ? "−" + -k : String(k), X(k), y0 + 32); }
+    const s = R.seq;
+    for (let n = 1; n < s.length; n++) {
+      const a = s[n - 1], b = s[n]; if (Math.abs(a) > HI) break;
+      const xa = X(a), xb = X(Math.max(LO - 0.3, Math.min(HI + 0.3, b))), mid = (xa + xb) / 2, h = 18 + Math.min(70, Math.abs(xb - xa) * 0.35);
+      ctx.strokeStyle = n === s.length - 1 ? css(rec, "--coral") : css(rec, "--line"); ctx.lineWidth = n === s.length - 1 ? 2 : 1.5;
+      ctx.beginPath(); ctx.moveTo(xa, y0 - 6); ctx.quadraticCurveTo(mid, y0 - 6 - h, xb, y0 - 6); ctx.stroke();
+    }
+    s.forEach((v, n) => {
+      if (Math.abs(v) > HI) return;
+      ctx.fillStyle = n === s.length - 1 ? css(rec, "--coral") : css(rec, "--navy"); dot(ctx, X(v), y0, n === s.length - 1 ? 6 : 4.5);
+    });
+    const last = s[s.length - 1];
+    if (Math.abs(last) > HI) { ctx.fillStyle = css(rec, "--coral"); ctx.textAlign = last > 0 ? "right" : "left"; ctx.fillText(last > 0 ? "この先は図の外 →" : "← この先は図の外", last > 0 ? W - 14 : 14, y0 - 40); }
+    const chain = document.getElementById("jp-rec-chain");
+    chain.textContent = s.map((v, n) => "a" + sub(n) + " = " + nf(v)).join("　→　");
+    const out = document.getElementById("jp-rec-out"), rule = RULES[R.rule];
+    if (s.length === 1) out.textContent = "決まり「" + rule.name + "」、はじめの値 a₀ = " + nf(R.a0) + "。「一歩進める」をクリックすると、いまの値に決まりを当てて、次の値を出します。";
+    else { const n = s.length - 1; out.textContent = "a" + sub(n) + " = " + rule.show("a" + sub(n - 1)) + " = " + rule.show(paren(s[n - 1])) + " = " + nf(s[n]) + "。出てきた値に、また同じ決まりを当てます。"; }
+  }
+  const SUB = "₀₁₂₃₄₅₆₇₈₉"; function sub(n) { return String(n).split("").map((d) => SUB[+d]).join(""); }
+  const paren = (v) => (v < 0 ? "(" + nf(v) + ")" : nf(v));
+  if (rec) {
+    const stopR = () => { if (R.timer) { clearInterval(R.timer); R.timer = null; } document.getElementById("jp-rec-play").setAttribute("aria-pressed", "false"); };
+    const reset = () => { stopR(); R.seq = [R.a0]; drawRec(); };
+    const stepR = () => { const s = R.seq, v = s[s.length - 1]; if (s.length > 12 || Math.abs(v) > 1e6) return false; s.push(RULES[R.rule].f(v)); drawRec(); return true; };
+    rec.querySelectorAll("[data-rule]").forEach((b) => b.addEventListener("click", () => {
+      R.rule = b.dataset.rule; rec.querySelectorAll("[data-rule]").forEach((x) => x.setAttribute("aria-pressed", String(x === b))); reset();
+    }));
+    const sl = document.getElementById("jp-rec-a0"), so = document.getElementById("jp-rec-a0-out");
+    sl.addEventListener("input", () => { R.a0 = +sl.value; so.textContent = nf(R.a0); reset(); });
+    document.getElementById("jp-rec-step").addEventListener("click", () => { stopR(); stepR(); });
+    document.getElementById("jp-rec-reset").addEventListener("click", reset);
+    document.getElementById("jp-rec-play").addEventListener("click", (e) => {
+      if (R.timer) { stopR(); return; }
+      if (R.seq.length > 12) R.seq = [R.a0];
+      e.currentTarget.setAttribute("aria-pressed", "true"); stepR(); R.timer = setInterval(() => { if (!stepR()) stopR(); }, 900);
+    });
+  }
+
+  /* ---- 6) 平面の上の数（#jp-cplx）：クリックした点を x + yi で読む ---- */
+  const cplx = document.getElementById("jp-cplx");
+  let CZ = { re: 0.8, im: 0.6 };
+  const PV = { x0: -2, x1: 2, y0: -2, y1: 2 };
+  function axes(fig, ctx, cv, v, unit) {
+    ctx.fillStyle = css(fig, "--panel"); ctx.fillRect(0, 0, cv.width, cv.height);
+    ctx.strokeStyle = css(fig, "--line"); ctx.lineWidth = 1;
+    for (let k = Math.ceil(v.x0); k <= v.x1; k++) { const [px] = toPx(v, k, 0, cv); ctx.beginPath(); ctx.moveTo(px, 0); ctx.lineTo(px, cv.height); ctx.stroke(); }
+    for (let k = Math.ceil(v.y0); k <= v.y1; k++) { const [, py] = toPx(v, 0, k, cv); ctx.beginPath(); ctx.moveTo(0, py); ctx.lineTo(cv.width, py); ctx.stroke(); }
+    const [ox, oy] = toPx(v, 0, 0, cv);
+    ctx.strokeStyle = css(fig, "--mid"); ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(0, oy); ctx.lineTo(cv.width, oy); ctx.moveTo(ox, 0); ctx.lineTo(ox, cv.height); ctx.stroke();
+    if (unit) { const [ux] = toPx(v, 1, 0, cv); ctx.setLineDash([5, 5]); ctx.beginPath(); ctx.arc(ox, oy, ux - ox, 0, Math.PI * 2); ctx.stroke(); ctx.setLineDash([]); }
+    ctx.fillStyle = css(fig, "--mid"); ctx.font = "15px sans-serif"; ctx.textAlign = "right";
+    ctx.fillText("横：実軸", cv.width - 8, oy - 8); ctx.textAlign = "left"; ctx.fillText("縦：虚軸", ox + 8, 18);
+    ctx.textAlign = "center"; [-1, 1].forEach((k) => { const [px] = toPx(v, k, 0, cv); ctx.fillText(k < 0 ? "−1" : "1", px, oy + 20); const [, py] = toPx(v, 0, k, cv); ctx.fillText(k < 0 ? "−i" : "i", ox - 14, py + 5); });
+    return [ox, oy];
+  }
+  function drawCplx() {
+    if (!cplx) return;
+    const cv = document.getElementById("jp-cplx-cv"), ctx = cv.getContext("2d");
+    const [ox, oy] = axes(cplx, ctx, cv, PV, false), [px, py] = toPx(PV, CZ.re, CZ.im, cv);
+    ctx.strokeStyle = css(cplx, "--navy"); ctx.setLineDash([4, 4]); ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(px, py); ctx.lineTo(px, oy); ctx.moveTo(px, py); ctx.lineTo(ox, py); ctx.stroke(); ctx.setLineDash([]);
+    ctx.lineWidth = 3; ctx.strokeStyle = css(cplx, "--gold"); ctx.beginPath(); ctx.moveTo(ox, oy); ctx.lineTo(px, oy); ctx.stroke();
+    ctx.strokeStyle = css(cplx, "--coral"); ctx.beginPath(); ctx.moveTo(px, oy); ctx.lineTo(px, py); ctx.stroke();
+    ctx.fillStyle = css(cplx, "--navy"); dot(ctx, px, py, 7);
+    ctx.font = "16px sans-serif"; ctx.textAlign = "left"; ctx.fillText("z", px + 10, py - 8);
+    document.getElementById("jp-cplx-out").textContent = "z = " + nf2(CZ.re) + (CZ.im < 0 ? " − " : " + ") + nf2(Math.abs(CZ.im)) + "i　（横に " + nf2(CZ.re) + "、縦に " + nf2(CZ.im) + "）";
+  }
+  const nf2 = (v) => (v < 0 ? "−" : "") + Math.abs(v).toFixed(2);
+  if (cplx) document.getElementById("jp-cplx-cv").addEventListener("click", (e) => { CZ = fromPx(PV, e, e.currentTarget); drawCplx(); });
+
+  /* ---- 7) 二乗と、c を足すこと（#jp-sq）：クリックした z の、z²・z² + c と、−z ---- */
+  const sq = document.getElementById("jp-sq");
+  let SQ = { z: { re: 1.0, im: 0.5 }, c: { re: 0, im: 0 }, neg: false };
+  function drawSq() {
+    if (!sq) return;
+    const cv = document.getElementById("jp-sq-cv"), ctx = cv.getContext("2d");
+    const [ox, oy] = axes(sq, ctx, cv, PV, true), z = SQ.z, z2 = { re: z.re * z.re - z.im * z.im, im: 2 * z.re * z.im }, w = { re: z2.re + SQ.c.re, im: z2.im + SQ.c.im };
+    const r1 = Math.hypot(z.re, z.im), a1 = Math.atan2(z.im, z.re);
+    const [zx, zy] = toPx(PV, z.re, z.im, cv), [qx, qy] = toPx(PV, z2.re, z2.im, cv), [wx, wy] = toPx(PV, w.re, w.im, cv);
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = css(sq, "--navy"); ctx.beginPath(); ctx.moveTo(ox, oy); ctx.lineTo(zx, zy); ctx.stroke();
+    ctx.strokeStyle = css(sq, "--coral"); ctx.beginPath(); ctx.moveTo(ox, oy); ctx.lineTo(qx, qy); ctx.stroke();
+    const R0 = 26; ctx.lineWidth = 2;
+    ctx.strokeStyle = css(sq, "--navy"); ctx.beginPath(); ctx.arc(ox, oy, R0, 0, -a1, a1 > 0); ctx.stroke();
+    ctx.strokeStyle = css(sq, "--coral"); ctx.beginPath(); ctx.arc(ox, oy, R0 + 10, 0, -2 * a1, a1 > 0); ctx.stroke();
+    if (SQ.neg) {
+      const [nx, ny] = toPx(PV, -z.re, -z.im, cv); ctx.strokeStyle = css(sq, "--navy"); ctx.setLineDash([4, 4]); ctx.beginPath(); ctx.moveTo(ox, oy); ctx.lineTo(nx, ny); ctx.stroke(); ctx.setLineDash([]);
+      ctx.fillStyle = css(sq, "--navy"); dot(ctx, nx, ny, 6); ctx.font = "16px sans-serif"; ctx.fillText("−z", nx + 10, ny - 8);
+    }
+    if (SQ.c.re || SQ.c.im) {
+      ctx.strokeStyle = css(sq, "--gold"); ctx.lineWidth = 2.5; ctx.beginPath(); ctx.moveTo(qx, qy); ctx.lineTo(wx, wy); ctx.stroke();
+      const ang = Math.atan2(wy - qy, wx - qx); ctx.fillStyle = css(sq, "--gold"); ctx.beginPath(); ctx.moveTo(wx, wy); ctx.lineTo(wx - 12 * Math.cos(ang - 0.4), wy - 12 * Math.sin(ang - 0.4)); ctx.lineTo(wx - 12 * Math.cos(ang + 0.4), wy - 12 * Math.sin(ang + 0.4)); ctx.fill();
+      dot(ctx, wx, wy, 6); ctx.font = "16px sans-serif"; ctx.fillText("z² + c", wx + 10, wy + 18);
+    }
+    ctx.fillStyle = css(sq, "--navy"); dot(ctx, zx, zy, 7); ctx.font = "16px sans-serif"; ctx.textAlign = "left"; ctx.fillText("z", zx + 10, zy - 8);
+    ctx.fillStyle = css(sq, "--coral"); dot(ctx, qx, qy, 7); ctx.fillText("z²", qx + 10, qy - 8);
+    const deg = (a) => Math.round(((a * 180) / Math.PI + 360) % 360);
+    let t = "z：角度 " + deg(a1) + "°・原点からの距離 " + r1.toFixed(2) + "\nz²：角度 " + deg(2 * a1) + "°（二倍）・距離 " + (r1 * r1).toFixed(2) + "（二乗）";
+    t += r1 < 0.98 ? "　距離 1 の円（点線）の内側なので、二乗すると原点に近づく" : r1 > 1.02 ? "　距離 1 の円（点線）の外側なので、二乗すると原点から遠ざかる" : "　ほぼ円の上なので、距離はほとんど変わらない";
+    if (SQ.neg) t += "\n−z（z を原点の反対側へ回したもの）も、二乗すると同じ z² に行く";
+    if (SQ.c.re || SQ.c.im) t += "\n+ c：z² を、同じ向きに同じだけずらす（c = " + nf2(SQ.c.re) + (SQ.c.im < 0 ? " − " : " + ") + nf2(Math.abs(SQ.c.im)) + "i）";
+    document.getElementById("jp-sq-out").textContent = t;
+  }
+  if (sq) {
+    document.getElementById("jp-sq-cv").addEventListener("click", (e) => { SQ.z = fromPx(PV, e, e.currentTarget); drawSq(); });
+    const nb = document.getElementById("jp-sq-neg"); nb.addEventListener("click", () => { SQ.neg = !SQ.neg; nb.setAttribute("aria-pressed", String(SQ.neg)); drawSq(); });
+    sq.querySelectorAll("[data-sqc]").forEach((b) => b.addEventListener("click", () => {
+      const [a, i] = b.dataset.sqc.split(",").map(Number); SQ.c = { re: a, im: i };
+      sq.querySelectorAll("[data-sqc]").forEach((x) => x.setAttribute("aria-pressed", String(x === b))); drawSq();
+    }));
+  }
+
+  function all() { drawFixed(); drawLab(); drawBig(); drawFold(); drawRec(); drawCplx(); drawSq(); }
   all();
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", all);
   new MutationObserver(all).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });

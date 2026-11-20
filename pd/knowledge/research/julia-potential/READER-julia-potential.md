@@ -61,7 +61,20 @@
 
 <a id="jp-recurrence"></a>見立ての一つ目は、「漸化式は起業家のよう」です。まず、漸化式とは何かから見ます。
 
-漸化式は、数の並びの各項を、それより前の項から決める式です。`z → z² + c` なら、いまの値 `z` を二乗して `c` を足したものが、次の値になります。出てきた値に、また同じことをします。同じ決まりを、自分が出した結果にくり返し当てていくので、反復とも、再帰的とも言われます。
+漸化式は、数の並びの次の値を、一つ前の値から決める決まりです。たとえば「2 倍する」と決めて 1 から始めると、1、2、4、8 と進みます。出てきた値に、また同じ決まりを当てます。下の図で、決まりとはじめの値を選んで、一歩ずつ進めてみてください。
+
+<figure class="glow-card reader-figure jp-fig" id="jp-rec">
+<p class="jp-fig__label">漸化式：前の値に決まりを当てて、次の値を出す（「一歩進める」をクリック）</p>
+<canvas id="jp-rec-cv" width="640" height="190" aria-label="−4 から 4 までの数直線。はじめの値から、決まりを当てるたびに、次の値へ弧を描いて跳ぶ"></canvas>
+<p class="jp-fig__readout jp-fig__readout--pre" id="jp-rec-chain">a₀ = 1</p>
+<p class="jp-fig__readout" id="jp-rec-out">図はページの中の JavaScript で描きます。</p>
+<div class="jp-fig__btns" role="group" aria-label="決まり"><button type="button" data-rule="double" aria-pressed="true">2 倍する</button><button type="button" data-rule="half" aria-pressed="false">半分にする</button><button type="button" data-rule="square" aria-pressed="false">二乗する</button><button type="button" data-rule="sqm1" aria-pressed="false">二乗して −1 を足す</button></div>
+<div class="jp-fig__sliders"><label class="jp-fig__slider">はじめの値 a₀<output id="jp-rec-a0-out">1</output><input type="range" id="jp-rec-a0" min="-2" max="2" step="0.1" value="1"></label></div>
+<div class="jp-fig__btns"><button type="button" id="jp-rec-reset">最初から</button><button type="button" id="jp-rec-step">一歩進める</button><button type="button" id="jp-rec-play" aria-pressed="false">再生</button></div>
+<figcaption>a₀、a₁、a₂ … は、はじめの値、一歩目の値、二歩目の値 … です。「二乗する」は、はじめの値が −1 と 1 のあいだなら 0 に寄り、その外なら限りなく大きくなります。「二乗して −1 を足す」を 0 から始めると、0 と −1 を行き来して、遠くへ行きません。このページの式 <code>z → z² + c</code> は、この「二乗して足す」を、平面の上の数でするものです。</figcaption>
+</figure>
+
+`z → z² + c` も同じ形の決まりです。いまの値 `z` を二乗して `c` を足したものが、次の値になります。出てきた値に、また同じことをします。同じ決まりを、自分が出した結果にくり返し当てていくので、反復とも、再帰的とも言われます。
 
 <details><summary>詳しく — 漸化式・反復・再帰という言葉</summary>
 
@@ -128,7 +141,17 @@ pjdhiro がリアルオプションの話題で挙げた決定ツリーは、こ
 
 <strong>pjdhiro の見方：</strong>思想やDNAというものが何でもいいけど、実軸や認知できるものだけを切り取った概念じゃないか？波間の渦のように、渦以外の波の存在が抜けてるのではないか？というのが認知し得ない面
 
-この見方を受けて、`z` を、起業家の思考・心理・行動と仮に置きます。気づくことも、決めることも、ここに入るものとします。`z` は平面の上の一点で、横の軸（実軸）と縦の軸（虚軸）の二つの成分を持ちます。横の軸に認知できるもの、縦の軸に認知し得ないものを当ててみます。「波間の渦」の渦と波は、「[創造とは](../cs/)」が創造の五つの段（場・波・縁・渦・束）に置く語です。
+この見方を受けて、`z` を、起業家の思考・心理・行動と仮に置きます。気づくことも、決めることも、ここに入るものとします。
+
+`z` は、ふつうの数ではなく、平面の上の一点で表す数（複素数）です。ふつうの数は、一本の数直線の上に並びます。複素数は、横の向き（実軸）に加えて、縦の向き（虚軸）にも広がります。横に `x`、縦に `y` 進んだ点を `x + yi` と書きます。`i` は、二乗すると −1 になる数で、縦の向きの 1 目盛りを表します。
+
+<figure class="glow-card reader-figure jp-fig" id="jp-cplx">
+<div class="jp-fig__grid jp-fig__grid--one"><div class="jp-fig__panel"><p class="jp-fig__label">平面の上の数：図をクリックすると、その点が z になる</p><canvas id="jp-cplx-cv" width="480" height="480" aria-label="横の軸（実軸）と縦の軸（虚軸）の平面。クリックした点 z から、横の成分と縦の成分の線が引かれる"></canvas></div></div>
+<p class="jp-fig__readout" id="jp-cplx-out">図はページの中の JavaScript で描きます。</p>
+<figcaption>金色の線が横の成分（実軸の向き）、赤の線が縦の成分（虚軸の向き）です。一つの点が、二つの成分を一度に持ちます。</figcaption>
+</figure>
+
+`z` は、このように横の軸（実軸）と縦の軸（虚軸）の二つの成分を持ちます。横の軸に認知できるもの、縦の軸に認知し得ないものを当ててみます。「波間の渦」の渦と波は、「[創造とは](../cs/)」が創造の五つの段（場・波・縁・渦・束）に置く語です。
 
 式の側から見ると、`z = x + iy` を二乗すると、`z² = (x² − y²) + 2ixy` になります。`x` を認知できる成分、`y` を認知し得ない成分と当てるなら、次の一歩の認知できる成分に、認知し得ない成分の二乗 `y²` が、引かれて入ってきます。認知し得ないものは、見えないまま、次に見えるものを変えているのかもしれません。
 
@@ -153,6 +176,14 @@ pjdhiro がリアルオプションの話題で挙げた決定ツリーは、こ
 <strong>pjdhiro の問い：</strong>zの二乗に当てはまる現実世界の起業家の行動が見つかるといいんだよね。心理面でも良いので。
 
 二乗には、式の上で二つのはたらきがあります。一つは、平面の上の点を、原点から見た角度を二倍にし、原点からの距離を二乗にすることです。距離が 1 より小さい値はさらに小さく、1 より大きい値はさらに大きくなります。もう一つは、向きが逆の二つの値 `z` と `−z` を、同じ一つの値に送ることです（二対一）。二乗したあとの値からは、二つのどちらから来たのかが分かりません。
+
+<figure class="glow-card reader-figure jp-fig" id="jp-sq">
+<div class="jp-fig__grid jp-fig__grid--one"><div class="jp-fig__panel"><p class="jp-fig__label">二乗：図をクリックした点 z が、z² のどこへ行くか</p><canvas id="jp-sq-cv" width="480" height="480" aria-label="平面に、距離 1 の円が点線で描かれている。クリックした点 z と、その二乗 z² が、原点からの線と角度の弧で示される"></canvas></div></div>
+<p class="jp-fig__readout jp-fig__readout--pre" id="jp-sq-out">図はページの中の JavaScript で描きます。</p>
+<div class="jp-fig__btns"><button type="button" id="jp-sq-neg" aria-pressed="false">−z も見る（二対一）</button></div>
+<div class="jp-fig__btns" role="group" aria-label="c を足すか"><button type="button" data-sqc="0,0" aria-pressed="true">c を足さない</button><button type="button" data-sqc="-0.5,0.5" aria-pressed="false">c = −0.5 + 0.5i を足す</button></div>
+<figcaption>弧は、横の軸から測った角度です（青が z、赤が z²）。赤の弧は、いつも青の弧の二倍です。「−z も見る」をクリックすると、原点の反対側の点 −z が出ます。−z を二乗しても、同じ z² に行きます。「c を足す」をクリックすると、z² から、決まった向きに決まった長さだけずれた点（金色）が、次の値 z² + c です。</figcaption>
+</figure>
 
 pjdhiro は、二乗を、自分自身で自分自身を回すように進むこととして見ています。
 
