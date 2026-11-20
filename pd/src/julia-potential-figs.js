@@ -1,86 +1,53 @@
-// 読み物「神・愛・美と、ジュリア集合」の図。対話の作業ページ（漸化式を遡るたとえ・版 21）の図の計算と描き方を、そのまま移した。
+// 読み物「神・愛・美と、ジュリア集合」の図。計算と描き方は、対話の作業ページ（漸化式を遡るたとえ・版 21）の図のもの。
 // 外部のライブラリは使わず、canvas と素の JS で描く。色は図の枠（.jp-fig）に置いた CSS の変数から読む。
-// 1) 黄金角の図：① 平面の全体（前へ打った値＝赤、遡った点＝灰）、② ①の赤を不動点の周りで拡大、③ ひまわりの並べ方
-// 2) 力の地図（c の平面）と、その c で残る形（z の平面）。「遡った点を撒く」で ±√(z − c) の遡りを重ねる
+// 1) 固定の図（data-g）：② 黄金角の c の前へ打った値を不動点の周りで拡大、③ ひまわりの並べ方（第二部）
+// 2) 手を動かす図（#jp-lab）：c の地図を押して c を選ぶ／①を押して出発点を選ぶ／ボタン・スライダ／一歩ずつ・再生／塗り分けを重ねる
+// 3) 力の地図と、その c で残る形（#jp-mand・#jp-julia、章の畳み）
 (function () {
   const figs = document.querySelectorAll(".jp-fig");
   if (!figs.length) return;
   const css = (el, n) => getComputedStyle(el).getPropertyValue(n).trim();
   function hex(c) { c = c.replace("#", ""); if (c.length === 3) c = c.split("").map((x) => x + x).join(""); return [parseInt(c.slice(0, 2), 16), parseInt(c.slice(2, 4), 16), parseInt(c.slice(4, 6), 16)]; }
   function dot(ctx, px, py, rad) { ctx.beginPath(); ctx.arc(px, py, rad, 0, Math.PI * 2); ctx.fill(); }
+  const fmtC = (re, im) => re.toFixed(3) + (im < 0 ? " − " : " + ") + Math.abs(im).toFixed(3) + "i";
 
-  /* ---- 1) 黄金角の図：julia7-golden-three.py と同じ値で描く ---- */
-  // 一歩ごとの回る角度（度）と寄る倍率 r から、不動点の掛け率 λ = r·e^{iθ} を置き、c = λ/2 − λ²/4（不動点 z* = λ/2）を作る。
-  // 既定は作業ページと同じ黄金角（約 137.5°）と r = 0.97。スライダの付いた図（data-gctrl）だけが値を変える
+  // ---- 計算 ----
   const GOLDEN_DEG = 360 * (1 - (Math.sqrt(5) - 1) / 2);
-  function compute(deg, r) {
-    const A = (deg * Math.PI) / 180;
-    const lr = r * Math.cos(A), li = r * Math.sin(A);
-    const l2r = lr * lr - li * li, l2i = 2 * lr * li;
-    const cr = lr / 2 - l2r / 4, ci = li / 2 - l2i / 4, zsr = lr / 2, zsi = li / 2;
-    const fwd = [[0, 0]]; let x = 0, y = 0;
-    for (let n = 0; n < 500; n++) { const xx = x * x - y * y + cr; y = 2 * x * y + ci; x = xx; fwd.push([x, y]); }
-    const bwd = []; let seed = 12345; const rnd = () => { seed = (seed * 16807) % 2147483647; return seed / 2147483647; };
-    x = 0; y = 0;
-    for (let k = 0; k < 45000; k++) {
-      const wr = x - cr, wi = y - ci, m = Math.sqrt(Math.hypot(wr, wi)), a = Math.atan2(wi, wr) / 2;
-      x = m * Math.cos(a); y = m * Math.sin(a); if (rnd() < 0.5) { x = -x; y = -y; } if (k > 20) bwd.push([x, y]);
+  // 不動点の掛け率 λ = r·e^{iθ} から c = λ/2 − λ²/4（不動点 z* = λ/2）
+  function cFromAngle(deg, r) {
+    const A = (deg * Math.PI) / 180, lr = r * Math.cos(A), li = r * Math.sin(A);
+    return { re: lr / 2 - (lr * lr - li * li) / 4, im: li / 2 - (2 * lr * li) / 4 };
+  }
+  // c から、引き寄せうる不動点 z* = (1 − √(1 − 4c)) / 2 と、掛け率 λ = 2z*
+  function fixedPoint(c) {
+    const ar = 1 - 4 * c.re, ai = -4 * c.im, m = Math.hypot(ar, ai);
+    const sr = Math.sqrt((m + ar) / 2), si = Math.sign(ai || 1) * Math.sqrt(Math.max(0, (m - ar) / 2));
+    const zr = (1 - sr) / 2, zi = -si / 2, lr = 2 * zr, li = 2 * zi;
+    return { zr, zi, mod: Math.hypot(lr, li), deg: ((Math.atan2(li, lr) * 180) / Math.PI + 360) % 360 };
+  }
+  // 前へ：z₀ から z → z² + c を steps 歩。原点からの距離が 2 を超えたら、そこで止める
+  function forward(c, z0, steps) {
+    const pts = [[z0.re, z0.im]]; let x = z0.re, y = z0.im, escapedAt = 0;
+    for (let n = 1; n <= steps; n++) {
+      const xx = x * x - y * y + c.re; y = 2 * x * y + c.im; x = xx; pts.push([x, y]);
+      if (x * x + y * y > 4) { escapedAt = n; break; }
     }
-    return { deg, r, A, cr, ci, zsr, zsi, fwd, bwd };
+    return { pts, escapedAt };
   }
-  const DEFAULT = compute(GOLDEN_DEG, 0.97);
-  function clear(cv, bg) { const t = cv.getContext("2d"); t.fillStyle = bg; t.fillRect(0, 0, cv.width, cv.height); return t; }
-  function drawG1(cv, P) { // ① 平面の全体
-    const f = cv.closest(".jp-fig"), t = clear(cv, css(f, "--panel")), W = cv.width, s = W / 3.0, ox = W / 2, oy = W / 2;
-    t.fillStyle = css(f, "--mid"); t.globalAlpha = 0.6; P.bwd.forEach((p) => t.fillRect(ox + s * p[0], oy - s * p[1], 1, 1)); t.globalAlpha = 1;
-    t.fillStyle = css(f, "--coral"); P.fwd.forEach((p, i) => dot(t, ox + s * p[0], oy - s * p[1], Math.max(0.8, 2.4 - i / 150)));
-  }
-  function drawG2(cv, P) { // ② 不動点の周りで拡大（はみ出すときだけ縮める）
-    const f = cv.closest(".jp-fig"), t = clear(cv, css(f, "--panel")), W = cv.width, ox = W / 2, oy = W / 2;
-    const far = Math.max(...P.fwd.slice(1).map((p) => Math.hypot(p[0] - P.zsr, p[1] - P.zsi)));
-    const s = Math.min(W / 0.7, (W / 2 - 6) / far);
-    t.fillStyle = css(f, "--coral"); P.fwd.slice(1).forEach((p, i) => dot(t, ox + s * (p[0] - P.zsr), oy - s * (p[1] - P.zsi), i < 60 ? 2.8 : 1.7));
-  }
-  function drawG3(cv, P) { // ③ ひまわりの並べ方（同じ角度・距離 √n）
-    const f = cv.closest(".jp-fig"), t = clear(cv, css(f, "--panel")), W = cv.width, ox = W / 2, oy = W / 2;
-    t.fillStyle = css(f, "--gold"); const k = (W / 2 - 12) / Math.sqrt(500);
-    for (let n = 1; n < 500; n++) { const a = n * P.A, rad = k * Math.sqrt(n); dot(t, ox + rad * Math.cos(a), oy - rad * Math.sin(a), 2.3); }
-  }
-  const gState = new Map(); // 図の枠ごとの値
-  function drawFig(f) {
-    const P = gState.get(f) || DEFAULT;
-    f.querySelectorAll("canvas[data-g]").forEach((cv) => ({ 1: drawG1, 2: drawG2, 3: drawG3 })[cv.dataset.g](cv, P));
-    const out = f.querySelector("[data-gout]");
-    if (out) {
-      const b = P.ci;
-      out.textContent = "c = " + P.cr.toFixed(3) + (b < 0 ? " − " : " + ") + Math.abs(b).toFixed(3) + "i　一歩ごとに " + P.deg.toFixed(1) + "° 回り、" + P.r.toFixed(3) + " 倍に寄る";
+  // 遡る：w → ±√(w − c)。枝は毎回でたらめに選び、初めの 20 段は捨てる（作業ページと同じ種と手順）
+  function backward(c, count) {
+    const out = []; let seed = 12345; const rnd = () => { seed = (seed * 16807) % 2147483647; return seed / 2147483647; };
+    let x = 0, y = 0;
+    for (let k = 0; k < count + 21; k++) {
+      const wr = x - c.re, wi = y - c.im, m = Math.sqrt(Math.hypot(wr, wi)), a = Math.atan2(wi, wr) / 2;
+      x = m * Math.cos(a); y = m * Math.sin(a); if (rnd() < 0.5) { x = -x; y = -y; } if (k > 20) out.push([x, y]);
     }
+    return out;
   }
-  function drawGolden() { document.querySelectorAll(".jp-fig").forEach((f) => { if (f.querySelector("canvas[data-g]")) drawFig(f); }); }
-  document.querySelectorAll(".jp-fig[data-gctrl]").forEach((f) => {
-    const deg = f.querySelector("[data-gdeg]"), rr = f.querySelector("[data-gr]");
-    const dOut = f.querySelector("[data-gdeg-out]"), rOut = f.querySelector("[data-gr-out]");
-    let timer = 0;
-    const update = () => {
-      dOut.textContent = Number(deg.value).toFixed(1) + "°"; rOut.textContent = Number(rr.value).toFixed(3);
-      clearTimeout(timer);
-      timer = setTimeout(() => { gState.set(f, compute(Number(deg.value), Number(rr.value))); drawFig(f); }, 30);
-    };
-    deg.addEventListener("input", update); rr.addEventListener("input", update);
-    const reset = f.querySelector("[data-greset]");
-    // 黄金角に戻す：スライダの刻み（0.1°）に丸めず、黄金角そのもの（137.507…°）で描く
-    if (reset) reset.addEventListener("click", () => {
-      clearTimeout(timer); deg.value = GOLDEN_DEG.toFixed(1); rr.value = "0.97";
-      dOut.textContent = GOLDEN_DEG.toFixed(1) + "°"; rOut.textContent = "0.970";
-      gState.delete(f); drawFig(f);
-    });
-  });
-
-  /* ---- 2) 力の地図と、その c で残る形 ---- */
-  const mand = document.getElementById("jp-mand"), julia = document.getElementById("jp-julia");
-  let C = { re: -0.123, im: 0.745 }, showInv = false, mandImg = null;
-  const MV = { x0: -2.25, x1: 0.75, y0: -1.3, y1: 1.3 }, JV = { x0: -1.8, x1: 1.8, y0: -1.6, y1: 1.6 };
-  function paint(cv, view, fn, maxIt) {
+  function escM(cx, cy, m) { let a = 0, b = 0; for (let n = 0; n < m; n++) { const aa = a * a - b * b + cx; b = 2 * a * b + cy; a = aa; if (a * a + b * b > 4) return n; } return -1; }
+  const escJfor = (c) => (a, b, m) => { for (let n = 0; n < m; n++) { const aa = a * a - b * b + c.re; b = 2 * a * b + c.im; a = aa; if (a * a + b * b > 4) return n; } return -1; };
+  // 塗り分け（よくある絵）：平面の一つ一つの点を出発点にして、遠くへ行くまでの回数を色にする
+  function paint(cv, view, fn, maxIt, alpha) {
     const f = cv.closest(".jp-fig"), ctx = cv.getContext("2d"), W = cv.width, H = cv.height, img = ctx.createImageData(W, H);
     const S = hex(css(f, "--set")), A0 = hex(css(f, "--esc0")), B0 = hex(css(f, "--esc1"));
     for (let j = 0; j < H; j++) {
@@ -89,66 +56,188 @@
         const xx = view.x0 + (view.x1 - view.x0) * i / W;
         const n = fn(xx, yy, maxIt), k = (j * W + i) * 4; let col;
         if (n < 0) col = S; else { const t = Math.min(1, Math.sqrt(n / maxIt) * 1.6); col = [A0[0] + (B0[0] - A0[0]) * t, A0[1] + (B0[1] - A0[1]) * t, A0[2] + (B0[2] - A0[2]) * t]; }
-        img.data[k] = col[0]; img.data[k + 1] = col[1]; img.data[k + 2] = col[2]; img.data[k + 3] = 255;
+        img.data[k] = col[0]; img.data[k + 1] = col[1]; img.data[k + 2] = col[2]; img.data[k + 3] = alpha == null ? 255 : alpha;
       }
     }
-    ctx.putImageData(img, 0, 0); return ctx;
+    return img;
   }
-  function escM(cx, cy, m) { let a = 0, b = 0; for (let n = 0; n < m; n++) { const aa = a * a - b * b + cx; b = 2 * a * b + cy; a = aa; if (a * a + b * b > 4) return n; } return -1; }
-  function escJ(a, b, m) { for (let n = 0; n < m; n++) { const aa = a * a - b * b + C.re; b = 2 * a * b + C.im; a = aa; if (a * a + b * b > 4) return n; } return -1; }
-  function toPx(v, px, py, cv) { return [(px - v.x0) / (v.x1 - v.x0) * cv.width, (v.y1 - py) / (v.y1 - v.y0) * cv.height]; }
-  function drawMand() { const ctx = paint(mand, MV, escM, 90); mandImg = ctx.getImageData(0, 0, mand.width, mand.height); markC(); }
-  function markC() {
-    const f = mand.closest(".jp-fig"), ctx = mand.getContext("2d"); if (mandImg) ctx.putImageData(mandImg, 0, 0);
-    const [px, py] = toPx(MV, C.re, C.im, mand); ctx.strokeStyle = css(f, "--coral"); ctx.lineWidth = 3;
-    ctx.beginPath(); ctx.arc(px, py, 9, 0, Math.PI * 2); ctx.stroke();
-    ctx.strokeStyle = css(f, "--mid"); ctx.lineWidth = 1; ctx.globalAlpha = 0.5; const [ax, ay] = toPx(MV, 0, 0, mand);
-    ctx.beginPath(); ctx.moveTo(0, ay); ctx.lineTo(mand.width, ay); ctx.moveTo(ax, 0); ctx.lineTo(ax, mand.height); ctx.stroke(); ctx.globalAlpha = 1;
-  }
-  function drawJulia() {
-    const f = julia.closest(".jp-fig"), ctx = paint(julia, JV, escJ, 110);
-    if (showInv) {
-      ctx.fillStyle = css(f, "--coral"); let zr = 1.3, zi = 0.9; let sd = 7; const rd = () => { sd = (sd * 16807) % 2147483647; return sd / 2147483647; };
-      for (let k = 0; k < 9000; k++) {
-        const wr = zr - C.re, wi = zi - C.im; const rr = Math.sqrt(Math.hypot(wr, wi)), a = Math.atan2(wi, wr) / 2;
-        zr = rr * Math.cos(a); zi = rr * Math.sin(a); if (rd() < 0.5) { zr = -zr; zi = -zi; }
-        if (k > 30) { const [px, py] = toPx(JV, zr, zi, julia); ctx.fillRect(px - 1, py - 1, 2.2, 2.2); }
+  const toPx = (v, px, py, cv) => [(px - v.x0) / (v.x1 - v.x0) * cv.width, (v.y1 - py) / (v.y1 - v.y0) * cv.height];
+  const fromPx = (v, e, cv) => { const r = cv.getBoundingClientRect(); return { re: v.x0 + (v.x1 - v.x0) * (e.clientX - r.left) / r.width, im: v.y1 - (v.y1 - v.y0) * (e.clientY - r.top) / r.height }; };
+  const MV = { x0: -2.25, x1: 0.75, y0: -1.3, y1: 1.3 };
+
+  /* ---- 1) 固定の図（第二部の ②③）：黄金角・r = 0.97 ---- */
+  const G = (() => { const c = cFromAngle(GOLDEN_DEG, 0.97); const fp = fixedPoint(c); return { c, fp, fwd: forward(c, { re: 0, im: 0 }, 500).pts }; })();
+  function drawFixed() {
+    document.querySelectorAll("canvas[data-g]").forEach((cv) => {
+      const f = cv.closest(".jp-fig"), t = cv.getContext("2d"), W = cv.width, ox = W / 2, oy = W / 2;
+      t.fillStyle = css(f, "--panel"); t.fillRect(0, 0, W, cv.height);
+      if (cv.dataset.g === "2") {
+        const s = W / 0.7; t.fillStyle = css(f, "--coral");
+        G.fwd.slice(1).forEach((p, i) => dot(t, ox + s * (p[0] - G.fp.zr), oy - s * (p[1] - G.fp.zi), i < 60 ? 2.8 : 1.7));
+      } else {
+        t.fillStyle = css(f, "--gold"); const k = (W / 2 - 12) / Math.sqrt(500), A = (GOLDEN_DEG * Math.PI) / 180;
+        for (let n = 1; n < 500; n++) { const a = n * A, rad = k * Math.sqrt(n); dot(t, ox + rad * Math.cos(a), oy - rad * Math.sin(a), 2.3); }
       }
-    }
-    const n = escM(C.re, C.im, 2000), b = C.im;
-    document.getElementById("jp-readout").textContent = "c = " + C.re.toFixed(3) + (b < 0 ? " − " : " + ") + Math.abs(b).toFixed(3) + "i　0 から c だけを足し続けると：" + (n < 0 ? "残る（形はひとつながり）" : n + 1 + " 段で大きさ 2 を超える（形はかけらに散る）");
+    });
   }
-  function drawMap() { if (mand && julia) { drawMand(); drawJulia(); } }
+
+  /* ---- 2) 手を動かす図 ---- */
+  const lab = document.getElementById("jp-lab");
+  let drawLab = () => {};
+  if (lab) {
+    const $ = (id) => document.getElementById(id);
+    const cvC = $("jp-lab-c"), cv1 = $("jp-lab-1"), cv2 = $("jp-lab-2"), out = $("jp-lab-out");
+    const sDeg = $("jp-lab-deg"), sR = $("jp-lab-r"), sRe = $("jp-lab-re"), sIm = $("jp-lab-im"), sN = $("jp-lab-n"), sB = $("jp-lab-b");
+    const PV = { x0: -1.5, x1: 1.5, y0: -1.5, y1: 1.5 };
+    const st = { c: cFromAngle(GOLDEN_DEG, 0.97), z0: { re: 0, im: 0 }, n: 500, nb: 45000, bg: false, playing: false };
+    let mapImg = null, bgImg = null, bwd = [], fwd = { pts: [], escapedAt: 0 }, playTimer = 0, slowTimer = 0;
+
+    const setOut = (id, v) => { const o = lab.querySelector(`output[for="${id}"]`); if (o) o.textContent = v; };
+    function syncSliders() {
+      sRe.value = st.c.re.toFixed(3); sIm.value = st.c.im.toFixed(3);
+      setOut("jp-lab-re", st.c.re.toFixed(3)); setOut("jp-lab-im", st.c.im.toFixed(3));
+      const fp = fixedPoint(st.c);
+      if (fp.mod < 1) { sDeg.value = fp.deg.toFixed(1); sR.value = fp.mod.toFixed(3); setOut("jp-lab-deg", fp.deg.toFixed(1) + "°"); setOut("jp-lab-r", fp.mod.toFixed(3)); }
+      else { setOut("jp-lab-deg", "—"); setOut("jp-lab-r", "—"); }
+      sN.value = st.n; setOut("jp-lab-n", String(st.n)); sB.value = st.nb; setOut("jp-lab-b", String(st.nb));
+    }
+    // c が変わったときだけ、重い計算（遡り・塗り分け）をやり直す
+    function recompute() {
+      bwd = backward(st.c, 45000);
+      fwd = forward(st.c, st.z0, 500);
+      bgImg = st.bg ? paint(cv1, PV, escJfor(st.c), 80, 110) : null;
+    }
+    function drawMap() {
+      const f = lab, ctx = cvC.getContext("2d");
+      if (!mapImg) mapImg = paint(cvC, MV, escM, 90);
+      ctx.putImageData(mapImg, 0, 0);
+      const [px, py] = toPx(MV, st.c.re, st.c.im, cvC);
+      ctx.strokeStyle = css(f, "--coral"); ctx.lineWidth = 3; ctx.beginPath(); ctx.arc(px, py, 8, 0, Math.PI * 2); ctx.stroke();
+    }
+    function draw1() {
+      const f = lab, t = cv1.getContext("2d"), W = cv1.width, H = cv1.height;
+      t.fillStyle = css(f, "--panel"); t.fillRect(0, 0, W, H);
+      if (bgImg) { const off = document.createElement("canvas"); off.width = W; off.height = H; off.getContext("2d").putImageData(bgImg, 0, 0); t.drawImage(off, 0, 0); }
+      t.strokeStyle = css(f, "--line"); t.lineWidth = 1; const [ax, ay] = toPx(PV, 0, 0, cv1);
+      t.beginPath(); t.moveTo(0, ay); t.lineTo(W, ay); t.moveTo(ax, 0); t.lineTo(ax, H); t.stroke();
+      t.fillStyle = css(f, "--mid"); t.globalAlpha = 0.6;
+      for (let k = 0; k < Math.min(st.nb, bwd.length); k++) { const [x, y] = toPx(PV, bwd[k][0], bwd[k][1], cv1); t.fillRect(x, y, 1, 1); }
+      t.globalAlpha = 1;
+      const shown = fwd.pts.slice(0, st.n + 1);
+      t.strokeStyle = css(f, "--coral"); t.globalAlpha = 0.35; t.lineWidth = 1; t.beginPath();
+      shown.forEach((p, i) => { const [x, y] = toPx(PV, p[0], p[1], cv1); i ? t.lineTo(x, y) : t.moveTo(x, y); }); t.stroke(); t.globalAlpha = 1;
+      t.fillStyle = css(f, "--coral"); shown.forEach((p, i) => { const [x, y] = toPx(PV, p[0], p[1], cv1); dot(t, x, y, Math.max(0.8, 2.4 - i / 150)); });
+      const [zx, zy] = toPx(PV, st.z0.re, st.z0.im, cv1); t.strokeStyle = css(f, "--navy"); t.lineWidth = 2; t.beginPath(); t.arc(zx, zy, 6, 0, Math.PI * 2); t.stroke();
+      if (shown.length > 1) { const p = shown[shown.length - 1], [x, y] = toPx(PV, p[0], p[1], cv1); t.fillStyle = css(f, "--navy"); dot(t, x, y, 4); }
+    }
+    function draw2() {
+      const f = lab, t = cv2.getContext("2d"), W = cv2.width, ox = W / 2, oy = cv2.height / 2;
+      t.fillStyle = css(f, "--panel"); t.fillRect(0, 0, W, cv2.height);
+      const fp = fixedPoint(st.c), pts = fwd.pts.slice(1, st.n + 1);
+      if (!pts.length) return;
+      let cx = 0, cy = 0;
+      if (fp.mod < 1 && !fwd.escapedAt) { cx = fp.zr; cy = fp.zi; }
+      const far = Math.max(1e-6, ...pts.map((p) => Math.hypot(p[0] - cx, p[1] - cy)));
+      const s = Math.min(W / 0.7, (W / 2 - 8) / far);
+      t.fillStyle = css(f, "--coral"); pts.forEach((p, i) => dot(t, ox + s * (p[0] - cx), oy - s * (p[1] - cy), i < 60 ? 2.8 : 1.7));
+      if (fp.mod < 1 && !fwd.escapedAt) { t.strokeStyle = css(f, "--navy"); t.lineWidth = 1.5; t.beginPath(); t.arc(ox, oy, 5, 0, Math.PI * 2); t.stroke(); }
+    }
+    function readout() {
+      const fp = fixedPoint(st.c), n = Math.min(st.n, fwd.pts.length - 1), p = fwd.pts[n];
+      let s = "c = " + fmtC(st.c.re, st.c.im) + "　出発点 z₀ = " + fmtC(st.z0.re, st.z0.im) + "\n" + n + " 歩目：z = " + fmtC(p[0], p[1]) + "（原点からの距離 " + Math.hypot(p[0], p[1]).toFixed(3) + "）\n";
+      if (fwd.escapedAt) s += fwd.escapedAt + " 歩目に原点からの距離が 2 を超え、外へ出ます（発散）。";
+      else if (fp.mod < 1) s += "寄る一点 z* = " + fmtC(fp.zr, fp.zi) + "。その近くでは、一歩ごとに " + fp.deg.toFixed(1) + "° 回り、" + fp.mod.toFixed(3) + " 倍に寄ります。";
+      else s += "500 歩で外へ出ませんが、この c は大きなハート形の外か縁にあり、一点の周りを同じ角度で回りながら寄る形にはなりません。";
+      out.textContent = s;
+    }
+    drawLab = () => { mapImg = null; recompute(); drawMap(); draw1(); draw2(); readout(); };
+    const redrawLight = () => { draw1(); draw2(); readout(); };
+    const setC = (c, keepZ0) => { st.c = c; st.n = 500; if (!keepZ0) st.z0 = { re: 0, im: 0 }; syncSliders(); clearTimeout(slowTimer); slowTimer = setTimeout(() => { recompute(); drawMap(); redrawLight(); }, 30); };
+    const stopPlay = () => { st.playing = false; clearTimeout(playTimer); const b = $("jp-lab-play"); b.setAttribute("aria-pressed", "false"); b.textContent = "再生"; };
+
+    // 図を押してパラメータを決める
+    cvC.addEventListener("click", (e) => { stopPlay(); setC(fromPx(MV, e, cvC)); });
+    cv1.addEventListener("click", (e) => { stopPlay(); st.z0 = fromPx(PV, e, cv1); fwd = forward(st.c, st.z0, 500); redrawLight(); });
+    // 決まった c
+    lab.querySelectorAll("[data-lc]").forEach((b) => b.addEventListener("click", () => {
+      stopPlay(); const v = b.dataset.lc;
+      if (v === "golden") setC(cFromAngle(GOLDEN_DEG, 0.97)); else { const [a, i] = v.split(",").map(Number); setC({ re: a, im: i }); }
+    }));
+    // スライダ
+    const onAngle = () => { stopPlay(); setC(cFromAngle(Number(sDeg.value), Number(sR.value))); };
+    sDeg.addEventListener("input", onAngle); sR.addEventListener("input", onAngle);
+    const onC = () => { stopPlay(); setC({ re: Number(sRe.value), im: Number(sIm.value) }); };
+    sRe.addEventListener("input", onC); sIm.addEventListener("input", onC);
+    sN.addEventListener("input", () => { stopPlay(); st.n = Number(sN.value); setOut("jp-lab-n", String(st.n)); redrawLight(); });
+    sB.addEventListener("input", () => { st.nb = Number(sB.value); setOut("jp-lab-b", String(st.nb)); redrawLight(); });
+    // 一歩ずつ・再生
+    $("jp-lab-step").addEventListener("click", () => { stopPlay(); st.n = Math.min(500, st.n + 1); syncSliders(); redrawLight(); });
+    $("jp-lab-reset").addEventListener("click", () => { stopPlay(); st.n = 0; syncSliders(); redrawLight(); });
+    $("jp-lab-z0").addEventListener("click", () => { stopPlay(); st.z0 = { re: 0, im: 0 }; fwd = forward(st.c, st.z0, 500); redrawLight(); });
+    $("jp-lab-play").addEventListener("click", (e) => {
+      if (st.playing) { stopPlay(); return; }
+      st.playing = true; e.currentTarget.setAttribute("aria-pressed", "true"); e.currentTarget.textContent = "止める";
+      if (st.n >= Math.min(500, fwd.pts.length - 1)) st.n = 0;
+      const tick = () => {
+        if (!st.playing) return;
+        st.n = Math.min(500, st.n + 1); syncSliders(); redrawLight();
+        if (st.n >= Math.min(500, fwd.pts.length - 1)) { stopPlay(); return; }
+        playTimer = setTimeout(tick, st.n < 60 ? 120 : 30);
+      };
+      tick();
+    });
+    // 塗り分けを重ねる
+    $("jp-lab-bg").addEventListener("click", (e) => {
+      st.bg = !st.bg; e.currentTarget.setAttribute("aria-pressed", String(st.bg));
+      bgImg = st.bg ? paint(cv1, PV, escJfor(st.c), 80, 110) : null; redrawLight();
+    });
+    syncSliders();
+  }
+
+  /* ---- 3) 力の地図と、その c で残る形（畳みの図） ---- */
+  const mand = document.getElementById("jp-mand"), julia = document.getElementById("jp-julia");
+  let drawBig = () => {};
   if (mand && julia) {
-    // c の実部・虚部のスライダ。地図を押したとき・例のボタンのときも、スライダを同じ値に揃える
+    let C = { re: -0.123, im: 0.745 }, showInv = false, mandImg = null;
+    const JV = { x0: -1.8, x1: 1.8, y0: -1.6, y1: 1.6 };
+    const markC = () => {
+      const f = mand.closest(".jp-fig"), ctx = mand.getContext("2d"); if (mandImg) ctx.putImageData(mandImg, 0, 0);
+      const [px, py] = toPx(MV, C.re, C.im, mand); ctx.strokeStyle = css(f, "--coral"); ctx.lineWidth = 3;
+      ctx.beginPath(); ctx.arc(px, py, 9, 0, Math.PI * 2); ctx.stroke();
+      ctx.strokeStyle = css(f, "--mid"); ctx.lineWidth = 1; ctx.globalAlpha = 0.5; const [ax, ay] = toPx(MV, 0, 0, mand);
+      ctx.beginPath(); ctx.moveTo(0, ay); ctx.lineTo(mand.width, ay); ctx.moveTo(ax, 0); ctx.lineTo(ax, mand.height); ctx.stroke(); ctx.globalAlpha = 1;
+    };
+    const drawJulia = () => {
+      const f = julia.closest(".jp-fig"), ctx = julia.getContext("2d");
+      ctx.putImageData(paint(julia, JV, escJfor(C), 110), 0, 0);
+      if (showInv) {
+        ctx.fillStyle = css(f, "--coral"); let zr = 1.3, zi = 0.9; let sd = 7; const rd = () => { sd = (sd * 16807) % 2147483647; return sd / 2147483647; };
+        for (let k = 0; k < 9000; k++) {
+          const wr = zr - C.re, wi = zi - C.im; const rr = Math.sqrt(Math.hypot(wr, wi)), a = Math.atan2(wi, wr) / 2;
+          zr = rr * Math.cos(a); zi = rr * Math.sin(a); if (rd() < 0.5) { zr = -zr; zi = -zi; }
+          if (k > 30) { const [px, py] = toPx(JV, zr, zi, julia); ctx.fillRect(px - 1, py - 1, 2.2, 2.2); }
+        }
+      }
+      const n = escM(C.re, C.im, 2000);
+      document.getElementById("jp-readout").textContent = "c = " + fmtC(C.re, C.im) + "　0 から c だけを足し続けると：" + (n < 0 ? "残る（形はひとつながり）" : n + 1 + " 段で大きさ 2 を超える（形はかけらに散る）");
+    };
+    drawBig = () => { mandImg = paint(mand, MV, escM, 90); markC(); drawJulia(); };
     const sRe = document.getElementById("jp-cre"), sIm = document.getElementById("jp-cim");
     const oRe = document.getElementById("jp-cre-out"), oIm = document.getElementById("jp-cim-out");
-    const syncSliders = () => {
-      if (!sRe) return;
-      sRe.value = C.re.toFixed(3); sIm.value = C.im.toFixed(3);
-      oRe.textContent = C.re.toFixed(3); oIm.textContent = C.im.toFixed(3);
-    };
-    const setC = (nc) => { C = nc; syncSliders(); markC(); drawJulia(); };
-    mand.addEventListener("click", (e) => {
-      const rc = mand.getBoundingClientRect();
-      setC({ re: MV.x0 + (MV.x1 - MV.x0) * (e.clientX - rc.left) / rc.width, im: MV.y1 - (MV.y1 - MV.y0) * (e.clientY - rc.top) / rc.height });
-    });
+    const sync = () => { if (!sRe) return; sRe.value = C.re.toFixed(3); sIm.value = C.im.toFixed(3); oRe.textContent = C.re.toFixed(3); oIm.textContent = C.im.toFixed(3); };
+    const setC = (nc) => { C = nc; sync(); markC(); drawJulia(); };
+    mand.addEventListener("click", (e) => setC(fromPx(MV, e, mand)));
     document.querySelectorAll("[data-jc]").forEach((b) => b.addEventListener("click", () => { const [a, i] = b.dataset.jc.split(",").map(Number); setC({ re: a, im: i }); }));
     if (sRe) {
       let t = 0;
-      const onSlide = () => {
-        C = { re: Number(sRe.value), im: Number(sIm.value) };
-        oRe.textContent = C.re.toFixed(3); oIm.textContent = C.im.toFixed(3);
-        clearTimeout(t); t = setTimeout(() => { markC(); drawJulia(); }, 30);
-      };
-      sRe.addEventListener("input", onSlide); sIm.addEventListener("input", onSlide);
-      syncSliders();
+      const onSlide = () => { C = { re: Number(sRe.value), im: Number(sIm.value) }; oRe.textContent = C.re.toFixed(3); oIm.textContent = C.im.toFixed(3); clearTimeout(t); t = setTimeout(() => { markC(); drawJulia(); }, 30); };
+      sRe.addEventListener("input", onSlide); sIm.addEventListener("input", onSlide); sync();
     }
     const inv = document.getElementById("jp-inv");
     inv.addEventListener("click", () => { showInv = !showInv; inv.setAttribute("aria-pressed", String(showInv)); drawJulia(); });
   }
 
-  function all() { drawGolden(); drawMap(); }
+  function all() { drawFixed(); drawLab(); drawBig(); }
   all();
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", all);
   new MutationObserver(all).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });

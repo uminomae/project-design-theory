@@ -90,6 +90,12 @@
       .jp-fig__btns button:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
       .jp-fig__btns button[aria-pressed="true"] { background: var(--navy); color: var(--panel); border-color: var(--navy); }
       .jp-fig__readout { font-size: .85rem; margin: .6rem 0 0; }
+      .jp-fig__readout--pre { white-space: pre-line; font-variant-numeric: tabular-nums; }
+      .jp-fig__grid--three { grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); }
+      .jp-fig__group { margin-top: .9rem; padding-top: .6rem; border-top: 1px solid var(--line); }
+      .jp-fig__glabel { margin: 0 0 .2rem; font-size: .8rem; letter-spacing: .04em; color: var(--mid); }
+      #jp-lab-c, #jp-lab-1 { cursor: crosshair; }
+      .jp-fig__btns button[aria-pressed="true"] { background: var(--navy); color: var(--panel); border-color: var(--navy); }
       .jp-fig__sliders { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; align-items: end; margin-top: .8rem; }
       .jp-fig__slider { display: grid; gap: .2rem; flex: 1 1 12rem; min-width: 0; font-size: .85rem; }
       .jp-fig__slider output { font-variant-numeric: tabular-nums; margin-left: .3rem; }
@@ -235,22 +241,46 @@ pjdhiro の今の答えは、四段の仮説です。一つ目、美は、美醜
 <p>力の地図（マンデルブロ集合）は、塗り分けと同じ計算を、<code>z₀</code> を 0 に決めて、<code>c</code> のほうを平面の一つ一つの点にして回したものです（章の終わりの畳み）。</p>
 </details>
 
-<figure class="glow-card reader-figure jp-fig" data-gctrl>
-<div class="jp-fig__grid">
-<div class="jp-fig__panel"><p class="jp-fig__label">① 平面の全体：前へ打った値（赤）と、遡った点（灰）</p><canvas data-g="1" width="420" height="420" aria-label="前へ打った値は一か所に渦のように集まり、遡った点はジュリア集合の縁を描く"></canvas></div>
-<div class="jp-fig__panel"><p class="jp-fig__label">② ①の赤を、不動点の周りで拡大</p><canvas data-g="2" width="420" height="420" aria-label="一歩ごとに 137.5 度回り、0.97 倍に縮む点の並び"></canvas></div>
+<figure class="glow-card reader-figure jp-fig" id="jp-lab">
+<div class="jp-fig__grid jp-fig__grid--three">
+<div class="jp-fig__panel"><p class="jp-fig__label">c を選ぶ（押すと c が変わる）</p><canvas id="jp-lab-c" width="300" height="260" aria-label="マンデルブロ集合。押した所が c になる"></canvas></div>
+<div class="jp-fig__panel"><p class="jp-fig__label">① 前へ打った値（赤）と、遡った点（灰）。押すと出発点が変わる</p><canvas id="jp-lab-1" width="420" height="420" aria-label="前へ打った値の軌跡と、遡った点の集まり。押した所が出発点になる"></canvas></div>
+<div class="jp-fig__panel"><p class="jp-fig__label">② ①の赤を、寄る一点の周りで拡大</p><canvas id="jp-lab-2" width="420" height="420" aria-label="前へ打った値を、寄っていく一点の周りで拡大した図"></canvas></div>
 </div>
+<p class="jp-fig__readout jp-fig__readout--pre" id="jp-lab-out">図はページの中の JavaScript で描きます。</p>
+<div class="jp-fig__group"><p class="jp-fig__glabel">決まった c で見る</p>
+<div class="jp-fig__btns"><button type="button" data-lc="golden">黄金角（137.5°）で回る c</button><button type="button" data-lc="-0.1248,0.6152">120° で回る c</button><button type="button" data-lc="0,0">c = 0（円）</button><button type="button" data-lc="-1,0">c = −1</button><button type="button" data-lc="-0.123,0.745">c = −0.12 + 0.75i</button><button type="button" data-lc="-0.8,0.156">c = −0.8 + 0.16i</button><button type="button" data-lc="0.3,0">c = 0.3（外へ出る）</button></div></div>
+<div class="jp-fig__group"><p class="jp-fig__glabel">一歩ずつ動かす</p>
+<div class="jp-fig__btns"><button type="button" id="jp-lab-reset">最初から</button><button type="button" id="jp-lab-step">一歩進める</button><button type="button" id="jp-lab-play" aria-pressed="false">再生</button><button type="button" id="jp-lab-z0">出発点を 0 に戻す</button><button type="button" id="jp-lab-bg" aria-pressed="false">よくある塗り分けを薄く重ねる</button></div>
 <div class="jp-fig__sliders">
-<label class="jp-fig__slider"><span>一歩ごとに回る角度 <output data-gdeg-out>137.5°</output></span><input type="range" data-gdeg min="0" max="360" step="0.1" value="137.5"></label>
-<label class="jp-fig__slider"><span>一歩ごとに寄る倍率 <output data-gr-out>0.970</output></span><input type="range" data-gr min="0.5" max="0.995" step="0.005" value="0.97"></label>
-<button type="button" data-greset>黄金角に戻す</button>
-</div>
-<p class="jp-fig__readout" data-gout>図はページの中の JavaScript で描きます。</p>
-<figcaption>① 前へは一か所に寄り（渦）、遡ると境目の形になる。② 一歩ごとに 137.5° 回り、0.97 倍に縮む。外ほど古い点。スライダで、回る角度と寄る倍率を変えると、その二つになる <code>c</code>（<code>c = λ/2 − λ²/4</code>、λ は倍率と角度を持つ数）で描き直します。前へは 0 から 500 歩、遡りは一段ごとに ±√(z − c) のどちらかをでたらめに選び、初めの 20 段を捨てて打った（計算は Claude）。</figcaption>
+<label class="jp-fig__slider"><span>表示する歩数 <output for="jp-lab-n">500</output></span><input type="range" id="jp-lab-n" min="0" max="500" step="1" value="500"></label>
+<label class="jp-fig__slider"><span>遡る点の数 <output for="jp-lab-b">45000</output></span><input type="range" id="jp-lab-b" min="0" max="45000" step="250" value="45000"></label>
+</div></div>
+<div class="jp-fig__group"><p class="jp-fig__glabel">自分で c を選ぶ（どちらで動かしても、もう一方が揃う）</p>
+<div class="jp-fig__sliders">
+<label class="jp-fig__slider"><span>一歩ごとに回る角度 <output for="jp-lab-deg">137.5°</output></span><input type="range" id="jp-lab-deg" min="0" max="360" step="0.1" value="137.5"></label>
+<label class="jp-fig__slider"><span>一歩ごとに寄る倍率 <output for="jp-lab-r">0.970</output></span><input type="range" id="jp-lab-r" min="0.5" max="0.995" step="0.005" value="0.97"></label>
+<label class="jp-fig__slider"><span>c の実部 <output for="jp-lab-re">−0.378</output></span><input type="range" id="jp-lab-re" min="-2.25" max="0.75" step="0.001" value="-0.378"></label>
+<label class="jp-fig__slider"><span>c の虚部 <output for="jp-lab-im">0.562</output></span><input type="range" id="jp-lab-im" min="-1.3" max="1.3" step="0.001" value="0.562"></label>
+</div></div>
+<figcaption>前へは出発点（青い丸・最初は 0）から最大 500 歩。原点からの距離が 2 を超えたら外へ出たとして止めます。遡りは、一段ごとに ±√(z − c) のどちらかをでたらめに選び、初めの 20 段を捨てて打ちます。回る角度と寄る倍率は、寄る一点 z* での傾き λ = 2z* の角度と大きさで、c = λ/2 − λ²/4 の関係にあります（倍率が 1 より小さいときだけ決まる）。計算は Claude。</figcaption>
 </figure>
 
-<p>前へ打った赤い点は、外へ飛び出さず、一か所の周りを、一歩ごとに同じ角度だけ回りながら、渦を巻いて寄っていきます（②）。遡った灰色の点は、どこから始めても境目の上に集まり、ジュリア集合の縁そのものを描きます（①）。一つの式を前へ進めた跡と、後ろへ遡った跡が、渦と込み入った境目という、まるで違う形になります。スライダで角度と倍率を変えても、倍率が 1 より小さいあいだは、この関係は変わりません。</p>
-<p>最初の図の <code>c</code> は、一歩ごとに回る角度が約 137.5°（黄金角）になるように選んだ値です。前へ打った値は 300 歩打っても外に出ず、一歩ごとに 137.5° 回って 0.97 倍に寄っていきます（Claude の計算）。遡った点が境目のどこにでも近づくことは、数学で確かめられています（ミルナーの定理 3.9）。</p>
+<details class="acc"><summary>手を動かして確かめる — こう動かすと、こう見える</summary>
+
+<ul>
+<li>「最初から」を押して「再生」：赤い点が一歩ずつ打たれ、渦を巻いて一か所へ寄っていく様子が見えます。②の拡大で、回る角度がそろっていることが分かります。</li>
+<li>①を押して出発点を変える：大きなハート形の中の <code>c</code> なら、灰色の境目の内側のどこから始めても、同じ一点に寄ります。境目の外側から始めると、外へ出ていきます。</li>
+<li>「遡る点の数」を 0 から少しずつ増やす：灰色の点が境目の上だけに集まっていき、内側は塗られないままです。</li>
+<li>「よくある塗り分けを薄く重ねる」：遡った灰色の点が、塗り分けの縁と重なることを確かめられます。</li>
+<li>回る角度を 120° や 90° の近くにする：寄っていく点が、ほぼ三本、四本の筋に並びます。黄金角（137.5°）では、筋がそろわず、ひまわりの種の並びに近い散らばり方になります。</li>
+<li>寄る倍率を 1 に近づける：寄るのが遅くなり、渦の巻きが増え、境目の形も変わります。</li>
+<li>左の地図で、黒い形の外を押す（または「c = 0.3」）：赤は外へ出て、灰は一つながりでない塵のように散ります。</li>
+</ul>
+</details>
+
+<p>前へ打った赤い点は、外へ飛び出さず、一か所の周りを、一歩ごとに同じ角度だけ回りながら、渦を巻いて寄っていきます（②）。遡った灰色の点は、どこから始めても境目の上に集まり、ジュリア集合の縁そのものを描きます（①）。一つの式を前へ進めた跡と、後ろへ遡った跡が、渦と込み入った境目という、まるで違う形になります。左の地図で <code>c</code> を押しても、スライダで角度と倍率を変えても、大きなハート形の中の <code>c</code> なら、この関係は変わりません。</p>
+<p>図の最初の <code>c</code> は、一歩ごとに回る角度が約 137.5°（黄金角）になるように選んだ値です。前へ打った値は 300 歩打っても外に出ず、一歩ごとに 137.5° 回って 0.97 倍に寄っていきます（Claude の計算）。遡った点が境目のどこにでも近づくことは、数学で確かめられています（ミルナーの定理 3.9）。</p>
 <p>この図を見て、pjdhiro は次のように言いました。</p>
 <blockquote class="reader-callout reader-request">
 <p><strong>pjdhiro の見方：</strong>渦のように発散せずに１箇所に、原点に近いところに集まるよね</p>
