@@ -1,5 +1,7 @@
 # 起業家の漸化式と、ジュリア集合
 
+<figure class="jp-hero"><img src="../assets/img/julia-potential-hero.jpg" alt="暗い宇宙と星を背景に、c = −0.378 + 0.562i のジュリア集合の境目が青白く光る。集合の内側では、0 から前へ打った値の点が金色の渦を巻いて一点へ寄る。周りでは、z → z² + c をくり返す疑似コード「歩く」の文字が、重力に引かれるように渦へ巻き込まれ、左下に同じ疑似コードが読める大きさで置かれている" width="1600" height="800"></figure>
+
 <p class="reader-summary__title">概要</p>
 
 <p class="reader-lead"><span class="reader-lead__label">工事中</span>このページは、対話の途中で立った問いを置いた工事中のページです。式への当てはめは、pjdhiro と Claude が対話で共有した仮のもので、論証ではありません。</p>
