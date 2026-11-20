@@ -244,6 +244,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は mill-1865-examination-of-hamilton.md（原文〔英語〕と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-mill-examination-of-hamilton-ja.md",
+        ROOT / "scripts/reader-mill-examination-of-hamilton-ja-template.html",
+        ROOT / "reader/mill-examination-of-hamilton-ja.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/creative-thinking/READER-creative-thinking.md",
         ROOT / "scripts/reader-creative-thinking-template.html",
         ROOT / "reader/creative-thinking.html",
@@ -492,6 +499,10 @@ JA_CHAPTERS = {
     "mansel-1858-limits-of-religious-thought.md": {
         "¶1": "序文　人間の思考の限界と、ハミルトンの無条件者の哲学",
         "注1": "マンセルの脚注",
+    },
+    "mill-1865-examination-of-hamilton.md": {
+        "¶1": "第 VII 章　マンセル氏が宗教的思考の限界に当てはめた、条件づけられたものの哲学",
+        "注1": "ミルの脚注",
     },
 }
 

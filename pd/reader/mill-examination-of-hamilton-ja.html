@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/mill-examination-of-hamilton-ja.html を直接編集しないでください。
+  正本:   knowledge/translations/READER-mill-examination-of-hamilton-ja.md（訳の本文は mill-1865-examination-of-hamilton.md から差し込む）
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 訳の人の校閲はまだだが、pjdhiro の判断で noindex を外し、sitemap.xml・llms.txt・llms-full.txt に入れた（2026-11-20・#175 の対訳の決まり。このページは 2026-11-21）。校閲前の帯は残す
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「ミル『ハミルトン哲学の検討』（1865）の第 VII 章を、日本語で読む」のページです。ジョン・スチュアート・ミル（John Stuart Mill）の『An Examination of Sir William Hamilton's Philosophy（ハミルトン哲学の検討）』（1865）から、マンセルがハミルトンの「条件づけられたものの哲学」を宗教的思考の限界に当てはめたことを論じる第 VII 章（pp.88–105）の全文を、段ごとに日本語に訳したページです。訳は Claude（AI）によるもので、人の校閲はまだです。 パースは「進化的な愛」（1893）の ¶20 で、マンセルの弁護がハミルトンの従僕たちの間に反乱を引き起こし、ミルの唯名論がそれに応じて得をした、と書きます。その「反乱」の側の、ミル自身の言葉です。
+  訳注は Claude の注。原文の段の番号（¶）は、訳した範囲の段の通し番号、p. は本の頁。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ミル『ハミルトン哲学の検討』（1865）の第 VII 章を、日本語で読む | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/mill-examination-of-hamilton-ja.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="ジョン・スチュアート・ミル（John Stuart Mill）の『An Examination of Sir William Hamilton's Philosophy（ハミルトン哲学の検討）』（1865）から、マンセルがハミルトンの「条件づけられたものの哲学」を宗教的思考の限界に当てはめたことを論じる第 VII 章（pp.88–105）の全文を、段ごとに日本語に訳したページです。訳は Claude（AI）によるもので、人の校閲はまだです。">
+    <meta property="og:title" content="ミル『ハミルトン哲学の検討』（1865）の第 VII 章を、日本語で読む">
+    <meta property="og:description" content="ジョン・スチュアート・ミル（John Stuart Mill）の『An Examination of Sir William Hamilton's Philosophy（ハミルトン哲学の検討）』（1865）から、マンセルがハミルトンの「条件づけられたものの哲学」を宗教的思考の限界に当てはめたことを論じる第 VII 章（pp.88–105）の全文を、段ごとに日本語に訳したページです。訳は Claude（AI）によるもので、人の校閲はまだです。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/mill-examination-of-hamilton-ja.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta property="og:image" content="https://uminomae.github.io/project-design-theory/assets/ogp/peirce-love-abduction.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ミル『ハミルトン哲学の検討』（1865）の第 VII 章を、日本語で読む — 中心から三つの点を独立へ押し出し、円い運動で調和へ引き寄せる図">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ミル『ハミルトン哲学の検討』（1865）の第 VII 章を、日本語で読む">
+    <meta name="twitter:image" content="https://uminomae.github.io/project-design-theory/assets/ogp/peirce-love-abduction.png">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-21">
+    <meta property="article:modified_time" content="2026-11-21">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "ミル『ハミルトン哲学の検討』（1865）の第 VII 章を、日本語で読む",
+          "description": "ジョン・スチュアート・ミル（John Stuart Mill）の『An Examination of Sir William Hamilton's Philosophy（ハミルトン哲学の検討）』（1865）から、マンセルがハミルトンの「条件づけられたものの哲学」を宗教的思考の限界に当てはめたことを論じる第 VII 章（pp.88–105）の全文を、段ごとに日本語に訳したページです。訳は Claude（AI）によるもので、人の校閲はまだです。",
+          "keywords": "ミル, John Stuart Mill, ハミルトン哲学の検討, An Examination of Sir William Hamilton's Philosophy, マンセル, 宗教的思考の限界, ウィリアム・ハミルトン, 条件づけられたものの哲学, パース, 進化的な愛, 日本語訳, 対訳",
+          "url": "https://uminomae.github.io/project-design-theory/reader/mill-examination-of-hamilton-ja.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/mill-examination-of-hamilton-ja.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-21",
+          "dateModified": "2026-11-21",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Person", "name": "John Stuart Mill"}, {"@type": "Person", "name": "Henry Longueville Mansel"}, {"@type": "Person", "name": "Sir William Hamilton"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。訳と解説の文責"},
+          "translationOfWork": {"@type": "Book", "name": "An Examination of Sir William Hamilton's Philosophy, and of the Principal Philosophical Questions Discussed in His Writings", "author": {"@type": "Person", "name": "John Stuart Mill"}, "datePublished": "1865", "publisher": "Longman, Green, Longman, Roberts & Green", "pagination": "88-105", "sameAs": "https://archive.org/details/cu31924029012206"},
+          "translator": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。人の校閲はまだ"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「ミル『ハミルトン哲学の検討』（1865）の第 VII 章を、日本語で読む」のページです。ジョン・スチュアート・ミル（John Stuart Mill）の『An Examination of Sir William Hamilton's Philosophy（ハミルトン哲学の検討）』（1865）から、マンセルがハミルトンの「条件づけられたものの哲学」を宗教的思考の限界に当てはめたことを論じる第 VII 章（pp.88–105）の全文を、段ごとに日本語に訳したページです。訳は Claude（AI）によるもので、人の校閲はまだです。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この訳は AI（Claude）によるものです。</b>人の校閲はまだです。引用や論拠には、各段の「原文」を使ってください。
+            </div>
+            <header class="reader-hero">
+                <h1><span style="display:inline-block">ミル『ハミルトン哲学の検討』（1865）の</span><span style="display:inline-block">第 VII 章を、日本語で読む</span></h1>
+                <p class="reader-meta">
+                    最終更新: 2026-11-21 ／ 状態: 訳は人の校閲前<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/translations/mill-1865-examination-of-hamilton.md">対訳の正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p class="reader-lead"><span class="reader-lead__label">これは何か</span>哲学者ジョン・スチュアート・ミル（John Stuart Mill）が 1865 年に出した『An Examination of Sir William Hamilton's Philosophy（ハミルトン哲学の検討）』から、第 VII 章「マンセル氏が宗教的思考の限界に当てはめた、条件づけられたものの哲学」（pp.88–105）の全文を、段ごとに日本語に訳したページです。マンセルは 1858 年の講義『宗教的思考の限界』で、ウィリアム・ハミルトン卿の「無条件者は認識できず、考えることもできない」という原理を神学に当てはめ、神の属性は人間の知る善さや正義と同じ意味では知りえない、と論じました。ミルはこの章で、その論の運びを一つずつ調べ、人間に向けて使う意味で善いと言えない存在を、善いとは呼ばない、と答えます。パースは「進化的な愛」（1893）で、ダーウィンの『種の起源』を迎えた時代の空気を描く段に、「マンセル主席司祭の無分別な弁護が、ウィリアム・ハミルトン卿に縛られた従僕たちの間に反乱を引き起こし、ミルの唯名論はそれに応じて得をしていた」と書きました。そのミルの側の言葉を読むためのページです。</p>
+
+<div class="reader-lead"><span class="reader-lead__label">原典と訳</span>
+原典は John Stuart Mill, <i>An Examination of Sir William Hamilton's Philosophy, and of the Principal Philosophical Questions Discussed in His Writings</i>, London: Longman, Green, Longman, Roberts &amp; Green, 1865（初版）です。原文は、初版の走査（<a href="https://archive.org/details/cu31924029012206">Internet Archive</a>。Cornell University Library）の OCR の文字から起こし、章の十八頁を画像と照らしたものを載せています。<b>訳は Claude（AI）によるもので、人の校閲はまだです。</b>誤訳がありうるので、引用や論拠には原文を使ってください。
+</div>
+
+<div class="reader-lead"><span class="reader-lead__label">読み方</span>
+<ul class="reader-lead__list">
+<li>訳したのは本の一部、第 VII 章（pp.88–105）だけです。パースは本の題も頁も挙げていません。マンセルの弁護に対してミルが正面から答えた所として、Claude がこの章を選びました。ハミルトンの「条件づけられたものの哲学」そのものを論じる前の章（第 VI 章）と、そのほかの章は訳していません。</li>
+<li>段ごとに訳を置き、その下の「原文」の畳みに原文を置きました。段の頭の「¶8　p.91–92」は、訳した範囲の中の段の通し番号と、本の頁です。訳と原文の中の [p.92] は、頁が変わる所です。ミルの脚注は、終わりの「ミルの脚注」にまとめました。</li>
+<li>「訳注：」で始まる小さな字の行は、Claude の注です。ミルが引くマンセルとハミルトンの文は、引かれた本の頁とは照らしていません。</li>
+<li>マンセルの側の言葉は「<a href="mansel-limits-of-religious-thought-ja.html">マンセル『宗教的思考の限界』（1858）の序文を、日本語で読む</a>」に、パースの側の文は「<a href="peirce-evolutionary-love-ja.html">パース「進化的な愛」を、日本語で読む</a>」の ¶20 にあります。</li>
+</ul>
+</div>
+
+<details class="acc"><summary>載せた版と、権利について</summary>
+
+<ul>
+<li>原文は 1865 年に出版され、ミルは 1873 年に亡くなっています。日本でも米国でも、著作権の保護期間は終わっています（パブリックドメイン）。</li>
+<li>この本には、Wikisource などの文字起こしがありません。原文は、走査の OCR の文字から段を起こし、十八頁を画像と照らして、文字（OCR の誤り）・斜体・行末で切れた語・脚注を直しました。走査には、前の持ち主の鉛筆の下線や印があります。それは外しました。</li>
+<li>訳は、既に出ている日本語訳を見ずに、Claude が原文から付けました。</li>
+</ul>
+</details>
+
+<details class="sec" id="第-vii-章-マンセル氏が宗教的思考の限界に当てはめた条件づけられたものの哲学" open><summary>第 VII 章　マンセル氏が宗教的思考の限界に当てはめた、条件づけられたものの哲学</summary><div class="secbody">
+
+
+<p id="p1"><small>¶1　p.88</small></p>
+
+<p>第 VII 章　条件づけられたものの哲学（the Philosophy of the Conditioned）――マンセル氏（Mr. Mansel）による宗教的思考の限界への当てはめ</p>
+<p><small>訳注：題の「the Limits of Religious Thought」はマンセルの本の題（『宗教的思考の限界』）を踏まえるが、誌面では書名の形にせず、大文字の見出しの中に置いている。</small></p>
+
+<details class="acc"><summary>原文（¶1）</summary>
+
+<blockquote lang="en">
+
+<p>CHAPTER VII. THE PHILOSOPHY OF THE CONDITIONED, AS APPLIED BY MR. MANSEL TO THE LIMITS OF RELIGIOUS THOUGHT.</p>
+</blockquote>
+
+</details>
+
+<p id="p2"><small>¶2　p.88</small></p>
+
+<p>マンセル氏は、その語を公正に当てはめるなら、形而上学においてウィリアム・ハミルトン卿（Sir W. Hamilton）の弟子であると言ってよい。彼がハミルトン卿の意見のすべてに同意しているという意味ではない。彼は原因（Cause）についてのハミルトン独特の理論には、公然と異を唱えているからである。まして、彼がほかの師から、あるいは自分自身の独立した思索から何も学んでいないという意味ではなおさらない。それどころか、彼は独創的な思考のかなりの力を示してきた。その力には良い質のものもあれば、私には悪い質と思われるものもある。しかし彼はハミルトン卿の『講義』（Lectures）を敬服しつつ編んだ者であり、ほかのどの哲学者にも払わない敬意をもって、いつもハミルトン卿のことを語る。ハミルトン哲学にとりわけ特徴的とされる学説を、ハミルトン卿自身と同じ言葉づかいで明確に受け入れており、同じ大筋の考え方を代表する者と見なしてよい理由がある。マンセル氏は、師がわずかにしか触れなかった領域、すなわち条件づけられたものの哲学を思考の神学的な部門に当てはめること、つまりその系と帰結のうち宗教に直接かかわるものを導き出すことに、とりわけ力を注いできた。</p>
+<details class="acc"><summary>原文（¶2）</summary>
+
+<blockquote lang="en">
+
+<p>Mr. Mansel may be affirmed, by a fair application of the term, to be, in metaphysics, a pupil of Sir W. Hamilton. I do not mean that he agrees with him in all his opinions; for he avowedly dissents from the peculiar Hamiltonian theory of Cause: still less that he has learnt nothing from any other teacher, or from his own independent speculations. On the contrary, he has shown considerable power of original thought, both of a good and of what seems to me a bad quality. But he is the admiring editor of Sir W. Hamilton's Lectures; he invariably speaks of him with a deference which he pays to no other philosopher; he expressly accepts, in language identical with Sir W. Hamilton's own, the doctrines regarded as specially characteristic of the Hamiltonian philosophy, and may with reason be considered as a representative of the same general mode of thought. Mr. Mansel has bestowed especial cultivation upon a province but slightly touched by his master—the application of the Philosophy of the Conditioned to the theological department of thought; the deduction of such of its corollaries and consequences as directly concern religion.</p>
+</blockquote>
+
+</details>
+
+<p id="p3"><small>¶3　p.88–89</small></p>
+
+<p>マンセル氏が推論の出発点とする前提は、ハミルトン卿の前提である。彼は、私たちの知識はすべて必然的に相対的であると主張する。彼の考えでは、絶対者（the Absolute）と無限者（the Infinite）、あるいはもっと意味のはっきりした言い方をすれば、絶対的な存在者と無限な存在者は、私たちには考えることのできない（inconceivable）ものであり、私たちの能力の届かないそのようなものを考えようと努めると、私たちは自己矛盾に陥る。それにもかかわらず、私たちは絶対的で無限な存在者が実在すると信じてよいし、信じなければならない。そしてこの存在者が神（God）である。したがって神は、私たちには考えることも知ることもできず、自己矛盾なしには思い浮かべることさえできない。つまり（マンセル氏はこの主張をこのように限定するのを怠らない）、絶対的な<em>ものとして</em>、また無限な<em>ものとして</em>思い浮かべることはできない。神の本質的な属性（attribute）を私たちが考えることも知ることもできないという、この内在的な不可能さのために、私たちは何がそれらの属性と両立し何が両立しないかを判断する資格を欠く。そうであれば、神性（the Deity）についての何らかの特定の教義を含む宗教が私たちに示されたとき、その教義を信じるか退けるかは、その宗教が神に由来することについて示しうる証拠だけによって決まるべきである。その教義が知的な不合理を含むので信じがたいという議論も、その教義が道徳的に悪く、善い（good）存在者や賢い存在者にふさわしくないという議論も、少しも重みをもつべきではない。そうした事柄を判断する力が私たちにはないからである。少なくともこれが、マンセル氏の議論の向かうところである。ただし、彼がこの結論をある限定つきで主張していることは認めなければならない。宗教の教義の道徳的な性格は、その宗教を全体として神に由来するものとして受け入れるか退けるかの理由の中で、いくらかは数に入るべきだと彼は認めているからである。受け入れたあとの宗教の解釈においても、それがいくらかは数に入るべきだということは、彼は言い落としている。しかし公正を期して、彼はそれも認めるだろうと考えなければならない。とはいえ、人類の道徳的な感情へのこうした譲歩は、マンセル氏の論理を犠牲にしてなされている。彼の理論が正しいなら、彼にはそのどちらの譲歩をする権利もない。</p>
+<p><small>訳注：「That we are, nevertheless, warranted …」の一文は、主節を欠き、前の「He holds that …」に続く内容を独立させた形で書かれている。訳では彼の考えの続きとして訳した。</small></p>
+
+<details class="acc"><summary>原文（¶3）</summary>
+
+<blockquote lang="en">
+
+<p>The premises from which Mr. Mansel reasons are those of Sir W. Hamilton. He maintains the necessary relativity of all our knowledge. He holds that the Absolute and the Infinite, or, to use a more significant expression, an Absolute and an Infinite being, are inconceivable by us; and that when we strive to conceive what [p.89] is thus inaccessible to our faculties, we fall into self-contradiction. That we are, nevertheless, warranted in believing, and bound to believe, the real existence of an absolute and infinite being, and that this being is God. God, therefore, is inconceivable and unknowable by us, and cannot even be thought of without self-contradiction; that is (for Mr. Mansel is careful thus to qualify the assertion), thought of <em>as</em> Absolute, and <em>as</em> Infinite. Through this inherent impossibility of our conceiving or knowing God's essential attributes, we are disqualified from judging what is or is not consistent with them. If, then, a religion is presented to us, containing any particular doctrine respecting the Deity, our belief or rejection of the doctrine ought to depend exclusively upon the evidences which can be produced for the divine origin of the religion: and no argument grounded on the incredibility of the doctrine, as involving an intellectual absurdity, or on its moral badness as unworthy of a good or wise being, ought to have any weight, since of these things we are incompetent to judge. This, at least, is the drift of Mr. Mansel's argument: but I am bound to admit that he affirms the conclusion with a certain limitation; for he acknowledges, that the moral character of the doctrines of a religion ought to count for something among the reasons for accepting or rejecting, as of divine origin, the religion as a whole. That it ought also to count for something in the interpretation of the religion when accepted, he neglects to say; but we must in fairness suppose that he would admit it. These concessions, however, to the moral feelings of mankind, are made at the expense of Mr. Mansel's logic. If his theory is correct, he has no right to make either of them.</p>
+</blockquote>
+
+</details>
+
+<p id="p4"><small>¶4　p.89–90</small></p>
+
+<p>神学に当てはめられたこの議論の筋には、何も新しいところはない。私たちは神を理解できない、神の道は私たちの道ではない、私たちは神のはかりごとを詮索したり裁いたりできない――これらの命題は、語を理にかなった意味にとるなら、どの有神論者（Theist）も否定できないものだが、これまでにもしばしば、神についてどんな不合理もどんな道徳的な怪物じみたことも主張してよく、それを善さ（Goodness）と知恵（Wisdom）と呼び違えてよい理由として持ち出されてきた。新しいのは、この結論を、近代哲学の最も進んだ学説から――宗教についても他のすべての主題についても、人間の精神の力と限界を説く正しい理論から――導かれる系として示す点である。</p>
+<details class="acc"><summary>原文（¶4）</summary>
+
+<blockquote lang="en">
+
+<p>There is nothing new in this line of argument as applied to theology. That we cannot understand God; that his ways are not our ways; that we cannot scrutinize or judge his counsels—propositions which, in a reasonable sense of the terms, could not be denied by any Theist—have often before been tendered as reasons why we may assert any absurdities and any moral monstrosi-[p.90]ties concerning God, and miscall them Goodness and Wisdom. The novelty is in presenting this conclusion as a corollary from the most advanced doctrines of modern philosophy—from the true theory of the powers and limitations of the human mind, on religious and on all other subjects.</p>
+</blockquote>
+
+</details>
+
+<p id="p5"><small>¶5　p.90</small></p>
+
+<p>この学説について、どのような形で示されようと、私の意見はこうである。それは端的に、いま流布している中で道徳的に最も有害な学説である。そしてそれがはらむ問いは、いま思索する人々の心をとらえているほかのどの問いにもまして、キリスト教世界にとって道徳的な善と悪とを分ける決定的な問いである。したがって、私たちがこの学説を採らざるをえないのかどうかを考えることは、きわめて重大な事柄である。この学説の道徳的な帰結について、マンセル氏自身が受け入れている以上の責めを彼に負わせるつもりはないが、私は、この学説そのものが本当に健全な形而上学の下す判定なのかを調べることが、何より重要だと考える。また、ハミルトン卿の哲学を正しく評価するには、彼の主要な学説からこのように引き出された結論が、正当にその学説の子と認められるのかを問うことが欠かせないと考える。私の考えでは、この結論は人間の能力についての正しい理論から出てこないばかりか、マンセル氏がそれを推論する前提からさえ、正しく引き出されていないことが明らかになるだろう。</p>
+<p><small>訳注：「justly affiliated on it」は、子の父を定める（認知する）という比喩。訳では「正当にその学説の子と認められる」とした。</small></p>
+
+<details class="acc"><summary>原文（¶5）</summary>
+
+<blockquote lang="en">
+
+<p>My opinion of this doctrine, in whatever way presented, is, that it is simply the most morally pernicious doctrine now current; and that the question it involves is, beyond all others which now engage speculative minds, the decisive one between moral good and evil for the Christian world. It is a momentous matter, therefore, to consider whether we are obliged to adopt it. Without holding Mr. Mansel accountable for the moral consequences of the doctrine, further than he himself accepts them, I think it supremely important to examine whether the doctrine itself is really the verdict of a sound metaphysic; and essential to a true estimation of Sir W. Hamilton's philosophy to enquire, whether the conclusion thus drawn from his principal doctrine, is justly affiliated on it. I think it will appear that the conclusion not only does not follow from a true theory of the human faculties, but is not even correctly drawn from the premises from which Mr. Mansel infers it.</p>
+</blockquote>
+
+</details>
+
+<p id="p6"><small>¶6　p.90</small></p>
+
+<p>私たちは、マンセル氏が考えたとおりの前提を、はっきりと目の前に置かなければならない。これまで私たちはそれを、ハミルトン卿が説いたものとしてしか見てこなかったからである。述べ方の明晰さと明示性はマンセル氏の長所の一つであるから、彼の議論の欠陥は、師の議論の欠陥よりも見つけやすい。彼は自分の言葉で何を意味しているのかについて、私たちを迷わせることが少ないからである。</p>
+<details class="acc"><summary>原文（¶6）</summary>
+
+<blockquote lang="en">
+
+<p>We must have the premises distinctly before us as conceived by Mr. Mansel, since we have hitherto seen them only as taught by Sir W. Hamilton. Clearness and explicitness of statement being in the number of Mr. Mansel's merits, it is easier to perceive the flaws in his arguments than in those of his master, because he often leaves us less in doubt what he means by his words.</p>
+</blockquote>
+
+</details>
+
+<p id="p7"><small>¶7　p.90–91</small></p>
+
+<p>人間の理性が神学について判断できるような「神の本性についての知識」をもつことは、マンセル氏によれば<a href="#n1">[注1]</a>「神性をあるがままに考えること」であろう。それは「神を第一原因（First Cause）として、絶対的なものとして、無限なものとして考えること」であろう。第一原因を、マンセル氏はふつうのやり方で定義している。無限なもの（Infinite）の意味には何の難しさもない。しかし絶対者に来ると、私たちはもっと足もとの滑りやすい所に立つ。とはいえ、マンセル氏は自分の意味するところをはっきり述べている。絶対者ということで彼が意味しているのは、ハミルトン卿がクザン（Cousin）に対する議論の大部分で意味しているもの、すなわち完了したもの・仕上がったものではない。彼が意味しているのは、ハミルトン卿が（すでに見たように）一度だけ意味しているもの、すなわち相対的なもの（Relative）の反対である。「絶対者とは、それ自身において、またそれ自身によって存在し、ほかのどの存在者とも必然的な関係をもたないもののことである。」</p>
+<p><small>訳注：誌面の引用は、行の頭ごとに “ を置く当時の組み方。行をつないだので、行頭の “ は外した（以下の段も同じ）。</small></p>
+
+<details class="acc"><summary>原文（¶7）</summary>
+
+<blockquote lang="en">
+
+<p>To have "such a knowledge of the Divine Nature" as would enable human reason to judge of theology, would be, according to Mr. Mansel,<a href="#n1">[注1]</a> "to conceive the Deity as he is." This would be to "conceive him as First Cause, as Absolute, and as Infinite." The First Cause Mr. Mansel defines in the usual manner. About the meaning of Infinite there is no difficulty. But when [p.91] we come to the Absolute we are on more slippery ground. Mr. Mansel, however, tells us his meaning plainly. By the Absolute, he does not mean what Sir W. Hamilton means in the greater part of his argument against Cousin, that which is completed or finished. He means what Sir W. Hamilton means only once (as we have already seen) the opposite of Relative. "By the Absolute is meant that which exists in and by itself, having no necessary relation to any other Being."</p>
+</blockquote>
+
+</details>
+
+<p id="p8"><small>¶8　p.91–92</small></p>
+
+<p>相対的なものに対立する意味での絶対的なものについてのマンセル氏のこの説明は、ハミルトン卿が同じことを試みたときに与える説明よりも、言葉の上で明確である。というのも、ハミルトン卿は（すでに述べたように）絶対的なもののこの第二の意味を認めており、それについて次のように説明しているからである<a href="#n2">[注2]</a>。「<em>Absolutum</em>（アブソルートゥム）とは、解き放たれたもの、ほどかれたものを意味する。この意味で、絶対者とは、関係・比較・限定・条件・依存などから離れたものであり、したがって後代のギリシア人の τὸ ἀπόλυτον に当たる。」師がここでこの概念を曖昧なままにしているのは、弟子がもっと精確でありたいと望んで、うかつにも突き当たってしまった難点を避けるためだったのではないか、と推し量ってもよいのではないか。マンセル氏は、自分の言葉づかいをより明確にしたことで、たしかに何も得ていない。彼の定義の最初の言葉、「それ自身において、またそれ自身によって存在するもの」は、ヌーメノン（物自体、Noumenon）の記述として役立つだろう。しかしマンセル氏の絶対者は、神と同一視された一つの存在者だけを指すつもりのものであり、神は唯一のヌーメノンではない。だが、この点には立ち入らないでおく。ところが残りの言葉、「ほかのどの存在者とも必然的な関係をもたない」は、彼をはるかに大きな難点に引き込む。この言葉には二通りの読み方ができるからである。この言葉は、その自然な意味では、<em>ほかの何ものとも関係の外で存在しうる</em>ということしか意味しない。議論のほうは、それが<em>ほかの何ものとも関係の中で存在することができない</em>という意味であることを求める。マンセル氏が後者を意図しているはずはない。絶対者はほかのどの存在者とも関係に入ることができない、と彼が言おうとしているはずはない。彼は神についてそうは言わないだろうからである。それどころか、彼は神が世界や私たちに対してもつ関係について、たえず語っている。そのうえ、彼はカルダーウッド氏（Mr. Calderwood）から、これと両立しない解釈を受け入れている<a href="#n3">[注3]</a>。しかしこれこそ、彼の主張を支えるのに必要な意味なのである。というのも、彼の第一の議論は何か。神は、原因として、絶対的なものとして、無限なものとして私たちに知られることができない、なぜならこれらの属性は、私たちの考えの上では互いに両立しないから、というものである。では、なぜ両立しないのか。なぜなら<a href="#n4">[注4]</a>「原因は、原因であるかぎり、絶対的ではありえない。絶対者は、絶対者であるかぎり、原因ではありえない。原因は、原因であるかぎり、その結果との関係においてのみ存在する。原因は結果の原因であり、結果は原因の結果である。他方、絶対者という概念は、あらゆる関係の外での存在の可能性を含む」からである。しかし、あらゆる関係の外での存在の可能性が、どのようにして原因という観念と両立しないのか。原因は、その結果から離れて存在する可能性をもつのではないか。（たとえば）太陽は、照らすべき地球や惑星がなかったら存在しないのだろうか。マンセル氏は、関係の外で存在しうるものは、関係の中で考えられたり知られたりすることはありえない、と考えているらしい。しかしそうではない。関係の中で存在しうるものは何であれ、関係の中で考えられたり知られたりしうる。絶対的な存在者が原因として考えられないのなら、それは、彼が原因として存在できないということでなければならない。彼は原因となることができないのでなければならない。もし彼が何らかの有限なものと何らかの関係をもちうるなら、ほかの仕方ではともかく、その関係においては、彼は考えることも知ることもできる。この観念の混乱を取り除けば、マンセル氏の議論は次のことに帰着する――同じ存在者を、私たちは原因としてかつ絶対的なものとして考えることはできない、なぜなら原因は<em>原因であるかぎり</em>絶対的ではなく、絶対的なものは絶対的なものであるかぎり原因ではないから、と。これはちょうど、ニュートンを私たちはイングランド人としてかつ数学者として考えることはできない、なぜならイングランド人はイングランド人であるかぎり数学者ではなく、数学者は数学者であるかぎりイングランド人ではないから、と言ったのとまったく同じである。</p>
+<p><small>訳注：「as such」は「それであるかぎり」と訳した。ミルは誌面で一か所（a Cause <em>as such</em>）だけ斜体にしている。「the lower Greeks」は古典期より後の時代のギリシア人の意と読み、「後代のギリシア人」とした（推測）。τὸ ἀπόλυτον は、ハミルトンの引用の中で Absolutum に当たるとされるギリシア語で、訳さずに残した。</small></p>
+
+<details class="acc"><summary>原文（¶8）</summary>
+
+<blockquote lang="en">
+
+<p>This explanation by Mr. Mansel, of Absolute in the sense in which it is opposed to Relative, is more definite in its terms than that which Sir W. Hamilton gives when attempting the same thing. For Sir W. Hamilton recognises (as already remarked) this second meaning of Absolute, and this is the account he gives of it:<a href="#n2">[注2]</a> "<em>Absolutum</em> means what is freed or loosed; in which sense the Absolute will be what is aloof from relation, comparison, limitation, condition, dependence, &amp;c., and thus is tantamount to τὸ ἀπόλυτον of the lower Greeks." May it not be surmised that the vagueness in which the master here leaves the conception, was for the purpose of avoiding difficulties upon which the pupil, in his desire of greater precision, has unwarily run? Mr. Mansel certainly gains nothing by the more definite character of his language. The first words of his definition, "that which exists in and by itself," would serve for the description of a Noumenon: but Mr. Mansel's Absolute is only meant to denote one Being, identified with God, and God is not the only Noumenon. This, however, I will not dwell upon. But the remaining words, "having no necessary relation to any other Being," bring him into a much greater difficulty. For they admit of two constructions. The words, in their natural sense, only mean, <em>capable of existing out of relation to anything else.</em> The argument requires that they should mean, <em>incapable of existing in relation with anything else.</em> Mr. Mansel cannot intend the latter. He cannot mean that the Absolute is incapable of entering [p.92] into relation with any other being; for he would not affirm this of God; on the contrary, he is continually speaking of God's relations to the world and to us. Moreover, he accepts, from Mr. Calderwood, an interpretation inconsistent with this.<a href="#n3">[注3]</a> This, however, is the meaning necessary to support his case. For what is his first argument? That God cannot be known by us as Cause, as Absolute, and as Infinite, because these attributes are, to our conception, incompatible with one another. And why incompatible? Because<a href="#n4">[注4]</a> "a Cause cannot, as such, be absolute; the Absolute cannot, as such, be a cause. The cause, as such, exists only in relation to its effect: the cause is a cause of the effect; the effect is an effect of the cause. On the other hand, the conception of the Absolute involves a possible existence out of all relation." But in what manner is a possible existence out of all relation, incompatible with the notion of a cause? Have not causes a possible existence apart from their effects? Would the sun (for example) not exist if there were no earth or planets for it to illuminate? Mr. Mansel seems to think that what is capable of existing out of relation, cannot possibly be conceived or known in relation. But this is not so. Anything which is capable of existing in relation, is capable of being conceived or known in relation. If the Absolute Being cannot be conceived as Cause, it must be that he cannot exist as Cause; he must be incapable of causing. If he can be in any relation whatever to any finite thing, he is conceivable and knowable in that relation, if no otherwise. Freed from this confusion of ideas, Mr. Mansel's argument resolves itself into this—The same Being cannot be thought by us both as Cause and as Absolute, because a Cause <em>as such</em> is not Absolute, and Absolute, as such, is not a Cause; which is exactly as if he had said that Newton cannot be thought by us both as an Englishman and as a mathematician, because an Englishman, as such, is not a mathematician, nor a mathematician, as such, an Englishman.</p>
+</blockquote>
+
+</details>
+
+<p id="p9"><small>¶9　p.93</small></p>
+
+<p>さらにマンセル氏は<a href="#n5">[注5]</a>、「絶対者が原因になると仮定すれば」、絶対者は語の意味からして（<em>ex vi termini</em>）そうなることを強いられていないのだから、意志によって働くものでなければならず、したがって意識をもつものでなければならない、と論じる。「意志は意識をもつ存在者においてのみ可能である」からである。しかし意識もまた、関係としてしか考えることができない。そしてどんな関係も絶対者の観念と衝突する。関係し合うものは互いに依存し合うからである。ここで、推論の前提としてはっきり表に出てくるのは、そもそも関係の中にあることは、たとえそれが自分自身への関係、すなわち「自分自身を意識している」という関係にすぎなくても、絶対者であることと両立しない、ということである。</p>
+<details class="acc"><summary>原文（¶9）</summary>
+
+<blockquote lang="en">
+
+<p>Again, Mr. Mansel argues,<a href="#n5">[注5]</a> that "supposing the Absolute to become a cause," since <em>ex vi termini</em> it is not necessitated to do so, it must be a voluntary agent, and therefore conscious; for "volition is only possible in a conscious being." But consciousness, again, is only conceivable as a relation; and any relation conflicts with the notion of the Absolute, since relatives are mutually dependent on one another. Here it comes out distinctly as a premise in the reasoning, that to be in a relation at all, even if only a relation to itself, the relation of being "conscious of itself," is inconsistent with being the Absolute.</p>
+</blockquote>
+
+</details>
+
+<p id="p10"><small>¶10　p.93</small></p>
+
+<p>したがってマンセル氏は、自分の議論を保とうとするなら、絶対者の定義を変えなければならない。ハミルトン卿の定義「関係から離れたもの」の都合のよい曖昧さに引き下がるか――この定義は、その意味が、単に関係の外で存在しうるということなのか、関係の中で存在することができないということなのかを決めていない――、それとも勇気を出して、絶対的な存在者はあらゆる関係をもつことができないと言い切るか、そのどちらかでなければならない。しかし彼は神についてこれを述べることをきっと拒むだろうから、帰結として、神は絶対的な存在者ではないということになる。</p>
+<details class="acc"><summary>原文（¶10）</summary>
+
+<blockquote lang="en">
+
+<p>Mr. Mansel, therefore, must alter his definition of the Absolute if he would maintain his argument. He must either fall back on the happy ambiguity of Sir W. Hamilton's definition, "what is aloof from relation," which does not decide whether the meaning is merely that it can exist out of relation, or that it is incapable of existing in it; or he must take courage, and affirm that an Absolute Being is incapable of all relation. But as he will certainly refuse to predicate this of God, the consequence follows, that God is not an Absolute Being.</p>
+</blockquote>
+
+</details>
+
+<p id="p11"><small>¶11　p.93–94</small></p>
+
+<p>無限者と絶対者が考えることのできないものであることを示そうとするマンセル氏の議論は、全体が一つの長い論点のすりかえ（<em>ignoratio elenchi</em>）である。前の章で指摘したように、絶対的・無限なという語は、何らかの与えられた属性において絶対的であるもの、無限であるものと解さないかぎり、実質的な意味をもたない。空間が無限と呼ばれるのは、広がりにおいて無限だという意味であり、神が無限と言われるのは無限の力をもつという意味で、絶対的と言われるのは絶対的な善さ（goodness）や知識をもつという意味である。また、無条件者（the Unconditioned）が知りえないことを示すハミルトン卿の議論は、ある特定の属性において絶対的であったり無限であったりする対象を私たちが知りえないことを証明するのではなく、すべての属性を一度にもつとされる「絶対者」や「無限者」と呼ばれる抽象物を私たちが知りえないことを証明するにすぎない、ということも示した。同じ指摘がマンセル氏にも当てはまる。違いはただ一つ、彼は、あらゆることを明示的に述べようとする、すでに触れたあの称賛すべき志をもって、この重要な区別を自分で引き、自分の考えで、彼の意味する絶対者はその抽象物だと言っている、という点だけである。彼は<a href="#n6">[注6]</a>、絶対者は「すべての実在の総和にほかならない」ものでしかありえない、すなわち互いに排除し合うものまで含めた、すべての肯定的な述語の複合体でしかありえない、と言う。そしてそれをヘーゲル（Hegel）の絶対的な存在者、すなわち「現実的なものすべてを、悪さえ含めて」自らのうちに含むものと、はっきり同一視している。「絶対的で無限なものとして考えられるものは」とマンセル氏は言う<a href="#n7">[注7]</a>、「現実的な存在のあり方のすべてだけでなく、可能な存在のあり方のすべての総和を、自らのうちに含むものとして考えられなければならない。」矛盾し合う属性のこの寄せ集めが考えることのできないものだという点では、マンセル氏に同意してよいだろう。しかし、それを信じなければならないという、同じく断定的な彼の主張については、何と言えばよいのか。絶対者がこのようなものだとすれば、私たちは神が絶対者であると信じなければならない、と言うとき、彼は何を意味しているのか。</p>
+<p><small>訳注：<em>ignoratio elenchi</em> は論証すべき点とは別の点を論証してしまう誤り。「論点のすりかえ」と訳した。「of his own motion」は人に言われてではなく自分から、の意。</small></p>
+
+<details class="acc"><summary>原文（¶11）</summary>
+
+<blockquote lang="en">
+
+<p>The whole of Mr. Mansel's argument for the inconceivability of the Infinite and of the Absolute is one long <em>ignoratio elenchi</em>. It has been pointed out in a former chapter that the words Absolute and Infinite have no real meaning, unless we understand by them that which is absolute or infinite in some given attribute; as space is called infinite, meaning that it is infinite in extension; and as God is termed infinite in the sense of possessing infinite power, and absolute in the sense of absolute goodness, or knowledge. It has also been shown that Sir W. Hamilton's arguments for the unknowableness of the Unconditioned, do not prove that we cannot know an object which is absolute or infinite in some specific attribute, but only that we cannot know an abstraction called "The Absolute" or "The Infinite," [p.94] which is supposed to have all attributes at once. The same remark is applicable to Mr. Mansel, with only this difference, that he, with the laudable ambition I have already noticed of stating everything explicitly, draws this important distinction himself, and says, of his own motion, that the Absolute he means is the abstraction. He says,<a href="#n6">[注6]</a> that the Absolute can be "nothing less than the sum of all reality," the complex of all positive predicates, even those which are exclusive of one another: and expressly identifies it with Hegel's Absolute Being, which contains in itself "all that is actual, even evil included." "That which is conceived as absolute and infinite," says Mr. Mansel,<a href="#n7">[注7]</a> "must be conceived as containing within itself the sum not only of all actual, but of all possible modes of being." One may well agree with Mr. Mansel that this farrago of contradictory attributes cannot be conceived: but what shall we say of his equally positive averment that it must be believed? If this be what the Absolute is, what does he mean by saying that we must believe God to be the Absolute?</p>
+</blockquote>
+
+</details>
+
+<p id="p12"><small>¶12　p.94–95</small></p>
+
+<p>マンセル氏の論の残りも、この書き出しにふさわしいものである。考えられたかぎりでの、つまり彼が定義するかぎりでの絶対者は、「部分から成る全体」<a href="#n8">[注8]</a>でも、「属性から成る実体」でも、「対象と対立する意識の主体」でもありえない。「というのは、もし絶対者の中に、部分や属性の単なる積み重ねとは別の、何らかの統一の原理があるなら、その原理だけが真の絶対者だからである。逆に、そのような原理がないなら、絶対者はまったくなく、あるのは相対的なものの多数だけである。絶対者は一つであり単純であると告げる哲学のほとんど一致した声は、理性がこの事柄について何かを言えるかぎりで、理性の声としても受け入れなければならない。しかし、この絶対的な統一は、無差別で属性を何も含まないものとして、何らかの特徴によって有限な存在者の多数から区別されることもできなければ、その多数のままの有限な存在者と同一視されることもできない。」気づかれるとおり、直前にはすべての属性を持つと定義された絶対者が、ここでは一つも持たないと言われている。だが、マンセル氏ならこう言うだろう。これは、考えることのできないものを考えようとする試みに付きものの矛盾の一つにすぎない、と。「こうして私たちは抜け出せない板挟みに陥る。絶対者は意識のあるものとしても考えられず、意識のないものとしても考えられない。複合したものとしても考えられず、単純なものとしても考えられない。差異によっても考えられず、差異のないことによっても考えられない。宇宙と同一視することもできず、宇宙から区別することもできない。」この空想の抽象物が、知りうるものとしてであれ知りえないものとしてであれ、誰かが気にかける必要のある絶対的な存在者だろうか。このありえない作りものを考えることができないということが、神を考えることができるということに反する論拠になるだろうか。神は、属性を一つも持たないとも、すべての属性を持つとも考えられておらず、善い属性を持つと考えられているのである。たとえば、絶対的に正しい存在者や、絶対的に賢い存在者を私たちが考えうることに、それが何かの妨げになるだろうか。ところが、マンセル氏が不可能だと証明しようとしたのは、まさにこのことなのである。</p>
+<details class="acc"><summary>原文（¶12）</summary>
+
+<blockquote lang="en">
+
+<p>The remainder of Mr. Mansel's argumentation is suitable to this commencement. The Absolute, as conceived, that is, as he defines it, cannot be "a whole<a href="#n8">[注8]</a> composed of parts," or "a substance consisting of attributes," or "a conscious subject in antithesis to an object. For if there is in the absolute any principle of unity, distinct from the mere accumulation of parts or attributes, this principle alone is the true absolute. If, on the other hand, there is no such principle, then there is no absolute at all, but only a plurality of relatives. The almost unanimous voice of philosophy, in pronouncing that the absolute is both one and simple, must be accepted as the voice of reason also, so far as reason has any voice in the matter. But this absolute unity, as indifferent and containing no attributes, can neither be distinguished from the multiplicity [p.95] of finite beings by any characteristic feature, nor be identified with them in their multiplicity." It will be noticed that the Absolute, which was just before defined as having all attributes, is here declared to have none: but this, Mr. Mansel would say, is merely one of the contradictions inherent in the attempt to conceive what is inconceivable. "Thus we are landed in an inextricable dilemma. The Absolute cannot be conceived as conscious, neither can it be conceived as unconscious: it cannot be conceived as complex, neither can it be conceived as simple: it cannot be conceived by difference, neither can it be conceived by the absence of difference: it cannot be identified with the universe, neither can it be distinguished from it." Is this chimerical abstraction the Absolute Being whom anybody need be concerned about, either as knowable or as unknowable? Is the inconceivableness of this impossible fiction any argument against the possibility of conceiving God, who is neither supposed to have no attributes nor to have all attributes, but to have good attributes? Is it any hindrance to our being able to conceive a Being absolutely just, for example, or absolutely wise? Yet it is of this that Mr. Mansel undertook to prove the impossibility.</p>
+</blockquote>
+
+</details>
+
+<p id="p13"><small>¶13　p.95–96</small></p>
+
+<p>また、無限者について。マンセル氏によれば<a href="#n9">[注9]</a>、無限者は「それより大きなものが考えられないもの」であるから、「したがって、永遠の昔から持っていなかった属性や存在の様態を、新たに受け取ることはできない」。それゆえ無限者は、絶対者と同じく、ありうるすべての述語の複合でなければならず、しかもそれらのすべてが度合いにおいて無限でなければならない。無限者は「限られた数の属性から成り、その一つ一つがその種類において限りのないもの、とみなすことはできない。たとえば、長さは無限だが幅は無限でない線になぞらえて考えることはできない。空間の二つの次元では無限だが三つ目では限られている面になぞらえることもできない。意識の一つかいくつかの様態を無限の度合いで持ち、ほかの様態を欠く知的な存在者になぞらえることもできない。」この無限者は、神について述べるのがふさわしいと考えられる属性においてだけでなく、すべての属性において無限なのであって、マンセル氏がまったく正しく言うとおり、考えることができない。というのは<a href="#n10">[注10]</a>、「無限者は、もしいやしくも考えられるとすれば、可能性においてはすべてであり、現実においては何ものでもないものとして考えられなければならない。もし無限者がなりえない何か一般的なものがあれば、無限者はそれによって限られるからであり、もし無限者が現実にそれである何か特定のものがあれば、無限者はそれによってほかのものであることから締め出されるからである。しかしまた、無限者は現実においてすべてであり、可能性においては何ものでもないものとしても考えられなければならない。実現されていない可能性もまた一つの限定だからである。もし無限者が、今そうでないものになりうるなら、まさにその可能性によって、無限者は不完全なものであり、より高い完全さを受け入れうるものとして示されてしまう。もし無限者が現実にすべてであるなら、無限者は、ほかのどんなものからも区別され、意識の対象として見分けられるための特徴を何も持たない。」ここにあるのは、たしかに、その無限であることが自分にとってたいして役に立ちそうにない無限者である。しかし、相反する属性をすべて無限に持つ何ものかの概念を思い描けと私たちに命じ、私たちが矛盾なしにはそれをできないからといって、無限の善さや無限の知恵という観念の中に矛盾があると信じさせようとする書き手が、本気でありうるだろうか。「無限者」の代わりに「無限に善い存在者」を入れてみると、マンセル氏の論はこう読める。無限に善い存在者がなりえない何かがあるなら――その存在者が悪くなることができないなら――それは一つの限定であり、その善さは無限ではありえない。無限に善い存在者が現実にそれである何か（すなわち善い）があるなら、その存在者はほかのものであること、たとえば賢いことや力があることから締め出される。ハミルトン卿がこの論理を後押しするとは、たとえそれが彼の学派で学ばれたものであっても、私にはほとんど思えない。</p>
+<details class="acc"><summary>原文（¶13）</summary>
+
+<blockquote lang="en">
+
+<p>Again, of the Infinite: according to Mr. Mansel,<a href="#n9">[注9]</a> being "that than which a greater is inconceivable," it "consequently can receive no additional attribute or mode of existence which it had not from all eternity." It must therefore be the same complex of all possible predicates which the Absolute is, and all of them infinite in degree. It "cannot be regarded as consisting of a limited number of attributes, each unlimited in its kind. It cannot be conceived, for example, after the analogy of a line, infinite in length, but not in breadth; or of a surface, infinite in two dimensions of space, but bounded in the third; or of an intelligent being, possessing some one or more modes of consciousness in an infinite degree, but devoid of others." This [p.96] Infinite, which is infinite in all attributes, and not solely in those which it would be thought decent to predicate of God, cannot, as Mr. Mansel very truly says, be conceived. For<a href="#n10">[注10]</a> "the Infinite, if it is to be conceived at all, must be conceived as potentially everything and actually nothing; for if there is anything general which it cannot become, it is thereby limited; and if there is anything in particular which it actually is, it is thereby excluded from being any other thing. But again, it must also be conceived as actually everything and potentially nothing; for an unrealized potentiality is likewise a limitation. If the infinite can be that which it is not, it is by that very possibility marked out as incomplete, and capable of a higher perfection. If it is actually everything, it possesses no characteristic feature by which it can be distinguished from anything else, and discerned as an object of consciousness." Here certainly is an Infinite whose infinity does not seem to be of much use to it. But can a writer be serious who bids us conjure up a conception of something which possesses infinitely all conflicting attributes, and because we cannot do this without contradiction, would have us believe that there is a contradiction in the idea of infinite goodness, or infinite wisdom? Instead of "the Infinite," substitute "an infinitely good Being," and Mr. Mansel's argument reads thus: If there is anything which an infinitely good Being cannot become—if he cannot become bad—that is a limitation, and the goodness cannot be infinite. If there is anything which an infinitely good Being actually is (namely good), he is excluded from being any other thing, as from being wise or powerful. I hardly think that Sir W. Hamilton would patronize this logic, learnt though it be in his school.</p>
+</blockquote>
+
+</details>
+
+<p id="p14"><small>¶14　p.96–97</small></p>
+
+<p>マンセル氏の形而上学の論述をこれ以上追う必要はないだろう。すでに述べたとおり、それはすべて同じ論点のすりかえである。ある特定の属性を無限にまで押し広げたものを、私たちが思考の中に表すことができないことを示そうとする箇所は、短いものが一つ見つかっただけである。公平を期して、それを注に引いておく<a href="#n11">[注11]</a>。その中に私が見つけうる論はすべて、ハミルトン卿がそれよりはるかにうまく述べた形で取り上げ、すでに答えたと私は考えている。</p>
+<details class="acc"><summary>原文（¶14）</summary>
+
+<blockquote lang="en">
+
+<p>It cannot be necessary to follow up Mr. Mansel's metaphysical dissertation any farther. It is all, as I have said, the same <em>ignoratio elenchi</em>. I have been able to find only one short passage in which he attempts to show that we are unable to represent in thought a particular [p.97] attribute carried to the infinite. For the sake of fairness, I cite it in a note.<a href="#n11">[注11]</a> All the argument that I can discover in it, I conceive that I have already answered, as stated much better by Sir W. Hamilton.</p>
+</blockquote>
+
+</details>
+
+<p id="p15"><small>¶15　p.97–98</small></p>
+
+<p>マンセル氏は、矛盾は「絶対者の本性」あるいは無限者の本性「それ自体の中にあるのではなく、ただ」「その本性についての私たち自身の概念」の中にあるだけだ、と言明する<a href="#n12">[注12]</a>必要があると考えている。彼は、神の本性そのものが矛盾していると言うつもりはなかったのである。しかし彼はこう言う<a href="#n13">[注13]</a>。「私たちは、心のつくりによって、絶対的で無限な存在者の存在を信じるよう強いられている。」そうであるなら、私は問う。私たちが無限で絶対的であると信じなければならないその存在者は、マンセル氏の定義においてそれらの語が持つ意味で、無限で絶対的なのか。もしそうでないなら、彼はほかのどんな意味でなのかを私たちに告げる責任がある。神が無限で絶対的であると信じるということは、何かを信じることでなければならず、それが何であるかを言うことができなければならない。もしマンセル氏が、そのような存在者が考えることのできないものであると証明したのとは別の意味で、無限で絶対的な存在者の実在を信じなければならない、と言うのなら、彼の論点は立証されていない。なぜなら彼は、私たちがその実在を信じるよう求められている、まさにその存在者が考えることのできないものであることを証明しようとしたからである。しかし実のところ、私たちが信じなければならないと彼が言う無限者と絶対者は、まさに彼の定義の無限者と絶対者なのである。無限者とは有限なものに対立するものであり、絶対者とは相対的なものに対立するものである。それゆえ彼は、何も証明しなかったか、意図したよりもはるかに多くを証明したかの、どちらかである。というのは、それらの観念に含まれると彼が主張する矛盾は、無限者と絶対者をとらえる仕方が不完全であることから生じるのではなく、それらの定義の中に、つまり語の意味そのものの中にあるからである。矛盾は、私たちが信じるよう求められている対象そのものの中にある。それゆえ、もしマンセル氏が、無限で絶対的な存在者はそれ自体として不可能だという結論から逃れようとするなら、ヘーゲルとともに、矛盾律（the Law of Contradiction）は絶対者には当てはまらない、絶対者については互いに矛盾する命題が両方とも真でありうる、と主張するほかはない。</p>
+<details class="acc"><summary>原文（¶15）</summary>
+
+<blockquote lang="en">
+
+<p>Mr. Mansel thinks it necessary to declare<a href="#n12">[注12]</a> that the contradictions are not in "the nature of the Absolute" or Infinite "in itself, but only" in "our own conception of that nature." He did not mean to say that the Divine Nature is itself contradictory. But he says<a href="#n13">[注13]</a> "We are compelled, by the constitution of our minds, to believe in the existence of an Absolute and Infinite Being." Such being the case, I ask, is the Being, whom we must believe to be infinite and absolute, infinite and absolute in the meaning which those terms bear in Mr. Mansel's definitions of them? If not, he is bound to tell us in what other meaning. Believing God to be infinite and absolute must be believing something, and it must be possible to say what. If Mr. Mansel means that we must believe the reality of an Infinite and Absolute Being in some other sense than that in which he has proved such a Being to be inconceivable, his point is not made out, since he undertook to prove the inconceivability of the very Being in whose reality we are required to believe. But the truth is that the Infinite and Absolute which he says we must believe in, are the very Infinite and Absolute of his definitions. The Infinite is that which is opposed to the Finite; the Absolute, that which [p.98] is opposed to the Relative. He has therefore either proved nothing, or vastly more than he intended. For the contradictions which he asserts to be involved in the notions, do not follow from an imperfect mode of apprehending the Infinite and Absolute, but lie in the definitions of them; in the meaning of the words themselves. The contradictions are in the very object which we are called upon to believe. If, therefore, Mr. Mansel would escape from the conclusion that an Infinite and Absolute Being is intrinsically impossible, it must be by affirming, with Hegel, that the Law of Contradiction does not apply to the Absolute; that, respecting the Absolute, contradictory propositions may both be true.</p>
+</blockquote>
+
+</details>
+
+<p id="p16"><small>¶16　p.98</small></p>
+
+<p>さて、筋違いの論点をめぐるマンセル氏の形而上学の論から離れて、はるかに重要な主題、彼の実践上の結論に移ろう。その結論とは、私たちは神の属性を、神性についてのある言明を、神の性格と相いれないという理由で退けてよいと言えるほどには知ることができない、というものである。この主張が、人間の知識の相対性から正当に導かれる系であるかどうかを調べよう。その相対性を、実際にあるとおりのものとしてとらえても、ハミルトン卿とマンセル氏が理解するとおりのものとしてとらえてもである。</p>
+<details class="acc"><summary>原文（¶16）</summary>
+
+<blockquote lang="en">
+
+<p>Let us now pass from Mr. Mansel's metaphysical argumentation on an irrelevant issue, to the much more important subject of his practical conclusion, namely, that we cannot know the divine attributes in such a manner, as can entitle us to reject any statement respecting the Deity on the ground of its being inconsistent with his character. Let us examine whether this assertion is a legitimate corollary from the relativity of human knowledge, either as it really is, or as it is understood to be by Sir W. Hamilton and by Mr. Mansel.</p>
+</blockquote>
+
+</details>
+
+<p id="p17"><small>¶17　p.98–99</small></p>
+
+<p>マンセル氏によれば、神についての私たちの知識の根本の性質は、私たちが神をそれ自体においてあるとおりには知らず、また知ることができない、という点にある。それゆえ彼は、彼が合理主義者（Rationalists）と呼ぶある人々を、ある言明を神の性格と相いれないとして退けるとき、哲学的でないとして非難する。これは、言葉のうえでは、のちの超越論者（Transcendentalists）の一部、つまり私たちが神の本性を直観（intuition）していると考える人々に対しては、有効な答えである。もっとも、その人々に対してさえ、この答えが上っ面のものにすぎないことを示すのは難しくないだろう。しかし、マンセル氏自身と同じく人間の知識の相対性を認める「合理主義者」は、彼の推論によって痛くもかゆくもない。私たちは神をそれ自体においてあるとおりには知ることができない、と彼らは答える。それは認めよう。だから何だというのか。私たちは人間をそれ自体においてあるとおりに、あるいは物質をそれ自体においてあるとおりに、知ることができるのか。私たちは、人間や物質について持っている知識のほかに、神についての知識を持つと言い立ててはいない。私が仲間の人間たちも、自然のどの力も、それ自体においてあるとおりには知らないからといって、それらについて聞くことを、それらの性格と相いれないとして信じない自由が私にはない、ということになるだろうか。私は人間と自然について、それ自体においてあるとおりにではなく、私たちに対してあるとおりに、何ほどかのことを知っている。そして私が神について何かを知っていると思うのも、神がそれ自体においてあるとおりにではなく、私たちに対するものとしてなのである。私が神に帰する属性、たとえば善さ、知識、力は、どれも相対的なものである。それらは（と合理主義者は言う）私の経験によって考えることができるようになる属性であり、私はそれらを、神の直観によって絶対的に証明されたものとしてではなく、私の感覚と理性の能力をとおして知られる、被造物への神の働きによって、現象として証明されたものとみなしている。私が神について述べようとするのは、これらの相対的な属性の、それぞれを無限の度合いにしたものだけである。私がある教説を神の本性と相いれないとして退けるとき、それは神がそれ自体においてあるところと相いれないからではなく、神が私たちに現れているところと相いれないからである。私の神についての知識が現象のうえのものにすぎないなら、私が退ける主張もまた現象のうえのものである。それらの主張が私の神についての相対的な知識と相いれないなら、私の神についての知識はすべて相対的だと言っても、答えにはならない。それは、事実だとされるあることを神にふさわしくないとして信じないことに対する反論にはならない。ちょうど、事実だとされる別のことを、テュルゴーやワシントンにふさわしくないとして信じないことに対する反論にならないのと同じである。テュルゴーやワシントンもまた、私はヌーメノンとしてではなく、ただ現象（Phænomena）として知っているにすぎないのである。</p>
+<p><small>訳注：「（と合理主義者は言う）」とあるとおり、この段の「私」は、ミルが合理主義者の側に立って語らせている声である。</small></p>
+
+<details class="acc"><summary>原文（¶17）</summary>
+
+<blockquote lang="en">
+
+<p>The fundamental property of our knowledge of God, Mr. Mansel says, is that we do not and cannot know him as he is in himself: certain persons, therefore, whom he calls Rationalists, he condemns as unphilosophical, when they reject any statement as inconsistent with the character of God. This is a valid answer, as far as words go, to some of the later Transcendentalists—to those who think that we have an intuition of the Divine Nature; though even as to them it would not be difficult to show that the answer is but skin-deep. But those "Rationalists" who hold, with Mr. Mansel himself, the relativity of human knowledge, are not touched by his reasoning. We cannot know God as he is in himself (they reply); granted: and what then? Can we know man as he is in himself, or matter as it is in itself? We do not claim any other knowledge of God than such [p.99] as we have of man or of matter. Because I do not know my fellow-men, nor any of the powers of nature, as they are in themselves, am I therefore not at liberty to disbelieve anything I hear respecting them as being inconsistent with their character? I know something of Man and Nature, not as they are in themselves, but as they are relatively to us; and it is as relative to us, and not as he is in himself, that I suppose myself to know anything of God. The attributes which I ascribe to him, as goodness, knowledge, power, are all relative. They are attributes (says the rationalist) which my experience enables me to conceive, and which I consider as proved, not absolutely, by an intuition of God, but phænomenally, by his action on the creation, as known through my senses and my rational faculty. These relative attributes, each of them in an infinite degree, are all I pretend to predicate of God. When I reject a doctrine as inconsistent with God's nature, it is not as being inconsistent with what God is in himself, but with what he is as manifested to us. If my knowledge of him is only phænomenal, the assertions which I reject are phænomenal too. If those assertions are inconsistent with my relative knowledge of him, it is no answer to say that all my knowledge of him is relative. That is no more a reason against disbelieving an alleged fact as unworthy of God, than against disbelieving another alleged fact as unworthy of Turgot, or of Washington, whom also I do not know as Noumena, but only as Phænomena.</p>
+</blockquote>
+
+</details>
+
+<p id="p18"><small>¶18　p.99</small></p>
+
+<p>マンセル氏がこの難点から抜け出す道は一つしかなく、彼はその道をとる。彼は、絶対的な存在者がそれ自体において知りえないというだけでなく、絶対的な存在者の相対的な属性もまた同じく知りえない、と主張しなければならない。知恵、正義、慈愛、慈悲が、神の中にあるとおりには何であるのかを私たちは知らない、と言わなければならない。そして実際に彼はそう言っている。以下は、この主題についての彼のじかの発言である。暗に含まれた教説としては、それは彼の論の全体に行きわたっている。</p>
+<details class="acc"><summary>原文（¶18）</summary>
+
+<blockquote lang="en">
+
+<p>There is but one way for Mr. Mansel out of this difficulty, and he adopts it. He must maintain, not merely that an Absolute Being is unknowable in himself, but that the Relative attributes of an Absolute Being are unknowable likewise. He must say that we do not know what Wisdom, Justice, Benevolence, Mercy, are, as they exist in God. Accordingly he does say so. The following are his direct utterances on the subject: as an implied doctrine, it pervades his whole argument.</p>
+</blockquote>
+
+</details>
+
+<p id="p19"><small>¶19　p.100</small></p>
+
+<p>「経験が私たちに突きつける事実<a href="#n14">[注14]</a>であり、たとえ隠せるとしても隠しても無益な事実であるが、私たちが考えうる最高の人間の道徳性を手本にして神を思い描いても、神の自然の摂理の運びが示すすべての現象を説明するには足りない。身体の苦しみが加えられること、道徳的な悪が許されていること、善い人の逆境、悪い人の繁栄、罪ある者の罪が罪のない者の不幸を巻き込むこと、道徳と宗教の知識が世界に遅れて現れ、偏って配られていること――これらは、どのようにしてかは分からないが、疑いなく神の無限の善さと両立しうる事実である。しかし、その善さのただ一つの、それで足りる型が人間の有限な善さのうちに見いだされる、という想定では、確かに説明できない事実である。」言いかえれば、神に帰せられる無限の善さは、私たちが同胞のうちに知り、愛している善さが、程度において無限であるという点だけで区別されたものではなく、種類が違い、まったく別の性質である、と想定しなければならないということである。一方を有限な善さと呼び、他方を無限な善さと呼ぶとき、私たちは言葉が言い表すことを意味しているのではなく、何か別のことを意味している。違うとみなしているものに、わざと同じ名前を当てているのである。</p>
+<p><small>訳注：誌面では、この段は p.100 の頭で一字下げて始まる普通の段で、マンセルからの引用（「man."」まで）は行頭ごとに引用符を置く。「In other words」からは同じ段の中に続くミルの地の文で、行頭の引用符はない。p.99 の終わり（前の役の受け持ち）の「The following are his direct utterances on the subject」を受ける引用。誌面の「to be」は「to- be」のように見える汚れがあるが、ふつうの語間とした。</small></p>
+
+<details class="acc"><summary>原文（¶19）</summary>
+
+<blockquote lang="en">
+
+<p>"It is a fact<a href="#n14">[注14]</a> which experience forces upon us, and which it is useless, were it possible, to disguise, that the representation of God after the model of the highest human morality which we are capable of conceiving, is not sufficient to account for all the phænomena exhibited by the course of his natural Providence. The infliction of physical suffering, the permission of moral evil, the adversity of the good, the prosperity of the wicked, the crimes of the guilty involving the misery of the innocent, the tardy appearance and partial distribution of moral and religious knowledge in the world—these are facts which no doubt are reconcilable, we know not how, with the Infinite Goodness of God, but which certainly are not to be explained on the supposition that its sole and sufficient type is to be found in the finite goodness of man." In other words, it is necessary to suppose that the infinite goodness ascribed to God is not the goodness which we know and love in our fellow-creatures, distinguished only as infinite in degree, but is different in kind, and another quality altogether. When we call the one finite goodness and the other infinite goodness, we do not mean what the words assert, but something else: we intentionally apply the same name to things which we regard as different.</p>
+</blockquote>
+
+</details>
+
+<p id="p20"><small>¶20　p.100–101</small></p>
+
+<p>そのためマンセル氏は、無限な善さは有限な善さと程度においてだけ違うという意見を、論敵の異端として攻める。「神の属性は人間の属性と程度においてだけ違い、種類においては違わない。したがって、私たちが自分のうちに直接に意識している心と道徳のある性質は、同時に、神の無限の完全さの真の、十分な（adequate）像を与える」という考え<a href="#n15">[注15]</a>を、彼は「人間の理性を、そのふつうの正常な働きのままで、宗教的な真理の最高の基準とみなす、俗な合理主義（the vulgar Rationalism）」と同じものとする（<em>adequate</em> という語はうっかり紛れ込んだに違いない。そうでなければ、許しがたい誤った描き方になるからである）。そしてこの俗な合理主義の論じ方を特徴づけるにあたって、彼はその原理を次のものだと言う<a href="#n16">[注16]</a>。「被造物のうちに私たちが意識するすべての優れた点は、より高い程度においてではあるが、同じ仕方で創造主のうちに必ずある。神はたしかに人間より賢く、より正しく、より慈悲深い。しかしまさにそれゆえに、神の知恵と正義と慈悲は、人間における対応する属性と相容れないものを何も含んではならない。」マンセル氏が強く抗議しなければならないと感じているのは、この教説に対してである。</p>
+<p><small>訳注：誌面の斜体は、ミルの括弧の中で語を挙げた <em>adequate</em>（引用の中の adequate は立体）。訳では、引用の中の「十分な」に原語を添え、ミルの括弧の注は文の終わりに移した。</small></p>
+
+<details class="acc"><summary>原文（¶20）</summary>
+
+<blockquote lang="en">
+
+<p>Accordingly Mr. Mansel combats, as a heresy of his opponents, the opinion that infinite goodness differs only in degree from finite goodness. The notion<a href="#n15">[注15]</a> "that the attributes of God differ from those of man in degree only, not in kind, and hence that certain mental and moral qualities of which we are immediately conscious in ourselves, furnish at the same time a true and adequate image of the infinite perfections of God," (the word <em>adequate</em> must have slipped in by inadvertence, since otherwise it would be an inexcusable misrepresentation) he identifies with "the vulgar Rationalism which regards the reason of man, in its ordinary and normal [p.101] operation, as the supreme criterion of religious truth." And in characterizing the mode of arguing of this vulgar Rationalism, he declares its principles to be, that<a href="#n16">[注16]</a> "all the excellences of which we are conscious in the creature, must necessarily exist in the same manner, though in a higher degree, in the Creator. God is indeed more wise, more just, more merciful, than man; but for that very reason, his wisdom and justice and mercy, must contain nothing that is incompatible with the corresponding attributes in their human character." It is against this doctrine that Mr. Mansel feels called on to make an emphatic protest.</p>
+</blockquote>
+
+</details>
+
+<p id="p21"><small>¶21　p.101–102</small></p>
+
+<p>そこで私は、論理と道徳の認められた原理に立つ。違うものを意味しているときには、それらを同じ名前で呼び、同じ述語を、道徳的なものであれ知的なものであれ、当てる権利はない、という原理である。正しい（Just）、慈悲深い（Merciful）、慈愛深い（Benevolent）という語には、私たちが同胞についてそれを述べるときの意味のほかに、言語の上での意味はない。そしてそれを言い表すつもりでないなら、その語を使ういわれはない。それらを神について肯定するとき、程度においてより大きいという点だけで違う、まさにその性質を肯定するつもりでないなら、私たちは哲学的にも道徳的にも、それらを肯定する資格をまったく持たない。性質は同じだが、無限へと高められたときのありさまでは考えることができないのだ、と言われるなら、その要素の一つ、つまりその無限性においては十分に考えることができないことを、私は認める。しかし、ほかの要素においては考えることができる。それらの要素は、無限に展開したものでも有限に展開したものでも、まったく同じだからである。無限へと推し進められたものは何であれ、有限であるときの同じものが持つすべての性質を持たなければならない。ただし有限であることに依る性質は除く。無限な空間は考えることができないと言った多くの人のうち、それが空間で<em>ない</em>と考えた者が一人でもいただろうか。空間を特徴づけるすべての性質を持たないと考えた者がいただろうか。無限な空間は立方体でも球でもありえない。それらは限られてあることの様態だからである。しかし、その中を巡っていけば、広がりを持たない領域、ある部分がほかの部分の外にない領域、物体（Body）が間に入っていないのに運動が不可能な領域、三角形の二辺の和が残りの一辺より小さい領域に行き着くかもしれない、と想像する者がいるだろうか。無限な善さについても、同じことを言える。無限なものとしての（より正しくは絶対的なものとしての）それに何が属するかを、私は知っているとは言わない。しかし、無限な善さは善さでなければならないこと、善さと両立しないものは無限な善さとも両立しないことは、知っている。神に善さを帰するとき、私が善さによって意味するものを意味しないなら、つまり、私がいくらか知っている善さではなく、理解できない実体の理解できない属性を意味するなら、そしてそれが、私の知るかぎりでは私が愛し敬う性質とまったく違う性質であるかもしれず、さらにマンセル氏を信じるなら、いくつかの大事な点でこれと反対でさえなければならないのなら、それを善さと呼ぶことで私は何を意味しているのか。また、それを敬うどんな理由が私にあるのか。その属性が何であるかについて何も知らないなら、それが敬うにふさわしい対象であるとは言えない。神の善さは人間の善さと種類において違うかもしれないと言うことは、言い回しを少し変えて、神はひょっとすると善くないかもしれないと言うことでなくて何だろうか。意味において考えていないことを言葉で主張すること――これは、道徳的な虚偽について与えうるかぎり適切な定義である。そのうえ、ある宗教において、何か知られない属性が神性に帰せられ、その宗教の外的な証拠が私の心にとってきわめて決定的で、それが神から来ていると実際に私を納得させるとしよう。私が、善い人のうちに、どれほど劣った程度であれ見いだすのと同じ道徳的な属性を神が持つと信じないなら、神が真実を語ることについて、私はどんな保証の根拠を持つのか。啓示（Revelation）へのあらゆる信頼は、神の属性が、程度のほかはすべて、最良の人間の属性と同じであるという確信を前提にしている。</p>
+<p><small>訳注：誌面の <em>not</em> は斜体。訳では「で*ない*」とした。p.101 の右の余白、p.102 の左の余白（「as effectually」「Unless」の行頭）に手書きの印があるが、本文ではない。</small></p>
+
+<details class="acc"><summary>原文（¶21）</summary>
+
+<blockquote lang="en">
+
+<p>Here, then, I take my stand on the acknowledged principle of logic and of morality, that when we mean different things we have no right to call them by the same name, and to apply to them the same predicates, moral and intellectual. Language has no meaning for the words Just, Merciful, Benevolent, save that in which we predicate them of our fellow-creatures; and unless that is what we intend to express by them, we have no business to employ the words. If in affirming them of God we do not mean to affirm these very qualities, differing only as greater in degree, we are neither philosophically nor morally entitled to affirm them at all. If it be said that the qualities are the same, but that we cannot conceive them as they are when raised to the infinite, I grant that we cannot adequately conceive them in one of their elements, their infinity. But we can conceive them in their other elements, which are the very same in the infinite as in the finite development. Anything carried to the infinite must have all the properties of the same thing as finite, except those which depend upon the finiteness. Among the many who have said that we cannot conceive infinite space, did any one ever suppose that it is <em>not</em> space? that it does not possess all the properties by which space is characterized? Infinite Space cannot be cubical or spherical, because these are modes of being bounded: but does any one [p.102] imagine that in ranging through it we might arrive at some region which was not extended; of which one part was not outside another; where, though no Body intervened, motion was impossible; or where the sum of two sides of a triangle was less than the third side? The parallel assertion may be made respecting infinite goodness. What belongs to it as Infinite (or more properly as Absolute) I do not pretend to know; but I know that infinite goodness must be goodness, and that what is not consistent with goodness, is not consistent with infinite goodness. If in ascribing goodness to God I do not mean what I mean by goodness; if I do not mean the goodness of which I have some knowledge, but an incomprehensible attribute of an incomprehensible substance, which for aught I know may be a totally different quality from that which I love and venerate—and even must, if Mr. Mansel is to be believed, be in some important particulars opposed to this—what do I mean by calling it goodness? and what reason have I for venerating it? If I know nothing about what the attribute is, I cannot tell that it is a proper object of veneration. To say that God's goodness may be different in kind from man's goodness, what is it but saying, with a slight change of phraseology, that God may possibly not be good? To assert in words what we do not think in meaning, is as suitable a definition as can be given of a moral falsehood. Besides, suppose that certain unknown attributes are ascribed to the Deity in a religion the external evidences of which are so conclusive to my mind, as effectually to convince me that it comes from God. Unless I believe God to possess the same moral attributes which I find, in however inferior a degree, in a good man, what ground of assurance have I of God's veracity? All trust in a Revelation presupposes a conviction that God's attributes are the same, in all but degree, with the best human attributes.</p>
+</blockquote>
+
+</details>
+
+<p id="p22"><small>¶22　p.102–103</small></p>
+
+<p>人間の最高の心が考えうるすべての優れた点が、私たちには考えることのできない程度においてそなわる存在者がいる、という「よい知らせ」の代わりに、世界はある存在者に治められていて、その属性は無限だが、それが何であるかを私たちは知ることができず、その統治の原理が何であるかも知ることができない、ただ「私たちが考えうる最高の人間の道徳性」がそれを是認しないことだけは分かる、と知らされるのだとしよう。それならば、そのことを私に納得させてくれればよい。そのときは、私は自分の運命にできるかぎり耐えよう。しかし、私がこれを信じなければならず、しかも同時に、この存在者を、最高の人間の道徳性を言い表し肯定する名前で呼ばなければならない、と言われるなら、私ははっきりと言う。そうはしない、と。そのような存在者が私に対してどんな力を持っていようと、一つだけ、その者にさせないことがある。私に自分を崇めさせること、それはさせない。私が同胞にその形容語を当てるときに意味するものでない存在者を、私は決して善いとは呼ばない。そう呼ばないからといって、そのような存在者が私に地獄行きを言い渡せるのなら、私は地獄へ行こう。</p>
+<p><small>訳注：「glad tidings」は福音を指す言い回しで、引用符はミルのもの。「the highest human morality which we are capable of conceiving」は ¶19 の引用の語句をそのまま引き直したもの。「he shall not do」「he shall not compel me」の shall は、相手の力の有無でなく、私がさせないという意志を言う。誌面の p.103 の「not sanction them」と「I will call no being good, … fellow-creatures」には手書きの下線、p.102 の左と p.103 の右の余白には縦の線があるが、読み手の書き込みで、印刷の斜体ではない。下線が字に重なるが、字は読める。</small></p>
+
+<details class="acc"><summary>原文（¶22）</summary>
+
+<blockquote lang="en">
+
+<p>If, instead of the "glad tidings" that there exists a Being in whom all the excellences which the highest human mind can conceive, exist in a degree inconceivable to us, [p.103] I am informed that the world is ruled by a being whose attributes are infinite, but what they are we cannot learn, nor what are the principles of his government, except that "the highest human morality which we are capable of conceiving" does not sanction them; convince me of it, and I will bear my fate as I may. But when I am told that I must believe this, and at the same time call this being by the names which express and affirm the highest human morality, I say in plain terms that I will not. Whatever power such a being may have over me, there is one thing which he shall not do: he shall not compel me to worship him. I will call no being good, who is not what I mean when I apply that epithet to my fellow-creatures; and if such a being can sentence me to hell for not so calling him, to hell I will go.</p>
+</blockquote>
+
+</details>
+
+<p id="p23"><small>¶23　p.103–104</small></p>
+
+<p>これはまた、私自身の限られた知性を、神の知恵やほかのどんな知恵の基準として立てることでもない。ある人が私より賢く善いのが、その語の何か知られない、知ることのできない意味においてではなく、その語の知られた人間的な意味においてであるなら、その人について私が持つ評価がなければ別様に考えたであろうときにも、その人の考えることは真であるかもしれず、その人のすることは正しいかもしれない、と私は進んで信じる。しかしそれは、その人と私とが根においては同じ真理の基準と正しさの規則を持っており、その人がおそらく私よりもその場合の事実をよく分かっている、と私が信じるからである。その人の考える正しさが私の考える不正であることも十分ありうる、と私が思うなら、私はその人の判断に従わないだろう。同じように、世界の絶対的に善い支配者を心から信じる者は、その支配者に帰せられるある行いを、私たちに知りうるその事情のごく小さな部分がそれを十分に正当化しないというだけで、信じないことは許されない。しかし、その支配者について私が告げられることが、私の知識に加わると想定できるどんな事実によっても、私にそれが正しいと分からせることができない種類のものであるなら、つまり、その支配者が世界を扱うとされるやり方が、その支配者には知られ私には知られていない事柄についてのどんな想像しうる仮説によっても、私がその語を使うときに意味する善さと知恵に合うものにできず、むしろその語の意味とまっすぐに矛盾するようなものであるなら、そのとき、矛盾律が人間の思考の法則であるなら、私はこれらのことを信じると同時に、神は善く賢い存在者であると信じることはできない。ある存在者を賢いとか善いとか呼びながら、その語が意味するただ一つの性質を意味していないなら、私は不誠実に語っている。相手が聞きたがっていると私が思い込んでいる形容語で相手にへつらい、相手を自分の目的に引き込もうとしているのである。というのも、注目に値することだが、神に当てられる語が人間的な意味を持つかどうかという疑いは、その語が神の道徳的な属性に関わるときにだけ感じられ、神の力については決して聞かれないからである。神の全能（omnipotence）は、私たちが人間と自然のうちに知っている力の無限の程度を意味すると想定してはならない、それはひょっとすると神が私たちを殺したり、永遠の炎に引き渡したりできることを意味しないかもしれない、と言われることは決してない。神の力は常にまったく人間的な意味で解されるのに、神の善さと正義は、理解できない意味においてだけそうなのだと理解されなければならないのである。次のように推し量るのは不公平だろうか。こうなるのは、神の名において語る人々が、神の力については人間的な考えを必要としている（人を畏れさせ、服従を強いることのできる観念は、本当の感情に訴えなければならないからである）一方で、神の善さについては、考えることのできない何かとして考えられるだけで満足しているからであり、それは、私たちが考えうるあらゆる善さと和解できないほどぶつかる、神についての教説を教えるよう求められることが、彼らにはあまりにも多いからだ、と。</p>
+<p><small>訳注：最後の文は誌面では一つの疑問文（「Is it unfair to surmise that … ?」）。訳では長いので、「次のように推し量るのは不公平だろうか」を先に置いて分けた。p.104 の「moral」は誌面で「mqral」のように字がかすれるが、moral と読む。</small></p>
+
+<details class="acc"><summary>原文（¶23）</summary>
+
+<blockquote lang="en">
+
+<p>Neither is this to set up my own limited intellect as a criterion of divine or of any other wisdom. If a person is wiser and better than myself, not in some unknown and unknowable meaning of the terms, but in their known human acceptation, I am ready to believe that what this person thinks may be true, and that what he does may be right, when, but for the opinion I have of him, I should think otherwise. But this is because I believe that he and I have at bottom the same standard of truth and rule of right, and that he probably understands better than I the facts of the particular case. If I thought it not improbable that his notion of right might be my notion of wrong, I should not defer to his judgment. In like manner, one who sincerely believes in an absolutely good ruler of the world, is not warranted in disbelieving any act ascribed to him, merely because the very small part of its circumstances which we can possibly know does not sufficiently justify it. But if what I am told respecting him is of a kind which no facts that can be supposed added to my knowledge could make me perceive to be right; if his alleged ways of dealing with the world are such as no imaginable hypothesis respecting things known to him and unknown to me, could make consistent with the good-[p.104]ness and wisdom which I mean when I use the terms, but are in direct contradiction to their signification; then, if the law of contradiction is a law of human thought, I cannot both believe these things, and believe that God is a good and wise being. If I call any being wise or good, not meaning the only qualities which the words import, I am speaking insincerely; I am flattering him by epithets which I fancy that he likes to hear, in the hope of winning him over to my own objects. For it is worthy of remark that the doubt whether words applied to God have their human signification, is only felt when the words relate to his moral attributes; it is never heard of in regard to his power. We are never told that God's omnipotence must not be supposed to mean an infinite degree of the power we know in man and nature, and that perhaps it does not mean that he is able to kill us, or consign us to eternal flames. The Divine Power is always interpreted in a completely human signification, but the Divine Goodness and Justice must be understood to be such only in an unintelligible sense. Is it unfair to surmise that this is because those who speak in the name of God, have need of the human conception of his power, since an idea which can overawe and enforce obedience, must address itself to real feelings; but are content that his goodness should be conceived only as something inconceivable, because they are so often required to teach doctrines respecting him which conflict irreconcilably with all goodness that we can conceive?</p>
+</blockquote>
+
+</details>
+
+<p id="p24"><small>¶24　p.104–105</small></p>
+
+<p>もう一度言っておきたいが、マンセル氏の結論は、その議論の行き着くところまでは行っていない。神の正義と善さは、人間がその語で理解するものと<em>まったく</em>違う、という教説を、彼は退けている。私たちが考えるかぎりでのその性質は、神に属する正義と善さに<em>いくらか似ている</em>ことを、彼は認めるだろうし、実際に認めている。人間は神の似姿に造られたからである。しかし、このような半ばの譲歩は、キリスト教徒なら誰も避けられないものではあるが（それがなければキリスト教の体系の全体が覆るからである）、彼を救うことはできない。彼はそれによってどんな難しさからも解き放たれず、一方でそれは彼の議論の骨組みの全体を壊してしまう。神の善さは、人間の善さとは違うものだと言われながら、人間の善さの考えがその何か不完全な映し（reflexion）や似姿であるとされる。では、それは、人々が善さと呼ぶものと、その性質の<em>本質</em>において、つまりそれを善さに<em>している</em>ものにおいて、一致するのか。一致するなら、「合理主義者」が正しい。一方から他方へと推論することは不当ではない。一致しないなら、神の属性は、ほかの何であれ、善さではなく、その名前で呼ばれるべきではない。それと一致する何か人間の考えがないなら、どんな人間の名前もそれに正しく当てることはできない。それはただ、知られないものの知られない属性である。それは私たちとの関わりにおいて存在を持たず、私たちはそれについて何も肯定できず、それに何の崇拝も負わない。これが避けられない二者択一である。</p>
+<p><small>訳注：誌面の斜体は <em>wholly</em>・<em>some likeness</em>・<em>essence</em>・<em>constitutes</em>。訳では「<em>まったく</em>」「<em>いくらか似ている</em>」「<em>本質</em>」「<em>している</em>」に当てた。「semi-concession」は誌面で行末の「semi-」と次行の「concession」に切れる。同じ本のほかの所にこの語はないが、同じ年のボストン版（W. V. Spencer, 1865。Internet Archive <code>anexaminationsi01projgoog</code>）の写しの文字では「semi-con-」と語の中にハイフンがあるので、語の一部とした。「affirm nothing of it, and owe it」の読点は、この走査では尾が欠けて終止符のように見えるが、拡大すると点の下に短い尾があり、同じ 1865 年ロンドン版のほかの写し（Internet Archive <code>examinationofsir00mill</code>・<code>examinationofsir0000john</code>）では読点がはっきり刷られている。</small></p>
+
+<details class="acc"><summary>原文（¶24）</summary>
+
+<blockquote lang="en">
+
+<p>I am anxious to say once more, that Mr. Mansel's conclusions do not go the whole length of his arguments, and that he disavows the doctrine that God's justice and goodness are <em>wholly</em> different from what human beings understand by the terms. He would, and does, admit that the qualities as conceived by us bear <em>some likeness</em> to the justice and goodness which belong to God, since man was made in God's image. But such a semi-concession, which no Christian could avoid making, since without it the whole Christian scheme would be [p.105] subverted, cannot save him; he is not relieved by it from any difficulties, while it destroys the whole fabric of his argument. The Divine goodness, which is said to be a different thing from human goodness, but of which the human conception of goodness is some imperfect reflexion or resemblance, does it agree with what men call goodness in the <em>essence</em> of the quality—in what <em>constitutes</em> it goodness? If it does, the "Rationalists" are right; it is not illicit to reason from the one to the other. If not, the divine attribute, whatever else it may be, is not goodness, and ought not to be called by the name. Unless there be some human conception which agrees with it, no human name can properly be applied to it; it is simply the unknown attribute of a thing unknown; it has no existence in relation to us, we can affirm nothing of it, and owe it no worship. Such is the inevitable alternative.</p>
+</blockquote>
+
+</details>
+
+<p id="p25"><small>¶25　p.105</small></p>
+
+<p>結論を言えば、マンセル氏は、自分の哲学的な前提と神学的な結論とのあいだに、何のつながり（connexion）も示していない。人間の知識の相対性、絶対者を認識できないこと（uncognoscibility）、すべての属性を持つ、あるいはどんな属性も持たない存在者を考えようとすると生じる矛盾――これらは、ほかの物について持つのと同じ種類の知識、つまりそれが絶対的にあるとおりにではなく、相対的に知る知識を、私たちが神について持つことの妨げには少しもならない。神の道徳的な属性を、ある教説や主張がそれと両立しないと肯定できるような仕方では考えることができない、という命題は、人間の心の法則に何の根拠も持たない。しかも、仮にそれを認めたとしても、人間の性質と同じ名前を持ちながら、同じ意味では理解されない属性を神に帰するべきだ、ということにはならない。それが示すのは、神にどんな道徳的な属性もまったく帰するべきではない、ということであろう。私たちに知られる、あるいは考えうるどんな道徳的な属性も神について真ではなく、私たちは道徳的な存在者としての神について、まったくの無知に定められていることになるからである。</p>
+<p><small>訳注：「To conclude:」の句読点は、この走査では手書きの「//」が重なって上の点しか見えないが、同じ 1865 年ロンドン版のほかの写し（Internet Archive <code>examinationofsir00mill</code>・<code>examinationofsir0000john</code>・<code>anexaminationsi05millgoog</code>）ではコロン（:）と読める。「relatively.」のあとにも同じ手書きの「//」があるが、読み手の書き込み。「uncognoscibility」は誌面どおり（訳語の表の incognisable とは別の語形）。ここで第 VII 章が終わる。</small></p>
+
+<details class="acc"><summary>原文（¶25）</summary>
+
+<blockquote lang="en">
+
+<p>To conclude: Mr. Mansel has not made out any connexion between his philosophical premises and his theological conclusion. The relativity of human knowledge, the uncognoscibility of the Absolute, and the contradictions which follow the attempt to conceive a Being with all or without any attributes, are no obstacles to our having the same kind of knowledge of God which we have of other things, namely not as they exist absolutely, but relatively. The proposition, that we cannot conceive the moral attributes of God in such a manner as to be able to affirm of any doctrine or assertion that it is inconsistent with them, has no foundation in the laws of the human mind: while if admitted, it would not prove that we should ascribe to God attributes bearing the same name as human qualities, but not to be understood in the same sense: it would prove that we ought not to ascribe any moral attributes to God at all, inasmuch as no moral attributes known or conceivable by us are true of him, and we are condemned to absolute ignorance of him as a moral being.</p>
+</blockquote>
+
+</details>
+
+</div></details><details class="sec" id="ミルの脚注"><summary>ミルの脚注</summary><div class="secbody">
+<p id="n1"><small>注1　p.90</small></p>
+
+<p>『宗教的思考の限界』第 4 版、29、30 頁。</p>
+<details class="acc"><summary>原文（注1）</summary>
+
+<blockquote lang="en">
+
+<p>Limits of Religious Thought, 4th edition, pp. 29, 30.</p>
+</blockquote>
+
+</details>
+
+<p id="n2"><small>注2　p.91</small></p>
+
+<p>『論集』（Discussions）、14 頁、注。</p>
+<details class="acc"><summary>原文（注2）</summary>
+
+<blockquote lang="en">
+
+<p>Discussions, p. 14, note.</p>
+</blockquote>
+
+</details>
+
+<p id="n3"><small>注3　p.92</small></p>
+
+<p>『宗教的思考の限界』200 頁。</p>
+<details class="acc"><summary>原文（注3）</summary>
+
+<blockquote lang="en">
+
+<p>Limits of Religious Thought, p. 200.</p>
+</blockquote>
+
+</details>
+
+<p id="n4"><small>注4　p.92</small></p>
+
+<p>同書 31 頁。</p>
+<details class="acc"><summary>原文（注4）</summary>
+
+<blockquote lang="en">
+
+<p>Ibid. p. 31.</p>
+</blockquote>
+
+</details>
+
+<p id="n5"><small>注5　p.93</small></p>
+
+<p>『宗教的思考の限界』32 頁。</p>
+<details class="acc"><summary>原文（注5）</summary>
+
+<blockquote lang="en">
+
+<p>Limits of Religious Thought, p. 32.</p>
+</blockquote>
+
+</details>
+
+<p id="n6"><small>注6　p.94</small></p>
+
+<p>『宗教的思考の限界』30 頁。</p>
+<details class="acc"><summary>原文（注6）</summary>
+
+<blockquote lang="en">
+
+<p>Limits of Religious Thought, p. 30.</p>
+</blockquote>
+
+</details>
+
+<p id="n7"><small>注7　p.94</small></p>
+
+<p>同書 31 頁。</p>
+<details class="acc"><summary>原文（注7）</summary>
+
+<blockquote lang="en">
+
+<p>Ibid. p. 31.</p>
+</blockquote>
+
+</details>
+
+<p id="n8"><small>注8　p.94</small></p>
+
+<p>‡ 同書、33 頁。</p>
+<p><small>訳注：p.94 の脚注の * と †（p.30・p.31）は、p.93 から続く前の段に付いたもので、ここには入れない。‡ だけがこの段の「a whole」に付く。</small></p>
+
+<details class="acc"><summary>原文（注8）</summary>
+
+<blockquote lang="en">
+
+<p>‡ Ibid. p. 33.</p>
+</blockquote>
+
+</details>
+
+<p id="n9"><small>注9　p.95</small></p>
+
+<ul>
+<li>『宗教的思考の限界』、30 頁。</li>
+</ul>
+<details class="acc"><summary>原文（注9）</summary>
+
+<blockquote lang="en">
+
+<ul>
+<li>Limits of Religious Thought, p. 30.</li>
+</ul>
+</blockquote>
+
+</details>
+
+<p id="n10"><small>注10　p.96</small></p>
+
+<ul>
+<li>『宗教的思考の限界』、48 頁。</li>
+</ul>
+<details class="acc"><summary>原文（注10）</summary>
+
+<blockquote lang="en">
+
+<ul>
+<li>Limits of Religious Thought, p. 48.</li>
+</ul>
+</blockquote>
+
+</details>
+
+<p id="n11"><small>注11　p.97</small></p>
+
+<ul>
+<li>「もの――対象――属性――人格――あるいは、意識のありうる多くの対象のうちの一つを指すほかのどんな語も、まさにその関係によって、必然的に有限であると言い表される。それゆえ、無限なもの、無限な対象、無限な属性、無限な人格は、同じ瞬間に有限でもあり無限でもあると言い表されることになる。……他方で、もし人間の属性がすべて、差異と関係と時間と人格性という条件のもとで考えられるなら、私たちはそのような属性を無限にまで拡大したものを思考の中に表すことはできない。それもまた、その属性を有限であると同時に無限であるものとして考えることになるからである。私たちがそうした属性を考えうるのは、せいぜい<em>不定に</em>でしかない。つまり、属性が限られているという事実から、しばしのあいだ思考をそらすことはできる。しかし、属性を<em>無限な</em>ものとして考えることはできない。つまり、限界のないことを積極的に考えることはできない。そうしようとした瞬間に、その概念の相反する要素が互いを締め出し、全体を消し去ってしまうからである。」――『宗教的思考の限界』、60 頁。</li>
+</ul>
+<p><small>訳注：indefinitely（不定に）と infinite（無限な）の対比は誌面の斜体による強調。限りがあることから目をそらすだけの「不定」と、限りのないことを積極的に考える「無限」とを分けている。</small></p>
+
+<details class="acc"><summary>原文（注11）</summary>
+
+<blockquote lang="en">
+
+<ul>
+<li>"A thing—an object—an attribute—a person—or any other term signifying one out of many possible objects of consciousness, is by that very relation necessarily declared to be finite. An infinite thing, or object, or attribute, or person, is therefore in the same moment declared to be both finite and infinite. . . And on the other hand, if all human attributes are conceived under the conditions of difference, and relation, and time, and personality, we cannot represent in thought any such attribute magnified to infinity; for this again is to conceive it as finite and infinite at the same time. We can conceive such attributes, at the utmost, only <em>indefinitely</em>: that is to say, we may withdraw our thoughts, for the moment, from the fact of their being limited; but we cannot conceive them as <em>infinite</em>; that is to say, we cannot positively think of the absence of the limit; for, the instant we attempt to do so, the antagonist elements of the conception exclude one another, and annihilate the whole."—Limits of Religious Thought, p. 60.</li>
+</ul>
+</blockquote>
+
+</details>
+
+<p id="n12"><small>注12　p.97</small></p>
+
+<p>† 同書、39 頁。</p>
+<details class="acc"><summary>原文（注12）</summary>
+
+<blockquote lang="en">
+
+<p>† Ibid. p. 39.</p>
+</blockquote>
+
+</details>
+
+<p id="n13"><small>注13　p.97</small></p>
+
+<p>‡ 同書、45 頁。</p>
+<details class="acc"><summary>原文（注13）</summary>
+
+<blockquote lang="en">
+
+<p>‡ Ibid. p. 45.</p>
+</blockquote>
+
+</details>
+
+<p id="n14"><small>注14　p.100</small></p>
+
+<p>『宗教的思考の限界』第四版の序、13 頁。</p>
+<details class="acc"><summary>原文（注14）</summary>
+
+<blockquote lang="en">
+
+<p>Limits of Religious Thought, Preface to the fourth edition, p. 13.</p>
+</blockquote>
+
+</details>
+
+<p id="n15"><small>注15　p.100</small></p>
+
+<p>同書、26 頁。</p>
+<details class="acc"><summary>原文（注15）</summary>
+
+<blockquote lang="en">
+
+<p>Ibid. p. 26.</p>
+</blockquote>
+
+</details>
+
+<p id="n16"><small>注16　p.101</small></p>
+
+<p>『宗教的思考の限界』28 頁。</p>
+<details class="acc"><summary>原文（注16）</summary>
+
+<blockquote lang="en">
+
+<p>Limits of Religious Thought, p. 28.</p>
+</blockquote>
+
+</details>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="peirce-love-abduction.html">パースの創造的な愛と、アブダクション</a> ・
+                <a href="peirce-evolutionary-love-ja.html">パース「進化的な愛」を、日本語で読む</a> ・
+                <a href="peirce-law-of-mind-ja.html">パース「心の法則」を、日本語で読む</a> ・
+                <a href="peirce-glassy-essence-ja.html">パース「人間のガラスのような本質」を、日本語で読む</a> ・
+                <a href="carus-onslaught-on-necessity-ja.html">ケーラス「パース氏の必然論への猛攻」を、日本語で読む</a> ・
+                <a href="mansel-limits-of-religious-thought-ja.html">マンセル『宗教的思考の限界』（1858）の序文を、日本語で読む</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

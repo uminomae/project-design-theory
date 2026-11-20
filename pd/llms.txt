@@ -159,6 +159,11 @@ Public explainer pages, written to be uniquely readable by LLMs without external
 - One-line: A Japanese translation, paragraph by paragraph, of the first Preface (pp.v–x) of Henry Longueville Mansel's The Limits of Religious Thought Examined in Eight Lectures (the Bampton Lectures of 1858; Oxford: J. Wright for John Murray, 1858), in which Mansel says that Sir William Hamilton's principle that "the Unconditioned is incognisable and inconceivable" suggested the principal part of his inquiries, with the English original under each paragraph. Peirce mentions "Dean Mansell's injudicious advocacy" of Hamilton in "Evolutionary Love" (1893) ¶20.
 - Status: only the Preface is translated, not the eight lectures or the notes; Peirce names neither the book nor a page, and Claude chose the Preface. There is no transcription; the text was built from the OCR and checked against the page images of the Internet Archive scan. The two Hamilton quotations were checked against Hamilton's Discussions (1852), pp.12 and 15. The translation is by Claude and has not been reviewed by a human. Quote and cite the original.
 
+### ミル『ハミルトン哲学の検討』（1865）の第 VII 章を、日本語で読む
+- URL: https://uminomae.github.io/project-design-theory/reader/mill-examination-of-hamilton-ja.html
+- One-line: A Japanese translation, paragraph by paragraph, of Chapter VII (pp.88–105) of John Stuart Mill's An Examination of Sir William Hamilton's Philosophy (London: Longman, Green, Longman, Roberts & Green, 1865; public domain; English), "The Philosophy of the Conditioned, as applied by Mr. Mansel to the Limits of Religious Thought", in which Mill examines Mansel's argument that God's attributes cannot be known in the sense of human goodness and justice, and answers that he will call no being good who is not good in the sense he applies to his fellow-creatures.
+- Status: only Chapter VII is translated; Peirce ("Evolutionary Love", 1893, ¶20) names neither the book nor a page, and Claude chose this chapter as Mill's direct answer to Mansel. There is no transcription; the text was built from the OCR and checked against the page images of the Internet Archive scan of the first edition. The passages of Mansel and Hamilton that Mill quotes were not checked against their books. The translation is by Claude (AI) and has not been reviewed by a person.
+
 ## Related Projects
 
 | Project | URL | Focus |

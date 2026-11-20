@@ -29,6 +29,7 @@
 - [ハーシェル「ケトレーの確率論」（1850）を、日本語で読む](herschel-quetelet-probabilities-ja.html)
 - [ダーウィンとウォレスのリンネ協会の論文（1858）を、日本語で読む](darwin-wallace-1858-ja.html)：自然選択の考えが初めて公にされた論文。
 - [マンセル『宗教的思考の限界』（1858）の序文を、日本語で読む](mansel-limits-of-religious-thought-ja.html)：「進化的な愛」がハミルトンの哲学の「弁護」と呼ぶ所。
+- [ミル『ハミルトン哲学の検討』（1865）の第 VII 章を、日本語で読む](mill-examination-of-hamilton-ja.html)：マンセルの「弁護」に、ミルが答えた章。「進化的な愛」の「ミルの唯名論」の段から。
 - [ダーウィン「歴史的概略」（『種の起源』第 3 版の巻頭・1861）を、日本語で読む](darwin-historical-sketch-ja.html)
 - [ジェイムズ（父）『実体と影』（1863）の「創造的な愛」の所を、日本語で読む](james-substance-and-shadow-ja.html)：「進化的な愛」の冒頭が引く文の所。
 - [ケリカー「ダーウィンの創造説について」（1864）を、日本語で読む](kolliker-darwinsche-schopfungstheorie-ja.html)
