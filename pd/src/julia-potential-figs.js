@@ -79,7 +79,8 @@
     const cvC = $("jp-lab-c"), cv1 = $("jp-lab-1"), out = $("jp-lab-out");
     const sDeg = $("jp-lab-deg"), sR = $("jp-lab-r"), sRe = $("jp-lab-re"), sIm = $("jp-lab-im"), sN = $("jp-lab-n"), sD = $("jp-lab-d");
     const PV = { x0: -1.5, x1: 1.5, y0: -1.5, y1: 1.5 };
-    const st = { c: cFromAngle(GOLDEN_DEG, 0.97), n: 500, d: 10, bg: false, playing: false };
+    const N_DEF = Number(sN.defaultValue) || 100, N_MAX = Number(sN.max) || 200, D_MAX = Number(sD.max) || 16, D_DEF = Number(sD.defaultValue) || 15;
+    const st = { c: cFromAngle(GOLDEN_DEG, 0.97), n: N_DEF, d: D_DEF, bg: false, playing: false };
     let mapImg = null, bgImg = null, fwd = { pts: [], escapedAt: 0 }, playTimer = 0, slowTimer = 0;
 
     const setOut = (id, v) => { const o = lab.querySelector(`output[for="${id}"]`); if (o) o.textContent = v; };
@@ -93,7 +94,7 @@
     }
     // c が変わったときだけ、前へ打つ計算と塗り分けをやり直す（前へは 0 から）
     function recompute() {
-      fwd = forward(st.c, { re: 0, im: 0 }, 500);
+      fwd = forward(st.c, { re: 0, im: 0 }, N_MAX);
       bgImg = st.bg ? paint(cv1, PV, escJfor(st.c), 80, 110) : null;
     }
     function drawMap() {
@@ -105,12 +106,14 @@
     }
     // 赤の一点 z_n から遡る：一段ごとに ±√(w − c) の二つに分かれる木。実際に通った z_{n−1}, z_{n−2}… は、そのうちの一通り
     function treeLevels() {
-      const n = Math.min(st.n, fwd.pts.length - 1), z = fwd.pts[n], lv = [[[z[0], z[1], -1]]];
+      // 段 k の点は 2^k 個。Float64Array に x, y を交互に詰める（親は 2 で割った番号）
+      const n = Math.min(st.n, fwd.pts.length - 1), z = fwd.pts[n], lv = [Float64Array.of(z[0], z[1])];
       for (let k = 1; k <= st.d; k++) {
-        const prev = lv[k - 1], next = [];
-        for (let i = 0; i < prev.length; i++) {
-          const wr = prev[i][0] - st.c.re, wi = prev[i][1] - st.c.im, m = Math.sqrt(Math.hypot(wr, wi)), a = Math.atan2(wi, wr) / 2;
-          const x = m * Math.cos(a), y = m * Math.sin(a); next.push([x, y, i], [-x, -y, i]);
+        const prev = lv[k - 1], cnt = prev.length / 2, next = new Float64Array(cnt * 4);
+        for (let i = 0; i < cnt; i++) {
+          const wr = prev[2 * i] - st.c.re, wi = prev[2 * i + 1] - st.c.im, m = Math.sqrt(Math.hypot(wr, wi)), a = Math.atan2(wi, wr) / 2;
+          const x = m * Math.cos(a), y = m * Math.sin(a);
+          next[4 * i] = x; next[4 * i + 1] = y; next[4 * i + 2] = -x; next[4 * i + 3] = -y;
         }
         lv.push(next);
       }
@@ -141,28 +144,32 @@
       // 枝分かれの線（浅い三段だけ。深い段は点だけ）
       for (let k = 1; k <= Math.min(st.d, 3); k++) {
         t.strokeStyle = col(k); t.globalAlpha = 0.35; t.lineWidth = 1; t.beginPath();
-        lv[k].forEach((p) => { const q = lv[k - 1][p[2]], [x0, y0] = toPx(PV, q[0], q[1], cv1), [x1, y1] = toPx(PV, p[0], p[1], cv1); t.moveTo(x0, y0); t.lineTo(x1, y1); });
+        const a = lv[k], b = lv[k - 1];
+        for (let i = 0; i < a.length / 2; i++) { const j = i >> 1, [x0, y0] = toPx(PV, b[2 * j], b[2 * j + 1], cv1), [x1, y1] = toPx(PV, a[2 * i], a[2 * i + 1], cv1); t.moveTo(x0, y0); t.lineTo(x1, y1); }
         t.stroke();
       }
       t.globalAlpha = 1;
+      // 浅い段は丸、深い段（点が 256 を超える段）は小さな四角で打つ（数万点でも重くならないように）
+      const sx0 = cv1.width / (PV.x1 - PV.x0), sy0 = cv1.height / (PV.y1 - PV.y0);
       for (let k = st.d; k >= 1; k--) {
-        t.fillStyle = col(k); const r = k <= 3 ? 3 : k <= 7 ? 1.8 : 1;
-        lv[k].forEach((p) => { const [x, y] = toPx(PV, p[0], p[1], cv1); dot(t, x, y, r); });
+        t.fillStyle = col(k); const a = lv[k], cnt = a.length / 2;
+        if (k <= 8) { const r = k <= 3 ? 3 : k <= 6 ? 1.8 : 1.2; for (let i = 0; i < cnt; i++) dot(t, (a[2 * i] - PV.x0) * sx0, (PV.y1 - a[2 * i + 1]) * sy0, r); }
+        else { const sz = k <= 12 ? 1.6 : 1.1; for (let i = 0; i < cnt; i++) t.fillRect((a[2 * i] - PV.x0) * sx0 - sz / 2, (PV.y1 - a[2 * i + 1]) * sy0 - sz / 2, sz, sz); }
       }
       // 実際に通った道（赤い太線）
       t.strokeStyle = css(f, "--coral"); t.lineWidth = 2.4; t.beginPath();
       path.forEach((p, i) => { const [x, y] = toPx(PV, p[0], p[1], cv1); i ? t.lineTo(x, y) : t.moveTo(x, y); }); t.stroke();
       t.fillStyle = css(f, "--coral"); path.slice(1).forEach((p) => { const [x, y] = toPx(PV, p[0], p[1], cv1); dot(t, x, y, 3); });
-      const [sx, sy] = toPx(PV, lv[0][0][0], lv[0][0][1], cv1); t.fillStyle = css(f, "--navy"); dot(t, sx, sy, 5);
+      const [sx, sy] = toPx(PV, lv[0][0], lv[0][1], cv1); t.fillStyle = css(f, "--navy"); dot(t, sx, sy, 5);
     }
     function readout() {
       const fp = fixedPoint(st.c), n = Math.min(st.n, fwd.pts.length - 1), p = fwd.pts[n];
       let s = "c = " + fmtC(st.c.re, st.c.im) + "\n前へ：0 から " + n + " 歩目：z = " + fmtC(p[0], p[1]) + "（原点からの距離 " + Math.hypot(p[0], p[1]).toFixed(3) + "）\n";
       if (fwd.escapedAt) s += fwd.escapedAt + " 歩目に原点からの距離が 2 を超え、外へ出ます（発散）。";
       else if (fp.mod < 1) s += "寄る一点 z* = " + fmtC(fp.zr, fp.zi) + "。その近くでは、一歩ごとに " + fp.deg.toFixed(1) + "° 回り、" + fp.mod.toFixed(3) + " 倍に寄ります。";
-      else s += "500 歩で外へ出ませんが、この c は大きなハート形の外か縁にあり、一点の周りを同じ角度で回りながら寄る形にはなりません。";
+      else s += N_MAX + " 歩で外へ出ませんが、この c は大きなハート形の外か縁にあり、一点の周りを同じ角度で回りながら寄る形にはなりません。";
       const d = st.d, back = Math.min(d, n);
-      s += "\n遡る：" + n + " 歩目の値（紺の点）から " + d + " 段遡ると、" + (2 ** d) + " 通りに分かれます。";
+      s += "\n遡る：" + n + " 歩目の値（紺の点）から " + d + " 段遡ると、" + (2 ** d).toLocaleString("ja-JP") + " 通りに分かれます。";
       if (d === 0) s += "（遡る段数を増やすと、分かれていきます）";
       else if (n === 0) s += "出発点より前は通っていないので、赤い太線はありません。";
       else s += "実際に通った " + (n - 1) + " 歩目" + (back > 1 ? "〜" + (n - back) + " 歩目" : "") + "は、そのうちの一通り（赤い太線）です。";
@@ -170,14 +177,14 @@
     }
     drawLab = () => { mapImg = null; recompute(); drawMap(); draw1(); readout(); };
     const redrawLight = () => { draw1(); readout(); };
-    const setC = (c) => { st.c = c; st.n = 500; syncSliders(); clearTimeout(slowTimer); slowTimer = setTimeout(() => { recompute(); drawMap(); redrawLight(); }, 30); };
+    const setC = (c) => { st.c = c; st.n = N_DEF; syncSliders(); clearTimeout(slowTimer); slowTimer = setTimeout(() => { recompute(); drawMap(); redrawLight(); }, 30); };
     const stopPlay = () => { st.playing = false; clearTimeout(playTimer); const b = $("jp-lab-play"); b.setAttribute("aria-pressed", "false"); b.textContent = "再生"; };
 
     // 図をクリックしてパラメータを決める：地図は c、①はいちばん近い赤の点を遡りの出発にする
     cvC.addEventListener("click", (e) => { stopPlay(); setC(fromPx(MV, e, cvC)); });
     cv1.addEventListener("click", (e) => {
       stopPlay(); const q = fromPx(PV, e, cv1); let best = 0, bd = Infinity;
-      fwd.pts.slice(0, 501).forEach((p, i) => { const dd = Math.hypot(p[0] - q.re, p[1] - q.im); if (dd < bd) { bd = dd; best = i; } });
+      fwd.pts.slice(0, N_MAX + 1).forEach((p, i) => { const dd = Math.hypot(p[0] - q.re, p[1] - q.im); if (dd < bd) { bd = dd; best = i; } });
       st.n = best; syncSliders(); redrawLight();
     });
     // 決まった c
@@ -192,18 +199,18 @@
     sRe.addEventListener("input", onC); sIm.addEventListener("input", onC);
     sN.addEventListener("input", () => { stopPlay(); st.n = Number(sN.value); setOut("jp-lab-n", String(st.n)); redrawLight(); });
     sD.addEventListener("input", () => { st.d = Number(sD.value); setOut("jp-lab-d", String(st.d)); redrawLight(); });
-    $("jp-lab-deeper").addEventListener("click", () => { st.d = st.d >= 14 ? 0 : st.d + 1; syncSliders(); redrawLight(); });
+    $("jp-lab-deeper").addEventListener("click", () => { st.d = st.d >= D_MAX ? 0 : st.d + 1; syncSliders(); redrawLight(); });
     // 一歩ずつ・再生
-    $("jp-lab-step").addEventListener("click", () => { stopPlay(); st.n = Math.min(500, st.n + 1); syncSliders(); redrawLight(); });
+    $("jp-lab-step").addEventListener("click", () => { stopPlay(); st.n = Math.min(N_MAX, st.n + 1); syncSliders(); redrawLight(); });
     $("jp-lab-reset").addEventListener("click", () => { stopPlay(); st.n = 0; syncSliders(); redrawLight(); });
     $("jp-lab-play").addEventListener("click", (e) => {
       if (st.playing) { stopPlay(); return; }
       st.playing = true; e.currentTarget.setAttribute("aria-pressed", "true"); e.currentTarget.textContent = "止める";
-      if (st.n >= Math.min(500, fwd.pts.length - 1)) st.n = 0;
+      if (st.n >= Math.min(N_MAX, fwd.pts.length - 1)) st.n = 0;
       const tick = () => {
         if (!st.playing) return;
-        st.n = Math.min(500, st.n + 1); syncSliders(); redrawLight();
-        if (st.n >= Math.min(500, fwd.pts.length - 1)) { stopPlay(); return; }
+        st.n = Math.min(N_MAX, st.n + 1); syncSliders(); redrawLight();
+        if (st.n >= Math.min(N_MAX, fwd.pts.length - 1)) { stopPlay(); return; }
         playTimer = setTimeout(tick, st.n < 60 ? 120 : 30);
       };
       tick();
