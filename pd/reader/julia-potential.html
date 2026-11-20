@@ -95,6 +95,10 @@
       .jp-fig__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 1rem; }
       .jp-fig__panel { min-width: 0; }
       .jp-fig__label { margin: 0 0 .3rem; font-size: .85rem; }
+      .jp-fig__title { margin: 0 0 .7rem; font-family: var(--sans); font-size: .95rem; font-weight: 700; line-height: 1.5; color: var(--set); }
+      .jp-fig canvas.jp-fig__drag { touch-action: none; cursor: grab; }
+      .peek__body .jp-fig { margin: 0; }
+      .peek__body .jp-fig__title { display: none; }
       .jp-fig canvas { width: 100%; height: auto; display: block; border-radius: 4px; touch-action: manipulation; }
       #jp-mand { cursor: crosshair; }
       .jp-fig__btns { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .8rem; align-items: center; }
@@ -164,7 +168,7 @@
 
 <ul>
 <li><code>z</code> も <code>c</code> も、平面の上の一点で表せる数（複素数）です。<code>c</code> を一つ決め、出発点の <code>z</code> を一つ選んで、二乗して <code>c</code> を足す、をくり返します。</li>
-<li>二乗すると、点は、原点から見た角度が二倍になり、原点からの距離が二乗になります（<a href="#jp-square">z の二乗は、自分で自分を回す一歩</a>）。<code>c</code> を足すと、毎回、同じ向きに同じだけずれます（<a href="#jp-drift">c は、一歩ごとに同じだけ引き寄せる</a>）。</li>
+<li>二乗すると、点は、原点から見た角度が二倍になり、原点からの距離が二乗になります（図：<a href="#jp-sq">二乗を手で動かす</a>）。<code>c</code> を足すと、毎回、同じ向きに同じだけずれます（<a href="#jp-drift">c は、一歩ごとに同じだけ引き寄せる</a>）。</li>
 <li>出発点によって、くり返すうちに限りなく遠くへ行く点と、いつまでも遠くへ行かない点に分かれます。遠くへ行かない点の集まりの縁（境目）が、ジュリア集合です。</li>
 <li>境目は、ほとんどの <code>c</code> で、どれほど拡大しても込み入った模様が続きます（<a href="#jp-scale">あらゆる大きさで、同じ形が現れる</a>）。形は <code>c</code> ごとに違い、<code>c = 0</code> のときは円です。</li>
 <li><code>c</code> を平面のどこに置くと境目がひとつながりになるかを塗った地図が、マンデルブロ集合です。このページの図の「c を選ぶ」の黒い形がそれです。その本体の大きなハート形の中に <code>c</code> があると、0 から打った値は一点に寄ります（<a href="#jp-vortex">値を前へ打つと渦になり、遡るとジュリア集合の形になる</a>）。</li>
@@ -179,7 +183,7 @@
 </blockquote>
 <p>ここでのポテンシャルは、pjdhiro の言葉では「場と呼びたいような、可能性」です。</p>
 <div class="reader-lead"><span class="reader-lead__label">今の答え</span>
-問いへの答えは、まだありません。このページの本文は、問いが立った視点の解説と、問いまでです。問いに近寄る仮説（pjdhiro の一旦の仮説と、美の定義から入った四段の仮説）は、論証が難しいので、第四部の寄り道「<a href="#jp-detour">Love を駆動源と見たら、ジュリア集合のようなものかもしれない</a>」に置きました。二乗が向きの逆の二つを一つに送ること（二対一）と、<code>√</code> を取ることが何に当たるかは、まだ空いています。
+問いへの答えは、まだありません。このページの本文は、問いが立った視点の解説と、問いまでです。問いに近寄る仮説（pjdhiro の一旦の仮説と、美の定義から入った四段の仮説）は、論証が難しいので、第四部の寄り道「<a href="#jp-detour">Love を駆動源と見たら、ジュリア集合のようなものかもしれない</a>」に置きました。<a href="#jp-sq">二乗が向きの逆の二つを一つに送ること（二対一）</a>と、<code>√</code> を取ることが何に当たるかは、まだ空いています。
 </div>
 
 <div class="reader-lead"><span class="reader-lead__label">構成</span>
@@ -282,7 +286,8 @@ function 試す(いまの所):
 <p>ここで、なぜジュリア集合の式が起業家の話になるのか、と思った人もいると思います。つなぎ目は、この一歩をくり返す形です。</p>
 <p>漸化式は、数の並びの次の値を、一つ前の値から決める決まりです。たとえば「2 倍する」と決めて 1 から始めると、1、2、4、8 と進みます。出てきた値に、また同じ決まりを当てます。下の図で、決まりとはじめの値を選んで、一歩ずつ進めてみてください。</p>
 <figure class="glow-card reader-figure jp-fig" id="jp-rec">
-<p class="jp-fig__label">漸化式：前の値に決まりを当てて、次の値を出す（「一歩進める」をクリック）</p>
+<p class="jp-fig__title">漸化式：一つ前の値に決まりを当てて、次の値を出す</p>
+<p class="jp-fig__label">決まりとはじめの値を選んで、「一歩進める」をクリック</p>
 <canvas id="jp-rec-cv" width="640" height="190" aria-label="−4 から 4 までの数直線。はじめの値から、決まりを当てるたびに、次の値へ弧を描いて跳ぶ"></canvas>
 <p class="jp-fig__readout jp-fig__readout--pre" id="jp-rec-chain">a₀ = 1</p>
 <p class="jp-fig__readout" id="jp-rec-out">図はページの中の JavaScript で描きます。</p>
@@ -339,7 +344,8 @@ while 決めた歩数まで:
 <p>この見方を受けて、<code>z</code> を、起業家の思考・心理・行動と仮に置きます。気づくことも、決めることも、ここに入るものとします。</p>
 <p><code>z</code> は、ふつうの数ではなく、平面の上の一点で表す数（複素数）です。ふつうの数は、一本の数直線の上に並びます。複素数は、横の向き（実軸）に加えて、縦の向き（虚軸）にも広がります。横に <code>x</code>、縦に <code>y</code> 進んだ点を <code>x + yi</code> と書きます。<code>i</code> は、二乗すると −1 になる数で、縦の向きの 1 目盛りを表します。</p>
 <figure class="glow-card reader-figure jp-fig" id="jp-cplx">
-<div class="jp-fig__grid jp-fig__grid--one"><div class="jp-fig__panel"><p class="jp-fig__label">平面の上の数：図をクリックすると、その点が z になる</p><canvas id="jp-cplx-cv" width="480" height="480" aria-label="横の軸（実軸）と縦の軸（虚軸）の平面。クリックした点 z から、横の成分と縦の成分の線が引かれる"></canvas></div></div>
+<p class="jp-fig__title">複素数：平面の一点が、横と縦の二つの成分を一度に持つ</p>
+<div class="jp-fig__grid jp-fig__grid--one"><div class="jp-fig__panel"><p class="jp-fig__label">図をクリックすると、その点が z になる</p><canvas id="jp-cplx-cv" width="480" height="480" aria-label="横の軸（実軸）と縦の軸（虚軸）の平面。クリックした点 z から、横の成分と縦の成分の線が引かれる"></canvas></div></div>
 <p class="jp-fig__readout" id="jp-cplx-out">図はページの中の JavaScript で描きます。</p>
 <figcaption>金色の線が横の成分（実軸の向き）、赤の線が縦の成分（虚軸の向き）です。一つの点が、二つの成分を一度に持ちます。</figcaption>
 </figure>
@@ -364,12 +370,18 @@ while 決めた歩数まで:
 <p><strong>pjdhiro の問い：</strong>zの二乗に当てはまる現実世界の起業家の行動が見つかるといいんだよね。心理面でも良いので。</p>
 </blockquote>
 <p>二乗には、式の上で二つのはたらきがあります。一つは、平面の上の点を、原点から見た角度を二倍にし、原点からの距離を二乗にすることです。距離が 1 より小さい値はさらに小さく、1 より大きい値はさらに大きくなります。もう一つは、向きが逆の二つの値 <code>z</code> と <code>−z</code> を、同じ一つの値に送ることです（二対一）。二乗したあとの値からは、二つのどちらから来たのかが分かりません。</p>
-<figure class="glow-card reader-figure jp-fig" id="jp-sq">
-<div class="jp-fig__grid jp-fig__grid--one"><div class="jp-fig__panel"><p class="jp-fig__label">二乗：図をクリックした点 z が、z² のどこへ行くか</p><canvas id="jp-sq-cv" width="480" height="480" aria-label="平面に、距離 1 の円が点線で描かれている。クリックした点 z と、その二乗 z² が、原点からの線と角度の弧で示される"></canvas></div></div>
+<figure class="glow-card reader-figure jp-fig" id="jp-sq" data-peek>
+<p class="jp-fig__title">二乗を手で動かす：角度は二倍、距離は二乗、z と −z は同じ所へ</p>
+<div class="jp-fig__grid jp-fig__grid--one"><div class="jp-fig__panel"><p class="jp-fig__label">点 z をつまんで動かすと、z²（赤）が動く</p><canvas id="jp-sq-cv" class="jp-fig__drag" width="480" height="480" aria-label="平面に、距離 1 の円が点線で描かれている。つまんで動かせる点 z と、その二乗 z²、原点の反対側の点 −z が、原点からの線と角度の弧で示される"></canvas></div></div>
 <p class="jp-fig__readout jp-fig__readout--pre" id="jp-sq-out">図はページの中の JavaScript で描きます。</p>
-<div class="jp-fig__btns"><button type="button" id="jp-sq-neg" aria-pressed="false">−z も見る（二対一）</button></div>
-<div class="jp-fig__btns" role="group" aria-label="c を足すか"><button type="button" data-sqc="0,0" aria-pressed="true">c を足さない</button><button type="button" data-sqc="-0.5,0.5" aria-pressed="false">c = −0.5 + 0.5i を足す</button></div>
-<figcaption>弧は、横の軸から測った角度です（青が z、赤が z²）。赤の弧は、いつも青の弧の二倍です。「−z も見る」をクリックすると、原点の反対側の点 −z が出ます。−z を二乗しても、同じ z² に行きます。「c を足す」をクリックすると、z² から、決まった向きに決まった長さだけずれた点（金色）が、次の値 z² + c です。</figcaption>
+<div class="jp-fig__btns"><button type="button" id="jp-sq-play" aria-pressed="false">z を一周させる</button><button type="button" id="jp-sq-neg" aria-pressed="true">−z も見る（二対一）</button></div>
+<div class="jp-fig__sliders">
+<label class="jp-fig__slider"><span>z の角度 <output for="jp-sq-a">30°</output></span><input type="range" id="jp-sq-a" min="0" max="359" step="1" value="30"></label>
+<label class="jp-fig__slider"><span>z の原点からの距離 <output for="jp-sq-r">0.80</output></span><input type="range" id="jp-sq-r" min="0.1" max="1.6" step="0.01" value="0.8"></label>
+</div>
+<div class="jp-fig__group"><p class="jp-fig__glabel">次の部の c も足してみる</p>
+<div class="jp-fig__btns" role="group" aria-label="c を足すか"><button type="button" data-sqc="0,0" aria-pressed="true">c を足さない</button><button type="button" data-sqc="-0.5,0.5" aria-pressed="false">c = −0.5 + 0.5i を足す</button></div></div>
+<figcaption>弧は、横の軸から左回りに測った角度です（青が z、赤が z²）。赤の弧は、いつも青の弧の二倍です。角度のスライダを動かすと、z² は z の二倍の速さで回ります。距離のスライダを 1 より小さくすると z² は原点へ寄り、1 より大きくすると離れます。「z を一周させる」をクリックすると、z が一周するあいだに、z² は二周します（薄い線は通った跡）。白抜きの点 −z は、原点の反対側の点で、二乗すると z と同じ z² に行きます。z が半周して −z の位置に来たとき、z² はちょうど一周して同じ所に戻ります。「c を足す」をクリックすると、z² から、決まった向きに決まった長さだけずれた点（金色）が出ます。これが次の値 z² + c で、次の部で見ます。</figcaption>
 </figure>
 
 <p>pjdhiro は、二乗を、自分自身で自分自身を回すように進むこととして見ています。</p>
@@ -441,6 +453,13 @@ while 決めた歩数まで:
 <p>出典：Skipper, Blackburne, Cooper, Jaglinska, Jedlovszky, Kuc, McAlpine &amp; Timmermann (2026) "<a href="https://doi.org/10.64898/2026.11.12.766263">"The self" as shifting coalitions of brain systems in a continuous configuration space</a>", <em>bioRxiv</em>（査読前。本文照合済。<a href="https://www.biorxiv.org/content/10.64898/2026.11.12.766263v1.full">bioRxiv の全文</a>で序論・結果・考察・方法の前半と参照の一覧を読んだ）／Gallagher (2013) "<a href="https://doi.org/10.3389/fnhum.2013.00443">A pattern theory of self</a>", <em>Frontiers in Human Neuroscience</em> 7:443（本文照合済。<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3730118/">PMC の全文</a>。節 A Pattern Theory of Self）／Gallagher &amp; Daly (2018) "<a href="https://doi.org/10.3389/fpsyg.2018.00664">Dynamical relations in the self-pattern</a>", <em>Frontiers in Psychology</em> 9:664（本文照合済。<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5958307/">PMC の全文</a>。節 A Pattern Theory of Self (PTS)）／Hermans, Konopka, Oosterwegel &amp; Zomer (2017) "<a href="https://doi.org/10.1007/s12124-016-9370-6">Fields of tension in a boundary-crossing world: Towards a democratic organization of the self</a>", <em>Integrative Psychological and Behavioral Science</em> 51(4):505–535（本文照合済。<a href="https://link.springer.com/content/pdf/10.1007/s12124-016-9370-6.pdf">Springer が公開している全文の PDF</a>。pp.511・514）</p>
 </details>
 
+<p><a id="jp-shadow"></a>自己と自己の掛け合わせの段を読んだあと、pjdhiro は、仮の視点として、こう書きました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>ユングのシャドーに気づいていないとします。zは客観的な自分です。中身は　自我とシャドーがいるとします。それには気づいていません。そういう視点で今考えてました。一つは回転が自己認識とは違う。思いもよらない方向に進んでいく。もう一つは、2abとして新たな自分に気づいていく。分離と包摂で。自己刷新に気づくのはこれかもしれない。aの二乗と　bの二乗と２ab分だけの差が出る。zの二乗は。そういうものを振り返って自己分析して成長に気づくのでは？という意味です。私の今の仮の視点です</p>
+</blockquote>
+<p>この視点を式に当ててみます。当てはめは Claude の読みで、仮のものです。<code>z = a + b</code> の <code>a</code> を自我（本人が自分と思っている側）、<code>b</code> をシャドー（本人が気づいていない側）と置きます。自己認識が <code>a</code> だけを見ているなら、次の一歩の見込みは <code>a²</code> です。実際の一歩は <code>z² = a² + b² + 2ab</code> なので、見込みとは <code>b² + 2ab</code> だけ違います。</p>
+<p>一つ目の「回転が自己認識とは違う」は、角度の所に当たりそうです。自己認識から見た一歩は、<code>a</code> の角度を二倍にした向きです。実際の一歩は、<code>a + b</code> の角度を二倍にした向きです。二乗は角度を二倍にするので、<code>a</code> と <code>a + b</code> の向きの差も、二乗のたびに二倍になります（<a href="#jp-sq">二乗を手で動かす</a>の図で、角度を少しずらして確かめられます）。小さなずれでも、くり返すうちに、思いもよらない方向へ進んでいくのかもしれません。</p>
+<p>二つ目の <code>2ab</code> は、自我とシャドーが掛け合わさる項で、どちらか一方だけからは出てきません。見込みの <code>a²</code> との差には、この項が入ります。一歩を終えてから差を振り返ると、気づいていなかった <code>b</code> が、自我と掛け合わさった形で見えてくるのかもしれません。自我とシャドーを分けて見ることと、二つが掛け合わさって一つの一歩になることが、一つの式の中に並んでいます。pjdhiro が言う、振り返って自己分析して成長に気づくことは、この差を見ることに当てられそうです。「<a href="#jp-z">z は、起業家の思考・心理・行動</a>」で、認知できる成分 <code>x</code> と認知し得ない成分 <code>y</code> に当てた <code>z² = (x² − y²) + 2ixy</code> も、同じ形の読みです。</p>
 
 
 
@@ -471,20 +490,11 @@ while 決めた歩数まで:
 <p><a id="jp-origin"></a>見立ての三つ目は、「それはジュリア集合の漸化式のようだ」です。</p>
 <p>先に、二つの言葉をおさえておきます。<code>c</code> を一つ決めて、いろいろな出発点から式をくり返すと、限りなく遠くへ行く点と、いつまでも遠くへ行かない点に分かれます。遠くへ行かない点の集まりの縁（境目）が、ジュリア集合です。一方、出発点を 0 に決めて、<code>c</code> のほうをいろいろ変え、遠くへ行かない <code>c</code> を黒く塗った地図が、マンデルブロ集合です。このページの図では、マンデルブロ集合を、<code>c</code> を選ぶための地図として使います。黒い形の中で <code>c</code> を選ぶと、ジュリア集合はひとつながりの形になります（詳しくは「<a href="#jp-about-julia">ジュリア集合とは</a>」）。</p>
 <p>pjdhiro は 2025 年 5 月、<a href="#jp-about-julia">ジュリア集合</a>の形を、点がどこから来たかをさかのぼる向きから動かして見ていました（数学では、一歩を逆に戻す決まりを逆写像と言います）。一歩を逆に戻すには、<code>c</code> の分を引いてから平方根を取ります。二乗して 4 になる数が 2 と −2 の二つあるように、平方根は、プラスとマイナスの二つあります。</p>
-<p>pjdhiro は、記事に次のように書いています。</p>
-<blockquote class="reader-callout reader-request">
-<p><strong>pjdhiro の見方：</strong>☯️陰陽マークのように見える。円の分割(平方根による角度が半分になる)と反転コピー（マイナスの平方根）の箇所が。</p>
-</blockquote>
-<blockquote class="reader-callout reader-request">
-<p><strong>pjdhiro の見方：</strong>発散しそうでしない境界で複雑な模様になる。「境界が曖昧な地点」＝「創造が生まれる土壌」という直感にまた一つ。</p>
-</blockquote>
-<p>（pjdhiro の公開文「<a href="https://uminomae.github.io/pjdhiro/20250531julia/">陰陽なJulia集合を逆にたどる</a>」から）</p>
-<p>二乗で角度が二倍になったのを逆に戻すので、平方根で角度は半分になります。マイナスの平方根は、もう一方を 0 の周りに半回転させた写しになります。</p>
-<p>記事が参考にしていたのは、Steven Wittens の「<a href="https://acko.net/blog/how-to-fold-a-julia-fractal/">How to Fold a Julia Fractal</a>」（2013）です。そこでは、点が収まる円を、遡る向きに一段ずつ畳んでいくと、ジュリア集合の形になる様子を、動く図で見せています。下の図は、その見せ方に倣って、このページで新しく描いたものです。大きさ 2 の円の上の点を、<code>±√(w − c)</code> で一段ずつ遡ります。一段を「− c」「√」「−√」の三歩に分けて、一歩ずつ進めたり戻したりできます。</p>
-<figure class="glow-card reader-figure jp-fig" id="jp-fold">
+<figure class="glow-card reader-figure jp-fig" id="jp-fold" data-peek>
+<p class="jp-fig__title">遡る一段：円を、c の分だけ戻して ±√ で二つに分け、畳む</p>
 <div class="jp-fig__grid jp-fig__grid--fold">
-<div class="jp-fig__panel"><p class="jp-fig__label">c を選ぶ（黒い形の中をクリックすると c が変わる）</p><canvas id="jp-fold-c" width="300" height="260" aria-label="マンデルブロ集合。黒い形の中でクリックした所が c になる"></canvas></div>
-<div class="jp-fig__panel"><p class="jp-fig__label">大きさ 2 の円を、− c と ±√ で一歩ずつ遡って畳む</p><canvas id="jp-fold-cv" width="520" height="520" aria-label="大きさ 2 の円を、− c の平行移動と、角を半分にする √ と、半回転の写しの三歩で一段ずつ遡る。色は、その部分が前の曲線のどこから来たか"></canvas></div>
+<div class="jp-fig__panel"><p class="jp-fig__label">c を選ぶ地図（黒い形の中をクリックすると c が変わる）</p><canvas id="jp-fold-c" width="300" height="260" aria-label="マンデルブロ集合。黒い形の中でクリックした所が c になる"></canvas></div>
+<div class="jp-fig__panel"><p class="jp-fig__label">大きさ 2 の円を、一歩ずつ遡る（「一歩進める」をクリック）</p><canvas id="jp-fold-cv" width="520" height="520" aria-label="大きさ 2 の円を、− c の平行移動と、角を半分にする √ と、半回転の写しの三歩で一段ずつ遡る。色は、その部分が前の曲線のどこから来たか"></canvas></div>
 </div>
 <p class="jp-fig__readout jp-fig__readout--pre" id="jp-fold-out">図はページの中の JavaScript で描きます。</p>
 <div class="jp-fig__btns"><button type="button" id="jp-fold-reset">最初から</button><button type="button" id="jp-fold-back">一歩戻す</button><button type="button" id="jp-fold-step">一歩進める</button><button type="button" id="jp-fold-play" aria-pressed="false">再生</button><button type="button" id="jp-fold-color" aria-pressed="false">色を最初の円の位置で塗る</button></div>
@@ -492,7 +502,16 @@ while 決めた歩数まで:
 <figcaption>一段の遡り <code>±√(w − c)</code> を三歩に分けて描きます。一歩目の「− c」で、曲線の全体を <code>−c</code> だけずらします（矢印）。二歩目の「√」で、0 の周りの角を半分に、0 からの距離を √ にします。曲線は、0 から左へのびる線（負の実軸）で切れ、一周が右半分の半周に縮みます。三歩目の「−√」で、その写しを 0 の周りに半回転させたもう一つの写し（濃い色）が、左半分を埋めます。色は点に付いたまま動くので、同じ色の所は、前の曲線の同じ所から来ています。前の曲線の一周が、+√ と −√ の二つの半分に一回ずつ写ります。薄い灰の線は、その一歩の前の形です。曲線の内側は、遡った段の数だけ前へ打っても大きさ 2 を超えない点の集まりで、段を重ねるほど、くり返しても遠くへ行かない点の集まり（充填ジュリア集合）に寄ります。「色を最初の円の位置で塗る」をクリックすると、色は、その点を前へ打って戻る最初の円の上の位置になります。見せ方は Wittens の記事に倣い、計算と描画はこのページのものです。</figcaption>
 </figure>
 
+<p>この図は、Steven Wittens の「<a href="https://acko.net/blog/how-to-fold-a-julia-fractal/">How to Fold a Julia Fractal</a>」（2013）の見せ方に倣って、このページで新しく描いたものです。Wittens は、点が収まる円を、遡る向きに一段ずつ畳んでいくと、ジュリア集合の形になる様子を、動く図で見せています。図では、大きさ 2 の円の上の点を、<code>±√(w − c)</code> で一段ずつ遡ります。一段を「− c」「√」「−√」の三歩に分けて、一歩ずつ進めたり戻したりできます。</p>
 <p>円の上の一点は、一段遡るごとに二つに分かれ、二つの点は、0 を挟んで向かい合います。前の曲線の一周が、右の半分と左の半分に一回ずつ写り、円が自分に巻きついて畳まれます。くびれと突き出しは、段ごとに細かくなっていきます。</p>
+<p><a href="#jp-sq">二乗で角度が二倍になった</a>のを逆に戻すので、平方根で角度は半分になります。マイナスの平方根は、もう一方を 0 の周りに半回転させた写しになります。pjdhiro は、2025 年 5 月の記事に、この所を次のように書いています。記事も、Wittens の図を参考にしていました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>☯️陰陽マークのように見える。円の分割(平方根による角度が半分になる)と反転コピー（マイナスの平方根）の箇所が。</p>
+</blockquote>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>発散しそうでしない境界で複雑な模様になる。「境界が曖昧な地点」＝「創造が生まれる土壌」という直感にまた一つ。</p>
+</blockquote>
+<p>（pjdhiro の公開文「<a href="https://uminomae.github.io/pjdhiro/20250531julia/">陰陽なJulia集合を逆にたどる</a>」から）</p>
 </div></details><details class="sec" id="値を前へ打つと渦になり遡るとジュリア集合の形になる" open><summary>値を前へ打つと渦になり、遡るとジュリア集合の形になる</summary><div class="secbody">
 
 
@@ -551,10 +570,11 @@ while 決めた歩数まで:
 <p>力の地図（マンデルブロ集合）は、塗り分けと同じ計算を、<code>z₀</code> を 0 に決めて、<code>c</code> のほうを平面の一つ一つの点にして回したものです（章の終わりの畳み）。</p>
 </details>
 
-<figure class="glow-card reader-figure jp-fig" id="jp-lab">
+<figure class="glow-card reader-figure jp-fig" id="jp-lab" data-peek>
+<p class="jp-fig__title">前へは渦、遡ると境目：同じ式を、0 から前へ打ち、その一点から遡る</p>
 <div class="jp-fig__grid">
-<div class="jp-fig__panel"><p class="jp-fig__label">c を選ぶ（クリックすると c が変わる）</p><canvas id="jp-lab-c" width="300" height="260" aria-label="マンデルブロ集合。クリックした所が c になる"></canvas></div>
-<div class="jp-fig__panel"><p class="jp-fig__label">① 0 から前へ打った値（赤）と、赤の一点から遡った枝（紺から金）。クリックすると、遡り始める赤の点が変わる</p><canvas id="jp-lab-1" width="420" height="420" aria-label="前へ打った値の軌跡と、その一点から一段ごとに二つに分かれて遡った点。実際に通った道は赤い太線"></canvas></div>
+<div class="jp-fig__panel"><p class="jp-fig__label">c を選ぶ地図（クリックすると c が変わる）</p><canvas id="jp-lab-c" width="300" height="260" aria-label="マンデルブロ集合。クリックした所が c になる"></canvas></div>
+<div class="jp-fig__panel"><p class="jp-fig__label">0 から前へ打った値（赤）と、赤の一点から遡った枝（紺から金）。図をクリックすると、遡り始める赤の点が変わる</p><canvas id="jp-lab-1" width="420" height="420" aria-label="前へ打った値の軌跡と、その一点から一段ごとに二つに分かれて遡った点。実際に通った道は赤い太線"></canvas></div>
 </div>
 <p class="jp-fig__readout jp-fig__readout--pre" id="jp-lab-out">図はページの中の JavaScript で描きます。</p>
 <div class="jp-fig__group"><p class="jp-fig__glabel">決まった c で見る</p>
@@ -613,7 +633,8 @@ while 決めた歩数まで:
 <details class="acc"><summary>詳しく — よく見るジュリア集合の絵と、ほかの c（力の地図）</summary>
 
 <p>よく見るジュリア集合の絵（塗り分け）も、ここで見られます。左の地図で <code>c</code> をクリックするか、下のスライダで <code>c</code> の実部と虚部を動かすと、右に、その <code>c</code> で残る形が出ます。「遡った点を撒く」をクリックすると、<code>±√(z − c)</code> で遡った点が重なり、どこから始めても境目に集まります。</p>
-<figure class="glow-card reader-figure jp-fig">
+<figure class="glow-card reader-figure jp-fig" id="jp-paint">
+<p class="jp-fig__title">よくある塗り分け：c を一つ選び、平面のすべての点から打って塗る</p>
 <div class="jp-fig__grid">
 <div class="jp-fig__panel"><p class="jp-fig__label">力の地図（c の平面）。クリックすると c が変わる</p><canvas id="jp-mand" width="520" height="460" aria-label="マンデルブロ集合。クリックした所が c になる"></canvas></div>
 <div class="jp-fig__panel"><p class="jp-fig__label">その c で残る形（z の平面）</p><canvas id="jp-julia" width="520" height="460" aria-label="選んだ c の充填ジュリア集合"></canvas></div>
@@ -664,6 +685,7 @@ while 決めた歩数まで:
 <blockquote class="reader-callout reader-request">
 <p><strong>pjdhiro の見方：</strong>脳内の自己と自己の掛け合わせなら、脳内の自己達が可能性だよね。</p>
 </blockquote>
+<p>pjdhiro は、自己と自己の掛け合わせを、気づいていない自分（ユングのシャドー）からも仮に見ています（<a href="#jp-shadow">z の二乗の章のシャドーの段</a>）。</p>
 <h3 id="美の定義から入った四段の仮説">美の定義から入った、四段の仮説</h3>
 <p><a id="jp-four"></a>渦と遡りの関係が何を意味するかを話したとき、pjdhiro は美の定義から入り、四段の仮説を立てました。問いの筋のうち、神・美・愛のようなもので駆動し、それがジュリア集合のようなポテンシャルから出る、という所に、美の側から近寄る仮説です。</p>
 <ul>
@@ -683,12 +705,13 @@ while 決めた歩数まで:
 <p><strong>pjdhiro の仮説（一つ目）：</strong>黄金比のひまわりの渦は、美しさを感じる。黄金比というのも美しさの定義の一つ。そのポテンシャルはジュリア集合の形。それは見る人によっては恐ろしさや醜さも感じる。美は　美醜、恐怖入り乱れたところから出る。という解釈が一つ目</p>
 </blockquote>
 <p>ひまわりの種は、黄金比から出る角度（黄金角、約 137.5°）ずつ回る渦に並びます。第三部の図の最初の <code>c</code> は、前へ打った値がこの角度ずつ回るように選んだ値です。pjdhiro は、黄金比を美しさの定義の一つと見て、その渦の奥にあるもの（ポテンシャル）を、同じ式を遡ると出てくるジュリア集合の形に見ています。</p>
-<figure class="glow-card reader-figure jp-fig">
+<figure class="glow-card reader-figure jp-fig" id="jp-golden">
+<p class="jp-fig__title">黄金角の渦と、ひまわりの並び：同じ角度で回り、距離の変わり方だけが違う</p>
 <div class="jp-fig__grid">
-<div class="jp-fig__panel"><p class="jp-fig__label">② 黄金角の c の前へ打った値を、不動点の周りで拡大</p><canvas data-g="2" width="420" height="420" aria-label="一歩ごとに 137.5 度回り、0.97 倍に縮む点の並び"></canvas></div>
-<div class="jp-fig__panel"><p class="jp-fig__label">③ ひまわりの並べ方（黄金角・距離 √n）</p><canvas data-g="3" width="420" height="420" aria-label="一つごとに 137.5 度回り、外へ広がる種の並び"></canvas></div>
+<div class="jp-fig__panel"><p class="jp-fig__label">渦：黄金角の c で前へ打った値（寄る一点の周りを拡大）</p><canvas data-g="2" width="420" height="420" aria-label="一歩ごとに 137.5 度回り、0.97 倍に縮む点の並び"></canvas></div>
+<div class="jp-fig__panel"><p class="jp-fig__label">ひまわり：種の並べ方（黄金角・距離 √n）</p><canvas data-g="3" width="420" height="420" aria-label="一つごとに 137.5 度回り、外へ広がる種の並び"></canvas></div>
 </div>
-<figcaption>② 一歩ごとに 137.5° 回り、0.97 倍に縮む。外ほど古い点。③ 中心から外へ数えて一つごとに 137.5° 回り、距離 √n で広がる。実際の花では、外の小花ほど古い（数える向きは、花が育つ順の逆）。②と同じく外ほど古く、角度も同じです。違うのは距離の変わり方で、②は一歩ごとに 0.97 倍に縮み、③は √n に比例して伸びます。</figcaption>
+<figcaption>渦の図は、一歩ごとに 137.5° 回り、0.97 倍に縮みます。外ほど古い点です。ひまわりの図は、中心から外へ数えて一つごとに 137.5° 回り、距離 √n で広がります。実際の花では、外の小花ほど古い（数える向きは、花が育つ順の逆）ので、渦の図と同じく外ほど古く、角度も同じです。違うのは距離の変わり方で、渦の図は一歩ごとに 0.97 倍に縮み、ひまわりの図は √n に比例して伸びます。</figcaption>
 </figure>
 
 <p>嵐の海や、切り立った崖の上からの眺めを、美しいのに怖い、と感じたことのある人は多いと思います。ジュリア集合の形も、見る人によっては美しく、見る人によっては恐ろしく、醜くも見えます。</p>
@@ -991,7 +1014,7 @@ while 決めた歩数まで:
 <blockquote class="reader-callout reader-request">
 <p><strong>pjdhiro の見方：</strong>このルートは違和感だけで、当てはまる概念がない。数式だけがある</p>
 </blockquote>
-<p><b><code>z</code> と <code>−z</code> を一つに送る二対一を、どう読むか。</b>前へ進む一歩は、見分けられる二つを、同じ一つへ送ります。逆向きの二つが同じ一つに行く、という形で書いた論は、読めた中にはありませんでした。pjdhiro が挙げた相補性（ボーア）は、二つの絵が一緒にあって一つの記述になる、という言い方が近い候補ですが、観測と記述の話です。自己を系の連合と見るスキッパーらは、違う組み合わせが同じ「自己」の名で呼ばれる、と書きます。多くを一つの名に送る形は近く見えますが、逆向きの二つの対ではなく、名付けの話です。</p>
+<p><b><code>z</code> と <code>−z</code> を一つに送る二対一を、どう読むか。</b>前へ進む一歩は、見分けられる二つを、同じ一つへ送ります（図：<a href="#jp-sq">二乗を手で動かす</a>）。逆向きの二つが同じ一つに行く、という形で書いた論は、読めた中にはありませんでした。pjdhiro が挙げた相補性（ボーア）は、二つの絵が一緒にあって一つの記述になる、という言い方が近い候補ですが、観測と記述の話です。自己を系の連合と見るスキッパーらは、違う組み合わせが同じ「自己」の名で呼ばれる、と書きます。多くを一つの名に送る形は近く見えますが、逆向きの二つの対ではなく、名付けの話です。</p>
 <blockquote class="reader-callout reader-request">
 <p><strong>pjdhiro の見方：</strong>ここをどう解釈するかです。これが最後のピースで、いつまで経っても埋まらない。</p>
 </blockquote>

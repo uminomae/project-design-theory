@@ -95,6 +95,10 @@
       .jp-fig__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 1rem; }
       .jp-fig__panel { min-width: 0; }
       .jp-fig__label { margin: 0 0 .3rem; font-size: .85rem; }
+      .jp-fig__title { margin: 0 0 .7rem; font-family: var(--sans); font-size: .95rem; font-weight: 700; line-height: 1.5; color: var(--set); }
+      .jp-fig canvas.jp-fig__drag { touch-action: none; cursor: grab; }
+      .peek__body .jp-fig { margin: 0; }
+      .peek__body .jp-fig__title { display: none; }
       .jp-fig canvas { width: 100%; height: auto; display: block; border-radius: 4px; touch-action: manipulation; }
       #jp-mand { cursor: crosshair; }
       .jp-fig__btns { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .8rem; align-items: center; }

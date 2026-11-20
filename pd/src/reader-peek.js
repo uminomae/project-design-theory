@@ -8,6 +8,8 @@
  *    中身は跳び先を写して見せるので、説明は正本の一か所だけに書けばよい。
  *    - 跳び先が <details> なら、summary を題に、残りを中身にする。
  *    - 跳び先が小見出しの段（<p id><b>…</b></p>）なら、次の小見出しの段・見出しの手前までを中身にする。
+ *    - 跳び先が図（<figure>）なら、写さずに図そのものを小窓へ移し、閉じたら元の場所へ戻す（canvas の絵と
+ *      ボタンの働きを保つため）。題は図の .jp-fig__title か、data-peek-title（2026-11-20・付箋 i20261120122123gig）。
  *    閉じる（×・Esc・小窓の外を押す）と、開いたリンクにフォーカスを戻す。
  * 2. 戻るボタン：それ以外のページ内リンク（目次を除く）で跳んだら、左下に「元の所へ戻る」を出す。
  *    押すと、跳ぶ前のリンクの所へ戻る。跳ぶのは reader-flow.js の jumpTo（閉じた畳みを開いて着地する）。
@@ -64,10 +66,34 @@
     return { title: title, nodes: nodes };
   }
 
+  /* 図は写さずに移す。moved は今小窓にある図と、元の場所の印 */
+  var moved = null;
+  function restoreMoved() {
+    if (!moved) return;
+    moved.mark.parentNode.insertBefore(moved.el, moved.mark);
+    moved.mark.parentNode.removeChild(moved.mark);
+    moved = null;
+  }
+
   function openPeek(el, a) {
+    restoreMoved();
+    bodyEl.innerHTML = '';
+    if (el.tagName === 'FIGURE') {
+      var t = el.getAttribute('data-peek-title') || (el.querySelector('.jp-fig__title') || {}).textContent || '';
+      titleEl.textContent = t.trim();
+      var mark = document.createComment('peek');
+      el.parentNode.insertBefore(mark, el);
+      bodyEl.appendChild(el);
+      moved = { el: el, mark: mark };
+      opener = a;
+      if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open', '');
+      document.documentElement.classList.add('peek-open');
+      bodyEl.scrollTop = 0;
+      dlg.querySelector('.peek__close').focus();
+      return;
+    }
     var c = collect(el);
     titleEl.textContent = c.title;
-    bodyEl.innerHTML = '';
     c.nodes.forEach(function (n) {
       var k = n.cloneNode(true);
       /* 同じ id が二つにならないよう、写しからは id を外す */
@@ -84,10 +110,11 @@
 
   function closePeek(keepOpener) {
     if (typeof dlg.close === 'function' && dlg.open) dlg.close(); else dlg.removeAttribute('open');
+    restoreMoved();
     document.documentElement.classList.remove('peek-open');
     if (!keepOpener && opener && opener.focus) opener.focus({ preventScroll: true });
   }
-  dlg.addEventListener('close', function () { document.documentElement.classList.remove('peek-open'); });
+  dlg.addEventListener('close', function () { document.documentElement.classList.remove('peek-open'); restoreMoved(); });
   dlg.querySelector('.peek__close').addEventListener('click', function () { closePeek(false); });
   /* 小窓の外（背景）を押したら閉じる */
   dlg.addEventListener('click', function (e) { if (e.target === dlg) closePeek(false); });
@@ -127,10 +154,11 @@
     var el = targetOf(a);
     if (!el) return;
     var inPeek = dlg.contains(a);
-    if (el.hasAttribute('data-peek') && !inPeek) {
+    if (el.hasAttribute('data-peek') && !(inPeek && dlg.contains(el))) {
       e.preventDefault();
       e.stopPropagation();
-      openPeek(el, a);
+      /* 小窓の中のリンクから別の小窓へ移るときは、最初に開いたリンクを戻り先に残す */
+      openPeek(el, inPeek ? opener : a);
       return;
     }
     /* ふつうの跳び。跳ぶのは reader-flow.js。ここでは戻り先だけ覚える */
