@@ -65,6 +65,13 @@ textarea { width: 100%; resize: vertical; border: 1px solid var(--line); border-
 .body { display: flex; flex-direction: column; gap: 8px; border-top: 1px solid var(--line); padding-top: 8px; }
 .fulltext { white-space: pre-wrap; overflow-wrap: anywhere; margin: 0; font-size: 0.92rem; }
 .body textarea { min-height: 60px; }
+.notes { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.note { border-left: 3px solid var(--accent); padding-left: 8px; font-size: 0.88rem; }
+.note.claude { border-left-color: var(--claude); }
+.note b { font-weight: 700; color: var(--accent); margin-right: 6px; font-size: 0.8rem; }
+.note.claude b { color: var(--claude); }
+.note small { color: var(--muted); font-size: 0.75rem; }
+.note p { margin: 2px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; }
 .toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); background: var(--ink); color: var(--bg); padding: 8px 16px; border-radius: 8px; font-size: 0.85rem; max-width: calc(100% - 32px); z-index: 20; }
 </style>
 
@@ -171,6 +178,17 @@ textarea { width: 100%; resize: vertical; border: 1px solid var(--line); border-
     if (open.has(id)) {
       const body = el("div", "body");
       body.append(el("p", "fulltext", d.text || ""));
+      // 書き足しと返事：thread の行を並び順に出す（進み具合の行は除く）
+      const notes = (d.thread || []).filter(x => x && x.kind !== "status" && x.text);
+      if (notes.length) {
+        const ol = el("ol", "notes");
+        for (const x of notes) {
+          const li = el("li", x.from === "claude" ? "note claude" : "note");
+          li.append(el("b", null, x.from === "claude" ? "Claude" : "書き足し"), el("small", null, fmt(x.at)));
+          const p = el("p"); linkify(p, x.text); li.append(p); ol.append(li);
+        }
+        body.append(ol);
+      }
       const ta = el("textarea"); ta.id = "reply-" + id; ta.placeholder = "書き足す"; ta.setAttribute("aria-label", "書き足す");
       ta.value = drafts.get(id) || ""; ta.addEventListener("input", () => drafts.set(id, ta.value));
       const row = el("div", "row");
