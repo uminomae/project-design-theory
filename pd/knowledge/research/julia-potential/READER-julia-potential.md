@@ -210,22 +210,30 @@ pjdhiro は、二乗を、自分自身で自分自身を回すように進むこ
 
 `z` を、いくつかの自己が重なったものと見てみます。二つなら `z = a + b` と書けて、二乗すると `z² = a² + b² + 2ab` になります。`a²` と `b²` は、それぞれが自分を回す分です。`2ab` は、二つが互いに掛け合わさる分で、どちらか一つだけからは出てきません。自己と自己が協働して、一人では出ないものを次の一歩に生む、という見方は、この掛け合わせの項に当てられそうです。認知できる成分と認知し得ない成分で書いたときの `2ixy` も、同じ掛け合わせの項です。
 
-<details><summary>先行研究 — 自己は、いくつもの系の重なりか</summary>
+<details><summary>先行研究 — 自己は、いくつもの重なりか</summary>
 
 神経科学者のスキッパーらは、自己の処理を調べた 912 本の脳画像の論文を集め直し、自伝的な記憶・体の持ち主の感じ・内受容など、十の自己の形ごとに、働く所の地図を作りました（2026）。十の地図のうち九つ以上で重なる点は一つもなく、自己には共通の中核が無い、とします。自己は、散らばった脳の系が、その時々に寄与の強さを変えながら組む連合で、「自己」という語は、系が一緒に働く組み合わせ（配置）に付けた名だ、と書きます。いくつかの型を連続的な強さで重ねたモデルのほうが、一つの型や、型の有る無しの組み合わせより、別に取り分けた論文の結果をよく当てた、とも報告しています。
 
 いくつもの自己が重なっている、という所は、`z` を重なった自己と見る置き方に近く見えます。ただし、論文は型を足し合わせるだけで、重なった型どうしの掛け合わせは扱いません。論文ごとの結果をまとめたもので、一人の中で時とともにどう移るかは見ていない、と著者たちも書いています。査読前のプレプリントです。
 
+このプレプリントが序論で拠り所にしている論の一つに、哲学者ギャラガーのパターン理論があります。ギャラガーは、自己を一つに決めず、体・経験・感情・行動・人とのあいだ・語りなどの側面が、ある型に組まれたものを「自己」と呼ぶ、と提案しました（2013）。自己は、側面どうしの動的な相互作用から現れる複雑な系として働き、一人の中でも型は時とともに変わりうる、と書きます。のちの論文では、この側面は足し算の一覧ではなく、一つの側面に手を入れると、相互作用を通じてほかの側面も変わる、と書き足しました（ギャラガーとデイリー、2018）。プレプリントのモデルは型を強さで足し合わせるだけでしたが、こちらは、側面どうしが互いに変え合う所を言います。自己と自己の掛け合わせの項（`2ab`）を読む見方には、こちらのほうが近く見えます。ただし、どう掛け合わさるかを式では書いていません。
+
+心理学では、ハーマンスらの対話的自己論が、自己を、多くの「私」の位置（職業人としての私・父としての私など）が、互いにやりとりし協働する場として描きます（2017）。その張り合いの場からは、やりとりの前には無かった新しい位置や、位置どうしの連合が生まれうる、と書きます。対立する二つの位置を組み合わせる「第三の位置」は、二つのあいだの衝突を、実りのある連合に変えうる、ともします。どちらか一つの自己には無いものが、自己と自己のやりとりから生まれる、という所は、pjdhiro の「自己と自己が創造的に協働する」に近く見えます。こちらは脳の系の話ではなく、二乗のような形も持ちません。プレプリントの参照の一覧には入っていない論です。
+
 <p><b>原文</b></p>
 
-- 要旨："self-related processing has no core and emerges from shifting coalitions of distributed brain systems"
-- 序論："The word 'self' then names systems working together in a configuration"
-- 考察："continuity comes from recurring members and from the shared name 'self'"
+- スキッパーら 要旨："self-related processing has no core and emerges from shifting coalitions of distributed brain systems"
+- スキッパーら 序論："The word 'self' then names systems working together in a configuration"
+- スキッパーら 考察："continuity comes from recurring members and from the shared name 'self'"
+- ギャラガー 2013："On this view selves operate as complex systems that emerge from dynamic interactions of constituent aspects."
+- ギャラガーとデイリー 2018："this is not intended to be an additive list of factors, but a set of components dynamically interrelated in a pattern or gestalt arrangement"／"an intervention that affects one factor will involve modulations in the other factors."
+- ハーマンスら p.511："A field of tension allows not only for movements between different I-positions but also for the emergence of new positions or coalitions of positions that were not there before the process of interchange started."
+- ハーマンスら p.514："the construction of third positions is particularly valuable as they have the potential of transforming conflicts between I-positions into productive coalitions"
 
 訳は Claude。
 
 
-出典：Skipper, Blackburne, Cooper, Jaglinska, Jedlovszky, Kuc, McAlpine & Timmermann (2026) "["The self" as shifting coalitions of brain systems in a continuous configuration space](https://doi.org/10.64898/2026.11.12.766263)", *bioRxiv*（査読前。本文照合済。[bioRxiv の全文](https://www.biorxiv.org/content/10.64898/2026.11.12.766263v1.full)で序論・結果・考察・方法の前半を読んだ）
+出典：Skipper, Blackburne, Cooper, Jaglinska, Jedlovszky, Kuc, McAlpine & Timmermann (2026) "["The self" as shifting coalitions of brain systems in a continuous configuration space](https://doi.org/10.64898/2026.11.12.766263)", *bioRxiv*（査読前。本文照合済。[bioRxiv の全文](https://www.biorxiv.org/content/10.64898/2026.11.12.766263v1.full)で序論・結果・考察・方法の前半と参照の一覧を読んだ）／Gallagher (2013) "[A pattern theory of self](https://doi.org/10.3389/fnhum.2013.00443)", *Frontiers in Human Neuroscience* 7:443（本文照合済。[PMC の全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC3730118/)。節 A Pattern Theory of Self）／Gallagher & Daly (2018) "[Dynamical relations in the self-pattern](https://doi.org/10.3389/fpsyg.2018.00664)", *Frontiers in Psychology* 9:664（本文照合済。[PMC の全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC5958307/)。節 A Pattern Theory of Self (PTS)）／Hermans, Konopka, Oosterwegel & Zomer (2017) "[Fields of tension in a boundary-crossing world: Towards a democratic organization of the self](https://doi.org/10.1007/s12124-016-9370-6)", *Integrative Psychological and Behavioral Science* 51(4):505–535（本文照合済。[Springer が公開している全文の PDF](https://link.springer.com/content/pdf/10.1007/s12124-016-9370-6.pdf)。pp.511・514）
 
 </details>
 
@@ -885,7 +893,7 @@ Love駆動開発は、プロジェクトを動かしているもの（駆動源�
 |---|---|---|
 | `z`：認知できる面（実軸）と、認知し得ない面（虚軸） | サッコら（二つ目の章） | マンデルブロ集合が実数と虚数をまたぐことを、ユングの意識と無意識の考えと補い合うもの、とする。たとえの水準 |
 | `z²`：自分で自分を回す一歩 | サラスバシー（第一部の二乗の章） | 周りに見える思いがけないことが、二乗の一面に似て見える。二乗の二つのはたらきを両方とも持つものは無い |
-| `z²`：自己と自己の協働（掛け合わせの項） | スキッパーら（第一部の二乗の章） | 自己を、中核の無い、系の連合と見る。型を連続的な強さで重ねるが、重ねた型どうしの掛け合わせは扱わない |
+| `z²`：自己と自己の協働（掛け合わせの項） | スキッパーら、ギャラガー、ギャラガーとデイリー、ハーマンスら（第一部の二乗の章） | スキッパーらは、自己を中核の無い系の連合と見て、型を連続的な強さで重ねるが、型どうしの掛け合わせは扱わない。ギャラガーらは、側面が足し算でなく互いに変え合う、と言う。ハーマンスらは、「私」の位置どうしのやりとりから、前には無かった位置や連合が生まれる、と言う。どれも、二乗のような式の形は持たない |
 | `z²` の二対一 | ボーア（第一部の二乗の章）、スキッパーら（第一部の二乗の章） | 矛盾でなく相補的な二つの絵が、一緒にあって一つの記述になる、と言い方が近い。観測と記述の話で、二つを一つの値に送る式の話ではない。スキッパーらの、違う組み合わせが同じ「自己」の名で呼ばれる、は多対一の名付けで、逆向きの対ではない |
 | 一つ目：美は、美醜・恐怖の入り乱れたところから出る | リルケ・バーク・オットー（一つ目の章） | 近い。食い違うのは、石津・ゼキ（一つ目の章）、アレグザンダー（二つ目の章）、プラトン（三つ目の章） |
 | 一つ目の足場：頼れる存在でありながら恐怖する存在 | リルケ・バーク・オットー・クライン（一つ目の章） | 天使に抱かれたら滅びる・身震いしながら喜ぶ・戦慄と魅する面の調和・理想化と迫害の恐れの対。身体に出る退行（寒気・高所恐怖）は、読んだ頁には無い |
