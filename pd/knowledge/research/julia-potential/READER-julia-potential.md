@@ -99,16 +99,17 @@ pjdhiro は、記事に次のように書いています。
 <div class="jp-fig__grid jp-fig__grid--three">
 <div class="jp-fig__panel"><p class="jp-fig__label">c を選ぶ（押すと c が変わる）</p><canvas id="jp-lab-c" width="300" height="260" aria-label="マンデルブロ集合。押した所が c になる"></canvas></div>
 <div class="jp-fig__panel"><p class="jp-fig__label">① 前へ打った値（赤）と、遡った点（灰）。押すと出発点が変わる</p><canvas id="jp-lab-1" width="420" height="420" aria-label="前へ打った値の軌跡と、遡った点の集まり。押した所が出発点になる"></canvas></div>
-<div class="jp-fig__panel"><p class="jp-fig__label">② ①の赤を、寄る一点の周りで拡大</p><canvas id="jp-lab-2" width="420" height="420" aria-label="前へ打った値を、寄っていく一点の周りで拡大した図"></canvas></div>
+<div class="jp-fig__panel"><p class="jp-fig__label">② 赤の一点から遡る（すべての枝）。押すと遡り始める点が変わる</p><canvas id="jp-lab-2" width="420" height="420" aria-label="前へ打った値の一点から、一段ごとに二つに分かれて遡った点の木。実際に通った道は赤い線"></canvas></div>
 </div>
 <p class="jp-fig__readout jp-fig__readout--pre" id="jp-lab-out">図はページの中の JavaScript で描きます。</p>
 <div class="jp-fig__group"><p class="jp-fig__glabel">決まった c で見る</p>
 <div class="jp-fig__btns"><button type="button" data-lc="golden">黄金角（137.5°）で回る c</button><button type="button" data-lc="-0.1248,0.6152">120° で回る c</button><button type="button" data-lc="0,0">c = 0（円）</button><button type="button" data-lc="-1,0">c = −1</button><button type="button" data-lc="-0.123,0.745">c = −0.12 + 0.75i</button><button type="button" data-lc="-0.8,0.156">c = −0.8 + 0.16i</button><button type="button" data-lc="0.3,0">c = 0.3（外へ出る）</button></div></div>
 <div class="jp-fig__group"><p class="jp-fig__glabel">一歩ずつ動かす</p>
-<div class="jp-fig__btns"><button type="button" id="jp-lab-reset">最初から</button><button type="button" id="jp-lab-step">一歩進める</button><button type="button" id="jp-lab-play" aria-pressed="false">再生</button><button type="button" id="jp-lab-z0">出発点を 0 に戻す</button><button type="button" id="jp-lab-bg" aria-pressed="false">よくある塗り分けを薄く重ねる</button></div>
+<div class="jp-fig__btns"><button type="button" id="jp-lab-reset">最初から</button><button type="button" id="jp-lab-step">一歩進める</button><button type="button" id="jp-lab-play" aria-pressed="false">再生</button><button type="button" id="jp-lab-z0">出発点を 0 に戻す</button><button type="button" id="jp-lab-bg" aria-pressed="false">よくある塗り分けを薄く重ねる</button><button type="button" id="jp-lab-deeper">②で一段深く遡る</button></div>
 <div class="jp-fig__sliders">
 <label class="jp-fig__slider"><span>表示する歩数 <output for="jp-lab-n">500</output></span><input type="range" id="jp-lab-n" min="0" max="500" step="1" value="500"></label>
-<label class="jp-fig__slider"><span>遡る点の数 <output for="jp-lab-b">45000</output></span><input type="range" id="jp-lab-b" min="0" max="45000" step="250" value="45000"></label>
+<label class="jp-fig__slider"><span>②で遡る段数 <output for="jp-lab-d">10</output></span><input type="range" id="jp-lab-d" min="0" max="14" step="1" value="10"></label>
+<label class="jp-fig__slider"><span>①で遡る点の数 <output for="jp-lab-b">45000</output></span><input type="range" id="jp-lab-b" min="0" max="45000" step="250" value="45000"></label>
 </div></div>
 <div class="jp-fig__group"><p class="jp-fig__glabel">自分で c を選ぶ（どちらで動かしても、もう一方が揃う）</p>
 <div class="jp-fig__sliders">
@@ -117,12 +118,14 @@ pjdhiro は、記事に次のように書いています。
 <label class="jp-fig__slider"><span>c の実部 <output for="jp-lab-re">−0.378</output></span><input type="range" id="jp-lab-re" min="-2.25" max="0.75" step="0.001" value="-0.378"></label>
 <label class="jp-fig__slider"><span>c の虚部 <output for="jp-lab-im">0.562</output></span><input type="range" id="jp-lab-im" min="-1.3" max="1.3" step="0.001" value="0.562"></label>
 </div></div>
-<figcaption>前へは出発点（青い丸・最初は 0）から最大 500 歩。原点からの距離が 2 を超えたら外へ出たとして止めます。遡りは、一段ごとに ±√(z − c) のどちらかをでたらめに選び、初めの 20 段を捨てて打ちます。回る角度と寄る倍率は、寄る一点 z* での傾き λ = 2z* の角度と大きさで、c = λ/2 − λ²/4 の関係にあります（倍率が 1 より小さいときだけ決まる）。計算は Claude。</figcaption>
+<figcaption>前へは出発点（青い丸・最初は 0）から最大 500 歩。原点からの距離が 2 を超えたら外へ出たとして止めます。①の遡り（灰）は、一段ごとに ±√(z − c) のどちらかをでたらめに選び、初めの 20 段を捨てて打ちます。②は、赤の一点（いま表示している最後の歩の値。紺の点）から、一段ごとに +√ と −√ の両方をたどり、すべての枝を打ちます。色は、紺が浅い段、金が深い段です。赤い線は、そのうち実際に前へ通ってきた値（一つ前の歩、その前の歩…）をたどる一通りです。回る角度と寄る倍率は、寄る一点 z* での傾き λ = 2z* の角度と大きさで、c = λ/2 − λ²/4 の関係にあります（倍率が 1 より小さいときだけ決まる）。計算は Claude。</figcaption>
 </figure>
 
 <details><summary>手を動かして確かめる — こう動かすと、こう見える</summary>
 
-- 「最初から」を押して「再生」：赤い点が一歩ずつ打たれ、渦を巻いて一か所へ寄っていく様子が見えます。②の拡大で、回る角度がそろっていることが分かります。
+- 「最初から」を押して「再生」：赤い点が一歩ずつ打たれ、渦を巻いて一か所へ寄っていく様子が見えます。
+- 「②で一段深く遡る」を何度か押す：赤の一点から、一段ごとに枝が二つに分かれます。赤い線（実際に通ってきた道）は一通りだけで、ほかの枝は外へ広がり、8 段ほどで境目（灰）の上に乗ります。
+- ②で赤い渦の別の点を押す、または「表示する歩数」を動かす：どの歩の値から遡っても、実際の道の一通りのほかは、同じ境目に散ります。
 - ①を押して出発点を変える：大きなハート形の中の `c` なら、灰色の境目の内側のどこから始めても、同じ一点に寄ります。境目の外側から始めると、外へ出ていきます。
 - 「遡る点の数」を 0 から少しずつ増やす：灰色の点が境目の上だけに集まっていき、内側は塗られないままです。
 - 「よくある塗り分けを薄く重ねる」：遡った灰色の点が、塗り分けの縁と重なることを確かめられます。
@@ -132,7 +135,9 @@ pjdhiro は、記事に次のように書いています。
 
 </details>
 
-前へ打った赤い点は、外へ飛び出さず、一か所の周りを、一歩ごとに同じ角度だけ回りながら、渦を巻いて寄っていきます（②）。遡った灰色の点は、どこから始めても境目の上に集まり、ジュリア集合の縁そのものを描きます（①）。一つの式を前へ進めた跡と、後ろへ遡った跡が、渦と込み入った境目という、まるで違う形になります。左の地図で `c` を押しても、スライダで角度と倍率を変えても、大きなハート形の中の `c` なら、この関係は変わりません。
+前へ打った赤い点は、外へ飛び出さず、一か所の周りを、一歩ごとに同じ角度だけ回りながら、渦を巻いて寄っていきます（①）。遡った灰色の点は、どこから始めても境目の上に集まり、ジュリア集合の縁そのものを描きます（①）。
+
+渦の上の一点から遡ってみると（②）、一段ごとに道が二つに分かれます。実際に通ってきた道は、そのうちの一通りだけです。ほかの枝は、渦から離れて外へ広がり、数段で境目に乗ります。渦の一点から遡った枝の全体は、ジュリア集合の縁に散ります（Claude の計算：どの歩の値から始めても、黄金角の c では、5・30・500 歩目のどの値から始めても、8 段目の点の 7 割より多くが、遡って打った境目の点から 0.01 より近い）。一つの式を前へ進めた跡と、後ろへ遡った跡が、渦と込み入った境目という、まるで違う形になります。左の地図で `c` を押しても、スライダで角度と倍率を変えても、大きなハート形の中の `c` なら、この関係は変わりません。
 
 図の最初の `c` は、一歩ごとに回る角度が約 137.5°（黄金角）になるように選んだ値です。前へ打った値は 300 歩打っても外に出ず、一歩ごとに 137.5° 回って 0.97 倍に寄っていきます（Claude の計算）。遡った点が境目のどこにでも近づくことは、数学で確かめられています（ミルナーの定理 3.9）。
 
