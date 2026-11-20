@@ -81,6 +81,19 @@ pjdhiro は、記事に次のように書いています。
 
 前へ進むと一か所に寄る渦になり、さかのぼると込み入った境目の形になる。同じ一つの式の前と後ろです。この関係が何を意味するかが、次の章の入口になりました。
 
+この関係が、ほかの `c` でも同じかは、下の図で確かめられます。左の図で `c` を選ぶと（押すか、なぞる）、同じ `c` で、前へ打った値（中）と、遡った点（右）が描き直されます。中は、前へ打った値が寄っていく一点（丸）のまわりを拡大した図で、右は、遡った点に前へ打った値を同じ目盛りで重ねた図です。左の黒い形は、0 から前へ打った値が外へ出ない `c` の集まり（マンデルブロ集合）です。その中の大きなハート形の所を選ぶと、前へ打った値は一点の周りを回りながら寄り、遡った点は一つながりの境目を描きます。黒い形の外を選ぶと、前へ打った値は外へ出て、遡った点は塵のように散ります。
+
+<figure class="glow-card reader-figure jp-live" id="jp-live">
+<div class="jp-live__grid">
+<div class="jp-live__panel"><p class="jp-live__label">c を選ぶ</p><canvas id="jp-live-c" width="280" height="250" aria-label="c の平面。黒い形はマンデルブロ集合。押すと c が変わる"></canvas></div>
+<div class="jp-live__panel"><p class="jp-live__label">前へ打った値（寄る一点のまわりを拡大）</p><canvas id="jp-live-fwd" width="260" height="260" aria-label="0 から前へ打った値の軌跡"></canvas></div>
+<div class="jp-live__panel"><p class="jp-live__label">√ で遡った点（灰）と、前へ打った値（赤）</p><canvas id="jp-live-bwd" width="260" height="260" aria-label="√ で遡った点の集まり"></canvas></div>
+</div>
+<div class="jp-live__btns"><button type="button" data-c="golden">黄金角（137.5°）で回る c</button><button type="button" data-c="third">120° で回る c</button><button type="button" data-c="out">外へ出る c</button></div>
+<p class="jp-live__state" id="jp-live-state">図はページの中の JavaScript で描きます。</p>
+<figcaption>右の目盛りは縦横とも −1.6 から 1.6。中は、寄っていく一点があるときだけ拡大し、無いときは右と同じ目盛り。前へ打つ値は 0 から始め、大きさが 2 を超えたら外へ出た（発散した）とします。遡る点は、一段ごとに ±√(z − c) のどちらかをでたらめに選び、初めの 50 段を捨てて打ちます（ミルナーの講義録 p.3-6 の描き方）。計算は Claude。</figcaption>
+</figure>
+
 <details><summary>出典</summary>
 
 出典：J. Milnor (1990) "[Dynamics in One Complex Variable: Introductory Lectures](https://arxiv.org/abs/math/9201272)"（ストーニーブルック数理科学研究所の講義録。1991 年 9 月の改訂版。arXiv の本文で照合済）。ジュリア集合の一点から一つ前の点をくり返し集めると、ジュリア集合のどこにでも近づくこと（定理 3.9）と、それを使う絵の描き方は p.3-6。図の値（c ≈ −0.378 + 0.562i、不動点の大きさ 0.485、一歩ごとの回転 137.51°・0.970 倍、前へ打った値の大きさの最大 0.725）は Claude が計算した。
@@ -117,6 +130,14 @@ pjdhiro は、記事に次のように書いています。
 <strong>pjdhiro の仮説（一つ目）：</strong>黄金比のひまわりの渦は、美しさを感じる。黄金比というのも美しさの定義の一つ。そのポテンシャルはジュリア集合の形。それは見る人によっては恐ろしさや醜さも感じる。美は　美醜、恐怖入り乱れたところから出る。という解釈が一つ目
 
 ひまわりの種は、黄金比から出る角度（黄金角、約 137.5°）ずつ回る渦に並びます。第一部の図で前へ打った値も、同じ角度ずつ回っていました。pjdhiro は、黄金比を美しさの定義の一つと見て、その渦の奥にあるもの（ポテンシャル）を、同じ式を遡ると出てくるジュリア集合の形に見ています。
+
+<figure class="glow-card reader-figure jp-live" id="jp-sun">
+<div class="jp-live__grid jp-live__grid--two">
+<div class="jp-live__panel"><p class="jp-live__label">黄金角で回る c の、前へ打った値</p><canvas id="jp-sun-orbit" width="260" height="260" aria-label="不動点のまわりを拡大した、前へ打った値の渦"></canvas></div>
+<div class="jp-live__panel"><p class="jp-live__label">ひまわりの並べ方（フォーゲルの式）</p><canvas id="jp-sun-vogel" width="260" height="260" aria-label="n 番目の点を n × 137.5° の向き、√n の距離に置いた並び"></canvas></div>
+</div>
+<figcaption>左は、第一部の図の値を、寄っていく一点（不動点）のまわりで拡大したもの。一歩ごとに 137.5° 回り、0.97 倍に寄ります。右は、n 番目の点を n × 137.5° の向き、中心から √n に比例する距離に置いた並び（400 点）。回る角度は同じで、距離の変わり方が違います。計算は Claude。</figcaption>
+</figure>
 
 ところが、ジュリア集合の形は、見る人によっては美しく、見る人によっては恐ろしく、醜くも見えます。美しいものだけを集めた所から美が出るのでなく、美しさと醜さと恐ろしさが入り乱れた所から、美と呼ばれるものが出てくる。これが一つ目の仮説です。
 

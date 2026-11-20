@@ -77,6 +77,18 @@
       ]
     }
     </script>
+    <style>
+      .jp-live { padding: 1rem; }
+      .jp-live__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem; align-items: start; }
+      .jp-live__panel { min-width: 0; }
+      .jp-live__label { font-size: 0.82rem; margin: 0 0 0.3rem; }
+      .jp-live canvas { display: block; width: 100%; height: auto; max-width: 280px; border-radius: 6px; touch-action: none; }
+      #jp-live-c { cursor: crosshair; }
+      .jp-live__btns { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.8rem 0 0.4rem; }
+      .jp-live__btns button { font: inherit; font-size: 0.85rem; padding: 0.3rem 0.8rem; border-radius: 999px; border: 1px solid currentColor; background: transparent; color: inherit; cursor: pointer; }
+      .jp-live__btns button:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+      .jp-live__state { font-size: 0.88rem; min-height: 2.6em; margin: 0.3rem 0; }
+    </style>
 </head>
 <body class="reader-flow">
     <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
@@ -118,6 +130,7 @@
     </div>
     <script type="module" src="../src/reader-app.js"></script>
     <script src="../src/reader-flow.js" defer></script>
+    <script src="../src/julia-potential-figs.js" defer></script>
     <script type="module" src="../src/reader-menu.js"></script>
 </body>
 </html>
