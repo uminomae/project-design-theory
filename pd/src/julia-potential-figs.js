@@ -427,73 +427,41 @@
     build();
   }
 
-  /* ---- 5) 漸化式とは（#jp-rec）：決まりを一つ選び、前の値から次の値を一歩ずつ出す。数直線に跳ぶ点を打つ ---- */
+  /* ---- 5) 漸化式とは（#jp-rec）：フィボナッチ数を、前の二つの値から一歩ずつ出す。数直線に跳ぶ点を打つ
+     （2026-11-21・付箋 i20261120180538frq「フィボナッチの計算だけのシンプルなもので十分」。決まりのボタンとスライダは外した） ---- */
   const rec = document.getElementById("jp-rec");
-  const RULES = {
-    plus1: { f: (a) => a + 1, show: (p) => p + " + 1", name: "1 を足す" },
-    double: { f: (a) => 2 * a, show: (p) => p + " × 2", name: "2 倍する" },
-    half: { f: (a) => a / 2, show: (p) => p + " ÷ 2", name: "半分にする" },
-    square: { f: (a) => a * a, show: (p) => p + "²", name: "二乗する" },
-    sqm1: { f: (a) => a * a - 1, show: (p) => p + "² − 1", name: "二乗して −1 を足す" },
-  };
-  let R = { rule: "double", a0: 1, seq: [1], timer: null, LO: -10, HI: 10 };
-  const nf = (v) => { const r = Math.round(v * 1000) / 1000; return (r < 0 ? "−" : "") + Math.abs(r); };
-  const REC_STEPS = 12;
-  // 数直線の長さ：始めるとき（決まりかはじめの値を変えたとき）に、先の値を REC_STEPS 歩まで計算し、
-  // 届く大きさに合う切りのよい長さ（0.5・1・2・5・10・20・50・100）を選ぶ。100 を超えて遠ざかる値は「図の外」と出す。
-  // 値がどれも 0 以上なら、0 から始まる数直線にして、小数の動きを広く見せる。
-  function scaleRec() {
-    const f = RULES[R.rule].f; let v = R.a0, m = Math.abs(v), lo = v;
-    for (let n = 0; n < REC_STEPS && Math.abs(v) <= 1e6; n++) { v = f(v); m = Math.max(m, Math.min(Math.abs(v), 100)); lo = Math.min(lo, v); }
-    const HI = [0.5, 1, 2, 5, 10, 20, 50, 100].find((h) => m <= h) || 100;
-    R.HI = HI; R.LO = lo >= 0 ? 0 : -HI;
-  }
+  const REC_N = 11;                       // a₁ 〜 a₁₁（1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89）。数直線は 0 〜 100
+  let R = { seq: [1, 1], timer: null };
+  const SUB = "₀₁₂₃₄₅₆₇₈₉"; function sub(n) { return String(n).split("").map((d) => SUB[+d]).join(""); }
   function drawRec() {
     if (!rec) return;
     const cv = document.getElementById("jp-rec-cv"), ctx = cv.getContext("2d"), W = cv.width, H = cv.height;
-    const LO = R.LO, HI = R.HI, X = (v) => 30 + (v - LO) / (HI - LO) * (W - 60), y0 = H * 0.66;
+    const LO = 0, HI = 100, X = (v) => 30 + (v - LO) / (HI - LO) * (W - 60), y0 = H * 0.66;
     ctx.fillStyle = css(rec, "--panel"); ctx.fillRect(0, 0, W, H);
     ctx.strokeStyle = css(rec, "--mid"); ctx.lineWidth = 1.5; ctx.beginPath(); ctx.moveTo(14, y0); ctx.lineTo(W - 14, y0); ctx.stroke();
     ctx.fillStyle = css(rec, "--mid"); ctx.font = "22px sans-serif"; ctx.textAlign = "center";
-    // 目盛り：小さい目盛りは長さの 1/20 ごと、数字は 1/10 ごと（片側だけの数直線は 1/5 ごと）
-    const span = HI - LO, minor = span / 20, every = LO === 0 ? 4 : 2;
-    for (let i = 0; i <= 20; i++) { const k = LO + i * minor, big = i % every === 0; ctx.beginPath(); ctx.moveTo(X(k), y0 - (big ? 8 : 4)); ctx.lineTo(X(k), y0 + (big ? 8 : 4)); ctx.stroke(); if (big) ctx.fillText(nf(k), X(k), y0 + 36); }
+    for (let k = 0; k <= 100; k += 5) { const big = k % 10 === 0; ctx.beginPath(); ctx.moveTo(X(k), y0 - (big ? 8 : 4)); ctx.lineTo(X(k), y0 + (big ? 8 : 4)); ctx.stroke(); if (k % 20 === 0) ctx.fillText(String(k), X(k), y0 + 36); }
     const s = R.seq;
     for (let n = 1; n < s.length; n++) {
-      const a = s[n - 1], b = s[n]; if (Math.abs(a) > HI) break;
-      const xa = X(a), xb = X(Math.max(LO - 0.3, Math.min(HI + 0.3, b))), mid = (xa + xb) / 2, h = 18 + Math.min(90, Math.abs(xb - xa) * 0.3);
+      const xa = X(s[n - 1]), xb = X(s[n]), mid = (xa + xb) / 2, h = 18 + Math.min(90, Math.abs(xb - xa) * 0.4);
       ctx.strokeStyle = n === s.length - 1 ? css(rec, "--coral") : css(rec, "--line"); ctx.lineWidth = n === s.length - 1 ? 2 : 1.5;
       ctx.beginPath(); ctx.moveTo(xa, y0 - 6); ctx.quadraticCurveTo(mid, y0 - 6 - h, xb, y0 - 6); ctx.stroke();
     }
-    s.forEach((v, n) => {
-      if (Math.abs(v) > HI) return;
-      ctx.fillStyle = n === s.length - 1 ? css(rec, "--coral") : css(rec, "--navy"); dot(ctx, X(v), y0, n === s.length - 1 ? 9 : 6);
-    });
-    const last = s[s.length - 1];
-    if (Math.abs(last) > HI) { ctx.fillStyle = css(rec, "--coral"); ctx.textAlign = last > 0 ? "right" : "left"; ctx.fillText(last > 0 ? "この先は図の外 →" : "← この先は図の外", last > 0 ? W - 14 : 14, y0 - 60); }
-    const chain = document.getElementById("jp-rec-chain");
-    chain.textContent = s.map((v, n) => "a" + sub(n) + " = " + nf(v)).join("　→　");
-    const out = document.getElementById("jp-rec-out"), rule = RULES[R.rule];
-    if (s.length === 1) out.textContent = "決まり「" + rule.name + "」、はじめの値 a₀ = " + nf(R.a0) + "。「一歩進める」か「再生」をクリックすると、いまの値に決まりを当てて、次の値を出します。";
-    else { const n = s.length - 1; out.textContent = "a" + sub(n) + " = " + rule.show("a" + sub(n - 1)) + " = " + rule.show(paren(s[n - 1])) + " = " + nf(s[n]) + "。出てきた値に、また同じ決まりを当てます。"; }
+    s.forEach((v, n) => { ctx.fillStyle = n === s.length - 1 ? css(rec, "--coral") : css(rec, "--navy"); dot(ctx, X(v), y0, n === s.length - 1 ? 9 : 6); });
+    document.getElementById("jp-rec-chain").textContent = s.map((v, n) => "a" + sub(n + 1) + " = " + v).join("　→　");
+    const out = document.getElementById("jp-rec-out"), n = s.length;
+    if (n === 2) out.textContent = "a₁ = 1、a₂ = 1 から始めます。「一歩進める」か「再生」をクリックすると、前の二つを足して、次の値を出します。";
+    else out.textContent = "a" + sub(n) + " = a" + sub(n - 2) + " + a" + sub(n - 1) + " = " + s[n - 3] + " + " + s[n - 2] + " = " + s[n - 1] + "。出てきた値で、また同じ決まりを当てます。" + (n >= REC_N ? "（この先は 100 を超えるので、ここまで）" : "");
   }
-  const SUB = "₀₁₂₃₄₅₆₇₈₉"; function sub(n) { return String(n).split("").map((d) => SUB[+d]).join(""); }
-  const paren = (v) => (v < 0 ? "(" + nf(v) + ")" : nf(v));
   if (rec) {
-    scaleRec();
     const stopR = () => { if (R.timer) { clearInterval(R.timer); R.timer = null; } document.getElementById("jp-rec-play").setAttribute("aria-pressed", "false"); };
-    const reset = () => { stopR(); R.seq = [R.a0]; scaleRec(); drawRec(); };
-    const stepR = () => { const s = R.seq, v = s[s.length - 1]; if (s.length > REC_STEPS || Math.abs(v) > 1e6) return false; s.push(RULES[R.rule].f(v)); drawRec(); return true; };
-    rec.querySelectorAll("[data-rule]").forEach((b) => b.addEventListener("click", () => {
-      R.rule = b.dataset.rule; rec.querySelectorAll("[data-rule]").forEach((x) => x.setAttribute("aria-pressed", String(x === b))); reset();
-    }));
-    const sl = document.getElementById("jp-rec-a0"), so = document.getElementById("jp-rec-a0-out");
-    sl.addEventListener("input", () => { R.a0 = +sl.value; so.textContent = nf(R.a0); reset(); });
+    const reset = () => { stopR(); R.seq = [1, 1]; drawRec(); };
+    const stepR = () => { const s = R.seq; if (s.length >= REC_N) return false; s.push(s[s.length - 2] + s[s.length - 1]); drawRec(); return true; };
     document.getElementById("jp-rec-step").addEventListener("click", () => { stopR(); stepR(); });
     document.getElementById("jp-rec-reset").addEventListener("click", reset);
     document.getElementById("jp-rec-play").addEventListener("click", (e) => {
       if (R.timer) { stopR(); return; }
-      if (R.seq.length > REC_STEPS) R.seq = [R.a0];
+      if (R.seq.length >= REC_N) R.seq = [1, 1];
       e.currentTarget.setAttribute("aria-pressed", "true"); stepR(); R.timer = setInterval(() => { if (!stepR()) stopR(); }, 900);
     });
   }
