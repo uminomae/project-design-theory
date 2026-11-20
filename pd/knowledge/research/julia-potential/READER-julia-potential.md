@@ -220,6 +220,20 @@ pjdhiro は、記事に次のように書いています。
 
 平方根で角度は半分になり、マイナスの平方根は、もう一方を半回転させた写しになります。pjdhiro は、この二つの枝の並びを ☯ に見ました。境目に込み入った模様が出ることは、創造が生まれる所についての直感と重なっていました。
 
+記事が参考にしていたのは、Steven Wittens の「[How to Fold a Julia Fractal](https://acko.net/blog/how-to-fold-a-julia-fractal/)」（2013）です。そこでは、点が収まる円を、遡る向きに一段ずつ畳んでいくと、ジュリア集合の形になる様子を、動く図で見せています。下の図は、その見せ方に倣って、このページで新しく描いたものです。大きさ 2 の円の上の点を、`±√(w − c)` で一段ずつ遡ります。
+
+<figure class="glow-card reader-figure jp-fig" id="jp-fold">
+<div class="jp-fig__grid jp-fig__grid--one">
+<div class="jp-fig__panel"><p class="jp-fig__label">大きさ 2 の円を、一段ずつ遡って畳む</p><canvas id="jp-fold-cv" width="460" height="460" aria-label="大きさ 2 の円を一段ずつ遡ると、くびれと突き出しが増え、ジュリア集合の形に寄っていく"></canvas></div>
+</div>
+<p class="jp-fig__readout" id="jp-fold-out">図はページの中の JavaScript で描きます。</p>
+<div class="jp-fig__btns"><button type="button" id="jp-fold-reset">最初から</button><button type="button" id="jp-fold-step">一段遡る</button><button type="button" id="jp-fold-play" aria-pressed="false">再生</button></div>
+<div class="jp-fig__btns" role="group" aria-label="c の例"><button type="button" data-fc="golden">黄金角の c</button><button type="button" data-fc="-0.123,0.745">c = −0.12 + 0.75i</button><button type="button" data-fc="-1,0">c = −1</button><button type="button" data-fc="0,0">c = 0（円のまま）</button></div>
+<figcaption>一段遡るごとに、前の曲線を二周たどって平方根を取ります。曲線の内側は、その段の数だけ前へ打っても大きさ 2 を超えない点の集まりで、段を重ねるほど、くり返しても遠くへ行かない点の集まり（充填ジュリア集合）に寄ります。薄い線は一つ前の段です。見せ方は Wittens の記事に倣い、計算と描画はこのページのものです。</figcaption>
+</figure>
+
+円の上の一点は、一段遡るごとに二つに分かれ、二つの点は、円を半周ずつ受け持つように並びます。円が自分に巻きついて畳まれ、くびれと突き出しが段ごとに細かくなっていきます。
+
 ## 値を前へ打つと渦になり、遡るとジュリア集合の形になる
 
 <!--OPEN-->
