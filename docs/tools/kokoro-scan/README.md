@@ -1,0 +1,30 @@
+# 心の脆弱性スキャン
+
+論文や記事を渡すと、Claude が読み物「Love駆動開発と呼びたいもの β」の見方を物差しにして、心や論の脆弱性を診断するアーティファクト（https://claude.ai/artifact/L2vUT23vmX9phUuwJgqVuB）。pjdhiro の頼みで 2026-11-22 に作った。
+
+## ファイル
+
+| ファイル | 中身 |
+|---|---|
+| `page.html` | アーティファクトのページの元。診断の書き方・返す形（JSON）は、ここの `HEAD`・`TAIL` にある |
+| `ruler.md` | 物差し。ページと一緒に `ruler.md` として出し、ページは診断のたびにこれを読む。頭の `版`・`日付`・`読み物の版` は、診断の結果とページの終わりに出る |
+
+ページの中の `RULER_FALLBACK` は、出したときの `ruler.md` の写し。`ruler.md` が取れないときだけ使い、結果にそう出す。
+
+## なぜページと一緒に出すのか
+
+アーティファクトのページは、外のサイト（github.io・raw.githubusercontent.com を含む）を読みに行けない（アーティファクトの決まり：ページと一緒に出したファイルと、決まった CDN の script のほかは、fetch も止められる）。読めるのは、一緒に出した自分のファイルだけ。だから、物差しを直したら、ページを出し直す。
+
+## 物差しを直すとき
+
+1. 読み物（正本 `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`・公開ページ `pd/reader/love-driven-dev.html`）と `docs/rules/stance.md` の、物差しに関わる所が変わったら、`ruler.md` の本文を直す。要点は、pjdhiro の言葉と正本の書き方に沿わせる。
+2. `ruler.md` の頭の `版` を上げ、`日付` を直し、`読み物の版` を `pd/reader/love-driven-dev.html` の `data-reader-version` に合わせる。
+3. `page.html` の `RULER_FALLBACK` を、新しい `ruler.md` の全文に置き換える。
+4. Artifact の道具で、`page.html` を `url`（上の URL）に出し直し、`files` で `{"ruler.md": "docs/tools/kokoro-scan/ruler.md"}` を一緒に出す。
+5. 開いて、ページの終わりの「物差しにしている見方」に新しい版が出るかを見る。
+
+`scripts/check.sh` は、`ruler.md` の `読み物の版` が読み物の今の版と違うと、注意を出す（落とさない。読み物は直すたびに版が 0.001 上がり、物差しに関わらない直しも多いため）。注意が出たら、物差しに関わる直しだったかを見て、関わるなら上の手順を回す。
+
+## 物差しの中の Claude の読み
+
+`ruler.md` の 8 の、他者視点取得と自己の対象化が文章にどう表れるか（「〜と思われる不安」「周囲を気にする」など）の手がかりは、Claude が推し量って足したもの。pjdhiro の言葉ではない。カオナビ人事用語集「心理的安全性とは？」で、この手がかりを足す前は取り違えを名指せず、足したあとは名指せた（2026-11-22）。ほかの文章で効くかは、まだ確かめていない。

@@ -84,6 +84,15 @@ tool_residue() {
 }
 run "道具の呼び出しの文字の紛れ込み" tool_residue
 
+# 心の脆弱性スキャンの物差しが、読み物の今の版から作られているか（注意だけ。落とさない）。
+# 読み物は直すたびに版が上がり、物差しに関わらない直しも多いので、落とすと止まりすぎる（docs/tools/kokoro-scan/README.md）。
+scan_ruler_reader=$(sed -n 's/^読み物の版: *//p' docs/tools/kokoro-scan/ruler.md 2>/dev/null | head -1)
+current_reader=$(grep -o 'data-reader-version="[0-9.]*"' pd/reader/love-driven-dev.html 2>/dev/null | head -1 | grep -o '[0-9.]*')
+if [ -n "$scan_ruler_reader" ] && [ -n "$current_reader" ] && [ "$scan_ruler_reader" != "$current_reader" ]; then
+  echo "== 心の脆弱性スキャンの物差し（注意）"
+  echo "   物差しは読み物 ver. $scan_ruler_reader から、読み物の今の版は ver. $current_reader。物差しに関わる直しなら、docs/tools/kokoro-scan/README.md の手順で作り直す"
+fi
+
 echo
 if [ ${#failed[@]} -gt 0 ]; then
   echo "落ちた検査：${failed[*]}"
