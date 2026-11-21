@@ -4,6 +4,7 @@
 // 2) 手を動かす図（#jp-lab）：c の地図をクリックして c を選ぶ／①で、0 から前へ打った値（赤）と、赤の一点から ±√ の両方で遡る枝を見る（押すと遡りの出発の点が変わる）／ボタン・スライダ／一歩ずつ・再生／塗り分けを重ねる
 // 3) c を選ぶ地図と、その c で残る形（#jp-mand・#jp-julia、章の畳み）
 // 4) 円を遡って畳む（#jp-fold）：一段を「− c」「√」「−√」の三歩に分け、一歩ずつ・戻す・再生。色で出どころを追う。c は地図のクリックかボタン
+// 8) 遡りの木（#jp-btree）：赤の一点から ±√ で一段ごとに二つに分かれる遡りを、木と平面に並べて一段ずつ
 (function () {
   const figs = document.querySelectorAll(".jp-fig");
   if (!figs.length) return;
@@ -262,7 +263,7 @@
     }
   }
 
-  /* ---- 4) 円を遡って畳む（#jp-fold、第三部の頭の章） ----
+  /* ---- 4) 円を遡って畳む（#jp-fold、第三部の一つ目の章） ----
      大きさ 2 の円の上の点を、±√(w − c) で一段ずつ遡る。一段を三つの歩に分けて描く。
        一歩目「− c」：曲線の全体を −c だけ平行移動する（c にあった点が 0 に来る）。
        二歩目「√」 ：0 の周りの角を半分、0 からの距離を √ にする（√ の主値。一周が右半分の半周に縮む）。
@@ -274,14 +275,16 @@
      曲線の内側は、その段の数だけ前へ打っても大きさ 2 を超えない点の集まりで、段を重ねると充填ジュリア集合に寄る。
      M の外の c では曲線が二つに切れて、この描き方（一本の曲線でつなぐ）が成り立たないので、選べないようにする。
      ただし、0 から前へ打って外へ出るまでの歩数が MAXK より十分多い c は、描く段（MAXK 段）までは曲線が一本のまま
-     なので選べる。既定の c = −0.8 + 0.16i は M のわずかに外（38 歩で外へ出る）で、これに当たる
-     （2026-11-21・付箋 i20261121024316zx9「c = -0.800 + 0.160i　をデフォにして。すべて。」）。 */
+     なので選べる。c = −0.8 + 0.16i は M のわずかに外（39 歩で外へ出る）で、これに当たる。
+     既定の c は −0.79 + 0.13i（周期 2 の房 |c + 1| < 1/4 の中、|c + 1| ≈ 0.247 でふちに近い。形はひとつながりで、
+     ページのサムネイル julia-thumb.png〔c = −0.8 + 0.16i〕とほぼ同じ渦を巻く形になる）。2026-11-21・付箋 i202611210415105lx
+     「ジュリアの逆写像のデフォルトは…サムネイルの画像になるような値がいい。探して」。前は付箋 i20261121024316zx9 で −0.8 + 0.16i。 */
   const fold = document.getElementById("jp-fold");
   let drawFold = () => {};
   if (fold) {
     const cv = document.getElementById("jp-fold-cv"), cvM = document.getElementById("jp-fold-c"), out = document.getElementById("jp-fold-out");
     const N = 16384, MAXK = 12, LAST = 3 * MAXK, FV = { x0: -2.75, x1: 2.75, y0: -2.75, y1: 2.75 }, NB = 48;
-    let C = { re: -0.8, im: 0.16 }, levels = [], half = [], sig = [], pos = 0, tw = 1, timer = 0, animId = 0, global = true, mapImg = null, note = "";
+    let C = { re: -0.79, im: 0.13 }, levels = [], half = [], sig = [], pos = 0, tw = 1, timer = 0, animId = 0, global = true, mapImg = null, note = "";
     // 主値の平方根（偏角を (−π, π] で半分にする）
     const sqrtP = (wr, wi) => { const m = Math.hypot(wr, wi); return [Math.sqrt((m + wr) / 2), Math.sign(wi || 1) * Math.sqrt(Math.max(0, (m - wr) / 2))]; };
     function build() {
@@ -621,7 +624,158 @@
     }));
   }
 
-  function all() { drawFixed(); drawLab(); drawBig(); drawFold(); drawRec(); drawCplx(); drawSq(); }
+  /* ---- 8) 遡りの木（#jp-btree、第三部の渦と遡りの章） ----
+     根は、0 から ROOT_N 歩前へ打った赤の一点 z_n。一段遡るごとに、どの点も +√(w − c)（木の左の枝）と −√(w − c)（右の枝）の
+     二つに分かれる。k 段目は 2^k 点。木は TREE_D 段まで描き、平面には MAXD 段まで同じ点を打つ（深い段ほど金に近い色）。
+     赤い太線は、実際に通ってきた道（z_{n−1}, z_{n−2}, …, z_0 = 0）。木の点か平面の点をクリックすると、その点と根までの道を示す。
+     2026-11-21・付箋 i202611210418272y3「全探索のツリーの図のように、逆写像の遡りをツリーの図で書くことはできないの？文章だと分かりづらい」。
+     既定の c は、遡る図（#jp-fold）と同じ −0.79 + 0.13i（付箋 i202611210415105lx）。 */
+  const bt = document.getElementById("jp-btree");
+  let drawBtree = () => {};
+  if (bt) {
+    const cvT = document.getElementById("jp-btree-t"), cvP = document.getElementById("jp-btree-p"), out = document.getElementById("jp-btree-out");
+    const ROOT_N = 5, TREE_D = 5, MAXD = 10, PV2 = { x0: -1.8, x1: 1.8, y0: -1.8, y1: 1.8 };
+    let C = { re: -0.79, im: 0.13 }, L = [], path = [], orbit = [], d = 0, sel = null, timer = 0, bg = null;
+    const sqrtP = (wr, wi) => { const m = Math.hypot(wr, wi); return [Math.sqrt((m + wr) / 2), Math.sign(wi || 1) * Math.sqrt(Math.max(0, (m - wr) / 2))]; };
+    function build() {
+      orbit = forward(C, { re: 0, im: 0 }, ROOT_N).pts;
+      L = [[orbit[ROOT_N]]];
+      for (let k = 1; k <= MAXD; k++) {
+        const prev = L[k - 1], cur = [];
+        for (const [wr, wi] of prev) { const [sr, si] = sqrtP(wr - C.re, wi - C.im); cur.push([sr, si], [-sr, -si]); }
+        L.push(cur);
+      }
+      // 実際に通ってきた道：k 段目は、前の段の道の点の二つの子のうち、z_{n−k} に近いほう
+      path = [0];
+      for (let k = 1; k <= ROOT_N; k++) {
+        const a = path[k - 1], [tr, ti] = orbit[ROOT_N - k], p0 = L[k][2 * a], p1 = L[k][2 * a + 1];
+        path.push(Math.hypot(p0[0] - tr, p0[1] - ti) <= Math.hypot(p1[0] - tr, p1[1] - ti) ? 2 * a : 2 * a + 1);
+      }
+      bg = null; sel = null;
+    }
+    const mix = (a, b, t) => { const A = hex(a), B = hex(b); return "rgb(" + A.map((x, i) => Math.round(x + (B[i] - x) * t)).join(",") + ")"; };
+    const lvCol = (k) => mix(css(bt, "--navy"), css(bt, "--gold"), Math.min(1, k / MAXD));
+    const SUBS = "₀₁₂₃₄₅₆₇₈₉", sb = (n) => String(n).split("").map((x) => SUBS[+x]).join("");
+    // 木の上の点 (k, i) の位置
+    function tpos(k, i) {
+      const W = cvT.width, m = 22, top = 34, gapY = (cvT.height - top - 46) / TREE_D;
+      return [m + ((i + 0.5) * (W - 2 * m)) / 2 ** k, top + k * gapY];
+    }
+    // 根までの道の、各段の番号（i の親は i >> 1）
+    const ancestry = (k, i) => { const a = []; for (let j = k; j >= 0; j--) { a.unshift(i); i = i >> 1; } return a; };
+    function drawTree() {
+      const ctx = cvT.getContext("2d"), W = cvT.width, H = cvT.height, coral = css(bt, "--coral"), mid = css(bt, "--mid"), line = css(bt, "--line");
+      ctx.fillStyle = css(bt, "--panel"); ctx.fillRect(0, 0, W, H);
+      const dd = Math.min(d, TREE_D);
+      ctx.lineWidth = 1.4; ctx.strokeStyle = mid; ctx.globalAlpha = 0.55;
+      for (let k = 1; k <= dd; k++) for (let i = 0; i < 2 ** k; i++) {
+        const [x0, y0] = tpos(k - 1, i >> 1), [x1, y1] = tpos(k, i);
+        ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x1, y1); ctx.stroke();
+      }
+      ctx.globalAlpha = 1;
+      // 選んだ点までの道（紺）と、実際に通ってきた道（赤い太線）
+      if (sel && sel.k <= dd) {
+        const a = ancestry(sel.k, sel.i); ctx.strokeStyle = css(bt, "--navy"); ctx.lineWidth = 3.4; ctx.beginPath();
+        a.forEach((i, k) => { const [x, y] = tpos(k, i); if (k === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y); }); ctx.stroke();
+      }
+      const pd = Math.min(dd, ROOT_N);
+      if (pd > 0) {
+        ctx.strokeStyle = coral; ctx.lineWidth = 4; ctx.lineCap = "round"; ctx.beginPath();
+        for (let k = 0; k <= pd; k++) { const [x, y] = tpos(k, path[k]); if (k === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y); } ctx.stroke();
+      }
+      for (let k = 0; k <= dd; k++) {
+        const n = 2 ** k, r = Math.max(2.2, 6 - k * 0.7);
+        for (let i = 0; i < n; i++) { const [x, y] = tpos(k, i); ctx.fillStyle = k === 0 ? coral : lvCol(k); dot(ctx, x, y, k === 0 ? 7 : r); }
+      }
+      if (sel && sel.k <= dd) { const [x, y] = tpos(sel.k, sel.i); ctx.strokeStyle = css(bt, "--navy"); ctx.lineWidth = 2.5; ctx.beginPath(); ctx.arc(x, y, 9, 0, Math.PI * 2); ctx.stroke(); }
+      // 文字：根と、一段目の枝の +√・−√、段の番号
+      ctx.font = "15px sans-serif"; ctx.textAlign = "center"; ctx.fillStyle = coral;
+      const [rx, ry] = tpos(0, 0); ctx.fillText("赤の一点 z" + sb(ROOT_N), rx, ry - 14);
+      if (dd >= 1) {
+        const [ax, ay] = tpos(1, 0), [bx, by] = tpos(1, 1); ctx.fillStyle = mid;
+        ctx.fillText("+√", (rx + ax) / 2 - 16, (ry + ay) / 2); ctx.fillText("−√", (rx + bx) / 2 + 16, (ry + by) / 2);
+      }
+      ctx.textAlign = "left"; ctx.font = "13px sans-serif"; ctx.fillStyle = mid;
+      for (let k = 1; k <= dd; k++) { const [, y] = tpos(k, 0); ctx.fillText(k + " 段", 0, y - 8); }
+      if (d > TREE_D) { ctx.textAlign = "center"; ctx.fillText("6 段目から先は、右の平面にだけ打つ（" + d + " 段目は " + (2 ** d).toLocaleString() + " 点）", W / 2, H - 12); }
+      else if (d === 0) { ctx.textAlign = "center"; ctx.fillText("「一段遡る」か ▶ をクリックすると、枝が二つずつ分かれる", W / 2, H / 2); }
+    }
+    function drawPlane() {
+      const ctx = cvP.getContext("2d"), W = cvP.width, H = cvP.height, coral = css(bt, "--coral");
+      if (!bg) {
+        // 背景：くり返しても遠くへ行かない点（充填ジュリア集合）を薄い色で。その縁がジュリア集合の境目
+        bg = ctx.createImageData(W, H); const IN = hex(css(bt, "--esc0")), OUT = hex(css(bt, "--panel")), f = escJfor(C);
+        for (let j = 0; j < H; j++) for (let i = 0; i < W; i++) {
+          const x = PV2.x0 + ((PV2.x1 - PV2.x0) * i) / W, y = PV2.y1 - ((PV2.y1 - PV2.y0) * j) / H, col = f(x, y, 120) < 0 ? IN : OUT, q = (j * W + i) * 4;
+          bg.data[q] = col[0]; bg.data[q + 1] = col[1]; bg.data[q + 2] = col[2]; bg.data[q + 3] = 255;
+        }
+      }
+      ctx.putImageData(bg, 0, 0);
+      ctx.strokeStyle = css(bt, "--line"); ctx.lineWidth = 1; const [ox, oy] = toPx(PV2, 0, 0, cvP);
+      ctx.beginPath(); ctx.moveTo(0, oy); ctx.lineTo(W, oy); ctx.moveTo(ox, 0); ctx.lineTo(ox, H); ctx.stroke();
+      for (let k = d; k >= 1; k--) {
+        ctx.fillStyle = lvCol(k); const r = k <= 3 ? 4.5 : k <= 6 ? 3 : 1.8;
+        for (const [x, y] of L[k]) { const [px, py] = toPx(PV2, x, y, cvP); dot(ctx, px, py, r); }
+      }
+      const pd = Math.min(d, ROOT_N);
+      if (pd > 0) {
+        ctx.strokeStyle = coral; ctx.lineWidth = 3; ctx.lineCap = "round"; ctx.beginPath();
+        for (let k = 0; k <= pd; k++) { const [x, y] = L[k][path[k]], [px, py] = toPx(PV2, x, y, cvP); if (k === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py); } ctx.stroke();
+      }
+      if (sel && sel.k <= d) {
+        const a = ancestry(sel.k, sel.i); ctx.strokeStyle = css(bt, "--navy"); ctx.lineWidth = 2; ctx.beginPath();
+        a.forEach((i, k) => { const [x, y] = L[k][i], [px, py] = toPx(PV2, x, y, cvP); if (k === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py); }); ctx.stroke();
+        const [x, y] = L[sel.k][sel.i], [px, py] = toPx(PV2, x, y, cvP); ctx.beginPath(); ctx.arc(px, py, 8, 0, Math.PI * 2); ctx.stroke();
+      }
+      const [rx, ry] = toPx(PV2, L[0][0][0], L[0][0][1], cvP); ctx.fillStyle = coral; dot(ctx, rx, ry, 6);
+      ctx.font = "15px sans-serif"; ctx.fillText("z" + sb(ROOT_N), rx + 9, ry - 9);
+      if (d >= ROOT_N) { const [x0, y0] = toPx(PV2, 0, 0, cvP); ctx.fillStyle = css(bt, "--set"); ctx.fillText("0", x0 + 7, y0 + 16); }
+    }
+    drawBtree = () => {
+      drawTree(); drawPlane();
+      let t = "c = " + fmtC(C.re, C.im) + "　根：0 から " + ROOT_N + " 歩前へ打った値 z" + sb(ROOT_N) + "\n";
+      if (d === 0) t += "まだ遡っていない。";
+      else {
+        t += d + " 段遡った。" + d + " 段目は 2 の " + d + " 乗で " + (2 ** d).toLocaleString() + " 点（根を入れて合わせて " + (2 ** (d + 1) - 1).toLocaleString() + " 点）。";
+        t += d < ROOT_N ? "赤い太線は、実際に通ってきた道（z" + sb(ROOT_N - 1) + " から z" + sb(ROOT_N - d) + " まで）。" : "赤い太線は、実際に通ってきた道で、" + ROOT_N + " 段で出発の 0 に着く。ほかの枝は、通らなかった一つ前。";
+        if (d >= 6) t += "深い段の点（金に近い色）は、薄い色の形の縁（ジュリア集合の境目）に寄っている。";
+      }
+      if (sel && sel.k <= d) { const [x, y] = L[sel.k][sel.i]; t += "\n選んだ点：" + sel.k + " 段目、根から " + ancestry(sel.k, sel.i).slice(1).map((i) => (i % 2 ? "−√" : "+√")).join(" → ") + "　値 " + fmtC(x, y); }
+      out.textContent = t;
+    };
+    const play = document.getElementById("jp-btree-play");
+    const stop = () => { clearInterval(timer); timer = 0; play.setAttribute("aria-pressed", "false"); };
+    const setD = (v) => { d = Math.max(0, Math.min(MAXD, v)); drawBtree(); };
+    document.getElementById("jp-btree-step").addEventListener("click", () => { stop(); setD(d + 1); });
+    document.getElementById("jp-btree-back").addEventListener("click", () => { stop(); setD(d - 1); });
+    document.getElementById("jp-btree-reset").addEventListener("click", () => { stop(); sel = null; setD(0); });
+    play.addEventListener("click", () => {
+      if (timer) { stop(); return; }
+      if (d >= MAXD) d = 0;
+      play.setAttribute("aria-pressed", "true"); setD(d + 1);
+      timer = setInterval(() => { if (d >= MAXD) { stop(); return; } setD(d + 1); }, 1000);
+    });
+    bt.querySelectorAll("[data-bc]").forEach((b) => b.addEventListener("click", () => {
+      stop(); const v = b.dataset.bc; C = v === "golden" ? cFromAngle(GOLDEN_DEG, 0.97) : (([a, i]) => ({ re: a, im: i }))(v.split(",").map(Number));
+      bt.querySelectorAll("[data-bc]").forEach((x) => x.setAttribute("aria-pressed", String(x === b))); build(); drawBtree();
+    }));
+    // 木の点のクリック：近い点を選ぶ
+    cvT.addEventListener("click", (e) => {
+      const r = cvT.getBoundingClientRect(), mx = ((e.clientX - r.left) / r.width) * cvT.width, my = ((e.clientY - r.top) / r.height) * cvT.height;
+      let best = null, bd = 18 * 18;
+      for (let k = 0; k <= Math.min(d, TREE_D); k++) for (let i = 0; i < 2 ** k; i++) { const [x, y] = tpos(k, i), q = (x - mx) ** 2 + (y - my) ** 2; if (q < bd) { bd = q; best = { k, i }; } }
+      sel = best; drawBtree();
+    });
+    // 平面の点のクリック：近い点を選ぶ（浅い段を先に）
+    cvP.addEventListener("click", (e) => {
+      const p = fromPx(PV2, e, cvP), tol = 0.08; let best = null, bd = tol * tol;
+      for (let k = 0; k <= d; k++) L[k].forEach(([x, y], i) => { const q = (x - p.re) ** 2 + (y - p.im) ** 2; if (q < bd) { bd = q; best = { k, i }; } });
+      sel = best; drawBtree();
+    });
+    build();
+  }
+
+  function all() { drawFixed(); drawLab(); drawBig(); drawFold(); drawRec(); drawCplx(); drawSq(); drawBtree(); }
   all();
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", all);
   new MutationObserver(all).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });

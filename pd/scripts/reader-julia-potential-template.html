@@ -122,6 +122,8 @@
       /* 一枚の図は小さめにし、操作のボタンをすぐ下に、状態の文はその後に置く。図と操作が一つの画面に収まり、スクロールせずに動かせる（pjdhiro 2026-11-20・付箋 i20261120135335jag） */
       .jp-fig__grid--one { grid-template-columns: 1fr; max-width: 18rem; margin-inline: auto; }
       .jp-fig__grid--fold { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); align-items: start; }
+      .jp-fig__grid--btree { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); align-items: start; }
+      @media (max-width: 40rem) { .jp-fig__grid--btree { grid-template-columns: 1fr; } }
       @media (max-width: 40rem) { .jp-fig__grid--fold { grid-template-columns: 1fr; } .jp-fig__grid--fold .jp-fig__panel:first-child canvas { max-width: 15rem; margin-inline: auto; } }
       .jp-fig__group { margin-top: .9rem; padding-top: .6rem; border-top: 1px solid var(--line); }
       .jp-fig__glabel { margin: 0 0 .2rem; font-size: .8rem; letter-spacing: .04em; color: var(--mid); }
