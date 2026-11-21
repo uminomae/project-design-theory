@@ -291,7 +291,7 @@
     function build() {
       const re0 = new Float64Array(N), im0 = new Float64Array(N);
       for (let j = 0; j < N; j++) { const a = (2 * Math.PI * j) / N; re0[j] = 2 * Math.cos(a); im0[j] = 2 * Math.sin(a); }
-      levels = [[re0, im0]]; half = [null]; sig = [null];
+      levels = [[re0, im0]]; half = [null]; sig = [null]; fills.clear();
       for (let l = 1; l <= MAXK; l++) {
         const [pr, pi] = levels[l - 1], nr = new Float32Array(N), ni = new Float32Array(N), hr = new Float32Array(N), hi = new Float32Array(N), sg = new Int8Array(N);
         for (let j = 0; j < N; j++) {
@@ -331,6 +331,24 @@
           X[j] = hr[j] * ca - hi[j] * sa; Y[j] = hr[j] * sa + hi[j] * ca;
         }
       }
+    }
+    // 段 l の内側の塗り（画素ごと。c を変えたら作り直す）
+    const fills = new Map();
+    function levelFill(l) {
+      if (fills.has(l)) return fills.get(l);
+      const W = cv.width, Hh = cv.height, off = document.createElement("canvas"); off.width = W; off.height = Hh;
+      const octx = off.getContext("2d"), img = octx.createImageData(W, Hh), col = hex(css(fold, "--esc1")), A = 150;
+      for (let j = 0; j < Hh; j++) {
+        const y0 = FV.y1 - ((j + 0.5) * (FV.y1 - FV.y0)) / Hh;
+        for (let i = 0; i < W; i++) {
+          let a = FV.x0 + ((i + 0.5) * (FV.x1 - FV.x0)) / W, b = y0, n = 0;
+          if (a * a + b * b > 4) continue;
+          for (; n < l; n++) { const aa = a * a - b * b + C.re; b = 2 * a * b + C.im; a = aa; if (a * a + b * b > 4) break; }
+          if (n < l) continue;
+          const q = (j * W + i) * 4; img.data[q] = col[0]; img.data[q + 1] = col[1]; img.data[q + 2] = col[2]; img.data[q + 3] = A;
+        }
+      }
+      octx.putImageData(img, 0, 0); fills.set(l, off); return off;
     }
     function closedPath(ctx) {
       ctx.beginPath();
@@ -385,8 +403,13 @@
       ctx.globalAlpha = 1;
       const s = tw * tw * (3 - 2 * tw);
       frame(pos, s);
-      // 曲線の内側：形が閉じている歩（円・− c・段の終わり）だけ塗る
-      if (sub !== 1 && !(sub === 2 && s < 1)) { closedPath(ctx); ctx.fillStyle = css(f, "--esc0"); ctx.globalAlpha = 0.55; ctx.fill("evenodd"); ctx.globalAlpha = 1; }
+      // 曲線の内側：形が閉じている歩（円・− c・段の終わり）だけ塗る。塗りは曲線の多角形でなく、画素ごとに
+      // 「その段の数だけ前へ打っても大きさ 2 を超えない」かで決める（線は一周を同じ間隔で取るので、深い段では
+      // 境目の細かい入り江〔巻き込み〕の奥に点が来ず、横切ってしまう。塗りはそれを正しく見せる）
+      if (sub !== 1 && !(sub === 2 && s < 1)) {
+        const img = levelFill(pos === 0 ? 0 : sub === 0 ? lv - 1 : lv), k = sub === 0 ? s : 0;
+        ctx.drawImage(img, (-k * C.re * W) / (FV.x1 - FV.x0), (k * C.im * Hh) / (FV.y1 - FV.y0));
+      }
       // √ の歩では、半分の境（虚軸）を強める
       if (sub >= 1) { ctx.strokeStyle = mid; ctx.globalAlpha = 0.7; ctx.setLineDash([5, 5]); ctx.beginPath(); ctx.moveTo(ax, 0); ctx.lineTo(ax, Hh); ctx.stroke(); ctx.setLineDash([]); ctx.globalAlpha = 1; }
       // 点を色ごとに線でつなぐ（離れた隣はつながない）。−√ の枝を先に、+√ の枝をあとに描く
@@ -401,10 +424,13 @@
         const g = D[j] < 0 ? 0 : 1, b = H[j], P = paths[g][b];
         P.moveTo((X[j] - FV.x0) * sx, (FV.y1 - Y[j]) * sy); P.lineTo((X[k2] - FV.x0) * sx, (FV.y1 - Y[k2]) * sy); used[g][b] = 1;
       }
+      // 深い段では、線は入り江の奥を追いきれないので薄くし、形は塗りで見せる
+      ctx.globalAlpha = lv <= 12 ? 1 : Math.max(0.3, 1 - (lv - 12) / 12);
       for (let g = 0; g < 2; g++) for (let b = 0; b < NB; b++) {
         if (!used[g][b]) continue;
         ctx.strokeStyle = "hsl(" + Math.round((b * 360) / NB) + "," + (g === 0 ? "62%,30%)" : "75%,52%)"); ctx.stroke(paths[g][b]);
       }
+      ctx.globalAlpha = 1;
       // 0 と c の印。− c の歩では c から 0 への矢印
       ctx.fillStyle = css(f, "--set"); dot(ctx, ax, ay, 3.5);
       ctx.font = "13px sans-serif"; ctx.fillText("0", ax + 6, ay - 6);
@@ -715,7 +741,7 @@
       ctx.strokeStyle = css(bt, "--line"); ctx.lineWidth = 1; const [ox, oy] = toPx(PV2, 0, 0, cvP);
       ctx.beginPath(); ctx.moveTo(0, oy); ctx.lineTo(W, oy); ctx.moveTo(ox, 0); ctx.lineTo(ox, H); ctx.stroke();
       for (let k = d; k >= 1; k--) {
-        ctx.fillStyle = lvCol(k); const r = k <= 3 ? 4.5 : k <= 6 ? 3 : 1.8;
+        ctx.fillStyle = lvCol(k); const r = k <= 3 ? 4.5 : k <= 6 ? 3.2 : 2.4;
         for (const [x, y] of L[k]) { const [px, py] = toPx(PV2, x, y, cvP); dot(ctx, px, py, r); }
       }
       const pd = Math.min(d, ROOT_N);
