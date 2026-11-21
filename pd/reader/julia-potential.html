@@ -199,7 +199,7 @@
 <details class="acc" id="jp-about-julia" data-peek data-peek-dock="ジュリア集合とは" hidden><summary><img class="jp-acc-thumb" src="../assets/img/julia-thumb.png" alt="" width="96" height="96">詳しく — ジュリア集合とは</summary>
 
 <p>ジュリア集合は、<code>z → z² + c</code> のような簡単な式をくり返すと現れる形です。名は、フランスの数学者ガストン・ジュリアにちなみます。</p>
-<figure class="glow-card reader-figure"><div class="jp-pair"><img src="../assets/img/julia-set-c-right.png" alt="c = −0.8 + 0.16i のジュリア集合。渦を巻く細い枝が、左右に連なる。背景の青は、遠くへ行く点" width="520" height="520" loading="lazy"><img src="../assets/img/julia-set-c-left.png" alt="c = −0.12 + 0.75i のジュリア集合。淡い色の塗りが、くびれでつながった丸い房の連なりになる。背景の青は、遠くへ行く点" width="520" height="520" loading="lazy"></div><figcaption>左は <code>c = −0.8 + 0.16i</code>、右は <code>c = −0.12 + 0.75i</code>。左の <code>c</code> は、0 から打つと遠くへ行く値で、遠くへ行かない点はひとつながりにならず、細かなかけらに散ります。左の淡い点は、計算した回数では遠くへ行かなかった点です。右の淡い色は、くり返しても遠くへ行かない点で、その縁がジュリア集合です。青は遠くへ行く点で、明るいほど、遠くへ行くまでに多くの歩数がかかった点です。どちらも、このページで計算して描きました（計算は Claude）。</figcaption></figure>
+<figure class="glow-card reader-figure"><div class="jp-pair"><img src="../assets/img/julia-set-c-right.png" alt="c = −0.8 + 0.16i のジュリア集合。渦を巻く細い枝が、左右に連なる。背景の青は、遠くへ行く点" width="520" height="520" loading="lazy"><img src="../assets/img/julia-set-c-left.png" alt="c = −0.12 + 0.75i のジュリア集合。淡い色の塗りが、くびれでつながった丸い房の連なりになる。背景の青は、遠くへ行く点" width="520" height="520" loading="lazy"></div><figcaption>左は <code>c = −0.8 + 0.16i</code>、右は <code>c = −0.12 + 0.75i</code>。左の <code>c</code> は、マンデルブロ集合の縁のすぐ外にあり、0 から打つと、39 歩も粘ってから遠くへ行きます。遠くへ行かない点はひとつながりにならず、細かなかけらに散ります。縁に近い <code>c</code> ほど、絵は込み入ります。左の淡い点は、計算した回数では遠くへ行かなかった点です。右の淡い色は、くり返しても遠くへ行かない点で、その縁がジュリア集合です。青は遠くへ行く点で、明るいほど、遠くへ行くまでに多くの歩数がかかった点です。どちらも、このページで計算して描きました（計算は Claude）。</figcaption></figure>
 
 <ul>
 <li><code>z</code> も <code>c</code> も、平面の上の一点で表せる数（複素数）です。<code>c</code> を一つ決め、出発点の <code>z</code> を一つ選んで、二乗して <code>c</code> を足す、をくり返します。</li>
@@ -598,7 +598,7 @@ while 決めた歩数まで:
 
 
 <p><a id="jp-vortex"></a>前へ進めて渦になるのは、<code>c</code> がマンデルブロ集合の本体（大きなハート形）の中にあるときです。</p>
-<p>よく見るジュリア集合の絵は、平面の全部の点から式をくり返して塗り分けた、全探索の絵です（章の終わりの畳みの図）。この章では、0 の一点から前へ打った値 <code>z₀, z₁, z₂…</code>（赤）が、一本の道を歩いた跡です。その赤の一点から、同じ式を逆に一段ずつ遡ると、遡りは木になります。</p>
+<p>よく見るジュリア集合の絵は、平面の点を一つずつ出発点にして式をくり返し、遠くへ飛んでいくかどうかで色を付けた絵です（章の終わりの畳みで見られます）。全部の点を試す、全探索の絵です。この章では、0 の一点から前へ打った値 <code>z₀, z₁, z₂…</code>（赤）が、一本の道を歩いた跡です。その赤の一点から、同じ式を逆に一段ずつ遡ると、遡りは木になります。</p>
 <figure class="glow-card reader-figure jp-fig" id="jp-btree">
 <p class="jp-fig__title">遡りの木：赤の一点から、一段ごとに +√ と −√ の二つに分かれる</p>
 <div class="jp-fig__grid jp-fig__grid--btree">
@@ -612,59 +612,6 @@ while 決めた歩数まで:
 </figure>
 
 <p>下の図は、この遡りを、前へ打った赤の渦と一枚に重ねて、段を 100 まで深くしたものです。</p>
-<details class="acc"><summary>詳しく — よくある塗り分けと、この章の打ち方の違い（計算式とプロット）</summary>
-
-<p>三つとも同じ式 <code>z → z² + c</code> を使い、<code>c</code> は一つに決めておきます。違うのは、どこから始めるか、何をくり返すか、何を平面に打つかです。</p>
-<div class="tablefit cols-4">
-
-<div class="tablewrap"><table>
-<thead>
-<tr>
-<th></th>
-<th>よくある塗り分け</th>
-<th>前へ打つ（赤）</th>
-<th>遡る（紺から金）</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>出発点</td>
-<td>平面のすべての点（画面の一つ一つの点を <code>z₀</code> にする）</td>
-<td>0 の一点だけ</td>
-<td>前へ打った赤の一点 <code>zₙ</code></td>
-</tr>
-<tr>
-<td>くり返す式</td>
-<td><code>zₙ₊₁ = zₙ² + c</code></td>
-<td><code>zₙ₊₁ = zₙ² + c</code></td>
-<td><code>wₖ₊₁ = +√(wₖ − c)</code> と <code>−√(wₖ − c)</code> の両方（一段ごとに二倍に分かれる）</td>
-</tr>
-<tr>
-<td>やめる所</td>
-<td><code>zₙ</code> の原点からの距離が 2 を超えたら（遠くへ行く）。決めた回数（この章の図では 110 回）超えなければ、行かないとみなす</td>
-<td>決めた歩数まで（この章の図では、はじめ 100 歩。200 歩まで）</td>
-<td>決めた段数まで（この章の図では、はじめ 100 段。100 段まで）</td>
-</tr>
-<tr>
-<td>平面に打つもの</td>
-<td>出発点の位置に、遠くへ行くまでの回数を色にして塗る。行かない点は濃い色</td>
-<td>出てきた値 <code>z₁, z₂, z₃…</code> のそれぞれの位置</td>
-<td>遡って出てきた点（<code>k</code> 段目は <code>2ᵏ</code> 通り。この章の図では、11 段目までは全部、それより深い段は 2,048 本の道を一段ごとに枝を一つ選んで遡ったもの）</td>
-</tr>
-<tr>
-<td>見えるもの</td>
-<td>行かない点の集まり（充填ジュリア集合）と、その縁（ジュリア集合）</td>
-<td>一つの点の通った跡。<code>c</code> がマンデルブロ集合の本体（大きなハート形）にあると、一点 <code>z*</code> の周りを回りながら寄る渦</td>
-<td>浅い段は渦の近く。段が深くなるにつれて縁（ジュリア集合）に寄り、内側は塗られない。枝の一つは、実際に通ってきた <code>zₙ₋₁, zₙ₋₂…</code></td>
-</tr>
-</tbody>
-</table></div>
-</div>
-
-<p>塗り分けは、出発点ごとに「行き先が遠くか、そうでないか」を色にした地図です。一つ一つの点がどう動いたかは、絵に残りません。前へ打つ赤は、その逆に、一つの点の動きだけを残した絵です。渦の回る角度と寄る割合は、<code>z*</code> での傾き <code>λ = 2z*</code> で決まり、一歩ごとに角度 <code>arg λ</code> だけ回り、<code>|λ|</code> 倍に寄ります（この章のスライダの二つの値）。遡って点を撒き、縁を描く方法は、ミルナーの講義録 p.3-6 に描き方として出てきます。</p>
-<p>c を選ぶ地図（マンデルブロ集合）は、塗り分けと同じ計算を、<code>z₀</code> を 0 に決めて、<code>c</code> のほうを平面の一つ一つの点にして回したものです（章の終わりの畳み）。</p>
-</details>
-
 <figure class="glow-card reader-figure jp-fig" id="jp-lab" data-peek>
 <p class="jp-fig__title">前へは渦、遡ると境目：同じ式を、0 から前へ打ち、その一点から遡る</p>
 <div class="jp-fig__grid">
@@ -672,7 +619,7 @@ while 決めた歩数まで:
 <div class="jp-fig__panel"><p class="jp-fig__label">0 から前へ打った値（赤）と、赤の一点から遡った枝（紺から金）。図をクリックすると、遡り始める赤の点が変わる</p><canvas id="jp-lab-1" width="420" height="420" aria-label="前へ打った値の軌跡と、その一点から一段ごとに二つに分かれて遡った点。実際に通った道は赤い太線"></canvas></div>
 </div>
 <div class="jp-media" role="group" aria-label="再生の操作"><button type="button" id="jp-lab-reset" class="jp-media__icon" aria-label="最初から" title="最初から"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2.4v14H6zM19 5v14L9 12z"/></svg></button><button type="button" id="jp-lab-play" class="jp-media__play" aria-pressed="false" aria-label="再生" title="再生・止める"><svg class="jp-media__on" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="jp-media__off" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.6v14H7zM13.4 5H17v14h-3.6z"/></svg></button><button type="button" id="jp-lab-step" class="jp-media__word">一歩進める</button></div>
-<div class="jp-fig__btns"><button type="button" id="jp-lab-deeper">一段深く遡る</button><button type="button" id="jp-lab-bg" aria-pressed="false">よくある塗り分けを薄く重ねる</button></div>
+<div class="jp-fig__btns"><button type="button" id="jp-lab-deeper">一段深く遡る</button><button type="button" id="jp-lab-bg" aria-pressed="false">よく見るジュリア集合の絵を薄く重ねる</button></div>
 <p class="jp-fig__readout jp-fig__readout--pre" id="jp-lab-out">図はページの中の JavaScript で描きます。</p>
 <div class="jp-fig__group"><p class="jp-fig__glabel">決まった c で見る</p>
 <div class="jp-fig__btns"><button type="button" data-lc="golden">黄金角（137.5°）で回る c</button><button type="button" data-lc="-0.1248,0.6152">120° で回る c</button><button type="button" data-lc="-1,0">c = −1</button><button type="button" data-lc="-0.123,0.745">c = −0.12 + 0.75i</button><button type="button" data-lc="-0.8,0.16">c = −0.8 + 0.16i</button><button type="button" data-lc="0.3,0">c = 0.3（外へ出る）</button></div></div>
@@ -699,17 +646,19 @@ while 決めた歩数まで:
 <li>「前へ打つ歩数」を 12 ほどに下げる：100 歩目の値は寄る一点にほとんど重なっていて、実際に通ってきた道もその一点に重なって見えません。歩数を下げると、赤い太線が渦をさかのぼって 0 のほうへ戻る道として見えます。</li>
 <li>図の中の赤い渦の別の点をクリック、または「前へ打つ歩数」を動かす：どの歩の値から遡っても、実際の道の一通りのほかは、同じ境目に散ります。</li>
 <li>「最初から」をクリックして「再生」：赤い点が一歩ずつ打たれ、渦を巻いて一か所へ寄っていきます。遡りは、そのつど最後の歩の値から描き直されます。</li>
-<li>「よくある塗り分けを薄く重ねる」：深い段の点が、塗り分けの縁と重なることを確かめられます。</li>
+<li>「よく見るジュリア集合の絵を薄く重ねる」：深い段の点が、その絵の縁と重なることを確かめられます。</li>
 <li>回る角度を 120° や 90° の近くにする：寄っていく点が、ほぼ三本、四本の筋に並びます。黄金角（137.5°）では、筋がそろわず、ひまわりの種の並びに近い散らばり方になります。</li>
 <li>寄る倍率を 1 に近づける：寄るのが遅くなり、渦の巻きが増え、境目の形も変わります。</li>
 <li>左の地図で、黒い形の外をクリック（または「c = 0.3」）：赤は外へ出て、遡った枝は一つながりでない塵のように散ります。</li>
 </ul>
 </details>
 
-<p>前へ打った赤い点は、外へ飛び出さず、一か所の周りを、一歩ごとに同じ角度だけ回りながら、渦を巻いて寄っていきます。その渦の上の一点から遡ってみると、一段ごとに道が二つに分かれます。実際に通ってきた道は、そのうちの一通りだけで、ほかの枝は渦から離れて外へ広がり、8 段ほどでジュリア集合の境目の近くに集まります。一つの式を前へ進めた跡と、後ろへ遡った跡が、渦と込み入った境目という、まるで違う形になります。大きなハート形の中の、実数でない <code>c</code> なら、どれを選んでも、この関係は変わりません（実数の <code>c</code> では、回らずにまっすぐ寄ります）。</p>
+<p>前へ進めると、赤い点は、一か所の周りを回りながら少しずつ寄っていきます。これが渦です。</p>
+<p>後ろへ遡ると、一段ごとに道が二つに分かれ、8 段ほどで、ジュリア集合の境目に散らばります。実際に通ってきた道は、そのうちの一本だけです。</p>
+<p>同じ式なのに、前へ進めるか、後ろへ遡るかで、まるで違う形になります。</p>
 <details class="acc"><summary>詳しく — 図の最初の c と、数学で確かめられていること</summary>
 
-<p>図の最初の <code>c</code> は、一歩ごとに回る角度が約 137.5°（黄金角）になるように選んだ値で、値は一歩ごとに 0.97 倍に寄っていきます。境目の上の点から遡った点が境目のどこにでも近づくことは、数学で確かめられています（ミルナーの定理 3.9）。渦の上の点から遡った枝が境目に寄ることは、Claude が計算で確かめました（黄金角の <code>c</code> で、5・30・500 歩目のどの値から遡っても、8 段目の点の 7 割より多くが、境目から 0.01 より近い）。</p>
+<p>図の最初の <code>c</code> は、一歩ごとに回る角度が約 137.5°（黄金角）になるように選んだ値で、値は一歩ごとに 0.97 倍に寄っていきます。マンデルブロ集合の本体（大きなハート形）の中の、実数でない <code>c</code> なら、どれを選んでも、前へは渦、遡ると境目、の関係は変わりません（実数の <code>c</code> では、回らずにまっすぐ寄ります）。境目の上の点から遡った点が境目のどこにでも近づくことは、数学で確かめられています（ミルナーの定理 3.9）。渦の上の点から遡った枝が境目に寄ることは、Claude が計算で確かめました（黄金角の <code>c</code> で、5・30・500 歩目のどの値から遡っても、8 段目の点の 7 割より多くが、境目から 0.01 より近い）。</p>
 <p>遡る枝の数は、k 段遡ると 2 の k 乗通りに分かれ、100 段では約 1.27 × 10 の 30 乗通りになるので、全部は打てません。図は、11 段目（2,048 通り）までは枝を全部打ち、それより深い段は、その 2,048 本の道を、一段ごとに +√ と −√ のどちらか一つを選んで遡って打ちます（一つを選んで遡るのは、ジュリア集合を描くよく知られた方法です）。スライダの、回る角度と寄る倍率は、寄る一点 z* での傾き λ = 2z* の角度と大きさで、c = λ/2 − λ²/4 の関係にあります（倍率が 1 より小さいときだけ決まる）。</p>
 </details>
 
@@ -727,9 +676,9 @@ while 決めた歩数まで:
 </ul>
 <details class="acc"><summary>詳しく — よく見るジュリア集合の絵と、ほかの c（c を選ぶ地図）</summary>
 
-<p>よく見るジュリア集合の絵（塗り分け）も、ここで見られます。左の地図で <code>c</code> をクリックするか、下のスライダで <code>c</code> の実部と虚部を動かすと、右に、その <code>c</code> で残る形が出ます。遡ると境目に集まる様子は、本文の図「前へは渦、遡ると境目」で見られます。</p>
+<p>よく見るジュリア集合の絵も、ここで見られます。左の地図で <code>c</code> をクリックするか、下のスライダで <code>c</code> の実部と虚部を動かすと、右に、その <code>c</code> で残る形が出ます。遡ると境目に集まる様子は、本文の図「前へは渦、遡ると境目」で見られます。</p>
 <figure class="glow-card reader-figure jp-fig" id="jp-paint">
-<p class="jp-fig__title">よくある塗り分け：c を一つ選び、平面のすべての点から打って塗る</p>
+<p class="jp-fig__title">よく見るジュリア集合の絵：c を一つ選び、平面の点を一つずつ試して、遠くへ行くかで色を付ける</p>
 <div class="jp-fig__grid">
 <div class="jp-fig__panel"><p class="jp-fig__label">c を選ぶ地図（c の平面）。クリックすると c が変わる</p><canvas id="jp-mand" width="520" height="460" aria-label="マンデルブロ集合。クリックした所が c になる"></canvas></div>
 <div class="jp-fig__panel"><p class="jp-fig__label">その c で残る形（z の平面）</p><canvas id="jp-julia" width="520" height="460" aria-label="選んだ c の充填ジュリア集合"></canvas></div>

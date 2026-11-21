@@ -38,7 +38,7 @@
   }
   function escM(cx, cy, m) { let a = 0, b = 0; for (let n = 0; n < m; n++) { const aa = a * a - b * b + cx; b = 2 * a * b + cy; a = aa; if (a * a + b * b > 4) return n; } return -1; }
   const escJfor = (c) => (a, b, m) => { for (let n = 0; n < m; n++) { const aa = a * a - b * b + c.re; b = 2 * a * b + c.im; a = aa; if (a * a + b * b > 4) return n; } return -1; };
-  // 塗り分け（よくある絵）：平面の一つ一つの点を出発点にして、遠くへ行くまでの回数を色にする
+  // よく見るジュリア集合の絵：平面の一つ一つの点を出発点にして、遠くへ行くまでの回数を色にする
   function paint(cv, view, fn, maxIt, alpha) {
     const f = cv.closest(".jp-fig"), ctx = cv.getContext("2d"), W = cv.width, H = cv.height, img = ctx.createImageData(W, H);
     const S = hex(css(f, "--set")), A0 = hex(css(f, "--esc0")), B0 = hex(css(f, "--esc1"));
@@ -172,7 +172,9 @@
     function readout() {
       const fp = fixedPoint(st.c), n = Math.min(st.n, fwd.pts.length - 1), p = fwd.pts[n];
       let s = "c = " + fmtC(st.c.re, st.c.im) + "　前へ " + n + " 歩：z = " + fmtC(p[0], p[1]) + "\n";
-      if (fwd.escapedAt) s += fwd.escapedAt + " 歩目で外へ出る（発散）";
+      // 外へ出るまでに歩数がかかる c は、マンデルブロ集合の縁のすぐ外。そのことを添えて、計算の誤りに見えないようにする
+      // （2026-11-21・付箋 i20261121042142bgf「計算がおかしくない？このパラメータは最も複雑な画像が描けるパラメータのはず」）
+      if (fwd.escapedAt) s += fwd.escapedAt + " 歩目で外へ出る（発散）" + (fwd.escapedAt >= 10 ? "。この c はマンデルブロ集合の縁のすぐ外にあり、0 からの点は " + fwd.escapedAt + " 歩も粘ってから外へ出る。縁に近い c ほど、ジュリア集合の絵は込み入る" : "");
       else if (fp.mod < 1) s += "寄る一点 z* = " + fmtC(fp.zr, fp.zi) + "　一歩ごとに " + fp.deg.toFixed(1) + "° 回り " + fp.mod.toFixed(3) + " 倍";
       else s += N_MAX + " 歩まで外へ出ない（ハート形の外か縁で、渦にはならない）";
       const d = st.d, back = Math.min(d, n);
