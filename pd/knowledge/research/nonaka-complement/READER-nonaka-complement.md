@@ -2,7 +2,7 @@
 
 <div class="reader-lead glow-card" id="nk-gist"><span class="reader-lead__label">ざっくりいうと</span>
 <p>このページは、次の依頼に答える形でまとめています。同じ文を LLM に渡せば、同じ向きのレビューを試せます。</p>
-<blockquote class="reader-callout"><p>野中郁次郎が知識創造（SECI・場・知識のらせん）を論じた論文のうち、本文を読めるものを探して読んでください。野中が出典に挙げた論文や、引いた哲学者の原典も、本文で確かめてください。そのうえで、読み物「Love駆動開発と呼びたいもの β」（<a href="https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html">https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html</a>）を中心に、この repo（<a href="https://github.com/uminomae/project-design-theory">https://github.com/uminomae/project-design-theory</a>）の内容に照らして、野中の理想を目指すときの注意点をレビューしてください。repo の全体の案内は <a href="https://uminomae.github.io/project-design-theory/llms.txt">https://uminomae.github.io/project-design-theory/llms.txt</a> にあります。</p></blockquote>
+<blockquote class="reader-callout" style="overflow-wrap:anywhere"><p>野中郁次郎が知識創造（SECI・場・知識のらせん）を論じた論文のうち、本文を読めるものを探して読んでください。野中が出典に挙げた論文や、引いた哲学者の原典も、本文で確かめてください。そのうえで、読み物「Love駆動開発と呼びたいもの β」（<a href="https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html">https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html</a>）を中心に、この repo（<a href="https://github.com/uminomae/project-design-theory">https://github.com/uminomae/project-design-theory</a>）の内容に照らして、野中の理想を目指すときの注意点をレビューしてください。repo の全体の案内は <a href="https://uminomae.github.io/project-design-theory/llms.txt">https://uminomae.github.io/project-design-theory/llms.txt</a> にあります。</p></blockquote>
 <p>答えの芯です。野中の理想は、駆動するものを人の内側に置く点で、Love駆動開発と同じ所を見ています。ただ、共感・愛・ケア・信頼・共通善の五つの言葉は良い側だけで書かれ、Love駆動開発が要ると見る、ぶつかりと、心の守りの話が抜けています。</p>
 <p>そのため同じ言葉が、読む人の守り方と段階しだいで、逆の向きにも働きます。それでも回ってきたのは、長く勤める雇用のような条件が言葉を支えていたからではないか。注意点は、その歯止めと条件を補うことだ、と考えます。</p>
 </div>
