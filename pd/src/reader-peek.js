@@ -69,7 +69,14 @@
     while (n && nodes.length < 4 && /^(P|BLOCKQUOTE|UL|OL)$/.test(n.tagName) && !(nodes.length && isSubhead(n))) {
       nodes.push(n); n = n.nextElementSibling;
     }
-    return { title: sum ? sum.textContent.trim() : '', nodes: nodes };
+    var title = sum ? sum.textContent.trim() : '';
+    /* 章でなく、部の頭の文（.reader-part__lead）の印なら、題は部の番号と題（2026-11-22） */
+    var part = !sum && el.closest('.reader-part');
+    if (part) {
+      title = Array.prototype.map.call(part.querySelectorAll('.reader-part__no, .reader-part__title'),
+        function (x) { return x.textContent.trim(); }).join(' ');
+    }
+    return { title: title, nodes: nodes };
   }
 
   function isSubhead(n) {
