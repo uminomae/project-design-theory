@@ -29,6 +29,7 @@
 | `beauty/` | 「美とは」。探索して追記していくページ。正本 `READER-beauty.md`、pjdhiro の発言の記録・読んだ原典と照合の状態・追記の決まり・残したことは `README.md` |
 | `julia-potential/` | 「起業家の漸化式と、ジュリア集合」（副題は「起業家を駆るものは、ジュリア集合のような、神・愛・美のポテンシャルか」）。漸化式のたとえの対話から立った問いと、問いが立った視点（漸化式は起業家のよう・Love は重力のようにドリフトする・それはジュリア集合の漸化式のよう）を解説する工事中の独立ページ。正本 `READER-julia-potential.md`、pjdhiro の発言の記録・読んだ原典と照合の状態・残したことは `README.md` |
 | `nonaka-papers/` | 野中郁次郎の論文（知識創造・SECI・場）の索引。書誌・原典へのリンク・ライセンスの見立てだけ（八本とも著作権が残り、本文は置かない）。`INDEX.md`（付箋帳 i20261120141240lud） |
+| `nonaka-complement/` | 野中郁次郎の知識創造を Love駆動開発で補う独立の読み物の計画（#183）。骨格の案 `PLAN-reader-20261121.md`、pjdhiro の発言の出どころは `README.md`。材料は `nonaka-five-words/`・`nonaka-papers/` |
 | `nondual/` | 「不二（非二元）とは」（最初の題は「見分けられるのに、切り離せないもの」、次に「非二元とは」「不二・非二元とは」）。非二元さを表したものを分野ごとに集め、随時追記していくページ。正本 `READER-nondual.md`、pjdhiro の発言の記録・読んだ原典と照合の状態・追記の決まり・載せなかった候補は `README.md` |
 | `decision-making/` | 「意思決定とは」（#176）。正本 `READER-decision-making.md`、pjdhiro の発言の記録・読んだ原典と照合の状態・載せなかったもの・残したことは `README.md`、原典ごとの照合は `SURVEY-01`〜`06` |
 | `via-vulnerability/` | 「脆弱性から、全体を知る」。正本 `READER-via-vulnerability.md`、一般化の下書き `DRAFT-knowing-through-vulnerability-20261117.md`。照合の記録は `love-driven-dev/SURVEY-self-via-vulnerability-20261117.md` |
