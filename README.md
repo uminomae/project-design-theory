@@ -50,7 +50,7 @@ git clone --depth 1 https://github.com/uminomae/project-design-theory
 頼む文の例（野中郁次郎の知識創造の論）：
 
 ```text
-https://github.com/uminomae/project-design-theory を取得し、README の「Love駆動開発の視点でレビューに使うとき」に沿って読んでください。そのうえで、読み物「Love駆動開発と呼びたいもの β」の見方を物差しにして、野中郁次郎の知識創造の論文（たとえば Nonaka 1994「A Dynamic Theory of Organizational Knowledge Creation」）をレビューしてください。野中の理想を目指すとき、どこに気をつけるかを、引く文には原典の頁を添えて書いてください。
+https://github.com/uminomae/project-design-theory を取得し、README の「Love駆動開発の視点でレビューに使うとき」に沿って読んでください。そのうえで、野中郁次郎が知識創造（SECI・場・知識のらせん）を論じた論文のうち、本文を読めるものを探して読み、野中が出典に挙げた論文や、引いた哲学者の原典も本文で確かめてください。読み物「Love駆動開発と呼びたいもの β」の見方を物差しにして、野中の理想を目指すときの注意点をレビューし、引く文には原典の頁を添えてください。
 ```
 
 この形で答えた読み物が、「[野中郁次郎の理想を目指すとき、どこに気をつけるか](https://uminomae.github.io/project-design-theory/reader/nonaka-complement.html)」です。
