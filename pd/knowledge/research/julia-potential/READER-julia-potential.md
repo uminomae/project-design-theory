@@ -14,7 +14,11 @@
 
 <strong>pjdhiro の見方：</strong>漸化式は、起業家のよう。Love と呼びたいものは、重力のようにドリフトする。それは、ジュリア集合の漸化式のようだ。
 
-起業家は、一歩の結果を次の一歩の出発にして進んでいるのではないか。そうなら、前の値から次の値を決める漸化式と、同じ形です。このページは、その一歩の中で、起業家の中の自己と自己が掛け合わさるようなことが起きている、と仮に定めて見ます。自己が一つでないなら、掛け合わさった分は、どちらか一つの自己からは出てきません。周りからは「人に会って決める」のような単純なくり返しに見えても、その一歩は、言葉にできない、認知し得ないものを含んでいるのかもしれません。その一歩ごとに、Love と呼びたいものが、重力のように、歩みを同じ向きへ同じだけ引き寄せているのかもしれません。
+起業家は、一歩の結果を次の一歩の出発にして進んでいるのではないか。そうなら、前の値から次の値を決める漸化式と、同じ形です。
+
+<figure class="glow-card reader-figure" id="jp-akinai-top"><svg viewBox="0 0 480 280" role="img" aria-label="「商いは、飽きない」を、入れ子の深さ優先探索の木で描いた図。左の小さな木を深く進み、外れの枝には×が付いて戻る。見つけた所の星から、条件を変えた次の木が立ち、そこでも外れと星があり、さらに次の木が立っていく" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;height:auto"><defs><marker id="akn-a" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#5b6476"/></marker></defs><rect x="0" y="0" width="480" height="280" rx="10" fill="#ffffff"/><text x="12" y="24" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#1d2433">「商いは、飽きない」を、入れ子の深さ優先探索で描く</text><g stroke-width="2.4" stroke-linecap="round"><line x1="60" y1="70" x2="30" y2="130" stroke="#24407a"/><line x1="60" y1="70" x2="90" y2="130" stroke="#24407a"/><line x1="90" y1="130" x2="75" y2="190" stroke="#24407a"/><line x1="90" y1="130" x2="105" y2="190" stroke="#24407a"/><line x1="215" y1="110" x2="190" y2="170" stroke="#c4573f"/><line x1="215" y1="110" x2="240" y2="170" stroke="#c4573f"/><line x1="240" y1="170" x2="225" y2="230" stroke="#c4573f"/><line x1="240" y1="170" x2="255" y2="230" stroke="#c4573f"/><line x1="360" y1="150" x2="340" y2="210" stroke="#9a7d0a" stroke-dasharray="3 3"/><line x1="360" y1="150" x2="380" y2="210" stroke="#9a7d0a" stroke-dasharray="3 3"/></g><g fill="none" stroke="#5b6476" stroke-width="1.3" stroke-dasharray="4 3"><path d="M115,186 Q175,186 209,120" marker-end="url(#akn-a)"/><path d="M235,226 Q300,228 353,158" marker-end="url(#akn-a)"/></g><circle cx="60" cy="70" r="5.5" fill="#24407a"/><circle cx="90" cy="130" r="4" fill="#24407a"/><circle cx="240" cy="170" r="4" fill="#c4573f"/><circle cx="215" cy="110" r="5.5" fill="#c4573f"/><circle cx="360" cy="150" r="5.5" fill="#9a7d0a"/><g stroke="#5b6476" stroke-width="2"><line x1="24" y1="124" x2="36" y2="136"/><line x1="36" y1="124" x2="24" y2="136"/><line x1="69" y1="184" x2="81" y2="196"/><line x1="81" y1="184" x2="69" y2="196"/><line x1="184" y1="164" x2="196" y2="176"/><line x1="196" y1="164" x2="184" y2="176"/><line x1="249" y1="224" x2="261" y2="236"/><line x1="261" y1="224" x2="249" y2="236"/></g><path d="M105,181 l2.9,6 6.6,1 -4.8,4.6 1.1,6.6 -5.8,-3.1 -5.8,3.1 1.1,-6.6 -4.8,-4.6 6.6,-1 z" fill="#9a7d0a"/><path d="M225,221 l2.9,6 6.6,1 -4.8,4.6 1.1,6.6 -5.8,-3.1 -5.8,3.1 1.1,-6.6 -4.8,-4.6 6.6,-1 z" fill="#9a7d0a"/><text x="60" y="56" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#24407a">試す（いまの所）</text><text x="215" y="96" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#c4573f">条件を変えた木で、試す</text><text x="360" y="136" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#9a7d0a">また次の木で、試す</text><text x="400" y="232" font-family="Noto Sans JP, sans-serif" font-size="13" fill="#9a7d0a">…</text><text x="240" y="256" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="10.5" fill="#5b6476">× 外れ（戻って次の枝へ。やってみたことは経験に残る）　★ 見つけた</text><text x="240" y="272" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#1d2433">外れたら次の枝へ、見つけたら次の木へ。やめずに続けるのが「飽きない」</text></svg><figcaption>「商いは、飽きない」を、入れ子の深さ優先探索の木で描いた図です。左の木を深く進み、外れ（×）なら戻って次の枝へ、何かを見つけたら（★）、そこから条件を変えた次の木で、また試します。木ははじめから一本あるのでなく、進むうちに立っていきます。第一部で、疑似コードと一緒に見ます。Claude が描いた図です。</figcaption></figure>
+
+このページは、その一歩の中で、起業家の中の自己と自己が掛け合わさるようなことが起きている、と仮に定めて見ます。自己が一つでないなら、掛け合わさった分は、どちらか一つの自己からは出てきません。周りからは「人に会って決める」のような単純なくり返しに見えても、その一歩は、言葉にできない、認知し得ないものを含んでいるのかもしれません。その一歩ごとに、Love と呼びたいものが、重力のように、歩みを同じ向きへ同じだけ引き寄せているのかもしれません。
 
 式に当てると `z → z² + c` になりそうです。`z` を起業家の思考・心理・行動（気づきや決定も含む）、`z²` を起業家の中で起きる自己と自己の掛け算、`c` を Love と呼びたいものの重力と、仮に置きます。これは、[ジュリア集合](#jp-about-julia)を描く式です。0 から始めて式をくり返し、出てきた値を順に平面へ点として打っていくと（このページでは「前へ打つ」と言います）、`c` によっては、一か所に寄る渦になります。そこから一歩ずつ逆に遡ると、ジュリア集合の込み入った境目になります。
 
@@ -44,28 +48,65 @@
 ここでのポテンシャルは、pjdhiro の言葉では「場と呼びたいような、可能性」です。第三部では、同じ問いを、起業家の行動の結果は、そもそもどんなポテンシャルだったのか、という側から問い直します。
 
 <div class="reader-lead"><span class="reader-lead__label">今の答え</span>
-Love と呼びたいものを駆動源として、起業家が意思決定していると見たら、その場はジュリア集合のようなものかもしれません。これがこのページの主題で、問いへの答えは、二つの仮説として置いています。一つは pjdhiro の一旦の仮説で、起業家が生み出した成果は、いつか誰かが達成する可能性を持った場がすでにあって、確率的に、起業家と呼ばれる人が達成したのではないか、というものです。もう一つは、美の定義から入った四段の仮説で、ジュリア集合のような形が神・愛・美のポテンシャルの場で、美は起業家のエネルギーに近い、と結びます。二乗を起業家の中の自己と自己の掛け算と見るなら、そのポテンシャルは、一人の中の自己達にもあるのかもしれません。
+このページは、起業家の一歩の中で、自己と自己の掛け算のようなものが起きている、と見ます。自己が一つでないなら、掛け合わさる自己達そのものが、まだ形になっていない可能性です。pjdhiro はそれを「脳内の自己と自己の掛け合わせなら、脳内の自己達が可能性だよね」と言いました。その可能性の場は、どんな形をしているのか。Love と呼びたいものを駆動源として、起業家が意思決定していると見たら、その場はジュリア集合のようなものかもしれません。これがこのページの主題で、問いへの答えは、二つの仮説として置いています。一つは pjdhiro の一旦の仮説で、起業家が生み出した成果は、いつか誰かが達成する可能性を持った場がすでにあって、確率的に、起業家と呼ばれる人が達成したのではないか、というものです。もう一つは、美の定義から入った四段の仮説で、ジュリア集合のような形が神・愛・美のポテンシャルの場で、美は起業家のエネルギーに近い、と結びます。
 </div>
 
-ページは、前半と後半に分かれます。前半（第一部・第二部）は、起業家の行動の形を見て、ジュリア集合の式の変数に、起業家の何に当たるかを仮説として当てます。後半（第三部・第四部）は、その式を逆にたどり、それを神・愛・美として、Love駆動開発の視点で解釈していきます。
-
 <div class="reader-lead"><span class="reader-lead__label">構成</span>
+<p>前半（第一部・第二部）は、起業家の行動の形を見て、ジュリア集合の式の変数に、起業家の何に当たるかを仮説として当てます。後半（第三部・第四部）は、その式のふるまいを、神・愛・美として、Love駆動開発の視点で解釈していきます。</p>
 <ul class="reader-lead__list">
-<li><b><a href="#jp-recurrence">第一部 起業家の行動は、入れ子の深さ優先探索のよう</a></b>：意思決定の論を一本の木の上に並べ、起業家の行動を、入れ子の深さ優先探索のように見る</li>
-<li><b><a href="#jp-rec-def">第二部 それは、ジュリア集合の漸化式のようだ</a></b>：一歩をくり返す形は漸化式で、式の所ごとに仮説を置く（<code>z</code> は起業家の思考・心理・行動、<code>z²</code> は起業家の中で起きる自己と自己の掛け算、<code>c</code> は Love と呼びたいものの重力）。一歩を平面の上で計算して見る</li>
-<li><b><a href="#jp-back">第三部 起業家を駆るものは、ジュリア集合のようなポテンシャルか</a></b>：式を逆にたどると、前へ打った値は渦、遡った値はジュリア集合の境目になる。その境目を、起業家を駆るものが出てくるポテンシャルの場と見て、一旦の仮説を置く</li>
-<li><b><a href="#jp-four">第四部 美の定義から入った、四段の仮説</a></b>：美の側から同じ場に近寄り、ジュリア集合のような形が神・愛・美のポテンシャルの場で、美は起業家のエネルギーに近い、と結ぶ</li>
+<li><b><a href="#jp-recurrence">第一部 起業家の行動は、入れ子の深さ優先探索のよう</a></b>：「商いは、飽きない」を入れ子の深さ優先探索の木で描き、起業家の行動をその形で見る。ほかの意思決定の論は、同じ木を別の位置から見たものとして対比する</li>
+<li><b><a href="#jp-rec-def">第二部 それは、ジュリア集合の漸化式のようだ</a></b>：ジュリア集合の漸化式の変数が、起業家の何に当たるかを一つずつ見る（一歩は漸化式のくり返し、<code>z</code> は起業家の思考・心理・行動、<code>z²</code> は起業家の中で起きる自己と自己の掛け算、<code>c</code> は Love と呼びたいものの重力）。一歩を平面の上で計算して見る</li>
+<li><b><a href="#jp-question">第三部 式を逆にたどると、どんなポテンシャルが見えるか</a></b>：起業家の行動の結果は、そもそもどんなポテンシャルだったのか、と問い、式を逆にたどる。前へ打った値は渦、遡った値はジュリア集合の境目になる。その境目を、起業家を駆るものが出てくるポテンシャルの場と見て、一旦の仮説を置く</li>
+<li><b><a href="#jp-four">第四部 美の定義から入った、四段の仮説</a></b>：美の側から同じ場に近寄り、ジュリア集合のような形が神・愛・美のポテンシャルの場だと仮に置いて、最後に、美は起業家のエネルギーに近い、と結ぶ</li>
 <li><b><a href="#jp-gaps">巻末</a></b>：式の所ごとに置いた仮説と、触れていた論。原典を読む順</li>
 </ul>
 </div>
 
 <!--PART:第一部|起業家の行動は、入れ子の深さ優先探索のよう-->
 
-## 意思決定の論は、同じ形の木を、三つの位置から見ている
+## 深さ優先探索は、見つけた所から入れ子になって続く
 
 <!--OPEN-->
 
-<a id="jp-recurrence"></a>見立ての一つ目は、「漸化式は起業家のよう」です。この見立ては、起業家がどう決めて進むのか、という話題から出てきました。その進み方を、意思決定の論と並べて見ます。下の図は、同じ形の木を、三つの位置から見たものです。
+<a id="jp-recurrence"></a><a id="jp-dfs"></a>起業家は、どう決めて進むのか。pjdhiro は、その進み方を、計算機の深さ優先探索のように見ています。サラスバシーの語ではなく、pjdhiro の見立てです。見立ての始まりは、リアルオプションが話題になったときの、一言でした。
+
+<strong>pjdhiro の体験：</strong>リアルオプションの視点が話題になったとき、再帰と反復の関数の違いについて、思いつきで「再帰を使いたい時って、構造を繰り返してる時なんです。起業家みたいに」と言ったことがある。その時、「商いとは飽きない」という言葉を思い出した。
+
+<strong>pjdhiro の見方：</strong>再帰で書きたくなるのは、深さ優先探索のようなプロセスだからだと思う。ツリーを扱う際の反復、そこでの試行錯誤。起業家や研究者のような、愚直に飽きずにやる姿勢を言いたかったのだと思う。
+
+深さ優先探索は、木の形をした分かれ道をたどる手順です。一つの枝を選んだら、行けるところまで深く進み、行き止まりや外れなら、一つ前の分かれ目まで戻って、まだ試していない次の枝へ進みます。
+
+探索は、一本の木を一度たどって終わり、ではありません。
+
+<strong>pjdhiro の見方：</strong>DFS の先で見つけたら、そこから、条件やパラメータを変えて、次の探索が違うツリーに対して始まるんじゃないかな。DFS に DFS が入れ子になっている、ということです。というか、常識的にそうでは？ DFS を一回やって人生終わり、ではないよね。
+
+「商いとは飽きない」を、この入れ子の深さ優先探索の形で、木と疑似コードに書いてみます。図と疑似コードは Claude が書いたものです。
+
+<figure class="glow-card reader-figure" id="jp-akinai"><svg viewBox="0 0 480 280" role="img" aria-label="「商いは、飽きない」を、入れ子の深さ優先探索の木で描いた図。左の小さな木を深く進み、外れの枝には×が付いて戻る。見つけた所の星から、条件を変えた次の木が立ち、そこでも外れと星があり、さらに次の木が立っていく" xmlns="http://www.w3.org/2000/svg" style="display:block;width:100%;height:auto"><defs><marker id="akn-b" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#5b6476"/></marker></defs><rect x="0" y="0" width="480" height="280" rx="10" fill="#ffffff"/><text x="12" y="24" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#1d2433">「商いは、飽きない」を、入れ子の深さ優先探索で描く</text><g stroke-width="2.4" stroke-linecap="round"><line x1="60" y1="70" x2="30" y2="130" stroke="#24407a"/><line x1="60" y1="70" x2="90" y2="130" stroke="#24407a"/><line x1="90" y1="130" x2="75" y2="190" stroke="#24407a"/><line x1="90" y1="130" x2="105" y2="190" stroke="#24407a"/><line x1="215" y1="110" x2="190" y2="170" stroke="#c4573f"/><line x1="215" y1="110" x2="240" y2="170" stroke="#c4573f"/><line x1="240" y1="170" x2="225" y2="230" stroke="#c4573f"/><line x1="240" y1="170" x2="255" y2="230" stroke="#c4573f"/><line x1="360" y1="150" x2="340" y2="210" stroke="#9a7d0a" stroke-dasharray="3 3"/><line x1="360" y1="150" x2="380" y2="210" stroke="#9a7d0a" stroke-dasharray="3 3"/></g><g fill="none" stroke="#5b6476" stroke-width="1.3" stroke-dasharray="4 3"><path d="M115,186 Q175,186 209,120" marker-end="url(#akn-b)"/><path d="M235,226 Q300,228 353,158" marker-end="url(#akn-b)"/></g><circle cx="60" cy="70" r="5.5" fill="#24407a"/><circle cx="90" cy="130" r="4" fill="#24407a"/><circle cx="240" cy="170" r="4" fill="#c4573f"/><circle cx="215" cy="110" r="5.5" fill="#c4573f"/><circle cx="360" cy="150" r="5.5" fill="#9a7d0a"/><g stroke="#5b6476" stroke-width="2"><line x1="24" y1="124" x2="36" y2="136"/><line x1="36" y1="124" x2="24" y2="136"/><line x1="69" y1="184" x2="81" y2="196"/><line x1="81" y1="184" x2="69" y2="196"/><line x1="184" y1="164" x2="196" y2="176"/><line x1="196" y1="164" x2="184" y2="176"/><line x1="249" y1="224" x2="261" y2="236"/><line x1="261" y1="224" x2="249" y2="236"/></g><path d="M105,181 l2.9,6 6.6,1 -4.8,4.6 1.1,6.6 -5.8,-3.1 -5.8,3.1 1.1,-6.6 -4.8,-4.6 6.6,-1 z" fill="#9a7d0a"/><path d="M225,221 l2.9,6 6.6,1 -4.8,4.6 1.1,6.6 -5.8,-3.1 -5.8,3.1 1.1,-6.6 -4.8,-4.6 6.6,-1 z" fill="#9a7d0a"/><text x="60" y="56" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#24407a">試す（いまの所）</text><text x="215" y="96" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#c4573f">条件を変えた木で、試す</text><text x="360" y="136" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#9a7d0a">また次の木で、試す</text><text x="400" y="232" font-family="Noto Sans JP, sans-serif" font-size="13" fill="#9a7d0a">…</text><text x="240" y="256" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="10.5" fill="#5b6476">× 外れ（戻って次の枝へ。やってみたことは経験に残る）　★ 見つけた</text><text x="240" y="272" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#1d2433">外れたら次の枝へ、見つけたら次の木へ。やめずに続けるのが「飽きない」</text></svg><figcaption>「商いは、飽きない」を、入れ子の深さ優先探索の木で描いた図です。下の疑似コードの <code>試す</code> の一回が、木を一本たどることに当たります。外れ（×）なら戻って次の枝へ、見つけたら（★）、条件を変えた次の木で、次の <code>試す</code> が始まります。Claude が描いた図です。</figcaption></figure>
+
+```
+# 商いは、飽きない
+function 試す(いまの所):
+  for 次の手 in 打てる手(いまの所):
+    結果 = やってみる(次の手)
+    経験に足す(結果)
+    if 外れ(結果):
+      continue                    # 戻って次の枝へ
+    if 見つけた(結果):
+      試す(条件を変えた木(結果))    # 見つけた所から、違う木で次の探索
+      return
+    試す(結果)                     # その枝を深く
+```
+
+打てる手は、手持ちの手段から出します。外れても、やってみたことは経験として残ります。当たりなら、出てきた結果に `試す` をもう一度当てて、その枝を深く進みます。何かを見つけたら、条件を変えた違う木で、次の `試す` が始まります。「試す」という一つの形（構造）を、くり返し当てていくので、自分を呼ぶ関数（再帰）で書きたくなります。外れたら戻って次の枝へ、見つけたら次の木へ、をやめずに続けるのが、「飽きない」です。
+
+起業家の行動は、この入れ子の深さ優先探索のようなものではないでしょうか。
+
+## それ以外の意思決定の論は、同じ形の木を、別の位置から見ている
+
+<!--OPEN-->
+
+<a id="jp-others"></a>意思決定の論も、決めて進む形を木で描いてきました。並べると、入れ子の深さ優先探索が、ほかの見方とどこで違うのかが見えます。下の図は、同じ形の木を、三つの位置から見たものです。
 
 <figure class="glow-card reader-figure" id="jp-trees"><div class="jp-trees"><svg viewBox="0 0 260 270" role="img" aria-label="一つ目の木。木の全部が描かれ、先の端の八つの点がどれも見込みで比べられ、根元から一本の道が太く選ばれている" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="260" height="270" rx="10" fill="#ffffff"/><text x="12" y="22" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#1d2433">① 木の全部を見比べる</text><text x="12" y="40" font-family="Noto Sans JP, sans-serif" font-size="10.5" fill="#5b6476">決定ツリー・リアルオプション・コーゼーション</text><g stroke="#9aa3b5" stroke-width="1.4"><line x1="130" y1="70" x2="70" y2="120"/><line x1="130" y1="70" x2="190" y2="120"/><line x1="70" y1="120" x2="40" y2="170"/><line x1="70" y1="120" x2="100" y2="170"/><line x1="190" y1="120" x2="160" y2="170"/><line x1="190" y1="120" x2="220" y2="170"/><line x1="40" y1="170" x2="25" y2="220"/><line x1="40" y1="170" x2="55" y2="220"/><line x1="100" y1="170" x2="85" y2="220"/><line x1="100" y1="170" x2="115" y2="220"/><line x1="160" y1="170" x2="145" y2="220"/><line x1="160" y1="170" x2="175" y2="220"/><line x1="220" y1="170" x2="205" y2="220"/><line x1="220" y1="170" x2="235" y2="220"/></g><g stroke="#24407a" stroke-width="3.2" stroke-linecap="round"><line x1="130" y1="70" x2="190" y2="120"/><line x1="190" y1="120" x2="160" y2="170"/><line x1="160" y1="170" x2="175" y2="220"/></g><g fill="#24407a"><circle cx="130" cy="70" r="5"/><circle cx="70" cy="120" r="4"/><circle cx="190" cy="120" r="4"/><circle cx="40" cy="170" r="4"/><circle cx="100" cy="170" r="4"/><circle cx="160" cy="170" r="4"/><circle cx="220" cy="170" r="4"/><circle cx="25" cy="220" r="4"/><circle cx="55" cy="220" r="4"/><circle cx="85" cy="220" r="4"/><circle cx="115" cy="220" r="4"/><circle cx="145" cy="220" r="4"/><circle cx="175" cy="220" r="5.5"/><circle cx="205" cy="220" r="4"/><circle cx="235" cy="220" r="4"/></g><text x="130" y="252" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#24407a">先の端を全部、見込みで比べて選ぶ</text></svg><svg viewBox="0 0 260 270" role="img" aria-label="二つ目の木。同じ形の木の中ほどに、歩いている人の点がある。点の周りの数手先だけが濃く見え、その先は薄い点線。数手先の一つの点で、十分として止まっている" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="260" height="270" rx="10" fill="#ffffff"/><text x="12" y="22" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#1d2433">② 迷路の中から数手先を見る</text><text x="12" y="40" font-family="Noto Sans JP, sans-serif" font-size="10.5" fill="#5b6476">サイモン（満足化）</text><g stroke="#d9dde5" stroke-width="1.2" stroke-dasharray="3 3"><line x1="130" y1="70" x2="190" y2="120"/><line x1="190" y1="120" x2="160" y2="170"/><line x1="190" y1="120" x2="220" y2="170"/><line x1="40" y1="170" x2="25" y2="220"/><line x1="40" y1="170" x2="55" y2="220"/><line x1="100" y1="170" x2="85" y2="220"/><line x1="100" y1="170" x2="115" y2="220"/><line x1="160" y1="170" x2="145" y2="220"/><line x1="160" y1="170" x2="175" y2="220"/><line x1="220" y1="170" x2="205" y2="220"/><line x1="220" y1="170" x2="235" y2="220"/></g><circle cx="70" cy="120" r="58" fill="#c4573f" fill-opacity="0.06" stroke="#c4573f" stroke-width="1" stroke-dasharray="4 3"/><g stroke="#9aa3b5" stroke-width="1.4"><line x1="70" y1="120" x2="40" y2="170"/><line x1="70" y1="120" x2="100" y2="170"/></g><g stroke="#c4573f" stroke-width="3.2" stroke-linecap="round"><line x1="130" y1="70" x2="70" y2="120"/><line x1="70" y1="120" x2="100" y2="170"/></g><g fill="#d9dde5"><circle cx="190" cy="120" r="4"/><circle cx="160" cy="170" r="4"/><circle cx="220" cy="170" r="4"/><circle cx="25" cy="220" r="4"/><circle cx="55" cy="220" r="4"/><circle cx="85" cy="220" r="4"/><circle cx="115" cy="220" r="4"/><circle cx="145" cy="220" r="4"/><circle cx="175" cy="220" r="4"/><circle cx="205" cy="220" r="4"/><circle cx="235" cy="220" r="4"/></g><circle cx="130" cy="70" r="4" fill="#9aa3b5"/><circle cx="40" cy="170" r="4" fill="#24407a"/><circle cx="70" cy="120" r="6.5" fill="#c4573f"/><path d="M100,160 l2.9,6 6.6,1 -4.8,4.6 1.1,6.6 -5.8,-3.1 -5.8,3.1 1.1,-6.6 -4.8,-4.6 6.6,-1 z" fill="#9a7d0a"/><text x="112" y="186" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#9a7d0a">十分</text><text x="130" y="252" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#c4573f">見える数手先で、十分な道を選んで止まる</text></svg><svg viewBox="0 0 260 270" role="img" aria-label="三つ目の絵。小さな木を深く進み、外れの枝には×が付く。見つけた所の星から、条件を変えた次の木が立ち、そこでも外れと星があり、さらに次の木が立っていく" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="260" height="270" rx="10" fill="#ffffff"/><text x="12" y="22" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#1d2433">③ 見つけた所から次の木へ</text><text x="12" y="40" font-family="Noto Sans JP, sans-serif" font-size="10.5" fill="#5b6476">エフェクチュエーション・入れ子の深さ優先探索</text><g stroke-width="2.4" stroke-linecap="round"><line x1="50" y1="62" x2="28" y2="104" stroke="#24407a"/><line x1="50" y1="62" x2="74" y2="104" stroke="#24407a"/><line x1="142" y1="126" x2="120" y2="168" stroke="#c4573f"/><line x1="142" y1="126" x2="166" y2="168" stroke="#c4573f"/><line x1="222" y1="190" x2="204" y2="228" stroke="#9a7d0a" stroke-dasharray="3 3"/><line x1="222" y1="190" x2="242" y2="228" stroke="#9a7d0a" stroke-dasharray="3 3"/></g><g fill="none" stroke="#5b6476" stroke-width="1.2" stroke-dasharray="4 3"><path d="M80,100 Q120,96 136,120"/><path d="M172,164 Q206,160 217,184"/></g><path d="M136,120 l-6,-2 3,-5 z" fill="#5b6476"/><path d="M217,184 l-6,-2 3,-5 z" fill="#5b6476"/><circle cx="50" cy="62" r="5" fill="#24407a"/><circle cx="142" cy="126" r="5" fill="#c4573f"/><circle cx="222" cy="190" r="5" fill="#9a7d0a"/><g stroke="#5b6476" stroke-width="2"><line x1="22" y1="98" x2="34" y2="110"/><line x1="34" y1="98" x2="22" y2="110"/><line x1="114" y1="162" x2="126" y2="174"/><line x1="126" y1="162" x2="114" y2="174"/></g><path d="M74,95 l2.9,6 6.6,1 -4.8,4.6 1.1,6.6 -5.8,-3.1 -5.8,3.1 1.1,-6.6 -4.8,-4.6 6.6,-1 z" fill="#9a7d0a"/><path d="M166,159 l2.9,6 6.6,1 -4.8,4.6 1.1,6.6 -5.8,-3.1 -5.8,3.1 1.1,-6.6 -4.8,-4.6 6.6,-1 z" fill="#9a7d0a"/><text x="14" y="128" font-family="Noto Sans JP, sans-serif" font-size="10.5" fill="#5b6476">外れ・戻る</text><text x="88" y="90" font-family="Noto Sans JP, sans-serif" font-size="10.5" fill="#5b6476">次の木</text><text x="180" y="156" font-family="Noto Sans JP, sans-serif" font-size="10.5" fill="#5b6476">次の木</text><text x="130" y="252" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#9a7d0a">見つけた所から、条件を変えた木が立つ</text></svg></div><figcaption>同じ形の木を、三つの位置から見た図です。①は、先に木の全部を描いて、先の端を全部見込みで比べ、一本を選びます（太線）。②は、木の中を歩く人（赤い点）から見ます。見えるのは数手先まで（丸の中）で、十分な道が見つかれば、そこで止まります。③は、深く進み、外れなら戻り（×）、何かを見つけたら（星）、そこから条件を変えた次の木で、また探します。木ははじめから一本あるのでなく、進むうちに立っていきます。論の中身から Claude が描いた図で、どの論の図の写しでもありません。</figcaption></figure>
 
@@ -157,45 +198,11 @@ pjdhiro は、意思決定の論（決定ツリー・リアルオプション・
 
 </details>
 
-## 深さ優先探索は、見つけた所から入れ子になって続く
-
-<!--OPEN-->
-
-<a id="jp-dfs"></a>pjdhiro は、図の③の進み方を、計算機の深さ優先探索のように見ています。サラスバシーの語ではなく、pjdhiro の見立てです。深さ優先探索は、木の形をした分かれ道をたどる手順です。一つの枝を選んだら、行けるところまで深く進み、行き止まりや外れなら、一つ前の分かれ目まで戻って、まだ試していない次の枝へ進みます。
-
-この見立ての始まりは、リアルオプションが話題になったときの、一言でした。
-
-<strong>pjdhiro の体験：</strong>リアルオプションの視点が話題になったとき、再帰と反復の関数の違いについて、思いつきで「再帰を使いたい時って、構造を繰り返してる時なんです。起業家みたいに」と言ったことがある。その時、「商いとは飽きない」という言葉を思い出した。
-
-<strong>pjdhiro の見方：</strong>再帰で書きたくなるのは、深さ優先探索のようなプロセスだからだと思う。ツリーを扱う際の反復、そこでの試行錯誤。起業家や研究者のような、愚直に飽きずにやる姿勢を言いたかったのだと思う。
-
-探索は、一本の木を一度たどって終わり、ではありません。
-
-<strong>pjdhiro の見方：</strong>DFS の先で見つけたら、そこから、条件やパラメータを変えて、次の探索が違うツリーに対して始まるんじゃないかな。DFS に DFS が入れ子になっている、ということです。というか、常識的にそうでは？ DFS を一回やって人生終わり、ではないよね。
-
-「商いとは飽きない」を、この入れ子の深さ優先探索の形で書いてみます。疑似コードは Claude が書いたものです。
-
-```
-# 商いは、飽きない
-function 試す(いまの所):
-  for 次の手 in 打てる手(いまの所):
-    結果 = やってみる(次の手)
-    経験に足す(結果)
-    if 外れ(結果):
-      continue                    # 戻って次の枝へ
-    if 見つけた(結果):
-      試す(条件を変えた木(結果))    # 見つけた所から、違う木で次の探索
-      return
-    試す(結果)                     # その枝を深く
-```
-
-打てる手は、手持ちの手段から出します。外れても、やってみたことは経験として残ります。当たりなら、出てきた結果に `試す` をもう一度当てて、その枝を深く進みます。何かを見つけたら、条件を変えた違う木で、次の `試す` が始まります。「試す」という一つの形（構造）を、くり返し当てていくので、自分を呼ぶ関数（再帰）で書きたくなります。外れたら戻って次の枝へ、見つけたら次の木へ、をやめずに続けるのが、「飽きない」です。
-
-この形で見ると、図の②と③は、同じものの別の見え方になります。
+入れ子の深さ優先探索の形で見ると、図の②と③は、同じものの別の見え方になります。
 
 <strong>pjdhiro の見方：</strong>サイモンの迷路を途中で止めるネズミも、エフェクチュエーションの分岐や決定がそこそこの段階で切り替わるのも、DFS の先で DFS が始まるのも、どれも同じものを指していると思う。
 
-サイモンの生き物は、十分に満たす道が見つかれば、そこで探すのをやめます。エフェクチュエーションで進む人は、失ってもよい分の中で試し、そこそこの所で目的のほうを作り直します。入れ子の深さ優先探索は、見つけた所で、条件を変えた次の木へ移ります。どれも、一本の木を最後まで探しきらずに、途中で次の木へ移る進み方です。起業家の行動は、この入れ子の深さ優先探索のようなものではないでしょうか。
+サイモンの生き物は、十分に満たす道が見つかれば、そこで探すのをやめます。エフェクチュエーションで進む人は、失ってもよい分の中で試し、そこそこの所で目的のほうを作り直します。入れ子の深さ優先探索は、見つけた所で、条件を変えた次の木へ移ります。どれも、一本の木を最後まで探しきらずに、途中で次の木へ移る進み方です。
 
 <details><summary>詳しく — 探して選ぶより、変えていく（サラスバシーとデュー）</summary>
 
@@ -210,9 +217,13 @@ function 試す(いまの所):
 
 <!--OPEN-->
 
-<a id="jp-rec-def"></a>入れ子の深さ優先探索で進む起業家を、外から一本の道として見ると、やってみた結果が、次の一歩の出発になっています。木が変わっても、人に会い、気づき、約束する、という一歩の形は変わりません。人に会い、気づきを得て、その気づきを持ってまた人に会う。この「前の結果から次を決める」形を、数学では漸化式と言います。ジュリア集合の式と起業家の話のつなぎ目は、この一歩をくり返す形です。
+<a id="jp-rec-def"></a>入れ子の深さ優先探索で進む起業家を、外から一本の道として見ると、やってみた結果が、次の一歩の出発になっています。pjdhiro は、その一歩のくり返しを、ジュリア集合の式に重ねました。
 
-漸化式は、数の並びの次の値を、前の値から決める決まりです。
+<strong>pjdhiro の見方：</strong>一歩のくり返しに、Love という重力のような c を加えて、非二元を考慮すると、ジュリア集合の漸化式に似ていた。
+
+この部では、このカードの式の所が、起業家の何に当たるかを、一つずつ見ていきます。
+
+まず、一歩のくり返しそのものです。木が変わっても、人に会い、気づき、約束する、という一歩の形は変わりません。人に会い、気づきを得て、その気づきを持ってまた人に会う。この「前の結果から次を決める」形を、数学では漸化式と言います。漸化式は、数の並びの次の値を、前の値から決める決まりです。
 
 <details><summary>詳しく — 漸化式を、フィボナッチ数で一歩ずつ見る（図）</summary>
 
@@ -230,11 +241,7 @@ function 試す(いまの所):
 
 </details>
 
-漸化式には、決まりの数だけ形があります。起業家の一歩のくり返しは、どんな決まりに近いのか。pjdhiro は、こう見ています。
-
-<strong>pjdhiro の見方：</strong>一歩のくり返しに、Love という重力のような c を加えて、非二元を考慮すると、ジュリア集合の漸化式に似ていた。
-
-その式が `z → z² + c` です。いまの値 `z` を二乗して `c` を足したものが、次の値になります。出てきた値に、また同じことをします。計算機で書くと、次のくり返しです。
+カードの式は `z → z² + c` です。いまの値 `z` を二乗して `c` を足したものが、次の値になります。出てきた値に、また同じことをします。計算機で書くと、次のくり返しです。
 
 ```
 # z → z² + c を前へ
@@ -243,7 +250,11 @@ while 決めた歩数まで:
   z = z*z + c
 ```
 
-式の所は、`z`・`z²`・`c` の三つです。この部の残りの章では、所ごとに、起業家の何に当たるかを仮説として置き、最後の章で、平面の上で計算して図で見ます。
+<b>仮説：一歩（`→`）は、人に会い、気づき、約束する、のくり返し。</b>木が変わっても、この一歩の形は変わらず、やってみた結果が次の一歩の出発になります。
+
+カードの「非二元を考慮すると」は、pjdhiro の読みでは、式の二か所に当たります。一つは `z` で、平面の上の一点で表す数は、横と縦の二つの成分を一つの数に持ちます（次の章）。もう一つは、一歩を逆に戻すときで、平方根が二つあるので、一つの点が、0 の周りに半回転した二つの写しに分かれます。pjdhiro は、それを ☯ のように見ています（第三部「[ジュリア集合を、逆にたどる](#jp-back)」）。
+
+式の所は、一歩のほかに、`z`・`z²`・`c` の三つです。続く章で、所ごとに仮説を置き、最後の章で、平面の上で計算して見ます。
 
 ## z は、起業家の思考・心理・行動
 
@@ -273,7 +284,7 @@ pjdhiro は、その答えを、起業家の中で起きることに見ていま
 
 <strong>pjdhiro の見方：</strong>自己は単一では無い。とするなら、二乗するように、自己と自己が創造的に協働するイメージです。
 
-<b>仮説：`z²` は、起業家の中で起きる、自己と自己の掛け算。</b>二つの自己が掛け合わさる分は、どちらか一つの自己からは出てきません。自己と自己が協働して、一つでは出ないものを次の一歩に生む、と読めます（式では `2ab` の項。章「[平面の数で、式を一歩ずつ見る](#jp-origin)」）。
+<b>仮説：`z²` は、起業家の中で起きる、自己と自己の掛け算。</b>二つの自己が掛け合わさる分は、どちらか一つの自己からは出てきません。自己と自己が協働して、一つでは出ないものを次の一歩に生む、と読めます（式では `2ab` の項。下の畳み「[詳しく — 自己と自己の掛け算を、式に当てると](#jp-self-calc)」）。
 
 式の上では、`z` に `z` を掛けると、`z` は自分の角度だけ回り、自分の大きさの分だけ伸び縮みします（図は「[二乗を手で動かす](#jp-sq)」）。pjdhiro は、それを、自分で自分を回すように進むこととしても見ています。
 
@@ -287,52 +298,17 @@ pjdhiro は、その答えを、起業家の中で起きることに見ていま
 
 - 脳の中に、いくつもの自己が重なっていて、その重ね合わせで一歩が出るとしたら？（下の畳み「先行研究 — 自己は、いくつもの重なりか」）
 - ユングの言う自我とシャドーのように、気づいている側と気づいていない側が、一緒に一歩を作っているとしたら？
-- [野中郁次郎の知識創造](#jp-about-nonaka)の論のように、一人の中で、言葉にならない知と言葉にした知が入れ替わりながら、らせんを描いて進むとしたら？
+- 野中郁次郎が組織に見た、言葉にならない知と言葉にした知が入れ替わりながららせんを描く形が、一人の中でも起きるとしたら？（下の畳み「[野中郁次郎の知識創造とは](#jp-about-nonaka)」）
 
-<details class="acc" id="jp-about-nonaka" data-peek data-peek-dock="野中の知識創造とは" hidden><summary>詳しく — 野中郁次郎の知識創造とは</summary>
-
-経営学者の野中郁次郎は、組織が新しい知識を生む過程を論じました。竹内弘高との共著『知識創造企業』（1995）で広く知られる論です。ここでは、論文から要点を見ます。
-
-野中は、知識を二つに分けます。一つは形式知で、文や数式のように、決まった言葉で人に渡せる知です。もう一つは暗黙知で、その人に根を持ち、言葉にしにくく伝えにくい知です（1994）。新しい知識は、この二つのあいだで、一方が他方に変わり続けることから生まれる、とします。変わり方は四つです（2000）。
-
-- 共同化：暗黙知から暗黙知へ。経験を共にして、言葉にならないまま伝わる。
-- 表出化：暗黙知から形式知へ。言葉にならなかったものを、言葉や図にする。
-- 連結化：形式知から形式知へ。言葉になったもの同士を組み合わせる。
-- 内面化：形式知から暗黙知へ。言葉になったものを、やってみて身につける。
-
-四つの英語の頭文字を取って、SECI と呼ばれます。四つを回ると、元の所に戻る円ではなく、らせんになる、と野中らは書きます。内面化で一人に溜まった暗黙知が、共同化で人と分け合われると、次のらせんが始まります。らせんは、個人から集団、組織へ、ときに組織の外へと、上の水準へ上るほど大きくなります（1994・2000）。のちに野中と竹内は、時間の軸を足して、SECI を三次元のらせんとして描き直しました（2021）。
-
-<figure class="glow-card reader-figure"><div class="jp-pair"><svg viewBox="0 0 320 310" role="img" aria-label="知識の変わり方の四つ。左上の共同化（暗黙知から暗黙知へ・経験を共にする）から、右上の表出化（暗黙知から形式知へ・言葉にする）、右下の連結化（形式知から形式知へ・組み合わせる）、左下の内面化（形式知から暗黙知へ・身につける）へ、右回りの矢印で回る" xmlns="http://www.w3.org/2000/svg"><rect x="14" y="20" width="140" height="112" rx="10" fill="#ffffff" stroke="#24407a" stroke-width="1.5"/><text x="26" y="50" font-family="Noto Sans JP, sans-serif" font-size="22" font-weight="700" fill="#24407a">S</text><text x="52" y="49" font-family="Noto Sans JP, sans-serif" font-size="15" font-weight="700" fill="#1d2433">共同化</text><text x="26" y="78" font-family="Noto Sans JP, sans-serif" font-size="12" fill="#5b6476">暗黙知 → 暗黙知</text><text x="26" y="104" font-family="Noto Sans JP, sans-serif" font-size="12.5" fill="#1d2433">経験を共にする</text><rect x="166" y="20" width="140" height="112" rx="10" fill="#ffffff" stroke="#c4573f" stroke-width="1.5"/><text x="178" y="50" font-family="Noto Sans JP, sans-serif" font-size="22" font-weight="700" fill="#c4573f">E</text><text x="204" y="49" font-family="Noto Sans JP, sans-serif" font-size="15" font-weight="700" fill="#1d2433">表出化</text><text x="178" y="78" font-family="Noto Sans JP, sans-serif" font-size="12" fill="#5b6476">暗黙知 → 形式知</text><text x="178" y="104" font-family="Noto Sans JP, sans-serif" font-size="12.5" fill="#1d2433">言葉や図にする</text><rect x="166" y="168" width="140" height="112" rx="10" fill="#ffffff" stroke="#9a7d0a" stroke-width="1.5"/><text x="178" y="198" font-family="Noto Sans JP, sans-serif" font-size="22" font-weight="700" fill="#9a7d0a">C</text><text x="204" y="197" font-family="Noto Sans JP, sans-serif" font-size="15" font-weight="700" fill="#1d2433">連結化</text><text x="178" y="226" font-family="Noto Sans JP, sans-serif" font-size="12" fill="#5b6476">形式知 → 形式知</text><text x="178" y="252" font-family="Noto Sans JP, sans-serif" font-size="12.5" fill="#1d2433">組み合わせる</text><rect x="14" y="168" width="140" height="112" rx="10" fill="#ffffff" stroke="#24407a" stroke-width="1.5"/><text x="26" y="198" font-family="Noto Sans JP, sans-serif" font-size="22" font-weight="700" fill="#24407a">I</text><text x="52" y="197" font-family="Noto Sans JP, sans-serif" font-size="15" font-weight="700" fill="#1d2433">内面化</text><text x="26" y="226" font-family="Noto Sans JP, sans-serif" font-size="12" fill="#5b6476">形式知 → 暗黙知</text><text x="26" y="252" font-family="Noto Sans JP, sans-serif" font-size="12.5" fill="#1d2433">やって身につける</text><path d="M140,62 L162,62" stroke="#c4573f" stroke-width="2.2" fill="none"/><path d="M236,134 L236,164" stroke="#c4573f" stroke-width="2.2" fill="none"/><path d="M166,226 L144,226" stroke="#c4573f" stroke-width="2.2" fill="none"/><path d="M84,168 L84,136" stroke="#c4573f" stroke-width="2.2" fill="none"/><path d="M164,62 L156,57.5 L156,66.5 z" fill="#c4573f"/><path d="M236,166 L231.5,158 L240.5,158 z" fill="#c4573f"/><path d="M142,226 L150,221.5 L150,230.5 z" fill="#c4573f"/><path d="M84,134 L79.5,142 L88.5,142 z" fill="#c4573f"/><text x="160" y="302" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="11.5" fill="#5b6476">右回りに回ると、次の共同化へ</text></svg><svg viewBox="0 0 320 310" role="img" aria-label="入れ子の三つの円。内から個人の場、チームの場、組織の場。中心から外へ、らせんが広がる。個人の円の中に、点線の小さな円があり、問いの印が付いている" xmlns="http://www.w3.org/2000/svg"><circle cx="160" cy="150" r="138" fill="#f3f5fa" stroke="#d9dde5" stroke-width="1.5"/><circle cx="160" cy="150" r="92" fill="#eaeef6" stroke="#d9dde5" stroke-width="1.5"/><circle cx="160" cy="150" r="46" fill="#dfe5f1" stroke="#d9dde5" stroke-width="1.5"/><circle cx="160" cy="150" r="17" fill="#ffffff" stroke="#c4573f" stroke-width="1.5" stroke-dasharray="3 3"/><path d="M166.0,150.0 L166.3,149.8 L166.6,149.5 L166.9,149.2 L167.2,148.9 L167.4,148.6 L167.7,148.3 L167.9,147.9 L168.2,147.5 L168.4,147.1 L168.5,146.7 L168.7,146.3 L168.9,145.8 L169.0,145.4 L169.1,144.9 L169.1,144.4 L169.2,143.9 L169.2,143.4 L169.2,142.8 L169.2,142.3 L169.1,141.8 L169.1,141.2 L169.0,140.7 L168.8,140.1 L168.6,139.5 L168.4,139.0 L168.2,138.4 L168.0,137.9 L167.7,137.3 L167.4,136.8 L167.0,136.2 L166.6,135.7 L166.2,135.2 L165.8,134.7 L165.3,134.2 L164.8,133.7 L164.3,133.2 L163.8,132.7 L163.2,132.3 L162.6,131.9 L161.9,131.5 L161.3,131.1 L160.6,130.8 L159.9,130.4 L159.2,130.1 L158.4,129.9 L157.6,129.6 L156.9,129.4 L156.0,129.2 L155.2,129.1 L154.4,129.0 L153.5,128.9 L152.6,128.9 L151.8,128.8 L150.9,128.9 L150.0,128.9 L149.0,129.0 L148.1,129.2 L147.2,129.4 L146.3,129.6 L145.4,129.8 L144.4,130.1 L143.5,130.5 L142.6,130.9 L141.7,131.3 L140.8,131.8 L139.9,132.3 L139.0,132.8 L138.1,133.4 L137.3,134.0 L136.5,134.7 L135.6,135.4 L134.9,136.2 L134.1,137.0 L133.3,137.8 L132.6,138.7 L131.9,139.6 L131.3,140.5 L130.6,141.5 L130.0,142.5 L129.5,143.5 L128.9,144.6 L128.4,145.7 L128.0,146.8 L127.6,148.0 L127.2,149.1 L126.9,150.3 L126.6,151.6 L126.4,152.8 L126.2,154.1 L126.1,155.4 L126.0,156.7 L125.9,158.0 L125.9,159.3 L126.0,160.7 L126.1,162.0 L126.3,163.3 L126.5,164.7 L126.8,166.1 L127.1,167.4 L127.5,168.8 L127.9,170.1 L128.4,171.4 L129.0,172.8 L129.6,174.1 L130.3,175.4 L131.0,176.7 L131.8,177.9 L132.6,179.2 L133.5,180.4 L134.4,181.6 L135.4,182.8 L136.4,183.9 L137.5,185.0 L138.7,186.1 L139.8,187.1 L141.1,188.1 L142.4,189.1 L143.7,190.0 L145.0,190.9 L146.5,191.7 L147.9,192.5 L149.4,193.2 L150.9,193.8 L152.5,194.5 L154.1,195.0 L155.7,195.5 L157.4,196.0 L159.0,196.3 L160.7,196.7 L162.5,196.9 L164.2,197.1 L166.0,197.2 L167.7,197.3 L169.5,197.3 L171.3,197.2 L173.1,197.1 L175.0,196.9 L176.8,196.6 L178.6,196.2 L180.4,195.8 L182.2,195.3 L184.0,194.7 L185.8,194.1 L187.5,193.4 L189.3,192.6 L191.0,191.8 L192.7,190.8 L194.4,189.9 L196.1,188.8 L197.7,187.7 L199.3,186.5 L200.8,185.2 L202.3,183.9 L203.8,182.5 L205.2,181.1 L206.6,179.6 L207.9,178.0 L209.2,176.4 L210.4,174.7 L211.6,173.0 L212.7,171.2 L213.7,169.3 L214.7,167.4 L215.6,165.5 L216.4,163.5 L217.2,161.5 L217.9,159.5 L218.5,157.4 L219.0,155.3 L219.5,153.1 L219.9,150.9 L220.2,148.7 L220.4,146.5 L220.6,144.3 L220.6,142.0 L220.6,139.7 L220.5,137.5 L220.3,135.2 L220.0,132.9 L219.7,130.6 L219.2,128.3 L218.7,126.1 L218.0,123.8 L217.3,121.5 L216.5,119.3 L215.6,117.1 L214.7,114.9 L213.6,112.8 L212.4,110.6 L211.2,108.5 L209.9,106.5 L208.5,104.5 L207.0,102.5 L205.5,100.6 L203.8,98.7 L202.1,96.9 L200.3,95.1 L198.5,93.4 L196.5,91.8 L194.5,90.2 L192.5,88.7 L190.3,87.3 L188.1,85.9 L185.9,84.6 L183.6,83.4 L181.2,82.3 L178.8,81.3 L176.3,80.3 L173.8,79.5 L171.3,78.7 L168.7,78.0 L166.1,77.4 L163.4,76.9 L160.8,76.5 L158.1,76.3 L155.3,76.1 L152.6,76.0 L149.9,76.0 L147.1,76.1 L144.3,76.3 L141.6,76.6 L138.8,77.0 L136.0,77.6 L133.3,78.2 L130.6,78.9 L127.8,79.8 L125.2,80.7 L122.5,81.8 L119.9,82.9 L117.2,84.2 L114.7,85.5 L112.2,87.0 L109.7,88.5 L107.3,90.2 L104.9,91.9 L102.6,93.8 L100.3,95.7 L98.1,97.7 L96.0,99.8 L93.9,102.0 L92.0,104.3 L90.1,106.6 L88.3,109.1 L86.5,111.6 L84.9,114.2 L83.3,116.8 L81.9,119.5 L80.5,122.3 L79.2,125.2 L78.1,128.1 L77.0,131.0 L76.1,134.0 L75.2,137.0 L74.5,140.1 L73.9,143.2 L73.4,146.4 L73.0,149.5 L72.7,152.7 L72.6,156.0 L72.5,159.2 L72.6,162.4 L72.8,165.7 L73.1,168.9 L73.6,172.2 L74.2,175.4 L74.8,178.7 L75.7,181.9 L76.6,185.1 L77.6,188.2 L78.8,191.4 L80.1,194.5 L81.5,197.5 L83.1,200.5 L84.7,203.5 L86.5,206.4 L88.3,209.3 L90.3,212.1 L92.4,214.8 L94.6,217.5 L96.9,220.0 L99.3,222.6 L101.8,225.0 L104.4,227.3 L107.1,229.6 L109.9,231.7 L112.8,233.8 L115.8,235.7 L118.8,237.6 L121.9,239.3 L125.1,240.9 L128.3,242.5 L131.7,243.9 L135.0,245.1 L138.5,246.3 L142.0,247.3 L145.5,248.2 L149.1,249.0 L152.7,249.7 L156.3,250.2 L160.0,250.6 L163.7,250.8 L167.4,250.9 L171.1,250.9 L174.9,250.7 L178.6,250.4 L182.3,250.0 L186.1,249.4 L189.8,248.7 L193.5,247.8 L197.2,246.8 L200.8,245.7 L204.4,244.4 L208.0,243.0 L211.5,241.5 L215.0,239.8 L218.4,238.0 L221.8,236.0 L225.1,233.9 L228.3,231.7 L231.5,229.4 L234.6,227.0 L237.6,224.4 L240.5,221.7 L243.3,218.9 L246.0,216.0 L248.7,213.0 L251.2,209.9 L253.6,206.7 L255.9,203.4 L258.0,199.9 L260.1,196.5 L262.0,192.9 L263.8,189.2 L265.5,185.5 L267.0,181.7 L268.4,177.8 L269.6,173.9 L270.8,169.9 L271.7,165.9 L272.6,161.8 L273.2,157.7 L273.7,153.6 L274.1,149.4 L274.3,145.2 L274.4,141.0 L274.3,136.8 L274.0,132.5 L273.6,128.3 L273.1,124.1 L272.4,119.9 L271.5,115.7 L270.4,111.5 L269.3,107.4 L267.9,103.3 L266.4,99.2 L264.8,95.2 L263.0,91.3 L261.0,87.4 L258.9,83.5 L256.7,79.8" stroke="#24407a" stroke-width="2" fill="none" stroke-linecap="round"/><text stroke="#f3f5fa" stroke-width="5" stroke-linejoin="round" paint-order="stroke" x="160" y="30" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12.5" font-weight="700" fill="#1d2433">組織の場</text><text stroke="#eaeef6" stroke-width="5" stroke-linejoin="round" paint-order="stroke" x="160" y="76" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12.5" font-weight="700" fill="#1d2433">チームの場</text><text stroke="#dfe5f1" stroke-width="5" stroke-linejoin="round" paint-order="stroke" x="160" y="123" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="12" font-weight="700" fill="#1d2433">個人の場</text><text stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke" x="190" y="190" font-family="Noto Sans JP, sans-serif" font-size="12" font-weight="700" fill="#c4573f">一人の内面でも？</text><path d="M190,180 L172,162" stroke="#c4573f" stroke-width="1.2"/><text x="160" y="302" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="11.5" fill="#5b6476">らせんは、上の水準へ上るほど大きくなる</text></svg></div><figcaption>左は、知識の変わり方の四つ（SECI）です。右は、四つを回るらせんが、個人から組織へ大きくなっていく様子と、野中らが言う場の入れ子です。右の中心の点線の円は、pjdhiro の問い（一人の内面でも、同じらせんが回るか）で、野中は書いていません。どちらの図も、論文の記述から Claude が描いたもので、野中らの図の写しではありません。</figcaption></figure>
-
-pjdhiro は、この論について、こう見ています。
+この三つ目について、pjdhiro はこう見ています。
 
 <strong>pjdhiro の見方：</strong>あれは組織だけど、起業家一人の内面でも起きるのかもしれない。フラクタルに。
 
-一人の内面でもらせんがくり返す、と読むときに足場になる所が、二つあります。
+<details class="acc" id="jp-about-nonaka" data-peek data-peek-dock="野中の知識創造とは" hidden><summary>詳しく — 野中郁次郎の知識創造とは</summary>
 
-一つは、一人の中での二つの知のやりとりです。野中は、個人の知識は、経験の知と合理の知のやりとりで広がり、その人だけの視点に結晶する、と書きます（1994）。暗黙知は実践の中の意識が、形式知は言葉で語る意識が生み、二つは調和するのでなく弁証法的にはたらく、とも書きます（2003）。表出化と内面化を「個人の知識変換」と見る推測を挙げ、内面化は個人の心理の過程だ、とします（2009）。形式知も暗黙知も、一人の人の頭と手にある、とも書きます（2021）。
+経営学者の野中郁次郎は、組織が新しい知識を生む過程を論じました。竹内弘高との共著『知識創造企業』（1995）で広く知られる論です。野中は、知識を、決まった言葉で人に渡せる形式知と、その人に根を持ち言葉にしにくい暗黙知に分け、新しい知識は、二つのあいだで一方が他方に変わり続けることから生まれる、とします（1994）。変わり方は、共同化（暗黙知から暗黙知へ）・表出化（暗黙知から形式知へ）・連結化（形式知から形式知へ）・内面化（形式知から暗黙知へ）の四つで、頭文字を取って SECI と呼ばれます。四つを回ると、元の所に戻る円でなくらせんになり、個人から集団、組織へと上るほど大きくなる、と野中らは書きます（2000）。
 
-もう一つは、場の入れ子です。野中らは、知識が生まれる場（英語でも ba と呼ぶ）を、いくつもの水準にあるものと見て、個人がチームの場をなし、チームが組織の場をなす、と書きます（2000）。pjdhiro は、この入れ子が近いかもしれない、と見ています。
-
-野中らは、知識は、個人どうし、または個人と環境とのやりとりから生まれる、とも書きます（2000）。やりとりの相手には環境も入るので、起業家が人や市場とやりとりしながら進む形にも、そのまま重ねられそうです。
-
-このページは、二つの知が入れ替わりながららせんを描く形を、起業家の中で掛け合わさる自己と自己の読みの一つに置いています（章「z の二乗は、起業家の中で起きる、自己と自己の掛け算」）。一人の内面でもらせんがくり返す、というのは、野中の論の材料から組み立てた読みです。
-
-<p><b>原文</b></p>
-
-- 野中 1994 p.16："'Explicit' or codified knowledge refers to knowledge that is transmittable in formal, systematic language. On the other hand, 'tacit' knowledge has a personal quality, which makes it hard to formalize and communicate."
-- 野中 1994 p.20："organizational knowledge creation can be viewed as an upward spiral process, starting at the individual level moving up to the collective (group) level, and then to the organizational level, sometimes reaching out to the interorganizational level."
-- 野中 1994 p.22："Individual knowledge is enlarged through this interaction between experience and rationality, and crystallized into a unique perspective original to an individual."
-- 野中・遠山・紺野 2000 p.9："(1) socialisation (from tacit knowledge to tacit knowledge); (2) externalisation (from tacit knowledge to explicit knowledge); (3) combination (from explicit knowledge to explicit knowledge); and (4) internalisation (from explicit knowledge to tacit knowledge)."
-- 同 p.10："This tacit knowledge accumulated at the individual level can then set off a new spiral of knowledge creation when it is shared with others through socialisation."
-- 同 p.12："the movement through the four modes of knowledge conversion forms a spiral, not a circle."
-- 同 p.15："Knowledge is created through the interactions amongst individuals or between individuals and their environments, rather than by an individual operating alone."
-- 同 p.19："Ba exists at many ontological levels and these levels may be connected to form a greater ba. Individuals form the ba of teams, which in turn form the ba of organisation."
-- 野中・遠山 2003 p.4："we can say that tacit knowledge is produced by our practical consciousness and explicit knowledge is produced by our discursive consciousness."
-- 野中とフォン・クロー 2009 p.643："Whereas the context of action and practice may be social, internalization is an individual, psychological process."
-- 野中と竹内 2021（節 From knowledge to wisdom）："Both explicit and tacit knowledge reside in an individual, or to use Peter Drucker's words, in the 'head' and 'hand' of an individual."
-
-訳は Claude。知識の定め（個人の信念に根を持ち、文脈の中で確かめられていく動き）は、2000 年の論文の p.7、知識を頭の中の動かないものとする見方への反論は p.14 にあります。
+野中は、一人の中での二つの知のやりとりにも触れています。個人の知識は、経験の知と合理の知のやりとりで広がる（1994）、内面化は個人の心理の過程だ（2009）、と書きます。一人の内面でもらせんがくり返す、というのは、こうした野中の論の材料から組み立てた、このページの読みです。
 
 出典：Nonaka (1994) "[A Dynamic Theory of Organizational Knowledge Creation](https://doi.org/10.1287/orsc.5.1.14)", *Organization Science* 5(1):14–37（本文照合済。[ケンタッキー大学の授業の頁に置かれた誌面の写し（Wayback）](https://web.archive.org/web/20261009125025/https://www.uky.edu/~gmswan3/EDC608/Nonaka_1994.pdf)。pp.16・20・22）／Nonaka, Toyama & Konno (2000) "[SECI, Ba and Leadership: a Unified Model of Dynamic Knowledge Creation](https://doi.org/10.1016/S0024-6301(99)00115-6)", *Long Range Planning* 33(1):5–34（本文照合済。[ノルウェー技術博物館の研究計画のサイトに置かれた誌面の写し](https://tingene.tekniskmuseum.no/images/PDF/Litteratur_MK/SECI_Ba_and_Leadership_a_Unified_Model.pdf)。pp.7・9・10・12・14・15・19）／Nonaka & Toyama (2003) "[The knowledge-creating theory revisited: knowledge creation as a synthesizing process](https://doi.org/10.1057/palgrave.kmrp.8500001)", *Knowledge Management Research & Practice* 1(1):2–10（本文照合済。[ウィーン経済大学の教員の頁に置かれた誌面の写し（Wayback）](https://web.archive.org/web/20130512161449/http://www.ai.wu.ac.at:80/~kaiser/birgit/Nonaka-Papers/The-knowledge-creation-theory-revisited-2003.pdf)。p.4）／Nonaka & von Krogh (2009) "[Tacit Knowledge and Knowledge Conversion: Controversy and Advancement in Organizational Knowledge Creation Theory](https://doi.org/10.1287/orsc.1080.0412)", *Organization Science* 20(3):635–652（本文照合済。[ウィーン経済大学の教員の頁に置かれた誌面の写し（Wayback）](https://web.archive.org/web/20120712130320/http://www.ai.wu.ac.at/~kaiser/birgit/Nonaka-Papers/tacit-knowledge-and-knowledge-conversion-2009.pdf)。p.643）／Nonaka & Takeuchi (2021) "[Humanizing strategy](https://doi.org/10.1016/j.lrp.2021.102070)", *Long Range Planning* 54(4):102070（本文照合済。[PubMed Central の全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC9753931/)。節 From knowledge to wisdom）
 
@@ -382,7 +358,6 @@ pjdhiro は、この論について、こう見ています。
 
 訳は Claude。
 
-
 出典：Skipper, Blackburne, Cooper, Jaglinska, Jedlovszky, Kuc, McAlpine & Timmermann (2026) "["The self" as shifting coalitions of brain systems in a continuous configuration space](https://doi.org/10.64898/2026.11.12.766263)", *bioRxiv*（査読前。本文照合済。[bioRxiv の全文](https://www.biorxiv.org/content/10.64898/2026.11.12.766263v1.full)で序論・結果・考察・方法の前半と参照の一覧を読んだ）／Gallagher (2013) "[A pattern theory of self](https://doi.org/10.3389/fnhum.2013.00443)", *Frontiers in Human Neuroscience* 7:443（本文照合済。[Frontiers の全文](https://www.frontiersin.org/articles/10.3389/fnhum.2013.00443/full)・[PMC の全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC3730118/)。節 Introduction・Pattern Theories・A Pattern Theory of Self・Some Benefits of a Pattern Theory of Self）／Gallagher & Daly (2018) "[Dynamical relations in the self-pattern](https://doi.org/10.3389/fpsyg.2018.00664)", *Frontiers in Psychology* 9:664（本文照合済。[Frontiers の全文](https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00664/full)・[PMC の全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC5958307/)。要旨・節 A Pattern Theory of Self (PTS)・What's the Use of Narrative?）／Hermans, Konopka, Oosterwegel & Zomer (2017) "[Fields of tension in a boundary-crossing world: Towards a democratic organization of the self](https://doi.org/10.1007/s12124-016-9370-6)", *Integrative Psychological and Behavioral Science* 51(4):505–535（本文照合済。オープンアクセス。[Springer の全文](https://link.springer.com/article/10.1007/s12124-016-9370-6)・[全文の PDF](https://link.springer.com/content/pdf/10.1007/s12124-016-9370-6.pdf)。pp.511・514、節 Meta-Position・Promoter Position）
 
 </details>
@@ -391,17 +366,27 @@ pjdhiro は、この論について、こう見ています。
 
 <strong>pjdhiro の見方：</strong>ユングのシャドーに気づいていないとします。z は客観的な自分です。中身は、自我とシャドーがいるとします。それには気づいていません。そういう視点で今考えていました。一つは、回転が自己認識とは違う。思いもよらない方向に進んでいく。もう一つは、2ab として新たな自分に気づいていく。分離と包摂で。自己刷新に気づくのは、これかもしれない。z の二乗は、a の二乗と b の二乗と 2ab の分だけの差が出る。そういうものを振り返って自己分析して、成長に気づくのでは？という意味です。私の今の仮の視点です。
 
-自己認識が自我の側だけを見ているなら、実際の一歩は、見込みとずれていきます。そのずれを振り返ると、気づいていなかった自分が見えてくる、という読みです（式に当てた計算は、章「[平面の数で、式を一歩ずつ見る](#jp-origin)」）。
+自己認識が自我の側だけを見ているなら、実際の一歩は、見込みとずれていきます。そのずれを振り返ると、気づいていなかった自分が見えてくる、という読みです（式に当てた計算は、下の畳み）。
+
+<details id="jp-self-calc"><summary>詳しく — 自己と自己の掛け算を、式に当てると</summary>
+
+二乗を自己と自己の掛け合わせと読むなら、`z` を二つの自己が重なったものと見て、`z = a + b` と書くと、二乗は `z² = a² + b² + 2ab` になります。`a²` と `b²` は、それぞれが自分を回す分です。`2ab` は、二つが互いに掛け合わさる分で、どちらか一つだけからは出てきません。
+
+気づいていない自分（シャドー）の側から見る視点も、式に当ててみます（当てはめは Claude の読みで、仮のものです）。`z = a + b` の `a` を自我（本人が自分と思っている側）、`b` をシャドー（本人が気づいていない側）と置きます。自己認識が `a` だけを見ているなら、次の一歩の見込みは `a²` で、実際の一歩 `z² = a² + b² + 2ab` とは `b² + 2ab` だけ違います。向きで見ると、二乗は角度を二倍にするので、`a` と `a + b` の向きの小さなずれも、一回ごとに二倍になります（[二乗を手で動かす](#jp-sq)の図で、角度を少しずらして確かめられます）。くり返すうちに、思いもよらない方向へ進んでいくのかもしれません。
+
+`2ab` は、ここでは自我とシャドーが掛け合わさる項です。一歩を終えてから見込みとの差を振り返ると、気づいていなかった `b` が、自我と掛け合わさった形で見えてくるのかもしれません。pjdhiro の言う、振り返って自己分析して成長に気づくことは、この差を見ることに当てられそうです。
+
+</details>
 
 ## c は、一歩ごとに同じだけ引き寄せる
 
 <!--OPEN-->
 
-<a id="jp-drift"></a>見立ての二つ目は、「Love と呼びたいものは重力のようにドリフトする」です。式では `c` に当たります。ドリフトは、流れに押されて、少しずつ漂うようにずれていくことです。
+<a id="jp-drift"></a>冒頭の見立ての「Love と呼びたいものは、重力のようにドリフトする」は、式では `c` に当たります。ドリフトは、流れに押されて、少しずつ漂うようにずれていくことです。
 
 <b>仮説：`c` は、Love と呼びたいものの重力。</b>一歩ごとに、同じ向きへ同じだけ引き寄せます。`c` は人ごとに違い、一人の中では一定だ、と置いています。
 
-「[Love駆動開発と呼びたいもの](love-driven-dev.html)」は、人やプロジェクトを動かしているもの（駆動源）を、Love と呼びたいものと置く読み物です。pjdhiro は、その Love と呼びたいものを、漸化式の `c` に置きました。第一部の木で言えば、人に会い、気づき、約束する一歩ごとに、毎回同じだけ加わるものです。土台には、Love と重力の構造の似かたを問う見方があります（読み物「[愛は、重力に似ていないか](gravity-love.html)」）。
+「[Love駆動開発と呼びたいもの](love-driven-dev.html)」は、人やプロジェクトを動かしているもの（駆動源）を、Love と呼びたいものと置く読み物です。pjdhiro は、その Love と呼びたいものを、漸化式の `c` に置きました。第一部の木で言えば、人に会い、気づき、約束する一歩ごとに、毎回同じだけ加わるものです。土台には、Love と重力の構造の似かたを問う見方があります（読み物「[愛は、重力に似ていないか](gravity-love.html)」）。 エフェクチュエーションの論では、起業家を動かすものは謎のまま残っている、と pjdhiro は見ています。`c` は、その謎のまま残る駆動源を、一歩ごとに環の外から加わるものとして、式に置いたものです。
 
 <strong>pjdhiro の見方：</strong>愛は重力と似ていないか？ それは c と似ていないか？ という感じですね。一つは、基礎にある視点。なので、汎用的に色々使えそう。まずは創造、それ以外にも。
 
@@ -419,7 +404,7 @@ Love駆動開発で、pjdhiro は、同じ駆動が、成果と呼ばれる向�
 
 <!--OPEN-->
 
-<a id="jp-origin"></a>見立ての三つ目は、「それはジュリア集合の漸化式のようだ」です。この部で式の所ごとに置いた仮説を、平面の上で計算に当てて、図で見ます。
+<a id="jp-origin"></a>冒頭の見立ての「それは、ジュリア集合の漸化式のようだ」を、この部で式の所ごとに置いた仮説で、平面の上の計算に当てて見ます。図は畳みの中で、手で動かせます。
 
 <details><summary>詳しく — 平面の上の数（複素数）とは（図）</summary>
 
@@ -457,25 +442,29 @@ Love駆動開発で、pjdhiro は、同じ駆動が、成果と呼ばれる向�
 
 </details>
 
-章「[z の二乗は、起業家の中で起きる、自己と自己の掛け算](#jp-square)」で、二乗を自己と自己の掛け合わせと読みました。`z` を二つの自己が重なったものと見て、`z = a + b` と書くと、二乗は `z² = a² + b² + 2ab` になります。`a²` と `b²` は、それぞれが自分を回す分です。`2ab` は、二つが互いに掛け合わさる分で、どちらか一つだけからは出てきません。
+<!--TURN-->式の所ごとに仮説を置き、一歩を平面の上で見ました。次は、式のふるまいを解釈します。同じ式を逆にたどり、起業家の行動の結果が、どんなポテンシャルだったのかを問います。<!--/TURN-->
 
-同じ章の、気づいていない自分（シャドー）の側から見る視点も、式に当ててみます（当てはめは Claude の読みで、仮のものです）。`z = a + b` の `a` を自我（本人が自分と思っている側）、`b` をシャドー（本人が気づいていない側）と置きます。自己認識が `a` だけを見ているなら、次の一歩の見込みは `a²` で、実際の一歩 `z² = a² + b² + 2ab` とは `b² + 2ab` だけ違います。向きで見ると、二乗は角度を二倍にするので、`a` と `a + b` の向きの小さなずれも、一回ごとに二倍になります（[二乗を手で動かす](#jp-sq)の図で、角度を少しずらして確かめられます）。くり返すうちに、思いもよらない方向へ進んでいくのかもしれません。
+<!--PART:第三部|式を逆にたどると、どんなポテンシャルが見えるか-->
 
-`2ab` は、ここでは自我とシャドーが掛け合わさる項です。一歩を終えてから見込みとの差を振り返ると、気づいていなかった `b` が、自我と掛け合わさった形で見えてくるのかもしれません。pjdhiro の言う、振り返って自己分析して成長に気づくことは、この差を見ることに当てられそうです。
+## 起業家の行動の結果は、そもそもどんなポテンシャルだったのか
 
-図の「c を足す」をくり返したときに、外へ出ずに残るか、外へ遠ざかるか（章「[c は、一歩ごとに同じだけ引き寄せる](#jp-drift)」）を、Love駆動開発の言葉で読むなら、残るのは関わりが続いて形になること、遠ざかるのは散って切れること、と当ててみることができます。
+<!--OPEN-->
 
-<!--TURN-->式の所ごとに仮説を置き、一歩を平面の上で見ました。次は、同じ式を逆にたどり、起業家を駆るものが、どんな場から出てくるのかを問います。<!--/TURN-->
+<a id="jp-question"></a>第二部では、式の所ごとに、起業家の何に当たるかを置きました。ここからは、その式のふるまいを解釈します。pjdhiro は、次の問いを置いています。
 
-<!--PART:第三部|起業家を駆るものは、ジュリア集合のようなポテンシャルか-->
+<strong>pjdhiro の問い：</strong>仮に、起業家（プロジェクト推進者）の行動の二乗という何かがあって、それが Love の力で引き寄せられるなら、起業家の行動の結果は、そもそもどんなポテンシャルだったのか？
+
+二乗を、起業家の中で起きる自己と自己の掛け算と置きました。その置き方から、pjdhiro は、こうも言っています。
+
+<strong>pjdhiro の見方：</strong>脳内の自己と自己の掛け合わせなら、脳内の自己達が可能性だよね。
+
+この問いを、同じ式を逆にたどって見ていきます。起業家の思考・心理・行動が一歩ごとに移っていった跡を前へ打つと、どこに行き着き、そこから遡ると何が出てくるのか。
 
 ## ジュリア集合を、逆にたどる
 
 <!--OPEN-->
 
-<a id="jp-back"></a>このページの図では、マンデルブロ集合（「[ジュリア集合とは](#jp-about-julia)」の地図）を、`c` を選ぶための地図として使います。
-
-pjdhiro は 2025 年 5 月、ジュリア集合の形を、点がどこから来たかをさかのぼる向きから動かして見ていました（数学では、一歩を逆に戻す決まりを逆写像と言います）。式の一歩は、逆に一段戻すこともできます。`c` の分を引いてから、平方根（`√`）を取ります。二乗して 4 になる数が 2 と −2 の二つあるように、平方根はプラスとマイナスの二つあります。その一段を、図で一歩ずつ見ます。
+<a id="jp-back"></a>pjdhiro は 2025 年 5 月、ジュリア集合の形を、点がどこから来たかをさかのぼる向きから動かして見ていました（数学では、一歩を逆に戻す決まりを逆写像と言います）。式の一歩は、逆に一段戻すこともできます。`c` の分を引いてから、平方根（`√`）を取ります。二乗して 4 になる数が 2 と −2 の二つあるように、平方根はプラスとマイナスの二つあります。図の左は、`c` を選ぶための地図で、マンデルブロ集合（「[ジュリア集合とは](#jp-about-julia)」の地図）です。その一段を、図で一歩ずつ見ます。
 
 <figure class="glow-card reader-figure jp-fig" id="jp-fold" data-peek>
 <p class="jp-fig__title">遡る一段：円を、c の分だけ戻して ±√ で二つに分け、畳む</p>
@@ -486,7 +475,7 @@ pjdhiro は 2025 年 5 月、ジュリア集合の形を、点がどこから来
 <div class="jp-media" role="group" aria-label="再生の操作"><button type="button" id="jp-fold-reset" class="jp-media__icon" aria-label="最初から" title="最初から"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2.4v14H6zM19 5v14L9 12z"/></svg></button><button type="button" id="jp-fold-play" class="jp-media__play" aria-pressed="false" aria-label="再生" title="再生・止める"><svg class="jp-media__on" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="jp-media__off" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.6v14H7zM13.4 5H17v14h-3.6z"/></svg></button><button type="button" id="jp-fold-back" class="jp-media__word">一歩戻す</button><button type="button" id="jp-fold-step" class="jp-media__word">一歩進める</button></div>
 <div class="jp-fig__btns" role="group" aria-label="c の例"><button type="button" data-fc="golden">黄金角の c</button><button type="button" data-fc="-0.123,0.745">c = −0.12 + 0.75i</button><button type="button" data-fc="-1,0">c = −1</button><button type="button" data-fc="0,0">c = 0（円のまま）</button></div>
 <p class="jp-fig__readout jp-fig__readout--pre" id="jp-fold-out">図はページの中の JavaScript で描きます。</p>
-<figcaption>一段の遡り <code>±√(w − c)</code> を三歩に分けて描きます。一歩目の「− c」で、曲線の全体を <code>−c</code> だけずらします（矢印）。二歩目の「√」で、0 の周りの角を半分に、0 からの距離を √ にします。曲線は、0 から左へのびる線（負の実軸）で切れ、一周が右半分の半周に縮みます。三歩目の「−√」で、その写しを 0 の周りに半回転させたもう一つの写し（濃い色）が、左半分を埋めます。色は、その点を前へ打って戻る最初の円の上の位置で塗ってあり、点に付いたまま動きます。同じ色の所は、最初の円の同じ所から来ています。前の曲線の一周が、+√ と −√ の二つの半分に一回ずつ写ります。薄い灰の線は、その一歩の前の形です。曲線の内側は、遡った段の数だけ前へ打っても大きさ 2 を超えない点の集まりで、段を重ねるほど、くり返しても遠くへ行かない点の集まり（充填ジュリア集合）に寄ります。見せ方は Wittens の記事に倣い、計算と描画はこのページのものです。</figcaption>
+<figcaption>大きさ 2 の円を、遡る一段 <code>±√(w − c)</code> で一段ずつ遡ります。一段を「− c」「√」「−√」の三歩に分けて、一歩ずつ進めたり戻したりできます。色は、その点が最初の円のどこから来たかで、同じ色の所は、最初の円の同じ所から来ています。薄い灰の線は、その一歩の前の形です。</figcaption>
 </figure>
 
 <details><summary>詳しく — 図の見方：一段を三歩に分けて遡ると、円が畳まれる</summary>
@@ -495,9 +484,11 @@ pjdhiro は 2025 年 5 月、ジュリア集合の形を、点がどこから来
 
 円の上の一点は、一段遡るごとに二つに分かれ、二つの点は、0 を挟んで向かい合います。前の曲線の一周が、右の半分と左の半分に一回ずつ写り、円が自分に巻きついて畳まれます。くびれと突き出しは、段ごとに細かくなっていきます。
 
+一歩目の「− c」で、曲線の全体を <code>−c</code> だけずらします（矢印）。二歩目の「√」で、0 の周りの角を半分に、0 からの距離を √ にします。曲線は、0 から左へのびる線（負の実軸）で切れ、一周が右半分の半周に縮みます。三歩目の「−√」で、その写しを 0 の周りに半回転させたもう一つの写し（濃い色）が、左半分を埋めます。曲線の内側は、遡った段の数だけ前へ打っても大きさ 2 を超えない点の集まりで、段を重ねるほど、くり返しても遠くへ行かない点の集まり（充填ジュリア集合）に寄ります。
+
 </details>
 
-[二乗で角度が二倍になった](#jp-sq)のを逆に戻すので、平方根で角度は半分になります。マイナスの平方根は、もう一方を 0 の周りに半回転させた写しになります。pjdhiro は、2025 年 5 月の記事に、この所を次のように書いています。記事も、Wittens の図を参考にしていました。
+[二乗で角度が二倍になった](#jp-sq)のを逆に戻すので、平方根で角度は半分になります。マイナスの平方根は、もう一方を 0 の周りに半回転させた写しになります。pjdhiro は、2025 年 5 月の記事に、この所を次のように書いています。記事も、Steven Wittens の記事「[How to Fold a Julia Fractal](https://acko.net/blog/how-to-fold-a-julia-fractal/)」の図を参考にしていました。
 
 <strong>pjdhiro の見方：</strong>☯️陰陽マークのように見える。円の分割（平方根による角度が半分になる）と反転コピー（マイナスの平方根）の箇所が。
 
@@ -558,7 +549,7 @@ c を選ぶ地図（マンデルブロ集合）は、塗り分けと同じ計算
 <label class="jp-fig__slider"><span>c の実部 <output for="jp-lab-re">−0.378</output></span><input type="range" id="jp-lab-re" min="-2.25" max="0.75" step="0.001" value="-0.378"></label>
 <label class="jp-fig__slider"><span>c の虚部 <output for="jp-lab-im">0.562</output></span><input type="range" id="jp-lab-im" min="-1.3" max="1.3" step="0.001" value="0.562"></label>
 </div></div>
-<figcaption>前へは 0 から、はじめは 100 歩、最大 200 歩。原点からの距離が 2 を超えたら外へ出たとして止めます。遡りは、赤の一点（いま打った最後の歩の値。紺の点）から、一段ごとに +√ と −√ の両方をたどります。はじめは 100 段遡ります。色は、紺が浅い段、金が深い段です。k 段遡ると 2 の k 乗通りに分かれ、100 段では約 1.27 × 10 の 30 乗通りになるので、全部は打てません。11 段目（2,048 通り）までは枝を全部打ち、それより深い段は、その 2,048 本の道を、一段ごとに +√ と −√ のどちらか一つを選んで遡って打ちます（一つを選んで遡るのは、ジュリア集合を描くよく知られた方法です）。赤い太線は、そのうち実際に前へ通ってきた値（一つ前の歩、その前の歩…）をたどる一通りです。回る角度と寄る倍率は、寄る一点 z* での傾き λ = 2z* の角度と大きさで、c = λ/2 − λ²/4 の関係にあります（倍率が 1 より小さいときだけ決まる）。計算は Claude。</figcaption>
+<figcaption>前へは 0 から、はじめは 100 歩、最大 200 歩。原点からの距離が 2 を超えたら外へ出たとして止めます。遡りは、赤の一点（いま打った最後の歩の値。紺の点）から、一段ごとに +√ と −√ の両方をたどります。はじめは 100 段遡ります。色は、紺が浅い段、金が深い段です。赤い太線は、そのうち実際に前へ通ってきた値（一つ前の歩、その前の歩…）をたどる一通りです。計算は Claude。</figcaption>
 </figure>
 
 <details><summary>手を動かして確かめる — こう動かすと、こう見える</summary>
@@ -580,6 +571,8 @@ c を選ぶ地図（マンデルブロ集合）は、塗り分けと同じ計算
 <details><summary>詳しく — 図の最初の c と、数学で確かめられていること</summary>
 
 図の最初の `c` は、一歩ごとに回る角度が約 137.5°（黄金角）になるように選んだ値で、値は一歩ごとに 0.97 倍に寄っていきます。境目の上の点から遡った点が境目のどこにでも近づくことは、数学で確かめられています（ミルナーの定理 3.9）。渦の上の点から遡った枝が境目に寄ることは、Claude が計算で確かめました（黄金角の `c` で、5・30・500 歩目のどの値から遡っても、8 段目の点の 7 割より多くが、境目から 0.01 より近い）。
+
+遡る枝の数は、k 段遡ると 2 の k 乗通りに分かれ、100 段では約 1.27 × 10 の 30 乗通りになるので、全部は打てません。図は、11 段目（2,048 通り）までは枝を全部打ち、それより深い段は、その 2,048 本の道を、一段ごとに +√ と −√ のどちらか一つを選んで遡って打ちます（一つを選んで遡るのは、ジュリア集合を描くよく知られた方法です）。スライダの、回る角度と寄る倍率は、寄る一点 z* での傾き λ = 2z* の角度と大きさで、c = λ/2 − λ²/4 の関係にあります（倍率が 1 より小さいときだけ決まる）。
 
 </details>
 
@@ -603,6 +596,7 @@ pjdhiro は、この関係を、起業家のたとえに戻して、こう読み
 
 この振る舞いを、Love駆動開発の言葉で読んでみます。読みは一つに決まらないので、いまの読みを並べます。
 
+- 残ると遠ざかる：`c` を足すくり返しで、外へ出ずに残るのは、関わりが続いて形になること、外へ遠ざかるのは、散って切れること、と当ててみることができます。
 - 駆動源：境目の形を決めているのは `c` です。同じ `c` なら、どの値から遡っても同じ境目に寄ります。一歩ごとに引き寄せる駆動源が、そのまま場の形を決めている、と読めるかもしれません。
 - 場：境目は、遠くへ行きそうで行かない所で、認知されなかった道の散る所です。pjdhiro は 2025 年の記事で、そこを「創造が生まれる土壌」と見ました。
 - 渦：前へ打った渦は、「[創造とは](../cs/)」が五つの段に置く渦かもしれない、と pjdhiro は見ています。
@@ -634,30 +628,17 @@ pjdhiro は、この関係を、起業家のたとえに戻して、こう読み
 
 </details>
 
-## 起業家の行動の結果は、そもそもどんなポテンシャルだったのか
+## 達成されうる可能性の場は、すでにあったのか
 
 <!--OPEN-->
 
-<a id="jp-question"></a>起業家の思考・心理・行動が一歩ごとに移っていった結果は、前へ打った渦が行き着く所、と読めます。pjdhiro は、その渦から遡った先の境目に、次の問いを置いています。
-
-<strong>pjdhiro の問い：</strong>仮に、起業家（プロジェクト推進者）の行動の二乗という何かがあって、それが Love の力で引き寄せられるなら、起業家の行動の結果は、そもそもどんなポテンシャルだったのか？
-
-二乗を、起業家の中で起きる自己と自己の掛け算と置きました。その置き方から、pjdhiro は、こうも言っています。
-
-<strong>pjdhiro の見方：</strong>脳内の自己と自己の掛け合わせなら、脳内の自己達が可能性だよね。
-
-式で確かめられるのは、遡った先の境目の形が `c` ごとに決まる、というところまでです。ここからは、式の外へ出ます。Love と呼びたいものを駆動源として、起業家が意思決定していると見たら、その場はジュリア集合のようなものかもしれない。その仮説で、問いに近寄ります。
-
-## 起業家を駆るものは、ジュリア集合のようなポテンシャルから出るのか
-
-<!--OPEN-->
-
+式で確かめられるのは、遡った先の境目の形が `c` ごとに決まる、というところまでです。ここからは、式の外へ出ます。Love と呼びたいものを駆動源として、起業家が意思決定していると見たら、その場はジュリア集合のようなものかもしれない。その仮説で、第三部の頭の問いに近寄ります。
 
 <a id="jp-idea"></a>pjdhiro は、そのポテンシャルを、ジュリア集合の形を見たときの印象から、神・愛・美と呼ばれてきたものに見ています。問いの筋は、次のように整理しています。
 
 <strong>pjdhiro の見方：</strong>起業家は、自身を回転させるように、認知できるものと、し得ないもので進む。それは、体感では、神・美・愛のようなもので駆動する。それは、ジュリア集合のようなポテンシャルから出る。かな。
 
-一歩ごとに引き寄せる `c` と、その `c` が形を決める境目は、別々のものではないのかもしれません。問いの筋の「駆動する」と「ポテンシャルから出る」は、この関係に重ねて読めそうです。冒頭の問い「ジュリア集合のような何かが、神・愛・美のポテンシャルなのではないか」とも、重ねて読めるかもしれません。
+一歩ごとに引き寄せる `c` と、その `c` が形を決める境目は、別々のものではないのかもしれません。問いの筋の「駆動する」と「ポテンシャルから出る」は、この関係に重ねて読めそうです。冒頭の問い「ジュリア集合のような何かが、神・愛・美のポテンシャルなのではないか」は、この重なりを、神・愛・美の名で問うたものです。
 
 pjdhiro は、一旦の仮説を置いています。
 
@@ -669,23 +650,23 @@ pjdhiro は、一旦の仮説を置いています。
 
 <!--PART:第四部|美の定義から入った、四段の仮説-->
 
-## 美の定義から入った、四段の仮説
+## 四段の仮説の見取り
 
 <!--OPEN-->
 
-<a id="jp-four"></a>渦と遡りの関係が何を意味するかについて、pjdhiro は美の定義から入り、四段の仮説を立てました。問いの筋のうち、神・美・愛のようなもので駆動し、それがジュリア集合のようなポテンシャルから出る、という所に、美の側から近寄る仮説です。
+<a id="jp-four"></a>第三部には、二つの問いが残りました。前へ打った渦と、遡ったジュリア集合の境目の関係は、何を意味するのか。起業家の行動の結果は、そもそもどんなポテンシャルだったのか。pjdhiro は、この二つに、美の定義から入って、四段の仮説を立てました。問いの筋のうち、神・美・愛のようなもので駆動し、それがジュリア集合のようなポテンシャルから出る、という所に、美の側から近寄る仮説です。
 
 - 一つ目：美は、美醜・恐怖の入り乱れたところから出る（章「美は、どこから出るのか」）
 - 二つ目：ジュリア集合に似た形は、自然の中に、善悪の判断のない形として並ぶ。その形が神や愛のようなポテンシャルの場で、そこから元型のようなイメージや美が生まれる（章「ジュリア集合に似た形を、自然の中に探す」「その形が、神や愛のようなポテンシャルの場になるのか」）
 - 三つ目：美・神・愛が同じなら、愛で駆動するプロジェクトの場の形も、そこから生まれる（章「美・神・愛が同じなら、プロジェクトの場の形は」）
 - 四つ目：それがあらゆる大きさで自己相似なら、至る所にジュリア集合が現れる（章「どの大きさでも同じ形なら、至る所に現れる」）
+- 結び：美は、起業家のエネルギーに近い（章「美は、起業家のエネルギーに近いか」）
 
 四段のあいだには飛躍があります。番号と並べ方は、Claude が対話を整理して付けました。四段を言い終えて、pjdhiro はこう添えました。
 
 <strong>pjdhiro の見方：</strong>この四段が、私の直感的な仮説です。少なくとも、ジュリア集合のインスピレーションと、波間の渦のような創造が至る所に見られることから、きっと 30 領域で報告されるんじゃないか？というのは当たりました。
 
 「30 領域」は、「[創造とは](../cs/)」で、30 の分野の論を原典で読み、創造の五つの段（場・波・縁・渦・束）に似た形が見えてきていることを指します。
-
 
 ## 美は、どこから出るのか
 
@@ -718,7 +699,6 @@ pjdhiro は、一旦の仮説を置いています。
 
 神経科学者の石津智大とゼキは、21 人に自然の風景の写真を見せ、崇高と感じる強さを評定してもらいながら、脳の働きを測りました（2014）。崇高の体験で働いた所は、以前の研究で美の体験と結びついた所とは重ならず、崇高と美は、別々の脳の系に乗る、と報告しています。一方で、崇高と感じられた写真は、美しいとも、ときに醜いとも感じられうる、とも書いています。「崇高」という語が、恐れ・畏怖・快と苦の混じりのような、逆向きの感情を一つの傘に入れていることの難しさにも触れています。
 
-
 出典：Ishizu & Zeki (2014) "[A neurobiological enquiry into the origins of our experience of the sublime and beautiful](https://doi.org/10.3389/fnhum.2014.00891)", *Frontiers in Human Neuroscience* 8:891（本文照合済。出版社の公開版を [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC4227571/) で読んだ。CC BY）
 
 </details>
@@ -735,7 +715,7 @@ pjdhiro は、一旦の仮説を置いています。
 
 pjdhiro の言う分裂は、精神分析家クラインが書いた分裂のほうです。クラインの分裂は、一つの相手を、よい面と悪い面に割って持つ心の動きです。頼れる像と恐ろしい像が、一つの相手から対で出てきます。
 
-美と恐ろしさを一つの体験の中に見た人は、詩や宗教学の古典にいます。
+美しいのに恐ろしい、という一つ目の足場には、詩や宗教学の古典が近い所を書いています。
 
 <details><summary>先行研究 — 美と恐ろしさを、一続きに見た人はいるか</summary>
 
@@ -758,7 +738,6 @@ pjdhiro の言う分裂は、精神分析家クラインが書いた分裂のほ
 - バーク 第 2 部 V（1909 年の版 p.61）：「If we rejoice, we rejoice with trembling」。
 
 訳は Claude。
-
 
 出典：Otto (1917) *Das Heilige*（本文照合済。[1925 年の第 13 版の走査](https://archive.org/details/dasheiligeuberda00otto)。イリノイ大学の図書館の蔵書。S.38・52・74）。英訳は Otto, *The Idea of the Holy*, J. W. Harvey 訳, Oxford University Press（[1923 年版の 1943 年の刷の走査](https://archive.org/details/ideaofholyinquir0000otto_k1y1)。pp.31・42・64）／Rilke (1923) *Duineser Elegien*, Die erste Elegie（本文照合済。[Zeno.org の翻刻](http://www.zeno.org/Literatur/M/Rilke,+Rainer+Maria/Gedichte/Duineser+Elegien/Die+erste+Elegie)。パブリックドメイン。底本は『全集』第 1 巻 1955 年の S.685）／Burke (1757) *A Philosophical Enquiry into the Origin of Our Ideas of the Sublime and Beautiful*, London: R. and J. Dodsley（本文照合済。美の定義は [1757 年の初版の走査](https://archive.org/details/enqphilosophical00burkrich)の第 3 部 I pp.73–74。初版に無い段〔神の力の段・黒と白の段〕は、増補後の本文を収めた [The Harvard Classics 第 24 巻（1909）の走査](https://archive.org/details/harvardclassicso0024char)の第 2 部 V p.61・第 3 部 XXVII p.107。節の番号は版で違う）
 
@@ -783,7 +762,6 @@ pjdhiro の言う分裂は、精神分析家クラインが書いた分裂のほ
 
 訳は Claude。
 
-
 出典：Klein (1946) "Notes on some schizoid mechanisms", *International Journal of Psycho-Analysis* [27:99–110](https://pep-web.org/browse/document/IJP.027.0099A)（PEP-Web の記録・本文は有料。本文照合済。pp.100–102。読んだ走査の写しは、上げた人と権利が確かめられないので、リンクを張りません）／Carhart-Harris, Leech, Hellyer, Shanahan, Feilding, Tagliazucchi, Chialvo & Nutt (2014) "[The entropic brain: a theory of conscious states informed by neuroimaging research with psychedelic drugs](https://doi.org/10.3389/fnhum.2014.00020)", *Frontiers in Human Neuroscience* 8:20（本文照合済。出版社の公開版を [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC3909994/) で読んだ。CC BY）
 
 </details>
@@ -804,8 +782,6 @@ pjdhiro の言う分裂は、精神分析家クラインが書いた分裂のほ
 
 出典：Prusinkiewicz & Lindenmayer (1990) [*The Algorithmic Beauty of Plants*](https://algorithmicbotany.org/papers/abop/abop.pdf), Springer（本文照合済。著者の研究室〔カルガリー大学〕が公開している電子版。第 4 章 pp.100–101。フォーゲルの式 4.1 と、番号が小花の齢と逆であること）。
 
-
-
 </details>
 
 ## その形が、神や愛のようなポテンシャルの場になるのか
@@ -816,7 +792,7 @@ pjdhiro の言う分裂は、精神分析家クラインが書いた分裂のほ
 
 元型は、心理学者ユングが、多くの人の心に共通して湧く像の型を呼んだ語です。
 
-境目や自己相似の形を、心や元型に結んだ論はあります。くり返しの行き着く形を、心と世界の関わりの印と見た数学者もいます。惹きつけるもの、可能性（ポテンシャル）の語で神を書いた哲学者もいます。
+形が心を惹きつけ、像や美が湧く場になる、という所には、心理学・数学・哲学から近い論があります。境目や自己相似の形を心や元型に結んだ論、くり返しの行き着く形を心と世界の関わりの印と見た数学者、惹きつけるもの・可能性（ポテンシャル）の語で神を書いた哲学者です。
 
 <details><summary>先行研究 — 境目の形を、心や元型に結んだ論はあるか</summary>
 
@@ -834,7 +810,6 @@ pjdhiro の言う分裂は、精神分析家クラインが書いた分裂のほ
 - マークス＝ターロウ p.43：フラクタルは "the embodiment of paradox"。p.44：フラクタルは境目を占め、分けると同時につなぐ。
 
 訳は Claude。
-
 
 出典：Sacco, Marks-Tarlow & Beitman (2024) "[Archetypal Resonances Between Realms: The Fractal Interplay of Chaos and Order](https://doi.org/10.32388/JK522A.2)", *Qeios* 6(2)（本文照合済。出版元の公開版。CC BY。pp.1–2・4–5）／Marks-Tarlow (2010) "[The Fractal Self at Play](https://www.museumofplay.org/app/uploads/2022/01/3-1-article-fractal-self-at-play.pdf)", *American Journal of Play* 3(1):31–62（本文照合済。出版元〔The Strong 遊びの博物館〕の公開版。pp.43–44）
 
@@ -855,7 +830,6 @@ pjdhiro の言う分裂は、精神分析家クラインが書いた分裂のほ
 - 結び："there is no separation of the observer and the observed"（p.149）。
 
 訳は Claude。
-
 
 出典：Kauffman, L. H. (2005) "[EigenForm](https://doi.org/10.1108/03684920510575780)", *Kybernetes* 34(1/2):129–150（本文照合済。[著者の大学の頁に置かれた PDF](http://homepages.math.uic.edu/~kauffman/Eigen.pdf)。出版社の組版。pp.133–135・149）
 
@@ -881,7 +855,6 @@ pjdhiro の言う分裂は、精神分析家クラインが書いた分裂のほ
 
 訳は Claude。
 
-
 出典：Aristotle, *Metaphysics*, Book XII (Λ), Part 7, W. D. Ross 訳（本文照合済。[MIT の The Internet Classics Archive](http://classics.mit.edu/Aristotle/metaphysics.12.xii.html)）／Whitehead (1929) *Process and Reality: An Essay in Cosmology*, New York: Macmillan（本文照合済。[Internet Archive の走査](https://archive.org/details/processrealityes00whit_1)。プリンストン神学校の図書館の蔵書。第 5 部第 2 章 pp.521–522・526・532）
 
 </details>
@@ -890,7 +863,7 @@ pjdhiro の言う分裂は、精神分析家クラインが書いた分裂のほ
 
 <strong>pjdhiro の見方：</strong>自然界によく見られるポテンシャルの形と、美しさの関係が謎。ここは飛躍しているから、埋めるとした場合、その推論が美の定義に触れそうだ、という読みです。
 
-作る側から、くり返しと美を結んだ建築家はいます。
+その飛躍のうち、くり返しが美を生むか、という所は、作る側から考えた建築家が書いています。
 
 <details><summary>先行研究 — くり返しから、美は出るのか</summary>
 
@@ -908,7 +881,6 @@ pjdhiro の言う分裂は、精神分析家クラインが書いた分裂のほ
 
 訳は Claude。
 
-
 出典：Alexander, C. "Harmony-Seeking Computations: A Science of Non-Classical Dynamics Based on the Progressive Evolution of the Larger Whole"（本文照合済。ヨーク大学で開かれた研究会が置いた [原稿 version 20 の PDF](https://www.cs.york.ac.uk/nature/workshop/papers/Harmony-Seeking_Computation.pdf)。pp.2・10・51）
 
 </details>
@@ -921,7 +893,7 @@ pjdhiro の言う分裂は、精神分析家クラインが書いた分裂のほ
 
 Love駆動開発は、プロジェクトを動かしているもの（駆動源）を、Love と呼びたいものと置きます。二つ目の仮説では、神も愛も美も、心を惹きつけられる、という点で同じでした。三つ目は、そこに「もしも」を二つ重ねて、プロジェクトの場の形へつなぎます。
 
-美・神・愛を一つの名に重ねた古典はあります。愛と美を、生み出すことと結んだ古典も、愛を渦や円い動きとして書いた哲学者もいます。
+「もしも美・神・愛が同じなら」という所にも、古典の足場があります。三つを一つの名に重ねた古典、愛と美を生み出すことと結んだ古典、愛を渦や円い動きとして書いた哲学者です。
 
 <details><summary>先行研究 — 美・神・愛を、一つに重ねた論はあるか</summary>
 
@@ -940,7 +912,6 @@ Love駆動開発は、プロジェクトを動かしているもの（駆動源�
 - 第 4 章 8–9 節では、天の知性と魂の動きを、円・まっすぐ・らせんの三つに分けます。天の知性のらせんの動きは、下のものを導きながら、美と善の周りを絶えず回って、自分であることに留まる動きとされます（魂のらせんは、推論で順に照らされる別の動きです）。
 
 英訳はロルト（1920）。訳は Claude。ギリシア語の原典とは照らしていません。
-
 
 出典：Dionysius the Areopagite, *On the Divine Names and the Mystical Theology*, C. E. Rolt 訳, London: SPCK, 1920（本文照合済。[Internet Archive の走査](https://archive.org/details/dionysiusareopag00dion)。第 4 章 7 節 p.95、8–9 節 pp.98–99、10 節 pp.99–102、14 節 pp.106–107。トロント大学の図書館の蔵書の走査）
 
@@ -961,7 +932,6 @@ Love駆動開発は、プロジェクトを動かしているもの（駆動源�
 - 生むことは "in the inharmonious they can never be"（調和しないものの中では、決して起きない）。
 
 ジョウエット訳。訳は Claude。
-
 
 出典：Plato, *Symposium*, B. Jowett 訳（本文照合済。[MIT の The Internet Classics Archive](http://classics.mit.edu/Plato/symposium.html)。ディオティマの話の段）
 
@@ -985,22 +955,9 @@ Love駆動開発は、プロジェクトを動かしているもの（駆動源�
 
 エンペドクレスはバーネットの英訳。断片の番号はバーネットの本の番号。訳は Claude。
 
-
 出典：Burnet (1920) *Early Greek Philosophy*, 3rd ed., London: A. & C. Black（本文照合済。[Wikisource の翻刻](https://en.wikisource.org/wiki/Early_Greek_Philosophy/Empedokles_of_Akragas)。断片 17 は p.207、断片 35 は p.211）／Peirce (1893) "Evolutionary Love", *The Monist* 3(2):176–200（本文照合済。原文と対訳は「[パース「進化的な愛」を日本語で読む](peirce-evolutionary-love-ja.html)」。p.177）
 
 </details>
-
-## 美は、起業家のエネルギーに近いか
-
-<!--OPEN-->
-
-<a id="jp-entrepreneur"></a>三つ目の仮説には、行き先があります。美の定義から入ろうと決めたとき、pjdhiro は、行き先も一緒に見ていました。
-
-<strong>pjdhiro の見方：</strong>美とは、起業家のエネルギーと近い。
-
-このページは、`c` を Love と呼びたいものの重力と仮に置き、起業家の思考・心理・行動を一歩ごとに引き寄せるもの（駆動源）と見てきました。エフェクチュエーションの論では、起業家を動かすものは謎のまま残っている、と pjdhiro は見ています。三つ目の仮説は、その謎の所に、美・神・愛と同じものを置いてみる見方です。起業家が何かに惹きつけられて動き出すとき、その惹きつけるものは、美しいものに心を惹かれるときと同じものかもしれない。結びは、そう読めます。章「[起業家を駆るものは、ジュリア集合のようなポテンシャルから出るのか](#jp-idea)」の問いの筋の「体感では神・美・愛のようなもので駆動する」は、この結びを、起業家の体感の側から言ったものとして読めます。
-
-上の畳みに置いた古典は、それぞれ、この結びの一部に触れています。それらを並べると、美と愛と神が、惹きつけ、生み出させるものとして重なって見えます。その重なりを起業家を動かすものに見るのが、この結びの仮説です。
 
 ## どの大きさでも同じ形なら、至る所に現れる
 
@@ -1014,7 +971,7 @@ pjdhiro は、それを強い仮説として言い直しています。
 
 <strong>pjdhiro の仮説：</strong>強い仮説として、波間の渦のような創造は、あらゆる学問領域で見つかるほど、遍く存在する。
 
-部分に全体が入る、という見方は、東アジアの古典に古くからあります。至る所にある創造を、神の名と結んだ研究者もいます。
+どの大きさでも同じ形、という所には、部分に全体が入るという東アジアの古典の見方が近く、至る所にある創造を神の名と結んだ研究者もいます。
 
 <details><summary>先行研究 — 部分に全体が入る形は、古くから言われてきたか</summary>
 
@@ -1033,7 +990,6 @@ pjdhiro は、それを強い仮説として言い直しています。
 - 老子 42：「道生一，一生二，二生三，三生萬物。萬物負陰而抱陽」。40：「反者道之動」。
 
 訳は Claude。
-
 
 出典：法蔵『華厳金師子章』。宋の淨源の註の本『金師子章雲間類解』（大正蔵 T45 No.1880）に引かれた法蔵の本文で読んだ（本文照合済。[CBETA の頁](https://cbetaonline.dila.edu.tw/zh/T45n1880_p0665c23)。p.665c23–27）／『周易』繋辞上伝（本文照合済。[中國哲學書電子化計劃の頁](https://ctext.org/book-of-changes/xi-ci-shang/zh)）／『老子』40 章・42 章（本文照合済。[中國哲學書電子化計劃の頁](https://ctext.org/dao-de-jing/zh)）
 
@@ -1054,10 +1010,23 @@ pjdhiro は、それを強い仮説として言い直しています。
 
 訳は Claude。
 
-
 出典：Kauffman (2008) *Reinventing the Sacred: A New View of Science, Reason, and Religion*, Basic Books（本文照合済。序文と第 1 章からの抜粋を、出版社の許しを得て著者の名で載せた [Edge の頁「Breaking the Galilean Spell」](https://www.edge.org/conversation/stuart_a_kauffman-breaking-the-galilean-spell)で読んだ。本の頁は照らしていない）
 
 </details>
+
+## 美は、起業家のエネルギーに近いか
+
+<!--OPEN-->
+
+<a id="jp-entrepreneur"></a>四段には、行き先があります。美の定義から入ろうと決めたとき、pjdhiro は、行き先も一緒に見ていました。
+
+<strong>pjdhiro の見方：</strong>美とは、起業家のエネルギーと近い。
+
+このページは、`c` を Love と呼びたいものの重力と仮に置き、起業家の思考・心理・行動を一歩ごとに引き寄せるもの（駆動源）と見てきました。章「[c は、一歩ごとに同じだけ引き寄せる](#jp-drift)」で、エフェクチュエーションの論では起業家を動かすものは謎のまま残っている、という pjdhiro の見方に触れました。四段の仮説は、その謎の所に、美・神・愛と同じものを置いてみる見方です。起業家が何かに惹きつけられて動き出すとき、その惹きつけるものは、美しいものに心を惹かれるときと同じものかもしれない。結びは、そう読めます。章「[起業家を駆るものは、ジュリア集合のようなポテンシャルから出るのか](#jp-idea)」の問いの筋の「体感では神・美・愛のようなもので駆動する」は、この結びを、起業家の体感の側から言ったものとして読めます。
+
+章「[美・神・愛が同じなら、プロジェクトの場の形は](#jp-source)」の畳みに置いた古典（偽ディオニュシオス・プラトン・エンペドクレスほか）は、それぞれ、この結びの一部に触れています。それらを並べると、美と愛と神が、惹きつけ、生み出させるものとして重なって見えます。その重なりを起業家を動かすものに見るのが、この結びの仮説です。
+
+このページの芯に戻して読むなら、一人の中で掛け合わさる自己達が、まだ形になっていない可能性で、その可能性を惹きつけて一歩ごとに形にしていくものが、美・神・愛のようなものなのかもしれません（芯と結びをつなぐこの読みは、Claude が置いたものです）。
 
 <!--TURN-->二つの仮説で、問いに近寄りました。最後に、式の所ごとに置いた仮説を並べます。<!--/TURN-->
 
@@ -1068,6 +1037,8 @@ pjdhiro は、それを強い仮説として言い直しています。
 <!--OPEN-->
 
 <a id="jp-gaps"></a>このページは、式の所ごとに、起業家の何に当たるかを仮説として置いてきました。所ごとに並べます。
+
+<b>一歩（`→`）：人に会い、気づき、約束する、のくり返し。</b>起業家の行動を、見つけた所から条件を変えた次の木へ移る、入れ子の深さ優先探索のように見ました（第一部）。
 
 <b>`z`：起業家の思考・心理・行動。</b>実軸に認知できる面、虚軸に認知し得ない面を当てました（章「[z は、起業家の思考・心理・行動](#jp-z)」）。
 
@@ -1109,7 +1080,7 @@ pjdhiro は、それを強い仮説として言い直しています。
 
 ## 原典と、読む順
 
-<a id="jp-reading"></a>このページで読んだ文献を、自分で読むときの順に並べました。どれも、無料で読める写しがあります。
+<a id="jp-reading"></a>このページで読んだ文献のうち、まず読むものを、自分で読むときの順に並べました。どれも、無料で読める写しがあります。
 
 <div class="tablefit cols-2">
 
