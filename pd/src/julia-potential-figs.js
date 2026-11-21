@@ -233,7 +233,7 @@
   const mand = document.getElementById("jp-mand"), julia = document.getElementById("jp-julia");
   let drawBig = () => {};
   if (mand && julia) {
-    let C = { re: -0.123, im: 0.745 }, mandImg = null;
+    let C = { re: -0.8, im: 0.16 }, mandImg = null;
     const JV = { x0: -1.8, x1: 1.8, y0: -1.6, y1: 1.6 };
     const markC = () => {
       const f = mand.closest(".jp-fig"), ctx = mand.getContext("2d"); if (mandImg) ctx.putImageData(mandImg, 0, 0);
@@ -272,13 +272,16 @@
      色は点に付いたまま動く。「一つ前の段の位置」では、その段の前の曲線の一周を虹の順に塗る。「最初の円の位置」では、
      その点を前へ打ったときに戻る、最初の円の上の位置で塗る（段が深いほど細かくなる）。−√ の枝は濃い色にする。
      曲線の内側は、その段の数だけ前へ打っても大きさ 2 を超えない点の集まりで、段を重ねると充填ジュリア集合に寄る。
-     M の外の c では曲線が二つに切れて、この描き方（一本の曲線でつなぐ）が成り立たないので、選べないようにする。 */
+     M の外の c では曲線が二つに切れて、この描き方（一本の曲線でつなぐ）が成り立たないので、選べないようにする。
+     ただし、0 から前へ打って外へ出るまでの歩数が MAXK より十分多い c は、描く段（MAXK 段）までは曲線が一本のまま
+     なので選べる。既定の c = −0.8 + 0.16i は M のわずかに外（38 歩で外へ出る）で、これに当たる
+     （2026-11-21・付箋 i20261121024316zx9「c = -0.800 + 0.160i　をデフォにして。すべて。」）。 */
   const fold = document.getElementById("jp-fold");
   let drawFold = () => {};
   if (fold) {
     const cv = document.getElementById("jp-fold-cv"), cvM = document.getElementById("jp-fold-c"), out = document.getElementById("jp-fold-out");
     const N = 16384, MAXK = 12, LAST = 3 * MAXK, FV = { x0: -2.75, x1: 2.75, y0: -2.75, y1: 2.75 }, NB = 48;
-    let C = cFromAngle(GOLDEN_DEG, 0.97), levels = [], half = [], sig = [], pos = 0, tw = 1, timer = 0, animId = 0, global = true, mapImg = null, note = "";
+    let C = { re: -0.8, im: 0.16 }, levels = [], half = [], sig = [], pos = 0, tw = 1, timer = 0, animId = 0, global = true, mapImg = null, note = "";
     // 主値の平方根（偏角を (−π, π] で半分にする）
     const sqrtP = (wr, wi) => { const m = Math.hypot(wr, wi); return [Math.sqrt((m + wr) / 2), Math.sign(wi || 1) * Math.sqrt(Math.max(0, (m - wr) / 2))]; };
     function build() {
@@ -335,6 +338,24 @@
       ctx.beginPath(); ctx.moveTo(a, b); ctx.lineTo(c, d); ctx.stroke();
       if (L > 12) { ctx.beginPath(); ctx.moveTo(c, d); ctx.lineTo(c - 11 * Math.cos(ang - 0.4), d - 11 * Math.sin(ang - 0.4)); ctx.lineTo(c - 11 * Math.cos(ang + 0.4), d - 11 * Math.sin(ang + 0.4)); ctx.closePath(); ctx.fill(); }
     }
+    /* 背景の陰陽の印（☯）。0 を中心に、最初の円（大きさ 2）と同じ大きさで薄く描く。左右の半分の境が虚軸に来る向き
+       （√ の歩で曲線が右半分に縮み、−√ の歩で半回転の写しが左半分を埋めるのと重なる）。
+       2026-11-21・付箋 i20261121024118rcn「…ジュリア集合の逆写像の背景に☯️マークを入れて」 */
+    function taiji(ctx, cx, cy, r, ink, paper) {
+      ctx.save();
+      ctx.globalAlpha = 0.09; ctx.fillStyle = ink;
+      ctx.beginPath(); ctx.moveTo(cx, cy - r);
+      ctx.arc(cx, cy, r, -Math.PI / 2, Math.PI / 2, true);
+      ctx.arc(cx, cy + r / 2, r / 2, Math.PI / 2, -Math.PI / 2, true);
+      ctx.arc(cx, cy - r / 2, r / 2, Math.PI / 2, -Math.PI / 2, false);
+      ctx.closePath(); ctx.fill();
+      ctx.beginPath(); ctx.arc(cx, cy - r / 2, r / 7, 0, Math.PI * 2); ctx.fill();
+      ctx.globalAlpha = 1; ctx.fillStyle = paper;
+      ctx.beginPath(); ctx.arc(cx, cy + r / 2, r / 7, 0, Math.PI * 2); ctx.fill();
+      ctx.globalAlpha = 0.18; ctx.strokeStyle = ink; ctx.lineWidth = 1;
+      ctx.beginPath(); ctx.arc(cx, cy, r, 0, Math.PI * 2); ctx.stroke();
+      ctx.restore();
+    }
     function drawMap() {
       if (!cvM) return;
       const ctx = cvM.getContext("2d");
@@ -352,6 +373,7 @@
       const f = fold, ctx = cv.getContext("2d"), W = cv.width, Hh = cv.height, panel = css(f, "--panel"), mid = css(f, "--mid"), coral = css(f, "--coral");
       ctx.fillStyle = panel; ctx.fillRect(0, 0, W, Hh);
       const [ax, ay] = toPx(FV, 0, 0, cv);
+      taiji(ctx, ax, ay, (2 * W) / (FV.x1 - FV.x0), mid, panel);
       ctx.strokeStyle = mid; ctx.globalAlpha = 0.3; ctx.lineWidth = 1;
       ctx.beginPath(); ctx.moveTo(0, ay); ctx.lineTo(W, ay); ctx.moveTo(ax, 0); ctx.lineTo(ax, Hh); ctx.stroke();
       // この一歩の前の形（薄い灰）
@@ -421,7 +443,7 @@
     }));
     if (cvM) cvM.addEventListener("click", (e) => {
       const c = fromPx(MV, e, cvM);
-      if (escM(c.re, c.im, 300) >= 0) { stop(); note = "クリックした c（" + fmtC(c.re, c.im) + "）は黒い形の外です。曲線が二つに切れて一本でつなげないので、この図では黒い形の中の c だけを選べます。"; drawFold(); return; }
+      if (escM(c.re, c.im, 300) >= 0 && escM(c.re, c.im, 300) < MAXK + 4) { stop(); note = "クリックした c（" + fmtC(c.re, c.im) + "）は黒い形の外です。曲線が二つに切れて一本でつなげないので、この図では黒い形の中と、そのすぐ近くの c だけを選べます。"; drawFold(); return; }
       setC(c);
     });
     build();
