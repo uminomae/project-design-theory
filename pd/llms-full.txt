@@ -195,6 +195,14 @@ URL: https://uminomae.github.io/project-design-theory/reader/hamilton-philosophy
 
 A Japanese translation, paragraph by paragraph, of Sir William Hamilton's article "Philosophy of the Unconditioned; in reference to Cousin's Doctrine of the Infinito-Absolute" (Edinburgh Review 50, October 1829; public domain; English), taken from the revised reprint in Hamilton's Discussions on Philosophy and Literature, Education and University Reform (London, 1852), pp.1–37, in which Hamilton examines Victor Cousin's claim that the Unconditioned is known immediately by reason, and answers that the Unconditioned is incognisable and inconceivable, that to think is to condition, and that a "learned ignorance" is perhaps the consummation of knowledge. Each paragraph gives the Japanese translation first and the English original in a fold below it, with page numbers; Hamilton's footnotes are collected at the end. Status: the whole article and its footnotes are translated; Hamilton's 1852 additions are kept in square brackets. Peirce ("Evolutionary Love", 1893, ¶20) names neither the article nor a page; Claude chose it as the work that Mansel names in his Preface and that Mill attacks. There is no transcription; the text was built from the OCR and checked against the page images of the Internet Archive scan of the 1852 volume. The Latin, Greek, French and German quotations and the references in the footnotes were not checked against their sources. The 1829 magazine text was not compared sentence by sentence. The translation is by Claude (AI) and has not been reviewed by a person.
 
+## Using This Repository for a Love-Driven Development Review
+
+To review a paper or text using the view of "Love駆動開発と呼びたいもの β" as the yardstick, use an LLM that can fetch the repository (e.g. Claude Code, Codex) and follow the README section 「Love駆動開発の視点でレビューに使うとき」: https://github.com/uminomae/project-design-theory#love駆動開発の視点でレビューに使うとき
+- Fetch: `git clone --depth 1 https://github.com/uminomae/project-design-theory`
+- Read in order: the reader's Markdown source `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md` (to the end), then `docs/rules/stance.md` (pjdhiro's view and way of judging), then `docs/rules/corrections.md` (misreadings LLMs tend to repeat).
+- The conditions and nuances of the view (what each statement answered, which readings were rejected) are in those rule files, not in the public pages. This file and the public pages alone are not enough for such a review.
+- Love-Driven Development is pjdhiro's theory from naive personal experience, offered as a hypothesis. A review written this way is the LLM's reading, not pjdhiro's judgment.
+
 ## Related Projects
 
 | Project | URL | Focus |
