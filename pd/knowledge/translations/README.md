@@ -47,6 +47,7 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | `rankine-1850-mechanical-action-of-heat.md` | W. J. Macquorn Rankine, "On the Mechanical Action of Heat, especially in Gases and Vapours", *Transactions of the Royal Society of Edinburgh* 20 (1853), pp.147–190（1850 年 2 月 4 日に読む・英語） | 全文の訳（2026-11-20・#175）。序論・第 I〜IV 節・付録と表二つ、全文 260 段・脚注 1。文字起こしが無いので、誌面の走査の OCR を下敷きに、読む役六つが全 44 頁を画像と照らして原文と式と表を起こし、訳の案を出した。照らす役三つが段ごとに照らし、Claude がつないで入れた。人の校閲はまだ。1893 の ¶20・¶58 が、1850 年のクラウジウスとランキンの熱の力学的理論に触れる（題は挙げていない）。ページ `pd/reader/rankine-mechanical-action-of-heat-ja.html` |
 | `mansel-1858-limits-of-religious-thought.md` | Henry Longueville Mansel, *The Limits of Religious Thought Examined in Eight Lectures*, Oxford: J. Wright for John Murray, 1858, 序文 pp.v–x | 本の抜きの訳（2026-11-20・#175）。初めの序文の全文六段と脚注二つ。パースは題も頁も挙げず、マンセルがハミルトンの哲学を講義の土台にすると自ら述べる所として、Claude が当てた。文字起こしが無いので、OCR を下敷きに Claude が六頁の画像と照らして原文を起こし、訳を付けた。序文が引くハミルトンの二文は、ハミルトンの論集（1852）pp.12・15 で照らした。人の校閲はまだ。1893 の ¶20 が、マンセルのハミルトンの哲学の「無分別な弁護」に触れる。ページ `pd/reader/mansel-limits-of-religious-thought-ja.html` |
 | `mill-1865-examination-of-hamilton.md` | John Stuart Mill, *An Examination of Sir William Hamilton's Philosophy*, London: Longman, Green, Longman, Roberts & Green, 1865, 第 VII 章 pp.88–105 | 本の抜きの訳（2026-11-21・#175）。第 VII 章「The Philosophy of the Conditioned, as applied by Mr. Mansel to the Limits of Religious Thought」の全文 25 段と脚注 16。パースは題も頁も挙げず、マンセルの弁護にミルが正面から答えた所として、Claude が当てた。文字起こしが無いので、OCR を下敷きに、読む役三つが十八頁を画像と照らして原文を起こし訳の案を付け、照らす役が段ごとに照らした。ミルが引くマンセルとハミルトンの文は照らしていない。人の校閲はまだ。1893 の ¶20 が「ミルの唯名論」に触れる。ページ `pd/reader/mill-examination-of-hamilton-ja.html` |
+| `hamilton-1829-philosophy-of-the-unconditioned.md` | Sir William Hamilton, "Philosophy of the Unconditioned; in reference to Cousin's Doctrine of the Infinito-Absolute", *Edinburgh Review* 50（1829 年 10 月）, pp.194–221。原文は論集 *Discussions on Philosophy and Literature, Education and University Reform*（London, 1852）の再録 pp.1–37 | 論文の全文の訳（2026-11-21・#175）。全文 78 段と脚注 22。パースは題も頁も挙げず、マンセルの序文が名指し、ミルの批判が拠った元の論文として、Claude が当てた。ハミルトン自身が直して脚注を足した 1852 年の再録を原文にした（足した所は角括弧）。文字起こしが無いので、OCR を下敷きに、読む役六つが三十七頁を画像と照らして原文を起こし訳の案を付け、照らす役六つが段ごとに照らした。ハミルトンが引く文と脚注の書誌は照らしていない。人の校閲はまだ。1893 の ¶20 が「ウィリアム・ハミルトン卿に縛られた従僕たち」に触れる。ページ `pd/reader/hamilton-philosophy-of-the-unconditioned-ja.html` |
 
 次に訳す候補：パースは `../research/peirce-love-abduction/READING-ORDER-20261116.md` の表、1893「Evolutionary Love」が引く論文と本は Issue #175 の一覧。
 
@@ -267,6 +268,26 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | Discussions / Lectures | 『論集』／『講義』 | ハミルトンの本 |
 | farrago | 寄せ集め | |
 | Rationalism / Rationalists | 合理主義／合理主義者 | |
+
+### ハミルトン：表
+
+| 原語 | 訳語 | 覚え書き |
+|---|---|---|
+| the Unconditioned / the Conditioned | 無条件者／条件づけられたもの | マンセル・ミルの表と同じ |
+| the Absolute / the Infinite / the Finite | 絶対者／無限者／有限者 | クザンの語を並べた所は 無限なもの・有限なもの |
+| the Infinito-Absolute / absoluto-infinite | 無限・絶対者／絶対・無限者 | 語順のとおりに訳し分けた |
+| the unconditionally unlimited / the unconditionally limited | 無条件に限られないもの／無条件に限られたもの | |
+| inconditionates | 無条件なもの | 無条件者と分ける |
+| the Philosophy of the Conditioned | 条件づけられたものの哲学 | |
+| inconceivable / incognisable | 考えることのできない／認識できない | |
+| construe to the mind | 精神に組み立てて示す | |
+| intellectual intuition / intellectual vision | 知的直観／知的な見ること | |
+| Reason / Understanding | 理性／悟性 | Vernunft／Verstand |
+| Rationalism / Intellectualism | 合理論／知性論 | |
+| the Deity / the Divinity | 神性／神的なもの | |
+| learned ignorance | 学識ある無知 | |
+| indifference | 無差別 | シェリングの語 |
+| correality | 共に実在すること | |
 
 ### パース：表
 

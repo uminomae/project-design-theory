@@ -23,6 +23,7 @@
 年の順に並べます。
 
 - [マンデヴィル『蜂の寓話』（1714）の詩「ぶつぶつ言う蜂の巣」を、日本語で読む](mandeville-grumbling-hive-ja.html)
+- [ハミルトン「無条件者の哲学について」（1829）を、日本語で読む](hamilton-philosophy-of-the-unconditioned-ja.html)：マンセルが弁護し、ミルが批判した、ハミルトンの哲学の元の論文。「進化的な愛」の「ハミルトン卿に縛られた従僕たち」の段から。
 - [ヘルムホルツ『力の保存について』（1847）を、日本語で読む](helmholtz-erhaltung-der-kraft-ja.html)
 - [クラウジウス「熱の動力について」（1850）を、日本語で読む](clausius-bewegende-kraft-der-warme-ja.html)
 - [ランキン「熱の力学的作用について」（1850）を、日本語で読む](rankine-mechanical-action-of-heat-ja.html)
