@@ -56,13 +56,23 @@ repo を取得できない LLM には、上の節の raw の URL か、[llms.txt
 
 `CLAUDE.md` と、git・セッション・付箋帳・公開前の点検など、この repo で作業するための決まりは、外のレビューには当てません。`stance.md`・`corrections.md` の中の作業の決まり（判断のページ・アーティファクト・git・セッションの行）も同じです。「公開文に書かない」とある評価は、レビューにも書きません。
 
-実行例（野中郁次郎の知識創造の論）。雛形の一文目はそのままに、二文目を題材に合わせて詳しくした形です。
+実行例（心理的安全性の通俗的な解説）。雛形の `<URL か論文>` に、解説の URL を入れただけの形です。
+
+```text
+https://github.com/uminomae/project-design-theory を取得し、README の「Love駆動開発の視点でレビューに使うとき」に沿って読んでください。そのうえで、https://ja.wikipedia.org/wiki/心理的安全性 をレビューしてください。
+```
+
+実行例（野中郁次郎の知識創造の論）。雛形に題材を入れた形です。
+
+```text
+https://github.com/uminomae/project-design-theory を取得し、README の「Love駆動開発の視点でレビューに使うとき」に沿って読んでください。そのうえで、野中郁次郎の知識創造（SECI・場・知識のらせん）の論文をレビューしてください。
+```
+
+この向きで答えた読み物が、「[野中郁次郎の理想を目指すとき、どこに気をつけるか](https://uminomae.github.io/project-design-theory/reader/nonaka-complement.html)」です。読み物を作ったときは、二文目を題材に合わせて詳しくした、次の文で頼みました。
 
 ```text
 https://github.com/uminomae/project-design-theory を取得し、README の「Love駆動開発の視点でレビューに使うとき」に沿って読んでください。そのうえで、野中郁次郎が知識創造（SECI・場・知識のらせん）を論じた論文のうち、本文を読めるものを探して読み、野中が出典に挙げた論文や、引いた哲学者の原典も本文で確かめてください。読み物「Love駆動開発と呼びたいもの β」の見方を物差しにして、野中の理想を目指すときの注意点をレビューし、引く文には原典の頁を添えてください。
 ```
-
-この形で答えた読み物が、「[野中郁次郎の理想を目指すとき、どこに気をつけるか](https://uminomae.github.io/project-design-theory/reader/nonaka-complement.html)」です。
 
 ## このサイトについて
 
