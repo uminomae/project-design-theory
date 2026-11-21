@@ -1,8 +1,12 @@
 # 野中郁次郎の理想を目指すとき、どこに気をつけるか
 
 <div class="reader-lead glow-card" id="nk-gist"><span class="reader-lead__label">ざっくりいうと</span>
-<p>このページは、次の依頼に答える形でまとめています。同じ文を LLM に渡せば、同じ向きのレビューを試せます。</p>
+<p>このページは、LLM への依頼に答える形でまとめています。次の文を LLM に渡せば、同じ向きのレビューを試せます。</p>
+<blockquote class="reader-callout" style="overflow-wrap:anywhere"><p><a href="https://github.com/uminomae/project-design-theory">https://github.com/uminomae/project-design-theory</a> を取得し、README の「Love駆動開発の視点でレビューに使うとき」に沿って読んでください。そのうえで、野中郁次郎の知識創造（SECI・場・知識のらせん）の論文をレビューしてください。</p></blockquote>
+<details><summary>詳しく — このページを作ったときの依頼の文</summary>
+<p>README の「Love駆動開発の視点でレビューに使うとき」は、原典を本文で読むこと、引く文に頁を添えることを、読み方としてすでに求めています。上の短い文で足ります。このページを作ったときは、二文目を題材に合わせて詳しくした、次の文で頼みました。</p>
 <blockquote class="reader-callout" style="overflow-wrap:anywhere"><p><a href="https://github.com/uminomae/project-design-theory">https://github.com/uminomae/project-design-theory</a> を取得し、README の「Love駆動開発の視点でレビューに使うとき」に沿って読んでください。そのうえで、野中郁次郎が知識創造（SECI・場・知識のらせん）を論じた論文のうち、本文を読めるものを探して読み、野中が出典に挙げた論文や、引いた哲学者の原典も本文で確かめてください。読み物「<a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a>」の見方を物差しにして、野中の理想を目指すときの注意点をレビューし、引く文には原典の頁を添えてください。</p></blockquote>
+</details>
 <p>repo を取得できない LLM には、案内の <a href="https://uminomae.github.io/project-design-theory/llms.txt" style="overflow-wrap:anywhere">https://uminomae.github.io/project-design-theory/llms.txt</a> から読ませることもできます。</p>
 <p>答えの芯です。野中の理想は、駆動するものを人の内側に置く点で、Love駆動開発と同じ所を見ています。ただ、共感・愛・ケア・信頼・共通善の五つの言葉は良い側だけで書かれ、Love駆動開発が要ると見る、ぶつかりと、心の守りの話が抜けています。</p>
 <p>そのため同じ言葉が、読む人の守り方と段階しだいで、逆の向きにも働きます。それでも回ってきたのは、長く勤める雇用のような条件が言葉を支えていたからではないか。注意点は、その歯止めと条件を補うことだ、と考えます。</p>
