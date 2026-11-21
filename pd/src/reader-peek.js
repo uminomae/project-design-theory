@@ -13,6 +13,7 @@
  *    閉じる（×・Esc・小窓の外を押す）と、開いたリンクにフォーカスを戻す。
  *    data-peek-dock="<字>" も付いた説明は、右下の棚のボタンから、どこを読んでいても開ける（2026-11-20）。
  *    data-peek-dock は図（<figure>）にも付けられる（ボタンは字だけ。2026-11-21・付箋 i202611210239561it）。
+ *    棚だけから開く図は hidden の <figure> に置いてよく、小窓の中でだけ見せる。ボタンの絵は data-peek-thumb（2026-11-21・付箋 i20261121043634uo3）。
  * 1b. 章の頭の小窓：跳び先が段落の頭の印（中身の無い <a id>）なら、跳ばずに、その段落から続く数段
  *    （図・畳み・見出しの手前まで）を小窓で見せる。題は、その段の章の題。小窓の下の「この章へ移る」で跳べる
  *    （2026-11-21・付箋 i202611210239561it「ページ内リンクでスクロールされないようにmodalにしてます。
@@ -98,6 +99,7 @@
     if (!moved) return;
     moved.mark.parentNode.insertBefore(moved.el, moved.mark);
     moved.mark.parentNode.removeChild(moved.mark);
+    if (moved.hid) moved.el.hidden = true;
     moved = null;
   }
 
@@ -111,8 +113,10 @@
       titleEl.textContent = t.trim();
       var mark = document.createComment('peek');
       el.parentNode.insertBefore(mark, el);
+      /* 本文に置かず棚からだけ開く図（hidden の <figure>）は、小窓の中でだけ見せる（2026-11-21・付箋 i20261121043634uo3） */
+      moved = { el: el, mark: mark, hid: el.hidden };
+      el.hidden = false;
       bodyEl.appendChild(el);
-      moved = { el: el, mark: mark };
       opener = a;
       if (typeof dlg.showModal === 'function') dlg.showModal(); else dlg.setAttribute('open', '');
       document.documentElement.classList.add('peek-open');
@@ -171,10 +175,12 @@
       var b = document.createElement('button');
       b.type = 'button';
       b.className = 'peek-dock__btn';
+      /* 棚のボタンの小さな絵：畳みなら見出しの絵、図なら data-peek-thumb */
       var th = el.querySelector(':scope > summary img');
-      if (th) {
+      var thSrc = th ? th.getAttribute('src') : el.getAttribute('data-peek-thumb');
+      if (thSrc) {
         var im = document.createElement('img');
-        im.src = th.getAttribute('src');
+        im.src = thSrc;
         im.alt = '';
         im.width = 24; im.height = 24;
         b.appendChild(im);

@@ -24,22 +24,12 @@
 
 <p class="jp-peek-chips"><a href="#jp-about-julia"><img src="../assets/img/julia-thumb.png" alt="" width="96" height="96">ジュリア集合とは</a></p>
 
-<details class="acc" id="jp-about-julia" data-peek data-peek-dock="ジュリア集合とは" hidden><summary><img class="jp-acc-thumb" src="../assets/img/julia-thumb.png" alt="" width="96" height="96">詳しく — ジュリア集合とは</summary>
-
-ジュリア集合は、`z → z² + c` のような簡単な式をくり返すと現れる形です。名は、フランスの数学者ガストン・ジュリアにちなみます。
-
-<figure class="glow-card reader-figure"><div class="jp-pair"><img src="../assets/img/julia-set-c-right.png" alt="c = −0.8 + 0.16i のジュリア集合。渦を巻く細い枝が、左右に連なる。背景の青は、遠くへ行く点" width="520" height="520" loading="lazy"><img src="../assets/img/julia-set-c-left.png" alt="c = −0.12 + 0.75i のジュリア集合。淡い色の塗りが、くびれでつながった丸い房の連なりになる。背景の青は、遠くへ行く点" width="520" height="520" loading="lazy"></div><figcaption>左は <code>c = −0.8 + 0.16i</code>、右は <code>c = −0.12 + 0.75i</code>。左の <code>c</code> は、マンデルブロ集合の縁のすぐ外にあり、0 から打つと、39 歩も粘ってから遠くへ行きます。遠くへ行かない点はひとつながりにならず、細かなかけらに散ります。縁に近い <code>c</code> ほど、絵は込み入ります。左の淡い点は、計算した回数では遠くへ行かなかった点です。右の淡い色は、くり返しても遠くへ行かない点で、その縁がジュリア集合です。青は遠くへ行く点で、明るいほど、遠くへ行くまでに多くの歩数がかかった点です。どちらも、このページで計算して描きました（計算は Claude）。</figcaption></figure>
-
-- `z` も `c` も、平面の上の一点で表せる数（複素数）です。`c` を一つ決め、出発点の `z` を一つ選んで、二乗して `c` を足す、をくり返します。
-- 二乗すると、点は、原点から見た角度が二倍になり、原点からの距離が二乗になります（図：[二乗を手で動かす](#jp-sq)）。`c` を足すと、毎回、同じ向きに同じだけずれます（章「c は、一歩ごとに同じだけ引き寄せる」）。
-- 出発点によって、くり返すうちに限りなく遠くへ行く点と、いつまでも遠くへ行かない点に分かれます。遠くへ行かない点の集まりの縁（境目）が、ジュリア集合です。
-- 境目は、ほとんどの `c` で、どれほど拡大しても込み入った模様が続きます（章「どの大きさでも同じ形なら、至る所に現れる」）。形は `c` ごとに違い、`c = 0` のときは円です。
-- `c` を平面のどこに置くと境目がひとつながりになるかを塗った地図が、マンデルブロ集合です。このページの図の「c を選ぶ」の黒い形がそれです。その本体の大きなハート形の中に `c` があると、0 から打った値は一点に寄ります（章「値を前へ打つと渦になり、遡るとジュリア集合の形になる」）。
-- 一歩を逆に戻すと、平方根が二つあるので、点は二つに分かれます。遡った点は、境目に集まっていきます。このページは、この遡る向きから見ます（章「ジュリア集合を、逆にたどる」）。
-
-出典：J. Milnor (1990) "[Dynamics in One Complex Variable: Introductory Lectures](https://arxiv.org/abs/math/9201272)"（arXiv の本文で照合済）。くり返しても遠くへ行かない点の集まり（充填ジュリア集合）の縁がジュリア集合であることは、§17 の補題 17.1（p.17-1）。マンデルブロ集合の定め（0 から打った値が遠くへ行かない `c` の集まりで、そのとき形がひとつながりになる）は、付録 F（p.F-1）。
-
-</details>
+<figure class="glow-card reader-figure jp-fig" id="jp-about-julia" data-peek data-peek-dock="ジュリア集合とは" data-peek-thumb="../assets/img/julia-thumb.png" data-peek-title="ジュリア集合とは" hidden>
+<p class="jp-fig__title">ジュリア集合とは</p>
+<div class="jp-stage"><canvas id="jp-intro-cv" width="520" height="600" aria-label="ジュリア集合ができるまでを、場面ごとに動かして見せるアニメ。c を一つ決め、0 から二乗して c を足すをくり返し、遠くへ行く点と行かない点を塗り分け、その縁がジュリア集合になる。一歩を逆に戻すと点は二つに分かれて境目に集まる。c を変えると形が変わる"></canvas><p class="jp-stage__no" id="jp-intro-no">1 / 8</p><p class="jp-stage__cap" id="jp-intro-cap" aria-live="polite">z も c も、平面の上の一点で表せる数（複素数）です。まず、c を一つ決めます。</p></div>
+<div class="jp-media" role="group" aria-label="再生の操作"><button type="button" id="jp-intro-reset" class="jp-media__icon" aria-label="最初から" title="最初から"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2.4v14H6zM19 5v14L9 12z"/></svg></button><button type="button" id="jp-intro-play" class="jp-media__play" aria-pressed="false" aria-label="再生" title="再生・止める"><svg class="jp-media__on" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="jp-media__off" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.6v14H7zM13.4 5H17v14h-3.6z"/></svg></button><button type="button" id="jp-intro-back" class="jp-media__word">一場面戻す</button><button type="button" id="jp-intro-step" class="jp-media__word">一場面進める</button></div>
+<figcaption>ジュリア集合は、<code>z → z² + c</code> のような簡単な式をくり返すと現れる形です。名は、フランスの数学者ガストン・ジュリアにちなみます。二乗のはたらきは図「<a href="#jp-sq">二乗を手で動かす</a>」で、遡る一段は章「<a href="#jp-back">ジュリア集合を、逆にたどる</a>」で、手で動かして見られます。図は、このページで計算して描きました（計算は Claude）。出典：J. Milnor (1990) "<a href="https://arxiv.org/abs/math/9201272">Dynamics in One Complex Variable: Introductory Lectures</a>"（arXiv の本文で照合済）。くり返しても遠くへ行かない点の集まり（充填ジュリア集合）の縁がジュリア集合であることは、§17 の補題 17.1（p.17-1）。マンデルブロ集合の定め（0 から打った値が遠くへ行かない <code>c</code> の集まりで、そのとき形がひとつながりになる）は、付録 F（p.F-1）。</figcaption>
+</figure>
 
 この見立てから、次の問いが立ちました。
 
@@ -478,21 +468,21 @@ Love駆動開発で、pjdhiro は、同じ駆動が、成果と呼ばれる向�
 <p class="jp-fig__title">遡る一段：円を、c の分だけ戻して ±√ で二つに分け、畳む</p>
 <div class="jp-fig__grid jp-fig__grid--fold">
 <div class="jp-fig__panel"><p class="jp-fig__label">c を選ぶ地図（黒い形の中をクリックすると c が変わる）</p><canvas id="jp-fold-c" width="300" height="260" aria-label="マンデルブロ集合。黒い形の中でクリックした所が c になる"></canvas></div>
-<div class="jp-fig__panel"><p class="jp-fig__label">大きさ 2 の円を、一歩ずつ遡る（▶ か「一歩進める」をクリック）</p><canvas id="jp-fold-cv" width="520" height="520" aria-label="大きさ 2 の円を、− c の平行移動と、角を半分にする √ と、半回転の写しの三歩で一段ずつ遡る。色は、その部分が前の曲線のどこから来たか。背景に薄い陰陽の印"></canvas></div>
+<div class="jp-fig__panel"><p class="jp-fig__label">大きさ 2 の円を、一歩ずつ遡る（▶ か「一歩進める」をクリック）</p><div class="jp-stage"><canvas id="jp-fold-cv" width="520" height="600" aria-label="大きさ 2 の円を、− c の平行移動と、角を半分にする √ と、半回転の写しの三歩で一段ずつ遡る。色は、その部分が前の曲線のどこから来たか。背景に薄い陰陽の印"></canvas><p class="jp-stage__cap" id="jp-fold-cap" aria-live="polite">図はページの中の JavaScript で描きます。</p></div></div>
 </div>
 <div class="jp-media" role="group" aria-label="再生の操作"><button type="button" id="jp-fold-reset" class="jp-media__icon" aria-label="最初から" title="最初から"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2.4v14H6zM19 5v14L9 12z"/></svg></button><button type="button" id="jp-fold-play" class="jp-media__play" aria-pressed="false" aria-label="再生" title="再生・止める"><svg class="jp-media__on" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="jp-media__off" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.6v14H7zM13.4 5H17v14h-3.6z"/></svg></button><button type="button" id="jp-fold-back" class="jp-media__word">一歩戻す</button><button type="button" id="jp-fold-step" class="jp-media__word">一歩進める</button></div>
 <div class="jp-fig__btns" role="group" aria-label="c の例"><button type="button" data-fc="-0.79,0.13">c = −0.79 + 0.13i</button><button type="button" data-fc="-0.123,0.745">c = −0.12 + 0.75i</button><button type="button" data-fc="golden">黄金角の c</button><button type="button" data-fc="-0.8,0.16">c = −0.8 + 0.16i</button><button type="button" data-fc="-1,0">c = −1</button><button type="button" data-fc="0,0">c = 0（円のまま）</button></div>
 <p class="jp-fig__readout jp-fig__readout--pre" id="jp-fold-out">図はページの中の JavaScript で描きます。</p>
-<figcaption>大きさ 2 の円を、遡る一段 <code>±√(w − c)</code> で一段ずつ遡ります。一段を「− c」「√」「−√」の三歩に分けて、一歩ずつ進めたり戻したりできます。色は、その点が最初の円のどこから来たかで、同じ色の所は、最初の円の同じ所から来ています。薄い灰の線は、その一歩の前の形です。背景に薄く描いた陰陽の印（☯）は、上の pjdhiro の見方の所（√ で角が半分になって右半分に縮み、−√ の半回転の写しが左半分を埋める）に重ねたものです。</figcaption>
+<figcaption>大きさ 2 の円を、遡る一段 <code>±√(w − c)</code> で一段ずつ遡ります。一段は「− c」「√」「−√」の三歩で、その一歩で起きたことを図の中の字幕で添えています。色は、その点が最初の円のどこから来たかで、同じ色の所は、最初の円の同じ所から来ています。薄い灰の線は、その一歩の前の形です。背景に薄く描いた陰陽の印（☯）は、上の pjdhiro の見方の所（√ で角が半分になって右半分に縮み、−√ の半回転の写しが左半分を埋める）に重ねたものです。</figcaption>
 </figure>
 
 <details><summary>詳しく — 図の見方：一段を三歩に分けて遡ると、円が畳まれる</summary>
 
-この図は、Steven Wittens の「[How to Fold a Julia Fractal](https://acko.net/blog/how-to-fold-a-julia-fractal/)」（2013）の見せ方に倣って、このページで新しく描いたものです。Wittens は、点が収まる円を、遡る向きに一段ずつ畳んでいくと、ジュリア集合の形になる様子を、動く図で見せています。図では、大きさ 2 の円の上の点を、`±√(w − c)` で一段ずつ遡ります。一段を「− c」「√」「−√」の三歩に分けて、一歩ずつ進めたり戻したりできます。
+この図は、Steven Wittens の「[How to Fold a Julia Fractal](https://acko.net/blog/how-to-fold-a-julia-fractal/)」（2013）の見せ方に倣って、このページで新しく描いたものです。Wittens は、点が収まる円を、遡る向きに一段ずつ畳んでいくと、ジュリア集合の形になる様子を、動く図で見せています。
 
 円の上の一点は、一段遡るごとに二つに分かれ、二つの点は、0 を挟んで向かい合います。前の曲線の一周が、右の半分と左の半分に一回ずつ写り、円が自分に巻きついて畳まれます。くびれと突き出しは、段ごとに細かくなっていきます。
 
-一歩目の「− c」で、曲線の全体を <code>−c</code> だけずらします（矢印）。二歩目の「√」で、0 の周りの角を半分に、0 からの距離を √ にします。曲線は、0 から左へのびる線（負の実軸）で切れ、一周が右半分の半周に縮みます。三歩目の「−√」で、その写しを 0 の周りに半回転させたもう一つの写し（濃い色）が、左半分を埋めます。曲線の内側は、遡った段の数だけ前へ打っても大きさ 2 を超えない点の集まりで、段を重ねるほど、くり返しても遠くへ行かない点の集まり（充填ジュリア集合）に寄ります。段が深くなると、線は、境目の細かい入り江（巻き込み）の奥まで追いきれずに横切るので、薄くしています。形は、内側の塗りで見られます。
+二歩目の「√」は平方根の主値で、曲線は、0 から左へのびる線（負の実軸）で切れます。曲線の内側は、遡った段の数だけ前へ打っても大きさ 2 を超えない点の集まりで、段を重ねるほど、くり返しても遠くへ行かない点の集まり（充填ジュリア集合）に寄ります。段が深くなると、線は、境目の細かい入り江（巻き込み）の奥まで追いきれずに横切るので、薄くしています。形は、内側の塗りで見られます。
 
 図の最初の `c` = −0.79 + 0.13i は、左の地図の黒い形の中で、本体の左隣の丸い房の、ふちの近くにあります。形はひとつながりなので、段をいくら重ねても曲線は一本のままです。ふちに近いので、境目の模様は、渦を巻くように巻き込みます。巻き込みは、20 段を過ぎたころから見えてきます（図は 30 段まで）。ページの上の「ジュリア集合とは」のサムネイル（`c` = −0.8 + 0.16i）と、ほぼ同じ形です。その −0.8 + 0.16i は、黒い形のわずかに外にあります。0 から前へ打つと 39 歩目で大きさ 2 を超えるので、段を 39 より深く重ねると曲線は二つに切れ、遠くへ行かない点は、かけらに分かれます（この図の 30 段までは、一本のままです）。
 
