@@ -294,6 +294,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/nonaka-complement/READER-nonaka-complement.md",
+        ROOT / "scripts/reader-nonaka-complement-template.html",
+        ROOT / "reader/nonaka-complement.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/empathy/READER-empathy.md",
         ROOT / "scripts/reader-empathy-template.html",
         ROOT / "reader/empathy.html",

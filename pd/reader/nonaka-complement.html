@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/nonaka-complement.html を直接編集しないでください。
+  正本:   knowledge/research/nonaka-complement/READER-nonaka-complement.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「野中郁次郎の理想を目指すとき、どこに気をつけるか」のページです。野中郁次郎の知識創造（SECI・場・実践知）の理想を目指すとき、どこでつまずき、なぜそれでも回ってきたのか。共感・愛・ケア・信頼・共通善の五つの言葉を、野中の論文 8 本と、野中が引いた原典（フッサール・西田幾多郎『善の研究』・アリストテレス・フォン・クロー 1998）の言葉と並べ、原典の側にあった分ける段と歯止めを見る。言葉を受け取る心（防衛と発達の段階）と、言葉を支えていた条件（長く勤める雇用・人が重なって働く職場）を見て、理想を目指すときの注意点をまとめる。巻末に、株を配る案への Claude のレビュー（従業員持株・株での報酬・顧客の持分の研究）。
+  野中と哲学者の原典の説明は Claude が原典から書いた要約。原典の並べ方は Claude の整理。
+  pjdhiro 本人の言葉は「pjdhiro の問い：」「pjdhiro の見方：」「pjdhiro の案：」で引用。人物の評価は書いていない。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>野中郁次郎の理想を目指すとき、どこに気をつけるか | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/nonaka-complement.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="野中郁次郎の知識創造（SECI・場・実践知）の理想を目指すとき、どこでつまずき、なぜそれでも回ってきたのか。共感・愛・ケア・信頼・共通善の五つの言葉を、野中の論文 8 本と、野中が引いた原典（フッサール・西田幾多郎『善の研究』・アリストテレス・フォン・クロー 1998）の言葉と並べ、原典の側にあった分ける段と歯止めを見る。言葉を受け取る心（防衛と発達の段階）と、言葉を支えていた条件（長く勤める雇用・人が重なって働く職場）を見て、理想を目指すときの注意点をまとめる。巻末に、株を配る案への Claude のレビュー（従業員持株・株での報酬・顧客の持分の研究）。">
+    <meta property="og:title" content="野中郁次郎の理想を目指すとき、どこに気をつけるか">
+    <meta property="og:description" content="野中郁次郎の知識創造（SECI・場・実践知）の理想を目指すとき、どこでつまずき、なぜそれでも回ってきたのか。共感・愛・ケア・信頼・共通善の五つの言葉を、野中の論文 8 本と、野中が引いた原典（フッサール・西田幾多郎『善の研究』・アリストテレス・フォン・クロー 1998）の言葉と並べ、原典の側にあった分ける段と歯止めを見る。言葉を受け取る心（防衛と発達の段階）と、言葉を支えていた条件（長く勤める雇用・人が重なって働く職場）を見て、理想を目指すときの注意点をまとめる。巻末に、株を配る案への Claude のレビュー（従業員持株・株での報酬・顧客の持分の研究）。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/nonaka-complement.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="野中郁次郎の理想を目指すとき、どこに気をつけるか">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-21">
+    <meta property="article:modified_time" content="2026-11-21">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "野中郁次郎の理想を目指すとき、どこに気をつけるか",
+          "description": "野中郁次郎の知識創造（SECI・場・実践知）の理想を目指すとき、どこでつまずき、なぜそれでも回ってきたのか。共感・愛・ケア・信頼・共通善の五つの言葉を、野中の論文 8 本と、野中が引いた原典（フッサール・西田幾多郎『善の研究』・アリストテレス・フォン・クロー 1998）の言葉と並べ、原典の側にあった分ける段と歯止めを見る。言葉を受け取る心（防衛と発達の段階）と、言葉を支えていた条件（長く勤める雇用・人が重なって働く職場）を見て、理想を目指すときの注意点をまとめる。巻末に、株を配る案への Claude のレビュー（従業員持株・株での報酬・顧客の持分の研究）。",
+          "keywords": "野中郁次郎, 知識創造, SECI, 場, 実践知, フロネシス, 暗黙知, 共感, 愛, ケア, 信頼, 共通善, フッサール, 対化, 西田幾多郎, 善の研究, アリストテレス, フォン・クロー, 防衛機制, 発達段階, 終身雇用, 従業員持株会, ESOP, 株主資本主義, Love駆動開発, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/nonaka-complement.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/nonaka-complement.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-21",
+          "dateModified": "2026-11-21",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "知識創造"}, {"@type": "Thing", "name": "野中郁次郎"}, {"@type": "Thing", "name": "組織"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「野中郁次郎の理想を目指すとき、どこに気をつけるか」のページです（工事中）。野中郁次郎の知識創造（SECI・場・実践知）の理想を目指すとき、どこでつまずき、なぜそれでも回ってきたのか。共感・愛・ケア・信頼・共通善の五つの言葉を、野中の論文 8 本と、野中が引いた原典（フッサール・西田幾多郎『善の研究』・アリストテレス・フォン・クロー 1998）の言葉と並べ、原典の側にあった分ける段と歯止めを見る。言葉を受け取る心（防衛と発達の段階）と、言葉を支えていた条件（長く勤める雇用・人が重なって働く職場）を見て、理想を目指すときの注意点をまとめる。巻末に、株を配る案への Claude のレビュー（従業員持株・株での報酬・顧客の持分の研究）。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の問い」「pjdhiro の見方」「pjdhiro の案」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>野中郁次郎の理想を目指すとき、どこに気をつけるか</h1>
+                <p class="reader-meta">
+                    最終更新: 2026-11-21 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/nonaka-complement/READER-nonaka-complement.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p class="reader-lead"><span class="reader-lead__label">問い</span>経営の論はたくさんあるのに、現場はなぜ、そのとおりにならないのでしょうか。それでも、なぜ、そこそこうまくいっているのでしょうか。</p>
+
+<p>このページは、pjdhiro が問いを立て、Claude が野中郁次郎の論文と、野中が引いた哲学者の原典を読んで答える形で書いています。文責は Claude です。野中の論文を読み直したとき、Claude は、日本の会社の理想の一面が描かれている、と読みました。それに pjdhiro が答えたのが、次の二つの問いです。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の問い：</strong>この世に経営学はたくさんある。でも、なぜ、そうならないのか？　また、それにもかかわらず、なぜ、そこそこうまくいっているのか？</p>
+</blockquote>
+<div class="reader-lead"><span class="reader-lead__label">今の答え</span>
+野中郁次郎の知識創造の論は、人が言葉にならない知と言葉にした知を行き来させ、組織の中で新しい知を生む過程を描いた論です。理想としては正しく、このページもその理想を目指します。つまずきやすいのは、共感・愛・ケア・信頼・共通善のような言葉が、包む側だけで書かれている所だと考えます。野中が引いた原典の側には、先に分ける段と、読み違いを止める条件が書かれていました。それが抜けると、同じ言葉が、読む人の心の守り方と発達の段階によって、逆の向きでも筋が通ってしまいます。それでも回ってきたのは、言葉の外に、言葉を支える条件があったからではないか、と見ています。だから、理想を目指すときの注意点は、言葉に分ける段と歯止めを補い、言葉を支えていた条件を確かめることにある、というのがこのページの今の答えです。
+</div>
+
+<div class="reader-lead"><span class="reader-lead__label">構成</span>
+<ul class="reader-lead__list">
+<li><b>第一部 野中の知識創造は、何を目指しているか</b>：理想を、論文の言葉で見ます。</li>
+<li><b>第二部 言葉は、どこで足りないのか</b>：五つの言葉を、野中が引いた原典の言葉と並べます。</li>
+<li><b>第三部 なぜ、そのとおりにならないのか</b>：言葉を受け取る心と、言葉を支えていた条件を見ます。</li>
+<li><b>第四部 それでも、なぜ、そこそこうまくいっているのか</b>：対になる問いに答えます。</li>
+<li><b>第五部 野中の理想を目指すときの注意点</b>：注意点をまとめます。</li>
+<li><b>巻末</b>：まだ分からないことと、pjdhiro の案へのレビューを置きます。</li>
+</ul>
+</div>
+
+<p class="reader-lead"><span class="reader-lead__label">要点</span></p>
+
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>理想</th>
+<th>知は、個人の暗黙知から始まり、場の中で言葉になり、組み合わされ、また身につく。そのらせんを、人の思いと実践の知が回す</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>足りない所</td>
+<td>五つの言葉（共感・愛・ケア・信頼・共通善）に、分ける段と歯止めが書かれていない。引かれた原典の側には書かれている</td>
+</tr>
+<tr>
+<td>つまずく理由</td>
+<td>人の心は思ったほど立派にできていない。同じ言葉が、防衛と発達の段階で、前へ進める言葉にも手前へ戻す言葉にもなる</td>
+</tr>
+<tr>
+<td>回ってきた理由</td>
+<td>未熟な守りのもとでも知は生まれる。長く勤める雇用や、人が重なって働く職場のような条件が、言葉を支えていた</td>
+</tr>
+<tr>
+<td>注意点</td>
+<td>言葉に歯止めがあるか・分ける段があるか・誰の段階で読まれるか・条件が書かれているか、を確かめる</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+
+
+<div class="reader-part" id="part-1"><p class="reader-part__no">第一部</p><p class="reader-part__title">野中の知識創造は、何を目指しているか</p></div><details class="sec" id="知識はどう生まれると野中は見たか" open><summary>知識は、どう生まれると野中は見たか</summary><div class="secbody">
+
+
+<p><a id="nk-seci"></a>はじめに、野中郁次郎の知識創造の論が、何を描いたのかを見ます。ここで先に理想を見ておくのは、このページの注意点が、その理想を目指すためのものだからです。</p>
+<p>野中は、知識を二つに分けて考えました。一つは、言葉にしにくい、体や経験に根ざした知（暗黙知）です。もう一つは、言葉や数式にできる知（形式知）です。1994 年の論文は、新しい知は、この二つが人と人のあいだで行き来するときに生まれる、と書きました。行き来の仕方は四つあります。経験を共にして暗黙知を移す（共同化）、暗黙知を言葉にする（表出化）、言葉にした知を組み合わせる（連結化）、言葉にした知を体で身につける（内面化）です。頭文字を取って SECI と呼ばれます。</p>
+<p>四つは一回まわって終わる円ではなく、個人から集団へ、組織へと、規模を広げながららせんを描く、と野中は書きました。1994 年の論文は、知を生む主役は組織の一人一人だ、としています。組織は、その知を広げ、形にする場を用意するものだ、という位置づけです。2021 年の竹内弘高との論文では、らせんは、個人から組織、組織どうし、社会へと広がるものとして書かれています。</p>
+<details class="acc"><summary>詳しく — 原文の鍵の文</summary>
+
+<ul>
+<li>1994 年の論文は、知を生む主役を一人一人に置きます：「The prime movers in the process of organizational knowledge creation are the individual members of an organization」（p.17）。</li>
+<li>同じ論文は、四つの行き来を socialization・externalization・combination・internalization と名づけ、それがらせんを描く、と書きます（pp.18–20）。</li>
+<li>2000 年の論文（遠山亮子・紺野登との共著）は、知が生まれる共有の文脈を「場（ba）」と呼び、SECI と場とリーダーシップを一つの模型にしました。</li>
+</ul>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p>Nonaka, I. (1994). A Dynamic Theory of Organizational Knowledge Creation. <em>Organization Science</em> 5(1), 14–37（<a href="https://doi.org/10.1287/orsc.5.1.14">DOI</a>。<a href="https://web.archive.org/web/20261009125025/https://www.uky.edu/~gmswan3/EDC608/Nonaka_1994.pdf">ケンタッキー大学の授業の頁に置かれた誌面の写し（Wayback）</a> の本文で確認）／Nonaka, I., Toyama, R. &amp; Konno, N. (2000). SECI, Ba and Leadership: a Unified Model of Dynamic Knowledge Creation. <em>Long Range Planning</em> 33(1), 5–34（<a href="https://doi.org/10.1016/S0024-6301(99)00115-6">DOI</a>。<a href="https://tingene.tekniskmuseum.no/images/PDF/Litteratur_MK/SECI_Ba_and_Leadership_a_Unified_Model.pdf">ノルウェー技術博物館の研究計画のサイトに置かれた誌面の写し</a> の本文で確認）／Nonaka, I. &amp; Takeuchi, H. (2021). Humanizing strategy. <em>Long Range Planning</em> 54(4), 102070（<a href="https://doi.org/10.1016/j.lrp.2021.102070">DOI</a>。<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9753931/">PubMed Central の版</a> の本文で確認。誌面の頁が無いので、場所は節の名で書く）</p>
+</details>
+
+</div></details><details class="sec" id="何がらせんを回すのか" open><summary>何が、らせんを回すのか</summary><div class="secbody">
+
+
+<p><a id="nk-driver"></a>らせんが描かれるとして、それを回しているのは何でしょうか。野中の論文は、この問いに、人の思いの側から答えています。</p>
+<p>1994 年の論文は、組織の意図・一人一人の自律・ゆらぎ、の三つを挙げました。2000 年の論文は、知が生まれる場と、そこで育つ愛・ケア・信頼・コミットメントを、知を生む土台に置きます。2021 年の論文は、実践の知（アリストテレスの言う実践知・フロネシス）と、創業者の信念と理想から始まる「内から外へ」の戦略を中心に置きます。</p>
+<p>回すものの名前は、論文ごとに入れ替わっています。ゆらぎ、愛とケア、弁証法、理想、実践知、と前に出る語が替わり、前の語は並びの一つになるか、出てこなくなります。それでも、人の思い・価値・コミットメントが、何を知として認めるかを決める、という筋は、1994 年から 2021 年まで通っています。駆動するものを人の内側に置く、という点で、野中の論は一貫しています。</p>
+<details class="acc"><summary>詳しく — 論文ごとに前に出る、回すもの</summary>
+
+<p>Claude が 8 本の論文の本文を読み、論文ごとに、らせんを回すものとして前に出る語を並べました。</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>論文</th>
+<th>前に出る語</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1994</td>
+<td>意図・自律・ゆらぎ（「"intention," "autonomy," and ... "fluctuation."」p.17）。内省の無いゆらぎは「破壊的な」混沌を生む、という断りもある（p.28）</td>
+</tr>
+<tr>
+<td>1996（梅本勝博・妹尾大との共著）</td>
+<td>組織の意図（「The knowledge spiral is driven by organizational intention」p.210）</td>
+</tr>
+<tr>
+<td>2000（遠山・紺野）</td>
+<td>場と、愛・ケア・信頼・コミットメント（p.25・p.28）。弁証法を、知識創造を導く鍵とする</td>
+</tr>
+<tr>
+<td>2003（遠山）</td>
+<td>弁証法（主体と構造、暗黙知と形式知の二元性がそれを動かす、p.9）</td>
+</tr>
+<tr>
+<td>2005（遠山）</td>
+<td>夢と理想（「envision different futures, which are based on their own dreams and ideals」p.420）</td>
+</tr>
+<tr>
+<td>2021（竹内）</td>
+<td>実践知・創業者の信念と理想・共通善</td>
+</tr>
+</tbody>
+</table></div>
+<p>前の語を捨てたと断る文は、どの論文にもありません。どれが、どの場面で効くのかを比べた論も、8 本の中にはありません。</p>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p>Nonaka, I. (1994)（<a href="https://doi.org/10.1287/orsc.5.1.14">DOI</a>。写しは第一章の出典）／Nonaka, I., Umemoto, K. &amp; Senoo, D. (1996). From information processing to knowledge creation: A paradigm shift in business management. <em>Technology in Society</em> 18(2), 203–218（<a href="https://doi.org/10.1016/0160-791X(96)00001-2">DOI</a>。<a href="http://www.sietmanagement.fr/wp-content/uploads/2016/04/nonaka-1996.pdf">教科書の付属サイトに置かれた誌面の写し</a> の本文で確認）／Nonaka, I., Toyama, R. &amp; Konno, N. (2000)（<a href="https://doi.org/10.1016/S0024-6301(99)00115-6">DOI</a>）／Nonaka, I. &amp; Toyama, R. (2003). The knowledge-creating theory revisited: knowledge creation as a synthesizing process. <em>Knowledge Management Research &amp; Practice</em> 1(1), 2–10（<a href="https://doi.org/10.1057/palgrave.kmrp.8500001">DOI</a>。<a href="https://web.archive.org/web/20130512161449/http://www.ai.wu.ac.at:80/~kaiser/birgit/Nonaka-Papers/The-knowledge-creation-theory-revisited-2003.pdf">ウィーン経済大学の教員の頁に置かれた誌面の写し（Wayback）</a> の本文で確認）／Nonaka, I. &amp; Toyama, R. (2005). The theory of the knowledge-creating firm: subjectivity, objectivity and synthesis. <em>Industrial and Corporate Change</em> 14(3), 419–436（<a href="https://doi.org/10.1093/icc/dth058">DOI</a>。<a href="https://web.archive.org/web/20231206012835/https://www.ics.hub.hit-u.ac.jp/research/academic_journal/uploads/dth058.pdf">一橋大学大学院の頁に置かれた誌面の写し（Wayback）</a> の本文で確認）／Nonaka, I. &amp; Takeuchi, H. (2021)（<a href="https://doi.org/10.1016/j.lrp.2021.102070">DOI</a>）</p>
+</details>
+
+</div></details><details class="sec" id="その理想はどこが正しいのか" open><summary>その理想は、どこが正しいのか</summary><div class="secbody">
+
+
+<p><a id="nk-right"></a>野中の理想は、どこが正しいのでしょうか。先に、このページが野中と同じ所を見ている点を書きます。</p>
+<p>野中の論は、知を生む力を、人の内側の思いに置きます。未来は計画どおりには来ないこと、矛盾や揺らぎの中から新しいものが生まれること、主体と客体は初めから分かれているのでなく、関わりの中で分かれていくこと、も書いています。pjdhiro がプロジェクトの駆動源を探して書いてきた「<a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a>」も、同じ所を見ています。駆動するものを人の内側に置き、人は環境をコントロールしきれない、と見る点です。</p>
+<p>規範としても、野中の言葉は正しいと考えます。知を独り占めしない、人の手柄を取らない、仲間を信じる、社会のためになることをする。どれも、どこの親も子に諭すことです。2021 年の論文は、実践知の身近な形として、母の知恵（正直に、嘘をつかない、欲張らない、人に迷惑をかけない）を挙げています。</p>
+<p>pjdhiro も、自分の立つ所を、野中の路線だと言います。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>基本的には、私は野中の路線だと思います。周辺を見て補強している。理想は同じ。そうコントロールできるとは思っていないが、そうなってしまう未来は否定しない。善になるべき、ではなく、なってしまう。ただ、前途は多難だと思う。</p>
+</blockquote>
+<p>理想が同じなら、このページが足すのは、その理想が成り立つ条件と、読み違いの歯止めです。前途が多難なのはどこか、を次の部から見ます。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>Nonaka, I. &amp; Takeuchi, H. (2021)（<a href="https://doi.org/10.1016/j.lrp.2021.102070">DOI</a>。節「Practical wisdom atop knowledge」）／Nonaka, I., Toyama, R. &amp; Konno, N. (2000)（<a href="https://doi.org/10.1016/S0024-6301(99)00115-6">DOI</a>。pp.28–29 の、知を独り占めしない・人の手柄を取らない）</p>
+</details>
+
+
+
+<p>前の部では、野中の理想を見ました。この部では、その理想を言い表す五つの言葉（共感・愛・ケア・信頼・共通善）を、野中が引いた原典の言葉と並べます。</p>
+</div></details><div class="reader-part" id="part-2"><p class="reader-part__no">第二部</p><p class="reader-part__title">言葉は、どこで足りないのか</p></div><details class="sec" id="包むには先に分けることが要る" open><summary>包むには、先に分けることが要る</summary><div class="secbody">
+
+
+<p><a id="nk-separate"></a>五つの言葉を一つずつ見る前に、五つに共通する形を一度だけ書いておきます。手がかりは、野中の論文を読み直していたとき、pjdhiro が、分けることと包むことについて話した言葉です。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>分離と包摂というのは、野中の包摂では分離がないため誤解が生まれる、みたいなことです。⭕️ ではなく ☯️ と分離するのはそのためです。曖昧と包摂は違います。融合と包摂も違う。ぎりぎり嘘は言っていない、的なことが起きるのです。曖昧にしておくこと。</p>
+</blockquote>
+<p>☯️ は、白と黒が分かれたまま、一つの円の中で互いを含んでいます。⭕️ は、初めから分かれていません。包むことと、分けずに混ぜることは違う、というのがこの見方です。</p>
+<p>この見方で、野中の五つの言葉と、野中が出典に付けた論文や引いた哲学者の原典を並べると、同じ形が出てきます。原典の側は、どの言葉も、先に分ける段を通ってから包んでいます。野中の文には、包む側だけが残っています。落ちている分ける段は、どれも、人の心が思いどおりにならない側（他者との隔たり・分裂と罪・悪い感情と失敗・知らなさと失う危うさ・善の揺れ）です。</p>
+<p>野中の文を退けるために並べるのではありません。野中が引いた原典に、すでに補いが書かれている、ということを見るために並べます。</p>
+<details class="acc"><summary>詳しく — 五つの言葉と、原典の分ける段</summary>
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>言葉</th>
+<th>原典が先に分けるもの</th>
+<th>原典が包むもの</th>
+<th>野中の文に残ったもの</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>共感</td>
+<td>自他の区別・他者の体験に直には届かない隔たり（フッサール）</td>
+<td>区別されたまま対になる（フッサール）・「相独立しながら」一つになる（西田）</td>
+<td>境が消え、直接つながる感じ</td>
+</tr>
+<tr>
+<td>愛</td>
+<td>大きく分かれること・罪・苦悩・偽の自己が死ぬこと（西田）</td>
+<td>最も深い統一・無私（西田）</td>
+<td>育む・土台になる・無私の資質</td>
+</tr>
+<tr>
+<td>ケア</td>
+<td>寛容な判断と勇気・悪い感情も分かち合う・ケアする側の怖れと手間（von Krogh）</td>
+<td>相手の成長を助ける関係（von Krogh が引く Mayeroff）</td>
+<td>前向きに考え、否定的な感じを避ける</td>
+</tr>
+<tr>
+<td>信頼</td>
+<td>相手について知らないことを抱えたまま置く・初めから無い（von Krogh）</td>
+<td>相互の信頼が、知らないことを埋め合わせる（von Krogh）</td>
+<td>まず築く・冗長性で作りやすい</td>
+</tr>
+<tr>
+<td>共通善</td>
+<td>誰の善かの線引き・善いことも人を損なう揺れ（アリストテレス）・不当の仁（西田）</td>
+<td>小さな事業の中の善（西田）</td>
+<td>社会を良くする・人を幸せにする</td>
+</tr>
+</tbody>
+</table></div>
+<p>並べ方は、Claude が原典の記述を読んで整理したものです。原典の著者が、この形で分けているのではありません。</p>
+</details>
+
+</div></details><details class="sec" id="共感は境が消えることか" open><summary>共感は、境が消えることか</summary><div class="secbody">
+
+
+<p><a id="nk-empathy"></a>一つ目は共感です。野中は、共感によって人と人の境が低くなり、知が移る、と書いてきました。</p>
+<p>2000 年の論文は、人は同僚や顧客に共感し、それが人と人のあいだの壁を低くする、と書きます。2021 年の論文は、哲学者フッサールが共感の仕組みを「対化（pairing）」と呼んだ、と紹介し、対になると二人を分ける狭いエゴイズムが消え、直接つながっているように感じる、と続けます。</p>
+<p>フッサールの『デカルト的省察』を読むと、対化は、二つが区別されたまま対になることとして書かれています。二つは、一緒に、かつ別々に与えられます。そのうえで、他者の体験は、私に直に現れることは決してない、とも書きます。共感の研究者ザハヴィは、フッサールが他者の他者性をくり返し強調したこと、対化は共感の最初の層にすぎないことを指摘しています。野中が場と自己超越の出典に挙げる西田幾多郎の『善の研究』も、他人の喜びや憂いを、自他の区別なく直に感じる、と書く一方で、二つの人格が「互に相尊重し相独立しながら」一つになる、とも書きます。</p>
+<p>野中の文に入っているのは、境が消える側です。原典の側には、区別を保つこと、他者には直には届かないこと、が書かれています。境が消えることだけが共感だと読むと、相手と自分を取り違えること（融合や投影）も共感に見えてしまいます。</p>
+<p>pjdhiro は、共感をこう見ています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>共感は、侵入される不快感を伴うフェーズを経て、使いこなせるようになるスキルかもしれない。</p>
+</blockquote>
+<p>この見方は、境が消えることを共感の到達点に置きません。相手が自分の中に入ってくる不快を通ってから扱えるようになるもの、と見ています。共感と融合の違いは、独立ページ「<a href="empathy.html">共感とは</a>」で見ています。</p>
+<details class="acc"><summary>詳しく — 原文の鍵の文</summary>
+
+<ul>
+<li>野中ら 2000：「people empathise with their colleagues and customers, which diminishes barriers between individuals」（p.13）。始まりの場は、共感（sympathising or empathising）で自他の境を超える所、とします（p.16）。</li>
+<li>野中・竹内 2021：「Husserl called this mechanism of empathy "pairing."」（節「Empathizing with others」）。</li>
+<li>フッサール §51：対化の二つは、一緒に、かつ別々に（« ensemble » et « distincts » à la fois）与えられる。§50：他者の体験は、実際に現前することは決してない。</li>
+<li>ザハヴィ 2011：対化は共感の最初の、原始的な層（p.242）。「私たち」が立つのは、互いに呼びかけ答える伝達の行為の中（p.243）。</li>
+<li>西田『善の研究』第四編 第五章「知と愛」・第四編 第四章「神と世界」。</li>
+</ul>
+<p>フッサールの仏訳は、読める写しが利用者の上げたものだけだったので、ここでは、その鍵の文を引くザハヴィ 2011 の論文で確かめた所を中心にしています。</p>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p>Nonaka, I., Toyama, R. &amp; Konno, N. (2000)（<a href="https://doi.org/10.1016/S0024-6301(99)00115-6">DOI</a>。pp.13・16）／Nonaka, I. &amp; Takeuchi, H. (2021)（<a href="https://doi.org/10.1016/j.lrp.2021.102070">DOI</a>。節「Empathizing with others」）／Zahavi, D. (2011). Empathy and mirroring: Husserl and Gallese. In R. Breeur &amp; U. Melle (eds.), <em>Life, Subjectivity &amp; Art</em>, Springer, pp.217–254（<a href="https://cfs.ku.dk/staff/zahavi-publications/Husserl-Gallese.pdf">著者の大学の頁の原稿</a> の本文で確認）／西田幾多郎 (1911).『善の研究』（<a href="https://www.aozora.gr.jp/cards/000182/card946.html">青空文庫</a> の本文で確認。底本は岩波文庫）</p>
+</details>
+
+</div></details><details class="sec" id="愛は育むだけのものか" open><summary>愛は、育むだけのものか</summary><div class="secbody">
+
+
+<p><a id="nk-love"></a>二つ目は愛です。2000 年の論文は、始まりの場から、ケア・愛・信頼・コミットメントが生まれ、人と人のあいだで知が移る土台になる、と書きます。知を生む人は、無私で利他的で、前向きに考える人であるべきだ、とも書きます。</p>
+<p>野中は、愛に哲学者の出典を付けていません。並びに付いた出典は、組織論の研究者フォン・クローの 1998 年の論文で、その論文はケアを論じていて、愛の定義は書かれていません。</p>
+<p>野中が場の出典として引く西田の『善の研究』には、愛を論じた章があります。西田は、愛を、自分を捨てて他に一つになることとし、私を捨てて無私になるほど、愛は大きく深くなる、と書きます。けれども、その無私は、初めから持てる資質ではありません。西田は、神はその最も深い統一を現すには、まず大きく分かれなければならない、と書き、罪を知らない者は本当の愛を知ることはできない、罪悪・不満・苦悩は人が精神的に向上する要件だ、と続けます。本当の自己を知る力は、偽の自己を殺し尽くして一度この世の欲から死んだあとに得られる、とも書きます。</p>
+<p>野中の文の愛は、育む側・土台になる側だけで書かれています。西田の愛には、分かれること・罪・苦悩・偽の自己の死が、愛が深まる条件として入っています。</p>
+<p>pjdhiro は、愛をこう見ています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>愛は、憎しみを抱き込むように、むしろ積極的に憎しみと向き合うことで達成されるかもしれない。</p>
+</blockquote>
+<details class="acc"><summary>詳しく — 原文の鍵の文</summary>
+
+<ul>
+<li>野中ら 2000：始まりの場から「care, love, trust and commitment」が生まれる（pp.16–17）。愛・ケア・信頼・コミットメントを育むことは知識創造の土台だ、とする文に注 42 が付き、出典は von Krogh 1998（p.28）。続けて、知を生む人は無私で利他的（selfless and altruistic）であるべき、と書く（p.28）。</li>
+<li>西田『善の研究』第四編 第五章：「我々が自己の私を棄てて純客観的即ち無私となればなる程愛は大きくなり深くなる」。</li>
+<li>同じ第四編 第四章：「神はその最深なる統一を現わすには先ず大に分裂せねばならぬ」。「罪を知らざる者は真に神の愛を知ることはできない」。</li>
+<li>同じ第三編 第十三章：真の自己を知る力は「この偽我を殺し尽して一たびこの世の欲より死して後蘇る」ことで得られる。</li>
+</ul>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p>Nonaka, I., Toyama, R. &amp; Konno, N. (2000)（<a href="https://doi.org/10.1016/S0024-6301(99)00115-6">DOI</a>。pp.16–17・28）／西田幾多郎 (1911).『善の研究』（<a href="https://www.aozora.gr.jp/cards/000182/card946.html">青空文庫</a>。第三編 第十三章・第四編 第四章・第五章）</p>
+</details>
+
+</div></details><details class="sec" id="ケアは前向きであることか" open><summary>ケアは、前向きであることか</summary><div class="secbody">
+
+
+<p><a id="nk-care"></a>三つ目はケアです。2000 年の論文は、知を生む人が整えるべき条件として、自律・創造的な混沌・冗長性・最小有効多様性と並べて、愛・ケア・信頼・コミットメントを挙げます。2005 年の論文は、同じ並びに安全を足します。並びの一語として置かれていて、ケアが何でできているかは書かれていません。</p>
+<p>野中が付けた出典のフォン・クロー 1998 は、ケアの中身を書いています。ケアは、哲学者メイヤロフの言う、相手が成長し、自分を実現するのを助けることです。フォン・クローは、ケアの次元として、相互の信頼・能動的な共感・助けへの近づきやすさ・寛容な判断・勇気、の五つを挙げます。寛容な判断は、失敗の背景やそのときの心理を考えに入れることで、厳しすぎる判断は次の試みを止めてしまう、と書きます。組織は感情の決まりで感情を抑えるが、学ぶことは良い感情も悪い感情も生むので、ケアはその両方を分かち合うことだ、とも書きます。</p>
+<p>ケアには、代償もあります。フォン・クローは、助ける側が、苦労して得た技を失うのを怖れて自分を守ることを挙げ、弱い雇用の保障・説明の無い解雇・官僚制がケアを壊す、と書きます。そして、ケアと知識創造をつなぐ研究はまだ無く、確かめるのはこれからだ、と著者自身が書いています。</p>
+<p>ここで、出典と野中の文の向きが食い違っている所が一つあります。出典はケアを、悪い感情も分かち合うことと書きます。一方、2000 年の論文は、知を生む人に、前向きに考え、否定的な考えや感じを持つことも口にすることも避けるよう求めています（p.29）。</p>
+<p>pjdhiro は、ケアをこう見ています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>ケアは、非効率で非合理的なことかもしれない。</p>
+</blockquote>
+<p>フォン・クローが挙げた代償（手間・余裕の時間・助ける側の怖れ）は、効率の物差しで測ると、どれも無駄に見えるものです。ケアが並びの一語として置かれると、この非効率の側が見えなくなります。</p>
+<details class="acc"><summary>詳しく — 原文の鍵の文</summary>
+
+<ul>
+<li>野中ら 2000：「autonomy, creative chaos, redundancy, requisite variety, and love, care, trust and commitment」（p.25）。知を生む人は「positive thinkers」であるべきで、否定的な考えと感じを避ける（p.29）。</li>
+<li>von Krogh 1998：ケアの定義はメイヤロフの「to help him grow and actualize himself」（p.137）。五つの次元「mutual trust, active empathy, access to help, lenience in judgment, and courage」（p.137）。学ぶことは「both positive and negative emotions」を生む（pp.137–138）。「An overly harsh judgment could also prevent further experimentation」（p.138）。ケアを壊すもの（p.142）。</li>
+</ul>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p>Nonaka, I., Toyama, R. &amp; Konno, N. (2000)（<a href="https://doi.org/10.1016/S0024-6301(99)00115-6">DOI</a>。pp.25・28・29）／Nonaka, I. &amp; Toyama, R. (2005)（<a href="https://doi.org/10.1093/icc/dth058">DOI</a>。p.432）／von Krogh, G. (1998). Care in Knowledge Creation. <em>California Management Review</em> 40(3), 133–153（<a href="https://doi.org/10.2307/41165947">DOI</a>。<a href="https://www.alexandria.unisg.ch/handle/20.500.14171/60869">ザンクト・ガレン大学のリポジトリの写し</a> の誌面の画像で確認）</p>
+</details>
+
+</div></details><details class="sec" id="信頼はまず築くものか" open><summary>信頼は、まず築くものか</summary><div class="secbody">
+
+
+<p><a id="nk-trust"></a>四つ目は信頼です。1994 年の論文は、自分たちで組み立てるチームは、概念を作り始める前に、まず互いの信頼を築く必要がある、と書きます。情報が重なって共有されていること（冗長性）は、組織の中の欺きを減らし、信頼を作りやすくする、とも書き、経済学者アローの「信頼は社会の仕組みの大事な潤滑油だ」という言葉を引きます。</p>
+<p>フォン・クロー 1998 は、信頼を別の側から書いています。信頼は、相手について欠けている知（動機・好み・約束を守る力など）を埋め合わせるものです。受ける側は、助ける側が助けすぎて自分を無能に見せることはない、と信じる必要があります。そして注で、信頼は関係の始めには与えられておらず、築けるとしても、長い時間をかけて築くものだ、と書きます。</p>
+<p>野中の文では、信頼は、チームがまず築くもの、場から生まれるもの、として先に置かれます。フォン・クローの側には、知らないことを抱えたまま置くこと、助けすぎで傷つける危うさ、築けないこともあること、が書かれています。</p>
+<p>pjdhiro は、信頼をこう見ています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>信頼は、ロスの悲しみの受容の先でしか手に入らない、ダンテの煉獄のようなものかもしれない。</p>
+</blockquote>
+<p>この見方では、信頼は、何かを失う悲しみを受け容れたあとに来るものです。まず築いて土台にするものとは、置かれる順が逆になります。信頼が、期待や理想化とどう違って見えるかは、「Love駆動開発と呼びたいもの β」の「<a href="love-driven-dev.html#ldd-discern">信頼と似た感じは、なぜ見分けにくいのか</a>」から続く章で見ています。</p>
+<details class="acc"><summary>詳しく — 原文の鍵の文</summary>
+
+<ul>
+<li>野中 1994：チームはまず互いの信頼を築く必要がある（p.24）。「trust is a critical lubricant in social systems」（p.29、Arrow 1974 の引用）。</li>
+<li>von Krogh 1998：信頼は相手について欠けた知を埋め合わせる。助けすぎ（overhelping）をしないと信じる必要がある（p.137）。注 25：「Not given at the outset of a relationship, trust must be built up (if at all possible)」（p.152）。</li>
+</ul>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p>Nonaka, I. (1994)（<a href="https://doi.org/10.1287/orsc.5.1.14">DOI</a>。pp.24・29）／von Krogh, G. (1998)（<a href="https://doi.org/10.2307/41165947">DOI</a>。p.137・p.152 の注 25）</p>
+</details>
+
+</div></details><details class="sec" id="共通善は誰にとっての善か" open><summary>共通善は、誰にとっての善か</summary><div class="secbody">
+
+
+<p><a id="nk-common-good"></a>五つ目は共通善です。2021 年の論文は、共通善を最大にすることは、株主の価値を最大にすることと同じくらい戦略にとって大事だ、と書きます。戦略の目標は会社の狭い利益を超えて、共通善を追うことでなければならない、とも書きます。</p>
+<p>Claude は初め、共通善についても、原典にある条件が野中の文で落ちている、と読みました。pjdhiro はその読みを「ずれている」とし、善という言葉も人によって違う、と答えました。五つの言葉に共通しているのは、比較的高い発達段階の語彙を、低い段階で解釈して使うことから来る誤解だ、という見方です。</p>
+<p>野中が実践知の出どころに挙げるアリストテレスを読むと、共通善は、誰の善かの線引きの中で言われています。『政治学』は、共通の利益を目指す国のあり方を正しい形とし、支配する者だけの利益を目指す形を、逸れた形と呼びます。『ニコマコス倫理学』は、富や勇気のような善いものでさえ人を損なうことがあるので、善については、おおよその輪郭で示すことで満足しなければならない、と書きます。実践知は、善い人でなければ持てない、とも書きます。西田の『善の研究』は、世界的な大事業をしなければ最大の善でないように思うのは、善の本質と外の殻を取り違えている、と戒め、どれほど小さな事業でも、人類一味の愛情から働いている人は偉大な人格を実現している、と書きます。仁でさえ、当を得なければ悪い結果を生む、とも書きます。</p>
+<p>同じ「共通善」の語が、ある人には社会全体の善に、ある人には自分の属する集団の善に、ある人には大きな事業の看板に読めます。野中の文には、どの読みを退けるかが書かれていません。</p>
+<p>pjdhiro は、共通善をこう見ています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>共通善とは、善悪判断のない、現世的な利得は何もない、侘び寂びのような、華やかさも豪華さもない足元の現実に見つける、悪も含んだ、当たり前のありのままのものかもしれない。</p>
+</blockquote>
+<details class="acc"><summary>詳しく — 原文の鍵の文</summary>
+
+<ul>
+<li>野中・竹内 2021：「Maximizing the common good should be equally important to strategy as maximizing shareholder value.」（Introduction の頭の箇条）。「It must be about pursuing the common good」（節「"Inside-out" approach to strategy」）。</li>
+<li>アリストテレス『政治学』第 3 巻 第 7 章：逸れた形は、どれも「the common good of all」を目指していない。第 9 章：国は、生きるためでなく、善く生きるためにある。</li>
+<li>『ニコマコス倫理学』第 1 巻 第 3 章：「men have been undone by reason of their wealth, and others by reason of their courage」。第 6 巻 第 12 章：「it is impossible to be practically wise without being good」。</li>
+<li>西田『善の研究』第三編 第十三章：「いかに小さい事業にしても、常に人類一味の愛情より働いている人は、偉大なる人類的人格を実現しつつある人」。第三編 第五章：「不当の仁はかえって悪結果を生ずることもある」。</li>
+</ul>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p>Nonaka, I. &amp; Takeuchi, H. (2021)（<a href="https://doi.org/10.1016/j.lrp.2021.102070">DOI</a>）／Aristotle, <em>Politics</em> III, tr. B. Jowett（<a href="http://classics.mit.edu/Aristotle/politics.3.three.html">MIT の Internet Classics Archive</a> の英訳の本文で確認）／Aristotle, <em>Nicomachean Ethics</em> I・VI, tr. W. D. Ross（<a href="http://classics.mit.edu/Aristotle/nicomachaen.1.i.html">第 1 巻</a>・<a href="http://classics.mit.edu/Aristotle/nicomachaen.6.vi.html">第 6 巻</a>。MIT の Internet Classics Archive の英訳の本文で確認）／西田幾多郎 (1911).『善の研究』（<a href="https://www.aozora.gr.jp/cards/000182/card946.html">青空文庫</a>）</p>
+</details>
+
+
+
+<p>前の部で、五つの言葉の分ける段は、どれも人の心が思いどおりにならない側だと見ました。この部では、言葉を受け取る心と、言葉を支えていた条件を見ます。</p>
+</div></details><div class="reader-part" id="part-3"><p class="reader-part__no">第三部</p><p class="reader-part__title">なぜ、そのとおりにならないのか</p></div><details class="sec" id="人の心は思ったほど立派にできていない" open><summary>人の心は、思ったほど立派にできていない</summary><div class="secbody">
+
+
+<p><a id="nk-mind"></a>経営の論が、なぜ、そのとおりにならないのか。pjdhiro は、その答えの一つを、人の心の側に見ています。野中の 8 本の論文に、防衛機制・精神分析・成人の発達を指す語が一つも出てこないことを、Claude が確かめたときの言葉です。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>私が心理のところでたくさん細かく書いたのは、その誤解が大きく効くからだと思います。人生を生きるのに、宇宙の量子論や相対性理論に深い洞察を持たずに、浅い解説記事でも十分、判断を間違わないし、経営学のさまざまな知見は有効だけれども、コンサルティングなどのサービスに溢れている。一方で、致命的に差がつくのは、発達段階と防衛機制で、受け止め方も解釈も真逆になる。むしろ、野中が説明しないので、私が探索せざるを得なかったのが、精神分析論と発達理論という感じです。</p>
+</blockquote>
+<p>心の防衛（防衛機制）は、不安や痛みから自分を守る心のしくみで、本人には見えないところで働きます。発達の段階は、人が自分と世界をどれほど細かく分けて見られるかが、年齢を重ねても人によって違う、と見る論です。段階が違えば、何が脅威に見えるかも、同じ言葉が何を指すかも変わります。</p>
+<p>野中の論文では、知を生む人の心は、前向きで、無私で、仲間を信じる人として描かれています。その心が思いどおりに動かないときのことは、論の外に置かれています。</p>
+<p>防衛と段階のくわしい説明は、「Love駆動開発と呼びたいもの β」の「<a href="love-driven-dev.html#ldd-defense">心は、自分を守るしくみを持っている</a>」と「<a href="love-driven-dev.html#ldd-stages">発達の段階で、何が脅威に見えるかが変わる</a>」、独立ページの「<a href="defense-mechanisms.html">心理的防衛機制とは</a>」「<a href="developmental-stages.html">精神の発達段階とは</a>」で見ています。</p>
+<details class="acc"><summary>詳しく — 低い段階の読みを当てても、筋が通ってしまう</summary>
+
+<p>pjdhiro は、五つの言葉を、わざと手前の段階の読みに置き換えてみる、という問いを立てました。共感を、母子が分かれていない融合や投影と読む。愛とケアを、おせっかいと読む。信頼を、理想化や期待と読む。共通善を、派閥の価値観と読む。そう読み替えても、野中の理屈は成り立ってしまうのではないか、という問いです。</p>
+<p>Claude がその読みを野中の文に当てると、野中の文の中には、その読みを退ける文がほとんどありませんでした。歯止めとして読めるのは、共通善の「会社の狭い利益を超える」と、1996 年の論文の、日本型の弱みとして集団の思い込み（group think）を挙げる注意の二つです。原典の側には、どの言葉にも退ける文があります（区別を保つ・相独立しながら・助けすぎない・築くには長い時間がかかる・少数の利益は逸れた形）。分ける段が、そのまま歯止めになっています。</p>
+</details>
+
+</div></details><details class="sec" id="良い言葉が心の守りとして働くとき" open><summary>良い言葉が、心の守りとして働くとき</summary><div class="secbody">
+
+
+<p><a id="nk-shield"></a>良い言葉は、いつも前へ進めるとは限りません。2000 年の論文は、表出化（暗黙知を言葉にする段）を説明して、人はグループに打ち込み、グループと一つになることで、自分の内と外の境を超える、と書きます。</p>
+<p>同じ「グループと一つになる」が、どう働くかは、言葉を使う人の段階で変わります。pjdhiro は、こう見ています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>実際のところ、野中は間違っていなくて、専門家はその次の段階に統合されるべき、という意味で使っているはず。だから、社長が朝礼で使うスローガンとしては良い。でも、上司の発達段階が日和見的で、部下が専門家の場合、グループに所属するというのは、引き戻しになるでしょう。それでも上司の側は、野中に従っていると言い訳ができる。これが問題。</p>
+</blockquote>
+<p>野中の言葉の向きは、専門を持った人が、専門を手放さずに、より大きな目的の中で働くことです。ところが、言葉を使う人がその向きより手前にいると、同じ言葉が、専門に深まった人を集団の側へ引き戻す言葉になります。そして、引き戻している側は、自分は理想どおりのことをしている、と言えてしまいます。心の防衛の言葉で言えば、合理化（都合のよい理由づけ）として働きます。</p>
+<p>言葉が悪いのではありません。言葉に、どちらの向きで使われているかを見分ける歯止めが書かれていないので、言い訳を止められない、ということです。</p>
+<details class="acc"><summary>詳しく — 原文の鍵の文</summary>
+
+<ul>
+<li>野中ら 2000：「an individual transcends the inner- and outer-boundaries of the self by committing to the group and becoming one with the group」（p.13）。</li>
+</ul>
+</details>
+
+</div></details><details class="sec" id="分けることに値打ちはあるか" open><summary>分けることに、値打ちはあるか</summary><div class="secbody">
+
+
+<p><a id="nk-value-of-separating"></a>前の章の問題は、分けることの値打ちをどう置くか、という問いにつながります。pjdhiro は、野中の論が、包む側に値打ちを置いて、分ける側に置いていないのではないか、と問いました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の問い：</strong>分離と包摂でいうと、包摂を良いとしている。日和見でも対立よりは良い、専門性に引きこもるのでなく、より大きな目的や価値に向かおう、という。分離することの価値が無い。だから、専門家の育成の足を引っ張ったりしていないか。</p>
+</blockquote>
+<p>野中の論文には、専門の囲いを越えることを勧める文が、いくつもあります。1994 年の論文は、人を部署から部署へ戦略的に回して、事業を多くの視点から分からせることを勧め、新しい知を生む責任を、ある部署や専門家の集団だけが持つことはない、と書きます。2000 年の論文は、人の配置を頻繁に入れ替え、分野をまたぐ知を得させることを勧めます。</p>
+<p>分けることの置き場も、論文の中にはあります。1994 年の論文の「ハイパーテキスト型」の組織は、分業と専門化を、日々の業務を効率よく回す官僚制の層に置いて残しています。けれども、知を生む側では、専門に深まることや、集団に馴染まないことに、値打ちは置かれていません。野中ら 1996 は、暗黙知を重んじる日本型の弱みとして、集団の思い込みと、過去の成功への過剰な適応を挙げています。弱みは見えているのに、それを退ける条件（馴染まない人を、どう抱えるか）は、規範の中に書かれていません。</p>
+<p>このページの仮説は、分ける段も、知が生まれる過程の一部だ、というものです。☯️ の黒の側が無ければ、白の側も包むことができません。</p>
+<details class="acc"><summary>詳しく — 原文の鍵の文</summary>
+
+<ul>
+<li>野中 1994：「No one major department or group of experts has the exclusive responsibility for creating new knowledge」（p.30）。戦略的な配置転換（strategic rotation、p.29）。ハイパーテキスト型の組織（p.33）。</li>
+<li>野中ら 1996：日本型は「group think」と「overadaptation to the past success」に陥りうる（p.215）。</li>
+<li>野中ら 2000：人の配置を頻繁に入れ替える（p.28）。</li>
+</ul>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p>Nonaka, I. (1994)（<a href="https://doi.org/10.1287/orsc.5.1.14">DOI</a>。pp.29・30・33）／Nonaka, I., Umemoto, K. &amp; Senoo, D. (1996)（<a href="https://doi.org/10.1016/0160-791X(96)00001-2">DOI</a>。p.215）／Nonaka, I., Toyama, R. &amp; Konno, N. (2000)（<a href="https://doi.org/10.1016/S0024-6301(99)00115-6">DOI</a>。p.28）</p>
+</details>
+
+</div></details><details class="sec" id="その規範はどんな条件の上で回っていたか" open><summary>その規範は、どんな条件の上で回っていたか</summary><div class="secbody">
+
+
+<p><a id="nk-conditions"></a>言葉に歯止めが無いのに、規範が回っていたのなら、言葉の外に、それを支えるものがあったはずです。pjdhiro は、それを時代の条件に見ています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>野中の論は、昭和だからできた、という環境適応的なことがあると思う。江戸からの近代化の過程の中で、円が安かったこともある。我慢しなければならないほど個人が追い詰められていた、敗戦の受容のムードもあったでしょう。精神鍛錬も重視されていた。武道や禅のような倫理の基盤と、教育の環境があった。</p>
+</blockquote>
+<p>これは pjdhiro の推測です。野中の論文の中にも、規範の外の条件に触れた所が、少しだけあります。1996 年の論文は、日本型の知識創造の特徴として、あいまいな組織の意図と、情報と仕事の高い冗長性を挙げ、会社の立て直し（リストラクチャリング）が人と人の信頼を下げた、とよく言われる、と書きます。フォン・クロー 1998 は、弱い雇用の保障や説明の無い解雇がケアを壊す、と書きます。雇用が続くこと、人が辞めずに重なって働くこと、が規範の下にあった、と読めます。</p>
+<p>時代の条件を、本文の読める研究と統計で照らすと、推測はおおむね当たっていますが、条件の多くは「日本の会社の全体」より狭いものでした。長く勤める雇用（終身雇用）の中にいたのは、労働力のおよそ 2 割（大企業と官公庁の男性の正社員）です。その中でも、余った人を窓際に置いて、自分から辞めるよう仕向けることがありました。円は、高度成長の途中から割安だったと見られています。会社に家族のような雰囲気を求める人は、2018 年の調査で 46% と、調べ始めてから最も少なくなりました。</p>
+<p>だから、野中の規範が前提にした条件は、「日本の会社の全体」や「日本の伝統」としてより、「大企業の男性の正社員の、高度成長期の働き方」として見るほうが、資料と合います。</p>
+<p>このページの仮説は、規範の言葉は、こうした条件の上で回っていた働きを言葉にしたもので、条件が変わると、同じ言葉がスローガンとしてだけ残る、というものです。</p>
+<details class="acc"><summary>詳しく — 時代の条件を照らした資料</summary>
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>推測</th>
+<th>資料で見えたこと</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>長く勤める雇用の範囲</td>
+<td>Ono（2007 の改訂版）：終身雇用は、日本の労働力の「roughly 20 percent」を覆う。官公庁と従業員 500 人以上の会社の男性の正社員は、2003 年に 19.2%</td>
+</tr>
+<tr>
+<td>馴染まない人の行き先</td>
+<td>伊藤 2017：1978 年ころから「窓際族」の語が広まり、窓際に社内隔離された人は、自ずと退職を選んでいった。それは人件費を減らすための策だった</td>
+</tr>
+<tr>
+<td>円が安かった</td>
+<td>Eichengreen &amp; Hatase 2005：戦後の初めは割高で、高度成長の途中で割安に転じた、というのが大方の見方（pp.10–11）。浅井 2011 は、設定のときから割安だったとする説に根拠がある、と見る</td>
+</tr>
+<tr>
+<td>家族のような会社</td>
+<td>統計数理研究所の国民性調査（第 14 次・2018）：「家族的な雰囲気のある会社」に勤めたい人は 46% で過去最低。一方、仕事で無理を言うが面倒もよく見る課長は、長く 8 割台の支持を集めてきた（第 14 次で 74%）</td>
+</tr>
+</tbody>
+</table></div>
+<p>精神鍛錬や武道・禅の教育と、野中の規範とのつながりは、本文の読める資料で確かめられていません。</p>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p>Nonaka, I., Umemoto, K. &amp; Senoo, D. (1996)（<a href="https://doi.org/10.1016/0160-791X(96)00001-2">DOI</a>。pp.215–217）／von Krogh, G. (1998)（<a href="https://doi.org/10.2307/41165947">DOI</a>。p.142）／Ono, H. (2007). Lifetime employment in Japan: Concepts and measurements. SSE/EFI Working Paper No.624（<a href="https://swopec.hhs.se/hastef/papers/hastef0624.pdf">ストックホルム商科大学の論文集の写し</a> の本文で確認。雑誌版は <em>J. Japanese Int. Economies</em> 24(1), 2010）／伊藤健市 (2017).「『追い出し部屋』が教えてくれること」『関西大学商学論集』61(4)（<a href="https://kansai-u.repo.nii.ac.jp/record/9286/files/KU-1100-20170310-01.pdf">関西大学の機関リポジトリ</a> の本文で確認）／Eichengreen, B. &amp; Hatase, M. (2005). Can a rapidly-growing export-oriented economy smoothly exit an exchange rate peg? NBER WP 11625（<a href="https://www.nber.org/papers/w11625.pdf">NBER</a> の本文で確認）／浅井良夫 (2011).「360円レートの謎」『成城・経済研究』192（<a href="https://seijo.repo.nii.ac.jp/record/2283/files/KJ00007237720.pdf">成城大学の機関リポジトリ</a> の本文で確認）／統計数理研究所国民性調査委員会 (2021).「日本人の国民性 第14次全国調査 結果の概要」（<a href="https://www.ism.ac.jp/survey/KSResults/ResultSummary.pdf">統計数理研究所</a> の本文で確認）</p>
+</details>
+
+
+
+<p>前の部では、言葉がそのとおりにならない理由を、心と条件の側に見ました。この部では、冒頭の対になる問い、それでも、なぜ、そこそこうまくいっているのか、に答えます。</p>
+</div></details><div class="reader-part" id="part-4"><p class="reader-part__no">第四部</p><p class="reader-part__title">それでも、なぜ、そこそこうまくいっているのか</p></div><details class="sec" id="未熟な守りのもとでも知は生まれる" open><summary>未熟な守りのもとでも、知は生まれる</summary><div class="secbody">
+
+
+<p><a id="nk-still"></a>言葉に歯止めが無く、低い段階の読みでも筋が通ってしまうなら、その読みのままでも、知は生まれるのでしょうか。pjdhiro は、生まれることがある、と見ています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>未成熟の防衛機制でも、知識創造が成り立つかのようです。実際、そういうこともあるでしょう。なので全体としては曖昧だけれど、間違ってはいない。</p>
+</blockquote>
+<p>このページは、未熟な守りのもとで起きた知識創造も、知識創造の一つとして置きます。良いことだけで進むのでなく、悪いことと衝突しながら、包み込むように進むのが、創造の形だと pjdhiro は見ているからです。うまくいかなかった統合も、統合の一つです。</p>
+<p>野中の言葉が、多くの人に受け入れられてきたのは、どの段階の人が読んでも、自分の読みで筋が通るからだ、と読めます。それは、言葉の弱さでもあり、強さでもあります。違いは、いま、どの段階の読みで知識創造が起きているかを見分けられるかどうかです。見分けられれば、同じ言葉を、前へ進める向きで使い直すことができます。</p>
+<details class="acc"><summary>寄り道 — 規範の言葉が、多くの人に届くこと</summary>
+
+<p>野中の文を、成人の発達の段階の表に当てると、自分を守るために奪い合う段階から、集団に属して協力する段階へ向かわせる規範に当たる、と Claude は読みました。2000 年の論文の、前向きに考え、否定的な感じを避ける、という文の形は、発達の研究者クック＝グロイターが順応の段階の感情の扱いとして書く形（否定的な気持ちを、過度に前向きな熱意で打ち消す）と重なります。これは文の形の重なりで、書き手の段階を測ったものではありません。表は「Love駆動開発と呼びたいもの β」の「<a href="love-driven-dev.html#ldd-stages">発達の段階で、何が脅威に見えるかが変わる</a>」にあります。</p>
+</details>
+
+</div></details><details class="sec" id="家族を営むような規範が会社を支えてきたのか" open><summary>家族を営むような規範が、会社を支えてきたのか</summary><div class="secbody">
+
+
+<p><a id="nk-family"></a>うまくいってきた理由の二つ目として、pjdhiro は、野中の規範が、家族を営む規範と同じ形をしていることを挙げます。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>家族の経営として馴染む考え方だと思います。クビにしない、全員で子孫の代まで。家族は野中の論のような規範を持っている。子どもたちを勘当して追い出すことはない。妻と離婚して解雇することはない。家の部屋や庭の使い方も、機械的な割り振りでなく、必要に応じて動的に決めている。ルールだけで動かしていない。悪い考えではないと思う。昭和は、江戸時代までのオイエを守るようなことだったと推測しています。</p>
+</blockquote>
+<p>2021 年の論文も、世代をまたいで続くことを、知恵の印として置いています。母の知恵は、物語として世代をまたいで渡され、日本では一代さかのぼって「おばあちゃんの知恵袋」と呼ばれる、と書きます。日本の会社の長寿も挙げます。日本の会社は、株主の価値を最大にしない、費用を減らすために解雇しない、と短い目で批判されてきたが、歴史は長い目で見ることが報われると示してきた、と書き、100 年を超えて続く会社がおよそ 2 万社ある、と続けます。</p>
+<p>家族を営む駆動と会社を営む駆動が、一つの器に重なっていた、と読むことができます。プロジェクトの駆動源を家族まで入れて見る「Love駆動開発と呼びたいもの β」の見方では、家族を営む規範は、良いものとして置けます。</p>
+<p>ただ、pjdhiro は、続けて問いを立てています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の問い：</strong>それが、株主資本主義のルールで戦えるのか？　終身雇用を守るために、どんなことが必要か？　それに対する答えがない。</p>
+</blockquote>
+<p>2021 年の論文は、この問いに、二つの形で答えています。一つは、長く続いてきた会社の数です。もう一つは、これから書く新しい資本主義（wise capitalism）の望む姿の箇条で、最後は、知りえない明日への信念の跳躍が要る、と結ばれます。終身雇用を、株主に返すルールの中でどう保つか、という仕組みの段は、この論文にはありません。この問いへの pjdhiro の案は、巻末の「<a href="#nk-ownership">株を配る案へのレビュー</a>」に置きました。</p>
+<details class="acc"><summary>詳しく — 長く続いた会社の数を、どう読むか</summary>
+
+<ul>
+<li>野中・竹内 2021：「But history has shown that it pays to have a long-term view.」（節「"Inside-out" approach to strategy」）。続けて、100 年を超える会社がおよそ 2 万社、1000 年を超える会社が 5 社、と数を挙げます（Funabashi 2013 を引く）。</li>
+<li>長く続いた会社の数は、続かなかった会社を数に入れていません。生き残った例だけを数える形なので、長い目で見るやり方が報われた根拠としては、弱いと Claude は読みます。</li>
+<li>同じ論文は、新しい資本主義の望む姿を箇条で並べ、「leaps of faith into the vistas of the unknowable tomorrow」が要る、と結びます（節「Wise capitalism」）。</li>
+</ul>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p>Nonaka, I. &amp; Takeuchi, H. (2021)（<a href="https://doi.org/10.1016/j.lrp.2021.102070">DOI</a>。節「Practical wisdom atop knowledge」「"Inside-out" approach to strategy」「Wise capitalism」）</p>
+</details>
+
+</div></details><details class="sec" id="分けてから包む力は鍛えられるか" open><summary>分けてから包む力は、鍛えられるか</summary><div class="secbody">
+
+
+<p><a id="nk-practice"></a>ここまでで、言葉を支えていた条件の一つに、精神鍛錬と、武道や禅のような倫理の教育があった、と pjdhiro は推測していました。その条件が今は無いなら、何で補うのか。昭和の条件を挙げた話の続きで、pjdhiro は、自分の論が心理を細かく書く理由を、こう言いました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>なので、心理発達の視点を重視して書かなければならなかった。不足してるから。Love駆動開発は、あらゆる発達段階の人に向けて構成されなければならない。誤解しないよう。精神鍛錬のハウトゥーも必要なのです。</p>
+</blockquote>
+<p>野中の言葉を前へ進める向きで使うには、言葉を受け取る人が、自分の心の動きを分けて見られることが要ります。いま湧いている共感は、相手の世界を感じているのか、自分を相手に映しているのか。いま感じている信頼は、相手を見ているのか、相手に期待を預けているのか。分けて見たうえで、どちらも自分の中のこととして包む力です。</p>
+<p>その鍛え方は、「Love駆動開発と呼びたいもの β」の「<a href="love-driven-dev.html#ldd-practice">どう鍛えるのか、どう修行するのか</a>」で見ています。心を静めて、湧いた思いや感情を心で指さしていく止観、守りをゆるめて受け容れること、在ることと分けることの往復です。</p>
+
+
+</div></details><div class="reader-part" id="part-5"><p class="reader-part__no">第五部</p><p class="reader-part__title">野中の理想を目指すときの注意点</p></div><details class="sec" id="注意点はどこにあるか" open><summary>注意点は、どこにあるか</summary><div class="secbody">
+
+
+<p><a id="nk-cautions"></a>冒頭の二つの問いに答えます。経営の論が、そのとおりにならないのは、言葉を受け取る心と、言葉を支える条件が、言葉と一緒に書かれていないからだ、と考えます。それでも、そこそこうまくいってきたのは、未熟な守りのもとでも知は生まれ、家族を営むような規範と、それを支える雇用の条件があったからだ、と考えます。</p>
+<p>pjdhiro は、野中の論について、こう言います。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>野中が悪いと言っているのではなく、言葉足らずだと言いたいのです。</p>
+</blockquote>
+<p>だから、野中の理想を目指すときの注意点は、悪い所を探すことでなく、言葉の足りない所を見つけて補うことにあります。現場で野中の言葉を使うときに当てられる問いを、八つ並べます。</p>
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>問い</th>
+<th>何を見るか</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>言葉に歯止めがあるか</td>
+<td>その言葉を手前の段階の読み（融合・おせっかい・理想化や期待・派閥の価値観）に置き換えても、筋が通ってしまわないか</td>
+</tr>
+<tr>
+<td>分ける段があるか</td>
+<td>包む側だけが残っていないか。落ちているのは、心が思いどおりにならない側ではないか</td>
+</tr>
+<tr>
+<td>誰の段階で読まれるか</td>
+<td>言葉の向きと、言葉を使う人の段階は合っているか。引き戻しに使われていても、理想どおりだと言えてしまわないか</td>
+</tr>
+<tr>
+<td>出典と同じ向きか</td>
+<td>言葉に付いた出典は、同じことを言っているか。逆のことを書いていないか</td>
+</tr>
+<tr>
+<td>条件が書かれているか</td>
+<td>その規範が成り立つ条件（雇用が続く・人が重なって働く など）が、規範と一緒に書かれているか。その条件が、誰の、いつの働き方のものか</td>
+</tr>
+<tr>
+<td>問題に仕組みで答えているか</td>
+<td>問題への答えが、過去の例と望む姿だけになっていないか</td>
+</tr>
+<tr>
+<td>分けることに値打ちがあるか</td>
+<td>専門に深まる・集団に馴染まない、という動きに、値打ちが置かれているか</td>
+</tr>
+<tr>
+<td>誰に心地よいか</td>
+<td>変わらずにいられる人にとって心地よいことが、支持の理由になっていないか</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>どの問いも、野中の理想を退けるためのものではありません。理想は同じで、前途は多難です。この問いは、その多難な所に先に目印を立てておくためのものです。</p>
+
+
+</div></details><div class="reader-part" id="part-6"><p class="reader-part__no">巻末</p></div><details class="sec" id="まだ分からないこと" open><summary>まだ分からないこと</summary><div class="secbody">
+
+
+<p><a id="nk-open"></a>- <strong>野中は、一人の内面にも同じ形を見ているか</strong>：pjdhiro は、起業家・組織・社会は同じ形がくり返す入れ子（フラクタル）で、起業家の内面の細かな心の動きも同じ形で相似する、という強い仮説を持っています。野中の 8 本の論文には fractal の語は出てきません（Claude が語で探した）。個人から組織、社会へと広がるらせんが、一人の心の内側にも同じ形であるのかは、まだ分かりません。</p>
+<ul>
+<li><strong>株主資本主義のルールで、家族のような規範を保てるか</strong>：pjdhiro の案と、そのレビューを次の章に置きました。</li>
+<li><strong>共感とケアの拾い方</strong>：第二部の共感とケアの章で、原典にあって野中の文に無いものとして拾ったことが、pjdhiro の見方としっくりくるかは、まだ分かりません。</li>
+</ul>
+</div></details><details class="sec" id="株を配る案へのレビュー" open><summary>株を配る案へのレビュー</summary><div class="secbody">
+
+
+<p><a id="nk-ownership"></a>第四部で、終身雇用を株主資本主義のルールの中でどう守るのか、という pjdhiro の問いを見ました。pjdhiro は、野中の論が、会社の成功の果実を長く勤める雇用で分け合う形を前提にしている、と見て、雇用でなく所有で分け合う案を出しています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の案：</strong>従業員持株会などで対応する、などの具体的な提案も同時に提起すべきなんですよね。おそらく。ポイントは株に変え、給料は株で支払い、雇用は守られなくても配当で補填して、と。株主になる権利は誰にでもあるのだから。顧客と従業員に株を配ればいいんじゃ。</p>
+</blockquote>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の問い：</strong>Claude のレビューが欲しい。私は解決策のアイディアだけしか持っていない。本当にそれが解決策として機能しているかは知らない。</p>
+</blockquote>
+<p>ここからは Claude のレビューです。案を勧めるためでも、退けるためでもなく、すでに試されたことと、研究が言う条件と落とし穴を並べます。</p>
+<p>pjdhiro の案は、三つに分けて見られます。従業員持株会のように働く人が株を持つ案、給料を株に替えて雇用の代わりに配当で補う案、顧客と従業員に株を配る案、です。</p>
+<p><strong>働く人が株を持つことは、平均では少し良い。</strong> 従業員所有の研究を見渡した Kruse は、従業員所有は生産性・賃金・雇用の安定・会社の存続と結びつくが、効果はばらつき、因果を固く言うのは難しい、とまとめています。もともと安定した会社が従業員所有を選んでいるのかもしれない、とも書きます。日本でも、東証の上場会社のデータで、持株会の一人当たりの保有が増えると、生産性に控えめながら意味のある正の効果が見られた、という研究があります（Kato・Miyajima・Owan 2016）。ただし、持株会の保有は、多くの会社で発行済みの株の 1% に届きません。2025 年 3 月末の東証の調べでは、持株会の加入者は 330.2 万人で、持株会の保有は対象の会社の時価総額の 0.91% です。働く人は株主にはなっていますが、決める側の声にはなりにくい大きさです。持株会は会社の側から安定株主として見られてきた面もあり、保有が増えると経営への規律が弱まりうる、という指摘もあります（大和総研 2024）。</p>
+<p><strong>給料を株に替える形は、研究者がいちばん強く注意する形です。</strong> Kruse は、自社の株は、ふつうは給料の上乗せとして渡され、代わりではない、と書きます。そして、働く人が財産の多くを自社の株で持つとき、とくに株が給料や手当の代わりになるとき、大きすぎる危うさを負う、と書きます。Blasi・Kruse・Markowitz は、経済的に不安定な働き手では、従業員所有の良い効果がどれも逆向きになりうる、と書き、ユナイテッド航空の従業員による買収がつまずいた理由の一つに、給料を株に替えたことを挙げています。会社が傾くときには、雇用と配当と株価が同時に落ちます。エンロンでは、2000 年末に、確定拠出年金の資産の 62% が自社の株で、その株価は 80 ドルを超えていたのが、1 年ほどで 70 セントを下回りました。「雇用は守られなくても配当で補う」は、配当が同じ会社の業績から出るかぎり、補いが要る場面でいちばん効きにくい、と読めます。同じ研究者たちは、自社の株を財産の 10〜15% ほどに抑えれば、分散を大きく損なわない、とも書きます。</p>
+<p><strong>顧客と従業員の両方を持ち主にする形は、例が少ない。</strong> 法学者の Hansmann は、持ち主の多い会社では、持ち主の利害がそろっていることが、ほぼ例外の無い決まりで、利害の違う種類の人を持ち主に並べることはまれだ、と書きます。顧客が持ち主の会社でも、持ち主の声は名目になりやすい、という例があります。相互保険の契約者は、実際には経営を統制できない、と Hansmann は書きます。英国の協同組合グループの統治の外部レビュー（Myners 2014）は、800 万人の会員のうち投票するのは 3% ほどで、民主的な統治が欠けていると書きました。それでも、例はあります。スペインのモンドラゴンの小売のエロスキは、理事会も総会も、消費者の会員と働く会員が半々で構成する、と自社の報告に書いています。両方を持ち主にした形が、どの条件で効くのかをまとめた研究は、見つけられていません。</p>
+<p><strong>Claude の読み。</strong> 三つの案は、どれもすでにある形の近くにあります。資料がいちばん支えるのは、給料の上乗せとして、財産の一部を、働く人が持つ形です。そのときでも、効くのは、決めることへの参加・雇用の保障・訓練のような支えと組になったときで、支えが無いと満足が下がり、辞めたい気持ちが強まることもある、と Kruse は書きます。所有を入れ替えるだけでは、声も雇用の守りもついてこない、というのが資料の形です。だから、この案を野中の論に足すなら、所有の形だけでなく、参加・訓練・財産の分散を組にした形として書く必要があると考えます。</p>
+<p>雇用の長さを所有の形で支える例としては、財団が会社を持つデンマークの形のほうが、直接の証拠を持っています（Thomsen ほか 2018）。財団が持つ会社は、所有が安定し、長く人を雇い、長く続く傾向がある、と書かれています。ただし、持ち主は顧客でも従業員でもなく、因果の向きはまだ決まっていない、と著者自身が書いています。もう一つの道として、株主のルールの外から、法律や規制で働く人を守るべきだ、とする論もあります（Bebchuk &amp; Tallarita 2020）。この論は、野中・竹内 2021 が新しい資本主義への動きとして紹介した米国の経営者団体の 2019 年の声明について、署名した会社に問い合わせ、答えた 48 社のうち 47 社が、取締役会の承認なしに経営者だけで署名を決めていた、と報告しています。</p>
+<details class="acc"><summary>詳しく — 原文の鍵の文</summary>
+
+<ul>
+<li>Kruse 2022（p.1）：「the effects are dispersed and causation is difficult to firmly establish」。「Employer stock tends to come on top of, rather than substitute for, regular employee compensation」。「Workers can be exposed to excessive financial risk, especially when employee ownership is a large share of a worker's wealth, and when it substitutes for other pay and benefits.」支えが無いと満足が下がる（p.8）。</li>
+<li>Blasi, Kruse &amp; Markowitz 2010：「excessive worker exposure based on a worker's level of economic insecurity has the capability of reversing every single positive individual and workplace outcome」（pp.126–127）。「ESOPS are less dangerous as long as they do not involve wage or benefit concessions」（p.115）。「A small but meaningful employee stock ownership level will not significantly deteriorate the diversification of employee portfolios.」（p.126）。</li>
+<li>Hansmann 2006（草稿）：持ち主の利害がそろうのは「overwhelming rule」（p.16）。「It is rare to see ownership in the hands of a heterogeneous class of patrons」（p.24）。</li>
+<li>Purcell 2002：2000 年末に 401(k) の資産の 62% が自社株（p.1）。</li>
+<li>Thomsen ほか 2018：財団が持つ会社は「stable, long-term employers」（p.184）。因果の向きは未解決（p.192）。</li>
+<li>Bebchuk &amp; Tallarita 2020：問い合わせに答えた 48 社のうち 47 社が取締役会の承認を得ていない（pp.130–131）。</li>
+</ul>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p>Kruse, D. (2022). Does employee ownership improve performance? <em>IZA World of Labor</em> 311v2（<a href="https://doi.org/10.15185/izawol.311.v2">DOI</a>。<a href="https://wol.iza.org/uploads/articles/613/pdfs/does-employee-ownership-improve-performance.pdf?v=1">IZA の PDF</a> の本文で確認）／Blasi, J., Kruse, D. &amp; Markowitz, H. (2010). Risk and Lack of Diversification under Employee Ownership and Shared Capitalism. In D. Kruse, R. Freeman &amp; J. Blasi (eds.), <em>Shared Capitalism at Work</em>, Univ. of Chicago Press, pp.105–136（<a href="https://www.nber.org/system/files/chapters/c8088/c8088.pdf">NBER の章の PDF</a> の本文で確認）／Kato, T., Miyajima, H. &amp; Owan, H. (2016). Does Employee Stock Ownership Work? Evidence from publicly-traded firms in Japan. RIETI DP 16-E-073（<a href="https://www.rieti.go.jp/jp/publications/dp/16e073.pdf">RIETI の PDF</a> の本文で確認。pp.22–23）／日本取引所グループ (2026).「2024 年度従業員持株会状況調査結果の概要」（<a href="https://www.jpx.co.jp/markets/statistics-equities/examination/tvdivq0000001xhe-att/employee_2024.pdf">JPX の PDF</a> の本文で確認）／瀬戸佑基 (2024).「企業から見た従業員持株会の意義」大和総研（<a href="https://www.dir.co.jp/report/research/capital-mkt/securities/20241007_024658.pdf">大和総研の PDF</a> の本文で確認。数は 2023 年 3 月末）／Purcell, P. (2002). The Enron Bankruptcy and Employer Stock in Retirement Plans. CRS Report RS21115（<a href="https://www.everycrsreport.com/files/20020311_RS21115_393ab0c2b87d7edcff49225eacbde3f8f95b2f88.pdf">EveryCRSReport の PDF</a> の本文で確認）／Hansmann, H. (2006). Ownership and Organizational Form（草稿。のちに <em>Handbook of Organizational Economics</em> の章。<a href="https://arken.nmbu.no/~sigury/AOS_234/AOS234%20files/Hansmann_2006_Ownership_and_Organizational_Form.pdf">ノルウェー生命科学大学の授業の頁に置かれた写し</a> の本文で確認）／Myners, P. (2014). Report of the Independent Governance Review（<a href="https://www.co-operative.coop/investors/myners-report">協同組合グループの置く版</a> の本文で確認。pp.17・36）／Eroski (2016). Memoria 2016（<a href="https://www.eroski.es/wp-content/uploads/2017/08/EROSKI-MEMORIA-2016-castellano.pdf">同社の PDF</a> の本文で確認。p.10）／Thomsen, S., Poulsen, T., Børsting, C. &amp; Kuhn, J. (2018). Industrial foundations as long-term owners. <em>Corporate Governance: An International Review</em> 26(3), 180–196（<a href="https://doi.org/10.1111/corg.12236">DOI</a>。<a href="https://research-api.cbs.dk/ws/portalfiles/portal/57312667/steen_thomsen_et_al_industrial_foundations_as_long_term_owners_publishersversion.pdf">コペンハーゲン商科大学のリポジトリの出版社版・CC BY</a> の本文で確認）／Bebchuk, L. &amp; Tallarita, R. (2020). The Illusory Promise of Stakeholder Governance. <em>Cornell Law Review</em> 106, 91–178（<a href="https://publications.lawschool.cornell.edu/lawreview/wp-content/uploads/sites/2/2021/02/The-Illusory-Promise-of-Stakeholder-Governance.pdf">Cornell Law Review の PDF</a> の本文で確認）</p>
+</details>
+
+</div></details><details class="sec" id="方法と出典"><summary>方法と出典</summary><div class="secbody">
+<p><a id="nk-method"></a>このページは、pjdhiro が問いを立て、Claude が原典を読んで答える形で書きました。野中郁次郎の論文は、知識創造（SECI・場・知識のらせん）を論じたもののうち、本文を読める写しが見つかった 8 本を読みました。語ごとに、出てくる文を頁つきで拾い、引用の頁は誌面の写しで照らしました。野中が出典に付けた論文（フォン・クロー 1998）と、引いた哲学者の原典（フッサール・西田・アリストテレス）は、本文の読める版で読みました。8 本の論文は権利が残っているので、引用は短く切りました。</p>
+<p>8 本の論文：Nonaka 1994（<a href="https://doi.org/10.1287/orsc.5.1.14">DOI</a>）／Nonaka, Umemoto &amp; Senoo 1996（<a href="https://doi.org/10.1016/0160-791X(96)00001-2">DOI</a>）／Nonaka, Toyama &amp; Konno 2000（<a href="https://doi.org/10.1016/S0024-6301(99)00115-6">DOI</a>）／Nonaka, Toyama &amp; Nagata 2000（<a href="https://doi.org/10.1093/icc/9.1.1">DOI</a>）／Nonaka &amp; Toyama 2003（<a href="https://doi.org/10.1057/palgrave.kmrp.8500001">DOI</a>）／Nonaka &amp; Toyama 2005（<a href="https://doi.org/10.1093/icc/dth058">DOI</a>）／Nonaka &amp; von Krogh 2009（<a href="https://doi.org/10.1287/orsc.1080.0412">DOI</a>）／Nonaka &amp; Takeuchi 2021（<a href="https://doi.org/10.1016/j.lrp.2021.102070">DOI</a>）</p>
+<p>関わる読み物：<a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a>（第四部の防衛と段階・「どう鍛えるのか、どう修行するのか」）／<a href="julia-potential.html">起業家の漸化式と、ジュリア集合</a>（野中の知識創造の畳み）／<a href="empathy.html">共感とは</a>／<a href="defense-mechanisms.html">心理的防衛機制とは</a>／<a href="developmental-stages.html">精神の発達段階とは</a>／<a href="psychological-safety.html">心理的安全性とは</a></p>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="defense-mechanisms.html">心理的防衛機制とは</a> ・
+                <a href="developmental-stages.html">精神の発達段階とは</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
