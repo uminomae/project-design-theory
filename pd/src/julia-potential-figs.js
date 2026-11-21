@@ -278,12 +278,13 @@
      なので選べる。c = −0.8 + 0.16i は M のわずかに外（39 歩で外へ出る）で、これに当たる。
      既定の c は −0.79 + 0.13i（周期 2 の房 |c + 1| < 1/4 の中、|c + 1| ≈ 0.247 でふちに近い。形はひとつながりで、
      ページのサムネイル julia-thumb.png〔c = −0.8 + 0.16i〕とほぼ同じ渦を巻く形になる）。2026-11-21・付箋 i202611210415105lx
-     「ジュリアの逆写像のデフォルトは…サムネイルの画像になるような値がいい。探して」。前は付箋 i20261121024316zx9 で −0.8 + 0.16i。 */
+     「ジュリアの逆写像のデフォルトは…サムネイルの画像になるような値がいい。探して」。前は付箋 i20261121024316zx9 で −0.8 + 0.16i。
+     この c はふちに近く、巻き込みは 20〜30 段で見えてくるので、段の上限を 12 から 30 に上げ、点を 32768 にした（段ごとの曲線は Float32 で持つ）。 */
   const fold = document.getElementById("jp-fold");
   let drawFold = () => {};
   if (fold) {
     const cv = document.getElementById("jp-fold-cv"), cvM = document.getElementById("jp-fold-c"), out = document.getElementById("jp-fold-out");
-    const N = 16384, MAXK = 12, LAST = 3 * MAXK, FV = { x0: -2.75, x1: 2.75, y0: -2.75, y1: 2.75 }, NB = 48;
+    const N = 32768, MAXK = 30, LAST = 3 * MAXK, FV = { x0: -2.75, x1: 2.75, y0: -2.75, y1: 2.75 }, NB = 48;
     let C = { re: -0.79, im: 0.13 }, levels = [], half = [], sig = [], pos = 0, tw = 1, timer = 0, animId = 0, global = true, mapImg = null, note = "";
     // 主値の平方根（偏角を (−π, π] で半分にする）
     const sqrtP = (wr, wi) => { const m = Math.hypot(wr, wi); return [Math.sqrt((m + wr) / 2), Math.sign(wi || 1) * Math.sqrt(Math.max(0, (m - wr) / 2))]; };
@@ -292,7 +293,7 @@
       for (let j = 0; j < N; j++) { const a = (2 * Math.PI * j) / N; re0[j] = 2 * Math.cos(a); im0[j] = 2 * Math.sin(a); }
       levels = [[re0, im0]]; half = [null]; sig = [null];
       for (let l = 1; l <= MAXK; l++) {
-        const [pr, pi] = levels[l - 1], nr = new Float64Array(N), ni = new Float64Array(N), hr = new Float64Array(N), hi = new Float64Array(N), sg = new Int8Array(N);
+        const [pr, pi] = levels[l - 1], nr = new Float32Array(N), ni = new Float32Array(N), hr = new Float32Array(N), hi = new Float32Array(N), sg = new Int8Array(N);
         for (let j = 0; j < N; j++) {
           const q = (2 * j) % N, [sr, si] = sqrtP(pr[q] - C.re, pi[q] - C.im);
           hr[j] = sr; hi[j] = si; let s = 1;
