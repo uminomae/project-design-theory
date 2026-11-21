@@ -251,6 +251,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は hamilton-1829-philosophy-of-the-unconditioned.md（原文〔英語〕と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-hamilton-philosophy-of-the-unconditioned-ja.md",
+        ROOT / "scripts/reader-hamilton-philosophy-of-the-unconditioned-ja-template.html",
+        ROOT / "reader/hamilton-philosophy-of-the-unconditioned-ja.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/creative-thinking/READER-creative-thinking.md",
         ROOT / "scripts/reader-creative-thinking-template.html",
         ROOT / "reader/creative-thinking.html",
@@ -503,6 +510,10 @@ JA_CHAPTERS = {
     "mill-1865-examination-of-hamilton.md": {
         "¶1": "第 VII 章　マンセル氏が宗教的思考の限界に当てはめた、条件づけられたものの哲学",
         "注1": "ミルの脚注",
+    },
+    "hamilton-1829-philosophy-of-the-unconditioned.md": {
+        "¶1": "無条件者の哲学について――クザンの無限・絶対者の説に寄せて",
+        "注1": "ハミルトンの脚注",
     },
 }
 
