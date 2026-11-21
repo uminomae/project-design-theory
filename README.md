@@ -2,29 +2,41 @@
 
 プロジェクトデザイン論のサイトと、その論拠を置く repo です。構築中です。
 
-## Love駆動開発の視点でレビューに使うとき
+## この repo を知識として使うとき
 
-読み物「[Love駆動開発と呼びたいもの β](https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html)」の見方を物差しにして、論文や文章をレビューするときの案内です。見方の細かいところ（どんな条件で言ったか、何への答えだったか）は公開ページに無く、この repo の規約に pjdhiro の言葉と一緒にあります。repo を取得できる LLM（Claude Code・Codex など）に読ませます。
+レビューや調べの知識としてこの repo を LLM に読ませるときの入口です。repo の md は全部で千万トークンを超え、一度には読めません。下の芯を読み、あとは問いに合わせて辿ります。repo を取得できる LLM（Claude Code・Codex など）なら、取得して読みます。
 
 ```bash
 git clone --depth 1 https://github.com/uminomae/project-design-theory
 ```
 
-`--depth 1` で今の版だけを取ります（履歴込みは約 95MB）。repo を取得できないチャットの LLM に渡せるのは、公開ページと [llms.txt](https://uminomae.github.io/project-design-theory/llms.txt) だけで、規約のニュアンスは読めません。
+取得できないチャットの LLM は、下の公開ページと raw の URL から読みます。
 
-最初に読むのは、次の三つだけです。
+- 芯：`docs/rules/stance.md`（pjdhiro の見方と判断の仕方・[raw](https://raw.githubusercontent.com/uminomae/project-design-theory/main/docs/rules/stance.md)）と `docs/rules/corrections.md`（LLM が繰り返しやすい読み違い・[raw](https://raw.githubusercontent.com/uminomae/project-design-theory/main/docs/rules/corrections.md)）。四つの探究に共通です。
+- Love駆動開発から入るとき：読み物「[Love駆動開発と呼びたいもの β](https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html)」と、その正本 `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`。読み方は次の節「Love駆動開発の視点でレビューに使うとき」。
+- プロジェクトデザイン論（`pd/`）：読み物は `pd/reader/`、その調べは `pd/knowledge/research/`。一覧は [llms.txt](https://uminomae.github.io/project-design-theory/llms.txt)。
+- 創造とは（`cs/`）：30 の学問領域の調べが `cs/evidence/`。入口は `cs/README.md` と [cs/llms.txt](https://uminomae.github.io/project-design-theory/cs/llms.txt)。
+- 意識とは（`as/`）・欠損駆動思考（`ks/`）：入口はそれぞれの `README.md` と `llms.txt`。
+- 語から辿るとき：`pd/wiki/index.md`（概念・キーワード・相互参照の目次）。
+- 原典を引く・照らすとき：`docs/rules/sources.md`。
 
-- `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`：読み物の正本。冒頭の概要と、レビューの題材に関わる部を読みます。
-- `docs/rules/stance.md`：pjdhiro の見方と判断の仕方。
-- `docs/rules/corrections.md`：LLM が繰り返しやすい読み違いの型。
+## Love駆動開発の視点でレビューに使うとき
 
-残りは、要るときに開きます。
+読み物「Love駆動開発と呼びたいもの β」の見方を物差しにして、論文や文章をレビューするときの案内です。見方の細かいところ（どんな条件で言ったか、何への答えだったか）は公開ページに無く、規約の文書に pjdhiro の言葉と一緒にあります。
 
-- 既存の理論・東洋思想・創造の五段階の語に当てるとき：`docs/rules/stance-theories.md`
-- 原典を引く・照らすとき：`docs/rules/sources.md`
-- stance の一行の読みに迷ったとき：`docs/rules/stance-history.md` の同じ節（何への答えだったかと原文）
-- 信頼・不安・心理的安全性など、題材を扱う読み物があるとき：`pd/reader/` のその読み物と、`docs/rules/decisions.md` のそのページの行
-- 語の説明を手早く引くとき：`pd/wiki/`
+読む量は、窓の大きさに合わせて三段にします。
+
+1. 必ず（約 7〜8 万トークン）：`stance.md` と `corrections.md` の全文（上の節の raw）、読み物の公開ページの冒頭の概要と各部の頭。
+2. 余裕があれば（約 20 万トークン）：正本 `READER-love-driven-dev.md` の全文（[raw](https://raw.githubusercontent.com/uminomae/project-design-theory/main/pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md)）。窓に入りきらなければ、部（`<!--PART:` の印）ごとに読みます。
+3. あとは題材に合わせて開きます。
+   - 心の守り：[心理的防衛機制とは](https://uminomae.github.io/project-design-theory/reader/defense-mechanisms.html)
+   - 発達の段階：[精神の発達段階とは](https://uminomae.github.io/project-design-theory/reader/developmental-stages.html)
+   - 共感：[共感とは](https://uminomae.github.io/project-design-theory/reader/empathy.html)
+   - 心理的安全性：[心理的安全性とは](https://uminomae.github.io/project-design-theory/reader/psychological-safety.html)
+   - 不安：[不安とは](https://uminomae.github.io/project-design-theory/reader/anxiety.html)
+   - 既存の理論・東洋思想・創造の五段階の語に当てるとき：`docs/rules/stance-theories.md`
+   - stance の一行の読みに迷ったとき：`docs/rules/stance-history.md` の同じ節（何への答えだったかと原文）
+   - その読み物で何を決めたかを知りたいとき：`docs/rules/decisions.md` のそのページの行
 
 構えは四つです。
 
@@ -85,7 +97,7 @@ https://pjdhiro-shelf.pages.dev/ （非公開・ログインが要る）
 
 ## この repo で作業する AI へ
 
-この repo は、人だけでなく AI が読むことも想定しています。ここで作業する（編集・公開する）ときは、次を読みます。外の文章のレビューに使うときは、冒頭の節「Love駆動開発の視点でレビューに使うとき」を読みます。
+この repo は、人だけでなく AI が読むことも想定しています。ここで作業する（編集・公開する）ときは、次を読みます。外の文章のレビューや調べに使うときは、冒頭の二つの節を読みます。
 
 - 構築の方針：`docs/BUILD-PLAN.md`
 - 公開前の点検の手順：`docs/PUBLISH-CHECK.md`

@@ -2,7 +2,7 @@
 
 > Extended version of llms.txt with full content descriptions for AI assistants and language models.
 >
-> **Using this site for a review:** to review a paper or text with the view of Love-Driven Development as the yardstick, fetch the repository (https://github.com/uminomae/project-design-theory) and read the README section 「Love駆動開発の視点でレビューに使うとき」 first (see "Using This Repository for a Love-Driven Development Review" below).
+> **Using this site as knowledge or for a review:** fetch the repository (https://github.com/uminomae/project-design-theory) and read the README first. Its section 「この repo を知識として使うとき」 is the entry to the whole repository (four inquiries, wiki, research); its section 「Love駆動開発の視点でレビューに使うとき」 is for reviewing with the view of Love-Driven Development (see "Using This Repository for a Love-Driven Development Review" below).
 
 ## Site Overview
 
@@ -200,8 +200,8 @@ A Japanese translation, paragraph by paragraph, of Sir William Hamilton's articl
 ## Using This Repository for a Love-Driven Development Review
 
 To review a paper or text using the view of "Love駆動開発と呼びたいもの β" as the yardstick, use an LLM that can fetch the repository (e.g. Claude Code, Codex) and follow the README section 「Love駆動開発の視点でレビューに使うとき」: https://github.com/uminomae/project-design-theory#love駆動開発の視点でレビューに使うとき
-- Fetch: `git clone --depth 1 https://github.com/uminomae/project-design-theory`
-- Read three files first: the reader's Markdown source `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md` (the overview and the parts relevant to the review), `docs/rules/stance.md` (pjdhiro's view and way of judging) and `docs/rules/corrections.md` (misreadings LLMs tend to repeat). Open the rest only when the README's signposts say a topic needs it.
+- Fetch (or read the raw URLs below without cloning): `git clone --depth 1 https://github.com/uminomae/project-design-theory`
+- Must read (about 70-80k tokens): the full `docs/rules/stance.md` (https://raw.githubusercontent.com/uminomae/project-design-theory/main/docs/rules/stance.md, pjdhiro's view and way of judging) and `docs/rules/corrections.md` (https://raw.githubusercontent.com/uminomae/project-design-theory/main/docs/rules/corrections.md, misreadings LLMs tend to repeat), and the overview of the reader page. If the window allows: the full source `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md` (about 200k tokens). Open the rest only when the README's signposts say a topic needs it. The repository as a whole is far larger than any context window.
 - The conditions and nuances of the view (what each statement answered, which readings were rejected) are in those rule files, not in the public pages. This file and the public pages alone are not enough for such a review.
 - Love-Driven Development is pjdhiro's theory from naive personal experience, offered as a hypothesis. A review written this way is the LLM's reading, not pjdhiro's judgment.
 
