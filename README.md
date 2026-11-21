@@ -13,7 +13,7 @@ git clone --depth 1 https://github.com/uminomae/project-design-theory
 取得できないチャットの LLM は、下の公開ページと raw の URL から読みます。
 
 - 芯：`docs/rules/stance.md`（pjdhiro の見方と判断の仕方・[raw](https://raw.githubusercontent.com/uminomae/project-design-theory/main/docs/rules/stance.md)）と `docs/rules/corrections.md`（LLM が繰り返しやすい読み違い・[raw](https://raw.githubusercontent.com/uminomae/project-design-theory/main/docs/rules/corrections.md)）。四つの探究に共通です。
-- Love駆動開発から入るとき：読み物「[Love駆動開発と呼びたいもの β](https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html)」と、その正本 `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`。読み方は次の節「Love駆動開発の視点でレビューに使うとき」。
+- Love駆動開発から入るとき：読み物「[Love駆動開発と呼びたいもの β](https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html)」と、その正本 `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`。読み方と頼む文の雛形は次の節「Love駆動開発の視点でレビューに使うとき」。
 - プロジェクトデザイン論（`pd/`）：読み物は `pd/reader/`、その調べは `pd/knowledge/research/`。一覧は [llms.txt](https://uminomae.github.io/project-design-theory/llms.txt)。
 - 創造とは（`cs/`）：30 の学問領域の調べが `cs/evidence/`。入口は `cs/README.md` と [cs/llms.txt](https://uminomae.github.io/project-design-theory/cs/llms.txt)。
 - 意識とは（`as/`）・欠損駆動思考（`ks/`）：入口はそれぞれの `README.md` と `llms.txt`。
@@ -24,11 +24,20 @@ git clone --depth 1 https://github.com/uminomae/project-design-theory
 
 読み物「Love駆動開発と呼びたいもの β」の見方を物差しにして、論文や文章をレビューするときの案内です。見方の細かいところ（どんな条件で言ったか、何への答えだったか）は公開ページに無く、規約の文書に pjdhiro の言葉と一緒にあります。
 
+頼む文の雛形です。`<URL か論文>` の所に、レビューしたい文章の URL か、論文の題か DOI を一つ入れて、LLM に渡します。受け取った LLM は、下の三段の読み方で読み、四つの構えでレビューを書きます。
+
+```text
+https://github.com/uminomae/project-design-theory を取得し、README の「Love駆動開発の視点でレビューに使うとき」に沿って読んでください。そのうえで、<URL か論文> をレビューしてください。
+```
+
+repo を取得できない LLM には、上の節の raw の URL か、[llms.txt](https://uminomae.github.io/project-design-theory/llms.txt) から読ませます。
+
 読む量は、窓の大きさに合わせて三段にします。
 
 1. 必ず（約 7〜8 万トークン）：`stance.md` と `corrections.md` の全文（上の節の raw）、読み物の公開ページの冒頭の概要と各部の頭。
 2. 余裕があれば（約 20 万トークン）：正本 `READER-love-driven-dev.md` の全文（[raw](https://raw.githubusercontent.com/uminomae/project-design-theory/main/pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md)）。窓に入りきらなければ、部（`<!--PART:` の印）ごとに読みます。
 3. あとは題材に合わせて開きます。
+   - 題材が repo の中で扱われているか：DOI・題・著者名で repo を検索します。読み物がすでに扱っていれば、それをなぞらず、足せる所を書きます。
    - 心の守り：[心理的防衛機制とは](https://uminomae.github.io/project-design-theory/reader/defense-mechanisms.html)
    - 発達の段階：[精神の発達段階とは](https://uminomae.github.io/project-design-theory/reader/developmental-stages.html)
    - 共感：[共感とは](https://uminomae.github.io/project-design-theory/reader/empathy.html)
@@ -42,12 +51,12 @@ git clone --depth 1 https://github.com/uminomae/project-design-theory
 
 - Love駆動開発は pjdhiro の素朴体験論で、仮説として置いています。相手の論の正誤を裁く基準にせず、優れたものとして勧めません。
 - 相手の論も Love駆動開発も、群盲象を評すような一面と見ます。違いを論評するより先に同じ所を見ている所を書き、そのうえで補える所を書きます。「A ではなく B」と切らず、善悪の判断を持ち込みません。
-- 言い切りません。引く文は原典の本文で確かめます。
+- 言い切りません。題材の本文と、題材が引く原典を、読めるものは本文で読みます。引く文には原典の頁か場所を添えます。
 - レビューは LLM の読みとして書き、pjdhiro の判断としては書きません。規約に「pjdhiro に確かめる」とある所は、決めずに問いとして残します。
 
-`CLAUDE.md` と、git・セッション・付箋帳・公開前の点検など、この repo で作業するための決まりは、外のレビューには当てません。
+`CLAUDE.md` と、git・セッション・付箋帳・公開前の点検など、この repo で作業するための決まりは、外のレビューには当てません。`stance.md`・`corrections.md` の中の作業の決まり（判断のページ・アーティファクト・git・セッションの行）も同じです。「公開文に書かない」とある評価は、レビューにも書きません。
 
-頼む文の例（野中郁次郎の知識創造の論）：
+実行例（野中郁次郎の知識創造の論）。雛形の一文目はそのままに、二文目を題材に合わせて詳しくした形です。
 
 ```text
 https://github.com/uminomae/project-design-theory を取得し、README の「Love駆動開発の視点でレビューに使うとき」に沿って読んでください。そのうえで、野中郁次郎が知識創造（SECI・場・知識のらせん）を論じた論文のうち、本文を読めるものを探して読み、野中が出典に挙げた論文や、引いた哲学者の原典も本文で確かめてください。読み物「Love駆動開発と呼びたいもの β」の見方を物差しにして、野中の理想を目指すときの注意点をレビューし、引く文には原典の頁を添えてください。
