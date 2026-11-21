@@ -81,6 +81,11 @@ Public explainer pages, written to be uniquely readable by LLMs without external
 - Status: under construction. Written by Claude; pjdhiro's views are quoted and marked.
 - English version: https://uminomae.github.io/project-design-theory/reader/psychological-safety-en.html — "What Is Psychological Safety", translated by Claude from the Japanese version 1.000 (2026-11-14). The Japanese page may be newer.
 
+### メタ認知とは
+- URL: https://uminomae.github.io/project-design-theory/reader/metacognition.html
+- One-line: Is seeing oneself the same work as seeing through another's eyes? Metacognition (Flavell 1979) is set as self-objectification — what one was embedded in becomes an object (Kegan's subject–object) — and distinguished from perspective taking (Davis 1980). Mead (1934) shows why the two blur: one becomes an object to oneself by taking others' attitudes. pjdhiro's view: perspective taking is growth for one developmental stage and stagnation for those who have reached it. Ends with a common pattern of confusing the two.
+- Status: a page kept open for additions (new confusions are added as they are found). Written by Claude; pjdhiro's views are quoted and marked.
+
 ### 愛は、重力に似ていないか — 動かず、何もなく、自分からは見えないのに、すべてを回す中心
 - URL: https://uminomae.github.io/project-design-theory/reader/gravity-love.html
 - One-line: Is love like gravity? The interest is the driving force that moves things around: we usually think what moves is what drives, but perhaps it is the unmoving center. A management / project-design reader; in the second half it gives a hypothetical answer to "what is a leader's role?". pjdhiro's reading: a leader's role is decision-making, yet the role of their being is unexplored. It looks for that by (1) splitting "decision-making" the way metacognition splits the self — pjdhiro likens this to probing an electron ever more finely until the classical picture gives way to the quantum one — so that a Being layer (an unmoving center) appears beneath the movement of deciding; (2) using the center of a gravity well (does not move, holds nothing, cannot see itself) and (3) love as auxiliary lines; (4) asking whether love and the leader are alike; (5) leaving a root question open: humans exist between persons, and the self exists where one divides oneself.
