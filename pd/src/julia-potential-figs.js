@@ -5,6 +5,7 @@
 // 3) c を選ぶ地図と、その c で残る形（#jp-mand・#jp-julia、章の畳み）
 // 4) 円を遡って畳む（#jp-fold）：一段を「− c」「√」「−√」の三歩に分け、一歩ずつ・戻す・再生。色で出どころを追う。c は地図のクリックかボタン
 // 8) 遡りの木（#jp-btree）：赤の一点から ±√ で一段ごとに二つに分かれる遡りを、木と平面に並べて一段ずつ
+// 9) ジュリア集合とは（#jp-about-julia、右下の小窓）：場面が一つずつ進むアニメに、その場面の字幕を重ねる
 (function () {
   const figs = document.querySelectorAll(".jp-fig");
   if (!figs.length) return;
@@ -286,7 +287,8 @@
   let drawFold = () => {};
   if (fold) {
     const cv = document.getElementById("jp-fold-cv"), cvM = document.getElementById("jp-fold-c"), out = document.getElementById("jp-fold-out");
-    const N = 32768, MAXK = 30, LAST = 3 * MAXK, FV = { x0: -2.75, x1: 2.75, y0: -2.75, y1: 2.75 }, NB = 48;
+    // 図は縦長（520 × 600）。下の余白に、その一歩の字幕（#jp-fold-cap）を重ねる（2026-11-21・付箋 i20261121043634uo3）
+    const N = 32768, MAXK = 30, LAST = 3 * MAXK, FV = { x0: -2.75, x1: 2.75, y0: 2.75 - (5.5 * cv.height) / cv.width, y1: 2.75 }, NB = 48, cap = document.getElementById("jp-fold-cap");
     let C = { re: -0.79, im: 0.13 }, levels = [], half = [], sig = [], pos = 0, tw = 1, timer = 0, animId = 0, global = true, mapImg = null, note = "";
     // 主値の平方根（偏角を (−π, π] で半分にする）
     const sqrtP = (wr, wi) => { const m = Math.hypot(wr, wi); return [Math.sqrt((m + wr) / 2), Math.sign(wi || 1) * Math.sqrt(Math.max(0, (m - wr) / 2))]; };
@@ -388,10 +390,12 @@
       const [px, py] = toPx(MV, C.re, C.im, cvM);
       ctx.strokeStyle = css(fold, "--coral"); ctx.lineWidth = 3; ctx.beginPath(); ctx.arc(px, py, 7, 0, Math.PI * 2); ctx.stroke();
     }
-    const STEP_TXT = [
-      "− c：曲線の全体を、矢印のとおり −c だけずらす。c にあった点が 0 に来る",
-      "√：0 の周りの角を半分、0 からの距離を √ にする（√ の主値）。一周が、左で切れて右半分の半周に縮む",
-      "−√：右半分の写しを 0 の周りに半回転させた、もう一つの写し（濃い色）が、左半分を埋める",
+    const STEP_TXT = ["− c", "√", "−√"];
+    // 図の中に重ねる字幕（その一歩で何が起きたかの一文）
+    const STEP_CAP = [
+      "一歩目：全体を、c の分だけ戻します（矢印）。c にあった点が 0 に来ます。",
+      "二歩目：√ で、0 の周りの角が半分になります。一周が、右半分に縮みます。",
+      "三歩目：−√ の写し（濃い色）が、左半分を埋めます。これで一段、遡りました。",
     ];
     drawFold = () => {
       const f = fold, ctx = cv.getContext("2d"), W = cv.width, Hh = cv.height, panel = css(f, "--panel"), mid = css(f, "--mid"), coral = css(f, "--coral");
@@ -445,9 +449,11 @@
       let t = "c = " + fmtC(C.re, C.im) + "\n";
       if (pos === 0) t += "大きさ 2 の円（まだ遡っていない）。色は、円の上の位置";
       else {
-        t += lv + " 段目の " + (sub + 1) + " 歩目（全 " + LAST + " 歩の " + pos + " 歩目）　" + STEP_TXT[sub];
-        if (sub === 2) t += "。同じ色の所は、最初の円の同じ所から来た。内側は、" + lv + " 歩前へ打っても大きさ 2 を超えない点";
+        t += lv + " 段目の " + (sub + 1) + " 歩目「" + STEP_TXT[sub] + "」（全 " + LAST + " 歩の " + pos + " 歩目）";
+        if (sub === 2) t += "。内側は、" + lv + " 歩前へ打っても大きさ 2 を超えない点";
       }
+      if (cap) cap.textContent = pos === 0 ? "大きさ 2 の円から始めます。円の外の点は、前へ打つと遠くへ行きます。"
+        : STEP_CAP[sub] + (sub === 2 && lv >= 3 ? "段を重ねるほど、ジュリア集合の形に寄ります。" : "");
       if (note) t += "\n" + note;
       out.textContent = t;
       drawMap();
@@ -804,7 +810,194 @@
     build();
   }
 
-  function all() { drawFixed(); drawLab(); drawBig(); drawFold(); drawRec(); drawCplx(); drawSq(); drawBtree(); }
+  /* ---- 9) ジュリア集合とは（#jp-about-julia、右下の棚から開く小窓）：場面が一つずつ進むアニメに、その場面の一文（字幕）を重ねる
+     2026-11-21・付箋 i20261121043634uo3「ジュリア集合の解説は動画やアニメと一緒に、そのアニメの中に文章を入れた方がいい。」
+     場面：c を決める → 0 から z² + c をくり返す（遠くへ行かない）→ 別の点は遠くへ行く → 一つずつ試して塗り分ける
+       → 縁がジュリア集合 → 一歩を逆に戻すと二つに分かれ、境目に集まる → c を変えると形が変わる（地図がマンデルブロ集合）
+       → 地図の外の c ではかけらに散る。小窓が開いて図が見えたら再生し、見えなくなったら止める。 */
+  const intro = document.getElementById("jp-about-julia");
+  let drawIntro = () => {};
+  if (intro && document.getElementById("jp-intro-cv")) {
+    const cv = document.getElementById("jp-intro-cv"), cap = document.getElementById("jp-intro-cap"), no = document.getElementById("jp-intro-no");
+    const play = document.getElementById("jp-intro-play"), W = cv.width, H = cv.height;
+    const IV = { x0: -2.1, x1: 2.1, y1: 1.9 }; IV.y0 = IV.y1 - ((IV.x1 - IV.x0) * H) / W;
+    // 主な c は −0.123 + 0.745i（0 から打つと 0 → c → … → 0 の三つを回り続け、形は耳の三つある房になる）。
+    // 前の点と離れて見え、0 から打った点の動きが一目で追えるので選んだ。サムネイルに近い −0.79 + 0.13i は、c を変える場面で見せる
+    const C0 = { re: -0.123, im: 0.745 }, MID = { re: -0.79, im: 0.13 }, DUST = { re: -0.8, im: 0.16 }, MAXIT = 150;
+    const LATER = [{ re: 0, im: 0 }, MID, C0];
+    const orbit0 = forward(C0, { re: 0, im: 0 }, 12).pts, orbitOut = forward(C0, { re: -1.1, im: 0.8 }, 6).pts;
+    const SCENES = [
+      { d: 3500, cap: "z も c も、平面の上の一点で表せる数（複素数）です。まず、c を一つ決めます。" },
+      { d: 7000, cap: "0 から始めて、二乗して c を足す、をくり返します。打った点（赤）は、三つの点を回り続け、遠くへ行きません。" },
+      { d: 5000, cap: "別の点から始めると、くり返すうちに、遠くへ飛んでいく点（青）もあります。" },
+      { d: 6000, cap: "平面の点を一つずつ出発点にして試し、遠くへ行く点を青に、行かない点を淡い色に塗ります。" },
+      { d: 4000, cap: "塗り分けの縁（境目）が、ジュリア集合です。" },
+      { d: 7000, cap: "一歩を逆に戻すと、平方根が二つあるので、点は二つに分かれます。遡った点は、境目に集まっていきます。" },
+      { d: 7500, cap: "c を変えると、形が変わります（c = 0 なら円）。左上の地図の黒い形（マンデルブロ集合）の中に c があると、形はひとつながりです。" },
+      { d: 5000, cap: "c が黒い形の外に出ると、形は細かなかけらに散ります。縁に近い c ほど、絵は込み入ります。" },
+    ];
+    const LAST = SCENES.length - 1, HOLD = 2000;
+    const reduce = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const mix = (a, b, t) => [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, a[2] + (b[2] - a[2]) * t];
+    const P = (x, y) => toPx(IV, x, y, cv);
+    // c ごとの塗り分け（淡い色＝遠くへ行かない・青＝遠くへ行く。速く出る点ほど濃い）と、その縁（境目）の画像
+    const cache = new Map();
+    function sets(c) {
+      const key = c.re + "," + c.im; if (cache.has(key)) return cache.get(key);
+      const IN = hex(css(intro, "--esc0")), SLOW = hex(css(intro, "--esc1")), FAST = hex(css(intro, "--navy")), EDGE = hex(css(intro, "--set"));
+      const f = escJfor(c), cnt = new Int16Array(W * H);
+      const fillC = document.createElement("canvas"), edgeC = document.createElement("canvas"); fillC.width = edgeC.width = W; fillC.height = edgeC.height = H;
+      const fi = fillC.getContext("2d").createImageData(W, H), ei = edgeC.getContext("2d").createImageData(W, H);
+      for (let j = 0; j < H; j++) {
+        const y = IV.y1 - ((j + 0.5) * (IV.y1 - IV.y0)) / H;
+        for (let i = 0; i < W; i++) {
+          const n = f(IV.x0 + ((i + 0.5) * (IV.x1 - IV.x0)) / W, y, MAXIT), k = j * W + i; cnt[k] = n;
+          const col = n < 0 ? IN : mix(mix(SLOW, FAST, 0.45), SLOW, Math.min(1, Math.sqrt(n / 12)));
+          fi.data[4 * k] = col[0]; fi.data[4 * k + 1] = col[1]; fi.data[4 * k + 2] = col[2]; fi.data[4 * k + 3] = 255;
+        }
+      }
+      for (let j = 1; j < H - 1; j++) for (let i = 1; i < W - 1; i++) {
+        const k = j * W + i; if (cnt[k] >= 0) continue;
+        let edge = false; for (const d of [1, -1, W, -W, W + 1, W - 1, -W + 1, -W - 1]) if (cnt[k + d] >= 0) { edge = true; break; }
+        if (edge) { ei.data[4 * k] = EDGE[0]; ei.data[4 * k + 1] = EDGE[1]; ei.data[4 * k + 2] = EDGE[2]; ei.data[4 * k + 3] = 255; }
+      }
+      // かけらに散る c（遠くへ行かない点がほとんど無い）では、遅く出る点を縁として描く
+      if (c === DUST) for (let k = 0; k < W * H; k++) if (cnt[k] >= 36 || cnt[k] < 0) { ei.data[4 * k] = EDGE[0]; ei.data[4 * k + 1] = EDGE[1]; ei.data[4 * k + 2] = EDGE[2]; ei.data[4 * k + 3] = 255; }
+      fillC.getContext("2d").putImageData(fi, 0, 0); edgeC.getContext("2d").putImageData(ei, 0, 0);
+      const v = { fill: fillC, edge: edgeC }; cache.set(key, v); return v;
+    }
+    // 左上の小さな地図（マンデルブロ集合）
+    const MW = Math.round(W * 0.3), MH = Math.round((MW * (MV.y1 - MV.y0)) / (MV.x1 - MV.x0)); let mapC = null;
+    function map() {
+      if (mapC) return mapC;
+      mapC = document.createElement("canvas"); mapC.width = MW; mapC.height = MH;
+      const m = mapC.getContext("2d"), im = m.createImageData(MW, MH), S = hex(css(intro, "--set")), A = hex(css(intro, "--esc0"));
+      for (let j = 0; j < MH; j++) for (let i = 0; i < MW; i++) {
+        const n = escM(MV.x0 + ((i + 0.5) * (MV.x1 - MV.x0)) / MW, MV.y1 - ((j + 0.5) * (MV.y1 - MV.y0)) / MH, 80), k = 4 * (j * MW + i), col = n < 0 ? S : A;
+        im.data[k] = col[0]; im.data[k + 1] = col[1]; im.data[k + 2] = col[2]; im.data[k + 3] = 255;
+      }
+      m.putImageData(im, 0, 0); return mapC;
+    }
+    // 遡る木：赤の一点 z₅ から、一段ごとに ±√(w − c) の二つ（LV 段まで）
+    const LV = 11, root = orbit0[2], tree = [[root]];
+    for (let k = 1; k <= LV; k++) {
+      const nx = []; tree[k - 1].forEach(([x, y]) => {
+        const wr = x - C0.re, wi = y - C0.im, m = Math.sqrt(Math.hypot(wr, wi)), a = Math.atan2(wi, wr) / 2, u = m * Math.cos(a), v = m * Math.sin(a);
+        nx.push([u, v], [-u, -v]);
+      }); tree.push(nx);
+    }
+    function arrowTo(ctx, a, b, color) {
+      // 図の枠の外へ出る線は、枠の手前で止めて矢じりを付ける
+      let [x0, y0] = P(a[0], a[1]), [x1, y1] = P(b[0], b[1]); const inb = (x, y) => x > 8 && x < W - 8 && y > 8 && y < H * 0.7;
+      if (!inb(x1, y1)) { let lo = 0, hi = 1; for (let i = 0; i < 30; i++) { const t = (lo + hi) / 2; if (inb(x0 + (x1 - x0) * t, y0 + (y1 - y0) * t)) lo = t; else hi = t; } x1 = x0 + (x1 - x0) * lo; y1 = y0 + (y1 - y0) * lo; }
+      ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = 2.2; ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x1, y1); ctx.stroke();
+      const g = Math.atan2(y1 - y0, x1 - x0); ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x1 - 12 * Math.cos(g - 0.4), y1 - 12 * Math.sin(g - 0.4)); ctx.lineTo(x1 - 12 * Math.cos(g + 0.4), y1 - 12 * Math.sin(g + 0.4)); ctx.closePath(); ctx.fill();
+      return [x1, y1];
+    }
+    // 前へ打った道を、p（0〜1）の分まで描く。最後の一跳びは途中まで
+    function walk(ctx, pts, p, color, alpha) {
+      const n = (pts.length - 1) * p, k = Math.floor(n), fr = n - k; ctx.globalAlpha = alpha;
+      ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = 1.2; ctx.beginPath();
+      for (let i = 0; i <= Math.min(k, pts.length - 1); i++) { const [x, y] = P(pts[i][0], pts[i][1]); if (i) ctx.lineTo(x, y); else ctx.moveTo(x, y); }
+      if (k < pts.length - 1) { const a = P(pts[k][0], pts[k][1]), b = P(pts[k + 1][0], pts[k + 1][1]); ctx.lineTo(a[0] + (b[0] - a[0]) * fr, a[1] + (b[1] - a[1]) * fr); }
+      ctx.stroke();
+      for (let i = 0; i <= Math.min(k, pts.length - 1); i++) { const [x, y] = P(pts[i][0], pts[i][1]); dot(ctx, x, y, i === k ? 5 : 3.2); }
+      ctx.globalAlpha = 1; return k;
+    }
+    function frame(s, p) {
+      const ctx = cv.getContext("2d"), panel = css(intro, "--panel"), line = css(intro, "--line"), mid = css(intro, "--mid"), coral = css(intro, "--coral"), gold = css(intro, "--gold"), navy = css(intro, "--navy"), set = css(intro, "--set");
+      ctx.fillStyle = panel; ctx.fillRect(0, 0, W, H);
+      const c = s === 7 ? DUST : s === 6 ? LATER[Math.min(2, Math.floor(p * 3))] : C0;
+      // 塗り分けと境目
+      if (s >= 3) {
+        const E = sets(c);
+        if (s === 3) { const y = Math.round(H * p); ctx.save(); ctx.beginPath(); ctx.rect(0, 0, W, y); ctx.clip(); ctx.drawImage(E.fill, 0, 0); ctx.restore(); ctx.strokeStyle = gold; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke(); }
+        else if (s === 4) { ctx.globalAlpha = 1 - 0.55 * p; ctx.drawImage(E.fill, 0, 0); ctx.globalAlpha = p; ctx.drawImage(E.edge, 0, 0); }
+        else if (s === 5) { ctx.globalAlpha = 0.3; ctx.drawImage(E.fill, 0, 0); ctx.globalAlpha = 0.45; ctx.drawImage(E.edge, 0, 0); }
+        else { ctx.globalAlpha = 0.6; ctx.drawImage(E.fill, 0, 0); ctx.globalAlpha = 1; ctx.drawImage(E.edge, 0, 0); }
+        ctx.globalAlpha = 1;
+      }
+      // 軸
+      const [ax, ay] = P(0, 0); ctx.strokeStyle = line; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(0, ay); ctx.lineTo(W, ay); ctx.moveTo(ax, 0); ctx.lineTo(ax, H); ctx.stroke();
+      ctx.fillStyle = mid; ctx.font = "13px sans-serif";
+      if (s <= 2) { ctx.fillText("実軸", W - 40, ay - 8); ctx.fillText("虚軸", ax + 8, 20); }
+      // c の印
+      const [cx, cy] = P(c.re, c.im), rr = s === 0 ? 4 + 10 * (1 - p) : 6;
+      ctx.globalAlpha = s === 0 ? Math.min(1, p * 2) : 1; ctx.strokeStyle = gold; ctx.fillStyle = gold; ctx.lineWidth = 3;
+      ctx.beginPath(); ctx.arc(cx, cy, rr, 0, Math.PI * 2); ctx.stroke(); ctx.font = "bold 15px sans-serif"; ctx.fillText("c", cx - 4, cy - 12); ctx.globalAlpha = 1;
+      // 0 から前へ打つ（赤）・別の点から（青）
+      if (s === 1 || s === 2) {
+        ctx.fillStyle = set; dot(ctx, ax, ay, 3.5); ctx.font = "13px sans-serif"; ctx.fillText("0", ax + 6, ay + 16);
+        const k = walk(ctx, orbit0, s === 1 ? p : 1, coral, s === 1 ? 1 : 0.35);
+        if (s === 1) { ctx.fillStyle = coral; ctx.font = "13px sans-serif"; ctx.fillText(k + " 回くり返した", 12, 44); }
+      }
+      if (s === 2) {
+        const n = orbitOut.length - 1, q = Math.min(n, p * (n + 0.5)), k = Math.floor(q); ctx.fillStyle = navy; ctx.strokeStyle = navy;
+        let last = P(orbitOut[0][0], orbitOut[0][1]); dot(ctx, last[0], last[1], 5);
+        for (let i = 1; i <= Math.min(k, n); i++) { last = arrowTo(ctx, orbitOut[i - 1], orbitOut[i], navy); dot(ctx, last[0], last[1], 3.5); }
+        if (k >= 3) { ctx.font = "bold 13px sans-serif"; ctx.fillText("遠くへ", Math.min(W - 60, last[0] + 14), Math.max(40, last[1] + 18)); }
+      }
+      // 遡る：一段ごとに二つに分かれる
+      if (s === 5) {
+        const kk = p * LV, G = hex(gold), N0 = hex(navy);
+        for (let k = 1; k <= Math.min(LV, Math.floor(kk) + 1); k++) {
+          const a = Math.min(1, kk - (k - 1)); if (a <= 0) continue; const col = mix(N0, G, k / LV);
+          ctx.globalAlpha = a; ctx.fillStyle = "rgb(" + col.map(Math.round).join(",") + ")"; ctx.strokeStyle = ctx.fillStyle; ctx.lineWidth = 1;
+          tree[k].forEach(([x, y], i) => {
+            const [px, py] = P(x, y);
+            if (k <= 3) { const [qx, qy] = P(tree[k - 1][i >> 1][0], tree[k - 1][i >> 1][1]); ctx.beginPath(); ctx.moveTo(qx, qy); ctx.lineTo(px, py); ctx.stroke(); }
+            dot(ctx, px, py, k <= 3 ? 4 : k <= 6 ? 2.4 : 1.5);
+          });
+        }
+        ctx.globalAlpha = 1; const [rx, ry] = P(root[0], root[1]); ctx.fillStyle = coral; dot(ctx, rx, ry, 5.5);
+        ctx.font = "13px sans-serif"; ctx.fillText("ここから遡る", rx + 8, ry - 10);
+      }
+      // c を選ぶ地図
+      if (s >= 6) {
+        const M = map(), mx = 10, my = 10; ctx.fillStyle = panel; ctx.fillRect(mx - 4, my - 4, MW + 8, MH + 26); ctx.drawImage(M, mx, my);
+        ctx.strokeStyle = line; ctx.lineWidth = 1; ctx.strokeRect(mx - 4, my - 4, MW + 8, MH + 26);
+        const qx = mx + ((c.re - MV.x0) / (MV.x1 - MV.x0)) * MW, qy = my + ((MV.y1 - c.im) / (MV.y1 - MV.y0)) * MH;
+        ctx.strokeStyle = coral; ctx.lineWidth = 2.5; ctx.beginPath(); ctx.arc(qx, qy, 5, 0, Math.PI * 2); ctx.stroke();
+        ctx.fillStyle = set; ctx.font = "12px sans-serif"; ctx.fillText(c === DUST ? "c = −0.8 + 0.16i" : c === MID ? "c = −0.79 + 0.13i" : c.re === 0 ? "c = 0" : "c = −0.12 + 0.75i", mx, my + MH + 16);
+      }
+      if (s >= 1 && s <= 5) { ctx.fillStyle = set; ctx.font = "bold 15px sans-serif"; ctx.fillText("z → z² + c", 12, 22); }
+    }
+    // 再生：場面の動きが終わったら少し止め、次の場面へ
+    let scene = 0, t0 = 0, raf = 0, hold = 0, playing = false, done = false, started = false, hidPaused = false;
+    const ease = (x) => (x < 0.5 ? 2 * x * x : 1 - (-2 * x + 2) ** 2 / 2);
+    function setPlaying(v) { playing = v; play.setAttribute("aria-pressed", String(v)); if (!v) clearTimeout(hold); }
+    function next() { if (scene < LAST) show(scene + 1); else setPlaying(false); }
+    function tick(now) {
+      const p = Math.min(1, (now - t0) / SCENES[scene].d); frame(scene, ease(p));
+      if (p < 1) { raf = requestAnimationFrame(tick); return; }
+      done = true; if (playing) hold = setTimeout(next, HOLD);
+    }
+    function show(s) {
+      scene = s; done = false; cancelAnimationFrame(raf); clearTimeout(hold);
+      cap.textContent = SCENES[s].cap; no.textContent = s + 1 + " / " + SCENES.length;
+      if (reduce()) { frame(s, 1); done = true; if (playing) hold = setTimeout(next, SCENES[s].d + HOLD); return; }
+      t0 = performance.now(); raf = requestAnimationFrame(tick);
+    }
+    play.addEventListener("click", () => {
+      if (playing) { setPlaying(false); return; }
+      setPlaying(true);
+      if (done) { if (scene >= LAST) show(0); else next(); }
+    });
+    document.getElementById("jp-intro-reset").addEventListener("click", () => show(0));
+    document.getElementById("jp-intro-back").addEventListener("click", () => { setPlaying(false); show(Math.max(0, scene - 1)); });
+    document.getElementById("jp-intro-step").addEventListener("click", () => { setPlaying(false); show(Math.min(LAST, scene + 1)); });
+    // 見えたら再生し（初めて見えたときは最初から）、見えなくなったら止める
+    const io = "IntersectionObserver" in window ? new IntersectionObserver((es) => es.forEach((e) => {
+      if (e.isIntersecting) {
+        if (!started) { started = true; setPlaying(true); show(0); setTimeout(() => { sets(C0); }, 50); }
+        else if (hidPaused) { hidPaused = false; setPlaying(true); show(scene); }
+      } else if (playing) { hidPaused = true; setPlaying(false); cancelAnimationFrame(raf); }
+    })) : null;
+    if (io) io.observe(cv); else { started = true; show(0); }
+    drawIntro = () => { cache.clear(); mapC = null; if (started) frame(scene, done ? 1 : 0); };
+  }
+
+  function all() { drawFixed(); drawLab(); drawBig(); drawFold(); drawRec(); drawCplx(); drawSq(); drawBtree(); drawIntro(); }
   all();
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", all);
   new MutationObserver(all).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
