@@ -6,6 +6,8 @@
 <p>repo を取得できない LLM には、案内の <a href="https://uminomae.github.io/project-design-theory/llms.txt" style="overflow-wrap:anywhere">https://uminomae.github.io/project-design-theory/llms.txt</a> から読ませることもできます。</p>
 <p>答えの芯です。野中の理想は、駆動するものを人の内側に置く点で、Love駆動開発と同じ所を見ています。ただ、共感・愛・ケア・信頼・共通善の五つの言葉は良い側だけで書かれ、Love駆動開発が要ると見る、ぶつかりと、心の守りの話が抜けています。</p>
 <p>そのため同じ言葉が、読む人の守り方と段階しだいで、逆の向きにも働きます。それでも回ってきたのは、長く勤める雇用のような条件が言葉を支えていたからではないか。注意点は、その歯止めと条件を補うことだ、と考えます。</p>
+<p>ホワイトハッカーの脆弱性診断にたとえて、結果をひとことで出すと、こうなります。</p>
+<blockquote class="reader-callout"><p>検出 5 件（共感・愛・ケア・信頼・共通善）。警戒レベル：中。侵入口になりやすいらしい。</p></blockquote>
 <p>高校生向けに短く、やさしく言い直した解説もあります：<a href="https://claude.ai/artifact/FgFpr916efWXvR8spamZZ6">やさしく読む 野中の知識創造</a>（Claude のアーティファクト）。</p>
 </div>
 
