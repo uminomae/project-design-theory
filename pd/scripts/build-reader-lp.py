@@ -306,6 +306,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/metacognition/READER-metacognition.md",
+        ROOT / "scripts/reader-metacognition-template.html",
+        ROOT / "reader/metacognition.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/defense-mechanisms/READER-defense-mechanisms.md",
         ROOT / "scripts/reader-defense-mechanisms-template.html",
         ROOT / "reader/defense-mechanisms.html",
