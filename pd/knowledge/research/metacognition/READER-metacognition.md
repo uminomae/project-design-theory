@@ -16,8 +16,8 @@
 
 <div class="reader-lead"><span class="reader-lead__label">構成</span>
 <ul class="reader-lead__list">
-<li><b>第一部 二つの働き</b>：メタ認知の定義と、その芯の自己の対象化、それと並べて語られる他者視点取得を、原典の定義で見ます。</li>
-<li><b>第二部 混ざる理由と、効く範囲</b>：二つが混ざりやすい理由を見て、同じ働きが段階によって成長にも停滞にもなることを見ます。終わりに、よくある取り違えの型を見ます。</li>
+<li><b>二つの働き</b>：メタ認知の定義と、その芯の自己の対象化を見て、それと並べて語られる他者視点取得が、向きの違う働きであることを見ます。</li>
+<li><b>効く範囲</b>：同じ働きが、段階によって成長にも停滞にもなることを見て、終わりに、よくある取り違えの型を見ます。</li>
 <li><b>巻末</b>：原典を読む順と、保持論点です。</li>
 </ul>
 </div>
@@ -35,47 +35,39 @@
 
 </div>
 
-<!--PART:第一部|二つの働き-->
-
-## メタ認知は、認知を対象にすること
+## メタ認知は、自分の中にあるものを対象にすること
 
 <!--OPEN-->
 
 <a id="mc-definition"></a>発達心理学者のフラベルは、1979 年の論文を、子どもが自分の記憶をどれだけ見張れるかの研究から書き起こしています。そのうえで、幼い子どもは、認知の現象についての知識と認知、つまりメタ認知が限られていて、自分の記憶や理解を見張ることも少ない、と書きました。考えることそのものを、もう一段上から見る働き、という意味で「メタ」と呼ばれます。
 
+<a id="mc-self-object"></a>pjdhiro の言う自己の対象化を、発達の研究は、主体と客体の語で書いてきました。キーガンは、客体とは、私たちが眺め、責任を持ち、振り返り、扱える物事で、主体とは、私たちがそれに動かされ、それと一体になっていて、その影響の下にある物事だ、と書きます。私たちは客体を「持って」いて、主体で「ある」、とも書きます。そのうえでキーガンは、発達を、知ることの中で主体だったものが、少しずつ客体になっていく過程として見ます。
+
+たとえば、怒っているとき、人は怒りの中から物事を見ていて、怒りそのものは見えていません。あとで「さっきは怒っていた」と言えたとき、怒りは対象になっています。考えや価値観も同じで、その中から見ているあいだは見えず、対象になったときに見えるようになります。段階ごとに何が対象として見えるようになるかは、[精神の発達段階とは](developmental-stages.html#何を対象にできるかできないか)の表に並べています。
+
+<details><summary>詳しく — pjdhiro が止観で説明するメタ認知</summary>
+
 pjdhiro は、メタ認知を、止観（自分の中を観ていく修行）を例に、次のように説明しています（[Love駆動開発と呼びたいもの](love-driven-dev.html#ldd-shikan)）。
 
 <strong>pjdhiro の見方：</strong>メタ認知とは、自分を分けていく作業でもあるはずです。止観して、自分の中を対象として指さすように観ていくと、最後に観察する私が残る。それすらも観ようとするところから、観る私と観られる私が同じになる。分けられなくなる。
 
-フラベルの定義が言う「認知についての認知」は、pjdhiro の言葉では、自分の中に湧いたものを対象として指さし、観る私と観られるものとに分けていくことにあたります。分けていった先で分けられなくなるところは、次の章の、自己の対象化をくり返していく動きの先にあります。
+フラベルの定義が言う「認知についての認知」は、pjdhiro の言葉では、自分の中に湧いたものを対象として指さし、観る私と観られるものとに分けていくことにあたります。
 
-<details><summary>出典</summary>
-
-出典：Flavell (1979) "[Metacognition and cognitive monitoring: A new area of cognitive–developmental inquiry](https://doi.org/10.1037/0003-066X.34.10.906)", *American Psychologist* 34(10):906–911（ジョージア大学の授業の頁に置かれた[誌面の走査](https://jwilson.coe.uga.edu/emat7050/Students/Wilson/Flavell%20(1979).pdf)で本文照合済。p.906 の「young children are quite limited in their knowledge and cognition about cognitive phenomena, or in their metacognition」）。
-
-</details>
-
-## 自己の対象化は、その中から見ていたものが、見えるようになること
-
-<!--OPEN-->
-
-<a id="mc-self-object"></a>自分を対象にする、とはどういうことかを、発達の研究は、主体と客体の語で書いてきました。キーガンは、客体とは、私たちが眺め、責任を持ち、振り返り、扱える物事で、主体とは、私たちがそれに動かされ、それと一体になっていて、その影響の下にある物事だ、と書きます。私たちは客体を「持って」いて、主体で「ある」、とも書きます。そのうえでキーガンは、発達を、知ることの中で主体だったものが、少しずつ客体になっていく過程として見ます。
-
-たとえば、怒っているとき、人は怒りの中から物事を見ていて、怒りそのものは見えていません。あとで「さっきは怒っていた」と言えたとき、怒りは対象になっています。考えや価値観も同じで、その中から見ているあいだは見えず、対象になったときに見えるようになります。段階ごとに何が対象として見えるようになるかは、[精神の発達段階とは](developmental-stages.html#何を対象にできるかできないか)の表に並べています。
-
-pjdhiro は、止観で自分の中を観ていく作業を、こう説明しています（[Love駆動開発と呼びたいもの](love-driven-dev.html#ldd-shikan)）。
+同じところで、pjdhiro は、止観で自分の中を観ていく作業を、こう説明しています（[Love駆動開発と呼びたいもの](love-driven-dev.html#ldd-shikan)）。
 
 <strong>pjdhiro の見方：</strong>湧いた思いや感情や思考、認知した音や映像など、キャッチしてはオブジェクトとして対象化していく作業です。認知した音や映像などの感覚的な刺激は対象化というよりは、キャッチした私を眺める感じですね。そのまま感じ、感じてる私がいることを確認する。オブジェクト化するとか難しいことではなく、心で指さしていく。
 
 キーガンが段階の移り変わりとして書く、主体が客体になる動きを、pjdhiro は、日々の止観の中で、湧いたものを一つずつ心で指さすこととして行っています。どちらも、相手の目を借りずに、自分の中にあるものを自分で指さすところが芯です。
 
+</details>
+
 <details><summary>出典</summary>
 
-出典：Kegan (2000) "What 'form' transforms? A constructive-developmental approach to transformative learning", Mezirow (ed.) *Learning as Transformation*, Jossey-Bass（Illeris (ed.) (2009) *Contemporary Theories of Learning*, Routledge の第 3 章の再録で本文照合済。バース大学の教員の頁に置かれていた本の写しの [Wayback の記録](https://web.archive.org/web/20250121094512/https://people.bath.ac.uk/edspd/Weblinks/MA_ULL/Resources/General/Illeris%202009%20Contemporary%20Theories%20of%20Learning.pdf)〔2025 年 1 月 21 日〕。再録の版の p.45 の「That which is "object" we can look at, take responsibility for, reflect upon, exercise control over」「That which is "subject" we are run by, identified with, fused with, at the effect of」「We "have" object; we "are" subject」と、発達を「what was "subject" in our knowing becomes "object"」の過程とする段。2000 年の初出の版の頁は確かめていない）。
+出典：Flavell (1979) "[Metacognition and cognitive monitoring: A new area of cognitive–developmental inquiry](https://doi.org/10.1037/0003-066X.34.10.906)", *American Psychologist* 34(10):906–911（ジョージア大学の授業の頁に置かれた[誌面の走査](https://jwilson.coe.uga.edu/emat7050/Students/Wilson/Flavell%20(1979).pdf)で本文照合済。p.906 の「young children are quite limited in their knowledge and cognition about cognitive phenomena, or in their metacognition」）。／Kegan (2000) "What 'form' transforms? A constructive-developmental approach to transformative learning", Mezirow (ed.) *Learning as Transformation*, Jossey-Bass（Illeris (ed.) (2009) *Contemporary Theories of Learning*, Routledge の第 3 章の再録で本文照合済。バース大学の教員の頁に置かれていた本の写しの [Wayback の記録](https://web.archive.org/web/20250121094512/https://people.bath.ac.uk/edspd/Weblinks/MA_ULL/Resources/General/Illeris%202009%20Contemporary%20Theories%20of%20Learning.pdf)〔2025 年 1 月 21 日〕。再録の版の p.45 の「That which is "object" we can look at, take responsibility for, reflect upon, exercise control over」「That which is "subject" we are run by, identified with, fused with, at the effect of」「We "have" object; we "are" subject」と、発達を「what was "subject" in our knowing becomes "object"」の過程とする段。2000 年の初出の版の頁は確かめていない）。
 
 </details>
 
-## 他者視点取得は、相手の立場から見ること
+## 自己の対象化と他者視点取得は、向きの違う働き
 
 <!--OPEN-->
 
@@ -83,29 +75,23 @@ pjdhiro は、止観で自分の中を観ていく作業を、こう説明して
 
 視点取得で見えるようになるのは、相手から見た物事であり、相手から見た自分です。自分の中に湧いたものを自分で指さす自己の対象化とは、向きが違います。視点取得は、自分が相手と同じ気持ちになることとも分けられてきました。共感との区別は、[共感とは](empathy.html#em-tom)の「相手の心を推し量る、心の理論と視点取得」の章に書いています。
 
-<details><summary>出典</summary>
+それでも二つが一つのように語られやすいのは、育つ道すじの中で、二つが重なっているからではないか、というのがこのページの仮説です。社会学者のミードは、人は、自分に向けられたほかの人の態度を取ることで、はじめて自分を対象にできる、と書きました。相手の目を借りて、自分が見えはじめる、ということです。二つの働きは、見分けられますが、切り離されてはいません。
 
-出典：Davis (1980) "A multidimensional approach to individual differences in empathy", *JSAS Catalog of Selected Documents in Psychology* 10:85（バレンシア大学の教員の頁に置かれた[著者の原稿の打ち直し](https://www.uv.es/friasnav/Davis_1980.pdf)で本文照合済。要旨 p.2 の「the perspective-taking scale, contains items which assess spontaneous attempts to adopt the perspectives of other people and see things from their point of view」）。
+<details><summary>詳しく — 二つは、なぜ混ざるのか（ミード）</summary>
 
-</details>
-
-<!--PART:第二部|混ざる理由と、効く範囲-->
-
-## 二つは、なぜ混ざるのか
-
-<!--OPEN-->
-
-<a id="mc-mead"></a>前の二つの章で、自己の対象化と他者視点取得は、向きの違う働きとして並びました。それでも二つが一つのように語られやすいのは、育つ道すじの中で、二つが重なっているからではないか、というのがこのページの仮説です。
-
-社会学者のミードは、1934 年に出た講義録『精神・自我・社会』で、自己がどう生まれるかを、こう書いています。人は、自分を直接に経験するのでなく、同じ集団のほかの人の立場から、あるいは集団の全体の立場から、間接に経験する。人は、自分を主体として経験するのでなく、まず、ほかの人が自分にとって対象であるのと同じように、自分にとっての対象になる。そして、自分が対象になるのは、自分に向けられたほかの人の態度を、自分で取ることによってだけだ、と。ミードは、その集団の全体の態度を、一般化された他者（the generalized other）と呼びました。
+<a id="mc-mead"></a>社会学者のミードは、1934 年に出た講義録『精神・自我・社会』で、自己がどう生まれるかを、こう書いています。人は、自分を直接に経験するのでなく、同じ集団のほかの人の立場から、あるいは集団の全体の立場から、間接に経験する。人は、自分を主体として経験するのでなく、まず、ほかの人が自分にとって対象であるのと同じように、自分にとっての対象になる。そして、自分が対象になるのは、自分に向けられたほかの人の態度を、自分で取ることによってだけだ、と。ミードは、その集団の全体の態度を、一般化された他者（the generalized other）と呼びました。
 
 ミードの書き方では、自分を対象にすることは、他者の視点を取ることを通って起きます。人は、相手の目を借りて、はじめて自分を見られるようになる、ということです。だから、自分を見ることと、相手の目で見ることは、育ちの始まりのところでは、一つの動きのように重なっています。
 
-ただし、相手の目を借りて見えた自分は、相手から見た自分です。その見え方そのものも、まだその中にいて、対象になっていないことがあります。キーガンの語を当てると、相手の目が主体のまま残っている状態、と言えそうです。相手の目で見た自分を、さらに自分で指さすことができたとき、自己の対象化がもう一段進む、とこのページは仮に置きます。二つの働きは、見分けられますが、切り離されてはいません。
+ただし、相手の目を借りて見えた自分は、相手から見た自分です。その見え方そのものも、まだその中にいて、対象になっていないことがあります。キーガンの語を当てると、相手の目が主体のまま残っている状態、と言えそうです。相手の目で見た自分を、さらに自分で指さすことができたとき、自己の対象化がもう一段進む、とこのページは仮に置きます。
+
+出典：Mead (1934) *Mind, Self, and Society*, University of Chicago Press（ブロック大学の Mead Project の文字起こしで本文照合済。頁は文字起こしに入っている本の頁の印による。「The Self and the Organism」の章の p.138 は [Wayback の記録](https://web.archive.org/web/20230324170239/https://brocku.ca/MeadProject/Mead/pubs2/mindself/Mead_1934_18.html)〔2023 年 3 月 24 日〕で、「The individual experiences himself as such, not directly, but only indirectly, from the particular standpoints of other individual members of the same social group」「he becomes an object to himself only by taking the attitudes of other individuals toward himself」。「Play, the Game, and the Generalized Other」の章の p.154 は [Wayback の記録](https://web.archive.org/web/20261005153911/https://brocku.ca/MeadProject/Mead/pubs2/mindself/Mead_1934_20.html)〔2026 年 10 月 5 日〕で、「The organized community or social group which gives to the individual his unity of self may be called "the generalized other."」）。
+
+</details>
 
 <details><summary>出典</summary>
 
-出典：Mead (1934) *Mind, Self, and Society*, University of Chicago Press（ブロック大学の Mead Project の文字起こしで本文照合済。頁は文字起こしに入っている本の頁の印による。「The Self and the Organism」の章の p.138 は [Wayback の記録](https://web.archive.org/web/20230324170239/https://brocku.ca/MeadProject/Mead/pubs2/mindself/Mead_1934_18.html)〔2023 年 3 月 24 日〕で、「The individual experiences himself as such, not directly, but only indirectly, from the particular standpoints of other individual members of the same social group」「he becomes an object to himself only by taking the attitudes of other individuals toward himself」。「Play, the Game, and the Generalized Other」の章の p.154 は [Wayback の記録](https://web.archive.org/web/20261005153911/https://brocku.ca/MeadProject/Mead/pubs2/mindself/Mead_1934_20.html)〔2026 年 10 月 5 日〕で、「The organized community or social group which gives to the individual his unity of self may be called "the generalized other."」）。
+出典：Davis (1980) "A multidimensional approach to individual differences in empathy", *JSAS Catalog of Selected Documents in Psychology* 10:85（バレンシア大学の教員の頁に置かれた[著者の原稿の打ち直し](https://www.uv.es/friasnav/Davis_1980.pdf)で本文照合済。要旨 p.2 の「the perspective-taking scale, contains items which assess spontaneous attempts to adopt the perspectives of other people and see things from their point of view」）。
 
 </details>
 
@@ -113,7 +99,7 @@ pjdhiro は、止観で自分の中を観ていく作業を、こう説明して
 
 <!--OPEN-->
 
-<a id="mc-stages"></a>冒頭の pjdhiro の見方は、他者の視点を取ることが、ある段階には成長で、その段階に到達している人には停滞だ、というものでした。前の章のミードの書き方を当てると、この見方は次のように読めます。
+<a id="mc-stages"></a>冒頭の pjdhiro の見方は、他者の視点を取ることが、ある段階には成長で、その段階に到達している人には停滞だ、というものでした。前の章で見た、相手の目を借りて自分が見えはじめる、という書き方を当てると、この見方は次のように読めます。
 
 自分をまだ対象にできない人にとって、他者の視点を取ることは、自分を見る入口です。相手の目を借りて、自分が見えはじめます。けれども、他者の視点をすでにいくつも取れる人にとって、さらに他者の視点を取ることは、相手の目の中にとどまり、自分で自分を指さす一歩を遠ざけることにもなりえます。発達の研究にも、いくつもの視点が見えている段階で、公平さと声の尊重が強すぎると決められなくなることがある、という記述があります。その記述と、段階ごとの他者の見方の扱いは、[精神の発達段階とは](developmental-stages.html#ds-growth)の「理論や常識の効く範囲も、段階で変わる」の章に並べています。
 
