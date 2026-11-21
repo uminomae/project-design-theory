@@ -608,11 +608,20 @@ def fold_sections(html: str) -> str:
         return (f'<div class="reader-part" id="part-{part_no[0]}">'
                 f'<p class="reader-part__no">{no.strip()}</p>{t}</div>')
 
+    # 部の区切りのあとに <!--PARTLEAD-->…<!--/PARTLEAD--> を置くと、章にせず、部の頭の文として
+    # 部の見出しの下に出す（章を閉じていても見える。2026-11-21・付箋 i20261121041141s2r
+    # 「…の章は、第三部の冒頭文のような位置付けにして。章ではなく。」）
     def take_part(seg: str) -> tuple[str, str]:
         m = re.search(r"(?:<p>)?<!--PART:(.*?)-->(?:</p>)?", seg, flags=re.S)
         if not m:
             return seg, ""
-        return seg[:m.start()] + seg[m.end():], part_html(m.group(1))
+        rest = seg[:m.start()] + seg[m.end():]
+        ph = part_html(m.group(1))
+        lm = re.search(r"(?:<p>)?<!--PARTLEAD-->(?:</p>)?(.*?)(?:<p>)?<!--/PARTLEAD-->(?:</p>)?", rest, flags=re.S)
+        if lm:
+            ph = ph[:-len("</div>")] + f'<div class="reader-part__lead">{lm.group(1).strip()}</div></div>'
+            rest = rest[:lm.start()] + rest[lm.end():]
+        return rest, ph
 
     lead, lead_part = take_part(parts[0])
     out = [lead + lead_part]

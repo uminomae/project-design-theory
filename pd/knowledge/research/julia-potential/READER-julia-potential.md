@@ -48,7 +48,7 @@
 ここでのポテンシャルは、pjdhiro の言葉では「場と呼びたいような、可能性」です。第三部では、同じ問いを、起業家の行動の結果は、そもそもどんなポテンシャルだったのか、という側から問い直します。
 
 <div class="reader-lead"><span class="reader-lead__label">今の答え</span>
-このページは、起業家の一歩の中で、自己と自己の掛け算のようなものが起きている、と見ます。自己が一つでないなら、掛け合わさる自己達そのものが、まだ形になっていない可能性です。pjdhiro はそれを「脳内の自己と自己の掛け合わせなら、脳内の自己達が可能性だよね」と言いました。その可能性の場は、どんな形をしているのか。Love と呼びたいものを駆動源として、起業家が意思決定していると見たら、その場はジュリア集合のようなものかもしれません。これがこのページの主題で、問いへの答えは、美の定義から入った四段の仮説として置いています。ジュリア集合のような形が神・愛・美のポテンシャルの場で、美は起業家のエネルギーに近い、と結びます。
+このページは、起業家の一歩の中で、自己と自己の掛け算のようなものが起きている、と見ます。自己が一つでないなら、掛け合わさる自己達そのものが、まだ形になっていない可能性です。pjdhiro はそれを「脳内の自己と自己の掛け合わせなら、脳内の自己”達”が可能性だよね」と言いました。その可能性の場は、どんな形をしているのか。Love と呼びたいものを駆動源として、起業家が意思決定していると見たら、その場はジュリア集合のようなものかもしれません。これがこのページの主題で、問いへの答えは、美の定義から入った四段の仮説として置いています。ジュリア集合のような形が神・愛・美のポテンシャルの場で、美は起業家のエネルギーに近い、と結びます。
 </div>
 
 <div class="reader-lead"><span class="reader-lead__label">構成</span>
@@ -56,7 +56,7 @@
 <ul class="reader-lead__list">
 <li><b><a href="#jp-recurrence">第一部 起業家の行動は、入れ子の深さ優先探索のよう</a></b>：「商いは、飽きない」を入れ子の深さ優先探索の木で描き、起業家の行動をその形で見る。ほかの意思決定の論は、同じ木を別の位置から見たものとして対比する</li>
 <li><b><a href="#jp-rec-def">第二部 それは、ジュリア集合の漸化式のようだ</a></b>：ジュリア集合の漸化式の変数が、起業家の何に当たるかを一つずつ見る（一歩は漸化式のくり返し、<code>z</code> は起業家の思考・心理・行動、<code>z²</code> は起業家の中で起きる自己と自己の掛け算、<code>c</code> は Love と呼びたいものの重力）。一歩を平面の上で計算して見る</li>
-<li><b><a href="#jp-question">第三部 式を逆にたどると、どんなポテンシャルが見えるか</a></b>：起業家の行動の結果は、そもそもどんなポテンシャルだったのか、と問い、式を逆にたどる。前へ打った値は渦、遡った値はジュリア集合の境目になる。その境目を、起業家を駆るものが出てくるポテンシャルの場と見る</li>
+<li><b><a href="#part-3">第三部 式を逆にたどると、どんなポテンシャルが見えるか</a></b>：起業家の行動の結果は、そもそもどんなポテンシャルだったのか、と問い、式を逆にたどる。前へ打った値は渦、遡った値はジュリア集合の境目になる。その境目を、起業家を駆るものが出てくるポテンシャルの場と見る</li>
 <li><b><a href="#jp-four">第四部 美の定義から入った、四段の仮説</a></b>：美の側から同じ場に近寄り、ジュリア集合のような形が神・愛・美のポテンシャルの場だと仮に置いて、最後に、美は起業家のエネルギーに近い、と結ぶ</li>
 <li><b><a href="#jp-gaps">巻末</a></b>：式の所ごとに置いた仮説と、触れていた論。原典を読む順</li>
 </ul>
@@ -442,29 +442,37 @@ Love駆動開発で、pjdhiro は、同じ駆動が、成果と呼ばれる向�
 
 </details>
 
-<!--TURN-->式の所ごとに仮説を置き、一歩を平面の上で見ました。次は、式のふるまいを解釈します。同じ式を逆にたどり、起業家の行動の結果が、どんなポテンシャルだったのかを問います。<!--/TURN-->
+<!--TURN-->式の所ごとに仮説を置き、一歩を平面の上で見ました。次は、その式のふるまいを解釈します。<!--/TURN-->
 
 <!--PART:第三部|式を逆にたどると、どんなポテンシャルが見えるか-->
 
-## 起業家の行動の結果は、そもそもどんなポテンシャルだったのか
+<!--PARTLEAD-->
 
-<!--OPEN-->
-
-<a id="jp-question"></a>第二部では、式の所ごとに、起業家の何に当たるかを置きました。ここからは、その式のふるまいを解釈します。pjdhiro は、次の問いを置いています。
+<a id="jp-question"></a>式の所ごとに置いた仮説から、pjdhiro は次の問いを立てました。
 
 <strong>pjdhiro の問い：</strong>仮に、起業家（プロジェクト推進者）の行動の二乗という何かがあって、それが Love の力で引き寄せられるなら、起業家の行動の結果は、そもそもどんなポテンシャルだったのか？
 
-二乗を、起業家の中で起きる自己と自己の掛け算と置きました。その置き方から、pjdhiro は、こうも言っています。
+二乗を、起業家の中で起きる自己と自己の掛け算と置きました。その置き方から、pjdhiro は、こうも見ています。
 
-<strong>pjdhiro の見方：</strong>脳内の自己と自己の掛け合わせなら、脳内の自己達が可能性だよね。
+<strong>pjdhiro の見方：</strong>脳内の自己と自己の掛け合わせなら、脳内の自己”達”が可能性だよね。
 
-この問いを、同じ式を逆にたどって見ていきます。起業家の思考・心理・行動が一歩ごとに移っていった跡を前へ打つと、どこに行き着き、そこから遡ると何が出てくるのか。
+第三部では、この問いを、同じ式を逆にたどって見ていきます。起業家の思考・心理・行動が一歩ごとに移っていった跡を前へ打つと、どこに行き着き、そこから遡ると何が出てくるのか。
+
+<!--/PARTLEAD-->
 
 ## ジュリア集合を、逆にたどる
 
 <!--OPEN-->
 
-<a id="jp-back"></a>pjdhiro は 2025 年 5 月、ジュリア集合の形を、点がどこから来たかをさかのぼる向きから動かして見ていました（数学では、一歩を逆に戻す決まりを逆写像と言います）。式の一歩は、逆に一段戻すこともできます。`c` の分を引いてから、平方根（`√`）を取ります。二乗して 4 になる数が 2 と −2 の二つあるように、平方根はプラスとマイナスの二つあります。図の左は、`c` を選ぶための地図で、マンデルブロ集合（「[ジュリア集合とは](#jp-about-julia)」の地図）です。その一段を、図で一歩ずつ見ます。
+<a id="jp-back"></a>式の一歩は、逆に一段戻すこともできます（数学では、一歩を逆に戻す決まりを逆写像と言います）。`c` の分を引いてから、平方根（`√`）を取ります。二乗して 4 になる数が 2 と −2 の二つあるように、平方根はプラスとマイナスの二つあります。
+
+[二乗で角度が二倍になった](#jp-sq)のを逆に戻すので、平方根で角度は半分になります。マイナスの平方根は、もう一方を 0 の周りに半回転させた写しになります。pjdhiro は 2025 年 5 月、ジュリア集合の形を、点がどこから来たかをさかのぼる向きから動かして見て、この所を記事に次のように書いています。記事は、Steven Wittens の記事「[How to Fold a Julia Fractal](https://acko.net/blog/how-to-fold-a-julia-fractal/)」の図を参考にしていました。
+
+<strong>pjdhiro の見方：</strong>☯️陰陽マークのように見える。円の分割（平方根による角度が半分になる）と反転コピー（マイナスの平方根）の箇所が。
+
+（pjdhiro の公開文「[陰陽なJulia集合を逆にたどる](https://uminomae.github.io/pjdhiro/20250531julia/)」から）
+
+その一段を、下の図で一歩ずつ見ます。図の左は、`c` を選ぶための地図で、マンデルブロ集合（「[ジュリア集合とは](#jp-about-julia)」の地図）です。右の図の背景には、この陰陽の印を薄く描いています。
 
 <figure class="glow-card reader-figure jp-fig" id="jp-fold" data-peek>
 <p class="jp-fig__title">遡る一段：円を、c の分だけ戻して ±√ で二つに分け、畳む</p>
@@ -473,9 +481,9 @@ Love駆動開発で、pjdhiro は、同じ駆動が、成果と呼ばれる向�
 <div class="jp-fig__panel"><p class="jp-fig__label">大きさ 2 の円を、一歩ずつ遡る（▶ か「一歩進める」をクリック）</p><canvas id="jp-fold-cv" width="520" height="520" aria-label="大きさ 2 の円を、− c の平行移動と、角を半分にする √ と、半回転の写しの三歩で一段ずつ遡る。色は、その部分が前の曲線のどこから来たか。背景に薄い陰陽の印"></canvas></div>
 </div>
 <div class="jp-media" role="group" aria-label="再生の操作"><button type="button" id="jp-fold-reset" class="jp-media__icon" aria-label="最初から" title="最初から"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2.4v14H6zM19 5v14L9 12z"/></svg></button><button type="button" id="jp-fold-play" class="jp-media__play" aria-pressed="false" aria-label="再生" title="再生・止める"><svg class="jp-media__on" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="jp-media__off" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.6v14H7zM13.4 5H17v14h-3.6z"/></svg></button><button type="button" id="jp-fold-back" class="jp-media__word">一歩戻す</button><button type="button" id="jp-fold-step" class="jp-media__word">一歩進める</button></div>
-<div class="jp-fig__btns" role="group" aria-label="c の例"><button type="button" data-fc="-0.8,0.16">c = −0.8 + 0.16i</button><button type="button" data-fc="golden">黄金角の c</button><button type="button" data-fc="-0.123,0.745">c = −0.12 + 0.75i</button><button type="button" data-fc="-1,0">c = −1</button><button type="button" data-fc="0,0">c = 0（円のまま）</button></div>
+<div class="jp-fig__btns" role="group" aria-label="c の例"><button type="button" data-fc="-0.79,0.13">c = −0.79 + 0.13i</button><button type="button" data-fc="-0.123,0.745">c = −0.12 + 0.75i</button><button type="button" data-fc="golden">黄金角の c</button><button type="button" data-fc="-0.8,0.16">c = −0.8 + 0.16i</button><button type="button" data-fc="-1,0">c = −1</button><button type="button" data-fc="0,0">c = 0（円のまま）</button></div>
 <p class="jp-fig__readout jp-fig__readout--pre" id="jp-fold-out">図はページの中の JavaScript で描きます。</p>
-<figcaption>大きさ 2 の円を、遡る一段 <code>±√(w − c)</code> で一段ずつ遡ります。一段を「− c」「√」「−√」の三歩に分けて、一歩ずつ進めたり戻したりできます。色は、その点が最初の円のどこから来たかで、同じ色の所は、最初の円の同じ所から来ています。薄い灰の線は、その一歩の前の形です。背景に薄く描いた陰陽の印（☯）は、pjdhiro が 2025 年の記事で「陰陽マークのように見える」と見た所（√ で角が半分になって右半分に縮み、−√ の半回転の写しが左半分を埋める）に重ねたものです。</figcaption>
+<figcaption>大きさ 2 の円を、遡る一段 <code>±√(w − c)</code> で一段ずつ遡ります。一段を「− c」「√」「−√」の三歩に分けて、一歩ずつ進めたり戻したりできます。色は、その点が最初の円のどこから来たかで、同じ色の所は、最初の円の同じ所から来ています。薄い灰の線は、その一歩の前の形です。背景に薄く描いた陰陽の印（☯）は、上の pjdhiro の見方の所（√ で角が半分になって右半分に縮み、−√ の半回転の写しが左半分を埋める）に重ねたものです。</figcaption>
 </figure>
 
 <details><summary>詳しく — 図の見方：一段を三歩に分けて遡ると、円が畳まれる</summary>
@@ -486,17 +494,15 @@ Love駆動開発で、pjdhiro は、同じ駆動が、成果と呼ばれる向�
 
 一歩目の「− c」で、曲線の全体を <code>−c</code> だけずらします（矢印）。二歩目の「√」で、0 の周りの角を半分に、0 からの距離を √ にします。曲線は、0 から左へのびる線（負の実軸）で切れ、一周が右半分の半周に縮みます。三歩目の「−√」で、その写しを 0 の周りに半回転させたもう一つの写し（濃い色）が、左半分を埋めます。曲線の内側は、遡った段の数だけ前へ打っても大きさ 2 を超えない点の集まりで、段を重ねるほど、くり返しても遠くへ行かない点の集まり（充填ジュリア集合）に寄ります。
 
-図の最初の `c` = −0.8 + 0.16i は、左の地図の黒い形のわずかに外にあります。0 から前へ打つと 39 歩目で大きさ 2 を超えるので、段を 39 より深く重ねると曲線は二つに切れ、遠くへ行かない点は、かけらに分かれます。この図の 12 段までは、曲線は一本のままです。
+図の最初の `c` = −0.79 + 0.13i は、左の地図の黒い形の中で、本体の左隣の丸い房の、ふちの近くにあります。形はひとつながりなので、段をいくら重ねても曲線は一本のままです。ふちに近いので、境目の模様は、渦を巻くように巻き込みます。ページの上の「ジュリア集合とは」のサムネイル（`c` = −0.8 + 0.16i）と、ほぼ同じ形です。その −0.8 + 0.16i は、黒い形のわずかに外にあります。0 から前へ打つと 39 歩目で大きさ 2 を超えるので、段を 39 より深く重ねると曲線は二つに切れ、遠くへ行かない点は、かけらに分かれます（この図の 12 段までは、一本のままです）。
 
 </details>
 
-[二乗で角度が二倍になった](#jp-sq)のを逆に戻すので、平方根で角度は半分になります。マイナスの平方根は、もう一方を 0 の周りに半回転させた写しになります。pjdhiro は、2025 年 5 月の記事に、この所を次のように書いています。記事も、Steven Wittens の記事「[How to Fold a Julia Fractal](https://acko.net/blog/how-to-fold-a-julia-fractal/)」の図を参考にしていました。
-
-<strong>pjdhiro の見方：</strong>☯️陰陽マークのように見える。円の分割（平方根による角度が半分になる）と反転コピー（マイナスの平方根）の箇所が。
+同じ記事は、遡った先を、こう見ています。
 
 <strong>pjdhiro の見方：</strong>発散しそうでしない境界で複雑な模様になる。「境界が曖昧な地点」＝「創造が生まれる土壌」という直感にまた一つ。
 
-（pjdhiro の公開文「[陰陽なJulia集合を逆にたどる](https://uminomae.github.io/pjdhiro/20250531julia/)」から）
+（同じ公開文「[陰陽なJulia集合を逆にたどる](https://uminomae.github.io/pjdhiro/20250531julia/)」から）
 
 ## 値を前へ打つと渦になり、遡るとジュリア集合の形になる
 
@@ -504,7 +510,21 @@ Love駆動開発で、pjdhiro は、同じ駆動が、成果と呼ばれる向�
 
 <a id="jp-vortex"></a>前へ進めて渦になるのは、`c` がマンデルブロ集合の本体（大きなハート形）の中にあるときです。
 
-よく見るジュリア集合の絵は、平面のすべての点を出発点にして式をくり返し、遠くへ行く点と行かない点を塗り分けて描きます（章の終わりの畳みの図）。この章でするのは、それとは別のことです。出発点を 0 の一つだけにして、出てきた値 `z₀, z₁, z₂…` そのものを順に平面に打ちます（赤）。第一部の木で言えば、塗り分けは平面の全部の点を試す全探索の絵で、前へ打つ赤は、一本の道を歩いた跡の絵です。同じ式を、どの位置から見るかの違いです。そして、赤の一点から、同じ式を逆に `±√(z − c)` で一段ずつ遡ります。遡る一段では、`+√` と `−√` の両方をたどるので、一段ごとに点が二倍に分かれます。その枝を全部打ちます。
+よく見るジュリア集合の絵は、平面の全部の点から式をくり返して塗り分けた、全探索の絵です（章の終わりの畳みの図）。この章では、0 の一点から前へ打った値 `z₀, z₁, z₂…`（赤）が、一本の道を歩いた跡です。その赤の一点から、同じ式を逆に一段ずつ遡ると、遡りは木になります。
+
+<figure class="glow-card reader-figure jp-fig" id="jp-btree">
+<p class="jp-fig__title">遡りの木：赤の一点から、一段ごとに +√ と −√ の二つに分かれる</p>
+<div class="jp-fig__grid jp-fig__grid--btree">
+<div class="jp-fig__panel"><p class="jp-fig__label">木（根が赤の一点。左の枝が +√、右の枝が −√）。点をクリックすると、根からの道が出る</p><canvas id="jp-btree-t" width="560" height="380" aria-label="遡りの木。根は赤の一点で、一段ごとにどの点も +√ と −√ の二つの枝に分かれる。実際に通ってきた道は赤い太線"></canvas></div>
+<div class="jp-fig__panel"><p class="jp-fig__label">同じ点を平面に打つ（薄い色の形の縁が、ジュリア集合の境目）</p><canvas id="jp-btree-p" width="420" height="420" aria-label="遡った点を平面に打つ。浅い段は紺、深い段は金で、深い段ほど薄い色の形の縁に寄る"></canvas></div>
+</div>
+<div class="jp-media" role="group" aria-label="遡りの操作"><button type="button" id="jp-btree-reset" class="jp-media__icon" aria-label="最初から" title="最初から"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2.4v14H6zM19 5v14L9 12z"/></svg></button><button type="button" id="jp-btree-play" class="jp-media__play" aria-pressed="false" aria-label="再生" title="再生・止める"><svg class="jp-media__on" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="jp-media__off" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.6v14H7zM13.4 5H17v14h-3.6z"/></svg></button><button type="button" id="jp-btree-back" class="jp-media__word">一段戻す</button><button type="button" id="jp-btree-step" class="jp-media__word">一段遡る</button></div>
+<div class="jp-fig__btns" role="group" aria-label="c の例"><button type="button" data-bc="-0.79,0.13" aria-pressed="true">c = −0.79 + 0.13i</button><button type="button" data-bc="golden" aria-pressed="false">黄金角の c</button><button type="button" data-bc="-0.123,0.745" aria-pressed="false">c = −0.12 + 0.75i</button></div>
+<p class="jp-fig__readout jp-fig__readout--pre" id="jp-btree-out">図はページの中の JavaScript で描きます。</p>
+<figcaption>根は、0 から 5 歩前へ打った赤の一点 <code>z₅</code> です。一段遡るごとに、どの点も <code>+√(w − c)</code> と <code>−√(w − c)</code> の二つに分かれ、k 段目は 2 の k 乗の点になります。木は 5 段まで、平面には 10 段まで同じ点を打ちます（紺が浅い段、金が深い段）。赤い太線は、実際に前へ通ってきた道で、5 段で出発の 0 に着きます。ほかの枝は、通らなかった一つ前で、段が深いほど、薄い色の形の縁（ジュリア集合の境目）に寄ります。木の点か平面の点をクリックすると、その点と、根からの +√・−√ の道が出ます。計算は Claude。</figcaption>
+</figure>
+
+下の図は、この遡りを、前へ打った赤の渦と一枚に重ねて、段を 100 まで深くしたものです。
 
 <details><summary>詳しく — よくある塗り分けと、この章の打ち方の違い（計算式とプロット）</summary>
 

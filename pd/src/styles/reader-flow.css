@@ -176,6 +176,10 @@ body.reader-flow .reader-article .reader-part__title {
     color: var(--navy);
 }
 
+/* 部の頭の文（正本 MD の <!--PARTLEAD-->。章にせず、部の見出しの下に本文として置く。2026-11-21） */
+body.reader-flow .reader-article .reader-part__lead { margin: 14px 0 0; }
+body.reader-flow .reader-article .reader-part__lead > *:first-child { margin-top: 0; }
+
 /* ===== 部の中の章の束（正本 MD の <!--LENS:-->。部より一段小さい見出しと、短い案内） ===== */
 body.reader-flow .reader-article .reader-lens {
     margin: 40px 0 8px;
