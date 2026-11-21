@@ -888,7 +888,7 @@
     }
     function arrowTo(ctx, a, b, color) {
       // 図の枠の外へ出る線は、枠の手前で止めて矢じりを付ける
-      let [x0, y0] = P(a[0], a[1]), [x1, y1] = P(b[0], b[1]); const inb = (x, y) => x > 8 && x < W - 8 && y > 8 && y < H * 0.7;
+      let [x0, y0] = P(a[0], a[1]), [x1, y1] = P(b[0], b[1]); const inb = (x, y) => x > 8 && x < W - 8 && y > 8 && y < H * 0.62;
       if (!inb(x1, y1)) { let lo = 0, hi = 1; for (let i = 0; i < 30; i++) { const t = (lo + hi) / 2; if (inb(x0 + (x1 - x0) * t, y0 + (y1 - y0) * t)) lo = t; else hi = t; } x1 = x0 + (x1 - x0) * lo; y1 = y0 + (y1 - y0) * lo; }
       ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = 2.2; ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x1, y1); ctx.stroke();
       const g = Math.atan2(y1 - y0, x1 - x0); ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x1 - 12 * Math.cos(g - 0.4), y1 - 12 * Math.sin(g - 0.4)); ctx.lineTo(x1 - 12 * Math.cos(g + 0.4), y1 - 12 * Math.sin(g + 0.4)); ctx.closePath(); ctx.fill();
