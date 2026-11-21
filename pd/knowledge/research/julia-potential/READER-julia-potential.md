@@ -368,7 +368,7 @@ pjdhiro は、その答えを、起業家の中で起きることに見ていま
 
 自己認識が自我の側だけを見ているなら、実際の一歩は、見込みとずれていきます。そのずれを振り返ると、気づいていなかった自分が見えてくる、という読みです（式に当てた計算は、下の畳み）。
 
-<details id="jp-self-calc"><summary>詳しく — 自己と自己の掛け算を、式に当てると</summary>
+<details id="jp-self-calc" data-peek><summary>詳しく — 自己と自己の掛け算を、式に当てると</summary>
 
 二乗を自己と自己の掛け合わせと読むなら、`z` を二つの自己が重なったものと見て、`z = a + b` と書くと、二乗は `z² = a² + b² + 2ab` になります。`a²` と `b²` は、それぞれが自分を回す分です。`2ab` は、二つが互いに掛け合わさる分で、どちらか一つだけからは出てきません。
 
@@ -425,7 +425,7 @@ Love駆動開発で、pjdhiro は、同じ駆動が、成果と呼ばれる向�
 
 二乗には、式の上で二つのはたらきがあります。一つは、平面の上の点を、原点から見た角度を二倍にし、原点からの距離を二乗にすることです。距離が 1 より小さい値はさらに小さく、1 より大きい値はさらに大きくなります。もう一つは、向きが逆の二つの値 `z` と `−z` を、同じ一つの値に送ることです（二対一）。二乗したあとの値からは、二つのどちらから来たのかが分かりません。
 
-<figure class="glow-card reader-figure jp-fig" id="jp-sq" data-peek>
+<figure class="glow-card reader-figure jp-fig" id="jp-sq" data-peek data-peek-dock="二乗を手で動かす">
 <p class="jp-fig__title">二乗を手で動かす：角度は二倍、距離は二乗、z と −z は同じ所へ</p>
 <div class="jp-fig__grid jp-fig__grid--one"><div class="jp-fig__panel"><p class="jp-fig__label">点 z をつまんで動かすと、z²（赤）が動く</p><canvas id="jp-sq-cv" class="jp-fig__drag" width="480" height="480" aria-label="平面に、距離 1 の円が点線で描かれている。つまんで動かせる点 z と、その二乗 z²、原点の反対側の点 −z が、原点からの線と角度の弧で示される"></canvas></div></div>
 <div class="jp-media" role="group" aria-label="二乗をくり返す操作"><button type="button" id="jp-sq-back" class="jp-media__icon" aria-label="はじめの z に戻す" title="はじめの z に戻す"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2.4v14H6zM19 5v14L9 12z"/></svg></button><button type="button" id="jp-sq-iter" class="jp-media__play" aria-pressed="false" aria-label="二乗をくり返す" title="二乗をくり返す・止める"><svg class="jp-media__on" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="jp-media__off" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.6v14H7zM13.4 5H17v14h-3.6z"/></svg></button><button type="button" id="jp-sq-once" class="jp-media__word">もう一度二乗する</button></div>
@@ -435,7 +435,7 @@ Love駆動開発で、pjdhiro は、同じ駆動が、成果と呼ばれる向�
 <label class="jp-fig__slider"><span>z の原点からの距離 <output for="jp-sq-r">0.80</output></span><input type="range" id="jp-sq-r" min="0.1" max="1.6" step="0.01" value="0.8"></label>
 </div>
 <div class="jp-fig__group"><p class="jp-fig__glabel">c も足してみる</p>
-<div class="jp-fig__btns" role="group" aria-label="c を足すか"><button type="button" data-sqc="0,0" aria-pressed="true">c を足さない</button><button type="button" data-sqc="-0.5,0.5" aria-pressed="false">c = −0.5 + 0.5i を足す</button></div></div>
+<div class="jp-fig__btns" role="group" aria-label="c を足すか"><button type="button" data-sqc="0,0" aria-pressed="true">c を足さない</button><button type="button" data-sqc="-0.8,0.16" aria-pressed="false">c = −0.8 + 0.16i を足す</button></div></div>
 <p class="jp-fig__readout jp-fig__readout--pre" id="jp-sq-out">図はページの中の JavaScript で描きます。</p>
 <figcaption>弧は、横の軸から左回りに測った角度です（青が z、赤が z²）。赤の弧は、いつも青の弧の二倍です。角度のスライダを動かすと、z² は z の二倍の速さで回ります。距離のスライダを 1 より小さくすると z² は原点へ寄り、1 より大きくすると離れます。「z を一周させる」をクリックすると、z が一周するあいだに、z² は二周します（薄い線は通った跡）。白抜きの点 −z は、原点の反対側の点で、二乗すると z と同じ z² に行きます。z が半周して −z の位置に来たとき、z² はちょうど一周して同じ所に戻ります。「c を足す」をクリックすると、z² から、決まった向きに決まった長さだけずれた点（金色）が出ます。これが次の値 z² + c です。「もう一度二乗する」をクリックすると、いまの z² が次の z になり、その二乗が出ます（c を足しているときは z² + c が次の z）。灰の点と点線は、それまでの z です。c を足さないとき、距離 1 の円の内側から始めると原点へ寄り、外側から始めると遠ざかります。</figcaption>
 </figure>
@@ -470,12 +470,12 @@ Love駆動開発で、pjdhiro は、同じ駆動が、成果と呼ばれる向�
 <p class="jp-fig__title">遡る一段：円を、c の分だけ戻して ±√ で二つに分け、畳む</p>
 <div class="jp-fig__grid jp-fig__grid--fold">
 <div class="jp-fig__panel"><p class="jp-fig__label">c を選ぶ地図（黒い形の中をクリックすると c が変わる）</p><canvas id="jp-fold-c" width="300" height="260" aria-label="マンデルブロ集合。黒い形の中でクリックした所が c になる"></canvas></div>
-<div class="jp-fig__panel"><p class="jp-fig__label">大きさ 2 の円を、一歩ずつ遡る（▶ か「一歩進める」をクリック）</p><canvas id="jp-fold-cv" width="520" height="520" aria-label="大きさ 2 の円を、− c の平行移動と、角を半分にする √ と、半回転の写しの三歩で一段ずつ遡る。色は、その部分が前の曲線のどこから来たか"></canvas></div>
+<div class="jp-fig__panel"><p class="jp-fig__label">大きさ 2 の円を、一歩ずつ遡る（▶ か「一歩進める」をクリック）</p><canvas id="jp-fold-cv" width="520" height="520" aria-label="大きさ 2 の円を、− c の平行移動と、角を半分にする √ と、半回転の写しの三歩で一段ずつ遡る。色は、その部分が前の曲線のどこから来たか。背景に薄い陰陽の印"></canvas></div>
 </div>
 <div class="jp-media" role="group" aria-label="再生の操作"><button type="button" id="jp-fold-reset" class="jp-media__icon" aria-label="最初から" title="最初から"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2.4v14H6zM19 5v14L9 12z"/></svg></button><button type="button" id="jp-fold-play" class="jp-media__play" aria-pressed="false" aria-label="再生" title="再生・止める"><svg class="jp-media__on" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="jp-media__off" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.6v14H7zM13.4 5H17v14h-3.6z"/></svg></button><button type="button" id="jp-fold-back" class="jp-media__word">一歩戻す</button><button type="button" id="jp-fold-step" class="jp-media__word">一歩進める</button></div>
-<div class="jp-fig__btns" role="group" aria-label="c の例"><button type="button" data-fc="golden">黄金角の c</button><button type="button" data-fc="-0.123,0.745">c = −0.12 + 0.75i</button><button type="button" data-fc="-1,0">c = −1</button><button type="button" data-fc="0,0">c = 0（円のまま）</button></div>
+<div class="jp-fig__btns" role="group" aria-label="c の例"><button type="button" data-fc="-0.8,0.16">c = −0.8 + 0.16i</button><button type="button" data-fc="golden">黄金角の c</button><button type="button" data-fc="-0.123,0.745">c = −0.12 + 0.75i</button><button type="button" data-fc="-1,0">c = −1</button><button type="button" data-fc="0,0">c = 0（円のまま）</button></div>
 <p class="jp-fig__readout jp-fig__readout--pre" id="jp-fold-out">図はページの中の JavaScript で描きます。</p>
-<figcaption>大きさ 2 の円を、遡る一段 <code>±√(w − c)</code> で一段ずつ遡ります。一段を「− c」「√」「−√」の三歩に分けて、一歩ずつ進めたり戻したりできます。色は、その点が最初の円のどこから来たかで、同じ色の所は、最初の円の同じ所から来ています。薄い灰の線は、その一歩の前の形です。</figcaption>
+<figcaption>大きさ 2 の円を、遡る一段 <code>±√(w − c)</code> で一段ずつ遡ります。一段を「− c」「√」「−√」の三歩に分けて、一歩ずつ進めたり戻したりできます。色は、その点が最初の円のどこから来たかで、同じ色の所は、最初の円の同じ所から来ています。薄い灰の線は、その一歩の前の形です。背景に薄く描いた陰陽の印（☯）は、pjdhiro が 2025 年の記事で「陰陽マークのように見える」と見た所（√ で角が半分になって右半分に縮み、−√ の半回転の写しが左半分を埋める）に重ねたものです。</figcaption>
 </figure>
 
 <details><summary>詳しく — 図の見方：一段を三歩に分けて遡ると、円が畳まれる</summary>
@@ -485,6 +485,8 @@ Love駆動開発で、pjdhiro は、同じ駆動が、成果と呼ばれる向�
 円の上の一点は、一段遡るごとに二つに分かれ、二つの点は、0 を挟んで向かい合います。前の曲線の一周が、右の半分と左の半分に一回ずつ写り、円が自分に巻きついて畳まれます。くびれと突き出しは、段ごとに細かくなっていきます。
 
 一歩目の「− c」で、曲線の全体を <code>−c</code> だけずらします（矢印）。二歩目の「√」で、0 の周りの角を半分に、0 からの距離を √ にします。曲線は、0 から左へのびる線（負の実軸）で切れ、一周が右半分の半周に縮みます。三歩目の「−√」で、その写しを 0 の周りに半回転させたもう一つの写し（濃い色）が、左半分を埋めます。曲線の内側は、遡った段の数だけ前へ打っても大きさ 2 を超えない点の集まりで、段を重ねるほど、くり返しても遠くへ行かない点の集まり（充填ジュリア集合）に寄ります。
+
+図の最初の `c` = −0.8 + 0.16i は、左の地図の黒い形のわずかに外にあります。0 から前へ打つと 39 歩目で大きさ 2 を超えるので、段を 39 より深く重ねると曲線は二つに切れ、遠くへ行かない点は、かけらに分かれます。この図の 12 段までは、曲線は一本のままです。
 
 </details>
 
@@ -576,23 +578,11 @@ c を選ぶ地図（マンデルブロ集合）は、塗り分けと同じ計算
 
 </details>
 
-この図を見て、pjdhiro は次のように言いました。
+この図を見て、pjdhiro は次の問いを立てました。
 
-<strong>pjdhiro の見方：</strong>渦のように、発散せずに一か所に、原点に近いところに集まるよね。
+<strong>pjdhiro の問い：</strong>この渦の軌跡と、ジュリア集合の関係が何を意味するのか。それを直感で読み取りたいのです。
 
-<strong>pjdhiro の問い：</strong>次に私が気になるのは、この渦の軌跡と、ジュリア集合の関係が何を意味するのか、ということ。それを直感で読み取りたいのです。
-
-pjdhiro は、この関係を、起業家のたとえに戻して、こう読みました。
-
-<strong>pjdhiro の見方：</strong>起業家のたとえで言うと、渦を巻くように進んでいくでしょう。その渦は、もしも違うルートで来られたとしたら、ジュリア集合のような軌跡だったかもしれません。認知されませんが。
-
-このたとえに当てると、前へ打った赤は、起業家の思考・心理・行動が一歩ごとに移っていった跡で、実際に通ってきた一通りの道と読めます。遡ると、一段ごとに、ありえた一つ前が二つに分かれます。赤い太線のほかは、認知されなかった道かもしれず、それらは、ジュリア集合の境目に散ります。
-
-遡る向きは、起業家がどこから来たかとしても読めます。pjdhiro は、起業家を遡った先を、こう見ています。
-
-<strong>pjdhiro の見方：</strong>起業家自身を遡れば、父と母のルーツから来ているとして、連綿と続くよね。宇宙の最初まで。
-
-この遡りは、人が父と母の二人から生まれ、k 代前の親の席が 2 の k 乗ある数え方と、同じ形をしています。同じ枝が、ありえた道にも、いまの思考・心理・行動に至るまでの来歴にも見えます。
+起業家のたとえに戻すと、前へ打った赤は、起業家の思考・心理・行動が一歩ごとに移っていった跡で、実際に通ってきた一通りの道と読めます。遡ると、一段ごとに、ありえた一つ前が二つに分かれます。pjdhiro は、起業家は渦を巻くように進み、違うルートで来ていたら、その渦はジュリア集合のような軌跡だったかもしれない、と見ています。赤い太線のほかの枝は、認知されなかった道かもしれず、それらはジュリア集合の境目に散ります。同じ枝は、起業家がどこから来たかの来歴とも同じ形をしています。人は父と母の二人から生まれ、k 代前の親の席は 2 の k 乗あるからです。
 
 この振る舞いを、Love駆動開発の言葉で読んでみます。読みは一つに決まらないので、いまの読みを並べます。
 
@@ -613,8 +603,8 @@ pjdhiro は、この関係を、起業家のたとえに戻して、こう読み
 </div>
 <div class="jp-fig__btns" role="group" aria-label="c の例"><button type="button" data-jc="0,0">c = 0（円）</button><button type="button" data-jc="-1,0">c = −1</button><button type="button" data-jc="-0.378,0.562">黄金角の c</button><button type="button" data-jc="-0.123,0.745">c = −0.12 + 0.75i</button><button type="button" data-jc="-0.8,0.16">c = −0.8 + 0.16i</button><button type="button" data-jc="0.3,0">c = 0.3（地図の外）</button></div>
 <div class="jp-fig__sliders">
-<label class="jp-fig__slider"><span>c の実部 <output id="jp-cre-out">−0.123</output></span><input type="range" id="jp-cre" min="-2.25" max="0.75" step="0.001" value="-0.123"></label>
-<label class="jp-fig__slider"><span>c の虚部 <output id="jp-cim-out">0.745</output></span><input type="range" id="jp-cim" min="-1.3" max="1.3" step="0.001" value="0.745"></label>
+<label class="jp-fig__slider"><span>c の実部 <output id="jp-cre-out">−0.800</output></span><input type="range" id="jp-cre" min="-2.25" max="0.75" step="0.001" value="-0.8"></label>
+<label class="jp-fig__slider"><span>c の虚部 <output id="jp-cim-out">0.160</output></span><input type="range" id="jp-cim" min="-1.3" max="1.3" step="0.001" value="0.16"></label>
 </div>
 <p class="jp-fig__readout" id="jp-readout">図はページの中の JavaScript で描きます。</p>
 <figcaption>左は、0 から始めて <code>z → z² + c</code> をくり返しても遠くへ行かない <code>c</code> の集まり（マンデルブロ集合）。右は、選んだ <code>c</code> で、くり返しても遠くへ行かない点（濃い色）と、行ってしまう点（薄い色ほど早く行く）。<code>c</code> を地図の外に置くと、形はひとつながりでなく、かけらに分かれます。</figcaption>

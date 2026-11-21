@@ -490,6 +490,10 @@ body.reader-flow .reader-article .peek__body {
     padding: 4px 20px 16px;
 }
 body.reader-flow .reader-article .peek__body img { max-width: 100%; height: auto; }
+/* 章の頭の小窓の下の「この章へ移る」（2026-11-21・付箋 i202611210239561it） */
+body.reader-flow .reader-article .peek__foot { display: flex; justify-content: flex-end; padding: 8px 12px; border-top: 1px solid var(--glass-border-soft); }
+body.reader-flow .reader-article .peek__foot[hidden] { display: none; }
+body.reader-flow .reader-article .peek__go { min-height: 44px; padding: 0 16px; border: 1px solid var(--glass-border-faint); background: var(--glass-bg-faint); color: var(--navy); border-radius: 99px; font-size: 0.9rem; cursor: pointer; }
 body.reader-flow .reader-article .peek__body pre { max-width: 100%; overflow-x: auto; }
 body.reader-flow .jump-back {
     position: fixed;
