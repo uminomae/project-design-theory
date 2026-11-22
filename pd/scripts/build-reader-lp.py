@@ -282,6 +282,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/no-road-ahead/READER-no-road-ahead.md",
+        ROOT / "scripts/reader-no-road-ahead-template.html",
+        ROOT / "reader/no-road-ahead.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/nondual/READER-nondual.md",
         ROOT / "scripts/reader-nondual-template.html",
         ROOT / "reader/nondual.html",

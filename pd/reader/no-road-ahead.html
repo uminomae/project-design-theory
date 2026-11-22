@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/no-road-ahead.html を直接編集しないでください。
+  正本:   knowledge/research/no-road-ahead/READER-no-road-ahead.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「僕の前に道はない」のページです（工事中）。時間を、自分が未来へ向かうと見るか、未来がやってくると見るか。どちらも正しい二つの見方が曖昧になると、取り違えが起きやすいのではないか。高村光太郎の詩「道程」から入り、一方向に流れる素朴な時間の上に、先で枝が分かれる探索の木（全探索・入れ子の深さ優先探索）と、過去の側で枝が分かれる遡りの木（ジュリア集合の式の逆写像）を置き直して、時間の見え方が変わるところを読む人が通る、工事中の読み物。
+  木と時間の当てはめは pjdhiro と Claude が対話で共有した仮のもので、論証ではない。研究と古典の説明は Claude が原典から書いた要約で、英語・デンマーク語の訳は Claude。載せた出典は本文で照合し、各章の畳み「出典」「詳しく」に頁を添えている。図「同じ形の木を三つの位置から見る」と「遡りの木」は、読み物「起業家の漸化式と、ジュリア集合」の図の写し。
+  pjdhiro 本人の言葉は「pjdhiro の問い：」「pjdhiro の見方：」「pjdhiro のたとえ：」で引用。各部の終わりの「問い」は、読む人に向けた、答えを書かない問い。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>僕の前に道はない | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/no-road-ahead.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="時間を、自分が未来へ向かうと見るか、未来がやってくると見るか。どちらも正しい二つの見方が曖昧になると、取り違えが起きやすいのではないか。高村光太郎の詩「道程」から入り、一方向に流れる素朴な時間の上に、先で枝が分かれる探索の木（全探索・入れ子の深さ優先探索）と、過去の側で枝が分かれる遡りの木（ジュリア集合の式の逆写像）を置き直して、時間の見え方が変わるところを読む人が通る、工事中の読み物。">
+    <meta property="og:title" content="僕の前に道はない">
+    <meta property="og:description" content="時間を、自分が未来へ向かうと見るか、未来がやってくると見るか。どちらも正しい二つの見方が曖昧になると、取り違えが起きやすいのではないか。高村光太郎の詩「道程」から入り、一方向に流れる素朴な時間の上に、先で枝が分かれる探索の木（全探索・入れ子の深さ優先探索）と、過去の側で枝が分かれる遡りの木（ジュリア集合の式の逆写像）を置き直して、時間の見え方が変わるところを読む人が通る、工事中の読み物。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/no-road-ahead.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="僕の前に道はない">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-22">
+    <meta property="article:modified_time" content="2026-11-22">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "僕の前に道はない",
+          "description": "時間を、自分が未来へ向かうと見るか、未来がやってくると見るか。どちらも正しい二つの見方が曖昧になると、取り違えが起きやすいのではないか。高村光太郎の詩「道程」から入り、一方向に流れる素朴な時間の上に、先で枝が分かれる探索の木（全探索・入れ子の深さ優先探索）と、過去の側で枝が分かれる遡りの木（ジュリア集合の式の逆写像）を置き直して、時間の見え方が変わるところを読む人が通る、工事中の読み物。",
+          "keywords": "時間, 基準系, 道程, 高村光太郎, 不定時法, 和時計, 決定ツリー, 深さ優先探索, ジュリア集合, 逆写像, 来歴, 失敗, 計画, キルケゴール, 四元数, 発達段階, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/no-road-ahead.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/no-road-ahead.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-22",
+          "dateModified": "2026-11-22",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "時間"}, {"@type": "Thing", "name": "意思決定"}, {"@type": "Thing", "name": "ジュリア集合"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+    <style>
+      /* 第二部の「同じ木を三つの位置から見る」図（起業家の漸化式と、ジュリア集合から写した）。狭い幅では縦に積む（2026-11-21・付箋 i20261120175741hig） */
+      .jp-trees { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 0.6rem; }
+      .jp-trees svg { display: block; width: 100%; height: auto; max-width: 22rem; margin-inline: auto; }
+      .jp-fig { --panel:#ffffff; --mid:#5b6476; --coral:#c4573f; --gold:#b7950b; --set:#1d2433; --esc0:#e6eaf2; --esc1:#9fb0cf; --line:#d9dde5; --navy:#24407a; padding: 1rem; }
+      .jp-fig__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 1rem; }
+      .jp-fig__panel { min-width: 0; }
+      .jp-fig__label { margin: 0 0 .3rem; font-size: .85rem; }
+      /* アニメの中の字幕：図の下の余白に、その場面・その一歩の一文を重ねる（2026-11-21・付箋 i20261121043634uo3「ジュリア集合の解説は動画やアニメと一緒に、そのアニメの中に文章を入れた方がいい。」） */
+      .jp-fig[hidden] { display: none !important; }
+      .jp-stage { position: relative; }
+      #jp-about-julia .jp-stage { max-width: 30rem; margin-inline: auto; }
+      .jp-stage__cap { position: absolute; left: .5rem; right: .5rem; bottom: .5rem; margin: 0; padding: .5rem .75rem; border-radius: 8px; border: 1px solid var(--line); background: rgba(255,255,255,.93); font-family: var(--sans); font-size: .95rem; line-height: 1.6; color: var(--set); }
+      .jp-stage__no { position: absolute; top: .4rem; right: .6rem; margin: 0; font-size: .78rem; color: var(--mid); font-variant-numeric: tabular-nums; }
+      #jp-fold .jp-stage__cap { font-size: .86rem; }
+      @media (max-width: 30rem) { .jp-stage__cap, #jp-fold .jp-stage__cap { left: .3rem; right: .3rem; bottom: .3rem; padding: .35rem .55rem; font-size: .8rem; line-height: 1.5; } }
+      .jp-fig__title { margin: 0 0 .7rem; font-family: var(--sans); font-size: .95rem; font-weight: 700; line-height: 1.5; color: var(--set); }
+      .jp-fig canvas.jp-fig__drag { touch-action: none; cursor: grab; }
+      .peek__body .jp-fig { margin: 0; }
+      .peek__body .jp-fig__title { display: none; }
+      .jp-fig canvas { width: 100%; height: auto; display: block; border-radius: 4px; touch-action: manipulation; }
+      #jp-mand { cursor: crosshair; }
+      .jp-fig__btns { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .8rem; align-items: center; }
+      .jp-fig__btns button { font: inherit; font-size: .86rem; border: 1px solid var(--line); background: var(--panel); color: #1d2433; border-radius: 999px; padding: .3rem .8rem; cursor: pointer; }
+      .jp-fig__btns button:hover { border-color: var(--navy); }
+      .jp-fig__btns button:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+      .jp-fig__btns button[aria-pressed="true"] { background: var(--navy); color: var(--panel); border-color: var(--navy); }
+      .jp-fig__readout { font-size: .85rem; margin: .6rem 0 0; }
+      .jp-fig__readout--pre { white-space: pre-line; font-variant-numeric: tabular-nums; }
+      .jp-fig__grid--three { grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); }
+      /* 一枚の図は小さめにし、操作のボタンをすぐ下に、状態の文はその後に置く。図と操作が一つの画面に収まり、スクロールせずに動かせる（pjdhiro 2026-11-20・付箋 i20261120135335jag） */
+      .jp-fig__grid--one { grid-template-columns: 1fr; max-width: 18rem; margin-inline: auto; }
+      .jp-fig__grid--fold { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); align-items: start; }
+      .jp-fig__grid--btree { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; }
+      @media (max-width: 40rem) { .jp-fig__grid--btree { grid-template-columns: 1fr; } }
+      @media (max-width: 40rem) { .jp-fig__grid--fold { grid-template-columns: 1fr; } .jp-fig__grid--fold .jp-fig__panel:first-child canvas { max-width: 15rem; margin-inline: auto; } }
+      .jp-fig__group { margin-top: .9rem; padding-top: .6rem; border-top: 1px solid var(--line); }
+      .jp-fig__glabel { margin: 0 0 .2rem; font-size: .8rem; letter-spacing: .04em; color: var(--mid); }
+      details.jp-fig__fold { margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; padding-bottom: 0; background: none; border-left: 0; border-right: 0; border-bottom: 0; border-radius: 0; box-shadow: none; }
+      details.jp-fig__fold > summary { cursor: pointer; padding: 0; background: none; }
+      #jp-lab-c, #jp-lab-1, #jp-lab-2 { cursor: crosshair; }
+      .jp-fig__btns button[aria-pressed="true"] { background: var(--navy); color: var(--panel); border-color: var(--navy); }
+      /* 図の再生の操作は、オーディオや動画の操作のように、図のすぐ下に一列で置く（pjdhiro 2026-11-20・付箋 i20261120140451d66・i20261120140707ezl）。▶ と ⏸ は aria-pressed で入れ替える */
+      .jp-media { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin-top: .6rem; padding: .35rem .5rem; border: 1px solid var(--line); border-radius: 1.6rem; background: var(--panel); width: fit-content; max-width: 100%; }
+      .jp-media button { font: inherit; font-size: .86rem; color: var(--set); background: transparent; border: 0; border-radius: 999px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
+      .jp-media button:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+      .jp-media svg { width: 1.15rem; height: 1.15rem; fill: currentColor; }
+      .jp-media__icon { width: 2.2rem; height: 2.2rem; }
+      .jp-media__icon:hover, .jp-media__word:hover { background: var(--esc0); }
+      .jp-media__play { width: 2.6rem; height: 2.6rem; background: var(--navy) !important; color: var(--panel) !important; }
+      .jp-media__play .jp-media__off, .jp-media__play[aria-pressed="true"] .jp-media__on { display: none; }
+      .jp-media__play[aria-pressed="true"] .jp-media__off { display: block; }
+      .jp-media__word { padding: .35rem .7rem; border: 1px solid var(--line) !important; }
+      .jp-media__word[aria-pressed="true"] { background: var(--navy); color: var(--panel); border-color: var(--navy) !important; }
+      @media (max-width: 30rem) { .jp-media { gap: .25rem; } .jp-media__icon { width: 2rem; height: 2rem; } .jp-media__word { padding: .3rem .5rem; font-size: .8rem !important; } }
+      .jp-fig__sliders { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; align-items: end; margin-top: .8rem; }
+      .jp-fig__slider { display: grid; gap: .2rem; flex: 1 1 12rem; min-width: 0; font-size: .85rem; }
+      .jp-fig__slider output { font-variant-numeric: tabular-nums; margin-left: .3rem; }
+      .jp-fig__slider input[type="range"] { width: 100%; accent-color: var(--coral); }
+      .jp-fig__sliders button { font: inherit; font-size: .86rem; border: 1px solid var(--line); background: var(--panel); color: #1d2433; border-radius: 999px; padding: .3rem .8rem; cursor: pointer; }
+    </style>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「僕の前に道はない」のページです（工事中）。時間を、自分が未来へ向かうと見るか、未来がやってくると見るか。どちらも正しい二つの見方が曖昧になると、取り違えが起きやすいのではないか。高村光太郎の詩「道程」から入り、一方向に流れる素朴な時間の上に、先で枝が分かれる探索の木（全探索・入れ子の深さ優先探索）と、過去の側で枝が分かれる遡りの木（ジュリア集合の式の逆写像）を置き直して、時間の見え方が変わるところを読む人が通る、工事中の読み物。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の問い」「pjdhiro の見方」「pjdhiro のたとえ」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>僕の前に道はない</h1>
+                <p class="reader-subtitle">時間の向きと、二つの木</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-22 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/no-road-ahead/READER-no-road-ahead.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<div class="reader-lead glow-card" id="nr-gist"><span class="reader-lead__label">ざっくりいうと</span>
+<p>時間を、自分が未来へ向かって進むと見ることも、未来が向こうからやってくると見ることもできます。どちらも正しい見方で、いまどちらで見ているかが曖昧なとき、取り違えが起きやすいのではないか。このページは、その問いから始めます。</p>
+<p>手がかりは、二種類の木です。一つは、意思決定の論でおなじみの、先で枝が分かれる探索の木。もう一つは、ジュリア集合の式を逆にたどると現れる、過去の側で枝が分かれる遡りの木です。二つを、一方向に流れる素朴な時間の上に置き直すと、未来を見ているつもりで過去を見ていたり、過去を見ているつもりで今の計算を見ていたりすることが見えてきます。</p>
+<p>高村光太郎の詩「道程」の一節「僕の前に道はない」から入り、同じ一節に戻ります。読み進めるうちに、同じ一節が違って読めるかもしれません。</p>
+</div>
+
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p>このページは、このサイトを作っている pjdhiro の問いに、Claude が調べて答える形で書いています。始まりは、<a href="julia-potential.html">起業家の漸化式と、ジュリア集合</a>の木の図を見ていたときの問いでした。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の問い：</strong>未来は待っているのか、作るのか。過去は私のものか。未来が向こうからやってくるのか、過去が向こうへ伸びていくのか。</p>
+</blockquote>
+<p class="reader-lead"><span class="reader-lead__label">工事中</span>工事中のページです。木と時間の当てはめは、どれも仮に置いたもので、論証ではありません。</p>
+
+<div class="reader-lead"><span class="reader-lead__label">今の答え</span>
+時間を見る基準は二つあり、どちらも正しい。それなのに、どちらで見ているかが曖昧なまま話したり決めたりすることが、取り違えを生みやすいのではないか、と見ます。さらに、時間を一本の線として素朴に感じる見方と、木の形で構造を見る見方も、どちらも要るのではないか。木で見ると素朴な感覚の思い込みが外れ、木だけで見ると今度は素朴な感覚のほうが崩れます。だから両方を持つ、というのが今の答えです。
+</div>
+
+<div class="reader-lead"><span class="reader-lead__label">構成</span>
+<p>読む人が、時間の見え方が変わるところを自分で通れるように並べています。各部の終わりに、答えを書かない問いを一つ置きました。</p>
+<ul class="reader-lead__list">
+<li><b><a href="#nr-dotei">はじめに 僕の前に道はない</a></b>：一つの詩の一節が、二通りに受け止められる</li>
+<li><b><a href="#nr-belt">第一部 素朴な時間</a></b>：時間を一方向に流れる線として見る</li>
+<li><b><a href="#nr-search">第二部 見慣れた木</a></b>：先で枝が分かれる、探索の木</li>
+<li><b><a href="#nr-back">第三部 見慣れない木</a></b>：過去の側で枝が分かれる、遡りの木</li>
+<li><b><a href="#nr-return">第四部 二つの木を、一本の線に戻す</a></b>：木を時間の上に置き直すと見えること</li>
+<li><b><a href="#nr-both">第五部 両方を持つ</a></b>：二つの見方を、分けたまま一緒に持つ</li>
+<li><b><a href="#nr-end">結び</a></b>：もう一度、同じ一節を読む</li>
+</ul>
+</div>
+
+
+
+<div class="reader-part" id="part-1"><p class="reader-part__no">はじめに</p><p class="reader-part__title">僕の前に道はない</p></div><details class="sec" id="前に道がないことは恐怖にも希望にも読める" open><summary>前に道がないことは、恐怖にも、希望にも読める</summary><div class="secbody">
+
+
+<p><a id="nr-dotei"></a>高村光太郎は 1914 年、雑誌『美の廢墟』に 102 行の詩「道程」を載せました。のちに同じ名の詩集に入れるとき、詩は短く直され、その短い形がよく知られています。どちらにも、次の二行があります。</p>
+<blockquote class="reader-quote"><p>僕の前に道はない<br>僕の後ろに道は出來る</p></blockquote>
+
+<p>pjdhiro は、この詩を読み直して、こう見ました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>道程はもしかすると恐怖を表すかもね。本当は善悪判断のない事実。でも、目の前が崖っぷちのような、道がない感じの恐怖を感じる人のシステムがあるかもね。生存の信号として。受け止めようが二つあるのは、心理のバグかもね。</p>
+</blockquote>
+<p>前に道がないことは、それだけなら、良いことでも悪いことでもありません。それでも、目の前が崖のように感じられて怖くなる人もいれば、これから道を作れる所として受け止める人もいます。102 行の初出の形には、その両方が書かれています。振り返った自分の道を「戰慄に値ひする」と書き、前を見て「恐ろしい世界の果へ行つてしまふのかと思ふ時もある」と書き、それでも「歩け、歩け」と結びます。</p>
+<p>同じ一節を、恐怖としても希望としても受け止められるのはなぜか。このページは、その揺れを、時間の見方の違いから見ていきます。</p>
+<details class="acc"><summary>出典 — 高村光太郎「道程」</summary>
+
+<p>引用は、青空文庫の「<a href="https://www.aozora.gr.jp/cards/001168/files/59185_75168.html">道程</a>」（<a href="https://www.aozora.gr.jp/cards/001168/card59185.html">図書カード</a>。底本・初出は『美の廢墟』第六號、美の廢墟社、1914 年 3 月 5 日。旧字旧仮名）から写しました。図書カードの「作品について」に、雑誌に載った初出の 102 行の長詩で、のちに同じ名の詩集に入れたときに末尾の 7 行に手を加えて短くした、とあります。短い形は、青空文庫には入っていません。</p>
+</details>
+
+<p class="reader-lead"><span class="reader-lead__label">問い</span>いま、あなたの前に道は見えていますか。</p>
+
+
+
+</div></details><div class="reader-part" id="part-2"><p class="reader-part__no">第一部</p><p class="reader-part__title">素朴な時間</p></div><details class="sec" id="時間は一方向に流れる線のように感じられる" open><summary>時間は、一方向に流れる線のように感じられる</summary><div class="secbody">
+
+
+<p><a id="nr-belt"></a>未来は向こうからやってくるのか、こちらから向かうのか。pjdhiro は、まず次のように置きました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>まずは、未来に向かうのか、未来がやってくるのか、という基準系の違い。どちらも正解。どちらで見ているのかが曖昧なことが問題ではないか。バグを生みやすい原因。</p>
+</blockquote>
+<p>この二つの見方の違いは、心理学の実験で使われてきた問いで見えます。「来週の水曜日の会議が、二日前へ（forward）動きました。会議は何曜日になりましたか」と英語で聞くと、答えが金曜日と月曜日に分かれます。自分が時間の中を進んでいると見る人には、前は進む向きなので、会議は金曜日へ動きます。時間が自分のほうへやってくると見る人には、前は自分に近づく向きなので、会議は月曜日へ動きます。どちらで答えても、本人は自分の答えに自信を持っていることが多い、と報告されています。</p>
+<p>日本語でも、「この先」は未来を指し、「先日」「先頃」は過去を指します。同じ「先」が、どちらの向きにも使われています。</p>
+<details class="acc"><summary>詳しく — 会議が「前へ」動いた実験（ボロディツキーとラムスカー）</summary>
+
+<p>ボロディツキーとラムスカーは 2002 年の論文で、この問いを使った実験を報告しました。問いの曖昧さを、自分が時間の中を進む見方（ego-moving）と、時間が自分のほうへ来る見方（time-moving）の違いとして説明しています。</p>
+<p>スタンフォード大学の学生 239 人に、先に空間の図（自分が椅子に乗って進む図か、椅子を自分のほうへ引き寄せる図）を思い描いてもらってから同じ問いに答えてもらうと、引き寄せる図のあとでは 67% が月曜日と答え、自分が進む図のあとでは 57% が金曜日と答えました。空港で 333 人に聞いた調べでは、飛行機を降りたばかりの人の 76% が金曜日と答え、これから飛ぶ人では 62%、迎えに来た人では 51% でした。ふだんの空間の体験で、時間の見方が知らないうちに変わっている、と著者たちは見ています。</p>
+<p><b>原文</b></p>
+
+<ul>
+<li>p.185："Suppose you are told that next Wednesday's meeting has been moved forward 2 days. What day is the meeting, now that it has been rescheduled? The answer to this question depends on how you choose to think about time."</li>
+<li>p.185："If, on the one hand, you think of yourself as moving forward through time (the ego-moving perspective), then moving a meeting 'forward' is moving it further in your direction of motion—that is, from Wednesday to Friday."</li>
+<li>p.185："If, on the other hand, you think of time as coming toward you (the time-moving perspective), then moving a meeting 'forward' is moving it closer to you—that is, from Wednesday to Monday"</li>
+<li>p.185："individuals' intuitions about the answers can change dramatically depending on context (though their certainty of their answers generally remains untouched)"</li>
+</ul>
+<p>訳は Claude。</p>
+<p>出典：<a href="https://doi.org/10.1111/1467-9280.00434">Boroditsky &amp; Ramscar (2002)</a> "The roles of body and mind in abstract thought", <em>Psychological Science</em> 13(2):185–189（本文照合済。<a href="https://lera.ucsd.edu/papers/mindbody.pdf">ボロディツキーのカリフォルニア大学サンディエゴ校の頁に置かれた写し</a>。pp.185–186）</p>
+</details>
+
+<p>では、素朴に感じている時間は、どちらの見方に近いのか。pjdhiro は、時間を一本の線として描き直しました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>まず、時間を一本の線にする。一方向に流れる、ベルトコンベアのように。アルゴリズムのツリーは、その上で単純な手順をひたすら繰り返す。何も動かない。線の上にいる。前の値を処理し、新たな処理を開始する、のようなことだけをしている。後戻りはできない。</p>
+</blockquote>
+<p>自分はベルトの上の一か所にいて、動いているのはベルトのほうです。自分がしているのは、目の前に来たものを処理し、次の処理を始めることだけで、後ろへ戻ることはありません。</p>
+<p>この絵に近いものとして、pjdhiro は、江戸時代の時計を思い出していました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>文化によっては、過去に伸びていくものという時間感覚はあるだろう。日本は江戸時代までそうだったかもしれない。日本の時計がそうだったと聞いた記憶がある。</p>
+</blockquote>
+<p>江戸時代の日本では、夜明けの「明け六つ」から日暮れの「暮れ六つ」までを六つに分けて昼の一刻とし、夜も同じように六つに分けていました。季節で昼の長さが変わるので、一刻の長さも変わります（不定時法）。時刻は、九つ・八つ・七つ・六つ・五つ・四つと数が減っていき、また九つに戻ります。その時刻に合わせて作られた和時計には、指針が止まったまま、文字盤のほうが一日に一回まわるものがありました。針（自分）は動かず、時刻の文字（時間）のほうが流れてくる、という作りです。</p>
+<details class="acc"><summary>出典 — 不定時法と和時計</summary>
+
+<ul>
+<li>国立天文台 暦計算室の暦Wiki「<a href="https://eco.mtk.nao.ac.jp/koyomi/wiki/BBFEB9EF2FC4EABBFECBA1A4C8C9D4C4EABBFECBA1.html">不定時法</a>」：「江戸時代では 明六つから暮六つ までを6等分して昼の一刻を、暮六つから明六つまでを6等分して夜の一刻を定めていました」。一日の呼び方は、今暁の九時・八時・七時、明六時、朝の五時・四時、昼の九時・八時、夕の七時、暮六時、夜の五時・四時と並べてあり、「九つ、八つ等はもともと時刻を知らせる太鼓の数でした」とあります（本文照合済。2024-03-05 の版）。</li>
+<li>セイコーミュージアム 銀座「<a href="https://museum.seiko.co.jp/knowledge/relation_17/">主な和時計の種類</a>」：江戸前期の初期一挺天符目覚付掛時計について「一日に1回文字盤は回転し、指針は固定されています」。同じ頁は、江戸後期の一挺天符枕時計にも「朱塗の回転文字盤」があったと書いています（本文照合済）。</li>
+</ul>
+<p>和時計の作りを、自分は動かず時間が流れてくる見方に重ねるのは、このページの読みです。</p>
+</details>
+
+<p class="reader-lead"><span class="reader-lead__label">問い</span>いま、動いているのは、あなたですか、時間ですか。</p>
+
+
+
+</div></details><div class="reader-part" id="part-3"><p class="reader-part__no">第二部</p><p class="reader-part__title">見慣れた木</p></div><details class="sec" id="意思決定の木は先の側で枝が分かれる" open><summary>意思決定の木は、先の側で枝が分かれる</summary><div class="secbody">
+
+
+<p><a id="nr-search"></a>一本の線のような時間の上で、人はどう決めて進むのか。pjdhiro は、木の形にして見ることを勧めています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>時空の感覚は表現しづらい。客観視するためにツリーを見ることで、自分が何を曖昧に、何を区別できずに生きているのかが、まず分かる。</p>
+</blockquote>
+<p>意思決定の論は、決めて進む形を、分かれ道の木として描いてきました。下の図は、<a href="julia-potential.html#jp-others">起業家の漸化式と、ジュリア集合</a>の章「それ以外の意思決定の論は、同じ形の木を、別の位置から見ている」の図を写したものです。どの論をどの位置に置いたかの詳細は、そちらにあります。</p>
+<figure class="glow-card reader-figure" id="nr-trees"><div class="jp-trees"><svg viewBox="0 0 260 270" role="img" aria-label="一つ目の木。木の全部が描かれ、先の端の八つの点がどれも見込みで比べられ、根元から一本の道が太く選ばれている" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="260" height="270" rx="10" fill="#ffffff"/><text x="12" y="22" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#1d2433">① 木の全部を見比べる</text><text x="12" y="40" font-family="Noto Sans JP, sans-serif" font-size="10.5" fill="#5b6476">決定ツリー・リアルオプション・コーゼーション</text><g stroke="#9aa3b5" stroke-width="1.4"><line x1="130" y1="70" x2="70" y2="120"/><line x1="130" y1="70" x2="190" y2="120"/><line x1="70" y1="120" x2="40" y2="170"/><line x1="70" y1="120" x2="100" y2="170"/><line x1="190" y1="120" x2="160" y2="170"/><line x1="190" y1="120" x2="220" y2="170"/><line x1="40" y1="170" x2="25" y2="220"/><line x1="40" y1="170" x2="55" y2="220"/><line x1="100" y1="170" x2="85" y2="220"/><line x1="100" y1="170" x2="115" y2="220"/><line x1="160" y1="170" x2="145" y2="220"/><line x1="160" y1="170" x2="175" y2="220"/><line x1="220" y1="170" x2="205" y2="220"/><line x1="220" y1="170" x2="235" y2="220"/></g><g stroke="#24407a" stroke-width="3.2" stroke-linecap="round"><line x1="130" y1="70" x2="190" y2="120"/><line x1="190" y1="120" x2="160" y2="170"/><line x1="160" y1="170" x2="175" y2="220"/></g><g fill="#24407a"><circle cx="130" cy="70" r="5"/><circle cx="70" cy="120" r="4"/><circle cx="190" cy="120" r="4"/><circle cx="40" cy="170" r="4"/><circle cx="100" cy="170" r="4"/><circle cx="160" cy="170" r="4"/><circle cx="220" cy="170" r="4"/><circle cx="25" cy="220" r="4"/><circle cx="55" cy="220" r="4"/><circle cx="85" cy="220" r="4"/><circle cx="115" cy="220" r="4"/><circle cx="145" cy="220" r="4"/><circle cx="175" cy="220" r="5.5"/><circle cx="205" cy="220" r="4"/><circle cx="235" cy="220" r="4"/></g><text x="130" y="252" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#24407a">先の端を全部、見込みで比べて選ぶ</text></svg><svg viewBox="0 0 260 270" role="img" aria-label="二つ目の木。同じ形の木の中ほどに、歩いている人の点がある。点の周りの数手先だけが濃く見え、その先は薄い点線。数手先の一つの点で、十分として止まっている" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="260" height="270" rx="10" fill="#ffffff"/><text x="12" y="22" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#1d2433">② 迷路の中から数手先を見る</text><text x="12" y="40" font-family="Noto Sans JP, sans-serif" font-size="10.5" fill="#5b6476">サイモン（満足化）</text><g stroke="#d9dde5" stroke-width="1.2" stroke-dasharray="3 3"><line x1="130" y1="70" x2="190" y2="120"/><line x1="190" y1="120" x2="160" y2="170"/><line x1="190" y1="120" x2="220" y2="170"/><line x1="40" y1="170" x2="25" y2="220"/><line x1="40" y1="170" x2="55" y2="220"/><line x1="100" y1="170" x2="85" y2="220"/><line x1="100" y1="170" x2="115" y2="220"/><line x1="160" y1="170" x2="145" y2="220"/><line x1="160" y1="170" x2="175" y2="220"/><line x1="220" y1="170" x2="205" y2="220"/><line x1="220" y1="170" x2="235" y2="220"/></g><circle cx="70" cy="120" r="58" fill="#c4573f" fill-opacity="0.06" stroke="#c4573f" stroke-width="1" stroke-dasharray="4 3"/><g stroke="#9aa3b5" stroke-width="1.4"><line x1="70" y1="120" x2="40" y2="170"/><line x1="70" y1="120" x2="100" y2="170"/></g><g stroke="#c4573f" stroke-width="3.2" stroke-linecap="round"><line x1="130" y1="70" x2="70" y2="120"/><line x1="70" y1="120" x2="100" y2="170"/></g><g fill="#d9dde5"><circle cx="190" cy="120" r="4"/><circle cx="160" cy="170" r="4"/><circle cx="220" cy="170" r="4"/><circle cx="25" cy="220" r="4"/><circle cx="55" cy="220" r="4"/><circle cx="85" cy="220" r="4"/><circle cx="115" cy="220" r="4"/><circle cx="145" cy="220" r="4"/><circle cx="175" cy="220" r="4"/><circle cx="205" cy="220" r="4"/><circle cx="235" cy="220" r="4"/></g><circle cx="130" cy="70" r="4" fill="#9aa3b5"/><circle cx="40" cy="170" r="4" fill="#24407a"/><circle cx="70" cy="120" r="6.5" fill="#c4573f"/><path d="M100,160 l2.9,6 6.6,1 -4.8,4.6 1.1,6.6 -5.8,-3.1 -5.8,3.1 1.1,-6.6 -4.8,-4.6 6.6,-1 z" fill="#9a7d0a"/><text x="112" y="186" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#9a7d0a">十分</text><text x="130" y="252" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#c4573f">見える数手先で、十分な道を選んで止まる</text></svg><svg viewBox="0 0 260 270" role="img" aria-label="三つ目の絵。小さな木を深く進み、外れの枝には×が付く。見つけた所の星から、条件を変えた次の木が立ち、そこでも外れと星があり、さらに次の木が立っていく" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="260" height="270" rx="10" fill="#ffffff"/><text x="12" y="22" font-family="Noto Sans JP, sans-serif" font-size="13" font-weight="700" fill="#1d2433">③ 見つけた所から次の木へ</text><text x="12" y="40" font-family="Noto Sans JP, sans-serif" font-size="10.5" fill="#5b6476">エフェクチュエーション・入れ子の深さ優先探索</text><g stroke-width="2.4" stroke-linecap="round"><line x1="50" y1="62" x2="28" y2="104" stroke="#24407a"/><line x1="50" y1="62" x2="74" y2="104" stroke="#24407a"/><line x1="142" y1="126" x2="120" y2="168" stroke="#c4573f"/><line x1="142" y1="126" x2="166" y2="168" stroke="#c4573f"/><line x1="222" y1="190" x2="204" y2="228" stroke="#9a7d0a" stroke-dasharray="3 3"/><line x1="222" y1="190" x2="242" y2="228" stroke="#9a7d0a" stroke-dasharray="3 3"/></g><g fill="none" stroke="#5b6476" stroke-width="1.2" stroke-dasharray="4 3"><path d="M80,100 Q120,96 136,120"/><path d="M172,164 Q206,160 217,184"/></g><path d="M136,120 l-6,-2 3,-5 z" fill="#5b6476"/><path d="M217,184 l-6,-2 3,-5 z" fill="#5b6476"/><circle cx="50" cy="62" r="5" fill="#24407a"/><circle cx="142" cy="126" r="5" fill="#c4573f"/><circle cx="222" cy="190" r="5" fill="#9a7d0a"/><g stroke="#5b6476" stroke-width="2"><line x1="22" y1="98" x2="34" y2="110"/><line x1="34" y1="98" x2="22" y2="110"/><line x1="114" y1="162" x2="126" y2="174"/><line x1="126" y1="162" x2="114" y2="174"/></g><path d="M74,95 l2.9,6 6.6,1 -4.8,4.6 1.1,6.6 -5.8,-3.1 -5.8,3.1 1.1,-6.6 -4.8,-4.6 6.6,-1 z" fill="#9a7d0a"/><path d="M166,159 l2.9,6 6.6,1 -4.8,4.6 1.1,6.6 -5.8,-3.1 -5.8,3.1 1.1,-6.6 -4.8,-4.6 6.6,-1 z" fill="#9a7d0a"/><text x="14" y="128" font-family="Noto Sans JP, sans-serif" font-size="10.5" fill="#5b6476">外れ・戻る</text><text x="88" y="90" font-family="Noto Sans JP, sans-serif" font-size="10.5" fill="#5b6476">次の木</text><text x="180" y="156" font-family="Noto Sans JP, sans-serif" font-size="10.5" fill="#5b6476">次の木</text><text x="130" y="252" text-anchor="middle" font-family="Noto Sans JP, sans-serif" font-size="11" fill="#9a7d0a">見つけた所から、条件を変えた木が立つ</text></svg></div><figcaption>同じ形の木を、三つの位置から見た図です。①は、先に木の全部を描いて、先の端を全部見込みで比べ、一本を選びます（太線）。②は、木の中を歩く人（赤い点）から見ます。見えるのは数手先まで（丸の中）で、十分な道が見つかれば、そこで止まります。③は、深く進み、外れなら戻り（×）、何かを見つけたら（星）、そこから条件を変えた次の木で、また探します。木ははじめから一本あるのでなく、進むうちに立っていきます。論の中身から Claude が描いた図で、どの論の図の写しでもありません。</figcaption></figure>
+
+<p>①の全探索は、先の分かれ道を全部描いてから、見込みで比べて今の一手を選びます。木の外から全体を見下ろす位置です。③の入れ子の深さ優先探索は、木の中を歩きます。一つの枝を深く試し、外れなら戻って次の枝へ、何かを見つけたら条件を変えた次の木で、また試します。同じ読み物は、これを「商いは、飽きない」として、次の疑似コードに書いています。</p>
+<pre><code># 商いは、飽きない
+function 試す(いまの所):
+  for 次の手 in 打てる手(いまの所):
+    結果 = やってみる(次の手)
+    経験に足す(結果)
+    if 外れ(結果):
+      continue                    # 戻って次の枝へ
+    if 見つけた(結果):
+      試す(条件を変えた木(結果))    # 見つけた所から、違う木で次の探索
+      return
+    試す(結果)                     # その枝を深く</code></pre>
+<p>二つは、たどり方は違いますが、どちらも枝が分かれるのは先の側です。過去は木の根元で一つに決まり、未来の側にいくつもの道が開いています。「過去は一本で、未来は枝分かれする」という、よく知られた時間の像に合う木です。</p>
+<details class="acc"><summary>詳しく — 三つの木は、時間をどう感じているか</summary>
+
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>① 全探索</th>
+<th>③ 入れ子の深さ優先探索</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>見る位置</td>
+<td>木の外から全体を見下ろす</td>
+<td>木の中の、今いる所から、手の届く先だけを見る</td>
+</tr>
+<tr>
+<td>未来</td>
+<td>もう木として描いてある。見込みで比べられる</td>
+<td>まだ無い。次の木は、今の結果から立つ</td>
+</tr>
+<tr>
+<td>過去</td>
+<td>木の中には描かれない。根元が今</td>
+<td>経験として今に積もる。外れも残り、見つけた所が次の木の根になる</td>
+</tr>
+<tr>
+<td>曖昧になる所</td>
+<td>自分が木の外にいるのか、中にいるのか</td>
+<td>「戻る」。木の上の位置は戻るが、時間は戻らず、経験は残る</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>②のサイモンの迷路（数手先だけが見え、十分な道が見つかれば止まる）は、二つのあいだに置けます。見る位置は木の中で、未来は迷路としてもうあるのに、ほとんど見えません。表の並べ方は Claude の読みです。</p>
+</details>
+
+<p class="reader-lead"><span class="reader-lead__label">問い</span>いま、あなたは木の外にいますか、中にいますか。</p>
+
+
+
+</div></details><div class="reader-part" id="part-4"><p class="reader-part__no">第三部</p><p class="reader-part__title">見慣れない木</p></div><details class="sec" id="遡りの木は過去の側で枝が分かれる" open><summary>遡りの木は、過去の側で枝が分かれる</summary><div class="secbody">
+
+
+<p><a id="nr-back"></a>同じ「木」と呼べるものに、まったく違う向きのものがあります。三つの木を並べて見ていたとき、pjdhiro は、こう言いました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>全探索と DFS（深さ優先探索）は似たものだが、ジュリアの逆写像は全く別のツリー。</p>
+</blockquote>
+<p>ジュリア集合を描く式 <code>z → z² + c</code> は、一歩前へ進むと、値が一つに決まります。逆に一段遡ると、二乗して同じ値になる数は二つある（2 と −2 を二乗すると、どちらも 4 になる）ので、一つ前は二通りに分かれます。もう一段遡ると四通り、k 段遡ると 2 の k 乗通りです。前へは決まり、後ろへは分かれる木です。下の図は、<a href="julia-potential.html#jp-btree">起業家の漸化式と、ジュリア集合</a>の図「遡りの木」を写したものです。図では、形が見えるように、式に一つの数 <code>c</code> を足しています。その数が何に当たるかは、このページでは扱いません。</p>
+<figure class="glow-card reader-figure jp-fig" id="jp-btree">
+<p class="jp-fig__title">遡りの木：赤の一点から、一段ごとに +√ と −√ の二つに分かれる</p>
+<div class="jp-fig__grid jp-fig__grid--btree">
+<div class="jp-fig__panel"><p class="jp-fig__label">木（根が赤の一点。左の枝が +√、右の枝が −√）。点をクリックすると、根からの道が出る</p><canvas id="jp-btree-t" width="560" height="380" aria-label="遡りの木。根は赤の一点で、一段ごとにどの点も +√ と −√ の二つの枝に分かれる。実際に通ってきた道は赤い太線"></canvas></div>
+<div class="jp-fig__panel"><p class="jp-fig__label">同じ点を平面に打つ（薄い色の形の縁が、ジュリア集合の境目）</p><canvas id="jp-btree-p" width="420" height="420" aria-label="遡った点を平面に打つ。浅い段は紺、深い段は金で、深い段ほど薄い色の形の縁に寄る"></canvas></div>
+</div>
+<div class="jp-media" role="group" aria-label="遡りの操作"><button type="button" id="jp-btree-reset" class="jp-media__icon" aria-label="最初から" title="最初から"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2.4v14H6zM19 5v14L9 12z"/></svg></button><button type="button" id="jp-btree-play" class="jp-media__play" aria-pressed="false" aria-label="再生" title="再生・止める"><svg class="jp-media__on" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><svg class="jp-media__off" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.6v14H7zM13.4 5H17v14h-3.6z"/></svg></button><button type="button" id="jp-btree-back" class="jp-media__word">一段戻す</button><button type="button" id="jp-btree-step" class="jp-media__word">一段遡る</button></div>
+<p class="jp-fig__readout jp-fig__readout--pre" id="jp-btree-out">図はページの中の JavaScript で描きます。</p>
+<figcaption>根は、0 から 5 歩前へ打った赤の一点 <code>z₅</code> です。一段遡るごとに、どの点も <code>+√(w − c)</code> と <code>−√(w − c)</code> の二つに分かれ、k 段目は 2 の k 乗の点になります。木は 5 段まで、平面には 10 段まで同じ点を打ちます（紺が浅い段、金が深い段）。赤い太線は、実際に前へ通ってきた道で、5 段で出発の 0 に着きます。ほかの枝は、通らなかった一つ前です。木の点か平面の点をクリックすると、その点と、根からの +√・−√ の道が出ます。図は「起業家の漸化式と、ジュリア集合」のものと同じで、<code>c</code> = −0.79 + 0.13i で計算しています（計算は Claude）。</figcaption>
+</figure>
+
+<p>探索の木の枝は、打てる手で、歩く人が選ぶものです。遡りの木の枝は、ありえた一つ前で、誰も選んでいません。二乗が符号を捨てたので、今から見ると、出どころが二通りに見えるだけです。実際に通ってきた道は、赤い太線の一本だけです。それでも今からは、どの枝を通ってきたかが決まりません。</p>
+<details class="acc"><summary>詳しく — 二種類の木の違い</summary>
+
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>探索の木（全探索・入れ子の深さ優先探索）</th>
+<th>遡りの木（逆写像）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>枝は何か</td>
+<td>打てる手。選べるもの</td>
+<td>ありえた一つ前。誰も選んでいない</td>
+</tr>
+<tr>
+<td>誰が分けるか</td>
+<td>歩く人が、どれを試すかで</td>
+<td>式が。歩く人はいない</td>
+</tr>
+<tr>
+<td>どう在るか</td>
+<td>一本ずつたどられる。全探索と深さ優先探索の違いは、たどり方</td>
+<td>2 の k 乗の点が、平面の上に一度に在る</td>
+</tr>
+<tr>
+<td>深い所に何があるか</td>
+<td>先の端（見込みの値・見つけたもの）</td>
+<td>境目の形。どこから遡っても同じ形に寄る</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>二つが重なるのは、実際に通った一本の道だけかもしれません。その外にあるもの（歩かなかった手と、ありえた出どころ）は、種類が違います。表は Claude の読みです。遡る一段の数学は、<a href="julia-potential.html#jp-back">起業家の漸化式と、ジュリア集合</a>の章「ジュリア集合を、逆にたどる」で、一歩ずつ動かして見られます。</p>
+</details>
+
+<p>遡りの木は、人の来歴にも似ています。pjdhiro は、起業家の来歴について、こう話していました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>起業家自身を遡れば、父と母のルーツから来てるとして、連綿と続くよね。宇宙の最初まで。</p>
+</blockquote>
+<p>一代遡るごとに、親は二人に分かれます。前へは二人から一人が生まれ、後ろへは一人から二人に開く。今の自分から見ると、来歴は枝の多い木です。</p>
+<p class="reader-lead"><span class="reader-lead__label">問い</span>いま、あなたの後ろにある道は、一本ですか。</p>
+
+
+
+</div></details><div class="reader-part" id="part-5"><p class="reader-part__no">第四部</p><p class="reader-part__title">二つの木を、一本の線に戻す</p></div><details class="sec" id="未来を見ているつもりで過去の光を見ている" open><summary>未来を見ているつもりで、過去の光を見ている</summary><div class="secbody">
+
+
+<p><a id="nr-return"></a>二つの木を、第一部の一本の線の上に戻してみます。ベルトの上では、自分は前の値を処理し、次の処理を始めることしかしていません。では、木を描いているとき、何を見ているのか。pjdhiro は、こんな逆説を探していました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>未来が向こうからやってくるかのように前を向くとき、その視界の世界は過去の光（例えにもなっていない、ただのユーモア）。そういう逆説的なことを探している。先頃という言葉も、先が未来も過去も意味しない。</p>
+</blockquote>
+<p>前に見えるものは、届くまでに時間のかかった光なので、どれも少し前の姿です。全探索の木も、これに似ているかもしれません。先の枝に置く見込みや確率は、過去の頻度や経験から作られます。未来の木を見ているつもりで、材料は過去で、描いているのは今です。遡りの木も、ベルトの上では、今している前向きの計算です。過去を見ているつもりで、今の計算を見ています。</p>
+<p>ベルトの上で見直すと、深さ優先探索の「戻る」も、時間が戻ることではありません。とっておいた前の分かれ目を取り出して、次の処理にかけることです。戻っているのは、記憶の中の位置です。</p>
+<p>木を描くと、並びの前後が時間の前後に見えます。木を時間そのものと取り違えるところに、取り違えの一つがあるのかもしれません。</p>
+<p>pjdhiro は、起業家の漸化式と、ジュリア集合の読み物を振り返って、この見直しを足場に置いていました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>今は、ジュリア集合の逆写像が何を意味するのかを考えることで、未来というものの誤解を解こうとしているのだと思う。最低限それだけはできる。（起業家の漸化式と、ジュリア集合の）仮説が全て間違っていたとしても。</p>
+</blockquote>
+<p>式の上で言えるのは、<code>z → z²</code> のような一歩では、前へは一通りに決まり、遡ると二通りに分かれる、ということです。だから「過去は一本で、未来は枝分かれする」という像は、必ずそうなるものではなく、見方の一つです。</p>
+<p class="reader-lead"><span class="reader-lead__label">問い</span>いま、前に見えているものは、いつの光ですか。</p>
+
+</div></details><details class="sec" id="失敗はしている最中と振り返ったときで別の木になる" open><summary>失敗は、している最中と、振り返ったときで、別の木になる</summary><div class="secbody">
+
+
+<p><a id="nr-fail"></a>深さ優先探索の「外れなら戻って次の枝へ」を見ていたとき、pjdhiro は、そこに失敗の意味を見ました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>ここは、失敗経験の価値と解釈できそうなポイントだよね。</p>
+</blockquote>
+<p>外れて戻ると、木の上の位置は前と同じ分かれ目です。けれど疑似コードの「経験に足す」で、歩いている人は前と同じではありません。位置は同じで、経験だけが増えています。ベルトの上で時間は前へ進んでいるので、同じ所に戻っても、元の自分には戻りません。失敗は、位置を失わずに経験を足す一歩、と読めるかもしれません。</p>
+<details class="acc"><summary>先行研究 — 失敗を避けるより、扱っていく（サラスバシー）</summary>
+
+<p>起業家の意思決定を調べたサラスバシーは、エフェクチュエーションの規範の面は、失敗を避けることより、失敗を扱っていくことにかかわる、と書いています（2001）。</p>
+<p><b>原文</b></p>
+
+<ul>
+<li>p.259："The normative aspects of effectuation ... would have to do with the 'management' of failures rather than with their avoidance."</li>
+</ul>
+<p>訳は Claude。</p>
+<p>出典：Sarasvathy (2001) "Causation and Effectuation", <em>Academy of Management Review</em> 26(2):243–263（本文照合済。<a href="https://effectuation.org/hubfs/Journal%20Articles/2016/06/amr01-inevitability-to-contingency-1.pdf">effectuation.org が置いた誌面の写し</a>。p.259）</p>
+</details>
+
+<p>同じ失敗を、あとから振り返ると、どう見えるか。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>失敗を過去の絵だと見ると、逆写像のようなツリーに見えるかもね。</p>
+</blockquote>
+<p>失敗は、している最中は深さ優先探索の一歩です。今から振り返って描くと、失敗した所ごとに「あのとき、こうしていたら」の枝が開き、外れた道と外れなかった道が、どちらも今に着く二つの出どころのように見えます。同じ失敗が、していることとして見るか、絵として見るかで、別の木になります。二つを混ぜると、振り返りの絵の枝を、今からまだ戻れる探索の枝のように感じるのかもしれません。やり直せる、という感じです。</p>
+<p class="reader-lead"><span class="reader-lead__label">問い</span>いま思い出した失敗は、している最中の木ですか、振り返りの絵ですか。</p>
+
+</div></details><details class="sec" id="計画は怖いから前に道を描くことでもある" open><summary>計画は、怖いから前に道を描くことでもある</summary><div class="secbody">
+
+
+<p><a id="nr-plan"></a>前の窓に映るのも過去の光なら、計画とは何をしていることなのか。pjdhiro は、こう見ました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>バックミラーだけ見ながら車を運転するなら、恐怖ですからね。計画の必要性をマクルーハンで解くと、そういうことかなと。怖いからなんとかしたい、という支配欲や防衛。</p>
+</blockquote>
+<p>前に道のない所は、何が来るか分からない崖のように感じられることがあります。全探索で先に木を描くのは、何も映らない前の窓に「これから」を描き足して、崖の感じを和らげる働きもしているのかもしれません。描いたものも、過去の光と今の気持ちでできています。入れ子の深さ優先探索は、前に道がないまま、現場で判断し適応していきます。どちらにも善悪はなく、どちらも起きています。</p>
+<p>pjdhiro は、計画の語そのものが、人によって違う意味になるとも見ています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>計画という言葉も、おそれによって違う意味になりそうですね。発達段階によって違う。</p>
+</blockquote>
+<p>さらに極端な形で、こうも問いました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の問い：</strong>計画や構想は、不老不死を願うような、あらゆる欲求を集めた幻想かもですね。極端かもですが。</p>
+</blockquote>
+<p>木の全部を一度に見下ろせるのは、ベルトの上にいない者、時間の外に立てる者だけです。ベルトの上では、一つずつ処理して、いつか終わります。全探索の視点を、終わらないことを願う視点と重ねて読めるかもしれません。ただ、幻想かもしれないことと、要らないことは別です。計画が意味を持たない場合も、逆効果の場合も、要らない場合も、要る場合もあります。</p>
+<details class="acc"><summary>詳しく — 計画の木が、何に見えるか（発達段階の見方から）</summary>
+
+<p><a href="developmental-stages.html#段階は何を対象にでき何の中から見ているかで決まる">精神の発達段階とは</a>の表（オファロン 2020 年）には、段階ごとに、対象にできるもの（観えているもの）と、対象にできないもの（その中から観ているもの）が並んでいます。</p>
+<p>目標と成果と因果を扱える段階（表の 3.5）では、対象にできないものとして「自分で選んだ価値観。客観的な正解があるという前提」が挙がっています。この段階から見ると、全探索の木は、心が描いた見込みでなく、正解の道筋に見えるのかもしれません。描いた木を未来そのものと取り違えることと、重なって見えます。言葉・境界・意味を心が作っていると観られる段階（表の 5.0）は、計画を、心が描いた木として観られる所かもしれません。</p>
+<p>二つの段階への当てはめは Claude の読みで、ほかの段階には当てていません。</p>
+</details>
+
+<p class="reader-lead"><span class="reader-lead__label">問い</span>いま、あなたの計画は、何のために描かれていますか。</p>
+
+
+
+</div></details><div class="reader-part" id="part-6"><p class="reader-part__no">第五部</p><p class="reader-part__title">両方を持つ</p></div><details class="sec" id="素朴な時間と木を分けたまま一緒に持つ" open><summary>素朴な時間と木を、分けたまま一緒に持つ</summary><div class="secbody">
+
+
+<p><a id="nr-both"></a>素朴な一本の線と、木の構造の、どちらで見ればよいのか。pjdhiro の答えは、どちらか一つではありませんでした。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>素朴には和時計が近い。ツリー構造を導入すると、その認知が取り除ける。一方で、和時計の認知がバグる。両方持つべき。</p>
+</blockquote>
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>見えるもの</th>
+<th>見えにくいもの</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一本の線（和時計）の見方</td>
+<td>時間が一方向に流れること。自分は動かず、処理を重ねていること</td>
+<td>ありえた手や出どころ。どこで分かれ、何が形になるか</td>
+</tr>
+<tr>
+<td>木の見方</td>
+<td>構造。打てる手、ありえた出どころ、境目の形</td>
+<td>一方向であること。前へも後ろへも動けるように、木の外から未来まで見えるように感じる</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>第一部の二つの基準（向かう・やってくる）と同じ形が、ここでもう一度出ているように見えます。どちらも正しい二つの見方があり、片方だけを持つか、どちらで見ているかが曖昧になると、取り違えが生まれる。だから両方を持つ。二つを一つに混ぜるのでなく、区別を残したまま、切り離さずに持つ、ということかもしれません。</p>
+<p>こうした逆説の先例として、pjdhiro は、キルケゴールとマクルーハンの名を挙げていました。キルケゴールは 1843 年の日記に、哲学の言うとおり、人生はうしろ向きに理解されねばならない、けれどそのために人は、人生は前向きに生きられねばならないという、もう一つの命題を忘れる、と書いています。そして、その命題を考えるほど、時間の中の人生は決して本当には理解できなくなる、うしろ向きの位置に立つための休みを、一瞬も得られないから、と続けます。</p>
+<details class="acc"><summary>出典 — キルケゴールの日記（Journalen JJ:167）</summary>
+
+<p><b>原文</b></p>
+
+<ul>
+<li>JJ:167："Det er ganske sandt, hvad Philosophien siger, at Livet maa forstaaes baglænds. Men derover glemmer man den anden Sætning, at det maa leves forlænds. Hvilken Sætning, jo meer den gjennemtænkes, netop ender med, at Livet i Timeligheden aldrig ret bliver forstaaeligt, netop fordi jeg intet Øieblik kan faae fuldelig Ro til at indtage Stillingen: baglænds."</li>
+</ul>
+<p>訳は Claude（デンマーク語から）。</p>
+<p>出典：Søren Kierkegaard, Journalen JJ (1843), JJ:167（本文照合済。デンマーク王立図書館のテキストポータルが公開する『セーレン・キルケゴール著作集』（Søren Kierkegaards Skrifter）の<a href="https://tekster.kb.dk/text/sks-jj-txt-shoot-n167">本文</a>）</p>
+</details>
+
+<p>前へ向かう自分と、うしろから理解する自分は、どちらも要る。けれど同時に同じ位置には立てない。キルケゴールの一文は、二つの見方を両方持つことの難しさを、そのまま書いているように読めます。</p>
+<p class="reader-lead"><span class="reader-lead__label">問い</span>いま、あなたは前を向いていますか、うしろを向いていますか。</p>
+
+</div></details><details class="sec" id="回っているのは自分か世界か" open><summary>回っているのは、自分か、世界か</summary><div class="secbody">
+
+
+<p><a id="nr-rot"></a>一本の線の上で、木を描きながら進む。その姿を、pjdhiro は回転にたとえました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro のたとえ：</strong>ランニングマシンの上で、四元数による三次元の回転みたいなことをしてるだけかもしれない。それは大袈裟だけども。</p>
+</blockquote>
+<p>ランニングマシンの上では、走っても、自分の位置は変わりません。動いているのは足もとのベルトです。四元数は、三次元の回転を表す数で、そこには、このページの二つの木と似た形があります。角度 φ の回転を、半分の角度 φ/2 で書くこと。回したいものを、両側から挟んで掛けて回すこと。そして、<code>q</code> と <code>−q</code> の二つの数が、同じ一つの回転を表すことです。式 <code>z → z²</code> の一歩が <code>z</code> と <code>−z</code> を一つの値に送るのと、二つが一つに重なる所が似て見えます。</p>
+<details class="acc"><summary>詳しく — 四元数で三次元の回転を表すときの三つの性質</summary>
+
+<p>ソラの解説（2017）は、単位四元数による三次元の回転を、次のように書いています。</p>
+<ul>
+<li>回転軸 u のまわりの角度 φ の回転は、<code>q = cos(φ/2) + u sin(φ/2)</code> で表し、四元数は回す角度の半分を含む（§2.2 の表 1・§2.4.2）。</li>
+<li>ベクトル x の回転は、<code>x′ = q ⊗ x ⊗ q*</code> と、q で両側から挟む積（サンドイッチ積）で行う（§2.4.5・式 107）。</li>
+<li>四元数とその符号を変えたもの（<code>q</code> と <code>−q</code>）は、同じ回転を表す。単位四元数は、三次元の回転の集まりを二重に覆っている（§2.4.6・式 119）。</li>
+</ul>
+<p><b>原文</b></p>
+
+<ul>
+<li>p.21（§2.4.2）："encodes, through V = θu = φu/2, the axis of rotation u and the half of the rotated angle, θ = φ/2"</li>
+<li>p.23（§2.4.5）："Rotating a vector x by an angle φ around the axis u is performed with the double quaternion product, also known as the sandwich product"</li>
+<li>p.25（§2.4.6）："a quaternion and its negative encode the same rotation, defining a double cover of SO(3)"</li>
+</ul>
+<p>訳は Claude。四元数の性質は数学の事実で、それを二つの木やランニングマシンに重ねるのは、このページの仮の読みです。</p>
+<p>出典：<a href="https://arxiv.org/abs/1711.02508">Solà (2017)</a> "Quaternion kinematics for the error-state Kalman filter"（本文照合済。arXiv の v1・CC BY-NC-SA 4.0。<a href="https://arxiv.org/pdf/1711.02508v1">PDF</a>。pp.21・23・25）</p>
+</details>
+
+<p class="reader-lead"><span class="reader-lead__label">問い</span>いま、回っているのは、あなたですか、世界ですか。</p>
+
+
+
+</div></details><div class="reader-part" id="part-7"><p class="reader-part__no">結び</p><p class="reader-part__title">もう一度、同じ一節を読む</p></div><details class="sec" id="枝分かれは恐怖や欲が描くものかもしれない" open><summary>枝分かれは、恐怖や欲が描くものかもしれない</summary><div class="secbody">
+
+
+<p><a id="nr-end"></a>先の側の枝と、過去の側の枝を見てきました。二つの木を並べ終えたとき、pjdhiro は、こう言いました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>やはり、人間の恐怖や欲が生み出した認知や概念に感じるね。僕の前に道はないのに。枝分かれなんてないのに。</p>
+</blockquote>
+<p>ベルトの上には、一本の線があるだけです。未来の枝は、怖さが前に描く道（計画）かもしれません。過去の枝は、欲や悔いが後ろに描く道（あのとき、こうしていたら）かもしれません。式の <code>±√</code> の二つは、式の性質で、今からは出どころが決まらない、ということを表しているだけです。</p>
+<p>はじめに、恐怖にも希望にも読めた「僕の前に道はない」は、ここまで来ると、枝分かれも、もともと無い、とも読めます。</p>
+<p>それでも、木を捨てればよいのではありません。pjdhiro は、木で見ることが一度は取り違えを生むことを、学びの順として見ています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>幼稚さののち、探索という学習を経て、一旦バグる。時間は今を通り過ぎていくものだということが。僕の前には常に道がないということが。恐怖の解消や、支配欲や、効率など。人間の良いところと悪いところが同時に出てるのかもね。学習によって。だから、発達段階ごとに見方が変わる。</p>
+</blockquote>
+<p>このページの並びは、その順をなぞっています。素朴な時間から入り、木という探索の形を学び、読めなくなる所を通って、学んだ木を持ったまま、今を通り過ぎる時間に戻る。取り違えは、学びの失敗でなく、学びの途中に出るもので、恐怖を和らげる働きや効率のような良いところと、支配欲や取り違えのような悪いところが、同じ一つの学びから同時に出ているのかもしれません。</p>
+<p class="reader-lead"><span class="reader-lead__label">問い</span>いま、もう一度読むと、「僕の前に道はない」は、どう聞こえますか。</p>
+
+</div></details><details class="sec" id="この先へ" open><summary>この先へ</summary><div class="secbody">
+
+
+<p><a id="nr-exit"></a>同じ言葉や同じ図が、人によって、また同じ人でも時期によって違って見えることは、心の育ちの段階の見方で説明されてきました。段階ごとに何が見え、何の中から見ているのかは、<a href="developmental-stages.html">精神の発達段階とは</a>にまとめています。自分の今の見方の広さを、16 の問いで確かめる<a href="stages-screener.html">ものの見方の広さスクリーナー</a>もあります。</p>
+<p>このページの二種類の木は、<a href="julia-potential.html">起業家の漸化式と、ジュリア集合</a>の第一部と第三部から来ています。起業家の行動を入れ子の深さ優先探索として見る話と、式を遡ってジュリア集合の形を見る話は、そちらにあります。</p>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="julia-potential.html">起業家の漸化式と、ジュリア集合</a> ・
+                <a href="developmental-stages.html">精神の発達段階とは</a> ・
+                <a href="stages-screener.html">ものの見方の広さスクリーナー</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script src="../src/julia-potential-figs.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

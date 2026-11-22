@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/no-road-ahead.html を直接編集しないでください。
+  正本:   knowledge/research/no-road-ahead/READER-no-road-ahead.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「僕の前に道はない」のページです（工事中）。時間を、自分が未来へ向かうと見るか、未来がやってくると見るか。どちらも正しい二つの見方が曖昧になると、取り違えが起きやすいのではないか。高村光太郎の詩「道程」から入り、一方向に流れる素朴な時間の上に、先で枝が分かれる探索の木（全探索・入れ子の深さ優先探索）と、過去の側で枝が分かれる遡りの木（ジュリア集合の式の逆写像）を置き直して、時間の見え方が変わるところを読む人が通る、工事中の読み物。
+  木と時間の当てはめは pjdhiro と Claude が対話で共有した仮のもので、論証ではない。研究と古典の説明は Claude が原典から書いた要約で、英語・デンマーク語の訳は Claude。載せた出典は本文で照合し、各章の畳み「出典」「詳しく」に頁を添えている。図「同じ形の木を三つの位置から見る」と「遡りの木」は、読み物「起業家の漸化式と、ジュリア集合」の図の写し。
+  pjdhiro 本人の言葉は「pjdhiro の問い：」「pjdhiro の見方：」「pjdhiro のたとえ：」で引用。各部の終わりの「問い」は、読む人に向けた、答えを書かない問い。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>僕の前に道はない | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/no-road-ahead.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="時間を、自分が未来へ向かうと見るか、未来がやってくると見るか。どちらも正しい二つの見方が曖昧になると、取り違えが起きやすいのではないか。高村光太郎の詩「道程」から入り、一方向に流れる素朴な時間の上に、先で枝が分かれる探索の木（全探索・入れ子の深さ優先探索）と、過去の側で枝が分かれる遡りの木（ジュリア集合の式の逆写像）を置き直して、時間の見え方が変わるところを読む人が通る、工事中の読み物。">
+    <meta property="og:title" content="僕の前に道はない">
+    <meta property="og:description" content="時間を、自分が未来へ向かうと見るか、未来がやってくると見るか。どちらも正しい二つの見方が曖昧になると、取り違えが起きやすいのではないか。高村光太郎の詩「道程」から入り、一方向に流れる素朴な時間の上に、先で枝が分かれる探索の木（全探索・入れ子の深さ優先探索）と、過去の側で枝が分かれる遡りの木（ジュリア集合の式の逆写像）を置き直して、時間の見え方が変わるところを読む人が通る、工事中の読み物。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/no-road-ahead.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="僕の前に道はない">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-22">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "僕の前に道はない",
+          "description": "時間を、自分が未来へ向かうと見るか、未来がやってくると見るか。どちらも正しい二つの見方が曖昧になると、取り違えが起きやすいのではないか。高村光太郎の詩「道程」から入り、一方向に流れる素朴な時間の上に、先で枝が分かれる探索の木（全探索・入れ子の深さ優先探索）と、過去の側で枝が分かれる遡りの木（ジュリア集合の式の逆写像）を置き直して、時間の見え方が変わるところを読む人が通る、工事中の読み物。",
+          "keywords": "時間, 基準系, 道程, 高村光太郎, 不定時法, 和時計, 決定ツリー, 深さ優先探索, ジュリア集合, 逆写像, 来歴, 失敗, 計画, キルケゴール, 四元数, 発達段階, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/no-road-ahead.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/no-road-ahead.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-22",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "時間"}, {"@type": "Thing", "name": "意思決定"}, {"@type": "Thing", "name": "ジュリア集合"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+    <style>
+      /* 第二部の「同じ木を三つの位置から見る」図（起業家の漸化式と、ジュリア集合から写した）。狭い幅では縦に積む（2026-11-21・付箋 i20261120175741hig） */
+      .jp-trees { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: 0.6rem; }
+      .jp-trees svg { display: block; width: 100%; height: auto; max-width: 22rem; margin-inline: auto; }
+      .jp-fig { --panel:#ffffff; --mid:#5b6476; --coral:#c4573f; --gold:#b7950b; --set:#1d2433; --esc0:#e6eaf2; --esc1:#9fb0cf; --line:#d9dde5; --navy:#24407a; padding: 1rem; }
+      .jp-fig__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 1rem; }
+      .jp-fig__panel { min-width: 0; }
+      .jp-fig__label { margin: 0 0 .3rem; font-size: .85rem; }
+      /* アニメの中の字幕：図の下の余白に、その場面・その一歩の一文を重ねる（2026-11-21・付箋 i20261121043634uo3「ジュリア集合の解説は動画やアニメと一緒に、そのアニメの中に文章を入れた方がいい。」） */
+      .jp-fig[hidden] { display: none !important; }
+      .jp-stage { position: relative; }
+      #jp-about-julia .jp-stage { max-width: 30rem; margin-inline: auto; }
+      .jp-stage__cap { position: absolute; left: .5rem; right: .5rem; bottom: .5rem; margin: 0; padding: .5rem .75rem; border-radius: 8px; border: 1px solid var(--line); background: rgba(255,255,255,.93); font-family: var(--sans); font-size: .95rem; line-height: 1.6; color: var(--set); }
+      .jp-stage__no { position: absolute; top: .4rem; right: .6rem; margin: 0; font-size: .78rem; color: var(--mid); font-variant-numeric: tabular-nums; }
+      #jp-fold .jp-stage__cap { font-size: .86rem; }
+      @media (max-width: 30rem) { .jp-stage__cap, #jp-fold .jp-stage__cap { left: .3rem; right: .3rem; bottom: .3rem; padding: .35rem .55rem; font-size: .8rem; line-height: 1.5; } }
+      .jp-fig__title { margin: 0 0 .7rem; font-family: var(--sans); font-size: .95rem; font-weight: 700; line-height: 1.5; color: var(--set); }
+      .jp-fig canvas.jp-fig__drag { touch-action: none; cursor: grab; }
+      .peek__body .jp-fig { margin: 0; }
+      .peek__body .jp-fig__title { display: none; }
+      .jp-fig canvas { width: 100%; height: auto; display: block; border-radius: 4px; touch-action: manipulation; }
+      #jp-mand { cursor: crosshair; }
+      .jp-fig__btns { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .8rem; align-items: center; }
+      .jp-fig__btns button { font: inherit; font-size: .86rem; border: 1px solid var(--line); background: var(--panel); color: #1d2433; border-radius: 999px; padding: .3rem .8rem; cursor: pointer; }
+      .jp-fig__btns button:hover { border-color: var(--navy); }
+      .jp-fig__btns button:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+      .jp-fig__btns button[aria-pressed="true"] { background: var(--navy); color: var(--panel); border-color: var(--navy); }
+      .jp-fig__readout { font-size: .85rem; margin: .6rem 0 0; }
+      .jp-fig__readout--pre { white-space: pre-line; font-variant-numeric: tabular-nums; }
+      .jp-fig__grid--three { grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); }
+      /* 一枚の図は小さめにし、操作のボタンをすぐ下に、状態の文はその後に置く。図と操作が一つの画面に収まり、スクロールせずに動かせる（pjdhiro 2026-11-20・付箋 i20261120135335jag） */
+      .jp-fig__grid--one { grid-template-columns: 1fr; max-width: 18rem; margin-inline: auto; }
+      .jp-fig__grid--fold { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); align-items: start; }
+      .jp-fig__grid--btree { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; }
+      @media (max-width: 40rem) { .jp-fig__grid--btree { grid-template-columns: 1fr; } }
+      @media (max-width: 40rem) { .jp-fig__grid--fold { grid-template-columns: 1fr; } .jp-fig__grid--fold .jp-fig__panel:first-child canvas { max-width: 15rem; margin-inline: auto; } }
+      .jp-fig__group { margin-top: .9rem; padding-top: .6rem; border-top: 1px solid var(--line); }
+      .jp-fig__glabel { margin: 0 0 .2rem; font-size: .8rem; letter-spacing: .04em; color: var(--mid); }
+      details.jp-fig__fold { margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; padding-bottom: 0; background: none; border-left: 0; border-right: 0; border-bottom: 0; border-radius: 0; box-shadow: none; }
+      details.jp-fig__fold > summary { cursor: pointer; padding: 0; background: none; }
+      #jp-lab-c, #jp-lab-1, #jp-lab-2 { cursor: crosshair; }
+      .jp-fig__btns button[aria-pressed="true"] { background: var(--navy); color: var(--panel); border-color: var(--navy); }
+      /* 図の再生の操作は、オーディオや動画の操作のように、図のすぐ下に一列で置く（pjdhiro 2026-11-20・付箋 i20261120140451d66・i20261120140707ezl）。▶ と ⏸ は aria-pressed で入れ替える */
+      .jp-media { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin-top: .6rem; padding: .35rem .5rem; border: 1px solid var(--line); border-radius: 1.6rem; background: var(--panel); width: fit-content; max-width: 100%; }
+      .jp-media button { font: inherit; font-size: .86rem; color: var(--set); background: transparent; border: 0; border-radius: 999px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; }
+      .jp-media button:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+      .jp-media svg { width: 1.15rem; height: 1.15rem; fill: currentColor; }
+      .jp-media__icon { width: 2.2rem; height: 2.2rem; }
+      .jp-media__icon:hover, .jp-media__word:hover { background: var(--esc0); }
+      .jp-media__play { width: 2.6rem; height: 2.6rem; background: var(--navy) !important; color: var(--panel) !important; }
+      .jp-media__play .jp-media__off, .jp-media__play[aria-pressed="true"] .jp-media__on { display: none; }
+      .jp-media__play[aria-pressed="true"] .jp-media__off { display: block; }
+      .jp-media__word { padding: .35rem .7rem; border: 1px solid var(--line) !important; }
+      .jp-media__word[aria-pressed="true"] { background: var(--navy); color: var(--panel); border-color: var(--navy) !important; }
+      @media (max-width: 30rem) { .jp-media { gap: .25rem; } .jp-media__icon { width: 2rem; height: 2rem; } .jp-media__word { padding: .3rem .5rem; font-size: .8rem !important; } }
+      .jp-fig__sliders { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; align-items: end; margin-top: .8rem; }
+      .jp-fig__slider { display: grid; gap: .2rem; flex: 1 1 12rem; min-width: 0; font-size: .85rem; }
+      .jp-fig__slider output { font-variant-numeric: tabular-nums; margin-left: .3rem; }
+      .jp-fig__slider input[type="range"] { width: 100%; accent-color: var(--coral); }
+      .jp-fig__sliders button { font: inherit; font-size: .86rem; border: 1px solid var(--line); background: var(--panel); color: #1d2433; border-radius: 999px; padding: .3rem .8rem; cursor: pointer; }
+    </style>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「僕の前に道はない」のページです（工事中）。時間を、自分が未来へ向かうと見るか、未来がやってくると見るか。どちらも正しい二つの見方が曖昧になると、取り違えが起きやすいのではないか。高村光太郎の詩「道程」から入り、一方向に流れる素朴な時間の上に、先で枝が分かれる探索の木（全探索・入れ子の深さ優先探索）と、過去の側で枝が分かれる遡りの木（ジュリア集合の式の逆写像）を置き直して、時間の見え方が変わるところを読む人が通る、工事中の読み物。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の問い」「pjdhiro の見方」「pjdhiro のたとえ」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>僕の前に道はない</h1>
+                <p class="reader-subtitle">時間の向きと、二つの木</p>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/no-road-ahead/READER-no-road-ahead.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="julia-potential.html">起業家の漸化式と、ジュリア集合</a> ・
+                <a href="developmental-stages.html">精神の発達段階とは</a> ・
+                <a href="stages-screener.html">ものの見方の広さスクリーナー</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script src="../src/julia-potential-figs.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
