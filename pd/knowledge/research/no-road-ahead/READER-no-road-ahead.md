@@ -341,6 +341,20 @@ pjdhiro は、起業家の漸化式と、ジュリア集合の読み物を振り
 
 </details>
 
+マクルーハンの言葉としては、マクルーハンの著作権を持つ財団の言葉の一覧に、私たちはバックミラー越しに現在を見ていて、うしろ向きに未来へ行進している、という一文が載っています。章「[計画は、怖いから前に道を描くことでもある](#nr-plan)」で pjdhiro が引いた、バックミラーの像です。
+
+<details><summary>出典 — マクルーハンの財団の言葉の一覧</summary>
+
+<p><b>原文</b></p>
+
+- "We look at the present through a rear-view mirror. We march backwards into the future."
+
+訳は Claude。財団のサイトの一覧「McLuhanisms」に載っている一文で、一覧には本の名や頁が付いていません。
+
+出典：マクルーハンの財団（The Estate of Marshall McLuhan）のサイトの「[McLuhanisms](https://marshallmcluhan.com/mcluhanisms/)」（本文照合済。一覧の頭に「Quotations are copyright © 1986, McLuhan Associates, Ltd.」）
+
+</details>
+
 前へ向かう自分と、うしろから理解する自分は、どちらも要る。けれど同時に同じ位置には立てない。キルケゴールの一文は、二つの見方を両方持つことの難しさを、そのまま書いているように読めます。
 
 <p class="reader-lead"><span class="reader-lead__label">問い</span>いま、あなたは前を向いていますか、うしろを向いていますか。</p>
