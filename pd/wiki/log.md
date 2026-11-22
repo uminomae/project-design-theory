@@ -1449,3 +1449,8 @@ compile 実行の履歴。append-only。
 - scope: 1 ページ確かめ（`concepts/Love 駆動開発`）
 - sources: `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`（2026-11-21 の直し。創造の章の出典の箇条と、発生源・理想化の章の出典の Klein 1946 のリンクと写しの断りの四行）
 - pages: ページはクラインを名前と年で引くだけで、張り替えたリンクも写しの断りも引いていなかったので本文はそのまま。compiled を今日にした。
+
+## [2026-11-22] check | 独立ページ「起業家の漸化式と、ジュリア集合」の説明の「起業家の思考・心理・行動」を「起業家の脳内の自己」に直したのに合わせる
+- scope: 2 ページ確かめ（`cross-refs/concept-entity-map`・`プロジェクトデザイン`）
+- sources: `pd/src/content/site-data.mjs`（`repo.juliaPotentialDesc` の日本語の文言）
+- pages: どちらのページも、この読み物の説明を引いていなかったので本文はそのまま。compiled を今日にした。
