@@ -312,6 +312,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/defense-mechanisms/READER-stages-defense.md",
+        ROOT / "scripts/reader-stages-defense-template.html",
+        ROOT / "reader/stages-defense.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/defense-mechanisms/READER-defense-mechanisms.md",
         ROOT / "scripts/reader-defense-mechanisms-template.html",
         ROOT / "reader/defense-mechanisms.html",
