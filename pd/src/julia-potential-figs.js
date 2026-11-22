@@ -212,6 +212,7 @@
     $("jp-lab-deeper").addEventListener("click", () => { st.d = st.d >= D_MAX ? 0 : st.d + 1; syncSliders(); redrawLight(); });
     // 一歩ずつ・再生
     $("jp-lab-step").addEventListener("click", () => { stopPlay(); st.n = Math.min(N_MAX, st.n + 1); syncSliders(); redrawLight(); });
+    $("jp-lab-back").addEventListener("click", () => { stopPlay(); st.n = Math.max(0, st.n - 1); syncSliders(); redrawLight(); });
     $("jp-lab-reset").addEventListener("click", () => { stopPlay(); st.n = 0; syncSliders(); redrawLight(); });
     $("jp-lab-play").addEventListener("click", (e) => {
       if (st.playing) { stopPlay(); return; }

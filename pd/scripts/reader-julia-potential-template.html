@@ -135,6 +135,8 @@
       @media (max-width: 40rem) { .jp-fig__grid--fold { grid-template-columns: 1fr; } .jp-fig__grid--fold .jp-fig__panel:first-child canvas { max-width: 15rem; margin-inline: auto; } }
       .jp-fig__group { margin-top: .9rem; padding-top: .6rem; border-top: 1px solid var(--line); }
       .jp-fig__glabel { margin: 0 0 .2rem; font-size: .8rem; letter-spacing: .04em; color: var(--mid); }
+      details.jp-fig__fold { margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; padding-bottom: 0; background: none; border-left: 0; border-right: 0; border-bottom: 0; border-radius: 0; box-shadow: none; }
+      details.jp-fig__fold > summary { cursor: pointer; padding: 0; background: none; }
       #jp-lab-c, #jp-lab-1, #jp-lab-2 { cursor: crosshair; }
       .jp-fig__btns button[aria-pressed="true"] { background: var(--navy); color: var(--panel); border-color: var(--navy); }
       /* 図の再生の操作は、オーディオや動画の操作のように、図のすぐ下に一列で置く（pjdhiro 2026-11-20・付箋 i20261120140451d66・i20261120140707ezl）。▶ と ⏸ は aria-pressed で入れ替える */
