@@ -302,52 +302,7 @@ pjdhiro は、起業家の漸化式と、ジュリア集合の読み物を振り
 
 <strong>pjdhiro の見方：</strong>これが、非二元の感覚じゃないかな。
 
-心の育ちの段階を調べた研究には、段ごとの時間の感じ方と、主体の感じ方の記述があります。目標を立てて成し遂げる段では、時間の枠は「今の自分」と「あるべき自分」で、主体と客体をはっきり分けます。のちの段では、未来へ向かって進む代わりに今を大事にし、自分を、いつも参加している観察者と見るようになります。さらに先では、直線の時間も人が作った構成だと気づき、今だけが現実で、その今に過去と未来の全部が含まれる、と感じられていきます。計画する人がはっきりした全探索の木から、主体のいない遡りの木までの濃さと、同じ向きに並んで見えます。段階の見方そのものは、[精神の発達段階とは](developmental-stages.html)にまとめています。
-
-この並びを見て、pjdhiro は、木の見方そのものも、段階と関係するのかもしれない、と見ました。
-
-<strong>pjdhiro の見方：</strong>発達段階の分け方と、主体と客体を分ける（全探索）から、参加している観察者（DFS）を経て、唯一の主人ではない（逆写像の側）の対応は、一つの仮説として提案してみるのはあるかもね。このツリーをどう見るかということも、発達段階と関係するかも。
-
-一つの仮説として置きます。三つの木は、どれが正しいかの木ではありません。木がどう見えるか、どの木をしっくりくると感じるかに、見る人の段階が出るのかもしれません。主体と客体をはっきり分ける段からは、全探索の木が正解の道筋に見えやすく、自分をいつも参加している観察者と見る段からは、木の中を歩く入れ子の深さ優先探索がしっくりきやすく、自分を魂の唯一の主人と感じない段では、主体のいない遡りの木にいても、居心地が悪くないのかもしれません。段と木を一つずつ割り振ったものではなく、そのあいだの段には対応を置いていません。
-
-<details><summary>先行研究 — 段ごとの、時間と主体の記述（クック＝グロイター 2013）</summary>
-
-<div class="tablefit">
-
-| 段 | 時間 | 主体 |
-|---|---|---|
-| 達成者（4） | 時間の枠は、今の自分（特性）と、あるべき自分（目標・理想）（p.41） | — |
-| 多元（4/5） | 未来へ向かって進む代わりに、今を大事にする向きになる。過去は過ぎ、未来は本当には知りえない（p.61） | いつも参加している観察者で、完全に離れて客観的にはなれない（p.61） |
-| 戦略家（5） | 時間の枠は、歴史の視点、一生の視点（p.62） | 自分で書いている感覚は強いが、自分のコントロールの限界をよく知っている（p.64） |
-| 構成への気づき（5/6） | 目的や自我と同じく、直線の時間も人が作った構成だと気づく（p.73） | — |
-| ユニティブ（6） | 一瞬ごとに、今だけが現実。地球の歴史の全部とその未来を、この瞬間の一部として含む時間の枠（p.89） | 自他の分離は、永続と自分の重さを求める自我が、死の恐れから身を守るために作ったもの、と経験される。自分の魂の唯一の主人だとは感じない（p.89） |
-
-<p><b>原文</b></p>
-
-- p.41："Time frame: Self as it is (traits), self as it should be (goals, ideals)"
-- p.61："Instead of marching into the future, individuals become now-oriented as they infuse experience in the present with importance. The past is gone and the future cannot really be known."
-- p.61："One is always a participant observer. One can never be totally detached or 'objective.'"
-- p.62："Time frame: 'historical perspective, lifetime view'"
-- p.64："It is different from the Achiever sense of authorship because it is much more aware of the limits of one's control."
-- p.73："all objects are human-made constructs, including for instance such abstract constructs as purpose, linear time and the ego"
-- p.89："From moment to moment only the present is real." "They operate within an expanded time frame which includes all of earth's history and its future as a part of this moment."
-- p.89："The separation of self from others is experienced as an illusion, an invention to safeguard the ego's need for permanence and self-importance and to defend against the fear of its death."
-
-訳は Claude。段の番号と呼び名は、精神の発達段階とはの表と同じクック＝グロイターのもの。表の並べ方と、木の「誰が分けるか」の濃さに重ねたのは、このページの読みです。ユニティブの「死の恐れから身を守るための分離」は、章「計画は、怖いから前に道を描くことでもある」の、不老不死を願うような幻想の問いと同じ所を指しているのかもしれません。原典は計画については言っていません。
-
-出典：Cook-Greuter, S. R. (2013). [*Nine Levels of Increasing Embrace in Ego Development*](https://web.archive.org/web/20140928135208/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1%2714%2097p%5B1%5D.pdf)（本文照合済。prepublication version。著者のサイトに置かれていた版の Wayback の写し。pp.41・61・62・64・73・89。頁は論文の刷りの頁）
-
-</details>
-
-<details><summary>詳しく — 計画の木が、何に見えるか（オファロンの段階の表から）</summary>
-
-[精神の発達段階とは](developmental-stages.html#段階は何を対象にでき何の中から見ているかで決まる)の表（オファロン 2020 年）には、段階ごとに、対象にできるもの（観えているもの）と、対象にできないもの（その中から観ているもの）が並んでいます。
-
-目標と成果と因果を扱える段階（表の 3.5）では、対象にできないものとして「自分で選んだ価値観。客観的な正解があるという前提」が挙がっています。この段階から見ると、全探索の木は、心が描いた見込みでなく、正解の道筋に見えるのかもしれません。描いた木を未来そのものと取り違えることと、重なって見えます。言葉・境界・意味を心が作っていると観られる段階（表の 5.0）は、計画を、心が描いた木として観られる所かもしれません。
-
-二つの段階への当てはめは Claude の読みで、ほかの段階には当てていません。
-
-</details>
+木がどう見えるか、どの木をしっくりくると感じるかも、心の育ちの段階と関わっているのかもしれません。段階の見方は、[精神の発達段階とは](developmental-stages.html)にあります。
 
 <p class="reader-lead"><span class="reader-lead__label">問い</span>いま、あなたの言う「計画」は、誰が描いていますか。</p>
 
