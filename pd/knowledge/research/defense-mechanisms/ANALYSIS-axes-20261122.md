@@ -275,4 +275,4 @@ pjdhiro：「救いの環、許しの環という概念で整理してたはず�
 
 ## 5. pjdhiro に見せたもの
 
-軸の案は、判断のページで pjdhiro に見せた（リンクは #185 のコメント）。答えはこの記録と `docs/rules/decisions.md` の「心のセキュリティホール」の行に写す。
+軸の案は、判断のページ（https://claude.ai/artifact/5MdeWgEgSAsBCv7mAUU8bK ・#185 のコメント）で pjdhiro に見せた。軸ごとのしっくり感と、新田の処罰的自己の向きを聞いている。答えはこの記録と `docs/rules/decisions.md` の「心のセキュリティホール」の行に写す。
