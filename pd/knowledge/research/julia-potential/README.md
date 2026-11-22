@@ -294,3 +294,185 @@ pjdhiro「第二部は、平面の数で、式を一歩ずつ見るまでにし�
 - 章「その形が、神や愛のようなポテンシャルの場になるのか」を「神・愛・美は、心を惹きつける一つの場から出るのか」にし、仮説のカード → 主張の一文 → 解説 → 先行研究の箇条書きの順にした（w66）。先行研究の畳み三つ（境目の形を心や元型に結んだ論・くり返しの行き着く形・心を惹きつけるもの）は一つの箇条書きにまとめた。
 - 外したもの（w66）：カード「自然界によく見られるポテンシャルの形と、美しさの関係が謎。ここは飛躍しているから、埋めるとした場合、その推論が美の定義に触れそうだ、という読みです。」とその前後の地の文、畳み「先行研究 — くり返しから、美は出るのか」（アレグザンダー「調和を求める計算」の要約・原文 pp.2・10・51・出典）。巻末の表の「二つ目の飛躍」の行と、四つ目の行のアレグザンダーも外した。戻すときは 7358b785 の版から写す。
 - 結びの章：カード「美とは、起業家のエネルギーと近い。」のあとに「ならば、愛もそうかもしれない。」（付箋 ba1 の pjdhiro の言葉）を置き、読み物「Love駆動開発と呼びたいもの β」へつなぐ段とリンクを足した（ba1）。
+
+## 全体のレビューの残りの片付け（2026-11-22・julia-review-rest）
+
+先行研究の畳み六つを、主張の一行とリンクの箇条にした（stance 2-4「参照をたくさん並べたいなら箇条書きで主張とリンクだけ」・decisions の「第四部の先行研究の畳みは、主張の一行とリンクの箇条にしていく」の続き）。三つ目の章の三つと、四つ目の章の二つは、それぞれ一つの畳みにまとめた。外した原文と頁は、下に元の形のまま写す（戻すときは、ここから写す）。
+
+### 外した畳み「先行研究 — 自己は、いくつもの重なりか」
+
+```
+<details><summary>先行研究 — 自己は、いくつもの重なりか</summary>
+
+神経科学者のスキッパーらは、自己の処理を調べた 912 本の脳画像の論文を集め直し、自伝的な記憶・体の持ち主の感じ・内受容など、十の自己の形ごとに、働く所の地図を作りました（2026）。十の地図のうち九つ以上で重なる点は一つもなく、自己には共通の中核が無い、とします。自己は、散らばった脳の系が、その時々に寄与の強さを変えながら組む連合で、「自己」という語は、系が一緒に働く組み合わせ（配置）に付けた名だ、と書きます。いくつかの型を連続的な強さで重ねたモデルのほうが、一つの型や、型の有る無しの組み合わせより、別に取り分けた論文の結果をよく当てた、とも報告しています。
+
+いくつもの自己が重なっている、という所は、`z` を重なった自己と見る置き方の足場になります。重なりを掛け合わせとして読むのは、このページの読みです。査読前のプレプリントです。
+
+<p><b>プレプリントの参照から足した三本</b></p>
+
+一本目は、[ギャラガーのパターン理論](https://www.frontiersin.org/articles/10.3389/fnhum.2013.00443/full)（2013）です。このプレプリントが序論で拠り所にしている論の一つです。哲学者ギャラガーは、自己を一つに決めず、体・経験・感情・人とのあいだ・心理と認知・語り・身の回りに広がるもの・置かれた状況などの側面が、ある型に組まれたものを「自己」と呼ぶ、と提案しました。自己は、側面どうしの動的な相互作用から現れる複雑な系として働き、一人の中でも型は時とともに変わりうる、と書きます。自己という考えは、一つに絞らず複数のままにしておく、とも書きます。
+
+- このページの論に関わる所：自己を一つに決めず、側面の組み合わせと見る所は、`z` を重なった自己と見る置き方に近く見えます。
+- 起業家の思考や心理に近い所：心理と認知の側面の中に、熟慮と意思決定の過程が挙がり、身の回りに広がる側面の例に、働く場の制度が挙がります。
+
+二本目は、[ギャラガーとデイリーの論文](https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00664/full)（2018）です。パターン理論は側面の一覧にすぎない、という批判に答えた論文です。側面は足し算の一覧ではなく、互いに動的に関わり合う組で、一つの側面に手を入れると、相互作用を通じてほかの側面も変わる、と書きます。ある程度を超えた一つの側面の変化が、ほかの側面の変化を呼ぶ、とも書きます。関わり合いをたどる手がかりに、語り、心の病（統合失調症・うつ病など）、脳の予測の理論を挙げます。
+
+- このページの論に関わる所：側面どうしが互いに変え合う所は、自己と自己の掛け合わせの項（`2ab`）を読む見方に近く見えます。自己の型が語りの中に振り返って写る、という所は、pjdhiro の「振り返って自己分析して成長に気づく」に近く見えます。
+- 起業家の思考や心理に近い所：自分が行為の主だという感じが、語りを通じて、先の行為の選び方に効く、と書く所です。
+
+三本目は、[ハーマンスらの対話的自己論](https://link.springer.com/article/10.1007/s12124-016-9370-6)（2017）です。プレプリントの参照の一覧には無い論です。心理学者のハーマンスらは、自己を、多くの「私」の位置（職業人としての私・父としての私など）が、互いにやりとりし、張り合う場として描き、その場を民主的な社会になぞらえます。張り合いの場からは、やりとりの前には無かった新しい位置や、位置どうしの連合が生まれうる、と書きます。対立する二つの位置を組み合わせる「第三の位置」は、衝突を実りのある連合に変えうる、とします。多くの位置をまとめる位置として、全体を見渡すメタ位置と、先へ開かれ、新しい位置を生み出していく推進位置を挙げます。
+
+- このページの論に関わる所：どちらか一つの自己には無いものが、自己と自己のやりとりから生まれる、という所は、pjdhiro の「自己と自己が創造的に協働する」に近く見えます。メタ位置は、自己を振り返って見渡す位置で、二乗の章のシャドーの読み（振り返って差に気づく）に近く見えます。
+- 起業家の思考や心理に近い所：二つあります。推進位置を、社会で人を奮い立たせる指導者になぞらえ、自己を新しくしていく「自己の革新者」と呼ぶ所と、張り合いの場は、ストレスを生むだけでなく、適応と創造の力も持つ、とする所です。例に挙がるのは、文化・人種・性のあいだで生きる人の自己です。
+
+三本から借りるのは、自己を複数の重なりとして見る所と、重なりどうしが互いに変え合い、新しいものを生む所です。それを起業家の一歩に当て、二乗の掛け合わせの項に見るのは、このページの仮説です。
+
+<p><b>原文</b></p>
+
+- スキッパーら 要旨："self-related processing has no core and emerges from shifting coalitions of distributed brain systems"
+- スキッパーら 序論："The word 'self' then names systems working together in a configuration"
+- スキッパーら 考察："continuity comes from recurring members and from the shared name 'self'"
+- ギャラガー 2013（節 A Pattern Theory of Self）："On this view selves operate as complex systems that emerge from dynamic interactions of constituent aspects."
+- ギャラガー 2013（節 Introduction）："In this paper I propose to stay plural about the concept of self."
+- ギャラガー 2013（節 Some Benefits of a Pattern Theory of Self）："psychological/cognitive processes of deliberation and decision-making"
+- ギャラガーとデイリー 2018（節 A Pattern Theory of Self (PTS)）："this is not intended to be an additive list of factors, but a set of components dynamically interrelated in a pattern or gestalt arrangement"／"an intervention that affects one factor will involve modulations in the other factors."／"Adjustments in one aspect, above a certain threshold, will lead via dynamical interactions to changes in others"
+- ギャラガーとデイリー 2018（要旨）："a self-pattern is reflectively reiterated in its narrative component"
+- ギャラガーとデイリー 2018（節 What's the Use of Narrative?）："can have an effect on my future choice of action"
+- ハーマンスら p.511："A field of tension allows not only for movements between different I-positions but also for the emergence of new positions or coalitions of positions that were not there before the process of interchange started."
+- ハーマンスら（p.511 の引用と同じ段の前の文）："fields of tension not only lead to stress but can also have adaptive and creative potentials"
+- ハーマンスら p.514："the construction of third positions is particularly valuable as they have the potential of transforming conflicts between I-positions into productive coalitions"
+- ハーマンスら（節 Meta-Position）："A meta-position, like meta-cognition (Flavell 1979; Hussain 2015), provides an overview of more specific I-positions, including their patterns and inter-relationships."
+- ハーマンスら（節 Promoter Position）："Analogous to inspiring leaders in society, they imply a considerable openness towards the future and have the capacity of organizing and producing a diverse range of more specialized positions that are relevant to the further development of the self, in this way operating as innovators of the self."
+
+訳は Claude。
+
+出典：Skipper, Blackburne, Cooper, Jaglinska, Jedlovszky, Kuc, McAlpine & Timmermann (2026) "["The self" as shifting coalitions of brain systems in a continuous configuration space](https://doi.org/10.64898/2026.11.12.766263)", *bioRxiv*（査読前。本文照合済。[bioRxiv の全文](https://www.biorxiv.org/content/10.64898/2026.11.12.766263v1.full)で序論・結果・考察・方法の前半と参照の一覧を読んだ）／Gallagher (2013) "[A pattern theory of self](https://doi.org/10.3389/fnhum.2013.00443)", *Frontiers in Human Neuroscience* 7:443（本文照合済。[Frontiers の全文](https://www.frontiersin.org/articles/10.3389/fnhum.2013.00443/full)・[PMC の全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC3730118/)。節 Introduction・Pattern Theories・A Pattern Theory of Self・Some Benefits of a Pattern Theory of Self）／Gallagher & Daly (2018) "[Dynamical relations in the self-pattern](https://doi.org/10.3389/fpsyg.2018.00664)", *Frontiers in Psychology* 9:664（本文照合済。[Frontiers の全文](https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00664/full)・[PMC の全文](https://pmc.ncbi.nlm.nih.gov/articles/PMC5958307/)。要旨・節 A Pattern Theory of Self (PTS)・What's the Use of Narrative?）／Hermans, Konopka, Oosterwegel & Zomer (2017) "[Fields of tension in a boundary-crossing world: Towards a democratic organization of the self](https://doi.org/10.1007/s12124-016-9370-6)", *Integrative Psychological and Behavioral Science* 51(4):505–535（本文照合済。オープンアクセス。[Springer の全文](https://link.springer.com/article/10.1007/s12124-016-9370-6)・[全文の PDF](https://link.springer.com/content/pdf/10.1007/s12124-016-9370-6.pdf)。pp.511・514、節 Meta-Position・Promoter Position）
+
+</details>
+```
+
+### 外した畳み「先行研究 — 美・神・愛を、一つに重ねた論はあるか」
+
+```
+<details><summary>先行研究 — 美・神・愛を、一つに重ねた論はあるか</summary>
+
+偽ディオニュシオスから借りるのは、美・神・愛を一つの源に重ね、その源がすべてを惹きつける、という見方です。三つ目の仮説の「もしも」に、古典の側からいちばんはっきり触れています。その源の形を、ジュリア集合のようなものに見るのは、このページの仮説です。
+
+<p><b>偽ディオニュシオスが書いたこと</b></p>
+
+5 世紀末から 6 世紀ごろのキリスト教の著者、偽ディオニュシオス・アレオパギテースは、『神名論』の第 4 章で、神を善・美・愛（エロース）の名で呼びました。美が「美」と呼ばれるのは、すべてのものに美を分け与えるからで、またすべてのものを自分のほうへ来るよう呼び寄せるからだ、と書いています。ギリシア語では「呼ぶ（kaloun）」と「美（kallos）」の音が近く、訳者は注にギリシア語の句を添えています。
+
+すべてのものは、美と善への憧れに動かされる、とも書きます。下のものは上のものを、同じ位のものは互いを、上のものは下のものを、それぞれの仕方で慕います。造り主みずからもすべてを慕い、その慕いが、神を自分の内に留まらせず、宇宙を生み出すほうへ動かした、とされます。神は、慕う者とも、慕われる者とも呼ばれます。動かされ、また動かす、という二つの向きを一つの名に持たせています。
+
+<p><b>原文と、らせんの動き</b></p>
+
+- 第 4 章 7 節：超本質的な美は "It summons all things to fare unto Itself (from whence It hath the name of 'Fairness')"（すべてのものを、自分のほうへ来るよう呼び寄せる。そこから「美」の名を持つ）。
+- 第 4 章 10 節："all things are moved by a longing for the Beautiful and Good"（すべては、美と善への憧れに動かされる）。
+- 第 4 章 8–9 節では、天の知性と魂の動きを、円・まっすぐ・らせんの三つに分けます。天の知性のらせんの動きは、下のものを導きながら、美と善の周りを絶えず回って、自分であることに留まる動きとされます（魂のらせんは、推論で順に照らされる別の動きです）。
+
+英訳はロルト（1920）。訳は Claude。ギリシア語の原典とは照らしていません。
+
+出典：Dionysius the Areopagite, *On the Divine Names and the Mystical Theology*, C. E. Rolt 訳, London: SPCK, 1920（本文照合済。[Internet Archive の走査](https://archive.org/details/dionysiusareopag00dion)。第 4 章 7 節 p.95、8–9 節 pp.98–99、10 節 pp.99–102、14 節 pp.106–107。トロント大学の図書館の蔵書の走査）
+
+</details>
+```
+
+### 外した畳み「先行研究 — 愛と美は、生み出すことと結ばれてきたか」
+
+```
+<details><summary>先行研究 — 愛と美は、生み出すことと結ばれてきたか</summary>
+
+プラトンから借りるのは、愛と美が、生み出すこと（創造）と結ばれている、という所です。美を順に見ていく人が、終わりに「突然」美そのものを見る、という言い方は、見えていなかったものが突如現れる、という気づきの言い方にも近く見えます。
+
+<p><b>『饗宴』が語ること</b></p>
+
+『饗宴』の中で、ソクラテスは、巫女ディオティマから聞いた話として、愛する人たちが目指すのは、美の中で生むこと（体でも魂でも）だ、と語ります。美しいものを順に見ていく人は、やがて美の大海に向かい、終わりに、突然、生じも滅びもしない美そのものを見る、とされます。
+
+<p><b>原文</b></p>
+
+- 目当て："The object which they have in view is birth in beauty, whether of body or, soul."（原文のまま）
+- 美の段："the vast sea of beauty"。その美は "not fair in one point of view and foul in another"。
+- 生むことは "in the inharmonious they can never be"（調和しないものの中では、決して起きない）。
+
+ジョウエット訳。訳は Claude。
+
+出典：Plato, *Symposium*, B. Jowett 訳（本文照合済。[MIT の The Internet Classics Archive](http://classics.mit.edu/Plato/symposium.html)。ディオティマの話の段）
+
+</details>
+```
+
+### 外した畳み「先行研究 — 愛は、渦や円い動きとして書かれてきたか」
+
+```
+<details><summary>先行研究 — 愛は、渦や円い動きとして書かれてきたか</summary>
+
+二人から借りるのは、愛を、渦や円い動きとして書く言い方です。エンペドクレスの、愛が渦の中心に達したとき、すべてが集まって一つになる、という断片は、値を前へ打つと一か所の周りに寄る図の渦と、言葉の上で近く見えます。パースは 1893 年の論文「進化的な愛」で、愛の運動は円い、と書き、作ったものを独立へ押し出すことと、調和へ引き寄せることを、一つの衝動に置きました（読み物「[パースの創造的な愛と、アブダクション](peirce-love-abduction.html#pa-love)」）。
+
+集まる向きと分かれる向きを、一つの動きの入れ替わりや一つの衝動の中に見る所は、二つを一つに送る一歩と、一つを二つに開く `√` が、同じ式の前と後ろにあることと重なって見えます。それを式の渦と重ねるのは、このページの仮説です。
+
+<p><b>エンペドクレスが書いたこと</b></p>
+
+紀元前 5 世紀のギリシアの哲学者エンペドクレスは、世界を、愛と争いの二つの力の入れ替わりで書きました。あるときは、愛によって多くのものが一つに集まり、あるときは、争いによって一つのものが多くに分かれます。入れ替わりは止まず、ものは存在の円を巡ります。ある断片では、争いが渦の底へ落ち、愛が渦の中心に達したとき、そこですべてが集まって一つになる、と書いています。一度にでなく、それぞれの所から寄ってきます。争いがまだ退ききらない分は、混じらずに残る、とされます。
+
+<p><b>原文</b></p>
+
+- 断片 17："I shall tell thee a twofold tale. At one time it grew to be one only out of many; at another, it divided up to be many instead of one."（二重の話をしよう。あるときは多から一つに育ち、あるときは分かれて一つから多になった）
+- 断片 35："When Strife was fallen to the lowest depth of the vortex, and Love had reached to the centre of the whirl, in it do all things come together so as to be one only"
+- パース 1893："The movement of love is circular, at one and the same impulse projecting creations into independency and drawing them into harmony."
+
+エンペドクレスはバーネットの英訳。断片の番号はバーネットの本の番号。訳は Claude。
+
+出典：Burnet (1920) *Early Greek Philosophy*, 3rd ed., London: A. & C. Black（本文照合済。[Wikisource の翻刻](https://en.wikisource.org/wiki/Early_Greek_Philosophy/Empedokles_of_Akragas)。断片 17 は p.207、断片 35 は p.211）／Peirce (1893) "Evolutionary Love", *The Monist* 3(2):176–200（本文照合済。原文と対訳は「[パース「進化的な愛」を日本語で読む](peirce-evolutionary-love-ja.html)」。p.177）
+
+</details>
+```
+
+### 外した畳み「先行研究 — 部分に全体が入る形は、古くから言われてきたか」
+
+```
+<details><summary>先行研究 — 部分に全体が入る形は、古くから言われてきたか</summary>
+
+三つから借りるのは、部分に全体が入る形と、一が二に分かれる並びの言い方です。法蔵の、一本の毛に限りない獅子が入る形は、部分に全体が入る、という所で四段の四つ目と重なります。『周易』の繋辞伝の、太極から両儀・四象・八卦へ（1 → 2 → 4 → 8）は、`√` で遡ると点が 2 倍ずつに開く並びと、数の上で同じで、2025 年の記事が ☯ を見た所とも重なります。繋辞伝は生じる向きに、式は遡る向きに二つへ開き、どちらの向きで読むかは、どの変数をどう見るかで変わります。『老子』40 章の「反」は、返るとも、反対に向かうとも読まれ、返ると読めば、遡りと重なります。
+
+<p><b>法蔵・繋辞伝・老子が書いたこと</b></p>
+
+7 世紀から 8 世紀の唐の僧、法蔵は、『華厳金師子章』で、金の獅子の像をたとえに、一本一本の毛の中に、限りない獅子がみな在り、その一本一本の毛が、限りない獅子を帯びて、また一本の毛の中に入る、と書きました。このように重なり重なって尽きない様を、帝釈天の網の珠にたとえています。部分に全体が入り、それがまた部分に入る、という古い言い方の一つです。
+
+『周易』の繋辞伝は、易に太極があり、それが両儀を生み、両儀が四象を、四象が八卦を生む、と書きます。『老子』は、道は一を生み、一は二を、二は三を、三は万物を生む、万物は陰を負い陽を抱く、と書き、別の章で、返ることが道の動きだ、と書きます。
+
+<p><b>原文</b></p>
+
+- 金師子章：「一一毛中皆有無邊師子，又復一一毛帶此無邊師子還入一毛中。…如是重重無盡，猶天帝網珠」。
+- 繋辞上伝：「易有太極，是生兩儀，兩儀生四象，四象生八卦」。
+- 老子 42：「道生一，一生二，二生三，三生萬物。萬物負陰而抱陽」。40：「反者道之動」。
+
+訳は Claude。
+
+出典：法蔵『華厳金師子章』。宋の淨源の註の本『金師子章雲間類解』（大正蔵 T45 No.1880）に引かれた法蔵の本文で読んだ（本文照合済。[CBETA の頁](https://cbetaonline.dila.edu.tw/zh/T45n1880_p0665c23)。p.665c23–27）／『周易』繋辞上伝（本文照合済。[中國哲學書電子化計劃の頁](https://ctext.org/book-of-changes/xi-ci-shang/zh)）／『老子』40 章・42 章（本文照合済。[中國哲學書電子化計劃の頁](https://ctext.org/dao-de-jing/zh)）
+
+</details>
+```
+
+### 外した畳み「先行研究 — 至る所にある創造を、神と呼んだ論はあるか」
+
+```
+<details><summary>先行研究 — 至る所にある創造を、神と呼んだ論はあるか</summary>
+
+この論から借りるのは、宇宙から文化までのどの層にも在る創造に、神の名を当てる見方です。
+
+<p><b>S. カウフマンが書いたこと</b></p>
+
+複雑系の研究者スチュアート・カウフマンは、『聖なるものを再発明する』（2008）の序文と第 1 章で、生命の網は物理の法則を破らないが、部分的に法則の外にあり、絶えず創造的だ、と書きました。この創造性は、驚くべきもので、畏れ（awesome）と敬いに値する、とします。そして、神についての一つの見方として、神とは、自然の宇宙・生物圏・人の文化の絶えざる創造性に、私たちが選んで付けた名だ、という見方を出します。
+
+<p><b>原文</b></p>
+
+- "One view of God is that God is our chosen name for the ceaseless creativity in the natural universe, biosphere, and human cultures."
+- この創造性は "stunning, awesome, and worthy of reverence"。
+
+訳は Claude。
+
+出典：Kauffman (2008) *Reinventing the Sacred: A New View of Science, Reason, and Religion*, Basic Books（本文照合済。序文と第 1 章からの抜粋を、出版社の許しを得て著者の名で載せた [Edge の頁「Breaking the Galilean Spell」](https://www.edge.org/conversation/stuart_a_kauffman-breaking-the-galilean-spell)で読んだ。本の頁は照らしていない）
+
+</details>
+```
+
