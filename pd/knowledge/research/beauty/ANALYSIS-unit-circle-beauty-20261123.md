@@ -220,7 +220,7 @@ pjdhiro（2026-11-23、julia-potential 第六部の章「美と畏怖は、選�
 
 ### ハミルトンの原典で
 
-W. R. Hamilton「On Quaternions, or on a New System of Imaginaries in Algebra」（*Philosophical Magazine* 1844–1850。D. R. Wilkins 編 2000、トリニティ・カレッジ・ダブリンの数学史の頁 https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/OnQuat/ の PDF）。原文はパブリックドメイン。照合の状態：本文照合済（art.6・7・14。頁は Wilkins 版の頁番号で pp.4–5・8）。
+W. R. Hamilton「On Quaternions, or on a New System of Imaginaries in Algebra」（*Philosophical Magazine* 1844–1850。D. R. Wilkins 編 2000、トリニティ・カレッジ・ダブリンの数学史の頁 https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/OnQuat/ の PDF）。原文はパブリックドメイン。照合の状態：本文照合済（art.6・7・14。頁は Wilkins 版の頁番号で、art.6 が pp.4–5、art.7 が pp.5–6、art.14 が p.10）。
 
 - art.7：複素数の理論では、`−1` の平方根は符号の違う二つ（`±i`）しかない。四元数では、`w + ix + jy + kz` の二乗が `−1` になるのは `w = 0` かつ `x² + y² + z² = 1` のときで、"infinitely many different square roots of negative one" がある。その一つ一つ `i_r = iα + jβ + kγ` は、半径 1 の球面の上の点 `r`（余緯度と経度）に一つずつ対応する。
 - art.6：球面三角形の公式の極限として、複素数の `(cos r + i sin r)(cos r′ + i sin r′) = cos(r + r′) + i sin(r + r′)` に戻る。
