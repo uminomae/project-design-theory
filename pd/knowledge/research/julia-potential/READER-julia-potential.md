@@ -1,6 +1,6 @@
 # 起業家の漸化式と、ジュリア集合
 
-<figure class="jp-hero"><img src="../assets/img/julia-entre.jpg" alt="生成 AI（Google の Gemini）で作った絵。紺色の宇宙を背景に、金色に光るフラクタルの枝が渦を巻いて広がり、中心へ寄っていく点の並びと、重力で曲がったような格子が重なる。左上に、z → z² + c をくり返す疑似コード「function walk(z, c, n)」の三行が英語で書かれている。数式どおりに計算した図ではない" width="1024" height="572"><figcaption>pjdhiro が生成 AI（Google の Gemini）で作った絵です。数式どおりに計算した図ではありません。</figcaption></figure>
+<figure class="jp-hero"><img src="../assets/img/julia-post-order.webp" alt="生成 AI（Google の Gemini）で作った絵。紺色の宇宙を背景に、金色に光るフラクタルの枝が渦を巻いて広がり、中心へ寄っていく点の並びと、曲がった格子が重なる。左上に、z → z² + c を後置再帰でくり返す疑似コード「function walk(z, c, n)」の四行が英語で書かれ、終わりの行に「gather on the way back」（戻りながらまとめる）とある。数式どおりに計算した図ではない" width="1024" height="572"><figcaption>pjdhiro が生成 AI（Google の Gemini）で作った絵です。数式どおりに計算した図ではありません。</figcaption></figure>
 
 <div class="reader-lead glow-card" id="jp-gist"><span class="reader-lead__label">ざっくりいうと</span>
 <p>起業家は、試して外れたら次の枝へ、何かを見つけたら条件を変えて次の木へと、飽きずにくり返して進んでいるように見えます。このページは、その一歩を、ジュリア集合を描く式 <code>z → z² + c</code> に当てはめてみます。起業家の脳内で自己と自己が掛け合わさり（<code>z²</code>）、Love と呼びたいものが重力のように一歩ごとに引き寄せる（<code>c</code>）、と仮に置きます。</p>
@@ -844,7 +844,7 @@ Love駆動開発は、プロジェクトを動かしているもの（駆動源�
 </div>
 
 <div class="reader-lead"><span class="reader-lead__label">結論（仮）</span>
-当初の直感の側から読むと、「私」は、円を超えて散ることと、一点へ縮むことのあいだの縁に、点を入れ替えながら保たれる雲なのかもしれません。その雲が囲む一点は、重力のように一定の Love（<code>c</code>）が作り出した、届かないけど惹かれる Love なのかもしれません。一言でくくると、「私は、Love が描くジュリア集合」です（Claude が出した言い方を、pjdhiro が選びました）。
+当初の直感の側から読むと、「私」は、円を超えて散ることと、一点へ縮むことのあいだの縁に、点を入れ替えながら保たれる雲なのかもしれません。その雲が囲む一点は、重力のように一定の Love（<code>c</code>）が作り出した、届かないけど惹かれる Love なのかもしれません。一言でくくると、pjdhiro の言い方では「私が私と感じる存在は、Love と呼びたいものが描くジュリア集合のなにか」です。
 </div>
 
 第一部から第四部は、境目を、起業家を駆るものが出てくる場と読み、美へ進みました。第五部は、同じ境目を、散ることと縮むことのあいだに残る「私」の雲と読みます。同じ式の、二つの読みです。続く四つの章で、表の行のうち、円を超える・縁の点の雲・内側の一点・縁を、一つずつ確かめます。
