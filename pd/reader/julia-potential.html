@@ -1092,6 +1092,20 @@ while 続ける:
 <p>この二つは、同じ一歩を、前から見たものと後ろから見たものです。前へ打つと、<code>z</code> と <code>−z</code> の二つが一つの所へ畳まれ、後ろへ遡ると、その一つが <code>+√</code> と <code>−√</code> の二つに開きます。畳まれる二つと、開く二つは、同じ対です。そして、この対がちょうど一つに重なる所が 0（見る私と見られる私が一つに重なる所）で、そこから打った道は、届かない一点へ向かいます。</p>
 </details>
 
+<details id="jp-riemann"><summary>工事中 — 素数と関係するなら、足場になるだろうか</summary>
+
+<p class="reader-lead"><span class="reader-lead__label">工事中</span>ここには、考えを広げるための入口だけを置いています。</p>
+
+<p>pjdhiro は、ジュリア集合を遡る一段（<code>√</code>）と、リーマン予想の実部 1/2 とが、関係していそうだと感じました。どちらも複素平面の話で、1 が含まれず、単位円らしいものが出てくるからです。素数と関係するなら、このページの仮説の足場になるだろうか、という問いです。手がかりは、次の三つです。</p>
+<ul>
+<li><strong>リーマン予想がしようとしていること</strong>：素数が、平均からどれだけ外れて並ぶかを言い当てること。リーマンは 1859 年に、ある数までの素数の個数を、ゼータ関数の零点で表す式を得ました。リーマン予想は、零点（自明でないもの）の実部がみな 1/2 だ、という予想です。それが正しいことは、素数の個数の、平均（<code>Li(x)</code>）からのずれが、<code>√x</code> に <code>log x</code> を掛けたくらいの大きさに収まることと同じです。</li>
+<li><strong>複素数</strong>：実部が 1/2 の零点 <code>ρ = 1/2 + iγ</code> では、<code>x^ρ = √x · x^{iγ}</code> と分けられます。<code>√x</code> が大きさで、<code>x^{iγ}</code> は大きさ 1 のまま回る部分です。</li>
+<li><strong>単位円とステレオ投影</strong>：実部が 1/2 の縦の線を <code>t = s/(s − 1)</code> で写すと、1 だけを除いた単位円になります。円から一点を抜いて線に開くのは、ステレオ投影と同じ形です。pjdhiro は以前、四元数のステレオ投影で、光を当てる一点だけは写らないことを、「ライトはライト自身を照らせない」とたとえています（記事「<a href="https://uminomae.github.io/pjdhiro/2025-05-14-dimension/">対話：分かちがたい宇宙を分けてマージ：中心の無と盆踊り</a>」）。</li>
+</ul>
+<p>このページの縁も、ジュリア集合がつながっているときは、外から見ると単位円の写しになります。</p>
+<p>出典：E. Bombieri "<a href="https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf">Problems of the Millennium: the Riemann Hypothesis</a>"（Clay Mathematics Institute の問題の説明。本文で照合済）。リーマン予想の述べ方は p.1、素数の個数のずれとの同値は p.4。縁が単位円の写しになることは、J. Milnor (1990) "<a href="https://arxiv.org/abs/math/9201272">Dynamics in One Complex Variable: Introductory Lectures</a>" の定理 17.3（p.17-2）。<code>t = s/(s − 1)</code> の写しは Claude が計算しました。</p>
+</details>
+
 
 
 
