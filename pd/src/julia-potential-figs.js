@@ -6,6 +6,7 @@
 // 4) 円を遡って畳む（#jp-fold）：一段を「− c」「√」「−√」の三歩に分け、一歩ずつ・戻す・再生。色で出どころを追う。c は地図のクリックかボタン
 // 8) 遡りの木（#jp-btree）：赤の一点から ±√ で一段ごとに二つに分かれる遡りを、木と平面に並べて一段ずつ
 // 9) ジュリア集合とは（#jp-about-julia、右下の小窓）：場面が一つずつ進むアニメに、その場面の字幕を重ねる
+// 10) 放って、散るものと残るもの（#jp-castfig、第五部）：たくさんの点をいっせいに前へ打ち、散る点・一点へ寄る点・縁に残る点を見る
 (function () {
   const figs = document.querySelectorAll(".jp-fig");
   if (!figs.length) return;
@@ -998,7 +999,102 @@
     drawIntro = () => { cache.clear(); mapC = null; if (started) frame(scene, done ? 1 : 0); };
   }
 
-  function all() { drawFixed(); drawLab(); drawBig(); drawFold(); drawRec(); drawCplx(); drawSq(); drawBtree(); drawIntro(); }
+  /* ---- 10) 放って、散るものと残るもの（#jp-castfig、第五部）：たくさんの点をいっせいに前へ打つ。
+     半径 2 を超えた点は「散った」として外へ流しながら薄くし、残った点は不動点 z* の周りを回りながら寄る。
+     黄金角の c だけで見る（見せたい一点は、散る・一点へ縮む・縁だけが雲として残る）。
+     材料は対話の作業ページ「散って、残る一点」の図（2026-11-23）。 */
+  const castFig = document.getElementById("jp-castfig");
+  let drawCast = () => {};
+  if (castFig) {
+    const cv = document.getElementById("jp-cast-cv"), out = document.getElementById("jp-cast-out");
+    const ctx = cv.getContext("2d"), V = { x0: -2.15, x1: 2.15, y0: -2.15, y1: 2.15 };
+    const C = G.c, ZS = { re: G.fp.zr, im: G.fp.zi };
+    const sR = document.getElementById("jp-cast-r"), oR = castFig.querySelector('output[for="jp-cast-r"]');
+    const play = document.getElementById("jp-cast-play");
+    let P = [], step = 0, hits = 0, bg = null, last = null, playing = false, timer = 0;
+    const edgePt = () => {
+      let x = 1, y = 0;
+      for (let j = 0; j < 60; j++) {
+        const a = x - C.re, b = y - C.im, m = Math.sqrt(Math.hypot(a, b)), th = Math.atan2(b, a) / 2;
+        x = m * Math.cos(th); y = m * Math.sin(th); if (Math.random() < 0.5) { x = -x; y = -y; }
+      }
+      return [x, y];
+    };
+    const disk = (cx, cy, r, n) => { const a = []; for (let i = 0; i < n; i++) { const rr = r * Math.sqrt(Math.random()), t = Math.random() * Math.PI * 2; a.push([cx + rr * Math.cos(t), cy + rr * Math.sin(t)]); } return a; };
+    const KINDS = {
+      fill: () => disk(0, 0, 2, 4000),
+      edge: () => { const a = []; for (let i = 0; i < 4000; i++) a.push(edgePt()); return a; },
+      near: () => { const [x, y] = edgePt(); return disk(x, y, 0.02, 1200); },
+      in: () => disk(ZS.re + 0.15, ZS.im, 0.1, 1200),
+      zero: () => disk(0, 0, 0.03, 1200),
+    };
+    function release(pts) { P = pts.map(([x, y]) => ({ x, y, out: false, a: 1, hit: false, vx: 0, vy: 0 })); step = 0; hits = 0; render(); }
+    function bgImg() {
+      const W = cv.width, H = cv.height, img = ctx.createImageData(W, H);
+      const pan = hex(css(castFig, "--panel")), fill = hex(css(castFig, "--esc0"));
+      for (let j = 0; j < H; j++) for (let i = 0; i < W; i++) {
+        let x = V.x0 + (V.x1 - V.x0) * (i + 0.5) / W, y = V.y1 - (V.y1 - V.y0) * (j + 0.5) / H, n = 0;
+        for (; n < 300; n++) { const t = x * x - y * y + C.re; y = 2 * x * y + C.im; x = t; if (x * x + y * y > 4) break; }
+        const col = n === 300 ? fill : pan, k = (j * W + i) * 4;
+        img.data[k] = col[0]; img.data[k + 1] = col[1]; img.data[k + 2] = col[2]; img.data[k + 3] = 255;
+      }
+      return img;
+    }
+    function adv() {
+      step++;
+      for (const p of P) {
+        if (p.out) { p.x += p.vx; p.y += p.vy; p.vx *= 1.15; p.vy *= 1.15; p.a *= 0.86; continue; }
+        const t = p.x * p.x - p.y * p.y + C.re; p.y = 2 * p.x * p.y + C.im; p.x = t;
+        if (p.x * p.x + p.y * p.y > 4) { p.out = true; const m = Math.hypot(p.x, p.y); p.vx = (p.x / m) * 0.03; p.vy = (p.y / m) * 0.03; }
+        else if (!p.hit && Math.hypot(p.x - ZS.re, p.y - ZS.im) < 0.01) { p.hit = true; hits++; }
+      }
+      render();
+    }
+    function render() {
+      if (!bg) bg = bgImg();
+      ctx.putImageData(bg, 0, 0);
+      const mid = css(castFig, "--mid"), gold = css(castFig, "--gold"), coral = css(castFig, "--coral"), set = css(castFig, "--set");
+      const [ox, oy] = toPx(V, 0, 0, cv);
+      ctx.strokeStyle = mid; ctx.lineWidth = 1; ctx.beginPath(); ctx.arc(ox, oy, (2 / (V.x1 - V.x0)) * cv.width, 0, Math.PI * 2); ctx.stroke();
+      let nOut = 0, nIn = 0;
+      for (const p of P) {
+        const [px, py] = toPx(V, p.x, p.y, cv);
+        if (p.out) { nOut++; if (p.a < 0.03) continue; ctx.globalAlpha = p.a; ctx.fillStyle = mid; ctx.fillRect(px - 1, py - 1, 2, 2); continue; }
+        nIn++; ctx.globalAlpha = 1; ctx.fillStyle = p.hit ? coral : gold; ctx.fillRect(px - 1.3, py - 1.3, 2.6, 2.6);
+      }
+      ctx.globalAlpha = 1;
+      const [zx, zy] = toPx(V, ZS.re, ZS.im, cv);
+      ctx.strokeStyle = "#ffffff"; ctx.lineWidth = 4; ctx.beginPath(); ctx.arc(zx, zy, 7, 0, Math.PI * 2); ctx.stroke();
+      ctx.strokeStyle = set; ctx.lineWidth = 1.6; ctx.beginPath(); ctx.arc(zx, zy, 7, 0, Math.PI * 2); ctx.stroke();
+      const tot = P.length || 1;
+      out.textContent = "歩 " + step + "　散った " + nOut + "（" + Math.round((100 * nOut) / tot) + "%）　残っている " + nIn + "（" + Math.round((100 * nIn) / tot) + "%）　一点の 0.01 以内に入った " + hits;
+    }
+    function setPlaying(v) {
+      playing = v; play.setAttribute("aria-pressed", String(v)); clearInterval(timer);
+      if (v) timer = setInterval(() => { if (step >= 300) { setPlaying(false); return; } adv(); }, 90);
+    }
+    const choose = (kind, pts) => {
+      castFig.querySelectorAll("[data-cast]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.cast === kind)));
+      last = pts; release(pts.slice());
+    };
+    castFig.querySelectorAll("[data-cast]").forEach((b) => b.addEventListener("click", () => choose(b.dataset.cast, KINDS[b.dataset.cast]())));
+    cv.addEventListener("click", (e) => { const z = fromPx(V, e, cv); choose("", disk(z.re, z.im, Number(sR.value), 1200)); });
+    sR.addEventListener("input", () => { oR.textContent = Number(sR.value).toFixed(3); });
+    play.addEventListener("click", () => { if (!playing && step >= 300 && last) release(last.slice()); setPlaying(!playing); });
+    document.getElementById("jp-cast-reset").addEventListener("click", () => { if (last) release(last.slice()); });
+    document.getElementById("jp-cast-step").addEventListener("click", () => { setPlaying(false); if (P.length) adv(); });
+    choose("fill", KINDS.fill());
+    const reduce = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let started = false, hid = false;
+    const io = "IntersectionObserver" in window ? new IntersectionObserver((es) => es.forEach((e) => {
+      if (e.isIntersecting) { if (!started) { started = true; if (!reduce()) setPlaying(true); } else if (hid) { hid = false; setPlaying(true); } }
+      else if (playing) { hid = true; setPlaying(false); }
+    })) : null;
+    if (io) io.observe(cv);
+    drawCast = () => { bg = null; render(); };
+  }
+
+  function all() { drawFixed(); drawLab(); drawBig(); drawFold(); drawRec(); drawCplx(); drawSq(); drawBtree(); drawIntro(); drawCast(); }
   all();
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", all);
   new MutationObserver(all).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
