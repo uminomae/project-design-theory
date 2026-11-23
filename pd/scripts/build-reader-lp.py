@@ -314,6 +314,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/to-james/READER-to-james.md",
+        ROOT / "scripts/reader-to-james-template.html",
+        ROOT / "reader/to-james.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/nondual/READER-nondual.md",
         ROOT / "scripts/reader-nondual-template.html",
         ROOT / "reader/nondual.html",

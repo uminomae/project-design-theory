@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/to-james.html を直接編集しないでください。
+  正本:   knowledge/research/to-james/READER-to-james.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「ジェームズに辿り着くまで」のページです（工事中）。英語の I と me の違いを文法だと思っていた pjdhiro が、オブジェクト指向・止観・起きがけの乾いた呼吸音の四つの体験で、I と me の合成で生きていることに気づいた一回の気づきを、日記のように書き留めたページ。体験のあとで読んだウィリアム・ジェームズの I と Me（『心理学 短縮版』1892・『心理学原理』1890 第 10 章・「意識は存在するか」1904）を、章ごとに足場として添える。
+  ジェームズの文は体験を説明する足場として並べたもので、体験の証明ではない。体験とジェームズの文の対応、ギヨ（2017）への重ね方は Claude の読み。ジェームズ・智顗・臨済・ギヨ・ミードの訳は Claude。
+  pjdhiro 本人の言葉は「pjdhiro の体験：」「pjdhiro の見方：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>ジェームズに辿り着くまで | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/to-james.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="英語の I と me の違いを文法だと思っていた pjdhiro が、オブジェクト指向・止観・起きがけの乾いた呼吸音の四つの体験で、I と me の合成で生きていることに気づいた一回の気づきを、日記のように書き留めたページ。体験のあとで読んだウィリアム・ジェームズの I と Me（『心理学 短縮版』1892・『心理学原理』1890 第 10 章・「意識は存在するか」1904）を、章ごとに足場として添える。">
+    <meta property="og:title" content="ジェームズに辿り着くまで">
+    <meta property="og:description" content="英語の I と me の違いを文法だと思っていた pjdhiro が、オブジェクト指向・止観・起きがけの乾いた呼吸音の四つの体験で、I と me の合成で生きていることに気づいた一回の気づきを、日記のように書き留めたページ。体験のあとで読んだウィリアム・ジェームズの I と Me（『心理学 短縮版』1892・『心理学原理』1890 第 10 章・「意識は存在するか」1904）を、章ごとに足場として添える。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/to-james.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="ジェームズに辿り着くまで">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-24">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "ジェームズに辿り着くまで",
+          "description": "英語の I と me の違いを文法だと思っていた pjdhiro が、オブジェクト指向・止観・起きがけの乾いた呼吸音の四つの体験で、I と me の合成で生きていることに気づいた一回の気づきを、日記のように書き留めたページ。体験のあとで読んだウィリアム・ジェームズの I と Me（『心理学 短縮版』1892・『心理学原理』1890 第 10 章・「意識は存在するか」1904）を、章ごとに足場として添える。",
+          "keywords": "I と me, I と Me, 自己, ウィリアム・ジェームズ, William James, 心理学原理, warmth and intimacy, I breathe, 止観, オブジェクト指向, 呼吸, 素朴体験, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/to-james.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/to-james.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-24",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "I と me"}, {"@type": "Thing", "name": "自己"}, {"@type": "Thing", "name": "ウィリアム・ジェームズ"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した体験と見方の言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「ジェームズに辿り着くまで」のページです（工事中）。英語の I と me の違いを文法だと思っていた pjdhiro が、オブジェクト指向・止観・起きがけの乾いた呼吸音の四つの体験で、I と me の合成で生きていることに気づいた一回の気づきを、日記のように書き留めたページ。体験のあとで読んだウィリアム・ジェームズの I と Me（『心理学 短縮版』1892・『心理学原理』1890 第 10 章・「意識は存在するか」1904）を、章ごとに足場として添える。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の体験」「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>ジェームズに辿り着くまで</h1>
+                <p class="reader-subtitle">ウォーミーな私の感覚と、乾いた呼吸音</p>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/to-james/READER-to-james.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="william-james-self-ja.html">ウィリアム・ジェームズの「I と Me」を、原典で読む</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="nondual.html">不二（非二元）とは</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
