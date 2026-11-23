@@ -28,11 +28,11 @@ pjdhiro が影響を受けてきた経営学の本を、一冊ずつ紹介しま
 
 <!--OPEN-->
 
-### フィリップ・コトラーほか —『コトラーのマーケティング 3.0』か『4.0』
+### フィリップ・コトラー —『マーケティング・マネジメント』（1997 年ごろの版）
 
 🚧 工事中です。
 
-書誌：『コトラーのマーケティング 4.0 — スマートフォン時代の究極法則』朝日新聞出版、2017 年（原書 Kotler, Kartajaya & Setiawan (2016) *Marketing 4.0: Moving from Traditional to Digital*）。3.0 の原書は Kotler, Kartajaya & Setiawan (2010) *Marketing 3.0*。
+書誌：1997 年ごろの版。原書の 1997 年の版は Kotler (1997) *Marketing Management: Analysis, Planning, Implementation, and Control*, 9th ed., Prentice Hall（邦訳の版は工事中）。
 
 ## プロジェクトマネジメント
 
