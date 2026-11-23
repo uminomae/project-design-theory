@@ -62,6 +62,22 @@
 - 書き足しの読み：①起業家の行動の二乗が Love で引き寄せられるなら、結果はそもそもどんなポテンシャルだったのか → 第四部の頭の章の問いに置いた（題の問いへの橋。巻末の関連する問いにはしなかった。巻末へ移すなら、その章を保持論点の一行にする）。② z² に当たる起業家の行動 → 第一部に章を立て、Claude が原典で探した候補を三つ（約束・のめり込み・思いがけないこと）置き、どれも二乗の一面に似て見えるだけと書いた。③漸化式と再帰関数の定義 → 第一部の頭の段と畳み（MathWorld・ミルナー・SICP）。④ z は主体ではなく主体の心理や行動 → カードで引き、z を起業家の心理や行動と置き直した。
 - 新しく照らした原典：MathWorld "Recurrence Relation"（本文）、ミルナー p.3-1（n 回の反復の定め）、SICP 第 2 版 1.2.1（再帰的な手続きと過程・反復的な過程）、Sarasvathy & Dew 2005 pp.545–547（手元の写しで約束の思考実験を照合。p.546 "The two effectual counter-offers together transform…"・"NOT selecting between a green X and a blue X"、p.547 "There is always room…"）、Sarasvathy 2001 p.252（effectuation.org の誌面の写し。四つの原理と "exploiting contingencies that arose unexpectedly over time"）、Staw 1976 p.27（要旨の頁だけ。結果の節の数は見ていない）。照合はエージェントと Claude（Sarasvathy & Dew は Claude が手元の PDF で）。
 
+## 自我の同一性の言い方（2026-11-23・julia-ego-identity・付箋帳 i20261123025709ekp）
+
+pjdhiro「ギリギリ自我として、昨日の自分がまるで同じ自我であると信じながら。…少しおかしくないかな？昨日の自分が、さも今日の自分と同じであるかのように感じながら、の方が厳密じゃない？自我の同一性の説明として。調べて」。一文は第五部の章「当初の直感と、そこから組み直した骨組み」の pjdhiro の見方のカードの中にあり、本人の言葉（2026-11-22）。本人の言い直しに替えた。
+
+人格の同一性・自我の同一性の原典は、どれも「信じる」でなく、感じ・意識・感覚の側で書く。ヒュームは、同一性は実際の結びつきでなく、想像が付けるもので、作りもの（fictitious）だと言う。「さも〜かのように」に近い。
+
+| 原典 | 鍵の文（原文の一部） | 照合の状態 |
+|---|---|---|
+| ヒューム『人間本性論』1.4.6「人格の同一性について」 | 同一性を言うとき、知覚の間に real bond を observe するのか、only feel one なのかを問い、後者と答える（T 1.4.6.16）。「The identity, which we ascribe to the mind of man, is only a fictitious one」（T 1.4.6.15）。we feign the continu'd existence…（T 1.4.6.6） | 本文照合済（[davidhume.org の T 1.4.6](https://davidhume.org/texts/t/1/4/6)。段落番号 T 1.4.6.6・15・16） |
+| ジェームズ『心理学原理』第 10 章 | 同一性の感じは「a present self and a self of yesterday」の sameness の感じ（p. 332）。今の自分は「felt, with warmth and intimacy」（p. 333）。似ていることと続いていることが「no longer felt」なら「the sense of personal identity goes too」（p. 335）。ただし同じ所で「a conclusion grounded … on the resemblance … or on the continuity」とも書く（p. 334） | 本文照合済（[psychclassics の第 10 章](http://psychclassics.yorku.ca/James/Principles/prin10.htm)。頁は 1890 年版の頁の印） |
+| ロック『人間知性論』第 2 巻 27 章 | 人格の同一性は consciousness が過去へ届く所まで（§9）。substance が入れ替わっても同じ consciousness なら同じ人格（§10・§11 の見出し「Personal identity in change of substance」）。体の入れ替わりの段とも重なる | 本文照合済（[Wikisource の第 27 章](https://en.wikisource.org/wiki/An_Essay_Concerning_Human_Understanding/Book_II/Chapter_XXVII)） |
+| エリクソン「自我同一性の問題」1956（*JAPA* 4: 56–121, [doi:10.1177/000306515600400104](https://doi.org/10.1177/000306515600400104)） | 同一性は、ある時は「un sentido consciente de la identidad individual」（個の同一性の意識された感覚）、ある時は人格の連続への無意識の希求。青年は「sentido de su continuidad interna」（内の連続の感覚）を得る | 本文照合済（スペイン語訳で読んだ。[Revista uruguaya de psicoanálisis 1963 の写し](https://publicaciones.apuruguay.org/index.php/rup/article/download/453/392/393)。英語の原文は未照合（有料）） |
+| エリクソン『アイデンティティ』1968 | よく引かれる「自分の同じさと連続の知覚と、他者がそれを認める知覚」の段 | 未照合（書籍。Internet Archive の貸し出しだけ）。使っていない |
+
+ジェームズは「感じ」と並べて「結論」とも書くので、「信じる」の側が全く当たらないとまでは言えない。それでも、四つとも主には感じ・意識の語で、本人の言い直しのほうが原典の言い方に近い。カードは本人の言葉なので、原典はページに引いていない。
+
 ## 載せなかったもの
 
 - 要旨だけ読めたもの：Keltner & Haidt 2003（畏怖の二つの評価）、Gordon ほか 2017（脅威の畏怖）、Maruskin ほか 2012（寒気の二つの型）、Hogenson 2005（元型とスケール）、Bressloff ほか 2001（幻視の形と視覚野）、Aks & Sprott 1996（カオスの模様の好み）、Eglash 1997（砂占いの再帰）、Zeki ほか 2014（数式の美。本文は「美とは」で照合済み）。
