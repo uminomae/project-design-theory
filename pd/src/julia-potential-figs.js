@@ -7,7 +7,7 @@
 // 8) 遡りの木（#jp-btree）：赤の一点から ±√ で一段ごとに二つに分かれる遡りを、木と平面に並べて一段ずつ
 // 9) ジュリア集合とは（#jp-about-julia、右下の小窓）：場面が一つずつ進むアニメに、その場面の字幕を重ねる
 // 10) 放って、散るものと残るもの（#jp-castfig、第五部）：たくさんの点をいっせいに前へ打ち、散る点・一点へ寄る点・縁に残る点を見る
-// 11) 円の中の雲の見取り図（#jp-mapfig、結び）：半径 2 の円・届かない一点・0 から打った z の軌跡・縁の雲・c を、色と文字で一枚に描く
+// 11) 円の中の雲の見取り図（#jp-mapfig、結び）：私かもしれない円の雲（半径 2 の円）・届かない一点・0 から打った z の軌跡・縁（ジュリア集合）・c を、色と文字で一枚に描く
 (function () {
   const figs = document.querySelectorAll(".jp-fig");
   if (!figs.length) return;
@@ -1096,7 +1096,7 @@
   }
 
   /* ---- 11) 円の中の雲の見取り図（#jp-mapfig、結び）：黄金角の c（r = 0.97）で、
-     半径 2 の円（超えると散る）・届かない一点（不動点）・0 から打った z の軌跡（渦）・縁の雲（ジュリア集合の点）・c を、
+     私かもしれない円の雲（半径 2 の円とその内側。超えると散る）・届かない一点（不動点）・0 から打った z の軌跡（渦）・縁（ジュリア集合の点）・c を、
      色と文字で一枚に描く。ボタンで一つを選ぶと、ほかを薄くする。 */
   const mapFig = document.getElementById("jp-mapfig");
   let drawMapFig = () => {};
@@ -1129,14 +1129,17 @@
       const pan = css(mapFig, "--panel"), mid = css(mapFig, "--mid"), gold = css(mapFig, "--gold"), coral = css(mapFig, "--coral"), navy = css(mapFig, "--navy"), set = css(mapFig, "--set");
       ctx.globalAlpha = 1; ctx.fillStyle = pan; ctx.fillRect(0, 0, W, H);
       const [ox, oy] = toPx(V, 0, 0, cv), R2 = (2 / (V.x1 - V.x0)) * W;
-      // 円
+      // 私かもしれない円の雲（半径 2 の円とその内側）
+      ctx.globalAlpha = alphaOf("circle") * 0.1; ctx.fillStyle = mid;
+      ctx.beginPath(); ctx.arc(ox, oy, R2, 0, Math.PI * 2); ctx.fill();
       ctx.globalAlpha = alphaOf("circle"); ctx.strokeStyle = mid; ctx.lineWidth = 1.5; ctx.setLineDash([6, 5]);
       ctx.beginPath(); ctx.arc(ox, oy, R2, 0, Math.PI * 2); ctx.stroke(); ctx.setLineDash([]);
-      label("半径 2 の円：超えると散る（外は宇宙・全体）", ox, oy - R2 - 0 + 16, mid, "center");
-      // 縁の雲
+      label("私かもしれない円の雲（半径 2 の円）", ox, oy - R2 + 18, mid, "center");
+      label("超えると散る。外は宇宙・全体", ox, oy - R2 + 38, mid, "center");
+      // 縁（ジュリア集合）
       ctx.globalAlpha = alphaOf("cloud"); ctx.fillStyle = navy;
       let bx = 0, by = 9; for (const [x, y] of cloud) { const [px, py] = toPx(V, x, y, cv); ctx.fillRect(px - 0.8, py - 0.8, 1.6, 1.6); if (y < by) { bx = x; by = y; } }
-      { const [px, py] = toPx(V, bx, by, cv); lead(px, py + 4, px, py + 48, navy); label("縁の雲：私かもしれない", px, py + 60, navy, "center"); }
+      { const [px, py] = toPx(V, bx, by, cv); lead(px, py + 4, px, py + 48, navy); label("縁（ジュリア集合）：揺らぎ・神や美", px, py + 60, navy, "center"); }
       // z の軌跡
       ctx.globalAlpha = alphaOf("orbit") * 0.3; ctx.strokeStyle = coral; ctx.lineWidth = 0.8; ctx.beginPath();
       orbit.slice(0, 12).forEach(([x, y], i) => { const [px, py] = toPx(V, x, y, cv); if (i) ctx.lineTo(px, py); else ctx.moveTo(px, py); }); ctx.stroke();
