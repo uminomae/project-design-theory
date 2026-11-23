@@ -854,7 +854,7 @@ Love駆動開発は、プロジェクトを動かしているもの（駆動源�
 <div class="jp-fig__group"><p class="jp-fig__glabel">一つの c（黄金角）で見る</p>
 <div class="jp-fig__btns" role="group" aria-label="一つの c で見せるもの"><button type="button" data-map="all" aria-pressed="true">全部</button><button type="button" data-map="star" aria-pressed="false">届かない一点</button><button type="button" data-map="orbit" aria-pressed="false">z の軌跡（軌跡の渦）</button><button type="button" data-map="cloud" aria-pressed="false">縁（ジュリア集合）</button><button type="button" data-map="filled" aria-pressed="false">縁が囲む内側（充填ジュリア集合）</button><button type="button" data-map="c" aria-pressed="false">c</button><button type="button" data-map="reach" aria-pressed="false">残る点が届く範囲</button></div></div>
 <div class="jp-fig__group"><p class="jp-fig__glabel">いろいろな c を重ねる</p>
-<div class="jp-fig__btns" role="group" aria-label="いろいろな c を重ねて見せるもの"><button type="button" data-map="many" aria-pressed="false">円の雲（いろいろな c の縁）</button><button type="button" data-map="manyfilled" aria-pressed="false">いろいろな c の充填ジュリア集合</button></div></div>
+<div class="jp-fig__btns" role="group" aria-label="いろいろな c を重ねて見せるもの"><button type="button" data-map="many" aria-pressed="false">私かもしれない円の雲（いろいろな c の縁）</button><button type="button" data-map="manyfilled" aria-pressed="false">いろいろな c の充填ジュリア集合</button></div></div>
 <figcaption>式は <code>z → z² + c</code> です。<b>一つの c で見る</b>図の <code>c</code> は、黄金角の <code>c</code>（約 −0.378 + 0.562i）です。ボタンをクリックすると、その一つだけを濃く見せます。金色の星は、一歩で自分に戻る一点（約 −0.358 + 0.328i）で、表の行「内側の一点」です。赤は 0 から 300 歩打った <code>z</code> の軌跡で、回りながら星へ寄ります（表の行「内側の点の軌跡の渦」と「0」）。紺の点は縁（ジュリア集合）の上の点で、表の行「縁」と「縁の点」です。一つの点から一つ前の点を何度もたどって取りました。薄い灰の形は、縁が囲む内側（充填ジュリア集合）で、表の行「縁が囲む内側」です。点線の円は、この <code>c</code> で残る点が届く範囲で、原点から縁の点までのいちばん遠い距離（1.41）を半径にしました。灰色の菱形が <code>c</code> で、一歩ごとに足される一定の力を、0 からの向きとして点線で示しました。<b>いろいろな c を重ねる</b>図は、マンデルブロ集合（0 から打った道が散らない <code>c</code> の集まり）から <code>c</code> を 400 取り、それぞれの縁の点を 300 ずつ重ねたものです。表の行「円の雲」です。点線の円は半径 2 です。もう一つのボタンは、同じ 400 の <code>c</code> の充填ジュリア集合を重ね、濃さを、その点を含む <code>c</code> の割合にしました。文字の書き添えは、骨組みの表の当てはめ（仮）です。図はページの中の JavaScript で描きます（計算は Claude）。</figcaption>
 </figure>
 
@@ -951,7 +951,7 @@ Love駆動開発は、プロジェクトを動かしているもの（駆動源�
 
 図の「縁の上の点だけを放つ」で確かめられます。外にあった点は円を超えて散り、内側にあった点は一点へ縮むので、残り続けるのは縁にあった点だけです。当初の直感の「体の細胞も水分も、…いろいろなものを入れ替えながら、「私」という一点をギリギリ保つ」は、点を入れ替えながら縁という形が保たれる、この性質に重なって見えます。
 
-円の雲が現れるのは、パラメータ（`c`）がいろいろあるからです。一つの `c` の図には、円の雲は現れません。一つの `c` で残る点は、その `c` の縁の上にあり、黄金角の `c` では、原点から 1.41 までしか届きません。`c` を変えると、縁の形も、縁が囲む一点の位置も変わります。見取り図の「円の雲（いろいろな c の縁）」は、発散しない `c` を 400 取り、それぞれの縁を重ねたものです。縁の点は、半径 2 の円の中を雲のように埋め、原点から 0.75〜1.25 のあたりで濃く、真ん中と外では薄くなります。半径 2 に届くのは、`c = −2` の縁（−2 から 2 までの線分）の両端だけです。
+円の雲が現れるのは、パラメータ（`c`）がいろいろあるからです。一つの `c` の図には、円の雲は現れません。一つの `c` で残る点は、その `c` の縁の上にあり、黄金角の `c` では、原点から 1.41 までしか届きません。`c` を変えると、縁の形も、縁が囲む一点の位置も変わります。見取り図の「私かもしれない円の雲（いろいろな c の縁）」は、発散しない `c` を 400 取り、それぞれの縁を重ねたものです。縁の点は、半径 2 の円の中を雲のように埋め、原点から 0.75〜1.25 のあたりで濃く、真ん中と外では薄くなります。半径 2 に届くのは、`c = −2` の縁（−2 から 2 までの線分）の両端だけです。
 
 一つの `c` で残る点が届く範囲（1.41）と、いろいろな `c` の円（半径 2）が別の大きさになると知って、pjdhiro は、こう言いました。
 
