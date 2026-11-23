@@ -1454,3 +1454,8 @@ compile 実行の履歴。append-only。
 - scope: 2 ページ確かめ（`cross-refs/concept-entity-map`・`プロジェクトデザイン`）
 - sources: `pd/src/content/site-data.mjs`（`repo.juliaPotentialDesc` の日本語の文言）
 - pages: どちらのページも、この読み物の説明を引いていなかったので本文はそのまま。compiled を今日にした。
+
+## [2026-11-23] check | 独立ページ「起業家の漸化式と、ジュリア集合」の説明に、第五部（当初の直感から同じ式を読み直す）と結び（星座のように結ぶ・縁に「私」が雲として保たれる）の文を足したのに合わせる
+- scope: 2 ページ確かめ（`cross-refs/concept-entity-map`・`プロジェクトデザイン`）
+- sources: `pd/src/content/site-data.mjs`（`repo.juliaPotentialDesc` の日英の文言）
+- pages: どちらのページも、この読み物の説明を引いていなかったので本文はそのまま。compiled を今日にした。
