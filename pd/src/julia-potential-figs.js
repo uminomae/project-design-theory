@@ -7,6 +7,7 @@
 // 8) 遡りの木（#jp-btree）：赤の一点から ±√ で一段ごとに二つに分かれる遡りを、木と平面に並べて一段ずつ
 // 9) ジュリア集合とは（#jp-about-julia、右下の小窓）：場面が一つずつ進むアニメに、その場面の字幕を重ねる
 // 10) 放って、散るものと残るもの（#jp-castfig、第五部）：たくさんの点をいっせいに前へ打ち、散る点・一点へ寄る点・縁に残る点を見る
+// 11) 円の中の雲の見取り図（#jp-mapfig、結び）：半径 2 の円・届かない一点・0 から打った z の軌跡・縁の雲・c を、色と文字で一枚に描く
 (function () {
   const figs = document.querySelectorAll(".jp-fig");
   if (!figs.length) return;
@@ -1094,7 +1095,78 @@
     drawCast = () => { bg = null; render(); };
   }
 
-  function all() { drawFixed(); drawLab(); drawBig(); drawFold(); drawRec(); drawCplx(); drawSq(); drawBtree(); drawIntro(); drawCast(); }
+  /* ---- 11) 円の中の雲の見取り図（#jp-mapfig、結び）：黄金角の c（r = 0.97）で、
+     半径 2 の円（超えると散る）・届かない一点（不動点）・0 から打った z の軌跡（渦）・縁の雲（ジュリア集合の点）・c を、
+     色と文字で一枚に描く。ボタンで一つを選ぶと、ほかを薄くする。 */
+  const mapFig = document.getElementById("jp-mapfig");
+  let drawMapFig = () => {};
+  if (mapFig) {
+    const cv = document.getElementById("jp-map-cv"), ctx = cv.getContext("2d");
+    const V = { x0: -2.2, x1: 2.2, y0: -2.2, y1: 2.2 };
+    const C = G.c, ZS = { re: G.fp.zr, im: G.fp.zi };
+    let seed = 7; const rnd = () => { seed = (seed * 16807) % 2147483647; return seed / 2147483647; };
+    const cloud = [];
+    for (let i = 0; i < 9000; i++) {
+      let x = 1, y = 0;
+      for (let j = 0; j < 50; j++) {
+        const a = x - C.re, b = y - C.im, m = Math.sqrt(Math.hypot(a, b)), th = Math.atan2(b, a) / 2;
+        x = m * Math.cos(th); y = m * Math.sin(th); if (rnd() < 0.5) { x = -x; y = -y; }
+      }
+      cloud.push([x, y]);
+    }
+    const orbit = forward(C, { re: 0, im: 0 }, 300).pts;
+    let focus = "all";
+    const alphaOf = (k) => (focus === "all" || focus === k ? 1 : 0.12);
+    function label(text, x, y, color, align) {
+      ctx.font = "600 15px " + (css(mapFig, "--sans") || "sans-serif");
+      ctx.textAlign = align || "left"; ctx.textBaseline = "middle";
+      ctx.lineWidth = 4; ctx.strokeStyle = "rgba(255,255,255,.9)"; ctx.strokeText(text, x, y);
+      ctx.fillStyle = color; ctx.fillText(text, x, y);
+    }
+    function lead(x0, y0, x1, y1, color) { ctx.strokeStyle = color; ctx.lineWidth = 1.2; ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x1, y1); ctx.stroke(); }
+    function render() {
+      const W = cv.width, H = cv.height;
+      const pan = css(mapFig, "--panel"), mid = css(mapFig, "--mid"), gold = css(mapFig, "--gold"), coral = css(mapFig, "--coral"), navy = css(mapFig, "--navy"), set = css(mapFig, "--set");
+      ctx.globalAlpha = 1; ctx.fillStyle = pan; ctx.fillRect(0, 0, W, H);
+      const [ox, oy] = toPx(V, 0, 0, cv), R2 = (2 / (V.x1 - V.x0)) * W;
+      // 円
+      ctx.globalAlpha = alphaOf("circle"); ctx.strokeStyle = mid; ctx.lineWidth = 1.5; ctx.setLineDash([6, 5]);
+      ctx.beginPath(); ctx.arc(ox, oy, R2, 0, Math.PI * 2); ctx.stroke(); ctx.setLineDash([]);
+      label("半径 2 の円：超えると散る（外は宇宙・全体）", ox, oy - R2 - 0 + 16, mid, "center");
+      // 縁の雲
+      ctx.globalAlpha = alphaOf("cloud"); ctx.fillStyle = navy;
+      let bx = 0, by = 9; for (const [x, y] of cloud) { const [px, py] = toPx(V, x, y, cv); ctx.fillRect(px - 0.8, py - 0.8, 1.6, 1.6); if (y < by) { bx = x; by = y; } }
+      { const [px, py] = toPx(V, bx, by, cv); lead(px, py + 4, px, py + 48, navy); label("縁の雲：私かもしれない", px, py + 60, navy, "center"); }
+      // z の軌跡
+      ctx.globalAlpha = alphaOf("orbit") * 0.3; ctx.strokeStyle = coral; ctx.lineWidth = 0.8; ctx.beginPath();
+      orbit.slice(0, 12).forEach(([x, y], i) => { const [px, py] = toPx(V, x, y, cv); if (i) ctx.lineTo(px, py); else ctx.moveTo(px, py); }); ctx.stroke();
+      ctx.globalAlpha = alphaOf("orbit"); ctx.fillStyle = coral;
+      orbit.forEach(([x, y], i) => { const [px, py] = toPx(V, x, y, cv); dot(ctx, px, py, i === 0 ? 4.5 : Math.max(1.2, 3.2 - i * 0.02)); });
+      lead(ox + 4, oy + 4, ox + 30, oy + 40, coral); label("0：見る私と見られる私が重なる所", ox + 10, oy + 52, coral);
+      { const [px, py] = toPx(V, orbit[2][0], orbit[2][1], cv); lead(px - 3, py + 3, px - 60, py + 150, coral); label("z の軌跡：0 から打った渦", px - 60, py + 162, coral, "center"); }
+      // c
+      ctx.globalAlpha = alphaOf("c");
+      { const [cx, cy] = toPx(V, C.re, C.im, cv); ctx.strokeStyle = mid; ctx.lineWidth = 1.2; ctx.setLineDash([3, 4]); ctx.beginPath(); ctx.moveTo(ox, oy); ctx.lineTo(cx, cy); ctx.stroke(); ctx.setLineDash([]);
+        ctx.fillStyle = mid; ctx.save(); ctx.translate(cx, cy); ctx.rotate(Math.PI / 4); ctx.fillRect(-4, -4, 8, 8); ctx.restore();
+        lead(cx - 4, cy - 4, cx - 40, cy - 70, mid); label("c：一歩ごとに足す一定の力", cx - 40, cy - 82, mid, "center"); }
+      // 届かない一点
+      ctx.globalAlpha = alphaOf("star");
+      { const [zx, zy] = toPx(V, ZS.re, ZS.im, cv);
+        ctx.fillStyle = gold; ctx.beginPath();
+        for (let k = 0; k < 10; k++) { const r = k % 2 ? 4 : 10, t = -Math.PI / 2 + (k * Math.PI) / 5; const X = zx + r * Math.cos(t), Y = zy + r * Math.sin(t); if (k) ctx.lineTo(X, Y); else ctx.moveTo(X, Y); }
+        ctx.closePath(); ctx.fill(); ctx.strokeStyle = set; ctx.lineWidth = 1; ctx.stroke();
+        lead(zx + 10, zy - 4, zx + 60, zy - 40, gold); label("届かない一点：北極星のよう", zx + 62, zy - 50, set); }
+      ctx.globalAlpha = 1;
+    }
+    mapFig.querySelectorAll("[data-map]").forEach((b) => b.addEventListener("click", () => {
+      focus = b.dataset.map;
+      mapFig.querySelectorAll("[data-map]").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.map === focus)));
+      render();
+    }));
+    drawMapFig = render;
+  }
+
+  function all() { drawFixed(); drawLab(); drawBig(); drawFold(); drawRec(); drawCplx(); drawSq(); drawBtree(); drawIntro(); drawCast(); drawMapFig(); }
   all();
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", all);
   new MutationObserver(all).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });

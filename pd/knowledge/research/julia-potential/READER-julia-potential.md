@@ -844,6 +844,15 @@ Love駆動開発は、プロジェクトを動かしているもの（駆動源�
 
 </div>
 
+表の行が図のどこに当たるかを、一枚に描き込みます。
+
+<figure class="glow-card reader-figure jp-fig" id="jp-mapfig">
+<p class="jp-fig__title">円の中の雲：一点・軌跡・雲は、図のどこにあるか</p>
+<div class="jp-fig__panel"><canvas id="jp-map-cv" width="560" height="560" aria-label="z → z² + c の平面。点線の円は半径 2 で、超えると散る所。紺の点の集まりが縁（ジュリア集合）の雲で、私かもしれないもの。赤の線は 0 から打った z の軌跡で、回りながら金色の星（届かない一点）へ寄る。灰色の菱形が c で、0 から点線で結んである"></canvas></div>
+<div class="jp-fig__btns" role="group" aria-label="見せるもの"><button type="button" data-map="all" aria-pressed="true">全部</button><button type="button" data-map="star" aria-pressed="false">届かない一点</button><button type="button" data-map="orbit" aria-pressed="false">z の軌跡</button><button type="button" data-map="cloud" aria-pressed="false">縁の雲</button><button type="button" data-map="circle" aria-pressed="false">半径 2 の円</button><button type="button" data-map="c" aria-pressed="false">c</button></div>
+<figcaption>式は <code>z → z² + c</code> で、<code>c</code> は黄金角の <code>c</code>（約 −0.378 + 0.562i）です。ボタンをクリックすると、その一つだけを濃く見せます。金色の星は、一歩で自分に戻る一点（約 −0.358 + 0.328i）で、表の行「内側の一点」です。赤は 0 から 300 歩打った <code>z</code> の軌跡で、回りながら星へ寄ります（表の行「内側の点の渦」と「0」）。紺の点は縁（ジュリア集合）の上の点で、表の行「縁の点の雲」です。一つの点から一つ前の点を何度もたどって取りました。点線の円は半径 2 で、超えたものは散ります（表の行「半径の円を超える」）。灰色の菱形が <code>c</code> で、一歩ごとに足される一定の力を、0 からの向きとして点線で示しました。文字の書き添えは、骨組みの表の当てはめ（仮）です。図はページの中の JavaScript で描きます（計算は Claude）。</figcaption>
+</figure>
+
 <div class="reader-lead"><span class="reader-lead__label">結論（仮）</span>
 当初の直感の側から読むと、「私」は、円を超えて散ることと、一点へ縮むことのあいだの縁に、点を入れ替えながら保たれる雲なのかもしれません。その雲が囲む一点は、重力のように一定の Love（<code>c</code>）が作り出した、届かないけど惹かれる Love なのかもしれません。一言でくくると、pjdhiro の言い方では「私が私と感じる存在は、Love と呼びたいものが描くジュリア集合のなにか」です。
 </div>
