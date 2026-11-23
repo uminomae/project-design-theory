@@ -1145,7 +1145,7 @@
       orbit.slice(0, 12).forEach(([x, y], i) => { const [px, py] = toPx(V, x, y, cv); if (i) ctx.lineTo(px, py); else ctx.moveTo(px, py); }); ctx.stroke();
       ctx.globalAlpha = alphaOf("orbit"); ctx.fillStyle = coral;
       orbit.forEach(([x, y], i) => { const [px, py] = toPx(V, x, y, cv); dot(ctx, px, py, i === 0 ? 4.5 : Math.max(1.2, 3.2 - i * 0.02)); });
-      lead(ox + 4, oy + 4, ox + 30, oy + 40, coral); label("0：見る私と見られる私が重なる所", ox + 10, oy + 52, coral);
+      lead(ox + 4, oy + 4, ox + 30, oy + 40, coral); label("0：原点", ox + 10, oy + 52, coral);
       { const [px, py] = toPx(V, orbit[2][0], orbit[2][1], cv); lead(px - 3, py + 3, px - 60, py + 150, coral); label("z の軌跡：0 から打った渦", px - 60, py + 162, coral, "center"); }
       // c
       ctx.globalAlpha = alphaOf("c");
