@@ -233,7 +233,7 @@
 <li><b><a href="#jp-question">第三部 式を逆にたどると、どんなポテンシャルが見えるか</a></b>：式を逆にたどり、起業家を駆るものが出てくる場を探す</li>
 <li><b><a href="#jp-four">第四部 美は、起業家のエネルギーに近い</a></b>：美の定義から入り、同じ場に近寄る</li>
 <li><b><a href="#jp-again">第五部 当初の直感から、もう一度読む</a></b>：たくさんの点を前へ打ち、散るものと残るものから読み直す</li>
-<li><b><a href="#jp-riemann">第六部 AI に、リーマン予想で考えてもらう</a></b>：工事中。素数の話が足場になるかを、AI に考えてもらう入口</li>
+<li><b><a href="#jp-riemann">第六部 AI に、リーマン予想で考えてもらう</a></b>：工事中。素数の波とジュリア集合の波を比べ、駆動源の読みに当てる入口</li>
 <li><b><a href="#jp-close">結び 三つの星を結び、全体を感じる</a></b>：五部の読みを重ね、冒頭の問いに答える</li>
 <li><b><a href="#jp-gaps">巻末</a></b>：置いた仮説を二つの読みで並べたまとめと、原典を読む順</li>
 </ul>
@@ -1099,12 +1099,12 @@ while 続ける:
 
 
 
-</div></details><div class="reader-turn">当初の直感の側から、骨組みの行を一つずつ確かめました。次は、同じ複素平面と単位円が出てくる素数の話に、足場があるかを、AI に考えてもらう入口を置きます。</div><div class="reader-part" id="part-6"><p class="reader-part__no">第六部</p><p class="reader-part__title">AI に、リーマン予想で考えてもらう</p><div class="reader-part__lead"><p><a id="jp-riemann"></a>このページの式は、複素平面と単位円の話でもあります。素数の並びをめぐるリーマン予想にも、複素数と単位円が出てきます。第六部は、そこを AI に考えてもらうための入口です。</p></div></div><details class="sec" id="素数と関係するなら足場になるだろうか" open><summary>素数と関係するなら、足場になるだろうか</summary><div class="secbody">
+</div></details><div class="reader-turn">当初の直感の側から、骨組みの行を一つずつ確かめました。次は、同じ複素平面と単位円が出てくる素数の話に、足場があるかを、AI に考えてもらう入口を置きます。</div><div class="reader-part" id="part-6"><p class="reader-part__no">第六部</p><p class="reader-part__title">AI に、リーマン予想で考えてもらう</p><div class="reader-part__lead"><p><a id="jp-riemann"></a>このページの式は、複素平面と単位円の話でもあります。素数の並びをめぐるリーマン予想にも、複素数と単位円が出てきます。第六部は、二つを波として比べ、起業家を駆るものの読みに当ててみる入口です。続きは、AI に考えてもらうことを考えています。</p></div></div><details class="sec" id="素数と関係するなら足場になるだろうか" open><summary>素数と関係するなら、足場になるだろうか</summary><div class="secbody">
 
 
-<p class="reader-lead"><span class="reader-lead__label">工事中</span>ここには、考えを広げるための入口だけを置いています。</p>
+<p class="reader-lead"><span class="reader-lead__label">工事中</span>この部は、考えを広げるための入口です。表の当てはめは、どれも仮に置いたものです。</p>
 
-<p>pjdhiro は、ジュリア集合を遡る一段（<code>√</code>）と、リーマン予想の実部 1/2 とが、関係していそうだと感じました。どちらも複素平面の話で、1 が含まれず、単位円らしいものが出てくるからです。素数と関係するなら、このページの仮説の足場になるだろうか、という問いです。手がかりは、次の三つです。</p>
+<p>pjdhiro は、ジュリア集合を遡る一段（<code>√</code>）と、リーマン予想の実部 1/2 とが、関係していそうだと感じました。どちらも複素平面の話で、1 が含まれず、単位円らしいものが出てくるからです。素数と関係するなら、このページの仮説の足場になるだろうか、という問いです。この部では、二つを波の性質で比べ、このページの駆動源の読みに当ててみます。まず、手がかりを三つ置きます。</p>
 <ul>
 <li><strong>リーマン予想がしようとしていること</strong>：素数が、平均からどれだけ外れて並ぶかを言い当てること。リーマンは 1859 年に、ある数までの素数の個数を、ゼータ関数の零点で表す式を得ました。リーマン予想は、零点（自明でないもの）の実部がみな 1/2 だ、という予想です。それが正しいことは、素数の個数の、平均（<code>Li(x)</code>）からのずれが、<code>√x</code> に <code>log x</code> を掛けたくらいの大きさに収まることと同じです。</li>
 <li><strong>複素数</strong>：実部が 1/2 の零点 <code>ρ = 1/2 + iγ</code> では、<code>x^ρ = √x · x^{iγ}</code> と分けられます。<code>√x</code> が大きさで、<code>x^{iγ}</code> は大きさ 1 のまま回る部分です。</li>
@@ -1112,11 +1112,106 @@ while 続ける:
 </ul>
 <p>このページの縁も、ジュリア集合がつながっているときは、外から見ると単位円の写しになります。</p>
 <p>出典：E. Bombieri "<a href="https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf">Problems of the Millennium: the Riemann Hypothesis</a>"（Clay Mathematics Institute の問題の説明。本文で照合済）。リーマン予想の述べ方は p.1、素数の個数のずれとの同値は p.4。縁が単位円の写しになることは、J. Milnor (1990) "<a href="https://arxiv.org/abs/math/9201272">Dynamics in One Complex Variable: Introductory Lectures</a>" の定理 17.3（p.17-2）。<code>t = s/(s − 1)</code> の写しは Claude が計算しました。</p>
+</div></details><details class="sec" id="素数の波とジュリア集合の波" open><summary>素数の波と、ジュリア集合の波</summary><div class="secbody">
+
+
+<p><a id="jp-waves"></a>どちらにも、回る波があります。素数の側では、ゼータ関数の零点の一つひとつが、素数の並びに一つずつ波を足します。ジュリア集合の側では、一歩ごとに <code>z</code> が回ります。二つの波を、性質ごとに並べます。どちらの列も、式で確かなことです（素数の列は、リーマン予想が正しければ）。</p>
+<div class="tablefit cols-3">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>波の性質</th>
+<th>素数の波</th>
+<th>ジュリア集合の波（このページの <code>c</code>）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>何が回るか</td>
+<td>零点 <code>1/2 + iγ</code> ごとに、<code>x^{iγ}</code> が回る</td>
+<td>一歩ごとに <code>z</code> が回る。一点の近くでは 137.5° ずつ</td>
+</tr>
+<tr>
+<td>波の大きさ</td>
+<td>どの波も同じ物差し（<code>√x</code>）で、大きさ 1 のまま回る。消える波も膨らむ波も無い</td>
+<td>場所で三つに分かれる。円の外では膨らんで散り、内側では 0.97 倍ずつ縮み、縁（ジュリア集合）の上だけ、膨らみも縮みもしない</td>
+</tr>
+<tr>
+<td>円の外</td>
+<td>最初から無い。外れた零点が一つでもあれば、素数の並びは大きく乱れる</td>
+<td>在る。けれども、くり返すと外へ流されて残らない</td>
+</tr>
+<tr>
+<td>揺れの残り方</td>
+<td>平均からのずれは、両方の向きに揺れ続け、消えない</td>
+<td>縁の上の点は、一点に近づかず、不規則に跳び続ける</td>
+</tr>
+<tr>
+<td>波の高さ（周波数）</td>
+<td>零点の間隔の並びは、無作為な行列の固有値の並びに近いと見られている</td>
+<td>縁の上の跳びは、外から見た角度では、一歩ごとに角度を倍にするだけになる</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>並べると、二つの違いがはっきりします。リーマン予想が正しければ、素数は、全部の波が縁の上にいる系です。ジュリア集合は、縁が細く、ほとんどの点が散るか縮む系です。このページの <code>c</code> で、半径 2 の円いっぱいに点を放つと、84% が散りました（章「<a href="#jp-cast">円を超えたものは散り、内側は一点へ縮む</a>」）。</p>
+<p>ジュリア集合の中で、素数の波にいちばん近い所もあります。このページの <code>c</code> は、一点の周りを 137.5° ずつ回り、0.97 倍ずつ寄る値でした。この 0.97 を 1 にすると（<code>c</code> はおよそ −0.391 + 0.587i）、内側の点は寄りも散りもせず、一点の周りを回り続けます。一点から 0.25 の所に置いた点は、20 万歩のあいだ、0.20〜0.28 の距離にとどまりました。これは、回転の角度が黄金比のように「割り切れにくい」とき、一点の周りに、ただ回り続ける円板（ジークル円板）ができる、という定理の例です。ただし、大きさがちょうど 1 のときだけで、少しでもずれると、寄るか散るかに変わります。素数の波は、それがどの波でもずれない、と予想されている所が違います。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>E. Bombieri "<a href="https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf">Problems of the Millennium: the Riemann Hypothesis</a>"（本文で照合済）。ずれが両方の向きに揺れ続けることと、外れた零点があれば素数の並びが大きく乱れることは p.4、零点の間隔の並びが無作為な行列の固有値の並びに近いと見られていることは p.9。J. Milnor (1990) "<a href="https://arxiv.org/abs/math/9201272">Dynamics in One Complex Variable: Introductory Lectures</a>"（本文で照合済）。縁の上で膨らみも縮みもしないこと（グリーン関数が 0）は §17（p.17-1）、外から見た角度で倍にする動きになることは系 17.4・定理 17.5（p.17-3）、回り続ける円板は §8（p.8-2〜8-4）。0.97 を 1 にした <code>c</code> と、とどまる距離は Claude が計算しました。</p>
+</details>
+
+</div></details><details class="sec" id="駆動源の側から二つの波を読む" open><summary>駆動源の側から、二つの波を読む</summary><div class="secbody">
+
+
+<p><a id="jp-waves-drive"></a>このページは、<code>c</code> を Love と呼びたいものの一定の力、<code>c</code> が作る届かない一点を、焦がれるように惹かれる Love、縁の雲を「私」と読みました（第五部）。素数の波を並べると、その読みに、もう一つの見え方が足せるかもしれません。下の表の真ん中と右の列は、どちらも当てはめで、仮に置いたものです。</p>
+<div class="tablefit cols-3">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>所</th>
+<th>ジュリア集合の側の読み（第五部）</th>
+<th>素数の側から読むと（仮）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>試み・可能性</td>
+<td>放った点のほとんどは散るか、一点へ縮む。残るのは縁にあったものだけ</td>
+<td>外れる波が最初から無い。どの試みも、大きさを保ったまま鳴り続ける</td>
+</tr>
+<tr>
+<td>見込みからのずれ</td>
+<td>暴れる（散る）、消える（一点へ縮む）、鳴り続ける（縁に残る）の三つに分かれる</td>
+<td>鳴り続けるだけ。消えもしないが、暴れもしない</td>
+</tr>
+<tr>
+<td>駆動源</td>
+<td><code>c</code> が先に形を決め、残るかどうかは、その形の中にあったかで決まる</td>
+<td>なぜ全部が円の上にあるのか、理由がまだ見えない。見えない理由が、駆動源の側にあるのかもしれない</td>
+</tr>
+<tr>
+<td>隠れた向き</td>
+<td>認知し得ない成分（虚軸）が、見えないまま次の一歩を変える</td>
+<td>素数のずれは、実数だけで見ると不規則で、複素数の波を足すと、重なった波として見える</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>最後の行は、このページの第二部の見方とつながりそうです。pjdhiro は、起業家の歩みを、こう見ていました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>起業家自身を回転させる、とは、周囲から見ると、「人に会って決める」を繰り返す、のようなシンプルな繰り返しに見える。でもそれは、認知できるものとしてそうで、実際は認知し得ないものも含まれるし、その存在は言語化できずに、認知されるものだけが切り取られる。</p>
+</blockquote>
+<p>素数の並びも、一本の数直線の上で見ると、不規則に見えます。複素数の向きを一つ足すと、回り続ける波の重なりとして見えてきます。起業家の歩みも、認知できる側だけで見ると、単純なくり返しか、不規則な寄り道に見えます。認知し得ない向きを一つ足すと、回りながら鳴り続ける波として見えてくるのかもしれません。そのとき、起業家は、ジュリア集合の縁にギリギリ残る「私」なのか、素数のように、外れようのない波なのか。ここは、問いのまま置きます。</p>
 <details class="acc"><summary>詳しく — AI に考えてもらうときの頼む文（例）</summary>
 
 <p>AI（Claude など）に、この問いを考えてもらうときの頼む文の例です。答えは AI の推論で、確かめるのは読む人です。</p>
 <pre class="text"><code>次のページを読んでから、考えてください。
-https://uminomae.github.io/project-design-theory/reader/julia-potential.html#jp-again
+https://uminomae.github.io/project-design-theory/reader/julia-potential.html#jp-riemann
 
 問い：起業家を駆るものを、ジュリア集合の式 z → z² + c で読んだこのページの仮説に、
 リーマン予想（素数の並びのずれ）は足場になるでしょうか。
@@ -1127,6 +1222,7 @@ https://uminomae.github.io/project-design-theory/reader/julia-potential.html#jp-
 - 単位円とステレオ投影（1 だけが抜ける円）
 
 進め方：
+- 素数の波とジュリア集合の波を、波の性質（大きさ・円の外・揺れの残り方）で比べてください。
 - 似て見えるものは、似て見えるものとして置き、論拠にしないでください。
 - 候補を一つに絞らず、当てはまる所と同じくらい、壊れる所を書いてください。
 - 式で確かなことと、当てはめ（仮）を、二つの列に分けてください。</code></pre>
@@ -1136,7 +1232,7 @@ https://uminomae.github.io/project-design-theory/reader/julia-potential.html#jp-
 
 
 
-</div></details><div class="reader-turn">素数の側への入口を置きました。最後に、第五部までの二つの読みを重ねて、冒頭の問いに答えます。</div><div class="reader-part" id="part-7"><p class="reader-part__no">結び</p></div><details class="sec" id="三つの星を結び全体を感じる" open><summary>三つの星を結び、全体を感じる</summary><div class="secbody">
+</div></details><div class="reader-turn">素数の波とジュリア集合の波を比べ、駆動源の読みに当てました。最後に、第五部までの二つの読みを重ねて、冒頭の問いに答えます。</div><div class="reader-part" id="part-7"><p class="reader-part__no">結び</p></div><details class="sec" id="三つの星を結び全体を感じる" open><summary>三つの星を結び、全体を感じる</summary><div class="secbody">
 
 
 <p><a id="jp-close"></a>このページは、同じ式 <code>z → z² + c</code> を打った点を、二通りに眺めてきました。第一部から第四部では、一つの出発点から前へ打った値が一点へ寄る渦になり、遡ると枝が境目に散ることを見て、その境目を、起業家を駆るものが出てくる場と読み、美は起業家のエネルギーに近い、と置きました。第五部では、たくさんの点をいっせいに前へ打ち、散るもの、届かない一点へ寄るもの、縁に雲として残るものに分かれることを見て、その雲を「私」と読みました。</p>
