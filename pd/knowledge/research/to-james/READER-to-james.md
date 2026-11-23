@@ -108,6 +108,18 @@ James (1890) 第 10 章 pp.341・400–401（psychclassics とトロント大の
 
 <strong>pjdhiro の見方：</strong>me がない私、見られる私がいない。見る私と見られる私の二つのうち、一つが欠けた経験と言えそうなことです。
 
+その呼吸の音から、pjdhiro は一本の映画を思い出しました。
+
+<strong>pjdhiro の体験：</strong>その呼吸の音で思い出したのは、シックスセンスという映画の冷気と呼吸でした。
+
+『シックス・センス』は、M・ナイト・シャマランの 1999 年の映画です。死者が見える少年コールの近くに死者が来ると、気温が下がります。テントの中の場面では、懐中電灯の明かりに、コールの青ざめた顔と冷たい息が浮かびます。冷えは、死者が姿を見せる前に、来たことを知らせるしるしとして使われています。
+
+<details><summary>出典 — 『シックス・センス』の冷えの描き方</summary>
+
+映画そのものではなく、解説の記事で確かめました。Navarro, M. (2019-11-27). 'The Sixth Sense' and How M. Night Shyamalan Primed Viewers for One of the Scariest Scenes of All Time. *SlashFilm*（[記事](https://www.slashfilm.com/570758/scariest-scene-in-the-sixth-sense)）：シャマランの映画で、1999 年の思わぬヒット作と書く。気温が急に下がることが、死者が姿を見せるより前に、その到来を示すこと、テントの場面の「icy breath」。Shmoop の学習ガイド「Cold」（[ページ](https://www.shmoop.com/study-guides/sixth-sense/cold-symbol.html)）：台所で虐げられた妻の霊を見る直前に、温度計の針が急に下がる大写し、コールの母がよく寒がること。要約は Claude。
+
+</details>
+
 ジェームズは、1904 年の論文「「意識」は存在するか」で、意識を、ものではなく、知るというはたらきとして書き直しました。その終わりで、自分の場合、思考の流れは、よく調べると、主に呼吸の流れでできている、と書きます。カントが、すべての対象に伴いうるはずだと言った「我思う」は、実際に伴っている「我呼吸す（I breathe）」だ、と続けます（[p.491](william-james-self-ja.html#cp4)）。
 
 <details><summary>詳しく — me のない経験は、研究ではどう書き分けられているか</summary>
