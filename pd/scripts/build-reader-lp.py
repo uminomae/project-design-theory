@@ -288,6 +288,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/life-drivers/READER-life-drivers.md",
+        ROOT / "scripts/reader-life-drivers-template.html",
+        ROOT / "reader/life-drivers.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/nondual/READER-nondual.md",
         ROOT / "scripts/reader-nondual-template.html",
         ROOT / "reader/nondual.html",

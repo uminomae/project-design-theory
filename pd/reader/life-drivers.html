@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/life-drivers.html を直接編集しないでください。
+  正本:   knowledge/research/life-drivers/READER-life-drivers.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「「人生というプロジェクト」の駆動源の先行研究」のページです（工事中）。人を一生のあいだ動かし続けるものは何か。愛・意志・承認など、駆動源を「何として」見たかで先行研究を並べ、群盲象を評すように巡る工事中の読み物。原典の本文で照らせたプラトン『饗宴』・ショーペンハウアー『意志と表象としての世界』・ヘーゲル『精神哲学』から書き始め、名の付いた駆動源が対になる揺らぎを抱えていること、どれを外側の円に置くかが人によって入れ替わることを見る。
+  視点の名と並べ方、場・揺らぎ・渦とジュリア集合の読み物の所への当てはめは、このページが仮に置いたもので、論証ではない。論の要約は Claude が英訳の原典から書いたもので、各章の畳み「出典」に節と頁を添えている。まだ照らしていない視点は名だけを置いた。
+  pjdhiro 本人の言葉は「pjdhiro の問い：」「pjdhiro の見方：」「pjdhiro の仮説：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>「人生というプロジェクト」の駆動源の先行研究 | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/life-drivers.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="人を一生のあいだ動かし続けるものは何か。愛・意志・承認など、駆動源を「何として」見たかで先行研究を並べ、群盲象を評すように巡る工事中の読み物。原典の本文で照らせたプラトン『饗宴』・ショーペンハウアー『意志と表象としての世界』・ヘーゲル『精神哲学』から書き始め、名の付いた駆動源が対になる揺らぎを抱えていること、どれを外側の円に置くかが人によって入れ替わることを見る。">
+    <meta property="og:title" content="「人生というプロジェクト」の駆動源の先行研究">
+    <meta property="og:description" content="人を一生のあいだ動かし続けるものは何か。愛・意志・承認など、駆動源を「何として」見たかで先行研究を並べ、群盲象を評すように巡る工事中の読み物。原典の本文で照らせたプラトン『饗宴』・ショーペンハウアー『意志と表象としての世界』・ヘーゲル『精神哲学』から書き始め、名の付いた駆動源が対になる揺らぎを抱えていること、どれを外側の円に置くかが人によって入れ替わることを見る。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/life-drivers.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="「人生というプロジェクト」の駆動源の先行研究">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-23">
+    <meta property="article:modified_time" content="2026-11-23">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "「人生というプロジェクト」の駆動源の先行研究",
+          "description": "人を一生のあいだ動かし続けるものは何か。愛・意志・承認など、駆動源を「何として」見たかで先行研究を並べ、群盲象を評すように巡る工事中の読み物。原典の本文で照らせたプラトン『饗宴』・ショーペンハウアー『意志と表象としての世界』・ヘーゲル『精神哲学』から書き始め、名の付いた駆動源が対になる揺らぎを抱えていること、どれを外側の円に置くかが人によって入れ替わることを見る。",
+          "keywords": "人生, 駆動源, 先行研究, 群盲象, 愛, エロス, 饗宴, ディオティマ, 意志, ショーペンハウアー, 承認, ヘーゲル, 場, 揺らぎ, 渦, ジュリア集合, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/life-drivers.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/life-drivers.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-23",
+          "dateModified": "2026-11-23",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "人生の駆動源"}, {"@type": "Thing", "name": "愛"}, {"@type": "Thing", "name": "意志"}, {"@type": "Thing", "name": "承認"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「「人生というプロジェクト」の駆動源の先行研究」のページです（工事中）。人を一生のあいだ動かし続けるものは何か。愛・意志・承認など、駆動源を「何として」見たかで先行研究を並べ、群盲象を評すように巡る工事中の読み物。原典の本文で照らせたプラトン『饗宴』・ショーペンハウアー『意志と表象としての世界』・ヘーゲル『精神哲学』から書き始め、名の付いた駆動源が対になる揺らぎを抱えていること、どれを外側の円に置くかが人によって入れ替わることを見る。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の問い」「pjdhiro の見方」「pjdhiro の仮説」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>「人生というプロジェクト」の駆動源の先行研究</h1>
+                <p class="reader-subtitle">駆動源を何として見たか、で巡る</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-23 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/life-drivers/READER-life-drivers.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<div class="reader-lead glow-card" id="ld-gist"><span class="reader-lead__label">ざっくりいうと</span>
+<p>人を一生のあいだ動かし続けるものは何か。昔から多くの人が答えてきました。愛と答えた人も、意志と答えた人も、他者に認められたいことだと答えた人もいます。</p>
+<p>このページは、それらを正しさで選ばず、その人が駆動源を「何として」見たかで並べて巡ります。目の見えない人たちが、象のそれぞれの部分に触れて象を言い当てようとする、群盲象を評す、の形で見ていきます。</p>
+<p>いまは、原典の本文で照らせた三人（プラトン・ショーペンハウアー・ヘーゲル）だけを書いています。三人を並べると、何がいちばん外側の円かが、人によって入れ替わることが見えてきます。</p>
+</div>
+
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p>このページは、このサイトを作っている pjdhiro の問いに、Claude が調べて答える形で書いています。始まりは、次の問いでした。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の問い：</strong>人生というプロジェクトの駆動源は？</p>
+</blockquote>
+<p class="reader-lead"><span class="reader-lead__label">工事中</span>工事中のページです。視点の名と並べ方は仮に置いたもので、原典で照らせた視点から順に書き足していきます。</p>
+
+<div class="reader-lead"><span class="reader-lead__label">今の答え</span>
+駆動源は、一つの名では言い当てられないのかもしれません。名の付いた駆動源（愛・意志・承認）は、どれも、その名の中か隣に、対になる揺らぎ（欠乏と富・苦痛と退屈・生と自由）を抱えています。しかも、どれをいちばん外側の円に置くかは、人によって入れ替わります。だから、駆動源は、良いものと悪いものを包みながら人を動かす何かで、人はそのうち名を当てやすいところに、愛や意志の名を当ててきたのではないか、と仮に置きます。
+</div>
+
+<div class="reader-lead"><span class="reader-lead__label">構成</span>
+<ul class="reader-lead__list">
+<li><b><a href="#ld-tour">はじめに 群盲が触った象を巡る</a></b>：何として見たか、で並べる</li>
+<li><b><a href="#ld-checked">第一部 照らせた三つの視点</a></b>：愛として、意志として、承認として</li>
+<li><b><a href="#ld-pending">第二部 まだ照らしていない視点</a></b>：並べる予定の視点の名</li>
+<li><b><a href="#ld-measure">第三部 二つの物差しで見る</a></b>：場・揺らぎ・渦と、ジュリア集合の所</li>
+<li><b><a href="#ld-method">巻末</a></b>：集め方と出典</li>
+</ul>
+</div>
+
+
+
+<div class="reader-part" id="part-1"><p class="reader-part__no">はじめに</p><p class="reader-part__title">群盲が触った象を巡る</p></div><details class="sec" id="駆動源を何として見たかで並べる" open><summary>駆動源を「何として」見たかで並べる</summary><div class="secbody">
+
+
+<p><a id="ld-tour"></a>群盲象を評す、の話は、経営学では、ミンツバーグらの『戦略サファリ』が冒頭に置いたことで知られています。戦略の論を十の学派に分け、ガイドツアーのように一つずつ巡る本です（<a href="mintzberg-schools.html">ミンツバーグの学派を、駆動源と創造の流れで見る</a>）。このページも、同じ構えで、人生の駆動源についての論を巡ります。</p>
+<p>並べ方は、その人が駆動源を「何として」見たか、です。愛として見た人、意志として見た人、他者に認められることとして見た人がいます。言葉を当てられず、何でないかで指した人もいます。一人の論者が、いくつもの視点に出ることもあります。どの視点も象の一面として扱い、どれが正しいかは決めません。</p>
+<p>「愛」の語は、そのままでは広すぎます。惹かれること、与え育てること、いたわること、もとへ戻ること、次の世代へつなぐこと、結ぶこと。同じ「愛」の名で、違う面が指されてきました。このページでは、愛と呼ばれてきたものを、どの面を指しているかで言い直して並べます。</p>
+<details class="acc"><summary>詳しく — 物差しにする、pjdhiro の二つの見方</summary>
+
+<p>並べた論を見るとき、物差しを二つ使います。一つ目は、場・揺らぎ・渦です。pjdhiro は、この題材について、こう話しました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の仮説：</strong>場と揺らぎと渦。どれかに該当したら駆動源かもしれない。渦の側に概念や名前がついてると思う。まずはそれを切り取る。その後で、隣接しているところに対立する揺らぎ（例えば愛と憎しみなど）があるはずで、良いことだけが並ぶわけでなく、包摂していくように駆動するのではないか。</p>
+</blockquote>
+<p>場・揺らぎ・渦は、<a href="https://uminomae.github.io/project-design-theory/cs/reader/five-stages.html">創造とは</a>で、創造の過程を海と波と渦にたとえて置いた段の言葉です。渦は、見分けられる二つが、一つであるかのようにまとまる所です。</p>
+<p>二つ目は、読み物「<a href="julia-potential.html">起業家の漸化式と、ジュリア集合</a>」の第五部が、式の所ごとに置いた読みです（<a href="julia-potential.html#jp-spine-table">骨組みの表</a>）。円を超えて散って残らないもの、内側の届かないけど惹かれる一点、くり返しても在り続ける縁、縁の上で点を入れ替えながら形だけが保たれる「私」の雲、などです。</p>
+</details>
+
+
+
+</div></details><div class="reader-part" id="part-2"><p class="reader-part__no">第一部</p><p class="reader-part__title">照らせた三つの視点</p></div><details class="sec" id="愛として欠けているものへ惹かれ美の中で産むプラトン饗宴" open><summary>愛として：欠けているものへ惹かれ、美の中で産む（プラトン『饗宴』）</summary><div class="secbody">
+
+
+<p><a id="ld-checked"></a>はじめの視点は、駆動源を愛として見た人です。プラトンの対話篇『饗宴』では、ソクラテスが、マンティネイアの女性ディオティマから聞いた話として、愛（エロス）を語ります。</p>
+<p>ディオティマによると、エロスは、欠乏（ペニア）と工夫・富（ポロス）のあいだに生まれた子です。だからいつも貧しく、それでいて美しいものと善いものを狙い続けます。満ちては流れ出て、富むこともなく、尽きることもありません。知恵ある者と無知な者のあいだにいて、知を愛します。</p>
+<p>ディオティマは、ふだん「愛」と呼ぶものは、大きな全体の一部にだけ付いた名だ、とも言います。無から有へのあらゆる制作が「ポイエーシス（作ること）」なのに、詩と音律の部分だけが「詩」と呼ばれるのと同じように、善と幸福へのあらゆる欲求が愛の力なのに、一つの形にだけ「愛」の名が当てられている、というのです。お金を稼ぐ道や、体を鍛える道や、知を求める道に進む人は、愛する人とは呼ばれません。</p>
+<p>では、愛は何をしているのか。ディオティマの答えは、善いものをいつまでも自分のものにしようとすること、そのために、美しいものの中で、体と魂において産むことです。死すべきものにとって、産むことは一種の不死だからです。</p>
+<p>このページで目を留めたいのは、その続きです。ディオティマは、一人の人の中でも、同じものが続いているのではない、と言います。髪も肉も骨も血も、体のすべてが入れ替わり続け、魂の習い・気質・考え・欲・快・苦・恐れも、知識さえも、来ては去っていく。死すべきものは、古いものが去るあとに似た新しいものを残すことで保たれている、と。</p>
+<p>この像は、読み物「<a href="julia-potential.html">起業家の漸化式と、ジュリア集合</a>」の第五部が置いた、縁の上の「私」の雲に似て見えます。点は一歩ごとに入れ替わり、一点に近づかないまま、形だけが保たれる、という読みでした。二千四百年ほど前の文が、同じ形で「私」を書いているのかもしれません。</p>
+<details class="acc"><summary>詳しく — 「全体への欲求」との関係と、美の梯子</summary>
+
+<p>『饗宴』では、ソクラテスの前に、喜劇作家アリストパネスが愛を語っています。人はもともと一つの全体で、二つに裂かれたので、片割れを探している。全体への欲求と追求が愛と呼ばれる、という話です（192e–193a）。ディオティマはのちに、それに触れて、人が愛するのは自分の片割れでも全体でもなく、それが善いものであるときだけだ、と言います（205d–e）。</p>
+<p>同じ書物の中に、もとの全体へ戻ろうとする面と、善いものを欠いて求める面が並んでいます。このページの言い方では、どちらも愛と呼ばれてきたものの面で、前者は「もとへ戻ること」、後者は「惹かれること」に当たります。</p>
+<p>ディオティマの話の終わりは、美の梯子です。一つの美しい体から、すべての美しい体へ、営みの美へ、学びの美へと順に上り、最後に、美そのものを突然見る。それは、生まれも滅びもせず、ある人には美しく別の人には醜い、ということもない美だ、とされます（210a–212a）。ジュリア集合の読み物の第五部の言い方では、届かないけど惹かれる、内側の一点に近い所かもしれません。</p>
+<p>話す人ごとの愛の書き方は、読み物「<a href="love-history.html#lh-plato">Love とは、どう言われてきたか</a>」の『饗宴』の段に並べてあります。</p>
+</details>
+
+<details class="acc"><summary>出典 — プラトン『饗宴』</summary>
+
+<p>ジョウエット（Benjamin Jowett）の英訳を、MIT の Internet Classics Archive の写し（<a href="http://classics.mit.edu/Plato/symposium.html">Symposium by Plato, translated by Benjamin Jowett</a>）で読みました。日本語は Claude の要約です。位置を示すステファヌス番号は、Perseus Digital Library のラム（W. R. M. Lamb）の英訳（<a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0174:text=Sym.:section=203b">Plato, Symposium</a>）で照らしました。欠乏と富の子（203b–204b）、愛の名は一部に当たる（205b–d）、善をいつまでも自分のものに（206a）、美の中で産む・産むことは一種の不死（206b–207a）、一人の中でも入れ替わって保たれる（207d–208b）、アリストパネスの全体への欲求（192e–193a）、美の梯子（210a–212a）。</p>
+</details>
+
+</div></details><details class="sec" id="意志として欠けから生まれ苦痛と退屈のあいだを揺れるショーペンハウアー" open><summary>意志として：欠けから生まれ、苦痛と退屈のあいだを揺れる（ショーペンハウアー）</summary><div class="secbody">
+
+
+<p>次の視点は、駆動源を意志として見た人です。ショーペンハウアーは『意志と表象としての世界』の第四巻で、生きることの全体を、止まることのない意志の努力として書きました。</p>
+<p>意志には、最後の目的がありません。どんな目的に届いても、努力は終わらない。ショーペンハウアーは、そのいちばん簡単な例として、重力を挙げます。重力は、数学的な中心へ向かって押し続け、その中心に届けば、自分も物質も無くなってしまう（§56）。すべての努力は、欠けているもの、いまの状態への不満から生まれ、満たされないあいだは苦しみで、満たされれば、それが次の努力の始まりになる、とも書きます（§56）。</p>
+<p>人の場合、意欲の基は、必要、欠乏、つまり苦痛です。そして、望むものが簡単に満たされて欲しいものが無くなると、今度は恐ろしい空しさと退屈がやってくる。だから人の生は、苦痛と退屈のあいだを、振り子のように行き来する、とショーペンハウアーは言います（§57）。</p>
+<p>この意志の側から、ショーペンハウアーは愛（性愛）も書きました。続編の第 44 章「性愛の形而上学」です。どれほど霊妙に見える恋も、性の衝動に根ざしている。恋が決めているのは、次の世代の組み立てで、そこでは個人の意志が、一段高い力で、種の意志として現れる。各人は、自分に欠けたものを愛する。恋による結婚は、種のためで、個人のためではない、とされます。</p>
+<p>ここで、プラトンと並べると、円の入れ子が逆になります。プラトンのディオティマでは、愛の円が、お金や体や知への欲求まで包んでいました。ショーペンハウアーでは、意志が外の円で、愛はその内側の、種の意志の現れです。ショーペンハウアー自身、この題材をいちばん論じたのはプラトンの『饗宴』と『パイドロス』だ、と名を挙げています。</p>
+<details class="acc"><summary>詳しく — 重力の中心のたとえ</summary>
+
+<p>ショーペンハウアーが意志の例に引いた重力の中心は、届けば自分が無くなる、届かない中心へ押し続ける像です。読み物「<a href="gravity-love.html">愛は、重力に似ていないか</a>」は、Love と呼びたいものを重力にたとえました。読み物「<a href="julia-potential.html">起業家の漸化式と、ジュリア集合</a>」の第五部は、内側の一点を、届かないけど惹かれる所と読みました。ショーペンハウアーの像は、その二つと形が似ています。</p>
+<p>違うのは、受け止め方です。ショーペンハウアーは、届かない中心へ押し続けることを、終わらない苦しみとして書きました。ジュリア集合の読み物は、同じ形を、惹かれる Love として読みました。同じ形が、苦しみとしても、惹かれる力としても読める。このページは、そのどちらかを正しいとはしません。</p>
+</details>
+
+<details class="acc"><summary>出典 — ショーペンハウアー『意志と表象としての世界』</summary>
+
+<p>ホールデン（R. B. Haldane）とケンプ（J. Kemp）の英訳（<em>The World as Will and Idea</em>, 1909 年の版）を、Wikisource の写しで読みました。日本語は Claude の要約です。第一巻の第四巻 §56–57（<a href="https://en.wikisource.org/wiki/The_World_as_Will_and_Idea/Volume_1/Fourth_Book">Volume 1/Fourth Book</a>）、第三巻の第 44 章（<a href="https://en.wikisource.org/wiki/The_World_as_Will_and_Idea/Volume_3/Chapter_44">Volume 3/Chapter 44</a>）。頁は、節と章の番号で示しました。</p>
+</details>
+
+</div></details><details class="sec" id="承認として生死を賭けて他者に認められようとするヘーゲル" open><summary>承認として：生死を賭けて、他者に認められようとする（ヘーゲル）</summary><div class="secbody">
+
+
+<p>三つめの視点は、駆動源を、他者に認められることとして見た人です。ヘーゲルは『精神哲学』で、自己意識が別の自己意識と向き合う場面を書きました。</p>
+<p>相手の中に自分を見るのに、相手は自分から独立していて、自分に向き合っている。この矛盾が、自分を自由な者として相手に示そうとする衝動を生み、承認の過程が始まる（§430）。その過程は闘いで（§431）、生死を賭けた闘いになる（§432）。けれども、相手が死ねば、認めてくれる者がいなくなる。生きていることは、自由と同じくらい、解決に要る。だから闘いは、一方が生を選び、もう一方が認められる、という不平等な形でいったん終わり、主人と奴隷の関係が生まれる（§433）。奴隷は、主人に仕えるうちに、自分の欲をこらえて形を作るようになり、それが普遍的な自己意識への入口になる（§434–435）。</p>
+<p>その先の普遍的な自己意識は、他者の中に自分を肯定的に知ることです。互いに相手を自由な者として認め、認められていると知っている。ヘーゲルは、それが家族・祖国・国家と、愛・友情・勇気・名誉・名声のような徳の根にある形だ、と書きます。ただし、その現れが本質から切り離されると、中身の無い名誉や空しい名声になる、とも書きます（§436）。</p>
+<p>この視点で、愛や名誉は、承認の現れの一つです。プラトンの愛の円、ショーペンハウアーの意志の円に続いて、ここでは承認の円が外にあります。</p>
+<p><a href="https://uminomae.github.io/project-design-theory/as/#as-signals">意識とは</a>では、人は、生き延びられるか（生存）と、つながっていられるか（信頼）の二つの信号で世界を切り取っているのかもしれない、と置いています。承認をめぐる生死の闘いを、二つの信号のどちらで読むか。pjdhiro は、こう見ています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>信頼の問題も生存に関わる。非二元な一つのものという意味だと思うな。推測だけど。</p>
+</blockquote>
+<p>ヘーゲルの文でも、承認を求める闘いが、そのまま生死の闘いとして書かれ、生きることと自由であることの両方が要る、とされています。つながりを求めることと、生き延びることが、一つの闘いの中で切り離せずに出ている、と読めるのかもしれません。</p>
+<details class="acc"><summary>出典 — ヘーゲル『精神哲学』</summary>
+
+<p>ウォレス（William Wallace）の英訳 <em>Hegel's Philosophy of Mind</em>（Clarendon Press, 1894）を、Internet Archive の写し（<a href="https://archive.org/details/philosophymind00hegeuoft">Hegel's Philosophy of Mind</a>）で読みました。『エンツュクロペディー』第三部の、承認する自己意識と普遍的な自己意識の節（§§430–436・pp.55–57）。日本語は Claude の要約です。</p>
+</details>
+
+</div></details><details class="sec" id="三つを並べると外側の円が入れ替わる" open><summary>三つを並べると、外側の円が入れ替わる</summary><div class="secbody">
+
+
+<p>照らせた三つを並べます。どれも、名の付いた駆動源の中か隣に、対になる揺らぎを持っています。</p>
+<div class="tablefit cols-3">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>駆動源の名</th>
+<th>名の中か隣にある揺らぎ</th>
+<th>その人が外側に置いた円</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>愛（プラトン『饗宴』のディオティマ）</td>
+<td>欠乏と富。死すべきものと不死</td>
+<td>愛が、善と幸福へのあらゆる欲求を包む</td>
+</tr>
+<tr>
+<td>意志（ショーペンハウアー）</td>
+<td>苦痛と退屈。個人の幸せと種の意志</td>
+<td>意志が外で、愛は種の意志の現れ</td>
+</tr>
+<tr>
+<td>承認（ヘーゲル）</td>
+<td>生と自由。主人と奴隷</td>
+<td>承認が外で、愛や名誉はその現れ</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>三人は、それぞれ違う円をいちばん外に置きました。どれか一つを正しい外の円とするなら、ほかの二人の見方を、その内側に押し込むことになります。群盲象を評す、の形で見るなら、いちばん外の円には、どの名も当てずに置いておくほうが合うのかもしれません。名を当てられず、何でないかで指すしかなかった人たちの視点は、第二部で照らしていきます。</p>
+
+
+</div></details><div class="reader-part" id="part-3"><p class="reader-part__no">第二部</p><p class="reader-part__title">まだ照らしていない視点</p></div><details class="sec" id="並べる予定の視点" open><summary>並べる予定の視点</summary><div class="secbody">
+
+
+<p><a id="ld-pending"></a><p class="reader-lead"><span class="reader-lead__label">工事中</span>ここに挙げた視点は、原典の本文で照らしてから、論を書き足します。</p></p>
+<p>駆動源を何として見たか、の視点を、次のように仮に置いています。視点の名は、このページが置いたものです。</p>
+<ul>
+<li>真として（知りたい・確かめたい）</li>
+<li>善として（善く生きる・幸福）</li>
+<li>美として</li>
+<li>神・聖なるものとして</li>
+<li>愛と呼ばれてきたもののほかの面：与え育てること、いたわること、もとへ戻ること、結ぶこと</li>
+<li>欲求・快として</li>
+<li>生命・産むこととして</li>
+<li>苦として</li>
+<li>退屈・空しさとして</li>
+<li>死・限りあることとして</li>
+<li>意味として</li>
+<li>自由として</li>
+<li>天命・運命として</li>
+<li>偶然・縁として</li>
+<li>他者として（承認のほかの面）</li>
+<li>力・名誉として</li>
+<li>遊びとして</li>
+<li>自己実現・成ることとして</li>
+<li>働くこと・作ることとして</li>
+<li>調和・秩序として</li>
+<li>対立や揺らぎそのものとして</li>
+<li>何でないかで指して</li>
+<li>いくつもの視点を跨いで</li>
+</ul>
+
+
+</div></details><div class="reader-part" id="part-4"><p class="reader-part__no">第三部</p><p class="reader-part__title">二つの物差しで見る</p></div><details class="sec" id="名の付いた渦と隣の揺らぎ" open><summary>名の付いた渦と、隣の揺らぎ</summary><div class="secbody">
+
+
+<p><a id="ld-measure"></a><p class="reader-lead"><span class="reader-lead__label">工事中</span>視点が増えたら、<a href="https://uminomae.github.io/project-design-theory/cs/reader/five-stages.html">創造とは</a>の五つの段（場・波・縁・渦・束）と、<a href="https://uminomae.github.io/project-design-theory/as/#as-signals">意識とは</a>の二つの信号でも、仮にくくってみます。</p></p>
+<p><a href="#ld-tour">はじめに</a>の物差しで、照らせた三つを仮に見てみます。どこに当たるかは、このページが当ててみたものです。</p>
+<div class="tablefit cols-3">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>名の付いた渦</th>
+<th>隣の揺らぎ</th>
+<th>ジュリア集合の読み物の第五部で、似て見える所</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>エロス（プラトン）</td>
+<td>欠乏と富</td>
+<td>入れ替わって保たれる一人は、縁の上の「私」の雲。美そのものは、届かないけど惹かれる内側の一点</td>
+</tr>
+<tr>
+<td>意志（ショーペンハウアー）</td>
+<td>苦痛と退屈</td>
+<td>届けば無くなる中心へ押し続ける重力は、内側の一点と、そこへ寄り続ける動き</td>
+</tr>
+<tr>
+<td>承認（ヘーゲル）</td>
+<td>生と自由</td>
+<td>他者の中に自分を見る、一つに重ならない二つ。第五部の読みとの当てはめは、まだ置いていない</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>三つとも、名の付いた渦が、隣の揺らぎを名の中に抱えています。良いものだけが並んでいるのではなく、欠乏も苦痛も、生死を賭けた闘いも、駆動源の名の内側にあります。駆動源が、対になる揺らぎを包みながら人を動かしている、という仮説を、三つは支えているように見えます。ほかの視点を照らしたとき、片側だけが名になっている論が出てくれば、その対を論の外から探します。</p>
+
+
+</div></details><div class="reader-part" id="part-5"><p class="reader-part__no">巻末</p></div><details class="sec" id="集め方と出典" open><summary>集め方と出典</summary><div class="secbody">
+
+
+<p><a id="ld-method"></a>視点の候補は、Claude が、記憶から広く挙げて集めました。そのうち、このページに書いたのは、原典の本文を読んで確かめたものだけです。引用した原典は、どれもパブリックドメインの英訳で、ブラウザで読める写しにリンクを張りました。日本語は Claude の要約で、訳文の校閲はしていません。</p>
+<ul>
+<li>プラトン『饗宴』：ジョウエットの英訳（<a href="http://classics.mit.edu/Plato/symposium.html">MIT Internet Classics Archive</a>）。ステファヌス番号は、ラムの英訳（<a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0174">Perseus Digital Library</a>）で照らした。</li>
+<li>ショーペンハウアー『意志と表象としての世界』：ホールデンとケンプの英訳、第一巻 第四巻 §56–57（<a href="https://en.wikisource.org/wiki/The_World_as_Will_and_Idea/Volume_1/Fourth_Book">Wikisource</a>）、第三巻 第 44 章（<a href="https://en.wikisource.org/wiki/The_World_as_Will_and_Idea/Volume_3/Chapter_44">Wikisource</a>）。</li>
+<li>ヘーゲル『精神哲学』：ウォレスの英訳（1894 年）、§§430–436・pp.55–57（<a href="https://archive.org/details/philosophymind00hegeuoft">Internet Archive</a>）。</li>
+<li>ミンツバーグらの『戦略サファリ』の冒頭の群盲象の詩は、<a href="mintzberg-schools.html">ミンツバーグの学派を、駆動源と創造の流れで見る</a>で原典に照らしています。</li>
+</ul>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="love-history.html">Love とは、どう言われてきたか</a> ・
+                <a href="julia-potential.html">起業家の漸化式と、ジュリア集合</a> ・
+                <a href="mintzberg-schools.html">ミンツバーグの学派を、駆動源と創造の流れで見る</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
