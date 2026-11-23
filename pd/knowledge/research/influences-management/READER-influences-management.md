@@ -54,7 +54,17 @@ pjdhiro が影響を受けてきた経営学の本を、一冊ずつ紹介しま
 
 書誌：Project Management Institute (2021) *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*, 7th ed.
 
-## 組織と知識
+## イノベーション
+
+<!--OPEN-->
+
+### クレイトン・クリステンセン —『イノベーションのジレンマ』
+
+🚧 工事中です。
+
+書誌：クレイトン・クリステンセン『イノベーションのジレンマ — 技術革新が巨大企業を滅ぼすとき』伊豆原弓 訳、翔泳社、2000 年（2001 年に玉田俊平太 監修の増補改訂版。原書 Christensen (1997) *The Innovator's Dilemma*, Harvard Business School Press）。
+
+## 組織
 
 <!--OPEN-->
 
@@ -63,3 +73,9 @@ pjdhiro が影響を受けてきた経営学の本を、一冊ずつ紹介しま
 🚧 工事中です。
 
 書誌：野中郁次郎、竹内弘高『知識創造企業』東洋経済新報社、1996 年（原書 Nonaka & Takeuchi (1995) *The Knowledge-Creating Company: How Japanese Companies Create the Dynamics of Innovation*, Oxford University Press）。
+
+### ジム・コリンズ、ジェリー・ポラス —『ビジョナリー・カンパニー』
+
+🚧 工事中です。
+
+書誌：ジム・コリンズ、ジェリー・ポラス『ビジョナリー・カンパニー — 時代を超える生存の原則』山岡洋一 訳、日経BP（原書 Collins & Porras (1994) *Built to Last*）。
