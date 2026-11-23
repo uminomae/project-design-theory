@@ -46,7 +46,7 @@
 
 </details>
 
-## 1　『心理学（短縮版）』1892 第 12 章：I と Me を名づける
+## 1　I と Me を名づける（『心理学（短縮版）』1892 第 12 章）
 
 <!--OPEN-->
 
@@ -56,7 +56,7 @@
 
 <!--JA-TEXT:william-james-1892-psychology-briefer-course.md-->
 
-## 2　『心理学原理』1890 第 10 章：Me の中身と、I と、同一性の感じ
+## 2　Me の中身と、I と、同一性の感じ（『心理学原理』1890 第 10 章）
 
 開く所：『The Principles of Psychology』第 1 巻（New York: Holt, 1890）の第 10 章「The Consciousness of Self」pp.291–401。文字で読むなら [Classics in the History of Psychology の第 10 章](http://psychclassics.yorku.ca/James/Principles/prin10.htm)（頁の印つき）、頁の画像は [Internet Archive の p.291](https://archive.org/details/theprinciplesofp01jameuoft/page/291/mode/1up) から。
 
@@ -64,7 +64,7 @@
 
 <!--JA-TEXT:william-james-1890-consciousness-of-self.md-->
 
-## 3　『心理学原理』1890 第 9 章：意識の流れと、縁
+## 3　意識の流れと、縁（『心理学原理』1890 第 9 章）
 
 開く所：同じ本の第 9 章「The Stream of Thought」pp.224–290。文字で読むなら [Classics in the History of Psychology の第 9 章](http://psychclassics.yorku.ca/James/Principles/prin9.htm)、頁の画像は [Internet Archive の p.224](https://archive.org/details/theprinciplesofp01jameuoft/page/224/mode/1up) から。
 
@@ -72,7 +72,7 @@
 
 <!--JA-TEXT:william-james-1890-stream-of-thought.md-->
 
-## 4　『宗教的経験の諸相』1902：分かれた自己と、より広い自己
+## 4　分かれた自己と、より広い自己（『宗教的経験の諸相』1902）
 
 開く所：『The Varieties of Religious Experience』（New York, London: Longmans, Green, 1902）。頁の画像は [Internet Archive](https://archive.org/details/cu31924006651610/page/22/mode/1up)。第 1 講 p.22、第 8 講 p.170、第 10 講 p.232、第 16・17 講 pp.379–429（神秘主義）、第 20 講 p.515。
 
@@ -80,7 +80,7 @@
 
 <!--JA-TEXT:william-james-1902-varieties-of-religious-experience.md-->
 
-## 5　「「意識」は存在するか」1904：意識は、はたらき
+## 5　意識は、はたらき（「「意識」は存在するか」1904）
 
 開く所：論文「Does 'Consciousness' Exist?」（*The Journal of Philosophy, Psychology and Scientific Methods* 1, 1904, pp.477–491）。初出の誌面は [Internet Archive](https://archive.org/details/jstor-2011942/mode/1up)、文字で読むなら [Classics in the History of Psychology](http://psychclassics.yorku.ca/James/consciousness.htm)。のちに『根本的経験論集』（1912）に収められました。
 
@@ -88,14 +88,14 @@
 
 <!--JA-TEXT:william-james-1904-does-consciousness-exist.md-->
 
-## 6　その後の研究：ジェームズの文は、どう引かれているか
+## 6　その後の研究で、ジェームズの文はどう引かれているか
 
 ジェームズの I と Me の区別と、「経験はみな人のもの」「温かさと親しさ」の記述は、今の現象学と心の哲学で、自己意識の議論の出発点として引かれています。ここは訳を置かず、要点とリンクだけです。
 
 - Gallagher と Zahavi の項「[Phenomenological Approaches to Self-Consciousness](https://plato.stanford.edu/entries/self-consciousness-phenomenological/)」（スタンフォード哲学百科事典。2005 初出、2023 年 12 月の改訂）。§2 は、経験は判断を待たずに自分の経験として与えられ、宙に浮いた経験は無い、という段で、ジェームズ（1890）の「all experience is "personal"」を引きます（第 9 章の一つ目の性格に当たります）。§4 は、体の内側の感覚が、ジェームズが体の感覚の「温かさと親しさ」と呼んだものを与えうる、と書きます（第 10 章 p.333 に当たります）。
 - Guillot, M.（2017）「[I Me Mine: on a Confusion Concerning the Subjective Character of Experience](https://doi.org/10.1007/s13164-016-0313-4)」*Review of Philosophy and Psychology* 8(1), 23–53（CC BY 4.0。全文は [Europe PMC](https://europepmc.org/article/PMC/PMC5362670)）。経験の「主観的な性格」と呼ばれてきたものに、経験が私に現れること（for-me-ness）、経験を通して私が私に現れること（me-ness）、経験が私のものとして示されること（mineness）の三つが混ざっている、と論じます。節「Mineness」で、経験が与えられ方によって自分のものと印される、という考えは少なくともジェームズにさかのぼるとして、第 10 章 p.331 の段を引きます。
 
-## 7　近くの論：ミードの I と me
+## 7　近くの論、ミードの I と me
 
 社会学者・哲学者のジョージ・ハーバート・ミード（George Herbert Mead・1863–1931）も、I と me の語で自己を論じました。ここは訳を置かず、書誌と要点とリンクだけです。
 
