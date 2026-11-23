@@ -1095,11 +1095,12 @@
     drawCast = () => { bg = null; render(); };
   }
 
-  /* ---- 11) 見取り図（#jp-mapfig）：二つの見方を、ボタンで切り替える。同じ一枚に重ねない。
+  /* ---- 11) 見取り図（#jp-mapfig）：二つの見方（一つの c・いろいろな c）を、ボタンで切り替える。
      一つの c（黄金角・r = 0.97）：届かない一点（不動点）・0 から打った z の軌跡（軌跡の渦）・縁（ジュリア集合の点）・
        縁が囲む内側（充填ジュリア集合）・c・残る点が届く範囲（原点から縁の点までのいちばん遠い距離。この c では 1.41）。
-     いろいろな c：マンデルブロ集合から c を 400 取り、それぞれの縁（ジュリア集合の点）を重ねた円の雲と、
-       それぞれの充填ジュリア集合を重ねた濃淡。どちらも半径 2 の円の中に収まり、2 に届くのは c = −2 の ±2 だけ。
+     いろいろな c：マンデルブロ集合から c を 400 取り、それぞれの縁（ジュリア集合の点）を重ねた円の雲（紺の点）と、
+       それぞれの充填ジュリア集合を重ねた濃淡（薄い灰。下に敷く）を一枚に重ねる。一つの c の図と同じ色の分け方
+       （pjdhiro 2026-11-24「重ねて」）。どちらも半径 2 の円の中に収まり、2 に届くのは c = −2 の ±2 だけ。
        こちらには一つの c の軌跡を描かない。重ねる計算は、ボタンを初めて押したときにする。 */
   const mapFig = document.getElementById("jp-mapfig");
   let drawMapFig = () => {};
@@ -1154,8 +1155,8 @@
         frac[j * N + i] = frac[(N - 1 - j) * N + (N - 1 - i)] = k / cs.length;
       }
       const off = document.createElement("canvas"); off.width = off.height = N;
-      const oc = off.getContext("2d"), img = oc.createImageData(N, N), navy = hex(css(mapFig, "--navy"));
-      for (let q = 0; q < N * N; q++) { img.data[q * 4] = navy[0]; img.data[q * 4 + 1] = navy[1]; img.data[q * 4 + 2] = navy[2]; img.data[q * 4 + 3] = Math.round(frac[q] * 200); }
+      const oc = off.getContext("2d"), img = oc.createImageData(N, N), gray = hex(css(mapFig, "--esc1"));
+      for (let q = 0; q < N * N; q++) { img.data[q * 4] = gray[0]; img.data[q * 4 + 1] = gray[1]; img.data[q * 4 + 2] = gray[2]; img.data[q * 4 + 3] = Math.round(frac[q] * 230); }
       oc.putImageData(img, 0, 0);
       return { rims, filled: off };
     }
@@ -1174,18 +1175,16 @@
       if (!many) many = makeMany();
       ctx.globalAlpha = 1; ctx.fillStyle = css(mapFig, "--panel"); ctx.fillRect(0, 0, W, H);
       const [ox, oy] = toPx(V, 0, 0, cv), R2 = (2 / (V.x1 - V.x0)) * W;
-      if (focus === "manyfilled") {
-        ctx.imageSmoothingEnabled = true; ctx.drawImage(many.filled, 0, 0, W, H);
-      } else {
-        ctx.fillStyle = navy; ctx.globalAlpha = 0.18;
-        for (const [x, y] of many.rims) { const [px, py] = toPx(V, x, y, cv); ctx.fillRect(px - 0.7, py - 0.7, 1.4, 1.4); }
-        ctx.globalAlpha = 1;
-      }
+      // 下に充填ジュリア集合の重ね（薄い灰の濃淡）、上に縁の重ね（紺の点）。押したほうを濃く、もう一方を薄く
+      ctx.imageSmoothingEnabled = true; ctx.globalAlpha = focus === "many" ? 0.55 : 1; ctx.drawImage(many.filled, 0, 0, W, H);
+      ctx.fillStyle = navy; ctx.globalAlpha = focus === "manyfilled" ? 0.05 : 0.18;
+      for (const [x, y] of many.rims) { const [px, py] = toPx(V, x, y, cv); ctx.fillRect(px - 0.7, py - 0.7, 1.4, 1.4); }
+      ctx.globalAlpha = 1;
       ctx.strokeStyle = mid; ctx.lineWidth = 1.5; ctx.setLineDash([6, 5]);
       ctx.beginPath(); ctx.arc(ox, oy, R2, 0, Math.PI * 2); ctx.stroke(); ctx.setLineDash([]);
       ctx.fillStyle = navy; for (const s of [-1, 1]) dot(ctx, ox + s * R2, oy, 4);
-      if (focus === "manyfilled") label("いろいろな c の充填ジュリア集合を重ねた濃さ", ox, oy - R2 + 18, navy, "center");
-      else { label("私かもしれない円の雲", ox, oy - R2 + 18, navy, "center"); label("いろいろな c の縁を重ねたもの", ox, oy - R2 + 38, navy, "center"); }
+      label("私かもしれない円の雲", ox, oy - R2 + 18, navy, "center"); label("いろいろな c の縁を重ねたもの（紺の点）", ox, oy - R2 + 38, navy, "center");
+      label("薄い灰：充填ジュリア集合を重ねた濃さ", ox, oy + R2 - 40, css(mapFig, "--set"), "center");
       label("半径 2：届くのは c = −2 の ±2 だけ", ox, oy + R2 - 18, mid, "center");
       label("外は宇宙・全体", W - 8, 14, mid, "right");
     }
