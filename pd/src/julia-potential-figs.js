@@ -7,7 +7,7 @@
 // 8) 遡りの木（#jp-btree）：赤の一点から ±√ で一段ごとに二つに分かれる遡りを、木と平面に並べて一段ずつ
 // 9) ジュリア集合とは（#jp-about-julia、右下の小窓）：場面が一つずつ進むアニメに、その場面の字幕を重ねる
 // 10) 放って、散るものと残るもの（#jp-castfig、第五部）：たくさんの点をいっせいに前へ打ち、散る点・一点へ寄る点・縁に残る点を見る
-// 11) 円の中の雲の見取り図（#jp-mapfig、結び）：私かもしれない円の雲（半径 2 の円）・届かない一点・0 から打った z の軌跡・縁（ジュリア集合）・c を、色と文字で一枚に描く
+// 11) 見取り図（#jp-mapfig、第五部）：一つの c（届かない一点・軌跡の渦・縁・充填ジュリア集合・c・残る点が届く範囲）と、いろいろな c を重ねた円の雲（半径 2）を、ボタンで切り替えて描く
 (function () {
   const figs = document.querySelectorAll(".jp-fig");
   if (!figs.length) return;
@@ -1095,27 +1095,72 @@
     drawCast = () => { bg = null; render(); };
   }
 
-  /* ---- 11) 円の中の雲の見取り図（#jp-mapfig、結び）：黄金角の c（r = 0.97）で、
-     私かもしれない円の雲（半径 2 の円とその内側。超えると散る）・届かない一点（不動点）・0 から打った z の軌跡（渦）・縁（ジュリア集合の点）・c を、
-     色と文字で一枚に描く。ボタンで一つを選ぶと、ほかを薄くする。 */
+  /* ---- 11) 見取り図（#jp-mapfig）：二つの見方を、ボタンで切り替える。同じ一枚に重ねない。
+     一つの c（黄金角・r = 0.97）：届かない一点（不動点）・0 から打った z の軌跡（軌跡の渦）・縁（ジュリア集合の点）・
+       縁が囲む内側（充填ジュリア集合）・c・残る点が届く範囲（原点から縁の点までのいちばん遠い距離。この c では 1.41）。
+     いろいろな c：マンデルブロ集合から c を 400 取り、それぞれの縁（ジュリア集合の点）を重ねた円の雲と、
+       それぞれの充填ジュリア集合を重ねた濃淡。どちらも半径 2 の円の中に収まり、2 に届くのは c = −2 の ±2 だけ。
+       こちらには一つの c の軌跡を描かない。重ねる計算は、ボタンを初めて押したときにする。 */
   const mapFig = document.getElementById("jp-mapfig");
   let drawMapFig = () => {};
   if (mapFig) {
     const cv = document.getElementById("jp-map-cv"), ctx = cv.getContext("2d");
     const V = { x0: -2.2, x1: 2.2, y0: -2.2, y1: 2.2 };
     const C = G.c, ZS = { re: G.fp.zr, im: G.fp.zi };
-    let seed = 7; const rnd = () => { seed = (seed * 16807) % 2147483647; return seed / 2147483647; };
-    const cloud = [];
-    for (let i = 0; i < 9000; i++) {
-      let x = 1, y = 0;
-      for (let j = 0; j < 50; j++) {
-        const a = x - C.re, b = y - C.im, m = Math.sqrt(Math.hypot(a, b)), th = Math.atan2(b, a) / 2;
-        x = m * Math.cos(th); y = m * Math.sin(th); if (rnd() < 0.5) { x = -x; y = -y; }
+    // 一つ前の点を ±√(z − c) の片方を選んでたどり、縁（ジュリア集合）の上の点を取る
+    const rimPts = (c, n, steps, rnd) => {
+      const a = [];
+      for (let i = 0; i < n; i++) {
+        let x = 1, y = 0;
+        for (let j = 0; j < steps; j++) {
+          const p = x - c.re, q = y - c.im, m = Math.sqrt(Math.hypot(p, q)), th = Math.atan2(q, p) / 2;
+          x = m * Math.cos(th); y = m * Math.sin(th); if (rnd() < 0.5) { x = -x; y = -y; }
+        }
+        a.push([x, y]);
       }
-      cloud.push([x, y]);
-    }
+      return a;
+    };
+    const lcg = (s) => () => { s = (s * 16807) % 2147483647; return s / 2147483647; };
+    const cloud = rimPts(C, 9000, 50, lcg(7));
+    const reach = Math.max(...cloud.map(([x, y]) => Math.hypot(x, y)));
     const orbit = forward(C, { re: 0, im: 0 }, 300).pts;
+    let filledImg = null;
+    function filledOne() {
+      const W = cv.width, H = cv.height, img = ctx.createImageData(W, H);
+      const pan = hex(css(mapFig, "--panel")), fill = hex(css(mapFig, "--esc0"));
+      for (let j = 0; j < H; j++) for (let i = 0; i < W; i++) {
+        let x = V.x0 + (V.x1 - V.x0) * (i + 0.5) / W, y = V.y1 - (V.y1 - V.y0) * (j + 0.5) / H, n = 0;
+        for (; n < 300; n++) { const t = x * x - y * y + C.re; y = 2 * x * y + C.im; x = t; if (x * x + y * y > 4) break; }
+        const col = n === 300 ? fill : pan, k = (j * W + i) * 4;
+        img.data[k] = col[0]; img.data[k + 1] = col[1]; img.data[k + 2] = col[2]; img.data[k + 3] = 255;
+      }
+      return img;
+    }
+    // いろいろな c：マンデルブロ集合の中から、一様に 400 取る（同じ種で、いつも同じ 400）
+    let many = null;
+    function makeMany() {
+      const rnd = lcg(7), cs = [];
+      const inM = (cr, ci) => { let x = 0, y = 0; for (let i = 0; i < 500; i++) { const t = x * x - y * y + cr; y = 2 * x * y + ci; x = t; if (x * x + y * y > 4) return false; } return true; };
+      while (cs.length < 400) { const cr = -2 + 2.5 * rnd(), ci = -1.25 + 2.5 * rnd(); if (inM(cr, ci)) cs.push({ re: cr, im: ci }); }
+      const r2 = lcg(1), rims = [];
+      for (const c of cs) for (const p of rimPts(c, 300, 40, r2)) rims.push(p);
+      // 充填ジュリア集合を重ねた濃さ：粗い格子で数え、z と −z の対称を使って半分だけ計算する
+      const N = 140, frac = new Float32Array(N * N);
+      for (let j = 0; j < N / 2; j++) for (let i = 0; i < N; i++) {
+        const x0 = V.x0 + (V.x1 - V.x0) * (i + 0.5) / N, y0 = V.y1 - (V.y1 - V.y0) * (j + 0.5) / N;
+        if (x0 * x0 + y0 * y0 > 4) continue;
+        let k = 0;
+        for (const c of cs) { let x = x0, y = y0, n = 0; for (; n < 80; n++) { const t = x * x - y * y + c.re; y = 2 * x * y + c.im; x = t; if (x * x + y * y > 4) break; } if (n === 80) k++; }
+        frac[j * N + i] = frac[(N - 1 - j) * N + (N - 1 - i)] = k / cs.length;
+      }
+      const off = document.createElement("canvas"); off.width = off.height = N;
+      const oc = off.getContext("2d"), img = oc.createImageData(N, N), navy = hex(css(mapFig, "--navy"));
+      for (let q = 0; q < N * N; q++) { img.data[q * 4] = navy[0]; img.data[q * 4 + 1] = navy[1]; img.data[q * 4 + 2] = navy[2]; img.data[q * 4 + 3] = Math.round(frac[q] * 200); }
+      oc.putImageData(img, 0, 0);
+      return { rims, filled: off };
+    }
     let focus = "all";
+    const ONE = ["all", "star", "orbit", "cloud", "filled", "c", "reach"];
     const alphaOf = (k) => (focus === "all" || focus === k ? 1 : 0.12);
     function label(text, x, y, color, align) {
       ctx.font = "600 15px " + (css(mapFig, "--sans") || "sans-serif");
@@ -1124,29 +1169,55 @@
       ctx.fillStyle = color; ctx.fillText(text, x, y);
     }
     function lead(x0, y0, x1, y1, color) { ctx.strokeStyle = color; ctx.lineWidth = 1.2; ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x1, y1); ctx.stroke(); }
-    function render() {
-      const W = cv.width, H = cv.height;
-      const pan = css(mapFig, "--panel"), mid = css(mapFig, "--mid"), gold = css(mapFig, "--gold"), coral = css(mapFig, "--coral"), navy = css(mapFig, "--navy"), set = css(mapFig, "--set");
-      ctx.globalAlpha = 1; ctx.fillStyle = pan; ctx.fillRect(0, 0, W, H);
+    function renderMany() {
+      const W = cv.width, H = cv.height, mid = css(mapFig, "--mid"), navy = css(mapFig, "--navy");
+      if (!many) many = makeMany();
+      ctx.globalAlpha = 1; ctx.fillStyle = css(mapFig, "--panel"); ctx.fillRect(0, 0, W, H);
       const [ox, oy] = toPx(V, 0, 0, cv), R2 = (2 / (V.x1 - V.x0)) * W;
-      // 私かもしれない円の雲（半径 2 の円とその内側）
-      ctx.globalAlpha = alphaOf("circle") * 0.1; ctx.fillStyle = mid;
-      ctx.beginPath(); ctx.arc(ox, oy, R2, 0, Math.PI * 2); ctx.fill();
-      ctx.globalAlpha = alphaOf("circle"); ctx.strokeStyle = mid; ctx.lineWidth = 1.5; ctx.setLineDash([6, 5]);
+      if (focus === "manyfilled") {
+        ctx.imageSmoothingEnabled = true; ctx.drawImage(many.filled, 0, 0, W, H);
+      } else {
+        ctx.fillStyle = navy; ctx.globalAlpha = 0.18;
+        for (const [x, y] of many.rims) { const [px, py] = toPx(V, x, y, cv); ctx.fillRect(px - 0.7, py - 0.7, 1.4, 1.4); }
+        ctx.globalAlpha = 1;
+      }
+      ctx.strokeStyle = mid; ctx.lineWidth = 1.5; ctx.setLineDash([6, 5]);
       ctx.beginPath(); ctx.arc(ox, oy, R2, 0, Math.PI * 2); ctx.stroke(); ctx.setLineDash([]);
-      label("私かもしれない円の雲（半径 2 の円）", ox, oy - R2 + 18, mid, "center");
-      label("超えると散る。外は宇宙・全体", ox, oy - R2 + 38, mid, "center");
+      ctx.fillStyle = navy; for (const s of [-1, 1]) dot(ctx, ox + s * R2, oy, 4);
+      if (focus === "manyfilled") label("いろいろな c の充填ジュリア集合を重ねた濃さ", ox, oy - R2 + 18, navy, "center");
+      else { label("私かもしれない円の雲", ox, oy - R2 + 18, navy, "center"); label("いろいろな c の縁を重ねたもの", ox, oy - R2 + 38, navy, "center"); }
+      label("半径 2：届くのは c = −2 の ±2 だけ", ox, oy + R2 - 18, mid, "center");
+      label("外は宇宙・全体", W - 8, 14, mid, "right");
+    }
+    function render() {
+      if (!ONE.includes(focus)) { renderMany(); return; }
+      const W = cv.width, H = cv.height;
+      const mid = css(mapFig, "--mid"), gold = css(mapFig, "--gold"), coral = css(mapFig, "--coral"), navy = css(mapFig, "--navy"), set = css(mapFig, "--set");
+      ctx.globalAlpha = 1; ctx.fillStyle = css(mapFig, "--panel"); ctx.fillRect(0, 0, W, H);
+      const [ox, oy] = toPx(V, 0, 0, cv), RR = (reach / (V.x1 - V.x0)) * W;
+      // 縁が囲む内側（充填ジュリア集合）：別の色で塗る
+      if (!filledImg) filledImg = filledOne();
+      if (focus === "all" || focus === "filled") ctx.putImageData(filledImg, 0, 0);
+      else { ctx.globalAlpha = 0.25; const t = document.createElement("canvas"); t.width = W; t.height = H; t.getContext("2d").putImageData(filledImg, 0, 0); ctx.drawImage(t, 0, 0); ctx.globalAlpha = 1; }
+      { const sx = ox - (0.2 / (V.x1 - V.x0)) * W, sy = oy + (0.55 / (V.y1 - V.y0)) * H;
+        ctx.globalAlpha = alphaOf("filled"); lead(sx, sy, sx - 70, sy + 130, mid);
+        label("縁が囲む内側（充填ジュリア集合）", sx - 70, sy + 142, set, "center"); label("別のポテンシャル。一部は一点へ寄る", sx - 70, sy + 160, set, "center"); }
+      // この c で残る点が届く範囲（原点から縁の点までのいちばん遠い距離）
+      ctx.globalAlpha = alphaOf("reach"); ctx.strokeStyle = mid; ctx.lineWidth = 1.5; ctx.setLineDash([6, 5]);
+      ctx.beginPath(); ctx.arc(ox, oy, RR, 0, Math.PI * 2); ctx.stroke(); ctx.setLineDash([]);
+      label("この c で残る点が届く範囲（半径 " + reach.toFixed(2) + "）", ox, oy - RR - 26, mid, "center");
+      label("1.46 を超えたものは戻らない", ox, oy - RR - 8, mid, "center");
       // 縁（ジュリア集合）
       ctx.globalAlpha = alphaOf("cloud"); ctx.fillStyle = navy;
-      let bx = 0, by = 9; for (const [x, y] of cloud) { const [px, py] = toPx(V, x, y, cv); ctx.fillRect(px - 0.8, py - 0.8, 1.6, 1.6); if (y < by) { bx = x; by = y; } }
-      { const [px, py] = toPx(V, bx, by, cv); lead(px, py + 4, px, py + 48, navy); label("縁（ジュリア集合）：揺らぎ・神や美", px, py + 60, navy, "center"); }
-      // z の軌跡
+      let bx = 0, by = -9; for (const [x, y] of cloud) { const [px, py] = toPx(V, x, y, cv); ctx.fillRect(px - 0.8, py - 0.8, 1.6, 1.6); if (x > bx) { bx = x; by = y; } }
+      { const [px, py] = toPx(V, bx, by, cv); lead(px, py + 4, px - 30, py + 140, navy); label("縁（ジュリア集合）：揺らぎ・神や美", W - 10, py + 152, navy, "right"); }
+      // z の軌跡（軌跡の渦）
       ctx.globalAlpha = alphaOf("orbit") * 0.3; ctx.strokeStyle = coral; ctx.lineWidth = 0.8; ctx.beginPath();
       orbit.slice(0, 12).forEach(([x, y], i) => { const [px, py] = toPx(V, x, y, cv); if (i) ctx.lineTo(px, py); else ctx.moveTo(px, py); }); ctx.stroke();
       ctx.globalAlpha = alphaOf("orbit"); ctx.fillStyle = coral;
       orbit.forEach(([x, y], i) => { const [px, py] = toPx(V, x, y, cv); dot(ctx, px, py, i === 0 ? 4.5 : Math.max(1.2, 3.2 - i * 0.02)); });
       lead(ox + 4, oy + 4, ox + 30, oy + 40, coral); label("0：原点", ox + 10, oy + 52, coral);
-      { const [px, py] = toPx(V, orbit[2][0], orbit[2][1], cv); lead(px - 3, py + 3, px - 60, py + 150, coral); label("z の軌跡：0 から打った渦", px - 60, py + 162, coral, "center"); }
+      { const [px, py] = toPx(V, orbit[2][0], orbit[2][1], cv); lead(px + 3, py - 3, px + 40, py - 60, coral); label("z の軌跡（軌跡の渦）", px + 40, py - 72, coral, "center"); }
       // c
       ctx.globalAlpha = alphaOf("c");
       { const [cx, cy] = toPx(V, C.re, C.im, cv); ctx.strokeStyle = mid; ctx.lineWidth = 1.2; ctx.setLineDash([3, 4]); ctx.beginPath(); ctx.moveTo(ox, oy); ctx.lineTo(cx, cy); ctx.stroke(); ctx.setLineDash([]);
@@ -1158,15 +1229,16 @@
         ctx.fillStyle = gold; ctx.beginPath();
         for (let k = 0; k < 10; k++) { const r = k % 2 ? 4 : 10, t = -Math.PI / 2 + (k * Math.PI) / 5; const X = zx + r * Math.cos(t), Y = zy + r * Math.sin(t); if (k) ctx.lineTo(X, Y); else ctx.moveTo(X, Y); }
         ctx.closePath(); ctx.fill(); ctx.strokeStyle = set; ctx.lineWidth = 1; ctx.stroke();
-        lead(zx + 10, zy - 4, zx + 60, zy - 40, gold); label("届かない一点：北極星のよう", zx + 62, zy - 50, set); }
+        lead(zx - 10, zy + 4, zx - 50, zy + 40, gold); label("届かない一点：北極星のよう", zx - 50, zy + 52, set, "center"); }
       ctx.globalAlpha = 1;
     }
     mapFig.querySelectorAll("[data-map]").forEach((b) => b.addEventListener("click", () => {
       focus = b.dataset.map;
       mapFig.querySelectorAll("[data-map]").forEach((x) => x.setAttribute("aria-pressed", String(x.dataset.map === focus)));
-      render();
+      if (!ONE.includes(focus) && !many) { label("重ねています…", cv.width / 2, cv.height / 2, css(mapFig, "--mid"), "center"); setTimeout(render, 30); }
+      else render();
     }));
-    drawMapFig = render;
+    drawMapFig = () => { filledImg = null; many = null; render(); };
   }
 
   function all() { drawFixed(); drawLab(); drawBig(); drawFold(); drawRec(); drawCplx(); drawSq(); drawBtree(); drawIntro(); drawCast(); drawMapFig(); }
