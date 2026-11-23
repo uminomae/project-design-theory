@@ -49,12 +49,41 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | `mill-1865-examination-of-hamilton.md` | John Stuart Mill, *An Examination of Sir William Hamilton's Philosophy*, London: Longman, Green, Longman, Roberts & Green, 1865, 第 VII 章 pp.88–105 | 本の抜きの訳（2026-11-21・#175）。第 VII 章「The Philosophy of the Conditioned, as applied by Mr. Mansel to the Limits of Religious Thought」の全文 25 段と脚注 16。パースは題も頁も挙げず、マンセルの弁護にミルが正面から答えた所として、Claude が当てた。文字起こしが無いので、OCR を下敷きに、読む役三つが十八頁を画像と照らして原文を起こし訳の案を付け、照らす役が段ごとに照らした。ミルが引くマンセルとハミルトンの文は照らしていない。人の校閲はまだ。1893 の ¶20 が「ミルの唯名論」に触れる。ページ `pd/reader/mill-examination-of-hamilton-ja.html` |
 | `hamilton-1829-philosophy-of-the-unconditioned.md` | Sir William Hamilton, "Philosophy of the Unconditioned; in reference to Cousin's Doctrine of the Infinito-Absolute", *Edinburgh Review* 50（1829 年 10 月）, pp.194–221。原文は論集 *Discussions on Philosophy and Literature, Education and University Reform*（London, 1852）の再録 pp.1–37 | 論文の全文の訳（2026-11-21・#175）。全文 78 段と脚注 22。パースは題も頁も挙げず、マンセルの序文が名指し、ミルの批判が拠った元の論文として、Claude が当てた。ハミルトン自身が直して脚注を足した 1852 年の再録を原文にした（足した所は角括弧）。文字起こしが無いので、OCR を下敷きに、読む役六つが三十七頁を画像と照らして原文を起こし訳の案を付け、照らす役六つが段ごとに照らした。ハミルトンが引く文と脚注の書誌は照らしていない。人の校閲はまだ。1893 の ¶20 が「ウィリアム・ハミルトン卿に縛られた従僕たち」に触れる。ページ `pd/reader/hamilton-philosophy-of-the-unconditioned-ja.html` |
 | `kronig-1856-theorie-der-gase.md` | A. Krönig, "Grundzüge einer Theorie der Gase", *Annalen der Physik und Chemie* 99 (1856), pp.315–322（独語・8 頁） | 全文の訳（2026-11-23・#175）。題と本文 25 段（脚注は無い）。パースは題を挙げず、1856 年のクレーニッヒの論文として Claude が当てた。原文は独語で、独語の本文から訳した。文字起こしが無いので、誌面の走査の OCR を下敷きに、読む役二つが全 8 頁を画像と照らして原文と式を起こし訳の案を付け、照らす役二つが段ごとに照らし、Claude がつないで入れた。誌面の誤植二つは訳注に書いた。人の校閲はまだ。1893 の ¶20 が「1856 年にクラウジウスとクレーニッヒの注目すべき論文」と書く。ページ `pd/reader/kronig-theorie-der-gase-ja.html` |
+| `william-james-1892-psychology-briefer-course.md` | William James, *Psychology*（*Briefer Course*）, London: Macmillan, 1892, 第 12 章「The Self」 | 鍵の文の抜き 4 か所（2026-11-24・#189）。pp.176・216。走査の OCR から起こし、頁の柱で頁を決めた。人の校閲はまだ。ページ `pd/reader/william-james-self-ja.html`（読む順のリンク集。原文を訳の上に出す） |
+| `william-james-1890-consciousness-of-self.md` | William James, *The Principles of Psychology* vol.1, New York: Holt, 1890, 第 10 章「The Consciousness of Self」pp.291–401 | 鍵の文の抜き 17 か所（2026-11-24・#189）。York 大学の写しから取り、トロント大の走査の柱の頁と突き合わせた。人の校閲はまだ。ページは同じ |
+| `william-james-1890-stream-of-thought.md` | 同じ本の第 9 章「The Stream of Thought」pp.224–290 | 鍵の文の抜き 7 か所（2026-11-24・#189）。写しの誤り（if flows ほか）は走査の版に合わせた。人の校閲はまだ。ページは同じ |
+| `william-james-1902-varieties-of-religious-experience.md` | William James, *The Varieties of Religious Experience*, New York, London: Longmans, Green, 1902 | 鍵の文の抜き 10 か所（2026-11-24・#189）。走査の OCR から起こし、p.515 は頁の画像で照らした。人の校閲はまだ。ページは同じ |
+| `william-james-1904-does-consciousness-exist.md` | William James, "Does 'Consciousness' Exist?", *The Journal of Philosophy, Psychology and Scientific Methods* 1, 1904, pp.477–491 | 鍵の文の抜き 5 か所（2026-11-24・#189）。初出の誌面の走査（JSTOR が無料で出したもの）の OCR から起こし、York 大学の写しの誤り（I breath ほか）を誌面に合わせた。論文なので全文を訳す決まり（決まり 6）だが、まだ抜きだけ。全文の訳は残した仕事。人の校閲はまだ。ページは同じ |
 
 次に訳す候補：パースは `../research/peirce-love-abduction/READING-ORDER-20261116.md` の表、1893「Evolutionary Love」が引く論文と本は Issue #175 の一覧。
 
 ## 用語集
 
 著者ごとに節を分ける。著者をまたぐ語（love・sympathy など）は、先にある訳語にそろえる。本をまたいで訳語をそろえるための表。決めたのは Claude。pjdhiro が違う訳語を選んだら、ここを直し、訳したファイルも直す。
+
+### ウィリアム・ジェームズ：表
+
+父のヘンリー・ジェイムズ（Sr.）の表（「ジェイムズ（父）：表」）とは別。名前の表記も、父は「ジェイムズ」、ウィリアムは「ジェームズ」と書き分けている（どちらも、この repo で先に使っていた書き方）。ファイルの名前は、父の `james-` と取り違えないよう `william-james-` で始める。
+
+| 原語 | 訳語 | 覚え書き |
+|---|---|---|
+| I / Me / me | I／Me／me | 原語のまま。英語の主格と目的格の私を、ジェームズが二つの面の名にしている |
+| self / Self / the total self | 自己／自己／自己の全体 | |
+| Empirical Self / empirical ego / pure Ego | 経験的自己／経験的自我／純粋自我 | |
+| social self / spiritual self / Self of selves | 社会の自己／精神の自己／自己の中の自己 | |
+| Ego | 自我 | |
+| thought / Thought / thinker | 思考／思考／考える者 | |
+| consciousness / personal consciousness | 意識／人の意識 | |
+| stream of thought / of consciousness | 思考の流れ／意識の流れ | |
+| fringe / psychic overtone / suffusion / margin | 縁／心の倍音／にじみ／縁 | margin（1902）も「縁」 |
+| warmth and intimacy | 温かさと親しさ | |
+| personal identity / sense of personal identity | 人格の同一性／人格の同一性の感じ | |
+| appropriate / owner / proprietor | 自分のものにする（引き受ける）／持ち主／持ち主 | |
+| pretensions / self-esteem / self-feeling | 求め／自尊／自分についての感情 | |
+| mystical / ineffability / noetic quality / transiency / passivity | 神秘的な／言い表せないこと／知のような質／移ろいやすさ／受け身 | |
+| over-belief | 上乗せの信仰 | |
+| entity / function / knowing | 実体／はたらき／知ること | 1904 |
+| pure experience | 純粋経験 | 1904 |
 
 ### ケーラス：表
 
