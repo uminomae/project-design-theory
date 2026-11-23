@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/william-james-self-ja.html を直接編集しないでください。
+  正本:   knowledge/translations/READER-william-james-self-ja.md（鍵の文の対訳は william-james-*.md の五つから差し込む）
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 訳の人の校閲はまだだが、noindex を付けず、sitemap.xml・llms.txt・llms-full.txt に入れる（docs/rules/sources.md §11 の 4）。校閲前の帯は残す
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「ウィリアム・ジェームズの「I と Me」を、原典で読む」のページです。米国の哲学者・心理学者ウィリアム・ジェームズ（William James・1842–1910）が自己と意識について書いた原典（『心理学（短縮版）』1892・『心理学原理』1890 の第 9・10 章・『宗教的経験の諸相』1902・論文「「意識」は存在するか」1904）を読む順に並べ、どの本のどこを開けばよいかを一行ずつ示し、鍵の文の原文と日本語訳を並べたページ。知る側の I と知られる側の Me、同一性の感じ（温かさと親しさ）、意識の流れと縁、意識は「もの」でなく「はたらき」。訳は Claude（AI）によるもので、人の校閲はまだ。 原典はパブリックドメインで、Internet Archive の走査の頁と照らした。その後の研究（スタンフォード哲学百科事典の Gallagher と Zahavi の項・Guillot 2017）とミード『精神・自我・社会』（1934）の I と me は、訳を置かず要点とリンクだけ。父の神学者ヘンリー・ジェイムズの『実体と影』のページとは別。
+  訳注は Claude の注。「文N」は各章の中の鍵の文の通し番号、p. は本・誌面の頁。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ウィリアム・ジェームズの「I と Me」を、原典で読む | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/william-james-self-ja.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="米国の哲学者・心理学者ウィリアム・ジェームズ（William James・1842–1910）が自己と意識について書いた原典（『心理学（短縮版）』1892・『心理学原理』1890 の第 9・10 章・『宗教的経験の諸相』1902・論文「「意識」は存在するか」1904）を読む順に並べ、どの本のどこを開けばよいかを一行ずつ示し、鍵の文の原文と日本語訳を並べたページ。知る側の I と知られる側の Me、同一性の感じ（温かさと親しさ）、意識の流れと縁、意識は「もの」でなく「はたらき」。訳は Claude（AI）によるもので、人の校閲はまだ。">
+    <meta property="og:title" content="ウィリアム・ジェームズの「I と Me」を、原典で読む">
+    <meta property="og:description" content="米国の哲学者・心理学者ウィリアム・ジェームズ（William James・1842–1910）が自己と意識について書いた原典（『心理学（短縮版）』1892・『心理学原理』1890 の第 9・10 章・『宗教的経験の諸相』1902・論文「「意識」は存在するか」1904）を読む順に並べ、どの本のどこを開けばよいかを一行ずつ示し、鍵の文の原文と日本語訳を並べたページ。知る側の I と知られる側の Me、同一性の感じ（温かさと親しさ）、意識の流れと縁、意識は「もの」でなく「はたらき」。訳は Claude（AI）によるもので、人の校閲はまだ。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/william-james-self-ja.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta property="og:image" content="https://uminomae.github.io/project-design-theory/assets/ogp/peirce-love-abduction.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ウィリアム・ジェームズの「I と Me」を、原典で読む">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ウィリアム・ジェームズの「I と Me」を、原典で読む">
+    <meta name="twitter:image" content="https://uminomae.github.io/project-design-theory/assets/ogp/peirce-love-abduction.png">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-24">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "ウィリアム・ジェームズの「I と Me」を、原典で読む",
+          "description": "米国の哲学者・心理学者ウィリアム・ジェームズ（William James・1842–1910）が自己と意識について書いた原典（『心理学（短縮版）』1892・『心理学原理』1890 の第 9・10 章・『宗教的経験の諸相』1902・論文「「意識」は存在するか」1904）を読む順に並べ、どの本のどこを開けばよいかを一行ずつ示し、鍵の文の原文と日本語訳を並べたページ。知る側の I と知られる側の Me、同一性の感じ（温かさと親しさ）、意識の流れと縁、意識は「もの」でなく「はたらき」。訳は Claude（AI）によるもので、人の校閲はまだ。",
+          "keywords": "ウィリアム・ジェームズ, William James, I と Me, 自己, self, 経験的自己, 純粋自我, 意識の流れ, stream of consciousness, 縁, fringe, 心理学原理, Principles of Psychology, 宗教的経験の諸相, Does Consciousness Exist, 純粋経験, 日本語訳, 対訳",
+          "url": "https://uminomae.github.io/project-design-theory/reader/william-james-self-ja.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/william-james-self-ja.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-24",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Person", "name": "William James"}, {"@type": "Thing", "name": "自己意識"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。訳と解説の文責"},
+          "translationOfWork": [{"@type": "Book", "name": "Psychology: Briefer Course", "author": {"@type": "Person", "name": "William James"}, "datePublished": "1892", "inLanguage": "en"}, {"@type": "Book", "name": "The Principles of Psychology", "author": {"@type": "Person", "name": "William James"}, "datePublished": "1890", "inLanguage": "en"}, {"@type": "Book", "name": "The Varieties of Religious Experience", "author": {"@type": "Person", "name": "William James"}, "datePublished": "1902", "inLanguage": "en"}, {"@type": "ScholarlyArticle", "name": "Does 'Consciousness' Exist?", "author": {"@type": "Person", "name": "William James"}, "datePublished": "1904", "inLanguage": "en", "pagination": "477–491"}],
+          "translator": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。人の校閲はまだ"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「ウィリアム・ジェームズの「I と Me」を、原典で読む」のページです。米国の哲学者・心理学者ウィリアム・ジェームズ（William James・1842–1910）が自己と意識について書いた原典（『心理学（短縮版）』1892・『心理学原理』1890 の第 9・10 章・『宗教的経験の諸相』1902・論文「「意識」は存在するか」1904）を読む順に並べ、どの本のどこを開けばよいかを一行ずつ示し、鍵の文の原文と日本語訳を並べたページ。知る側の I と知られる側の Me、同一性の感じ（温かさと親しさ）、意識の流れと縁、意識は「もの」でなく「はたらき」。訳は Claude（AI）によるもので、人の校閲はまだ。 原典はパブリックドメインで、Internet Archive の走査の頁と照らした。その後の研究（スタンフォード哲学百科事典の Gallagher と Zahavi の項・Guillot 2017）とミード『精神・自我・社会』（1934）の I と me は、訳を置かず要点とリンクだけ。父の神学者ヘンリー・ジェイムズの『実体と影』のページとは別。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この訳は AI（Claude）によるものです。</b>人の校閲はまだです。引用や論拠には、各文の原文を使ってください。
+            </div>
+            <header class="reader-hero">
+                <h1><span style="display:inline-block">ウィリアム・ジェームズの</span><span style="display:inline-block">「I と Me」を、</span><span style="display:inline-block">原典で読む</span></h1>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 訳は人の校閲前<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/translations/READER-william-james-self-ja.md">ページの正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="shelf-translations.html">原典を日本語で読む</a> ・
+                <a href="james-substance-and-shadow-ja.html">ジェイムズ（父）『実体と影』の「創造的な愛」の所を、日本語で読む</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

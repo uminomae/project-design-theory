@@ -271,6 +271,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 読む順のリンク集。鍵の文の対訳は william-james-*.md（原文と訳）から <!--JA-TEXT:…--> で差し込む（#189）
+        ROOT / "knowledge/translations/READER-william-james-self-ja.md",
+        ROOT / "scripts/reader-william-james-self-ja-template.html",
+        ROOT / "reader/william-james-self-ja.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/creative-thinking/READER-creative-thinking.md",
         ROOT / "scripts/reader-creative-thinking-template.html",
         ROOT / "reader/creative-thinking.html",
@@ -567,6 +574,23 @@ JA_CHAPTERS = {
         "¶21": "法則が厳密でないこと",
         "¶22": "膨張と圧縮のときの温度",
     },
+    # ウィリアム・ジェームズの鍵の文（#189）。章の見出しは読む順のリンク集の正本 READER-william-james-self-ja.md に書く
+    "william-james-1892-psychology-briefer-course.md": {},
+    "william-james-1890-consciousness-of-self.md": {},
+    "william-james-1890-stream-of-thought.md": {},
+    "william-james-1902-varieties-of-religious-experience.md": {},
+    "william-james-1904-does-consciousness-exist.md": {},
+}
+
+
+# 鍵の文だけを抜いた対訳：原文を畳まず、訳の上に出す（#189「鍵の文（原文・頁）と日本語訳を並べる」）。
+# 一つのページに対訳を幾つも差し込むので、段のアンカーに接頭辞を付けて重ならないようにする
+JA_ORIG_SHOWN = {
+    "william-james-1892-psychology-briefer-course.md": "b",
+    "william-james-1890-consciousness-of-self.md": "s",
+    "william-james-1890-stream-of-thought.md": "t",
+    "william-james-1902-varieties-of-religious-experience.md": "v",
+    "william-james-1904-does-consciousness-exist.md": "c",
 }
 
 
@@ -613,11 +637,17 @@ def ja_text_markdown(path: Path) -> str:
             else:
                 trans.append(line)
         aid = ("n" + no[1:]) if no.startswith("注") else ("p" + no[1:])
+        prefix = JA_ORIG_SHOWN.get(path.name)
+        if prefix:
+            aid = prefix + aid
         label = no
         link = lambda s: re.sub(r"\[注(\d+)\]", r'<a href="#n\1">[注\1]</a>', s)
         # 表（¶32 の身長の表）は、狭い幅で横に送らないよう .tablefit で囲む（stance 2-7）
         fit = lambda s: re.sub(r"((?:^\|.*\n?)+)", lambda m: '\n<div class="tablefit cols-2">\n\n' + m.group(1).rstrip("\n") + "\n\n</div>\n", s, flags=re.M)
         out.append(f'\n<p id="{aid}"><small>{label}　{page}</small></p>\n')
+        if prefix:
+            # 原文を先に、畳まずに出す。訳と訳注はその下
+            out.append(f'\n<blockquote lang="{JA_LANG.get(path.name, "en")}">\n\n' + link("\n".join(orig).strip()) + "\n\n</blockquote>\n")
         out.append("\n" + fit(link("\n".join(trans).strip())) + "\n")
         for n in notes:
             # 訳注は HTML の塊で出すので、中の Markdown（リンク・斜体・コード）はここで HTML にする
@@ -625,6 +655,8 @@ def ja_text_markdown(path: Path) -> str:
             n = re.sub(r"`([^`]+)`", r"<code>\1</code>", n)
             n = re.sub(r"(?<![\w*])\*([^*\s][^*]*?)\*(?![\w*])", r"<em>\1</em>", n)
             out.append(f"\n<p><small>{n}</small></p>\n")
+        if prefix:
+            continue
         out.append(f'\n<details><summary>原文（{label}）</summary>\n\n<blockquote lang="{JA_LANG.get(path.name, "en")}">\n\n'
                    + fit(link("\n".join(orig).strip())) + "\n\n</blockquote>\n\n</details>\n")
     return "".join(out)
