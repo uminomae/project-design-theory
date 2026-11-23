@@ -154,5 +154,5 @@ stance 2-1「その後の論文を追う」に従い、近年の論文を二つ�
 - 『根本的経験論』（1912）のほかの論文（「A World of Pure Experience」ほか）：今回は読んでいない。
 - Gallagher（2000）の最小限の自己：A03 で要旨照合済のまま。今回は読み直していない。
 - 『心理学原理』第 10 章の自己の変容の節のうち、霊媒・憑依の事例（pp.393–399 あたり）は、見出しと型の分け方だけを読み、事例の本文は読んでいない。
-- 読む順のリンク集に鍵の文の原文と日本語訳を添えた独立ページを公開することは、#189 に残した（2026-11-24）。
+- 読む順のリンク集に鍵の文の原文と日本語訳を添えた独立ページは、`pd/reader/william-james-self-ja.html`（正本 `../../translations/READER-william-james-self-ja.md`、鍵の文の対訳は `../../translations/william-james-*.md` の五つ）に置いた（2026-11-24・#189）。そのとき原文を走査で引き直し、1904 年の論文を初出の誌面（Internet Archive の `jstor-2011942`）で照らした。頁は pp.477（nonentity）・478（function・pure experience）・491（I breathe・same stuff）。写しの「the knowing」「one if its」は誌面では「then knowing」「one of its」。この README の「Claude の読み」はページに入れていない。
 - psychclassics の写しの頁の印は、第 10 章の頭で p.292 の印が二度出る所があった（p.291 の終わりと p.292 の終わり）。走査の版で突き合わせた頁を正とした。
