@@ -251,7 +251,7 @@ export const TRANSLATIONS = {
       "精神分析と発達心理。学者の名前、主要な論の短い説明、pjdhiro の印象の順に紹介する",
     "repo.refManagement": "経営学",
     "repo.refManagementDesc":
-      "戦略とファイナンス。読んだ版と、pjdhiro の印象の順に紹介する",
+      "戦略・ファイナンス・マーケティング・プロジェクトマネジメント・組織と知識。読んだ版と、pjdhiro の印象の順に紹介する",
     "repo.screener": "ものの見方の広さスクリーナー",
     "repo.screenerDesc":
       "視座・メタ認知・インクルーシブ（包摂）の三つから、どこまでを含めて観ているかを 16 問×5 択で確かめる。6.0・6.5 の帯では、区別を残したまま切り離さずに見ているかも見る",
@@ -454,7 +454,7 @@ export const TRANSLATIONS = {
       "Psychoanalysis and developmental psychology: the scholar, a short note on the main theory, and pjdhiro's impression (Japanese)",
     "repo.refManagement": "Management",
     "repo.refManagementDesc":
-      "Strategy and finance: the edition pjdhiro read, and pjdhiro's impression (Japanese)",
+      "Strategy, finance, marketing, project management, and organizational knowledge: the edition pjdhiro read, and pjdhiro's impression (Japanese)",
     "repo.screener": "Breadth-of-View Screener",
     "repo.screenerDesc":
       "Perspective, metacognition, and inclusiveness — 16 questions with 5 options each to see how much you take in. The 6.0 and 6.5 bands also look at whether things are seen as distinct yet not separate. (Japanese only)",
