@@ -28,6 +28,7 @@
 - [クラウジウス「熱の動力について」（1850）を、日本語で読む](clausius-bewegende-kraft-der-warme-ja.html)
 - [ランキン「熱の力学的作用について」（1850）を、日本語で読む](rankine-mechanical-action-of-heat-ja.html)
 - [ハーシェル「ケトレーの確率論」（1850）を、日本語で読む](herschel-quetelet-probabilities-ja.html)
+- [クレーニッヒ「気体の理論の大要」（1856）を、日本語で読む](kronig-theorie-der-gase-ja.html)：気体を、飛び回ってぶつかる弾性の球の集まりと見る論文。「進化的な愛」の「クラウジウスとクレーニッヒの注目すべき論文」の段から。
 - [ダーウィンとウォレスのリンネ協会の論文（1858）を、日本語で読む](darwin-wallace-1858-ja.html)：自然選択の考えが初めて公にされた論文。
 - [マンセル『宗教的思考の限界』（1858）の序文を、日本語で読む](mansel-limits-of-religious-thought-ja.html)：「進化的な愛」がハミルトンの哲学の「弁護」と呼ぶ所。
 - [ミル『ハミルトン哲学の検討』（1865）の第 VII 章を、日本語で読む](mill-examination-of-hamilton-ja.html)：マンセルの「弁護」に、ミルが答えた章。「進化的な愛」の「ミルの唯名論」の段から。
