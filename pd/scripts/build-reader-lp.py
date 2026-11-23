@@ -59,6 +59,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/influences-management/READER-influences-management.md",
+        ROOT / "scripts/reader-influences-management-template.html",
+        ROOT / "reader/influences-management.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/rotation-multiplication/READER-rotation-multiplication.md",
         ROOT / "scripts/reader-rotation-multiplication-template.html",
         ROOT / "reader/rotation-multiplication.html",
