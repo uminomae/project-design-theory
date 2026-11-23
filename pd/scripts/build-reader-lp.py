@@ -258,6 +258,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は kronig-1856-theorie-der-gase.md（原文〔独語〕と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-kronig-theorie-der-gase-ja.md",
+        ROOT / "scripts/reader-kronig-theorie-der-gase-ja-template.html",
+        ROOT / "reader/kronig-theorie-der-gase-ja.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/creative-thinking/READER-creative-thinking.md",
         ROOT / "scripts/reader-creative-thinking-template.html",
         ROOT / "reader/creative-thinking.html",
@@ -539,6 +546,15 @@ JA_CHAPTERS = {
         "¶1": "無条件者の哲学について――クザンの無限・絶対者の説に寄せて",
         "注1": "ハミルトンの脚注",
     },
+    "kronig-1856-theorie-der-gase.md": {
+        "¶1": "題と、気体の仮説",
+        "¶7": "容器の壁にかかる圧力",
+        "¶10": "温度と、気体の法則",
+        "¶14": "原子の重さと、気体の浮き沈み",
+        "¶18": "拡散と、熱量と比熱",
+        "¶21": "法則が厳密でないこと",
+        "¶22": "膨張と圧縮のときの温度",
+    },
 }
 
 
@@ -547,6 +563,7 @@ JA_LANG = {
     "kolliker-1864-darwinsche-schopfungstheorie.md": "de",
     "helmholtz-1847-erhaltung-der-kraft.md": "de",
     "clausius-1850-bewegende-kraft-der-warme.md": "de",
+    "kronig-1856-theorie-der-gase.md": "de",
 }
 
 

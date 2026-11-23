@@ -48,6 +48,7 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | `mansel-1858-limits-of-religious-thought.md` | Henry Longueville Mansel, *The Limits of Religious Thought Examined in Eight Lectures*, Oxford: J. Wright for John Murray, 1858, 序文 pp.v–x | 本の抜きの訳（2026-11-20・#175）。初めの序文の全文六段と脚注二つ。パースは題も頁も挙げず、マンセルがハミルトンの哲学を講義の土台にすると自ら述べる所として、Claude が当てた。文字起こしが無いので、OCR を下敷きに Claude が六頁の画像と照らして原文を起こし、訳を付けた。序文が引くハミルトンの二文は、ハミルトンの論集（1852）pp.12・15 で照らした。人の校閲はまだ。1893 の ¶20 が、マンセルのハミルトンの哲学の「無分別な弁護」に触れる。ページ `pd/reader/mansel-limits-of-religious-thought-ja.html` |
 | `mill-1865-examination-of-hamilton.md` | John Stuart Mill, *An Examination of Sir William Hamilton's Philosophy*, London: Longman, Green, Longman, Roberts & Green, 1865, 第 VII 章 pp.88–105 | 本の抜きの訳（2026-11-21・#175）。第 VII 章「The Philosophy of the Conditioned, as applied by Mr. Mansel to the Limits of Religious Thought」の全文 25 段と脚注 16。パースは題も頁も挙げず、マンセルの弁護にミルが正面から答えた所として、Claude が当てた。文字起こしが無いので、OCR を下敷きに、読む役三つが十八頁を画像と照らして原文を起こし訳の案を付け、照らす役が段ごとに照らした。ミルが引くマンセルとハミルトンの文は照らしていない。人の校閲はまだ。1893 の ¶20 が「ミルの唯名論」に触れる。ページ `pd/reader/mill-examination-of-hamilton-ja.html` |
 | `hamilton-1829-philosophy-of-the-unconditioned.md` | Sir William Hamilton, "Philosophy of the Unconditioned; in reference to Cousin's Doctrine of the Infinito-Absolute", *Edinburgh Review* 50（1829 年 10 月）, pp.194–221。原文は論集 *Discussions on Philosophy and Literature, Education and University Reform*（London, 1852）の再録 pp.1–37 | 論文の全文の訳（2026-11-21・#175）。全文 78 段と脚注 22。パースは題も頁も挙げず、マンセルの序文が名指し、ミルの批判が拠った元の論文として、Claude が当てた。ハミルトン自身が直して脚注を足した 1852 年の再録を原文にした（足した所は角括弧）。文字起こしが無いので、OCR を下敷きに、読む役六つが三十七頁を画像と照らして原文を起こし訳の案を付け、照らす役六つが段ごとに照らした。ハミルトンが引く文と脚注の書誌は照らしていない。人の校閲はまだ。1893 の ¶20 が「ウィリアム・ハミルトン卿に縛られた従僕たち」に触れる。ページ `pd/reader/hamilton-philosophy-of-the-unconditioned-ja.html` |
+| `kronig-1856-theorie-der-gase.md` | A. Krönig, "Grundzüge einer Theorie der Gase", *Annalen der Physik und Chemie* 99 (1856), pp.315–322（独語・8 頁） | 全文の訳（2026-11-23・#175）。題と本文 25 段（脚注は無い）。パースは題を挙げず、1856 年のクレーニッヒの論文として Claude が当てた。原文は独語で、独語の本文から訳した。文字起こしが無いので、誌面の走査の OCR を下敷きに、読む役二つが全 8 頁を画像と照らして原文と式を起こし訳の案を付け、照らす役二つが段ごとに照らし、Claude がつないで入れた。誌面の誤植二つは訳注に書いた。人の校閲はまだ。1893 の ¶20 が「1856 年にクラウジウスとクレーニッヒの注目すべき論文」と書く。ページ `pd/reader/kronig-theorie-der-gase-ja.html` |
 
 次に訳す候補：パースは `../research/peirce-love-abduction/READING-ORDER-20261116.md` の表、1893「Evolutionary Love」が引く論文と本は Issue #175 の一覧。
 
@@ -217,6 +218,27 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | Gewichtseinheit / Volumeneinheit | 重さの単位／体積の単位 | |
 | Gränzwerth / Differentialquotient | 極限値／微分商 | |
 | Kessel / Condensator / Heerd | ボイラー／復水器／炉 | |
+
+### クレーニッヒ：表
+
+ヘルムホルツ・クラウジウスの表と重なる語（lebendige Kraft＝活力、Wärmemenge＝熱量、specifische Wärme＝比熱、mechanische Wärmetheorie＝熱の力学的理論）はそろえた。
+
+| 原語 | 訳語 | 覚え書き |
+|---|---|---|
+| Grundzüge | 大要 | 題 |
+| Atom / Gasatom / Molecül | 原子／気体の原子／分子 | クレーニッヒは「分子」でなく「原子」と言う |
+| vollkommen (absolut) elastisch | 完全に弾性のある・完全に弾性的 | |
+| Stoss / Zusammenstoss / zurückprallen | 衝突／衝突・ぶつかり合い／はね返る | |
+| Geschwindigkeit / verticale Componente | 速さ／鉛直の成分 | |
+| oscilliren | 振動する／往復する | つり合いの位置のまわり（¶5）は振動、壁のあいだ（¶16・¶21）は往復 |
+| afficiren | 影響し合う・作用を及ぼす | |
+| Bahn | 道筋 | |
+| Wahrscheinlichkeitsrechnung | 確率の計算 | |
+| Druck / Gesammtdruck | 圧力／圧力の全体 | |
+| absoluter Nullpunkt | 絶対零度 | |
+| specifisches Gewicht / Gewicht / Schwere | 比重／重さ／重力 | |
+| Scheidewand / Oeffnung / Stempel | 仕切り壁／開口／ピストン | |
+| diffundiren | 拡散する | |
 
 ### ランキン：表
 
