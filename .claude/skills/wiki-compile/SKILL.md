@@ -1,6 +1,6 @@
 ---
 name: wiki-compile
-description: pd/wiki/ のページを、今の正本（pd・cs・ks・as の knowledge と読み物、cs の出典ノート）から作り直す・新しく作る。正本を直したときに hook が「これを出典にする wiki のページ」を知らせたら、同じ作業でそのページを作り直し、正本と一緒に commit する。「wiki を作り直して」「wiki が古い」「wiki のページを足して」「freshness-report の古いページを片付けて」のときにも使う。
+description: pd/wiki/ のページを、今の正本（pd・cs・ks・as の knowledge と読み物、cs の出典ノート）から作り直す・新しく作る。作り直しは週に一度、週のまとめのレビューの司令塔が別のセッションにまとめて出す（「週の作り直し」の節）。正本を直したときの hook の知らせでは作り直さない。「wiki を作り直して」「wiki が古い」「wiki のページを足して」「freshness-report の古いページを片付けて」のときにも使う。
 ---
 
 # wiki を作り直す
@@ -9,7 +9,7 @@ description: pd/wiki/ のページを、今の正本（pd・cs・ks・as の kno
 
 ## いつ使うか
 
-1. **正本を直して、hook が知らせたとき。** `.claude/hooks/content-compile.sh` が、pd・cs・ks・as のファイルを直すたびに `pd/scripts/wiki-stale-check.mjs` を呼び、そのファイルを出典にする wiki のページを知らせる。知らせを受けたセッションが、**同じ作業で**そのページを作り直し、正本と一緒に commit する。後回しにしない（後回しにした分が、2026-04 から 11 月まで wiki が古いままだった理由）。
+1. **週に一度、まとめて作り直すとき。** 下の「週の作り直し」。古い wiki のページは、週のあいだ残ってよい（pjdhiro 2026-11-24「セッション終了時に動くwikiの更新も週に一度でいいんだよね」）。正本を直すと `.claude/hooks/content-compile.sh` が `pd/scripts/wiki-stale-check.mjs` を呼び、そのファイルを出典にする wiki のページを知らせるが、それは「週の作り直しで拾う」という知らせで、その作業では作り直さない。2026-11-10 から 11-24 までは、知らせを受けた同じ作業で作り直し、区切るたびに残りを別のセッションに出していた。
 2. **古いページを片付けるとき。** `node pd/scripts/wiki-stale-check.mjs --list`（または `pd/wiki/health/freshness-report.md` の WL-3）が、出典が `compiled` 日より後に変わったページを並べる。`compiled` と同じ日に出典が変わったときは、ページの最後の commit の時刻と出典の commit の時刻で比べ、ページを作り直したあとに出典が直ったものも並べる（「（ページを作り直したあと）」と出る。2026-11-11・#111 の wiki の直しのセッションの指摘）。
 3. **新しいページを作るとき。** 概念・人物・出典・横断のページ。
 
@@ -60,7 +60,7 @@ related_concepts: [...]                        # 任意
 4. `pd/wiki/log.md` の末尾に一行の記録を足す（形は下）。
 5. `cd pd && node scripts/wiki-lint.mjs` で `pd/wiki/health/` の報告を書き直す。`index.md` に載せる新しいページがあれば `node scripts/generate-wiki-index.mjs`。
 6. `bash scripts/check.sh` を通す（孤立ページ・不在の出典・旧用語・読めない原典・文字化けを止める。古いページの数は知らせるだけ）。
-7. 正本の直しと一緒に commit し、CLAUDE.md の「Git」のとおり develop に取り込む。
+7. commit し、CLAUDE.md の「Git」のとおり develop に取り込む。
 8. 3001 の `/wiki/` で、直したページが組み直されて出ていることを見る（`scripts/serve.sh` が `pd/wiki/` の変化で Quartz を組み直す。本体の checkout の develop が 3001）。公開（main）のあとは、Pages の `/project-design-theory/wiki/` でも見る。
 
 ## log.md の形
@@ -74,24 +74,24 @@ related_concepts: [...]                        # 任意
 
 直す必要が無いと確かめただけのときは `## [YYYY-MM-DD] check | {対象}`、誤りの直しは `fix`。
 
-## 区切るときの作り直しの指令
+## 週の作り直し
 
-正本を直したセッションが知らせを取りこぼした分（手で直した・ほかの道具で直した など）と、まだ無い出典ページは、セッションを区切るときに拾い、別のセッションで作り直す（pjdhiro 2026-11-10「セッションを区切り、セッションログを作り、そこから司令塔として別セッションにwiki更新の指令を出すように」。今までの #77 の inbox と `wiki-gen-check` に当たる。始めにサブエージェントで作り直す案と、区切るセッションが自分で直す案は取りやめた）。
+古いページと、まだ無い出典ページは、週に一度まとめて拾い、一つの別のセッションで作り直す（pjdhiro 2026-11-24「セッション終了時に動くwikiの更新も週に一度でいいんだよね」・`docs/rules/stance.md` 2-8）。作り直すまで、古いページは週のあいだ残ってよい。正本を直したセッションも、区切るセッションも、wiki を作り直さず、指令も出さない。
 
-- 拾うもの：古いページ（出典が `compiled` 日より後に変わった）と、cs の台帳 `cs/knowledge/raw/manifest.md` で読める原典（`raw-confirmed`・`url-verified`）のうち、出典ノートがあるのに wiki の出典ページがまだ無いもの。`node pd/scripts/wiki-stale-check.mjs --session-end --log <記録の名前>` が並べる（台帳の側は `pd/scripts/wiki-gen-check.mjs`）。何も無ければ何も出ない。
-- 重ならないための印：`--session-end` は、並べた分を、このセッションが出すものとして本体の checkout の `.cache/wiki-order.json` に書く。24 時間のうちに区切るほかのセッションには、もう出ている分は並ばない。全部出ていれば「出さない」と出るので、何も出さない。二度回すと、自分の印で「もう出ている」と出る（2026-11-10 に、続けて区切るセッションが同じ一覧で三度出して重なった。#130・pjdhiro 2026-11-11「印を置く」）。作り直しのセッションが途中で止まったら、その分は 24 時間たつまで出ない。急ぐときは、その行を印から消す。
-- いつ：CLAUDE.md「セッションの終わりに」で、セッションの記録を書いたあと、pjdhiro に伝える前。
-- 誰が：区切るセッションは、自分では直さない。司令塔として別のセッションを始め（`start_session`・`context: "fresh"`・自分の worktree）、下の雛形に一覧を入れて渡す。数が多いときは、分野ごとに分けて出す。
-- 始めの知らせ：SessionStart の hook（`.claude/hooks/wiki-session-start.sh`・`.claude/settings.json` に登録）と `bash scripts/session-digest.sh` の終わりも同じ一覧を出し、「今は自分の作業を続け、区切るときに出す」と添える。hook は本体の checkout の版が動くので、hook を直したときは develop に入ってから効く。
+- 拾うもの：古いページ（出典が `compiled` 日より後に変わった）と、cs の台帳 `cs/knowledge/raw/manifest.md` で読める原典（`raw-confirmed`・`url-verified`）のうち、出典ノートがあるのに wiki の出典ページがまだ無いもの。`node pd/scripts/wiki-stale-check.mjs --weekly --log <記録の名前>` が並べる（台帳の側は `pd/scripts/wiki-gen-check.mjs`）。何も無ければ何も出ない。worktree なら、develop に揃えてから回す（`corrections-k.md` の K2）。
+- いつ・誰が：週のまとめのレビュー（スキル `weekly-review`）の司令塔が、指摘を Issue にまとめたあと、区切る前に回す。自分では直さない。司令塔として別のセッションを始め（`start_session`・`context: "fresh"`・自分の worktree）、下の雛形に一覧を入れて渡す。数が多いときは、分野ごとに分けて出す。pjdhiro が「wiki を作り直して」と言ったときも、同じ形で出す。
+- 重ならないための印：`--weekly` は、並べた分を、このセッションが出すものとして本体の checkout の `.cache/wiki-order.json` に書く。24 時間のうちにほかのセッションが回しても、もう出ている分は並ばない。全部出ていれば「出さない」と出るので、何も出さない。二度回すと、自分の印で「もう出ている」と出る（#130・pjdhiro 2026-11-11「印を置く」）。作り直しのセッションが途中で止まったら、その分は 24 時間たつまで出ない。急ぐときは、その行を印から消す。
+- 週のあいだの知らせ：正本を直すと、`.claude/hooks/content-compile.sh` がその正本を出典にする wiki のページを一度だけ知らせ、セッションの始めには SessionStart の hook（`.claude/hooks/wiki-session-start.sh`・`.claude/settings.json` に登録）と `bash scripts/session-digest.sh` の終わりが古いページの数を一行で出す。どちらも「週の作り直しで拾う」という知らせで、その場では作り直さない。hook は本体の checkout の版が動くので、hook を直したときは develop に入ってから効く。
+- 経緯：2026-11-10 から 11-24 までは、知らせを受けた同じ作業で作り直し、取りこぼしは区切るたびに `--session-end` で並べて別のセッションに出していた（pjdhiro 2026-11-10「セッションを区切り、セッションログを作り、そこから司令塔として別セッションにwiki更新の指令を出すように」。今までの #77 の inbox と `wiki-gen-check` に当たる）。`--session-end` は、今は何もせずに、週の作り直しに移ったことだけを出す。
 
 ### 指令の雛形
 
 ```
-wiki の作り直し（区切ったセッション <セッションの記録の名前> から）。
+wiki の週の作り直し（<セッションの記録の名前> から）。
 .claude/skills/wiki-compile/SKILL.md を読み、その手順で次のページを今の正本から作り直す（未作成は出典ノートから作る）。
-<node pd/scripts/wiki-stale-check.mjs --session-end --log … の一覧をそのまま>
+<node pd/scripts/wiki-stale-check.mjs --weekly --log … の一覧をそのまま>
 - 正本に無いことは足さない。引用は正本の文のまま。直す必要が無いと確かめたページは compiled を今日にする（compiled がもう今日なら checked に今の時刻を書く）。
-- 終わったら pd/wiki/log.md に一行足し、node pd/scripts/wiki-stale-check.mjs --session-start で、渡した一覧が出なくなったこと（--session-end は印を付けるので、確かめには使わない）、bash scripts/check.sh が通ることを見る。
+- 終わったら pd/wiki/log.md に一行足し、node pd/scripts/wiki-stale-check.mjs --list で、渡した一覧が出なくなったこと（--weekly は印を付けるので、確かめには使わない）、bash scripts/check.sh が通ることを見る。
 - 本体の checkout の develop に取り込んで push する。main へは送らない（公開は pjdhiro が決める）。
 - 済んだら、直したページと残したことを短く報告する。
 ```

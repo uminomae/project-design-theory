@@ -14,5 +14,5 @@ here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 node "$here/session-digest.mjs" "$@"
 
 # wiki の知らせ：古いページと、出典ノートがあるのに出典ページが無い原典（2026-11-10・pjdhiro「C 両方入れる」）。
-# 作り直すのは司令塔が別のセッションに出す（.claude/skills/wiki-compile/SKILL.md「セッションの始めの知らせ」）。
+# 数を一行だけ出す。作り直しは週に一度（.claude/skills/wiki-compile/SKILL.md「週の作り直し」・pjdhiro 2026-11-24）。
 node "$here/../pd/scripts/wiki-stale-check.mjs" --session-start 2>/dev/null || true

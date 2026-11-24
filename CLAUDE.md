@@ -46,7 +46,7 @@
 | 手を動かす作業（git の取り込み・push、生成・検査、画面、調べと記録）を始める | `docs/rules/corrections-k.md`：型 K の確認のうち、K0 と、その作業の節だけ。worktree で始めるときは、取り込みを回す前に K1 を読む |
 | 既存の理論・東洋思想・五段階の語を扱う | `docs/rules/stance-theories.md`：理論との距離 |
 | 調べる・引用する | `docs/rules/sources.md`：調べ方と原典の照合 |
-| wiki を作り直す・正本を直して wiki の知らせが出た | `.claude/skills/wiki-compile/SKILL.md`：知らされた wiki のページは、正本を直した同じ作業で作り直し、一緒に commit する |
+| wiki を作り直す・ページを足す | `.claude/skills/wiki-compile/SKILL.md`：作り直しは週に一度、別のセッションにまとめて出す（「週の作り直し」）。正本を直して wiki の知らせが出ても、その作業では作り直さない（pjdhiro 2026-11-24） |
 | 特定のページ・Issue を触る | `docs/rules/decisions.md`：そのページ・Issue の行だけ（Love駆動開発の読み物は、終わりの「読み物の組み立て」の節も） |
 | 司令塔のセッションの始め・「付箋帳」「違和感帳」と言われた | `docs/tools/fusen-cho.md`：手元の指示を付箋のように置く帳面（アーティファクト）の読み方・返事の書き方・しまい方。2026-11-17 に違和感帳（`docs/tools/iwakan-cho.md`・読むだけで残す）から移った |
 
@@ -54,7 +54,7 @@
 
 ## セッションの終わりに
 
-コンテキストが 30% を超えたら、セッションを区切る（pjdhiro 2026-11-08）。区切るとき・閉じる前は、`docs/rules/session.md` の「セッションの終わりに」の七つの手順を開いて、そのとおりに行う（stance・corrections に写す・`## ずれ`・記録・wiki の指令・アーティファクトを消す・伝える）。
+コンテキストが 30% を超えたら、セッションを区切る（pjdhiro 2026-11-08）。区切るとき・閉じる前は、`docs/rules/session.md` の「セッションの終わりに」の六つの手順を開いて、そのとおりに行う（stance・corrections に写す・`## ずれ`・記録・アーティファクトを消す・伝える）。wiki の作り直しは区切るたびでなく週に一度（`.claude/skills/wiki-compile/SKILL.md`）。
 
 ## セッションの記録
 

@@ -41,7 +41,8 @@ parts = rel.parts
 # wiki の材料（正本）を直したら、それを出典にする wiki のページを Claude に知らせる。
 # 今までの project-design の #72 の引き金を、一つの repo の形で戻した（2026-11-10）。
 # 中身は pd/scripts/wiki-stale-check.mjs。出典にしていないファイルなら何も出さない。
-# 知らせを受けたセッションが、同じ作業で wiki を作り直す（.claude/skills/wiki-compile/SKILL.md）。
+# 知らせは「週の作り直しで拾う」というもので、その作業では作り直さない（pjdhiro 2026-11-24。
+# .claude/skills/wiki-compile/SKILL.md「週の作り直し」。11-10〜11-24 は同じ作業で作り直していた）。
 if len(parts) > 1 and parts[0] in ("pd", "cs", "ks", "as") and not (parts[0] == "pd" and parts[1] == "wiki"):
     stale = repo_root / "pd" / "scripts" / "wiki-stale-check.mjs"
     if stale.is_file():

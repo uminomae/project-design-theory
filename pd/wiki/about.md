@@ -50,7 +50,7 @@ tags: [meta]
 | 主体 | 役割 |
 |---|---|
 | **Claude Code** | 正本を読み、wiki のページを作り直す・足す（`.claude/skills/wiki-compile/SKILL.md`） |
-| **hook** | 正本を直すと、`.claude/hooks/content-compile.sh` が `pd/scripts/wiki-stale-check.mjs` を呼び、それを出典にする wiki のページを Claude に知らせる |
+| **hook** | 正本を直すと、`.claude/hooks/content-compile.sh` が `pd/scripts/wiki-stale-check.mjs` を呼び、それを出典にする wiki のページを Claude に知らせる（その場では作り直さず、週の作り直しで拾う） |
 | **wiki-lint** | `pd/scripts/wiki-lint.mjs` が点検し、`health/` に報告を書く。`scripts/check.sh` が develop と main で走らせる |
 | **Quartz** | wiki を組んでサイトにする。手元は http://localhost:3001/wiki/（`scripts/serve.sh` が `pd/wiki/` の変化で組み直す）、公開は GitHub Pages の `/project-design-theory/wiki/` |
 | **pjdhiro** | `review_state` をレビュー済みにする。理論の採否・しっくり感・公開の判定 |
@@ -59,15 +59,15 @@ tags: [meta]
 
 ```
 正本を直す（knowledge・読み物・出典ノート）
-  │  hook：これを出典にする wiki のページを知らせる
+  │  hook：これを出典にする wiki のページを知らせる（作り直しは週に一度）
   ▼
-同じ作業で、知らされたページを作り直す（compiled を今日に。今日のままなら checked に時刻）
+週に一度、古くなったページをまとめて作り直す（compiled を今日に。今日のままなら checked に時刻）
   │  log.md に一行
   ▼
-正本と一緒に commit → develop → 3001 で見る → main → Pages
+commit → develop → 3001 で見る → main → Pages
 ```
 
-知らせを見落としたページは、出典の最後の変更が `compiled` 日より後になるので、`health/freshness-report.md` の WL-3 に並ぶ。`scripts/check.sh` はその数を出す（止めない）。
+正本を直したページは、出典の最後の変更が `compiled` 日より後になるので、`health/freshness-report.md` の WL-3 に並ぶ。`scripts/check.sh` はその数を出す（止めない）。週の作り直しは、この一覧を拾う。作り直すまでの週のあいだ、ページは古いまま残ることがある。
 
 ### front matter の読み方
 
@@ -169,14 +169,14 @@ Karpathy の [LLM Knowledge Base の形](https://gist.github.com/karpathy/442a6b
 | **Raw Sources**（変えない） | 正本（knowledge・読み物・出典ノート・サイトの冒頭） |
 | **Compiled Wiki**（LLM が作る） | `pd/wiki/`（このディレクトリ） |
 | **Schema**（構造の定義） | wiki-compile のスキル、`pd/knowledge/meta/canonical-keywords.md` |
-| **Ingest・Compile** | 正本を直したセッションが、wiki-compile のスキルで作り直す |
+| **Ingest・Compile** | 週に一度、別のセッションが wiki-compile のスキルで作り直す |
 | **Query & Enhance** | Quartz のサイトで読む・検索する・グラフで見る |
 | **Lint & Maintain** | wiki-lint と `scripts/check.sh` |
 
 1. **正本を書き換えない** — wiki は追加の層
 2. **作り直せる** — wiki を消しても、正本から作り直せる
 3. **正本と分ける** — wiki は compiled view。正本は各ディレクトリにある
-4. **正本と一緒に動かす** — 正本を直した作業の中で、wiki も作り直す
+4. **週に一度そろえる** — 正本を直しても、その場では作り直さない。週に一度、古くなったページをまとめて作り直す（2026-11-24 から。それまでは正本を直した作業の中で作り直していた）
 
 ---
 
