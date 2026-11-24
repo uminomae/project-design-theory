@@ -51,6 +51,7 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | `kronig-1856-theorie-der-gase.md` | A. Krönig, "Grundzüge einer Theorie der Gase", *Annalen der Physik und Chemie* 99 (1856), pp.315–322（独語・8 頁） | 全文の訳（2026-11-23・#175）。題と本文 25 段（脚注は無い）。パースは題を挙げず、1856 年のクレーニッヒの論文として Claude が当てた。原文は独語で、独語の本文から訳した。文字起こしが無いので、誌面の走査の OCR を下敷きに、読む役二つが全 8 頁を画像と照らして原文と式を起こし訳の案を付け、照らす役二つが段ごとに照らし、Claude がつないで入れた。誌面の誤植二つは訳注に書いた。人の校閲はまだ。1893 の ¶20 が「1856 年にクラウジウスとクレーニッヒの注目すべき論文」と書く。ページ `pd/reader/kronig-theorie-der-gase-ja.html` |
 | `clausius-1857-art-der-bewegung.md` | R. Clausius, "Ueber die Art der Bewegung, welche wir Wärme nennen", *Annalen der Physik und Chemie* 100 (1857), pp.353–380（独語・28 頁） | 全文の訳（2026-11-24・#175）。題と本文 94 段・脚注 5。パースは題を挙げず、クラウジウスの気体の運動論の最初の論文として Claude が当てた（パースは「1856 年」と書くが、この論文は 1857 年 1 月の日付で、その年の号に載る）。原文は独語で、独語の本文から訳した。文字起こしが無いので、誌面の走査の OCR を下敷きに、読む役六つが全 28 頁を画像と照らして原文と式を起こし訳の案を付け、照らす役六つが段ごとに照らし、Claude がつないで入れた。誌面の誤植（節の番号の 10. の抜け・Wirklickeit）は訳注に書いた。人の校閲はまだ。1893 の ¶20 が「1856 年にクラウジウスとクレーニッヒの注目すべき論文」と書く。ページ `pd/reader/clausius-art-der-bewegung-ja.html` |
 | `maxwell-1860-dynamical-theory-of-gases.md` | J. C. Maxwell, "Illustrations of the Dynamical Theory of Gases", *Philosophical Magazine*, 4th ser., 19 (1860), pp.19–32（Part I）・20 (1860), pp.21–37（Part II・III）（英語・31 頁） | 全文の訳（2026-11-24・#175）。第 I〜III 部、題と本文 137 段・脚注 1。1859 年 9 月にアバディーンの英国学術協会で読んだ研究の本論。一覧の範囲（20 巻 pp.21–37）に第 III 部と全体のまとめが入るので、第 III 部も訳した。文字起こしが無いので、誌面の走査の OCR を下敷きに、読む役七つが全 31 頁を画像と照らして原文と式を起こし訳の案を付け、照らす役七つが段ごとに照らし、Claude がつないで入れた。式の誤植と見たもの（(54) の係数・(64) の添字ほか）は直さずに訳注に書いた。人の校閲はまだ。1893 の ¶20 が「マクスウェルが英国学術協会で、この主題についての彼の研究のうち最初の、そして最も重要なものを読み上げていた」と書く。ページ `pd/reader/maxwell-dynamical-theory-of-gases-ja.html` |
+| `buckle-1857-history-of-civilization-in-england.md` | Henry Thomas Buckle, *History of Civilization in England*, vol. 1, London: John W. Parker and Son, 1857, 第 1 章 pp.18–33 | 本の抜きの訳（2026-11-24・#175）。p.18「Rejecting, then, the metaphysical dogma of free will」の段から章の本文の終わりまで、17 段と脚注 19 本（注19〜注37。番号は誌面のまま）。パースは章も頁も挙げず、「この同じ考え」（偶然が秩序を生む）を用いた所として、殺人・自殺・結婚・宛名を書き忘れた手紙の統計を並べるこの所を Claude が当てた。文字起こしが無いので、初版の走査（IA `10278775bsb`・p = n − 27）の OCR を下敷きに、読む役四つが十六頁を画像と照らして起こし訳の案を付け、照らす役四つが段ごとに照らし、Claude がつないで入れた。誌面のまま置いたもの（注19 の For.・注37 の Médécine）は訳注に書いた。人の校閲はまだ。1893 の ¶20 が「1857 年には、バックルの『文明史』第一巻が、この同じ考えを用いたことによって、たいへんな評判を呼んでいた」と書く。ページ `pd/reader/buckle-history-of-civilization-ja.html` |
 | `william-james-1892-psychology-briefer-course.md` | William James, *Psychology*（*Briefer Course*）, London: Macmillan, 1892, 第 12 章「The Self」 | 鍵の文の抜き 4 か所（2026-11-24・#189）。pp.176・216。走査の OCR から起こし、頁の柱で頁を決めた。人の校閲はまだ。ページ `pd/reader/william-james-self-ja.html`（読む順のリンク集。原文を訳の上に出す） |
 | `william-james-1890-consciousness-of-self.md` | William James, *The Principles of Psychology* vol.1, New York: Holt, 1890, 第 10 章「The Consciousness of Self」pp.291–401 | 鍵の文の抜き 17 か所（2026-11-24・#189）。York 大学の写しから取り、トロント大の走査の柱の頁と突き合わせた。人の校閲はまだ。ページは同じ |
 | `william-james-1890-stream-of-thought.md` | 同じ本の第 9 章「The Stream of Thought」pp.224–290 | 鍵の文の抜き 7 か所（2026-11-24・#189）。写しの誤り（if flows ほか）は走査の版に合わせた。人の校閲はまだ。ページは同じ |
@@ -273,6 +274,26 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | bei constantem Volumen / Drucke | 体積一定で／圧力一定で | |
 | Wärmeerzeugung / Wärmeverbrauch | 熱の発生／熱の消費 | |
 | innere / äussere Arbeit | 内部の仕事／外部の仕事 | |
+
+### バックル：表
+
+『イギリス文明史』第 1 巻（1857）の第 1 章の訳語。統計の語はハーシェルの表（「ケトレーの確率論」）にそろえた。
+
+| 原語 | 訳語 | 覚え書き |
+|---|---|---|
+| free will / predestination | 自由意志／予定 | the theological dogma of predestined events は「予定された出来事という神学の教義」 |
+| antecedents / consequent | 先行するもの／帰結 | |
+| uniformity / regularity / law | 一様性／規則性／法則 | undeviating regularity は「それることのない規則性」、uniformity of sequence は「継起の一様性」 |
+| statistics / statistician / moral statistics | 統計／統計家／道徳の統計 | ケトレーの書名 *Statistique Morale* は『道徳統計』 |
+| average | 平均 | |
+| crime / offence | 犯罪／罪 | |
+| virtue / vice | 徳／悪徳 | |
+| volition | 意志のはたらき | |
+| philosophic history | 哲学的な歴史 | |
+| physical laws / physical science(s) | 物理的な法則／自然科学 | |
+| moral world / material world | 道徳の世界／物質の世界 | |
+| perturbation / disturbance | 摂動／乱れ | |
+| moralists / metaphysicians | 道徳家／形而上学者 | |
 
 ### マクスウェル：表
 

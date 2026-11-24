@@ -285,6 +285,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は buckle-1857-history-of-civilization-in-england.md（原文〔英語〕と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-buckle-history-of-civilization-ja.md",
+        ROOT / "scripts/reader-buckle-history-of-civilization-ja-template.html",
+        ROOT / "reader/buckle-history-of-civilization-ja.html",
+        "flow",
+    ),
+    (
         # 読む順のリンク集。鍵の文の対訳は william-james-*.md（原文と訳）から <!--JA-TEXT:…--> で差し込む（#189）
         ROOT / "knowledge/translations/READER-william-james-self-ja.md",
         ROOT / "scripts/reader-william-james-self-ja-template.html",
@@ -619,6 +626,14 @@ JA_CHAPTERS = {
         "¶111": "第 III 部　形を問わない、完全に弾性のある物体の衝突（命題 XXII）",
         "¶128": "並進と回転の活力と、全体のまとめ（命題 XXIII）",
         "注1": "マクスウェルの脚注",
+    },
+    "buckle-1857-history-of-civilization-in-england.md": {
+        "¶1": "自由意志と予定を退け、人の行いの一様性へ",
+        "¶9": "殺人と自殺の規則性",
+        "¶12": "犯罪の規則性と、法則の摂動",
+        "¶14": "結婚の数と、宛名を書き忘れた手紙",
+        "¶16": "統計の先へ：心の研究と自然の研究をつなぐ",
+        "注19": "バックルの脚注",
     },
     # ウィリアム・ジェームズの鍵の文（#189）。章の見出しは読む順のリンク集の正本 READER-william-james-self-ja.md に書く
     "william-james-1892-psychology-briefer-course.md": {},
