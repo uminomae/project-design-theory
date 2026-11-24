@@ -39,5 +39,6 @@
 | `peer-learning/` | ピア・ラーニング（教育）とペアプログラミングの原典の照合（付箋帳 i20261117142315hkb・Love駆動開発に置く前の調べ）。`SURVEY-peer-learning-pairprog-20261118.md` |
 | `defense-mechanisms/` | 「心理的防衛機制とは」。正本 `READER-defense-mechanisms.md`。照合の記録は `psychological-safety/SURVEY-07-defense-maturity.md`（防衛の水準・パーソナリティ障害・職場のいじめ）と `SURVEY-09-personality-integration.md`（人格の重さと型を並べる論） |
 | `subtraction-kinds/` | 「いろんな引き算」（欠損駆動思考の章「「私は引き算をしていた。数直線の外で。」」の前提知識）。正本 `READER-subtraction-kinds.md` |
+| `summary-robustness/` | 公開ページを文脈の無い LLM に要約させ、要点が残るかを確かめた記録（#191）。README が入口 |
 | `developmental-stages/` | 「精神の発達段階とは」の調査ノート（pd#152）。段階ごとの不安・防衛・組織。pd#151 の足場 |
 | `intrinsic-motivation/` | 内発的動機が前提にしている人の像（pd#154）。調べの一巡目＝`SURVEY-00-first-pass.md`（Ryan & Deci 2000・Cook-Greuter 2013 の自己保護の段は本文照合） |
