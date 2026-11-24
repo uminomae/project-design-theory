@@ -271,6 +271,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は clausius-1857-art-der-bewegung.md（原文〔独語〕と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-clausius-art-der-bewegung-ja.md",
+        ROOT / "scripts/reader-clausius-art-der-bewegung-ja-template.html",
+        ROOT / "reader/clausius-art-der-bewegung-ja.html",
+        "flow",
+    ),
+    (
         # 読む順のリンク集。鍵の文の対訳は william-james-*.md（原文と訳）から <!--JA-TEXT:…--> で差し込む（#189）
         ROOT / "knowledge/translations/READER-william-james-self-ja.md",
         ROOT / "scripts/reader-william-james-self-ja-template.html",
@@ -580,6 +587,19 @@ JA_CHAPTERS = {
         "¶21": "法則が厳密でないこと",
         "¶22": "膨張と圧縮のときの温度",
     },
+    "clausius-1857-art-der-bewegung.md": {
+        "¶1": "題と、この論文を出すわけ",
+        "¶4": "分子の進む運動と、構成部分の運動",
+        "¶15": "気体の法則が近似でしか成り立たないわけ",
+        "¶23": "固体・液体・気体の違い",
+        "¶28": "蒸発",
+        "¶39": "状態が変わるときの熱の発生と消費",
+        "¶50": "化合する気体の体積と、分子の中の原子の数",
+        "¶64": "数学的な補遺：気体の圧力の式",
+        "¶81": "分子の速さ",
+        "¶87": "進む運動の活力と、熱の全体",
+        "注1": "クラウジウスの脚注",
+    },
     # ウィリアム・ジェームズの鍵の文（#189）。章の見出しは読む順のリンク集の正本 READER-william-james-self-ja.md に書く
     "william-james-1892-psychology-briefer-course.md": {},
     "william-james-1890-consciousness-of-self.md": {},
@@ -606,6 +626,7 @@ JA_LANG = {
     "helmholtz-1847-erhaltung-der-kraft.md": "de",
     "clausius-1850-bewegende-kraft-der-warme.md": "de",
     "kronig-1856-theorie-der-gase.md": "de",
+    "clausius-1857-art-der-bewegung.md": "de",
 }
 
 

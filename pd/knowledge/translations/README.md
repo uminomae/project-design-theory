@@ -49,6 +49,7 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | `mill-1865-examination-of-hamilton.md` | John Stuart Mill, *An Examination of Sir William Hamilton's Philosophy*, London: Longman, Green, Longman, Roberts & Green, 1865, 第 VII 章 pp.88–105 | 本の抜きの訳（2026-11-21・#175）。第 VII 章「The Philosophy of the Conditioned, as applied by Mr. Mansel to the Limits of Religious Thought」の全文 25 段と脚注 16。パースは題も頁も挙げず、マンセルの弁護にミルが正面から答えた所として、Claude が当てた。文字起こしが無いので、OCR を下敷きに、読む役三つが十八頁を画像と照らして原文を起こし訳の案を付け、照らす役が段ごとに照らした。ミルが引くマンセルとハミルトンの文は照らしていない。人の校閲はまだ。1893 の ¶20 が「ミルの唯名論」に触れる。ページ `pd/reader/mill-examination-of-hamilton-ja.html` |
 | `hamilton-1829-philosophy-of-the-unconditioned.md` | Sir William Hamilton, "Philosophy of the Unconditioned; in reference to Cousin's Doctrine of the Infinito-Absolute", *Edinburgh Review* 50（1829 年 10 月）, pp.194–221。原文は論集 *Discussions on Philosophy and Literature, Education and University Reform*（London, 1852）の再録 pp.1–37 | 論文の全文の訳（2026-11-21・#175）。全文 78 段と脚注 22。パースは題も頁も挙げず、マンセルの序文が名指し、ミルの批判が拠った元の論文として、Claude が当てた。ハミルトン自身が直して脚注を足した 1852 年の再録を原文にした（足した所は角括弧）。文字起こしが無いので、OCR を下敷きに、読む役六つが三十七頁を画像と照らして原文を起こし訳の案を付け、照らす役六つが段ごとに照らした。ハミルトンが引く文と脚注の書誌は照らしていない。人の校閲はまだ。1893 の ¶20 が「ウィリアム・ハミルトン卿に縛られた従僕たち」に触れる。ページ `pd/reader/hamilton-philosophy-of-the-unconditioned-ja.html` |
 | `kronig-1856-theorie-der-gase.md` | A. Krönig, "Grundzüge einer Theorie der Gase", *Annalen der Physik und Chemie* 99 (1856), pp.315–322（独語・8 頁） | 全文の訳（2026-11-23・#175）。題と本文 25 段（脚注は無い）。パースは題を挙げず、1856 年のクレーニッヒの論文として Claude が当てた。原文は独語で、独語の本文から訳した。文字起こしが無いので、誌面の走査の OCR を下敷きに、読む役二つが全 8 頁を画像と照らして原文と式を起こし訳の案を付け、照らす役二つが段ごとに照らし、Claude がつないで入れた。誌面の誤植二つは訳注に書いた。人の校閲はまだ。1893 の ¶20 が「1856 年にクラウジウスとクレーニッヒの注目すべき論文」と書く。ページ `pd/reader/kronig-theorie-der-gase-ja.html` |
+| `clausius-1857-art-der-bewegung.md` | R. Clausius, "Ueber die Art der Bewegung, welche wir Wärme nennen", *Annalen der Physik und Chemie* 100 (1857), pp.353–380（独語・28 頁） | 全文の訳（2026-11-24・#175）。題と本文 94 段・脚注 5。パースは題を挙げず、クラウジウスの気体の運動論の最初の論文として Claude が当てた（パースは「1856 年」と書くが、この論文は 1857 年 1 月の日付で、その年の号に載る）。原文は独語で、独語の本文から訳した。文字起こしが無いので、誌面の走査の OCR を下敷きに、読む役六つが全 28 頁を画像と照らして原文と式を起こし訳の案を付け、照らす役六つが段ごとに照らし、Claude がつないで入れた。誌面の誤植（節の番号の 10. の抜け・Wirklickeit）は訳注に書いた。人の校閲はまだ。1893 の ¶20 が「1856 年にクラウジウスとクレーニッヒの注目すべき論文」と書く。ページ `pd/reader/clausius-art-der-bewegung-ja.html` |
 | `william-james-1892-psychology-briefer-course.md` | William James, *Psychology*（*Briefer Course*）, London: Macmillan, 1892, 第 12 章「The Self」 | 鍵の文の抜き 4 か所（2026-11-24・#189）。pp.176・216。走査の OCR から起こし、頁の柱で頁を決めた。人の校閲はまだ。ページ `pd/reader/william-james-self-ja.html`（読む順のリンク集。原文を訳の上に出す） |
 | `william-james-1890-consciousness-of-self.md` | William James, *The Principles of Psychology* vol.1, New York: Holt, 1890, 第 10 章「The Consciousness of Self」pp.291–401 | 鍵の文の抜き 17 か所（2026-11-24・#189）。York 大学の写しから取り、トロント大の走査の柱の頁と突き合わせた。人の校閲はまだ。ページは同じ |
 | `william-james-1890-stream-of-thought.md` | 同じ本の第 9 章「The Stream of Thought」pp.224–290 | 鍵の文の抜き 7 か所（2026-11-24・#189）。写しの誤り（if flows ほか）は走査の版に合わせた。人の校閲はまだ。ページは同じ |
@@ -247,6 +248,30 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | Gewichtseinheit / Volumeneinheit | 重さの単位／体積の単位 | |
 | Gränzwerth / Differentialquotient | 極限値／微分商 | |
 | Kessel / Condensator / Heerd | ボイラー／復水器／炉 | |
+
+### クラウジウス 1857：表
+
+「熱と呼ぶ運動の種類について」（1857）の訳語。上のクラウジウス 1850 の表と、クレーニッヒの表と重なる語（lebendige Kraft＝活力、Wärmemenge＝熱量、specifische Wärme＝比熱、Expansivkraft＝膨張力、Atom＝原子、Stoss＝衝突、Geschwindigkeit＝速さ）はそろえた。
+
+| 原語 | 訳語 | 覚え書き |
+|---|---|---|
+| Art der Bewegung | 運動の種類 | 題 |
+| Molecül / Gasmolecül / Massenatom | 分子／気体の分子／質量原子 | クラウジウスは「分子」と言い、分子が原子からなると見る |
+| Bestandtheil / Bewegungen der Bestandtheile | 構成部分／構成部分の運動 | 分子の中の原子などの運動 |
+| fortschreitende Bewegung | 進む運動 | 今の並進運動 |
+| drehende (rotirende) Bewegung / Schwingung | 回転の運動／振動 | |
+| vibriren / vibrirende Bewegung | 震える／震える運動 | 固体の運動。Schwingung（振動）と訳し分けた |
+| permanentes Gas / vollkommenes Gas / ideell | 永久気体／完全な気体／理想的な | |
+| einfache Gase / zusammengesetzte Gase | 単体の気体／化合物の気体 | |
+| Aggregatzustand | 集まりの状態 | 固体・液体・気体の別 |
+| Verdampfung / Niederschlag / condensiren | 蒸発／凝結／凝縮する | |
+| Molecularkraft / Wirkungssphäre | 分子の力／作用の及ぶ範囲 | |
+| mittlere Entfernung / mittlere Geschwindigkeit | 平均の距離／平均の速さ | 平均の速さは、活力が同じになるように取る（今の二乗平均平方根の速さ） |
+| Dichte / Dichtigkeit | 密度 | |
+| wahre specifische Wärme | 真の比熱 | ランキンの呼び名 |
+| bei constantem Volumen / Drucke | 体積一定で／圧力一定で | |
+| Wärmeerzeugung / Wärmeverbrauch | 熱の発生／熱の消費 | |
+| innere / äussere Arbeit | 内部の仕事／外部の仕事 | |
 
 ### クレーニッヒ：表
 
