@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/maxwell-dynamical-theory-of-gases-ja.html を直接編集しないでください。
+  正本:   knowledge/translations/READER-maxwell-dynamical-theory-of-gases-ja.md（訳の本文は maxwell-1860-dynamical-theory-of-gases.md から差し込む）
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 訳の人の校閲はまだだが、pjdhiro の判断で noindex を外し、sitemap.xml・llms.txt・llms-full.txt に入れた（2026-11-18 からの決まり）。校閲前の帯は残す
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「マクスウェル「気体の動力学的理論の例解」（1860）を、日本語で読む」のページです。スコットランドの物理学者ジェームズ・クラーク・マクスウェル（James Clerk Maxwell）が 1860 年に『フィロソフィカル・マガジン』（Philosophical Magazine）第 19 巻・第 20 巻に載せた論文「Illustrations of the Dynamical Theory of Gases（気体の動力学的理論の例解）」の全文（第 I 部〜第 III 部）を、段ごとに日本語に訳したページ。気体を、ぶつかり合う完全に弾性のある小さな球の集まりとみて、粒子の速度が誤差と同じ法則で分布することを示し、道のりの平均の長さ・内部摩擦・拡散・熱の伝導を求め、並進と回転の活力の関係が比熱の比と合わないことを示す。訳は Claude（AI）によるもので、人の校閲はまだ。パースが「進化的な愛」（1893）¶20 で「ダーウィンの出版の直前の夏には、マクスウェルが英国学術協会で、この主題についての彼の研究のうち最初の、そして最も重要なものを読み上げていた」と書く研究（パースは題を挙げない。協会で読んだのは 1859 年 9 月、誌に載ったのは 1860 年）。原文は英語で、各段の「原文」の畳みにある。
+  訳注は Claude の注。原文の段の番号（¶）は誌面の段の分け方による通し番号、p. は誌面の頁。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マクスウェル「気体の動力学的理論の例解」（1860）を、日本語で読む | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/maxwell-dynamical-theory-of-gases-ja.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="スコットランドの物理学者ジェームズ・クラーク・マクスウェル（James Clerk Maxwell）が 1860 年に『フィロソフィカル・マガジン』（Philosophical Magazine）第 19 巻・第 20 巻に載せた論文「Illustrations of the Dynamical Theory of Gases（気体の動力学的理論の例解）」の全文（第 I 部〜第 III 部）を、段ごとに日本語に訳したページ。気体を、ぶつかり合う完全に弾性のある小さな球の集まりとみて、粒子の速度が誤差と同じ法則で分布することを示し、道のりの平均の長さ・内部摩擦・拡散・熱の伝導を求め、並進と回転の活力の関係が比熱の比と合わないことを示す。訳は Claude（AI）によるもので、人の校閲はまだ。">
+    <meta property="og:title" content="マクスウェル「気体の動力学的理論の例解」（1860）を、日本語で読む">
+    <meta property="og:description" content="スコットランドの物理学者ジェームズ・クラーク・マクスウェル（James Clerk Maxwell）が 1860 年に『フィロソフィカル・マガジン』（Philosophical Magazine）第 19 巻・第 20 巻に載せた論文「Illustrations of the Dynamical Theory of Gases（気体の動力学的理論の例解）」の全文（第 I 部〜第 III 部）を、段ごとに日本語に訳したページ。気体を、ぶつかり合う完全に弾性のある小さな球の集まりとみて、粒子の速度が誤差と同じ法則で分布することを示し、道のりの平均の長さ・内部摩擦・拡散・熱の伝導を求め、並進と回転の活力の関係が比熱の比と合わないことを示す。訳は Claude（AI）によるもので、人の校閲はまだ。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/maxwell-dynamical-theory-of-gases-ja.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta property="og:image" content="https://uminomae.github.io/project-design-theory/assets/ogp/peirce-love-abduction.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="マクスウェル「気体の動力学的理論の例解」（1860）を、日本語で読む — 中心から三つの点を独立へ押し出し、円い運動で調和へ引き寄せる図">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="マクスウェル「気体の動力学的理論の例解」（1860）を、日本語で読む">
+    <meta name="twitter:image" content="https://uminomae.github.io/project-design-theory/assets/ogp/peirce-love-abduction.png">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-24">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "マクスウェル「気体の動力学的理論の例解」（1860）を、日本語で読む",
+          "description": "スコットランドの物理学者ジェームズ・クラーク・マクスウェル（James Clerk Maxwell）が 1860 年に『フィロソフィカル・マガジン』（Philosophical Magazine）第 19 巻・第 20 巻に載せた論文「Illustrations of the Dynamical Theory of Gases（気体の動力学的理論の例解）」の全文（第 I 部〜第 III 部）を、段ごとに日本語に訳したページ。気体を、ぶつかり合う完全に弾性のある小さな球の集まりとみて、粒子の速度が誤差と同じ法則で分布することを示し、道のりの平均の長さ・内部摩擦・拡散・熱の伝導を求め、並進と回転の活力の関係が比熱の比と合わないことを示す。訳は Claude（AI）によるもので、人の校閲はまだ。",
+          "keywords": "マクスウェル, James Clerk Maxwell, 気体の動力学的理論, Dynamical Theory of Gases, 気体の運動論, 速度の分布, マクスウェル分布, 道のりの平均の長さ, 内部摩擦, 拡散, 熱の伝導, 比熱, 1860, パース, 進化的な愛, 日本語訳, 対訳",
+          "url": "https://uminomae.github.io/project-design-theory/reader/maxwell-dynamical-theory-of-gases-ja.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/maxwell-dynamical-theory-of-gases-ja.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-24",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Person", "name": "James Clerk Maxwell"}, {"@type": "Thing", "name": "気体の運動論"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。訳と解説の文責"},
+          "translationOfWork": {"@type": "ScholarlyArticle", "name": "Illustrations of the Dynamical Theory of Gases", "author": {"@type": "Person", "name": "James Clerk Maxwell"}, "datePublished": "1860", "inLanguage": "en", "isPartOf": {"@type": "Periodical", "name": "The London, Edinburgh and Dublin Philosophical Magazine and Journal of Science"}, "pagination": "vol. 19, 19–32; vol. 20, 21–37", "sameAs": ["https://doi.org/10.1080/14786446008642818", "https://doi.org/10.1080/14786446008642902"]},
+          "translator": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。人の校閲はまだ"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「マクスウェル「気体の動力学的理論の例解」（1860）を、日本語で読む」のページです。スコットランドの物理学者ジェームズ・クラーク・マクスウェル（James Clerk Maxwell）が 1860 年に『フィロソフィカル・マガジン』（Philosophical Magazine）第 19 巻・第 20 巻に載せた論文「Illustrations of the Dynamical Theory of Gases（気体の動力学的理論の例解）」の全文（第 I 部〜第 III 部）を、段ごとに日本語に訳したページ。気体を、ぶつかり合う完全に弾性のある小さな球の集まりとみて、粒子の速度が誤差と同じ法則で分布することを示し、道のりの平均の長さ・内部摩擦・拡散・熱の伝導を求め、並進と回転の活力の関係が比熱の比と合わないことを示す。訳は Claude（AI）によるもので、人の校閲はまだ。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この訳は AI（Claude）によるものです。</b>人の校閲はまだです。引用や論拠には、各段の「原文」を使ってください。
+            </div>
+            <header class="reader-hero">
+                <h1><span style="display:inline-block">マクスウェル</span><span style="display:inline-block">「気体の動力学的理論の例解」</span><span style="display:inline-block">（1860）を、</span><span style="display:inline-block">日本語で読む</span></h1>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 訳は人の校閲前<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/translations/maxwell-1860-dynamical-theory-of-gases.md">対訳の正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="peirce-love-abduction.html">パースの創造的な愛と、アブダクション</a> ・
+                <a href="peirce-evolutionary-love-ja.html">パース「進化的な愛」を、日本語で読む</a> ・
+                <a href="peirce-law-of-mind-ja.html">パース「心の法則」を、日本語で読む</a> ・
+                <a href="peirce-glassy-essence-ja.html">パース「人間のガラスのような本質」を、日本語で読む</a> ・
+                <a href="carus-onslaught-on-necessity-ja.html">ケーラス「パース氏の必然論への猛攻」を、日本語で読む</a> ・
+                <a href="james-substance-and-shadow-ja.html">ジェイムズ（父）『実体と影』の「創造的な愛」の所を、日本語で読む</a> ・
+                <a href="darwin-historical-sketch-ja.html">ダーウィン「歴史的概略」（『種の起源』第 3 版の巻頭）を、日本語で読む</a> ・
+                <a href="newcomb-political-economy-ja.html">ニューカム『政治経済学原理』の利己心と慈善の所を、日本語で読む</a> ・
+                <a href="darwin-wallace-1858-ja.html">ダーウィンとウォレスのリンネ協会の論文（1858）を、日本語で読む</a> ・
+                <a href="herschel-quetelet-probabilities-ja.html">ハーシェル「ケトレーの確率論」（1850）を、日本語で読む</a> ・
+                <a href="mandeville-grumbling-hive-ja.html">マンデヴィル『蜂の寓話』（1714）の詩「ぶつぶつ言う蜂の巣」を、日本語で読む</a> ・
+                <a href="kolliker-darwinsche-schopfungstheorie-ja.html">ケリカー「ダーウィンの創造説について」（1864）を、日本語で読む</a> ・
+                <a href="helmholtz-erhaltung-der-kraft-ja.html">ヘルムホルツ『力の保存について』（1847）を、日本語で読む</a> ・
+                <a href="clausius-bewegende-kraft-der-warme-ja.html">クラウジウス「熱の動力について」（1850）を、日本語で読む</a> ・
+                <a href="rankine-mechanical-action-of-heat-ja.html">ランキン「熱の力学的作用について」（1850）を、日本語で読む</a> ・
+                <a href="kronig-theorie-der-gase-ja.html">クレーニッヒ「気体の理論の大要」（1856）を、日本語で読む</a> ・
+                <a href="clausius-art-der-bewegung-ja.html">クラウジウス「熱と呼ぶ運動の種類について」（1857）を、日本語で読む</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

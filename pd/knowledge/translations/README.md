@@ -50,6 +50,7 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | `hamilton-1829-philosophy-of-the-unconditioned.md` | Sir William Hamilton, "Philosophy of the Unconditioned; in reference to Cousin's Doctrine of the Infinito-Absolute", *Edinburgh Review* 50（1829 年 10 月）, pp.194–221。原文は論集 *Discussions on Philosophy and Literature, Education and University Reform*（London, 1852）の再録 pp.1–37 | 論文の全文の訳（2026-11-21・#175）。全文 78 段と脚注 22。パースは題も頁も挙げず、マンセルの序文が名指し、ミルの批判が拠った元の論文として、Claude が当てた。ハミルトン自身が直して脚注を足した 1852 年の再録を原文にした（足した所は角括弧）。文字起こしが無いので、OCR を下敷きに、読む役六つが三十七頁を画像と照らして原文を起こし訳の案を付け、照らす役六つが段ごとに照らした。ハミルトンが引く文と脚注の書誌は照らしていない。人の校閲はまだ。1893 の ¶20 が「ウィリアム・ハミルトン卿に縛られた従僕たち」に触れる。ページ `pd/reader/hamilton-philosophy-of-the-unconditioned-ja.html` |
 | `kronig-1856-theorie-der-gase.md` | A. Krönig, "Grundzüge einer Theorie der Gase", *Annalen der Physik und Chemie* 99 (1856), pp.315–322（独語・8 頁） | 全文の訳（2026-11-23・#175）。題と本文 25 段（脚注は無い）。パースは題を挙げず、1856 年のクレーニッヒの論文として Claude が当てた。原文は独語で、独語の本文から訳した。文字起こしが無いので、誌面の走査の OCR を下敷きに、読む役二つが全 8 頁を画像と照らして原文と式を起こし訳の案を付け、照らす役二つが段ごとに照らし、Claude がつないで入れた。誌面の誤植二つは訳注に書いた。人の校閲はまだ。1893 の ¶20 が「1856 年にクラウジウスとクレーニッヒの注目すべき論文」と書く。ページ `pd/reader/kronig-theorie-der-gase-ja.html` |
 | `clausius-1857-art-der-bewegung.md` | R. Clausius, "Ueber die Art der Bewegung, welche wir Wärme nennen", *Annalen der Physik und Chemie* 100 (1857), pp.353–380（独語・28 頁） | 全文の訳（2026-11-24・#175）。題と本文 94 段・脚注 5。パースは題を挙げず、クラウジウスの気体の運動論の最初の論文として Claude が当てた（パースは「1856 年」と書くが、この論文は 1857 年 1 月の日付で、その年の号に載る）。原文は独語で、独語の本文から訳した。文字起こしが無いので、誌面の走査の OCR を下敷きに、読む役六つが全 28 頁を画像と照らして原文と式を起こし訳の案を付け、照らす役六つが段ごとに照らし、Claude がつないで入れた。誌面の誤植（節の番号の 10. の抜け・Wirklickeit）は訳注に書いた。人の校閲はまだ。1893 の ¶20 が「1856 年にクラウジウスとクレーニッヒの注目すべき論文」と書く。ページ `pd/reader/clausius-art-der-bewegung-ja.html` |
+| `maxwell-1860-dynamical-theory-of-gases.md` | J. C. Maxwell, "Illustrations of the Dynamical Theory of Gases", *Philosophical Magazine*, 4th ser., 19 (1860), pp.19–32（Part I）・20 (1860), pp.21–37（Part II・III）（英語・31 頁） | 全文の訳（2026-11-24・#175）。第 I〜III 部、題と本文 137 段・脚注 1。1859 年 9 月にアバディーンの英国学術協会で読んだ研究の本論。一覧の範囲（20 巻 pp.21–37）に第 III 部と全体のまとめが入るので、第 III 部も訳した。文字起こしが無いので、誌面の走査の OCR を下敷きに、読む役七つが全 31 頁を画像と照らして原文と式を起こし訳の案を付け、照らす役七つが段ごとに照らし、Claude がつないで入れた。式の誤植と見たもの（(54) の係数・(64) の添字ほか）は直さずに訳注に書いた。人の校閲はまだ。1893 の ¶20 が「マクスウェルが英国学術協会で、この主題についての彼の研究のうち最初の、そして最も重要なものを読み上げていた」と書く。ページ `pd/reader/maxwell-dynamical-theory-of-gases-ja.html` |
 | `william-james-1892-psychology-briefer-course.md` | William James, *Psychology*（*Briefer Course*）, London: Macmillan, 1892, 第 12 章「The Self」 | 鍵の文の抜き 4 か所（2026-11-24・#189）。pp.176・216。走査の OCR から起こし、頁の柱で頁を決めた。人の校閲はまだ。ページ `pd/reader/william-james-self-ja.html`（読む順のリンク集。原文を訳の上に出す） |
 | `william-james-1890-consciousness-of-self.md` | William James, *The Principles of Psychology* vol.1, New York: Holt, 1890, 第 10 章「The Consciousness of Self」pp.291–401 | 鍵の文の抜き 17 か所（2026-11-24・#189）。York 大学の写しから取り、トロント大の走査の柱の頁と突き合わせた。人の校閲はまだ。ページは同じ |
 | `william-james-1890-stream-of-thought.md` | 同じ本の第 9 章「The Stream of Thought」pp.224–290 | 鍵の文の抜き 7 か所（2026-11-24・#189）。写しの誤り（if flows ほか）は走査の版に合わせた。人の校閲はまだ。ページは同じ |
@@ -272,6 +273,30 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | bei constantem Volumen / Drucke | 体積一定で／圧力一定で | |
 | Wärmeerzeugung / Wärmeverbrauch | 熱の発生／熱の消費 | |
 | innere / äussere Arbeit | 内部の仕事／外部の仕事 | |
+
+### マクスウェル：表
+
+「気体の動力学的理論の例解」（1860）の訳語。英語の論文なので、独語のクラウジウス・クレーニッヒの表とは原語が違う。重なる量（vis viva＝活力、specific heat＝比熱、diffusion＝拡散）はそろえた。
+
+| 原語 | 訳語 | 覚え書き |
+|---|---|---|
+| dynamical theory of gases / illustrations | 気体の動力学的理論／例解 | 題は「気体の動力学的理論の例解」 |
+| particle / sphere / perfectly elastic | 粒子／球／完全に弾性のある | |
+| collision / impact / line of impact | 衝突／衝突／衝突の線 | |
+| velocity / mean velocity / average | 速度／平均の速度／平均の | |
+| vis viva | 活力 | 質量と速度の二乗の積。今の運動エネルギーの二倍 |
+| motion of translation / motion in mass / motion of agitation | 並進の運動／全体としての運動／揺動の運動 | |
+| length of path / mean length of path / mean path | 道のりの長さ／道のりの平均の長さ／平均の道のり | 今の平均自由行程に当たる |
+| probability / equally probable | 確率／同じく確からしい | |
+| method of least squares | 最小二乗法 | 命題 IV のあとの段 |
+| system of particles / centre of gravity | 粒子の系／重心 | |
+| internal friction / coefficient of friction | 内部摩擦／摩擦の係数 | 今の粘性・粘性係数に当たる |
+| diffusion / porous plug | 拡散／多孔質の栓 | |
+| conduction of heat / conductivity / thermal resistance | 熱の伝導／伝導率／熱の抵抗 | |
+| stratum / element of volume | 層／体積の要素 | |
+| rotation / axis | 回転／軸 | |
+| Prop.（Proposition） | 命題 | 命題 I〜XXIII |
+| olefiant gas / carbonic acid / carbonic oxide / deutoxide of nitrogen | 油生気体／炭酸／一酸化炭素／一酸化窒素 | 当時の呼び名。油生気体は今のエチレン、炭酸は今の二酸化炭素 |
 
 ### クレーニッヒ：表
 

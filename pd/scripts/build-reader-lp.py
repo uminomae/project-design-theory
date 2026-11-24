@@ -278,6 +278,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は maxwell-1860-dynamical-theory-of-gases.md（原文〔英語〕と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-maxwell-dynamical-theory-of-gases-ja.md",
+        ROOT / "scripts/reader-maxwell-dynamical-theory-of-gases-ja-template.html",
+        ROOT / "reader/maxwell-dynamical-theory-of-gases-ja.html",
+        "flow",
+    ),
+    (
         # 読む順のリンク集。鍵の文の対訳は william-james-*.md（原文と訳）から <!--JA-TEXT:…--> で差し込む（#189）
         ROOT / "knowledge/translations/READER-william-james-self-ja.md",
         ROOT / "scripts/reader-william-james-self-ja-template.html",
@@ -599,6 +606,19 @@ JA_CHAPTERS = {
         "¶81": "分子の速さ",
         "¶87": "進む運動の活力と、熱の全体",
         "注1": "クラウジウスの脚注",
+    },
+    "maxwell-1860-dynamical-theory-of-gases.md": {
+        "¶1": "題と、気体の粒子の運動を調べるわけ",
+        "¶6": "第 I 部　完全に弾性のある球の衝突（命題 I〜III）",
+        "¶14": "速度の分布の法則（命題 IV〜VI）",
+        "¶34": "衝突の数と、道のりの平均の長さ（命題 VII〜XI）",
+        "¶51": "壁にかかる圧力と、内部摩擦（命題 XII・XIII）",
+        "¶62": "第 II 部　二種類以上の粒子の拡散（命題 XIV〜XVIII）",
+        "¶87": "気体の拡散の法則と、管でつないだ容器の拡散（命題 XIX・XX）",
+        "¶105": "熱の伝導（命題 XXI）",
+        "¶111": "第 III 部　形を問わない、完全に弾性のある物体の衝突（命題 XXII）",
+        "¶128": "並進と回転の活力と、全体のまとめ（命題 XXIII）",
+        "注1": "マクスウェルの脚注",
     },
     # ウィリアム・ジェームズの鍵の文（#189）。章の見出しは読む順のリンク集の正本 READER-william-james-self-ja.md に書く
     "william-james-1892-psychology-briefer-course.md": {},
