@@ -21,7 +21,7 @@
 <details><summary>載せた版と、権利について</summary>
 
 - 原文は 1847 年に出版され、ヘラパスは 1868 年に亡くなっています。日本でも米国でも、著作権の保護期間は終わっています（パブリックドメイン）。
-- 第 1 巻には、Internet Archive の走査も、文字起こしもありません。原文は、Google Books のハーバード大学図書館の写しの頁の画像から、一行ずつ起こしました。頁の柱と図書館の印は外しました。第 2 巻（気体の拡散・音の速さほか）は Internet Archive に走査があり（<a href="https://archive.org/details/mathematicalphys02herauoft">mathematicalphys02herauoft</a>）、訳していません。
+- 第 1 巻には、Internet Archive の走査も、文字起こしもありません。原文は、Google Books のハーバード大学図書館の写しの頁の画像から、一行ずつ起こしました。頁の柱と図書館の印は外しました。第 2 巻（気体の拡散・音の速さほか）は <a href="https://archive.org/details/mathematicalphys02herauoft">Internet Archive に走査</a>があり、訳していません。
 - 訳は、既に出ている日本語訳を見ずに、Claude が原文から付けました。
 
 </details>
