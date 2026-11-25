@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/reasoning.html を直接編集しないでください。
+  正本:   knowledge/research/reasoning/READER-reasoning.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「推論とは」のページです（工事中）。演繹・帰納・仮説（アブダクション）・類推が、どういう関係に置かれてきたかを、アリストテレス『分析論前書』・ヒューム『人間知性研究』・ミル『論理学体系』・パース 1878「演繹、帰納、仮説」と 1883「蓋然的推論の理論」の本文から並べる。四つの形の表の列（何から何へ・当てにするもの・止まる所）は Claude が立てたもので、著者の分け方ではない。確かさの順の一本の軸には並べない。類推の席は、アリストテレスでは帰納と別の「例」、ヒュームでは事実の推論の土台、ミルでは完全な帰納に届かない形、パースでは帰納と仮説のあとに演繹が続く組み合わせ。四人とも、一つの形の芯に別の形を見つけている、という読みは Claude のもの。思考とは・頭脳の能力・類推と構造の類似の独立ページは工事中で、リンクはまだ無い。パースの三つの推論の詳細は peirce-love-abduction.html を指すだけで写さない。
+  pjdhiro 本人の言葉は「pjdhiro の問い：」「pjdhiro の見方：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>推論とは | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/reasoning.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="演繹・帰納・仮説（アブダクション）・類推は、どういう関係に置かれてきたか。アリストテレス・ヒューム・ミル・パースの原典から、四つの推論の形を、何から何へ推すかと、どこで止まるかで並べる。類推は三つの形の分け方に自分だけの席を持たないが、帰納の隣・経験からの推論の土台・帰納の弱い形・三つの組み合わせとして、どこにも入り込んでいる（工事中）。">
+    <meta property="og:title" content="推論とは">
+    <meta property="og:description" content="演繹・帰納・仮説（アブダクション）・類推は、どういう関係に置かれてきたか。アリストテレス・ヒューム・ミル・パースの原典から、四つの推論の形を、何から何へ推すかと、どこで止まるかで並べる。類推は三つの形の分け方に自分だけの席を持たないが、帰納の隣・経験からの推論の土台・帰納の弱い形・三つの組み合わせとして、どこにも入り込んでいる（工事中）。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/reasoning.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="推論とは">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-25">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "推論とは",
+          "description": "演繹・帰納・仮説（アブダクション）・類推は、どういう関係に置かれてきたか。アリストテレス・ヒューム・ミル・パースの原典から、四つの推論の形を、何から何へ推すかと、どこで止まるかで並べる。類推は三つの形の分け方に自分だけの席を持たないが、帰納の隣・経験からの推論の土台・帰納の弱い形・三つの組み合わせとして、どこにも入り込んでいる（工事中）。",
+          "keywords": "推論, 演繹, 帰納, 仮説, アブダクション, 類推, 三段論法, アリストテレス, ヒューム, ミル, パース, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/reasoning.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/reasoning.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-25",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "推論"}, {"@type": "Thing", "name": "類推"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方の言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「推論とは」のページです（工事中）。演繹・帰納・仮説（アブダクション）・類推は、どういう関係に置かれてきたか。アリストテレス・ヒューム・ミル・パースの原典から、四つの推論の形を、何から何へ推すかと、どこで止まるかで並べる。類推は三つの形の分け方に自分だけの席を持たないが、帰納の隣・経験からの推論の土台・帰納の弱い形・三つの組み合わせとして、どこにも入り込んでいる（工事中）。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の問い」「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>推論とは</h1>
+                <p class="reader-subtitle">演繹・帰納・仮説と、類推の席</p>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/reasoning/READER-reasoning.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="creative-thinking.html">創造的思考とは</a> ・
+                <a href="peirce-love-abduction.html">パースの創造的な愛と、アブダクション</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

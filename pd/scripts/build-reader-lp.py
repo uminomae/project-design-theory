@@ -425,6 +425,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/reasoning/READER-reasoning.md",
+        ROOT / "scripts/reader-reasoning-template.html",
+        ROOT / "reader/reasoning.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/nondual/READER-nondual.md",
         ROOT / "scripts/reader-nondual-template.html",
         ROOT / "reader/nondual.html",
@@ -452,6 +458,12 @@ PAGES = [
         ROOT / "knowledge/research/metacognition/READER-metacognition.md",
         ROOT / "scripts/reader-metacognition-template.html",
         ROOT / "reader/metacognition.html",
+        "flow",
+    ),
+    (
+        ROOT / "knowledge/research/thinking/READER-thinking.md",
+        ROOT / "scripts/reader-thinking-template.html",
+        ROOT / "reader/thinking.html",
         "flow",
     ),
     (
