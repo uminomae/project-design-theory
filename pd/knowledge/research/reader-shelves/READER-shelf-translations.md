@@ -25,6 +25,7 @@
 - [マンデヴィル『蜂の寓話』（1714）の詩「ぶつぶつ言う蜂の巣」を、日本語で読む](mandeville-grumbling-hive-ja.html)
 - [ハミルトン「無条件者の哲学について」（1829）を、日本語で読む](hamilton-philosophy-of-the-unconditioned-ja.html)：マンセルが弁護し、ミルが批判した、ハミルトンの哲学の元の論文。「進化的な愛」の「ハミルトン卿に縛られた従僕たち」の段から。
 - [ヘルムホルツ『力の保存について』（1847）を、日本語で読む](helmholtz-erhaltung-der-kraft-ja.html)
+- [ヘラパス『数理物理学』（1847）の、気体の運動論の所を、日本語で読む](herapath-mathematical-physics-ja.html)：気体を、器の中で動き回ってぶつかる小さな粒子の集まりと見て、衝突から弾性（圧力）を、粒子の内部運動から熱と温度を導く所。「進化的な愛」の「ヘラパスが気体の運動論の輪郭を描いていた」の段から。
 - [クラウジウス「熱の動力について」（1850）を、日本語で読む](clausius-bewegende-kraft-der-warme-ja.html)
 - [ランキン「熱の力学的作用について」（1850）を、日本語で読む](rankine-mechanical-action-of-heat-ja.html)
 - [ハーシェル「ケトレーの確率論」（1850）を、日本語で読む](herschel-quetelet-probabilities-ja.html)

@@ -292,6 +292,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は herapath-1847-mathematical-physics.md（原文〔英語〕と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-herapath-mathematical-physics-ja.md",
+        ROOT / "scripts/reader-herapath-mathematical-physics-ja-template.html",
+        ROOT / "reader/herapath-mathematical-physics-ja.html",
+        "flow",
+    ),
+    (
         # 読む順のリンク集。鍵の文の対訳は william-james-*.md（原文と訳）から <!--JA-TEXT:…--> で差し込む（#189）
         ROOT / "knowledge/translations/READER-william-james-self-ja.md",
         ROOT / "scripts/reader-william-james-self-ja-template.html",
@@ -634,6 +641,15 @@ JA_CHAPTERS = {
         "¶14": "結婚の数と、宛名を書き忘れた手紙",
         "¶16": "統計の先へ：心の研究と自然の研究をつなぐ",
         "注19": "バックルの脚注",
+    },
+    "herapath-1847-mathematical-physics.md": {
+        "¶1": "第 I 編 §9・§10：衝撃が圧する力になることと、気体の理論",
+        "¶10": "第 II 編 §40〜§46：熱は粒子の内部運動で、温度はその度合い",
+        "¶33": "第 II 編 第 II 節：気体の法則（定義と一般の考察）",
+        "¶46": "命題 I〜IV：弾性・体積・温度・原子数",
+        "¶72": "注解：ボイルの法則・温度の目盛り・絶対的な寒さ",
+        "¶83": "命題 V〜VII：二つの気体と、混ぜた気体",
+        "¶105": "命題 VIII・IX：粒子の質量・数・速さと、比熱",
     },
     # ウィリアム・ジェームズの鍵の文（#189）。章の見出しは読む順のリンク集の正本 READER-william-james-self-ja.md に書く
     "william-james-1892-psychology-briefer-course.md": {},
