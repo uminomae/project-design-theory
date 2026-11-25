@@ -1883,7 +1883,295 @@ function mountEulerCompound(host) {
 }
 
 // ---- ディスパッチ ----
+// ============================================================
+// 交流回路のフェーザ（reader/ac-phasor.html）
+//   電圧の針（紺）と電流の針（赤）。ずれ phi は「電流が電圧より何度遅れるか」（負は進む）。
+//   電熱線・コイル・コンデンサがつくるずれ（−90〜90 度）に限る。図の値は山の高さを 1 にとった数。
+// ============================================================
+const phRad = d => d * Math.PI / 180;
+function phNorm(d) { return ((d + 180) % 360 + 360) % 360 - 180; }
+function phClamp(d) { return Math.max(-90, Math.min(90, Math.round(d / 5) * 5)); }
+function phLagText(phi) {
+    if (phi === 0) return 'と<b>そろっています</b>';
+    return phi > 0 ? 'より <b>' + phi + ' 度</b>遅れています' : 'より <b>' + (-phi) + ' 度</b>進んでいます';
+}
+// 左に円、右にグラフを置く割り付け（mountEulerShadow と同じ）
+function phGeom(view) {
+    const { W, H } = view;
+    const R = Math.min(H * 0.38, W * 0.17);
+    const cx = R * 1.35, cy = H / 2;
+    const gx0 = cx + R * 1.55, gx1 = W - 8;
+    return { cx, cy, R, gx0, gx1 };
+}
+function phCircle(ctx, P, cx, cy, R) {
+    ctx.strokeStyle = P.mid; ctx.lineWidth = 1.2;
+    ctx.beginPath(); ctx.moveTo(cx - R * 1.25, cy); ctx.lineTo(cx + R * 1.25, cy); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(cx, cy - R * 1.25); ctx.lineTo(cx, cy + R * 1.25); ctx.stroke();
+    ctx.strokeStyle = P.line; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.arc(cx, cy, R, 0, Math.PI * 2); ctx.stroke();
+}
+// 二本の針のあいだの角度の弧（a・b は数学の向きの角度・度）
+function phArc(ctx, P, cx, cy, r, a, b) {
+    if (Math.abs(a - b) < 0.5) return;
+    ctx.strokeStyle = P.gold; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.arc(cx, cy, r, -phRad(a), -phRad(b), b > a); ctx.stroke();
+}
+// 円の左側をクリックした角度（度）。右のグラフの上なら null
+function phClickDeg(view, ev) {
+    const rect = view.canvas.getBoundingClientRect();
+    const { cx, cy, R, gx0 } = phGeom(view);
+    const x = ev.clientX - rect.left, y = ev.clientY - rect.top;
+    if (x > gx0 - R * 0.2) return null;
+    if (Math.hypot(x - cx, y - cy) < R * 0.08) return null;
+    return Math.atan2(-(y - cy), x - cx) * 180 / Math.PI;
+}
+// 0〜maxd 度の横軸を持つグラフの枠
+function phGraphFrame(ctx, P, gx0, gx1, y0, unit, maxd, ticks) {
+    const gxp = d => gx0 + (gx1 - gx0) * d / maxd;
+    ctx.strokeStyle = P.mid; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(gx0, y0); ctx.lineTo(gx1, y0); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(gx0, y0 - unit * 1.15); ctx.lineTo(gx0, y0 + unit * 1.15); ctx.stroke();
+    ctx.fillStyle = P.mid; ctx.font = '11px sans-serif';
+    ticks.forEach(d => {
+        ctx.strokeStyle = P.faint; ctx.beginPath(); ctx.moveTo(gxp(d), y0 - unit * 1.15); ctx.lineTo(gxp(d), y0 + unit * 1.15); ctx.stroke();
+        ctx.textAlign = d === maxd ? 'right' : 'center';
+        if (gx1 - gx0 > 240 || d % 360 === 0) ctx.fillText(d + '°', gxp(d), y0 + 13);
+    });
+    ctx.textAlign = 'right'; ctx.fillText('1', gx0 - 4, y0 - unit + 4); ctx.fillText('−1', gx0 - 4, y0 + unit + 4);
+    return gxp;
+}
+function phWave(ctx, gxp, y0, unit, f, upto, color, width) {
+    ctx.strokeStyle = color; ctx.lineWidth = width; ctx.beginPath();
+    for (let d = 0; d <= upto + 0.01; d += 2) {
+        const dd = Math.min(d, upto);
+        const x = gxp(dd), y = y0 - f(dd) * unit;
+        d === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+}
+// 波と 0 の線のあいだを、0 より上と下で塗り分ける
+function phFill(ctx, gxp, y0, unit, f, maxd, posColor, negColor) {
+    [[posColor, v => Math.max(0, v), 0.22], [negColor, v => Math.min(0, v), 0.16]].forEach(([col, g, al]) => {
+        ctx.globalAlpha = al; ctx.fillStyle = col; ctx.beginPath(); ctx.moveTo(gxp(0), y0);
+        for (let d = 0; d <= maxd; d += 2) ctx.lineTo(gxp(d), y0 - g(f(d)) * unit);
+        ctx.lineTo(gxp(maxd), y0); ctx.closePath(); ctx.fill();
+    });
+    ctx.globalAlpha = 1;
+}
+function phDashed(ctx, x0, y0, x1, y1, color) {
+    ctx.setLineDash([4, 3]); ctx.strokeStyle = color; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.moveTo(x0, y0); ctx.lineTo(x1, y1); ctx.stroke();
+    ctx.setLineDash([]);
+}
+
+// 1) 電圧と電流を、同じ速さで回る二本の針で書く
+//    二本の針が同じ速さで回り、縦の影が右のグラフの二つの波を描く。円をクリックすると電流の針の向き（ずれ）を決める。
+function mountPhasorNeedles(host) {
+    const P = PAL();
+    const view = makeCanvas(host, 0.6);
+    const row = controls(host);
+    const MAXD = 720, IAMP = 0.75;
+    let th = 60, phi = 30;
+    autoPlay(host, row, { period: 9000, onFrame: p => { th = p * MAXD; draw(); } });
+    const row2 = controls(host);
+    button(row2, 'そろう（0 度）', () => { phi = 0; draw(); });
+    button(row2, '30 度遅れる', () => { phi = 30; draw(); });
+    button(row2, '90 度遅れる（コイル）', () => { phi = 90; draw(); });
+    button(row2, '90 度進む（コンデンサ）', () => { phi = -90; draw(); });
+    const st = status(host);
+    view.canvas.addEventListener('pointerdown', ev => {
+        const a = phClickDeg(view, ev);
+        if (a == null) return;
+        phi = phClamp(phNorm(th - a));
+        draw();
+    });
+    view.canvas.style.cursor = 'pointer';
+
+    function draw() {
+        const { ctx, W, H } = view;
+        ctx.clearRect(0, 0, W, H);
+        const { cx, cy, R, gx0, gx1 } = phGeom(view);
+        const av = phRad(th), ai = phRad(th - phi);
+        const vx = cx + R * Math.cos(av), vy = cy - R * Math.sin(av);
+        const ix = cx + R * IAMP * Math.cos(ai), iy = cy - R * IAMP * Math.sin(ai);
+        phCircle(ctx, P, cx, cy, R);
+        ctx.strokeStyle = P.faint; ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.arc(cx, cy, R * IAMP, 0, Math.PI * 2); ctx.stroke();
+        phArc(ctx, P, cx, cy, R * 0.3, th, th - phi);
+        // 縦の影（縦の軸の少し左が電圧、少し右が電流）
+        ctx.lineCap = 'round'; ctx.lineWidth = 5;
+        ctx.strokeStyle = P.navy; ctx.beginPath(); ctx.moveTo(cx - 4, cy); ctx.lineTo(cx - 4, vy); ctx.stroke();
+        ctx.strokeStyle = P.coral; ctx.beginPath(); ctx.moveTo(cx + 4, cy); ctx.lineTo(cx + 4, iy); ctx.stroke();
+        ctx.lineCap = 'butt';
+        drawArrow(ctx, cx, cy, vx, vy, P.navy, 2.5);
+        drawArrow(ctx, cx, cy, ix, iy, P.coral, 2.5);
+        // 右のグラフ
+        const unit = R;
+        const gxp = phGraphFrame(ctx, P, gx0, gx1, cy, unit, MAXD, [180, 360, 540, 720]);
+        const fv = d => Math.sin(phRad(d)), fi = d => IAMP * Math.sin(phRad(d - phi));
+        ctx.globalAlpha = 0.25;
+        phWave(ctx, gxp, cy, unit, fv, MAXD, P.navy, 1.5);
+        phWave(ctx, gxp, cy, unit, fi, MAXD, P.coral, 1.5);
+        ctx.globalAlpha = 1;
+        phWave(ctx, gxp, cy, unit, fv, th, P.navy, 2.2);
+        phWave(ctx, gxp, cy, unit, fi, th, P.coral, 2.2);
+        const xn = gxp(th);
+        ctx.setLineDash([3, 3]); ctx.lineWidth = 1; ctx.strokeStyle = P.mute;
+        ctx.beginPath(); ctx.moveTo(cx, vy); ctx.lineTo(xn, vy); ctx.moveTo(cx, iy); ctx.lineTo(xn, iy); ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.fillStyle = P.navy; ctx.beginPath(); ctx.arc(xn, vy, 4.5, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = P.coral; ctx.beginPath(); ctx.arc(xn, iy, 4.5, 0, Math.PI * 2); ctx.fill();
+        ctx.font = '12px sans-serif'; ctx.textAlign = 'left';
+        ctx.fillStyle = P.navy; ctx.fillText('電圧', gx0 + 6, cy - unit * 1.15 + 2);
+        ctx.fillStyle = P.coral; ctx.fillText('電流', gx0 + 36, cy - unit * 1.15 + 2);
+
+        let msg = '電流の針（赤）は、電圧の針（紺）' + phLagText(phi) + '。';
+        msg += '二本は同じ速さで回るので、回っても、このずれは変わりません。';
+        if (phi > 0) msg += '波で見ると、電流の山は、電圧の山より ' + phi + ' 度ぶん遅れて来ます。';
+        else if (phi < 0) msg += '波で見ると、電流の山は、電圧の山より ' + (-phi) + ' 度ぶん先に来ます。';
+        else msg += '波で見ると、電流の山と電圧の山は同じ時に来ます。';
+        msg += ' 円をクリックすると、電流の針の向きを選べます。';
+        st.innerHTML = msg;
+    }
+    view.canvas.setAttribute('aria-label', '左に、同じ速さで回る電圧の針（紺）と電流の針（赤）と、それぞれの縦の影。右に、回った角度を横にとって、二つの影の長さを並べた電圧の波と電流の波。針のあいだの角度が、二つの波のずれになり、回っても変わらない。');
+    view.onResize = draw;
+    draw();
+}
+
+// 2) 電圧と電流を掛けた電力の波と、その平均
+//    左は止めて描いた二本の針（フェーザ）。円をクリックするか、ボタンでずれを決める。
+//    右に電圧・電流（山の高さ 1）と、掛けた電力（金）、0 より上と下の塗り、平均の点線。平均は 0.5 × cos(ずれ)。
+function mountPhasorPower(host) {
+    const P = PAL();
+    const view = makeCanvas(host, 0.6);
+    const row = controls(host);
+    const MAXD = 720;
+    let phi = 0;
+    [0, 30, 60, 90].forEach(d => button(row, d === 0 ? 'ずれ 0 度' : d + ' 度遅れる', () => { phi = d; draw(); }));
+    const st = status(host);
+    view.canvas.addEventListener('pointerdown', ev => {
+        const a = phClickDeg(view, ev);
+        if (a == null) return;
+        phi = phClamp(phNorm(-a));
+        draw();
+    });
+    view.canvas.style.cursor = 'pointer';
+
+    function draw() {
+        const { ctx, W, H } = view;
+        ctx.clearRect(0, 0, W, H);
+        const { cx, cy, R, gx0, gx1 } = phGeom(view);
+        phCircle(ctx, P, cx, cy, R);
+        phArc(ctx, P, cx, cy, R * 0.3, 0, -phi);
+        drawArrow(ctx, cx, cy, cx + R, cy, P.navy, 2.5);
+        drawArrow(ctx, cx, cy, cx + R * Math.cos(phRad(-phi)), cy - R * Math.sin(phRad(-phi)), P.coral, 2.5);
+        ctx.fillStyle = P.mid; ctx.font = '11px sans-serif'; ctx.textAlign = 'center';
+        ctx.fillText('止めて描いた針', cx, cy + R * 1.25 + 12);
+        const unit = R;
+        const gxp = phGraphFrame(ctx, P, gx0, gx1, cy, unit, MAXD, [180, 360, 540, 720]);
+        const fv = d => Math.sin(phRad(d)), fi = d => Math.sin(phRad(d - phi)), fp = d => fv(d) * fi(d);
+        phFill(ctx, gxp, cy, unit, fp, MAXD, P.gold, P.coral);
+        ctx.globalAlpha = 0.5;
+        phWave(ctx, gxp, cy, unit, fv, MAXD, P.navy, 1.2);
+        phWave(ctx, gxp, cy, unit, fi, MAXD, P.coral, 1.2);
+        ctx.globalAlpha = 1;
+        phWave(ctx, gxp, cy, unit, fp, MAXD, P.gold, 2.6);
+        const avg = 0.5 * Math.cos(phRad(phi));
+        phDashed(ctx, gx0, cy - avg * unit, gx1, cy - avg * unit, P.gold);
+        ctx.font = '12px sans-serif'; ctx.textAlign = 'right'; ctx.fillStyle = P.gold;
+        ctx.fillText('平均 ' + ftaNum(avg), gx1, cy - avg * unit - 5);
+        ctx.textAlign = 'left';
+        ctx.fillStyle = P.navy; ctx.fillText('電圧', gx0 + 6, cy - unit * 1.15 + 2);
+        ctx.fillStyle = P.coral; ctx.fillText('電流', gx0 + 36, cy - unit * 1.15 + 2);
+        ctx.fillStyle = P.gold; ctx.fillText('電力', gx0 + 66, cy - unit * 1.15 + 2);
+
+        let msg = '電流の針は、電圧の針' + phLagText(phi) + '。電力（金）は、電圧（紺）と電流（赤）を、一瞬ごとに掛けたものです。';
+        if (phi === 0) msg += '電圧と電流の符号がいつも同じなので、電力は 0 より下に行きません。平均は <b>0.5</b> です。';
+        else if (Math.abs(phi) === 90) msg += '電力は、0 より上の所と下の所が同じ大きさで、平均は <b>0</b> です。電気は行って戻るだけです。';
+        else msg += '電力が 0 より下に行く所がありますが、上の所のほうが大きく、平均は <b>' + ftaNum(avg) + '</b> です（ずれが 0 度なら 0.5）。';
+        msg += ' 左の円をクリックすると、電流の針の向きを選べます。';
+        st.innerHTML = msg;
+    }
+    view.canvas.setAttribute('aria-label', '左に、止めて描いた電圧の針（紺）と電流の針（赤）。右に、電圧と電流の波と、二つを一瞬ごとに掛けた電力の波（金）と、その平均の点線。ずれが 0 度なら電力は 0 より下に行かず平均 0.5、90 度なら上と下が同じ大きさで平均 0。');
+    view.onResize = draw;
+    draw();
+}
+
+// 3) 電流の針を、電圧にそろった分と直角な分に分ける
+//    左に二本の針と、電流の針の、電圧の向きへの影（金・そろった分）と直角な分（灰）。円をクリックするかボタンでずれを決める。
+//    右の上に「電圧 × そろった分」の電力（0 以上・平均は有効電力 0.5 cos）、下に「電圧 × 直角な分」の電力（平均 0・山の高さは無効電力 0.5 sin）。
+function mountPhasorSplit(host) {
+    const P = PAL();
+    const view = makeCanvas(host, 0.72);
+    const row = controls(host);
+    const MAXD = 720;
+    let phi = 60;
+    [0, 30, 60, 90].forEach(d => button(row, d === 0 ? 'ずれ 0 度' : d + ' 度遅れる', () => { phi = d; draw(); }));
+    const st = status(host);
+    view.canvas.addEventListener('pointerdown', ev => {
+        const a = phClickDeg(view, ev);
+        if (a == null) return;
+        phi = phClamp(phNorm(-a));
+        draw();
+    });
+    view.canvas.style.cursor = 'pointer';
+
+    function draw() {
+        const { ctx, W, H } = view;
+        ctx.clearRect(0, 0, W, H);
+        const { cx, cy, R, gx0, gx1 } = phGeom(view);
+        const c = Math.cos(phRad(phi)), s = Math.sin(phRad(phi));
+        phCircle(ctx, P, cx, cy, R);
+        // 分けた二本（そろった分は横、直角な分は縦）
+        const ax = cx + R * c, tipY = cy + R * s;
+        ctx.lineCap = 'round';
+        ctx.strokeStyle = P.gold; ctx.lineWidth = 7; ctx.globalAlpha = 0.85;
+        ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(ax, cy); ctx.stroke();
+        ctx.strokeStyle = P.mute; ctx.lineWidth = 7;
+        ctx.beginPath(); ctx.moveTo(ax, cy); ctx.lineTo(ax, tipY); ctx.stroke();
+        ctx.globalAlpha = 1; ctx.lineCap = 'butt';
+        if (Math.abs(s) > 0.08 && c > 0.08) {
+            const q = Math.min(8, R * 0.12), sg = s > 0 ? 1 : -1;
+            ctx.strokeStyle = P.mid; ctx.lineWidth = 1;
+            ctx.beginPath(); ctx.moveTo(ax - q, cy); ctx.lineTo(ax - q, cy + sg * q); ctx.lineTo(ax, cy + sg * q); ctx.stroke();
+        }
+        drawArrow(ctx, cx, cy, cx + R, cy, P.navy, 2);
+        drawArrow(ctx, cx, cy, cx + R * c, tipY, P.coral, 2.5);
+        ctx.font = '11px sans-serif'; ctx.textAlign = 'center';
+        ctx.fillStyle = P.gold; ctx.fillText('そろった分', cx + R * 0.5, cy - 8);
+        if (Math.abs(s) > 0.15) { ctx.fillStyle = P.mid; ctx.textAlign = 'left'; ctx.fillText('直角な分', ax + 6, cy + R * s * 0.55); }
+        // 右の二つのグラフ
+        const unit = H * 0.18;
+        const y1 = H * 0.29, y2 = H * 0.75;
+        const fa = d => c * Math.sin(phRad(d)) ** 2;                               // 電圧 × そろった分
+        const fq = d => Math.sin(phRad(d)) * s * Math.sin(phRad(d - 90));        // 電圧 × 直角な分
+        [[y1, fa, P.gold, 0.5 * c], [y2, fq, P.mute, 0]].forEach(([y0, f, col, avg]) => {
+            const gxp = phGraphFrame(ctx, P, gx0, gx1, y0, unit, MAXD, [360, 720]);
+            phFill(ctx, gxp, y0, unit, f, MAXD, P.gold, P.coral);
+            phWave(ctx, gxp, y0, unit, f, MAXD, col, 2.4);
+            phDashed(ctx, gx0, y0 - avg * unit, gx1, y0 - avg * unit, P.gold);
+        });
+        const Pw = 0.5 * c, Q = 0.5 * Math.abs(s);
+        ctx.font = '12px sans-serif'; ctx.textAlign = 'left';
+        const mw = gx1 - gx0 - 10;
+        ctx.fillStyle = P.gold; ctx.fillText('電圧 × そろった分：平均 ' + ftaNum(Pw), gx0 + 6, y1 - unit * 1.15 + 2, mw);
+        ctx.fillStyle = P.mid; ctx.fillText('電圧 × 直角な分：平均 0・山 ' + ftaNum(Q), gx0 + 6, y2 - unit * 1.15 + 2, mw);
+
+        let msg = '電流の針は、電圧の針' + phLagText(phi) + '。電流の針（赤・長さ 1）は、電圧にそろった分（金・長さ <b>' + ftaNum(c) + '</b>）と、電圧に直角な分（灰・長さ <b>' + ftaNum(Math.abs(s)) + '</b>）を足したものです。';
+        msg += 'そろった分の電力は 0 より下に行かず、平均（有効電力）は <b>' + ftaNum(Pw) + '</b> です。';
+        msg += '直角な分の電力は行って戻るだけで、平均は 0、山の高さ（無効電力）は <b>' + ftaNum(Q) + '</b> です。';
+        msg += '力率は <b>' + ftaNum(c) + '</b> です。 左の円をクリックすると、電流の針の向きを選べます。';
+        st.innerHTML = msg;
+    }
+    view.canvas.setAttribute('aria-label', '左に、電圧の針（紺）と電流の針（赤）と、電流の針を電圧にそろった分（金）と直角な分（灰）に分けた二本。右の上に、電圧とそろった分を掛けた電力（0 より下に行かず、平均は有効電力）、右の下に、電圧と直角な分を掛けた電力（行って戻るだけで平均 0、山の高さは無効電力）。');
+    view.onResize = draw;
+    draw();
+}
+
 const MOUNTS = {
+    'phasor-needles': mountPhasorNeedles,
+    'phasor-power': mountPhasorPower,
+    'phasor-split': mountPhasorSplit,
     'fta-square-plus-one': mountFtaSquarePlusOne,
     'fta-roots-of-unity': mountFtaRootsOfUnity,
     'euler-repeat': mountEulerRepeat,
