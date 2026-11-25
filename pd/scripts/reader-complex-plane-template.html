@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/complex-plane.html を直接編集しないでください。
+  正本:   knowledge/research/complex-plane/READER-complex-plane.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「複素平面で考える」のページです（工事中）。複素数の掛け算は「伸ばして、回す」こと、という芯を短く置き、その回る掛け算が主役になる有名な数学十五を、名前・何をしているか・数直線だと見えないことの表で並べる目次。独立ページはまだ無く、どの枠も工事中。独立ページができるたびに、ここからリンクする。
+  表の一行の説明は、教科書にある数学の事実の要約で、Claude が書いた。人の意識への当てはめは、このページには書かず、探索の記録 pd/knowledge/research/julia-potential/EXPLORE-formulas-consciousness-20261125.md を指すだけ。
+  pjdhiro 本人の言葉は「pjdhiro の見方：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>複素平面で考える | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/complex-plane.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="複素数の掛け算は「伸ばして、回す」こと。数直線の上の掛け算は、伸ばすか裏返すかしかできない。この回る掛け算が主役になる有名な数学十五（オイラーの式・代数学の基本定理・マンデルブロ集合・フーリエ変換・リーマンのゼータ関数・等角写像・量子力学の波動関数・留数定理・四元数・リーマン面・ポアンカレの円板・ニュートン法のフラクタル・ラプラス変換と z 変換・交流のフェーザ・ガウス整数）を並べ、一つずつ独立したページにしていく目次（工事中）。">
+    <meta property="og:title" content="複素平面で考える">
+    <meta property="og:description" content="複素数の掛け算は「伸ばして、回す」こと。数直線の上の掛け算は、伸ばすか裏返すかしかできない。この回る掛け算が主役になる有名な数学十五（オイラーの式・代数学の基本定理・マンデルブロ集合・フーリエ変換・リーマンのゼータ関数・等角写像・量子力学の波動関数・留数定理・四元数・リーマン面・ポアンカレの円板・ニュートン法のフラクタル・ラプラス変換と z 変換・交流のフェーザ・ガウス整数）を並べ、一つずつ独立したページにしていく目次（工事中）。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/complex-plane.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="複素平面で考える">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-25">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "複素平面で考える",
+          "description": "複素数の掛け算は「伸ばして、回す」こと。数直線の上の掛け算は、伸ばすか裏返すかしかできない。この回る掛け算が主役になる有名な数学十五（オイラーの式・代数学の基本定理・マンデルブロ集合・フーリエ変換・リーマンのゼータ関数・等角写像・量子力学の波動関数・留数定理・四元数・リーマン面・ポアンカレの円板・ニュートン法のフラクタル・ラプラス変換と z 変換・交流のフェーザ・ガウス整数）を並べ、一つずつ独立したページにしていく目次（工事中）。",
+          "keywords": "複素数, 複素平面, 回転, 掛け算, 数直線, オイラーの式, 代数学の基本定理, マンデルブロ集合, フーリエ変換, リーマンのゼータ関数, 等角写像, 波動関数, 留数定理, 四元数, リーマン面, ポアンカレの円板, ニュートン法, ラプラス変換, z 変換, フェーザ, ガウス整数, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/complex-plane.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/complex-plane.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-25",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "複素数"}, {"@type": "Thing", "name": "複素平面"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方の言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「複素平面で考える」のページです（工事中）。複素数の掛け算は「伸ばして、回す」こと。数直線の上の掛け算は、伸ばすか裏返すかしかできない。この回る掛け算が主役になる有名な数学十五（オイラーの式・代数学の基本定理・マンデルブロ集合・フーリエ変換・リーマンのゼータ関数・等角写像・量子力学の波動関数・留数定理・四元数・リーマン面・ポアンカレの円板・ニュートン法のフラクタル・ラプラス変換と z 変換・交流のフェーザ・ガウス整数）を並べ、一つずつ独立したページにしていく目次（工事中）。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>複素平面で考える</h1>
+                <p class="reader-subtitle">伸ばして回す掛け算が主役の、十五の数学</p>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/complex-plane/READER-complex-plane.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="rotation-multiplication.html">回転の掛け算</a> ・
+                <a href="julia-potential.html">起業家の漸化式と、ジュリア集合</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

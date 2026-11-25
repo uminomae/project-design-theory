@@ -407,6 +407,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/complex-plane/READER-complex-plane.md",
+        ROOT / "scripts/reader-complex-plane-template.html",
+        ROOT / "reader/complex-plane.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/nondual/READER-nondual.md",
         ROOT / "scripts/reader-nondual-template.html",
         ROOT / "reader/nondual.html",
