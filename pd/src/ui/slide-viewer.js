@@ -88,30 +88,46 @@ export function createSlideViewer({ container, pageIndicator, prevBtn, nextBtn }
     }
 
     let preloadPromise = null;
+    let docUrl = null;
+    let promiseUrl = null;
 
+    // 言語を切り替えると、別の PDF（日本語・英語）を読み直す。前の PDF は閉じる。
     async function preload(url) {
-        if (pdfDoc) return true;
-        if (preloadPromise) return preloadPromise;
+        if (pdfDoc && docUrl === url) return true;
+        if (preloadPromise && promiseUrl === url) return preloadPromise;
 
-        preloadPromise = (async () => {
+        if (pdfDoc && docUrl !== url) {
+            pdfDoc.destroy();
+            pdfDoc = null;
+            docUrl = null;
+            totalPages = 0;
+        }
+
+        promiseUrl = url;
+        const promise = (async () => {
             try {
                 const lib = await loadPdfJs();
                 const doc = await lib.getDocument(url).promise;
-                if (!preloadPromise) {
+                if (promiseUrl !== url) {
                     doc.destroy();
                     return false;
                 }
                 pdfDoc = doc;
+                docUrl = url;
                 totalPages = pdfDoc.numPages;
                 return true;
             } catch (error) {
                 console.warn('PDF preload failed:', error);
-                preloadPromise = null;
+                if (promiseUrl === url) {
+                    preloadPromise = null;
+                    promiseUrl = null;
+                }
                 return false;
             }
         })();
+        preloadPromise = promise;
 
-        return preloadPromise;
+        return promise;
     }
 
     async function load(url) {
@@ -159,6 +175,8 @@ export function createSlideViewer({ container, pageIndicator, prevBtn, nextBtn }
         totalPages = 0;
         pendingPage = null;
         preloadPromise = null;
+        promiseUrl = null;
+        docUrl = null;
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         pageIndicator.textContent = '';
     }
