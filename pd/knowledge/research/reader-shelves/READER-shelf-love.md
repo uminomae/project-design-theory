@@ -4,7 +4,7 @@
 
 <p class="reader-lead"><span class="reader-lead__label">問い</span>Love と呼ばれてきたものや、美しさ、新しい考えが生まれることを、どんな見方で見ることができるでしょうか。</p>
 
-このページは、Love と愛、美、創造を一つずつ見る独立ページの並びです。多くは、[Love駆動開発と呼びたいもの](love-driven-dev.html)の章から呼んでいます。創造の五段階そのものは、[創造とは](../cs/)で見ます。
+このページは、Love と愛、美、創造を一つずつ見るモジュールの並びです。多くは、[Love駆動開発と呼びたいもの](love-driven-dev.html)の章から呼んでいます。創造の五段階そのものは、[創造とは](../cs/)で見ます。
 
 ほかの並びは、[心の動きを見るページ](shelf-mind.html)・[数と組織を見るページ](shelf-number-org.html)・[原典を日本語で読む](shelf-translations.html)です。
 
