@@ -320,6 +320,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は weismann-1886-significance-of-sexual-reproduction.md（原文〔英訳 1889〕と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-weismann-significance-of-sexual-reproduction-ja.md",
+        ROOT / "scripts/reader-weismann-significance-of-sexual-reproduction-ja-template.html",
+        ROOT / "reader/weismann-significance-of-sexual-reproduction-ja.html",
+        "flow",
+    ),
+    (
         # 読む順のリンク集。鍵の文の対訳は william-james-*.md（原文と訳）から <!--JA-TEXT:…--> で差し込む（#189）
         ROOT / "knowledge/translations/READER-william-james-self-ja.md",
         ROOT / "scripts/reader-william-james-self-ja-template.html",
@@ -727,6 +734,24 @@ JA_CHAPTERS = {
         "¶194": "フーリエの線形の熱の運動",
         "¶209": "三次元の周期的な源と、調和の解",
         "注1": "トムソンの脚注",
+    },
+    "weismann-1886-significance-of-sexual-reproduction.md": {
+        "¶1": "論文の題と序文、目次",
+        "¶10": "自然選択なしで済ませられるか、ネーゲリの内的な原因による変形",
+        "¶28": "適応の重さと、クジラの体のつくり",
+        "¶37": "変形は最も小さな段階で、個体の変異性の上に起こる",
+        "¶42": "生殖質の連続と、獲得形質は伝わらないこと",
+        "¶51": "ネーゲリとジョルダンの実験、生殖質は変わりにくい",
+        "¶60": "個体の変異の源は有性生殖にある",
+        "¶68": "無性生殖では自然選択がはたらかない",
+        "¶78": "単細胞の生物での変異性の起こり",
+        "¶83": "有性生殖は組み合わせを生む",
+        "¶91": "有性生殖のはじまりと、若返りの説への異論",
+        "¶101": "接合のもとの意味と、遺伝による有性生殖の保持",
+        "¶109": "単為生殖で有性生殖が失われることと、その帰結",
+        "¶114": "使われない器官と、パンミクシア",
+        "¶121": "結びの考察",
+        "注1": "ヴァイスマンと編者の脚注",
     },
     # ウィリアム・ジェームズの鍵の文（#189）。章の見出しは読む順のリンク集の正本 READER-william-james-self-ja.md に書く
     "william-james-1892-psychology-briefer-course.md": {},

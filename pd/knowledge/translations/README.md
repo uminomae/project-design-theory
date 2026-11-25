@@ -56,6 +56,7 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | `herapath-1847-mathematical-physics.md` | John Herapath, *Mathematical Physics; or the Mathematical Principles of Natural Philosophy*, vol. 1, London: Whittaker and Co., 1847, pp.12–17・212–220・236–265 | 本の抜きの訳（2026-11-25・#175）。三か所、146 段（脚注は無い）：第 I 編 §9〜§10（衝撃の積み重ねが圧する力になることと気体の理論）、第 II 編 §40〜§46（熱は粒子の内部運動で、温度はその度合い）、第 II 編 第 II 節「Of the Laws of Gaseous Bodies」の全部（定義・命題 I〜IX・注解）。パースは章も頁も挙げず、気体の運動論を述べる所が目次で三か所に分かれるので、案を pjdhiro に示して三か所とも訳すことにした。第 1 巻は Internet Archive にも文字起こしにも無いので、Google Books のハーバード大学図書館の写し（`id=nH0tAAAAYAAJ`・p.N＝`pg=PAN`）の頁の画像から、読む役九つが起こして訳の案を付け、照らす役九つが段ごとに照らし（式は前後から計算して確かめた）、Claude がつないで入れた。誌面のまま置いたもの（p.14 の as long we please ほか）は訳注に書いた。人の校閲はまだ。1893 の ¶20 が「イギリスの化学者ジョン・ヘラパス博士は、1847 年にその『数理物理学』の中で気体の運動論の輪郭を描いていた」と書く。ページ `pd/reader/herapath-mathematical-physics-ja.html` |
 | `draper-1863-history-of-intellectual-development-of-europe.md` | John William Draper, *History of the Intellectual Development of Europe*, New York: Harper, 1863。原文は初版の本文の英国の刷り（London: Bell and Daldy, 1864）第 1 巻の第 10 章 pp.298–315 | 本の抜きの訳（2026-11-25・#175）。第 10 章「ヨーロッパの信仰の時代：東方の信仰の時代」の全文 25 段と、目次の章の要約（脚注は無い）。キリスト教の異教化、教父主義、テオドシウスの施策、テオフィロスによるアレクサンドリアのセラピオンと図書館の破壊、ヒュパティアの殺害、アレクサンドリアの学問の抑圧まで。パースが章を名指す。第 4 版（1866）は語を少し直しているので、初版の本文を訳すことにし、版の選び方は pjdhiro にボタンで示して決めた。1863 年の刷りの開いた走査が見つからないので、1864 年の刷りの走査（IA `bub_gb_lsdyKsjXFkkC`・p = n − 17）の OCR を下敷きに、読む役四つが十八頁を画像と照らして起こし訳の案を付け、照らす役四つが段ごとに照らし、Claude がつないで入れた。欄外の見出し 33 本は段の頭に置いた。人の校閲はまだ。1893 の ¶35 が、テオフィロスによるアレクサンドリアの大図書館の破壊に注63 を付け、「ドレイパーの『知的発展の歴史』第10章を見よ」と書く。ページ `pd/reader/draper-intellectual-development-ja.html` |
 | `thomson-1880-heat.md` | William Thomson, "Heat", *The Encyclopædia Britannica*, 9th ed., vol. XI, Edinburgh: A. & C. Black, 1880, pp.554–589（英語・36 頁） | 全文の訳（2026-11-25・#175）。題と序・§1〜§83・表 I〜X・数学の付録 I〜XVII、212 段・脚注 50。事典の一つの項なので全文を訳した。熱の感覚と潜熱、熱量測定、熱の本性とジュールの熱の動力学的当量、温度計と熱力学的な絶対温度の目盛り、熱の伝導・放射・拡散率、熱の性質の表、熱の伝わりの方程式の付録。文字起こしが無いので、走査（IA `in.ernet.dli.2015.208654`・p = n − 28）の OCR を下敷きに、読む役が二段組の段ごとに切った画像と照らして起こし訳の案を付け、照らす役が段ごとに照らし、式は前後から計算して確かめ、Claude がつないで入れた。pp.557–558・575 は原文を書き出すと API の出力の絞り込みで止められたので、OCR の文字を下書きにして食い違う所だけを直した。誌面の誤りと見た式や数は直さずに訳注に書いた。人の校閲はまだ。1893 の注64 が「トムソン自身、この項でクラウジウスの名を一度も挙げていない」と書く。全文を確かめると名は四か所（p.570 の欄外の注・p.579 の §76・p.586 の表 VIII と表 IX の典拠）に出て、§8・§9 の熱の動力学的理論の歩みの所には出ない（正本の頭）。ページ `pd/reader/thomson-heat-ja.html` |
+| `weismann-1886-significance-of-sexual-reproduction.md` | August Weismann, "The Significance of Sexual Reproduction in the Theory of Natural Selection"（独語 1886）。英訳は *Essays upon Heredity and Kindred Biological Problems*, ed. E. B. Poulton, S. Schönland, A. E. Shipley, Oxford: Clarendon Press, 1889, 第 V 論文 pp.251–297 | 序文と本文の全部の訳（2026-11-25・#175）。題・序文・目次・本文 132 段と脚注 23。付録 I〜VI（pp.298–332）は訳していない。パースは論文の名を挙げないので、二つの親からの遺伝の組み合わせが変異の源だと論じる論文として、目次と本文で確かめて案にし、pjdhiro がボタンで「第 5 論文の本文全部」「英訳 1889」を選んだ。文字起こしが無いので、OCR を下敷きに、読む役六つが全 47 頁を画像と照らして原文を起こし訳の案を付け、照らす役六つが段ごとに照らし、Claude がつないで訳語をそろえた。独語の原論文とは照らしていない。人の校閲はまだ。1893 の ¶21・注62 がヴァイスマンを挙げる。ページ `pd/reader/weismann-significance-of-sexual-reproduction-ja.html` |
 | `william-james-1892-psychology-briefer-course.md` | William James, *Psychology*（*Briefer Course*）, London: Macmillan, 1892, 第 12 章「The Self」 | 鍵の文の抜き 4 か所（2026-11-24・#189）。pp.176・216。走査の OCR から起こし、頁の柱で頁を決めた。人の校閲はまだ。ページ `pd/reader/william-james-self-ja.html`（読む順のリンク集。原文を訳の上に出す） |
 | `william-james-1890-consciousness-of-self.md` | William James, *The Principles of Psychology* vol.1, New York: Holt, 1890, 第 10 章「The Consciousness of Self」pp.291–401 | 鍵の文の抜き 17 か所（2026-11-24・#189）。York 大学の写しから取り、トロント大の走査の柱の頁と突き合わせた。人の校閲はまだ。ページは同じ |
 | `william-james-1890-stream-of-thought.md` | 同じ本の第 9 章「The Stream of Thought」pp.224–290 | 鍵の文の抜き 7 か所（2026-11-24・#189）。写しの誤り（if flows ほか）は走査の版に合わせた。人の校閲はまだ。ページは同じ |
@@ -383,6 +384,27 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | first member / second member | 左辺／右辺 | 式の |
 | harmonic solution / point-source / plane-source | 調和の解／点の源／面の源 | 数学の付録 |
 | marginal note | 欄外 | 原文と訳の段の頭に ［欄外：…］ で置いた |
+
+### ヴァイスマン：表
+
+「自然選択の理論における有性生殖の意味」（1886・英訳 1889）の訳語。
+
+| 原語 | 訳語 | 覚え書き |
+|---|---|---|
+| natural selection / selection | 自然選択／選択 | ダーウィン・ウォレスの表と同じ |
+| sexual reproduction / asexual reproduction / amphigonic reproduction / monogonic reproduction | 有性生殖／無性生殖／両性生殖／単性の生殖 | monogonic は amphigonic と対の語（訳注） |
+| germ-plasm / germ-cell / germ | 生殖質／生殖細胞／胚 | |
+| idioplasm | イディオプラズム | ネーゲリの語 |
+| heredity / hereditary tendency | 遺伝／遺伝の傾向 | |
+| variability / individual variability / individual difference / individual character | 変異性／個体の変異性／個体差／個体の形質 | |
+| acquired character | 獲得形質 | |
+| transformation（of species） | 変形 | |
+| development | 発生（個体・胚）／発展（生物界・系統） | |
+| parthenogenesis / conjugation / fertilization | 単為生殖／接合／受精 | |
+| rejuvenescence | 若返り | |
+| panmixia | パンミクシア | |
+| heterogeny | ヘテロゴニー | |
+| Nägeli / Darwin / van Beneden / Hensen / Rolph | ネーゲリ／ダーウィン／ヴァン・ベネーデン／ヘンゼン／ロルフ | |
 
 ### マクスウェル：表
 
