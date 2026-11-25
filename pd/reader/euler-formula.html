@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/euler-formula.html を直接編集しないでください。
+  正本:   knowledge/research/euler-formula/READER-euler-formula.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「オイラーの式」のページです（工事中）。目次「複素平面で考える」（reader/complex-plane.html）の表の 1 にあたる独立ページ。芯は三つ：数直線の上で同じ数を掛け続けると大きさが変わるか裏返るだけだが、平面では 0 からの距離が 1 の数は掛け続けても大きくならずに同じ角度ずつ回り続けること。円の上を回る点の影の長さ（cos θ・sin θ）が波を描くこと。e^{iθ} = cos θ + i sin θ は、半径 1 の円の上を 1 から道のり θ だけ回った点を指数の形で書いたもので、θ = π で e^{iπ} + 1 = 0 になり、e・π・i・1・0 が一度ずつ出ること。指数は「同じ数を何回掛けるか」、cos と sin は「円の上の点の影の長さ」から入り、指数の決まり（掛けると指数が足される）と回る数の掛け算（掛けると角度が足される）が同じ形であることを本文に置く。e の決め方（1 + x/n を n 回掛ける）と、e のときだけ回る角度が道のりと合うことは、結果と図を本文に、導き方を畳みに置いた。説明は微積分を使わず中学の数学で読める言葉で書き、pjdhiro が複素平面の何に惹かれているのかは決めずに置く。図は三つ（src/reader-microworlds.js の euler-repeat・euler-shadow・euler-compound）。
+  数学の説明は教科書にある事実の要約で、Claude が書いた。人の意識への当てはめは、このページには書かず、探索の記録 pd/knowledge/research/julia-potential/EXPLORE-formulas-consciousness-20261125.md の節「i を掛けること（90 度の回転）と、i² = −1」と「指数関数と対数関数（オイラーの式・対数らせん・log の多価）」を一文で指すだけ。
+  pjdhiro 本人の言葉は「pjdhiro の見方：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オイラーの式 | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/euler-formula.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="数直線の上で同じ数を掛け続けると、大きさが変わるか裏返るだけだが、平面では 0 からの距離が 1 の数を掛け続けると、大きくならずに同じ角度ずつ回り続ける。円の上を回る点の影（cos θ と sin θ）は波を描く。オイラーの式 e^{iθ} = cos θ + i sin θ は、半径 1 の円の上を道のり θ だけ回った点を指数の形で書いたもので、θ = π で e^{iπ} + 1 = 0 になり、e・π・i・1・0 が一度ずつ出る。微積分を使わず、中学の数学で読める言葉で説明する（工事中）。">
+    <meta property="og:title" content="オイラーの式">
+    <meta property="og:description" content="数直線の上で同じ数を掛け続けると、大きさが変わるか裏返るだけだが、平面では 0 からの距離が 1 の数を掛け続けると、大きくならずに同じ角度ずつ回り続ける。円の上を回る点の影（cos θ と sin θ）は波を描く。オイラーの式 e^{iθ} = cos θ + i sin θ は、半径 1 の円の上を道のり θ だけ回った点を指数の形で書いたもので、θ = π で e^{iπ} + 1 = 0 になり、e・π・i・1・0 が一度ずつ出る。微積分を使わず、中学の数学で読める言葉で説明する（工事中）。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/euler-formula.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="オイラーの式">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-25">
+    <meta property="article:modified_time" content="2026-11-25">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "オイラーの式",
+          "description": "数直線の上で同じ数を掛け続けると、大きさが変わるか裏返るだけだが、平面では 0 からの距離が 1 の数を掛け続けると、大きくならずに同じ角度ずつ回り続ける。円の上を回る点の影（cos θ と sin θ）は波を描く。オイラーの式 e^{iθ} = cos θ + i sin θ は、半径 1 の円の上を道のり θ だけ回った点を指数の形で書いたもので、θ = π で e^{iπ} + 1 = 0 になり、e・π・i・1・0 が一度ずつ出る。微積分を使わず、中学の数学で読める言葉で説明する（工事中）。",
+          "keywords": "オイラーの式, オイラーの等式, 複素数, 複素平面, 指数, 三角関数, cos, sin, 波, 回転, 単位円, 数直線, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/euler-formula.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/euler-formula.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-25",
+          "dateModified": "2026-11-25",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "オイラーの式"}, {"@type": "Thing", "name": "複素数"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方の言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「オイラーの式」のページです（工事中）。数直線の上で同じ数を掛け続けると、大きさが変わるか裏返るだけだが、平面では 0 からの距離が 1 の数を掛け続けると、大きくならずに同じ角度ずつ回り続ける。円の上を回る点の影（cos θ と sin θ）は波を描く。オイラーの式 e^{iθ} = cos θ + i sin θ は、半径 1 の円の上を道のり θ だけ回った点を指数の形で書いたもので、θ = π で e^{iπ} + 1 = 0 になり、e・π・i・1・0 が一度ずつ出る。微積分を使わず、中学の数学で読める言葉で説明する。目次「複素平面で考える」の独立ページの一つ。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>オイラーの式</h1>
+                <p class="reader-subtitle">掛け続けると回る数と、その影がつくる波</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-25 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/euler-formula/READER-euler-formula.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<div class="reader-lead glow-card" id="eu-gist"><span class="reader-lead__label">ざっくりいうと</span>
+<p>数直線の上で同じ数を掛け続けると、数は大きくなっていくか、0 に近づいていくか、0 をはさんで行き来するかのどれかです。数を平面まで広げると、0 からの距離が 1 の数は、掛け続けても大きくも小さくもならず、同じ角度ずつ回り続けます。</p>
+<p>回る点の影を、横の軸と縦の軸に落とすと、影の長さは行ったり来たりして、波の形を描きます。この二つの影の長さが cos θ と sin θ です。オイラーの式 e<sup>iθ</sup> = cos θ + i sin θ は、半径 1 の円の上を道のり θ だけ回った点を、指数の形で書いたものです。θ を半周の π にすると e<sup>iπ</sup> = −1 になり、1 を足すと 0 になります。この e<sup>iπ</sup> + 1 = 0 には、e・π・i・1・0 が一度ずつ出てきます。</p>
+<p>このページで働いているもの：掛け続けても大きくならずに回ること。回る点の影が、波になること。</p>
+</div>
+
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p>このページは、pjdhiro の頼みに、Claude が調べて答える形で作っています。複素平面の数式を人の意識に照らしていた対話の中で、pjdhiro はこう言いました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>一次元の数直線的な思考を止めたい。</p>
+</blockquote>
+<p>オイラーの式は、数直線の上の掛け算では起きないことを、一つの式で見せる数学です。数直線の上で同じ数を掛け続けると、大きさが変わるか、向きが裏返るかです。平面では、大きさを変えずに回り続けることができます。その回る点の影は、波になります。</p>
+<p>説明は、中学の数学で読める言葉で書きます。指数は「同じ数を何回掛けるか」から、cos と sin は「円の上の点の影の長さ」から入ります。e の決め方のように微積分の要る所は、結果と図だけを本文に置き、導き方は畳みに置きます。</p>
+<div class="reader-lead"><span class="reader-lead__label">構成</span>
+<ul class="reader-lead__list">
+<li><b><a href="#eu-turn">同じ数を掛け続けると、回り続けることがある</a></b>：距離 1 の数は、掛けても伸び縮みせずに回る</li>
+<li><b><a href="#eu-wave">回る点の影は、波になる</a></b>：cos と sin は、円の上の点の影の長さ</li>
+<li><b><a href="#eu-formula">角度を指数に置く、オイラーの式</a></b>：e<sup>iθ</sup> は、円の上を道のり θ だけ回った点</li>
+<li><b><a href="#eu-identity">半周回ると −1、1 を足すと 0</a></b>：e<sup>iπ</sup> + 1 = 0 の五つの数</li>
+<li><b><a href="#eu-more">このあとに読むもの</a></b>：意識に照らした探索と、ほかの数学</li>
+</ul>
+</div>
+
+<details class="sec" id="同じ数を掛け続けると回り続けることがある" open><summary>同じ数を掛け続けると、回り続けることがある</summary><div class="secbody">
+
+
+<p><a id="eu-turn"></a>2³ は、2 を 3 回掛けた数で、2 × 2 × 2 = 8 です。右上の小さな数（指数）は、同じ数を何回掛けるかを表します。</p>
+<p>数直線の上で、1 に同じ数を掛け続けてみます。2 を掛け続けると、1、2、4、8 と大きくなっていきます。0.5 を掛け続けると、1、0.5、0.25 と 0 に近づいていきます。−1 を掛け続けると、1、−1、1、−1 と、0 をはさんで右と左を行き来します。数直線の上でできるのは、大きさを変えることと、向きを裏返すことだけです。</p>
+<p>数を平面まで広げると、掛け算は「伸ばして、回す」ことになります。0 からの距離が 2 の数を掛けると、距離が 2 倍に伸び、その数の角度だけ回ります。0 からの距離が 1 の数を掛けると、伸びも縮みもせずに、回るだけです。i を掛けると 90 度回ることは、読み物「<a href="rotation-multiplication.html">回転の掛け算</a>」で、数直線から一歩ずつ説明しています。</p>
+<p>0 からの距離が 1 で、角度が 30 度の数を、1 に掛け続けてみます。点は、半径 1 の円の上を 30 度ずつ回ります。12 回掛けると、合わせて 360 度回って、1 に戻ります。何回掛けても、点は円の外へも内へも出ません。同じ数を掛け続けても大きくならずに回り続けることは、数直線の上では起きません。</p>
+<p>下の図では、平面をクリックして掛ける数を決め、1 に何回も掛けていけます。</p>
+<div class="microworld glow-card" data-microworld="euler-repeat" role="group" aria-label="対話：同じ数を、1 に掛け続ける">
+<p class="mw-title">触ってみる — 同じ数を、1 に掛け続ける</p>
+<p class="mw-fallback">（この対話図は JavaScript で動きます。動かない環境では: 0 からの距離が 1 で角度が 30 度の数を 1 に掛け続けると、点は半径 1 の円の上を 30 度ずつ回り、12 回で 1 に戻ります。距離が 1.1 の数を掛け続けると、点は回りながら外へ広がっていきます。距離が 0.9 の数では、回りながら 0 へ寄っていきます。2 を掛け続けると、点は数直線の上を右へ進むだけです。）</p>
+</div>
+
+</div></details><details class="sec" id="回る点の影は波になる" open><summary>回る点の影は、波になる</summary><div class="secbody">
+
+
+<p><a id="eu-wave"></a>半径 1 の円の上の点に、真上から光を当てると、横の軸（数直線）に影が落ちます。真横から光を当てると、縦の軸に影が落ちます。点が 1 から角度 θ だけ回った所にあるとき、横の軸の影の長さを cos θ（コサイン・シータ）、縦の軸の影の長さを sin θ（サイン・シータ）と呼びます。影が 0 より左や下に落ちるときは、長さにマイナスを付けます。</p>
+<p>たとえば、θ が 0 度のとき、点は 1 にあり、横の影は 1、縦の影は 0 です。θ が 90 度のとき、点は i にあり、横の影は 0、縦の影は 1 です。θ が 180 度のとき、点は −1 にあり、横の影は −1、縦の影は 0 です。</p>
+<p>点が円の上を同じ速さで回り続けると、横の影は 1 と −1 のあいだを行ったり来たりします。縦の影も同じように行き来し、横の影より 90 度ぶん遅れて動きます。回った角度を横にとって、影の長さを並べていくと、波の形になります。この二つの波を、cos の波、sin の波と呼びます。</p>
+<p>横の影と縦の影は、長さ 1 の半径を斜めの辺とする直角三角形の、残りの二つの辺です。だから三平方の定理から、(cos θ)² + (sin θ)² = 1 です。</p>
+<div class="microworld glow-card" data-microworld="euler-shadow" role="group" aria-label="対話：円の上を回る点の影が、波を描く">
+<p class="mw-title">触ってみる — 円の上を回る点の影が、波を描く</p>
+<p class="mw-fallback">（この対話図は JavaScript で動きます。動かない環境では: 点が 1 から円の上を回り始めると、横の影（cos θ）は 1 から 0、−1、0、1 と行き来し、縦の影（sin θ）は 0 から 1、0、−1、0 と行き来します。回った角度を横にとって影の長さを並べると、二つの波になり、縦の影の波は、横の影の波より 90 度ぶん遅れています。）</p>
+</div>
+
+</div></details><details class="sec" id="角度を指数に置くオイラーの式" open><summary>角度を指数に置く、オイラーの式</summary><div class="secbody">
+
+
+<p><a id="eu-formula"></a>ここで、角度の測り方を一つ替えます。半径 1 の円の周の長さは 2π で、およそ 6.28 です。点が 1 から円の上を歩いた道のりで、回った角度を測ることにします。90 度は道のり π/2、半周の 180 度は道のり π、一周の 360 度は道のり 2π です。ここから先の θ は、この道のりで書きます。</p>
+<p>オイラーの式は、次の式です。</p>
+<p>e<sup>iθ</sup> = cos θ + i sin θ</p>
+
+<p>右側の cos θ + i sin θ は、横の影が cos θ、縦の影が sin θ の点です。つまり、半径 1 の円の上を、1 から道のり θ だけ回った点です。左側の e は、およそ 2.718 の数です。式は、その円の上の点を「e の iθ 乗」と書ける、と言っています。</p>
+<p>e の iθ 乗は、「e を iθ 回掛ける」とは読めません。それでも指数の形で書けるのは、指数の決まりと、回る数の掛け算とが、同じ形をしているからです。指数には、同じ数の累乗どうしを掛けると指数が足される、という決まりがあります。たとえば、2³ × 2² = 2⁵ です。回る数どうしを掛けると、角度が足されます。30 度回る数に 60 度回る数を掛けると、90 度回る数になります。オイラーの式の左側でも、e<sup>ia</sup> × e<sup>ib</sup> = e<sup>i(a + b)</sup> となり、回った道のりが指数の中で足されます。</p>
+<p>e がどんな数で、なぜ e のときに回る角度がちょうど道のり θ になるのかは、微積分を使って決めます。その結果は、次のように図で見られます。1 + iθ/n は、1 から真上にほんの少し（θ/n だけ）ずれた数で、0 からの距離はほとんど 1 です。この数を 1 に n 回掛けると、点は少しずつ回っていきます。n を大きくしていくと、行き着く先は、円の上の、道のり θ の点に近づいていきます。その点が e<sup>iθ</sup> です。</p>
+<div class="microworld glow-card" data-microworld="euler-compound" role="group" aria-label="対話：1 + iθ/n を n 回掛けると、円の上の道のり θ の点に近づく">
+<p class="mw-title">触ってみる — 1 + iθ/n を n 回掛けると、円の上の道のり θ の点に近づく</p>
+<p class="mw-fallback">（この対話図は JavaScript で動きます。動かない環境では: θ を半周の π にして、1 に 1 + iπ/n を n 回掛けます。n = 4 では行き着く先は −2.32 + 1.2i で、円の外にあります。n = 16 では −1.35 + 0.05i、n = 100 では −1.05 で、n を大きくするほど、円の上の −1 に近づきます。−1 が e<sup>iπ</sup> です。）</p>
+</div>
+
+<details class="acc"><summary>詳しく — e と、「1 + x/n を n 回掛ける」こと</summary>
+
+<p>e は、次のように決まる数です。1 + 1/n を n 回掛けます。n = 1 なら 2、n = 2 なら 1.5 × 1.5 = 2.25、n = 12 なら およそ 2.613、n = 100 なら およそ 2.705 です。n を大きくしていくと、この値は 2.71828… という一つの数に近づきます。その数が e です。1 年に 100% の利息が付く預金で、利息を n 回に分けて付けると、1 年後の額が元の何倍になるか、という計算と同じです。</p>
+<p>同じように、1 + x/n を n 回掛けて、n を大きくしていくと近づく数を、e<sup>x</sup> と書きます。x が 2 や 3 のときは、こうして決めた数が、e を 2 回・3 回掛けた数と同じになります。この決め方なら、x に iθ を入れることもできます。</p>
+<p>1 + iθ/n は、横が 1、縦が θ/n の点です。三平方の定理から、0 からの距離は 1 よりほんの少しだけ大きく、回る角度は、道のりでほぼ θ/n です。n 回掛けると、回る角度は足されて、ほぼ θ になります。距離は、1 よりほんの少し大きい数を n 回掛けたものですが、n を大きくすると 1 に近づきます。たとえば θ = π のとき、n = 100 で 1.05、n = 1000 で 1.005 です。だから行き着く先は、半径 1 の円の上の、道のり θ の点に近づきます。</p>
+<p>e 以外の数でも、同じように「数の iθ 乗」を決めると、円の上を回る点になります。ただし、回る角度は道のり θ とは合いません。たとえば 2 の iθ 乗は、道のりで θ のおよそ 0.69 倍だけ回ります。回る角度が道のり θ とちょうど合うのは、e のときだけです。</p>
+<p>教科書でよく使われる導き方は、e<sup>x</sup>、cos θ、sin θ を、x や θ の累乗を限りなく足していく式（べき級数）で書き、x に iθ を入れて見比べるものです。厳密に言うには、どちらの導き方でも、n を大きくしたときに近づく先がただ一つに決まること（極限）を確かめる道具が要ります。このページでは、その道具は使いません。</p>
+</details>
+
+</div></details><details class="sec" id="半周回ると-11-を足すと-0" open><summary>半周回ると −1、1 を足すと 0</summary><div class="secbody">
+
+
+<p><a id="eu-identity"></a>オイラーの式の θ に、半周の道のり π を入れます。円の上を 1 から半周回ると、点は −1 に着きます。横の影は −1、縦の影は 0 なので、cos π = −1、sin π = 0 です。だから e<sup>iπ</sup> = −1 です。両辺に 1 を足すと、次の式になります。この式は、オイラーの等式と呼ばれます。</p>
+<p>e<sup>iπ</sup> + 1 = 0</p>
+
+<p>上の図で「θ = π」をクリックすると、行き着く先が −1 に近づくのを見られます。この式には、次の五つの数が一度ずつ出てきます。</p>
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>数</th>
+<th>どんな数か</th>
+<th>この式の中でしていること</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>e</td>
+<td>およそ 2.718。1 + 1/n を n 回掛けて、n を大きくすると近づく数</td>
+<td>回る点を、指数の形で書く</td>
+</tr>
+<tr>
+<td>i</td>
+<td>2 回掛けると −1 になる数。掛けると 90 度回る</td>
+<td>指数の中で、伸びる代わりに回ることを表す</td>
+</tr>
+<tr>
+<td>π</td>
+<td>およそ 3.14。半径 1 の円の、半周の道のり</td>
+<td>回る道のり。半周</td>
+</tr>
+<tr>
+<td>1</td>
+<td>掛けても何も変えない数</td>
+<td>回り始める所。半周回って着いた −1 に、足す数</td>
+</tr>
+<tr>
+<td>0</td>
+<td>足しても何も変えない数</td>
+<td>足して行き着く所。円の中心</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+</div></details><details class="sec" id="このあとに読むもの" open><summary>このあとに読むもの</summary><div class="secbody">
+
+
+<p><a id="eu-more"></a>独立ページ「<a href="fundamental-theorem-of-algebra.html">代数学の基本定理</a>」で見た、z<sup>n</sup> = 1 の答え（円を n 等分する点）は、オイラーの式で e<sup>2πik/n</sup>（k = 0、1、…、n − 1）と書けます。</p>
+<p>数学者たちがオイラーの等式を美しいと呼んできたことと、その美しさを脳で測った研究は、読み物「<a href="beauty.html#bt-euler">美とは</a>」の章「数学者が、いちばん美しいと呼んできた式」にあります。</p>
+<p>i を掛けて 90 度回ることと、オイラーの式を、人の意識に照らして推論した探索は、記録「<a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/julia-potential/EXPLORE-formulas-consciousness-20261125.md">複素平面の数式ごとに、人の意識との構造の類似を推論する</a>」の節「i を掛けること（90 度の回転）と、i² = −1」と節「指数関数と対数関数（オイラーの式・対数らせん・log の多価）」にあります。</p>
+<p>複素数が関わるほかの数学は、目次「<a href="complex-plane.html">複素平面で考える</a>」に並べています。</p>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="complex-plane.html">複素平面で考える（目次）</a> ・
+                <a href="rotation-multiplication.html">回転の掛け算</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-microworlds.js"></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
