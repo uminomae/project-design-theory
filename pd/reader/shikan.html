@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/shikan.html を直接編集しないでください。
+  正本:   knowledge/research/shikan/READER-shikan.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「止観とは」のページです（工事中）。止観とは何か、どこから来た言葉で、pjdhiro はそれをどう行っているのか、という問いに、『増支部』2.31・4.170（パーリ語）、『雑阿含経』第 464 経、智顗『摩訶止観』巻第一上・巻第二上、『修習止観坐禅法要』、灌頂『隋天台智者大師別伝』、『六祖壇経』定慧第四、『臨済録』から答える。原典はどれも本文で照合し、LLM の学習時の知識から書いた所はそうと書いた。
+  原典と pjdhiro の止観を並べる段は Claude の読みで、pjdhiro に確かめていない。訳は Claude。
+  pjdhiro 本人の言葉は「pjdhiro の見方：」「pjdhiro のたとえ：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>止観とは | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/shikan.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="止観（止＝心を静めること・観＝ありのままに観ること）を、パーリ語の『増支部』と漢訳の『雑阿含経』の二つ一組の説き方、天台の智顗の『摩訶止観』（594 年の講義・灌頂の記録・三種止観・「法性寂然名止，寂而常照名觀」）と『天台小止観』の両輪、禅の『六祖壇経』の定慧一体と静けさへの戒めで原典からたどり、pjdhiro の止観（心を 0 にそろえて立った 1 を見に行く・静かな海面・心で指さす）を本人の言葉で置く独立ページ。">
+    <meta property="og:title" content="止観とは">
+    <meta property="og:description" content="止観（止＝心を静めること・観＝ありのままに観ること）を、パーリ語の『増支部』と漢訳の『雑阿含経』の二つ一組の説き方、天台の智顗の『摩訶止観』（594 年の講義・灌頂の記録・三種止観・「法性寂然名止，寂而常照名觀」）と『天台小止観』の両輪、禅の『六祖壇経』の定慧一体と静けさへの戒めで原典からたどり、pjdhiro の止観（心を 0 にそろえて立った 1 を見に行く・静かな海面・心で指さす）を本人の言葉で置く独立ページ。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/shikan.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="止観とは">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-25">
+    <meta property="article:modified_time" content="2026-11-25">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "止観とは",
+          "description": "止観（止＝心を静めること・観＝ありのままに観ること）を、パーリ語の『増支部』と漢訳の『雑阿含経』の二つ一組の説き方、天台の智顗の『摩訶止観』（594 年の講義・灌頂の記録・三種止観・「法性寂然名止，寂而常照名觀」）と『天台小止観』の両輪、禅の『六祖壇経』の定慧一体と静けさへの戒めで原典からたどり、pjdhiro の止観（心を 0 にそろえて立った 1 を見に行く・静かな海面・心で指さす）を本人の言葉で置く独立ページ。",
+          "keywords": "止観, 止, 観, samatha, vipassanā, 奢摩他, 毘婆舎那, 智顗, 天台, 摩訶止観, 天台小止観, 灌頂, 六祖壇経, 定慧一体, 臨済, 瞑想, bzero, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/shikan.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/shikan.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-25",
+          "dateModified": "2026-11-25",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "止観"}, {"@type": "Thing", "name": "瞑想"}, {"@type": "Thing", "name": "天台宗"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方の言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「止観とは」のページです（工事中）。止観（止＝心を静めること・観＝ありのままに観ること）を、パーリ語の『増支部』と漢訳の『雑阿含経』の二つ一組の説き方、天台の智顗の『摩訶止観』（594 年の講義・灌頂の記録・三種止観・「法性寂然名止，寂而常照名觀」）と『天台小止観』の両輪、禅の『六祖壇経』の定慧一体と静けさへの戒めで原典からたどり、pjdhiro の止観（心を 0 にそろえて立った 1 を見に行く・静かな海面・心で指さす）を本人の言葉で置く独立ページ。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」「pjdhiro のたとえ」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>止観とは</h1>
+                <p class="reader-subtitle">止と観の来歴と、pjdhiro の止観</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-25 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/shikan/READER-shikan.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<div class="reader-lead glow-card" id="sk-gist"><span class="reader-lead__label">ざっくりいうと</span>
+<p>止観は、心を静めること（止）と、ありのままに観ること（観）を、二つで一組にした仏教の修行です。古い経典にすでに二つ一組で説かれ、六世紀の中国で、天台宗の智顗が一つの体系にまとめました。</p>
+<p>pjdhiro は、この止観を自分の実践にしていて、メモリーを 0 で埋めるプログラムの関数にたとえます。このページは、止観という言葉の来歴を原典でたどり、そのあとで pjdhiro の止観を本人の言葉で置きます。</p>
+</div>
+
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p>このページは、pjdhiro の実践と見方に、Claude が調べて答える形で書いています。</p>
+<div class="reader-lead"><span class="reader-lead__label">問い</span>
+止観とは、何か。どこから来た言葉で、pjdhiro はそれをどう行っているのか。
+</div>
+
+<div class="reader-lead"><span class="reader-lead__label">今の答え</span>
+止は心の動きを静めること、観はものごとをありのままに観ることで、経典は二つを車の両輪のように一緒に修めるものとして説いてきました。天台の智顗は、594 年の講義『摩訶止観』で、これを修行の全体を貫く道としてまとめました。禅宗は別の宗ですが、静めることと観ることを分けない、という同じ形の言い方を持っています。pjdhiro の止観は、心を静かな海面のようにそろえ、そこに立つ小さな変化を、心で指さすように見に行く作業です。
+</div>
+
+<div class="reader-lead"><span class="reader-lead__label">構成</span>
+<ul class="reader-lead__list">
+<li><b><a href="#sk-sutta">経典は、止と観を二つで一組に説いた</a></b>：言葉の始まり</li>
+<li><b><a href="#sk-tiantai">天台の智顗が、止観を一つの体系にした</a></b>：『摩訶止観』と『天台小止観』</li>
+<li><b><a href="#sk-zen">禅も、静めることと観ることを分けない</a></b>：別の宗の、同じ形の言い方</li>
+<li><b><a href="#sk-pjdhiro">pjdhiro の止観は、0 にそろえて 1 を見に行く</a></b>：本人の言葉で</li>
+<li><b><a href="#sk-near">原典と並べると、どこが近いか</a></b>：0 は目当てでなく下地</li>
+</ul>
+</div>
+
+<p class="reader-lead"><span class="reader-lead__label">注意</span>経典の文は原文で読み、訳は Claude の訳です。止観の歴史は、ここに挙げた原典で確かめた所だけを書いていて、網羅していません。pjdhiro の止観は一人の実践の報告で、勧めるやり方として書いてはいません。</p>
+
+<details class="sec" id="経典は止と観を二つで一組に説いた"><summary>経典は、止と観を二つで一組に説いた</summary><div class="secbody">
+<p><a id="sk-sutta"></a>止観という言葉は、二つの語を合わせたものです。止は、心の動きを止めて静めること、観は、ものごとをありのままに観ることです。</p>
+<p>二つを一組にして説く形は、古い経典にすでにあります。パーリ語で伝わる経（上座部の仏教が伝えてきた経典）の『増支部』には、明らかな知に与る二つのものとして、samatha（静まり）と vipassanā（観ること）を並べる短い経があります。静まりを修めると心が育ち、貪りが捨てられる。観ることを修めると智慧が育ち、無明が捨てられる、と説きます。</p>
+<p>同じ『増支部』の別の経では、アーナンダが、悟りに至った人はみな四つの道のどれかを通った、と言います。静まりを先にして観ることを修める道、観ることを先にして静まりを修める道、二つを対にして（yuganaddha、くびきでつないで）修める道、そして、教えへの落ち着かなさにとらわれた心が、やがて内に静まる道です。</p>
+<p>漢訳の経典では、同じ二つが「止」と「観」の字で説かれています。『雑阿含経』の一つの経で、アーナンダに問われた長老は、静かな所で思惟するときは、止と観の二つの法で思惟する、と答えます。止を修めればついには観が成り、観を修めればまた止が成る、止と観をともに修めて解き放たれる、と言います。</p>
+<p>先にどちらかを置く道も、対にして修める道も、どちらか一つだけで終わる形にはなっていません。二つを分けて名前を付けながら、離さずに修める、という形が、止観という語の芯にあります。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>『増支部』2.31（パーリ語はマハーサンギーティ版、英訳は Bhikkhu Sujato 訳・CC0。<a href="https://suttacentral.net/an2.21-31/pli/ms">SuttaCentral の本文</a>。本文照合済）：「Dve me, bhikkhave, dhammā vijjābhāgiyā. Katame dve? Samatho ca vipassanā ca.」（2.31:1.1–1.3）、静まりを修めると「Cittaṁ bhāvīyati」「Yo rāgo so pahīyati」、観ることを修めると「Paññā bhāvīyati」「Yā avijjā sā pahīyati」（1.5–1.11）。</p>
+<p>『増支部』4.170「Yuganaddhasutta」（同じ版と訳。<a href="https://suttacentral.net/an4.170/pli/ms">SuttaCentral の本文</a>。本文照合済）：「samathapubbaṅgamaṁ vipassanaṁ bhāveti」（3.2）、「vipassanāpubbaṅgamaṁ samathaṁ bhāveti」（4.1）、「samathavipassanaṁ yuganaddhaṁ bhāveti」（5.1）、心が「ajjhattameva santiṭṭhati sannisīdati ekodi hoti samādhiyati」（6.2）。</p>
+<p>『雑阿含経』巻第十七 第 464 経（求那跋陀羅 訳。大正新脩大蔵経 第 2 巻 No.99、p.118b15–b25。<a href="https://cbetaonline.dila.edu.tw/zh/T0099_017">CBETA の本文</a>。本文照合済）：「當以二法專精思惟，所謂止、觀」「修習於止，終成於觀，修習觀已，亦成於止。謂聖弟子止、觀俱修，得諸解脫界」。</p>
+<p>samatha と vipassanā、止と観が同じ一組を指す語として読まれてきたことと、パーリ語の経が上座部の経典であることは、このページを書いた LLM の学習時の知識から書いたもので、原典とは照らしていません。</p>
+</details>
+
+</div></details><details class="sec" id="天台の智顗が止観を一つの体系にした"><summary>天台の智顗が、止観を一つの体系にした</summary><div class="secbody">
+<p><a id="sk-tiantai"></a>経典の中で一組だった止と観を、修行の全体を貫く一つの道としてまとめたのが、中国の隋の時代の僧、智顗です。智顗は天台山に住んだので、天台大師とも呼ばれ、その教えは天台宗として伝わりました。</p>
+<p>主著の『摩訶止観』は、智顗が書いた本ではなく、講義を弟子の灌頂が書き留めたものです。冒頭に、灌頂は、594 年（開皇十四年）の夏、荊州の玉泉寺で講じられたこと、講義は「見境」の所まで来て止まり、その後の分は説かれなかったことを記しています。同じ冒頭は、この止観は智顗が自分の心の中で行ってきた法門を説いたものだ、とも書きます。智顗の師は南岳の慧思、その師は慧文で、慧文は龍樹の論に拠った、と系譜を引きます。</p>
+<p>灌頂は、天台には師から受けた三つの止観がある、と書きます。浅いところから深いところへ梯子を登るように進む漸次止観、前と後が入れ替わる不定止観、初めと終わりが二つでない円頓止観です。『摩訶止観』が説くのは円頓止観で、その定義の一文は「法性寂然名止，寂而常照名觀」です。ものの本性が静まっているのを止と呼び、静まりながら常に照らしているのを観と呼ぶ。初めと後と言っても、二つではなく別でもない、と続けます。</p>
+<p>修行の場面では、止と観は、坐ることの中で一つになっています。『摩訶止観』の常坐三昧の段は、正しく坐って乱れた想いを捨て、ただ心を一つにつなぐことを止、それを一念に観ることを観、と書きます（つなぐのが止で、一念するのが観）。観る心そのものを振り返ると、観る者が見つからない、という段もあり、それは「<a href="to-james.html#tj-shikan">ジェームズに辿り着くまで</a>」の止観の章の畳みで読めます。</p>
+<p>初めて坐る人のための短い手引き『修習止観坐禅法要』（『天台小止観』）も、智顗のものとして伝わります。その冒頭は、涅槃に入る道は多いが、急所は止と観の二つを出ない、と言い、二つを車の両輪、鳥の両翼にたとえ、片方に偏ると誤る、と書きます。止だけに偏ったものを癡定（愚かな定）と呼び、観だけに偏った心を風の中の灯にたとえて、偏りの形も名指しています。この手引きの言葉は、「<a href="anxiety.html#守りに戻るか向き合い続けるか">不安とは</a>」の章の畳み「智顗の、止と観の言葉」で、原文とともに読めます。</p>
+<p>智顗は、597 年（開皇十七年）の十一月に、六十歳で亡くなった、と弟子の灌頂が伝記に記しています。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>智顗 説・灌頂 記『摩訶止観』巻第一上（大正新脩大蔵経 第 46 巻 No.1911。<a href="https://cbetaonline.dila.edu.tw/zh/T1911_001">CBETA の本文</a>。本文照合済）：「止觀明靜，前代未聞。智者，大隋開皇十四年四月二十六日，於荊州玉泉寺，一夏敷揚、二時慈霔，雖樂說不窮，纔至『見境』，法輪停轉，後分弗宣」（p.1a07–a10）、「此之止觀，天台智者說己心中所行法門」（p.1b13）、「智者師事南岳……南岳事慧文禪師……文師用心一依《釋論》，論是龍樹所說」（p.1b20–b25）、「天台傳南岳三種止觀：一、漸次，二、不定，三、圓頓……『漸』則初淺後深，如彼梯隥；『不定』前後更互……『圓頓』初後不二，如通者騰空」（p.1c01–c05）、「法性寂然名『止』，寂而常照名『觀』。雖言初後，無二無別，是名『圓頓止觀』」（p.1c29–2a02）。</p>
+<p>同 巻第二上、常坐三昧（<a href="https://cbetaonline.dila.edu.tw/zh/T1911_002">CBETA の本文</a>。本文照合済）：「意止觀者，端坐正念，蠲除惡覺，捨諸亂想，莫雜思惟，不取相貌，但專繫緣法界，一念法界。繫緣是止，一念是觀」（p.11b21–b23）。</p>
+<p>智顗『修習止觀坐禪法要』（大正新脩大蔵経 第 46 巻 No.1915。<a href="https://cbetaonline.dila.edu.tw/zh/T1915_001">CBETA の本文</a>。本文照合済）：「止乃伏結之初門，觀是斷惑之正要」「如車之雙輪，鳥之兩翼；若偏修習，即墮邪倒」（p.462b07–b14）、癡定と風中の燈（p.467c06–c15）。</p>
+<p>灌頂『隋天台智者大師別傳』（大正新脩大蔵経 第 50 巻 No.2050。<a href="https://cbetaonline.dila.edu.tw/zh/T2050_001">CBETA の本文</a>。本文照合済）：「以大隋開皇十七年歲次丁巳十一月二十四日未時入滅。春秋六十」（p.196b26–b27）。</p>
+<p>天台大師の呼び名と、天台山に住んだことは、このページを書いた LLM の学習時の知識から書いたもので、原典とは照らしていません。</p>
+</details>
+
+</div></details><details class="sec" id="禅も静めることと観ることを分けない"><summary>禅も、静めることと観ることを分けない</summary><div class="secbody">
+<p><a id="sk-zen"></a>止観は天台宗で体系立てられた修行で、禅宗のものではありません。それでも、禅の書物にも、同じ形の言い方があります。</p>
+<p>禅の六祖とされる慧能の言葉を伝える『六祖壇経』は、心を定めること（定）と智慧（慧）を、二つに分けてはならない、と言います。定は慧の体で、慧は定のはたらき。慧のときには定が慧の中にあり、定のときには慧が定の中にある。先に定があって慧が出る、先に慧があって定が出る、と分けて言う者は、法に二つの相を見ている、とまで書きます。たとえは灯と光で、灯が体、光がはたらきで、名は二つでも体はもとは一つ、と言います。</p>
+<p>同じ書物は、常に坐って動かず、心を起こさないことを修行だと思い込むことを、情の無いものと同じで、道を妨げる、と戒めます。臨済の語録にも、壁にもたれて坐り、静まり返って動かない清浄な境地を仏法と取るのは大きな誤りだ、という戒めがあります。どちらも、静めることだけを目当てにしてしまう偏りを言っていて、『天台小止観』の癡定と同じ所を見ている、と読めます。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>『六祖大師法寶壇經』定慧第四（大正新脩大蔵経 第 48 巻 No.2008。<a href="https://cbetaonline.dila.edu.tw/zh/T2008_001">CBETA の本文</a>。本文照合済）：「我此法門，以定慧為本。大眾！勿迷，言定慧別。定慧一體，不是二。定是慧體，慧是定用。即慧之時定在慧，即定之時慧在定」（p.352c13–c16）、「莫言先定發慧、先慧發定各別。作此見者，法有二相」（p.352c16–c18）、「猶如燈光……燈是光之體，光是燈之用；名雖有二，體本同一」（p.352c21–c24）、「迷人著法相、執一行三昧，直言：『常坐不動，妄不起心，即是一行三昧。』作此解者，即同無情，却是障道因緣」（p.352c29–353a02）。</p>
+<p>『鎮州臨濟慧照禪師語録』（大正新脩大蔵経 第 47 巻 No.1985。<a href="https://cbetaonline.dila.edu.tw/zh/T1985_001">CBETA の本文</a>。本文照合済）：「便即倚壁坐，舌拄上齶，湛然不動，取此為是祖門佛法也。大錯」（p.501a22–a25）。</p>
+<p>慧能が禅の六祖とされることは、このページを書いた LLM の学習時の知識から書いたもので、原典とは照らしていません。</p>
+</details>
+
+<details class="acc"><summary>寄り道 — 今の心理学の、脱中心化</summary>
+
+<p>今の認知行動療法とマインドフルネスの研究は、考えや感じに気づき、それと自分を同じものと見なさなくなる力を、脱中心化と呼んでまとめてきました。止観と同じものとは言えませんが、湧いたものを観る側へ一歩移る、という形は近く見えます。研究の要約は、「<a href="anxiety.html#守りに戻るか向き合い続けるか">不安とは</a>」の章にあります。</p>
+</details>
+
+</div></details><details class="sec" id="pjdhiro-の止観は0-にそろえて-1-を見に行く"><summary>pjdhiro の止観は、0 にそろえて 1 を見に行く</summary><div class="secbody">
+<p><a id="sk-pjdhiro"></a>pjdhiro にとって、止観は、本で読んで知った修行というより、自分でしている作業です。どんな作業かを、pjdhiro はプログラムの言葉でたとえています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro のたとえ：</strong>瞑想は C 言語の bzero() 関数、memset(0) のようなものです。変化があるかないかを識別しやすくする。雑念のようなものが立てる 1 をポーリングするような。止観はそんな感じです。</p>
+</blockquote>
+<p>bzero() と memset(0) は、メモリーの領域をすべて 0 で埋める関数です。ポーリングは、状態が変わったかどうかを、繰り返し見に行くやり方です。心をいったん 0 にそろえておくと、どこかに 1 が立ったとき、それが変化として見分けやすくなります。</p>
+<p>pjdhiro は、このたとえを海の像でも言い換えています。静かな海面に一か所だけ白波が立てば、小さくてもすぐに気づける。荒れた海では、白波と渦だらけで、どれがどれだか分からなくなる。だから、静かな海面のほうが、微細な変化を見つけられる、という像です。</p>
+<p>では、立った 1 を見に行って、何をするのか。pjdhiro は続けてこう話しています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>湧いた思いや感情や思考、認知した音や映像など、キャッチしてはオブジェクトとして対象化していく作業です。認知した音や映像などの感覚的な刺激は対象化というよりは、キャッチした私を眺める感じですね。そのまま感じ、感じてる私がいることを確認する。オブジェクト化するとか難しいことではなく、心で指さしていく。</p>
+</blockquote>
+<p>湧いた思いや感情は、一つずつ心で指さして観ていきます。音や映像の刺激は、それをキャッチした私の方を眺め、感じている私がいることを確かめます。</p>
+<p>この作業を続けた先で起きることを、pjdhiro はほかの読み物で書いています。自分の中を指さすように観ていくと、最後に観察する私が残り、それすらも観ようとすると、観る私と観られる私が分けられなくなる、という見方は、Love駆動開発の章「<a href="love-driven-dev.html#ldd-shikan">Love は、重力に似ていないか</a>」にあります。止観の中で、I だと思っていたものが me に分かれていった体験は、「<a href="to-james.html#tj-shikan">ジェームズに辿り着くまで</a>」にあります。止観で心のしくみを知ることを、修行の二つの側の一つめに置く見方は、Love駆動開発の章「<a href="love-driven-dev.html#ldd-practice">どう鍛えるのか、どう修行するのか</a>」にあります。</p>
+</div></details><details class="sec" id="原典と並べるとどこが近いか"><summary>原典と並べると、どこが近いか</summary><div class="secbody">
+<p><a id="sk-near"></a>pjdhiro の止観を、ここまでの原典と並べてみます。この段は Claude が並べた読みで、pjdhiro に確かめたものではありません。</p>
+<p>湧いたものをキャッチして観る所は、『摩訶止観』の覚意三昧の段と同じ形に見えます。智顗は、心のはたらきが起きたときに、振り返って照らし観察する（「心數起時，反照觀察」）と書きます。智顗がこの三昧を、坐るときに限らず、行くことにも一切の事にも通じる、と置いている所も、繰り返し見に行くポーリングの像と重なります。</p>
+<p>0 にそろえる所は、止の側に当たりそうです。ただ、pjdhiro の 0 は、静けさそのものを目当てにするのでなく、1 が立てばすぐ気づけるようにするための下地として置かれています。『天台小止観』の癡定、『六祖壇経』の「常坐不動」への戒め、臨済の「湛然不動」への戒めは、どれも、静けさを目当てにしてしまったときの方を言っている、と読めます。0 を下地にして変化を観る、という pjdhiro の形は、これらの戒めとはぶつからず、止と観を両輪にする、という智顗の言い方の側にあるように見えます。</p>
+<p>感じている私がいることを確かめる所は、原典の向きが一つではありません。智顗は、観る心を振り返ると観る者が見つからない、と書き、臨済は、聴いている者をありありと指さしながら、名を与えた途端に突き放します。pjdhiro の「確かめる」が、その途中のどこを指しているかは、ここからは決められません。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>智顗 説・灌頂 記『摩訶止観』巻第二上、非行非坐三昧（覚意三昧）（大正新脩大蔵経 第 46 巻 No.1911。<a href="https://cbetaonline.dila.edu.tw/zh/T1911_002">CBETA の本文</a>。本文照合済）：「實通行、坐及一切事」（p.14b27–b28）、「行者心數起時，反照觀察，不見動轉、根原、終末、來處去處，故名『覺意』」（p.14c03–c04）。観る者が見つからない段（巻第二下 p.16c11–c15）と臨済の指さす段（p.497b26–b29・p.496c10–c14）は、「<a href="to-james.html#tj-shikan">ジェームズに辿り着くまで</a>」の畳みに原文の出典があります。</p>
+</details>
+
+</div></details><details class="sec" id="まだ分からないこと"><summary>まだ分からないこと</summary><div class="secbody">
+<ul>
+<li>pjdhiro の「感じている私がいることを確認する」は、智顗の観る者が見つからない所と、臨済の指さす所の、どこに当たるのか。</li>
+<li>🚧 工事中：『摩訶止観』の修め方の細部と、上座部の瞑想が今どう行われているかは、原典を読んでから書きます。</li>
+</ul>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの</a> ・
+                <a href="to-james.html">ジェームズに辿り着くまで</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

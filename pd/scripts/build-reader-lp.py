@@ -374,6 +374,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/shikan/READER-shikan.md",
+        ROOT / "scripts/reader-shikan-template.html",
+        ROOT / "reader/shikan.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/nondual/READER-nondual.md",
         ROOT / "scripts/reader-nondual-template.html",
         ROOT / "reader/nondual.html",
