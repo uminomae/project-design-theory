@@ -413,6 +413,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/fundamental-theorem-of-algebra/READER-fundamental-theorem-of-algebra.md",
+        ROOT / "scripts/reader-fundamental-theorem-of-algebra-template.html",
+        ROOT / "reader/fundamental-theorem-of-algebra.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/nondual/READER-nondual.md",
         ROOT / "scripts/reader-nondual-template.html",
         ROOT / "reader/nondual.html",
