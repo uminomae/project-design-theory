@@ -431,6 +431,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/fundamental-theorem-of-algebra-analogy/READER-fundamental-theorem-of-algebra-analogy.md",
+        ROOT / "scripts/reader-fundamental-theorem-of-algebra-analogy-template.html",
+        ROOT / "reader/fundamental-theorem-of-algebra-analogy.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/ac-phasor/READER-ac-phasor.md",
         ROOT / "scripts/reader-ac-phasor-template.html",
         ROOT / "reader/ac-phasor.html",
