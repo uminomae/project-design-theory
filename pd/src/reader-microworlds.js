@@ -1539,10 +1539,356 @@ function mountFtaRootsOfUnity(host) {
     draw();
 }
 
+// ============================================================
+// オイラーの式（reader/euler-formula.html・#204）
+// ============================================================
+// 1) 同じ数を、1 に掛け続ける
+//    平面をクリックして掛ける数 w（金の四角）を決める。円に近い所をクリックすると円の上に乗り、角度は 5 度刻み。
+//    「1 回掛ける」「12 回掛ける」で 1, w, w², … を打つ。距離 1 なら円の上を回るだけ、1 より大きいと外へ、小さいと 0 へ。
+function mountEulerRepeat(host) {
+    const P = PAL();
+    const view = makeCanvas(host, 0.8);
+    const row = controls(host);
+    const N = 2.3;
+    const MAXK = 36;
+    let w = [Math.cos(Math.PI / 6), Math.sin(Math.PI / 6)];
+    let k = 0;
+    let timer = null;
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const polar = (r, deg) => [r * Math.cos(deg * Math.PI / 180), r * Math.sin(deg * Math.PI / 180)];
+    const mul = (p, q) => [p[0] * q[0] - p[1] * q[1], p[0] * q[1] + p[1] * q[0]];
+    function stop() { if (timer) { clearInterval(timer); timer = null; } }
+    function setW(p) { stop(); w = p; k = 0; draw(); }
+
+    button(row, '1 回掛ける', () => { stop(); if (k < MAXK) k++; draw(); });
+    button(row, '12 回掛ける', () => {
+        stop();
+        const goal = Math.min(MAXK, k + 12);
+        if (reduce) { k = goal; draw(); return; }
+        timer = setInterval(() => { if (k >= goal) { stop(); return; } k++; draw(); }, 260);
+    });
+    button(row, '最初に戻す', () => { stop(); k = 0; draw(); });
+    const row2 = controls(host);
+    button(row2, '2', () => setW([2, 0]));
+    button(row2, '−1', () => setW([-1, 0]));
+    button(row2, '円の上の 30 度', () => setW(polar(1, 30)));
+    button(row2, '距離 1.1・30 度', () => setW(polar(1.1, 30)));
+    button(row2, '距離 0.9・30 度', () => setW(polar(0.9, 30)));
+    const st = status(host);
+
+    function geom() {
+        const { W, H } = view;
+        const unit = Math.min(W, H) / (2 * N + 0.4);
+        return { cx: W / 2, cy: H / 2, unit };
+    }
+    function place(ev) {
+        const rect = view.canvas.getBoundingClientRect();
+        const { cx, cy, unit } = geom();
+        let x = (ev.clientX - rect.left - cx) / unit, y = -(ev.clientY - rect.top - cy) / unit;
+        let r = Math.hypot(x, y);
+        if (r < 0.05) return;
+        let deg = Math.round(Math.atan2(y, x) * 180 / Math.PI / 5) * 5;
+        r = Math.abs(r - 1) < 0.08 ? 1 : Math.round(r * 20) / 20;
+        r = Math.min(r, 2.2);
+        setW(polar(r, deg));
+    }
+    view.canvas.addEventListener('pointerdown', place);
+    view.canvas.style.cursor = 'pointer';
+
+    function draw() {
+        const { ctx, W, H } = view;
+        ctx.clearRect(0, 0, W, H);
+        const { cx, cy, unit } = geom();
+        const X = p => cx + p[0] * unit, Y = p => cy - p[1] * unit;
+        const inView = p => Math.abs(p[0]) <= N && Math.abs(p[1]) <= N;
+        // 軸
+        ctx.strokeStyle = P.mid; ctx.lineWidth = 2.2;
+        ctx.beginPath(); ctx.moveTo(cx - N * unit, cy); ctx.lineTo(cx + N * unit, cy); ctx.stroke();
+        ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(cx, cy - N * unit); ctx.lineTo(cx, cy + N * unit); ctx.stroke();
+        ctx.fillStyle = P.mid; ctx.font = '11px sans-serif'; ctx.textAlign = 'center';
+        [-2, -1, 1, 2].forEach(n => ctx.fillText(signed(n), cx + n * unit, cy + 15));
+        ctx.fillStyle = P.navy; ctx.font = '12px sans-serif'; ctx.textAlign = 'left';
+        ctx.fillText('数直線（実軸）', cx - N * unit, cy + 30);
+        ctx.fillText('虚軸', cx + 8, cy - (N - 0.15) * unit);
+        // 半径 1 の円
+        ctx.strokeStyle = P.line; ctx.lineWidth = 1.5;
+        ctx.beginPath(); ctx.arc(cx, cy, unit, 0, Math.PI * 2); ctx.stroke();
+        // 1, w, w², … の点と線
+        const pts = [[1, 0]];
+        for (let j = 1; j <= k; j++) pts.push(mul(pts[j - 1], w));
+        ctx.strokeStyle = P.ink; ctx.globalAlpha = 0.45; ctx.lineWidth = 1.5;
+        ctx.beginPath(); ctx.moveTo(X(pts[0]), Y(pts[0]));
+        pts.forEach(p => ctx.lineTo(X(p), Y(p)));
+        ctx.stroke(); ctx.globalAlpha = 1;
+        pts.forEach((p, j) => {
+            if (!inView(p)) return;
+            ctx.fillStyle = j === k ? P.coral : P.ink;
+            ctx.beginPath(); ctx.arc(X(p), Y(p), j === k ? 6 : 3.5, 0, Math.PI * 2); ctx.fill();
+        });
+        ctx.fillStyle = P.ink; ctx.font = '13px sans-serif';
+        ctx.fillText('1', X([1, 0]) + 6, Y([1, 0]) - 7);
+        // 掛ける数 w
+        ctx.fillStyle = P.gold; ctx.fillRect(X(w) - 6, Y(w) - 6, 12, 12);
+        ctx.fillText('掛ける数', X(w) + 9, Y(w) + 4);
+
+        const r = Math.hypot(w[0], w[1]);
+        const deg = Math.round(Math.atan2(w[1], w[0]) * 180 / Math.PI);
+        const cur = pts[k];
+        const rc = Math.hypot(cur[0], cur[1]);
+        let msg = '掛ける数（金）は、0 からの距離 <b>' + ftaNum(r) + '</b>、角度 <b>' + signed(deg) + ' 度</b>です。';
+        if (k === 0) msg += '「1 回掛ける」をクリックすると、1 にこの数を掛けていきます。';
+        else {
+            msg += '1 に <b>' + k + ' 回</b>掛けると、0 からの距離は <b>' + ftaNum(rc) + '</b> です。';
+            if (Math.abs(w[1]) < 1e-9) msg += '掛ける数が数直線の上にあるので、点は数直線の上から出ません。';
+            else if (Math.abs(r - 1) < 1e-9) msg += '距離が 1 なので、点は円の上を <b>' + Math.abs(deg) + ' 度ずつ</b>回るだけです。';
+            else if (r > 1) msg += '距離が 1 より大きいので、点は回りながら外へ広がります。';
+            else msg += '距離が 1 より小さいので、点は回りながら 0 へ寄っていきます。';
+            if (!inView(cur)) msg += '（いまの点は、図の外に出ています。）';
+        }
+        msg += ' 平面をクリックすると、掛ける数を選べます。';
+        st.innerHTML = msg;
+    }
+    view.canvas.setAttribute('aria-label', '平面をクリックして掛ける数（金の四角）を決め、1 に何回も掛けていく図。0 からの距離が 1 の数では、点は半径 1 の円の上を同じ角度ずつ回る。距離が 1 より大きいと回りながら外へ、小さいと回りながら 0 へ寄る。');
+    view.onResize = draw;
+    draw();
+}
+
+// 2) 円の上を回る点の影が、波を描く
+//    左に半径 1 の円と点、横の軸への影（cos・赤）と縦の軸への影（sin・紺）。右に、回った角度を横にとった二つの波。
+//    円をクリックすると、その角度まで回した所を出す。「回す」で 0 から 720 度まで回す。
+function mountEulerShadow(host) {
+    const P = PAL();
+    const view = makeCanvas(host, 0.6);
+    const row = controls(host);
+    const st = status(host);
+    const MAXD = 720;
+    let th = 60;          // 度
+    let anim = null;
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const rad = d => d * Math.PI / 180;
+
+    button(row, '回す', () => {
+        if (reduce) { th = MAXD; draw(); return; }
+        anim = { t0: performance.now(), from: th >= MAXD ? 0 : th };
+        requestAnimationFrame(tick);
+    });
+    button(row, '止める', () => { anim = null; });
+    button(row, '0 度に戻す', () => { anim = null; th = 0; draw(); });
+    function tick(now) {
+        if (!anim) return;
+        th = Math.min(MAXD, anim.from + (now - anim.t0) / 1000 * 90);
+        draw();
+        if (th < MAXD) requestAnimationFrame(tick); else anim = null;
+    }
+
+    function geom() {
+        const { W, H } = view;
+        const R = Math.min(H * 0.38, W * 0.17);
+        const cx = R * 1.35, cy = H / 2;
+        const gx0 = cx + R * 1.55, gx1 = W - 8;
+        return { cx, cy, R, gx0, gx1 };
+    }
+    view.canvas.addEventListener('pointerdown', ev => {
+        const rect = view.canvas.getBoundingClientRect();
+        const { cx, cy, R, gx0, gx1 } = geom();
+        const x = ev.clientX - rect.left, y = ev.clientY - rect.top;
+        anim = null;
+        if (x < gx0 - R * 0.2) {
+            let d = Math.atan2(-(y - cy), x - cx) * 180 / Math.PI;
+            if (d < 0) d += 360;
+            th = Math.round(d / 5) * 5;
+        } else {
+            th = Math.round(Math.max(0, Math.min(1, (x - gx0) / (gx1 - gx0))) * MAXD / 5) * 5;
+        }
+        draw();
+    });
+    view.canvas.style.cursor = 'pointer';
+
+    function draw() {
+        const { ctx, W, H } = view;
+        ctx.clearRect(0, 0, W, H);
+        const { cx, cy, R, gx0, gx1 } = geom();
+        const c = Math.cos(rad(th)), s = Math.sin(rad(th));
+        const px = cx + R * c, py = cy - R * s;
+        // 軸と円
+        ctx.strokeStyle = P.mid; ctx.lineWidth = 1.2;
+        ctx.beginPath(); ctx.moveTo(cx - R * 1.25, cy); ctx.lineTo(cx + R * 1.25, cy); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(cx, cy - R * 1.25); ctx.lineTo(cx, cy + R * 1.25); ctx.stroke();
+        ctx.strokeStyle = P.line; ctx.lineWidth = 1.5;
+        ctx.beginPath(); ctx.arc(cx, cy, R, 0, Math.PI * 2); ctx.stroke();
+        ctx.fillStyle = P.mid; ctx.font = '11px sans-serif'; ctx.textAlign = 'center';
+        ctx.fillText('1', cx + R + 8, cy + 13); ctx.fillText('i', cx - 8, cy - R - 3);
+        // 半径と、影を落とす点線
+        ctx.strokeStyle = P.ink; ctx.lineWidth = 1.5;
+        ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(px, py); ctx.stroke();
+        ctx.setLineDash([3, 3]); ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(px, py); ctx.lineTo(px, cy); ctx.moveTo(px, py); ctx.lineTo(cx, py); ctx.stroke();
+        ctx.setLineDash([]);
+        // 影
+        ctx.lineWidth = 5; ctx.lineCap = 'round';
+        ctx.strokeStyle = P.coral; ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(px, cy); ctx.stroke();
+        ctx.strokeStyle = P.navy; ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx, py); ctx.stroke();
+        ctx.lineCap = 'butt';
+        ctx.fillStyle = P.gold; ctx.beginPath(); ctx.arc(px, py, 6, 0, Math.PI * 2); ctx.fill();
+        // 波の枠
+        const gy = v => cy - v * R;
+        const gxp = d => gx0 + (gx1 - gx0) * d / MAXD;
+        ctx.strokeStyle = P.mid; ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(gx0, cy); ctx.lineTo(gx1, cy); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(gx0, gy(1.2)); ctx.lineTo(gx0, gy(-1.2)); ctx.stroke();
+        ctx.strokeStyle = P.faint;
+        [1, -1].forEach(v => { ctx.beginPath(); ctx.moveTo(gx0, gy(v)); ctx.lineTo(gx1, gy(v)); ctx.stroke(); });
+        ctx.fillStyle = P.mid; ctx.font = '11px sans-serif'; ctx.textAlign = 'center';
+        [180, 360, 540, 720].forEach(d => {
+            ctx.textAlign = d === MAXD ? 'right' : 'center';
+            if (gx1 - gx0 > 240 || d % 360 === 0) ctx.fillText(d + '°', gxp(d), cy + 13);
+            ctx.strokeStyle = P.faint; ctx.beginPath(); ctx.moveTo(gxp(d), gy(1.2)); ctx.lineTo(gxp(d), gy(-1.2)); ctx.stroke();
+        });
+        ctx.textAlign = 'right'; ctx.fillText('1', gx0 - 4, gy(1) + 4); ctx.fillText('−1', gx0 - 4, gy(-1) + 4);
+        // 波（いままで回った所まで）
+        const wave = (f, col) => {
+            ctx.strokeStyle = col; ctx.lineWidth = 2.2; ctx.beginPath();
+            for (let d = 0; d <= th + 0.01; d += 2) {
+                const x = gxp(Math.min(d, th)), y = gy(f(rad(Math.min(d, th))));
+                d === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+            }
+            ctx.stroke();
+        };
+        wave(Math.cos, P.coral);
+        wave(Math.sin, P.navy);
+        // いまの所の縦線と、影の高さから波への点線
+        const xn = gxp(th);
+        ctx.setLineDash([3, 3]); ctx.lineWidth = 1; ctx.strokeStyle = P.mute;
+        ctx.beginPath(); ctx.moveTo(cx, py); ctx.lineTo(xn, py); ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.fillStyle = P.coral; ctx.beginPath(); ctx.arc(xn, gy(c), 4.5, 0, Math.PI * 2); ctx.fill();
+        ctx.fillStyle = P.navy; ctx.beginPath(); ctx.arc(xn, gy(s), 4.5, 0, Math.PI * 2); ctx.fill();
+        ctx.font = '12px sans-serif'; ctx.textAlign = 'left';
+        ctx.fillStyle = P.coral; ctx.fillText('横の影 cos θ', gx0 + 6, gy(1.2) + 2);
+        ctx.fillStyle = P.navy; ctx.fillText('縦の影 sin θ', gx0 + 6, gy(-1.2) + 8);
+
+        const dn = Math.round(th);
+        st.innerHTML = '点は、1 から <b>' + dn + ' 度</b>回った所です'
+            + (dn === 360 ? '（一周）' : dn === 720 ? '（二周）' : dn > 360 ? '（一周して、さらに ' + (dn - 360) + ' 度）' : '')
+            + '。横の影（赤）は cos θ = <b>' + signed(+ftaNum(c)) + '</b>、縦の影（紺）は sin θ = <b>' + signed(+ftaNum(s)) + '</b> です。'
+            + ' 円か波の上をクリックすると、その角度まで回した所が出ます。';
+    }
+    view.canvas.setAttribute('aria-label', '左に半径 1 の円の上の点と、横の軸への影（cos θ、赤）と縦の軸への影（sin θ、紺）。右に、回った角度を横にとって二つの影の長さを並べた波。点が回り続けると、影は 1 と −1 のあいだを行き来し、二つの波になる。');
+    view.onResize = draw;
+    draw();
+}
+
+// 3) 1 + iθ/n を n 回掛けると、円の上の道のり θ の点に近づく
+//    円をクリックして θ（1 から円の上を歩いた道のり）を決める。n はスライダ（1〜200）とボタン。
+//    1, (1 + iθ/n), (1 + iθ/n)², … を線でつなぎ、行き着く先と、目当ての e^{iθ}（金の輪）を出す。
+function mountEulerCompound(host) {
+    const P = PAL();
+    const view = makeCanvas(host, 0.8);
+    const row = controls(host);
+    const N = 2.4;
+    let th = Math.PI;
+    let n = 8;
+    const PI = Math.PI;
+    const thName = t => {
+        const q = Math.round(t / PI * 12);
+        if (Math.abs(t - q * PI / 12) > 1e-9) return ftaNum(t);
+        const g = (a, b) => (b ? g(b, a % b) : a);
+        if (q === 0) return '0';
+        const d = g(q, 12), num = q / d, den = 12 / d;
+        return (num === 1 ? '' : num) + 'π' + (den === 1 ? '' : '/' + den);
+    };
+    button(row, 'θ = π/2', () => { th = PI / 2; draw(); });
+    button(row, 'θ = π', () => { th = PI; draw(); });
+    button(row, 'θ = 2π', () => { th = 2 * PI; draw(); });
+    const row2 = controls(host);
+    const sl = slider(row2, { label: 'n', min: 1, max: 200, value: n, step: 1, onInput: v => { n = v; draw(); } });
+    button(row2, 'n = 1', () => { n = 1; sl.value = n; draw(); });
+    button(row2, 'n × 2', () => { n = Math.min(200, n * 2); sl.value = n; draw(); });
+    button(row2, 'n = 200', () => { n = 200; sl.value = n; draw(); });
+    const st = status(host);
+
+    function geom() {
+        const { W, H } = view;
+        const unit = Math.min(W, H) / (2 * N + 0.4);
+        return { cx: W / 2, cy: H / 2, unit };
+    }
+    view.canvas.addEventListener('pointerdown', ev => {
+        const rect = view.canvas.getBoundingClientRect();
+        const { cx, cy } = geom();
+        const x = ev.clientX - rect.left - cx, y = -(ev.clientY - rect.top - cy);
+        if (Math.hypot(x, y) < 4) return;
+        let a = Math.atan2(y, x);
+        if (a < 0) a += 2 * PI;
+        let q = Math.round(a / (PI / 12));
+        if (q === 0) q = 24;     // 1 の所は一周（2π）として扱う
+        th = q * PI / 12;
+        draw();
+    });
+    view.canvas.style.cursor = 'pointer';
+
+    function draw() {
+        const { ctx, W, H } = view;
+        ctx.clearRect(0, 0, W, H);
+        const { cx, cy, unit } = geom();
+        const X = p => cx + p[0] * unit, Y = p => cy - p[1] * unit;
+        // 軸と円
+        ctx.strokeStyle = P.mid; ctx.lineWidth = 2.2;
+        ctx.beginPath(); ctx.moveTo(cx - N * unit, cy); ctx.lineTo(cx + N * unit, cy); ctx.stroke();
+        ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(cx, cy - N * unit); ctx.lineTo(cx, cy + N * unit); ctx.stroke();
+        ctx.fillStyle = P.mid; ctx.font = '11px sans-serif'; ctx.textAlign = 'center';
+        [-2, -1, 1, 2].forEach(v => ctx.fillText(signed(v), cx + v * unit, cy + 15));
+        ctx.strokeStyle = P.line; ctx.lineWidth = 1.5;
+        ctx.beginPath(); ctx.arc(cx, cy, unit, 0, Math.PI * 2); ctx.stroke();
+        // 1 から道のり θ の弧
+        ctx.strokeStyle = P.gold; ctx.globalAlpha = 0.45; ctx.lineWidth = 5;
+        ctx.beginPath(); ctx.arc(cx, cy, unit, 0, -th, true); ctx.stroke(); ctx.globalAlpha = 1;
+        // 1, f, f², …
+        const f = [1, th / n];
+        const pts = [[1, 0]];
+        for (let j = 1; j <= n; j++) {
+            const p = pts[j - 1];
+            pts.push([p[0] * f[0] - p[1] * f[1], p[0] * f[1] + p[1] * f[0]]);
+        }
+        ctx.strokeStyle = P.ink; ctx.lineWidth = 1.6;
+        ctx.beginPath(); ctx.moveTo(X(pts[0]), Y(pts[0]));
+        pts.forEach(p => ctx.lineTo(X(p), Y(p)));
+        ctx.stroke();
+        if (n <= 40) pts.forEach(p => { ctx.fillStyle = P.ink; ctx.beginPath(); ctx.arc(X(p), Y(p), 2.8, 0, Math.PI * 2); ctx.fill(); });
+        // 目当ての e^{iθ}
+        const tgt = [Math.cos(th), Math.sin(th)];
+        ctx.strokeStyle = P.gold; ctx.lineWidth = 2.5;
+        ctx.beginPath(); ctx.arc(X(tgt), Y(tgt), 9, 0, Math.PI * 2); ctx.stroke();
+        // 行き着く先
+        const end = pts[n];
+        const inV = Math.abs(end[0]) <= N && Math.abs(end[1]) <= N;
+        if (inV) { ctx.fillStyle = P.coral; ctx.beginPath(); ctx.arc(X(end), Y(end), 6, 0, Math.PI * 2); ctx.fill(); }
+        ctx.fillStyle = P.ink; ctx.font = '13px sans-serif'; ctx.textAlign = 'left';
+        ctx.fillText('1', X([1, 0]) + 6, Y([1, 0]) - 7);
+
+        const name = thName(th);
+        const ends = ftaComplex(end[0], end[1]);
+        const dist = Math.hypot(end[0] - tgt[0], end[1] - tgt[1]);
+        let msg = 'θ = <b>' + name + '</b>、n = <b>' + n + '</b> です。1 に 1 + iθ/n を ' + n + ' 回掛けた行き着く先（赤）は <b>' + ends + '</b>'
+            + (inV ? '' : '（図の外）') + ' で、0 からの距離は ' + ftaNum(Math.hypot(end[0], end[1])) + ' です。';
+        msg += '円の上の、道のり θ の点（金の輪）e<sup>iθ</sup> = ' + ftaComplex(tgt[0], tgt[1]) + ' まで、あと ' + ftaNum(dist) + ' です。';
+        if (n < 200) msg += ' n を大きくすると、行き着く先は金の輪に近づきます。';
+        msg += ' 円の上をクリックすると、θ を選べます。';
+        st.innerHTML = msg;
+    }
+    view.canvas.setAttribute('aria-label', '1 に 1 + iθ/n を n 回掛けた点を線でつないだ図。円の上の、1 から道のり θ の点（金の輪）が e の iθ 乗。n を大きくすると、行き着く先が金の輪に近づく。θ = π なら −1。');
+    view.onResize = draw;
+    draw();
+}
+
 // ---- ディスパッチ ----
 const MOUNTS = {
     'fta-square-plus-one': mountFtaSquarePlusOne,
     'fta-roots-of-unity': mountFtaRootsOfUnity,
+    'euler-repeat': mountEulerRepeat,
+    'euler-shadow': mountEulerShadow,
+    'euler-compound': mountEulerCompound,
     'magnitude-vs-difference': mountMagnitudeVsDifference,
     'roots-merge': mountRootsMerge,
     'root-720': mountRoot720,
