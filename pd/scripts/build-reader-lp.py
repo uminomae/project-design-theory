@@ -306,6 +306,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は draper-1863-history-of-intellectual-development-of-europe.md（原文〔英語〕と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-draper-intellectual-development-ja.md",
+        ROOT / "scripts/reader-draper-intellectual-development-ja-template.html",
+        ROOT / "reader/draper-intellectual-development-ja.html",
+        "flow",
+    ),
+    (
         # 読む順のリンク集。鍵の文の対訳は william-james-*.md（原文と訳）から <!--JA-TEXT:…--> で差し込む（#189）
         ROOT / "knowledge/translations/READER-william-james-self-ja.md",
         ROOT / "scripts/reader-william-james-self-ja-template.html",
@@ -673,6 +680,15 @@ JA_CHAPTERS = {
         "¶90": "第 22 書簡：ふつうの出来事、並外れた出来事、奇形",
         "¶110": "第 30 書簡：恒常的とみなしてよい可変的な原因・大数の法則",
         "注1": "ケトレーの脚注",
+    },
+    "draper-1863-history-of-intellectual-development-of-europe.md": {
+        "¶1": "章の題と、目次の要約",
+        "¶3": "コンスタンティヌスの政策と、キリスト教の異教化",
+        "¶8": "哲学への迫害と、テオドシウスの施策",
+        "¶14": "教父主義：知るべきことはすべて聖典にある",
+        "¶20": "アレクサンドリアの図書館と、セラピオンの破壊",
+        "¶24": "キュリロスとヒュパティア",
+        "¶27": "アレクサンドリアの学問の抑圧",
     },
     # ウィリアム・ジェームズの鍵の文（#189）。章の見出しは読む順のリンク集の正本 READER-william-james-self-ja.md に書く
     "william-james-1892-psychology-briefer-course.md": {},

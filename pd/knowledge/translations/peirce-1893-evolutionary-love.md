@@ -447,7 +447,7 @@ anancasm を説く者（anancasticist）は、ここで口を挟み、自分の�
 
 > See *Draper's History of Intellectual Development*, chap. x.
 
-ドレイパーの『知的発展の歴史』第10章を見よ。
+[ドレイパーの『知的発展の歴史』第10章](draper-intellectual-development-ja.html)を見よ。
 
 ### 注64　p.199
 
