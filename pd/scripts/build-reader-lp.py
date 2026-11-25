@@ -431,6 +431,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/euler-unfolded/READER-euler-unfolded.md",
+        ROOT / "scripts/reader-euler-unfolded-template.html",
+        ROOT / "reader/euler-unfolded.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/ac-phasor/READER-ac-phasor.md",
         ROOT / "scripts/reader-ac-phasor-template.html",
         ROOT / "reader/ac-phasor.html",
