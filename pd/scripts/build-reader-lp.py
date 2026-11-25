@@ -355,6 +355,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/vibe-to-code/READER-vibe-to-code.md",
+        ROOT / "scripts/reader-vibe-to-code-template.html",
+        ROOT / "reader/vibe-to-code.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/me-unnoticed/READER-me-unnoticed.md",
         ROOT / "scripts/reader-me-unnoticed-template.html",
         ROOT / "reader/me-unnoticed.html",

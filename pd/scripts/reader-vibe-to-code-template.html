@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/vibe-to-code.html を直接編集しないでください。
+  正本:   knowledge/research/vibe-to-code/READER-vibe-to-code.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「Vibe to Code と並べて見る、pjdhiro のやり方」のページです（工事中）。生成 AI と対話しながら言葉にしにくい意図を言葉にしていく過程を調べた論文（Sato 2026「Vibe to Code」・Jxiv）と、pjdhiro がこのサイトを作ってきたやり方を並べる独立ページ。ずれを手がかりにする・曖昧と具体を行き来する・決めは人の側に残す・言葉の中身を先にすり合わせる・条件と限りを先に書く、の重なりを先に見て、違って見える所を同じことの別の面として並べる。
+  論文と pjdhiro のやり方の当てはめは Claude の読み。論文は pjdhiro に触れていない。論文の訳は Claude。
+  pjdhiro 本人の言葉は「pjdhiro の見方：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe to Code と並べて見る、pjdhiro のやり方 | Project Design</title>
+    <meta name="robots" content="noindex">
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/vibe-to-code.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="生成 AI と対話しながら言葉にしにくい意図を言葉にしていく過程を調べた論文（Sato 2026「Vibe to Code」・Jxiv）と、pjdhiro がこのサイトを作ってきたやり方を並べる独立ページ。ずれを手がかりにする・曖昧と具体を行き来する・決めは人の側に残す・言葉の中身を先にすり合わせる・条件と限りを先に書く、の重なりを先に見て、違って見える所を同じことの別の面として並べる。">
+    <meta property="og:title" content="Vibe to Code と並べて見る、pjdhiro のやり方">
+    <meta property="og:description" content="生成 AI と対話しながら言葉にしにくい意図を言葉にしていく過程を調べた論文（Sato 2026「Vibe to Code」・Jxiv）と、pjdhiro がこのサイトを作ってきたやり方を並べる独立ページ。ずれを手がかりにする・曖昧と具体を行き来する・決めは人の側に残す・言葉の中身を先にすり合わせる・条件と限りを先に書く、の重なりを先に見て、違って見える所を同じことの別の面として並べる。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/vibe-to-code.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Vibe to Code と並べて見る、pjdhiro のやり方">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-25">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "Vibe to Code と並べて見る、pjdhiro のやり方",
+          "description": "生成 AI と対話しながら言葉にしにくい意図を言葉にしていく過程を調べた論文（Sato 2026「Vibe to Code」・Jxiv）と、pjdhiro がこのサイトを作ってきたやり方を並べる独立ページ。ずれを手がかりにする・曖昧と具体を行き来する・決めは人の側に残す・言葉の中身を先にすり合わせる・条件と限りを先に書く、の重なりを先に見て、違って見える所を同じことの別の面として並べる。",
+          "keywords": "Vibe to Code, vibe coding, 戦略的な振動, Strategic Oscillation, 暗黙知, 表出化, SECI, 生成 AI, AI 協働, 思考発話, メタ認知, Love駆動開発, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/vibe-to-code.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/vibe-to-code.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-25",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "AI 協働"}, {"@type": "Thing", "name": "暗黙知の表出化"}, {"@type": "Thing", "name": "Love駆動開発"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方の言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「Vibe to Code と並べて見る、pjdhiro のやり方」のページです（工事中）。生成 AI と対話しながら言葉にしにくい意図を言葉にしていく過程を調べた論文（Sato 2026「Vibe to Code」・Jxiv）と、pjdhiro がこのサイトを作ってきたやり方を並べる独立ページ。ずれを手がかりにする・曖昧と具体を行き来する・決めは人の側に残す・言葉の中身を先にすり合わせる・条件と限りを先に書く、の重なりを先に見て、違って見える所を同じことの別の面として並べる。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>Vibe to Code と並べて見る、pjdhiro のやり方</h1>
+                <p class="reader-subtitle">生成 AI との対話で、言葉にならないものを言葉にする</p>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/vibe-to-code/READER-vibe-to-code.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="love-trajectory.html">私というアプリを、読めるようにした一年</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

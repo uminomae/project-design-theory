@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/vibe-to-code.html を直接編集しないでください。
+  正本:   knowledge/research/vibe-to-code/READER-vibe-to-code.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「Vibe to Code と並べて見る、pjdhiro のやり方」のページです（工事中）。生成 AI と対話しながら言葉にしにくい意図を言葉にしていく過程を調べた論文（Sato 2026「Vibe to Code」・Jxiv）と、pjdhiro がこのサイトを作ってきたやり方を並べる独立ページ。ずれを手がかりにする・曖昧と具体を行き来する・決めは人の側に残す・言葉の中身を先にすり合わせる・条件と限りを先に書く、の重なりを先に見て、違って見える所を同じことの別の面として並べる。
+  論文と pjdhiro のやり方の当てはめは Claude の読み。論文は pjdhiro に触れていない。論文の訳は Claude。
+  pjdhiro 本人の言葉は「pjdhiro の見方：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe to Code と並べて見る、pjdhiro のやり方 | Project Design</title>
+    <meta name="robots" content="noindex">
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/vibe-to-code.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="生成 AI と対話しながら言葉にしにくい意図を言葉にしていく過程を調べた論文（Sato 2026「Vibe to Code」・Jxiv）と、pjdhiro がこのサイトを作ってきたやり方を並べる独立ページ。ずれを手がかりにする・曖昧と具体を行き来する・決めは人の側に残す・言葉の中身を先にすり合わせる・条件と限りを先に書く、の重なりを先に見て、違って見える所を同じことの別の面として並べる。">
+    <meta property="og:title" content="Vibe to Code と並べて見る、pjdhiro のやり方">
+    <meta property="og:description" content="生成 AI と対話しながら言葉にしにくい意図を言葉にしていく過程を調べた論文（Sato 2026「Vibe to Code」・Jxiv）と、pjdhiro がこのサイトを作ってきたやり方を並べる独立ページ。ずれを手がかりにする・曖昧と具体を行き来する・決めは人の側に残す・言葉の中身を先にすり合わせる・条件と限りを先に書く、の重なりを先に見て、違って見える所を同じことの別の面として並べる。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/vibe-to-code.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Vibe to Code と並べて見る、pjdhiro のやり方">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-25">
+    <meta property="article:modified_time" content="2026-11-25">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "Vibe to Code と並べて見る、pjdhiro のやり方",
+          "description": "生成 AI と対話しながら言葉にしにくい意図を言葉にしていく過程を調べた論文（Sato 2026「Vibe to Code」・Jxiv）と、pjdhiro がこのサイトを作ってきたやり方を並べる独立ページ。ずれを手がかりにする・曖昧と具体を行き来する・決めは人の側に残す・言葉の中身を先にすり合わせる・条件と限りを先に書く、の重なりを先に見て、違って見える所を同じことの別の面として並べる。",
+          "keywords": "Vibe to Code, vibe coding, 戦略的な振動, Strategic Oscillation, 暗黙知, 表出化, SECI, 生成 AI, AI 協働, 思考発話, メタ認知, Love駆動開発, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/vibe-to-code.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/vibe-to-code.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-25",
+          "dateModified": "2026-11-25",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "AI 協働"}, {"@type": "Thing", "name": "暗黙知の表出化"}, {"@type": "Thing", "name": "Love駆動開発"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方の言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「Vibe to Code と並べて見る、pjdhiro のやり方」のページです（工事中）。生成 AI と対話しながら言葉にしにくい意図を言葉にしていく過程を調べた論文（Sato 2026「Vibe to Code」・Jxiv）と、pjdhiro がこのサイトを作ってきたやり方を並べる独立ページ。ずれを手がかりにする・曖昧と具体を行き来する・決めは人の側に残す・言葉の中身を先にすり合わせる・条件と限りを先に書く、の重なりを先に見て、違って見える所を同じことの別の面として並べる。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>Vibe to Code と並べて見る、pjdhiro のやり方</h1>
+                <p class="reader-subtitle">生成 AI との対話で、言葉にならないものを言葉にする</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-25 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/vibe-to-code/READER-vibe-to-code.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<div class="reader-lead glow-card" id="vc-gist"><span class="reader-lead__label">ざっくりいうと</span>
+<p>2026 年に、熟練のデザイナーが生成 AI に日本語で指示しながら、言葉にしにくい意図を言葉にしていく過程を調べた論文が出ました。Sato の「Vibe to Code」です。pjdhiro は、その作業の仕方が自分と似ていると感じました。</p>
+<p>このページは、その論文と、pjdhiro がこのサイトを作ってきたやり方を並べます。似ているところを先に見て、そのあとで、同じことの別の面に見えるところを見ます。ほかの人のやり方との違いの中で、pjdhiro のやり方の輪郭を指し示すためのページです。</p>
+</div>
+
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p>このページは、pjdhiro の言葉に、Claude が調べて答える形で書いています。論文を読み、二つのやり方を並べたのは Claude です。</p>
+<div class="reader-lead"><span class="reader-lead__label">問い</span>
+生成 AI との対話で、言葉にならないものを言葉にしていく、ほかの人の作業と並べると、pjdhiro のやり方はどう見えるか。
+</div>
+
+<div class="reader-lead"><span class="reader-lead__label">今の答え</span>
+重なって見えるのは、AI とのずれを直すものでなく手がかりにすること、曖昧な言葉と具体的な言葉を行き来すること、案は AI に出させて決めるのは人の側に残すこと、話が噛み合わないときに先に言葉の中身をすり合わせること、成り立つ条件と合わない一例を先に書くことです。違って見える所は、どれも同じことを違う位置から見た面として並べられそうです。論文は 5 人の 30 分を外から見ていて、pjdhiro は自分の一年余りを内から記録しています。いちばん大きく見える違いは、論文が、人を何が動かしているか（駆動源）を問いにしていないことで、そこが pjdhiro の追っている所なのかもしれません。
+</div>
+
+<div class="reader-lead"><span class="reader-lead__label">構成</span>
+<ul class="reader-lead__list">
+<li><b><a href="#vc-why">なぜ、ほかの人の作業と並べるのか</a></b>：このページの出発点</li>
+<li><b><a href="#vc-paper">論文は、何をどう調べたか</a></b>：比べる相手</li>
+<li><b><a href="#vc-common">どこが重なって見えるか</a></b>：六つの重なり</li>
+<li><b><a href="#vc-faces">同じことの、別の面に見えるところ</a></b>：四つの面</li>
+<li><b><a href="#vc-answer">並べると、何が見えるか</a></b>：今の答え</li>
+</ul>
+</div>
+
+<p class="reader-lead"><span class="reader-lead__label">注意</span>論文は pjdhiro に触れていません。二つを並べたのは Claude の読みです。論文の訳は Claude の訳です。</p>
+
+<details class="sec" id="なぜほかの人の作業と並べるのか"><summary>なぜ、ほかの人の作業と並べるのか</summary><div class="secbody">
+<p><a id="vc-why"></a>この論文を見つけたとき、pjdhiro は次のように書いて、Claude に調べるよう頼みました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>作業の仕方が私と似てると思う。対比してみたい。</p>
+</blockquote>
+<p>Claude が論文を読んで二つのやり方を並べたあと、pjdhiro は、この作業をどう位置づけるかを、こう言いました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>この repo を作る私のやり方そのものを客観視する際の、メタ認知的な位置付けの作業だと思う。対比的に、私のやり方を指し示す。他者との相違の中で。</p>
+</blockquote>
+<p>pjdhiro は、自分のやり方を読み物「<a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a>」に書いてきました。このページの右側の材料は、おもにそのページから引いています。自分のことは、自分の側からだけでは見えにくいところがあります。似たことをしている他人と並べると、どこが同じで、どこが違うかが、少し外から見えるのかもしれません。</p>
+</div></details><details class="sec" id="論文は何をどう調べたか"><summary>論文は、何をどう調べたか</summary><div class="secbody">
+<p><a id="vc-paper"></a>論文は、北陸先端科学技術大学院大学（JAIST）の知識科学の大学院の Sato, D. が書いた、探索的な質的研究です。2026 年 8 月に JST のプレプリントサーバー Jxiv に置かれました。</p>
+<p>問いは、組織の知の論（野中郁次郎の SECI モデル）が「表出化」と呼ぶ段、つまり言葉にしにくい知（暗黙知）を言葉にする段で、生成 AI との対話がそれをどう変えるか、です。UI/UX の実務を 11〜20 年続けてきたデザイナー 5 人に、ウェブページの最上部の画面を、生成 AI の道具（Figma Make）へ日本語の文字の指示だけで 30 分作ってもらいました。作業のあいだ、考えていることを口に出してもらい（思考発話）、その言葉を分析しています。</p>
+<p>見つけたことは、おもに三つです。</p>
+<ul>
+<li>出力が期待とずれたとき、とくに雰囲気やトーンがずれたとき、人は「自分は何を言いたかったのか」と自分の言葉を見直すことが多かった。</li>
+<li>熟練者は、指示を細かくするだけでなく、「三つ出して」のような相談の形に切り替え、決めるのは自分の側に残した。</li>
+<li>熟練者は、色の番号や大きさの数値まで詰めたあと、わざと「もっと温かい感じ」のような曖昧な言葉に戻って探し直し、また詰めた。論文はこれを戦略的な振動（Strategic Oscillation）と呼んでいます。</li>
+</ul>
+<p>一人だけ、途中で投げ出した人がいました。その人は、数値の指定を足し続け、うまくいかない原因を AI の理解の側に置き続けました。「LP（ランディングページ）」という言葉の中身が、AI とずれたままでした。</p>
+<details class="acc"><summary>詳しく — 論文の鍵の文</summary>
+
+<ul>
+<li>ずれは失敗とは限らない：「such deviations are not necessarily “failures.” Rather, they can function as “cues”」（p.3）。そうしたずれは、必ずしも「失敗」ではなく、手がかりとして働きうる。</li>
+<li>雰囲気のずれと深い振り返り：雰囲気だけがずれた回では 10 回中 7 回、構造だけがずれた回では 6 回中 1 回、自分の言葉や前提への振り返りが出た（Table 9・p.37）。論文は、因果は言えず、記述の傾向だとしています（p.38）。代表の一言は「Actually, what did I mean by ‘modern’?」（p.30）。実は、私は「モダン」で何を言いたかったのだろう。</li>
+<li>戻ることは、探し直し：数値まで届いたあとの曖昧な言葉への戻りは、後退でなく「exploration restart」として働いた（p.44）。20 年の参加者は、最初から細部を決めるより何度か行き来して精度を上げる方が合う、と話した（p.46）。</li>
+<li>確率の鏡：AI は共感して推し量らず、言葉をそのまま受け取って、確率で解釈した出力を返す。そのため使う人は、自分の言葉の曖昧さや暗黙の前提に向き合わされる（pp.47–48）。</li>
+<li>結び：暗黙知が「knowledge that cannot be verbalized without dialogue with an appropriate other」（適切な他者との対話なしには言葉にできない知）だとするなら、AI は、予測できないからこそ、人どうしの対話だけでは届かない振り返りの触媒になるかもしれない（p.58）。</li>
+</ul>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p>Sato, D. (2026). Vibe to Code: Elucidating Strategic Oscillation of Tacit Knowledge in Generative AI Design Workflows — An Exploratory Qualitative Study. Jxiv（<a href="https://doi.org/10.51094/jxiv.5731">DOI</a>。<a href="https://jxiv.jst.go.jp/index.php/jxiv/preprint/view/5731">Jxiv の頁</a>。第 2 版〔2026-08-17・ジャーナルへ投稿した査読前の原稿〕の PDF の本文で確認。CC BY-NC-ND 4.0）。同じ研究は、題を変えて <em>International Journal of Human–Computer Interaction</em> に載っています（2026、"From Vibe to Code—and Back"）。このページが読んだのは Jxiv の版です。</p>
+</details>
+
+</div></details><details class="sec" id="どこが重なって見えるか"><summary>どこが重なって見えるか</summary><div class="secbody">
+<p><a id="vc-common"></a>論文の見つけたことを、pjdhiro がこのサイトを作ってきたやり方と並べると、六つの所が重なって見えます。</p>
+<h3 id="ずれを直すものでなく手がかりにする">ずれを、直すものでなく手がかりにする</h3>
+<p><a id="vc-gap"></a>論文では、AI の出力が期待とずれたことが、自分の言葉を見直すきっかけになっていました。</p>
+<p>pjdhiro は、Claude の書いたものをレビューし、pjdhiro の判断と Claude の判断がずれたところを、その理由と一緒に書き留めてきました（「<a href="love-driven-dev.html#ldd-ai">AI協働の進め方</a>」）。書き留めたものは、Claude が書き始める前に毎回読む指示に入れています。ずれは、消すものというより、次の判断の材料として扱われています。Love駆動開発では、物事が生まれる形にも、異なるもののぶつかりが欠かせない、と見ています（「<a href="love-driven-dev.html#創造はどんな形をしているのか">創造は、どんな形をしているのか</a>」）。</p>
+<h3 id="曖昧な言葉と具体的な言葉を行き来する">曖昧な言葉と、具体的な言葉を行き来する</h3>
+<p><a id="vc-oscillation"></a>論文の熟練者は、具体まで詰めてから、わざと曖昧な言葉に戻って探し直しました。</p>
+<p>pjdhiro は、開発の進み方を、深さ優先探索にたとえています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>深さ優先探索アルゴリズムのようなイメージです。ハズレを前提に全探索していくようなことがあると思います。完璧ではありません。</p>
+</blockquote>
+<p>行き止まりまで進んで戻り、次の道を探す、という形です（「<a href="love-driven-dev.html#ldd-development">開発とは、何を指すか</a>」）。言葉の面でも、Love駆動開発の芯の語は「Love と呼びたいもの」と曖昧なまま置かれ、それを指す言葉は月を指す指にたとえられています（<a href="love-driven-dev.html#ldd-finger">指月のたとえ</a>）。その一方で、Claude に渡す指示は細かく言葉にしています。曖昧なまま持つ語と、細かく詰める文が、同じ作業の中に並んでいるように見えます。</p>
+<h3 id="案は-ai-に出させ決めるのは人の側に残す">案は AI に出させ、決めるのは人の側に残す</h3>
+<p><a id="vc-consult"></a>論文の熟練者は、「三つ出して」と相談の形に切り替え、選ぶのは自分の側に残しました。20 年の経験を持つ参加者は、はじめ、頭の中にあるものを正確に伝えたいと切り替えを渋り、論文はそれを、長い経験から来るコントロールの向き（control orientation）が壁にもなりうる、と書いています（p.42）。</p>
+<p>このサイトでも、Claude が調べて案を出し、pjdhiro がレビューして決めています（「<a href="love-driven-dev.html#ldd-ai">AI協働の進め方</a>」）。Love駆動開発は、全てをコントロールできるわけではないものに対処する、という見方から、手順の形をとっていません（「<a href="love-driven-dev.html#ldd-development-name">開発とは、何を指すか</a>」の名前の段）。論文の言う「コントロールの向きが壁になる」と、同じ所を見ているのかもしれません。</p>
+<h3 id="話が噛み合わないとき先に言葉の中身をすり合わせる">話が噛み合わないとき、先に言葉の中身をすり合わせる</h3>
+<p><a id="vc-align"></a>途中で投げ出した参加者は、「LP」という言葉の中身が AI とずれたまま、数値を足し続けました。論文は、言葉の中身（概念）のすり合わせが、操作のすり合わせより先に要る、を仮の命題として置いています（p.48）。</p>
+<p>pjdhiro が、物理や心理学や経営学など、いろいろな分野に言葉を探しに行った理由も、話が噛み合わないことでした。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>様々な分野に探しに行ったのは、知的好奇心や、重力のように引き寄せられていったことなどもあるでしょうが、対話時に話が噛み合わなくて困ったことが大きい。支障があるので共通の語彙を探したのが背景にあります。</p>
+</blockquote>
+<p>（「<a href="love-driven-dev.html#ldd-background">なぜこの問いに来たか</a>」）</p>
+<h3 id="対話の中で言葉にならないものを言葉にする">対話の中で、言葉にならないものを言葉にする</h3>
+<p><a id="vc-tacit"></a>論文は、暗黙知を、適切な他者との対話なしには言葉にできない知と見て、AI がその他者の一つになりうる、と結んでいます。</p>
+<p>pjdhiro は、この一年の作業を、自分というアプリにたとえています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の言葉：</strong>私というアプリがブラックボックスで、振る舞いと機能を品質テストとして新たな言語でコーディングした、とも言える作業でした。</p>
+</blockquote>
+<p>（「<a href="love-driven-dev.html#ldd-my-app">私というアプリ</a>」）。中身の見えない自分を、振る舞いから言葉にしていく作業です。pjdhiro のブログの記事（pjdhiro が観測したことを Claude が記事に整えたもの）にも、AI と組むようになって「私は『意図を伝える人』になった」とあります（<a href="https://uminomae.github.io/pjdhiro/20260210-llm-knowledge-management/">ナレッジ管理に SaaS を使っている方へ</a>）。</p>
+<h3 id="成り立つ条件と合わない一例を先に書く">成り立つ条件と、合わない一例を先に書く</h3>
+<p><a id="vc-conditions"></a>論文は、自分の枠組みが成り立たない条件（AI の出力がずれない・振り返る習慣が無い・言葉の中身を共有できない・日本語の外）を先に書き、どこでも成り立つ心の模型ではない、と断っています（pp.11–12）。投げ出した一人の例も、ほかの説明を一つずつ表で検討しながら厚く読んでいます（pp.50–53）。</p>
+<p>Love駆動開発は、題に β を付け、「Love と呼びたいもの」と言い切らずに置いています。参照している論文も、論証のためでなく、視点の足場として置かれています（「<a href="love-driven-dev.html#ldd-ai">AI協働の進め方</a>」）。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>様々な論文を参照してますが、論証のためではなく、視点や理解の足場として有用かもしれないので用意している、という感じです。</p>
+</blockquote>
+<p>条件と限りを先に置く構えは、二つに共通して見えます。</p>
+</div></details><details class="sec" id="同じことの別の面に見えるところ"><summary>同じことの、別の面に見えるところ</summary><div class="secbody">
+<p><a id="vc-faces"></a>違って見えるところも、どちらが良いかでなく、同じことを違う位置から見た面として並べます。</p>
+<h3 id="外から-5-人を-30-分内から一人を一年余り">外から 5 人を 30 分、内から一人を一年余り</h3>
+<p><a id="vc-outside-inside"></a>論文は、ほかの人の作業を、口に出してもらった言葉と、二人の研究者の符号づけで外から見ています。</p>
+<p>pjdhiro は、自分の作業を内から見ています。その記録（変更の履歴・判断のずれ・規約）は、このサイトの公開の場にそのまま残っていて、一年の軌跡も別のページで読めます（「<a href="love-trajectory.html">私というアプリを、読めるようにした一年</a>」）。論文が外から測った一回の環を、pjdhiro は自分の上で一年回し続けて記録している、とも読めます。</p>
+<h3 id="鏡が映すもの">鏡が映すもの</h3>
+<p><a id="vc-mirror"></a>論文は、AI を「確率の鏡」と呼びました。共感せず、言葉をそのまま受け取るので、使う人が自分の言葉の曖昧さに向き合わされる、という意味です。</p>
+<p>このサイトの作り方では、鏡に映るものがもう一つ増えているように見えます。pjdhiro は、Claude は人間の模倣で、Claude が誤解したことは読者も高い確率で誤解する、と見て、Claude をレビューの役にも使っています（このサイトの規約の「<a href="https://github.com/uminomae/project-design-theory/blob/main/docs/rules/stance.md">pjdhiro の見方と判断の仕方</a>」2-8）。鏡には、自分の言葉の曖昧さと、ほかの人の読み違いの、両方が映っているのかもしれません。</p>
+<h3 id="ai-の持ち場">AI の持ち場</h3>
+<p><a id="vc-roles"></a>論文の著者は、AI（Claude）を英語の校正にだけ使い、分析と理論と解釈は自分のものだ、と論文の終わりで開示しています（p.58）。</p>
+<p>このサイトでは、Claude が調べて地の文を書き、pjdhiro の言葉は引用のカードで分けて見せています（「<a href="love-driven-dev.html#ldd-ai">AI協働の進め方</a>」）。AI の持ち場の広さは違いますが、どちらも、誰が何をしたかを読む人に見える形で書いています。</p>
+<h3 id="ずれの原因をどこに置くか">ずれの原因を、どこに置くか</h3>
+<p><a id="vc-attribution"></a>論文では、うまくいった 4 人は、ずれの原因を自分の言葉の側に置き、投げ出した一人は、AI の理解の側に置き続けました（p.44）。</p>
+<p>pjdhiro のやり方では、書き留めたずれは「Claude が繰り返す誤り」として、AI の側に名前が置かれています。けれども、直す先は、pjdhiro が Claude に毎回渡す指示です。人の判断を期待する出力として書き、前に直した誤りがくり返されていないかを確かめる、回帰テストにたとえられています（「<a href="love-driven-dev.html#ldd-ai">AI協働の進め方</a>」）。原因を内か外かの一方に置かず、両方に置いて回しているように見えます。AI に論を預けることについて、pjdhiro は次のように振り返っています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>私にとっての AI 協働のこの一年は、まさに、私と限りのない AI という世界の頭脳との安心感でした。臍の緒でつながり、安心して論を預ける。</p>
+</blockquote>
+<p>（「<a href="love-driven-dev.html#ldd-safety">安心・依存と信頼は、どう違うのか</a>」）</p>
+</div></details><details class="sec" id="並べると何が見えるか"><summary>並べると、何が見えるか</summary><div class="secbody">
+<p><a id="vc-answer"></a>論文の枠組みは、期待する、ずれにぶつかる、振り返る、変わる、という環です（ECRT）。創造の五段階（場・波・縁・渦・束）の見方で読んでみると、ずれにぶつかる所が、異なるものが出会う縁に、変わったあとの言葉が渦に当たるように見えます。気づく前の自分から、気づいた自分へ変わる小さな一回が、30 分のあいだに何度も起きている、と読めるかもしれません。</p>
+<p>論文は、それを、暗黙知を言葉にする「表出化」の名前で書いています。熟練者が相談の形に切り替えた理由は、人ごとに違ったと書かれています。一人は「その方が速い」、別の一人は「AI の方が選択肢を多く持っているかもしれない」と話しました（pp.41–42）。けれども、何が人をそこへ駆っているのかは、論文の問いに入っていません。そこが、Love駆動開発が追っている駆動源の所で、二つのやり方がいちばん離れて見える所です。</p>
+<p>もう一つ、論文の結びの「適切な他者」は、AI を他者の一人に加えるところまでを言っています。pjdhiro のやり方では、自分と Claude のあいだに、二人で読み書きする公開の記録（このサイトと、その変更の履歴）が置かれています。pjdhiro は、セッションをまたいで覚えていない Claude と同じように、自分も記録を読み取って記憶を組み直しているのかもしれない、と見ています（このサイトの規約の「<a href="https://github.com/uminomae/project-design-theory/blob/main/docs/rules/stance.md">pjdhiro の見方と判断の仕方</a>」1-2）。他者との対話に、記録という三つめのものが加わっている、と見ることもできそうです。</p>
+</div></details><details class="sec" id="方法と出典"><summary>方法と出典</summary><div class="secbody">
+<p><a id="vc-method"></a>Claude が、論文の Jxiv の第 2 版（全 65 頁）を PDF の本文で読み、方法と見つけたことを頁つきで控えました。そのうえで、pjdhiro のやり方の側の材料を、読み物「<a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a>」と pjdhiro のブログから引き、似て見えるところを先に、違って見えるところをあとに並べました。並べ方と読みは Claude のものです。</p>
+<details class="acc"><summary>出典</summary>
+
+<ul>
+<li>Sato, D. (2026). Vibe to Code: Elucidating Strategic Oscillation of Tacit Knowledge in Generative AI Design Workflows — An Exploratory Qualitative Study. Jxiv（<a href="https://doi.org/10.51094/jxiv.5731">DOI</a>。第 2 版の PDF の本文で確認。CC BY-NC-ND 4.0）</li>
+<li>pjdhiro「ナレッジ管理に SaaS を使っている方へ」（2026-02-10、<a href="https://uminomae.github.io/pjdhiro/20260210-llm-knowledge-management/">pjdhiro のブログ</a>）</li>
+</ul>
+</details>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="love-trajectory.html">私というアプリを、読めるようにした一年</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
