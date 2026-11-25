@@ -348,6 +348,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/me-unnoticed/READER-me-unnoticed.md",
+        ROOT / "scripts/reader-me-unnoticed-template.html",
+        ROOT / "reader/me-unnoticed.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/nondual/READER-nondual.md",
         ROOT / "scripts/reader-nondual-template.html",
         ROOT / "reader/nondual.html",

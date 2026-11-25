@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/me-unnoticed.html を直接編集しないでください。
+  正本:   knowledge/research/me-unnoticed/READER-me-unnoticed.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「見られる私（me）とは」のページです（工事中）。I を主体に生きていると、見られる私（me）には気づきにくい、という pjdhiro の見方に、四つの入口（映画『シックス・センス』・カフカ『城』〔Das Schloß 1926〕・ジェームズ『心理学原理』1890 第 10 章の社会の自己・クーリー 1902 の鏡に映る自己とミード 1934 の me）から答える。どの節も単独で読めるように書いてある。
+  映画は見ておらず、あらすじと解説記事で確かめた範囲だけを書く。映画の結末には触れない。要約するときも、結末を書き足さないこと。
+  作品・論と問いの当てはめは Claude の読み。カフカ・ジェームズ・クーリー・ミードの訳は Claude。
+  pjdhiro 本人の言葉は「pjdhiro の見方：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>見られる私（me）とは | Project Design</title>
+    <meta name="robots" content="noindex">
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/me-unnoticed.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="見られる私（me）の独立ページ。I を主体に生きていると、見られる私（me）には気づきにくい。映画『シックス・センス』の少年が打ち明けること、カフカ『城』の測量士 K.、ウィリアム・ジェームズの社会の自己、クーリーの鏡に映る自己とミードの me から、それぞれ単独で読める節で見る。映画の結末には触れない。">
+    <meta property="og:title" content="見られる私（me）とは">
+    <meta property="og:description" content="見られる私（me）の独立ページ。I を主体に生きていると、見られる私（me）には気づきにくい。映画『シックス・センス』の少年が打ち明けること、カフカ『城』の測量士 K.、ウィリアム・ジェームズの社会の自己、クーリーの鏡に映る自己とミードの me から、それぞれ単独で読める節で見る。映画の結末には触れない。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/me-unnoticed.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="見られる私（me）とは">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-25">
+    <meta property="article:modified_time" content="2026-11-25">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "見られる私（me）とは",
+          "description": "見られる私（me）の独立ページ。I を主体に生きていると、見られる私（me）には気づきにくい。映画『シックス・センス』の少年が打ち明けること、カフカ『城』の測量士 K.、ウィリアム・ジェームズの社会の自己、クーリーの鏡に映る自己とミードの me から、それぞれ単独で読める節で見る。映画の結末には触れない。",
+          "keywords": "me, 見られる私, I と me, 社会的自己, social self, 鏡に映る自己, looking-glass self, シックス・センス, The Sixth Sense, カフカ, 城, Das Schloss, ウィリアム・ジェームズ, William James, クーリー, ミード, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/me-unnoticed.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/me-unnoticed.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-25",
+          "dateModified": "2026-11-25",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "見られる私（me）"}, {"@type": "Thing", "name": "社会的自己"}, {"@type": "Thing", "name": "鏡に映る自己"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方の言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「見られる私（me）とは」のページです（工事中）。見られる私（me）の独立ページ。I を主体に生きていると、見られる私（me）には気づきにくい。映画『シックス・センス』の少年が打ち明けること、カフカ『城』の測量士 K.、ウィリアム・ジェームズの社会の自己、クーリーの鏡に映る自己とミードの me から、それぞれ単独で読める節で見る。映画の結末には触れない。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>見られる私（me）とは</h1>
+                <p class="reader-subtitle">I を主体に生きると、me は幽霊のように気づかれない</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-25 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/me-unnoticed/READER-me-unnoticed.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<div class="reader-lead glow-card" id="mg-gist"><span class="reader-lead__label">ざっくりいうと</span>
+<p>英語の me は、見られる私・知られる私を指す語として、心理学者のウィリアム・ジェームズが使いました。人は、自分を見る側（I）を主にして生きています。そのため、見られる側の私（me）には、気づきにくいのかもしれません。</p>
+<p>このページは、映画『シックス・センス』、カフカの小説『城』、ジェームズの心理学、クーリーとミードの社会学の、四つの入口から me を見ます。どの節も、それだけで読めるように書いています。映画の結末には触れません。</p>
+</div>
+
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p>このページは、pjdhiro の言葉に、Claude が調べて答える形で書いています。</p>
+<div class="reader-lead"><span class="reader-lead__label">問い</span>
+見られる私（me）は、どこにあって、なぜ気づかれにくいのか。
+</div>
+
+<div class="reader-lead"><span class="reader-lead__label">今の答え</span>
+ジェームズは、人を認める人の数だけ、その人の社会の自己がある、と書きました。me の一部は、ほかの人の心の中の像や、呼び名や、記録の中にあります。そこは、見る側の私（I）から、まっすぐには見えません。I を主にして生きていると、me が誰にも見られていなくても、他人に決められていても、見たいもので埋めて気づかないことがあるのではないか。これが、このページの仮説です。
+</div>
+
+<div class="reader-lead"><span class="reader-lead__label">構成</span>
+<ul class="reader-lead__list">
+<li><b><a href="#mg-origin">呼吸の音から</a></b>：なぜ me を問うのか</li>
+<li><b><a href="#mg-sixth-sense">『シックス・センス』：自分が死んでいると知らない死者</a></b>：見られていないことに気づかない</li>
+<li><b><a href="#mg-castle">カフカ『城』：名のる私と、決められる私</a></b>：me は、自分で名のるだけでは決まらない</li>
+<li><b><a href="#mg-james">ジェームズ：認める人の数だけ、社会の自己がある</a></b>：me という語の出どころ</li>
+<li><b><a href="#mg-mirror">鏡に映る自己：クーリーとミード</a></b>：me は、想像の中の他人の目で組まれる</li>
+<li><b><a href="#mg-core">四つを重ねる：I を主体に生きると、me は幽霊のように</a></b>：どの入口から来ても着く所</li>
+</ul>
+</div>
+
+<p class="reader-lead"><span class="reader-lead__label">注意</span>一人の見方から立てた問いへの答えで、論証ではありません。作品と論は、問いを考える足場として並べています。カフカ・ジェームズ・クーリー・ミードの訳は Claude の訳です。映画は見ておらず、あらすじと解説の記事で確かめた範囲だけを書いています。</p>
+
+<details class="sec" id="呼吸の音から"><summary>呼吸の音から</summary><div class="secbody">
+<p><a id="mg-origin"></a>このページは、別のページ「<a href="to-james.html#tj-breath">ジェームズに辿り着くまで</a>」から始まりました。pjdhiro は、ある朝の起きがけに、見られる私（me）がいないまま、乾いた呼吸の音だけが聞こえる経験をしました。その呼吸の音から、一本の映画を思い出しました。その映画の読み方を Claude と話していたとき、pjdhiro は次のように言いました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>me だけを深掘るのは良いかもしれない。I を主体に生きてるから。</p>
+</blockquote>
+<p>見る私（I）は、いつも何かを見ている側にいます。見られる私（me）は、その I から見ると、見ているものの外にあることが多い。このページは、その me の側だけを、作品と論から見ていきます。</p>
+</div></details><details class="sec" id="シックスセンス自分が死んでいると知らない死者"><summary>『シックス・センス』：自分が死んでいると知らない死者</summary><div class="secbody">
+<p><a id="mg-sixth-sense"></a>『シックス・センス』は、M・ナイト・シャマランの 1999 年の映画です。死者が見える少年コールと、児童心理学者のマルコムの話です。死者が近くに来ると、気温が下がります（冷えの描き方は「<a href="to-james.html#tj-breath">ジェームズに辿り着くまで</a>」に書いています）。</p>
+<p>コールは、マルコムに、自分には死んだ人が見えると打ち明けます。そして、その死者たちは、自分が死んでいることを知らず、自分が見たいものだけを見ている、と話します。</p>
+<p>ここで見られる私（me）を、ほかの人の目に映り、気づかれている私、と置いてみます。コールの言う死者は、歩き、話し、経験し続けています。見る側の I は続いています。けれども、生きている人の目には映りません。誰からも見られていない me です。それでも死者は、そのことに気づきません。見たいものだけを見ているからです。</p>
+<p>I を主にして生きていると、me が欠けていても、I は見たいもので、その欠けを埋めてしまうのかもしれません。この映画を見た人には、コールの打ち明けの言葉が、あとでもう一度、別の重さで響くかもしれません。</p>
+<p>この形は、<a href="#mg-core">四つを重ねる節</a>で、ほかの入口と並べます。</p>
+<details class="acc"><summary>出典 — 『シックス・センス』のあらすじと冷え</summary>
+
+<p>映画そのものではなく、あらすじと解説の記事で確かめました。英語版 Wikipedia の「<a href="https://en.wikipedia.org/wiki/The_Sixth_Sense">The Sixth Sense</a>」の Plot の節：コールがマルコムに、死者が見えると打ち明けること。コールの話した死者の様子を、ページは「dead people not knowing they are dead and only seeing what they want to see」と言い換えています。台詞の一字一句ではありません。冷えの描き方は、Navarro, M. (2019-11-27). 'The Sixth Sense' and How M. Night Shyamalan Primed Viewers for One of the Scariest Scenes of All Time. <em>SlashFilm</em>（<a href="https://www.slashfilm.com/570758/scariest-scene-in-the-sixth-sense">記事</a>）と、Shmoop の学習ガイド「Cold」（<a href="https://www.shmoop.com/study-guides/sixth-sense/cold-symbol.html">ページ</a>）で確かめました。要約と訳は Claude。</p>
+</details>
+
+</div></details><details class="sec" id="カフカ城名のる私と決められる私"><summary>カフカ『城』：名のる私と、決められる私</summary><div class="secbody">
+<p><a id="mg-castle"></a>映画の話から、pjdhiro はすぐに、カフカの小説『城』を思い出しました。『城』は、フランツ・カフカが書き終えずに残した長編で、1926 年に、遺稿から友人のマックス・ブロートが出しました。主人公は、名前の頭文字だけで呼ばれる K. です。</p>
+<p>雪の夜、K. は城の下の村に着き、宿屋の藁布団で眠ります。城の執事の息子に起こされ、村は城のもので、伯爵の許しが無ければ泊まれない、と言われます（初版 p.2）。K. は、自分は伯爵が呼び寄せた測量士だ、と名のります（p.4）。</p>
+<p>息子は、城へ電話で問い合わせます。一度目の返事は、測量士の跡など無い、嘘つきの浮浪者だ、というものでした（p.7）。すぐに二度目の電話が鳴り、誤りだった、と伝えられます。K. は、城が自分を測量士に任じたのだ、と受け取ります（p.8）。</p>
+<p>次の日、K. は自分で城に電話をかけ、測量士の助手だと名のります。電話の向こうは、助手の名は別の二人だ、と言います。K. は「では、私は誰なのですか」と聞きます。答えは「お前は古い助手だ」でした。「主人はいつ城へ来てよいのですか」には「決して」と答えます（pp.39–40）。</p>
+<p>村の宿の女将は、K. にこう言います。あなたは城の者でもなく、村の者でもなく、何者でもない。けれども、やはり何かではある、よそ者で、余計で、どこでも邪魔になる者だ（pp.92–93）。村長は、あなたは自分で言うとおり測量士として受け入れられているが、残念ながら測量士は要らない、と言います（p.113）。</p>
+<p>ここで見られる私（me）を、ほかの人の心の中の像や呼び名として置いてみます。K. は、何度も「測量士だ」と名のります。名のっているのは、見る側の I です。けれども、K. が誰であるかは、城の電話の声や、女将や村長の言葉の中で、そのつど決まっていきます。K. の me は、K. の手の届かない所にあります。K. は、それを受け取らずに、城へたどり着こうとし続けます。</p>
+<p>me は、自分で名のるだけでは決まらない。『城』は、その形を、長い一つの話として見せているのではないか。</p>
+<p>この形は、<a href="#mg-core">四つを重ねる節</a>で、ほかの入口と並べます。</p>
+<details class="acc"><summary>出典 — カフカ『城』</summary>
+
+<p>Kafka, F. (1926). <em>Das Schloß</em>. München: Kurt Wolff（初版。編者はマックス・ブロート。Wikisource の書誌の欄で確かめた）。ドイツ語版 Wikisource の「<a href="https://de.wikisource.org/wiki/Das_Schlo%C3%9F">Das Schloß</a>」の、初版の頁の走査と照らした本文で読みました（本文照合済）。頁は初版の頁です。章は初版の章割りで、のちの批判版（1982）とは章の番号が違います。</p>
+<ul>
+<li>第 1 章（<a href="https://de.wikisource.org/wiki/Das_Schlo%C3%9F/Das_erste_Kapitel">本文</a>）p.4：「daß ich der Landvermesser bin, den der Graf hat kommen lassen」。p.7：「keine Spur von Landvermesser, ein gemeiner lügnerischer Landstreicher」。p.8：「Das Schloß hatte ihn also zum Landvermesser ernannt.」</li>
+<li>第 2 章（<a href="https://de.wikisource.org/wiki/Das_Schlo%C3%9F/Das_zweite_Kapitel">本文</a>）pp.39–40：「„Wer bin ich also?“ … „Du bist der alte Gehilfe.“」「„Wann darf mein Herr ins Schloß kommen?“ „Niemals“」</li>
+<li>第 4 章（<a href="https://de.wikisource.org/wiki/Das_Schlo%C3%9F/Das_vierte_Kapitel">本文</a>）pp.92–93：「Sie sind nicht aus dem Schloß, Sie sind nicht aus dem Dorfe, Sie sind nichts. Leider aber sind Sie doch etwas, ein Fremder」</li>
+<li>第 5 章（<a href="https://de.wikisource.org/wiki/Das_Schlo%C3%9F/Das_f%C3%BCnfte_Kapitel">本文</a>）p.113：「Sie sind als Landvermesser aufgenommen, wie Sie sagen, aber, leider, wir brauchen keinen Landvermesser.」</li>
+</ul>
+<p>訳と要約は Claude。</p>
+</details>
+
+</div></details><details class="sec" id="ジェームズ認める人の数だけ社会の自己がある"><summary>ジェームズ：認める人の数だけ、社会の自己がある</summary><div class="secbody">
+<p><a id="mg-james"></a>見られる私・知られる私を me と呼ぶ使い方は、哲学者・心理学者のウィリアム・ジェームズ（1842–1910）にさかのぼります。ジェームズは、自己の全体は知る側と知られる側の二重になっていて、知る側を I、知られる側を Me と呼ぶ、と書きました（その段は「<a href="william-james-self-ja.html#bp1">ウィリアム・ジェームズの「I と Me」を、原典で読む</a>」にあります）。</p>
+<p>1890 年の『心理学原理』で、ジェームズは、Me を、その人が「自分の」と呼びうるものの総和だ、と書きます。体や心の力だけでなく、服・家・家族・評判・仕事まで入ります（p.291）。その中身を、物の自己・社会の自己・精神の自己などに分けます（p.292）。</p>
+<p>社会の自己について、ジェームズは、人の社会の自己とは、仲間から受け取る認めのことだ、と書きます。そして、人がその人を認め、心の中にその人の像を持つ人の数だけ、社会の自己がある、と続けます（p.294）。</p>
+<p>その直前に、ジェームズは、次の場面を書いています。社会の中に放たれて、誰からもまったく気づかれずにいること、ほど残酷な罰は考えられない。入っても誰も振り向かず、話しても誰も答えず、会う人がみな、そこにいないもののように扱うなら、やがて怒りと無力な絶望が湧き、体の拷問のほうがまだ救いになるだろう（pp.293–294）。</p>
+<p>恋をしている人については、相手の心の中にある自己が認められないあいだ、その人は、自分の意識にとって「無い」のだ、とも書きます（p.294）。</p>
+<p>ジェームズの書き方に当てると、me の一部は、自分の中ではなく、ほかの人の心の中の像として在ることになります。I は、その像を、直に見ることができません。</p>
+<p>pjdhiro は、I を目撃者（見る側）と置くと、指させるものは、考えも「私」という思いも、全部 me に入る、と見ています（「<a href="to-james.html#tj-composite">ジェームズに辿り着くまで</a>」の合成の章）。このページが見ているのは、その me のうち、ほかの人の目の中にある側です。</p>
+<p>この形は、<a href="#mg-core">四つを重ねる節</a>で、ほかの入口と並べます。</p>
+<details class="acc"><summary>出典 — ジェームズ『心理学原理』第 10 章の社会の自己</summary>
+
+<p>James, W. (1890). <em>The Principles of Psychology</em>, vol.1. New York: Holt, 第 10 章「The Consciousness of Self」pp.291–294（<a href="http://psychclassics.yorku.ca/James/Principles/prin10.htm">psychclassics の第 10 章</a>と<a href="https://archive.org/details/theprinciplesofp01jameuoft">トロント大の走査</a>。本文照合済）。</p>
+<ul>
+<li>「A man's Social Self is the recognition which he gets from his mates.」（p.293）</li>
+<li>「No more fiendish punishment could be devised, were such a thing physically possible, than that one should be turned loose in society and remain absolutely unnoticed by all the members thereof.」（p.293）。続けて、誰も振り向かず、答えず、「'cut us dead'」して在らぬもののように扱えば、「a kind of rage and impotent despair」が湧く、と書く（pp.293–294）。</li>
+<li>「a man has as many social selves as there are individuals who recognize him and carry an image of him in their mind.」（p.294）</li>
+<li>「To his own consciousness he is not, so long as this particular social self fails to get recognition」（p.294。恋する相手の心の中の自己について）</li>
+</ul>
+<p>訳は Claude。</p>
+</details>
+
+</div></details><details class="sec" id="鏡に映る自己クーリーとミード"><summary>鏡に映る自己：クーリーとミード</summary><div class="secbody">
+<p><a id="mg-mirror"></a>見られる私（me）が、ほかの人の目の中で組まれる、という見方は、ジェームズのあとの社会学者たちが広げました。</p>
+<p>社会学者のチャールズ・ホートン・クーリーは、1902 年の本『人間性と社会秩序』で、この種の社会の自己を、映し出された自己、または「鏡に映る自己（looking-glass self）」と呼べる、と書きました（pp.151–152）。人が鏡に映る顔や姿を見て、自分のものだから気にかけるように、人は想像の中で、ほかの人の心に映る自分の見た目・ふるまい・目当て・行い・性格を感じ取り、それに心を動かされる、とします。</p>
+<p>クーリーは、その自己の思いには三つの要素がある、と書きます。相手に自分がどう見えるかの想像、その見え方を相手がどう判断するかの想像、そして誇りや屈辱のような自己の感じです。鏡のたとえは、二つ目の要素（想像された判断）を思わせにくいが、これがいちばん大事だ、とも書いています（p.152）。</p>
+<p>社会学者・哲学者のジョージ・ハーバート・ミードは、もう一歩進めて、me を、自分が引き受けた他者の態度の組み上がった集まりだ、としました（1934 年の講義録 p.175）。ミードでは、me の全体が、社会から組まれます。ジェームズとの分け方の違いは、「<a href="to-james.html#tj-composite">ジェームズに辿り着くまで</a>」の寄り道の畳みと、読み物「<a href="nondual.html#nd-mead">不二（非二元）とは</a>」に書いています。</p>
+<p>クーリーの書き方に当てると、me に映っているのは、相手の心そのものではなく、相手の心を想像した像です。I は、その像を、自分の見たいように想像してしまうこともあるのかもしれません。</p>
+<p>この形は、<a href="#mg-core">四つを重ねる節</a>で、ほかの入口と並べます。</p>
+<details class="acc"><summary>出典 — クーリーとミード</summary>
+
+<p>Cooley, C. H. (1902). <em>Human Nature and the Social Order</em>. New York: Charles Scribner's Sons, 第 5 章「The Social Self — 1. The Meaning of "I"」pp.151–152（<a href="https://archive.org/details/cu31924032559316">Internet Archive のコーネル大の所蔵</a>。OCR の文字で読んだ。本文照合済）。「A social self of this sort might be called the reflected or looking-glass self」。三つの要素「the imagination of our appearance to the other person; the imagination of his judgment of that appearance, and some sort of self-feeling, such as pride or mortification」（p.152）。</p>
+<p>Mead, G. H. (1934). <em>Mind, Self, and Society</em>, ed. C. W. Morris. Chicago: University of Chicago Press, 第 22 節「The 'I' and the 'me'」p.175（<a href="http://web.archive.org/web/20261005153913/https://brocku.ca/MeadProject/Mead/pubs2/mindself/Mead_1934_22.html">Mead Project の頁の Wayback の写し</a>。本文照合済）。「the organized set of attitudes of others which one himself assumes」。</p>
+<p>訳は Claude。</p>
+</details>
+
+</div></details><details class="sec" id="四つを重ねるi-を主体に生きるとme-は幽霊のように"><summary>四つを重ねる：I を主体に生きると、me は幽霊のように</summary><div class="secbody">
+<p><a id="mg-core"></a>四つの入口を並べると、見られる私（me）の在り方に、違う形が見えてきます。三つの場面を、me がどこで決まるかと、見る側の I で何が起きているかで並べてみます。</p>
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>場面</th>
+<th>me はどこで決まるか</th>
+<th>I の側で起きていること</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>コールの言う死者（『シックス・センス』）</td>
+<td>生きている人の目。そこに映らない</td>
+<td>見たいものだけを見て、映っていないことに気づかない</td>
+</tr>
+<tr>
+<td>測量士 K.（『城』）</td>
+<td>城の電話の声と、村の言葉</td>
+<td>「測量士だ」と名のり続け、決められた me を受け取らない</td>
+</tr>
+<tr>
+<td>起きがけの pjdhiro（「<a href="to-james.html#tj-breath">ジェームズに辿り着くまで</a>」）</td>
+<td>そのとき、見られる私がいなかった</td>
+<td>呼吸の音は聞こえていた。me がいなかったことに、あとで気づいた</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>ジェームズは、誰にも気づかれないことは、怒りと絶望を生む罰だと書きました（<a href="#mg-james">pp.293–294</a>）。けれども、コールの言う死者には、その怒りが起きていないように見えます。それは、見たいものだけを見ているからではないか。I を主にして生きていると、me の欠けは、I の見たいもので埋められ、幽霊のように気づかれないままになるのかもしれません。</p>
+<p>K. は、反対に、認められないことに気づき、闘い続けます。けれども、闘っているのは、やはり I の側に見えます。K. の me は、城の声の中で決まり続けます。</p>
+<p>起きがけの pjdhiro は、三つ目の形です。I の側で、me がいなかったことに、あとから気づきました。気づいたことで、pjdhiro は、自分が I と me の合成で生きている、と感じました。</p>
+<p>クーリーの言う鏡に映る自己は、この三つに共通する仕組みを指しているように見えます。クーリーの書き方では、me は、相手の目に映った像を想像したものです。その想像は、I が見たいように組んでしまうこともありそうです。</p>
+<p>ジェームズは、I と Me を、別々のものでなく、見分けられた二つの面と書きました（その段は「<a href="william-james-self-ja.html#bp2">ウィリアム・ジェームズの「I と Me」を、原典で読む</a>」にあります）。二つは、分けて書けても、切り離されてはいません。それでも、I を主にして生きていると、me の側は見えにくい。me だけを取り出して見ることは、ふだん見えにくい自分の側に、気づき直すことなのかもしれません。</p>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="to-james.html">ジェームズに辿り着くまで</a> ・
+                <a href="william-james-self-ja.html">ウィリアム・ジェームズの「I と Me」を、原典で読む</a> ・
+                <a href="nondual.html">不二（非二元）とは</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
