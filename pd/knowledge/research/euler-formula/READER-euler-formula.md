@@ -125,6 +125,8 @@ e 以外の数でも、同じように「数の iθ 乗」を決めると、円�
 
 <a id="eu-more"></a>独立ページ「[代数学の基本定理](fundamental-theorem-of-algebra.html)」で見た、z<sup>n</sup> = 1 の答え（円を n 等分する点）は、オイラーの式で e<sup>2πik/n</sup>（k = 0、1、…、n − 1）と書けます。
 
+円の上を回る点の影が波になることを、家のコンセントの電気に当てると、電圧と電流を同じ速さで回る二本の針で書けます。それは独立ページ「[交流回路のフェーザ](ac-phasor.html)」にあります。
+
 数学者たちがオイラーの等式を美しいと呼んできたことと、その美しさを脳で測った研究は、読み物「[美とは](beauty.html#bt-euler)」の章「数学者が、いちばん美しいと呼んできた式」にあります。
 
 i を掛けて 90 度回ることと、オイラーの式を、人の意識に照らして推論した探索は、記録「[複素平面の数式ごとに、人の意識との構造の類似を推論する](https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/julia-potential/EXPLORE-formulas-consciousness-20261125.md)」の節「i を掛けること（90 度の回転）と、i² = −1」と節「指数関数と対数関数（オイラーの式・対数らせん・log の多価）」にあります。

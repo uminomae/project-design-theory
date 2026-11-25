@@ -425,6 +425,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/ac-phasor/READER-ac-phasor.md",
+        ROOT / "scripts/reader-ac-phasor-template.html",
+        ROOT / "reader/ac-phasor.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/reasoning/READER-reasoning.md",
         ROOT / "scripts/reader-reasoning-template.html",
         ROOT / "reader/reasoning.html",
