@@ -52,6 +52,7 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | `clausius-1857-art-der-bewegung.md` | R. Clausius, "Ueber die Art der Bewegung, welche wir Wärme nennen", *Annalen der Physik und Chemie* 100 (1857), pp.353–380（独語・28 頁） | 全文の訳（2026-11-24・#175）。題と本文 94 段・脚注 5。パースは題を挙げず、クラウジウスの気体の運動論の最初の論文として Claude が当てた（パースは「1856 年」と書くが、この論文は 1857 年 1 月の日付で、その年の号に載る）。原文は独語で、独語の本文から訳した。文字起こしが無いので、誌面の走査の OCR を下敷きに、読む役六つが全 28 頁を画像と照らして原文と式を起こし訳の案を付け、照らす役六つが段ごとに照らし、Claude がつないで入れた。誌面の誤植（節の番号の 10. の抜け・Wirklickeit）は訳注に書いた。人の校閲はまだ。1893 の ¶20 が「1856 年にクラウジウスとクレーニッヒの注目すべき論文」と書く。ページ `pd/reader/clausius-art-der-bewegung-ja.html` |
 | `maxwell-1860-dynamical-theory-of-gases.md` | J. C. Maxwell, "Illustrations of the Dynamical Theory of Gases", *Philosophical Magazine*, 4th ser., 19 (1860), pp.19–32（Part I）・20 (1860), pp.21–37（Part II・III）（英語・31 頁） | 全文の訳（2026-11-24・#175）。第 I〜III 部、題と本文 137 段・脚注 1。1859 年 9 月にアバディーンの英国学術協会で読んだ研究の本論。一覧の範囲（20 巻 pp.21–37）に第 III 部と全体のまとめが入るので、第 III 部も訳した。文字起こしが無いので、誌面の走査の OCR を下敷きに、読む役七つが全 31 頁を画像と照らして原文と式を起こし訳の案を付け、照らす役七つが段ごとに照らし、Claude がつないで入れた。式の誤植と見たもの（(54) の係数・(64) の添字ほか）は直さずに訳注に書いた。人の校閲はまだ。1893 の ¶20 が「マクスウェルが英国学術協会で、この主題についての彼の研究のうち最初の、そして最も重要なものを読み上げていた」と書く。ページ `pd/reader/maxwell-dynamical-theory-of-gases-ja.html` |
 | `buckle-1857-history-of-civilization-in-england.md` | Henry Thomas Buckle, *History of Civilization in England*, vol. 1, London: John W. Parker and Son, 1857, 第 1 章 pp.18–33 | 本の抜きの訳（2026-11-24・#175）。p.18「Rejecting, then, the metaphysical dogma of free will」の段から章の本文の終わりまで、17 段と脚注 19 本（注19〜注37。番号は誌面のまま）。パースは章も頁も挙げず、「この同じ考え」（偶然が秩序を生む）を用いた所として、殺人・自殺・結婚・宛名を書き忘れた手紙の統計を並べるこの所を Claude が当てた。文字起こしが無いので、初版の走査（IA `10278775bsb`・p = n − 27）の OCR を下敷きに、読む役四つが十六頁を画像と照らして起こし訳の案を付け、照らす役四つが段ごとに照らし、Claude がつないで入れた。誌面のまま置いたもの（注19 の For.・注37 の Médécine）は訳注に書いた。人の校閲はまだ。1893 の ¶20 が「1857 年には、バックルの『文明史』第一巻が、この同じ考えを用いたことによって、たいへんな評判を呼んでいた」と書く。ページ `pd/reader/buckle-history-of-civilization-ja.html` |
+| `quetelet-1846-lettres-sur-la-theorie-des-probabilites.md` | Adolphe Quetelet, *Lettres à S. A. R. le duc régnant de Saxe-Cobourg et Gotha, sur la théorie des probabilités, appliquée aux sciences morales et politiques*, Bruxelles: M. Hayez, 1846, 第 17〜22 書簡 pp.113–156・第 30 書簡 pp.213–216（仏語） | 本の抜きの訳（2026-11-25・#175）。七通、119 段と脚注 2。パースは題だけを挙げるので、偶然が秩序を生む考えを述べる書簡を三つの案にして pjdhiro に示し、「誤差の秩序から平均人まで」を選んだ。原文は仏語で、仏語の本文から訳した。Internet Archive の走査（`lettressarleduc00quetgoog`・p.N＝`page/n(N+15)`）の頁の画像から、読む役十が起こして訳の案を付け、照らす役十が拡大した画像と段ごとに照らした（表の数は計算で確かめた）。誌面の誤植と見たもの（p.121 の 480/519・p.128 の第 5 列・p.148 の 490974 ほか）は原文のまま訳注に書いた。巻末の注は訳していない。人の校閲はまだ。ページは `pd/reader/quetelet-lettres-probabilites-ja.html` |
 | `herapath-1847-mathematical-physics.md` | John Herapath, *Mathematical Physics; or the Mathematical Principles of Natural Philosophy*, vol. 1, London: Whittaker and Co., 1847, pp.12–17・212–220・236–265 | 本の抜きの訳（2026-11-25・#175）。三か所、146 段（脚注は無い）：第 I 編 §9〜§10（衝撃の積み重ねが圧する力になることと気体の理論）、第 II 編 §40〜§46（熱は粒子の内部運動で、温度はその度合い）、第 II 編 第 II 節「Of the Laws of Gaseous Bodies」の全部（定義・命題 I〜IX・注解）。パースは章も頁も挙げず、気体の運動論を述べる所が目次で三か所に分かれるので、案を pjdhiro に示して三か所とも訳すことにした。第 1 巻は Internet Archive にも文字起こしにも無いので、Google Books のハーバード大学図書館の写し（`id=nH0tAAAAYAAJ`・p.N＝`pg=PAN`）の頁の画像から、読む役九つが起こして訳の案を付け、照らす役九つが段ごとに照らし（式は前後から計算して確かめた）、Claude がつないで入れた。誌面のまま置いたもの（p.14 の as long we please ほか）は訳注に書いた。人の校閲はまだ。1893 の ¶20 が「イギリスの化学者ジョン・ヘラパス博士は、1847 年にその『数理物理学』の中で気体の運動論の輪郭を描いていた」と書く。ページ `pd/reader/herapath-mathematical-physics-ja.html` |
 | `william-james-1892-psychology-briefer-course.md` | William James, *Psychology*（*Briefer Course*）, London: Macmillan, 1892, 第 12 章「The Self」 | 鍵の文の抜き 4 か所（2026-11-24・#189）。pp.176・216。走査の OCR から起こし、頁の柱で頁を決めた。人の校閲はまだ。ページ `pd/reader/william-james-self-ja.html`（読む順のリンク集。原文を訳の上に出す） |
 | `william-james-1890-consciousness-of-self.md` | William James, *The Principles of Psychology* vol.1, New York: Holt, 1890, 第 10 章「The Consciousness of Self」pp.291–401 | 鍵の文の抜き 17 か所（2026-11-24・#189）。York 大学の写しから取り、トロント大の走査の柱の頁と突き合わせた。人の校閲はまだ。ページは同じ |
@@ -295,6 +296,27 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | moral world / material world | 道徳の世界／物質の世界 | |
 | perturbation / disturbance | 摂動／乱れ | |
 | moralists / metaphysicians | 道徳家／形而上学者 | |
+
+### ケトレー：表
+
+『確率論についての書簡』（1846・仏語）の第 17〜22・30 書簡の訳語。ハーシェルの表（論評が同じ本を扱う）と重なる語はそろえた。
+
+| 原語 | 訳語 | 覚え書き |
+|---|---|---|
+| probabilité / chance(s) | 確率／見込み | |
+| possibilité / échelle de possibilité / courbe de possibilité | 可能性／可能性の目盛り／可能性の曲線 | |
+| moyenne / moyenne arithmétique / moyenne proprement dite | 平均／算術平均／本来の意味の平均 | 本当の平均とただの算術平均を分ける段は原語を添える |
+| limite(s) | 限界 | |
+| erreur / erreur probable / écart / écart probable | 誤差／確率誤差／隔たり／確率的な隔たり | 思い違いの意の erreur は「誤り」 |
+| précision / échelle de précision / module de précision | 精度／精度の目盛り／精度の係数 | |
+| loi / loi de sortie / loi des grands nombres | 法則／出方の法則／大数の法則 | |
+| cause accidentelle / constante / variable | 偶然的な原因／恒常的な原因／可変的な原因 | ハーシェルの対訳にそろえた |
+| homme moyen / type | 平均人／型 | |
+| taille / poitrine / conscrit | 身長／胸（胸囲）／徴集兵 | |
+| épreuve / tirage / urne / boule | 試行／引き出し／壺／球 | 数を確かめる意の épreuves は「試し」 |
+| observation / observateur | 観測（測る場面）・観察／観測者 | |
+| hasard / pile ou croix | 偶然／表か裏か | |
+| Votre Altesse | 殿下 | 書簡は公に語りかける形なので、訳は「です・ます」 |
 
 ### ヘラパス：表
 

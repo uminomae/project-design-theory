@@ -299,6 +299,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は quetelet-1846-lettres-sur-la-theorie-des-probabilites.md（原文〔仏語〕と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-quetelet-lettres-probabilites-ja.md",
+        ROOT / "scripts/reader-quetelet-lettres-probabilites-ja-template.html",
+        ROOT / "reader/quetelet-lettres-probabilites-ja.html",
+        "flow",
+    ),
+    (
         # 読む順のリンク集。鍵の文の対訳は william-james-*.md（原文と訳）から <!--JA-TEXT:…--> で差し込む（#189）
         ROOT / "knowledge/translations/READER-william-james-self-ja.md",
         ROOT / "scripts/reader-william-james-self-ja-template.html",
@@ -657,6 +664,16 @@ JA_CHAPTERS = {
         "¶83": "命題 V〜VII：二つの気体と、混ぜた気体",
         "¶105": "命題 VIII・IX：粒子の質量・数・速さと、比熱",
     },
+    "quetelet-1846-lettres-sur-la-theorie-des-probabilites.md": {
+        "¶1": "第 17 書簡：平均の理論（誤差は決まった順序で落ちる）",
+        "¶18": "第 18 書簡：本来の意味の平均・精度の目盛り・確率誤差",
+        "¶33": "第 19 書簡：天文学から取った例（北極星の赤経の観測）",
+        "¶54": "第 20 書簡：算術平均が本当に平均かを見分ける・人の身長の型",
+        "¶69": "第 21 書簡：人の人種は、それぞれに固有の型をもつ",
+        "¶90": "第 22 書簡：ふつうの出来事、並外れた出来事、奇形",
+        "¶110": "第 30 書簡：恒常的とみなしてよい可変的な原因・大数の法則",
+        "注1": "ケトレーの脚注",
+    },
     # ウィリアム・ジェームズの鍵の文（#189）。章の見出しは読む順のリンク集の正本 READER-william-james-self-ja.md に書く
     "william-james-1892-psychology-briefer-course.md": {},
     "william-james-1890-consciousness-of-self.md": {},
@@ -684,6 +701,7 @@ JA_LANG = {
     "clausius-1850-bewegende-kraft-der-warme.md": "de",
     "kronig-1856-theorie-der-gase.md": "de",
     "clausius-1857-art-der-bewegung.md": "de",
+    "quetelet-1846-lettres-sur-la-theorie-des-probabilites.md": "fr",
 }
 
 
