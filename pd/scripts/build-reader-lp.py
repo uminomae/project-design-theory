@@ -368,9 +368,9 @@ PAGES = [
         "flow",
     ),
     (
-        ROOT / "knowledge/research/me-unnoticed/READER-me-unnoticed.md",
-        ROOT / "scripts/reader-me-unnoticed-template.html",
-        ROOT / "reader/me-unnoticed.html",
+        ROOT / "knowledge/research/breath-filter/READER-breath-filter.md",
+        ROOT / "scripts/reader-breath-filter-template.html",
+        ROOT / "reader/breath-filter.html",
         "flow",
     ),
     (
