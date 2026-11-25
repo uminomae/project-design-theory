@@ -24,6 +24,9 @@ run() {
 run "今までの repo を前提にした参照" node scripts/check-old-repo-refs.mjs
 run "pd：repo をまたぐ URL" bash -c 'cd pd && bash scripts/check-cross-repo-urls.sh'
 run "pd：読み物の内部アンカー" bash -c 'cd pd && node scripts/reader-anchor-check.mjs'
+# 「進化的な愛」の対訳の冒頭の一覧「引いている文献の訳」が、訳の本文のリンク・訳のページからの戻りのリンクと、
+# 同じページを同じ順で指しているか（#175。一覧は手で書くので、足し忘れて 15 本ずれた・2026-11-25・付箋 i20261125055644z8c）。
+run "pd：進化的な愛の引いている文献の訳の一覧" python3 -I pd/scripts/cited-translations-check.py
 # Love駆動開発の版番号（1.xxx）が、正本とテンプレートに触れた commit の数と合うか。1.500 に届いたら、2.x にするかを
 # pjdhiro に諮る知らせも出す（pd/scripts/reader_version.py・docs/rules/decisions.md・pjdhiro 2026-11-13）。
 # 毎回読む芯（docs/rules/stance-core.md・corrections-core.md）が正本と食い違っていないか（2026-11-19・付箋帳 i20261118130216b6l）。

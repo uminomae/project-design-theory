@@ -24,6 +24,7 @@
 | 今までの repo を前提にした参照 | 今までの四つの repo の URL・名前の決め打ち・兄弟の並びを前提にしたスクリプト | 新しく書いた（`scripts/check-old-repo-refs.mjs`） |
 | pd：repo をまたぐ URL | 公開の URL の形 | project-design の `ci.yml` |
 | pd：読み物の内部アンカー | 読み物の中の「§2」などのページ内リンクの行き先。ほかの読み物の章へ飛ぶリンク（`<ほかの読み物>.html#id`）の行き先も見る（2026-11-10・#111。Love駆動開発の章題が変わって 5 本が切れていた） | project-design。ページをまたぐ分は新しく足した |
+| pd：進化的な愛の引いている文献の訳の一覧 | パース「進化的な愛」の対訳の冒頭の一覧「引いている文献の訳」（`READER-peirce-evolutionary-love-ja.md` の `id="cited-translations"`）が、訳の本文（`peirce-1893-evolutionary-love.md`）の段と注からの `*-ja.html` へのリンク、訳のページの正本から「進化的な愛」へ戻るリンクと、同じページを指すか。並びが本文で初めて出る段の順（注のリンクは注の印のある段に置く）か、各行の ¶ の印がその段か。一覧は題の言い方を選ぶので手で書く。#175 で訳を足すたびに本文にだけリンクして、15 本が一覧から漏れていた | 新しく書いた（`pd/scripts/cited-translations-check.py`・2026-11-25・付箋 i20261125055644z8c） |
 | 規約：毎回読む芯が正本と一致 | `docs/rules/stance-core.md`・`corrections-core.md` が、正本の `stance.md`・`corrections.md` から作り直したものと同じか。正本だけを直して芯を作り直し忘れると落ちる | 新しく書いた（`scripts/rules-core.py --check`・2026-11-19・付箋帳 i20261118130216b6l） |
 | pd：読み物の版番号 | Love駆動開発と心理的安全性とはの題の隣の版（1.xxx）が、正本とテンプレートに触れた commit の数と合うか（`pd/scripts/reader_version.py`）。1.500 に届いたら、2.x にするかを pjdhiro に諮る知らせを出す（2026-11-13） | 新しく足した |
 | pd：引用カードの前の文脈 | 対話の形の読み物（いまは Love駆動開発の正本 md）で、pjdhiro の発言の引用カードの直前（空行を除く）が、見出し・畳みの題・組む道具の印（`<!--OPEN-->` など）になっていない。発言の前に、なぜその発言が出たのかが分かる文を置く（`docs/rules/writing.md` §5 の 10）。直前に文があっても唐突なことはあるので、通して読む確かめは残る | 新しく書いた（`scripts/check-quote-context.mjs`・型 R の繰り返し・2026-11-10・#96） |

@@ -31,12 +31,30 @@
 この論文が引いている文献のうち、日本語に訳したものです。引いている段の順に並べました。どれも、その段の本文か訳注からもリンクしています。訳は Claude（AI）によるもので、人の校閲はまだです。
 <ul class="reader-lead__list">
 <li><a href="#p3">¶3</a>：<a href="james-substance-and-shadow-ja.html">ジェイムズ（父）『実体と影』（1863）の「創造的な愛」の所</a></li>
-<li><a href="#p5">¶5</a>：<a href="peirce-law-of-mind-ja.html">パース「心の法則」（1892）</a></li>
+<li><a href="#p5">¶5</a>：<a href="peirce-law-of-mind-ja.html">パース「心の法則」（1892）</a>（¶57 でも引く）</li>
 <li><a href="#p7">¶7</a>：<a href="newcomb-political-economy-ja.html">ニューカム『政治経済学原理』（1886）の利己心と慈善の所</a></li>
 <li><a href="#p14">¶14</a>：<a href="mandeville-grumbling-hive-ja.html">マンデヴィル『蜂の寓話』（1714）の詩「ぶつぶつ言う蜂の巣」</a></li>
-<li><a href="#p20">¶20</a>：<a href="carus-onslaught-on-necessity-ja.html">ケーラス「パース氏の必然論への猛攻」（1892）</a>、<a href="herschel-quetelet-probabilities-ja.html">ハーシェル「ケトレーの確率論」（1850）</a></li>
-<li><a href="#p21">¶21</a>：<a href="kolliker-darwinsche-schopfungstheorie-ja.html">ケリカー「ダーウィンの創造説について」（1864）</a>、<a href="peirce-glassy-essence-ja.html">パース「人間のガラスのような本質」（1892）</a>（¶23 でも引く）</li>
-<li><a href="#p58">¶58</a>：<a href="darwin-wallace-1858-ja.html">ダーウィンとウォレスのリンネ協会の論文（1858）</a>、<a href="darwin-historical-sketch-ja.html">ダーウィン「歴史的概略」（『種の起源』第 3 版の巻頭・1861）</a></li>
+<li><a href="#p20">¶20</a>：<a href="carus-onslaught-on-necessity-ja.html">ケーラス「パース氏の必然論への猛攻」（1892）</a></li>
+<li><a href="#p20">¶20</a>：<a href="quetelet-lettres-probabilites-ja.html">ケトレー『確率論についての書簡』（1846）の平均と誤差の所</a></li>
+<li><a href="#p20">¶20</a>：<a href="herschel-quetelet-probabilities-ja.html">ハーシェル「ケトレーの確率論」（1850）</a></li>
+<li><a href="#p20">¶20</a>：<a href="buckle-history-of-civilization-ja.html">バックル『イギリス文明史』（1857）の統計が示す規則性の所</a></li>
+<li><a href="#p20">¶20</a>：<a href="herapath-mathematical-physics-ja.html">ヘラパス『数理物理学』（1847）の気体の運動論の所</a></li>
+<li><a href="#p20">¶20</a>：<a href="clausius-art-der-bewegung-ja.html">クラウジウス「熱と呼ぶ運動の種類について」（1857）</a></li>
+<li><a href="#p20">¶20</a>：<a href="kronig-theorie-der-gase-ja.html">クレーニッヒ「気体の理論の大要」（1856）</a></li>
+<li><a href="#p20">¶20</a>：<a href="maxwell-dynamical-theory-of-gases-ja.html">マクスウェル「気体の動力学的理論の例解」（1860）</a></li>
+<li><a href="#p20">¶20</a>：<a href="helmholtz-erhaltung-der-kraft-ja.html">ヘルムホルツ『力の保存について』（1847）</a></li>
+<li><a href="#p20">¶20</a>：<a href="clausius-bewegende-kraft-der-warme-ja.html">クラウジウス「熱の動力について」（1850）</a>（¶58 でも引く）</li>
+<li><a href="#p20">¶20</a>：<a href="rankine-mechanical-action-of-heat-ja.html">ランキン「熱の力学的作用について」（1850）</a>（¶58 でも引く）</li>
+<li><a href="#p20">¶20</a>：<a href="mansel-limits-of-religious-thought-ja.html">マンセル『宗教的思考の限界』（1858）の序文</a></li>
+<li><a href="#p20">¶20</a>：<a href="hamilton-philosophy-of-the-unconditioned-ja.html">ハミルトン「無条件者の哲学について」（1829）</a></li>
+<li><a href="#p20">¶20</a>：<a href="mill-examination-of-hamilton-ja.html">ミル『ハミルトン哲学の検討』（1865）の第 VII 章</a></li>
+<li><a href="#p21">¶21</a>：<a href="kolliker-darwinsche-schopfungstheorie-ja.html">ケリカー「ダーウィンの創造説について」（1864）</a></li>
+<li><a href="#p21">¶21</a>：<a href="weismann-significance-of-sexual-reproduction-ja.html">ヴァイスマン「自然選択の理論における有性生殖の意味」（1886）</a>（注62 でも引く）</li>
+<li><a href="#p21">¶21</a>：<a href="peirce-glassy-essence-ja.html">パース「人間のガラスのような本質」（1892）</a>（¶23 でも引く）</li>
+<li><a href="#p35">¶35</a>：<a href="draper-intellectual-development-ja.html">ドレイパー『ヨーロッパの知的発展の歴史』（1863）の第 10 章</a>（注63 で引く）</li>
+<li><a href="#p58">¶58</a>：<a href="darwin-wallace-1858-ja.html">ダーウィンとウォレスのリンネ協会の論文（1858）</a></li>
+<li><a href="#p58">¶58</a>：<a href="darwin-historical-sketch-ja.html">ダーウィン「歴史的概略」（『種の起源』第 3 版の巻頭・1861）</a></li>
+<li><a href="#p58">¶58</a>：<a href="thomson-heat-ja.html">トムソン「熱」（『ブリタニカ百科事典』第 9 版・1880）</a>（注64 で引く）</li>
 </ul>
 </div>
 
