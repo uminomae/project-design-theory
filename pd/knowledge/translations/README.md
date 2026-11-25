@@ -54,6 +54,7 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | `buckle-1857-history-of-civilization-in-england.md` | Henry Thomas Buckle, *History of Civilization in England*, vol. 1, London: John W. Parker and Son, 1857, 第 1 章 pp.18–33 | 本の抜きの訳（2026-11-24・#175）。p.18「Rejecting, then, the metaphysical dogma of free will」の段から章の本文の終わりまで、17 段と脚注 19 本（注19〜注37。番号は誌面のまま）。パースは章も頁も挙げず、「この同じ考え」（偶然が秩序を生む）を用いた所として、殺人・自殺・結婚・宛名を書き忘れた手紙の統計を並べるこの所を Claude が当てた。文字起こしが無いので、初版の走査（IA `10278775bsb`・p = n − 27）の OCR を下敷きに、読む役四つが十六頁を画像と照らして起こし訳の案を付け、照らす役四つが段ごとに照らし、Claude がつないで入れた。誌面のまま置いたもの（注19 の For.・注37 の Médécine）は訳注に書いた。人の校閲はまだ。1893 の ¶20 が「1857 年には、バックルの『文明史』第一巻が、この同じ考えを用いたことによって、たいへんな評判を呼んでいた」と書く。ページ `pd/reader/buckle-history-of-civilization-ja.html` |
 | `quetelet-1846-lettres-sur-la-theorie-des-probabilites.md` | Adolphe Quetelet, *Lettres à S. A. R. le duc régnant de Saxe-Cobourg et Gotha, sur la théorie des probabilités, appliquée aux sciences morales et politiques*, Bruxelles: M. Hayez, 1846, 第 17〜22 書簡 pp.113–156・第 30 書簡 pp.213–216（仏語） | 本の抜きの訳（2026-11-25・#175）。七通、119 段と脚注 2。パースは題だけを挙げるので、偶然が秩序を生む考えを述べる書簡を三つの案にして pjdhiro に示し、「誤差の秩序から平均人まで」を選んだ。原文は仏語で、仏語の本文から訳した。Internet Archive の走査（`lettressarleduc00quetgoog`・p.N＝`page/n(N+15)`）の頁の画像から、読む役十が起こして訳の案を付け、照らす役十が拡大した画像と段ごとに照らした（表の数は計算で確かめた）。誌面の誤植と見たもの（p.121 の 480/519・p.128 の第 5 列・p.148 の 490974 ほか）は原文のまま訳注に書いた。巻末の注は訳していない。人の校閲はまだ。ページは `pd/reader/quetelet-lettres-probabilites-ja.html` |
 | `herapath-1847-mathematical-physics.md` | John Herapath, *Mathematical Physics; or the Mathematical Principles of Natural Philosophy*, vol. 1, London: Whittaker and Co., 1847, pp.12–17・212–220・236–265 | 本の抜きの訳（2026-11-25・#175）。三か所、146 段（脚注は無い）：第 I 編 §9〜§10（衝撃の積み重ねが圧する力になることと気体の理論）、第 II 編 §40〜§46（熱は粒子の内部運動で、温度はその度合い）、第 II 編 第 II 節「Of the Laws of Gaseous Bodies」の全部（定義・命題 I〜IX・注解）。パースは章も頁も挙げず、気体の運動論を述べる所が目次で三か所に分かれるので、案を pjdhiro に示して三か所とも訳すことにした。第 1 巻は Internet Archive にも文字起こしにも無いので、Google Books のハーバード大学図書館の写し（`id=nH0tAAAAYAAJ`・p.N＝`pg=PAN`）の頁の画像から、読む役九つが起こして訳の案を付け、照らす役九つが段ごとに照らし（式は前後から計算して確かめた）、Claude がつないで入れた。誌面のまま置いたもの（p.14 の as long we please ほか）は訳注に書いた。人の校閲はまだ。1893 の ¶20 が「イギリスの化学者ジョン・ヘラパス博士は、1847 年にその『数理物理学』の中で気体の運動論の輪郭を描いていた」と書く。ページ `pd/reader/herapath-mathematical-physics-ja.html` |
+| `draper-1863-history-of-intellectual-development-of-europe.md` | John William Draper, *History of the Intellectual Development of Europe*, New York: Harper, 1863。原文は初版の本文の英国の刷り（London: Bell and Daldy, 1864）第 1 巻の第 10 章 pp.298–315 | 本の抜きの訳（2026-11-25・#175）。第 10 章「ヨーロッパの信仰の時代：東方の信仰の時代」の全文 25 段と、目次の章の要約（脚注は無い）。キリスト教の異教化、教父主義、テオドシウスの施策、テオフィロスによるアレクサンドリアのセラピオンと図書館の破壊、ヒュパティアの殺害、アレクサンドリアの学問の抑圧まで。パースが章を名指す。第 4 版（1866）は語を少し直しているので、初版の本文を訳すことにし、版の選び方は pjdhiro にボタンで示して決めた。1863 年の刷りの開いた走査が見つからないので、1864 年の刷りの走査（IA `bub_gb_lsdyKsjXFkkC`・p = n − 17）の OCR を下敷きに、読む役四つが十八頁を画像と照らして起こし訳の案を付け、照らす役四つが段ごとに照らし、Claude がつないで入れた。欄外の見出し 33 本は段の頭に置いた。人の校閲はまだ。1893 の ¶35 が、テオフィロスによるアレクサンドリアの大図書館の破壊に注63 を付け、「ドレイパーの『知的発展の歴史』第10章を見よ」と書く。ページ `pd/reader/draper-intellectual-development-ja.html` |
 | `william-james-1892-psychology-briefer-course.md` | William James, *Psychology*（*Briefer Course*）, London: Macmillan, 1892, 第 12 章「The Self」 | 鍵の文の抜き 4 か所（2026-11-24・#189）。pp.176・216。走査の OCR から起こし、頁の柱で頁を決めた。人の校閲はまだ。ページ `pd/reader/william-james-self-ja.html`（読む順のリンク集。原文を訳の上に出す） |
 | `william-james-1890-consciousness-of-self.md` | William James, *The Principles of Psychology* vol.1, New York: Holt, 1890, 第 10 章「The Consciousness of Self」pp.291–401 | 鍵の文の抜き 17 か所（2026-11-24・#189）。York 大学の写しから取り、トロント大の走査の柱の頁と突き合わせた。人の校閲はまだ。ページは同じ |
 | `william-james-1890-stream-of-thought.md` | 同じ本の第 9 章「The Stream of Thought」pp.224–290 | 鍵の文の抜き 7 か所（2026-11-24・#189）。写しの誤り（if flows ほか）は走査の版に合わせた。人の校閲はまだ。ページは同じ |
@@ -338,6 +339,26 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | duplicate / subduplicate / subtriplicate ratio | 二乗の比／平方根の比／立方根の比 | duplisubtriplicate は立方根の二乗の比 |
 | excursion(s) | 振れ幅 | |
 | Def. / Prop. / Theorem / Cor. / Scholium | 定義／命題／定理／系／注解 | |
+
+### ドレイパー：表
+
+『ヨーロッパの知的発展の歴史』（1863）第 10 章の訳語。書名は、パースの対訳の注63 の『知的発展の歴史』に合わせて『ヨーロッパの知的発展の歴史』とした。
+
+| 原語 | 訳語 | 覚え書き |
+|---|---|---|
+| Age of Faith / Age of Reason / Age of Inquiry | 信仰の時代／理性の時代／探究の時代 | ドレイパーがヨーロッパの知の歩みを分けた時代の名 |
+| paganization / paganism / pagan | 異教化／異教／異教の・異教徒 | Heathen は「異教徒（Heathen）」 |
+| Patristicism / the Fathers / Science of the Fathers | 教父主義／教父／教父の学 | |
+| philosophy / learning / science / knowledge | 哲学／学問・学識／科学／知識 | |
+| ecclesiastic / ecclesiastical / clergy | 聖職者／教会の／聖職者 | ecclesiastical party は「教会の党派」 |
+| bigotry / bigots / fanaticism / superstition | 偏狭／偏狭の徒／狂信／迷信 | |
+| proselytism | 改宗の勧誘 | |
+| Inquisitors of faith | 信仰の審問官 | |
+| Serapion / Serapis / Bruchion / the Museum | セラピオン／セラピス／ブルキオン／ムセイオン | |
+| Theophilus / Cyril / Hypatia / Theodosius / Constantine | テオフィロス／キュリロス／ヒュパティア／テオドシウス／コンスタンティヌス | |
+| Parabolani / lictor | パラボラニ／リクトル | |
+| Mohammedan | イスラームの | |
+| marginal note | 欄外の見出し | 原文と訳の段の頭に ［欄外：…］ で置いた |
 
 ### マクスウェル：表
 
