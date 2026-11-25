@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>プロジェクトデザイン論 ざっと眺めるスライド</title>
+<!--
+  HOME の「プレゼン資料」の元。PDF にして pd/assets/pdf/overview-slides-ja.pdf に置く。
+  作り直し：bash pd/scripts/slides/build-overview-slides.sh
+  中身は、HOME と読み物「Love駆動開発と呼びたいもの β」と四つの探究の入口の、その時点の文から取る。
+  作り直すのは骨格が変わったときだけ、週に一度ほど（docs/rules/stance.md 2-8）。
+-->
+<style>
+  @page { size: 1376px 768px; margin: 0; }
+  :root {
+    --bg: #11141a;
+    --panel: #1a1f28;
+    --line: #2c3340;
+    --text: #e9e6df;
+    --sub: #a9a59c;
+    --accent: #d6b46c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); }
+  body {
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+    color: var(--text);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .slide {
+    width: 1376px;
+    height: 768px;
+    padding: 72px 96px 64px;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+    break-after: page;
+    display: flex;
+    flex-direction: column;
+  }
+  .slide:last-child { page-break-after: auto; break-after: auto; }
+  .no {
+    position: absolute;
+    right: 56px;
+    bottom: 36px;
+    font-size: 18px;
+    color: var(--sub);
+  }
+  .site {
+    position: absolute;
+    left: 96px;
+    bottom: 36px;
+    font-size: 18px;
+    color: var(--sub);
+  }
+  h1 { font-size: 46px; font-weight: 600; letter-spacing: 0.02em; }
+  h1 + .lead { margin-top: 16px; }
+  .rule { width: 72px; height: 3px; background: var(--accent); margin: 22px 0 34px; }
+  .lead { font-size: 24px; color: var(--sub); line-height: 1.7; }
+  p, li { font-size: 27px; line-height: 1.75; }
+  ul { list-style: none; }
+  ul > li { padding-left: 1.2em; position: relative; margin-bottom: 18px; }
+  ul > li::before { content: ""; position: absolute; left: 0.1em; top: 0.75em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+  .small { font-size: 22px; color: var(--sub); line-height: 1.7; }
+  .label { display: inline-block; font-size: 20px; color: var(--bg); background: var(--accent); padding: 2px 12px; border-radius: 4px; margin-right: 14px; vertical-align: 3px; }
+
+  /* 表紙 */
+  .cover { justify-content: center; }
+  .cover h1 { font-size: 72px; }
+  .cover .q { font-size: 34px; margin-top: 8px; }
+  .cover .small { margin-top: 40px; }
+
+  /* 問い */
+  .questions p.q { font-size: 38px; line-height: 1.6; margin-bottom: 14px; }
+  .questions .hypo { margin-top: 36px; font-size: 30px; }
+
+  /* 今の答え */
+  .answer blockquote { font-size: 29px; line-height: 1.85; border-left: 4px solid var(--accent); padding-left: 32px; }
+  .answer .small { margin-top: 34px; }
+
+  /* 四つの探究 */
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 4px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 22px 26px; }
+  .card h2 { font-size: 26px; font-weight: 600; color: var(--accent); margin-bottom: 8px; }
+  .card p { font-size: 20px; line-height: 1.65; }
+
+  /* 五段階 */
+  .stages { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-top: 4px; }
+  .stage { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 22px 18px; }
+  .stage h2 { font-size: 38px; font-weight: 600; color: var(--accent); }
+  .stage .en { font-size: 18px; color: var(--sub); margin-bottom: 12px; }
+  .stage p { font-size: 20px; line-height: 1.65; }
+  .stages + .small { margin-top: 30px; }
+
+  /* 流れ */
+  .flow { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+  .flow .col { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 24px 28px; }
+  .flow h2 { font-size: 24px; font-weight: 600; color: var(--accent); margin-bottom: 14px; }
+  .flow ol { list-style: none; }
+  .flow li { font-size: 22px; line-height: 1.6; margin-bottom: 10px; }
+  .flow li span { color: var(--sub); margin-right: 12px; }
+  .flow + .small { margin-top: 26px; }
+
+  /* 入口 */
+  .links { margin-top: 26px; display: grid; grid-template-columns: auto 1fr; gap: 8px 28px; font-size: 21px; line-height: 1.6; }
+  .links dt { color: var(--accent); }
+  .links dd { color: var(--sub); }
+</style>
+</head>
+<body>
+
+<section class="slide cover">
+  <h1>プロジェクトデザイン論</h1>
+  <p class="q">何に駆られてプロジェクトを行うのか。</p>
+  <div class="rule"></div>
+  <p class="small">サイトの中身を、ざっと眺めるためのスライドです（2026 年 11 月 25 日の時点。サイトは工事中です）。<br>pjdhiro の問いに、Claude が対話で答えて書いています。</p>
+  <p class="no">1</p>
+</section>
+
+<section class="slide">
+  <h1>プロジェクトデザインとは</h1>
+  <div class="rule"></div>
+  <ul>
+    <li>プロジェクトの構想・設計・実行だけでなく、実行や管理の方法そのものを構想し、設計する営みです。</li>
+    <li>「やること」と「起きていること」の二つの切り口で見ます。二つは、一つの全体を別の側から見たものです。</li>
+    <li>営利・非営利の事業を主な対象にしています。研究や人生などへは、構造の似かたを手がかりに広げて考えています。</li>
+    <li>その中の大きな整理の仕方が、読み物「Love駆動開発と呼びたいもの β」です。</li>
+  </ul>
+  <p class="site">プロジェクトデザイン論</p><p class="no">2</p>
+</section>
+
+<section class="slide questions">
+  <h1>二つの問い</h1>
+  <div class="rule"></div>
+  <p class="q">何に駆られてプロジェクトを行うのか。</p>
+  <p class="q">なぜ、過去とは違うものになろうとするのか。</p>
+  <p class="small">人やプロジェクトを動かしているものを、駆動源と呼びます。ここで言うプロジェクトは、事業に限らず、人生や家族も含みます。</p>
+  <p class="hypo"><span class="label">仮説</span>その駆動源は、「Love と呼びたいもの」ではないか。</p>
+  <p class="site">Love駆動開発と呼びたいもの β</p><p class="no">3</p>
+</section>
+
+<section class="slide">
+  <h1>Love と呼びたいもの</h1>
+  <div class="rule"></div>
+  <ul>
+    <li>Love は、恋愛に限りません。ひとまず二つの面で置いています。人や物事が引き寄せられるように感じる力の面と、人がその中にいる場の性質の面です。</li>
+    <li>たとえは、重力と時空の関係です。どちらか一つに決めず、両方を一面として並べます。</li>
+    <li>Love という言葉には、これまでたくさんの定義が与えられてきました。pjdhiro は、どれも当たっているのではないか、と見ています。</li>
+  </ul>
+  <p class="site">Love駆動開発と呼びたいもの β</p><p class="no">4</p>
+</section>
+
+<section class="slide answer">
+  <h1>今の答え</h1>
+  <div class="rule"></div>
+  <blockquote>私たちは、Love と呼びたい場のようなものの中にいて、その一部なのかもしれません。体は、つながっている安心と、そこからのずれを感じ取っています。そのずれを欠けとして感じて、人は動き出します。プロジェクトの駆動源は、この欠け、Love と呼びたいものと自分とのギャップなのかもしれません。</blockquote>
+  <p class="small">論拠は、pjdhiro 一人の素朴な体験です（素朴体験論）。多くの人を調べて数えた統計的なものではありません。研究は、体験を証明するためでなく、伝えるための材料として引いています。</p>
+  <p class="site">Love駆動開発と呼びたいもの β</p><p class="no">5</p>
+</section>
+
+<section class="slide">
+  <h1>見えない駆動源を、四つの探究から見る</h1>
+  <p class="lead">駆動源は、直接は見えません。重力が、まわりのものの動き方で書かれてきたように、動かされているものの動き方から書きます。</p>
+  <div class="rule"></div>
+  <div class="grid">
+    <div class="card"><h2>創造とは</h2><p>物事が生まれるとき、どんな構造と過程をたどるのか。30 の分野の論を並べ、五つの段（場 → 波 → 縁 → 渦 → 束）で書く探究。</p></div>
+    <div class="card"><h2>意識とは</h2><p>人は、何で世界を切り取っているのか。生き延びられるか（生存）と、つながっていられるか（信頼）の二つの信号から見る探究。</p></div>
+    <div class="card"><h2>欠損駆動思考</h2><p>記号の上では 0 と出るところで、人は何を感じているのか。欠けている感じや違和感を駆動源にする、思考や精神の構えを見る探究。</p></div>
+    <div class="card"><h2>愛は、重力に似ていないか</h2><p>重力の井戸の中心は、動かず、何もなく、自分からは見えないのに、周りのすべてを回している。愛はそれに似ていないか、を見る読み物。</p></div>
+  </div>
+  <p class="no">6</p>
+</section>
+
+<section class="slide">
+  <h1>創造の五段階</h1>
+  <div class="rule"></div>
+  <div class="stages">
+    <div class="stage"><h2>場</h2><p class="en">Field</p><p>波が立つ前の、安定した海のような状態。</p></div>
+    <div class="stage"><h2>波</h2><p class="en">Wave</p><p>状況が変わり、差が分かれて向かい合うこと。</p></div>
+    <div class="stage"><h2>縁</h2><p class="en">Edge</p><p>異質なものが出会い、ぶつかる境目。</p></div>
+    <div class="stage"><h2>渦</h2><p class="en">Vortex</p><p>二つが見分けられるのに、一つであるかのようにまとまること。</p></div>
+    <div class="stage"><h2>束</h2><p class="en">Bundle</p><p>新しい形として残る集まり。それがまた次の場になる。</p></div>
+  </div>
+  <p class="small">五つの段は、順に進むとは限りません。同時に走り、入り込み合います。この定義は暫定で、30 の分野の論を読んで補っていきます。</p>
+  <p class="site">創造とは</p><p class="no">7</p>
+</section>
+
+<section class="slide">
+  <h1>読み物の流れ</h1>
+  <div class="rule"></div>
+  <div class="flow">
+    <div class="col">
+      <h2>前半：何に駆られてプロジェクトを行うのか</h2>
+      <ol>
+        <li><span>第一部</span>問いと、これまでの見方</li>
+        <li><span>第二部</span>見えない駆動源を、似た形から見る</li>
+        <li><span>第三部</span>人は、世界をどう解釈するか</li>
+        <li><span>第四部</span>心は信頼と安心をどう感じているか</li>
+        <li><span>第五部</span>Love とは</li>
+      </ol>
+    </div>
+    <div class="col">
+      <h2>後半：なぜ、過去とは違うものになろうとするのか</h2>
+      <ol>
+        <li><span>第六部</span>開発と呼ばれるものの中で、何が起きているか</li>
+        <li><span>第七部</span>Love駆動開発と呼びたいものとは</li>
+      </ol>
+    </div>
+  </div>
+  <p class="small">開発には、意図して進めるものだけでなく、意図しないまま育つもの、変わっていくものも入れて見ます。</p>
+  <p class="site">Love駆動開発と呼びたいもの β</p><p class="no">8</p>
+</section>
+
+<section class="slide">
+  <h1>何の役に立つか</h1>
+  <div class="rule"></div>
+  <p>Love駆動開発の見方が、デザインや成長も含めた創造と、問いを立てること、価値判断・意思決定に資すると考えて、追っています。どれも、AI の時代にとくに要ることだとも見ています。</p>
+  <p class="small" style="margin-top: 34px;">読む入口</p>
+  <dl class="links" style="margin-top: 8px;">
+    <dt>プロジェクトデザイン論</dt><dd>uminomae.github.io/project-design-theory/</dd>
+    <dt>Love駆動開発と呼びたいもの β</dt><dd>uminomae.github.io/project-design-theory/reader/love-driven-dev.html</dd>
+    <dt>創造とは</dt><dd>uminomae.github.io/project-design-theory/cs/</dd>
+    <dt>意識とは</dt><dd>uminomae.github.io/project-design-theory/as/</dd>
+    <dt>欠損駆動思考</dt><dd>uminomae.github.io/project-design-theory/ks/</dd>
+  </dl>
+  <p class="no">9</p>
+</section>
+
+</body>
+</html>

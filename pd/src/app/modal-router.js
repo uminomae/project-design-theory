@@ -143,7 +143,7 @@ export function createModalRouter({
     }
 
     let slidesLoaded = false;
-    const SLIDES_PDF_PATH = 'assets/pdf/Integrated_Project_Architecture.pdf';
+    const SLIDES_PDF_PATH = 'assets/pdf/overview-slides-ja.pdf';
 
     async function openSlides({ pushHistory = true } = {}) {
         closeAbout({ updateHistory: false });
