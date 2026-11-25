@@ -304,6 +304,9 @@ export const TRANSLATIONS = {
     "howto.thinking.ex2": "「違和感をすぐに解かず、問いのまま持つ（抱持）やり方を考えたい」",
     "howto.thinking.ex3":
       "「5段階モデル（場→波→縁→渦→束）で創作プロセスを設計して」",
+    "howto.era.heading": "D. AI の時代に、このサイトをどう使うか",
+    "howto.era.desc":
+      "AI によって、確かめられないまま通ってきた正解めいたものが照らされていきます。そのとき差になるのは、受け止める側の量かもしれません。読み物「<a href=\"./reader/capacity-after-ai.html\">AI の時代に、身体・思考・心の量はどう変わるか</a>」に、その見立てと、このサイトが手伝えることを置いています。",
     "howto.map.heading": "なぜ1つのURLで済むのか",
     "howto.map.desc":
       "四つの論を一つのrepoにまとめています（pd/・cs/・as/・ks/）。LLMがそれらを辿り、目的に合う知見を引き出します。",
@@ -508,6 +511,9 @@ export const TRANSLATIONS = {
       '"I want to think about how to keep unease as a question (holding) instead of resolving it at once"',
     "howto.thinking.ex3":
       '"Design a creative process using the 5-stage model (Field → Wave → Edge → Vortex → Bundle)"',
+    "howto.era.heading": "D. How to Use This Site in the AI Era",
+    "howto.era.desc":
+      "With AI, “correct-looking” answers that were never checked are coming to light. What sets people apart then may be the capacity to receive rather than to produce. The reader “<a href=\"./reader/capacity-after-ai.html\">AI の時代に、身体・思考・心の量はどう変わるか</a>” (in Japanese) sets out this view and what this site can help with.",
     "howto.map.heading": "Why One URL Is Enough",
     "howto.map.desc":
       "The four theories live in one repo (pd/, cs/, as/, ks/). The LLM follows them to find knowledge that fits your purpose.",

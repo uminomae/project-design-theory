@@ -389,6 +389,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/capacity-after-ai/READER-capacity-after-ai.md",
+        ROOT / "scripts/reader-capacity-after-ai-template.html",
+        ROOT / "reader/capacity-after-ai.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/breath-filter/READER-breath-filter.md",
         ROOT / "scripts/reader-breath-filter-template.html",
         ROOT / "reader/breath-filter.html",
