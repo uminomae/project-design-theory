@@ -419,6 +419,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/euler-formula/READER-euler-formula.md",
+        ROOT / "scripts/reader-euler-formula-template.html",
+        ROOT / "reader/euler-formula.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/reasoning/READER-reasoning.md",
         ROOT / "scripts/reader-reasoning-template.html",
         ROOT / "reader/reasoning.html",
