@@ -443,6 +443,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/thinking/READER-thinking.md",
+        ROOT / "scripts/reader-thinking-template.html",
+        ROOT / "reader/thinking.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/defense-mechanisms/READER-stages-defense.md",
         ROOT / "scripts/reader-stages-defense-template.html",
         ROOT / "reader/stages-defense.html",
