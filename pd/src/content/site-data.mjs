@@ -230,10 +230,10 @@ export const TRANSLATIONS = {
     "repo.syllabus": "Love駆動開発は、事業構想の授業になるか — 総論と特論の試案",
     "repo.syllabusDesc":
       "事業構想（Project Design）の授業を組むとしたら。総論は、学の輪郭と届く範囲を、見方の道具を持ってかんたんな順に一周する。特論は、Love駆動開発の読み物を順にたどる。pjdhiro の思案を書き起こした試案で、現実の講義ではない",
-    "section.shelves.label": "Pages",
-    "section.shelves.title": "独立ページ",
+    "section.shelves.label": "Modules",
+    "section.shelves.title": "モジュール",
     "section.shelves.body":
-      "一つの問いを一ページにまとめ、読み物の章から呼んでいるページです。四つの並びに分けました。見出しから、それぞれの並びのページへ行けます。多くは工事中です。",
+      "一つの主題を一ページにまとめたページを、モジュールと呼んでいます。Love駆動開発などの読み物は、章の中で要るモジュールを呼び出し、詳しくはそちらに任せます。どれも単独で読めます。四つの並びに分け、見出しから並びのページへ行けます。多くは工事中です。",
     "shelf.mind": "心の動き",
     "shelf.love": "Love と愛、創造",
     "shelf.numberOrg": "数と組織",
@@ -436,10 +436,10 @@ export const TRANSLATIONS = {
     "repo.syllabus": "Could Love-Driven Development Be a Course on Project Design? — Draft Survey and Special-Topics Syllabi",
     "repo.syllabusDesc":
       "What a course on business design (Project Design) could look like, split in two. The survey course tours the outline and reach of the field in 15 sessions, from easier to harder, with tools for checking one's own viewpoint. The special-topics course follows the Love-Driven Development reader in its own order. A draft written up from pjdhiro's thinking, not an actual course",
-    "section.shelves.label": "Pages",
-    "section.shelves.title": "Topic Pages",
+    "section.shelves.label": "Modules",
+    "section.shelves.title": "Modules",
     "section.shelves.body":
-      "Each page gathers one question, and the readers call on them from their chapters. They are grouped into four shelves; each heading opens its shelf. The pages are in Japanese, and most are under construction.",
+      "A module is a page that gathers one topic. Readers such as Love-Driven Development call on the modules they need from their chapters and leave the details to them. Each module can be read on its own. They are grouped into four shelves; each heading opens its shelf. The pages are in Japanese, and most are under construction.",
     "shelf.mind": "Workings of the mind",
     "shelf.love": "Love, beauty and creation",
     "shelf.numberOrg": "Numbers and organizations",

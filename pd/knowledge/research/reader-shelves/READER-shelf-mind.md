@@ -4,7 +4,7 @@
 
 <p class="reader-lead"><span class="reader-lead__label">問い</span>心は、何に反応し、どう自分を守り、どう動くのでしょうか。</p>
 
-このページは、心の働きを一つずつ見る独立ページの並びです。多くは、[Love駆動開発と呼びたいもの](love-driven-dev.html)の章から呼んでいます。一つずつ、単独で読めます。
+このページは、心の働きを一つずつ見るモジュールの並びです。多くは、[Love駆動開発と呼びたいもの](love-driven-dev.html)の章から呼んでいます。一つずつ、単独で読めます。
 
 ほかの並びは、[Love と愛、創造を見るページ](shelf-love.html)・[数と組織を見るページ](shelf-number-org.html)・[原典を日本語で読む](shelf-translations.html)です。
 
