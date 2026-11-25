@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Project Design: an overview in slides</title>
+<!--
+  HOME の「プレゼン資料」の元。PDF にして pd/assets/pdf/overview-slides-en.pdf に置く（英語の画面）。日本語の overview-slides.html と同じ並びにそろえる。
+  作り直し：bash pd/scripts/slides/build-overview-slides.sh
+  中身は、HOME の英語の文と読み物の英語版（love-driven-dev-en.html）と四つの探究の英語の説明の、その時点の文から取る。
+  作り直すのは骨格が変わったときだけ、週に一度ほど（docs/rules/stance.md 2-8）。
+-->
+<style>
+  @page { size: 1376px 768px; margin: 0; }
+  :root {
+    --bg: #11141a;
+    --panel: #1a1f28;
+    --line: #2c3340;
+    --text: #e9e6df;
+    --sub: #a9a59c;
+    --accent: #d6b46c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); }
+  body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+    color: var(--text);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .slide {
+    width: 1376px;
+    height: 768px;
+    padding: 72px 96px 64px;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+    break-after: page;
+    display: flex;
+    flex-direction: column;
+  }
+  .slide:last-child { page-break-after: auto; break-after: auto; }
+  .no {
+    position: absolute;
+    right: 56px;
+    bottom: 36px;
+    font-size: 18px;
+    color: var(--sub);
+  }
+  .site {
+    position: absolute;
+    left: 96px;
+    bottom: 36px;
+    font-size: 18px;
+    color: var(--sub);
+  }
+  h1 { font-size: 46px; font-weight: 600; letter-spacing: 0.02em; }
+  h1 + .lead { margin-top: 16px; }
+  .rule { width: 72px; height: 3px; background: var(--accent); margin: 22px 0 34px; }
+  .lead { font-size: 24px; color: var(--sub); line-height: 1.7; }
+  p, li { font-size: 27px; line-height: 1.75; }
+  ul { list-style: none; }
+  ul > li { padding-left: 1.2em; position: relative; margin-bottom: 18px; }
+  ul > li::before { content: ""; position: absolute; left: 0.1em; top: 0.75em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+  .small { font-size: 22px; color: var(--sub); line-height: 1.7; }
+  .label { display: inline-block; font-size: 20px; color: var(--bg); background: var(--accent); padding: 2px 12px; border-radius: 4px; margin-right: 14px; vertical-align: 3px; }
+
+  /* 表紙 */
+  .cover { justify-content: center; }
+  .cover h1 { font-size: 72px; }
+  .cover .q { font-size: 34px; margin-top: 8px; }
+  .cover .small { margin-top: 40px; }
+
+  /* 問い */
+  .questions p.q { font-size: 38px; line-height: 1.6; margin-bottom: 14px; }
+  .questions .hypo { margin-top: 36px; font-size: 30px; }
+
+  /* 今の答え */
+  .answer blockquote { font-size: 29px; line-height: 1.85; border-left: 4px solid var(--accent); padding-left: 32px; }
+  .answer .small { margin-top: 34px; }
+
+  /* 四つの探究 */
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 4px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 22px 26px; }
+  .card h2 { font-size: 26px; font-weight: 600; color: var(--accent); margin-bottom: 8px; }
+  .card p { font-size: 20px; line-height: 1.65; }
+
+  /* 五段階 */
+  .stages { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; margin-top: 4px; }
+  .stage { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 22px 18px; }
+  .stage h2 { font-size: 38px; font-weight: 600; color: var(--accent); }
+  .stage .en { font-size: 18px; color: var(--sub); margin-bottom: 12px; }
+  .stage p { font-size: 20px; line-height: 1.65; }
+  .stages + .small { margin-top: 30px; }
+
+  /* 流れ */
+  .flow { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+  .flow .col { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 24px 28px; }
+  .flow h2 { font-size: 24px; font-weight: 600; color: var(--accent); margin-bottom: 14px; }
+  .flow ol { list-style: none; }
+  .flow li { font-size: 22px; line-height: 1.6; margin-bottom: 10px; }
+  .flow li span { color: var(--sub); margin-right: 12px; }
+  .flow + .small { margin-top: 26px; }
+
+  /* 入口 */
+  .links { margin-top: 26px; display: grid; grid-template-columns: auto 1fr; gap: 8px 28px; font-size: 21px; line-height: 1.6; }
+  .links dt { color: var(--accent); }
+  .links dd { color: var(--sub); }
+</style>
+</head>
+<body>
+
+<section class="slide cover">
+  <h1>Project Design</h1>
+  <p class="q">What drives us to do projects?</p>
+  <div class="rule"></div>
+  <p class="small">Slides for taking a quick look at what this site contains (as of 25 November 2026; the site is under construction).<br>Written by Claude, answering pjdhiro's questions in dialogue.</p>
+  <p class="no">1</p>
+</section>
+
+<section class="slide">
+  <h1>What is Project Design?</h1>
+  <div class="rule"></div>
+  <ul>
+    <li>A practice that not only envisions, designs and executes projects, but also takes the methods of execution and management themselves as its object, and envisions and designs them.</li>
+    <li>It looks through two lenses, “what we do” (Doing) and “what is happening” (Being). The two look at one whole from different sides.</li>
+    <li>It mainly applies to profit and non-profit enterprises. To research, life and other endeavors, it extends by structural likeness.</li>
+    <li>A large way of organizing it is the reader “What I Want to Call Love-Driven Development β”.</li>
+  </ul>
+  <p class="site">Project Design</p><p class="no">2</p>
+</section>
+
+<section class="slide questions">
+  <h1>Two questions</h1>
+  <div class="rule"></div>
+  <p class="q">What drives us to do projects?</p>
+  <p class="q">Why do we try to become something different from what we were?</p>
+  <p class="small">Whatever moves people and projects is called the driving source. Projects are not limited to business; they include life and family.</p>
+  <p class="hypo"><span class="label">Hypothesis</span>That driving source may be “what I want to call Love”.</p>
+  <p class="site">What I Want to Call Love-Driven Development β</p><p class="no">3</p>
+</section>
+
+<section class="slide">
+  <h1>What I want to call Love</h1>
+  <div class="rule"></div>
+  <ul>
+    <li>Love is not limited to romantic love. For now it is placed in two aspects: the aspect of a force by which people and things feel drawn, and the aspect of a property of the field that people are in.</li>
+    <li>The analogy is the relation between gravity and spacetime. Neither aspect is chosen over the other; both are set side by side as aspects.</li>
+    <li>Many definitions have been given to the word Love. pjdhiro sees them as possibly all being right.</li>
+  </ul>
+  <p class="site">What I Want to Call Love-Driven Development β</p><p class="no">4</p>
+</section>
+
+<section class="slide answer">
+  <h1>Answer for now</h1>
+  <div class="rule"></div>
+  <blockquote>We may be inside something like a field we want to call Love, and part of it. The body senses the reassurance of being connected, and gaps from it. Feeling those gaps as a lack, people start to move. The driving source of projects may be this lack, the gap between what I want to call Love and oneself.</blockquote>
+  <p class="small">The grounds are one person's plain experience (pjdhiro's theory from plain experience), not statistics from studying and counting many people. Research is cited not to prove the experience but as material for conveying it.</p>
+  <p class="site">What I Want to Call Love-Driven Development β</p><p class="no">5</p>
+</section>
+
+<section class="slide">
+  <h1>Four explorations of the invisible driving source</h1>
+  <p class="lead">The driving source cannot be seen directly. Just as gravity has been written through how other things move, it is written through how the things it moves move.</p>
+  <div class="rule"></div>
+  <div class="grid">
+    <div class="card"><h2>What Is Creation</h2><p>What structure and process does something follow when it comes into being? Theories from 30 fields, set side by side and written in five stages (Field → Wave → Edge → Vortex → Bundle).</p></div>
+    <div class="card"><h2>What Is Consciousness</h2><p>What do people cut the world with? An exploration through two signals: whether we can survive, and whether we can stay connected (trust).</p></div>
+    <div class="card"><h2>Kesson-Driven Thinking</h2><p>What do people sense where symbols read zero? An exploration of a stance of mind driven by a sense of lack or unease.</p></div>
+    <div class="card"><h2>Is Love Like Gravity?</h2><p>The center of a gravity well does not move, holds nothing and cannot see itself, yet everything turns around it. A reader that asks whether love is like that.</p></div>
+  </div>
+  <p class="no">6</p>
+</section>
+
+<section class="slide">
+  <h1>The five stages of creation</h1>
+  <div class="rule"></div>
+  <div class="stages">
+    <div class="stage"><h2>Field</h2><p class="en">場</p><p>A stable state, like the sea before waves rise.</p></div>
+    <div class="stage"><h2>Wave</h2><p class="en">波</p><p>Differences arise and face each other.</p></div>
+    <div class="stage"><h2>Edge</h2><p class="en">縁</p><p>Unlike things meet and collide.</p></div>
+    <div class="stage"><h2>Vortex</h2><p class="en">渦</p><p>Two stay distinguishable, yet hold together as if one.</p></div>
+    <div class="stage"><h2>Bundle</h2><p class="en">束</p><p>A gathering that remains as a new form, and becomes the next field.</p></div>
+  </div>
+  <p class="small">The five stages do not necessarily proceed in order; they run at once and enter into one another. The definitions are provisional, and are filled in by reading theories from 30 fields.</p>
+  <p class="site">What Is Creation</p><p class="no">7</p>
+</section>
+
+<section class="slide">
+  <h1>How the reader runs</h1>
+  <div class="rule"></div>
+  <div class="flow">
+    <div class="col">
+      <h2>First half: What drives us to do projects?</h2>
+      <ol>
+        <li><span>Part 1</span>The question, and the views so far</li>
+        <li><span>Part 2</span>Seeing the invisible driving source through similar shapes</li>
+        <li><span>Part 3</span>How do people interpret the world?</li>
+        <li><span>Part 4</span>How does the mind feel trust and reassurance?</li>
+        <li><span>Part 5</span>What is Love?</li>
+      </ol>
+    </div>
+    <div class="col">
+      <h2>Second half: Why do we try to become something different?</h2>
+      <ol>
+        <li><span>Part 6</span>What is happening inside what is called development?</li>
+        <li><span>Part 7</span>What I want to call Love-Driven Development</li>
+      </ol>
+    </div>
+  </div>
+  <p class="small">Development includes not only what is moved forward on purpose, but also what grows without being intended and what keeps changing.</p>
+  <p class="site">What I Want to Call Love-Driven Development β</p><p class="no">8</p>
+</section>
+
+<section class="slide">
+  <h1>What it is good for</h1>
+  <div class="rule"></div>
+  <p>The view of Love-Driven Development is pursued in the belief that it contributes to creation, including design and growth, to asking questions, and to value judgment and decision-making. All of these are seen as especially needed in the age of AI.</p>
+  <p class="small" style="margin-top: 34px;">Where to start reading</p>
+  <dl class="links" style="margin-top: 8px;">
+    <dt>Project Design</dt><dd>uminomae.github.io/project-design-theory/?lang=en</dd>
+    <dt>Love-Driven Development β</dt><dd>uminomae.github.io/project-design-theory/reader/love-driven-dev-en.html</dd>
+    <dt>What Is Creation</dt><dd>uminomae.github.io/project-design-theory/cs/</dd>
+    <dt>What Is Consciousness</dt><dd>uminomae.github.io/project-design-theory/as/</dd>
+    <dt>Kesson-Driven Thinking</dt><dd>uminomae.github.io/project-design-theory/ks/</dd>
+  </dl>
+  <p class="no">9</p>
+</section>
+
+</body>
+</html>

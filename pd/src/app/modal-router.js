@@ -92,7 +92,18 @@ export function createModalRouter({
         }
     }
 
+    async function loadSlidesForLang(lang = getCurrentLang()) {
+        const path = slidesPdfPath(lang);
+        if (!slideViewer || slidesLoadedPath === path) return;
+        const loaded = await slideViewer.load(path);
+        if (loaded) slidesLoadedPath = path;
+    }
+
     async function handleLanguageChange(lang) {
+        if (slidesModal.isOpen()) {
+            await loadSlidesForLang(lang);
+        }
+
         if (aboutModal.isOpen()) {
             resetReveal(aboutBody);
             await contentLoader.loadAboutContent(lang);
@@ -142,8 +153,11 @@ export function createModalRouter({
         }
     }
 
-    let slidesLoaded = false;
-    const SLIDES_PDF_PATH = 'assets/pdf/overview-slides-ja.pdf';
+    // 日本語の画面は overview-slides-ja.pdf、英語の画面は overview-slides-en.pdf（元は pd/scripts/slides/）
+    let slidesLoadedPath = null;
+    function slidesPdfPath(lang = getCurrentLang()) {
+        return lang === 'en' ? 'assets/pdf/overview-slides-en.pdf' : 'assets/pdf/overview-slides-ja.pdf';
+    }
 
     async function openSlides({ pushHistory = true } = {}) {
         closeAbout({ updateHistory: false });
@@ -151,10 +165,7 @@ export function createModalRouter({
         closeHowto({ updateHistory: false });
         slidesModal.open();
 
-        if (!slidesLoaded && slideViewer) {
-            const loaded = await slideViewer.load(SLIDES_PDF_PATH);
-            if (loaded) slidesLoaded = true;
-        }
+        await loadSlidesForLang();
 
         if (pushHistory && !getSearchParams().has('slides')) {
             updateSearchParams(
@@ -258,7 +269,7 @@ export function createModalRouter({
 
     function preloadSlides() {
         if (slideViewer) {
-            slideViewer.preload(SLIDES_PDF_PATH);
+            slideViewer.preload(slidesPdfPath());
         }
     }
 
