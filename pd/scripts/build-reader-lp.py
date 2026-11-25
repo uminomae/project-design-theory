@@ -327,6 +327,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は naegeli-1884-mechanisch-physiologische-theorie-der-abstammungslehre.md（独語の原文と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-naegeli-abstammungslehre-ja.md",
+        ROOT / "scripts/reader-naegeli-abstammungslehre-ja-template.html",
+        ROOT / "reader/naegeli-abstammungslehre-ja.html",
+        "flow",
+    ),
+    (
         # 読む順のリンク集。鍵の文の対訳は william-james-*.md（原文と訳）から <!--JA-TEXT:…--> で差し込む（#189）
         ROOT / "knowledge/translations/READER-william-james-self-ja.md",
         ROOT / "scripts/reader-william-james-self-ja-template.html",
@@ -753,6 +760,18 @@ JA_CHAPTERS = {
         "¶121": "結びの考察",
         "注1": "ヴァイスマンと編者の脚注",
     },
+    "naegeli-1884-mechanisch-physiologische-theorie-der-abstammungslehre.md": {
+        "¶1": "序論：生物の成り立ちの学説と、生理学の立場",
+        "¶17": "この本が調べること、由来論と自然選択",
+        "¶26": "個体の変化は、向きを持たないか、定まった向きを持つか",
+        "¶30": "完成化の原理と、二つの完全さ",
+        "¶38": "完成化は慣性の原理であり、競争が無くても生物は生じた",
+        "¶52": "分子生理学の仮説と、論じていく点",
+        "¶61": "第 III 章 変化の原因：内的な原因の栄養へのふるまい",
+        "¶74": "卵の発生と系統の変化、結晶の成長と比べる",
+        "¶88": "内的な原因は分子の力であり、分子の力として働く",
+        "注1": "ネーゲリの脚注",
+    },
     # ウィリアム・ジェームズの鍵の文（#189）。章の見出しは読む順のリンク集の正本 READER-william-james-self-ja.md に書く
     "william-james-1892-psychology-briefer-course.md": {},
     "william-james-1890-consciousness-of-self.md": {},
@@ -780,6 +799,7 @@ JA_LANG = {
     "clausius-1850-bewegende-kraft-der-warme.md": "de",
     "kronig-1856-theorie-der-gase.md": "de",
     "clausius-1857-art-der-bewegung.md": "de",
+    "naegeli-1884-mechanisch-physiologische-theorie-der-abstammungslehre.md": "de",
     "quetelet-1846-lettres-sur-la-theorie-des-probabilites.md": "fr",
 }
 

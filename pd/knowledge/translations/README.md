@@ -57,6 +57,7 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | `draper-1863-history-of-intellectual-development-of-europe.md` | John William Draper, *History of the Intellectual Development of Europe*, New York: Harper, 1863。原文は初版の本文の英国の刷り（London: Bell and Daldy, 1864）第 1 巻の第 10 章 pp.298–315 | 本の抜きの訳（2026-11-25・#175）。第 10 章「ヨーロッパの信仰の時代：東方の信仰の時代」の全文 25 段と、目次の章の要約（脚注は無い）。キリスト教の異教化、教父主義、テオドシウスの施策、テオフィロスによるアレクサンドリアのセラピオンと図書館の破壊、ヒュパティアの殺害、アレクサンドリアの学問の抑圧まで。パースが章を名指す。第 4 版（1866）は語を少し直しているので、初版の本文を訳すことにし、版の選び方は pjdhiro にボタンで示して決めた。1863 年の刷りの開いた走査が見つからないので、1864 年の刷りの走査（IA `bub_gb_lsdyKsjXFkkC`・p = n − 17）の OCR を下敷きに、読む役四つが十八頁を画像と照らして起こし訳の案を付け、照らす役四つが段ごとに照らし、Claude がつないで入れた。欄外の見出し 33 本は段の頭に置いた。人の校閲はまだ。1893 の ¶35 が、テオフィロスによるアレクサンドリアの大図書館の破壊に注63 を付け、「ドレイパーの『知的発展の歴史』第10章を見よ」と書く。ページ `pd/reader/draper-intellectual-development-ja.html` |
 | `thomson-1880-heat.md` | William Thomson, "Heat", *The Encyclopædia Britannica*, 9th ed., vol. XI, Edinburgh: A. & C. Black, 1880, pp.554–589（英語・36 頁） | 全文の訳（2026-11-25・#175）。題と序・§1〜§83・表 I〜X・数学の付録 I〜XVII、212 段・脚注 50。事典の一つの項なので全文を訳した。熱の感覚と潜熱、熱量測定、熱の本性とジュールの熱の動力学的当量、温度計と熱力学的な絶対温度の目盛り、熱の伝導・放射・拡散率、熱の性質の表、熱の伝わりの方程式の付録。文字起こしが無いので、走査（IA `in.ernet.dli.2015.208654`・p = n − 28）の OCR を下敷きに、読む役が二段組の段ごとに切った画像と照らして起こし訳の案を付け、照らす役が段ごとに照らし、式は前後から計算して確かめ、Claude がつないで入れた。pp.557–558・575 は原文を書き出すと API の出力の絞り込みで止められたので、OCR の文字を下書きにして食い違う所だけを直した。誌面の誤りと見た式や数は直さずに訳注に書いた。人の校閲はまだ。1893 の注64 が「トムソン自身、この項でクラウジウスの名を一度も挙げていない」と書く。全文を確かめると名は四か所（p.570 の欄外の注・p.579 の §76・p.586 の表 VIII と表 IX の典拠）に出て、§8・§9 の熱の動力学的理論の歩みの所には出ない（正本の頭）。ページ `pd/reader/thomson-heat-ja.html` |
 | `weismann-1886-significance-of-sexual-reproduction.md` | August Weismann, "The Significance of Sexual Reproduction in the Theory of Natural Selection"（独語 1886）。英訳は *Essays upon Heredity and Kindred Biological Problems*, ed. E. B. Poulton, S. Schönland, A. E. Shipley, Oxford: Clarendon Press, 1889, 第 V 論文 pp.251–297 | 序文と本文の全部の訳（2026-11-25・#175）。題・序文・目次・本文 132 段と脚注 23。付録 I〜VI（pp.298–332）は訳していない。パースは論文の名を挙げないので、二つの親からの遺伝の組み合わせが変異の源だと論じる論文として、目次と本文で確かめて案にし、pjdhiro がボタンで「第 5 論文の本文全部」「英訳 1889」を選んだ。文字起こしが無いので、OCR を下敷きに、読む役六つが全 47 頁を画像と照らして原文を起こし訳の案を付け、照らす役六つが段ごとに照らし、Claude がつないで訳語をそろえた。独語の原論文とは照らしていない。人の校閲はまだ。1893 の ¶21・注62 がヴァイスマンを挙げる。ページ `pd/reader/weismann-significance-of-sexual-reproduction-ja.html` |
+| `naegeli-1884-mechanisch-physiologische-theorie-der-abstammungslehre.md` | C. v. Nägeli, *Mechanisch-physiologische Theorie der Abstammungslehre*, München und Leipzig: R. Oldenbourg, 1884（独語） | 本の抜きの訳（2026-11-25・#175）。序論の全部（pp.3–20）と、第 III 章「変化の原因」の題（p.102）と二つの節「内的な原因の栄養へのふるまい」「内的な原因は分子の力であり、分子の力として働く」（pp.108–119）。98 段と脚注 3。パースは本の名を挙げないので、¶21 の「運動の第一法則」（ネーゲリの言う慣性）と「分子の組み立て」に当たる所を目次と本文で確かめ、四つの案から pjdhiro がボタンで「序論＋第 III 章の核」を選んだ。原文は独語で、独語の本文から訳した。文字起こしが無いので、OCR を下敷きに、読む役五つが 31 頁を画像と照らして原文を起こし訳の案を付け、照らす役五つが段ごとに照らし、Claude がつないだ。人の校閲はまだ。1893 の ¶21 がネーゲリを挙げ、ヴァイスマン 1886 が同じ本の p.117・p.286 を引く。ページ `pd/reader/naegeli-abstammungslehre-ja.html` |
 | `william-james-1892-psychology-briefer-course.md` | William James, *Psychology*（*Briefer Course*）, London: Macmillan, 1892, 第 12 章「The Self」 | 鍵の文の抜き 4 か所（2026-11-24・#189）。pp.176・216。走査の OCR から起こし、頁の柱で頁を決めた。人の校閲はまだ。ページ `pd/reader/william-james-self-ja.html`（読む順のリンク集。原文を訳の上に出す） |
 | `william-james-1890-consciousness-of-self.md` | William James, *The Principles of Psychology* vol.1, New York: Holt, 1890, 第 10 章「The Consciousness of Self」pp.291–401 | 鍵の文の抜き 17 か所（2026-11-24・#189）。York 大学の写しから取り、トロント大の走査の柱の頁と突き合わせた。人の校閲はまだ。ページは同じ |
 | `william-james-1890-stream-of-thought.md` | 同じ本の第 9 章「The Stream of Thought」pp.224–290 | 鍵の文の抜き 7 か所（2026-11-24・#189）。写しの誤り（if flows ほか）は走査の版に合わせた。人の校閲はまだ。ページは同じ |
@@ -405,6 +406,30 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | panmixia | パンミクシア | |
 | heterogeny | ヘテロゴニー | |
 | Nägeli / Darwin / van Beneden / Hensen / Rolph | ネーゲリ／ダーウィン／ヴァン・ベネーデン／ヘンゼン／ロルフ | |
+
+### ネーゲリ：表
+
+『由来論の機械論的・生理学的理論』（1884）の序論と第 III 章の二つの節の訳語。
+
+| 原語 | 訳語 | 覚え書き |
+|---|---|---|
+| Abstammungslehre / Descendenz | 由来論／由来 | |
+| Idioplasma / Ernährungsplasma / Plasma | イディオプラズマ／栄養プラズマ／プラズマ | 独語の形に寄せた。ヴァイスマンの表の英語 idioplasm は「イディオプラズム」 |
+| Micell / Micellreihe | ミセル／ミセルの列 | |
+| Anlage | 素質 | |
+| Vervollkommnung / Vervollkommnungsprincip / Vollkommenheit | 完成化／完成化の原理／完全さ | |
+| Beharrung / Beharrungsgesetz / beharren | 慣性／慣性の法則／（その向きに）とどまる | 文に合わせて訳し、Beharrung を添える |
+| Trägheitsgesetz | 慣性の法則 | 原語を添えて Beharrungsgesetz と分ける |
+| innere Ursachen / äussere Ursachen | 内的な原因／外的な原因 | |
+| Molecularkräfte | 分子の力 | |
+| natürliche Zuchtwahl / Selection | 自然選択／選択 | |
+| Concurrenz / Verdrängung / Kampf ums Dasein | 競争／押しのけ／生存闘争 | |
+| Anpassung / Reiz | 適応／刺激 | |
+| Urzeugung | 自然発生 | |
+| Varietät / Rasse / Sippe | 変種／品種／類 | Sippe は初出で原語を添える |
+| organisirte Substanz / Organisation | 体制化された物質／体制 | |
+| Entropie / Verwandlungsinhalt / Constanz (Erhaltung) der Energie | エントロピー／変換の内容／エネルギー保存 | どちらも「エネルギー保存」とし、原語を添えて分ける |
+| perpetuum mobile / perpetuum variabile | 永久機関／永久変化体 | 後者は仮の訳 |
 
 ### マクスウェル：表
 
