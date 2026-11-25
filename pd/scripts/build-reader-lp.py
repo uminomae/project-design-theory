@@ -419,6 +419,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/reasoning/READER-reasoning.md",
+        ROOT / "scripts/reader-reasoning-template.html",
+        ROOT / "reader/reasoning.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/nondual/READER-nondual.md",
         ROOT / "scripts/reader-nondual-template.html",
         ROOT / "reader/nondual.html",
