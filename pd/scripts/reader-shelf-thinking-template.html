@@ -5,14 +5,14 @@
   再生成: python3 scripts/build-reader-lp.py
   手順:   reader/README.md
   デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
-  - 思考に関わる独立ページの入口（pjdhiro 2026-11-26「思考関連のポータル的なものが欲しい。創造的思考もそこから飛ぶように。」・#206）
+  - 思考に関わるモジュールの入口（pjdhiro 2026-11-26「思考関連のポータル的なものが欲しい。創造的思考もそこから飛ぶように。」・#206）
   - 並べたページの多くが工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
 -->
 <!--
   ============================================================================
   LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
   ============================================================================
-  この文書は「思考を見るページ」です。独立ページの題と一行の説明を並べただけのページで、本文の主張はありません。一行の説明は、各ページの冒頭から Claude が書きました。
+  この文書は「思考を見るページ」です。モジュールの題と一行の説明を並べただけのページで、本文の主張はありません。一行の説明は、各ページの冒頭から Claude が書きました。
   文責は Claude。
   ============================================================================
 -->
@@ -36,9 +36,9 @@
     <title>思考を見るページ | Project Design</title>
     <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/shelf-thinking.html">
     <link rel="icon" href="../favicon.ico">
-    <meta name="description" content="考えることにまつわる独立ページの並び（思考に関わるページの入口）。思考とは・推論とは・頭脳の能力は、どう分けられてきたか・新しく注目されている能力・思考を動かす構えと体力・類推と、構造の類似を見抜く力（まだ書いていないものは工事中）と、創造的思考とは・パースの創造的な愛と、アブダクション・欠損駆動思考・メタ認知とは・意思決定とは ほか。">
+    <meta name="description" content="考えることにまつわるモジュールの並び（思考に関わるページの入口）。思考とは・推論とは・頭脳の能力は、どう分けられてきたか・新しく注目されている能力・思考を動かす構えと体力・類推と、構造の類似を見抜く力（まだ書いていないものは工事中）と、創造的思考とは・パースの創造的な愛と、アブダクション・欠損駆動思考・メタ認知とは・意思決定とは ほか。">
     <meta property="og:title" content="思考を見るページ">
-    <meta property="og:description" content="考えることにまつわる独立ページの並び（思考に関わるページの入口）。思考とは・推論とは・頭脳の能力は、どう分けられてきたか・新しく注目されている能力・思考を動かす構えと体力・類推と、構造の類似を見抜く力（まだ書いていないものは工事中）と、創造的思考とは・パースの創造的な愛と、アブダクション・欠損駆動思考・メタ認知とは・意思決定とは ほか。">
+    <meta property="og:description" content="考えることにまつわるモジュールの並び（思考に関わるページの入口）。思考とは・推論とは・頭脳の能力は、どう分けられてきたか・新しく注目されている能力・思考を動かす構えと体力・類推と、構造の類似を見抜く力（まだ書いていないものは工事中）と、創造的思考とは・パースの創造的な愛と、アブダクション・欠損駆動思考・メタ認知とは・意思決定とは ほか。">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/shelf-thinking.html">
     <meta property="og:site_name" content="Project Design">
@@ -60,8 +60,8 @@
         {
           "@type": "Article",
           "headline": "思考を見るページ",
-          "description": "考えることにまつわる独立ページの並び（思考に関わるページの入口）。思考とは・推論とは・頭脳の能力は、どう分けられてきたか・新しく注目されている能力・思考を動かす構えと体力・類推と、構造の類似を見抜く力（まだ書いていないものは工事中）と、創造的思考とは・パースの創造的な愛と、アブダクション・欠損駆動思考・メタ認知とは・意思決定とは ほか。",
-          "keywords": "思考, 推論, 頭脳の能力, 創造的思考, アブダクション, 欠損駆動思考, メタ認知, 意思決定, 独立ページ, プロジェクトデザイン論",
+          "description": "考えることにまつわるモジュールの並び（思考に関わるページの入口）。思考とは・推論とは・頭脳の能力は、どう分けられてきたか・新しく注目されている能力・思考を動かす構えと体力・類推と、構造の類似を見抜く力（まだ書いていないものは工事中）と、創造的思考とは・パースの創造的な愛と、アブダクション・欠損駆動思考・メタ認知とは・意思決定とは ほか。",
+          "keywords": "思考, 推論, 頭脳の能力, 創造的思考, アブダクション, 欠損駆動思考, メタ認知, 意思決定, モジュール, プロジェクトデザイン論",
           "url": "https://uminomae.github.io/project-design-theory/reader/shelf-thinking.html",
           "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/shelf-thinking.html",
           "inLanguage": "ja",
@@ -84,18 +84,18 @@
     <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
     <div id="llm-summary" class="visually-hidden" aria-hidden="true">
         <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
-        <p>これは「思考を見るページ」です。考えることにまつわる独立ページの並び（思考に関わるページの入口）。思考とは・推論とは・頭脳の能力は、どう分けられてきたか・新しく注目されている能力・思考を動かす構えと体力・類推と、構造の類似を見抜く力（まだ書いていないものは工事中）と、創造的思考とは・パースの創造的な愛と、アブダクション・欠損駆動思考・メタ認知とは・意思決定とは ほか。</p>
+        <p>これは「思考を見るページ」です。考えることにまつわるモジュールの並び（思考に関わるページの入口）。思考とは・推論とは・頭脳の能力は、どう分けられてきたか・新しく注目されている能力・思考を動かす構えと体力・類推と、構造の類似を見抜く力（まだ書いていないものは工事中）と、創造的思考とは・パースの創造的な愛と、アブダクション・欠損駆動思考・メタ認知とは・意思決定とは ほか。</p>
     </div>
     <div id="webgl-container" aria-hidden="true"></div>
     <div id="content">
         <div class="reader-wrap">
             <div class="draft-banner">
-                独立ページを並べたページです。並べ方と一行の説明は AI（Claude）が書いています。
+                モジュールを並べたページです。並べ方と一行の説明は AI（Claude）が書いています。
             </div>
             <header class="reader-hero">
                 <h1>思考を見るページ</h1>
                 <p class="reader-meta">
-                    最終更新: <!--UPDATED--> ／ 状態: 独立ページの並び<br>
+                    最終更新: <!--UPDATED--> ／ 状態: モジュールの並び<br>
                     <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/reader-shelves/READER-shelf-thinking.md">正本 (GitHub)</a>
                 </p>
             </header>

@@ -2168,7 +2168,189 @@ function mountPhasorSplit(host) {
     draw();
 }
 
+// ============================================================
+// 角度は、回転を扱うためのもの（reader/angle-rotation.html）
+// ============================================================
+// 数を「−」付きで、小数第 2 位まで
+function arNum(v) {
+    const r = Math.round(v * 100) / 100;
+    const t = Math.abs(r) < 1e-9 ? 0 : r;
+    return (t < 0 ? '−' : '') + String(Math.abs(t));
+}
+// 度を、π の分数で（15 度刻みのときだけ）。420 → 7π/3
+function arPi(deg) {
+    if (deg === 0) return '0';
+    if (Math.round(deg) !== deg || deg % 15 !== 0) return null;
+    const g = (a, b) => (b ? g(b, a % b) : a);
+    let p = Math.abs(deg), q = 180;
+    const d = g(p, q); p /= d; q /= d;
+    const sgn = deg < 0 ? '−' : '';
+    const num = p === 1 ? 'π' : p + 'π';
+    return sgn + (q === 1 ? num : num + '/' + q);
+}
+function arTurns(deg) {
+    const a = Math.abs(deg);
+    const k = Math.floor(a / 360 + 1e-9), rest = Math.round(a - k * 360);
+    const dir = deg < 0 ? '逆向きに' : '';
+    if (a === 0) return '回っていない';
+    if (k === 0) return dir + rest + '° 回った';
+    const ks = k === 1 ? '一回転' : k + ' 回転';
+    return dir + ks + (rest ? 'と ' + rest + '°' : '') + ' 回った';
+}
+
+// 1) 一つの回転の、五つの顔
+//    θ（度）を −360〜720 で決めると、長さ 1 の棒の先が単位円の上に来る。
+//    同じ θ を、度・道のり（ラジアン）・横と縦（cos・sin）・複素数（cos θ + i sin θ）で並べて出す。
+//    真ん中の渦巻き（回った量の印）は、一回転ごとに少し外へずらして、何周したかを見せる。
+function mountAngleFaces(host) {
+    const P = PAL();
+    const view = makeCanvas(host, 0.62);
+    const row = controls(host);
+    const row2 = controls(host);
+    const st = status(host);
+    let th = 60;
+    let anim = null;
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const rad = d => d * Math.PI / 180;
+    const sl = slider(row, { label: '回った量 θ（度）', min: -360, max: 720, value: th, step: 5, onInput: v => { anim = null; th = v; draw(); } });
+    [-90, 30, 90, 180, 360, 420].forEach(d => button(row2, (d < 0 ? '−' + (-d) : d) + '°', () => { anim = null; th = d; sl.value = d; draw(); }));
+    button(row2, '回し続ける', () => {
+        if (reduce) { th = 720; sl.value = th; draw(); return; }
+        anim = { t0: performance.now(), from: th >= 720 ? 0 : th };
+        requestAnimationFrame(tick);
+    });
+    function tick(now) {
+        if (!anim) return;
+        th = Math.min(720, Math.round((anim.from + (now - anim.t0) / 1000 * 90) / 5) * 5);
+        sl.value = th; draw();
+        if (th < 720) requestAnimationFrame(tick); else anim = null;
+    }
+    function geom() {
+        const { W, H } = view;
+        const R = Math.min(H * 0.36, W * 0.3);
+        return { cx: W / 2, cy: H / 2, R };
+    }
+    view.canvas.addEventListener('pointerdown', ev => {
+        const rect = view.canvas.getBoundingClientRect();
+        const { cx, cy } = geom();
+        let d = Math.atan2(-(ev.clientY - rect.top - cy), ev.clientX - rect.left - cx) * 180 / Math.PI;
+        if (d < 0) d += 360;
+        anim = null;
+        th = Math.round(d / 5) * 5; sl.value = th; draw();
+    });
+    view.canvas.style.cursor = 'pointer';
+
+    function draw() {
+        const { ctx, W, H } = view;
+        ctx.clearRect(0, 0, W, H);
+        const { cx, cy, R } = geom();
+        const c = Math.cos(rad(th)), s = Math.sin(rad(th));
+        const px = cx + R * c, py = cy - R * s;
+        // 軸と円
+        ctx.strokeStyle = P.mid; ctx.lineWidth = 1.2;
+        ctx.beginPath(); ctx.moveTo(cx - R * 1.3, cy); ctx.lineTo(cx + R * 1.3, cy); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(cx, cy - R * 1.25); ctx.lineTo(cx, cy + R * 1.25); ctx.stroke();
+        ctx.strokeStyle = P.line; ctx.lineWidth = 1.5;
+        ctx.beginPath(); ctx.arc(cx, cy, R, 0, Math.PI * 2); ctx.stroke();
+        ctx.fillStyle = P.mid; ctx.font = '11px sans-serif'; ctx.textAlign = 'center';
+        ctx.fillText('1', cx + R + 8, cy + 13); ctx.fillText('−1', cx - R - 10, cy + 13);
+        ctx.fillText('i', cx - 8, cy - R - 3); ctx.fillText('−i', cx - 10, cy + R + 12);
+        // 円の上の道のり（1 から回った所まで。何周もしたら、そのぶん重ねて濃く）
+        ctx.strokeStyle = P.gold; ctx.lineWidth = 4; ctx.globalAlpha = 0.55;
+        const a0 = 0, a1 = -rad(th);
+        ctx.beginPath(); ctx.arc(cx, cy, R, a0, a1, th > 0); ctx.stroke();
+        ctx.globalAlpha = 1;
+        // 回った量の印（渦巻き。一回転ごとに外へずらす）
+        ctx.strokeStyle = P.coral; ctx.lineWidth = 1.6;
+        ctx.beginPath();
+        const steps = Math.max(2, Math.ceil(Math.abs(th) / 3));
+        for (let k = 0; k <= steps; k++) {
+            const d = th * k / steps;
+            const r = R * (0.16 + 0.07 * Math.abs(d) / 360);
+            const x = cx + r * Math.cos(rad(d)), y = cy - r * Math.sin(rad(d));
+            k === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        }
+        ctx.stroke();
+        // 横と縦
+        ctx.setLineDash([3, 3]); ctx.strokeStyle = P.mid; ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(px, py); ctx.lineTo(px, cy); ctx.moveTo(px, py); ctx.lineTo(cx, py); ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.lineWidth = 5; ctx.lineCap = 'round';
+        ctx.strokeStyle = P.coral; ctx.globalAlpha = 0.8; ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(px, cy); ctx.stroke();
+        ctx.strokeStyle = P.navy; ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(cx, py); ctx.stroke();
+        ctx.globalAlpha = 1; ctx.lineCap = 'butt';
+        // 棒
+        drawArrow(ctx, cx, cy, px, py, P.ink, 2);
+        ctx.fillStyle = P.gold; ctx.beginPath(); ctx.arc(px, py, 5.5, 0, Math.PI * 2); ctx.fill();
+        ctx.font = '11px sans-serif';
+        if (Math.abs(c) > 0.2) { ctx.fillStyle = P.coral; ctx.textAlign = 'center'; ctx.fillText('横 cos θ', cx + R * c / 2, cy + (s >= 0 ? 15 : -8)); }
+        if (Math.abs(s) > 0.2) { ctx.fillStyle = P.navy; ctx.textAlign = c >= 0 ? 'right' : 'left'; ctx.fillText('縦 sin θ', cx + (c >= 0 ? -6 : 6), cy - R * s / 2); }
+
+        const pi = arPi(th);
+        let msg = '回った量：<b>' + (th < 0 ? '−' + (-th) : th) + '°</b>（' + arTurns(th) + '）。';
+        msg += '円の上の道のり（弧度法）：<b>' + (pi ? pi + ' ≈ ' : '') + arNum(rad(th)) + '</b>。';
+        msg += '棒の先の横 cos θ = <b>' + arNum(c) + '</b>、縦 sin θ = <b>' + arNum(s) + '</b>。';
+        msg += '複素数で書くと <b>' + ftaComplex(c, s) + '</b>（= cos θ + i sin θ = e<sup>iθ</sup>）。';
+        msg += ' 円をクリックするか、つまみで θ を選べます。';
+        st.innerHTML = msg;
+    }
+    view.canvas.setAttribute('aria-label', '半径 1 の円と、0 から伸びる長さ 1 の棒。棒の先の横の長さ（赤・cos θ）と縦の長さ（紺・sin θ）、1 から棒の先まで円の上を進んだ道のり（金）、真ん中に回った量の印（赤い渦巻き。一回転ごとに外へずれる）を描く。');
+    view.onResize = draw;
+    draw();
+}
+
+// 2) 回して、また回すと、角度が足される（加法定理）
+//    角度 a の点（紺）に、角度 b の点（灰）を掛けると、角度 a + b の点（金）に行く。
+//    横は cos a cos b − sin a sin b、縦は sin a cos b + cos a sin b と計算でき、cos(a + b)・sin(a + b) と同じになる。
+function mountAngleAdd(host) {
+    const P = PAL();
+    const view = makeCanvas(host, 0.62);
+    const row = controls(host);
+    const st = status(host);
+    let a = 30, b = 45;
+    const rad = d => d * Math.PI / 180;
+    slider(row, { label: '角度 a（度）', min: 0, max: 360, value: a, step: 5, onInput: v => { a = v; draw(); } });
+    slider(row, { label: '角度 b（度）', min: 0, max: 360, value: b, step: 5, onInput: v => { b = v; draw(); } });
+    function draw() {
+        const { ctx, W, H } = view;
+        ctx.clearRect(0, 0, W, H);
+        const R = Math.min(H * 0.38, W * 0.32), cx = W / 2, cy = H / 2;
+        ctx.strokeStyle = P.mid; ctx.lineWidth = 1.2;
+        ctx.beginPath(); ctx.moveTo(cx - R * 1.3, cy); ctx.lineTo(cx + R * 1.3, cy); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(cx, cy - R * 1.25); ctx.lineTo(cx, cy + R * 1.25); ctx.stroke();
+        ctx.strokeStyle = P.line; ctx.lineWidth = 1.5;
+        ctx.beginPath(); ctx.arc(cx, cy, R, 0, Math.PI * 2); ctx.stroke();
+        ctx.fillStyle = P.mid; ctx.font = '11px sans-serif'; ctx.textAlign = 'center';
+        ctx.fillText('1', cx + R + 8, cy + 13); ctx.fillText('i', cx - 8, cy - R - 3);
+        const pt = d => [cx + R * Math.cos(rad(d)), cy - R * Math.sin(rad(d))];
+        // a から a + b へ回る弧
+        ctx.strokeStyle = P.gold; ctx.lineWidth = 4; ctx.globalAlpha = 0.5;
+        ctx.beginPath(); ctx.arc(cx, cy, R, -rad(a), -rad(a + b), true); ctx.stroke();
+        ctx.globalAlpha = 1;
+        ctx.strokeStyle = P.navy; ctx.lineWidth = 1.4;
+        ctx.beginPath(); ctx.arc(cx, cy, R * 0.18, 0, -rad(a), true); ctx.stroke();
+        const [bx, by] = pt(b), [ax, ay] = pt(a), [sx, sy] = pt(a + b);
+        drawArrow(ctx, cx, cy, bx, by, P.mute, 1.8);
+        drawArrow(ctx, cx, cy, ax, ay, P.navy, 2.2);
+        drawArrow(ctx, cx, cy, sx, sy, P.gold, 2.6);
+        ctx.font = '12px sans-serif';
+        const lab = (x, y, t, col) => { ctx.fillStyle = col; ctx.textAlign = x >= cx ? 'left' : 'right'; ctx.fillText(t, x + (x >= cx ? 7 : -7), y + (y >= cy ? 14 : -6)); };
+        lab(bx, by, 'b', P.mid); lab(ax, ay, 'a', P.navy); lab(sx, sy, 'a + b', P.gold);
+        const ca = Math.cos(rad(a)), sa = Math.sin(rad(a)), cb = Math.cos(rad(b)), sb = Math.sin(rad(b));
+        const re = ca * cb - sa * sb, im = sa * cb + ca * sb;
+        let msg = '角度 a = <b>' + a + '°</b> の点に、角度 b = <b>' + b + '°</b> の点を掛けると、角度 a + b = <b>' + (a + b) + '°</b> の点（金）に行きます。';
+        msg += '横：cos a cos b − sin a sin b = <b>' + arNum(re) + '</b>、cos(a + b) = <b>' + arNum(Math.cos(rad(a + b))) + '</b>。';
+        msg += '縦：sin a cos b + cos a sin b = <b>' + arNum(im) + '</b>、sin(a + b) = <b>' + arNum(Math.sin(rad(a + b))) + '</b>。';
+        st.innerHTML = msg;
+    }
+    view.canvas.setAttribute('aria-label', '半径 1 の円の上に、角度 a の点（紺）、角度 b の点（灰）、二つを掛けた角度 a + b の点（金）と、a から a + b へ回る弧を描く。');
+    view.onResize = draw;
+    draw();
+}
+
 const MOUNTS = {
+    'angle-faces': mountAngleFaces,
+    'angle-add': mountAngleAdd,
     'phasor-needles': mountPhasorNeedles,
     'phasor-power': mountPhasorPower,
     'phasor-split': mountPhasorSplit,

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/angle-rotation.html を直接編集しないでください。
+  正本:   knowledge/research/angle-rotation/READER-angle-rotation.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「三角関数から複素平面まで、回転を扱うための角度の話だった」のページです（工事中）。目次「複素平面で考える」（reader/complex-plane.html）から指す、高校生向けのおさらいの独立ページ。芯：角度を、図形の角や辺の比としてでなく、どれだけ回ったかの量として読むと、小学 4 年の角の大きさ・中学の回転移動と外角の和・三平方の定理・数学 I の三角比・数学 II の一般角と弧度法と三角関数と加法定理と複素数・数学 C の複素数平面・数学 III の e・オイラーの式が一本の筋で並ぶ。数直線から積み上げる順でなく、平面で長さ 1 の棒を回すことから入る。cos と sin は回した棒の先の横と縦、加法定理は複素数の掛け算で角度が足されることを横と縦で書いたもの。影が波になることと e の決め方はオイラーの式のページ、i を掛けると 90 度回る説明は回転の掛け算のページを指し、写さない。学年と科目は学習指導要領（小・中は平成 29 年告示、高校は平成 30 年告示）の本文で確かめた。図は二つ（src/reader-microworlds.js の angle-faces・angle-add）。
+  数学の説明は教科書にある事実の要約で、Claude が書いた。人の意識への当てはめは書かない。
+  pjdhiro 本人の言葉は「pjdhiro の見方：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三角関数から複素平面まで、回転を扱うための角度の話だった | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/angle-rotation.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="学校で何年にも分けて習う角度（図形の角・三角比・三角関数・弧度法・複素数）を、どれだけ回ったかの量として一本の筋で読み直す。三角比の cos と sin は回した長さ 1 の棒の先の横と縦、三角関数は回り続ける棒の先が描く波、弧度法は回った量を円の上の道のりで測ること、複素数を掛けると回り、回して回すと角度が足されることが加法定理、e^{iθ} は円の上を道のり θ だけ進んだ点。学年と科目は学習指導要領で確かめて添えた（工事中）。">
+    <meta property="og:title" content="三角関数から複素平面まで、回転を扱うための角度の話だった">
+    <meta property="og:description" content="学校で何年にも分けて習う角度（図形の角・三角比・三角関数・弧度法・複素数）を、どれだけ回ったかの量として一本の筋で読み直す。三角比の cos と sin は回した長さ 1 の棒の先の横と縦、三角関数は回り続ける棒の先が描く波、弧度法は回った量を円の上の道のりで測ること、複素数を掛けると回り、回して回すと角度が足されることが加法定理、e^{iθ} は円の上を道のり θ だけ進んだ点。学年と科目は学習指導要領で確かめて添えた（工事中）。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/angle-rotation.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="三角関数から複素平面まで、回転を扱うための角度の話だった">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-26">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "三角関数から複素平面まで、回転を扱うための角度の話だった",
+          "description": "学校で何年にも分けて習う角度（図形の角・三角比・三角関数・弧度法・複素数）を、どれだけ回ったかの量として一本の筋で読み直す。三角比の cos と sin は回した長さ 1 の棒の先の横と縦、三角関数は回り続ける棒の先が描く波、弧度法は回った量を円の上の道のりで測ること、複素数を掛けると回り、回して回すと角度が足されることが加法定理、e^{iθ} は円の上を道のり θ だけ進んだ点。学年と科目は学習指導要領で確かめて添えた（工事中）。",
+          "keywords": "角度, 回転, 三角比, 三角関数, 弧度法, ラジアン, 加法定理, 複素数, 複素平面, オイラーの式, 単位円, 学習指導要領, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/angle-rotation.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/angle-rotation.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-26",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "三角関数"}, {"@type": "Thing", "name": "複素数"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方の言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「三角関数から複素平面まで、回転を扱うための角度の話だった」のページです（工事中）。学校で何年にも分けて習う角度（図形の角・三角比・三角関数・弧度法・複素数）を、どれだけ回ったかの量として一本の筋で読み直す。三角比の cos と sin は回した長さ 1 の棒の先の横と縦、三角関数は回り続ける棒の先が描く波、弧度法は回った量を円の上の道のりで測ること、複素数を掛けると回り、回して回すと角度が足されることが加法定理、e^{iθ} は円の上を道のり θ だけ進んだ点。学年と科目は学習指導要領で確かめて添えた。目次「複素平面で考える」から指す独立ページの一つ。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>三角関数から複素平面まで、回転を扱うための角度の話だった</h1>
+                <p class="reader-subtitle">中学の図形から e<sup>iθ</sup> まで、角度を回る量として読み直す</p>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/angle-rotation/READER-angle-rotation.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="complex-plane.html">複素平面で考える（目次）</a> ・
+                <a href="euler-formula.html">オイラーの式</a> ・
+                <a href="rotation-multiplication.html">回転の掛け算</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-microworlds.js"></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

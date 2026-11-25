@@ -443,6 +443,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/angle-rotation/READER-angle-rotation.md",
+        ROOT / "scripts/reader-angle-rotation-template.html",
+        ROOT / "reader/angle-rotation.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/reasoning/READER-reasoning.md",
         ROOT / "scripts/reader-reasoning-template.html",
         ROOT / "reader/reasoning.html",
