@@ -107,4 +107,5 @@ Gutenberg は 2026-11-25 にメンテナンス中で取れなかった。どれ�
 - 読み物「創造的思考とは」（`pd/reader/creative-thinking.html`）：デューイの思考の起こり（困りごと）と仮説。
 - 読み物「メタ認知とは」（`pd/reader/metacognition.html`）：考えることを考える働き。
 - 読み物「意思決定とは」（`pd/reader/decision-making.html`）：判断と選択、カーネマンとトヴェルスキー。
-- #206 の M2〜M8：まだページが無い（2026-11-25）。
+- 読み物「推論とは」（`pd/reader/reasoning.html`）：#206 の M2。演繹・帰納・仮説・類推。
+- #206 の M3〜M8：まだページが無い（2026-11-25）。
