@@ -42,7 +42,7 @@
 | `via-vulnerability/` | 「脆弱性から、全体を知る」。正本 `READER-via-vulnerability.md`、一般化の下書き `DRAFT-knowing-through-vulnerability-20261117.md`。照合の記録は `love-driven-dev/SURVEY-self-via-vulnerability-20261117.md` |
 | `empathy/` | 「共感とは」（#151）。正本 `READER-empathy.md`、pjdhiro の発言の記録・読んだ原典と照合の状態・本文の「共感」の使い分けの一覧は `README.md`、原典ごとの照合は `SURVEY-01-classics.md`・`SURVEY-02-psychology.md` |
 | `vibe-to-code/` | Sato「Vibe to Code」（Jxiv 5731・2026。生成 AI と対話してデザインの意図を言葉にする過程を、熟練のデザイナー 5 人で観た探索的な質的研究）を読んだ記録。読み物の正本は `READER-vibe-to-code.md`（`pd/reader/vibe-to-code.html`・「Vibe to Code と並べて見る、pjdhiro のやり方」・工事中・noindex・リンク元は未定）。書誌・照合の状態・方法と見つけたことの頁つきの控えは `README.md` |
-| `capacity-after-ai/` | 読み物「AI の時代に、身体・思考・心の量はどう変わるか」（`pd/reader/capacity-after-ai.html`・副題「道具が引き受けてきた量の歴史から」・2026-11-25・工事中・noindex）の正本 `READER-capacity-after-ai.md`。道具が引き受けた量と差が移った先の歴史、AI で照らされる取り繕い、身体・思考・心の量、鍵は受容、このサイトが手伝えること。リンク元はトップの「AIに読ませる」の窓の D の節 |
+| `capacity-after-ai/` | 読み物「AI の時代に、差になるスキルは何か」（`pd/reader/capacity-after-ai.html`・副題「身体・思考・心の量と、道具の歴史から」・2026-11-25・工事中・noindex）の正本 `READER-capacity-after-ai.md`。道具が引き受けた量と差が移った先の歴史、AI で照らされる取り繕い、身体・思考・心の量、鍵は受容、このサイトが手伝えること。リンク元はトップの「AIに読ませる」の窓の D の節 |
 | `peer-learning/` | ピア・ラーニング（教育）とペアプログラミングの原典の照合（付箋帳 i20261117142315hkb・Love駆動開発に置く前の調べ）。`SURVEY-peer-learning-pairprog-20261118.md` |
 | `defense-mechanisms/` | 「心理的防衛機制とは」。正本 `READER-defense-mechanisms.md`。照合の記録は `psychological-safety/SURVEY-07-defense-maturity.md`（防衛の水準・パーソナリティ障害・職場のいじめ）と `SURVEY-09-personality-integration.md`（人格の重さと型を並べる論） |
 | `subtraction-kinds/` | 「いろんな引き算」（欠損駆動思考の章「「私は引き算をしていた。数直線の外で。」」の前提知識）。正本 `READER-subtraction-kinds.md` |
