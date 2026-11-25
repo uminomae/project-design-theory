@@ -425,12 +425,6 @@ PAGES = [
         "flow",
     ),
     (
-        ROOT / "knowledge/research/euler-formula-analogy/READER-euler-formula-analogy.md",
-        ROOT / "scripts/reader-euler-formula-analogy-template.html",
-        ROOT / "reader/euler-formula-analogy.html",
-        "flow",
-    ),
-    (
         ROOT / "knowledge/research/fundamental-theorem-of-algebra-analogy/READER-fundamental-theorem-of-algebra-analogy.md",
         ROOT / "scripts/reader-fundamental-theorem-of-algebra-analogy-template.html",
         ROOT / "reader/fundamental-theorem-of-algebra-analogy.html",

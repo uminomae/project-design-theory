@@ -22,7 +22,7 @@
 <li><b><a href="#eu-wave">回る点の影は、波になる</a></b>：cos と sin は、円の上の点の影の長さ</li>
 <li><b><a href="#eu-formula">角度を指数に置く、オイラーの式</a></b>：e<sup>iθ</sup> は、円の上を道のり θ だけ回った点</li>
 <li><b><a href="#eu-identity">半周回ると −1、1 を足すと 0</a></b>：e<sup>iπ</sup> + 1 = 0 の五つの数</li>
-<li><b><a href="#eu-more">このあとに読むもの</a></b>：構造の類似を考えるページと、ほかの数学</li>
+<li><b><a href="#eu-more">このあとに読むもの</a></b>：意識に照らした探索と、ほかの数学</li>
 </ul>
 </div>
 
@@ -129,6 +129,6 @@ e 以外の数でも、同じように「数の iθ 乗」を決めると、円�
 
 数学者たちがオイラーの等式を美しいと呼んできたことと、その美しさを脳で測った研究は、読み物「[美とは](beauty.html#bt-euler)」の章「数学者が、いちばん美しいと呼んできた式」にあります。
 
-オイラーの式の登場人物を、人の意識やプロジェクトの駆動源に仮に当てて考えるページは、「[オイラーの式から、構造の類似を考える](euler-formula-analogy.html)」にあります。
+i を掛けて 90 度回ることと、オイラーの式を、人の意識に照らして推論した探索は、記録「[複素平面の数式ごとに、人の意識との構造の類似を推論する](https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/julia-potential/EXPLORE-formulas-consciousness-20261125.md)」の節「i を掛けること（90 度の回転）と、i² = −1」と節「指数関数と対数関数（オイラーの式・対数らせん・log の多価）」にあります。
 
 複素数が関わるほかの数学は、目次「[複素平面で考える](complex-plane.html)」に並べています。
