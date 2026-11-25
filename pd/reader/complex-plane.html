@@ -95,7 +95,7 @@
                 <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」が本人の言葉です。<br>
                 🚧 <b>工事中</b>です。
             </div>
-            <header class="reader-hero">
+            <header class="reader-hero" id="overview">
                 <h1>複素平面で考える</h1>
                 <p class="reader-subtitle">複素数が関わる、十七の数学</p>
                 <p class="reader-meta">
@@ -105,41 +105,25 @@
             </header>
             <article class="reader-article prose-block">
 <div class="reader-lead glow-card" id="cp-gist"><span class="reader-lead__label">ざっくりいうと</span>
-<p>数直線の上の掛け算でできるのは、伸ばすことと、裏返すことだけです。複素数の平面では、掛け算は「伸ばして、回す」ことになり、裏返すまでの途中の角度で止まれます。</p>
-<p>このページは、複素数が関わる有名な数学を、分野で絞らずに挙げていく目次です。今の十七は、とりあえずの一覧で、見つけたものから足していきます。一つずつ独立したページにしていき、できたものから、ここにリンクを置きます。</p>
+<p>複素数が関わる数学を、分野で絞らずに並べた目次です。数直線の上の掛け算は、伸ばすか裏返すかだけですが、複素数の平面では、伸ばして回すことになります。</p>
+<p>はじめに読むなら、入口に「<a href="euler-unfolded.html">オイラーの等式が、たたんだもの</a>」、おさらいに「<a href="angle-rotation.html">三角関数から複素平面まで、回転を扱うための角度の話だった</a>」と「<a href="rotation-multiplication.html">回転の掛け算</a>」があります。</p>
 </div>
 
-<p class="reader-summary__title" id="overview">概要</p>
+<p>表の名前がリンクのものは、独立したページがあります。「工事中」は、まだ無いしるしです。右の列には、その数学を人の意識やプロジェクトの駆動源に仮に当てるページを置きます。</p>
+<details class="acc"><summary>このページができたわけ</summary>
 
-<p>このページは、pjdhiro の頼みに、Claude が調べて答える形で作っています。始まりは、複素平面の数式を一つずつ人の意識に照らしていた対話の中で、pjdhiro が言った一言です。</p>
+<p>複素平面の数式を一つずつ人の意識に照らしていた対話の中で、pjdhiro はこう話しています。</p>
 <blockquote class="reader-callout reader-request">
 <p><strong>pjdhiro の見方：</strong>一次元の数直線的な思考を止めたい。</p>
 </blockquote>
-<p>Claude が挙げた一覧を、複素数を扱う数学の一つの分野（複素関数論）の主なものを集めたもの、と読みかけたとき、pjdhiro はこう話しています。</p>
+<p>挙げた一覧を、複素数を扱う一つの分野（複素関数論）の主なもの、と Claude が読みかけたときには、こう話しています。</p>
 <blockquote class="reader-callout reader-request">
 <p><strong>pjdhiro の見方：</strong>いえ、微積分は苦手です。解析が中学レベル。その私が複素平面にだけは惹かれる。…なので、複素数の関わるものをとりあえず、網羅的にリストアップして、一つ一つ見ていこうかと思ったのです。</p>
 </blockquote>
-<p>だから、この目次は分野で絞らず、複素数が関わるものを広く並べます。説明は、中学の数学で読める言葉で書きます。何に惹かれているのか（回ることか、波か、二次元そのものか）は、決めずに見ていきます。表の「働いているもの」には、その数学の中で何が働いているかを一言で添えました。</p>
-<p>これらの式を人の意識に照らして推論した探索の記録は、「<a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/julia-potential/EXPLORE-formulas-consciousness-20261125.md">複素平面の数式ごとに、人の意識との構造の類似を推論する</a>」にあります。</p>
-<div class="reader-lead"><span class="reader-lead__label">構成</span>
-<ul class="reader-lead__list">
-<li><b><a href="#cp-core">掛け算は、伸ばして、回す</a></b>：複素数の芯</li>
-<li><b><a href="#cp-set1">一つ目の束の七つ</a></b>：オイラーの式から波動関数まで</li>
-<li><b><a href="#cp-set2">二つ目の束の八つ</a></b>：留数定理からガウス整数まで</li>
-<li><b><a href="#cp-set3">三つ目の束の二つ</a></b>：量子ビットと、i の四つの向き</li>
-</ul>
-</div>
+<p>だから、この目次は分野で絞らず、今の十七から見つけたものを足していきます。式を人の意識に照らした探索の記録は、「<a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/julia-potential/EXPLORE-formulas-consciousness-20261125.md">複素平面の数式ごとに、人の意識との構造の類似を推論する</a>」にあります。</p>
+</details>
 
-<details class="sec" id="掛け算は伸ばして回す" open><summary>掛け算は、伸ばして、回す</summary><div class="secbody">
-
-
-<p><a id="cp-core"></a>数直線の上で 2 を掛けると、0 からの距離が 2 倍になります。−1 を掛けると、距離はそのままで、向きが反対になります。数直線の上の掛け算でできるのは、この「伸ばす」と「裏返す」だけです。</p>
-<p>裏返すことは、0 を中心に 180 度回したこと、と見ることもできます。複素数の平面では、その途中の角度で止まれます。i を掛けると 90 度回ります。1 + i を掛けると、0 からの距離が √2 倍になり、45 度回ります。複素数の掛け算は、どれも、ある倍率で伸ばして、ある角度だけ回すことです。</p>
-<p>−1 から i へ、そして虚軸へと、回る掛け算を一歩ずつ見る説明は、読み物「<a href="rotation-multiplication.html">回転の掛け算</a>」にあります。中学の図形から三角比・三角関数・複素数までを、角度を回った量として読み直すおさらいは、「<a href="angle-rotation.html">三角関数から複素平面まで、回転を扱うための角度の話だった</a>」にあります。</p>
-<p>この目次の全体に通る見方（回る・たたむ・残る）を、オイラーの等式を四元数で開きながらざっと見渡すページは、「<a href="euler-unfolded.html">オイラーの等式が、たたんだもの</a>」（工事中）にあります。表の数学を読む前の入口に置いています。</p>
-<p>下の表の「数直線だと見えないこと」には、一次元の数直線の上だけで考えると見落とすものを、一つずつ挙げました。名前の横の「工事中」は、まだ独立したページが無いしるしです。独立したページができたものは、名前がリンクになっています。名前のリンクの先は、その数学を説明するページです。</p>
-<p>表の右の列「構造の類似を考える」には、その数学の登場人物を、人の意識やプロジェクトの駆動源に仮に当てて考えるページを置きます。まだ無いものは「工事中」です。</p>
-</div></details><details class="sec" id="一つ目の束の七つ" open><summary>一つ目の束の七つ</summary><div class="secbody">
+<details class="sec" id="一つ目の束の七つ" open><summary>一つ目の束の七つ</summary><div class="secbody">
 
 
 <p><a id="cp-set1"></a></p>
