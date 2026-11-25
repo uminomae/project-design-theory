@@ -52,6 +52,7 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | `clausius-1857-art-der-bewegung.md` | R. Clausius, "Ueber die Art der Bewegung, welche wir Wärme nennen", *Annalen der Physik und Chemie* 100 (1857), pp.353–380（独語・28 頁） | 全文の訳（2026-11-24・#175）。題と本文 94 段・脚注 5。パースは題を挙げず、クラウジウスの気体の運動論の最初の論文として Claude が当てた（パースは「1856 年」と書くが、この論文は 1857 年 1 月の日付で、その年の号に載る）。原文は独語で、独語の本文から訳した。文字起こしが無いので、誌面の走査の OCR を下敷きに、読む役六つが全 28 頁を画像と照らして原文と式を起こし訳の案を付け、照らす役六つが段ごとに照らし、Claude がつないで入れた。誌面の誤植（節の番号の 10. の抜け・Wirklickeit）は訳注に書いた。人の校閲はまだ。1893 の ¶20 が「1856 年にクラウジウスとクレーニッヒの注目すべき論文」と書く。ページ `pd/reader/clausius-art-der-bewegung-ja.html` |
 | `maxwell-1860-dynamical-theory-of-gases.md` | J. C. Maxwell, "Illustrations of the Dynamical Theory of Gases", *Philosophical Magazine*, 4th ser., 19 (1860), pp.19–32（Part I）・20 (1860), pp.21–37（Part II・III）（英語・31 頁） | 全文の訳（2026-11-24・#175）。第 I〜III 部、題と本文 137 段・脚注 1。1859 年 9 月にアバディーンの英国学術協会で読んだ研究の本論。一覧の範囲（20 巻 pp.21–37）に第 III 部と全体のまとめが入るので、第 III 部も訳した。文字起こしが無いので、誌面の走査の OCR を下敷きに、読む役七つが全 31 頁を画像と照らして原文と式を起こし訳の案を付け、照らす役七つが段ごとに照らし、Claude がつないで入れた。式の誤植と見たもの（(54) の係数・(64) の添字ほか）は直さずに訳注に書いた。人の校閲はまだ。1893 の ¶20 が「マクスウェルが英国学術協会で、この主題についての彼の研究のうち最初の、そして最も重要なものを読み上げていた」と書く。ページ `pd/reader/maxwell-dynamical-theory-of-gases-ja.html` |
 | `buckle-1857-history-of-civilization-in-england.md` | Henry Thomas Buckle, *History of Civilization in England*, vol. 1, London: John W. Parker and Son, 1857, 第 1 章 pp.18–33 | 本の抜きの訳（2026-11-24・#175）。p.18「Rejecting, then, the metaphysical dogma of free will」の段から章の本文の終わりまで、17 段と脚注 19 本（注19〜注37。番号は誌面のまま）。パースは章も頁も挙げず、「この同じ考え」（偶然が秩序を生む）を用いた所として、殺人・自殺・結婚・宛名を書き忘れた手紙の統計を並べるこの所を Claude が当てた。文字起こしが無いので、初版の走査（IA `10278775bsb`・p = n − 27）の OCR を下敷きに、読む役四つが十六頁を画像と照らして起こし訳の案を付け、照らす役四つが段ごとに照らし、Claude がつないで入れた。誌面のまま置いたもの（注19 の For.・注37 の Médécine）は訳注に書いた。人の校閲はまだ。1893 の ¶20 が「1857 年には、バックルの『文明史』第一巻が、この同じ考えを用いたことによって、たいへんな評判を呼んでいた」と書く。ページ `pd/reader/buckle-history-of-civilization-ja.html` |
+| `herapath-1847-mathematical-physics.md` | John Herapath, *Mathematical Physics; or the Mathematical Principles of Natural Philosophy*, vol. 1, London: Whittaker and Co., 1847, pp.12–17・212–220・236–265 | 本の抜きの訳（2026-11-25・#175）。三か所、146 段（脚注は無い）：第 I 編 §9〜§10（衝撃の積み重ねが圧する力になることと気体の理論）、第 II 編 §40〜§46（熱は粒子の内部運動で、温度はその度合い）、第 II 編 第 II 節「Of the Laws of Gaseous Bodies」の全部（定義・命題 I〜IX・注解）。パースは章も頁も挙げず、気体の運動論を述べる所が目次で三か所に分かれるので、案を pjdhiro に示して三か所とも訳すことにした。第 1 巻は Internet Archive にも文字起こしにも無いので、Google Books のハーバード大学図書館の写し（`id=nH0tAAAAYAAJ`・p.N＝`pg=PAN`）の頁の画像から、読む役九つが起こして訳の案を付け、照らす役九つが段ごとに照らし（式は前後から計算して確かめた）、Claude がつないで入れた。誌面のまま置いたもの（p.14 の as long we please ほか）は訳注に書いた。人の校閲はまだ。1893 の ¶20 が「イギリスの化学者ジョン・ヘラパス博士は、1847 年にその『数理物理学』の中で気体の運動論の輪郭を描いていた」と書く。ページ `pd/reader/herapath-mathematical-physics-ja.html` |
 | `william-james-1892-psychology-briefer-course.md` | William James, *Psychology*（*Briefer Course*）, London: Macmillan, 1892, 第 12 章「The Self」 | 鍵の文の抜き 4 か所（2026-11-24・#189）。pp.176・216。走査の OCR から起こし、頁の柱で頁を決めた。人の校閲はまだ。ページ `pd/reader/william-james-self-ja.html`（読む順のリンク集。原文を訳の上に出す） |
 | `william-james-1890-consciousness-of-self.md` | William James, *The Principles of Psychology* vol.1, New York: Holt, 1890, 第 10 章「The Consciousness of Self」pp.291–401 | 鍵の文の抜き 17 か所（2026-11-24・#189）。York 大学の写しから取り、トロント大の走査の柱の頁と突き合わせた。人の校閲はまだ。ページは同じ |
 | `william-james-1890-stream-of-thought.md` | 同じ本の第 9 章「The Stream of Thought」pp.224–290 | 鍵の文の抜き 7 か所（2026-11-24・#189）。写しの誤り（if flows ほか）は走査の版に合わせた。人の校閲はまだ。ページは同じ |
@@ -294,6 +295,27 @@ pjdhiro が 2026-11-17 に、案のページのボタンで選んだ形（`docs/
 | moral world / material world | 道徳の世界／物質の世界 | |
 | perturbation / disturbance | 摂動／乱れ | |
 | moralists / metaphysicians | 道徳家／形而上学者 | |
+
+### ヘラパス：表
+
+『数理物理学』第 1 巻（1847）の気体の運動論の所の訳語。英語の本なので、マクスウェルの表と重なる量（vis viva＝活力、specific heat＝比熱）はそろえた。
+
+| 原語 | 訳語 | 覚え書き |
+|---|---|---|
+| particle / atom / corpuscular | 粒子／原子／微粒子の | |
+| air(s) / gas / permanent airs | 空気（の類）／気体／永久気体 | permanent airs は、液にならないと思われていた気体 |
+| medium / containing body (vessel) | 媒質／器 | hollow body は「中空の物体」 |
+| elasticity / elastic force | 弾性／弾性力 | 今の言い方の圧力に当たる |
+| pressure / pressive force / impulse / impulsive force | 圧力／圧する力／衝撃／衝撃力 | |
+| momentum / velocity / vis viva | 運動量／速さ／活力 | |
+| intestine motion | 内部運動 | 物体の内部で粒子が行き来する運動（今の言い方の熱運動） |
+| temperature / true temperature / absolute cold | 温度／真の温度／絶対的な寒さ | ヘラパスは温度を粒子一つの運動量で測る |
+| caloric / latent heat / specific heat | カロリック（熱素）／潜熱／比熱 | |
+| numeratom | 原子数 | 一定の体積の中の粒子の数を言うヘラパスの造語 |
+| density / capacity | 密度／容積 | capacity は器の容積 |
+| duplicate / subduplicate / subtriplicate ratio | 二乗の比／平方根の比／立方根の比 | duplisubtriplicate は立方根の二乗の比 |
+| excursion(s) | 振れ幅 | |
+| Def. / Prop. / Theorem / Cor. / Scholium | 定義／命題／定理／系／注解 | |
 
 ### マクスウェル：表
 
