@@ -313,6 +313,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 訳の本文は thomson-1880-heat.md（原文〔英語〕と訳の対訳）から <!--JA-TEXT:…--> で差し込む
+        ROOT / "knowledge/translations/READER-thomson-heat-ja.md",
+        ROOT / "scripts/reader-thomson-heat-ja-template.html",
+        ROOT / "reader/thomson-heat-ja.html",
+        "flow",
+    ),
+    (
         # 読む順のリンク集。鍵の文の対訳は william-james-*.md（原文と訳）から <!--JA-TEXT:…--> で差し込む（#189）
         ROOT / "knowledge/translations/READER-william-james-self-ja.md",
         ROOT / "scripts/reader-william-james-self-ja-template.html",
@@ -701,6 +708,25 @@ JA_CHAPTERS = {
         "¶20": "アレクサンドリアの図書館と、セラピオンの破壊",
         "¶24": "キュリロスとヒュパティア",
         "¶27": "アレクサンドリアの学問の抑圧",
+    },
+    "thomson-1880-heat.md": {
+        "¶1": "題と序、熱の感覚と潜熱",
+        "¶7": "熱量測定",
+        "¶14": "熱の本性と、熱の動力学的当量",
+        "¶22": "温度測定の予備と、温度の感覚",
+        "¶31": "感温器と、気体と液体の温度計",
+        "¶67": "温度の定義と、熱力学的な絶対目盛り",
+        "¶85": "流体の熱力学的な性質から目盛りを定める",
+        "¶104": "絶対零度の意味と、定圧の気体温度計",
+        "¶124": "熱容量と比熱",
+        "¶129": "熱の移り、伝導と放射",
+        "¶147": "拡散率と、フーリエの拡散",
+        "¶156": "熱の性質の表",
+        "¶170": "数学の付録、熱の伝わりの方程式",
+        "¶182": "点の源と球面の源の解",
+        "¶194": "フーリエの線形の熱の運動",
+        "¶209": "三次元の周期的な源と、調和の解",
+        "注1": "トムソンの脚注",
     },
     # ウィリアム・ジェームズの鍵の文（#189）。章の見出しは読む順のリンク集の正本 READER-william-james-self-ja.md に書く
     "william-james-1892-psychology-briefer-course.md": {},
