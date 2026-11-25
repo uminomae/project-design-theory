@@ -425,6 +425,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/euler-formula-analogy/READER-euler-formula-analogy.md",
+        ROOT / "scripts/reader-euler-formula-analogy-template.html",
+        ROOT / "reader/euler-formula-analogy.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/ac-phasor/READER-ac-phasor.md",
         ROOT / "scripts/reader-ac-phasor-template.html",
         ROOT / "reader/ac-phasor.html",

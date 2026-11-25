@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/euler-formula-analogy.html を直接編集しないでください。
+  正本:   knowledge/research/euler-formula-analogy/READER-euler-formula-analogy.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「オイラーの式から、構造の類似を考える」のページです（工事中）。目次「複素平面で考える」（reader/complex-plane.html）の表の 1 の列「構造の類似を考える」にあたるページで、数学の解説は独立ページ「オイラーの式」（reader/euler-formula.html）に任せ、一文とリンクで指すだけ。中身は、式の登場人物（回る向きの指数・円の上の点・影の波・i・1 + iθ/n を n 回掛けること・e^{iπ} + 1 = 0 の五つの数）を、実軸に認知できるもの・虚軸に認知し得ないものを置いたうえで、人の意識やプロジェクトの駆動源に仮に当てた表、式のふるまい三つ（大きくならずに回る・影は行って戻り平均 0・一周すると同じ点で何周したかは点に出ない）の読み、探索の記録が先に決めた三つの物差し（当てられるか・同じ向きか・複素数ならではか）、当たらない所（外からの出入りが無い・ちょうど 1 のときだけ回り続ける・二つの向き替えを掛け合わせる心の操作がまだ無い・速さが一定）、駆動源に返すもの、抱えたままの問い。
+  当てはめはどれも Claude が置いた仮説で、「〜ではないか」の形で書いた。材料は探索の記録 pd/knowledge/research/julia-potential/EXPLORE-formulas-consciousness-20261125.md の §0-2・§2-3・§2-5・§3・§4。数学の事実は独立ページ「オイラーの式」の範囲。
+  pjdhiro 本人の言葉は「pjdhiro の見方：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オイラーの式から、構造の類似を考える | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/euler-formula-analogy.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="オイラーの式に出てくる、掛け続けても大きくならずに回る数・円の上の点・その影がつくる波・i・e^{iπ} + 1 = 0 の五つの数を、人の意識やプロジェクトの駆動源に仮に当てて、構造の類似を考える。駆動は量として増え続けるものでなく、向きを変え続けながら保たれるものではないか、認知できる側から見ると行って戻る波で平均 0 に見えるのではないか、同じ所に戻っても何周したかは見えない側に溜まるのではないか、の三つの仮説を、三つの物差し（当てられるか・同じ向きか・複素数ならではか）と当たらない所とともに置く（工事中）。">
+    <meta property="og:title" content="オイラーの式から、構造の類似を考える">
+    <meta property="og:description" content="オイラーの式に出てくる、掛け続けても大きくならずに回る数・円の上の点・その影がつくる波・i・e^{iπ} + 1 = 0 の五つの数を、人の意識やプロジェクトの駆動源に仮に当てて、構造の類似を考える。駆動は量として増え続けるものでなく、向きを変え続けながら保たれるものではないか、認知できる側から見ると行って戻る波で平均 0 に見えるのではないか、同じ所に戻っても何周したかは見えない側に溜まるのではないか、の三つの仮説を、三つの物差し（当てられるか・同じ向きか・複素数ならではか）と当たらない所とともに置く（工事中）。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/euler-formula-analogy.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="オイラーの式から、構造の類似を考える">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-25">
+    <meta property="article:modified_time" content="2026-11-25">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "オイラーの式から、構造の類似を考える",
+          "description": "オイラーの式に出てくる、掛け続けても大きくならずに回る数・円の上の点・その影がつくる波・i・e^{iπ} + 1 = 0 の五つの数を、人の意識やプロジェクトの駆動源に仮に当てて、構造の類似を考える。駆動は量として増え続けるものでなく、向きを変え続けながら保たれるものではないか、認知できる側から見ると行って戻る波で平均 0 に見えるのではないか、同じ所に戻っても何周したかは見えない側に溜まるのではないか、の三つの仮説を、三つの物差し（当てられるか・同じ向きか・複素数ならではか）と当たらない所とともに置く（工事中）。",
+          "keywords": "オイラーの式, 構造の類似, アブダクション, 複素数, 複素平面, 回転, 波, 気づき, 駆動源, 意識, 欠損駆動思考, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/euler-formula-analogy.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/euler-formula-analogy.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-25",
+          "dateModified": "2026-11-25",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "オイラーの式"}, {"@type": "Thing", "name": "構造の類似"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方の言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「オイラーの式から、構造の類似を考える」のページです（工事中）。オイラーの式に出てくる、掛け続けても大きくならずに回る数・円の上の点・その影がつくる波・i・e^{iπ} + 1 = 0 の五つの数を、人の意識やプロジェクトの駆動源に仮に当てて、構造の類似を考える。駆動は量として増え続けるものでなく、向きを変え続けながら保たれるものではないか、認知できる側から見ると行って戻る波で平均 0 に見えるのではないか、同じ所に戻っても何周したかは見えない側に溜まるのではないか、の三つの仮説を、三つの物差し（当てられるか・同じ向きか・複素数ならではか）と当たらない所とともに置く。数学の解説は独立ページ「オイラーの式」にあり、このページは当てはめの仮説だけを置く。目次「複素平面で考える」の列「構造の類似を考える」から呼ばれる。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>オイラーの式から、構造の類似を考える</h1>
+                <p class="reader-subtitle">大きくならずに回る数を、何に当てるか</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-25 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/euler-formula-analogy/READER-euler-formula-analogy.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<div class="reader-lead glow-card" id="ea-gist"><span class="reader-lead__label">ざっくりいうと</span>
+<p>オイラーの式 e<sup>iθ</sup> = cos θ + i sin θ には、掛け続けても大きくならずに回る数と、その点の影がつくる波が出てきます。このページは、その登場人物を、人の意識や、プロジェクトを動かしているもの（駆動源）に、仮に当ててみるページです。数学そのものの説明は、独立ページ「<a href="euler-formula.html">オイラーの式</a>」にあります。</p>
+<p>今の仮説は三つです。駆動は、量として増え続けるものでなく、向きを変え続けながら保たれるものではないか。認知できる側から見ると、その働きは行って戻る波に見え、平均すると 0 と出るのではないか。同じ所に戻ってきたように見えても、何周してきたかは、見えない側に溜まっているのではないか。どれも、これから確かめる仮説です。</p>
+</div>
+
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p>このページは、pjdhiro の頼みに、Claude が調べて答える形で作っています。複素数が関わる数学を一つずつ解説するページを作り始めたあと、pjdhiro は、その作業のねらいをこう話しました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>複素数をヒントにして、構造類似を見抜くためにやっています。</p>
+</blockquote>
+<p>だから、数学を解説するページとは別に、その数学の登場人物を何かに当ててみるページを置きます。当てる先は、人の意識・創造・プロジェクトの駆動源のどれでもかまいません。ただ、どこに当てても、最後に戻る所は一つです。同じ見立てを、量子論や生化学のような別の道具でも眺める調べを始めたとき、pjdhiro はこう話しています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>人間の認知と数学などのツールの限界で、解釈は似たものとなる、という制約があることは承知でやっています。ならば違うツールで同じものを眺めるだけです。群盲象。プロジェクトの駆動源を追っている、という北極星は忘れずに。</p>
+</blockquote>
+<p>このページの当てはめは、どれも Claude が置いた仮説です。材料は、複素平面の数式を一つずつ人の意識に照らした探索の記録（「<a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/julia-potential/EXPLORE-formulas-consciousness-20261125.md">複素平面の数式ごとに、人の意識との構造の類似を推論する</a>」）の、i を掛けることの節と、オイラーの式と対数の節です。その記録が先に決めた三つの物差しで、当てはめが立つかどうかを見ます。</p>
+<div class="reader-lead"><span class="reader-lead__label">構成</span>
+<ul class="reader-lead__list">
+<li><b><a href="#ea-cast">式の登場人物を、仮に当てる</a></b>：回る数・円の上の点・影の波・i・五つの数</li>
+<li><b><a href="#ea-behave">式のふるまいを、当てた先で読む</a></b>：大きくならずに回る・影は行って戻る・何周したかは点に出ない</li>
+<li><b><a href="#ea-measure">三つの物差しで見る</a></b>：当てられるか・同じ向きか・複素数ならではか</li>
+<li><b><a href="#ea-miss">当たらない所</a></b>：式に無いもの</li>
+<li><b><a href="#ea-return">駆動源に返すもの</a></b>：測れる軸の上には、そのままは出ない</li>
+<li><b><a href="#ea-open">抱えたままの問い</a></b></li>
+</ul>
+</div>
+
+<details class="sec" id="式の登場人物を仮に当てる" open><summary>式の登場人物を、仮に当てる</summary><div class="secbody">
+
+
+<p><a id="ea-cast"></a>当てる前に、平面の二つの軸に何を置くかを決めます。このページも、読み物「<a href="julia-potential.html">起業家の漸化式と、ジュリア集合</a>」と同じく、横の軸（実軸）に認知できるもの、縦の軸（虚軸）に認知し得ないものを置きます。この置き方は、欠損駆動思考の次のたとえとも重なります。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro のたとえ：</strong>欠損駆動思考と呼んでいる私の体感をたとえるなら、虚軸に値があって、しかも、認知上は 0 の直観です。</p>
+</blockquote>
+<p>この置き方の上で、オイラーの式の登場人物を一つずつ当ててみます。左の列は式で確かなことで、独立ページ「<a href="euler-formula.html">オイラーの式</a>」で説明しています。右の列が、このページの仮説です。</p>
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>登場人物</th>
+<th>式で確かなこと</th>
+<th>仮に当てる先</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>回る向きの指数（iθ）</td>
+<td>0 からの距離が 1 の数を掛けると、大きさは変わらず、角度だけが進む。掛けた角度は指数の中で足される</td>
+<td>一歩ごとに、大きさを変えずに向きだけを変える働き。前へ進む量として増えないが、止まってもいない</td>
+</tr>
+<tr>
+<td>円の上の点（e<sup>iθ</sup>）</td>
+<td>半径 1 の円の上を、1 から道のり θ だけ回った点。一周（道のり 2π）すると同じ点に戻る</td>
+<td>いまの心の向き。大きさは同じまま、向きだけが変わり続ける</td>
+</tr>
+<tr>
+<td>影の波（cos θ と sin θ）</td>
+<td>回る点の、横の軸への影と縦の軸への影。どちらも 1 と −1 のあいだを行って戻り、波を描く。縦の影は横の影より 90 度ぶん遅れる</td>
+<td>横の影は、回っている働きのうち、認知できる分。縦の影は、同じ働きの、認知し得ない分。認知できる側から見ると、回っている働きは、増えたり減ったりして行って戻るものに見える</td>
+</tr>
+<tr>
+<td>i</td>
+<td>掛けると 90 度回る。2 回掛けると −1 になり、向きが裏返る</td>
+<td>気づき。縦の軸（認知し得ない側）にあった成分が、90 度回って、横の軸（認知できる側）に出てくること</td>
+</tr>
+<tr>
+<td>1 + iθ/n を n 回掛ける</td>
+<td>小さな向き替えを細かくくり返すと、行き着く先は、円の上の道のり θ の点に近づく。大きな向き替えを少ない回数でくり返すと、円の外に出る</td>
+<td>一歩ずつの小さな向き替えを、細かくくり返すこと。細かくくり返すほど、大きさを保ったまま回れる</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p class="reader-summary__title">五つの数</p>
+
+<p>オイラーの等式 e<sup>iπ</sup> + 1 = 0 の五つの数も、同じように当ててみます。当てる先がまだ置けないものは、そう書きました。</p>
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>数</th>
+<th>式の中でしていること</th>
+<th>仮に当てる先</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>e</td>
+<td>回る点を、指数の形で書く。回る角度がちょうど道のりと合うのは、e のときだけ</td>
+<td>小さな向き替えを細かく積み重ねる、くり返しの形そのもの</td>
+</tr>
+<tr>
+<td>i</td>
+<td>指数の中で、伸びる代わりに回ることを表す</td>
+<td>気づき（認知し得ない側から、認知できる側へ回り込むこと）</td>
+</tr>
+<tr>
+<td>π</td>
+<td>半周の道のり。半周回ると、1 は −1 になる</td>
+<td>もとの見方の、ちょうど反対に出るまでの道のり</td>
+</tr>
+<tr>
+<td>1</td>
+<td>回り始める所</td>
+<td>いま認知できている、一つの見方</td>
+</tr>
+<tr>
+<td>0</td>
+<td>足して行き着く所。円の中心で、回る点はそこに来ない</td>
+<td>まだ置けない。回る働きがその周りを回っている所、とまでは言える</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+</div></details><details class="sec" id="式のふるまいを当てた先で読む" open><summary>式のふるまいを、当てた先で読む</summary><div class="secbody">
+
+
+<p><a id="ea-behave"></a>登場人物を当てたうえで、式のふるまいが、当てた先でどう読めるかを見ます。ふるまいは三つです。</p>
+<p><b>一つ目：掛け続けても、大きくならずに回る。</b>数直線の上では、同じ数を掛け続けると、大きくなるか、0 に近づくか、裏返るかです。平面では、距離 1 の数を掛け続けると、大きさは同じまま回り続けます。これを駆動に当てると、駆動は、何かを増やし続ける力というより、向きを変え続けながら、同じ大きさで保たれている働きなのではないか、と読めます。成果や進んだ距離のように増えていく量を見ていると、この働きは見落とされるのかもしれません。</p>
+<p><b>二つ目：回る点の影は、行って戻る波になる。</b>回る点を横の軸だけで見ると、影は 1 と −1 のあいだを行って戻ります。一周を平均すると 0 です。横の軸に認知できるものを置いたので、認知できる側から見ると、回り続けている働きは、出たり引っ込んだりして、平均すると何もしていないように見えるのではないか、と読めます。欠損駆動思考のたとえの「虚軸に値があって、しかも、認知上は 0」は、この形と重なって見えます。同じ形は、家のコンセントの電気でも、行って戻るだけで平均 0 の電力（無効電力）として出てきます。それは独立ページ「<a href="ac-phasor.html">交流回路のフェーザ</a>」にあります。</p>
+<p><b>三つ目：一周すると同じ点に戻り、何周したかは点に出ない。</b>円の上の点は、一周すると同じ点に戻ります。点だけを見ると、一周目か二周目かは分かりません。回った道のりは、指数の中の θ にだけ残ります。これを人に当てると、同じ気分や同じ状況に戻ってきたように見えても、何周してきたかが違うのではないか、と読めます。pjdhiro は、自我の同一性を、昨日の自分が今日の自分と同じだと信じるのでなく、さも同じであるかのように感じる、の側で見ています。見た目の点は同じで、来歴は違う、という式の形は、この見方と同じ向きを向いて見えます。来歴は、見えている点でなく、指数の中に溜まります。</p>
+<details class="acc"><summary>詳しく — 何周したかが、どこに残るか</summary>
+
+<p>オイラーの式で、θ に 2π を足しても、点は変わりません。e<sup>i(θ + 2π)</sup> = e<sup>iθ</sup> です。だから、点から θ を逆に求めようとすると、答えは一つに決まらず、2π ずつずれた答えがいくつもあります。この逆向きの計算が、複素数の対数（log）です。数直線の上の対数は、答えが一つに決まります。平面の対数は、一周するごとに答えが一段ずれます。何周したかを区別して並べると、平面を螺旋の階段のように重ねた面（リーマン面）の上で、答えが一つに決まります。リーマン面は、目次「<a href="complex-plane.html">複素平面で考える</a>」の表の 10 にあります。</p>
+</details>
+
+</div></details><details class="sec" id="三つの物差しで見る" open><summary>三つの物差しで見る</summary><div class="secbody">
+
+
+<p><a id="ea-measure"></a>探索の記録は、式を人の何かに当てるとき、当てる前に三つの物差しを決めていました。一つ目は、式の登場人物を、一つずつ何かに当てられるか。二つ目は、式のふるまいが、当てた先で、pjdhiro の記録の言葉と同じ向きを向くか。三つ目は、複素数ならではの構造（掛け算・i・複素数として滑らかに続くこと）が働いているか。点や回転だけなら、二つの実数の組でも書けるので、三つ目がいちばん厳しい問いです。</p>
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>当てはめ</th>
+<th>当てられるか</th>
+<th>同じ向きか</th>
+<th>複素数ならではか</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>i を掛ける＝気づき</td>
+<td>立つ</td>
+<td>立つ。気づきの二つ（予測と違う違和感・見えていなかったものが突然現れる驚き）は、回り込んで出てきた成分の感じ方の違いと読める</td>
+<td>立つ。i を掛けることは複素数の掛け算そのもの。ただ、回すだけなら二つの実数の組の回転でも書ける、という留保が残る</td>
+</tr>
+<tr>
+<td>大きくならずに回る＝向きを変え続ける駆動</td>
+<td>立つ</td>
+<td>半分。駆動を量で測らないことは記録の言葉と合うが、「大きさが保たれる」に当たる本人の言葉は、まだ見つけていない</td>
+<td>立つ。角度が指数の中で足されることは、複素数の掛け算から出る</td>
+</tr>
+<tr>
+<td>影は行って戻る＝認知上は 0</td>
+<td>立つ</td>
+<td>立つ。欠損駆動思考のたとえと同じ形</td>
+<td>半分。影の波だけなら、円を回る点の座標で書ける</td>
+</tr>
+<tr>
+<td>何周したかは点に出ない＝来歴は見えない側に溜まる</td>
+<td>立つ</td>
+<td>立つ。さも同じであるかのように感じる、の見方と同じ向き</td>
+<td>立つ。答えがいくつもある対数は、平面の上でだけ出る。数直線の対数には無い</td>
+</tr>
+<tr>
+<td>細かい向き替えのくり返し＝一歩のくり返し</td>
+<td>半分</td>
+<td>まだ分からない。細かさに当たる本人の言葉は無い</td>
+<td>立つ</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+</div></details><details class="sec" id="当たらない所" open><summary>当たらない所</summary><div class="secbody">
+
+
+<p><a id="ea-miss"></a>複素数の構造に乗った当てはめは、ほとんど何にでも当てはまってしまう、と Claude が指摘したとき、pjdhiro はこう答えています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>人間の認知がそうである以上、そこがボトルネックです。つまり、それを通して得られるものが最も細かい分析となる可能性がある。壁にぶち当たるので停滞する。</p>
+</blockquote>
+<p>似て見えることを当然として閉じず、当たらない所も並べておきます。</p>
+<ul>
+<li>**外からの出入りが無い。**オイラーの式の円は閉じていて、外からエネルギーや物が入ることも、出ていくことも書きません。創造の五段階の渦（散逸構造。蝋燭の炎のように、エネルギーの出入りで形が保たれるもの）は、出入りがあって生まれます。この式の回転は、その渦には当たりません。</li>
+<li>**ちょうど 1 のときだけ回り続ける。**距離が 1 より少しでも大きい数を掛け続けると、点は回りながら外へ広がり、少しでも小さいと 0 へ寄っていきます。人の働きを、大きさを保ったまま回るものと当てても、なぜそう保たれるのかは、式からは出てきません。</li>
+<li>**二つの向き替えを掛け合わせる心の操作が、まだ見つからない。**式では、二つの回る数を掛けると角度が足されます。心の中で、二つの向き替えが掛け合わさる、と言える働きは、まだ見つかっていません。見つからないあいだは、三つ目の物差しは留保つきです。</li>
+<li>**速さが一定。**式の点は同じ速さで回ります。人の歩みは、速くなったり止まったりします。</li>
+</ul>
+</div></details><details class="sec" id="駆動源に返すもの" open><summary>駆動源に返すもの</summary><div class="secbody">
+
+
+<p><a id="ea-return"></a>当てはめが立った所を、プロジェクトの駆動源に戻してみます。どれも仮説です。</p>
+<p>駆動は、売上や成果や進んだ距離のように、認知できる軸の上で量として測れる所には、そのままは出てこないのかもしれません。測れる軸の上で見ると、回り続ける働きは行って戻り、平均すると 0 と出るように見えるからです。</p>
+<p>駆動の芯は、何かを増やす力として測るより、向きを変え続けながら、同じ大きさで関わりを保つ働きとして見る方が、見えてくるのかもしれません。読み物「<a href="julia-potential.html">起業家の漸化式と、ジュリア集合</a>」は、Love と呼びたいものを、一歩ごとに同じだけ引き寄せる働き（<code>c</code>）と置いています。オイラーの式からは、その見立てを置き換えずに、もう一つの面を足せるかもしれません。一歩ごとに同じだけ向きを変え、大きくならずに回り続ける働き、という面です。</p>
+<p>また、駆動源は、いまの一点だけでは測れないのかもしれません。同じ所に戻ってきたように見えても、何周してきたかは、見えない側に溜まっているように見えるからです。</p>
+</div></details><details class="sec" id="抱えたままの問い" open><summary>抱えたままの問い</summary><div class="secbody">
+
+
+<p><a id="ea-open"></a></p>
+<ul>
+<li>i を 2 回掛けると、向きが裏返ります（i² = −1）。気づきのあと、同じ向きにもう一度回ると、もとの見方の反対に出る、という体験はあるか。</li>
+<li>人の働きが、大きくも小さくもならずに回り続けられるのは、何によるのか。</li>
+<li>二つの向き替えが掛け合わさる、と言える心の働きはあるか。</li>
+<li>何周してきたかは、認知し得ない側の、何に溜まるのか。</li>
+</ul>
+<p>数学の説明は独立ページ「<a href="euler-formula.html">オイラーの式</a>」に、複素数が関わるほかの数学は目次「<a href="complex-plane.html">複素平面で考える</a>」にあります。</p>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="complex-plane.html">複素平面で考える（目次）</a> ・
+                <a href="euler-formula.html">オイラーの式</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
