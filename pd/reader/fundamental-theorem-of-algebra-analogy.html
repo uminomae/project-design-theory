@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/fundamental-theorem-of-algebra-analogy.html を直接編集しないでください。
+  正本:   knowledge/research/fundamental-theorem-of-algebra-analogy/READER-fundamental-theorem-of-algebra-analogy.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「代数学の基本定理から、構造の類似を考える」のページです（工事中）。目次「複素平面で考える」（reader/complex-plane.html）の表の 2 の列「構造の類似を考える」にあたるページで、数学の解説は独立ページ「代数学の基本定理」（reader/fundamental-theorem-of-algebra.html）に任せ、一文とリンクで指すだけ。中身は、式の登場人物（方程式・次数・答え・数直線では答えが足りないこと・zⁿ = 1 の円の等分・平方根の二つ）を、実軸に認知できるもの・虚軸に認知し得ないものを置いたうえで、人の意識やプロジェクトの駆動源に仮に当てた表、式のふるまい三つ（数直線では答えが足りない・答えは同じ資格で並ぶ・一段遡ると真逆の二つが残る）の読み、探索の記録が先に決めた三つの物差し（当てられるか・同じ向きか・複素数ならではか）、当たらない所（答えは止まって並ぶだけで動かない・答えの求め方は言わない・等しく並ぶのは zⁿ = 1 の形だけ・三つ以上の自己が掛け合わさる心の働きがまだ無い）、駆動源に返すもの、抱えたままの問い。
+  当てはめはどれも Claude が置いた仮説で、「〜ではないか」の形で書いた。材料は探索の記録 pd/knowledge/research/julia-potential/EXPLORE-formulas-consciousness-20261125.md の §0-2・§2-4・§3・§4 と、読み物 julia-potential の z² と逆写像の章。数学の事実は独立ページ「代数学の基本定理」の範囲。
+  pjdhiro 本人の言葉は「pjdhiro の見方：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>代数学の基本定理から、構造の類似を考える | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/fundamental-theorem-of-algebra-analogy.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="代数学の基本定理に出てくる、方程式・次数・答え・数直線では答えが足りないこと・zⁿ = 1 の円の等分・平方根の二つを、人の意識やプロジェクトの駆動源に仮に当てて、構造の類似を考える。認知できる側だけで探して答えが無いと出る問いは、探す軸が一本足りないのではないか、自己はいくつかの自己が同じ資格で並んだもので、いま認知できるのはその一つではないか、一段遡ると真逆の二つが残り、どちらだったかは決まらないのではないか、の三つの仮説を、三つの物差し（当てられるか・同じ向きか・複素数ならではか）と当たらない所とともに置く（工事中）。">
+    <meta property="og:title" content="代数学の基本定理から、構造の類似を考える">
+    <meta property="og:description" content="代数学の基本定理に出てくる、方程式・次数・答え・数直線では答えが足りないこと・zⁿ = 1 の円の等分・平方根の二つを、人の意識やプロジェクトの駆動源に仮に当てて、構造の類似を考える。認知できる側だけで探して答えが無いと出る問いは、探す軸が一本足りないのではないか、自己はいくつかの自己が同じ資格で並んだもので、いま認知できるのはその一つではないか、一段遡ると真逆の二つが残り、どちらだったかは決まらないのではないか、の三つの仮説を、三つの物差し（当てられるか・同じ向きか・複素数ならではか）と当たらない所とともに置く（工事中）。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/fundamental-theorem-of-algebra-analogy.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="代数学の基本定理から、構造の類似を考える">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-25">
+    <meta property="article:modified_time" content="2026-11-25">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "代数学の基本定理から、構造の類似を考える",
+          "description": "代数学の基本定理に出てくる、方程式・次数・答え・数直線では答えが足りないこと・zⁿ = 1 の円の等分・平方根の二つを、人の意識やプロジェクトの駆動源に仮に当てて、構造の類似を考える。認知できる側だけで探して答えが無いと出る問いは、探す軸が一本足りないのではないか、自己はいくつかの自己が同じ資格で並んだもので、いま認知できるのはその一つではないか、一段遡ると真逆の二つが残り、どちらだったかは決まらないのではないか、の三つの仮説を、三つの物差し（当てられるか・同じ向きか・複素数ならではか）と当たらない所とともに置く（工事中）。",
+          "keywords": "代数学の基本定理, 構造の類似, アブダクション, 複素数, 複素平面, 方程式, 平方根, 1 の累乗根, 自己, 駆動源, 意識, 欠損駆動思考, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/fundamental-theorem-of-algebra-analogy.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/fundamental-theorem-of-algebra-analogy.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-25",
+          "dateModified": "2026-11-25",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "代数学の基本定理"}, {"@type": "Thing", "name": "構造の類似"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方の言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「代数学の基本定理から、構造の類似を考える」のページです（工事中）。代数学の基本定理に出てくる、方程式・次数・答え・数直線では答えが足りないこと・zⁿ = 1 の円の等分・平方根の二つを、人の意識やプロジェクトの駆動源に仮に当てて、構造の類似を考える。認知できる側だけで探して答えが無いと出る問いは、探す軸が一本足りないのではないか、自己はいくつかの自己が同じ資格で並んだもので、いま認知できるのはその一つではないか、一段遡ると真逆の二つが残り、どちらだったかは決まらないのではないか、の三つの仮説を、三つの物差し（当てられるか・同じ向きか・複素数ならではか）と当たらない所とともに置く。数学の解説は独立ページ「代数学の基本定理」にあり、このページは当てはめの仮説だけを置く。目次「複素平面で考える」の列「構造の類似を考える」から呼ばれる。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>代数学の基本定理から、構造の類似を考える</h1>
+                <p class="reader-subtitle">平面に並ぶいくつもの答えを、何に当てるか</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-25 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/fundamental-theorem-of-algebra-analogy/READER-fundamental-theorem-of-algebra-analogy.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<div class="reader-lead glow-card" id="fa-gist"><span class="reader-lead__label">ざっくりいうと</span>
+<p>代数学の基本定理は、方程式の答えを数直線の上だけで探すと足りなくなるが、平面まで広げると、答えの数がちょうど次数とそろう、と言います。z<sup>n</sup> = 1 では、答えが円の上に同じ角度ずつ並びます。このページは、その登場人物を、人の意識や、プロジェクトを動かしているもの（駆動源）に、仮に当ててみるページです。数学そのものの説明は、独立ページ「<a href="fundamental-theorem-of-algebra.html">代数学の基本定理</a>」にあります。</p>
+<p>今の仮説は三つです。認知できる側だけで探して「答えが無い」と出る問いは、答えが無いのでなく、探す軸が一本足りないのではないか。自己は一つでなく、いくつかの自己が同じ資格で並んでいて、いま認知できているのはそのうちの一つではないか。今の自分から一段遡ると、真逆の向きの二つが残り、どちらだったかは決まらないのではないか。どれも、これから確かめる仮説です。</p>
+</div>
+
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p>このページは、pjdhiro の頼みに、Claude が調べて答える形で作っています。複素数が関わる数学を一つずつ解説するページを作り始めたあと、pjdhiro は、その作業のねらいをこう話しました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>複素数をヒントにして、構造類似を見抜くためにやっています。</p>
+</blockquote>
+<p>だから、数学を解説するページとは別に、その数学の登場人物を何かに当ててみるページを置きます。当てる先は、人の意識・創造・プロジェクトの駆動源のどれでもかまいませんが、最後に戻る所は、プロジェクトの駆動源です。</p>
+<p>このページの当てはめは、どれも Claude が置いた仮説です。材料は、複素平面の数式を一つずつ人の意識に照らした探索の記録（「<a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/julia-potential/EXPLORE-formulas-consciousness-20261125.md">複素平面の数式ごとに、人の意識との構造の類似を推論する</a>」）の、1 の累乗根と平方根の二つの枝の節です。その記録が先に決めた三つの物差しで、当てはめが立つかどうかを見ます。</p>
+<div class="reader-lead"><span class="reader-lead__label">構成</span>
+<ul class="reader-lead__list">
+<li><b><a href="#fa-cast">式の登場人物を、仮に当てる</a></b>：方程式・次数・答え・円の等分・平方根の二つ</li>
+<li><b><a href="#fa-behave">式のふるまいを、当てた先で読む</a></b>：数直線では答えが足りない・答えは同じ資格で並ぶ・遡ると二つが残る</li>
+<li><b><a href="#fa-measure">三つの物差しで見る</a></b>：当てられるか・同じ向きか・複素数ならではか</li>
+<li><b><a href="#fa-miss">当たらない所</a></b>：式に無いもの</li>
+<li><b><a href="#fa-return">駆動源に返すもの</a></b>：一つの動機に絞ると、残りは軸の外に出る</li>
+<li><b><a href="#fa-open">抱えたままの問い</a></b></li>
+</ul>
+</div>
+
+<details class="sec" id="式の登場人物を仮に当てる" open><summary>式の登場人物を、仮に当てる</summary><div class="secbody">
+
+
+<p><a id="fa-cast"></a>このページは、平面の横の軸（実軸）に認知できるもの、縦の軸（虚軸）に認知し得ないものを置きます。置き方の出どころは、読み物「<a href="julia-potential.html">起業家の漸化式と、ジュリア集合</a>」です。</p>
+<p>その読み物は、式の z を起業家の脳内の自己と置き、z を二乗することを、自己と自己の掛け合わせと読んでいます。足場にしたのは、自己には一つの中核が無い、とする研究で、それを読んで pjdhiro はこう見ました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>自己は単一では無い。とするなら、二乗するように、自己と自己が創造的に協働するイメージです。</p>
+</blockquote>
+<p>この見方の上で、代数学の基本定理の登場人物を一つずつ当ててみます。左の列は式で確かなことで、独立ページ「<a href="fundamental-theorem-of-algebra.html">代数学の基本定理</a>」で説明しています。右の列が、このページの仮説です。</p>
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>登場人物</th>
+<th>式で確かなこと</th>
+<th>仮に当てる先</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>方程式</td>
+<td>「左辺が 0 になる x はどれか」と問う式</td>
+<td>いま抱えている一つの問い。「私は何に駆られているのか」のように、答えを探している問い</td>
+</tr>
+<tr>
+<td>次数 n</td>
+<td>x がいちばん多く掛け合わされている回数。答えの数を決める</td>
+<td>自己と自己が掛け合わされる回数。二乗なら、二つの自己の掛け合わせ</td>
+</tr>
+<tr>
+<td>答え</td>
+<td>平面まで広げると、重なりも数えて、ちょうど n 個ある</td>
+<td>問いに対して、ありうる自己。一つの問いに、いくつかの自己が答えとして並ぶ</td>
+</tr>
+<tr>
+<td>数直線では答えが足りないこと</td>
+<td>x² + 1 = 0 は、数直線の上に答えが無い。平面まで広げると、0 の真上の i と真下の −i が答えになる</td>
+<td>認知できる軸の上だけで探すと、問いに「答えが無い」と出る。答えは、認知し得ない側にある</td>
+</tr>
+<tr>
+<td>z<sup>n</sup> = 1 の円の等分</td>
+<td>答えは、半径 1 の円の上に、1 から 360 ÷ n 度ずつ回った n 個の点として並ぶ。数直線の上に出ているのは 1 だけ（n が偶数なら 1 と −1）</td>
+<td>n 個の自己が、どれも同じ大きさで等しく並ぶ。いま認知できている自己（1）は、その一つにすぎない</td>
+</tr>
+<tr>
+<td>平方根の二つ</td>
+<td>2 乗して −1 になる数は、i と −i の二つ。二つは、0 を中心に半回転させた写し</td>
+<td>今の自分から一段遡ったときに残る、真逆の向きの二つの、前の自分</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+</div></details><details class="sec" id="式のふるまいを当てた先で読む" open><summary>式のふるまいを、当てた先で読む</summary><div class="secbody">
+
+
+<p><a id="fa-behave"></a>登場人物を当てたうえで、式のふるまいが、当てた先でどう読めるかを見ます。ふるまいは三つです。</p>
+<p><b>一つ目：数直線の上だけで探すと、答えが足りない。</b>x² + 1 = 0 の答えは、数直線の上にありません。数直線の上のどの数も、2 乗すると 0 以上になるからです。平面まで広げると、i と −i の二つが答えになります。i と −i は、正の数でも負の数でもありません。この二つを横の軸で測ると、どちらも 0 です。横の軸に認知できるものを置いたので、認知できる側だけで探すと、この問いには答えが無いと出るのではないか、と読めます。欠損駆動思考のたとえ「虚軸に値があって、しかも、認知上は 0」は、この二つの答えの形と重なって見えます。pjdhiro は、A でないなら B だ、とは見ません。A でも B でもないが、A とも B とも言えるものもありうる、と見ています。正でも負でもない i と −i は、その形の一つの写しに見えます。</p>
+<p><b>二つ目：答えは、同じ資格で並ぶ。</b>z<sup>n</sup> = 1 の n 個の答えは、どれも 0 からの距離が 1 で、円の上に等しい角度で並びます。どれが本当の答えかを決める順位は、式にはありません。これを自己に当てると、自己は一つでなく、いくつかの自己が同じ大きさで並んでいるのではないか、と読めます。数直線の上に出ている答えは 1 だけ（n が偶数なら、1 と、その反対の −1）で、ほかは数直線の外にあります。いま認知できている自己は、並んでいる自己の一つにすぎず、ほかの自己は認知できる軸の外にいるのかもしれません。</p>
+<p><b>三つ目：一段遡ると、真逆の二つが残る。</b>2 乗して同じ数になる数は、0 を中心に半回転させた二つです。2 乗された数から、どちらを 2 乗したのかを決めることはできません。読み物「<a href="julia-potential.html#jp-back">起業家の漸化式と、ジュリア集合</a>」は、式の一歩を逆に一段戻すとき、この平方根の二つが出てくることを、今の自分から一つ前の自分を出すことに当てています。前へは二つが一つに寄り、振り返ると二つが残る、という形です。pjdhiro は、陰陽の印（☯）を描いて眺めていた頃に、ブログにこう書いています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>平方根って、真逆の二つが生まれる不思議。（ブログ「<a href="https://uminomae.github.io/pjdhiro/20250612WoodWideWeb/">対話：「森の木」 Wood Wide Webと陰陽なフラクタルの青山常運歩</a>」2025-06-12）</p>
+</blockquote>
+<details class="acc"><summary>詳しく — 数直線でも二つ出る平方根と、平面でだけ出る平方根</summary>
+
+<p>平方根が二つあることは、数直線の上でも起きます。2 乗して 4 になる数は、2 と −2 の二つです。この二つも、0 を中心に半回転させた写しです。数直線の上で答えが無くなるのは、負の数の平方根を取るときです。2 乗して −1 になる数は、数直線の上にはありません。平面まで広げて初めて、i と −i の二つが出てきます。だから、二つに分かれることだけなら数直線でも見えますが、二つがどちらも認知できる軸の外にある形は、平面でだけ見えます。</p>
+</details>
+
+</div></details><details class="sec" id="三つの物差しで見る" open><summary>三つの物差しで見る</summary><div class="secbody">
+
+
+<p><a id="fa-measure"></a>探索の記録は、式を人の何かに当てるとき、当てる前に三つの物差しを決めていました。一つ目は、式の登場人物を、一つずつ何かに当てられるか。二つ目は、式のふるまいが、当てた先で、pjdhiro の記録の言葉と同じ向きを向くか。三つ目は、複素数ならではの構造（掛け算・i・複素数として滑らかに続くこと）が働いているか。点や回転だけなら、二つの実数の組でも書けるので、三つ目がいちばん厳しい問いです。</p>
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>当てはめ</th>
+<th>当てられるか</th>
+<th>同じ向きか</th>
+<th>複素数ならではか</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数直線では答えが無い＝認知できる側だけで探すと答えが無い</td>
+<td>立つ</td>
+<td>立つ。欠損駆動思考のたとえと同じ形。A でも B でもないものがありうる、の見方とも同じ向き</td>
+<td>立つ。i は、2 乗すると −1 になる数として、複素数の掛け算の中にだけある</td>
+</tr>
+<tr>
+<td>n 個の答えが同じ資格で並ぶ＝単一でない自己</td>
+<td>立つ</td>
+<td>立つ。自己と自己が協働する、の見方と同じ向き</td>
+<td>半分。答えを出すには複素数の掛け算が要るが、等しく並ぶ形だけなら、円を n 等分すれば描ける</td>
+</tr>
+<tr>
+<td>次数＝自己を掛け合わせた回数</td>
+<td>半分</td>
+<td>まだ分からない。二乗（二つの自己）には本人の言葉があるが、三乗より先に当たる本人の言葉は無い</td>
+<td>立つ</td>
+</tr>
+<tr>
+<td>平方根の二つ＝一段遡ると残る真逆の二つ</td>
+<td>立つ</td>
+<td>立つ。ブログの「真逆の二つ」と、☯ の二つ</td>
+<td>半分。二つに分かれることは数直線でも起きる（2 と −2）。二つとも軸の外に出るのは、平面でだけ</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+</div></details><details class="sec" id="当たらない所" open><summary>当たらない所</summary><div class="secbody">
+
+
+<p><a id="fa-miss"></a>複素数の構造に乗った当てはめは、ほとんど何にでも当てはまってしまいます。似て見えることを当然として閉じず、当たらない所も並べておきます。</p>
+<ul>
+<li>**答えは止まって並ぶだけで、動かない。**方程式の答えは、平面の上の点として並ぶだけです。読み物 julia-potential の、一つの c で打った z の並びが回りながら一点へ寄って見える形（軌跡の渦）も、創造の五段階の渦（散逸構造。蝋燭の炎のように、エネルギーの出入りで形が保たれるもの）も、この定理は書きません。</li>
+<li>**答えがあることは言うが、どれにどう着くかは言わない。**定理は、答えがそろっていることを言いますが、答えの求め方は言いません。人がいくつかの自己のどれを生きるのかも、式からは出てきません。</li>
+<li>**等しく並ぶのは、z<sup>n</sup> = 1 の形のときだけ。**ほかの方程式では、答えは平面のばらばらな所に、違う大きさで並びます。自己を、いつも同じ大きさで等しく並ぶものとは言えません。</li>
+<li>**三つ以上の自己が掛け合わさる心の働きが、まだ見つからない。**次数を、自己を掛け合わせた回数と当てても、三つ以上の自己が一度に掛け合わさる、と言える働きは見つかっていません。</li>
+</ul>
+</div></details><details class="sec" id="駆動源に返すもの" open><summary>駆動源に返すもの</summary><div class="secbody">
+
+
+<p><a id="fa-return"></a>当てはめが立った所を、プロジェクトの駆動源に戻してみます。どれも仮説です。</p>
+<p>「私は何に駆られているのか」と問うて、認知できる側だけで答えを探すと、答えが無いと出たり、一つしか見つからなかったりするのかもしれません。そのとき、駆動源が無いのではなく、探す軸が一本足りないのかもしれません。</p>
+<p>駆動源を一つの動機に絞って説明しようとすると、残りの答えは、認知できる軸の外に出るのかもしれません。起業家を動かしているものは、一つの自己の一つの動機でなく、いくつかの自己が同じ資格で並んで掛け合わさったもの、と見る方が、見えてくるのかもしれません。</p>
+<p>また、何に駆られてここまで来たかを振り返ると、答えは一つに決まらず、真逆の向きの二つが残るのかもしれません。前へ進むときは二つが一つに寄るので、どちらだったかは、振り返っても決まらないのかもしれません。</p>
+</div></details><details class="sec" id="抱えたままの問い" open><summary>抱えたままの問い</summary><div class="secbody">
+
+
+<p><a id="fa-open"></a></p>
+<ul>
+<li>認知できる軸と認知し得ない軸の二つで、どの問いの答えもそろう、と言えるのか。代数学の基本定理は、平面から先へ広げる必要はない、と言います。一方、創造とはは、四元数（三次元の回転）を言っています。二つは、どう並ぶのか。</li>
+<li>いま認知できている自己（1）のほかに並ぶ自己は、何かのきっかけで認知できる軸に出てくることがあるのか。</li>
+<li>遡って残る二つのうち、どちらだったかが決まらないことは、人にとって何なのか。</li>
+<li>三つ以上の自己が掛け合わさる、と言える心の働きはあるか。</li>
+</ul>
+<p>数学の説明は独立ページ「<a href="fundamental-theorem-of-algebra.html">代数学の基本定理</a>」に、複素数が関わるほかの数学は目次「<a href="complex-plane.html">複素平面で考える</a>」にあります。</p>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="complex-plane.html">複素平面で考える（目次）</a> ・
+                <a href="fundamental-theorem-of-algebra.html">代数学の基本定理</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

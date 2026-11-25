@@ -21,7 +21,7 @@
 <li><b><a href="#ft-two">x² + 1 = 0 は、数直線の上と下に答えを持つ</a></b>：数直線に無い答えが、平面にある</li>
 <li><b><a href="#ft-count">答えの数は、次数と同じ</a></b>：代数学の基本定理</li>
 <li><b><a href="#ft-circle">zⁿ = 1 の答えは、円を n 等分する</a></b>：回って 1 に戻る点</li>
-<li><b><a href="#ft-more">このあとに読むもの</a></b>：意識に照らした探索と、ほかの数学</li>
+<li><b><a href="#ft-more">このあとに読むもの</a></b>：構造の類似を考えるページと、ほかの数学</li>
 </ul>
 </div>
 
@@ -101,7 +101,7 @@ n = 2 なら、答えは 1 と −1 で、どちらも数直線の上にあり�
 
 <!--OPEN-->
 
-<a id="ft-more"></a>zⁿ = 1 の答えと、平方根の二つの枝を、人の意識に照らして推論した探索は、記録「[複素平面の数式ごとに、人の意識との構造の類似を推論する](https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/julia-potential/EXPLORE-formulas-consciousness-20261125.md)」の節「1 の累乗根と、平方根の二つの枝」にあります。
+<a id="ft-more"></a>代数学の基本定理の登場人物を、人の意識やプロジェクトの駆動源に仮に当てて考えるページは、「[代数学の基本定理から、構造の類似を考える](fundamental-theorem-of-algebra-analogy.html)」にあります。
 
 円の上を同じ角度ずつ回る点を、指数の形で書く式は、独立ページ「[オイラーの式](euler-formula.html)」にあります。
 
