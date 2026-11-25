@@ -817,6 +817,23 @@ def ja_text_markdown(path: Path) -> str:
     # 原文の節の見出しの段 → 章の題（訳）。訳の md の段の番号で指す。ファイルごとに持つ
     chapters = JA_CHAPTERS[path.name]
     out = []
+    # 「進化的な愛」の冒頭の一覧「引いている文献の訳」から、訳文の中でその文献を初めて引くリンクへ飛べるよう、
+    # そのリンクに id="cite-<ページ名>" を付ける（pjdhiro 2026-11-25「一覧から訳文へ飛べない」。¶20 は一段に 14 本を引くので、段の頭では足りない）
+    cite_ids = path.name == "peirce-1893-evolutionary-love.md"
+    cited: set[str] = set()
+
+    def cite(s: str) -> str:
+        if not cite_ids:
+            return s
+
+        def rep(m: re.Match) -> str:
+            slug = m.group(2)[: -len("-ja.html")]
+            if slug in cited or m.group(2) == "peirce-evolutionary-love-ja.html":
+                return m.group(0)
+            cited.add(slug)
+            return f'<a id="cite-{slug}" href="{m.group(2)}">{m.group(1)}</a>'
+
+        return re.sub(r"\[([^\]]+)\]\(([a-z0-9-]+-ja\.html)\)", rep, s)
     for b in blocks:
         head, _, body = b.partition("\n")
         no, _, page = head.strip().partition("　")
@@ -849,7 +866,7 @@ def ja_text_markdown(path: Path) -> str:
         if prefix:
             # 原文を先に、畳まずに出す。訳と訳注はその下
             out.append(f'\n<blockquote lang="{JA_LANG.get(path.name, "en")}">\n\n' + link("\n".join(orig).strip()) + "\n\n</blockquote>\n")
-        out.append("\n" + fit(link("\n".join(trans).strip())) + "\n")
+        out.append("\n" + fit(link(cite("\n".join(trans).strip()))) + "\n")
         for n in notes:
             # 訳注は HTML の塊で出すので、中の Markdown（リンク・斜体・コード）はここで HTML にする
             n = re.sub(r"\[([^\]]+)\]\(([^)\s]+)\)", r'<a href="\2">\1</a>', n)

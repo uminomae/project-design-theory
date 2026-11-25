@@ -42,7 +42,18 @@
       var p = d.parentNode;
       d = p && p.closest ? p.closest('details') : null;
     }
-    requestAnimationFrame(function () { smoothTo(el, animate); });
+    var started = false;
+    requestAnimationFrame(function () { started = true; smoothTo(el, animate); });
+    /* 描画が止まっている（裏のタブなど）と requestAnimationFrame が来ず、着地しない。そのときは動きなしで着地する */
+    setTimeout(function () { if (!started) { started = true; smoothTo(el, false); } }, 600);
+    /* 一段の中のリンクに着いたとき（「進化的な愛」の一覧「引いている文献の訳」→ 訳文の中のその文献）、
+       長い段のどこに着いたかが分かるよう、少しのあいだ色を付ける（2026-11-25） */
+    if (el.tagName === 'A') {
+      el.classList.remove('jump-hit');
+      void el.offsetWidth;
+      el.classList.add('jump-hit');
+      setTimeout(function () { el.classList.remove('jump-hit'); }, 2600);
+    }
     return true;
   }
   document.addEventListener('click', function (e) {

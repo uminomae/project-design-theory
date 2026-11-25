@@ -9,7 +9,8 @@
    注の中のリンクは、その注の印（「注N」）がある段に置く。
 2. 訳のページの正本（pd/knowledge/translations/READER-*-ja.md）のうち、「進化的な愛」の対訳へ戻るリンクを持つもの。
 3. 冒頭の一覧（READER-peirce-evolutionary-love-ja.md の id="cited-translations" の <ul>）。
-   並びは、本文で初めて出る段の順（同じ段の中は出てくる順）。各行の ¶ の印は、その行の訳が初めて出る段。
+   並びは、本文で初めて出る段の順（同じ段の中は出てくる順）。各行の ¶ の印は、その行の訳が初めて出る段で、
+   訳文の中でその訳を初めて引くリンク（build-reader-lp.py が id="cite-<ページ名>" を付ける）へ飛ぶ（2026-11-25）。
 
   python3 -I pd/scripts/cited-translations-check.py
 """
@@ -22,6 +23,7 @@ TR = ROOT / "pd/knowledge/translations"
 BODY = TR / "peirce-1893-evolutionary-love.md"
 LIST = TR / "READER-peirce-evolutionary-love-ja.md"
 SELF = "peirce-evolutionary-love-ja.html"
+PAGE = ROOT / "pd/reader" / SELF
 LINK = re.compile(r"\]\(([a-z0-9-]+-ja\.html)(?:#[^)]*)?\)")
 
 
@@ -72,9 +74,16 @@ def list_items():
         return None
     out = []
     for li in re.findall(r"<li>(.*?)</li>", m.group(1), re.S):
-        a = re.match(r'\s*<a href="#p(\d+)">', li)
-        para = int(a.group(1)) if a else None
+        a = re.match(r'\s*<a href="#cite-([a-z0-9-]+)">¶(\d+)</a>', li)
+        para = int(a.group(2)) if a else None
         for page in re.findall(r'href="([a-z0-9-]+-ja\.html)"', li):
+            if not a or a.group(1) + "-ja.html" != page:
+                print(f"   {page}：一覧の行の ¶ の印が、訳文の中のそのリンク（#cite-{page[:-len('-ja.html')]}）を指していない")
+                out.append((page, None))
+                continue
+            if f'id="cite-{a.group(1)}"' not in PAGE.read_text(encoding="utf-8"):
+                print(f"   {page}：公開ページに飛び先 id=\"cite-{a.group(1)}\" が無い（build-reader-lp.py を回す）")
+                para = None
             out.append((page, para))
     return out
 

@@ -567,3 +567,7 @@ body.reader-flow .peek-dock--in-toc .peek-dock__btn { box-shadow: none; }
     body.reader-flow .reader-article .peek__head { padding-left: 16px; }
     body.reader-flow .reader-article .peek__body { padding: 4px 16px 14px; }
 }
+
+/* ページ内リンクで段の中のリンクに着いたとき、少しのあいだ色を付ける（reader-flow.js の jumpTo・2026-11-25） */
+@keyframes jump-hit { from { background: rgba(214, 170, 60, .45); } to { background: transparent; } }
+body.reader-flow a.jump-hit { animation: jump-hit 2.4s ease-out; border-radius: 3px; }
