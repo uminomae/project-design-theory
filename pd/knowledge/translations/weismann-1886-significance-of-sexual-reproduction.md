@@ -16,7 +16,7 @@
 >
 > The Significance of Sexual Reproduction in the Theory of Natural Selection.
 >
-> 1886.
+> 1886\.
 
 V.
 
@@ -86,103 +86,103 @@ A. W.
 
 > Page
 >
-> 1. Can we dispense with the principle of natural selection? 255
+> 1\. Can we dispense with the principle of natural selection? 255
 >
-> 2. Nägeli’s theory of transformation from internal causes 256
+> 2\. Nägeli’s theory of transformation from internal causes 256
 >
-> 3. A definite course of development is possible without a self-changing idioplasm 258
+> 3\. A definite course of development is possible without a self-changing idioplasm 258
 >
-> 4. Conclusive importance of ‘adaptations’ 260
+> 4\. Conclusive importance of ‘adaptations’ 260
 >
-> 5. The structure of whales as an example of adaptation 261
+> 5\. The structure of whales as an example of adaptation 261
 >
-> 6. Transformation takes place by the smallest steps 264
+> 6\. Transformation takes place by the smallest steps 264
 >
-> 7. The foundation of such minute changes depends upon individual variability 266
+> 7\. The foundation of such minute changes depends upon individual variability 266
 >
-> 8. Difficulty in accounting for variability on the supposition of a continuity of the germ-plasm 266
+> 8\. Difficulty in accounting for variability on the supposition of a continuity of the germ-plasm 266
 >
-> 9. Previous theories by which variability has been accounted for 267
+> 9\. Previous theories by which variability has been accounted for 267
 >
-> 10. Non-transmission of acquired characters 267
+> 10\. Non-transmission of acquired characters 267
 >
-> 11. Nägeli’s and Alexis Jordan’s experiments 269
+> 11\. Nägeli’s and Alexis Jordan’s experiments 269
 >
-> 12. Germ-plasm is only altered with great difficulty 271
+> 12\. Germ-plasm is only altered with great difficulty 271
 >
-> 13. The source of individual variation lies in sexual reproduction 272
+> 13\. The source of individual variation lies in sexual reproduction 272
 >
-> 14. The process of natural selection does not operate when asexual reproduction takes place 274
+> 14\. The process of natural selection does not operate when asexual reproduction takes place 274
 >
-> 15. Origin of variability in unicellular organisms 278
+> 15\. Origin of variability in unicellular organisms 278
 >
-> 16. Sexual reproduction effects combination 279
+> 16\. Sexual reproduction effects combination 279
 >
-> 17. E. van Beneden’s and V. Hensen’s theory of sexual reproduction as a process of rejuvenescence 282
+> 17\. E. van Beneden’s and V. Hensen’s theory of sexual reproduction as a process of rejuvenescence 282
 >
-> 18. Theoretical objections to such a view 283
+> 18\. Theoretical objections to such a view 283
 >
-> 19. Original significance of conjugation 286
+> 19\. Original significance of conjugation 286
 >
-> 20. Preservation of sexual reproduction by means of heredity 287
+> 20\. Preservation of sexual reproduction by means of heredity 287
 >
-> 21. It is lost in parthenogenesis for reasons of utility 289
+> 21\. It is lost in parthenogenesis for reasons of utility 289
 >
-> 22. Parthenogenesis prevents further transformations 290
+> 22\. Parthenogenesis prevents further transformations 290
 >
-> 23. It excludes Panmixia and thus prevents disused organs from becoming rudimentary 291
+> 23\. It excludes Panmixia and thus prevents disused organs from becoming rudimentary 291
 >
-> 24. Final considerations 294
+> 24\. Final considerations 294
 
 頁
 
-1. 自然選択の原理なしで済ませられるか 255
+1\. 自然選択の原理なしで済ませられるか 255
 
-2. 内的な原因による変形についてのネーゲリ（Nägeli）の理論 256
+2\. 内的な原因による変形についてのネーゲリ（Nägeli）の理論 256
 
-3. 自ら変わるイディオプラズム（idioplasm）がなくても、定まった発展（development）の道筋はありうる 258
+3\. 自ら変わるイディオプラズム（idioplasm）がなくても、定まった発展（development）の道筋はありうる 258
 
-4. 「適応」の決定的な重要さ 260
+4\. 「適応」の決定的な重要さ 260
 
-5. 適応の例としてのクジラの体のつくり 261
+5\. 適応の例としてのクジラの体のつくり 261
 
-6. 変形はごく小さな歩みで起こる 264
+6\. 変形はごく小さな歩みで起こる 264
 
-7. そのような微小な変化のもとは、個体の変異性にある 266
+7\. そのような微小な変化のもとは、個体の変異性にある 266
 
-8. 生殖質（germ-plasm）の連続を前提とすると、変異性を説明するのが難しい 266
+8\. 生殖質（germ-plasm）の連続を前提とすると、変異性を説明するのが難しい 266
 
-9. 変異性をこれまで説明してきた理論 267
+9\. 変異性をこれまで説明してきた理論 267
 
-10. 獲得形質は伝えられない 267
+10\. 獲得形質は伝えられない 267
 
-11. ネーゲリとアレクシス・ジョルダン（Alexis Jordan）の実験 269
+11\. ネーゲリとアレクシス・ジョルダン（Alexis Jordan）の実験 269
 
-12. 生殖質はきわめて変わりにくい 271
+12\. 生殖質はきわめて変わりにくい 271
 
-13. 個体の変異の源は有性生殖にある 272
+13\. 個体の変異の源は有性生殖にある 272
 
-14. 無性生殖が行われるところでは、自然選択の過程ははたらかない 274
+14\. 無性生殖が行われるところでは、自然選択の過程ははたらかない 274
 
-15. 単細胞の生物における変異性の起源 278
+15\. 単細胞の生物における変異性の起源 278
 
-16. 有性生殖は組み合わせをもたらす 279
+16\. 有性生殖は組み合わせをもたらす 279
 
-17. 有性生殖を若返り（rejuvenescence）の過程とする、E. ファン・ベネーデン（E. van Beneden）と V. ヘンゼン（V. Hensen）の理論 282
+17\. 有性生殖を若返り（rejuvenescence）の過程とする、E. ファン・ベネーデン（E. van Beneden）と V. ヘンゼン（V. Hensen）の理論 282
 
-18. そのような見方への理論上の反論 283
+18\. そのような見方への理論上の反論 283
 
-19. 接合のもともとの意義 286
+19\. 接合のもともとの意義 286
 
-20. 遺伝による有性生殖の保持 287
+20\. 遺伝による有性生殖の保持 287
 
-21. 単為生殖では、有用さの理由から有性生殖が失われる 289
+21\. 単為生殖では、有用さの理由から有性生殖が失われる 289
 
-22. 単為生殖はそれ以上の変形を妨げる 290
+22\. 単為生殖はそれ以上の変形を妨げる 290
 
-23. 単為生殖はパンミクシア（Panmixia）を締め出し、そのため使われない器官が痕跡的になるのを妨げる 291
+23\. 単為生殖はパンミクシア（Panmixia）を締め出し、そのため使われない器官が痕跡的になるのを妨げる 291
 
-24. 終わりの考察 294
+24\. 終わりの考察 294
 
 訳注：目次の It は、21 では有性生殖を、23 では単為生殖を指す（本文 p.289・p.291 の該当の段による）。
 
@@ -198,9 +198,9 @@ A. W.
 >
 > IV. On the Supposed Transmission of Acquired Characters 310
 >
-> 1. Brown-Séquard’s experiments on Guinea-pigs 310
+> 1\. Brown-Séquard’s experiments on Guinea-pigs 310
 >
-> 2. A case which at first sight appears to prove the transmission of acquired characters 320
+> 2\. A case which at first sight appears to prove the transmission of acquired characters 320
 >
 > V. On the Origin of Parthenogenesis 323
 >
@@ -216,9 +216,9 @@ III. 植物における適応 308
 
 IV. 獲得形質が伝えられるとされることについて 310
 
-1. ブラウン＝セカール（Brown-Séquard）のモルモットの実験 310
+1\. ブラウン＝セカール（Brown-Séquard）のモルモットの実験 310
 
-2. 一見すると獲得形質の伝達を証明するように見える例 320
+2\. 一見すると獲得形質の伝達を証明するように見える例 320
 
 V. 単為生殖の起源について 323
 
