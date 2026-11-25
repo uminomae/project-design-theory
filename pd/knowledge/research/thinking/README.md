@@ -24,6 +24,11 @@ pjdhiro の言葉（#206 の本文・2026-11-25）：
 | 意識のあらゆる形・流れ | ジェームズ『心理学原理』1890 第 9 章 | [psychclassics の第 9 章](http://psychclassics.yorku.ca/James/Principles/prin9.htm) | 本文照合済。第 9 章のほかの所は `pd/knowledge/research/william-james/README.md` §3 で照合済（sources §4-5。読み直したのは pp.224–225 だけ） |
 | 四つの意味と反省的思考 | デューイ『思考の方法（How We Think）』1910 第 1 章 | D. C. Heath 1910。[Internet Archive（Google の走査）](https://archive.org/details/howwethink03dewegoog) | 本文照合済 |
 | 心理学の教科書 | Spielman ほか『Psychology 2e』（OpenStax 2020）第 7 章 | [7.1](https://openstax.org/books/psychology-2e/pages/7-1-what-is-cognition)・[7.3](https://openstax.org/books/psychology-2e/pages/7-3-problem-solving)・[章の始め](https://openstax.org/books/psychology-2e/pages/7-introduction)（CC BY-NC-SA） | 本文照合済 |
+| 問題解決は探索 | サイモン「Rational Decision-Making in Business Organizations」ノーベル賞講演 1978 | [nobelprize.org の PDF](https://www.nobelprize.org/uploads/2018/06/simon-lecture.pdf) | 本文照合済 |
+| 知識の表象を系統立てて変える | Holyoak & Morrison 2012「Thinking and Reasoning: A Reader's Guide」（*The Oxford Handbook of Thinking and Reasoning* 第 1 章・DOI 10.1093/oxfordhb/9780199734689.013.0001） | 刊行前の原稿。[UCLA のホリオークの研究室のサイトの Wayback の記録](https://web.archive.org/web/20190819105705/http://reasoninglab.psych.ucla.edu:80/wp-content/uploads/2010/09/holyoakmorrison_ohtr_chap1.pdf)〔2019-08-19〕 | 本文照合済（著者稿）。中で引くリップスとコンラッド 1989 は二次経由 |
+| 辞典の定義 | APA Dictionary of Psychology「thinking」（2018-04-19 の更新） | [オンラインの項](https://dictionary.apa.org/thinking) | 本文照合済（辞典の項） |
+| 拡張された心 | Clark & Chalmers 1998「The Extended Mind」*Analysis* 58(1):7–19（DOI 10.1093/analys/58.1.7） | [チャルマーズのサイトの原稿](https://consc.net/papers/extended.html) | 本文照合済（著者稿）。頁は Crossref の 7–19。写しの頭の注は「58:10-23」と書き、食い違う |
+| 身体化された認知 | Wilson 2002「Six views of embodied cognition」*Psychonomic Bulletin & Review* 9(4):625–636（DOI 10.3758/BF03196322） | [出版社の公開版の PDF](https://link.springer.com/content/pdf/10.3758/BF03196322.pdf) | 本文照合済 |
 | 速い直観と遅い推論 | カーネマン「Maps of Bounded Rationality」ノーベル賞講演 2002 | [nobelprize.org の PDF](https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf) | 本文照合済 |
 
 Gutenberg は 2026-11-25 にメンテナンス中で取れなかった。どれも Internet Archive・大学のサイト・出版元で読んだ。
@@ -94,6 +99,21 @@ Gutenberg は 2026-11-25 にメンテナンス中で取れなかった。どれ�
 
 - ノーベル賞講演 2002（Les Prix Nobel の pp.450–451）：直観と推論を分ける二つの系の見方を紹介する。「The operations of System 1 are fast, automatic, effortless, associative, and difficult to control or modify. The operations of System 2 are slower, serial, effortful, and deliberately controlled」訳：系 1 の働きは速く、自動で、努力が要らず、連想的で、制御や変更が難しい。系 2 の働きは遅く、一つずつで、努力が要り、意図して制御される。系 1 の働きは知覚の働きに似ている、とも書く。
 - 意思決定の研究としての扱いは、読み物「意思決定とは」と `pd/knowledge/research/decision-making/SURVEY-03-kahneman-tversky.md`。
+
+## 11. この 50 年の定義（2026-11-25 に足した）
+
+pjdhiro「思考の定義について、最近50年のものがないね」を受けて足した。
+
+- サイモン 1978（Les Prix Nobel の p.362）：「Information processing theories envisage problem solving as involving very selective search through problem spaces that are often immense.」訳：情報処理の理論は、問題解決を、しばしばとても大きな問題の空間の中での、強く選び取る探索として描く。経験則（heuristics）が見込みのある所へ導き、満足化の基準で探索が止まる（同じ頁）。理論の本はニューウェルとの『Human Problem Solving』1972（読んでいない。CACM 1976 の論文も OA の写しが見つからなかった）。
+- Holyoak & Morrison 2012（原稿の pp.14–16）：
+  - 日常の使い方：信念（I think that water is necessary for life）・問題解決（Ann is sure to think of a solution）・先を見ること・判断（What do you think about it?）・物思い（lost in thought、「mental meadow」）（p.14）。
+  - リップスとコンラッド 1989 を引き、「"thinking" is the most general term in both orderings—the grand superordinate of mental activities, which permeates all the others」（pp.14–15）。原典は読んでいない（二次経由）。
+  - 定義：「Thinking is the systematic transformation of mental representations of knowledge to characterize actual or possible states of the world, often in service of goals.」（p.15）。知識の心の表象とは「an internal description that can be manipulated to form other descriptions」。
+  - 言わないこと：人間や感じる存在が要るとは言わない。意識されないまま考えに似た働きもある。合理的・最善・望ましい・賢いとも言わない（p.16）。
+- APA 心理学辞典「thinking」：「cognitive behavior in which ideas, images, mental representations, or other hypothetical elements of thought are experienced or manipulated」。想像・記憶・問題解決・白昼夢・自由連想・概念の形成ほかを含む。二つの性格：covert（外から見えず、行いや自己報告から推し量る）、symbolic（心の記号や表象の操作に見えるが、その性質はまだ不明で争いがある）。
+- Clark & Chalmers 1998：問い「Where does the mind stop and the rest of the world begin?」（節 1）。対等の原則にあたる文「If, as we confront some task, a part of the world functions as a process which, were it done in the head, we would have no hesitation in recognizing as part of the cognitive process, then that part of the world is (so we claim) part of the cognitive process.」と「Cognitive processes ain't (all) in the head!」（節 2）。ノートを持ち歩く Otto の例。人と外のものが二方向でやりとりする「coupled system」（節 3）。
+- Wilson 2002：要旨で六つの主張（状況の中・時間に追われる・環境に預ける・環境は認知の仕組みの一部・行動のため・オフラインの認知も体に根ざす）。四つ目は「deeply problematic」、六つ目は「may in fact be the best documented and most powerful of the six claims」（p.625）。初期の認知心理学は「most theories of human thinking dealt in propositional forms of knowledge」（p.625）。六つは一つの見方として出されがちだが、一つずつ確かめる時が来た（p.626）。指で数える・ベン図・紙と鉛筆の計算は環境に預ける例（p.629）。
+- Claude の読み：アリストテレスの「像なしに考えない」と、ウィルソンの六つ目は、重ねて読めるかもしれない。この 50 年の分は「考える場所の広さ」（頭の中の表象か、体と道具まで入るか）の問いを足す。どちらかに決めない。M5（思考・心理・身体知が分けられないところ）の材料にもなる。
 
 ## Claude の読み：並べて見えること
 
