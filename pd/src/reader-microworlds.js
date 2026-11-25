@@ -1230,8 +1230,319 @@ function mountRoot720(host) {
     draw();
 }
 
+// ============================================================
+// 代数学の基本定理（reader/fundamental-theorem-of-algebra.html・#204）
+// 共通：数を「a + bi」の字にする（小数は 2 桁まで・末尾の 0 を落とす）
+// ============================================================
+function ftaNum(v) {
+    const r = Math.round(v * 100) / 100;
+    const t = Math.abs(r) < 1e-9 ? 0 : r;
+    return String(t);
+}
+function ftaSup(n) {
+    const d = '⁰¹²³⁴⁵⁶⁷⁸⁹';
+    return String(n).split('').map(c => d[+c]).join('');
+}
+function ftaComplex(re, im) {
+    const R = Math.round(re * 100) / 100, I = Math.round(im * 100) / 100;
+    const r0 = Math.abs(R) < 1e-9, i0 = Math.abs(I) < 1e-9;
+    if (r0 && i0) return '0';
+    const rs = r0 ? '' : signed(+ftaNum(R));
+    let is = '';
+    if (!i0) {
+        const mag = Math.abs(I) === 1 ? 'i' : ftaNum(Math.abs(I)) + 'i';
+        is = rs === '' ? (I < 0 ? '−' + mag : mag) : (I < 0 ? ' − ' : ' + ') + mag;
+    }
+    return rs + is;
+}
+
+// 1) x を決めると、x² + 1 がどこに来るか
+//    平面をクリックして x（金の四角）を決める（0.25 刻み・±1.5 まで）。x²（白抜き）と x² + 1（赤）を出す。
+//    x² + 1 が 0 になるのは x = i と x = −i だけ。「数直線の上を動かす」で x を実軸の上で −1.5 → 1.5 と動かし、
+//    x² + 1 が 1〜3.25 の上を行き来して 0 に届かないことを跡で見せる。
+function mountFtaSquarePlusOne(host) {
+    const P = PAL();
+    const view = makeCanvas(host, 0.8);
+    const row = controls(host);
+    const st = status(host);
+    const N = 3.5;           // 描く範囲（−3.5〜3.5）
+    const LIM = 1.5;         // x を置ける範囲
+    let a = 1, b = 0;        // x = a + bi
+    let sweep = null;        // { t0 }
+    let trail = [];          // 動かしたときの x² + 1 の跡
+    let dragging = false;
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    const setX = (re, im) => { sweep = null; trail = []; a = re; b = im; draw(); };
+    button(row, 'x = 1', () => setX(1, 0));
+    button(row, 'x = i', () => setX(0, 1));
+    button(row, 'x = −i', () => setX(0, -1));
+    button(row, '数直線の上を動かす', () => {
+        trail = [];
+        b = 0;
+        if (reduce) {
+            for (let k = 0; k <= 60; k++) { const t = -LIM + 2 * LIM * k / 60; trail.push([t * t + 1, 0]); }
+            a = LIM; draw(); return;
+        }
+        sweep = { t0: performance.now() };
+        requestAnimationFrame(tick);
+    });
+
+    function tick(now) {
+        if (!sweep) return;
+        const u = Math.min(1, (now - sweep.t0) / 3000);
+        a = -LIM + 2 * LIM * u;
+        b = 0;
+        trail.push([a * a + 1, 0]);
+        draw();
+        if (u < 1) requestAnimationFrame(tick);
+        else { sweep = null; a = LIM; draw(); }
+    }
+
+    function geom() {
+        const { W, H } = view;
+        const unit = Math.min(W, H) / (2 * N + 0.6);
+        return { cx: W / 2, cy: H / 2, unit };
+    }
+    function place(ev) {
+        const rect = view.canvas.getBoundingClientRect();
+        const { cx, cy, unit } = geom();
+        const snap = v => Math.max(-LIM, Math.min(LIM, Math.round(v * 4) / 4));
+        sweep = null; trail = [];
+        a = snap((ev.clientX - rect.left - cx) / unit);
+        b = snap(-(ev.clientY - rect.top - cy) / unit);
+        draw();
+    }
+    view.canvas.addEventListener('pointerdown', ev => { dragging = true; place(ev); });
+    view.canvas.addEventListener('pointermove', ev => { if (dragging) place(ev); });
+    ['pointerup', 'pointercancel', 'pointerleave'].forEach(t => view.canvas.addEventListener(t, () => { dragging = false; }));
+    view.canvas.style.cursor = 'pointer';
+
+    function draw() {
+        const { ctx, W, H } = view;
+        ctx.clearRect(0, 0, W, H);
+        const { cx, cy, unit } = geom();
+        const X = p => cx + p[0] * unit, Y = p => cy - p[1] * unit;
+        const inView = p => Math.abs(p[0]) <= N && Math.abs(p[1]) <= N;
+        // 格子
+        ctx.strokeStyle = P.faint; ctx.lineWidth = 1;
+        for (let n = -3; n <= 3; n++) {
+            ctx.beginPath(); ctx.moveTo(cx + n * unit, cy - N * unit); ctx.lineTo(cx + n * unit, cy + N * unit); ctx.stroke();
+            ctx.beginPath(); ctx.moveTo(cx - N * unit, cy + n * unit); ctx.lineTo(cx + N * unit, cy + n * unit); ctx.stroke();
+        }
+        // 数直線（実軸）は太く、虚軸は細く
+        ctx.strokeStyle = P.mid; ctx.lineWidth = 2.2;
+        ctx.beginPath(); ctx.moveTo(cx - N * unit, cy); ctx.lineTo(cx + N * unit, cy); ctx.stroke();
+        ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(cx, cy - N * unit); ctx.lineTo(cx, cy + N * unit); ctx.stroke();
+        ctx.fillStyle = P.mid; ctx.font = '11px sans-serif';
+        for (let n = -3; n <= 3; n++) {
+            if (n === 0) continue;
+            ctx.textAlign = 'center'; ctx.fillText(signed(n), cx + n * unit, cy + 15);
+            ctx.textAlign = 'right'; ctx.fillText(ftaComplex(0, n), cx - 6, cy - n * unit + 4);
+        }
+        ctx.font = '12px sans-serif'; ctx.fillStyle = P.navy;
+        ctx.textAlign = 'left'; ctx.fillText('数直線（実軸）', cx - N * unit, cy + 30);
+        ctx.textAlign = 'left'; ctx.fillText('虚軸', cx + 8, cy - (N - 0.2) * unit);
+        // 0 の的
+        ctx.strokeStyle = P.ink; ctx.lineWidth = 1.2;
+        ctx.beginPath(); ctx.arc(cx, cy, 9, 0, Math.PI * 2); ctx.stroke();
+        // 跡
+        if (trail.length > 1) {
+            ctx.strokeStyle = P.coral; ctx.globalAlpha = 0.35; ctx.lineWidth = 6; ctx.lineCap = 'round';
+            ctx.beginPath(); ctx.moveTo(X(trail[0]), Y(trail[0]));
+            trail.forEach(p => ctx.lineTo(X(p), Y(p)));
+            ctx.stroke(); ctx.globalAlpha = 1; ctx.lineCap = 'butt';
+        }
+        const sq = [a * a - b * b, 2 * a * b];
+        const v = [sq[0] + 1, sq[1]];
+        // x² から x² + 1 へ（右へ 1）
+        if (inView(sq) && inView(v)) {
+            ctx.strokeStyle = P.coral; ctx.lineWidth = 1.2; ctx.setLineDash([4, 4]);
+            ctx.beginPath(); ctx.moveTo(X(sq), Y(sq)); ctx.lineTo(X(v), Y(v)); ctx.stroke(); ctx.setLineDash([]);
+        }
+        // 図の外へ出た点は、縁に小さな三角で向きを示す
+        function edgeMark(p, filled) {
+            const k = N / Math.max(Math.abs(p[0]), Math.abs(p[1]));
+            const q = [p[0] * k, p[1] * k];
+            const ang = Math.atan2(-(p[1]), p[0]);
+            const x = X(q), y = Y(q);
+            ctx.save(); ctx.translate(x, y); ctx.rotate(ang);
+            ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(-11, -6); ctx.lineTo(-11, 6); ctx.closePath();
+            ctx.fillStyle = P.coral; ctx.strokeStyle = P.coral; ctx.lineWidth = 1.5;
+            if (filled) ctx.fill(); else ctx.stroke();
+            ctx.restore();
+        }
+        ctx.font = '13px sans-serif'; ctx.textAlign = 'left';
+        if (inView(sq)) {
+            ctx.strokeStyle = P.coral; ctx.lineWidth = 2;
+            ctx.beginPath(); ctx.arc(X(sq), Y(sq), 6, 0, Math.PI * 2); ctx.stroke();
+            ctx.fillStyle = P.coral; ctx.textAlign = 'right'; ctx.fillText('x²', X(sq) - 8, Y(sq) + 16); ctx.textAlign = 'left';
+        } else edgeMark(sq, false);
+        if (inView(v)) {
+            ctx.fillStyle = P.coral;
+            ctx.beginPath(); ctx.arc(X(v), Y(v), 6.5, 0, Math.PI * 2); ctx.fill();
+            ctx.fillText('x² + 1', X(v) + 9, Y(v) - 8);
+        } else edgeMark(v, true);
+        // x
+        const xp = [a, b];
+        ctx.fillStyle = P.gold; ctx.fillRect(X(xp) - 6, Y(xp) - 6, 12, 12);
+        ctx.fillText('x', X(xp) - 16, Y(xp) - 8);
+
+        const xs = ftaComplex(a, b), s2 = ftaComplex(sq[0], sq[1]), vs = ftaComplex(v[0], v[1]);
+        let msg = 'x = <b>' + xs + '</b> のとき、x² = ' + s2 + '、x² + 1 = <b>' + vs + '</b> です。';
+        const zero = Math.abs(v[0]) < 1e-9 && Math.abs(v[1]) < 1e-9;
+        if (sweep) msg = 'x を数直線の上で動かしています。x² + 1（赤の跡）は 1 より左へ行きません。';
+        else if (zero) msg += '<b>0 になりました。x = ' + xs + ' は答えです。</b>';
+        else if (b === 0) msg += trail.length ? 'x を数直線の上で −1.5 から 1.5 まで動かしても、x² + 1 は 1 から 3.25 のあいだにあり、0 に届きませんでした。' : 'x が数直線の上にあるあいだは、x² + 1 は 1 以上で、0 に届きません。';
+        else msg += '0 からの距離は ' + ftaNum(Math.hypot(v[0], v[1])) + ' です。';
+        if (!sweep) msg += ' 平面をクリックすると、x がそこへ移ります。';
+        st.innerHTML = msg;
+    }
+    view.canvas.setAttribute('aria-label', '平面をクリックして x（金の四角）を決めると、x²（白抜きの赤）と x² + 1（赤の点）が出る。x が数直線の上にあると x² + 1 は 1 以上で 0 に届かない。x = i と x = −i のとき x² + 1 は 0 になる。');
+    view.onResize = draw;
+    draw();
+}
+
+// 2) zⁿ = 1 の答えは、円を n 等分する
+//    n（1〜12）の答えを円の上に出す。円の点をクリックして一つ選び（金）、「n 回掛ける」で 1 にその点を一回ずつ掛けて、
+//    同じ角度ずつ回って n 回で 1 に戻るのを見せる。数直線の上に残る答えは、1（n が偶数なら 1 と −1）。
+function mountFtaRootsOfUnity(host) {
+    const P = PAL();
+    const view = makeCanvas(host, 0.8);
+    const row = controls(host);
+    const st = status(host);
+    let n = 3, k = 1;
+    let step = -1;           // 掛けた回数（-1 は「まだ掛けていない」）
+    let anim = null;         // { from, t0 }
+    let timer = null;
+    const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function stop() { anim = null; if (timer) { clearTimeout(timer); timer = null; } }
+    function reset() { stop(); step = -1; }
+    button(row, 'n − 1', () => { if (n > 1) { n--; k = Math.min(k, n - 1); if (n === 1) k = 0; reset(); draw(); } });
+    button(row, 'n + 1', () => { if (n < 12) { n++; if (k === 0 && n > 1) k = 1; reset(); draw(); } });
+    button(row, 'n 回掛ける', () => {
+        reset();
+        step = 0; draw();
+        if (reduce) { step = n; draw(); return; }
+        const next = () => {
+            if (step >= n) return;
+            anim = { from: step, t0: performance.now() };
+            requestAnimationFrame(tick);
+        };
+        timer = setTimeout(next, 350);
+        function tick(now) {
+            if (!anim) return;
+            const u = Math.min(1, (now - anim.t0) / 550);
+            draw(anim.from + u);
+            if (u < 1) requestAnimationFrame(tick);
+            else { step = anim.from + 1; anim = null; draw(); if (step < n) timer = setTimeout(next, 250); }
+        }
+    });
+    button(row, '最初に戻す', () => { n = 3; k = 1; reset(); draw(); });
+
+    function geom() {
+        const { W, H } = view;
+        const R = Math.min(W, H) * 0.36;
+        return { cx: W / 2, cy: H / 2, R };
+    }
+    view.canvas.addEventListener('pointerdown', ev => {
+        if (n === 1) return;
+        const rect = view.canvas.getBoundingClientRect();
+        const { cx, cy } = geom();
+        const dx = ev.clientX - rect.left - cx, dy = -(ev.clientY - rect.top - cy);
+        if (Math.hypot(dx, dy) < 4) return;
+        let deg = Math.atan2(dy, dx) * 180 / Math.PI;
+        if (deg < 0) deg += 360;
+        k = Math.round(deg / (360 / n)) % n;
+        reset(); draw();
+    });
+    view.canvas.style.cursor = 'pointer';
+
+    function draw(pos) {
+        const { ctx, W, H } = view;
+        ctx.clearRect(0, 0, W, H);
+        const { cx, cy, R } = geom();
+        const th = 360 / n;
+        const pt = deg => [cx + R * Math.cos(deg * Math.PI / 180), cy - R * Math.sin(deg * Math.PI / 180)];
+        // 軸（横は数直線＝実軸）
+        ctx.strokeStyle = P.mid; ctx.lineWidth = 2.2;
+        ctx.beginPath(); ctx.moveTo(cx - R * 1.35, cy); ctx.lineTo(cx + R * 1.35, cy); ctx.stroke();
+        ctx.lineWidth = 1;
+        ctx.beginPath(); ctx.moveTo(cx, cy - R * 1.3); ctx.lineTo(cx, cy + R * 1.3); ctx.stroke();
+        ctx.fillStyle = P.navy; ctx.font = '12px sans-serif';
+        ctx.textAlign = 'left'; ctx.fillText('数直線（実軸）', cx - R * 1.35, cy + 18);
+        ctx.textAlign = 'left'; ctx.fillText('虚軸', cx + 8, cy - R * 1.22);
+        // 半径 1 の円
+        ctx.strokeStyle = P.line; ctx.lineWidth = 1.2;
+        ctx.beginPath(); ctx.arc(cx, cy, R, 0, Math.PI * 2); ctx.stroke();
+        // 答えの点（白抜き）と、0 からの細い線
+        for (let j = 0; j < n; j++) {
+            const p = pt(j * th);
+            ctx.strokeStyle = P.faint; ctx.lineWidth = 1;
+            ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(p[0], p[1]); ctx.stroke();
+            ctx.strokeStyle = P.coral; ctx.lineWidth = 2;
+            ctx.beginPath(); ctx.arc(p[0], p[1], 7, 0, Math.PI * 2); ctx.stroke();
+        }
+        ctx.fillStyle = P.mid; ctx.font = '13px sans-serif'; ctx.textAlign = 'left';
+        ctx.fillText('1', pt(0)[0] + 10, pt(0)[1] - 8);
+        // 選んだ点（金）
+        const sel = pt(k * th);
+        ctx.fillStyle = P.gold; ctx.beginPath(); ctx.arc(sel[0], sel[1], 7, 0, Math.PI * 2); ctx.fill();
+        // 掛けていく跡と、いまの点
+        const cur = pos != null ? pos : step;
+        if (cur >= 0) {
+            const angNow = cur * k * th;
+            ctx.strokeStyle = P.ink; ctx.lineWidth = 2.5; ctx.globalAlpha = 0.55;
+            // 一周ごとに少し内側へ描いて、何周したかを見せる
+            ctx.beginPath();
+            for (let d = 0; d <= angNow + 0.01; d += 2) {
+                const r2 = R * Math.max(0.2, 0.84 - 0.07 * d / 360);
+                const x = cx + r2 * Math.cos(d * Math.PI / 180), y = cy - r2 * Math.sin(d * Math.PI / 180);
+                d === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+            }
+            ctx.stroke(); ctx.globalAlpha = 1;
+            const p = pt(angNow);
+            ctx.strokeStyle = P.ink; ctx.lineWidth = 2;
+            ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(p[0], p[1]); ctx.stroke();
+            ctx.fillStyle = P.ink; ctx.beginPath(); ctx.arc(p[0], p[1], 5, 0, Math.PI * 2); ctx.fill();
+        }
+        ctx.fillStyle = P.ink; ctx.beginPath(); ctx.arc(cx, cy, 3, 0, Math.PI * 2); ctx.fill();
+
+        // 状態の文
+        const onLine = n % 2 === 0 ? '1 と −1 ' : '1 だけ';
+        const deg = ftaNum(k * th);
+        let msg = '';
+        if (n === 1) {
+            msg = 'n = 1 のとき、z = 1 の答えは <b>1</b> だけです。「n + 1」をクリックすると、答えが増えます。';
+        } else if (step < 0) {
+            msg = 'n = <b>' + n + '</b> のとき、z' + ftaSup(n) + ' = 1 の答えは <b>' + n + ' 個</b>で、円を ' + n + ' 等分する点（赤の輪）です。数直線の上にあるのは ' + onLine + 'です。'
+                + (k === 0 ? '選んだ点（金）は 1 です。何回掛けても 1 のままです。' : '選んだ点（金）は、1 から <b>' + deg + ' 度</b>回った所です。「n 回掛ける」をクリックすると、1 にこの点を ' + n + ' 回掛けていきます。')
+                + ' 円の上の点をクリックすると、ほかの答えを選べます。';
+        } else {
+            const s = pos != null ? Math.floor(pos) : step;
+            const total = s * k * th;
+            msg = '1 に選んだ点を <b>' + s + ' 回</b>掛けました。回った角度は、合わせて <b>' + ftaNum(total) + ' 度</b>です。';
+            if (step === n && pos == null) {
+                const m = n / gcd(n, k);
+                msg = '1 に選んだ点を <b>' + n + ' 回</b>掛けて、合わせて <b>' + ftaNum(n * k * th) + ' 度</b>（' + k + ' 周）回り、<b>1 に戻りました</b>。';
+                if (k !== 0 && m < n) msg += '（' + m + ' 回目で、もう 1 に戻っていました。）';
+                if (k === 0) msg = '選んだ点は 1 なので、何回掛けても 1 のままです。';
+            }
+        }
+        st.innerHTML = msg;
+    }
+    function gcd(x, y) { while (y) { [x, y] = [y, x % y]; } return x; }
+    view.canvas.setAttribute('aria-label', '半径 1 の円の上に、zⁿ = 1 の n 個の答えが、円を n 等分して並ぶ。円の点を選んで「n 回掛ける」と、1 から同じ角度ずつ回って、n 回で 1 に戻る。');
+    view.onResize = () => draw();
+    draw();
+}
+
 // ---- ディスパッチ ----
 const MOUNTS = {
+    'fta-square-plus-one': mountFtaSquarePlusOne,
+    'fta-roots-of-unity': mountFtaRootsOfUnity,
     'magnitude-vs-difference': mountMagnitudeVsDifference,
     'roots-merge': mountRootsMerge,
     'root-720': mountRoot720,
