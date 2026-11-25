@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/shelf-thinking.html を直接編集しないでください。
+  正本:   knowledge/research/reader-shelves/READER-shelf-thinking.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 思考に関わる独立ページの入口（pjdhiro 2026-11-26「思考関連のポータル的なものが欲しい。創造的思考もそこから飛ぶように。」・#206）
+  - 並べたページの多くが工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「思考を見るページ」です。独立ページの題と一行の説明を並べただけのページで、本文の主張はありません。一行の説明は、各ページの冒頭から Claude が書きました。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>思考を見るページ | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/shelf-thinking.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="考えることにまつわる独立ページの並び（思考に関わるページの入口）。思考とは・推論とは・頭脳の能力は、どう分けられてきたか・新しく注目されている能力・思考を動かす構えと体力・類推と、構造の類似を見抜く力（まだ書いていないものは工事中）と、創造的思考とは・パースの創造的な愛と、アブダクション・欠損駆動思考・メタ認知とは・意思決定とは ほか。">
+    <meta property="og:title" content="思考を見るページ">
+    <meta property="og:description" content="考えることにまつわる独立ページの並び（思考に関わるページの入口）。思考とは・推論とは・頭脳の能力は、どう分けられてきたか・新しく注目されている能力・思考を動かす構えと体力・類推と、構造の類似を見抜く力（まだ書いていないものは工事中）と、創造的思考とは・パースの創造的な愛と、アブダクション・欠損駆動思考・メタ認知とは・意思決定とは ほか。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/shelf-thinking.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="思考を見るページ">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-26">
+    <meta property="article:modified_time" content="2026-11-26">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "思考を見るページ",
+          "description": "考えることにまつわる独立ページの並び（思考に関わるページの入口）。思考とは・推論とは・頭脳の能力は、どう分けられてきたか・新しく注目されている能力・思考を動かす構えと体力・類推と、構造の類似を見抜く力（まだ書いていないものは工事中）と、創造的思考とは・パースの創造的な愛と、アブダクション・欠損駆動思考・メタ認知とは・意思決定とは ほか。",
+          "keywords": "思考, 推論, 頭脳の能力, 創造的思考, アブダクション, 欠損駆動思考, メタ認知, 意思決定, 独立ページ, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/shelf-thinking.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/shelf-thinking.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-26",
+          "dateModified": "2026-11-26",
+                    "about": [{"@type": "Thing", "name": "思考を見るページ"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「思考を見るページ」です。考えることにまつわる独立ページの並び（思考に関わるページの入口）。思考とは・推論とは・頭脳の能力は、どう分けられてきたか・新しく注目されている能力・思考を動かす構えと体力・類推と、構造の類似を見抜く力（まだ書いていないものは工事中）と、創造的思考とは・パースの創造的な愛と、アブダクション・欠損駆動思考・メタ認知とは・意思決定とは ほか。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                独立ページを並べたページです。並べ方と一行の説明は AI（Claude）が書いています。
+            </div>
+            <header class="reader-hero">
+                <h1>思考を見るページ</h1>
+                <p class="reader-meta">
+                    最終更新: 2026-11-26 ／ 状態: 独立ページの並び<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/reader-shelves/READER-shelf-thinking.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p class="reader-lead"><span class="reader-lead__label">問い</span>人は、どう考え、どう推し量り、どう新しい考えを生むのでしょうか。</p>
+
+<p>このページは、考えることにまつわる独立ページの並びです。思考・推論・頭の能力を一つずつ分けて見るページと、新しい考えが生まれるところを見るページと、考えることに関わるほかのページを、題と、そのページが答える問いで並べます。一つずつ、単独で読めます。まだ書いていないページは、題と問いだけを工事中で置いています。</p>
+<p>ほかの並びは、<a href="shelf-mind.html">心の動きを見るページ</a>・<a href="shelf-love.html">Love と愛、創造を見るページ</a>・<a href="shelf-number-org.html">数と組織を見るページ</a>・<a href="shelf-translations.html">原典を日本語で読む</a>です。</p>
+<details class="sec" id="考えることを一つずつ分けて見る" open><summary>考えることを、一つずつ分けて見る</summary><div class="secbody">
+
+
+<ul>
+<li>思考とは（工事中）：「考える」とは、何をすることなのでしょうか。</li>
+<li><a href="reasoning.html">推論とは</a>（工事中）：演繹・帰納・仮説（アブダクション）・類推は、どういう関係に置かれてきたのでしょうか。それぞれは、どこで止まるのでしょうか。</li>
+<li><a href="cognitive-abilities.html">頭脳の能力は、どう分けられてきたか</a>（工事中）：時の試練を超えて、いま信頼されている分け方は何で、まだ測られていない所はどこでしょうか。</li>
+<li>新しく注目されている能力（工事中）：いま何が、能力として呼ばれ始めたのでしょうか。なぜ今なのでしょうか。</li>
+<li>思考・心理・身体知が分けられないところ（工事中）：頭の働きを、心や身体から切り離せないと見てきた論は、何を言ってきたのでしょうか。</li>
+<li>思考を動かす構えと体力（工事中）：能力があっても働かないのは、なぜでしょうか。</li>
+<li>類推と、構造の類似を見抜く力（工事中）：離れたものの構造を重ねる働きは、どう研究されてきたのでしょうか。</li>
+<li>共役のベクトルを当てる力（工事中）：ずれに合った向きと大きさの逆を当てる力とは、何でしょうか。</li>
+</ul>
+</div></details><details class="sec" id="新しい考えが生まれるところ" open><summary>新しい考えが生まれるところ</summary><div class="secbody">
+
+
+<ul>
+<li><a href="creative-thinking.html">創造的思考とは</a>（工事中）：創造的思考とは、何を指す言葉なのでしょうか。仮説を立てる思考は、それとどう関わり、その思考を動かしているのは何なのでしょうか。</li>
+<li><a href="peirce-love-abduction.html">パースの創造的な愛と、アブダクション</a>（工事中）：パースの創造的な愛は、Love と呼びたいものと、どこまで近いのでしょうか。アブダクションは、そこにどう関わるのでしょうか。</li>
+<li><a href="../ks/">欠損駆動思考</a>：記号の上では 0 と出るところで、人は何を感じているのでしょうか。</li>
+</ul>
+</div></details><details class="sec" id="考えることに関わるほかの独立ページ" open><summary>考えることに関わる、ほかの独立ページ</summary><div class="secbody">
+
+
+<ul>
+<li><a href="metacognition.html">メタ認知とは</a>（随時追記）：自分を見ることと、相手の目で見ることは、同じ働きなのでしょうか。</li>
+<li><a href="decision-making.html">意思決定とは</a>（工事中）：意思決定とは、何をすることなのでしょうか。人は、実際にはどう決めているのでしょうか。</li>
+<li><a href="defense-mechanisms.html">心理的防衛機制とは</a>（工事中）：心は、何から、どうやって自分を守っているのでしょうか。</li>
+<li><a href="developmental-stages.html">精神の発達段階とは</a>（工事中）：同じ言葉が、人によってまるで違う意味で受け取られるのは、なぜでしょうか。</li>
+<li><a href="via-vulnerability.html">脆弱性から、全体を知る</a>（工事中）：ふだんは見えない全体の形を、壊れやすい所から知ることはできるでしょうか。</li>
+<li><a href="rotation-multiplication.html">回転の掛け算</a>（工事中）：数に i を掛けると 90 度回る、とはどういうことでしょうか。</li>
+</ul>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="creative-thinking.html">創造的思考とは</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

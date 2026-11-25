@@ -554,6 +554,13 @@ PAGES = [
         ROOT / "reader/shelf-translations.html",
         "flow",
     ),
+    (
+        # 思考に関わる独立ページの入口（#206・pjdhiro 2026-11-26「思考関連のポータル的なものが欲しい」）
+        ROOT / "knowledge/research/reader-shelves/READER-shelf-thinking.md",
+        ROOT / "scripts/reader-shelf-thinking-template.html",
+        ROOT / "reader/shelf-thinking.html",
+        "flow",
+    ),
 ]
 
 # スクリーナーのデータ（正本 JSON）。出力 HTML 名 → JSON。正本 MD の <!--SCREENER--> に

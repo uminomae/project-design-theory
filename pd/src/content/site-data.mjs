@@ -233,8 +233,9 @@ export const TRANSLATIONS = {
     "section.shelves.label": "Pages",
     "section.shelves.title": "独立ページ",
     "section.shelves.body":
-      "一つの問いを一ページにまとめ、読み物の章から呼んでいるページです。四つの並びに分けました。見出しから、それぞれの並びのページへ行けます。多くは工事中です。",
+      "一つの問いを一ページにまとめ、読み物の章から呼んでいるページです。五つの並びに分けました。見出しから、それぞれの並びのページへ行けます。多くは工事中です。",
     "shelf.mind": "心の動き",
+    "shelf.thinking": "思考",
     "shelf.love": "Love と愛、創造",
     "shelf.numberOrg": "数と組織",
     "shelf.translations": "原典を日本語で読む",
@@ -439,8 +440,9 @@ export const TRANSLATIONS = {
     "section.shelves.label": "Pages",
     "section.shelves.title": "Topic Pages",
     "section.shelves.body":
-      "Each page gathers one question, and the readers call on them from their chapters. They are grouped into four shelves; each heading opens its shelf. The pages are in Japanese, and most are under construction.",
+      "Each page gathers one question, and the readers call on them from their chapters. They are grouped into five shelves; each heading opens its shelf. The pages are in Japanese, and most are under construction.",
     "shelf.mind": "Workings of the mind",
+    "shelf.thinking": "Thinking",
     "shelf.love": "Love, beauty and creation",
     "shelf.numberOrg": "Numbers and organizations",
     "shelf.translations": "Source texts in Japanese translation",

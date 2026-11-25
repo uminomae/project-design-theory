@@ -87,6 +87,7 @@
 | `shelf-love.html` | `knowledge/research/reader-shelves/READER-shelf-love.md`（Love と愛、創造を見るページ。独立ページの題と一行の説明を並べただけのページ。HOME の「独立ページ」の節の見出しから張る・付箋帳 i20261119004012n6t） | flow（トップと同じ Menu。章は最初から開く。並べたページの多くが工事中のあいだは noindex） |
 | `shelf-number-org.html` | `knowledge/research/reader-shelves/READER-shelf-number-org.md`（数と組織を見るページ。独立ページの題と一行の説明を並べただけのページ。HOME の「独立ページ」の節の見出しから張る・付箋帳 i20261119004012n6t） | flow（トップと同じ Menu。章は最初から開く。並べたページの多くが工事中のあいだは noindex） |
 | `shelf-translations.html` | `knowledge/research/reader-shelves/READER-shelf-translations.md`（原典を日本語で読む。独立ページの題と一行の説明を並べただけのページ。HOME の「独立ページ」の節の見出しから張る・付箋帳 i20261119004012n6t） | flow（トップと同じ Menu。章は最初から開く。並べたページの多くが工事中のあいだは noindex） |
+| `shelf-thinking.html` | `knowledge/research/reader-shelves/READER-shelf-thinking.md`（思考を見るページ。思考に関わる独立ページの入口〔ポータル〕。#206 のモジュール〔思考とは・推論とは・頭脳の能力ほか。まだ無いものは題と問いだけを工事中で〕・創造的思考とはほかの、新しい考えが生まれるところを見るページ・考えることに関わるほかの独立ページを、題と答える問い一行で並べる。HOME の「独立ページ」の節の小見出し「思考」から張る・pjdhiro 2026-11-26「思考関連のポータル的なものが欲しい。創造的思考もそこから飛ぶように。」） | flow（トップと同じ Menu。章は最初から開く。並べたページの多くが工事中のあいだは noindex） |
 
 `archive/` には、入口と機械向けの案内から外した古い版をしまってある（`archive/README.md`。2026-11-10・Issue #111 で `energy-flow.html`＝「エネルギーの流れ」と、その比較用の実験版 `energy-flow-rhythm.html` を移した。`energy-flow.html` は生成の対象から外してある）。
 

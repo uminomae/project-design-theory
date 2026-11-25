@@ -6,7 +6,7 @@
 
 このページは、Love と愛、美、創造を一つずつ見る独立ページの並びです。多くは、[Love駆動開発と呼びたいもの](love-driven-dev.html)の章から呼んでいます。創造の五段階そのものは、[創造とは](../cs/)で見ます。
 
-ほかの並びは、[心の動きを見るページ](shelf-mind.html)・[数と組織を見るページ](shelf-number-org.html)・[原典を日本語で読む](shelf-translations.html)です。
+ほかの並びは、[心の動きを見るページ](shelf-mind.html)・[数と組織を見るページ](shelf-number-org.html)・[思考を見るページ](shelf-thinking.html)・[原典を日本語で読む](shelf-translations.html)です。
 
 ## Love と呼ばれてきたもの
 

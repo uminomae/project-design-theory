@@ -6,7 +6,7 @@
 
 このページは、数の見方と、経営・組織の見方を扱う独立ページの並びです。数のページのうち二つは、ほかの読み物を読むための前提知識です。
 
-ほかの並びは、[心の動きを見るページ](shelf-mind.html)・[Love と愛、創造を見るページ](shelf-love.html)・[原典を日本語で読む](shelf-translations.html)です。
+ほかの並びは、[心の動きを見るページ](shelf-mind.html)・[Love と愛、創造を見るページ](shelf-love.html)・[思考を見るページ](shelf-thinking.html)・[原典を日本語で読む](shelf-translations.html)です。
 
 ## 数の見方
 
