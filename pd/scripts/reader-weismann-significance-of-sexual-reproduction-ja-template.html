@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/weismann-significance-of-sexual-reproduction-ja.html を直接編集しないでください。
+  正本:   knowledge/translations/READER-weismann-significance-of-sexual-reproduction-ja.md（訳の本文は weismann-1886-significance-of-sexual-reproduction.md から差し込む）
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 訳の人の校閲はまだだが、pjdhiro の判断で noindex を外し、sitemap.xml・llms.txt・llms-full.txt に入れた（2026-11-20・#175 の対訳の決まり。このページは 2026-11-25）。校閲前の帯は残す
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「ヴァイスマン「自然選択の理論における有性生殖の意味」（1886）を、日本語で読む」のページです。ドイツの動物学者アウグスト・ヴァイスマン（August Weismann）の論文「The Significance of Sexual Reproduction in the Theory of Natural Selection（自然選択の理論における有性生殖の意味）」（1886。英訳の論文集『Essays upon Heredity』1889 の第 5 論文）の序文と本文、すなわち、ネーゲリの内的な原因による変形の説に対して自然選択を守り、獲得形質は伝わらないとしたうえで、自然選択がはたらく材料である個体の変異の源を、有性生殖が二つの親の遺伝の傾向を組み合わせることに求め、単為生殖では変形が止まると論じる論文を、段ごとに日本語に訳したページです。訳は Claude（AI）によるもので、人の校閲はまだです。 パースは「進化的な愛」（1893）の ¶21 で、ヴァイスマンは自らをダーウィン主義者と称しながら、何ものも偶然によらず、すべての形態は二つの親からの遺伝の単純な機械的合成結果だと考える、と書き、注62 を付けます。パースは論文の名を挙げないので、この主張を論じる論文として、英訳の論文集の第 5 論文の本文を訳しました（付録 I〜VI は訳していません）。原文は、英訳（Oxford: Clarendon Press, 1889）の走査から起こしました。
+  訳注は Claude の注。原文の段の番号（¶）は通し番号、p. は英訳の論文集（1889）の頁。[注N] は脚注（誌面では頁ごとの番号。ここでは通し番号に振り直した）。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ヴァイスマン「自然選択の理論における有性生殖の意味」（1886）を、日本語で読む | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/weismann-significance-of-sexual-reproduction-ja.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="ドイツの動物学者アウグスト・ヴァイスマン（August Weismann）の論文「The Significance of Sexual Reproduction in the Theory of Natural Selection（自然選択の理論における有性生殖の意味）」（1886。英訳の論文集『Essays upon Heredity』1889 の第 5 論文）の序文と本文、すなわち、ネーゲリの内的な原因による変形の説に対して自然選択を守り、獲得形質は伝わらないとしたうえで、自然選択がはたらく材料である個体の変異の源を、有性生殖が二つの親の遺伝の傾向を組み合わせることに求め、単為生殖では変形が止まると論じる論文を、段ごとに日本語に訳したページです。訳は Claude（AI）によるもので、人の校閲はまだです。">
+    <meta property="og:title" content="ヴァイスマン「自然選択の理論における有性生殖の意味」（1886）を、日本語で読む">
+    <meta property="og:description" content="ドイツの動物学者アウグスト・ヴァイスマン（August Weismann）の論文「The Significance of Sexual Reproduction in the Theory of Natural Selection（自然選択の理論における有性生殖の意味）」（1886。英訳の論文集『Essays upon Heredity』1889 の第 5 論文）の序文と本文、すなわち、ネーゲリの内的な原因による変形の説に対して自然選択を守り、獲得形質は伝わらないとしたうえで、自然選択がはたらく材料である個体の変異の源を、有性生殖が二つの親の遺伝の傾向を組み合わせることに求め、単為生殖では変形が止まると論じる論文を、段ごとに日本語に訳したページです。訳は Claude（AI）によるもので、人の校閲はまだです。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/weismann-significance-of-sexual-reproduction-ja.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta property="og:image" content="https://uminomae.github.io/project-design-theory/assets/ogp/peirce-love-abduction.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="ヴァイスマン「自然選択の理論における有性生殖の意味」（1886）を、日本語で読む — 中心から三つの点を独立へ押し出し、円い運動で調和へ引き寄せる図">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ヴァイスマン「自然選択の理論における有性生殖の意味」（1886）を、日本語で読む">
+    <meta name="twitter:image" content="https://uminomae.github.io/project-design-theory/assets/ogp/peirce-love-abduction.png">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-25">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "ヴァイスマン「自然選択の理論における有性生殖の意味」（1886）を、日本語で読む",
+          "description": "ドイツの動物学者アウグスト・ヴァイスマン（August Weismann）の論文「The Significance of Sexual Reproduction in the Theory of Natural Selection（自然選択の理論における有性生殖の意味）」（1886。英訳の論文集『Essays upon Heredity』1889 の第 5 論文）の序文と本文、すなわち、ネーゲリの内的な原因による変形の説に対して自然選択を守り、獲得形質は伝わらないとしたうえで、自然選択がはたらく材料である個体の変異の源を、有性生殖が二つの親の遺伝の傾向を組み合わせることに求め、単為生殖では変形が止まると論じる論文を、段ごとに日本語に訳したページです。訳は Claude（AI）によるもので、人の校閲はまだです。",
+          "keywords": "ヴァイスマン, August Weismann, 有性生殖, 自然選択, Natural Selection, 生殖質, germ-plasm, 遺伝, 変異, 獲得形質, ネーゲリ, 単為生殖, Essays upon Heredity, パース, 進化的な愛, 対訳",
+          "url": "https://uminomae.github.io/project-design-theory/reader/weismann-significance-of-sexual-reproduction-ja.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/weismann-significance-of-sexual-reproduction-ja.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-25",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Person", "name": "August Weismann"}, {"@type": "Thing", "name": "Sexual reproduction"}, {"@type": "Thing", "name": "Natural selection"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。訳と解説の文責"},
+          "translationOfWork": {"@type": "Article", "name": "The Significance of Sexual Reproduction in the Theory of Natural Selection", "author": {"@type": "Person", "name": "August Weismann"}, "datePublished": "1886", "isPartOf": {"@type": "Book", "name": "Essays upon Heredity and Kindred Biological Problems", "editor": "Edward B. Poulton, Selmar Schönland, Arthur E. Shipley", "publisher": "Clarendon Press", "datePublished": "1889"}, "pagination": "251-297", "sameAs": "https://archive.org/details/essaysuponheredi00weisuoft"},
+          "translator": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。人の校閲はまだ"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「ヴァイスマン「自然選択の理論における有性生殖の意味」（1886）を、日本語で読む」のページです。ドイツの動物学者アウグスト・ヴァイスマン（August Weismann）の論文「The Significance of Sexual Reproduction in the Theory of Natural Selection（自然選択の理論における有性生殖の意味）」（1886。英訳の論文集『Essays upon Heredity』1889 の第 5 論文）の序文と本文、すなわち、ネーゲリの内的な原因による変形の説に対して自然選択を守り、獲得形質は伝わらないとしたうえで、自然選択がはたらく材料である個体の変異の源を、有性生殖が二つの親の遺伝の傾向を組み合わせることに求め、単為生殖では変形が止まると論じる論文を、段ごとに日本語に訳したページです。訳は Claude（AI）によるもので、人の校閲はまだです。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この訳は AI（Claude）によるものです。</b>人の校閲はまだです。引用や論拠には、各段の「原文」を使ってください。
+            </div>
+            <header class="reader-hero">
+                <h1><span style="display:inline-block">ヴァイスマン「自然選択の理論における有性生殖の意味」</span><span style="display:inline-block">（1886）を、日本語で読む</span></h1>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 訳は人の校閲前<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/translations/weismann-1886-significance-of-sexual-reproduction.md">対訳の正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="peirce-love-abduction.html">パースの創造的な愛と、アブダクション</a> ・
+                <a href="peirce-evolutionary-love-ja.html">パース「進化的な愛」を、日本語で読む</a> ・
+                <a href="peirce-law-of-mind-ja.html">パース「心の法則」を、日本語で読む</a> ・
+                <a href="peirce-glassy-essence-ja.html">パース「人間のガラスのような本質」を、日本語で読む</a> ・
+                <a href="carus-onslaught-on-necessity-ja.html">ケーラス「パース氏の必然論への猛攻」を、日本語で読む</a> ・
+                <a href="james-substance-and-shadow-ja.html">ジェイムズ（父）『実体と影』の「創造的な愛」の所を、日本語で読む</a> ・
+                <a href="darwin-historical-sketch-ja.html">ダーウィン「歴史的概略」（『種の起源』第 3 版の巻頭）を、日本語で読む</a> ・
+                <a href="newcomb-political-economy-ja.html">ニューカム『政治経済学原理』の利己心と慈善の所を、日本語で読む</a> ・
+                <a href="darwin-wallace-1858-ja.html">ダーウィンとウォレスのリンネ協会の論文（1858）を、日本語で読む</a> ・
+                <a href="herschel-quetelet-probabilities-ja.html">ハーシェル「ケトレーの確率論」（1850）を、日本語で読む</a> ・
+                <a href="mandeville-grumbling-hive-ja.html">マンデヴィル『蜂の寓話』（1714）の詩「ぶつぶつ言う蜂の巣」を、日本語で読む</a> ・
+                <a href="kolliker-darwinsche-schopfungstheorie-ja.html">ケリカー「ダーウィンの創造説について」（1864）を、日本語で読む</a> ・
+                <a href="helmholtz-erhaltung-der-kraft-ja.html">ヘルムホルツ『力の保存について』（1847）を、日本語で読む</a> ・
+                <a href="clausius-bewegende-kraft-der-warme-ja.html">クラウジウス「熱の動力について」（1850）を、日本語で読む</a> ・
+                <a href="rankine-mechanical-action-of-heat-ja.html">ランキン「熱の力学的作用について」（1850）を、日本語で読む</a> ・
+                <a href="kronig-theorie-der-gase-ja.html">クレーニッヒ「気体の理論の大要」（1856）を、日本語で読む</a> ・
+                <a href="clausius-art-der-bewegung-ja.html">クラウジウス「熱と呼ぶ運動の種類について」（1857）を、日本語で読む</a> ・
+                <a href="maxwell-dynamical-theory-of-gases-ja.html">マクスウェル「気体の動力学的理論の例解」（1860）を、日本語で読む</a> ・
+                <a href="buckle-history-of-civilization-ja.html">バックル『イギリス文明史』（1857）の、統計が示す規則性の所を、日本語で読む</a> ・
+                <a href="draper-intellectual-development-ja.html">ドレイパー『ヨーロッパの知的発展の歴史』（1863）の第 10 章「東方の信仰の時代」を、日本語で読む</a> ・
+                <a href="thomson-heat-ja.html">トムソン「熱」（『ブリタニカ百科事典』第 9 版・1880）を、日本語で読む</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
