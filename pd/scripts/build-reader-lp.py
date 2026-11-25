@@ -431,6 +431,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/cognitive-abilities/READER-cognitive-abilities.md",
+        ROOT / "scripts/reader-cognitive-abilities-template.html",
+        ROOT / "reader/cognitive-abilities.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/nondual/READER-nondual.md",
         ROOT / "scripts/reader-nondual-template.html",
         ROOT / "reader/nondual.html",

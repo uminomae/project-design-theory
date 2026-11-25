@@ -49,3 +49,4 @@
 | `summary-robustness/` | 公開ページを文脈の無い LLM に要約させ、要点が残るかを確かめた記録（#191）。README が入口 |
 | `developmental-stages/` | 「精神の発達段階とは」の調査ノート（pd#152）。段階ごとの不安・防衛・組織。pd#151 の足場 |
 | `intrinsic-motivation/` | 内発的動機が前提にしている人の像（pd#154）。調べの一巡目＝`SURVEY-00-first-pass.md`（Ryan & Deci 2000・Cook-Greuter 2013 の自己保護の段は本文照合） |
+| `cognitive-abilities/` | 「頭脳の能力は、どう分けられてきたか」（2026-11-25・工事中・noindex・#206 の M3）。調べの記録は `README.md`（読んだ原典の照合の状態・鍵の文・照らせなかったもの・空きとして見えたこと）、正本は `READER-cognitive-abilities.md`（`pd/reader/cognitive-abilities.html`） |
