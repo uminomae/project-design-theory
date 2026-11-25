@@ -199,18 +199,9 @@ export const TRANSLATIONS = {
     "section.direction.title": "今後の方向性",
     "section.direction.body":
       "本ページで固定した「射程・領域・Doing/Beingの二分」は基底（土台・骨格）です。以降の各ページは、この骨格の上に展開します。",
-    "repo.kesson": "欠損駆動思考",
-    "repo.creation": "創造とは",
     "repo.loveDrivenDev": "Love駆動開発と呼びたいもの β",
-    "repo.awareness": "意識とは",
     "repo.loveDrivenDevDesc":
       "何に駆られてプロジェクトを行うのか。人やプロジェクトを動かしているもの（駆動源）が何かを探す読み物",
-    "repo.kessonDesc":
-      "記号の上では 0 と出るところで、人は何を感じているのか。欠けている感じや違和感を駆動源にする、思考や精神の構えを見る探究",
-    "repo.creationDesc":
-      "物事が生まれるとき、どんな構造と過程をたどるのか。30 の分野の論を並べ、五つの段（場 → 波 → 縁 → 渦 → 束）で書く探究",
-    "repo.awarenessDesc":
-      "人は、何で世界を切り取っているのか。生き延びられるか（生存）と、つながっていられるか（信頼）の二つの信号から見る探究",
     "section.questions.label": "Questions",
     "section.questions.title": "問い",
     "section.questions.body":
@@ -406,18 +397,9 @@ export const TRANSLATIONS = {
     "section.direction.title": "Future Direction",
     "section.direction.body":
       'The "scope, domain, and Doing/Being dichotomy" established on this page is the foundation (base and skeleton). Each subsequent page develops upon this skeleton.',
-    "repo.kesson": "Kesson-Driven Thinking",
-    "repo.creation": "What Is Creation",
     "repo.loveDrivenDev": "What I Want to Call Love-Driven Development (beta)",
-    "repo.awareness": "What Is Consciousness",
     "repo.loveDrivenDevDesc":
       "What am I driven by when I carry out a project? A reader that looks for what moves people and projects (the driving source)",
-    "repo.kessonDesc":
-      "What do people sense where symbols read zero? An exploration of a stance of mind driven by a sense of lack or unease",
-    "repo.creationDesc":
-      "What structure and process does something follow when it comes into being? An exploration that sets theories from 30 fields side by side and writes them in five stages (Field → Wave → Edge → Vortex → Bundle)",
-    "repo.awarenessDesc":
-      "What do people cut the world with? An exploration through two signals: whether we can survive, and whether we can stay connected (trust)",
     "section.questions.label": "Questions",
     "section.questions.title": "Open Questions",
     "section.questions.body":
