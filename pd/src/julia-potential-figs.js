@@ -7,7 +7,7 @@
 // 8) 遡りの木（#jp-btree）：赤の一点から ±√ で一段ごとに二つに分かれる遡りを、木と平面に並べて一段ずつ
 // 9) ジュリア集合とは（#jp-about-julia、右下の小窓）：場面が一つずつ進むアニメに、その場面の字幕を重ねる
 // 10) 放って、散るものと残るもの（#jp-castfig、第五部）：たくさんの点をいっせいに前へ打ち、散る点・一点へ寄る点・縁に残る点を見る
-// 11) 見取り図（#jp-mapfig、第五部）：一つの c（届かない一点・軌跡の渦・縁・充填ジュリア集合・c・残る点が届く範囲）と、いろいろな c を重ねた円の雲（半径 2）を、ボタンで切り替えて描く
+// 11) 見取り図（#jp-mapfig、第五部）：一つの c（届かない一点・軌跡の渦・縁・充填ジュリア集合・c・残る点が届く範囲）と、いろいろな c を重ねた円の雲（半径 2 の線の内の横に長い雲）を、ボタンで切り替えて描く
 (function () {
   const figs = document.querySelectorAll(".jp-fig");
   if (!figs.length) return;
@@ -1101,7 +1101,7 @@
        縁が囲む内側（充填ジュリア集合）・c・残る点が届く範囲（原点から縁の点までのいちばん遠い距離。この c では 1.41）。
      いろいろな c：マンデルブロ集合から c を 400 取り、それぞれの縁（ジュリア集合の点）を重ねた円の雲（紺の点）と、
        それぞれの充填ジュリア集合を重ねた濃淡（薄い灰。下に敷く）を一枚に重ねる。一つの c の図と同じ色の分け方
-       どちらも半径 2 の円の中に収まり、2 に届くのは c = −2 の ±2 だけ。充填の重ねは重いので、描いたあとに作って描き直す。 */
+       どちらも半径 2 の円の中に収まる。縁の重ねは横に長く（実軸の向きで 2・虚軸の向きで 1.2 ほど）、円に触れるのは c = −2 の ±2 だけ。充填の重ねは重いので、描いたあとに作って描き直す。 */
   const mapFig = document.getElementById("jp-mapfig");
   let drawMapFig = () => {};
   if (mapFig) {
@@ -1189,7 +1189,8 @@
       ctx.beginPath(); ctx.arc(ox, oy, R2, 0, Math.PI * 2); ctx.stroke(); ctx.setLineDash([]);
       ctx.fillStyle = navy; for (const s of [-1, 1]) dot(ctx, ox + s * R2, oy, 3.5);
       ctx.globalAlpha = Math.max(alphaOf("many"), 0.12) === 0.12 ? 0.12 : 1;
-      label("私かもしれない円の雲（いろいろな c の縁・半径 2）", ox, oy - R2 - 12, navy, "center");
+      label("私かもしれない円の雲（いろいろな c の縁・横に長い）", ox, oy - R2 - 12, navy, "center");
+      label("半径 2：雲が出られない線（触れるのは ±2 だけ）", ox, oy + R2 + 12, navy, "center");
       // 一つの c の充填ジュリア集合：別の色で塗る
       if (!filledImg) filledImg = filledOne();
       ctx.globalAlpha = alphaOf("filled") === 1 ? 1 : 0.25; ctx.drawImage(filledImg, 0, 0);
