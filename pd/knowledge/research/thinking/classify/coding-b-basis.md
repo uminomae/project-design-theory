@@ -1,0 +1,78 @@
+# 二人目の符号化（coding-b.csv）の手がかり
+
+2026-11-25。二人目の符号化者（Claude・一人目とは独立）。材料は `../README.md` §1〜§11 の鍵の文だけ（「Claude の読み」の段は使わない）。1 を付けた升ごとに、手がかりの語句を一行ずつ。
+
+- R01 W1：いくつかの物事をひきくらべて調べる
+- R01 W2：③ 易で吉凶を判断する
+- R02 P3：あれこれと頭を働かせて判断する
+- R02 W2：頭を働かせて判断する
+- R02 W5：物事を、筋道を立てて思いはかる
+- R03 P1：the conversation which the soul holds with herself
+- R03 T1：conversation・just talking・unuttered conversation
+- R03 W2：affirming and denying・opinion
+- R03 W9：asking questions of herself and answering them
+- R04 P1：魂の四つの働き（理性・悟性・確信・影の知覚）
+- R04 T3：仮設から出発して原理へ上らない
+- R04 S2：幾何学のような技
+- R05 P1：that whereby the soul thinks and judges
+- R05 T2：the soul never thinks without an image・考えることが知覚に似ているなら
+- R05 W2：thinks and judges
+- R05 W6：知性は対象の形を受け取れるもの
+- R06 P2：we of ourselves are immediately conscious of it
+- R06 T2：that imagines also, and perceives
+- R06 W2：affirms, denies
+- R06 C1：immediately conscious of it
+- R06 C5：all that which so takes place in us
+- R07 P2：uniting representations in one consciousness
+- R07 T3：intuitions without concepts are blind・the faculty of rules
+- R07 T4：uniting representations
+- R07 W1：uniting representations in one consciousness
+- R07 W2：Thinking therefore is the same as judging
+- R08 P2：every form of consciousness
+- R08 W7：意識は継ぎ目でできておらず、流れる（p.239）・thought goes on
+- R08 C1：thinking ＝ every form of consciousness
+- R08 C5：for every form of consciousness indiscriminately
+- R09 P1：心をよぎるもの全部
+- R09 P3：頭の中にあるもの
+- R09 W7：心をよぎるもの・白昼夢も入る
+- R09 C5：心をよぎるもの全部（いちばん緩い意味）
+- R11 T5：何かの根拠に支えられた信念
+- R12 T5：in the light of the grounds that support it
+- R12 W1：present facts suggest other facts
+- R12 W4：consideration ... in the light of the grounds that support it
+- R12 S1：涼しくなった空気から雨を思う
+- R12 C2：Active, persistent, and careful consideration
+- R13 P3：Information processing theories
+- R13 T6：経験則（heuristics）が見込みのある所へ導く
+- R13 W3：problem solving as involving very selective search through problem spaces
+- R13 C3：problem solving（問題を解くための探索）
+- R14 P5：a part of the world ... is part of the cognitive process・Cognitive processes ain't (all) in the head
+- R14 T7：ノートを持ち歩く Otto の例
+- R15 T2：系 1 の働きは知覚の働きに似ている
+- R15 W1：associative
+- R15 C4：fast, automatic, effortless
+- R16 W5：serial
+- R16 C2：effortful, and deliberately controlled
+- R17 P4：オフラインの認知も体に根ざす
+- R17 P5：環境は認知の仕組みの一部・環境に預ける
+- R17 T7：指で数える・ベン図・紙と鉛筆の計算
+- R18 P3：mental representations of knowledge
+- R18 T4：mental representations ... an internal description
+- R18 W2：判断（What do you think about it?）
+- R18 W3：問題解決（Ann is sure to think of a solution）
+- R18 W8：systematic transformation of mental representations・can be manipulated
+- R18 S1：日常の使い方（信念・問題解決・判断・lost in thought）
+- R18 C3：often in service of goals
+- R18 C5：the grand superordinate of mental activities, which permeates all the others
+- R19 P3：mental representations
+- R19 T2：ideas, images
+- R19 T3：概念の形成・hypothetical elements of thought
+- R19 T4：symbolic（心の記号や表象の操作）
+- R19 W3：問題解決
+- R19 W7：白昼夢・自由連想
+- R19 W8：experienced or manipulated
+- R20 T1：language
+- R20 T2：perception
+- R20 T6：近道としての経験則（ヒューリスティック）（7.3）
+- R20 W2：judgment
+- R20 W3：problem solving
