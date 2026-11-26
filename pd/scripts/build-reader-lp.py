@@ -593,13 +593,6 @@ PAGES = [
         "flow",
     ),
     (
-        # 思考に関わる独立ページの入口（#206・pjdhiro 2026-11-26「思考関連のポータル的なものが欲しい」）
-        ROOT / "knowledge/research/reader-shelves/READER-shelf-thinking.md",
-        ROOT / "scripts/reader-shelf-thinking-template.html",
-        ROOT / "reader/shelf-thinking.html",
-        "flow",
-    ),
-    (
         # 能力のジャンルの入口（#206・pjdhiro 2026-11-26「能力という上位概念の下に思考がありますね」）
         ROOT / "knowledge/research/reader-shelves/READER-abilities.md",
         ROOT / "scripts/reader-abilities-template.html",

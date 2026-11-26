@@ -17,7 +17,7 @@
 | 読み物のページ | 91（区分に当てた 83・当てない 8） |
 | cs の分野 | 30（どれも一つ以上の区分に当てた） |
 
-区分に当てないページ：abilities・complex-plane・love-trajectory・shelf-love・shelf-mind・shelf-number-org・shelf-thinking・shelf-translations。並びや目次のページ（中身は呼ぶ先のページの側）と、pjdhiro の一年の記録（love-trajectory）。
+区分に当てないページ：abilities・complex-plane・love-trajectory・shelf-love・shelf-mind・shelf-number-org・shelf-translations。並びや目次のページ（中身は呼ぶ先のページの側）と、pjdhiro の一年の記録（love-trajectory）。
 
 区分の中に場所が無いもの：Love駆動開発そのもの（経営学・臨床心理学・仏教学に触れるが、どれかの区分の研究ではない）、cs の D30 の伝統知そのもの（TEK・メーティスなどの論は区分に入る）。
 
