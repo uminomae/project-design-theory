@@ -577,7 +577,8 @@ body.reader-flow .jump-back .jump-back__go {
     box-shadow: var(--glass-shadow-modal);
 }
 body.reader-flow .jump-back .jump-back__x { box-shadow: var(--glass-shadow-modal); background: var(--glass-bg-strong); }
-/* 呼び出しの棚（data-peek-dock）：右下、目次のボタンの上に縦に積む。目次がサイドバーの幅（.toc-fits）では右下の角へ。
+/* 呼び出しの棚（data-peek-dock）：右下、目次のボタンの上に縦に積む。目次がサイドバーの幅（.toc-fits）では、
+   目次が右の欄に立つので、空いた左の上（Menu と同じ高さの下）へ移す（2026-11-26・目次を右へ）。
    pjdhiro 2026-11-20「どこからでも呼び出せるのがいい。スクロール無しに読みたいものだから」 */
 body.reader-flow .peek-dock {
     position: fixed;
@@ -589,7 +590,7 @@ body.reader-flow .peek-dock {
     align-items: flex-end;
     gap: 6px;
 }
-body.reader-flow.toc-fits .peek-dock { bottom: 16px; }
+body.reader-flow.toc-fits .peek-dock { right: auto; left: 20px; bottom: auto; top: 92px; align-items: flex-start; }
 body.reader-flow .peek-dock__btn {
     display: inline-flex;
     align-items: center;

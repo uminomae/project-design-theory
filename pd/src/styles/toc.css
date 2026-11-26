@@ -1,4 +1,4 @@
-/* toc.css — 目次（garage 型: PC=常設サイドバー / モバイル=右下ボタン＋ドロワー）
+/* toc.css — 目次（garage 型: PC=右の常設サイドバー / モバイル=右下ボタン＋右のドロワー）
    読み物（body.reader-flow・reader-flow.js が作る）と HOME（body.home-toc・ui/home-toc.js が作る）で共用。
    reader-flow.css から移した（2026-11-08・HOME に目次を付けるため）。 */
 :is(body.reader-flow, body.home-toc) #toc-btn {
@@ -121,12 +121,14 @@
     line-height: 1.35;
 }
 :is(body.reader-flow, body.home-toc) #toc a.active .toc-sub2 { color: var(--navy); }
-/* PC: 左の余白に常設 TOC。本文の左端が目次の右端より右にあるとき（.toc-fits）だけにする。
+/* PC: 右の余白に常設 TOC。本文の右端が目次の左端より左にあるとき（.toc-fits）だけにする。
    幅だけで決めると、本文の幅しだいで目次が本文に重なる（2026-11-08・pjdhiro）。
-   .toc-fits は reader-flow.js / ui/home-toc.js が本文の位置を測って付け外しする */
+   右に置く（2026-11-26・付箋 i202611261132104un「目次を右に配置したい」）。モバイルのドロワーも右から出るので、PC と同じ側にそろう。
+   上は Menu（.top-bar・右上）の下から。Love駆動開発の右端の dev ボタンと重ならないよう、そのページは reader-ldd-dark.css で内へ寄せる。
+   .toc-fits は reader-flow.js / ui/home-toc.js が本文の位置を測って付け外しする（右 20px ＋ 幅 206px ＋ 間 16px = 242px。Love駆動開発は 262px） */
 :is(body.reader-flow, body.home-toc).toc-fits #toc {
-    left: 20px;
-    right: auto;
+    right: 20px;
+    left: auto;
     top: 92px;
     height: auto;
     max-height: calc(100vh - 116px);

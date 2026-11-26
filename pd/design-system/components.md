@@ -20,6 +20,7 @@
 - 軽量 modal pattern（`data-modal-open / data-modal-close` 属性駆動、pd 由来）
 - about-trigger（`i` button、pd と as で共有）
 - copy-target pattern（pd 由来、howto / snippet 用）
+- 目次（garage 型 TOC・`pd/src/styles/toc.css`）：PC は右の常設サイドバー、モバイルは右下「☰ 目次」＋右ドロワー。HOME と読み物が共用。決まりは `pd/docs/DESIGN-RULES.md` §13（2026-11-26 に左から右へ）
 
 ### 共通 dev utility
 

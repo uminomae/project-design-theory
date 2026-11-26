@@ -229,10 +229,13 @@
   }, { passive: true });
   spy();
 
-  /* ---- 本文の左に目次が収まるときだけ常設にする（toc.css の .toc-fits・2026-11-08） ---- */
+  /* ---- 本文の右に目次が収まるときだけ常設にする（toc.css の .toc-fits・2026-11-08。右へ 2026-11-26） ---- */
   var wrap = document.querySelector('.reader-wrap');
   function fit() {
-    document.body.classList.toggle('toc-fits', !!wrap && wrap.getBoundingClientRect().left >= 242);
+    /* 右 20px ＋ 幅 206px ＋ 間 16px = 242px。Love駆動開発（html.ldd-dark）は dev ボタンを避けて右 40px なので 262px */
+    var need = document.documentElement.classList.contains('ldd-dark') ? 262 : 242;
+    var room = wrap ? document.documentElement.clientWidth - wrap.getBoundingClientRect().right : 0;
+    document.body.classList.toggle('toc-fits', room >= need);
   }
   window.addEventListener('resize', fit, { passive: true });
   fit();
