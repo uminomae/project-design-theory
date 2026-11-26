@@ -18,7 +18,7 @@
 //            pd/src/styles/reader-flow.css は .tablewrap の表に min-width: 520px を付け、.tablefit で囲んだ表だけ幅に収める。
 //            だから、reader-flow の読み物で .tablefit に囲まれていない .tablewrap の数を数える。決まり：stance.md 2-7「表は横スクロールさせない」。
 //            数えているのは HTML の形で、画面の実際のはみ出しではない（画面での確かめは docs/TESTING.md「作りたいもの」）。
-//   workrefs 読み物（pd/reader/*.html・cs/reader/*.html）と入口（pd・cs・as・ks の index.html）から、作業の途中の Issue と、
+//   workrefs 読み物（pd/reader/*.html・cs/reader/*.html と、読み物を作り直す雛形 pd/scripts/*template*.html）と入口（pd・cs・as・ks の index.html）から、作業の途中の Issue と、
 //            探索・調べの記録を読者に指していないか。当たりにするのは、この repo の Issue へのリンク、読者に見える文字の
 //            「Issue #N」「（#N）」「（探索：#N）」「pd#N」のような番号、knowledge/research/ の記録（EXPLORE・SURVEY・RR・PLAN・
 //            ANALYSIS・REVIEW・DRAFT・LOG）の md へのリンク。HTML の注記（<!-- -->）・script・style は外して見る。
@@ -114,6 +114,7 @@ const results = {};
   const files = [
     ...ls('pd/reader', /\.html$/),
     ...ls('cs/reader', /\.html$/),
+    ...ls('pd/scripts', /template.*\.html$/),
     ...['pd/index.html', 'cs/index.html', 'as/index.html', 'ks/index.html'].filter((f) => existsSync(join(ROOT, f))),
   ];
   const ISSUE_LINK = /github\.com\/uminomae\/project-design-theory\/issues\/\d+/g;
