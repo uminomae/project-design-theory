@@ -521,6 +521,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/inseparable-abilities/READER-inseparable-abilities.md",
+        ROOT / "scripts/reader-inseparable-abilities-template.html",
+        ROOT / "reader/inseparable-abilities.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/soft-skills/READER-soft-skills.md",
         ROOT / "scripts/reader-soft-skills-template.html",
         ROOT / "reader/soft-skills.html",

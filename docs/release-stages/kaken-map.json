@@ -1,15 +1,15 @@
 {
  "counts": {
-  "pages": 98,
-  "mapped_pages": 83,
+  "pages": 99,
+  "mapped_pages": 84,
   "cs": 30,
   "sho": 295,
-  "touched": 89,
-  "page_only": 10,
+  "touched": 90,
+  "page_only": 11,
   "cs_only": 50,
   "both": 29,
   "chu": 66,
-  "chu_touched": 40,
+  "chu_touched": 41,
   "dai": 13,
   "dai_touched": 13,
   "unmapped_n": 15
@@ -40,7 +40,8 @@
         "reasoning",
         "thinking",
         "thinking-definitions",
-        "william-james-self-ja"
+        "william-james-self-ja",
+        "inseparable-abilities"
        ],
        "cs": [
         "D13"
@@ -460,7 +461,8 @@
         "nonaka-complement",
         "psychological-safety",
         "psychological-safety-en",
-        "three-and-seven"
+        "three-and-seven",
+        "inseparable-abilities"
        ],
        "cs": [
         "D07",
@@ -676,7 +678,8 @@
         "breath-filter",
         "cognitive-abilities",
         "decision-making",
-        "thinking-definitions"
+        "thinking-definitions",
+        "inseparable-abilities"
        ],
        "cs": [
         "D14",
@@ -2443,7 +2446,9 @@
       {
        "id": "59030",
        "name": "体育および身体教育学",
-       "pages": [],
+       "pages": [
+        "inseparable-abilities"
+       ],
        "cs": []
       },
       {
@@ -2814,7 +2819,8 @@
   "vibe-to-code": "Vibe to Code と並べて見る、pjdhiro のやり方",
   "weismann-significance-of-sexual-reproduction-ja": "ヴァイスマン「自然選択の理論における有性生殖の意味」（1886）を、日本語で読む",
   "william-james-self-ja": "ウィリアム・ジェームズの「I と Me」を、原典で読む",
-  "zen-circle-hs": "禅の円を、高校の数学で読む"
+  "zen-circle-hs": "禅の円を、高校の数学で読む",
+  "inseparable-abilities": "思考・心理・身体知が分けられないところ"
  },
  "cs": {
   "D01": "数学",
