@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/man.html を直接編集しないでください。
+  正本:   knowledge/research/man/READER-man.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 人類の man（説明書）を集めるガイドの独立ページ（pjdhiro 2026-11-26「このような記述をまとめて、人類の man として呼び出せるようなネタがいいな」「ガイドのような独立ページを作って、そこからリンクさせるのがいいと思うけど」・DESIGN-INTENT G4・stance 1-4）
+  - 各 man から定義と解説のページへ、そのページからこのページへ戻す
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「人類の man」です。数学の関数を、man ページの形の説明書で並べます。説明書は <pre class="help-doc"> の文字だけで書き、一件ずつで意味が通ります。行の頭の〔整理〕は、このサイトが数学の事実を並べ直した・読んだ行で、印の無い行は教科書やライブラリの説明書で確かめられる数学の事実です。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>人類の man | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/man.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="数学の関数や式を、プログラムの説明書（man ページ）の形で並べたページ。一つの関数ごとに、何を受け取り何を返すか・定義・何をしているか・式に書かれずに置かれている既定値・例・使い所・注意・関連を書き、詳しく解説するページへつなぐ。最初の一件は exp(z)（複素数の指数関数）。〔整理〕の印で、数学の事実とこのサイトの整理を分ける。">
+    <meta property="og:title" content="人類の man">
+    <meta property="og:description" content="数学の関数や式を、プログラムの説明書（man ページ）の形で並べたページ。一つの関数ごとに、何を受け取り何を返すか・定義・何をしているか・式に書かれずに置かれている既定値・例・使い所・注意・関連を書き、詳しく解説するページへつなぐ。最初の一件は exp(z)（複素数の指数関数）。〔整理〕の印で、数学の事実とこのサイトの整理を分ける。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/man.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="人類の man">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-26">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "人類の man",
+          "description": "数学の関数や式を、プログラムの説明書（man ページ）の形で並べたページ。一つの関数ごとに、何を受け取り何を返すか・定義・何をしているか・式に書かれずに置かれている既定値・例・使い所・注意・関連を書き、詳しく解説するページへつなぐ。最初の一件は exp(z)（複素数の指数関数）。〔整理〕の印で、数学の事実とこのサイトの整理を分ける。",
+          "keywords": "man ページ, 説明書, help, exp, 指数関数, 複素数, オイラーの式, オイラーの等式, 既定値, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/man.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/man.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-26",
+          "dateModified": "<!--UPDATED-->",
+                    "about": [{"@type": "Thing", "name": "指数関数"}, {"@type": "Thing", "name": "複素数"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「人類の man」です（工事中）。数学の関数や式を、プログラムの説明書（man ページ）の形で並べたページ。一つの関数ごとに、何を受け取り何を返すか・定義・何をしているか・式に書かれずに置かれている既定値・例・使い所・注意・関連を書き、詳しく解説するページへつなぐ。最初の一件は exp(z)（複素数の指数関数）。〔整理〕の印で、数学の事実とこのサイトの整理を分ける。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                工事中のページです。説明書の文は AI（Claude）が書き、数は計算で確かめています。
+            </div>
+            <header class="reader-hero">
+                <h1>人類の man</h1>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/man/READER-man.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="complex-plane.html">複素平面で考える</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script src="../src/reader-run.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

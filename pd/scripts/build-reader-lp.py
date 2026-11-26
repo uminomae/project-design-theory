@@ -606,6 +606,13 @@ PAGES = [
         ROOT / "reader/abilities.html",
         "flow",
     ),
+    (
+        # 人類の man（説明書）を集めるガイド（DESIGN-INTENT G4・pjdhiro 2026-11-26「ガイドのような独立ページを作って、そこからリンクさせるのがいいと思うけど」）
+        ROOT / "knowledge/research/man/READER-man.md",
+        ROOT / "scripts/reader-man-template.html",
+        ROOT / "reader/man.html",
+        "flow",
+    ),
 ]
 
 # スクリーナーのデータ（正本 JSON）。出力 HTML 名 → JSON。正本 MD の <!--SCREENER--> に

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/man.html を直接編集しないでください。
+  正本:   knowledge/research/man/READER-man.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 人類の man（説明書）を集めるガイドの独立ページ（pjdhiro 2026-11-26「このような記述をまとめて、人類の man として呼び出せるようなネタがいいな」「ガイドのような独立ページを作って、そこからリンクさせるのがいいと思うけど」・DESIGN-INTENT G4・stance 1-4）
+  - 各 man から定義と解説のページへ、そのページからこのページへ戻す
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「人類の man」です。数学の関数を、man ページの形の説明書で並べます。説明書は <pre class="help-doc"> の文字だけで書き、一件ずつで意味が通ります。行の頭の〔整理〕は、このサイトが数学の事実を並べ直した・読んだ行で、印の無い行は教科書やライブラリの説明書で確かめられる数学の事実です。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>人類の man | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/man.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="数学の関数や式を、プログラムの説明書（man ページ）の形で並べたページ。一つの関数ごとに、何を受け取り何を返すか・定義・何をしているか・式に書かれずに置かれている既定値・例・使い所・注意・関連を書き、詳しく解説するページへつなぐ。最初の一件は exp(z)（複素数の指数関数）。〔整理〕の印で、数学の事実とこのサイトの整理を分ける。">
+    <meta property="og:title" content="人類の man">
+    <meta property="og:description" content="数学の関数や式を、プログラムの説明書（man ページ）の形で並べたページ。一つの関数ごとに、何を受け取り何を返すか・定義・何をしているか・式に書かれずに置かれている既定値・例・使い所・注意・関連を書き、詳しく解説するページへつなぐ。最初の一件は exp(z)（複素数の指数関数）。〔整理〕の印で、数学の事実とこのサイトの整理を分ける。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/man.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="人類の man">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-26">
+    <meta property="article:modified_time" content="2026-11-26">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "人類の man",
+          "description": "数学の関数や式を、プログラムの説明書（man ページ）の形で並べたページ。一つの関数ごとに、何を受け取り何を返すか・定義・何をしているか・式に書かれずに置かれている既定値・例・使い所・注意・関連を書き、詳しく解説するページへつなぐ。最初の一件は exp(z)（複素数の指数関数）。〔整理〕の印で、数学の事実とこのサイトの整理を分ける。",
+          "keywords": "man ページ, 説明書, help, exp, 指数関数, 複素数, オイラーの式, オイラーの等式, 既定値, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/man.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/man.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-26",
+          "dateModified": "2026-11-26",
+                    "about": [{"@type": "Thing", "name": "指数関数"}, {"@type": "Thing", "name": "複素数"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「人類の man」です（工事中）。数学の関数や式を、プログラムの説明書（man ページ）の形で並べたページ。一つの関数ごとに、何を受け取り何を返すか・定義・何をしているか・式に書かれずに置かれている既定値・例・使い所・注意・関連を書き、詳しく解説するページへつなぐ。最初の一件は exp(z)（複素数の指数関数）。〔整理〕の印で、数学の事実とこのサイトの整理を分ける。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                工事中のページです。説明書の文は AI（Claude）が書き、数は計算で確かめています。
+            </div>
+            <header class="reader-hero">
+                <h1>人類の man</h1>
+                <p class="reader-meta">
+                    最終更新: 2026-11-26 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/man/READER-man.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<div class="reader-lead glow-card" id="man-gist"><span class="reader-lead__label">ざっくりいうと</span>
+<p>数学の関数や式を、プログラムの説明書（man ページ）の形で書いて並べたページです。一つの関数ごとに、何を受け取って何を返すか、定義、式に書かれずに置かれている既定値、例、使い所、注意、関連を書き、詳しく解説するページへつなぎます。</p>
+<p>いま書いてあるのは exp(z) の一件です。</p>
+</div>
+
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p>このページは、pjdhiro の頼みに、Claude が調べて答える形で作っています。読み物「<a href="euler-unfolded.html#eo-help">オイラーの等式が、たたんだもの</a>」の巻末で、Claude は exp という関数の説明書に、ページで開いたものを書き足しました。その説明書を読んで、pjdhiro はこう言いました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>このような記述をまとめて、人類の man として呼び出せるようなネタがいいな。ユーモアだけど、LLM には良いのじゃ？</p>
+</blockquote>
+<p>man は、コンピュータで「man exp」のように打つと、その命令や関数の説明書が出てくる仕組みです。このページは、数学の関数を、その形で引けるように並べます。読む人は人でも、AI（LLM）でもかまいません。説明書は文字だけで書き、ほかを読まなくても一件ずつで意味が通るようにしています。</p>
+<div class="reader-lead"><span class="reader-lead__label">構成</span>
+<ul class="reader-lead__list">
+<li><b><a href="#man-howto">説明書の読み方</a></b>：見出しの並びと、〔整理〕の印</li>
+<li><b><a href="#man-exp">exp(z)</a></b>：複素数 z を受け取り、e の z 乗を返す</li>
+<li><b><a href="#man-todo">まだ書いていない説明書</a></b>：工事中</li>
+</ul>
+</div>
+
+<details class="sec" id="説明書の読み方" open><summary>説明書の読み方</summary><div class="secbody">
+
+
+<p><a id="man-howto"></a>どの説明書も、次の見出しを、この順で使います。関数によって要らない見出しは省き、その関数にだけ要る見出し（exp の「周期」など）は足します。</p>
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>見出し</th>
+<th>書くこと</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>一行目</td>
+<td>関数の名前と、何を受け取り、何を返すか</td>
+</tr>
+<tr>
+<td>定義</td>
+<td>その関数を決める式や決まり</td>
+</tr>
+<tr>
+<td>何をしているか</td>
+<td>返した値が、平面や数直線の上で何をするか</td>
+</tr>
+<tr>
+<td>前提（省略されている既定値）</td>
+<td>式に書かれずに置かれているもの。平面の上だけで使う限り書かなくても困らないので、ふつうの説明書には書かれにくいもの</td>
+</tr>
+<tr>
+<td>例</td>
+<td>入れる値と、返る値</td>
+</tr>
+<tr>
+<td>使い所</td>
+<td>その関数が使われてきた場面</td>
+</tr>
+<tr>
+<td>注意</td>
+<td>取り違えやすい所</td>
+</tr>
+<tr>
+<td>関連</td>
+<td>一緒に引くとよい関数</td>
+</tr>
+<tr>
+<td>詳しく読むページ</td>
+<td>このサイトの中で、その関数を解説するページ</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>行の頭に〔整理〕と付けた行は、このサイトが数学の事実を並べ直したり、読んだりした行です。中の式や数は計算で確かめられますが、「省略されている」「こう読める」という言い方は、このサイトの見方です。見出しに付けた〔整理〕は、その見出しの立て方がこのサイトの整理であることを示し、下の行には及びません。印の無い行は、教科書やライブラリの説明書で確かめられる数学の事実です。</p>
+</div></details><details class="sec" id="expz" open><summary>exp(z)</summary><div class="secbody">
+
+
+<p><a id="man-exp"></a>複素数の指数関数です。オイラーの等式 e<sup>iπ</sup> + 1 = 0 は、この関数に iπ を入れると −1 が返る、という一行にあたります。</p>
+<pre class="help-doc"><b>exp(z)</b>
+  複素数 z を受け取り、e の z 乗を返す。
+
+  定義
+    e ≈ 2.71828。実数 x では、e^x は (1 + x/n)^n の n をどこまでも大きくした先の値。
+    複素数 z でも、同じ式 (1 + z/n)^n の行き着く先として決められる。
+
+  複素数のとき
+    z = a + ib（a と b は実数）なら、e^z = e^a (cos b + i sin b)。
+    e^a が大きさ、cos b + i sin b が大きさ 1 の向き（角度 b が位相）。
+
+  何をしているか
+    返した値をほかの数に掛けると、平面の全体を、原点を中心に、大きさ e^a 倍に伸ばし、角度 b だけ左回りに回す。
+    a = 0 なら、伸ばさずに回すだけ（値は半径 1 の円の上を進む）。
+
+〔整理〕なぜ底が e か
+    底を 1 でない正の数 c にすると、c^(iθ) = e^(iθ ln c) は、半径 1 の円の上を速さ |ln c| で進む
+    （c < 1 なら逆回り。c = 2 なら速さ約 0.69）。
+    左回りに速さがちょうど 1 になり、θ がそのまま円の上の道のりになるのは、底が e のときだけ。
+    微分しても形が変わらない（e^x を微分すると e^x）のも、底が e のときだけ。
+
+〔整理〕前提（省略されている既定値）
+〔整理〕  回す軸：平面に直交する奥行きの向き。複素数には軸の置き場がなく、式に出てこない。
+    掛ける順番：複素数の掛け算は、順番を入れ替えても結果が同じ。
+〔整理〕  だから、順番は式に出てこない。
+    立体で回すときは、軸を長さ 1 の純虚の四元数 u（u² = −1）で書き、q = e^(uθ/2) で、
+    純虚の四元数 v（位置）を前と後ろから挟む（v' = q v q⁻¹）。
+    そこでは掛ける順番を入れ替えると結果が変わる。
+    回転そのものは θ = 2π の一周で戻るが、回す数 q は一周で −1、二周（θ = 4π）でやっと 1 に戻る。
+
+  周期
+    e^(z + 2πi) = e^z。虚の向きに 2π 進むごとに、同じ値に戻る。
+〔整理〕  回った量で読むと：0 周、1 周、2 周……は、どれも同じ点に来る。
+    だから逆の関数 log は、何周したかの分だけ 2πi ずつ違う値が出て、一つに決まらない。
+
+  例
+    exp(0) = 1　　exp(iπ) = −1　　exp(2πi) = 1
+    exp(iπ) は半周、exp(2πi) は一周。肩（指数）を半分にすると、一周が半周になる。
+〔整理〕  オイラーの等式 e^(iπ) + 1 = 0 は、exp(iπ) = −1 の −1 を左へ移して、1 と 0 も式に入れた形。
+
+  返さないもの
+    e^z は、どの z でも 0 にならない（e^z × e^(−z) = 1 なので）。値はいつも有限。
+
+〔整理〕球の上で（ステレオ投影）
+    半径 1 の球を、赤道の高さの平面に置く。北極と平面の点を結ぶ線が球と交わる所に写すと、
+    0 は南極に、半径 1 の円は赤道に来る。平面に足す一点 ∞ が、北極に来る。
+    a = 0 の値（半径 1 の円）は赤道を回る。a を負の向きに限りなく大きくすると（a → −∞）e^z は 0（南極）へ、
+    正の向きに限りなく大きくすると（a → +∞）∞（北極）へ近づくが、どちらにも着かない。
+
+  使い所
+    微分方程式（増え方が今の量に比例するもの）、確率と統計（正規分布）。
+    波、交流回路（フェーザ）、信号処理（フーリエ変換）、量子の時間の変化、立体の回転（四元数へ広げた exp）。
+
+  注意
+    複素数では、(e^z)^w = e^(zw) がいつも成り立つとは限らない。
+    たとえば e^(2πi) = 1 なので、1 の 1/2 乗を (e^(2πi))^(1/2) と読むと e^(πi) = −1 になり、
+    ふつうに決める値（主値）の 1 と食い違う。
+    多くのライブラリの複素数の log は、何周したかを一つに決めた値（主値。虚の部分が −π より大きく π 以下）を返す。
+    符号付きのゼロを区別するライブラリでは、負の実軸の下側から来ると −π になる。log 0 は定まらない。
+    実数の exp(x) は、倍精度の数では x が約 709.78 を超えると大きすぎて表せず、無限大になる。
+
+  関連
+    log（逆の関数）、sin、cos、べき乗、四元数の回転 q v q⁻¹</pre>
+
+<p>詳しく読むページ：</p>
+
+<ul>
+<li><a href="euler-formula.html">オイラーの式</a>：e<sup>iθ</sup> が、半径 1 の円の上を道のり θ だけ回った点であることを、中学の数学で読める言葉で解説します（定義と解説）。</li>
+<li><a href="euler-unfolded.html">オイラーの等式が、たたんだもの</a>：等式を地球儀と船の地図の絵で開き、前提（回す軸・掛ける順番・二周で戻る回し手）と球の上の見方を確かめます。この説明書の〔整理〕の行の多くは、ここから来ています。</li>
+<li><a href="angle-rotation.html">三角関数から複素平面まで、回転を扱うための角度の話だった</a>：角度を回った量として読む、おさらいです。</li>
+<li><a href="zen-circle-hs.html">禅の円を、高校の数学で読む</a>：底が e のときだけ速さ 1 で回ることと、球の上の見方を、高校の数学だけで追います。</li>
+</ul>
+<details class="acc"><summary>詳しく — 説明書の数を、その場で確かめるコード</summary>
+
+<p>上の説明書の数のうち、計算で確かめられるものを、JavaScript で確かめます。書き換えて「実行」を押すと、別の値でも試せます。</p>
+<div class="code-run">
+
+<pre><code>// 複素数 a + ib を [a, b] の並びで書き、e^(a+ib) = e^a (cos b + i sin b) を返す
+function exp([a, b]) {
+  return [Math.exp(a) * Math.cos(b), Math.exp(a) * Math.sin(b)];
+}
+const r = (v) =&gt; v.map((x) =&gt; +x.toFixed(6) + 0); // + 0 で −0 を 0 にする
+
+console.log(&quot;exp(iπ)  =&quot;, r(exp([0, Math.PI])));      // 半周で −1
+console.log(&quot;exp(2πi) =&quot;, r(exp([0, 2 * Math.PI])));  // 一周で 1
+
+// 周期：z と z + 2πi は同じ値
+console.log(r(exp([0.3, 1.2])), r(exp([0.3, 1.2 + 2 * Math.PI])));
+
+// 底 c のとき、円の上を進む速さは ln c（負なら逆回り）
+for (const c of [2, Math.E, 10, 0.5]) {
+  console.log(&quot;底&quot;, +c.toFixed(4), &quot;の速さ&quot;, +Math.log(c).toFixed(4));
+}
+
+// (1 + z/n)^n は、n を大きくすると e^z に近づく（z = iπ）
+function mul([a, b], [c, d]) { return [a * c - b * d, a * d + b * c]; }
+for (const n of [4, 16, 100, 10000]) {
+  let p = [1, 0];
+  for (let k = 0; k &lt; n; k++) p = mul(p, [1, Math.PI / n]);
+  console.log(&quot;n =&quot;, n, r(p));
+}
+
+// 倍精度で表せる exp(x) の境目
+console.log(&quot;境目の x =&quot;, Math.log(Number.MAX_VALUE), Math.exp(709.79));</code></pre>
+</div>
+
+</details>
+
+</div></details><details class="sec" id="まだ書いていない説明書" open><summary>まだ書いていない説明書</summary><div class="secbody">
+
+
+<p><a id="man-todo"></a>次の説明書は、工事中です。</p>
+<ul>
+<li>log(z)（工事中）：exp の逆の関数。何周したかの分だけ値が開く。</li>
+<li>z ↦ z² + c のくり返し（工事中）：ジュリア集合を描く式。読み物「<a href="julia-potential.html">起業家の漸化式と、ジュリア集合</a>」が使っている。</li>
+<li>q v q⁻¹（工事中）：四元数で立体を回す式。</li>
+</ul>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="complex-plane.html">複素平面で考える</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script src="../src/reader-run.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
