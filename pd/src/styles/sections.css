@@ -280,22 +280,25 @@
     opacity: 0.8;
 }
 
-/* === Doing のカードの項目のサブセット。カードの外、そのカードの真下の列に置く（2026-11-26 home-rethink） === */
-.sub-grid {
-    margin-top: 1.5rem;
-    align-items: start;
+/* === やること：行動原理を全幅、その下に環境適応とコミュニケーション（二列分）、
+   その下にサブセット（経営学・記号情報処理・感情処理）を三列で（2026-11-26 home-rethink） === */
+.doing-grid .doing-principles {
+    grid-column: 1 / -1;
 }
 
-.sub-col {
+.doing-grid .doing-comm {
+    grid-column: 2 / 4;
+}
+
+.doing-grid .sub-col {
     min-width: 0;
-    display: grid;
-    gap: 1.5rem;
-    padding: 0 1rem;
+    align-self: start;
+    padding: 0.5rem 1rem 0;
 }
 
 @media (max-width: 768px) {
-    .sub-col:empty {
-        display: none;
+    .doing-grid .doing-comm {
+        grid-column: auto;
     }
 }
 
