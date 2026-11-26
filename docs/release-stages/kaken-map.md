@@ -14,7 +14,7 @@
 | うち読み物のページだけ・cs だけ・両方 | 10・50・29 |
 | 中区分 | 触れている 40 / 66 |
 | 大区分 | 触れている 13 / 13（触れていない：なし） |
-| 読み物のページ | 96（区分に当てた 81・当てない 15） |
+| 読み物のページ | 97（区分に当てた 82・当てない 15） |
 | cs の分野 | 30（どれも一つ以上の区分に当てた） |
 
 区分に当てないページ：about・abilities・competency-frameworks・complex-plane・kaken-map・kokoro-scale-map・love-trajectory・man・shelf-love・shelf-mind・shelf-number・shelf-org・shelf-self・shelf-translations・site-evaluation。並びや目次のページ（中身は呼ぶ先のページの側）と、このサイトを測った結果のページと、pjdhiro の一年の記録（love-trajectory）。
@@ -35,10 +35,10 @@
 | 4 地理学、文化人類学、民俗学およびその関連分野 | 1 / 6 | ○ 04010 地理学<br>○ 04020 人文地理学<br>● 04030 文化人類学および民俗学（D24・D25・D26・D28・D30）<br>○ 70030 地域研究<br>○ 70040 観光学<br>○ 70050 ジェンダー |
 | 5 法学およびその関連分野 | 2 / 4 | ○ 05010 基礎法学および刑事法学<br>● 05020 公法学および国際公法学（D20）<br>● 05030 民事法学および国際私法学（D20）<br>○ 05040 社会法学および新領域法学 |
 | 6 政治学およびその関連分野 | 2 / 4 | ○ 70030 地域研究<br>○ 70050 ジェンダー<br>● 06010 政治学（D16）<br>● 06020 国際関係論（D20） |
-| 7 経済学、経営学およびその関連分野 | 4 / 10 | ○ 70040 観光学<br>● 07010 理論経済学および経済学史（mandeville-grumbling-hive-ja・newcomb-political-economy-ja・D21）<br>○ 07020 経済政策<br>● 07030 公共経済および労働経済（capacity-after-ai・emerging-abilities）<br>● 07040 金融およびファイナンス（D21）<br>○ 07050 経済史<br>● 07060 経営学（business-design-syllabus・decision-making・influences-management・julia-potential・love-driven-dev・love-driven-dev-en・management-drivers・mintzberg-schools・nonaka-complement・psychological-safety・psychological-safety-en・three-and-seven・D07・D22）<br>○ 07070 商学<br>○ 07080 会計学<br>○ 07090 経済統計および経営情報 |
+| 7 経済学、経営学およびその関連分野 | 4 / 10 | ○ 70040 観光学<br>● 07010 理論経済学および経済学史（mandeville-grumbling-hive-ja・newcomb-political-economy-ja・D21）<br>○ 07020 経済政策<br>● 07030 公共経済および労働経済（capacity-after-ai・emerging-abilities・soft-skills）<br>● 07040 金融およびファイナンス（D21）<br>○ 07050 経済史<br>● 07060 経営学（business-design-syllabus・decision-making・influences-management・julia-potential・love-driven-dev・love-driven-dev-en・management-drivers・mintzberg-schools・nonaka-complement・psychological-safety・psychological-safety-en・three-and-seven・D07・D22）<br>○ 07070 商学<br>○ 07080 会計学<br>○ 07090 経済統計および経営情報 |
 | 8 社会学およびその関連分野 | 1 / 5 | ○ 70040 観光学<br>○ 70050 ジェンダー<br>● 08010 社会学（quetelet-lettres-probabilites-ja・D18）<br>○ 08020 社会福祉学<br>○ 08030 家政学および生活科学 |
 | 9 教育学およびその関連分野 | 4 / 10 | ○ 70010 日本語教育<br>○ 70020 外国語教育<br>● 09010 教育学（creative-thinking・emerging-abilities・D13）<br>○ 09020 教育社会学<br>● 09030 子ども学および保育学（D23）<br>● 09040 教科教育学および初等中等教育学（angle-rotation・rotation-multiplication・zen-circle-hs）<br>● 09050 高等教育学（business-design-syllabus）<br>○ 09060 特別支援教育<br>○ 09070 教育工学<br>○ 09080 科学教育 |
-| 10 心理学およびその関連分野 | 5 / 5 | ● 10010 社会心理学（anshin・empathy・intrinsic-motivation・psychological-safety・psychological-safety-en・D14・D22）<br>● 10020 教育心理学（capacity-after-ai・cognitive-abilities・creative-thinking・developmental-stages・emerging-abilities・influences-psychology・intrinsic-motivation・metacognition・personality・stages-defense・stages-screener・D23）<br>● 10030 臨床心理学（anxiety・defense-mechanisms・empathy・influences-psychology・love-driven-dev・love-driven-dev-en・personality・shikan・stages-defense・stages-screener・via-vulnerability・D14・D15）<br>● 10040 実験心理学（breath-filter・cognitive-abilities・decision-making・thinking-definitions・D14・D26）<br>● 80030 認知科学（creative-thinking・empathy・fundamental-theorem-of-algebra-analogy・metacognition・reasoning・thinking・D08・D14） |
+| 10 心理学およびその関連分野 | 5 / 5 | ● 10010 社会心理学（anshin・empathy・intrinsic-motivation・psychological-safety・psychological-safety-en・D14・D22）<br>● 10020 教育心理学（capacity-after-ai・cognitive-abilities・creative-thinking・developmental-stages・emerging-abilities・influences-psychology・intrinsic-motivation・metacognition・personality・soft-skills・stages-defense・stages-screener・D23）<br>● 10030 臨床心理学（anxiety・defense-mechanisms・empathy・influences-psychology・love-driven-dev・love-driven-dev-en・personality・shikan・stages-defense・stages-screener・via-vulnerability・D14・D15）<br>● 10040 実験心理学（breath-filter・cognitive-abilities・decision-making・thinking-definitions・D14・D26）<br>● 80030 認知科学（creative-thinking・empathy・fundamental-theorem-of-algebra-analogy・metacognition・reasoning・thinking・D08・D14） |
 
 ### 大区分 B（12 / 20）
 

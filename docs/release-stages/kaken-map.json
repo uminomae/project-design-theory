@@ -1,7 +1,7 @@
 {
  "counts": {
-  "pages": 96,
-  "mapped_pages": 81,
+  "pages": 97,
+  "mapped_pages": 82,
   "cs": 30,
   "sho": 295,
   "touched": 89,
@@ -425,7 +425,8 @@
        "name": "公共経済および労働経済",
        "pages": [
         "capacity-after-ai",
-        "emerging-abilities"
+        "emerging-abilities",
+        "soft-skills"
        ],
        "cs": []
       },
@@ -636,6 +637,7 @@
         "intrinsic-motivation",
         "metacognition",
         "personality",
+        "soft-skills",
         "stages-defense",
         "stages-screener"
        ],
@@ -2795,6 +2797,7 @@
   "reasoning": "推論とは",
   "rotation-multiplication": "回転の掛け算",
   "shikan": "止観とは",
+  "soft-skills": "ソフトスキル・非認知能力とは",
   "stages-defense": "発達段階と心理的防衛機制",
   "stages-screener": "ものの見方の広さスクリーナー — 視座・メタ認知・インクルーシブを16問で確かめる",
   "subtraction-kinds": "いろんな引き算",
