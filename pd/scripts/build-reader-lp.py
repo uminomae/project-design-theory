@@ -613,6 +613,13 @@ PAGES = [
         ROOT / "reader/man.html",
         "flow",
     ),
+    (
+        # 公的な能力の枠組みの項目にページを当てた照合の表（docs/RELEASE-STAGES.md 3.1 の段 1・pjdhiro 2026-11-26）
+        ROOT / "knowledge/research/competency-frameworks/READER-competency-frameworks.md",
+        ROOT / "scripts/reader-competency-frameworks-template.html",
+        ROOT / "reader/competency-frameworks.html",
+        "flow",
+    ),
 ]
 
 # スクリーナーのデータ（正本 JSON）。出力 HTML 名 → JSON。正本 MD の <!--SCREENER--> に
