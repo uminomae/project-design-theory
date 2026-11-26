@@ -626,3 +626,24 @@ body.reader-flow .peek-dock--in-toc .peek-dock__btn { box-shadow: none; }
 /* ページ内リンクで段の中のリンクに着いたとき、少しのあいだ色を付ける（reader-flow.js の jumpTo・2026-11-25） */
 @keyframes jump-hit { from { background: rgba(214, 170, 60, .45); } to { background: transparent; } }
 body.reader-flow a.jump-hit { animation: jump-hit 2.4s ease-out; border-radius: 3px; }
+
+/* 五列の照合の表（competency-frameworks）：狭い幅では一行を一枚に積み、各欄の頭に列の名を出す（stance 2-7「表は横スクロールさせない」・三列以上は行ごとに積む。2026-11-26） */
+@media (max-width: 600px) {
+    body.reader-flow .reader-article .tablefit.cf-stack thead { display: none; }
+    body.reader-flow .reader-article .tablefit.cf-stack table,
+    body.reader-flow .reader-article .tablefit.cf-stack tbody,
+    body.reader-flow .reader-article .tablefit.cf-stack tr,
+    body.reader-flow .reader-article .tablefit.cf-stack td { display: block; width: auto; }
+    body.reader-flow .reader-article .tablefit.cf-stack tr { border-bottom: 1px solid var(--glass-border-soft); padding: 10px 12px; }
+    body.reader-flow .reader-article .tablefit.cf-stack tbody tr:last-child { border-bottom: none; }
+    body.reader-flow .reader-article .tablefit.cf-stack td { border-bottom: none; padding: 2px 0; }
+    body.reader-flow .reader-article .tablefit.cf-stack td:first-child { width: auto; font-weight: 500; }
+    body.reader-flow .reader-article .tablefit.cf-stack td:empty { display: none; }
+    body.reader-flow .reader-article .tablefit.cf-stack td:nth-child(n+2)::before {
+        display: block; font-size: 0.72rem; color: var(--navy); opacity: 0.7;
+    }
+    body.reader-flow .reader-article .tablefit.cf-stack td:nth-child(2)::before { content: "判定と深さ"; }
+    body.reader-flow .reader-article .tablefit.cf-stack td:nth-child(3)::before { content: "当たるページ"; }
+    body.reader-flow .reader-article .tablefit.cf-stack td:nth-child(4)::before { content: "根拠（ページの本文から）"; }
+    body.reader-flow .reader-article .tablefit.cf-stack td:nth-child(5)::before { content: "注"; }
+}
