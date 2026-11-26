@@ -212,6 +212,8 @@
 </table></div>
 </div>
 
+<figure class="glow-card reader-figure"><svg viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:40rem;width:100%" aria-label="三つの世界と二つの通訳。左に地球儀。てっぺんの北極が ∞ で明かり、底の南極が 0、真ん中の太い楕円が赤道。真ん中に平面。真ん中の点が 0、太い円が半径 1 の円で、∞ は描かれない。右に船の地図。真ん中の横の太い線が赤道にあたり、上のはしと下のはしには届かない。地球儀と平面のあいだはステレオ投影、平面と船の地図のあいだは e と log が訳す。"><defs><marker id="eo-w3-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--mid)"/></marker></defs><g font-size="12"><circle cx="95" cy="118" r="62" fill="var(--white)" fill-opacity="0.6" stroke="var(--ink)" stroke-width="1.4"/><ellipse cx="95" cy="118" rx="62" ry="16" fill="none" stroke="var(--gold)" stroke-width="2.2"/><circle cx="95" cy="56" r="5" fill="var(--coral)"/><circle cx="95" cy="180" r="4.5" fill="var(--navy)"/><text x="104" y="50" fill="var(--coral)">北極 ∞（明かり）</text><text x="104" y="194" fill="var(--navy)">南極 0</text><text x="95" y="22" font-size="14" text-anchor="middle" fill="var(--ink)">地球儀</text><rect x="248" y="58" width="144" height="120" rx="4" fill="var(--white)" fill-opacity="0.6" stroke="var(--ink)" stroke-width="1.4"/><circle cx="320" cy="118" r="30" fill="none" stroke="var(--gold)" stroke-width="2.2"/><circle cx="320" cy="118" r="4" fill="var(--navy)"/><text x="327" y="114" fill="var(--navy)">0</text><text x="320" y="196" text-anchor="middle" fill="var(--mute)">∞ は描かれない</text><text x="320" y="22" font-size="14" text-anchor="middle" fill="var(--ink)">平面</text><rect x="478" y="48" width="140" height="140" fill="var(--white)" fill-opacity="0.6" stroke="var(--ink)" stroke-width="1.4" stroke-dasharray="4 3"/><line x1="478" y1="118" x2="618" y2="118" stroke="var(--gold)" stroke-width="2.2"/><line x1="513" y1="48" x2="513" y2="188" stroke="var(--mute)" stroke-width="0.8"/><line x1="548" y1="48" x2="548" y2="188" stroke="var(--mute)" stroke-width="0.8"/><line x1="583" y1="48" x2="583" y2="188" stroke="var(--mute)" stroke-width="0.8"/><text x="548" y="42" text-anchor="middle" fill="var(--coral)">上のはし（北極）は届かない</text><text x="548" y="204" text-anchor="middle" fill="var(--navy)">下のはし（南極）は届かない</text><text x="548" y="22" font-size="14" text-anchor="middle" fill="var(--ink)">船の地図</text><path d="M243 104 L163 104" stroke="var(--mid)" stroke-width="1.4" marker-end="url(#eo-w3-ar)" marker-start="url(#eo-w3-ar)" fill="none"/><text x="203" y="96" text-anchor="middle" fill="var(--mid)">ステレオ投影</text><path d="M473 104 L397 104" stroke="var(--mid)" stroke-width="1.4" marker-end="url(#eo-w3-ar)" marker-start="url(#eo-w3-ar)" fill="none"/><text x="435" y="96" text-anchor="middle" fill="var(--mid)">e ／ log</text><text x="320" y="236" text-anchor="middle" fill="var(--ink)" font-size="11.5">太い線（赤道・半径 1 の円・船の地図の横の線 x = 0）は、三つの世界で同じ所</text></g></svg><figcaption>三つの世界と、二つの通訳。e が訳すのは船の地図と平面のあいだで、平面と地球儀のあいだはステレオ投影が訳す。北極（∞）は平面にも船の地図にも描かれず、南極（0）は船の地図の下のはしに追いやられる</figcaption></figure>
+
 <p>e<sup>x + iθ</sup> は、船の地図から平面への翻訳です。横の座標 θ は回転に、縦の座標 x は大きさ e<sup>x</sup> に訳されます。横は 2π ごとに同じ点を指すので、e は地図の横の線を、円に何周も巻きつけています。平面と地球儀の間の翻訳はステレオ投影で、そこに e は出てきません。e は、船の地図と平面の間を訳し、ステレオ投影と組んで、三つの世界をつなぎます。</p>
 <p>ただし、0 と ∞ を向かい合う対等な二点として並べられるのは、平面に ∞ を一点足して、地球儀に閉じたからです。e の逆の対数は、ステレオ投影と組んで、地球儀の上の回る向き（経度）と南北の向き（緯度）を、まっすぐな座標で刻みます。</p>
 <blockquote class="reader-callout reader-request">
@@ -235,6 +237,7 @@
 <p><a id="eo-axes"></a>船の地図の縦と横は、平面に訳されると、別々のものになります。e<sup>x + iθ</sup> の大きさは e<sup>x</sup>、向きは θ です。縦の x は大きさに、横の θ は回転に訳されます。</p>
 <p><strong>縦は、100% で育ち続けた大きさ</strong></p>
 <p>縦に x 進むと、大きさは e<sup>x</sup> 倍になります。e は、100% の伸びで、一単位の時間育ち続けた量です（(1 + 1/n)<sup>n</sup> の n をどこまでも大きくした先、2.718…）。地図の x = 0 の横の線が、平面では半径 1 の円、地球儀では赤道です。そこから下へ進むほど 0（南極）へ、上へ進むほど ∞（北極）へ近づきます。</p>
+<p>近づくだけで、着くことはありません。e<sup>x</sup> は、どんな x でも 0 にも ∞ にもならないからです（x = −10 でおよそ 0.000045、x = 10 でおよそ 22026）。船の地図の上下のはしに、どこまで行っても届かないのと同じことです。船の地図から e で訳して戻れるのは、地球儀から南極と北極の二点を除いた所の全部です。南極の 0 は平面にある点ですが、e<sup>x + iθ</sup> の値にはなりません。北極の ∞ は、平面に ∞ を一点足して地球儀に閉じるときに、足して置く点です。</p>
 <p>e の作り方の中には、二つの数があります。刻みの数 n と、一歩の大きさ 1/n です。刻みの数を無限大へ向かわせることは、一歩をゼロへ向かわせることと同じです。pjdhiro は、この一歩を、こう言い表しています。</p>
 <blockquote class="reader-callout reader-request">
 <p><strong>pjdhiro の見方：</strong>素朴な言い方では、無限の逆数のようなものをやってるんだよね。もちろん逆数ではないんだけど、逆数っぽいものを使いたい時のやつ。それが無限大とリンクしてる直感なんだと思う。</p>
@@ -376,6 +379,11 @@
 <span class="help-add">  地図で読むと（章「地球儀・平面・船の地図の、三つの世界」）</span>
 <span class="help-add">    z = a + ib を船の地図（メルカトル図法）の点と見ると、exp は地図を平面に訳す。</span>
 <span class="help-add">    縦の a は大きさ e^a に、横の b は回転に訳され、横は 2π ごとに同じ所を指す。</span>
+
+<span class="help-add">  返さないもの</span>
+<span class="help-add">    e^z は、どの z でも 0 にならず、∞ にもならない（e^z × e^(−z) = 1 なので 0 にならず、値はいつも有限）。</span>
+<span class="help-add">    球の上では、南極（0）と北極（∞）の二点は、どの引数でも返らない。</span>
+<span class="help-add">    0 は平面にある点だが、値にはならない。∞ は、平面に一点足して球に閉じるときに足して置く点。</span>
 
   応用
     微分方程式、確率と統計 など。
