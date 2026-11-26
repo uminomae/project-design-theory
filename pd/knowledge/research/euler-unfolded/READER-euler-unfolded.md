@@ -26,6 +26,7 @@
 <li><b><a href="#eo-fold">0 と 1 も、次元をたたむ記号かもしれない</a></b>：球の上の 0 と ∞ と 1、√・π・e</li>
 <li><b><a href="#eo-turn">回ることが先にあるのかもしれない</a></b>：0 と ∞ と自然対数を揺さぶる</li>
 <li><b><a href="#eo-circle">禅の円と、円の雲</a></b>：寄り道から、起業家の漸化式へ</li>
+<li><b><a href="#eo-help">exp の説明書に、たたまれていたものを書き足す</a></b>：既にある説明書に、このページで開いたものを色で足す</li>
 <li><b><a href="#eo-more">このあとに読むもの</a></b></li>
 </ul>
 </div>
@@ -354,6 +355,74 @@ pjdhiro の言う「無限大のような極大さ」に、数学で近いもの
 <strong>pjdhiro の見方：</strong>ゼロと無限大の波間に、渦としての 1 が立つのかもしれませんね。これも創造の構造に見える。
 
 ここでの渦は、創造の五段階の渦（波間に立つ渦）のたとえです。式の値を打って見える軌跡の渦とは別のものです。複素平面の入口としてこのページが置くのは、回る・たたむ・残る、の三つの見方です。ほかの数学のページは、この三つのどれが働いているかを手がかりに読むことができます。
+
+## exp の説明書に、たたまれていたものを書き足す
+
+<!--OPEN-->
+
+<a id="eo-help"></a>ここまで開いてきたものを、プログラムの説明書の形にまとめ直します。四元数と並べて開いてみたあとで、pjdhiro はオイラーの等式をこう見ています。
+
+<strong>pjdhiro の見方：</strong>こうやってみるとオイラーの等式は、クリーンすぎてリーダブルさがないよね。オイラーはその一行だけを示したわけではないだろうけど、後世の人がそこだけ切り取ってしまった。関数の宣言のように、入出力の型だけがあって、内部が分かってないし、使い所も分かってない。
+
+<strong>pjdhiro の見方：</strong>ライブラリに一行、関数名と引数と戻り値の型だけあってもね。何に使うのか help が欲しい。
+
+数学のライブラリにも、e<sup>z</sup> を計算する関数 exp があり、説明書（help）が付いています。中身の厚さはライブラリでまちまちです。Python の cmath.exp は一行だけです。NumPy の exp には、複素数を大きさと位相に分ける説明と、図の例があります。Wolfram Language の Exp には、周期・応用・よくある落とし穴まで並んでいます。
+
+下は、そうした厚めの説明書によく書かれている中身を、このページの言葉でまとめたものです。<span class="help-add">色の付いた行</span>が、このページで開いたものを書き足した所です。
+
+<pre class="help-doc"><b>exp(z)</b>
+  複素数 z を受け取り、e の z 乗を返す。
+
+  定義
+    e ≈ 2.71828。実数 x では、e^x は (1 + x/n)^n の n をどこまでも大きくした先の値。
+
+  複素数のとき
+    z = a + ib なら、e^z = e^a (cos b + i sin b)。
+    e^a が大きさ、cos b + i sin b が大きさ 1 の向き（位相）。
+<span class="help-add">    何をしているか：平面の全体に掛けて、大きさを e^a 倍し、平面ごと角度 b だけ回す。</span>
+<span class="help-add">    a = 0 なら、伸ばさずに回すだけ（単位円の上を進む）。</span>
+
+<span class="help-add">  なぜ底が e か</span>
+<span class="help-add">    底を b にすると、b^(iθ) は単位円の上を速さ ln b で進む。</span>
+<span class="help-add">    速さがちょうど 1 になり、θ がそのまま円の上の道のりになるのは、底が e のときだけ。</span>
+
+<span class="help-add">  前提（省略されている既定値）</span>
+<span class="help-add">    回す軸は、平面に直交する奥行きの向き。式には出てこない。</span>
+<span class="help-add">    平面の上では、掛ける順番が結果を変えない。だから順番も式に出てこない。</span>
+<span class="help-add">    立体で回すときは、軸 u を書き、e^(uθ/2) で前と後ろから半分ずつ挟み（q v q⁻¹）、</span>
+<span class="help-add">    掛ける順番を守る。その回す数 q は、一周で −1、二周でやっと 1 に戻る。</span>
+
+  周期
+    e^(z + 2πi) = e^z。2πi ごとに同じ値に戻る。
+<span class="help-add">    回った量で読むと：0 周、1 周、2 周……は、どれも同じ点に来る。</span>
+<span class="help-add">    逆の log は、何周したかの分だけ値が開き、一つに決まらない。</span>
+
+  例
+    exp(0) = 1　　exp(iπ) = −1　　exp(2πi) = 1
+<span class="help-add">    exp(iπ) は半周、exp(2πi) は一周。肩を半分にすると、一周が半周になる。</span>
+<span class="help-add">    オイラーの等式 e^(iπ) + 1 = 0 は、−1 を移して、0 と 1 も式に入れた形。</span>
+
+<span class="help-add">  球の上で（ステレオ投影）</span>
+<span class="help-add">    0 を南極、∞ を北極に置くと、a = 0 の単位円は、二つのちょうど真ん中の赤道になる。</span>
+<span class="help-add">    a を限りなく小さくすると 0 へ、限りなく大きくすると ∞ へ近づく。</span>
+
+  応用
+    微分方程式、確率と統計、波 など。
+<span class="help-add">    交流回路（フェーザ）、信号処理（フーリエ変換）、量子の時間変化、立体の回転（四元数）。</span>
+
+  関連
+    log（逆の関数）、sin、cos<span class="help-add">、四元数の回転 q v q⁻¹</span></pre>
+
+書き足した行の多くは、平面の上だけで使う限り、書かなくても困らないものです。そのため、説明書には書かれにくく、オイラーの等式の一行にもたたまれています。立体へ持っていくと、たたまれていた軸と順番と二周が、四元数の式の中に引数として出てきます。
+
+<details><summary>出典</summary>
+
+- Python 3 の `cmath.exp` の説明（docstring）は「Return the exponential value e\*\*z.」の一行（手元の Python で確かめた）。
+- NumPy の `exp` の説明は、ソースの [ufunc_docstrings.py](https://github.com/numpy/numpy/blob/main/numpy/_core/code_generators/ufunc_docstrings.py) にある。Notes の欄で、複素数の入力を e^a と e^{ib} に分け、e^{ib} = cos b + i sin b を大きさ 1 で周期的な位相と書き、複素平面の上の大きさと位相を描く例を載せている。
+- Wolfram Language の [Exp](https://reference.wolfram.com/language/ref/Exp.html) は、オイラーの公式への書き換え、2πi の周期、応用（微分方程式・確率と統計 ほか）、よくある落とし穴の欄を持つ。
+- 上の説明書は、これらを写したものではなく、よく書かれる中身をこのページがまとめ直したもの。
+
+</details>
 
 ## このあとに読むもの
 
