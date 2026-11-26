@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/emerging-abilities.html を直接編集しないでください。
+  正本:   knowledge/research/emerging-abilities/READER-emerging-abilities.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「新しく注目されている能力」のページです（工事中）。いま能力として呼ばれ始めた名前と、なぜ今かの背景（仕事・教育・AI）を、名前を付けた側の原典から並べる。読んだ原典：Autor・Levy・Murnane 2003（NBER w8337）、Frey・Osborne 2013（Oxford Martin School）、Deming 2017（NBER w21473）、World Economic Forum の Future of Jobs 2016・2020・2025、OECD Skills Outlook 2019、OECD DeSeCo の要約 2005、P21 Framework Definitions 2009、欧州連合の理事会勧告 2018、OECD Learning Compass 2030 と Transformative Competencies の説明の文書 2019、中央教育審議会の答申 1996・2016、経済産業省の社会人基礎力 2006・2018、Wing 2006・2017、Long・Magerko 2020、DigComp 2.2、UNESCO の AI コンピテンシーの枠組み 2024（生徒・教員）、OECD と欧州委員会の AI リテラシーの枠組み 2026、Heckman・Kautz 2012（NBER w18121）、OECD Beyond Academic Learning 2021。どれも本文で照合した。経済学の四本は作業論文の版で読んだ。章の分け方、名前の一覧の並べ方、なぜ今かの四つの読み（機械が引き受けた仕事の残り・速い変化と先の読めなさ・機械と一緒に考える力・名前の付け直し）は Claude のもの。どの能力が大事かを決めるページでも、誰かの能力を測るページでもない。測られて残った頭の能力の分け方は cognitive-abilities.html、差になるスキルの仮説は capacity-after-ai.html、創造的思考の定義は creative-thinking.html に任せ、写していない。構えと体力の独立ページは工事中で、名前だけ。
+  pjdhiro 本人の言葉は「pjdhiro の問い：」「pjdhiro の見方：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新しく注目されている能力 | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/emerging-abilities.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="いま、何が能力として呼ばれ始めたのか。なぜ今なのか。仕事の側（オーター・レヴィ・マーネイン 2003 の決まった手順でない仕事・フレイとオズボーン 2013 の自動化のボトルネック・デミング 2017 の社会的スキル・世界経済フォーラムの『仕事の未来』2016・2020・2025）、教育の側（OECD の DeSeCo 2005・P21 2009・欧州連合の理事会勧告 2018・OECD のラーニング・コンパス 2030）、日本の学校と職場（生きる力 1996・社会人基礎力 2006 と 2018・資質と能力の三つの柱 2016）、計算機と AI の側（ウィングの計算論的思考 2006・ロングとマジェルコの AI リテラシー 2020・DigComp 2.2・ユネスコ 2024・OECD と欧州委員会の AI リテラシーの枠組み 2026）、名前の付け直し（ヘックマンとカウツ 2012・OECD の社会情動的スキル 2021）を原典で並べ、なぜ今かの書き方を四つに読む。新しい能力の名前の多くは、機械と人の分担という状況の側から書かれているように見える。">
+    <meta property="og:title" content="新しく注目されている能力">
+    <meta property="og:description" content="いま、何が能力として呼ばれ始めたのか。なぜ今なのか。仕事の側（オーター・レヴィ・マーネイン 2003 の決まった手順でない仕事・フレイとオズボーン 2013 の自動化のボトルネック・デミング 2017 の社会的スキル・世界経済フォーラムの『仕事の未来』2016・2020・2025）、教育の側（OECD の DeSeCo 2005・P21 2009・欧州連合の理事会勧告 2018・OECD のラーニング・コンパス 2030）、日本の学校と職場（生きる力 1996・社会人基礎力 2006 と 2018・資質と能力の三つの柱 2016）、計算機と AI の側（ウィングの計算論的思考 2006・ロングとマジェルコの AI リテラシー 2020・DigComp 2.2・ユネスコ 2024・OECD と欧州委員会の AI リテラシーの枠組み 2026）、名前の付け直し（ヘックマンとカウツ 2012・OECD の社会情動的スキル 2021）を原典で並べ、なぜ今かの書き方を四つに読む。新しい能力の名前の多くは、機械と人の分担という状況の側から書かれているように見える。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/emerging-abilities.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="新しく注目されている能力">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-26">
+    <meta property="article:modified_time" content="2026-11-26">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "新しく注目されている能力",
+          "description": "いま、何が能力として呼ばれ始めたのか。なぜ今なのか。仕事の側（オーター・レヴィ・マーネイン 2003 の決まった手順でない仕事・フレイとオズボーン 2013 の自動化のボトルネック・デミング 2017 の社会的スキル・世界経済フォーラムの『仕事の未来』2016・2020・2025）、教育の側（OECD の DeSeCo 2005・P21 2009・欧州連合の理事会勧告 2018・OECD のラーニング・コンパス 2030）、日本の学校と職場（生きる力 1996・社会人基礎力 2006 と 2018・資質と能力の三つの柱 2016）、計算機と AI の側（ウィングの計算論的思考 2006・ロングとマジェルコの AI リテラシー 2020・DigComp 2.2・ユネスコ 2024・OECD と欧州委員会の AI リテラシーの枠組み 2026）、名前の付け直し（ヘックマンとカウツ 2012・OECD の社会情動的スキル 2021）を原典で並べ、なぜ今かの書き方を四つに読む。新しい能力の名前の多くは、機械と人の分担という状況の側から書かれているように見える。",
+          "keywords": "新しく注目されている能力, 21世紀型スキル, コンピテンシー, キー・コンピテンシー, 社会的スキル, ソフトスキル, 非認知能力, 社会情動的スキル, 生きる力, 社会人基礎力, 資質・能力の三つの柱, 計算論的思考, AI リテラシー, 仕事の未来, 自動化, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/emerging-abilities.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/emerging-abilities.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-26",
+          "dateModified": "2026-11-26",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "コンピテンシー"}, {"@type": "Thing", "name": "21世紀型スキル"}, {"@type": "Thing", "name": "AI リテラシー"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方の言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「新しく注目されている能力」のページです（工事中）。いま、何が能力として呼ばれ始めたのか。なぜ今なのか。仕事の側（オーター・レヴィ・マーネイン 2003 の決まった手順でない仕事・フレイとオズボーン 2013 の自動化のボトルネック・デミング 2017 の社会的スキル・世界経済フォーラムの『仕事の未来』2016・2020・2025）、教育の側（OECD の DeSeCo 2005・P21 2009・欧州連合の理事会勧告 2018・OECD のラーニング・コンパス 2030）、日本の学校と職場（生きる力 1996・社会人基礎力 2006 と 2018・資質と能力の三つの柱 2016）、計算機と AI の側（ウィングの計算論的思考 2006・ロングとマジェルコの AI リテラシー 2020・DigComp 2.2・ユネスコ 2024・OECD と欧州委員会の AI リテラシーの枠組み 2026）、名前の付け直し（ヘックマンとカウツ 2012・OECD の社会情動的スキル 2021）を原典で並べ、なぜ今かの書き方を四つに読む。新しい能力の名前の多くは、機械と人の分担という状況の側から書かれているように見える。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1><span style="display:inline-block">新しく注目されている</span><span style="display:inline-block">能力</span></h1>
+                <p class="reader-subtitle">仕事・教育・AI の側で、いま能力と呼ばれ始めた名前</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-26 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/emerging-abilities/READER-emerging-abilities.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p class="reader-lead"><span class="reader-lead__label">問い</span>いま、何が能力として呼ばれ始めたのでしょうか。それは、なぜ今なのでしょうか。</p>
+
+<p>このページは、考えることを一つずつ分けて見るページの一つで、その道案内は「<a href="thinking.html">思考とは</a>」にあります。pjdhiro の問いに、Claude が原典を読んで答える形で書いています。始まりは、ベクトルが歴史の上では四元数から切り出されて生まれた、という話をしていたときの、pjdhiro の次の言葉です。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>四元数の発見までは、一次元から積み上げる演繹力が必要でした。今、四元数が瞬時に計算される世の中で、四元数から演繹することは、能力の違いでなく状況の違いです。演繹力ではなく、前提を問う力の方が優先される。もう、健脚である必要がないように。</p>
+</blockquote>
+<div class="reader-lead"><span class="reader-lead__label">今の答え</span>
+ここ三十年ほどのあいだに、仕事・教育・計算機の三つの側で、能力に新しい名前が次々に付きました。決まった手順でない仕事・社会的スキル・創造的思考・回復力・コンピテンシー・生きる力・社会人基礎力・計算論的思考・AI リテラシーなどです。名前を付けた側が書いた「なぜ今か」は、おおよそ三つの形に分かれて見えます。計算機や AI が引き受けられるようになった仕事の残りとして、変化が速く先が読めないこととして、機械と一緒に働くために要るものとして、です。もう一つ、昔から性格や人柄と呼ばれてきたものに、能力の名前を付け直す流れもあります。並べてみると、新しい能力の名前の多くは、人の頭の中の働きそのものより、機械と人の分担という状況の側から書かれているように見えます。
+<ul class="reader-lead__list">
+<li><b><a href="#ea-work">機械に置き換えにくい仕事から、名前が付いた</a></b>：経済学の研究です。</li>
+<li><b><a href="#ea-wef">雇い主が挙げる、伸びるスキルと減るスキル</a></b>：世界経済フォーラムの調査です。</li>
+<li><b><a href="#ea-edu">教育は、知識の量からコンピテンシーへ</a></b>：OECD・P21・欧州連合の枠組みです。</li>
+<li><b><a href="#ea-japan">日本の学校と職場で付いた名前</a></b>：生きる力・社会人基礎力・資質と能力の三つの柱です。</li>
+<li><b><a href="#ea-ai">計算機や AI と一緒に考える力</a></b>：計算論的思考と AI リテラシーです。</li>
+<li><b><a href="#ea-rename">昔からあったものに、名前を付け直す</a></b>：非認知のスキルと社会情動的スキルです。</li>
+<li><b><a href="#ea-list">名前の一覧</a></b>：このページで読んだ名前を、年の順に並べます。</li>
+<li><b><a href="#ea-why">なぜ今なのか</a></b>：並べて見えることと、pjdhiro の見方への答えです。</li>
+</ul>
+</div>
+
+<p class="reader-lead"><span class="reader-lead__label">注意</span>このページは、名前を付けた側が何を言ったかを並べるもので、どの能力が大事かを決めたり、誰かの能力を測ったりするものではありません。英文の訳と、日本語の名前の訳は Claude です。</p>
+
+<p>測られて残った頭の能力の分け方（一般因子・流動性知能と結晶性知能・CHC・実行機能など）は「<a href="cognitive-abilities.html">頭脳の能力は、どう分けられてきたか</a>」にあります。このページの名前の多くは、その整理の外から来ました。道具が引き受ける量が変わると、人の差になる量がどう移るかは、読み物「<a href="capacity-after-ai.html">AI の時代に、差になるスキルは何か</a>」が仮説で考えています。</p>
+<details class="sec" id="機械に置き換えにくい仕事から名前が付いた" open><summary>機械に置き換えにくい仕事から、名前が付いた</summary><div class="secbody">
+
+
+<p><a id="ea-work"></a>銀行の窓口で通帳に記帳する仕事は、いまは機械がします。一方、窓口でお客さんの困りごとを聞き取って、どの手続きがよいかを一緒に考える仕事は、まだ人がしています。この違いに名前を付けたのが、経済学者のオーター・レヴィ・マーネインです。</p>
+<p>三人は 2003 年の論文で、仕事を、決まった手順で書ける仕事（routine）と、そうでない仕事に分けました。情報技術は、規則に従って進める認知の仕事の値段を大きく下げた、と書いています。そのため計算機は、決まった手順の仕事を代わりに引き受け、決まった手順でない仕事をする人を補う側に回る、というのが三人の見立てです。決まった手順でない認知の仕事は、分析して考える力と、人と関わり、まとめる力の二つで測られました。三人は、すでに解かれた問題は決まった手順になり、計算機に任せられるので、人の得意は解かれていない問題を扱うところにある、とも書いています。</p>
+<p>2013 年には、オックスフォード大学のフレイとオズボーンが、機械学習と移動するロボットが、決まった手順でない仕事にも及び始めたと書きました。二人は、それでも自動化しにくい所（ボトルネック）として三つを挙げています。知覚して手で扱うこと、創造的な知能、社会的な知能です。社会的な知能は、交渉・説得・世話のような仕事で要るものです。二人の見積もりでは、米国の雇用の約 47% が、自動化される危険の高い区分に入りました。そして、人が機械との競争に勝つには、創造的なスキルと社会的なスキルを身につける必要がある、と結んでいます。</p>
+<p>経済学者のデミングは 2017 年に、社会的スキルの値打ちが上がってきたことを、米国の雇用のデータで示しました。1980 年から 2012 年までに、人とのやりとりを多く要する仕事は、働く人の中での割合を 12 ポイント近く伸ばしました。デミングは、その理由の一つを、計算機が人どうしのやりとりを真似るのがまだとても下手だからだ、と書いています。人の心を読んで応じる力は、言葉の規則にできない知識（暗黙知）にもとづいているからです。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：Autor, D. H., Levy, F., &amp; Murnane, R. J. (<a href="https://doi.org/10.1162/003355303322552801">2003</a>) The skill content of recent technological change: An empirical exploration. <em>Quarterly Journal of Economics</em> 118(4), 1279–1333（NBER の作業論文 w8337〔2001〕の <a href="https://www.nber.org/system/files/working_papers/w8337/w8337.pdf">NBER が置いた版</a>で本文照合済。頁は作業論文の頁。規則に従う認知の仕事の値段は p.5、「computers are relative complements to workers engaged in non-routine tasks」と、解かれた問題の話は p.6、二つの測り方は p.14）。Frey, C. B., &amp; Osborne, M. A. (2013) The future of employment: How susceptible are jobs to computerisation?（作業論文。<a href="https://www.oxfordmartin.ox.ac.uk/downloads/academic/The_Future_of_Employment.pdf">Oxford Martin School が置いた版</a>で本文照合済。雑誌の版は <a href="https://doi.org/10.1016/j.techfore.2016.08.019">2017</a> 年の <em>Technological Forecasting and Social Change</em> 114, 254–280。三つのボトルネックは p.24、社会的な知能は p.26、47% は p.38、創造的・社会的なスキルの結びは p.45）。Deming, D. J. (<a href="https://doi.org/10.1093/qje/qjx022">2017</a>) The growing importance of social skills in the labor market. <em>Quarterly Journal of Economics</em> 132(4), 1593–1640（NBER の作業論文 w21473 の <a href="https://www.nber.org/system/files/working_papers/w21473/w21473.pdf">NBER が置いた版</a>で本文照合済。12 ポイントは要旨、暗黙知は p.3、「computers are still very poor at simulating human interaction」は p.28）。</p>
+</details>
+
+</div></details><details class="sec" id="雇い主が挙げる伸びるスキルと減るスキル" open><summary>雇い主が挙げる、伸びるスキルと減るスキル</summary><div class="secbody">
+
+
+<p><a id="ea-wef"></a>研究者の分析と並んで、新しい能力の名前を広めてきたのが、世界経済フォーラムが数年おきに出す報告『仕事の未来』です。世界の企業（主に人事の責任者）に、これから何のスキルが要るかを聞いた調査で、測った結果ではなく、雇い主の見込みです。</p>
+<p>2016 年の報告は、人工知能と機械学習・ロボット・3D 印刷などが重なる「第四次産業革命」を背景に置きました。2020 年までに、全部の仕事の 36% で、複雑な問題を解く力が中核のスキルの一つになる、という回答を伝えています。説得・感情の知能・人に教えることのような社会的スキルは、プログラミングのような狭い技術のスキルより求められるようになる、とも書いています。</p>
+<p>2020 年の報告は、2025 年に向けて要る上位十五のスキルを挙げました。一番目は分析的思考と革新で、能動的な学びと学び方、複雑な問題の解決、批判的思考と分析、創造性と独創性と主体性、と続きます。報告は、批判的思考と問題解決は毎年上位にあり、この年に新しく出てきたのは、能動的な学び・回復力・ストレスへの耐性・柔軟性のような自己管理のスキルだ、と書いています。</p>
+<p>2025 年の報告では、最も速く伸びるスキルの一番目が「AI とビッグデータ」になりました。ネットワークとサイバーセキュリティ、技術のリテラシーが続き、それを補うものとして、創造的思考・回復力と柔軟性と機敏さ・好奇心と学び続けることが挙げられています。報告は、これらを「人を中心にしたスキル」とも呼んでいます。逆に、これから求められる量が最も減ると見込まれたのは、読み・書き・数学、手先の器用さと持久力と正確さ、信頼できることと細部への注意でした。</p>
+<details class="acc"><summary>詳しく — 経済協力開発機構（OECD）の見方</summary>
+
+<p>OECD の『スキルの見通し 2019』は、デジタル化した職場で生きていくには、強い認知のスキルと社会情動的なスキル、それにデジタルのスキルを合わせた、幅の広いスキルが要る、と書いています。伸びている職は、高い水準の、決まった手順でない認知のスキルを要する職で、分析の力を補うものとして、問題解決・創造的思考と批判的思考・コミュニケーション・学び続ける力を挙げています。</p>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p>出典：World Economic Forum (2016) <em>The Future of Jobs</em>（<a href="https://www3.weforum.org/docs/WEF_Future_of_Jobs.pdf">WEF の PDF</a> で本文照合済。第四次産業革命は p.5、36% は p.21、社会的スキルは p.22）。World Economic Forum (2020) <em>The Future of Jobs Report 2020</em>（<a href="https://www3.weforum.org/docs/WEF_Future_of_Jobs_2020.pdf">WEF の PDF</a> で本文照合済。自己管理のスキルは p.35、上位十五のスキルの図は p.36）。World Economic Forum (2025) <em>Future of Jobs Report 2025</em>（<a href="https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf">WEF の PDF</a> で本文照合済。「human-centred skills」は p.5、伸びるスキルは p.6、減るスキル「reading, writing, and mathematics; manual dexterity, endurance, and precision」は p.38）。OECD (<a href="https://doi.org/10.1787/df80bc12-en">2019</a>) <em>OECD Skills Outlook 2019: Thriving in a Digital World</em>（出版者 OECD の公開の PDF の <a href="https://web.archive.org/web/20200509112040id_/https://www.oecd-ilibrary.org/docserver/df80bc12-en.pdf?expires=1589024128&amp;id=id&amp;accname=guest&amp;checksum=0E98D7022A9706B854C706C2F4743B02">Wayback の記録</a>で本文照合済。幅の広いスキルは p.3、伸びる職は p.12、補うスキルは p.22）。創造的思考を世界経済フォーラムがどう置き、PISA がどう定義したかは「<a href="creative-thinking.html">創造的思考とは</a>」にあります。</p>
+</details>
+
+</div></details><details class="sec" id="教育は知識の量からコンピテンシーへ" open><summary>教育は、知識の量からコンピテンシーへ</summary><div class="secbody">
+
+
+<p><a id="ea-edu"></a>仕事の側で名前が変わると、学校で何を育てるかの名前も変わりました。教育の側で広く使われるようになった語が、コンピテンシーです。</p>
+<p>OECD は、2003 年に最終報告を出した計画（DeSeCo）の要約で、コンピテンシーは知識やスキルにとどまらず、技能や態度のような心の資源を呼び出して、複雑な求めに応える力だ、と定めました。要約には「なぜ今、コンピテンシーがそれほど大事なのか」という小見出しがあり、グローバル化と近代化で世界が多様につながり、変わる技術を使いこなし、大量の情報を読み解く必要がある、と書いています。キー・コンピテンシーは三つの範疇に分けられ、その真ん中に、反省的に考えて動くことが置かれました。</p>
+<p>米国の団体 P21（21 世紀型スキルのためのパートナーシップ）は、2009 年の定義集で、創造性・批判的思考・コミュニケーション・協働を、学びと革新のスキルとしてまとめました。これらのスキルが、21 世紀の複雑になる生活と仕事に備えた生徒と、そうでない生徒を分けるものとして、ますます認められている、と書いています。この四つは、のちに頭文字から「4C」とも呼ばれますが、この定義集の中にはその呼び名はありません。</p>
+<p>欧州連合の理事会は、2018 年の勧告で、生涯学習のための八つのキー・コンピテンシーを挙げました。その中には、個人と社会と「学ぶことを学ぶ」コンピテンシーや、起業家のコンピテンシーがあります。勧告は前文で、求められるコンピテンシーが変わった理由として、自動化される仕事が増えたことと、技術が仕事と暮らしのどこでも大きな役を担うようになったことを挙げています。</p>
+<p>OECD は 2019 年に、2030 年に向けた学びの羅針盤（ラーニング・コンパス）を示しました。デジタル化・気候変動・人工知能の進歩のような世界の流れが、教育の目的と方法の両方に根本からの問いを投げている、と書いています。羅針盤の中に置かれた「変革を起こすコンピテンシー」は三つで、新しい価値を創ること、対立と緊張とジレンマを調停すること、責任を取ることです。同じ年の説明の文書は、これを書いている時点では、人工知能は、新しい価値を創り、緊張を調停し、責任を取る人の力にはかなわない、と書いています。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：OECD (2005) <em>The Definition and Selection of Key Competencies: Executive Summary</em>（OECD のサイトの PDF の <a href="https://web.archive.org/web/20201209195551id_/http://www.oecd.org/pisa/35070367.pdf">Wayback の記録</a>で本文照合済。頁の印字は 2005 年 5 月、最終報告は 2003 年〔p.18〕。定義と「Why are competencies so important today?」は p.4、三つの範疇と反省的に考えることは p.5）。Partnership for 21st Century Skills (2009) <em>P21 Framework Definitions</em>（P21 のサイトの PDF の <a href="https://web.archive.org/web/20130117111459id_/http://p21.org/storage/documents/P21_Framework_Definitions.pdf">Wayback の記録</a>と、同じ文書の <a href="https://files.eric.ed.gov/fulltext/ED519462.pdf">ERIC の版</a>で本文照合済。四つのスキルと、生徒を分けるものの文は p.3）。Council of the European Union (2018) <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32018H0604(01)">Council Recommendation of 22 May 2018 on key competences for lifelong learning</a>（2018/C 189/01。EUR-Lex の公式の版で本文照合済。前文 (4) は C 189/1、学ぶことを学ぶコンピテンシーは C 189/10、起業家のコンピテンシーは C 189/11）。OECD (2019) <em>OECD Learning Compass 2030: Concept Note</em>（OECD のサイトの PDF の <a href="https://web.archive.org/web/20211212083018id_/https://www.oecd.org/education/2030-project/teaching-and-learning/learning/learning-compass-2030/OECD_Learning_Compass_2030_concept_note.pdf">Wayback の記録</a>で本文照合済。世界の流れは p.4、三つは p.7）。OECD (2019) <em>Transformative Competencies for 2030: Concept Note</em>（OECD のサイトの PDF の <a href="https://web.archive.org/web/20220120121911id_/https://www.oecd.org/education/2030-project/teaching-and-learning/learning/transformative-competencies/Transformative_Competencies_for_2030_concept_note.pdf">Wayback の記録</a>で本文照合済。「artificial intelligence (AI) cannot compete with humans' capacity to create new value, reconcile tensions or take responsibility」は p.4）。</p>
+</details>
+
+</div></details><details class="sec" id="日本の学校と職場で付いた名前" open><summary>日本の学校と職場で付いた名前</summary><div class="secbody">
+
+
+<p><a id="ea-japan"></a>日本でも、同じころに、学校と職場の両方で新しい名前が付きました。</p>
+<p>1996 年、中央教育審議会は第一次答申で、自分で課題を見つけ、自ら学び、自ら考え、主体的に判断し、行動し、よりよく問題を解決する資質や能力と、豊かな人間性と、たくましく生きるための健康や体力を、「変化の激しいこれからの社会を［生きる力］と称することとし」ました。答申は、生きる力を、過去の知識を覚えていることでなく、初めて出会う場面でも、自分で課題を見つけ、考え、解決していく資質や能力だ、と書いています。背景には、欧米の科学技術を上手に使う手法はもう許されず、自ら科学技術を創る必要がある、という見立てと、変化の激しい、先行きの不透明な時代という見方が置かれました。</p>
+<p>2006 年、経済産業省の研究会は、「職場や地域社会の中で多様な人々とともに仕事を行っていく上で必要な基礎的な能力」を、人と触れあうことを前提にしているので「社会人基礎力」と名付けるのが適当だ、としました。中身は、前に踏み出す力・考え抜く力・チームで働く力の三つと、主体性・課題発見力・創造力・傾聴力など十二の要素です。背景として、90 年代以降、国内市場が成熟し、IT 化が進み、企業の課題が「既存の成功モデルの踏襲」から「新しい価値の創出」へ移った、と書いています。</p>
+<p>2016 年、中央教育審議会は、学習指導要領を改める答申で、育てる資質・能力を三つの柱にまとめました。生きて働く知識・技能、未知の状況にも対応できる思考力・判断力・表現力等、学びに向かう力・人間性等です。答申は、第４次産業革命と進化した人工知能が社会を大きく変えるという予測に触れたうえで、人工知能がいかに進化しようとも、それが行っているのは与えられた目的の中での処理である、と書いています。三つの柱は、OECD の 2030 に向けた枠組みなどで国際的にも共有されている、とも書いています。</p>
+<p>2018 年、経済産業省の研究会は、社会人基礎力を「人生 100 年時代の社会人基礎力」に改めました。背景として、「AI×データ」に引っ張られる第四次産業革命と、技術の速い進歩で知識やスキルの「賞味期限」が短くなったことを挙げています。報告は、整理の足場として、「非認知能力」「抽象思考力」「価値判断力」「課題設定力」「問題発見能力」「未来を予想する力」「編集力」「金融的投資能力」など、昨今論じられている新たな時代に必要とされる能力の名前を並べています。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：中央教育審議会（1996）「21世紀を展望した我が国の教育の在り方について（第一次答申）」（平成 8 年 7 月 19 日。文部科学省の頁の Wayback の記録〔<a href="https://web.archive.org/web/20190906230338id_/http://www.mext.go.jp/b_menu/shingi/chuuou/toushin/960701.htm">目次</a>・<a href="https://web.archive.org/web/20200723020939id_/https://www.mext.go.jp/b_menu/shingi/chuuou/toushin/960701d.htm">第１部 (2)</a>・<a href="https://web.archive.org/web/20191015095341id_/http://www.mext.go.jp/b_menu/shingi/chuuou/toushin/960701e.htm">第１部 (3)</a>〕で本文照合済。名付けと定義は第１部 (3)、時代の見方は第１部 (2)）。社会人基礎力に関する研究会（2006）「中間取りまとめ」（経済産業省。PDF の <a href="https://web.archive.org/web/20171208212043id_/http://www.meti.go.jp:80/policy/kisoryoku/chukanhon.pdf">Wayback の記録</a>で本文照合済。背景は pp.2–4、名付けは p.4、三つの能力は p.12）。中央教育審議会（2016）「幼稚園、小学校、中学校、高等学校及び特別支援学校の学習指導要領等の改善及び必要な方策等について（答申）」（平成 28 年 12 月 21 日。<a href="https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo0/toushin/__icsFiles/afieldfile/2017/01/10/1380902_0.pdf">文部科学省の PDF</a> で本文照合済。人工知能の段は pp.9–10、三つの柱は pp.28–30）。経済産業省・中小企業庁（2018）「我が国産業における人材力強化に向けた研究会（人材力研究会）報告書」（PDF の <a href="https://web.archive.org/web/20200417134725id_/https://www.meti.go.jp/report/whitepaper/data/pdf/20180319001_1.pdf">Wayback の記録</a>で本文照合済。背景は p.4、新たな能力の名前は p.28、三つの視点は p.29）。</p>
+</details>
+
+</div></details><details class="sec" id="計算機や-ai-と一緒に考える力" open><summary>計算機や AI と一緒に考える力</summary><div class="secbody">
+
+
+<p><a id="ea-ai"></a>ここまでの名前は、機械にしにくいことの側から付いていました。計算機と AI の側では、機械を使い、機械と一緒に考えることそのものに、名前が付きました。</p>
+<p>計算機科学者のウィングは 2006 年に、計算論的思考は計算機科学者だけでなく、だれにとっても基本のスキルだ、と書きました。読み・書き・計算に加えて、計算論的思考を、どの子どもの分析の力にも足すべきだ、というのです。計算論的思考は、計算機科学の基本の考え方を使って、問題を解き、仕組みを設計し、人のふるまいを理解することです。背景には、どこにでも計算機がある暮らし（ユビキタス・コンピューティング）が、昨日の夢から今日の現実になった、という見方が置かれています。ウィングは 2017 年に、この語を自分の語として書き、問題を立て、その解き方を、人であれ機械であれ計算する者が実行できる形に書き表すときの思考の過程、と定め直しています。</p>
+<p>2020 年、ロングとマジェルコは、AI リテラシーを、AI の技術を批判的に評価し、AI と効果的にやりとりし、協力し、AI を道具として使えるようにする一組の能力、と定めました。AI が利用者の使う技術に組み込まれていく一方で、人々の理解は限られている、というのが二人の出発点です。</p>
+<p>欧州委員会の研究所は、2022 年に、市民のデジタルのコンピテンシーの枠組み（DigComp）を改め、AI のシステムとやりとりする市民の例を 73 本足しました。AI の知識そのものより、市民が AI のシステムとどうやりとりするかを扱う、と書いています。</p>
+<p>ユネスコは 2024 年に、生徒向けと教員向けの AI のコンピテンシーの枠組みを出しました。生徒向けは、人を中心に置く考え方・AI の倫理・AI の技術と使い方・AI のシステムの設計の四つの面に、十二のコンピテンシーを置いています。背景には、2022 年 11 月に生成 AI が公に出たことで AI の広がりがさらに速まったことと、学校で AI のカリキュラムを持つ国が 15 ほどしかなかったことが挙げられています。</p>
+<p>OECD と欧州委員会は、2026 年に AI リテラシーの枠組みを出しました。AI リテラシーを、AI に影響された世界で生きていくのに要る、技術の知識と、長く使えるスキルと、先に備える態度だと定め、AI リテラシーは AI の道具を使うこととは違う、とも書いています。四つの領域は、AI と関わる・AI で創る・AI を扱う・AI を形づくる、です。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：Wing, J. M. (<a href="https://doi.org/10.1145/1118178.1118215">2006</a>) Computational thinking. <em>Communications of the ACM</em> 49(3), 33–35（<a href="https://www.cs.cmu.edu/afs/cs/usr/wing/www/publications/Wing06.pdf">著者の CMU の頁の版</a>で本文照合済。だれにとっても基本のスキルと定義は p.33、ユビキタス・コンピューティングの一文は p.34）。Wing, J. M. (<a href="https://doi.org/10.17471/2499-4324/922">2017</a>) Computational thinking's influence on research and education for all. <em>Italian Journal of Educational Technology</em> 25(2), 7–14（出版社の PDF の <a href="https://web.archive.org/web/20250704205654/https://ijet.itd.cnr.it/index.php/td/article/download/922/874">Wayback の記録</a>で本文照合済。「what I call」は p.7、定め直しは p.8）。Long, D., &amp; Magerko, B. (<a href="https://doi.org/10.1145/3313831.3376727">2020</a>) What is AI literacy? Competencies and design considerations. <em>CHI 2020</em>, 1–16（著者の研究室の企画のサイトにあった版の <a href="https://web.archive.org/web/20250618030030/https://aiunplugged.lmc.gatech.edu/wp-content/uploads/sites/36/2020/08/CHI-2020-AI-Literacy-Paper-Camera-Ready.pdf">Wayback の記録</a>で本文照合済。出発点は p.1、定義は p.2）。Vuorikari, R., Kluzer, S., &amp; Punie, Y. (2022) <em>DigComp 2.2: The Digital Competence Framework for Citizens</em>（<a href="https://pact-for-skills.ec.europa.eu/document/download/dee1e64a-37b5-4fed-a970-0fa07c1f720e_en?filename=DigComp%202.2%20The%20Digital%20Competence%20Framework%20for%20Citizens.pdf">欧州委員会のサイトに置かれた JRC の版</a>で本文照合済。AI の付録は p.77）。UNESCO (<a href="https://doi.org/10.54675/JKJB9835">2024</a>) <em>AI competency framework for students</em>（<a href="https://www.cedefop.europa.eu/files/unesco_ai_competency_framework_for_students_.pdf">Cedefop が置いた UNESCO の版</a>で本文照合済。四つの面と十二は要約〔PDF の 3 枚目〕、生成 AI は序文〔PDF の 5 枚目〕、15 ほどの国は p.12）。教員向けは UNESCO (<a href="https://doi.org/10.54675/ZJTE2084">2024</a>) <em>AI competency framework for teachers</em>（<a href="https://discovery.ucl.ac.uk/id/eprint/10196729/1/UNESCO_AI_CFT_Final.pdf">UCL の機関リポジトリの版</a>で本文照合済。2022 年に教員向けの枠組みを持つ国は七つ、は p.13）。OECD &amp; European Commission (<a href="https://doi.org/10.1787/65cd27d4-en">2026</a>) <em>Empowering Learners for the Age of AI: An AI Literacy Framework</em>（<a href="https://ailiteracyframework.org/pdfs/framework_pdf/AILF_en.pdf">枠組みの公式のサイトの版</a>で本文照合済。定義と「AI literacy is different from AI tool use」は p.5、四つの領域は p.8）。</p>
+</details>
+
+</div></details><details class="sec" id="昔からあったものに名前を付け直す" open><summary>昔からあったものに、名前を付け直す</summary><div class="secbody">
+
+
+<p><a id="ea-rename"></a>新しい名前の中には、新しく見つかった働きでなく、昔から呼ばれてきたものに付け直された名前もあります。</p>
+<p>経済学者のヘックマンとカウツは 2012 年に、学力テストは、労働市場でも学校でも値打ちのあるソフトスキル（性格の特性・目標・動機・好み）を捉えそこなう、と書きました。二人は、これらは文献の中で多くの名前で呼ばれている、と並べています。ソフトスキル・性格の特性・非認知のスキル・非認知の能力・人格（キャラクター）・社会情動的スキルです。この論文は、名前を付ける理由を技術や自動化に置いていません。学力テストが測らないものが、人生の結果を左右するという実証に置いています。</p>
+<p>OECD は 2021 年に、十歳と十五歳の社会情動的スキルを各国で測った調査の、最初の結果を出しました。序文は、この報告で社会情動的スキルと呼ぶものは、人格や性格の特性という別の名前の方がなじみがあるかもしれない、と書いています。調べたスキルは、性格の心理学のビッグファイブ（開放性・誠実性・外向性・協調性・神経症傾向）の五つの群に束ねられています。報告は、これらのスキルを呼ぶ名前はさまざまだが、どれも同じ概念の範囲を指している、とも書いています。序文はまた、機械が真似しにくい創造性と好奇心は、自動化が職場に染みこむにつれて欠かせなくなる、と書いています。</p>
+<p>やり抜く力や成長の構えのような、構えや気質の名前の中身は「思考を動かす構えと体力」（工事中）で見ます。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：Heckman, J. J., &amp; Kautz, T. (<a href="https://doi.org/10.1016/j.labeco.2012.05.014">2012</a>) Hard evidence on soft skills. <em>Labour Economics</em> 19(4), 451–464（NBER の作業論文 w18121 の <a href="https://www.nber.org/system/files/working_papers/w18121/w18121.pdf">NBER が置いた版</a>で本文照合済。学力テストが捉えそこなうものは要旨、多くの名前は p.4）。OECD (<a href="https://doi.org/10.1787/92a11084-en">2021</a>) <em>Beyond Academic Learning: First Results from the Survey of Social and Emotional Skills</em>（<a href="https://read.oecd.org/10.1787/92a11084-en?format=pdf">OECD の公式の PDF</a> で本文照合済。「under a different name: character or personality traits」と、創造性と好奇心は p.7、ビッグファイブの五つの群は p.18、「all terms refer to the same conceptual space」は p.20）。</p>
+</details>
+
+</div></details><details class="sec" id="名前の一覧" open><summary>名前の一覧</summary><div class="secbody">
+
+
+<p><a id="ea-list"></a>このページで読んだ名前を、年の順に並べます。日本語の名前のうち、英語の原典のものは Claude の訳です。</p>
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>年</th>
+<th>名前</th>
+<th>名前を付けた所</th>
+<th>なぜ今と書いたか</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1996</td>
+<td>生きる力</td>
+<td>中央教育審議会</td>
+<td>変化の激しい、先行きの不透明な時代</td>
+</tr>
+<tr>
+<td>2003</td>
+<td>決まった手順でない分析の仕事・対人の仕事</td>
+<td>オーター・レヴィ・マーネイン</td>
+<td>情報技術が、規則に従う認知の仕事を安くした</td>
+</tr>
+<tr>
+<td>2005</td>
+<td>キー・コンピテンシー（反省的に考えて動く）</td>
+<td>OECD（DeSeCo）</td>
+<td>グローバル化・変わる技術・大量の情報</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>計算論的思考</td>
+<td>ウィング</td>
+<td>計算機がどこにでもある暮らしになった</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>社会人基礎力</td>
+<td>経済産業省の研究会</td>
+<td>国内市場の成熟・IT 化・新しい価値の創出</td>
+</tr>
+<tr>
+<td>2009</td>
+<td>創造性・批判的思考・コミュニケーション・協働</td>
+<td>P21</td>
+<td>複雑になる生活と仕事</td>
+</tr>
+<tr>
+<td>2012</td>
+<td>ソフトスキル・非認知のスキル</td>
+<td>ヘックマンとカウツ</td>
+<td>学力テストが測らないものが人生の結果を左右する</td>
+</tr>
+<tr>
+<td>2013</td>
+<td>創造的な知能・社会的な知能</td>
+<td>フレイとオズボーン</td>
+<td>機械学習とロボットが、決まった手順でない仕事に及ぶ</td>
+</tr>
+<tr>
+<td>2016</td>
+<td>複雑な問題を解く力・社会的スキル</td>
+<td>世界経済フォーラム</td>
+<td>第四次産業革命</td>
+</tr>
+<tr>
+<td>2016</td>
+<td>資質・能力の三つの柱</td>
+<td>中央教育審議会</td>
+<td>第４次産業革命と、進化した人工知能</td>
+</tr>
+<tr>
+<td>2017</td>
+<td>社会的スキル</td>
+<td>デミング</td>
+<td>計算機は人どうしのやりとりを真似るのが下手</td>
+</tr>
+<tr>
+<td>2018</td>
+<td>学ぶことを学ぶ・起業家のコンピテンシー</td>
+<td>欧州連合の理事会</td>
+<td>自動化される仕事が増えた</td>
+</tr>
+<tr>
+<td>2018</td>
+<td>人生 100 年時代の社会人基礎力</td>
+<td>経済産業省・中小企業庁の研究会</td>
+<td>「AI×データ」・スキルの「賞味期限」が短くなった</td>
+</tr>
+<tr>
+<td>2019</td>
+<td>変革を起こすコンピテンシー</td>
+<td>OECD</td>
+<td>デジタル化・気候変動・人工知能の進歩</td>
+</tr>
+<tr>
+<td>2020</td>
+<td>AI リテラシー</td>
+<td>ロングとマジェルコ</td>
+<td>AI が身の回りの技術に組み込まれた</td>
+</tr>
+<tr>
+<td>2020</td>
+<td>自己管理のスキル（回復力・柔軟性）</td>
+<td>世界経済フォーラム</td>
+<td>人と機械の仕事の分け方が変わる</td>
+</tr>
+<tr>
+<td>2021</td>
+<td>社会情動的スキル</td>
+<td>OECD</td>
+<td>機械が真似しにくい創造性と好奇心</td>
+</tr>
+<tr>
+<td>2022</td>
+<td>AI とやりとりする市民のデジタル・コンピテンシー</td>
+<td>欧州委員会の研究所</td>
+<td>AI のような新しい技術</td>
+</tr>
+<tr>
+<td>2024</td>
+<td>生徒と教員の AI コンピテンシー</td>
+<td>ユネスコ</td>
+<td>生成 AI の公開</td>
+</tr>
+<tr>
+<td>2025</td>
+<td>AI とビッグデータ・人を中心にしたスキル</td>
+<td>世界経済フォーラム</td>
+<td>AI と情報処理の技術</td>
+</tr>
+<tr>
+<td>2026</td>
+<td>AI リテラシー（四つの領域）</td>
+<td>OECD と欧州委員会</td>
+<td>AI に影響された世界</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>年は、このページで読んだ原典が出た年です。その名前が初めて使われた年とは限りません。</p>
+</div></details><details class="sec" id="なぜ今なのか" open><summary>なぜ今なのか</summary><div class="secbody">
+
+
+<p><a id="ea-why"></a>一覧の右の列を読むと、なぜ今かの書き方は、おおよそ四つに分かれて見えます。この四つの分け方は、このページが一覧を読んで立てた仮説で、原典のどれかが言っていることではありません。</p>
+<p>一つ目は、機械が引き受けられるようになった仕事の残りとして、名前を付ける形です。オーターらの決まった手順でない仕事、フレイとオズボーンのボトルネック、デミングの社会的スキル、欧州連合の勧告の前文、OECD の「人工知能はかなわない」、中央教育審議会の「与えられた目的の中での処理」が、これに当たります。</p>
+<p>二つ目は、変化が速く、先が読めないことを理由にする形です。生きる力の「変化の激しい、先行きの不透明な時代」や、社会人基礎力の改めの「賞味期限」が、これに当たります。</p>
+<p>三つ目は、機械を使い、機械と一緒に考えるために要るものとして、名前を付ける形です。計算論的思考、AI リテラシー、AI とビッグデータのスキルが、これに当たります。</p>
+<p>四つ目は、昔から性格や人柄と呼ばれてきたものを、能力の名前で呼び直す形です。ヘックマンとカウツの並べた多くの名前と、OECD の「別の名前の方がなじみがあるかもしれない」が、これに当たります。</p>
+<p>一つ目と三つ目は、機械に何ができるかを基準にして書かれています。そのため、機械にできることが変わるたびに、名前の並びも入れ替わるのかもしれません。世界経済フォーラムの報告では、2016 年に目立たせていたのは複雑な問題の解決と社会的スキルでしたが、2025 年には AI とビッグデータが、伸びるスキルの一番目に来ました。同じ 2025 年の報告は、雇い主が 2030 年までに、働く人の中核のスキルの 39% が変わると見込んでいる、と書いています。</p>
+<p>ここで、概要に置いた pjdhiro の見方に戻ります。四元数から演繹することは、能力の違いでなく状況の違いで、もう健脚である必要がないように、前提を問う力の方が優先される、という見方でした。このページで読んだ枠組みは、どれも、人の頭の中の働きそのものより、機械と人の分担という状況の側から、能力に名前を付けていました。2025 年の報告で、求められる量が最も減ると見込まれたスキルに、読み・書き・数学と並んで、手先の器用さと持久力が入っていたことも、健脚のたとえと同じ向きに見えます。ただし、これは雇い主の見込みで、測った結果ではありません。</p>
+<p>前提を問う力という名前そのものは、読んだ枠組みには出てきませんでした。近い所に触れているのは、OECD の 2005 年の要約が真ん中に置いた、反省的に考えて動くこと、2018 年の社会人基礎力の報告が並べた課題設定力と問題発見能力、OECD と欧州委員会の AI リテラシーの枠組みが態度の一つとして書いた、AI の使い方をめぐる前提や語られ方を問うこと、などです。どれも、ほかの名前の一部として置かれていて、それだけで測られてはいません。測られて残った整理の中で、仮説を思いつく力の名前が無いことは、「<a href="cognitive-abilities.html">頭脳の能力は、どう分けられてきたか</a>」の最後の章で見ています。</p>
+<p>新しい名前が、いま人の差になるかどうかは、このページの問いの外にあります。それは「<a href="capacity-after-ai.html">AI の時代に、差になるスキルは何か</a>」が考えています。名前の一つである創造的思考が何を指すかは「<a href="creative-thinking.html">創造的思考とは</a>」に、考えることのほかの面への道案内は「<a href="thinking.html">思考とは</a>」に、考えることにまつわるページの一覧は「<a href="shelf-thinking.html">思考を見るページ</a>」にあります。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：中核のスキルの 39% は World Economic Forum (2025) の p.32、減るスキルは p.38（<a href="https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf">WEF の PDF</a>）。課題設定力と問題発見能力は経済産業省・中小企業庁（2018）の p.28（<a href="https://web.archive.org/web/20200417134725id_/https://www.meti.go.jp/report/whitepaper/data/pdf/20180319001_1.pdf">Wayback の記録</a>）。AI リテラシーの枠組みの態度「Reflective」の「Learners question the assumptions and narratives surrounding AI use」は OECD &amp; European Commission (2026) の PDF の 26 枚目（<a href="https://ailiteracyframework.org/pdfs/framework_pdf/AILF_en.pdf">公式のサイトの版</a>）。ほかの文献の書誌と写しは、各章の出典にあります。</p>
+</details>
+
+</div></details><details class="sec" id="原典と読む順"><summary>原典と、読む順</summary><div class="secbody">
+<p><a id="ea-sources"></a>このページで読んだ原典は、どれも無料で読めます。まず読むなら、次の順です。</p>
+<ul>
+<li>OECD の DeSeCo の要約（2005）：コンピテンシーの語が、なぜ今要るのかを短く書いています。<a href="https://web.archive.org/web/20201209195551id_/http://www.oecd.org/pisa/35070367.pdf">OECD のサイトの PDF の Wayback の記録</a>。</li>
+<li>フレイとオズボーン（2013）：自動化のボトルネックの三つ。pp.23–27 を読むと、創造と社会的な知能が、なぜ名指されたかが分かります。<a href="https://www.oxfordmartin.ox.ac.uk/downloads/academic/The_Future_of_Employment.pdf">Oxford Martin School の版</a>。</li>
+<li>中央教育審議会の第一次答申（1996）：生きる力の名付け。第１部の (2) と (3)。<a href="https://web.archive.org/web/20191015095341id_/http://www.mext.go.jp/b_menu/shingi/chuuou/toushin/960701e.htm">文部科学省の頁の Wayback の記録</a>。</li>
+<li>ウィング（2006）：3 頁で、計算論的思考の呼びかけが読めます。<a href="https://www.cs.cmu.edu/afs/cs/usr/wing/www/publications/Wing06.pdf">著者の頁の版</a>。</li>
+<li>世界経済フォーラム（2025）：伸びるスキルと減るスキルの並び。第 3 章。<a href="https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf">WEF の PDF</a>。</li>
+</ul>
+</div></details><details class="sec" id="このページの作り方"><summary>このページの作り方</summary><div class="secbody">
+<p><a id="ea-method"></a>このページは、pjdhiro の問いに、Claude が原典を読んで書いたものです。原典の写しは、著者・大学・研究機関・公的機関・国際機関・出版社が置いたものか、その Wayback の記録を探し、引いた文は本文で確かめました。経済学の四本の論文は、雑誌の版が有料なので、著者の所属の機関や NBER が置いた作業論文の版で読み、頁は作業論文の頁で書きました。英文の訳と、英語の名前の日本語の訳は、どれも Claude です。章の分け方（仕事・雇い主の見込み・教育・日本の学校と職場・計算機と AI・名前の付け直し）と、なぜ今かの四つの読みは、Claude がしたものです。</p>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="thinking.html">思考とは</a> ・
+                <a href="shelf-thinking.html">思考を見るページ</a> ・
+                <a href="creative-thinking.html">創造的思考とは</a> ・
+                <a href="cognitive-abilities.html">頭脳の能力は、どう分けられてきたか</a> ・
+                <a href="capacity-after-ai.html">AI の時代に、差になるスキルは何か</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
