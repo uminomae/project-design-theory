@@ -325,6 +325,61 @@ body.reader-flow .reader-article .tablefit.cols-4 td:nth-child(3) { width: 26%; 
 /* 先頭が回の番号のような細い列の表（business-design-syllabus の 15 回の表・2026-11-10） */
 body.reader-flow .reader-article .tablefit.num-first th:first-child,
 body.reader-flow .reader-article .tablefit.num-first td:first-child { width: 2.4em; }
+/* 目次「複素平面で考える」の表：左の「考えるページ」が主、右の法則の名前と説明が従（pjdhiro 2026-11-26・付箋 i2026112604185984o
+   「テーブルの左が考えるページで、それがメイン、概念名やその解説はサブ的なものと明確に分けたい」）。
+   主は大きく濃く、従は小さく淡く。狭い幅では行ごとに積み、主を上に、従をその下に字下げして置く */
+body.reader-flow .reader-article .tablefit.cp-main th:first-child,
+body.reader-flow .reader-article .tablefit.cp-main td:first-child { width: 42%; }
+body.reader-flow .reader-article .tablefit.cp-main .cp-think {
+    display: block;
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.55;
+}
+body.reader-flow .reader-article .tablefit.cp-main .cp-think-note {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.8rem;
+    color: var(--mute);
+}
+body.reader-flow .reader-article .tablefit.cp-main .cp-none { color: var(--mute); font-size: 0.85rem; }
+body.reader-flow .reader-article .tablefit.cp-main td:nth-child(2) { color: var(--mute); font-size: 0.8rem; line-height: 1.6; }
+body.reader-flow .reader-article .tablefit.cp-main .cp-law { display: block; font-size: 0.86rem; margin-bottom: 2px; }
+body.reader-flow .reader-article .tablefit.cp-main .cp-num {
+    display: inline-block;
+    min-width: 1.6em;
+    margin-right: 4px;
+    color: var(--mute);
+    font-variant-numeric: tabular-nums;
+}
+body.reader-flow .reader-article .tablefit.cp-main .cp-sub { display: block; margin-top: 2px; }
+body.reader-flow .reader-article .tablefit.cp-main .cp-sub b { font-weight: 500; }
+@media (max-width: 600px) {
+    body.reader-flow .reader-article .tablefit.cp-main thead { display: none; }
+    body.reader-flow .reader-article .tablefit.cp-main table,
+    body.reader-flow .reader-article .tablefit.cp-main tbody,
+    body.reader-flow .reader-article .tablefit.cp-main tr,
+    body.reader-flow .reader-article .tablefit.cp-main td { display: block; width: auto; }
+    body.reader-flow .reader-article .tablefit.cp-main tr { border-bottom: 1px solid var(--glass-border-soft); padding: 10px 12px; }
+    body.reader-flow .reader-article .tablefit.cp-main tbody tr:last-child { border-bottom: none; }
+    body.reader-flow .reader-article .tablefit.cp-main td { border-bottom: none; padding: 0; }
+    body.reader-flow .reader-article .tablefit.cp-main td:first-child { width: auto; }
+    body.reader-flow .reader-article .tablefit.cp-main td:nth-child(2) {
+        margin: 8px 0 0 0.9em;
+        padding-left: 10px;
+        border-left: 2px solid var(--glass-border-soft);
+    }
+    body.reader-flow .reader-article .tablefit.cp-main td:first-child::before,
+    body.reader-flow .reader-article .tablefit.cp-main td:nth-child(2)::before {
+        display: block;
+        font-size: 0.7rem;
+        letter-spacing: 0.06em;
+        color: var(--mute);
+        margin-bottom: 2px;
+    }
+    body.reader-flow .reader-article .tablefit.cp-main td:first-child::before { content: "考えるページ"; }
+    body.reader-flow .reader-article .tablefit.cp-main td:nth-child(2)::before { content: "もとにする法則"; }
+}
 /* 狭い幅で、表の見出しが語の中で折れないよう、句を一まとまりにする（正本で <span class="nw">…</span>。
    折れるのは句と句のあいだだけ。句そのものより列が狭ければ、句の中でも折れる。Love駆動開発の #ldd-compare の
    「近く見える／ところ」が「とこ／ろ」と折れた・2026-11-18 #177） */
