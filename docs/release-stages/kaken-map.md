@@ -14,7 +14,7 @@
 | うち読み物のページだけ・cs だけ・両方 | 11・50・29 |
 | 中区分 | 触れている 40 / 66 |
 | 大区分 | 触れている 13 / 13（触れていない：なし） |
-| 読み物のページ | 91（区分に当てた 83・当てない 8） |
+| 読み物のページ | 91（区分に当てた 84・当てない 7） |
 | cs の分野 | 30（どれも一つ以上の区分に当てた） |
 
 区分に当てないページ：abilities・complex-plane・love-trajectory・shelf-love・shelf-mind・shelf-number-org・shelf-translations。並びや目次のページ（中身は呼ぶ先のページの側）と、pjdhiro の一年の記録（love-trajectory）。
@@ -38,7 +38,7 @@
 | 7 経済学、経営学およびその関連分野 | 4 / 10 | ○ 70040 観光学<br>● 07010 理論経済学および経済学史（mandeville-grumbling-hive-ja・newcomb-political-economy-ja・D21）<br>○ 07020 経済政策<br>● 07030 公共経済および労働経済（capacity-after-ai・emerging-abilities）<br>● 07040 金融およびファイナンス（D21）<br>○ 07050 経済史<br>● 07060 経営学（business-design-syllabus・decision-making・influences-management・julia-potential・love-driven-dev・love-driven-dev-en・management-drivers・mintzberg-schools・nonaka-complement・psychological-safety・psychological-safety-en・three-and-seven・D07・D22）<br>○ 07070 商学<br>○ 07080 会計学<br>○ 07090 経済統計および経営情報 |
 | 8 社会学およびその関連分野 | 1 / 5 | ○ 70040 観光学<br>○ 70050 ジェンダー<br>● 08010 社会学（quetelet-lettres-probabilites-ja・D18）<br>○ 08020 社会福祉学<br>○ 08030 家政学および生活科学 |
 | 9 教育学およびその関連分野 | 4 / 10 | ○ 70010 日本語教育<br>○ 70020 外国語教育<br>● 09010 教育学（creative-thinking・emerging-abilities・D13）<br>○ 09020 教育社会学<br>● 09030 子ども学および保育学（D23）<br>● 09040 教科教育学および初等中等教育学（angle-rotation・rotation-multiplication・zen-circle-hs）<br>● 09050 高等教育学（business-design-syllabus）<br>○ 09060 特別支援教育<br>○ 09070 教育工学<br>○ 09080 科学教育 |
-| 10 心理学およびその関連分野 | 5 / 5 | ● 10010 社会心理学（anshin・empathy・intrinsic-motivation・psychological-safety・psychological-safety-en・D14・D22）<br>● 10020 教育心理学（capacity-after-ai・cognitive-abilities・creative-thinking・developmental-stages・emerging-abilities・influences-psychology・intrinsic-motivation・metacognition・personality・stages-defense・stages-screener・D23）<br>● 10030 臨床心理学（anxiety・defense-mechanisms・empathy・influences-psychology・love-driven-dev・love-driven-dev-en・personality・shikan・stages-defense・stages-screener・via-vulnerability・D14・D15）<br>● 10040 実験心理学（breath-filter・cognitive-abilities・decision-making・thinking-definitions・D14・D26）<br>● 80030 認知科学（creative-thinking・empathy・fundamental-theorem-of-algebra-analogy・metacognition・reasoning・thinking・D08・D14） |
+| 10 心理学およびその関連分野 | 5 / 5 | ● 10010 社会心理学（anshin・empathy・intrinsic-motivation・psychological-safety・psychological-safety-en・D14・D22）<br>● 10020 教育心理学（capacity-after-ai・cognitive-abilities・creative-thinking・developmental-stages・emerging-abilities・influences-psychology・intrinsic-motivation・metacognition・personality・stages-defense・stages-screener・D23）<br>● 10030 臨床心理学（anxiety・defense-mechanisms・empathy・influences-psychology・love-driven-dev・love-driven-dev-en・personality・shikan・stages-defense・stages-screener・via-vulnerability・D14・D15）<br>● 10040 実験心理学（analogy・breath-filter・cognitive-abilities・decision-making・thinking-definitions・D14・D26）<br>● 80030 認知科学（analogy・creative-thinking・empathy・fundamental-theorem-of-algebra-analogy・metacognition・reasoning・thinking・D08・D14） |
 
 ### 大区分 B（12 / 20）
 
@@ -146,7 +146,7 @@
 | 中区分 | 触れている | 小区分 |
 |---|---|---|
 | 60 情報科学、情報工学およびその関連分野 | 4 / 10 | ● 60010 情報学基礎論（D07）<br>○ 60020 数理情報学<br>○ 60030 統計科学<br>○ 60040 計算機システム<br>● 60050 ソフトウェア（vibe-to-code・D07）<br>● 60060 情報ネットワーク（D07）<br>● 60070 情報セキュリティ（D07）<br>○ 60080 データベースおよびビッグデータ<br>○ 60090 高性能計算<br>○ 60100 計算科学 |
-| 61 人間情報学およびその関連分野 | 5 / 8 | ● 80010 デザイン学（D22）<br>● 80030 認知科学（creative-thinking・empathy・fundamental-theorem-of-algebra-analogy・metacognition・reasoning・thinking・D08・D14）<br>○ 61010 知覚情報処理<br>● 61020 ヒューマンインタフェースおよびインタラクション（vibe-to-code）<br>● 61030 知能情報学（capacity-after-ai・reading-directions・D07）<br>● 61040 ソフトコンピューティング（D29）<br>○ 61050 知能ロボティクス<br>○ 61060 感性情報学 |
+| 61 人間情報学およびその関連分野 | 5 / 8 | ● 80010 デザイン学（D22）<br>● 80030 認知科学（analogy・creative-thinking・empathy・fundamental-theorem-of-algebra-analogy・metacognition・reasoning・thinking・D08・D14）<br>○ 61010 知覚情報処理<br>● 61020 ヒューマンインタフェースおよびインタラクション（vibe-to-code）<br>● 61030 知能情報学（capacity-after-ai・reading-directions・D07）<br>● 61040 ソフトコンピューティング（D29）<br>○ 61050 知能ロボティクス<br>○ 61060 感性情報学 |
 | 62 応用情報学およびその関連分野 | 0 / 5 | ○ 80020 人文社会情報学および図書館情報学<br>○ 62010 生命、健康および医療情報学<br>○ 62020 ウェブ情報学およびサービス情報学<br>○ 62030 学習支援システム<br>○ 62040 エンタテインメントおよびゲーム情報学 |
 
 ### 大区分 M（2 / 10）
