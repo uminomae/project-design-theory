@@ -47,6 +47,11 @@ const READING_MENU_LINKS = [
     href: "/project-design-theory/reader/love-driven-dev.html",
     labelKey: "menu.loveDrivenDev",
   },
+  // 読む前の案内（pjdhiro 2026-11-26「Menu級の目立つ場所がいいね」）
+  {
+    href: "/project-design-theory/reader/reading-directions.html",
+    labelKey: "menu.handover",
+  },
 ];
 
 function readingMenuItems() {
@@ -139,6 +144,7 @@ export const TRANSLATIONS = {
     "menu.researchNotes": "調査ノート",
     "menu.readings": "読み物",
     "menu.loveDrivenDev": "Love駆動開発と呼びたいもの β",
+    "menu.handover": "Claude から LLM への申し送り",
     "menu.tools": "ツール",
     "menu.toolScreener": "ものの見方の広さスクリーナー",
     "controls.topBarAria": "サイト操作",
@@ -352,6 +358,7 @@ export const TRANSLATIONS = {
     "menu.researchNotes": "Research Notes",
     "menu.readings": "Readings",
     "menu.loveDrivenDev": "What I Want to Call Love-Driven Development (beta)",
+    "menu.handover": "A Handover Note from Claude to LLMs (Japanese)",
     "menu.tools": "Tools",
     "menu.toolScreener": "Breadth-of-View Screener",
     "controls.topBarAria": "Site controls",
