@@ -10,7 +10,7 @@
 
 「考える」ことの面を、どの順に読むとよいかの道案内は、「[思考とは](thinking.html)」にあります。このページは、「考える」ことに関わるほかのページも含めた一覧です。
 
-ほかの並びは、[心の動きを見るページ](shelf-mind.html)・[Love と愛、創造を見るページ](shelf-love.html)・[数と組織を見るページ](shelf-number-org.html)・[原典を日本語で読む](shelf-translations.html)です。
+ほかの並びは、[能力とは](abilities.html)・[心の動きを見るページ](shelf-mind.html)・[私を見るページ](shelf-self.html)・[Love と駆動源を見るページ](shelf-love.html)・[数と回転を見るページ](shelf-number.html)・[経営と組織を見るページ](shelf-org.html)・[原典を日本語で読む](shelf-translations.html)です。
 
 ## 「考える」ことを、一つずつ分けて見る
 
