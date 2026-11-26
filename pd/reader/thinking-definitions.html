@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/thinking-definitions.html を直接編集しないでください。
+  正本:   knowledge/research/thinking/READER-thinking-definitions.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「「考える」の語は、何を指してきたか」のページです（工事中）。思考のモジュールへの道案内のページ「思考とは」（thinking.html）から呼ばれる一つ。「考える」の語が、哲学の歴史と心理学で何を指して使われてきたかを、一つの定義に決めずに並べる独立ページ。並べる面は、日本語の古い意味（いくつかの物事を引き比べて調べる・日本国語大辞典）、プラトンの魂が自分と交わす声の無い対話（『テアイテトス』189e–190a・『ソフィスト』263e）、アリストテレスの像の中で考える知性（『魂について』第 3 巻）、デカルトとジェームズの意識に起きることのすべて、カントの表象を一つの意識の中で結ぶこと＝判断（『プロレゴメナ』§22・『純粋理性批判』A51/B75）、デューイの四つの意味と反省的思考（『How We Think』1910 第 1 章）、この 50 年の定義（サイモン 1978 のノーベル賞講演・ホリオークとモリソン 2012『オックスフォード 思考と推論の手引き』第 1 章・APA 心理学辞典 2018）、頭の外まで広がる思考（クラークとチャルマーズ 1998「拡張された心」・ウィルソン 2002「身体化された認知の六つの見方」）、心理学の教科書（OpenStax『Psychology 2e』第 7 章）、カーネマンの二つの系（2002 年のノーベル賞講演）。どれも原典の本文で照合した。二十の定義を、Claude と別のエージェントが三十一の問いで別々に符号化し（κ 0.85。場面の視点だけ 0.36）、群平均法で七つの群に、対応分析で三つの軸に分けた。データとスクリプトは pd/knowledge/research/thinking/classify/。
+  多くの使い方に共通して、二つのものを引き比べ、一つに結ぶ動きが見える、というのはこのページの仮説で、原典の記述ではない。推論・頭脳の能力の分け方ほか、考えることのほかの面は、道案内の「思考とは」（thinking.html）から別の独立ページへ辿る。群と視点の表の作り方は巻末に置いた。
+  引用の訳は Claude によるもので、人の校閲はしていない。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「考える」の語は、何を指してきたか | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/thinking-definitions.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="「考える」は、哲学の歴史と心理学で何を指す言葉として使われてきたか。日本語の古い意味（引き比べて調べる）、プラトン（魂が自分と交わす声の無い対話）、アリストテレス（像の中で考える）、デカルトとジェームズ（意識に起きることのすべて）、カント（表象を一つの意識の中で結ぶこと＝判断）、デューイ（四つの意味と、根拠に照らして確かめる反省的思考）、この 50 年の認知科学（サイモンの探索・ホリオークとモリソンの、知識の表象を系統立てて変えていくこと・APA 心理学辞典）、頭の外まで広がる思考（クラークとチャルマーズの拡張された心・ウィルソンの身体化された認知）、心理学の教科書（認知の一部）、カーネマン（速い直観と遅い推論）を、一つに決めずに年表に並べ、二十の定義を三十一の問いで符号化して統計（群平均法の群分けと対応分析）で七つの群に分け、場所・道具・働き・場面・性格の五つの視点で並べ直す独立ページ（工事中）。">
+    <meta property="og:title" content="「考える」の語は、何を指してきたか">
+    <meta property="og:description" content="「考える」は、哲学の歴史と心理学で何を指す言葉として使われてきたか。日本語の古い意味（引き比べて調べる）、プラトン（魂が自分と交わす声の無い対話）、アリストテレス（像の中で考える）、デカルトとジェームズ（意識に起きることのすべて）、カント（表象を一つの意識の中で結ぶこと＝判断）、デューイ（四つの意味と、根拠に照らして確かめる反省的思考）、この 50 年の認知科学（サイモンの探索・ホリオークとモリソンの、知識の表象を系統立てて変えていくこと・APA 心理学辞典）、頭の外まで広がる思考（クラークとチャルマーズの拡張された心・ウィルソンの身体化された認知）、心理学の教科書（認知の一部）、カーネマン（速い直観と遅い推論）を、一つに決めずに年表に並べ、二十の定義を三十一の問いで符号化して統計（群平均法の群分けと対応分析）で七つの群に分け、場所・道具・働き・場面・性格の五つの視点で並べ直す独立ページ（工事中）。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/thinking-definitions.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="「考える」の語は、何を指してきたか">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-26">
+    <meta property="article:modified_time" content="2026-11-26">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "「考える」の語は、何を指してきたか",
+          "description": "「考える」は、哲学の歴史と心理学で何を指す言葉として使われてきたか。日本語の古い意味（引き比べて調べる）、プラトン（魂が自分と交わす声の無い対話）、アリストテレス（像の中で考える）、デカルトとジェームズ（意識に起きることのすべて）、カント（表象を一つの意識の中で結ぶこと＝判断）、デューイ（四つの意味と、根拠に照らして確かめる反省的思考）、この 50 年の認知科学（サイモンの探索・ホリオークとモリソンの、知識の表象を系統立てて変えていくこと・APA 心理学辞典）、頭の外まで広がる思考（クラークとチャルマーズの拡張された心・ウィルソンの身体化された認知）、心理学の教科書（認知の一部）、カーネマン（速い直観と遅い推論）を、一つに決めずに年表に並べ、二十の定義を三十一の問いで符号化して統計（群平均法の群分けと対応分析）で七つの群に分け、場所・道具・働き・場面・性格の五つの視点で並べ直す独立ページ（工事中）。",
+          "keywords": "思考, 考える, 思考とは, thinking, プラトン, アリストテレス, ヌース, デカルト, カント, 悟性, 理性, 判断, ウィリアム・ジェームズ, デューイ, 反省的思考, How We Think, 認知, 問題解決, カーネマン, システム1, システム2, サイモン, ホリオーク, 表象, 拡張された心, 身体化された認知, 創造的思考, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/thinking-definitions.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/thinking-definitions.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-26",
+          "dateModified": "2026-11-26",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "思考"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "問いを立てた対話の相手"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「「考える」の語は、何を指してきたか」のページです（工事中）。「考える」は、哲学の歴史と心理学で何を指す言葉として使われてきたか。日本語の古い意味（引き比べて調べる）、プラトン（魂が自分と交わす声の無い対話）、アリストテレス（像の中で考える）、デカルトとジェームズ（意識に起きることのすべて）、カント（表象を一つの意識の中で結ぶこと＝判断）、デューイ（四つの意味と、根拠に照らして確かめる反省的思考）、この 50 年の認知科学（サイモンの探索・ホリオークとモリソンの、知識の表象を系統立てて変えていくこと・APA 心理学辞典）、頭の外まで広がる思考（クラークとチャルマーズの拡張された心・ウィルソンの身体化された認知）、心理学の教科書（認知の一部）、カーネマン（速い直観と遅い推論）を、一つに決めずに年表に並べ、二十の定義を三十一の問いで符号化して統計（群平均法の群分けと対応分析）で七つの群に分け、場所・道具・働き・場面・性格の五つの視点で並べ直す独立ページ（工事中）。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b><br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>「考える」の語は、何を指してきたか</h1>
+                <p class="reader-subtitle">哲学の歴史と心理学の、二十の定義を並べる</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-26 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/thinking/READER-thinking-definitions.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<div class="reader-lead glow-card" id="th-gist"><span class="reader-lead__label">ざっくりいうと</span>
+<p>「考える」は、古代の哲学から、この 50 年の認知科学まで、幅の違ういくつもの使われ方をしてきました。意識に起きることのすべてを指す広い使い方から、根拠に照らして確かめることだけを指す狭い使い方までです。</p>
+<p>このページは、それを一つに決めずに年表に並べ、二十の定義を七つの群に分け、場所・道具・働き・場面・性格の五つの視点で並べ直します。時代をまたいでいちばん多く出るのは、判断することです。考える場所は、魂から、意識、頭と脳へ移り、この 50 年には体と頭の外も入りました。</p>
+</div>
+
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p class="reader-lead"><span class="reader-lead__label">問い</span>「考える」は、哲学の歴史と心理学で、何を指す言葉として使われてきたのでしょうか。</p>
+
+<p>このページは、考えることを一つずつ分けて見るページの一つで、「考える」という語そのものを見ます。ほかの面（推論・頭の能力・新しい考えが生まれるところ など）への道案内は「<a href="thinking.html">思考とは</a>」にあります。創造的思考という言葉が何を指すのかを考えるために、その部品になる頭の働きの言葉から見直したい、という pjdhiro の話から始まり、Claude が原典を調べて書いています。</p>
+<div class="reader-lead"><span class="reader-lead__label">今の答え</span>
+「考える」の語は、一つのものを指してきたわけではありません。デカルトとジェームズは、意識に起きることのすべてを思考と呼びました。アリストテレスは、像を受け取り、像の中で考える働きとして書きました。プラトンは、魂が自分に問いを出して答える、声の無い対話として書きました。カントは、表象（心に浮かんだもの）を一つの意識の中で結ぶこと、つまり判断することと書きました。デューイは、この語の使われ方を四つに分け、そのうち根拠に照らして確かめる考えを「反省的思考」と呼びました。この 50 年の認知科学は、思考を、実際の、またはありうる世界の状態を描くために、知識の心の表象を系統立てて変えていくこと、と定めます（ホリオークとモリソン）。同じころ、体の仕組みや、ノートのような頭の外の道具まで、考える働きに入れて見る研究も出てきました（クラークとチャルマーズ・ウィルソン）。心理学の教科書は、考えることを認知の一部に置き、問題解決・判断・言語・知能に分けて扱います。二十の定義を、似たものどうしでまとめると、七つの群になりました。どれも、考えるという働きの一つの面に触れている、とこのページは読みます。
+</div>
+
+<div class="reader-lead"><span class="reader-lead__label">構成</span>
+<ul class="reader-lead__list">
+<li><b>語の出どころ</b>：日本語の「考える」が、もとは何をする語だったかを見ます。</li>
+<li><b>哲学の歴史</b>：プラトン・アリストテレス・デカルト・カント・デューイが、考えることを何として書いたかを、時代の順に見ます。</li>
+<li><b>この 50 年</b>：認知科学が思考をどう定めてきたかと、考えることを体や頭の外の道具まで広げて見る研究を見ます。</li>
+<li><b>心理学の教科書</b>：教科書が思考をどう分けて扱うかと、速い直観と遅い推論の区別を見ます。</li>
+<li><b>群と視点で並べ直す</b>：二十の定義を七つの群に分け、場所・道具・働き・場面・性格の五つの視点で並べ直します。</li>
+<li><b>並べて見えること</b>：使われ方の幅と、共通するところを見ます。巻末に、原典を読む順と、群の分け方の作り方と、保持論点を置きます。</li>
+</ul>
+</div>
+
+<p class="reader-lead"><span class="reader-lead__label">年表</span></p>
+
+<div class="tablefit cols-3">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>いつ</th>
+<th>誰が</th>
+<th>思考を、何として書いたか</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>前 4 世紀</td>
+<td>プラトン</td>
+<td>魂が自分と交わす、声の無い対話。仮に置いたものから結論へ下る悟性</td>
+</tr>
+<tr>
+<td>前 4 世紀</td>
+<td>アリストテレス</td>
+<td>対象の形を受け取り、像なしには考えない知性</td>
+</tr>
+<tr>
+<td>720 年の書物の訓みから</td>
+<td>日本語の「かむがふ」</td>
+<td>いくつかの物事を引き比べて調べること</td>
+</tr>
+<tr>
+<td>1641・1644 年</td>
+<td>デカルト</td>
+<td>私たちの中で起きて、直接に意識していることのすべて</td>
+</tr>
+<tr>
+<td>1781・1783 年</td>
+<td>カント</td>
+<td>表象を一つの意識の中で結ぶこと。それは判断することと同じ</td>
+</tr>
+<tr>
+<td>1890 年</td>
+<td>ジェームズ</td>
+<td>意識のどの形も。思考は川のように流れる</td>
+</tr>
+<tr>
+<td>1910 年</td>
+<td>デューイ</td>
+<td>語の四つの意味と、根拠に照らして確かめる反省的思考</td>
+</tr>
+<tr>
+<td>1978 年</td>
+<td>サイモン</td>
+<td>とても大きな問題の空間を、経験則で選びながら探すこと</td>
+</tr>
+<tr>
+<td>1998 年</td>
+<td>クラークとチャルマーズ</td>
+<td>頭の外の道具も、考える働きに入りうる</td>
+</tr>
+<tr>
+<td>2002 年</td>
+<td>カーネマン</td>
+<td>速く自動の系 1 と、遅く意図して進める系 2</td>
+</tr>
+<tr>
+<td>2002 年</td>
+<td>ウィルソン</td>
+<td>今ここに無いものを考えるときも、体の仕組みを使う</td>
+</tr>
+<tr>
+<td>2012 年</td>
+<td>ホリオークとモリソン</td>
+<td>世界を描くために、知識の心の表象を系統立てて変えていくこと</td>
+</tr>
+<tr>
+<td>2018 年</td>
+<td>アメリカ心理学会の心理学辞典</td>
+<td>外からは見えず、記号を扱うように見える働き</td>
+</tr>
+<tr>
+<td>2020 年</td>
+<td>心理学の教科書</td>
+<td>認知とは考えること。知覚・知識・問題解決・判断・言語・記憶に関わる</td>
+</tr>
+<tr>
+<td>今</td>
+<td>国語辞典</td>
+<td>「考える」は知的に分析すること、「思う」は情や感覚の働き</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<details class="sec" id="日本語の考えるは引き比べて調べることから" open><summary>日本語の「考える」は、引き比べて調べることから</summary><div class="secbody">
+
+
+<p><a id="th-word"></a>日本語の「考える」は、古くは「かむがふ」とも書かれました。日本国語大辞典は、この語の意味の一つ目に、いくつかの物事を引き比べて調べること、勘案することを挙げています。その実例は『日本書紀』（720 年）の訓みにまでさかのぼります。物事を筋道を立てて思いはかる、あれこれと頭を働かせて判断する、という今のふつうの意味は、そのあとに並んでいます。ほかに、罪を問いただすこと、占って吉凶を判断することも、この語の意味でした。</p>
+<p>たとえば、二つの店の値段と品を見比べて、どちらで買うかを決めるとき、私たちは「考えた」と言います。古い意味は、この見比べる動きのほうに近いものでした。</p>
+<p>国語辞典は、「考える」と「思う」の違いも書いています。デジタル大辞泉は、「考える」は知的に分析すること、「思う」は情や感覚の心の働きや、瞬間的な判断を示す、と分けます。大きな音を聞いてすぐに「雷が落ちたかと思った」とは言っても、「考えた」とは言わない、という例が添えられています。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：『精選版 日本国語大辞典』「考える」（小学館。<a href="https://kotobank.jp/word/%E8%80%83%E3%81%88%E3%82%8B-469308">コトバンクの項</a>で本文照合済。意味の ① 「いくつかの物事をひきくらべて調べる。勘案する」と ④ 「物事を、筋道を立てて思いはかる」と、それぞれの初出の実例）。／『デジタル大辞泉』「考える」（小学館。<a href="https://kotobank.jp/word/%E8%80%83%E3%81%88%E3%82%8B-469308">同じコトバンクの項</a>で本文照合済。「用法」の欄の「思う」との違い）。</p>
+</details>
+
+</div></details><details class="sec" id="魂が自分と交わす声の無い対話プラトン" open><summary>魂が自分と交わす、声の無い対話（プラトン）</summary><div class="secbody">
+
+
+<p><a id="th-plato"></a>古代ギリシャの哲学者プラトンは、対話篇『テアイテトス』で、ソクラテスにこう語らせています。考えるとは、何かを考えるときに、魂が自分自身と交わす対話のことだ。考えている魂は、ただ話しているように見える。自分に問いを出し、それに答え、肯定し、否定している。そして、迷わなくなって一つに決まったところを、魂の「思い」と呼ぶ、と。ソクラテスは、この段を、よく分からないことを話している、と前置きしています。</p>
+<p>同じプラトンの『ソフィスト』も、思考と呼ばれるものは、魂が自分自身と交わす、声に出さない対話だ、と書きます。唇を通って聞こえる流れが言葉で、思いは考えることの終わりだ、と続けます。</p>
+<p>たとえば、テストの答えを見直すときに、心の中で「本当にこれでいいのかな」と問い、「いや、ここは違う」と答えることがあります。プラトンが書く思考は、この心の中の問いと答えのやりとりに近いものです。</p>
+<details class="acc"><summary>詳しく — 仮設から下る思考と、原理へ上る知（『国家』）</summary>
+
+<p><a id="th-plato-line"></a>プラトンは『国家』の第 6 巻で、知ることを一本の線の四つの区切りにたとえています。その結びで、幾何学のような学問の働きを、理性でなく悟性（ディアノイア）と呼びます。幾何学は、仮に置いたもの（仮設）から出発して結論へ下り、仮設の手前の原理へは上らないからです。悟性は、思いと理性の中間にある、と書きます。魂の働きは、上から理性・悟性・確信・影の知覚の四つで、それぞれの明るさは、対象の真であることの度合いに応じる、とされます。</p>
+<p>同じ「考える」の中に、仮に置いたものから段を踏んで結論へ下る働きと、その手前の原理へ上る働きとが、分けて置かれています。段を踏んで結論を導く働きの形（演繹・帰納・仮説・類推）は、「<a href="reasoning.html">推論とは</a>」で見ています。</p>
+<p>出典：プラトン『国家』第 6 巻 511d–e（Jowett 訳。<a href="http://classics.mit.edu/Plato/republic.7.vi.html">MIT の Internet Classics Archive の第 6 巻</a>で本文照合済。「understanding and not reason, as being intermediate between opinion and reason」と、四つの働きの段）。</p>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p>出典：プラトン『テアイテトス』189e–190a・『ソフィスト』263e（Jowett 訳『The Dialogues of Plato』第 3 版 第 4 巻、Oxford University Press 1892。<a href="https://archive.org/details/b24750189_0004">Internet Archive のウェルカム図書館の所蔵の走査</a>で本文照合済。『テアイテトス』の「I mean the conversation which the soul holds with herself in considering of anything」「asking questions of herself and answering them, affirming and denying」、『ソフィスト』の「what is called thought is the unuttered conversation of the soul with herself」）。</p>
+</details>
+
+</div></details><details class="sec" id="像を受け取り像の中で考えるアリストテレス" open><summary>像を受け取り、像の中で考える（アリストテレス）</summary><div class="secbody">
+
+
+<p><a id="th-aristotle"></a>プラトンの弟子のアリストテレスは、『魂について』の第 3 巻で、考えることを、知覚することと並べて書きました。考えることが知覚に似ているなら、魂の考える部分は、対象の形を受け取れるものでなければならない。対象そのものではないが、対象と同じ性格になりうるもの、と。知性（ヌース）とは、魂がそれによって考え、判断するもので、考える前には、まだ何ものでもない、と書きます。そのたとえが、まだ何も書かれていない書板です。</p>
+<p>アリストテレスは、続けて、魂は像なしに考えることはない、とも書いています。考える魂にとって、像は、知覚の中身のように働きます。</p>
+<p>たとえば、「三角形の内角の和は 180 度」と考えるとき、頭の中には、どれか一つの三角の形が浮かんでいます。考えている中身は三角形の一般ですが、考えるときには、一つの像を使っています。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：アリストテレス『魂について』第 3 巻 第 4 章 429a–430a・第 7 章 431a（J. A. Smith 訳。<a href="http://classics.mit.edu/Aristotle/soul.3.iii.html">MIT の Internet Classics Archive の第 3 巻</a>で本文照合済。第 4 章の「potentially identical in character with its object without being the object」「by mind I mean that whereby the soul thinks and judges」「writing-tablet on which as yet nothing actually stands written」、第 7 章の「the soul never thinks without an image」）。</p>
+</details>
+
+</div></details><details class="sec" id="意識に起きることのすべてデカルトとジェームズ" open><summary>意識に起きることのすべて（デカルトとジェームズ）</summary><div class="secbody">
+
+
+<p><a id="th-descartes"></a>17 世紀のフランスの哲学者デカルトは、「考えるもの」としての私を、広く取りました。『省察』の第二で、考えるものとは何かと問い、疑い、理解し、肯定し、否定し、意志し、拒み、さらに想像し、感覚するものだ、と答えます。『哲学原理』では、思考の語で、私たちの中で起きて、私たち自身が直接に意識しているもの全部を指す、と書きました。理解すること・意志すること・想像することだけでなく、感覚することも、ここでは考えることと同じだ、と続けます。</p>
+<p>アメリカの心理学者ジェームズも、1890 年の『心理学原理』で、「考える」の語を、意識のどの形にも区別なく使う、と書いています。英語で「雨が降る」と言うように「それが考える」と言えれば、いちばん少ない仮定で事実を言えるのだが、それはできないので、「思考が進んでいる」と言うしかない、と。ジェームズは、この思考が継ぎ目でできておらず、川のように流れる、と書きました。</p>
+<p>たとえば、ぼんやり窓の外を見ていたときに「何を考えてたの？」と聞かれて、「別に、いろいろ」と答えることがあります。この広い使い方では、そのぼんやりした時間も、考えていたことに入ります。ジェームズの流れの見方は、独立ページ「<a href="to-james.html">ジェームズに辿り着くまで</a>」に書いています。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：デカルト『省察』第二・『哲学原理』第 1 部 第 9 節（Veitch 訳『The Meditations, and Selections from the Principles』Everyman's Library 1913。<a href="https://archive.org/details/themeditatiions00descuoft">Internet Archive のトロント大学の所蔵の走査</a>で本文照合済。pp.34–35 の「It is a thing that doubts, understands, [conceives], affirms, denies, wills, refuses, that imagines also, and perceives.」、pp.133–134 の「By the word thought, I understand all that which so takes place in us that we of ourselves are immediately conscious of it」）。／ジェームズ『心理学原理』1890 第 9 章「The Stream of Thought」（<a href="http://psychclassics.yorku.ca/James/Principles/prin9.htm">psychclassics の第 9 章</a>で本文照合済。pp.224–225 の「I use the word thinking … for every form of consciousness indiscriminately」「we must simply say that thought goes on」、p.239 の流れのたとえ）。</p>
+</details>
+
+</div></details><details class="sec" id="表象を一つの意識の中で結ぶことカント" open><summary>表象を一つの意識の中で結ぶこと（カント）</summary><div class="secbody">
+
+
+<p><a id="th-kant"></a>18 世紀のドイツの哲学者カントは、考えることを、結ぶ働きとして書きました。『プロレゴメナ』で、感官の仕事は直観すること（見たり聞いたりして受け取ること）、悟性の仕事は考えることだ、と分けたうえで、考えるとは、表象を一つの意識の中で結ぶことだ、と書きます。そして、表象を一つの意識の中で結ぶことは判断なので、考えることは判断することと同じだ、と続けます。</p>
+<p>カントは『純粋理性批判』で、受け取る働きと考える働きの関係を、こう書いています。内容の無い思考は空で、概念の無い直観は盲目である。悟性は見ることができず、感官は考えることができない。二つが結びついたときにだけ、知ることが生まれる。けれども、だからといって、それぞれの持ち分を混ぜてはならず、注意深く分けて見分けなければならない、と。二つは見分けられるのに、一つになってはじめて働く、という書き方です。見分けられるのに切り離せないものを集めたページに、「<a href="nondual.html">不二（非二元）とは</a>」があります。</p>
+<p>たとえば、空を見て「あれは雨雲だ」と言うとき、目に入った灰色のかたまりと、「雨雲」という概念とが、一つに結ばれています。目に入っただけでは何の雲か分からず、「雨雲」という言葉だけでは、どの雲のことか分かりません。</p>
+<details class="acc"><summary>詳しく — 規則の能力と、原理の能力（悟性と理性）</summary>
+
+<p><a id="th-kant-reason"></a>カントは、考える働きの中も分けています。『純粋理性批判』では、悟性を、知ることの自発性・考える能力・概念や判断の能力とも呼んできたが、規則の能力と呼ぶのがその本質に近い、と書きます。そのうえで、理性を、原理の能力と呼んで悟性から分けます。プラトンが悟性と理性を分けたのと、語は似ていますが、分け方は同じではありません。</p>
+<p>出典：カント『純粋理性批判』A126・A299/B356（Max Müller 訳 1881 第 2 巻。<a href="https://archive.org/details/immanuelkantscri02kantuoft">Internet Archive のトロント大学の所蔵の走査</a>で本文照合済。A126 の「We may now characterise it as the faculty of rules」、A299 の「we now distinguish reason from it, by calling it the faculty of principles」。頁の印は Müller 訳に入っている初版の頁）。</p>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p>出典：カント『プロレゴメナ』§22（Carus 訳『Kant's Prolegomena to Any Future Metaphysics』Open Court 1902。<a href="https://archive.org/details/kantsprolegomena00kantuoft">Internet Archive のトロント大学の所蔵の走査</a>で本文照合済。pp.62–63 の「the business of the senses is to intuite—that of the understanding is to think. But thinking is uniting representations in one consciousness.」「Thinking therefore is the same as judging」）。／カント『純粋理性批判』A51/B75（Max Müller 訳 1881 第 2 巻。<a href="https://archive.org/details/immanuelkantscri02kantuoft">Internet Archive のトロント大学の所蔵の走査</a>で本文照合済。「Thoughts without contents are empty, intuitions without concepts are blind」「The understanding cannot see, the senses cannot think」と、続く「they should always be carefully separated and distinguished」）。</p>
+</details>
+
+</div></details><details class="sec" id="根拠に照らして確かめることデューイ" open><summary>根拠に照らして確かめること（デューイ）</summary><div class="secbody">
+
+
+<p><a id="th-dewey"></a>アメリカの哲学者デューイは、1910 年の『思考の方法』の第 1 章を、「考える」と「思考」ほど口にする言葉は無いのに、使い方があまりに多いので、何を指すかを決めるのは易しくない、と書き起こしています。そして、使われ方を四つに分けました。</p>
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>一つ目</th>
+<th>いちばん緩い意味。頭の中にあるもの、心をよぎるもの全部。白昼夢も入る</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>二つ目</td>
+<td>直接には見たり聞いたりしていないものに限る。「見たのではなく、思っただけ」</td>
+</tr>
+<tr>
+<td>三つ目</td>
+<td>何かの根拠に支えられた信念。根拠を確かめずに受け入れたもの（先入見）も入る</td>
+</tr>
+<tr>
+<td>四つ目</td>
+<td>信念を、それを支える根拠と、そこから先の結論に照らして、能動的に、粘り強く、注意深く考えること。反省的思考</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>デューイは四つを分けたうえで、これらの働きのあいだに、はっきりした境目は無い、と書きます。考えることのいろいろな形は、気づかないうちに互いに溶け合っている、と。そのうえで、この本では、考えることを、今ある事実が別の事実を示し、前のものを根拠に後のものを信じるように導く働き、と定めます。</p>
+<p>その例が、晴れた日に歩いていて、空気が涼しくなったのに気づき、雨が降りそうだと思って空を見上げ、足を速める人です。空気の涼しさは、雨を示すものとして扱われています。雲の形に人の顔を思い浮かべるのも、何かが別の何かを思い出させる点では同じですが、顔が本当にあるかを確かめようとはしません。示されたものを、根拠と照らして確かめようとするかどうかで、二つは分かれます。</p>
+<p>デューイが、考えることの起こりを困りごとに置き、仮説を思いつくことを推論の芯と呼んだ段は、「<a href="creative-thinking.html#仮説は困ったところから出てくる">創造的思考とは</a>」で見ています。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：デューイ『How We Think』1910 第 1 章「What Is Thought?」（D. C. Heath。<a href="https://archive.org/details/howwethink03dewegoog">Internet Archive の Google の走査</a>で本文照合済。p.1 の「No words are oftener on our lips than thinking and thought.」、pp.2–6 の四つの意味、p.6 の「Active, persistent, and careful consideration of any belief or supposed form of knowledge in the light of the grounds that support it, and the further conclusions to which it tends」「There are, however, no sharp lines of demarcation between the various operations just outlined」「the different modes of thinking blend insensibly into one another」、pp.6–8 の涼しさと雨・雲と顔の例、pp.8–9 の「Thinking, for the purposes of this inquiry, is defined accordingly as that operation in which present facts suggest other facts (or truths)」）。</p>
+</details>
+
+</div></details><details class="sec" id="この-50-年は知識の表象を系統立てて変えていくことと定めた" open><summary>この 50 年は、知識の表象を系統立てて変えていくことと定めた</summary><div class="secbody">
+
+
+<p><a id="th-cogsci"></a>二十世紀の後半、心を、情報を処理する仕組みとして見る研究が、心理学に広がりました。経済学者で心理学者でもあるサイモンは、1978 年のノーベル賞の講演で、ニューウェルと二人で組んだ問題解決の理論を紹介しています。問題を解くことは、とても大きな問題の空間の中を、選びながら探すことだ。その選び方は、経験則（ヒューリスティック）が見込みのある所へ導く。満足のいく解が見つかったところで、探すことは止まる、と。</p>
+<p>心理学者のホリオークとモリソンは、2012 年の『オックスフォード 思考と推論の手引き』の第 1 章を、日常の言葉の使い方から始めています。「水は命に要ると思う」は信念を言い、「アンなら解決策を思いつく」は問題解決に入り、「どう思う？」は判断を求めます。「物思いにふけっている」では、思考は、あてもなく歩く野原のようになります。二人は、心の働きを指す言葉どうしの関係を大学生に答えてもらった研究（リップスとコンラッド、1989 年）を引き、そこでは「考える」が、ほかの心の働きのどれにも行き渡る、いちばん上の総称になっていた、と紹介します。そのうえで、仮の定義を置きました。思考とは、実際の、またはありうる世界の状態を描くために、知識の心の表象（頭の中で、ほかの形に作り替えられる描き）を、系統立てて変えていくことで、多くは目的のために行われる、と。</p>
+<p>二人は、この定義が言わないことも書いています。考えることに、人間や、感じる存在が要るとは言わない。考えることは意識されていることが多いが、意識されないまま、考えることによく似た働きもある。考えることが、合理的で、最善で、賢いものだとも言わない、と。</p>
+<p>アメリカ心理学会の心理学辞典（2018 年の更新）も、思考を、考え・像・心の表象のような思考の要素が、経験されたり操作されたりする認知の働き、と定めています。想像すること・思い出すこと・問題を解くこと・白昼夢・自由連想・概念を作ることも入ります。辞典は、思考の性格を二つ挙げます。外から直接には見えず、行いや本人の報告から推し量るしかないこと。心の中の記号や表象を扱っているように見えるが、その中身はまだ分からず、争いがあること、です。</p>
+<p>たとえば、明日の遠足の持ち物を頭の中で並べ、雨なら傘、晴れなら帽子、と決めていくとき、外からは何も見えません。けれども頭の中では、ありうる明日の様子を描き、それに合わせて持ち物の並びを作り替えています。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：Simon (1978) "Rational Decision-Making in Business Organizations", Nobel Memorial Lecture, 8 December 1978（<a href="https://www.nobelprize.org/uploads/2018/06/simon-lecture.pdf">nobelprize.org の PDF</a>で本文照合済。p.362 の節「Psychology of Problem Solving」の「Information processing theories envisage problem solving as involving very selective search through problem spaces that are often immense.」と、経験則と満足化の段）。／Holyoak &amp; Morrison (2012) "<a href="https://doi.org/10.1093/oxfordhb/9780199734689.013.0001">Thinking and Reasoning: A Reader's Guide</a>", Holyoak &amp; Morrison (eds.) <em>The Oxford Handbook of Thinking and Reasoning</em>, Oxford University Press（<a href="https://web.archive.org/web/20190819105705/http://reasoninglab.psych.ucla.edu:80/wp-content/uploads/2010/09/holyoakmorrison_ohtr_chap1.pdf">著者の研究室に置かれた原稿の Wayback の記録</a>〔2019 年 8 月 19 日〕で本文照合済。刊行前の原稿で、頁は原稿の頁。pp.14–15 の日常の使い方の段と、リップスとコンラッド 1989 の紹介の「"thinking" is the most general term in both orderings」、p.15 の「Thinking is the systematic transformation of mental representations of knowledge to characterize actual or possible states of the world, often in service of goals.」、p.16 の定義が言わないことの段。リップスとコンラッド 1989 の原典は読んでいない）。／American Psychological Association, <em>APA Dictionary of Psychology</em>「thinking」（2018 年 4 月 19 日の更新。<a href="https://dictionary.apa.org/thinking">オンラインの項</a>で本文照合済。「cognitive behavior in which ideas, images, mental representations, or other hypothetical elements of thought are experienced or manipulated」と、二つの性格の「covert」「symbolic」）。</p>
+</details>
+
+</div></details><details class="sec" id="考えることは頭の中だけで起きているのか" open><summary>考えることは、頭の中だけで起きているのか</summary><div class="secbody">
+
+
+<p><a id="th-extended"></a>同じころ、考えることを、頭の外まで広げて見る研究も出てきました。哲学者のクラークとチャルマーズは、1998 年の論文「拡張された心」を、心はどこで終わり、世界の残りはどこから始まるのか、という問いで書き起こしています。二人は、何かの課題に向かうとき、世界の一部が、もし頭の中で行われていたら迷わず認知の過程と認めるような働きをしているなら、その一部も認知の過程に入る、と書きました。例に挙げたのは、記憶の代わりにノートをいつも持ち歩き、覚えたことを書き、要るときに引いて暮らす人です。二人は、認知の過程は全部が頭の中にあるわけではない、と結んでいます。</p>
+<p>心理学者のウィルソンは、2002 年の総説で、身体化された認知（考えることを、体と世界とのやりとりに根ざすものとして見る立場）の主張を六つに分けました。認知は状況の中にある・時間に追われている・認知の仕事を環境に預ける・環境は認知の仕組みの一部である・認知は行動のためにある・目の前の環境から離れた認知も体に根ざす、の六つです。ウィルソンは、これらは一つの見方のように語られやすいが、一つずつ確かめる時が来た、と書き、六つ目の、今ここに無いものを考えるときも、感覚や体の動きのために育った仕組みを使っている、という主張が、いちばん裏付けがあるかもしれない、と見ています。初期の認知心理学の思考の理論の多くは、知識を命題（文で言える形）として扱っていた、とも振り返っています。</p>
+<p>たとえば、繰り上がりのある掛け算を、暗算でなく紙に書いて解くとき、紙の上の数字が、途中の結果を覚えておく役をしています。ウィルソンも、指を折って数えることや、紙と鉛筆で計算することを、認知の仕事を環境に預ける例に挙げています。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：Clark &amp; Chalmers (1998) "<a href="https://doi.org/10.1093/analys/58.1.7">The Extended Mind</a>", <em>Analysis</em> 58(1):7–19（著者のチャルマーズのサイトの<a href="https://consc.net/papers/extended.html">原稿の写し</a>で本文照合済。写しの頁の印は無い。節 1 の「Where does the mind stop and the rest of the world begin?」、節 2 の「If, as we confront some task, a part of the world functions as a process which, were it done in the head, we would have no hesitation in recognizing as part of the cognitive process, then that part of the world is (so we claim) part of the cognitive process.」と「Cognitive processes ain't (all) in the head!」、ノートを持ち歩く人の例）。／Wilson (2002) "<a href="https://doi.org/10.3758/BF03196322">Six views of embodied cognition</a>", <em>Psychonomic Bulletin &amp; Review</em> 9(4):625–636（<a href="https://link.springer.com/content/pdf/10.3758/BF03196322.pdf">出版社の公開版の PDF</a>で本文照合済。p.625 の要旨の六つの主張と、初期の認知心理学の「most theories of human thinking dealt in propositional forms of knowledge」、p.626 の六つ目「Off-line cognition is body based」の説明、p.629 の指で数えること・紙と鉛筆の計算の例。p.625 の要旨と p.626 の、六つは一つの見方のように語られやすいが、一つずつ確かめる時が来た、という段）。</p>
+</details>
+
+</div></details><details class="sec" id="心理学の教科書では思考は認知の一部" open><summary>心理学の教科書では、思考は認知の一部</summary><div class="secbody">
+
+
+<p><a id="th-psychology"></a>心理学では、考えることは、認知の研究の中で扱われてきました。大学の入門の教科書の一つ『Psychology 2e』（OpenStax）は、第 7 章「思考と知能」の中で、簡単に言えば、認知とは考えることで、知覚・知識・問題解決・判断・言語・記憶に関わる過程を含む、と書きます。章は、認知とは・言語・問題解決・知能と創造性・知能の測り方・知能の源、の六つの節に分かれています。教科書は、思考を一つの働きとして定めるより、いくつもの働きに分けて並べています。</p>
+<p>問題解決の節は、解き方を二つに分けています。決まった段を一つずつ踏めば、いつも同じ答えに着くアルゴリズムと、時間と手間を省く近道としての経験則（ヒューリスティック）です。たとえば、なくした鍵を探すとき、家じゅうを端から順に探すのがアルゴリズムに近く、「いつも置く所から見る」のが経験則です。</p>
+<p>心理学者のカーネマンは、2002 年のノーベル賞の講演で、判断の研究がたどり着いた、二つの系の見方を紹介しています。系 1 の働きは、速く、自動で、努力が要らず、連想でつながり、止めたり変えたりしにくい。系 2 の働きは、遅く、一つずつで、努力が要り、意図して進められる。系 1 の働きは、知覚の働きに似ている、とも書きます。デューイの一つ目の意味の、心をよぎるものと、四つ目の反省的思考の差と、重ねて読めるかもしれません。判断と選択の研究は、「<a href="decision-making.html">意思決定とは</a>」で見ています。</p>
+<p>教科書の章の始めは、「現場で身につく賢さ」（street smarts）も知能の一種か、と問いかけています。頭の能力がこれまでどう分けられ、測られてきたかは、「<a href="cognitive-abilities.html">頭脳の能力は、どう分けられてきたか</a>」で見ています。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：Spielman, Jenkins &amp; Lovett (2020) <em>Psychology 2e</em>, OpenStax（CC BY-NC-SA）。第 7 章の<a href="https://openstax.org/books/psychology-2e/pages/7-introduction">始め</a>（章の六つの節と「street smarts」の問い）、<a href="https://openstax.org/books/psychology-2e/pages/7-1-what-is-cognition">7.1</a>（「Simply put, cognition is thinking, and it encompasses the processes associated with perception, knowledge, problem solving, judgment, language, and memory.」）、<a href="https://openstax.org/books/psychology-2e/pages/7-3-problem-solving">7.3</a>（アルゴリズムとヒューリスティック）で本文照合済。／Kahneman (2002) "Maps of Bounded Rationality: A Perspective on Intuitive Judgment and Choice", Prize Lecture, December 8, 2002（<a href="https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf">nobelprize.org の PDF</a>で本文照合済。pp.450–451 の「The operations of System 1 are fast, automatic, effortless, associative, and difficult to control or modify. The operations of System 2 are slower, serial, effortful, and deliberately controlled」）。</p>
+</details>
+
+</div></details><details class="sec" id="二十の定義は七つの群に分かれる" open><summary>二十の定義は、七つの群に分かれる</summary><div class="secbody">
+
+
+<p><a id="th-stats"></a>ここまでの章で見た定義を、二十に分けて数えます。デューイの四つの意味と、カーネマンの二つの系は、それぞれ別に数え、国語辞典は古い意味と今の意味を分けています。一つずつ、どこで考えるか・何を使って考えるか・考えることで何をするか、のような三十一の問いに当たるかどうかを書き取り、答えの似た定義どうしをまとめました。すると、次の七つの群になりました。群の名前は、その群で目立つ問いから Claude が付けたものです。作り方は、巻末の「<a href="#th-method">群の分け方の作り方</a>」に置きました。</p>
+<div class="tablefit cols-3">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>群</th>
+<th>入る定義</th>
+<th>目立つ問い</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>魂の中の対話と知</td>
+<td>プラトン（二つ）・アリストテレス</td>
+<td>魂・心の内・問いと答え・形を受け取る・学問</td>
+</tr>
+<tr>
+<td>意識のすべて</td>
+<td>デカルト・ジェームズ</td>
+<td>意識が前提・心の働きのすべて・流れる</td>
+</tr>
+<tr>
+<td>比べて結び、判断する</td>
+<td>国語辞典の古い意味・カント・カーネマンの系 1</td>
+<td>比べる・結ぶ・判断する</td>
+</tr>
+<tr>
+<td>頭の中の表象と問題解決</td>
+<td>国語辞典の今の意味・デューイの一つ目・サイモン・ホリオークとモリソン・心理学辞典・教科書</td>
+<td>頭・脳・探す・解く・目的に向かう・表象を作り替える</td>
+</tr>
+<tr>
+<td>根拠に照らす</td>
+<td>デューイの二つ目〜四つ目</td>
+<td>根拠・確かめる・努力と意図</td>
+</tr>
+<tr>
+<td>体と頭の外</td>
+<td>クラークとチャルマーズ・ウィルソン</td>
+<td>頭の外・外の道具・体</td>
+</tr>
+<tr>
+<td>一つずつ意図して進める</td>
+<td>カーネマンの系 2</td>
+<td>努力と意図・段を踏む</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<figure class="reader-figure">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 490" role="img" aria-label="思考の定義の樹形図（コサイン距離・群平均法）" style="max-width:100%;height:auto;font-family:sans-serif">
+<text x="192" y="35.0" font-size="12" text-anchor="end" fill="#805ad5">デカルト</text>
+<text x="192" y="57.0" font-size="12" text-anchor="end" fill="#805ad5">ジェームズ</text>
+<text x="192" y="79.0" font-size="12" text-anchor="end" fill="#c05621">デューイ一</text>
+<text x="192" y="101.0" font-size="12" text-anchor="end" fill="#c05621">ホリオークとモリソン</text>
+<text x="192" y="123.0" font-size="12" text-anchor="end" fill="#c05621">APA 心理学辞典</text>
+<text x="192" y="145.0" font-size="12" text-anchor="end" fill="#c05621">サイモン</text>
+<text x="192" y="167.0" font-size="12" text-anchor="end" fill="#c05621">大辞泉</text>
+<text x="192" y="189.0" font-size="12" text-anchor="end" fill="#c05621">教科書</text>
+<text x="192" y="211.0" font-size="12" text-anchor="end" fill="#2b6cb0">カーネマン系1</text>
+<text x="192" y="233.0" font-size="12" text-anchor="end" fill="#2b6cb0">国語辞典</text>
+<text x="192" y="255.0" font-size="12" text-anchor="end" fill="#2b6cb0">カント</text>
+<text x="192" y="277.0" font-size="12" text-anchor="end" fill="#2f855a">プラトン（国家）</text>
+<text x="192" y="299.0" font-size="12" text-anchor="end" fill="#2f855a">プラトン（対話）</text>
+<text x="192" y="321.0" font-size="12" text-anchor="end" fill="#2f855a">アリストテレス</text>
+<text x="192" y="343.0" font-size="12" text-anchor="end" fill="#0f766e">クラークとチャルマーズ</text>
+<text x="192" y="365.0" font-size="12" text-anchor="end" fill="#0f766e">ウィルソン</text>
+<text x="192" y="387.0" font-size="12" text-anchor="end" fill="#4a5568">カーネマン系2</text>
+<text x="192" y="409.0" font-size="12" text-anchor="end" fill="#b83280">デューイ三</text>
+<text x="192" y="431.0" font-size="12" text-anchor="end" fill="#b83280">デューイ二</text>
+<text x="192" y="453.0" font-size="12" text-anchor="end" fill="#b83280">デューイ四</text>
+<path d="M200.0,339.0H330.5V361.0H200.0" fill="none" stroke="currentColor" stroke-opacity=".6"/>
+<path d="M200.0,31.0H365.0V53.0H200.0" fill="none" stroke="currentColor" stroke-opacity=".6"/>
+<path d="M200.0,229.0H386.2V251.0H200.0" fill="none" stroke="currentColor" stroke-opacity=".6"/>
+<path d="M200.0,97.0H387.1V119.0H200.0" fill="none" stroke="currentColor" stroke-opacity=".6"/>
+<path d="M200.0,163.0H447.8V185.0H200.0" fill="none" stroke="currentColor" stroke-opacity=".6"/>
+<path d="M200.0,295.0H450.6V317.0H200.0" fill="none" stroke="currentColor" stroke-opacity=".6"/>
+<path d="M200.0,75.0H454.2V108.0H387.1" fill="none" stroke="currentColor" stroke-opacity=".6"/>
+<path d="M200.0,427.0H477.1V449.0H200.0" fill="none" stroke="currentColor" stroke-opacity=".6"/>
+<path d="M200.0,141.0H481.9V174.0H447.8" fill="none" stroke="currentColor" stroke-opacity=".6"/>
+<path d="M200.0,207.0H487.1V240.0H386.2" fill="none" stroke="currentColor" stroke-opacity=".6"/>
+<path d="M454.2,91.5H519.4V157.5H481.9" fill="none" stroke="currentColor" stroke-opacity=".6"/>
+<path d="M200.0,273.0H562.3V306.0H450.6" fill="none" stroke="currentColor" stroke-opacity=".6"/>
+<path d="M200.0,405.0H589.2V438.0H477.1" fill="none" stroke="currentColor" stroke-opacity=".6"/>
+<path d="M365.0,42.0H591.8V124.5H519.4" fill="none" stroke="currentColor" stroke-opacity=".6"/>
+<path d="M487.1,223.5H601.3V289.5H562.3" fill="none" stroke="currentColor" stroke-opacity=".6"/>
+<path d="M591.8,83.2H624.4V256.5H601.3" fill="none" stroke="currentColor" stroke-opacity=".6"/>
+<path d="M200.0,383.0H651.5V421.5H589.2" fill="none" stroke="currentColor" stroke-opacity=".6"/>
+<path d="M330.5,350.0H671.1V402.2H651.5" fill="none" stroke="currentColor" stroke-opacity=".6"/>
+<path d="M624.4,169.9H680.0V376.1H671.1" fill="none" stroke="currentColor" stroke-opacity=".6"/>
+<text x="200" y="482" font-size="11" fill="currentColor" fill-opacity=".6">0</text><text x="680" y="482" font-size="11" text-anchor="end" fill="currentColor" fill-opacity=".6">距離 0.96</text>
+</svg>
+<figcaption>二十の定義の樹形図。線のつながる位置が左にあるほど、二つの定義の答えが似ています。色は七つの群です。</figcaption>
+</figure>
+
+<p>群の中には、分かれ方の確かなものと、そうでないものがあります。体と頭の外の群はくり返し計算しても同じ群に残りましたが、根拠に照らす群は崩れやすいものでした。デューイの二つ目の意味は、原典の文が短く、どの問いにもほとんど当たらなかったためです。</p>
+<p>定義を分ける軸も探しました。大きい順に三つの軸を取り出しても、ばらつきの 37% しか説明できません。二十の定義は、少ない軸には収まらず、それぞれ違う所を見ている、とも読めます。三つの軸の両端は、次のとおりでした。</p>
+<div class="tablefit cols-3">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>軸（説明できる割合）</th>
+<th>一方の端</th>
+<th>もう一方の端</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1（16%）</td>
+<td>体・頭の外・外の道具（ウィルソン・クラークとチャルマーズ）</td>
+<td>そのほかの定義</td>
+</tr>
+<tr>
+<td>2（12%）</td>
+<td>根拠・確かめる・努力と意図（デューイの三つ目と四つ目・カーネマンの系 2）</td>
+<td>意識のすべて・魂（ジェームズ・プラトン・デカルト）</td>
+</tr>
+<tr>
+<td>3（10%）</td>
+<td>魂・問いと答え・学問（プラトン・アリストテレス）</td>
+<td>流れる・心の働きのすべて・頭・脳（ジェームズとこの 50 年の定義）</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>たとえば、軸 1 は「考えるのは頭の中か、頭の外までか」、軸 2 は「確かめる手間をかけるか」、軸 3 は「古代の魂の言葉か、今の心理学の言葉か」と、言い直せるかもしれません。</p>
+</div></details><details class="sec" id="場所道具働き場面性格の五つの視点で並べる" open><summary>場所・道具・働き・場面・性格の五つの視点で並べる</summary><div class="secbody">
+
+
+<p><a id="th-views"></a>同じ書き取りの表を、視点ごとに並べ直します。名前の後ろの〔½〕は、書き取った二人のうち一方だけが当たると答えたものです。</p>
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>場所</th>
+<th>当たる定義（年の順）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>魂・心の内</td>
+<td>プラトン（二つ）・アリストテレス・デューイの一つ目〔½〕</td>
+</tr>
+<tr>
+<td>意識の場</td>
+<td>デカルト・カント・ジェームズ</td>
+</tr>
+<tr>
+<td>頭・脳</td>
+<td>デューイの一つ目・サイモン・国語辞典の今の意味・ホリオークとモリソン・心理学辞典</td>
+</tr>
+<tr>
+<td>体</td>
+<td>ウィルソン</td>
+</tr>
+<tr>
+<td>頭の外</td>
+<td>クラークとチャルマーズ・ウィルソン</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>道具</th>
+<th>当たる定義（年の順）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>言葉</td>
+<td>プラトン（対話）・教科書</td>
+</tr>
+<tr>
+<td>像・知覚</td>
+<td>アリストテレス・デカルト・カント〔½〕・カーネマンの系 1・国語辞典の今の意味〔½〕・心理学辞典・教科書</td>
+</tr>
+<tr>
+<td>概念・規則</td>
+<td>プラトン（国家）・カント・心理学辞典〔½〕</td>
+</tr>
+<tr>
+<td>記号・表象</td>
+<td>カント〔½〕・ホリオークとモリソン・心理学辞典</td>
+</tr>
+<tr>
+<td>根拠</td>
+<td>デューイの三つ目と四つ目・国語辞典の今の意味〔½〕</td>
+</tr>
+<tr>
+<td>経験則</td>
+<td>サイモン・教科書</td>
+</tr>
+<tr>
+<td>外の道具</td>
+<td>クラークとチャルマーズ・ウィルソン</td>
+</tr>
+<tr>
+<td>感覚と体の動き</td>
+<td>ウィルソン〔½〕</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>働き</th>
+<th>当たる定義（年の順）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>比べる・結ぶ</td>
+<td>国語辞典の古い意味・カント・デューイの四つ目・カーネマンの系 1</td>
+</tr>
+<tr>
+<td>判断する</td>
+<td>プラトン（対話）・アリストテレス・国語辞典の古い意味・デカルト・カント・国語辞典の今の意味・ホリオークとモリソン・教科書</td>
+</tr>
+<tr>
+<td>探す・解く</td>
+<td>サイモン・国語辞典の今の意味〔½〕・ホリオークとモリソン・心理学辞典・教科書</td>
+</tr>
+<tr>
+<td>確かめる</td>
+<td>デューイの四つ目</td>
+</tr>
+<tr>
+<td>段を踏む</td>
+<td>プラトン（国家）〔½〕・カーネマンの系 2・国語辞典の今の意味・教科書〔½〕</td>
+</tr>
+<tr>
+<td>形を受け取る</td>
+<td>アリストテレス</td>
+</tr>
+<tr>
+<td>流れる・よぎる</td>
+<td>ジェームズ・デューイの一つ目・ホリオークとモリソン〔½〕・心理学辞典</td>
+</tr>
+<tr>
+<td>表象を作り替える</td>
+<td>ホリオークとモリソン・心理学辞典</td>
+</tr>
+<tr>
+<td>問いと答え</td>
+<td>プラトン（対話）</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>場面（二人の一致が低い）</th>
+<th>当たる定義（年の順）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>日常</td>
+<td>デューイの一つ目〔½〕・二つ目〔½〕・四つ目・クラークとチャルマーズ〔½〕・国語辞典の今の意味〔½〕・ホリオークとモリソン</td>
+</tr>
+<tr>
+<td>学問・数学</td>
+<td>プラトン（国家）</td>
+</tr>
+<tr>
+<td>教え・学び</td>
+<td>教科書〔½〕</td>
+</tr>
+<tr>
+<td>判断と選択・仕事</td>
+<td>国語辞典の古い意味〔½〕・サイモン〔½〕・カーネマンの系 1〔½〕・系 2〔½〕</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>性格</th>
+<th>当たる定義（年の順）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>意識が前提</td>
+<td>デカルト・ジェームズ</td>
+</tr>
+<tr>
+<td>努力と意図</td>
+<td>デューイの四つ目・カーネマンの系 2</td>
+</tr>
+<tr>
+<td>目的に向かう</td>
+<td>サイモン・国語辞典の今の意味〔½〕・ホリオークとモリソン</td>
+</tr>
+<tr>
+<td>速く自動</td>
+<td>カーネマンの系 1</td>
+</tr>
+<tr>
+<td>心の働きのすべて</td>
+<td>デカルト・ジェームズ・デューイの一つ目・ホリオークとモリソン・教科書〔½〕</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>並べると、考える場所が、時代とともに移ってきたことが見えます。古代は魂、近代の哲学は意識、1900 年ごろからは頭と脳、この 50 年には体と頭の外も入りました。道具では、経験則と外の道具が、この 50 年の定義にだけ出ます。働きでは、判断することが、古代からこの 50 年まで、いちばん多く出ます。探すこと・解くことは、この 50 年に集まっています。</p>
+<p>空いているところもあります。感情・他の人とのやりとり・東洋の思想での考える働きは、問いに入れていないので、この表には出てきません。「考える」と「思う」の境のように、考えることを感じることから分けきれるのかも、この表では見えません。</p>
+</div></details><details class="sec" id="並べて見えること" open><summary>並べて見えること</summary><div class="secbody">
+
+
+<p><a id="th-together"></a>ここまでの使われ方を並べると、まず、語の幅の違いが見えます。いちばん広いのは、意識に起きることのすべてを指す使い方です（デカルト・ジェームズ・デューイの一つ目）。いちばん狭いのは、根拠に照らして確かめる考えや、一つずつ意図して進める働きです（デューイの四つ目・カーネマンの系 2）。その間に、見ていないものを思うこと、像の中で考えること、判断することが並びます。</p>
+<p>どれが正しい定義か、を決める必要はない、とこのページは見ます。目の見えない人たちが、象の別々の所に触れて、それぞれ違う生き物だと言う「群盲象を評す」の寓話のように、どの使い方も、考えるという働きの一つの面に触れています。</p>
+<p>群と視点の表で見たとおり、時代をまたいでいちばん多く出るのは、判断することでした。引き比べて結ぶことは、四つの時代のどれにも一つずつ出ます。カントは、判断することを、表象を一つの意識の中で結ぶことと書きました。そう見て二つを合わせると、二十のうち十の定義に、二つのものを一つに持ってくる動きが出てきます。日本語の古い意味の「引き比べて調べる」、プラトンの問いと答え、デューイの、ある事実が別の事実を示すこと、も入ります。これが考えることに共通する芯かどうかは、このページの仮説で、残りの十の定義には出てきません。</p>
+<p>この 50 年では、考える場所の広さも問われてきました。考えることを、頭の中の表象を作り替えることとして定める見方と、体や、ノートのような頭の外の道具まで入れて見る見方です。アリストテレスの「魂は像なしに考えない」と、ウィルソンが挙げた「目の前から離れた認知も体に根ざす」という主張は、二千年あまりを隔てて、重ねて読めるかもしれません。</p>
+<p>もう一つ見えるのは、分けることと、分けきれないことが、いっしょに書かれていることです。カントは、受け取る働きと考える働きを、結びついてはじめて働くと書きながら、混ぜてはならないと書きました。デューイは、四つの意味を分けたうえで、境目は無く溶け合うと書きました。</p>
+<p>段を踏んで結論を導く形は「<a href="reasoning.html">推論とは</a>」に、考えることを考える働きは「<a href="metacognition.html">メタ認知とは</a>」に、考えが新しいものを生むところは「<a href="creative-thinking.html">創造的思考とは</a>」にあります。考えることのほかの面への道案内は「<a href="thinking.html">思考とは</a>」にあります。</p>
+</div></details><details class="sec" id="原典と読む順"><summary>原典と、読む順</summary><div class="secbody">
+<p><a id="th-reading"></a>このページで読んだ原典を、自分で読むときの順と置き場を並べます。どれも、無料で読める写しがあります。引用の訳は Claude によるもので、人の校閲はしていません。</p>
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>1. 使われ方の四つを読む</th>
+<th>デューイ 1910『How We Think』第 1 章（<a href="https://archive.org/details/howwethink03dewegoog">Internet Archive</a>）。pp.1–9 の短い章で、このページの並べ方のいちばんの足場です</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2. 声の無い対話を読む</td>
+<td>プラトン『テアイテトス』189e–190a と『ソフィスト』263e（Jowett 訳 第 4 巻 <a href="https://archive.org/details/b24750189_0004">Internet Archive</a>）</td>
+</tr>
+<tr>
+<td>3. 像と知性を読む</td>
+<td>アリストテレス『魂について』第 3 巻 第 4〜8 章（<a href="http://classics.mit.edu/Aristotle/soul.3.iii.html">MIT の Internet Classics Archive</a>）</td>
+</tr>
+<tr>
+<td>4. 意識されることのすべてを読む</td>
+<td>デカルト『省察』第二と『哲学原理』第 1 部 第 9 節（Veitch 訳 <a href="https://archive.org/details/themeditatiions00descuoft">Internet Archive</a>）、ジェームズ『心理学原理』第 9 章（<a href="http://psychclassics.yorku.ca/James/Principles/prin9.htm">psychclassics</a>）</td>
+</tr>
+<tr>
+<td>5. 結ぶことと判断を読む</td>
+<td>カント『プロレゴメナ』§22（Carus 訳 <a href="https://archive.org/details/kantsprolegomena00kantuoft">Internet Archive</a>）、『純粋理性批判』A51/B75（Müller 訳 <a href="https://archive.org/details/immanuelkantscri02kantuoft">Internet Archive</a>）</td>
+</tr>
+<tr>
+<td>6. この 50 年の定義を読む</td>
+<td>ホリオークとモリソン 2012 の第 1 章（<a href="https://web.archive.org/web/20190819105705/http://reasoninglab.psych.ucla.edu:80/wp-content/uploads/2010/09/holyoakmorrison_ohtr_chap1.pdf">著者の研究室に置かれた原稿の Wayback の記録</a>〔2019 年 8 月 19 日〕）の pp.14–16、クラークとチャルマーズ 1998（<a href="https://consc.net/papers/extended.html">著者のサイトの写し</a>）、ウィルソン 2002（<a href="https://link.springer.com/content/pdf/10.3758/BF03196322.pdf">出版社の公開版</a>）</td>
+</tr>
+<tr>
+<td>7. 心理学の今の分け方を読む</td>
+<td>OpenStax『Psychology 2e』第 7 章（<a href="https://openstax.org/books/psychology-2e/pages/7-1-what-is-cognition">7.1</a>）、カーネマン 2002 のノーベル賞講演（<a href="https://www.nobelprize.org/uploads/2018/06/kahnemann-lecture.pdf">PDF</a>）</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+</div></details><details class="sec" id="群の分け方の作り方"><summary>群の分け方の作り方</summary><div class="secbody">
+<p><a id="th-method"></a>このページの群と視点の表は、次のように作りました。場所と道具の視点は pjdhiro が挙げたもので、働き・場面・性格の三つの視点と、三十一の問いの中身は Claude が決めました。</p>
+<ul>
+<li>符号化：二十の定義の一つずつについて、原典の文が何を言っているかを、三十一の問いに 0 か 1 で答える形で書き取りました。1 にするのは、その定義の文か、同じ段の著者自身の例が、はっきり言っているときだけです。迷えば 0 にしました。</li>
+<li>二人の符号化：Claude と、Claude の答えを見ない別の Claude（エージェント）が、それぞれ行いました。偶然の一致を除いて測る一致の度合い κ（カッパ）は 0.85 でした。場面の視点だけは κ が 0.36 と低く、当てにできません。620 の升のうち 22 で食い違い、食い違った升は 0.5 として平均しました。視点の表の〔½〕は、この升です。</li>
+<li>群分け：定義どうしの近さはコサイン距離で測り、似た定義どうしを順につないでいく群平均法で分けました。群の数は 4〜7 を試し、いちばん読みやすい 7 を取りました。芯の三つ（魂の中の対話と知・体と頭の外・根拠に照らす）は、どの数でも分かれます。</li>
+<li>確かさ：問いを選び直して同じ計算を 1000 回くり返すと、体と頭の外の群は 86% の回で同じ群に残り、根拠に照らす群は 36% にとどまりました。</li>
+<li>軸：0 と 1 の表の因子分析にあたる、対応分析（日本では数量化 III 類とも呼ばれます）を使いました。当てにできない場面の視点を外して計算し直しても、三つの軸の定義の並びは、元の軸と相関 0.99・0.98・0.87 で重なりました。</li>
+<li>限り：定義の数が二十と少なく、問いを決めたのも符号化したのも Claude です。統計は、Claude が置いた物差しの上で、偏りと空きを見るための足場で、思考の分け方の答えではありません。計算は標準の Python だけで書き、表とスクリプトと結果を<a href="https://github.com/uminomae/project-design-theory/tree/main/pd/knowledge/research/thinking/classify">調べの置き場</a>に置きました。</li>
+</ul>
+</div></details><details class="sec" id="保持論点"><summary>保持論点</summary><div class="secbody">
+<ul>
+<li>二つのものを引き比べ、一つに結ぶ動きは、考えることの芯なのか。それとも、言葉で書き残せた面だけが、そう見えているのか。</li>
+<li>意識に起きることのすべてを思考と呼ぶ使い方と、根拠に照らして確かめることだけを思考と呼ぶ使い方は、同じ働きの広さの違いなのか、別の働きなのか。</li>
+<li>「考える」と「思う」を分ける日本語の使い分けは、ほかの言葉にもあるのか。</li>
+<li>ノートや計算機、AI のような頭の外の道具に預けた働きも、考えることに入るのか。</li>
+</ul>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="thinking.html">思考とは</a> ・
+                <a href="shelf-thinking.html">思考を見るページ</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
