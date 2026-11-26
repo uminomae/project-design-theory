@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/kokoro-scale-map.html を直接編集しないでください。
+  正本:   knowledge/research/site-evaluation/READER-kokoro-scale-map.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 誤解の台帳を尺度に当てた表（docs/RELEASE-STAGES.md 3.3 の段 1・pjdhiro 2026-11-26 の判断のページ「公開ページにする（工事中）」「独立のページにする」）
+  - noindex は、pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「防衛と発達の尺度で測った、見つけられる誤解の範囲」です。心の脆弱性スキャンの誤解の台帳の項を、DMRS の防衛と WUSCT の段階に当てています。当てはめは Claude の読みで、別の読み手による照合の前です。WUSCT の段階の番号は原典で未照合です。数と当てはめの正本は docs/release-stages/kokoro-assign.tsv で、scripts/release-maps.py が作る JSON からこのページに埋めています。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>防衛と発達の尺度で測った、見つけられる誤解の範囲 | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/kokoro-scale-map.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="心の脆弱性スキャンが見つける誤解の型（台帳の項）を、防衛機制の尺度 DMRS の水準と防衛、自我の発達の尺度 WUSCT の段階の上に当て、どこにまつわる誤解を見つけられ、どこが空いているかを示した表。測ったのは範囲で、実際の文章での見つけ方と見逃しはまだ測っていない。">
+    <meta property="og:title" content="防衛と発達の尺度で測った、見つけられる誤解の範囲">
+    <meta property="og:description" content="心の脆弱性スキャンが見つける誤解の型（台帳の項）を、防衛機制の尺度 DMRS の水準と防衛、自我の発達の尺度 WUSCT の段階の上に当て、どこにまつわる誤解を見つけられ、どこが空いているかを示した表。測ったのは範囲で、実際の文章での見つけ方と見逃しはまだ測っていない。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/kokoro-scale-map.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="防衛と発達の尺度で測った、見つけられる誤解の範囲">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-26">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "防衛と発達の尺度で測った、見つけられる誤解の範囲",
+          "description": "心の脆弱性スキャンが見つける誤解の型（台帳の項）を、防衛機制の尺度 DMRS の水準と防衛、自我の発達の尺度 WUSCT の段階の上に当て、どこにまつわる誤解を見つけられ、どこが空いているかを示した表。測ったのは範囲で、実際の文章での見つけ方と見逃しはまだ測っていない。",
+          "keywords": "防衛機制, DMRS, 自我発達, WUSCT, 発達段階, 誤解, 心の脆弱性スキャン, 範囲, 客観的な評価, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/kokoro-scale-map.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/kokoro-scale-map.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-26",
+          "dateModified": "<!--UPDATED-->",
+                    "about": [{"@type": "Thing", "name": "防衛と発達の尺度で測った、見つけられる誤解の範囲"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「防衛と発達の尺度で測った、見つけられる誤解の範囲」です。心の脆弱性スキャンが見つける誤解の型（台帳の項）を、防衛機制の尺度 DMRS の水準と防衛、自我の発達の尺度 WUSCT の段階の上に当て、どこにまつわる誤解を見つけられ、どこが空いているかを示した表。測ったのは範囲で、実際の文章での見つけ方と見逃しはまだ測っていない。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                表と説明の文は AI（Claude）が作っています。
+            </div>
+            <header class="reader-hero">
+                <h1>防衛と発達の尺度で測った、見つけられる誤解の範囲</h1>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/site-evaluation/READER-kokoro-scale-map.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="site-evaluation.html">このサイトの評価</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script src="../src/reader-release-map.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

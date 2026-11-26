@@ -1,0 +1,2851 @@
+{
+ "counts": {
+  "pages": 98,
+  "mapped_pages": 83,
+  "cs": 30,
+  "sho": 295,
+  "touched": 89,
+  "page_only": 10,
+  "cs_only": 50,
+  "both": 29,
+  "chu": 66,
+  "chu_touched": 40,
+  "dai": 13,
+  "dai_touched": 13,
+  "unmapped_n": 15
+ },
+ "dai": [
+  {
+   "id": "A",
+   "chu": [
+    {
+     "id": "1",
+     "name": "思想、芸術およびその関連分野",
+     "sho": [
+      {
+       "id": "01010",
+       "name": "哲学および倫理学",
+       "pages": [
+        "hamilton-philosophy-of-the-unconditioned-ja",
+        "life-drivers",
+        "love-history",
+        "mansel-limits-of-religious-thought-ja",
+        "mill-examination-of-hamilton-ja",
+        "no-road-ahead",
+        "nondual",
+        "peirce-evolutionary-love-ja",
+        "peirce-glassy-essence-ja",
+        "peirce-law-of-mind-ja",
+        "peirce-love-abduction",
+        "reasoning",
+        "thinking",
+        "thinking-definitions",
+        "william-james-self-ja"
+       ],
+       "cs": [
+        "D13"
+       ]
+      },
+      {
+       "id": "01020",
+       "name": "中国哲学、印度哲学および仏教学",
+       "pages": [
+        "anshin",
+        "breath-filter",
+        "forgiveness-salvation",
+        "love-driven-dev",
+        "love-driven-dev-en",
+        "love-history",
+        "nondual",
+        "shikan",
+        "zen-circle-hs"
+       ],
+       "cs": [
+        "D24"
+       ]
+      },
+      {
+       "id": "01030",
+       "name": "宗教学",
+       "pages": [
+        "draper-intellectual-development-ja",
+        "forgiveness-salvation",
+        "james-substance-and-shadow-ja",
+        "life-drivers",
+        "mansel-limits-of-religious-thought-ja",
+        "peirce-evolutionary-love-ja"
+       ],
+       "cs": [
+        "D24"
+       ]
+      },
+      {
+       "id": "01040",
+       "name": "思想史",
+       "pages": [
+        "anshin",
+        "buckle-history-of-civilization-ja",
+        "carus-onslaught-on-necessity-ja",
+        "hamilton-philosophy-of-the-unconditioned-ja",
+        "james-substance-and-shadow-ja",
+        "life-drivers",
+        "love-history",
+        "mill-examination-of-hamilton-ja",
+        "peirce-evolutionary-love-ja",
+        "peirce-glassy-essence-ja",
+        "peirce-law-of-mind-ja",
+        "thinking-definitions",
+        "to-james",
+        "william-james-self-ja"
+       ],
+       "cs": [
+        "D16"
+       ]
+      },
+      {
+       "id": "01050",
+       "name": "美学および芸術論",
+       "pages": [
+        "beauty"
+       ],
+       "cs": [
+        "D15",
+        "D26",
+        "D28"
+       ]
+      },
+      {
+       "id": "01060",
+       "name": "美術史",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "01070",
+       "name": "芸術実践論",
+       "pages": [],
+       "cs": [
+        "D28",
+        "D30"
+       ]
+      },
+      {
+       "id": "01080",
+       "name": "科学社会学、科学哲学および科学技術史",
+       "pages": [
+        "carus-onslaught-on-necessity-ja",
+        "clausius-art-der-bewegung-ja",
+        "clausius-bewegende-kraft-der-warme-ja",
+        "darwin-historical-sketch-ja",
+        "darwin-wallace-1858-ja",
+        "draper-intellectual-development-ja",
+        "helmholtz-erhaltung-der-kraft-ja",
+        "herapath-mathematical-physics-ja",
+        "herschel-quetelet-probabilities-ja",
+        "kolliker-darwinsche-schopfungstheorie-ja",
+        "kronig-theorie-der-gase-ja",
+        "maxwell-dynamical-theory-of-gases-ja",
+        "naegeli-abstammungslehre-ja",
+        "peirce-love-abduction",
+        "quetelet-lettres-probabilites-ja",
+        "rankine-mechanical-action-of-heat-ja",
+        "thomson-heat-ja",
+        "via-vulnerability"
+       ],
+       "cs": []
+      },
+      {
+       "id": "80010",
+       "name": "デザイン学",
+       "pages": [],
+       "cs": [
+        "D22"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "2",
+     "name": "文学、言語学およびその関連分野",
+     "sho": [
+      {
+       "id": "02010",
+       "name": "日本文学",
+       "pages": [
+        "no-road-ahead"
+       ],
+       "cs": []
+      },
+      {
+       "id": "02020",
+       "name": "英語圏文学およびヨーロッパ文学",
+       "pages": [
+        "mandeville-grumbling-hive-ja"
+       ],
+       "cs": []
+      },
+      {
+       "id": "02030",
+       "name": "文学一般",
+       "pages": [],
+       "cs": [
+        "D19"
+       ]
+      },
+      {
+       "id": "02040",
+       "name": "言語学",
+       "pages": [
+        "to-james"
+       ],
+       "cs": [
+        "D17"
+       ]
+      },
+      {
+       "id": "70010",
+       "name": "日本語教育",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "70020",
+       "name": "外国語教育",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "80020",
+       "name": "人文社会情報学および図書館情報学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "3",
+     "name": "歴史学、考古学、博物館学およびその関連分野",
+     "sho": [
+      {
+       "id": "03010",
+       "name": "史学一般",
+       "pages": [],
+       "cs": [
+        "D16"
+       ]
+      },
+      {
+       "id": "03020",
+       "name": "日本史",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "03030",
+       "name": "アジア史およびアフリカ史",
+       "pages": [],
+       "cs": [
+        "D16"
+       ]
+      },
+      {
+       "id": "03040",
+       "name": "ヨーロッパ史およびアメリカ史",
+       "pages": [
+        "buckle-history-of-civilization-ja",
+        "draper-intellectual-development-ja"
+       ],
+       "cs": []
+      },
+      {
+       "id": "03050",
+       "name": "考古学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "03060",
+       "name": "文化財科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "03070",
+       "name": "博物館学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "4",
+     "name": "地理学、文化人類学、民俗学およびその関連分野",
+     "sho": [
+      {
+       "id": "04010",
+       "name": "地理学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "04020",
+       "name": "人文地理学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "04030",
+       "name": "文化人類学および民俗学",
+       "pages": [],
+       "cs": [
+        "D24",
+        "D25",
+        "D26",
+        "D28",
+        "D30"
+       ]
+      },
+      {
+       "id": "70030",
+       "name": "地域研究",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "70040",
+       "name": "観光学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "70050",
+       "name": "ジェンダー",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "5",
+     "name": "法学およびその関連分野",
+     "sho": [
+      {
+       "id": "05010",
+       "name": "基礎法学および刑事法学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "05020",
+       "name": "公法学および国際公法学",
+       "pages": [],
+       "cs": [
+        "D20"
+       ]
+      },
+      {
+       "id": "05030",
+       "name": "民事法学および国際私法学",
+       "pages": [],
+       "cs": [
+        "D20"
+       ]
+      },
+      {
+       "id": "05040",
+       "name": "社会法学および新領域法学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "6",
+     "name": "政治学およびその関連分野",
+     "sho": [
+      {
+       "id": "70030",
+       "name": "地域研究",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "70050",
+       "name": "ジェンダー",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "06010",
+       "name": "政治学",
+       "pages": [],
+       "cs": [
+        "D16"
+       ]
+      },
+      {
+       "id": "06020",
+       "name": "国際関係論",
+       "pages": [],
+       "cs": [
+        "D20"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "7",
+     "name": "経済学、経営学およびその関連分野",
+     "sho": [
+      {
+       "id": "70040",
+       "name": "観光学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "07010",
+       "name": "理論経済学および経済学史",
+       "pages": [
+        "mandeville-grumbling-hive-ja",
+        "newcomb-political-economy-ja"
+       ],
+       "cs": [
+        "D21"
+       ]
+      },
+      {
+       "id": "07020",
+       "name": "経済政策",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "07030",
+       "name": "公共経済および労働経済",
+       "pages": [
+        "capacity-after-ai",
+        "emerging-abilities",
+        "soft-skills"
+       ],
+       "cs": []
+      },
+      {
+       "id": "07040",
+       "name": "金融およびファイナンス",
+       "pages": [],
+       "cs": [
+        "D21"
+       ]
+      },
+      {
+       "id": "07050",
+       "name": "経済史",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "07060",
+       "name": "経営学",
+       "pages": [
+        "business-design-syllabus",
+        "decision-making",
+        "influences-management",
+        "interpersonal-abilities",
+        "julia-potential",
+        "love-driven-dev",
+        "love-driven-dev-en",
+        "management-drivers",
+        "mintzberg-schools",
+        "nonaka-complement",
+        "psychological-safety",
+        "psychological-safety-en",
+        "three-and-seven"
+       ],
+       "cs": [
+        "D07",
+        "D22"
+       ]
+      },
+      {
+       "id": "07070",
+       "name": "商学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "07080",
+       "name": "会計学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "07090",
+       "name": "経済統計および経営情報",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "8",
+     "name": "社会学およびその関連分野",
+     "sho": [
+      {
+       "id": "70040",
+       "name": "観光学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "70050",
+       "name": "ジェンダー",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "08010",
+       "name": "社会学",
+       "pages": [
+        "quetelet-lettres-probabilites-ja"
+       ],
+       "cs": [
+        "D18"
+       ]
+      },
+      {
+       "id": "08020",
+       "name": "社会福祉学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "08030",
+       "name": "家政学および生活科学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "9",
+     "name": "教育学およびその関連分野",
+     "sho": [
+      {
+       "id": "70010",
+       "name": "日本語教育",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "70020",
+       "name": "外国語教育",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "09010",
+       "name": "教育学",
+       "pages": [
+        "creative-thinking",
+        "emerging-abilities"
+       ],
+       "cs": [
+        "D13"
+       ]
+      },
+      {
+       "id": "09020",
+       "name": "教育社会学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "09030",
+       "name": "子ども学および保育学",
+       "pages": [],
+       "cs": [
+        "D23"
+       ]
+      },
+      {
+       "id": "09040",
+       "name": "教科教育学および初等中等教育学",
+       "pages": [
+        "angle-rotation",
+        "rotation-multiplication",
+        "zen-circle-hs"
+       ],
+       "cs": []
+      },
+      {
+       "id": "09050",
+       "name": "高等教育学",
+       "pages": [
+        "business-design-syllabus"
+       ],
+       "cs": []
+      },
+      {
+       "id": "09060",
+       "name": "特別支援教育",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "09070",
+       "name": "教育工学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "09080",
+       "name": "科学教育",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "10",
+     "name": "心理学およびその関連分野",
+     "sho": [
+      {
+       "id": "10010",
+       "name": "社会心理学",
+       "pages": [
+        "anshin",
+        "empathy",
+        "interpersonal-abilities",
+        "intrinsic-motivation",
+        "psychological-safety",
+        "psychological-safety-en"
+       ],
+       "cs": [
+        "D14",
+        "D22"
+       ]
+      },
+      {
+       "id": "10020",
+       "name": "教育心理学",
+       "pages": [
+        "capacity-after-ai",
+        "cognitive-abilities",
+        "creative-thinking",
+        "developmental-stages",
+        "emerging-abilities",
+        "influences-psychology",
+        "interpersonal-abilities",
+        "intrinsic-motivation",
+        "metacognition",
+        "personality",
+        "soft-skills",
+        "stages-defense",
+        "stages-screener"
+       ],
+       "cs": [
+        "D23"
+       ]
+      },
+      {
+       "id": "10030",
+       "name": "臨床心理学",
+       "pages": [
+        "anxiety",
+        "defense-mechanisms",
+        "empathy",
+        "influences-psychology",
+        "love-driven-dev",
+        "love-driven-dev-en",
+        "personality",
+        "shikan",
+        "stages-defense",
+        "stages-screener",
+        "via-vulnerability"
+       ],
+       "cs": [
+        "D14",
+        "D15"
+       ]
+      },
+      {
+       "id": "10040",
+       "name": "実験心理学",
+       "pages": [
+        "breath-filter",
+        "cognitive-abilities",
+        "decision-making",
+        "thinking-definitions"
+       ],
+       "cs": [
+        "D14",
+        "D26"
+       ]
+      },
+      {
+       "id": "80030",
+       "name": "認知科学",
+       "pages": [
+        "creative-thinking",
+        "empathy",
+        "fundamental-theorem-of-algebra-analogy",
+        "metacognition",
+        "reasoning",
+        "thinking"
+       ],
+       "cs": [
+        "D08",
+        "D14"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B",
+   "chu": [
+    {
+     "id": "11",
+     "name": "代数学、幾何学およびその関連分野",
+     "sho": [
+      {
+       "id": "11010",
+       "name": "代数学",
+       "pages": [
+        "euler-formula",
+        "fundamental-theorem-of-algebra",
+        "fundamental-theorem-of-algebra-analogy",
+        "subtraction-kinds",
+        "three-and-seven"
+       ],
+       "cs": [
+        "D01"
+       ]
+      },
+      {
+       "id": "11020",
+       "name": "幾何学",
+       "pages": [
+        "angle-rotation",
+        "euler-unfolded",
+        "zen-circle-hs"
+       ],
+       "cs": [
+        "D01"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "12",
+     "name": "解析学、応用数学およびその関連分野",
+     "sho": [
+      {
+       "id": "12010",
+       "name": "基礎解析学",
+       "pages": [
+        "angle-rotation",
+        "euler-formula",
+        "euler-unfolded",
+        "fundamental-theorem-of-algebra",
+        "rotation-multiplication"
+       ],
+       "cs": []
+      },
+      {
+       "id": "12020",
+       "name": "数理解析学",
+       "pages": [
+        "julia-potential"
+       ],
+       "cs": [
+        "D01",
+        "D02",
+        "D29"
+       ]
+      },
+      {
+       "id": "12030",
+       "name": "数学基礎、応用数学および統計数学",
+       "pages": [
+        "buckle-history-of-civilization-ja",
+        "herschel-quetelet-probabilities-ja",
+        "quetelet-lettres-probabilites-ja",
+        "subtraction-kinds"
+       ],
+       "cs": [
+        "D01"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "13",
+     "name": "物性物理学およびその関連分野",
+     "sho": [
+      {
+       "id": "13010",
+       "name": "数理物理、物性基礎論および量子系",
+       "pages": [
+        "clausius-art-der-bewegung-ja",
+        "helmholtz-erhaltung-der-kraft-ja",
+        "herapath-mathematical-physics-ja",
+        "kronig-theorie-der-gase-ja",
+        "maxwell-dynamical-theory-of-gases-ja"
+       ],
+       "cs": [
+        "D02",
+        "D29"
+       ]
+      },
+      {
+       "id": "13020",
+       "name": "電子物性・光物理および原子分子物理",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "13030",
+       "name": "磁性、超伝導および強相関系",
+       "pages": [],
+       "cs": [
+        "D02"
+       ]
+      },
+      {
+       "id": "13040",
+       "name": "生物物理、化学物理およびソフトマターの物理",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "14",
+     "name": "プラズマ学およびその関連分野",
+     "sho": [
+      {
+       "id": "14010",
+       "name": "プラズマ科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "14020",
+       "name": "核融合学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "14030",
+       "name": "プラズマ応用科学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "15",
+     "name": "地球惑星科学およびその関連分野",
+     "sho": [
+      {
+       "id": "15010",
+       "name": "宇宙惑星科学",
+       "pages": [],
+       "cs": [
+        "D06"
+       ]
+      },
+      {
+       "id": "15020",
+       "name": "大気水圏科学",
+       "pages": [],
+       "cs": [
+        "D05"
+       ]
+      },
+      {
+       "id": "15030",
+       "name": "地球人間圏科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "15040",
+       "name": "固体地球科学",
+       "pages": [],
+       "cs": [
+        "D05"
+       ]
+      },
+      {
+       "id": "15050",
+       "name": "地球生命科学",
+       "pages": [],
+       "cs": [
+        "D05"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "91",
+     "name": "量子情報およびその関連分野",
+     "sho": [
+      {
+       "id": "91010",
+       "name": "量子情報ハードウェア",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "91020",
+       "name": "量子情報システム",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "91030",
+       "name": "量子情報基礎理論・応用",
+       "pages": [],
+       "cs": [
+        "D02"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "C",
+   "chu": [
+    {
+     "id": "16",
+     "name": "素粒子、原子核、宇宙物理学およびその関連分野",
+     "sho": [
+      {
+       "id": "16010",
+       "name": "素粒子、原子核、宇宙線および宇宙物理にする理論",
+       "pages": [
+        "gravity-love",
+        "gravity-well"
+       ],
+       "cs": [
+        "D02",
+        "D06"
+       ]
+      },
+      {
+       "id": "16020",
+       "name": "素粒子、原子核、宇宙線および宇宙物理にする実験",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "80040",
+       "name": "量子ビーム科学および加速器科学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "17",
+     "name": "天文学およびその関連分野",
+     "sho": [
+      {
+       "id": "17010",
+       "name": "天文学",
+       "pages": [
+        "gravity-well"
+       ],
+       "cs": [
+        "D06"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "D",
+   "chu": [
+    {
+     "id": "18",
+     "name": "材料力学、生産工学、設計工学およびその関連分野",
+     "sho": [
+      {
+       "id": "18010",
+       "name": "材料力学および機械材料",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "18020",
+       "name": "加工学および生産工学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "18030",
+       "name": "設計工学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "18040",
+       "name": "機械要素およびトライボロジー",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "19",
+     "name": "流体工学、熱工学およびその関連分野",
+     "sho": [
+      {
+       "id": "19010",
+       "name": "流体工学",
+       "pages": [],
+       "cs": [
+        "D01"
+       ]
+      },
+      {
+       "id": "19020",
+       "name": "熱工学",
+       "pages": [
+        "clausius-bewegende-kraft-der-warme-ja",
+        "rankine-mechanical-action-of-heat-ja",
+        "thomson-heat-ja"
+       ],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "20",
+     "name": "機械力学、ロボティクスおよびその関連分野",
+     "sho": [
+      {
+       "id": "20010",
+       "name": "機械力学およびメカトロニクス",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "20020",
+       "name": "ロボティクスおよび知能機械システム",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "21",
+     "name": "土木工学およびその関連分野",
+     "sho": [
+      {
+       "id": "21010",
+       "name": "土木材料、施工および建設マネジメント",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "21020",
+       "name": "構造工学および地震工学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "21030",
+       "name": "地盤工学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "21040",
+       "name": "水工学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "21050",
+       "name": "土木計画学および交通工学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "21060",
+       "name": "土木環境システム",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "22",
+     "name": "建築学およびその関連分野",
+     "sho": [
+      {
+       "id": "80010",
+       "name": "デザイン学",
+       "pages": [],
+       "cs": [
+        "D22"
+       ]
+      },
+      {
+       "id": "22010",
+       "name": "建築構造および材料",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "22020",
+       "name": "建築環境および建築設備",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "22030",
+       "name": "建築計画および都市計画",
+       "pages": [],
+       "cs": [
+        "D27"
+       ]
+      },
+      {
+       "id": "22040",
+       "name": "建築史および意匠",
+       "pages": [],
+       "cs": [
+        "D27"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "23",
+     "name": "航空宇宙工学、船舶海洋工学およびその関連分野",
+     "sho": [
+      {
+       "id": "23010",
+       "name": "航空宇宙工学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "23020",
+       "name": "船舶海洋工学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "24",
+     "name": "社会システム工学、安全工学、防災工学およびその関連分野",
+     "sho": [
+      {
+       "id": "24010",
+       "name": "社会システム工学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "24020",
+       "name": "安全工学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "24030",
+       "name": "防災工学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "25",
+     "name": "原子力工学、地球資源工学、エネルギー学およびその関連分野",
+     "sho": [
+      {
+       "id": "25010",
+       "name": "原子力工学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "25020",
+       "name": "地球資源工学およびエネルギー学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "E",
+   "chu": [
+    {
+     "id": "26",
+     "name": "電気電子工学およびその関連分野",
+     "sho": [
+      {
+       "id": "26010",
+       "name": "電力工学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "26020",
+       "name": "通信工学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "26030",
+       "name": "計測工学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "26040",
+       "name": "制御およびシステム工学",
+       "pages": [],
+       "cs": [
+        "D07"
+       ]
+      },
+      {
+       "id": "26050",
+       "name": "電気電子材料工学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "26060",
+       "name": "電子デバイスおよび電子機器",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "27",
+     "name": "材料工学およびその関連分野",
+     "sho": [
+      {
+       "id": "27010",
+       "name": "金属材料物性",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "27020",
+       "name": "無機材料および物性",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "27030",
+       "name": "複合材料および界面",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "27040",
+       "name": "構造材料および機能材料",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "27050",
+       "name": "材料加工および組織制御",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "27060",
+       "name": "金属生産および資源生産",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "F",
+   "chu": [
+    {
+     "id": "28",
+     "name": "化学工学およびその関連分野",
+     "sho": [
+      {
+       "id": "28010",
+       "name": "移動現象および単位操作",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "28020",
+       "name": "反応工学およびプロセスシステム工学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "28030",
+       "name": "触媒プロセスおよび資源化学プロセス",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "28040",
+       "name": "バイオ機能応用およびバイオプロセス工学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "29",
+     "name": "ナノマイクロ科学およびその関連分野",
+     "sho": [
+      {
+       "id": "29010",
+       "name": "ナノ構造化学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "29020",
+       "name": "ナノ構造物理",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "29030",
+       "name": "ナノ材料科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "29040",
+       "name": "ナノマイクロバイオサイエンス",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "29050",
+       "name": "ナノマイクロシステム",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "30",
+     "name": "応用物理物性およびその関連分野",
+     "sho": [
+      {
+       "id": "30010",
+       "name": "応用物性",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "30020",
+       "name": "薄膜および表面界面物性",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "30030",
+       "name": "応用物理一般",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "31",
+     "name": "応用物理工学およびその関連分野",
+     "sho": [
+      {
+       "id": "31010",
+       "name": "結晶工学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "31020",
+       "name": "光工学および光量子科学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "90",
+     "name": "人間医工学およびその関連分野",
+     "sho": [
+      {
+       "id": "90010",
+       "name": "生体機械工学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "90020",
+       "name": "生体材料工学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "90030",
+       "name": "生体電気・情報工学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "G",
+   "chu": [
+    {
+     "id": "32",
+     "name": "物理化学、機能物性化学、分析化学およびその関連分野",
+     "sho": [
+      {
+       "id": "32010",
+       "name": "基礎物理化学",
+       "pages": [],
+       "cs": [
+        "D03"
+       ]
+      },
+      {
+       "id": "32020",
+       "name": "機能物性化学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "32030",
+       "name": "分析化学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "33",
+     "name": "有機化学、高分子化学およびその関連分野",
+     "sho": [
+      {
+       "id": "33010",
+       "name": "構造有機化学および物理有機化学",
+       "pages": [],
+       "cs": [
+        "D03"
+       ]
+      },
+      {
+       "id": "33020",
+       "name": "有機合成化学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "33030",
+       "name": "高分子化学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "34",
+     "name": "基礎無機化学およびその関連分野",
+     "sho": [
+      {
+       "id": "34010",
+       "name": "無機・錯体化学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "70060",
+       "name": "無機物質および無機材料化学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "35",
+     "name": "生体分子化学およびその関連分野",
+     "sho": [
+      {
+       "id": "35010",
+       "name": "生体化学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "35020",
+       "name": "生物分子化学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "35030",
+       "name": "ケミカルバイオロジー",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "36",
+     "name": "材料化学およびその関連分野",
+     "sho": [
+      {
+       "id": "70060",
+       "name": "無機物質および無機材料化学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "36010",
+       "name": "有機機能材料",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "36020",
+       "name": "高分子材料",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "37",
+     "name": "エネルギー関連化学、環境化学およびその関連分野",
+     "sho": [
+      {
+       "id": "37010",
+       "name": "エネルギー化学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "37020",
+       "name": "グリーンサステイナブルケミストリーおよび環境化学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "H",
+   "chu": [
+    {
+     "id": "38",
+     "name": "農芸化学およびその関連分野",
+     "sho": [
+      {
+       "id": "38010",
+       "name": "植物栄養学および土壌学",
+       "pages": [],
+       "cs": [
+        "D12"
+       ]
+      },
+      {
+       "id": "38020",
+       "name": "応用微生物学",
+       "pages": [],
+       "cs": [
+        "D30"
+       ]
+      },
+      {
+       "id": "38030",
+       "name": "応用生物化学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "38040",
+       "name": "生物有機化学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "38050",
+       "name": "食品科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "38060",
+       "name": "応用分子細胞生物学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "39",
+     "name": "生産環境農学およびその関連分野",
+     "sho": [
+      {
+       "id": "39010",
+       "name": "遺伝育種科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "39020",
+       "name": "作物生産科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "39030",
+       "name": "園芸科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "39040",
+       "name": "植物保護科学",
+       "pages": [],
+       "cs": [
+        "D12"
+       ]
+      },
+      {
+       "id": "39050",
+       "name": "昆虫科学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "40",
+     "name": "森林圏科学、水圏応用科学、ランドスケープ科学およびその関連分野",
+     "sho": [
+      {
+       "id": "40010",
+       "name": "森林科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "40020",
+       "name": "木質科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "40030",
+       "name": "水圏生産科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "40040",
+       "name": "水圏生命科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "40050",
+       "name": "統合的ランドスケープ科学",
+       "pages": [],
+       "cs": [
+        "D12"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "41",
+     "name": "社会経済農学、農業工学およびその関連分野",
+     "sho": [
+      {
+       "id": "41010",
+       "name": "食料農業経済",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "41020",
+       "name": "農業社会構造",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "41030",
+       "name": "地域環境工学および農村計画学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "41040",
+       "name": "農業環境工学および農業情報工学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "41050",
+       "name": "環境農学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "42",
+     "name": "獣医学、畜産学およびその関連分野",
+     "sho": [
+      {
+       "id": "42010",
+       "name": "動物生産科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "42020",
+       "name": "獣医学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "42030",
+       "name": "基礎獣医学および動物生命科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "42040",
+       "name": "実験動物学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "I",
+   "chu": [
+    {
+     "id": "43",
+     "name": "分子レベルから細胞レベルの生物学およびその関連分野",
+     "sho": [
+      {
+       "id": "43010",
+       "name": "分子生物学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "43020",
+       "name": "構造生物化学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "43030",
+       "name": "機能生物化学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "43040",
+       "name": "生物物理学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "43050",
+       "name": "ゲノム生物学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "43060",
+       "name": "システム生命情報科学",
+       "pages": [],
+       "cs": [
+        "D03",
+        "D29"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "44",
+     "name": "細胞レベルから個体レベルの生物学およびその関連分野",
+     "sho": [
+      {
+       "id": "44010",
+       "name": "細胞生物学",
+       "pages": [],
+       "cs": [
+        "D09"
+       ]
+      },
+      {
+       "id": "44020",
+       "name": "発生生物学",
+       "pages": [
+        "kolliker-darwinsche-schopfungstheorie-ja"
+       ],
+       "cs": [
+        "D04",
+        "D09"
+       ]
+      },
+      {
+       "id": "44030",
+       "name": "植物分子および生理科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "44040",
+       "name": "形態および構造",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "44050",
+       "name": "動物生理化学、生理学および行動学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "45",
+     "name": "個体レベルから集団レベルの生物学と人類学およびその関連分野",
+     "sho": [
+      {
+       "id": "45010",
+       "name": "遺伝学",
+       "pages": [
+        "weismann-significance-of-sexual-reproduction-ja"
+       ],
+       "cs": [
+        "D04"
+       ]
+      },
+      {
+       "id": "45020",
+       "name": "進化生物学",
+       "pages": [
+        "darwin-historical-sketch-ja",
+        "darwin-wallace-1858-ja",
+        "kolliker-darwinsche-schopfungstheorie-ja",
+        "naegeli-abstammungslehre-ja",
+        "weismann-significance-of-sexual-reproduction-ja"
+       ],
+       "cs": [
+        "D03",
+        "D04",
+        "D09"
+       ]
+      },
+      {
+       "id": "45030",
+       "name": "多様性生物学および分類学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "45040",
+       "name": "生態学および環境学",
+       "pages": [],
+       "cs": [
+        "D04",
+        "D12",
+        "D30"
+       ]
+      },
+      {
+       "id": "45050",
+       "name": "自然人類学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "45060",
+       "name": "応用人類学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "46",
+     "name": "神経系の科学およびその関連分野",
+     "sho": [
+      {
+       "id": "46010",
+       "name": "分子・細胞レベルの神経科学",
+       "pages": [],
+       "cs": [
+        "D09"
+       ]
+      },
+      {
+       "id": "46020",
+       "name": "システム・個体レベルの神経科学",
+       "pages": [],
+       "cs": [
+        "D08",
+        "D09"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "J",
+   "chu": [
+    {
+     "id": "47",
+     "name": "薬学およびその関連分野",
+     "sho": [
+      {
+       "id": "47010",
+       "name": "薬系化学および創薬科学",
+       "pages": [],
+       "cs": [
+        "D11"
+       ]
+      },
+      {
+       "id": "47020",
+       "name": "薬系分析および物理化学",
+       "pages": [],
+       "cs": [
+        "D11"
+       ]
+      },
+      {
+       "id": "47030",
+       "name": "薬系衛生および生物化学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "47040",
+       "name": "薬理学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "47050",
+       "name": "環境および天然医薬資源学",
+       "pages": [],
+       "cs": [
+        "D11"
+       ]
+      },
+      {
+       "id": "47060",
+       "name": "医療薬学",
+       "pages": [],
+       "cs": [
+        "D11"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "48",
+     "name": "生体の構造と機能およびその関連分野",
+     "sho": [
+      {
+       "id": "48010",
+       "name": "解剖学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "48020",
+       "name": "生理学",
+       "pages": [],
+       "cs": [
+        "D08",
+        "D09"
+       ]
+      },
+      {
+       "id": "48030",
+       "name": "薬理学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "48040",
+       "name": "基礎医化学および基礎遺伝学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "49",
+     "name": "病理病態学、感染・免疫学およびその関連分野",
+     "sho": [
+      {
+       "id": "49010",
+       "name": "病態医化学および疾患遺伝学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "49020",
+       "name": "人体病理学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "49030",
+       "name": "実験病理学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "49040",
+       "name": "寄生虫学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "49050",
+       "name": "細菌学",
+       "pages": [],
+       "cs": [
+        "D11"
+       ]
+      },
+      {
+       "id": "49060",
+       "name": "ウイルス学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "49070",
+       "name": "免疫学",
+       "pages": [],
+       "cs": [
+        "D09",
+        "D10"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "K",
+   "chu": [
+    {
+     "id": "50",
+     "name": "腫瘍学およびその関連分野",
+     "sho": [
+      {
+       "id": "50010",
+       "name": "腫瘍生物学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "50020",
+       "name": "腫瘍診断および治療学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "51",
+     "name": "脳の活動と病態およびその関連分野",
+     "sho": [
+      {
+       "id": "51010",
+       "name": "脳科学一般",
+       "pages": [
+        "via-vulnerability"
+       ],
+       "cs": [
+        "D08"
+       ]
+      },
+      {
+       "id": "51020",
+       "name": "病態脳科学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "52",
+     "name": "内科学一般およびその関連分野",
+     "sho": [
+      {
+       "id": "52010",
+       "name": "内科学一般",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "52020",
+       "name": "神経内科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "52030",
+       "name": "精神神経科学",
+       "pages": [
+        "anxiety"
+       ],
+       "cs": [
+        "D10"
+       ]
+      },
+      {
+       "id": "52040",
+       "name": "放射線科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "52050",
+       "name": "胎児医学および小児成育学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "53",
+     "name": "器官システム内科学およびその関連分野",
+     "sho": [
+      {
+       "id": "53010",
+       "name": "消化器内科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "53020",
+       "name": "循環器内科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "53030",
+       "name": "呼吸器内科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "53040",
+       "name": "腎臓内科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "53050",
+       "name": "皮膚科学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "54",
+     "name": "生体情報内科学およびその関連分野",
+     "sho": [
+      {
+       "id": "54010",
+       "name": "血液および腫瘍内科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "54020",
+       "name": "膠原病およびアレルギー内科学",
+       "pages": [],
+       "cs": [
+        "D10"
+       ]
+      },
+      {
+       "id": "54030",
+       "name": "感染症内科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "54040",
+       "name": "代謝および内分泌学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "55",
+     "name": "恒常性維持器官の外科学およびその関連分野",
+     "sho": [
+      {
+       "id": "55010",
+       "name": "外科学一般および小児外科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "55020",
+       "name": "消化器外科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "55030",
+       "name": "心臓血管外科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "55040",
+       "name": "呼吸器外科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "55050",
+       "name": "麻酔科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "55060",
+       "name": "救急医学",
+       "pages": [],
+       "cs": [
+        "D10"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "56",
+     "name": "生体機能および感覚に関する外科学およびその関連分野",
+     "sho": [
+      {
+       "id": "56010",
+       "name": "脳神経外科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "56020",
+       "name": "整形外科学",
+       "pages": [],
+       "cs": [
+        "D10"
+       ]
+      },
+      {
+       "id": "56030",
+       "name": "泌尿器科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "56040",
+       "name": "産婦人科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "56050",
+       "name": "耳鼻咽喉科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "56060",
+       "name": "眼科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "56070",
+       "name": "形成外科学",
+       "pages": [],
+       "cs": [
+        "D10"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "57",
+     "name": "口腔科学およびその関連分野",
+     "sho": [
+      {
+       "id": "57010",
+       "name": "常態系口腔科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "57020",
+       "name": "病態系口腔科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "57030",
+       "name": "保存治療系歯学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "57040",
+       "name": "口腔再生医学および歯科医用工学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "57050",
+       "name": "補綴系歯学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "57060",
+       "name": "外科系歯学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "57070",
+       "name": "成長および発育系歯学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "57080",
+       "name": "社会系歯学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "58",
+     "name": "社会医学、看護学およびその関連分野",
+     "sho": [
+      {
+       "id": "58010",
+       "name": "医療管理学、医療系社会学および医療技術評価",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "58020",
+       "name": "衛生学および公衆衛生学分野：実験系を含む",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "58030",
+       "name": "衛生学および公衆衛生学分野：実験系を含まない",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "58040",
+       "name": "法医学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "58050",
+       "name": "基礎看護学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "58060",
+       "name": "臨床看護学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "58070",
+       "name": "生涯発達看護学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "58080",
+       "name": "高齢者看護学および地域看護学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "59",
+     "name": "リハビリテーション科学、スポーツ科学、体育、健康科学およびその関連分野",
+     "sho": [
+      {
+       "id": "59010",
+       "name": "リハビリテーション科学および医療福祉",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "59020",
+       "name": "スポーツ科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "59030",
+       "name": "体育および身体教育学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "59040",
+       "name": "健康科学および栄養学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "L",
+   "chu": [
+    {
+     "id": "60",
+     "name": "情報科学、情報工学およびその関連分野",
+     "sho": [
+      {
+       "id": "60010",
+       "name": "情報学基礎論",
+       "pages": [],
+       "cs": [
+        "D07"
+       ]
+      },
+      {
+       "id": "60020",
+       "name": "数理情報学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "60030",
+       "name": "統計科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "60040",
+       "name": "計算機システム",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "60050",
+       "name": "ソフトウェア",
+       "pages": [
+        "vibe-to-code"
+       ],
+       "cs": [
+        "D07"
+       ]
+      },
+      {
+       "id": "60060",
+       "name": "情報ネットワーク",
+       "pages": [],
+       "cs": [
+        "D07"
+       ]
+      },
+      {
+       "id": "60070",
+       "name": "情報セキュリティ",
+       "pages": [],
+       "cs": [
+        "D07"
+       ]
+      },
+      {
+       "id": "60080",
+       "name": "データベースおよびビッグデータ",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "60090",
+       "name": "高性能計算",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "60100",
+       "name": "計算科学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "61",
+     "name": "人間情報学およびその関連分野",
+     "sho": [
+      {
+       "id": "80010",
+       "name": "デザイン学",
+       "pages": [],
+       "cs": [
+        "D22"
+       ]
+      },
+      {
+       "id": "80030",
+       "name": "認知科学",
+       "pages": [
+        "creative-thinking",
+        "empathy",
+        "fundamental-theorem-of-algebra-analogy",
+        "metacognition",
+        "reasoning",
+        "thinking"
+       ],
+       "cs": [
+        "D08",
+        "D14"
+       ]
+      },
+      {
+       "id": "61010",
+       "name": "知覚情報処理",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "61020",
+       "name": "ヒューマンインタフェースおよびインタラクション",
+       "pages": [
+        "vibe-to-code"
+       ],
+       "cs": []
+      },
+      {
+       "id": "61030",
+       "name": "知能情報学",
+       "pages": [
+        "capacity-after-ai",
+        "reading-directions"
+       ],
+       "cs": [
+        "D07"
+       ]
+      },
+      {
+       "id": "61040",
+       "name": "ソフトコンピューティング",
+       "pages": [],
+       "cs": [
+        "D29"
+       ]
+      },
+      {
+       "id": "61050",
+       "name": "知能ロボティクス",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "61060",
+       "name": "感性情報学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "62",
+     "name": "応用情報学およびその関連分野",
+     "sho": [
+      {
+       "id": "80020",
+       "name": "人文社会情報学および図書館情報学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "62010",
+       "name": "生命、健康および医療情報学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "62020",
+       "name": "ウェブ情報学およびサービス情報学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "62030",
+       "name": "学習支援システム",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "62040",
+       "name": "エンタテインメントおよびゲーム情報学",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "M",
+   "chu": [
+    {
+     "id": "63",
+     "name": "環境解析評価およびその関連分野",
+     "sho": [
+      {
+       "id": "63010",
+       "name": "環境動態解析",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "63020",
+       "name": "放射線影響",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "63030",
+       "name": "化学物質影響",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "63040",
+       "name": "環境影響評価",
+       "pages": [],
+       "cs": []
+      }
+     ]
+    },
+    {
+     "id": "64",
+     "name": "環境保全対策およびその関連分野",
+     "sho": [
+      {
+       "id": "64010",
+       "name": "環境負荷およびリスク評価管理",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "64020",
+       "name": "環境負荷低減技術および保全修復技術",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "64030",
+       "name": "環境材料およびリサイクル技術",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "64040",
+       "name": "自然共生システム",
+       "pages": [],
+       "cs": [
+        "D12"
+       ]
+      },
+      {
+       "id": "64050",
+       "name": "循環型社会システム",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "64060",
+       "name": "環境政策および環境配慮型社会",
+       "pages": [],
+       "cs": [
+        "D20",
+        "D30"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "pages": {
+  "angle-rotation": "三角関数から複素平面まで、回転を扱うための角度の話だった",
+  "anshin": "安心とは",
+  "anxiety": "不安とは",
+  "beauty": "美とは",
+  "breath-filter": "聞こえていなかった呼吸の音",
+  "buckle-history-of-civilization-ja": "バックル『イギリス文明史』（1857）の、統計が示す規則性の所を、日本語で読む",
+  "business-design-syllabus": "Love駆動開発は、事業構想の授業になるか",
+  "capacity-after-ai": "AI の時代に、差になるスキルは何か",
+  "carus-onslaught-on-necessity-ja": "ケーラス「パース氏の必然論への猛攻」を、日本語で読む",
+  "clausius-art-der-bewegung-ja": "クラウジウス「熱と呼ぶ運動の種類について」（1857）を、日本語で読む",
+  "clausius-bewegende-kraft-der-warme-ja": "クラウジウス「熱の動力について」（1850）を、日本語で読む",
+  "cognitive-abilities": "頭脳の能力は、どう分けられてきたか",
+  "creative-thinking": "創造的思考とは",
+  "darwin-historical-sketch-ja": "ダーウィン「歴史的概略」（『種の起源』第 3 版の巻頭）を、日本語で読む",
+  "darwin-wallace-1858-ja": "ダーウィンとウォレスのリンネ協会の論文（1858）を、日本語で読む",
+  "decision-making": "意思決定とは",
+  "defense-mechanisms": "心理的防衛機制とは",
+  "developmental-stages": "精神の発達段階とは",
+  "draper-intellectual-development-ja": "ドレイパー『ヨーロッパの知的発展の歴史』（1863）の第 10 章「東方の信仰の時代」を、日本語で読む",
+  "emerging-abilities": "新しく注目されている能力",
+  "empathy": "共感とは",
+  "euler-formula": "オイラーの式",
+  "euler-unfolded": "オイラーの等式が、たたんだもの",
+  "forgiveness-salvation": "赦しと救いとは",
+  "fundamental-theorem-of-algebra": "代数学の基本定理",
+  "fundamental-theorem-of-algebra-analogy": "代数学の基本定理から、構造の類似を考える",
+  "gravity-love": "愛は、重力に似ていないか — 動かず、何もなく、自分からは見えないのに、すべてを回す中心",
+  "gravity-well": "重力の井戸とは",
+  "hamilton-philosophy-of-the-unconditioned-ja": "ハミルトン「無条件者の哲学について」（1829）を、日本語で読む",
+  "helmholtz-erhaltung-der-kraft-ja": "ヘルムホルツ『力の保存について』（1847）を、日本語で読む",
+  "herapath-mathematical-physics-ja": "ヘラパス『数理物理学』（1847）の、気体の運動論の所を、日本語で読む",
+  "herschel-quetelet-probabilities-ja": "ハーシェル「ケトレーの確率論」（1850）を、日本語で読む",
+  "influences-management": "影響を受けた経営学",
+  "influences-psychology": "影響を受けた心理学",
+  "interpersonal-abilities": "人と関わる力",
+  "intrinsic-motivation": "内発的動機とは",
+  "james-substance-and-shadow-ja": "ジェイムズ（父）『実体と影』の「創造的な愛」の所を、日本語で読む",
+  "julia-potential": "起業家の漸化式と、ジュリア集合",
+  "kolliker-darwinsche-schopfungstheorie-ja": "ケリカー「ダーウィンの創造説について」（1864）を、日本語で読む",
+  "kronig-theorie-der-gase-ja": "クレーニッヒ「気体の理論の大要」（1856）を、日本語で読む",
+  "life-drivers": "人生の駆動源は、何として見られてきたか",
+  "love-driven-dev": "Love駆動開発と呼びたいもの β",
+  "love-driven-dev-en": "What I Want to Call Love-Driven Development β",
+  "love-history": "Love とは、どう言われてきたか",
+  "management-drivers": "経営学の考え方は、どこまで効くか",
+  "mandeville-grumbling-hive-ja": "マンデヴィル『蜂の寓話』（1714）の詩「ぶつぶつ言う蜂の巣」を、日本語で読む",
+  "mansel-limits-of-religious-thought-ja": "マンセル『宗教的思考の限界』（1858）の序文を、日本語で読む",
+  "maxwell-dynamical-theory-of-gases-ja": "マクスウェル「気体の動力学的理論の例解」（1860）を、日本語で読む",
+  "metacognition": "メタ認知とは",
+  "mill-examination-of-hamilton-ja": "ミル『ハミルトン哲学の検討』（1865）の第 VII 章を、日本語で読む",
+  "mintzberg-schools": "ミンツバーグの学派を、駆動源と創造の流れで見る",
+  "naegeli-abstammungslehre-ja": "ネーゲリ『由来論の機械論的・生理学的理論』（1884）の、序論と内的な原因の所を、日本語で読む",
+  "newcomb-political-economy-ja": "ニューカム『政治経済学原理』の利己心と慈善の所を、日本語で読む",
+  "no-road-ahead": "時間の向き - 僕の前に道はない",
+  "nonaka-complement": "野中郁次郎の理想を目指すとき、どこに気をつけるか",
+  "nondual": "不二（非二元）とは",
+  "peirce-evolutionary-love-ja": "パース「進化的な愛」を、日本語で読む",
+  "peirce-glassy-essence-ja": "パース「人間のガラスのような本質」を、日本語で読む",
+  "peirce-law-of-mind-ja": "パース「心の法則」を、日本語で読む",
+  "peirce-love-abduction": "パースの創造的な愛と、アブダクション",
+  "personality": "性格とは",
+  "psychological-safety": "心理的安全性とは",
+  "psychological-safety-en": "What Is Psychological Safety",
+  "quetelet-lettres-probabilites-ja": "ケトレー『確率論についての書簡』（1846）の、平均と誤差の所を、日本語で読む",
+  "rankine-mechanical-action-of-heat-ja": "ランキン「熱の力学的作用について」（1850）を、日本語で読む",
+  "reading-directions": "Claude から LLM への申し送り",
+  "reasoning": "推論とは",
+  "rotation-multiplication": "回転の掛け算",
+  "shikan": "止観とは",
+  "soft-skills": "ソフトスキル・非認知能力とは",
+  "stages-defense": "発達段階と心理的防衛機制",
+  "stages-screener": "ものの見方の広さスクリーナー — 視座・メタ認知・インクルーシブを16問で確かめる",
+  "subtraction-kinds": "いろんな引き算",
+  "thinking": "思考とは",
+  "thinking-definitions": "「考える」の語は、何を指してきたか",
+  "thomson-heat-ja": "トムソン「熱」（『ブリタニカ百科事典』第 9 版・1880）を、日本語で読む",
+  "three-and-seven": "なぜ 3 と 7 だけが特別なのか — 可除代数‑意識/組織仮説（読み物）",
+  "to-james": "ジェームズに辿り着くまで",
+  "via-vulnerability": "脆弱性から、全体を知る",
+  "vibe-to-code": "Vibe to Code と並べて見る、pjdhiro のやり方",
+  "weismann-significance-of-sexual-reproduction-ja": "ヴァイスマン「自然選択の理論における有性生殖の意味」（1886）を、日本語で読む",
+  "william-james-self-ja": "ウィリアム・ジェームズの「I と Me」を、原典で読む",
+  "zen-circle-hs": "禅の円を、高校の数学で読む"
+ },
+ "cs": {
+  "D01": "数学",
+  "D02": "物理学",
+  "D03": "化学",
+  "D04": "進化生物学",
+  "D05": "地球科学",
+  "D06": "天文学・宇宙物理学",
+  "D07": "工学・情報科学",
+  "D08": "神経科学",
+  "D09": "生命科学",
+  "D10": "臨床医学・免疫",
+  "D11": "薬学",
+  "D12": "農学・生態学",
+  "D13": "哲学",
+  "D14": "心理学",
+  "D15": "美学",
+  "D16": "歴史学",
+  "D17": "言語学",
+  "D18": "社会学",
+  "D19": "文学・文芸学",
+  "D20": "法学・政治学",
+  "D21": "経済学",
+  "D22": "経営学",
+  "D23": "発達心理学",
+  "D24": "宗教学・神秘主義",
+  "D25": "人類学・民族学",
+  "D26": "音楽学",
+  "D27": "建築・デザイン学",
+  "D28": "舞台芸術",
+  "D29": "複雑系科学",
+  "D30": "伝統知・技芸"
+ }
+}

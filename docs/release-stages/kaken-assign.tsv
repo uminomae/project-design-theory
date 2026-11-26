@@ -2,9 +2,8 @@
 # 列：種類（page＝pd/reader の一ページ・shelf＝並びや目次で、中身は呼ぶ先のページの側・cs＝創造とはの分野）・ID（ファイル名か分野の番号）・小区分（空白で区切る。無ければ -）・根拠（読んだもの）・メモ
 # 当て方：ページは <title> と meta description と見出しを、cs は cs/evidence/evidence-Dxx-*.md の「論ごとの節」の見出し（論の名と著者）を読んで、その論が、区分表の「内容の例」のどこに入るかで当てた。主に扱う区分だけを置き、一文触れるだけの区分は入れない。
 # 別のコンテキストで照合し直す前の下書き（RELEASE-STAGES.md §1）。
+page	about	-	reader/about.html	このサイトについての道案内（中身は呼ぶ先のページの側）
 page	abilities	-	reader/abilities.html	並びのページ（能力のジャンルの入口）
-page	ac-phasor	26010 12010	reader/ac-phasor.html	交流回路・複素数
-page	ac-phasor-unfolded	26010 12010	reader/ac-phasor-unfolded.html	交流回路・複素数
 page	angle-rotation	11020 12010 09040	reader/angle-rotation.html	角度・三角関数・学校の数学の順
 page	anshin	01020 01040 10010	reader/anshin.html	達磨安心・語の来歴・山岸の安心と信頼
 page	anxiety	10030 52030	reader/anxiety.html	新田（精神科医）の定義
@@ -17,6 +16,7 @@ page	carus-onslaught-on-necessity-ja	01080 01040	reader/carus-onslaught-on-neces
 page	clausius-art-der-bewegung-ja	01080 13010	reader/clausius-art-der-bewegung-ja.html	対訳・気体の運動論
 page	clausius-bewegende-kraft-der-warme-ja	01080 19020	reader/clausius-bewegende-kraft-der-warme-ja.html	対訳・熱力学
 page	cognitive-abilities	10020 10040	reader/cognitive-abilities.html	知能の因子
+page	competency-frameworks	-	reader/competency-frameworks.html	測った結果（このサイトを公的な能力の枠組みで測った表）
 page	complex-plane	-	reader/complex-plane.html	目次のページ（複素数の法則十七）
 page	creative-thinking	10020 09010 80030	reader/creative-thinking.html	PISA の定義・創造性の心理
 page	darwin-historical-sketch-ja	45020 01080	reader/darwin-historical-sketch-ja.html	対訳
@@ -40,9 +40,12 @@ page	herapath-mathematical-physics-ja	01080 13010	reader/herapath-mathematical-p
 page	herschel-quetelet-probabilities-ja	01080 12030	reader/herschel-quetelet-probabilities-ja.html	対訳・確率論
 page	influences-management	07060	reader/influences-management.html	影響を受けた経営学
 page	influences-psychology	10030 10020	reader/influences-psychology.html	影響を受けた心理学
+page	interpersonal-abilities	10010 10020 07060	reader/interpersonal-abilities.html	社会的知能・情動知能・社会情動的スキル・集団の知能（社会心理学・知能と性格の測定・組織のチーム）
 page	intrinsic-motivation	10020 10010	reader/intrinsic-motivation.html	自己決定理論
 page	james-substance-and-shadow-ja	01030 01040	reader/james-substance-and-shadow-ja.html	対訳
 page	julia-potential	12020 07060	reader/julia-potential.html	複素力学系・起業家
+page	kaken-map	-	reader/kaken-map.html	測った結果（この地図そのもの）
+page	kokoro-scale-map	-	reader/kokoro-scale-map.html	測った結果（誤解の台帳を尺度に当てた表）
 page	kolliker-darwinsche-schopfungstheorie-ja	45020 44020 01080	reader/kolliker-darwinsche-schopfungstheorie-ja.html	対訳・発生学
 page	kronig-theorie-der-gase-ja	01080 13010	reader/kronig-theorie-der-gase-ja.html	対訳
 page	life-drivers	01010 01040 01030	reader/life-drivers.html	哲学・宗教の駆動源の見方
@@ -50,6 +53,7 @@ page	love-driven-dev	07060 10030 01020	reader/love-driven-dev.html	Love駆動開
 page	love-driven-dev-en	07060 10030 01020	reader/love-driven-dev-en.html	英語版
 page	love-history	01020 01010 01040	reader/love-history.html	仏教と西洋哲学の愛
 page	love-trajectory	-	reader/love-trajectory.html	pjdhiro の一年の記録。区分に入らない
+page	man	-	reader/man.html	目次（説明書を集めるガイド。中身は呼ぶ先のページの側）
 page	management-drivers	07060	reader/management-drivers.html	経営学
 page	mandeville-grumbling-hive-ja	07010 02020	reader/mandeville-grumbling-hive-ja.html	対訳・経済学史
 page	mansel-limits-of-religious-thought-ja	01030 01010	reader/mansel-limits-of-religious-thought-ja.html	対訳
@@ -76,9 +80,13 @@ page	reasoning	01010 80030	reader/reasoning.html	推論の種類
 page	rotation-multiplication	12010 09040	reader/rotation-multiplication.html	数学 III の前提
 page	shelf-love	-	reader/shelf-love.html	並び
 page	shelf-mind	-	reader/shelf-mind.html	並び
-page	shelf-number-org	-	reader/shelf-number-org.html	並び
+page	shelf-number	-	reader/shelf-number.html	並び
+page	shelf-org	-	reader/shelf-org.html	並び
+page	shelf-self	-	reader/shelf-self.html	並び
 page	shelf-translations	-	reader/shelf-translations.html	並び
 page	shikan	01020 10030	reader/shikan.html	止観
+page	site-evaluation	-	reader/site-evaluation.html	測った結果の並び
+page	soft-skills	10020 07030	reader/soft-skills.html	非認知のスキルの呼び名と測り方（性格の測定・労働経済学）
 page	stages-defense	10030 10020	reader/stages-defense.html	段階と防衛
 page	stages-screener	10020 10030	reader/stages-screener.html	スクリーナー（測定評価）
 page	subtraction-kinds	11010 12030	reader/subtraction-kinds.html	引き算の種類

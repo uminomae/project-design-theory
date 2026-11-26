@@ -32,6 +32,7 @@ run "pd：進化的な愛の引いている文献の訳の一覧" python3 -I pd/
 # 毎回読む芯（docs/rules/stance-core.md・corrections-core.md）が正本と食い違っていないか（2026-11-19・付箋帳 i20261118130216b6l）。
 run "規約：毎回読む芯が正本と一致" python3 -I scripts/rules-core.py --check
 run "pd：読み物の版番号" python3 -I pd/scripts/reader_version.py --check
+run "目標の段：学問の地図と誤解の台帳の表が TSV と合う（RELEASE-STAGES 3.2・3.3）" python3 -I scripts/release-maps.py --check
 # 対話の形の読み物で、pjdhiro の発言の引用カードの直前が見出し・畳みの題・組む道具の印になっていないか（文脈なしの発言・型 R・2026-11-10）。
 run "pd：引用カードの前の文脈" node scripts/check-quote-context.mjs
 run "pd：wiki の孤立ページ・不在の出典・旧用語" bash -c 'cd pd && node scripts/wiki-lint.mjs --check --quiet'

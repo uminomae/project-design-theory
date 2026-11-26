@@ -15,7 +15,7 @@ man は、コンピュータで「man exp」のように打つと、その命令
 
 <div class="reader-lead"><span class="reader-lead__label">構成</span>
 <ul class="reader-lead__list">
-<li><b><a href="#man-howto">説明書の読み方</a></b>：見出しの並びと、〔整理〕の印</li>
+<li><b><a href="#man-howto">説明書の読み方</a></b>：見出しの並び</li>
 <li><b><a href="#man-exp">exp(z)</a></b>：複素数 z を受け取り、e の z 乗を返す</li>
 <li><b><a href="#man-todo">まだ書いていない説明書</a></b>：工事中</li>
 </ul>
@@ -43,15 +43,13 @@ man は、コンピュータで「man exp」のように打つと、その命令
 
 </div>
 
-<span class="help-add">色の付いた行</span>は、ライブラリの厚い説明書（Wolfram Language の Exp など）にもふつうは書かれていない、このサイトが書き足した行です。多くは、それぞれの関数を開いた読み物から来ています。
-
-行の頭に〔整理〕と付けた行は、このサイトが数学の事実を並べ直したり、読んだりした行です。中の式や数は計算で確かめられますが、「省略されている」「こう読める」という言い方は、このサイトの見方です。見出しに付けた〔整理〕は、その見出しの立て方がこのサイトの整理であることを示し、下の行には及びません。印の無い行は、教科書やライブラリの説明書で確かめられる数学の事実です。
-
 ## exp(z)
 
 <!--OPEN-->
 
 <a id="man-exp"></a>複素数の指数関数です。オイラーの等式 e<sup>iπ</sup> + 1 = 0 は、この関数に iπ を入れると −1 が返る、という一行にあたります。
+
+この説明書は、元になったものに書き足した形です。元は、数学のライブラリの厚めの説明書（NumPy の exp や Wolfram Language の Exp など）によく書かれている中身です。そこに、読み物「[オイラーの等式が、たたんだもの](euler-unfolded.html#eo-help)」で開いたものを書き足しました。<span class="help-add">色の付いた行</span>が、書き足した所です。
 
 <pre class="help-doc" id="man-exp-doc"><b>exp(z)</b>
   複素数 z を受け取り、e の z 乗を返す。
@@ -68,16 +66,15 @@ man は、コンピュータで「man exp」のように打つと、その命令
 <span class="help-add">    返した値をほかの数に掛けると、平面の全体を、原点を中心に、大きさ e^a 倍に伸ばし、角度 b だけ左回りに回す。</span>
 <span class="help-add">    a = 0 なら、伸ばさずに回すだけ（値は半径 1 の円の上を進む）。</span>
 
-<span class="help-add">〔整理〕なぜ底が e か</span>
+<span class="help-add">  なぜ底が e か</span>
 <span class="help-add">    底を 1 でない正の数 c にすると、c^(iθ) = e^(iθ ln c) は、半径 1 の円の上を速さ |ln c| で進む</span>
 <span class="help-add">    （c < 1 なら逆回り。c = 2 なら速さ約 0.69）。</span>
 <span class="help-add">    左回りに速さがちょうど 1 になり、θ がそのまま円の上の道のりになるのは、底が e のときだけ。</span>
     微分しても形が変わらない（e^x を微分すると e^x）のも、底が e のときだけ。
 
-<span class="help-add">〔整理〕前提（省略されている既定値）</span>
-<span class="help-add">〔整理〕  回す軸：平面に直交する奥行きの向き。複素数には軸の置き場がなく、式に出てこない。</span>
-<span class="help-add">    掛ける順番：複素数の掛け算は、順番を入れ替えても結果が同じ。</span>
-<span class="help-add">〔整理〕  だから、順番は式に出てこない。</span>
+<span class="help-add">  前提（省略されている既定値）</span>
+<span class="help-add">    回す軸：平面に直交する奥行きの向き。複素数には軸の置き場がなく、式に出てこない。</span>
+<span class="help-add">    掛ける順番：複素数の掛け算は、順番を入れ替えても結果が同じなので、順番は式に出てこない。</span>
 <span class="help-add">    立体で回すときは、軸を長さ 1 の純虚の四元数 u（u² = −1）で書き、q = e^(uθ/2) で、</span>
 <span class="help-add">    純虚の四元数 v（位置）を前と後ろから挟む（v' = q v q⁻¹）。</span>
 <span class="help-add">    そこでは掛ける順番を入れ替えると結果が変わる。</span>
@@ -85,24 +82,24 @@ man は、コンピュータで「man exp」のように打つと、その命令
 
   周期
     e^(z + 2πi) = e^z。虚の向きに 2π 進むごとに、同じ値に戻る。
-<span class="help-add">〔整理〕  回った量で読むと：0 周、1 周、2 周……は、どれも同じ点に来る。</span>
+<span class="help-add">    回った量で読むと：0 周、1 周、2 周……は、どれも同じ点に来る。</span>
 <span class="help-add">    だから逆の関数 log は、何周したかの分だけ 2πi ずつ違う値が出て、一つに決まらない。</span>
 
   例
     exp(0) = 1　　exp(iπ) = −1　　exp(2πi) = 1
 <span class="help-add">    exp(iπ) は半周、exp(2πi) は一周。肩（指数）を半分にすると、一周が半周になる。</span>
-<span class="help-add">〔整理〕  オイラーの等式 e^(iπ) + 1 = 0 は、exp(iπ) = −1 の −1 を左へ移して、1 と 0 も式に入れた形。</span>
+<span class="help-add">    オイラーの等式 e^(iπ) + 1 = 0 は、exp(iπ) = −1 の −1 を左へ移して、1 と 0 も式に入れた形。</span>
 
 <span class="help-add">  返さないもの</span>
 <span class="help-add">    e^z は、どの z でも 0 にならない（e^z × e^(−z) = 1 なので）。値はいつも有限。</span>
 
-<span class="help-add">〔整理〕球の上で（ステレオ投影）</span>
+<span class="help-add">  球の上で（ステレオ投影）</span>
 <span class="help-add">    半径 1 の球を、赤道の高さの平面に置く。北極と平面の点を結ぶ線が球と交わる所に写すと、</span>
 <span class="help-add">    0 は南極に、半径 1 の円は赤道に来る。平面に足す一点 ∞ が、北極に来る。</span>
 <span class="help-add">    a = 0 の値（半径 1 の円）は赤道を回る。a を負の向きに限りなく大きくすると（a → −∞）e^z は 0（南極）へ、</span>
 <span class="help-add">    正の向きに限りなく大きくすると（a → +∞）∞（北極）へ近づくが、どちらにも着かない。</span>
 
-<span class="help-add">〔整理〕地図で読むと（メルカトル図法）</span>
+<span class="help-add">  地図で読むと（メルカトル図法）</span>
 <span class="help-add">    z = a + ib を船の地図（メルカトル図法）の点と見ると、exp は地図を平面に訳す。</span>
 <span class="help-add">    縦の a は大きさ e^a に、横の b は回転に訳され、横は 2π ごとに同じ所を指す。</span>
 
@@ -126,7 +123,7 @@ man は、コンピュータで「man exp」のように打つと、その命令
 <p>詳しく読むページ：</p>
 
 - [オイラーの式](euler-formula.html)：e<sup>iθ</sup> が、半径 1 の円の上を道のり θ だけ回った点であることを、中学の数学で読める言葉で解説します（定義と解説）。
-- [オイラーの等式が、たたんだもの](euler-unfolded.html)：等式を地球儀と船の地図の絵で開き、前提（回す軸・掛ける順番・二周で戻る回し手）と、球の上と地図の上の見方を確かめます。この説明書の色の付いた行の多くは、ここから来ています。
+- [オイラーの等式が、たたんだもの](euler-unfolded.html)：等式を地球儀と船の地図の絵で開き、前提（回す軸・掛ける順番・二周で戻る回し手）と、球の上と地図の上の見方を確かめます。この説明書の色の付いた行は、ここから来ています。
 - [三角関数から複素平面まで、回転を扱うための角度の話だった](angle-rotation.html)：角度を回った量として読む、おさらいです。
 - [禅の円を、高校の数学で読む](zen-circle-hs.html)：底が e のときだけ速さ 1 で回ることと、球の上の見方を、高校の数学だけで追います。
 
