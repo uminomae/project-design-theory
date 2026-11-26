@@ -1,18 +1,40 @@
 #!/usr/bin/env python3
 """RELEASE-STAGES.md の 3.2 と 3.3 の段 1 の表を、当てはめの TSV から作る。
 
-  python3 -I scripts/release-maps.py          # 二つの md を書き、数を出す
-  python3 -I scripts/release-maps.py --check  # 書かずに、md が TSV と合っているかだけ見る
+  python3 -I scripts/release-maps.py          # 二つの md と JSON を書き、数を出す
+  python3 -I scripts/release-maps.py --check  # 書かずに、md と JSON が TSV と合っているかだけ見る
 
 入力：docs/release-stages/kaken-kubun-r10.tsv・kaken-assign.tsv・kokoro-assign.tsv
-出力：docs/release-stages/kaken-map.md・kokoro-scale-map.md
+出力：docs/release-stages/kaken-map.md・kokoro-scale-map.md（下書きの表）と
+      kaken-map.json・kokoro-scale-map.json（公開ページ pd/reader/kaken-map.html・kokoro-scale-map.html の材料。
+      pd/scripts/build-reader-lp.py が読んでページに埋める）
+kaken-assign.tsv の page の行は、pd/reader/*.html と一つずつ合っていなければ止まる（ページを足した・外したら行も直す）。
 """
 import collections
+import glob
+import json
 import os
+import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = os.path.join(ROOT, "docs", "release-stages")
+READER = os.path.join(ROOT, "pd", "reader")
+
+
+def page_title(ident):
+    with open(os.path.join(READER, ident + ".html"), encoding="utf-8") as f:
+        m = re.search(r"<title>(.*?)</title>", f.read(), re.S)
+    return re.sub(r"\s*\|\s*Project Design\s*$", "", m.group(1).strip()) if m else ident
+
+
+def cs_title(ident):
+    for p in glob.glob(os.path.join(ROOT, "cs", "evidence", f"evidence-{ident}-*.md")):
+        with open(p, encoding="utf-8") as f:
+            m = re.search(r'^title:\s*"?([^"\n]*)', f.read(), re.M)
+        if m:
+            return m.group(1).split("：")[0]
+    sys.exit(f"cs の記録が無い：{ident}")
 
 
 def rows(name):
@@ -40,6 +62,10 @@ def kaken():
                 sys.exit(f"区分表に無い番号：{c}（{ident}）")
             hits[c].append(ident)
     pages = [a for a in assign if a[0] == "page"]
+    have = {os.path.basename(p)[:-5] for p in glob.glob(os.path.join(READER, "*.html"))}
+    listed = {a[1] for a in pages}
+    if have != listed:
+        sys.exit(f"kaken-assign.tsv の page の行が pd/reader と合わない。行が無いページ：{sorted(have - listed)}・ページが無い行：{sorted(listed - have)}")
     mapped_pages = [a for a in pages if codes(a[2])]
     csf = [a for a in assign if a[0] == "cs"]
     page_codes = {c for a in pages for c in codes(a[2])}
@@ -54,6 +80,7 @@ def kaken():
         cs_only=len(cs_codes - page_codes), both=len(page_codes & cs_codes),
         chu=len(chu), chu_touched=len(chu_touched), dai=len(dai_all), dai_touched=len(dai_touched),
         dai_untouched=[d for d in dai_all if d not in dai_touched],
+        unmapped_n=len(pages) - len(mapped_pages),
     )
     out = []
     w = out.append
@@ -76,7 +103,7 @@ def kaken():
     w(f"| 読み物のページ | {n['pages']}（区分に当てた {n['mapped_pages']}・当てない {len(n['unmapped'])}） |")
     w(f"| cs の分野 | {n['cs']}（どれも一つ以上の区分に当てた） |")
     w("")
-    w(f"区分に当てないページ：{'・'.join(n['unmapped'])}。並びや目次のページ（中身は呼ぶ先のページの側）と、pjdhiro の一年の記録（love-trajectory）。")
+    w(f"区分に当てないページ：{'・'.join(n['unmapped'])}。並びや目次のページ（中身は呼ぶ先のページの側）と、このサイトを測った結果のページと、pjdhiro の一年の記録（love-trajectory）。")
     w("")
     w("区分の中に場所が無いもの：Love駆動開発そのもの（経営学・臨床心理学・仏教学に触れるが、どれかの区分の研究ではない）、cs の D30 の伝統知そのもの（TEK・メーティスなどの論は区分に入る）。")
     w("")
@@ -109,7 +136,23 @@ def kaken():
         w("")
     w("複数の中区分に現れる小区分は、それぞれの中区分の行に出す（大区分の数は、出た行で数える）。上の「数」の小区分は、重ねずに数えた。")
     w("")
-    return "\n".join(out), n
+    page_ids = {a[1] for a in pages}
+    data = dict(
+        counts={k: v for k, v in n.items() if not isinstance(v, list)},
+        dai=[
+            dict(id=dai, chu=[
+                dict(id=ch, name=chu[ch][0], sho=[
+                    dict(id=c, name=sho[c][0].replace("関連", ""),
+                         pages=[i for i in hits.get(c, []) if i in page_ids],
+                         cs=[i for i in hits.get(c, []) if i not in page_ids])
+                    for c in order if ch in sho[c][1]
+                ]) for ch in sorted(by_dai[dai], key=int)
+            ]) for dai in sorted(by_dai)
+        ],
+        pages={a[1]: page_title(a[1]) for a in mapped_pages},
+        cs={a[1]: cs_title(a[1]) for a in csf},
+    )
+    return "\n".join(out), n, data
 
 
 LEVELS = [
@@ -154,6 +197,8 @@ def kokoro():
         none=sum(1 for r in rs if not codes(r[4]) and not codes(r[5])),
         defenses=len(names), d_touched=len(dh), levels=len(LEVELS), lv_touched=len(lv_touched),
         stages=len(STAGES), s_touched=len(sh),
+        empty_levels=[lv.split(" ", 1)[1] for lv, ds in LEVELS if lv not in lv_touched],
+        empty_stages=[f"{c} {cg}" for c, _, cg in STAGES if c not in sh],
     )
     out = []
     w = out.append
@@ -202,22 +247,29 @@ def kokoro():
         s = "・".join(codes(r[5])) or "—"
         w(f"| {r[0]}{' ★' if r[2] == '★' else ''} | {r[1]} | {r[3]} | {d} | {s} | {r[6]} |")
     w("")
-    return "\n".join(out), n
+    data = dict(
+        counts=n,
+        levels=[dict(name=lv, defenses=[dict(name=d, items=dh.get(d, [])) for d in ds]) for lv, ds in LEVELS],
+        stages=[dict(code=c, name=nm, cg=cg, items=sh.get(c, [])) for c, nm, cg in STAGES],
+        items=[dict(id=r[0], section=r[1], star=r[2] == "★", name=r[3], dmrs=codes(r[4]), wusct=codes(r[5])) for r in rs],
+    )
+    return "\n".join(out), n, data
 
 
 def main():
     check = "--check" in sys.argv
     bad = 0
-    for name, (text, n) in (("kaken-map.md", kaken()), ("kokoro-scale-map.md", kokoro())):
-        p = os.path.join(D, name)
-        if check:
-            cur = open(p, encoding="utf-8").read() if os.path.exists(p) else ""
-            if cur != text + "\n":
-                print(f"{name} が TSV と合っていない。python3 -I scripts/release-maps.py で作り直す")
-                bad = 1
-        else:
-            with open(p, "w", encoding="utf-8") as f:
-                f.write(text + "\n")
+    for name, (text, n, data) in (("kaken-map", kaken()), ("kokoro-scale-map", kokoro())):
+        js = json.dumps(data, ensure_ascii=False, indent=1)
+        for p, body in ((os.path.join(D, name + ".md"), text + "\n"), (os.path.join(D, name + ".json"), js + "\n")):
+            if check:
+                cur = open(p, encoding="utf-8").read() if os.path.exists(p) else ""
+                if cur != body:
+                    print(f"{os.path.basename(p)} が TSV と合っていない。python3 -I scripts/release-maps.py で作り直す")
+                    bad = 1
+            else:
+                with open(p, "w", encoding="utf-8") as f:
+                    f.write(body)
         print(name, {k: v for k, v in n.items() if not isinstance(v, list)})
     sys.exit(bad)
 

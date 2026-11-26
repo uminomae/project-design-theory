@@ -10,14 +10,14 @@
 
 | 項目 | 数 |
 |---|---|
-| 小区分 | 触れている 90 / 295（触れていない 205） |
-| うち読み物のページだけ・cs だけ・両方 | 11・50・29 |
+| 小区分 | 触れている 89 / 295（触れていない 206） |
+| うち読み物のページだけ・cs だけ・両方 | 10・50・29 |
 | 中区分 | 触れている 40 / 66 |
 | 大区分 | 触れている 13 / 13（触れていない：なし） |
-| 読み物のページ | 91（区分に当てた 83・当てない 8） |
+| 読み物のページ | 95（区分に当てた 81・当てない 14） |
 | cs の分野 | 30（どれも一つ以上の区分に当てた） |
 
-区分に当てないページ：abilities・complex-plane・love-trajectory・shelf-love・shelf-mind・shelf-number-org・shelf-translations。並びや目次のページ（中身は呼ぶ先のページの側）と、pjdhiro の一年の記録（love-trajectory）。
+区分に当てないページ：abilities・competency-frameworks・complex-plane・kaken-map・kokoro-scale-map・love-trajectory・man・shelf-love・shelf-mind・shelf-number・shelf-org・shelf-self・shelf-translations・site-evaluation。並びや目次のページ（中身は呼ぶ先のページの側）と、このサイトを測った結果のページと、pjdhiro の一年の記録（love-trajectory）。
 
 区分の中に場所が無いもの：Love駆動開発そのもの（経営学・臨床心理学・仏教学に触れるが、どれかの区分の研究ではない）、cs の D30 の伝統知そのもの（TEK・メーティスなどの論は区分に入る）。
 
@@ -45,7 +45,7 @@
 | 中区分 | 触れている | 小区分 |
 |---|---|---|
 | 11 代数学、幾何学およびその関連分野 | 2 / 2 | ● 11010 代数学（euler-formula・fundamental-theorem-of-algebra・fundamental-theorem-of-algebra-analogy・subtraction-kinds・three-and-seven・D01）<br>● 11020 幾何学（angle-rotation・euler-unfolded・zen-circle-hs・D01） |
-| 12 解析学、応用数学およびその関連分野 | 3 / 3 | ● 12010 基礎解析学（ac-phasor・ac-phasor-unfolded・angle-rotation・euler-formula・euler-unfolded・fundamental-theorem-of-algebra・rotation-multiplication）<br>● 12020 数理解析学（julia-potential・D01・D02・D29）<br>● 12030 数学基礎、応用数学および統計数学（buckle-history-of-civilization-ja・herschel-quetelet-probabilities-ja・quetelet-lettres-probabilites-ja・subtraction-kinds・D01） |
+| 12 解析学、応用数学およびその関連分野 | 3 / 3 | ● 12010 基礎解析学（angle-rotation・euler-formula・euler-unfolded・fundamental-theorem-of-algebra・rotation-multiplication）<br>● 12020 数理解析学（julia-potential・D01・D02・D29）<br>● 12030 数学基礎、応用数学および統計数学（buckle-history-of-civilization-ja・herschel-quetelet-probabilities-ja・quetelet-lettres-probabilites-ja・subtraction-kinds・D01） |
 | 13 物性物理学およびその関連分野 | 2 / 4 | ● 13010 数理物理、物性基礎論および量子系（clausius-art-der-bewegung-ja・helmholtz-erhaltung-der-kraft-ja・herapath-mathematical-physics-ja・kronig-theorie-der-gase-ja・maxwell-dynamical-theory-of-gases-ja・D02・D29）<br>○ 13020 電子物性・光物理および原子分子物理<br>● 13030 磁性、超伝導および強相関系（D02）<br>○ 13040 生物物理、化学物理およびソフトマターの物理 |
 | 14 プラズマ学およびその関連分野 | 0 / 3 | ○ 14010 プラズマ科学<br>○ 14020 核融合学<br>○ 14030 プラズマ応用科学 |
 | 15 地球惑星科学およびその関連分野 | 4 / 5 | ● 15010 宇宙惑星科学（D06）<br>● 15020 大気水圏科学（D05）<br>○ 15030 地球人間圏科学<br>● 15040 固体地球科学（D05）<br>● 15050 地球生命科学（D05） |
@@ -71,11 +71,11 @@
 | 24 社会システム工学、安全工学、防災工学およびその関連分野 | 0 / 3 | ○ 24010 社会システム工学<br>○ 24020 安全工学<br>○ 24030 防災工学 |
 | 25 原子力工学、地球資源工学、エネルギー学およびその関連分野 | 0 / 2 | ○ 25010 原子力工学<br>○ 25020 地球資源工学およびエネルギー学 |
 
-### 大区分 E（2 / 12）
+### 大区分 E（1 / 12）
 
 | 中区分 | 触れている | 小区分 |
 |---|---|---|
-| 26 電気電子工学およびその関連分野 | 2 / 6 | ● 26010 電力工学（ac-phasor・ac-phasor-unfolded）<br>○ 26020 通信工学<br>○ 26030 計測工学<br>● 26040 制御およびシステム工学（D07）<br>○ 26050 電気電子材料工学<br>○ 26060 電子デバイスおよび電子機器 |
+| 26 電気電子工学およびその関連分野 | 1 / 6 | ○ 26010 電力工学<br>○ 26020 通信工学<br>○ 26030 計測工学<br>● 26040 制御およびシステム工学（D07）<br>○ 26050 電気電子材料工学<br>○ 26060 電子デバイスおよび電子機器 |
 | 27 材料工学およびその関連分野 | 0 / 6 | ○ 27010 金属材料物性<br>○ 27020 無機材料および物性<br>○ 27030 複合材料および界面<br>○ 27040 構造材料および機能材料<br>○ 27050 材料加工および組織制御<br>○ 27060 金属生産および資源生産 |
 
 ### 大区分 F（0 / 17）

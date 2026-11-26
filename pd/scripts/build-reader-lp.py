@@ -620,7 +620,30 @@ PAGES = [
         ROOT / "reader/site-evaluation.html",
         "flow",
     ),
+    (
+        # 学問の地図（docs/RELEASE-STAGES.md 3.2 の段 1・pjdhiro 2026-11-26 判断のページ「升目の絵（触れた所を塗る）」）。
+        # 数と升目は docs/release-stages/kaken-map.json（scripts/release-maps.py が TSV から作る）から差し込む
+        ROOT / "knowledge/research/site-evaluation/READER-kaken-map.md",
+        ROOT / "scripts/reader-kaken-map-template.html",
+        ROOT / "reader/kaken-map.html",
+        "flow",
+    ),
+    (
+        # 誤解の台帳を防衛と発達の尺度に当てた表（docs/RELEASE-STAGES.md 3.3 の段 1・同じ日「独立のページにする」）。
+        # 数と表は docs/release-stages/kokoro-scale-map.json から差し込む
+        ROOT / "knowledge/research/site-evaluation/READER-kokoro-scale-map.md",
+        ROOT / "scripts/reader-kokoro-scale-map-template.html",
+        ROOT / "reader/kokoro-scale-map.html",
+        "flow",
+    ),
 ]
+
+# RELEASE-STAGES の段 1 の地図と表（出力 HTML 名 → 種類と JSON）。正本 MD の <!--N:…--> と <!--RELEASE-MAP…--> を
+# scripts/release_map_markup.py が JSON から置き換える（数を手で書かない）
+RELEASE_MAPS = {
+    "kaken-map.html": ("kaken", ROOT.parent / "docs/release-stages/kaken-map.json"),
+    "kokoro-scale-map.html": ("kokoro", ROOT.parent / "docs/release-stages/kokoro-scale-map.json"),
+}
 
 # スクリーナーのデータ（正本 JSON）。出力 HTML 名 → JSON。正本 MD の <!--SCREENER--> に
 # no-JS 用の静的リスト＋埋め込み JSON を差し込み、src/reader-screener.js が対話 UI に置き換える
@@ -1207,6 +1230,9 @@ def build(SRC: Path, TPL: Path, OUT: Path, STYLE: str) -> None:
     body_md = md[m.end():] if m else md
     body_md, ja_paths = expand_ja_text(body_md, SRC)
     date_paths = [str(SRC)] + [str(p) for p in ja_paths]
+    rmap = RELEASE_MAPS.get(OUT.name)
+    if rmap:
+        date_paths.append(str(rmap[1]))
 
     # 最終更新日は正本の git 履歴から取る。ただし未コミットの編集があるときは今日の日付
     # （MD 編集と再ビルドを同一コミットに入れる通常運用では、コミット前のビルド時点で
@@ -1231,6 +1257,11 @@ def build(SRC: Path, TPL: Path, OUT: Path, STYLE: str) -> None:
 
     # 先頭 H1 はテンプレートの hero と重複するため除去
     html = re.sub(r"<h1[^>]*>.*?</h1>\s*", "", html, count=1)
+
+    if rmap:
+        import release_map_markup
+        rmap_data = json.loads(rmap[1].read_text(encoding="utf-8"))
+        html = release_map_markup.fill_counts(html, rmap_data["counts"], OUT.name)
 
     if OUT.name in SCREENER_DATA:
         if "<!--SCREENER-->" not in html:
@@ -1294,6 +1325,9 @@ def build(SRC: Path, TPL: Path, OUT: Path, STYLE: str) -> None:
 
     if screener_html is not None:
         html = html.replace("<!--SCREENER-->", screener_html, 1)
+    if rmap:
+        # 章の畳み（fold_sections）のあとに差し込む。升目の button・details は後処理に通さない
+        html = release_map_markup.fill_maps(html, rmap[0], rmap_data, OUT.name)
     if "<!--CLAUDE-PROMPT-->" in html:
         if OUT.name not in SCREENER_DATA:
             sys.exit(f"ERROR: <!--CLAUDE-PROMPT--> needs a data source ({OUT.name})")
