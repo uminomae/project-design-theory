@@ -170,7 +170,7 @@ export const TRANSLATIONS = {
     "overview.p1":
       "プロジェクトデザインとは、プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営みです。",
     "overview.p2":
-      "まず、その基底として射程と領域を固定し、以降の議論を「やること（Doing）」と「起きてること（Being）」に分けて整理します。",
+      "まず、その基底として射程と領域を固定し、以降の議論を「やること（Doing）」と「起きてること（Being）」と「引かれて起きてしまうこと（Falling）」に分けて整理します。",
     "overview.p3":
       "プロジェクト実務は、環境適応（物質的条件）とコミュニケーション（非物質的条件）に大別できます。本サイトでは環境適応を前提知（PMBOK等）とし、コミュニケーションを情報処理／感情処理に分解して、とくに感情処理を中心に扱います。",
     "overview.definition.title": "定義",
@@ -209,8 +209,12 @@ export const TRANSLATIONS = {
     "pill.awarenessModel": "意識とは",
     "section.direction.label": "Drivers",
     "section.direction.title": "プロジェクトの駆動源",
+    "section.falling.label": "Falling (Becoming)",
+    "section.falling.title": "引かれて起きてしまうこと",
+    "section.falling.body":
+      "意図してすること（Doing）でも、ただ起きていること（Being）でもなく、Love と呼びたい何かに引かれて、私という場所で起きてしまうこと。恋に落ちる（fall in love）、惚れる、のように、自分からするのでも、させられるのでもない動きです。プロジェクトの駆動源は、ここにあります。",
     "section.direction.body":
-      "本ページで固定した「射程・領域・Doing/Beingの二分」は基底（土台・骨格）です。以降の各ページは、この骨格の上に展開します。",
+      "本ページで固定した「射程・領域・Doing/Being/Falling の三つ」は基底（土台・骨格）です。以降の各ページは、この骨格の上に展開します。",
     "repo.loveDrivenDev": "Love駆動開発と呼びたいもの β",
     "repo.loveDrivenDevDesc":
       "何に駆られてプロジェクトを行うのか。人やプロジェクトを動かしているもの（駆動源）が何かを探す読み物",
@@ -395,7 +399,7 @@ export const TRANSLATIONS = {
     "overview.p1":
       "Project Design is a practice that not only envisions, designs, and executes projects, but also takes the methods of execution and management themselves as its object of inquiry, and envisions and designs them.",
     "overview.p2":
-      'First, we fix the scope and domain as the foundation, and organize the subsequent discussion into "Doing" and "Being."',
+      'First, we fix the scope and domain as the foundation, and organize the subsequent discussion into "Doing," "Being," and "Falling."',
     "overview.p3":
       "Project practice can be broadly divided into environmental adaptation (material conditions) and communication (non-material conditions). This site treats environmental adaptation as prerequisite knowledge (PMBOK, etc.), decomposes communication into information processing and emotional processing, and focuses especially on emotional processing.",
     "overview.definition.title": "Definition",
@@ -436,8 +440,12 @@ export const TRANSLATIONS = {
     "pill.awarenessModel": "What Is Consciousness",
     "section.direction.label": "Drivers",
     "section.direction.title": "What Drives Projects",
+    "section.falling.label": "Falling (Becoming)",
+    "section.falling.title": "Falling",
+    "section.falling.body":
+      "Neither what we intend to do (Doing) nor what is simply happening (Being): being drawn by something I want to call Love, so that it happens, with me as the place where it happens. Like falling in love, it is a movement we neither do on our own nor are made to do. What drives projects lies here.",
     "section.direction.body":
-      'The "scope, domain, and Doing/Being dichotomy" established on this page is the foundation (base and skeleton). Each subsequent page develops upon this skeleton.',
+      'The "scope, domain, and the three of Doing/Being/Falling" established on this page is the foundation (base and skeleton). Each subsequent page develops upon this skeleton.',
     "repo.loveDrivenDev": "What I Want to Call Love-Driven Development (beta)",
     "repo.loveDrivenDevDesc":
       "What am I driven by when I carry out a project? A reader that looks for what moves people and projects (the driving source)",
