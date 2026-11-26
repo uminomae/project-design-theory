@@ -208,7 +208,7 @@ export const TRANSLATIONS = {
     "pill.creationModel": "創造のモデル",
     "pill.awarenessModel": "意識とは",
     "section.direction.label": "Drivers",
-    "section.direction.title": "何がプロジェクトを駆動するのか",
+    "section.direction.title": "プロジェクトの駆動源",
     "section.direction.body":
       "本ページで固定した「射程・領域・Doing/Beingの二分」は基底（土台・骨格）です。以降の各ページは、この骨格の上に展開します。",
     "repo.loveDrivenDev": "Love駆動開発と呼びたいもの β",
@@ -435,7 +435,7 @@ export const TRANSLATIONS = {
     "pill.creationModel": "Model of Creation",
     "pill.awarenessModel": "What Is Consciousness",
     "section.direction.label": "Drivers",
-    "section.direction.title": "What Drives a Project?",
+    "section.direction.title": "What Drives Projects",
     "section.direction.body":
       'The "scope, domain, and Doing/Being dichotomy" established on this page is the foundation (base and skeleton). Each subsequent page develops upon this skeleton.',
     "repo.loveDrivenDev": "What I Want to Call Love-Driven Development (beta)",
