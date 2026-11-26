@@ -33,7 +33,7 @@
 
 ### 3.1 C コンピテンシーの教材
 
-基準：読み物「新しく注目されている能力」（`pd/knowledge/research/emerging-abilities/READER-emerging-abilities.md`）が引く枠組み。項目名は原典のとおりに取る。照合の表は `pd/reader/competency-frameworks.html`（正本 `pd/knowledge/research/competency-frameworks/READER-competency-frameworks.md`・2026-11-26。置き場は独立ページ、と pjdhiro が選んだ）。
+基準：読み物「新しく注目されている能力」（`pd/knowledge/research/emerging-abilities/READER-emerging-abilities.md`）が引く枠組み。項目名は原典のとおりに取る。結果のページは「公的な能力の枠組みで測った、このサイトの範囲」`pd/reader/competency-frameworks.html`（正本 `pd/knowledge/research/competency-frameworks/READER-competency-frameworks.md`・2026-11-26・noindex）。測った結果は「このサイトの評価」`pd/reader/site-evaluation.html` に並べる（HOME の「このサイトについて」から指す。D・B・E の結果もここへ）。
 
 判定：確か＝節が項目の定義の中身を主題として説明する／候補＝触れるが主題でない・読みが要る（枠組みを紹介するだけの「新しく注目されている能力」は候補まで）／当たらない＝61 ページのどこにも無い。深さ：説明／問い・課題（読む人が力を使って確かめる仕掛けがある）。根拠はページの本文の一文。当て方は Claude の読みで、照合は原典から項目を写す係・ページの一覧の係・当てる係を別の文脈のエージェントに分け、確かの行を読み直した（2026-11-26）。
 

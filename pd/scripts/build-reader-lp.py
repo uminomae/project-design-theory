@@ -613,6 +613,13 @@ PAGES = [
         ROOT / "reader/competency-frameworks.html",
         "flow",
     ),
+    (
+        # このサイトを外の物差しで測った結果の並び（docs/RELEASE-STAGES.md の公開の顔・pjdhiro 2026-11-26）
+        ROOT / "knowledge/research/site-evaluation/READER-site-evaluation.md",
+        ROOT / "scripts/reader-site-evaluation-template.html",
+        ROOT / "reader/site-evaluation.html",
+        "flow",
+    ),
 ]
 
 # スクリーナーのデータ（正本 JSON）。出力 HTML 名 → JSON。正本 MD の <!--SCREENER--> に
