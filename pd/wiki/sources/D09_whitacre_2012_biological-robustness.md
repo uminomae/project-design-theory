@@ -77,5 +77,4 @@ review_state: 未レビュー
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D09/D09-S14_whitacre-2012.md`（2026-04-10、claude-opus-4-6, WebFetch via HTML 全文）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase C-1c）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

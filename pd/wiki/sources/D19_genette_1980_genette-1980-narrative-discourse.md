@@ -81,5 +81,4 @@ Proust『失われた時を求めて』のテクスト分析を通じて、物�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D19/D19-S15_genette-1980.md`（2026-04-11、claude-opus-4-6, WebFetch → Read PDF。Foreword + Preface + Introduction + Ch.1-3 + Afterword 読了）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase C-1d）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

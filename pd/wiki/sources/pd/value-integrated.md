@@ -104,7 +104,6 @@ related_concepts: [価値, 信頼, 欠損駆動思考, 欠損, 情動の構成]
 
 ## 書誌情報
 
-- 作成: 2026-03-27, Claude (agent-team-workflow, cs#188 プロトコル)
 - 入力レポート:
   - `value-chatgpt-20260326.md` (GPT-5.2 Thinking)
   - `value-chatgptpro-20260327.md` (GPT-5.4 Pro)
@@ -124,5 +123,5 @@ related_concepts: [価値, 信頼, 欠損駆動思考, 欠損, 情動の構成]
 ## 出典メモ
 
 - 一次入力: `knowledge/research/value/value-integrated.md`（201 行、2026-03-27）
-- 本ページは統合分析を wiki sources/pd/ の読者向け形式に再編（pd#76、2026-04-19）
+- 本ページは統合分析を 読者向けの形に再編
 - 関連: PD の価値論は concepts/価値 を参照。欠損駆動思考との接続は `sources/pd/kesson-bridge` を参照

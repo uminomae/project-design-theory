@@ -64,4 +64,3 @@ Keck & Sakdapolrak (2013) は、ここ十年で急速に増えた「社会的レ
 ## 出典メモ
 
 - 本ページは cs ローカル raw PDF（`knowledge/raw/D25_keck-sakdapolrak_2013_what-is-social-resilience.pdf`）を pdftotext で抽出した本文を一次入力として生成した。
-- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。cs 側 source-note 生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。

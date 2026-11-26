@@ -58,7 +58,6 @@ Nonaka, Toyama & Konno (2000) は、組織を「知識を継続的に創造す�
 ## ソース参照（GitHub・検証用）
 
 - **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D22-S03`）
-- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
 - **この wiki ページ（pd）**: [wiki/sources/D22_nonaka_2000_konno-n.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D22_nonaka_2000_konno-n.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 
@@ -66,4 +65,3 @@ Nonaka, Toyama & Konno (2000) は、組織を「知識を継続的に創造す�
 
 - 本ページは OA PDF を curl で取得し pdftotext で抽出した本文（abstract・序論）を一次入力として生成した。
 - 関連: 同じ D22 領域の Nonaka, Umemoto & Senoo (1996, D22-S02) の発展形にあたる統合モデル。
-- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。cs 側 source-note 生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。

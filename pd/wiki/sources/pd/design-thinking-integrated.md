@@ -121,7 +121,6 @@ Design framing は Peirce の abduction を拡張した設計実践上の呼び�
 
 ## 書誌情報
 
-- 作成: 2026-03-27, Claude (agent-team-workflow, cs#188 プロトコル)
 - 入力レポート:
   - `design_thinking_gpt-deep-research-report.md` (GPT-4o Deep Research)
   - `design_thinking_gptpro_report.md` (GPT-5.4 Pro)
@@ -141,5 +140,5 @@ Design framing は Peirce の abduction を拡張した設計実践上の呼び�
 ## 出典メモ
 
 - 一次入力: `knowledge/research/design-thinking/design-thinking-integrated.md`（168 行、2026-03-27）
-- 本ページは統合分析を wiki sources/pd/ の読者向け形式に再編（pd#76、2026-04-19）
+- 本ページは統合分析を 読者向けの形に再編
 - 関連: PD のデザイン思考論は concepts/デザイン思考（PD）を参照。欠損駆動思考との接続は `sources/pd/kesson-bridge` を参照

@@ -74,5 +74,4 @@ Lavelli & Fogel の研究は乳児が「視覚的に注意深く陽性に覚醒�
 
 ## 出典メモ
 
-- pd 側読解: WebFetch via Frontiers HTML（2026-04-19、Claude Opus 4.7）
-- 本ページは pd#81 Phase C-2a として pd 側で直接読解・生成
+- 本ページは pd 側で原典を直接読んで作った

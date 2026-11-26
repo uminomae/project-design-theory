@@ -76,5 +76,4 @@ Bourdieu は文学場（literary field）の生成と構造を分析し、芸術
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D19/D19-S09_bourdieu-1996.md`（2026-04-16、claude-opus-4-6, Read PDF。Preface + Prologue + Notes/Index 抜粋）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-3）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

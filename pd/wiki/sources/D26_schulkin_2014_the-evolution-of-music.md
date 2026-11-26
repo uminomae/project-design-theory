@@ -83,5 +83,4 @@ Schulkin & Raglan (2014) はレビュー論文として、音楽を人間の認�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D26/D26-S17_schulkin-2014.md`（2026-04-11、Claude Opus 4.6、WebFetch via PMC / Frontiers HTML、部分読解）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase A）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

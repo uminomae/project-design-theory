@@ -95,5 +95,4 @@ Lake Veluwe の charophyte 植生のデータは、リン濃度の増減経路�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D12/D12-S08_scheffer-2001.md`（2026-04-13、Claude Opus 4.6, WebFetch、Abstract + 7 図キャプションのみ。本文は paywall）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-1）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

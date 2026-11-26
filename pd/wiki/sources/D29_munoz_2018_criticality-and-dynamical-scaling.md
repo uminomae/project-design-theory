@@ -77,5 +77,4 @@ Bak-Tang-Wiesenfeld sandpile 以降の展開として、conservative dynamics �
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D29/D29-S13_munoz-2018-criticality-living-systems.md`（2026-04-14、Claude Opus 4.6, WebFetch → Read PDF。Sec. I-V + Appendices A-D 冒頭を読了、約 30 ページ）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-4）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

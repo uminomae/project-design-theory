@@ -60,4 +60,3 @@ GP では損失正接 tan δ が周波数に依存しなくなる。これを利
 ## 出典メモ
 
 - 本ページは cs ローカル raw PDF（`knowledge/raw/D03_chambon-winter_1987_gel-point.pdf`、スキャン画像 PDF）を pdftoppm で画像化し、Claude Vision（Read）で OCR した Synopsis・INTRODUCTION を一次入力として生成した。
-- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。cs 側 source-note 生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。

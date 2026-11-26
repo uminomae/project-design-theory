@@ -54,11 +54,9 @@ Slobodan Marković (2012) は、**美的経験 (aesthetic experience)** を、�
 ## ソース参照（GitHub・検証用）
 
 - **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D15-S14`）
-- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
 - **この wiki ページ（pd）**: [wiki/sources/D15_markovic_2012_components-of-aesthetic-experience.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D15_markovic_2012_components-of-aesthetic-experience.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 
 ## 出典メモ
 
 - 本ページは PubMed（PMID 23145263）の efetch 公式 abstract を一次入力として生成した。manifest 記載の OA URL（SAGE PDF）は直接取得できなかったため、PubMed の検証済み abstract を用いた。全文は PMC3485814 で公開。
-- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。cs 側 source-note 生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。

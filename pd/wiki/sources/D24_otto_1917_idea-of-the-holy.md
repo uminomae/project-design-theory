@@ -75,5 +75,4 @@ Tremendum の第一要素「畏怖」（awefulness）は自然的恐怖とは質
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D24/D24-S12_otto-1917.md`（2026-04-16、claude-opus-4-6, Read PDF。Contents + Translator's Preface + Author's Foreword + Ch.I-IV を読了）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-3）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

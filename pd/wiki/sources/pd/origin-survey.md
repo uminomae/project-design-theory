@@ -195,6 +195,6 @@ v3 では費用対効果を考え 1 モデル + 人間レビューに切り替�
 ## 出典メモ
 
 - 一次入力: `knowledge/research/origin-survey/`（計 4 ファイル、1823+ 行）
-- 本ページは v3 成果物（claude-v3 / codex-v3 / cross-model-review）を wiki sources/pd/ の読者向け形式に圧縮・再編（pd#76、2026-04-19）
+- 本ページは統合分析を読者向けの形に縮めて再編した
 - 30 領域別詳細・領域ごとの出典は原典を参照
 - 関連: PD の「欠損」概念は concepts/欠損 を参照。欠損駆動思考との接続は `sources/pd/kesson-bridge` を参照

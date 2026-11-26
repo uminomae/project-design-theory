@@ -55,5 +55,4 @@ D07（工学情報）文脈では、本論文は脳の計算論的視座の中�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D07/D07-S07_schultz-dayan-montague-1997.md`
-- 本ページは D09-S07 と同論文の D07 文脈版（pd#81 Phase C-1c）
+- 本ページは D09-S07 と同論文の D07 文脈版

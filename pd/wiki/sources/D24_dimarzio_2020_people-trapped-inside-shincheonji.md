@@ -46,7 +46,7 @@ review_state: 未レビュー
 - 出典: The Journal of CESNUR, Volume 4, Issue 3, May-June 2020, pages 57-69（"People Trapped Inside Shincheonji: Broadcasting the Darker Side of Deprogramming"）
 - access_status: raw-confirmed
 - **DOI**: [10.26338/tjoc.2020.4.3.4](https://doi.org/10.26338/tjoc.2020.4.3.4)
-- 台帳の行：cs の台帳の `D24-S17`。以前は `D24-S02`（Di Marzio 2019）の名前で登録されていたが、別の論文と分かり、2026-11-09 に行とページの名前を直した（#73）。
+- 台帳の行：cs の台帳の `D24-S17`。以前は `D24-S02`（Di Marzio 2019）の名前で登録されていたが、別の論文と分かり、2026-11-09 に行とページの名前を直した。
 
 ## ソース参照（GitHub・検証用）
 

@@ -67,5 +67,4 @@ Senghas, Kita & Ozyurek (2004) は、ニカラグア手話（NSL）の世代間�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D17/D17-S14_senghas-2004.md`（2026-04-11、claude-opus-4-6, WebFetch → PDF Read 全 4 ページ）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-2）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

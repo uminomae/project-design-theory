@@ -82,6 +82,5 @@ D02-S14 と同様。「生命は予測モデルを持つことで存在し続け
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D06/D06-S14_friston-2012.md`（2026-04-10、Claude Opus 4.6, WebFetch via PMC HTML）
 - D02-S14 と同一論文。本ページは D06 文脈の cs 要約を採用
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase C-1b）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

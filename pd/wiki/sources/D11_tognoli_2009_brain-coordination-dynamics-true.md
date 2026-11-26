@@ -79,5 +79,4 @@ EEG の電場が頭皮を通じて拡散する性質が、空間的に近い電�
 
 ## 出典メモ
 
-- pd 側読解: WebFetch via PMC HTML（2026-04-19、Claude Opus 4.7、本ページは pd 側で直接読解。cs 側 source-notes は未作成）
-- 本ページは pd#81 Phase C-2b として WebFetch から直接生成
+- 本ページは原典の web 版を直接読んで作った

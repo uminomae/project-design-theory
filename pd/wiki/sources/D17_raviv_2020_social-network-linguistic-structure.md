@@ -80,4 +80,3 @@ null result の発見——「縁の形は平均構造化に影響しないが�
 ## 出典メモ
 
 - 本ページは cs 精読ノート（D17-S13_raviv-2020.md）を一次入力として生成した。原典は Wiley CC-BY 公開論文（philpapers self-archive PDF, 32頁）を cs 側が取得し精読（約19頁）。
-- 生成: 2026-06-16, Claude Sonnet 4.6（wiki-gen inbox 4月分整理、5段階対応は cs source-note §5 を参照）。

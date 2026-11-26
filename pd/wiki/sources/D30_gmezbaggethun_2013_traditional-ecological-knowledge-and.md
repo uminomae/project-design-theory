@@ -77,5 +77,4 @@ TEK はリスクを空間・時間・資産クラス・共同体間に分散す�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D30/D30-S18_gomez-2013.md`（2026-04-11、Claude Opus 4.6, WebFetch 全文）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase C-1d）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

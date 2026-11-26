@@ -84,5 +84,4 @@ Mehr ら (2019) は、315 社会の民族誌テキスト（NHS Ethnography）と
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D26/D26-S07_mehr-2019.md`（2026-04-11、Claude Opus 4.6、WebFetch via PMC）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase A）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

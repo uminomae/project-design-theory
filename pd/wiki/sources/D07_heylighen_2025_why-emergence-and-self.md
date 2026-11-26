@@ -53,13 +53,11 @@ Francis Heylighen (2026) は、しばしば神秘的・難解とされる**創�
 ## ソース参照（GitHub・検証用）
 
 - **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D07-S15`）
-- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
 - **この wiki ページ（pd）**: [wiki/sources/D07_heylighen_2025_why-emergence-and-self.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D07_heylighen_2025_why-emergence-and-self.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 
 ## 出典メモ
 
 - 本ページは EuropePMC（DOI 検索）の検証済み abstract を一次入力として生成した。manifest 記載の OA URL（MDPI ジャーナルトップページ）は記事 PDF が不特定かつ Cloudflare でブロックされたため、EuropePMC の abstract を用いた。
-- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2 追補）。cs 側 source-note 生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。
 
 > 追記（2026-11-09・#73）：年を 2025 から 2026 に直した（*Complexities* 2026, 2, 6。Published 13 March 2026。Crossref も 2026）。ファイル名の 2025 はそのまま。

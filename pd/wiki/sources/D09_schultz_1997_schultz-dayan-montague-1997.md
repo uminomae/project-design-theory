@@ -77,8 +77,7 @@ TD で学習された価値関数は、環境中の各点に「期待報酬の�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D09/D09-S07_schultz-1997.md`（2026-04-10、claude-opus-4-6、WebFetch → PDF Read）
 - D07-S07（神経科学領域）と同一論文。D09 文脈の cs 要約を採用
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase A）
+- 本ページは cs 要約を一次入力として pd 形式に再編した
 
 > 追記（2026-11-09・#73）：頁を 1593–1597 から 1593–1599 に直した（Crossref）。oa_url の utexas.edu は 2026-11-09 に 502。共著者 Dayan のサイトの写し http://www.gatsby.ucl.ac.uk/~dayan/papers/sdm97.pdf で読める。

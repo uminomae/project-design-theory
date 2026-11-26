@@ -75,5 +75,4 @@ Cisneros-Velarde & Bullo はネットワーク形成ゲームの枠組みを用�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D25/D25-S16_cisneros-2021.md`（2026-04-11、claude-opus-4-6, WebFetch → Read PDF pp.1-20）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase C-1d）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

@@ -90,5 +90,4 @@ Jakobson & Halle (1956) は二部構成。**Part I "Phonology and Phonetics"** �
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D17/D17-S16_jakobson-halle-1956.md`（2026-04-13、Claude Opus 4.6, WebFetch → PDF Read。Foreword + TOC + Part I Ch.I + Part II 全章を読了。Part I 本体 Chapters II-IV は未読）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-2）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

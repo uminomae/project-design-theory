@@ -79,5 +79,4 @@ Daisyworld は地球の近似ではなく、仮説の構造を純化するため
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D05/D05-S11_watson-lovelock-1983-daisyworld.md`（2026-04-15、Claude Opus 4.6, WebFetch → PDF Read 全 6 ページ）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-1）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

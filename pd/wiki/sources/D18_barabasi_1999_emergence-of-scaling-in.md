@@ -80,5 +80,4 @@ Barabasi & Albert (1999) は、遺伝子ネットワークから WWW まで、�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D18/D18-S06_barabasi-1999.md`（2026-04-11、claude-opus-4-6, Read PDF 全 8 ページ、arXiv 版）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-2）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

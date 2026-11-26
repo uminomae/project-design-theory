@@ -80,5 +80,4 @@ readerly text（読まれるテクスト）と writerly text（書かれるテ�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D19/D19-S10_barthes-1970.md`（2026-04-16、claude-opus-4-6, Read PDF。Preface + Sections I-XI 読了）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-3）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

@@ -75,11 +75,9 @@ T は結合領域の SST 偏差の振幅、T³ は成長を制限する非線形
 ## ソース参照（GitHub・検証用）
 
 - **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D05-S09`）
-- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
 - **この wiki ページ（pd）**: [wiki/sources/D05_suarez_1988_schopf-p-s.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D05_suarez_1988_schopf-p-s.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 
 ## 出典メモ
 
 - harmonyforearth.org のスキャン PDF（全5ページ）を curl で取得し、Read（画像モード）で全ページ精読した。引用とページ番号は原典本文に基づく。cs source-note は未生成。
-- 生成: 2026-06-14, source-reader

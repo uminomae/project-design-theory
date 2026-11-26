@@ -59,11 +59,9 @@ review_state: 未レビュー
 ## ソース参照（GitHub・検証用）
 
 - **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D05-S05`）
-- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
 - **この wiki ページ（pd）**: [wiki/sources/D05_conrad_2002_lithgow-bertelloni-c.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D05_conrad_2002_lithgow-bertelloni-c.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 
 ## 出典メモ
 
 - ハワイ大学 SOEST のミラー PDF を WebFetch で取得し、その抽出内容を一次入力に pd 形式で生成した。引用は WebFetch 抽出範囲に基づく（ページ単位の精読には未到達）。cs source-note は未生成。
-- 生成: 2026-06-14, source-reader

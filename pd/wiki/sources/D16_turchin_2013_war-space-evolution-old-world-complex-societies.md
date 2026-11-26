@@ -73,5 +73,4 @@ Turchin ら (2013) は、人類社会が小規模な対面協力集団から大�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D16/D16-S11_turchin-2013.md`（2026-04-16、claude-opus-4-6, Read PDF 全 6 ページ）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-2）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

@@ -82,5 +82,4 @@ review_state: 未レビュー
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D26/D26-S20_zatorre-salimpoor-2013.md`（2026-04-13、Claude Opus 4.6, WebFetch → Read PDF 全 8 ページ）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase C-1d）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

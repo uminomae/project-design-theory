@@ -87,5 +87,4 @@ note: "cs 既要約なし、本ページは pd 側で WebFetch (Frontiers HTML) 
 
 ## 出典メモ
 
-- pd 側読解: WebFetch via Frontiers HTML（2026-04-19、Claude Opus 4.7）
-- 本ページは pd#81 Phase C-2a として pd 側で直接読解・生成
+- 本ページは pd 側で原典を直接読んで作った

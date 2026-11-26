@@ -61,4 +61,3 @@ Misteli (2001) は、細胞構築 (cellular architecture) における**自己�
 ## 出典メモ
 
 - 本ページは PubMed（PMID 11604416）の efetch 公式 abstract を一次入力として生成した。manifest 記載の OA URL（jcb.rupress.org PDF）は直接取得できなかったため、PubMed の検証済み abstract を用いた。全文は PMC2198832 で公開。
-- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。cs 側 source-note 生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。

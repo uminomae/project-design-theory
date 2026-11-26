@@ -81,5 +81,4 @@ Lecture XVI で神秘的状態を定義し、4 つの標識を提示する（ine
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D24/D24-S11_james-1902.md`（2026-04-16、claude-opus-4-6, Read PDF。Preface + Contents 全講義詳細要約 + Lecture I 冒頭を読了、本論詳細は Contents から把握）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-3）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

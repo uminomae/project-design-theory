@@ -85,5 +85,4 @@ deliberate practice の蓄積量は energy / time / motivation の 3 資源に�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D14/D14-S10_ericsson-1993.md`（2026-04-13、Claude Opus 4.6, WebFetch → PDF Read pp.363-367 + 400-406 抜粋読解）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-2）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

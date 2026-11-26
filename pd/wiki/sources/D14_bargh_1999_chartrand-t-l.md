@@ -83,5 +83,4 @@ Chartrand & Bargh (1999): 共作業者の足揺らしや顔触りを非意識的
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D14/D14-S09_bargh-chartrand-1999.md`（2026-04-13、claude-opus-4-6, WebFetch + Read PDF 全 18 ページ）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-2）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

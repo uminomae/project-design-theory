@@ -54,11 +54,9 @@ Anzola, Barbrook-Johnson & Cano (2016) は、複雑性科学 (complexity science
 ## ソース参照（GitHub・検証用）
 
 - **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D18-S05`）
-- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
 - **この wiki ページ（pd）**: [wiki/sources/D18_anzola_2016_self-organization-and-social.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D18_anzola_2016_self-organization-and-social.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 
 ## 出典メモ
 
 - 本ページは Springer OA PDF（CC ライセンス、The Author(s) 2016）を curl（ブラウザ UA）で取得し pdftotext で抽出した本文（abstract）を一次入力として生成した。
-- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。cs 側 source-note 生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。

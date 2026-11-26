@@ -81,5 +81,4 @@ Fisher は自然選択の理論をダーウィンの進化論全体から切り�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D04/D04-S13_fisher-1930.md`（2026-04-10、Claude Opus 4.6, WebFetch via archive.org djvu.txt、Preface + Ch.I + Ch.II 前半を読了）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase C-1b）
+- 本ページは cs 要約を一次入力として pd 形式に再編した
