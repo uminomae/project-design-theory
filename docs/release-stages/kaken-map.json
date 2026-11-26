@@ -1,7 +1,7 @@
 {
  "counts": {
-  "pages": 99,
-  "mapped_pages": 84,
+  "pages": 100,
+  "mapped_pages": 85,
   "cs": 30,
   "sho": 295,
   "touched": 90,
@@ -675,6 +675,7 @@
        "id": "10040",
        "name": "実験心理学",
        "pages": [
+        "analogy",
         "breath-filter",
         "cognitive-abilities",
         "decision-making",
@@ -690,6 +691,7 @@
        "id": "80030",
        "name": "認知科学",
        "pages": [
+        "analogy",
         "creative-thinking",
         "empathy",
         "fundamental-theorem-of-algebra-analogy",
@@ -2556,6 +2558,7 @@
        "id": "80030",
        "name": "認知科学",
        "pages": [
+        "analogy",
         "creative-thinking",
         "empathy",
         "fundamental-theorem-of-algebra-analogy",
@@ -2737,6 +2740,7 @@
   }
  ],
  "pages": {
+  "analogy": "類推と、構造の類似を見抜く力",
   "angle-rotation": "三角関数から複素平面まで、回転を扱うための角度の話だった",
   "anshin": "安心とは",
   "anxiety": "不安とは",
