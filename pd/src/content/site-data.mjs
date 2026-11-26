@@ -270,10 +270,13 @@ export const TRANSLATIONS = {
     "section.tools.title": "ツール",
     "section.tools.body":
       "自分で試して、自分のものの見方に気づくきっかけにするページです。",
-    "section.references.label": "References",
-    "section.references.title": "影響を受けた論と、作り方",
+    "section.references.label": "Influences",
+    "section.references.title": "影響を受けた論",
     "section.references.body":
-      "pjdhiro が影響を受けてきた論を分野ごとにまとめたページと、この論がどう作られてきたかを見るページです。",
+      "pjdhiro が影響を受けてきた論を分野ごとにまとめたページと、原典を日本語で読むページです。",
+    "section.making.label": "How this was made",
+    "section.making.title": "作り方",
+    "section.making.body": "この論がどう作られてきたかを見るページです。",
     "repo.refPsychology": "心理学",
     "repo.refPsychologyDesc":
       "精神分析と発達心理。学者の名前、主要な論の短い説明、pjdhiro の印象の順に紹介する",
@@ -494,10 +497,13 @@ export const TRANSLATIONS = {
     "section.tools.title": "Tools",
     "section.tools.body":
       "Pages to try for yourself, as prompts to notice how you see.",
-    "section.references.label": "References",
-    "section.references.title": "Influences and How This Was Made",
+    "section.references.label": "Influences",
+    "section.references.title": "Influences",
     "section.references.body":
-      "Pages that gather, by field, the theories that have influenced pjdhiro, and pages that look at how this theory has been made.",
+      "Pages that gather, by field, the theories that have influenced pjdhiro, and source texts read in Japanese translation.",
+    "section.making.label": "How this was made",
+    "section.making.title": "How This Was Made",
+    "section.making.body": "Pages that look at how this theory has been made.",
     "repo.refPsychology": "Psychology",
     "repo.refPsychologyDesc":
       "Psychoanalysis and developmental psychology: the scholar, a short note on the main theory, and pjdhiro's impression (Japanese)",
