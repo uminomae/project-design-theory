@@ -12,12 +12,12 @@
 |---|---|
 | 小区分 | 触れている 90 / 295（触れていない 205） |
 | うち読み物のページだけ・cs だけ・両方 | 11・50・29 |
-| 中区分 | 触れている 40 / 66 |
+| 中区分 | 触れている 41 / 66 |
 | 大区分 | 触れている 13 / 13（触れていない：なし） |
-| 読み物のページ | 91（区分に当てた 83・当てない 8） |
+| 読み物のページ | 101（区分に当てた 86・当てない 15） |
 | cs の分野 | 30（どれも一つ以上の区分に当てた） |
 
-区分に当てないページ：abilities・complex-plane・love-trajectory・shelf-love・shelf-mind・shelf-number-org・shelf-translations。並びや目次のページ（中身は呼ぶ先のページの側）と、pjdhiro の一年の記録（love-trajectory）。
+区分に当てないページ：about・abilities・competency-frameworks・complex-plane・kaken-map・kokoro-scale-map・love-trajectory・man・shelf-love・shelf-mind・shelf-number・shelf-org・shelf-self・shelf-translations・site-evaluation。並びや目次のページ（中身は呼ぶ先のページの側）と、このサイトを測った結果のページと、pjdhiro の一年の記録（love-trajectory）。
 
 区分の中に場所が無いもの：Love駆動開発そのもの（経営学・臨床心理学・仏教学に触れるが、どれかの区分の研究ではない）、cs の D30 の伝統知そのもの（TEK・メーティスなどの論は区分に入る）。
 
@@ -29,23 +29,23 @@
 
 | 中区分 | 触れている | 小区分 |
 |---|---|---|
-| 1 思想、芸術およびその関連分野 | 8 / 9 | ● 01010 哲学および倫理学（hamilton-philosophy-of-the-unconditioned-ja・life-drivers・love-history・mansel-limits-of-religious-thought-ja・mill-examination-of-hamilton-ja・no-road-ahead・nondual・peirce-evolutionary-love-ja・peirce-glassy-essence-ja・peirce-law-of-mind-ja・peirce-love-abduction・reasoning・thinking・thinking-definitions・william-james-self-ja・D13）<br>● 01020 中国哲学、印度哲学および仏教学（anshin・breath-filter・forgiveness-salvation・love-driven-dev・love-driven-dev-en・love-history・nondual・shikan・zen-circle-hs・D24）<br>● 01030 宗教学（draper-intellectual-development-ja・forgiveness-salvation・james-substance-and-shadow-ja・life-drivers・mansel-limits-of-religious-thought-ja・peirce-evolutionary-love-ja・D24）<br>● 01040 思想史（anshin・buckle-history-of-civilization-ja・carus-onslaught-on-necessity-ja・hamilton-philosophy-of-the-unconditioned-ja・james-substance-and-shadow-ja・life-drivers・love-history・mill-examination-of-hamilton-ja・peirce-evolutionary-love-ja・peirce-glassy-essence-ja・peirce-law-of-mind-ja・thinking-definitions・to-james・william-james-self-ja・D16）<br>● 01050 美学および芸術論（beauty・D15・D26・D28）<br>○ 01060 美術史<br>● 01070 芸術実践論（D28・D30）<br>● 01080 科学社会学、科学哲学および科学技術史（carus-onslaught-on-necessity-ja・clausius-art-der-bewegung-ja・clausius-bewegende-kraft-der-warme-ja・darwin-historical-sketch-ja・darwin-wallace-1858-ja・draper-intellectual-development-ja・helmholtz-erhaltung-der-kraft-ja・herapath-mathematical-physics-ja・herschel-quetelet-probabilities-ja・kolliker-darwinsche-schopfungstheorie-ja・kronig-theorie-der-gase-ja・maxwell-dynamical-theory-of-gases-ja・naegeli-abstammungslehre-ja・peirce-love-abduction・quetelet-lettres-probabilites-ja・rankine-mechanical-action-of-heat-ja・thomson-heat-ja・via-vulnerability）<br>● 80010 デザイン学（D22） |
+| 1 思想、芸術およびその関連分野 | 8 / 9 | ● 01010 哲学および倫理学（hamilton-philosophy-of-the-unconditioned-ja・life-drivers・love-history・mansel-limits-of-religious-thought-ja・mill-examination-of-hamilton-ja・no-road-ahead・nondual・peirce-evolutionary-love-ja・peirce-glassy-essence-ja・peirce-law-of-mind-ja・peirce-love-abduction・reasoning・thinking・thinking-definitions・william-james-self-ja・D13・inseparable-abilities）<br>● 01020 中国哲学、印度哲学および仏教学（anshin・breath-filter・forgiveness-salvation・love-driven-dev・love-driven-dev-en・love-history・nondual・shikan・zen-circle-hs・D24）<br>● 01030 宗教学（draper-intellectual-development-ja・forgiveness-salvation・james-substance-and-shadow-ja・life-drivers・mansel-limits-of-religious-thought-ja・peirce-evolutionary-love-ja・D24）<br>● 01040 思想史（anshin・buckle-history-of-civilization-ja・carus-onslaught-on-necessity-ja・hamilton-philosophy-of-the-unconditioned-ja・james-substance-and-shadow-ja・life-drivers・love-history・mill-examination-of-hamilton-ja・peirce-evolutionary-love-ja・peirce-glassy-essence-ja・peirce-law-of-mind-ja・thinking-definitions・to-james・william-james-self-ja・D16）<br>● 01050 美学および芸術論（beauty・D15・D26・D28）<br>○ 01060 美術史<br>● 01070 芸術実践論（D28・D30）<br>● 01080 科学社会学、科学哲学および科学技術史（carus-onslaught-on-necessity-ja・clausius-art-der-bewegung-ja・clausius-bewegende-kraft-der-warme-ja・darwin-historical-sketch-ja・darwin-wallace-1858-ja・draper-intellectual-development-ja・helmholtz-erhaltung-der-kraft-ja・herapath-mathematical-physics-ja・herschel-quetelet-probabilities-ja・kolliker-darwinsche-schopfungstheorie-ja・kronig-theorie-der-gase-ja・maxwell-dynamical-theory-of-gases-ja・naegeli-abstammungslehre-ja・peirce-love-abduction・quetelet-lettres-probabilites-ja・rankine-mechanical-action-of-heat-ja・thomson-heat-ja・via-vulnerability）<br>● 80010 デザイン学（D22） |
 | 2 文学、言語学およびその関連分野 | 4 / 7 | ● 02010 日本文学（no-road-ahead）<br>● 02020 英語圏文学およびヨーロッパ文学（mandeville-grumbling-hive-ja）<br>● 02030 文学一般（D19）<br>● 02040 言語学（to-james・D17）<br>○ 70010 日本語教育<br>○ 70020 外国語教育<br>○ 80020 人文社会情報学および図書館情報学 |
 | 3 歴史学、考古学、博物館学およびその関連分野 | 3 / 7 | ● 03010 史学一般（D16）<br>○ 03020 日本史<br>● 03030 アジア史およびアフリカ史（D16）<br>● 03040 ヨーロッパ史およびアメリカ史（buckle-history-of-civilization-ja・draper-intellectual-development-ja）<br>○ 03050 考古学<br>○ 03060 文化財科学<br>○ 03070 博物館学 |
 | 4 地理学、文化人類学、民俗学およびその関連分野 | 1 / 6 | ○ 04010 地理学<br>○ 04020 人文地理学<br>● 04030 文化人類学および民俗学（D24・D25・D26・D28・D30）<br>○ 70030 地域研究<br>○ 70040 観光学<br>○ 70050 ジェンダー |
 | 5 法学およびその関連分野 | 2 / 4 | ○ 05010 基礎法学および刑事法学<br>● 05020 公法学および国際公法学（D20）<br>● 05030 民事法学および国際私法学（D20）<br>○ 05040 社会法学および新領域法学 |
 | 6 政治学およびその関連分野 | 2 / 4 | ○ 70030 地域研究<br>○ 70050 ジェンダー<br>● 06010 政治学（D16）<br>● 06020 国際関係論（D20） |
-| 7 経済学、経営学およびその関連分野 | 4 / 10 | ○ 70040 観光学<br>● 07010 理論経済学および経済学史（mandeville-grumbling-hive-ja・newcomb-political-economy-ja・D21）<br>○ 07020 経済政策<br>● 07030 公共経済および労働経済（capacity-after-ai・emerging-abilities）<br>● 07040 金融およびファイナンス（D21）<br>○ 07050 経済史<br>● 07060 経営学（business-design-syllabus・decision-making・influences-management・julia-potential・love-driven-dev・love-driven-dev-en・management-drivers・mintzberg-schools・nonaka-complement・psychological-safety・psychological-safety-en・three-and-seven・D07・D22）<br>○ 07070 商学<br>○ 07080 会計学<br>○ 07090 経済統計および経営情報 |
+| 7 経済学、経営学およびその関連分野 | 4 / 10 | ○ 70040 観光学<br>● 07010 理論経済学および経済学史（mandeville-grumbling-hive-ja・newcomb-political-economy-ja・D21）<br>○ 07020 経済政策<br>● 07030 公共経済および労働経済（capacity-after-ai・emerging-abilities・soft-skills）<br>● 07040 金融およびファイナンス（D21）<br>○ 07050 経済史<br>● 07060 経営学（business-design-syllabus・decision-making・influences-management・interpersonal-abilities・julia-potential・love-driven-dev・love-driven-dev-en・management-drivers・mintzberg-schools・nonaka-complement・psychological-safety・psychological-safety-en・three-and-seven・D07・D22・inseparable-abilities）<br>○ 07070 商学<br>○ 07080 会計学<br>○ 07090 経済統計および経営情報 |
 | 8 社会学およびその関連分野 | 1 / 5 | ○ 70040 観光学<br>○ 70050 ジェンダー<br>● 08010 社会学（quetelet-lettres-probabilites-ja・D18）<br>○ 08020 社会福祉学<br>○ 08030 家政学および生活科学 |
 | 9 教育学およびその関連分野 | 4 / 10 | ○ 70010 日本語教育<br>○ 70020 外国語教育<br>● 09010 教育学（creative-thinking・emerging-abilities・D13）<br>○ 09020 教育社会学<br>● 09030 子ども学および保育学（D23）<br>● 09040 教科教育学および初等中等教育学（angle-rotation・rotation-multiplication・zen-circle-hs）<br>● 09050 高等教育学（business-design-syllabus）<br>○ 09060 特別支援教育<br>○ 09070 教育工学<br>○ 09080 科学教育 |
-| 10 心理学およびその関連分野 | 5 / 5 | ● 10010 社会心理学（anshin・empathy・intrinsic-motivation・psychological-safety・psychological-safety-en・D14・D22）<br>● 10020 教育心理学（capacity-after-ai・cognitive-abilities・creative-thinking・developmental-stages・emerging-abilities・influences-psychology・intrinsic-motivation・metacognition・personality・stages-defense・stages-screener・D23）<br>● 10030 臨床心理学（anxiety・defense-mechanisms・empathy・influences-psychology・love-driven-dev・love-driven-dev-en・personality・shikan・stages-defense・stages-screener・via-vulnerability・D14・D15）<br>● 10040 実験心理学（breath-filter・cognitive-abilities・decision-making・thinking-definitions・D14・D26）<br>● 80030 認知科学（creative-thinking・empathy・fundamental-theorem-of-algebra-analogy・metacognition・reasoning・thinking・D08・D14） |
+| 10 心理学およびその関連分野 | 5 / 5 | ● 10010 社会心理学（anshin・empathy・interpersonal-abilities・intrinsic-motivation・psychological-safety・psychological-safety-en・D14・D22）<br>● 10020 教育心理学（capacity-after-ai・cognitive-abilities・creative-thinking・developmental-stages・emerging-abilities・influences-psychology・interpersonal-abilities・intrinsic-motivation・metacognition・personality・soft-skills・stages-defense・stages-screener・thinking-dispositions・D23）<br>● 10030 臨床心理学（anxiety・defense-mechanisms・empathy・influences-psychology・love-driven-dev・love-driven-dev-en・personality・shikan・stages-defense・stages-screener・via-vulnerability・D14・D15）<br>● 10040 実験心理学（analogy・breath-filter・cognitive-abilities・decision-making・thinking-definitions・thinking-dispositions・D14・D26・inseparable-abilities）<br>● 80030 認知科学（analogy・creative-thinking・empathy・fundamental-theorem-of-algebra-analogy・metacognition・reasoning・thinking・D08・D14） |
 
 ### 大区分 B（12 / 20）
 
 | 中区分 | 触れている | 小区分 |
 |---|---|---|
 | 11 代数学、幾何学およびその関連分野 | 2 / 2 | ● 11010 代数学（euler-formula・fundamental-theorem-of-algebra・fundamental-theorem-of-algebra-analogy・subtraction-kinds・three-and-seven・D01）<br>● 11020 幾何学（angle-rotation・euler-unfolded・zen-circle-hs・D01） |
-| 12 解析学、応用数学およびその関連分野 | 3 / 3 | ● 12010 基礎解析学（ac-phasor・ac-phasor-unfolded・angle-rotation・euler-formula・euler-unfolded・fundamental-theorem-of-algebra・rotation-multiplication）<br>● 12020 数理解析学（julia-potential・D01・D02・D29）<br>● 12030 数学基礎、応用数学および統計数学（buckle-history-of-civilization-ja・herschel-quetelet-probabilities-ja・quetelet-lettres-probabilites-ja・subtraction-kinds・D01） |
+| 12 解析学、応用数学およびその関連分野 | 3 / 3 | ● 12010 基礎解析学（angle-rotation・euler-formula・euler-unfolded・fundamental-theorem-of-algebra・rotation-multiplication）<br>● 12020 数理解析学（julia-potential・D01・D02・D29）<br>● 12030 数学基礎、応用数学および統計数学（buckle-history-of-civilization-ja・herschel-quetelet-probabilities-ja・quetelet-lettres-probabilites-ja・subtraction-kinds・D01） |
 | 13 物性物理学およびその関連分野 | 2 / 4 | ● 13010 数理物理、物性基礎論および量子系（clausius-art-der-bewegung-ja・helmholtz-erhaltung-der-kraft-ja・herapath-mathematical-physics-ja・kronig-theorie-der-gase-ja・maxwell-dynamical-theory-of-gases-ja・D02・D29）<br>○ 13020 電子物性・光物理および原子分子物理<br>● 13030 磁性、超伝導および強相関系（D02）<br>○ 13040 生物物理、化学物理およびソフトマターの物理 |
 | 14 プラズマ学およびその関連分野 | 0 / 3 | ○ 14010 プラズマ科学<br>○ 14020 核融合学<br>○ 14030 プラズマ応用科学 |
 | 15 地球惑星科学およびその関連分野 | 4 / 5 | ● 15010 宇宙惑星科学（D06）<br>● 15020 大気水圏科学（D05）<br>○ 15030 地球人間圏科学<br>● 15040 固体地球科学（D05）<br>● 15050 地球生命科学（D05） |
@@ -71,11 +71,11 @@
 | 24 社会システム工学、安全工学、防災工学およびその関連分野 | 0 / 3 | ○ 24010 社会システム工学<br>○ 24020 安全工学<br>○ 24030 防災工学 |
 | 25 原子力工学、地球資源工学、エネルギー学およびその関連分野 | 0 / 2 | ○ 25010 原子力工学<br>○ 25020 地球資源工学およびエネルギー学 |
 
-### 大区分 E（2 / 12）
+### 大区分 E（1 / 12）
 
 | 中区分 | 触れている | 小区分 |
 |---|---|---|
-| 26 電気電子工学およびその関連分野 | 2 / 6 | ● 26010 電力工学（ac-phasor・ac-phasor-unfolded）<br>○ 26020 通信工学<br>○ 26030 計測工学<br>● 26040 制御およびシステム工学（D07）<br>○ 26050 電気電子材料工学<br>○ 26060 電子デバイスおよび電子機器 |
+| 26 電気電子工学およびその関連分野 | 1 / 6 | ○ 26010 電力工学<br>○ 26020 通信工学<br>○ 26030 計測工学<br>● 26040 制御およびシステム工学（D07）<br>○ 26050 電気電子材料工学<br>○ 26060 電子デバイスおよび電子機器 |
 | 27 材料工学およびその関連分野 | 0 / 6 | ○ 27010 金属材料物性<br>○ 27020 無機材料および物性<br>○ 27030 複合材料および界面<br>○ 27040 構造材料および機能材料<br>○ 27050 材料加工および組織制御<br>○ 27060 金属生産および資源生産 |
 
 ### 大区分 F（0 / 17）
@@ -126,12 +126,12 @@
 | 48 生体の構造と機能およびその関連分野 | 1 / 4 | ○ 48010 解剖学<br>● 48020 生理学（D08・D09）<br>○ 48030 薬理学<br>○ 48040 基礎医化学および基礎遺伝学 |
 | 49 病理病態学、感染・免疫学およびその関連分野 | 2 / 7 | ○ 49010 病態医化学および疾患遺伝学<br>○ 49020 人体病理学<br>○ 49030 実験病理学<br>○ 49040 寄生虫学<br>● 49050 細菌学（D11）<br>○ 49060 ウイルス学<br>● 49070 免疫学（D09・D10） |
 
-### 大区分 K（6 / 51）
+### 大区分 K（7 / 51）
 
 | 中区分 | 触れている | 小区分 |
 |---|---|---|
 | 50 腫瘍学およびその関連分野 | 0 / 2 | ○ 50010 腫瘍生物学<br>○ 50020 腫瘍診断および治療学 |
-| 51 脳の活動と病態およびその関連分野 | 1 / 2 | ● 51010 脳科学一般（via-vulnerability・D08）<br>○ 51020 病態脳科学 |
+| 51 脳の活動と病態およびその関連分野 | 1 / 2 | ● 51010 脳科学一般（thinking-dispositions・via-vulnerability・D08）<br>○ 51020 病態脳科学 |
 | 52 内科学一般およびその関連分野 | 1 / 5 | ○ 52010 内科学一般<br>○ 52020 神経内科学<br>● 52030 精神神経科学（anxiety・D10）<br>○ 52040 放射線科学<br>○ 52050 胎児医学および小児成育学 |
 | 53 器官システム内科学およびその関連分野 | 0 / 5 | ○ 53010 消化器内科学<br>○ 53020 循環器内科学<br>○ 53030 呼吸器内科学<br>○ 53040 腎臓内科学<br>○ 53050 皮膚科学 |
 | 54 生体情報内科学およびその関連分野 | 1 / 4 | ○ 54010 血液および腫瘍内科学<br>● 54020 膠原病およびアレルギー内科学（D10）<br>○ 54030 感染症内科学<br>○ 54040 代謝および内分泌学 |
@@ -139,14 +139,14 @@
 | 56 生体機能および感覚に関する外科学およびその関連分野 | 2 / 7 | ○ 56010 脳神経外科学<br>● 56020 整形外科学（D10）<br>○ 56030 泌尿器科学<br>○ 56040 産婦人科学<br>○ 56050 耳鼻咽喉科学<br>○ 56060 眼科学<br>● 56070 形成外科学（D10） |
 | 57 口腔科学およびその関連分野 | 0 / 8 | ○ 57010 常態系口腔科学<br>○ 57020 病態系口腔科学<br>○ 57030 保存治療系歯学<br>○ 57040 口腔再生医学および歯科医用工学<br>○ 57050 補綴系歯学<br>○ 57060 外科系歯学<br>○ 57070 成長および発育系歯学<br>○ 57080 社会系歯学 |
 | 58 社会医学、看護学およびその関連分野 | 0 / 8 | ○ 58010 医療管理学、医療系社会学および医療技術評価<br>○ 58020 衛生学および公衆衛生学分野：実験系を含む<br>○ 58030 衛生学および公衆衛生学分野：実験系を含まない<br>○ 58040 法医学<br>○ 58050 基礎看護学<br>○ 58060 臨床看護学<br>○ 58070 生涯発達看護学<br>○ 58080 高齢者看護学および地域看護学 |
-| 59 リハビリテーション科学、スポーツ科学、体育、健康科学およびその関連分野 | 0 / 4 | ○ 59010 リハビリテーション科学および医療福祉<br>○ 59020 スポーツ科学<br>○ 59030 体育および身体教育学<br>○ 59040 健康科学および栄養学 |
+| 59 リハビリテーション科学、スポーツ科学、体育、健康科学およびその関連分野 | 1 / 4 | ○ 59010 リハビリテーション科学および医療福祉<br>○ 59020 スポーツ科学<br>● 59030 体育および身体教育学（inseparable-abilities）<br>○ 59040 健康科学および栄養学 |
 
 ### 大区分 L（9 / 23）
 
 | 中区分 | 触れている | 小区分 |
 |---|---|---|
 | 60 情報科学、情報工学およびその関連分野 | 4 / 10 | ● 60010 情報学基礎論（D07）<br>○ 60020 数理情報学<br>○ 60030 統計科学<br>○ 60040 計算機システム<br>● 60050 ソフトウェア（vibe-to-code・D07）<br>● 60060 情報ネットワーク（D07）<br>● 60070 情報セキュリティ（D07）<br>○ 60080 データベースおよびビッグデータ<br>○ 60090 高性能計算<br>○ 60100 計算科学 |
-| 61 人間情報学およびその関連分野 | 5 / 8 | ● 80010 デザイン学（D22）<br>● 80030 認知科学（creative-thinking・empathy・fundamental-theorem-of-algebra-analogy・metacognition・reasoning・thinking・D08・D14）<br>○ 61010 知覚情報処理<br>● 61020 ヒューマンインタフェースおよびインタラクション（vibe-to-code）<br>● 61030 知能情報学（capacity-after-ai・reading-directions・D07）<br>● 61040 ソフトコンピューティング（D29）<br>○ 61050 知能ロボティクス<br>○ 61060 感性情報学 |
+| 61 人間情報学およびその関連分野 | 5 / 8 | ● 80010 デザイン学（D22）<br>● 80030 認知科学（analogy・creative-thinking・empathy・fundamental-theorem-of-algebra-analogy・metacognition・reasoning・thinking・D08・D14）<br>○ 61010 知覚情報処理<br>● 61020 ヒューマンインタフェースおよびインタラクション（vibe-to-code）<br>● 61030 知能情報学（capacity-after-ai・reading-directions・D07）<br>● 61040 ソフトコンピューティング（D29）<br>○ 61050 知能ロボティクス<br>○ 61060 感性情報学 |
 | 62 応用情報学およびその関連分野 | 0 / 5 | ○ 80020 人文社会情報学および図書館情報学<br>○ 62010 生命、健康および医療情報学<br>○ 62020 ウェブ情報学およびサービス情報学<br>○ 62030 学習支援システム<br>○ 62040 エンタテインメントおよびゲーム情報学 |
 
 ### 大区分 M（2 / 10）

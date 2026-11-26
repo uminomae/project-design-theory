@@ -313,7 +313,14 @@ pjdhiro 指示（2026-07-14、energy-flow READER の対話で確立）:
 | 草稿バナー | cs `.draft-banner` | 同名クラス。左ボーダーは `--gold` |
 | 章アコーディオン | garage `details.sec`（見出しタップで開閉・＋/−） | build script `fold_sections()` が h2 章を自動で畳む。id は h2 のものを details に移す（既存アンカー互換） |
 | 本文中の畳みカード | garage `details.acc` | MD の `<details>` に build が `.acc` を付与 |
-| 目次 | garage TOC（PC=左常設サイドバー ≥1260px / モバイル=右下「☰ 目次」＋右ドロワー・スクロール連動ハイライト・主/サブタイトル分解） | `src/reader-flow.js` がクライアント側で生成。目次タップで章を開いてスクロール |
+| 目次 | garage TOC（PC=**右**常設サイドバー〔本文の右に 242px 空くとき〕 / モバイル=右下「☰ 目次」＋右ドロワー・スクロール連動ハイライト・主/サブタイトル分解） | `src/reader-flow.js` がクライアント側で生成。目次タップで章を開いてスクロール。形は `src/styles/toc.css` 一か所で、HOME（`src/ui/home-toc.js`）と全部の読み物が共用する |
+
+目次の置き場（pjdhiro 2026-11-26・付箋 i202611261132104un「目次を右に配置したい」「うまく配置できたらデザインシステムを変更し、同じデザインを採用しているページに反映したい」）:
+
+- **PC の常設目次は右の欄**。右上の Menu（`.top-bar`）の下（top 92px）から、右端 20px に幅 206px で立てる。モバイルのドロワーも右から出るので、PC と同じ側にそろう。
+- 常設にするのは、本文の右に目次が収まるとき（`.toc-fits`）だけ。読み物は `.reader-wrap` の右端、HOME は `#main-content` の文字の終わる位置から、画面の右端までが 242px（右 20 ＋ 幅 206 ＋ 間 16）以上あるとき。幅だけで決めない（2026-11-08）。
+- 右端に別の固定の部品があるページは、目次を内へ寄せる。Love駆動開発（`html.ldd-dark`）は右端の中ほどの dev ボタンを避けて右 40px・閾値 262px（`reader-ldd-dark.css`）。
+- 目次が右の欄に立つ幅では、呼び出しの棚（`.peek-dock`）は空いた左の上（top 92px・左 20px）へ移す。目次のボタンが出る幅では右下のまま。
 
 制約と学び:
 
@@ -340,7 +347,7 @@ pjdhiro 指示（2026-10-24、ものの見方の広さスクリーナーの対�
 | 要素 | 決定 | 実装 |
 |------|------|------|
 | ページの型 | 対話して使うページも flow 型（§13）に載せる。章はすべて畳み、**操作する章だけ最初から開く** | 正本 MD の h2 直後に `<!--OPEN-->` を置く → `fold_sections()` が `details.sec` に `open` を付ける |
-| 目次 | 本文中の目次カードは使わない。§13 の garage 型 TOC（PC 左常設／モバイル右下「☰ 目次」） | `src/reader-flow.js` |
+| 目次 | 本文中の目次カードは使わない。§13 の garage 型 TOC（PC 右常設／モバイル右下「☰ 目次」） | `src/reader-flow.js` |
 | 冒頭のリンク | 「プロジェクトデザイン論」などの単発リンクを冒頭に置かない。**トップと同じ Menu**（右上の Menu ボタン＋ドロップダウン）を置く | ページに `.top-bar` の `[data-menu-toggle]` と `<nav class="site-menu" id="site-menu">`、`src/reader-menu.js` が `site-data.mjs` の `getMenuItems({context: "reader"})` を `ui/menu.js` で描画（項目の正本は一か所） |
 | 状態の表示 | 「監修中」「作成中」などの状態の札や注記を置かない。**最終更新日とバージョン**で示す | テンプレートの `<!--VERSION-->` を build がスクリーナーの正本 JSON の `version` から差し込む |
 | トップの導線 | トップに「ツール」節（「問い」節と同じカード型）を置き、Menu にも「ツール」見出しとリンクを足す | `index.html` の `#tools`、`site-data.mjs` の `TOOL_MENU_LINKS` |

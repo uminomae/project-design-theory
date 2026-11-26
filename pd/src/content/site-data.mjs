@@ -36,11 +36,12 @@ const SITE_MENU_LINKS = [
     href: "/project-design-theory/as/",
     labelKey: "menu.awareness",
   },
-  // 読む前の案内。Sites の意識とはの下（pjdhiro 2026-11-26「SITESじゃなかな。意識とは　の下。」）
+  // 読む前の案内。Sites の意識とはの下（pjdhiro 2026-11-26「SITESじゃなかな。意識とは　の下。」）。
+  // 2026-11-26 に、申し送りなどを道案内するページ「このサイトについて」へ張り替えた（pjdhiro「Menuは新設したガイドページにリンクして」）
   {
-    siteId: "handover",
-    href: "/project-design-theory/reader/reading-directions.html",
-    labelKey: "menu.handover",
+    siteId: "about",
+    href: "/project-design-theory/reader/about.html",
+    labelKey: "menu.about",
   },
   // Love駆動開発も Sites に（pjdhiro 2026-11-26「Love駆動開発呼びたいものβもSITESに入れて」）
   {
@@ -149,6 +150,7 @@ export const TRANSLATIONS = {
     "menu.readings": "読み物",
     "menu.loveDrivenDev": "Love駆動開発と呼びたいもの β",
     "menu.handover": "Claude から LLM への申し送り",
+    "menu.about": "このサイトについて",
     "menu.tools": "ツール",
     "menu.toolScreener": "ものの見方の広さスクリーナー",
     "controls.topBarAria": "サイト操作",
@@ -364,6 +366,7 @@ export const TRANSLATIONS = {
     "menu.readings": "Readings",
     "menu.loveDrivenDev": "What I Want to Call Love-Driven Development (beta)",
     "menu.handover": "HANDOVER TO LLMS (JA)",
+    "menu.about": "ABOUT THIS SITE (JA)",
     "menu.tools": "Tools",
     "menu.toolScreener": "Breadth-of-View Screener",
     "controls.topBarAria": "Site controls",

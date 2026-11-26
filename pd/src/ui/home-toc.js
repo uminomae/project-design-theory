@@ -1,4 +1,4 @@
-/* home-toc.js — HOME の目次（読み物と同じ形：PC=左に常設 / スマホ=右下ボタン＋ドロワー）
+/* home-toc.js — HOME の目次（読み物と同じ形：PC=右に常設 / スマホ=右下ボタン＋ドロワー）
    見た目は styles/toc.css（読み物と共用）。項目は #main-content の各節の h2 から作り、
    data-i18n-key を写して JA/EN の切り替えに付いていく（2026-11-08）。 */
 
@@ -96,14 +96,14 @@ export function createHomeToc({ root = document } = {}) {
     }, { passive: true });
     spy();
 
-    /* 本文の左に目次が収まるときだけ常設にする（toc.css の .toc-fits）。
-       左 20px ＋ 幅 206px ＋ 間 16px = 242px */
+    /* 本文の右に目次が収まるときだけ常設にする（toc.css の .toc-fits・右へ 2026-11-26）。
+       右 20px ＋ 幅 206px ＋ 間 16px = 242px */
     const content = root.querySelector('#main-content');
     const fit = () => {
         if (!content) return;
-        /* .container は左右に padding を持つので、文字の始まる位置で測る */
-        const textLeft = content.getBoundingClientRect().left + parseFloat(getComputedStyle(content).paddingLeft || 0);
-        document.body.classList.toggle('toc-fits', textLeft >= 242);
+        /* .container は左右に padding を持つので、文字の終わる位置で測る */
+        const textRight = content.getBoundingClientRect().right - parseFloat(getComputedStyle(content).paddingRight || 0);
+        document.body.classList.toggle('toc-fits', document.documentElement.clientWidth - textRight >= 242);
     };
     window.addEventListener('resize', fit, { passive: true });
     fit();
