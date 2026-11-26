@@ -144,7 +144,7 @@ export const TRANSLATIONS = {
     "controls.topBarAria": "サイト操作",
     "controls.languageAria": "言語切替",
     "hero.notice":
-      "<a href=\"./reader/love-driven-dev.html\">Love駆動開発と呼びたい現象</a>を、これまで何度も経験してきました。<br>ここでいうプロジェクトは「やること（Doing）」だけでなく「起きていること（Being）」まで含む出来事です。<br>Love駆動開発の見方の使い道は、理論や指示を当てる前に、受け取ったものを確かめることです。",
+      "<a href=\"./reader/love-driven-dev.html\">Love駆動開発と呼びたい現象</a>を、これまで何度も経験してきました。<br>ここでいうプロジェクトは「やること（Doing）」だけでなく「起きていること（Being）」まで含む出来事です。",
     "love.faq.summary": "よくある誤解",
     "love.faq.body":
       "<ul><li><strong>「Love は恋愛・愛情のことだ」</strong> → Love のいちばん狭い切り取り方は、恋や好意のような感情です。pjdhiro が Love と呼びたいのは、その感情も含めて、それらを動かしているものです。Love と言い切れるほどには、まだ分かっていません。</li></ul>",
@@ -359,7 +359,7 @@ export const TRANSLATIONS = {
     "controls.topBarAria": "Site controls",
     "controls.languageAria": "Language switcher",
     "hero.notice":
-      'Many times, I have experienced <a href="./reader/love-driven-dev.html">what I want to call Love-Driven Development</a>.<br>Here, a project is an event that includes not only "Doing" but also "Being."<br>The use of the Love-Driven Development view is to check what you have received before applying a theory or an instruction.',
+      'Many times, I have experienced <a href="./reader/love-driven-dev.html">what I want to call Love-Driven Development</a>.<br>Here, a project is an event that includes not only "Doing" but also "Being."',
     "love.faq.summary": "Common misconceptions",
     "love.faq.body":
       "<ul><li><strong>“The ‘Love’ here means romance or affection”</strong> → The narrowest way of cutting out Love is a feeling such as romance or fondness. What pjdhiro wants to call Love includes those feelings and is what moves them. It is not yet understood well enough to say flatly that it is Love.</li></ul>",
