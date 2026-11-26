@@ -11,7 +11,7 @@
   ============================================================================
   LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
   ============================================================================
-この文書は「オイラーの等式が、たたんだもの」のページです（工事中）。目次「複素平面で考える」（reader/complex-plane.html）の入口にあたる独立ページ。四元数の挟む回転 q v q⁻¹ とパウリ行列が同じ形であること、実の部分と k をゼロにした i と j の平面で e^{kθ/2}(xi + yj)e^{−kθ/2} と e^{iθ}(x + iy) が同じ点に着くこと（同じ項目を両側に並べた対比表）、実の向きを含む平面では同じ q で両側から挟むこと、片側から e^{iθ} を掛けると j と k の平面も回ること、行列では e^{iπ} + 1 = 0 が −I + I = O になることを、数学の事実として置く。そのうえで、0 と 1・√・π・e・0 と ∞ が次元をたたむ記号かもしれない、次元という言葉は数の個数と細かさの増え方で違う、回ることが先にあるのかもしれない（自然対数の歴史は計算の道具と利息から）、禅の円とジュリア集合の円の雲、を仮説として置く。
+この文書は「オイラーの等式が、たたんだもの」のページです（工事中）。目次「複素平面で考える」（reader/complex-plane.html）の入口にあたる独立ページ。四元数の挟む回転 q v q⁻¹ とパウリ行列が同じ形であること、実の部分と k をゼロにした i と j の平面で e^{kθ/2}(xi + yj)e^{−kθ/2} と e^{iθ}(x + iy) が同じ点に着くこと（同じ項目を両側に並べた対比表）、実の向きを含む平面では同じ q で両側から挟むこと、その対比から等式がたたんでいた四つ（回す軸・角度を半分ずつ両側に分けること・掛ける順番・二周で戻る回し手）がページの芯。片側から e^{iθ} を掛けると j と k の平面も回ること、行列では e^{iπ} + 1 = 0 が −I + I = O になることは、畳みの補足。同じ点に着く計算は、その場で動く JavaScript と Python のコードで再現できる。どれも数学の事実として置く。そのうえで、0 と 1・√・π・e・0 と ∞ が次元をたたむ記号かもしれない、次元という言葉は数の個数と細かさの増え方で違う、回ることが先にあるのかもしれない（自然対数の歴史は計算の道具と利息から）、禅の円とジュリア集合の円の雲、を仮説として置く。
   pjdhiro 本人の言葉は「pjdhiro の見方：」「pjdhiro の問い：」で引用。
   文責は Claude。
   ============================================================================
@@ -36,9 +36,9 @@
     <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/euler-unfolded.html">
     <link rel="icon" href="../favicon.ico">
     <meta name="robots" content="noindex">
-    <meta name="description" content="オイラーの等式 e^{iπ} + 1 = 0 を、立体の回転を書く四元数で書き直して並べ、等式が平面のためにたたんでいたもの（回す軸・角度を半分ずつ両側に分けること・掛ける順番・二周で戻る回し手・一緒に回るもう一枚の平面）を開く。行列では等式が −I + I = O になることまで一本でつなぎ、0 と 1・√・π・e も次元をたたむ記号かもしれない、次元という言葉も一つの意味ではない、回ることが先にあるのかもしれない、という見方を、禅の円とジュリア集合の円の雲まで、複素平面の入口としてざっと見渡す（工事中）。">
+    <meta name="description" content="オイラーの等式 e^{iπ} + 1 = 0 を、立体の回転を書く四元数で書き直して並べ、等式が平面のためにたたんでいたもの（回す軸・角度を半分ずつ両側に分けること・掛ける順番・二周で戻る回し手の四つ）を開く。そこから、0 と 1・√・π・e も次元をたたむ記号かもしれない、次元という言葉も一つの意味ではない、回ることが先にあるのかもしれない、という見方を、禅の円とジュリア集合の円の雲まで、複素平面の入口としてざっと見渡す（工事中）。">
     <meta property="og:title" content="オイラーの等式が、たたんだもの">
-    <meta property="og:description" content="オイラーの等式 e^{iπ} + 1 = 0 を、立体の回転を書く四元数で書き直して並べ、等式が平面のためにたたんでいたもの（回す軸・角度を半分ずつ両側に分けること・掛ける順番・二周で戻る回し手・一緒に回るもう一枚の平面）を開く。行列では等式が −I + I = O になることまで一本でつなぎ、0 と 1・√・π・e も次元をたたむ記号かもしれない、次元という言葉も一つの意味ではない、回ることが先にあるのかもしれない、という見方を、禅の円とジュリア集合の円の雲まで、複素平面の入口としてざっと見渡す（工事中）。">
+    <meta property="og:description" content="オイラーの等式 e^{iπ} + 1 = 0 を、立体の回転を書く四元数で書き直して並べ、等式が平面のためにたたんでいたもの（回す軸・角度を半分ずつ両側に分けること・掛ける順番・二周で戻る回し手の四つ）を開く。そこから、0 と 1・√・π・e も次元をたたむ記号かもしれない、次元という言葉も一つの意味ではない、回ることが先にあるのかもしれない、という見方を、禅の円とジュリア集合の円の雲まで、複素平面の入口としてざっと見渡す（工事中）。">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/euler-unfolded.html">
     <meta property="og:site_name" content="Project Design">
@@ -60,7 +60,7 @@
         {
           "@type": "Article",
           "headline": "オイラーの等式が、たたんだもの",
-          "description": "オイラーの等式 e^{iπ} + 1 = 0 を、立体の回転を書く四元数で書き直して並べ、等式が平面のためにたたんでいたもの（回す軸・角度を半分ずつ両側に分けること・掛ける順番・二周で戻る回し手・一緒に回るもう一枚の平面）を開く。行列では等式が −I + I = O になることまで一本でつなぎ、0 と 1・√・π・e も次元をたたむ記号かもしれない、次元という言葉も一つの意味ではない、回ることが先にあるのかもしれない、という見方を、禅の円とジュリア集合の円の雲まで、複素平面の入口としてざっと見渡す（工事中）。",
+          "description": "オイラーの等式 e^{iπ} + 1 = 0 を、立体の回転を書く四元数で書き直して並べ、等式が平面のためにたたんでいたもの（回す軸・角度を半分ずつ両側に分けること・掛ける順番・二周で戻る回し手の四つ）を開く。そこから、0 と 1・√・π・e も次元をたたむ記号かもしれない、次元という言葉も一つの意味ではない、回ることが先にあるのかもしれない、という見方を、禅の円とジュリア集合の円の雲まで、複素平面の入口としてざっと見渡す（工事中）。",
           "keywords": "オイラーの等式, 四元数, パウリ行列, 回転, 複素平面, リーマン球面, ステレオ投影, フラクタル次元, 自然対数, 禅, ジュリア集合, プロジェクトデザイン論",
           "url": "https://uminomae.github.io/project-design-theory/reader/euler-unfolded.html",
           "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/euler-unfolded.html",
@@ -85,7 +85,7 @@
     <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
     <div id="llm-summary" class="visually-hidden" aria-hidden="true">
         <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
-        <p>これは「オイラーの等式が、たたんだもの」のページです（工事中）。オイラーの等式 e^{iπ} + 1 = 0 を、立体の回転を書く四元数で書き直して並べ、等式が平面のためにたたんでいたもの（回す軸・角度を半分ずつ両側に分けること・掛ける順番・二周で戻る回し手・一緒に回るもう一枚の平面）を開く。行列では等式が −I + I = O になることまで一本でつなぎ、0 と 1・√・π・e も次元をたたむ記号かもしれない、次元という言葉も一つの意味ではない、回ることが先にあるのかもしれない、という見方を、禅の円とジュリア集合の円の雲まで、複素平面の入口としてざっと見渡す。目次「複素平面で考える」の入口として呼ばれる。</p>
+        <p>これは「オイラーの等式が、たたんだもの」のページです（工事中）。オイラーの等式 e^{iπ} + 1 = 0 を、立体の回転を書く四元数で書き直して並べ、等式が平面のためにたたんでいたもの（回す軸・角度を半分ずつ両側に分けること・掛ける順番・二周で戻る回し手の四つ）を開く。そこから、0 と 1・√・π・e も次元をたたむ記号かもしれない、次元という言葉も一つの意味ではない、回ることが先にあるのかもしれない、という見方を、禅の円とジュリア集合の円の雲まで、複素平面の入口としてざっと見渡す。目次「複素平面で考える」の入口として呼ばれる。</p>
     </div>
     <div id="webgl-container" aria-hidden="true"></div>
     <div id="content">
@@ -104,7 +104,7 @@
             </header>
             <article class="reader-article prose-block">
 <div class="reader-lead glow-card" id="eo-gist"><span class="reader-lead__label">ざっくりいうと</span>
-<p>e<sup>iπ</sup> + 1 = 0 は、平面の上で半周回る掛け算を書いた式です。同じ回転を、立体を回す数（四元数）で書き直すと、等式の中で一つにたたまれていたものが、別々の部品として見えてきます。回す軸、角度を半分ずつ両側に分けること、掛ける順番、二周で戻る回し手、そして一緒に回っていたもう一枚の平面です。</p>
+<p>e<sup>iπ</sup> + 1 = 0 は、平面の上で半周回る掛け算を書いた式です。このページで見たいのは、この等式が何をたたんでいるのか、です。同じ回転を、立体を回す数（四元数）で書き直すと、等式の中で一つにたたまれていたものが、別々の部品として見えてきます。回す軸、角度を半分ずつ両側に分けること、掛ける順番、二周で戻る回し手、の四つです。</p>
 <p>開いてみると、e・π・i・1・0 は、どれも「平面の回転を、数直線の上で扱えるように折りたたむための記号」のように見えてきます。このページは、その見え方から、0 と ∞、次元、自然対数、禅の円までをざっと見渡す、複素平面の入口です。</p>
 </div>
 
@@ -115,13 +115,13 @@
 <p><strong>pjdhiro の見方：</strong>次元をたたむ接点にあるものだ、が一番かな。今のところ。</p>
 </blockquote>
 <p>そのあと pjdhiro は、立体の回転を書く数（四元数）と並べてみることを考えました。四元数で平面の回転を書けば、オイラーの等式と同じ働きの式ができるはずで、二つの違いから、オイラーの等式が平面のためにたたんだものが見えるはずだ、という考えです。このページは、その筋を数学で確かめながらたどります。</p>
+<p>最初の二つの章が、このページの芯です。一つ目の章で、四元数で回すときに出てくる部品を見ます。二つ目の章で、四元数の二つの軸をゼロにしてオイラーの等式と並べ、その部品が等式の中ではどこへたたまれたのかを見ます。そのあとの章は、たたむという見方を、0 と 1、次元、自然対数、禅の円へと広げていきます。</p>
 <p>式の読み方は、このページでは一つに決めておきます。e<sup>iθ</sup> を掛けることは、平面の全体に掛けて、平面ごと角度 θ だけ回すことです。点 1 がどこへ着くかは、その結果として読みます。</p>
 <p>説明は、高校の数学で読める言葉で書きます。計算の細かい所は畳みに置きます。当てはめや見方は仮説として書き、数学で確かめたことと分けます。三角比・三角関数・弧度法・複素数を、回転を扱うための角度としておさらいしておくには、「<a href="angle-rotation.html">三角関数から複素平面まで、回転を扱うための角度の話だった</a>」があります。</p>
 <div class="reader-lead"><span class="reader-lead__label">構成</span>
 <ul class="reader-lead__list">
-<li><b><a href="#eo-quat">立体の回転は、数で挟んで書く</a></b>：四元数と、物理のパウリ行列が同じ形であること</li>
-<li><b><a href="#eo-pair">二つの軸をゼロにすると、オイラーの等式が出てくる</a></b>：同じ記号で並べた対比と、たたまれていたもの</li>
-<li><b><a href="#eo-matrix">行列で書くと、オイラーの等式は −I になる</a></b>：二つの式を一本につなぐ</li>
+<li><b><a href="#eo-quat">立体の回転は、数で挟んで書く</a></b>：四元数で回すときに出てくる部品</li>
+<li><b><a href="#eo-pair">二つの軸をゼロにすると、オイラーの等式が出てくる</a></b>：同じ項目で並べた対比と、等式がたたんでいた四つ</li>
 <li><b><a href="#eo-fold">0 と 1 も、次元をたたむ記号かもしれない</a></b>：球の上の 0 と ∞ と 1、√・π・e</li>
 <li><b><a href="#eo-dim">次元という言葉も、一つの意味ではない</a></b>：数の個数と、細かさの増え方</li>
 <li><b><a href="#eo-turn">回ることが先にあるのかもしれない</a></b>：0 と ∞ と自然対数を揺さぶる</li>
@@ -135,11 +135,14 @@
 
 <p><a id="eo-quat"></a>平面の回転は、複素数を一回掛ければ書けます。i を掛けると 90 度、e<sup>iθ</sup> を掛けると角度 θ だけ回ります（独立ページ「<a href="euler-formula.html">オイラーの式</a>」）。立体の回転を書くには、四元数という数を使います。</p>
 <p>四元数は、w + xi + yj + zk の形の数です。w が実の部分で、i・j・k は三つの虚の向きです。三つとも、2 回掛けると −1 になります。i と j を掛けると k になりますが、順番を入れ替えて j と i を掛けると −k になります。掛ける順番で答えが変わることを、非可換と言います。</p>
+<p>四元数が四つ目の向きを持つ数としてどう見えるかは、動画で見ると掴みやすいかもしれません。</p>
+<figure class="reader-video"><div class="reader-video__frame"><iframe src="https://www.youtube-nocookie.com/embed/94NmanMgR9k" title="4次元の数「四元数」の見た目（3Blue1BrownJapan）" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><figcaption>動画「<a href="https://www.youtube.com/watch?v=94NmanMgR9k">4次元の数「四元数」の見た目</a>」（3Blue1BrownJapan・YouTube）</figcaption></figure>
+
 <p>ただし、実の部分の数（ふつうの実数）は、どの四元数と掛けても、順番で答えが変わりません。順番で答えが変わるのは、向きの違う虚の向きどうしを掛けたときだけです。</p>
 <p>立体の中の点 v を、軸 u のまわりに角度 θ だけ回すには、点を xi + yj + zk の形に置き、q = e<sup>uθ/2</sup> という数で前と後ろから挟みます。</p>
 <p>v' = q v q<sup>−1</sup></p>
 
-<p>q<sup>−1</sup> は q の逆数です。挟むと、軸の向きの成分はそのまま残り、軸と直角な成分だけが角度 θ だけ回ります。q の肩には、角度の半分 θ/2 が乗っています。前と後ろで半分ずつ回り、合わせて θ になります。</p>
+<p>q<sup>−1</sup> は q の逆数です。挟むと、軸の向きの成分はそのまま残り、軸と直角な成分だけが角度 θ だけ回ります。q は、e の肩（指数）に、軸 u と、回したい角度の半分 θ/2 を乗せた数です。前から q を掛けて半分、後ろから q<sup>−1</sup> を掛けてもう半分回り、合わせて θ になります。</p>
 <p>物理では、同じ回転を、パウリ行列という三つの 2 行 2 列の行列で書きます。電子の向き（スピン）を回すときの書き方です。四元数の i・j・k を、パウリ行列 σ<sub>x</sub>・σ<sub>y</sub>・σ<sub>z</sub> にそれぞれ −i を掛けたものに置き換えると、掛け算の決まりがそっくり同じになります。だから、物理の U v U<sup>†</sup>（U<sup>†</sup> は U の逆にあたる行列）は、四元数の q v q<sup>−1</sup> と同じ形をしています。</p>
 <details class="acc"><summary>詳しく — 四元数の掛け算の決まりと、パウリ行列との対応</summary>
 
@@ -154,10 +157,13 @@
 <p>q と −q は、同じ回転を表します。挟むと符号が二回出て、打ち消し合うからです。だから、回す数 q の側は、立体が一周（θ = 2π）しても −1 になるだけで、もとの 1 に戻るのは二周（θ = 4π）したときです。電子の向きが二回転で元に戻ると言われるのは、この性質のことです。</p>
 </details>
 
+<p>この書き方には、平面の回転を e<sup>iθ</sup> で書いたときには見えなかった部品が出てきます。回す軸 u、角度を半分ずつ前と後ろに分けること、掛ける順番、それに、二周してやっと元に戻る回す数 q（上の畳み）です。次の章で、四元数の二つの軸をゼロにしてオイラーの等式と並べ、この四つが等式の中ではどこへ行ったのかを見ます。</p>
 </div></details><details class="sec" id="二つの軸をゼロにするとオイラーの等式が出てくる" open><summary>二つの軸をゼロにすると、オイラーの等式が出てくる</summary><div class="secbody">
 
 
-<p><a id="eo-pair"></a>四元数の w・i・j・k の四つのうち、二つをゼロにすると、平面が一枚残ります。そこでは、オイラーの等式と同じ働きの式が書けるはずです。</p>
+<p><a id="eo-pair"></a>前の章で出てきた四つの部品が、平面の回転ではどこへ行くのかを見ます。四元数の w・i・j・k の四つのうち、二つをゼロにすると、平面が一枚残ります。そこでは、オイラーの等式と同じ働きの式が書けるはずです。</p>
+<figure class="glow-card reader-figure"><div style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.5rem 1.5rem"><svg viewBox="0 0 240 234" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:15rem" aria-label="四元数の側。i と j と k の向きの箱が、k の向きに押しつぶされて、i と j の平面が一枚残る。平面に直角な k の向きの線が、回す軸として残っている。平面の上に、角度 θ だけ回る矢印がある。"><g font-size="13"><polygon points="54.2,168.2 158.6,168.2 158.6,63.8 54.2,63.8" fill="none" stroke="var(--mute)" stroke-width="1.1" stroke-dasharray="4 3"/><line x1="54.2" y1="168.2" x2="75.8" y2="152.2" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M65.5,163.1L68.2,157.8L62.4,158.9" fill="none" stroke="var(--gold)" stroke-width="1.4"/><line x1="158.6" y1="168.2" x2="180.2" y2="152.2" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M169.9,163.1L172.6,157.8L166.8,158.9" fill="none" stroke="var(--gold)" stroke-width="1.4"/><line x1="158.6" y1="63.8" x2="180.2" y2="47.8" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M169.9,58.7L172.6,53.4L166.8,54.5" fill="none" stroke="var(--gold)" stroke-width="1.4"/><line x1="54.2" y1="63.8" x2="75.8" y2="47.8" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M65.5,58.7L68.2,53.4L62.4,54.5" fill="none" stroke="var(--gold)" stroke-width="1.4"/><polygon points="97.4,136.2 201.8,136.2 201.8,31.8 97.4,31.8" fill="none" stroke="var(--mute)" stroke-width="1.1" stroke-dasharray="4 3"/><line x1="97.4" y1="136.2" x2="75.8" y2="152.2" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M86.1,141.3L83.4,146.6L89.2,145.5" fill="none" stroke="var(--gold)" stroke-width="1.4"/><line x1="201.8" y1="136.2" x2="180.2" y2="152.2" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M190.5,141.3L187.8,146.6L193.6,145.5" fill="none" stroke="var(--gold)" stroke-width="1.4"/><line x1="201.8" y1="31.8" x2="180.2" y2="47.8" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M190.5,36.9L187.8,42.2L193.6,41.1" fill="none" stroke="var(--gold)" stroke-width="1.4"/><line x1="97.4" y1="31.8" x2="75.8" y2="47.8" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M86.1,36.9L83.4,42.2L89.2,41.1" fill="none" stroke="var(--gold)" stroke-width="1.4"/><polygon points="75.8,152.2 180.2,152.2 180.2,47.8 75.8,47.8" fill="var(--navy)" fill-opacity="0.13" stroke="var(--navy)" stroke-width="1.3"/><line x1="70.0" y1="100.0" x2="194.7" y2="100.0" stroke="var(--mid)" stroke-width="1"/><text x="200.7" y="104.0" fill="var(--mid)">i</text><line x1="128.0" y1="158.0" x2="128.0" y2="33.3" stroke="var(--mid)" stroke-width="1"/><text x="134.0" y="33.3" fill="var(--mid)">j</text><line x1="164.0" y1="73.3" x2="52.5" y2="156.0" stroke="var(--coral)" stroke-width="1.6"/><text x="4" y="190" fill="var(--coral)">k（回す軸）</text><path d="M162.7,90.7 L161.6,87.1 L160.0,83.7 L158.2,80.4 L155.9,77.4 L153.4,74.6 L150.6,72.1 L147.6,69.8 L144.3,68.0 L140.9,66.4 L137.3,65.3" fill="none" stroke="var(--ink)" stroke-width="1.4"/><path d="M143.3,64.5L137.3,65.3L141.6,69.4" fill="none" stroke="var(--ink)" stroke-width="1.4"/><text x="155.9" y="64.4" fill="var(--ink)">θ</text><text x="8" y="210" fill="var(--ink)" font-size="11.5">w と k を 0 に：奥行きの厚みがつぶれ、</text><text x="8" y="226" fill="var(--ink)" font-size="11.5">i と j の平面が残る。軸 k は残る</text></g></svg><svg viewBox="0 0 240 234" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:15rem" aria-label="オイラーの側。横に 1、縦に i の向きの複素平面が一枚ある。平面の上に、角度 θ だけ回る矢印がある。原点に、紙面に直角な奥行きの向きを表す丸の中の点の印があり、回す軸は式には出てこない、と書いてある。"><g font-size="13"><rect x="56" y="48" width="128" height="128" fill="var(--navy)" fill-opacity="0.13" stroke="var(--navy)" stroke-width="1.3"/><line x1="50" y1="112" x2="194" y2="112" stroke="var(--mid)" stroke-width="1"/><line x1="120" y1="182" x2="120" y2="38" stroke="var(--mid)" stroke-width="1"/><text x="196" y="116" fill="var(--mid)">1</text><text x="126" y="40" fill="var(--mid)">i</text><path d="M158.6,101.6 L157.3,97.7 L155.6,93.8 L153.5,90.2 L151.1,86.8 L148.3,83.7 L145.2,80.9 L141.8,78.5 L138.2,76.4 L134.3,74.7 L130.4,73.4" fill="none" stroke="var(--ink)" stroke-width="1.4"/><path d="M136.3,72.6L130.4,73.4L134.7,77.5" fill="none" stroke="var(--ink)" stroke-width="1.4"/><text x="150" y="82" fill="var(--ink)">θ</text><circle cx="120" cy="112" r="7" fill="var(--white)" stroke="var(--coral)" stroke-width="1.6"/><circle cx="120" cy="112" r="2" fill="var(--coral)"/><text x="8" y="210" fill="var(--ink)" font-size="11.5">e<tspan baseline-shift="super" font-size="8">iθ</tspan> を掛けて回す。回す軸（◎ 奥行きの</text><text x="8" y="226" fill="var(--ink)" font-size="11.5">向き z）は、式には出てこない</text></g></svg></div><figcaption>四元数の側で w と k をゼロにすると、奥行きがつぶれて平面が一枚残る。それが、オイラーの側の複素平面と同じ角度 θ だけ回る</figcaption></figure>
+
 <p>どの二つをゼロにするかで、残る平面が変わります。挟む式 q v q<sup>−1</sup> は、実の部分を 0 と置いて使う式です。だから、この式でオイラーの等式と並べるには、実の向きを含まない平面を残します。ここでは、実の部分 w と k をゼロにして、i と j の平面を残し、軸を k にします。</p>
 <p>両側に同じ項目を並べると、次のようになります。</p>
 <div class="tablefit">
@@ -188,7 +194,7 @@
 </tr>
 <tr>
 <td>回す軸</td>
-<td>式には出てこない</td>
+<td>式には出てこない（※）</td>
 <td>k</td>
 </tr>
 <tr>
@@ -210,8 +216,72 @@
 </table></div>
 </div>
 
-<p>回したあとの点は、横の向きの名前と縦の向きの名前が違うだけで、同じ数が並びます。このページでは、x = 0.3、y = 0.9、θ = 0.7 で両方を計算し、どちらも横が −0.3503、縦が 0.8816 になることを確かめました。</p>
-<p>二つの式が同じ点に着くのに、四元数の側には、オイラーの側に書かれていない部品があります。このページで並べてみると、等式がたたんでいたものは、少なくとも次の四つに見えます。</p>
+<p>※ オイラーの側の回す軸は、平面に直交する奥行きの向き（z の向き）です。複素数には、その向きを書く場所がありません。</p>
+<p>回したあとの点は、横の向きの名前と縦の向きの名前が違うだけで、同じ数が並びます。たとえば x = 0.3、y = 0.9、θ = 0.7 では、どちらも横が −0.3503、縦が 0.8816 になります。下のコードは、両方の計算をその場で動かせるようにしたものです（JavaScript）。数を書き換えて「実行」をクリックすると、ほかの点や角度でも同じ所に着くことが見られます。コピーして、ブラウザの開発者ツールのコンソールや Node.js に貼っても動きます。</p>
+<div class="code-run">
+
+<pre><code>// 四元数 w + xi + yj + zk を [w, x, y, z] の並びで書く
+function mul(a, b) {
+  const [a0, a1, a2, a3] = a, [b0, b1, b2, b3] = b;
+  return [
+    a0 * b0 - a1 * b1 - a2 * b2 - a3 * b3,
+    a0 * b1 + a1 * b0 + a2 * b3 - a3 * b2,
+    a0 * b2 - a1 * b3 + a2 * b0 + a3 * b1,
+    a0 * b3 + a1 * b2 - a2 * b1 + a3 * b0,
+  ];
+}
+
+const x = 0.3, y = 0.9, theta = 0.7;
+
+// オイラーの側：e^{iθ} を x + iy に片側から掛ける
+const euler = [
+  x * Math.cos(theta) - y * Math.sin(theta),
+  x * Math.sin(theta) + y * Math.cos(theta),
+];
+
+// 四元数の側：e^{kθ/2} と e^{−kθ/2} で xi + yj を前と後ろから挟む
+const q    = [Math.cos(theta / 2), 0, 0,  Math.sin(theta / 2)];
+const qInv = [Math.cos(theta / 2), 0, 0, -Math.sin(theta / 2)];
+const v = [0, x, y, 0];
+const r = mul(mul(q, v), qInv);
+
+console.log(&quot;オイラーの側：横&quot;, euler[0].toFixed(4), &quot;縦&quot;, euler[1].toFixed(4));
+console.log(&quot;四元数の側　：横&quot;, r[1].toFixed(4), &quot;縦&quot;, r[2].toFixed(4));
+console.log(&quot;四元数の側の実の部分と k：&quot;, r[0].toFixed(4), r[3].toFixed(4));</code></pre>
+</div>
+
+<details class="acc"><summary>詳しく — 同じ計算を Python で書くと</summary>
+
+<p>エディタに写して、Python 3 で動かせます。</p>
+<pre><code>import math
+
+# 四元数 w + xi + yj + zk を (w, x, y, z) の並びで書く
+def mul(a, b):
+    a0, a1, a2, a3 = a
+    b0, b1, b2, b3 = b
+    return (
+        a0 * b0 - a1 * b1 - a2 * b2 - a3 * b3,
+        a0 * b1 + a1 * b0 + a2 * b3 - a3 * b2,
+        a0 * b2 - a1 * b3 + a2 * b0 + a3 * b1,
+        a0 * b3 + a1 * b2 - a2 * b1 + a3 * b0,
+    )
+
+x, y, theta = 0.3, 0.9, 0.7
+
+# オイラーの側：e^{iθ} を x + iy に片側から掛ける
+euler = complex(math.cos(theta), math.sin(theta)) * complex(x, y)
+
+# 四元数の側：e^{kθ/2} と e^{−kθ/2} で xi + yj を前と後ろから挟む
+q = (math.cos(theta / 2), 0, 0, math.sin(theta / 2))
+q_inv = (math.cos(theta / 2), 0, 0, -math.sin(theta / 2))
+r = mul(mul(q, (0, x, y, 0)), q_inv)
+
+print(&quot;オイラーの側：横&quot;, round(euler.real, 4), &quot;縦&quot;, round(euler.imag, 4))
+print(&quot;四元数の側　：横&quot;, round(r[1], 4), &quot;縦&quot;, round(r[2], 4))
+print(&quot;四元数の側の実の部分と k：&quot;, round(r[0], 4), round(r[3], 4))</code></pre>
+</details>
+
+<p>二つの式は同じ点に着きます。それでも、四元数の側には、オイラーの側に書かれていない部品があります。前の章で出てきた四つです。このページで並べてみると、オイラーの等式がたたんでいたものは、少なくとも次の四つに見えます。</p>
 <ol type="1">
 <li><strong>回す軸</strong>：平面の回転にも、平面と直角な軸があります。オイラーの側では、軸は数の中に置き場がなく、式に出てきません。</li>
 <li><strong>半分ずつ、両側から</strong>：四元数の側では、角度の半分を前に、半分を後ろに掛けます。オイラーの側では、全部を片側から掛けます。</li>
@@ -225,17 +295,19 @@
 <p>逆に、同じ q で両側から挟む式は、j と k の平面を動かしません。q で前と後ろから挟む二つの式は、同じ q を使いながら、別々の平面を回しています。</p>
 </details>
 
-<p>次も、数学で確かめた事実です。オイラーの側の「e<sup>iθ</sup> を片側から掛ける」ことを、四元数の全体に当ててみます。すると、1 と i の平面が角度 θ 回るのと同時に、j と k の平面も同じ角度 θ だけ回ります。j に e<sup>iθ</sup> を前から掛けると、cos θ j + sin θ k になります。j と k をゼロにした平面の上では、この二枚目の平面の回転は見えません。</p>
-<p>だから、片側から一回掛けるという一番素朴な書き方が、四元数の中では、二枚の平面を同時に回す働きになっています。オイラーの等式は、その二枚目を見えない所に置いた形だ、と読むこともできそうです。</p>
-</div></details><details class="sec" id="行列で書くとオイラーの等式は-i-になる" open><summary>行列で書くと、オイラーの等式は −I になる</summary><div class="secbody">
+<details class="acc"><summary>詳しく — 片側から一回掛けると、もう一枚の平面も回る</summary>
 
+<p>オイラーの側の「e<sup>iθ</sup> を片側から掛ける」ことを、四元数の全体に当ててみます。すると、1 と i の平面が角度 θ 回るのと同時に、j と k の平面も同じ角度 θ だけ回ります。たとえば、j に e<sup>iθ</sup> を前から掛けると、cos θ j + sin θ k になります。j と k をゼロにした平面の上では、この二枚目の平面の回転は見えません。</p>
+<p>片側から一回掛けるという一番素朴な書き方が、四元数の中では、二枚の平面を同時に回す働きになっています。オイラーの等式は、その二枚目を見えない所に置いた形だ、と読むこともできそうです。</p>
+</details>
 
-<p><a id="eo-matrix"></a>平面全体に i を掛けることは、点 (x, y) を 90 度回す行列 J = [[0, −1], [1, 0]] を掛けることと同じです。J を 2 回掛けると −I になります。I は、何も変えない単位行列です。i² = −1 は、行列では J² = −I です。</p>
+<details class="acc"><summary>詳しく — 行列で書くと、オイラーの等式は −I になる</summary>
+
+<p>二つの側を、同じ 2 行 2 列の行列の言葉で書くと、一本につながります。</p>
+<p>平面全体に i を掛けることは、点 (x, y) を 90 度回す行列 J = [[0, −1], [1, 0]] を掛けることと同じです。J を 2 回掛けると −I になります。I は、何も変えない単位行列です。i² = −1 は、行列では J² = −I です。</p>
 <p>e<sup>iθ</sup> を掛けることは、角度 θ だけ回す行列 cos θ I + sin θ J を掛けることです。θ = π を入れると、cos π = −1、sin π = 0 なので、行列は −I になります。平面のすべての点を、0 をはさんで反対側へ送る行列です。</p>
 <p>だから、e<sup>iπ</sup> + 1 = 0 は、行列では −I + I = O と書けます。O は、どの点も 0 に送る行列です。等式の 1 は「何も変えない」行列 I、0 は「すべてを 0 に送る」行列 O、e<sup>iπ</sup> は「半周回す」行列 −I にあたります。</p>
 <p>四元数の側も、パウリ行列で 2 行 2 列の行列にすると、同じ所に着きます。e<sup>kπ</sup> も −I になります。i と j の平面の点 xi + yj は、行列では −i [[0, x − iy], [x + iy, 0]] になり、左下の角にオイラーの側の点 x + iy がそのまま入っています。これを U で挟むと、左下の角が e<sup>iθ/2</sup> (x + iy) e<sup>iθ/2</sup> = e<sup>iθ</sup>(x + iy) に変わります。</p>
-<details class="acc"><summary>詳しく — 挟む式の中に、オイラーの掛け算が入っている</summary>
-
 <p>U = [[e<sup>−iθ/2</sup>, 0], [0, e<sup>iθ/2</sup>]] で [[0, a*], [a, 0]] を挟む（a* は a と虚の部分の符号だけ違う数）と、左下の角は e<sup>iθ/2</sup> × a × e<sup>iθ/2</sup> になります。複素数どうしは順番を入れ替えても同じなので、これは e<sup>iθ</sup> a です。右上の角は e<sup>−iθ</sup> a* です。</p>
 <p>挟む式 q v q<sup>−1</sup> を行列にすると、その中で、オイラーの掛け算が、同じ数を両側から半分ずつ掛ける形で行われています。上の「実の向きを含む平面で並べると」の畳みで見た、同じ q で両側から挟む式が、ここに入っています。</p>
 </details>
@@ -243,11 +315,13 @@
 </div></details><details class="sec" id="0-と-1-も次元をたたむ記号かもしれない" open><summary>0 と 1 も、次元をたたむ記号かもしれない</summary><div class="secbody">
 
 
-<p><a id="eo-fold"></a>四元数で開くと、オイラーの等式の登場人物は、それぞれが何かを一つにたたむ働きをしているように見えてきます。pjdhiro は、等式の登場人物を眺めていた対話の初めに、0 と 1 について、こう言っています。</p>
+<p><a id="eo-fold"></a>四つを開いてみると、たたむ働きをしているのは、e<sup>iθ</sup> を掛ける一つの式だけではないように見えてきます。オイラーの等式の登場人物も、それぞれが何かを一つにたたむ働きをしているように見えます。pjdhiro は、等式の登場人物を眺めていた対話の初めに、0 と 1 について、こう言っています。</p>
 <blockquote class="reader-callout reader-request">
 <p><strong>pjdhiro の見方：</strong>非二元から発想しようと思ってます。0 と 1 は、数直線のような左右に配置されるものではない。e と π は、数直線に次元を落とす、ステレオ投影のような際に必要になるもの、と逆に発想しようとしてます。つまり e の理解は不要。ルートのような記号になりつつある。</p>
 </blockquote>
 <p>ステレオ投影は、球の上の点を、平面へ写すやり方です。球の北極から、球の上の点を通る線を引き、平面に当たった所へ写します。複素平面に、どこまでも遠い所を表す点 ∞ を一つ足すと、平面は球の表面と同じものとして扱えます（リーマン球面）。そのとき、0 は南極、∞ は北極、半径 1 の円は赤道に来ます。1 は赤道の上の一点です。</p>
+<figure class="glow-card reader-figure"><svg viewBox="0 0 360 292" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:28rem;margin:0 auto" aria-label="地球儀のような球が、赤道の高さで平面に刺さっている。球のてっぺんの北極に ∞、底の南極に 0 が来る。赤道は半径 1 の円で、その上に 1 と −1 がある。北極から引いた線が、球の上の点を通って平面に当たる。円の内側の点は球の南の半球に、円の外側の点は北の半球に写る。北極と南極を結ぶ軸のまわりに回る矢印がある。"><polygon points="128.2,197.0 349.6,149.1 231.8,59.0 10.4,106.9" fill="var(--navy)" fill-opacity="0.07" stroke="var(--mute)" stroke-width="1"/><line x1="69.3" y1="151.9" x2="290.7" y2="104.1" stroke="var(--mute)" stroke-width="0.8"/><line x1="238.9" y1="173.0" x2="121.1" y2="83.0" stroke="var(--mute)" stroke-width="0.8"/><circle cx="180" cy="128" r="66" fill="var(--white)" fill-opacity="0.55" stroke="var(--ink)" stroke-width="1.4"/><path d="M238.3,115.4 L235.4,113.4 L232.0,111.5 L228.3,109.7 L224.2,108.1 L219.7,106.6 L215.0,105.2 L210.0,104.1 L204.7,103.1 L199.3,102.3 L193.7,101.7 L188.0,101.4 L182.3,101.2 L176.5,101.2 L170.8,101.4 L165.2,101.8 L159.6,102.5 L154.2,103.3 L149.0,104.3 L144.1,105.5 L139.4,106.8 L135.0,108.4 L131.0,110.0 L127.3,111.8 L124.0,113.8 L121.2,115.8 L118.8,117.9 L116.9,120.2 L115.4,122.4 L114.5,124.7 L114.0,127.1 L114.1,129.4 L114.6,131.7 L115.7,134.0 L117.2,136.3 L119.2,138.5 L121.7,140.6" fill="none" stroke="var(--gold)" stroke-width="1.3" stroke-dasharray="3 3"/><path d="M121.7,140.6 L124.6,142.6 L128.0,144.5 L131.7,146.3 L135.8,147.9 L140.3,149.4 L145.0,150.8 L150.0,151.9 L155.3,152.9 L160.7,153.7 L166.3,154.3 L172.0,154.6 L177.7,154.8 L183.5,154.8 L189.2,154.6 L194.8,154.2 L200.4,153.5 L205.8,152.7 L211.0,151.7 L215.9,150.5 L220.6,149.2 L225.0,147.6 L229.0,146.0 L232.7,144.2 L236.0,142.2 L238.8,140.2 L241.2,138.1 L243.1,135.8 L244.6,133.6 L245.5,131.3 L246.0,128.9 L245.9,126.6 L245.4,124.3 L244.3,122.0 L242.8,119.7 L240.8,117.5 L238.3,115.4" fill="none" stroke="var(--gold)" stroke-width="2.4"/><line x1="180.0" y1="45.7" x2="180.0" y2="202.3" stroke="var(--mid)" stroke-width="1" stroke-dasharray="4 3"/><path d="M161.2,51.7 L162.7,50.7 L164.7,49.8 L167.1,49.1 L170.0,48.5 L173.2,48.1 L176.5,47.8 L180.0,47.7 L183.5,47.8 L186.8,48.1 L190.0,48.5 L192.9,49.1 L195.3,49.8 L197.3,50.7 L198.8,51.7" fill="none" stroke="var(--mid)" stroke-width="1.3"/><path d="M192.8,50.9L198.8,51.7L195.7,46.5" fill="none" stroke="var(--mid)" stroke-width="1.4"/><line x1="180.0" y1="67.7" x2="226.2" y2="173.0" stroke="var(--navy)" stroke-width="1.2"/><circle cx="226.2" cy="173.0" r="4" fill="var(--navy)"/><circle cx="210.1" cy="136.3" r="4" fill="none" stroke="var(--navy)" stroke-width="1.6"/><line x1="180.0" y1="67.7" x2="302.1" y2="128.0" stroke="var(--coral)" stroke-width="1.2"/><circle cx="235.2" cy="95.0" r="4" fill="var(--coral)"/><circle cx="302.1" cy="128.0" r="4" fill="none" stroke="var(--coral)" stroke-width="1.6"/><circle cx="180.0" cy="67.7" r="4.5" fill="var(--ink)"/><circle cx="180.0" cy="188.3" r="4.5" fill="var(--ink)"/><circle cx="180.0" cy="128.0" r="2.5" fill="var(--mid)"/><circle cx="238.3" cy="115.4" r="3.5" fill="var(--gold)"/><circle cx="121.7" cy="140.6" r="3.5" fill="var(--gold)"/><g font-size="12.5"><text x="190.0" y="63.7" fill="var(--ink)">∞（北極）</text><text x="190.0" y="202.3" fill="var(--ink)">0 が来る所（南極）</text><text x="244.3" y="109.4" fill="var(--gold)">1</text><text x="117.7" y="156.6" text-anchor="end" fill="var(--gold)">−1</text><text x="176.0" y="123.0" text-anchor="end" fill="var(--mid)" font-size="11">0</text><text x="12" y="43.7" fill="var(--mid)" font-size="11">大きさ 1 の数を掛けると、</text><text x="12" y="57.7" fill="var(--mid)" font-size="11">軸のまわりに回る</text><text x="12" y="98" fill="var(--mid)" font-size="11">複素平面（球の赤道を通る）</text><g font-size="11.5"><circle cx="24" cy="262" r="3.5" fill="var(--gold)"/><text x="34" y="266" fill="var(--ink)">赤道 ＝ 半径 1 の円（1 と −1 はこの上）</text><circle cx="24" cy="280" r="3.5" fill="var(--navy)"/><text x="34" y="284" fill="var(--ink)">円の内の点 → 南の半球へ</text><circle cx="200" cy="280" r="3.5" fill="var(--coral)"/><text x="210" y="284" fill="var(--ink)">円の外の点 → 北の半球へ</text></g></g></svg><figcaption>北極から引いた線で、球の上の点と平面の点を結ぶ（ステレオ投影）。0 は南極、∞ は北極、半径 1 の円は赤道に来る</figcaption></figure>
+
 <p>この球の上で、大きさ 1 の数を掛けることは、北極と南極を結ぶ軸のまわりに、球を回すことです。回しても動かないのは、0 と ∞ の二点だけです。また、点を「1 ÷ その点」の向きに写す鏡（z → 1/z̄）は、0 と ∞ を入れ替え、半径 1 の円の上の点だけを動かしません。この球の上では、0 の反対は ∞ で、1 は二つの真ん中の輪にあります。</p>
 <blockquote class="reader-callout reader-request">
 <p><strong>pjdhiro の見方：</strong>ゼロの逆が 1 かのような世界観を捨て、ゼロの逆は無限大で、1 は 1/2 かのような。</p>
@@ -351,6 +425,7 @@
     </div>
     <script type="module" src="../src/reader-app.js"></script>
     <script src="../src/reader-flow.js" defer></script>
+    <script src="../src/reader-run.js" defer></script>
     <script type="module" src="../src/reader-menu.js"></script>
 </body>
 </html>
