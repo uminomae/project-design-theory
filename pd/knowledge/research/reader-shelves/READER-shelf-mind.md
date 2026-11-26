@@ -6,7 +6,7 @@
 
 このページは、心の働きを一つずつ見るモジュールの並びです。多くは、[Love駆動開発と呼びたいもの](love-driven-dev.html)の章から呼んでいます。一つずつ、単独で読めます。
 
-ほかの並びは、[Love と愛、創造を見るページ](shelf-love.html)・[数と組織を見るページ](shelf-number-org.html)・[思考を見るページ](shelf-thinking.html)・[原典を日本語で読む](shelf-translations.html)です。
+ほかの並びは、[能力とは](abilities.html)・[Love と愛、創造を見るページ](shelf-love.html)・[数と組織を見るページ](shelf-number-org.html)・[思考を見るページ](shelf-thinking.html)・[原典を日本語で読む](shelf-translations.html)です。
 
 ## 不安と安心、心の守り
 

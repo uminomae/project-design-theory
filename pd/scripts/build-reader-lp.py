@@ -597,6 +597,13 @@ PAGES = [
         ROOT / "reader/shelf-thinking.html",
         "flow",
     ),
+    (
+        # 能力のジャンルの入口（#206・pjdhiro 2026-11-26「能力という上位概念の下に思考がありますね」）
+        ROOT / "knowledge/research/reader-shelves/READER-abilities.md",
+        ROOT / "scripts/reader-abilities-template.html",
+        ROOT / "reader/abilities.html",
+        "flow",
+    ),
 ]
 
 # スクリーナーのデータ（正本 JSON）。出力 HTML 名 → JSON。正本 MD の <!--SCREENER--> に

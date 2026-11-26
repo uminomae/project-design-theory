@@ -6,7 +6,7 @@
 
 このページは、数の見方と、経営・組織の見方を扱うモジュールの並びです。数のページのうちいくつかは、ほかの読み物を読むための前提知識や、複素平面の入口です。
 
-ほかの並びは、[心の動きを見るページ](shelf-mind.html)・[Love と愛、創造を見るページ](shelf-love.html)・[思考を見るページ](shelf-thinking.html)・[原典を日本語で読む](shelf-translations.html)です。
+ほかの並びは、[能力とは](abilities.html)・[心の動きを見るページ](shelf-mind.html)・[Love と愛、創造を見るページ](shelf-love.html)・[思考を見るページ](shelf-thinking.html)・[原典を日本語で読む](shelf-translations.html)です。
 
 ## 数の見方
 
