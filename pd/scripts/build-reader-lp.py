@@ -509,6 +509,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/analogy/READER-analogy.md",
+        ROOT / "scripts/reader-analogy-template.html",
+        ROOT / "reader/analogy.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/emerging-abilities/READER-emerging-abilities.md",
         ROOT / "scripts/reader-emerging-abilities-template.html",
         ROOT / "reader/emerging-abilities.html",

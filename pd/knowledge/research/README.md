@@ -37,6 +37,7 @@
 | `complex-plane/` | 「複素平面で考える」（副題「複素数が関わる、十七の法則」・2026-11-25・工事中・noindex・#204）。正本は `READER-complex-plane.md`（`pd/reader/complex-plane.html`）。複素数が関わる有名な数学十五の目次（分野で絞らない・stance 1-4）。独立ページは一つずつ別に作り、できたら表の名前をリンクにする |
 | `thinking/` | 「思考とは」（2026-11-25・工事中・noindex・#206 の M1。2026-11-26 から思考のモジュールへの道案内）と「「考える」の語は、何を指してきたか」（もとの思考とはの中身）。調べの記録は `README.md`（十一の原典の照合の状態・鍵の文・Claude の読み）、正本は `READER-thinking.md`（`pd/reader/thinking.html`）と `READER-thinking-definitions.md`（`pd/reader/thinking-definitions.html`）。M2〜M8 の独立ページは別のセッションで作る |
 | `cognitive-abilities/` | 「頭脳の能力は、どう分けられてきたか」（2026-11-25・工事中・noindex・#206 の M3）。調べの記録は `README.md`（読んだ原典の照合の状態・鍵の文・照らせなかったもの・空きとして見えたこと）、正本は `READER-cognitive-abilities.md`（`pd/reader/cognitive-abilities.html`） |
+| `analogy/` | 「類推と、構造の類似を見抜く力」（2026-11-26・工事中・noindex・#206 の M7）。調べの記録は `README.md`（読んだ原典の照合の状態・鍵の文・数の食い違い・照らせなかったもの・並べ方の決め）、正本は `READER-analogy.md`（`pd/reader/analogy.html`） |
 | `emerging-abilities/` | 「新しく注目されている能力」（2026-11-26・工事中・noindex・#206 の M4）。調べの記録は `README.md`（仕事・教育・AI の側の原典の照合の状態・鍵の文・照らせなかったもの・並べ方）、正本は `READER-emerging-abilities.md`（`pd/reader/emerging-abilities.html`） |
 | `soft-skills/` | 「ソフトスキル・非認知能力とは」（2026-11-26・工事中・noindex・#208 の A4）。調べの記録は `README.md`（照合の状態・鍵の文と頁・照らせなかったもの・A1 との切り分け）、正本は `READER-soft-skills.md`（`pd/reader/soft-skills.html`） |
 | `interpersonal-abilities/` | 「人と関わる力」（2026-11-26・工事中・noindex・#208 の A5）。調べの記録は `README.md`（読んだ原典の照合の状態・鍵の文・読まなかったもの・並べ方・指して写さないもの）、正本は `READER-interpersonal-abilities.md`（`pd/reader/interpersonal-abilities.html`） |
