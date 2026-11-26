@@ -554,6 +554,10 @@ body.reader-flow .reader-article .peek__foot { display: flex; justify-content: f
 body.reader-flow .reader-article .peek__foot[hidden] { display: none; }
 body.reader-flow .reader-article .peek__go { min-height: 44px; padding: 0 16px; border: 1px solid var(--glass-border-faint); background: var(--glass-bg-faint); color: var(--navy); border-radius: 99px; font-size: 0.9rem; cursor: pointer; }
 body.reader-flow .reader-article .peek__body pre { max-width: 100%; overflow-x: auto; }
+/* ほかのページに一か所だけ書いた中身を小窓で呼ぶリンク（reader-import.js・2026-11-26・人類の man） */
+body.reader-flow .reader-article a.peek__go { display: inline-flex; align-items: center; text-decoration: none; }
+body.reader-flow .reader-article a.man-import { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border: 1px solid var(--glass-border-faint); background: var(--glass-bg-faint); color: var(--navy); border-radius: 99px; text-decoration: none; font-weight: 500; }
+body.reader-flow .reader-article a.man-import::before { content: "man "; font-family: ui-monospace, Menlo, monospace; margin-right: .4em; opacity: .7; }
 body.reader-flow .jump-back {
     position: fixed;
     left: 16px;

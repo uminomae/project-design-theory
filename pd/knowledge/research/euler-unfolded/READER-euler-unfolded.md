@@ -259,69 +259,18 @@ pjdhiro の言う「無限大のような極大さ」に、数学で近いもの
 
 数学のライブラリにも、e<sup>z</sup> を計算する関数 exp があり、説明書（help）が付いています。中身の厚さはライブラリでまちまちです。Python の cmath.exp は一行だけです。NumPy の exp には、複素数を大きさと位相に分ける説明と、図の例があります。Wolfram Language の Exp には、周期・応用・よくある落とし穴まで並んでいます。見た範囲では、厚い説明書にも、回す軸や掛ける順番は書かれていません。
 
-下は、そうした厚めの説明書によく書かれている中身を、このページの言葉でまとめたものです。<span class="help-add">色の付いた行</span>が、このページで開いたものを書き足した所です。
+そうした厚めの説明書によく書かれている中身に、このページで開いたものを書き足した exp の説明書は、「[人類の man](man.html#man-exp)」に置いています。行の頭に〔整理〕と付けた行の多くが、このページで開いたもの（回す軸・掛ける順番・二周で戻る回し手・球の上で・地図で読むと）です。
 
-<pre class="help-doc"><b>exp(z)</b>
-  複素数 z を受け取り、e の z 乗を返す。
+<p class="man-import-wrap"><a class="man-import" href="man.html#man-exp" data-import="man.html#man-exp-doc" data-import-title="exp(z) の説明書（人類の man）">exp の説明書を開く</a></p>
 
-  定義
-    e ≈ 2.71828。実数 x では、e^x は (1 + x/n)^n の n をどこまでも大きくした先の値。
-
-  複素数のとき
-    z = a + ib なら、e^z = e^a (cos b + i sin b)。
-    e^a が大きさ、cos b + i sin b が大きさ 1 の向き（位相）。
-<span class="help-add">    何をしているか：平面の全体に掛けて、大きさを e^a 倍し、平面ごと角度 b だけ回す。</span>
-<span class="help-add">    a = 0 なら、伸ばさずに回すだけ（単位円の上を進む）。</span>
-
-<span class="help-add">  なぜ底が e か</span>
-<span class="help-add">    底を正の数 c にすると、c^(iθ) = e^(iθ ln c) は、単位円の上を速さ |ln c| で進む（c < 1 なら逆回り）。</span>
-<span class="help-add">    左回りに速さがちょうど 1 になり、θ がそのまま円の上の道のりになるのは、底が e のときだけ。</span>
-
-<span class="help-add">  前提（省略されている既定値。補足「立体の回転と並べると」で見た、等式がたたんでいた四つ）</span>
-<span class="help-add">    回す軸：平面に直交する奥行きの向き。複素数には置き場がなく、式に出てこない。</span>
-<span class="help-add">    半分ずつ、両側から：平面では全部を片側から掛ける。立体では、軸 u の e^(uθ/2) で前と後ろから挟む（q v q⁻¹）。</span>
-<span class="help-add">    掛ける順番：平面では順番が結果を変えないので、式に出てこない。立体では、入れ替えると符号が変わる。</span>
-<span class="help-add">    二周で戻る回し手：回転そのものは一周で戻るが、立体の回す数 q は一周で −1、二周でやっと 1 に戻る。</span>
-
-  周期
-    e^(z + 2πi) = e^z。2πi ごとに同じ値に戻る。
-<span class="help-add">    回った量で読むと：0 周、1 周、2 周……は、どれも同じ点に来る。</span>
-<span class="help-add">    逆の log は、何周したかの分だけ値が開き、一つに決まらない。</span>
-
-  例
-    exp(0) = 1　　exp(iπ) = −1　　exp(2πi) = 1
-<span class="help-add">    オイラーの等式 e^(iπ) + 1 = 0 は、exp(iπ) = −1（半周）の −1 を移して、0 と 1 も式に入れた形。</span>
-
-<span class="help-add">  球の上で（章「0 の反対は、∞ かもしれない」のステレオ投影）</span>
-<span class="help-add">    このページの置き方（半径 1 の球を、赤道の高さの平面に写す）で 0 を南極、∞ を北極に置くと、</span>
-<span class="help-add">    a = 0 の単位円は、二つのちょうど真ん中の赤道になる。a を限りなく小さくすると e^z は 0 へ、</span>
-<span class="help-add">    限りなく大きくすると ∞ へ近づく。</span>
-<span class="help-add">  地図で読むと（章「地球儀・平面・船の地図の、三つの世界」）</span>
-<span class="help-add">    z = a + ib を船の地図（メルカトル図法）の点と見ると、exp は地図を平面に訳す。</span>
-<span class="help-add">    縦の a は大きさ e^a に、横の b は回転に訳され、横は 2π ごとに同じ所を指す。</span>
-
-<span class="help-add">  返さないもの</span>
-<span class="help-add">    e^z は、どの z でも 0 にならず、∞ にもならない（e^z × e^(−z) = 1 なので 0 にならず、値はいつも有限）。</span>
-<span class="help-add">    球の上では、南極（0）と北極（∞）の二点は、どの引数でも返らない。</span>
-<span class="help-add">    0 は平面にある点だが、値にはならない。∞ は、平面に一点足して球に閉じるときに足して置く点。</span>
-
-  応用
-    微分方程式、確率と統計 など。
-<span class="help-add">    立体の回転（四元数）。</span>
-
-  関連
-    log（逆の関数）、sin、cos<span class="help-add">、四元数の回転 q v q⁻¹</span></pre>
-
-このページの章を指さない形にした exp の説明書と、ほかの関数の説明書は、「[人類の man](man.html#man-exp)」に集めています。
-
-書き足した行の多くは、平面の上だけで使う限り、書かなくても困らないものです。書かなくても困らないからか、説明書には書かれにくいようです。オイラーの等式の一行にも、たたまれています。立体へ持っていくと、たたまれていたものが、四元数の式の中に出てきます。軸は引数として、順番と二周は式の形として出てきます。色の無い行だけでも exp は使えますが、なぜそうなるか、平面の外でどう使うかは、色の付いた行に書かれています。
+書き足した行の多くは、平面の上だけで使う限り、書かなくても困らないものです。書かなくても困らないからか、説明書には書かれにくいようです。オイラーの等式の一行にも、たたまれています。立体へ持っていくと、たたまれていたものが、四元数の式の中に出てきます。軸は引数として、順番と二周は式の形として出てきます。〔整理〕の無い行だけでも exp は使えますが、なぜそうなるか、平面の外でどう使うかは、〔整理〕の行に書かれています。
 
 <details><summary>出典</summary>
 
 - Python 3 の `cmath.exp` の説明（docstring）は「Return the exponential value e\*\*z.」の一行（手元の Python で確かめた）。
 - NumPy の `exp` の説明は、ソースの [ufunc_docstrings.py](https://github.com/numpy/numpy/blob/main/numpy/_core/code_generators/ufunc_docstrings.py) にある。Notes の欄で、複素数の入力を e^a と e^{ib} に分け、e^{ib} = cos b + i sin b を大きさ 1 で周期的な位相と書き、複素平面の上の大きさと位相を描く例を載せている。
 - Wolfram Language の [Exp](https://reference.wolfram.com/language/ref/Exp.html) は、オイラーの公式への書き換え、2πi の周期、応用（微分方程式・確率と統計 ほか）、よくある落とし穴の欄を持つ。
-- 上の説明書は、これらを写したものではなく、よく書かれる中身をこのページがまとめ直したもの。
+- 「人類の man」の exp の説明書は、これらを写したものではなく、よく書かれる中身をまとめ直したもの。
 
 </details>
 
