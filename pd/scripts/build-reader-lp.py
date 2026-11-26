@@ -565,10 +565,24 @@ PAGES = [
         "flow",
     ),
     (
-        # 独立ページを束ねる並び（付箋帳 i20261119004012n6t・2026-11-19）
-        ROOT / "knowledge/research/reader-shelves/READER-shelf-number-org.md",
-        ROOT / "scripts/reader-shelf-number-org-template.html",
-        ROOT / "reader/shelf-number-org.html",
+        # HOME のモジュールの七つの並びに合わせた（2026-11-26・数と組織を数と回転・経営と組織に分け、私を見るを足した）
+        ROOT / "knowledge/research/reader-shelves/READER-shelf-self.md",
+        ROOT / "scripts/reader-shelf-self-template.html",
+        ROOT / "reader/shelf-self.html",
+        "flow",
+    ),
+    (
+        # HOME のモジュールの七つの並びに合わせた（2026-11-26・数と組織を数と回転・経営と組織に分け、私を見るを足した）
+        ROOT / "knowledge/research/reader-shelves/READER-shelf-number.md",
+        ROOT / "scripts/reader-shelf-number-template.html",
+        ROOT / "reader/shelf-number.html",
+        "flow",
+    ),
+    (
+        # HOME のモジュールの七つの並びに合わせた（2026-11-26・数と組織を数と回転・経営と組織に分け、私を見るを足した）
+        ROOT / "knowledge/research/reader-shelves/READER-shelf-org.md",
+        ROOT / "scripts/reader-shelf-org-template.html",
+        ROOT / "reader/shelf-org.html",
         "flow",
     ),
     (

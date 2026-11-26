@@ -6,7 +6,7 @@
 
 このページは、能力にまつわるモジュールの並びです。「考える」力は、能力の一つです。知能検査のようなテストで測られてきた頭の能力も、能力の一部です。能力の名前には、ほかに、心の構えや身体の力、人と関わる力もあります。それぞれのページは、単独で読めます。まだ書いていないページは、題と問いだけを工事中で置いています。
 
-ほかの並びは、[思考を見るページ](shelf-thinking.html)・[心の動きを見るページ](shelf-mind.html)・[Love と愛、創造を見るページ](shelf-love.html)・[数と組織を見るページ](shelf-number-org.html)・[原典を日本語で読む](shelf-translations.html)です。
+ほかの並びは、[思考を見るページ](shelf-thinking.html)・[心の動きを見るページ](shelf-mind.html)・[私を見るページ](shelf-self.html)・[Love と駆動源を見るページ](shelf-love.html)・[数と回転を見るページ](shelf-number.html)・[経営と組織を見るページ](shelf-org.html)・[原典を日本語で読む](shelf-translations.html)です。
 
 ## 「考える」力と、テストで測られてきた頭の能力
 
