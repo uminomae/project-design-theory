@@ -22,6 +22,7 @@ export function getAppDom() {
     return {
         aboutBody: getRequiredElementById('about-body'),
         aboutModalElement: getRequiredElementById('about-modal'),
+        exploreModalElement: document.getElementById('explore-modal'),
         knowledgeBody: getRequiredElementById('knowledge-body'),
         howtoModalElement: getRequiredElementById('howto-modal'),
         knowledgeModalElement: getRequiredElementById('knowledge-modal'),

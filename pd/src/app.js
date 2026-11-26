@@ -26,6 +26,7 @@ const menuController = createMenuController({
 
 const aboutModal = createModalController(dom.aboutModalElement);
 const howtoModal = createModalController(dom.howtoModalElement);
+const exploreModal = dom.exploreModalElement ? createModalController(dom.exploreModalElement) : null;
 const knowledgeModal = createModalController(dom.knowledgeModalElement);
 const slidesModal = createModalController(dom.slidesModalElement);
 
@@ -71,6 +72,7 @@ modalRouter = createModalRouter({
     aboutModal,
     contentLoader,
     getCurrentLang: () => i18n.getCurrentLang(),
+    exploreModal,
     howtoModal,
     knowledgeModal,
     slideViewer,

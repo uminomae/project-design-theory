@@ -6,6 +6,7 @@ export function createModalRouter({
     aboutModal,
     contentLoader,
     getCurrentLang,
+    exploreModal,
     howtoModal,
     knowledgeModal,
     slideViewer,
@@ -196,7 +197,44 @@ export function createModalRouter({
         }
     }
 
+    function openExplore({ pushHistory = true } = {}) {
+        if (!exploreModal) return;
+        closeAbout({ updateHistory: false });
+        closeKnowledge({ updateHistory: false });
+        closeHowto({ updateHistory: false });
+        exploreModal.open();
+
+        if (pushHistory && !getSearchParams().has('explore')) {
+            updateSearchParams(
+                { explore: '', about: null, knowledge: null, howto: null },
+                { state: { modal: 'explore' } },
+            );
+        }
+    }
+
+    function closeExplore({ updateHistory = true } = {}) {
+        if (!exploreModal || !exploreModal.isOpen()) {
+            return;
+        }
+
+        exploreModal.close();
+
+        if (!updateHistory) {
+            return;
+        }
+
+        if (getSearchParams().has('explore')) {
+            if (history.state?.modal === 'explore') {
+                history.back();
+                return;
+            }
+
+            updateSearchParams({ explore: null }, { replace: true });
+        }
+    }
+
     function handleEscape() {
+        closeExplore();
         closeSlides();
         closeHowto();
         closeKnowledge();
@@ -232,6 +270,14 @@ export function createModalRouter({
             closeHowto({ updateHistory: false });
         }
 
+        if (params.has('explore')) {
+            if (exploreModal && !exploreModal.isOpen()) {
+                openExplore({ pushHistory: false });
+            }
+        } else {
+            closeExplore({ updateHistory: false });
+        }
+
         if (params.has('slides')) {
             if (!slidesModal.isOpen()) {
                 await openSlides({ pushHistory: false });
@@ -261,6 +307,11 @@ export function createModalRouter({
             await openHowto({ pushHistory: false });
         }
 
+        if (params.has('explore')) {
+            history.replaceState({ modal: 'explore' }, '', window.location.href);
+            openExplore({ pushHistory: false });
+        }
+
         if (params.has('slides')) {
             history.replaceState({ modal: 'slides' }, '', window.location.href);
             await openSlides({ pushHistory: false });
@@ -275,6 +326,7 @@ export function createModalRouter({
 
     return {
         closeAbout,
+        closeExplore,
         closeHowto,
         closeKnowledge,
         closeSlides,
@@ -284,6 +336,7 @@ export function createModalRouter({
         hydrateFromLocation,
         isSlidesOpen: () => slidesModal.isOpen(),
         openAbout,
+        openExplore,
         openHowto,
         openKnowledge,
         openSlides,

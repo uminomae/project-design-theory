@@ -185,3 +185,97 @@
 .shelf-group__list a:focus-visible {
     border-bottom-color: currentColor;
 }
+
+/* === モジュールの親子（親の下に子を一段下げる・2026-11-26） === */
+.shelf-group__children {
+    list-style: none;
+    margin: 0.35rem 0 0.1rem;
+    padding: 0 0 0 1rem;
+    display: grid;
+    gap: 0.3rem;
+    font-size: 0.88rem;
+    border-left: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+}
+
+/* === 探索ログ（一問一答のカード・残りはモーダル） === */
+.log-card {
+    display: grid;
+    gap: 0.45rem;
+}
+
+.log-card__row {
+    display: grid;
+    grid-template-columns: 4.5rem minmax(0, 1fr);
+    gap: 0.75rem;
+    align-items: baseline;
+}
+
+.log-card__tag {
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    opacity: 0.7;
+}
+
+.log-card .log-card__q {
+    font-size: 1.02rem;
+}
+
+.log-card__page {
+    font-size: 0.8rem;
+    opacity: 0.75;
+    padding-left: calc(4.5rem + 0.75rem);
+}
+
+@media (max-width: 640px) {
+    .log-card__row {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.15rem;
+    }
+    .log-card__page {
+        padding-left: 0;
+    }
+}
+
+.log-more-wrap {
+    margin-top: 1.5rem;
+}
+
+.log-more {
+    font: inherit;
+    font-size: 0.92rem;
+    color: inherit;
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    border-bottom: 1px solid color-mix(in srgb, currentColor 45%, transparent);
+}
+
+.log-more:hover,
+.log-more:focus-visible {
+    border-bottom-color: currentColor;
+}
+
+.explore-modal__list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.explore-modal__list .log-card {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.explore-modal__list .log-card:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.explore-modal__list .log-card .repo-card__desc,
+.explore-modal__list .log-card .repo-card__title {
+    color: var(--ink);
+}
+
+.explore-modal__list .log-card .repo-card__desc {
+    opacity: 0.8;
+}

@@ -19,6 +19,7 @@ export function bindAppEvents({ i18n, menuController, modalRouter, slideViewer }
 
         const modalOpeners = {
             about: () => modalRouter.openAbout(),
+            explore: () => modalRouter.openExplore(),
             howto: () => modalRouter.openHowto(),
             slides: () => modalRouter.openSlides(),
         };
@@ -34,6 +35,7 @@ export function bindAppEvents({ i18n, menuController, modalRouter, slideViewer }
 
         const modalClosers = {
             about: () => modalRouter.closeAbout(),
+            explore: () => modalRouter.closeExplore(),
             knowledge: () => modalRouter.closeKnowledge(),
             howto: () => modalRouter.closeHowto(),
             slides: () => modalRouter.closeSlides(),
