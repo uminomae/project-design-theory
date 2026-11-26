@@ -214,7 +214,7 @@ export const TRANSLATIONS = {
     "section.falling.body":
       "意図してすること（Doing）でも、ただ起きていること（Being）でもなく、Love と呼びたい何かに引かれて、私という場所で起きてしまうこと。恋に落ちる（fall in love）、惚れる、のように、自分からするのでも、させられるのでもない、能動と受動のあいだの、中動の動きです。プロジェクトの駆動源は、ここにあります。",
     "section.direction.body":
-      "本ページで固定した「射程・領域・Doing/Being/Falling の三つ」は基底（土台・骨格）です。以降の各ページは、この骨格の上に展開します。",
+      "本ページで固定した射程と領域、Doing・Being・Falling の三つは、基底（土台・骨格）です。以降の各ページは、この骨格の上に展開します。",
     "repo.loveDrivenDev": "Love駆動開発と呼びたいもの β",
     "repo.loveDrivenDevDesc":
       "何に駆られてプロジェクトを行うのか。人やプロジェクトを動かしているもの（駆動源）が何かを探す読み物",
@@ -313,7 +313,7 @@ export const TRANSLATIONS = {
     "howto.research.desc":
       "このプロジェクトの理論構造や調査手法を、自分のテーマに転用できます。",
     "howto.research.ex1":
-      "「Being×Doingの二軸で、自分のプロジェクトを見直したい」",
+      "「Doing・Being・Falling の三つの基底で、自分のプロジェクトを見直したい」",
     "howto.research.ex2":
       "「30領域の三角測量手法を参考に、○○を多角的に調査して」",
     "howto.research.ex3":
@@ -322,7 +322,7 @@ export const TRANSLATIONS = {
       "「生存と信頼の信号の見方で、チームの関係性を分析したい」",
     "howto.prompt.research.label": "調査向けプロンプト",
     "howto.prompt.research.code":
-      "https://github.com/uminomae/project-design-theory\n\nこのrepoを読んで、中にある理論構造\n（Doing/Being の二軸、創造の5段階モデル、\n生存と信頼の信号、三角測量など）を参考に、\n「○○」というテーマを多角的に分析してください。",
+      "https://github.com/uminomae/project-design-theory\n\nこのrepoを読んで、中にある理論構造\n（Doing/Being/Falling の三つの基底、創造の5段階モデル、\n生存と信頼の信号、三角測量など）を参考に、\n「○○」というテーマを多角的に分析してください。",
     "howto.harness.heading": "B. LLM協働環境を自分のプロジェクトに導入する",
     "howto.harness.desc":
       "CLAUDE.md と docs/rules/（判断の仕方・誤りの型・書き方・調べ方）の設計を参考にできます。",
@@ -348,7 +348,7 @@ export const TRANSLATIONS = {
     "howto.map.colTitle": "ページタイトル",
     "howto.map.colContent": "コンテンツ概要",
     "howto.map.pd":
-      "Doing（やること）と Being（起きていること）を包含するプロジェクトの構想・設計・実行の理論",
+      "Doing（やること）・Being（起きていること）・Falling（引かれて起きてしまうこと）を包含するプロジェクトの構想・設計・実行の理論",
     "howto.map.cs.title": "創造とは",
     "howto.map.cs":
       "物事が生まれるとき、どんな構造と過程をたどるのか。30 の分野の論を並べ、五つの段（場 → 波 → 縁 → 渦 → 束）で書く探究",
@@ -445,7 +445,7 @@ export const TRANSLATIONS = {
     "section.falling.body":
       "Neither what we intend to do (Doing) nor what is simply happening (Being): being drawn by something I want to call Love, so that it happens, with me as the place where it happens. Like falling in love, it is a movement we neither do on our own nor are made to do: the middle voice, between active and passive. What drives projects lies here.",
     "section.direction.body":
-      'The "scope, domain, and the three of Doing/Being/Falling" established on this page is the foundation (base and skeleton). Each subsequent page develops upon this skeleton.',
+      'The scope and domain, and the three of Doing, Being, and Falling, established on this page are the foundation (base and skeleton). Each subsequent page develops upon this skeleton.',
     "repo.loveDrivenDev": "What I Want to Call Love-Driven Development (beta)",
     "repo.loveDrivenDevDesc":
       "What am I driven by when I carry out a project? A reader that looks for what moves people and projects (the driving source)",
@@ -544,7 +544,7 @@ export const TRANSLATIONS = {
     "howto.research.desc":
       "Apply the theoretical structures and research methods in this project to your own topic.",
     "howto.research.ex1":
-      '"I want to review my project through the Being × Doing dual-axis lens"',
+      '"I want to review my project through the three foundations of Doing, Being, and Falling"',
     "howto.research.ex2":
       '"Research ○○ from multiple angles using the 30-domain triangulation method"',
     "howto.research.ex3":
@@ -553,7 +553,7 @@ export const TRANSLATIONS = {
       '"I want to analyze team dynamics through the signals of survival and trust"',
     "howto.prompt.research.label": "Research Prompt",
     "howto.prompt.research.code":
-      "https://github.com/uminomae/project-design-theory\n\nPlease read this repo, and using the\ntheoretical structures within (Doing/Being dual-axis,\nFive-Stage Model of Creation, the signals of\nsurvival and trust, triangulation, etc.), analyze the topic\n\"○○\" from multiple perspectives.",
+      "https://github.com/uminomae/project-design-theory\n\nPlease read this repo, and using the\ntheoretical structures within (the three foundations of Doing/Being/Falling,\nFive-Stage Model of Creation, the signals of\nsurvival and trust, triangulation, etc.), analyze the topic\n\"○○\" from multiple perspectives.",
     "howto.harness.heading": "B. Set Up LLM Collaboration in Your Project",
     "howto.harness.desc":
       "Reference the design of CLAUDE.md and docs/rules/ (how to judge, recurring error types, how to write, how to research).",
@@ -580,7 +580,7 @@ export const TRANSLATIONS = {
     "howto.map.colTitle": "Page Title",
     "howto.map.colContent": "Content Overview",
     "howto.map.pd":
-      "Theory of project envisioning, design, and execution encompassing Doing and Being",
+      "Theory of project envisioning, design, and execution encompassing Doing, Being, and Falling",
     "howto.map.cs.title": "What Is Creation",
     "howto.map.cs":
       "What structure and process does something follow when it comes into being? An exploration that sets theories from 30 fields side by side and writes them in five stages (Field → Wave → Edge → Vortex → Bundle)",
