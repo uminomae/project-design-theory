@@ -621,6 +621,13 @@ PAGES = [
         "flow",
     ),
     (
+        # このサイトについての道案内（pjdhiro 2026-11-26。Menu の Sites から指す）
+        ROOT / "knowledge/research/site-about/READER-about.md",
+        ROOT / "scripts/reader-about-template.html",
+        ROOT / "reader/about.html",
+        "flow",
+    ),
+    (
         # 学問の地図（docs/RELEASE-STAGES.md 3.2 の段 1・pjdhiro 2026-11-26 判断のページ「升目の絵（触れた所を塗る）」）。
         # 数と升目は docs/release-stages/kaken-map.json（scripts/release-maps.py が TSV から作る）から差し込む
         ROOT / "knowledge/research/site-evaluation/READER-kaken-map.md",

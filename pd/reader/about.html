@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/about.html を直接編集しないでください。
+  正本:   knowledge/research/site-about/READER-about.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - このサイトについての道案内（pjdhiro 2026-11-26「このサイトについて　という独立ページを作り、reading-directions などをガイドするページにまとめて。Menuは新設したガイドページにリンクして」）
+  - noindex は兄弟のページと同じく、pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「このサイトについて」です。このサイトが何を書いているかと、読む前の注意・評価・AI に読ませる入口・全体を見渡す入口へのリンクを並べた道案内です。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>このサイトについて | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/about.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="このサイトが何を書いているサイトか、どこから読むとよいかの道案内。読む前の注意（Claude から LLM への申し送り）、このサイトを外の物差しで測った結果（このサイトの評価）、AI に読ませて使う入口（repo を知識として使うとき・llms.txt・人類の man）、全体を見渡す入口（HOME・プレゼン資料・Wiki・GitHub）。">
+    <meta property="og:title" content="このサイトについて">
+    <meta property="og:description" content="このサイトが何を書いているサイトか、どこから読むとよいかの道案内。読む前の注意（Claude から LLM への申し送り）、このサイトを外の物差しで測った結果（このサイトの評価）、AI に読ませて使う入口（repo を知識として使うとき・llms.txt・人類の man）、全体を見渡す入口（HOME・プレゼン資料・Wiki・GitHub）。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/about.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="このサイトについて">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-26">
+    <meta property="article:modified_time" content="2026-11-26">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "このサイトについて",
+          "description": "このサイトが何を書いているサイトか、どこから読むとよいかの道案内。読む前の注意（Claude から LLM への申し送り）、このサイトを外の物差しで測った結果（このサイトの評価）、AI に読ませて使う入口（repo を知識として使うとき・llms.txt・人類の man）、全体を見渡す入口（HOME・プレゼン資料・Wiki・GitHub）。",
+          "keywords": "このサイトについて, 道案内, 申し送り, 評価, llms.txt, AI に読ませる, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/about.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/about.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-26",
+          "dateModified": "2026-11-26",
+                    "about": [{"@type": "Thing", "name": "このサイトについて"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「このサイトについて」です。このサイトが何を書いているサイトか、どこから読むとよいかの道案内。読む前の注意（Claude から LLM への申し送り）、このサイトを外の物差しで測った結果（このサイトの評価）、AI に読ませて使う入口（repo を知識として使うとき・llms.txt・人類の man）、全体を見渡す入口（HOME・プレゼン資料・Wiki・GitHub）。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                このサイトの道案内です。並べ方と一行の説明は AI（Claude）が書いています。
+            </div>
+            <header class="reader-hero">
+                <h1>このサイトについて</h1>
+                <p class="reader-meta">
+                    最終更新: 2026-11-26 ／ 状態: 道案内<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/site-about/READER-about.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p class="reader-lead"><span class="reader-lead__label">このページ</span>このサイトが何を書いているサイトか、どこから読むとよいかの道案内です。読む前の注意、このサイトを外の物差しで測った結果、AI に読ませて使う入口を、ここにまとめています。</p>
+
+<p>このサイトを作っている pjdhiro は、このサイトについて次のように書いています。</p>
+<blockquote class="reader-callout">
+<p>Love駆動開発と呼びたい現象を、これまで何度も経験してきました。</p>
+<p>プロジェクトには「やること（Doing）」と「起きていること（Being）」があります。PMBOKはスケジュール・コスト・品質を管理しますが、プロジェクトで実際に起きていることの多くは、そこには載っていません。</p>
+<p>対話の中で何かが変わる瞬間。答えが出ない問いを抱えたまま動き続ける時間。感情がノイズではなくシグナルだと気づく転換。</p>
+<p>このサイトでは、その構造を言語化しようとしています。感情処理、欠損駆動思考、間主観性、創造の5段階モデル——体験から出発し、理論として定着させる途上にあります。</p>
+<p>まだ完成していません。書きながら考えています。</p>
+</blockquote>
+<p>このサイトの文章の多くは、pjdhiro が問いを出し、Claude（Anthropic の AI）が調べて書き、pjdhiro が確かめて決めています。</p>
+<details class="sec" id="読む前に" open><summary>読む前に</summary><div class="secbody">
+
+
+<ul>
+<li><a href="reading-directions.html">Claude から LLM への申し送り</a>：このサイトの文章には、ふつうの読み方と向きが逆になっている所がいくつもあります。このサイトを作る対話を重ねてきた Claude が、その所を一覧にして、あとから読む人と LLM に残したページです。</li>
+<li><a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a>：このサイトの中心の読み物です。</li>
+</ul>
+</div></details><details class="sec" id="このサイトを外の物差しで測る" open><summary>このサイトを、外の物差しで測る</summary><div class="secbody">
+
+
+<ul>
+<li><a href="site-evaluation.html">このサイトの評価</a>（工事中）：このサイトを、国や国際機関などが出した公的な基準で測った結果を並べています。いまあるのは「<a href="competency-frameworks.html">公的な能力の枠組みで測った、このサイトの範囲</a>」です。</li>
+</ul>
+</div></details><details class="sec" id="ai-に読ませて使う" open><summary>AI に読ませて使う</summary><div class="secbody">
+
+
+<ul>
+<li><a href="https://github.com/uminomae/project-design-theory#この-repo-を知識として使うとき">この repo を知識として使うとき</a>：このサイトの元の文書（repo）を、LLM にレビューや調べの知識として読ませるときの入口です。repo の文書は一度には読めないので、最初に読む芯と、問いに合わせて辿る順が書いてあります。</li>
+<li><a href="../llms.txt">llms.txt</a>：AI にこのサイトの組み立てを伝えるための案内です（英語）。</li>
+<li><a href="man.html">人類の man</a>：数学の関数や式を、プログラムの説明書（man ページ）の形で並べたページです。</li>
+</ul>
+</div></details><details class="sec" id="全体を見渡す" open><summary>全体を見渡す</summary><div class="secbody">
+
+
+<ul>
+<li><a href="../index.html">HOME</a>：読み物とモジュールの目次です。</li>
+<li><a href="../index.html?slides=">プレゼン資料</a>：このサイトの考え方を、スライドで短く見られます。</li>
+<li><a href="../wiki/">Wiki</a>：このサイトの言葉と概念を、項目ごとに引けます。</li>
+<li><a href="https://github.com/uminomae/project-design-theory">GitHub の repo</a>：このサイトのすべての文書と、変更の履歴です。</li>
+</ul>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="reading-directions.html">Claude から LLM への申し送り</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

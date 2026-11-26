@@ -14,10 +14,10 @@
 | うち読み物のページだけ・cs だけ・両方 | 10・50・29 |
 | 中区分 | 触れている 40 / 66 |
 | 大区分 | 触れている 13 / 13（触れていない：なし） |
-| 読み物のページ | 95（区分に当てた 81・当てない 14） |
+| 読み物のページ | 96（区分に当てた 81・当てない 15） |
 | cs の分野 | 30（どれも一つ以上の区分に当てた） |
 
-区分に当てないページ：abilities・competency-frameworks・complex-plane・kaken-map・kokoro-scale-map・love-trajectory・man・shelf-love・shelf-mind・shelf-number・shelf-org・shelf-self・shelf-translations・site-evaluation。並びや目次のページ（中身は呼ぶ先のページの側）と、このサイトを測った結果のページと、pjdhiro の一年の記録（love-trajectory）。
+区分に当てないページ：about・abilities・competency-frameworks・complex-plane・kaken-map・kokoro-scale-map・love-trajectory・man・shelf-love・shelf-mind・shelf-number・shelf-org・shelf-self・shelf-translations・site-evaluation。並びや目次のページ（中身は呼ぶ先のページの側）と、このサイトを測った結果のページと、pjdhiro の一年の記録（love-trajectory）。
 
 区分の中に場所が無いもの：Love駆動開発そのもの（経営学・臨床心理学・仏教学に触れるが、どれかの区分の研究ではない）、cs の D30 の伝統知そのもの（TEK・メーティスなどの論は区分に入る）。
 

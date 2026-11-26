@@ -2,6 +2,7 @@
 # 列：種類（page＝pd/reader の一ページ・shelf＝並びや目次で、中身は呼ぶ先のページの側・cs＝創造とはの分野）・ID（ファイル名か分野の番号）・小区分（空白で区切る。無ければ -）・根拠（読んだもの）・メモ
 # 当て方：ページは <title> と meta description と見出しを、cs は cs/evidence/evidence-Dxx-*.md の「論ごとの節」の見出し（論の名と著者）を読んで、その論が、区分表の「内容の例」のどこに入るかで当てた。主に扱う区分だけを置き、一文触れるだけの区分は入れない。
 # 別のコンテキストで照合し直す前の下書き（RELEASE-STAGES.md §1）。
+page	about	-	reader/about.html	このサイトについての道案内（中身は呼ぶ先のページの側）
 page	abilities	-	reader/abilities.html	並びのページ（能力のジャンルの入口）
 page	angle-rotation	11020 12010 09040	reader/angle-rotation.html	角度・三角関数・学校の数学の順
 page	anshin	01020 01040 10010	reader/anshin.html	達磨安心・語の来歴・山岸の安心と信頼
