@@ -1,7 +1,7 @@
 {
  "counts": {
-  "pages": 100,
-  "mapped_pages": 85,
+  "pages": 101,
+  "mapped_pages": 86,
   "cs": 30,
   "sho": 295,
   "touched": 90,
@@ -644,7 +644,8 @@
         "personality",
         "soft-skills",
         "stages-defense",
-        "stages-screener"
+        "stages-screener",
+        "thinking-dispositions"
        ],
        "cs": [
         "D23"
@@ -680,6 +681,7 @@
         "cognitive-abilities",
         "decision-making",
         "thinking-definitions",
+        "thinking-dispositions",
         "inseparable-abilities"
        ],
        "cs": [
@@ -2103,6 +2105,7 @@
        "id": "51010",
        "name": "脳科学一般",
        "pages": [
+        "thinking-dispositions",
         "via-vulnerability"
        ],
        "cs": [
@@ -2816,6 +2819,7 @@
   "subtraction-kinds": "いろんな引き算",
   "thinking": "思考とは",
   "thinking-definitions": "「考える」の語は、何を指してきたか",
+  "thinking-dispositions": "思考を動かす構えと体力",
   "thomson-heat-ja": "トムソン「熱」（『ブリタニカ百科事典』第 9 版・1880）を、日本語で読む",
   "three-and-seven": "なぜ 3 と 7 だけが特別なのか — 可除代数‑意識/組織仮説（読み物）",
   "to-james": "ジェームズに辿り着くまで",
