@@ -1,15 +1,15 @@
 {
  "counts": {
-  "pages": 98,
-  "mapped_pages": 83,
+  "pages": 100,
+  "mapped_pages": 85,
   "cs": 30,
   "sho": 295,
-  "touched": 89,
-  "page_only": 10,
+  "touched": 90,
+  "page_only": 11,
   "cs_only": 50,
   "both": 29,
   "chu": 66,
-  "chu_touched": 40,
+  "chu_touched": 41,
   "dai": 13,
   "dai_touched": 13,
   "unmapped_n": 15
@@ -40,7 +40,8 @@
         "reasoning",
         "thinking",
         "thinking-definitions",
-        "william-james-self-ja"
+        "william-james-self-ja",
+        "inseparable-abilities"
        ],
        "cs": [
         "D13"
@@ -460,7 +461,8 @@
         "nonaka-complement",
         "psychological-safety",
         "psychological-safety-en",
-        "three-and-seven"
+        "three-and-seven",
+        "inseparable-abilities"
        ],
        "cs": [
         "D07",
@@ -673,10 +675,12 @@
        "id": "10040",
        "name": "実験心理学",
        "pages": [
+        "analogy",
         "breath-filter",
         "cognitive-abilities",
         "decision-making",
-        "thinking-definitions"
+        "thinking-definitions",
+        "inseparable-abilities"
        ],
        "cs": [
         "D14",
@@ -687,6 +691,7 @@
        "id": "80030",
        "name": "認知科学",
        "pages": [
+        "analogy",
         "creative-thinking",
         "empathy",
         "fundamental-theorem-of-algebra-analogy",
@@ -2443,7 +2448,9 @@
       {
        "id": "59030",
        "name": "体育および身体教育学",
-       "pages": [],
+       "pages": [
+        "inseparable-abilities"
+       ],
        "cs": []
       },
       {
@@ -2551,6 +2558,7 @@
        "id": "80030",
        "name": "認知科学",
        "pages": [
+        "analogy",
         "creative-thinking",
         "empathy",
         "fundamental-theorem-of-algebra-analogy",
@@ -2732,6 +2740,7 @@
   }
  ],
  "pages": {
+  "analogy": "類推と、構造の類似を見抜く力",
   "angle-rotation": "三角関数から複素平面まで、回転を扱うための角度の話だった",
   "anshin": "安心とは",
   "anxiety": "不安とは",
@@ -2814,7 +2823,8 @@
   "vibe-to-code": "Vibe to Code と並べて見る、pjdhiro のやり方",
   "weismann-significance-of-sexual-reproduction-ja": "ヴァイスマン「自然選択の理論における有性生殖の意味」（1886）を、日本語で読む",
   "william-james-self-ja": "ウィリアム・ジェームズの「I と Me」を、原典で読む",
-  "zen-circle-hs": "禅の円を、高校の数学で読む"
+  "zen-circle-hs": "禅の円を、高校の数学で読む",
+  "inseparable-abilities": "思考・心理・身体知が分けられないところ"
  },
  "cs": {
   "D01": "数学",

@@ -653,6 +653,24 @@ body.reader-flow a.jump-hit { animation: jump-hit 2.4s ease-out; border-radius: 
     body.reader-flow .reader-article .tablefit.cf-stack td:nth-child(5)::before { content: "注"; }
 }
 
+/* 三列の面の表（inseparable-abilities）：狭い幅では一行を一枚に積み、二列目からは列の名を頭に出す（cf-stack と同じ形・2026-11-26） */
+@media (max-width: 600px) {
+    body.reader-flow .reader-article .tablefit.ia-stack thead { display: none; }
+    body.reader-flow .reader-article .tablefit.ia-stack table,
+    body.reader-flow .reader-article .tablefit.ia-stack tbody,
+    body.reader-flow .reader-article .tablefit.ia-stack tr,
+    body.reader-flow .reader-article .tablefit.ia-stack td { display: block; width: auto; }
+    body.reader-flow .reader-article .tablefit.ia-stack tr { border-bottom: 1px solid var(--glass-border-soft); padding: 10px 12px; }
+    body.reader-flow .reader-article .tablefit.ia-stack tbody tr:last-child { border-bottom: none; }
+    body.reader-flow .reader-article .tablefit.ia-stack td { border-bottom: none; padding: 2px 0; }
+    body.reader-flow .reader-article .tablefit.ia-stack td:first-child { width: auto; font-weight: 500; }
+    body.reader-flow .reader-article .tablefit.ia-stack td:nth-child(n+2)::before {
+        display: block; font-size: 0.72rem; color: var(--navy); opacity: 0.7;
+    }
+    body.reader-flow .reader-article .tablefit.ia-stack td:nth-child(2)::before { content: "論"; }
+    body.reader-flow .reader-article .tablefit.ia-stack td:nth-child(3)::before { content: "頭の働きと、何がつながっているか"; }
+}
+
 /* 升目の絵（kaken-map・kokoro-scale-map。生成は scripts/release_map_markup.py、押したときは src/reader-release-map.js・2026-11-26）
    塗りは三つ：読み物のページ（navy）・創造とはの記録（gold）・両方（斜めに二色）。空きは枠だけ */
 body.reader-flow .rmap { margin: 1rem 0 1.5rem; }
