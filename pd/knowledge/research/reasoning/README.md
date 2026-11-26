@@ -4,7 +4,7 @@
 
 ## 答える問い
 
-演繹・帰納・アブダクション（仮説）・類推は、どういう関係に置かれてきたか（#206 の M2）。返すもの：推論の形の分類と、それぞれの限界。類推に独立の席が無いように見えることを含む。
+推論は、いくつの種類に数えられてきたか。その中で、演繹・帰納・アブダクション（仮説）・類推は、どういう関係に置かれてきたか（#206 の M2。数え方の問いは 2026-11-26 に足した）。返すもの：推論の形の分類と、それぞれの限界。類推に独立の席が無いように見えることを含む。
 
 ## pjdhiro の言葉（出どころ）
 
@@ -22,6 +22,24 @@
 | ミル『論理学体系』（初版 1843） | 第 8 版、Harper & Brothers（New York, 1874）、米国議会図書館の走査 [Internet Archive `systemoflogicrat01mill`](https://archive.org/details/systemoflogicrat01mill) | 本文照合済（OCR の文字で読んだ）。第 2 巻 第 3 章 §2・§4 pp.140–146・第 3 巻 第 20 章 §§1–3 pp.393–397 | 三段論法は論点先取（petitio principii）か、という批判を「irrefragable」と認め（p.140）、「All inference is from particulars to particulars」、一般の命題はすでにした推論の記録にすぎない、と置く（p.146）。類推は「some kind of argument supposed to be of an inductive nature, but not amounting to a complete induction」で、これほど緩く使われる語は無い（p.393）。もとの数学の意味は関係の類似（Resemblance of Relations）。類推の型は「Two things resemble each other in one or more respects; a certain proposition is true of the one; therefore it is true of the other」だが、これでは帰納と見分けられない（pp.393–394）。強さは、確かめた似ている所・違う所・まだ調べていない広さの比べで決まる（p.396）。研究者は類推を「a mere guide-post」とし、どれほど薄い類推も、実験や観察を思いつかせる点で値打ちを持つ（pp.396–397） |
 | パース「演繹、帰納、仮説」（1878） | *Popular Science Monthly* 13, pp.470–482、[Wikisource](https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_13/August_1878/Illustrations_of_the_Logic_of_Science_VI) | 本文照合済（このセッションでは Wikisource の文字を読み直した。豆の袋の三つの形は `peirce-love-abduction/README.md` の行で照合済） | 推論を「Deductive or Analytic」と「Synthetic」に分け、総合を帰納と仮説に分ける。「The analogy of hypothesis with induction is so strong that some logicians have confounded them. Hypothesis has been called an induction of characters.」 |
 | パース「蓋然的推論の理論」（1883） | *Studies in Logic by Members of the Johns Hopkins University*（Boston: Little, Brown, 1883）pp.126–181、Toronto 大学の走査 [Internet Archive `studiesinlogic00peiruoft`](https://archive.org/details/studiesinlogic00peiruoft) | 本文照合済（OCR の文字で読んだ）。pp.143・158–160 | 蓋然的な推論を演繹と拡張的（ampliative）に分け、拡張的を帰納と仮説に分ける。帰納で無作為に引くのは数えられるもの、仮説で引くのは性質で「not capable of strict enumeration」（p.143）。「reasoning from analogy」では、引く集まりが小さく、同じ事例を二度引かない（pp.158–159。惑星の自転の例）。類推の式は三つの前提を持ち、「We have evidently here an induction and an hypothesis followed by a deduction」（p.160）。事例を足していくと、集まりを使い尽くして拡張の性格を失い、完全帰納という演繹になる（p.160） |
+
+## 推論は、いくつに数えられてきたか（2026-11-26 に足した調べ）
+
+付箋 i202611260415052jq（pjdhiro「推論の種類が４種類かどうかをまず探索すべきじゃないかな？」）を受けて、四つという数え方を前提にせず、数え方そのものを原典で照らした。結論：数は二つ・三つ・四つと分かれ、四つは定説でなく、このページの並べ方。
+
+| 原典 | 確かめ先 | 状態 | 読んだ所と鍵の文 |
+|---|---|---|---|
+| アリストテレス『トピカ』（Pickard-Cambridge 訳） | MIT The Internet Classics Archive の全文 [`topics.mb.txt`](http://classics.mit.edu/Aristotle/topics.mb.txt) | 本文照合済（訳）。第 1 巻 第 12 章 | 「we must distinguish how many species there are of dialectical arguments. There is on the one hand Induction, on the other Reasoning.」帰納は「a passage from individuals to universals」 |
+| アリストテレス『分析論前書』（Jenkinson 訳） | 同じ [`prior.mb.txt`](http://classics.mit.edu/Aristotle/prior.mb.txt) | 本文照合済（訳）。第 2 巻 第 23–27 章 | II.23「For every belief comes either through syllogism or from induction.」II.25 還元（reduction＝アパゴーゲー）、II.26 反論、II.27 エンテューメーマ（probabilities or signs からの推論） |
+| アリストテレス『弁論術』（Rhys Roberts 訳） | 同じ [`rhetoric.mb.txt`](http://classics.mit.edu/Aristotle/rhetoric.mb.txt) | 本文照合済（訳）。第 1 巻 第 2 章 | 「I call the enthymeme a rhetorical syllogism, and the example a rhetorical induction. Every one who effects persuasion through proof does in fact use either enthymemes or examples: there is no other way.」 |
+| カント『論理学』（イェッシェ編、1800） | アカデミー版 第 9 巻、Duisburg-Essen 大学の Kant im Korpus [p.114](https://korpora.org/kant/aa09/114.html)・[p.115](https://korpora.org/kant/aa09/115.html)・[p.120](https://korpora.org/kant/aa09/120.html)・[pp.131](https://korpora.org/kant/aa09/131.html)–[133](https://korpora.org/kant/aa09/133.html) | 本文照合済。§§41–44・§56・§§81–84 | §42「Alle Schlüsse sind entweder unmittelbare oder mittelbare.」§43 直接の推理＝Verstandesschlüsse、間接は「entweder Vernunftschlüsse oder Schlüsse der Urtheilskraft」。§84 見出し「Induction und Analogie - die beiden Schlußarten der Urtheilskraft.」注 1：帰納「Eines in Vielen, also in Allen」、類推「Vieles in Einem (was auch in Andern ist), also auch das Übrige in demselben」。注 2「Induction und Analogie sind daher keine Vernunftschlüsse, sondern nur logische Präsumtionen」。注 3 経験の知識を広げるのに「nützlich und unentbehrlich」 |
+| Shanahan「Deductive and Inductive Arguments」『インターネット哲学百科事典』 | [iep.utm.edu](https://iep.utm.edu/deductive-inductive-arguments/) | 本文照合済（事典の項目） | 二つの区別は「usually presented as straightforward, such as in many introductory philosophy textbooks」。「Govier (1987) calls the view that there are only two kinds of argument (that is, deductive and inductive) "the positivist theory of argument"」（ゴヴィアは二次経由） |
+| Douven「Abduction」『スタンフォード哲学百科事典』（2011 初出・2025-06-18 改訂） | [plato.stanford.edu](https://plato.stanford.edu/entries/abduction/) | 本文照合済（事典の項目）。§1 | 「Abduction is normally thought of as being one of three major types of inference, the other two being deduction and induction.」帰納とアブダクションは「both are ampliative」、違いは説明への訴え |
+| CHC（McGrew 2009 ほか） | `cognitive-abilities/README.md` の行（本文照合済） | 写さずリンク | Gf の狭い能力 RG・I・RQ・RP・RE。仮説・類推の名の能力は無い |
+
+照らさずに残したもの：Gentner (1983) "Structure-Mapping: A Theoretical Framework for Analogy", *Cognitive Science* 7(2), 155–170, DOI 10.1207/s15516709cog0702_3 は、OpenAlex で OA（bronze）と出たが、置き場が確認画面を返し、Wayback に PDF の写しも無い。未照合（確認画面）。類推を独立の過程として扱う認知科学の側は、M7「類推と、構造の類似を見抜く力」で読める原典を探す。ほかに、ニヤーヤ学派の比定（upamāna）のように、推論と別の知る手立てとして類似を数える伝統もあるが、今回は照らしていない。OpenStax *Introduction to Philosophy* 5.2 は、JavaScript の要る頁で文字を取れず、照らしていない。
+
+並べ方：数え方の表の「何で分けたか」の列と、数が分かれるのは数える単位が違うから、という読みは Claude がした。四つの形の表は、問いの三つに類推を足したこのページの並べ方で、どの論者の数え方でもない、とページに書いた。
 
 ### 照らさなかったもの（読み物には載せない）
 
