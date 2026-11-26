@@ -62,7 +62,7 @@
 
 <details><summary>出典</summary>
 
-出典：Carpenter, P. A., Just, M. A., & Shell, P. ([1990](https://doi.org/10.1037/0033-295X.97.3.404)) What one intelligence test measures: A theoretical account of the processing in the Raven Progressive Matrices Test. *Psychological Review* 97(3), 404–431（同じ題の技術報告 ONR90-1〔Carnegie Mellon 大学・1990-04-03・公開の許し付き〕を、米国国防技術情報センター〔DTIC〕に置かれた版の [Wayback の記録](https://web.archive.org/web/20210408070750/https://apps.dtic.mil/sti/pdfs/ADA221448.pdf)で本文照合済。頁は報告の頁。流動性知能と結晶性知能の紹介は p.2、「visual analogy problems」は表紙の要旨、測っているものの結論は p.33）。Gf と Gc の今の定義は、次の章の McGrew (2009) の表 1（p.5）。キャッテルの 1963 年の論文そのものは、無料で読める写しが見つからず、読んでいません。
+出典：Carpenter, P. A., Just, M. A., & Shell, P. ([1990](https://doi.org/10.1037/0033-295X.97.3.404)) What one intelligence test measures: A theoretical account of the processing in the Raven Progressive Matrices Test. *Psychological Review* 97(3), 404–431（同じ題の技術報告 ONR90-1〔Carnegie Mellon 大学・1990-04-03・公開の許し付き〕を、米国国防技術情報センター〔DTIC〕に置かれた版の [Wayback の記録](https://web.archive.org/web/20210408070750/https://apps.dtic.mil/sti/pdfs/ADA221448.pdf)で本文照合済。頁は報告の頁。流動性知能と結晶性知能の紹介は p.2、「visual analogy problems」は表紙の要旨、測っているものの結論は p.33）。Gf と Gc の今の定義は、次の章の McGrew (2009) の表 1（p.5）。キャッテルの 1963 年の論文そのものは、出版社の有料の版のほかに、無料で読める版が見つからず、読んでいません。
 
 </details>
 
@@ -70,7 +70,7 @@
 
 <!--OPEN-->
 
-<a id="ca-chc"></a>キャッテルとホーンの二つの知能の論と、キャロルが 1993 年に、それまでの知能の因子の研究を集めて組み直した論は、いまは CHC（三人の頭文字）という一つの傘の名で呼ばれています。心理学者のマグルーは 2009 年に、この二つが、人の知能の組み立てを理解するための、心理測定にもとづく合意の模型になった、と書きました。
+<a id="ca-chc"></a>キャッテルとホーンの二つの知能の論と、キャロルが 1993 年の本で、それまでの因子分析の研究の 460 を超えるデータを分析し直して組んだ論は、いまは CHC（三人の頭文字）という一つの傘の名で呼ばれています。心理学者のマグルーは 2009 年に、この二つが、人の知能の組み立てを理解するための、心理測定にもとづく合意の模型になった、と書きました。
 
 CHC の整理では、能力を三つの層で並べます。一番下の第一層に、それぞれの検査が測る狭い能力を、その上の第二層に、狭い能力を束ねる広い能力（流動性知能 Gf・結晶性知能 Gc・視覚の処理・聴覚の処理・記憶の能力 など）を、一番上の第三層に一般の能力 g を置きます。マグルーは、キャロルとキャッテル・ホーンの違いの一つ目に、この第三層に g を置くか置かないかを挙げています。ホーンは g に強く反対し、統計から出てくる抽象と見ていました。
 
@@ -108,7 +108,7 @@ CHC の表で、創造性の研究に関わるとされているのは、長期�
 
 <details><summary>出典</summary>
 
-出典：McGrew, K. S. ([2009](https://doi.org/10.1016/j.intell.2008.08.004)) CHC theory and the human cognitive abilities project: Standing on the shoulders of the giants of psychometric intelligence research. *Intelligence* 37(1), 1–10（著者の研究所のサイトに置かれた出版社の版の [Wayback の記録](https://web.archive.org/web/20120423142925/http://www.iapsych.com/articles/mcgrew2009.pdf)で本文照合済。合意の模型は p.1 の要旨、第三層の g の有無は p.3、Gf・Gc・Glr の定義と狭い能力の名は表 1〔pp.5–6〕、創造性の研究の一文は p.6）。McGrew, K. S. CHC broad and narrow cognitive ability definitions（作業稿「3rd draft; 3-11-09」。著者の研究所のサイトの写しの [Wayback の記録](https://web.archive.org/web/20171215033954/http://www.iapsych.com:80/articles/chcdefs031109.pdf)で本文照合済。I・RG・RQ は p.1、FI・FO・SP は pp.5–6）。McGrew, K. S. ([2023](https://doi.org/10.3390/jintelligence11020032)) Carroll's three-stratum (3S) cognitive ability theory at 30 years. *Journal of Intelligence* 11(2), 32（CC BY 4.0。[PMC の全文](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9959556/)で本文照合済。Gl と Gr の分割と、着想を出す力と創造性の課題は §2、ホーンと g・「CHC theories」は §2.3、帰納の課題と言葉の類推の課題の負荷は §3.2）。キャロルの 1993 年の本は、無料で読める版が見つからず、読んでいません。
+出典：McGrew, K. S. ([2009](https://doi.org/10.1016/j.intell.2008.08.004)) CHC theory and the human cognitive abilities project: Standing on the shoulders of the giants of psychometric intelligence research. *Intelligence* 37(1), 1–10（著者の研究所のサイトに置かれた出版社の版の [Wayback の記録](https://web.archive.org/web/20120423142925/http://www.iapsych.com/articles/mcgrew2009.pdf)で本文照合済。合意の模型は p.1 の要旨、第三層の g の有無は p.3、Gf・Gc・Glr の定義と狭い能力の名は表 1〔pp.5–6〕、創造性の研究の一文は p.6）。McGrew, K. S. CHC broad and narrow cognitive ability definitions（作業稿「3rd draft; 3-11-09」。著者の研究所のサイトの写しの [Wayback の記録](https://web.archive.org/web/20171215033954/http://www.iapsych.com:80/articles/chcdefs031109.pdf)で本文照合済。I・RG・RQ は p.1、FI・FO・SP は pp.5–6）。McGrew, K. S. ([2023](https://doi.org/10.3390/jintelligence11020032)) Carroll's three-stratum (3S) cognitive ability theory at 30 years. *Journal of Intelligence* 11(2), 32（CC BY 4.0。[PMC の全文](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9959556/)で本文照合済。Gl と Gr の分割と、着想を出す力と創造性の課題は §2、ホーンと g・「CHC theories」は §2.3、帰納の課題と言葉の類推の課題の負荷は §3.2）。Carroll, J. B. ([1993](https://doi.org/10.1017/CBO9780511571312)) *Human cognitive abilities: A survey of factor-analytic studies*. Cambridge University Press（出版社が無料で置いた前付け〔目次と序文〕の [PDF](https://assets.cambridge.org/97805213/82755/frontmatter/9780521382755_frontmatter.pdf)で本文照合済。460 を超えるデータの分析し直しと、探索的な因子分析を使ったことは序文 p.vi、g を含む高次の因子が第 15 章で、三つの層の論が第 16 章で出されることは序文 p.v と目次。第 16 章の本文は無料で読める版が見つからず、三つの層の中身はマグルーの論文で書きました）。
 
 </details>
 
@@ -196,4 +196,4 @@ CHC の表で、創造性の研究に関わるとされているのは、長期�
 
 ## このページの作り方
 
-<a id="ca-method"></a>このページは、pjdhiro の問いに、Claude が原典を読んで書いたものです。原典の写しは、著者・大学・公的機関・出版社が置いたものか、その Wayback の記録を探し、引いた文は本文で一字ずつ確かめました。英文の訳は、どれも Claude です。章の並べ方（測られて残った整理・知能検査の外の筋・残らなかった分け方・測られていない所）と、CHC の推論の能力を推論の形に当てた表の右の列は、Claude がしたものです。キャッテルの 1963 年の論文とキャロルの 1993 年の本は、無料で読める版が見つからず、どちらも、それを紹介した文献の本文で書きました。
+<a id="ca-method"></a>このページは、pjdhiro の問いに、Claude が原典を読んで書いたものです。原典の写しは、著者・大学・公的機関・出版社が置いたものか、その Wayback の記録を探し、引いた文は本文で一字ずつ確かめました。英文の訳は、どれも Claude です。章の並べ方（測られて残った整理・知能検査の外の筋・残らなかった分け方・測られていない所）と、CHC の推論の能力を推論の形に当てた表の右の列は、Claude がしたものです。キャッテルの 1963 年の論文は、無料で読める版が見つからず、それを紹介した文献の本文で書きました。キャロルの 1993 年の本は、出版社が無料で置いた目次と序文だけを読み、三つの層の中身は、それを紹介した文献の本文で書きました。

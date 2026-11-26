@@ -59,7 +59,7 @@
 | Cattell (1963) Theory of fluid and crystallized intelligence. *J Educ Psychol* 54, 1–22. DOI 10.1037/h0046743 | 未照合（有料） | 無料の写しが見つからない。Gf と Gc は、Carpenter ら 1990 の報告と McGrew 2009 の表 1 の本文で書いた |
 | Horn & Cattell (1966)・(1967)・Cattell (1943) | 未照合（有料） | 同じ |
 | Horn & Bramble (1967) *J Educ Psychol* 58(2), 115–122 | 未照合（上げた人の分からない写しで読んだ）。McGrew の研究所のサイトに置かれた誌面の走査で、権利は未確認 | 「知能と呼ばれるものは一つでなく二つ」（p.115）。載せない |
-| Carroll (1993) *Human Cognitive Abilities* | 未照合（書籍） | Internet Archive は貸し出しだけ。三層の言い方は McGrew 2009 の本文（Stratum I・II・III）で書いた |
+| Carroll (1993) *Human Cognitive Abilities: A survey of factor-analytic studies*. Cambridge University Press. DOI 10.1017/CBO9780511571312 | 前付け（目次と序文）だけ本文照合済：出版社が無料で置いた [frontmatter の PDF](https://assets.cambridge.org/97805213/82755/frontmatter/9780521382755_frontmatter.pdf)（8 頁・2026-11-26 に取得）。本文（第 16 章ほか）は未照合（書籍・有料） | 序文 p.vi「it contains reanalyses of more than 460 data sets found in the factor-analytic literature」・探索的な因子分析を選んだこと。序文 p.v「ending with Chapter 15 on higher-order factors of ability, including g or general intelligence」「In Chapter 16 I propose a three-stratum theory of cognitive abilities」。目次：第 15 章 p.577、第 16 章 p.631。Internet Archive（humancognitiveab0000carr）は貸し出しだけ。三層の中身（Stratum I・II・III）は McGrew 2009 の本文で書いた |
 | Carroll (2003) The higher-stratum structure of cognitive abilities（著者稿） | 未照合（上げた人の分からない写しで読んだ） | 三層を本人が述べた稿（狭い能力 50〜60 以上・広い能力 8〜10 ほど・g）。McGrew の研究所のサイトに置かれ、権利は未確認。数は載せない |
 | Schneider & McGrew (2012) の章 | 未照合（原典が特定できない） | 置き場の PDF が画像だけで、題も目で確かめていない |
 | Gardner (1983) *Frames of Mind*・Gardner & Hatch (1989)・Gardner (2020)・Visser ら (2006) | 未照合（書籍と有料） | 本人の定義と基準は、著者のサイトの文書で書いた |
@@ -94,6 +94,6 @@ Claude の読み（読み物では「このページの読み」として書い�
 
 ## 残したこと
 
-- Cattell 1963 と Carroll 1993 の本文は、無料の写しが見つからず読めていない。読めたら、Gf/Gc と三つの層の段の出典を原典へ移す。
+- Cattell 1963 と Carroll 1993 の本文は、無料の写しが見つからず読めていない。2026-11-26 に引き直した：Cattell 1963 は Crossref・OpenAlex・Semantic Scholar・Internet Archive（`--ia`）・大学のサイトの検索で、出版社の有料の版のほかに無い（キャッテル自身の本 1971・1987 は Internet Archive で貸し出しだけ。Scribd と個人のサイトの写しは、上げた人と権利が分からないので使わない）。Carroll 1993 は出版社の前付け（目次と序文）だけ読め、CHC の段の「460 を超えるデータを分析し直して組んだ」をそれへ移した。どちらも有料の壁で止まるので、ブラウザでの保存は頼まない（sources §5-2・§5-6）。三つの層の中身と Gf/Gc の定義は、紹介した文献の本文のまま。
 - Schneider & McGrew 2018 の章の無料の写しは探していない。CHC の狭い能力の今の定義は、2009 の作業稿で書いた。
 - 行列課題と類推課題が Gf のどの狭い能力に当たるかを、CHC の本文で結びつける文は見つからなかった（帰納 I が Gf の芯、レーヴンは視覚の類推の問題、言葉の類推は Gf に弱い、までは書けた）。M7 の調べで続ける。
