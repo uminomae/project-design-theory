@@ -14,7 +14,7 @@
 | うち読み物のページだけ・cs だけ・両方 | 11・50・29 |
 | 中区分 | 触れている 41 / 66 |
 | 大区分 | 触れている 13 / 13（触れていない：なし） |
-| 読み物のページ | 100（区分に当てた 85・当てない 15） |
+| 読み物のページ | 101（区分に当てた 86・当てない 15） |
 | cs の分野 | 30（どれも一つ以上の区分に当てた） |
 
 区分に当てないページ：about・abilities・competency-frameworks・complex-plane・kaken-map・kokoro-scale-map・love-trajectory・man・shelf-love・shelf-mind・shelf-number・shelf-org・shelf-self・shelf-translations・site-evaluation。並びや目次のページ（中身は呼ぶ先のページの側）と、このサイトを測った結果のページと、pjdhiro の一年の記録（love-trajectory）。
@@ -38,7 +38,7 @@
 | 7 経済学、経営学およびその関連分野 | 4 / 10 | ○ 70040 観光学<br>● 07010 理論経済学および経済学史（mandeville-grumbling-hive-ja・newcomb-political-economy-ja・D21）<br>○ 07020 経済政策<br>● 07030 公共経済および労働経済（capacity-after-ai・emerging-abilities・soft-skills）<br>● 07040 金融およびファイナンス（D21）<br>○ 07050 経済史<br>● 07060 経営学（business-design-syllabus・decision-making・influences-management・interpersonal-abilities・julia-potential・love-driven-dev・love-driven-dev-en・management-drivers・mintzberg-schools・nonaka-complement・psychological-safety・psychological-safety-en・three-and-seven・D07・D22・inseparable-abilities）<br>○ 07070 商学<br>○ 07080 会計学<br>○ 07090 経済統計および経営情報 |
 | 8 社会学およびその関連分野 | 1 / 5 | ○ 70040 観光学<br>○ 70050 ジェンダー<br>● 08010 社会学（quetelet-lettres-probabilites-ja・D18）<br>○ 08020 社会福祉学<br>○ 08030 家政学および生活科学 |
 | 9 教育学およびその関連分野 | 4 / 10 | ○ 70010 日本語教育<br>○ 70020 外国語教育<br>● 09010 教育学（creative-thinking・emerging-abilities・D13）<br>○ 09020 教育社会学<br>● 09030 子ども学および保育学（D23）<br>● 09040 教科教育学および初等中等教育学（angle-rotation・rotation-multiplication・zen-circle-hs）<br>● 09050 高等教育学（business-design-syllabus）<br>○ 09060 特別支援教育<br>○ 09070 教育工学<br>○ 09080 科学教育 |
-| 10 心理学およびその関連分野 | 5 / 5 | ● 10010 社会心理学（anshin・empathy・interpersonal-abilities・intrinsic-motivation・psychological-safety・psychological-safety-en・D14・D22）<br>● 10020 教育心理学（capacity-after-ai・cognitive-abilities・creative-thinking・developmental-stages・emerging-abilities・influences-psychology・interpersonal-abilities・intrinsic-motivation・metacognition・personality・soft-skills・stages-defense・stages-screener・D23）<br>● 10030 臨床心理学（anxiety・defense-mechanisms・empathy・influences-psychology・love-driven-dev・love-driven-dev-en・personality・shikan・stages-defense・stages-screener・via-vulnerability・D14・D15）<br>● 10040 実験心理学（analogy・breath-filter・cognitive-abilities・decision-making・thinking-definitions・D14・D26・inseparable-abilities）<br>● 80030 認知科学（analogy・creative-thinking・empathy・fundamental-theorem-of-algebra-analogy・metacognition・reasoning・thinking・D08・D14） |
+| 10 心理学およびその関連分野 | 5 / 5 | ● 10010 社会心理学（anshin・empathy・interpersonal-abilities・intrinsic-motivation・psychological-safety・psychological-safety-en・D14・D22）<br>● 10020 教育心理学（capacity-after-ai・cognitive-abilities・creative-thinking・developmental-stages・emerging-abilities・influences-psychology・interpersonal-abilities・intrinsic-motivation・metacognition・personality・soft-skills・stages-defense・stages-screener・thinking-dispositions・D23）<br>● 10030 臨床心理学（anxiety・defense-mechanisms・empathy・influences-psychology・love-driven-dev・love-driven-dev-en・personality・shikan・stages-defense・stages-screener・via-vulnerability・D14・D15）<br>● 10040 実験心理学（analogy・breath-filter・cognitive-abilities・decision-making・thinking-definitions・thinking-dispositions・D14・D26・inseparable-abilities）<br>● 80030 認知科学（analogy・creative-thinking・empathy・fundamental-theorem-of-algebra-analogy・metacognition・reasoning・thinking・D08・D14） |
 
 ### 大区分 B（12 / 20）
 
@@ -131,7 +131,7 @@
 | 中区分 | 触れている | 小区分 |
 |---|---|---|
 | 50 腫瘍学およびその関連分野 | 0 / 2 | ○ 50010 腫瘍生物学<br>○ 50020 腫瘍診断および治療学 |
-| 51 脳の活動と病態およびその関連分野 | 1 / 2 | ● 51010 脳科学一般（via-vulnerability・D08）<br>○ 51020 病態脳科学 |
+| 51 脳の活動と病態およびその関連分野 | 1 / 2 | ● 51010 脳科学一般（thinking-dispositions・via-vulnerability・D08）<br>○ 51020 病態脳科学 |
 | 52 内科学一般およびその関連分野 | 1 / 5 | ○ 52010 内科学一般<br>○ 52020 神経内科学<br>● 52030 精神神経科学（anxiety・D10）<br>○ 52040 放射線科学<br>○ 52050 胎児医学および小児成育学 |
 | 53 器官システム内科学およびその関連分野 | 0 / 5 | ○ 53010 消化器内科学<br>○ 53020 循環器内科学<br>○ 53030 呼吸器内科学<br>○ 53040 腎臓内科学<br>○ 53050 皮膚科学 |
 | 54 生体情報内科学およびその関連分野 | 1 / 4 | ○ 54010 血液および腫瘍内科学<br>● 54020 膠原病およびアレルギー内科学（D10）<br>○ 54030 感染症内科学<br>○ 54040 代謝および内分泌学 |

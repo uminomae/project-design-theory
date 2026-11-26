@@ -39,6 +39,7 @@
 | `cognitive-abilities/` | 「頭脳の能力は、どう分けられてきたか」（2026-11-25・工事中・noindex・#206 の M3）。調べの記録は `README.md`（読んだ原典の照合の状態・鍵の文・照らせなかったもの・空きとして見えたこと）、正本は `READER-cognitive-abilities.md`（`pd/reader/cognitive-abilities.html`） |
 | `analogy/` | 「類推と、構造の類似を見抜く力」（2026-11-26・工事中・noindex・#206 の M7）。調べの記録は `README.md`（読んだ原典の照合の状態・鍵の文・数の食い違い・照らせなかったもの・並べ方の決め）、正本は `READER-analogy.md`（`pd/reader/analogy.html`） |
 | `emerging-abilities/` | 「新しく注目されている能力」（2026-11-26・工事中・noindex・#206 の M4）。調べの記録は `README.md`（仕事・教育・AI の側の原典の照合の状態・鍵の文・照らせなかったもの・並べ方）、正本は `READER-emerging-abilities.md`（`pd/reader/emerging-abilities.html`） |
+| `thinking-dispositions/` | 「思考を動かす構えと体力」（2026-11-26・工事中・noindex・#208 の A3）。調べの記録は `README.md`（気質・構え・続ける構え・疲れの原典の照合の状態・鍵の文・照らせなかったもの・並べ方）、正本は `READER-thinking-dispositions.md`（`pd/reader/thinking-dispositions.html`） |
 | `inseparable-abilities/` | 「思考・心理・身体知が分けられないところ」（2026-11-26・工事中・noindex・#208 の A2）。調べの記録は `README.md`（暗黙知・技能・身体化された認知・フェルトセンス・内受容・東洋の身体論・暗黙知の測り方と仕事の場の使われ方の原典の照合の状態・鍵の文・照らせなかったもの・並べ方）、正本は `READER-inseparable-abilities.md`（`pd/reader/inseparable-abilities.html`） |
 | `soft-skills/` | 「ソフトスキル・非認知能力とは」（2026-11-26・工事中・noindex・#208 の A4）。調べの記録は `README.md`（照合の状態・鍵の文と頁・照らせなかったもの・A1 との切り分け）、正本は `READER-soft-skills.md`（`pd/reader/soft-skills.html`） |
 | `interpersonal-abilities/` | 「人と関わる力」（2026-11-26・工事中・noindex・#208 の A5）。調べの記録は `README.md`（読んだ原典の照合の状態・鍵の文・読まなかったもの・並べ方・指して写さないもの）、正本は `READER-interpersonal-abilities.md`（`pd/reader/interpersonal-abilities.html`） |
