@@ -521,6 +521,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/interpersonal-abilities/READER-interpersonal-abilities.md",
+        ROOT / "scripts/reader-interpersonal-abilities-template.html",
+        ROOT / "reader/interpersonal-abilities.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/defense-mechanisms/READER-stages-defense.md",
         ROOT / "scripts/reader-stages-defense-template.html",
         ROOT / "reader/stages-defense.html",

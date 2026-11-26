@@ -1,7 +1,7 @@
 {
  "counts": {
-  "pages": 97,
-  "mapped_pages": 82,
+  "pages": 98,
+  "mapped_pages": 83,
   "cs": 30,
   "sho": 295,
   "touched": 89,
@@ -451,6 +451,7 @@
         "business-design-syllabus",
         "decision-making",
         "influences-management",
+        "interpersonal-abilities",
         "julia-potential",
         "love-driven-dev",
         "love-driven-dev-en",
@@ -615,6 +616,7 @@
        "pages": [
         "anshin",
         "empathy",
+        "interpersonal-abilities",
         "intrinsic-motivation",
         "psychological-safety",
         "psychological-safety-en"
@@ -634,6 +636,7 @@
         "developmental-stages",
         "emerging-abilities",
         "influences-psychology",
+        "interpersonal-abilities",
         "intrinsic-motivation",
         "metacognition",
         "personality",
@@ -2763,6 +2766,7 @@
   "herschel-quetelet-probabilities-ja": "ハーシェル「ケトレーの確率論」（1850）を、日本語で読む",
   "influences-management": "影響を受けた経営学",
   "influences-psychology": "影響を受けた心理学",
+  "interpersonal-abilities": "人と関わる力",
   "intrinsic-motivation": "内発的動機とは",
   "james-substance-and-shadow-ja": "ジェイムズ（父）『実体と影』の「創造的な愛」の所を、日本語で読む",
   "julia-potential": "起業家の漸化式と、ジュリア集合",
