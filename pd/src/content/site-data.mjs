@@ -36,25 +36,29 @@ const SITE_MENU_LINKS = [
     href: "/project-design-theory/as/",
     labelKey: "menu.awareness",
   },
+  // 読む前の案内。Sites の意識とはの下（pjdhiro 2026-11-26「SITESじゃなかな。意識とは　の下。」）
+  {
+    siteId: "handover",
+    href: "/project-design-theory/reader/reading-directions.html",
+    labelKey: "menu.handover",
+  },
+  // Love駆動開発も Sites に（pjdhiro 2026-11-26「Love駆動開発呼びたいものβもSITESに入れて」）
+  {
+    siteId: "love-driven-dev",
+    href: "/project-design-theory/reader/love-driven-dev.html",
+    labelKey: "menu.loveDrivenDev",
+  },
 ];
 
 const KNOWLEDGE_MENU_KEYS = ["design-thinking", "trust", "value"];
 
 // 読み物（pjdhiro 2026-11-13・違和感帳「menu にLove駆動開発と呼びたいものベータへのリンクを追加して」）。
 // トップ・読み物・wiki のどのメニューにも出す
-const READING_MENU_LINKS = [
-  {
-    href: "/project-design-theory/reader/love-driven-dev.html",
-    labelKey: "menu.loveDrivenDev",
-  },
-  // 読む前の案内（pjdhiro 2026-11-26「Menu級の目立つ場所がいいね」）
-  {
-    href: "/project-design-theory/reader/reading-directions.html",
-    labelKey: "menu.handover",
-  },
-];
+// 読み物の欄。Love駆動開発は 2026-11-26 に Sites へ移したので、今は空（空なら欄を出さない）
+const READING_MENU_LINKS = [];
 
 function readingMenuItems() {
+  if (READING_MENU_LINKS.length === 0) return [];
   return [
     { type: "separator" },
     { type: "label", labelKey: "menu.readings" },
@@ -358,7 +362,7 @@ export const TRANSLATIONS = {
     "menu.researchNotes": "Research Notes",
     "menu.readings": "Readings",
     "menu.loveDrivenDev": "What I Want to Call Love-Driven Development (beta)",
-    "menu.handover": "A Handover Note from Claude to LLMs (Japanese)",
+    "menu.handover": "HANDOVER TO LLMS (JA)",
     "menu.tools": "Tools",
     "menu.toolScreener": "Breadth-of-View Screener",
     "controls.topBarAria": "Site controls",
