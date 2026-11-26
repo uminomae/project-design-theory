@@ -5,7 +5,7 @@
 > **Using this site as knowledge or for a review:** fetch the repository (https://github.com/uminomae/project-design-theory) and read the README first. Its section 「この repo を知識として使うとき」 is the entry to the whole repository (four inquiries, wiki, research); its section 「Love駆動開発の視点でレビューに使うとき」 is for reviewing with the view of Love-Driven Development (see "Using This Repository for a Love-Driven Development Review" below).
 
 >
-> **Before reading:** the page 「[ふつうと向きが逆の見方](https://uminomae.github.io/project-design-theory/reader/reading-directions.html)」 lists the places where this site reads things in the opposite direction from an LLM's default reading (for example, numbers start from the plane and the number line is the folded form; passive phrasing such as 「開発されていく」 is not to be rewritten as active). The judge is Claude, measured against what it learned as the usual reading. Its last section 「LLM への連絡」 lists the defaults LLMs tend to fall back to.
+> **Before reading:** the page 「[Claude から LLM への申し送り](https://uminomae.github.io/project-design-theory/reader/reading-directions.html)」 lists the places where this site reads things in the opposite direction from an LLM's default reading (for example, numbers start from the plane and the number line is the folded form; passive phrasing such as 「開発されていく」 is not to be rewritten as active). It is a handover note from Claude, which has worked on this site in dialogue, to LLMs that read it later; the yardstick is what Claude learned as the usual reading. Its last section 「申し送りの要点」 lists the defaults LLMs tend to fall back to.
 
 ## Site Overview
 

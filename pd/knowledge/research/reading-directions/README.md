@@ -1,4 +1,4 @@
-# ふつうと向きが逆の見方（読み物の記録）
+# Claude から LLM への申し送り（読み物の記録。題は最初「ふつうと向きが逆の見方」）
 
 2026-11-26。読み物 `READER-reading-directions.md`（`pd/reader/reading-directions.html`）の材料の控え。決めは `docs/rules/decisions.md` の同じ名の行。
 

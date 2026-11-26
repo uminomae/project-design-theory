@@ -24,7 +24,7 @@ git clone --depth 1 https://github.com/uminomae/project-design-theory
 取得できないチャットの LLM は、下の公開ページと raw の URL から読みます。
 
 - 芯：`docs/rules/stance.md`（pjdhiro の見方と判断の仕方・[raw](https://raw.githubusercontent.com/uminomae/project-design-theory/main/docs/rules/stance.md)）と `docs/rules/corrections.md`（LLM が繰り返しやすい読み違い・[raw](https://raw.githubusercontent.com/uminomae/project-design-theory/main/docs/rules/corrections.md)）。四つの探究に共通です。
-- 読む前の案内：読み物「[ふつうと向きが逆の見方](https://uminomae.github.io/project-design-theory/reader/reading-directions.html)」（正本 `pd/knowledge/research/reading-directions/READER-reading-directions.md`）。このサイトの文章が LLM のふつうの読みと向きが逆になっている所を、Claude が判定して一覧にしたもの。終わりに「LLM への連絡」がある。
+- 読む前の案内：読み物「[Claude から LLM への申し送り](https://uminomae.github.io/project-design-theory/reader/reading-directions.html)」（正本 `pd/knowledge/research/reading-directions/READER-reading-directions.md`）。このサイトの文章が LLM のふつうの読みと向きが逆になっている所を、Claude があとから読む LLM への申し送りとして一覧にしたもの。終わりに「申し送りの要点」がある。
 - Love駆動開発から入るとき：読み物「[Love駆動開発と呼びたいもの β](https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html)」と、その正本 `pd/knowledge/research/love-driven-dev/READER-love-driven-dev.md`。読み方と頼む文の雛形は次の節「Love駆動開発の視点でレビューに使うとき」。
 - プロジェクトデザイン論（`pd/`）：読み物は `pd/reader/`、その調べは `pd/knowledge/research/`。一覧は [llms.txt](https://uminomae.github.io/project-design-theory/llms.txt)。
 - 創造とは（`cs/`）：30 の学問領域の調べが `cs/evidence/`。入口は `cs/README.md` と [cs/llms.txt](https://uminomae.github.io/project-design-theory/cs/llms.txt)。

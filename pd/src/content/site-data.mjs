@@ -147,7 +147,7 @@ export const TRANSLATIONS = {
       "<a href=\"./reader/love-driven-dev.html\">Love駆動開発と呼びたい現象</a>を、これまで何度も経験してきました。<br>ここでいうプロジェクトは「やること（Doing）」だけでなく「起きていること（Being）」まで含む出来事です。",
     "love.faq.summary": "よくある誤解",
     "love.faq.body":
-      "<ul><li><strong>「Love は恋愛・愛情のことだ」</strong> → Love のいちばん狭い切り取り方は、恋や好意のような感情です。pjdhiro が Love と呼びたいのは、その感情も含めて、それらを動かしているものです。Love と言い切れるほどには、まだ分かっていません。</li></ul><p>このサイトの見方のうち、ふつうの読みと向きが逆になっている所は「<a href=\"./reader/reading-directions.html\">ふつうと向きが逆の見方</a>」にまとめています。</p>",
+      "<ul><li><strong>「Love は恋愛・愛情のことだ」</strong> → Love のいちばん狭い切り取り方は、恋や好意のような感情です。pjdhiro が Love と呼びたいのは、その感情も含めて、それらを動かしているものです。Love と言い切れるほどには、まだ分かっていません。</li></ul><p>このサイトの見方のうち、ふつうの読みと向きが逆になっている所は「<a href=\"./reader/reading-directions.html\">Claude から LLM への申し送り</a>」にまとめています。</p>",
     "hero.aboutAria": "このサイトについて",
     "toc.title": "目次",
     "toc.button": "☰ 目次",
@@ -360,7 +360,7 @@ export const TRANSLATIONS = {
       'Many times, I have experienced <a href="./reader/love-driven-dev.html">what I want to call Love-Driven Development</a>.<br>Here, a project is an event that includes not only "Doing" but also "Being."',
     "love.faq.summary": "Common misconceptions",
     "love.faq.body":
-      "<ul><li><strong>“The ‘Love’ here means romance or affection”</strong> → The narrowest way of cutting out Love is a feeling such as romance or fondness. What pjdhiro wants to call Love includes those feelings and is what moves them. It is not yet understood well enough to say flatly that it is Love.</li></ul><p>The places where this site reads things in the opposite direction from the usual reading are listed in <a href=\"./reader/reading-directions.html\">a guide (Japanese)</a>.</p>",
+      "<ul><li><strong>“The ‘Love’ here means romance or affection”</strong> → The narrowest way of cutting out Love is a feeling such as romance or fondness. What pjdhiro wants to call Love includes those feelings and is what moves them. It is not yet understood well enough to say flatly that it is Love.</li></ul><p>The places where this site reads things in the opposite direction from the usual reading are listed in <a href=\"./reader/reading-directions.html\">a handover note from Claude to LLMs (Japanese)</a>.</p>",
     "hero.aboutAria": "About this site",
     "toc.title": "Contents",
     "toc.button": "☰ Contents",
