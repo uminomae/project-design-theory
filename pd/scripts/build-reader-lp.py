@@ -515,6 +515,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/soft-skills/READER-soft-skills.md",
+        ROOT / "scripts/reader-soft-skills-template.html",
+        ROOT / "reader/soft-skills.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/defense-mechanisms/READER-stages-defense.md",
         ROOT / "scripts/reader-stages-defense-template.html",
         ROOT / "reader/stages-defense.html",

@@ -38,6 +38,7 @@
 | `thinking/` | 「思考とは」（2026-11-25・工事中・noindex・#206 の M1。2026-11-26 から思考のモジュールへの道案内）と「「考える」の語は、何を指してきたか」（もとの思考とはの中身）。調べの記録は `README.md`（十一の原典の照合の状態・鍵の文・Claude の読み）、正本は `READER-thinking.md`（`pd/reader/thinking.html`）と `READER-thinking-definitions.md`（`pd/reader/thinking-definitions.html`）。M2〜M8 の独立ページは別のセッションで作る |
 | `cognitive-abilities/` | 「頭脳の能力は、どう分けられてきたか」（2026-11-25・工事中・noindex・#206 の M3）。調べの記録は `README.md`（読んだ原典の照合の状態・鍵の文・照らせなかったもの・空きとして見えたこと）、正本は `READER-cognitive-abilities.md`（`pd/reader/cognitive-abilities.html`） |
 | `emerging-abilities/` | 「新しく注目されている能力」（2026-11-26・工事中・noindex・#206 の M4）。調べの記録は `README.md`（仕事・教育・AI の側の原典の照合の状態・鍵の文・照らせなかったもの・並べ方）、正本は `READER-emerging-abilities.md`（`pd/reader/emerging-abilities.html`） |
+| `soft-skills/` | 「ソフトスキル・非認知能力とは」（2026-11-26・工事中・noindex・#208 の A4）。調べの記録は `README.md`（照合の状態・鍵の文と頁・照らせなかったもの・A1 との切り分け）、正本は `READER-soft-skills.md`（`pd/reader/soft-skills.html`） |
 | `nonaka-papers/` | 野中郁次郎の論文（知識創造・SECI・場）の索引。書誌・原典へのリンク・ライセンスの見立てだけ（八本とも著作権が残り、本文は置かない）。`INDEX.md`（付箋帳 i20261120141240lud） |
 | `nonaka-complement/` | 野中郁次郎の知識創造を Love駆動開発で補う独立の読み物（#183）。骨格の案 `PLAN-reader-20261121.md`、組み直しの計画 `PLAN-rebuild-20261121.md`、pjdhiro の発言の出どころは `README.md`。材料は `nonaka-five-words/`・`nonaka-papers/` |
 | `nondual/` | 「不二（非二元）とは」（最初の題は「見分けられるのに、切り離せないもの」、次に「非二元とは」「不二・非二元とは」）。非二元さを表したものを分野ごとに集め、随時追記していくページ。正本 `READER-nondual.md`、pjdhiro の発言の記録・読んだ原典と照合の状態・追記の決まり・載せなかった候補は `README.md` |
