@@ -86,5 +86,4 @@ Fields (2015) はレビュー論文として、神経系の可塑性をシナプ
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D09/D09-S04_fields-2015.md`（2026-04-10、Claude Opus 4.6、WebFetch via PMC HTML）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase A）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

@@ -82,4 +82,3 @@ Alexander 1977 *A Pattern Language* の現代 AI 時代における更新版と�
 ## 出典メモ
 
 - 本ページは cs 精読ノート（D27-S15_salingaros-2025.md）を一次入力として生成した。原典は preprints.org 掲載の HTML 全文（web.archive.org 20251114221158 スナップショット）を cs 側が抽出し精読。経験的 primary data は6枚の AI 生成画像の LLM 診断のみで literature synthesis が中心（positional paper）。
-- 生成: 2026-06-16, Claude Sonnet 4.6（wiki-gen inbox 4月分整理、5段階対応は cs source-note §5 を参照）。

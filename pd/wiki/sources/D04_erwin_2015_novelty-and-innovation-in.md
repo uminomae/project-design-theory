@@ -76,4 +76,3 @@ review_state: 未レビュー
 ## 出典メモ
 
 - 出版社サイト（Cell/Elsevier）の PDF は 403 でアクセス不可だったため、PubMed (PMID 26439356) の著者抄録を一次入力に pd 形式で生成した。本文全文には未到達のため、引用は抄録範囲に限る。cs source-note は未生成。
-- 生成: 2026-06-14, source-reader

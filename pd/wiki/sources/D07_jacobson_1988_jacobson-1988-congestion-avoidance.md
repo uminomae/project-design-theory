@@ -85,5 +85,4 @@ slow-start は名前に反して指数的（log₂W ラウンドトリップ）�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D07/D07-S03_jacobson-1988.md`（2026-04-13、Claude Opus 4.6, curl + Read PDF。本論 + 付録 A,B 全部、付録 C,D は未読）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase C-1b）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

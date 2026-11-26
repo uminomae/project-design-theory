@@ -71,5 +71,4 @@ Hesse & Gross (2014) はレビュー論文として、脳が自己組織化臨�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D14/D14-S07_hesse-2014.md`（2026-04-10、claude-opus-4-6, WebFetch via HTML）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-2）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

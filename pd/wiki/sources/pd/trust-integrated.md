@@ -107,7 +107,6 @@ trust は trustor（信頼する側）の態度、trustworthiness は trustee（
 
 ## 書誌情報
 
-- 作成: 2026-03-27, Claude (agent-team-workflow, cs#188 プロトコル)
 - 入力レポート:
   - `trust-chatgpt-20260326.md` (GPT-4o)
   - `trust-chatgpt-pro-20260326.md` (GPT-5.4 Pro)
@@ -127,5 +126,5 @@ trust は trustor（信頼する側）の態度、trustworthiness は trustee（
 ## 出典メモ
 
 - 一次入力: `knowledge/research/trust/trust-integrated.md`（175 行、2026-03-27）
-- 本ページは統合分析を wiki sources/pd/ の読者向け形式に再編（pd#76、2026-04-19）
+- 本ページは統合分析を 読者向けの形に再編
 - 関連: PD の信頼論は concepts/信頼 を参照。欠損駆動思考との接続は `sources/pd/kesson-bridge` を参照

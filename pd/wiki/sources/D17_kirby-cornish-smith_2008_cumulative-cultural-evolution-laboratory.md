@@ -78,4 +78,3 @@ Kirby, Cornish, Smith (2008) は **iterated learning**（反復学習）と呼�
 ## 出典メモ
 
 - 本ページは cs 精読ノート（D17-S12_kirby-cornish-smith-2008.md）を一次入力として生成した。原典 raw PDF は web.archive.org 経由で cs 側が取得し精読（全6頁）。
-- 生成: 2026-06-16, Claude Sonnet 4.6（wiki-gen inbox 4月分整理、5段階対応は cs source-note §5 を参照）。

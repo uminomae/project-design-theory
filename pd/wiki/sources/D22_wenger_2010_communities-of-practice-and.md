@@ -76,6 +76,5 @@ Snyder と Wenger は、実践コミュニティ論を組織学習の枠内か�
 
 ## 出典メモ
 
-- pd 側読解: WebFetch via PMC HTML（2026-04-19、Claude Opus 4.7、本ページは pd 側で直接読解。cs 側 source-notes は未作成）
 - inbox v2 では「Wenger (2010). Communities of Practice and Social Learning Systems. Springer.」として登録。PMC 収録版 (PMC7122803) は Snyder & Wenger 共著の book chapter。inbox の wiki_stem と manifest_id を尊重してファイル名・DOI を記載する
-- 本ページは pd#81 Phase C-2b として WebFetch から直接生成
+- 本ページは原典の web 版を直接読んで作った

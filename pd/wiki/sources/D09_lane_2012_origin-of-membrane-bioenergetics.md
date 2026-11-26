@@ -60,4 +60,3 @@ Nick Lane & William F. Martin (2012) は、生命のエネルギー機構の起�
 ## 出典メモ
 
 - 本ページは PubMed（PMID 23260134）の efetch 公式 abstract を一次入力として生成した。manifest 記載の OA URL（cell.com PDF）は認証で取得できなかったため、PubMed の検証済み abstract を用いた。
-- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。cs 側 source-note 生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。

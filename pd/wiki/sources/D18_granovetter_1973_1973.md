@@ -87,5 +87,4 @@ Granovetter (1973) は社会ネットワーク分析をミクロ（対人的相�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D18/D18-S04_granovetter-1973.md`（2026-04-13、Claude Opus 4.6, Read PDF pp.1360-1368 抜粋）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-2）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

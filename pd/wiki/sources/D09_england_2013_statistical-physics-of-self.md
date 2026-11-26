@@ -82,5 +82,4 @@ n_pep はペプチド結合数、τ_hyd は加水分解半減期、τ_div は分
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D09/D09-S13_england-2013.md`（2026-04-10、claude-opus-4-6、WebFetch → PDF Read）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase A）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

@@ -92,4 +92,3 @@ D29「複雑性科学」において本論文は**全5段階が強く現れる**
 ## 出典メモ
 
 - 本ページは cs 精読ノート（D29-S11_dickman-munoz-vespignani-zapperi-2000.md）を一次入力として生成した。arXiv preprint cond-mat/9910454 v2（248KB、23頁）を cs 側が取得し精読（本文19頁を精読）。
-- 生成: 2026-06-16, Claude Sonnet 4.6（wiki-gen inbox 4月分整理、5段階対応は cs source-note §5 を参照）。

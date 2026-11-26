@@ -67,5 +67,4 @@ Hu & Chen (2021) は、複雑動的システム（CDS）理論とバフチンの
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D22/D22-S16_hu-2021.md`（2026-04-11、claude-opus-4-6, WebFetch via HTML、要約レベル）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-3）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

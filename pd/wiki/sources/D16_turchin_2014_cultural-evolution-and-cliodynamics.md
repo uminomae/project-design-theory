@@ -54,11 +54,9 @@ Peter Turchin によるこの編集者コラム（*Cliodynamics* 5(1), 2014）�
 ## ソース参照（GitHub・検証用）
 
 - **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D16-S17`）
-- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
 - **この wiki ページ（pd）**: [wiki/sources/D16_turchin_2014_cultural-evolution-and-cliodynamics.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D16_turchin_2014_cultural-evolution-and-cliodynamics.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 
 ## 出典メモ
 
 - 本ページは OA PDF（eScholarship, UC）を curl で取得し pdftotext で抽出した本文（編集者コラム）を一次入力として生成した。本稿は研究論文ではなく Turchin による編集者コラムである点に留意。
-- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。cs 側 source-note 生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。

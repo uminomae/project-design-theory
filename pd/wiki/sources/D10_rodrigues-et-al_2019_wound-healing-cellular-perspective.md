@@ -65,4 +65,3 @@ Rodrigues ら (2019) は、創傷治癒 (wound healing) を「人体で最も複
 ## 出典メモ
 
 - 本ページは cs ローカル raw PDF（`knowledge/raw/D10_rodrigues-et-al_2019_wound-healing-cellular-perspective.pdf`）を pdftotext で抽出した本文（abstract・目次・序論）を一次入力として生成した。
-- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。cs 側 source-note 生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。

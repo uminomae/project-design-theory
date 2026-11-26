@@ -84,5 +84,4 @@ clustering coefficient C は「三角形数 × 3 / 接続三項数」として�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D29/D29-S14_newman-2003-structure-function-complex-networks.md`（2026-04-14、Claude Opus 4.6, WebFetch → Read PDF。Sec. I-IV 冒頭、約 41% 読了）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-4）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

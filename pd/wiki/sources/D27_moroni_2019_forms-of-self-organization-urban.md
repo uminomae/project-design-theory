@@ -79,5 +79,4 @@ self-coordination の本質は、誰かが意図的に組織したのではな�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D27/D27-S12_moroni-2019.md`（2026-04-11、Claude Opus 4.6, WebFetch → Read PDF 全 16 ページ）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-4）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

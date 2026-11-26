@@ -102,6 +102,5 @@ Lakatos の「research programme」概念を明示的に援用し、避けるべ
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D27/D27-S10_schumacher-2008.md`（2026-04-17、Claude Opus 4.7, WebFetch HTML: 冒頭 + 5 agendas 概要 + heuristics）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#80 inbox drain / pd#81 Phase C 関連）
+- 本ページは cs 要約を一次入力として pd 形式に再編した
 - 部分読解のため、各 agenda 本文詳細（下位節・機構論・実作例）・結語・脚注・参考文献は未読

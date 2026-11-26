@@ -81,5 +81,4 @@ Nadell, Foster & Xavier (2010) は、細胞集団における空間構造の自�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D18/D18-S10_nadell-2010.md`（2026-04-11、claude-opus-4-6, Read PDF 全 9 ページ）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-2）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

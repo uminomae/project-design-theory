@@ -77,5 +77,4 @@ Wallas (1926) 以来の古典的モデルから一貫して確認される中核
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D15/D15-S15_botella-2018.md`（2026-04-10、claude-opus-4-6, WebFetch 全文）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase C-1c）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

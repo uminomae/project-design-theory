@@ -91,6 +91,5 @@ Bak, Tang, Wiesenfeld (1988) は、多数の等価な自由度を持つ散逸動
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D05/D05-S14_bak-tang-wiesenfeld-1988-self-organized-criticality.md`（2026-04-15、Claude Opus 4.6, WebFetch → PDF Read 全 11 ページ）
 - manifest 旧記載は 1987 PRL レター。本ページは PDF 実体である 1988 PRA 拡張論文に基づく
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-1）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

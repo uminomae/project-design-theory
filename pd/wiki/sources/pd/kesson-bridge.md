@@ -170,7 +170,6 @@ agent-team-workflow Phase 1-2（researcher 3 並列 × 2 ラウンド + critic 2
 
 ## 書誌情報
 
-- 作成: 2026-03-28, Claude (agent-team-workflow Phase 1-2)
 - 状態: ドラフト、pjdhiro 確認待ち
 - 入力: 3 統合レポート（trust-integrated, value-integrated, design-thinking-integrated）
 - 検証: researcher 3 並列 × 2 ラウンド + critic 2 ラウンド
@@ -178,7 +177,7 @@ agent-team-workflow Phase 1-2（researcher 3 並列 × 2 ラウンド + critic 2
 ## 出典メモ
 
 - 一次入力: `knowledge/research/kesson-bridge.md`（184 行、2026-03-28）
-- 本ページは接続分析を wiki sources/pd/ の読者向け形式に再編（pd#76、2026-04-19）。D1-D4 番号表記を用語名に置換（CLAUDE.md 絶対原則準拠）
+- 本ページは接続分析を 読者向けの形に再編
 - 関連 3 統合分析:
   - `sources/pd/trust-integrated`
   - `sources/pd/value-integrated`

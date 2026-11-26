@@ -73,5 +73,4 @@ Appendix 1 で反例を提示。周期 3 が他のすべての周期を含意す
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D01/D01-S10_li-yorke-1975.md`（2026-04-13、Claude Opus 4.6, WebFetch → Read PDF 全 8 ページ読了）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase C-1a）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

@@ -53,7 +53,6 @@ Olsson, Folke & Hahn (2004) は、南スウェーデンの湿地景観 Kristians
 ## ソース参照（GitHub・検証用）
 
 - **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D30-S15`）
-- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
 - **この wiki ページ（pd）**: [wiki/sources/D30_olsson_2004_social-ecological-transformation.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D30_olsson_2004_social-ecological-transformation.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 
@@ -61,4 +60,3 @@ Olsson, Folke & Hahn (2004) は、南スウェーデンの湿地景観 Kristians
 
 - 本ページは OA PDF（Ecology and Society print 版）を curl で取得し pdftotext で抽出した本文（abstract）を一次入力として生成した。
 - **manifest 重複注意**: 同一論文が D16-S18 と D30-S15 の2エントリで登録されており、本ページ（D30）と [[D16_olsson_2004_social-ecological-transformation-for|生態系管理に向けた社会生態的変革（Olsson, Folke & Hahn 2004）]]（D16）はソースを共有する。ドメイン文脈に応じて焦点を分けている。cs 側 manifest の重複整理が望ましい。
-- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。cs 側 source-note 生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。

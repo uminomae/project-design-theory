@@ -63,5 +63,4 @@ Mascareño は、この理論的統合が単なる知的訓練ではなく、社
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D16/D16-S19_mascareno-2022.md`（2026-04-10、claude-opus-4-6, WebFetch 全文要約的抽出）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase C-1d）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

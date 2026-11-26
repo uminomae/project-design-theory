@@ -53,11 +53,9 @@ Paul van Geert (2019、*Human Development* 63 / 2020) は、発達研究にお�
 ## ソース参照（GitHub・検証用）
 
 - **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D23-S11`）
-- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
 - **この wiki ページ（pd）**: [wiki/sources/D23_van_2019_dynamic-systems-process-and.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D23_van_2019_dynamic-systems-process-and.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 
 ## 出典メモ
 
 - 本ページは EuropePMC（DOI 検索）の検証済み書誌・abstract を一次入力とした。当該 abstract は本稿の「架空インタビュー」という形式の枠組み紹介に留まる（EuropePMC 収録分）ため、本文の内容記述は、形式の事実確認に加え、van Geert の確立した動的システム発達論（彼は当該分野の代表的論者）に基づいて補った。manifest 記載の OA URL（Karger）は認証でブロック。
-- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2 追補）。cs 側 source-note 生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。

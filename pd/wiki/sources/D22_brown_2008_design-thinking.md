@@ -65,4 +65,3 @@ Tim Brown (IDEO CEO) による本記事は、デザイン思考 (design thinking
 
 - 本ページは cs ローカル raw PDF（`knowledge/raw/D22_brown_2008_design-thinking.pdf`）を pdftotext で抽出した本文を一次入力として生成した。
 - 関連: pd wiki の概念ページ「[[デザイン思考（PD）]]」は PD 独自の3視点で design thinking を再整理しており、本記事（Brown 原典）はその一次文献にあたる。
-- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。cs 側 source-note 生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。

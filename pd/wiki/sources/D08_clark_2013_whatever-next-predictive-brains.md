@@ -83,5 +83,4 @@ Clark (2013) は「階層的予測処理（hierarchical predictive processing）
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D08/D08-S13_clark-2013.md`（2026-04-10、Claude Opus 4.6, WebFetch → PDF Read、target article 部 pp.181-204 まで読了）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-1）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

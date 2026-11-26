@@ -67,5 +67,4 @@ Friston は、自己意識が意識そのものの必要条件であると主張
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D22/D22-S17_friston-2018.md`（2026-04-11、claude-opus-4-6, WebFetch via HTML、要約レベル）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-3）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

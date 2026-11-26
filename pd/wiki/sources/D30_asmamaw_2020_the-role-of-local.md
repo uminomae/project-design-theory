@@ -75,5 +75,4 @@ review_state: 未レビュー
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D30/D30-S17_asmamaw-2020.md`（2026-04-11、Claude Opus 4.6, WebFetch via HTML 全文取得）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-4）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

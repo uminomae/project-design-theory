@@ -58,4 +58,3 @@ Le Pichon (1968) は、地球表面を相互に相対運動する剛体ブロッ
 ## 出典メモ
 
 - 本ページは cs ローカル raw PDF（`knowledge/raw/D05_le-pichon_1968_sea-floor-spreading.pdf`）を pdftotext で抽出した本文を一次入力として生成した。
-- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。cs 側 source-note 生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。

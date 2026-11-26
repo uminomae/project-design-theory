@@ -83,5 +83,4 @@ Castellano, Fortunato & Loreto (2009) はレビュー論文として、統計物
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D18/D18-S08_castellano-2009.md`（2026-04-11、claude-opus-4-6, Read PDF arXiv 版約 60 ページ、主要章を読了）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-2）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

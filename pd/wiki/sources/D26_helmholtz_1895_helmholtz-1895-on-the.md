@@ -70,5 +70,4 @@ Hermann von Helmholtz (1821–1894) の『音感覚論』(原書 1863, Ellis 英
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D26/D26-S15_helmholtz-1895.md`（2026-04-20, Claude Opus 4.7, WebFetch djvu.txt stream で Translator's Preface・Introduction・Part I 骨子を精読。Part II-III は未精読）
 - 本ページは cs 要約を一次入力として pd 形式に再編した

@@ -64,4 +64,3 @@ Hartshorne, Tenenbaum & Pinker (2018) は、言語習得の臨界期 (critical p
 ## 出典メモ
 
 - 本ページは cs ローカル raw PDF（`knowledge/raw/D17_hartshorne-tenenbaum-pinker_2018_critical-period-second-language.pdf`）を pdftotext で抽出した本文（abstract・序論）を一次入力として生成した。
-- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。cs 側 source-note 生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。

@@ -81,5 +81,4 @@ Freytag はドラマの構成技法を体系的に論じ、劇的行為（dramat
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D19/D19-S11_freytag-1895.md`（2026-04-16、claude-opus-4-6, Read PDF。Biographical Note + Contents + Introduction + Ch.II §2 五部分論を読了）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-3）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

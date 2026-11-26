@@ -69,5 +69,4 @@ Zipf 法則と Pareto 法則に基づく離散・連続相関関数の理論的�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D27/D27-S16_chen-2011.md`（2026-04-11、Claude Opus 4.6, WebFetch → Read PDF 全 9 ページ）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-4）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

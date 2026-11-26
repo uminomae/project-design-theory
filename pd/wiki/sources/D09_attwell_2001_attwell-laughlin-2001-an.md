@@ -71,6 +71,5 @@ David Attwell と Simon Laughlin (2001) は、げっ歯類の脳灰白質にお�
 
 - 一次入力: PubMed 公式 abstract（PMID 11598490, 2026-06-14 efetch）。
 - cs 精読ノート（D09-S02）は、手元の PDF で全文（pp.1133-1145）を読んでいる（2026-06-26）。
-- 生成: 2026-06-14, Claude Opus 4.8（Main 逐次）
 
 > 追記（2026-11-09・#73）：access_status を台帳（raw-confirmed）に合わせた。

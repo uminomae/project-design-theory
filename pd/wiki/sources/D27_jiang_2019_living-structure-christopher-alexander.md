@@ -87,5 +87,4 @@ Jacobs 1961 を援用して、modernism 系統は組織化された複雑さを�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D27/D27-S13_jiang-2019.md`（2026-04-17、Claude Opus 4.7, WebFetch → Read PDF arxiv ミラー、本文 16 ページ全体）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-4）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

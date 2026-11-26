@@ -61,7 +61,6 @@ Marten Scheffer と Stephen Carpenter (2003) は、生態系における **破�
 ## ソース参照（GitHub・検証用）
 
 - **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D12-S09`）
-- **cs 精読ノート**: 未生成（cs#249 で生成予定。生成後 `wiki-cross-check.mjs` で照合）
 - **この wiki ページ（pd）**: [wiki/sources/D12_scheffer_2003_carpenter-s-r.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D12_scheffer_2003_carpenter-s-r.md)
 - **参照先（原典 DOI / オープンアクセス）**: 下記「書誌情報」を参照
 
@@ -69,4 +68,3 @@ Marten Scheffer と Stephen Carpenter (2003) は、生態系における **破�
 
 - 一次入力: UCF ミラー PDF を pdftotext 抽出（2026-06-14, 冒頭〜導入部）。本文全体の精読は cs source-note 生成時に行う。
 - cs source-note は未生成（manifest D12-S09 として url-verified 登録のみ）。生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。
-- 生成: 2026-06-14, Claude Opus 4.8（Main 逐次）

@@ -79,5 +79,4 @@ Aristotle は詩作術（ポイエーティケー）を体系的に論じ、と�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D19/D19-S12_aristotle-1907.md`（2026-04-16、claude-opus-4-6, Read PDF。Preface + Analysis + Poetics Ch.I-VI 翻訳を読了）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-3）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

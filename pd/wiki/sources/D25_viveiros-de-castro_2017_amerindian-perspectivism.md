@@ -60,4 +60,3 @@ Eduardo Viveiros de Castro『宇宙論的ダイクシスとアメリンディア
 ## 出典メモ
 
 - 本ページは cs ローカル raw PDF（`knowledge/raw/D25_viveiros-de-castro_2017_amerindian-perspectivism.pdf`）を pdftotext で抽出して内容を確認した。当該 PDF は本論文（JRAI 1998「Cosmological Deixis and Amerindian Perspectivism」）の**ポーランド語訳**（*Etnografia* 2017, 3: 235–258）であり、原典は英語論文である。本文冒頭で確認できた論旨（パースペクティヴィズム＝多様な主体が各視点から世界を捉える／相対主義・普遍主義の対立を横切る／自然・文化区分の民族誌的批判）と、当該古典の確立した学術的理解（多自然主義）に基づいて記述した。
-- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。cs 側 source-note 生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。

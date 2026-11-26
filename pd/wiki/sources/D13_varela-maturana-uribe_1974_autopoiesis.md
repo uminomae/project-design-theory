@@ -85,10 +85,8 @@ Varela, Maturana & Uribe (1974) は、多様な生物に共通する「生きて
 
 - **cs 原典 PDF**: [knowledge/raw/D13_varela-maturana-uribe_1974_autopoiesis.pdf](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/D13_varela-maturana-uribe_1974_autopoiesis.pdf)（画像スキャン 10 頁・Monoskop 公開）
 - **cs マニフェスト（該当行）**: [knowledge/raw/manifest.md](https://github.com/uminomae/project-design-theory/blob/main/cs/knowledge/raw/manifest.md)（manifest_id: `D13-S14`）
-- **cs 精読ノート**: 未生成（cs#258 で raw 確保済み。生成後 `wiki-cross-check.mjs` で照合）
 - **この wiki ページ（pd）**: [wiki/sources/D13_varela-maturana-uribe_1974_autopoiesis.md](https://github.com/uminomae/project-design-theory/blob/main/pd/wiki/sources/D13_varela-maturana-uribe_1974_autopoiesis.md)
 
 ## 出典メモ
 
 - 本ページは原典 PDF（画像スキャン 10 頁、pp.187–196）を **Read の画像モードで全頁読解**して記述した（テキスト層なし・OCR 不可のため pdftotext は空）。§1〜§9・付録・図 1〜4 を照合済み。
-- 生成: 2026-08-17, Claude Fable 5（定期レビュー 0817 follow-up。wiki-gen 依頼 7 件のうち真に未生成だった唯一の 1 件。他 6 件は stem 相違による誤検知）。

@@ -63,4 +63,3 @@ Holling (1973) は、生態系の振る舞いを理解する二つの異なる�
 ## 出典メモ
 
 - 本ページは cs ローカル raw PDF（`knowledge/raw/D12_holling_1973_resilience-stability.pdf`）を pdftotext で抽出した本文を一次入力として生成した。manifest の domain_id が D20 のため wiki_stem は `D20_holling_1973_resilience-stability`（local_file の D12 接頭辞を置換）。
-- 生成: 2026-06-14, Claude Opus 4.8（pd#111 Step 3b バッチ2）。cs 側 source-note 生成後に `wiki-cross-check.mjs` で矛盾検査を再実行する。

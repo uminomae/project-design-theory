@@ -79,5 +79,4 @@ Michaelis-Menten 動力学に支配されてきた土壌モデリングで、乗
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D12/D12-S15_medina-2023.md`（2026-04-10、claude-opus-4-6, WebFetch 全文）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase C-1c）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

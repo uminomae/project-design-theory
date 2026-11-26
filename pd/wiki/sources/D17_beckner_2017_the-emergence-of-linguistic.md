@@ -75,5 +75,4 @@ generation の正の係数（0.973, p<0.001）と generation² の負の係数�
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D17/D17-S11_beckner-2017.md`（2026-04-11、claude-opus-4-6, WebFetch via HTML）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase B-2）
+- 本ページは cs 要約を一次入力として pd 形式に再編した

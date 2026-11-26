@@ -81,5 +81,4 @@ Adam Smith の分業論を出発点に、経済発展とは個別活動の数と
 
 ## 出典メモ
 
-- cs 側読解: `creation-space/knowledge/source-notes/D21/D21-S14_hidalgo-2009.md`（2026-04-11、claude-opus-4-6, WebFetch → Read PDF 全 15 ページ）
-- 本ページは cs 要約を一次入力として pd 形式に再編した（pd#81 Phase C-1d）
+- 本ページは cs 要約を一次入力として pd 形式に再編した
