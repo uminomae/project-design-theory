@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/analogy.html を直接編集しないでください。
+  正本:   knowledge/research/analogy/READER-analogy.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「類推と、構造の類似を見抜く力」のページです（工事中）。離れたものどうしの構造を重ねる働きが、心理学と認知科学でどう研究されてきたかと、類推が仮説を生むところを、原典から並べる。読んだ原典：Maxwell 1855/1856（Internet Archive の走査）、Gick と Holyoak 1980・1983、Holyoak と Thagard 1989、Holyoak 2012、Penn・Holyoak・Povinelli 2008、Vendetti・Wu・Holyoak 2014（Holyoak の研究室の写しの Wayback の記録）、Gentner 1983・1988、Gentner と Markman 1997、Falkenhainer・Forbus・Gentner 1989（Gentner の研究室の写し）、Gentner ら 1997（Forbus の研究室の写しの Wayback の記録）、Chalmers・French・Hofstadter 1992（著者のサイトの技術報告）、Hofstadter 2001（Stanford の講演の頁の許諾つきの再録）、Dunbar 1997・Dunbar と Blanchette 2001（著者稿）、Sternberg と Nigro 1979（ERIC）。どれも本文で照合した。章の並べ方、三つの論が同じ働きの別の所を照らすという読み、類推が知覚から仮説の候補まで続く流れに入り込む、という結びは Claude のもの。誰かの類推の力を測ったり比べたりするページではない。推論とは（reasoning.html）・頭脳の能力は、どう分けられてきたか（cognitive-abilities.html）・思考とは（thinking.html）へはリンク、共役のベクトルを当てる力は工事中で名前だけ。
+  pjdhiro 本人の言葉は引いていない。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>類推と、構造の類似を見抜く力 | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/analogy.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="離れたものどうしの構造を重ねる働き（類推）は、どう研究されてきたか。ゲントナーの構造写像の論（属性でなく関係を、高い次元の関係でつながった系ほど写す）、ホリオークとサガードの多重の制約（構造・意味・目的）、ホフスタッターらの知覚の側からの見方、ジックとホリオークの問題解決の実験（離れた例は思い出されにくく、二つの例を比べると思い出されやすい）、関係を見る力の発達と構えの実験を原典で並べ、マクスウェル・ケプラーと、分子生物学の研究室の会議の観察から、類推が確かめる前の推測として仮説を生むところを見る。">
+    <meta property="og:title" content="類推と、構造の類似を見抜く力">
+    <meta property="og:description" content="離れたものどうしの構造を重ねる働き（類推）は、どう研究されてきたか。ゲントナーの構造写像の論（属性でなく関係を、高い次元の関係でつながった系ほど写す）、ホリオークとサガードの多重の制約（構造・意味・目的）、ホフスタッターらの知覚の側からの見方、ジックとホリオークの問題解決の実験（離れた例は思い出されにくく、二つの例を比べると思い出されやすい）、関係を見る力の発達と構えの実験を原典で並べ、マクスウェル・ケプラーと、分子生物学の研究室の会議の観察から、類推が確かめる前の推測として仮説を生むところを見る。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/analogy.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="類推と、構造の類似を見抜く力">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-26">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "類推と、構造の類似を見抜く力",
+          "description": "離れたものどうしの構造を重ねる働き（類推）は、どう研究されてきたか。ゲントナーの構造写像の論（属性でなく関係を、高い次元の関係でつながった系ほど写す）、ホリオークとサガードの多重の制約（構造・意味・目的）、ホフスタッターらの知覚の側からの見方、ジックとホリオークの問題解決の実験（離れた例は思い出されにくく、二つの例を比べると思い出されやすい）、関係を見る力の発達と構えの実験を原典で並べ、マクスウェル・ケプラーと、分子生物学の研究室の会議の観察から、類推が確かめる前の推測として仮説を生むところを見る。",
+          "keywords": "類推, 構造写像, 構造の類似, 系統性, ゲントナー, ホリオーク, 多重制約, ホフスタッター, 高次の知覚, 類推の転移, 放射線の問題, 図式, 関係の推論, マクスウェル, 物理の類推, ケプラー, ダンバー, 仮説, アブダクション, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/analogy.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/analogy.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-26",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "類推"}, {"@type": "Thing", "name": "構造写像"}, {"@type": "Thing", "name": "関係の推論"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「類推と、構造の類似を見抜く力」のページです（工事中）。離れたものどうしの構造を重ねる働き（類推）は、どう研究されてきたか。ゲントナーの構造写像の論（属性でなく関係を、高い次元の関係でつながった系ほど写す）、ホリオークとサガードの多重の制約（構造・意味・目的）、ホフスタッターらの知覚の側からの見方、ジックとホリオークの問題解決の実験（離れた例は思い出されにくく、二つの例を比べると思い出されやすい）、関係を見る力の発達と構えの実験を原典で並べ、マクスウェル・ケプラーと、分子生物学の研究室の会議の観察から、類推が確かめる前の推測として仮説を生むところを見る。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b><br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1><span style="display:inline-block">類推と、</span><span style="display:inline-block">構造の類似を見抜く力</span></h1>
+                <p class="reader-subtitle">関係を重ねる仕組みと、仮説が生まれるところ</p>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/analogy/READER-analogy.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="thinking.html">思考とは</a> ・
+                <a href="abilities.html">能力とは</a> ・
+                <a href="creative-thinking.html">創造的思考とは</a> ・
+                <a href="reasoning.html">推論とは</a> ・
+                <a href="cognitive-abilities.html">頭脳の能力は、どう分けられてきたか</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
