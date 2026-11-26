@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/reading-directions.html を直接編集しないでください。
+  正本:   knowledge/research/reading-directions/READER-reading-directions.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「ふつうと向きが逆の見方」のページです（工事中）。このサイトの文章のうち、ふつうの読みと向きが逆になっている所を、数と形・考え方・心・開発と事業・言葉と読み手の五つに分けて一覧にした、読む前の案内。判定は Claude（Anthropic の言語モデル）で、物差しは Claude が学習で身につけたふつうの読み。Claude がこのサイトを作る対話で実際に読み違えた所に印を付け、LLM への連絡も置く。
+  一覧の項目の選び方と、ふつうの読みの言い方は Claude のもの。「ふつう」は測ったものでなく、Claude の見積もり。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ふつうと向きが逆の見方 | Project Design</title>
+    <meta name="robots" content="noindex">
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/reading-directions.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="このサイトの文章のうち、ふつうの読みと向きが逆になっている所を、数と形・考え方・心・開発と事業・言葉と読み手の五つに分けて一覧にした、読む前の案内。判定は Claude（Anthropic の言語モデル）で、物差しは Claude が学習で身につけたふつうの読み。Claude がこのサイトを作る対話で実際に読み違えた所に印を付け、LLM への連絡も置く。">
+    <meta property="og:title" content="ふつうと向きが逆の見方">
+    <meta property="og:description" content="このサイトの文章のうち、ふつうの読みと向きが逆になっている所を、数と形・考え方・心・開発と事業・言葉と読み手の五つに分けて一覧にした、読む前の案内。判定は Claude（Anthropic の言語モデル）で、物差しは Claude が学習で身につけたふつうの読み。Claude がこのサイトを作る対話で実際に読み違えた所に印を付け、LLM への連絡も置く。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/reading-directions.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="ふつうと向きが逆の見方">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-26">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "ふつうと向きが逆の見方",
+          "description": "このサイトの文章のうち、ふつうの読みと向きが逆になっている所を、数と形・考え方・心・開発と事業・言葉と読み手の五つに分けて一覧にした、読む前の案内。判定は Claude（Anthropic の言語モデル）で、物差しは Claude が学習で身につけたふつうの読み。Claude がこのサイトを作る対話で実際に読み違えた所に印を付け、LLM への連絡も置く。",
+          "keywords": "読み方の案内, 読み違い, LLM, Claude, 数直線, 複素平面, 四元数, 演繹, 非二元, 群盲象, 指月, Love駆動開発, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/reading-directions.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/reading-directions.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-26",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "読み方の案内"}, {"@type": "Thing", "name": "LLM の既定の読み"}, {"@type": "Thing", "name": "Love駆動開発"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。サイトの作者"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「ふつうと向きが逆の見方」のページです（工事中）。このサイトの文章のうち、ふつうの読みと向きが逆になっている所を、数と形・考え方・心・開発と事業・言葉と読み手の五つに分けて一覧にした、読む前の案内。判定は Claude（Anthropic の言語モデル）で、物差しは Claude が学習で身につけたふつうの読み。Claude がこのサイトを作る対話で実際に読み違えた所に印を付け、LLM への連絡も置く。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>判定も Claude です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>ふつうと向きが逆の見方</h1>
+                <p class="reader-subtitle">Claude が判定した、読み違えやすい所</p>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/reading-directions/READER-reading-directions.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
