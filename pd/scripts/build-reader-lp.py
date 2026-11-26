@@ -443,6 +443,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/euler-unfolded/READER-zen-circle-hs.md",
+        ROOT / "scripts/reader-zen-circle-hs-template.html",
+        ROOT / "reader/zen-circle-hs.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/ac-phasor/READER-ac-phasor.md",
         ROOT / "scripts/reader-ac-phasor-template.html",
         ROOT / "reader/ac-phasor.html",
