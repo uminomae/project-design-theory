@@ -243,8 +243,6 @@ export const TRANSLATIONS = {
     "log.waveVortex.t": "波間の渦（創造とは）",
     "section.shelves.label": "Modules",
     "section.shelves.title": "モジュール",
-    "section.shelves.body":
-      "一つの主題を一ページにまとめたページを、モジュールと呼んでいます。Love駆動開発などの読み物は、章の中で要るモジュールを呼び出し、詳しくはそちらに任せます。どれも単独で読めます。主題ごとの七つの並びに分け、そこから辿るページは、一段下げて置いています。多くは工事中です。",
     "shelf.mind": "心の動き",
     "shelf.thinking": "思考とは",
     "shelf.love": "Love と駆動源",
@@ -460,8 +458,6 @@ export const TRANSLATIONS = {
     "log.waveVortex.t": "Vortices between waves (What Is Creation)",
     "section.shelves.label": "Modules",
     "section.shelves.title": "Modules",
-    "section.shelves.body":
-      "A module is a page that gathers one topic. Readers such as Love-Driven Development call on the modules they need from their chapters and leave the details to them. Each module can be read on its own. They are grouped into seven shelves by topic, and pages reached from another page are indented under it. The pages are in Japanese, and most are under construction.",
     "shelf.mind": "Workings of the mind",
     "shelf.thinking": "What Is Thinking",
     "shelf.love": "Love and driving sources",
