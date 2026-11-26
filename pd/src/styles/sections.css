@@ -279,3 +279,34 @@
 .explore-modal__list .log-card .repo-card__desc {
     opacity: 0.8;
 }
+
+/* === Doing のカードの項目に、モジュールをサブセットで下げる（2026-11-26 home-rethink） === */
+.card-sub {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+}
+
+.card-sub__title {
+    font-size: 0.9rem;
+    margin: 0 0 0.5rem;
+}
+
+.card-sub__title a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+}
+
+.card .card-sub ul li {
+    padding: 0;
+    font-size: inherit;
+}
+
+.card .card-sub ul li::before {
+    content: none;
+}
+
+.content-section .shelf-grid {
+    max-width: none;
+}
