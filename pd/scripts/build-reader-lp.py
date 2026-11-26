@@ -449,18 +449,6 @@ PAGES = [
         "flow",
     ),
     (
-        ROOT / "knowledge/research/ac-phasor/READER-ac-phasor.md",
-        ROOT / "scripts/reader-ac-phasor-template.html",
-        ROOT / "reader/ac-phasor.html",
-        "flow",
-    ),
-    (
-        ROOT / "knowledge/research/ac-phasor-unfolded/READER-ac-phasor-unfolded.md",
-        ROOT / "scripts/reader-ac-phasor-unfolded-template.html",
-        ROOT / "reader/ac-phasor-unfolded.html",
-        "flow",
-    ),
-    (
         ROOT / "knowledge/research/angle-rotation/READER-angle-rotation.md",
         ROOT / "scripts/reader-angle-rotation-template.html",
         ROOT / "reader/angle-rotation.html",
