@@ -10,6 +10,7 @@ pjdhiro の見方と判断の基準（暗黙知）を形式化し、AI が読み
 |---|---|
 | `docs/DESIGN-INTENT.md` | repo 全体の設計仕様（目的・構成・配布・既知の制約・未解決の課題） |
 | `docs/LOVE-DRIVEN-DEV-SPEC.md` | Love駆動開発のパッケージ仕様（機能・入出力・依存モジュール・動作の規約） |
+| `docs/RELEASE-STAGES.md` | 目標ごとの三段階と、いまの達成度合い・段ごとのリリース文（公的な機関の基準で測るものと、指標を作る別枠） |
 
 pjdhiro の言葉のニュアンスと判断の理由は、仕様書でなく `docs/rules/stance.md`（と、何への答えだったかを書いた `stance-history.md`）にあります。
 
