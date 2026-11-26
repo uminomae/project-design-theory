@@ -240,7 +240,6 @@ pjdhiro の言う「無限大のような極大さ」に、数学で近いもの
 
 - 『信心銘』（伝・僧璨）。大正蔵 T48 no.2010。「圓同太虛　無欠無餘」は [0376b24](https://cbetaonline.dila.edu.tw/zh/T48n2010_p0376b24)、「極小同大　妄絕境界　極大同小　不見邊表」は [0377a05〜a06](https://cbetaonline.dila.edu.tw/zh/T48n2010_p0377a05)（CBETA の本文で照合。「妄絕境界」の「妄」は大正蔵の字で、校注の甲本は「忘」。日本で広く読まれる本文は「忘絶境界」）。すぐ前の句は「一念萬年」「十方目前」で、時の長さと十方の広さを分けずに語る。
 - 『碧巌録』第 33 則「陳操尚書看資福」。大正蔵 T48 no.2003 巻 4、[0172a17〜a19](https://cbetaonline.dila.edu.tw/zh/T48n2003_p0172a17)（CBETA の本文で照合）。資福が円を描き、陳操がそれを退け、資福は方丈の戸を閉める。
-- 禅の円が、単位円のどの性質に近いかを禅籍で調べた記録は、「[禅の円は、単位円のようなものを表しているか](https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/beauty/SURVEY-zen-unit-circle-20261123.md)」にあります。回り続けることと鏡の面では近く、欠けの無さの面では逆を向く、という読みです。
 
 </details>
 

@@ -18,6 +18,11 @@
 //            pd/src/styles/reader-flow.css は .tablewrap の表に min-width: 520px を付け、.tablefit で囲んだ表だけ幅に収める。
 //            だから、reader-flow の読み物で .tablefit に囲まれていない .tablewrap の数を数える。決まり：stance.md 2-7「表は横スクロールさせない」。
 //            数えているのは HTML の形で、画面の実際のはみ出しではない（画面での確かめは docs/TESTING.md「作りたいもの」）。
+//   workrefs 読み物（pd/reader/*.html・cs/reader/*.html）と入口（pd・cs・as・ks の index.html）から、作業の途中の Issue と、
+//            探索・調べの記録を読者に指していないか。当たりにするのは、この repo の Issue へのリンク、読者に見える文字の
+//            「Issue #N」「（#N）」「（探索：#N）」「pd#N」のような番号、knowledge/research/ の記録（EXPLORE・SURVEY・RR・PLAN・
+//            ANALYSIS・REVIEW・DRAFT・LOG）の md へのリンク。HTML の注記（<!-- -->）・script・style は外して見る。
+//            決まり：stance.md 2-7「公開ページから、作業の途中の Issue と、探索・調べの記録を、読者に指さない」（2026-11-26）。
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { join } from 'node:path';
@@ -101,6 +106,40 @@ const results = {};
     total: hits.reduce((a, h) => a + h.n, 0),
     files: hits,
     unit: '表',
+  };
+}
+
+// ---- workrefs
+{
+  const files = [
+    ...ls('pd/reader', /\.html$/),
+    ...ls('cs/reader', /\.html$/),
+    ...['pd/index.html', 'cs/index.html', 'as/index.html', 'ks/index.html'].filter((f) => existsSync(join(ROOT, f))),
+  ];
+  const ISSUE_LINK = /github\.com\/uminomae\/project-design-theory\/issues\/\d+/g;
+  const RECORD_LINK = /github\.com\/uminomae\/project-design-theory\/(?:blob|tree)\/[a-z]+\/[^"'\s]*knowledge\/research\/[^"'\s]*\/(?:EXPLORE|SURVEY|RR|PLAN|ANALYSIS|REVIEW|DRAFT|LOG)-[^"'\s]*\.md/g;
+  const NUM = /Issue\s*#\d+|（(?:探索：|追跡：)?#\d+）|\((?:[Ee]xploration: )?#\d+\)|(?<![A-Za-z0-9&])(?:pd|cs|as|ks)#\d+/g;
+  const hits = [];
+  for (const f of files) {
+    const raw = read(f)
+      .replace(/<script\b[\s\S]*?<\/script>/gi, ' ')
+      .replace(/<style\b[\s\S]*?<\/style>/gi, ' ')
+      .replace(/<!--[\s\S]*?-->/g, ' ');
+    const found = [];
+    for (const m of raw.matchAll(ISSUE_LINK)) found.push(`Issue へのリンク：${m[0].replace(/.*\/issues\//, '#')}`);
+    for (const m of raw.matchAll(RECORD_LINK)) found.push(`記録へのリンク：${m[0].replace(/.*knowledge\/research\//, '')}`);
+    const text = raw.replace(/<[^>]+>/g, '\n');
+    for (const line of text.split('\n')) {
+      const m = line.match(NUM);
+      if (m) found.push(...m.map((x) => `番号 ${x}：${line.trim().slice(0, 60)}`));
+    }
+    if (found.length) hits.push({ file: f, n: found.length, lines: found });
+  }
+  results.workrefs = {
+    title: '読み物と入口から、作業の途中の Issue と探索・調べの記録を指すもの',
+    total: hits.reduce((a, h) => a + h.n, 0),
+    files: hits,
+    unit: 'か所',
   };
 }
 

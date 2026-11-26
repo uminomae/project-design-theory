@@ -1564,7 +1564,7 @@ As seen in the chapter at the end of Part 1, "[What has the word Love pointed to
 
 Perhaps the same single word is applied to various aspects. People give names to vortices of a size easy to perceive (the fold "[Words are names for the vortices seen between the waves](#ldd-vortex)"). The narrowest way of cutting out Love is as a feeling, such as falling in love or fondness. What pjdhiro wants to call Love includes those feelings, and is what moves them. pjdhiro is not confident enough to state flatly that this is Love, and that is why this reader writes "what I want to call Love".
 
-🚧 Asking about the driving source of each of the things lined up in the chapter at the end of Part 1 is under construction. (Exploration: [#89](https://github.com/uminomae/project-design-theory/issues/89))
+🚧 Asking about the driving source of each of the things lined up in the chapter at the end of Part 1 is under construction.
 
 ## What is what I want to call Love not?
 
@@ -2240,10 +2240,10 @@ To read the theory of intrinsic motivation, you can go from [What is intrinsic m
 
 <div class="tablefit cols-2">
 
-| Definition | Being capable of being in uncertainties, mysteries and doubts without any irritable reaching after fact and reason. The poet Keats named it, in a letter to the poet's brothers in December 1817, as the quality that goes to form a man of achievement, especially in literature, and which Shakespeare possessed so enormously (Keats, 1817). In later research, for example, a paper studying public health nurses in Japanese local governments introduces it as the ability to stay in uncertainty and ambiguity without rushing to conclusions (Ujihara et al., 2026). 🚧 How the word has been used in psychoanalysis and clinical practice is under construction (exploration: [#119](https://github.com/uminomae/project-design-theory/issues/119)) |
+| Definition | Being capable of being in uncertainties, mysteries and doubts without any irritable reaching after fact and reason. The poet Keats named it, in a letter to the poet's brothers in December 1817, as the quality that goes to form a man of achievement, especially in literature, and which Shakespeare possessed so enormously (Keats, 1817). In later research, for example, a paper studying public health nurses in Japanese local governments introduces it as the ability to stay in uncertainty and ambiguity without rushing to conclusions (Ujihara et al., 2026). 🚧 How the word has been used in psychoanalysis and clinical practice is under construction |
 |---|---|
 | Common misunderstandings | It is taken as the endurance of gritting one's teeth and bearing what has no answer. It is also sometimes taken as indecision that puts off deciding, or as an individual ability to be trained and increased |
-| Interpretation from the viewpoint of Love-Driven Development | This passage of Keats's letter has no words of enduring or effort. The poet Coleridge, given as the opposite example, is written of as one who cannot remain content with half-knowledge. What anxiety is is looked at in the chapter "[What is anxiety?](#ldd-uncertain)" and on the separate page "[What is anxiety?](anxiety.html)" (in Japanese). 🚧 How this word relates to the [holding](#ldd-hold) of Kesson-Driven Thinking and to pjdhiro's view in the GRIT entry (endurance as resignation and acceptance) is under construction (exploration: [#119](https://github.com/uminomae/project-design-theory/issues/119)) |
+| Interpretation from the viewpoint of Love-Driven Development | This passage of Keats's letter has no words of enduring or effort. The poet Coleridge, given as the opposite example, is written of as one who cannot remain content with half-knowledge. What anxiety is is looked at in the chapter "[What is anxiety?](#ldd-uncertain)" and on the separate page "[What is anxiety?](anxiety.html)" (in Japanese). 🚧 How this word relates to the [holding](#ldd-hold) of Kesson-Driven Thinking and to pjdhiro's view in the GRIT entry (endurance as resignation and acceptance) is under construction |
 | Conditions under which it works | Keats closes this passage of the letter by saying that, pursued through, it would perhaps take one no further than this: that with a great poet the sense of Beauty overcomes every other consideration, or rather obliterates all consideration (Keats, 1817) |
 
 </div>
@@ -2273,7 +2273,7 @@ All three look like two things in opposition. What differs is where, and what co
 
 - **Conflict**: two or more motives or goals competing within one person. Lewin divided this into three types: wanting both (approach–approach), wanting to avoid both (avoidance–avoidance), and being both drawn to and wanting to avoid one goal (approach–avoidance). Discrepancies of wishes, opinions or norms between people are also called interpersonal conflict (*Saishin shinrigaku jiten*).
 - **Cognitive dissonance**: a state within one person in which things one knows or believes do not fit with one another. The misfit produces pressure to reduce it, and people may reduce it by changing their own thoughts or attitudes (*Dejitaru Daijisen*; Festinger and Carlsmith 1959). In Festinger and Carlsmith's experiment, people made to tell others that a boring task had been interesting, and paid one dollar, later themselves rated the task as interesting. Those paid twenty dollars did not change their ratings. It is written that they persuaded themselves to fit what they had said.
-- **Double bind**: 🚧 under construction (to be written after reading the original by Bateson et al. 1956; exploration: [#121](https://github.com/uminomae/project-design-theory/issues/121)).
+- **Double bind**: 🚧 under construction (to be written after reading the original by Bateson et al. 1956).
 
 </details>
 

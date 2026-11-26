@@ -49,7 +49,8 @@ description: 公開ページ（読み物・四つの入口・wiki・cs/as/ks の
 - [ ] 作業の印・内部連絡：照合中・判断が要る・司令塔が直す の節、Issue の番号、モデルの名前、生成の記録、`access_status`、進み具合の板（f870559・cdc4a4c・stance 2-7）
 - [ ] 道具の呼び出しの文字の残り（invoke・parameter の閉じタグ。b03be3d で正本と精読ノートの終わりに残り、公開ページに出ていた。check.sh が見る）
 - [ ] 今までの repo の名前と URL（project-design・creation-space・awareness-space・kesson-space。meta・llms.txt・aria の文言・テストの例も。aed76ee・7ba5240・607202a・ae86a76）
-- [ ] 読者が開けないリンク：非公開のアーカイブの Issue、claude.ai のアーティファクト（8adbbb4・3d97f55・stance 2-7）。追う必要があるなら、今の repo に Issue を立ててそこへ向ける
+- [ ] 読者が開けないリンク：非公開のアーカイブの Issue、claude.ai のアーティファクト（8adbbb4・3d97f55・stance 2-7）
+- [ ] 作業の途中の Issue（番号もリンクも。工事中の印の「（#64）」「（探索：#89）」「追跡 Issue」「検証プログラム #5」）と、探索・調べの記録（`knowledge/research/` の EXPLORE・SURVEY・RR などの md）を、読者に指す文やリンク。工事中は「🚧 工事中」とだけ書く。載せない中身を記録へのリンクで代えない。引いてよい md は、ページの原稿（正本）・本人の言葉の出所（発言集・対話録）・原典の訳・誰でも回せる計算。経緯そのものが中身のページ（軌跡・申し送り・cs の記録の窓）は別（2026-11-26・付箋 i20261126111918wjk・stance 2-7「読者は管理者ではない」。機械が見る：`node scripts/check-public-notices.mjs --list` の workrefs）
 - [ ] 非公開の repo の中のパスと中身（f870559 の origin-survey）。名前と番号までなら書いてよい（`~/dev/CLAUDE.md`）
 - [ ] pjdhiro の repo のものを読み込む・指す配線を足していない。総論・論文版 PDF・ブログの API・著者の写真の og:image・JSON-LD の sameAs・メニューの BLOG が当たる。出典として引くページへのリンクだけは残す（1d82278・441a277・471b229・#134・pjdhiro 2026-11-11「もうpjdhiro repoは使わないで欲しい」）
 - [ ] 誤りを含んだ古い版を、入口・畳み・機械向けの案内に残していない（a5c4786・73ee479 でしまった読み物が HOME に残っていた）。まだ書いていないところは隠さず「工事中」と書く（英語の画面は英語で）

@@ -129,7 +129,6 @@ e 以外の数でも、同じように「数の iθ 乗」を決めると、円�
 
 数学者たちがオイラーの等式を美しいと呼んできたことと、その美しさを脳で測った研究は、読み物「[美とは](beauty.html#bt-euler)」の章「数学者が、いちばん美しいと呼んできた式」にあります。
 
-i を掛けて 90 度回ることと、オイラーの式を、人の意識に照らして推論した探索は、記録「[複素平面の数式ごとに、人の意識との構造の類似を推論する](https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/julia-potential/EXPLORE-formulas-consciousness-20261125.md)」の節「i を掛けること（90 度の回転）と、i² = −1」と節「指数関数と対数関数（オイラーの式・対数らせん・log の多価）」にあります。
 
 e<sup>z</sup> を返す関数 exp の説明書（定義・前提・例・使い所・注意・関連）は、「[人類の man](man.html#man-exp)」にあります。
 
