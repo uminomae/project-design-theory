@@ -1,0 +1,125 @@
+# 読み物のページと cs の 30 分野を、科研費の審査区分表の小区分に当てた下書き（Claude の読み・2026-11-26）。
+# 列：種類（page＝pd/reader の一ページ・shelf＝並びや目次で、中身は呼ぶ先のページの側・cs＝創造とはの分野）・ID（ファイル名か分野の番号）・小区分（空白で区切る。無ければ -）・根拠（読んだもの）・メモ
+# 当て方：ページは <title> と meta description と見出しを、cs は cs/evidence/evidence-Dxx-*.md の「論ごとの節」の見出し（論の名と著者）を読んで、その論が、区分表の「内容の例」のどこに入るかで当てた。主に扱う区分だけを置き、一文触れるだけの区分は入れない。
+# 別のコンテキストで照合し直す前の下書き（RELEASE-STAGES.md §1）。
+page	abilities	-	reader/abilities.html	並びのページ（能力のジャンルの入口）
+page	ac-phasor	26010 12010	reader/ac-phasor.html	交流回路・複素数
+page	ac-phasor-unfolded	26010 12010	reader/ac-phasor-unfolded.html	交流回路・複素数
+page	angle-rotation	11020 12010 09040	reader/angle-rotation.html	角度・三角関数・学校の数学の順
+page	anshin	01020 01040 10010	reader/anshin.html	達磨安心・語の来歴・山岸の安心と信頼
+page	anxiety	10030 52030	reader/anxiety.html	新田（精神科医）の定義
+page	beauty	01050	reader/beauty.html	美学
+page	breath-filter	01020 10040	reader/breath-filter.html	止観の体験・知覚
+page	buckle-history-of-civilization-ja	03040 01040 12030	reader/buckle-history-of-civilization-ja.html	対訳・統計の規則性
+page	business-design-syllabus	07060 09050	reader/business-design-syllabus.html	事業構想の授業
+page	capacity-after-ai	07030 61030 10020	reader/capacity-after-ai.html	道具と人の分担・労働・能力
+page	carus-onslaught-on-necessity-ja	01080 01040	reader/carus-onslaught-on-necessity-ja.html	対訳・必然論
+page	clausius-art-der-bewegung-ja	01080 13010	reader/clausius-art-der-bewegung-ja.html	対訳・気体の運動論
+page	clausius-bewegende-kraft-der-warme-ja	01080 19020	reader/clausius-bewegende-kraft-der-warme-ja.html	対訳・熱力学
+page	cognitive-abilities	10020 10040	reader/cognitive-abilities.html	知能の因子
+page	complex-plane	-	reader/complex-plane.html	目次のページ（複素数の法則十七）
+page	creative-thinking	10020 09010 80030	reader/creative-thinking.html	PISA の定義・創造性の心理
+page	darwin-historical-sketch-ja	45020 01080	reader/darwin-historical-sketch-ja.html	対訳
+page	darwin-wallace-1858-ja	45020 01080	reader/darwin-wallace-1858-ja.html	対訳
+page	decision-making	07060 10040	reader/decision-making.html	意思決定
+page	defense-mechanisms	10030	reader/defense-mechanisms.html	防衛機制
+page	developmental-stages	10020	reader/developmental-stages.html	成人の自我発達
+page	draper-intellectual-development-ja	03040 01030 01080	reader/draper-intellectual-development-ja.html	対訳
+page	emerging-abilities	09010 07030 10020	reader/emerging-abilities.html	公的な能力の枠組み
+page	empathy	10010 10030 80030	reader/empathy.html	共感
+page	euler-formula	12010 11010	reader/euler-formula.html	複素数
+page	euler-unfolded	12010 11020	reader/euler-unfolded.html	ステレオ投影
+page	forgiveness-salvation	01030 01020	reader/forgiveness-salvation.html	キリスト教ほかの伝統
+page	fundamental-theorem-of-algebra	11010 12010	reader/fundamental-theorem-of-algebra.html	代数学の基本定理
+page	fundamental-theorem-of-algebra-analogy	11010 80030	reader/fundamental-theorem-of-algebra-analogy.html	構造の類似
+page	gravity-love	16010	reader/gravity-love.html	重力
+page	gravity-well	16010 17010	reader/gravity-well.html	重力の井戸
+page	hamilton-philosophy-of-the-unconditioned-ja	01010 01040	reader/hamilton-philosophy-of-the-unconditioned-ja.html	対訳
+page	helmholtz-erhaltung-der-kraft-ja	01080 13010	reader/helmholtz-erhaltung-der-kraft-ja.html	対訳・力の保存
+page	herapath-mathematical-physics-ja	01080 13010	reader/herapath-mathematical-physics-ja.html	対訳・気体の運動論
+page	herschel-quetelet-probabilities-ja	01080 12030	reader/herschel-quetelet-probabilities-ja.html	対訳・確率論
+page	influences-management	07060	reader/influences-management.html	影響を受けた経営学
+page	influences-psychology	10030 10020	reader/influences-psychology.html	影響を受けた心理学
+page	intrinsic-motivation	10020 10010	reader/intrinsic-motivation.html	自己決定理論
+page	james-substance-and-shadow-ja	01030 01040	reader/james-substance-and-shadow-ja.html	対訳
+page	julia-potential	12020 07060	reader/julia-potential.html	複素力学系・起業家
+page	kolliker-darwinsche-schopfungstheorie-ja	45020 44020 01080	reader/kolliker-darwinsche-schopfungstheorie-ja.html	対訳・発生学
+page	kronig-theorie-der-gase-ja	01080 13010	reader/kronig-theorie-der-gase-ja.html	対訳
+page	life-drivers	01010 01040 01030	reader/life-drivers.html	哲学・宗教の駆動源の見方
+page	love-driven-dev	07060 10030 01020	reader/love-driven-dev.html	Love駆動開発そのものは区分に無い。触れる区分だけ
+page	love-driven-dev-en	07060 10030 01020	reader/love-driven-dev-en.html	英語版
+page	love-history	01020 01010 01040	reader/love-history.html	仏教と西洋哲学の愛
+page	love-trajectory	-	reader/love-trajectory.html	pjdhiro の一年の記録。区分に入らない
+page	management-drivers	07060	reader/management-drivers.html	経営学
+page	mandeville-grumbling-hive-ja	07010 02020	reader/mandeville-grumbling-hive-ja.html	対訳・経済学史
+page	mansel-limits-of-religious-thought-ja	01030 01010	reader/mansel-limits-of-religious-thought-ja.html	対訳
+page	maxwell-dynamical-theory-of-gases-ja	01080 13010	reader/maxwell-dynamical-theory-of-gases-ja.html	対訳
+page	metacognition	10020 80030	reader/metacognition.html	メタ認知
+page	mill-examination-of-hamilton-ja	01010 01040	reader/mill-examination-of-hamilton-ja.html	対訳
+page	mintzberg-schools	07060	reader/mintzberg-schools.html	戦略論の学派
+page	naegeli-abstammungslehre-ja	45020 01080	reader/naegeli-abstammungslehre-ja.html	対訳
+page	newcomb-political-economy-ja	07010	reader/newcomb-political-economy-ja.html	対訳・経済学史
+page	no-road-ahead	01010 02010	reader/no-road-ahead.html	時間の向き・「道程」
+page	nonaka-complement	07060	reader/nonaka-complement.html	知識創造の論
+page	nondual	01020 01010	reader/nondual.html	不二
+page	peirce-evolutionary-love-ja	01010 01040 01030	reader/peirce-evolutionary-love-ja.html	対訳
+page	peirce-glassy-essence-ja	01010 01040	reader/peirce-glassy-essence-ja.html	対訳
+page	peirce-law-of-mind-ja	01010 01040	reader/peirce-law-of-mind-ja.html	対訳
+page	peirce-love-abduction	01010 01080	reader/peirce-love-abduction.html	アガパズム・アブダクション
+page	personality	10020 10030	reader/personality.html	パーソナリティ（区分表は 10020 の例に置く）
+page	psychological-safety	10010 07060	reader/psychological-safety.html	チームの信念・組織行動
+page	psychological-safety-en	10010 07060	reader/psychological-safety-en.html	英語版
+page	quetelet-lettres-probabilites-ja	12030 01080 08010	reader/quetelet-lettres-probabilites-ja.html	対訳・平均と誤差
+page	rankine-mechanical-action-of-heat-ja	01080 19020	reader/rankine-mechanical-action-of-heat-ja.html	対訳
+page	reading-directions	61030	reader/reading-directions.html	LLM への申し送り
+page	reasoning	01010 80030	reader/reasoning.html	推論の種類
+page	rotation-multiplication	12010 09040	reader/rotation-multiplication.html	数学 III の前提
+page	shelf-love	-	reader/shelf-love.html	並び
+page	shelf-mind	-	reader/shelf-mind.html	並び
+page	shelf-number-org	-	reader/shelf-number-org.html	並び
+page	shelf-thinking	-	reader/shelf-thinking.html	並び
+page	shelf-translations	-	reader/shelf-translations.html	並び
+page	shikan	01020 10030	reader/shikan.html	止観
+page	stages-defense	10030 10020	reader/stages-defense.html	段階と防衛
+page	stages-screener	10020 10030	reader/stages-screener.html	スクリーナー（測定評価）
+page	subtraction-kinds	11010 12030	reader/subtraction-kinds.html	引き算の種類
+page	thinking	01010 80030	reader/thinking.html	思考とは
+page	thinking-definitions	01010 01040 10040	reader/thinking-definitions.html	「考える」の語
+page	thomson-heat-ja	01080 19020	reader/thomson-heat-ja.html	対訳
+page	three-and-seven	11010 07060	reader/three-and-seven.html	可除代数・チームの大きさ
+page	to-james	02040 01040	reader/to-james.html	I と me・ジェームズ
+page	via-vulnerability	01080 10030 51010	reader/via-vulnerability.html	病理から全体を知る方法
+page	vibe-to-code	60050 61020	reader/vibe-to-code.html	生成 AI との対話
+page	weismann-significance-of-sexual-reproduction-ja	45020 45010	reader/weismann-significance-of-sexual-reproduction-ja.html	対訳
+page	william-james-self-ja	01040 01010	reader/william-james-self-ja.html	対訳
+page	zen-circle-hs	01020 11020 09040	reader/zen-circle-hs.html	禅の円・高校の数学
+cs	D01	11010 11020 12020 12030 19010	evidence-D01-mathematics.md	スピノル・ガロア・高次圏＝11010／層・持続ホモロジー・Morse・リッチフロー＝11020／Julia 集合・周期 3＝12020／持続ホモロジー＝12030／境界層＝19010
+cs	D02	13010 13030 16010 12020 91030	evidence-D02-physics.md	BKT・くりこみ群・ベナール対流＝13010／アブリコソフ＝13030／経路の和・対称性の破れ・キブル＝ズレック＝16010／ローレンツ＝12020／デコヒーレンス＝91030
+cs	D03	32010 33010 43060 45020	evidence-D03-chemistry.md	核生成・BZ 反応・反応拡散・連鎖反応＝32010／超分子＝33010／化学振動の普遍構造＝43060／RNA ワールド＝45020
+cs	D04	45020 45040 44020 45010	evidence-D04-evolutionary-biology.md	自然選択・断続平衡・赤の女王・適応放散＝45020／ニッチ構築＝45040／発生可塑性＝44020／水平遺伝子移動＝45010
+cs	D05	15040 15020 15050	evidence-D05-earth-science.md	プレート・地震・火山・層序＝15040／ENSO・ミランコビッチ＝15020／大量絶滅＝15050
+cs	D06	17010 16010 15010	evidence-D06-astronomy.md	星形成・銀河・降着円盤・太陽周期・球状星団＝17010／大規模構造・中性子星合体＝16010／惑星系形成＝15010
+cs	D07	26040 61030 60060 60010 60050 60070 07060	evidence-D07-engineering.md	フィードバック・頑健さ＝26040／深層学習・強化学習＝61030／TCP＝60060／情報理論・圧縮センシング＝60010／リファクタリング＝60050／公開鍵＝60070／PDCA＝07060
+cs	D08	46020 51010 80030 48020	evidence-D08-neuroscience.md	予測符号化・前頭前野・同期＝46020／自由エネルギー・ワークスペース・夢＝51010／構成された情動・内受容＝80030／ポリヴェーガル＝48020
+cs	D09	46010 46020 48020 45020 44010 44020 49070	evidence-D09-life-sciences.md	アストロサイト・信号のエネルギー・ミクログリア・ミエリン・グリンパティック＝46010／報酬予測誤差＝46020／アロスタシス＝48020／有性生殖＝45020／オートファジー＝44010／位置情報＝44020／クローン選択＝49070
+cs	D10	49070 56070 55060 56020 54020 52030	evidence-D10-clinical-medicine.md	クローン選択・炎症の収束・胚中心＝49070／創傷治癒＝56070／敗血症＝55060／骨折＝56020／免疫療法・自己免疫＝54020／生物心理社会モデル＝52030
+cs	D11	47010 47060 47050 47020 49050	evidence-D11-pharmacy.md	開発のパイプライン・構造ベース創薬＝47010／PK/PD・ファーマコゲノミクス・相互作用＝47060／君臣佐使＝47050／QbD＝47020／抗菌薬耐性＝49050
+cs	D12	45040 38010 39040 40050 64040	evidence-D12-agriculture.md	遷移・レジームシフト・境界・植生の模様・生態系エンジニア＝45040／窒素・植物と土壌＝38010／IPM＝39040／景観の連結性・状態と遷移＝40050／適応サイクル＝64040
+cs	D13	01010 09010	evidence-D13-philosophy.md	シモンドン・ホワイトヘッド・シェリング・メルロ＝ポンティ・パース・西田・ヘーゲル＝01010／デューイの反省的思考＝09010
+cs	D14	10040 10010 80030 10030	evidence-D14-psychology.md	洞察・注意・課題の切り替え＝10040／認知的不協和＝10010／4E 認知・予測処理＝80030／ロジャーズ＝10030
+cs	D15	01050 10030	evidence-D15-aesthetics.md	カント・シラー・ベンヤミン・ランシエール・日本美学＝01050／メルツァーの美的葛藤＝10030
+cs	D16	03010 03030 06010 01040	evidence-D16-history.md	ブローデル・トインビー・ターチン＝03010／イブン・ハルドゥーン＝03030／経路依存＝06010／ヴィーコ・マルクス＝01040
+cs	D17	02040	evidence-D17-linguistics.md	どの論も 02040
+cs	D18	08010	evidence-D18-sociology.md	どの論も 08010
+cs	D19	02030	evidence-D19-literary-studies.md	どの論も 02030
+cs	D20	05020 05030 06020 64060	evidence-D20-law-politics.md	制憲権力・憲法づくり＝05020／調停の規則＝05030／国際レジーム＝06020／適応的ガバナンス＝64060
+cs	D21	07010 07040	evidence-D21-economics.md	シュンペーター・ハイエク・ケインズ・ナイト・アーサー・クルーグマン＝07010／ミンスキー＝07040
+cs	D22	07060 80010 10010	evidence-D22-business-management.md	知識創造・Gersick・March・Weick・エフェクチュエーション・U 理論＝07060／デザイン思考＝80010／Tuckman＝10010
+cs	D23	10020 09030	evidence-D23-developmental-psychology.md	動的システム・トマセロ・クック＝グロイター・トロニック・ピアジェ・ロシャ・フィッシャー・DIDS・マズロー＝10020／ヴィゴツキー・愛着＝09030
+cs	D24	01030 01020 04030	evidence-D24-religion.md	回心・テレサ・スーフィズム・錬金術・ジェイムズ・アンダーヒル＝01030／十牛図・菩薩の十地＝01020／ターナー＝04030
+cs	D25	04030	evidence-D25-anthropology.md	どの論も 04030
+cs	D26	01050 10040 04030	evidence-D26-musicology.md	ソナタ形式・ラーガ・協和＝01050／ITPRA・グルーヴ・聴覚景＝10040／歌の普遍性＝04030
+cs	D27	22030 22040	evidence-D27-architecture.md	アレグザンダー・アラヴェナ＝22030／間・計算形態生成・パラメトリシズム＝22040
+cs	D28	01050 01070 04030	evidence-D28-performing-arts.md	世阿弥・フィッシャー＝リヒテ＝01050／即興・スタニスラフスキー＝01070／シェクナー＝04030
+cs	D29	13010 12020 43060 61040	evidence-D29-complexity-science.md	散逸構造・自己組織化臨界・臨界現象＝13010／反応拡散＝12020／自己触媒集合＝43060／カオスの縁・ネットワーク＝61040
+cs	D30	45040 04030 01070 38020 64060	evidence-D30-traditional-knowledge.md	伝統知そのものは区分に無い。TEK＝45040／メーティス＝04030／一座建立＝01070／杜氏＝38020／系の組み替え＝64060

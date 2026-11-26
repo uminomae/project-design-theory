@@ -1,0 +1,120 @@
+# 誤解の台帳を、公的な防衛の尺度と発達の尺度に当てた表（下書き）
+
+`docs/RELEASE-STAGES.md` 3.3（B バグチェッカーの範囲）の段 1 の下書き。このファイルは `python3 -I scripts/release-maps.py` が `kokoro-assign.tsv` から作る。手で直さず、TSV を直して作り直す。
+
+- 台帳：`docs/tools/kokoro-scan/ruler.md` 版 1.12 の「よくある誤解（台帳）」46 項。番号 R01〜R46 は台帳の並び順。
+- DMRS：Di Giuseppe & Perry 2021（*Frontiers in Psychology* 12:718440, https://doi.org/10.3389/fpsyg.2021.718440）の 7 水準・30 の防衛。防衛の名の訳は `pd/reader/defense-mechanisms.html` の表のとおり（本文照合済の写しは `pd/knowledge/research/defense-mechanisms/SURVEY-classifications-20261122.md` §5）。
+- WUSCT：Hy & Loevinger 1996（*Measuring Ego Development*, 2nd ed.）の段階 E2〜E9。E 番号と英語の名は記憶で、原典は未照合。repo のページはクック＝グロイター 2013 の呼び名を使うので、横に並べた（対応はクック＝グロイター 2013 が括弧で書く Loevinger の段階の番号による。`pd/knowledge/research/developmental-stages/README.md` §1・§2）。
+- 当て方は Claude の読み（2026-11-26）。DMRS は、その誤解の中で働いている防衛か、誤解が見落としている防衛を一つから三つ。WUSCT は、その誤解が出やすい段階か、同じ語の向きが反転する境目の段階を、クック＝グロイター 2013 の段階ごとの主な不安と防衛から読んだ。防衛でない取り違え（語の水準・定義の混同）と、段階の根拠が repo に無いものは「—」。別のコンテキストで照合し直す前の下書き。
+
+## 数
+
+| 項目 | 数 |
+|---|---|
+| 台帳の項 | 46（うち pjdhiro 由来 29） |
+| DMRS の防衛に当てた項 | 30 / 46 |
+| WUSCT の段階に当てた項 | 22 / 46 |
+| どちらにも当てない項 | 14 / 46（多くは F4・F5 の取り違えと条件の欠落。枠 2 へ） |
+| DMRS の防衛 | 当たる項がある 18 / 30（空き 12） |
+| DMRS の水準 | 当たる項がある 6 / 7 |
+| WUSCT の段階 | 当たる項がある 4 / 8（空き 4） |
+
+## DMRS の 30 の防衛から見た表
+
+| 水準 | 防衛 | 当たる項 |
+|---|---|---|
+| 7 高い適応（成熟） | 人に頼る | R08 |
+| 7 高い適応（成熟） | 利他 | （空き） |
+| 7 高い適応（成熟） | 予期 | R36 |
+| 7 高い適応（成熟） | ユーモア | （空き） |
+| 7 高い適応（成熟） | 自己主張 | （空き） |
+| 7 高い適応（成熟） | 自己観察 | R01 |
+| 7 高い適応（成熟） | 昇華 | （空き） |
+| 7 高い適応（成熟） | 抑制 | R25・R27 |
+| 6 強迫的（神経症的） | 感情の隔離 | （空き） |
+| 6 強迫的（神経症的） | 知性化 | R02・R21・R24・R40 |
+| 6 強迫的（神経症的） | 打ち消し | （空き） |
+| 5 そのほかの神経症的 | 抑圧 | R17 |
+| 5 そのほかの神経症的 | 解離 | （空き） |
+| 5 そのほかの神経症的 | 反動形成 | R17・R19 |
+| 5 そのほかの神経症的 | 置き換え | （空き） |
+| 4 小さな像の歪み（未熟） | 自己の価値下げ | R24 |
+| 4 小さな像の歪み（未熟） | 他者の価値下げ | R20・R46 |
+| 4 小さな像の歪み（未熟） | 自己の理想化 | R26・R28 |
+| 4 小さな像の歪み（未熟） | 他者の理想化 | R03・R04・R05・R15・R33・R42 |
+| 4 小さな像の歪み（未熟） | 万能 | R14・R19・R26・R32・R36 |
+| 3 否認（未熟） | 否認 | R04・R07・R08・R13・R17・R20・R34 |
+| 3 否認（未熟） | 合理化 | R07・R10・R28・R30・R40 |
+| 3 否認（未熟） | 投影 | R03・R37 |
+| 3 否認（未熟） | 自閉的空想 | （空き） |
+| 2 大きな像の歪み（未熟） | 自己像の分裂 | R23 |
+| 2 大きな像の歪み（未熟） | 他者像の分裂 | R05・R23・R42 |
+| 2 大きな像の歪み（未熟） | 投影性同一視 | R03 |
+| 1 行動（未熟） | 行動化 | （空き） |
+| 1 行動（未熟） | 助けを拒む不平 | （空き） |
+| 1 行動（未熟） | 受動的攻撃 | （空き） |
+
+## WUSCT の段階から見た表
+
+| WUSCT | repo の呼び名（クック＝グロイター） | 当たる項 |
+|---|---|---|
+| E2 衝動（Impulsive） | 衝動（2） | （空き） |
+| E3 自己保護（Self-Protective） | 自己保護（2/3） | R03・R08・R10・R11・R12 |
+| E4 順応（Conformist） | 順応（3） | R01・R03・R04・R05・R07・R08・R12・R13・R17・R23・R30・R42 |
+| E5 自己意識（Self-Aware） | 専門家（3/4） | R01・R07・R19・R20・R24・R30 |
+| E6 良心（Conscientious） | 達成者（4） | R01・R07・R24・R25・R26・R32・R36・R40 |
+| E7 個人主義（Individualistic） | 多元（4/5） | （空き） |
+| E8 自律（Autonomous） | 戦略家（5） | （空き） |
+| E9 統合（Integrated） | 構成への気づき（5/6）以降 | （空き） |
+
+## 台帳の 46 項
+
+| 番号 | 節 | 誤解 | DMRS | WUSCT | 根拠 |
+|---|---|---|---|---|---|
+| R01 ★ | メタ認知・視点・共感 | メタ認知を他者視点取得と取り違える | 自己観察 | E4・E5・E6 | pd/reader/metacognition.html・pd/knowledge/research/developmental-stages/README.md |
+| R02 | メタ認知・視点・共感 | 視点取得を共感と取り違える | 知性化 | — | pd/reader/empathy.html |
+| R03 ★ | メタ認知・視点・共感 | 共感を境が消えて一つになることと思う | 投影・投影性同一視・他者の理想化 | E3・E4 | pd/reader/empathy.html・docs/rules/stance.md 1-1 |
+| R04 ★ | 信頼・安心・理想化 | 信頼と信仰・期待・理想化を分けない | 他者の理想化・否認 | E4 | pd/reader/love-driven-dev.html 第四部・docs/rules/stance.md 1-3 |
+| R05 | 信頼・安心・理想化 | 良い面だけ預けることを信頼と呼ぶ | 他者の理想化・他者像の分裂 | E4 | pd/reader/love-driven-dev.html「理想化と信頼は、どう違うのか」 |
+| R06 | 信頼・安心・理想化 | 安心と信頼を同じものと書く | — | — | pd/reader/anshin.html |
+| R07 ★ | 信頼・安心・理想化 | 信頼を不安が取り除かれた後の状態と書く | 否認・合理化 | E4・E5・E6 | docs/rules/stance-theories.md 信頼の行 |
+| R08 ★ | 信頼・安心・理想化 | 防衛を下ろす安心と保身の安心を区別しない | 人に頼る・否認 | E3・E4 | pd/reader/love-driven-dev.html・pd/reader/anshin.html |
+| R09 ★ | 心理的安全性 | 心理的安全性を一人の内側の能力として扱う | — | — | pd/reader/psychological-safety.html |
+| R10 ★ | 心理的安全性 | 心理的安全性を自分自身の安心・安全と読む | 合理化 | E3 | pd/reader/psychological-safety.html |
+| R11 ★ | 心理的安全性 | 安全を身の安全・罰されないことと読む | — | E3 | pd/reader/psychological-safety.html |
+| R12 ★ | 心理的安全性 | 罰を恐れずに済むことだけを残す | — | E3・E4 | pd/reader/love-driven-dev.html・pd/reader/psychological-safety.html |
+| R13 | 心理的安全性 | 優しさ・居心地のよさと思う | 否認 | E4 | pd/reader/psychological-safety.html |
+| R14 | 心理的安全性 | 宣言すれば作れると思う | 万能 | — | pd/reader/psychological-safety.html |
+| R15 ★ | 心理的安全性 | 高いほど良く、どこでも要ると思う | 他者の理想化 | — | pd/reader/psychological-safety.html |
+| R16 | 心理的安全性 | 脅威を取り除けば安全だと思う | — | — | pd/reader/psychological-safety.html |
+| R17 ★ | 不安・防衛・葛藤 | 不安を消すもの・無いほうが良いものとして書く | 否認・抑圧・反動形成 | E4 | pd/reader/anxiety.html・pd/knowledge/research/developmental-stages/READER-developmental-stages.md（順応の感情の表） |
+| R18 | 不安・防衛・葛藤 | 不安と恐怖を一つの軸に並べる | — | — | docs/rules/stance.md 1-3 |
+| R19 ★ | 不安・防衛・葛藤 | 脆弱性を見つめることを補って強くなることと読む | 万能・反動形成 | E5 | pd/reader/via-vulnerability.html・pd/knowledge/research/developmental-stages/README.md（専門家の不安 p.40） |
+| R20 | 不安・防衛・葛藤 | 防衛は弱い人や病気の人だけが使うと思う | 否認・他者の価値下げ | E5 | pd/reader/defense-mechanisms.html・pd/knowledge/research/developmental-stages/README.md（専門家の防衛 p.40） |
+| R21 ★ | 不安・防衛・葛藤 | 性格の型や障害の名を人を分ける型として読む | 知性化 | — | pd/reader/stages-defense.html |
+| R22 ★ | 不安・防衛・葛藤 | 障害の併発を別々のものが重なることと読む | — | — | pd/reader/stages-defense.html |
+| R23 ★ | 不安・防衛・葛藤 | 葛藤を善悪の二分や悪いものとして扱う | 自己像の分裂・他者像の分裂 | E4 | pd/reader/love-driven-dev.html・pd/knowledge/research/developmental-stages/README.md（順応は葛藤を避ける p.34） |
+| R24 ★ | 不安・防衛・葛藤 | 素朴な体験を科学より低いものと読む | 知性化・自己の価値下げ | E5・E6 | docs/rules/stance.md 1-4 |
+| R25 ★ | 粘り・立ち直り・動機 | GRIT を我慢や根性と読む | 抑制 | E6 | pd/reader/love-driven-dev.html・pd/knowledge/research/developmental-stages/README.md（達成者の影の抑え込み p.49） |
+| R26 ★ | 粘り・立ち直り・動機 | レジリエンスを折れない個人の強さとして書く | 万能・自己の理想化 | E6 | pd/reader/love-driven-dev.html・pd/knowledge/research/developmental-stages/README.md（達成者の不安 p.50） |
+| R27 | 粘り・立ち直り・動機 | ネガティブ・ケイパビリティを我慢の力と読む | 抑制 | — | pd/reader/love-driven-dev.html |
+| R28 ★ | 粘り・立ち直り・動機 | 内発的動機を良い側だけで書く | 自己の理想化・合理化 | — | pd/reader/intrinsic-motivation.html |
+| R29 | 組織・プロジェクトの言葉 | 関係や場の言葉を人の内側の能力として受け取る（総論） | — | — | pd/reader/love-driven-dev.html「事業の言葉は、どこで誤解されるか」 |
+| R30 ★ | 組織・プロジェクトの言葉 | 「グループと一つになる」を集団への所属として使う | 合理化 | E4・E5 | pd/reader/nonaka-complement.html |
+| R31 | 組織・プロジェクトの言葉 | 包むことを混ぜる・曖昧にすることと書く | — | — | docs/rules/stance.md 1-2 |
+| R32 ★ | 組織・プロジェクトの言葉 | 手順を決めればコントロールできると書く | 万能 | E6 | docs/rules/stance.md 1-3・1-4・pd/knowledge/research/developmental-stages/README.md（達成者の不安 p.50） |
+| R33 | 組織・プロジェクトの言葉 | 率いる人を予測と信念で貫く力強い人として描く | 他者の理想化 | — | docs/rules/stance.md 1-3 |
+| R34 ★ | 組織・プロジェクトの言葉 | 不確実なことを避け、振り返りだけで書く | 否認 | — | docs/rules/stance.md 1-3 |
+| R35 | 組織・プロジェクトの言葉 | 構想や計画はいつも要ると書く | — | — | docs/rules/stance.md 1-3 |
+| R36 ★ | 組織・プロジェクトの言葉 | 描いた未来の木を未来そのものと取り違える | 万能・予期 | E6 | docs/rules/stance.md 1-3 |
+| R37 ★ | 組織・プロジェクトの言葉 | 時間の向きの見方が曖昧 | 投影 | — | docs/rules/stance.md 1-3 |
+| R38 | 組織・プロジェクトの言葉 | 探索の木と遡りの木を同じものと読む | — | — | pd/knowledge/research/julia-potential/ANALYSIS-time-axis-20261122.md |
+| R39 | 組織・プロジェクトの言葉 | 意思決定を決定ツリーの全探索だけで書く | — | — | docs/rules/stance.md 1-3 |
+| R40 ★ | 組織・プロジェクトの言葉 | 構想を叡智としてだけ書く | 知性化・合理化 | E6 | pd/reader/love-driven-dev.html・pd/knowledge/research/developmental-stages/README.md（達成者の防衛 p.49） |
+| R41 | 組織・プロジェクトの言葉 | 価値は商品に埋め込むものと書く | — | — | pd/reader/love-driven-dev.html |
+| R42 | 組織・プロジェクトの言葉 | 善とされたものをいつでも善いものと書く | 他者の理想化・他者像の分裂 | E4 | docs/rules/stance.md 1-2・pd/knowledge/research/developmental-stages/README.md（順応は決まりに沿う） |
+| R43 ★ | 思考・推論 | 数学の力を演繹の力と同じものと書く | — | — | docs/rules/stance.md 1-4 |
+| R44 ★ | 思考・推論 | 説明の順番を分かる順番そのものと取り違える | — | — | docs/rules/stance.md 1-4 |
+| R45 ★ | 思考・推論 | 別の大前提から演繹する人を演繹の力が低いと書く | — | — | docs/rules/stance.md 1-4 |
+| R46 ★ | 思考・推論 | 確かめる側に回る人を演繹が苦手と読む | 他者の価値下げ | — | docs/rules/stance.md 1-4 |
+
