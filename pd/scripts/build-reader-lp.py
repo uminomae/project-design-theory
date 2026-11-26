@@ -515,6 +515,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/thinking-dispositions/READER-thinking-dispositions.md",
+        ROOT / "scripts/reader-thinking-dispositions-template.html",
+        ROOT / "reader/thinking-dispositions.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/defense-mechanisms/READER-stages-defense.md",
         ROOT / "scripts/reader-stages-defense-template.html",
         ROOT / "reader/stages-defense.html",
