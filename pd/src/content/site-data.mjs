@@ -195,8 +195,8 @@ export const TRANSLATIONS = {
       "<ul><li><strong>「回転は渦だけのもの」</strong> → 回転は全段階に遍在します。波も回転です。「位相」も回転の一種で、あえて一般的・曖昧な語を当てています。</li><li><strong>「衝突は渦で統合される」</strong> → 衝突は縁（境界）で生まれます。渦は、ぶつかった二つが、見分けられるまま、一つであるかのように立ち上がる段階です。</li><li><strong>「束→場は同じ場に戻る閉じた循環」</strong> → 次サイクルの場へ前進する循環で、螺旋的に展開し元へは戻りません。</li></ul>",
     "pill.creationModel": "創造のモデル",
     "pill.awarenessModel": "意識とは",
-    "section.direction.label": "Direction",
-    "section.direction.title": "今後の方向性",
+    "section.direction.label": "Drivers",
+    "section.direction.title": "何がプロジェクトを駆動するのか",
     "section.direction.body":
       "本ページで固定した「射程・領域・Doing/Beingの二分」は基底（土台・骨格）です。以降の各ページは、この骨格の上に展開します。",
     "repo.loveDrivenDev": "Love駆動開発と呼びたいもの β",
@@ -393,8 +393,8 @@ export const TRANSLATIONS = {
       "<ul><li><strong>“Rotation belongs only to the vortex”</strong> → Rotation pervades every stage; the wave is rotation too. “Phase” is also a kind of rotation — a deliberately general, vague term.</li><li><strong>“Collisions are integrated by the vortex”</strong> → Collisions emerge at the edge (boundary). The vortex is the stage where the two that collided stand up as if they were one, while still distinguishable.</li><li><strong>“Bundle → Field is a closed loop back to the same field”</strong> → It is a cycle forward to the next field — spiraling onward, never returning to the same point.</li></ul>",
     "pill.creationModel": "Model of Creation",
     "pill.awarenessModel": "What Is Consciousness",
-    "section.direction.label": "Direction",
-    "section.direction.title": "Future Direction",
+    "section.direction.label": "Drivers",
+    "section.direction.title": "What Drives a Project?",
     "section.direction.body":
       'The "scope, domain, and Doing/Being dichotomy" established on this page is the foundation (base and skeleton). Each subsequent page develops upon this skeleton.',
     "repo.loveDrivenDev": "What I Want to Call Love-Driven Development (beta)",
