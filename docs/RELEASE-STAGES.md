@@ -23,7 +23,7 @@
 |---|---|---|---|
 | 1 | C コンピテンシーの教材 | 公的な能力の枠組み 11・教材の評価の基準 2 | 1 の条件がそろった（段を上げるかは pjdhiro） |
 | 1 | D 人類の man の範囲 | 科研費の審査区分表 | 1 の途中（下書きの公開ページ〔工事中〕：小区分 89 / 295） |
-| 1 | B バグチェッカーの範囲 | DMRS・WUSCT | 1 の途中（下書き：防衛 18 / 30・段階 4 / 8） |
+| 1 | B バグチェッカーの範囲 | DMRS・WUSCT | 1 の途中（照合し直し済：防衛 14 / 30・段階 4 / 8） |
 | 1 | E ルールの確かさ | OSF の事前登録の雛形・GRRAS・CONSORT | 2 の途中（5 / 14） |
 | 2 | B 取り違え・条件の欠落 | 誤謬の分類を手がかりに作る | 未 |
 | 2 | D man の書き方 | 作る（O8） | 1 の途中（手本 1） |
@@ -86,11 +86,11 @@ P21 は、教科をまたぐテーマ 5 と技能の小見出し 25 で数えた
 
 心の脆弱性スキャンの誤解の台帳（`docs/tools/kokoro-scan/ruler.md` 版 1.12）は 46 項（うち pjdhiro 由来 29）。
 
-当てた表の下書き：`docs/release-stages/kokoro-scale-map.md`（当てはめは `kokoro-assign.tsv`、作り直しは `python3 -I scripts/release-maps.py`。公開ページの材料 `kokoro-scale-map.json` も書く）。公開ページは `pd/reader/kokoro-scale-map.html`（工事中・noindex・独立のページ。正本 `pd/knowledge/research/site-evaluation/READER-kokoro-scale-map.md`、数と表は JSON から生成のときに埋める。「このサイトの評価」から辿れる）。Claude の読み（2026-11-26。別のコンテキストでの照合はまだ）：DMRS の防衛に当てた項 30 / 46、WUSCT の段階に当てた項 22 / 46、どちらにも当てない項 14（多くは F4・F5 の取り違えと条件の欠落）。当たる項がある防衛 18 / 30（空き 12）、水準 6 / 7（行動の水準が空き）、段階 4 / 8（E3〜E6 だけ。衝動と、多元から先の E7〜E9 が空き）。WUSCT の E 番号と英語の名は記憶で、Hy & Loevinger 1996 の原典は未照合。
+当てた表の下書き：`docs/release-stages/kokoro-scale-map.md`（当てはめは `kokoro-assign.tsv`、作り直しは `python3 -I scripts/release-maps.py`。公開ページの材料 `kokoro-scale-map.json` も書く）。公開ページは `pd/reader/kokoro-scale-map.html`（工事中・noindex・独立のページ。正本 `pd/knowledge/research/site-evaluation/READER-kokoro-scale-map.md`、数と表は JSON から生成のときに埋める。「このサイトの評価」から辿れる）。Claude の読み（2026-11-26）を、2026-11-27 に別のコンテキストで照合し直した（DMRS は Di Giuseppe & Perry 2021 の防衛ごとの定義、WUSCT は Loevinger 1979 の段階の記述で。変えた項と理由は `kokoro-recheck.tsv`。DMRS で 14 項・WUSCT で 1 項を変えた）：DMRS の防衛に当てた項 26 / 46、WUSCT の段階に当てた項 22 / 46、どちらにも当てない項 17（多くは F4・F5 の取り違えと条件の欠落）。当たる項がある防衛 14 / 30（空き 16）、水準 6 / 7（行動の水準が空き）、段階 4 / 8（E3〜E6 だけ。衝動と、多元から先の E7〜E9 が空き）。段階の名と I の符号は Loevinger 1979 で照合済。E の番号は Hy & Loevinger 1996 の本文が読めず未照合。
 
 | 段 | 条件 | いま | リリース文 |
 |---|---|---|---|
-| 1 | 台帳の 46 項を DMRS の 30 の防衛と WUSCT の段階に当てた表を公開する | 途中（公開ページ `pd/reader/kokoro-scale-map.html`〔工事中・独立のページ〕を develop に置いた。照合と main への公開は未） | 検出できる誤解を、公的な防衛の尺度と発達の尺度の上で示しています。 |
+| 1 | 台帳の 46 項を DMRS の 30 の防衛と WUSCT の段階に当てた表を公開する | 途中（公開ページ `pd/reader/kokoro-scale-map.html`〔工事中・独立のページ〕を develop に置いた。照合し直しは 2026-11-27 に済み。main への公開は未） | 検出できる誤解を、公的な防衛の尺度と発達の尺度の上で示しています。 |
 | 2 | 誤解が無いはずの文章 20 件（案）で誤検知の率を測って公開する（O2） | 未 | 誤検知の率を測りました（20 件中 x 件で「検出なし」）。 |
 | 3 | 台帳の事例を伏せて流し、見逃しの率を測る。採点は二人で一致の係数を出す | 未 | 誤検知と見逃しの率を測ったバグチェッカーです。 |
 
