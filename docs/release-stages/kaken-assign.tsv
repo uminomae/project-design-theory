@@ -16,7 +16,10 @@ page	capacity-after-ai	07030 61030 10020	reader/capacity-after-ai.html	道具と
 page	carus-onslaught-on-necessity-ja	01080 01040	reader/carus-onslaught-on-necessity-ja.html	対訳・必然論
 page	clausius-art-der-bewegung-ja	01080 13010	reader/clausius-art-der-bewegung-ja.html	対訳・気体の運動論
 page	clausius-bewegende-kraft-der-warme-ja	01080 19020	reader/clausius-bewegende-kraft-der-warme-ja.html	対訳・熱力学
-page	cognitive-abilities	10020 10040	reader/cognitive-abilities.html	知能の因子
+page	cognitive-abilities	10020 10040	reader/cognitive-abilities.html	頭脳の能力のガイド
+page	executive-functions	10040	reader/executive-functions.html	実行機能と作業記憶
+page	intelligence-structure	10020 10040	reader/intelligence-structure.html	知能の因子
+page	unsupported-ability-models	10020 10040	reader/unsupported-ability-models.html	測定で残らなかった分け方
 page	competency-frameworks	-	reader/competency-frameworks.html	測った結果（このサイトを公的な能力の枠組みで測った表）
 page	complex-plane	-	reader/complex-plane.html	目次のページ（複素数の法則十七）
 page	creative-thinking	10020 09010 80030	reader/creative-thinking.html	PISA の定義・創造性の心理
@@ -91,8 +94,8 @@ page	soft-skills	10020 07030	reader/soft-skills.html	非認知のスキルの呼
 page	stages-defense	10030 10020	reader/stages-defense.html	段階と防衛
 page	stages-screener	10020 10030	reader/stages-screener.html	スクリーナー（測定評価）
 page	subtraction-kinds	11010 12030	reader/subtraction-kinds.html	引き算の種類
-page	thinking	01010 80030	reader/thinking.html	思考とは
-page	thinking-definitions	01010 01040 10040	reader/thinking-definitions.html	「考える」の語
+page	thinking	01010 01040 10040	reader/thinking.html	思考とは（「考える」の語）
+page	thinking-definitions		reader/thinking-definitions.html	転送のページ（思考とはへ）
 page	thinking-dispositions	10020 10040 51010	reader/thinking-dispositions.html	考える気質と構え・認知欲求・やり抜く力と成長の構え・努力と容量・睡眠不足とストレスと認知の疲れ（教育心理学・実験心理学・脳科学）
 page	thomson-heat-ja	01080 19020	reader/thomson-heat-ja.html	対訳
 page	three-and-seven	11010 07060	reader/three-and-seven.html	可除代数・チームの大きさ

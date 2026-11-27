@@ -4,6 +4,8 @@
 
 公開ページは `pd/reader/thinking-definitions.html`（「「考える」の語は、何を指してきたか」・正本 `READER-thinking-definitions.md`・工事中・noindex）。2026-11-26 に、もとの思考とは（`thinking.html`）の中身をこのページへ移し、思考とはは思考のモジュールへの道案内にした（正本 `READER-thinking.md`・pjdhiro「思考とは　のページはガイド的なものにして、そこからモジュールとして思考のこれまでを探索したモジュールをリンクする。」）。
 
+（2026-11-27：正本は `READER-thinking.md`・公開は `pd/reader/thinking.html`「思考とは」に移した。`thinking-definitions.html` は転送のページ。）
+
 書き方：鍵の文は原文で引き、頁（古典はステファヌス版・ベッカー版・初版の頁）を添える。訳はすべて Claude の訳で、人の校閲はしていない。「Claude の読み」と書いた段は、原典の記述ではなく Claude が並べたもの。
 
 pjdhiro の言葉（#206 の本文・2026-11-25）：

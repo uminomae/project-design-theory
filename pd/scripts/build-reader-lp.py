@@ -497,15 +497,27 @@ PAGES = [
         "flow",
     ),
     (
-        ROOT / "knowledge/research/thinking/READER-thinking-definitions.md",
-        ROOT / "scripts/reader-thinking-definitions-template.html",
-        ROOT / "reader/thinking-definitions.html",
-        "flow",
-    ),
-    (
         ROOT / "knowledge/research/cognitive-abilities/READER-cognitive-abilities.md",
         ROOT / "scripts/reader-cognitive-abilities-template.html",
         ROOT / "reader/cognitive-abilities.html",
+        "flow",
+    ),
+    (
+        ROOT / "knowledge/research/intelligence-structure/READER-intelligence-structure.md",
+        ROOT / "scripts/reader-intelligence-structure-template.html",
+        ROOT / "reader/intelligence-structure.html",
+        "flow",
+    ),
+    (
+        ROOT / "knowledge/research/executive-functions/READER-executive-functions.md",
+        ROOT / "scripts/reader-executive-functions-template.html",
+        ROOT / "reader/executive-functions.html",
+        "flow",
+    ),
+    (
+        ROOT / "knowledge/research/unsupported-ability-models/READER-unsupported-ability-models.md",
+        ROOT / "scripts/reader-unsupported-ability-models-template.html",
+        ROOT / "reader/unsupported-ability-models.html",
         "flow",
     ),
     (

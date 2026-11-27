@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/intelligence-structure.html を直接編集しないでください。
+  正本:   knowledge/research/intelligence-structure/READER-intelligence-structure.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「知能は、どう分けられてきたか」のページです（工事中）。知能検査の点は、どんな整理で分けられてきたか。スピアマン 1904 の一般因子（g）、キャッテルの流動性知能と結晶性知能、キャッテル・ホーン・キャロルの三つの層の整理（CHC）と、流動性知能の下の狭い能力のうち推論の形に当たるもの（帰納・一般的な系列推論・量的推論）を原典で並べる独立ページ（工事中）。ガイド「頭脳の能力とされてきたもの」（cognitive-abilities.html）から呼ばれる一つ。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知能は、どう分けられてきたか | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/intelligence-structure.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="知能検査の点は、どんな整理で分けられてきたか。スピアマン 1904 の一般因子（g）、キャッテルの流動性知能と結晶性知能、キャッテル・ホーン・キャロルの三つの層の整理（CHC）と、流動性知能の下の狭い能力のうち推論の形に当たるもの（帰納・一般的な系列推論・量的推論）を原典で並べる独立ページ（工事中）。ガイド「頭脳の能力とされてきたもの」（cognitive-abilities.html）から呼ばれる一つ。">
+    <meta property="og:title" content="知能は、どう分けられてきたか">
+    <meta property="og:description" content="知能検査の点は、どんな整理で分けられてきたか。スピアマン 1904 の一般因子（g）、キャッテルの流動性知能と結晶性知能、キャッテル・ホーン・キャロルの三つの層の整理（CHC）と、流動性知能の下の狭い能力のうち推論の形に当たるもの（帰納・一般的な系列推論・量的推論）を原典で並べる独立ページ（工事中）。ガイド「頭脳の能力とされてきたもの」（cognitive-abilities.html）から呼ばれる一つ。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/intelligence-structure.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="知能は、どう分けられてきたか">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-27">
+    <meta property="article:modified_time" content="2026-11-27">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "知能は、どう分けられてきたか",
+          "description": "知能検査の点は、どんな整理で分けられてきたか。スピアマン 1904 の一般因子（g）、キャッテルの流動性知能と結晶性知能、キャッテル・ホーン・キャロルの三つの層の整理（CHC）と、流動性知能の下の狭い能力のうち推論の形に当たるもの（帰納・一般的な系列推論・量的推論）を原典で並べる独立ページ（工事中）。ガイド「頭脳の能力とされてきたもの」（cognitive-abilities.html）から呼ばれる一つ。",
+          "keywords": "知能, 一般因子, g, 流動性知能, 結晶性知能, CHC, キャッテル, ホーン, キャロル, 三層理論, 帰納, 系列推論, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/intelligence-structure.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/intelligence-structure.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-27",
+          "dateModified": "2026-11-27",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "知能"}, {"@type": "Thing", "name": "一般因子"}, {"@type": "Thing", "name": "CHC"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "問いを立てた対話の相手"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「知能は、どう分けられてきたか」のページです（工事中）。知能検査の点は、どんな整理で分けられてきたか。スピアマン 1904 の一般因子（g）、キャッテルの流動性知能と結晶性知能、キャッテル・ホーン・キャロルの三つの層の整理（CHC）と、流動性知能の下の狭い能力のうち推論の形に当たるもの（帰納・一般的な系列推論・量的推論）を原典で並べる独立ページ（工事中）。ガイド「頭脳の能力とされてきたもの」（cognitive-abilities.html）から呼ばれる一つ。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b><br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1><span style="display:inline-block">知能は、</span><span style="display:inline-block">どう分けられてきたか</span></h1>
+                <p class="reader-subtitle">一般因子、流動性と結晶性、三つの層</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-27 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/intelligence-structure/READER-intelligence-structure.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p class="reader-lead"><span class="reader-lead__label">問い</span>知能検査の点は、どんな整理で分けられてきたのでしょうか。いま共通の言葉になっている分け方は何でしょうか。</p>
+
+<p>このページは、「<a href="cognitive-abilities.html">頭脳の能力とされてきたもの</a>」から呼ばれるページの一つです。pjdhiro の問いに、Claude が原典を読んで答える形で書いています。</p>
+<div class="reader-lead"><span class="reader-lead__label">今の答え</span>
+いちばん長く信頼を積んできたのは、知能検査の点の相関から能力を分ける整理です。スピアマンは 1904 年に、どの試験にも共通の働きが顔を出すと書きました。のちに、その場で新しい問題を解く流動性知能と、身につけた知識の結晶性知能が分けられ、いまは、狭い能力・広い能力・一般の能力の三つの層で並べる CHC と呼ばれる整理が、この分野の共通の言葉になっています。
+<ul class="reader-lead__list">
+<li><b><a href="#ca-g">一つの働きが、どの試験にも顔を出す</a></b>：スピアマンの一般因子です。</li>
+<li><b><a href="#ca-gfgc">新しい問題を解く力と、身につけた知識</a></b>：流動性知能と結晶性知能です。</li>
+<li><b><a href="#ca-chc">いまの整理は、三つの層で並べる</a></b>：CHC と、その中の推論の能力です。</li>
+</ul>
+</div>
+
+<p class="reader-lead"><span class="reader-lead__label">注意</span>このページは、能力の分け方を並べるもので、誰かの能力を測ったり比べたりするものではありません。英文の訳は Claude です。</p>
+
+<details class="sec" id="一つの働きがどの試験にも顔を出す" open><summary>一つの働きが、どの試験にも顔を出す</summary><div class="secbody">
+
+
+<p><a id="ca-g"></a>たとえば、国語のよくできる生徒が、数学もそこそこできる、ということはよくあります。科目は違うのに、点どうしが同じ向きにそろう。この「そろい方」から、頭の能力の分け方の研究は始まりました。</p>
+<p>心理学者のスピアマンは、1904 年の論文で、学校の生徒の古典語・フランス語・英語・数学の成績と、音の高さなどを聞き分ける感覚の弁別の成績とのあいだの相関を調べました。そして、知的な活動がどれほど違って見えても、それらの相関は、みな共通の根本の働き（または働きの群）を、それぞれ違う程度に含んでいることから来ている、と書きました。個々の試験は、その一つの大きな共通の働きを、別々に見積もったものだ、というのです。残りの部分は、活動ごとにまったく違う、特殊な要素だとしました。</p>
+<p>この共通の働きは、のちに一般因子、記号で g と呼ばれるようになります。ただ、スピアマン自身は、この論文の結論で、その働きの物理的な性質を論じるのは、もっと事実が分かるまで控える、と書いています。本文でも、共通の働きを「一つ（または働きの群）」と書いています。</p>
+<details class="acc"><summary>詳しく — g は一つのものなのか</summary>
+
+<p>点どうしが同じ向きにそろうこと（研究者は positive manifold と呼びます）は、今もくり返し確かめられています。けれど、それを一つの g で説明するかどうかは、ずっと争われてきました。</p>
+<p>ファン・デル・マースらは 2006 年に、g を置かない模型を示しました。頭の働きどうしが、育つあいだに互いを助け合うだけで、点どうしのそろいは生まれる、というものです。この模型では、一つの g は何の役もしません。それでも著者たちは、知能のデータを説明し切るには、一つの g・多くの働きの重なり・助け合い、の三つの説明の要素がどれも要るのかもしれない、と結んでいます。</p>
+<p>章「いまの整理は、三つの層で並べる」で見る CHC の整理でも、g を一番上に置くかどうかが、二つの源の最大の違いとして残っています。</p>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p>出典：Spearman, C. (<a href="https://doi.org/10.2307/1412107">1904</a>) "General intelligence," objectively determined and measured. <em>American Journal of Psychology</em> 15(2), 201–293（<a href="https://psychclassics.yorku.ca/Spearman/">York 大学の Classics in the History of Psychology の転記</a>と、JSTOR Early Journal Content の誌面の走査〔<a href="https://archive.org/details/jstor-1412107">Internet Archive</a>・パブリックドメイン〕で本文照合済。比べた学業と弁別は第 5 章、「one great common Intellective Function」は p.272、「variously saturated with some common fundamental Function (or group of Functions)」は p.273、働きの性質の議論を控える結論 VI は p.284）。van der Maas, H. L. J., Dolan, C. V., Grasman, R. P. P. P., Wicherts, J. M., Huizenga, H. M., &amp; Raijmakers, M. E. J. (<a href="https://doi.org/10.1037/0033-295X.113.4.842">2006</a>) A dynamical model of general intelligence: The positive manifold of intelligence by mutualism. <em>Psychological Review</em> 113(4), 842–861（第一著者の大学の頁に置かれた出版社の版の <a href="https://web.archive.org/web/20140322174858/http://hvandermaas.socsci.uva.nl:80/Homepage_Han_van_der_Maas/Intelligence_files/psyrev4.pdf">Wayback の記録</a>で本文照合済。「A single underlying g factor plays no role in the model」は p.842、三つの説明の要素は p.856）。</p>
+</details>
+
+</div></details><details class="sec" id="新しい問題を解く力と身につけた知識" open><summary>新しい問題を解く力と、身につけた知識</summary><div class="secbody">
+
+
+<p><a id="ca-gfgc"></a>初めて見るパズルを解くことと、漢字の読みを答えることは、どちらも「頭がいい」と言われますが、使っているものが違うように見えます。この違いを、心理学者のキャッテルは二つの知能として分けました。</p>
+<p>レーヴンの行列検査（図形の並びの決まりを見つけて、欠けた所に入る図形を選ぶ検査）を調べたカーペンターらは、1990 年の報告で、この分け方をこう紹介しています。学校や前の経験から得た知識にあまり頼らずに、新しい情報で推論し、問題を解く力を、キャッテルの理論は流動性知能と呼び、経験で結晶した知識と技能をより直に映す結晶性知能と対にしてきた。</p>
+<p>いまの整理の言葉では、流動性知能（Gf）は、自動ではできない新しい問題を、意図して制御した心の操作で解くこと、結晶性知能（Gc）は、文化の中で身につけて、自分のものにした知識です。</p>
+<p>カーペンターらが調べたレーヴンの行列検査は、流動性知能を測る代表の検査です。報告は、その問題を「視覚の類推の問題」の集まりと呼んでいます。報告の結論では、この検査が測っているのは、問題を扱える区切りに分けて一つずつ攻める、だれにも共通の力と、目標と下位の目標の階層を扱う力の差、高い抽象を作る力の差だ、としています。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：Carpenter, P. A., Just, M. A., &amp; Shell, P. (<a href="https://doi.org/10.1037/0033-295X.97.3.404">1990</a>) What one intelligence test measures: A theoretical account of the processing in the Raven Progressive Matrices Test. <em>Psychological Review</em> 97(3), 404–431（同じ題の技術報告 ONR90-1〔Carnegie Mellon 大学・1990-04-03・公開の許し付き〕を、米国国防技術情報センター〔DTIC〕に置かれた版の <a href="https://web.archive.org/web/20210408070750/https://apps.dtic.mil/sti/pdfs/ADA221448.pdf">Wayback の記録</a>で本文照合済。頁は報告の頁。流動性知能と結晶性知能の紹介は p.2、「visual analogy problems」は表紙の要旨、測っているものの結論は p.33）。Gf と Gc の今の定義は、次の章の McGrew (2009) の表 1（p.5）。キャッテルの 1963 年の論文そのものは、出版社の有料の版のほかに、無料で読める版が見つからず、読んでいません。</p>
+</details>
+
+</div></details><details class="sec" id="いまの整理は三つの層で並べる" open><summary>いまの整理は、三つの層で並べる</summary><div class="secbody">
+
+
+<p><a id="ca-chc"></a>キャッテルとホーンの二つの知能の論と、キャロルが 1993 年の本で、それまでの因子分析の研究の 460 を超えるデータを分析し直して組んだ論は、いまは CHC（三人の頭文字）という一つの傘の名で呼ばれています。心理学者のマグルーは 2009 年に、この二つが、人の知能の組み立てを理解するための、心理測定にもとづく合意の模型になった、と書きました。</p>
+<p>CHC の整理では、能力を三つの層で並べます。一番下の第一層に、それぞれの検査が測る狭い能力を、その上の第二層に、狭い能力を束ねる広い能力（流動性知能 Gf・結晶性知能 Gc・視覚の処理・聴覚の処理・記憶の能力 など）を、一番上の第三層に一般の能力 g を置きます。マグルーは、キャロルとキャッテル・ホーンの違いの一つ目に、この第三層に g を置くか置かないかを挙げています。ホーンは g に強く反対し、統計から出てくる抽象と見ていました。</p>
+<p>推論は、流動性知能（Gf）の下の狭い能力として置かれています。狭い能力は五つあり、そのうち推論の形に当てられるのは次の三つです。定義は、マグルーの定義の稿のとおりです。ほかの二つは、ピアジェの発達の理論の概念で測る推論と、推論の速さです。</p>
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>狭い能力</th>
+<th>定義（マグルーの稿の要約）</th>
+<th>推論の形でいうと</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>帰納（I）</td>
+<td>一つの問題や観察の集まりの下にある特徴（決まり・概念・傾向・どの類に入るか）を見つける。前に学んだ決まりを問題に当てることも入る</td>
+<td>事例から決まりへ</td>
+</tr>
+<tr>
+<td>一般的な系列推論（RG）</td>
+<td>示された前提（決まり・条件）から始めて、一歩以上進んで答えに至る。仮説演繹的な推論とも呼ばれる</td>
+<td>前提から結論へ（演繹）</td>
+</tr>
+<tr>
+<td>量的推論（RQ）</td>
+<td>数の関係や性質を持つ概念で、帰納や演繹を使って推論する</td>
+<td>数で行う帰納と演繹</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>表の右の列は、このページが推論の形に当てて並べたものです。演繹・帰納・仮説・類推がどう分けられてきたかは「<a href="reasoning.html">推論とは</a>」で見ています。</p>
+<p>マグルーは 2023 年に、キャロルの整理の三十年を振り返った論文で、ウッドコック・ジョンソンという一つの知能検査の組の分析を並べています。そこでは、流動性知能の因子を最も強く定めたのは、帰納の課題（例から概念を見つける課題）でした。一方、言葉の類推の課題（「AとBの関係は、CとDの関係」のような問題）は、流動性知能への結びつきが弱く出ています。この課題は、原典でもはじめから、流動性知能と結晶性知能の両方に掛かる、言葉の類推の検査とされています。類推の形の問題は、図形で出すと流動性知能の代表になり、言葉で出すと知識の側にも寄る、ということかもしれません。これは、この一つの検査の組の結果から、このページが推し量ったものです。離れたものの構造を重ねる働きは「<a href="analogy.html">類推と、構造の類似を見抜く力</a>」で見ます。</p>
+<p>マグルーは 2023 年の論文で、キャッテル・ホーン・キャロルの論を、一つの CHC 理論でなく、互いに関わり合う「CHC の諸理論」の一族として見るように勧めています。三つの違いで最も目立つのは、ここでも g を置くかどうかです。広い能力の表も、感情の知能を新しく足すなど、改めが続いています。</p>
+<details class="acc"><summary>詳しく — 創造に当たる能力は、どこに置かれているか</summary>
+
+<p>CHC の表で、創造性の研究に関わるとされているのは、長期の記憶から取り出す力（Glr。2018 年の改訂で Gl と Gr の二つに分けられ、着想を出す力は Gr の側に置かれた）の下の狭い能力です。マグルーの表は、「Glr のいくつかの狭い能力は、創造性の研究で目立ってきた」と添えています。</p>
+<p>マグルーの定義の稿から、三つを挙げます。</p>
+<ul>
+<li>着想の流暢さ（FI）：ある条件や物に関わる考え・語・句を、速く次々に出す力。強調されるのは量で、質や答えの独創性ではない。</li>
+<li>独創性・創造性（FO）：与えられた題や場面に、ふつうでない・独創的な・気の利いた・拡散的な答えを、速く出す力。</li>
+<li>問題への感受性（SP）：実際の問題に、別の解き方を速くいくつも考える力。問題がそこにあると気づくことが要る。</li>
+</ul>
+<p>どれも、限られた時間に、どれだけ多く・どれだけ珍しく出せるかで測る形です。マグルーの 2023 年の論文は、着想を出す力（Gr）と、創造性をよく理解して育てたいという社会の求めとの関係を、これからの課題に挙げています。</p>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p>出典：McGrew, K. S. (<a href="https://doi.org/10.1016/j.intell.2008.08.004">2009</a>) CHC theory and the human cognitive abilities project: Standing on the shoulders of the giants of psychometric intelligence research. <em>Intelligence</em> 37(1), 1–10（著者の研究所のサイトに置かれた出版社の版の <a href="https://web.archive.org/web/20120423142925/http://www.iapsych.com/articles/mcgrew2009.pdf">Wayback の記録</a>で本文照合済。合意の模型は p.1 の要旨、第三層の g の有無は p.3、Gf・Gc・Glr の定義と狭い能力の名は表 1〔pp.5–6〕、創造性の研究の一文は p.6）。McGrew, K. S. CHC broad and narrow cognitive ability definitions（作業稿「3rd draft; 3-11-09」。著者の研究所のサイトの写しの <a href="https://web.archive.org/web/20171215033954/http://www.iapsych.com:80/articles/chcdefs031109.pdf">Wayback の記録</a>で本文照合済。Gf の下の五つ〔I・RG・RQ・RP・RE〕は p.1、FI・FO・SP は pp.5–6）。McGrew, K. S. (<a href="https://doi.org/10.3390/jintelligence11020032">2023</a>) Carroll's three-stratum (3S) cognitive ability theory at 30 years. <em>Journal of Intelligence</em> 11(2), 32（CC BY 4.0。<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9959556/">PMC の全文</a>で本文照合済。Gl と Gr の分割と、着想を出す力と創造性の課題は §2、ホーンと g・「CHC theories」は §2.3、ウッドコック・ジョンソンの分析での帰納の課題と言葉の類推の課題の負荷は §3.2）。Carroll, J. B. (<a href="https://doi.org/10.1017/CBO9780511571312">1993</a>) <em>Human cognitive abilities: A survey of factor-analytic studies</em>. Cambridge University Press（出版社が無料で置いた前付け〔目次と序文〕の <a href="https://assets.cambridge.org/97805213/82755/frontmatter/9780521382755_frontmatter.pdf">PDF</a>で本文照合済。460 を超えるデータの分析し直しと、探索的な因子分析を使ったことは序文 p.vi、g を含む高次の因子が第 15 章で、三つの層の論が第 16 章で出されることは序文 p.v と目次。第 16 章の本文は無料で読める版が見つからず、三つの層の中身はマグルーの論文で書きました）。</p>
+</details>
+
+</div></details><details class="sec" id="原典と読む順"><summary>原典と、読む順</summary><div class="secbody">
+<p><a id="ca-sources"></a>このページで読んだ原典は、どれも無料で読めます。まず読むなら、次の順です。</p>
+<ul>
+<li>マグルー（2009）：CHC がどう生まれたかと、広い能力の定義の表（表 1）。8 頁ほどで、整理の全体が見えます。<a href="https://web.archive.org/web/20120423142925/http://www.iapsych.com/articles/mcgrew2009.pdf">著者の研究所のサイトの写し（Wayback）</a>。</li>
+<li>スピアマン（1904）：始まりの論文。結論の要約は第 5 章の終わりにあります。<a href="https://psychclassics.yorku.ca/Spearman/">York 大学の転記</a>。</li>
+<li>マグルー（2023）：キャロルの整理の三十年と、これからの課題。<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9959556/">PMC</a>。</li>
+</ul>
+</div></details><details class="sec" id="このページの作り方"><summary>このページの作り方</summary><div class="secbody">
+<p><a id="ca-method"></a>このページは、pjdhiro の問いに、Claude が原典を読んで書いたものです。原典の写しは、著者・大学・公的機関・出版社が置いたものか、その Wayback の記録を探し、引いた文は本文で一字ずつ確かめました。英文の訳は、どれも Claude です。章の並べ方と、CHC の推論の能力を推論の形に当てた表の右の列は、Claude がしたものです。キャッテルの 1963 年の論文は、無料で読める版が見つからず、それを紹介した文献の本文で書きました。キャロルの 1993 年の本は、出版社が無料で置いた目次と序文だけを読み、三つの層の中身は、それを紹介した文献の本文で書きました。</p>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="abilities.html">能力とは</a> ・
+                <a href="cognitive-abilities.html">頭脳の能力とされてきたもの</a> ・
+                <a href="thinking.html">思考とは</a> ・
+                <a href="reasoning.html">推論とは</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
