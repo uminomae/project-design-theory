@@ -11,10 +11,10 @@
 | 項目 | 数 |
 |---|---|
 | 小区分 | 触れている 89 / 296（触れていない 207） |
-| うち読み物のページだけ・cs だけ・両方 | 13・51・25 |
+| うち読み物のページだけ・cs だけ・両方 | 13・50・26 |
 | 中区分 | 触れている 43 / 66 |
 | 大区分 | 触れている 13 / 13（触れていない：なし） |
-| 読み物のページ | 106（区分に当てた 88・当てない 18） |
+| 読み物のページ | 107（区分に当てた 89・当てない 18） |
 | cs の分野 | 30（どれも一つ以上の区分に当てた） |
 
 区分に当てないページ：about・abilities・cognitive-abilities・competency-frameworks・complex-plane・influences-management・kaken-map・kokoro-scale-map・love-trajectory・reading-directions・shelf-love・shelf-mind・shelf-number・shelf-org・shelf-self・shelf-translations・site-evaluation・thinking-definitions。並び・目次・道案内・転送のページ（中身は呼ぶ先のページの側）と、このサイトを測った結果のページと、pjdhiro の一年の記録（love-trajectory）。
@@ -30,7 +30,7 @@
 | 中区分 | 触れている | 小区分 |
 |---|---|---|
 | 1 思想、芸術およびその関連分野 | 8 / 9 | ● 01010 哲学および倫理学（good-self-destruction・carus-onslaught-on-necessity-ja・creative-thinking・empathy・gravity-love・hamilton-philosophy-of-the-unconditioned-ja・life-drivers・love-driven-dev・love-driven-dev-en・love-history・mansel-limits-of-religious-thought-ja・mill-examination-of-hamilton-ja・nondual・peirce-evolutionary-love-ja・peirce-glassy-essence-ja・peirce-law-of-mind-ja・peirce-love-abduction・reasoning・thinking・to-james・william-james-self-ja・D13・inseparable-abilities）<br>● 01020 中国哲学、印度哲学および仏教学（anshin・euler-unfolded・forgiveness-salvation・life-drivers・love-driven-dev・love-driven-dev-en・love-history・nondual・shikan・zen-circle-hs・D24）<br>● 01030 宗教学（draper-intellectual-development-ja・forgiveness-salvation・james-substance-and-shadow-ja・life-drivers・love-history・mansel-limits-of-religious-thought-ja・mill-examination-of-hamilton-ja・peirce-evolutionary-love-ja・D24）<br>● 01040 思想史（anshin・buckle-history-of-civilization-ja・carus-onslaught-on-necessity-ja・hamilton-philosophy-of-the-unconditioned-ja・james-substance-and-shadow-ja・life-drivers・love-history・mandeville-grumbling-hive-ja・mansel-limits-of-religious-thought-ja・mill-examination-of-hamilton-ja・newcomb-political-economy-ja・peirce-evolutionary-love-ja・peirce-glassy-essence-ja・peirce-law-of-mind-ja・thinking・william-james-self-ja・D16）<br>● 01050 美学および芸術論（beauty・julia-potential・D15・D19・D26・D28）<br>○ 01060 美術史<br>● 01070 芸術実践論（D28・D30）<br>● 01080 科学社会学、科学哲学および科学技術史（capacity-after-ai・carus-onslaught-on-necessity-ja・clausius-art-der-bewegung-ja・clausius-bewegende-kraft-der-warme-ja・darwin-historical-sketch-ja・darwin-wallace-1858-ja・draper-intellectual-development-ja・helmholtz-erhaltung-der-kraft-ja・herapath-mathematical-physics-ja・herschel-quetelet-probabilities-ja・kolliker-darwinsche-schopfungstheorie-ja・kronig-theorie-der-gase-ja・maxwell-dynamical-theory-of-gases-ja・naegeli-abstammungslehre-ja・peirce-evolutionary-love-ja・peirce-glassy-essence-ja・peirce-love-abduction・quetelet-lettres-probabilites-ja・rankine-mechanical-action-of-heat-ja・thomson-heat-ja・via-vulnerability）<br>● 80010 デザイン学（vibe-to-code・D22） |
-| 2 文学、言語学およびその関連分野 | 4 / 8 | ● 02010 日本文学（no-road-ahead）<br>● 02020 英語圏文学およびヨーロッパ文学（mandeville-grumbling-hive-ja）<br>● 02030 文学一般（D19・D25）<br>● 02040 言語学（D17）<br>○ 02050 日本語学および英語学<br>○ 70010 日本語教育<br>○ 70020 外国語教育<br>○ 80020 人文社会情報学および図書館情報学 |
+| 2 文学、言語学およびその関連分野 | 4 / 8 | ● 02010 日本文学（no-road-ahead）<br>● 02020 英語圏文学およびヨーロッパ文学（mandeville-grumbling-hive-ja）<br>● 02030 文学一般（D19・D25）<br>● 02040 言語学（middle-voice・D17）<br>○ 02050 日本語学および英語学<br>○ 70010 日本語教育<br>○ 70020 外国語教育<br>○ 80020 人文社会情報学および図書館情報学 |
 | 3 歴史学、考古学、博物館学およびその関連分野 | 2 / 7 | ● 03010 史学一般（buckle-history-of-civilization-ja・D16）<br>○ 03020 日本史<br>○ 03030 アジア史およびアフリカ史<br>● 03040 ヨーロッパ史およびアメリカ史（draper-intellectual-development-ja）<br>○ 03050 考古学<br>○ 03060 文化財科学<br>○ 03070 博物館学 |
 | 4 地理学、文化人類学、民俗学およびその関連分野 | 1 / 6 | ○ 04010 地理学<br>○ 04020 人文地理学<br>● 04030 文化人類学および民俗学（D24・D25・D26・D28・D30）<br>○ 70030 地域研究<br>○ 70040 観光学<br>○ 70050 ジェンダー |
 | 5 法学およびその関連分野 | 2 / 4 | ○ 05010 基礎法学および刑事法学<br>● 05020 公法学および国際公法学（D20）<br>● 05030 民事法学および国際私法学（D20）<br>○ 05040 社会法学および新領域法学 |

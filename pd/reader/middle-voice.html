@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/middle-voice.html を直接編集しないでください。
+  正本:   knowledge/research/middle-voice/READER-middle-voice.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「中動とは」のページです（工事中）。中動とは何か。能動（する）でも受動（される）でもない態として、古代ギリシアの文法から呼ばれてきた中動を、論ごとの定め方で並べる。古い文法は能動と受動の一部ずつとし（トラクス）、バンヴェニストは主語が過程の内にいることとし、ギリシア語の文法書は主語が自分の行いから作用を受けることに目を向け、ケマーの枠組みは始める者と行き着く先が分かれていないことを印にする（ベック 1998 の紹介で読んだ）。並べた定め方を、主語が過程の内か外か、と、するかされるか、の二つの問いとして読み直し、過程にある私と表象としての私を分ける、という pjdhiro の見方を、まだ見ている途中の問いとして置く。
+  研究の説明は Claude が原典から書いた要約。載せた出典は、各章の出典の畳みに頁と読んだ版を添えている。バンヴェニストはバーダー 1997 が引いた文で、ケマーはベック 1998 の紹介で読んだ。英語・仏語の訳は Claude。
+  pjdhiro 本人の言葉は「pjdhiro の問い：」「pjdhiro の見方：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中動とは | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/middle-voice.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="中動とは何か。能動（する）でも受動（される）でもない態として、古代ギリシアの文法から呼ばれてきた中動を、論ごとの定め方で並べる。古い文法は能動と受動の一部ずつとし（トラクス）、バンヴェニストは主語が過程の内にいることとし、ギリシア語の文法書は主語が自分の行いから作用を受けることに目を向け、ケマーの枠組みは始める者と行き着く先が分かれていないことを印にする（ベック 1998 の紹介で読んだ）。並べた定め方を、主語が過程の内か外か、と、するかされるか、の二つの問いとして読み直し、過程にある私と表象としての私を分ける、という pjdhiro の見方を、まだ見ている途中の問いとして置く。">
+    <meta property="og:title" content="中動とは">
+    <meta property="og:description" content="中動とは何か。能動（する）でも受動（される）でもない態として、古代ギリシアの文法から呼ばれてきた中動を、論ごとの定め方で並べる。古い文法は能動と受動の一部ずつとし（トラクス）、バンヴェニストは主語が過程の内にいることとし、ギリシア語の文法書は主語が自分の行いから作用を受けることに目を向け、ケマーの枠組みは始める者と行き着く先が分かれていないことを印にする（ベック 1998 の紹介で読んだ）。並べた定め方を、主語が過程の内か外か、と、するかされるか、の二つの問いとして読み直し、過程にある私と表象としての私を分ける、という pjdhiro の見方を、まだ見ている途中の問いとして置く。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/middle-voice.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="中動とは">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-27">
+    <meta property="article:modified_time" content="2026-11-27">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "中動とは",
+          "description": "中動とは何か。能動（する）でも受動（される）でもない態として、古代ギリシアの文法から呼ばれてきた中動を、論ごとの定め方で並べる。古い文法は能動と受動の一部ずつとし（トラクス）、バンヴェニストは主語が過程の内にいることとし、ギリシア語の文法書は主語が自分の行いから作用を受けることに目を向け、ケマーの枠組みは始める者と行き着く先が分かれていないことを印にする（ベック 1998 の紹介で読んだ）。並べた定め方を、主語が過程の内か外か、と、するかされるか、の二つの問いとして読み直し、過程にある私と表象としての私を分ける、という pjdhiro の見方を、まだ見ている途中の問いとして置く。",
+          "keywords": "中動, 中動態, middle voice, 能動, 受動, バンヴェニスト, トラクス, ケマー, 主語と過程, Love駆動開発",
+          "url": "https://uminomae.github.io/project-design-theory/reader/middle-voice.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/middle-voice.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-27",
+          "dateModified": "2026-11-27",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "中動"}, {"@type": "Thing", "name": "態（文法）"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「中動とは」のページです（工事中）。中動とは何か。能動（する）でも受動（される）でもない態として、古代ギリシアの文法から呼ばれてきた中動を、論ごとの定め方で並べる。古い文法は能動と受動の一部ずつとし（トラクス）、バンヴェニストは主語が過程の内にいることとし、ギリシア語の文法書は主語が自分の行いから作用を受けることに目を向け、ケマーの枠組みは始める者と行き着く先が分かれていないことを印にする（ベック 1998 の紹介で読んだ）。並べた定め方を、主語が過程の内か外か、と、するかされるか、の二つの問いとして読み直し、過程にある私と表象としての私を分ける、という pjdhiro の見方を、まだ見ている途中の問いとして置く。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」「pjdhiro の問い」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>中動とは</h1>
+                <p class="reader-meta">
+                    最終更新: 2026-11-27 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/middle-voice/READER-middle-voice.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p class="reader-lead"><span class="reader-lead__label">問い</span>する（能動）でも、される（受動）でもない動きは、どう言い表されてきたのでしょうか。</p>
+
+<p>読み物「<a href="love-driven-dev.html#ldd-question-why">Love駆動開発と呼びたいもの</a>」は、二つめの問いを「なぜ、過去とは違うものになろうとするのか？」と立てています。この「なろうとする」について、このサイトを作っている pjdhiro は、こう言っていました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>なってしまうという受動的なことと、なろうとしているかのような能動性を非二元で記述したいのだけど、うまくいかない。</p>
+</blockquote>
+<p>言葉の歴史には、能動と受動のほかに、もう一つの態（動詞の形）があります。古代ギリシア語の文法が「中動」と呼んだものです。このページは、pjdhiro の言葉に、Claude が原典を調べて答える形で書いています。</p>
+<div class="reader-lead"><span class="reader-lead__label">今の答え</span>
+中動は、論によって定め方が違います。古い文法は、能動と受動の一部ずつを表す態として置きました。言語学者のバンヴェニストは、主語が過程の外にいるのが能動、内にいるのが中動だ、と定め直しました。ギリシア語の文法書は、主語が自分の行いから作用を受けることに目を向けます。言語学者のケマーの枠組みでは、出来事を始める者と行き着く先が、はっきり分かれていないことが中動の印になります。どの定め方も、同じ動きの一面に触れているのではないか、とこのページは読みます。並べてみると、中動は、主語が過程の内か外か、と、するかされるか、の二つの問いを一緒に扱っているように見えます。そこに、私のどこを主語と見るか、というもう一つの問いが重なるかもしれません。この最後の問いは、まだ見ている途中です。
+</div>
+
+<div class="reader-lead"><span class="reader-lead__label">構成</span>
+<ul class="reader-lead__list">
+<li><b>定め方</b>：古い文法の定め方、主語の位置での定め方、作用を受ける主語、見分けにくい参与者、の順に見ます。</li>
+<li><b>二つの問い</b>：並べた定め方を、二つの問いとして読み直し、その先に残る問いを置きます。</li>
+<li><b>巻末</b>：保持論点と、原典の読み方です。</li>
+</ul>
+</div>
+
+<p class="reader-lead"><span class="reader-lead__label">要点</span></p>
+
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>古い文法</th>
+<th>中動は、一部は能動を、一部は受動を表す態（トラクス『文法の技術』）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>主語の位置</td>
+<td>能動では過程は主語から出て外で成し遂げられ、中動では主語が過程の内にいる（バンヴェニスト 1950）</td>
+</tr>
+<tr>
+<td>作用を受ける主語</td>
+<td>中動は、行為が主語に特別に関わって行われることを示す（スマイス 1920）。行為者である主語が、行為からも作用を受ける（バーバー 1975）</td>
+</tr>
+<tr>
+<td>見分けにくさ</td>
+<td>出来事を始める者と行き着く先が、はっきり分かれていない（ベック 1998 が紹介するケマー 1993 の枠組み）</td>
+</tr>
+<tr>
+<td>二つの問い</td>
+<td>主語が過程の内か外か、と、するかされるか。中動は、二つを一緒に扱っているのではないか（pjdhiro の問いからの読み）</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<details class="sec" id="中動は能動と受動のあいだに置かれてきた" open><summary>中動は、能動と受動のあいだに置かれてきた</summary><div class="secbody">
+
+
+<p><a id="mv-thrax"></a>中動という名前は、古代ギリシアの文法から来ています。紀元前 2 世紀ごろの文法家ディオニュシオス・トラクスの『文法の技術』は、態を三つ数えました。能動・受動・中動です。そして中動を、一部は能動を、一部は受動を表すもの、と書いています。</p>
+<p>たとえば日本語の「惚れる」は、自分がすることでも、誰かにされることでもないように感じられます。自分から惚れようとして惚れるわけでもなく、誰かに惚れさせられたとも言い切れません。古い文法の言い方で言えば、能動と受動のあいだにある動きです。</p>
+<p><a id="mv-older"></a>ただ、言語学の研究は、能動と受動の対よりも前に、能動と中動の対があったと見ています。印欧語族のもとの言葉（印欧祖語）では、根本の区別は能動と中動のあいだにあった、とバーバーは書きます。スマイスのギリシア語の文法書も、受動は中動から発達した、と書きます。ルラーギらの 2021 年の論文は、古い印欧語は能動と中動の二つの態を形として完全に持っていて、受動の働きはあとの発達だ、と今の研究の見方をまとめています。受動が中動から分かれたのなら、中動は、能動と受動を混ぜてできたものではないことになります。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：ディオニュシオス・トラクス『文法の技術』§15。Davidson, T.（訳）(1874) <em><a href="https://archive.org/details/grammarofdionysi00dionuoft">The Grammar of Dionysios Thrax</a></em>, St. Louis: Studley（Internet Archive のトロント大学の蔵書の走査で本文照合済。pp.11–12 の「There are three Dispositions: Activity, Passivity, and Mediality」と、中動を「partly activity and partly passivity」とする段。英語の訳を Claude が日本語にした）。／Barber, E. J. W. (1975) "<a href="https://journals.linguisticsociety.org/proceedings/index.php/BLS/article/download/2356/2126">Voice—Beyond the Passive</a>", <em>Proceedings of the First Annual Meeting of the Berkeley Linguistics Society</em>, 16–24（米国言語学会の論文集の公開版で本文照合済。p.16）。／Smyth, H. W. (1920) <em><a href="https://archive.org/details/agreekgrammarfo02smytgoog">A Greek Grammar for Colleges</a></em>, American Book Company（Internet Archive の走査で本文照合済。§1735 a「The passive has been developed from the middle」）。／Luraghi, S., Inglese, G., &amp; Kölligan, D. (2021) "<a href="https://doi.org/10.1515/flin-2021-2033">The passive voice in ancient Indo-European languages</a>", <em>Folia Linguistica Historica</em> 42(2):339–391（<a href="https://lirias.kuleuven.be/retrieve/2eec418d-037e-4edd-9940-e035de3b0eb2">KU Leuven の大学リポジトリの版</a>で本文照合済。p.340・p.342）。</p>
+</details>
+
+</div></details><details class="sec" id="中動では主語が過程の内にいる"><summary>中動では、主語が過程の内にいる</summary><div class="secbody">
+<p><a id="mv-benveniste"></a>前の章の、能動と中動の対を、何の対として読むかを定め直したのが、言語学者のバンヴェニストの 1950 年の論文です。能動では、動詞は、主語から出発し、主語の外で成し遂げられる過程を表す。中動では、主語がその座（場所）であるような過程を表し、主語は過程の内にある、と書きました。だから能動と中動を、外の態と内の態と呼び替えてもよい、とも書いています。</p>
+<p>たとえば、ギリシア語の中動の「眠る」に能動の形を足すと、「眠らせる」になります。眠りは主語の内で起きていた過程でしたが、「眠らせる」では、主語は過程の外に出て、過程は相手の側へ移ります。</p>
+<p>バンヴェニストの定め方では、中動でも主語は消えません。能動では主語が行い、中動では主語が自らに作用を受けながら行う、と書いています。意志や意図があるかどうかは、定め方の文に出てきません。</p>
+<p>この定め方は、pjdhiro が開発という言葉について言った見方と、向きが近いように見えます。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>私が気づいていない私と私の周りの環境によって開発されていく　という現象なんです。主体は私ですが。</p>
+</blockquote>
+<p>「主体は私」でありながら、私が外から操作しているのではなく、私は開発されていく過程の内にいる。バンヴェニストの言う、主語が過程の座である形に、当ててみることができます。ただし、「気づいていない私」と「周りの環境」にあたる場所は、バンヴェニストの定め方の中にはありません。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：Benveniste, É. (1950) "Actif et moyen dans le verbe"（<a href="https://journals.openedition.org/linx/966">Bader 1997 の引用で読んだ</a>）, <em>Journal de Psychologie</em> 43:121–129。再録：<em>Problèmes de linguistique générale</em> I, Gallimard 1966, pp.168–175（Bader が頁つきで逐語に引いた文で読んだ。PLG I p.172 の「le sujet est intérieur au procès」、p.173 の、能動では主語が行い、中動では主語が自らに作用を受けながら行う、とする文と、主語が過程の外か内かで位置を定める、とする文、p.174 の外の態・内の態の呼び替え、pp.172–173 の「眠る」と「眠らせる」の例）。／Bader, F. (1997) "<a href="https://doi.org/10.4000/linx.966">Actif et moyen dans le verbe</a>", <em>Linx</em> 9:41–59（<a href="https://journals.openedition.org/linx/966">OpenEdition の出版社の版</a>で本文照合済。pp.42–48）。仏語の訳は Claude。</p>
+</details>
+
+</div></details><details class="sec" id="中動の主語は自分の行いから作用を受ける"><summary>中動の主語は、自分の行いから作用を受ける</summary><div class="secbody">
+<p><a id="mv-affected"></a>バンヴェニストが主語の位置で定めたのに対して、ギリシア語を教える文法書は、行いが主語にどう返ってくるかに目を向けてきました。スマイスの文法書は、中動は、行為が主語に特別に関わって行われることを示す、と書きます。主語が、自分に利害のあることをしているように表す、とも書きます。</p>
+<p>バーバーは、ギリシア語の教師たちの説明をまとめて、中動の芯を主語の関与と呼びます。行為者である主語が、行為からも何らかの作用を受ける、という意味です。さらに、中動の印が表すのは、主語が行為者であってもなくても、主語が行為に作用を受ける状況だ、と書いています。</p>
+<p>この見方では、中動の主語は、自分のために意図して行う者でもありえます。バーバーの挙げる例には、妻をめとる、自分のために分け前を取る、があります。中動は、意図しないことの印ではありません。</p>
+<p>もう一つ、ルラーギらは、印欧祖語の中動のもとの意味について議論は続いているが、少なくとも一部は、制御されない出来事（状態と、状態の変わり始め）とつながる、という点では研究者の意見が一致している、と書きます。する者が出来事を握っているかどうか、という問いが、ここで出てきます。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：Smyth (1920) <em><a href="https://archive.org/details/agreekgrammarfo02smytgoog">A Greek Grammar for Colleges</a></em>（上の章の出典と同じ版。§1713「The middle voice shows that the action is performed with special reference to the subject」と §1714）。／Barber (1975) "<a href="https://journals.linguisticsociety.org/proceedings/index.php/BLS/article/download/2356/2126">Voice—Beyond the Passive</a>"（上の章の出典と同じ版。p.17 の主語の「involvement」と「the agentive subject is also affected in some way by the action」、p.18 の例、p.23 の「any situation in which the subject is affected by the action, whether or not it is also the agent of the action」）。／Luraghi ら (2021) "<a href="https://doi.org/10.1515/flin-2021-2033">The passive voice in ancient Indo-European languages</a>"（上の章の出典と同じ版。p.342 の「uncontrolled events, both stative and inchoative」）。</p>
+</details>
+
+</div></details><details class="sec" id="中動では始める者と行き着く先が分かれていない"><summary>中動では、始める者と行き着く先が分かれていない</summary><div class="secbody">
+<p><a id="mv-kemmer"></a>多くの言語を比べて中動を定め直したのが、言語学者のケマーの 1993 年の本です。ここでは、ベラクーラ語（カナダ西岸の言葉）の中動を調べたベックの 1998 年の論文が、ケマーの枠組みを紹介し、使っている文から見ます。</p>
+<p>ベックの紹介では、ケマーは中動を、出来事の精緻化（どれだけ細かく分けて言い表すか）が比較的低いこととして定めます。いちばん典型なのは、節が二つの参与者、つまり出来事を始める者と行き着く先を、はっきり分けないことです。他動詞の文では、始める者から行き着く先へ働きかけが向かい、二つは別々の者として言い表されます。中動は、再帰（自分を洗う、のような形）と並んで、一人の出来事と二人の出来事のあいだに置かれます。</p>
+<p><a id="mv-kemmer-kinds"></a>ベックは、この枠組みで、中動のいくつかの使い方を説明します。</p>
+<ul>
+<li>認知と感情の動詞（腹を立てる など）に中動が付くのは、主語を、自分の認知や感情のはたらきと幾らか分かれたものとして表すからだ、とケマーは見る、とベックは書きます。行き着く先は、主語自身の心になります。</li>
+<li>状態の変わり始めを、表に出た行為者や原因なしに起きるものとして言う使い方を、ケマーは自発の出来事の中動と呼ぶ、とベックは書きます。ベックはそこに、主語の性質が、ふつうなら行為者がするように出来事を起こしている、という読みを足します。</li>
+<li>ベック自身は、変わり始めの中動について、出来事の始めと終わりで主語が同じでないことが、主語を一つでないものとして言い表させているのではないか、と読みます。</li>
+</ul>
+<p>一つめの使い方は、私を、心のはたらきの私と、それを持つ私とに分けて言い表している、と読めそうです。二つめの使い方では、出来事を起こしているのが、私の意図でなく、私の性質や、私を含む周りの何かであるように言い表されます。三つめの使い方は、なってしまうことを、始めと終わりで同じでない私として言い表しています。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：Beck, D. (1998) "Unitariness of participant and event in the Bella Coola middle voice"（ブリティッシュコロンビア大学の言語学の論文の置き場に公開されていた版の <a href="https://web.archive.org/web/20250814222012/https://lingpapers.sites.olt.ubc.ca/files/2018/03/1998_Beck.pdf">Wayback の記録</a>〔2025 年 8 月 14 日〕で本文照合済。12 頁。冒頭の「relatively low elaboration of events」の紹介、低い参与者の見分けやすさ、再帰と中動を一人と二人の出来事のあいだに置く段、自発の出来事の中動〔3.3 節〕、時間の上で一つでない主語の読み、認知と感情の動詞の段）。ケマーの本は Kemmer, S. (1993) <em><a href="https://doi.org/10.1075/tsl.23">The Middle Voice</a></em>, John Benjamins（このページはベックの紹介で読んだ）。英語の訳は Claude。</p>
+</details>
+
+</div></details><details class="sec" id="中動は二つの問いを一緒に扱っているのではないか"><summary>中動は、二つの問いを一緒に扱っているのではないか</summary><div class="secbody">
+<p><a id="mv-two-planes"></a>ここまでの定め方を並べたあと、pjdhiro はこう問いました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の問い：</strong>x＝過程の内外、y＝する、される、という平面はあるでしょう。四元数でなくても表現できる。でも、中動というのは、二つの平面を扱ってるのでは？よくよく読めば。</p>
+</blockquote>
+<p>並べた定め方は、二つの問いに分けて読めます。一つは、主語が過程の外にいるか内にいるか、です（バンヴェニスト）。もう一つは、するか、されるか、です（古い文法の能動と受動。作用を受ける主語の見方も、ここに近い）。二つは別の問いなので、混ざりません。それでも、中動の一つの動詞の上では、二つが一緒に働いているように見えます。たとえば「惚れる」では、私は惚れることの内にいて、同時に、することとされることが見分けられないまま一つの動きになっている、と読めます。</p>
+<p><a id="mv-self"></a>そのうえで、pjdhiro は、もう一つの分け方が要る、と言います。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>過程にある存在としての自分と、表象的な意識での自分。自我のような。分けないといけない。主語で用いる際にも。述語を扱う際にも。</p>
+</blockquote>
+<p>ケマーの枠組みで、中動が、始める者と行き着く先を分けないことだったのを思い出すと、この分け方は、どの私を始める者と見て、どの私を行き着く先と見るか、という問いに当たるのかもしれません。認知と感情の中動が、私を心のはたらきと分けて言い表していたのは、その一つの形に見えます。</p>
+<p>自我の発達を調べたクック＝グロイターも、近い分け方を書いています。発達のある段階で、人は、自我が、入ってくる刺激を処理する中心（過程としての自我）でもあり、自己の同一性を作る参照の中心（表象としての自我）でもあったことに気づく、と書きます。これは中動の論ではなく、発達の論の分け方です。</p>
+<p>この三つめの分け方が、主語の内と外、する・される、に並ぶもう一つの問いとして立つのか、二つの問いの中にすでに入っているのかは、まだ分かりません。</p>
+<p>🚧 工事中</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：Cook-Greuter, S. R. (2013) <em>Nine Levels of Increasing Embrace in Ego Development: A Full-Spectrum Theory of Vertical Growth and Meaning Making</em>（2013 年 12 月の改訂の公開前の版。著者のサイトに置かれていた版の <a href="https://web.archive.org/web/20140928135208/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1%2714%2097p%5B1%5D.pdf">Wayback の記録</a>で本文照合済。pp.78–79 の、自我を「ego as process」と「ego as representation」に分け、Funk 1994 が初めに置いた区別だとする段）。英語の訳は Claude。</p>
+</details>
+
+</div></details><details class="sec" id="巻末"><summary>巻末</summary><div class="secbody">
+<h3 id="保持論点">保持論点</h3>
+<ul>
+<li>三つめの分け方（過程にある私と、表象としての私）は、中動の二つの問い（主語の内と外・する・される）に並ぶ問いとして立つか。</li>
+<li>ケマーの言う、始める者と行き着く先の見分けにくさは、二つの問いの中のどこに置けるか。どちらの問いとも形が違い、二つの極の対というより、多い少ないの度合いの形をしている。</li>
+<li>自発の出来事の中動で、出来事を起こしているように言い表される主語の性質は、pjdhiro の言う「周りの環境」とどう重なるか。</li>
+</ul>
+<h3 id="原典の読み方">原典の読み方</h3>
+<p>このページの定め方の並べ方と、二つの問いへの読み直しは、Claude が原典の記述から並べたものです。各章の出典の畳みに、読んだ版と頁を添えました。バンヴェニストの論文はバーダーが頁つきで引いた文で、ケマーの本はベックが紹介した文で読んでいます。</p>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a> ・
+                <a href="nondual.html">不二（非二元）とは</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>
