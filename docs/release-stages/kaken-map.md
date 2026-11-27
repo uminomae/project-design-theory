@@ -13,9 +13,9 @@
 | 小区分 | 触れている 39 / 296（触れていない 257） |
 | 中区分 | 触れている 18 / 66 |
 | 大区分 | 触れている 8 / 13（触れていない：E・G・H・J・M） |
-| 読み物のページ | 108（区分に当てた 91・当てない 17） |
+| 読み物のページ | 109（区分に当てた 91・当てない 18） |
 
-区分に当てないページ：about・abilities・cognitive-abilities・competency-frameworks・complex-plane・influences-management・kaken-map・love-trajectory・reading-directions・shelf-love・shelf-mind・shelf-number・shelf-org・shelf-self・shelf-translations・site-evaluation・thinking-definitions。並び・目次・道案内・転送のページ（中身は呼ぶ先のページの側）と、このサイトを測った結果のページと、pjdhiro の一年の記録（love-trajectory）。
+区分に当てないページ：about・abilities・cognitive-abilities・competency-frameworks・complex-plane・influences-management・kaken-map・love-trajectory・reading-directions・shelf-love・shelf-mind・shelf-number・shelf-org・shelf-self・shelf-translations・material-checklist・site-evaluation・thinking-definitions。並び・目次・道案内・転送のページ（中身は呼ぶ先のページの側）と、このサイトを測った結果のページと、pjdhiro の一年の記録（love-trajectory）。
 
 区分の中に場所が無いもの：Love駆動開発そのもの（経営学・臨床心理学・仏教学に触れるが、どれかの区分の研究ではない）。
 
