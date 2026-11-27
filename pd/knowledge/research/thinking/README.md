@@ -107,7 +107,7 @@ Gutenberg は 2026-11-25 にメンテナンス中で取れなかった。どれ�
 pjdhiro「思考の定義について、最近50年のものがないね」を受けて足した。
 
 - サイモン 1978（Les Prix Nobel の p.362）：「Information processing theories envisage problem solving as involving very selective search through problem spaces that are often immense.」訳：情報処理の理論は、問題解決を、しばしばとても大きな問題の空間の中での、強く選び取る探索として描く。経験則（heuristics）が見込みのある所へ導き、満足化の基準で探索が止まる（同じ頁）。理論の本はニューウェルとの『Human Problem Solving』1972（読んでいない。CACM 1976 の論文も OA の写しが見つからなかった）。
-- Holyoak & Morrison 2012（原稿の pp.14–16）：
+- Holyoak & Morrison 2012（原稿の pp.14–16。2026-11-27 に同じ Wayback の記録〔2019-08-19・11 頁・刊行前の原稿で頁は 14 から〕を取り直し、下の引用と読み物の段〔日常の使い方・リップスとコンラッドの紹介・仮の定義・言わないこと〕を一つずつ照らし直した。食い違いは無い）：
   - 日常の使い方：信念（I think that water is necessary for life）・問題解決（Ann is sure to think of a solution）・先を見ること・判断（What do you think about it?）・物思い（lost in thought、「mental meadow」）（p.14）。
   - リップスとコンラッド 1989 を引き、「"thinking" is the most general term in both orderings—the grand superordinate of mental activities, which permeates all the others」（pp.14–15）。原典は読んでいない（二次経由）。
   - 定義：「Thinking is the systematic transformation of mental representations of knowledge to characterize actual or possible states of the world, often in service of goals.」（p.15）。知識の心の表象とは「an internal description that can be manipulated to form other descriptions」。

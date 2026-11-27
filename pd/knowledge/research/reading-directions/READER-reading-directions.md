@@ -97,7 +97,7 @@
 | ● 主体 | 私が意図して、開発を進める。「開発されていく」は「開発する」と言い直せる。 | 主体は私だが、気づいていない私と周りの環境によって開発されていく。受け身と能動を、どちらか一方に直さない。 | [Love駆動開発の「開発とは、何を指すか」](love-driven-dev.html#ldd-development) |
 | ● 「駆動」 | 〇〇駆動開発は手法の名前で、駆動は人が先に置くもの。 | 手順の形はとらず、現象の分析と対処の両方。駆動は、人の先にあって記号で示せないもの（月）を指す。 | [Love駆動開発の「駆動」の段](love-driven-dev.html#ldd-drive-moon) |
 | ● 計画と構想 | まず構想と計画を立て、それに沿って実行する。 | 構想も計画も、要るときも、要らないときも、逆効果のときもある。計画には、環境を支配したい気持ちや怖さも入っている。当てる語は「対処」。 | [Love駆動開発の「計画」の段](love-driven-dev.html#ldd-plan-word)・[時間の向き - 僕の前に道はない](no-road-ahead.html) |
-| 予測と適応 | 計画は、先を予測して立て、それに沿って進めるもの。進める人は、先の像と計画を持つ力強い先導者。 | 家政婦さんのように、現場に行き、判断し、合わせる、をくり返す。PMBOK 第 7 版が開発の進め方を分ける「予測型」と「適応型」で言えば、適応型の進め方から、計画という語を見ている。 | [Love駆動開発の「構想」の段](love-driven-dev.html#ldd-housekeeper) |
+| 予測と適応 | 計画は、先を予測して立て、それに沿って進めるもの。進める人は、先の像と計画を持つ力強い先導者。 | 家政婦さんのように、現場に行き、判断し、合わせる、をくり返す。PMBOK 第 7 版が開発の進め方として挙げる「予測型」「適応型」「ハイブリッド」で言えば、適応型の進め方から、計画という語を見ている。 | [Love駆動開発の「構想」の段](love-driven-dev.html#ldd-housekeeper) |
 | ● 時間 | 今から未来の目的地へ向かい、道は枝分かれする。 | 未来へ向かう見方と、未来がやってくる見方は、どちらも成り立つ。どちらで見ているかが曖昧なことが、取り違えを生みやすい。 | [時間の向き - 僕の前に道はない](no-road-ahead.html)・[Love駆動開発の as-is と to-be の図](love-driven-dev.html#ldd-asis-tobe) |
 | ● 不確実性 | 現象は、すでに起きたことを振り返って説明するもの。 | すべては確率的で、不確実さの中にある、という見方に立つ。まだ起きていないこと、起きるかもしれないことまで含めて、構想し、設計し、対処する。 | [Love駆動開発の「対処」の段](love-driven-dev.html#ldd-taisho) |
 | ● 渦 | 渦が巻くのは、中心に回している何かがあるから。 | 渦は、周りの揺らぎから立つ。経営や創造や価値も、場の揺らぎから生まれた渦の名前として読む。 | [起業家の漸化式と、ジュリア集合の海の段](julia-potential.html#jp-sea)・[Love駆動開発の渦の段](love-driven-dev.html#ldd-vortex) |
@@ -138,6 +138,7 @@
 
 <details><summary>出典</summary>
 
+- PMBOK 第 7 版の開発の進め方の分け方：Project Management Institute (2021) "The PMBOK® Guide: Seven Facts About the Pending Seventh Edition"（PMI が第 7 版の出る前に公開した案内。2021-01-20 の版。第 7 版は八つの性能領域で組まれ、進め方は予測型・適応型・ハイブリッドから選ぶ、とある。[Wayback の記録（元は PMI のサイトの PDF・2021-07-05 の写し）](https://web.archive.org/web/20210705050215/https://www.pmi.org/-/media/pmi/documents/public/pdf/pmbok-standards/pmbok-guide-seven-facts.pdf)）／Project Management Institute (2021) "Project Performance Domains"（その八つの性能領域を説明した PMI の公開の資料。p.4 の「開発の進め方とライフサイクル」の領域に、予測型・適応型・ハイブリッドの三つが挙がる。[Wayback の記録（元は PMI のサイトの PDF・2026-10-30 の写し）](https://web.archive.org/web/20261030000410/https://www.pmi.org/-/media/pmi/documents/public/pdf/pmbok-standards/pmi-project-performance-domains.pdf)）
 - このサイトの規約「[Claude が繰り返す誤りの型](https://github.com/uminomae/project-design-theory/blob/main/docs/rules/corrections.md)」「[見方と判断の仕方](https://github.com/uminomae/project-design-theory/blob/main/docs/rules/stance.md)」（GitHub）
 
 </details>
