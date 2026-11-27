@@ -401,6 +401,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/good-self-destruction/READER-good-self-destruction.md",
+        ROOT / "scripts/reader-good-self-destruction-template.html",
+        ROOT / "reader/good-self-destruction.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/breath-filter/READER-breath-filter.md",
         ROOT / "scripts/reader-breath-filter-template.html",
         ROOT / "reader/breath-filter.html",

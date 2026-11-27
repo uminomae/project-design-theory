@@ -1,7 +1,7 @@
 {
  "counts": {
-  "pages": 105,
-  "mapped_pages": 87,
+  "pages": 106,
+  "mapped_pages": 88,
   "cs": 30,
   "sho": 296,
   "touched": 89,
@@ -26,6 +26,7 @@
        "id": "01010",
        "name": "哲学および倫理学",
        "pages": [
+        "good-self-destruction",
         "carus-onslaught-on-necessity-ja",
         "creative-thinking",
         "empathy",
@@ -429,6 +430,7 @@
        "id": "07010",
        "name": "理論経済学および経済学史",
        "pages": [
+        "good-self-destruction",
         "decision-making",
         "mandeville-grumbling-hive-ja",
         "newcomb-political-economy-ja"
@@ -470,6 +472,7 @@
        "name": "経営学",
        "pages": [
         "business-design-syllabus",
+        "good-self-destruction",
         "decision-making",
         "gravity-love",
         "interpersonal-abilities",
@@ -631,6 +634,7 @@
        "name": "社会心理学",
        "pages": [
         "anshin",
+        "good-self-destruction",
         "empathy",
         "interpersonal-abilities",
         "intrinsic-motivation",
@@ -2788,6 +2792,7 @@
   "buckle-history-of-civilization-ja": "バックル『イギリス文明史』（1857）の、統計が示す規則性の所を、日本語で読む",
   "business-design-syllabus": "Love駆動開発は、事業構想の授業になるか",
   "capacity-after-ai": "AI の時代に、差になるスキルは何か",
+  "good-self-destruction": "良いの自滅",
   "carus-onslaught-on-necessity-ja": "ケーラス「パース氏の必然論への猛攻」を、日本語で読む",
   "clausius-art-der-bewegung-ja": "クラウジウス「熱と呼ぶ運動の種類について」（1857）を、日本語で読む",
   "clausius-bewegende-kraft-der-warme-ja": "クラウジウス「熱の動力について」（1850）を、日本語で読む",
