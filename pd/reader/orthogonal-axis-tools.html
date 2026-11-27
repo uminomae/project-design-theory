@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/orthogonal-axis-tools.html を直接編集しないでください。
+  正本:   knowledge/research/orthogonal-axis-tools/READER-orthogonal-axis-tools.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「直交する軸を扱っている道具たち」のページです（工事中）。目次「複素平面で考える」（reader/complex-plane.html）から呼ばれる独立ページ。始まりは、読み物「オイラーの等式が、たたんだもの」（reader/euler-unfolded.html）の結びで、e が「自然対数の底」と呼ばれる由来を聞いた pjdhiro の問い（自然対数と e は、はじめから円の平面と直交する軸〔虚軸のような〕を扱う道具だったのでは）。段ごとに「見方」（pjdhiro の問いと、このページの読み）・「数学では」・「歴史では」の印で書き分ける。歴史：最初の対数はネイピア 1614 の正弦の対数。双曲線の面積が対数の働きをする（サン＝ヴァンサン 1647・ド・サラサ 1649）。「自然の」は 10 を底とする「表の」対数と対の語（メルカトル 1668）。オイラーは e を双曲線対数が 1 の数とし（1731・1736）、『無限解析序説』1748 の §122 で自然の、すなわち双曲線の対数、§138 で e^{iv} = cos v + i sin v。円と自然対数を虚数で結ぶ文は名のあと（ヨハン・ベルヌーイ 1702・コーツ 1714）。数学：円 x²+y²=1 と双曲線 x²−y²=1 は y を iy に替えると移り合う。y=1/x の下の面積 ln t がそのまま双曲線の角になり、自然対数は双曲線の角と円の角を、どちらも余分な定数なしに測る。直角を生むのは e でなく i で、e は i の向きへ回る速さがちょうど 1 になる底（b^{iθ} の速さは |ln b|）。k² が −1・0・+1 で、e^{kθ} は円の回転・ずらし・双曲線の回転に分かれる。道具の一覧（素朴な言葉と数学の二段・直交の意味〔ユークリッド・ミンコフスキー・シンプレクティックの対・関数の直交〕を添える）と、作った人の本文に直交する軸が書いてあるかの年表（ヴェッセル 1799・ガウス 1831・ハミルトン 1843・スタインメッツ 1893・ミンコフスキー 1908 は書いている。自然対数の名の側には見当たらない）。問いは開いたまま終える。
+  数学の段は、別のコンテキストのエージェントが式と数値で確かめた。原典の訳は Claude。
+  pjdhiro 本人の言葉は「pjdhiro の問い：」「pjdhiro の見方：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>直交する軸を扱っている道具たち | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/orthogonal-axis-tools.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="数直線と直角に交わるもう一本の軸を扱う道具（複素数・双曲線関数とローレンツ変換・四元数・フェーザ・フーリエ変換・位相空間・直交座標・ウィック回転・ラプラス変換・電場と磁場）を、素朴な言葉の一行と数学の一行の二段で並べる。始まりは、自然対数と e は、はじめから円の平面と直交する軸を扱う道具だったのでは、という問い。原典で照らすと「自然の」対数の名は双曲線の面積から付き（メルカトル 1668）、円や虚数と結ばれたのは名のあと（ベルヌーイ 1702・コーツ 1714・オイラー 1748）。数学では、直角を生むのは i で、e はその向きへ回る速さを 1 にする底。問いは開いたまま置く（工事中）。">
+    <meta property="og:title" content="直交する軸を扱っている道具たち">
+    <meta property="og:description" content="数直線と直角に交わるもう一本の軸を扱う道具（複素数・双曲線関数とローレンツ変換・四元数・フェーザ・フーリエ変換・位相空間・直交座標・ウィック回転・ラプラス変換・電場と磁場）を、素朴な言葉の一行と数学の一行の二段で並べる。始まりは、自然対数と e は、はじめから円の平面と直交する軸を扱う道具だったのでは、という問い。原典で照らすと「自然の」対数の名は双曲線の面積から付き（メルカトル 1668）、円や虚数と結ばれたのは名のあと（ベルヌーイ 1702・コーツ 1714・オイラー 1748）。数学では、直角を生むのは i で、e はその向きへ回る速さを 1 にする底。問いは開いたまま置く（工事中）。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/orthogonal-axis-tools.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="直交する軸を扱っている道具たち">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-27">
+    <meta property="article:modified_time" content="2026-11-27">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "直交する軸を扱っている道具たち",
+          "description": "数直線と直角に交わるもう一本の軸を扱う道具（複素数・双曲線関数とローレンツ変換・四元数・フェーザ・フーリエ変換・位相空間・直交座標・ウィック回転・ラプラス変換・電場と磁場）を、素朴な言葉の一行と数学の一行の二段で並べる。始まりは、自然対数と e は、はじめから円の平面と直交する軸を扱う道具だったのでは、という問い。原典で照らすと「自然の」対数の名は双曲線の面積から付き（メルカトル 1668）、円や虚数と結ばれたのは名のあと（ベルヌーイ 1702・コーツ 1714・オイラー 1748）。数学では、直角を生むのは i で、e はその向きへ回る速さを 1 にする底。問いは開いたまま置く（工事中）。",
+          "keywords": "直交, 虚軸, 自然対数, ネイピア数, 双曲線, 双曲線関数, ローレンツ変換, 四元数, フェーザ, フーリエ変換, 位相空間, 直交座標, 複素平面, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/orthogonal-axis-tools.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/orthogonal-axis-tools.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-27",
+          "dateModified": "2026-11-27",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "自然対数"}, {"@type": "Thing", "name": "直交"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方の言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>この文書は「直交する軸を扱っている道具たち」のページです（工事中）。目次「複素平面で考える」（reader/complex-plane.html）から呼ばれる独立ページ。始まりは、読み物「オイラーの等式が、たたんだもの」（reader/euler-unfolded.html）の結びで、e が「自然対数の底」と呼ばれる由来を聞いた pjdhiro の問い（自然対数と e は、はじめから円の平面と直交する軸〔虚軸のような〕を扱う道具だったのでは）。段ごとに「見方」（pjdhiro の問いと、このページの読み）・「数学では」・「歴史では」の印で書き分ける。歴史：最初の対数はネイピア 1614 の正弦の対数。双曲線の面積が対数の働きをする（サン＝ヴァンサン 1647・ド・サラサ 1649）。「自然の」は 10 を底とする「表の」対数と対の語（メルカトル 1668）。オイラーは e を双曲線対数が 1 の数とし（1731・1736）、『無限解析序説』1748 の §122 で自然の、すなわち双曲線の対数、§138 で e^{iv} = cos v + i sin v。円と自然対数を虚数で結ぶ文は名のあと（ヨハン・ベルヌーイ 1702・コーツ 1714）。数学：円 x²+y²=1 と双曲線 x²−y²=1 は y を iy に替えると移り合う。y=1/x の下の面積 ln t がそのまま双曲線の角になり、自然対数は双曲線の角と円の角を、どちらも余分な定数なしに測る。直角を生むのは e でなく i で、e は i の向きへ回る速さがちょうど 1 になる底（b^{iθ} の速さは |ln b|）。k² が −1・0・+1 で、e^{kθ} は円の回転・ずらし・双曲線の回転に分かれる。道具の一覧（素朴な言葉と数学の二段・直交の意味〔ユークリッド・ミンコフスキー・シンプレクティックの対・関数の直交〕を添える）と、作った人の本文に直交する軸が書いてあるかの年表（ヴェッセル 1799・ガウス 1831・ハミルトン 1843・スタインメッツ 1893・ミンコフスキー 1908 は書いている。自然対数の名の側には見当たらない）。問いは開いたまま終える。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の問い」「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>直交する軸を扱っている道具たち</h1>
+                <p class="reader-subtitle">自然対数と e は、はじめから円の平面と直交する軸を扱う道具だったのか</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-27 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/orthogonal-axis-tools/READER-orthogonal-axis-tools.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<div class="reader-lead glow-card" id="oa-gist"><span class="reader-lead__label">ざっくりいうと</span>
+<p>数学や物理には、まっすぐな数の線（数直線）だけでなく、それと直角に交わるもう一本の軸を扱う道具がいくつもあります。複素数の虚軸、四元数の三つの虚の軸、時間と空間の平面、交流の回る矢印、位置と運動量の平面などです。このページは、そうした道具を、素朴な言葉の一行と、数学の一行の二段で並べます。</p>
+<p>始まりは、e が「自然対数の底」と呼ばれる由来を聞いた pjdhiro の問いです。自然対数と e は、はじめから、円の平面と直交する軸を扱う道具だったのではないか。原典で照らすと、「自然の」という名は双曲線の面積から付き、円や虚数と結ばれたのは、名が付いたあとでした。数学では、直角の向きを生むのは i で、e は、その向きへ回る速さをちょうど 1 にする底です。問いは開いたまま置きます。</p>
+</div>
+
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p>このページは、pjdhiro の問いに、Claude が原典と数学で確かめて答える形で作っています。段の頭に、<span class="step-mark">見方</span>（pjdhiro の問いと、このページの読み）、<span class="step-mark step-mark--math">数学では</span>、<span class="step-mark step-mark--math">歴史では</span>の印を付けて書き分けます。道具の一覧の「素朴な言葉」の行は、数直線から入らない人のために Claude が書いた言い直しで、数学の言い切りではありません。原典の訳は Claude です。</p>
+<p>「直交」には、道具ごとに違う意味があります。ふつうの直角（ユークリッドの直交）のほかに、時間と空間の直交（ミンコフスキーの直交）、位置と運動量の対（シンプレクティックの対）、関数どうしの直交があります。一覧では、どの意味の直交かも書きます。</p>
+<p>i を掛けると 90 度回ること、−1 を掛けると 180 度回ることのおさらいは、読み物「<a href="rotation-multiplication.html">回転の掛け算</a>」と「<a href="angle-rotation.html">三角関数から複素平面まで、回転を扱うための角度の話だった</a>」にあります。</p>
+<div class="reader-lead"><span class="reader-lead__label">構成</span>
+<ul class="reader-lead__list">
+<li><b><a href="#oa-start">問いの始まり：「自然」の名を聞いて</a></b></li>
+<li><b><a href="#oa-name">「自然の」対数は、双曲線の面積から名が付いた</a></b></li>
+<li><b><a href="#oa-hyper">円と双曲線は、y を iy に替えると移り合う</a></b></li>
+<li><b><a href="#oa-role">直角を生むのは i で、e は回る速さを 1 にする</a></b></li>
+<li><b><a href="#oa-three">縦の単位の性質で、回る・ずれる・引き伸ばされるに分かれる</a></b></li>
+<li><b><a href="#oa-tools">直交する軸を扱っている道具たち</a></b></li>
+<li><b><a href="#oa-intent">作った人は、直交する軸を書いていたか</a></b></li>
+<li><b><a href="#oa-open">開いたままの問い</a></b></li>
+<li><b><a href="#oa-more">このあとに読むもの</a></b></li>
+</ul>
+</div>
+
+<details class="sec" id="問いの始まり自然の名を聞いて" open><summary>問いの始まり：「自然」の名を聞いて</summary><div class="secbody">
+
+
+<p><a id="oa-start"></a>読み物「<a href="euler-unfolded.html">オイラーの等式が、たたんだもの</a>」の結びには、e が「自然対数の底」と呼ばれるようになった由来は何だったのか、という問いが残っています。その由来を Claude が調べ、自然対数は双曲線 y = 1/x の下の面積から見つかった、と答えたところで、pjdhiro はこう問いました。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の問い：</strong>それは、最初から、平面を扱う道具だったんじゃ。円の平面と直交する軸を扱うための。虚軸のような。</p>
+</blockquote>
+<p>続けて、pjdhiro は、この問いをどういう区分で見ていくかを話しています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>直交する軸を扱ってる道具たち、という区分で見ていくのはとても大事なんです。数直線的世界観が馴染まない人たちのためにも。</p>
+</blockquote>
+<p>このページは、この区分で道具を並べます。あわせて、問いの足場になる事実を、歴史と数学の二つの側から並べます。歴史の側では、名を付けた人たちが、円や直交する軸のことを書いていたかを見ます。数学の側では、e と i が、それぞれ何をしているかを見ます。</p>
+</div></details><details class="sec" id="自然の対数は双曲線の面積から名が付いた" open><summary>「自然の」対数は、双曲線の面積から名が付いた</summary><div class="secbody">
+
+
+<p><a id="oa-name"></a><span class="step-mark step-mark--math">歴史では</span>原典で照らせた順に並べます。</p>
+<ul>
+<li>最初の対数は、ネイピア（1614）が、円の正弦に付けた数でした。定義は「各正弦の対数とは…の数である」で、表は正弦と対数を並べた列でできています。虚数は出てきません。</li>
+<li>そのあと、双曲線の下の面積が、対数の働きをすることが見つかります。サン＝ヴァンサン（1647）は、漸近線の上の区切りが等比なら、双曲線の切片の面積は等しくなる、と示しました。ド・サラサ（1649）は、その面積が「対数の代わりになりうる」と書きました。</li>
+<li>「自然の」対数という呼び名は、メルカトル（1668）の補足に、「自然の対数を表の対数に直す小表」として出てきます。「自然の」は、10 を底とする「表の」対数と対にした語でした。同じ年に、コリンズはグレゴリーの本を紹介する文で「双曲線の対数」と書いています。</li>
+<li>オイラーは、e を「双曲線対数が 1 になる数」と書きました（1731 年の手紙と『力学』1736）。『無限解析序説』（1748）の §122 では、この底の対数は、双曲線の求積を表せるので「自然の、すなわち双曲線の対数」と呼ばれる、と書いています。</li>
+</ul>
+<p><span class="step-mark step-mark--math">歴史では</span>名を付けた人たちの本文の、照らした箇所には、円や虚数への言及は見当たりません。円と自然対数を虚数で結ぶ文は、名が付いたあとに出てきます。</p>
+<ul>
+<li>ヨハン・ベルヌーイ（1702 年の手紙）は、「虚の対数は、実の円の扇形と取るべきだ」と書きました。</li>
+<li>コーツ（1714）は、円の弧を、虚の比の「測り」に √−1 を掛けたもので表しました。その直前に「説明のつかない仕方で」と添えています。今の式で書けば、ix = ln(cos x + i sin x)（主値で）にあたります。</li>
+<li>オイラーは、『無限解析序説』の §138 で、e<sup>+v√−1</sup> = cos v + √−1 sin v と書きました。§122 で置いた自然の対数の底 e を、同じ本の中で、円の正弦と余弦に結んだことになります。</li>
+</ul>
+<p><span class="step-mark">見方</span>pjdhiro の問いの「最初から」は、二通りに読めます。一つは、名を付けた人が、そう意図していたか。もう一つは、道具そのものが、もともとそういう性質を持っていたか。前の読みには、上の順のとおり、照らした範囲で出典が見当たりません。後の読みには、次の二つの章の数学があります。どちらの読みで問いを抱えるかは、開いたままにします。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>原典の訳は Claude。引用の多くは写しの OCR の文字で照らした。</p>
+<ul>
+<li>ネイピア『驚くべき対数の規則の記述』（1614）第 1 巻第 1 章の定義 6（正弦の対数）（<a href="https://archive.org/details/mirificilogarit00napi">Internet Archive の写し</a>）。</li>
+<li>サン＝ヴァンサン『円と円錐の切り口の求積の幾何学の書』（1647）第 6 巻「双曲線について」の命題 109（第 2 冊 p. 586。双曲線の切片の面積）（<a href="https://archive.org/details/bub_gb_a2CNnQIklsgC">Internet Archive の写し・第 2 冊</a>）。</li>
+<li>ド・サラサ『メルセンヌ神父の出した問題の解』（1649）の「この面積は対数の代わりになりうる」（<a href="https://archive.org/details/bub_gb_X2BuaNIVZyMC">Internet Archive の写し</a>）。</li>
+<li>メルカトル『対数の技法』（1668）（<a href="https://archive.org/details/bim_early-english-books-1641-1700_logarithmotechnia-_mercator-nicolaus_1668">Internet Archive の写し</a>）と、同じ年の <a href="https://doi.org/10.1098/rstl.1668.0034">Philosophical Transactions 第 3 巻 38 号 pp. 750–764</a> に載せた補足の p. 761 の「自然の対数を表の対数に直す小表」（<a href="https://archive.org/details/paper-doi-10_1098_rstl_1668_0034">Internet Archive の写し</a>）。</li>
+<li>コリンズによるグレゴリーの本の紹介。<a href="https://doi.org/10.1098/rstl.1668.0008">Philosophical Transactions 第 3 巻 33 号 pp. 640–644</a>（1668）の「Hyperbolical Logarithme of the Numb. 2」（<a href="https://archive.org/details/paper-doi-10_1098_rstl_1668_0008">Internet Archive の写し</a>）。</li>
+<li>オイラーの 1727/28 年の手稿 E853 の「対数が 1 になる数を e と書く」（1862 年の遺稿集 第 2 巻 p. 800 以下）（<a href="https://scholarlycommons.pacific.edu/euler-works/853/">Euler Archive</a>）。</li>
+<li>オイラーの 1731 年 11 月 25 日付ゴールドバッハ宛ての手紙（Fuss 編『書簡集』第 1 巻 1843、手紙 XV、p. 58）の「e はここで、双曲線対数が 1 になる数を表す」（<a href="https://archive.org/details/bub_gb_ZT6u1fau4zUC">Internet Archive の写し</a>）。</li>
+<li>オイラー『力学』第 1 巻（1736）§171 の「e は双曲線対数が 1 の数」（<a href="https://scholarlycommons.pacific.edu/euler-works/15/">Euler Archive</a>）。『無限解析序説』第 1 巻（1748）§122（自然の、すなわち双曲線の対数）と §138（e<sup>+v√−1</sup> = cos.v + √−1.sin.v）（<a href="https://scholarlycommons.pacific.edu/euler-works/101/">Euler Archive</a>）。</li>
+<li>ヨハン・ベルヌーイの 1702 年 8 月 5 日付の手紙の抜粋。1742 年の全集 第 1 巻 No. 70、p. 400 で照らした（<a href="https://archive.org/details/bub_gb_JIyE5FgkdscC">Internet Archive の写し</a>）。1702 年の初出は照らせていない。</li>
+<li>コーツ「対数の測り」（<a href="https://doi.org/10.1098/rstl.1714.0002">Philosophical Transactions 第 29 巻 1714</a>、p. 32 の「説明のつかない仕方で」）（<a href="https://archive.org/details/paper-doi-10_1098_rstl_1714_0002">Internet Archive の写し</a>）。</li>
+</ul>
+</details>
+
+</div></details><details class="sec" id="円と双曲線はy-を-iy-に替えると移り合う" open><summary>円と双曲線は、y を iy に替えると移り合う</summary><div class="secbody">
+
+
+<p><a id="oa-hyper"></a><span class="step-mark">見方</span>自然対数が双曲線の面積から見つかったのなら、それは、はじめから平面の図形を扱う道具だったのかもしれません。円と双曲線を、同じ項目で並べてみます。</p>
+<p><span class="step-mark step-mark--math">数学では</span>円の式 x² + y² = 1 の y を iy に置き換えると、双曲線の式 x² − y² = 1 になります。二つは、次のように同じ形で並びます。</p>
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>円</th>
+<th>双曲線</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>式</td>
+<td>x² + y² = 1</td>
+<td>x² − y² = 1</td>
+</tr>
+<tr>
+<td>曲線の上の点</td>
+<td>(cos θ, sin θ)</td>
+<td>(cosh u, sinh u)</td>
+</tr>
+<tr>
+<td>原点と結んだ扇形の面積</td>
+<td>θ/2</td>
+<td>u/2</td>
+</tr>
+<tr>
+<td>θ と u の呼び名</td>
+<td>円の角</td>
+<td>双曲線の角</td>
+</tr>
+<tr>
+<td>互いへの移り方</td>
+<td>cos(iu) = cosh u、sin(iu) = i sinh u</td>
+<td>cosh(iθ) = cos θ、sinh(iθ) = i sin θ</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>双曲線 y = 1/x の下の、1 から t までの面積は ln t です（t &gt; 1。0 &lt; t &lt; 1 では、向きを付けた面積として負の値になります）。この面積とそのまま一致するのは、底を e に取った対数だけです。底が b なら、log<sub>b</sub> t = ln t / ln b で、面積の 1/ln b 倍になります。</p>
+<p>y = 1/x を、直線 y = x で折り返してから時計回りに 45 度回し、長さを 1/√2 倍にすると、x² − y² = 1 の双曲線になります。そのとき、y = 1/x の上の点 (t, 1/t) は、(cosh(ln t), sinh(ln t)) に移ります。つまり、y = 1/x の下の面積 ln t が、そのまま双曲線の角 u になります。円で、扇形の面積の二倍が角 θ になるのと、同じ形です。</p>
+<p>円の側でも、同じ自然対数が、ln(cos θ + i sin θ) = iθ（主値、−π &lt; θ ≤ π）として、円の角を測ります。自然対数は、双曲線の角と円の角を、どちらも余分な定数なしに測る対数です。</p>
+<p><span class="step-mark step-mark--math">歴史では</span>この二つ（双曲線の角と円の角を、同じ対数が測ること）が一つの式で結ばれたのは、前の章で見たとおり、名が付いたあとでした。</p>
+<details class="acc"><summary>詳しく — y = 1/x を回して、x² − y² = 1 にする</summary>
+
+<ul>
+<li>xy = 1 では、原点と (1, 1)・(t, 1/t) を結んだ扇形の面積は、曲線の下の面積 ln t に等しい（両端の三角形の面積はどちらも 1/2 で、打ち消し合う）。</li>
+<li>xy = 1 を時計回りに 45 度回すと X² − Y² = 2 になる。さらに長さを 1/√2 倍に縮めると x² − y² = 1 になる（面積は 1/2 倍）。回すだけだと、点 (t, 1/t) は (cosh(ln t), −sinh(ln t)) に来る。先に直線 y = x で折り返しておくと、(cosh(ln t), sinh(ln t)) に来る。折り返しで変わるのは角の向き（符号）だけで、面積の大きさは変わらない。</li>
+<li>折り返して回して縮めると、点 (t, 1/t) は x = (t + 1/t)/2、y = (t − 1/t)/2 に移る。これは cosh(ln t)、sinh(ln t) そのもの。</li>
+<li>縮めたので面積は 1/2 倍になり、扇形の面積は (ln t)/2 になる。双曲線の扇形の面積は u/2 なので、u = ln t。</li>
+<li>円の側の ln(cos θ + i sin θ) = iθ は、主値（−π &lt; θ ≤ π）で取ったとき。θ に 2π を足しても同じ点なので、複素数の対数は 2πi ごとに値が並ぶ。</li>
+</ul>
+</details>
+
+<details class="acc"><summary>詳しく — この計算を、その場で動かして確かめる</summary>
+
+<p>面積を細かい台形で足して ln t と比べ、点 (t, 1/t) を折り返して回して縮めた先が cosh(ln t)・sinh(ln t) と同じになるかを見ます。</p>
+<div class="code-run">
+
+<pre><code>// 1 から t までの、y = 1/x の下の面積を、細かい台形で足す
+const area = (t, n = 100000) =&gt; {
+  let s = 0;
+  const h = (t - 1) / n;
+  for (let k = 0; k &lt; n; k++) {
+    const x0 = 1 + k * h, x1 = x0 + h;
+    s += ((1 / x0 + 1 / x1) / 2) * h;
+  }
+  return s;
+};
+for (const t of [2, 5, 10]) {
+  // 点 (t, 1/t) を、直線 y = x で折り返し、時計回りに 45 度回し、1/√2 倍に縮めた先
+  const x = (t + 1 / t) / 2, y = (t - 1 / t) / 2;
+  console.log(&quot;t =&quot;, t,
+    &quot;| 面積&quot;, area(t).toFixed(6), &quot;ln t&quot;, Math.log(t).toFixed(6),
+    &quot;log2 t&quot;, Math.log2(t).toFixed(6),
+    &quot;| x² − y²&quot;, (x * x - y * y).toFixed(6),
+    &quot;| x&quot;, x.toFixed(6), &quot;cosh(ln t)&quot;, Math.cosh(Math.log(t)).toFixed(6),
+    &quot;| y&quot;, y.toFixed(6), &quot;sinh(ln t)&quot;, Math.sinh(Math.log(t)).toFixed(6));
+}</code></pre>
+</div>
+
+</details>
+
+</div></details><details class="sec" id="直角を生むのは-i-でe-は回る速さを-1-にする" open><summary>直角を生むのは i で、e は回る速さを 1 にする</summary><div class="secbody">
+
+
+<p><a id="oa-role"></a>円にも双曲線にも e が出てくるなら、直交する軸を立てているのは e なのでしょうか。e と i が、それぞれ何をしているかを分けて見ます。</p>
+<p><span class="step-mark step-mark--math">数学では</span>e<sup>iθ</sup> を θ で微分すると、i e<sup>iθ</sup> になります。動く向きは、今の位置に i を掛けた向き、つまり位置から 90 度回した向きで、速さは 1 です。e<sup>iθ</sup> は、単位円の上を速さ 1 で回ります。</p>
+<p>底を b（b &gt; 0、b ≠ 1）に替えると、b<sup>iθ</sup> = e<sup>iθ ln b</sup> になります（主値で取ったとき）。これも単位円の上を回りますが、速さは |ln b| です。左回りに速さ 1 で回る底は、e だけです（1/e は、逆回りに速さ 1 で回ります）。</p>
+<p>e<sup>x + iy</sup> = e<sup>x</sup> · e<sup>iy</sup> と分けると、実の向き x は大きさの伸び縮みに、虚の向き y は回転になります。二つは、直交する二本の軸の上で、別々に働きます。ただし、大きさと回転にこう分かれることは、どの底 c &gt; 0（c ≠ 1）でも起きます。c<sup>x + iy</sup> = c<sup>x</sup> · c<sup>iy</sup> と分かれ、回る角が y ln c になるだけです。</p>
+<p>対数は掛け算を足し算に替える、片対数のグラフで指数の曲線が直線になる、という一般によく知られた働きも、底が 2 でも 10 でも成り立ちます。底の違いは、定数倍だけです。e だけに起きるのは、目盛がちょうど 1 にそろうことです（eˣ の傾きが x = 0 でちょうど 1）。円の上を回る速さが 1 になることも、双曲線の角が u = ln t になることも、同じ「目盛が 1 にそろう」ことの表れです。</p>
+<p>まとめると、直角の向きを生むのは、e ではなく i です。e の指数関数は、i を掛けることを、なめらかな流れに変えます。e は、その流れの速さがちょうど 1 になる底です。</p>
+<p><span class="step-mark">見方</span>この分担を pjdhiro の問いに当てると、問いは次のように読み直せるかもしれません。これは、このページの読みです。</p>
+<ul>
+<li>直交する軸を立てたのは i で、e は、その直交する向きへの動きを「1 の速さ」で測る目盛として、i の隣に呼ばれ続けた道具なのではないか。</li>
+<li>双曲線の面積でも、円の回転でも、e は同じ役（角を、余分な定数なしに測る目盛）をしている。名が付いたのは双曲線の側からだったが、その役は、平面の二つの角（円の角と双曲線の角）を、同じ目盛で測ることだったのではないか。</li>
+</ul>
+<p>どちらの読みも、名を付けた人がそう意図していた、とは言えません。意図と、あとからの読みは、分けて置きます。</p>
+<details class="acc"><summary>詳しく — 底を替えたときの回る速さを、その場で確かめる</summary>
+
+<p>b<sup>iθ</sup> = cos(θ ln b) + i sin(θ ln b) として、θ を少し進めたときに単位円の上を進む道のりを、θ の増えで割ります。</p>
+<div class="code-run">
+
+<pre><code>// 底 b の b^{iθ}（主値）が、単位円の上を回る速さと向き
+for (const b of [2, Math.E, 10, 1 / Math.E]) {
+  const p = (th) =&gt; [Math.cos(th * Math.log(b)), Math.sin(th * Math.log(b))];
+  const d = 1e-6;
+  const [x1, y1] = p(0), [x2, y2] = p(d);
+  console.log(&quot;b =&quot;, b.toFixed(4),
+    &quot;| 速さ&quot;, (Math.hypot(x2 - x1, y2 - y1) / d).toFixed(4),
+    &quot;| |ln b|&quot;, Math.abs(Math.log(b)).toFixed(4),
+    &quot;|&quot;, y2 &gt; 0 ? &quot;左回り&quot; : &quot;右回り&quot;);
+}</code></pre>
+</div>
+
+<ul>
+<li>主値でない枝を取ると、b<sup>iθ</sup> には e<sup>−2πnθ</sup>（n は整数）が掛かり、単位円から外れる。</li>
+<li>log z = ln|z| + i arg z（z ≠ 0）。arg は 2π ごとに値が並ぶ（多価）。</li>
+</ul>
+</details>
+
+</div></details><details class="sec" id="縦の単位の性質で回るずれる引き伸ばされるに分かれる" open><summary>縦の単位の性質で、回る・ずれる・引き伸ばされるに分かれる</summary><div class="secbody">
+
+
+<p><a id="oa-three"></a>前の章で、直角を生むのは i だと見ました。では、i の代わりに、性質の違う縦の単位を置くと、e の何乗かを掛けることの意味はどう変わるのでしょうか。</p>
+<p><span class="step-mark step-mark--math">数学では</span>数 a + b·k の k を一つ決めると、平面の上の掛け算が一つ決まります。k を二乗した数が −1・0・+1 の三通りで、e<sup>kθ</sup> を掛けることの意味が分かれます（三つとも 2 行 2 列の行列にして、数値で確かめました）。</p>
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>k²</th>
+<th>名前</th>
+<th>e<sup>kθ</sup></th>
+<th>掛けると</th>
+<th>保たれる量</th>
+<th>「直交」の意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>−1</td>
+<td>複素数（i）</td>
+<td>cos θ + i sin θ</td>
+<td>円の回転</td>
+<td>a² + b²</td>
+<td>ふつう（ユークリッド）の直交</td>
+</tr>
+<tr>
+<td>0</td>
+<td>双対数（ε）</td>
+<td>1 + εθ</td>
+<td>ずらし（シア）：(a + bε)(1 + εθ) = a + (b + aθ)ε</td>
+<td>a²</td>
+<td>直交は無い</td>
+</tr>
+<tr>
+<td>+1</td>
+<td>分解型複素数（j）</td>
+<td>cosh θ + j sinh θ</td>
+<td>双曲線の回転（相対論のローレンツ変換）</td>
+<td>a² − b²</td>
+<td>ミンコフスキーの意味の直交（ユークリッドの直交ではない）</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p><b>素朴な言葉：</b>同じ「e の何乗かを掛ける」でも、横に対して縦をどう扱うかで、回る・ずれる・引き伸ばされる、の三つに分かれます。三つ目の「引き伸ばされる」は、斜めの一方へ伸び、もう一方へ同じ割合で縮む動きで、面積は変わりません。どれになるかを決めているのは e ではなく、縦の単位 k の性質です。</p>
+<p><span class="step-mark step-mark--math">歴史では</span>二乗して 0 になる単位を入れたのは、クリフォード（1873）です。クリフォードは、その単位 ω を、回転を「その軸に平行な並進」に変えるものとして書いています。直交ではなく、平行の話でした。</p>
+<details class="acc"><summary>詳しく — 三つを 2 行 2 列の行列で書く</summary>
+
+<ul>
+<li>a + b·k を、縦に並べた (a, b) と見る。k を掛けることは、k² = −1 なら [[0, −1], [1, 0]]、k² = 0 なら [[0, 0], [1, 0]]、k² = +1 なら [[0, 1], [1, 0]] を掛けることにあたる。</li>
+<li>e<sup>kθ</sup> は、それぞれ [[cos θ, −sin θ], [sin θ, cos θ]]（回転）、[[1, 0], [θ, 1]]（ずらし）、[[cosh θ, sinh θ], [sinh θ, cosh θ]]（双曲線の回転）になる。</li>
+<li>行列式はどれも 1。保たれる量は、順に a² + b²・a²・a² − b²。</li>
+</ul>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<ul>
+<li>クリフォード「双四元数の素描」（1873）。1882 年の『数学論文集』の再録（p. 181 から）で照らした（<a href="https://archive.org/details/mathematicalpap00clifgoog">Internet Archive の写し</a>）。</li>
+</ul>
+</details>
+
+</div></details><details class="sec" id="直交する軸を扱っている道具たち-1" open><summary>直交する軸を扱っている道具たち</summary><div class="secbody">
+
+
+<p><a id="oa-tools"></a>pjdhiro の区分で、道具を並べます。どの道具も、素朴な言葉の一行と、数学の一行の二段で書きます。「直交」の意味が道具ごとに違うので、数学の行の終わりに、どの意味の直交かを添えます。作った人が何を書いていたかは、次の章にまとめます。</p>
+<p><strong>1. 複素数と e<sup>iθ</sup>（実軸と虚軸）</strong></p>
+<p><b>素朴な言葉：</b>まっすぐな数の線に、直角な線をもう一本足します。i を掛けると、向きが 90 度変わります。二回掛けると 180 度で、−1 になります。</p>
+<p><span class="step-mark step-mark--math">数学では</span>i² = −1。e<sup>iθ</sup> = cos θ + i sin θ を掛けると、平面が θ だけ回ります。直交は、ふつう（ユークリッド）の直交です。</p>
+<p><strong>2. 双曲線関数とローレンツ変換（時間と空間）</strong></p>
+<p><b>素朴な言葉：</b>時間と空間を二本の軸にした平面では、速さを変えることが、円の回転ではなく、双曲線に沿った「引き伸ばしの回転」になります。</p>
+<p><span class="step-mark step-mark--math">数学では</span>光の速さを 1 にとると、t' = t cosh φ − x sinh φ、x' = −t sinh φ + x cosh φ。t² − x² が保たれ、速さは v = tanh φ です。同じ向きの速さの変更を重ねると、φ（ラピディティ）が足し算になります。直交は、ミンコフスキーの意味の直交です。</p>
+<p><strong>3. 四元数と SU(2)（三つの虚の軸）</strong></p>
+<p><b>素朴な言葉：</b>直角な線を一本でなく三本、互いに直角に立てます。三本どうしの掛け算で、立体の中の回転が書けます。</p>
+<p><span class="step-mark step-mark--math">数学では</span>i² = j² = k² = ijk = −1。単位四元数 q = cos(θ/2) + n sin(θ/2)（n は長さ 1 の純虚の四元数）で、v ↦ q v q⁻¹（v は純虚の四元数）が、軸 n のまわりの θ の回転になります。q と −q は同じ回転を与えます（SU(2) から立体の回転へは、二つが一つに対応します）。q は e<sup>nθ/2</sup> とも書けます。直交は、ふつうの直交です。</p>
+<p><strong>4. フェーザ（交流）</strong></p>
+<p><b>素朴な言葉：</b>波を、回る矢印の影として見ます。微分は、矢印を 90 度先へ回し、長さを ω 倍にすることです。コイルでは電圧が電流より四分の一周先に、コンデンサでは四分の一周あとになります。</p>
+<p><span class="step-mark step-mark--math">数学では</span>v(t) = Re(V e<sup>iωt</sup>)。時間で微分することは、iω を掛けることです（ω &gt; 0）。理想的なコイルとコンデンサで、ずれは ±90 度になります。インピーダンスは Z = R + iX です（工学では i の代わりに j と書きます）。直交は、ふつうの直交です。</p>
+<p><strong>5. フーリエ変換（時間と周波数）</strong></p>
+<p><b>素朴な言葉：</b>時間の軸と周波数の軸を直角に置いた平面で、フーリエ変換は、その平面を四分の一回すことにあたります。四回回すと元に戻ります。</p>
+<p><span class="step-mark step-mark--math">数学では</span>ユニタリに規格化すると F⁴ は恒等で、F² は f(t) ↦ f(−t) です。固有値は 1・−i・−1・i です。90 度の回転というのは、ウィグナー分布の上で W<sub>Ff</sub>(t, ω) = W<sub>f</sub>(−ω, t) となる意味で（e<sup>−iωt</sup>/√(2π) の取り方で）、t と ω の目盛をそろえる取り方が前提です。直交は、時間と周波数の平面の直角で、関数どうしの直交（e<sup>iωt</sup> どうし）とは別の意味です。</p>
+<p><strong>6. 位相空間（位置と運動量）</strong></p>
+<p><b>素朴な言葉：</b>「どこにいるか」と「どれだけの勢いで動いているか」を、二本の軸にした平面です。ばねの振動は、この平面の上で回る点になります。</p>
+<p><span class="step-mark step-mark--math">数学では</span>H = (p² + q²)/2（質量と角振動数を 1 にとる）の解は q = cos t、p = −sin t で、(q, p) の平面を時計回りに回ります。ハミルトンの方程式は d/dt (q, p) = J ∇H で、J = [[0, 1], [−1, 0]] は J² = −I を満たし、時計回りの 90 度の回転（z = q + ip に −i を掛けること）として、i の役をします。直交は、内積の直交ではなく、シンプレクティックの対です。</p>
+<p><strong>7. 直交座標と内積（斜めでなく直角の軸を選ぶ理由）</strong></p>
+<p><b>素朴な言葉：</b>軸が直角なら、横の量と縦の量を、互いに混ぜずに別々に測れます。軸が斜めだと、片方を測ると、もう片方が少し混ざります。</p>
+<p><span class="step-mark step-mark--math">数学では</span>長さ 1 で互いに直交する基底（正規直交基底）なら、成分は v·e₁・v·e₂ で別々に取れ、長さは √(x² + y²) です。軸の間の角が α の斜めの座標（軸の長さ 1）では、長さは √(x² + y² + 2xy cos α) で、v·e₁ = x + y cos α と成分が混ざります。直交は、ふつうの直交です。</p>
+<p><strong>8. ウィック回転（時間を虚の向きへ回す）</strong></p>
+<p><b>素朴な言葉：</b>時間の軸を、空間と同じ種類の軸へ 90 度回して、計算しやすくします。</p>
+<p><span class="step-mark step-mark--math">数学では</span>t = −iτ と置くと、e<sup>−iHt</sup> が e<sup>−Hτ</sup> に、t² − x² が −(τ² + x²) に移ります。実の変数を置き換えるのではなく、解析接続として扱います。ミンコフスキーの直交を、ふつうの直交に移す操作です。</p>
+<p><strong>9. ラプラス変換の s = σ + iω（伸び縮みの軸と回転の軸）</strong></p>
+<p><b>素朴な言葉：</b>育つか減るか（横）と、振れるか（縦）を、一つの平面の二本の軸にします。</p>
+<p><span class="step-mark step-mark--math">数学では</span>e<sup>st</sup> = e<sup>σt</sup> e<sup>iωt</sup>。σ &lt; 0 で減り、σ &gt; 0 で増え、ω の向きは振動です。前の章の e<sup>x + iy</sup> = e<sup>x</sup> · e<sup>iy</sup> を、時間の関数にしたものです。直交は、ふつうの直交です。</p>
+<p><strong>10. 電磁波と、リーマン＝ジルベルシュタインのベクトル（電場と磁場）</strong></p>
+<p><b>素朴な言葉：</b>光の波（平面波）では、電気の振れと磁気の振れが互いに直角で、進む向きにも直角です。この二つを、一つの複素の量にまとめられます。</p>
+<p><span class="step-mark step-mark--math">数学では</span>真空（電荷と電流が無い所）で F = E + icB と置くと、マクスウェルの方程式のうち回転の二つの式は i ∂F/∂t = c ∇×F の一つに、発散の二つの式は ∇·F = 0 にまとまります。ここの i は空間の軸ではなく、二つのベクトルを束ねる印です。平面波では |E| = c|B| で、電場と磁場は互いに、また進む向きとも、ふつうの意味で直交します。</p>
+<details class="acc"><summary>詳しく — 「直交」の意味の注意</summary>
+
+<ul>
+<li>時間と空間（2・8）：ミンコフスキーの直交は、t² − x² で測る直交で、ふつうの直角ではない。w = ict と置くと −c²t² + x² = x² + w² になり、ローレンツ変換は (x, w) 平面の、虚の角 iφ の回転に見える。今はあまり使われない、歴史の上の書き方。</li>
+<li>フーリエ変換（5）：前向きの変換に係数を付けない取り方（∫ f e<sup>−iξx</sup> dx）では、F² = 2π × 反転になる。e<sup>+iξx</sup> の取り方では、W<sub>Ff</sub>(t, ω) = W<sub>f</sub>(ω, −t) になる。固有値の並び (−i)ⁿ は、e<sup>−iξx</sup>/√(2π) の取り方のとき。</li>
+<li>位相空間（6）：位相空間には、もともと内積が無い。「90 度」と言えるのは、H などで目盛を一つ選んだあと。量子の状態の意味では、位置の基底と運動量の基底は直交の反対で、|⟨x|p⟩| が一定の「互いに偏りのない基底」になる。位置の表示と運動量の表示は、フーリエ変換（e<sup>−ipx/ħ</sup>/√(2πħ)）で移り合う。</li>
+<li>直交座標（7）：直交していても長さが 1 でなければ、成分は v·e₁/|e₁|² になる。</li>
+<li>四元数（3）：q v q⁻¹ の回す向きは、軸 n の向きに右ねじを進める向き。</li>
+</ul>
+</details>
+
+</div></details><details class="sec" id="作った人は直交する軸を書いていたか" open><summary>作った人は、直交する軸を書いていたか</summary><div class="secbody">
+
+
+<p><a id="oa-intent"></a>pjdhiro の問いの「最初から」を、作った人の意図として読むなら、作った人の本文に、直交する軸のことが書いてあるかを見ることになります。</p>
+<p><span class="step-mark step-mark--math">歴史では</span>原典の本文で照らせたものを、年の順に並べます。</p>
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>年</th>
+<th>人と道具</th>
+<th>本文に書いてあること</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1614</td>
+<td>ネイピア、対数</td>
+<td>正弦の対数。円（正弦）はあるが、虚数は無い</td>
+</tr>
+<tr>
+<td>1637</td>
+<td>デカルト『幾何学』</td>
+<td>主な二本の線は「与えられた角」で交わる。直角に限っていない</td>
+</tr>
+<tr>
+<td>1647</td>
+<td>サン＝ヴァンサン、双曲線の切片</td>
+<td>等比の区切りで、面積が等しい。対数の語、円とのつながり、虚数は無い</td>
+</tr>
+<tr>
+<td>1649</td>
+<td>ド・サラサ</td>
+<td>双曲線の面積を、対数の代わりにする。虚数は無い</td>
+</tr>
+<tr>
+<td>1668</td>
+<td>メルカトル、自然の対数</td>
+<td>「表の」対数と対の「自然の」対数。双曲線の求積。見た箇所に、円と虚数への言及は無い</td>
+</tr>
+<tr>
+<td>1702</td>
+<td>ヨハン・ベルヌーイ</td>
+<td>虚の対数を、実の円の扇形と取る</td>
+</tr>
+<tr>
+<td>1714</td>
+<td>コーツ「対数の測り」</td>
+<td>円の弧を、虚の比の測りで表す（「説明のつかない仕方で」）</td>
+</tr>
+<tr>
+<td>1731・1736</td>
+<td>オイラー、e の字</td>
+<td>e は、双曲線対数が 1 になる数。見た箇所に、円と虚数は無い</td>
+</tr>
+<tr>
+<td>1748</td>
+<td>オイラー『無限解析序説』</td>
+<td>§122 で自然の、すなわち双曲線の対数の底 e。§138 で e<sup>iv</sup> を正弦と余弦に結ぶ</td>
+</tr>
+<tr>
+<td>1799</td>
+<td>ヴェッセル「方向の解析的な表し方について」</td>
+<td>+1 に「垂直な」もう一つの単位を置く</td>
+</tr>
+<tr>
+<td>1831</td>
+<td>ガウス（四次剰余の第二論文の自著紹介）</td>
+<td>+1・−1・√−1 を「直・逆・横の単位」と呼んでいれば曖昧さは無かった、と書く</td>
+</tr>
+<tr>
+<td>1835</td>
+<td>ハミルトン「力学の一般の方法」第二論文</td>
+<td>正準方程式。軸と直交の語は無い</td>
+</tr>
+<tr>
+<td>1843</td>
+<td>ハミルトン、グレイヴズ宛ての手紙</td>
+<td>線 1 に垂直な √−1、さらにそれに垂直なもう一つの虚の単位。三つの係数を、空間の点の直交座標に当てる</td>
+</tr>
+<tr>
+<td>1873</td>
+<td>クリフォード、双四元数の素描</td>
+<td>ω は、回転を「その軸に平行な並進」に変える。直交ではなく平行</td>
+</tr>
+<tr>
+<td>1893</td>
+<td>スタインメッツ、電気工学での複素数</td>
+<td>時間を角に取り、j を掛けるのは波を 90 度回すこと</td>
+</tr>
+<tr>
+<td>1902</td>
+<td>ギブズ『統計力学の基本原理』</td>
+<td>位相を「2n 次元の一種の広がり」と見る。直交の語は無い</td>
+</tr>
+<tr>
+<td>1907</td>
+<td>ジルベルシュタイン</td>
+<td>二つのベクトルの複素のまとめを Bivektor と呼び、成分が垂直なものを「直交の Bivektor」と呼ぶ</td>
+</tr>
+<tr>
+<td>1908</td>
+<td>ミンコフスキー</td>
+<td>t の代わりに √−1·t を入れて、四つの軸を対称に扱う。論文では、純虚の角の回転として変換を作る</td>
+</tr>
+<tr>
+<td>1910</td>
+<td>ヴァリチャク</td>
+<td>速さの量を「双曲扇形の二倍の面積」と呼ぶ</td>
+</tr>
+<tr>
+<td>1911</td>
+<td>ロブ</td>
+<td>v の逆双曲正接を rapidity（ラピディティ）と呼ぶ</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p><span class="step-mark step-mark--math">歴史では</span>作った人が、直交・垂直・横・回転の語を本文で書いているのは、ヴェッセル（1799）、ガウス（1831）、ハミルトン（1843）、スタインメッツ（1893）、ミンコフスキー（1908）でした。自然対数の名が付いた側（1647〜1736）の、照らした箇所には見当たりません。</p>
+<p><span class="step-mark step-mark--math">歴史では</span>ヴァリチャク（1910）とロブ（1911）では、「双曲線の扇形の面積が角になる」という、円と双曲線の章の形が、相対論の速さの目盛として戻ってきます。自然対数が測っていた双曲線の角が、時間と空間の平面の「引き伸ばしの回転」の角になっています。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>道具ごとの、作った人の本文（訳は Claude）。名の由来の側（1614〜1748）は、上の章「「自然の」対数は、双曲線の面積から名が付いた」の出典の畳みにある。</p>
+<ul>
+<li>デカルト『幾何学』（1637）第 1 巻（パッポスの問題）。1886 年の再版で照らした（<a href="https://archive.org/details/lagomtrie00descuoft">Internet Archive の写し</a>）。1637 年版の頁は照らしていない。</li>
+<li>ヴェッセル「方向の解析的な表し方について」（1799）、デンマーク王立科学協会の論文集 新編 第 5 巻 p. 469 以下（<a href="https://archive.org/details/nyesamlingafdetk5179kong">Internet Archive の写し</a>）。</li>
+<li>ガウス、四次剰余の第二論文の自著紹介（1831）の「直・逆・横の単位」。全集 第 2 巻 p. 178（1876 年の第二刷の写しで照らした）（<a href="https://archive.org/details/werkecarlf02gausrich">Internet Archive の写し</a>）。</li>
+<li>ハミルトン「力学の一般の方法」第二論文（1835）（<a href="https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/Dynamics/#SecondEssay">David Wilkins の翻刻</a>）。</li>
+<li>ハミルトンの 1843 年 10 月 17 日付グレイヴズ宛ての手紙（<a href="https://www.maths.tcd.ie/pub/HistMath/People/Hamilton/QLetter/QLetter.html">David Wilkins の翻刻</a>。底本は Philosophical Magazine 1844）。</li>
+<li>クリフォード（1873）は、上の章「縦の単位の性質で、回る・ずれる・引き伸ばされるに分かれる」の出典の畳みにある。</li>
+<li>スタインメッツ「電気工学での複素数とその使い方」（1893 年の国際電気会議。1894 年刊の会議録 p. 33 から）（<a href="https://archive.org/details/proceedingsinte00chicgoog">Internet Archive の写し</a>）。</li>
+<li>ギブズ『統計力学の基本原理』（1902）（<a href="https://archive.org/details/elementaryprinci00gibbrich">Internet Archive の写し</a>）。</li>
+<li>ジルベルシュタイン「電磁気の基本方程式の、二重ベクトルによる扱い」（<a href="https://doi.org/10.1002/andp.19073270313">Annalen der Physik 1907</a>。出版社のページは有料の場合がある。式は写しの文字がくずれて読めなかった）。</li>
+<li>ミンコフスキー、講演「空間と時間」（1908。<a href="https://de.wikisource.org/wiki/Raum_und_Zeit_(Minkowski)">Wikisource の翻刻</a>）と、論文「動いている物体の中の電磁気の現象の基本方程式」（1908 年の Göttinger Nachrichten。<a href="https://de.wikisource.org/wiki/Die_Grundgleichungen_f%C3%BCr_die_elektromagnetischen_Vorg%C3%A4nge_in_bewegten_K%C3%B6rpern">Wikisource の翻刻</a>・<a href="https://archive.org/details/nachrichten09klasgoog">Internet Archive の写し</a>）。</li>
+<li>ヴァリチャク「相対論への、ロバチェフスキーの幾何学の応用」（1910。<a href="https://de.wikisource.org/wiki/Anwendung_der_Lobatschefskijschen_Geometrie_in_der_Relativtheorie">Wikisource の翻刻</a>）。</li>
+<li>ロブ『運動の光学的幾何学』（1911）（<a href="https://archive.org/details/opticalgeometryo00robbuoft">Internet Archive の写し</a>）。</li>
+</ul>
+</details>
+
+</div></details><details class="sec" id="開いたままの問い" open><summary>開いたままの問い</summary><div class="secbody">
+
+
+<p><a id="oa-open"></a><span class="step-mark">見方</span>始まりの問いに戻ります。自然対数と e は、はじめから、円の平面と直交する軸を扱う道具だったのでしょうか。</p>
+<p>ここまでで言えるのは、次の二つです。歴史では、「自然の」の名は双曲線の面積から付き、円や虚数と結ばれたのは、名が付いたあとでした。数学では、直角の向きを生むのは i で、e は、その向きへの動きを 1 の速さで測る目盛です。そのうえで、e は、双曲線の角と円の角を、同じ目盛で測っています。問いは、この二つのあいだに開いたまま置きます。</p>
+<p><span class="step-mark">見方</span>このページには、ほかにも開いた問いがあります。</p>
+<ul>
+<li>直交する軸を扱う道具を、数学と物理の外（心の動きや、人と組織のこと）でも、同じ区分で並べられるか。</li>
+<li>数直線的世界観が馴染まない人に、どの道具から見せると届きやすいか。</li>
+<li>「直交」の四つの意味（ふつうの直交・ミンコフスキーの直交・シンプレクティックの対・関数の直交）を、素朴な言葉で、どう言い分けるか。</li>
+</ul>
+</div></details><details class="sec" id="このあとに読むもの" open><summary>このあとに読むもの</summary><div class="secbody">
+
+
+<p><a id="oa-more"></a>e が単位円の上でなぜこれほど働くのかを、禅の円から探す読み物は「<a href="euler-unfolded.html">オイラーの等式が、たたんだもの</a>」です。この問いは、その結びの章「<a href="euler-unfolded.html#eo-circle">禅の円に戻る</a>」で立ちました。</p>
+<p>e<sup>iθ</sup> が円の上を回る点であることは独立ページ「<a href="euler-formula.html">オイラーの式</a>」に、−1 と i の回る掛け算は読み物「<a href="rotation-multiplication.html">回転の掛け算</a>」にあります。複素数が関わるほかの数学は、目次「<a href="complex-plane.html">複素平面で考える</a>」に並べています。</p>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="complex-plane.html">複素平面で考える（目次）</a> ・
+                <a href="euler-unfolded.html">オイラーの等式が、たたんだもの</a> ・
+                <a href="rotation-multiplication.html">回転の掛け算</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script src="../src/reader-run.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

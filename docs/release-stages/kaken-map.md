@@ -14,7 +14,7 @@
 | うち読み物のページだけ・cs だけ・両方 | 13・51・25 |
 | 中区分 | 触れている 43 / 66 |
 | 大区分 | 触れている 13 / 13（触れていない：なし） |
-| 読み物のページ | 104（区分に当てた 86・当てない 18） |
+| 読み物のページ | 105（区分に当てた 87・当てない 18） |
 | cs の分野 | 30（どれも一つ以上の区分に当てた） |
 
 区分に当てないページ：about・abilities・cognitive-abilities・competency-frameworks・complex-plane・influences-management・kaken-map・kokoro-scale-map・love-trajectory・reading-directions・shelf-love・shelf-mind・shelf-number・shelf-org・shelf-self・shelf-translations・site-evaluation・thinking-definitions。並び・目次・道案内・転送のページ（中身は呼ぶ先のページの側）と、このサイトを測った結果のページと、pjdhiro の一年の記録（love-trajectory）。
@@ -45,8 +45,8 @@
 | 中区分 | 触れている | 小区分 |
 |---|---|---|
 | 11 代数学、幾何学およびその関連分野 | 2 / 2 | ● 11010 代数学（fundamental-theorem-of-algebra・fundamental-theorem-of-algebra-analogy・rotation-multiplication・subtraction-kinds・three-and-seven・D01）<br>● 11020 幾何学（angle-rotation・euler-unfolded・zen-circle-hs・D01） |
-| 12 解析学、応用数学およびその関連分野 | 3 / 3 | ● 12010 基礎解析学（angle-rotation・euler-formula・euler-unfolded・fundamental-theorem-of-algebra・herschel-quetelet-probabilities-ja・man・subtraction-kinds・zen-circle-hs）<br>● 12020 数理解析学（julia-potential・D01・D02・D29）<br>● 12030 数学基礎、応用数学および統計数学（herschel-quetelet-probabilities-ja・peirce-law-of-mind-ja・quetelet-lettres-probabilites-ja・D01） |
-| 13 物性物理学およびその関連分野 | 2 / 5 | ● 13010 数理物理、物性基礎論および量子系（clausius-art-der-bewegung-ja・helmholtz-erhaltung-der-kraft-ja・herapath-mathematical-physics-ja・kronig-theorie-der-gase-ja・maxwell-dynamical-theory-of-gases-ja・D02・D29）<br>○ 13020 電子物性・光物理および原子分子物理<br>● 13030 磁性、超伝導および強相関系（D02）<br>○ 13040 生物物理、化学物理およびソフトマターの物理<br>○ 80040 量子ビーム科学および加速器科学 |
+| 12 解析学、応用数学およびその関連分野 | 3 / 3 | ● 12010 基礎解析学（angle-rotation・euler-formula・euler-unfolded・orthogonal-axis-tools・fundamental-theorem-of-algebra・herschel-quetelet-probabilities-ja・man・subtraction-kinds・zen-circle-hs）<br>● 12020 数理解析学（julia-potential・D01・D02・D29）<br>● 12030 数学基礎、応用数学および統計数学（herschel-quetelet-probabilities-ja・peirce-law-of-mind-ja・quetelet-lettres-probabilites-ja・D01） |
+| 13 物性物理学およびその関連分野 | 2 / 5 | ● 13010 数理物理、物性基礎論および量子系（clausius-art-der-bewegung-ja・orthogonal-axis-tools・helmholtz-erhaltung-der-kraft-ja・herapath-mathematical-physics-ja・kronig-theorie-der-gase-ja・maxwell-dynamical-theory-of-gases-ja・D02・D29）<br>○ 13020 電子物性・光物理および原子分子物理<br>● 13030 磁性、超伝導および強相関系（D02）<br>○ 13040 生物物理、化学物理およびソフトマターの物理<br>○ 80040 量子ビーム科学および加速器科学 |
 | 14 プラズマ学およびその関連分野 | 0 / 4 | ○ 14010 プラズマ科学<br>○ 14020 核融合学<br>○ 14030 プラズマ応用科学<br>○ 80040 量子ビーム科学および加速器科学 |
 | 15 地球惑星科学およびその関連分野 | 4 / 5 | ● 15010 宇宙惑星科学（D06）<br>● 15020 大気水圏科学（D05）<br>○ 15030 地球人間圏科学<br>● 15040 固体地球科学（D05）<br>● 15050 地球生命科学（D03・D05） |
 | 91 量子情報およびその関連分野 | 1 / 3 | ○ 91010 量子情報ハードウェア<br>○ 91020 量子情報システム<br>● 91030 量子情報基礎理論・応用（D02） |

@@ -449,6 +449,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/orthogonal-axis-tools/READER-orthogonal-axis-tools.md",
+        ROOT / "scripts/reader-orthogonal-axis-tools-template.html",
+        ROOT / "reader/orthogonal-axis-tools.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/angle-rotation/READER-angle-rotation.md",
         ROOT / "scripts/reader-angle-rotation-template.html",
         ROOT / "reader/angle-rotation.html",

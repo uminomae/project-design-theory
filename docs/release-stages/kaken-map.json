@@ -1,7 +1,7 @@
 {
  "counts": {
-  "pages": 104,
-  "mapped_pages": 86,
+  "pages": 105,
+  "mapped_pages": 87,
   "cs": 30,
   "sho": 296,
   "touched": 89,
@@ -778,6 +778,7 @@
         "angle-rotation",
         "euler-formula",
         "euler-unfolded",
+        "orthogonal-axis-tools",
         "fundamental-theorem-of-algebra",
         "herschel-quetelet-probabilities-ja",
         "man",
@@ -821,6 +822,7 @@
        "name": "数理物理、物性基礎論および量子系",
        "pages": [
         "clausius-art-der-bewegung-ja",
+        "orthogonal-axis-tools",
         "helmholtz-erhaltung-der-kraft-ja",
         "herapath-mathematical-physics-ja",
         "kronig-theorie-der-gase-ja",
@@ -2803,6 +2805,7 @@
   "empathy": "共感とは",
   "euler-formula": "オイラーの式",
   "euler-unfolded": "オイラーの等式が、たたんだもの",
+  "orthogonal-axis-tools": "直交する軸を扱っている道具たち",
   "forgiveness-salvation": "赦しと救いとは",
   "fundamental-theorem-of-algebra": "代数学の基本定理",
   "fundamental-theorem-of-algebra-analogy": "代数学の基本定理から、構造の類似を考える",
