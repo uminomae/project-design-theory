@@ -41,9 +41,7 @@ export function createHomeToc({ root = document } = {}) {
         const label = document.createElement('span');
         label.className = 'toc-main';
         label.textContent = h2.textContent.trim();
-        /* 棚の節は、見出しの中のリンクに訳の鍵がある（2026-11-27） */
-        const keyEl = h2.dataset.i18nKey ? h2 : h2.querySelector('[data-i18n-key]');
-        if (keyEl) label.dataset.i18nKey = keyEl.dataset.i18nKey;
+        if (h2.dataset.i18nKey) label.dataset.i18nKey = h2.dataset.i18nKey;
         a.appendChild(label);
         a.addEventListener('click', (event) => {
             event.preventDefault();

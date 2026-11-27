@@ -302,7 +302,7 @@
                     </div>
                     <div class="card glow-card">
                         <h3 data-i18n-key="overview.domain.title">領域</h3>
-                        <p data-i18n-key="overview.domain.body">経営と組織・能力とは・心の動き・数と回転・Love と駆動源</p>
+                        <p data-i18n-key="overview.domain.body">コミュニケーション（情報処理＋感情処理）と環境適応（経営学など）</p>
                     </div>
                 </div>
                 <details class="misconception">
@@ -317,10 +317,12 @@
                 </details>
             </section>
 
-            <!-- 棚に収めずに残したもの（試し・2026-11-27）：行動原理。どの棚にも収まらない -->
-            <div class="unplaced">
-                <div class="grid">
-                    <div class="card glow-card">
+            <!-- Doing -->
+            <section class="content-section content-section--doing" id="doing" aria-labelledby="doing-title">
+                <span class="section-label glow-heading" data-i18n-key="section.doing.label">Doing</span>
+                <h2 class="glow-heading" id="doing-title" data-i18n-key="section.doing.title">やること</h2>
+                <div class="grid doing-grid">
+                    <div class="card glow-card doing-principles">
                         <h3 data-i18n-key="doing.principles.title">行動原理</h3>
                         <ul>
                             <li data-i18n-key="doing.principles.item1">多様な価値観を受容れる</li>
@@ -328,113 +330,106 @@
                             <li data-i18n-key="doing.principles.item3">状況に常に適応する</li>
                         </ul>
                     </div>
-                </div>
-            </div>
-
-            <!-- 棚：見出しは枠（何についてのページかで束ねた棚）だけにする。軸（記号の処理と感情の処理・物質的な条件と非物質的な条件・Doing・Being・Falling）は見出しにせず、あとで作る地図に移す（pjdhiro 2026-11-27「見出しは枠だけにして、軸は地図にしよう」）。棚の名前は棚のページの題に合わせる -->
-            <section class="content-section content-section--shelf" id="org" aria-labelledby="org-title">
-                <span class="section-label glow-heading" data-i18n-key="section.org.label">Management</span>
-                <h2 class="glow-heading" id="org-title"><a href="./reader/shelf-org.html" data-i18n-key="shelf.org">経営と組織</a></h2>
-                <div class="shelf-grid glow-text">
-                    <div class="shelf-group">
-                        <ul class="shelf-group__list">
-                        <li class="shelf-group__parent"><a href="./reader/management-drivers.html">経営学の考え方は、どこまで効くか</a>
-                            <ul class="shelf-group__children">
-                                <li><a href="./reader/mintzberg-schools.html">ミンツバーグの学派を、駆動源と創造の流れで見る</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="./reader/nonaka-complement.html">野中郁次郎の理想を目指すとき、どこに気をつけるか</a></li>
-                        <li><a href="./reader/business-design-syllabus.html">Love駆動開発は、事業構想の授業になるか</a></li>
-                        </ul>
+                    <div class="card glow-card doing-env">
+                        <h3 data-i18n-key="doing.environment.title">環境適応</h3>
+                        <p data-i18n-key="doing.environment.body">「PMBOK第7版」等に基づく物質的条件の整理。本サイトでは前提知とし、非物質的条件へ焦点を当てます。</p>
                     </div>
-                </div>
-            </section>
-
-            <section class="content-section content-section--shelf" id="abilities" aria-labelledby="abilities-title">
-                <span class="section-label glow-heading" data-i18n-key="section.abilities.label">Abilities</span>
-                <h2 class="glow-heading" id="abilities-title"><a href="./reader/abilities.html" data-i18n-key="shelf.abilities">能力とは</a></h2>
-                <div class="shelf-grid glow-text">
-                    <div class="shelf-group">
-                        <ul class="shelf-group__list">
-                            <li class="shelf-group__parent"><a href="./reader/cognitive-abilities.html">頭脳の能力とされてきたもの</a>
+                    <div class="card glow-card doing-comm">
+                        <h3 data-i18n-key="doing.communication.title">コミュニケーション</h3>
+                        <p data-i18n-key="doing.communication.body">情報処理と感情処理。心の反応を通じて感じ取る感情の側面を中心に扱います。</p>
+                    </div>
+                    <div class="sub-col doing-env-sub">
+                        <div class="card-sub">
+                            <h4 class="card-sub__title"><a href="./reader/shelf-org.html" data-i18n-key="doing.sub.environment">経営学</a></h4>
+                            <ul class="shelf-group__list">
+                            <li class="shelf-group__parent"><a href="./reader/management-drivers.html">経営学の考え方は、どこまで効くか</a>
                                 <ul class="shelf-group__children">
-                                    <li class="shelf-group__parent"><a href="./reader/thinking.html">思考とは</a>
-                                        <ul class="shelf-group__children">
-                                            <li class="shelf-group__parent"><a href="./reader/reasoning.html">推論とは</a>
-                                                <ul class="shelf-group__children">
-                                                    <li><a href="./reader/analogy.html">類推と、構造の類似を見抜く力</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="./reader/intelligence-structure.html">知能は、どう分けられてきたか</a></li>
-                                    <li><a href="./reader/executive-functions.html">実行機能と作業記憶</a></li>
-                                    <li><a href="./reader/unsupported-ability-models.html">広く知られたが、測定で残らなかった分け方</a></li>
+                                    <li><a href="./reader/mintzberg-schools.html">ミンツバーグの学派を、駆動源と創造の流れで見る</a></li>
                                 </ul>
                             </li>
-                            <li><a href="./reader/creative-thinking.html">創造的思考とは</a></li>
-                            <li><a href="./reader/decision-making.html">意思決定とは</a></li>
-                            <li>共役のベクトルを当てる力（🚧 工事中）</li>
-                            <li><a href="./reader/soft-skills.html">ソフトスキル・非認知能力とは</a></li>
-                            <li><a href="./reader/interpersonal-abilities.html">人と関わる力</a></li>
-                            <li><a href="./reader/thinking-dispositions.html">思考を動かす構えと体力</a></li>
-                            <li><a href="./reader/inseparable-abilities.html">思考・心理・身体知が分けられないところ</a></li>
-                            <li><a href="./reader/emerging-abilities.html">新しく注目されている能力</a></li>
-                            <li class="shelf-group__parent">能力を見る
+                            <li><a href="./reader/nonaka-complement.html">野中郁次郎の理想を目指すとき、どこに気をつけるか</a></li>
+                            <li><a href="./reader/business-design-syllabus.html">Love駆動開発は、事業構想の授業になるか</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="sub-col doing-abilities-sub">
+                        <div class="card-sub">
+                            <h4 class="card-sub__title"><a href="./reader/abilities.html" data-i18n-key="doing.sub.abilities">能力とは</a></h4>
+                            <ul class="shelf-group__list">
+                                <li class="shelf-group__parent"><a href="./reader/cognitive-abilities.html">頭脳の能力とされてきたもの</a>
+                                    <ul class="shelf-group__children">
+                                        <li class="shelf-group__parent"><a href="./reader/thinking.html">思考とは</a>
+                                            <ul class="shelf-group__children">
+                                                <li class="shelf-group__parent"><a href="./reader/reasoning.html">推論とは</a>
+                                                    <ul class="shelf-group__children">
+                                                        <li><a href="./reader/analogy.html">類推と、構造の類似を見抜く力</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="./reader/intelligence-structure.html">知能は、どう分けられてきたか</a></li>
+                                        <li><a href="./reader/executive-functions.html">実行機能と作業記憶</a></li>
+                                        <li><a href="./reader/unsupported-ability-models.html">広く知られたが、測定で残らなかった分け方</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./reader/creative-thinking.html">創造的思考とは</a></li>
+                                <li><a href="./reader/decision-making.html">意思決定とは</a></li>
+                                <li>共役のベクトルを当てる力（🚧 工事中）</li>
+                                <li><a href="./reader/soft-skills.html">ソフトスキル・非認知能力とは</a></li>
+                                <li><a href="./reader/interpersonal-abilities.html">人と関わる力</a></li>
+                                <li><a href="./reader/thinking-dispositions.html">思考を動かす構えと体力</a></li>
+                                <li><a href="./reader/inseparable-abilities.html">思考・心理・身体知が分けられないところ</a></li>
+                                <li><a href="./reader/emerging-abilities.html">新しく注目されている能力</a></li>
+                                <li class="shelf-group__parent">能力を見る
+                                    <ul class="shelf-group__children">
+                                        <li><a href="./reader/metacognition.html">メタ認知とは</a></li>
+                                        <li><a href="./reader/capacity-after-ai.html">AI の時代に、差になるスキルは何か</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sub-col doing-emo-sub">
+                        <div class="card-sub">
+                            <h4 class="card-sub__title"><a href="./reader/shelf-mind.html" data-i18n-key="doing.sub.emotional">感情処理</a></h4>
+                            <ul class="shelf-group__list">
+                            <li class="shelf-group__parent"><a href="./reader/developmental-stages.html">精神の発達段階とは</a>
                                 <ul class="shelf-group__children">
-                                    <li><a href="./reader/metacognition.html">メタ認知とは</a></li>
-                                    <li><a href="./reader/capacity-after-ai.html">AI の時代に、差になるスキルは何か</a></li>
+                                    <li><a href="./reader/stages-defense.html">発達段階と心理的防衛機制</a></li>
+                                    <li><a href="./reader/psychological-safety.html">心理的安全性とは</a></li>
+                                    <li><a href="./reader/intrinsic-motivation.html">内発的動機とは</a></li>
                                 </ul>
                             </li>
+                            <li class="shelf-group__parent"><a href="./reader/defense-mechanisms.html">心理的防衛機制とは</a>
+                                <ul class="shelf-group__children">
+                                    <li><a href="./reader/anxiety.html">不安とは</a></li>
+                                    <li><a href="./reader/personality.html">性格とは</a></li>
+                                    <li><a href="./reader/forgiveness-salvation.html">赦しと救いとは</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./reader/anshin.html">安心とは</a></li>
+                            <li><a href="./reader/empathy.html">共感とは</a></li>
+                            <li class="shelf-group__parent"><a href="./reader/shikan.html">止観とは</a>
+                                <ul class="shelf-group__children">
+                                    <li><a href="./reader/to-james.html">ジェームズに辿り着くまで</a></li>
+                                    <li><a href="./reader/breath-filter.html">聞こえていなかった呼吸の音</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./reader/nondual.html">不二（非二元）とは</a></li>
+                            <li><a href="./reader/via-vulnerability.html">脆弱性から、全体を知る</a></li>
                         </ul>
+                        </div>
                     </div>
                 </div>
-            </section>
-
-            <section class="content-section content-section--shelf" id="mind" aria-labelledby="mind-title">
-                <span class="section-label glow-heading" data-i18n-key="section.mind.label">Mind</span>
-                <h2 class="glow-heading" id="mind-title"><a href="./reader/shelf-mind.html" data-i18n-key="shelf.mind">心の動き</a></h2>
-                <div class="shelf-grid glow-text">
-                    <div class="shelf-group">
-                        <ul class="shelf-group__list">
-                        <li class="shelf-group__parent"><a href="./reader/developmental-stages.html">精神の発達段階とは</a>
-                            <ul class="shelf-group__children">
-                                <li><a href="./reader/stages-defense.html">発達段階と心理的防衛機制</a></li>
-                                <li><a href="./reader/psychological-safety.html">心理的安全性とは</a></li>
-                                <li><a href="./reader/intrinsic-motivation.html">内発的動機とは</a></li>
-                            </ul>
-                        </li>
-                        <li class="shelf-group__parent"><a href="./reader/defense-mechanisms.html">心理的防衛機制とは</a>
-                            <ul class="shelf-group__children">
-                                <li><a href="./reader/anxiety.html">不安とは</a></li>
-                                <li><a href="./reader/personality.html">性格とは</a></li>
-                                <li><a href="./reader/forgiveness-salvation.html">赦しと救いとは</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="./reader/anshin.html">安心とは</a></li>
-                        <li><a href="./reader/empathy.html">共感とは</a></li>
-                        <li class="shelf-group__parent"><a href="./reader/shikan.html">止観とは</a>
-                            <ul class="shelf-group__children">
-                                <li><a href="./reader/to-james.html">ジェームズに辿り着くまで</a></li>
-                                <li><a href="./reader/breath-filter.html">聞こえていなかった呼吸の音</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="./reader/nondual.html">不二（非二元）とは</a></li>
-                        <li><a href="./reader/via-vulnerability.html">脆弱性から、全体を知る</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 棚に収めずに残したもの（試し・2026-11-27）：欠損駆動思考。心の動きと能力とは（思考）にまたがる -->
-            <div class="unplaced">
                 <div class="pills">
                     <a href="/project-design-theory/ks/" class="pill pill--doing" data-i18n-key="pill.kesson">欠損駆動思考</a>
                 </div>
-            </div>
+            </section>
 
-            <!-- 棚に収めずに残したもの（試し・2026-11-27）：五つの段の説明・よくある誤解・創造のモデルと意識とは。数と回転と心の動きにまたがり、説明は棚の説明でない -->
-            <div class="unplaced">
+            <!-- Being -->
+            <section class="content-section content-section--being" id="being" aria-labelledby="being-title">
+                <span class="section-label glow-heading" data-i18n-key="section.being.label">Being</span>
+                <h2 class="glow-heading" id="being-title" data-i18n-key="section.being.title">起きていること</h2>
                 <div class="being-desc prose-block glow-text section-prose">
                     <p data-i18n-key="section.being.body">場は、波が立つ前の安定した海のような状態。そこに差が生まれて波が立ち、異質なものが縁で出会ってぶつかり、渦としてひとつのまとまりが立ち上がり、束として新しい形が残る。五つの段は、順に進むとは限らず、同時に走り、入り込み合う。プロジェクトの現在地を知ること。</p>
                 </div>
@@ -452,13 +447,9 @@
                     <a href="/project-design-theory/cs/" class="pill pill--being" data-i18n-key="pill.creationModel">創造のモデル</a>
                     <a href="/project-design-theory/as/" class="pill pill--being" data-i18n-key="pill.awarenessModel">意識とは</a>
                 </div>
-            </div>
-
-            <section class="content-section content-section--shelf" id="number" aria-labelledby="number-title">
-                <span class="section-label glow-heading" data-i18n-key="section.number.label">Numbers and rotation</span>
-                <h2 class="glow-heading" id="number-title"><a href="./reader/shelf-number.html" data-i18n-key="shelf.number">数と回転</a></h2>
                 <div class="shelf-grid glow-text">
                     <div class="shelf-group">
+                        <h3 class="shelf-group__title glow-heading"><a href="./reader/shelf-number.html" data-i18n-key="being.sub.mathPhysics">環境</a></h3>
                         <ul class="shelf-group__list">
                             <li class="shelf-group__parent"><a href="./reader/complex-plane.html">複素平面で考える</a>
                                 <ul class="shelf-group__children">
@@ -475,8 +466,10 @@
                 </div>
             </section>
 
-            <!-- 棚に収めずに残したもの（試し・2026-11-27）：引かれて起きてしまうことの説明（軸の説明）と Love駆動開発の札（駆動源と能力の二面） -->
-            <div class="unplaced">
+            <!-- Falling（Becoming）：引かれて起きてしまうこと。Doing・Being に並ぶ三つ目の基底。プロジェクトの駆動源（Love駆動開発）をここに置く（2026-11-27） -->
+            <section class="content-section content-section--direction" id="direction" aria-labelledby="direction-title">
+                <span class="section-label glow-heading" data-i18n-key="section.falling.label">Falling (Becoming)</span>
+                <h2 class="glow-heading" id="direction-title" data-i18n-key="section.falling.title">引かれて起きてしまうこと</h2>
                 <div class="being-desc prose-block glow-text section-prose">
                     <p data-i18n-key="section.falling.body">意図してすること（Doing）でも、ただ起きていること（Being）でもなく、Love と呼びたい何かに引かれて、私という場所で起きてしまうこと。恋に落ちる（fall in love）、惚れる、のように、私は起きていることの外にいるのでなく、その内側にいます。そして、なってしまうことと、なろうとすることが、見分けられるまま、一つの動きになっています。どちらも、中動と呼ばれる動きの面です。プロジェクトの駆動源は、ここにあります。</p>
                 </div>
@@ -486,13 +479,9 @@
                         <span class="repo-card__desc" data-i18n-key="repo.loveDrivenDevDesc">何に駆られてプロジェクトを行うのか。人やプロジェクトを動かしているもの（駆動源）が何かを探す読み物</span>
                     </a>
                 </div>
-            </div>
-
-            <section class="content-section content-section--shelf" id="love" aria-labelledby="love-title">
-                <span class="section-label glow-heading" data-i18n-key="section.love.label">Love</span>
-                <h2 class="glow-heading" id="love-title"><a href="./reader/shelf-love.html" data-i18n-key="shelf.love">Love と駆動源</a></h2>
                 <div class="shelf-grid glow-text">
                     <div class="shelf-group">
+                        <h3 class="shelf-group__title glow-heading"><a href="./reader/shelf-love.html" data-i18n-key="shelf.love">Love と駆動源</a></h3>
                         <ul class="shelf-group__list">
                             <li><a href="./reader/love-history.html">Love とは、どう言われてきたか</a></li>
                             <li><a href="./reader/life-drivers.html">人生の駆動源は、何として見られてきたか</a></li>
