@@ -280,18 +280,34 @@
     opacity: 0.8;
 }
 
-/* === 棚に収めずに残したもの（見出しを枠だけにする試し・2026-11-27）。見出しを持たず、節と節のあいだに置く === */
-.unplaced {
-    padding: 0 0 6rem;
+/* === やること：行動原理を全幅、その下に環境適応とコミュニケーション（二列分）、
+   その下にサブセット（経営学・能力とは・感情処理。2026-11-27 に記号情報処理を能力とはに改めた）を三列で（2026-11-26 home-rethink） === */
+.doing-grid .doing-principles {
+    grid-column: 1 / -1;
 }
 
-.unplaced .grid {
-    grid-template-columns: minmax(0, 1fr);
-    max-width: 40rem;
+.doing-grid .doing-comm {
+    grid-column: 2 / 4;
 }
 
-/* === 棚の節：見出しが棚のページへのリンク（2026-11-27） === */
-.content-section--shelf > h2 a {
+.doing-grid .sub-col {
+    min-width: 0;
+    align-self: start;
+    padding: 0.5rem 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .doing-grid .doing-comm {
+        grid-column: auto;
+    }
+}
+
+.card-sub__title {
+    font-size: 0.95rem;
+    margin: 0 0 0.6rem;
+}
+
+.card-sub__title a {
     color: inherit;
     text-decoration: underline;
     text-underline-offset: 0.25em;
