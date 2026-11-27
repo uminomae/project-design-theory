@@ -2,16 +2,34 @@
 
 <div class="reader-lead glow-card" id="eo-gist"><span class="reader-lead__label">ざっくりいうと</span>
 <p>禅の円と、単位円は似ていないか。このページは、この問いから始まります。オイラーの等式 e<sup>iπ</sup> + 1 = 0 は、半径 1 の円（単位円）の上で半周回る掛け算を書いた式です。円の式なのに、そこには育ち方の数 e が出てきます。肩に乗せた数 θ が、そのまま円の上を左回りに回った道のり（弧度で測った角度）になるのは、底が e のときだけです。</p>
-<p>なぜ e は、単位円でこれほど大活躍するのか。このページは、平面が基本なのではなく、立体を回す数（四元数）の側が基本だ、という pjdhiro の見方で並べ直して探します。同じ写し方（ステレオ投影）で、四元数の球は立体へ、球は平面へ、円は直線へ写せます。一番下の段では、円を一点から写すと直線になります。このページの球の上では、単位円は赤道で、数直線は、北極を通る経線の円を写したものです。二つの輪は 1 と −1 で交わります。そう並べると、0 と ∞ は数直線のはしではなく球の両極に、e・π・√ は円の世界を数直線の側で扱うための記号に見えてきます。オイラーの等式は、二つの輪が重なる一点です。最後に、禅の円に戻り、e がその円で何をしているのかを、六つの問いで確かめます。</p>
+<p>なぜ e は、単位円でこれほど大活躍するのか。このページは、平面が基本なのではなく、立体を回す数（四元数）の側が基本だ、という pjdhiro の見方で並べ直して探します。同じ写し方（ステレオ投影）で、四元数の球は立体へ、球は平面へ、円は直線へ写せます。一番下の段では、円を一点から写すと直線になります。このページの球の上では、単位円は赤道で、数直線は、北極を通る経線の円を写したものです。二つの輪は 1 と −1 で交わります。そう並べると、0 と ∞ は数直線のはしではなく球の両極に、e・π・√ は円の世界を数直線の側で扱うための記号に見えてきます。オイラーの等式は、二つの輪が重なる一点です。地球儀・平面・船の地図の三つの世界に並べると、e は、船の地図と平面のあいだを訳す数に見えてきます。最後に、禅の円に戻り、e がその円で何をしているのかを、六つの問いで確かめます。</p>
 </div>
 
 <p class="reader-summary__title">概要</p>
 
 このページは、pjdhiro の問いと見方に、Claude が数学で確かめて答える形で作っています。始まりは、禅の円とオイラーの等式が似て見える、という pjdhiro の感じです。その円に e が出てくることに驚いたところから、なぜ e が単位円の世界でこれほど働くのかを探していきます。探す足場は、四元数の側を基本に置き、平面と数直線をその下の段と見る、という pjdhiro の見方です。
 
-題の「たたんだもの」は、オイラーの等式の一行が書かずに済ませているもの（このページでは「省かれているもの」と言います）を指します。本文では「たたむ」という語を使わず、数学の働きごとに一つの語を当てます。北極から光を当てて、丸い形を平らな所へ移すことを「写す」、写した先に ∞ を一点足して丸い形に戻すことを「閉じる」、北極と中心を通るように切って、一つ下の段の形を取り出すことを「切り口を取る」、四元数の四つの向きのうち二つを使わないことを「二つの向きを 0 に置く」、e<sup>iθ</sup> がまっすぐな座標を円に何周も巻くことを「巻きつける」、log がそれを戻すことを「ほどく」と言います。2 乗と √ は、「角度を 2 倍にする」「角度を半分にする」とそのまま書きます。pjdhiro の言葉の中の「たたむ」「次元を落とす」は、そのまま残し、前後で、どの働きのことかを言い直します。
+題の「たたんだもの」は、オイラーの等式の一行が書かずに済ませているもの（このページでは「省かれているもの」と言います）を指します。本文では「たたむ」という語を使わず、数学の働きごとに一つの語を当てます。数学の正式な語は、この表と、本文で初めて出る所にだけ並べ、あとはこのページの語で書きます。
 
-どの章も、見方（pjdhiro の仮説と、このページの置き方）を先に、数学ではどうなるかを後に書きます。段の頭に、<span class="step-mark">見方</span>と<span class="step-mark step-mark--math">数学では</span>の印を付けます。畳みの「詳しく」は、数学の段です。
+<div class="tablefit">
+
+| このページの語 | 働き | 数学の正式な語 |
+|---|---|---|
+| 写す | 北極から光を当てて、丸い形を平らな所へ移す | 立体射影（ステレオ投影とも言う） |
+| 閉じる | 写した先に ∞ を一点足して、丸い形に戻す | 一点コンパクト化（平面を閉じた球は、リーマン球面） |
+| 切り口を取る | 北極と中心を通るように切って、一つ下の段の形を取り出す | 一語の正式な語は無い。中心を通る平面との交わり（断面） |
+| 二つの向きを使わない | 四元数の四つの向きのうち二つを、式の中で 0 と置いて使わない | 部分空間への制限 |
+| 巻きつける | e<sup>iθ</sup> が、まっすぐな座標を円に何周も巻く | 被覆写像（θ ↦ e<sup>iθ</sup> は周期 2π で直線を円に重ねる） |
+| ほどく | log が、巻きつけたものを戻す | 対数（複素数では多価で、一つの枝を選ぶ） |
+| 入れ替える | 0 と ∞ を入れ替える | z ↦ 1/z（メビウス変換の一つ）。z ↦ 1/z̄ は単位円に関する反転 |
+| 入れ替えても形が変わらない | 入れ替える前と後で、同じ形に戻る | 対称性。それを式で書いたものを関数等式と呼ぶ |
+| 省く | 等式の一行が書かずに済ませている部品 | 正式な語は無い。このページの見方の言葉 |
+
+</div>
+
+2 乗と √ は、「角度を 2 倍にする」「角度を半分にする」とそのまま書きます。pjdhiro の言葉の中の「たたむ」「次元を落とす」は、そのまま残し、前後で、どの働きのことかを言い直します。この二つには正式な語は無く、pjdhiro の見方の言葉です。
+
+どの章も、見方（pjdhiro の仮説と、このページの置き方）を先に、数学ではどうなるかを後に書きます。段の頭に、<span class="step-mark">見方</span>と<span class="step-mark step-mark--math">数学では</span>の印を付けます。畳みの「詳しく」は、数学の段です。歴史の上で原典と照らした事実も、「数学では」の段に書きます。
 
 説明は、高校の数学で読める言葉で書きます。計算の細かい所と、本筋から外れる話は、畳みと巻末の補足に置きます。三角比・三角関数・弧度法・複素数を、回転を扱うための角度としておさらいしておくには、「[三角関数から複素平面まで、回転を扱うための角度の話だった](angle-rotation.html)」があります。結びの禅の円の章を、高校の数学の言葉だけで、絵と言葉で追う解説は、「[禅の円を、高校の数学で読む](zen-circle-hs.html)」にあります。
 
@@ -87,7 +105,7 @@ pjdhiro は、この向きを、さらに一段上から見ています。その
 
 <strong>pjdhiro の見方：</strong>平面が基本なのではなく、四元数側が基本で、それを折りたたんだのが平面で、それを折りたたむと直線。という発想は、その動画がわかりやすい。
 
-pjdhiro がこの動画に見ているのは、同じ写し方で、円を直線に、球を平面に、四元数の球を立体に写していく三段です。カードの「折りたたむ」は、上の段から一つ下の段へ移ることを言っています。このページでは、その移り方を、数学の働きに分けて見ます。四元数から平面へは「二つの向きを 0 に置く」、球から円へは「切り口を取る」、丸い形から平らな所へは「写す」です。
+pjdhiro がこの動画に見ているのは、同じ写し方で、円を直線に、球を平面に、四元数の球を立体に写していく三段です。カードの「折りたたむ」は、上の段から一つ下の段へ移ることを言っています。このページでは、その移り方を、数学の働きに分けて見ます。四元数から平面へは「二つの向きを使わない」、球から円へは「切り口を取る」、丸い形から平らな所へは「写す」です。
 
 このページは、ここから先を、この向きで並べます。平面が基本なのではなく、四元数の側が基本で、平面と数直線はその下の段にある、という立場です。一番下の段では、円を一点から写すと直線になります（動画の一段目）。このページの球の上では、単位円は赤道で、数直線は、北極を通る経線の円を写したものです。二つの輪は 1 と −1 で交わります。この立場は pjdhiro の見方で、数学の定理ではありません。その中で出てくる数学は、「数学では」の段で、事実として確かめながら進みます。
 
@@ -107,7 +125,7 @@ pjdhiro がこの動画に見ているのは、同じ写し方で、円を直線
 
 <a id="eo-steps"></a><span class="step-mark">見方</span>pjdhiro が動画に見ている三段を、一段ずつ並べます。
 
-<span class="step-mark step-mark--math">数学では</span>どの段も、同じ写し方（ステレオ投影）です。丸い形の一点から光を当て（このページでは、その点を北極と呼びます）、その形の上の点を通る線を引き、平らな所に当たった所へ写します。
+<span class="step-mark step-mark--math">数学では</span>どの段も、同じ写し方です。このページでは「写す」と書きます（数学の正式な語では立体射影。ステレオ投影とも言います）。丸い形の一点から光を当て（このページでは、その点を北極と呼びます）、その形の上の点を通る線を引き、平らな所に当たった所へ写します。
 
 - 半径 1 の円を、直線へ写す。北極の一点を除いた円の全部が、直線の全部に写ります。
 - 球の表面を、平面へ写す。北極の一点を除いた球の全部が、平面の全部に写ります。
@@ -115,25 +133,25 @@ pjdhiro がこの動画に見ているのは、同じ写し方で、円を直線
 
 <figure class="glow-card reader-figure"><div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0.5rem 1.5rem"><svg viewBox="0 0 300 366" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:18rem" aria-label="三段の階段。上の段は、四元数の球（四つの向きの中の、三次元の球面。点線で描いた形）を、北極から立体へ写す。中の段は、球を平面へ写す。下の段は、円を直線へ写す。どの段も、てっぺんの赤い点が北極。左の形には、北極と中心を通る切り口を金色で描いてある。左の形どうしは、上から下へ、その切り口を取ると一段ずつ下の形になる。"><g font-size="12"><circle cx="70" cy="62" r="34" fill="var(--navy)" fill-opacity="0.08" stroke="var(--navy)" stroke-width="1.6" stroke-dasharray="5 3"/><ellipse cx="70" cy="62" rx="34" ry="11" fill="none" stroke="var(--navy)" stroke-width="0.9" stroke-dasharray="3 3"/><ellipse cx="70" cy="62" rx="12" ry="34" fill="none" stroke="var(--gold)" stroke-width="1.6" stroke-dasharray="3 3"/><path d="M202,58 h44 v44 h-44 Z M202,58 l16,-16 h44 l-16,16 M246,102 l16,-16 v-44" fill="none" stroke="var(--ink)" stroke-width="1.2"/><circle cx="70" cy="28" r="4" fill="var(--coral)"/><text x="70.0" y="111.0" fill="var(--ink)" font-size="12.5" text-anchor="middle">四元数の球</text><text x="70.0" y="125.0" fill="var(--mid)" font-size="10.5" text-anchor="middle">（三次元球面）</text><text x="232.0" y="111.0" fill="var(--ink)" font-size="12.5" text-anchor="middle">立体</text><line x1="114" y1="62" x2="170" y2="62" stroke="var(--coral)" stroke-width="1.3" stroke-dasharray="4 3"/><path d="M164.6,64.6L170.0,62.0L164.6,59.4" fill="none" stroke="var(--coral)" stroke-width="1.3"/><text x="145.0" y="54.0" fill="var(--coral)" font-size="10.5" text-anchor="middle" stroke="var(--white)" stroke-width="3" paint-order="stroke">北極から写す</text><line x1="70" y1="132" x2="70" y2="138" stroke="var(--mid)" stroke-width="1.3"/><path d="M67.4,132.6L70.0,138.0L72.6,132.6" fill="none" stroke="var(--mid)" stroke-width="1.3"/><text x="78.0" y="139.0" fill="var(--mid)" font-size="10.5">北極と中心を通る切り口を取る</text><circle cx="70" cy="182" r="34" fill="var(--navy)" fill-opacity="0.08" stroke="var(--navy)" stroke-width="1.6"/><ellipse cx="70" cy="182" rx="10" ry="34" fill="none" stroke="var(--gold)" stroke-width="1.6"/><path d="M184,198 L212,166 L280,166 L252,198 Z" fill="var(--navy)" fill-opacity="0.08" stroke="var(--ink)" stroke-width="1.2"/><circle cx="70" cy="148" r="4" fill="var(--coral)"/><text x="70.0" y="231.0" fill="var(--ink)" font-size="12.5" text-anchor="middle">球</text><text x="70.0" y="245.0" fill="var(--mid)" font-size="10.5" text-anchor="middle">（二次元の表面）</text><text x="232.0" y="231.0" fill="var(--ink)" font-size="12.5" text-anchor="middle">平面</text><line x1="114" y1="182" x2="170" y2="182" stroke="var(--coral)" stroke-width="1.3" stroke-dasharray="4 3"/><path d="M164.6,184.6L170.0,182.0L164.6,179.4" fill="none" stroke="var(--coral)" stroke-width="1.3"/><text x="145.0" y="174.0" fill="var(--coral)" font-size="10.5" text-anchor="middle" stroke="var(--white)" stroke-width="3" paint-order="stroke">北極から写す</text><line x1="70" y1="252" x2="70" y2="258" stroke="var(--mid)" stroke-width="1.3"/><path d="M67.4,252.6L70.0,258.0L72.6,252.6" fill="none" stroke="var(--mid)" stroke-width="1.3"/><text x="78.0" y="259.0" fill="var(--mid)" font-size="10.5">北極と中心を通る切り口を取る</text><circle cx="70" cy="302" r="34" fill="none" stroke="var(--navy)" stroke-width="1.8"/><line x1="177" y1="302" x2="287" y2="302" stroke="var(--ink)" stroke-width="1.6"/><path d="M284.6,304.6L290.0,302.0L284.6,299.4" fill="none" stroke="var(--ink)" stroke-width="1.6"/><path d="M179.4,299.4L174.0,302.0L179.4,304.6" fill="none" stroke="var(--ink)" stroke-width="1.6"/><circle cx="70" cy="268" r="4" fill="var(--coral)"/><text x="70.0" y="351.0" fill="var(--ink)" font-size="12.5" text-anchor="middle">円</text><text x="70.0" y="365.0" fill="var(--mid)" font-size="10.5" text-anchor="middle">（一次元）</text><text x="232.0" y="351.0" fill="var(--ink)" font-size="12.5" text-anchor="middle">直線</text><line x1="114" y1="302" x2="170" y2="302" stroke="var(--coral)" stroke-width="1.3" stroke-dasharray="4 3"/><path d="M164.6,304.6L170.0,302.0L164.6,299.4" fill="none" stroke="var(--coral)" stroke-width="1.3"/><text x="145.0" y="294.0" fill="var(--coral)" font-size="10.5" text-anchor="middle" stroke="var(--white)" stroke-width="3" paint-order="stroke">北極から写す</text></g></svg></div><figcaption>同じ写し方（ステレオ投影）の三段。どの段も、北極の一点から光を当てて、丸い形を平らな所へ写す。上の段の形から、北極と中心を通る切り口を取ると（金色）、一つ下の段の形が出てくる。四元数の球は四つの向きの中にあるので、絵では点線の形で代わりに描いた</figcaption></figure>
 
-どの段でも、光を当てた一点だけは、写した先のどこにも当たりません。写した先には、その一点にあたる所がありません。どこまでも遠い所に ∞ を一点足すと、元の丸い形に閉じられます。
+どの段でも、光を当てた一点だけは、写した先のどこにも当たりません。写した先には、その一点にあたる所がありません。どこまでも遠い所に ∞ を一点足すと、元の丸い形に閉じられます。このページでは「閉じる」と書きます（数学の正式な語では一点コンパクト化）。
 
 <span class="step-mark">見方</span>三段は、切り口でつながっています。
 
 <span class="step-mark step-mark--math">数学では</span>上の段の丸い形を、北極と中心を通るように切ると、その切り口が一つ下の段の丸い形になります。四元数の球を、光を当てる点と中心を通る三次元の切り口で切ると、球が出てきます。球を、北極を通る大きな円で切ると円が出てきます。切り口を写した先も、一つ下の段の平らな所（立体の中の平面・平面の中の直線）になります。このページは、この階段を、上の段から下の段へ見ていきます。
 
-## 四元数から平面へ：二つの向きを 0 に置くと、複素数を掛ける回転と同じ回転が出てくる
+## 四元数から平面へ：二つの向きを使わないと、複素数を掛ける回転と同じ回転が出てくる
 
 <!--OPEN-->
 
-<a id="eo-fold4"></a><span class="step-mark">見方</span>一番上の段から、平面の段へ移ります。今度は形を切るのでなく、回す点と回し手の、四つの向きのうち二つを 0 に置きます。
+<a id="eo-fold4"></a><span class="step-mark">見方</span>一番上の段から、平面の段へ移ります。今度は形を切るのでなく、回す点と回し手の、四つの向きのうち二つを使いません（式の中では、その二つを 0 と置きます）。
 
 <span class="step-mark step-mark--math">数学では</span>四元数は、w + xi + yj + zk の形の数です。w が実の部分で、i・j・k は三つの虚の向きです。三つとも、2 回掛けると −1 になります。i と j を掛けると k になりますが、順番を入れ替えて j と i を掛けると −k になります。立体の中の点は、大きさ 1 の四元数 q で前と後ろから挟んで（q v q<sup>−1</sup>）回します。
 
-回す点は、実の部分 w がもともと 0 です。残りの k も 0 に置くと、点は i と j の平面に乗ります。その平面を、k を軸に角度 θ 回すと、i を 1 に、j を i に重ねて見たとき、オイラーの側で e<sup>iθ</sup> を掛けたのと同じ点に着きます。回し手 e<sup>kθ/2</sup> のほうは、ちょうど 0 に置いた w と k の向きの部分だけでできています。
+回す点は、実の部分 w がもともと 0 です。残りの k も 0 と置いて使わないと、点は i と j の平面に乗ります。その平面を、k を軸に角度 θ 回すと、i を 1 に、j を i に重ねて見たとき、オイラーの側で e<sup>iθ</sup> を掛けたのと同じ点に着きます。回し手 e<sup>kθ/2</sup> のほうは、ちょうど、点の側で使わなかった w と k の向きの部分だけでできています。
 
 同じ形の式 e<sup>kπ</sup> = −1 も出てきますが、それは平面の半周ではなく、一周にあたります。平面を半周回す回し手は e<sup>kπ/2</sup> = k です。
 
-<figure class="glow-card reader-figure"><div style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.5rem 1.5rem"><svg viewBox="0 0 240 234" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:15rem" aria-label="四元数の側。点の k の成分を 0 に置くと、i と j の平面が一枚残る。点の成分としての k は 0 で、平面に直角な k の向きの線は、回す軸として残っている。平面の上に、角度 θ だけ回る矢印がある。"><g font-size="13"><polygon points="54.2,168.2 158.6,168.2 158.6,63.8 54.2,63.8" fill="none" stroke="var(--mute)" stroke-width="1.1" stroke-dasharray="4 3"/><line x1="54.2" y1="168.2" x2="75.8" y2="152.2" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M65.5,163.1L68.2,157.8L62.4,158.9" fill="none" stroke="var(--gold)" stroke-width="1.4"/><line x1="158.6" y1="168.2" x2="180.2" y2="152.2" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M169.9,163.1L172.6,157.8L166.8,158.9" fill="none" stroke="var(--gold)" stroke-width="1.4"/><line x1="158.6" y1="63.8" x2="180.2" y2="47.8" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M169.9,58.7L172.6,53.4L166.8,54.5" fill="none" stroke="var(--gold)" stroke-width="1.4"/><line x1="54.2" y1="63.8" x2="75.8" y2="47.8" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M65.5,58.7L68.2,53.4L62.4,54.5" fill="none" stroke="var(--gold)" stroke-width="1.4"/><polygon points="97.4,136.2 201.8,136.2 201.8,31.8 97.4,31.8" fill="none" stroke="var(--mute)" stroke-width="1.1" stroke-dasharray="4 3"/><line x1="97.4" y1="136.2" x2="75.8" y2="152.2" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M86.1,141.3L83.4,146.6L89.2,145.5" fill="none" stroke="var(--gold)" stroke-width="1.4"/><line x1="201.8" y1="136.2" x2="180.2" y2="152.2" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M190.5,141.3L187.8,146.6L193.6,145.5" fill="none" stroke="var(--gold)" stroke-width="1.4"/><line x1="201.8" y1="31.8" x2="180.2" y2="47.8" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M190.5,36.9L187.8,42.2L193.6,41.1" fill="none" stroke="var(--gold)" stroke-width="1.4"/><line x1="97.4" y1="31.8" x2="75.8" y2="47.8" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M86.1,36.9L83.4,42.2L89.2,41.1" fill="none" stroke="var(--gold)" stroke-width="1.4"/><polygon points="75.8,152.2 180.2,152.2 180.2,47.8 75.8,47.8" fill="var(--navy)" fill-opacity="0.13" stroke="var(--navy)" stroke-width="1.3"/><line x1="70.0" y1="100.0" x2="194.7" y2="100.0" stroke="var(--mid)" stroke-width="1"/><text x="200.7" y="104.0" fill="var(--mid)">i</text><line x1="128.0" y1="158.0" x2="128.0" y2="33.3" stroke="var(--mid)" stroke-width="1"/><text x="134.0" y="33.3" fill="var(--mid)">j</text><line x1="164.0" y1="73.3" x2="52.5" y2="156.0" stroke="var(--coral)" stroke-width="1.6"/><text x="4" y="190" fill="var(--coral)">k（回す軸）</text><path d="M162.7,90.7 L161.6,87.1 L160.0,83.7 L158.2,80.4 L155.9,77.4 L153.4,74.6 L150.6,72.1 L147.6,69.8 L144.3,68.0 L140.9,66.4 L137.3,65.3" fill="none" stroke="var(--ink)" stroke-width="1.4"/><path d="M143.3,64.5L137.3,65.3L141.6,69.4" fill="none" stroke="var(--ink)" stroke-width="1.4"/><text x="155.9" y="64.4" fill="var(--ink)">θ</text><text x="8" y="210" fill="var(--ink)" font-size="11.5">点の w と k を 0 に置くと、</text><text x="8" y="226" fill="var(--ink)" font-size="11.5">i と j の平面。k の向きは回す軸に</text></g></svg><svg viewBox="0 0 240 234" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:15rem" aria-label="オイラーの側。横に 1、縦に i の向きの複素平面が一枚ある。平面の上に、角度 θ だけ回る矢印がある。原点に、紙面に直角な奥行きの向きを表す丸の中の点の印があり、回す軸は式には出てこない、と書いてある。"><g font-size="13"><rect x="56" y="48" width="128" height="128" fill="var(--navy)" fill-opacity="0.13" stroke="var(--navy)" stroke-width="1.3"/><line x1="50" y1="112" x2="194" y2="112" stroke="var(--mid)" stroke-width="1"/><line x1="120" y1="182" x2="120" y2="38" stroke="var(--mid)" stroke-width="1"/><text x="196" y="116" fill="var(--mid)">1</text><text x="126" y="40" fill="var(--mid)">i</text><path d="M158.6,101.6 L157.3,97.7 L155.6,93.8 L153.5,90.2 L151.1,86.8 L148.3,83.7 L145.2,80.9 L141.8,78.5 L138.2,76.4 L134.3,74.7 L130.4,73.4" fill="none" stroke="var(--ink)" stroke-width="1.4"/><path d="M136.3,72.6L130.4,73.4L134.7,77.5" fill="none" stroke="var(--ink)" stroke-width="1.4"/><text x="150" y="82" fill="var(--ink)">θ</text><circle cx="120" cy="112" r="7" fill="var(--white)" stroke="var(--coral)" stroke-width="1.6"/><circle cx="120" cy="112" r="2" fill="var(--coral)"/><text x="8" y="210" fill="var(--ink)" font-size="11.5">e<tspan baseline-shift="super" font-size="8">iθ</tspan> を掛けて回す。回す軸（◎ 奥行きの</text><text x="8" y="226" fill="var(--ink)" font-size="11.5">向き z）は、式には出てこない</text></g></svg></div><figcaption>四元数の側で、回される点の w と k を 0 に置くと、奥行きの無い平面が一枚残る。それが、オイラーの側の複素平面と同じ角度 θ だけ回る</figcaption></figure>
+<figure class="glow-card reader-figure"><div style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.5rem 1.5rem"><svg viewBox="0 0 240 234" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:15rem" aria-label="四元数の側。点の k の成分を 0 と置いて使わないと、i と j の平面が一枚残る。点の成分としての k は 0 で、平面に直角な k の向きの線は、回す軸として残っている。平面の上に、角度 θ だけ回る矢印がある。"><g font-size="13"><polygon points="54.2,168.2 158.6,168.2 158.6,63.8 54.2,63.8" fill="none" stroke="var(--mute)" stroke-width="1.1" stroke-dasharray="4 3"/><line x1="54.2" y1="168.2" x2="75.8" y2="152.2" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M65.5,163.1L68.2,157.8L62.4,158.9" fill="none" stroke="var(--gold)" stroke-width="1.4"/><line x1="158.6" y1="168.2" x2="180.2" y2="152.2" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M169.9,163.1L172.6,157.8L166.8,158.9" fill="none" stroke="var(--gold)" stroke-width="1.4"/><line x1="158.6" y1="63.8" x2="180.2" y2="47.8" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M169.9,58.7L172.6,53.4L166.8,54.5" fill="none" stroke="var(--gold)" stroke-width="1.4"/><line x1="54.2" y1="63.8" x2="75.8" y2="47.8" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M65.5,58.7L68.2,53.4L62.4,54.5" fill="none" stroke="var(--gold)" stroke-width="1.4"/><polygon points="97.4,136.2 201.8,136.2 201.8,31.8 97.4,31.8" fill="none" stroke="var(--mute)" stroke-width="1.1" stroke-dasharray="4 3"/><line x1="97.4" y1="136.2" x2="75.8" y2="152.2" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M86.1,141.3L83.4,146.6L89.2,145.5" fill="none" stroke="var(--gold)" stroke-width="1.4"/><line x1="201.8" y1="136.2" x2="180.2" y2="152.2" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M190.5,141.3L187.8,146.6L193.6,145.5" fill="none" stroke="var(--gold)" stroke-width="1.4"/><line x1="201.8" y1="31.8" x2="180.2" y2="47.8" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M190.5,36.9L187.8,42.2L193.6,41.1" fill="none" stroke="var(--gold)" stroke-width="1.4"/><line x1="97.4" y1="31.8" x2="75.8" y2="47.8" stroke="var(--mute)" stroke-width="1" stroke-dasharray="2 3"/><path d="M86.1,36.9L83.4,42.2L89.2,41.1" fill="none" stroke="var(--gold)" stroke-width="1.4"/><polygon points="75.8,152.2 180.2,152.2 180.2,47.8 75.8,47.8" fill="var(--navy)" fill-opacity="0.13" stroke="var(--navy)" stroke-width="1.3"/><line x1="70.0" y1="100.0" x2="194.7" y2="100.0" stroke="var(--mid)" stroke-width="1"/><text x="200.7" y="104.0" fill="var(--mid)">i</text><line x1="128.0" y1="158.0" x2="128.0" y2="33.3" stroke="var(--mid)" stroke-width="1"/><text x="134.0" y="33.3" fill="var(--mid)">j</text><line x1="164.0" y1="73.3" x2="52.5" y2="156.0" stroke="var(--coral)" stroke-width="1.6"/><text x="4" y="190" fill="var(--coral)">k（回す軸）</text><path d="M162.7,90.7 L161.6,87.1 L160.0,83.7 L158.2,80.4 L155.9,77.4 L153.4,74.6 L150.6,72.1 L147.6,69.8 L144.3,68.0 L140.9,66.4 L137.3,65.3" fill="none" stroke="var(--ink)" stroke-width="1.4"/><path d="M143.3,64.5L137.3,65.3L141.6,69.4" fill="none" stroke="var(--ink)" stroke-width="1.4"/><text x="155.9" y="64.4" fill="var(--ink)">θ</text><text x="8" y="210" fill="var(--ink)" font-size="11.5">点の w と k を 0 と置くと、</text><text x="8" y="226" fill="var(--ink)" font-size="11.5">i と j の平面。k の向きは回す軸に</text></g></svg><svg viewBox="0 0 240 234" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:15rem" aria-label="オイラーの側。横に 1、縦に i の向きの複素平面が一枚ある。平面の上に、角度 θ だけ回る矢印がある。原点に、紙面に直角な奥行きの向きを表す丸の中の点の印があり、回す軸は式には出てこない、と書いてある。"><g font-size="13"><rect x="56" y="48" width="128" height="128" fill="var(--navy)" fill-opacity="0.13" stroke="var(--navy)" stroke-width="1.3"/><line x1="50" y1="112" x2="194" y2="112" stroke="var(--mid)" stroke-width="1"/><line x1="120" y1="182" x2="120" y2="38" stroke="var(--mid)" stroke-width="1"/><text x="196" y="116" fill="var(--mid)">1</text><text x="126" y="40" fill="var(--mid)">i</text><path d="M158.6,101.6 L157.3,97.7 L155.6,93.8 L153.5,90.2 L151.1,86.8 L148.3,83.7 L145.2,80.9 L141.8,78.5 L138.2,76.4 L134.3,74.7 L130.4,73.4" fill="none" stroke="var(--ink)" stroke-width="1.4"/><path d="M136.3,72.6L130.4,73.4L134.7,77.5" fill="none" stroke="var(--ink)" stroke-width="1.4"/><text x="150" y="82" fill="var(--ink)">θ</text><circle cx="120" cy="112" r="7" fill="var(--white)" stroke="var(--coral)" stroke-width="1.6"/><circle cx="120" cy="112" r="2" fill="var(--coral)"/><text x="8" y="210" fill="var(--ink)" font-size="11.5">e<tspan baseline-shift="super" font-size="8">iθ</tspan> を掛けて回す。回す軸（◎ 奥行きの</text><text x="8" y="226" fill="var(--ink)" font-size="11.5">向き z）は、式には出てこない</text></g></svg></div><figcaption>四元数の側で、回される点の w と k を 0 と置いて使わないと、奥行きの無い平面が一枚残る。それが、オイラーの側の複素平面と同じ角度 θ だけ回る</figcaption></figure>
 
 同じ点に着くのに、四元数の側には、オイラーの側に書かれていない部品が四つあります。等式の一行で省かれているものです。
 
@@ -152,7 +170,7 @@ pjdhiro がこの動画に見ているのは、同じ写し方で、円を直線
 
 <strong>pjdhiro の見方：</strong>非二元から発想しようと思ってます。0 と 1 は、数直線のような左右に配置されるものではない。e と π は、数直線に次元を落とす、ステレオ投影のような際に必要になるもの、と逆に発想しようとしてます。つまり e の理解は不要。ルートのような記号になりつつある。
 
-カードの「数直線に次元を落とす」は、このページの語では、写す・巻きつける・ほどく、の組にあたります。e と π がそこで何をするかは、章「[e・π・√ も、0 と ∞ も、円の世界を数直線の側で扱うための記号かもしれない](#eo-fold)」で見ます。
+カードの「数直線に次元を落とす」が、このページの語でどの働きにあたるかは、章「[e・π・√ も、0 と ∞ も、円の世界を数直線の側で扱うための記号かもしれない](#eo-fold)」で見ます。
 
 <span class="step-mark step-mark--math">数学では</span>章「[四元数を基本と見ると、同じ写し方の三段が並ぶ](#eo-steps)」の三段のうち、真ん中の段（球と平面）を、複素平面に当てます。複素平面に、どこまでも遠い所を表す点 ∞ を一つ足すと、平面は閉じて、球の表面と同じものとして扱えます（リーマン球面）。そのとき、0 は南極、∞ は北極、単位円は赤道に来ます。1 は赤道の上の一点です。
 
@@ -182,7 +200,7 @@ pjdhiro は、続けてこう問いました。
 
 <strong>pjdhiro の問い：</strong>ゼータ関数は球のようなものを扱ってるよね？
 
-<span class="step-mark step-mark--math">数学では</span>ゼータ関数に、π<sup>−s/2</sup> と、階乗を整数でない数に広げた関数（ガンマ関数。定義の式に e<sup>−t</sup> が出てくる）を掛けて整えた関数は、s と 1 − s を入れ替えても値が変わりません（関数等式）。ゼータ関数そのものの値は変わります。w の側では、1 − s は 1/w に移ります。これは、次の章の「詳しく」にある、1 と −1 を通る軸のまわりの半回転です。さらに、s を横の軸で上下に折り返した点（s̄）では、値も元の値を上下に折り返したものになります。二つを合わせると w → 1/w̄ で、この章の鏡（0 と ∞ を入れ替え、単位円の上の点だけを動かさない）になります。鏡の上にない零点があれば、鏡をはさんだ向かいにも必ず零点があります。鏡の上の零点は、自分自身が向かいです。この対称性は、自明でない零点だけのものです。自明な零点 −2・−4… は w の側では 2/3・4/5… に来ますが、向かいの 3/2・5/4… は零点ではありません。リーマン予想は、球の上では、自明でない零点が対に分かれず、すべて鏡の上（赤道）に乗っている、と言い換えられます。
+<span class="step-mark step-mark--math">数学では</span>ゼータ関数に、π<sup>−s/2</sup> と、階乗を整数でない数に広げた関数（ガンマ関数。定義の式に e<sup>−t</sup> が出てくる）を掛けて整えた関数は、s と 1 − s を入れ替えても値が変わりません（関数等式）。ゼータ関数そのものの値は変わります。入れ替えても変わらないこと（対称性）を式で書いたものを、関数等式と呼びます。exp(a + b) = exp(a)·exp(b) も、関数等式の一つです。w の側では、1 − s は 1/w に移ります。これは、次の章の「詳しく」にある、1 と −1 を通る軸のまわりの半回転です。さらに、s を横の軸で上下に折り返した点（s̄）では、値も元の値を上下に折り返したものになります。二つを合わせると w → 1/w̄ で、この章の鏡（0 と ∞ を入れ替え、単位円の上の点だけを動かさない）になります。鏡の上にない零点があれば、鏡をはさんだ向かいにも必ず零点があります。鏡の上の零点は、自分自身が向かいです。この対称性は、自明でない零点だけのものです。自明な零点 −2・−4… は w の側では 2/3・4/5… に来ますが、向かいの 3/2・5/4… は零点ではありません。リーマン予想は、球の上では、自明でない零点が対に分かれず、すべて鏡の上（赤道）に乗っている、と言い換えられます。
 
 <span class="step-mark">見方</span>この写し方では、ゼータ関数の平面の 0 と 1 が球の両極に来て、二つの真ん中の 1/2 が赤道の上に来ます。すぐ上のカードの「ゼロの逆は無限大で、1 は 1/2 かのような」と、形が重なる所です。整えるのに、π と、e の入った式で作る関数が要ることも、章「[e・π・√ も、0 と ∞ も、円の世界を数直線の側で扱うための記号かもしれない](#eo-fold)」の仮説と並べて見ることができそうです。
 
@@ -263,7 +281,6 @@ console.log("s = −2 → w =", show(w([-2, 0])), "／ s = 3 → w =", show(w([3
 
 - 半径 1 の球で、南極から経線に沿って測った角度を φ とすると、北極から写した先の数直線の数は x = tan(φ/2) になる。φ = 0 で 0、φ = π/2（赤道）で 1、φ が π（北極）に近づくと x は果てしなく大きくなる。逆回りに測れば負の数になる。
 - たとえば 2 は φ ≈ 127 度、1/2 は φ ≈ 53 度の所にあり、二つは赤道をはさんで、同じだけ北と南に離れた高さにある。
-- 1/z は 0 と ∞ を入れ替え、1 と −1 を動かさない。球の上では、1 と −1 を通る軸のまわりの半回転にあたる。
 
 </details>
 
@@ -271,7 +288,7 @@ console.log("s = −2 → w =", show(w([-2, 0])), "／ s = 3 → w =", show(w([3
 
 <!--OPEN-->
 
-<a id="eo-fold"></a><span class="step-mark">見方</span>0 と ∞ を球の両極に置き、数直線を、北極から写した経線の円と見ると、等式のほかの登場人物も、円の世界を数直線の側で扱うための記号に見えてきます。
+<a id="eo-fold"></a><span class="step-mark">見方</span>ここまでの球の絵で見ると、等式のほかの登場人物も、円の世界を数直線の側で扱うための記号に見えてきます。
 
 <span class="step-mark step-mark--math">数学では</span>どの記号が何をするかは、数学で確かめられます。2 乗は角度を 2 倍にするので、z と −z を同じ一点に重ねます。√ はその逆で、角度を半分にし、答えを二つに分けます。π は、半周の道のりで、回転を一本の長さで書きます。e は、まっすぐな座標を円に巻きつけます（下の絵）。
 
@@ -283,9 +300,9 @@ console.log("s = −2 → w =", show(w([-2, 0])), "／ s = 3 → w =", show(w([3
 
 <strong>pjdhiro の見方：</strong>ゼロと無限大は、√ や e や π のように、次元を落とすための道具なのかもしれませんね。
 
-<span class="step-mark">見方</span>二つのカードの「二次元を一次元にする」「次元を落とす」を、このページは、記号ごとに違う働きをまとめて呼んだもの、と読みます。このページの語では、√ は角度を半分にし、e はまっすぐな座標を円に巻きつけ、0 と ∞ は球の両極を、大きさを測る半直線の両はしに置きます。
+<span class="step-mark">見方</span>二つのカードの「二次元を一次元にする」「次元を落とす」を、このページは、記号ごとに違う働きをまとめて呼んだもの、と読みます。このページの語では、√ は角度を半分にし、e はまっすぐな座標を円に巻きつけ、log はそれをほどきます。0 と ∞ は、球の南極と北極を、大きさの両はしとして数直線の側で呼ぶ名前です。章「[0 と ∞ を、球の両極に置く](#eo-zero)」のカードの「数直線に次元を落とす、ステレオ投影のような」も、同じように、写す・巻きつける・ほどく、の組をまとめて呼んだもの、と読みます。
 
-<a id="eo-axes"></a><span class="step-mark step-mark--math">数学では</span>e の巻きつけ方を、一枚の絵にします。e<sup>x + iθ</sup> の大きさは e<sup>x</sup>、向きは θ です。下の絵の一枚目は、まっすぐな座標で、横に回った角度 θ、縦に大きさの対数 x を取ります（ふつうの複素平面の描き方とは縦と横が入れ替わり、航海の地図と同じ向きです）。e で巻きつけると、二枚目の平面になります。この働きは、三段の「写す」とは向きが逆です。写すのは丸い形から平らな所へですが、e は、まっすぐな座標を円の世界へ巻きつけます。もとになるのも数直線一本ではなく、横と縦の二本のまっすぐな座標で、二つの数の組を、平面の一点にします。
+<a id="eo-axes"></a><span class="step-mark step-mark--math">数学では</span>e の巻きつけ方を、一枚の絵にします。e<sup>x + iθ</sup> の大きさは e<sup>x</sup>、向きは θ です。下の絵の一枚目は、まっすぐな座標で、横に回った角度 θ、縦に大きさの対数 x を取ります（ふつうの複素平面の描き方とは、縦と横が入れ替わります。この座標を、章「[e の正体に迫る：地球儀・平面・船の地図の、三つの世界](#eo-worlds)」で船の地図と呼びます）。e で巻きつけると、二枚目の平面になります。もとになるのは数直線一本ではなく、横と縦の二本のまっすぐな座標で、二つの数の組を、平面の一点にします。三段の「写す」とどう違うかも、その章で見ます。
 
 <figure class="glow-card reader-figure"><div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0.5rem 1.5rem"><svg viewBox="0 0 190 212" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:12rem" aria-label="長方形の座標。横は角度 θ で −π から π、縦は x で −0.7、0、0.7 の横の線が引いてある。x = 0 の線は太い金色、上の線は赤、下の線は紺。縦の線は灰色。"><g font-size="12"><line x1="26.0" y1="172.2" x2="26.0" y2="39.8" stroke="var(--mute)" stroke-width="0.9"/><line x1="63.5" y1="172.2" x2="63.5" y2="39.8" stroke="var(--mute)" stroke-width="0.9"/><line x1="101.0" y1="172.2" x2="101.0" y2="39.8" stroke="var(--mute)" stroke-width="0.9"/><line x1="138.5" y1="172.2" x2="138.5" y2="39.8" stroke="var(--mute)" stroke-width="0.9"/><line x1="176.0" y1="172.2" x2="176.0" y2="39.8" stroke="var(--mute)" stroke-width="0.9"/><line x1="26.0" y1="150.1" x2="176.0" y2="150.1" stroke="var(--navy)" stroke-width="1.6"/><line x1="26.0" y1="106.0" x2="176.0" y2="106.0" stroke="var(--gold)" stroke-width="2.6"/><line x1="26.0" y1="61.9" x2="176.0" y2="61.9" stroke="var(--coral)" stroke-width="1.6"/><text x="26.0" y="187.2" fill="var(--ink)" font-size="11" text-anchor="middle">−π</text><text x="101.0" y="187.2" fill="var(--ink)" font-size="11" text-anchor="middle">0</text><text x="176.0" y="187.2" fill="var(--ink)" font-size="11" text-anchor="middle">π</text><text x="101.0" y="206.0" fill="var(--mid)" font-size="11" text-anchor="middle">横：回った角度 θ</text><text x="22.0" y="65.9" fill="var(--ink)" font-size="10.5" text-anchor="end">0.7</text><text x="22.0" y="110.0" fill="var(--ink)" font-size="10.5" text-anchor="end">0</text><text x="22.0" y="154.1" fill="var(--ink)" font-size="10.5" text-anchor="end">−0.7</text><text x="4.0" y="24.0" fill="var(--mid)" font-size="11">縦：大きさの対数 x</text></g></svg><div style="align-self:center;text-align:center;font-size:0.8rem;color:var(--mid);line-height:1.5">→<br>e で巻きつける<br>←<br>log でほどく</div><svg viewBox="0 0 200 212" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:12.5rem" aria-label="平面の上に、半径 0.5、1、2 の三つの同心円と、真ん中の 0 から四方へのびる灰色の線。半径 1 の円は太い金色。真ん中の 0 は白抜きの点。"><g font-size="12"><line x1="100" y1="104" x2="100.0" y2="202.8" stroke="var(--mute)" stroke-width="0.9"/><line x1="100" y1="104" x2="198.8" y2="104.0" stroke="var(--mute)" stroke-width="0.9"/><line x1="100" y1="104" x2="100.0" y2="5.2" stroke="var(--mute)" stroke-width="0.9"/><line x1="100" y1="104" x2="1.2" y2="104.0" stroke="var(--mute)" stroke-width="0.9"/><circle cx="100" cy="104" r="18.9" fill="none" stroke="var(--navy)" stroke-width="1.6"/><circle cx="100" cy="104" r="38.0" fill="none" stroke="var(--gold)" stroke-width="2.6"/><circle cx="100" cy="104" r="76.5" fill="none" stroke="var(--coral)" stroke-width="1.6"/><circle cx="100" cy="104" r="3.4" fill="var(--white)" stroke="var(--ink)" stroke-width="1.3"/><text x="106.0" y="119.0" fill="var(--ink)" font-size="12" stroke="var(--white)" stroke-width="3" paint-order="stroke">0</text><text x="142.0" y="99.0" fill="var(--gold)" font-size="12" stroke="var(--white)" stroke-width="3" paint-order="stroke">1</text><text x="100.0" y="14.0" fill="var(--ink)" font-size="13" text-anchor="middle">平面（e<tspan baseline-shift="super" font-size="8">x+iθ</tspan>）</text><text x="100.0" y="192.0" fill="var(--mid)" font-size="11" text-anchor="middle">横の線は円に</text><text x="100.0" y="207.0" fill="var(--mid)" font-size="11" text-anchor="middle">縦の線は 0 から ∞ への半直線に</text></g></svg></div><div style="font-size:0.8rem;line-height:1.7;text-align:left;max-width:26rem;margin:0.4rem auto 0"><span style="color:var(--gold)">●</span> x = 0 の横の線 ＝ 半径 1 の円（単位円）<br><span style="color:var(--coral)">●</span> x = 0.7 → 半径 e<sup>0.7</sup> ≈ 2.01 の円<br><span style="color:var(--navy)">●</span> x = −0.7 → 半径 e<sup>−0.7</sup> ≈ 0.50 の円</div><figcaption>e<sup>x+iθ</sup> は、まっすぐな座標を平面に巻きつける。角度 θ を動かす横の線は円に何周も巻きつき、大きさの x を動かす縦の線は 0 から ∞ への半直線になる。0 の点は白抜きで、どの x からも着かない</figcaption></figure>
 
@@ -295,60 +312,19 @@ console.log("s = −2 → w =", show(w([-2, 0])), "／ s = 3 → w =", show(w([3
 
 ここで、前の章までの絵がつながります。逆向きの log z = log r + iθ は、円の世界の点を、大きさの対数と回った角度という、二本のまっすぐな座標にほどきます。底が e のときだけ、ほどいた横の座標が、回った角度（円の上の道のり）とそのまま同じ数になります（底が c なら θ/ln c）。
 
-<span class="step-mark">見方</span>pjdhiro は、写す元の世界と写した先の数直線の混乱について、こう話しています。
-
-<strong>pjdhiro の見方：</strong>ステレオ投影元の世界と、投影先の数直線とが、分けられずに混乱してる。その翻訳がオイラーの等式のような接点で理解できるし、今回はネイピア数の本質に迫るものだと思うのです。
-
-このページは、ここまでを仮説として受け取ります。e・π・√ は、円の世界を数直線の側で扱うための記号で、0 と ∞ も、球の上の二つの極（南極と北極）を、大きさを測る半直線の両はしに置く記号ではないか、という仮説です。このページは、e を、円の世界とまっすぐな座標の世界のあいだの通訳と読みます。e が単位円で大活躍するのは、巻きつけるときもほどくときも、回った角度を、そのまま肩の数として受け持つ通訳だから、と見ることができそうです。どれも、意味の重い主役というより、√ の記号のような「働きの名前」に見えてきます。
-
-<span class="step-mark step-mark--math">数学では</span>まっすぐな座標を、地球儀の上の経度と緯度に当てると、航海の地図（メルカトル図法）になります。地球儀・平面・その地図の三つの世界を、写すことと巻きつけることの二つがつなぐ絵は、補足「[地球儀・平面・船の地図の、三つの世界](#eo-fold3)」にあります。
-
-## 回ることが先にあるのかもしれない
-
-<!--OPEN-->
-
-<a id="eo-turn"></a><span class="step-mark">見方</span>ここまでを並べると、一つの見方が浮かびます。円の上を回ることが先にあり、それを数直線の側で扱うために、0 と ∞、√・π・e のような記号が使われているのではないか、という見方です。pjdhiro は、回転について、こう話しています。
-
-<strong>pjdhiro の見方：</strong>世界には回転の性質を持つものが多いのか、世界を回転という性質で認知するからなのか、道具が回転を扱うからなのか、どれなんでしょうね。いずれにせよ、回転は溢れてそうですね。
-
-<span class="step-mark step-mark--math">数学では</span>対数の歴史は、この見方とは逆の順です。対数は、大きな数の掛け算を足し算に替えて楽に計算するための道具として作られました（ネイピア）。e は、利息を細かく分けて付けると元の何倍になるかを考えたときに出てきた数です（ヤコブ・ベルヌーイ）。底が e の自然対数の形は、そのあとに整いました。どちらも、円の話から始まったものではありません。
-
-<span class="step-mark">見方</span>pjdhiro は、ここから逆向きに考えています。
-
-<strong>pjdhiro の見方：</strong>e は単位円のためのツールではない、というのが一般的ですよね？そこが逆だと思うのです。我々が自然対数と呼ぶものが特別なのは、単位円が特別だからで、その上の次元にステレオ投影前のものがあって、それが大切だから、と逆算しています。
-
-<span class="step-mark step-mark--math">数学では</span>回ることを先に置いて、e を作り直してみます。円の上を、まっすぐな一歩で歩くことにします。半周（道のり π）を n 歩に分け、一歩ごとに 1 + iπ/n を掛けます。この一歩は、その点を通る、0 を中心とする円の接線の向きにまっすぐ進むので、そのたびに円の外へ少しはみ出します。n = 4 では、半周したつもりでも、−1 から大きく外れた所に着きます。刻みを細かくするほど、はみ出しは小さくなり、着く所は −1 に寄っていきます。
-
-<figure class="glow-card reader-figure"><div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0.5rem 1.5rem"><svg viewBox="0 0 260 212" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:17rem" aria-label="1 から出発して、まっすぐな線分をつないで左回りに半周する二本の折れ線。4 歩の赤い折れ線は外へ大きくふくらみ、−1 から遠い左上に着く。16 歩の紺の折れ線は半径 1 の金色の半円に近く、−1 の少し外に着く。"><g font-size="12"><line x1="12" y1="150" x2="250" y2="150" stroke="var(--mid)" stroke-width="1"/><line x1="170" y1="158" x2="170" y2="20" stroke="var(--mid)" stroke-width="1"/><path d="M216.0,150.0 L216.0,148.2 L215.9,146.4 L215.7,144.6 L215.4,142.8 L215.1,141.0 L214.7,139.3 L214.3,137.5 L213.7,135.8 L213.2,134.1 L212.5,132.4 L211.8,130.7 L211.0,129.1 L210.1,127.5 L209.2,126.0 L208.2,124.4 L207.2,123.0 L206.1,121.5 L205.0,120.1 L203.8,118.8 L202.5,117.5 L201.2,116.2 L199.9,115.0 L198.5,113.9 L197.0,112.8 L195.6,111.8 L194.0,110.8 L192.5,109.9 L190.9,109.0 L189.3,108.2 L187.6,107.5 L185.9,106.8 L184.2,106.3 L182.5,105.7 L180.7,105.3 L179.0,104.9 L177.2,104.6 L175.4,104.3 L173.6,104.1 L171.8,104.0 L170.0,104.0 L168.2,104.0 L166.4,104.1 L164.6,104.3 L162.8,104.6 L161.0,104.9 L159.3,105.3 L157.5,105.7 L155.8,106.3 L154.1,106.8 L152.4,107.5 L150.7,108.2 L149.1,109.0 L147.5,109.9 L146.0,110.8 L144.4,111.8 L143.0,112.8 L141.5,113.9 L140.1,115.0 L138.8,116.2 L137.5,117.5 L136.2,118.8 L135.0,120.1 L133.9,121.5 L132.8,123.0 L131.8,124.4 L130.8,126.0 L129.9,127.5 L129.0,129.1 L128.2,130.7 L127.5,132.4 L126.8,134.1 L126.3,135.8 L125.7,137.5 L125.3,139.3 L124.9,141.0 L124.6,142.8 L124.3,144.6 L124.1,146.4 L124.0,148.2 L124.0,150.0" fill="none" stroke="var(--gold)" stroke-width="2.6"/><path d="M216.0,150.0 L216.0,113.9 L187.6,77.7 L130.9,63.9 L63.3,94.6" fill="none" stroke="var(--coral)" stroke-width="1.5"/><circle cx="216.0" cy="113.9" r="2.6" fill="var(--coral)"/><circle cx="187.6" cy="77.7" r="2.6" fill="var(--coral)"/><circle cx="130.9" cy="63.9" r="2.6" fill="var(--coral)"/><circle cx="63.3" cy="94.6" r="2.6" fill="var(--coral)"/><path d="M216.0,150.0 L216.0,141.0 L214.2,131.9 L210.7,123.3 L205.4,115.3 L198.6,108.3 L190.4,102.7 L181.1,98.7 L171.1,96.5 L160.6,96.3 L150.0,98.1 L139.8,102.1 L130.4,108.0 L122.2,115.8 L115.4,125.2 L110.6,135.9 L107.8,147.5" fill="none" stroke="var(--navy)" stroke-width="1.5"/><circle cx="216.0" cy="141.0" r="2.6" fill="var(--navy)"/><circle cx="214.2" cy="131.9" r="2.6" fill="var(--navy)"/><circle cx="210.7" cy="123.3" r="2.6" fill="var(--navy)"/><circle cx="205.4" cy="115.3" r="2.6" fill="var(--navy)"/><circle cx="198.6" cy="108.3" r="2.6" fill="var(--navy)"/><circle cx="190.4" cy="102.7" r="2.6" fill="var(--navy)"/><circle cx="181.1" cy="98.7" r="2.6" fill="var(--navy)"/><circle cx="171.1" cy="96.5" r="2.6" fill="var(--navy)"/><circle cx="160.6" cy="96.3" r="2.6" fill="var(--navy)"/><circle cx="150.0" cy="98.1" r="2.6" fill="var(--navy)"/><circle cx="139.8" cy="102.1" r="2.6" fill="var(--navy)"/><circle cx="130.4" cy="108.0" r="2.6" fill="var(--navy)"/><circle cx="122.2" cy="115.8" r="2.6" fill="var(--navy)"/><circle cx="115.4" cy="125.2" r="2.6" fill="var(--navy)"/><circle cx="110.6" cy="135.9" r="2.6" fill="var(--navy)"/><circle cx="107.8" cy="147.5" r="2.6" fill="var(--navy)"/><circle cx="216.0" cy="150.0" r="3.4" fill="var(--ink)"/><text x="220.0" y="166.0" fill="var(--ink)" font-size="12" stroke="var(--white)" stroke-width="3" paint-order="stroke">1</text><circle cx="124.0" cy="150.0" r="3.4" fill="var(--ink)"/><text x="118.0" y="166.0" fill="var(--ink)" font-size="12" stroke="var(--white)" stroke-width="3" paint-order="stroke">−1</text><circle cx="170.0" cy="150.0" r="3.4" fill="var(--ink)"/><text x="175.0" y="165.0" fill="var(--ink)" font-size="12" stroke="var(--white)" stroke-width="3" paint-order="stroke">0</text><text x="59.3" y="84.6" fill="var(--coral)" font-size="11" stroke="var(--white)" stroke-width="3" paint-order="stroke">n = 4 の着く所</text><text x="12.0" y="186.0" fill="var(--ink)" font-size="11.5">半周（道のり π）を n 歩のまっすぐな一歩で歩く</text><text x="12.0" y="203.0" fill="var(--ink)" font-size="11.5">刻みを細かくするほど、着く所は −1 に寄る</text></g></svg></div><div style="font-size:0.8rem;line-height:1.7;text-align:left;max-width:26rem;margin:0.4rem auto 0"><span style="color:var(--coral)">●</span> n = 4：(1 + iπ/4)<sup>4</sup> ≈ −2.32 + 1.20i<br><span style="color:var(--navy)">●</span> n = 16：(1 + iπ/16)<sup>16</sup> ≈ −1.35 + 0.05i<br><span style="color:var(--gold)">●</span> 刻みを限りなく細かくした先：e<sup>iπ</sup> = −1（単位円の半周）</div><figcaption>まっすぐな一歩を n 回つないで半周する。一歩ごとに円の外へ少しはみ出すが、刻みを細かくするほどはみ出しは消え、着く所は −1 に寄っていく</figcaption></figure>
-
-刻みを限りなく細かくした先が、e<sup>iπ</sup> = −1 です。(1 + iπ/n)<sup>n</sup> は、n を大きくすると −1 に近づきます。利息の計算から出てきた e が、円をまっすぐな一歩で歩く刻み方からも、同じ形で出てきます。pjdhiro は、この刻み方を、こう見ています。
-
-<strong>pjdhiro の見方：</strong>e の無限の刻みは、一周とよく合う。
-
-この刻みの中には、0 と ∞ も入っています。それは、結びの章で、禅の円と並べて見ます。
-
-<span class="step-mark">見方</span>歴史の順番は、計算の道具と利息が先でした。pjdhiro は、それを逆にたどって、自然対数が「自然」と呼ばれることにも、円の側の理由があるのかもしれない、と見ています。この問いにも、結びの章で戻ります。
-
-<details><summary>詳しく — 数学の言葉で言うと</summary>
-
-- (1 + iπ/n)<sup>n</sup> は、n = 4 でおよそ −2.32 + 1.20i、n = 16 でおよそ −1.35 + 0.05i、n = 64 でおよそ −1.08、n = 1000 でおよそ −1.005 と、−1 に近づく。一歩で掛ける数の大きさは √(1 + π²/n²) で、1 より少し大きいので、一歩ごとに円の外へはみ出す。
-- 一般に、(1 + iθ/n)<sup>n</sup> は e<sup>iθ</sup> に近づく。e = lim (1 + 1/n)<sup>n</sup> と同じ形の極限。
-- 底を正の数 c にすると、c<sup>iθ</sup> = e<sup>iθ ln c</sup> で、単位円の上を速さ |ln c| で進む（c < 1 なら逆回り、c = 1 なら動かない）。
-- 複素数の対数 log z の虚の部分は、z が 0 のまわりで回った角度。その角度（単位円の上の道のり）がそのまま虚の部分になるのは、底が e のときだけ（底 c なら θ/ln c。独立ページ「[オイラーの式](euler-formula.html)」の畳み「e と、「1 + x/n を n 回掛ける」こと」）。
-
-</details>
+<span class="step-mark">見方</span>このページは、ここまでを仮説として受け取ります。e・π・√ は、円の世界を数直線の側で扱うための記号で、0 と ∞ も、球の南極と北極を、大きさの両はしとして数直線の側で呼ぶ名前ではないか、という仮説です。どれも、意味の重い主役というより、√ の記号のような「働きの名前」に見えてきます。その中で e が何を受け持っているかは、章「[e の正体に迫る：地球儀・平面・船の地図の、三つの世界](#eo-worlds)」で、もう一度確かめます。
 
 ## オイラーの等式を、二つの輪が重なる一点と見る
 
 <!--OPEN-->
 
-<a id="eo-point"></a><span class="step-mark">見方</span>最後に、等式そのものに戻ります。等式の登場人物を一つずつ眺めたあとで、pjdhiro はこう答えています。
+<a id="eo-point"></a><span class="step-mark">見方</span>ここで、等式そのものに戻ります。等式の登場人物を一つずつ眺めたあとで、pjdhiro はこう答えています。
 
 <strong>pjdhiro の見方：</strong>次元をたたむ接点にあるものだ、が一番かな。今のところ。
 
 カードの「次元をたたむ」は、このページの語では、円の世界と数直線の側のあいだを行き来すること（写す・巻きつける・ほどく）にあたります。その接点がどこにあるかを、球の上で見ます。
 
-<span class="step-mark step-mark--math">数学では</span>球の上には、二つの輪があります。一つは、回る世界の輪である赤道（単位円）です。もう一つは、北極から写すと数直線になる経線の円です。二つの輪は、1 と −1 の二点だけで交わります。
+<span class="step-mark step-mark--math">数学では</span>球の上には、回る世界の輪である赤道（単位円）と、北極から写すと数直線になる経線の円（章「[数直線を、北極から写した経線の円として見る](#eo-cut)」）の、二つの輪があります。二つの輪は、1 と −1 の二点だけで交わります。
 
 <figure class="glow-card reader-figure"><div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0.5rem 1.5rem"><svg viewBox="0 0 240 236" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:16rem" aria-label="少し上から見た球。横に寝た楕円の赤道は金色、縦の楕円の経線は紺。二つは左右の端、1 と −1 で交わる。上に ∞（北極）、下に 0（南極）。奥の赤道に沿って、1 から i を通って −1 へ、赤い矢印が半周している（上から見ると左回り）。"><g font-size="12"><circle cx="120" cy="112" r="80" fill="var(--white)" fill-opacity="0.5" stroke="var(--mute)" stroke-width="1"/><path d="M200.0,112.0 L200.0,110.1 L199.9,108.1 L199.8,106.2 L199.6,104.2 L199.3,102.3 L199.0,100.4 L198.7,98.5 L198.3,96.6 L197.8,94.7 L197.3,92.8 L196.7,90.9 L196.1,89.1 L195.4,87.2 L194.7,85.4 L193.9,83.6 L193.1,81.8 L192.2,80.1 L191.3,78.3 L190.3,76.6 L189.3,74.9 L188.2,73.2 L187.1,71.6 L185.9,70.0 L184.7,68.4 L183.5,66.8 L182.2,65.3 L180.8,63.8 L179.5,62.4 L178.0,60.9 L176.6,59.6 L175.1,58.2 L173.5,56.9 L172.0,55.6 L170.3,54.4 L168.7,53.2 L167.0,52.0 L165.3,50.9 L163.6,49.8 L161.8,48.8 L160.0,47.8 L158.2,46.8 L156.3,45.9 L154.4,45.1 L152.5,44.2 L150.6,43.5 L148.7,42.8 L146.7,42.1 L144.7,41.5 L142.7,40.9 L140.7,40.4 L138.7,39.9 L136.6,39.4 L134.6,39.1 L132.5,38.7 L130.4,38.5 L128.4,38.2 L126.3,38.1 L124.2,37.9 L122.1,37.9 L120.0,37.8 L117.9,37.9 L115.8,37.9 L113.7,38.1 L111.6,38.2 L109.6,38.5 L107.5,38.7 L105.4,39.1 L103.4,39.4 L101.3,39.9 L99.3,40.4 L97.3,40.9 L95.3,41.5 L93.3,42.1 L91.3,42.8 L89.4,43.5 L87.5,44.2 L85.6,45.1 L83.7,45.9 L81.8,46.8 L80.0,47.8 L78.2,48.8 L76.4,49.8 L74.7,50.9 L73.0,52.0 L71.3,53.2 L69.7,54.4 L68.0,55.6 L66.5,56.9 L64.9,58.2 L63.4,59.6 L62.0,60.9 L60.5,62.4 L59.2,63.8 L57.8,65.3 L56.5,66.8 L55.3,68.4 L54.1,70.0 L52.9,71.6 L51.8,73.2 L50.7,74.9 L49.7,76.6 L48.7,78.3 L47.8,80.1 L46.9,81.8 L46.1,83.6 L45.3,85.4 L44.6,87.2 L43.9,89.1 L43.3,90.9 L42.7,92.8 L42.2,94.7 L41.7,96.6 L41.3,98.5 L41.0,100.4 L40.7,102.3 L40.4,104.2 L40.2,106.2 L40.1,108.1 L40.0,110.1 L40.0,112.0" fill="none" stroke="var(--navy)" stroke-width="2"/><path d="M40.0,112.0 L40.0,113.9 L40.1,115.9 L40.2,117.8 L40.4,119.8 L40.7,121.7 L41.0,123.6 L41.3,125.5 L41.7,127.4 L42.2,129.3 L42.7,131.2 L43.3,133.1 L43.9,134.9 L44.6,136.8 L45.3,138.6 L46.1,140.4 L46.9,142.2 L47.8,143.9 L48.7,145.7 L49.7,147.4 L50.7,149.1 L51.8,150.8 L52.9,152.4 L54.1,154.0 L55.3,155.6 L56.5,157.2 L57.8,158.7 L59.2,160.2 L60.5,161.6 L62.0,163.1 L63.4,164.4 L64.9,165.8 L66.5,167.1 L68.0,168.4 L69.7,169.6 L71.3,170.8 L73.0,172.0 L74.7,173.1 L76.4,174.2 L78.2,175.2 L80.0,176.2 L81.8,177.2 L83.7,178.1 L85.6,178.9 L87.5,179.8 L89.4,180.5 L91.3,181.2 L93.3,181.9 L95.3,182.5 L97.3,183.1 L99.3,183.6 L101.3,184.1 L103.4,184.6 L105.4,184.9 L107.5,185.3 L109.6,185.5 L111.6,185.8 L113.7,185.9 L115.8,186.1 L117.9,186.1 L120.0,186.2 L122.1,186.1 L124.2,186.1 L126.3,185.9 L128.4,185.8 L130.4,185.5 L132.5,185.3 L134.6,184.9 L136.6,184.6 L138.7,184.1 L140.7,183.6 L142.7,183.1 L144.7,182.5 L146.7,181.9 L148.7,181.2 L150.6,180.5 L152.5,179.8 L154.4,178.9 L156.3,178.1 L158.2,177.2 L160.0,176.2 L161.8,175.2 L163.6,174.2 L165.3,173.1 L167.0,172.0 L168.7,170.8 L170.3,169.6 L172.0,168.4 L173.5,167.1 L175.1,165.8 L176.6,164.4 L178.0,163.1 L179.5,161.6 L180.8,160.2 L182.2,158.7 L183.5,157.2 L184.7,155.6 L185.9,154.0 L187.1,152.4 L188.2,150.8 L189.3,149.1 L190.3,147.4 L191.3,145.7 L192.2,143.9 L193.1,142.2 L193.9,140.4 L194.7,138.6 L195.4,136.8 L196.1,134.9 L196.7,133.1 L197.3,131.2 L197.8,129.3 L198.3,127.4 L198.7,125.5 L199.0,123.6 L199.3,121.7 L199.6,119.8 L199.8,117.8 L199.9,115.9 L200.0,113.9 L200.0,112.0" fill="none" stroke="var(--navy)" stroke-width="1.4" stroke-dasharray="3 4" stroke-opacity="0.6"/><path d="M200.0,112.0" fill="none" stroke="var(--gold)" stroke-width="2.6"/><path d="M200.0,112.0 L200.0,111.2 L199.9,110.4 L199.8,109.6 L199.6,108.9 L199.3,108.1 L199.0,107.3 L198.7,106.5 L198.3,105.8 L197.8,105.0 L197.3,104.2 L196.7,103.5 L196.1,102.7 L195.4,102.0 L194.7,101.3 L193.9,100.5 L193.1,99.8 L192.2,99.1 L191.3,98.4 L190.3,97.7 L189.3,97.0 L188.2,96.3 L187.1,95.7 L185.9,95.0 L184.7,94.4 L183.5,93.8 L182.2,93.1 L180.8,92.5 L179.5,91.9 L178.0,91.4 L176.6,90.8 L175.1,90.3 L173.5,89.7 L172.0,89.2 L170.3,88.7 L168.7,88.2 L167.0,87.8 L165.3,87.3 L163.6,86.9 L161.8,86.4 L160.0,86.0 L158.2,85.7 L156.3,85.3 L154.4,85.0 L152.5,84.6 L150.6,84.3 L148.7,84.0 L146.7,83.8 L144.7,83.5 L142.7,83.3 L140.7,83.1 L138.7,82.9 L136.6,82.7 L134.6,82.5 L132.5,82.4 L130.4,82.3 L128.4,82.2 L126.3,82.1 L124.2,82.1 L122.1,82.0 L120.0,82.0 L117.9,82.0 L115.8,82.1 L113.7,82.1 L111.6,82.2 L109.6,82.3 L107.5,82.4 L105.4,82.5 L103.4,82.7 L101.3,82.9 L99.3,83.1 L97.3,83.3 L95.3,83.5 L93.3,83.8 L91.3,84.0 L89.4,84.3 L87.5,84.6 L85.6,85.0 L83.7,85.3 L81.8,85.7 L80.0,86.0 L78.2,86.4 L76.4,86.9 L74.7,87.3 L73.0,87.8 L71.3,88.2 L69.7,88.7 L68.0,89.2 L66.5,89.7 L64.9,90.3 L63.4,90.8 L62.0,91.4 L60.5,91.9 L59.2,92.5 L57.8,93.1 L56.5,93.8 L55.3,94.4 L54.1,95.0 L52.9,95.7 L51.8,96.3 L50.7,97.0 L49.7,97.7 L48.7,98.4 L47.8,99.1 L46.9,99.8 L46.1,100.5 L45.3,101.3 L44.6,102.0 L43.9,102.7 L43.3,103.5 L42.7,104.2 L42.2,105.0 L41.7,105.8 L41.3,106.5 L41.0,107.3 L40.7,108.1 L40.4,108.9 L40.2,109.6 L40.1,110.4 L40.0,111.2 L40.0,112.0" fill="none" stroke="var(--gold)" stroke-width="1.8199999999999998" stroke-dasharray="3 4" stroke-opacity="0.6"/><path d="M40.0,112.0 L40.0,112.8 L40.1,113.6 L40.2,114.4 L40.4,115.1 L40.7,115.9 L41.0,116.7 L41.3,117.5 L41.7,118.2 L42.2,119.0 L42.7,119.8 L43.3,120.5 L43.9,121.3 L44.6,122.0 L45.3,122.7 L46.1,123.5 L46.9,124.2 L47.8,124.9 L48.7,125.6 L49.7,126.3 L50.7,127.0 L51.8,127.7 L52.9,128.3 L54.1,129.0 L55.3,129.6 L56.5,130.2 L57.8,130.9 L59.2,131.5 L60.5,132.1 L62.0,132.6 L63.4,133.2 L64.9,133.7 L66.5,134.3 L68.0,134.8 L69.7,135.3 L71.3,135.8 L73.0,136.2 L74.7,136.7 L76.4,137.1 L78.2,137.6 L80.0,138.0 L81.8,138.3 L83.7,138.7 L85.6,139.0 L87.5,139.4 L89.4,139.7 L91.3,140.0 L93.3,140.2 L95.3,140.5 L97.3,140.7 L99.3,140.9 L101.3,141.1 L103.4,141.3 L105.4,141.5 L107.5,141.6 L109.6,141.7 L111.6,141.8 L113.7,141.9 L115.8,141.9 L117.9,142.0 L120.0,142.0 L122.1,142.0 L124.2,141.9 L126.3,141.9 L128.4,141.8 L130.4,141.7 L132.5,141.6 L134.6,141.5 L136.6,141.3 L138.7,141.1 L140.7,140.9 L142.7,140.7 L144.7,140.5 L146.7,140.2 L148.7,140.0 L150.6,139.7 L152.5,139.4 L154.4,139.0 L156.3,138.7 L158.2,138.3 L160.0,138.0 L161.8,137.6 L163.6,137.1 L165.3,136.7 L167.0,136.2 L168.7,135.8 L170.3,135.3 L172.0,134.8 L173.5,134.3 L175.1,133.7 L176.6,133.2 L178.0,132.6 L179.5,132.1 L180.8,131.5 L182.2,130.9 L183.5,130.2 L184.7,129.6 L185.9,129.0 L187.1,128.3 L188.2,127.7 L189.3,127.0 L190.3,126.3 L191.3,125.6 L192.2,124.9 L193.1,124.2 L193.9,123.5 L194.7,122.7 L195.4,122.0 L196.1,121.3 L196.7,120.5 L197.3,119.8 L197.8,119.0 L198.3,118.2 L198.7,117.5 L199.0,116.7 L199.3,115.9 L199.6,115.1 L199.8,114.4 L199.9,113.6 L200.0,112.8 L200.0,112.0" fill="none" stroke="var(--gold)" stroke-width="2.6"/><path d="M212.3,108.4 L212.0,107.5 L211.7,106.6 L211.2,105.7 L210.8,104.8 L210.2,103.9 L209.6,103.0 L209.0,102.1 L208.3,101.3 L207.5,100.4 L206.6,99.5 L205.7,98.7 L204.8,97.9 L203.8,97.0 L202.7,96.2 L201.6,95.4 L200.4,94.6 L199.1,93.8 L197.8,93.1 L196.5,92.3 L195.1,91.6 L193.6,90.8 L192.1,90.1 L190.6,89.4 L189.0,88.7 L187.3,88.1 L185.6,87.4 L183.9,86.8 L182.1,86.2 L180.3,85.6 L178.4,85.0 L176.5,84.4 L174.5,83.9 L172.6,83.4 L170.5,82.8 L168.5,82.4 L166.4,81.9 L164.3,81.4 L162.1,81.0 L160.0,80.6 L157.7,80.2 L155.5,79.9 L153.3,79.5 L151.0,79.2 L148.7,78.9 L146.4,78.7 L144.0,78.4 L141.7,78.2 L139.3,78.0 L136.9,77.8 L134.5,77.7 L132.1,77.5 L129.7,77.4 L127.3,77.3 L124.9,77.3 L122.4,77.2 L120.0,77.2 L117.6,77.2 L115.1,77.3 L112.7,77.3 L110.3,77.4 L107.9,77.5 L105.5,77.7 L103.1,77.8 L100.7,78.0 L98.3,78.2 L96.0,78.4 L93.6,78.7 L91.3,78.9 L89.0,79.2 L86.7,79.5 L84.5,79.9 L82.3,80.2 L80.0,80.6 L77.9,81.0 L75.7,81.4 L73.6,81.9 L71.5,82.4 L69.5,82.8 L67.4,83.4 L65.5,83.9 L63.5,84.4 L61.6,85.0 L59.7,85.6 L57.9,86.2 L56.1,86.8 L54.4,87.4 L52.7,88.1 L51.0,88.7 L49.4,89.4 L47.9,90.1 L46.4,90.8 L44.9,91.6 L43.5,92.3 L42.2,93.1 L40.9,93.8 L39.6,94.6 L38.4,95.4 L37.3,96.2 L36.2,97.0 L35.2,97.9 L34.3,98.7 L33.4,99.5 L32.5,100.4 L31.7,101.3 L31.0,102.1 L30.4,103.0 L29.8,103.9 L29.2,104.8 L28.8,105.7 L28.3,106.6 L28.0,107.5 L27.7,108.4" fill="none" stroke="var(--coral)" stroke-width="1.8"/><path d="M26.7,101.4L27.7,108.4L32.5,103.3" fill="none" stroke="var(--coral)" stroke-width="1.8"/><circle cx="200.0" cy="112.0" r="4.3" fill="var(--ink)"/><text x="207.0" y="106.0" fill="var(--ink)" font-size="12" stroke="var(--white)" stroke-width="3" paint-order="stroke">1</text><circle cx="40.0" cy="112.0" r="4.3" fill="var(--ink)"/><text x="16.0" y="106.0" fill="var(--ink)" font-size="12" stroke="var(--white)" stroke-width="3" paint-order="stroke">−1</text><circle cx="120.0" cy="82.0" r="3.3" fill="var(--gold)"/><text x="124.0" y="75.0" fill="var(--gold)" font-size="12" stroke="var(--white)" stroke-width="3" paint-order="stroke">i</text><circle cx="120.0" cy="37.8" r="3.3" fill="var(--ink)"/><text x="128.0" y="35.8" fill="var(--ink)" font-size="12" stroke="var(--white)" stroke-width="3" paint-order="stroke">∞（北極）</text><circle cx="120.0" cy="186.2" r="3.3" fill="var(--mid)"/><text x="128.0" y="190.2" fill="var(--mid)" font-size="12" stroke="var(--white)" stroke-width="3" paint-order="stroke">0（南極）</text><text x="120.0" y="226.0" fill="var(--coral)" font-size="11.5" text-anchor="middle">e<tspan baseline-shift="super" font-size="8">iπ</tspan>：赤道の上を、1 から半周して −1 へ</text></g></svg></div><div style="font-size:0.8rem;line-height:1.7;text-align:left;max-width:26rem;margin:0.4rem auto 0"><span style="color:var(--gold)">●</span> 赤道 ＝ 単位円（回る世界の輪）<br><span style="color:var(--navy)">●</span> 経線 ＝ 北極から写すと数直線になる円（0・1・∞・−1 を通る）<br>二つの輪は、1 と −1 の二点だけで交わる</div><figcaption>回る輪（赤道）と、数直線の輪（経線）は、1 と −1 で交わる。e<sup>iπ</sup> = −1 は、回る輪の上を半周して、数直線の輪にふたたび重なる所</figcaption></figure>
 
@@ -358,7 +334,7 @@ e<sup>iπ</sup> = −1 は、赤道の上を 1 から半周回った所です。
 
 題の「たたんだもの」、つまり等式の一行で省かれているものは、ここまでで二つ見えてきました。一つは、この一点の後ろにある球と、写す・巻きつけるというつながりです。
 
-もう一つは、章「[四元数から平面へ：二つの向きを 0 に置くと、複素数を掛ける回転と同じ回転が出てくる](#eo-fold4)」で見た四つの部品です。同じ半周を一つ上の段で書くと別々に見える部品が、平面の段の等式の一行では省かれています。
+もう一つは、章「[四元数から平面へ：二つの向きを使わないと、複素数を掛ける回転と同じ回転が出てくる](#eo-fold4)」で見た四つの部品です。同じ半周を一つ上の段で書くと別々に見える部品が、平面の段の等式の一行では省かれています。
 
 <details><summary>寄り道 — 美しいと感じる所は、赤道なのか</summary>
 
@@ -374,9 +350,107 @@ e<sup>iπ</sup> = −1 は、赤道の上を 1 から半周回った所です。
 
 - ステレオ投影は、球の上の二本の曲線が交わる角度を、平面の上でも同じ角度に写す（等角写像）。円は円か直線に写る。
 - e<sup>z</sup> は、どの点でも微分が 0 にならない複素関数なので、交わる角度を保つ。
-- だから、まっすぐな座標 → 平面 → 球のつながりも、角度を保つ。航海の地図（メルカトル図法）が等角なのは、このつながりの逆向きにあたる。
+- だから、まっすぐな座標 → 平面 → 球のつながりも、角度を保つ。船の地図（メルカトル図法。章「[e の正体に迫る：地球儀・平面・船の地図の、三つの世界](#eo-worlds)」）が等角なのは、このつながりの逆向きにあたる。
 
 </details>
+
+## 回ることが先にあるのかもしれない
+
+<!--OPEN-->
+
+<a id="eo-turn"></a><span class="step-mark">見方</span>ここまでを並べると、一つの見方が浮かびます。円の上を回ることが先にあり、それを数直線の側で扱うために、0 と ∞、√・π・e のような記号が使われているのではないか、という見方です。pjdhiro は、回転について、こう話しています。
+
+<strong>pjdhiro の見方：</strong>世界には回転の性質を持つものが多いのか、世界を回転という性質で認知するからなのか、道具が回転を扱うからなのか、どれなんでしょうね。いずれにせよ、回転は溢れてそうですね。
+
+<span class="step-mark step-mark--math">数学では</span>対数の歴史は、この見方とは逆の順です。対数は、大きな数の掛け算を足し算に替えて楽に計算するための道具として作られました（ネイピア 1614。はじめの表は、円の正弦に付けた数でした）。e は、利息を細かく分けて付けると元の何倍になるかを考えたときに出てきた数です（ヤコブ・ベルヌーイ）。底が e の自然対数の形は、そのあとに整いました。どちらも、円の上を回る話として始まったものではありません。
+
+<span class="step-mark">見方</span>pjdhiro は、ここから逆向きに考えています。
+
+<strong>pjdhiro の見方：</strong>e は単位円のためのツールではない、というのが一般的ですよね？そこが逆だと思うのです。我々が自然対数と呼ぶものが特別なのは、単位円が特別だからで、その上の次元にステレオ投影前のものがあって、それが大切だから、と逆算しています。
+
+<span class="step-mark step-mark--math">数学では</span>回ることを先に置いて、e を作り直してみます。円の上を、まっすぐな一歩で歩くことにします。半周（道のり π）を n 歩に分け、一歩ごとに 1 + iπ/n を掛けます。この一歩は、その点を通る、0 を中心とする円の接線の向きにまっすぐ進むので、そのたびに円の外へ少しはみ出します。n = 4 では、半周したつもりでも、−1 から大きく外れた所に着きます。刻みを細かくするほど、はみ出しは小さくなり、着く所は −1 に寄っていきます。
+
+<figure class="glow-card reader-figure"><div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0.5rem 1.5rem"><svg viewBox="0 0 260 212" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:17rem" aria-label="1 から出発して、まっすぐな線分をつないで左回りに半周する二本の折れ線。4 歩の赤い折れ線は外へ大きくふくらみ、−1 から遠い左上に着く。16 歩の紺の折れ線は半径 1 の金色の半円に近く、−1 の少し外に着く。"><g font-size="12"><line x1="12" y1="150" x2="250" y2="150" stroke="var(--mid)" stroke-width="1"/><line x1="170" y1="158" x2="170" y2="20" stroke="var(--mid)" stroke-width="1"/><path d="M216.0,150.0 L216.0,148.2 L215.9,146.4 L215.7,144.6 L215.4,142.8 L215.1,141.0 L214.7,139.3 L214.3,137.5 L213.7,135.8 L213.2,134.1 L212.5,132.4 L211.8,130.7 L211.0,129.1 L210.1,127.5 L209.2,126.0 L208.2,124.4 L207.2,123.0 L206.1,121.5 L205.0,120.1 L203.8,118.8 L202.5,117.5 L201.2,116.2 L199.9,115.0 L198.5,113.9 L197.0,112.8 L195.6,111.8 L194.0,110.8 L192.5,109.9 L190.9,109.0 L189.3,108.2 L187.6,107.5 L185.9,106.8 L184.2,106.3 L182.5,105.7 L180.7,105.3 L179.0,104.9 L177.2,104.6 L175.4,104.3 L173.6,104.1 L171.8,104.0 L170.0,104.0 L168.2,104.0 L166.4,104.1 L164.6,104.3 L162.8,104.6 L161.0,104.9 L159.3,105.3 L157.5,105.7 L155.8,106.3 L154.1,106.8 L152.4,107.5 L150.7,108.2 L149.1,109.0 L147.5,109.9 L146.0,110.8 L144.4,111.8 L143.0,112.8 L141.5,113.9 L140.1,115.0 L138.8,116.2 L137.5,117.5 L136.2,118.8 L135.0,120.1 L133.9,121.5 L132.8,123.0 L131.8,124.4 L130.8,126.0 L129.9,127.5 L129.0,129.1 L128.2,130.7 L127.5,132.4 L126.8,134.1 L126.3,135.8 L125.7,137.5 L125.3,139.3 L124.9,141.0 L124.6,142.8 L124.3,144.6 L124.1,146.4 L124.0,148.2 L124.0,150.0" fill="none" stroke="var(--gold)" stroke-width="2.6"/><path d="M216.0,150.0 L216.0,113.9 L187.6,77.7 L130.9,63.9 L63.3,94.6" fill="none" stroke="var(--coral)" stroke-width="1.5"/><circle cx="216.0" cy="113.9" r="2.6" fill="var(--coral)"/><circle cx="187.6" cy="77.7" r="2.6" fill="var(--coral)"/><circle cx="130.9" cy="63.9" r="2.6" fill="var(--coral)"/><circle cx="63.3" cy="94.6" r="2.6" fill="var(--coral)"/><path d="M216.0,150.0 L216.0,141.0 L214.2,131.9 L210.7,123.3 L205.4,115.3 L198.6,108.3 L190.4,102.7 L181.1,98.7 L171.1,96.5 L160.6,96.3 L150.0,98.1 L139.8,102.1 L130.4,108.0 L122.2,115.8 L115.4,125.2 L110.6,135.9 L107.8,147.5" fill="none" stroke="var(--navy)" stroke-width="1.5"/><circle cx="216.0" cy="141.0" r="2.6" fill="var(--navy)"/><circle cx="214.2" cy="131.9" r="2.6" fill="var(--navy)"/><circle cx="210.7" cy="123.3" r="2.6" fill="var(--navy)"/><circle cx="205.4" cy="115.3" r="2.6" fill="var(--navy)"/><circle cx="198.6" cy="108.3" r="2.6" fill="var(--navy)"/><circle cx="190.4" cy="102.7" r="2.6" fill="var(--navy)"/><circle cx="181.1" cy="98.7" r="2.6" fill="var(--navy)"/><circle cx="171.1" cy="96.5" r="2.6" fill="var(--navy)"/><circle cx="160.6" cy="96.3" r="2.6" fill="var(--navy)"/><circle cx="150.0" cy="98.1" r="2.6" fill="var(--navy)"/><circle cx="139.8" cy="102.1" r="2.6" fill="var(--navy)"/><circle cx="130.4" cy="108.0" r="2.6" fill="var(--navy)"/><circle cx="122.2" cy="115.8" r="2.6" fill="var(--navy)"/><circle cx="115.4" cy="125.2" r="2.6" fill="var(--navy)"/><circle cx="110.6" cy="135.9" r="2.6" fill="var(--navy)"/><circle cx="107.8" cy="147.5" r="2.6" fill="var(--navy)"/><circle cx="216.0" cy="150.0" r="3.4" fill="var(--ink)"/><text x="220.0" y="166.0" fill="var(--ink)" font-size="12" stroke="var(--white)" stroke-width="3" paint-order="stroke">1</text><circle cx="124.0" cy="150.0" r="3.4" fill="var(--ink)"/><text x="118.0" y="166.0" fill="var(--ink)" font-size="12" stroke="var(--white)" stroke-width="3" paint-order="stroke">−1</text><circle cx="170.0" cy="150.0" r="3.4" fill="var(--ink)"/><text x="175.0" y="165.0" fill="var(--ink)" font-size="12" stroke="var(--white)" stroke-width="3" paint-order="stroke">0</text><text x="59.3" y="84.6" fill="var(--coral)" font-size="11" stroke="var(--white)" stroke-width="3" paint-order="stroke">n = 4 の着く所</text><text x="12.0" y="186.0" fill="var(--ink)" font-size="11.5">半周（道のり π）を n 歩のまっすぐな一歩で歩く</text><text x="12.0" y="203.0" fill="var(--ink)" font-size="11.5">刻みを細かくするほど、着く所は −1 に寄る</text></g></svg></div><div style="font-size:0.8rem;line-height:1.7;text-align:left;max-width:26rem;margin:0.4rem auto 0"><span style="color:var(--coral)">●</span> n = 4：(1 + iπ/4)<sup>4</sup> ≈ −2.32 + 1.20i<br><span style="color:var(--navy)">●</span> n = 16：(1 + iπ/16)<sup>16</sup> ≈ −1.35 + 0.05i<br><span style="color:var(--gold)">●</span> 刻みを限りなく細かくした先：e<sup>iπ</sup> = −1（単位円の半周）</div><figcaption>まっすぐな一歩を n 回つないで半周する。一歩ごとに円の外へ少しはみ出すが、刻みを細かくするほどはみ出しは消え、着く所は −1 に寄っていく</figcaption></figure>
+
+刻みを限りなく細かくした先が、e<sup>iπ</sup> = −1 です。(1 + iπ/n)<sup>n</sup> は、n を大きくすると −1 に近づきます。利息の計算から出てきた e が、円をまっすぐな一歩で歩く刻み方からも、同じ形で出てきます。pjdhiro は、この刻み方を、こう見ています。
+
+<strong>pjdhiro の見方：</strong>e の無限の刻みは、一周とよく合う。
+
+この刻みの中には、0 と ∞ も入っています。結びでそれを見る前に、次の章で、e がどこで働き、どこでは働かないのかを確かめます。
+
+<span class="step-mark">見方</span>歴史の順番は、計算の道具と利息が先でした。pjdhiro は、それを逆にたどって、自然対数が「自然」と呼ばれることにも、円の側の理由があるのかもしれない、と見ています。この問いにも、結びの章で戻ります。
+
+<details><summary>詳しく — 数学の言葉で言うと</summary>
+
+- (1 + iπ/n)<sup>n</sup> は、n = 4 でおよそ −2.32 + 1.20i、n = 16 でおよそ −1.35 + 0.05i、n = 64 でおよそ −1.08、n = 1000 でおよそ −1.005 と、−1 に近づく。一歩で掛ける数の大きさは √(1 + π²/n²) で、1 より少し大きいので、一歩ごとに円の外へはみ出す。
+- 一般に、(1 + iθ/n)<sup>n</sup> は e<sup>iθ</sup> に近づく。e = lim (1 + 1/n)<sup>n</sup> と同じ形の極限。
+- 底を正の数 c にすると、c<sup>iθ</sup> = e<sup>iθ ln c</sup> で、単位円の上を速さ |ln c| で進む（c < 1 なら逆回り、c = 1 なら動かない）。
+- 複素数の対数 log z の虚の部分は、z が 0 のまわりで回った角度。その角度（単位円の上の道のり）がそのまま虚の部分になるのは、底が e のときだけ（底 c なら θ/ln c。独立ページ「[オイラーの式](euler-formula.html)」の畳み「e と、「1 + x/n を n 回掛ける」こと」）。
+
+</details>
+
+## e の正体に迫る：地球儀・平面・船の地図の、三つの世界
+
+<!--OPEN-->
+
+<a id="eo-worlds"></a><a id="eo-fold3"></a><span class="step-mark">見方</span>ここまでで、e は二つの姿で出てきました。まっすぐな座標を円の世界に巻きつける数と、円をまっすぐな一歩で歩く刻みの先に出てくる数です。結びの禅の円に戻る前に、e がどこで働き、どこでは働かないのかを、三つの世界に並べて確かめます。ここまでの章でばらばらに見てきた、赤道と経線、0 と ∞ の入れ替えも、この章で一つにまとめます。
+
+<span class="step-mark step-mark--math">数学では</span>同じ点を、三つの世界に置きます。
+
+- **地球儀**：平面に ∞ を一点足して閉じた球です。三段の真ん中の段の球で、四元数の球の切り口でもあります。0 は南極、∞ は北極、単位円は赤道に来ます。数直線は、南極と北極を通る経線の円に来ます。
+- **平面**：複素数の平面です。地球儀に北極から光を当てて写した先です。
+- **船の地図**：縦に大きさの対数 x、横に回った角度 θ を取った、まっすぐな二本の座標です。地球儀の上の経度と緯度で言えば、経度がそのまま横の座標 θ に、緯度が縦の座標 log tan(π/4 + 緯度/2) になります。これは、航海の地図で使われてきたメルカトル図法の縦の座標と同じ式なので、このページでは、この地図を船の地図と呼びます。ふつうの複素平面の描き方（実の部分が横、虚の部分が縦）とは、縦と横が入れ替わっています。
+
+<div class="tablefit">
+
+| 世界 | 回る向き | 0 と ∞ | 単位円 |
+|---|---|---|---|
+| 地球儀（写す元） | 軸のまわりに、一定の速さで回る | 南極と北極。向かい合う二点 | 赤道 |
+| 平面（写した先） | 単位円の上では、e<sup>iθ</sup> を掛ける掛け算 | 真ん中の点と、どこまでも遠い所 | 単位円 |
+| 船の地図（メルカトル図法） | 横にまっすぐずれるだけ。横は 2π ごとに同じ所（左右のはしがつながる） | 縦の線の両はし（−∞ と +∞）。どこまで行っても届かない | 縦の座標が 0 の横の線 |
+
+</div>
+
+<figure class="glow-card reader-figure"><div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0.4rem 0.8rem"><svg viewBox="0 0 200 215" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:12.5rem" aria-label="地球儀。てっぺんの北極が ∞ で明かり、底の南極が 0、真ん中の太い楕円が赤道。"><g font-size="12"><text x="100" y="18" font-size="14" text-anchor="middle" fill="var(--ink)">地球儀</text><circle cx="100" cy="112" r="62" fill="var(--white)" fill-opacity="0.6" stroke="var(--ink)" stroke-width="1.4"/><ellipse cx="100" cy="112" rx="62" ry="16" fill="none" stroke="var(--gold)" stroke-width="2.2"/><circle cx="100" cy="50" r="5" fill="var(--coral)"/><circle cx="100" cy="174" r="4.5" fill="var(--navy)"/><text x="100" y="40" text-anchor="middle" fill="var(--coral)">北極 ∞（明かり）</text><text x="100" y="196" text-anchor="middle" fill="var(--navy)">南極 0</text></g></svg><div style="align-self:center;text-align:center;font-size:0.8rem;color:var(--mid);line-height:1.5">⇄<br>ステレオ投影</div><svg viewBox="0 0 200 215" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:12.5rem" aria-label="平面。真ん中の点が 0、太い円が半径 1 の円。∞ は描かれない。"><g font-size="12"><text x="100" y="18" font-size="14" text-anchor="middle" fill="var(--ink)">平面</text><rect x="28" y="40" width="144" height="144" rx="4" fill="var(--white)" fill-opacity="0.6" stroke="var(--ink)" stroke-width="1.4"/><circle cx="100" cy="112" r="32" fill="none" stroke="var(--gold)" stroke-width="2.2"/><circle cx="100" cy="112" r="4" fill="var(--navy)"/><text x="107" y="108" fill="var(--navy)">0</text><text x="100" y="204" text-anchor="middle" fill="var(--mute)">∞ は描かれない</text></g></svg><div style="align-self:center;text-align:center;font-size:0.8rem;color:var(--mid);line-height:1.5">⇄<br>e ／ log</div><svg viewBox="0 0 200 215" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:12.5rem" aria-label="船の地図。真ん中の横の太い線が赤道にあたり、上のはし（北極）と下のはし（南極）には届かない。"><g font-size="12"><text x="100" y="18" font-size="14" text-anchor="middle" fill="var(--ink)">船の地図</text><text x="100" y="38" text-anchor="middle" fill="var(--coral)">上のはし（北極）に届かない</text><rect x="30" y="46" width="140" height="132" fill="var(--white)" fill-opacity="0.6" stroke="var(--ink)" stroke-width="1.4" stroke-dasharray="4 3"/><line x1="65" y1="46" x2="65" y2="178" stroke="var(--mute)" stroke-width="0.8"/><line x1="100" y1="46" x2="100" y2="178" stroke="var(--mute)" stroke-width="0.8"/><line x1="135" y1="46" x2="135" y2="178" stroke="var(--mute)" stroke-width="0.8"/><line x1="30" y1="112" x2="170" y2="112" stroke="var(--gold)" stroke-width="2.2"/><text x="100" y="196" text-anchor="middle" fill="var(--navy)">下のはし（南極）に届かない</text></g></svg></div><div style="font-size:0.8rem;line-height:1.7;text-align:left;max-width:26rem;margin:0.4rem auto 0"><span style="color:var(--gold)">●</span> 太い線（赤道・半径 1 の円・船の地図の横の線 x = 0）は、三つの世界で同じ所</div><figcaption>三つの世界と、二つのつなぎ方。船の地図と平面のあいだは、e が巻きつけ、log がほどく。地球儀と平面のあいだは、ステレオ投影で写す（平面に ∞ を足すと地球儀に閉じる）。北極（∞）は平面にも船の地図にも描かれない。南極（0）は平面には描かれるが、船の地図には描かれず、下へどこまで行っても届かない</figcaption></figure>
+
+三つの世界のつなぎ方は、二つあります。地球儀と平面のあいだは、北極から光を当てて写すつなぎ方（ステレオ投影）で、そこに e は出てきません。船の地図と平面のあいだは、e<sup>x + iθ</sup> で巻きつけ、log でほどくつなぎ方です。巻きつけると、横の座標 θ は回った角度に、縦の座標 x は大きさ e<sup>x</sup> になります。横は 2π ごとに同じ点を指すので、地図の横の線は、円に何周も巻きつきます。二つは、向きも逆です。写すのは、丸い形から平らな所へ。巻きつけるのは、まっすぐな座標から円の世界へです。
+
+底が e のときだけ、船の地図の横の目盛が、単位円の上を左回りに歩いた道のりと、そのまま同じ数になります（底が c なら θ/ln c）。章「[e・π・√ も、0 と ∞ も、円の世界を数直線の側で扱うための記号かもしれない](#eo-axes)」で見たとおり、e で巻きつけて届くのは、地球儀から南極と北極を除いた所の全部です。0 と ∞ が地球儀の両極として並ぶのは、平面に ∞ を一点足して閉じたからです。
+
+<span class="step-mark step-mark--math">数学では</span>0 と ∞ を入れ替える変換は、三つの世界で、それぞれ次の形になります。z → 1/z（メビウス変換の一つ）は、地球儀では 1 と −1 を通る軸のまわりの半回転、船の地図では真ん中の点のまわりの半回転（x を −x に、θ を −θ に）です。向きはそのままで大きさを「1 ÷ その大きさ」にする鏡 z → 1/z̄（単位円に関する反転）は、地球儀では赤道を鏡にした折り返し、船の地図では縦の座標が 0 の横の線を鏡にした、上下の折り返しです。どれも、地球儀と船の地図の上では形を変えずに（1/z̄ は鏡なので、左右は裏返ります）0 と ∞ を入れ替え、単位円を単位円に移します。だから 0 と ∞ は、入れ替えても形の変わらない（数学の正式な語では対称な）、対等な二つの極です。たとえば n と 1/n は、地球儀では赤道をはさんで同じだけ北と南に離れ、船の地図では横の線 x = 0 をはさんで同じだけ上と下に離れて、向かい合います。
+
+**経線の一周と、赤道の一周を移し合う**
+
+<span class="step-mark">見方</span>この章の絵を見直していたとき、pjdhiro は、このページの中心をこう言い当てています。
+
+<strong>pjdhiro の見方：</strong>このページで大事なのは、北極と南極を結ぶ一周と、赤道の一周を変換することだと思う。それに正式な名前があるならそれを使うべき。かなり重要だと思う。無限大とは何かを定義する上で。
+
+<span class="step-mark step-mark--math">数学では</span>北極と南極を結ぶ一周（経線）は、平面では、実数の直線に ∞ を一点足したものです。赤道の一周は、単位円 |z| = 1 です。地球儀の上では、直線は「∞ を通る円」になります。円と直線をまとめて一般化された円と呼び、メビウス変換は、一般化された円を一般化された円へ移します（円円対応）。
+
+経線を赤道へ移すのは、1 と −1 を通る軸のまわりに、地球儀を 90 度回すことです。平面の式では w = (z − i)/(1 − iz) で、ケーリー変換 (z − i)/(z + i) に i を掛けて向きをそろえた形です。0 は −i へ、∞ は i へ移り、1 と −1 は動きません。実数 z では |z − i| = |1 − iz| なので、実数の直線は、ちょうど単位円に移ります。同じ軸のまわりに 180 度回すのが、0 と ∞ を入れ替える 1/z です。
+
+この回し方で、北極の ∞ は、赤道の上の i に来ます。地球儀の上では、∞ もほかの点と同じ一点です。特別に見えるのは、点のほうではなく、北極から写す、という見る位置のほうです。
+
+<span class="step-mark">見方</span>pjdhiro の読みでは、北極は「私の位置。私からは見えない」所でした。∞ が特別に見えるのは、そこから写して見ているから、と読むことができそうです。無限大とは何かを、点の側ではなく、見る位置の側から定める見方です。
+
+<span class="step-mark step-mark--math">数学では</span>e も、この二つの一周のあいだで働きます。e<sup>x</sup>（x は実数）は、実数の直線を、経線の半分（0 から ∞ へ、南極から北極へ）に移します。e<sup>iθ</sup> は、同じ直線を赤道に巻きつけます。入力の直線に i を掛けて 90 度回すと、出力は経線から赤道へ移ります。
+
+<details><summary>詳しく — 数学の言葉で言うと</summary>
+
+- 平面の正の数 r を地球儀の上に戻すと（写すの逆）、高さ（赤道が 0、北極が 1、南極が −1）は (r² − 1)/(r² + 1) になる。r を 1/r に替えると、高さの符号だけが変わる。n = 2 なら高さ ±0.6、n = 10 なら ±0.98。r = 1 は高さ 0（赤道）。
+- 南極から経線に沿って測った角度を φ とすると、写した先の大きさは r = tan(φ/2)。緯度で書けば r = tan(π/4 + 緯度/2) で、その log が船の地図の縦の座標になる。
+- 1/z は 1 と −1 を動かさず、i と −i を入れ替える。1/z̄ は単位円の上の点を一つも動かさない。
+- w = (z − i)/(1 − iz) は、1 と −1 を通る軸のまわりの 90 度の回転にあたる。2 回続けると 1/z になる。1/z は、同じ軸のまわりの 180 度の回転で、0 と ∞ を入れ替える。
+
+</details>
+
+<span class="step-mark">見方</span>こう並べると、e の居場所が見えてきます。e は、地球儀の両極そのものでも、地球儀から平面へ写すつなぎ方でもなく、船の地図と平面のあいだを訳す数です。pjdhiro は、写す元の世界と写した先の数直線の混乱について、こう話しています。
+
+<strong>pjdhiro の見方：</strong>ステレオ投影元の世界と、投影先の数直線とが、分けられずに混乱してる。その翻訳がオイラーの等式のような接点で理解できるし、今回はネイピア数の本質に迫るものだと思うのです。
+
+<span class="step-mark">見方</span>このページは、カードの「翻訳」を、写すことそのものではなく、e の働きに当てて読みます。e は、回る向きを持つ円の世界と、まっすぐな座標（大きさの対数と回った角度）で数える私たちとのあいだの通訳です。e が単位円で大活躍するのは、巻きつけるときもほどくときも、回った角度を、そのまま肩の数として受け持つ通訳だから、と見ることができそうです。北極から写して見ている私は、その座標の中には現れません（章「[数直線を、北極から写した経線の円として見る](#eo-pole)」）。
+
+そして e は、刻みを限りなく細かくした先に出てくる数でもありました。その刻みの中には、0 と ∞ が入っています。結びでは、禅の円に戻って、この二つの極と e を並べます。
 
 <!--PART:結び|禅の円-->
 
@@ -388,13 +462,13 @@ e<sup>iπ</sup> = −1 は、赤道の上を 1 から半周回った所です。
 
 **0 と ∞ は、対等な二つの極**
 
-<span class="step-mark">見方</span>『信心銘』は、「圓同太虛」の句のあとで、極めて小さいものは大きいものと同じで、極めて大きいものは小さいものと同じだ、とも言います（「極小同大」「極大同小」）。そのあとに「不見邊表」（果てが見えない）と続きます。このページは、この句を、ここまでの球の絵で読みます。
+<span class="step-mark">見方</span>『信心銘』は、「圓同太虛」の句のあとで、極めて小さいものは大きいものと同じで、極めて大きいものは小さいものと同じだ、とも言います（「極小同大　妄絕境界　極大同小　不見邊表」）。小さいほうの句には「境界を絶つ」が、大きいほうの句には「果てが見えない」が続きます。このページは、この句を、ここまでの球の絵で読みます。
 
-<span class="step-mark step-mark--math">数学では</span>数直線の両はしは、北極の一点で結ばれて閉じ、0 と ∞ は、球の南極と北極に来ます。0 と ∞ を入れ替える変換 z → 1/z は、球を 1 と −1 を通る軸のまわりに半回転させるだけで、球の形を変えません。0 と ∞ は、入れ替えても形の変わらない、対等な二つの極です。二つは向かい合う別の点で、同じ場所ではありません。
+<span class="step-mark step-mark--math">数学では</span>章「[e の正体に迫る：地球儀・平面・船の地図の、三つの世界](#eo-worlds)」で見たとおり、数直線に ∞ を一点足すと、両はしは北極の一点で結ばれて閉じ、0 と ∞ は、球の南極と北極に来ます。二つは、入れ替えても形の変わらない、対等な二つの極です。向かい合う別の点で、同じ場所ではありません。
 
-<span class="step-mark">見方</span>極めて小さいものと極めて大きいものが同じだ、という句は、この、入れ替えても形の変わらない二つの極と、形が似ています。句の「果てが見えない」を、両はしを北極で結んで閉じた、はしの無い輪に重ねて読むこともできそうです。句そのものは、前の句が時の長短と十方の広さを打ち消すのを受けて、広がりの果てについて言っています。
+<span class="step-mark">見方</span>極めて小さいものと極めて大きいものが同じだ、という句は、この、入れ替えても形の変わらない二つの極と、形が似ています。句の「果てが見えない」を、両はしを北極で結んで閉じた、はしの無い輪に重ねて読むこともできそうです。句の並びから読めば、句そのものは、前の句が時の長短と十方の広さを打ち消すのを受けて、広がりの果てについて言っています。
 
-∞ の極は、ただの遠い所でもありません。章「[数直線を、北極から写した経線の円として見る](#eo-pole)」で見たとおり、北極は光を当てて写している所で、pjdhiro はそこを「私の位置。私からは見えない」と読みました。いちばん大きい極には写している私が、いちばん小さい極には、写した地図の真ん中の 0 があります。
+<span class="step-mark">見方</span>pjdhiro の読みでは、∞ の極は、ただの遠い所ではありません。章「[数直線を、北極から写した経線の円として見る](#eo-pole)」で見たとおり、北極は光を当てて写している所で、pjdhiro はそこを「私の位置。私からは見えない」と読みました。この読みでは、いちばん大きい極には写している私が、いちばん小さい極には、写した地図の真ん中の 0 があります。
 
 **二つの極のあいだに立つ e**
 
@@ -402,17 +476,15 @@ e<sup>iπ</sup> = −1 は、赤道の上を 1 から半周回った所です。
 
 <strong>pjdhiro の見方：</strong>素朴な言い方では、無限の逆数のようなものをやってるんだよね。もちろん逆数ではないんだけど、逆数っぽいものを使いたい時のやつ。それが無限大とリンクしてる直感なんだと思う。
 
-<span class="step-mark step-mark--math">数学では</span>一歩を小さくするほど、歩数は増えます。歩数が北極（∞）へ向かうとき、一歩は南極（0）へ向かいます。二つを球に置くと、いつも赤道をはさんで、同じだけ北と南に離れて向かい合います。一歩は歩数の逆数なので、北と南を入れ替えた所に来るのです。それでも、一歩と歩数を掛けると、いつも 1（100%）で、1 は赤道の上にあります。その 100% を、育ちながら限りなく細かく重ねた先に出てくるのが e です。e は 2.718… という、限りのある一つの数で、北極にも南極にもいません。
+<span class="step-mark">見方</span>数を限りなく多く刻むほど、一つずつは限りなく小さくなります。それでも、二つを掛け合わせると、いつもちょうど一回分（100%）のままです。e は、その一回分を、限りなく細かく育てた先の数です。だから e は、無限大と、その裏返しの小ささを、いつも一組で使う数に見えます。一見すると、無限大の逆数のように。
 
-<span class="step-mark">見方</span>だから、e と無限大は、一見すると、逆数どうしのような関係に見えてきます。e は、無限大の逆数のようなもの（限りなく小さい一歩）を、無限大の回数だけ、向かい合わせたまま重ねて作る数だからです。逆数になっているのは歩数と一歩で、e そのものは ∞ の逆数ではありません。
+<span class="step-mark step-mark--math">数学では</span>歩数を n、一歩を 1/n とすると、n × (1/n) = 1 です。e は、(1 + 1/n)<sup>n</sup> の n を限りなく大きくした先の値で、2.718… という、限りのある一つの数です。e そのものは ∞ の逆数ではありません。逆数どうしになっているのは、歩数と一歩です。球の上では、章「[e の正体に迫る：地球儀・平面・船の地図の、三つの世界](#eo-worlds)」で見たとおり、歩数（北極の側）と一歩（南極の側）は、赤道をはさんで向かい合ったまま、同時に向かいます。e は、北極にも南極にもいません。
 
 <span class="step-mark step-mark--math">数学では</span>同じ刻み方で、一歩ごとに、今いる点から見て直角の向き（円の接線の向き）に進むと、歩数を限りなく増やした先で、ちょうど単位円の上を歩きます。北極の ∞ と南極の 0 が向かい合う、その真ん中の赤道を、e<sup>iθ</sup> は一周します。
 
 <details><summary>詳しく — 数学の言葉で言うと</summary>
 
 - 歩数 n と一歩 1/n を掛けると、いつも 1。e = lim (1 + 1/n)<sup>n</sup> は、この 1 を n 回に分けて、育ちながら重ねた先の値。
-- 平面の正の数 x を球の上に戻すと（写すの逆）、高さ（赤道が 0、北極が 1、南極が −1）は (x² − 1)/(x² + 1) になる。x を 1/x に替えると、高さの符号だけが変わる。だから n と 1/n は、赤道をはさんで向かい合う。n = 2 なら高さ ±0.6、n = 10 なら ±0.98。x = 1 は高さ 0（赤道）。
-- 1/z は、球の上では 1 と −1 を通る軸のまわりの半回転で、0 と ∞ を入れ替える。
 - 数の表と、絵で追う説明は、「禅の円を、高校の数学で読む」の章「[無限に刻むことは、北極と南極へ同時に向かうこと](zen-circle-hs.html#zh-aha)」にある。
 
 </details>
@@ -426,43 +498,58 @@ e<sup>iπ</sup> = −1 は、赤道の上を 1 から半周回った所です。
 | 問い | 答え | 段 |
 |---|---|---|
 | 何を | まっすぐな座標（大きさの対数と回った角度）を、円の世界に巻きつける。log は、それをほどく。単位円の上では、肩の数を、そのまま左回りに歩いた道のりにする（底が e のときだけ） | <span class="step-mark step-mark--math">数学では</span> |
-| どこで | 船の地図と平面のあいだ。球の上では、南極（0）にも北極（∞）にも着かず、そのあいだの全部で働く | <span class="step-mark step-mark--math">数学では</span> |
-| いつ | 歩数が ∞ へ、一歩が 0 へ、赤道をはさんで向かい合ったまま同時に向かった先で出てくる | <span class="step-mark step-mark--math">数学では</span> |
-| どうやって | 今の自分を元にした少しを、今の自分に足すことを、限りなく細かくくり返す。足す向きを直角にすると、大きさを変えずに円の上を回る | <span class="step-mark step-mark--math">数学では</span> |
-| 誰と誰のあいだで | 写す元の円の世界と、写した先の数直線の側にいる私（北極から写している私）とのあいだの通訳 | <span class="step-mark">見方</span>このページの読み |
+| どこで | 船の地図と平面のあいだ（章「[e の正体に迫る：地球儀・平面・船の地図の、三つの世界](#eo-worlds)」）。球の上では、南極（0）にも北極（∞）にも着かず、そのあいだの全部で働く | <span class="step-mark step-mark--math">数学では</span> |
+| いつ | 歩数が ∞ へ、一歩が 0 へ、向かい合ったまま同時に向かった先で出てくる | <span class="step-mark step-mark--math">数学では</span> |
+| どうやって | 今の自分を元にした少しを、今の自分に足すことを、限りなく細かくくり返す。足す向きを直角にすると、限りなく細かくした先で、大きさを変えずに円の上を回る | <span class="step-mark step-mark--math">数学では</span> |
+| 誰と誰のあいだで | 回る向きを持つ円の世界と、まっすぐな座標（大きさの対数と回った角度）で数える私たちとのあいだの通訳。北極から写して見ている私は、その座標の中には現れない | <span class="step-mark">見方</span>このページの読み |
 | なぜ大切か | 単位円が宇宙の真理かもしれない円だとするなら、e は、その円の上をそのまま歩ける数だから | <span class="step-mark">見方</span>pjdhiro |
 
 </div>
 
 **ただの円ではない円**
 
+<span class="step-mark">見方</span>ここまで来ると、このページが e の話をしながら、ずっと禅の円を読んでいたことが見えてきます。最初の問いに戻ります。禅の円と単位円が似て見えるのは、どちらも、いちばん小さいものといちばん大きいものを、はしの無い一つの輪に抱えているからでしょうか。禅が円で言っていたのが、いちばん小さいものといちばん大きいものを、対等な二つの極として抱える世界の形だとするなら、単位円は、ただの円ではないのかもしれません。pjdhiro は、それが宇宙の真理かもしれない、と見ています。単位円を、ただの円だと思っていませんか。
+
+円を描く話を、一つ置きます。『碧巌録』第 33 則には、次の話があります。資福が、訪ねてきた陳操を見るなり、一つの円を描きます。陳操はそれを、来ただけでもう外れているのに、そのうえ円まで描くとは、と退けます。資福は、方丈の戸を閉めます。
+
+<span class="step-mark">見方</span>円を描いて示すことと、その円を退けることが、一つの則の中に並んでいます。このページが球と数直線で重ねてきた読みも、円に重ねた言葉の一つです。この則は、その輪に言葉を重ねること自体を、もう一度問い直させます。
+
+**「自然」の名**
+
+<span class="step-mark">見方</span>そして、問いが一つ残ります。e が「自然対数の底」と呼ばれるようになった由来は、何だったのでしょうか。円の側から e を見てきたあとでは、その名前にも、ちょっと問いが立ちます。
+
 <span class="step-mark">見方</span>pjdhiro は、ここで、e が「自然対数の底」と呼ばれることに目を向けています。禅で真理のように説かれてきた円が単位円だとするなら、その円にそのまま触れる e に「自然」の名が付いているのは、素朴なイメージにぴったりかもしれない、という見方です。
 
-ここまで来ると、このページが e の話をしながら、ずっと禅の円を読んでいたことが見えてきます。禅が円で言っていたのが、いちばん小さいものといちばん大きいものを、対等な二つの極として抱える世界の形だとするなら、単位円は、ただの円ではないのかもしれません。単位円を、ただの円だと思っていませんか。pjdhiro は、それが宇宙の真理かもしれない、と見ています。正解として言える話ではなく、開いたままの問いです。
+<span class="step-mark step-mark--math">数学では</span>歴史の上で、原典で照らせた順を並べます。最初の対数は、ネイピア（1614）が、円の正弦に付けた数でした。そのあと、双曲線 y = 1/x の下の面積が、対数の働きをすることが見つかりました（サン＝ヴァンサン 1647、ド・サラサ 1649）。1 から a までのその面積が、底が e の対数 ln a です。「自然の」対数という呼び名は、10 を底とする「表の」対数と対にして使われた語でした（メルカトル 1668。同じ年の Philosophical Transactions に載せた補足）。照らした範囲では、「自然の」の名を使ったメルカトルたちの本文に、円や虚数への言及は見当たりません。オイラーは、e を「双曲線の対数が 1 になる数」と書き（『力学』1736）、『無限解析序説』（1748）では、§122 で自然の、すなわち双曲線の対数の底に e を置き、§138 で、e<sup>v√−1</sup> = cos v + √−1 sin v と、円の正弦と余弦に結びました。円と対数を虚数で結ぶ文は、それより前のヨハン・ベルヌーイにも、「虚の対数は、実の円の扇形と取るべきだ」とあります（1702 年の手紙。1742 年の全集で照らした）。
 
-最後に、円を描く話を見ます。『碧巌録』第 33 則では、資福が、訪ねてきた陳操を見るなり、一つの円を描きます。陳操はそれを、来ただけでもう外れているのに、そのうえ円まで描くとは、と退けます。資福は、方丈の戸を閉めます。円を描いて示すことと、その円を退けることが、一つの則の中に並んでいます。このページが球と数直線で重ねてきた読みも、円に重ねた言葉の一つです。
-
-最初の問いに戻ります。禅の円と単位円が似ているのは、どちらも、いちばん小さいものといちばん大きいものを、入れ替えても形の変わらない対等な二つの極として、はしの無い一つの輪に抱える形だから、というのがこのページの見立てです。碧巌録第 33 則は、その輪に言葉を重ねること自体を、もう一度問い直させます。
-
-そして、問いが一つ残ります。e が「自然対数の底」と呼ばれるようになった由来は、何だったのでしょうか。円の側から e を見てきたあとでは、その名前にも、ちょっと問いが立ちます。
-
-自然対数は、歴史の上では、円ではなく双曲線（y = 1/x の曲線）の下の面積から見つかった、と言われます。そう聞いて、pjdhiro はこう問いました。
+そう聞いて、pjdhiro はこう問いました。
 
 <strong>pjdhiro の問い：</strong>それは、最初から、平面を扱う道具だったんじゃ。円の平面と直交する軸を扱うための。虚軸のような。
 
-双曲線から「自然」と呼ばれた数が、なぜ円の上でこれほど働くのでしょうか。その数は、はじめから、円の平面と、それに直交する軸を扱う道具だったのでしょうか。この問いも、開いたまま置きます。
+<span class="step-mark step-mark--math">数学では</span>円 x² + y² = 1 と双曲線 x² − y² = 1 は、y を iy に替えると移り合います。ただ、平面の上で直角の向きを生むのは、e ではなく i です。e は、その i の向きへ回る速さを、ちょうど 1 にする目盛です。
+
+<span class="step-mark">見方</span>双曲線から「自然」と呼ばれた数が、なぜ円の上でこれほど働くのでしょうか。その数は、はじめから、円の平面と、それに直交する軸を扱う道具だったのでしょうか。この問いも、開いたまま置きます。
 
 <details><summary>詳しく — 円と双曲線</summary>
 
 - 1 から a までの、双曲線 y = 1/x の下の面積は ln a（底が e の対数）になる。
 - 円 x² + y² = 1 と双曲線 x² − y² = 1 は、y を iy に替えると、互いに移り合う。
 - 双曲線の側の cosh と sinh は、肩に iθ を入れると円の側に移る：cosh(iθ) = cos θ、sinh(iθ) = i sin θ。
+- 原点と結んだ扇形の面積は、円の点 (cos θ, sin θ) までなら θ/2、双曲線の点 (cosh u, sinh u) までなら u/2。ln(cos θ + i sin θ) = iθ、ln(cosh u + sinh u) = u で、どちらの角も、余分な定数なしに測れるのは、底が e の対数のときだけ。
+- d/dθ e<sup>iθ</sup> = i e<sup>iθ</sup>。動く向きは、今の位置に i を掛けた向き（位置から 90 度回した向き）で、速さは 1。
 
 </details>
 
 <details><summary>出典</summary>
 
 - 『信心銘』（伝・僧璨）。大正蔵 T48 no.2010。「極小同大　妄絕境界　極大同小　不見邊表」は [0377a05〜a06](https://cbetaonline.dila.edu.tw/zh/T48n2010_p0377a05)（CBETA の本文で照合。「妄絕境界」の「妄」は大正蔵の字で、校注の甲本は「忘」。日本で広く読まれる本文は「忘絶境界」）。すぐ前の句は「一念萬年」「十方目前」で、時の長さと十方の広さを分けずに語る。
+- 対数と「自然」の名の歴史（照らした原典。訳は Claude）：
+  - ネイピア『驚くべき対数の規則の記述』（1614）第 1 巻第 1 章の定義 6（正弦の対数）（[Internet Archive の写し](https://archive.org/details/mirificilogarit00napi)）。
+  - サン＝ヴァンサン『円と円錐の切り口の求積の幾何学の書』（1647）第 6 巻「双曲線について」の命題 109（双曲線の切片の面積）（[Internet Archive の写し・第 2 冊](https://archive.org/details/bub_gb_a2CNnQIklsgC)）。
+  - ド・サラサ『メルセンヌ神父の出した問題の解』（1649）の「この面積は対数の代わりになりうる」（[Internet Archive の写し](https://archive.org/details/bub_gb_X2BuaNIVZyMC)）。
+  - メルカトル『対数の技法』（1668）（[Internet Archive の写し](https://archive.org/details/bim_early-english-books-1641-1700_logarithmotechnia-_mercator-nicolaus_1668)）と、同じ年の [Philosophical Transactions 第 3 巻 38 号 pp. 750–764](https://doi.org/10.1098/rstl.1668.0034) に載せた補足の p. 761 の「自然の対数を表の対数に直す小表」（[Internet Archive の写し](https://archive.org/details/paper-doi-10_1098_rstl_1668_0034)）。
+  - オイラー『力学』第 1 巻（1736）§171 の「e は双曲線対数が 1 の数」（[Euler Archive](https://scholarlycommons.pacific.edu/euler-works/15/)）。『無限解析序説』第 1 巻（1748）§122（自然の、すなわち双曲線の対数）と §138（e<sup>+v√−1</sup> = cos.v + √−1.sin.v）（[Euler Archive](https://scholarlycommons.pacific.edu/euler-works/101/)）。
+  - ヨハン・ベルヌーイの 1702 年 8 月 5 日付の手紙の抜粋。1742 年の全集 第 1 巻 No. 70、p. 400 で照らした（[Internet Archive の写し](https://archive.org/details/bub_gb_JIyE5FgkdscC)）。1702 年の初出は照らせていない。
 - 『碧巌録』第 33 則「陳操尚書看資福」。大正蔵 T48 no.2003 巻 4、[0172a17〜a20](https://cbetaonline.dila.edu.tw/zh/T48n2003_p0172a17)（CBETA の本文で照合）。資福が円を描き、陳操がそれを退け、資福は方丈の戸を閉める。
 
 </details>
@@ -481,13 +568,13 @@ e<sup>iπ</sup> = −1 は、赤道の上を 1 から半周回った所です。
 
 <span class="step-mark">見方</span>プログラムの関数には、何を受け取り何を返すかの宣言と、使い方を書いた説明書（help）が付いています。オイラーの等式は、exp という関数に iπ を入れると −1 が返る、という一行にあたります。
 
-<span class="step-mark step-mark--math">数学では</span>数学のライブラリにも、e<sup>z</sup> を計算する関数 exp があり、説明書（help）が付いています。中身の厚さはライブラリでまちまちです。Python の cmath.exp は一行だけです。NumPy の exp には、複素数を大きさと位相に分ける説明と、図の例があります。Wolfram Language の Exp には、周期・応用・よくある落とし穴まで並んでいます。見た範囲では、厚い説明書にも、回す軸や掛ける順番は書かれていません。
+<span class="step-mark step-mark--math">数学では</span>数学のライブラリにも、e<sup>z</sup> を計算する関数 exp があり、説明書（help）が付いています。中身の厚さはライブラリでまちまちです。Python の cmath.exp は一行だけです。NumPy の exp には、複素数を大きさと位相に分ける説明と、図の例があります。Wolfram Language の Exp には、周期・応用・よくある落とし穴まで並んでいます。
 
 そうした厚めの説明書によく書かれている中身に、このページで見えるようにしたものを書き足した exp の説明書は、「[人類の man](man.html#man-exp)」に置いています。<span class="help-add">色の付いた行</span>が、このページで見えるようにしたもの（回す軸・掛ける順番・二周で戻る回し手・球の上で・地図で読むと ほか）を書き足した所です。
 
 <p class="man-import-wrap"><a class="man-import" href="man.html#man-exp" data-import="man.html#man-exp-doc" data-import-title="exp(z) の説明書（人類の man）">exp の説明書を開く</a></p>
 
-<span class="step-mark">見方</span>書き足した行の多くは、平面の上だけで使う限り、書かなくても困らないものです。書かなくても困らないからか、説明書には書かれにくいようです。オイラーの等式の一行でも、省かれています。立体へ持っていくと、省かれていたものが、四元数の式の中に出てきます。軸は引数として、順番と二周は式の形として出てきます。色の無い行だけでも exp は使えますが、なぜそうなるか、平面の外でどう使うかは、色の付いた行に書かれています。
+<span class="step-mark">見方</span>書き足した行の多くは、平面の上だけで使う限り、書かなくても困らないものです。オイラーの等式の一行でも、省かれています。立体へ持っていくと、省かれていたものが、四元数の式の中に出てきます。軸は引数として、順番と二周は式の形として出てきます。色の無い行だけでも exp は使えますが、なぜそうなるか、平面の外でどう使うかは、色の付いた行に書かれています。
 
 <details><summary>出典</summary>
 
@@ -498,31 +585,9 @@ e<sup>iπ</sup> = −1 は、赤道の上を 1 から半周回った所です。
 
 </details>
 
-## 補足：地球儀・平面・船の地図の、三つの世界
-
-<a id="eo-fold3"></a><span class="step-mark step-mark--math">数学では</span>章「[e・π・√ も、0 と ∞ も、円の世界を数直線の側で扱うための記号かもしれない](#eo-axes)」で描いた e の巻きつけ方は、地球儀の上の経度と緯度でも描けます。
-
-平面の点 z = re<sup>iθ</sup> を log でほどくと、log z = log r + iθ になります。地球儀の上の点で言えば、経度 θ がそのまま横の座標に、緯度が縦の座標 log tan(π/4 + 緯度/2) になります。これは、航海の地図で使われてきたメルカトル図法の縦の座標と同じ式です。このページでは、この地図を船の地図と呼びます。船の地図では、大きさの対数 log r を縦に、回った角度 θ を横に描きます。ふつうの複素平面の描き方（実の部分が横、虚の部分が縦）とは、縦と横が入れ替わっています。こうして、同じ点が三つの世界に置かれます。
-
-<div class="tablefit">
-
-| 世界 | 回る向き | 0 と ∞ |
-|---|---|---|
-| 地球儀（投影元） | 軸のまわりに、一定の速さで回る | 南極と北極。向かい合う二点 |
-| 平面（ステレオ投影の先） | 単位円の上では、e<sup>iθ</sup> を掛ける掛け算 | 真ん中の点と、どこまでも遠い所 |
-| 船の地図（メルカトル図法） | 横にまっすぐずれるだけ。横は 2π ごとに同じ所（左右のはしがつながる） | 縦の線の両はし（−∞ と +∞）。どこまで行っても届かない |
-
-</div>
-
-<figure class="glow-card reader-figure"><div style="display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:0.4rem 0.8rem"><svg viewBox="0 0 200 215" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:12.5rem" aria-label="地球儀。てっぺんの北極が ∞ で明かり、底の南極が 0、真ん中の太い楕円が赤道。"><g font-size="12"><text x="100" y="18" font-size="14" text-anchor="middle" fill="var(--ink)">地球儀</text><circle cx="100" cy="112" r="62" fill="var(--white)" fill-opacity="0.6" stroke="var(--ink)" stroke-width="1.4"/><ellipse cx="100" cy="112" rx="62" ry="16" fill="none" stroke="var(--gold)" stroke-width="2.2"/><circle cx="100" cy="50" r="5" fill="var(--coral)"/><circle cx="100" cy="174" r="4.5" fill="var(--navy)"/><text x="100" y="40" text-anchor="middle" fill="var(--coral)">北極 ∞（明かり）</text><text x="100" y="196" text-anchor="middle" fill="var(--navy)">南極 0</text></g></svg><div style="align-self:center;text-align:center;font-size:0.8rem;color:var(--mid);line-height:1.5">⇄<br>ステレオ投影</div><svg viewBox="0 0 200 215" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:12.5rem" aria-label="平面。真ん中の点が 0、太い円が半径 1 の円。∞ は描かれない。"><g font-size="12"><text x="100" y="18" font-size="14" text-anchor="middle" fill="var(--ink)">平面</text><rect x="28" y="40" width="144" height="144" rx="4" fill="var(--white)" fill-opacity="0.6" stroke="var(--ink)" stroke-width="1.4"/><circle cx="100" cy="112" r="32" fill="none" stroke="var(--gold)" stroke-width="2.2"/><circle cx="100" cy="112" r="4" fill="var(--navy)"/><text x="107" y="108" fill="var(--navy)">0</text><text x="100" y="204" text-anchor="middle" fill="var(--mute)">∞ は描かれない</text></g></svg><div style="align-self:center;text-align:center;font-size:0.8rem;color:var(--mid);line-height:1.5">⇄<br>e ／ log</div><svg viewBox="0 0 200 215" xmlns="http://www.w3.org/2000/svg" role="img" style="max-width:12.5rem" aria-label="船の地図。真ん中の横の太い線が赤道にあたり、上のはし（北極）と下のはし（南極）には届かない。"><g font-size="12"><text x="100" y="18" font-size="14" text-anchor="middle" fill="var(--ink)">船の地図</text><text x="100" y="38" text-anchor="middle" fill="var(--coral)">上のはし（北極）に届かない</text><rect x="30" y="46" width="140" height="132" fill="var(--white)" fill-opacity="0.6" stroke="var(--ink)" stroke-width="1.4" stroke-dasharray="4 3"/><line x1="65" y1="46" x2="65" y2="178" stroke="var(--mute)" stroke-width="0.8"/><line x1="100" y1="46" x2="100" y2="178" stroke="var(--mute)" stroke-width="0.8"/><line x1="135" y1="46" x2="135" y2="178" stroke="var(--mute)" stroke-width="0.8"/><line x1="30" y1="112" x2="170" y2="112" stroke="var(--gold)" stroke-width="2.2"/><text x="100" y="196" text-anchor="middle" fill="var(--navy)">下のはし（南極）に届かない</text></g></svg></div><div style="font-size:0.8rem;line-height:1.7;text-align:left;max-width:26rem;margin:0.4rem auto 0"><span style="color:var(--gold)">●</span> 太い線（赤道・半径 1 の円・船の地図の横の線 x = 0）は、三つの世界で同じ所</div><figcaption>三つの世界と、二つのつなぎ方。船の地図と平面のあいだは、e が巻きつけ、log がほどく。地球儀と平面のあいだは、ステレオ投影で写す（平面に ∞ を足すと地球儀に閉じる）。北極（∞）は平面にも船の地図にも描かれない。南極（0）は平面には描かれるが、船の地図には描かれず、下へどこまで行っても届かない</figcaption></figure>
-
-e<sup>x + iθ</sup> は、船の地図を平面に巻きつけます。横の座標 θ は回った角度に、縦の座標 x は大きさ e<sup>x</sup> になります。横は 2π ごとに同じ点を指すので、地図の横の線は、円に何周も巻きつきます。地球儀と平面のあいだは、ステレオ投影で写すつなぎ方で、そこに e は出てきません。e は、船の地図と平面のあいだをつなぎ、ステレオ投影と組んで、三つの世界をつなぎます。
-
-0 と ∞ を向かい合う対等な二点として並べられるのは、平面に ∞ を一点足して、地球儀に閉じたからです。log は、ステレオ投影と組んで、地球儀の上の回る向き（経度）と南北の向き（緯度）を、まっすぐな座標にほどきます。
-
 ## 補足：立体の回転と並べると
 
-<a id="eo-quat"></a><span class="step-mark step-mark--math">数学では</span>章「[四元数から平面へ：二つの向きを 0 に置くと、複素数を掛ける回転と同じ回転が出てくる](#eo-fold4)」の続きです。四元数で回す式と、二つの向きを 0 に置いて並べた対比の表、その場で動かせる計算、二周で戻る回し手とスピン、行列での書き方を置きます。
+<a id="eo-quat"></a><span class="step-mark step-mark--math">数学では</span>章「[四元数から平面へ：二つの向きを使わないと、複素数を掛ける回転と同じ回転が出てくる](#eo-fold4)」の続きです。四元数で回す式と、二つの向きを使わずに並べた対比の表、その場で動かせる計算、二周で戻る回し手とスピン、行列での書き方を置きます。
 
 **立体の回転は、数で挟んで書く**
 
@@ -554,14 +619,14 @@ q と −q は、同じ回転を表します。挟むと符号が二回出て、
 
 </details>
 
-この書き方には、平面の回転を e<sup>iθ</sup> で書いたときには見えなかった部品が出てきます。回す軸 u、角度を半分ずつ前と後ろに分けること、掛ける順番、それに、二周してやっと元に戻る回す数 q（上の畳み）です。続けて、四元数の二つの向きを 0 に置いてオイラーの側と並べ、この四つが等式の中ではどこへ行ったのかを見ます。
+この書き方には、平面の回転を e<sup>iθ</sup> で書いたときには見えなかった部品が出てきます。回す軸 u、角度を半分ずつ前と後ろに分けること、掛ける順番、それに、二周してやっと元に戻る回す数 q（上の畳み）です。続けて、四元数の二つの向きを使わずにオイラーの側と並べ、この四つが等式の中ではどこへ行ったのかを見ます。
 
-<a id="eo-pair"></a>**二つの向きを 0 に置いて、オイラーの側と並べる**
+<a id="eo-pair"></a>**二つの向きを使わずに、オイラーの側と並べる**
 
-四元数の w・i・j・k の四つの向きのうち、二つを 0 に置くと、平面が一枚残ります。そこでは、e<sup>iθ</sup> を掛けるのと同じ回転が書けます。
+四元数の w・i・j・k の四つの向きのうち、二つを使わない（0 と置く）と、平面が一枚残ります。そこでは、e<sup>iθ</sup> を掛けるのと同じ回転が書けます。
 
 
-どの二つを 0 に置くかで、残る平面が変わります。挟む式 q v q<sup>−1</sup> は、実の部分を 0 と置いて使う式です。だから、この式でオイラーの等式と並べるには、実の向きを含まない平面を残します。ここでは、実の部分 w と k を 0 に置いて、i と j の平面を残し、軸を k にします。
+どの二つを使わないかで、残る平面が変わります。挟む式 q v q<sup>−1</sup> は、実の部分を 0 と置いて使う式です。だから、この式でオイラーの等式と並べるには、実の向きを含まない平面を残します。ここでは、実の部分 w と k を 0 と置いて使わずに、i と j の平面を残し、軸を k にします。
 
 両側に同じ項目を並べると、次のようになります。
 
@@ -669,7 +734,7 @@ pjdhiro は、この形について、こう話しています。
 
 <details><summary>詳しく — 実の向きを含む平面で並べると</summary>
 
-オイラーの等式と同じ平面（w + iy の平面。j と k を 0 に置く）を四元数の中に残すこともできます。この平面は実の向きを含むので、挟む式 q v q<sup>−1</sup> では動きません。q = e<sup>iθ/2</sup> で挟むと、点 0.3 + 0.9i は 0.3 + 0.9i のまま残ります。
+オイラーの等式と同じ平面（w + iy の平面。j と k を使わない）を四元数の中に残すこともできます。この平面は実の向きを含むので、挟む式 q v q<sup>−1</sup> では動きません。q = e<sup>iθ/2</sup> で挟むと、点 0.3 + 0.9i は 0.3 + 0.9i のまま残ります。
 
 この平面を回すには、q<sup>−1</sup> でなく、同じ q で両側から挟みます。e<sup>iθ/2</sup> z e<sup>iθ/2</sup> = e<sup>iθ</sup> z で、オイラーの側と同じ点に着きます（0.3 + 0.9i は、θ = 0.7 で −0.3503 + 0.8816i）。
 
@@ -679,7 +744,7 @@ pjdhiro は、この形について、こう話しています。
 
 <details><summary>詳しく — 片側から一回掛けると、もう一枚の平面も回る</summary>
 
-オイラーの側の「e<sup>iθ</sup> を片側から掛ける」ことを、四元数の全体に当ててみます。すると、1 と i の平面が角度 θ 回るのと同時に、j と k の平面も同じ角度 θ だけ回ります。たとえば、j に e<sup>iθ</sup> を前から掛けると、cos θ j + sin θ k になります。j と k を 0 に置いた平面の上では、この二枚目の平面の回転は見えません。
+オイラーの側の「e<sup>iθ</sup> を片側から掛ける」ことを、四元数の全体に当ててみます。すると、1 と i の平面が角度 θ 回るのと同時に、j と k の平面も同じ角度 θ だけ回ります。たとえば、j に e<sup>iθ</sup> を前から掛けると、cos θ j + sin θ k になります。j と k を使わない平面の上では、この二枚目の平面の回転は見えません。
 
 片側から一回掛けるという一番素朴な書き方が、四元数の中では、二枚の平面を同時に回す働きになっています。<span class="step-mark">見方</span>オイラーの等式は、その二枚目を見えない所に置いた形だ、と読むこともできそうです。
 
