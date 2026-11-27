@@ -695,21 +695,12 @@ PAGES = [
         ROOT / "reader/kaken-map.html",
         "flow",
     ),
-    (
-        # 誤解の台帳を防衛と発達の尺度に当てた表（docs/RELEASE-STAGES.md 3.3 の段 1・同じ日「独立のページにする」）。
-        # 数と表は docs/release-stages/kokoro-scale-map.json から差し込む
-        ROOT / "knowledge/research/site-evaluation/READER-kokoro-scale-map.md",
-        ROOT / "scripts/reader-kokoro-scale-map-template.html",
-        ROOT / "reader/kokoro-scale-map.html",
-        "flow",
-    ),
 ]
 
 # RELEASE-STAGES の段 1 の地図と表（出力 HTML 名 → 種類と JSON）。正本 MD の <!--N:…--> と <!--RELEASE-MAP…--> を
 # scripts/release_map_markup.py が JSON から置き換える（数を手で書かない）
 RELEASE_MAPS = {
     "kaken-map.html": ("kaken", ROOT.parent / "docs/release-stages/kaken-map.json"),
-    "kokoro-scale-map.html": ("kokoro", ROOT.parent / "docs/release-stages/kokoro-scale-map.json"),
 }
 
 # スクリーナーのデータ（正本 JSON）。出力 HTML 名 → JSON。正本 MD の <!--SCREENER--> に

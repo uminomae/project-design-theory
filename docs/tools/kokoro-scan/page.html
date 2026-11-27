@@ -53,6 +53,7 @@ a { color: var(--accent); }
 .lead { display: grid; gap: 8px; }
 .lead .tag { font-family: var(--font-mono); font-size: .75rem; letter-spacing: .12em; color: var(--muted); text-transform: uppercase; }
 .lead p { color: var(--muted); max-width: 62ch; }
+.lead p.proto { color: var(--fg); background: var(--mid-bg); border-left: 3px solid var(--mid); border-radius: 6px; padding: 8px 12px; }
 
 .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px; display: grid; gap: 14px; min-width: 0; }
 
@@ -141,9 +142,10 @@ footer { font-size: .82rem; color: var(--muted); display: grid; gap: 6px; }
 
 <div class="wrap">
   <header class="lead">
-    <span class="tag">Love-driven scan · β</span>
+    <span class="tag">Love-driven scan · 試作（prototype）</span>
     <h1>心の脆弱性スキャン</h1>
     <p>論文や記事を渡すと、Claude が読み物「<a href="https://uminomae.github.io/project-design-theory/reader/love-driven-dev.html" target="_blank" rel="noopener">Love駆動開発と呼びたいもの β</a>」の見方を物差しにして、心や論の脆弱性を探します。脆弱性は、読む人の心の守り方や発達の段階しだいで、言葉が書き手の意図と逆の向きに働いてしまう入口のことです。</p>
+      <p class="proto"><strong>これは試作です。</strong>論の中にある心理的防衛機制の現れから、論の穴を見抜くための道具で、防衛の尺度で人や論を判定するものではありません。診断がどれだけ当たるか（誤って拾う率・見逃す率）は、まだ測っていません。結果は、読み直すための手がかりとしてだけ使ってください。</p>
   </header>
 
   <section class="panel" aria-label="文章を渡す">
