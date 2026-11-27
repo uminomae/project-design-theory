@@ -5,27 +5,6 @@
 <p>元の読み物「<a href="euler-unfolded.html">オイラーの等式が、たたんだもの</a>」の道筋どおりに、一段ずつ追いかけ、最後に禅の円に戻ります。</p>
 </div>
 
-<div class="reader-lead"><span class="reader-lead__label">構成</span>
-<ul class="reader-lead__list">
-<li><b><a href="#zh-zen">出発点：円の上で、半周回る</a></b></li>
-<li><b><a href="#zh-e">驚き：円の式なのに、e が出てくる</a></b></li>
-<li><b><a href="#zh-steps">見る向きを逆にする：上の段から下の段へ</a></b></li>
-<li><b><a href="#zh-quat">四元数から平面へ：省かれている部品</a></b></li>
-<li><b><a href="#zh-globe">0 と ∞ を、地球儀の両極に置く</a></b></li>
-<li><b><a href="#zh-cut">数直線は、地球儀を一周する輪</a></b></li>
-<li><b><a href="#zh-north">北極は、光を当てている位置</a></b></li>
-<li><b><a href="#zh-sym">e・π・√ も、円の世界を数直線で扱う道具かもしれない</a></b></li>
-<li><b><a href="#zh-point">オイラーの等式は、二つの輪が重なる一点</a></b></li>
-<li><b><a href="#zh-turn">回ることが先にあるのかもしれない</a></b></li>
-<li><b><a href="#zh-worlds">e の正体に迫る：三つの世界</a></b></li>
-<li><b><a href="#zh-fold">数直線の輪と赤道を、90 度回して移し合う</a></b></li>
-<li><b><a href="#zh-circle">禅の円に戻る</a></b></li>
-<li><b><a href="#zh-aha">二つの極のあいだに立つ e</a></b></li>
-<li><b><a href="#zh-back">最初の問いに戻る</a></b></li>
-<li><b><a href="#zh-natural">開いたままの問い：「自然」の名</a></b></li>
-</ul>
-</div>
-
 <!--PART:はじめ|円と、e-->
 
 ## 出発点：円の上で、半周回る

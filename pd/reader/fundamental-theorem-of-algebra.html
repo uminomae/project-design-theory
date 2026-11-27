@@ -47,7 +47,7 @@
     <meta name="twitter:title" content="代数学の基本定理">
     <meta property="og:locale" content="ja_JP">
     <meta property="article:published_time" content="2026-11-25">
-    <meta property="article:modified_time" content="2026-11-25">
+    <meta property="article:modified_time" content="2026-11-27">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
@@ -67,7 +67,7 @@
           "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/fundamental-theorem-of-algebra.html",
           "inLanguage": "ja",
           "datePublished": "2026-11-25",
-          "dateModified": "2026-11-25",
+          "dateModified": "2026-11-27",
           "creativeWorkStatus": "Draft",
           "about": [{"@type": "Thing", "name": "代数学の基本定理"}, {"@type": "Thing", "name": "複素数"}],
           "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
@@ -99,34 +99,23 @@
                 <h1>代数学の基本定理</h1>
                 <p class="reader-subtitle">n 次の方程式は、平面に n 個の答えを持つ</p>
                 <p class="reader-meta">
-                    最終更新: 2026-11-25 ／ 状態: 工事中<br>
+                    最終更新: 2026-11-27 ／ 状態: 工事中<br>
                     <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/fundamental-theorem-of-algebra/READER-fundamental-theorem-of-algebra.md">正本 (GitHub)</a>
                 </p>
             </header>
             <article class="reader-article prose-block">
 <div class="reader-lead glow-card" id="ft-gist"><span class="reader-lead__label">ざっくりいうと</span>
 <p><code>x² + 1 = 0</code> には、数直線の上に答えがありません。2 乗した数は 0 より小さくならないので、1 を足すと 0 に届かないからです。数を平面まで広げると、0 の真上の <code>i</code> と、真下の <code>−i</code> の二つが答えになります。</p>
-<p>どの方程式でも、同じことが言えます。x を n 回掛け合わせた項までを持つ方程式（n 次方程式）は、複素数の平面まで広げると、重なりも数えて、ちょうど n 個の答えを持ちます。これを代数学の基本定理と呼びます。答えを探すのに、平面より外の数は要りません。</p>
-<p>このページで働いているもの：一つの方程式の答えが、いくつかに分かれて平面に並ぶこと。<code>zⁿ = 1</code> では、答えが円の上を同じ角度ずつ回った所に並びます。</p>
+<p>数直線の上だけで考えるのを止めたい、という pjdhiro の頼みに、Claude が調べて答えるページです。中学の数学で読める言葉で、一つの方程式の答えが、いくつかに分かれて平面に並ぶ様子を追えます。</p>
 </div>
 
 <p class="reader-summary__title" id="overview">概要</p>
 
-<p>このページは、pjdhiro の頼みに、Claude が調べて答える形で作っています。複素平面の数式を人の意識に照らしていた対話の中で、pjdhiro はこう言いました。</p>
+<p>複素平面の数式を人の意識に照らしていた対話の中で、pjdhiro はこう言いました。</p>
 <blockquote class="reader-callout reader-request">
 <p><strong>pjdhiro の見方：</strong>一次元の数直線的な思考を止めたい。</p>
 </blockquote>
-<p>代数学の基本定理は、数直線だけで考えると答えが足りなくなることを、いちばん素朴な形で見せる数学です。方程式の答えを数直線の上だけで探すと、答えが無いことも、次数より少ないこともあります。平面まで広げると、答えの数は次数とぴったり合います。</p>
-<p>説明は、中学の数学で読める言葉で書きます。証明は本文に置かず、考え方だけを畳みに置きます。</p>
-<div class="reader-lead"><span class="reader-lead__label">構成</span>
-<ul class="reader-lead__list">
-<li><b><a href="#ft-two">x² + 1 = 0 は、数直線の上と下に答えを持つ</a></b>：数直線に無い答えが、平面にある</li>
-<li><b><a href="#ft-count">答えの数は、次数と同じ</a></b>：代数学の基本定理</li>
-<li><b><a href="#ft-circle">zⁿ = 1 の答えは、円を n 等分する</a></b>：回って 1 に戻る点</li>
-<li><b><a href="#ft-more">このあとに読むもの</a></b>：構造の類似を考えるページと、ほかの数学</li>
-</ul>
-</div>
-
+<p>代数学の基本定理は、数直線だけで考えると答えが足りなくなることを、いちばん素朴な形で見せる数学です。方程式の答えを数直線の上だけで探すと、答えが無いことも、次数より少ないこともあります。x を n 回掛け合わせた項までを持つ方程式（n 次方程式）は、複素数の平面まで広げると、重なりも数えて、ちょうど n 個の答えを持ちます。これを代数学の基本定理と呼びます。答えを探すのに、平面より外の数は要りません。<code>zⁿ = 1</code> では、答えが円の上を同じ角度ずつ回った所に並びます。</p>
 <details class="sec" id="x²--1--0-は数直線の上と下に答えを持つ" open><summary>x² + 1 = 0 は、数直線の上と下に答えを持つ</summary><div class="secbody">
 
 
