@@ -503,6 +503,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/middle-voice/READER-middle-voice.md",
+        ROOT / "scripts/reader-middle-voice-template.html",
+        ROOT / "reader/middle-voice.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/thinking/READER-thinking.md",
         ROOT / "scripts/reader-thinking-template.html",
         ROOT / "reader/thinking.html",

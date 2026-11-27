@@ -170,9 +170,9 @@ export const TRANSLATIONS = {
     "overview.p1":
       "プロジェクトデザインとは、プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営みです。",
     "overview.p2":
-      "まず、その基底として射程と領域を固定し、以降の議論を「やること（Doing）」と「起きてること（Being）」と「引かれて起きてしまうこと（Falling）」に分けて整理します。",
+      "定義・射程・領域で枠を決め、その中を、Doing（やること）・Being（起きていること）・Falling（引かれて起きてしまうこと）の三つを基底として整理します。",
     "overview.p3":
-      "プロジェクト実務は、環境適応（物質的条件）とコミュニケーション（非物質的条件）に大別できます。本サイトでは環境適応を前提知（PMBOK等）とし、コミュニケーションを情報処理／感情処理に分解して、とくに感情処理を中心に扱います。",
+      "やることには、経営学・能力・感情処理を置きます。PMBOK などの物質的条件は、前提知とします。",
     "overview.definition.title": "定義",
     "overview.definition.item1": "プロジェクトの構想・設計・実行",
     "overview.definition.item2": "実行・管理方法の構想・設計",
@@ -212,7 +212,7 @@ export const TRANSLATIONS = {
     "section.falling.label": "Falling (Becoming)",
     "section.falling.title": "引かれて起きてしまうこと",
     "section.falling.body":
-      "意図してすること（Doing）でも、ただ起きていること（Being）でもなく、Love と呼びたい何かに引かれて、私という場所で起きてしまうこと。恋に落ちる（fall in love）、惚れる、のように、自分からするのでも、させられるのでもない、能動と受動のあいだの、中動の動きです。プロジェクトの駆動源は、ここにあります。",
+      "意図してすること（Doing）でも、ただ起きていること（Being）でもなく、Love と呼びたい何かに引かれて、私という場所で起きてしまうこと。恋に落ちる（fall in love）、惚れる、のように、私は起きていることの外にいるのでなく、その内側にいます。そして、なってしまうことと、なろうとすることが、見分けられるまま、一つの動きになっています。どちらも、中動と呼ばれる動きの面です。プロジェクトの駆動源は、ここにあります。",
     "repo.loveDrivenDev": "Love駆動開発と呼びたいもの β",
     "repo.loveDrivenDevDesc":
       "何に駆られてプロジェクトを行うのか。人やプロジェクトを動かしているもの（駆動源）が何かを探す読み物",
@@ -255,16 +255,13 @@ export const TRANSLATIONS = {
     "log.waveVortex.q": "宇宙は「モノ」でできているか、「流れ」でできているか。",
     "log.waveVortex.a": "「宇宙は海の渦のような現象でできている」という直観を、物理学と思想史のどこまでが支えるかを、実証・解釈・推測に分けて確かめている。",
     "log.waveVortex.t": "波間の渦（創造とは）",
-    "section.shelves.label": "Other modules",
-    "section.shelves.title": "その他のモジュール",
     "shelf.mind": "心の動き",
     "doing.sub.environment": "経営学",
-    "doing.sub.symbolic": "記号情報処理",
+    "doing.sub.abilities": "能力とは",
     "doing.sub.emotional": "感情処理",
     "being.sub.mathPhysics": "環境",
     "repo.man": "人類の man",
     "repo.manDesc": "概念や式を、関数の説明書（man）のように書いて集める",
-    "shelf.abilities": "能力とは",
     "shelf.thinking": "思考とは",
     "shelf.love": "Love と駆動源",
     "shelf.translations": "原典を日本語で読む",
@@ -397,9 +394,9 @@ export const TRANSLATIONS = {
     "overview.p1":
       "Project Design is a practice that not only envisions, designs, and executes projects, but also takes the methods of execution and management themselves as its object of inquiry, and envisions and designs them.",
     "overview.p2":
-      'First, we fix the scope and domain as the foundation, and organize the subsequent discussion into "Doing," "Being," and "Falling."',
+      "We set the frame with the definition, scope, and domain, and organize what lies within it on three bases: Doing (what we do), Being (what is happening), and Falling (what happens as we are drawn in).",
     "overview.p3":
-      "Project practice can be broadly divided into environmental adaptation (material conditions) and communication (non-material conditions). This site treats environmental adaptation as prerequisite knowledge (PMBOK, etc.), decomposes communication into information processing and emotional processing, and focuses especially on emotional processing.",
+      "Doing holds management studies, abilities, and emotional processing. Material conditions such as PMBOK are treated as prerequisite knowledge.",
     "overview.definition.title": "Definition",
     "overview.definition.item1":
       "Envisioning, designing, and executing projects",
@@ -441,7 +438,7 @@ export const TRANSLATIONS = {
     "section.falling.label": "Falling (Becoming)",
     "section.falling.title": "Falling",
     "section.falling.body":
-      "Neither what we intend to do (Doing) nor what is simply happening (Being): being drawn by something I want to call Love, so that it happens, with me as the place where it happens. Like falling in love, it is a movement we neither do on our own nor are made to do: the middle voice, between active and passive. What drives projects lies here.",
+      "Neither what we intend to do (Doing) nor what is simply happening (Being): being drawn by something I want to call Love, so that it happens, with me as the place where it happens. As in falling in love, I am not outside what is happening but inside it. And what I end up becoming and what I try to become stay distinguishable while moving as one. Both are faces of what is called the middle voice. What drives projects lies here.",
     "repo.loveDrivenDev": "What I Want to Call Love-Driven Development (beta)",
     "repo.loveDrivenDevDesc":
       "What am I driven by when I carry out a project? A reader that looks for what moves people and projects (the driving source)",
@@ -484,16 +481,13 @@ export const TRANSLATIONS = {
     "log.waveVortex.q": "Is the universe made of \"things\" or of \"flows\"?",
     "log.waveVortex.a": "It checks how far physics and the history of ideas support the intuition that the universe is made of phenomena like vortices in the sea, keeping evidence, interpretation and conjecture apart.",
     "log.waveVortex.t": "Vortices between waves (What Is Creation)",
-    "section.shelves.label": "Other modules",
-    "section.shelves.title": "Other modules",
     "shelf.mind": "Workings of the mind",
     "doing.sub.environment": "Management",
-    "doing.sub.symbolic": "Symbolic information processing",
+    "doing.sub.abilities": "What Are Abilities",
     "doing.sub.emotional": "Emotional processing",
     "being.sub.mathPhysics": "Environment",
     "repo.man": "A man page for humankind",
     "repo.manDesc": "Concepts and formulas written like manual pages for functions, gathered in one place",
-    "shelf.abilities": "What Are Abilities",
     "shelf.thinking": "What Is Thinking",
     "shelf.love": "Love and driving sources",
     "shelf.translations": "Source texts in Japanese translation",
