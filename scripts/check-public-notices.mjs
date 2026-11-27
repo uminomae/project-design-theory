@@ -119,6 +119,10 @@ const results = {};
   ];
   const ISSUE_LINK = /github\.com\/uminomae\/project-design-theory\/issues\/\d+/g;
   const RECORD_LINK = /github\.com\/uminomae\/project-design-theory\/(?:blob|tree)\/[a-z]+\/[^"'\s]*knowledge\/research\/[^"'\s]*\/(?:EXPLORE|SURVEY|RR|PLAN|ANALYSIS|REVIEW|DRAFT|LOG)-[^"'\s]*\.md/g;
+  // 例外：pjdhiro が読み物からの参照として名指しした調べの記録だけ（docs/rules/decisions.md の行。一本ずつ足す）
+  const RECORD_ALLOW = [
+    'knowledge/research/breath/SURVEY-breath-boundaries-20261127.md', // 呼吸の境目の調べ（pjdhiro 2026-11-27「読み物に貼ってもらう話でした。リンクは。」）
+  ];
   const NUM = /Issue\s*#\d+|（(?:探索：|追跡：)?#\d+）|\((?:[Ee]xploration: )?#\d+\)|(?<![A-Za-z0-9&])(?:pd|cs|as|ks)#\d+/g;
   const hits = [];
   for (const f of files) {
@@ -128,7 +132,7 @@ const results = {};
       .replace(/<!--[\s\S]*?-->/g, ' ');
     const found = [];
     for (const m of raw.matchAll(ISSUE_LINK)) found.push(`Issue へのリンク：${m[0].replace(/.*\/issues\//, '#')}`);
-    for (const m of raw.matchAll(RECORD_LINK)) found.push(`記録へのリンク：${m[0].replace(/.*knowledge\/research\//, '')}`);
+    for (const m of raw.matchAll(RECORD_LINK)) if (!RECORD_ALLOW.some((a) => m[0].endsWith(a))) found.push(`記録へのリンク：${m[0].replace(/.*knowledge\/research\//, '')}`);
     const text = raw.replace(/<[^>]+>/g, '\n');
     for (const line of text.split('\n')) {
       const m = line.match(NUM);
