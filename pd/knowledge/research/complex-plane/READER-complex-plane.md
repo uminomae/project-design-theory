@@ -2,7 +2,8 @@
 
 <div class="reader-lead glow-card" id="cp-gist"><span class="reader-lead__label">ざっくりいうと</span>
 <p>複素数が関わる数学の法則を、分野で絞らずに並べた目次です。</p>
-<p>はじめに読むなら、入口に「<a href="euler-unfolded.html">オイラーの等式が、たたんだもの</a>」、おさらいに「<a href="angle-rotation.html">三角関数から複素平面まで、回転を扱うための角度の話だった</a>」と「<a href="rotation-multiplication.html">回転の掛け算</a>」があります。関数の説明書は「<a href="man.html">人類の man</a>」に集めています。数直線と直角に交わるもう一本の軸を扱う道具（虚軸・四元数・時間と空間・交流など）を、素朴な言葉と数学の二段で並べた一覧は「<a href="orthogonal-axis-tools.html">直交する軸を扱っている道具たち</a>」にあります。</p>
+<p>はじめに読むなら、入口に「<a href="euler-unfolded.html">オイラーの等式が、たたんだもの</a>」、おさらいに「<a href="angle-rotation.html">三角関数から複素平面まで、回転を扱うための角度の話だった</a>」と「<a href="rotation-multiplication.html">回転の掛け算</a>」があります。関数の説明書は「<a href="man.html">人類の man</a>」に集めています。</p>
+<p>数直線と直角に交わるもう一本の軸を扱う道具（虚軸・四元数・時間と空間・交流など）を、素朴な言葉と数学の二段で並べた一覧は「<a href="orthogonal-axis-tools.html">直交する軸を扱っている道具たち</a>」にあります。</p>
 </div>
 
 表の左の列が、その法則を人の意識やプロジェクトの駆動源に仮に当てて考えるページです。右の列は、もとにする法則の名前と短い説明です。

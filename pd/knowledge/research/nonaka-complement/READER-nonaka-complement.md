@@ -1,12 +1,8 @@
 # 野中郁次郎の理想を目指すとき、どこに気をつけるか
 
 <div class="reader-lead glow-card" id="nk-gist"><span class="reader-lead__label">ざっくりいうと</span>
-<p>このページは、LLM への依頼に答える形でまとめています。次の文を LLM に渡せば、同じ向きのレビューを試せます。</p>
-<blockquote class="reader-callout" style="overflow-wrap:anywhere"><p><a href="https://github.com/uminomae/project-design-theory">https://github.com/uminomae/project-design-theory</a> を取得し、README の「Love駆動開発の視点でレビューに使うとき」に沿って読んでください。そのうえで、野中郁次郎の知識創造（SECI・場・知識のらせん）の論文をレビューしてください。</p></blockquote>
-<p>repo を取得できない LLM には、案内の <a href="https://uminomae.github.io/project-design-theory/llms.txt" style="overflow-wrap:anywhere">https://uminomae.github.io/project-design-theory/llms.txt</a> から読ませることもできます。</p>
-<p>答えの芯です。野中の理想は、駆動するものを人の内側に置く点で、Love駆動開発と同じ所を見ています。ただ、共感・愛・ケア・信頼・共通善の五つの言葉は良い側だけで書かれ、Love駆動開発が要ると見る、ぶつかりと、心の守りの話が抜けています。</p>
-<p>そのため同じ言葉が、読む人の守り方と段階しだいで、逆の向きにも働きます。それでも回ってきたのは、長く勤める雇用のような条件が言葉を支えていたからではないか。注意点は、その歯止めと条件を補うことだ、と考えます。</p>
-<p>ホワイトハッカーの脆弱性診断にたとえて、結果をひとことで出すと、こうなります。</p>
+<p>野中郁次郎の知識創造の理想は、駆動するものを人の内側に置く点で、Love駆動開発と同じ所を見ています。ただ、共感・愛・ケア・信頼・共通善の五つの言葉は良い側だけで書かれ、Love駆動開発が要ると見る、ぶつかりと、心の守りの話が抜けています。</p>
+<p>そのため同じ言葉が、読む人の守り方と段階しだいで、逆の向きにも働きます。それでも回ってきたのは、長く勤める雇用のような条件が言葉を支えていたからではないか。注意点は、その歯止めと条件を補うことだ、と考えます。ホワイトハッカーの脆弱性診断にたとえると、こうなります。</p>
 <blockquote class="reader-callout"><p>検出 5 件（共感・愛・ケア・信頼・共通善）。警戒レベル：中。侵入口になりやすいらしい。</p></blockquote>
 <p>ほかの論や文章を、同じ物差しで診断してみるページもあります：<a href="https://claude.ai/artifact/L2vUT23vmX9phUuwJgqVuB">心の脆弱性スキャン</a>（試作。診断がどれだけ当たるかは、まだ測っていません。Claude のアーティファクト。claude.ai にログインすると使えます）。</p>
 <p>高校生向けに短く、やさしく言い直した解説もあります：<a href="https://claude.ai/artifact/FgFpr916efWXvR8spamZZ6">やさしく読む 野中の知識創造</a>（Claude のアーティファクト）。</p>
@@ -29,6 +25,10 @@
 <div class="reader-lead"><span class="reader-lead__label">今の答え</span>
 野中郁次郎の知識創造の論は、人が言葉にならない知と言葉にした知を行き来させ、組織の中で新しい知を生む過程を描いた論です。駆動するものを人の内側に置く点で、Love駆動開発と同じ所を見ていて、このページもその理想を目指します。つまずきやすいのは、共感・愛・ケア・信頼・共通善のような言葉が、良い側・包む側だけで書かれている所だと考えます。Love駆動開発の物差しでは、物事が生まれるには異なるもののぶつかりを通ることが要り、信頼や愛の感じには本人に見えない発生源と心の守りが入り込みます。野中が引いた原典の側にも、先に分ける段と、読み違いを止める条件が書かれていました。それが抜けると、同じ言葉が、読む人の心の守り方と発達の段階によって、逆の向きでも筋が通ってしまいます。それでも回ってきたのは、言葉の外に、言葉を支える条件があったからではないか、と見ています。だから、理想を目指すときの注意点は、言葉に分ける段と歯止めを補い、言葉を支えていた条件を確かめることにある、というのがこのページの今の答えです。
 </div>
+
+<p>このページは、LLM への依頼に答える形でもまとめています。次の文を LLM に渡せば、同じ向きのレビューを試せます。</p>
+<blockquote class="reader-callout" style="overflow-wrap:anywhere"><p><a href="https://github.com/uminomae/project-design-theory">https://github.com/uminomae/project-design-theory</a> を取得し、README の「Love駆動開発の視点でレビューに使うとき」に沿って読んでください。そのうえで、野中郁次郎の知識創造（SECI・場・知識のらせん）の論文をレビューしてください。</p></blockquote>
+<p>repo を取得できない LLM には、案内の <a href="https://uminomae.github.io/project-design-theory/llms.txt" style="overflow-wrap:anywhere">https://uminomae.github.io/project-design-theory/llms.txt</a> から読ませることもできます。</p>
 
 <div class="reader-lead"><span class="reader-lead__label">構成</span>
 <ul class="reader-lead__list">
