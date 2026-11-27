@@ -115,6 +115,9 @@
     overflow-wrap: anywhere;
 }
 .reader-article .help-add { color: var(--coral); font-weight: 500; }
+/* 段の頭の印：見方（仮説・ページの置き方）と、数学では（euler-unfolded ほか） */
+.reader-article .step-mark { display: inline-block; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.04em; line-height: 1.5; padding: 0 0.5em; margin-right: 0.5em; border: 1px solid var(--gold); border-radius: 3px; color: var(--gold); vertical-align: 0.12em; white-space: nowrap; }
+.reader-article .step-mark--math { border-color: var(--navy); color: var(--navy); }
 
 /* その場で動くコード（src/reader-run.js が .code-run の <pre> を欄とボタンに置き換える・2026-11-26） */
 .reader-article .code-run { margin: 0 0 1.5rem; }
