@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/julia-potential-hs.html を直接編集しないでください。
+  正本:   knowledge/research/julia-potential/READER-julia-potential-hs.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「起業家の進み方と、ジュリア集合の式」のページです（工事中）。読み物「起業家の漸化式と、ジュリア集合」（reader/julia-potential.html）の筋を、数学の言葉をできるだけ使わずに一枚にまとめた、高校生向けのやさしい解説の独立ページ。z → z² + c を前へくり返すと渦を巻いて一点へ寄ること・逆にたどると一段ごとに候補が二つに分かれて境目に散らばること・半径 2 の円を超えた点は戻らないことは数学の事実として書き、図はブラウザの中で計算して描く。式の文字への意味の当てはめ・美と起業家のエネルギー・縁の雲を「私」と読むことは、pjdhiro の見立てに Claude が当てはめた仮説として書く。
+  数学の説明は教科書にある事実の要約で、Claude が書いた。
+  pjdhiro 本人の言葉は「pjdhiro の見立て：」「pjdhiro の問い：」「pjdhiro の見方：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>起業家の進み方と、ジュリア集合の式 | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/julia-potential-hs.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="読み物「起業家の漸化式と、ジュリア集合」の筋を、数学の言葉をできるだけ使わずに一枚にまとめた、高校生向けのやさしい解説。起業家の進み方を入れ子の深さ優先探索と見て、一歩の結果が次の一歩の出発になる漸化式に書き、ジュリア集合を描く式 z → z² + c に当ててみる。前へ進めると渦、遡ると境目になることを、動かせる図で見る。神・愛・美のポテンシャルという問いと、美は起業家のエネルギーに近いのではないかという仮説、縁に残る点の雲を「私」と読む見方までをたどる。式への当てはめは仮説として書く（工事中）。">
+    <meta property="og:title" content="起業家の進み方と、ジュリア集合の式">
+    <meta property="og:description" content="読み物「起業家の漸化式と、ジュリア集合」の筋を、数学の言葉をできるだけ使わずに一枚にまとめた、高校生向けのやさしい解説。起業家の進み方を入れ子の深さ優先探索と見て、一歩の結果が次の一歩の出発になる漸化式に書き、ジュリア集合を描く式 z → z² + c に当ててみる。前へ進めると渦、遡ると境目になることを、動かせる図で見る。神・愛・美のポテンシャルという問いと、美は起業家のエネルギーに近いのではないかという仮説、縁に残る点の雲を「私」と読む見方までをたどる。式への当てはめは仮説として書く（工事中）。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/julia-potential-hs.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="起業家の進み方と、ジュリア集合の式">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-27">
+    <meta property="article:modified_time" content="2026-11-27">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <style>
+    /* 図を一つだけ動かす（z → z² + c の前へ・逆に・たくさんの点）。色は読み物の紺と金 */
+    .jh-figure { display: grid; gap: 0.6rem; }
+    .jh-figure canvas { width: 100%; max-width: 560px; height: auto; aspect-ratio: 1 / 1; border-radius: 8px; background: #0f1628; display: block; margin: 0 auto; }
+    .jh-ctrl { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+    .jh-ctrl button { font: inherit; font-size: 0.9rem; border: 1px solid currentColor; background: transparent; color: inherit; border-radius: 999px; padding: 0.35rem 0.9rem; cursor: pointer; }
+    .jh-ctrl button[aria-pressed="true"] { background: rgba(233, 196, 106, 0.25); }
+    .jh-ctrl button:focus-visible { outline: 2px solid #e9c46a; outline-offset: 2px; }
+    .jh-cap { font-size: 0.92rem; min-height: 3.4em; margin: 0; }
+    .jh-legend { font-size: 0.82rem; opacity: 0.8; margin: 0; }
+    .jh-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; vertical-align: middle; margin-right: 4px; }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "起業家の進み方と、ジュリア集合の式",
+          "description": "読み物「起業家の漸化式と、ジュリア集合」の筋を、数学の言葉をできるだけ使わずに一枚にまとめた、高校生向けのやさしい解説。起業家の進み方を入れ子の深さ優先探索と見て、一歩の結果が次の一歩の出発になる漸化式に書き、ジュリア集合を描く式 z → z² + c に当ててみる。前へ進めると渦、遡ると境目になることを、動かせる図で見る。神・愛・美のポテンシャルという問いと、美は起業家のエネルギーに近いのではないかという仮説、縁に残る点の雲を「私」と読む見方までをたどる。式への当てはめは仮説として書く（工事中）。",
+          "keywords": "起業家, エフェクチュエーション, 深さ優先探索, 漸化式, ジュリア集合, 複素数, 美, Love駆動開発, 高校生向け, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/julia-potential-hs.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/julia-potential-hs.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-27",
+          "dateModified": "2026-11-27",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "ジュリア集合"}, {"@type": "Thing", "name": "漸化式"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方の言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>読み物「起業家の漸化式と、ジュリア集合」の筋を、数学の言葉をできるだけ使わずに一枚にまとめた、高校生向けのやさしい解説。起業家の進み方を入れ子の深さ優先探索と見て、一歩の結果が次の一歩の出発になる漸化式に書き、ジュリア集合を描く式 z → z² + c に当ててみる。前へ進めると渦、遡ると境目になることを、動かせる図で見る。神・愛・美のポテンシャルという問いと、美は起業家のエネルギーに近いのではないかという仮説、縁に残る点の雲を「私」と読む見方までをたどる。式への当てはめは仮説として書く（工事中）。 読み物「起業家の漸化式と、ジュリア集合」の冒頭から呼ばれる。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見立て」「pjdhiro の問い」「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero" id="overview">
+                <h1>起業家の進み方と、ジュリア集合の式</h1>
+                <p class="reader-subtitle">高校生向けのやさしい解説</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-27 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/julia-potential/READER-julia-potential-hs.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<div class="reader-lead glow-card" id="jh-gist"><span class="reader-lead__label">ざっくりいうと</span>
+<p>読み物「<a href="julia-potential.html">起業家の漸化式と、ジュリア集合</a>」の筋を、数学の言葉をできるだけ使わずに、一枚にまとめました。</p>
+<p>ここに書くのは、どれも pjdhiro の見立てに Claude が当てはめてみた仮説で、証明ではありません。</p>
+</div>
+
+<details class="sec" id="起業家はどう進んでいるように見えるか" open><summary>起業家は、どう進んでいるように見えるか</summary><div class="secbody">
+
+
+<p><a id="jh-dfs"></a>新しいことを始める人は、はじめから地図を持っているわけではありません。まず手もとのものでやってみる。外れたら戻って別の道を試す。何かを見つけたら、そこを出発点にして、条件を変えてまた試す。部活で新しい練習法を試すときや、文化祭の出し物を決めるときも、似た進み方をしているかもしれません。</p>
+<p>プログラミングでは、外れたら戻って次の枝を試す木のたどり方を「深さ優先探索」と呼びます。読み物では、起業家は見つけた所からまた次の木をたどり始める、入れ子の深さ優先探索のように進んでいるのではないか、と見ています。外れて戻るときも、やってみたことは経験として抱えたままで、戻りながら、伏線を回収するようにまとめていきます。やめずに続ける姿を、pjdhiro は「商いは、飽きない」という言葉と重ねています。</p>
+</div></details><details class="sec" id="一歩の結果が次の一歩の出発になる" open><summary>一歩の結果が、次の一歩の出発になる</summary><div class="secbody">
+
+
+<p><a id="jh-rec"></a>「前の結果に決まりを当てて、次を出す」くり返しを、数学では漸化式と言います。たとえば「前の数を 2 倍する」なら、1, 2, 4, 8, … と進みます。起業家の一歩も、前の一歩の結果から次が始まります。いちばん簡単に書くと、次のくり返しです（読み物では「起業家の漸化式 1」と呼んでいます）。</p>
+<pre><code>今の自分 = はじめの自分
+くり返す:
+  今の自分 = 今の自分 ＋ 人に会って変化した部分</code></pre>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見立て：</strong>漸化式は、起業家のよう。Love と呼びたいものは、重力のようにドリフトする。それは、ジュリア集合の漸化式のようだ。</p>
+</blockquote>
+</div></details><details class="sec" id="ジュリア集合を描く式に当ててみる" open><summary>ジュリア集合を描く式に、当ててみる</summary><div class="secbody">
+
+
+<p><a id="jh-julia"></a>足し算の前に「今の自分を、今の自分で掛ける」一手を入れ、足すものを、一歩ごとに同じだけ引き寄せるもの（Love と呼びたいもの）に替えてみます（読み物では「起業家の漸化式 2」）。</p>
+<pre><code>今の自分 = 今の自分 × 今の自分 ＋ 引き寄せ</code></pre>
+<p>記号で書くと <code>z → z² + c</code>（いまの <code>z</code> を二乗して <code>c</code> を足し、それを次の <code>z</code> にする）で、これをくり返すと現れる込み入った形がジュリア集合です。<code>z</code> と <code>c</code> は、平面の上の一点で表せる数（複素数）で、二乗すると、点は原点から見た角度が二倍になり、原点からの距離が二乗になります。</p>
+<p>読み物は、式の文字に、次のような意味を仮に当てています。</p>
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>式の文字</th>
+<th>仮に当てる意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>z</code></td>
+<td>起業家の脳内の自己。気づくことも、決めることも、その自己の働きに入る</td>
+</tr>
+<tr>
+<td><code>z²</code></td>
+<td>脳内で起きる、自己と自己の掛け算。自己が一つでないなら、掛け合わさった分は、どちらか一つの自己からは出てこない</td>
+</tr>
+<tr>
+<td><code>+ c</code></td>
+<td>Love と呼びたいものが、重力のように、一歩ごとに同じ向きへ同じだけ引き寄せる力</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p><code>z</code> を何と置くかは、いろいろ考えました。決め手は二乗の所です。自分を自分で掛けるには、掛け合わさる自己が、起業家の中に要ります。だから <code>z</code> を、起業家の脳内の自己と置いています。</p>
+<p>自己が一つでない、というのは、脳の研究からも考えられています。神経科学者のスキッパーらは、自己について調べた 912 本の脳画像の研究を集め直し、思い出・体の感じなど十の「自己」ごとに、脳のどこが働くかの地図を作りました。どの地図にも共通する中心の場所は見つからず、自己は、脳のあちこちに分かれた仕組みが、その時々に組み合わさって生まれるものではないか、と書いています（2026 年。専門家の審査を受ける前の論文です。<a href="https://doi.org/10.64898/2026.11.12.766263">原文</a>）。</p>
+</div></details><details class="sec" id="前へ進めると渦遡ると境目" open><summary>前へ進めると渦、遡ると境目</summary><div class="secbody">
+
+
+<p><a id="jh-fig"></a>実際に計算してみます。下の図の <code>c</code> は、一歩ごとに約 137.5°（ひまわりの種の並びにも出てくる黄金角）回り、0.97 倍ずつ寄るように選んだ値です。</p>
+<figure class="glow-card reader-figure jh-figure"><canvas id="jh-cv" width="600" height="600" aria-label="z → z² + c を前へくり返して打った点が、渦を巻いて一か所に寄る様子と、そこから一歩ずつ逆にたどった点が、込み入った境目に散らばる様子と、円いっぱいに放った点が、散るもの・一点へ寄るもの・縁に残るものに分かれる様子の図"></canvas><div class="jh-ctrl" role="group" aria-label="図の操作"><button type="button" id="jh-b-fwd">① 前へ進める</button><button type="button" id="jh-b-back">② 逆にたどる</button><button type="button" id="jh-b-cloud">③ たくさんの点を放つ</button><button type="button" id="jh-b-reset">最初から</button></div><p class="jh-cap" id="jh-cap" aria-live="polite">「① 前へ進める」をクリックすると、0 から式をくり返した点が、一つずつ打たれます。</p><p class="jh-legend" id="jh-legend"><span class="jh-dot" style="background:#e9c46a"></span>前へ進めた点　<span class="jh-dot" style="background:#8fb3ff"></span>逆にたどった点</p></figure>
+
+<p>前へ進めた点は、外へ飛び出さずに、渦を巻いて一か所へ寄っていきます。ところが、その一点から式を逆にたどると、一段ごとに「一つ前」の候補が二つに分かれます（二乗を戻す平方根には、プラスとマイナスの二つがあるからです）。何段もたどると、分かれた点は、ジュリア集合の込み入った境目に散らばります。</p>
+<p>起業家の歩みに当てるなら、実際に通ってきた道は一本ですが、遡ってみると、ありえた別の道が無数に分かれていて、それらは込み入った境目に並んでいる、と読めるかもしれません。</p>
+</div></details><details class="sec" id="そこから立った問い" open><summary>そこから立った問い</summary><div class="secbody">
+
+
+<blockquote class="reader-callout reader-request">
+<p><a id="jh-q"></a><strong>pjdhiro の問い：</strong>ジュリア集合のような何かが、神・愛・美のポテンシャルなのではないか。</p>
+</blockquote>
+<p>ポテンシャルは、ここでは「まだ形になっていないが、そこから何かが生まれうる、場と呼びたいような可能性」の意味です。読み物は、起業家を駆るものが出てくる場が、この境目のような形をしているのではないか、と仮に見ます。</p>
+</div></details><details class="sec" id="美は起業家のエネルギーに近いのではないか" open><summary>美は、起業家のエネルギーに近いのではないか</summary><div class="secbody">
+
+
+<p><a id="jh-beauty"></a>この問いに、読み物は、美の定義から近寄ります。お寺や教会、美術品などを前にして、美しいのに畏れを感じることがあります。美は、美しさと恐ろしさの入り乱れたところから出るのではないか。その出てくる場は、神や愛の出てくる場と同じで、心を惹きつけるという点で同じなのではないか。もしもそうなら、その場はジュリア集合のような形をしていて、愛で駆動するプロジェクトの場も、そこから生まれるのかもしれません。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>美とは、起業家のエネルギーと近い。</p>
+</blockquote>
+<p>あいだには飛躍があります。それでも、起業家が何かに惹きつけられて動き出すときのものと、美しいものに心を惹かれるときのものは、同じなのかもしれない、という仮説です。</p>
+</div></details><details class="sec" id="当初の直感からたくさんの点を前へ打つ" open><summary>当初の直感から、たくさんの点を前へ打つ</summary><div class="secbody">
+
+
+<p><a id="jh-cloud"></a>ここまでは、0 という一つの出発点から打った一本の道を見てきました。pjdhiro がはじめに思い描いていたのは、別の絵でした。たくさんの点をいっせいに前へ打つと、ほとんどは外へ散って残らず、残ったものが一点へ寄っていく、という絵です。読み物の第五部は、この直感の側から、同じ式を読み直します。</p>
+<p>上の図の「③ たくさんの点を放つ」をクリックすると、半径 2 の円いっぱいに点を放って、いっせいに前へ進めます。円を超えた点は、外へ散って戻りません。内側に落ちた点は、渦を巻きながら一点へ寄っていきますが、何歩打っても、その一点に届くことはありません。散りもせず、寄りもせずに残るのは、境目（ジュリア集合の縁）の上にあった点だけです。縁の点は一歩ごとに入れ替わりながら、縁という形だけが保たれます。</p>
+<p>読み物は、この縁に残る点の雲を「私」と読みます。そして Love を二つの面に分けて置きます。一歩ごとに同じだけ足される <code>c</code> は、重力のように一定の Love。内側の点が寄っていく一点は、届かないけれど惹かれる Love です。</p>
+</div></details><details class="sec" id="三つの星を星座のように結ぶ" open><summary>三つの星を、星座のように結ぶ</summary><div class="secbody">
+
+
+<p><a id="jh-stars"></a>最後に、読み物は全体を星座にたとえます。式の中には、三つの星があります。一歩ごとに同じだけ引き寄せる一定の力（<code>c</code>）、一か所へ寄ろうとする渦のような軌跡、その軌跡を惹きつける届かない一点です。星はそこに在り、星座の線は見る人が引きます。pjdhiro は、この三つを結びながら、その向こうに、半径の円の外という全体、宇宙を感じていたのかもしれない、と振り返っています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>私は、発散したものによってそれ以外になり、収束したものによってそれ以外になり、私は私以外のものの間にギリギリ保っている瞬間のようなもの。</p>
+</blockquote>
+<p>外へ散ったものでも、一点へ寄ったものでもなく、そのあいだの縁にギリギリ保たれている雲が「私」なのかもしれない、ということです。ジュリア集合は、その軌跡を眺めるために付けた星座の名のようなもので、神・愛・美のポテンシャルは、その縁に感じられる所なのかもしれない、と読み物は結びます。</p>
+<div class="reader-lead"><span class="reader-lead__label">読むときの注意</span>
+<p>式への当てはめは、どれも仮説です。こじつけに見えるかもしれません。pjdhiro はそれを否定せず、当てはめてみることで考えを広げる（発散思考の）足場にしたい、と書いています。正しいかどうかより、「自分の進み方にも当てはまるところはあるか」と考えるきっかけとして読んでください。</p>
+</div>
+
+<details class="acc"><summary>出典</summary>
+
+<ul>
+<li>もとの読み物：<a href="julia-potential.html">起業家の漸化式と、ジュリア集合</a>。図と文は Claude がまとめたものです。</li>
+<li>数学の出典：J. Milnor (1990) "<a href="https://arxiv.org/abs/math/9201272">Dynamics in One Complex Variable: Introductory Lectures</a>"。</li>
+</ul>
+</details>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="julia-potential.html">起業家の漸化式と、ジュリア集合</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script src="../src/julia-potential-hs-figure.js" defer></script>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

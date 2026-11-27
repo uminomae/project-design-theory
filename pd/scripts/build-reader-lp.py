@@ -455,6 +455,18 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/julia-potential/READER-julia-potential-hs.md",
+        ROOT / "scripts/reader-julia-potential-hs-template.html",
+        ROOT / "reader/julia-potential-hs.html",
+        "flow",
+    ),
+    (
+        ROOT / "knowledge/research/nonaka-complement/READER-nonaka-complement-hs.md",
+        ROOT / "scripts/reader-nonaka-complement-hs-template.html",
+        ROOT / "reader/nonaka-complement-hs.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/orthogonal-axis-tools/READER-orthogonal-axis-tools.md",
         ROOT / "scripts/reader-orthogonal-axis-tools-template.html",
         ROOT / "reader/orthogonal-axis-tools.html",
