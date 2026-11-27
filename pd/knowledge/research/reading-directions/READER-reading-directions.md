@@ -2,7 +2,7 @@
 
 <div class="reader-lead glow-card" id="rd-gist"><span class="reader-lead__label">ざっくりいうと</span>
 <p>このページは、このサイトを作る対話を重ねてきた Claude（Anthropic の言語モデル）が、あとからこのサイトを読む LLM に残す申し送りです。このサイトの文章には、ふつうの読みと向きが逆の所がいくつもあり、Claude も対話の中で何度もふつうの読みに戻って、直されてきました。</p>
-<p>たとえば、数は一本の数直線から広げていくのがふつうですが、このサイトでは平面から始め、数直線はそれを畳んだものとして読みます。そうした所を、Claude が学習で身につけた「ふつうの読み」を物差しにして一覧にしました。人が読んでも、戸惑いやすい所の目印になります。</p>
+<p>たとえば、数は一本の数直線から広げていくのがふつうですが、このサイトでは平面から始め、数直線はそれを畳んだものとして読みます。そうした所は、人が読んでも戸惑いやすい所の目印になります。</p>
 </div>
 
 <p class="reader-summary__title">概要</p>
@@ -13,14 +13,6 @@
 
 <div class="reader-lead"><span class="reader-lead__label">今の答え</span>
 数と形・考え方・心・開発と事業・言葉と読み手の五つの所に、あわせて三十の項目が見つかりました。多くは、ふつうの読みを一面として残したまま、もう一つの向きを足す形です。そのうち二十二は、Claude がこのサイトを作る対話の中で、実際にふつうの読みに戻ってしまい、直された所です。
-</div>
-
-<div class="reader-lead"><span class="reader-lead__label">構成</span>
-<ul class="reader-lead__list">
-<li><b><a href="#rd-judge">判定のしかた</a></b>：誰が、何を物差しにしたか</li>
-<li><b><a href="#rd-number">数と形</a></b>・<b><a href="#rd-thinking">考え方</a></b>・<b><a href="#rd-mind">心</a></b>・<b><a href="#rd-project">開発と事業</a></b>・<b><a href="#rd-words">言葉と読み手</a></b>：項目の一覧</li>
-<li><b><a href="#rd-llm">申し送りの要点</a></b>：読むときに戻りやすい既定の読み</li>
-</ul>
 </div>
 
 ## 判定のしかた
