@@ -200,7 +200,7 @@ export const TRANSLATIONS = {
     "section.direction.label": "Drivers",
     "section.direction.title": "プロジェクトの駆動源",
     "section.falling.body":
-      "意図してすること（Doing）でも、ただ起きていること（Being）でもなく、Love と呼びたい何かに引かれて、私という場所で起きてしまうこと。恋に落ちる（fall in love）、惚れる、のように、自分からするのでも、させられるのでもない、能動と受動のあいだの、中動の動きです。プロジェクトの駆動源は、ここにあります。",
+      "意図してすること（Doing）でも、ただ起きていること（Being）でもなく、Love と呼びたい何かに引かれて、私という場所で起きてしまうこと。恋に落ちる（fall in love）、惚れる、のように、私は起きていることの外にいるのでなく、その内側にいます。そして、なってしまうことと、なろうとすることが、見分けられるまま、一つの動きになっています。どちらも、中動と呼ばれる動きの面です。プロジェクトの駆動源は、ここにあります。",
     "repo.loveDrivenDev": "Love駆動開発と呼びたいもの β",
     "repo.loveDrivenDevDesc":
       "何に駆られてプロジェクトを行うのか。人やプロジェクトを動かしているもの（駆動源）が何かを探す読み物",
@@ -416,7 +416,7 @@ export const TRANSLATIONS = {
     "section.direction.label": "Drivers",
     "section.direction.title": "What Drives Projects",
     "section.falling.body":
-      "Neither what we intend to do (Doing) nor what is simply happening (Being): being drawn by something I want to call Love, so that it happens, with me as the place where it happens. Like falling in love, it is a movement we neither do on our own nor are made to do: the middle voice, between active and passive. What drives projects lies here.",
+      "Neither what we intend to do (Doing) nor what is simply happening (Being): being drawn by something I want to call Love, so that it happens, with me as the place where it happens. As in falling in love, I am not outside what is happening but inside it. And what I end up becoming and what I try to become stay distinguishable while moving as one. Both are faces of what is called the middle voice. What drives projects lies here.",
     "repo.loveDrivenDev": "What I Want to Call Love-Driven Development (beta)",
     "repo.loveDrivenDevDesc":
       "What am I driven by when I carry out a project? A reader that looks for what moves people and projects (the driving source)",
