@@ -162,4 +162,4 @@ e は、高校では数学 III で習います。オイラーの式は、高校�
 
 <!--OPEN-->
 
-<a id="ar-more"></a>複素数が関わる数学を一つずつ見ていくページの目次は、「[複素平面で考える](complex-plane.html)」にあります。その全体に通る見方を、オイラーの等式を立体の回転を書く数（四元数）で開きながら見渡すページは、「[オイラーの等式が、たたんだもの](euler-unfolded.html)」です。このページの言い方で読める独立ページは、「[オイラーの式](euler-formula.html)」「[代数学の基本定理](fundamental-theorem-of-algebra.html)」です。立体の中で回すことは、読み物「[回転の掛け算](rotation-multiplication.html)」の四元数の章にあります。
+<a id="ar-more"></a>複素数が関わる数学を一つずつ見ていくページの目次は、「[複素平面で考える](complex-plane.html)」にあります。その全体に通る見方を、禅の円と単位円は似ていないか、という問いから、単位円を基本に並べ直して見渡すページは、「[オイラーの等式が、たたんだもの](euler-unfolded.html)」です。このページの言い方で読める独立ページは、「[オイラーの式](euler-formula.html)」「[代数学の基本定理](fundamental-theorem-of-algebra.html)」です。立体の中で回すことは、読み物「[回転の掛け算](rotation-multiplication.html)」の四元数の章にあります。
