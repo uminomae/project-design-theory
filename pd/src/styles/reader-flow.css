@@ -651,6 +651,8 @@ body.reader-flow a.jump-hit { animation: jump-hit 2.4s ease-out; border-radius: 
     body.reader-flow .reader-article .tablefit.cf-stack td:nth-child(3)::before { content: "当たるページ"; }
     body.reader-flow .reader-article .tablefit.cf-stack td:nth-child(4)::before { content: "根拠（ページの本文から）"; }
     body.reader-flow .reader-article .tablefit.cf-stack td:nth-child(5)::before { content: "注"; }
+    /* 二列の扱い方の表（同じページの「二つの枠組みの結果」・2026-11-27） */
+    body.reader-flow .reader-article .tablefit.cf-stack.cf-how td:nth-child(2)::before { content: "項目（社会人基礎力／SSES）"; }
 }
 
 /* 三列の面の表（inseparable-abilities）：狭い幅では一行を一枚に積み、二列目からは列の名を頭に出す（cf-stack と同じ形・2026-11-26） */
