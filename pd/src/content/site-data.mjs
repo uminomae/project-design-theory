@@ -170,9 +170,9 @@ export const TRANSLATIONS = {
     "overview.p1":
       "プロジェクトデザインとは、プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営みです。",
     "overview.p2":
-      "Doing（やること）・Being（起きていること）・Falling（引かれて起きてしまうこと）の三つを基底として、議論を整理します。",
+      "定義・射程・領域で枠を決め、その中を、Doing（やること）・Being（起きていること）・Falling（引かれて起きてしまうこと）の三つを基底として整理します。",
     "overview.p3":
-      "やることは、環境適応と感情処理に分けます。環境適応には、経営学と能力を置きます。PMBOK などの物質的条件は、前提知とします。",
+      "やることには、経営学・能力・感情処理を置きます。PMBOK などの物質的条件は、前提知とします。",
     "overview.definition.title": "定義",
     "overview.definition.item1": "プロジェクトの構想・設計・実行",
     "overview.definition.item2": "実行・管理方法の構想・設計",
@@ -394,9 +394,9 @@ export const TRANSLATIONS = {
     "overview.p1":
       "Project Design is a practice that not only envisions, designs, and executes projects, but also takes the methods of execution and management themselves as its object of inquiry, and envisions and designs them.",
     "overview.p2":
-      "We organize the discussion on three bases: Doing (what we do), Being (what is happening), and Falling (what happens as we are drawn in).",
+      "We set the frame with the definition, scope, and domain, and organize what lies within it on three bases: Doing (what we do), Being (what is happening), and Falling (what happens as we are drawn in).",
     "overview.p3":
-      "Doing is divided into environmental adaptation and emotional processing. Environmental adaptation holds management studies and abilities. Material conditions such as PMBOK are treated as prerequisite knowledge.",
+      "Doing holds management studies, abilities, and emotional processing. Material conditions such as PMBOK are treated as prerequisite knowledge.",
     "overview.definition.title": "Definition",
     "overview.definition.item1":
       "Envisioning, designing, and executing projects",
