@@ -213,8 +213,6 @@ export const TRANSLATIONS = {
     "section.falling.title": "引かれて起きてしまうこと",
     "section.falling.body":
       "意図してすること（Doing）でも、ただ起きていること（Being）でもなく、Love と呼びたい何かに引かれて、私という場所で起きてしまうこと。恋に落ちる（fall in love）、惚れる、のように、自分からするのでも、させられるのでもない、能動と受動のあいだの、中動の動きです。プロジェクトの駆動源は、ここにあります。",
-    "section.direction.body":
-      "本ページで固定した射程と領域、Doing・Being・Falling の三つは、基底（土台・骨格）です。以降の各ページは、この骨格の上に展開します。",
     "repo.loveDrivenDev": "Love駆動開発と呼びたいもの β",
     "repo.loveDrivenDevDesc":
       "何に駆られてプロジェクトを行うのか。人やプロジェクトを動かしているもの（駆動源）が何かを探す読み物",
@@ -444,8 +442,6 @@ export const TRANSLATIONS = {
     "section.falling.title": "Falling",
     "section.falling.body":
       "Neither what we intend to do (Doing) nor what is simply happening (Being): being drawn by something I want to call Love, so that it happens, with me as the place where it happens. Like falling in love, it is a movement we neither do on our own nor are made to do: the middle voice, between active and passive. What drives projects lies here.",
-    "section.direction.body":
-      'The scope and domain, and the three of Doing, Being, and Falling, established on this page are the foundation (base and skeleton). Each subsequent page develops upon this skeleton.',
     "repo.loveDrivenDev": "What I Want to Call Love-Driven Development (beta)",
     "repo.loveDrivenDevDesc":
       "What am I driven by when I carry out a project? A reader that looks for what moves people and projects (the driving source)",
