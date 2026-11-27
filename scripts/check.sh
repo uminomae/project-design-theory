@@ -49,6 +49,8 @@ run "cs・as：記録が書いた wiki の誤りの残り（知らせるだけ�
 # 当たりが 0 になったものは、--strict <名前> を付けて「止める」に上げる（名前は names・sections・tables）。
 # 記録の作業の節は 2026-11-10 に 0 になったので、止める（--strict sections）。ほかの二つは知らせるだけ。
 run "公開のページと記録（作業の節と、Issue・探索の記録を読者に指すものは止める。ほかは知らせるだけ）" node scripts/check-public-notices.mjs --strict sections,workrefs
+# 読み物の「ざっくりいうと」が一段落 140 字・五段落（ふだんは三段落）を超えるページの数。止めずに知らせるだけ（writing.md §5-16・2026-11-27）。0 になったら止めるに上げる。
+run "pd：ざっくりいうとの長さ（知らせるだけ）" python3 -I pd/scripts/gist-length-check.py --count
 run "as：テスト" bash -c 'cd as && node --test tests/*.test.mjs'
 run "ks：config の整合" bash -c 'cd ks && node tests/config-consistency.test.js'
 run "ks：config の export" bash -c 'cd ks && node --experimental-vm-modules tests/config-exports.test.js'
