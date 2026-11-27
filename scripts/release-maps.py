@@ -88,9 +88,9 @@ def kaken():
     w("")
     w("`docs/RELEASE-STAGES.md` 3.2（D 人類の man の範囲）の段 1 の下書き。このファイルは `python3 -I scripts/release-maps.py` が `kaken-assign.tsv` から作る。手で直さず、TSV を直して作り直す。")
     w("")
-    w("- 基準：科研費の審査区分表（文部科学省。令和 10 年度の公募から使う版。https://www.mext.go.jp/content/20261021-mxt_gakujokik-000052128_01.pdf の「審査区分表（中区分種目）」）。小区分は `kaken-kubun-r10.tsv` に機械で抜いた。")
+    w("- 基準：科研費の審査区分表（文部科学省。令和 10 年度の公募から使う版。https://www.mext.go.jp/content/20261021-mxt_gakujokik-000052128_01.pdf の「審査区分表（中区分種目）」）。小区分は `kaken-kubun-r10.tsv` に機械で抜き、2026-11-27 に「審査区分表（小区分種目）」と巻末索引で照らし直した（296）。")
     w("- 当てたもの：`pd/reader/*.html` の全ページと、cs の 30 分野（`cs/evidence/evidence-Dxx-*.md` の論ごとの節）。")
-    w("- 当て方は Claude の読み（2026-11-26）。ページは題・説明・見出しを、cs は論の名と著者を読み、区分表の「内容の例」のどこに入るかで当てた。主に扱う区分だけを置いた。別のコンテキストで照合し直す前の下書き。")
+    w("- 当て方は Claude の読み（2026-11-26 に題・説明・見出しから当て、2026-11-27 に別のコンテキストで本文を開いて照合し直した）。ページは本文の章のどれかが、その小区分の「内容の例」の語を主題にしていれば当て、一段・一節・畳み一つ・表の一行・入口のたとえだけなら当てない。cs は論ごとの節が「内容の例」に入るかで当てた。判定を変えた行と理由は `kaken-recheck-20261127.md`。")
     w("")
     w("## 数")
     w("")
@@ -103,7 +103,7 @@ def kaken():
     w(f"| 読み物のページ | {n['pages']}（区分に当てた {n['mapped_pages']}・当てない {len(n['unmapped'])}） |")
     w(f"| cs の分野 | {n['cs']}（どれも一つ以上の区分に当てた） |")
     w("")
-    w(f"区分に当てないページ：{'・'.join(n['unmapped'])}。並びや目次のページ（中身は呼ぶ先のページの側）と、このサイトを測った結果のページと、pjdhiro の一年の記録（love-trajectory）。")
+    w(f"区分に当てないページ：{'・'.join(n['unmapped'])}。並び・目次・道案内・転送のページ（中身は呼ぶ先のページの側）と、このサイトを測った結果のページと、pjdhiro の一年の記録（love-trajectory）。")
     w("")
     w("区分の中に場所が無いもの：Love駆動開発そのもの（経営学・臨床心理学・仏教学に触れるが、どれかの区分の研究ではない）、cs の D30 の伝統知そのもの（TEK・メーティスなどの論は区分に入る）。")
     w("")
@@ -165,14 +165,14 @@ LEVELS = [
     ("1 行動（未熟）", ["行動化", "助けを拒む不平", "受動的攻撃"]),
 ]
 STAGES = [
-    ("E2", "衝動（Impulsive）", "衝動（2）"),
-    ("E3", "自己保護（Self-Protective）", "自己保護（2/3）"),
-    ("E4", "順応（Conformist）", "順応（3）"),
-    ("E5", "自己意識（Self-Aware）", "専門家（3/4）"),
-    ("E6", "良心（Conscientious）", "達成者（4）"),
-    ("E7", "個人主義（Individualistic）", "多元（4/5）"),
-    ("E8", "自律（Autonomous）", "戦略家（5）"),
-    ("E9", "統合（Integrated）", "構成への気づき（5/6）以降"),
+    ("E2", "衝動（Impulsive・I-2）", "衝動（2）"),
+    ("E3", "自己保護（Self-Protective・Δ）", "自己保護（2/3）"),
+    ("E4", "順応（Conformist・I-3）", "順応（3）"),
+    ("E5", "自己意識（Self-Aware・I-3/4）", "専門家（3/4）"),
+    ("E6", "良心（Conscientious・I-4）", "達成者（4）"),
+    ("E7", "個人主義（Individualistic・I-4/5）", "多元（4/5）"),
+    ("E8", "自律（Autonomous・I-5）", "戦略家（5）"),
+    ("E9", "統合（Integrated・I-6）", "構成への気づき（5/6）以降"),
 ]
 
 
@@ -208,8 +208,9 @@ def kokoro():
     w("")
     w("- 台帳：`docs/tools/kokoro-scan/ruler.md` 版 1.12 の「よくある誤解（台帳）」46 項。番号 R01〜R46 は台帳の並び順。")
     w("- DMRS：Di Giuseppe & Perry 2021（*Frontiers in Psychology* 12:718440, https://doi.org/10.3389/fpsyg.2021.718440）の 7 水準・30 の防衛。防衛の名の訳は `pd/reader/defense-mechanisms.html` の表のとおり（本文照合済の写しは `pd/knowledge/research/defense-mechanisms/SURVEY-classifications-20261122.md` §5）。")
-    w("- WUSCT：Hy & Loevinger 1996（*Measuring Ego Development*, 2nd ed.）の段階 E2〜E9。E 番号と英語の名は記憶で、原典は未照合。repo のページはクック＝グロイター 2013 の呼び名を使うので、横に並べた（対応はクック＝グロイター 2013 が括弧で書く Loevinger の段階の番号による。`pd/knowledge/research/developmental-stages/README.md` §1・§2）。")
-    w("- 当て方は Claude の読み（2026-11-26）。DMRS は、その誤解の中で働いている防衛か、誤解が見落としている防衛を一つから三つ。WUSCT は、その誤解が出やすい段階か、同じ語の向きが反転する境目の段階を、クック＝グロイター 2013 の段階ごとの主な不安と防衛から読んだ。防衛でない取り違え（語の水準・定義の混同）と、段階の根拠が repo に無いものは「—」。別のコンテキストで照合し直す前の下書き。")
+    w("- WUSCT：Hy & Loevinger 1996（*Measuring Ego Development*, 2nd ed.）の段階 E2〜E9。段階の英語の名と I の符号（I-2・Δ・I-3・I-3/4・I-4・I-4/5・I-5・I-6）、36 項目で採点することは Loevinger 1979（*Applied Psychological Measurement* 3(3):281–311, https://doi.org/10.1177/014662167900300301・写し https://hdl.handle.net/11299/99630 の Table 1 p.283・pp.281–284）の本文で照合した。1979 年の表では I-3/4 と I-4/5 に段階の名が無く、本文は I-3/4 を順応から良心への移り目、I-4/5 を個人主義の水準と呼ぶ。E の番号と、I-3/4 の名「Self-Aware」は Hy & Loevinger 1996 の形で、その本文は読めず未照合。repo のページはクック＝グロイター 2013 の呼び名を使うので、横に並べた（対応はクック＝グロイター 2013 が括弧で書く Loevinger の段階の番号による。`pd/knowledge/research/developmental-stages/README.md` §1・§2）。")
+    w("- 当て方は Claude の読み（2026-11-26）。DMRS は、その誤解の中で働いている防衛か、誤解が見落としている防衛を一つから三つ。WUSCT は、その誤解が出やすい段階か、同じ語の向きが反転する境目の段階を、クック＝グロイター 2013 の段階ごとの主な不安と防衛から読んだ。防衛でない取り違え（語の水準・定義の混同）と、段階の根拠が repo に無いものは「—」。")
+    w("- 照合し直し（2026-11-27）：作った側と別のコンテキストで、項ごとに (1) 防衛と段階の名と水準が原典のとおりか、(2) 項の文が防衛の定義（Di Giuseppe & Perry 2021 の各防衛の Definition と Function の節）と段階の記述（Loevinger 1979 pp.281–282）に本当に重なるか、(3) 当て漏れと当てすぎ、を見た。名と水準は原典のとおりだった。変えた項と理由は下の「照合し直しで変えたもの」（正本 `kokoro-recheck.tsv`）。")
     w("")
     w("## 数")
     w("")
@@ -246,6 +247,14 @@ def kokoro():
         d = "・".join(codes(r[4])) or "—"
         s = "・".join(codes(r[5])) or "—"
         w(f"| {r[0]}{' ★' if r[2] == '★' else ''} | {r[1]} | {r[3]} | {d} | {s} | {r[6]} |")
+    w("")
+    w("## 照合し直しで変えたもの（2026-11-27）")
+    w("")
+    w("| 番号 | 列 | 前 | 後 | 理由 |")
+    w("|---|---|---|---|---|")
+    for r in rows("kokoro-recheck.tsv"):
+        f = lambda s, col: "同じ" if s == "同じ" else ("・".join(codes(s)) or "—")
+        w(f"| {r[0]} | {r[1]} | {f(r[2], r[1])} | {f(r[3], r[1])} | {r[4]} |")
     w("")
     data = dict(
         counts=n,

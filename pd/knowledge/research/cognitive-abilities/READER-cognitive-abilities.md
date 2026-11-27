@@ -1,168 +1,37 @@
-# 頭脳の能力は、どう分けられてきたか
+# 頭脳の能力とされてきたもの
 
 <p class="reader-summary__title">概要</p>
 
-<p class="reader-lead"><span class="reader-lead__label">問い</span>頭の能力は、これまでどう分けられてきたのでしょうか。時の試練を超えて、いま信頼されている分け方は何で、まだ測られていない所はどこでしょうか。</p>
+<p class="reader-lead"><span class="reader-lead__label">問い</span>頭の能力とされてきたものは、これまでどう分けられてきたのでしょうか。時の試練を超えて、いま信頼されている分け方は何で、まだ測られていない所はどこでしょうか。</p>
 
-このページは、「考える」ことを一つずつ分けて見るページの一つで、その道案内は「[思考とは](thinking.html)」にあります。pjdhiro の問いに、Claude が原典を読んで答える形で書いています。始まりは、考える力について話していたときの、pjdhiro の次の言葉です。
+このページは、「[能力とは](abilities.html)」の中で、頭の能力とされてきたものを見るページへの道案内です。pjdhiro の問いに、Claude が原典を読んで答える形で書いています。始まりは、考える力について話していたときの、pjdhiro の次の言葉です。
 
 <strong>pjdhiro の問い：</strong>思考とは、推論とは、頭脳の能力と呼ばれてきたものたちの分類と時の試練を超えた現在の整理の仕方、新しく注目されている能力、思考と心理と身体知が分けられないものなど。それぞれが独立モジュールになるかもしれないくらい広い分野です。
 
-<div class="reader-lead"><span class="reader-lead__label">今の答え</span>
-いちばん長く信頼を積んできたのは、知能検査の点の相関から能力を分ける整理です。スピアマンは 1904 年に、どの試験にも共通の働きが顔を出すと書きました。のちに、その場で新しい問題を解く流動性知能と、身につけた知識の結晶性知能が分けられ、いまは、狭い能力・広い能力・一般の能力の三つの層で並べる CHC と呼ばれる整理が、この分野の共通の言葉になっています。知能検査の外では、実行機能と作業記憶が、別の筋で分けられてきました。一方、多重知能や右脳・左脳の分け方は、広く知られましたが、測定では支えられませんでした。このページで読んだ、測られて残った整理の中に、仮説を思いつく力という名の能力はありません。創造に当たる能力は、速く数多く出す流暢さとして置かれています。
-<ul class="reader-lead__list">
-<li><b><a href="#ca-g">一つの働きが、どの試験にも顔を出す</a></b>：スピアマンの一般因子です。</li>
-<li><b><a href="#ca-gfgc">新しい問題を解く力と、身につけた知識</a></b>：流動性知能と結晶性知能です。</li>
-<li><b><a href="#ca-chc">いまの整理は、三つの層で並べる</a></b>：CHC と、その中の推論の能力です。</li>
-<li><b><a href="#ca-ef">知能検査の外で分けられてきた、頭の働き</a></b>：実行機能と作業記憶です。</li>
-<li><b><a href="#ca-myth">広く知られたが、測定で残らなかった分け方</a></b>：多重知能・右脳と左脳・学習スタイルです。</li>
-<li><b><a href="#ca-gap">測られていない所</a></b>：仮説を思いつく力と、創造の席です。</li>
-</ul>
-</div>
+<a id="ca-thinking-intelligence"></a>思考（「考える」という働き）と知能（その働きに表れる、人による差として測られてきたもの）は、重なり合いますが、同じものではありません。
 
-<p class="reader-lead"><span class="reader-lead__label">注意</span>このページは、能力の分け方を並べるもので、誰かの能力を測ったり比べたりするものではありません。英文の訳は Claude です。</p>
+<details><summary>詳しく — 思考と知能は、どう並べて扱われてきたか</summary>
 
-## 一つの働きが、どの試験にも顔を出す
+大学の入門の教科書の一つ『Psychology 2e』（OpenStax）の第 7 章は、思考と知能を一つの章で並べて扱います。章の始めは、知能とは何か、人によってどう違うのか、と問い、この章で思考と知能を学ぶ、と書きます。章の節は、認知とは・言語・問題解決・知能と創造性・知能の測り方・知能の源、の六つです。
 
-<!--OPEN-->
-
-<a id="ca-g"></a>たとえば、国語のよくできる生徒が、数学もそこそこできる、ということはよくあります。科目は違うのに、点どうしが同じ向きにそろう。この「そろい方」から、頭の能力の分け方の研究は始まりました。
-
-心理学者のスピアマンは、1904 年の論文で、学校の生徒の古典語・フランス語・英語・数学の成績と、音の高さなどを聞き分ける感覚の弁別の成績とのあいだの相関を調べました。そして、知的な活動がどれほど違って見えても、それらの相関は、みな共通の根本の働き（または働きの群）を、それぞれ違う程度に含んでいることから来ている、と書きました。個々の試験は、その一つの大きな共通の働きを、別々に見積もったものだ、というのです。残りの部分は、活動ごとにまったく違う、特殊な要素だとしました。
-
-この共通の働きは、のちに一般因子、記号で g と呼ばれるようになります。ただ、スピアマン自身は、この論文の結論で、その働きの物理的な性質を論じるのは、もっと事実が分かるまで控える、と書いています。本文でも、共通の働きを「一つ（または働きの群）」と書いています。
-
-<details><summary>詳しく — g は一つのものなのか</summary>
-
-点どうしが同じ向きにそろうこと（研究者は positive manifold と呼びます）は、今もくり返し確かめられています。けれど、それを一つの g で説明するかどうかは、ずっと争われてきました。
-
-ファン・デル・マースらは 2006 年に、g を置かない模型を示しました。頭の働きどうしが、育つあいだに互いを助け合うだけで、点どうしのそろいは生まれる、というものです。この模型では、一つの g は何の役もしません。それでも著者たちは、知能のデータを説明し切るには、一つの g・多くの働きの重なり・助け合い、の三つの説明の要素がどれも要るのかもしれない、と結んでいます。
-
-章「いまの整理は、三つの層で並べる」で見る CHC の整理でも、g を一番上に置くかどうかが、二つの源の最大の違いとして残っています。
+心理学者のスタノヴィッチとウェストは、2014 年の記事で、ふつうに測られる知能は、大事な認知の領域、つまり思考そのものの領域を取りこぼしている、と書きました。確率の推論や科学の推論の課題と知能との相関は、およそ .20 から .35 の範囲だった、と紹介し、この大きさの相関では、知能と合理性のあいだに大きな食い違いが起こりうる、と書いています。
 
 </details>
 
 <details><summary>出典</summary>
 
-出典：Spearman, C. ([1904](https://doi.org/10.2307/1412107)) "General intelligence," objectively determined and measured. *American Journal of Psychology* 15(2), 201–293（[York 大学の Classics in the History of Psychology の転記](https://psychclassics.yorku.ca/Spearman/)と、JSTOR Early Journal Content の誌面の走査〔[Internet Archive](https://archive.org/details/jstor-1412107)・パブリックドメイン〕で本文照合済。比べた学業と弁別は第 5 章、「one great common Intellective Function」は p.272、「variously saturated with some common fundamental Function (or group of Functions)」は p.273、働きの性質の議論を控える結論 VI は p.284）。van der Maas, H. L. J., Dolan, C. V., Grasman, R. P. P. P., Wicherts, J. M., Huizenga, H. M., & Raijmakers, M. E. J. ([2006](https://doi.org/10.1037/0033-295X.113.4.842)) A dynamical model of general intelligence: The positive manifold of intelligence by mutualism. *Psychological Review* 113(4), 842–861（第一著者の大学の頁に置かれた出版社の版の [Wayback の記録](https://web.archive.org/web/20140322174858/http://hvandermaas.socsci.uva.nl:80/Homepage_Han_van_der_Maas/Intelligence_files/psyrev4.pdf)で本文照合済。「A single underlying g factor plays no role in the model」は p.842、三つの説明の要素は p.856）。
+出典：Spielman, Jenkins & Lovett (2020) *Psychology 2e*, OpenStax（CC BY-NC-SA）。第 7 章の[始め](https://openstax.org/books/psychology-2e/pages/7-introduction)（「What is intelligence, and how does it vary from person to person?」「These questions and more will be explored in this chapter as you study thinking and intelligence.」と、六つの節の題）で本文照合済。／Stanovich, K. E., & West, R. F. (2014) "[What intelligence tests miss](https://www.bps.org.uk/psychologist/what-intelligence-tests-miss)", *The Psychologist*（英国心理学会。2014 年 2 月 15 日。記事の頁で本文照合済。「intelligence, as conventionally measured, leaves out critical cognitive domains – domains of thinking itself」と、相関の「roughly (in absolute magnitude) in the range of .20 to .35 for probabilistic reasoning tasks and scientific reasoning tasks」と、「a magnitude of correlation that allows for substantial discrepancies between intelligence and rationality」）。
 
 </details>
 
-## 新しい問題を解く力と、身につけた知識
+## 頭の能力とされてきたものを見るページ
 
 <!--OPEN-->
 
-<a id="ca-gfgc"></a>初めて見るパズルを解くことと、漢字の読みを答えることは、どちらも「頭がいい」と言われますが、使っているものが違うように見えます。この違いを、心理学者のキャッテルは二つの知能として分けました。
-
-レーヴンの行列検査（図形の並びの決まりを見つけて、欠けた所に入る図形を選ぶ検査）を調べたカーペンターらは、1990 年の報告で、この分け方をこう紹介しています。学校や前の経験から得た知識にあまり頼らずに、新しい情報で推論し、問題を解く力を、キャッテルの理論は流動性知能と呼び、経験で結晶した知識と技能をより直に映す結晶性知能と対にしてきた。
-
-いまの整理の言葉では、流動性知能（Gf）は、自動ではできない新しい問題を、意図して制御した心の操作で解くこと、結晶性知能（Gc）は、文化の中で身につけて、自分のものにした知識です。
-
-カーペンターらが調べたレーヴンの行列検査は、流動性知能を測る代表の検査です。報告は、その問題を「視覚の類推の問題」の集まりと呼んでいます。報告の結論では、この検査が測っているのは、問題を扱える区切りに分けて一つずつ攻める、だれにも共通の力と、目標と下位の目標の階層を扱う力の差、高い抽象を作る力の差だ、としています。
-
-<details><summary>出典</summary>
-
-出典：Carpenter, P. A., Just, M. A., & Shell, P. ([1990](https://doi.org/10.1037/0033-295X.97.3.404)) What one intelligence test measures: A theoretical account of the processing in the Raven Progressive Matrices Test. *Psychological Review* 97(3), 404–431（同じ題の技術報告 ONR90-1〔Carnegie Mellon 大学・1990-04-03・公開の許し付き〕を、米国国防技術情報センター〔DTIC〕に置かれた版の [Wayback の記録](https://web.archive.org/web/20210408070750/https://apps.dtic.mil/sti/pdfs/ADA221448.pdf)で本文照合済。頁は報告の頁。流動性知能と結晶性知能の紹介は p.2、「visual analogy problems」は表紙の要旨、測っているものの結論は p.33）。Gf と Gc の今の定義は、次の章の McGrew (2009) の表 1（p.5）。キャッテルの 1963 年の論文そのものは、出版社の有料の版のほかに、無料で読める版が見つからず、読んでいません。
-
-</details>
-
-## いまの整理は、三つの層で並べる
-
-<!--OPEN-->
-
-<a id="ca-chc"></a>キャッテルとホーンの二つの知能の論と、キャロルが 1993 年の本で、それまでの因子分析の研究の 460 を超えるデータを分析し直して組んだ論は、いまは CHC（三人の頭文字）という一つの傘の名で呼ばれています。心理学者のマグルーは 2009 年に、この二つが、人の知能の組み立てを理解するための、心理測定にもとづく合意の模型になった、と書きました。
-
-CHC の整理では、能力を三つの層で並べます。一番下の第一層に、それぞれの検査が測る狭い能力を、その上の第二層に、狭い能力を束ねる広い能力（流動性知能 Gf・結晶性知能 Gc・視覚の処理・聴覚の処理・記憶の能力 など）を、一番上の第三層に一般の能力 g を置きます。マグルーは、キャロルとキャッテル・ホーンの違いの一つ目に、この第三層に g を置くか置かないかを挙げています。ホーンは g に強く反対し、統計から出てくる抽象と見ていました。
-
-推論は、流動性知能（Gf）の下の狭い能力として置かれています。狭い能力は五つあり、そのうち推論の形に当てられるのは次の三つです。定義は、マグルーの定義の稿のとおりです。ほかの二つは、ピアジェの発達の理論の概念で測る推論と、推論の速さです。
-
-<div class="tablefit">
-
-| 狭い能力 | 定義（マグルーの稿の要約） | 推論の形でいうと |
-|---|---|---|
-| 帰納（I） | 一つの問題や観察の集まりの下にある特徴（決まり・概念・傾向・どの類に入るか）を見つける。前に学んだ決まりを問題に当てることも入る | 事例から決まりへ |
-| 一般的な系列推論（RG） | 示された前提（決まり・条件）から始めて、一歩以上進んで答えに至る。仮説演繹的な推論とも呼ばれる | 前提から結論へ（演繹） |
-| 量的推論（RQ） | 数の関係や性質を持つ概念で、帰納や演繹を使って推論する | 数で行う帰納と演繹 |
-
-</div>
-
-表の右の列は、このページが推論の形に当てて並べたものです。演繹・帰納・仮説・類推がどう分けられてきたかは「[推論とは](reasoning.html)」で見ています。
-
-マグルーは 2023 年に、キャロルの整理の三十年を振り返った論文で、ウッドコック・ジョンソンという一つの知能検査の組の分析を並べています。そこでは、流動性知能の因子を最も強く定めたのは、帰納の課題（例から概念を見つける課題）でした。一方、言葉の類推の課題（「AとBの関係は、CとDの関係」のような問題）は、流動性知能への結びつきが弱く出ています。この課題は、原典でもはじめから、流動性知能と結晶性知能の両方に掛かる、言葉の類推の検査とされています。類推の形の問題は、図形で出すと流動性知能の代表になり、言葉で出すと知識の側にも寄る、ということかもしれません。これは、この一つの検査の組の結果から、このページが推し量ったものです。離れたものの構造を重ねる働きは「[類推と、構造の類似を見抜く力](analogy.html)」で見ます。
-
-マグルーは 2023 年の論文で、キャッテル・ホーン・キャロルの論を、一つの CHC 理論でなく、互いに関わり合う「CHC の諸理論」の一族として見るように勧めています。三つの違いで最も目立つのは、ここでも g を置くかどうかです。広い能力の表も、感情の知能を新しく足すなど、改めが続いています。
-
-<details><summary>詳しく — 創造に当たる能力は、どこに置かれているか</summary>
-
-CHC の表で、創造性の研究に関わるとされているのは、長期の記憶から取り出す力（Glr。2018 年の改訂で Gl と Gr の二つに分けられ、着想を出す力は Gr の側に置かれた）の下の狭い能力です。マグルーの表は、「Glr のいくつかの狭い能力は、創造性の研究で目立ってきた」と添えています。
-
-マグルーの定義の稿から、三つを挙げます。
-
-- 着想の流暢さ（FI）：ある条件や物に関わる考え・語・句を、速く次々に出す力。強調されるのは量で、質や答えの独創性ではない。
-- 独創性・創造性（FO）：与えられた題や場面に、ふつうでない・独創的な・気の利いた・拡散的な答えを、速く出す力。
-- 問題への感受性（SP）：実際の問題に、別の解き方を速くいくつも考える力。問題がそこにあると気づくことが要る。
-
-どれも、限られた時間に、どれだけ多く・どれだけ珍しく出せるかで測る形です。マグルーの 2023 年の論文は、着想を出す力（Gr）と、創造性をよく理解して育てたいという社会の求めとの関係を、これからの課題に挙げています。
-
-</details>
-
-<details><summary>出典</summary>
-
-出典：McGrew, K. S. ([2009](https://doi.org/10.1016/j.intell.2008.08.004)) CHC theory and the human cognitive abilities project: Standing on the shoulders of the giants of psychometric intelligence research. *Intelligence* 37(1), 1–10（著者の研究所のサイトに置かれた出版社の版の [Wayback の記録](https://web.archive.org/web/20120423142925/http://www.iapsych.com/articles/mcgrew2009.pdf)で本文照合済。合意の模型は p.1 の要旨、第三層の g の有無は p.3、Gf・Gc・Glr の定義と狭い能力の名は表 1〔pp.5–6〕、創造性の研究の一文は p.6）。McGrew, K. S. CHC broad and narrow cognitive ability definitions（作業稿「3rd draft; 3-11-09」。著者の研究所のサイトの写しの [Wayback の記録](https://web.archive.org/web/20171215033954/http://www.iapsych.com:80/articles/chcdefs031109.pdf)で本文照合済。Gf の下の五つ〔I・RG・RQ・RP・RE〕は p.1、FI・FO・SP は pp.5–6）。McGrew, K. S. ([2023](https://doi.org/10.3390/jintelligence11020032)) Carroll's three-stratum (3S) cognitive ability theory at 30 years. *Journal of Intelligence* 11(2), 32（CC BY 4.0。[PMC の全文](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9959556/)で本文照合済。Gl と Gr の分割と、着想を出す力と創造性の課題は §2、ホーンと g・「CHC theories」は §2.3、ウッドコック・ジョンソンの分析での帰納の課題と言葉の類推の課題の負荷は §3.2）。Carroll, J. B. ([1993](https://doi.org/10.1017/CBO9780511571312)) *Human cognitive abilities: A survey of factor-analytic studies*. Cambridge University Press（出版社が無料で置いた前付け〔目次と序文〕の [PDF](https://assets.cambridge.org/97805213/82755/frontmatter/9780521382755_frontmatter.pdf)で本文照合済。460 を超えるデータの分析し直しと、探索的な因子分析を使ったことは序文 p.vi、g を含む高次の因子が第 15 章で、三つの層の論が第 16 章で出されることは序文 p.v と目次。第 16 章の本文は無料で読める版が見つからず、三つの層の中身はマグルーの論文で書きました）。
-
-</details>
-
-## 知能検査の外で分けられてきた、頭の働き
-
-<!--OPEN-->
-
-<a id="ca-ef"></a>知能検査の因子とは別の筋で、もう一つ、いま信頼されている分け方があります。頭の働きを、目の前のことに振り回されずに、自分の目当てに沿って動かす力の側から分けるもので、実行機能と呼ばれます。たとえば、ゲームで、つい押しそうになるボタンを押さずに待つこと、やり方を切り替えること、言われた電話番号を覚えながら別のことをすることです。
-
-心理学者の三宅（ミヤケ）らは、2000 年の論文で、よく挙がる三つの働き、構えの切り替え（Shifting）・作業記憶の中身の更新（Updating）・つい出る反応の抑え（Inhibition）を、それぞれ三つずつの課題で測りました。三つは中くらいに相関しながら、はっきり分けられる、と書き、これを実行機能の「統一と多様」と呼びました。のちの 2017 年の論文では、三つに共通の実行機能と、更新と切り替えにだけ固有の部分とに組み直しています。抑えには固有の部分が取り出せず、共通の側にそのまま重なりました。
-
-実行機能と知能は、重なりますが、同じではない、というのが、測った研究者たちの書き方です。フリードマンと三宅は、共通の実行機能は g ではなく、ばらつきの約 25% を g と分け合うだけだ、と書いています。心理学者のダイアモンドは、2013 年の総説で、三つの芯（抑え・作業記憶・柔軟さ）の上に、推論・問題解決・計画という高次の実行機能が組まれるとし、流動性知能はこの推論と問題解決と同じものだ、と書きました。二つの言い方は、比べている水準が違います。ダイアモンドは高次の働きを、フリードマンと三宅は三つの基本の働きの共通の部分を、知能と比べています。
-
-作業記憶は、頭の中に、いまの作業に要るものを少しのあいだ置いて扱う働きです。心理学者のバドリーとヒッチは 1974 年に、これを三つの成分（注意を動かす中央の実行系と、それを助ける、ことばの音を保つ所・目で見た形を保つ所）で組み、バドリーは 2000 年に、別々の情報と長い記憶を一つの場面に束ねる第四の成分を足しました。どれだけ置けるかは、心理学者のコーワンによると、若い大人で、意味のあるまとまりが 3 から 5 ほどです。よく引かれる「7±2」は、短期記憶の項目数の話で、組織の人数の話ではないことは「[なぜ 3 と 7 だけが特別なのか](three-and-seven.html#8-よくある誤解)」の誤解の章で見ています。作業記憶の容量と g も、強く関わりますが同じではなく、容量は g のばらつきの三分の一から半分ほどを説明する、と書かれています。
-
-<details><summary>詳しく — 測り方の難しさを、研究者たちはどう書いているか</summary>
-
-実行機能の研究者たちは、測ること自体の難しさを、何度も書いています。実行機能は、ほかの頭の働きを動かすことで初めて現れるので、どの課題にも、狙った実行機能のほかの働きが混ざります。三宅らはこれを「課題の不純さ」と呼び、フリードマンと三宅は、実行機能の課題には避けられない性質だ、と書きました。三つの働きの組み合わせも、網羅ではないとしています。
-
-作業記憶の研究も同じです。ヒッチとアレンとバドリーは、モデルの五十年を振り返った 2025 年の論文で、中央の実行系の仕事として、計画・調整・切り替え・更新・見張りなどを並べたうえで、その多くはまだ十分に研究されていない、と書き、中央の実行系の空いた席への応募を歓迎する、と結んでいます。コーワンは、置けるまとまりがなぜ 3 から 5 なのかは、まだ分かっていない、と書いています。
-
-</details>
-
-<details><summary>出典</summary>
-
-出典：Miyake, A., Friedman, N. P., Emerson, M. J., Witzki, A. H., Howerter, A., & Wager, T. D. ([2000](https://doi.org/10.1006/cogp.1999.0734)) The unity and diversity of executive functions and their contributions to complex "frontal lobe" tasks: A latent variable analysis. *Cognitive Psychology* 41(1), 49–100（共著者の研究室〔Colorado 大学〕に置かれた出版社の誌面の [Wayback の記録](https://web.archive.org/web/20150421112728/http://wagerlab.colorado.edu:80/files/papers/Miyake_2000_Cogn%20Psychol.pdf)で本文照合済。三つと「clearly separable」は p.49、課題の不純さは p.52、相関 .42〜.63 は p.87、統一と多様は p.88、網羅でないことは p.90）。Friedman, N. P., & Miyake, A. ([2017](https://doi.org/10.1016/j.cortex.2016.04.023)) Unity and diversity of executive functions: Individual differences as a window on cognitive structure. *Cortex* 86, 186–204（[PMC の著者稿](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5104682/)で本文照合済。共通の実行機能と固有の部分は 3.1、g との約 25% は 3.2.1、課題の不純さは 2.2）。Diamond, A. ([2013](https://doi.org/10.1146/annurev-psych-113011-143750)) Executive functions. *Annual Review of Psychology* 64, 135–168（[PMC の著者稿](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4084861/)で本文照合済。三つの芯と高次の実行機能は INTRODUCTION、流動性知能は「A HIGHER-ORDER EXECUTIVE FUNCTION」の節）。Baddeley, A. ([2000](https://doi.org/10.1016/S1364-6613(00)01538-2)) The episodic buffer: a new component of working memory? *Trends in Cognitive Sciences* 4(11), 417–423（出版社の PDF の [Wayback の記録](https://web.archive.org/web/20250611141848/https://www.cell.com/trends/cognitive-sciences/pdf/S1364-6613(00)01538-2.pdf)で本文照合済。1974 年の三成分と第四の成分は p.417・p.421）。Hitch, G. J., Allen, R. J., & Baddeley, A. D. ([2025](https://doi.org/10.1177/17470218241290909)) The multicomponent model of working memory fifty years on. *Quarterly Journal of Experimental Psychology* 78(2), 222–239（CC BY 4.0。[PMC の版](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11783980/)で本文照合済。「Future development」の節）。Cowan, N. ([2010](https://doi.org/10.1177/0963721409359277)) The magical mystery four: How is working memory capacity limited, and why? *Current Directions in Psychological Science* 19(1), 51–57（[PMC の著者稿](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2864034/)で本文照合済。3 から 5 は Abstract、理由が分からないことは「WHY THE STORAGE CAPACITY LIMIT?」の節）。Conway, A. R. A., Kane, M. J., & Engle, R. W. ([2003](https://doi.org/10.1016/j.tics.2003.10.005)) Working memory capacity and its relation to general intelligence. *Trends in Cognitive Sciences* 7(12), 547–552（Greensboro の North Carolina 大学の機関リポジトリに置かれた写しの [Wayback の記録](https://web.archive.org/web/20250523181552/http://libres.uncg.edu/ir/uncg/f/M_Kane_WorkingMemoryCapRel_2003.pdf)で本文照合済。頁はリポジトリの PDF の頁。「highly related, but not identical」は p.1、三分の一から半分は p.7）。
-
-</details>
-
-## 広く知られたが、測定で残らなかった分け方
-
-<!--OPEN-->
-
-<a id="ca-myth"></a>頭の能力の分け方には、教室や本でよく聞くのに、測る研究では支えられなかったものもあります。間違いとして並べるより、何を捉えようとして、なぜ残らなかったのかを見ておくと、残った整理が何を拾い、何を拾っていないのかも見えてきます。
-
-心理学者のガードナーは、1983 年に多重知能の論を出しました。人を、一つの量（IQ）を持つものとしてより、比較的独立したいくつもの能力を持つものとして見たほうがよい、というものです。ガードナーは、知能を、少なくとも一つの文化の中で価値のある問題を解き、ものを作るために情報を処理する、心理生物学的な潜在力、と定めました。分け方は、検査の点の相関でなく、脳の損傷の例・神童や特異な人・発達の道筋・文化・進化から集めた基準に当てはめる形で、1983 年に七つ、1995 年に八つ目の博物的知能を足しました。ガードナー自身、知能は検査で決めなければならないと、どこに書いてあるのか、と問い、検査を作ることからは身を引いています。何を知能と数えるかは判断であって、計算の結論ではない、とも書いています。
-
-これに対して、心理学者のウォーターハウスは 2023 年に、因子の研究は、八つの知能が独立していることを示せていない、と書きました。いろいろな研究者が作った測り方で測ると、多くの知能は互いに相関していました。また、ここ四十年の神経科学は、脳が、それぞれの種類の認知に専用の別々の部品に分かれてはいないことを示した、とも書いています。ただし、ガードナーが論を出した 1983 年には、脳の部品説にもとづいていたので、当時は神経神話ではなかった、とも添えています。ガードナー自身は、g があることでなく、その及ぶ範囲と説明の力を問うのだ、と書いています。
-
-右脳・左脳の分け方も、よく知られています。左脳型の人は論理的、右脳型の人は創造的、というものです。脳に左右の分担（側性化）があることは確かで、ことばの処理は左に、注意の制御は右に寄ります。ニールセンらは 2013 年に、1011 人の安静時の脳の画像で、結合の左右の偏りを調べました。偏りは、脳の網の局所の性質で、全体として左脳型の人・右脳型の人がいる、という形とはデータが合わなかった、と書いています。それでも、オランダと英国の教師を調べたデッカーらの 2012 年の調査では、左右の半球の優位で学習者の違いを説明できる、という文を、英国の教師の 91%、オランダの教師の 86% が正しいと答えていました。
-
-<details><summary>詳しく — 学習スタイル</summary>
-
-「人によって、目で見て学ぶのが向く・耳で聞いて学ぶのが向く、というスタイルがあり、それに合わせて教えるとよく学べる」という学習スタイルの考えも、同じ調査で、英国 93%・オランダ 96% の教師が正しいと答えていました。
-
-パシュラーらは 2008 年の総説で、これを確かめるには、スタイルで分けた人を、いくつかの教え方に無作為に分け、あるスタイルに一番よい教え方が、別のスタイルでは一番よくない、という形を示す必要がある、としました。そして、その形の証拠は、ほとんど見つからなかった、と書いています。人が好みを持つことや、特定の能力に差があることは認めたうえでの結論です。ガードナー自身も、スタイルと知能は別のものだ、と書いています。
-
-</details>
-
-<details><summary>出典</summary>
-
-出典：Gardner, H. "A Multiplicity of Intelligences"（著者の改稿版。前の版は *Scientific American* 1998。著者のサイトの写しの [Wayback の記録](https://web.archive.org/web/20061105025352/http://www.howardgardner.com:80/Papers/documents/T-101%20A%20Multiplicity%20REVISED.pdf)で本文照合済。頁は原稿の頁。検査で決めるのかという問いは page 2–3、定義と「relatively independent faculties」は page 3、基準と七つ・八つは page 4）。Gardner, H. "MI After Twenty Years"（講演の原稿。著者のサイトの写しの [Wayback の記録](https://web.archive.org/web/20080808121315/http://www.howardgardner.com/Papers/documents/MI%20After%2020_Feb-03_HG.pdf)で本文照合済。測る仕事から身を引いたことは p.6、判断であることは p.10）。Gardner, H. "Frequently Asked Questions—Multiple Intelligences and Related Educational Topics"（2004 年 7 月の版、置き場の名は 2009 年 3 月。著者のサイトの写しの [Wayback の記録](https://web.archive.org/web/20101031170508/http://howardgardner.com/FAQ/FREQUENTLY%20ASKED%20QUESTIONS%20Updated%20March%2009.pdf)で本文照合済。スタイルと知能は p.2、g の範囲は p.5）。Waterhouse, L. ([2023](https://doi.org/10.3389/fpsyg.2023.1217288)) Why multiple intelligences theory is a neuromyth. *Frontiers in Psychology* 14, 1217288（CC BY。出版社の版で本文照合済。要旨と 1983 年当時のことは p.1）。Nielsen, J. A., Zielinski, B. A., Ferguson, M. A., Lainhart, J. E., & Anderson, J. S. ([2013](https://doi.org/10.1371/journal.pone.0071275)) An evaluation of the left-brain vs. right-brain hypothesis with resting state functional connectivity magnetic resonance imaging. *PLoS ONE* 8(8), e71275（[PMC の版](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3743825/)で本文照合済。Abstract）。Dekker, S., Lee, N. C., Howard-Jones, P., & Jolles, J. ([2012](https://doi.org/10.3389/fpsyg.2012.00429)) Neuromyths in education: Prevalence and predictors of misconceptions among teachers. *Frontiers in Psychology* 3, 429（[PMC の版](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3475349/)で本文照合済。Table 1）。Pashler, H., McDaniel, M., Rohrer, D., & Bjork, R. ([2008](https://doi.org/10.1111/j.1539-6053.2009.01038.x)) Learning styles: Concepts and evidence. *Psychological Science in the Public Interest* 9(3), 105–119（出版元の学会〔APS〕の誌面の PDF の [Wayback の記録](https://web.archive.org/web/20110110065622/http://www.psychologicalscience.org/journals/pspi/PSPI_9_3.pdf)で本文照合済。p.105 の SUMMARY）。ガードナーの 1983 年の本は、無料で読める版が見つからず、読んでいません。
-
-</details>
+- [思考とは](thinking.html)（工事中）：「考える」の語は、哲学の歴史と心理学で、何を指す言葉として使われてきたのでしょうか。その下に、推論の形を見る「[推論とは](reasoning.html)」と、推論の形の一つとして類推を見る「[類推と、構造の類似を見抜く力](analogy.html)」があります。
+- <a id="ca-g"></a><a id="ca-gfgc"></a><a id="ca-chc"></a>[知能は、どう分けられてきたか](intelligence-structure.html)（工事中）：知能検査の点の相関から分ける整理です。一般因子（g）、流動性知能と結晶性知能、三つの層で並べる CHC を見ます。
+- <a id="ca-ef"></a>[実行機能と作業記憶](executive-functions.html)（工事中）：知能検査の因子とは別の筋で、頭の働きを、自分の目当てに沿って動かす力の側から分けたものです。
+- <a id="ca-myth"></a>[広く知られたが、測定で残らなかった分け方](unsupported-ability-models.html)（工事中）：多重知能・右脳と左脳・学習スタイルが、何を捉えようとして、なぜ残らなかったのかを見ます。
 
 ## 測られていない所
 
@@ -170,30 +39,21 @@ CHC の表で、創造性の研究に関わるとされているのは、長期�
 
 <a id="ca-gap"></a>ここまでの整理は、百年以上をかけて、測れることを確かめながら積み上げられてきました。では、その中に、仮説を思いつく力は、どこに置かれているのでしょうか。
 
-このページで読んだ知能・実行機能・作業記憶の文献のどれにも、アブダクション（観察から、それを説明する仮説を思いつく推論）という語は出てきません。仮説は、CHC では、流動性知能の定義の中で、心の操作の例の一つ（仮説を作って確かめる）として出てくるだけで、仮説を思いつく力という名の能力はありません。演繹に当たる一般的な系列推論が、別の名で「仮説演繹的な推論」と呼ばれているのも、仮説を立てたあとの側です。洞察（ひらめき）も、能力の名としては出てきません。創造に当たる能力は、前の章の畳みで見たように、限られた時間に、速く、数多く、珍しく出す流暢さの一族として置かれています。実行機能と創造性を測ったザベリナらの 2019 年の研究では、三つの働きを一緒に入れて調べると、着想の多さは作業記憶の更新と結びつきましたが、着想の独自性は、どの実行機能とも結びつきませんでした（一つずつのふつうの相関では、着想の多さも独自性も、どの実行機能とも結びついていません）。一方、つい出る反応を抑える力は、実生活での芸術の創作の実績の多さと結びつきました。著者たちは、創造性をどう測るかで、関わる実行機能が変わる、と結んでいます（参加者は 47 人で、著者たちは大きな標本で確かめる必要があると書いています）。
+上の三つのページで読んだ知能・実行機能・作業記憶の文献のどれにも、アブダクション（観察から、それを説明する仮説を思いつく推論）という語は出てきません。仮説は、CHC では、流動性知能の定義の中で、心の操作の例の一つ（仮説を作って確かめる）として出てくるだけで、仮説を思いつく力という名の能力はありません。演繹に当たる一般的な系列推論が、別の名で「仮説演繹的な推論」と呼ばれているのも、仮説を立てたあとの側です。洞察（ひらめき）も、能力の名としては出てきません。創造に当たる能力は、「[知能は、どう分けられてきたか](intelligence-structure.html#ca-chc)」の畳みで見たように、限られた時間に、速く、数多く、珍しく出す流暢さの一族として置かれています。実行機能と創造性を測ったザベリナらの 2019 年の研究では、三つの働きを一緒に入れて調べると、着想の多さは作業記憶の更新と結びつきましたが、着想の独自性は、どの実行機能とも結びつきませんでした（一つずつのふつうの相関では、着想の多さも独自性も、どの実行機能とも結びついていません）。一方、つい出る反応を抑える力は、実生活での芸術の創作の実績の多さと結びつきました。著者たちは、創造性をどう測るかで、関わる実行機能が変わる、と結んでいます（参加者は 47 人で、著者たちは大きな標本で確かめる必要があると書いています）。
 
 研究者たち自身も、空きを書いています。マグルーは、触覚・運動感覚・嗅覚の能力に、CHC の分類の大きな空きがあると書き、2023 年には、まだよく分かっていない、またはまだ見つかっていない狭い能力を探し続けるべきだ、と結んでいます。カーペンターらは、人による差を測るやり方は、知的なふるまいに欠かせないのに、だれにも共通しているので差にならない働きを、考えの上でも測る上でも外してしまいうる、と書きました。
 
-並べてみると、測る方法は、人によって差が出て、限られた時間に正誤か数で採点できる働きを、拾ってきたように見えます。仮説を一つ思いつき、それが当たっていたかが、あとになってからしか分からない働きは、その形に乗りにくいのかもしれません。これは、このページが読んだ文献を並べて立てた仮説で、文献のどれかが言っていることではありません。
+並べてみると、測る方法は、人によって差が出て、限られた時間に正誤か数で採点できる働きを、拾ってきたように見えます。仮説を一つ思いつき、それが当たっていたかが、あとになってからしか分からない働きは、その形に乗りにくいのかもしれません。これは、三つのページで読んだ文献を並べて立てた仮説で、文献のどれかが言っていることではありません。
 
-仮説を推論の形としてどう置いてきたかは「[推論とは](reasoning.html)」と「[パースの創造的な愛と、アブダクション](peirce-love-abduction.html)」に、新しい考えを生み、確かめ、よくしていく力の全体は「[創造的思考とは](creative-thinking.html)」にあります。「考える」ことを考える働き（メタ認知）は、CHC の広い能力の表には出てきません。それは「[メタ認知とは](metacognition.html)」で見ています。「考える」ことのほかの面（「考える」ことを動かす構え・新しく能力として呼ばれ始めたものなど）への道案内は「[思考とは](thinking.html)」にあります。心の構えや身体の力、人と関わる力も含めた能力のページは、「[能力とは](abilities.html)」に並べています。
+仮説を推論の形としてどう置いてきたかは「[推論とは](reasoning.html)」と「[パースの創造的な愛と、アブダクション](peirce-love-abduction.html)」に、新しい考えを生み、確かめ、よくしていく力の全体は「[創造的思考とは](creative-thinking.html)」にあります。「考える」ことを考える働き（メタ認知）は、CHC の広い能力の表には出てきません。それは「[メタ認知とは](metacognition.html)」で見ています。「考える」ことを動かす構えや、新しく能力として呼ばれ始めたものは、「[思考を動かす構えと体力](thinking-dispositions.html)」と「[新しく注目されている能力](emerging-abilities.html)」で見ています。心の構えや身体の力、人と関わる力も含めた能力のページは、「[能力とは](abilities.html)」に並べています。
 
 <details><summary>出典</summary>
 
-出典：語の有無は、このページで読んだ文献の本文を検索して確かめました。CHC の定義と空きは、McGrew (2009)（触覚・運動感覚・嗅覚の空きは p.3 の注 3、Gf の定義の「generating and testing hypothesis」は p.5 の表 1）、McGrew の定義の稿（RG の「hypothetico-deductive reasoning」は p.1）、McGrew (2023)（まだ見つかっていない狭い能力は §5）。人による差の方法が外しうる働きは、Carpenter, Just & Shell (1990) の報告 p.32。Zabelina, D. L., Friedman, N. P., & Andrews-Hanna, J. ([2019](https://doi.org/10.1016/j.concog.2018.12.005)) Unity and diversity of executive functions in creativity. *Consciousness and Cognition* 68, 47–56（[PMC の著者稿](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6594373/)で本文照合済。結果と結びは Abstract、独自性がどの実行機能とも結びつかなかったことは Discussion、ふつうの相関と、三つを一緒に入れた回帰の結果は Results、標本の小ささは「Limitations and future directions」の節）。ほかの文献の書誌と写しは、各章の出典にあります。
+出典：語の有無は、上の三つのページで読んだ文献の本文を検索して確かめました。CHC の定義と空きは、McGrew (2009)（触覚・運動感覚・嗅覚の空きは p.3 の注 3、Gf の定義の「generating and testing hypothesis」は p.5 の表 1）、McGrew の定義の稿（RG の「hypothetico-deductive reasoning」は p.1）、McGrew (2023)（まだ見つかっていない狭い能力は §5）。人による差の方法が外しうる働きは、Carpenter, Just & Shell (1990) の報告 p.32。Zabelina, D. L., Friedman, N. P., & Andrews-Hanna, J. ([2019](https://doi.org/10.1016/j.concog.2018.12.005)) Unity and diversity of executive functions in creativity. *Consciousness and Cognition* 68, 47–56（[PMC の著者稿](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6594373/)で本文照合済。結果と結びは Abstract、独自性がどの実行機能とも結びつかなかったことは Discussion、ふつうの相関と、三つを一緒に入れた回帰の結果は Results、標本の小ささは「Limitations and future directions」の節）。ほかの文献の書誌と写しは、各章の出典にあります。
 
 </details>
 
-## 原典と、読む順
-
-<a id="ca-sources"></a>このページで読んだ原典は、どれも無料で読めます。まず読むなら、次の順です。
-
-- マグルー（2009）：CHC がどう生まれたかと、広い能力の定義の表（表 1）。8 頁ほどで、整理の全体が見えます。[著者の研究所のサイトの写し（Wayback）](https://web.archive.org/web/20120423142925/http://www.iapsych.com/articles/mcgrew2009.pdf)。
-- スピアマン（1904）：始まりの論文。結論の要約は第 5 章の終わりにあります。[York 大学の転記](https://psychclassics.yorku.ca/Spearman/)。
-- フリードマンと三宅（2017）：実行機能の分け方と、その改め。[PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5104682/)。
-- ガードナー「A Multiplicity of Intelligences」：多重知能を本人が短く述べたもの。[著者のサイトの写し（Wayback）](https://web.archive.org/web/20061105025352/http://www.howardgardner.com:80/Papers/documents/T-101%20A%20Multiplicity%20REVISED.pdf)。続けて、批判のウォーターハウス（2023）を[出版社の版](https://doi.org/10.3389/fpsyg.2023.1217288)で。
-- マグルー（2023）：キャロルの整理の三十年と、これからの課題。[PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9959556/)。
 
 ## このページの作り方
 
-<a id="ca-method"></a>このページは、pjdhiro の問いに、Claude が原典を読んで書いたものです。原典の写しは、著者・大学・公的機関・出版社が置いたものか、その Wayback の記録を探し、引いた文は本文で一字ずつ確かめました。英文の訳は、どれも Claude です。章の並べ方（測られて残った整理・知能検査の外の筋・残らなかった分け方・測られていない所）と、CHC の推論の能力を推論の形に当てた表の右の列は、Claude がしたものです。キャッテルの 1963 年の論文は、無料で読める版が見つからず、それを紹介した文献の本文で書きました。キャロルの 1993 年の本は、出版社が無料で置いた目次と序文だけを読み、三つの層の中身は、それを紹介した文献の本文で書きました。
+<a id="ca-method"></a>このページは、pjdhiro の問いに、Claude が原典を読んで書いたものです。英文の訳は、どれも Claude です。ページの並べ方と、思考と知能を分ける一文は、Claude がしたものです。三つのページの中身は、もとは「頭脳の能力は、どう分けられてきたか」という一つのページの章でした。

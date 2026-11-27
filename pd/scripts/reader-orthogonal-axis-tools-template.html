@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/orthogonal-axis-tools.html を直接編集しないでください。
+  正本:   knowledge/research/orthogonal-axis-tools/READER-orthogonal-axis-tools.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「直交する軸を扱っている道具たち」のページです（工事中）。目次「複素平面で考える」（reader/complex-plane.html）から呼ばれる独立ページ。始まりは、読み物「オイラーの等式が、たたんだもの」（reader/euler-unfolded.html）の結びで、e が「自然対数の底」と呼ばれる由来を聞いた pjdhiro の問い（自然対数と e は、はじめから円の平面と直交する軸〔虚軸のような〕を扱う道具だったのでは）。段ごとに「見方」（pjdhiro の問いと、このページの読み）・「数学では」・「歴史では」の印で書き分ける。歴史：最初の対数はネイピア 1614 の正弦の対数。双曲線の面積が対数の働きをする（サン＝ヴァンサン 1647・ド・サラサ 1649）。「自然の」は 10 を底とする「表の」対数と対の語（メルカトル 1668）。オイラーは e を双曲線対数が 1 の数とし（1731・1736）、『無限解析序説』1748 の §122 で自然の、すなわち双曲線の対数、§138 で e^{iv} = cos v + i sin v。円と自然対数を虚数で結ぶ文は名のあと（ヨハン・ベルヌーイ 1702・コーツ 1714）。数学：円 x²+y²=1 と双曲線 x²−y²=1 は y を iy に替えると移り合う。y=1/x の下の面積 ln t がそのまま双曲線の角になり、自然対数は双曲線の角と円の角を、どちらも余分な定数なしに測る。直角を生むのは e でなく i で、e は i の向きへ回る速さがちょうど 1 になる底（b^{iθ} の速さは |ln b|）。k² が −1・0・+1 で、e^{kθ} は円の回転・ずらし・双曲線の回転に分かれる。道具の一覧（素朴な言葉と数学の二段・直交の意味〔ユークリッド・ミンコフスキー・シンプレクティックの対・関数の直交〕を添える）と、作った人の本文に直交する軸が書いてあるかの年表（ヴェッセル 1799・ガウス 1831・ハミルトン 1843・スタインメッツ 1893・ミンコフスキー 1908 は書いている。自然対数の名の側には見当たらない）。問いは開いたまま終える。
+  数学の段は、別のコンテキストのエージェントが式と数値で確かめた。原典の訳は Claude。
+  pjdhiro 本人の言葉は「pjdhiro の問い：」「pjdhiro の見方：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>直交する軸を扱っている道具たち | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/orthogonal-axis-tools.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="数直線と直角に交わるもう一本の軸を扱う道具（複素数・双曲線関数とローレンツ変換・四元数・フェーザ・フーリエ変換・位相空間・直交座標・ウィック回転・ラプラス変換・電場と磁場）を、素朴な言葉の一行と数学の一行の二段で並べる。始まりは、自然対数と e は、はじめから円の平面と直交する軸を扱う道具だったのでは、という問い。原典で照らすと「自然の」対数の名は双曲線の面積から付き（メルカトル 1668）、円や虚数と結ばれたのは名のあと（ベルヌーイ 1702・コーツ 1714・オイラー 1748）。数学では、直角を生むのは i で、e はその向きへ回る速さを 1 にする底。問いは開いたまま置く（工事中）。">
+    <meta property="og:title" content="直交する軸を扱っている道具たち">
+    <meta property="og:description" content="数直線と直角に交わるもう一本の軸を扱う道具（複素数・双曲線関数とローレンツ変換・四元数・フェーザ・フーリエ変換・位相空間・直交座標・ウィック回転・ラプラス変換・電場と磁場）を、素朴な言葉の一行と数学の一行の二段で並べる。始まりは、自然対数と e は、はじめから円の平面と直交する軸を扱う道具だったのでは、という問い。原典で照らすと「自然の」対数の名は双曲線の面積から付き（メルカトル 1668）、円や虚数と結ばれたのは名のあと（ベルヌーイ 1702・コーツ 1714・オイラー 1748）。数学では、直角を生むのは i で、e はその向きへ回る速さを 1 にする底。問いは開いたまま置く（工事中）。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/orthogonal-axis-tools.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="直交する軸を扱っている道具たち">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-27">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "直交する軸を扱っている道具たち",
+          "description": "数直線と直角に交わるもう一本の軸を扱う道具（複素数・双曲線関数とローレンツ変換・四元数・フェーザ・フーリエ変換・位相空間・直交座標・ウィック回転・ラプラス変換・電場と磁場）を、素朴な言葉の一行と数学の一行の二段で並べる。始まりは、自然対数と e は、はじめから円の平面と直交する軸を扱う道具だったのでは、という問い。原典で照らすと「自然の」対数の名は双曲線の面積から付き（メルカトル 1668）、円や虚数と結ばれたのは名のあと（ベルヌーイ 1702・コーツ 1714・オイラー 1748）。数学では、直角を生むのは i で、e はその向きへ回る速さを 1 にする底。問いは開いたまま置く（工事中）。",
+          "keywords": "直交, 虚軸, 自然対数, ネイピア数, 双曲線, 双曲線関数, ローレンツ変換, 四元数, フェーザ, フーリエ変換, 位相空間, 直交座標, 複素平面, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/orthogonal-axis-tools.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/orthogonal-axis-tools.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-27",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "自然対数"}, {"@type": "Thing", "name": "直交"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方の言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>この文書は「直交する軸を扱っている道具たち」のページです（工事中）。目次「複素平面で考える」（reader/complex-plane.html）から呼ばれる独立ページ。始まりは、読み物「オイラーの等式が、たたんだもの」（reader/euler-unfolded.html）の結びで、e が「自然対数の底」と呼ばれる由来を聞いた pjdhiro の問い（自然対数と e は、はじめから円の平面と直交する軸〔虚軸のような〕を扱う道具だったのでは）。段ごとに「見方」（pjdhiro の問いと、このページの読み）・「数学では」・「歴史では」の印で書き分ける。歴史：最初の対数はネイピア 1614 の正弦の対数。双曲線の面積が対数の働きをする（サン＝ヴァンサン 1647・ド・サラサ 1649）。「自然の」は 10 を底とする「表の」対数と対の語（メルカトル 1668）。オイラーは e を双曲線対数が 1 の数とし（1731・1736）、『無限解析序説』1748 の §122 で自然の、すなわち双曲線の対数、§138 で e^{iv} = cos v + i sin v。円と自然対数を虚数で結ぶ文は名のあと（ヨハン・ベルヌーイ 1702・コーツ 1714）。数学：円 x²+y²=1 と双曲線 x²−y²=1 は y を iy に替えると移り合う。y=1/x の下の面積 ln t がそのまま双曲線の角になり、自然対数は双曲線の角と円の角を、どちらも余分な定数なしに測る。直角を生むのは e でなく i で、e は i の向きへ回る速さがちょうど 1 になる底（b^{iθ} の速さは |ln b|）。k² が −1・0・+1 で、e^{kθ} は円の回転・ずらし・双曲線の回転に分かれる。道具の一覧（素朴な言葉と数学の二段・直交の意味〔ユークリッド・ミンコフスキー・シンプレクティックの対・関数の直交〕を添える）と、作った人の本文に直交する軸が書いてあるかの年表（ヴェッセル 1799・ガウス 1831・ハミルトン 1843・スタインメッツ 1893・ミンコフスキー 1908 は書いている。自然対数の名の側には見当たらない）。問いは開いたまま終える。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の問い」「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>直交する軸を扱っている道具たち</h1>
+                <p class="reader-subtitle">自然対数と e は、はじめから円の平面と直交する軸を扱う道具だったのか</p>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/orthogonal-axis-tools/READER-orthogonal-axis-tools.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="complex-plane.html">複素平面で考える（目次）</a> ・
+                <a href="euler-unfolded.html">オイラーの等式が、たたんだもの</a> ・
+                <a href="rotation-multiplication.html">回転の掛け算</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script src="../src/reader-run.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

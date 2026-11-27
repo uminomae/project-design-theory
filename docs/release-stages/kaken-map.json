@@ -1,18 +1,18 @@
 {
  "counts": {
-  "pages": 101,
-  "mapped_pages": 86,
+  "pages": 105,
+  "mapped_pages": 87,
   "cs": 30,
-  "sho": 295,
-  "touched": 90,
-  "page_only": 11,
-  "cs_only": 50,
-  "both": 29,
+  "sho": 296,
+  "touched": 89,
+  "page_only": 13,
+  "cs_only": 51,
+  "both": 25,
   "chu": 66,
-  "chu_touched": 41,
+  "chu_touched": 43,
   "dai": 13,
   "dai_touched": 13,
-  "unmapped_n": 15
+  "unmapped_n": 18
  },
  "dai": [
   {
@@ -26,12 +26,17 @@
        "id": "01010",
        "name": "哲学および倫理学",
        "pages": [
+        "carus-onslaught-on-necessity-ja",
+        "creative-thinking",
+        "empathy",
+        "gravity-love",
         "hamilton-philosophy-of-the-unconditioned-ja",
         "life-drivers",
+        "love-driven-dev",
+        "love-driven-dev-en",
         "love-history",
         "mansel-limits-of-religious-thought-ja",
         "mill-examination-of-hamilton-ja",
-        "no-road-ahead",
         "nondual",
         "peirce-evolutionary-love-ja",
         "peirce-glassy-essence-ja",
@@ -39,7 +44,7 @@
         "peirce-love-abduction",
         "reasoning",
         "thinking",
-        "thinking-definitions",
+        "to-james",
         "william-james-self-ja",
         "inseparable-abilities"
        ],
@@ -52,8 +57,9 @@
        "name": "中国哲学、印度哲学および仏教学",
        "pages": [
         "anshin",
-        "breath-filter",
+        "euler-unfolded",
         "forgiveness-salvation",
+        "life-drivers",
         "love-driven-dev",
         "love-driven-dev-en",
         "love-history",
@@ -73,7 +79,9 @@
         "forgiveness-salvation",
         "james-substance-and-shadow-ja",
         "life-drivers",
+        "love-history",
         "mansel-limits-of-religious-thought-ja",
+        "mill-examination-of-hamilton-ja",
         "peirce-evolutionary-love-ja"
        ],
        "cs": [
@@ -91,12 +99,14 @@
         "james-substance-and-shadow-ja",
         "life-drivers",
         "love-history",
+        "mandeville-grumbling-hive-ja",
+        "mansel-limits-of-religious-thought-ja",
         "mill-examination-of-hamilton-ja",
+        "newcomb-political-economy-ja",
         "peirce-evolutionary-love-ja",
         "peirce-glassy-essence-ja",
         "peirce-law-of-mind-ja",
-        "thinking-definitions",
-        "to-james",
+        "thinking",
         "william-james-self-ja"
        ],
        "cs": [
@@ -107,10 +117,12 @@
        "id": "01050",
        "name": "美学および芸術論",
        "pages": [
-        "beauty"
+        "beauty",
+        "julia-potential"
        ],
        "cs": [
         "D15",
+        "D19",
         "D26",
         "D28"
        ]
@@ -134,6 +146,7 @@
        "id": "01080",
        "name": "科学社会学、科学哲学および科学技術史",
        "pages": [
+        "capacity-after-ai",
         "carus-onslaught-on-necessity-ja",
         "clausius-art-der-bewegung-ja",
         "clausius-bewegende-kraft-der-warme-ja",
@@ -147,6 +160,8 @@
         "kronig-theorie-der-gase-ja",
         "maxwell-dynamical-theory-of-gases-ja",
         "naegeli-abstammungslehre-ja",
+        "peirce-evolutionary-love-ja",
+        "peirce-glassy-essence-ja",
         "peirce-love-abduction",
         "quetelet-lettres-probabilites-ja",
         "rankine-mechanical-action-of-heat-ja",
@@ -158,7 +173,9 @@
       {
        "id": "80010",
        "name": "デザイン学",
-       "pages": [],
+       "pages": [
+        "vibe-to-code"
+       ],
        "cs": [
         "D22"
        ]
@@ -190,18 +207,23 @@
        "name": "文学一般",
        "pages": [],
        "cs": [
-        "D19"
+        "D19",
+        "D25"
        ]
       },
       {
        "id": "02040",
        "name": "言語学",
-       "pages": [
-        "to-james"
-       ],
+       "pages": [],
        "cs": [
         "D17"
        ]
+      },
+      {
+       "id": "02050",
+       "name": "日本語学および英語学",
+       "pages": [],
+       "cs": []
       },
       {
        "id": "70010",
@@ -230,7 +252,9 @@
       {
        "id": "03010",
        "name": "史学一般",
-       "pages": [],
+       "pages": [
+        "buckle-history-of-civilization-ja"
+       ],
        "cs": [
         "D16"
        ]
@@ -245,15 +269,12 @@
        "id": "03030",
        "name": "アジア史およびアフリカ史",
        "pages": [],
-       "cs": [
-        "D16"
-       ]
+       "cs": []
       },
       {
        "id": "03040",
        "name": "ヨーロッパ史およびアメリカ史",
        "pages": [
-        "buckle-history-of-civilization-ja",
         "draper-intellectual-development-ja"
        ],
        "cs": []
@@ -408,6 +429,7 @@
        "id": "07010",
        "name": "理論経済学および経済学史",
        "pages": [
+        "decision-making",
         "mandeville-grumbling-hive-ja",
         "newcomb-political-economy-ja"
        ],
@@ -425,9 +447,7 @@
        "id": "07030",
        "name": "公共経済および労働経済",
        "pages": [
-        "capacity-after-ai",
-        "emerging-abilities",
-        "soft-skills"
+        "emerging-abilities"
        ],
        "cs": []
       },
@@ -451,7 +471,7 @@
        "pages": [
         "business-design-syllabus",
         "decision-making",
-        "influences-management",
+        "gravity-love",
         "interpersonal-abilities",
         "julia-potential",
         "love-driven-dev",
@@ -461,12 +481,11 @@
         "nonaka-complement",
         "psychological-safety",
         "psychological-safety-en",
-        "three-and-seven",
-        "inseparable-abilities"
+        "three-and-seven"
        ],
        "cs": [
-        "D07",
-        "D22"
+        "D22",
+        "D30"
        ]
       },
       {
@@ -508,11 +527,10 @@
       {
        "id": "08010",
        "name": "社会学",
-       "pages": [
-        "quetelet-lettres-probabilites-ja"
-       ],
+       "pages": [],
        "cs": [
-        "D18"
+        "D18",
+        "D25"
        ]
       },
       {
@@ -550,11 +568,11 @@
        "name": "教育学",
        "pages": [
         "creative-thinking",
-        "emerging-abilities"
+        "emerging-abilities",
+        "love-driven-dev",
+        "love-driven-dev-en"
        ],
-       "cs": [
-        "D13"
-       ]
+       "cs": []
       },
       {
        "id": "09020",
@@ -566,17 +584,13 @@
        "id": "09030",
        "name": "子ども学および保育学",
        "pages": [],
-       "cs": [
-        "D23"
-       ]
+       "cs": []
       },
       {
        "id": "09040",
        "name": "教科教育学および初等中等教育学",
        "pages": [
-        "angle-rotation",
-        "rotation-multiplication",
-        "zen-circle-hs"
+        "angle-rotation"
        ],
        "cs": []
       },
@@ -620,8 +634,12 @@
         "empathy",
         "interpersonal-abilities",
         "intrinsic-motivation",
+        "love-driven-dev",
+        "love-driven-dev-en",
+        "metacognition",
         "psychological-safety",
-        "psychological-safety-en"
+        "psychological-safety-en",
+        "william-james-self-ja"
        ],
        "cs": [
         "D14",
@@ -632,16 +650,17 @@
        "id": "10020",
        "name": "教育心理学",
        "pages": [
-        "capacity-after-ai",
-        "cognitive-abilities",
+        "intelligence-structure",
+        "unsupported-ability-models",
         "creative-thinking",
         "developmental-stages",
-        "emerging-abilities",
         "influences-psychology",
         "interpersonal-abilities",
         "intrinsic-motivation",
         "metacognition",
         "personality",
+        "psychological-safety",
+        "psychological-safety-en",
         "soft-skills",
         "stages-defense",
         "stages-screener",
@@ -662,9 +681,9 @@
         "love-driven-dev",
         "love-driven-dev-en",
         "personality",
-        "shikan",
+        "psychological-safety",
+        "psychological-safety-en",
         "stages-defense",
-        "stages-screener",
         "via-vulnerability"
        ],
        "cs": [
@@ -678,9 +697,12 @@
        "pages": [
         "analogy",
         "breath-filter",
-        "cognitive-abilities",
+        "executive-functions",
+        "intelligence-structure",
+        "unsupported-ability-models",
         "decision-making",
-        "thinking-definitions",
+        "no-road-ahead",
+        "thinking",
         "thinking-dispositions",
         "inseparable-abilities"
        ],
@@ -694,12 +716,12 @@
        "name": "認知科学",
        "pages": [
         "analogy",
-        "creative-thinking",
+        "breath-filter",
         "empathy",
-        "fundamental-theorem-of-algebra-analogy",
-        "metacognition",
-        "reasoning",
-        "thinking"
+        "love-driven-dev",
+        "love-driven-dev-en",
+        "thinking",
+        "inseparable-abilities"
        ],
        "cs": [
         "D08",
@@ -721,9 +743,9 @@
        "id": "11010",
        "name": "代数学",
        "pages": [
-        "euler-formula",
         "fundamental-theorem-of-algebra",
         "fundamental-theorem-of-algebra-analogy",
+        "rotation-multiplication",
         "subtraction-kinds",
         "three-and-seven"
        ],
@@ -756,8 +778,12 @@
         "angle-rotation",
         "euler-formula",
         "euler-unfolded",
+        "orthogonal-axis-tools",
         "fundamental-theorem-of-algebra",
-        "rotation-multiplication"
+        "herschel-quetelet-probabilities-ja",
+        "man",
+        "subtraction-kinds",
+        "zen-circle-hs"
        ],
        "cs": []
       },
@@ -777,10 +803,9 @@
        "id": "12030",
        "name": "数学基礎、応用数学および統計数学",
        "pages": [
-        "buckle-history-of-civilization-ja",
         "herschel-quetelet-probabilities-ja",
-        "quetelet-lettres-probabilites-ja",
-        "subtraction-kinds"
+        "peirce-law-of-mind-ja",
+        "quetelet-lettres-probabilites-ja"
        ],
        "cs": [
         "D01"
@@ -797,6 +822,7 @@
        "name": "数理物理、物性基礎論および量子系",
        "pages": [
         "clausius-art-der-bewegung-ja",
+        "orthogonal-axis-tools",
         "helmholtz-erhaltung-der-kraft-ja",
         "herapath-mathematical-physics-ja",
         "kronig-theorie-der-gase-ja",
@@ -826,6 +852,12 @@
        "name": "生物物理、化学物理およびソフトマターの物理",
        "pages": [],
        "cs": []
+      },
+      {
+       "id": "80040",
+       "name": "量子ビーム科学および加速器科学",
+       "pages": [],
+       "cs": []
       }
      ]
     },
@@ -848,6 +880,12 @@
       {
        "id": "14030",
        "name": "プラズマ応用科学",
+       "pages": [],
+       "cs": []
+      },
+      {
+       "id": "80040",
+       "name": "量子ビーム科学および加速器科学",
        "pages": [],
        "cs": []
       }
@@ -892,6 +930,7 @@
        "name": "地球生命科学",
        "pages": [],
        "cs": [
+        "D03",
         "D05"
        ]
       }
@@ -965,9 +1004,7 @@
       {
        "id": "17010",
        "name": "天文学",
-       "pages": [
-        "gravity-well"
-       ],
+       "pages": [],
        "cs": [
         "D06"
        ]
@@ -1100,7 +1137,9 @@
       {
        "id": "80010",
        "name": "デザイン学",
-       "pages": [],
+       "pages": [
+        "vibe-to-code"
+       ],
        "cs": [
         "D22"
        ]
@@ -1161,7 +1200,9 @@
        "id": "24010",
        "name": "社会システム工学",
        "pages": [],
-       "cs": []
+       "cs": [
+        "D07"
+       ]
       },
       {
        "id": "24020",
@@ -1376,7 +1417,9 @@
       {
        "id": "30030",
        "name": "応用物理一般",
-       "pages": [],
+       "pages": [
+        "thomson-heat-ja"
+       ],
        "cs": []
       }
      ]
@@ -1585,9 +1628,7 @@
        "id": "38020",
        "name": "応用微生物学",
        "pages": [],
-       "cs": [
-        "D30"
-       ]
+       "cs": []
       },
       {
        "id": "38030",
@@ -1822,9 +1863,7 @@
       {
        "id": "44020",
        "name": "発生生物学",
-       "pages": [
-        "kolliker-darwinsche-schopfungstheorie-ja"
-       ],
+       "pages": [],
        "cs": [
         "D04",
         "D09"
@@ -1875,7 +1914,6 @@
         "weismann-significance-of-sexual-reproduction-ja"
        ],
        "cs": [
-        "D03",
         "D04",
         "D09"
        ]
@@ -2003,7 +2041,6 @@
        "name": "生理学",
        "pages": [],
        "cs": [
-        "D08",
         "D09"
        ]
       },
@@ -2105,7 +2142,6 @@
        "id": "51010",
        "name": "脳科学一般",
        "pages": [
-        "thinking-dispositions",
         "via-vulnerability"
        ],
        "cs": [
@@ -2128,7 +2164,9 @@
        "id": "52010",
        "name": "内科学一般",
        "pages": [],
-       "cs": []
+       "cs": [
+        "D10"
+       ]
       },
       {
        "id": "52020",
@@ -2142,9 +2180,7 @@
        "pages": [
         "anxiety"
        ],
-       "cs": [
-        "D10"
-       ]
+       "cs": []
       },
       {
        "id": "52040",
@@ -2192,7 +2228,9 @@
        "id": "53050",
        "name": "皮膚科学",
        "pages": [],
-       "cs": []
+       "cs": [
+        "D10"
+       ]
       }
      ]
     },
@@ -2318,9 +2356,7 @@
        "id": "56070",
        "name": "形成外科学",
        "pages": [],
-       "cs": [
-        "D10"
-       ]
+       "cs": []
       }
      ]
     },
@@ -2451,9 +2487,7 @@
       {
        "id": "59030",
        "name": "体育および身体教育学",
-       "pages": [
-        "inseparable-abilities"
-       ],
+       "pages": [],
        "cs": []
       },
       {
@@ -2503,7 +2537,8 @@
        "id": "60050",
        "name": "ソフトウェア",
        "pages": [
-        "vibe-to-code"
+        "love-driven-dev",
+        "love-driven-dev-en"
        ],
        "cs": [
         "D07"
@@ -2520,7 +2555,9 @@
       {
        "id": "60070",
        "name": "情報セキュリティ",
-       "pages": [],
+       "pages": [
+        "via-vulnerability"
+       ],
        "cs": [
         "D07"
        ]
@@ -2552,7 +2589,9 @@
       {
        "id": "80010",
        "name": "デザイン学",
-       "pages": [],
+       "pages": [
+        "vibe-to-code"
+       ],
        "cs": [
         "D22"
        ]
@@ -2562,12 +2601,12 @@
        "name": "認知科学",
        "pages": [
         "analogy",
-        "creative-thinking",
+        "breath-filter",
         "empathy",
-        "fundamental-theorem-of-algebra-analogy",
-        "metacognition",
-        "reasoning",
-        "thinking"
+        "love-driven-dev",
+        "love-driven-dev-en",
+        "thinking",
+        "inseparable-abilities"
        ],
        "cs": [
         "D08",
@@ -2591,10 +2630,7 @@
       {
        "id": "61030",
        "name": "知能情報学",
-       "pages": [
-        "capacity-after-ai",
-        "reading-directions"
-       ],
+       "pages": [],
        "cs": [
         "D07"
        ]
@@ -2755,7 +2791,9 @@
   "carus-onslaught-on-necessity-ja": "ケーラス「パース氏の必然論への猛攻」を、日本語で読む",
   "clausius-art-der-bewegung-ja": "クラウジウス「熱と呼ぶ運動の種類について」（1857）を、日本語で読む",
   "clausius-bewegende-kraft-der-warme-ja": "クラウジウス「熱の動力について」（1850）を、日本語で読む",
-  "cognitive-abilities": "頭脳の能力は、どう分けられてきたか",
+  "executive-functions": "実行機能と作業記憶",
+  "intelligence-structure": "知能は、どう分けられてきたか",
+  "unsupported-ability-models": "広く知られたが、測定で残らなかった分け方",
   "creative-thinking": "創造的思考とは",
   "darwin-historical-sketch-ja": "ダーウィン「歴史的概略」（『種の起源』第 3 版の巻頭）を、日本語で読む",
   "darwin-wallace-1858-ja": "ダーウィンとウォレスのリンネ協会の論文（1858）を、日本語で読む",
@@ -2767,6 +2805,7 @@
   "empathy": "共感とは",
   "euler-formula": "オイラーの式",
   "euler-unfolded": "オイラーの等式が、たたんだもの",
+  "orthogonal-axis-tools": "直交する軸を扱っている道具たち",
   "forgiveness-salvation": "赦しと救いとは",
   "fundamental-theorem-of-algebra": "代数学の基本定理",
   "fundamental-theorem-of-algebra-analogy": "代数学の基本定理から、構造の類似を考える",
@@ -2776,7 +2815,6 @@
   "helmholtz-erhaltung-der-kraft-ja": "ヘルムホルツ『力の保存について』（1847）を、日本語で読む",
   "herapath-mathematical-physics-ja": "ヘラパス『数理物理学』（1847）の、気体の運動論の所を、日本語で読む",
   "herschel-quetelet-probabilities-ja": "ハーシェル「ケトレーの確率論」（1850）を、日本語で読む",
-  "influences-management": "影響を受けた経営学",
   "influences-psychology": "影響を受けた心理学",
   "interpersonal-abilities": "人と関わる力",
   "intrinsic-motivation": "内発的動機とは",
@@ -2788,6 +2826,7 @@
   "love-driven-dev": "Love駆動開発と呼びたいもの β",
   "love-driven-dev-en": "What I Want to Call Love-Driven Development β",
   "love-history": "Love とは、どう言われてきたか",
+  "man": "人類の man",
   "management-drivers": "経営学の考え方は、どこまで効くか",
   "mandeville-grumbling-hive-ja": "マンデヴィル『蜂の寓話』（1714）の詩「ぶつぶつ言う蜂の巣」を、日本語で読む",
   "mansel-limits-of-religious-thought-ja": "マンセル『宗教的思考の限界』（1858）の序文を、日本語で読む",
@@ -2809,7 +2848,6 @@
   "psychological-safety-en": "What Is Psychological Safety",
   "quetelet-lettres-probabilites-ja": "ケトレー『確率論についての書簡』（1846）の、平均と誤差の所を、日本語で読む",
   "rankine-mechanical-action-of-heat-ja": "ランキン「熱の力学的作用について」（1850）を、日本語で読む",
-  "reading-directions": "Claude から LLM への申し送り",
   "reasoning": "推論とは",
   "rotation-multiplication": "回転の掛け算",
   "shikan": "止観とは",
@@ -2818,7 +2856,6 @@
   "stages-screener": "ものの見方の広さスクリーナー — 視座・メタ認知・インクルーシブを16問で確かめる",
   "subtraction-kinds": "いろんな引き算",
   "thinking": "思考とは",
-  "thinking-definitions": "「考える」の語は、何を指してきたか",
   "thinking-dispositions": "思考を動かす構えと体力",
   "thomson-heat-ja": "トムソン「熱」（『ブリタニカ百科事典』第 9 版・1880）を、日本語で読む",
   "three-and-seven": "なぜ 3 と 7 だけが特別なのか — 可除代数‑意識/組織仮説（読み物）",
