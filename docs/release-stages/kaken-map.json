@@ -1,13 +1,13 @@
 {
  "counts": {
-  "pages": 106,
-  "mapped_pages": 88,
+  "pages": 107,
+  "mapped_pages": 89,
   "cs": 30,
   "sho": 296,
   "touched": 89,
   "page_only": 13,
-  "cs_only": 51,
-  "both": 25,
+  "cs_only": 50,
+  "both": 26,
   "chu": 66,
   "chu_touched": 43,
   "dai": 13,
@@ -215,7 +215,9 @@
       {
        "id": "02040",
        "name": "言語学",
-       "pages": [],
+       "pages": [
+        "middle-voice"
+       ],
        "cs": [
         "D17"
        ]
@@ -2837,6 +2839,7 @@
   "mansel-limits-of-religious-thought-ja": "マンセル『宗教的思考の限界』（1858）の序文を、日本語で読む",
   "maxwell-dynamical-theory-of-gases-ja": "マクスウェル「気体の動力学的理論の例解」（1860）を、日本語で読む",
   "metacognition": "メタ認知とは",
+  "middle-voice": "中動とは",
   "mill-examination-of-hamilton-ja": "ミル『ハミルトン哲学の検討』（1865）の第 VII 章を、日本語で読む",
   "mintzberg-schools": "ミンツバーグの学派を、駆動源と創造の流れで見る",
   "naegeli-abstammungslehre-ja": "ネーゲリ『由来論の機械論的・生理学的理論』（1884）の、序論と内的な原因の所を、日本語で読む",
