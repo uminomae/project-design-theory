@@ -1,50 +1,50 @@
 # 心の脆弱性スキャンの誤解の台帳（docs/tools/kokoro-scan/ruler.md 版 1.12・46 項）を、DMRS の防衛と WUSCT の段階に当てた下書き（Claude の読み・2026-11-26）。
 # 列：番号（台帳の並び順）・節・★（pjdhiro 由来なら ★）・誤解の短い名・DMRS の防衛（空白で区切る。無ければ -）・WUSCT の段階（E 番号を空白で区切る。無ければ -）・根拠（読んだファイル）
 # 当て方：DMRS は、その誤解の中で働いている防衛か、誤解が見落としている防衛を一つから三つ。WUSCT は、その誤解が出やすい段階か、同じ語の向きが反転する境目の段階を、クック＝グロイター 2013 の段階ごとの主な不安と防衛（pd/knowledge/research/developmental-stages/README.md §2）から読んだ。防衛でない取り違え（語の水準・定義の混同）と、段階の根拠が repo に無いものは - にした。
-# 別のコンテキストで照合し直す前の下書き（RELEASE-STAGES.md §1）。
+# 2026-11-27 に、作った側と別のコンテキストで、DMRS は Di Giuseppe & Perry 2021 の本文の定義で、WUSCT は Loevinger 1979 の本文の段階の記述で照合し直した。変えた行と理由は kokoro-recheck.tsv。
 R01	メタ認知・視点・共感	★	メタ認知を他者視点取得と取り違える	自己観察	E4 E5 E6	pd/reader/metacognition.html・pd/knowledge/research/developmental-stages/README.md
-R02	メタ認知・視点・共感		視点取得を共感と取り違える	知性化	-	pd/reader/empathy.html
-R03	メタ認知・視点・共感	★	共感を境が消えて一つになることと思う	投影 投影性同一視 他者の理想化	E3 E4	pd/reader/empathy.html・docs/rules/stance.md 1-1
+R02	メタ認知・視点・共感		視点取得を共感と取り違える	-	-	pd/reader/empathy.html
+R03	メタ認知・視点・共感	★	共感を境が消えて一つになることと思う	投影	E3 E4	pd/reader/empathy.html・docs/rules/stance.md 1-1
 R04	信頼・安心・理想化	★	信頼と信仰・期待・理想化を分けない	他者の理想化 否認	E4	pd/reader/love-driven-dev.html 第四部・docs/rules/stance.md 1-3
 R05	信頼・安心・理想化		良い面だけ預けることを信頼と呼ぶ	他者の理想化 他者像の分裂	E4	pd/reader/love-driven-dev.html「理想化と信頼は、どう違うのか」
 R06	信頼・安心・理想化		安心と信頼を同じものと書く	-	-	pd/reader/anshin.html
-R07	信頼・安心・理想化	★	信頼を不安が取り除かれた後の状態と書く	否認 合理化	E4 E5 E6	docs/rules/stance-theories.md 信頼の行
+R07	信頼・安心・理想化	★	信頼を不安が取り除かれた後の状態と書く	否認	E4	docs/rules/stance-theories.md 信頼の行
 R08	信頼・安心・理想化	★	防衛を下ろす安心と保身の安心を区別しない	人に頼る 否認	E3 E4	pd/reader/love-driven-dev.html・pd/reader/anshin.html
 R09	心理的安全性	★	心理的安全性を一人の内側の能力として扱う	-	-	pd/reader/psychological-safety.html
 R10	心理的安全性	★	心理的安全性を自分自身の安心・安全と読む	合理化	E3	pd/reader/psychological-safety.html
 R11	心理的安全性	★	安全を身の安全・罰されないことと読む	-	E3	pd/reader/psychological-safety.html
 R12	心理的安全性	★	罰を恐れずに済むことだけを残す	-	E3 E4	pd/reader/love-driven-dev.html・pd/reader/psychological-safety.html
 R13	心理的安全性		優しさ・居心地のよさと思う	否認	E4	pd/reader/psychological-safety.html
-R14	心理的安全性		宣言すれば作れると思う	万能	-	pd/reader/psychological-safety.html
+R14	心理的安全性		宣言すれば作れると思う	-	-	pd/reader/psychological-safety.html
 R15	心理的安全性	★	高いほど良く、どこでも要ると思う	他者の理想化	-	pd/reader/psychological-safety.html
 R16	心理的安全性		脅威を取り除けば安全だと思う	-	-	pd/reader/psychological-safety.html
-R17	不安・防衛・葛藤	★	不安を消すもの・無いほうが良いものとして書く	否認 抑圧 反動形成	E4	pd/reader/anxiety.html・pd/knowledge/research/developmental-stages/READER-developmental-stages.md（順応の感情の表）
+R17	不安・防衛・葛藤	★	不安を消すもの・無いほうが良いものとして書く	否認 反動形成	E4	pd/reader/anxiety.html・pd/knowledge/research/developmental-stages/READER-developmental-stages.md（順応の感情の表）
 R18	不安・防衛・葛藤		不安と恐怖を一つの軸に並べる	-	-	docs/rules/stance.md 1-3
-R19	不安・防衛・葛藤	★	脆弱性を見つめることを補って強くなることと読む	万能 反動形成	E5	pd/reader/via-vulnerability.html・pd/knowledge/research/developmental-stages/README.md（専門家の不安 p.40）
+R19	不安・防衛・葛藤	★	脆弱性を見つめることを補って強くなることと読む	万能	E5	pd/reader/via-vulnerability.html・pd/knowledge/research/developmental-stages/README.md（専門家の不安 p.40）
 R20	不安・防衛・葛藤		防衛は弱い人や病気の人だけが使うと思う	否認 他者の価値下げ	E5	pd/reader/defense-mechanisms.html・pd/knowledge/research/developmental-stages/README.md（専門家の防衛 p.40）
-R21	不安・防衛・葛藤	★	性格の型や障害の名を人を分ける型として読む	知性化	-	pd/reader/stages-defense.html
+R21	不安・防衛・葛藤	★	性格の型や障害の名を人を分ける型として読む	-	-	pd/reader/stages-defense.html
 R22	不安・防衛・葛藤	★	障害の併発を別々のものが重なることと読む	-	-	pd/reader/stages-defense.html
 R23	不安・防衛・葛藤	★	葛藤を善悪の二分や悪いものとして扱う	自己像の分裂 他者像の分裂	E4	pd/reader/love-driven-dev.html・pd/knowledge/research/developmental-stages/README.md（順応は葛藤を避ける p.34）
-R24	不安・防衛・葛藤	★	素朴な体験を科学より低いものと読む	知性化 自己の価値下げ	E5 E6	docs/rules/stance.md 1-4
-R25	粘り・立ち直り・動機	★	GRIT を我慢や根性と読む	抑制	E6	pd/reader/love-driven-dev.html・pd/knowledge/research/developmental-stages/README.md（達成者の影の抑え込み p.49）
+R24	不安・防衛・葛藤	★	素朴な体験を科学より低いものと読む	他者の理想化 他者の価値下げ	E5 E6	docs/rules/stance.md 1-4
+R25	粘り・立ち直り・動機	★	GRIT を我慢や根性と読む	-	E6	pd/reader/love-driven-dev.html・pd/knowledge/research/developmental-stages/README.md（達成者の影の抑え込み p.49）
 R26	粘り・立ち直り・動機	★	レジリエンスを折れない個人の強さとして書く	万能 自己の理想化	E6	pd/reader/love-driven-dev.html・pd/knowledge/research/developmental-stages/README.md（達成者の不安 p.50）
-R27	粘り・立ち直り・動機		ネガティブ・ケイパビリティを我慢の力と読む	抑制	-	pd/reader/love-driven-dev.html
+R27	粘り・立ち直り・動機		ネガティブ・ケイパビリティを我慢の力と読む	-	-	pd/reader/love-driven-dev.html
 R28	粘り・立ち直り・動機	★	内発的動機を良い側だけで書く	自己の理想化 合理化	-	pd/reader/intrinsic-motivation.html
 R29	組織・プロジェクトの言葉		関係や場の言葉を人の内側の能力として受け取る（総論）	-	-	pd/reader/love-driven-dev.html「事業の言葉は、どこで誤解されるか」
 R30	組織・プロジェクトの言葉	★	「グループと一つになる」を集団への所属として使う	合理化	E4 E5	pd/reader/nonaka-complement.html
 R31	組織・プロジェクトの言葉		包むことを混ぜる・曖昧にすることと書く	-	-	docs/rules/stance.md 1-2
 R32	組織・プロジェクトの言葉	★	手順を決めればコントロールできると書く	万能	E6	docs/rules/stance.md 1-3・1-4・pd/knowledge/research/developmental-stages/README.md（達成者の不安 p.50）
 R33	組織・プロジェクトの言葉		率いる人を予測と信念で貫く力強い人として描く	他者の理想化	-	docs/rules/stance.md 1-3
-R34	組織・プロジェクトの言葉	★	不確実なことを避け、振り返りだけで書く	否認	-	docs/rules/stance.md 1-3
+R34	組織・プロジェクトの言葉	★	不確実なことを避け、振り返りだけで書く	否認 予期	-	docs/rules/stance.md 1-3
 R35	組織・プロジェクトの言葉		構想や計画はいつも要ると書く	-	-	docs/rules/stance.md 1-3
 R36	組織・プロジェクトの言葉	★	描いた未来の木を未来そのものと取り違える	万能 予期	E6	docs/rules/stance.md 1-3
-R37	組織・プロジェクトの言葉	★	時間の向きの見方が曖昧	投影	-	docs/rules/stance.md 1-3
+R37	組織・プロジェクトの言葉	★	時間の向きの見方が曖昧	投影 万能	-	docs/rules/stance.md 1-3
 R38	組織・プロジェクトの言葉		探索の木と遡りの木を同じものと読む	-	-	pd/knowledge/research/julia-potential/ANALYSIS-time-axis-20261122.md
 R39	組織・プロジェクトの言葉		意思決定を決定ツリーの全探索だけで書く	-	-	docs/rules/stance.md 1-3
 R40	組織・プロジェクトの言葉	★	構想を叡智としてだけ書く	知性化 合理化	E6	pd/reader/love-driven-dev.html・pd/knowledge/research/developmental-stages/README.md（達成者の防衛 p.49）
 R41	組織・プロジェクトの言葉		価値は商品に埋め込むものと書く	-	-	pd/reader/love-driven-dev.html
-R42	組織・プロジェクトの言葉		善とされたものをいつでも善いものと書く	他者の理想化 他者像の分裂	E4	docs/rules/stance.md 1-2・pd/knowledge/research/developmental-stages/README.md（順応は決まりに沿う）
+R42	組織・プロジェクトの言葉		善とされたものをいつでも善いものと書く	他者の理想化	E4	docs/rules/stance.md 1-2・pd/knowledge/research/developmental-stages/README.md（順応は決まりに沿う）
 R43	思考・推論	★	数学の力を演繹の力と同じものと書く	-	-	docs/rules/stance.md 1-4
 R44	思考・推論	★	説明の順番を分かる順番そのものと取り違える	-	-	docs/rules/stance.md 1-4
-R45	思考・推論	★	別の大前提から演繹する人を演繹の力が低いと書く	-	-	docs/rules/stance.md 1-4
+R45	思考・推論	★	別の大前提から演繹する人を演繹の力が低いと書く	他者の価値下げ	-	docs/rules/stance.md 1-4
 R46	思考・推論	★	確かめる側に回る人を演繹が苦手と読む	他者の価値下げ	-	docs/rules/stance.md 1-4
