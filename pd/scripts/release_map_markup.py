@@ -33,46 +33,30 @@ def _payload(obj) -> str:
     return json.dumps(obj, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
 
 
-def _paint(pages, cs):
-    if pages and cs:
-        return "is-both"
-    if pages:
-        return "is-page"
-    if cs:
-        return "is-cs"
-    return ""
-
-
 def kaken_markup(data: dict) -> str:
-    titles, cs_titles = data["pages"], data["cs"]
+    titles = data["pages"]
     cells_data, out, listed = {}, [], {}
     out.append(
         '<div class="rmap rmap--kaken" data-rmap="kaken">'
         '<p class="rmap-legend"><span class="rmap-key is-page"></span>読み物のページ'
-        '<span class="rmap-key is-cs"></span>創造とはの記録'
-        '<span class="rmap-key is-both"></span>両方'
         '<span class="rmap-key"></span>触れていない</p>'
     )
     for dai in data["dai"]:
-        t = sum(1 for ch in dai["chu"] for s in ch["sho"] if s["pages"] or s["cs"])
+        t = sum(1 for ch in dai["chu"] for s in ch["sho"] if s["pages"])
         a = sum(len(ch["sho"]) for ch in dai["chu"])
         out.append(f'<div class="rmap-dai"><p class="rmap-dai__title">大区分 {esc(dai["id"])}<span class="rmap-count">{t} / {a}</span></p><div class="rmap-chus">')
         for ch in dai["chu"]:
-            k = sum(1 for s in ch["sho"] if s["pages"] or s["cs"])
+            k = sum(1 for s in ch["sho"] if s["pages"])
             out.append(
                 f'<div class="rmap-chu rmap-group{" is-empty" if not k else ""}">'
                 f'<p class="rmap-chu__name">中区分 {esc(ch["id"])}　{esc(ch["name"])}<span class="rmap-count">{k} / {len(ch["sho"])}</span></p>'
                 '<div class="rmap-cells">'
             )
             for s in ch["sho"]:
-                cells_data[s["id"]] = {"n": s["name"], "p": s["pages"], "c": s["cs"]}
-                paint = _paint(s["pages"], s["cs"])
-                what = []
-                if s["pages"]:
-                    what.append(f'読み物 {len(s["pages"])}')
-                if s["cs"]:
-                    what.append(f'創造とは {len(s["cs"])}')
-                label = f'{s["id"]} {s["name"]}（{"・".join(what) if what else "触れていない"}）'
+                cells_data[s["id"]] = {"n": s["name"], "p": s["pages"]}
+                paint = "is-page" if s["pages"] else ""
+                what = f'読み物 {len(s["pages"])}' if s["pages"] else "触れていない"
+                label = f'{s["id"]} {s["name"]}（{what}）'
                 out.append(
                     f'<button type="button" class="rmap-cell {paint}" data-rmap-cell="{esc(s["id"])}"'
                     f' aria-pressed="false" aria-label="{esc(label)}" title="{esc(label)}"></button>'
@@ -82,14 +66,13 @@ def kaken_markup(data: dict) -> str:
             out.append("</div></div>")
         out.append("</div></div>")
     out.append('<div class="rmap-detail" data-rmap-detail hidden></div></div>')
-    payload = {"kind": "kaken", "cells": cells_data, "pages": titles, "cs": cs_titles}
+    payload = {"kind": "kaken", "cells": cells_data, "pages": titles}
     out.append(f'<script type="application/json" data-rmap-json="kaken">{_payload(payload)}</script>')
     # JavaScript が動かない環境と機械の読み手のための一覧（升の中身と同じもの）
     rows = []
     for code in sorted(listed):
         s = listed[code]
         links = [f'<a href="{esc(p)}.html">{esc(titles[p])}</a>' for p in s["pages"]]
-        links += [f'<a href="../cs/index.html?domain={esc(c)}">創造とは：{esc(cs_titles[c])}</a>' for c in s["cs"]]
         rows.append(f'<li><strong>{esc(code)} {esc(s["name"])}</strong>：{"・".join(links)}</li>')
     out.append(
         '<details class="acc"><summary>触れている小区分の一覧</summary>'

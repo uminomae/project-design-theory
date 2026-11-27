@@ -677,8 +677,6 @@ body.reader-flow .rmap { margin: 1rem 0 1.5rem; }
 body.reader-flow .rmap-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; font-size: 0.8rem; color: var(--mid); margin: 0 0 0.8rem; }
 body.reader-flow .rmap-key { display: inline-block; width: 14px; height: 14px; margin-right: 4px; vertical-align: -2px; border: 1px solid var(--glass-border-soft); border-radius: 3px; background: var(--glass-bg-faint); }
 body.reader-flow .rmap-key.is-page, body.reader-flow .rmap-cell.is-page { background: var(--navy); border-color: var(--navy); }
-body.reader-flow .rmap-key.is-cs, body.reader-flow .rmap-cell.is-cs { background: var(--gold); border-color: var(--gold); }
-body.reader-flow .rmap-key.is-both, body.reader-flow .rmap-cell.is-both { background: linear-gradient(135deg, var(--navy) 50%, var(--gold) 50%); border-color: var(--navy); }
 body.reader-flow .rmap-dai { margin: 0 0 1.2rem; }
 body.reader-flow .rmap-dai__title { font-family: var(--serif-jp); color: var(--navy); font-size: 1rem; margin: 0 0 0.4rem; }
 body.reader-flow .rmap-count { margin-left: 0.6em; font-size: 0.75rem; color: var(--mid); font-family: var(--sans); }

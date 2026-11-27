@@ -20,30 +20,18 @@
     function fillKaken(panel, code, data) {
         var c = data.cells[code];
         panel.appendChild(el('p', 'rmap-detail__title', code + ' ' + c.n));
-        if (!c.p.length && !c.c.length) {
-            panel.appendChild(el('p', 'rmap-detail__none', 'このサイトのページも、創造とはの記録も、まだ触れていません。'));
+        if (!c.p.length) {
+            panel.appendChild(el('p', 'rmap-detail__none', 'このサイトの読み物のページは、まだ触れていません。'));
             return;
         }
-        if (c.p.length) {
-            panel.appendChild(el('p', 'rmap-detail__head', '当てた読み物のページ（' + c.p.length + '）'));
-            var ul = el('ul');
-            c.p.forEach(function (id) {
-                var li = el('li');
-                li.appendChild(link(id + '.html', data.pages[id] || id));
-                ul.appendChild(li);
-            });
-            panel.appendChild(ul);
-        }
-        if (c.c.length) {
-            panel.appendChild(el('p', 'rmap-detail__head', '当てた創造とはの分野（' + c.c.length + '）'));
-            var ul2 = el('ul');
-            c.c.forEach(function (id) {
-                var li = el('li');
-                li.appendChild(link('../cs/index.html?domain=' + encodeURIComponent(id), (data.cs[id] || id)));
-                ul2.appendChild(li);
-            });
-            panel.appendChild(ul2);
-        }
+        panel.appendChild(el('p', 'rmap-detail__head', '当てた読み物のページ（' + c.p.length + '）'));
+        var ul = el('ul');
+        c.p.forEach(function (id) {
+            var li = el('li');
+            li.appendChild(link(id + '.html', data.pages[id] || id));
+            ul.appendChild(li);
+        });
+        panel.appendChild(ul);
     }
 
     function fillScale(panel, key, data) {

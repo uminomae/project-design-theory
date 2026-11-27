@@ -28,15 +28,6 @@ def page_title(ident):
     return re.sub(r"\s*\|\s*Project Design\s*$", "", m.group(1).strip()) if m else ident
 
 
-def cs_title(ident):
-    for p in glob.glob(os.path.join(ROOT, "cs", "evidence", f"evidence-{ident}-*.md")):
-        with open(p, encoding="utf-8") as f:
-            m = re.search(r'^title:\s*"?([^"\n]*)', f.read(), re.M)
-        if m:
-            return m.group(1).split("：")[0]
-    sys.exit(f"cs の記録が無い：{ident}")
-
-
 def rows(name):
     with open(os.path.join(D, name), encoding="utf-8") as f:
         return [l.rstrip("\n").split("\t") for l in f if l.strip() and not l.startswith("#")]
@@ -56,6 +47,8 @@ def kaken():
             order.append(r[0])
     assign = rows("kaken-assign.tsv")
     hits = collections.defaultdict(list)
+    if any(a[0] == "cs" for a in assign):
+        sys.exit("kaken-assign.tsv に cs の行がある。学問の地図は読み物のページだけを当てる（pjdhiro 2026-11-27）")
     for kind, ident, cs, *_ in assign:
         for c in codes(cs):
             if c not in sho:
@@ -67,17 +60,13 @@ def kaken():
     if have != listed:
         sys.exit(f"kaken-assign.tsv の page の行が pd/reader と合わない。行が無いページ：{sorted(have - listed)}・ページが無い行：{sorted(listed - have)}")
     mapped_pages = [a for a in pages if codes(a[2])]
-    csf = [a for a in assign if a[0] == "cs"]
-    page_codes = {c for a in pages for c in codes(a[2])}
-    cs_codes = {c for a in csf for c in codes(a[2])}
     touched = set(hits)
     chu_touched = {ch for c in touched for ch in sho[c][1]}
     dai_all = sorted({d for v in chu.values() for d in v[1].split("・")})
     dai_touched = sorted({d for ch in chu_touched for d in chu[ch][1].split("・")})
     n = dict(
         pages=len(pages), mapped_pages=len(mapped_pages), unmapped=[a[1] for a in pages if not codes(a[2])],
-        cs=len(csf), sho=len(sho), touched=len(touched), page_only=len(page_codes - cs_codes),
-        cs_only=len(cs_codes - page_codes), both=len(page_codes & cs_codes),
+        sho=len(sho), touched=len(touched),
         chu=len(chu), chu_touched=len(chu_touched), dai=len(dai_all), dai_touched=len(dai_touched),
         dai_untouched=[d for d in dai_all if d not in dai_touched],
         unmapped_n=len(pages) - len(mapped_pages),
@@ -89,27 +78,25 @@ def kaken():
     w("`docs/RELEASE-STAGES.md` 3.2（D 人類の man の範囲）の段 1 の下書き。このファイルは `python3 -I scripts/release-maps.py` が `kaken-assign.tsv` から作る。手で直さず、TSV を直して作り直す。")
     w("")
     w("- 基準：科研費の審査区分表（文部科学省。令和 10 年度の公募から使う版。https://www.mext.go.jp/content/20261021-mxt_gakujokik-000052128_01.pdf の「審査区分表（中区分種目）」）。小区分は `kaken-kubun-r10.tsv` に機械で抜き、2026-11-27 に「審査区分表（小区分種目）」と巻末索引で照らし直した（296）。")
-    w("- 当てたもの：`pd/reader/*.html` の全ページと、cs の 30 分野（`cs/evidence/evidence-Dxx-*.md` の論ごとの節）。")
-    w("- 当て方は Claude の読み（2026-11-26 に題・説明・見出しから当て、2026-11-27 に別のコンテキストで本文を開いて照合し直した）。ページは本文の章のどれかが、その小区分の「内容の例」の語を主題にしていれば当て、一段・一節・畳み一つ・表の一行・入口のたとえだけなら当てない。cs は論ごとの節が「内容の例」に入るかで当てた。判定を変えた行と理由は `kaken-recheck-20261127.md`。")
+    w("- 当てたもの：`pd/reader/*.html` の全ページ。創造とは（cs）の分野の記録は当てない（調べただけで、このサイトの読み物ではないため。pjdhiro 2026-11-27「創造とは、は調べただけなので外して。」）。")
+    w("- 当て方は Claude の読み（2026-11-26 に題・説明・見出しから当て、2026-11-27 に別のコンテキストで本文を開いて照合し直した）。本文の章のどれかが、その小区分の「内容の例」の語を主題にしていれば当て、一段・一節・畳み一つ・表の一行・入口のたとえだけなら当てない。判定を変えた行と理由は `kaken-recheck-20261127.md`。")
     w("")
     w("## 数")
     w("")
     w("| 項目 | 数 |")
     w("|---|---|")
     w(f"| 小区分 | 触れている {n['touched']} / {n['sho']}（触れていない {n['sho'] - n['touched']}） |")
-    w(f"| うち読み物のページだけ・cs だけ・両方 | {n['page_only']}・{n['cs_only']}・{n['both']} |")
     w(f"| 中区分 | 触れている {n['chu_touched']} / {n['chu']} |")
     w(f"| 大区分 | 触れている {n['dai_touched']} / {n['dai']}（触れていない：{'・'.join(n['dai_untouched']) or 'なし'}） |")
     w(f"| 読み物のページ | {n['pages']}（区分に当てた {n['mapped_pages']}・当てない {len(n['unmapped'])}） |")
-    w(f"| cs の分野 | {n['cs']}（どれも一つ以上の区分に当てた） |")
     w("")
     w(f"区分に当てないページ：{'・'.join(n['unmapped'])}。並び・目次・道案内・転送のページ（中身は呼ぶ先のページの側）と、このサイトを測った結果のページと、pjdhiro の一年の記録（love-trajectory）。")
     w("")
-    w("区分の中に場所が無いもの：Love駆動開発そのもの（経営学・臨床心理学・仏教学に触れるが、どれかの区分の研究ではない）、cs の D30 の伝統知そのもの（TEK・メーティスなどの論は区分に入る）。")
+    w("区分の中に場所が無いもの：Love駆動開発そのもの（経営学・臨床心理学・仏教学に触れるが、どれかの区分の研究ではない）。")
     w("")
     w("## 地図")
     w("")
-    w("● は触れている小区分で、括弧の中は当てたページ（ファイル名）と cs の分野。○ は触れていない小区分。")
+    w("● は触れている小区分で、括弧の中は当てたページ（ファイル名）。○ は触れていない小区分。")
     w("")
     by_dai = collections.defaultdict(list)
     for ch, (nm, dai) in chu.items():
@@ -136,21 +123,18 @@ def kaken():
         w("")
     w("複数の中区分に現れる小区分は、それぞれの中区分の行に出す（大区分の数は、出た行で数える）。上の「数」の小区分は、重ねずに数えた。")
     w("")
-    page_ids = {a[1] for a in pages}
     data = dict(
         counts={k: v for k, v in n.items() if not isinstance(v, list)},
         dai=[
             dict(id=dai, chu=[
                 dict(id=ch, name=chu[ch][0], sho=[
                     dict(id=c, name=sho[c][0].replace("関連", ""),
-                         pages=[i for i in hits.get(c, []) if i in page_ids],
-                         cs=[i for i in hits.get(c, []) if i not in page_ids])
+                         pages=hits.get(c, []))
                     for c in order if ch in sho[c][1]
                 ]) for ch in sorted(by_dai[dai], key=int)
             ]) for dai in sorted(by_dai)
         ],
         pages={a[1]: page_title(a[1]) for a in mapped_pages},
-        cs={a[1]: cs_title(a[1]) for a in csf},
     )
     return "\n".join(out), n, data
 
