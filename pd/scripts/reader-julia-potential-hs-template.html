@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/julia-potential-hs.html を直接編集しないでください。
+  正本:   knowledge/research/julia-potential/READER-julia-potential-hs.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「起業家の進み方と、ジュリア集合の式」のページです（工事中）。読み物「起業家の漸化式と、ジュリア集合」（reader/julia-potential.html）の筋を、数学の言葉をできるだけ使わずに一枚にまとめた、高校生向けのやさしい解説の独立ページ。z → z² + c を前へくり返すと渦を巻いて一点へ寄ること・逆にたどると一段ごとに候補が二つに分かれて境目に散らばること・半径 2 の円を超えた点は戻らないことは数学の事実として書き、図はブラウザの中で計算して描く。式の文字への意味の当てはめ・美と起業家のエネルギー・縁の雲を「私」と読むことは、pjdhiro の見立てに Claude が当てはめた仮説として書く。
+  数学の説明は教科書にある事実の要約で、Claude が書いた。
+  pjdhiro 本人の言葉は「pjdhiro の見立て：」「pjdhiro の問い：」「pjdhiro の見方：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>起業家の進み方と、ジュリア集合の式 | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/julia-potential-hs.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="読み物「起業家の漸化式と、ジュリア集合」の筋を、数学の言葉をできるだけ使わずに一枚にまとめた、高校生向けのやさしい解説。起業家の進み方を入れ子の深さ優先探索と見て、一歩の結果が次の一歩の出発になる漸化式に書き、ジュリア集合を描く式 z → z² + c に当ててみる。前へ進めると渦、遡ると境目になることを、動かせる図で見る。神・愛・美のポテンシャルという問いと、美は起業家のエネルギーに近いのではないかという仮説、縁に残る点の雲を「私」と読む見方までをたどる。式への当てはめは仮説として書く（工事中）。">
+    <meta property="og:title" content="起業家の進み方と、ジュリア集合の式">
+    <meta property="og:description" content="読み物「起業家の漸化式と、ジュリア集合」の筋を、数学の言葉をできるだけ使わずに一枚にまとめた、高校生向けのやさしい解説。起業家の進み方を入れ子の深さ優先探索と見て、一歩の結果が次の一歩の出発になる漸化式に書き、ジュリア集合を描く式 z → z² + c に当ててみる。前へ進めると渦、遡ると境目になることを、動かせる図で見る。神・愛・美のポテンシャルという問いと、美は起業家のエネルギーに近いのではないかという仮説、縁に残る点の雲を「私」と読む見方までをたどる。式への当てはめは仮説として書く（工事中）。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/julia-potential-hs.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="起業家の進み方と、ジュリア集合の式">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-27">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <style>
+    /* 図を一つだけ動かす（z → z² + c の前へ・逆に・たくさんの点）。色は読み物の紺と金 */
+    .jh-figure { display: grid; gap: 0.6rem; }
+    .jh-figure canvas { width: 100%; max-width: 560px; height: auto; aspect-ratio: 1 / 1; border-radius: 8px; background: #0f1628; display: block; margin: 0 auto; }
+    .jh-ctrl { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+    .jh-ctrl button { font: inherit; font-size: 0.9rem; border: 1px solid currentColor; background: transparent; color: inherit; border-radius: 999px; padding: 0.35rem 0.9rem; cursor: pointer; }
+    .jh-ctrl button[aria-pressed="true"] { background: rgba(233, 196, 106, 0.25); }
+    .jh-ctrl button:focus-visible { outline: 2px solid #e9c46a; outline-offset: 2px; }
+    .jh-cap { font-size: 0.92rem; min-height: 3.4em; margin: 0; }
+    .jh-legend { font-size: 0.82rem; opacity: 0.8; margin: 0; }
+    .jh-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; vertical-align: middle; margin-right: 4px; }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "起業家の進み方と、ジュリア集合の式",
+          "description": "読み物「起業家の漸化式と、ジュリア集合」の筋を、数学の言葉をできるだけ使わずに一枚にまとめた、高校生向けのやさしい解説。起業家の進み方を入れ子の深さ優先探索と見て、一歩の結果が次の一歩の出発になる漸化式に書き、ジュリア集合を描く式 z → z² + c に当ててみる。前へ進めると渦、遡ると境目になることを、動かせる図で見る。神・愛・美のポテンシャルという問いと、美は起業家のエネルギーに近いのではないかという仮説、縁に残る点の雲を「私」と読む見方までをたどる。式への当てはめは仮説として書く（工事中）。",
+          "keywords": "起業家, エフェクチュエーション, 深さ優先探索, 漸化式, ジュリア集合, 複素数, 美, Love駆動開発, 高校生向け, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/julia-potential-hs.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/julia-potential-hs.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-27",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "ジュリア集合"}, {"@type": "Thing", "name": "漸化式"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方の言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>読み物「起業家の漸化式と、ジュリア集合」の筋を、数学の言葉をできるだけ使わずに一枚にまとめた、高校生向けのやさしい解説。起業家の進み方を入れ子の深さ優先探索と見て、一歩の結果が次の一歩の出発になる漸化式に書き、ジュリア集合を描く式 z → z² + c に当ててみる。前へ進めると渦、遡ると境目になることを、動かせる図で見る。神・愛・美のポテンシャルという問いと、美は起業家のエネルギーに近いのではないかという仮説、縁に残る点の雲を「私」と読む見方までをたどる。式への当てはめは仮説として書く（工事中）。 読み物「起業家の漸化式と、ジュリア集合」の冒頭から呼ばれる。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見立て」「pjdhiro の問い」「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>起業家の進み方と、ジュリア集合の式</h1>
+                <p class="reader-subtitle">高校生向けのやさしい解説</p>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/julia-potential/READER-julia-potential-hs.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="julia-potential.html">起業家の漸化式と、ジュリア集合</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script src="../src/julia-potential-hs-figure.js" defer></script>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

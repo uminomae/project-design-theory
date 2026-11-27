@@ -1,7 +1,7 @@
 {
  "counts": {
-  "pages": 106,
-  "mapped_pages": 89,
+  "pages": 108,
+  "mapped_pages": 91,
   "sho": 296,
   "touched": 39,
   "chu": 66,
@@ -103,7 +103,8 @@
        "name": "美学および芸術論",
        "pages": [
         "beauty",
-        "julia-potential"
+        "julia-potential",
+        "julia-potential-hs"
        ]
       },
       {
@@ -395,7 +396,9 @@
         "nonaka-complement",
         "psychological-safety",
         "psychological-safety-en",
-        "three-and-seven"
+        "three-and-seven",
+        "julia-potential-hs",
+        "nonaka-complement-hs"
        ]
       },
       {
@@ -655,7 +658,8 @@
        "id": "12020",
        "name": "数理解析学",
        "pages": [
-        "julia-potential"
+        "julia-potential",
+        "julia-potential-hs"
        ]
       },
       {
@@ -2372,6 +2376,8 @@
   "weismann-significance-of-sexual-reproduction-ja": "ヴァイスマン「自然選択の理論における有性生殖の意味」（1886）を、日本語で読む",
   "william-james-self-ja": "ウィリアム・ジェームズの「I と Me」を、原典で読む",
   "zen-circle-hs": "禅の円を、高校の数学で読む",
+  "julia-potential-hs": "起業家の進み方と、ジュリア集合の式",
+  "nonaka-complement-hs": "やさしく読む 野中の知識創造",
   "inseparable-abilities": "思考・心理・身体知が分けられないところ"
  }
 }
