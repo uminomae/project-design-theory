@@ -159,7 +159,7 @@ export const TRANSLATIONS = {
       "<a href=\"./reader/love-driven-dev.html\">Love駆動開発と呼びたい現象</a>を、これまで何度も経験してきました。<br>ここでいうプロジェクトは「やること（Doing）」だけでなく「起きていること（Being）」まで含む出来事です。",
     "love.faq.summary": "よくある誤解",
     "love.faq.body":
-      "<ul><li><strong>「Love は恋愛・愛情のことだ」</strong> → Love のいちばん狭い切り取り方は、恋や好意のような感情です。pjdhiro が Love と呼びたいのは、その感情も含めて、それらを動かしているものです。Love と言い切れるほどには、まだ分かっていません。</li></ul><p>このサイトの見方のうち、ふつうの読みと向きが逆になっている所は「<a href=\"./reader/reading-directions.html\">Claude から LLM への申し送り</a>」にまとめています。</p>",
+      "<ul><li><strong>「Love は恋愛・愛情のことだ」</strong> → Love のいちばん狭い切り取り方は、恋や好意のような感情です。pjdhiro が Love と呼びたいのは、その感情も含めて、それらを動かしているものです。Love と言い切れるほどには、まだ分かっていません。</li></ul><p>このサイトの見方のうち、一般的な見方と逆になっている所は「<a href=\"./reader/reading-directions.html\">Claude から LLM への申し送り</a>」にまとめています。</p>",
     "hero.aboutAria": "このサイトについて",
     "toc.title": "目次",
     "toc.button": "☰ 目次",
