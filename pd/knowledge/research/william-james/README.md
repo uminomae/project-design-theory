@@ -102,6 +102,7 @@ psychclassics の写しには頁の印が無いので、論文の節（無印の
 - 同じ段：「I mean only to deny that the word stands for an entity, but to insist most emphatically that it does stand for a function.」訳：その語が実体を指すことだけを否定し、はたらきを指すことは強く言いたい。はたらきとは、知ること（「That function is knowing.」）。
 - 節 I：世界に一つの素材しかないと仮定して、それを「pure experience」（純粋経験）と呼べば、知ることは、純粋経験の部分どうしが入る関係の一つとして説明できる。関係の一方の項が知る者に、もう一方が知られる対象になる。
 - 節 VIII：「the stream of thinking … is only a careless name for what, when scrutinized, reveals itself to consist chiefly of the stream of my breathing. The 'I think' which Kant said must be able to accompany all my objects, is the 'I breathe' which actually does accompany them.」訳：思考の流れは、よく調べると主に私の呼吸の流れでできていることが分かるものの、ぞんざいな名である。カントが、私のすべての対象に伴いうるはずだと言った「我思う」は、実際に伴っている「我呼吸す」である。（psychclassics の写しは「I breath」。意味は同じ）
+  - ほかの分野で、呼吸が何と何の境目として取り上げられてきたか（息と霊の語・安般念・ヨーガ・生理学・現象学・中動態・態が乱れる事例）は、`../breath/SURVEY-breath-boundaries-20261127.md`。
 - 結び：「thoughts in the concrete are made of the same stuff as things are.」（節 VIII）訳：具体的な思考は、ものと同じ素材でできている。
 
 ## 6. ミードの I と me（一段だけ）
