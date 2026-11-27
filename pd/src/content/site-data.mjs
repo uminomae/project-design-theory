@@ -170,9 +170,9 @@ export const TRANSLATIONS = {
     "overview.p1":
       "プロジェクトデザインとは、プロジェクトの構想・設計・実行だけでなく、実行・管理の方法そのものを対象化し、構想・設計する営みです。",
     "overview.p2":
-      "まず、その基底として射程と領域を固定し、以降の議論を「やること（Doing）」と「起きてること（Being）」と「引かれて起きてしまうこと（Falling）」に分けて整理します。",
+      "以降は、「やること（Doing）」「起きていること（Being）」「引かれて起きてしまうこと（Falling）」の三つの視点で見ていきます。",
     "overview.p3":
-      "プロジェクト実務は、環境適応（物質的条件）とコミュニケーション（非物質的条件）に大別できます。本サイトでは環境適応を前提知（PMBOK等）とし、コミュニケーションを情報処理／感情処理に分解して、とくに感情処理を中心に扱います。",
+      "やることでは、環境適応を前提知（PMBOK 等）とし、能力と感情処理を、とくに感情処理を中心に扱います。",
     "overview.definition.title": "定義",
     "overview.definition.item1": "プロジェクトの構想・設計・実行",
     "overview.definition.item2": "実行・管理方法の構想・設計",
@@ -394,9 +394,9 @@ export const TRANSLATIONS = {
     "overview.p1":
       "Project Design is a practice that not only envisions, designs, and executes projects, but also takes the methods of execution and management themselves as its object of inquiry, and envisions and designs them.",
     "overview.p2":
-      'First, we fix the scope and domain as the foundation, and organize the subsequent discussion into "Doing," "Being," and "Falling."',
+      'From here on, we look at things from three viewpoints: "Doing," "Being," and "Falling."',
     "overview.p3":
-      "Project practice can be broadly divided into environmental adaptation (material conditions) and communication (non-material conditions). This site treats environmental adaptation as prerequisite knowledge (PMBOK, etc.), decomposes communication into information processing and emotional processing, and focuses especially on emotional processing.",
+      "In Doing, we treat environmental adaptation as prerequisite knowledge (PMBOK, etc.) and cover abilities and emotional processing, focusing especially on emotional processing.",
     "overview.definition.title": "Definition",
     "overview.definition.item1":
       "Envisioning, designing, and executing projects",
