@@ -6,7 +6,7 @@
 <p>たとえば、数は一本の数直線から広げていくのがふつうですが、このサイトでは平面から始め、数直線はそれを畳んだものとして読みます。</p>
 </div>
 
-<div class="reader-lead">※それらの視点で物事を整理したものが、「<a href="love-driven-dev.html">Love駆動開発と呼びたいもの β</a>」にまとまっています。</div>
+※それらの視点で物事を整理したものが、「[Love駆動開発と呼びたいもの β](love-driven-dev.html)」にまとまっています。
 
 <p class="reader-summary__title">概要</p>
 
