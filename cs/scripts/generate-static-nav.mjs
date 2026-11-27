@@ -132,7 +132,7 @@ async function collectLocalPages() {
       const html = await readFile(join(ROOT, relPath), 'utf8');
       const title = (html.match(/<title>([^<]*)<\/title>/) || [])[1] || relPath;
       const noindex = /<meta\s+name=["']robots["'][^>]*content=["'][^"']*noindex/i.test(html);
-      pages.push({ relPath, title: title.replace(/\s*\|\s*creation-space\s*$/, '').trim(), noindex });
+      pages.push({ relPath, title: title.replace(/\s*\|\s*(?:creation-space|創造とは|What Is Creation)\s*$/, '').trim(), noindex });
     }
   }
   return pages;
