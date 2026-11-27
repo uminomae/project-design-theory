@@ -8,32 +8,23 @@
 <p class="reader-summary__title">概要</p>
 
 <div class="reader-lead"><span class="reader-lead__label">問い</span>
-このサイトの文章は、どこで、ふつうの読みと向きが逆になっているか。
+このサイトの文章は、どこで、ふつうの読みと逆の向きから書かれているか。
 </div>
 
 <div class="reader-lead"><span class="reader-lead__label">今の答え</span>
-数と形・考え方・心・開発と事業・言葉と読み手の五つの所に、あわせて三十の項目が見つかりました。多くは、ふつうの読みを一面として残したまま、もう一つの向きを足す形です。そのうち二十二は、Claude がこのサイトを作る対話の中で、実際にふつうの読みに戻ってしまい、直された所です。
+<p>三十の所が見つかりました。ここで言う「ふつうの読み」は、教科書や辞書が読ませる読み方のことです。多くの所では、ふつうの読みを間違いとして退けず、一つの見方として残したまま、反対の側からの見方を足しています。三十の所は、次の五つの向きにまとまります。</p>
+<div class="tablewrap"><table>
+<thead><tr><th>向き</th><th>ふつうの読み</th><th>このサイトの読み</th><th>主な項目</th></tr></thead>
+<tbody>
+<tr><td>始める所</td><td>部分から積み上げる</td><td>全体から始める。数直線より平面を、個人の力より場を先に置き、部分はその畳んだ形や、場から立つ渦として読む</td><td>数の始まり・回転・渦・心の言葉・価値 など</td></tr>
+<tr><td>理論と体験</td><td>理論で体験を証明する</td><td>体験を先に置く。理論は借りる足場で、大前提は結論でなく、仮説を生む出発点</td><td>体験と理論・演繹・論の並べ方・言葉の輪郭 など</td></tr>
+<tr><td>二つのもの</td><td>二つに分けて、片方を選ぶ</td><td>見分けたまま、切り離さない</td><td>包む・愛と支配・主体・時間 など</td></tr>
+<tr><td>欠けと弱さ</td><td>消して補う</td><td>手がかりにする</td><td>不安・弱さ・差と引き算・共感とうつり・デバッグ など</td></tr>
+<tr><td>先のこと</td><td>先を見通し、計画どおりに進める</td><td>不確実さの中で試し、戻り、合わせる</td><td>意思決定・計画と構想・予測と適応・不確実性 など</td></tr>
+</tbody>
+</table></div>
+<p>五つへのまとめ方は Claude の読みで、数で分けたものではありません。三十のうち二十二は、Claude がこのサイトを作る対話の中でふつうの読みに戻ってしまい、直された所です。一覧では ● を付けています。誰がどう判定したかは、終わりの節「<a href="#判定のしかた">判定のしかた</a>」に書きました。</p>
 </div>
-
-## 判定のしかた
-
-<a id="rd-judge"></a>判定したのは Claude です。物差しは、Claude が学習で身につけた「ふつうの読み」で、教科書・辞書・よく読まれる解説が、その言葉をどう読ませるかに近いものです。Claude は人の書いたものから学んでいるので、Claude がふつうと読む向きは、多くの読者が最初に取る向きに近いと見ています。
-
-一覧の項目には、二つの出どころがあります。
-
-- このサイトの公開ページで、ふつうの読みと向きが違う書き方をしている所。
-- このサイトを作る対話の中で、Claude がふつうの読みに戻って書き、直された所。一覧では ● を付けました。直された記録は、このサイトの規約（「[Claude が繰り返す誤りの型](https://github.com/uminomae/project-design-theory/blob/main/docs/rules/corrections.md)」「[見方と判断の仕方](https://github.com/uminomae/project-design-theory/blob/main/docs/rules/stance.md)」）に残っています。
-
-● の項目は、Claude が一度つまずいた所なので、読む人もつまずきやすいかもしれません。
-
-<details><summary>詳しく — この判定で言えること、言えないこと</summary>
-
-- 数を測った判定ではありません。「ふつう」は、Claude が自分の読みの癖から見積もったものです。
-- ほかの言語モデルや、ほかの時期の Claude が判定すれば、項目は変わるかもしれません。
-- 「逆」は、どちらが正しいかの判定ではありません。ふつうの読みが当たる場面もあり、このサイトの読みは、もう一つの向きとして置かれています。
-- 数学の項目の多くは、このサイトの仮説です。数学の事実として確かめたものと、仮説として置いたものは、それぞれのページで分けて書いています。
-
-</details>
 
 ## 数と形
 
@@ -140,5 +131,25 @@
 
 - PMBOK 第 7 版の開発の進め方の分け方：Project Management Institute (2021) "The PMBOK® Guide: Seven Facts About the Pending Seventh Edition"（PMI が第 7 版の出る前に公開した案内。2021-01-20 の版。第 7 版は八つの性能領域で組まれ、進め方は予測型・適応型・ハイブリッドから選ぶ、とある。[Wayback の記録（元は PMI のサイトの PDF・2021-07-05 の写し）](https://web.archive.org/web/20210705050215/https://www.pmi.org/-/media/pmi/documents/public/pdf/pmbok-standards/pmbok-guide-seven-facts.pdf)）／Project Management Institute (2021) "Project Performance Domains"（その八つの性能領域を説明した PMI の公開の資料。p.4 の「開発の進め方とライフサイクル」の領域に、予測型・適応型・ハイブリッドの三つが挙がる。[Wayback の記録（元は PMI のサイトの PDF・2026-10-30 の写し）](https://web.archive.org/web/20261030000410/https://www.pmi.org/-/media/pmi/documents/public/pdf/pmbok-standards/pmi-project-performance-domains.pdf)）
 - このサイトの規約「[Claude が繰り返す誤りの型](https://github.com/uminomae/project-design-theory/blob/main/docs/rules/corrections.md)」「[見方と判断の仕方](https://github.com/uminomae/project-design-theory/blob/main/docs/rules/stance.md)」（GitHub）
+
+</details>
+
+## 判定のしかた
+
+<a id="rd-judge"></a>判定したのは Claude です。物差しは、Claude が学習で身につけた「ふつうの読み」で、教科書・辞書・よく読まれる解説が、その言葉をどう読ませるかに近いものです。Claude は人の書いたものから学んでいるので、Claude がふつうと読む向きは、多くの読者が最初に取る向きに近いと見ています。
+
+一覧の項目には、二つの出どころがあります。
+
+- このサイトの公開ページで、ふつうの読みと向きが違う書き方をしている所。
+- このサイトを作る対話の中で、Claude がふつうの読みに戻って書き、直された所。一覧では ● を付けました。直された記録は、このサイトの規約（「[Claude が繰り返す誤りの型](https://github.com/uminomae/project-design-theory/blob/main/docs/rules/corrections.md)」「[見方と判断の仕方](https://github.com/uminomae/project-design-theory/blob/main/docs/rules/stance.md)」）に残っています。
+
+● の項目は、Claude が一度つまずいた所なので、読む人もつまずきやすいかもしれません。
+
+<details><summary>詳しく — この判定で言えること、言えないこと</summary>
+
+- 数を測った判定ではありません。「ふつう」は、Claude が自分の読みの癖から見積もったものです。
+- ほかの言語モデルや、ほかの時期の Claude が判定すれば、項目は変わるかもしれません。
+- 「逆」は、どちらが正しいかの判定ではありません。ふつうの読みが当たる場面もあり、このサイトの読みは、もう一つの向きとして置かれています。
+- 数学の項目の多くは、このサイトの仮説です。数学の事実として確かめたものと、仮説として置いたものは、それぞれのページで分けて書いています。
 
 </details>
