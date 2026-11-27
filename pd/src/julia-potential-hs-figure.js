@@ -44,7 +44,14 @@
     cloud = []; let seed = 7;
     const rnd = () => { seed = (seed * 16807) % 2147483647; return seed / 2147483647; };
     for (let i = 0; i < 3000; i++) { const a = rnd() * Math.PI * 2, d = 2 * Math.sqrt(rnd()); cloud.push([d * Math.cos(a), d * Math.sin(a)]); }
-    edge = backLevels(11).last.map((p) => [p[0], p[1]]);
+    // 縁の上の点：1 から、毎段 ± を無作為に選んで 60 段さかのぼる（元の読み物の図の edgePt と同じ取り方）。
+    // 決まった ± で一点からさかのぼると、寄る一点の逆像になり、前へ打つとその一点へ戻ってしまう（2026-11-27 のレビュー）
+    edge = [];
+    for (let i = 0; i < 2000; i++) {
+      let z = [1, 0];
+      for (let j = 0; j < 60; j++) { z = sqrt([z[0] - c[0], z[1] - c[1]]); if (rnd() < 0.5) z = [-z[0], -z[1]]; }
+      edge.push(z);
+    }
     cstep = 0;
   }
   const out = (p) => !isFinite(p[0]) || Math.hypot(p[0], p[1]) > 2;
@@ -80,11 +87,11 @@
   }
   document.getElementById('jh-b-fwd').onclick = () => {
     stop(); setMode('fwd'); depth = 0;
-    if (reduce) { shown = N; draw(); cap.textContent = '0 から式を ' + N + ' 回くり返して打ちました。点は一歩ごとに約 137.5° 回りながら、渦を巻いて一か所へ寄っていきます。'; return; }
+    if (reduce) { shown = N; draw(); cap.textContent = '0 から式を ' + N + ' 回くり返して打ちました。点は渦を巻いて一か所へ寄っていきます。寄る一点の近くでは、一歩ごとに約 137.5° 回ります。'; return; }
     shown = 0; draw();
     timer = setInterval(() => {
       shown++; draw();
-      cap.textContent = shown + ' 歩目。点は一歩ごとに約 137.5° 回りながら、渦を巻いて一か所へ寄っていきます。';
+      cap.textContent = shown + ' 歩目。点は渦を巻いて一か所へ寄っていきます。寄る一点の近くでは、一歩ごとに約 137.5° 回ります。';
       if (shown >= N) { stop(); cap.textContent = '前へ ' + N + ' 歩。点は外へ飛び出さず、渦の中心へ寄りました。次は「② 逆にたどる」をクリックしてください。'; }
     }, 40);
   };
@@ -95,7 +102,7 @@
     timer = setInterval(() => {
       depth++; draw();
       cap.textContent = depth + ' 段さかのぼりました。「一つ前」の候補は 2 の ' + depth + ' 乗（' + Math.pow(2, depth).toLocaleString() + ' 通り）に分かれます。';
-      if (depth >= 14) { stop(); cap.textContent = '14 段で 16,384 通り。分かれた点は、渦から離れて、ジュリア集合の込み入った境目に散らばりました。'; }
+      if (depth >= 14) { stop(); cap.textContent = '14 段で 16,384 通り。実際に通ってきた一本のほかは、渦から離れて、ジュリア集合の込み入った境目に散らばりました。'; }
     }, 450);
   };
   document.getElementById('jh-b-cloud').onclick = () => {
