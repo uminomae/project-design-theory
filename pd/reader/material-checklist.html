@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/material-checklist.html を直接編集しないでください。
+  正本:   knowledge/research/material-checklist/READER-material-checklist.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - このサイトを外の物差しで測った結果の並び（docs/RELEASE-STAGES.md の公開の顔・pjdhiro 2026-11-28）
+  - noindex は、pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「教材としての評価チェックシート（ベータ版）」です。読み物が社会人基礎力を鍛える教材としてふさわしいかを見る十の観点と五つの記号を置き、決め方（資料・直し方・評価の仕方）を畳みに置いています。直した所はこのサイトの独自の基準で、公的な基準そのものではありません。ページに当てた結果は載せていません。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>教材としての評価チェックシート（ベータ版） | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/material-checklist.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="このサイトの読み物が、社会人基礎力を鍛える教材としてふさわしいかを見るチェックシート（ベータ版）。十の観点と、4 段と当てないの五つの記号。公的な教材評価の基準（教科用図書検定基準・教育訓練給付の指定基準・職業実践力育成プログラムの規程）を土台に、このサイトが独自に直した。">
+    <meta property="og:title" content="教材としての評価チェックシート（ベータ版）">
+    <meta property="og:description" content="このサイトの読み物が、社会人基礎力を鍛える教材としてふさわしいかを見るチェックシート（ベータ版）。十の観点と、4 段と当てないの五つの記号。公的な教材評価の基準（教科用図書検定基準・教育訓練給付の指定基準・職業実践力育成プログラムの規程）を土台に、このサイトが独自に直した。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/material-checklist.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="教材としての評価チェックシート（ベータ版）">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-28">
+    <meta property="article:modified_time" content="2026-11-28">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "教材としての評価チェックシート（ベータ版）",
+          "description": "このサイトの読み物が、社会人基礎力を鍛える教材としてふさわしいかを見るチェックシート（ベータ版）。十の観点と、4 段と当てないの五つの記号。公的な教材評価の基準（教科用図書検定基準・教育訓練給付の指定基準・職業実践力育成プログラムの規程）を土台に、このサイトが独自に直した。",
+          "keywords": "評価, チェックシート, 教材の評価, 社会人基礎力, 教科用図書検定基準, 公的な基準, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/material-checklist.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/material-checklist.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-28",
+          "dateModified": "2026-11-28",
+                    "about": [{"@type": "Thing", "name": "教材としての評価チェックシート"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方と問いの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「教材としての評価チェックシート（ベータ版）」です。このサイトの読み物が、社会人基礎力を鍛える教材としてふさわしいかを見るチェックシート（ベータ版）。十の観点と、4 段と当てないの五つの記号。公的な教材評価の基準（教科用図書検定基準・教育訓練給付の指定基準・職業実践力育成プログラムの規程）を土台に、このサイトが独自に直した。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                ベータ版の叩き台です。使いながら随時直します。本文は AI（Claude）が書いています。
+            </div>
+            <header class="reader-hero">
+                <h1>教材としての評価チェックシート（ベータ版）</h1>
+                <p class="reader-meta">
+                    最終更新: 2026-11-28 ／ 状態: ベータ版<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/material-checklist/READER-material-checklist.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p class="reader-lead"><span class="reader-lead__label">このページ</span>このサイトの読み物が、社会人基礎力を鍛える教材としてふさわしいかを見るためのチェックシートです。ベータ版の叩き台で、使いながら随時直します。公的な教材評価の基準を土台にし、そのまま使えない所を、このサイトが独自に直しました。直した所はこのサイトの独自の基準で、公的な基準そのものではありません。</p>
+
+<p>まだ、どのページにも当てていません。当てた結果は、このページには載せていません。</p>
+<details class="sec" id="チェックシート" open><summary>チェックシート</summary><div class="secbody">
+
+
+<p>十の観点ごとに、下の五つの記号のどれかを付けます。</p>
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>記号</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>◎</td>
+<td>満たしている。根拠になる文をページから引ける</td>
+</tr>
+<tr>
+<td>○</td>
+<td>当たる文はあるが、一部だけ。欠けている所を書く</td>
+</tr>
+<tr>
+<td>△</td>
+<td>ページには無いが、このサイトの記録に、そのページの課題として挙がっている</td>
+</tr>
+<tr>
+<td>×</td>
+<td>ページに無く、課題としても挙がっていない</td>
+</tr>
+<tr>
+<td>－</td>
+<td>そのページには当てない。当てない理由を書く</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>観点</th>
+<th>何を見るか</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A 目標</td>
+<td>対象となる読者・扱う内容・身に付く社会人基礎力の要素（その要素の定義と一緒に）を示しているか</td>
+</tr>
+<tr>
+<td>B 定義と解説</td>
+<td>扱う概念を定義し、本文・補足・出典を結んで、誤解なく解説しているか</td>
+</tr>
+<tr>
+<td>C 網羅</td>
+<td>扱う概念の大事な面を落としていないか</td>
+</tr>
+<tr>
+<td>D 構成</td>
+<td>系統立てて組まれ、並べただけになっていないか。本筋と、深く知りたい人向けの所を分けているか</td>
+</tr>
+<tr>
+<td>E 活用</td>
+<td>仕事や暮らしの場で使えるよう、活用の仕方・自分で試せる課題・人と話す方法を示しているか。仕事に生かせる形で書かれているか</td>
+</tr>
+<tr>
+<td>F 振り返り</td>
+<td>読者が自分で振り返る手がかりがあるか</td>
+</tr>
+<tr>
+<td>G 正確さと出典</td>
+<td>誤りや矛盾が無いか。引用は信頼でき、出典と年を示しているか。統計は新しいか。外へのリンクは内容と関わり、切れていないか</td>
+</tr>
+<tr>
+<td>H 偏りと公正</td>
+<td>特定の見方や分野に偏らず、一面的な見解を配慮なく取り上げていないか。宣伝・非難・権利の侵害が無いか</td>
+</tr>
+<tr>
+<td>I 分かりやすさ</td>
+<td>社会人の読者に合った水準で、用語と表記が分かりやすく、不統一が無いか。図表は通常の約束に従っているか</td>
+</tr>
+<tr>
+<td>J ほかのページとの整合</td>
+<td>このサイトのほかのページの説明と食い違っていないか</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>社会人基礎力の要素は、A に置きます。B・E・F は、A に置いた要素について見ます。たとえば A が柔軟性なら、柔軟性の定義を解説しているか、柔軟性を使う場面を示しているか、を見ます。社会人基礎力の十二の要素とその定義は、<a href="competency-frameworks.html">公的な能力の枠組みで測った、このサイトの範囲</a>にあります。</p>
+</div></details><details class="sec" id="この評価についてなぜ何を誰がいつどの資料からどう直したかどう評価するか"><summary>この評価について（なぜ・何を・誰が・いつ・どの資料から・どう直したか・どう評価するか）</summary><div class="secbody">
+<p>この評価の決め方を、あとから追えるように置きます。pjdhiro は、評価の決め方そのものが品質だと考えています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>「どこの資料をもとに、何を改変し、どのように評価しているのが透明かを示さないと。客観性と透明性は最重要です」</p>
+</blockquote>
+<details class="acc"><summary>なぜ — 社会人基礎力を鍛える教材としてふさわしいか</summary>
+
+<p>pjdhiro は、このサイトがいまの社会人に役立つことを示したいと考えています。その一つ目の物差しに、経済産業省の社会人基礎力を選びました。</p>
+<p>社会人基礎力は、人の行動を、本人と周りの人が授業の前後に評価する枠組みです。読み物の評価には、そのままでは使えません。読んだ人が伸びたかどうかも、このサイトでは確かめられません。そこで、読み物を補助の教材として見ることにしました。問いは次の一つです。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の問い：</strong>「社会人基礎力を鍛える教材としてふさわしいか？」</p>
+</blockquote>
+</details>
+
+<details class="acc"><summary>何を・誰が・いつ — 見るのは中身、付けるのは二人</summary>
+
+<ul>
+<li><strong>何を</strong>：読み物の中身です。読んだ人が伸びたか、役に立ったかは見ません。</li>
+<li><strong>誰が</strong>：書いた AI（Claude）と、別に立てた読み手（AI）の二人が、別々に記号を付けます。読み手には、観点と記号の意味とページだけを渡し、書いた側の記号は見せません。記号ごとに、根拠の文か理由を残します。二人の記号が分かれた所は、両方を残します。記号を採るかどうかは、pjdhiro が決めます。</li>
+<li><strong>いつ</strong>：チェックシートは 2026 年 11 月 28 日に作りました。ページに当てるのは、これからです。</li>
+</ul>
+</details>
+
+<details class="acc"><summary>どの資料から — 公的な基準三つと、記号の形</summary>
+
+<p>土台にしたのは、次の三つです。どれも原文を開いて読み、引いた言葉が原文にあることを確かめました。</p>
+<ul>
+<li>教科用図書検定基準の第 2 章「教科共通の条件」。<a href="https://web.archive.org/web/20261012065613/https://www.mext.go.jp/a_menu/shotou/kyoukasho/kentei/1411168.htm">義務教育諸学校教科用図書検定基準</a>（文部科学省告示第 105 号、平成 29 年 8 月 10 日。読んだのは Internet Archive の 2026 年 10 月 12 日の写し）。<a href="https://web.archive.org/web/20260413120730/https://www.mext.go.jp/a_menu/shotou/kyoukasho/kentei/1411471.htm">高等学校教科用図書検定基準</a>（同第 174 号、平成 30 年 9 月 18 日）も、第 2 章の条の番号が同じです。</li>
+<li>教育訓練給付の<a href="https://www.mhlw.go.jp/content/001752326.pdf">指定基準</a>（厚生労働省告示第 237 号、平成 26 年 5 月 16 日）と<a href="https://www.mhlw.go.jp/content/001752302.pdf">指定要領</a>（厚生労働省。社会人の講座を給付の対象に指定する基準）。</li>
+<li><a href="https://web.archive.org/web/20240720200107/https://www.mext.go.jp/content/20231221-mxt_syogai03-100000982_3.pdf">大学等における職業実践力育成プログラムの認定に関する規程</a>の第 2 条（文部科学省告示第 124 号、平成 27 年 7 月 31 日。社会人向けの大学の課程を認定する基準。読んだのは Internet Archive の 2024 年 7 月 20 日の写しで、文字の層が無いので頁の画像で読みました）。</li>
+</ul>
+<p>記号の形は、厚生労働省の「民間教育訓練機関における職業訓練サービスガイドライン」の自己診断表から写しました（<a href="https://www.mhlw.go.jp/content/11801000/001353701.pdf">研究会の資料に入っている全文</a>。自己診断表は平成 31 年 4 月改定版）。元は、訓練をする機関が自分の取り組みを見る記号で、教材を測る記号ではありません。教材に写したのは、このサイトの組み替えです。</p>
+<p>社会人基礎力の要素と定義は、経済産業省の社会人基礎力に関する研究会の<a href="https://web.archive.org/web/20171208212043/https://www.meti.go.jp/policy/kisoryoku/chukanhon.pdf">中間取りまとめ</a>（2006 年）の表から取ります。</p>
+<p>ほかに、文部科学省の<a href="https://web.archive.org/web/20260122081429/https://www.mext.go.jp/a_menu/shotou/kyozai/mext_02559.html">学校における補助教材の適正な取扱いについて</a>（平成 27 年 3 月 4 日の通知。読んだのは Internet Archive の写し）と、都道府県の教科書の選定資料（たとえば広島県教育委員会の<a href="https://www.pref.hiroshima.lg.jp/uploaded/attachment/356637.pdf">令和２年度使用小学校用教科用図書 選定資料（案）</a>）も読みましたが、中身を見る観点が少ないので、土台にはしませんでした。公的な基準で、教材に段を付ける尺度を持つものは見つかりませんでした。どれも、当たるか当たらないかを見る基準です。</p>
+</details>
+
+<details class="acc"><summary>どう直したか — 条ごとの扱い</summary>
+
+<p>学校の教科と、講座の給付のための条は、このサイトにはそのまま当てられません。条ごとに、そのまま使うか、直して使うか、外すかを決めました。直した所と足した所は、このサイトの独自の基準です。</p>
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>元の条</th>
+<th>扱い</th>
+<th>直し方と理由</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>検定基準 1(1)〜(4)：教育基本法・学習指導要領に一致し、学習指導要領の内容を不足なく取り上げる</td>
+<td>外す</td>
+<td>学校の教科の教科書の条で、このサイトは学習指導要領に沿う教材ではない</td>
+</tr>
+<tr>
+<td>検定基準 1(5)：児童・生徒の発達段階に合う</td>
+<td>直す（I）</td>
+<td>読者は社会人なので、社会人の読者に合った水準か、にした</td>
+</tr>
+<tr>
+<td>検定基準 2(1)：前段は学習指導要領との関係。後段は「主体的・対話的で深い学びの実現に資する学習及び指導ができるよう適切な配慮」</td>
+<td>前段は外し、後段を直す（E）</td>
+<td>指導する人のいない読み物なので、読者が自分の場で使えるよう活用の仕方を示しているか、にした</td>
+</tr>
+<tr>
+<td>検定基準 2(2)：他の教科と矛盾しない</td>
+<td>直す（J）</td>
+<td>他の教科が無いので、このサイトのほかのページと食い違わないか、にした</td>
+</tr>
+<tr>
+<td>検定基準 2(3)：授業時数に合わせて配分する</td>
+<td>外す</td>
+<td>授業時数が無い</td>
+</tr>
+<tr>
+<td>検定基準 2(4)：政治・宗教の扱いが公正で偏らない</td>
+<td>少し直す（H）</td>
+<td>法律の条の参照を外し、偏らないことと公正さを残した</td>
+</tr>
+<tr>
+<td>検定基準 2(5)〜(8)：特定の事柄に偏らない、一面的な見解を配慮なく取り上げない、宣伝や非難・権利の侵害が無い</td>
+<td>そのまま（H）</td>
+<td>そのまま当てられる</td>
+</tr>
+<tr>
+<td>検定基準 2(9)〜(11)：引用は信頼でき、出典と年を示し、統計は新しい</td>
+<td>そのまま（G）</td>
+<td>そのまま当てられる</td>
+</tr>
+<tr>
+<td>検定基準 2(12)：「全体として系統的、発展的に構成されており、網羅的、羅列的になっているところはなく」</td>
+<td>直して二つに分ける（C・D）</td>
+<td>検定の「網羅的」は、並べただけの意味で、良くない側に置かれている。このサイトでは、並べただけになっていないか（D）と、大事な面を落としていないか（C）の二つに分けた</td>
+</tr>
+<tr>
+<td>検定基準 2(13)：説明文・注・資料を本文と結ぶ</td>
+<td>そのまま（B）</td>
+<td>本文と補足・出典の関係に当てる</td>
+</tr>
+<tr>
+<td>検定基準 2(14)：実験・観察などを自分で行えるよう配慮する</td>
+<td>直す（E）</td>
+<td>実験が無いので、自分で試せる課題・問いがあるか、にした</td>
+</tr>
+<tr>
+<td>検定基準 2(15)・(16)：学習指導要領を超える発展的な内容の条件</td>
+<td>外す</td>
+<td>学習指導要領が無い</td>
+</tr>
+<tr>
+<td>検定基準 2(17)：発展的な内容であることを明示する</td>
+<td>直す（D）</td>
+<td>本筋と、深く知りたい人向けの所を分けて示しているか、にした</td>
+</tr>
+<tr>
+<td>検定基準 2(18)：参照させるウェブページが内容と密接に関わり、管理できる</td>
+<td>直す（G）</td>
+<td>このサイト自体がウェブなので、外へのリンクに当てた</td>
+</tr>
+<tr>
+<td>検定基準 3(1)〜(5)：誤りや矛盾が無い、理解し難い表現が無い、表記の不統一が無い、図表は約束に従う</td>
+<td>そのまま（B・G・I）</td>
+<td>表記は、学校の表記の基準（別表）に合わせる所だけを外した</td>
+</tr>
+<tr>
+<td>検定基準 第 3 章：教科ごとの条件</td>
+<td>外す</td>
+<td>教科が無い</td>
+</tr>
+<tr>
+<td>給付の指定基準 2 一イ(1)(i)：「趣味的又は教養的な教育訓練」は対象外。要領は「職業との関連が希薄なもの及び職業に生かすことが困難なもの」と説明する</td>
+<td>直す（E）</td>
+<td>給付の対象を絞る条だが、仕事に生かせるかは、社会人基礎力を鍛える教材かを見るのに要るので、観点にした</td>
+</tr>
+<tr>
+<td>給付の指定基準 2 一イ(1)(ii)：「入門的又は基礎的な水準の教育訓練」は対象外</td>
+<td>外す</td>
+<td>給付の対象を絞る条で、教材の良し悪しの観点ではない。補助の教材は入門の水準でもよい</td>
+</tr>
+<tr>
+<td>給付の指定基準 2 一イ(1)(iii)：社会に認知されていない資格の準備は対象外</td>
+<td>外す</td>
+<td>資格を目標にしない</td>
+</tr>
+<tr>
+<td>給付の指定基準 2 一イ(2)(ii)：「訓練目標が明確であり、訓練効果の客観的な測定が可能なもの」</td>
+<td>前半を直し（A）、後半を外す</td>
+<td>読んだ人が伸びたかは、このサイトでは確かめられないので、効果の測定は外した</td>
+</tr>
+<tr>
+<td>給付の指定基準 2 二ロ：「内容、対象となる者、目標及び修了基準が明確にされている」</td>
+<td>直す（A）</td>
+<td>読み物に修了は無いので、修了基準を外した</td>
+</tr>
+<tr>
+<td>給付の指定基準 2 四・要領「教材」：内容・費用に照らして適正。教科書等は「内容・水準・対象とする範囲が適当であり、かつ、その用語や表記等が分かりやすい」</td>
+<td>少し直す（I）</td>
+<td>費用は無いので外し、残りを当てた</td>
+</tr>
+<tr>
+<td>職業実践力育成プログラムの規程 第 2 条一：「対象とする職業の種類及び身に付けることのできる能力を具体的かつ明確に定め、公表していること」</td>
+<td>直す（A）</td>
+<td>職業の種類を社会人一般に置き換え、身に付く能力を社会人基礎力の要素にした。社会人基礎力を結ぶ所</td>
+</tr>
+<tr>
+<td>同 第 2 条二：その能力を身に付けるのに要る知識・技術・技能を修得させる</td>
+<td>直す（B）</td>
+<td>目標にした要素を身に付けるのに要る知識と考え方を扱っているか、にした</td>
+</tr>
+<tr>
+<td>同 第 2 条三：企業と連携した授業や、討論を伴う授業などの実践的な方法が一定割合以上</td>
+<td>直す（E）</td>
+<td>割合と連携は外し、実際に試す・人と話す方法を示しているか、にした</td>
+</tr>
+<tr>
+<td>同 第 2 条四：学修の成果を評価する</td>
+<td>直す（F）</td>
+<td>読み物は読者を評価しないので、読者が自分で振り返る手がかりがあるか、にした。社会人基礎力の評価が本人の自己評価を軸にしているのに合わせた</td>
+</tr>
+<tr>
+<td>同 第 2 条五・六：自己点検と公表、企業の意見を聴く仕組み</td>
+<td>外す</td>
+<td>課程を開く組織の決まりで、教材の中身ではない</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+<p>△ と × の分け方も、このサイトの読み替えです。元の記号は、必要だと分かっているか（△）、分かっていなかったか（×）で分けます。教材には「分かっている」が無いので、このサイトの記録に課題として挙がっているかで分けました。</p>
+</details>
+
+<details class="acc"><summary>決めた順 — 経緯</summary>
+
+<div class="tablefit">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>日付</th>
+<th>決めたこと</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-11-27</td>
+<td>一つ目の物差しを、いまの社会人に役立つかに置き、社会人基礎力を選んだ</td>
+</tr>
+<tr>
+<td>2026-11-27</td>
+<td>社会人基礎力では、読んだ人が伸びたかは評価できないので、補助の教材としての評価に絞った</td>
+</tr>
+<tr>
+<td>2026-11-28</td>
+<td>一度、一つのページが三つの観点（定義・発揮の例・振り返り）を満たすかを試したが、捨てた。読み物に発揮の例や振り返りが無いことは、試す前から分かっていた。問うべきは、ページが基準を満たすかでなく、どんな基準と記号なら評価できるかだった</td>
+</tr>
+<tr>
+<td>2026-11-28</td>
+<td>問いを「社会人基礎力を鍛える教材としてふさわしいか？」に置き、公的な教材評価の基準を読み比べた</td>
+</tr>
+<tr>
+<td>2026-11-28</td>
+<td>土台を、教科用図書検定基準・教育訓練給付の指定基準・職業実践力育成プログラムの規程の三つに決め、条ごとに直した</td>
+</tr>
+<tr>
+<td>2026-11-28</td>
+<td>記号を、4 段と当てないの五つに決めた。ベータ版として使い始めた</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+</details>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="site-evaluation.html">このサイトの評価</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

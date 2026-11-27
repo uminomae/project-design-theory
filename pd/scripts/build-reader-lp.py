@@ -693,6 +693,13 @@ PAGES = [
         "flow",
     ),
     (
+        # 教材としての評価チェックシート（ベータ版。docs/release-stages/material-criteria.md・pjdhiro 2026-11-28「ベータ版の評価チェックシートとしてはもう活用していきましょう」）
+        ROOT / "knowledge/research/material-checklist/READER-material-checklist.md",
+        ROOT / "scripts/reader-material-checklist-template.html",
+        ROOT / "reader/material-checklist.html",
+        "flow",
+    ),
+    (
         # このサイトについての道案内（pjdhiro 2026-11-26。Menu の Sites から指す）
         ROOT / "knowledge/research/site-about/READER-about.md",
         ROOT / "scripts/reader-about-template.html",
