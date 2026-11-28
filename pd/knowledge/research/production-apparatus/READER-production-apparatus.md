@@ -46,9 +46,11 @@
 
 もう一つ、古い装置の側が、間違えたからではなく合理的に動いたからこそ崩れる、という形も知られています。経営学者のクレイトン・クリステンセンが、イノベーションのジレンマと呼んだものです。クリステンセンは、新しい製品がはじめは今ある製品ほど良くない一方で、より単純で、便利で、安いことを挙げています。既存の企業は、いちばん要求の高い顧客を満たし、利益の大きい所に投資を続けます。その合理的な動きのために、足元から来る新しいものに後れを取る、という説明です。
 
-<!--REF:一の目-->
+<details><summary>出典</summary>
 
 出典：[David (1990)](https://www.gwern.net/doc/economics/automation/1990-david.pdf)「The Dynamo and the Computer」*American Economic Review* 80(2), pp.355–361（写しの本文で確認。pp.356–359）／[Edwards (1994)](https://publishing.cdlib.org/ucpressebooks/public/book/printing-propaganda-and-martin-luther.html)『Printing, Propaganda, and Martin Luther』University of California Press（全文の公開で確認。pp.17–18。数はケーラーの見積もりの引用）／Christensen「[Disruptive Innovation](https://ixdf.org/literature/book/the-encyclopedia-of-human-computer-interaction-2nd-ed/disruptive-innovation)」（*The Encyclopedia of Human-Computer Interaction* 第 2 版の第 17 章。著者が 2003 年の本『The Innovator's Solution』から書き直した章。本文で確認。17.2・17.5 節）
+
+</details>
 
 ## 情報の生産で起きること
 
@@ -96,9 +98,11 @@
 
 指されている数が、そのまま順位の重みになる、ということです。前の章で見た、消費の数が検品の代わりになる形が、ここにも当ててみられそうです。強め合った読みほど多くのページから指され、上に並びます。指されることの少ない希少な情報は、下に沈みやすくなります。pjdhiro の言う「加担していた」は、仕組みを作った人の意図というより、数で並べる仕組みそのものが、この形に乗ったことを指している、と読みました。
 
-<!--REF:三の目-->
+<details><summary>出典</summary>
 
 出典：[Brin and Page (1998)](https://doi.org/10.1016/S0169-7552(98)00110-X)「The anatomy of a large-scale hypertextual Web search engine」*Computer Networks and ISDN Systems* 30(1–7), pp.107–117（[誌面の写し](http://snap.stanford.edu/class/cs224w-readings/Brin98Anatomy.pdf)の本文で確認。pp.109–110）
+
+</details>
 
 この装置が強かったのは、字面を安く作れたからでした。AI は、字面をほぼ無料で作れます。安く字面を作れることが強みでなくなると、その強みの上に立っていた作り方は、合理的に動いているまま、足元から崩れていくのかもしれません。一つ目の章で見たジレンマの形に、当ててみることができます。AI で確かめる手間が下がると、誤解して解釈されてきたものが照らされていく、という pjdhiro の見方は、[AI の時代に、差になるスキルは何か](capacity-after-ai.html#ca-exposed)で、人の側から見ています。
 
