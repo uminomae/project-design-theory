@@ -83,8 +83,7 @@ function toolMenuItems() {
   ];
 }
 
-// NOTE: This menu data is also imported by Quartz for the wiki top nav,
-// and by blog/design-system/menu.js for the blog Menu (2026-11-28).
+// NOTE: This menu data is also imported by Quartz for the wiki top nav.
 // When changing labels, ordering, or destinations here, review the wiki side too.
 export function getMenuItems({ currentSite = "home", context = "main" } = {}) {
   const siteLinks =

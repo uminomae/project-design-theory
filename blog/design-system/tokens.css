@@ -24,7 +24,6 @@
   --bl-font-body: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
   --bl-font-ui: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
   --bl-font-mono: "SF Mono", "Fira Code", Consolas, monospace;
-  --bl-font-menu: "EB Garamond", "Noto Serif JP", Georgia, serif; /* 右上の Menu。pd/ のサイトの Menu と同じ字 */
 
   --bl-size-xs: 0.78rem;       /* 札・注 */
   --bl-size-sm: 0.88rem;       /* 日付・添え書き・図の説明 */
@@ -57,7 +56,7 @@
   --bl-radius: 4px;
   --bl-radius-pill: 999px;
   --bl-shadow: 0 1px 2px rgba(35, 33, 29, 0.06);
-  --bl-shadow-pop: 0 8px 32px rgba(35, 33, 29, 0.08); /* 開いた Menu */
+  --bl-shadow-pop: 0 6px 24px rgba(35, 33, 29, 0.10); /* 開いた Menu */
   --bl-transition: 0.2s ease;
 
   color-scheme: light;
@@ -78,7 +77,7 @@
     --bl-code-bg: #212226;
     --bl-focus: #95b3d9;
     --bl-shadow: none;
-    --bl-shadow-pop: 0 8px 32px rgba(0, 0, 0, 0.35);
+    --bl-shadow-pop: 0 6px 24px rgba(0, 0, 0, 0.45);
     color-scheme: dark;
   }
 }
@@ -97,6 +96,6 @@
   --bl-code-bg: #212226;
   --bl-focus: #95b3d9;
   --bl-shadow: none;
-  --bl-shadow-pop: 0 8px 32px rgba(0, 0, 0, 0.35);
+  --bl-shadow-pop: 0 6px 24px rgba(0, 0, 0, 0.45);
   color-scheme: dark;
 }

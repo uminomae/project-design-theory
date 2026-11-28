@@ -11,13 +11,15 @@
   font-size: var(--bl-size-sm);
 }
 .bl-header__inner {
+  position: relative; /* 開いた Menu（.bl-menu）の置き場 */
   max-width: var(--bl-wide);
   margin: 0 auto;
-  /* 右上の Menu（.bl-topbar）と高さをそろえる */
-  min-height: 72px;
-  padding: 0 var(--bl-gutter);
+  padding: var(--bl-space-4) var(--bl-gutter);
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: var(--bl-space-4);
+  flex-wrap: wrap;
 }
 .bl-header__name {
   color: var(--bl-ink);
@@ -25,85 +27,53 @@
   font-weight: 500;
   letter-spacing: var(--bl-tracking-heading);
 }
+.bl-header__nav { display: flex; gap: var(--bl-space-4); align-items: center; }
+.bl-header__nav a { color: var(--bl-ink-sub); text-decoration: none; }
+.bl-header__nav a:hover { color: var(--bl-accent); }
 
-/* === 右上の Menu：pd/ のサイト（HOME・読み物）の Menu と同じ形（DESIGN-RULES §14）。色は --bl-* === */
-.bl-topbar {
-  position: fixed;
-  top: var(--bl-space-4);
-  right: var(--bl-space-5);
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  gap: var(--bl-space-2);
-}
 .bl-menu-toggle,
 .bl-theme-toggle {
-  min-height: 40px;
-  display: inline-flex;
-  align-items: center;
-  background: var(--bl-surface);
+  font: inherit;
+  color: var(--bl-ink-sub);
+  background: none;
   border: 1px solid var(--bl-rule);
   border-radius: var(--bl-radius-pill);
-  padding: 0.35rem 0.85rem;
+  padding: 2px var(--bl-space-3);
   cursor: pointer;
-  font-family: var(--bl-font-menu);
-  font-size: 1rem;
-  letter-spacing: 0.05em;
-  color: var(--bl-ink-sub);
-  transition: color var(--bl-transition), border-color var(--bl-transition);
 }
 .bl-menu-toggle:hover,
-.bl-theme-toggle:hover { color: var(--bl-ink); }
-.bl-menu-toggle[aria-expanded="true"] { color: var(--bl-ink); border-color: var(--bl-ink-sub); }
+.bl-theme-toggle:hover { color: var(--bl-accent); border-color: var(--bl-accent); }
+.bl-menu-toggle[aria-expanded="true"] { color: var(--bl-accent); border-color: var(--bl-accent); }
 
-.bl-site-menu {
-  position: fixed;
-  top: calc(var(--bl-space-4) + 40px + var(--bl-space-2));
-  right: var(--bl-space-5);
-  z-index: 99;
+/* 帯の下に開く Menu。行き先はサイトの Menu と同じ（menu.js）、見た目はブログのもの */
+.bl-menu {
+  position: absolute;
+  top: calc(100% - var(--bl-space-2));
+  right: var(--bl-gutter);
+  z-index: 50;
+  min-width: 220px;
+  max-width: calc(100vw - 2 * var(--bl-gutter));
+  padding: var(--bl-space-2) 0;
   background: var(--bl-surface);
   border: 1px solid var(--bl-rule);
-  border-radius: 0.5rem;
-  padding: 0.75rem 0;
-  min-width: 200px;
-  max-width: calc(100vw - 2 * var(--bl-gutter));
-  max-height: calc(100vh - 6rem);
-  overflow-y: auto;
+  border-radius: var(--bl-radius);
   box-shadow: var(--bl-shadow-pop);
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-8px);
-  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s;
 }
-.bl-site-menu.open { opacity: 1; visibility: visible; transform: translateY(0); }
-.bl-site-menu a {
+.bl-menu a {
   display: block;
-  padding: 0.6rem 1.25rem;
-  font-family: var(--bl-font-menu);
-  font-size: 1rem;
-  color: var(--bl-ink-sub);
+  padding: var(--bl-space-2) var(--bl-space-4);
+  color: var(--bl-ink);
   text-decoration: none;
-  transition: color var(--bl-transition), background var(--bl-transition);
 }
-.bl-site-menu a:hover { color: var(--bl-ink); background: var(--bl-accent-soft); }
-.bl-site-menu .menu-label {
+.bl-menu a:hover { color: var(--bl-accent); background: var(--bl-accent-soft); }
+.bl-menu__label {
   display: block;
-  padding: 0.3rem 1.25rem 0.5rem;
-  font-family: var(--bl-font-menu);
-  font-size: 0.75rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
+  padding: var(--bl-space-1) var(--bl-space-4);
+  font-size: var(--bl-size-xs);
+  letter-spacing: 0.08em;
   color: var(--bl-ink-sub);
-  opacity: 0.8;
 }
-.bl-site-menu .menu-current { color: var(--bl-ink); font-weight: 500; }
-.bl-site-menu hr { border: none; border-top: 1px solid var(--bl-rule); margin: 0.5rem 0; }
-
-@media (max-width: 768px) {
-  .bl-topbar { top: var(--bl-space-3); right: var(--bl-gutter); }
-  .bl-site-menu { top: calc(var(--bl-space-3) + 40px + var(--bl-space-2)); right: var(--bl-gutter); }
-  .bl-header__inner { min-height: 64px; }
-}
+.bl-menu hr { border: none; border-top: 1px solid var(--bl-rule); margin: var(--bl-space-2) 0; }
 
 .bl-main {
   max-width: var(--bl-measure);

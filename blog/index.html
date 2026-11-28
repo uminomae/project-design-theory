@@ -8,26 +8,26 @@
 <link rel="icon" href="../favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@400;500&display=swap">
 <link rel="stylesheet" href="design-system/tokens.css">
 <link rel="stylesheet" href="design-system/base.css">
 <link rel="stylesheet" href="design-system/components.css">
 <script src="design-system/theme.js"></script>
-<script type="module" src="design-system/menu.js"></script>
+<script src="design-system/menu.js" defer></script>
 <script src="design-system/list.js" defer></script>
 </head>
 <body>
 <header class="bl-header">
   <div class="bl-header__inner">
     <a class="bl-header__name" href="./">Blog</a>
+    <nav class="bl-header__nav" aria-label="サイト">
+      <button type="button" class="bl-menu-toggle" data-bl-menu-toggle aria-expanded="false" aria-controls="bl-menu">Menu</button>
+      <button type="button" class="bl-theme-toggle" data-bl-theme-toggle>暗く</button>
+    </nav>
+    <!-- 行き先はサイトの Menu と同じ（design-system/menu.js が描く）。JS が動かないときは HOME だけ -->
+    <nav class="bl-menu" id="bl-menu" aria-label="サイトの Menu" hidden><a href="../">HOME</a></nav>
   </div>
 </header>
-<!-- サイトと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は design-system/menu.js） -->
-<div class="bl-topbar" role="group" aria-label="サイト操作">
-  <button class="bl-menu-toggle" type="button" data-bl-menu-toggle aria-expanded="false" aria-controls="bl-site-menu">Menu</button>
-  <button type="button" class="bl-theme-toggle" data-bl-theme-toggle>暗く</button>
-</div>
-<nav class="bl-site-menu" id="bl-site-menu" aria-label="Site menu"><a href="../">HOME</a></nav>
 
 <main class="bl-main bl-main--wide">
   <h1 class="bl-page-title">Blog</h1>
