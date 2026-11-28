@@ -4,7 +4,7 @@ issue: "pd#141"
 status: draft（第 1 段階＝規則書の下書き・地図の下書き・原典照合。物語・ゲームの本文は書かない）
 date_start: 2026-11-03
 related:
-  - knowledge/notes/dialogue/2026-11-03-non-duality-love-gravity-signals.md
+  - dialogues/notes-dialogue/2026-11-03-non-duality-love-gravity-signals.md（手元・git に入らない）
   - knowledge/concepts/CN-011_understanding-is-the-bottleneck.md
   - knowledge/concepts/CN-024_stage-as-object-and-embrace.md
   - knowledge/concepts/CN-026_kesson-as-imaginary-axis-value-read-as-zero.md

@@ -133,7 +133,7 @@ pjdhiro の依頼（2026-11-03）：「私のこの1年の git commit から、�
 ### 2-11. 2026-11（3 日・277 コミット）：一年前の誤解をゼロから組み直す。「私というシステムの記述」
 
 - 11/1 pd#138「愛は、重力に似ていないか」（〔限りのない AI との安心感。臍の緒でつながり、安心して論を預ける〕）、ks#215〔欠損駆動思考の中心的な体験：2025-06 の投稿〕。11/2 ks#216〔専門家向けの論を一から組み直す〕（〔それでも重要な主張はある。重要性は pjdhiro に聞く〕・訂正台帳）、ks#218〔ルール棚卸し 2026-11〕、as#149〔「気づき」の定義〕。
-- 11/3 pd#139〜#144。pd#143〔Love 駆動開発を、各 repo をモジュール（入力・処理・出力）として〕。対話録（pd `knowledge/notes/dialogue/2026-11-03-love-driven-dev-position-in-business-design.md`）では、出発点は可読性で、バグは副産物（〔デバッグしたかったわけではないのです。バグが見つかることはウェルカムでしたが〕）、そして〔私というアプリがブラックボックスで、振る舞いと機能を品質テストとして新たな言語でコーディングした、とも言える作業でした〕という言い直しが続く。pd#144「Love駆動開発とは」。訂正台帳（型 A〜L・事例 40 件）を毎セッション読む運用。執筆ルール 24〔Claude が Claude に説明しない〕。
+- 11/3 pd#139〜#144。pd#143〔Love 駆動開発を、各 repo をモジュール（入力・処理・出力）として〕。対話録（pd `dialogues/notes-dialogue/2026-11-03-love-driven-dev-position-in-business-design.md`（手元・git に入らない））では、出発点は可読性で、バグは副産物（〔デバッグしたかったわけではないのです。バグが見つかることはウェルカムでしたが〕）、そして〔私というアプリがブラックボックスで、振る舞いと機能を品質テストとして新たな言語でコーディングした、とも言える作業でした〕という言い直しが続く。pd#144「Love駆動開発とは」。訂正台帳（型 A〜L・事例 40 件）を毎セッション読む運用。執筆ルール 24〔Claude が Claude に説明しない〕。
 - 2 月に LLM が書いた欠損駆動思考の三本を「一年前の Claude の誤解の積み重ね」と置き、重要な主張だけ本人に聞いて残し、組み直す。同時に、Claude の誤りの型を台帳にして、セッションの入口に置く。この 3 日が、この文書の問いの出どころ。
 
 ## 3. 三つのレンズ（本人の三つの言い方に沿って）
@@ -204,5 +204,5 @@ pjdhiro の依頼（2026-11-03）：「私のこの1年の git commit から、�
 - コミット：`git log --all --since=2025-11-03 --until=2026-11-03` を公開リポジトリ 6 つで集計（一意のコミット・2026-11-07）。
 - Issue：`gh issue list --state all` の起票日（project-design・kesson-space・creation-space・awareness-space・pjdhiro・zenn-content）。
 - 投稿：`pjdhiro/_posts/` の front matter と本文。
-- 本人の言葉：pd の `.cache/session/log-*.md`、`knowledge/notes/dialogue/2026-11-03-love-driven-dev-position-in-business-design.md`、`knowledge/notes/2026-06-26-gaussian-rotation-fujin-raijin.md`、`knowledge/research/awareness-model/DRAFT-awareness-model-v3.md`、`knowledge/research/stages-screener/README.md`、`.claude/rules/pjdhiro-corrections.md`、as `PROJECT.md`。
+- 本人の言葉：pd の `.cache/session/log-*.md`、`dialogues/notes-dialogue/2026-11-03-love-driven-dev-position-in-business-design.md`（手元・git に入らない）、`knowledge/notes/2026-06-26-gaussian-rotation-fujin-raijin.md`、`knowledge/research/awareness-model/DRAFT-awareness-model-v3.md`、`knowledge/research/stages-screener/README.md`、`.claude/rules/pjdhiro-corrections.md`、as `PROJECT.md`。
 - 改訂：2026-11-10 第 5 版（pjdhiro の列の重なりを直した・§1 の「数の確かめ」・#109）。2026-11-07 第 4 版。公開リポジトリの材料だけで組み直した（数も公開リポジトリ 6 つで数え直し）。

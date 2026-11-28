@@ -3,7 +3,7 @@
 **作成日**: 2026-11-05
 **ステータス**: [S] 探索的（pjdhiro「ココは核心的なので伝えておきますね」。本人の言葉は確定扱い・物理の対応は Claude の整理）
 **関連**: [CN-027](CN-027_four-repos-one-line-from-the-zero-place.md)（四つの repo・§1d 物語の中の役）, [CN-031](CN-031_value-born-in-customer-consciousness.md)（価値は顧客の意識で生まれる）, [CN-026](CN-026_kesson-as-imaginary-axis-value-read-as-zero.md)（虚軸の値・認知上は 0）, [CN-023](CN-023_words-do-not-carry-the-band.md)（語は帯を運ばない）, [CN-009](CN-009_cut-complementary-projection.md)（切り口と相補的射影）
-**出典**: 対話録 `knowledge/notes/dialogue/2026-11-05-claude-common-sense-alignment-vortex-field.md` §2・§3・§9（Session 20261105-455・pd#144）／本文の置き場所: `reader/love-driven-dev.html` の「縮尺を変える」（波間の渦・励起・渦の駆動源）
+**出典**: 対話録 `dialogues/notes-dialogue/2026-11-05-claude-common-sense-alignment-vortex-field.md`（手元・git に入らない） §2・§3・§9（Session 20261105-455・pd#144）／本文の置き場所: `reader/love-driven-dev.html` の「縮尺を変える」（波間の渦・励起・渦の駆動源）
 
 ---
 
@@ -36,7 +36,7 @@
 
 ## 3-2. 時空の器そのものも波間の渦（補強 2026-11-08）
 
-出典：対話録 `knowledge/notes/dialogue/2026-11-06-gravity-field-love-field.md` §5（発言は逐語）。物理の照合は `knowledge/research/gravitational-field/SURVEY-what-is-gravitational-field.md`。入れる判断は pjdhiro（2026-11-08・#69）。
+出典：対話録 `dialogues/notes-dialogue/2026-11-06-gravity-field-love-field.md`（手元・git に入らない） §5（発言は逐語）。物理の照合は `knowledge/research/gravitational-field/SURVEY-what-is-gravitational-field.md`。入れる判断は pjdhiro（2026-11-08・#69）。
 
 pjdhiro の言葉（2026-11-06）：
 

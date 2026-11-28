@@ -35,7 +35,7 @@ date: 2026-11-10
 
 <details><summary>詳しく — この振り返りが出た対話</summary>
 
-対話は、「事業構想学とは」という問いから、Love駆動開発が経営学のどこに位置するかを話した記録です。終わりのほうで、pjdhiro は、この一年の作業をリファクタリング、デバッグ、ブラックボックスのテストと、たとえを変えながら言い直しています（[対話録 2026-11-03](https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/notes/dialogue/2026-11-03-love-driven-dev-position-in-business-design.md) の §6）。
+対話は、「事業構想学とは」という問いから、Love駆動開発が経営学のどこに位置するかを話した記録です。終わりのほうで、pjdhiro は、この一年の作業をリファクタリング、デバッグ、ブラックボックスのテストと、たとえを変えながら言い直しています（2026-11-03 の対話）。
 
 </details>
 
@@ -193,7 +193,7 @@ date: 2026-11-10
 <details><summary>詳しく — 2026 年 11 月の跡</summary>
 
 - 2026-11-01：読み物「[愛は、重力に似ていないか](gravity-love.html)」
-- 2026-11-03：対話録「[Love駆動開発は事業構想学のどこにあるか](https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/notes/dialogue/2026-11-03-love-driven-dev-position-in-business-design.md)」（リファクタリングのたとえと、上の言い直し）と、「[非二元性を、愛と重力の駆動源から指さす](https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/notes/dialogue/2026-11-03-non-duality-love-gravity-signals.md)」（冒頭の題辞）
+- 2026-11-03：対話「Love駆動開発は事業構想学のどこにあるか」（リファクタリングのたとえと、上の言い直し）と、「非二元性を、愛と重力の駆動源から指さす」（冒頭の題辞）。対話の記録は手元に置き、公開していません
 
 </details>
 

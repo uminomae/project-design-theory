@@ -19,7 +19,7 @@ pjdhiro「このセッションはclaudeの常識と私を擦り合わせる作�
 
 **このページを触る前に、次の二つを読む。** 逐語と表は対話録が正本。
 
-1. 対話録 [`knowledge/notes/dialogue/2026-11-05-claude-common-sense-alignment-vortex-field.md`](../../notes/dialogue/2026-11-05-claude-common-sense-alignment-vortex-field.md)
+1. 対話録 `dialogues/notes-dialogue/2026-11-05-claude-common-sense-alignment-vortex-field.md`（手元・git に入らない）
 2. 台帳 `.claude/rules/pjdhiro-corrections.md`（2026-11-05 の行）
 
 要点（定義に関わるもの）:
@@ -103,12 +103,12 @@ pjdhiro「このセッションはclaudeの常識と私を擦り合わせる作�
 
 | 素材 | 使う章 |
 |---|---|
-| `knowledge/notes/dialogue/2026-11-03-love-driven-dev-position-in-business-design.md` | 1・2・3・4・6・8・FAQ |
-| `knowledge/notes/dialogue/2026-11-03-non-duality-love-gravity-signals.md` §0・§4 | 0・5・7 |
+| `dialogues/notes-dialogue/2026-11-03-love-driven-dev-position-in-business-design.md`（手元・git に入らない） | 1・2・3・4・6・8・FAQ |
+| `dialogues/notes-dialogue/2026-11-03-non-duality-love-gravity-signals.md`（手元・git に入らない） §0・§4 | 0・5・7 |
 | `knowledge/concepts/CN-027_four-repos-one-line-from-the-zero-place.md` §1・§1b・§2・§3 | 2・5・8 |
 | `knowledge/meta/2026-11-01-love-as-attraction-in-pd-top.md` | 1・FAQ |
 | pd#99 の候補定義（力／局面の二段・「生存と同等」は構え） | 2・FAQ |
-| `knowledge/notes/dialogue/2026-11-05-claude-common-sense-alignment-vortex-field.md`（渦・波・場／四つの repo の要点／信頼／価値創造／何がうれしいのか） | 縮尺を変える・構成要素・構想とは・名前・新章（用途） |
+| `dialogues/notes-dialogue/2026-11-05-claude-common-sense-alignment-vortex-field.md`（手元・git に入らない）（渦・波・場／四つの repo の要点／信頼／価値創造／何がうれしいのか） | 縮尺を変える・構成要素・構想とは・名前・新章（用途） |
 | `reader/gravity-love.html`（**一次情報として使ってよい**・pjdhiro 2026-11-03「ほとんどが重複する内容ですので、そこを一次情報としても良い」） | 全章 |
 | git の日付（pd・cs・as・ks の最初のコミット〜 2026-11-03） | 7（素材未収集） |
 

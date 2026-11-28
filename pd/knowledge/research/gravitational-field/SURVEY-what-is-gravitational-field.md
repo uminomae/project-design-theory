@@ -4,8 +4,8 @@ type: survey
 status: 調査メモ（仮）。物理の主張は三段の印で仕分ける（教科書／研究の一線／Claude の読み）。§4 は Claude の案で、採否は pjdhiro
 related:
   - .claude/rules/writing-stage.md「重力と空間の語」
-  - knowledge/notes/dialogue/2026-11-06-gravity-field-love-field.md
-  - knowledge/notes/dialogue/2026-11-05-time-as-driving-source-gravity-mass-time.md
+  - dialogues/notes-dialogue/2026-11-06-gravity-field-love-field.md（手元・git に入らない）
+  - dialogues/notes-dialogue/2026-11-05-time-as-driving-source-gravity-mass-time.md（手元・git に入らない）
   - reader/gravity-love.html（重力場の概念がはっきりするまで触らない・pjdhiro 2026-11-06）
 ---
 
