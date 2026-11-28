@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Blog — Project Design">
+  <!-- ブログ全体の og:image（一覧のページ）。色は design-system/tokens.css の明るい見た目から -->
+  <rect width="1200" height="630" fill="#f7f4ee"/>
+  <rect x="60" y="60" width="1080" height="510" fill="none" stroke="#ddd6c8" stroke-width="2"/>
+  <line x1="420" y1="372" x2="780" y2="372" stroke="#2f4a6d" stroke-width="4"/>
+  <g font-family="'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif" text-anchor="middle">
+    <text x="600" y="320" font-size="120" fill="#23211d" letter-spacing="6">Blog</text>
+    <text x="600" y="450" font-size="40" fill="#66615a" letter-spacing="4">Project Design</text>
+  </g>
+</svg>

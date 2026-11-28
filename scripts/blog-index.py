@@ -5,10 +5,11 @@
   python3 -I scripts/blog-index.py --check   書き換えずに、一覧が古い・記事の頭が欠けているときに 1 で終わる（check.sh が回す）
 
 記事の正本は、記事の頭の meta だけ：
-  og:title（題）・description（概要）・og:image（サムネイル。assets/thumbs/ のファイル名を見る）
+  og:title（題）・description（概要）・og:image（サムネイル。assets/thumbs/ の 1200×630 の .png・.jpg）
   article:published_time（日付 YYYY-MM-DD）・article:tag（タグ。一つにつき一行）
 カードは日付の新しい順（同じ日はファイル名の逆順）に、index.html の
 <!-- BLOG-CARDS:START --> と <!-- BLOG-CARDS:END --> のあいだへ置く。
+一覧のページ（index.html）の頭の og（ブログ全体の一枚）も見る。
 あわせて、記事の中で同じ値を二度書いている所（<title>・h1・og:description・本文の日付とタグ）が meta と合うかを見る。
 Python の標準だけで書く。
 """
@@ -70,6 +71,44 @@ class Head(HTMLParser):
             self.body_tags.append(data.strip().lstrip("#"))
 
 
+OG_PREFIX = "https://uminomae.github.io/project-design-theory/blog/assets/thumbs/"
+OG_EXT = (".png", ".jpg", ".jpeg")
+
+
+def image_size(path):
+    """PNG・JPG の幅と高さを、ファイルの頭から読む（標準だけで）。読めなければ None。"""
+    data = path.read_bytes()
+    if data[:8] == b"\x89PNG\r\n\x1a\n":
+        return int.from_bytes(data[16:20], "big"), int.from_bytes(data[20:24], "big")
+    if data[:2] == b"\xff\xd8":
+        i = 2
+        while i + 9 < len(data):
+            if data[i] != 0xFF:
+                i += 1
+                continue
+            marker = data[i + 1]
+            if marker in (0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF):
+                return int.from_bytes(data[i + 7:i + 9], "big"), int.from_bytes(data[i + 5:i + 7], "big")
+            i += 2 + int.from_bytes(data[i + 2:i + 4], "big")
+    return None
+
+
+def check_image(image):
+    """og:image が公開の形の URL で、手元の同じパスに 1200×630 の PNG・JPG があるか。直す所を返す。
+    X・Facebook・Slack などは SVG の og:image を読まないことが多いので、PNG・JPG に限る。"""
+    if not image.startswith(OG_PREFIX):
+        return [f"og:image が {OG_PREFIX} で始まっていない（{image!r}）"]
+    name = image[len(OG_PREFIX):]
+    if not name.lower().endswith(OG_EXT):
+        return [f"og:image が .png・.jpg でない（{name!r}）。bash scripts/blog-thumb.sh で書き出す"]
+    path = BLOG / "assets" / "thumbs" / name
+    if not path.is_file():
+        return [f"og:image のサムネイルが blog/assets/thumbs/ に無い（{name!r}）"]
+    if image_size(path) != (1200, 630):
+        return [f"サムネイル {name} が 1200×630 でない（{image_size(path)}）。bash scripts/blog-thumb.sh で書き出す"]
+    return []
+
+
 def read_post(path, problems):
     text = path.read_text(encoding="utf-8")
     p = Head()
@@ -94,8 +133,8 @@ def read_post(path, problems):
         bad(f"article:published_time が YYYY-MM-DD でない（{date!r}）")
     if not p.tags or any(not t or re.search(r"\s", t) for t in p.tags):
         bad(f"article:tag が無いか、空白を含む（{p.tags}）")
-    if not thumb or not (BLOG / "assets" / "thumbs" / thumb).is_file():
-        bad(f"og:image のサムネイルが blog/assets/thumbs/ に無い（{image!r}）")
+    for msg in check_image(image):
+        bad(msg)
     # 記事の中で二度書いている所
     if p.meta.get("og:description", desc) != desc:
         bad("og:description が description と違う")
@@ -141,6 +180,13 @@ def main():
     index = INDEX.read_text(encoding="utf-8")
     if index.count(START) != 1 or index.count(END) != 1:
         problems.append(f"{INDEX.relative_to(REPO)}: 印 {START} と {END} が一つずつ無い")
+    ih = Head()
+    ih.feed(index)
+    for key in ("og:title", "og:description", "og:image"):
+        if not ih.meta.get(key):
+            problems.append(f"{INDEX.relative_to(REPO)}: {key} が無い（ブログ全体の一枚）")
+    for msg in check_image(ih.meta.get("og:image", "")) if ih.meta.get("og:image") else []:
+        problems.append(f"{INDEX.relative_to(REPO)}: {msg}")
     if problems:
         print("blog: 記事の頭を直す", *problems, sep="\n  ")
         return 1

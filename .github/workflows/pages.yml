@@ -1,7 +1,7 @@
 name: Deploy Pages
 
 # pd/ はサイトのファイルと wiki だけを根に出す。as/・ks/・cs/ は今までのサイトと同じく、ディレクトリごと出す。
-# blog/ はディレクトリごと /blog/ に出す。雛形（_template/）と README.md は出さない。
+# blog/ はディレクトリごと /blog/ に出す。雛形（_template/）・サムネイルの元の SVG（_thumbs-src/）と README.md は出さない。
 on:
   push:
     branches: [main]
@@ -50,7 +50,7 @@ jobs:
           cp -r wiki-out/ ../_site/wiki/
           cd ..
           cp -r as ks cs blog _site/
-          rm -rf _site/blog/_template _site/blog/README.md _site/blog/design-system/README.md
+          rm -rf _site/blog/_template _site/blog/_thumbs-src _site/blog/README.md _site/blog/design-system/README.md
 
       - uses: actions/upload-pages-artifact@v3
 
