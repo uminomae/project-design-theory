@@ -17,7 +17,7 @@ description: 論文・本の原典を探す。DOI・題・書誌の一行から�
 - サンドボックスでは、Bash の allowed_domains に `api.crossref.org`・`api.unpaywall.org`・`api.openalex.org`・`api.semanticscholar.org`・`www.ebi.ac.uk`・`api.core.ac.uk`・`archive.org`・`web.archive.org` を並べる。`fetch` は、それに取りに行く先のホストを足す。
 - 環境変数は、環境に既に入っているときだけ使う。repo にも頼む文にも書かない。pjdhiro のメールアドレスを勝手に入れない。無ければその経路は「飛ばした」と表に出るので、報告にそう書く。
   - `FIND_SOURCE_EMAIL`（Unpaywall）・`CORE_API_KEY`（CORE）・`OPENALEX_API_KEY`・`S2_API_KEY`。
-  - Unpaywall 用の連絡先のメールは、今は使わない（pjdhiro 2026-11-09・#73 で「Unpaywall 用の連絡先メールを、手元の環境変数に入れて使いますか？」に「今は使わない」）。入っていないことを毎回聞き直さず、飛ばしたと報告に書く。
+  - Unpaywall 用の連絡先のメールは、今は使わない（pjdhiro の決め・2026-11-09・#73）。入っていないことを毎回聞き直さず、飛ばしたと報告に書く。
   - キーの無い OpenAlex は、題や主題での検索が一日 100 回ほどまで（DOI で引くぶんは数えられない）。だから DOI を先に確かめ、検索は要るときだけ使う。キーの無い Semantic Scholar は 429 が多く、道具は一度待って駄目なら飛ばす。
 
 ## 書いてよい場所（エージェントに頼むとき）
@@ -95,7 +95,7 @@ bash scripts/find-source.sh compare <前の写し> <新しい写し>
 |---|---|---|
 | 出版社・出版社の版 | 出版社の版 | よい |
 | 大学・機関リポジトリ／著者のサイト・著者稿（査読後・投稿時） | 「著者稿（機関リポジトリ）」「著者のサイトの写し」。節や頁が誌面と違うことを添える | よい（誰が上げたかを添える） |
-| Wayback の写し・元は出版社／大学／著者 | 「Wayback の記録（元は …）」と写しの日 | よい（元の置き場の性格に従う。出版社の PDF の写しは pjdhiro 2026-11-09「よい」・sources §5-8） |
+| Wayback の写し・元は出版社／大学／著者 | 「Wayback の記録（元は …）」と写しの日 | よい（元の置き場の性格に従う。出版社の PDF の写しもよい・pjdhiro の決め・2026-11-09・sources §5-8） |
 | 授業・個人の頁（大学のサーバー） | 「授業用の写し。権利は未確認」。出版社の URL か DOI を並べる | 誌名・頁・DOI が見える出版社の版の PDF ならよい |
 | 個人・不明（archive.org の個人・ResearchGate・Zenodo など） | 「個人が上げた写し。権利は未確認」「上げた人と権利は未確認」 | それだけではしない（未照合として読んだ頁を書く） |
 | 訳 | 訳者・版・ライセンス。状態に「（訳）」 | 訳として |
@@ -133,7 +133,7 @@ bash scripts/find-source.sh discover --author "David Huron" --match "expectation
   - 原典が何を足場にしたか：`--refs`。
   - 生命・医学は `--epmc` を足す（上限を気にせず引ける）。
 - OpenAlex の検索は一回 10 点で、キーが無いと一日 1000 点。残りが少なくなると表に出る。一つの理論に、主題 1・著者 1・引用 1 ほどで足りる。
-- 広く探して見つかったものを、分野の論として足すかは別の判断。cs の分野のレビューでは `docs/cs-review/README.md`「調査の手順」1 の目安のまま（pjdhiro 2026-11-09「今のまま」）。候補は ledger と報告に残し、足すかは司令塔と pjdhiro が決める。
+- 広く探して見つかったものを、分野の論として足すかは別の判断。cs の分野のレビューでは `docs/cs-review/README.md`「調査の手順」1 の目安のまま（pjdhiro の決め・2026-11-09）。候補は ledger と報告に残し、足すかは司令塔と pjdhiro が決める。
 
 ## 止めどころ
 

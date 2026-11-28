@@ -2,7 +2,7 @@
 
 この repo で、何を機械で確かめ、何を画面で見て、何を人が判断するか。今までの四つの repo のテスト・品質管理・自動化を、考え方を継いで今の形に合わせた。まだ形の決まらないものは、作りたい内容だけをここに書き、要る場面が来たときに作って「今あるもの」へ移す。
 
-経緯：pjdhiro 2026-11-08「以前の自動化やテスト類は馴染まないものが多いと思います。コンセプトは継承しつつも、今の形に合わせてほしい。まだ定まらないものは作りたい内容だけを記述し、今後の作業の中で適宜追加していくものとして」（#70 を片付けたあと、ks の古い E2E のテストが今のページを見ていないと報告したことへの答え）。`docs/RULES-REVIEW.md` の「まとまり C」と、`docs/harness-pending/` の名前だけ置いたもののうち、検査と自動化に当たるものを、ここで扱う。
+経緯：2026-11-08、#70 を片付けたあとに、ks の古い E2E のテストが今のページを見ていないと分かり、pjdhiro の判断でこの形にした。`docs/RULES-REVIEW.md` の「まとまり C」と、`docs/harness-pending/` の名前だけ置いたもののうち、検査と自動化に当たるものを、ここで扱う。
 
 ## 考え方
 
@@ -38,7 +38,7 @@
 | 公開するファイルの文字化け | 公開するページ・データ・読み物の正本に U+FFFD が無い | project-design の `ci.yml` |
 | 道具の呼び出しの文字の紛れ込み | Claude がファイルを書く道具の閉じタグなどの文字（invoke・parameter・content の閉じタグ）が、git に入っている文字のファイルに残っていない（2026-11-10・#111。読み物の正本と精読ノートの終わりに残り、公開ページに出ていた） | 新しく書いた（`scripts/check.sh` の `tool_residue`） |
 | pd：読み物の出典に原典へのリンク | 読み物の正本（`pd/knowledge/research/*/READER-*.md`）の「出典：」の行を、括弧の外の「／」で一件ずつに分け、Markdown のリンクが一つも無い出典が無いか（`docs/rules/sources.md` §10）。リンクの無い出典は、2026-11-12 に 0 になった（`--strict all`）。四つの入口と cs/as/ks の読み物（HTML）の「出典：」「Source:」の段も止める。wiki の出典ページ（`pd/wiki/sources/`）の URL の無いページは数を知らせる（2026-11-12 に 13 あり、同じ日に 0 にして `--strict all,wiki` で止める側に上げた。間主観性のまとめの 4 ページは、主要著作ごとに張った）。リンクの無い出典には、同じ置き場の調べのノートから URL の候補を並べる。cs・as の記録の窓は、記録の検査が本文照合済の節の確かめ先を見る | 新しく書いた（`scripts/check-source-links.mjs`・2026-11-11） |
-| cs：照合の記録 | 分野ごとの照合の記録（`cs/evidence/evidence-Dxx-*.md`）の形：frontmatter・文責・一面の表・照合の状態と判定の語・確かめ先・台帳の行・絶対パス・文末・`未照合（…）` の括弧の頭が `docs/rules/sources.md` §3 の 7 の語か（2026-11-11）。見るものは `docs/cs-review/README.md`「記録の品質の点検」 | 新しく書いた（`scripts/check-cs-evidence.mjs`、2026-11-08・#73。pjdhiro「レビュー時のルールもテストを作っていかないとね」） |
+| cs：照合の記録 | 分野ごとの照合の記録（`cs/evidence/evidence-Dxx-*.md`）の形：frontmatter・文責・一面の表・照合の状態と判定の語・確かめ先・台帳の行・絶対パス・文末・`未照合（…）` の括弧の頭が `docs/rules/sources.md` §3 の 7 の語か（2026-11-11）。見るものは `docs/cs-review/README.md`「記録の品質の点検」 | 新しく書いた（`scripts/check-cs-evidence.mjs`、2026-11-08・#73） |
 | cs：現在の定義のページと英語の写し | 創造の5段階の「現在の定義」のページ（`cs/reader/five-stages.html`・`five-stages-en.html`）が、正本 `cs/knowledge/schema/five-stages.md` から生成し直されているか。英語の写し（`five-stages.en.md`）の頭のハッシュが、正本の今の抜き出しと合うか（合わなければ、正本が変わったのに英語を訳し直していない） | 新しく書いた（`cs/scripts/build-five-stages.py --check`・2026-11-10・#73） |
 | as：照合の記録と台帳 | 領域ごとの照合の記録（`as/evidence/evidence-Axx-*.md`）の形：frontmatter・文責・探し方・一面の表・照合の状態と判定の語・確かめ先・絶対パス・文末・本文の記号とパス・`未照合（…）` の括弧の頭が `docs/rules/sources.md` §3 の 7 の語か（記録と台帳。2026-11-11）。原典の台帳（`as/knowledge/raw/manifest.md`）の行の形と、台帳の「使う記録」の行の書誌（第一著者・年・題の頭・DOI）が記録の本文にあるか。画面に出す一覧（`as/evidence/reviewed.json`）の形。見るものは `docs/as-review/README.md`「記録の品質の点検」 | 新しく書いた（`scripts/check-as-evidence.mjs`、2026-11-10・#95。形の元は cs の点検） |
 | cs・as：記録が書いた wiki の誤りの残り（知らせるだけ） | 調査の記録（cs・as の evidence）が「wiki の頁「…」のここが誤り」と書いた行を拾い、行が書かれた時刻（git blame）と、指された頁が最後に変わった時刻（git log）を比べる。頁がそのあと変わっていないものの数を出す。止めない。wiki の古いページの知らせは正本が変わったときにしか出ないので、記録にだけ書かれた誤りを別に拾う。頁が変わったものは、直ったかどうかを目で確かめる（機械では分からない）。一覧は `node scripts/check-evidence-wiki-notes.mjs`。2026-11-10 の数：52 件のうち、変わっていない 29・変わった 21・済みと書いてある 2 | 新しく書いた（`scripts/check-evidence-wiki-notes.mjs`・2026-11-10・#111） |
@@ -85,7 +85,7 @@ const { run } = await import('../src/page-check.js'); await run();
 ### 自動で動くもの
 
 - `.claude/hooks/content-compile.sh`：公開ページが読む Markdown を書き換えたら、wiki のリンク入りの版を作り直す。pd・cs・ks・as の正本を直したら、それを出典にする wiki のページを Claude に知らせる（`pd/scripts/wiki-stale-check.mjs`・2026-11-10）。知らされたページは、その作業では作り直さず、週に一度まとめて作り直す（`.claude/skills/wiki-compile/SKILL.md`「週の作り直し」・2026-11-24）。hook は本体の checkout（`~/dev/pd/project-design-theory`）の版が動く。worktree で hook を直したときは、develop に取り込んでから効く（2026-11-10 に確かめた）。
-- wiki の週の作り直し：週に一度、週のまとめのレビューの司令塔が `node pd/scripts/wiki-stale-check.mjs --weekly --log <記録の名前>` を走らせ（並べた分に、本体の `.cache/wiki-order.json` で出した印を付け、24 時間のうちにほかのセッションが同じものを出さない。#130）、古いページと、出典ノートがあるのに出典ページが無い原典があれば、別のセッションに作り直しを出す（`.claude/skills/wiki-compile/SKILL.md`「週の作り直し」）。古いページは、出典が `compiled` 日より後に変わったものと、同じ日にページの最後の commit より後に変わったもの（2026-11-11 から。`compiled` が日付だけで、作り直したあとの同じ日の直しを拾えなかった）。週のあいだは、`.claude/hooks/wiki-session-start.sh`（SessionStart）と `scripts/session-digest.sh` の終わりが古いページの数を一行で出す（pjdhiro 2026-11-24「セッション終了時に動くwikiの更新も週に一度でいいんだよね」。2026-11-10 から 11-24 までは、区切るたびに出していた）。
+- wiki の週の作り直し：週に一度、週のまとめのレビューの司令塔が `node pd/scripts/wiki-stale-check.mjs --weekly --log <記録の名前>` を走らせ（並べた分に、本体の `.cache/wiki-order.json` で出した印を付け、24 時間のうちにほかのセッションが同じものを出さない。#130）、古いページと、出典ノートがあるのに出典ページが無い原典があれば、別のセッションに作り直しを出す（`.claude/skills/wiki-compile/SKILL.md`「週の作り直し」）。古いページは、出典が `compiled` 日より後に変わったものと、同じ日にページの最後の commit より後に変わったもの（2026-11-11 から。`compiled` が日付だけで、作り直したあとの同じ日の直しを拾えなかった）。週のあいだは、`.claude/hooks/wiki-session-start.sh`（SessionStart）と `scripts/session-digest.sh` の終わりが古いページの数を一行で出す（2026-11-24 に決めた。2026-11-10 から 11-24 までは、区切るたびに出していた）。
 - launchd（`com.uminomae.project-design-theory`）：本体の checkout を `scripts/serve.sh` で 3001 に常駐させる。fswatch があれば、`pd/wiki/` が変わると wiki を組み直す（今までの `wiki-build.sh` の役目）。
 - GitHub Actions：`check.yml`（上の検査）と `pages.yml`（公開）。
 - 定期実行（launchd の定期・routine・scheduled task）は置いていない。
@@ -116,7 +116,7 @@ const { run } = await import('../src/page-check.js'); await run();
 | ファイル | 外した理由と、考え方の行き先 |
 |---|---|
 | `ks/tests/e2e-runner.js`・`ks/tests/e2e-test-design.md`・`ks/src/pages/e2e-auto-run.js` | 今のページに無い部品（`h1#title-h1`・`.subtitle`・GUIDES のカード ほか）を見ていた。考え方は `pd/src/page-check.js` と、上の「キーボードで使えるか」「読み込みの速さの目安」に継いだ |
-| project-design の `wiki-log-append`（commit のあとに `wiki/log.md` へ自動で書き足す） | 入れない（pjdhiro 2026-11-10・違和感帳「log.md に自動で書き足す仕組みを入れるか」への答え「A 入れない」）。log.md は、wiki を直したセッションが `.claude/skills/wiki-compile/SKILL.md` の手順 4 で手で書く。古いページと未作成の出典ページの知らせは、上の「自動で動くもの」に入れた |
+| project-design の `wiki-log-append`（commit のあとに `wiki/log.md` へ自動で書き足す） | 入れない（pjdhiro の判断・2026-11-10・違和感帳）。log.md は、wiki を直したセッションが `.claude/skills/wiki-compile/SKILL.md` の手順 4 で手で書く。古いページと未作成の出典ページの知らせは、上の「自動で動くもの」に入れた |
 | `ks/scripts/agent-post-check.sh`・`cs/scripts/agent-post-check.sh`・`as/scripts/check-issue-close-state.sh` | サブエージェントが `.cache/outbox/DONE-*.md` を書く、今までの進め方を確かめていた。今はその置き場を使わない。頼んだ仕事が終わったかは、セッションの報告を、commit・差分・画面で確かめてから伝える（型 K） |
 | `cs/scripts/budget-check.sh` | サブスクの枠からサブエージェントを起こしてよいかを決めていた。今は、大きな作業の前に、コンテキストを使いすぎないかを考える（stance.md 2-8） |
 
