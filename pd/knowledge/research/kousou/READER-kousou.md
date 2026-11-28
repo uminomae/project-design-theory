@@ -1,7 +1,7 @@
 # 構想とは
 
 <div class="reader-lead glow-card" id="ks-gist"><span class="reader-lead__label">ざっくりいうと</span>
-<p>「構想を練る」「構想を立てる」のように、事業もプロジェクトも、ふつうは構想から語られます。では、構想という言葉は、誰にとっても同じものを指しているのでしょうか。</p>
+<p>「構想を練る」「構想を立てる」のように、事業もプロジェクトも、ふつうは構想から語られます。けれど、「うちには構想が無い」と言われて、何が足りないと言われたのか分からなかったことはないでしょうか。言った人と聞いた人は、同じ語で同じものを思い浮かべていたのでしょうか。</p>
 <p>この問いに、Claude が辞書と研究を調べて答えています。構想の話がかみ合わないとき、同じ語で別のものを指していないかを見直す足場になります。</p>
 <p>🚧 まだ中途半端なページで、哲学の語としての構想の来歴と、事業構想の分野での定義は工事中です。発達段階ごとの読みは、研究の記述からの推測です。</p>
 </div>
@@ -81,23 +81,25 @@
 
 構想は「これから」のことを組み立てて思い描くことなので、先の時間や未来をどう扱えるかによって、構想の語の届き方も変わるのではないか、と推測できます。オファロンは、時間の感覚は、その瞬間だけのものから始まり、8 歳ごろに過去の時計の時間が分かるようになり、未来のような微細な時間の理解へと育っていく、と書いています（2020 年、p.23）。ここでは、研究が段階ごとに書いている時間の枠と、未来の見え方を追います。
 
-次の表は、章でたどる段階ごとに、研究が書いている先の時間の見え方と主な不安を並べ、そのとき構想の語がどう受け取られうるかの推測を添えたものです。「（原典）」と付けた二つの列は原典の記述で、「（推測）」と付けた列は、それを構想に当てた Claude の推測です。
+次の表は、段階ごとに、研究が書いている先の時間の見え方と、不安やおそれを並べ、そのとき構想の語がどう受け取られうるかの推測を添えたものです。「（原典）」と付けた二つの列は原典の記述で、「（推測）」と付けた列は、それを構想に当てた Claude の推測です。クック＝グロイターは、不安やおそれを、段階によって「主な不安」「抑うつ」「おそれ」と違う見出しで書いています。
 
 <div class="tablefit ks-stack">
 
-| 段階 | 先の時間の見え方（原典） | 主な不安（原典） | 構想の受け取られ方（推測） |
+| 段階 | 先の時間の見え方（原典） | 不安とおそれ（原典） | 構想の受け取られ方（推測） |
 |---|---|---|---|
-| 自己保護（日和見の型） | 考えと計画の人でなく行動の人（p.25）。自分を、いましていることで捉え、計画や長い先の目標では捉えない（p.27） | 滅ぼされること、隷属させられること（p.27） | 先の枠を組むものとしてより、目の前で相手に呑まれないための手立てとして掴まれるのかもしれない |
-| 達成者（STAGES の 3.5 のあたり） | 5 年から 10 年の先と後が、いつも思い描く枠になる（p.41）。行動を計画的に進め、見直し、新しい目標へ向き直れる（p.42）。思い描いた未来の目標を、着けば届く現実と取り違えることがある（オファロン p.30） | 目標や理想を果たせないこと。統制と自律を失うこと。順応の段階の依存と服従へ引き戻されること（p.50） | 辞書の意味の構想（内容と実現の方法の骨組み）が、いちばん自然に使える語になるのかもしれない。自分の手で進めている、という統制の感じを守る像として掴まれ、像を現実と取り違えているあいだは、そのおそれに触れずに済むのかもしれない |
-| 多元 | 過去は過ぎ去り、未来は本当には知りえない（p.61） | 達成者の競争へ吸い戻されること（p.58）。一方的・非協力的・抑圧的と見られることをおそれて、先に立って決められなくなる（p.59） | 像は、知りえない先についての仮のものになる。構想を立てることそのものが、競争へ戻る動きとして避けられることもあるのかもしれない |
-| 戦略家 | 何でありうるかの像と、大きな目的に動かされる（p.64） | 自分の可能性を果たせないこと。正義や寛容のような原理に沿って生きられないこと。勇気を失うこと（p.72） | 未来は知りえないと見たうえで、像をもう一度持つ形と読める。大きな構想は、原理に沿って生きていることを確かめる像として掴まれるのかもしれない |
-| 構成への気づき以降 | 目的や直線の時間や自我まで、人が作った構成物だと気づく（p.73） | ほとんど誰にも理解されないこと。そうおそれること自体が傲慢ではないか、という不安（p.85） | 構想を、人が作った物語として見る。そう見ていることが、人と通じ合えないおそれに結びつくのかもしれない |
+| 自己保護（日和見の型） | 考えと計画の人でなく行動の人（p.25）。自分を、いましていること・いましたいことで捉え、心の状態や計画、長い先の目標では捉えない（p.27） | 主な不安は、滅ぼされること、隷属させられること（p.27） | 先の枠を組むものとしてより、目の前で相手に呑まれないための手立てとして掴まれるのかもしれない |
+| 順応 | 日々のことをこなし、身近な具体的なものごとを扱え、決まりに沿って動きたがる（p.29）。関心は、具体的で目に見えるものに向く（p.34） | 主な不安は、属せないこと、追い出されること。大事な人や仲間に認められず、見捨てられること（p.34） | 構想は、自分が属する集まりで示された筋書きとして、そのまま受け取られるのかもしれない。それに沿わないことは、仲間から外れることに感じられるのかもしれない |
+| 専門家 | 自分の人生を直線の時間の中で捉え始め、前にこうふるまったから、またそうふるまうだろうと見込める（pp.36–37） | 主な不安は、見つけたばかりの自分らしさを失い、人の群れへ引き戻されること。人の見方に開くと、いまの確かさを失うこと（p.40） | 構想は、自分の腕と正しさで描く筋として掴まれるのかもしれない。ほかの人の構想と並べられると、その確かさをおびやかすものに見えるのかもしれない |
+| 達成者（STAGES の 3.5 のあたり） | 5 年から 10 年の先と後が、いつも思い描く枠になる（p.41）。行動を計画的に進め、見直し、新しい目標へ向き直れる（p.42）。思い描いた未来の目標を、着けば届く現実と取り違えることがある（オファロン p.30） | 抑うつは、目標や理想を果たせないこと、果たせる感じを失うこと、統制と自律を失うおそれの形で出る。おそれは、順応の段階の依存と服従へ引き戻されること（p.50） | 辞書の意味の構想（内容と実現の方法の骨組み）が、いちばん自然に使える語になるのかもしれない。自分の手で進めている、という統制の感じを守る像として掴まれ、像を現実と取り違えているあいだは、そのおそれに触れずに済むのかもしれない |
+| 多元 | 過去は過ぎ去り、未来は本当には知りえない（p.61） | 抑うつの一つは、世の求めで、達成者の競争へ吸い戻されるおそれ（p.58）。一方的・非協力的・抑圧的と見られることをおそれて、先に立って決められなくなる（p.59） | 像は、知りえない先についての仮のものになる。構想を立てることそのものが、競争へ戻る動きとして避けられることもあるのかもしれない |
+| 戦略家 | 何でありうるかの像と、大きな目的に動かされる（p.64） | 主な不安は、自分の可能性を果たせないこと。正義や寛容のような原理に沿って生きられないこと。勇気を失うこと（p.72） | 未来は知りえないと見たうえで、像をもう一度持つ形と読める。大きな構想は、原理に沿って生きていることを確かめる像として掴まれるのかもしれない |
+| 構成への気づき以降 | 目的や直線の時間や自我まで、人が作った構成物だと気づく（p.73） | 主な不安は、ほとんど誰にも理解されないこと。そうおそれること自体が傲慢ではないか、という不安（p.85） | 構想を、人が作った物語として見る。そう見ていることが、人と通じ合えないおそれに結びつくのかもしれない |
 
 </div>
 
-表を上から読むと、構想の語は、達成者の段階のあたりで辞書の意味のとおりに使えるようになり、その先では、像が仮のものになり、やがて人の作った物語として見えてくるのかもしれません。クック＝グロイターは、p.73 で、ベッドのような日々の語でさえ大きな単純化で、誰の頭の中のベッドの像も同じではないのに、私たちはベッドの語で十分に通じ合っている、と書いています。
+表を上から読むと、構想の語は、属する集まりの筋書きとして、また自分の腕で描く筋として受け取られたあと、達成者の段階のあたりで辞書の意味のとおりに使えるようになり、その先では、像が仮のものになり、やがて人の作った物語として見えてくるのかもしれません。クック＝グロイターは、p.73 で、ベッドのような日々の語でさえ大きな単純化で、誰の頭の中のベッドの像も同じではないのに、私たちはベッドの語で十分に通じ合っている、と書いています。
 
-同じ構想の語が、この道のりのどこで聞かれるかで、向かう先の枠にも、着けば届く現実にも、知りえない先の仮の像にも、人の作った物語にもなるのかもしれません。それでも、ベッドの語のように、話は通じているように見えます。互いに別のものを指したまま、構想の話が進むこともありそうです。
+同じ構想の語が、この道のりのどこで聞かれるかで、集まりの筋書きにも、自分の腕で描く筋にも、向かう先の枠にも、着けば届く現実にも、知りえない先の仮の像にも、人の作った物語にもなるのかもしれません。それでも、ベッドの語のように、話は通じているように見えます。互いに別のものを指したまま、構想の話が進むこともありそうです。
 
 同じ語を知っていることと、その段階から見ていることは、別のことでもあります。クック＝グロイターは、戦略を立てる人が、戦略家の段階から意味をつくっているとは限らず、戦略や仕組みの分析に詳しい人が、専門家や達成者の段階にいることもある、と書いています（pp.94–95 の注 24）。後の段階の話題を、慣習の段階のものの見方のまま、知識として知ることもできます。クック＝グロイターは、これを aboutism（〜について知っているだけのこと）と呼んでいます（p.93 の注 8）。構想について詳しく語れることと、構想の像を作られたものとして見ていることも、別のことなのかもしれません。
 
@@ -107,7 +109,7 @@
 
 <details><summary>出典</summary>
 
-出典：[Cook-Greuter (2013)](https://web.archive.org/web/20140928135208/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1%2714%2097p%5B1%5D.pdf)（本文で確認。pp.10, 25, 27, 41–42, 50, 58–59, 61, 64, 72–73, 85, 93 の注 8, 94–95 の注 24。頁は論文の刷りの頁）／O'Fallon (2020) [States and STAGES: Waking up Developmentally](https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf), *Integral Review* 16(1)（本文で確認。pp.23, 30。頁は雑誌の刷りの頁）
+出典：[Cook-Greuter (2013)](https://web.archive.org/web/20140928135208/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1%2714%2097p%5B1%5D.pdf)（本文で確認。pp.10, 25, 27, 29, 34, 36–37, 40, 41–42, 50, 58–59, 61, 64, 72–73, 85, 93 の注 8, 94–95 の注 24。頁は論文の刷りの頁）／O'Fallon (2020) [States and STAGES: Waking up Developmentally](https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf), *Integral Review* 16(1)（本文で確認。pp.23, 30。頁は雑誌の刷りの頁）
 
 </details>
 
@@ -115,13 +117,21 @@
 
 - Cook-Greuter (2013) p.10：「the relationship to almost any concept can be shown to differ along the developmental path. A person's understanding of power, feedback, time, love, integrity and truth, for instance, changes with increasing development.」
 - p.25（自己保護の段階の日和見の型）：「They are people of action, not of thought and planning.」
-- p.27（自己保護）：「Main anxiety: Threat of annihilation or enslavement.」
-- p.50（達成者）：「Conscientious persons fear the Conformist frame of mind with its dependency and “submission.”」
+- p.27（自己保護）：「Self defined as what one does or wants to do right now rather than in terms of psychological states or plans and longer-term goals.」「Main anxiety: Threat of annihilation or enslavement.」
+- p.29（順応）：「They now have developed enough skills to get around in the world, accomplish the daily tasks of life and, in general, manage ordinary, concrete things and situations. They now actively want to play by the rules.」
+- p.34（順応）：「Conformists are interested in the concrete, visible aspects of experience」「Main anxiety: not to belong and to be cast out. Most threatening to a Conformist is being disapproved by or deserted by significant others, rejected by one’s group.」
+- pp.36–37（専門家）：「This new capacity to identify some special characteristics of oneself is enabled by a budding understanding of one’s life in linear time. One can see how one behaved in a specific way before and one expects to behave in similar ways again.」
+- p.40（専門家）：「Main anxiety: Having just recently discovered their own separate personhood, Experts fear losing this sense of specialness. Moreover, they fear being reabsorbed and getting drawn back into the fold, into the mass of others. They also fear that if they should open themselves to others’ views, they might lose their current certainty and strong sense of self.」
 - p.41（達成者）：「Five to ten years backwards and forwards is now a regularly envisioned timeframe.」
+- p.42（達成者）：「Achievers are planful about their actions, concerned about priorities and consequence, and capable of revision and iterative assessment on as well as reorienting towards new goals.」
+- p.50（達成者）：「Depression: Conscientious persons most often suffer depression in the form of guilt for not having fulfilled their goals and ideals, for the loss of a sense of being able to accomplish them, and the ongoing and deep fear of loss of control and autonomy.」「Conscientious persons fear the Conformist frame of mind with its dependency and “submission.”」
+- p.58（多元）：「Depression at this level has several facets: a) The realistic fear of being reabsorbed, that is sucked back into the “rat race” of the Achiever mindset by the demands of society」
+- p.59（多元）：「executive decision for fear to be seen as unilateral, uncooperative, or oppressive」
 - p.61（多元）：「The past is gone and the future cannot really be known.」
 - p.64（戦略家）：「Strategist are often motivated and infused with a grand purpose and a vision of what could be.」
 - p.72（戦略家）：「Chief anxiety: a) not to fulfill one’s personal potential, b) not to self-actualize, c) not to live up to or neglect those global principles of justice, tolerance etc. one holds dear above any others, and d) loss of courage.」
-- p.73：「all objects are human-made constructs, including for instance such abstract constructs as purpose, linear time and the ego.」「No two people’s mental picture of a bed is alike and no two beds in the world are identical. And yet we all use the term “bed” and it works well for most purposes of communication.」
+- p.73（戦略家のあとの二つの段階の初め）：「all objects are human-made constructs, including for instance such abstract constructs as purpose, linear time and the ego.」「No two people’s mental picture of a bed is alike and no two beds in the world are identical. And yet we all use the term “bed” and it works well for most purposes of communication.」
+- p.85（構成への気づき）：「Chief anxiety: Fearing that almost nobody understands them in their complexity and sympathizes with their experience, and that by fearing this, they are culpable of hubris.」
 - pp.94–95 の注 24：「a strategic planner is not necessarily making meaning from the Strategist level.」
 - O'Fallon (2020) p.30：「3.5 Confuses the fantasy/visualizations of the future with reality: They visualize a goal in the future and believe that it represents the reality that they will reach once the goal is achieved.」
 
@@ -139,7 +149,7 @@
 
 ### 骨組みを組む働きとして
 
-辞書の一つめの意味です。小説の主題や構成を組み立てるように、これからすることの骨組みをまとめます。構想を働きの側から見ると、こう見えます。
+辞書の一つめの意味です。小説の主題や構成を組み立てるように、これからすることの骨組みをまとめます。この面からは、骨組みをどう組むかはよく見えますが、組み立てる像がどこから来たのかは見えにくくなります。
 
 ### 思い描かれた像として
 
@@ -147,17 +157,11 @@
 
 ### 叡智として、心の守りとして、行動の先として
 
-pjdhiro は、構想の出どころについて、三つの面を並べています。
-
-<strong>pjdhiro の見方：</strong>構想は叡智のような素晴らしいものかもしれない、ただの心理防衛かもしれない、行動の先に生まれるかもしれない。
+pjdhiro は、構想の出どころについて、叡智のような素晴らしいものかもしれない、ただの心理防衛かもしれない、行動の先に生まれるかもしれない、と三つの面を並べています。本人の言葉は、<a href="love-driven-dev.html#ldd-housekeeper" data-import="love-driven-dev.html#ldd-kousou-faces" data-import-title="構想の出どころについての pjdhiro の言葉（Love駆動開発と呼びたいもの）">Love駆動開発の構想の段</a>にあります。
 
 叡智の面では、構想は、先を見通して形にする力として見えます。心の守りの面では、先が見えない怖さを埋めるために、像が保たれていることがあります。pjdhiro は、計画の必要性を、バックミラーだけを見て車を運転する怖さにたとえ、怖いからなんとかしたい、という支配欲や防衛でもある、と見ています（「[時間の向き - 僕の前に道はない](no-road-ahead.html#nr-plan)」）。像の中身だけでは、先を見通したものか、怖さから保たれているものかを見分けにくいところがあります（「[Love駆動開発と呼びたいもの](love-driven-dev.html#ldd-vision)」の構想の段）。
 
-行動の先の面では、構想は、動いた先で形をとります。デューたちの調査の起業家は、予測より手元の手段から始めていました。pjdhiro の自己紹介も、この面に近いところにあります。
-
-<strong>pjdhiro の体験：</strong>私は自己紹介で、家政婦さんみたいなことが得意です、とよく言いますね。プロジェクトをリードする人材に対し、未来のビジョンを持ち、到達までの構想と計画をもち、不確実性を貫通するような予測と信念を持つ、力強い人というイメージがあると思っていて、そのような方ではないので、誤解しないように。不確実性には、（現場に行く＋判断し適応する）を再帰的にやってるだけのシンプルなプロセスかもしれません。
-
-家政婦は、訪ねた家にある材料や道具と、その日の暮らしの様子から、できることを組み立てます。先の像を先に持つより、現場で判断して適応することをくり返すうちに、構想が形をとっていく、と読めます。
+行動の先の面では、構想は、動いた先で形をとります。デューたちの調査の起業家は、予測より手元の手段から始めていました。pjdhiro が自己紹介で「家政婦さんみたいなことが得意です」と言うのも、この面に近いところにあります（上のリンクの先の、体験の言葉です）。先の像を先に持つより、現場に行って判断し、適応することをくり返すうちに、構想が形をとっていく、と読めます。
 
 ### 構想の手前の動きとして
 
@@ -165,7 +169,7 @@ pjdhiro は、構想の出どころについて、三つの面を並べていま
 
 ### 一面ずつ並べると
 
-このページの一旦の定義も、ここで並べた面の一つに近いものです。前の章で見た、達成者の段階でいちばん自然に使える、先の枠を組み立てる面です。前の章の道のりを重ねると、一人の中にも、ここで並べた面はどれもあり、先の時間の見え方が変わるにつれて、前に出る面が移っていくのかもしれません。
+このページの一旦の定義も、ここで並べた面の一つに近いものです。「骨組みを組む働きとして」の面で、前の章の表で、達成者の段階でいちばん自然に使えるのかもしれないと見た面です。前の章の道のりを重ねると、一人の中にも、ここで並べた面はどれもあり、先の時間の見え方が変わるにつれて、前に出る面が移っていくのかもしれません。
 
 ## 構想は、Love と呼びたいものが分かるまで分からない
 
@@ -175,9 +179,7 @@ pjdhiro は、構想の出どころについて、三つの面を並べていま
 
 pjdhiro は、構想がどこから、なぜ、どのように湧くのかは、その手前で働いている駆動源、Love と呼びたいものが分かるまでは分からないのではないか、と見ています。構想とされるものの 5W1H や構造、プロセスが分からないうちに出どころを一つに決めると、分かった気になって探す手が止まる、という見方です（「[Love駆動開発と呼びたいもの](love-driven-dev.html#ldd-vision)」）。
 
-構想や計画について、pjdhiro は、構想も計画も意味がない、むしろ逆効果の場合もある、不要な場合もある、必要な場合もある、という構えでいます。構想や計画は人間の感情が欲するだけ、というくらいの視点も持っています（「[Love駆動開発と呼びたいもの](love-driven-dev.html#ldd-taisho)」の手順と、構想や計画への構えの畳み）。計画という語にも、環境を支配したい、どこかに責任を置きたい、合意したい、のような心理的なものがある、と見ています（同じページの「[計画](love-driven-dev.html#ldd-plan-word)」の段）。構想が要るか要らないかも、その場で起きるであろうことまで含めて、そのつど対処していく、という構えです。
-
-同じ構想という語は、同じものの違う面を、聞く人ごとに指しているのかもしれません。プロジェクトを何が動かしているのかは、「[Love駆動開発と呼びたいもの](love-driven-dev.html)」で探しています。
+だから、このページの問いへの今の答えも、一つの定義には閉じません。同じ構想という語は、同じものの違う面を、聞く人ごとに指しているのかもしれません。構想が要るか要らないかも、pjdhiro は、その場で起きるであろうことまで含めて、そのつど対処していくものと見ています（「[Love駆動開発と呼びたいもの](love-driven-dev.html#ldd-taisho)」の手順と、構想や計画への構えの畳み・「[計画](love-driven-dev.html#ldd-plan-word)」の段）。プロジェクトを何が動かしているのかは、「[Love駆動開発と呼びたいもの](love-driven-dev.html)」で探しています。
 
 ## 保持論点
 
