@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>「どっちがいい？」を直角に曲げる | Blog | Project Design</title>
+<meta name="description" content="二択を聞かれたら、一方を全力で褒め、向きを変えてもう一方も肯定する「意見直角曲げ法」を、感情処理の技法として見る。何が起きているかを見立てて心理現象を当ててみると、直交する二つの単位円なら矛盾なく扱えるのではないか、と思い描いた妄想の記事です。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="「どっちがいい？」を直角に曲げる">
+<meta property="og:description" content="二択を聞かれたら、一方を全力で褒め、向きを変えてもう一方も肯定する「意見直角曲げ法」を、感情処理の技法として見る。何が起きているかを見立てて心理現象を当ててみると、直交する二つの単位円なら矛盾なく扱えるのではないか、と思い描いた妄想の記事です。">
+<!-- この記事は ② の道（blog/_thumbs-src/2026-11-28-opinion-bending.svg） -->
+<meta property="og:image" content="https://uminomae.github.io/project-design-theory/blog/assets/thumbs/2026-11-28-opinion-bending.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="article:published_time" content="2026-11-28">
+<meta name="bl:status" content="種">
+<meta property="article:tag" content="妄想">
+<meta property="article:tag" content="感情">
+<meta property="article:tag" content="信頼">
+<meta property="article:tag" content="四元数">
+<link rel="icon" href="../../favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@400;500&display=swap">
+<link rel="stylesheet" href="../design-system/tokens.css">
+<link rel="stylesheet" href="../design-system/base.css">
+<link rel="stylesheet" href="../design-system/components.css">
+<script src="../design-system/theme.js"></script>
+<script src="../design-system/menu.js" defer></script>
+<script src="../design-system/dialog.js" defer></script>
+</head>
+<body>
+<header class="bl-header">
+  <div class="bl-header__inner">
+    <a class="bl-header__name" href="../">Blog</a>
+    <nav class="bl-header__nav" aria-label="サイト">
+      <button type="button" class="bl-menu-toggle" data-bl-menu-toggle aria-expanded="false" aria-controls="bl-menu">Menu</button>
+      <button type="button" class="bl-theme-toggle" data-bl-theme-toggle>暗く</button>
+    </nav>
+    <nav class="bl-menu" id="bl-menu" aria-label="サイトの Menu" hidden><a href="../../">HOME</a></nav>
+  </div>
+</header>
+
+<main class="bl-main">
+  <article class="bl-post">
+    <header class="bl-post__head">
+      <h1 class="bl-post__title">「どっちがいい？」を直角に曲げる</h1>
+      <div class="bl-post__meta">
+        <span class="bl-status" data-status="種">種</span>
+        <time datetime="2026-11-28">2026-11-28</time>
+        <ul class="bl-tags" aria-label="タグ">
+          <li><a class="bl-tag" href="../?tag=妄想">#妄想</a></li>
+          <li><a class="bl-tag" href="../?tag=感情">#感情</a></li>
+          <li><a class="bl-tag" href="../?tag=信頼">#信頼</a></li>
+          <li><a class="bl-tag" href="../?tag=四元数">#四元数</a></li>
+        </ul>
+      </div>
+      <div class="bl-post__actions">
+        <button type="button" class="bl-open-dialog" data-bl-open="kaisetsu">この記事の解説</button>
+      </div>
+    </header>
+
+    <div class="bl-post__body">
+      <p>この記事は、プロジェクトの対人のスキル（建設的な対話など）を考えていた pjdhiro の思いつきに、Claude が付き合って書いた妄想です。</p>
+      <p>狩野英孝さんの「意見直角曲げ法」を感情処理の技法として見て、何が起きているかを見立て、支持できそうな心理現象を当ててみました。そこから置いた仮説は、当てた心理現象を、直交する二つの単位円のたとえで矛盾なくまとめて扱えるのではないか、というものです。</p>
+
+      <h2>直角曲げは、二択を比べる線から降ろす</h2>
+      <p>意見直角曲げ法は、狩野英孝さんがテレビ番組で紹介した会話のこつです。「どっちがいい？」と聞かれたら、一方を全力で褒め、すぐに向きを変えて、もう一方も肯定します。</p>
+      <figure class="bl-figure">
+        <iframe class="bl-video" src="https://www.youtube-nocookie.com/embed/RC7kZkNyt1M" title="狩野英孝の「意見直角曲げ法」（YouTube）" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <figcaption>番組の切り抜きの短い動画（YouTube）</figcaption>
+      </figure>
+      <p>「どっちがいい？」は、A と B を一本の線の上に並べて、どちらが上かを決める問いです。直角曲げは、A を横、B を縦に置き直します。直交する二つの向きは、互いの長さを削り合いません。</p>
+      <figure class="bl-figure">
+        <svg viewBox="0 0 340 180" width="340" height="180" role="img" aria-label="左は A と B を一本の線の上で比べる形。右は A を横、B を縦に置き直した形">
+          <text x="80" y="22" font-size="13" fill="var(--bl-ink-sub)" text-anchor="middle">一本の線で比べる</text>
+          <line x1="15" y1="100" x2="145" y2="100" stroke="var(--bl-ink-sub)" stroke-width="2"/>
+          <circle cx="35" cy="100" r="6" fill="var(--bl-mark)"/>
+          <circle cx="125" cy="100" r="6" fill="var(--bl-accent)"/>
+          <text x="35" y="84" font-size="15" fill="var(--bl-ink)" text-anchor="middle">B</text>
+          <text x="125" y="84" font-size="15" fill="var(--bl-ink)" text-anchor="middle">A</text>
+          <text x="80" y="135" font-size="12" fill="var(--bl-ink-sub)" text-anchor="middle">片方が上がると</text>
+          <text x="80" y="153" font-size="12" fill="var(--bl-ink-sub)" text-anchor="middle">もう片方が下がる</text>
+          <line x1="170" y1="15" x2="170" y2="170" stroke="var(--bl-rule)" stroke-width="1"/>
+          <text x="260" y="22" font-size="13" fill="var(--bl-ink-sub)" text-anchor="middle">直角に置き直す</text>
+          <line x1="200" y1="150" x2="330" y2="150" stroke="var(--bl-accent)" stroke-width="2.5"/>
+          <line x1="200" y1="150" x2="200" y2="40" stroke="var(--bl-mark)" stroke-width="2.5"/>
+          <path d="M 200 138 L 212 138 L 212 150" fill="none" stroke="var(--bl-ink-sub)" stroke-width="1.5"/>
+          <circle cx="310" cy="150" r="6" fill="var(--bl-accent)"/>
+          <circle cx="200" cy="55" r="6" fill="var(--bl-mark)"/>
+          <text x="310" y="170" font-size="15" fill="var(--bl-ink)" text-anchor="middle">A</text>
+          <text x="186" y="60" font-size="15" fill="var(--bl-ink)" text-anchor="middle">B</text>
+          <text x="270" y="100" font-size="12" fill="var(--bl-ink-sub)" text-anchor="middle">互いの長さを</text>
+          <text x="270" y="118" font-size="12" fill="var(--bl-ink-sub)" text-anchor="middle">削り合わない</text>
+        </svg>
+        <figcaption>左は一本の線で比べる形、右は直角に置き直した形。</figcaption>
+      </figure>
+
+      <h2>直角に曲げると、実軸では 0 になる</h2>
+      <p>pjdhiro は、名前の由来を「実軸で +1 か −1 かという選択肢のようなものを、虚軸のコサイン 90 度に持っていくから、というのが命名理由なのだろう」と想像しています。単位円の上で 90 度回った点は、実軸の成分が cos 90° = 0 で、+1 にも −1 にも寄りませんが、長さは 1 のままです。</p>
+      <figure class="bl-figure">
+        <svg viewBox="0 0 320 270" width="320" height="270" role="img" aria-label="単位円の上で +1 から 90 度回った点 i。実軸に写すと 0 で、長さは 1 のまま">
+          <defs>
+            <marker id="cos90-head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="var(--bl-accent)"/>
+            </marker>
+          </defs>
+          <line x1="22" y1="140" x2="298" y2="140" stroke="var(--bl-ink-sub)" stroke-width="1.5"/>
+          <line x1="160" y1="20" x2="160" y2="250" stroke="var(--bl-ink-sub)" stroke-width="1.5"/>
+          <text x="300" y="134" font-size="12" fill="var(--bl-ink-sub)" text-anchor="end">実軸</text>
+          <text x="166" y="28" font-size="12" fill="var(--bl-ink-sub)">虚軸</text>
+          <circle cx="160" cy="140" r="100" fill="none" stroke="var(--bl-ink-sub)" stroke-width="1.5"/>
+          <path d="M 260 140 A 100 100 0 0 0 167 40.3" fill="none" stroke="var(--bl-accent)" stroke-width="3.5" marker-end="url(#cos90-head)"/>
+          <text x="236" y="72" font-size="13" fill="var(--bl-accent)">90°</text>
+          <line x1="160" y1="140" x2="160" y2="40" stroke="var(--bl-accent)" stroke-width="3"/>
+          <line x1="160" y1="40" x2="160" y2="140" stroke="var(--bl-mark)" stroke-width="2" stroke-dasharray="4 5"/>
+          <text x="133" y="98" font-size="13" fill="var(--bl-accent)" text-anchor="end">長さ 1</text>
+          <circle cx="160" cy="40" r="5" fill="var(--bl-accent)"/>
+          <text x="148" y="36" font-size="15" fill="var(--bl-ink)" text-anchor="end">i</text>
+          <circle cx="260" cy="140" r="5" fill="var(--bl-ink)"/>
+          <circle cx="60" cy="140" r="5" fill="var(--bl-ink)"/>
+          <circle cx="160" cy="140" r="5.5" fill="var(--bl-mark)"/>
+          <text x="266" y="160" font-size="13" fill="var(--bl-ink)">+1（A）</text>
+          <text x="54" y="160" font-size="13" fill="var(--bl-ink)" text-anchor="end">−1（B）</text>
+          <text x="168" y="162" font-size="13" fill="var(--bl-mark)">0</text>
+          <text x="168" y="182" font-size="13" fill="var(--bl-mark)">cos 90° = 0</text>
+        </svg>
+        <figcaption>+1 から 90 度回った点 i は、実軸に写すと 0 で、長さは 1 のまま。</figcaption>
+      </figure>
+
+      <h2>分断の痛みの時間を 0 にする</h2>
+      <p>pjdhiro は、二択の片方を選ぶことには、分断の悲しみという小さな痛みがあると見ています。直角曲げは、その痛みの時間を 0 にしているのかもしれません。</p>
+      <div class="bl-voice">
+        <span class="bl-voice__label">pjdhiro の見立て</span>
+        <p>分断の痛みを予測する緊張と恐怖を、一方の選択肢の能動的全肯定でプラマイゼロにしつつ、瞬時にもう片方も全肯定に切り替えることで、分断の悲しみの時間をゼロにする。</p>
+      </div>
+      <figure class="bl-figure">
+        <svg viewBox="0 0 340 340" width="340" height="340" role="img" aria-label="「どっちがいい？」で分断の痛みを予測する。A を全力で肯定し、瞬時に B も全力で肯定する。分断の悲しみの時間は 0 になる">
+          <defs>
+            <marker id="pain-head" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="var(--bl-ink-sub)"/></marker>
+          </defs>
+          <rect x="20" y="10" width="300" height="58" rx="8" fill="var(--bl-surface)" stroke="var(--bl-rule)"/>
+          <text x="170" y="34" font-size="14" fill="var(--bl-ink)" text-anchor="middle">「どっちがいい？」</text>
+          <text x="170" y="56" font-size="12" fill="var(--bl-mark)" text-anchor="middle">分断の痛みを予測する（緊張・恐怖）</text>
+          <line x1="170" y1="68" x2="170" y2="96" stroke="var(--bl-ink-sub)" stroke-width="1.5" marker-end="url(#pain-head)"/>
+          <rect x="20" y="100" width="300" height="58" rx="8" fill="var(--bl-surface)" stroke="var(--bl-rule)"/>
+          <text x="170" y="124" font-size="14" fill="var(--bl-ink)" text-anchor="middle">A を全力で肯定</text>
+          <text x="170" y="146" font-size="12" fill="var(--bl-accent)" text-anchor="middle">予測を超える肯定で、喜びの信号</text>
+          <line x1="170" y1="158" x2="170" y2="186" stroke="var(--bl-ink-sub)" stroke-width="1.5" marker-end="url(#pain-head)"/>
+          <text x="180" y="178" font-size="11" fill="var(--bl-ink-sub)">瞬時に切り替え</text>
+          <rect x="20" y="190" width="300" height="58" rx="8" fill="var(--bl-surface)" stroke="var(--bl-rule)"/>
+          <text x="170" y="214" font-size="14" fill="var(--bl-ink)" text-anchor="middle">B も全力で肯定</text>
+          <text x="170" y="236" font-size="12" fill="var(--bl-accent)" text-anchor="middle">予測を裏切る肯定で、喜びの信号</text>
+          <text x="170" y="290" font-size="15" fill="var(--bl-mark)" text-anchor="middle">分断の悲しみの時間 = 0</text>
+          <text x="170" y="318" font-size="12" fill="var(--bl-ink-sub)" text-anchor="middle">現実の変化量は 0 のまま、意識の信号だけが MAX</text>
+        </svg>
+        <figcaption>pjdhiro の見立てを、起きる順に並べた図。</figcaption>
+      </figure>
+      <details class="bl-details">
+        <summary>pjdhiro のほかの見立て</summary>
+        <div class="bl-details__body">
+          <ul>
+            <li>「片方を選択するというのは、分離と包摂の分離です。それは喪失の悲しみ、分断の悲しみ、そういった小さな痛みがある。それが葛藤や曖昧さを生んでいるかもしれない。その分断の痛みの時間を 0 にすることなのかもしれない。☯️」</li>
+            <li>「意見直角曲げ法の最初の全肯定は、予測以上の全力の全肯定で信号を出させ、瞬時に切り替え予測を裏切ることで信号を出す。どちらも喜びの信号で、客観的な現実に影響させないまま、心理の喜び信号だけを出す。リアルは変化量ゼロのまま、意識だけ信号が MAX 出てる状態にする、ってことかもだね」</li>
+            <li>「分断の悲しみの予測に対し、全肯定で痛みは無いという予測に切り替えさせ、その逆側も全肯定なので全く痛みがない。分離の痛みも包摂の時間もゼロ。」</li>
+            <li>受容的な態度にも近い。「投影・取り入れなどの精神力動が瞬間的に行われている可能性がある。赤ちゃんをあやすような技法の上手な切り取りかもしれない」</li>
+            <li>「共感と解釈に近い気がするな。相手の葛藤を一緒に抱え、受け取れる状態にして分離して咀嚼した☯️のようなものを、解釈として渡す。それを瞬間的にやってるのかも」</li>
+            <li>「コサイン 90 度というと類推で、欠損駆動思考を考えちゃいますね」（<a href="../../ks/">欠損駆動思考</a>）</li>
+          </ul>
+        </div>
+      </details>
+
+      <h2>二つの単位円なら、矛盾なく扱えるのではないか</h2>
+      <p>四元数を使うと、直交する二枚の平面を一緒に扱えます。片方の平面を 90 度曲げると、もう片方の平面も同じだけ回り、全体の大きさは 1 のまま変わりません。片方にはオイラーの等式で知られる単位円を、もう片方には禅で描かれる円（円相）を置いてみます。</p>
+      <div class="bl-voice">
+        <span class="bl-voice__label">pjdhiro の見立て</span>
+        <p>複素平面的な言い方では、直角に曲げたかのように見えますが、同時にもう一つの平面も回転してしまう。その結果生まれるものが、信頼、緊張からの緩和、笑い、喜び、などの何かで、その値は単位球面のような安定した 1 なのではないか。うまく単位円の上で回転させる技法かもしれません。まだわからない。</p>
+      </div>
+      <figure class="bl-figure">
+        <svg viewBox="0 0 360 360" width="360" height="360" role="img" aria-label="交わらずに一度だけ絡む二つの輪（オイラーの円と禅の円）と、Claude が並べた推論">
+          <ellipse cx="140" cy="100" rx="90" ry="60" fill="none" stroke="var(--bl-accent)" stroke-width="5"/>
+          <ellipse cx="220" cy="100" rx="90" ry="60" fill="none" stroke="var(--bl-mark)" stroke-width="5"/>
+          <path d="M 162.1 54.0 A 90 60 0 0 1 199.8 41.6" fill="none" stroke="var(--bl-bg)" stroke-width="11"/>
+          <path d="M 162.1 54.0 A 90 60 0 0 1 199.8 41.6" fill="none" stroke="var(--bl-mark)" stroke-width="5"/>
+          <path d="M 197.9 146.0 A 90 60 0 0 1 160.2 158.5" fill="none" stroke="var(--bl-bg)" stroke-width="11"/>
+          <path d="M 197.9 146.0 A 90 60 0 0 1 160.2 158.5" fill="none" stroke="var(--bl-accent)" stroke-width="5"/>
+          <text x="60" y="190" font-size="13" fill="var(--bl-ink-sub)">オイラーの円</text>
+          <text x="232" y="190" font-size="13" fill="var(--bl-ink-sub)">禅の円</text>
+          <line x1="20" y1="208" x2="340" y2="208" stroke="var(--bl-rule)" stroke-width="1"/>
+          <text x="20" y="232" font-size="12" fill="var(--bl-ink-sub)">Claude が並べた推論</text>
+          <text x="20" y="253" font-size="11.5" fill="var(--bl-ink-sub)">・二択、二人、二枚の平面、45° の二倍。2 が何度も出てくる</text>
+          <text x="20" y="274" font-size="11.5" fill="var(--bl-ink-sub)">・交わらずに絡む二つの輪は ☯️ に見える</text>
+          <text x="20" y="295" font-size="11.5" fill="var(--bl-ink-sub)">・0 と無限大は、球の上では半周の違い</text>
+          <text x="20" y="316" font-size="11.5" fill="var(--bl-ink-sub)">・感情の輪では、反対の感情へ半周回って着く</text>
+          <text x="20" y="337" font-size="11.5" fill="var(--bl-ink-sub)">・直角曲げは、信頼をつくる方法とも読める</text>
+        </svg>
+        <figcaption>大きさ 1 の球面の上で、二つの単位円は交わらずに一度だけ絡む（平面に描いた、たとえの図）。</figcaption>
+      </figure>
+      <div class="bl-voice">
+        <span class="bl-voice__label">pjdhiro の仮説</span>
+        <p>当ててみた心理現象は、直交する二つの単位円のたとえで、矛盾なくまとめて扱えるのではないか。意見直角曲げ法は、その最も近い応用事例ではないか。</p>
+      </div>
+    </div>
+
+    <section class="bl-related" aria-labelledby="related-title">
+      <h2 class="bl-related__title" id="related-title">関連するページ</h2>
+      <ul class="bl-related__list">
+        <li class="bl-related__item">
+          <p class="bl-related__note">二枚の平面の片方、オイラーの等式と禅の円の話</p>
+          <a class="bl-related__link" href="../../reader/euler-unfolded.html">オイラーの等式が、たたんだもの</a>
+          <p class="bl-related__desc">禅の円と単位円は似ていないか、という問いから、オイラーの等式を開く読み物</p>
+        </li>
+        <li class="bl-related__item">
+          <p class="bl-related__note">二つの単位円を回す話は、生存と信頼の二つの信号の話とつながりそう</p>
+          <a class="bl-related__link" href="../../as/">意識とは</a>
+          <p class="bl-related__desc">人は、何で世界を切り取っているのか。生き延びられるか（生存）と、つながっていられるか（信頼）の二つの信号から考える</p>
+        </li>
+        <li class="bl-related__item">
+          <p class="bl-related__note">コサイン 90 度から類推した先</p>
+          <a class="bl-related__link" href="../../ks/">欠損駆動思考</a>
+          <p class="bl-related__desc">記号の上では 0 と出るところで、人は何を感じているのか。考えや心と、体で湧く信号とが離れるときに感じる欠けや違和感を駆動源にする、思考や精神の構え</p>
+        </li>
+      </ul>
+    </section>
+  </article>
+</main>
+
+<dialog class="bl-dialog" id="kaisetsu" aria-labelledby="kaisetsu-title">
+  <div class="bl-dialog__bar">
+    <span id="kaisetsu-title">この記事の解説</span>
+    <button type="button" class="bl-dialog__close" data-bl-close>閉じる</button>
+  </div>
+  <div class="bl-dialog__body">
+    <p>本文で触れた数学を、少しだけ書きます。</p>
+    <p>四元数は q = x + iy + jz + kw の形の数です。前の二つ（1 と i の平面）をオイラーの平面、後ろの二つ（j と k の平面）を禅の円の平面に当てました。どの成分に何を当てるかは、この記事の妄想です。</p>
+    <p>大きさ 1 の四元数を片側から掛けると、二枚の平面が同じ角だけ一緒に回ります。片方の平面だけを回したいときは、両側から半分ずつ掛けて、もう片方の回りを打ち消す必要があります。どちらの掛け方でも、大きさは変わりません。</p>
+    <p>0 から 1、1 から無限大、無限大から −1、−1 から 0 へと進む回転は、球の上では 90 度ずつの回転です。これを四元数で書くと j の入った形になり、二回分（0 と無限大を入れ替える半周）は j そのものになります。1 と i の平面で回すだけでは、0 と無限大は動きません。</p>
+  </div>
+</dialog>
+
+<footer class="bl-footer">
+  <div class="bl-footer__inner">
+    <a href="../">記事の一覧</a>
+    <a href="../../">Project Design</a>
+  </div>
+</footer>
+</body>
+</html>

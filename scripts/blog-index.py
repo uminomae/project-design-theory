@@ -7,6 +7,8 @@
 記事の正本は、記事の頭の meta だけ：
   og:title（題）・description（概要）・og:image（サムネイル。assets/thumbs/ の 1200×630 の .png・.jpg）
   article:published_time（日付 YYYY-MM-DD）・article:tag（タグ。一つにつき一行）
+  bl:status（状態。種・推敲中・まとめ のどれか。日記など状態を持たない記事は書かない）
+  article:modified_time（更新日 YYYY-MM-DD。直したときだけ）
 カードは日付の新しい順（同じ日はファイル名の逆順）に、index.html の
 <!-- BLOG-CARDS:START --> と <!-- BLOG-CARDS:END --> のあいだへ置く。
 一覧のページ（index.html）の頭の og（ブログ全体の一枚）も見る。
@@ -26,6 +28,7 @@ INDEX = BLOG / "index.html"
 START = "<!-- BLOG-CARDS:START -->"
 END = "<!-- BLOG-CARDS:END -->"
 DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+STAGES = ("種", "推敲中", "まとめ")
 
 
 class Head(HTMLParser):
@@ -39,6 +42,8 @@ class Head(HTMLParser):
         self.h1 = ""
         self.body_tags = []
         self.body_time = None
+        self.body_status = None
+        self.body_updated = None
         self._in = None
 
     def handle_starttag(self, tag, attrs):
@@ -55,11 +60,16 @@ class Head(HTMLParser):
             self._in = "h1"
         elif tag == "a" and "bl-tag" in (a.get("class") or "").split():
             self._in = "tag"
+        elif tag == "span" and "bl-status" in (a.get("class") or "").split():
+            self._in = "status"
+            self.body_status = ""
+        elif tag == "time" and "bl-post__updated" in (a.get("class") or "").split():
+            self.body_updated = a.get("datetime")
         elif tag == "time" and self.body_time is None:
             self.body_time = a.get("datetime")
 
     def handle_endtag(self, tag):
-        if tag in ("title", "h1", "a"):
+        if tag in ("title", "h1", "a", "span"):
             self._in = None
 
     def handle_data(self, data):
@@ -67,6 +77,8 @@ class Head(HTMLParser):
             self.title += data
         elif self._in == "h1":
             self.h1 += data
+        elif self._in == "status":
+            self.body_status += data.strip()
         elif self._in == "tag":
             self.body_tags.append(data.strip().lstrip("#"))
 
@@ -118,6 +130,8 @@ def read_post(path, problems):
     desc = p.meta.get("description", "")
     date = p.meta.get("article:published_time", "")
     image = p.meta.get("og:image", "")
+    stage = p.meta.get("bl:status", "")
+    updated = p.meta.get("article:modified_time", "")
     thumb = image.rsplit("/assets/thumbs/", 1)[-1] if "/assets/thumbs/" in image else ""
 
     def bad(msg):
@@ -135,6 +149,14 @@ def read_post(path, problems):
         bad(f"article:tag が無いか、空白を含む（{p.tags}）")
     for msg in check_image(image):
         bad(msg)
+    if stage and stage not in STAGES:
+        bad(f"bl:status が {'・'.join(STAGES)} のどれでもない（{stage!r}）")
+    if (p.body_status or "") != stage:
+        bad(f"本文の状態の印（{p.body_status!r}）が bl:status（{stage!r}）と違う")
+    if updated and (not DATE.match(updated) or updated < date):
+        bad(f"article:modified_time が YYYY-MM-DD でないか、日付より前（{updated!r}）")
+    if (p.body_updated or "") != updated:
+        bad(f"本文の更新日（{p.body_updated!r}）が article:modified_time（{updated!r}）と違う")
     # 記事の中で二度書いている所
     if p.meta.get("og:description", desc) != desc:
         bad("og:description が description と違う")
@@ -147,7 +169,7 @@ def read_post(path, problems):
     if p.body_tags != p.tags:
         bad(f"本文のタグ {p.body_tags} が article:tag {p.tags} と違う")
 
-    return {"file": path.name, "title": title, "desc": desc, "date": date, "tags": p.tags, "thumb": thumb}
+    return {"file": path.name, "title": title, "desc": desc, "date": date, "tags": p.tags, "thumb": thumb, "stage": stage, "updated": updated}
 
 
 def card(post):
@@ -155,11 +177,15 @@ def card(post):
     tags = "\n".join(
         f'            <li><a class="bl-tag" href="?tag={e(t)}">#{e(t)}</a></li>' for t in post["tags"]
     )
-    return f"""    <li data-date="{e(post['date'])}" data-tags="{e(' '.join(post['tags']))}" data-text="{e(post['title'] + ' ' + post['desc'])}">
+    stage = f'<span class="bl-status" data-status="{e(post["stage"])}">{e(post["stage"])}</span>\n            ' if post["stage"] else ""
+    updated = f'\n            <span class="bl-card__updated">更新 <time datetime="{e(post["updated"])}">{e(post["updated"])}</time></span>' if post["updated"] else ""
+    return f"""    <li data-date="{e(post['date'])}" data-stage="{e(post['stage'])}" data-tags="{e(' '.join(post['tags']))}" data-text="{e(post['title'] + ' ' + post['desc'])}">
       <article class="bl-card">
         <img class="bl-card__thumb" src="assets/thumbs/{e(post['thumb'])}" alt="" width="1200" height="630" loading="lazy">
         <div class="bl-card__body">
-          <time class="bl-card__date" datetime="{e(post['date'])}">{e(post['date'])}</time>
+          <div class="bl-card__meta">
+            {stage}<time class="bl-card__date" datetime="{e(post['date'])}">{e(post['date'])}</time>{updated}
+          </div>
           <h2 class="bl-card__title"><a href="posts/{e(post['file'])}">{e(post['title'])}</a></h2>
           <p class="bl-card__lede">{e(post['desc'])}</p>
           <ul class="bl-tags" aria-label="タグ">

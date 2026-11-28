@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="交わらずに一度だけ絡む、藍と朱の二つの輪">
+  <rect width="1200" height="630" fill="#f7f4ee"/>
+  <g fill="none" stroke-width="14">
+    <ellipse cx="520" cy="315" rx="240" ry="160" stroke="#2f4a6d"/>
+    <ellipse cx="680" cy="315" rx="240" ry="160" stroke="#b5452b"/>
+    <path d="M 552.8 179.3 A 240 160 0 0 1 671.6 155.1" stroke="#f7f4ee" stroke-width="30"/>
+    <path d="M 552.8 179.3 A 240 160 0 0 1 671.6 155.1" stroke="#b5452b"/>
+    <path d="M 647.2 450.7 A 240 160 0 0 1 528.4 474.9" stroke="#f7f4ee" stroke-width="30"/>
+    <path d="M 647.2 450.7 A 240 160 0 0 1 528.4 474.9" stroke="#2f4a6d"/>
+  </g>
+  <g font-family="'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif" font-size="44" fill="#23211d" text-anchor="middle">
+    <text x="600" y="565">「どっちがいい？」を直角に曲げる</text>
+  </g>
+</svg>
