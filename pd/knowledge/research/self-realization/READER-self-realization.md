@@ -160,6 +160,8 @@ pjdhiro は、前に、自己受容について次のように話しています
 
 <a id="sr-defense"></a>pjdhiro の見方の終わりの部分は、順番です。受け容れて自分を認めた、そのあとに、守りを外した自己が現れる、という順です。守りを外そうとして外すのでなく、受け容れたあとに、守りが要らなくなる、と読めます。
 
+来談者中心療法のロジャーズは、自分の歩みを振り返る講演で、同じ順番を自分の体験として語っています（1961 年の本の第 1 章）。自分を、はっきり不完全な人間として受け容れやすくなってきた、と言い、そのうえで「不思議な逆説は、私がありのままの自分を受け容れると、私は変わる、ということだ」と続けます。同じ本の第 8 章では、キルケゴールの「本当にそうである自己であること」を引き、変化は、人が本当にそうであるものであろうとするとき、いちばん起きやすくなるのだろう、と書いています。ありのままであろうとすることは、悪く、破壊的になることではないか、という恐れにも答えています。性の気持ちも、怠けたい気持ちも、敵意も、感じてよいし、そうであってよい。それでも世界の屋根は落ちてこない、とロジャーズは書きます。
+
 ゲシュタルト療法の心理療法家ベイサーは、これを変化の逆説と呼びました（1970 年）。変化は、自分でないものになろうとするときではなく、自分であるものになるときに起きる、と書いています。なりたい自分をいったん置いて、いまの自分であろうとするとき、変化が起きる、という見方です。
 
 社会心理学の自己肯定化の研究は、実験の側から近いことを報告してきました。シャーマンとコーエンのまとめによると、人は、自分の値打ちを脅かす知らせを受けると、それを歪めたり退けたりして自分を守ろうとします。けれど、先に自分の大事にしている価値を確かめておくと、同じ知らせに、守りの偏りに頼らずに向き合えるようになります（2006 年）。自分の値打ちが、目の前の場面の評価だけに懸かっていないと分かると、脅かしを歪める必要が減る、と書いています。
@@ -169,6 +171,8 @@ pjdhiro は、前に、自己受容について次のように話しています
 このように、受け容れる → 守りがほどける → 自己が現れる、という順番には、臨床と実験の両方に、同じ向きの論があります。ただ、シャーマンとコーエンが確かめさせたのは、弱さそのものでなく、弱さとは別の所にある自分の値打ちでした。弱さそのものを受け容れることが、同じように守りをほどくのかは、まだ確かめていないところです。守りの働きそのものは、「[心理的防衛機制とは](defense-mechanisms.html)」で見ています。
 
 <details><summary>出典</summary>
+
+出典：Rogers (1961) *On Becoming a Person: A Therapist's View of Psychotherapy*, Houghton Mifflin（本文照合済。ただし読んだのは、米国の公立カレッジ Spokane Falls Community College の教員が授業用に置いた、1961 年の版の走査。第 1 章「This is me」は[授業用の写しの PDF](https://faculty.sfcc.spokane.edu/InetShare/AutoWebs/kimt/rogers%20this%20is%20me.pdf)で、p.17 に「It becomes easier for me to accept myself as a decidedly imperfect person」と「the curious paradox is that when I accept myself as I am, then I change.」。第 8 章「"To be that self which one truly is"」は[同じ教員の写しの PDF](https://faculty.sfcc.spokane.edu/InetShare/AutoWebs/kimt/rogers%20to%20be%20that%20self.pdf)で、p.166 にキルケゴールの引用、p.176 に「Change is facilitated, probably maximized, when one is willing to be what he truly is.」、p.177 の節「Does it imply being evil?」に「to be what one truly is would mean to be bad, evil, uncontrolled, destructive」という恐れと「the roof of the world does not fall in」。出版社・著者・大学の機関リポジトリの写しは見つからず、授業の写しの性格を添えて載せている）。
 
 出典：Beisser (1970) "The paradoxical theory of change", Fagan & Shepherd 編 *Gestalt Therapy Now*（本文照合済。読んだのは [The Gestalt Journal Press のサイトの版](https://gestalt.org/arnie.htm)で、原典の頁は写しに無い。「change occurs when one becomes what he is, not when he tries to become what he is not.」、「change can occur when the patient abandons, at least for the moment, what he would like to become and attempts to be what he is.」）。
 
@@ -215,7 +219,7 @@ pjdhiro は、前に、自己受容について次のように話しています
 
 <a id="sr-pending"></a>🚧 調査中：次の論は、このページの見方に近いことを言っていると見込んでいますが、原典の本文をまだ確かめられていません。本文の論拠には使っていません。中身は、本文を確かめるまでの見込みとして読んでください。
 
-- **ロジャーズ**（1959 年の療法と人格の理論・1961 年の *On Becoming a Person*）：ありのままの自分を受け容れたとき、人は変わる、という逆説。受け容れるほど守りが減り、経験に開かれ、変化と成長に向かえる。自分が自分にとっての大事な他者になる、という自分への肯定的な配慮。
+- **ロジャーズ**（1959 年の療法と人格の理論・1961 年の *On Becoming a Person* の第 4 章と第 9 章）：受け容れるほど守りが減り、経験に開かれ、変化と成長に向かえる。経験への開かれは、防衛の正反対。自分が自分にとっての大事な他者になる、という自分への肯定的な配慮。
 - **ホーナイ**（1950 年の *Neurosis and Human Growth*）：理想化した自己像を追ううちに、人は現実の自己から離れる。障害が取り除かれれば、人は本性から自己実現に向かって育つ。
 - **マズロー**（1954 年・1970 年の *Motivation and Personality* の自己実現する人の章・1962 年の *Toward a Psychology of Being* の防衛と成長の章）：自己実現する人は、人の弱さや悪さを、自然を受け容れるように受け容れ、守りが少ない。成長は安全から生まれ、守りが固いのには理由がある。
 - **ウィニコット**（1960 年の "Ego distortion in terms of true and false self"）：偽りの自己は、本当の自己を隠して守る働きをする。応えてくれる環境があると、本当の自己が生き始める。
