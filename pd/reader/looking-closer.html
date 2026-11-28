@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/looking-closer.html を直接編集しないでください。
+  正本:   knowledge/research/looking-closer/READER-looking-closer.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「細かく見ていくと、何が起きるか」のページです（工事中）。電子のような小さなものをどこまでも細かく見ていくと何が起きるか、古典と量子の境目はどこにあるか、という問いに、Hilgevoord & Uffink の SEP「The Uncertainty Principle」§2.2、ノースウェスタン大学 Gabrielse 研究室の電子の内部構造の探索のページ、Yang ほか 2018（PRL 121, 212001）、ラトガース大学の講義資料（水素原子の確率分布）、NIST の CODATA 2022 の値、Álvarez-Gaumé & Vázquez-Mozo の講義録、L3 2000（PLB 476, 40）、Zurek 2002（Los Alamos Science 27）から答える。原典はどれも本文で照合した。
+  物理の主張は、教科書の事実（不確定性・水素原子・コンプトン波長）と、実験の結果（電子の大きさの上限・α の変わり方）と、一つの研究の計算（陽子の質量の内訳）を書き分けた。
+  pjdhiro 本人の言葉は「pjdhiro の見方：」で引用。メタ認知を電子を細かく見ていく作業に重ねるのは pjdhiro のたとえで、物理の主張ではない。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>細かく見ていくと、何が起きるか | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/looking-closer.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="電子をどこまでも細かく見ていくと何が起きるかを、教科書・講義録・論文で照らしてまとめた独立ページ。ハイゼンベルクの顕微鏡（見ること自体が相手を変える）、電子の大きさの上限（2×10⁻²⁰ m より小さい）と陽子の質量の内訳（格子 QCD）、水素原子の電子の雲（確率の密度は中心でいちばん高い）、コンプトン波長と対生成・真空の偏極で近づくほど大きく見える電荷（LEP の L3 の測定）、デコヒーレンス（古典と量子の境目は大きさだけでは決まらない）を扱い、pjdhiro がメタ認知を電子を細かく見ていく作業にたとえたところへつなぐ。">
+    <meta property="og:title" content="細かく見ていくと、何が起きるか">
+    <meta property="og:description" content="電子をどこまでも細かく見ていくと何が起きるかを、教科書・講義録・論文で照らしてまとめた独立ページ。ハイゼンベルクの顕微鏡（見ること自体が相手を変える）、電子の大きさの上限（2×10⁻²⁰ m より小さい）と陽子の質量の内訳（格子 QCD）、水素原子の電子の雲（確率の密度は中心でいちばん高い）、コンプトン波長と対生成・真空の偏極で近づくほど大きく見える電荷（LEP の L3 の測定）、デコヒーレンス（古典と量子の境目は大きさだけでは決まらない）を扱い、pjdhiro がメタ認知を電子を細かく見ていく作業にたとえたところへつなぐ。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/looking-closer.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="細かく見ていくと、何が起きるか">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-28">
+    <meta property="article:modified_time" content="2026-11-28">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "細かく見ていくと、何が起きるか",
+          "description": "電子をどこまでも細かく見ていくと何が起きるかを、教科書・講義録・論文で照らしてまとめた独立ページ。ハイゼンベルクの顕微鏡（見ること自体が相手を変える）、電子の大きさの上限（2×10⁻²⁰ m より小さい）と陽子の質量の内訳（格子 QCD）、水素原子の電子の雲（確率の密度は中心でいちばん高い）、コンプトン波長と対生成・真空の偏極で近づくほど大きく見える電荷（LEP の L3 の測定）、デコヒーレンス（古典と量子の境目は大きさだけでは決まらない）を扱い、pjdhiro がメタ認知を電子を細かく見ていく作業にたとえたところへつなぐ。",
+          "keywords": "電子, 素粒子, 量子, 古典, ハイゼンベルクの顕微鏡, 不確定性, 電子の大きさ, 陽子の質量, 格子QCD, 水素原子, 電子の雲, コンプトン波長, 対生成, 真空の偏極, 微細構造定数, デコヒーレンス, メタ認知, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/looking-closer.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/looking-closer.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-28",
+          "dateModified": "2026-11-28",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "電子"}, {"@type": "Thing", "name": "量子力学"}, {"@type": "Thing", "name": "デコヒーレンス"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用したたとえの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「細かく見ていくと、何が起きるか」のページです（工事中）。電子をどこまでも細かく見ていくと何が起きるかを、教科書・講義録・論文で照らしてまとめた独立ページ。ハイゼンベルクの顕微鏡（見ること自体が相手を変える）、電子の大きさの上限（2×10⁻²⁰ m より小さい）と陽子の質量の内訳（格子 QCD）、水素原子の電子の雲（確率の密度は中心でいちばん高い）、コンプトン波長と対生成・真空の偏極で近づくほど大きく見える電荷（LEP の L3 の測定）、デコヒーレンス（古典と量子の境目は大きさだけでは決まらない）を扱い、pjdhiro がメタ認知を電子を細かく見ていく作業にたとえたところへつなぐ。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>細かく見ていくと、何が起きるか</h1>
+                <p class="reader-subtitle">電子を細かく見ていった先の、古典と量子の境目</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-28 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/looking-closer/READER-looking-closer.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<div class="reader-lead glow-card" id="lc-gist"><span class="reader-lead__label">ざっくりいうと</span>
+<p>電子を、どこまでも細かく見ていくと、何が見えてくるのでしょうか。物理の答えは、見ること自体が相手を変え、底は見つからず、ある細かさから先は「一個の粒」という像が崩れる、というものです。</p>
+<p>pjdhiro は、自分を分けていくメタ認知を、この作業にたとえています。このページは、そのたとえの物理の側を、Claude が教科書や論文で調べて書いたものです。</p>
+<p>古典の見え方と量子の見え方の境目が、思ったほどくっきりした線ではないことも見えてきます。</p>
+</div>
+
+<p class="reader-summary__title" id="overview">概要</p>
+
+<div class="reader-lead"><span class="reader-lead__label">問い</span>
+電子のような小さなものを、どこまでも細かく見ていくと、何が起きるのか。古典の世界と量子の世界の境目は、どこにあるのか。
+</div>
+
+<div class="reader-lead"><span class="reader-lead__label">今の答え</span>
+細かく見るには波長の短い光を当てる必要があり、当てるほど相手は弾かれて変わります。電子には、どれだけ細かく調べても内部の構造が見つかっていません。電子をコンプトン波長ほどの範囲に閉じ込めようとすると、電子と陽電子の対が生まれうるようになり、電荷も近づくほど大きく見えます。古典と量子の境目は大きさだけでは決まらず、まわりとの関わり合いで、量子のふるまいが少しずつ薄れていくところに現れます。
+</div>
+
+<details class="sec" id="見ること自体が相手を変え始める"><summary>見ること自体が、相手を変え始める</summary><div class="secbody">
+<p><a id="lc-microscope"></a>小さなものを細かく見るには、波長の短い光を当てる必要があります。波長が長いままでは、その長さより細かい所を見分けられないからです。</p>
+<p>ハイゼンベルクは 1927 年の論文で、ガンマ線の顕微鏡で電子の位置を測る思考実験を置きました。光が電子に当たると、電子ははね返され（コンプトン効果）、運動量が乱されます。波長を短くするほど位置は細かく決まりますが、その分、電子が受ける運動量の変化も大きくなります。位置を細かく決めるほど運動量は分からなくなる、という不確定性の関係が、ここから導かれました。</p>
+<p>見ることは、相手に何かを当てることでもあります。細かく見ようとするほど、当てるものの力が強くなり、見られる側は大きく変わります。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>Hilgevoord, J. &amp; Uffink, J. "The Uncertainty Principle", <em>Stanford Encyclopedia of Philosophy</em>（2001 年初出・2016 年改訂。<a href="https://plato.stanford.edu/entries/qt-uncertainty/">SEP の本文</a>。本文照合済）：§2.2「Heisenberg's argument」。顕微鏡の測定の細かさは照らす光の波長で限られること、ガンマ線のような短い波長では「the Compton effect cannot be ignored」こと、電子が「suffers a recoil which disturbs its momentum」こと。同じ項は、この形の議論が不十分であることと、ハイゼンベルクが 1930 年のシカゴの講義で改めたことも論じています。</p>
+</details>
+
+</div></details><details class="sec" id="分けても底が見つからない"><summary>分けても、底が見つからない</summary><div class="secbody">
+<p><a id="lc-size"></a>電子には、どれだけ細かく調べても、内部の構造が見つかっていません。ノースウェスタン大学の Gabrielse 研究室は、電子の大きさに上限を付ける二つの測り方を紹介しています。一つは、電子の磁気モーメントの精密な測定が、理論の予測と合うことから上限を付ける方法です。もう一つは、ヨーロッパの加速器 LEP で、10 TeV のエネルギーの尺度まで電子の構造を探したもので、半径は 2×10<sup>−20</sup> メートルより小さい、とされています。分けても分けても、「これが芯だ」という部品は出てきていません。</p>
+<p>電子より大きな陽子では、中に部品があります。けれど、陽子の重さは、部品の重さを足したものになっていません。陽子の質量は 938 MeV で、中の価クォーク（陽子の性質を決めている三つのクォーク）の質量は、一つあたり約 3 MeV です。三つを合わせても、陽子の 1% ほどです。</p>
+<p>格子 QCD（クォークとグルーオンの理論を、計算機の上で解く方法）で陽子の質量を分けた一つの研究では、クォークのエネルギーが約 33%、グルーオンの場のエネルギーが約 37%、トレース・アノマリーと呼ばれる量子の効果が約 23%、クォークの質量に関わる項が約 9% でした。陽子の重さの大部分は、中の部品そのものの重さでなく、中で動いているクォークとグルーオンのエネルギーから来ている、という結果です。</p>
+<details class="acc"><summary>出典</summary>
+
+<p><a href="https://cfp.physics.northwestern.edu/gabrielse-group/electron-substructure.html">電子の内部構造の探索</a>（ノースウェスタン大学 Gabrielse 研究室。本文照合済）：磁気モーメント（g/2）の測定と QED の予測の一致から構成粒子の質量と半径に上限を付けること、LEP での接触相互作用の探索が「probes for electron structure at the 10 TeV energy scale」こと、その結果の R &lt; 2×10<sup>−20</sup> m（D. Bourilkov, <em>Phys. Rev. D</em> 64, 071701R, 2001 として引かれている）。</p>
+<p><a href="https://doi.org/10.1103/PhysRevLett.121.212001">Yang, Y.-B. et al.（χQCD Collaboration）(2018)</a> "Proton Mass Decomposition from the QCD Energy Momentum Tensor", <em>Phys. Rev. Lett.</em> 121, 212001（<a href="https://arxiv.org/abs/1808.08677">arXiv の写し</a>。本文照合済）：要旨の quark energy 33(4)(4)%・glue field energy 37(5)(4)%・trace anomaly の四分の一 23(1)(1)%・u・d・s のスカラー凝縮 9(2)(1)%（MS‾ スキーム、µ = 2 GeV）。序論の「The masses of the valence quarks in the proton are just ∼3 MeV per quark …, while the total proton mass is 938 MeV」。「1% ほど」は、この二つの数から Claude が割り算したもの。</p>
+</details>
+
+</div></details><details class="sec" id="原子は小さな太陽系ではない"><summary>原子は、小さな太陽系ではない</summary><div class="secbody">
+<p><a id="lc-cloud"></a>原子を、太陽のまわりを惑星が回るような、小さな太陽系として思い描く絵があります。けれど、量子力学では、電子の居場所は確率の密度で表され、原子核のまわりに雲のように広がります。</p>
+<p>水素原子のいちばん低いエネルギーの状態（基底状態）では、確率の密度がいちばん高い点は、原子核のある中心そのものです。一方、中心からの距離ごとに薄い殻に分けて数えると、電子がいちばん見つかりやすい殻は、ボーア半径の殻になります。殻は外へ行くほど広くなるので、点としては中心がいちばん濃く、殻としてはボーア半径がいちばん多い、という二つが両立します。</p>
+<p>中心は、電子が避けて回る場所ではなく、いちばん濃いところでした。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>Sean Oh, <em>Quantum Mechanics and Atomic Physics</em>, Lecture 17「Hydrogen Atom Probability Distribution」（ラトガース大学 Physics 361 の講義資料。<a href="https://www.physics.rutgers.edu/~ohsean/361/Lectures/lecture17.pdf">講義資料の PDF</a>。本文照合済）：「We have an electron cloud around the nucleus.」、基底状態（1,0,0）で「What is the position of the highest probability density? r=0」、殻の体積 4πr<sup>2</sup>Δr で数えた「rmp in the ground state of Hydrogen is exactly one Bohr radius!」。</p>
+</details>
+
+</div></details><details class="sec" id="ある細かさを越えると一個の電子という像が崩れる"><summary>ある細かさを越えると、「一個の電子」という像が崩れる</summary><div class="secbody">
+<p><a id="lc-compton"></a>電子のコンプトン波長は、約 2.426×10<sup>−12</sup> メートルです。これを 2π で割った換算コンプトン波長は、約 3.862×10<sup>−13</sup> メートルです。</p>
+<p>電子を、換算コンプトン波長ほどの範囲に閉じ込めようとすると、不確定性の関係から、エネルギーのゆらぎが電子の静止エネルギーほどの大きさになります。相対論のもとでは、このゆらぎで、真空から電子と陽電子の対が生まれうるようになります。そこから先は、一個の電子だけを取り出して見ている、とは言えなくなります。</p>
+<p><a id="lc-screening"></a>場の量子論では、電荷のまわりには、生まれては消える電子と陽電子の対がたくさんある、と描かれます。この対は、誘電体の中の双極子のようにはたらいて電荷を遮り、遠くから見た電荷を小さくします。そのため、近づくほど、つまり高いエネルギーで調べるほど、電荷は大きく見えます。</p>
+<p>この電荷の変わり方は、加速器の実験で測られています。LEP の L3 実験は、電子と陽電子の散乱を使い、運動量の受け渡しが大きいほど、電磁気の力の強さ（実効的な微細構造定数）が大きくなることを測り、理論の予測と合うことを確かめました。</p>
+<details class="acc"><summary>詳しく — 微細構造定数の値の変わり方</summary>
+
+<p>電磁気の力の強さを表す微細構造定数 α は、ふだんの低いエネルギーでは逆数が約 137.036 です。L3 の論文の序論は、Z 粒子の質量の尺度では、ほかの測定から見積もった値として逆数が 128.886 ± 0.090 になる、と書いています。L3 自身の測定では、運動量の受け渡しの二乗が 12.25 GeV<sup>2</sup> のときと 3434 GeV<sup>2</sup> のときで、逆数の差が 3.80 ± 1.29 でした。逆数が小さくなるほど、力は強くなります。</p>
+</details>
+
+<details class="acc"><summary>出典</summary>
+
+<p><a href="https://physics.nist.gov/cgi-bin/cuu/Value?ecomwl">CODATA 2022 の推奨値：電子のコンプトン波長</a>（NIST。本文照合済）：2.426 310 235 38(76)×10<sup>−12</sup> m。<a href="https://physics.nist.gov/cgi-bin/cuu/Value?ecomwlbar">換算コンプトン波長</a>（同。本文照合済）：3.861 592 6744(12)×10<sup>−13</sup> m。</p>
+<p>Álvarez-Gaumé, L. &amp; Vázquez-Mozo, M. A. "Introductory Lectures on Quantum Field Theory"（CERN-CLAF の講義をもとにした講義録。<a href="https://arxiv.org/abs/hep-th/0510040">arXiv の写し</a>・第 4 版 2013。本文照合済）：§2 の「The creation of particles is impossible to avoid whenever one tries to locate a particle of mass m within its Compton wavelength」と、Δx ∼ 1/m から ΔE ∼ m が出ること（p.9）。§8.2 の、真空の偏極で電荷のまわりに電子と陽電子の対が生まれ、「These virtual pairs behave as dipoles that, as in a dielectric medium, tend to screen this charge and decreasing its value at long distances」こと、実効的な電荷がエネルギーとともに大きくなること（pp.84–85）。</p>
+<p><a href="https://doi.org/10.1016/S0370-2693(00)00122-2">L3 Collaboration (2000)</a> "Measurement of the Running of the Fine-Structure Constant", <em>Phys. Lett. B</em> 476, 40–48（<a href="https://arxiv.org/abs/hep-ex/0002035">arXiv の写し</a>。本文照合済）：要旨の α<sup>−1</sup>(−2.1 GeV<sup>2</sup>) − α<sup>−1</sup>(−6.25 GeV<sup>2</sup>) = 0.78 ± 0.26、α<sup>−1</sup>(−12.25 GeV<sup>2</sup>) − α<sup>−1</sup>(−3434 GeV<sup>2</sup>) = 3.80 ± 1.29、「in agreement with theoretical predictions」。序論の α<sup>−1</sup>(0) = 137.035 999 76(50)、α<sup>−1</sup>(m<sub>Z</sub><sup>2</sup>) = 128.886 ± 0.090 と、この変わり方が真空の偏極の補正から来ること。</p>
+</details>
+
+</div></details><details class="sec" id="古典と量子の境目はくっきりした線ではない"><summary>古典と量子の境目は、くっきりした線ではない</summary><div class="secbody">
+<p><a id="lc-decoherence"></a>どこから量子のふるまいになり、どこから古典のふるまいになるのか。はっきりした目安は見つかっていません。大きなものは古典、と見なす考え方もありましたが、重さが一トンにもなる低温の重力波の検出器を、量子の振動子として扱わなければならない例が出てきました。大きさだけでは決まらない、ということです。</p>
+<p>ツェー（1970 年）とズレック（1981・1982 年）らが進めたデコヒーレンスの考え方では、大きなものは、まわり（環境）から切り離されていることがありません。まわりと関わり合ううちに、重ね合わせという量子のふるまいがまわりへ漏れ出し、古典のように見えるふるまいが現れます。</p>
+<p>漏れ出しにかかる時間は、質量や温度、重ね合わせた位置の離れ方で大きく変わります。ズレックの見積もりでは、室温で 1 グラムのものを 1 センチ離した重ね合わせは、10<sup>−23</sup> 秒ほどで失われます。電子では、この時間が、原子の大きさで起きる出来事の時間よりずっと長くなりえます。量子か古典かは、物の種類で決まる二択ではなく、まわりとの関わり合いの度合いで移っていきます。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>Zurek, W. H. (2002) "Decoherence and the Transition from Quantum to Classical—Revisited", <em>Los Alamos Science</em> 27, 2–25（1991 年の <em>Physics Today</em> の記事を改めたもの。<a href="https://arxiv.org/abs/quant-ph/0306072">arXiv の写し</a>。本文照合済）：「In the absence of a crisp criterion to distinguish between quantum and classical, an identification of the classical with the macroscopic has often been tentatively accepted.」と、一トンにもなる低温のウェーバー棒を量子の調和振動子として扱う例（p.4）、「Macroscopic systems are never isolated from their environments」とツェー（1970）・ズレック（1981・1982）（p.5）、デコヒーレンスによる有効な境目（p.6）、T = 300 K・m = 1 g・Δx = 1 cm で τ<sub>D</sub> ∼ 10<sup>−23</sup> 秒、電子ではずっと長くなりうること（pp.13–14）。</p>
+</details>
+
+</div></details><details class="sec" id="このサイトでこの話を使っているところ"><summary>このサイトで、この話を使っているところ</summary><div class="secbody">
+<p><a id="lc-used"></a>この話は、メタ認知を説明するたとえとして使われています。pjdhiro は、メタ認知をどう説明するかを話す中で、この作業を挙げています。</p>
+<blockquote class="reader-callout reader-request">
+<p><strong>pjdhiro の見方：</strong>メタ認知とは、自分を分けていく作業でもあるはずです。止観して、自分の中を対象として指さすように観ていくと、最後に観察する私が残る。それすらも観ようとするところから、観る私と観られる私が同じになる。分けられなくなる。そこからのプロセスは、古典から量子論に変わるような、違う感覚になる。私がメタ認知を説明するとしたら、比喩として最も近いのは、電子をどこまでも細かく見ていく作業に似ていると思う。</p>
+</blockquote>
+<p>このたとえで重ねているのは、細かく見ようとするほど見ること自体が相手を変え、分けていった先で分けられなくなる、という作業の形です。物理の結果を、心の側の論拠にしているのではありません。</p>
+<ul>
+<li>「<a href="gravity-love.html#gl-manager">愛は、重力に似ていないか</a>」の 4 章：意思決定から Being 的なものを切り分けていく作業を、メタ認知と、電子を細かく見ていく作業に重ねているところ。</li>
+</ul>
+</content>
+</invoke>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="gravity-love.html">愛は、重力に似ていないか</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

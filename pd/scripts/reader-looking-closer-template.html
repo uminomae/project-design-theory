@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/looking-closer.html を直接編集しないでください。
+  正本:   knowledge/research/looking-closer/READER-looking-closer.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「細かく見ていくと、何が起きるか」のページです（工事中）。電子のような小さなものをどこまでも細かく見ていくと何が起きるか、古典と量子の境目はどこにあるか、という問いに、Hilgevoord & Uffink の SEP「The Uncertainty Principle」§2.2、ノースウェスタン大学 Gabrielse 研究室の電子の内部構造の探索のページ、Yang ほか 2018（PRL 121, 212001）、ラトガース大学の講義資料（水素原子の確率分布）、NIST の CODATA 2022 の値、Álvarez-Gaumé & Vázquez-Mozo の講義録、L3 2000（PLB 476, 40）、Zurek 2002（Los Alamos Science 27）から答える。原典はどれも本文で照合した。
+  物理の主張は、教科書の事実（不確定性・水素原子・コンプトン波長）と、実験の結果（電子の大きさの上限・α の変わり方）と、一つの研究の計算（陽子の質量の内訳）を書き分けた。
+  pjdhiro 本人の言葉は「pjdhiro の見方：」で引用。メタ認知を電子を細かく見ていく作業に重ねるのは pjdhiro のたとえで、物理の主張ではない。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>細かく見ていくと、何が起きるか | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/looking-closer.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="電子をどこまでも細かく見ていくと何が起きるかを、教科書・講義録・論文で照らしてまとめた独立ページ。ハイゼンベルクの顕微鏡（見ること自体が相手を変える）、電子の大きさの上限（2×10⁻²⁰ m より小さい）と陽子の質量の内訳（格子 QCD）、水素原子の電子の雲（確率の密度は中心でいちばん高い）、コンプトン波長と対生成・真空の偏極で近づくほど大きく見える電荷（LEP の L3 の測定）、デコヒーレンス（古典と量子の境目は大きさだけでは決まらない）を扱い、pjdhiro がメタ認知を電子を細かく見ていく作業にたとえたところへつなぐ。">
+    <meta property="og:title" content="細かく見ていくと、何が起きるか">
+    <meta property="og:description" content="電子をどこまでも細かく見ていくと何が起きるかを、教科書・講義録・論文で照らしてまとめた独立ページ。ハイゼンベルクの顕微鏡（見ること自体が相手を変える）、電子の大きさの上限（2×10⁻²⁰ m より小さい）と陽子の質量の内訳（格子 QCD）、水素原子の電子の雲（確率の密度は中心でいちばん高い）、コンプトン波長と対生成・真空の偏極で近づくほど大きく見える電荷（LEP の L3 の測定）、デコヒーレンス（古典と量子の境目は大きさだけでは決まらない）を扱い、pjdhiro がメタ認知を電子を細かく見ていく作業にたとえたところへつなぐ。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/looking-closer.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="細かく見ていくと、何が起きるか">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-28">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "細かく見ていくと、何が起きるか",
+          "description": "電子をどこまでも細かく見ていくと何が起きるかを、教科書・講義録・論文で照らしてまとめた独立ページ。ハイゼンベルクの顕微鏡（見ること自体が相手を変える）、電子の大きさの上限（2×10⁻²⁰ m より小さい）と陽子の質量の内訳（格子 QCD）、水素原子の電子の雲（確率の密度は中心でいちばん高い）、コンプトン波長と対生成・真空の偏極で近づくほど大きく見える電荷（LEP の L3 の測定）、デコヒーレンス（古典と量子の境目は大きさだけでは決まらない）を扱い、pjdhiro がメタ認知を電子を細かく見ていく作業にたとえたところへつなぐ。",
+          "keywords": "電子, 素粒子, 量子, 古典, ハイゼンベルクの顕微鏡, 不確定性, 電子の大きさ, 陽子の質量, 格子QCD, 水素原子, 電子の雲, コンプトン波長, 対生成, 真空の偏極, 微細構造定数, デコヒーレンス, メタ認知, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/looking-closer.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/looking-closer.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-28",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "電子"}, {"@type": "Thing", "name": "量子力学"}, {"@type": "Thing", "name": "デコヒーレンス"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用したたとえの言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「細かく見ていくと、何が起きるか」のページです（工事中）。電子をどこまでも細かく見ていくと何が起きるかを、教科書・講義録・論文で照らしてまとめた独立ページ。ハイゼンベルクの顕微鏡（見ること自体が相手を変える）、電子の大きさの上限（2×10⁻²⁰ m より小さい）と陽子の質量の内訳（格子 QCD）、水素原子の電子の雲（確率の密度は中心でいちばん高い）、コンプトン波長と対生成・真空の偏極で近づくほど大きく見える電荷（LEP の L3 の測定）、デコヒーレンス（古典と量子の境目は大きさだけでは決まらない）を扱い、pjdhiro がメタ認知を電子を細かく見ていく作業にたとえたところへつなぐ。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>細かく見ていくと、何が起きるか</h1>
+                <p class="reader-subtitle">電子を細かく見ていった先の、古典と量子の境目</p>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/looking-closer/READER-looking-closer.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="gravity-love.html">愛は、重力に似ていないか</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

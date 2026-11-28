@@ -1,9 +1,9 @@
 {
  "counts": {
-  "pages": 109,
-  "mapped_pages": 91,
+  "pages": 112,
+  "mapped_pages": 94,
   "sho": 296,
-  "touched": 39,
+  "touched": 40,
   "chu": 66,
   "chu_touched": 18,
   "dai": 13,
@@ -174,7 +174,9 @@
       {
        "id": "02030",
        "name": "文学一般",
-       "pages": []
+       "pages": [
+        "negative-capability"
+       ]
       },
       {
        "id": "02040",
@@ -686,7 +688,8 @@
         "helmholtz-erhaltung-der-kraft-ja",
         "herapath-mathematical-physics-ja",
         "kronig-theorie-der-gase-ja",
-        "maxwell-dynamical-theory-of-gases-ja"
+        "maxwell-dynamical-theory-of-gases-ja",
+        "looking-closer"
        ]
       },
       {
@@ -803,7 +806,9 @@
        "name": "素粒子、原子核、宇宙線および宇宙物理にする理論",
        "pages": [
         "gravity-love",
-        "gravity-well"
+        "gravity-well",
+        "einstein-rosen-bridge",
+        "looking-closer"
        ]
       },
       {
@@ -2378,6 +2383,9 @@
   "zen-circle-hs": "禅の円を、高校の数学で読む",
   "julia-potential-hs": "起業家の進み方と、ジュリア集合の式",
   "nonaka-complement-hs": "やさしく読む 野中の知識創造",
-  "inseparable-abilities": "思考・心理・身体知が分けられないところ"
+  "inseparable-abilities": "思考・心理・身体知が分けられないところ",
+  "einstein-rosen-bridge": "つながっているのに、通れない橋",
+  "looking-closer": "細かく見ていくと、何が起きるか",
+  "negative-capability": "ネガティブ・ケイパビリティとは"
  }
 }
