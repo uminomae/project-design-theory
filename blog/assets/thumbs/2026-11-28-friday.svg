@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="石のかたまりの中に、金・土・日の三つの丸">
+  <rect width="1200" height="630" fill="#e9e6df"/>
+  <path d="M170 520 L215 175 L395 110 L640 92 L870 128 L1030 190 L1050 470 L905 548 L560 566 L300 556 Z" fill="#d3cec4"/>
+  <path d="M215 175 L395 110 L640 92 L870 128 L1030 190 L860 214 L600 196 L380 220 Z" fill="#ddd9d0"/>
+  <path d="M1030 190 L1050 470 L905 548 L870 240 Z" fill="#c6c0b5"/>
+  <g fill="none" stroke="#2f4a6d" stroke-width="6">
+    <circle cx="420" cy="370" r="78"/>
+    <circle cx="610" cy="370" r="78"/>
+  </g>
+  <circle cx="800" cy="370" r="78" fill="#2f4a6d"/>
+  <g stroke="#8d877c" stroke-width="4" stroke-linecap="round">
+    <line x1="510" y1="370" x2="520" y2="370"/>
+    <line x1="700" y1="370" x2="710" y2="370"/>
+  </g>
+  <g font-family="'Noto Serif JP','Hiragino Mincho ProN','Yu Mincho',serif" font-size="72" text-anchor="middle" dominant-baseline="central">
+    <text x="420" y="372" fill="#2f4a6d">金</text>
+    <text x="610" y="372" fill="#2f4a6d">土</text>
+    <text x="800" y="372" fill="#f7f4ee">日</text>
+  </g>
+  <g stroke="#a39d92" stroke-width="2" fill="none" opacity="0.7">
+    <path d="M250 300 l40 -18 l30 26"/>
+    <path d="M940 300 l30 40 l-22 40"/>
+    <path d="M560 520 l60 -14 l50 12"/>
+  </g>
+</svg>

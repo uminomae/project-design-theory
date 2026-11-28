@@ -1,0 +1,104 @@
+/*
+ * blog/ の土台：要素そのものの見た目（本文・見出し・リンク・表・コード）。
+ * 値は tokens.css の --bl-* だけを使う。
+ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bl-bg);
+  color: var(--bl-ink);
+  font-family: var(--bl-font-body);
+  font-size: var(--bl-size-base);
+  line-height: var(--bl-leading-body);
+  letter-spacing: var(--bl-tracking-body);
+  font-feature-settings: "palt" 0;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  line-break: strict;
+}
+
+h1, h2, h3, h4 {
+  line-height: var(--bl-leading-tight);
+  letter-spacing: var(--bl-tracking-heading);
+  font-weight: 500;
+  margin: 0;
+}
+
+p { margin: 0 0 1.2em; }
+
+a {
+  color: var(--bl-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+  transition: color var(--bl-transition);
+}
+a:hover { text-decoration-thickness: 2px; }
+
+:focus-visible {
+  outline: 2px solid var(--bl-focus);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+img, svg, video { max-width: 100%; height: auto; }
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--bl-rule);
+  margin: var(--bl-space-7) 0;
+}
+
+code, kbd, samp {
+  font-family: var(--bl-font-mono);
+  font-size: 0.9em;
+  background: var(--bl-code-bg);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+
+pre {
+  font-family: var(--bl-font-mono);
+  font-size: var(--bl-size-sm);
+  line-height: 1.7;
+  background: var(--bl-code-bg);
+  padding: var(--bl-space-4);
+  border-radius: var(--bl-radius);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  margin: 0 0 1.5em;
+}
+pre code { background: none; padding: 0; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--bl-font-ui);
+  font-size: var(--bl-size-sm);
+  line-height: 1.7;
+  margin: 0 0 1.5em;
+}
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: var(--bl-space-2) var(--bl-space-3);
+  border-bottom: 1px solid var(--bl-rule);
+}
+th { font-weight: 500; color: var(--bl-ink-sub); }
+
+ul, ol { padding-left: 1.4em; margin: 0 0 1.2em; }
+li + li { margin-top: 0.3em; }
+
+.bl-visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
