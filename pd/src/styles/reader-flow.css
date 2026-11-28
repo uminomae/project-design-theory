@@ -732,3 +732,22 @@ body.reader-flow .rmap-tag.is-s { background: rgba(138, 112, 64, 0.16); }
 body.reader-flow .rmap-tag.is-none { color: var(--mid); }
 body.reader-flow .rmap-items li:target { background: rgba(214, 170, 60, 0.18); }
 body.reader-flow .rmap-list li { margin: 0.2rem 0; }
+
+/* 四列の段階の表（kousou「発達段階ごとに、構想はどう受け取られうるか」）：狭い幅では一行を一枚に積み、二列目からは列の名を頭に出す（cf-stack と同じ形・2026-11-28） */
+@media (max-width: 600px) {
+    body.reader-flow .reader-article .tablefit.ks-stack thead { display: none; }
+    body.reader-flow .reader-article .tablefit.ks-stack table,
+    body.reader-flow .reader-article .tablefit.ks-stack tbody,
+    body.reader-flow .reader-article .tablefit.ks-stack tr,
+    body.reader-flow .reader-article .tablefit.ks-stack td { display: block; width: auto; }
+    body.reader-flow .reader-article .tablefit.ks-stack tr { border-bottom: 1px solid var(--glass-border-soft); padding: 10px 12px; }
+    body.reader-flow .reader-article .tablefit.ks-stack tbody tr:last-child { border-bottom: none; }
+    body.reader-flow .reader-article .tablefit.ks-stack td { border-bottom: none; padding: 2px 0; }
+    body.reader-flow .reader-article .tablefit.ks-stack td:first-child { width: auto; font-weight: 500; }
+    body.reader-flow .reader-article .tablefit.ks-stack td:nth-child(n+2)::before {
+        display: block; font-size: 0.72rem; color: var(--navy); opacity: 0.7; margin-top: 6px;
+    }
+    body.reader-flow .reader-article .tablefit.ks-stack td:nth-child(2)::before { content: "先の時間の見え方（原典）"; }
+    body.reader-flow .reader-article .tablefit.ks-stack td:nth-child(3)::before { content: "主な不安（原典）"; }
+    body.reader-flow .reader-article .tablefit.ks-stack td:nth-child(4)::before { content: "構想の受け取られ方（推測）"; }
+}
