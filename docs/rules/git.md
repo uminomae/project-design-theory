@@ -10,5 +10,6 @@ CLAUDE.md から 2026-11-19 に移した。毎回自動で入る CLAUDE.md を�
 - 公開の判断を待つ別のセッションの変更が develop にあって、自分の commit だけを載せた枝で main に送ったとき（cs の記録など）は、main に develop に無い commit ができる。送ったあとに、本体の checkout で `git fetch origin`、続けて `git merge origin/main` を単独で回し、develop に戻し入れて push する（`.claude/` が入るならサンドボックスの外で。2026-11-10 までに develop で 4 回行われている）。戻さないと、次の `develop:main` が早送りにならない（2026-11-10）。
 - 公開は GitHub Actions（`.github/workflows/pages.yml`）。出すのはサイトのファイルだけ。
 - サイトのファイルを直したら、commit の前に `bash scripts/check.sh` を走らせる（旧 repo へのリンク・読み物の内部アンカー・wiki・as と ks のテスト・文字化け）。同じものを `.github/workflows/check.yml` が develop と main で走らせる。何を機械で見て、何を画面で見て、何がまだ無いかは `docs/TESTING.md`。
+- commit の文には、何を直したかと、なぜか（決めた見方や決まりを一般にした一行）だけを書く。pjdhiro の発言の原文（pjdhiro「…」）と、それが出た場面は書かない。チャットは Claude との作業で、公開の repo の履歴に残すものとは別（2026-11-28）。`.githooks/commit-msg` が、commit の文に `pjdhiro「` があると止める。
 - commit の末尾：`Co-Authored-By: Claude <noreply@anthropic.com>`
 - 初回だけ `git config core.hooksPath .githooks` を実行して、公開前の点検を有効にする。
