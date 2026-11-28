@@ -36,5 +36,5 @@ pjdhiro「たくさんあるテストコードの一つですよ。私の論で�
 
 ## 出典
 
-- 対話録 `knowledge/notes/dialogue/2026-11-05-claude-common-sense-alignment-vortex-field.md` §6・§10
+- 対話録 `dialogues/notes-dialogue/2026-11-05-claude-common-sense-alignment-vortex-field.md`（手元・git に入らない） §6・§10
 - `README.md` §0・§1（最大の貢献・意思決定にもたらすもの）

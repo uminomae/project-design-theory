@@ -42,7 +42,7 @@
 
 ## 補強（2026-11-03・Q&A Filing・pjdhiro 承認）: 欠損への気づき＝ゼロの場所で湧く信号を「何？」と問うこと
 
-出典: 対話録 `knowledge/notes/dialogue/2026-11-03-non-duality-love-gravity-signals.md` §3・§4（pd#138）。
+出典: 対話録 `dialogues/notes-dialogue/2026-11-03-non-duality-love-gravity-signals.md`（手元・git に入らない） §3・§4（pd#138）。
 
 > **pjdhiro**: 欠損駆動のコサイン 90 度はまさにその解説がしっくりくる。なぜゼロに虚軸を観れるのか？は、臍の緒の安定感は感じているから、というのは一つだし、全てかもしれない。だから as repo で生存と信頼の信号について追っていた。**その信号がゼロの場所で沸いてしまうとしたら何？と思うことが、欠損への気づき**だと思う。
 
@@ -65,7 +65,7 @@
 
 ## 補強（2026-11-05・Q&A Filing・pjdhiro 承認「3件とも反映」）: Love駆動＝時間と質量の相対性理論／開発＝量子論 — 構造類似を探して発想のヒントにする
 
-出典: 対話録 `knowledge/notes/dialogue/2026-11-05-time-as-driving-source-gravity-mass-time.md` §24（Session 20261105-750）。新設 [CN-032](CN-032_time-as-driving-source-light-cone.md)。
+出典: 対話録 `dialogues/notes-dialogue/2026-11-05-time-as-driving-source-gravity-mass-time.md`（手元・git に入らない） §24（Session 20261105-750）。新設 [CN-032](CN-032_time-as-driving-source-light-cone.md)。
 
 - **pjdhiro の見立て**: 「創造の構造とプロセスはかなり量子論と似てる。Love駆動開発はの駆動源は相対性理論や質量にヒントが詰まってる。開発は創造のプロセスが近い。」「いや、本当に、相対性理論が駆動源を説明し、量子論が開発を説明するかもしれないと本気で妄想している。似てる。」「Love駆動=時間と質量の相対性理論　開発=量子論」
 - **構えは変わらない**: 「あくまで構造類似を探して発想のヒントにするということね。」（11-04 の「構造が似ているかを問うというスタンスは変わりません」と同じ）。「＝」は見立ての圧縮で、公開文では「似ているかもしれない」の水準に落とす。

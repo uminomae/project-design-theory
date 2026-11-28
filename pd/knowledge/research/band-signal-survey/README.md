@@ -1,7 +1,7 @@
 # band-signal-survey — 帯 × 湧く信号の原典照合（要約）
 
 Issue: **pd#139** https://github.com/uminomae/project-design-theory/issues/16
-出典の対話: `knowledge/notes/dialogue/2026-11-03-non-duality-love-gravity-signals.md` §5・§6（pd#138）
+出典の対話: `dialogues/notes-dialogue/2026-11-03-non-duality-love-gravity-signals.md`（手元・git に入らない） §5・§6（pd#138）
 
 **本体は awareness-space に置く**（信号の正本は as）。このファイルは要約 1 枚と、表の各行への判定だけを持つ。
 

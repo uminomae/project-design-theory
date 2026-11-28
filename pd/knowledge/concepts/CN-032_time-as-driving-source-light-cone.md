@@ -3,7 +3,7 @@
 **作成日**: 2026-11-05
 **ステータス**: [S] 探索的（ベースの二文と「重力で大事なこと二つ」は pjdhiro の判定。物理の主張は三段の印〔第一段 教科書／第二段 研究の一線／第三段 Claude の読み替え〕。Love 駆動開発への配置は第三段で採否「あとで」）
 **関連**: [CN-026](CN-026_kesson-as-imaginary-axis-value-read-as-zero.md)（虚軸・本質の見立て）, [CN-009](CN-009_cut-complementary-projection.md)（切り口と相補的射影・光円錐の部位）, [CN-027](CN-027_four-repos-one-line-from-the-zero-place.md)（駆動源＝Love と呼びたいもの）, [CN-030](CN-030_vortex-wave-field-naming.md)（渦・波・場）, pd#148（自由落下とフロー）, pd#144, pd#138
-**出典**: 対話録 `knowledge/notes/dialogue/2026-11-05-time-as-driving-source-gravity-mass-time.md`（Session 20261105-750・§5・§19・§20・§25）／たとえ話集 `knowledge/research/love-driven-dev/TOOLS-three-thinking-tools.md`／図 `knowledge/research/love-driven-dev/figures/light-cone-past-light.svg`
+**出典**: 対話録 `dialogues/notes-dialogue/2026-11-05-time-as-driving-source-gravity-mass-time.md`（手元・git に入らない）（Session 20261105-750・§5・§19・§20・§25）／たとえ話集 `knowledge/research/love-driven-dev/TOOLS-three-thinking-tools.md`／図 `knowledge/research/love-driven-dev/figures/light-cone-past-light.svg`
 
 ---
 

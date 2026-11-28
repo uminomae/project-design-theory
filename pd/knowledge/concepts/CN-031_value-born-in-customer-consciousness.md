@@ -3,7 +3,7 @@
 **作成日**: 2026-11-05
 **ステータス**: [S] 探索的（中心の一文は pjdhiro の言葉・確定扱い。試案の組み立てと既存の論との対応は Claude の整理で未照合）
 **関連**: [CN-030](CN-030_vortex-wave-field-naming.md)（言葉は渦に当てた名前）, [CN-028](CN-028_good-was-conditional.md)（善とされたものは、条件付きだった）, [CN-026](CN-026_kesson-as-imaginary-axis-value-read-as-zero.md)（虚軸の値）, [CN-027](CN-027_four-repos-one-line-from-the-zero-place.md)
-**出典**: 対話録 `knowledge/notes/dialogue/2026-11-05-claude-common-sense-alignment-vortex-field.md` §4・§6・§8（Session 20261105-455・pd#144）／本文の置き場所: `reader/love-driven-dev.html` の章「価値は、顧客の意識で生まれる — 価値創造とは」／うれしさの台帳 `knowledge/research/love-driven-dev/USES.md`
+**出典**: 対話録 `dialogues/notes-dialogue/2026-11-05-claude-common-sense-alignment-vortex-field.md`（手元・git に入らない） §4・§6・§8（Session 20261105-455・pd#144）／本文の置き場所: `reader/love-driven-dev.html` の章「価値は、顧客の意識で生まれる — 価値創造とは」／うれしさの台帳 `knowledge/research/love-driven-dev/USES.md`
 
 ---
 
