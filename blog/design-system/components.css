@@ -364,6 +364,47 @@ a.bl-tag:hover { background: var(--bl-accent); color: var(--bl-bg); }
 
 /* ---------- 前後の記事 ---------- */
 
+/* 関連するページ：本文の下に、記事とつながるページをカードで置く。添え書き（__note）は、どういう関わりのリンクかを書く */
+.bl-related {
+  margin-top: var(--bl-space-7);
+  padding-top: var(--bl-space-5);
+  border-top: 1px solid var(--bl-rule);
+}
+.bl-related__title {
+  font-family: var(--bl-font-ui);
+  font-size: var(--bl-size-sm);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--bl-ink-sub);
+  margin: 0 0 var(--bl-space-3);
+}
+.bl-related__list { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--bl-space-3); }
+.bl-related__item {
+  position: relative;
+  margin: 0;
+  padding: var(--bl-space-4);
+  background: var(--bl-surface);
+  border: 1px solid var(--bl-rule);
+  border-radius: var(--bl-radius);
+  transition: border-color var(--bl-transition);
+}
+.bl-related__item:hover { border-color: var(--bl-accent); }
+.bl-related__note {
+  margin: 0 0 var(--bl-space-1);
+  font-family: var(--bl-font-ui);
+  font-size: var(--bl-size-xs);
+  color: var(--bl-ink-sub);
+}
+.bl-related__link {
+  font-size: var(--bl-size-lg);
+  line-height: var(--bl-leading-tight);
+  color: var(--bl-ink);
+  text-decoration: none;
+}
+.bl-related__link::after { content: ""; position: absolute; inset: 0; } /* カード全体を押せるように */
+.bl-related__item:hover .bl-related__link { color: var(--bl-accent); }
+.bl-related__desc { margin: var(--bl-space-2) 0 0; color: var(--bl-ink-sub); font-size: 0.94rem; line-height: 1.8; }
+
 .bl-pager {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -52,21 +52,34 @@
           <li><a class="bl-tag" href="../?tag={{タグ}}">#{{タグ}}</a></li>
         </ul>
       </div>
-      <!-- 解説を窓で出すとき（要らなければ、この div と下の dialog を消す） -->
+      <!-- 解説を窓で出すとき（要らなければ、この div と下の dialog を消す）。SNS の投稿を元にした記事でも、ボタンと窓の帯は「この記事の解説」と書く -->
       <div class="bl-post__actions">
-        <button type="button" class="bl-open-dialog" data-bl-open="kaisetsu">この投稿の解説</button>
+        <button type="button" class="bl-open-dialog" data-bl-open="kaisetsu">この記事の解説</button>
       </div>
     </header>
 
     <div class="bl-post__body">
       <p>{{本文}}</p>
     </div>
+
+    <!-- 関連するページ（要らなければ、この section を消す）。SNS の投稿の末尾のリンクは本文に残さず、ここへ移す。
+         __note はどういう関わりのリンクか（投稿の末尾の添え書きがあれば、その言葉）、__desc は行き先のページの題・副題・冒頭の言葉から取る -->
+    <section class="bl-related" aria-labelledby="related-title">
+      <h2 class="bl-related__title" id="related-title">関連するページ</h2>
+      <ul class="bl-related__list">
+        <li class="bl-related__item">
+          <p class="bl-related__note">{{どういう関わりのリンクか}}</p>
+          <a class="bl-related__link" href="{{行き先（このサイトのページは ../../reader/… の相対パス）}}">{{行き先の題}}</a>
+          <p class="bl-related__desc">{{何のページかを一行}}</p>
+        </li>
+      </ul>
+    </section>
   </article>
 </main>
 
 <dialog class="bl-dialog" id="kaisetsu" aria-labelledby="kaisetsu-title">
   <div class="bl-dialog__bar">
-    <span id="kaisetsu-title">この投稿の解説</span>
+    <span id="kaisetsu-title">この記事の解説</span>
     <button type="button" class="bl-dialog__close" data-bl-close>閉じる</button>
   </div>
   <div class="bl-dialog__body">

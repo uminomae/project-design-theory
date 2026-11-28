@@ -53,6 +53,7 @@
 | `bl-wide` | 本文の柱より広く出す図・表 |
 | `bl-details`（`__body`） | 畳み（詳しく） |
 | `bl-sources` | 出典 |
+| `bl-related`（`__title`・`__list`・`__item`・`__note`・`__link`・`__desc`） | 本文の下の「関連するページ」。一件ごとのカードに、どういう関わりのリンクかの添え書き（`__note`）・題（`__link`。カード全体を覆う）・何のページかの一行（`__desc`。行き先のページの題・副題・冒頭の言葉から取る） |
 | `bl-pager` | 前後の記事 |
 | `bl-open-dialog`・`bl-dialog`（`__bar`・`__close`・`__body`） | 開く窓。解説などを本文と分けて置く |
 | `bl-visually-hidden` | 画面に出さず読み上げにだけ渡す |
