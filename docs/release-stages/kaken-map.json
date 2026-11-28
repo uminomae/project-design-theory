@@ -1,14 +1,14 @@
 {
  "counts": {
-  "pages": 114,
-  "mapped_pages": 96,
+  "pages": 116,
+  "mapped_pages": 97,
   "sho": 296,
   "touched": 40,
   "chu": 66,
   "chu_touched": 18,
   "dai": 13,
   "dai_touched": 8,
-  "unmapped_n": 18
+  "unmapped_n": 19
  },
  "dai": [
   {
@@ -123,6 +123,7 @@
        "name": "科学社会学、科学哲学および科学技術史",
        "pages": [
         "capacity-after-ai",
+        "production-apparatus",
         "carus-onslaught-on-necessity-ja",
         "clausius-art-der-bewegung-ja",
         "clausius-bewegende-kraft-der-warme-ja",
@@ -387,6 +388,7 @@
        "name": "経営学",
        "pages": [
         "business-design-syllabus",
+        "production-apparatus",
         "good-self-destruction",
         "kousou",
         "decision-making",
@@ -2306,6 +2308,7 @@
   "buckle-history-of-civilization-ja": "バックル『イギリス文明史』（1857）の、統計が示す規則性の所を、日本語で読む",
   "business-design-syllabus": "Love駆動開発は、事業構想の授業になるか",
   "capacity-after-ai": "AI の時代に、差になるスキルは何か",
+  "production-apparatus": "生産装置の変化",
   "good-self-destruction": "良いの自滅",
   "self-realization": "自己実現とは",
   "kousou": "構想とは",
