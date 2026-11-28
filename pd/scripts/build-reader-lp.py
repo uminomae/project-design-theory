@@ -413,6 +413,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/kousou/READER-kousou.md",
+        ROOT / "scripts/reader-kousou-template.html",
+        ROOT / "reader/kousou.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/breath-filter/READER-breath-filter.md",
         ROOT / "scripts/reader-breath-filter-template.html",
         ROOT / "reader/breath-filter.html",

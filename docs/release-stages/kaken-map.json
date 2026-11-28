@@ -1,7 +1,7 @@
 {
  "counts": {
-  "pages": 113,
-  "mapped_pages": 95,
+  "pages": 114,
+  "mapped_pages": 96,
   "sho": 296,
   "touched": 40,
   "chu": 66,
@@ -388,6 +388,7 @@
        "pages": [
         "business-design-syllabus",
         "good-self-destruction",
+        "kousou",
         "decision-making",
         "gravity-love",
         "interpersonal-abilities",
@@ -542,6 +543,7 @@
        "id": "10020",
        "name": "教育心理学",
        "pages": [
+        "kousou",
         "intelligence-structure",
         "unsupported-ability-models",
         "creative-thinking",
@@ -2306,6 +2308,7 @@
   "capacity-after-ai": "AI の時代に、差になるスキルは何か",
   "good-self-destruction": "良いの自滅",
   "self-realization": "自己実現とは",
+  "kousou": "構想とは",
   "carus-onslaught-on-necessity-ja": "ケーラス「パース氏の必然論への猛攻」を、日本語で読む",
   "clausius-art-der-bewegung-ja": "クラウジウス「熱と呼ぶ運動の種類について」（1857）を、日本語で読む",
   "clausius-bewegende-kraft-der-warme-ja": "クラウジウス「熱の動力について」（1850）を、日本語で読む",
