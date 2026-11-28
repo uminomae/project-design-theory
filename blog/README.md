@@ -14,7 +14,7 @@ GitHub Pages で出す静的なページの置き場。build は無く、置い�
 | `design-system/` | このブログだけの見た目（`--bl-*` のトークンと `bl-` の部品）。中身は `design-system/README.md` |
 | `_template/post.html` | 記事の雛形。公開しない（`pages.yml` で外す） |
 
-pd/ のサイトの見た目（`pd/design-system/`・`pd/src/`）は読み込まない。pjdhiro の repo（Jekyll のブログ）も読み込まない・指さない。
+pd/ のサイトの見た目（`pd/design-system/` と `pd/src/` の CSS）は読み込まない。例外は右上の Menu の項目と描画で、サイトと同じ正本（`pd/src/content/site-data.mjs` の `getMenuItems`・`pd/src/ui/menu.js`）を `design-system/menu.js` から読み込む。Menu をサイトの HOME・読み物と同じにしたため（pjdhiro 2026-11-28「メニューを pdt repoのデザインに寄せたい」）で、項目をここに写すと、サイトの Menu を直したときにブログだけ古くなる。形と字は写し、色は `--bl-*` で書く。pjdhiro の repo（Jekyll のブログ）は読み込まない・指さない。
 
 ## 記事を一本足す手順
 
