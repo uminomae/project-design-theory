@@ -170,6 +170,8 @@ pjdhiro は、前に、自己受容について次のように話しています
 
 守りを外したあとに現れる自己を、ユングは、ペルソナ（人に見せる仮面）の偽りの覆いから解き放たれた自己として書きました（1928 年）。ゴールドスタインは、いまある状態をただ保とうとすることを、病んだ生き物に特徴的なふるまいとし、自己実現の働きが狭まった形と見ました（1939 年）。守ることそのものが、自己が現れることを狭めることがある、という見方として読めます。
 
+精神分析家のウィニコットは、守りと、その奥の自己を、偽りの自己と本当の自己という言葉で書きました（1960 年）。偽りの自己は、周りに合わせることからできあがり、本当の自己を隠して守る働きをする、とウィニコットは書きます。健康に近い場合には、偽りの自己は、本当の自己が自分のものとして生き始められる条件を探すことを、いちばんの関心にしている、とも書いています。そして、自発的な身振りこそが本当の自己の働きで、創造的でありうるのも、本物だと感じられるのも、本当の自己だけだ、と続けます。ウィニコットが本当の自己の現れる条件に置いたのは、応えてくれる環境でした。ほどよい母親が、乳児の万能の表現に応えることをくり返すと、そのくり返しが乳児の弱い自我に力を与え、本当の自己が生き始める、と書いています。自分で自分を受け容れることより、受け容れてくれる他者の側に重みがあります。
+
 このように、受け容れる → 守りがほどける → 自己が現れる、という順番には、臨床と実験の両方に、同じ向きの論があります。ただ、シャーマンとコーエンが確かめさせたのは、弱さそのものでなく、弱さとは別の所にある自分の値打ちでした。弱さそのものを受け容れることが、同じように守りをほどくのかは、まだ確かめていないところです。守りの働きそのものは、「[心理的防衛機制とは](defense-mechanisms.html)」で見ています。
 
 <details><summary>出典</summary>
@@ -183,6 +185,8 @@ pjdhiro は、前に、自己受容について次のように話しています
 出典：[Sherman & Cohen (2006)](https://doi.org/10.1016/S0065-2601(06)38004-5) "The psychology of self-defense: Self-affirmation theory", *Advances in Experimental Social Psychology* 38:183–242（本文照合済。読んだのは、Cohen の所属するスタンフォード大学教育学大学院が置いていた出版社の組版の版の [Wayback の記録（2015-04-23）](https://web.archive.org/web/20150423125634id_/https://ed.stanford.edu/sites/default/files/self_defense.pdf)）。p.185 に「Such 'self-affirmations,' by fulfilling the need to protect self-integrity in the face of threat, can enable people to deal with threatening events and information without resorting to defensive biases.」、p.187 に「people realize that their self-worth does not hinge on the evaluative implications of the immediate situation」。
 
 出典：[Jung (1928)](https://archive.org/details/dli.ministry.24254)（本文照合済。上の章と同じ写し。p.185 に「the aim of individuation is to free the self from the false wrappings of the persona on the one hand, and from the suggestive power of the unconscious images on the other.」）。
+
+出典：Winnicott (1960) "Ego distortion in terms of true and false self"、再録 *The Maturational Processes and the Facilitating Environment*, International Universities Press, 1965, pp.140–152（本文照合済。ただし読んだのは、[Internet Archive 自身が走査した 1965 年の本](https://archive.org/details/maturationalproc0000dwwi)で、誰でも全文を読める扱いだが、権利の欄は空で、書誌の年が 1845 と誤っている。同じ三か所を、民間の精神分析の訓練機関が置いた 1994 年の刷の PDF でも照らした。出版社・大学の写しは見つからず、写しの性格を添えて載せている。p.142 に「Its defensive function is to hide and protect the True Self, whatever that may be.」、p.143 に「More towards health: The False Self has as its main concern a search for conditions which will make it possible for the True Self to come into its own.」、p.145 に「The good-enough mother meets the omnipotence of the infant」と「A True Self begins to have life」、p.148 に「The spontaneous gesture is the True Self in action. Only the True Self can be creative and only the True Self can feel real.」）。
 
 出典：[Goldstein (1939)](https://archive.org/details/organismholistic00gold)（本文照合済。上の章と同じ写し。pp.196–197 に、今ある状態を保とうとすることは「characteristic for sick people」という段）。
 
@@ -226,7 +230,6 @@ pjdhiro は、前に、自己受容について次のように話しています
 - **ロジャーズ**（1959 年の療法と人格の理論・1961 年の *On Becoming a Person* の第 4 章と第 9 章）：受け容れるほど守りが減り、経験に開かれ、変化と成長に向かえる。経験への開かれは、防衛の正反対。自分が自分にとっての大事な他者になる、という自分への肯定的な配慮。
 - **ホーナイ**（1950 年の *Neurosis and Human Growth*）：理想化した自己像を追ううちに、人は現実の自己から離れる。障害が取り除かれれば、人は本性から自己実現に向かって育つ。
 - **マズロー**（1950 年の "Self-actualizing people"・1954 年と 1970 年の *Motivation and Personality* の自己実現する人の章）：自己実現する人は、人の弱さや悪さを、自然を受け容れるように受け容れ、守りが少ない。
-- **ウィニコット**（1960 年の "Ego distortion in terms of true and false self"）：偽りの自己は、本当の自己を隠して守る働きをする。応えてくれる環境があると、本当の自己が生き始める。
 - **ホネット**（1992 年の *Kampf um Anerkennung*）：人から受ける承認（愛・権利・業績の評価）が、自分への信頼・尊重・評価をつくる。承認が、良く生きることの条件になる。
 - **カーニス**（2003 年）：自尊感情には、守りの強い脆いものと、本物の安定したものがある。本当の自己が、妨げられずに日々働くことを、本物らしさと呼ぶ。
 - **批判**：マズローの欲求の段階を確かめた研究は、一貫した支持を見つけていない、とするまとめ（ワーバとブリッドウェル、1976 年）。ロジャーズとマズローの自己実現の理論を、還元主義とイデオロギーの面から批判するもの（ゲラー、1982 年）。
