@@ -1,0 +1,98 @@
+/*
+ * blog/ のデザイントークン（--bl-*）
+ *
+ * pd/ のサイト（暗い背景と青い光）とは別の見た目にする。
+ * 紙に近い明るい地と墨の文字を基本にし、暗い見た目は OS の設定か data-theme="dark" で切り替える。
+ * 色・文字・余白は、ここの名前だけを使う。ページや components.css に色の値を直に書かない。
+ */
+
+:root {
+  /* === 色（明るい見た目） === */
+  --bl-bg: #f7f4ee;            /* 地：生成りの紙 */
+  --bl-surface: #fffdf8;       /* 一段浮かせる面（カード・注記） */
+  --bl-ink: #23211d;           /* 本文の墨 */
+  --bl-ink-sub: #66615a;       /* 日付・添え書き */
+  --bl-rule: #ddd6c8;          /* 罫線 */
+  --bl-accent: #2f4a6d;        /* 藍：リンク・見出しの印 */
+  --bl-accent-soft: #e4e9f0;   /* 藍の薄い面（札・選んだ所） */
+  --bl-mark: #b5452b;          /* 朱：工事中・注意。使うのは一ページに一、二か所まで */
+  --bl-mark-soft: #f6e4dd;
+  --bl-code-bg: #efebe3;
+  --bl-focus: #2f4a6d;
+
+  /* === 文字 === */
+  --bl-font-body: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", serif;
+  --bl-font-ui: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
+  --bl-font-mono: "SF Mono", "Fira Code", Consolas, monospace;
+
+  --bl-size-xs: 0.78rem;       /* 札・注 */
+  --bl-size-sm: 0.88rem;       /* 日付・添え書き・図の説明 */
+  --bl-size-base: 1.0625rem;   /* 本文 */
+  --bl-size-lg: 1.25rem;       /* h3 */
+  --bl-size-xl: 1.5rem;        /* h2 */
+  --bl-size-2xl: clamp(1.6rem, 1.2rem + 1.8vw, 2.2rem); /* 記事の題 */
+
+  --bl-leading-body: 1.95;     /* 和文の本文 */
+  --bl-leading-tight: 1.45;    /* 題・見出し */
+  --bl-tracking-body: 0.02em;
+  --bl-tracking-heading: 0.04em;
+
+  /* === 幅 === */
+  --bl-measure: 36rem;         /* 本文の一行の長さ（和文でおよそ 34〜36 字） */
+  --bl-wide: 46rem;            /* 図・表・一覧 */
+  --bl-gutter: 16px;           /* 狭い画面の左右の余白 */
+
+  /* === 余白（4px 刻み） === */
+  --bl-space-1: 4px;
+  --bl-space-2: 8px;
+  --bl-space-3: 12px;
+  --bl-space-4: 16px;
+  --bl-space-5: 24px;
+  --bl-space-6: 32px;
+  --bl-space-7: 48px;
+  --bl-space-8: 72px;
+
+  /* === 形 === */
+  --bl-radius: 4px;
+  --bl-radius-pill: 999px;
+  --bl-shadow: 0 1px 2px rgba(35, 33, 29, 0.06);
+  --bl-transition: 0.2s ease;
+
+  color-scheme: light;
+}
+
+/* === 色（暗い見た目）：OS が暗いとき。明るいと指定したページは除く === */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bl-bg: #141517;
+    --bl-surface: #1c1d20;
+    --bl-ink: #e6e2d9;
+    --bl-ink-sub: #a29c90;
+    --bl-rule: #33353a;
+    --bl-accent: #95b3d9;
+    --bl-accent-soft: #233041;
+    --bl-mark: #e48c71;
+    --bl-mark-soft: #3a2621;
+    --bl-code-bg: #212226;
+    --bl-focus: #95b3d9;
+    --bl-shadow: none;
+    color-scheme: dark;
+  }
+}
+
+/* === 色（暗い見た目）：data-theme="dark" と指定したとき === */
+:root[data-theme="dark"] {
+  --bl-bg: #141517;
+  --bl-surface: #1c1d20;
+  --bl-ink: #e6e2d9;
+  --bl-ink-sub: #a29c90;
+  --bl-rule: #33353a;
+  --bl-accent: #95b3d9;
+  --bl-accent-soft: #233041;
+  --bl-mark: #e48c71;
+  --bl-mark-soft: #3a2621;
+  --bl-code-bg: #212226;
+  --bl-focus: #95b3d9;
+  --bl-shadow: none;
+  color-scheme: dark;
+}

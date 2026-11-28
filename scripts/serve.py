@@ -4,6 +4,7 @@
   /            → pd/（サイトのファイル）
   /wiki/       → pd/wiki-out/（Quartz の出力。scripts/serve.sh が作る）
   /as/ /ks/ /cs/ → as/・ks/・cs/
+  /blog/       → blog/
 
 公開の URL の頭（/project-design-theory/）が付いていても同じものを返す。
 キャッシュはさせない。拡張子の無い URL は .html を補う（GitHub Pages と同じ）。
@@ -22,6 +23,7 @@ MOUNTS = [
     ("/as", REPO / "as"),
     ("/ks", REPO / "ks"),
     ("/cs", REPO / "cs"),
+    ("/blog", REPO / "blog"),
     ("", REPO / "pd"),
 ]
 
@@ -66,7 +68,7 @@ def main():
     port = int(sys.argv[1]) if len(sys.argv) > 1 else int(os.environ.get("PORT", "3001"))
     print(f"repo: {REPO}", flush=True)
     server = http.server.ThreadingHTTPServer(("", port), Handler)
-    print(f"http://localhost:{port}/  （/as/ /ks/ /cs/ /wiki/）", flush=True)
+    print(f"http://localhost:{port}/  （/as/ /ks/ /cs/ /blog/ /wiki/）", flush=True)
     try:
         server.serve_forever()
     except KeyboardInterrupt:

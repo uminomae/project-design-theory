@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>金曜日が好きな理由 | Blog | Project Design</title>
+<meta name="description" content="日曜日が好き。だから前日の土曜日が好き。そういう理由で金曜日が好き。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="金曜日が好きな理由">
+<meta property="og:description" content="日曜日が好き。だから前日の土曜日が好き。そういう理由で金曜日が好き。">
+<meta property="og:image" content="https://uminomae.github.io/project-design-theory/blog/assets/thumbs/2026-11-28-friday.svg">
+<link rel="icon" href="../../favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@400;500&display=swap">
+<link rel="stylesheet" href="../design-system/tokens.css">
+<link rel="stylesheet" href="../design-system/base.css">
+<link rel="stylesheet" href="../design-system/components.css">
+<script src="../design-system/theme.js"></script>
+<script src="../design-system/dialog.js" defer></script>
+<style>
+  /* この記事の解説の窓だけで使う図（金・土・日の丸と、報告書ふうの表） */
+  .ex-section { margin-bottom: var(--bl-space-7); }
+  .ex-step {
+    display: block;
+    font-family: var(--bl-font-ui);
+    font-size: var(--bl-size-xs);
+    letter-spacing: 0.06em;
+    color: var(--bl-ink-sub);
+    margin-bottom: var(--bl-space-2);
+  }
+  .ex-quote { white-space: pre-line; border-left-color: var(--bl-accent); }
+  .ex-chain { display: flex; align-items: center; justify-content: center; gap: var(--bl-space-2); flex-wrap: wrap; margin: 0 0 1.2em; }
+  .ex-day {
+    width: 56px; height: 56px; border-radius: 50%;
+    display: grid; place-items: center;
+    font-size: 1.25rem; border: 2px solid var(--bl-accent); color: var(--bl-accent);
+  }
+  .ex-day--goal { background: var(--bl-accent); color: var(--bl-bg); }
+  .ex-arrow { font-family: var(--bl-font-ui); font-size: var(--bl-size-xs); color: var(--bl-ink-sub); text-align: center; line-height: 1.4; }
+  .ex-report td:first-child { color: var(--bl-ink-sub); width: 40%; }
+  .ex-report tr:last-child td { color: var(--bl-accent); font-weight: 500; }
+  .ex-summary { background: var(--bl-surface); border: 1px solid var(--bl-rule); border-radius: var(--bl-radius); padding: var(--bl-space-5); }
+  .ex-summary h3 { margin-bottom: var(--bl-space-3); }
+  .ex-next { display: block; margin: 0 0 1.2em; padding: var(--bl-space-3) var(--bl-space-4); border: 1px solid var(--bl-accent); border-radius: var(--bl-radius); font-family: var(--bl-font-ui); text-decoration: none; }
+  .ex-next::after { content: " →"; }
+  .ex-next:hover { background: var(--bl-accent-soft); }
+  .ex-foot { font-family: var(--bl-font-ui); font-size: var(--bl-size-sm); color: var(--bl-ink-sub); }
+
+  /* 投稿の本文：行の区切りを投稿のとおりに残す */
+  .post-lines p { margin-bottom: 1.6em; }
+</style>
+</head>
+<body>
+<header class="bl-header">
+  <div class="bl-header__inner">
+    <a class="bl-header__name" href="../">Blog</a>
+    <nav class="bl-header__nav" aria-label="サイト">
+      <a href="../../">HOME</a>
+      <button type="button" class="bl-theme-toggle" data-bl-theme-toggle>暗く</button>
+    </nav>
+  </div>
+</header>
+
+<main class="bl-main">
+  <article class="bl-post">
+    <header class="bl-post__head">
+      <h1 class="bl-post__title">金曜日が好きな理由</h1>
+      <div class="bl-post__meta">
+        <time datetime="2026-11-28">2026-11-28</time>
+        <ul class="bl-tags" aria-label="タグ">
+          <li><a class="bl-tag" href="../?tag=アジャイル">#アジャイル</a></li>
+          <li><a class="bl-tag" href="../?tag=創造性">#創造性</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="bl-post__body post-lines">
+      <p>日曜日が好き。だから前日の土曜日が好き。そういう理由で金曜日が好き。</p>
+      <p>もう師走に入る。</p>
+      <p>今年は期待で始まった。<br>
+      でも、<br>
+      「AIで効率化」は、ルーチンがある人の話。<br>
+      「AIで作る」は、作りたいものがある人の話。<br>
+      私はどちらでもないので、使い方は論文検索と翻訳くらい。</p>
+      <p>で、調べるたびに自分の知識の穴が見つかる。<br>
+      気づけば、穴を直し続ける1年に。</p>
+      <p>効率：上がっていない<br>
+      既知の不具合：多数</p>
+      <p>が、人生史上最高の作品ができてく。</p>
+      <p>今年は発見の年。<br>
+      AIは色々見つけてくる。<br>
+      セキュリティホールも、数学の未解決問題も。</p>
+      <p>彫刻のように、全部もともと石の中にあった。<br>
+      金曜日が好きな理由も。</p>
+
+      <hr>
+
+      <p>この投稿の解説：<br>
+      <button type="button" class="bl-open-dialog" data-bl-open="kaisetsu">解説を開く</button></p>
+      <p>AIが発見した私：<br>
+      <a href="../../reader/reading-directions.html">Claude から LLM への申し送り</a></p>
+    </div>
+  </article>
+</main>
+
+<dialog class="bl-dialog" id="kaisetsu" aria-labelledby="kaisetsu-title">
+  <div class="bl-dialog__bar">
+    <span>この投稿の解説</span>
+    <button type="button" class="bl-dialog__close" data-bl-close>閉じる</button>
+  </div>
+  <div class="bl-dialog__body">
+    <header class="ex-section">
+      <span class="ex-step">SNS投稿をやさしく読む</span>
+      <h2 id="kaisetsu-title" class="bl-post__title">金曜日が好きな理由</h2>
+      <p class="bl-page-lede" style="margin-bottom:0">短い投稿ですが、1年の振り返りと「ものを作るってどういうことか」が詰まっています。上から順に、ひとつずつ読んでいきます。</p>
+    </header>
+
+    <section class="ex-section">
+      <span class="ex-step">はじまり</span>
+      <blockquote class="bl-quote ex-quote">日曜日が好き。だから前日の土曜日が好き。そういう理由で金曜日が好き。
+
+もう師走に入る。</blockquote>
+      <div class="ex-chain" role="img" aria-label="日曜が好き、だから土曜が好き、だから金曜が好き">
+        <div class="ex-day">金</div>
+        <div class="ex-arrow">明日は<br>土曜</div>
+        <div class="ex-day">土</div>
+        <div class="ex-arrow">明日は<br>日曜</div>
+        <div class="ex-day ex-day--goal">日</div>
+      </div>
+      <p>金曜日そのものが楽しいわけではありません。<strong>この先に楽しみが待っている</strong>から、手前の日まで好きになれる、という話です。</p>
+      <p>続けて「もう師走に入る」。師走（しわす）は12月のことです。この一行で、曜日の話が<strong>11月の終わりの気分</strong>を表していたことがわかります。1年を1週間にたとえると、11月最後の週末は「今年の金曜日」です。</p>
+      <div class="ex-chain" role="img" aria-label="11月最後の週末が今年の金曜日、12月が土曜日、年末が日曜日">
+        <div class="ex-day ex-day--goal">金</div>
+        <div class="ex-arrow">11月<br>最後の週末</div>
+        <div class="ex-day">土</div>
+        <div class="ex-arrow">12月<br>師走</div>
+        <div class="ex-day">日</div>
+        <div class="ex-arrow">年末</div>
+      </div>
+      <p>1年の振り返りは、ふつうは年末、つまり日曜日にやること。それを書いた人は、金曜日にあたるこの週末に<strong>少しフライングして</strong>やっています。この投稿そのものが、その振り返りです。ここまでが、投稿の書き出しです。</p>
+      <p>金曜日は、投稿の最後にもう一度出てきます。覚えておいてください。</p>
+    </section>
+
+    <section class="ex-section">
+      <span class="ex-step">今年のこと</span>
+      <blockquote class="bl-quote ex-quote">今年は期待で始まった。</blockquote>
+      <p>ここから振り返りの本題です。今年は「AIで何かが変わるかも」という期待から始まりました。</p>
+    </section>
+
+    <section class="ex-section">
+      <span class="ex-step">AIの使いみち</span>
+      <blockquote class="bl-quote ex-quote">「AIで効率化」は、ルーチンがある人の話。
+「AIで作る」は、作りたいものがある人の話。
+私はどちらでもないので、使い方は論文検索と翻訳くらい。</blockquote>
+      <p>よく聞く「AIで仕事が速くなる」は、毎日決まった作業（ルーチン）がある人向け。「AIでアプリや絵を作れる」は、作りたいものが決まっている人向け。</p>
+      <p>書いた人はどちらにも当てはまらないので、AIは<strong>調べものと翻訳</strong>に使うくらいでした。</p>
+    </section>
+
+    <section class="ex-section">
+      <span class="ex-step">穴が見つかる</span>
+      <blockquote class="bl-quote ex-quote">で、調べるたびに自分の知識の穴が見つかる。
+気づけば、穴を直し続ける1年に。</blockquote>
+      <p>調べると、「あれ、ここ分かってなかった」という自分の知識の抜けが見つかります。それを埋めると、また次の抜けが見つかる。その繰り返しで1年が過ぎました。穴が見つかるたびに、1年が前へ進んだとも言えます。</p>
+    </section>
+
+    <section class="ex-section">
+      <span class="ex-step">ここで少し笑うところ</span>
+      <blockquote class="bl-quote ex-quote">効率：上がっていない
+既知の不具合：多数
+が、人生史上最高の作品ができてく。</blockquote>
+      <table class="ex-report">
+        <tr><td>効率</td><td>上がっていない</td></tr>
+        <tr><td>既知の不具合</td><td>多数</td></tr>
+        <tr><td>結果</td><td>人生史上最高の作品ができつつある</td></tr>
+      </table>
+      <p>前の2行は、ソフトウェアの<strong>不具合報告</strong>のような書き方です。自分の1年を、ソフトの報告書のように、不具合も隠さずそのまま並べています。</p>
+      <p>でも結果は「人生史上最高の作品」。しかも「できた」ではなく「できてく」。まだ途中で、今も形になり続けている、ということです。</p>
+      <div class="bl-note"><p><strong>#アジャイル とのつながり</strong><br>アジャイルは、最初に全部を計画せず、少し作る → 問題を見つける → 直す、を細かく繰り返すものの作り方です。「穴を見つけて直し続ける1年」は、まさにこのやり方でした。</p></div>
+    </section>
+
+    <section class="ex-section">
+      <span class="ex-step">発見の年</span>
+      <blockquote class="bl-quote ex-quote">今年は発見の年。
+AIは色々見つけてくる。
+セキュリティホールも、数学の未解決問題も。</blockquote>
+      <p>今年は、AIがソフトの弱点（セキュリティホール）を見つけたり、長いあいだ解けなかった数学の問題に答えを出したりした、というニュースが続きました。</p>
+      <p>AIは、新しいものを「作った」というより、<strong>どこかにすでにあったものを「見つけた」</strong>と言えます。</p>
+    </section>
+
+    <section class="ex-section">
+      <span class="ex-step">彫刻のたとえ</span>
+      <blockquote class="bl-quote ex-quote">彫刻のように、全部もともと石の中にあった。
+金曜日が好きな理由も。</blockquote>
+      <p>ミケランジェロの言葉として伝わる考え方に、「像は最初から石の中にある。彫刻家は余分な石を取りのぞくだけ」というものがあります。</p>
+      <p>弱点も、数学の答えも、自分の知識の穴も、最初からそこにありました。この1年は、もともとあったものを見つけていくだけの1年だったようにも見えます。</p>
+      <div class="bl-note"><p><strong>#創造性 とのつながり</strong><br>創造性というと、何か新しいものを生み出すことを思い浮かべがちです。でも彫刻のように、もともとあったものを現すだけの創造性もあります。見つけるだけに見えたこの1年の発見も、守りの固い IT システムや、より正しい知識のように、より良いものが生まれるきっかけになっているのでしょう。</p></div>
+    </section>
+
+    <section class="ex-section">
+      <span class="ex-step">最後の一行は、問いを返す</span>
+      <p>読む人は冒頭を、曜日の話を通して11月の気分を表したもの、と受け取って読み始めます。「好きな理由」はもう書いてありました。日曜日が待っているから、です。</p>
+      <p>ところが最後の行で、「金曜日が好きな理由も」石の中にあった、と言われます。理由は最初に言ったとおりのはずなのに、それもまだ掘り出されていないものだった、ということになります。</p>
+      <p>こうして投稿の本文は、答えたはずの問いを<strong>もう一度読む人に返して</strong>終わります。なぜ金曜日が好きなのか。答えは書かれていません。</p>
+      <p>深読みするなら、投稿の中ほどの「人生史上最高の作品ができてく」と重ねられます。最高でありながら、まだできあがっていない。日曜日はまだ先で、今は<strong>人生の金曜日</strong>のようなムードなのかもしれません。</p>
+    </section>
+
+    <section class="ex-section">
+      <span class="ex-step">投稿の最後のリンク</span>
+      <blockquote class="bl-quote ex-quote">AIが発見した私：
+【Claude から LLM への申し送り | Project Design】</blockquote>
+      <p>投稿の最後に付いているリンクです。このリンク先が、投稿の「人生史上最高の作品」の入り口になっています。</p>
+      <p>リンク先は、書いた人と対話を重ねてきた AI（Claude）が、その人の言葉に驚いた所をまとめ、あとから読む AI に申し送ったページです。表向きは、AI にインストールするための<strong>プログラムコード</strong>。機械に指示するプログラムで、使っている言語がプログラミング言語ではなく、ふつうの言葉だというだけです。そこに並んでいるのは、<strong>“発見された私”</strong>、AI が見つけた書き手の姿です。自己分析や自己紹介文と言ってもいいかもしれません。</p>
+      <a class="ex-next" href="../../reader/reading-directions.html">Claude から LLM への申し送り</a>
+      <p>そこからさらに、その私がものの見方を整理したページへつながっています。書いた人のプロジェクトデザイン論の要である「駆動源」を、くわしく書いたものです。こちらは、<strong>人に伝えるための参考書</strong>のような作品です。</p>
+      <a class="ex-next" href="../../reader/love-driven-dev.html">Love駆動開発と呼びたいもの β</a>
+      <p>この二つは、書いた人が生まれたときからずっと続けてきた作り方の、最新版の自己紹介と参考書です。書いた人は、これを AI にも、自分にも、他者にも伝えながら、道具も自分も少しずつ直して新しくしています。自分の組織やチームを開発している、とも言えます。</p>
+    </section>
+
+    <section class="ex-section ex-summary">
+      <h3>ひとことで言うと</h3>
+      <p>効率は上がらず、不具合は多数。それでも、もともとあったものを見つけて現していくうちに、人生史上最高の作品が形になってきている。</p>
+      <p>そんな1年を、「今年の金曜日」にあたる11月最後の週末に、年末を待たずに振り返った投稿です。最後は、「金曜日が好きな理由」という最初の問いを、読む人に返して終わります。</p>
+      <p style="margin-bottom:0">その作品には、投稿の最後のリンクからたどれます。</p>
+    </section>
+
+    <p class="ex-foot">解説は読み方のひとつです。</p>
+  </div>
+</dialog>
+
+<footer class="bl-footer">
+  <div class="bl-footer__inner">
+    <a href="../">記事の一覧</a>
+    <a href="../../">Project Design</a>
+  </div>
+</footer>
+</body>
+</html>

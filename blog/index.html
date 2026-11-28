@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog | Project Design</title>
+<meta name="description" content="Project Design のブログ。">
+<link rel="icon" href="../favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Noto+Serif+JP:wght@400;500&display=swap">
+<link rel="stylesheet" href="design-system/tokens.css">
+<link rel="stylesheet" href="design-system/base.css">
+<link rel="stylesheet" href="design-system/components.css">
+<script src="design-system/theme.js"></script>
+<script src="design-system/list.js" defer></script>
+</head>
+<body>
+<header class="bl-header">
+  <div class="bl-header__inner">
+    <a class="bl-header__name" href="./">Blog</a>
+    <nav class="bl-header__nav" aria-label="サイト">
+      <a href="../">HOME</a>
+      <button type="button" class="bl-theme-toggle" data-bl-theme-toggle>暗く</button>
+    </nav>
+  </div>
+</header>
+
+<main class="bl-main bl-main--wide">
+  <h1 class="bl-page-title">Blog</h1>
+  <p class="bl-page-lede">記事の一覧。タグと語で絞り込めます。</p>
+
+  <div class="bl-filter" role="search">
+    <div class="bl-filter__row">
+      <label class="bl-visually-hidden" for="bl-q">記事を語で探す</label>
+      <input id="bl-q" class="bl-input" type="search" placeholder="語で探す（題・概要・タグ）" data-bl-q>
+      <label class="bl-visually-hidden" for="bl-sort">並べ方</label>
+      <select id="bl-sort" class="bl-select" data-bl-sort>
+        <option value="new">新しい順</option>
+        <option value="old">古い順</option>
+      </select>
+    </div>
+    <div class="bl-filter__row" data-bl-chips aria-label="タグで絞り込む"></div>
+    <div class="bl-filter__status" data-bl-status aria-live="polite"></div>
+  </div>
+
+  <!--
+    記事のカード。新しい記事は、この ul の一番上に足す（script が動かないときも新しい順に見えるように）。
+    data-date は YYYY-MM-DD、data-tags はタグを空白で区切る、data-text は題と概要（語の検索に使う）。
+    書き方は blog/README.md。
+  -->
+  <ul class="bl-cards" data-bl-cards>
+    <li data-date="2026-11-28" data-tags="アジャイル 創造性" data-text="金曜日が好きな理由 日曜日が好き。だから前日の土曜日が好き。そういう理由で金曜日が好き。">
+      <article class="bl-card">
+        <img class="bl-card__thumb" src="assets/thumbs/2026-11-28-friday.svg" alt="" width="1200" height="630" loading="lazy">
+        <div class="bl-card__body">
+          <time class="bl-card__date" datetime="2026-11-28">2026-11-28</time>
+          <h2 class="bl-card__title"><a href="posts/2026-11-28-friday.html">金曜日が好きな理由</a></h2>
+          <p class="bl-card__lede">日曜日が好き。だから前日の土曜日が好き。そういう理由で金曜日が好き。</p>
+          <ul class="bl-tags" aria-label="タグ">
+            <li><a class="bl-tag" href="?tag=アジャイル">#アジャイル</a></li>
+            <li><a class="bl-tag" href="?tag=創造性">#創造性</a></li>
+          </ul>
+        </div>
+      </article>
+    </li>
+  </ul>
+  <p class="bl-empty" data-bl-empty hidden>当てはまる記事はありません。</p>
+</main>
+
+<footer class="bl-footer">
+  <div class="bl-footer__inner">
+    <span>Blog</span>
+    <a href="../">Project Design</a>
+  </div>
+</footer>
+</body>
+</html>

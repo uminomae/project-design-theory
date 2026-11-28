@@ -24,7 +24,7 @@ stamp="$gitdir/PUBLIC_PAGE_REVIEWED"
 public_files() {
   git diff --cached --name-only --diff-filter=ACMRD -z \
     | tr '\0' '\n' \
-    | grep -E '^(pd/(index\.html|src/|content/|assets/|reader/|wiki/|robots\.txt|llms\.txt|llms-full\.txt|sitemap\.xml)|pd/knowledge/research/[^/]+/READER-[^/]*\.md$|as/|ks/|cs/)' \
+    | grep -E '^(pd/(index\.html|src/|content/|assets/|reader/|wiki/|robots\.txt|llms\.txt|llms-full\.txt|sitemap\.xml)|pd/knowledge/research/[^/]+/READER-[^/]*\.md$|as/|ks/|cs/|blog/)' \
     | grep -v -E '(^|/)(scripts|tests|node_modules)/|^pd/wiki/(log\.md|health/)|\.test\.[a-z]+$|(^|/)package(-lock)?\.json$'
 }
 
