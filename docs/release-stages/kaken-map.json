@@ -1,7 +1,7 @@
 {
  "counts": {
-  "pages": 116,
-  "mapped_pages": 97,
+  "pages": 117,
+  "mapped_pages": 98,
   "sho": 296,
   "touched": 40,
   "chu": 66,
@@ -530,6 +530,7 @@
        "pages": [
         "anshin",
         "good-self-destruction",
+        "psychological-well-being",
         "empathy",
         "interpersonal-abilities",
         "intrinsic-motivation",
@@ -569,6 +570,7 @@
        "pages": [
         "anxiety",
         "self-realization",
+        "psychological-well-being",
         "defense-mechanisms",
         "empathy",
         "influences-psychology",
@@ -2311,6 +2313,7 @@
   "production-apparatus": "生産装置の変化",
   "good-self-destruction": "良いの自滅",
   "self-realization": "自己実現とは",
+  "psychological-well-being": "心理的ウェルビーイングとは",
   "kousou": "構想とは",
   "carus-onslaught-on-necessity-ja": "ケーラス「パース氏の必然論への猛攻」を、日本語で読む",
   "clausius-art-der-bewegung-ja": "クラウジウス「熱と呼ぶ運動の種類について」（1857）を、日本語で読む",

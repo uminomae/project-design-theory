@@ -413,6 +413,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/psychological-well-being/READER-psychological-well-being.md",
+        ROOT / "scripts/reader-psychological-well-being-template.html",
+        ROOT / "reader/psychological-well-being.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/kousou/READER-kousou.md",
         ROOT / "scripts/reader-kousou-template.html",
         ROOT / "reader/kousou.html",
