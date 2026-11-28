@@ -109,5 +109,3 @@ Zurek, W. H. (2002) "Decoherence and the Transition from Quantum to Classical—
 このたとえで重ねているのは、細かく見ようとするほど見ること自体が相手を変え、分けていった先で分けられなくなる、という作業の形です。物理の結果を、心の側の論拠にしているのではありません。
 
 - 「[愛は、重力に似ていないか](gravity-love.html#gl-manager)」の 4 章：意思決定から Being 的なものを切り分けていく作業を、メタ認知と、電子を細かく見ていく作業に重ねているところ。
-</content>
-</invoke>
