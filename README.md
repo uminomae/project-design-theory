@@ -14,7 +14,7 @@ pjdhiro の見方と判断の基準（暗黙知）を形式化し、AI が読み
 | `docs/LOVE-DRIVEN-DEV-SPEC.md` | Love駆動開発のパッケージ仕様（機能・入出力・依存モジュール・動作の規約） |
 | `docs/RELEASE-STAGES.md` | 目標ごとの三段階と、いまの達成度合い・段ごとのリリース文（公的な機関の基準で測るものと、指標を作る別枠） |
 
-pjdhiro の言葉のニュアンスと判断の理由は、仕様書でなく `docs/rules/stance.md`（と、何への答えだったかを書いた `stance-history.md`）にあります。
+pjdhiro の言葉のニュアンスと判断の理由は、仕様書でなく `docs/rules/stance.md`にあります。
 
 ## この repo を知識として使うとき
 
@@ -59,7 +59,6 @@ repo を取得できない LLM には、上の節の raw の URL か、[llms.txt
    - 心理的安全性：[心理的安全性とは](https://uminomae.github.io/project-design-theory/reader/psychological-safety.html)
    - 不安：[不安とは](https://uminomae.github.io/project-design-theory/reader/anxiety.html)
    - 既存の理論・東洋思想・創造の五段階の語に当てるとき：`docs/rules/stance-theories.md`
-   - stance の一行の読みに迷ったとき：`docs/rules/stance-history.md` の同じ節（何への答えだったかと原文）
    - その読み物で何を決めたかを知りたいとき：`docs/rules/decisions.md` のそのページの行
 
 構えは四つです。

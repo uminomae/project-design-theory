@@ -281,6 +281,7 @@ To review a paper or text using the view of "Love駆動開発と呼びたいも�
 | 創造とは / What Is Creation | https://uminomae.github.io/project-design-theory/cs/ | What structure and process does something follow when it comes into being? An exploration that sets theories from 30 fields side by side and writes them in five stages (Field → Wave → Edge → Vortex → Bundle) |
 | 意識とは / What Is Consciousness | https://uminomae.github.io/project-design-theory/as/ | What do people cut the world with? An exploration through two signals: whether we can survive, and whether we can stay connected (trust) |
 | 欠損駆動思考 / Kesson-Driven Thinking | https://uminomae.github.io/project-design-theory/ks/ | What do people sense where symbols read zero? An exploration of a stance of mind driven by a sense of lack or unease |
+| Blog | https://uminomae.github.io/project-design-theory/blog/ | Posts by pjdhiro (Japanese). Each post keeps the original wording; explanations are placed in a separate window under "この記事の解説", not mixed into the body |
 
 ## Author
 

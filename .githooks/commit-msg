@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# commit の文に pjdhiro の発言の原文を写さない（docs/rules/git.md・CLAUDE.md の絶対原則・2026-11-28）。
+# チャットは Claude との作業で、公開の repo の履歴に残すものとは別。書くのは、何を直したかと、一般にした一行だけ。
+msg="$1"
+body="$(grep -v '^#' "$msg")"
+if printf '%s' "$body" | grep -qE 'pjdhiro ?「'; then
+  echo "commit-msg: commit の文に pjdhiro「…」（発言の原文）があります。何を直したかと、決めた見方や決まりを一般にした一行に書き直してください（docs/rules/git.md）。" >&2
+  exit 1
+fi
+exit 0

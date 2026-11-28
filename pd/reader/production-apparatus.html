@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/production-apparatus.html を直接編集しないでください。
+  正本:   knowledge/research/production-apparatus/READER-production-apparatus.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「生産装置の変化」のページです（工事中）。生産装置が変わるときに起きることを、三つの目で見る。新しい装置を古い装置のやり方で使う時期がくり返し起きてきたこと、情報の生産では言葉が規格にならず字面だけが量産され、解説のサービスが知りたい欲求と唯一の正解として消化したい欲求に応えて言葉を届け、満足が本物のまま誤解の蔓延へ進むこと（pjdhiro の見方では、創造の段階の束のように、安定でもあり停滞への道でもある）、AI が字面をほぼ無料で作れるようになるとイノベーションのジレンマのようなことが起きるのではないか、という仮説。
+  歴史と研究の例は Claude が原典で確かめて要約したもので、各章の「出典：」行に添えている。発達段階と誤解の強め合いを生産装置に当てた読みと、AI の章は、このページの仮説。
+  pjdhiro 本人の言葉は「pjdhiro の見方：」「pjdhiro の体験：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>生産装置の変化 | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/production-apparatus.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="生産装置が変わるときに起きることを、三つの目で見る。新しい装置を古い装置のやり方で使う時期がくり返し起きてきたこと、情報の生産では言葉が規格にならず字面だけが量産され、解説のサービスが知りたい欲求と唯一の正解として消化したい欲求に応えて言葉を届け、満足が本物のまま誤解の蔓延へ進むこと（pjdhiro の見方では、創造の段階の束のように、安定でもあり停滞への道でもある）、AI が字面をほぼ無料で作れるようになるとイノベーションのジレンマのようなことが起きるのではないか、という仮説。">
+    <meta property="og:title" content="生産装置の変化">
+    <meta property="og:description" content="生産装置が変わるときに起きることを、三つの目で見る。新しい装置を古い装置のやり方で使う時期がくり返し起きてきたこと、情報の生産では言葉が規格にならず字面だけが量産され、解説のサービスが知りたい欲求と唯一の正解として消化したい欲求に応えて言葉を届け、満足が本物のまま誤解の蔓延へ進むこと（pjdhiro の見方では、創造の段階の束のように、安定でもあり停滞への道でもある）、AI が字面をほぼ無料で作れるようになるとイノベーションのジレンマのようなことが起きるのではないか、という仮説。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/production-apparatus.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="生産装置の変化">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-28">
+    <meta property="article:modified_time" content="2026-11-28">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "生産装置の変化",
+          "description": "生産装置が変わるときに起きることを、三つの目で見る。新しい装置を古い装置のやり方で使う時期がくり返し起きてきたこと、情報の生産では言葉が規格にならず字面だけが量産され、解説のサービスが知りたい欲求と唯一の正解として消化したい欲求に応えて言葉を届け、満足が本物のまま誤解の蔓延へ進むこと（pjdhiro の見方では、創造の段階の束のように、安定でもあり停滞への道でもある）、AI が字面をほぼ無料で作れるようになるとイノベーションのジレンマのようなことが起きるのではないか、という仮説。",
+          "keywords": "生産装置, 情報社会, AI 社会, 言語化, 発達段階, 誤解, 共振, 生産性の逆説, ダイナモ, イノベーションのジレンマ, 検索, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/production-apparatus.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/production-apparatus.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-28",
+          "dateModified": "2026-11-28",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "生産装置"}, {"@type": "Thing", "name": "情報社会"}, {"@type": "Thing", "name": "成人の発達段階"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方の言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「生産装置の変化」のページです（工事中）。生産装置が変わるときに起きることを、三つの目で見る。新しい装置を古い装置のやり方で使う時期がくり返し起きてきたこと、情報の生産では言葉が規格にならず字面だけが量産され、解説のサービスが知りたい欲求と唯一の正解として消化したい欲求に応えて言葉を届け、満足が本物のまま誤解の蔓延へ進むこと（pjdhiro の見方では、創造の段階の束のように、安定でもあり停滞への道でもある）、AI が字面をほぼ無料で作れるようになるとイノベーションのジレンマのようなことが起きるのではないか、という仮説。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>生産装置の変化</h1>
+                <p class="reader-subtitle">いつも起きること・情報の生産で起きること・インターネットから AI へ</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-28 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/production-apparatus/READER-production-apparatus.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<div class="reader-lead glow-card" id="pa-gist"><span class="reader-lead__label">ざっくりいうと</span>
+<p>道具や機械が変わると、作られる物だけでなく、作り方・確かめ方・使われ方まで変わります。では、インターネットからの四半世紀に、言葉の生産では何が起きていて、そこに AI が来ると何が起きるのでしょうか。</p>
+<p>pjdhiro の見立てに、Claude が歴史と研究を調べて答えています。いつも起きること・情報の生産で起きること・今回だけのこと、の三つの目で見ます。</p>
+<p>🚧 まだ中途半端なページです。三つ目の目（インターネットから AI へ）は工事中で、見立ての多くは、まだ確かめていない仮説です。</p>
+</div>
+
+<p class="reader-summary__title" id="overview">概要</p>
+
+<p class="reader-lead"><span class="reader-lead__label">問い</span>生産装置が変わるとき、何が起きるのでしょうか。情報社会から AI 社会への変わり目では、何が起きているのでしょうか。</p>
+
+<div class="reader-lead"><span class="reader-lead__label">今の答え</span>
+三つの目で見ると、次のように見えてきます。一つ目に、生産装置が変わるときには、新しい装置を古い装置のやり方で使う時期が、いつも起きてきたようです。二つ目に、情報の生産では、製品が言葉です。言葉は材料のように規格にできず、同じ字面でも受け取る人の発達の段階で中身が変わります。それでも字面は量産され、知りたい欲求と、唯一の正解として消化したい欲求に応える解説のサービスが、言葉を多くの人に届けてきました。満足は本物で、その噛み合いが続いた先に、誤解の蔓延が来ます。pjdhiro は、この流れを、創造の段階の束（新たな安定）として、安定でもあり停滞への道でもある、世界の進化にとって必要な停滞と見ています。三つ目に、AI が字面をほぼ無料で作れるようになると、イノベーションのジレンマのようなことが起きるのではないか、というのがこのページの仮説です。AI は、停滞した束に来る次の揺らぎにあたるのかもしれません。
+</div>
+
+<details class="acc"><summary>要点 — 語の定義・よくある誤解・このページの視点・効く条件</summary>
+
+<div class="tablefit cols-2">
+
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>このページの語の定義</th>
+<th>生産装置は、物や情報を作り、確かめ、届ける仕組みの全体を指します。機械だけでなく、働く人の集め方・品質の確かめ方・売れたかどうかの数え方も入れます</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>よくある誤解</td>
+<td>言葉は、材料のように規格にできる。字面が同じなら、同じ物が届いている。満足度が高ければ、製品にずれはない</td>
+</tr>
+<tr>
+<td>このページの視点</td>
+<td>同じ現象を、いつも起きること・情報の生産で起きること・今回だけのこと、の三つの位置から見ます。どれか一つを正しい見方とはしません</td>
+</tr>
+<tr>
+<td>効く条件</td>
+<td>言葉で作られた製品（記事・研修・解説・まとめ）の質を考えるとき、字面の正しさだけでなく、作る人と受け取る人の段階まで含めて見る足場になります</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+</details>
+
+<details class="sec" id="生産装置が変わるときいつも起きること" open><summary>生産装置が変わるとき、いつも起きること</summary><div class="secbody">
+
+
+<p>情報社会を、工業社会のやり方で動かしてきたのではないか。このページは、この問いから始まりました。生産装置が変わったのに、古い装置のやり方で動かす、という形は、情報社会に限らず、生産装置が変わるときにくり返し起きてきたようです。</p>
+<p>たとえば、経済史家のポール・デイヴィッドは、工場の電化を調べています（1990 年）。米国では 1899 年に、工場の機械を回す動力のうち、電動機の分は 5% に満たなかったそうです。電化が生産性の伸びに表れたのは 1920 年代に入ってからで、最初の発電所から四十年ほどが経っていました。遅れた理由として、デイヴィッドは三つを挙げています。水車や蒸気に合わせて建てた工場がまだ使えたので、建て替えが割に合わなかったこと。古い軸とベルトを残したまま電動機を足す使い方が、長く主流だったこと。機械ごとに電動機を付けて工場の配置を変えるには、設計する人たちの経験が積み重なる時間が要ったこと、です。デイヴィッドは、この遅れを、計算機が入っても生産性の統計に表れない、という当時の議論に重ねています。</p>
+<p>新しい装置が入っても、建物も働き方も古い装置に合わせたままのあいだは、新しい装置の力は表に出てこない、と読めます。</p>
+<p>量が先に増えて、それを受け止める仕組みがあとから追いつく、という形もくり返されてきたようです。たとえば、活版印刷が広まったあとのドイツ語圏では、1500 年から 1530 年に約 1 万の版の小冊子が出たと見積もられています。その四分の三ほどが 1520 年から 1526 年の宗教改革の数年に集まり、ルター一人で全体の 2 割ほどを占めた、とされます（歴史家のマーク・エドワーズが、ケーラーの見積もりを引いて書いています。1994 年）。</p>
+<p>もう一つ、古い装置の側が、間違えたからではなく合理的に動いたからこそ崩れる、という形も知られています。経営学者のクレイトン・クリステンセンが、イノベーションのジレンマと呼んだものです。クリステンセンは、新しい製品がはじめは今ある製品ほど良くない一方で、より単純で、便利で、安いことを挙げています。既存の企業は、いちばん要求の高い顧客を満たし、利益の大きい所に投資を続けます。その合理的な動きのために、足元から来る新しいものに後れを取る、という説明です。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：<a href="https://www.gwern.net/doc/economics/automation/1990-david.pdf">David (1990)</a>「The Dynamo and the Computer」<em>American Economic Review</em> 80(2), pp.355–361（写しの本文で確認。pp.356–359）／<a href="https://publishing.cdlib.org/ucpressebooks/public/book/printing-propaganda-and-martin-luther.html">Edwards (1994)</a>『Printing, Propaganda, and Martin Luther』University of California Press（全文の公開で確認。pp.17–18。数はケーラーの見積もりの引用）／Christensen「<a href="https://ixdf.org/literature/book/the-encyclopedia-of-human-computer-interaction-2nd-ed/disruptive-innovation">Disruptive Innovation</a>」（<em>The Encyclopedia of Human-Computer Interaction</em> 第 2 版の第 17 章。著者が 2003 年の本『The Innovator's Solution』から書き直した章。本文で確認。17.2・17.5 節）</p>
+</details>
+
+</div></details><details class="sec" id="情報の生産で起きること" open><summary>情報の生産で起きること</summary><div class="secbody">
+
+
+<p>では、情報の生産では、何が古いやり方のまま動いたのでしょうか。手がかりは、言葉という製品が、材料のように規格にできないことにありそうです。</p>
+<p>工業の生産では、材料は規格にでき、仕様書と検品で品質を確かめられます。組み立てる人の内面は、製品の品質にあまり表れません。だから、多くの人の手で大量に組み立てても、規格のほうが品質を支えてくれます。</p>
+<p>言葉の生産では、そうはいきません。同じ言葉が、受け取る人の発達の段階によって違う意味で受け取られることは、<a href="developmental-stages.html#同じ言葉が段階で違って受け取られる">精神の発達段階とは</a>で見ています。高い段階で生まれた言葉（主体性・共感・心理的安全性のような言葉）は、その言葉が成り立つ条件と、読み違いを止める歯止めを含めて、はじめて同じ中身になります。字面は写せますが、条件と歯止めは字面には写りません。</p>
+<p>それでも、なんでも言語化できる、という前提に立てば、字面が同じなら同じ物が届いている、と見なせます。この前提が、検品の代わりをしてきたのではないか、と読めます。そうだとすると、ずれは、作る人や読む人の一人ひとりの側でなく、言葉を規格品の材料のように扱う装置の側にあることになります。</p>
+<p>では、この装置は、ただ誤っていたのでしょうか。pjdhiro は、言葉が生まれてから広まるまでを、一つの流れとして見ています。</p>
+<blockquote class="reader-callout reader-request">
+<p><a id="pa-flow"></a><strong>pjdhiro の見方：</strong>高い段階で生まれた言葉 ＞ 知りたい欲求と、唯一の正解として消化したい欲求を満たす解説サービス ＞ 顧客満足 ＞ 誤解の蔓延 ＞ 世界の進化にとって必要な停滞、ということではないかな。</p>
+</blockquote>
+<p>この流れの中では、誰も騙してはいません。知りたい欲求も、唯一の正解として消化したい欲求も本物で、解説のサービスはそれに応えています。だから顧客の満足も本物です。ずれが満足度に表れないのは、作る側と使う側が同じ読みで噛み合っているからです。閲覧の数や売れ行きが検品の代わりになり、噛み合った読みほど数が出て、装置はその読みを良品として作り直します。誤解の蔓延は、この噛み合いが続いた先に来ます。</p>
+<p>pjdhiro は、この流れを、創造の段階に重ねています。</p>
+<blockquote class="reader-callout reader-request">
+<p><a id="pa-bundle"></a><strong>pjdhiro の見方：</strong>創造の段階でいうと、渦の後の流れとしての束は、安定でもあり、停滞への道でもあるんですよね。</p>
+</blockquote>
+<p>創造の五段階は、場・波・縁・渦・束の五つで、状況の言葉で言い換えると、安定・変化・衝突・統合・新たな安定です（<a href="../cs/">創造とは</a>の<a href="../cs/reader/research-history.html#仮説としての五段階">調査の経緯</a>）。高い段階の言葉が生まれるのは、渦にあたるところと読めます。解説のサービスは、その言葉を流れとして束ね、多くの人に届けます。束は新たな安定なので、満足は本物で、流れは長く続きます。安定しているからこそ、流れは同じ読みをくり返し、停滞へも向かいます。満足と誤解の蔓延は、同じ束の二つの時期であって、分けて片方だけを取り除けるものではないのかもしれません。</p>
+<p>停滞した束は、次の場にもなります。停滞が世界の進化にとって必要だ、という見方は、このページでは見立てとして置きます。一つ目の章のデイヴィッドの電化の四十年も、古い工場という束の安定が続いた時期で、その中で、次の配置へ向かう設計の経験が積み重なっていた、と読み直すことができます。</p>
+<details class="acc"><summary>詳しく — 字面と条件の違いを、一つの言葉で見る</summary>
+
+<p>精神の発達段階とはの章は、「心理的安全性を高めよう」という呼びかけが、段階ごとに違って聞こえやすいことを、表で見せています。ある段階では、仲間外れにしないことに。別の段階では、自分の判断を否定されないことに。さらに別の段階では、上からの号令そのものが押しつけに聞こえることもあります。字面は一つでも、届いている物は三つある、と言えます。このページは、この違いが一人の受け取り手で終わらず、作る・運ぶ・数える仕組みの中でくり返されるところを見ています。</p>
+</details>
+
+</div></details><details class="sec" id="インターネットの四半世紀からai-へ" open><summary>インターネットの四半世紀から、AI へ</summary><div class="secbody">
+
+
+<p>🚧 この章は工事中です。今あるのは、pjdhiro の見立てと、Claude が当ててみた仮説だけです。</p>
+<p>情報社会の装置の上に AI が来たとき、何が起きるのか。一つ目の章で見たイノベーションのジレンマのようなことが、起きるのかもしれません。</p>
+<p>この変わり目を見る手がかりとして、まず、検索の順位の仕組みを見ておきます。Google の検索を始めたセルゲイ・ブリンとラリー・ページは、1998 年の論文で、ウェブのリンクを、論文の引用のように扱うと書いています。多くのページから、または重みの大きいページから指されているページほど、重みが大きくなり、その重みで検索の結果を並べます（PageRank）。</p>
+<p>指されている数が順位の重みになる仕組みは、束を太くする仕組みとも読めます。多くの人が指したものが上に来るので、誰でも、多くの人が確かめてきたものに早く届けます。同じ仕組みは、前の章で見た、数が検品の代わりになる形にも重なります。噛み合った読みほど多くのページから指されて上に並び、指されることの少ない希少な情報は、下に沈みやすくなります。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>出典：<a href="https://doi.org/10.1016/S0169-7552(98)00110-X">Brin and Page (1998)</a>「The anatomy of a large-scale hypertextual Web search engine」<em>Computer Networks and ISDN Systems</em> 30(1–7), pp.107–117（<a href="http://snap.stanford.edu/class/cs224w-readings/Brin98Anatomy.pdf">誌面の写し</a>の本文で確認。pp.109–110）</p>
+</details>
+
+<p>この装置が強かったのは、字面を安く作れたからでした。AI は、字面をほぼ無料で作れます。安く字面を作れることが強みでなくなると、その強みの上に立っていた作り方は、合理的に動いているまま、足元から変わっていくのかもしれません。一つ目の章で見たジレンマの形に、当ててみることができます。AI で確かめる手間が下がると、誤解して解釈されてきたものが照らされていく、という pjdhiro の見方は、<a href="capacity-after-ai.html#ca-exposed">AI の時代に、差になるスキルは何か</a>で、人の側から見ています。</p>
+<p>前の章の束の流れに当てると、AI は、停滞した束に来る次の揺らぎ（波）にあたるのかもしれません。AI は、問いに合うものを、順位にかかわらず読みに行けます。沈んでいた希少な情報や、言葉が成り立つ条件まで含めて届ける道が開けるのかもしれません。一方で、AI が学んだ材料の多くは、すでに束になった読みのほうかもしれません。そうなら、揺らぎが渦になる前に、束の読みがいっそう滑らかに量産される時期も来るのかもしれません。</p>
+<p>今回の変わり目が、これまでの生産装置の変化と違うかもしれないところもあります。これまでの変化は、主に作る段の変化でした。AI は、作る段だけでなく、読む段と確かめる段にも入ってきます。作る・確かめる・使うの全部が同時に変わる、という点は、今回だけのことかもしれません。どちらに転ぶかはまだ起きていないことで、このページでは仮説として置き、起きることを見ながら直していきます。</p>
+</div></details><details class="sec" id="保持論点"><summary>保持論点</summary><div class="secbody">
+<ul>
+<li>新しい装置を古い装置のやり方で使う時期は、どのくらい続き、何がきっかけで終わってきたのか。</li>
+<li>言葉の生産で、検品の代わりになってきたもの（閲覧の数・順位・売れ行き）は、束の安定と停滞に、どれだけ効いてきたのか。</li>
+<li>停滞した束が次の場になるのは、どんなときか。停滞が世界の進化にとって必要だ、という見立ては、何で確かめられるのか。</li>
+<li>作る側と使う側の段階が近いことは、どう確かめられるのか。</li>
+<li>AI は、束になった読みを増やすのか、埋もれた情報に届く道を開くのか。両方が同時に起きるなら、何がその割合を決めるのか。</li>
+<li>作る・確かめる・使うが同時に変わることは、これまでの生産装置の変化に、例があるのか。</li>
+</ul>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="ai-society.html">AI 社会とは</a> ・
+                <a href="developmental-stages.html">精神の発達段階とは</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

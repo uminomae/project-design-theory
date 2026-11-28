@@ -22,7 +22,8 @@
 
 - **この repo は公開**。入れる前に `docs/PUBLISH-CHECK.md` の点検を通す。迷うものは入れずに pjdhiro に確かめる。
 - **今までの repo（project-design・creation-space・kesson-space・awareness-space）は、中身をここに複製して移し、ここで更新する**（`pd/`・`cs/`・`as/`・`ks/`）。今までの repo は四つとも更新しない。調査結果を新しく書くときは、一次ソースで照合し直し、通ったものを書く（pjdhiro 2026-11-07・`docs/BUILD-PLAN.md`）。
-- **pjdhiro の発言は趣旨を残す**。誤字・脱字は直してよい。何への答えだったかを添え、Claude の推測を混ぜない。趣旨が変わりうる直しは pjdhiro に確かめる。
+- **チャットは Claude との作業で、repo に残すものとは別**。commit の文・規約・記録・Issue には、何を直したかと、決めた見方や決まりを一般にした一行だけを書く。pjdhiro の発言の原文と、それが出た場面は写さない。原文が要るときは、git に入らない `dialogues/`・`.cache/session/` にだけ置く（2026-11-28）。commit の文は `.githooks/commit-msg` が止める。
+- **公開ページに引く pjdhiro の言葉（カードなど）は、pjdhiro が出すと決めた言葉**。趣旨を残す。誤字・脱字は直してよい。Claude の推測を混ぜない。趣旨が変わりうる直しは pjdhiro に確かめる。
 - **取り消せない操作、価値判断を伴う操作は pjdhiro の明示的承認なしに実行しない**。
 - **しっくり感の判定・理論の採否・公開判定は pjdhiro が行う**。
 
@@ -34,24 +35,24 @@
 
 ## 対話・執筆の前に読む
 
-毎回読むのは最初の行の二つの正本（`stance.md`・`corrections.md`）の全文。芯だけで始めない。残りは、その作業をするときに読む（pjdhiro 2026-11-19「全文に戻す」。芯だけで始めたセッションで、たとえの対話が「ここまでの議論をまるで参照していないように見えます」「話が伝わらない感じが困る。コンテキストで読み込む内容を変えたからだと思う」となったため）。
+毎回読むのは最初の行の二つの正本（`stance.md`・`corrections.md`）の全文。芯だけで始めない。残りは、その作業をするときに読む（2026-11-19。芯だけで始めると、それまでの議論が読めていない返事になったため）。
 
-**読みに行くのをためらわない。** 分けて置いたもの（`stance-history.md`・`stance-theories.md`・`corrections-examples.md`・`corrections-rg.md`・`corrections-k.md` ほか）も、少しでも関わりそうなら開く。判断を仰ぐ前・案を出す前・公開文を書く前・pjdhiro の言葉の読みに迷ったときは、関わる節を必ず開く。トークンの節約を、判断の精度より先にしない（pjdhiro 2026-11-19「現在のclaudeの判断は私に近づいているので気に入っています。その精度が落ちないよう、読みにいく場合のハードルは下げて、トークン節約だけを優先することのないようにして」）。
+**読みに行くのをためらわない。** 分けて置いたもの（`stance-theories.md`・`corrections-examples.md`・`corrections-rg.md`・`corrections-k.md` ほか）も、少しでも関わりそうなら開く。判断を仰ぐ前・案を出す前・公開文を書く前・pjdhiro の言葉の読みに迷ったときは、関わる節を必ず開く。トークンの節約を、判断の精度より先にしない（2026-11-19。読みに行く手間より、判断の精度を保つことを先にする）。
 
 | いつ | 読むもの |
 |---|---|
-| 毎回 | `docs/rules/stance.md` の全文：pjdhiro の見方と判断の仕方（項目の補い・pjdhiro の言葉・何への答えか）。迷ったら、pjdhiro ならどう判断するかをここで確かめる。`docs/rules/corrections.md` の全文：Claude が繰り返す誤りの型。自分の案がどの型に当たるかを見て、「書く前の確認」を読む。芯（`stance-core.md`・`corrections-core.md`）は `scripts/rules-core.py` が正本から作る目次で、手で直さない。芯だけで済ませない |
+| 毎回 | `docs/rules/stance.md` の全文：pjdhiro の見方と判断の仕方（各項目と、その下の段の補い。決めた見方を一般にした行で、発言の原文と場面は書かない）。迷ったら、pjdhiro ならどう判断するかをここで確かめる。`docs/rules/corrections.md` の全文：Claude が繰り返す誤りの型。自分の案がどの型に当たるかを見て、「書く前の確認」を読む。芯（`stance-core.md`・`corrections-core.md`）は `scripts/rules-core.py` が正本から作る目次で、手で直さない。芯だけで済ませない |
 | 公開文を書く・直す | `docs/rules/writing.md`：公開文の書き方。`docs/rules/corrections-examples.md`：当たりそうな型の行だけ。`docs/rules/corrections-rg.md`：型 R・G の確認のうち、当たる節だけ（pjdhiro に手作業を頼むときは R5）。main に出す前に念入りに見るときは `docs/rules/review.md`：レビューの手順 |
 | 公開ページを作る・直す（commit の前と main に送る前。必ず） | `.claude/skills/public-page-review/SKILL.md`：これまで公開ページで起きた誤りから溜めた点検の表。§1・§2 は毎回、残りは触ったものの節。直しや指摘があったら、同じ作業で表に足す。通したら `bash scripts/public-page-review.sh --done`（無いと pre-commit が止める）（pjdhiro 2026-11-10） |
 | 手を動かす作業（git の取り込み・push、生成・検査、画面、調べと記録）を始める | `docs/rules/corrections-k.md`：型 K の確認のうち、K0 と、その作業の節だけ。worktree で始めるときは、取り込みを回す前に K1 を読む |
 | 既存の理論・東洋思想・五段階の語を扱う | `docs/rules/stance-theories.md`：理論との距離 |
 | 調べる・引用する | `docs/rules/sources.md`：調べ方と原典の照合 |
 | wiki を作り直す・ページを足す | `.claude/skills/wiki-compile/SKILL.md`：作り直しは週に一度、別のセッションにまとめて出す（「週の作り直し」）。正本を直して wiki の知らせが出ても、その作業では作り直さない（pjdhiro 2026-11-24） |
-| 評価・達成度合い・リリース文を扱う | `docs/RELEASE-STAGES.md` の §0：評価の考え方（目的から始め、基準を探し、評価できるかを調べ、できそうなものだけを公開する）と、軸ごとのいまの状態。状態を変えたら、同じ作業で §0 を直す（pjdhiro 2026-11-27「セッションのたびに説明するの困る」） |
+| 評価・達成度合い・リリース文を扱う | `docs/RELEASE-STAGES.md` の §0：評価の考え方（目的から始め、基準を探し、評価できるかを調べ、できそうなものだけを公開する）と、軸ごとのいまの状態。状態を変えたら、同じ作業で §0 を直す（2026-11-27。セッションのたびに説明し直さなくて済むように） |
 | 特定のページ・Issue を触る | `docs/rules/decisions.md`：そのページ・Issue の行だけ（Love駆動開発の読み物は、終わりの「読み物の組み立て」の節も） |
 | 司令塔のセッションの始め・「付箋帳」「違和感帳」と言われた | `docs/tools/fusen-cho.md`：手元の指示を付箋のように置く帳面（アーティファクト）の読み方・返事の書き方・しまい方。2026-11-17 に違和感帳（`docs/tools/iwakan-cho.md`・読むだけで残す）から移った |
 
-新しい指摘を受けたら、同じセッションで stance.md か corrections.md（正本）に足し、芯は commit のときに pre-commit が作り直す（手で回すなら `python3 -I scripts/rules-core.py`。食い違いは check.sh が止める）。足すときは、まず既にある行に溶かせるかを見る。正本の行には日付・番号と言葉の芯を書き、何への答えだったか（場面）と原文は `stance-history.md`・`corrections-history.md` の同じ節に足す（2026-11-20・毎回読む量を減らすため）。ページや Issue ごとの判定は decisions.md に、見方として一般化できる一行だけを stance.md に書く。代表例（corrections-examples.md）は型ごとに一、二件に保ち、足すなら入れ替える。
+新しい指摘を受けたら、同じセッションで stance.md か corrections.md（正本）に足し、芯は commit のときに pre-commit が作り直す（手で回すなら `python3 -I scripts/rules-core.py`。食い違いは check.sh が止める）。足すときは、まず既にある行に溶かせるかを見る。正本の行には、日付・番号と、決めた見方や決まりを一般にした一行だけを書く。発言の原文と場面は写さない。読みに迷ったときのために原文を残すなら、本体の checkout の手元の `dialogues/rules-history/`（git に入らない。2026-11-28 に `stance-history.md`・`corrections-history.md` をここへ移した）の同じ節に足す。ページや Issue ごとの判定は decisions.md に、見方として一般化できる一行だけを stance.md に書く。代表例（corrections-examples.md）は型ごとに一、二件に保ち、足すなら入れ替える。
 
 ## セッションの終わりに
 

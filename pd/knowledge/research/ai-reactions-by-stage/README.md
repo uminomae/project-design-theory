@@ -11,7 +11,7 @@ Issue: **pd#140** https://github.com/uminomae/project-design-theory/issues/17
 
 ## 1. 目的
 
-2026-11-03 の対話（`knowledge/notes/dialogue/2026-11-03-non-duality-love-gravity-signals.md` §5）で、「先が見えない（不確かさ）」が帯によって違って現れる表を立てた。
+2026-11-03 の対話（`dialogues/notes-dialogue/2026-11-03-non-duality-love-gravity-signals.md`（手元・git に入らない） §5）で、「先が見えない（不確かさ）」が帯によって違って現れる表を立てた。
 
 | 帯 | 「先が見えない」の現れ方（§5 の表） |
 |---|---|

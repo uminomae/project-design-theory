@@ -5,7 +5,7 @@
 **関連**: [CN-026](CN-026_kesson-as-imaginary-axis-value-read-as-zero.md)（欠損＝虚軸に値があって認知上は 0）, [CN-024](CN-024_stage-as-object-and-embrace.md)（対象と包容の二軸）,
 [CN-009](CN-009_cut-complementary-projection.md)（Being/Doing は観測の構え）, `knowledge/meta/2026-11-01-love-as-attraction-in-pd-top.md`（Love＝つながりを生む引力一般）,
 `.claude/rules/cs-as-component.md`（cs を部品として引用する原則）, pd#138, pd#139, ks#215
-**出典**: 対話録 `knowledge/notes/dialogue/2026-11-03-non-duality-love-gravity-signals.md` §4（2026-11-03・Session 20261103-123）／補強の出典: 対話録 `knowledge/notes/dialogue/2026-11-03-love-driven-dev-position-in-business-design.md`（2026-11-03・事業構想学における位置付け・pjdhiro 承認「CN-027 を補強」）
+**出典**: 対話録 `dialogues/notes-dialogue/2026-11-03-non-duality-love-gravity-signals.md`（手元・git に入らない） §4（2026-11-03・Session 20261103-123）／補強の出典: 対話録 `dialogues/notes-dialogue/2026-11-03-love-driven-dev-position-in-business-design.md`（手元・git に入らない）（2026-11-03・事業構想学における位置付け・pjdhiro 承認「CN-027 を補強」）
 **正本の予定**: 「関係優位の存在論＝cs/as/ks/pd の共通土台」は techo 起点で育てる方針。本ノートはその最初の具体形の候補で、techo 側で結晶したらそちらを指す参照に縮める。
 
 ---
@@ -53,7 +53,7 @@ gravity-love（pd#138）の対話で、非二元性・欠損・信号・創造�
 
 ## 1d. 構成要素は分類でなく、物語の中の役（補強 2026-11-05・Q&A Filing・pjdhiro 承認）
 
-出典: 対話録 `knowledge/notes/dialogue/2026-11-05-claude-common-sense-alignment-vortex-field.md` §4（Session 20261105-455）。本文の置き場所は `reader/love-driven-dev.html` の第六稿（物語の中段）。
+出典: 対話録 `dialogues/notes-dialogue/2026-11-05-claude-common-sense-alignment-vortex-field.md`（手元・git に入らない） §4（Session 20261105-455）。本文の置き場所は `reader/love-driven-dev.html` の第六稿（物語の中段）。
 
 - **四つは MECE の部品で、全部揃っているかもしれない**（pjdhiro「パズルの部品としてMECEである可能性がある」「Love駆動開発を説明するために必須の部品です。そして、全て揃っているかもしれない」）。
 - **ただし一つの基準での分類ではない**（Claude の整理）。cs＝世界の側（渦がありふれている）／as・ks＝受け取る側（生存と信頼の信号で切り取り、合わないところに欠損を感じて抱持する）／pd＝関わる側（価値の認識と創造のデザイン）で、Love駆動開発も一つの論として含む包括の器（pjdhiro「pd repoはLove駆動開発すらも一つの論としてる」）／駆動源＝まだ分からない問いそのもの。§1 の「一本の線」の順路として並べると、Claude が継ぎ目を作って無理につなぐことになる。

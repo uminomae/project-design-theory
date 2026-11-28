@@ -413,6 +413,30 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/psychological-well-being/READER-psychological-well-being.md",
+        ROOT / "scripts/reader-psychological-well-being-template.html",
+        ROOT / "reader/psychological-well-being.html",
+        "flow",
+    ),
+    (
+        ROOT / "knowledge/research/kousou/READER-kousou.md",
+        ROOT / "scripts/reader-kousou-template.html",
+        ROOT / "reader/kousou.html",
+        "flow",
+    ),
+    (
+        ROOT / "knowledge/research/production-apparatus/READER-production-apparatus.md",
+        ROOT / "scripts/reader-production-apparatus-template.html",
+        ROOT / "reader/production-apparatus.html",
+        "flow",
+    ),
+    (
+        ROOT / "knowledge/research/ai-society/READER-ai-society.md",
+        ROOT / "scripts/reader-ai-society-template.html",
+        ROOT / "reader/ai-society.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/breath-filter/READER-breath-filter.md",
         ROOT / "scripts/reader-breath-filter-template.html",
         ROOT / "reader/breath-filter.html",

@@ -8,7 +8,7 @@
 | 状態 | 草案 |
 | 作成 | Claude（pjdhiro との対話を整理） |
 | 上位の仕様 | `docs/DESIGN-INTENT.md` |
-| 根拠 | `docs/rules/stance.md`（全文）・`docs/rules/corrections.md`。発言の原文と文脈は `docs/rules/stance-history.md` |
+| 根拠 | `docs/rules/stance.md`（全文）・`docs/rules/corrections.md` |
 
 この文書は仕様だけを書く。各項目の理由と、pjdhiro の言葉のニュアンスは根拠の文書で確かめる。
 
@@ -84,7 +84,7 @@ git clone --depth 1 https://github.com/uminomae/project-design-theory
 |---|---|---|
 | 1（必須） | `stance.md` と `corrections.md` の全文、公開ページの冒頭の概要と各部の頭 | 約 7〜8 万トークン |
 | 2（推奨） | 本体の正本 `READER-love-driven-dev.md` の全文。入りきらない場合は部（`<!--PART:` の印）ごと | 約 20 万トークン |
-| 3（任意） | 対象に合わせて、4 章の依存モジュールと `stance-theories.md`・`stance-history.md`・`decisions.md` | 対象による |
+| 3（任意） | 対象に合わせて、4 章の依存モジュールと `stance-theories.md`・`decisions.md` | 対象による |
 
 ### 5.3 呼び出し
 

@@ -94,7 +94,13 @@
 
 ユングは、人の本性は光だけでできているのでなく、影にも満ちている、と書きました（1928 年）。無意識の中身を意識に取り込んでいくと、ある種の思慮深い寛容が生まれ、受け容れにくい性格の要素も受け容れられるようになる、とも書いています。ユングにとって、個性化（自己実現）は、この取り込みの先にあります。
 
-心理学者のリフは、自己実現・個性化・十分に機能すること・最適な発達を論じてきた理論の重なりから、心のよい状態の六つの面を取り出しました。その一つが自己受容です。自己受容の高い人は、良い面も悪い面も含めて、自分のいろいろな面を認め、受け容れている、とリフは書いています。
+このユングの個性化の過程は、pjdhiro がこの見方に行き着いたきっかけでもあります。
+
+<strong>pjdhiro の体験：</strong>私が自己実現と自己受容について腹に落ちるように気づいたのは、ユングの個性化の過程を知った時ですね。精神分析論の心理的防衛機制と合わせてヒントになりました。経験が先にあり、それらの現象が的確に詳細に記述されていた。
+
+理論を読んで見方ができたのではなく、先にあった経験に、ユングの個性化の過程と、心が自分を守る働き（防衛機制）の記述が、名前を与えた、という順です。守りの働きそのものは、「[心理的防衛機制とは](defense-mechanisms.html)」で見ています。
+
+心理学者のリフは、自己実現・個性化・十分に機能すること・最適な発達を論じてきた理論の重なりから、心のよい状態の六つの面を取り出しました。その一つが自己受容です。自己受容の高い人は、良い面も悪い面も含めて、自分のいろいろな面を認め、受け容れている、とリフは書いています。六つの面がどの理論から取り出されたかは、「[心理的ウェルビーイングとは](psychological-well-being.html)」で見ています。
 
 心理療法家のエリスは、うまくやれるかどうか、人に認められるかどうかに関わらず、自分を無条件に受け容れることを選べる、と書きました。自分のしたことが誤りや愚かさや不道徳であることを認めたうえで、その誤りを持った自分を受け容れる、という言い方です。
 
@@ -114,15 +120,25 @@
 
 ## 不安も、受け容れる
 
-<a id="sr-anxiety"></a>pjdhiro の見方は、受け容れるものに不安も入れています。不安は消すもの、鎮めるもの、と考えるのがふつうかもしれません。
+<a id="sr-anxiety"></a>pjdhiro の見方は、受け容れるものに不安も入れています。不安は消すもの、鎮めるもの、と考えるのがふつうかもしれません。自己受容した状態で不安がどうなるかを、pjdhiro はこう話しています。
 
-精神科医の森田正馬は、不安を取り除こうとするのでなく、あるがままに受け容れるように説きました。いつも不安心である、という心に住みついていれば、そこに初めて大きな安心がある、と書いています（1928 年）。苦しいことも忍耐して、毎日のなすべきことをなし、自分の人生の欲望を追っていく、とも続けます。
+<strong>pjdhiro の見方：</strong>弱さの防衛がないため、不安も少ない。正確には不安は出るが、不安と共にいられる。これは勇気の定義の一つだと思う。それは安心の定義の一つだと思う。
 
-ゴールドスタインは、不安に耐える力を本当の勇気と呼びました（1939 年）。勇気とは、存在の衝撃に「はい」と答えることで、その衝撃は、自分の本性を実現するために担わなければならないものだ、と書いています。ゴールドスタインにとって、不安に耐えることは、自己実現の外でなく、その中にあります。
+この言葉にある、不安と共にいること・勇気・安心の三つは、それぞれ、これまでの論の言葉とつながります。
 
-心理療法のアクセプタンス＆コミットメント・セラピー（ACT）も、心の中に湧く不快なものを、形や頻度を変えようとせずに抱きとめることを、受容と呼んでいます。不安の強い人に、不安を一つの感じとして、守りなしに十分に感じるよう伝える、と書いています（ヘイズたち、2006 年）。
+安心とのつながりを書いたのは、精神科医の森田正馬です。森田は、不安を取り除こうとするのでなく、あるがままに受け容れるように説きました。いつも不安心である、という心に住みついていれば、そこに初めて大きな安心がある、と書いています（1928 年）。苦しいことも忍耐して、毎日のなすべきことをなし、自分の人生の欲望を追っていく、とも続けます。
 
-pjdhiro は、別の所で、自己受容した状態を「正確には不安は出るが、不安と共にいられる。これは勇気の定義の一つだと思う」と話しています。不安が無くなるのでなく、不安と共にいられる、という言い方は、森田の「常に不安心」と、ゴールドスタインの勇気の両方に近いところです。不安とは何かは、「[不安とは](anxiety.html)」で見ています。
+勇気の側では、ゴールドスタインが、不安に耐える力を本当の勇気と呼びました（1939 年）。勇気とは、存在の衝撃に「はい」と答えることで、その衝撃は、自分の本性を実現するために担わなければならないものだ、と書いています。ゴールドスタインにとって、不安に耐えることは、自己実現の外でなく、その中にあります。
+
+不安と勇気を一組にして見ることについて、pjdhiro は、こうも話しています。
+
+<strong>pjdhiro の見方：</strong>不安と勇気がセットというのは、一部の性格の人にしか理解できないと思う。
+
+不安を、まず消したいものとして感じる人にとっては、不安を消さないまま、その中にいることが、勇気に等しいのかもしれません。不安をそれほど消したいと感じない人には、不安と勇気が一組だという言葉は、ぴんとこないのでしょう。人による違いの見方は、「[性格とは](personality.html)」で見ています。
+
+不安と共にいることそのものは、心理療法のアクセプタンス＆コミットメント・セラピー（ACT）が手立てとして教えてきました。ACT は、心の中に湧く不快なものを、形や頻度を変えようとせずに抱きとめることを、受容と呼んでいます。不安の強い人に、不安を一つの感じとして、守りなしに十分に感じるよう伝える、と書いています（ヘイズたち、2006 年）。
+
+森田は安心を、ゴールドスタインは勇気を、ACT は守りなしに感じることを書きました。三つの論は、pjdhiro が一つの状態に重ねて呼んだものを、それぞれ別の面から書いてきたのかもしれません。不安とは何かは、「[不安とは](anxiety.html)」で見ています。
 
 <details><summary>出典</summary>
 
@@ -160,21 +176,33 @@ pjdhiro は、前に、自己受容について次のように話しています
 
 <a id="sr-defense"></a>pjdhiro の見方の終わりの部分は、順番です。受け容れて自分を認めた、そのあとに、守りを外した自己が現れる、という順です。守りを外そうとして外すのでなく、受け容れたあとに、守りが要らなくなる、と読めます。
 
+来談者中心療法のロジャーズは、自分の歩みを振り返る講演で、同じ順番を自分の体験として語っています（1961 年の本の第 1 章）。自分を、はっきり不完全な人間として受け容れやすくなってきた、と言い、そのうえで「不思議な逆説は、私がありのままの自分を受け容れると、私は変わる、ということだ」と続けます。同じ本の第 8 章では、キルケゴールの「本当にそうである自己であること」を引き、変化は、人が本当にそうであるものであろうとするとき、いちばん起きやすくなるのだろう、と書いています。ありのままであろうとすることは、悪く、破壊的になることではないか、という恐れにも答えています。性の気持ちも、怠けたい気持ちも、敵意も、感じてよいし、そうであってよい。それでも世界の屋根は落ちてこない、とロジャーズは書きます。
+
 ゲシュタルト療法の心理療法家ベイサーは、これを変化の逆説と呼びました（1970 年）。変化は、自分でないものになろうとするときではなく、自分であるものになるときに起きる、と書いています。なりたい自分をいったん置いて、いまの自分であろうとするとき、変化が起きる、という見方です。
+
+マズローも、守りと成長の関係を論じた論文で、守りを責めずに先に安全を置く順番を書いています（1956 年）。人は、成長の喜びと安全の不安が、成長の不安と安全の喜びを上回るときに、前へ育つ、とマズローは書きます。そして、安全の欲求は成長の欲求より強く働く、と続けます。よい親や治療者や教育者は、恐れへの敬意と、守りや退行の力が自然なものだという理解が要ることを知っているかのようにふるまう。成長は安全からしか生まれないと分かっていて、守りがとても固いなら、それには十分な理由があると考える、とも書いています。
 
 社会心理学の自己肯定化の研究は、実験の側から近いことを報告してきました。シャーマンとコーエンのまとめによると、人は、自分の値打ちを脅かす知らせを受けると、それを歪めたり退けたりして自分を守ろうとします。けれど、先に自分の大事にしている価値を確かめておくと、同じ知らせに、守りの偏りに頼らずに向き合えるようになります（2006 年）。自分の値打ちが、目の前の場面の評価だけに懸かっていないと分かると、脅かしを歪める必要が減る、と書いています。
 
 守りを外したあとに現れる自己を、ユングは、ペルソナ（人に見せる仮面）の偽りの覆いから解き放たれた自己として書きました（1928 年）。ゴールドスタインは、いまある状態をただ保とうとすることを、病んだ生き物に特徴的なふるまいとし、自己実現の働きが狭まった形と見ました（1939 年）。守ることそのものが、自己が現れることを狭めることがある、という見方として読めます。
 
+精神分析家のウィニコットは、守りと、その奥の自己を、偽りの自己と本当の自己という言葉で書きました（1960 年）。偽りの自己は、周りに合わせることからできあがり、本当の自己を隠して守る働きをする、とウィニコットは書きます。健康に近い場合には、偽りの自己は、本当の自己が自分のものとして生き始められる条件を探すことを、いちばんの関心にしている、とも書いています。そして、自発的な身振りこそが本当の自己の働きで、創造的でありうるのも、本物だと感じられるのも、本当の自己だけだ、と続けます。ウィニコットが本当の自己の現れる条件に置いたのは、応えてくれる環境でした。ほどよい母親が、乳児の万能の表現に応えることをくり返すと、そのくり返しが乳児の弱い自我に力を与え、本当の自己が生き始める、と書いています。自分で自分を受け容れることより、受け容れてくれる他者の側に重みがあります。
+
 このように、受け容れる → 守りがほどける → 自己が現れる、という順番には、臨床と実験の両方に、同じ向きの論があります。ただ、シャーマンとコーエンが確かめさせたのは、弱さそのものでなく、弱さとは別の所にある自分の値打ちでした。弱さそのものを受け容れることが、同じように守りをほどくのかは、まだ確かめていないところです。守りの働きそのものは、「[心理的防衛機制とは](defense-mechanisms.html)」で見ています。
 
 <details><summary>出典</summary>
 
+出典：Rogers (1961) *On Becoming a Person: A Therapist's View of Psychotherapy*, Houghton Mifflin（本文照合済。ただし読んだのは、米国の公立カレッジ Spokane Falls Community College の教員が授業用に置いた、1961 年の版の走査。第 1 章「This is me」は[授業用の写しの PDF](https://faculty.sfcc.spokane.edu/InetShare/AutoWebs/kimt/rogers%20this%20is%20me.pdf)で、p.17 に「It becomes easier for me to accept myself as a decidedly imperfect person」と「the curious paradox is that when I accept myself as I am, then I change.」。第 8 章「"To be that self which one truly is"」は[同じ教員の写しの PDF](https://faculty.sfcc.spokane.edu/InetShare/AutoWebs/kimt/rogers%20to%20be%20that%20self.pdf)で、p.166 にキルケゴールの引用、p.176 に「Change is facilitated, probably maximized, when one is willing to be what he truly is.」、p.177 の節「Does it imply being evil?」に「to be what one truly is would mean to be bad, evil, uncontrolled, destructive」という恐れと「the roof of the world does not fall in」。出版社・著者・大学の機関リポジトリの写しは見つからず、授業の写しの性格を添えて載せている）。
+
 出典：Beisser (1970) "The paradoxical theory of change", Fagan & Shepherd 編 *Gestalt Therapy Now*（本文照合済。読んだのは [The Gestalt Journal Press のサイトの版](https://gestalt.org/arnie.htm)で、原典の頁は写しに無い。「change occurs when one becomes what he is, not when he tries to become what he is not.」、「change can occur when the patient abandons, at least for the moment, what he would like to become and attempts to be what he is.」）。
+
+出典：Maslow (1956) "Defense and growth", *Merrill-Palmer Quarterly* 3(1):36–47（本文照合済。パブリックドメイン。読んだのは [Internet Archive が走査した誌面](https://archive.org/details/sim_merrill-palmer-quarterly_fall-1956_3_1)。ペンシルベニア大学の Online Books Page が、この誌の号も寄稿も著作権の更新が無い、として公開の写しに挙げている。p.38 に「We grow forward when the delights of growth and anxieties of safety are greater than the anxieties of growth and the delights of safety.」、p.40 に「Safety needs are prepotent over growth needs.」、p.43 に、よい親や治療者や教育者は「He implies that he understands that growth can emerge only from safety. He feels that if a person's defenses are very rigid this is for a good reason」。のちに *Toward a Psychology of Being*〔1962〕の第 4 章に入った）。
 
 出典：[Sherman & Cohen (2006)](https://doi.org/10.1016/S0065-2601(06)38004-5) "The psychology of self-defense: Self-affirmation theory", *Advances in Experimental Social Psychology* 38:183–242（本文照合済。読んだのは、Cohen の所属するスタンフォード大学教育学大学院が置いていた出版社の組版の版の [Wayback の記録（2015-04-23）](https://web.archive.org/web/20150423125634id_/https://ed.stanford.edu/sites/default/files/self_defense.pdf)）。p.185 に「Such 'self-affirmations,' by fulfilling the need to protect self-integrity in the face of threat, can enable people to deal with threatening events and information without resorting to defensive biases.」、p.187 に「people realize that their self-worth does not hinge on the evaluative implications of the immediate situation」。
 
 出典：[Jung (1928)](https://archive.org/details/dli.ministry.24254)（本文照合済。上の章と同じ写し。p.185 に「the aim of individuation is to free the self from the false wrappings of the persona on the one hand, and from the suggestive power of the unconscious images on the other.」）。
+
+出典：Winnicott (1960) "Ego distortion in terms of true and false self"、再録 *The Maturational Processes and the Facilitating Environment*, International Universities Press, 1965, pp.140–152（本文照合済。ただし読んだのは、[Internet Archive 自身が走査した 1965 年の本](https://archive.org/details/maturationalproc0000dwwi)で、誰でも全文を読める扱いだが、権利の欄は空で、書誌の年が 1845 と誤っている。同じ三か所を、民間の精神分析の訓練機関が置いた 1994 年の刷の PDF でも照らした。出版社・大学の写しは見つからず、写しの性格を添えて載せている。p.142 に「Its defensive function is to hide and protect the True Self, whatever that may be.」、p.143 に「More towards health: The False Self has as its main concern a search for conditions which will make it possible for the True Self to come into its own.」、p.145 に「The good-enough mother meets the omnipotence of the infant」と「A True Self begins to have life」、p.148 に「The spontaneous gesture is the True Self in action. Only the True Self can be creative and only the True Self can feel real.」）。
 
 出典：[Goldstein (1939)](https://archive.org/details/organismholistic00gold)（本文照合済。上の章と同じ写し。pp.196–197 に、今ある状態を保とうとすることは「characteristic for sick people」という段）。
 
@@ -184,7 +212,7 @@ pjdhiro は、前に、自己受容について次のように話しています
 
 <a id="sr-faces"></a>ここまでの論は、受け容れること・守りがほどけること・自己が現れることを、同じ向きに並べていました。同じ過程を、別の所で切り取ってきた論もあります。
 
-一つは、受け容れることを、自己実現の始まりでなく、良く生きている人の特徴の一つとして並べる切り取り方です。リフの六つの面では、自己受容は、人生の目的や人としての成長などと並ぶ一つの面です。どれが先に来るかは書かれていません。
+一つは、受け容れることを、自己実現の始まりでなく、良く生きている人の特徴の一つとして並べる切り取り方です。リフの六つの面では、自己受容は、人生の目的や人としての成長などと並ぶ一つの面です。どれが先に来るかは書かれていません（六つの面は「[心理的ウェルビーイングとは](psychological-well-being.html#pwb-acceptance)」）。
 
 もう一つは、受け容れることを、行動のための手立てとして置く切り取り方です。ACT は、受容はそれ自体が目的ではなく、自分の大事にしていることに沿った行動を増やすためのものだ、と書いています。森田が、不安をあるがままにしたうえで、毎日のなすべきことをなす、と続けたのも、同じ向きに読めます。
 
@@ -215,10 +243,9 @@ pjdhiro は、前に、自己受容について次のように話しています
 
 <a id="sr-pending"></a>🚧 調査中：次の論は、このページの見方に近いことを言っていると見込んでいますが、原典の本文をまだ確かめられていません。本文の論拠には使っていません。中身は、本文を確かめるまでの見込みとして読んでください。
 
-- **ロジャーズ**（1959 年の療法と人格の理論・1961 年の *On Becoming a Person*）：ありのままの自分を受け容れたとき、人は変わる、という逆説。受け容れるほど守りが減り、経験に開かれ、変化と成長に向かえる。自分が自分にとっての大事な他者になる、という自分への肯定的な配慮。
+- **ロジャーズ**（1959 年の療法と人格の理論・1961 年の *On Becoming a Person* の第 4 章と第 9 章）：受け容れるほど守りが減り、経験に開かれ、変化と成長に向かえる。経験への開かれは、防衛の正反対。自分が自分にとっての大事な他者になる、という自分への肯定的な配慮。
 - **ホーナイ**（1950 年の *Neurosis and Human Growth*）：理想化した自己像を追ううちに、人は現実の自己から離れる。障害が取り除かれれば、人は本性から自己実現に向かって育つ。
-- **マズロー**（1954 年・1970 年の *Motivation and Personality* の自己実現する人の章・1962 年の *Toward a Psychology of Being* の防衛と成長の章）：自己実現する人は、人の弱さや悪さを、自然を受け容れるように受け容れ、守りが少ない。成長は安全から生まれ、守りが固いのには理由がある。
-- **ウィニコット**（1960 年の "Ego distortion in terms of true and false self"）：偽りの自己は、本当の自己を隠して守る働きをする。応えてくれる環境があると、本当の自己が生き始める。
+- **マズロー**（1950 年の "Self-actualizing people"・1954 年と 1970 年の *Motivation and Personality* の自己実現する人の章）：自己実現する人は、人の弱さや悪さを、自然を受け容れるように受け容れ、守りが少ない。
 - **ホネット**（1992 年の *Kampf um Anerkennung*）：人から受ける承認（愛・権利・業績の評価）が、自分への信頼・尊重・評価をつくる。承認が、良く生きることの条件になる。
 - **カーニス**（2003 年）：自尊感情には、守りの強い脆いものと、本物の安定したものがある。本当の自己が、妨げられずに日々働くことを、本物らしさと呼ぶ。
 - **批判**：マズローの欲求の段階を確かめた研究は、一貫した支持を見つけていない、とするまとめ（ワーバとブリッドウェル、1976 年）。ロジャーズとマズローの自己実現の理論を、還元主義とイデオロギーの面から批判するもの（ゲラー、1982 年）。
