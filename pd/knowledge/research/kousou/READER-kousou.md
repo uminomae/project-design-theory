@@ -81,23 +81,23 @@
 
 構想は「これから」のことを組み立てて思い描くことなので、先の時間や未来をどう扱えるかによって、構想の語の届き方も変わるのではないか、と推測できます。オファロンは、時間の感覚は、その瞬間だけのものから始まり、8 歳ごろに過去の時計の時間が分かるようになり、未来のような微細な時間の理解へと育っていく、と書いています（2020 年、p.23）。ここでは、研究が段階ごとに書いている時間の枠と、未来の見え方を追います。
 
-クック＝グロイターは、自己保護の段階のうち、日和見の型の人を、考えと計画の人ではなく行動の人、と書いています（p.25）。この段階の人は、自分を、いましていること、いましたいことで捉え、計画や長い先の目標では捉えません（p.27）。構想の語が、先の時間の枠を持たないまま聞かれることもありそうです。
+クック＝グロイターは、自己保護の段階のうち、日和見の型の人を、考えと計画の人ではなく行動の人、と書いています（p.25）。この段階の人は、自分を、いましていること、いましたいことで捉え、計画や長い先の目標では捉えません（p.27）。この段階の主な不安は、消されること、隷属させられることだ、と書かれています（p.27）。構想の語は、先の時間の枠を組むものとしてより、目の前で相手に呑まれないための手立てとして掴まれるのかもしれません。
 
-達成者の段階では、直線の時間に十分に気づき、5 年から 10 年の先と後が、いつも思い描く時間の枠になります（p.41）。達成者は、行動を計画的に進め、見直しをくり返し、新しい目標へ向き直ることもできます（p.42）。辞書が書く、内容と実現の方法を考えて骨組みをまとめる、という意味の構想は、この段階で、いちばん自然に使える語になるのかもしれません。オファロンは、同じあたりの段階（STAGES の番号で 3.5）の取り違えを、未来の想像や思い描きを現実と取り違えること、と書いています。未来の目標を思い描き、目標を達成すれば、それが届く現実だと信じる、という取り違えです（p.30）。思い描いた像が、そのまま着く先の現実として持たれている、と読めます。この取り違えは、次の章で見る、心の守りの面とも関わりそうです。
+達成者の段階では、直線の時間に十分に気づき、5 年から 10 年の先と後が、いつも思い描く時間の枠になります（p.41）。達成者は、行動を計画的に進め、見直しをくり返し、新しい目標へ向き直ることもできます（p.42）。一方で達成者は、目標や理想を果たせないことへの罪悪感と、統制と自律を失うことへの深いおそれを持ち、順応の段階の依存と服従へ引き戻されることを恐れる、と書かれています（p.50）。辞書が書く、内容と実現の方法を考えて骨組みをまとめる、という意味の構想は、この段階で、いちばん自然に使える語になるのかもしれません。オファロンは、同じあたりの段階（STAGES の番号で 3.5）の取り違えを、未来の想像や思い描きを現実と取り違えること、と書いています。未来の目標を思い描き、目標を達成すれば、それが届く現実だと信じる、という取り違えです（p.30）。思い描いた像が、そのまま着く先の現実として持たれている、と読めます。達成者の不安と並べると、構想は、自分で選んだ先へ自分の手で進めている、という統制の感じを守るものとして掴まれるのかもしれません。像を現実と取り違えているあいだは、統制を失うおそれに触れずに済む、とも読めます。
 
-多元の段階では、過去は過ぎ去り、未来は本当には知りえない、と見るようになります（p.61）。思い描いた像は、知りえない先についての仮のものになります。戦略家の段階では、何でありうるかの像と、大きな目的に動かされることが、また多くなります（p.64）。未来は知りえないと見たうえで、像をもう一度持つ形と読めます。その先の段階では、目的や直線の時間や自我のような抽象的なものまで、人が作った構成物だと気づくようになります（p.73）。クック＝グロイターは、同じ頁で、ベッドのような日々の語でさえ大きな単純化で、誰の頭の中のベッドの像も同じではないのに、私たちはベッドの語で十分に通じ合っている、と書いています。
+多元の段階では、過去は過ぎ去り、未来は本当には知りえない、と見るようになります（p.61）。思い描いた像は、知りえない先についての仮のものになります。この段階には、社会の求めによって達成者の競争へ吸い戻されることへのおそれが書かれ（p.58）、一方的と見られることをおそれて、先に立って決められなくなることもある、と書かれています（p.59）。構想を立てることそのものが、その競争へ戻る動きとして避けられることもあるのかもしれません。戦略家の段階では、何でありうるかの像と、大きな目的に動かされることが、また多くなります（p.64）。未来は知りえないと見たうえで、像をもう一度持つ形と読めます。戦略家の主な不安は、自分の可能性を果たせないこと、正義や寛容のように何より大切にしている原理に沿って生きられないこと、勇気を失うことだ、と書かれています（p.72）。大きな構想は、その原理に沿って生きていることを確かめる像として掴まれるのかもしれません。その先の段階では、目的や直線の時間や自我のような抽象的なものまで、人が作った構成物だと気づくようになります（p.73）。この段階の主な不安は、ほとんど誰にも理解されないことと、そうおそれること自体が傲慢ではないか、という不安だ、と書かれています（p.85）。構想を作られた物語と見ていることが、かえって、人と通じ合えないおそれに結びつくのかもしれません。クック＝グロイターは、同じ頁で、ベッドのような日々の語でさえ大きな単純化で、誰の頭の中のベッドの像も同じではないのに、私たちはベッドの語で十分に通じ合っている、と書いています。
 
 同じ構想の語が、この道のりのどこで聞かれるかで、向かう先の枠にも、着けば届く現実にも、知りえない先の仮の像にも、人の作った物語にもなるのかもしれません。それでも、ベッドの語のように、話は通じているように見えます。互いに別のものを指したまま、構想の話が進むこともありそうです。
 
 同じ語を知っていることと、その段階から見ていることは、別のことでもあります。クック＝グロイターは、戦略を立てる人が、戦略家の段階から意味をつくっているとは限らず、戦略や仕組みの分析に詳しい人が、専門家や達成者の段階にいることもある、と書いています（pp.94–95 の注 24）。後の段階の話題を、慣習の段階のものの見方のまま、知識として知ることもできます。クック＝グロイターは、これを aboutism（〜について知っているだけのこと）と呼んでいます（p.93 の注 8）。構想について詳しく語れることと、構想の像を作られたものとして見ていることも、別のことなのかもしれません。
 
-段階ごとに何が脅威に見え、どう心を守るかは、「[Love駆動開発と呼びたいもの](love-driven-dev.html#発達の段階で何が脅威に見えるかが変わる)」の章の、主な不安と防衛の表にあります。その表と組むと、構想が段階ごとに何を守るものとして掴まれうるかも推測できそうです。🚧 工事中です。
+ここまでの推測を重ねると、どの段階でも、構想は、そのとき失いたくないものを守る像として掴まれうる、と読めます。次の章の「心の守りとして」の面は、この掴まれ方に当たるのかもしれません。段階ごとの主な不安と防衛は、「[Love駆動開発と呼びたいもの](love-driven-dev.html#発達の段階で何が脅威に見えるかが変わる)」の章「発達の段階で、何が脅威に見えるかが変わる」の表にまとめてあります。
 
 段階の上下は、優劣ではありません（「[精神の発達段階とは](developmental-stages.html#段階は上下の優劣ではない)」）。
 
 <details><summary>出典</summary>
 
-出典：[Cook-Greuter (2013)](https://web.archive.org/web/20140928135208/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1%2714%2097p%5B1%5D.pdf)（本文で確認。pp.10, 25, 27, 41–42, 61, 64, 73, 93 の注 8, 94–95 の注 24。頁は論文の刷りの頁）／O'Fallon (2020) [States and STAGES: Waking up Developmentally](https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf), *Integral Review* 16(1)（本文で確認。pp.23, 30。頁は雑誌の刷りの頁）
+出典：[Cook-Greuter (2013)](https://web.archive.org/web/20140928135208/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1%2714%2097p%5B1%5D.pdf)（本文で確認。pp.10, 25, 27, 41–42, 50, 58–59, 61, 64, 72–73, 85, 93 の注 8, 94–95 の注 24。頁は論文の刷りの頁）／O'Fallon (2020) [States and STAGES: Waking up Developmentally](https://integral-review.org/issues/vol_16_no_1_ofallon_states_and_stages.pdf), *Integral Review* 16(1)（本文で確認。pp.23, 30。頁は雑誌の刷りの頁）
 
 </details>
 
@@ -105,9 +105,12 @@
 
 - Cook-Greuter (2013) p.10：「the relationship to almost any concept can be shown to differ along the developmental path. A person's understanding of power, feedback, time, love, integrity and truth, for instance, changes with increasing development.」
 - p.25（自己保護の段階の日和見の型）：「They are people of action, not of thought and planning.」
+- p.27（自己保護）：「Main anxiety: Threat of annihilation or enslavement.」
+- p.50（達成者）：「Conscientious persons fear the Conformist frame of mind with its dependency and “submission.”」
 - p.41（達成者）：「Five to ten years backwards and forwards is now a regularly envisioned timeframe.」
 - p.61（多元）：「The past is gone and the future cannot really be known.」
 - p.64（戦略家）：「Strategist are often motivated and infused with a grand purpose and a vision of what could be.」
+- p.72（戦略家）：「Chief anxiety: a) not to fulfill one’s personal potential, b) not to self-actualize, c) not to live up to or neglect those global principles of justice, tolerance etc. one holds dear above any others, and d) loss of courage.」
 - p.73：「all objects are human-made constructs, including for instance such abstract constructs as purpose, linear time and the ego.」「No two people’s mental picture of a bed is alike and no two beds in the world are identical. And yet we all use the term “bed” and it works well for most purposes of communication.」
 - pp.94–95 の注 24：「a strategic planner is not necessarily making meaning from the Strategist level.」
 - O'Fallon (2020) p.30：「3.5 Confuses the fantasy/visualizations of the future with reality: They visualize a goal in the future and believe that it represents the reality that they will reach once the goal is achieved.」
