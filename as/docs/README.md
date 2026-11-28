@@ -36,7 +36,6 @@ docs/ に置かないもの:
 | `CLAUDE.md` | Codex 向け最小運用ルール |
 | `PROJECT.md` | リポジトリ全体の憲章 |
 | `evidence/PROJECT.md` | 調査憲章。調査目的・起点仮説・現在地の正本 |
-| `docs/issue-management.md` | Issue 運用ルール |
 | `docs/creation-space-parity-map.md` | creation-space 模倣実装の参照地図 |
 | `docs/material-inventory.md` | 初期素材インベントリ |
 | `docs/report-structure.md` | 調査報告の構造メモ |
@@ -45,9 +44,6 @@ docs/ に置かないもの:
 | `docs/quality-management.md` | 品質基準 |
 | `docs/summary-report-pairing.md` | summary と report の対応原則 |
 | `docs/guardian-matrix.md` | 最低限の守護者マトリクス |
-| `docs/templates/cli-instruction.md` | CLI 指示書テンプレート正本 |
-| `docs/session-close-routine.md` | セッション終了処理の正本 |
-| `docs/standing-approvals.md` | 継続承認メモ |
 | `docs/evidence-metadata-awareness.md` | 公開 metadata 契約の正本 |
 | `docs/kdt-deletion-plan.md` | kesson-driven-thinking 側削除計画 |
 | `knowledge/README.md` | 解説向けナレッジの受け皿 |
@@ -70,10 +66,6 @@ docs/ に置かないもの:
 | `src/backgrounds/` | 背景の tracked prototype |
 | `skills/cli-instruction/SKILL.md` | CLI 指示書作成スキル |
 | `skills/codex-worker-instruction/SKILL.md` | Codex background worker 指示書スキル |
-| `docs/templates/cli-instruction.md` | CLI 指示書テンプレート |
-| `docs/templates/codex-worker-instruction.md` | Codex worker 指示書テンプレート |
-| `docs/session-close-routine.md` | セッション終了時の手順 |
-| `docs/standing-approvals.md` | 継続承認の記録場所 |
 | `docs/creation-space-parity-map.md` | creation-space parity の継続記録 |
 | `evidence/PROJECT.md` | 調査憲章の正本 |
 | `knowledge/survival-trust-axis-starting-memo.md` | 生存-信頼軸 起点メモ |
