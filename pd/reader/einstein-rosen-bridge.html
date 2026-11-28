@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/einstein-rosen-bridge.html を直接編集しないでください。
+  正本:   knowledge/research/einstein-rosen-bridge/READER-einstein-rosen-bridge.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+この文書は「つながっているのに、通れない橋」（アインシュタイン＝ローゼン橋とは）のページです（工事中）。アインシュタイン＝ローゼン橋とは何か、なぜつながっているのに通れないのか、という問いに、Einstein & Rosen 1935（Phys. Rev. 48, 73）、Carroll の Lecture Notes on General Relativity 第 7 章、Maldacena & Susskind 2013（arXiv:1306.0533）から答える。原典はどれも本文で照合した。
+  物理の主張は、教科書・来歴・研究の一線（ER＝EPR は予想）・たとえを分けて書いた。延長した解は理想化した永遠のブラックホールの解での話で、星の崩壊でできるブラックホールには現れない。通れないことはエネルギーの条件の下で言えること。
+  pjdhiro の言葉はこのページに引いていない。このサイトでこの橋をたとえに使うページ（愛は、重力に似ていないか・Love駆動開発と呼びたいもの β）へのリンクを終わりの章に置いた。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>つながっているのに、通れない橋 | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/einstein-rosen-bridge.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="robots" content="noindex">
+    <meta name="description" content="アインシュタイン＝ローゼン橋（ワームホール）を、アインシュタインとローゼンの 1935 年の論文（二枚のシートをつなぐ「橋」で粒子を描く）、キャロルの一般相対論の講義ノート（シュヴァルツシルト解を延ばすと現れるもう一つの外側・喉はすぐ閉じて渡れない・理想化した解での話で星の崩壊では現れない）、マルダセナとサスキンドの 2013 年の論文（エネルギーの条件の下で通れない・ER＝EPR の予想）の原典で読み、教科書・来歴・研究の一線・たとえを分けて置く独立ページ。">
+    <meta property="og:title" content="つながっているのに、通れない橋">
+    <meta property="og:description" content="アインシュタイン＝ローゼン橋（ワームホール）を、アインシュタインとローゼンの 1935 年の論文（二枚のシートをつなぐ「橋」で粒子を描く）、キャロルの一般相対論の講義ノート（シュヴァルツシルト解を延ばすと現れるもう一つの外側・喉はすぐ閉じて渡れない・理想化した解での話で星の崩壊では現れない）、マルダセナとサスキンドの 2013 年の論文（エネルギーの条件の下で通れない・ER＝EPR の予想）の原典で読み、教科書・来歴・研究の一線・たとえを分けて置く独立ページ。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/einstein-rosen-bridge.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="つながっているのに、通れない橋">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-28">
+    <meta property="article:modified_time" content="2026-11-28">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "つながっているのに、通れない橋",
+          "description": "アインシュタイン＝ローゼン橋（ワームホール）を、アインシュタインとローゼンの 1935 年の論文（二枚のシートをつなぐ「橋」で粒子を描く）、キャロルの一般相対論の講義ノート（シュヴァルツシルト解を延ばすと現れるもう一つの外側・喉はすぐ閉じて渡れない・理想化した解での話で星の崩壊では現れない）、マルダセナとサスキンドの 2013 年の論文（エネルギーの条件の下で通れない・ER＝EPR の予想）の原典で読み、教科書・来歴・研究の一線・たとえを分けて置く独立ページ。",
+          "keywords": "アインシュタイン＝ローゼン橋, Einstein-Rosen bridge, ワームホール, wormhole, シュヴァルツシルト解, クルスカル座標, 事象の地平面, ブラックホール, ER＝EPR, 量子のもつれ, 一般相対性理論, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/einstein-rosen-bridge.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/einstein-rosen-bridge.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-28",
+          "dateModified": "2026-11-28",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "アインシュタイン＝ローゼン橋"}, {"@type": "Thing", "name": "ワームホール"}, {"@type": "Thing", "name": "ブラックホール"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「つながっているのに、通れない橋」のページです（工事中）。アインシュタイン＝ローゼン橋（ワームホール）を、アインシュタインとローゼンの 1935 年の論文（二枚のシートをつなぐ「橋」で粒子を描く）、キャロルの一般相対論の講義ノート（シュヴァルツシルト解を延ばすと現れるもう一つの外側・喉はすぐ閉じて渡れない・理想化した解での話で星の崩壊では現れない）、マルダセナとサスキンドの 2013 年の論文（エネルギーの条件の下で通れない・ER＝EPR の予想）の原典で読み、教科書・来歴・研究の一線・たとえを分けて置く独立ページ。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b><br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>つながっているのに、通れない橋</h1>
+                <p class="reader-subtitle">アインシュタイン＝ローゼン橋とは</p>
+                <p class="reader-meta">
+                    最終更新: 2026-11-28 ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/einstein-rosen-bridge/READER-einstein-rosen-bridge.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<div class="reader-lead glow-card" id="erb-gist"><span class="reader-lead__label">ざっくりいうと</span>
+<p>ブラックホールの理論には、二つの離れた場所が、細い喉のような所でつながっている解があります。それなのに、向こうへは人も光も渡れません。</p>
+<p>1935 年にアインシュタインとローゼンが「橋」と呼んだこの形は、今ではアインシュタイン＝ローゼン橋、またはワームホールと呼ばれます。このページは、それを Claude が原典で読んで書いています。</p>
+<p>つながっていることと、行き来できることは、物理では別のことです。その違いが、どんな条件の下で言えるのかが分かります。</p>
+</div>
+
+<p class="reader-summary__title" id="overview">概要</p>
+
+<div class="reader-lead"><span class="reader-lead__label">問い</span>
+アインシュタイン＝ローゼン橋とは、何か。なぜ、つながっているのに通れないのか。
+</div>
+
+<div class="reader-lead"><span class="reader-lead__label">今の答え</span>
+アインシュタインとローゼンは 1935 年、重力の方程式の解を、同じ形の二枚の「シート」が「橋」でつながった形に読み、粒子を表そうとしました。今の教科書では、ブラックホールの解を延ばせるところまで延ばすと、もう一つの外側の時空が現れ、二つは喉でしばらくつながってから離れます。喉はすぐに閉じ、人も光の信号も渡れません。これは、ずっとあり続けるブラックホールを理想化した解での話で、星がつぶれてできるブラックホールには現れません。2013 年には、この橋が量子のもつれと結びついている、という予想（ER＝EPR）が出されました。
+</div>
+
+<details class="sec" id="アインシュタインとローゼンは粒子を橋で描こうとした"><summary>アインシュタインとローゼンは、粒子を「橋」で描こうとした</summary><div class="secbody">
+<p><a id="erb-1935"></a>1935 年、アインシュタインとローゼンは、一般相対性理論の重力の方程式と、電磁気のマクスウェルの方程式だけを使って、物質の粒子を表せないかを考えました。新しい量を足さずに、特異点（場の値が無限大になってしまう所）の無い解で粒子を表そう、というねらいです。そのために、重力の方程式をわずかに書き換えています。</p>
+<p>手がかりにしたのは、球の形に対称で、時間で変わらない重力の場を表すシュヴァルツシルトの解です。この解では、半径 r が 2m の所で、式の値の一つが無限大になります（m は質量に当たる量です）。二人は r の代わりに新しい変数 u を入れ、u² = r − 2m と置き直しました。すると式は、u のどの値でも無限大になりません。u が −∞ から +∞ まで動くあいだに、r は +∞ から 2m まで下がり、また 2m から +∞ へ戻ります。</p>
+<p>こうして空間は、同じ形をした二つの部分（シート）が、r = 2m の面でつながった形として描かれました。二人は、このつなぎ目を「橋」と呼び、橋を、電気を帯びない素粒子（中性子やニュートリノ）の表し方と見ました。たくさんの粒子は、二枚のシートをたくさんの橋がつなぐ形で表されるだろう、とも書いています。ただし、粒子がたくさんある場合はまだ扱っていない、と論文自身が断っています。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>Einstein, A. &amp; Rosen, N. (1935). <a href="https://doi.org/10.1103/PhysRev.48.73">The Particle Problem in the General Theory of Relativity. <em>Physical Review</em>, 48, 73–77</a>（<a href="https://journals.aps.org/pr/abstract/10.1103/PhysRev.48.73">APS の頁</a>から無料で開ける PDF で本文照合済）。要旨（p.73）：「These solutions involve the mathematical representation of physical space by a space of two identical sheets, a particle being represented by a "bridge" connecting these sheets.」、「The many-particle problem, which would decide the value of the theory, has not yet been treated.」。§2（p.74）：r = 2m の面でつながる二つの部分を「We call such a connection between the two sheets a "bridge."」と呼び、「the mathematical representation of an elementary particle (neutron or neutrino)」と読む。u が −∞ から +∞ へ動くと r が +∞ から 2m へ、また 2m から +∞ へ動く、も同じ頁。訳は Claude。</p>
+</details>
+
+</div></details><details class="sec" id="ブラックホールの解を延ばすともう一つの外側が現れる"><summary>ブラックホールの解を延ばすと、もう一つの外側が現れる</summary><div class="secbody">
+<p><a id="erb-kruskal"></a>今の教科書は、同じシュヴァルツシルトの解を、ブラックホールの解として読みます。r = 2m に当たる所は事象の地平面（いったん入ると出てこられない境目）で、式の値が無限大になるのは座標の選び方のせいだと分かっています。</p>
+<p>クルスカル座標と呼ばれる座標で、この解を延ばせるところまで延ばすと、時空は四つの領域に分かれます。私たちのいる外側、ブラックホールの内側、その時間を逆にしたホワイトホール、そして、もう一つの外側です。もう一つの外側は、遠くまで広がる時空で、こちら側を鏡に映したような形をしています。こちらからそこへは、未来へ向かっても過去へ向かっても届かず、向こうからもこちらに届きません。</p>
+<p>時刻ごとに空間を切り出して並べると、二つの外側が互いに近づき、しばらく首のような細い所でつながり、そして離れていく、と描けます。このつなぎ目の喉がワームホールで、今の研究では、アインシュタイン＝ローゼン橋とも呼ばれています。</p>
+<p>ただし、この姿には条件があります。シュヴァルツシルトの解が成り立つのは、物質の無い所（たとえば星の外側）だけです。延ばした全体は、ずっとあり続けるブラックホールを理想化した解での話です。星が自分の重さでつぶれてできるブラックホールでは、過去の側が星の内部に置き換わり、ホワイトホールも、もう一つの外側も、ワームホールも現れません。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>Carroll, S. M. (1997). <a href="https://arxiv.org/abs/gr-qc/9712019"><em>Lecture Notes on General Relativity</em></a>（arXiv の本文で照合済）第 7 章。r = 2GM は元の座標の特異点にすぎない（p.184：「r = 2GM is simply a coordinate singularity in our original (t, r, θ, φ) system」）。クルスカル座標と四つの領域、ホワイトホール（pp.187–190）。もう一つの外側（p.190：「It is another asymptotically flat region of spacetime, a mirror image of ours. It can be thought of as being connected to region I by a "wormhole," a neck-like configuration joining two distinct regions.」）。どちらからも届かない（p.190：「cannot be reached from our region I either forward or backward in time (nor can anybody from over there reach us)」）。実際の星の崩壊では現れない（pp.190–191：「it is not expected to happen in the real world」「there is no need to fret about white holes and wormholes」）。</p>
+<p>Maldacena, J. &amp; Susskind, L. (2013). <a href="https://arxiv.org/abs/1306.0533">Cool horizons for entangled black holes</a>（<em>Fortschritte der Physik</em>, 61, 781–811。<a href="https://doi.org/10.1002/prop.201300020">DOI</a>。arXiv の第 2 版で本文照合済）。要旨（p.1）：「two distant black holes are connected through the interior via a wormhole, or Einstein-Rosen bridge」。訳は Claude。</p>
+</details>
+
+</div></details><details class="sec" id="橋はつながっているのに通れない"><summary>橋は、つながっているのに通れない</summary><div class="secbody">
+<p><a id="erb-closed"></a>この喉は、開いていられる時間が短すぎます。教科書は、光より遅く動くどんな観測者も、喉が閉じる前に向こうへ渡りきれない、と書きます。光の信号も届きません。ブラックホールの両側を一枚に描いた図（ペンローズ図）を見れば、一方の外側からもう一方の外側へ届く信号は無い、と分かります。</p>
+<p>これにも条件があります。橋が通れないと言えるのは、エネルギーが負にならない、というたぐいの条件が守られるときです。古典の理論では、その条件が成り立ちます。量子の理論ではわずかに破れうるが、知られている限り、通れるようになるほどではない、とマルダセナとサスキンドは書いています。</p>
+<p>つながっているのに行き来できない、という性質は、量子のもつれとよく似ています。もつれた二つの粒子も、片方への操作で、もう片方へ光より速く信号を送ることはできません。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>Carroll（1997）第 7 章（<a href="https://arxiv.org/abs/gr-qc/9712019">arXiv の本文</a>）p.190：「the Schwarzschild geometry really describes two asymptotically flat regions which reach toward each other, join together via a wormhole for a while, and then disconnect. But the wormhole closes up too quickly for any timelike observer to cross it from one region into the next.」。</p>
+<p>Maldacena &amp; Susskind（2013。<a href="https://arxiv.org/abs/1306.0533">arXiv の本文</a>）p.2：「Einstein Rosen bridges do not allow us to send a signal from one asymptotic region to the other, at least when suitable positive energy conditions are obeyed」。同じ頁の注 1：古典の理論では正しい条件で、量子の理論ではわずかに破れうるが「not by enough to make wormholes traversable」。p.16（§3.1）：「no signal can propagate through the wormhole from one exterior region to the other」、もつれについて「no local operation on one member of a entangled pair can influence the other, before a classical signal can propagate between them」。訳は Claude。</p>
+</details>
+
+</div></details><details class="sec" id="もつれと橋はつながっているのではないか"><summary>もつれと橋は、つながっているのではないか</summary><div class="secbody">
+<p><a id="erb-er-epr"></a>2013 年、マルダセナとサスキンドは、橋ともつれの似かたは偶然ではない、と考えました。延ばしたシュヴァルツシルトの解は、二つの外側を持つ全体として、遠く離れた二つのブラックホールが、ある決まった形で最大にもつれた状態にあるもの、と読めます。二人は、もつれた二つのブラックホールは、どれも何らかのアインシュタイン＝ローゼン橋でつながっている、と主張しました。</p>
+<p>さらに一歩進めて、ブラックホールでなくても、もつれた二つの粒子のあいだにも、古典の幾何では描けないような、ごく量子的な橋があるのではないか、と推し量っています。二人はこの考えを、アインシュタイン＝ローゼン（ER）と、量子のもつれの相関を指す EPR（アインシュタイン＝ポドルスキー＝ローゼン）の頭文字を並べて、ER＝EPR と書きました。</p>
+<p>これは予想で、確かめられた物理ではありません。二人自身も、もし量子の理論でワームホールが通れるなら、ER＝EPR は誤りになる、と書いています。ここで言う「つながり」は、信号を送れる通路ではなく、もつれという相関です。</p>
+<details class="acc"><summary>出典</summary>
+
+<p>Maldacena &amp; Susskind（2013。<a href="https://arxiv.org/abs/1306.0533">arXiv の本文</a>）。p.2：「We argue that the Einstein Rosen bridge between two black holes is created by EPR-like correlations between the microstates of the two black holes.」「We call this the ER = EPR relation.」、注 1：「If this were not true, the ER=EPR connection would be wrong.」。p.17：「We make the conjecture that they will also be connected by an Einstein-Rosen bridge.」、もつれた粒子の対にも「a very quantum-mechanical bridge which probably cannot be described by classical geometry」。p.39（§6）：「The full Kruskal geometry … represents the geometry of two distant black holes, which have been created in a certain maximally entangled state.」「We claim that any pair of entangled black holes will be connected by some kind of Einstein-Rosen bridge.」。訳は Claude。</p>
+</details>
+
+</div></details><details class="sec" id="どこまでが教科書でどこからが予想か"><summary>どこまでが教科書で、どこからが予想か</summary><div class="secbody">
+<p><a id="erb-levels"></a>この橋の話は、確かさの違うものが重なっています。分けると、次のようになります。</p>
+<div class="tablefit"><div class="tablewrap"><div class="tablewrap"><table>
+<thead><tr><th>区分</th><th>中身</th></tr></thead>
+<tbody>
+<tr><td>教科書</td><td>シュヴァルツシルトの解を延ばせるところまで延ばすと、もう一つの外側が現れ、二つは喉でしばらくつながってから離れる。喉はすぐに閉じ、光より遅いものも光の信号も渡れない。理想化した解での話で、星の崩壊でできるブラックホールには現れない。</td></tr>
+<tr><td>来歴</td><td>アインシュタインとローゼンの 1935 年の「橋」は、粒子の表し方として描かれた。ブラックホールの喉をこの名で呼ぶのは、そのあとの使い方。</td></tr>
+<tr><td>研究の一線</td><td>橋が量子の理論でも通れないままか。もつれた二つのブラックホール、さらには、もつれた粒子の対も、橋でつながっているか（ER＝EPR・予想）。</td></tr>
+<tr><td>たとえ</td><td>つながっているのに、向こうで起きていることがこちらに届かない、という形を、物理の外の話に重ねること。重なるのは形だけで、物理の主張ではない。</td></tr>
+</tbody>
+</table></div></div></div>
+
+</div></details><details class="sec" id="このサイトでこの話を使っているところ"><summary>このサイトで、この話を使っているところ</summary><div class="secbody">
+<p><a id="erb-uses"></a>この橋は、このサイトのいくつかのページに、たとえとして出てきます。</p>
+<ul>
+<li>「<a href="gravity-love.html#gl-manager">愛は、重力に似ていないか</a>」：4 章の「先が見えないのに、安定する」で、見るしかできない私が、頭頂の先の緒で、先の見えない何かにつながっている、という pjdhiro の像に、構造の似たものとして並べています。</li>
+<li>「<a href="love-driven-dev.html#ldd-love-scale">Love駆動開発と呼びたいもの β</a>」：ずれを知らせる物差しの段で、観るものだけになったときに感じる他者との接続のようなものを、pjdhiro がワームホールにたとえた所に添えています。</li>
+</ul>
+</div></details>
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="gravity-love.html">愛は、重力に似ていないか</a> ・
+                <a href="love-driven-dev.html">Love駆動開発と呼びたいもの</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

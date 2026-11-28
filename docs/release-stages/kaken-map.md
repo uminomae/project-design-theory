@@ -10,10 +10,10 @@
 
 | 項目 | 数 |
 |---|---|
-| 小区分 | 触れている 39 / 296（触れていない 257） |
+| 小区分 | 触れている 40 / 296（触れていない 256） |
 | 中区分 | 触れている 18 / 66 |
 | 大区分 | 触れている 8 / 13（触れていない：E・G・H・J・M） |
-| 読み物のページ | 110（区分に当てた 92・当てない 18） |
+| 読み物のページ | 113（区分に当てた 95・当てない 18） |
 
 区分に当てないページ：about・abilities・cognitive-abilities・competency-frameworks・complex-plane・influences-management・kaken-map・love-trajectory・reading-directions・shelf-love・shelf-mind・shelf-number・shelf-org・shelf-self・shelf-translations・material-checklist・site-evaluation・thinking-definitions。並び・目次・道案内・転送のページ（中身は呼ぶ先のページの側）と、このサイトを測った結果のページと、pjdhiro の一年の記録（love-trajectory）。
 
@@ -23,12 +23,12 @@
 
 ● は触れている小区分で、括弧の中は当てたページ（ファイル名）。○ は触れていない小区分。
 
-### 大区分 A（23 / 68）
+### 大区分 A（24 / 68）
 
 | 中区分 | 触れている | 小区分 |
 |---|---|---|
 | 1 思想、芸術およびその関連分野 | 7 / 9 | ● 01010 哲学および倫理学（good-self-destruction・self-realization・carus-onslaught-on-necessity-ja・creative-thinking・empathy・gravity-love・hamilton-philosophy-of-the-unconditioned-ja・life-drivers・love-driven-dev・love-driven-dev-en・love-history・mansel-limits-of-religious-thought-ja・mill-examination-of-hamilton-ja・nondual・peirce-evolutionary-love-ja・peirce-glassy-essence-ja・peirce-law-of-mind-ja・peirce-love-abduction・reasoning・thinking・to-james・william-james-self-ja・inseparable-abilities）<br>● 01020 中国哲学、印度哲学および仏教学（anshin・euler-unfolded・forgiveness-salvation・life-drivers・love-driven-dev・love-driven-dev-en・love-history・nondual・shikan・zen-circle-hs）<br>● 01030 宗教学（draper-intellectual-development-ja・forgiveness-salvation・james-substance-and-shadow-ja・life-drivers・love-history・mansel-limits-of-religious-thought-ja・mill-examination-of-hamilton-ja・peirce-evolutionary-love-ja）<br>● 01040 思想史（anshin・buckle-history-of-civilization-ja・carus-onslaught-on-necessity-ja・hamilton-philosophy-of-the-unconditioned-ja・james-substance-and-shadow-ja・life-drivers・love-history・mandeville-grumbling-hive-ja・mansel-limits-of-religious-thought-ja・mill-examination-of-hamilton-ja・newcomb-political-economy-ja・peirce-evolutionary-love-ja・peirce-glassy-essence-ja・peirce-law-of-mind-ja・thinking・william-james-self-ja）<br>● 01050 美学および芸術論（beauty・julia-potential・julia-potential-hs）<br>○ 01060 美術史<br>○ 01070 芸術実践論<br>● 01080 科学社会学、科学哲学および科学技術史（capacity-after-ai・carus-onslaught-on-necessity-ja・clausius-art-der-bewegung-ja・clausius-bewegende-kraft-der-warme-ja・darwin-historical-sketch-ja・darwin-wallace-1858-ja・draper-intellectual-development-ja・helmholtz-erhaltung-der-kraft-ja・herapath-mathematical-physics-ja・herschel-quetelet-probabilities-ja・kolliker-darwinsche-schopfungstheorie-ja・kronig-theorie-der-gase-ja・maxwell-dynamical-theory-of-gases-ja・naegeli-abstammungslehre-ja・peirce-evolutionary-love-ja・peirce-glassy-essence-ja・peirce-love-abduction・quetelet-lettres-probabilites-ja・rankine-mechanical-action-of-heat-ja・thomson-heat-ja・via-vulnerability）<br>● 80010 デザイン学（vibe-to-code） |
-| 2 文学、言語学およびその関連分野 | 3 / 8 | ● 02010 日本文学（no-road-ahead）<br>● 02020 英語圏文学およびヨーロッパ文学（mandeville-grumbling-hive-ja）<br>○ 02030 文学一般<br>● 02040 言語学（middle-voice）<br>○ 02050 日本語学および英語学<br>○ 70010 日本語教育<br>○ 70020 外国語教育<br>○ 80020 人文社会情報学および図書館情報学 |
+| 2 文学、言語学およびその関連分野 | 4 / 8 | ● 02010 日本文学（no-road-ahead）<br>● 02020 英語圏文学およびヨーロッパ文学（mandeville-grumbling-hive-ja）<br>● 02030 文学一般（negative-capability）<br>● 02040 言語学（middle-voice）<br>○ 02050 日本語学および英語学<br>○ 70010 日本語教育<br>○ 70020 外国語教育<br>○ 80020 人文社会情報学および図書館情報学 |
 | 3 歴史学、考古学、博物館学およびその関連分野 | 2 / 7 | ● 03010 史学一般（buckle-history-of-civilization-ja）<br>○ 03020 日本史<br>○ 03030 アジア史およびアフリカ史<br>● 03040 ヨーロッパ史およびアメリカ史（draper-intellectual-development-ja）<br>○ 03050 考古学<br>○ 03060 文化財科学<br>○ 03070 博物館学 |
 | 4 地理学、文化人類学、民俗学およびその関連分野 | 0 / 6 | ○ 04010 地理学<br>○ 04020 人文地理学<br>○ 04030 文化人類学および民俗学<br>○ 70030 地域研究<br>○ 70040 観光学<br>○ 70050 ジェンダー |
 | 5 法学およびその関連分野 | 0 / 4 | ○ 05010 基礎法学および刑事法学<br>○ 05020 公法学および国際公法学<br>○ 05030 民事法学および国際私法学<br>○ 05040 社会法学および新領域法学 |
@@ -44,7 +44,7 @@
 |---|---|---|
 | 11 代数学、幾何学およびその関連分野 | 2 / 2 | ● 11010 代数学（fundamental-theorem-of-algebra・fundamental-theorem-of-algebra-analogy・rotation-multiplication・subtraction-kinds・three-and-seven）<br>● 11020 幾何学（angle-rotation・euler-unfolded・zen-circle-hs） |
 | 12 解析学、応用数学およびその関連分野 | 3 / 3 | ● 12010 基礎解析学（angle-rotation・euler-formula・euler-unfolded・orthogonal-axis-tools・fundamental-theorem-of-algebra・herschel-quetelet-probabilities-ja・man・subtraction-kinds・zen-circle-hs）<br>● 12020 数理解析学（julia-potential・julia-potential-hs）<br>● 12030 数学基礎、応用数学および統計数学（herschel-quetelet-probabilities-ja・peirce-law-of-mind-ja・quetelet-lettres-probabilites-ja） |
-| 13 物性物理学およびその関連分野 | 1 / 5 | ● 13010 数理物理、物性基礎論および量子系（clausius-art-der-bewegung-ja・orthogonal-axis-tools・helmholtz-erhaltung-der-kraft-ja・herapath-mathematical-physics-ja・kronig-theorie-der-gase-ja・maxwell-dynamical-theory-of-gases-ja）<br>○ 13020 電子物性・光物理および原子分子物理<br>○ 13030 磁性、超伝導および強相関系<br>○ 13040 生物物理、化学物理およびソフトマターの物理<br>○ 80040 量子ビーム科学および加速器科学 |
+| 13 物性物理学およびその関連分野 | 1 / 5 | ● 13010 数理物理、物性基礎論および量子系（clausius-art-der-bewegung-ja・orthogonal-axis-tools・helmholtz-erhaltung-der-kraft-ja・herapath-mathematical-physics-ja・kronig-theorie-der-gase-ja・maxwell-dynamical-theory-of-gases-ja・looking-closer）<br>○ 13020 電子物性・光物理および原子分子物理<br>○ 13030 磁性、超伝導および強相関系<br>○ 13040 生物物理、化学物理およびソフトマターの物理<br>○ 80040 量子ビーム科学および加速器科学 |
 | 14 プラズマ学およびその関連分野 | 0 / 4 | ○ 14010 プラズマ科学<br>○ 14020 核融合学<br>○ 14030 プラズマ応用科学<br>○ 80040 量子ビーム科学および加速器科学 |
 | 15 地球惑星科学およびその関連分野 | 0 / 5 | ○ 15010 宇宙惑星科学<br>○ 15020 大気水圏科学<br>○ 15030 地球人間圏科学<br>○ 15040 固体地球科学<br>○ 15050 地球生命科学 |
 | 91 量子情報およびその関連分野 | 0 / 3 | ○ 91010 量子情報ハードウェア<br>○ 91020 量子情報システム<br>○ 91030 量子情報基礎理論・応用 |
@@ -53,7 +53,7 @@
 
 | 中区分 | 触れている | 小区分 |
 |---|---|---|
-| 16 素粒子、原子核、宇宙物理学およびその関連分野 | 1 / 3 | ● 16010 素粒子、原子核、宇宙線および宇宙物理にする理論（gravity-love・gravity-well）<br>○ 16020 素粒子、原子核、宇宙線および宇宙物理にする実験<br>○ 80040 量子ビーム科学および加速器科学 |
+| 16 素粒子、原子核、宇宙物理学およびその関連分野 | 1 / 3 | ● 16010 素粒子、原子核、宇宙線および宇宙物理にする理論（gravity-love・gravity-well・einstein-rosen-bridge・looking-closer）<br>○ 16020 素粒子、原子核、宇宙線および宇宙物理にする実験<br>○ 80040 量子ビーム科学および加速器科学 |
 | 17 天文学およびその関連分野 | 0 / 1 | ○ 17010 天文学 |
 
 ### 大区分 D（2 / 26）

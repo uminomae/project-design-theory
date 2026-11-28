@@ -425,6 +425,24 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/einstein-rosen-bridge/READER-einstein-rosen-bridge.md",
+        ROOT / "scripts/reader-einstein-rosen-bridge-template.html",
+        ROOT / "reader/einstein-rosen-bridge.html",
+        "flow",
+    ),
+    (
+        ROOT / "knowledge/research/looking-closer/READER-looking-closer.md",
+        ROOT / "scripts/reader-looking-closer-template.html",
+        ROOT / "reader/looking-closer.html",
+        "flow",
+    ),
+    (
+        ROOT / "knowledge/research/negative-capability/READER-negative-capability.md",
+        ROOT / "scripts/reader-negative-capability-template.html",
+        ROOT / "reader/negative-capability.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/complex-plane/READER-complex-plane.md",
         ROOT / "scripts/reader-complex-plane-template.html",
         ROOT / "reader/complex-plane.html",

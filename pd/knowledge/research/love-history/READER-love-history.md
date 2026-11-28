@@ -28,9 +28,9 @@ date: 2026-11-09
 | 近い者から順に広げた先 | 親・仁・愛（[『孟子』](#lh-ren)）、自分への愛から子へ、人どうしへ（[キケロ](#lh-stoa)） |
 | 区切りを置かない、すべて | 慈（[慈経](#lh-metta)）、兼愛（[『墨子』](#lh-ren)）、大慈・大悲（[『大智度論』](#lh-karuna)） |
 | 神 | アガペー（[新約聖書](#lh-agape)）、amor（[アウグスティヌス](#lh-augustine)）、amore（[ダンテ](#lh-dante)）、神への知的愛（[スピノザ](#lh-spinoza)） |
-| 人ではないもの | 渇愛（[初転法輪経](#lh-tanha)）の欲・存在・非存在、エロース（[プラトン](#lh-plato)）の美そのもの |
+| 人ではないもの | 渇愛（[初転法輪経](#lh-tanha)）の欲・存在・非存在、エロース（[プラトン](#lh-plato)）の美そのもの、自然の愛（[トマス・アクィナス](#lh-aquinas)）の、重い物体が向かう中心 |
 | 自分 | 自己愛（[アリストテレス](#lh-aristotle)）、自分への愛（[キケロが伝えるストア派](#lh-stoa)）、自己愛（[アウグスティヌス](#lh-augustine)） |
-| 世界の成り立ち | 愛（Φιλότης）（[エンペドクレス](#lh-empedocles)）、創造的な愛による進化（[パース](#lh-peirce)） |
+| 世界の成り立ち | 愛（Φιλότης）（[エンペドクレス](#lh-empedocles)）、情念の引力（[フーリエ](#lh-fourier)）、創造的な愛による進化（[パース](#lh-peirce)）、存在と存在の親和性（[テイヤール・ド・シャルダン](#lh-teilhard)） |
 
 </div>
 
@@ -41,7 +41,7 @@ date: 2026-11-09
 | 部 | Love に当たる語 | 章 |
 |---|---|---|
 | 第一部 仏教の流れ | 渇愛、愛しいもの、慈・悲・喜・捨、大慈・大悲、愛語、仁、兼愛 | [渇愛](#lh-tanha)・[慈と悲](#lh-metta)・[大乗の慈悲](#lh-karuna)・[仁と兼愛](#lh-ren) |
-| 第二部 西洋哲学の流れ | 愛（Φιλότης）、エロース、友愛（フィリア）、自己への親和、アガペー、amor、amore、Amor、創造的な愛 | [エンペドクレス](#lh-empedocles)・[プラトン](#lh-plato)・[アリストテレス](#lh-aristotle)・[ストア派](#lh-stoa)・[新約聖書](#lh-agape)・[アウグスティヌス](#lh-augustine)・[ダンテ](#lh-dante)・[スピノザ](#lh-spinoza)・[パース](#lh-peirce) |
+| 第二部 西洋哲学の流れ | 愛（Φιλότης）、エロース、友愛（フィリア）、自己への親和、アガペー、amor、自然の愛、amore、Amor、情念の引力、創造的な愛、存在と存在の親和性 | [エンペドクレス](#lh-empedocles)・[プラトン](#lh-plato)・[アリストテレス](#lh-aristotle)・[ストア派](#lh-stoa)・[新約聖書](#lh-agape)・[アウグスティヌス](#lh-augustine)・[トマス・アクィナス](#lh-aquinas)・[ダンテ](#lh-dante)・[スピノザ](#lh-spinoza)・[フーリエ](#lh-fourier)・[パース](#lh-peirce)・[テイヤール・ド・シャルダン](#lh-teilhard) |
 | 第三部 現代の恋愛と、心理学の分類 | love、愛、恋愛、結びつきと愛着行動、情熱的な愛と友愛的な愛、愛の三つの成分、性欲・魅惑・愛着 | [辞書と「恋愛」](#lh-romantic)・[心理学](#lh-psychology)・[神経科学](#lh-neuro) |
 | 結論 Love の範囲と種類 | 語ごとの対象の表と、原典が立てている区別の表 | [範囲](#lh-scope-range)・[種類](#lh-scope-kinds) |
 
@@ -373,6 +373,23 @@ date: 2026-11-09
 
 </div>
 
+## トマス・アクィナス — 重いものが中心へ向かう、自然の愛
+
+<a id="lh-aquinas"></a>この章は、トマス・アクィナス（1225 年ごろ〜1274 年）『神学大全』の、愛を扱う問いの最初の項を見ます。愛を、欲求が動き出す始まりとして書き、その一番下の段に、重い物体の重さを置いています。
+
+### 『神学大全』第二部の一 第 26 問 第 1 項（1265〜1274 年ごろ）
+
+<div class="tablefit cols-2">
+
+| 出どころ | 『神学大全』第二部の一（I-II）第 26 問 第 1 項の本文と、異論への答え |
+|---|---|
+| 何を Love と呼んだか | 欲求の動きには始まりがある、と書きます。自然の欲求では、その始まりは、欲求するものが、向かう先と生まれつき合っていること（connaturalness）で、それを「自然の愛」と呼べる、とします。例に、重い物体が中心へ向かうように合っているのは、その重さによる、と挙げます。異論への答えでは、自然の愛は、植物的な魂の力の中だけにあるのではない、と書きます |
+| Love を何として書いているか | 欲求が動き出す始まり。自然の欲求の段では、ものが自分に合った先へ向かう傾きで、重い物体の重さがその例です |
+| 鍵の文 | 「thus the connaturalness of a heavy body for the centre, is by reason of its weight and may be called "natural love."」（英国ドミニコ会の英訳）<br>訳：重い物体が中心へ向かうように合っているのは、その重さによるもので、「自然の愛」と呼ぶことができる |
+| 出典と照合の状態 | 本文照合済（英訳）。[New Advent の第二部の一 第 26 問](https://www.newadvent.org/summa/2026.htm)（英国ドミニコ会の英訳・1920 年）。ラテン語の原文とは照らしていません |
+
+</div>
+
 ## ダンテ — 太陽とほかの星々を動かす愛
 
 <a id="lh-dante"></a>この章は、ダンテ『神曲』（1308 年ごろ〜1321 年）の四か所を見ます。
@@ -413,6 +430,23 @@ date: 2026-11-09
 
 </details>
 
+## フーリエ — 物質の引力と同じ法則に従う、情念の引力
+
+<a id="lh-fourier"></a>この章は、シャルル・フーリエ（1772〜1837 年）『四運動の理論』（1808 年）を見ます。人を動かす情念を引力と呼び、その法則が、ニュートンの物質の引力と同じだと書きました。愛は、その情念の一つです。
+
+### 『四運動の理論』（1808 年）
+
+<div class="tablefit cols-2">
+
+| 出どころ | 『四運動と一般的運命の理論（Théorie des quatre mouvements et des destinées générales）』（1808 年）の前置きの論 第 3 節「情念の引力と、確かな科学とのつながりについて」と、第一部の注 |
+|---|---|
+| 何を Love と呼んだか | 前置きの論で、情念の引力（Attraction passionnée）の法則は、ニュートンとライプニッツが説明した物質の引力の法則と、あらゆる点で一致していた、と書きます。物質の世界と精神の世界に、一つの運動の仕組みがある、と続けます。第一部の注では、動物と社会の運動は情念の働きで、同じ決まりに従う、と書き、友情・愛・父性・野心の四つの情念の性質を、円・楕円・放物線・双曲線になぞらえます。愛（amour）の性質は、楕円になぞらえられています |
+| Love を何として書いているか | 情念の一つ。情念は、物質の引力と同じ法則に従う引力として書かれています |
+| 鍵の文 | 「les lois de l'Attraction passionnée étaient en tout point conformes à celles de l'Attraction matérielle, expliquées par Newton et Leibnitz」（前置きの論 第 3 節）<br>訳：情念の引力の法則は、ニュートンとライプニッツが説明した物質の引力の法則と、あらゆる点で一致していた<br>「Les propriétés de l'amour sont calquées sur celles de l'ellipse;」（第一部の注）<br>訳：愛の性質は、楕円の性質を写したものである |
+| 出典と照合の状態 | 本文照合済。[『フーリエ全集』第 1 巻（1846 年の第 3 版。『四運動の理論』を収める）](https://archive.org/details/oeuvrescompltes01four)（Internet Archive）。照らしたのはこの再刊で、1808 年の初版とは照らしていません |
+
+</div>
+
 ## パース — 創造的な愛による進化（agapasm）
 
 <a id="lh-peirce"></a>この章は、パース「進化的な愛（Evolutionary Love）」（1893 年）を見ます。パースについては、より詳しく掘り下げたページ「[パースの創造的な愛と、アブダクション](peirce-love-abduction.html)」があります（工事中）。この論文と、パースが新しい考えの生まれる推論として立てたアブダクションを、原文の鍵の文と一緒に読めます。論文の全文は「[パース「進化的な愛」を、日本語で読む](peirce-evolutionary-love-ja.html)」で、原文と日本語訳を並べて読めます（訳は Claude によるもので、人の校閲はまだです）。
@@ -427,6 +461,23 @@ date: 2026-11-09
 | Love を何として書いているか | 宇宙と心の進化の様式（evolution by creative love・the law of love）。働き方は、作ったものを独立させつつ調和へ引き寄せる「円い運動」。支えは、作られたもの同士の共感（sympathy）と心の連続性（continuity of mind） |
 | 鍵の文 | 「The movement of love is circular, at one and the same impulse projecting creations into independency and drawing them into harmony.」（p.177）<br>訳：愛の運動は円い。同じ一つの衝動で、作ったものを独立へ押し出し、調和へ引き寄せる<br>「Love, recognising germs of loveliness in the hateful, gradually warms it into life, and makes it lovely.」（p.178）<br>訳：愛は、憎むべきものの中に愛らしさの芽を認め、少しずつ温めて命を与え、愛らしいものにする<br>「tychasm and anancasm are degenerate forms of agapasm」（p.189） |
 | 出典と照合の状態 | 本文照合済。[The Monist 第 3 巻第 2 号の原誌（Internet Archive）](https://archive.org/details/sim_monist_1893-01_3_2)と、[Cohen 編『Chance, Love, and Logic』（1923・パブリックドメイン）](https://archive.org/details/chanceloveandlog00peiruoft)。パースは語を三段に呼び分けています。様式は tychasm / anancasm / agapasm、それを主とする学説は tychasticism / anancasticism / agapasticism、その様式が宇宙で働いているとだけ言う命題は tychism / anancism / agapism（1923 年版 pp.283–284） |
+
+</div>
+
+## テイヤール・ド・シャルダン — 存在と存在の親和性
+
+<a id="lh-teilhard"></a>この章は、テイヤール・ド・シャルダン（1881〜1955 年）『現象としての人間』（1955 年）の節「エネルギーとしての愛」を見ます。愛を人だけのものとせず、分子の段から働く、結びつこうとする傾きとして書きました。
+
+### 『現象としての人間』第 4 部 第 2 章「エネルギーとしての愛」（1955 年）
+
+<div class="tablefit cols-2">
+
+| 出どころ | 『現象としての人間（Le Phénomène humain）』（1955 年）。英訳 The Phenomenon of Man（Bernard Wall 訳・1959 年）第 4 部 第 2 章の節「Love as Energy」、pp.264–267 |
+|---|---|
+| 何を Love と呼んだか | 生物としての全体で見た愛、つまり存在と存在の親和性は、人だけのものではない、と書きます。分子の中にさえ、結びつこうとする内からの傾きが無ければ、上の段で、人の形の愛が現れることはありえない、と続けます。愛の力に動かされて、世界の断片は互いを求める、とも書きます |
+| Love を何として書いているか | エネルギー（節の題）。宇宙の進化を通じて働く、結びつこうとする傾き。物体の万有引力は、力として見ても曲がりとして見ても、自然を本当に動かしているものの裏側か影にすぎない、と置いています |
+| 鍵の文 | 「love— that is to say, the affinity of being with being— is not peculiar to man.」（p.264）<br>訳：愛、つまり存在と存在の親和性は、人に固有のものではない<br>「Whether as a force or a curvature, the universal gravity of bodies, … is merely the reverse or shadow of that which really moves nature.」（p.265）<br>訳：力として見ても曲がりとして見ても、物体の万有引力は、自然を本当に動かしているものの裏側か影にすぎない |
+| 出典と照合の状態 | 本文照合済（英訳）。書籍で、権利の切れていない訳書のため、本文へのリンクは置いていません。フランス語の原書とは照らしていません |
 
 </div>
 
@@ -594,10 +645,13 @@ date: 2026-11-09
 | エロース・自己への親和（οἰκείωσις） | エロースは、姿に美しさ（徳への素質）が現れた若者。親和は、動物の自分自身。キケロでは、自分から、子へ、人どうしへ | [ディオゲネス・ラエルティオス、キケロ](#lh-stoa) |
 | アガペー（ἀγάπη・動詞 ἀγαπάω） | 神、隣人（自分のように）、互い。1 ヨハネ 4 章では、神が愛そのものとされます | [新約聖書](#lh-agape) |
 | 愛（amor） | 神と自分（神を軽んじるまでの自己愛、自分を軽んじるまでの神への愛）。そのもの自身のために寄りすがるもの（享受）と、ほかのものを得るために使うもの（使用） | [アウグスティヌス](#lh-augustine) |
+| 自然の愛（英訳 natural love） | 欲求するものが、生まれつき合っている先。重い物体なら中心 | [トマス・アクィナス『神学大全』](#lh-aquinas) |
 | 愛（amore） | 創造主にも被造物にもあるもの。魂の愛は好ましいものへ向かい、悪い対象へ向かうこともあります。天国篇 33 歌では、太陽とほかの星を動かす愛 | [『神曲』](#lh-dante) |
 | 愛（Amor） | 外部の原因。神（神への知的愛）。神が自らを愛する愛の一部ともされます | [『エチカ』](#lh-spinoza) |
+| 愛（amour）・情念の引力（Attraction passionnée） | 情念の一つとしての愛。情念は、物質の引力と同じ法則に従う引力とされます | [フーリエ『四運動の理論』](#lh-fourier) |
 | 恋愛（英訳 love） | 特定の個人。それで決まるのは次の世代の構成だ、とされます | [ショーペンハウアー](#lh-spinoza) |
 | 愛（creative love・agapasm） | 宇宙と心の進化。憎むべきもの（the hateful）を、対象として必要とします | [パース「進化的な愛」](#lh-peirce) |
+| 愛（英訳 love・エネルギーとしての愛） | 存在と存在。分子の段から人の段まで、結びつこうとする傾きとして書かれています | [テイヤール・ド・シャルダン『現象としての人間』](#lh-teilhard) |
 | love・愛（辞書） | Merriam-Webster の love には、血縁や個人のつながりのある相手、恋人、賞賛や共通の関心で結ばれた相手、熱中や献身の対象、他者の善、神が並びます。大辞泉の「愛」には、親子・兄弟、生あるもの、特定の人、物事、個人の感情を超えて幸せを願う相手、キリスト教の神のいつくしみ、仏教の貪愛が並びます | [辞書の語義](#lh-romantic) |
 | 結びつき（tie）・愛着行動 | 一人の母親像。ボウルビィが自分の説の語にしているのは、tie と attachment behaviour です | [ボウルビィ 1958 年](#lh-psychology) |
 | 情熱的な愛（passionate love） | 他者。その他者との結合を切望する状態として書かれています | [ハットフィールドとスプレッチャー 1986 年](#lh-psychology) |
