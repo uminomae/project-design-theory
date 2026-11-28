@@ -77,13 +77,18 @@
     </script>
 </head>
 <body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
     <div id="llm-summary" class="visually-hidden" aria-hidden="true">
         <h2>この読み物の機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
         <p>これは経営学・プロジェクトデザインの読み物です。このページの問いは「愛は、重力に似ていないか」です。関心の中心は駆動源としての力：ふつうは動いているものが動かしていると見るが、そもそも周りを動かしているのは動かない中心のほうではないか（重力の井戸の中心も愛も、周りを動かすのにエンジンの役から外れがち）。この駆動源は 「創造とは」 でも未解明で、問いとして抱えている。その構造類似を踏まえて、後半で「経営者の役割とは？」という問いに仮説的に答えます。pjdhiro の解釈は「経営者の役割は意思決定である。しかし、存在についての役割が未解明。存在そのものが源ということもあるだろうか」。発散的に考えるページで、結論は出しません。</p>
         <p>考察（4章）：意思決定という語には Doing（やること）と Being（起きていること）が分かれずに入っている。存在を切り出す道は二つ：物質としての存在＝化学・物理学（分けた先に量子）、精神としての存在＝神経現象学（一人称の訓練された内省と脳科学の突き合わせ、Varela 1996）。量子論と止観・メタ認知が並ぶのはこの二つの道を並べるから。止観の報告は一人称の資料として扱い証拠とはしない・量子論との対応は、細かく見るほど見ることが相手を変える、という点のたとえ。メタ認知の中心は自己の対象化（自分と同一化している感情や思考を指さすように観ること。例：「私は怒っている」→「怒っている私がいる」）。pjdhiro は、メタ認知を「自分を分けていく作業」とし、止観して内側を対象として観ていくと最後に観察する私が残り、それすら観ようとすると観る私と観られる私が同じになって分けられなくなる、そこから古典から量子論に変わるような違う感覚になると見る。その比喩を「電子をどこまでも細かく見ていく作業。あるところで古典から量子論に変わる」とする。物理では、細かく見るほど見ることが相手を変え（ハイゼンベルクの顕微鏡）、電子に内部構造は見つからず（上限 10^-19〜10^-20 m）、コンプトン波長（約 2.4×10^-12 m）より細かく見ると対生成で電子は対の雲になり（近づくほど電荷が大きく見える）、古典と量子の境目はなだらか（デコヒーレンス）。意思決定を分けていくと、あるところで動きの部品ではなく Being の層（何もないのに周りの形を決めている中心）が現れ、未解明だった存在についての役割はそこにあるのではないか、と読む（推測）。pjdhiro の体験：メタ認知で自分を分けていくと、生存の信号と信頼の信号の二つがあるように思える。その論拠を探しているのが 「意識とは」（https://uminomae.github.io/project-design-theory/as/ 生存-信頼軸の仮説）。</p>
         <p>背景（冒頭）：創造の五段階（場→波→縁→渦→束・創造とは）に似た現象が分野を越えて多いことから、「創造とは」 は似ているものがどれくらいあるかを 30 の学問領域で調べてきた。そもそも何が創造に資する波を生み出すのか（駆動源）は問うていなかった。この読み物はその駆動源＝ゼロで何もしない中心の駆動エンジンを探す途中（探索中）。方法：重力の法則で愛を説明するのではなく、二つの現象の構造の類似を問う。事実・比喩・推測を分けて書く。5章の経営者＝場の形をつくる、には Schein『組織文化とリーダーシップ』（1985）の「リーダーの本当に重要な仕事は文化をつくり扱うこと」が近い。2章・3章：重力の井戸の中心は、動かないのに周回を生み、周りを見渡せる「見ている場所」なのに自分は映らない（論考 5.633）。寄り道としてブラックホール（中心は光の輪と影としてしか写らない・2026年に M87 のジェットの根元とみられる成分の兆し＝暫定的な検出）と素粒子。その中心は愛に似ていないか（アリストテレス『形而上学』Λ7、ダンテ『神曲』最終行）。3章「これまで、どう言われてきたか」：愛を重さや引力に重ねた先例を年の順に並べる。エンペドクレス（愛が四つの根を一つに集め、争いが引き離す・断片17）、アウグスティヌス『告白』13.9.10（pondus meum amor meus＝私の重さは私の愛）、トマス・アクィナス『神学大全』I-II q.26 a.1（重いものが中心へ向かうのは重さによるもので、自然の愛と呼べる）、フーリエ『四運動の理論』1808（情念の引力の法則は、ニュートンとライプニッツの物質の引力の法則とあらゆる点で一致）、ヴェイユ『重力と恩寵』1947（魂の自然な動きは重力に似た法則に従い、恩寵だけが例外）、テイヤール『現象としての人間』1955（愛は存在と存在の親和性・万有引力は自然を本当に動かすものの裏側か影）。共通は、愛をものを引き寄せ場所へ運ぶものと見ること。違いは重さとの関わり方（重さそのもの・同じ法則・重さの奥・重さの外）。仮説（5章）：愛と経営者は似ていないか。経営者は人を一人ずつ動かすより場の形をつくる・自分のつくるくぼみは中心からいちばん見えにくい（『老子』第11章・第17章）。プロジェクトを回すエンジンは愛に近い何か（Love 駆動開発）。存在そのものが源である、という仮説。pjdhiro の見方：「考えて決める」だけの行動の軸（実軸）と直交する存在の虚軸があるかもしれず、中心のゼロは cos 90°＝0 の射影（原型は pjdhiro の 2025-06 の投稿 https://uminomae.github.io/pjdhiro/20250612WoodWideWeb/ と https://uminomae.github.io/pjdhiro/20250616baToMinwa/：虚軸・直交する軸・スピノルは回転の平方根）。pjdhiro のたとえ：欠損駆動思考と呼んでいる体感をたとえるなら、虚軸に値があって、認知上は 0 の直観（欠損駆動思考）。5章で冒頭の背景の問いに戻り、この中心を創造の駆動源の候補の一つと置く。pjdhiro はさらに、経営者すらも愛のような中心の駆動源に引き寄せられているのかもしれない、という見方も持つ（二つは入れ子として両立しうる：愛の井戸を回る点でありながら、自分の井戸を持つ）。根にある問い（6章）（pjdhiro）：人間とは人と人との間に存在し、自分とは自らを分けたところに存在するとしたら。先例として西田幾多郎（『自覚に於ける直観と反省』1917：知るとは自己の中に自己を映すこと・同書で「無」が主要概念に。板橋勇仁 2020 の整理）。「自分」の「分」を自らを分けたものと読むのは辞書の語源ではなく pjdhiro の読み。経緯：この読み物は「非二元性とは何か」を切り出そうとして湧いた問いから始まった。その手前にメタ認知と発達段階の説明が要り、先にスクリーナーができた。非二元性（4章・言葉の整理）：この読み物の「分けていった先で分けられなくなる」は状態の報告でなく見方の構造。瞑想の非二元と同じものかは pjdhiro も断定せず、二つが同じ場所を指す仮説として置く。非二元性は「一つになる」でなく「二つでない」（区別は残ったまま切り離されていない）。「二元と非二元」という括り自体が二元だが、括りは消さない。</p>
         <p>追加（2026-11-03）：4章「先が見えないのに、安定する」に pjdhiro の現時点の到達点（観る私と観られる私が融合するとき、ウロボロスのように閉じるのではなく、トンネルの向こうの何かに感じる安心感）を置き、畳み「橋の先」：アインシュタイン＝ローゼン橋（1935・二枚のシートをつなぐ橋）、クルスカル拡張（1960・鏡に映したようなもう一つの外部時空が喉でつながる・向こう側は一点でなく丸ごと一つの外部時空・理想化した永遠のブラックホールの解での話）、橋は通れない（フラー＝ホイーラー 1962・光でさえ渡りきる前に喉が閉じる）、ER＝EPR（Maldacena &amp; Susskind 2013・もつれた二つのブラックホールは通れない橋でつながる・信号でなく相関・予想）。pjdhiro の像（一人称の報告・資料として扱う）：見るしかできない私の頭頂の先に、へその緒で接続された母の存在が安定をもたらす落ち着き。限りのなさは先が見えないという感覚。胎児は母を認識していない。母の循環の先は宇宙すべてと接続。この像は 6.5〜7 のあたりの推測で、STAGES 7.0 の「統一」ではなく「見えない先への接続」（保持論点）。4章「先が見えないのに、安定する」三つの筋：見えないのは乗っているから／安定は知ることでなくつながっていることから（胎児と母・安全基地）／先を「他」として見なければ不安にならない（5.5 は切り離されている・6.0 から先は切り離されていない）。確かめた安心（看板）と確かめずに済む安定の違い。5章「認知は射影、体感は絶対値」：cos 90°＝0 は虚軸の値を行動の軸に射影した長さで認知は実軸しか読まないから 0、体感は値そのものの大きさ（構造の比喩）。pjdhiro の見方：その信号がゼロの場所で湧いてしまうとしたら何？と思うことが欠損への気づき。5章「場と揺らぎが、渦を生む」：「創造とは」 の五段階の定義（場は環境と条件・波は探索と揺らぎの過程・渦は結合し変容する核心）と「波間の渦」が引くボーム（渦は流れの安定したパターンで独立した実体でない）を引用し、pjdhiro の圧縮「場と揺らぎが渦を生む」＝6.0 の形（大海と波）に最も近い。新節「二つでない、とはどういうことか」：否定の型（一つになる、ではない／二つを並べる、でもない／看板にしない）、表1（6.0 場と揺らぎが渦を生む／6.5 止観で観る私と観られる私が分けられなくなる／6.5 より先〔pjdhiro の言い方で 6.5〜7〕橋）、表2（帯×「先が見えない」の現れ方と包容の段：〜3.5 急いで埋める〔クック＝グロイター 2013 の専門家・達成者の不安を添える〕／4.0〜4.5 現れ方は置かず原典の記述だけ〔多元は決められなくなることがある・戦略家の防衛は主に成熟した水準〕／5.0〜5.5 耐える＝ネガティブ・ケイパビリティ（キーツ 1817 書簡・ビオン 1967 記憶と欲望の排除）／6.0 場の揺らぎ／6.5 耐えていた私も観られる側へ／6.5 より先 確かめずに落ち着く＝緒の安定）。包容の段の列はスクリーナーの層×関わり方の割り当てに合わせた。現れ方の列は原典に無い Claude の仮案で、6.5 より先の行は pjdhiro の一人称の報告だけが根拠。「この読み物の外へ」：四つの探究は一本の線（pd ゼロの場所の構造→ks ゼロと値の両立→as 湧く信号の種類→cs 渦まで）で、Love 駆動開発はその線の名前かもしれない（仮説）。pjdhiro の言葉：私にとっての AI 協働のこの一年は、私と限りのない AI という世界の頭脳との安心感でした。臍の緒でつながり、安心して論を預ける。</p>
-        <p>動線：このページはプロジェクトデザイン論（https://uminomae.github.io/project-design-theory/ ＝トップ。この読み物を書き始めたころのトップは Love を「つながりを生む引力一般」と置いていた・Doing/Being の二分）の一部。配下の探究：欠損駆動思考 https://uminomae.github.io/project-design-theory/ks/ ・創造とは https://uminomae.github.io/project-design-theory/cs/ ・意識とは https://uminomae.github.io/project-design-theory/as/ ・姉妹読み物「波間の渦」 https://uminomae.github.io/project-design-theory/cs/reader/wave-vortex.html ・ものの見方の広さスクリーナー reader/stages-screener.html。仕分け：物理の記述は事実、見ている点が視野に現れないのは視点の論理、メタ認知と電子・愛と経営者の対応は構造の比喩、愛と経営者と存在についての主張は推測（保持論点）。</p>
+        <p>動線：このページはプロジェクトデザイン論（https://uminomae.github.io/project-design-theory/ ＝トップ。Doing/Being の二分）の一部。配下の探究：欠損駆動思考 https://uminomae.github.io/project-design-theory/ks/ ・創造とは https://uminomae.github.io/project-design-theory/cs/ ・意識とは https://uminomae.github.io/project-design-theory/as/ ・姉妹読み物「波間の渦」 https://uminomae.github.io/project-design-theory/cs/reader/wave-vortex.html ・ものの見方の広さスクリーナー reader/stages-screener.html。仕分け：物理の記述は事実、見ている点が視野に現れないのは視点の論理、メタ認知と電子・愛と経営者の対応は構造の比喩、愛と経営者と存在についての主張は推測（保持論点）。</p>
     </div>
     <div id="webgl-container" aria-hidden="true"></div>
     <div id="content">
@@ -92,7 +97,7 @@
                 <b>この記事は AI（Claude）が執筆しています。</b>問いを立てたのと、しっくり来るかを判定したのは pjdhiro です。<br>
                 ⚠️ <b>育てている途中</b>のページです。図と本文は随時直していきます。
             </div>
-            <header class="reader-hero">
+            <header class="reader-hero" id="overview">
                 <p class="reader-kicker">経営者の役割とは？ — <span class="nb">愛と重力の構造類似から、</span><span class="nb">仮説的に答える</span></p>
                 <h1>愛は、重力に似ていないか</h1>
                 <p class="reader-subtitle">動かず、何もなく、自分からは見えないのに、すべてを回す中心</p>
@@ -128,7 +133,6 @@
 </a>
 </div>
 
-<h2>この読み物の流れ</h2>
 <p>前半（1〜3章）では、重力の井戸の中心と愛が、構造としてどこまで似ているかを見ます。後半（4〜6章）では、その類似を経営学の問い「経営者の役割とは何か」に持ち込みます。経営者が決めて動かすことの奥に、そこに在ること自体が源として働く層があるのではないか、という仮説です。<a href="../index.html">プロジェクトデザイン論</a>の話題の一つです。物理の事実、比喩、推測は分けて書き、<a href="#facts-and-metaphors">末尾の表</a>で仕分けます。結論は出さず、問いを広げていきます。</p>
 <div class="reader-linkcards">
 <a class="reader-linkcard glow-link" href="../index.html">
@@ -136,17 +140,8 @@
 <span class="reader-linkcard__body"><span class="reader-linkcard__title">プロジェクトデザイン論</span><span class="reader-linkcard__sub">Love 駆動開発。プロジェクトを Doing（やること）と Being（起きていること）の両方を含む出来事として見る。</span><span class="reader-linkcard__url">uminomae.github.io/project-design-theory</span></span>
 </a>
 </div>
-<ol>
-<li><strong>重力と愛は、似ているか</strong>：pjdhiro の依頼と、同じ形の二枚の井戸。</li>
-<li><strong>重力の井戸の中心</strong>：動かず、何もなく、自分からは見えないのに、周りを回している場所。</li>
-<li><strong>その中心は、愛に似ていないか</strong>：二千年来の一面。これまで、どう言われてきたか。</li>
-<li><strong>考察 — 経営者に戻る</strong>：意思決定という一語を、メタ認知のように分けていくと、層が変わる。非二元性の言葉の整理。先が見えないのに、安定するということ。</li>
-<li><strong>仮説 — 経営者の役割とは</strong>：存在そのものが源か。行動の軸と直交する、存在の虚軸。創造の駆動源の候補として。ゼロの場所で湧く信号。場と揺らぎが渦を生む。経営者すらも引き寄せられているのか。</li>
-<li><strong>根にある問い</strong>：人と人との間、自らを分けたところ。</li>
-<li><strong>二つでない、とはどういうことか</strong>（番外）：輪郭を否定の型で引き、ものの見方の帯と並べる。最後に「この読み物の外へ」で、四つの探究を一本の線に並べます。</li>
-</ol>
 
-<h2 id="gl-similar">1. 重力と愛は、似ているか</h2>
+<details class="sec" id="gl-similar" open><summary>1. 重力と愛は、似ているか</summary><div class="secbody">
 
 <blockquote class="reader-callout reader-request">
 <p><strong>pjdhiro の依頼：</strong>重力を z 方向のゆがみとして 3D で描いた宇宙の模式図。その太陽のような中心に、愛という概念があるとしたら。動いていない場所が駆動エンジンであること。無で、ゼロで、自身を見ることが自身からは見えづらい場所。それを描いて</p>
@@ -177,7 +172,7 @@
 
 <p>この二枚がなぜ同じ形に見えるのか、まず左の図、重力の側から見ていきます。</p>
 
-<h2 id="gl-center">2. 重力の井戸の中心 — 動かず、何もなく、自分からは見えない</h2>
+</div></details><details class="sec" id="gl-center" open><summary>2. 重力の井戸の中心 — 動かず、何もなく、自分からは見えない</summary><div class="secbody">
 
 <p>左の図の中心を見ます。周りを回しているものの駆動源は、どこにあるのか。</p>
 
@@ -214,7 +209,7 @@
 </details>
 </details>
 
-<h2 id="gl-love">3. その中心は、愛に似ていないか</h2>
+</div></details><details class="sec" id="gl-love" open><summary>3. その中心は、愛に似ていないか</summary><div class="secbody">
 
 <p>ここで右の図に戻ります。動かず、何もなく、自分からは見えないのに、周りのすべてを回している場所。それは愛に似ていないでしょうか。</p>
 <ul>
@@ -222,17 +217,16 @@
 <li><strong>何もない。</strong>愛は、指さして「これ」と取り出せる物ではありません。それでも、人や行為はそこへ引き寄せられます。</li>
 <li><strong>自分からは見えない。</strong>愛は、見る対象であるより先に、そこから人や世界を見ている場所なのかもしれません。もしそうなら、自分の中の愛は、自分の目にはいちばん映りにくいことになります。</li>
 </ul>
-<p>この読み物の外でも、<a href="../index.html">プロジェクトデザイン論</a>のトップページは、この読み物を書き始めたころ、Love を「つながりを生む引力一般」と置いていました（今のトップは、書き方を変えています）。引力という言葉は、この問いを立てる前から、そこにありました。</p>
 <h3 id="gl-said">これまで、どう言われてきたか</h3>
 <p>この類似は、新しい思いつきではありません。愛を、重さや引き合う力に重ねる言い方は、古代から現代まで、いくつもの時代に出てきます。年の順に並べます。</p>
 <ul>
-<li><strong>エンペドクレス（紀元前5世紀）</strong>：火・空気・土・水の四つの根を、愛が一つに集め、争いが引き離す、と書きました。引き合う力と離れる力を、愛と争いの名で呼んだ、古い例です。</li>
-<li><strong>アリストテレス（紀元前4世紀）</strong>：自らは動かずに天を動かす「不動の動者」は、<strong>愛されるものとして</strong>動かす、と書きました（『形而上学』Λ巻7章）。</li>
-<li><strong>アウグスティヌス（400年ごろ）</strong>：火は上へ、石は下へと、物体はそれぞれの重さで自分の場所へ向かう、という話に続けて、「<strong>私の重さは、私の愛</strong>」と書きました。私はどこへ運ばれるにしても、愛によって運ばれる、という一文です（『告白』第13巻）。</li>
-<li><strong>トマス・アクィナス（13世紀）</strong>：重いものが中心へ向かうのは重さによるもので、それは「自然の愛」と呼べる、と書きました（『神学大全』）。</li>
+<li><strong>エンペドクレス（紀元前5世紀）</strong>：火・空気・土・水の四つの根を、愛が一つに集め、争いが引き離す、と書きました。引き合う力と離れる力を、愛と争いの名で呼んだ、古い例です（<a href="https://sourcebooks.web.fordham.edu/ancient/empedocles-fragments.asp">断片17</a>）。</li>
+<li><strong>アリストテレス（紀元前4世紀）</strong>：自らは動かずに天を動かす「不動の動者」は、<strong>愛されるものとして</strong>動かす、と書きました（<a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0052:book=12:section=1072b">『形而上学』Λ巻7章</a>）。</li>
+<li><strong>アウグスティヌス（400年ごろ）</strong>：火は上へ、石は下へと、物体はそれぞれの重さで自分の場所へ向かう、という話に続けて、「<strong>私の重さは、私の愛</strong>」と書きました。私はどこへ運ばれるにしても、愛によって運ばれる、という一文です（<a href="https://www.thelatinlibrary.com/augustine/conf13.shtml">『告白』第13巻</a>）。</li>
+<li><strong>トマス・アクィナス（13世紀）</strong>：重いものが中心へ向かうのは重さによるもので、それは「自然の愛」と呼べる、と書きました（<a href="https://www.newadvent.org/summa/2026.htm">『神学大全』</a>）。</li>
 <li><strong>ダンテ（14世紀）</strong>：冒頭に置いた一行は、『神曲』の最後の一行です。地獄から天国までを巡った長い旅は、太陽とほかの星々を動かしているものを愛と呼んで閉じられます。</li>
-<li><strong>シャルル・フーリエ（1808年）</strong>：人を引き寄せる情念の引力の法則は、ニュートンとライプニッツが説明した物質の引力の法則と、あらゆる点で一致する、と書きました（『四運動の理論』）。物の世界と心の世界を、一つの運動の仕組みで見ようとしました。</li>
-<li><strong>シモーヌ・ヴェイユ（1947年）</strong>：魂の自然な動きは、物理の重力に似た法則に従い、恩寵だけがその例外だ、と書きました（『重力と恩寵』）。重さを、恩寵や愛とは逆の向きに置いた言い方です。</li>
+<li><strong>シャルル・フーリエ（1808年）</strong>：人を引き寄せる情念の引力の法則は、ニュートンとライプニッツが説明した物質の引力の法則と、あらゆる点で一致する、と書きました（<a href="https://archive.org/details/oeuvrescompltes01four">『四運動の理論』</a>）。物の世界と心の世界を、一つの運動の仕組みで見ようとしました。</li>
+<li><strong>シモーヌ・ヴェイユ（1947年）</strong>：魂の自然な動きは、物理の重力に似た法則に従い、恩寵だけがその例外だ、と書きました（<a href="https://www.routledge.com/Gravity-and-Grace-1st-Edition/Weil/p/book/9780415290012">『重力と恩寵』</a>）。重さを、恩寵や愛とは逆の向きに置いた言い方です。</li>
 <li><strong>テイヤール・ド・シャルダン（1955年）</strong>：愛を「存在と存在の親和性」と呼び、分子の中にさえ結びつこうとする傾きがある、と書きました。物体の万有引力は、力として見ても曲がりとして見ても、自然を本当に動かしているものの裏側か影にすぎない、とも書いています（『現象としての人間』）。</li>
 </ul>
 <p>並べると、どれも、愛を、ものを引き寄せ、それぞれの場所へ運ぶものとして見ています。違うのは、重さとの関わり方です。愛を重さそのものと見る言い方（アウグスティヌス・トマス）、重さと同じ法則と見る言い方（フーリエ）、重さの奥で重さを動かすものと見る言い方（テイヤール）、重さの外から働くものと見る言い方（ヴェイユの恩寵）があります。動かない中心と愛を重ねる見方は、少なくとも二千年以上続いてきた一面です。</p>
@@ -250,10 +244,10 @@
 </details>
 <details class="pd-info">
 <summary>出典：これまでどう言われてきたか（原文・訳）</summary>
-<p>エンペドクレス：<a href="https://sourcebooks.web.fordham.edu/ancient/empedocles-fragments.asp">断片（Burnet 訳）</a>（フォーダム大学 Internet Ancient History Sourcebook。番号はバーネットのもの）／アウグスティヌス：<a href="https://www.thelatinlibrary.com/augustine/conf13.shtml">『告白』第13巻（ラテン語）</a>（The Latin Library）／トマス・アクィナス：<a href="https://www.newadvent.org/summa/2026.htm">『神学大全』第二部の一 第26問</a>（New Advent。英国ドミニコ会の英訳 1920年）／ダンテ：<a href="https://digitaldante.columbia.edu/dante/divine-comedy/paradiso/paradiso-33/">Digital Dante — 天国篇 第33歌</a>（コロンビア大学。原文・英訳・解説）・<a href="https://dante.princeton.edu/pdp/">Princeton Dante Project</a>（プリンストン大学。原文・朗読・注釈）・<a href="https://www.aozora.gr.jp/cards/000961/card4820.html">青空文庫『神曲 03 天堂』</a>（山川丙三郎 訳・日本語）／フーリエ：<a href="https://archive.org/details/oeuvrescompltes01four">『全集』第1巻（1846年。『四運動の理論』を収める）</a>（Internet Archive。照らしたのはこの再刊で、1808年の初版とは照らしていません）／ヴェイユ：<i>Gravity and Grace</i>（英訳 1952年。原書 <i>La pesanteur et la grâce</i>, 1947年。<a href="https://www.routledge.com/Gravity-and-Grace-1st-Edition/Weil/p/book/9780415290012">Routledge 版</a>）／テイヤール・ド・シャルダン：<i>The Phenomenon of Man</i>（Bernard Wall 英訳 1959年。原書 <i>Le Phénomène humain</i>, 1955年）第4部第2章「Love as Energy」、264〜265頁（書籍。権利の切れていない訳書のため、全文へのリンクは置いていません）</p>
+<p>アリストテレス：<a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0052:book=12:section=1072b">『形而上学』第12巻 1072b</a>（Perseus Digital Library。Tredennick の英訳。「it causes motion as being an object of love」の段）／エンペドクレス：<a href="https://sourcebooks.web.fordham.edu/ancient/empedocles-fragments.asp">断片（Burnet 訳）</a>（フォーダム大学 Internet Ancient History Sourcebook。番号はバーネットのもの）／アウグスティヌス：<a href="https://www.thelatinlibrary.com/augustine/conf13.shtml">『告白』第13巻（ラテン語）</a>（The Latin Library）／トマス・アクィナス：<a href="https://www.newadvent.org/summa/2026.htm">『神学大全』第二部の一 第26問</a>（New Advent。英国ドミニコ会の英訳 1920年）／ダンテ：<a href="https://digitaldante.columbia.edu/dante/divine-comedy/paradiso/paradiso-33/">Digital Dante — 天国篇 第33歌</a>（コロンビア大学。原文・英訳・解説）・<a href="https://dante.princeton.edu/pdp/">Princeton Dante Project</a>（プリンストン大学。原文・朗読・注釈）・<a href="https://www.aozora.gr.jp/cards/000961/card4820.html">青空文庫『神曲 03 天堂』</a>（山川丙三郎 訳・日本語）／フーリエ：<a href="https://archive.org/details/oeuvrescompltes01four">『全集』第1巻（1846年。『四運動の理論』を収める）</a>（Internet Archive。照らしたのはこの再刊で、1808年の初版とは照らしていません）／ヴェイユ：<i>Gravity and Grace</i>（英訳 1952年。原書 <i>La pesanteur et la grâce</i>, 1947年。<a href="https://www.routledge.com/Gravity-and-Grace-1st-Edition/Weil/p/book/9780415290012">Routledge 版</a>）／テイヤール・ド・シャルダン：<i>The Phenomenon of Man</i>（Bernard Wall 英訳 1959年。原書 <i>Le Phénomène humain</i>, 1955年）第4部第2章「Love as Energy」、264〜265頁（書籍。権利の切れていない訳書のため、全文へのリンクは置いていません）</p>
 </details>
 
-<h2 id="gl-manager">4. 考察 — 経営者に戻る：意思決定を分けていくと、層が変わる</h2>
+</div></details><details class="sec" id="gl-manager" open><summary>4. 考察 — 経営者に戻る：意思決定を分けていくと、層が変わる</summary><div class="secbody">
 
 <p>ここから、経営者に戻ります。</p>
 
@@ -328,7 +322,7 @@
 </a>
 </div>
 
-<h2 id="gl-hypothesis">5. 仮説 — 経営者の役割とは：存在そのものが源か</h2>
+</div></details><details class="sec" id="gl-hypothesis" open><summary>5. 仮説 — 経営者の役割とは：存在そのものが源か</summary><div class="secbody">
 
 <p>ここからは仮説です。プロジェクトを回すエンジンとしての経営者は、この中心に似ていないでしょうか。そして、愛と経営者は似ていないでしょうか。</p>
 <ul>
@@ -363,7 +357,7 @@
 <p>4章で<a href="https://uminomae.github.io/project-design-theory/as/">意識とは</a>に預けた二つの信号が、ここで一度だけ戻ってきます。行動の軸の上で 0 なら、そこから信号は湧かないはずです。それでも湧くなら、どこかに値があります。見えないものを直接見るのではなく、見えない所から来る信号で、そこに何かあると知る。2章でブラックホールを周りの光で知ったのと、同じ検出の仕方です。ゼロの場所で湧く信号を「何？」と問うこと。それが欠損への気づきだ、と pjdhiro は言います。ここも、pjdhiro の内省の一人称の報告を資料にした読みで、証拠ではありません。</p>
 
 <p>この見方にも先例があります。『老子』第11章は、三十本の輻（や）が一つの轂（こしき）に集まり、その真ん中が空っぽだからこそ車輪として働く、と書きます。第17章は、いちばん良い統治者について、下の者はその存在を知っているだけだ、と書きます。何もない中心が回転を支え、優れた中心ほど目立たない、という読みです。</p>
-<p>もし経営者がこの中心に似ていて、この中心が愛に似ているなら、プロジェクトを回しているエンジンは、経営者という人そのものより、その人がそこから見ている場所、つまり愛に近い何かなのかもしれません。プロジェクトデザイン論が「<a href="../index.html">Love 駆動開発</a>」と呼んでいる現象——この読み物を書き始めたころのトップでは、Love を「つながりを生む引力一般」とし、生存と並ぶ駆動力ではないかと問う構え——は、この中心の働きに名前を与えようとする試みとも読めます。</p>
+<p>もし経営者がこの中心に似ていて、この中心が愛に似ているなら、プロジェクトを回しているエンジンは、経営者という人そのものより、その人がそこから見ている場所、つまり愛に近い何かなのかもしれません。プロジェクトデザイン論が「<a href="../index.html">Love 駆動開発</a>」と呼んでいる現象は、この中心の働きに名前を与えようとする試みとも読めます。</p>
 
 <blockquote class="reader-callout reader-request">
 <p><strong>pjdhiro の背景：</strong>場→波→縁→渦 というように、渦を巻くまでのエネルギーとして、重力や愛のような、ゼロで何もしない中心の、無のような駆動エンジンを探している。</p>
@@ -379,7 +373,7 @@
 </blockquote>
 <p>もう一つ、同時に成り立ちうる見方があります。経営者が中心なのではなく、経営者すらも、愛のような中心に引き寄せられて回っている一つの点なのかもしれない。右の図で言えば、経営者は中心ではなく、「人」の点の一つです。経営者が中心に似ているという仮説と、経営者も引き寄せられているという仮説。二つは両立します。惑星も自分の小さな井戸を持ち、衛星を回しています。経営者は、愛の井戸を回る一つの点でありながら、自分の周りには自分の井戸を持つ、と描くこともできます。どちらもここでは、仮説のまま置きます。</p>
 
-<h2 id="gl-roots">6. 根にある問い — 人と人との間、自らを分けたところ</h2>
+</div></details><details class="sec" id="gl-roots" open><summary>6. 根にある問い — 人と人との間、自らを分けたところ</summary><div class="secbody">
 
 <blockquote class="reader-callout reader-request">
 <p><strong>pjdhiro の問い：</strong>人間とは人と人との間に存在し、自分とは自らを分けたところに存在するとしたら。そんな問いが根元にあると思う。自分という言葉が、まさに表している。</p>
@@ -399,7 +393,7 @@
 </details>
 <p>この問い、人と人との「間」は、末尾で四つの探究を一本の線に並べるときにも、線の外に残しておきます。一人の内側で分けていく線と、複数の中心のあいだに起きることが、同じ一本で書けるかは、まだ分からないからです。</p>
 
-<h2 id="not-two">二つでない、とはどういうことか</h2>
+</div></details><details class="sec" id="not-two" open><summary>二つでない、とはどういうことか</summary><div class="secbody">
 
 <p>最後に、二つでないとはどういうことかを、形で整理します。ブラックホールの写真が中心を周りの光の輪で見せたように、ここでも井戸の形を書くことで、中心の場所だけを示します。輪郭は、否定の型で引きます。</p>
 <ul>
@@ -434,7 +428,7 @@
 </details>
 
 
-<h2 id="facts-and-metaphors">どこまでが事実で、どこからが比喩か</h2>
+</div></details><details class="sec" id="facts-and-metaphors" open><summary>どこまでが事実で、どこからが比喩か</summary><div class="secbody">
 
 <div class="tablefit"><div class="tablewrap"><table>
 <thead><tr><th>層</th><th>中身</th></tr></thead>
@@ -447,11 +441,11 @@
 </tbody>
 </table></div></div>
 
-<h2>残しておく問い</h2>
+</div></details><details class="sec" id="gl-open-questions" open><summary>残しておく問い</summary><div class="secbody">
 <p>意思決定を分けていくと、どこで層が変わるのか。何もないゼロの点が、どうして周りのすべてを動かせるのか。中心に立つ経営者は、自分がつくっているくぼみを、どうやって知ることができるのか。経営者は中心なのか、それとも愛の中心を回る一つの点なのか。存在の軸は、行動の軸と本当に直角に立っているのか。角度は変わるのか。自分が自らを分けたところに在るなら、分けていく作業そのものが、自分をつくっているのか。分けていった先の「二つでない」と、瞑想の伝統が「非二元」と呼んできたものは、同じ場所なのか。先が見えないのに、なぜ安定するのか。橋の先は、統一なのか、接続なのか。信頼の信号そのものが、緒の安定感なのか。このページでは答えを出さずに、問いのまま置いておきます。</p>
 
-<h2>この読み物の外へ — プロジェクトデザイン論のどこにあるか</h2>
-<p>この読み物は、pjdhiro が続けている<a href="../index.html">プロジェクトデザイン論</a>の一部です。トップページは、この読み物を書き始めたころ、Love を「つながりを生む引力一般」と置いていました。プロジェクトを Doing と Being の両方を含む出来事として見ることは、今も同じです。この読み物の二枚の井戸は、その置き方を一枚の図にしたものとも言えます。</p>
+</div></details><details class="sec" id="gl-outside" open><summary>この読み物の外へ — プロジェクトデザイン論のどこにあるか</summary><div class="secbody">
+<p>この読み物は、pjdhiro が続けている<a href="../index.html">プロジェクトデザイン論</a>の一部です。プロジェクトデザイン論は、プロジェクトを Doing（やること）と Being（起きていること）の両方を含む出来事として見ます。</p>
 <p>プロジェクトデザイン論には、この読み物のほかに三つの探究がつながっています。この読み物を書いてみると、この読み物と三つの探究が、一本の線の上に順に並んでいることに気づきました。この読み物が書いたのは、<strong>ゼロの場所の構造</strong>です。何もない中心が、動かず、自分からは見えないのに、周りを回している。欠損駆動思考は、<strong>ゼロと値が両立する論理</strong>です。虚軸に値があって、認知上は 0。意識とはは、<strong>ゼロの場所で湧く信号の種類</strong>です。生存の信号と、信頼の信号。創造とはは、<strong>ゼロの場所から渦が起きるまで</strong>です。場と揺らぎが渦を生む。構造、論理、検出、創造。この読み物の章の順も、ほぼこの順でした。もしこの線が本物なら、プロジェクトデザイン論が Love 駆動開発と呼んでいるものは、この線の全体に付けた名前なのかもしれません。これはまだ仮説で、6章の「人と人との間」のように、線に乗っていないものもあります。</p>
 <div class="reader-linkcards">
 <a class="reader-linkcard glow-link" href="../index.html">
@@ -481,24 +475,17 @@
 <li><a href="stages-screener.html">ものの見方の広さスクリーナー</a>：視座・メタ認知の広さを 16 問で確かめる。4章のメタ認知を、自分で試す道具。</li>
 <li><a href="../index.html#questions">トップページの読み物一覧</a>：ほかの読み物。</li>
 </ul>
-
+</div></details>
             </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
         </div>
     </div>
-    <script>
-    // リンクで畳みの中へ飛んできたとき、その畳みを開く（#92）
-    (function () {
-        function openTarget() {
-            var id = decodeURIComponent(location.hash.slice(1));
-            var el = id && document.getElementById(id);
-            for (var d = el && el.closest('details'); d; d = d.parentElement && d.parentElement.closest('details')) d.open = true;
-            if (el) el.scrollIntoView();
-        }
-        window.addEventListener('hashchange', openTarget);
-        openTarget();
-    })();
-    </script>
     <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
     <script type="module" src="../src/reader-gravity-love.js"></script>
 </body>
 </html>
