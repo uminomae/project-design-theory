@@ -108,6 +108,7 @@ Claude の読み：「現れる」「隠されていたものが出てくる」�
 | Maslow 1962 *Toward a Psychology of Being* 第 4 章 | 二次資料のみ（全文検索の断片） | 初出 1956 *Merrill-Palmer Quarterly* は未照合（上げた人の分からない写しで読んだ。pp.37–43） |
 | Rogers 1959（Koch 編 Vol.3） | 未照合（上げた人の分からない写しで読んだ。pp.196–209・234–235） | Universal Digital Library の走査 |
 | Rogers 1961 *On Becoming a Person* | 二次資料のみ（全文検索の断片。p.17 は限定公開の頁で本文も見えた） | https://archive.org/details/onbecomingperson0000carl |
+| Rogers 1961 の第 1 章・第 8 章（2026-11-28 に足した） | 本文照合済（授業の写しの性格を添えて載せる例外。decisions.md） | Spokane Falls Community College の教員の授業用の走査：https://faculty.sfcc.spokane.edu/InetShare/AutoWebs/kimt/rogers%20this%20is%20me.pdf ・ https://faculty.sfcc.spokane.edu/InetShare/AutoWebs/kimt/rogers%20to%20be%20that%20self.pdf 。p.64・第 9 章 p.187 は個人の写しでしか読めない。本は 1989 年に更新登録（RE431562） |
 | Horney 1950 | 二次資料のみ（全文検索の断片） | neurosishumangro00horn |
 | Winnicott 1960 | 本文照合済（ただし §5-8 の写しの範囲に当たるかは要判断） | https://archive.org/details/maturationalproc0000dwwi pp.140–152 |
 | Beisser 1970 | 本文照合済 | https://gestalt.org/arnie.htm （The Gestalt Journal Press）。原典の頁は写しに無い |
