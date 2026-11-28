@@ -33,7 +33,7 @@ if [ "${PUBLISH_MAIN_NO_FETCH:-}" != 1 ]; then
 fi
 sha="$(git rev-parse --verify "$ref^{commit}")" || exit 1
 # .github/workflows/pages.yml が出すもの（pd の wiki は pd/wiki を pd/quartz で組む）
-PATHS=(pd/index.html pd/src pd/content pd/assets pd/reader pd/wiki pd/quartz pd/robots.txt pd/llms.txt pd/llms-full.txt pd/sitemap.xml pd/favicon.ico as ks cs)
+PATHS=(pd/index.html pd/src pd/content pd/assets pd/reader pd/wiki pd/quartz pd/robots.txt pd/llms.txt pd/llms-full.txt pd/sitemap.xml pd/favicon.ico as ks cs blog)
 echo "## main に出る commit（origin/main..$ref のうち、サイトに出るファイルに触るもの）"
 git log --no-merges --format='%h %ad %s' --date=format:'%m-%d %H:%M' origin/main.."$sha" -- "${PATHS[@]}" | cut -c1-150
 echo
