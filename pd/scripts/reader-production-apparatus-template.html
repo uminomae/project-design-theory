@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+  ⚠️ このファイルは生成物のテンプレートです。生成物 reader/production-apparatus.html を直接編集しないでください。
+  正本:   knowledge/research/production-apparatus/READER-production-apparatus.md
+  再生成: python3 scripts/build-reader-lp.py
+  手順:   reader/README.md
+  デザイン制約: docs/DESIGN-RULES.md §0a ＋ §13（flow レイアウト）＋ §14（トップと同じ Menu）
+  - 工事中のあいだは noindex。pjdhiro の確認後に外し、sitemap.xml・llms.txt に入れる
+-->
+<!--
+  ============================================================================
+  LLM READER ORIENTATION（文脈ゼロの LLM への案内・人間には非表示）
+  ============================================================================
+  この文書は「生産装置の変化」のページです（工事中）。生産装置が変わるときに起きることを、三つの目で見る。新しい装置を古い装置のやり方で使う時期がくり返し起きてきたこと、情報の生産では言葉が規格にならず字面だけが量産され、作る側と大量に読む側の発達段階が近いと誤解が強め合い、満足度に表れないまま装置が回り続けること（pjdhiro の言う生産装置のバグ）、AI が字面をほぼ無料で作れるようになるとイノベーションのジレンマのようなことが起きるのではないか、という仮説。
+  歴史と研究の例は Claude が原典で確かめて要約したもので、各章の「出典：」行に添えている。発達段階と誤解の強め合いを生産装置に当てた読みと、AI の章は、このページの仮説。
+  pjdhiro 本人の言葉は「pjdhiro の見方：」「pjdhiro の体験：」で引用。
+  文責は Claude。
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+    <script>
+    if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-X5WQCB3JYT';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X5WQCB3JYT');
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>生産装置の変化 | Project Design</title>
+    <link rel="canonical" href="https://uminomae.github.io/project-design-theory/reader/production-apparatus.html">
+    <link rel="icon" href="../favicon.ico">
+    <meta name="description" content="生産装置が変わるときに起きることを、三つの目で見る。新しい装置を古い装置のやり方で使う時期がくり返し起きてきたこと、情報の生産では言葉が規格にならず字面だけが量産され、作る側と大量に読む側の発達段階が近いと誤解が強め合い、満足度に表れないまま装置が回り続けること（pjdhiro の言う生産装置のバグ）、AI が字面をほぼ無料で作れるようになるとイノベーションのジレンマのようなことが起きるのではないか、という仮説。">
+    <meta property="og:title" content="生産装置の変化">
+    <meta property="og:description" content="生産装置が変わるときに起きることを、三つの目で見る。新しい装置を古い装置のやり方で使う時期がくり返し起きてきたこと、情報の生産では言葉が規格にならず字面だけが量産され、作る側と大量に読む側の発達段階が近いと誤解が強め合い、満足度に表れないまま装置が回り続けること（pjdhiro の言う生産装置のバグ）、AI が字面をほぼ無料で作れるようになるとイノベーションのジレンマのようなことが起きるのではないか、という仮説。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://uminomae.github.io/project-design-theory/reader/production-apparatus.html">
+    <meta property="og:site_name" content="Project Design">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="生産装置の変化">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="article:published_time" content="2026-11-28">
+    <meta property="article:modified_time" content="<!--UPDATED-->">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="../src/styles/reader.css">
+    <link rel="stylesheet" href="../src/styles/reader-flow.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "headline": "生産装置の変化",
+          "description": "生産装置が変わるときに起きることを、三つの目で見る。新しい装置を古い装置のやり方で使う時期がくり返し起きてきたこと、情報の生産では言葉が規格にならず字面だけが量産され、作る側と大量に読む側の発達段階が近いと誤解が強め合い、満足度に表れないまま装置が回り続けること（pjdhiro の言う生産装置のバグ）、AI が字面をほぼ無料で作れるようになるとイノベーションのジレンマのようなことが起きるのではないか、という仮説。",
+          "keywords": "生産装置, 情報社会, AI 社会, 言語化, 発達段階, 誤解, 共振, 生産性の逆説, ダイナモ, イノベーションのジレンマ, 検索, プロジェクトデザイン論",
+          "url": "https://uminomae.github.io/project-design-theory/reader/production-apparatus.html",
+          "mainEntityOfPage": "https://uminomae.github.io/project-design-theory/reader/production-apparatus.html",
+          "inLanguage": "ja",
+          "datePublished": "2026-11-28",
+          "dateModified": "<!--UPDATED-->",
+          "creativeWorkStatus": "Draft",
+          "about": [{"@type": "Thing", "name": "生産装置"}, {"@type": "Thing", "name": "情報社会"}, {"@type": "Thing", "name": "成人の発達段階"}],
+          "author": {"@type": "Person", "name": "Claude", "description": "Anthropic の AI。本文の文責"},
+          "contributor": {"@type": "Person", "name": "pjdhiro", "description": "対話の相手。引用した見方の言葉"},
+          "isPartOf": {"@type": "WebSite", "name": "プロジェクトデザイン論", "url": "https://uminomae.github.io/project-design-theory/"}
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="reader-flow">
+    <!-- トップと同じ Menu（項目は src/content/site-data.mjs の getMenuItems・描画は src/reader-menu.js） -->
+    <div class="top-bar" role="group" aria-label="サイト操作">
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+    <nav class="site-menu" id="site-menu" aria-label="Site menu"></nav>
+    <div id="llm-summary" class="visually-hidden" aria-hidden="true">
+        <h2>このページの機械可読要約（文脈ゼロの LLM 向け・人間には非表示）</h2>
+        <p>これは「生産装置の変化」のページです（工事中）。生産装置が変わるときに起きることを、三つの目で見る。新しい装置を古い装置のやり方で使う時期がくり返し起きてきたこと、情報の生産では言葉が規格にならず字面だけが量産され、作る側と大量に読む側の発達段階が近いと誤解が強め合い、満足度に表れないまま装置が回り続けること（pjdhiro の言う生産装置のバグ）、AI が字面をほぼ無料で作れるようになるとイノベーションのジレンマのようなことが起きるのではないか、という仮説。</p>
+    </div>
+    <div id="webgl-container" aria-hidden="true"></div>
+    <div id="content">
+        <div class="reader-wrap">
+            <div class="draft-banner">
+                <b>この記事は AI（Claude）が執筆しています。</b>「pjdhiro の見方」が本人の言葉です。<br>
+                🚧 <b>工事中</b>です。
+            </div>
+            <header class="reader-hero">
+                <h1>生産装置の変化</h1>
+                <p class="reader-subtitle">いつも起きること・情報の生産で起きること・インターネットから AI へ</p>
+                <p class="reader-meta">
+                    最終更新: <!--UPDATED--> ／ 状態: 工事中<br>
+                    <a href="https://github.com/uminomae/project-design-theory/blob/main/pd/knowledge/research/production-apparatus/READER-production-apparatus.md">正本 (GitHub)</a>
+                </p>
+            </header>
+            <article class="reader-article prose-block">
+<!--BODY-->
+            </article>
+            <footer class="reader-footer">
+                <a href="../index.html">プロジェクトデザイン論</a> ・
+                <a href="ai-society.html">AI 社会とは</a> ・
+                <a href="developmental-stages.html">精神の発達段階とは</a> ・
+                <a href="https://github.com/uminomae/project-design-theory">GitHub</a>
+            </footer>
+        </div>
+    </div>
+    <script type="module" src="../src/reader-app.js"></script>
+    <script src="../src/reader-flow.js" defer></script>
+    <script type="module" src="../src/reader-menu.js"></script>
+</body>
+</html>

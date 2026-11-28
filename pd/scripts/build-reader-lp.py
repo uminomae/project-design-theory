@@ -419,6 +419,18 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/production-apparatus/READER-production-apparatus.md",
+        ROOT / "scripts/reader-production-apparatus-template.html",
+        ROOT / "reader/production-apparatus.html",
+        "flow",
+    ),
+    (
+        ROOT / "knowledge/research/ai-society/READER-ai-society.md",
+        ROOT / "scripts/reader-ai-society-template.html",
+        ROOT / "reader/ai-society.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/breath-filter/READER-breath-filter.md",
         ROOT / "scripts/reader-breath-filter-template.html",
         ROOT / "reader/breath-filter.html",
