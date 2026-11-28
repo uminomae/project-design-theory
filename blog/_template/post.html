@@ -18,6 +18,9 @@
 <!-- 一覧のカードは、ここまでの題（og:title）・概要（description）・サムネイル（og:image）と、下の日付・タグから scripts/blog-index.py が作る -->
 <meta property="article:published_time" content="{{YYYY-MM-DD}}">
 <meta property="article:tag" content="{{タグ}}">
+<!-- 状態（どこまで育ったか）：種・推敲中・まとめ のどれか。日記など状態を持たない記事は、この行と本文の bl-status を消す -->
+<meta name="bl:status" content="{{状態}}">
+<!-- 直したら更新日を足す（本文の bl-post__updated と同じ日付に）：<meta property="article:modified_time" content="YYYY-MM-DD"> -->
 <link rel="icon" href="../../favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +50,9 @@
     <header class="bl-post__head">
       <h1 class="bl-post__title">{{題}}</h1>
       <div class="bl-post__meta">
+        <span class="bl-status" data-status="{{状態}}">{{状態}}</span>
         <time datetime="{{YYYY-MM-DD}}">{{YYYY-MM-DD}}</time>
+        <!-- 直したら：<span class="bl-post__updated-wrap">更新 <time class="bl-post__updated" datetime="YYYY-MM-DD">YYYY-MM-DD</time></span> -->
         <ul class="bl-tags" aria-label="タグ">
           <li><a class="bl-tag" href="../?tag={{タグ}}">#{{タグ}}</a></li>
         </ul>
@@ -61,6 +66,17 @@
     <div class="bl-post__body">
       <p>{{本文}}</p>
     </div>
+
+    <!-- 改稿の記録（公開したあとに直したら足す。新しい順。何を直したかだけを書き、対話の中身や発言は書かない）
+    <details class="bl-details bl-revisions">
+      <summary>改稿の記録</summary>
+      <div class="bl-details__body">
+        <ul>
+          <li><time datetime="YYYY-MM-DD">YYYY-MM-DD</time>{{何を直したか}}</li>
+        </ul>
+      </div>
+    </details>
+    -->
 
     <!-- 関連するページ（要らなければ、この section を消す）。SNS の投稿の末尾のリンクは本文に残さず、ここへ移す。
          __note はどういう関わりのリンクか（投稿の末尾の添え書きがあれば、その言葉）、__desc は行き先のページの題・副題・冒頭の言葉から取る -->

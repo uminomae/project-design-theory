@@ -38,7 +38,7 @@
 
 <main class="bl-main bl-main--wide">
   <h1 class="bl-page-title">Blog</h1>
-  <p class="bl-page-lede">記事の一覧。タグと語で絞り込めます。</p>
+  <p class="bl-page-lede">記事の一覧。思いつきの種から、直しを重ねている途中のものまで、そのまま置いています。状態・タグ・語で絞り込めます。</p>
 
   <div class="bl-filter" role="search">
     <div class="bl-filter__row">
@@ -50,6 +50,7 @@
         <option value="old">古い順</option>
       </select>
     </div>
+    <div class="bl-filter__row" data-bl-stages aria-label="状態で絞り込む（種・推敲中・まとめ）"></div>
     <div class="bl-filter__row" data-bl-chips aria-label="タグで絞り込む"></div>
     <div class="bl-filter__status" data-bl-status aria-live="polite"></div>
   </div>
@@ -60,11 +61,32 @@
   -->
   <ul class="bl-cards" data-bl-cards>
 <!-- BLOG-CARDS:START -->
-    <li data-date="2026-11-28" data-tags="アジャイル 創造性" data-text="金曜日が好きな理由 日曜日が好き。だから前日の土曜日が好き。そういう理由で金曜日が好き。">
+    <li data-date="2026-11-28" data-stage="種" data-tags="妄想 感情 信頼 四元数" data-text="「どっちがいい？」を直角に曲げる 二択を聞かれたら、一方を全力で褒め、向きを変えてもう一方も肯定する「意見直角曲げ法」を、感情処理の技法として見る。何が起きているかを見立てて心理現象を当ててみると、直交する二つの単位円なら矛盾なく扱えるのではないか、と思い描いた妄想の記事です。">
+      <article class="bl-card">
+        <img class="bl-card__thumb" src="assets/thumbs/2026-11-28-opinion-bending.png" alt="" width="1200" height="630" loading="lazy">
+        <div class="bl-card__body">
+          <div class="bl-card__meta">
+            <span class="bl-status" data-status="種">種</span>
+            <time class="bl-card__date" datetime="2026-11-28">2026-11-28</time>
+          </div>
+          <h2 class="bl-card__title"><a href="posts/2026-11-28-opinion-bending.html">「どっちがいい？」を直角に曲げる</a></h2>
+          <p class="bl-card__lede">二択を聞かれたら、一方を全力で褒め、向きを変えてもう一方も肯定する「意見直角曲げ法」を、感情処理の技法として見る。何が起きているかを見立てて心理現象を当ててみると、直交する二つの単位円なら矛盾なく扱えるのではないか、と思い描いた妄想の記事です。</p>
+          <ul class="bl-tags" aria-label="タグ">
+            <li><a class="bl-tag" href="?tag=妄想">#妄想</a></li>
+            <li><a class="bl-tag" href="?tag=感情">#感情</a></li>
+            <li><a class="bl-tag" href="?tag=信頼">#信頼</a></li>
+            <li><a class="bl-tag" href="?tag=四元数">#四元数</a></li>
+          </ul>
+        </div>
+      </article>
+    </li>
+    <li data-date="2026-11-28" data-stage="" data-tags="アジャイル 創造性" data-text="金曜日が好きな理由 日曜日が好き。だから前日の土曜日が好き。そういう理由で金曜日が好き。">
       <article class="bl-card">
         <img class="bl-card__thumb" src="assets/thumbs/2026-11-28-friday.png" alt="" width="1200" height="630" loading="lazy">
         <div class="bl-card__body">
-          <time class="bl-card__date" datetime="2026-11-28">2026-11-28</time>
+          <div class="bl-card__meta">
+            <time class="bl-card__date" datetime="2026-11-28">2026-11-28</time>
+          </div>
           <h2 class="bl-card__title"><a href="posts/2026-11-28-friday.html">金曜日が好きな理由</a></h2>
           <p class="bl-card__lede">日曜日が好き。だから前日の土曜日が好き。そういう理由で金曜日が好き。</p>
           <ul class="bl-tags" aria-label="タグ">

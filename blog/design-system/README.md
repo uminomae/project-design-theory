@@ -12,7 +12,7 @@
 | `theme.js` | 明るい・暗いの切り替えボタン。選んだものはその端末にだけ覚える |
 | `menu.js` | 帯の Menu。行き先はサイト（pd/）の Menu と同じものを写して持ち（サイトの Menu を変えたら、ここの `ITEMS` も直す）、開閉（外を押す・Escape で閉じる）を受け持つ |
 | `dialog.js` | 開く窓（モーダル）。URL の `#窓の id` で開いた状態で出せる |
-| `list.js` | 一覧の絞り込み（タグ・語・日付の並べ替え）。URL の `?tag=`・`?q=`・`?sort=old` で状態を渡せる |
+| `list.js` | 一覧の絞り込み（記事の状態・タグ・語・日付の並べ替え）。URL の `?stage=`・`?tag=`・`?q=`・`?sort=old` で選んだものを渡せる |
 
 読み込む順は `tokens.css` → `base.css` → `components.css`。ページの中の `<style>` でも、色や大きさは `var(--bl-…)` で書き、値を直に書かない。
 
@@ -45,11 +45,15 @@
 | `bl-empty` | 当てはまるものが無いとき |
 | `bl-post`（`__head`・`__title`・`__meta`・`__actions`・`__body`） | 記事。`__actions` は日付の下のボタン（解説を開く など） |
 | `bl-tags`・`bl-tag` | タグ。リンクにすると絞り込んだ一覧へ飛ぶ |
+| `bl-status`（`data-status`） | 記事の状態の印（種・推敲中・まとめ）。記事の頭とカードに出す。推敲中は朱、まとめは藍、種は線だけ |
+| `bl-card__meta`・`bl-card__updated`・`bl-post__updated-wrap`（`bl-post__updated`） | カードの状態と日付の並び・更新日 |
+| `bl-revisions` | 本文の下の「改稿の記録」。`bl-details` と組み、日付と何を直したかを一行ずつ |
 | `bl-quote` | 引用。`<cite>` で出どころ |
 | `bl-voice`（`__label`） | 本人の言葉。誰の言葉かを札に書く |
 | `bl-note` | 補足の注記 |
 | `bl-wip` | 工事中の印。文字は「🚧 工事中」とだけ |
 | `bl-figure` | 図と説明 |
+| `bl-video` | 縦長の動画（YouTube のショートなど・9:16）の iframe。`bl-figure` の中に置く。幅は本文に収め、広くても 315px まで |
 | `bl-wide` | 本文の柱より広く出す図・表 |
 | `bl-details`（`__body`） | 畳み（詳しく） |
 | `bl-sources` | 出典 |

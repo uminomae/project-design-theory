@@ -314,6 +314,34 @@ a.bl-tag:hover { background: var(--bl-accent); color: var(--bl-bg); }
   color: var(--bl-mark);
 }
 
+/* ---------- 記事の状態（種・推敲中・まとめ）と更新日 ---------- */
+
+/* 状態の印。記事の頭と一覧のカードに出す。data-status で色を分ける */
+.bl-status {
+  display: inline-block;
+  font-family: var(--bl-font-ui);
+  font-size: var(--bl-size-xs);
+  line-height: 1.6;
+  padding: 0 var(--bl-space-3);
+  border-radius: var(--bl-radius-pill);
+  border: 1px solid var(--bl-rule);
+  color: var(--bl-ink-sub);
+  white-space: nowrap;
+}
+.bl-status[data-status="推敲中"] { color: var(--bl-mark); border-color: var(--bl-mark); background: var(--bl-mark-soft); }
+.bl-status[data-status="まとめ"] { color: var(--bl-accent); border-color: var(--bl-accent); background: var(--bl-accent-soft); }
+.bl-card__meta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--bl-space-1) var(--bl-space-3); }
+.bl-card__updated, .bl-post__updated-wrap {
+  font-family: var(--bl-font-ui);
+  font-size: var(--bl-size-sm);
+  color: var(--bl-ink-sub);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 改稿の記録（本文の下）。何を直したかだけを、日付と一行で */
+.bl-revisions ul { margin: 0; padding-left: 1.2em; font-family: var(--bl-font-ui); font-size: var(--bl-size-sm); color: var(--bl-ink-sub); }
+.bl-revisions time { font-variant-numeric: tabular-nums; margin-right: var(--bl-space-2); }
+
 /* ---------- 図 ---------- */
 
 .bl-figure { margin: 0 0 1.8em; }
@@ -324,6 +352,19 @@ a.bl-tag:hover { background: var(--bl-accent); color: var(--bl-bg); }
   font-size: var(--bl-size-sm);
   color: var(--bl-ink-sub);
   text-align: center;
+}
+
+/* 縦長の動画（YouTube のショートなど・9:16）。幅は本文に収め、広くても 315px まで */
+.bl-video {
+  display: block;
+  width: 100%;
+  max-width: 315px;
+  aspect-ratio: 9 / 16;
+  height: auto;
+  margin: 0 auto;
+  border: 0;
+  border-radius: var(--bl-radius);
+  background: var(--bl-surface);
 }
 
 /* ---------- 畳み（詳しく） ---------- */
