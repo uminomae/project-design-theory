@@ -407,6 +407,12 @@ PAGES = [
         "flow",
     ),
     (
+        ROOT / "knowledge/research/self-realization/READER-self-realization.md",
+        ROOT / "scripts/reader-self-realization-template.html",
+        ROOT / "reader/self-realization.html",
+        "flow",
+    ),
+    (
         ROOT / "knowledge/research/breath-filter/READER-breath-filter.md",
         ROOT / "scripts/reader-breath-filter-template.html",
         ROOT / "reader/breath-filter.html",
