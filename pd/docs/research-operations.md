@@ -135,7 +135,6 @@ date  : YYYYMMDD
 
 | スキル | 用途 | リポジトリ |
 |--------|------|-----------|
-| `/note-generate` | note 記事生成 | kesson-driven-thinking |
 | `/generate-drafts` | 全種ドラフト生成 | kesson-driven-thinking |
 | `/publish-pdf` | PDF ビルド→公開 push | kesson-driven-thinking |
 
