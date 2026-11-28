@@ -33,6 +33,7 @@ run "pd：進化的な愛の引いている文献の訳の一覧" python3 -I pd/
 run "規約：毎回読む芯が正本と一致" python3 -I scripts/rules-core.py --check
 run "pd：読み物の版番号" python3 -I pd/scripts/reader_version.py --check
 run "目標の段：学問の地図と誤解の台帳の表が TSV と合う（RELEASE-STAGES 3.2・3.3）" python3 -I scripts/release-maps.py --check
+run "blog：一覧のカードが記事の頭の meta と合う" python3 -I scripts/blog-index.py --check
 # 対話の形の読み物で、pjdhiro の発言の引用カードの直前が見出し・畳みの題・組む道具の印になっていないか（文脈なしの発言・型 R・2026-11-10）。
 run "pd：引用カードの前の文脈" node scripts/check-quote-context.mjs
 run "pd：wiki の孤立ページ・不在の出典・旧用語" bash -c 'cd pd && node scripts/wiki-lint.mjs --check --quiet'

@@ -45,11 +45,11 @@
   </div>
 
   <!--
-    記事のカード。新しい記事は、この ul の一番上に足す（script が動かないときも新しい順に見えるように）。
-    data-date は YYYY-MM-DD、data-tags はタグを空白で区切る、data-text は題と概要（語の検索に使う）。
+    記事のカード。手で書かない。記事の頭の meta から scripts/blog-index.py が作り直す（印のあいだを置き換える）。
     書き方は blog/README.md。
   -->
   <ul class="bl-cards" data-bl-cards>
+<!-- BLOG-CARDS:START -->
     <li data-date="2026-11-28" data-tags="アジャイル 創造性" data-text="金曜日が好きな理由 日曜日が好き。だから前日の土曜日が好き。そういう理由で金曜日が好き。">
       <article class="bl-card">
         <img class="bl-card__thumb" src="assets/thumbs/2026-11-28-friday.svg" alt="" width="1200" height="630" loading="lazy">
@@ -64,6 +64,7 @@
         </div>
       </article>
     </li>
+<!-- BLOG-CARDS:END -->
   </ul>
   <p class="bl-empty" data-bl-empty hidden>当てはまる記事はありません。</p>
 </main>

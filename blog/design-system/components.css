@@ -186,6 +186,7 @@
   align-items: center;
 }
 .bl-post__meta time { font-variant-numeric: tabular-nums; }
+.bl-post__actions { margin-top: var(--bl-space-4); display: flex; gap: var(--bl-space-3); flex-wrap: wrap; }
 
 .bl-post__body h2 {
   font-size: var(--bl-size-xl);

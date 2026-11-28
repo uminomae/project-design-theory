@@ -40,7 +40,7 @@
 | `bl-filter`・`bl-input`・`bl-select`・`bl-chip` | 一覧の絞り込み。`bl-chip` は `aria-pressed="true"` で選んだ状態 |
 | `bl-cards`・`bl-card`（`__thumb`・`__date`・`__title`・`__lede`） | 記事のカード。題のリンクがカード全体を覆い、タグはその上で押せる |
 | `bl-empty` | 当てはまるものが無いとき |
-| `bl-post`（`__head`・`__title`・`__meta`・`__body`） | 記事 |
+| `bl-post`（`__head`・`__title`・`__meta`・`__actions`・`__body`） | 記事。`__actions` は日付の下のボタン（解説を開く など） |
 | `bl-tags`・`bl-tag` | タグ。リンクにすると絞り込んだ一覧へ飛ぶ |
 | `bl-quote` | 引用。`<cite>` で出どころ |
 | `bl-voice`（`__label`） | 本人の言葉。誰の言葉かを札に書く |
