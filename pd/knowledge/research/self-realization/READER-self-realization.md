@@ -54,6 +54,18 @@
 
 いまの辞書には、二つの意味が並んでいます。一つは、自己が本来もっている真の自我を完全に実現すること、というグリーンやブラッドリーの倫理説の意味です。もう一つは、転じて、自分の目的や理想の実現に向けて努力し、成し遂げること、という意味です。夢や目標をかなえる、という読みは、あとから生まれたほうの意味です。pjdhiro の「ありのままの自己が現実に現れる」は、もとの意味の側に近いと読めます。
 
+辞書に二つの意味が並んでいるのを見て、pjdhiro は、こう問いました。
+
+<strong>pjdhiro の問い：</strong>発達段階の違いではないか？
+
+同じ言葉が、心の発達の段階によって違う意味で受け取られる、という見方です。この問いを仮説として置き、成人の発達の段階の研究に当ててみます。
+
+発達心理学者のクック＝グロイターは、自分で選んだ基準で目標と成果を追う段階を「達成者」と呼び、西洋の文化の多くが目指してきた段階だと書いています（2013 年）。この段階の人は、目標や理想を果たせないことに罪の意識を抱きやすく、前進と統制を失うことを恐れます。守りの一つには、影（自分の受け容れにくい面）を抑え込むことが挙がっています。夢や目標を成し遂げることを自己実現と呼ぶ読みは、この段階から見たときに、いちばん自然に立つ読みではないでしょうか。
+
+クック＝グロイターは、その先の「戦略家」の段階の主な関心に、自己実現と、影を自分のものとし始めることを並べています。この段階の人は、これまで切り離してきた自分の部分を見つけ直して自分のものにし、影の側をより認められるようになる、とも書いています。そして、達成者が「なれる限り最善であろう」とするのに対して、戦略家は「なりうる限りのものになろう」とする、と二つを対比しています。最善を目指して影を抑え込む段階と、影を自分のものにしていく段階とでは、同じ「自己実現」の語が指すものも、違って見えるのかもしれません。
+
+そう見ると、辞書の二つの意味は、どちらかが正しく、どちらかが誤りなのではありません。同じ語が、段階ごとに違う意味で受け取られてきた跡が、二つの意味として残っているのかもしれません。ここは、このページの仮説です。段階そのものは、「[精神の発達段階とは](developmental-stages.html)」で見ています。
+
 <details><summary>出典</summary>
 
 出典：[Bradley (1876)](https://archive.org/details/ethicalstudies00bradgoog) *Ethical Studies*, Essay II "Why should I be moral?"（本文照合済。パブリックドメイン。Internet Archive にある Google の走査で読んだ。pp.68–69 に「'Realize yourself' does not mean merely 'Be a whole,' but 'Be an infinite whole.'」、p.76 に最終の目的は self-realization としてしか言い表せない、という段。奇数頁の柱が写しに出ないので、頁には幅がある）。
@@ -69,6 +81,8 @@
 出典：[Maslow (1943)](https://doi.org/10.1037/h0054346) "A theory of human motivation", *Psychological Review* 50(4):370–396（本文照合済。[York University の Classics in the History of Psychology の HTML](http://psychclassics.yorku.ca/Maslow/motivation.htm)。自己実現の欲求は p.382）。
 
 出典：デジタル大辞泉「自己実現」（本文照合済。[コトバンクの「自己実現」の頁](https://kotobank.jp/word/%E8%87%AA%E5%B7%B1%E5%AE%9F%E7%8F%BE-70868)。ブリタニカ国際大百科事典 小項目事典の項も同じ頁にある）。一つめの意味に「自己が本来もっている真の絶対的な自我を完全に実現すること」、二つめに「転じて、自分の目的、理想の実現に向けて努力し、成し遂げること」。
+
+出典：[Cook-Greuter (2013)](https://web.archive.org/web/20140928135208/http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1%2714%2097p%5B1%5D.pdf) *Nine Levels of Increasing Embrace in Ego Development: A Full-Spectrum Theory of Vertical Growth and Meaning Making*（本文照合済。著者が配っていた刊行前の版で、読んだのは、著者のサイト cook-greuter.com にあった版の Wayback の記録。達成者は p.40 に「It is the target stage for much of Western culture.」、p.49 に守りの「suppression of shadow」、p.50 に目標と理想を果たせないことの罪の意識と「Fear of loss of progress, control」。戦略家は p.62 の「Chief concern: development of self and others, self-actualization, integration, beginning to own shadow」、p.67 に、切り離してきた部分を自分のものにし「The shadow side of the self can be acknowledged to a greater degree」、同じ頁に「trying "to become the most one can become" in contrast to the goal of Achievers hoping to be the best one can be」）。
 
 原典を読むなら：ブラッドリーとグリーンはパブリックドメインで、Internet Archive で全文を読めます。ユングの英訳の初版も同じです。語の来歴は、佐々木 2021 が日本語で読めます。
 
@@ -195,6 +209,7 @@ pjdhiro は、前に、自己受容について次のように話しています
 - 自己受容は、自己実現の始まりなのか、自己実現した人の特徴なのか。それとも、過程のどこで見ても現れるものなのか。
 - 自分が自分を認めること（承認）と、自分を評価しないこと（エリス）と、自分に思いやりを向けること（ネフ）は、同じ働きの違う呼び名なのか。
 - 弱さそのものを受け容れることは、別の所の値打ちを確かめることと同じように、守りをほどくのか。
+- 辞書の二つの意味（本来の自己の実現・目標を成し遂げること）は、発達の段階による受け取り方の違いの跡なのか。
 
 ## 調査中の論
 
